@@ -1,4 +1,4 @@
-/** Chunk was on 21585 **/
+/** Chunk was on 83789 **/
 /** chunk id: 566007, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -15,29 +15,31 @@ function o(e) {
     widget: r,
     isGameFetching: o,
     containerClassName: c,
-    disableInteraction: s
-  } = e, u = function(e, t) {
+    disableInteraction: s,
+    index: u
+  } = e, d = function(e, t) {
     if (null == e) return {};
     var r, n, i = function(e, t) {
       if (null == e) return {};
       var r, n, i = {},
-        a = Object.keys(e);
-      for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+        l = Object.keys(e);
+      for (n = 0; n < l.length; n++) r = l[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+      var l = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
     }
     return i
-  }(e, ["user", "widget", "isGameFetching", "containerClassName", "disableInteraction"]);
-  let d = r.games[0];
+  }(e, ["user", "widget", "isGameFetching", "containerClassName", "disableInteraction", "index"]);
+  let f = r.games[0];
   return (0, n.jsx)(i.Z, {
     userId: t.id,
     widget: r,
     className: c,
     disableInteraction: s,
-    children: null != d ? (0, n.jsx)(l.Z, function(e) {
+    index: u,
+    children: null != f ? (0, n.jsx)(a.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(r);
@@ -56,11 +58,11 @@ function o(e) {
       return e
     }({
       user: t,
-      game: d,
+      game: f,
       widgetType: r.type,
-      loading: o(d.applicationId),
+      loading: o(f.applicationId),
       disableInteraction: s
-    }, u)) : (0, n.jsx)(a.Z, {
+    }, d)) : (0, n.jsx)(l.Z, {
       widgetType: r.type
     })
   })

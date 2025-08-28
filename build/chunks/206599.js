@@ -1,4 +1,4 @@
-/** Chunk was on 21585 **/
+/** Chunk was on 83789 **/
 /** chunk id: 206599, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   J: () => f,
@@ -17,7 +17,7 @@ function d(e) {
   var t, r;
   let {
     bump: i,
-    bumpMultiple: l,
+    bumpMultiple: a,
     gameIds: o
   } = (0, s.b)(), {
     remove: c,
@@ -33,24 +33,24 @@ function d(e) {
       (null == t ? true : t.coverImageUrl) != null || g(r) || c(r, e)
     }
   }, [d, f, g, c, e]);
-  let b = n.useMemo(() => {
+  let p = n.useMemo(() => {
       var t;
       return null != (t = o[e]) ? t : []
     }, [o, e]),
-    p = n.useCallback(t => {
+    b = n.useCallback(t => {
       i(t, e)
     }, [i, e]),
     {
       gameDataMap: m,
       isGameFetching: O
-    } = (0, u.F)(b),
+    } = (0, u.F)(p),
     [j, y] = n.useState([]),
-    v = (r = b.map(e => O(e)), n.useMemo(() => r.join("\x1f"), [r]));
+    x = (r = p.map(e => O(e)), n.useMemo(() => r.join("\x1f"), [r]));
   return n.useEffect(() => {
-    let t = b.filter(e => a.Z.noDataAvailable(e));
-    t.length > 0 && l(t, e)
-  }, [m, v, b, e, l]), n.useEffect(() => {
-    y(b.map(e => {
+    let t = p.filter(e => l.Z.noDataAvailable(e));
+    t.length > 0 && a(t, e)
+  }, [m, x, p, e, a]), n.useEffect(() => {
+    y(p.map(e => {
       let t = m[e];
       return {
         applicationId: e,
@@ -58,15 +58,15 @@ function d(e) {
         imageSrc: null == t ? true : t.coverImageUrl
       }
     }))
-  }, [b, m, e]), {
+  }, [p, m, e]), {
     games: j,
     isGameFetching: O,
-    onAddGame: p
+    onAddGame: b
   }
 }
 
 function f(e, t) {
-  let [r, a, u, d] = (0, i.Wu)([c.Z], () => [c.Z.suggestedFetchAttempted, c.Z.suggestedFetchError, c.Z.suggestedGameIds, c.Z.suggestedFetchIsLoading]), {
+  let [r, l, u, d] = (0, i.Wu)([c.Z], () => [c.Z.suggestedFetchAttempted, c.Z.suggestedFetchError, c.Z.suggestedGameIds, c.Z.suggestedFetchIsLoading]), {
     onLoad: f
   } = (0, s.b)();
   n.useEffect(() => {
@@ -77,6 +77,6 @@ function f(e, t) {
     var e, r;
     if (!g) return;
     let n = t.map(e => e.games).flat();
-    f(a ? [] : (null != (e = u.suggestedGamesIds) ? e : []).filter(l.z6), a ? [] : (null != (r = u.suggestedWishlistGamesIds) ? r : []).filter(l.z6), n)
+    f(l ? [] : (null != (e = u.suggestedGamesIds) ? e : []).filter(a.z6), l ? [] : (null != (r = u.suggestedWishlistGamesIds) ? r : []).filter(a.z6), n)
   }, [g])
 }

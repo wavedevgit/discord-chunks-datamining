@@ -58,7 +58,7 @@ function G() {
   }).apply(this, arguments)
 }
 
-function z(e) {
+function q(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       l = Object.keys(n);
@@ -77,7 +77,7 @@ function z(e) {
   return e
 }
 
-function q(e, t) {
+function z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -149,7 +149,7 @@ function Q(e) {
   } = e, v = r.useCallback(e => {
     if ((0, R.BQ)(t)) {
       let n = t instanceof A.ZP ? t : A.ZP.createFromServer(t);
-      (0, d.vq)(e, e => (0, i.jsx)(M.Z, z({
+      (0, d.vq)(e, e => (0, i.jsx)(M.Z, q({
         application: n
       }, e)))
     }
@@ -213,7 +213,7 @@ function J(e) {
         if (null == e) throw TypeError("Cannot destructure " + e);
         return e
       }(e));
-      return (0, i.jsxs)("div", q(z({
+      return (0, i.jsxs)("div", z(q({
         className: o()(B.iconContainer, n)
       }, t), {
         children: [(0, i.jsx)(U.Z, {
@@ -327,7 +327,7 @@ function K(e) {
 function $() {
   return (0, Chunk951288.jsx)(Chunk481060.ua7, {
     text: Chunk388032.intl.string(Chunk388032.t.CfTySU),
-    children: e => (0, i.jsx)("div", q(z({
+    children: e => (0, i.jsx)("div", z(q({
       className: B.devShelfBadge
     }, e), {
       children: (0, i.jsx)(S.Z, {
@@ -347,7 +347,7 @@ function ee(e) {
   let r = (0, b.fD)(t, l);
   return null == r ? null : (0, i.jsx)(u.ua7, {
     text: r,
-    children: e => (0, i.jsx)("img", z({
+    children: e => (0, i.jsx)("img", q({
       className: B.staffBadge,
       alt: r,
       src: F
@@ -508,7 +508,7 @@ function ea(e) {
   let {
     onClickAppCard: t
   } = er(e);
-  return (0, i.jsx)(Y, q(z({}, e), {
+  return (0, i.jsx)(Y, z(q({}, e), {
     onClick: t
   }))
 }
@@ -553,7 +553,7 @@ function eo(e) {
       launchingComponentId: m,
       fetchesApplication: d
     });
-  return j === b.JS.START || j === b.JS.JOIN ? o ? (0, i.jsx)(Y, q(z({}, p), {
+  return j === b.JS.START || j === b.JS.JOIN ? o ? (0, i.jsx)(Y, z(q({}, p), {
     sectionName: a,
     application: n,
     onClick: g,
@@ -563,12 +563,12 @@ function eo(e) {
       type: u.$jN.Type.PULSING_ELLIPSIS,
       className: B.spinner
     }) : null
-  })) : (0, i.jsx)(ea, q(z({}, p), {
+  })) : (0, i.jsx)(ea, z(q({}, p), {
     context: t,
     sectionName: a,
     application: n,
     location: l
-  })) : (0, i.jsx)(Y, q(z({}, p), {
+  })) : (0, i.jsx)(Y, z(q({}, p), {
     sectionName: a,
     application: n,
     onClick: e => {

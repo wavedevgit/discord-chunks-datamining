@@ -1,4 +1,4 @@
-/** Chunk was on 21585 **/
+/** Chunk was on 83789 **/
 /** chunk id: 272289, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -20,13 +20,13 @@ function d(e) {
     var r, n, i = function(e, t) {
       if (null == e) return {};
       var r, n, i = {},
-        a = Object.keys(e);
-      for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+        l = Object.keys(e);
+      for (n = 0; n < l.length; n++) r = l[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+      var l = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
     }
     return i
   }(e, ["widgetType"]);
@@ -34,17 +34,17 @@ function d(e) {
     games: d,
     isGameFetching: f,
     onAddGame: g
-  } = (0, s.K)(t), [b] = (0, a.Wu)([o.Z], () => [o.Z.suggestedFetchIsLoading]), {
-    trackUserProfileAction: p
-  } = (0, l.KZ)(), m = i.useCallback((e, r, n) => {
+  } = (0, s.K)(t), [p] = (0, l.Wu)([o.Z], () => [o.Z.suggestedFetchIsLoading]), {
+    trackUserProfileAction: b
+  } = (0, a.KZ)(), m = i.useCallback((e, r, n) => {
     g(e), (0, c.ES)(t, {
       applicationId: e,
       gameName: r,
       imageSrc: n
-    }), p({
+    }), b({
       action: "EDIT_ACTION"
     })
-  }, [g, t, p]);
+  }, [g, t, b]);
   return (0, n.jsx)(u.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
@@ -65,7 +65,7 @@ function d(e) {
   }({
     games: d,
     isGameFetching: f,
-    isSuggestedGamesLoading: b,
+    isSuggestedGamesLoading: p,
     onClick: m
   }, r))
 }

@@ -21,9 +21,9 @@ function h(e) {
     user: n,
     guildId: t,
     channelId: h,
-    onClose: x
+    onClose: b
   } = e, {
-    mutualFriends: b
+    mutualFriends: x
   } = (0, a.Z)(n), {
     analyticsLocations: j
   } = (0, c.ZP)(), {
@@ -35,10 +35,10 @@ function h(e) {
   }, [n.id, y]), (0, r.jsx)(o.zJl, {
     className: p.listScroller,
     fade: true,
-    children: null == b ? (0, r.jsx)("div", {
+    children: null == x ? (0, r.jsx)("div", {
       className: p.empty,
       children: (0, r.jsx)(o.$jN, {})
-    }) : 0 === b.length ? (0, r.jsxs)("div", {
+    }) : 0 === x.length ? (0, r.jsxs)("div", {
       className: p.empty,
       children: [(0, r.jsx)("div", {
         className: p.emptyIconFriends
@@ -46,7 +46,7 @@ function h(e) {
         className: p.emptyText,
         children: m.intl.string(m.t["/5p4g4"])
       })]
-    }) : b.map(e => {
+    }) : x.map(e => {
       let {
         key: n,
         user: l,
@@ -59,7 +59,7 @@ function h(e) {
         channelId: h,
         onSelect: () => {
           var e, n, t;
-          null == x || x(), v({
+          null == b || b(), v({
             action: "PRESS_MUTUAL_FRIEND"
           }), e = l.id, (0, u.openUserProfileModal)((n = function(e) {
             for (var n = 1; n < arguments.length; n++) {

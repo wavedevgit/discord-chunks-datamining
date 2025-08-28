@@ -97,7 +97,7 @@ function Z(e) {
             onClose: A
           })
         }), null != D && (0, r.jsx)("li", {
-          children: (0, r.jsx)(b.Z, {
+          children: (0, r.jsx)(x.Z, {
             user: n,
             currentUser: t,
             stream: D,
@@ -131,7 +131,7 @@ function Z(e) {
       children: (0, r.jsx)("ul", {
         className: _.cards,
         children: w.map(e => (0, r.jsx)("li", {
-          children: (0, r.jsx)(x.Z, {
+          children: (0, r.jsx)(b.Z, {
             user: n,
             entry: e,
             onClose: A

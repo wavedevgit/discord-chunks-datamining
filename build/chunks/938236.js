@@ -1,4 +1,4 @@
-/** Chunk was on 21585 **/
+/** Chunk was on 83789 **/
 /** chunk id: 938236, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   b: () => u
@@ -46,11 +46,11 @@ let s = (0, Chunk392711.sampleSize)(Chunk570911.J6, Chunk570911.J6.length),
     gameIds: {},
     peekedGameIds: {},
     onLoad: (r, n, i) => {
-      let l = new Set(i.map(e => e.applicationId));
+      let a = new Set(i.map(e => e.applicationId));
       for (let i of (e({
-          stack: [...r.filter(e => !l.has(e)), ...s],
-          wishlistStack: [...n.filter(e => !l.has(e)), ...s]
-        }), Object.values(a.l))) t().setNext(6, i)
+          stack: [...r.filter(e => !a.has(e)), ...s],
+          wishlistStack: [...n.filter(e => !a.has(e)), ...s]
+        }), Object.values(l.l))) t().setNext(6, i)
     },
     setNext: (e, r) => {
       let n = t().getNext(e, r);
@@ -59,32 +59,32 @@ let s = (0, Chunk392711.sampleSize)(Chunk570911.J6, Chunk570911.J6.length),
       t()._setPeekedGameIds(r, i)
     },
     getNext: (e, r) => {
-      let n = r === a.l.WANT_TO_PLAY_GAMES ? t().wishlistStack : t().stack,
+      let n = r === l.l.WANT_TO_PLAY_GAMES ? t().wishlistStack : t().stack,
         i = n.slice(0, e),
-        l = n.slice(e);
-      return t()._setStack(r, l), i
+        a = n.slice(e);
+      return t()._setStack(r, a), i
     },
-    peekNext: (e, r) => (r === a.l.WANT_TO_PLAY_GAMES ? t().wishlistStack : t().stack).slice(0, e),
+    peekNext: (e, r) => (r === l.l.WANT_TO_PLAY_GAMES ? t().wishlistStack : t().stack).slice(0, e),
     bump: (e, r) => {
       var n;
       let i = null != (n = t().gameIds[r]) ? n : [],
-        a = i.indexOf(e);
-      if (false === a) return;
-      let l = [...i];
-      l.splice(a, 1);
+        l = i.indexOf(e);
+      if (false === l) return;
+      let a = [...i];
+      a.splice(l, 1);
       let o = t().getNext(1, r),
         c = t().peekNext(7, r);
-      t()._setGameIds(r, [...l, ...o]), t()._setPeekedGameIds(r, [...c, ...o])
+      t()._setGameIds(r, [...a, ...o]), t()._setPeekedGameIds(r, [...c, ...o])
     },
     bumpMultiple: (e, r) => {
       var n;
       let i = (null != (n = t().gameIds[r]) ? n : []).filter(t => !e.includes(t)),
-        a = t().getNext(6 - i.length, r),
-        l = t().peekNext(7, r);
-      t()._setGameIds(r, [...i, ...a]), t()._setPeekedGameIds(r, [...l, ...a])
+        l = t().getNext(6 - i.length, r),
+        a = t().peekNext(7, r);
+      t()._setGameIds(r, [...i, ...l]), t()._setPeekedGameIds(r, [...a, ...l])
     },
     remove: (e, r) => {
-      let n = (r === a.l.WANT_TO_PLAY_GAMES ? t().wishlistStack : t().stack).filter(t => t !== e);
+      let n = (r === l.l.WANT_TO_PLAY_GAMES ? t().wishlistStack : t().stack).filter(t => t !== e);
       t()._setStack(r, n), t()._setPeekedGameIds(r, t().peekNext(7, r))
     },
     _setGameIds: (t, r) => {
@@ -95,7 +95,7 @@ let s = (0, Chunk392711.sampleSize)(Chunk570911.J6, Chunk570911.J6.length),
       }))
     },
     _setStack: (t, r) => {
-      t === a.l.WANT_TO_PLAY_GAMES ? e({
+      t === l.l.WANT_TO_PLAY_GAMES ? e({
         wishlistStack: r
       }) : e({
         stack: r

@@ -143,7 +143,7 @@ function el(e) {
     setSearchQuery: n,
     placeholder: r
   } = e, o = i.useRef(null), [s, c] = i.useState(false), u = i.useMemo(() => a().debounce(e => {
-    (0, j.yw)(q.rMx.APP_LAUNCHER_SEARCH_QUERY_TYPED, {
+    (0, j.yw)(z.rMx.APP_LAUNCHER_SEARCH_QUERY_TYPED, {
       query: e,
       source: L.Z.entrypoint(),
       location: C.Vh.APP_LAUNCHER_HOME
@@ -152,7 +152,7 @@ function el(e) {
     leading: false,
     trailing: true
   }), []), d = i.useCallback(() => n(""), [n]), p = i.useCallback(() => {
-    c(true), (0, j.yw)(q.rMx.APP_LAUNCHER_SEARCH_FOCUSED, {
+    c(true), (0, j.yw)(z.rMx.APP_LAUNCHER_SEARCH_FOCUSED, {
       source: L.Z.entrypoint(),
       location: C.Vh.APP_LAUNCHER_HOME
     })
@@ -219,7 +219,7 @@ function ei(e) {
     sectionName: R.L3.RECENT_APPS
   });
   i.useEffect(() => {
-    s || 0 !== p.length && (0, j.yw)(q.rMx.APP_LAUNCHER_FRECENTS_SEEN, {
+    s || 0 !== p.length && (0, j.yw)(z.rMx.APP_LAUNCHER_FRECENTS_SEEN, {
       num: p.length,
       section_name: R.L3.RECENT_APPS,
       location: R.G0.HOME,
@@ -584,7 +584,7 @@ function es(e) {
         return null != r && null != a && (i = (0, _.$_)({
           itemId: r,
           hash: a,
-          containerWidth: z.Gy
+          containerWidth: q.Gy
         })), (0, l.jsx)(D.kA, {
           context: m,
           application: o,
@@ -628,7 +628,7 @@ function eu(e) {
   } : {
     items: l.slice(0, r),
     handleViewMore: () => {
-      (0, j.yw)(q.rMx.APP_LAUNCHER_SECTION_VIEW_MORE, {
+      (0, j.yw)(z.rMx.APP_LAUNCHER_SECTION_VIEW_MORE, {
         section_name: a,
         source: L.Z.entrypoint(),
         num: l.length

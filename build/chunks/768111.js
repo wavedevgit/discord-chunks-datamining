@@ -20,12 +20,12 @@ function f(e) {
   } = e, {
     mutualFriendsCount: f,
     mutualGuilds: m
-  } = (0, i.Z)(n), p = null == m ? true : m.length, h = (0, o.Z)(n), x = (0, r.k)({
+  } = (0, i.Z)(n), p = null == m ? true : m.length, h = (0, o.Z)(n), b = (0, r.k)({
     location: "useUserProfileModalV2TabBarItems"
-  }), b = (0, l.P)({
+  }), x = (0, l.P)({
     location: "useUserProfileModalV2TabBarItems"
   }), j = (0, c.Z)(n.id), g = [], v = n.id === (null == t ? true : t.id), y = j.length > 0;
-  return (v && x || y && b) && g.push({
+  return (v && b || y && x) && g.push({
     text: u.intl.string(u.t.laViw8),
     section: d.oh.WIDGETS,
     subsection: true

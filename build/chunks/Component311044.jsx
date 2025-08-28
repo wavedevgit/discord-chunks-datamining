@@ -1,7 +1,7 @@
 /** Chunk was on 82008 **/
 /** chunk id: 311044, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,12 +17,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk264481 = require("./264481.jsx"),
   Chunk443680 = require("./443680.js");
 
-function x(e) {
+function b(e) {
   let {
     user: n,
     guildId: t,
-    channelId: x,
-    onClose: b
+    channelId: b,
+    onClose: x
   } = e, {
     analyticsLocations: j
   } = (0, c.ZP)(), {
@@ -58,10 +58,10 @@ function x(e) {
         user: l,
         status: o,
         guildId: t,
-        channelId: x,
+        channelId: b,
         onSelect: () => {
           var e, n;
-          null == b || b(), v({
+          null == x || x(), v({
             action: "PRESS_MUTUAL_FRIEND"
           }), (0, f.openUserProfileModal)((e = function(e) {
             for (var n = 1; n < arguments.length; n++) {

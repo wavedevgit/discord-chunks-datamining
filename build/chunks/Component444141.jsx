@@ -52,8 +52,8 @@ function m(e) {
     displayProfile: p,
     onClose: h
   } = e, {
-    analyticsLocations: x,
-    sourceAnalyticsLocations: b
+    analyticsLocations: b,
+    sourceAnalyticsLocations: x
   } = (0, o.ZP)(), {
     context: j,
     trackUserProfileAction: g
@@ -67,10 +67,10 @@ function m(e) {
     action: () => {
       null == h || h(), (0, s.openUserProfileModal)(f(u({}, j), {
         showGuildProfile: false,
-        sourceAnalyticsLocations: b
+        sourceAnalyticsLocations: x
       })), g(u({
         action: "PRESS_VIEW_MAIN_PROFILE",
-        analyticsLocations: x
+        analyticsLocations: b
       }, j))
     }
   }) : (0, r.jsx)(l.sNh, {
@@ -82,10 +82,10 @@ function m(e) {
     action: () => {
       null == h || h(), (0, s.openUserProfileModal)(f(u({}, j), {
         showGuildProfile: true,
-        sourceAnalyticsLocations: b
+        sourceAnalyticsLocations: x
       })), g(u({
         action: "PRESS_VIEW_SERVER_PROFILE",
-        analyticsLocations: x
+        analyticsLocations: b
       }, j))
     }
   })

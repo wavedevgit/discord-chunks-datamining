@@ -68,7 +68,7 @@ function _(e) {
             onClose: P
           })
         }), null != C && (0, r.jsx)("li", {
-          children: (0, r.jsx)(b.Z, {
+          children: (0, r.jsx)(x.Z, {
             user: n,
             currentUser: t,
             stream: C,
@@ -95,7 +95,7 @@ function _(e) {
       children: (0, r.jsx)("ul", {
         className: O.activityList,
         children: E.map(e => (0, r.jsx)("li", {
-          children: (0, r.jsx)(x.Z, {
+          children: (0, r.jsx)(b.Z, {
             user: n,
             entry: e,
             onClose: P

@@ -65,8 +65,8 @@ function N(e, n) {
 
 function A(e) {
   var n, t;
-  let l, a, x, {
-    connectedAccount: b,
+  let l, a, b, {
+    connectedAccount: x,
     theme: j,
     locale: y,
     userId: _,
@@ -75,11 +75,11 @@ function A(e) {
     showInvisibleIcon: C
   } = e;
   null == E && (E = true);
-  let S = null != (t = b.metadata) ? t : {},
+  let S = null != (t = x.metadata) ? t : {},
     w = E ? (0, m.FI)(S[I.PC.CREATED_AT], y) : null,
     D = (0, s.dQu)(i.Z.unsafe_rawColors.TWITTER).hex(),
     L = Z.intl.string(Z.t["6H6h1t"]);
-  if (E) switch (b.type) {
+  if (E) switch (x.type) {
     case O.ABu.REDDIT:
       l = (0, p.oP)(S);
       break;
@@ -100,18 +100,18 @@ function A(e) {
     case O.ABu.TIKTOK:
       l = (0, p.hf)(S)
   }
-  let B = d.Z.get((0, f.rR)(b.type)),
-    U = null == B || null == (n = B.getPlatformUserUrl) ? true : n.call(B, b);
-  null != C && C ? x = (0, r.jsx)(s.kZF, {
+  let B = d.Z.get((0, f.rR)(x.type)),
+    U = null == B || null == (n = B.getPlatformUserUrl) ? true : n.call(B, x);
+  null != C && C ? b = (0, r.jsx)(s.kZF, {
     size: "md",
     color: "currentColor",
     className: o()(P.__invalid_connectedAccountOpenIconContainer, P.connectedAccountHideIcon)
-  }) : null != U && (x = (0, r.jsx)(s.eee, {
+  }) : null != U && (b = (0, r.jsx)(s.eee, {
     href: U,
-    "aria-label": (null == B ? true : B.name) != null ? "".concat(B.name, ", ").concat(b.name, ", ").concat(Z.intl.string(Z.t.q5jLJC)) : "".concat(b.name, ", ").concat(Z.intl.string(Z.t.q5jLJC)),
+    "aria-label": (null == B ? true : B.name) != null ? "".concat(B.name, ", ").concat(x.name, ", ").concat(Z.intl.string(Z.t.q5jLJC)) : "".concat(x.name, ", ").concat(Z.intl.string(Z.t.q5jLJC)),
     onClick: e => {
       var n;
-      n = b.type, (0, u.yw)(O.rMx.CONNECTED_ACCOUNT_VIEWED, {
+      n = x.type, (0, u.yw)(O.rMx.CONNECTED_ACCOUNT_VIEWED, {
         platform_type: n,
         other_user_id: _
       }), (0, v.q)({
@@ -126,7 +126,7 @@ function A(e) {
   }));
   let R = (0, s.dQu)(i.Z.colors.INTERACTIVE_MUTED).hex(),
     M = (0, s.dQu)(i.Z.colors.INTERACTIVE_ACTIVE).hex(),
-    k = b.verified ? (0, r.jsx)(h.Z, {
+    k = x.verified ? (0, r.jsx)(h.Z, {
       className: P.connectedAccountVerifiedIcon,
       color: null != a ? a : R,
       forcedIconColor: M,
@@ -154,15 +154,15 @@ function A(e) {
             className: P.connectedAccountNameTextContainer,
             children: [(0, r.jsx)(s.ua7, {
               overflowOnly: true,
-              text: b.name,
+              text: x.name,
               children: e => (0, r.jsx)(s.Text, N(T({}, e), {
                 variant: "text-sm/medium",
                 color: "interactive-active",
                 className: P.connectedAccountNameText,
-                children: b.name
+                children: x.name
               }))
             }), k]
-          }), x]
+          }), b]
         }), null != w ? (0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "header-secondary",
@@ -186,12 +186,12 @@ function E(e) {
     onApplicationClicked: i,
     selectedGuildId: c
   } = e, d = (0, p.rm)(n, true, l), u = () => {
-    null == i || i(), (0, x.transitionToGlobalDiscovery)({
+    null == i || i(), (0, b.transitionToGlobalDiscovery)({
       tab: _.GlobalDiscoveryTab.APPS,
       applicationId: n.application.id,
       newSessionState: {
         entrypoint: {
-          name: b.xF.APPLICATION_DIRECTORY_URL
+          name: x.xF.APPLICATION_DIRECTORY_URL
         },
         guildId: c
       }

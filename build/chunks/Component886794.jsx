@@ -90,7 +90,7 @@ function C(e) {
                 user: t
               })
             }), (0, r.jsxs)("div", {
-              children: [(0, r.jsx)(x.Z, {
+              children: [(0, r.jsx)(b.Z, {
                 user: t,
                 displayProfile: G,
                 themeType: P.l.MODAL
@@ -136,7 +136,7 @@ function C(e) {
                 }), (0, r.jsxs)(o.zJl, {
                   fade: true,
                   className: A.scroller,
-                  children: [(0, r.jsx)(b.Z, {
+                  children: [(0, r.jsx)(x.Z, {
                     userId: t.id,
                     userBio: null == G ? true : G.bio,
                     setLineClamp: false

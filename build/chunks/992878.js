@@ -1,5 +1,5 @@
-/** Chunk was on 97603 **/
-/** chunk id: 992878, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 56011 **/
+/** chunk id: 992878, original params: e,t,n (module,exports,require) **/
 module.exports = {
   rowIcon: "rowIcon_cb32c7",
   appDetailsRowContainer: "appDetailsRowContainer_cb32c7",

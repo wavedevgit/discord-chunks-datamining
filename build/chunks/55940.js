@@ -1,5 +1,6 @@
-/** Chunk was on 91499 **/
+/** Chunk was on 94214 **/
 /** chunk id: 55940, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   containerDefault: "containerDefault_c69b6d",
   containerDragAfter: "containerDragAfter_c69b6d",

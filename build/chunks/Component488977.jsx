@@ -83,7 +83,7 @@ function L(e) {
     label: _.intl.string(_.t["+NP/b2"])
   }), F = (0, P.P)({
     application: r
-  }), G = (0, j.yE)(null != (t = r.flags) ? t : 0, A.udG.EMBEDDED), z = "channel" === L.type ? L.channel : true;
+  }), G = (0, j.yE)(null != (t = r.flags) ? t : 0, A.udG.EMBEDDED), q = "channel" === L.type ? L.channel : true;
   return (0, l.jsxs)("div", {
     className: I.container,
     children: [(0, l.jsx)(s.P3F, {
@@ -157,8 +157,8 @@ function L(e) {
                 (0, h.uu)({
                   application: r,
                   entrypoint: "app_launcher",
-                  contextualGuildId: null != (e = null == z ? true : z.getGuildId()) ? e : true,
-                  contextualChannelId: null == z ? true : z.id
+                  contextualGuildId: null != (e = null == q ? true : q.getGuildId()) ? e : true,
+                  contextualChannelId: null == q ? true : q.id
                 })
               }
             }) : null, F]

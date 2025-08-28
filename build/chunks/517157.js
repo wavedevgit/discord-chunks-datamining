@@ -1,4 +1,4 @@
-/** Chunk was on 21585 **/
+/** Chunk was on 83789 **/
 /** chunk id: 517157, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -13,11 +13,11 @@ function o(e) {
       let t = i.default.getId();
       return null != e && t === e
     }, [e]),
-    r = (0, n.e7)([l.Z], () => l.Z.getPendingWidgets()),
-    o = (0, n.Wu)([a.Z], () => {
+    r = (0, n.e7)([a.Z], () => a.Z.getPendingWidgets()),
+    o = (0, n.Wu)([l.Z], () => {
       var t;
       if (null == e) return [];
-      let r = a.Z.getUserProfile(e);
+      let r = l.Z.getUserProfile(e);
       return null != (t = null == r ? true : r.widgets) ? t : []
     }, [e]);
   return t && null !== r ? r : o

@@ -1,12 +1,12 @@
-/** Chunk was on 21585 **/
+/** Chunk was on 83789 **/
 /** chunk id: 753436, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  S: () => b
+  S: () => p
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk594174 = require("./594174.js"),
   Chunk971082 = require("./971082.jsx"),
   Chunk817053 = require("./817053.jsx"),
@@ -16,16 +16,16 @@ var Chunk120356 = require("./120356.js"),
   Chunk932366 = require("./932366.js"),
   Chunk133458 = require("./133458.js");
 
-function b(e) {
+function p(e) {
   let {
     game: t,
     userId: r,
     widgetType: i,
-    guildId: b,
-    channelId: p,
+    guildId: p,
+    channelId: b,
     loading: m = false,
     disableInteraction: O = false
-  } = e, j = (0, u.Z)(t.applicationId), y = j.length > 0, v = l.default.getCurrentUser(), x = (null == v ? true : v.id) === r;
+  } = e, j = (0, u.Z)(t.applicationId), y = j.length > 0, x = a.default.getCurrentUser(), v = (null == x ? true : x.id) === r;
   return m ? (0, n.jsx)("div", {
     className: f.loadingCover
   }) : (0, n.jsxs)("div", {
@@ -36,8 +36,8 @@ function b(e) {
       applicationId: t.applicationId,
       userId: r,
       disableInteraction: O,
-      className: a()(y ? g.socialProofBackdrop : true, (null == t ? true : t.imageSrc) == null || O ? true : f.hoverActiveEffect)
-    }), !O && x && (0, n.jsx)(s.Z, {
+      className: l()(y ? g.socialProofBackdrop : true, (null == t ? true : t.imageSrc) == null || O ? true : f.hoverActiveEffect)
+    }), !O && v && (0, n.jsx)(s.Z, {
       game: t,
       widgetType: i,
       className: g.removeGameButton,
@@ -48,8 +48,8 @@ function b(e) {
       }),
       className: g.socialProof,
       users: j,
-      guildId: b,
-      channelId: p,
+      guildId: p,
+      channelId: b,
       visuallyHideLabel: true
     })]
   })

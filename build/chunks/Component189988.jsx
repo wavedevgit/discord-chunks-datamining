@@ -1,4 +1,4 @@
-/** Chunk was on 21585 **/
+/** Chunk was on 83789 **/
 /** chunk id: 189988, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -16,10 +16,10 @@ function c(e) {
   } = e;
   return (0, n.jsx)("div", {
     className: o.container,
-    children: (0, n.jsx)(a.Text, {
+    children: (0, n.jsx)(l.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      children: l.intl.format(l.t.W8K2GB, {
+      children: a.intl.format(a.t.W8K2GB, {
         maxGames: i.k[t]
       })
     })

@@ -1,4 +1,4 @@
-/** Chunk was on 21585 **/
+/** Chunk was on 83789 **/
 /** chunk id: 299560, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk296009 = require("./296009.js"),
   Chunk481060 = require("./481060.js"),
   Chunk804919 = require("./804919.js"),
@@ -52,28 +52,28 @@ function j(e) {
   let {
     widgetType: t,
     onAddWidget: r,
-    size: a = "default",
+    size: l = "default",
     loading: o = false,
     trackUserProfileAction: s
   } = e, {
     placeholder: j,
     getAriaLabel: y
-  } = O[t], v = "small" === a, x = i.useCallback(() => {
+  } = O[t], x = "small" === l, v = i.useCallback(() => {
     o || ((0, u.qH)(t), s({
       action: "EDIT_ACTION"
     }), (0, d.L$)(g.qb.WIDGET_ADDED), null == r || r())
   }, [t, r, o, s]);
   return (0, n.jsxs)(c.P3F, {
-    className: l()(m.addButtonContainer, v && m.sizeSmall, o && m.loading),
-    onClick: x,
+    className: a()(m.addButtonContainer, x && m.sizeSmall, o && m.loading),
+    onClick: v,
     "aria-label": y(),
     "aria-busy": o,
     children: ["details" === j.variant ? (0, n.jsx)(f.i, {
       applicationId: j.applicationId,
-      size: a
+      size: l
     }) : (0, n.jsx)(f.c, {
       applicationIds: j.applicationIds,
-      size: a
+      size: l
     }), (0, n.jsxs)("div", {
       className: m.overlay,
       children: [(0, n.jsx)(c.oFk, {
@@ -83,7 +83,7 @@ function j(e) {
       }), (0, n.jsx)(c.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        children: p.intl.string(b.NP[t])
+        children: b.intl.string(p.NP[t])
       })]
     })]
   })

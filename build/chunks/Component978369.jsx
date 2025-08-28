@@ -1,4 +1,4 @@
-/** Chunk was on 21585 **/
+/** Chunk was on 83789 **/
 /** chunk id: 978369, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -16,42 +16,42 @@ let d = Chunk647438.memo(function(e) {
     currentTags: t,
     onTagSelect: r,
     onNoneSelect: i,
-    onClose: l
+    onClose: a
   } = e;
-  return (0, n.jsx)(a.v2r, {
+  return (0, n.jsx)(l.v2r, {
     navId: "widget-game-tags",
     "aria-label": s.intl.string(s.t.r6EJOj),
-    onClose: l,
+    onClose: a,
     onSelect: () => {},
     children: Object.entries(c.aE).map(e => {
-      let [l, o] = e, u = ((e, l) => {
+      let [a, o] = e, u = ((e, a) => {
         let o = [];
-        return l.type === c.kd.RADIO && o.push((0, n.jsx)(a.k5B, {
+        return a.type === c.kd.RADIO && o.push((0, n.jsx)(l.k5B, {
           id: "".concat(e, "-none"),
           group: e,
           label: s.intl.string(s.t.PoWNfX),
-          checked: !l.tags.some(e => t.includes(e)),
-          action: () => i(l.tags)
-        }, "none")), l.tags.forEach(i => {
+          checked: !a.tags.some(e => t.includes(e)),
+          action: () => i(a.tags)
+        }, "none")), a.tags.forEach(i => {
           let s = c.XV[i];
-          null != s && (l.type === c.kd.RADIO ? o.push((0, n.jsx)(a.k5B, {
+          null != s && (a.type === c.kd.RADIO ? o.push((0, n.jsx)(l.k5B, {
             id: i,
             group: e,
             label: s.getText(),
             checked: t.includes(i),
             action: () => r(i, true)
-          }, i)) : o.push((0, n.jsx)(a.S89, {
+          }, i)) : o.push((0, n.jsx)(l.S89, {
             id: i,
             label: s.getText(),
             checked: t.includes(i),
             action: () => r(i, false)
           }, i)))
         }), o
-      })(l, o);
-      return (0, n.jsx)(a.kSQ, {
+      })(a, o);
+      return (0, n.jsx)(l.kSQ, {
         label: o.getLabel(),
         children: u
-      }, l)
+      }, a)
     })
   })
 });
@@ -62,32 +62,32 @@ function f(e) {
     widgetType: r,
     applicationId: f,
     ref: g
-  } = e, b = (0, i.useRef)(null), {
-    trackUserProfileAction: p
-  } = (0, l.KZ)(), m = (0, i.useMemo)(() => null != t ? t : [], [t]), O = (0, i.useCallback)(function(e) {
+  } = e, p = (0, i.useRef)(null), {
+    trackUserProfileAction: b
+  } = (0, a.KZ)(), m = (0, i.useMemo)(() => null != t ? t : [], [t]), O = (0, i.useCallback)(function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
       n = new Set(m);
     if (t) {
       let t = Object.values(c.aE).find(t => t.tags.includes(e));
       null != t && (t.tags.forEach(e => {
         n.delete(e)
-      }), n.add(e), p({
+      }), n.add(e), b({
         action: "EDIT_ACTION"
       }))
-    } else n.has(e) ? n.delete(e) : n.add(e), p({
+    } else n.has(e) ? n.delete(e) : n.add(e), b({
       action: "EDIT_ACTION"
     });
     (0, o.n$)(r, f, Array.from(n))
-  }, [m, p, r, f]), j = (0, i.useCallback)(e => {
+  }, [m, b, r, f]), j = (0, i.useCallback)(e => {
     let t = new Set(m);
     e.forEach(e => {
       t.delete(e)
-    }), p({
+    }), b({
       action: "EDIT_ACTION"
     }), (0, o.n$)(r, f, Array.from(t))
-  }, [m, p, r, f]);
-  return (0, n.jsx)(a.yRy, {
-    targetElementRef: b,
+  }, [m, b, r, f]);
+  return (0, n.jsx)(l.yRy, {
+    targetElementRef: p,
     position: "right",
     align: "top",
     renderPopout: e => {
@@ -104,10 +104,10 @@ function f(e) {
     children: e => {
       var t, r;
       return (0, n.jsx)("div", {
-        ref: e => (null != e && (b.current = e, g.current = e), () => {
-          b.current = null, g.current = null
+        ref: e => (null != e && (p.current = e, g.current = e), () => {
+          p.current = null, g.current = null
         }),
-        children: (0, n.jsx)(a.P3F, (t = function(e) {
+        children: (0, n.jsx)(l.P3F, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var r = null != arguments[t] ? arguments[t] : {},
               n = Object.keys(r);
@@ -127,7 +127,7 @@ function f(e) {
         }({}, e), r = r = {
           className: u.addButton,
           "aria-label": s.intl.string(s.t.r6EJOj),
-          children: (0, n.jsx)(a.Text, {
+          children: (0, n.jsx)(l.Text, {
             variant: "text-xxs/medium",
             color: "none",
             children: s.intl.string(s.t.fZSej4)

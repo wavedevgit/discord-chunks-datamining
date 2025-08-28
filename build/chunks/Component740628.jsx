@@ -32,22 +32,22 @@ function v(e) {
     channelId: s,
     onClose: a
   } = e;
-  return n === x.oh.ACTIVITY ? (0, r.jsx)(f.Z, {
+  return n === b.oh.ACTIVITY ? (0, r.jsx)(f.Z, {
     user: l,
     currentUser: o,
     guildId: c,
     onClose: a
-  }) : n === x.oh.MUTUAL_FRIENDS ? (0, r.jsx)(p.Z, {
+  }) : n === b.oh.MUTUAL_FRIENDS ? (0, r.jsx)(p.Z, {
     user: l,
     guildId: c,
     channelId: s,
     onClose: a
-  }) : n === x.oh.MUTUAL_GUILDS ? (0, r.jsx)(h.Z, {
+  }) : n === b.oh.MUTUAL_GUILDS ? (0, r.jsx)(h.Z, {
     user: l,
     onClose: a
-  }) : n === x.oh.BOT_DATA_ACCESS ? (0, r.jsx)(d.Z, {
+  }) : n === b.oh.BOT_DATA_ACCESS ? (0, r.jsx)(d.Z, {
     user: l
-  }) : n === x.oh.BOT_INFO ? (0, r.jsx)(u.Z, {
+  }) : n === b.oh.BOT_INFO ? (0, r.jsx)(u.Z, {
     user: l,
     currentUser: o,
     displayProfile: i,
@@ -71,7 +71,7 @@ function y(e) {
     displayProfile: m,
     guildId: p,
     items: h,
-    initialSection: y = x.oh.USER_INFO,
+    initialSection: y = b.oh.USER_INFO,
     initialSubsection: O,
     onClose: I
   } = e, {
@@ -111,7 +111,7 @@ function y(e) {
         className: j.emptyIconStreamerMode
       }), (0, r.jsx)("div", {
         className: j.emptyText,
-        children: b.intl.string(b.t.Br1ls7)
+        children: x.intl.string(x.t.Br1ls7)
       })]
     })
   }) : (0, r.jsxs)("div", {

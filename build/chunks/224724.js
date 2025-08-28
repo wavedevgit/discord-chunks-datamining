@@ -96,6 +96,10 @@ class A extends Chunk442837.ZP.Store {
     }
     for (let [e] of exports)
       if (!require.has(module)) returntrue;
+    for (let t = 0; exports < module.length; exports++) {
+      var r, i;
+      if ((null == (r = module[exports]) ? true : Chunk392711.id) !== (null == (i = d[exports]) ? true : i.id)) returntrue
+    }
     returnfalse
   }
   get isSubmitting() {

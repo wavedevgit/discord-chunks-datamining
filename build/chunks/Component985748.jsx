@@ -1,4 +1,4 @@
-/** Chunk was on 21585 **/
+/** Chunk was on 83789 **/
 /** chunk id: 985748, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -14,28 +14,30 @@ function o(e) {
     user: t,
     widget: r,
     containerClassName: o,
-    disableInteraction: c
-  } = e, s = function(e, t) {
+    disableInteraction: c,
+    index: s
+  } = e, u = function(e, t) {
     if (null == e) return {};
     var r, n, i = function(e, t) {
       if (null == e) return {};
       var r, n, i = {},
-        a = Object.keys(e);
-      for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+        l = Object.keys(e);
+      for (n = 0; n < l.length; n++) r = l[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+      var l = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
     }
     return i
-  }(e, ["user", "widget", "containerClassName", "disableInteraction"]);
+  }(e, ["user", "widget", "containerClassName", "disableInteraction", "index"]);
   return (0, n.jsx)(i.Z, {
     userId: t.id,
     widget: r,
     className: o,
     disableInteraction: c,
-    children: r.games.length > 0 ? (0, n.jsx)(l.Z, function(e) {
+    index: s,
+    children: r.games.length > 0 ? (0, n.jsx)(a.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(r);
@@ -57,7 +59,7 @@ function o(e) {
       games: r.games,
       widgetType: r.type,
       disableInteraction: c
-    }, s)) : (0, n.jsx)(a.Z, {
+    }, u)) : (0, n.jsx)(l.Z, {
       widgetType: r.type
     })
   })

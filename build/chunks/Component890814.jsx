@@ -1,13 +1,13 @@
-/** Chunk was on 21585 **/
+/** Chunk was on 83789 **/
 /** chunk id: 890814, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => l
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk956636 = require("./956636.js");
 
-function a(e) {
+function l(e) {
   let {
     games: t,
     renderGame: r

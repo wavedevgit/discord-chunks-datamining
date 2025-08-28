@@ -1,35 +1,35 @@
-/** Chunk was on 21585 **/
+/** Chunk was on 83789 **/
 /** chunk id: 30344, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => l
+  Z: () => a
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk890814 = require("./890814.jsx"),
   Chunk753436 = require("./753436.jsx");
 
-function l(e) {
+function a(e) {
   var {
     games: t,
     isGameFetching: r
-  } = e, l = function(e, t) {
+  } = e, a = function(e, t) {
     if (null == e) return {};
     var r, n, i = function(e, t) {
       if (null == e) return {};
       var r, n, i = {},
-        a = Object.keys(e);
-      for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+        l = Object.keys(e);
+      for (n = 0; n < l.length; n++) r = l[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+      var l = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
     }
     return i
   }(e, ["games", "isGameFetching"]);
   return (0, n.jsx)(i.Z, {
     games: t,
-    renderGame: e => (0, n.jsx)(a.S, function(e) {
+    renderGame: e => (0, n.jsx)(l.S, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(r);
@@ -49,6 +49,6 @@ function l(e) {
     }({
       game: e,
       loading: r(e.applicationId)
-    }, l))
+    }, a))
   })
 }

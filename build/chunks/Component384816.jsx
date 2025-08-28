@@ -61,7 +61,7 @@ function _(e) {
       })
     }), A.length > 0 && (0, r.jsx)(g.Z, {
       heading: O.intl.string(O.t["Uv/eT0"]),
-      children: (0, r.jsx)(b.Z, {
+      children: (0, r.jsx)(x.Z, {
         applicationIds: A
       })
     }), (0, r.jsx)(g.Z, {
@@ -74,7 +74,7 @@ function _(e) {
     }), S.length > 0 && (0, r.jsx)(g.Z, {
       heading: O.intl.string(O.t["3fe7U1"]),
       scrollIntoView: Z === y.Tb.CONNECTIONS,
-      children: (0, r.jsx)(x.ZP, {
+      children: (0, r.jsx)(b.ZP, {
         connectedAccounts: S,
         className: I.connections,
         userId: n.id,
@@ -82,7 +82,7 @@ function _(e) {
       })
     }), w.length > 0 && (0, r.jsx)(g.Z, {
       heading: O.intl.string(O.t.PHjkRE),
-      children: w.map(e => (0, r.jsx)(x.tH, {
+      children: w.map(e => (0, r.jsx)(b.tH, {
         className: I.appsConnections,
         applicationRoleConnection: e,
         locale: C,

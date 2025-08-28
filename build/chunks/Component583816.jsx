@@ -87,7 +87,7 @@ function _(e) {
         className: O.root,
         "aria-label": R,
         parentComponent: "RestrictedUserProfileModalV2",
-        children: (0, r.jsxs)(x.Z, {
+        children: (0, r.jsxs)(b.Z, {
           user: n,
           displayProfile: B,
           themeType: v.l.MODAL_V2,
@@ -137,7 +137,7 @@ function _(e) {
                     analyticsLocations: w
                   }, D))
                 }
-              }), (0, r.jsx)(b.Z, {
+              }), (0, r.jsx)(x.Z, {
                 userId: n.id,
                 onClick: () => {
                   A(), (0, m.pQ)(I({
