@@ -47,26 +47,26 @@ function u(e, t) {
   }), e
 }
 let d = [],
-  f = {},
-  _ = {},
-  p = {},
-  h = {},
-  m = {},
+  f = new Map,
+  _ = new Map,
+  p = new Map,
+  h = new Map,
+  m = new Map,
   g = {
     botUserIdToAppUsage: {}
   },
   E = 10;
 
 function b(e) {
-  let t = f[e.id];
-  h[e.id] = Date.now();
+  let t = f.get(e.id);
+  h.set(e.id, Date.now());
   let n = e;
-  for (let r of (null != t && (n = t.mergeFromApplicationUpdate(e)), f[e.id] = n, p[e.name.toLowerCase()] = n, e.aliases)) p[r.toLowerCase()] = n;
-  delete m[e.id]
+  for (let r of (null != t && (n = t.mergeFromApplicationUpdate(e)), f.set(e.id, n), p.set(e.name.toLowerCase(), n), e.aliases)) p.set(r.toLowerCase(), n);
+  m.delete(e.id)
 }
 
 function y() {
-  f = {}, _ = {}, p = {}, h = {}, m = {}
+  f.clear(), _.clear(), p.clear(), h.clear(), m.clear()
 }
 
 function O(e) {
@@ -79,8 +79,8 @@ function O(e) {
 function v(e) {
   let {
     applicationId: t
-  } = e, n = m[t];
-  return m[t] = true, true !== n
+  } = e, n = m.get(t);
+  return m.set(t, true), true !== n
 }
 
 function I(e) {
@@ -126,8 +126,8 @@ function A(e) {
 function C(e) {
   let {
     applicationId: t
-  } = e, n = m[t];
-  return m[t] = false, false !== n
+  } = e, n = m.get(t);
+  return m.set(t, false), false !== n
 }
 
 function N(e) {
@@ -135,8 +135,8 @@ function N(e) {
     applicationIds: t
   } = e, n = false;
   for (let e of t) {
-    let t = m[e];
-    m[e] = true, n = true !== t
+    let t = m.get(e);
+    m.set(e, true), n = true !== t
   }
   return n
 }
@@ -200,8 +200,8 @@ function j(e) {
     applicationIds: t
   } = e, n = false;
   for (let e of t) {
-    let t = m[e];
-    m[e] = false, n = false !== t
+    let t = m.get(e);
+    m.set(e, false), n = false !== t
   }
   return n
 }
@@ -223,7 +223,7 @@ function k(e) {
     applications: n
   } = e, r = [];
   for (let e of n) r.push(e.id), b(o.ZP.createFromServer(e));
-  _[t] = r
+  _.set(t, r)
 }
 
 function U(e) {
@@ -326,40 +326,40 @@ class z extends(r = Chunk442837.ZP.PersistedStore) {
     return g
   }
   _getAllApplications() {
-    return Object.values(f)
+    return Array.from(f.values())
   }
   getApplications() {
     return f
   }
   getGuildApplication(e, t) {
     if (null != e) {
-      for (let n of Object.values(f))
+      for (let n of f.values())
         if (n.guildId === e && n.type === t) return n
     }
   }
   getGuildApplicationIds(e) {
     var t;
-    return null == e ? d : null != (t = _[e]) ? t : d
+    return null == e ? d : null != (t = _.get(e)) ? t : d
   }
   getApplication(e) {
-    if (null != e) return f[e]
+    if (null != e) return f.get(e)
   }
   getApplicationByName(e) {
     if (null == e) return;
     let t = e.toLowerCase();
-    return Object.prototype.hasOwnProperty.call(p, t) ? p[t] : true
+    return p.has(t) ? p.get(t) : true
   }
   getApplicationLastUpdated(e) {
-    return h[e]
+    return h.get(e)
   }
   isFetchingApplication(e) {
-    returntrue === m[e]
+    returntrue === m.get(e)
   }
   didFetchingApplicationFail(e) {
-    returnfalse === m[e]
+    returnfalse === m.get(e)
   }
   getFetchingOrFailedFetchingIds() {
-    return Object.keys(m)
+    return Array.from(m.keys())
   }
   getAppIdForBotUserId(e) {
     var t;
