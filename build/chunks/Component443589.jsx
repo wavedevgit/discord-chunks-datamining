@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 443589, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => T
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -28,12 +28,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk427954 = require("./427954.js"),
   Chunk286389 = require("./286389.js");
 
-function N(e) {
+function T(e) {
   let {
     recipientUser: t,
     giftIntentType: n,
     analyticsPage: l,
-    shouldHighlight: N
+    shouldHighlight: T
   } = e, {
     analyticsLocations: P
   } = (0, d.ZP)(), {
@@ -116,8 +116,8 @@ function N(e) {
       innerRef: M,
       "aria-label": k(),
       onClick: R,
-      className: a()(T.actionButton, S.popoutButton, {
-        [T.highlight]: N
+      className: a()(N.actionButton, S.popoutButton, {
+        [N.highlight]: T
       }),
       onMouseEnter: L,
       onMouseLeave: Z,

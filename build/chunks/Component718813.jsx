@@ -57,12 +57,12 @@ function S(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = (0, Chunk663993.Un)({
+let N = (0, Chunk663993.Un)({
     createPromise: () => require.e("69470").then(require.bind(require, 989804)),
     webpackId: 989804,
     name: "UserSettings"
   }),
-  N = (0, Chunk663993.Un)({
+  T = (0, Chunk663993.Un)({
     createPromise: () => require.e("79835").then(require.bind(require, 72493)),
     webpackId: 72493
   }),
@@ -87,11 +87,11 @@ let T = (0, Chunk663993.Un)({
     name: "GuildSettings"
   }),
   Z = {
-    [Chunk981631.S9g.USER_SETTINGS]: () => (0, Chunk526665.yP)("Layers") ? (0, Chunk951288.jsx)(P, {}) : (0, Chunk951288.jsx)(T, {}),
+    [Chunk981631.S9g.USER_SETTINGS]: () => (0, Chunk526665.yP)("Layers") ? (0, Chunk951288.jsx)(P, {}) : (0, Chunk951288.jsx)(N, {}),
     [Chunk981631.S9g.CHANNEL_SETTINGS]: () => (0, Chunk951288.jsx)(j, {}),
     [Chunk981631.S9g.GUILD_SETTINGS]: () => (0, Chunk951288.jsx)(A, {}),
     [Chunk981631.S9g.COLLECTIBLES_SHOP]: () => (0, Chunk951288.jsx)(x, {}),
-    [Chunk981631.S9g.MANA_PLAYGROUND]: () => (0, Chunk951288.jsx)(N, {})
+    [Chunk981631.S9g.MANA_PLAYGROUND]: () => (0, Chunk951288.jsx)(T, {})
   },
   w = "SHOWN",
   L = "HIDDEN",

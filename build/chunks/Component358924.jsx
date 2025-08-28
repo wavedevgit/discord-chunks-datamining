@@ -358,7 +358,7 @@ eg.Header = eh, eg.Body = e => {
     partySize: a,
     members: s,
     onChannelContextMenu: c
-  } = e, u = l.useRef(null), f = (0, N.ZP)(r, true), h = (0, V.EB)(n, 32), g = (0, V.gM)(n);
+  } = e, u = l.useRef(null), f = (0, T.ZP)(r, true), h = (0, V.EB)(n, 32), g = (0, V.gM)(n);
   return (0, i.jsx)(eo, {
     children: (0, i.jsxs)("div", {
       className: ee.voiceSection,
@@ -661,7 +661,7 @@ eg.Header = eh, eg.Body = e => {
       analyticsLocations: g
     } = (0, C.ZP)();
   if (null == u) return null;
-  let b = T.Z.getApplication(u);
+  let b = N.Z.getApplication(u);
   if (null == b) return null;
   let _ = null != t.created_at && t.created_at > 0 ? {
       start: t.created_at

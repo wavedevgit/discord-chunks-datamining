@@ -45,7 +45,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -57,7 +57,7 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let N = {
+let T = {
     offset: 2
   },
   P = {
@@ -145,7 +145,7 @@ function j(e) {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387));
-      return t => (0, r.jsx)(e, T(S({}, t), {
+      return t => (0, r.jsx)(e, N(S({}, t), {
         user: j,
         guildId: k,
         channel: O,
@@ -158,7 +158,7 @@ function j(e) {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
-      return t => (0, r.jsx)(e, T(S({}, t), {
+      return t => (0, r.jsx)(e, N(S({}, t), {
         user: j,
         showMediaItems: true,
         onInteraction: (0, m.u)("UserGenericContextMenu", f.Z.RTC_PANEL, {
@@ -176,14 +176,14 @@ function j(e) {
     clickTrap: true,
     children: e => (0, r.jsx)(s.ua7, {
       text: H,
-      children: t => (0, r.jsx)(s.P3F, T(S({}, t, e), {
+      children: t => (0, r.jsx)(s.P3F, N(S({}, t, e), {
         innerRef: d,
         onClick: t => {
           e.onClick(t), (0, g.v)(p, g.d.VOICE_USER)
         },
         className: C.avatarContainer,
         onContextMenu: F,
-        focusProps: N,
+        focusProps: T,
         children: (0, r.jsx)(b.Z, {
           shakeLocation: v.oZ.VOICE_USER,
           isShaking: D,
@@ -246,7 +246,7 @@ function x(e) {
       size: "xs",
       color: "currentColor"
     }),
-    focusProps: N
+    focusProps: T
   }), y = b && c ? t : m;
   return y.length <= 0 ? null : (0, r.jsx)(s.zJl, {
     className: a()(C.scroller, l),

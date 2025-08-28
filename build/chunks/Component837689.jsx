@@ -35,8 +35,8 @@ function S(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let T = "PremiumServerDriveAnnouncementModal";
-class N extends Chunk317770.Z {
+let N = "PremiumServerDriveAnnouncementModal";
+class T extends Chunk317770.Z {
   _initialize() {
     Chunk570140.Z.subscribe("PREMIUM_MARKETING_DATA_READY", this.mayShowAnnouncementModal), Chunk570140.Z.subscribe("PREMIUM_MARKETING_PREVIEW", this.handlePreview)
   }
@@ -49,7 +49,7 @@ class N extends Chunk317770.Z {
         content: e,
         isPreview: t
       });
-      if (null != i) return (false !== t || (null == i ? true : i.contentIdentifier) !== "summer_bogo_content" || !!await (0, y.k)()) && ((0, a.Mr3)(T), (0, a.ZDy)(async () => {
+      if (null != i) return (false !== t || (null == i ? true : i.contentIdentifier) !== "summer_bogo_content" || !!await (0, y.k)()) && ((0, a.Mr3)(N), (0, a.ZDy)(async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 318199));
@@ -58,7 +58,7 @@ class N extends Chunk317770.Z {
           properties: i
         })
       }, {
-        modalKey: T
+        modalKey: N
       }), true);
       returnfalse
     }), S(this, "handlePreview", e => {
@@ -98,4 +98,4 @@ class N extends Chunk317770.Z {
     })
   }
 }
-let P = new N
+let P = new T

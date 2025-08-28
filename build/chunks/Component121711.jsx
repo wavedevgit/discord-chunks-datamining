@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 121711, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => q
+  Z: () => K
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -24,7 +24,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk763433 = require("./763433.jsx"),
   Chunk283293 = require("./283293.jsx"),
   Chunk507808 = require("./507808.js"),
-  Chunk794231 = require("./794231.js"),
   Chunk822857 = require("./822857.js"),
   Chunk775451 = require("./775451.jsx"),
   Chunk451478 = require("./451478.js"),
@@ -49,21 +48,21 @@ var Chunk951288 = require("./951288.js"),
   Chunk606199 = require("./606199.js"),
   Chunk164792 = require("./164792.js");
 
-function K(e) {
+function Y(e) {
   let {
     onLoadComplete: t
   } = e, {
     enabled: n
-  } = (0, S.WX)({
-    location: G.dr.QUEST_HOME_DESKTOP
+  } = (0, C.WX)({
+    location: U.dr.QUEST_HOME_DESKTOP
   }), l = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), o = (0, s.e7)([N.Z], () => N.Z.isFocused()), {
     ref: c,
     inViewport: d
-  } = (0, w.a)(), p = i.useRef(null);
+  } = (0, Z.a)(), p = i.useRef(null);
   if (i.useEffect(() => {
       (null == p ? true : p.current) != null && (p.current.paused || o && d && !l ? p.current.paused && !l && d && o && p.current.play() : p.current.pause())
     }, [l, d, o]), n) {
-    let e = (0, P.rO)();
+    let e = (0, T.rO)();
     return (0, r.jsx)(g.Z, {
       ref: e => {
         p.current = e, c.current = e
@@ -71,24 +70,24 @@ function K(e) {
       loop: true,
       muted: true,
       playsInline: true,
-      className: a()(F.bannerAsset, F.orbsBannerAsset),
+      className: a()(H.bannerAsset, H.orbsBannerAsset),
       onProgress: t,
       "data-mtctest-ignore": "true",
       controls: false,
       children: (0, r.jsx)("source", {
-        src: e ? W.Z : Y.Z,
+        src: e ? z.Z : W.Z,
         type: e ? "video/mp4" : "video/webm"
       })
     })
   }
   return (0, r.jsx)("img", {
-    src: z.ZP,
-    className: a()(F.bannerAsset, F.oversizedImg),
+    src: F.ZP,
+    className: a()(H.bannerAsset, H.oversizedImg),
     alt: "",
     onLoad: t
   })
 }
-let q = function() {
+let K = function() {
   let {
     selectedTab: e,
     onSelectTab: t,
@@ -98,7 +97,7 @@ let q = function() {
     scrollPosition: s
   } = (0, Chunk979233.M)(), u = Chunk150560.Z.getState().getUtmCurrentContext(), g = (0, Chunk833435._)({
     location: Chunk46140.dr.QUEST_HOME_DESKTOP
-  }) ? Chunk736683.Z : Chunk736683.j, N = (0, Chunk879438.z)(e => e.registerAssetLoad), P = Chunk647438.useRef(Chunk607070);
+  }) ? Chunk736683.Z : Chunk736683.j, N = (0, Chunk879438.z)(e => e.registerAssetLoad), T = Chunk647438.useRef(Chunk607070);
   Chunk647438.useEffect(() => {
     Chunk526167.current = Chunk607070
   }), Chunk647438.useEffect(() => {
@@ -118,24 +117,20 @@ let q = function() {
     })
   }, [module]);
   let {
-    enabled: w
+    enabled: Z
   } = (0, Chunk822857.WX)({
     location: Chunk46140.dr.QUEST_HOME_DESKTOP
-  }), {
-    showBetaTag: z
-  } = Chunk794231.Z.useExperiment({
-    location: Chunk46140.dr.QUEST_HOME_DESKTOP
-  }), W = Chunk647438.useCallback(() => {
+  }), F = Chunk647438.useCallback(() => {
     if (Chunk672188) return void window.open(Chunk981631.EYA.PAID_TERMS_ORBS);
     window.open(Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUESTS_LEARN_MORE))
   }, [Chunk672188]);
   (0, Chunk252618.Tt)({
     location: Chunk388032.intl.string(Chunk388032.t.JALI2N)
   });
-  let Y = Chunk672188 ? Chunk388032.intl.format(Chunk388032.t.BCBIlp, {}) : Chunk388032.intl.format(Chunk388032.t.lmMBf3, {}),
-    q = Chunk672188 ? Chunk388032.intl.format(Chunk388032.t.U9FY0N, {}) : Chunk388032.intl.string(Chunk388032.t.oWCrBg),
-    Q = Chunk647438.useRef(null),
-    X = Chunk647438.useCallback(() => {
+  let z = Chunk672188 ? Chunk388032.intl.format(Chunk388032.t.BCBIlp, {}) : Chunk388032.intl.format(Chunk388032.t.lmMBf3, {}),
+    W = Chunk672188 ? Chunk388032.intl.format(Chunk388032.t.U9FY0N, {}) : Chunk388032.intl.string(Chunk388032.t.oWCrBg),
+    K = Chunk647438.useRef(null),
+    q = Chunk647438.useCallback(() => {
       (0, Chunk507808.Y)({
         pageType: Chunk981631.ZY5.GLOBAL_DISCOVERY_QUESTS,
         sectionType: Chunk981631.jXE.ORBS_BALANCE_MENU,
@@ -154,10 +149,10 @@ let q = function() {
     children: (0, Chunk951288.jsx)("div", {
       className: Chunk728963.container,
       children: Chunk672188 ? (0, Chunk951288.jsx)(Chunk466962.t.Provider, {
-        value: Q,
+        value: K,
         children: (0, Chunk951288.jsxs)(Chunk283293.Z, {
           onScroll: Chunk120356,
-          ref: Q,
+          ref: K,
           children: [(0, Chunk951288.jsx)(Chunk763433.a, {
             selectedTabId: module,
             handleTransition: exports,
@@ -167,12 +162,11 @@ let q = function() {
               analyticsPage: Chunk981631.ZY5.GLOBAL_DISCOVERY_QUESTS,
               cardAlignment: Chunk775451.ek.END,
               ctaText: Chunk388032.intl.string(Chunk388032.t["J+vlIS"]),
-              ctaOnClick: X
+              ctaOnClick: q
             })
           }), (0, Chunk951288.jsxs)(Chunk17845.Z, {
-            title: Chunk164792,
-            description: q,
-            betaTag: Chunk672188 && Chunk13299,
+            title: Chunk606199,
+            description: Chunk164792,
             button: Chunk672188 ? (0, Chunk951288.jsxs)(Chunk481060.hE2, {
               children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
                 variant: "overlay-primary",
@@ -186,12 +180,12 @@ let q = function() {
               }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
                 variant: "overlay-secondary",
                 text: Chunk388032.intl.string(Chunk388032.t["7kTAgI"]),
-                onClick: Chunk606199
+                onClick: Chunk13299
               })]
             }) : (0, Chunk951288.jsx)(Chunk481060.zxk, {
               variant: "overlay-primary",
               text: Chunk388032.intl.string(Chunk388032.t.hvVgAQ),
-              onClick: Chunk606199,
+              onClick: Chunk13299,
               icon: Chunk481060.Gr1,
               iconPosition: "end"
             }),
@@ -202,7 +196,7 @@ let q = function() {
               className: a()(Chunk728963.bannerGradient, {
                 [Chunk728963.orbsGradient]: Chunk672188
               })
-            }), (0, Chunk951288.jsx)(K, {
+            }), (0, Chunk951288.jsx)(Y, {
               onLoadComplete: Chunk451478
             })]
           }), (0, Chunk951288.jsx)(Chunk374939.Z, {
@@ -222,17 +216,17 @@ let q = function() {
             icon: Chunk481060.qDn
           })]
         }), (0, Chunk951288.jsx)(Chunk466962.t.Provider, {
-          value: Q,
+          value: K,
           children: (0, Chunk951288.jsxs)(Chunk283293.Z, {
             onScroll: Chunk120356,
-            ref: Q,
+            ref: K,
             children: [(0, Chunk951288.jsxs)(Chunk17845.Z, {
-              title: Chunk164792,
-              description: q,
+              title: Chunk606199,
+              description: Chunk164792,
               button: (0, Chunk951288.jsx)(Chunk481060.zxk, {
                 variant: "overlay-primary",
                 text: Chunk388032.intl.string(Chunk388032.t.hvVgAQ),
-                onClick: Chunk606199,
+                onClick: Chunk13299,
                 icon: Chunk481060.Gr1,
                 iconPosition: "end"
               }),
@@ -243,7 +237,7 @@ let q = function() {
                 className: a()(Chunk728963.bannerGradient, {
                   [Chunk728963.orbsGradient]: Chunk672188
                 })
-              }), (0, Chunk951288.jsx)(K, {
+              }), (0, Chunk951288.jsx)(Y, {
                 onLoadComplete: Chunk451478
               })]
             }), (0, Chunk951288.jsxs)(Chunk374939.Z, {

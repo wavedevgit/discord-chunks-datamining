@@ -41,7 +41,7 @@ function b(e) {
     onAcceptSuccess: y,
     onRejectSuccess: E,
     onError: O
-  }), T = I || C, N = T || S;
+  }), N = I || C, T = N || S;
   return (0, r.jsxs)("div", {
     className: m.container,
     children: [(0, r.jsx)(f.Z, {
@@ -57,8 +57,8 @@ function b(e) {
         onClick: e => {
           v(b.id), e.stopPropagation()
         },
-        disabled: N,
-        loading: T
+        disabled: T,
+        loading: N
       }), (0, r.jsx)(h.Z, {
         channel: b
       })]

@@ -54,14 +54,14 @@ let x = 15 * Chunk70956.Z.Millis.MINUTE,
         var t, n;
         return (null == (t = e.game) ? true : t.name) != null && (0, _.isGameApplicationType)(null == (n = e.game) ? true : n.type)
       }).map(e => e.game.name);
-      _.default.track(T.rMx.NOW_PLAYING_CARD_HOVERED, {
+      _.default.track(N.rMx.NOW_PLAYING_CARD_HOVERED, {
         num_users: m,
         num_streams: b,
         num_activities: O,
         in_voice_channel: E,
         games_detected: e
       })
-    }, [m, b, O, E, h]), N = s()(S, x);
+    }, [m, b, O, E, h]), T = s()(S, x);
     return null != c || null != d ? (0, r.jsx)(u.yRy, {
       targetElementRef: o,
       position: "left",
@@ -99,7 +99,7 @@ let x = 15 * Chunk70956.Z.Millis.MINUTE,
           return e
         }({}, e), i = i = {
           ref: o,
-          onMouseEnter: N,
+          onMouseEnter: T,
           "aria-haspopup": "menu",
           className: j.itemCard,
           active: l,

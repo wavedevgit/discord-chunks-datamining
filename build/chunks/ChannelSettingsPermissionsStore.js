@@ -56,8 +56,8 @@ let O = new Set,
   I = null,
   C = null,
   S = null,
-  T = null,
   N = null,
+  T = null,
   P = Chunk433517.K.get(Chunk71080.kf) || false;
 
 function j(e) {
@@ -69,7 +69,7 @@ function j(e) {
 function x() {
   if (C = Chunk388610.Z.getChannel(), S = Chunk388610.Z.getCategory(), null == C) returnfalse;
   let e = C.getGuildId();
-  I = v = j(C), null == v[T] && (T = module), i = null != S, r = Chunk700785.o4(C, S), N = null, y = false, E = Chunk981631.QZA.CLOSED, O.clear()
+  I = v = j(C), null == v[N] && (N = module), i = null != S, r = Chunk700785.o4(C, S), T = null, y = false, E = Chunk981631.QZA.CLOSED, O.clear()
 }
 class A extends(l = Chunk442837.ZP.Store) {
   initialize() {
@@ -91,7 +91,7 @@ class A extends(l = Chunk442837.ZP.Store) {
     return v
   }
   get selectedOverwriteId() {
-    return T
+    return N
   }
   get formState() {
     return E
@@ -140,17 +140,17 @@ let Z = new A(Chunk570140.Z, {
     let {
       id: t
     } = e;
-    if (null != v && null != v[t]) T = t;
+    if (null != v && null != v[t]) N = t;
     else {
       if (null == C) returnfalse;
-      N = t
+      T = t
     }
   },
   CHANNEL_SETTINGS_INIT: function() {
     Chunk388610.Z.getSection() === Chunk981631.CoT.PERMISSIONS && x()
   },
   CHANNEL_SETTINGS_CLOSE: function() {
-    E = Chunk981631.QZA.CLOSED, v = null, I = null, C = null, S = null, y = false, O.clear(), T = null, N = null
+    E = Chunk981631.QZA.CLOSED, v = null, I = null, C = null, S = null, y = false, O.clear(), N = null, T = null
   },
   CHANNEL_UPDATES: function(e) {
     let {
@@ -167,7 +167,7 @@ let Z = new A(Chunk570140.Z, {
       let n = {};
       return O.forEach(e => {
         null != v && (n[e] = v[e])
-      }), null == n[t] && null == C.permissionOverwrites[t] && (n[t] = d.we(t)), null == (v = b({}, C.permissionOverwrites, n))[T] ? T = t : null != N && null != v[N] && (T = N, N = null), r = d.o4(C, S), true
+      }), null == n[t] && null == C.permissionOverwrites[t] && (n[t] = d.we(t)), null == (v = b({}, C.permissionOverwrites, n))[N] ? N = t : null != T && null != v[T] && (N = T, T = null), r = d.o4(C, S), true
     }(e.id) && (n = true);
     return n
   },

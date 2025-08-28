@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 340137, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => N
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -45,14 +45,14 @@ function S(e) {
     popoutProps: l,
     ref: o,
     focusSectionProps: s
-  } = e, [f, g] = i.useState(false), _ = (0, m.D)(), O = n || _, S = n || O, T = (0, r.jsx)(c.Dkj, {
+  } = e, [f, g] = i.useState(false), _ = (0, m.D)(), O = n || _, S = n || O, N = (0, r.jsx)(c.Dkj, {
     className: y.icon,
     color: f || S ? c.TVs.colors.ICON_PRIMARY : c.TVs.colors.ICON_TERTIARY,
     size: "custom",
     height: 20,
     width: 20
   }), {
-    badge: N,
+    badge: T,
     badgeType: P
   } = (0, b.h6)({
     isSelected: O
@@ -112,12 +112,12 @@ function S(e) {
                 width: 20,
                 height: 20,
                 mask: u.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
-                children: T
+                children: N
               }), (0, r.jsx)("div", {
                 className: y.unreadDot
               })]
-            }) : T
-          }), N]
+            }) : N
+          }), T]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -133,7 +133,7 @@ function S(e) {
   })
 }
 
-function T() {
+function N() {
   let {
     focusSectionProps: e
   } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, t = Chunk647438.useRef(null), {

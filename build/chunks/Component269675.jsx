@@ -37,7 +37,7 @@ function P(e) {
     restrictionsLoading: L
   } = (0, f.uP)(t), R = null == n || !Z || A || L;
   (0, u.Tt)({
-    subsection: T.intl.string(T.t["KzCF//"]),
+    subsection: N.intl.string(N.t["KzCF//"]),
     location: null == n ? true : n.name
   }), (0, c.Z)(l.tq ? "role-subscriptions-overview" : true);
   let D = P && (null == n || !(j || x) || w && !L);
@@ -52,24 +52,24 @@ function P(e) {
     })
   }
   return (0, r.jsxs)("div", {
-    className: N.container,
+    className: T.container,
     children: [(0, r.jsxs)(g.Z, {
       toolbar: (0, r.jsx)(i.Fragment, {}),
-      className: N.headerBar,
+      className: T.headerBar,
       children: [(0, r.jsx)(g.Z.Icon, {
         icon: (0, o.GSL)(E.Z),
         "aria-hidden": true
       }), (0, r.jsx)(g.Z.Title, {
-        children: T.intl.string(T.t["KzCF//"])
+        children: N.intl.string(N.t["KzCF//"])
       })]
     }), (0, r.jsx)("div", {
       id: C.v
     }), (0, r.jsx)("div", {
-      className: N.content,
+      className: T.content,
       children: j ? (0, r.jsx)(o.u2D, {
-        className: N.scroller,
+        className: T.scroller,
         children: (0, r.jsx)("div", {
-          className: N.scrollerContent,
+          className: T.scrollerContent,
           children: R ? (0, r.jsx)(o.$jN, {}) : (0, r.jsx)(y.Z, {
             guild: n
           })

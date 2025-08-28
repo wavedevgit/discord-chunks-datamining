@@ -184,7 +184,7 @@ function _(e) {
         src: h.Z.Header.Icon.Src.MULTIPLE
       })
     }
-  }(_), T = (0, u.Z)({
+  }(_), N = (0, u.Z)({
     applicationId: null == (i = _.currentActivities[0]) || null == (t = i.activity) ? true : t.application_id,
     location: "FriendsActivityFeed",
     source: c.m1.FriendsActivityFeed
@@ -195,8 +195,8 @@ function _(e) {
     title: I,
     subtitle: C,
     icon: S,
-    onSubtitleClick: T,
-    onIconClick: T,
+    onSubtitleClick: N,
+    onIconClick: N,
     onContextMenu: e => O(e, v.user)
   })
 }

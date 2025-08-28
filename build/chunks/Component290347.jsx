@@ -45,7 +45,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -57,7 +57,7 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let N = [],
+let T = [],
   P = e => {
     let {
       tagText: t,
@@ -123,7 +123,7 @@ function x(e) {
   } = e, {
     onClose: G,
     transitionState: B
-  } = n, V = (0, h.Dt)(), H = D.length % 2 == 0, F = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), [z, W] = i.useState(Date.now()), [Y, K] = i.useState(0), [q, Q] = i.useState(0), [X, J] = i.useState(false), [$, ee] = i.useState(true), et = i.useRef(z), en = i.useRef(Y), er = i.useRef(q), ei = i.useRef(X), el = i.useRef($), [ea, eo] = i.useState(N), es = i.useRef(false);
+  } = n, V = (0, h.Dt)(), H = D.length % 2 == 0, F = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), [z, W] = i.useState(Date.now()), [Y, K] = i.useState(0), [q, Q] = i.useState(0), [X, J] = i.useState(false), [$, ee] = i.useState(true), et = i.useRef(z), en = i.useRef(Y), er = i.useRef(q), ei = i.useRef(X), el = i.useRef($), [ea, eo] = i.useState(T), es = i.useRef(false);
 
   function ec() {
     let e = Date.now(),
@@ -145,13 +145,13 @@ function x(e) {
               type: "text/vtt"
             }),
             i = URL.createObjectURL(r);
-          return T(S({}, e), {
+          return N(S({}, e), {
             src: i
           })
         });
         eo(await Promise.all(t))
       } catch (e) {
-        E.Z.captureException(e), eo(N)
+        E.Z.captureException(e), eo(T)
       }
     };
     true !== es.current && e(), es.current = true
@@ -274,7 +274,7 @@ function x(e) {
           className: a()(C.featureCardGroup, {
             [C.wideStyle]: H
           }),
-          children: D.map((e, t) => (0, r.jsx)(j, T(S({}, e), {
+          children: D.map((e, t) => (0, r.jsx)(j, N(S({}, e), {
             wideStyle: H
           }), "".concat(e.header, "_").concat(t)))
         }), (0, r.jsx)("div", {

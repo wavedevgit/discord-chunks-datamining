@@ -21,14 +21,14 @@ let v = "ActivityTrackingStore",
   I = 30 * Chunk70956.Z.Millis.MINUTE,
   C = 5 * Chunk70956.Z.Millis.MINUTE,
   S = null != (r = Chunk433517.K.get(v)) ? r : {},
-  T = {},
-  N = false;
+  N = {},
+  T = false;
 
 function P(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
   t && j(e, true);
-  let n = T[e.applicationId];
-  null != n && (n.stop(), delete T[e.applicationId]), delete S[e.applicationId], o.K.set(v, S)
+  let n = N[e.applicationId];
+  null != n && (n.stop(), delete N[e.applicationId]), delete S[e.applicationId], o.K.set(v, S)
 }
 
 function j(e) {
@@ -52,8 +52,8 @@ function j(e) {
     sessionId: a,
     mediaSessionId: c
   }), e.updatedAt = n;
-  let d = T[e.applicationId];
-  null == d && (d = T[e.applicationId] = new s.Xp).start(I, () => j(e)), t || (S[e.applicationId] = e, o.K.set(v, S))
+  let d = N[e.applicationId];
+  null == d && (d = N[e.applicationId] = new s.Xp).start(I, () => j(e)), t || (S[e.applicationId] = e, o.K.set(v, S))
 }
 
 function x() {
@@ -79,7 +79,7 @@ function x() {
 
 function A() {
   for (let e of Object.keys(S)) P(S[module]);
-  N = false
+  T = false
 }
 class Z extends(i = Chunk442837.ZP.Store) {
   initialize() {
@@ -96,9 +96,9 @@ class Z extends(i = Chunk442837.ZP.Store) {
 }) : Z[l] = "ActivityTrackingStore", new Z(Chunk570140.Z, {
   RUNNING_GAMES_CHANGE: () => x(),
   CONNECTION_OPEN: function() {
-    if (N) returnfalse;
+    if (T) returnfalse;
     for (let e of Object.keys(S)) j(S[module]);
-    x(false), N = true
+    x(false), T = true
   },
   CONNECTION_CLOSED: function(e) {
     let {

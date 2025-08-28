@@ -335,7 +335,7 @@ let w = {
       } = e, r = {
         currentUser: _.default.getCurrentUser()
       };
-      return null == r.currentUser || null != t && (0, o.Z)(r, t) || n((0, T.Z)(r.currentUser)), r
+      return null == r.currentUser || null != t && (0, o.Z)(r, t) || n((0, N.Z)(r.currentUser)), r
     }
   },
   [Chunk981631.zMe.CURRENT_GUILD_MEMBER_UPDATE]: {

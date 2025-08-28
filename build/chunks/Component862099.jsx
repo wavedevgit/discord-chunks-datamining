@@ -114,7 +114,7 @@ function V(e) {
     return t
   }), [n]), l = (0, d.KS)(n);
   return (0, i.jsx)(B, {
-    onClickCloseIcon: () => (0, N.ji)({
+    onClickCloseIcon: () => (0, T.ji)({
       eventId: null == t ? true : t.id
     }),
     heading: U.intl.string(U.t["X2K3//"]),
@@ -137,10 +137,10 @@ function H(e) {
   let {
     guildEvent: t,
     noticeType: n
-  } = e, r = (0, R.DK)(t), l = (0, s.e7)([T.ZP], () => T.ZP.isInterestedInEventRecurrence(t.id, r), [t.id, r]), a = (0, s.e7)([j.Z], () => j.Z.getUpcomingNoticeSeenTime(t.id), [t.id]);
-  return l || null != a || (0, N._6)(t.id), (0, i.jsx)(c.zxk, {
+  } = e, r = (0, R.DK)(t), l = (0, s.e7)([N.ZP], () => N.ZP.isInterestedInEventRecurrence(t.id, r), [t.id, r]), a = (0, s.e7)([j.Z], () => j.Z.getUpcomingNoticeSeenTime(t.id), [t.id]);
+  return l || null != a || (0, T._6)(t.id), (0, i.jsx)(c.zxk, {
     onClick: function() {
-      (0, D.Z)(t.id, null, t.guild_id, () => setTimeout(() => (0, N.L_)(t.id), 1e3)), I.default.track(M.rMx.CHANNEL_NOTICE_CTA_CLICKED, {
+      (0, D.Z)(t.id, null, t.guild_id, () => setTimeout(() => (0, T.L_)(t.id), 1e3)), I.default.track(M.rMx.CHANNEL_NOTICE_CTA_CLICKED, {
         guild_id: t.guild_id,
         notice_type: n
       })
@@ -195,7 +195,7 @@ function F(e) {
           I.default.track(M.rMx.CHANNEL_NOTICE_CLOSED, {
             notice_type: r,
             guild_id: n.guild_id
-          }), (0, N.L_)(n.id)
+          }), (0, T.L_)(n.id)
         },
         className: G.closeIcon,
         "aria-label": U.intl.string(U.t.cpT0Cg),
@@ -248,7 +248,7 @@ function z(e) {
     guildEvent: t
   } = e, n = (0, L.cS)(t);
   return null == n ? null : (0, i.jsx)(B, {
-    onClickCloseIcon: () => (0, N.ji)({
+    onClickCloseIcon: () => (0, T.ji)({
       eventId: null == t ? true : t.id
     }),
     heading: U.intl.string(U.t["1+boPj"]),
@@ -316,7 +316,7 @@ function K(e) {
     count: "".concat(l)
   });
   return (0, i.jsx)(B, {
-    onClickCloseIcon: () => (0, N.ji)({
+    onClickCloseIcon: () => (0, T.ji)({
       stageId: null == t ? true : t.id
     }),
     heading: U.intl.string(U.t["X2K3//"]),

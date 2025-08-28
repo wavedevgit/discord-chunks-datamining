@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk934422 = require("./934422.js");
 
-function N(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -124,7 +124,7 @@ class j extends Chunk647438.PureComponent {
       onOtherHover: () => Chunk493683 ? null : (0, Chunk239091.Zy)(),
       onClick: this.handleOpenPrivateChannel,
       children: t => (0, r.jsxs)("div", {
-        className: T.listItemContents,
+        className: N.listItemContents,
         children: [(0, r.jsx)(v.Z, {
           user: e,
           status: l,
@@ -140,7 +140,7 @@ class j extends Chunk647438.PureComponent {
           hovered: t,
           showAccountIdentifier: !o && !e.isProvisional
         }), (0, r.jsxs)("div", {
-          className: T.actions,
+          className: N.actions,
           children: [null != c && (0, r.jsx)(p.Z, {
             recipientUser: e,
             giftIntentType: c,
@@ -162,9 +162,9 @@ class j extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), N(this, "peopleListItemRef", i.createRef()), N(this, "state", {
+    super(...e), T(this, "peopleListItemRef", i.createRef()), T(this, "state", {
       isActiveRow: false
-    }), N(this, "handleOpenPrivateChannel", e => {
+    }), T(this, "handleOpenPrivateChannel", e => {
       let {
         user: t
       } = this.props;
@@ -173,7 +173,7 @@ class j extends Chunk647438.PureComponent {
       null != n ? (0, f.uL)(I.Z5c.CHANNEL(I.ME, n.id)) : u.Z.openPrivateChannel({
         recipientIds: t.id
       })
-    }), N(this, "handleOpenActionsMenu", e => {
+    }), T(this, "handleOpenActionsMenu", e => {
       let {
         user: t,
         isGameRelationship: n,
@@ -197,7 +197,7 @@ class j extends Chunk647438.PureComponent {
           "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
           }))), r.forEach(function(t) {
-            N(e, t, n[t])
+            T(e, t, n[t])
           })
         }
         return e

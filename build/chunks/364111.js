@@ -61,13 +61,13 @@ function f(e, t, n) {
       }), e
     }, [t, g, I, h]),
     S = (0, r.useMemo)(() => !(0, s.oc)(O, C), [O, C]),
-    T = (0, d.J)(m, null != y && y, i),
-    N = (0, r.useMemo)(() => !T && Date.now() - b < 6e5, [b, T]);
+    N = (0, d.J)(m, null != y && y, i),
+    T = (0, r.useMemo)(() => !N && Date.now() - b < 6e5, [b, N]);
   return (0, r.useEffect)(() => {
     if (!f || y) return;
     let t = Date.now() - _ < 6e5;
-    (null == E || !t) && (S || !N || v) && (0, s.Ov)(e, C, n)
-  }, [f, y, E, _, N, v, S, C, e, n]), {
+    (null == E || !t) && (S || !T || v) && (0, s.Ov)(e, C, n)
+  }, [f, y, E, _, T, v, S, C, e, n]), {
     isFetchingShopHome: y,
     fetchShopHomeError: E,
     shopBlocks: m,

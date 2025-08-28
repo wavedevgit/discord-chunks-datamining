@@ -32,8 +32,8 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       onClick: I,
       cta: C,
       ctaColor: S,
-      centerText: T,
-      className: N
+      centerText: N,
+      className: T
     } = e;
     i.useEffect(() => {
       g(p.rMx.CHANNEL_NOTICE_VIEWED, {
@@ -63,14 +63,14 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       className: a()(h.title, {
         [h.noImageTitle]: null == o
       }, {
-        [h.center]: T
+        [h.center]: N
       }),
       children: n
     }));
     let x = null;
     "function" == typeof l ? x = l() : null != l && (x = (0, r.jsx)(c.Text, {
       className: a()({
-        [h.center]: T
+        [h.center]: N
       }),
       variant: "text-sm/normal",
       color: "text-muted",
@@ -78,7 +78,7 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
     }));
     let A = null != _ ? "".concat(_, "px") : "16px";
     return (0, r.jsxs)("div", {
-      className: a()(h.container, N),
+      className: a()(h.container, T),
       children: [true === y ? null : (0, r.jsx)(c.P3F, {
         onClick: () => {
           u.ZP.trackWithMetadata(p.rMx.CHANNEL_NOTICE_CLOSED, {
