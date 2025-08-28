@@ -1,4 +1,4 @@
-/** Chunk was on 5550 **/
+/** Chunk was on 47129 **/
 /** chunk id: 79808, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -18,23 +18,23 @@ function c(e) {
     onClose: c,
     sidebarHeader: d,
     sidebarFooter: _
-  } = e, [E, N] = l.useState(true), [T, I] = l.useState(n.key), {
+  } = e, [E, f] = r.useState(true), [N, T] = r.useState(n.key), {
     navigateWithValidation: g
-  } = (0, a.Cu)(), O = l.useMemo(() => ({
-    currentPanel: t.layout.flatMap(e => e.layout).find(e => e.key === T),
-    setCurrentPanel: e => g(() => I(e.key)),
+  } = (0, s.Cu)(), O = r.useMemo(() => ({
+    currentPanel: t.layout.flatMap(e => e.layout).find(e => e.key === N),
+    setCurrentPanel: e => g(() => T(e.key)),
     showNavigationMobile: E,
-    setShowNavigationMobile: N
-  }), [T, t, E, g, N]);
-  return (0, i.jsx)(o.j.Provider, {
+    setShowNavigationMobile: f
+  }), [N, t, E, g, f]);
+  return (0, i.jsx)(a.j.Provider, {
     value: O,
     children: (0, i.jsxs)("div", {
       className: u.container,
-      children: [(0, i.jsx)(s.P, {
+      children: [(0, i.jsx)(o.P, {
         root: t,
         header: d,
         footer: _
-      }), (0, i.jsx)(r.Z, {
+      }), (0, i.jsx)(l.Z, {
         onClose: () => g(c),
         setting: O.currentPanel
       })]
@@ -46,17 +46,17 @@ function d(e) {
   let {
     root: t,
     initialPanel: n,
-    onClose: l,
-    sidebarHeader: r,
-    sidebarFooter: s
+    onClose: r,
+    sidebarHeader: l,
+    sidebarFooter: o
   } = e;
-  return (0, i.jsx)(a.Ri, {
+  return (0, i.jsx)(s.Ri, {
     children: (0, i.jsx)(c, {
       root: t,
       initialPanel: n,
-      onClose: l,
-      sidebarHeader: r,
-      sidebarFooter: s
+      onClose: r,
+      sidebarHeader: l,
+      sidebarFooter: o
     })
   })
 }

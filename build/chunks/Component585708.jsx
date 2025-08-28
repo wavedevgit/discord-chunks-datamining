@@ -27,8 +27,8 @@ function E(e, t, n, E) {
   var _;
   let {
     icon: S,
-    title: x,
-    body: I
+    title: I,
+    body: x
   } = (0, a.Xi)(e, t, n), {
     trackView: j,
     trackClick: C
@@ -43,12 +43,12 @@ function E(e, t, n, E) {
   });
   return {
     icon: S,
-    title: x,
+    title: I,
     body: t.content.length > 0 ? (0, l.ZP)(t, {
       noStyleAndInteraction: true,
       formatInline: true,
       hideSimpleEmbedContent: false
-    }).content : I,
+    }).content : x,
     hint: (e, t) => e && !t ? null : (0, g.Q)((0, y.P)(), v.t.ykjOAA, v.intl.string(v.t.jZkzVF)),
     maxBodyLines: 2,
     renderFooter: (n, r, o) => n && !o ? (0, i.jsx)(m.Z, {

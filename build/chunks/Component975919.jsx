@@ -20,8 +20,8 @@ let d = e => {
     send: d,
     sending: _,
     canSend: f
-  } = (0, r.C$)();
-  return (0, a.jsx)(o.Modal, {
+  } = (0, o.C$)();
+  return (0, a.jsx)(r.Modal, {
     title: c.intl.string(u.default.zgFs8P),
     actions: [{
       variant: "primary",

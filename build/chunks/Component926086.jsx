@@ -31,19 +31,19 @@ function m(e) {
   } = d.ZP.useState(e => ({
     timeToLiveMs: e.timeToLiveMs,
     reappearTimeMs: e.reappearTimeMs
-  }), s()), x = {
+  }), s()), I = {
     timeToLiveMs: _,
     reappearTimeMs: S
-  }, I = r.useRef(x);
+  }, x = r.useRef(I);
   r.useEffect(() => {
-    I.current = x
+    x.current = I
   }), r.useEffect(() => (b.current = setInterval(() => {
     let e = Date.now();
     g(e), O(t => {
       if (0 === t) return e;
       let n = e - t,
-        i = I.current.timeToLiveMs,
-        r = i + I.current.reappearTimeMs;
+        i = x.current.timeToLiveMs,
+        r = i + x.current.reappearTimeMs;
       return n > i ? t + r : t
     })
   }, 100), () => {
@@ -65,10 +65,10 @@ function m(e) {
       },
       config: h
     }),
-    [w, Z] = r.useState(false);
+    [Z, w] = r.useState(false);
   if (r.useEffect(() => {
-      v > 10 && Z(true)
-    }, [v]), w) throw Error("ClickZoneDebugWidget crashed, too many clicks");
+      v > 10 && w(true)
+    }, [v]), Z) throw Error("ClickZoneDebugWidget crashed, too many clicks");
   return t && !n ? null : (0, i.jsx)(i.Fragment, {
     children: N((e, t) => t && (0, i.jsx)(c.animated.div, {
       style: e,

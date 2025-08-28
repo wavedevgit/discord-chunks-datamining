@@ -92,7 +92,7 @@ function S(e, t) {
   }
 }
 
-function x(e, t) {
+function I(e, t) {
   let {
     top: n,
     left: i,
@@ -125,7 +125,7 @@ function x(e, t) {
   }
 }
 
-function I(e) {
+function x(e) {
   let {
     computedSize: t
   } = e;
@@ -186,7 +186,7 @@ class j extends(i = Chunk647438.Component) {
       left: O,
       bottom: true,
       right: true
-    }, r, o, m, g)), v = u ? (0, p.R)(b) : x("RESIZE_SOUTH_EAST", b);
+    }, r, o, m, g)), v = u ? (0, p.R)(b) : I("RESIZE_SOUTH_EAST", b);
     this.setDOMPositions(v), this.setState({
       operationStarted: true,
       anchorTopOverride: null != v.top,
@@ -208,7 +208,7 @@ class j extends(i = Chunk647438.Component) {
         },
         onDragStart: s,
         onDrag: c,
-        resizeValidation: d = I
+        resizeValidation: d = x
       },
       state: {
         operation: f,
@@ -535,7 +535,7 @@ class j extends(i = Chunk647438.Component) {
           offsetY: n - i
         })
       } else {
-        let i = x(e, u);
+        let i = I(e, u);
         this.setDOMPositions(i), this.dragState = y(g({}, this.dragState), {
           startX: t,
           startY: n,

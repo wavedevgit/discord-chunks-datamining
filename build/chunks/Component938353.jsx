@@ -684,8 +684,7 @@ class tr extends(r = Chunk647438.Component) {
   }
   renderShareClientTheme(e) {
     return null != e.sharedClientTheme ? (0, i.jsx)(T.q, {
-      from: e.author,
-      sharedClientTheme: e.sharedClientTheme
+      message: e
     }) : null
   }
   renderReportedMessage(e) {

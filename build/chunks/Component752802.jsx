@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk379746 = require("./379746.js");
 
-function P(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -52,7 +52,7 @@ function P(e) {
   return e
 }
 
-function A(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -65,7 +65,7 @@ function A(e, t) {
   }), e
 }
 
-function k(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, i, r = function(e, t) {
     if (null == e) return {};
@@ -84,24 +84,24 @@ function k(e, t) {
 function D(e) {
   let {
     participant: t
-  } = e, n = t.user.id, o = (0, a.e7)([x.Z], () => {
+  } = e, n = t.user.id, o = (0, a.e7)([I.Z], () => {
     let e = (0, m.Z)(t.type);
-    return x.Z.isLocalMute(t.user.id, e)
+    return I.Z.isLocalMute(t.user.id, e)
   }, [t]), l = (0, a.e7)([S.default], () => S.default.getId()), {
     hasVideo: d
   } = (0, E.Z)(t, l), p = o && d, f = r.useCallback(() => {
     u.Z.toggleLocalMute(n, s.Yn.STREAM)
   }, [n]);
   return (0, i.jsx)(c.ua7, {
-    text: p ? Z.intl.string(Z.t.YqAjX1) : Z.intl.string(Z.t["w4m94+"]),
+    text: p ? w.intl.string(w.t.YqAjX1) : w.intl.string(w.t["w4m94+"]),
     children: e => {
       var {
         onClick: n
-      } = e, r = k(e, ["onClick"]);
-      return (0, i.jsx)(c.P3F, A(P({}, r), {
-        className: T.controlAction,
+      } = e, r = A(e, ["onClick"]);
+      return (0, i.jsx)(c.P3F, k(T({}, r), {
+        className: P.controlAction,
         onClick: e => {
-          e.stopPropagation(), (0, C.Ws)(w.Odu.GO_LIVE, {
+          e.stopPropagation(), (0, C.Ws)(Z.Odu.GO_LIVE, {
             type: C.Qu.AUDIO,
             value: p ? C.bk.ENABLED : C.bk.DISABLED,
             userId: t.user.id
@@ -121,7 +121,7 @@ function D(e) {
 
 function R(e, t, r) {
   return o => {
-    (0, C.Ws)(w.Odu.GO_LIVE, {
+    (0, C.Ws)(Z.Odu.GO_LIVE, {
       type: C.Qu.GO_LIVE,
       value: C.bk.SETTINGS_OPENED,
       userId: e.user.id
@@ -129,7 +129,7 @@ function R(e, t, r) {
       let {
         default: r
       } = await n.e("5704").then(n.bind(n, 360429));
-      return n => (0, i.jsx)(r, A(P({}, n), {
+      return n => (0, i.jsx)(r, k(T({}, n), {
         stream: e.stream,
         exitFullscreen: () => {},
         appContext: t
@@ -143,27 +143,27 @@ function L(e) {
     hasActiveStream: t,
     participant: n,
     onEnablePin: r
-  } = e, o = (0, h.bp)(), s = n.user, u = (0, a.e7)([I.default], () => {
+  } = e, o = (0, h.bp)(), s = n.user, u = (0, a.e7)([x.default], () => {
     var e;
-    return null != (e = I.default.getUser(s.id)) ? e : s
-  }, [s]), d = t ? Z.intl.string(Z.t.tLxK4u) : Z.intl.string(Z.t.E5RDnJ);
+    return null != (e = x.default.getUser(s.id)) ? e : s
+  }, [s]), d = t ? w.intl.string(w.t.tLxK4u) : w.intl.string(w.t.E5RDnJ);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)("div", {
-      className: l()(T.controlBackground, {
-        [T.controlsWithActiveStream]: t
+      className: l()(P.controlBackground, {
+        [P.controlsWithActiveStream]: t
       })
     }), !t && (0, i.jsx)("div", {
-      className: T.watchActionContainer,
+      className: P.watchActionContainer,
       children: (0, i.jsx)(c.ua7, {
         text: d,
-        children: e => (0, i.jsxs)(c.P3F, A(P({}, e), {
-          className: T.watchButton,
+        children: e => (0, i.jsxs)(c.P3F, k(T({}, e), {
+          className: P.watchButton,
           onClick: () => {
             var t;
             null == (t = e.onClick) || t.call(e), (0, f.rn)(n.stream, {
               forceMultiple: true,
               noFocus: true
-            }), r(), (0, C.Ws)(w.Odu.GO_LIVE, {
+            }), r(), (0, C.Ws)(Z.Odu.GO_LIVE, {
               type: C.Qu.GO_LIVE,
               value: C.bk.ENABLED,
               userId: n.user.id
@@ -172,7 +172,7 @@ function L(e) {
           children: [(0, i.jsx)(c.Text, {
             variant: "text-sm/semibold",
             color: "always-white",
-            children: Z.intl.string(Z.t["I6JG4+"])
+            children: w.intl.string(w.t["I6JG4+"])
           }), (0, i.jsx)(c.OgY, {
             size: "sm",
             color: "currentColor"
@@ -180,26 +180,26 @@ function L(e) {
         }))
       })
     }), (0, i.jsxs)("div", {
-      className: T.controls,
+      className: P.controls,
       children: [(0, i.jsx)("div", {
-        className: T.controlUser,
+        className: P.controlUser,
         children: (0, i.jsxs)("div", {
-          className: T.controlUserContainer,
+          className: P.controlUserContainer,
           children: [(0, i.jsx)(c.pzj, {
             size: "xs",
             color: c.TVs.colors.INTERACTIVE_ACTIVE
           }), (0, i.jsx)(c.Text, {
             variant: "text-md/medium",
             color: "always-white",
-            className: T.controlUserName,
+            className: P.controlUserName,
             children: j.ZP.getName(n.stream.guildId, n.stream.channelId, s)
           }), (0, i.jsx)(O.ZP, {
             primaryGuild: u.primaryGuild,
             userId: u.id,
-            containerClassName: T.guildTag,
+            containerClassName: P.guildTag,
             inline: false,
             onShowProfile: () => {
-              (0, C.Ws)(w.Odu.GO_LIVE, {
+              (0, C.Ws)(Z.Odu.GO_LIVE, {
                 type: C.Qu.GO_LIVE,
                 value: C.bk.GUILD_PROFILE_OPENED,
                 userId: n.user.id
@@ -208,18 +208,18 @@ function L(e) {
           })]
         })
       }), (0, i.jsx)("div", {
-        className: T.controlActions,
+        className: P.controlActions,
         children: t && (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)(D, {
             participant: n
           }), (0, i.jsx)(c.ua7, {
-            text: Z.intl.string(Z.t["3D5yo6"]),
+            text: w.intl.string(w.t["3D5yo6"]),
             children: e => {
               var {
                 onClick: t
-              } = e, r = k(e, ["onClick"]);
-              return (0, i.jsx)(c.P3F, A(P({}, r), {
-                className: T.controlAction,
+              } = e, r = A(e, ["onClick"]);
+              return (0, i.jsx)(c.P3F, k(T({}, r), {
+                className: P.controlAction,
                 onClick: R(n, o, t),
                 children: (0, i.jsx)(c.xhG, {
                   size: "sm",
@@ -243,19 +243,19 @@ let M = new Set([Chunk981631.jm8.ENDED, Chunk981631.jm8.FAILED, Chunk981631.jm8.
       pinned: l
     } = e, s = (0, a.e7)([_.Z], () => _.Z.getActiveStreamForUser(t.user.id, t.stream.guildId), [t.user.id, t.stream.guildId]), u = (0, h.bp)(), d = null != s && M.has(s.state), f = null != s, m = (0, N.yA)(t.stream), O = (0, N.xN)(t.stream);
     return !f && r || d ? null : (0, i.jsxs)("div", {
-      className: T.tile,
+      className: P.tile,
       children: [f && !r && (0, i.jsx)(g.ZP, {
         size: g.ZP.Sizes.SMALL,
-        className: T.liveIndicator
+        className: P.liveIndicator
       }), f ? (0, i.jsx)("div", {
-        className: T.streamTile,
+        className: P.streamTile,
         children: (0, i.jsx)(c.kL8, {
-          "aria-label": Z.intl.formatToPlainString(Z.t.gHPz3d, {
+          "aria-label": w.intl.formatToPlainString(w.t.gHPz3d, {
             streamerName: t.user.username
           }),
           onClick: () => {},
           onContextMenu: R(t, u),
-          className: T.streamTile,
+          className: P.streamTile,
           style: {
             transform: "scale(".concat(m, ")")
           },
@@ -266,15 +266,15 @@ let M = new Set([Chunk981631.jm8.ENDED, Chunk981631.jm8.FAILED, Chunk981631.jm8.
             inPopout: true,
             focused: !r,
             selected: false,
-            wrapperClassName: r ? T.streamTileWrapper : true,
+            wrapperClassName: r ? P.streamTileWrapper : true,
             inOverlayPopout: true
           })
         })
       }) : (0, i.jsx)("div", {
-        className: T.streamPreview,
+        className: P.streamPreview,
         children: (0, i.jsx)(y.Z, {
           noText: true,
-          className: T.absoluteFill,
+          className: P.absoluteFill,
           stream: t.stream
         })
       }), r ? null : (0, i.jsx)(L, {

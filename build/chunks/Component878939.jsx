@@ -39,15 +39,15 @@ function m(e) {
       }
       return new Set(i)
     })
-  }, []), x = (0, u.ee)(() => b, [b]), I = (0, u.ee)(() => E, [E]), j = (0, l.h)(u.zi, 3e3, []);
+  }, []), I = (0, u.ee)(() => b, [b]), x = (0, u.ee)(() => E, [E]), j = (0, l.h)(u.zi, 3e3, []);
   r.useEffect(() => {
-    0 === x.size || t || j(f.Odu.FRIENDS, {
+    0 === I.size || t || j(f.Odu.FRIENDS, {
       locked: t,
-      shownUserIds: Array.from(x),
-      liveUserIds: Array.from(I),
+      shownUserIds: Array.from(I),
+      liveUserIds: Array.from(x),
       contentInventoryIds: []
     })
-  }, [x, I, t, j]);
+  }, [I, x, t, j]);
   let C = (0, o.e7)([s.Z], () => null == O ? null : s.Z.getApplicationActivity(O), [O]),
     N = (0, r.useCallback)((e, t) => {
       let n = function(e) {
@@ -133,8 +133,8 @@ function m(e) {
         }), i))
       }
     }, []),
-    w = (0, r.useCallback)(() => {}, []),
-    Z = (0, r.useCallback)(() => (0, i.jsx)(d.lE, {
+    Z = (0, r.useCallback)(() => {}, []),
+    w = (0, r.useCallback)(() => (0, i.jsx)(d.lE, {
       activity: C,
       currentUser: y,
       showInviteButton: false
@@ -142,8 +142,8 @@ function m(e) {
   return t ? null : (0, i.jsx)(a.r1, {
     containerClassName: h.container,
     listClassName: h.list,
-    closePopout: w,
-    renderHeader: Z,
+    closePopout: Z,
+    renderHeader: w,
     appContext: f.IlC.OVERLAY,
     onAction: N,
     onFriendVisible: S

@@ -2,24 +2,26 @@
 /** chunk id: 32300, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  J0: () => E,
-  NW: () => l,
-  OV: () => a,
-  Rb: () => s,
-  Se: () => _,
-  XE: () => c,
-  YB: () => m,
-  Yo: () => u,
-  dj: () => d,
-  hS: () => p,
-  mB: () => h,
-  o4: () => o,
-  qA: () => g,
-  td: () => f
+  J0: () => b,
+  NW: () => c,
+  OV: () => o,
+  Rb: () => l,
+  Se: () => p,
+  XE: () => u,
+  YB: () => g,
+  Yo: () => d,
+  dj: () => f,
+  hS: () => h,
+  mB: () => m,
+  o4: () => s,
+  qA: () => E,
+  tU: () => O,
+  td: () => _
 });
 var Chunk818083 = require("./818083.js"),
+  Chunk427164 = require("./427164.js"),
   Chunk987338 = require("./987338.js");
-let a = (0, Chunk818083.B)({
+let o = (0, Chunk818083.B)({
   kind: "user",
   id: "2024-10_overlay_v3",
   label: "Overlay V3 Shared Context OOP",
@@ -69,34 +71,34 @@ let a = (0, Chunk818083.B)({
   }]
 });
 
-function o(e) {
-  return a.useExperiment({
+function s(e) {
+  return o.useExperiment({
     location: e
   })
 }
 
-function s(e) {
+function l(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  return a.getCurrentConfig({
+  return o.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: t
   })
 }
 
-function l(e) {
-  let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-  return s(e, t).overlayV3tech
-}
-
 function c(e) {
-  return o(e).overlayV3tech
+  let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
+  return l(e, t).overlayV3tech
 }
 
 function u(e) {
-  return s(e).allowNowPlaying
+  return s(e).overlayV3tech
 }
-let d = (0, Chunk818083.B)({
+
+function d(e) {
+  return l(e).allowNowPlaying
+}
+let f = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-06_overlay_raf_manager",
   label: "Overlay RAF Manager",
@@ -113,15 +115,15 @@ let d = (0, Chunk818083.B)({
   }]
 });
 
-function f(e) {
+function _(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-  return d.getCurrentConfig({
+  return f.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: t
   })
 }
-let _ = (0, Chunk818083.B)({
+let p = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-06_overlay_render_timeout",
   label: "Overlay Render Timeout",
@@ -154,15 +156,15 @@ let _ = (0, Chunk818083.B)({
   }]
 });
 
-function p(e) {
+function h(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-  return _.getCurrentConfig({
+  return p.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: t
   })
 }
-let h = (0, Chunk818083.B)({
+let m = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-07_overlay_default_disable",
   label: "Overlay Default Disable",
@@ -179,15 +181,15 @@ let h = (0, Chunk818083.B)({
   }]
 });
 
-function m(e) {
+function g(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-  return h.getCurrentConfig({
+  return m.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: t
   }).enabled
 }
-let g = (0, Chunk818083.B)({
+let E = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-07_overlay_oop_nudge",
   label: "Overlay OOP Nudge",
@@ -213,11 +215,29 @@ let g = (0, Chunk818083.B)({
   }]
 });
 
-function E(e) {
+function b(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-  return g.getCurrentConfig({
+  return E.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: t
+  })
+}
+let y = (0, Chunk427164.le)({
+  name: "2025-08-overlay-v3-one-click-go-live",
+  kind: "user",
+  defaultConfig: {
+    enabled: false
+  },
+  variations: {
+    1: {
+      enabled: true
+    }
+  }
+});
+
+function O(e) {
+  return y.getConfig({
+    location: e
   })
 }

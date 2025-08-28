@@ -19,26 +19,29 @@ let p = () => {
     message: e,
     channel: t,
     updateMessageText: n
-  } = (0, Chunk135102.C$)(), p = (0, Chunk442837.e7)([Chunk703558.Z], () => Chunk703558.Z.getDraft(module.channel_id, Chunk703558.d.ChannelMessage)), [b, h] = Chunk647438.useState(() => (0, Chunk752305.eK)(p)), {
+  } = (0, Chunk135102.C$)(), p = (0, Chunk442837.e7)([Chunk703558.Z], () => Chunk703558.Z.getDraft(module.channel_id, Chunk703558.d.ChannelMessage)), [h, b] = Chunk647438.useState(() => (0, Chunk752305.eK)(p)), {
     textValue: g,
     richValue: m
-  } = b;
+  } = h;
   (0, Chunk647438.useEffect)(() => {
     require(g)
   }, [require, g]);
   let C = Chunk647438.useCallback((t, n, a) => {
-      h({
+      b({
         textValue: n,
         richValue: a
       }), s.Z.saveDraft(e.channel_id, n, c.d.ChannelMessage)
     }, [module]),
-    [y, w] = Chunk647438.useState(false),
-    M = Chunk647438.useCallback(() => w(true), []),
-    x = Chunk647438.useCallback(() => w(false), []),
-    I = async () => ({
-      shouldClear: true,
-      shouldRefocus: false
-    });
+    [y, M] = Chunk647438.useState(false),
+    w = Chunk647438.useCallback(() => M(true), []),
+    x = Chunk647438.useCallback(() => M(false), []);
+  (0, Chunk647438.useEffect)(() => () => {
+    Chunk430742.Z.clearDraft(module.channel_id, Chunk703558.d.ChannelMessage)
+  }, [module]);
+  let I = async () => ({
+    shouldClear: true,
+    shouldRefocus: false
+  });
   return (0, Chunk951288.jsx)(Chunk893718.ZP, {
     innerClassName: Chunk784562.messageInput,
     onChange: C,
@@ -48,7 +51,7 @@ let p = () => {
     richValue: m,
     type: Chunk541716.Ie.SHARE_CUSTOM_CLIENT_THEME_INPUT,
     onBlur: x,
-    onFocus: M,
+    onFocus: w,
     focused: y,
     onSubmit: I,
     parentModalKey: Chunk135102.tj,

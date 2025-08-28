@@ -1,7 +1,7 @@
-/** Chunk was on 5550 **/
+/** Chunk was on 47129 **/
 /** chunk id: 507313, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => f
 });
 var Chunk509613 = require("./509613.js"),
   Chunk869235 = require("./869235.js"),
@@ -14,7 +14,7 @@ var Chunk509613 = require("./509613.js"),
   Chunk985092 = require("./985092.js"),
   Chunk798922 = require("./798922.jsx"),
   Chunk388032 = require("./388032.jsx");
-let N = (0, Chunk509613.vB)(Chunk869235.t.USER_SETTINGS_SECTION, {
+let f = (0, Chunk509613.vB)(Chunk869235.t.USER_SETTINGS_SECTION, {
   useLabel: () => Chunk388032.intl.string(Chunk388032.t.cduTBA),
   getLayout: () => [Chunk985092.Z, Chunk217123.Z, Chunk460586.Z, Chunk603569.Z, Chunk798922.Z, Chunk912400.Z, Chunk51435.Z, Chunk837061.Z]
 })

@@ -224,7 +224,9 @@ let P = Chunk647438.forwardRef((e, t) => {
     }),
     onMouseEnter: _,
     style: {
-      backgroundImage: null != I ? "url(".concat(I, ")") : true
+      backgroundImage: null != I ? "url(".concat(I, ")") : true,
+      backgroundPosition: null != I ? "bottom right" : true,
+      backgroundRepeat: null != I ? "no-repeat" : true
     },
     onClick: v,
     children: [null != S && (0, r.jsx)(u.Text, {

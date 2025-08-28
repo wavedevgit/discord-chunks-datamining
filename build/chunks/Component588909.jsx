@@ -1,7 +1,7 @@
 /** Chunk was on 46290 **/
 /** chunk id: 588909, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => Z
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -17,6 +17,7 @@ var Chunk704215 = require("./704215.js"),
   Chunk145597 = require("./145597.js"),
   Chunk32300 = require("./32300.js"),
   Chunk603618 = require("./603618.jsx"),
+  Chunk371053 = require("./371053.jsx"),
   Chunk618373 = require("./618373.jsx"),
   Chunk620954 = require("./620954.js"),
   Chunk987650 = require("./987650.js"),
@@ -27,7 +28,7 @@ var Chunk704215 = require("./704215.js"),
   Chunk968803 = require("./968803.js"),
   Chunk336501 = require("./336501.js");
 
-function I(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -46,7 +47,7 @@ function I(e) {
   return e
 }
 
-function j(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,94 +60,115 @@ function j(e, t) {
   }), e
 }
 
-function C(e) {
+function N(e) {
   let {
     game: t
   } = e, n = (0, c.q)(t.id);
   return null == n ? null : (0, i.jsx)(u.f, {
-    src: n.getIconURL(E.Si.LARGE),
+    src: n.getIconURL(_.Si.LARGE),
     size: 40
   })
 }
 
-function N(e, t) {
+function Z(e, t) {
   let {
     trackView: c,
     trackClick: u
-  } = (0, y.R)(O.n0.WelcomeNudge, {
-    notif_type: O.n0.WelcomeNudge,
-    secondary_notif_types: t.map(e => O.nc[e.type])
-  }), E = {};
+  } = (0, O.R)(b.n0.WelcomeNudge, {
+    notif_type: b.n0.WelcomeNudge,
+    secondary_notif_types: t.map(e => b.nc[e.type])
+  }), _ = {};
   for (let r of t) switch (r.type) {
-    case O.nc.WELCOME: {
+    case b.nc.WELCOME: {
       let t = (null == e ? true : e.altId) != null ? p.Z.getApplicationActivity(e.altId) : (null == e ? true : e.id) != null ? p.Z.getApplicationActivity(e.id) : null;
-      null != t && (0, s.Z)(t, b.xjy.JOIN) && (E.cancelText = _.intl.string(_.t["6F9ivr"]), E.onCancelClick = (e, n) => {
-        u("unlock"), a.Z.updateNotificationStatus(n), a.Z.setInputLocked(false, (0, f.getPID)()), (0, l.h7)(t, false, b.IlC.POPOUT)
+      null != t && (0, s.Z)(t, v.xjy.JOIN) && (_.cancelText = S.intl.string(S.t["6F9ivr"]), _.onCancelClick = (e, n) => {
+        u("unlock"), a.Z.updateNotificationStatus(n), a.Z.setInputLocked(false, (0, f.getPID)()), (0, l.h7)(t, false, v.IlC.POPOUT)
       });
       break
     }
-    case O.nc.GO_LIVE_VOICE:
-    case O.nc.GO_LIVE_NON_VOICE:
-      E.confirmText = _.intl.string(_.t.U76Ft7), E.onConfirmClick = (e, t) => {
+    case b.nc.GO_LIVE_VOICE:
+    case b.nc.GO_LIVE_NON_VOICE: {
+      _.confirmText = S.intl.string(S.t.pEuzio);
+      let {
+        enabled: e
+      } = (0, h.tU)("welcomeNotification");
+      _.onConfirmClick = e ? (e, t) => {
+        a.Z.updateNotificationStatus(t);
+        let n = () => {
+            u("unlock"), a.Z.setInputLocked(false, (0, f.getPID)())
+          },
+          i = () => {
+            u("confirm")
+          };
+        (0, g.N)({
+          pid: (0, f.getPID)(),
+          analyticsLocation: v.Sbl.OVERLAY_NUDGE,
+          allowOneClickGoLive: true,
+          onBeforeShowModal: n,
+          onOneClickGoLive: i,
+          appContext: v.IlC.POPOUT
+        })
+      } : (e, t) => {
         u("unlock"), a.Z.updateNotificationStatus(t), a.Z.setInputLocked(false, (0, f.getPID)()), (0, o.ZD)(async () => {
           let {
             default: e
           } = await Promise.all([n.e("38697"), n.e("46746"), n.e("79839")]).then(n.bind(n, 60594));
-          return t => (0, i.jsx)(e, j(I({}, t), {
+          return t => (0, i.jsx)(e, C(j({}, t), {
             selectSource: false,
             sourcePID: (0, f.getPID)(),
-            guildId: r.type === O.nc.GO_LIVE_VOICE ? r.voiceGuild.id : true,
-            selectGuild: r.type === O.nc.GO_LIVE_NON_VOICE,
-            analyticsLocation: b.Sbl.OVERLAY_NUDGE
+            guildId: r.type === b.nc.GO_LIVE_VOICE ? r.voiceGuild.id : true,
+            selectGuild: r.type === b.nc.GO_LIVE_NON_VOICE,
+            analyticsLocation: v.Sbl.OVERLAY_NUDGE
           }))
         }, {
-          contextKey: v.u1
+          contextKey: E.u1
         })
       };
-      break;
-    case O.nc.CONTENT_INVENTORY:
-      (0, h.Rb)("welcomeNotification").allowActivityWidget && (E.renderFooter = () => (0, i.jsx)(m.lX, {
+      break
+    }
+    case b.nc.CONTENT_INVENTORY:
+      (0, h.Rb)("welcomeNotification").allowActivityWidget && (_.renderFooter = () => (0, i.jsx)(m.lX, {
         gamingId: null == e ? true : e.id,
         maxUserShowCount: 5,
         className: x.container
-      }), E.onNotificationShow = () => {
-        a.Z.track(b.rMx.OVERLAY_GAME_INVITE_NOTIFICATION_SHOWN, {
+      }), _.onNotificationShow = () => {
+        a.Z.track(v.rMx.OVERLAY_GAME_INVITE_NOTIFICATION_SHOWN, {
           user_ids: r.entries.map(e => e.author_id),
           entry_ids: r.entries.map(e => e.id)
         })
       })
   }
-  let N = (0, d.zu)(r.z.OVERLAY_OOP_WELCOME_NUX),
-    w = N ? _.intl.string(_.t.KWDIrq) : _.intl.string(_.t["prl+ra"]),
-    Z = N ? true : _.intl.string(_.t.R3CpPT),
-    T = null != e ? (0, i.jsx)(C, {
+  let Z = (0, d.zu)(r.z.OVERLAY_OOP_WELCOME_NUX),
+    w = Z ? S.intl.string(S.t.KWDIrq) : S.intl.string(S.t["prl+ra"]),
+    P = Z ? true : S.intl.string(S.t.R3CpPT),
+    T = null != e ? (0, i.jsx)(N, {
       game: e
     }) : (0, i.jsx)("img", {
       src: n(328756),
-      className: S.icon,
+      className: I.icon,
       alt: ""
     });
-  return j(I({
+  return C(j({
     icon: T,
     title: w,
-    body: Z,
-    hint: () => (0, g.Q)((0, y.P)(), _.t["z8/sgI"], _.intl.string(_.t.jZkzVF), true),
-    confirmText: N ? true : _.intl.string(_.t.TxyTbm),
-    onConfirmClick: N ? true : () => {
-      u("unlock"), a.Z.setInputLocked(false, (0, f.getPID)()), N || (0, d.Q3)(r.z.OVERLAY_OOP_WELCOME_NUX)
+    body: P,
+    hint: () => (0, y.Q)((0, O.P)(), S.t["z8/sgI"], S.intl.string(S.t.jZkzVF), true),
+    confirmText: Z ? true : S.intl.string(S.t.TxyTbm),
+    onConfirmClick: Z ? true : () => {
+      u("unlock"), a.Z.setInputLocked(false, (0, f.getPID)()), Z || (0, d.Q3)(r.z.OVERLAY_OOP_WELCOME_NUX)
     }
-  }, E), {
+  }, _), {
     onNotificationShow: e => {
       var t;
-      c(), N || (0, d.Q3)(r.z.OVERLAY_OOP_WELCOME_NUX), null == (t = E.onNotificationShow) || t.call(E, e)
+      c(), Z || (0, d.Q3)(r.z.OVERLAY_OOP_WELCOME_NUX), null == (t = _.onNotificationShow) || t.call(_, e)
     },
     onNotificationClick: (e, t) => {
       var n;
-      u("unlock"), a.Z.setInputLocked(false, (0, f.getPID)()), N || (0, d.Q3)(r.z.OVERLAY_OOP_WELCOME_NUX), null == (n = E.onNotificationClick) || n.call(E, e, t)
+      u("unlock"), a.Z.setInputLocked(false, (0, f.getPID)()), Z || (0, d.Q3)(r.z.OVERLAY_OOP_WELCOME_NUX), null == (n = _.onNotificationClick) || n.call(_, e, t)
     },
     onDismissClick: (e, t) => {
       var n;
-      u("dismiss"), N || (0, d.Q3)(r.z.OVERLAY_OOP_WELCOME_NUX), null == (n = E.onDismissClick) || n.call(E, e, t)
+      u("dismiss"), Z || (0, d.Q3)(r.z.OVERLAY_OOP_WELCOME_NUX), null == (n = _.onDismissClick) || n.call(_, e, t)
     }
   })
 }

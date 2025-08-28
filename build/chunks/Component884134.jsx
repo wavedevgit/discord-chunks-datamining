@@ -356,28 +356,29 @@ function $(e) {
 }
 
 function ee(e) {
+  var t;
   let {
-    onSaveTheme: t,
-    canApply: n,
-    metadata: i
-  } = e, a = (0, O.m)(L.p9.TIER_2);
-  (0, N.hf)(a, m.Z.CUSTOM_THEMES_EDITOR);
-  let s = () => {
-      (0, N.Vb)(), (0, b.Q3)(l.z.CUSTOM_THEME_COACHMARK), (null == i ? true : i.from) === E.tE.SETTING ? (p.Z.open(), (0, E.Ll)()) : (null == i ? true : i.from) === E.tE.CLIENT_THEMES_EDITOR ? (0, E.XO)(E.wh.CLIENT_THEMES) : (0, E.Ll)()
+    onSaveTheme: n,
+    canApply: i,
+    metadata: a
+  } = e, s = (0, O.m)(L.p9.TIER_2), u = (null == (t = (0, E.oq)().metadata) ? true : t.from) === E.tE.SHARE_MESSAGE;
+  (0, N.hf)(s, m.Z.CUSTOM_THEMES_EDITOR);
+  let d = () => {
+      (0, N.Vb)(), (0, b.Q3)(l.z.CUSTOM_THEME_COACHMARK), (null == a ? true : a.from) === E.tE.SETTING ? (p.Z.open(), (0, E.Ll)()) : (null == a ? true : a.from) === E.tE.CLIENT_THEMES_EDITOR ? (0, E.XO)(E.wh.CLIENT_THEMES) : (0, E.Ll)()
     },
-    u = o()(k.footerContainer, {
-      [k.footerContainerNonPremium]: !a
+    f = o()(k.footerContainer, {
+      [k.footerContainerNonPremium]: !s
     });
   return (0, r.jsx)("div", {
-    className: u,
-    children: a ? (0, r.jsxs)(r.Fragment, {
+    className: f,
+    children: s ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(P.q, {}), (0, r.jsx)(c.z, {
         variant: "secondary",
-        onClick: s,
+        onClick: d,
         text: M.intl.string(M.t["13/7kZ"])
       }), (0, r.jsx)(J, {
-        disabled: !n,
-        onApply: t
+        disabled: !i,
+        onApply: n
       })]
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(y.Z, {
@@ -390,8 +391,8 @@ function ee(e) {
         fullWidth: true
       }), (0, r.jsx)(c.z, {
         variant: "secondary",
-        onClick: s,
-        text: M.intl.string(M.t.Olc2Ky),
+        onClick: d,
+        text: u ? M.intl.string(M.t["13/7kZ"]) : M.intl.string(M.t.Olc2Ky),
         fullWidth: true
       })]
     })

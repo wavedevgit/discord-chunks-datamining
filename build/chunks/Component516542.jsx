@@ -31,10 +31,10 @@ function b(e) {
     accessibilityLabel: S
   } = (0, c.Z)({
     channel: b
-  }), [x, I] = r.useState(() => (0, d.H2)()), {
+  }), [I, x] = r.useState(() => (0, d.H2)()), {
     textValue: j,
     richValue: C
-  } = x, [N, w] = r.useState(false), Z = r.useCallback(() => w(true), []), T = r.useCallback(() => w(false), []);
+  } = I, [N, Z] = r.useState(false), w = r.useCallback(() => Z(true), []), P = r.useCallback(() => Z(false), []);
   (0, s.ZP)(() => {
     (0, a.In)(b.id, {
       section: g.jXE.OVERLAY,
@@ -42,16 +42,16 @@ function b(e) {
       objectType: g.Qqv.ACK_SEMI_AUTOMATIC
     }, true, true, n)
   });
-  let P = r.useCallback((e, t, n) => {
-      I({
+  let T = r.useCallback((e, t, n) => {
+      x({
         textValue: t,
         richValue: n
       })
     }, []),
-    A = r.useCallback(e => {
+    k = r.useCallback(e => {
       "Escape" === e.key && l.Z.updateNotificationStatus(t, g._1z.ACTIVE)
     }, [t]),
-    k = r.useCallback(() => (j.length > E || (o.Z.sendMessage(b.id, f.ZP.parse(b, j), false, {
+    A = r.useCallback(() => (j.length > E || (o.Z.sendMessage(b.id, f.ZP.parse(b, j), false, {
       location: y.dy.OVERLAY
     }), l.Z.setInputLocked(true, (0, m.getPID)()), l.Z.updateNotificationStatus(t, g._1z.DISMISSED), null == v || v(j)), Promise.resolve({
       shouldClear: false,
@@ -61,7 +61,7 @@ function b(e) {
     className: O.container,
     children: (0, i.jsx)(p.ZP, {
       innerClassName: O.textArea,
-      onChange: P,
+      onChange: T,
       placeholder: _,
       accessibilityLabel: S,
       channel: b,
@@ -69,11 +69,11 @@ function b(e) {
       richValue: C,
       type: u.Ie.OVERLAY_INLINE_REPLY,
       allowNewLines: false,
-      onBlur: T,
-      onFocus: Z,
+      onBlur: P,
+      onFocus: w,
       focused: N,
-      onSubmit: k,
-      onKeyDown: A,
+      onSubmit: A,
+      onKeyDown: k,
       autoCompletePosition: "bottom",
       disableThemedBackground: true
     })

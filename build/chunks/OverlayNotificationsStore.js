@@ -216,7 +216,7 @@ function eg() {
       gameId: r,
       lastSentTimestamp: Date.now()
     }), false;
-    let c = (0, F.Z)(e, r, o);
+    let c = (0, G.Z)(e, r, o);
     return null != c && (es(r, e, {
       userId: e,
       gameId: r,
@@ -255,7 +255,7 @@ function ey(e) {
   if (null == r || !r.isRingable() || "GUILD_RING_START" === e.type && !m.Z.getCurrentConfig({
       guildId: e.guildId,
       location: "OverlayV3StartRinging"
-    }).enabled || x.Z.getStatus() === Q.Skl.DND || h.QZ.getSetting()) returnfalse;
+    }).enabled || I.Z.getStatus() === Q.Skl.DND || h.QZ.getSetting()) returnfalse;
   let o = er.find(e => e.type === L.kL.TEXT && e.channelId === t && e.messageType === Q.uaV.CALL);
   null != o && ef(o.id), em((0, W.Z)(r), {
     priority: L.Tu.HIGH,
@@ -287,8 +287,8 @@ let eb = new eO(Chunk570140.Z, {
       nudges: n
     } = e;
     ep(0);
-    let i = null != (t = R.ZP.getFocusedPID()) ? t : T.UNSET_PID;
-    if (k.default.hasChangedRenderMode(i)) return;
+    let i = null != (t = R.ZP.getFocusedPID()) ? t : P.UNSET_PID;
+    if (A.default.hasChangedRenderMode(i)) return;
     let r = (0, Y.Z)((0, M.pL)(), n);
     null != r && em(r, {
       priority: L.Tu.URGENT,
@@ -332,8 +332,8 @@ let eb = new eO(Chunk570140.Z, {
             l = (0, z.Z)(e, t, n, a, r);
             break;
           case Q.mFx.JOIN_REQUEST:
-            if (null == (r = x.Z.getApplicationActivity(s)) || null == r.party || r.party.id !== t.activity.party_id) returnfalse;
-            l = (0, G.Z)(e, n, a, r);
+            if (null == (r = I.Z.getApplicationActivity(s)) || null == r.party || r.party.id !== t.activity.party_id) returnfalse;
+            l = (0, F.Z)(e, n, a, r);
             break;
           case Q.mFx.STREAM_REQUEST:
             let {
@@ -344,7 +344,7 @@ let eb = new eO(Chunk570140.Z, {
             }, {
               autoTrackExposure: false
             });
-            if (!c || null == (r = x.Z.getApplicationActivity(s)) || r.application_id !== s) returnfalse;
+            if (!c || null == (r = I.Z.getApplicationActivity(s)) || r.application_id !== s) returnfalse;
             l = (0, B.Z)(e, n, a, r)
         }
         if (null == l) returnfalse;
@@ -362,7 +362,7 @@ let eb = new eO(Chunk570140.Z, {
       }(a, l, s);
       if (false !== e) return e
     }
-    if (D.Z.isNotificationDisabled(P.OverlayNotificationDisabledSetting.TEXT_CHAT) || I.Z.disableNotifications || !(0, p.eF)(l, r)) returnfalse;
+    if (D.Z.isNotificationDisabled(T.OverlayNotificationDisabledSetting.TEXT_CHAT) || x.Z.disableNotifications || !(0, p.eF)(l, r)) returnfalse;
     let c = !b.Z.isSoundDisabled(N.Ay),
       u = null != (i = O.Z.getMessage(r, l.id)) ? i : (0, d.e5)(l);
     em((0, H.Z)(a, u, s, c), {

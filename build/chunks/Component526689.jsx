@@ -42,7 +42,7 @@ let u = () => {
       }
       d([...e, t])
     }, [module, d]),
-    b = module.length >= exports;
+    h = module.length >= exports;
   return (0, Chunk951288.jsx)(Chunk757853.F, {
     paddingBottom: 16,
     paddingTop: 16,
@@ -52,7 +52,7 @@ let u = () => {
     originChannel: c,
     handleToggleDestination: p,
     selectedDestinations: module,
-    disableSelection: b,
+    disableSelection: h,
     rowClassName: Chunk475495.rowContainer
   })
 }

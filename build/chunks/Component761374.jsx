@@ -49,7 +49,7 @@ function N(e) {
   return e
 }
 
-function w(e, t) {
+function Z(e, t) {
   if (null == e) return {};
   var n, i, r = function(e, t) {
     if (null == e) return {};
@@ -64,24 +64,24 @@ function w(e, t) {
   }
   return r
 }
-let Z = [],
-  T = (e, t) => ({
+let w = [],
+  P = (e, t) => ({
     fixed: true,
     width: e,
     height: t
   }),
-  P = T(Chunk350663.bt, Chunk350663.fd);
+  T = P(Chunk350663.bt, Chunk350663.fd);
 
-function A(e, t, n, i, r) {
+function k(e, t, n, i, r) {
   let {
     padding: o,
     sizeOffset: l
   } = r, a = Math.max(1, i), s = (a - 1) * o, c = t * a + s, u = n * a + s;
-  return e === x.C5.HORIZONTAL ? u = n : c = t, T(c + l, u + l)
+  return e === I.C5.HORIZONTAL ? u = n : c = t, P(c + l, u + l)
 }
 
-function k(e, t, n) {
-  return A(e, _.bt, _.fd, t, n)
+function A(e, t, n) {
+  return k(e, _.bt, _.fd, t, n)
 }
 let D = e => {
   let {
@@ -118,7 +118,7 @@ function R(e) {
     padding: r,
     minSize: o,
     containerSpecs: l
-  } = e, s = w(e, ["widgetId", "size", "borderWidth", "padding", "minSize", "containerSpecs"]);
+  } = e, s = Z(e, ["widgetId", "size", "borderWidth", "padding", "minSize", "containerSpecs"]);
   let {
     width: c,
     height: u
@@ -167,7 +167,7 @@ function R(e) {
 }
 
 function L(e) {
-  var t, n, a, v, S, T;
+  var t, n, a, v, S, P;
   let {
     id: D,
     widget: L,
@@ -176,8 +176,8 @@ function L(e) {
     padding: U,
     borderWidth: V,
     opacity: W,
-    horizontal: F,
-    pinned: G,
+    horizontal: G,
+    pinned: F,
     anchorTop: B,
     anchorLeft: H,
     showEmpty: Y = true
@@ -194,14 +194,14 @@ function L(e) {
   } = (0, c.ZP)(), et = (0, o.e7)([y.Z], () => {
     var e;
     let t = y.Z.getWidget(D);
-    return !!(0, x.ZL)(t) && !z && (null == (e = t.meta.showAllStreams) || e)
-  }, [D, z]), en = !F, ei = (0, o.e7)([g.Z], () => g.Z.getChannel(q)), er = (0, o.e7)([m.default], () => m.default.getId()), {
+    return !!(0, I.ZL)(t) && !z && (null == (e = t.meta.showAllStreams) || e)
+  }, [D, z]), en = !G, ei = (0, o.e7)([g.Z], () => g.Z.getChannel(q)), er = (0, o.e7)([m.default], () => m.default.getId()), {
     streamParticipants: eo,
     activeStreams: el,
     participantsVersion: ea
-  } = (S = B && en || H && F, T = !B && en || !H && F, (0, o.cj)([h.Z, d.Z], () => {
+  } = (S = B && en || H && G, P = !B && en || !H && G, (0, o.cj)([h.Z, d.Z], () => {
     if (null == q) return {
-      streamParticipants: Z,
+      streamParticipants: w,
       participantsVersion: false,
       activeStreams: new Set
     };
@@ -212,7 +212,7 @@ function L(e) {
       if (S) {
         if (t(e) && !t(n)) return false;
         if (!t(e) && t(n)) return 1
-      } else if (T) {
+      } else if (P) {
         if (t(e) && !t(n)) return 1;
         if (!t(e) && t(n)) return false
       }
@@ -222,7 +222,7 @@ function L(e) {
       activeStreams: e,
       participantsVersion: d.Z.getParticipantsVersion(q)
     }
-  }, [q, er, et, S, T])), es = eo.length, ec = null == ei || 0 === el.size && z || 0 === es && !z, eu = F ? x.C5.HORIZONTAL : x.C5.VERTICAL, ed = {
+  }, [q, er, et, S, P])), es = eo.length, ec = null == ei || 0 === el.size && z || 0 === es && !z, eu = G ? I.C5.HORIZONTAL : I.C5.VERTICAL, ed = {
     containerWidth: J,
     containerHeight: $
   }, {
@@ -239,7 +239,7 @@ function L(e) {
       tileWidth: e ? l : i,
       tileHeight: e ? s : o
     }
-  }(z, ed, eu), eh = (0, o.e7)([f.Z], () => f.Z.getWindowState(I.$J)), em = {
+  }(z, ed, eu), eh = (0, o.e7)([f.Z], () => f.Z.getWindowState(x.$J)), em = {
     id: D,
     widget: L,
     layout: eu,
@@ -290,12 +290,12 @@ function L(e) {
           padding: s,
           widget: c
         } = e,
-        u = w(e, ["id", "containerSize", "tileSize", "sizeOffset", "layout", "padding", "widget"]);
+        u = Z(e, ["id", "containerSize", "tileSize", "sizeOffset", "layout", "padding", "widget"]);
       if (null == c) return;
       if (0 === l) return void R(N({
         widgetId: t,
-        size: P,
-        minSize: k(a, 1, {
+        size: T,
+        minSize: A(a, 1, {
           padding: s,
           sizeOffset: r
         }),
@@ -308,11 +308,11 @@ function L(e) {
       } = i;
       R(N({
         widgetId: t,
-        size: A(a, d, p, l, {
+        size: k(a, d, p, l, {
           padding: s,
           sizeOffset: r
         }),
-        minSize: k(a, l, {
+        minSize: A(a, l, {
           padding: s,
           sizeOffset: r
         }),
@@ -330,14 +330,14 @@ function L(e) {
           participants: a,
           widget: s
         } = e,
-        c = w(e, ["id", "sizeOffset", "containerSize", "padding", "participants", "widget"]);
+        c = Z(e, ["id", "sizeOffset", "containerSize", "padding", "participants", "widget"]);
       null != s && R(N({
         widgetId: t,
-        size: k(n, a, {
+        size: A(n, a, {
           padding: l,
           sizeOffset: i
         }),
-        minSize: k(n, a, {
+        minSize: A(n, a, {
           padding: l,
           sizeOffset: i
         }),
@@ -352,11 +352,11 @@ function L(e) {
           widget: r,
           padding: l
         } = e,
-        a = w(e, ["id", "sizeOffset", "widget", "padding"]);
+        a = Z(e, ["id", "sizeOffset", "widget", "padding"]);
       null != r && R(N({
         widgetId: t,
-        size: P,
-        minSize: k(n, 0, {
+        size: T,
+        minSize: A(n, 0, {
           padding: l,
           sizeOffset: i
         }),
@@ -369,7 +369,7 @@ function L(e) {
     streamParticipants: eo,
     layout: eu,
     widgetLayoutSpecs: em
-  }), (ec || !G) && z) ? null : ec && !z ? Y ? z ? null : (0, i.jsx)(E.E, {
+  }), (ec || !F) && z) ? null : ec && !z ? Y ? z ? null : (0, i.jsx)(E.E, {
     emptyText: j.intl.string(j.t["T6+rX1"]),
     icon: l.hGI,
     absolute: true
@@ -388,7 +388,7 @@ function L(e) {
       activeStreams: el,
       streamParticipants: eo,
       participantsVersion: ea,
-      pinned: G,
+      pinned: F,
       padding: U,
       sizeOffset: Q
     })
