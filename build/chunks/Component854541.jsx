@@ -178,12 +178,13 @@ class w extends Chunk647438.PureComponent {
       customColor: e,
       value: t,
       disabled: n,
-      "aria-label": i
+      "aria-label": i,
+      presets: a
     } = this.props;
     return (0, Chunk951288.jsx)(R, {
       isCustom: true,
       color: module,
-      isSelected: exports === module,
+      isSelected: exports === module && !Chunk120356.includes(module),
       disabled: require,
       "aria-label": Chunk647438
     })
@@ -343,14 +344,14 @@ function L(e) {
     children: (0, r.jsx)(s.SJ, {
       children: e => {
         var {
-          ref: a
-        } = e, s = I(e, ["ref"]);
+          ref: s
+        } = e, l = I(e, ["ref"]);
         return (0, r.jsxs)("div", v(y({
           className: o()(E.container, t, {
             [E.gradient]: m
           }),
-          ref: a
-        }, s), {
+          ref: s
+        }, l), {
           children: [!m && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)("div", {
               className: o()(E.defaultContainer, h),
@@ -366,7 +367,8 @@ function L(e) {
               children: p({
                 value: c,
                 customColor: i,
-                disabled: d
+                disabled: d,
+                presets: a
               })
             })]
           }), m && null != g && (0, r.jsx)("div", {

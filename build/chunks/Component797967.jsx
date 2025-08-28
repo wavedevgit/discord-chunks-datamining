@@ -224,13 +224,16 @@ function f(e) {
     }, [x, f, E, B, L, T, v]),
     G = o.useCallback(() => (0, r.jsx)(i.Z$W, {
       onChange: A,
-      value: S
-    }), [A, S]),
+      value: a
+    }), [A, a]),
     M = o.useCallback(e => {
-      let t = (0, r.jsx)(i.jHW, m(_({}, e), {
-        "aria-label": d.intl.string(d.t["FHBa//"])
-      }));
-      return f ? t : (0, r.jsx)(i.yRy, {
+      var n;
+      let o = a !== t && (0 !== a || k),
+        s = (0, r.jsx)(i.jHW, m(_({}, e), {
+          customColor: null != (n = e.customColor) ? n : o ? a : null,
+          "aria-label": d.intl.string(d.t["FHBa//"])
+        }));
+      return f ? s : (0, r.jsx)(i.yRy, {
         targetElementRef: O,
         renderPopout: G,
         position: x,
@@ -238,14 +241,14 @@ function f(e) {
           targetElementRef: O,
           text: d.intl.string(d.t["FHBa//"]),
           position: "bottom",
-          children: n => (0, r.jsx)("div", m(_({
+          children: t => (0, r.jsx)("div", m(_({
             ref: O
-          }, n, e), {
-            children: t
+          }, t, e), {
+            children: s
           }))
         })
       })
-    }, [x, f, G]),
+    }, [x, f, G, a, t, k]),
     Z = o.useCallback(e => {
       let t = (0, r.jsx)(i.AGO, _({}, e));
       return f ? t : (0, r.jsx)(i.ua7, {
