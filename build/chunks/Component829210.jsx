@@ -26,14 +26,14 @@ function E(e) {
   } = (0, u.t)(), {
     useTitle: f,
     trailing: A
-  } = _, T = f(), C = null != (o = null == A || null == (t = A.useDecoration) ? true : t.call(A)) ? o : null, y = null != (a = null == A || null == (n = A.useBadgeCount) ? true : n.call(A)) ? a : null, S = r.useMemo(() => _.layout.flatMap(e => e.layout), [_]), P = null != E && (null == A || null == (l = A.newIndicatorDismissibleContentTypes) ? true : l.includes(E)), p = (null == g ? true : g.key) === _.key;
+  } = _, T = f(), C = null != (o = null == A || null == (t = A.useDecoration) ? true : t.call(A)) ? o : null, y = null != (a = null == A || null == (n = A.useBadgeCount) ? true : n.call(A)) ? a : null, S = r.useMemo(() => _.layout.flatMap(e => e.layout), [_]), p = null != E && (null == A || null == (l = A.newIndicatorDismissibleContentTypes) ? true : l.includes(E)), P = (null == g ? true : g.key) === _.key;
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(c.Z, {
       icon: _.icon,
       title: T,
-      active: p,
+      active: P,
       trailing: (0, i.jsx)(() => {
-        if (P) {
+        if (p) {
           var e;
           return null != (e = null == A ? true : A.newIndicatorBadgeOverride) ? e : (0, i.jsx)(s.IGR, {
             text: d.intl.string(d.t.y2b7CA)
@@ -46,7 +46,7 @@ function E(e) {
       onClick: () => {
         O(_), I(false)
       }
-    }), p && S.length > 1 && (0, i.jsx)(N, {
+    }), P && S.length > 1 && (0, i.jsx)(N, {
       categories: S
     })]
   })
