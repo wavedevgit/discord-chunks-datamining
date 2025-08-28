@@ -42,8 +42,8 @@ function C(e) {
     roleId: D,
     sessionId: L,
     transitionState: B,
-    openedAt: R,
-    onClose: U,
+    openedAt: U,
+    onClose: R,
     sourceAnalyticsLocations: M = []
   } = e, k = C === Z.ME ? true : C, G = (0, m.ZP)(t.id, k), F = u.ZP.getName(k, S, t), V = (0, a.Dt)(), {
     analyticsLocations: Y
@@ -60,7 +60,7 @@ function C(e) {
     value: Y,
     children: (0, r.jsx)(f.Mt, {
       value: W,
-      openedAt: R,
+      openedAt: U,
       fetchStartedAt: null == G ? true : G.fetchStartedAt,
       fetchEndedAt: null == G ? true : G.fetchEndedAt,
       isLoaded: null == G ? true : G.isLoaded,
@@ -115,7 +115,7 @@ function C(e) {
                 tags: (0, r.jsx)(h.Z, {
                   displayProfile: G,
                   themeType: P.l.MODAL,
-                  onClose: U
+                  onClose: R
                 })
               }), (0, r.jsxs)("div", {
                 className: E.container,

@@ -1,13 +1,15 @@
 /** Chunk was on 1272 **/
 /** chunk id: 244317, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./35282.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk772848 = require("./772848.js"),
   Chunk873546 = require("./873546.js"),
   Chunk680018 = require("./680018.jsx"),
   Chunk481060 = require("./481060.js"),
+  Chunk626135 = require("./626135.js"),
   Chunk358085 = require("./358085.js"),
   Chunk289341 = require("./289341.js"),
   Chunk981631 = require("./981631.js"),
@@ -15,45 +17,59 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk87805 = require("./87805.js");
 
-function h(e) {
+function m(e) {
   let {
     applicationId: t
-  } = e.match.params, [h, g] = i.useState(false), m = i.useRef(false), [b, _] = i.useState(null), O = !s.isPlatformEmbedded && !l.tq && !h;
+  } = e.match.params, [m, b] = i.useState(false), _ = i.useRef(false), [O, E] = i.useState(null), y = !u.isPlatformEmbedded && !a.tq && !m, v = i.useMemo(() => (0, l.Z)(), []);
   return (i.useEffect(() => {
-    O && true !== m.current && (Promise.resolve().then(n.bind(n, 536285)).then(e => {
+    y && true !== _.current && (Promise.resolve().then(n.bind(n, 536285)).then(e => {
       let {
         default: n
       } = e;
-      n.request(u.Etm.DEEP_LINK, {
-        type: d.jE.ACTIVITIES,
+      n.request(p.Etm.DEEP_LINK, {
+        type: f.jE.ACTIVITIES,
         params: {
           applicationId: t,
-          url: location.href
+          url: location.href,
+          attemptId: v
         }
       }).then(e => {
-        _(null != e && e)
-      }).catch(() => _(false)).then(() => n.disconnect())
-    }), m.current = true)
-  }, [t, O]), O && false !== b) ? true === b ? (0, r.jsxs)("div", {
-    className: f.container,
-    children: [(0, r.jsx)(o.X6q, {
+        let n = null != e && e;
+        E(n), c.default.track(p.rMx.ACTIVITY_DEEP_LINK_ATTEMPTED, {
+          application_id: t,
+          source_url: location.href,
+          attempt_id: v,
+          rpc_success: n
+        })
+      }).catch(() => {
+        E(false), c.default.track(p.rMx.ACTIVITY_DEEP_LINK_ATTEMPTED, {
+          application_id: t,
+          source_url: location.href,
+          attempt_id: v,
+          rpc_success: false
+        })
+      }).then(() => n.disconnect())
+    }), _.current = true)
+  }, [t, y, v]), y && false !== O) ? true === O ? (0, r.jsxs)("div", {
+    className: g.container,
+    children: [(0, r.jsx)(s.X6q, {
       variant: "heading-xxl/bold",
-      children: p.intl.string(p.t.csrAMD)
-    }), (0, r.jsx)(o.Text, {
+      children: h.intl.string(h.t.csrAMD)
+    }), (0, r.jsx)(s.Text, {
       variant: "text-xs/semibold",
-      children: p.intl.string(p.t["m1+IBg"])
-    }), (0, r.jsx)(a.z, {
+      children: h.intl.string(h.t["m1+IBg"])
+    }), (0, r.jsx)(o.z, {
       variant: "primary",
-      text: p.intl.string(p.t.fIv16O),
-      onClick: () => g(true)
+      text: h.intl.string(h.t.fIv16O),
+      onClick: () => b(true)
     })]
   }) : (0, r.jsxs)("div", {
-    className: f.container,
-    children: [(0, r.jsx)(o.X6q, {
+    className: g.container,
+    children: [(0, r.jsx)(s.X6q, {
       variant: "heading-xxl/bold",
-      children: p.intl.string(p.t["Z+hCVV"])
-    }), (0, r.jsx)(o.$jN, {})]
-  }) : (0, r.jsx)(c.Z, function(e) {
+      children: h.intl.string(h.t["Z+hCVV"])
+    }), (0, r.jsx)(s.$jN, {})]
+  }) : (0, r.jsx)(d.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

@@ -1,9 +1,10 @@
 /** Chunk was on 82008 **/
 /** chunk id: 768111, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => f
 }), require("./539854.js");
 var Chunk447448 = require("./447448.js"),
+  Chunk461133 = require("./461133.js"),
   Chunk585305 = require("./585305.js"),
   Chunk806729 = require("./806729.js"),
   Chunk517157 = require("./517157.js"),
@@ -12,31 +13,33 @@ var Chunk447448 = require("./447448.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx");
 
-function u(e) {
+function f(e) {
   let {
     user: n,
     currentUser: t
   } = e, {
-    mutualFriendsCount: u,
-    mutualGuilds: f
-  } = (0, o.Z)(n), m = null == f ? true : f.length, p = (0, l.Z)(n), h = (0, r.k)({
+    mutualFriendsCount: f,
+    mutualGuilds: m
+  } = (0, i.Z)(n), p = null == m ? true : m.length, h = (0, o.Z)(n), x = (0, r.k)({
     location: "useUserProfileModalV2TabBarItems"
-  }), x = (0, i.Z)(n.id), b = [], j = n.id === (null == t ? true : t.id), g = x.length > 0;
-  return h && (g || j) && b.push({
-    text: d.intl.string(d.t.laViw8),
-    section: a.oh.WIDGETS,
+  }), b = (0, l.P)({
+    location: "useUserProfileModalV2TabBarItems"
+  }), j = (0, c.Z)(n.id), g = [], v = n.id === (null == t ? true : t.id), y = j.length > 0;
+  return (v && x || y && b) && g.push({
+    text: u.intl.string(u.t.laViw8),
+    section: d.oh.WIDGETS,
     subsection: true
-  }), b.push({
-    text: d.intl.string(d.t.chq59f),
-    section: a.oh.ACTIVITY,
+  }), g.push({
+    text: u.intl.string(u.t.chq59f),
+    section: d.oh.ACTIVITY,
     subsection: true
-  }), n.id !== (null == t ? true : t.id) && p && (b.push({
-    text: (0, c.Z)(u),
-    section: a.oh.MUTUAL_FRIENDS,
+  }), n.id !== (null == t ? true : t.id) && h && (g.push({
+    text: (0, s.Z)(f),
+    section: d.oh.MUTUAL_FRIENDS,
     subsection: true
-  }), b.push({
-    text: (0, s.Z)(m),
-    section: a.oh.MUTUAL_GUILDS,
+  }), g.push({
+    text: (0, a.Z)(p),
+    section: d.oh.MUTUAL_GUILDS,
     subsection: true
-  })), b
+  })), g
 }

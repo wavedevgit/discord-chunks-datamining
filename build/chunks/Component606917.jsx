@@ -1,7 +1,7 @@
-/** Chunk was on 76210 **/
+/** Chunk was on 5550 **/
 /** chunk id: 606917, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => S
+  ZP: () => f
 }), require("./415506.js"), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -39,7 +39,7 @@ function I(e) {
     })
   })
 }
-let A = [{
+let g = [{
     useLabel: () => Chunk388032.intl.string(Chunk388032.t.jD1qzM),
     sound: "message1",
     useDisabled: Chunk734934.p,
@@ -145,18 +145,18 @@ let A = [{
       useTooltip: e.useTooltip
     })
   })),
-  g = (0, Chunk509613.qs)(Chunk869235.t.SELECTED_CHANNEL_NOTIFICATIONS, {
+  O = (0, Chunk509613.qs)(Chunk869235.t.SELECTED_CHANNEL_NOTIFICATIONS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.TzjwV1),
     useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getNotifyMessagesInSelectedChannel()),
     setValue: e => a.default.setNotifyMessagesInSelectedChannel(e)
   }),
-  O = (0, Chunk509613.qs)(Chunk869235.t.DISABLE_ALL_NOTIFICATION_SOUNDS, {
+  A = (0, Chunk509613.qs)(Chunk869235.t.DISABLE_ALL_NOTIFICATION_SOUNDS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["2ZhCOT"]),
     useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["+B0XLC"]),
     useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getDisableAllSounds()),
     setValue: e => a.default.toggleDisableAllSounds(e)
   }),
-  S = (0, Chunk509613.$l)(Chunk869235.t.NOTIFICATION_SOUNDS_SETTINGS_LIST, {
+  f = (0, Chunk509613.$l)(Chunk869235.t.NOTIFICATION_SOUNDS_SETTINGS_LIST, {
     collapseAfter: 4,
     useCollapsibleTitle: (e, t) => e ? E.intl.formatToPlainString(E.t["0JYT9/"], {
       count: t
@@ -181,5 +181,5 @@ let A = [{
         children: t
       })
     },
-    getLayout: () => [A[0].node, g, A[1].node, O, ...A.slice(2).map(e => e.node)]
+    getLayout: () => [g[0].node, O, g[1].node, A, ...g.slice(2).map(e => e.node)]
   })

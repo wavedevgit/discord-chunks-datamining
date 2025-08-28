@@ -122,8 +122,8 @@ function er(e) {
     eB = (0, b.Y)({
       userId: t.id
     }),
-    eR = (0, x.vh)(t.id),
-    eU = (0, N.Z)(t.id),
+    eU = (0, x.vh)(t.id),
+    eR = (0, N.Z)(t.id),
     eM = (0, m.Dt)(),
     ek = en.intl.format(en.t.KRe1Fh, {
       name: eN
@@ -207,7 +207,7 @@ function er(e) {
                       user: t,
                       displayProfile: eT,
                       themeType: ee.l.MODAL_V2
-                    }), (0, r.jsx)(U.Z, {
+                    }), (0, r.jsx)(R.Z, {
                       userId: t.id,
                       onClose: ep,
                       className: et.interactionToast
@@ -246,21 +246,21 @@ function er(e) {
                       })
                     }), eA === $.OGo.PENDING_INCOMING && (0, r.jsx)(G.Z.Overlay, {
                       className: et.profileOverlay,
-                      children: (0, r.jsx)(R.Z, {
+                      children: (0, r.jsx)(U.Z, {
                         user: t,
                         applicationId: eE,
                         guildId: null != (n = null == eT ? true : eT.guildId) ? n : true,
                         channelId: eo,
                         className: et.profileBanner
                       })
-                    }), eR.map(e => {
+                    }), eU.map(e => {
                       var n;
                       let {
                         applicationId: l
                       } = e;
                       return (0, r.jsx)(G.Z.Overlay, {
                         className: et.profileOverlay,
-                        children: (0, r.jsx)(R.Z, {
+                        children: (0, r.jsx)(U.Z, {
                           user: t,
                           guildId: null != (n = null == eT ? true : eT.guildId) ? n : true,
                           channelId: eo,
@@ -324,11 +324,11 @@ function er(e) {
                       headingVariant: "text-xs/medium",
                       headingColor: "currentColor",
                       scrollIntoView: ed === Q.Tb.ROLES
-                    }), eU.length > 0 && (0, r.jsx)(K.Z, {
+                    }), eR.length > 0 && (0, r.jsx)(K.Z, {
                       heading: en.intl.string(en.t["3fe7U1"]),
                       scrollIntoView: ed === Q.Tb.CONNECTIONS,
                       children: (0, r.jsx)(z.Z, {
-                        connections: eU,
+                        connections: eR,
                         userId: t.id,
                         className: et.profileAppConnections
                       })

@@ -52,11 +52,11 @@ function Z(e) {
   } = (0, p.Z)({
     userId: n.id,
     guildId: P
-  }), R = (0, l.e7)([c.Z], () => c.Z.isFetchingUserOutbox(n.id)), U = n.id === t.id, M = (0, l.e7)([d.Z, a.Z], () => {
-    let e = U ? d.Z.getStatus() : a.Z.getStatus(n.id);
+  }), U = (0, l.e7)([c.Z], () => c.Z.isFetchingUserOutbox(n.id)), R = n.id === t.id, M = (0, l.e7)([d.Z, a.Z], () => {
+    let e = R ? d.Z.getStatus() : a.Z.getStatus(n.id);
     return e === o.Skl.OFFLINE || e === o.Skl.INVISIBLE
   }), k = S.length > 0 || null != D, G = E && null == D && null == B && null != L, F = !M && (k || G), V = w.length > 0;
-  if (!F && !V && R) return (0, r.jsx)("div", {
+  if (!F && !V && U) return (0, r.jsx)("div", {
     className: _.cards,
     children: Array.from({
       length: 8
@@ -71,9 +71,9 @@ function Z(e) {
       })]
     }, n))
   });
-  if (!F && !V && !R) {
+  if (!F && !V && !U) {
     var Y;
-    return U ? (0, r.jsx)(g.Uf, {
+    return R ? (0, r.jsx)(g.Uf, {
       onClose: A
     }) : (0, r.jsx)(g.P9, {
       user: n,
@@ -121,7 +121,7 @@ function Z(e) {
       })
     }) : null, V ? (0, r.jsx)(v.Z, {
       heading: I.intl.string(I.t.jzgEoK),
-      introText: U ? I.intl.format(I.t["4bk9Ag"], {
+      introText: R ? I.intl.format(I.t["4bk9Ag"], {
         learnMoreHook: (e, n) => (0, r.jsx)(o.eee, {
           href: u.Z.getArticleURL(O.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e

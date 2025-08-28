@@ -52,7 +52,7 @@ function _(e) {
   }), D = (0, l.e7)([c.Z], () => c.Z.isFetchingUserOutbox(n.id)), L = n.id === t.id, B = (0, l.e7)([a.Z, s.Z], () => {
     let e = L ? a.Z.getStatus() : s.Z.getStatus(n.id);
     return e === o.Skl.OFFLINE || e === o.Skl.INVISIBLE
-  }), R = A.length > 0 || null != C, U = T && null == C && null == w && null != S, M = !B && (R || U), k = E.length > 0;
+  }), U = A.length > 0 || null != C, R = T && null == C && null == w && null != S, M = !B && (U || R), k = E.length > 0;
   return M || k || !D ? (0, r.jsxs)(o.zJl, {
     className: O.scroller,
     fade: true,
@@ -60,7 +60,7 @@ function _(e) {
       "aria-label": y.intl.string(y.t.J6STd3),
       children: (0, r.jsxs)("ul", {
         className: O.activityList,
-        children: [!N && U && (0, r.jsx)("li", {
+        children: [!N && R && (0, r.jsx)("li", {
           children: (0, r.jsx)(j.Z, {
             user: n,
             currentUser: t,

@@ -1,4 +1,4 @@
-/** Chunk was on 76210 **/
+/** Chunk was on 5550 **/
 /** chunk id: 79808, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -19,15 +19,15 @@ function c(e) {
     sidebarHeader: d,
     sidebarFooter: _
   } = e, [E, N] = l.useState(true), [T, I] = l.useState(n.key), {
-    navigateWithValidation: A
-  } = (0, a.Cu)(), g = l.useMemo(() => ({
+    navigateWithValidation: g
+  } = (0, a.Cu)(), O = l.useMemo(() => ({
     currentPanel: t.layout.flatMap(e => e.layout).find(e => e.key === T),
-    setCurrentPanel: e => A(() => I(e.key)),
+    setCurrentPanel: e => g(() => I(e.key)),
     showNavigationMobile: E,
     setShowNavigationMobile: N
-  }), [T, t, E, A, N]);
+  }), [T, t, E, g, N]);
   return (0, i.jsx)(o.j.Provider, {
-    value: g,
+    value: O,
     children: (0, i.jsxs)("div", {
       className: u.container,
       children: [(0, i.jsx)(s.P, {
@@ -35,8 +35,8 @@ function c(e) {
         header: d,
         footer: _
       }), (0, i.jsx)(r.Z, {
-        onClose: () => A(c),
-        setting: g.currentPanel
+        onClose: () => g(c),
+        setting: O.currentPanel
       })]
     })
   })

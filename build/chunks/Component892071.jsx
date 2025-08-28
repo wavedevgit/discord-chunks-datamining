@@ -83,10 +83,10 @@ function m(e) {
     if (R) return;
     let e = G ? {
       x: 10,
-      y: 12
+      y: 13
     } : {
       x: 9,
-      y: 8
+      y: 9
     };
     _.ZP.setTrafficLightPosition(e)
   }, [R, G]), (0, r.jsx)(p.Provider, {

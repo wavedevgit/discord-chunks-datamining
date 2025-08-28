@@ -90,11 +90,13 @@ function b(e) {
       isVisible: y,
       isRendered: O,
       triggerProps: I,
-      handleExitComplete: T
+      handleExitComplete: T,
+      onTooltipMouseEnter: S,
+      onTooltipMouseLeave: A
     } = (0, c.l)(_({
       targetElementRef: g.targetElementRef
     }, h)),
-    S = i.useMemo(() => ({
+    C = i.useMemo(() => ({
       triggerHandlers: I,
       triggerRef: g.triggerRef,
       targetElementRef: g.targetElementRef,
@@ -109,10 +111,12 @@ function b(e) {
       layerContext: l,
       onAnimationRest: u,
       handleExitComplete: T,
-      positionKey: "string" == typeof n ? n : true
-    }), [I, g.triggerRef, g.targetElementRef, b, y, O, n, a, o, s, p, l, u, T]);
+      positionKey: "string" == typeof n ? n : true,
+      onTooltipMouseEnter: S,
+      onTooltipMouseLeave: A
+    }), [I, g.triggerRef, g.targetElementRef, b, y, O, n, a, o, s, p, l, u, T, S, A]);
   return (0, r.jsxs)(E.Provider, {
-    value: S,
+    value: C,
     children: [t, (0, r.jsx)(v, {})]
   })
 }
@@ -193,7 +197,7 @@ function v() {
     caretPosition: null != (e = null == b ? true : b.position) ? module : (0, Chunk464281.Av)(h),
     onExitComplete: Chunk102725,
     onAnimationRest: Chunk966327
-  })((e, t) => t ? (0, r.jsx)(s.N, {
+  })((e, i) => i ? (0, r.jsx)(s.N, {
     isVisible: n,
     isRendered: o,
     targetElementRef: _,
@@ -206,6 +210,8 @@ function v() {
     layerContext: null != y ? y : a.nz,
     animationStyle: e,
     positionKey: O,
-    "data-mana-component": "tooltip"
+    "data-mana-component": "tooltip",
+    onMouseEnter: t.onTooltipMouseEnter,
+    onMouseLeave: t.onTooltipMouseLeave
   }) : null)
 }

@@ -7,5 +7,6 @@ module.exports = {
   line: "line__2debe",
   appArch: "appArch__2debe",
   os: "os__2debe",
-  versionHash: "versionHash__2debe"
+  versionHash: "versionHash__2debe",
+  compactInfo: "compactInfo__2debe"
 }

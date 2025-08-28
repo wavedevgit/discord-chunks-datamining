@@ -101,13 +101,13 @@ function A(e) {
       l = (0, p.hf)(S)
   }
   let B = d.Z.get((0, f.rR)(b.type)),
-    R = null == B || null == (n = B.getPlatformUserUrl) ? true : n.call(B, b);
+    U = null == B || null == (n = B.getPlatformUserUrl) ? true : n.call(B, b);
   null != C && C ? x = (0, r.jsx)(s.kZF, {
     size: "md",
     color: "currentColor",
     className: o()(P.__invalid_connectedAccountOpenIconContainer, P.connectedAccountHideIcon)
-  }) : null != R && (x = (0, r.jsx)(s.eee, {
-    href: R,
+  }) : null != U && (x = (0, r.jsx)(s.eee, {
+    href: U,
     "aria-label": (null == B ? true : B.name) != null ? "".concat(B.name, ", ").concat(b.name, ", ").concat(Z.intl.string(Z.t.q5jLJC)) : "".concat(b.name, ", ").concat(Z.intl.string(Z.t.q5jLJC)),
     onClick: e => {
       var n;
@@ -115,7 +115,7 @@ function A(e) {
         platform_type: n,
         other_user_id: _
       }), (0, v.q)({
-        href: R,
+        href: U,
         trusted: (null == B ? true : B.type) !== O.ABu.DOMAIN
       }, e)
     },
@@ -124,11 +124,11 @@ function A(e) {
       direction: g.Z.Directions.RIGHT
     })
   }));
-  let U = (0, s.dQu)(i.Z.colors.INTERACTIVE_MUTED).hex(),
+  let R = (0, s.dQu)(i.Z.colors.INTERACTIVE_MUTED).hex(),
     M = (0, s.dQu)(i.Z.colors.INTERACTIVE_ACTIVE).hex(),
     k = b.verified ? (0, r.jsx)(h.Z, {
       className: P.connectedAccountVerifiedIcon,
-      color: null != a ? a : U,
+      color: null != a ? a : R,
       forcedIconColor: M,
       size: 16,
       tooltipText: L
