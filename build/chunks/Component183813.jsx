@@ -1,7 +1,7 @@
 /** Chunk was on 54400 **/
 /** chunk id: 183813, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  S: () => b
+  S: () => g
 }), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,24 +23,24 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk950174 = require("./950174.js");
 
-function b(e) {
+function g(e) {
   let {
     handleStepChange: t,
     handleClose: n
   } = e, {
     selectedPlan: l,
-    selectedSkuId: b,
+    selectedSkuId: g,
     step: y
   } = (0, h.JL)(), {
     setSelectedGiftingPromotionReward: S,
     selectedGiftingPromotionReward: E,
     claimableRewards: v,
     claimableVariants: P
-  } = (0, _.wD)(), O = (0, a.e7)([u.default], () => u.default.getCurrentUser()), [I, w] = i.useState(null), k = Math.floor(Math.random() * d.mo), [M, Z] = i.useState(k);
+  } = (0, _.wD)(), O = (0, a.e7)([u.default], () => u.default.getCurrentUser()), [w, I] = i.useState(null), k = Math.floor(Math.random() * d.mo), [M, T] = i.useState(k);
   i.useEffect(() => {
     null != v && v.length > 0 && null == E && S(v[0])
-  }, [v, E, S]), s()(null != l, "Expected plan to selected"), s()(null != b, "Expected selectedSkuId"), s()(null != y, "Step should be set");
-  let T = i.useMemo(() => null == P ? null != v ? v : [] : P.flatMap(e => {
+  }, [v, E, S]), s()(null != l, "Expected plan to selected"), s()(null != g, "Expected selectedSkuId"), s()(null != y, "Step should be set");
+  let Z = i.useMemo(() => null == P ? null != v ? v : [] : P.flatMap(e => {
       var t, n;
       return e.variants.length < d.mo ? [] : (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -73,9 +73,9 @@ function b(e) {
       }), t)
     }), [P, v, M]),
     A = e => {
-      S(T.find(t => t.skuId === e)), w(e)
+      S(Z.find(t => t.skuId === e)), I(e)
     },
-    B = T.map(e => (0, r.jsx)(C.c, {
+    N = Z.map(e => (0, r.jsx)(C.c, {
       skuId: e.skuId,
       assetId: e.assetId,
       productName: e.name,
@@ -83,11 +83,12 @@ function b(e) {
       claimed: null != v && !v.some(t => t.skuId === e.skuId),
       user: O,
       onSelect: A,
-      selectedSkuId: null != I ? I : true
+      selectedSkuId: null != w ? w : true,
+      category: M
     }, e.skuId)),
-    N = (0, r.jsx)(j.O3, {
+    B = (0, r.jsx)(j.O3, {
       children: (0, r.jsx)(o.mzw, {
-        className: g.modalFooter,
+        className: b.modalFooter,
         children: (0, r.jsx)(p.y, {
           onStepChange: e => {
             null != O && null != E && x.default.track(m.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
@@ -106,18 +107,18 @@ function b(e) {
     U = (0, r.jsxs)(o.X6q, {
       variant: "heading-lg/bold",
       color: "header-primary",
-      className: g.title,
+      className: b.title,
       children: [L.intl.string(L.t["Rp0+ZG"]), (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
         color: "text-secondary",
-        className: g.subtitle,
+        className: b.subtitle,
         children: L.intl.format(L.t.xGzXNT, {
-          rewardCount: T.length * d.mo
+          rewardCount: Z.length * d.mo
         })
       })]
     });
   return (0, r.jsxs)("div", {
-    className: g.container,
+    className: b.container,
     children: [(0, r.jsx)(o.xBx, {
       children: (0, r.jsx)(o.olH, {
         onClick: n
@@ -128,13 +129,13 @@ function b(e) {
       align: "center",
       children: [U, null != P && P.length > 1 && (0, r.jsx)(c.Z, {
         defaultCategory: M,
-        onCategoryChange: Z
+        onCategoryChange: T
       })]
     }), (0, r.jsx)(o.hzk, {
       children: (0, r.jsx)("div", {
-        className: g.cardsGrid,
-        children: B
+        className: b.cardsGrid,
+        children: N
       })
-    }), N]
+    }), B]
   })
 }

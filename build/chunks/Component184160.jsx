@@ -29,10 +29,10 @@ function f(e) {
     setSelectedPlanId: m,
     startedPaymentFlowWithPaymentSourcesRef: L
   } = (0, p.JL)(), {
-    isGift: g
-  } = (0, c.wD)(), b = null != f ? (0, d.Af)(f) : null, y = null != b ? (0, d.gq)(b.planId) : null, S = null != b ? (0, d.Rd)(b.planId) : null, E = (0, x.Kp)({
+    isGift: b
+  } = (0, c.wD)(), g = null != f ? (0, d.Af)(f) : null, y = null != g ? (0, d.gq)(g.planId) : null, S = null != g ? (0, d.Rd)(g.planId) : null, E = (0, x.Kp)({
     isTrial: false,
-    isGift: g,
+    isGift: b,
     selectedSkuId: j,
     startedPaymentFlowWithPaymentSources: L.current
   });

@@ -10,5 +10,7 @@ module.exports = {
   shopCardClaimed: "shopCardClaimed_bab2bc",
   claimedIcon: "claimedIcon_bab2bc",
   preview: "preview_bab2bc",
+  previewTrick: "previewTrick_bab2bc",
+  previewTreat: "previewTreat_bab2bc",
   productName: "productName_bab2bc"
 }

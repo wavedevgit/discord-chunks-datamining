@@ -31,12 +31,12 @@ function x() {
       isDarkMode: _,
       isAndroid: false
     }),
-    g = (0, Chunk717401.Tl)(L);
+    b = (0, Chunk717401.Tl)(L);
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk432483.promotionalFooterBanner,
     style: null != m ? {
       backgroundImage: "url(".concat(m, ")")
-    } : g,
+    } : b,
     children: [(0, Chunk951288.jsx)(Chunk897942.Z, {
       claimableRewards: j,
       maxRewardImageSrc: f.getImageUrl(_, require),
