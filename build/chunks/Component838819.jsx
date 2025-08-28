@@ -55,12 +55,12 @@ let w = e => {
   F = function(e) {
     let {
       isFullScreen: t = true,
-      tab: n = N.AW.HOME
+      tab: n = B.AW.HOME
     } = e;
     (0, m.z)(f.f), (0, x.f)();
     let a = (0, g.Z)((0, i.Z)()),
       c = (0, o.e7)([h.default], () => h.default.getCurrentUser()),
-      A = (0, B.G)("CollectiblesShop"),
+      A = (0, N.G)("CollectiblesShop"),
       {
         onClose: F
       } = (0, k.Db)(),
@@ -68,7 +68,7 @@ let w = e => {
         currentTab: D,
         hasFilters: M
       } = (0, y.S)(),
-      H = l.useMemo(() => n === N.AW.HOME && D && M() ? D : n, [n, D, M]),
+      H = l.useMemo(() => n === B.AW.HOME && D && M() ? D : n, [n, D, M]),
       {
         categories: W,
         refreshCategories: U
@@ -81,9 +81,9 @@ let w = e => {
       }),
       V = (0, O.O)(W),
       [z, G] = l.useState(),
-      q = (0, o.e7)([C.Z], () => {
+      q = (0, o.e7)([b.Z], () => {
         var e;
-        return null == (e = C.Z.getCategory(z)) ? true : e.name
+        return null == (e = b.Z.getCategory(z)) ? true : e.name
       }),
       [K, Y] = l.useState();
     (0, L.Kp)();
@@ -124,11 +124,11 @@ let w = e => {
     } = (0, E.MV)(Q);
     return ea && !t ? null : (0, r.jsx)(p.Gt, {
       value: es,
-      children: (0, r.jsx)(b.k0, {
+      children: (0, r.jsx)(C.k0, {
         newValue: {
           sessionId: a,
           pageCategory: q,
-          pageSize: N.kN
+          pageSize: B.kN
         },
         children: (0, r.jsx)(w, {
           onClose: F,
@@ -147,9 +147,9 @@ let w = e => {
               selectedTab: Q
             }), (0, r.jsx)("div", {
               className: s()(R.shopViewWrapper, {
-                [R.visible]: J === N.f7.VISIBLE,
-                [R.in]: J === N.f7.IN,
-                [R.out]: J === N.f7.OUT
+                [R.visible]: J === B.f7.VISIBLE,
+                [R.in]: J === B.f7.IN,
+                [R.out]: J === B.f7.OUT
               }),
               children: (0, r.jsx)(T.Z, {
                 tab: Q,

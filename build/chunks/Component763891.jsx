@@ -2,7 +2,7 @@
 /** chunk id: 763891, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => N
+  Z: () => B
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -34,22 +34,22 @@ var Chunk951288 = require("./951288.js"),
   Chunk266058 = require("./266058.js"),
   Chunk719138 = require("./719138.js");
 
-function N(e) {
+function B(e) {
   var t;
   let {
     isFetchingCategories: n,
-    isFullScreen: N,
+    isFullScreen: B,
     scrollerRef: P,
     tab: A
   } = e, R = (0, g.sp)(), Z = null != (t = null == R ? true : R.sessionId) ? t : "", {
     noCache: w,
     includeUnpublished: F
-  } = (0, C.Z)(), D = (0, s.e7)([u.default], () => u.default.getCurrentUser()), M = (0, s.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [H, W] = l.useState(1), U = (0, c.Fg)(), V = (0, i.ap)(U), [z, G, q] = l.useMemo(() => {
+  } = (0, b.Z)(), D = (0, s.e7)([u.default], () => u.default.getCurrentUser()), M = (0, s.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [H, W] = l.useState(1), U = (0, c.Fg)(), V = (0, i.ap)(U), [z, G, q] = l.useMemo(() => {
     switch (A) {
       case E.AW.AVATAR_DECORATIONS:
         return [O.intl.string(O.t.dRZYND), V ? L.Z : T.Z, a.Z.AVATAR_DECORATION];
       case E.AW.PROFILE_EFFECTS:
-        return [O.intl.string(O.t["1cNjt7"]), V ? B.Z : I.Z, a.Z.PROFILE_EFFECT];
+        return [O.intl.string(O.t["1cNjt7"]), V ? N.Z : I.Z, a.Z.PROFILE_EFFECT];
       case E.AW.NAMEPLATES:
         return [O.intl.string(O.t.V68Fq6), V ? k.Z : j.Z, a.Z.NAMEPLATE];
       case E.AW.BUNDLES:
@@ -64,7 +64,7 @@ function N(e) {
       sessionId: Z,
       checkpoint: _.a.SHOP_MOUNTED,
       tab: A,
-      isFullScreen: N,
+      isFullScreen: B,
       unpublishedCategoriesShown: F,
       cacheDisabled: w
     })
@@ -73,11 +73,11 @@ function N(e) {
       sessionId: Z,
       checkpoint: _.a.SHOP_RENDERED,
       tab: A,
-      isFullScreen: N,
+      isFullScreen: B,
       unpublishedCategoriesShown: F,
       cacheDisabled: w
     })
-  }, [Z, N, F, w, n, A]), n || null == D) ? (0, r.jsx)(h.Z, {}) : (0, r.jsxs)(r.Fragment, {
+  }, [Z, B, F, w, n, A]), n || null == D) ? (0, r.jsx)(h.Z, {}) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       style: {
         backgroundImage: "url(".concat(G, ")")
@@ -95,7 +95,7 @@ function N(e) {
           newValue: {
             tilePosition: t
           },
-          children: (0, r.jsx)(b.Z, {
+          children: (0, r.jsx)(C.Z, {
             product: e,
             user: D,
             category: n,

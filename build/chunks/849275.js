@@ -26,12 +26,12 @@ function h(e, t) {
       var t;
       return null != (t = null == e ? true : e[s.m.RECOMMENDED]) ? t : []
     }, [e]),
-    b = r.useMemo(() => {
+    C = r.useMemo(() => {
       var t;
       return null != (t = null == e ? true : e[s.m.POPULAR]) ? t : []
     }, [e]),
-    C = h.length > 0 && l,
-    [E, S] = r.useState(C ? s.m.RECOMMENDED : s.m.POPULAR),
+    b = h.length > 0 && l,
+    [E, S] = r.useState(b ? s.m.RECOMMENDED : s.m.POPULAR),
     O = (0, f.Z)(),
     v = (0, i.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup),
     x = (0, i.e7)([u.Z], () => u.Z.getUserDiscounts()),
@@ -45,8 +45,8 @@ function h(e, t) {
   }, [v]);
   let k = r.useMemo(() => {
     let e = [];
-    return E === s.m.RECENT ? e = v : E === s.m.PRICE_LOW_TO_HIGH ? e = (0, d.hC)([...v], t) : E === s.m.RECOMMENDED ? e = n ? (0, d.Qf)(O(h), x) : O(h) : E === s.m.POPULAR ? e = n ? (0, d.Qf)(O(b), x) : O(b) : E === s.m.RANDOM && (e = T), y(e)
-  }, [E, y, v, T, t, O, h, b, x, n]);
+    return E === s.m.RECENT ? e = v : E === s.m.PRICE_LOW_TO_HIGH ? e = (0, d.hC)([...v], t) : E === s.m.RECOMMENDED ? e = n ? (0, d.Qf)(O(h), x) : O(h) : E === s.m.POPULAR ? e = n ? (0, d.Qf)(O(C), x) : O(C) : E === s.m.RANDOM && (e = T), y(e)
+  }, [E, y, v, T, t, O, h, C, x, n]);
   return {
     sortType: E,
     setSortType: S,
@@ -62,12 +62,12 @@ function h(e, t) {
         value: s.m.PRICE_LOW_TO_HIGH,
         label: _.intl.string(_.t.RTG4yM)
       }];
-      return C && e.unshift({
+      return b && e.unshift({
         value: s.m.RECOMMENDED,
         label: _.intl.string(_.t.JrlKlp)
       }), e
-    }, [C]),
-    showRecommendationOption: C,
+    }, [b]),
+    showRecommendationOption: b,
     shuffleProducts: j
   }
 }

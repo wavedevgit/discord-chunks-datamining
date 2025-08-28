@@ -80,7 +80,7 @@ function I(e) {
     hideLimitedTimeBadge: l = false
   } = e, {
     backgroundColors: a
-  } = (0, C.Z)(t.styles), d = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), g = (0, o.e7)([m.Z], () => m.Z.isFocused()), {
+  } = (0, b.Z)(t.styles), d = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), g = (0, o.e7)([m.Z], () => m.Z.isFocused()), {
     bannerOverrides: p,
     shopAllBannerStatic: f,
     shopAllBannerAnimated: h
@@ -109,7 +109,7 @@ function I(e) {
       size: 28
     }), (null == p ? true : p.addLogo) ? (0, r.jsx)("img", {
       className: T.categoryLogo,
-      src: (0, b.uV)(t.logo, {
+      src: (0, C.uV)(t.logo, {
         size: L
       }),
       alt: t.name,

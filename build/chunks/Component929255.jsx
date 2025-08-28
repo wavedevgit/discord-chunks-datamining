@@ -42,14 +42,14 @@ function y(e) {
       handleScroll: _
     } = (0, o.z)(f, n),
     {
-      setCategoryRef: b,
-      handleScrollToCategory: C
+      setCategoryRef: C,
+      handleScrollToCategory: b
     } = (0, m.xV)(f.current),
     [E, S] = l.useState(p),
     [O, v] = l.useState(false);
   return l.useEffect(() => {
-    null != c && C(c)
-  }, [c, C]), l.useEffect(() => () => {
+    null != c && b(c)
+  }, [c, b]), l.useEffect(() => () => {
     null != u && u()
   }, []), l.useEffect(() => {
     let e = () => {
@@ -78,7 +78,7 @@ function y(e) {
           tab: n,
           scrollerRef: f,
           sortedCategories: a,
-          setCategoryRef: b
+          setCategoryRef: C
         })
       }), E && !O && (0, r.jsx)("div", {
         className: x.divider
@@ -99,39 +99,39 @@ let T = e => {
     scrollerRef: y,
     sortedCategories: T,
     setCategoryRef: L
-  } = e, j = (0, d.FF)("CollectiblesBrowse"), k = l.useRef(null), I = (0, g.S)(e => e.hasDefaultFilters()), B = (0, u.sp)(), {
-    handlePageChange: N,
+  } = e, j = (0, d.FF)("CollectiblesBrowse"), k = l.useRef(null), I = (0, g.S)(e => e.hasDefaultFilters()), N = (0, u.sp)(), {
+    handlePageChange: B,
     currentPage: P
-  } = (0, b.h)({
+  } = (0, C.h)({
     scrollerRef: y,
     sortedCategories: T
   }), A = l.useCallback(e => {
     c.default.track(O.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-      collectibles_shop_session_id: null == B ? true : B.sessionId,
-      page_section: null == B ? true : B.pageSection,
-      page_category: null == B ? true : B.pageCategory,
+      collectibles_shop_session_id: null == N ? true : N.sessionId,
+      page_section: null == N ? true : N.pageSection,
+      page_category: null == N ? true : N.pageCategory,
       page_index: e,
-      page_size: null == B ? true : B.pageSize,
+      page_size: null == N ? true : N.pageSize,
       cta_name: "catalog page ".concat(e),
       page_type: "catalog"
-    }), N(e)
-  }, [B, N]), R = l.useRef(null);
+    }), B(e)
+  }, [N, B]), R = l.useRef(null);
   return l.useEffect(() => {
     if (!n || !a) return;
     let e = e => {
       let t = e.target;
       null === k.current || null === R.current || k.current.contains(t) || R.current.contains(t) || (c.default.track(O.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-        collectibles_shop_session_id: null == B ? true : B.sessionId,
-        page_section: null == B ? true : B.pageSection,
-        page_category: null == B ? true : B.pageCategory,
-        page_index: null == B ? true : B.pageIndex,
-        page_size: null == B ? true : B.pageSize,
+        collectibles_shop_session_id: null == N ? true : N.sessionId,
+        page_section: null == N ? true : N.pageSection,
+        page_category: null == N ? true : N.pageCategory,
+        page_index: null == N ? true : N.pageIndex,
+        page_size: null == N ? true : N.pageSize,
         cta_name: "filter bar hide outside click",
         page_type: "catalog"
       }), o(false))
     };
     return document.addEventListener("mousedown", e), () => document.removeEventListener("mousedown", e)
-  }, [n, a, o, B]), (0, r.jsx)("div", {
+  }, [n, a, o, N]), (0, r.jsx)("div", {
     className: x.inventoryWrapper,
     children: (0, r.jsxs)("div", {
       className: s()(x.inventory, {
@@ -159,11 +159,11 @@ let T = e => {
               onClick: () => {
                 let e = !a;
                 c.default.track(O.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-                  collectibles_shop_session_id: null == B ? true : B.sessionId,
-                  page_section: null == B ? true : B.pageSection,
-                  page_category: null == B ? true : B.pageCategory,
-                  page_index: null == B ? true : B.pageIndex,
-                  page_size: null == B ? true : B.pageSize,
+                  collectibles_shop_session_id: null == N ? true : N.sessionId,
+                  page_section: null == N ? true : N.pageSection,
+                  page_category: null == N ? true : N.pageCategory,
+                  page_index: null == N ? true : N.pageIndex,
+                  page_size: null == N ? true : N.pageSize,
                   cta_name: "filter bar ".concat(e ? "show" : "hide"),
                   page_type: "catalog"
                 }), o(e)
@@ -182,7 +182,7 @@ let T = e => {
             children: (0, r.jsx)(h.Z, {})
           })
         })]
-      }), j && !I ? (0, r.jsx)(C.Z, {
+      }), j && !I ? (0, r.jsx)(b.Z, {
         isFullScreen: t,
         scrollerRef: y,
         tab: m

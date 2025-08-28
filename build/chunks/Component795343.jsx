@@ -35,10 +35,10 @@ function v(e) {
   } = e, y = (0, d.sp)(), T = null != (t = null == y ? true : y.sessionId) ? t : "", {
     noCache: L,
     includeUnpublished: j
-  } = (0, C.Z)(), k = (0, i.e7)([c.default], () => c.default.getCurrentUser()), {
+  } = (0, b.Z)(), k = (0, i.e7)([c.default], () => c.default.getCurrentUser()), {
     skus: I,
-    currentPage: B,
-    totalCount: N,
+    currentPage: N,
+    totalCount: B,
     isFetchingResults: P
   } = (0, m.a)(), A = (0, i.Wu)([g.Z], () => g.Z.getProductsBySkus(I)), R = l.useCallback(() => {
     var e;
@@ -107,7 +107,7 @@ function v(e) {
             newValue: {
               tilePosition: t
             },
-            children: (0, r.jsx)(b.Z, {
+            children: (0, r.jsx)(C.Z, {
               product: e,
               user: k,
               category: n,
@@ -116,12 +116,12 @@ function v(e) {
           }, e.skuId)
         })]
       })]
-    }), N > W && (0, r.jsx)("div", {
+    }), B > W && (0, r.jsx)("div", {
       className: O.paginationContainer,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(o.DsT, {
-          currentPage: B,
-          totalCount: N,
+          currentPage: N,
+          totalCount: B,
           pageSize: W,
           onPageChange: q,
           disablePaginationGap: true

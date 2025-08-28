@@ -2,7 +2,7 @@
 /** chunk id: 788822, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  q: () => b
+  q: () => C
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,16 +19,16 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk310582 = require("./310582.js");
-let b = e => {
-  var t, n, a, b;
-  let C, {
+let C = e => {
+  var t, n, a, C;
+  let b, {
     category: E,
     subblock: S,
     badgeText: O,
     handleTransition: v
   } = e;
-  null != S && (C = null == (t = g.Z.getCategoryByStoreListingId(null == S ? true : S.categoryStoreListingId)) ? true : t.skuId);
-  let x = null != (n = null != C ? C : null == E ? true : E.skuId) ? n : "",
+  null != S && (b = null == (t = g.Z.getCategoryByStoreListingId(null == S ? true : S.categoryStoreListingId)) ? true : t.skuId);
+  let x = null != (n = null != b ? b : null == E ? true : E.skuId) ? n : "",
     {
       handleCardVisibilityChange: y
     } = (0, p.E)(x, "home", "marketing featured block"),
@@ -37,7 +37,7 @@ let b = e => {
     j = x === i.T.NAMEPLATES_V3,
     k = j ? "NAMEPLATES VOL.3" : null,
     I = null == S ? true : S.bodyText,
-    B = (0, d.sp)();
+    N = (0, d.sp)();
   return (0, r.jsx)(o.$, {
     innerRef: L,
     onChange: y,
@@ -50,13 +50,13 @@ let b = e => {
       },
       onClick: () => {
         v("shop marketing tile", x), u.default.track(m.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-          collectibles_shop_session_id: null == B ? true : B.sessionId,
+          collectibles_shop_session_id: null == N ? true : N.sessionId,
           sku_id: x,
           page_type: "home",
-          page_section: null == B ? true : B.pageSection,
-          page_category: null == B ? true : B.pageCategory,
+          page_section: null == N ? true : N.pageSection,
+          page_category: null == N ? true : N.pageCategory,
           tile_type: "FEATURED_BLOCK",
-          tile_position: String(null == B ? true : B.tilePosition),
+          tile_position: String(null == N ? true : N.tilePosition),
           cta_name: null
         })
       },
@@ -80,7 +80,7 @@ let b = e => {
           lineClamp: null != k ? 2 : 4,
           className: h.featuredBlockBodyText,
           style: {
-            color: null != (b = null == S ? true : S.bannerTextColor) ? b : "white"
+            color: null != (C = null == S ? true : S.bannerTextColor) ? C : "white"
           },
           variant: "heading-md/medium",
           children: I
@@ -92,13 +92,13 @@ let b = e => {
           text: _.intl.string(_.t.jVcuVV),
           onClick: e => {
             v("shop marketing take me there button", x), e.stopPropagation(), u.default.track(m.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-              collectibles_shop_session_id: null == B ? true : B.sessionId,
+              collectibles_shop_session_id: null == N ? true : N.sessionId,
               sku_id: x,
               page_type: "home",
-              page_section: null == B ? true : B.pageSection,
-              page_category: null == B ? true : B.pageCategory,
+              page_section: null == N ? true : N.pageSection,
+              page_category: null == N ? true : N.pageCategory,
               tile_type: "FEATURED_BLOCK",
-              tile_position: String(null == B ? true : B.tilePosition),
+              tile_position: String(null == N ? true : N.tilePosition),
               cta_name: "Take me there button"
             })
           }

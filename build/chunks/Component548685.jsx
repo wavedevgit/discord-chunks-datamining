@@ -37,8 +37,8 @@ let j = e => {
     sortedSkuIds: j,
     numVisibleItems: k,
     hasSorting: I,
-    prioritizeUserDiscounts: B,
-    tab: N,
+    prioritizeUserDiscounts: N,
+    tab: B,
     buttonContainerClassName: P
   } = e, A = (0, i.e7)([d.default], () => d.default.getCurrentUser()), R = m.ZP.canUseCollectibles(A), Z = (0, v.G)("FeedBlock"), {
     sortType: w,
@@ -47,7 +47,7 @@ let j = e => {
     sortOptions: M,
     shuffleProducts: H,
     showRecommendationOption: W
-  } = (0, S.Z)(j, R, B), U = (0, O.St)(D), V = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), z = (0, i.e7)([g.Z], () => g.Z.isFocused()), G = !V && z, {
+  } = (0, S.Z)(j, R, N), U = (0, O.St)(D), V = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), z = (0, i.e7)([g.Z], () => g.Z.isFocused()), G = !V && z, {
     animationPhase: q,
     startAnimation: K
   } = (0, E.y)(), Y = (0, _.sp)(), X = null != (t = null == Y ? true : Y.sessionId) ? t : "", Q = l.useRef(null), J = l.useCallback(e => {
@@ -150,7 +150,7 @@ let j = e => {
     }), (0, r.jsx)("div", {
       className: L.feed,
       children: n ? (0, r.jsx)(r.Fragment, {
-        children: [...Array(12)].map((e, t) => (0, r.jsx)(b.K, {}, t + 1))
+        children: [...Array(12)].map((e, t) => (0, r.jsx)(C.K, {}, t + 1))
       }) : U.slice(0, k).map((e, t) => {
         let n, l = h.Z.getCategoryForProduct(e.skuId);
         if (null == e || null == l) return null;
@@ -165,11 +165,11 @@ let j = e => {
             pageSection: "popular picks",
             categoryPosition: 2
           },
-          children: (0, r.jsx)(C.Z, {
+          children: (0, r.jsx)(b.Z, {
             product: e,
             category: l,
             user: A,
-            tab: N,
+            tab: B,
             className: n
           })
         }, null == e ? true : e.skuId)

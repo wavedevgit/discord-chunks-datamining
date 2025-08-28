@@ -2,7 +2,7 @@
 /** chunk id: 963102, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  I: () => N
+  I: () => B
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -49,32 +49,32 @@ function I(e) {
   })
 }
 
-function B(e) {
+function N(e) {
   let {
     tab: t,
     selected: n,
     displayText: a,
     handleTransition: i
-  } = e, [o, u] = l.useState(false), d = l.useRef(null), [g, _] = l.useState(0), h = l.useRef(false), b = e => {
+  } = e, [o, u] = l.useState(false), d = l.useRef(null), [g, _] = l.useState(0), h = l.useRef(false), C = e => {
     clearTimeout(g), _(setTimeout(() => {
       u(e)
     }, 100)), e && (h.current = f.Z.keyboardModeEnabled)
-  }, C = e => {
-    ("Enter" === e.key || " " === e.key) && (e.preventDefault(), b(true))
+  }, b = e => {
+    ("Enter" === e.key || " " === e.key) && (e.preventDefault(), C(true))
   };
   return (0, r.jsx)("div", {
     className: k.tabWithMenuContainer,
-    onMouseEnter: () => b(true),
-    onMouseLeave: () => b(false),
+    onMouseEnter: () => C(true),
+    onMouseLeave: () => C(false),
     children: (0, r.jsx)(c.yRy, {
       targetElementRef: d,
       shouldShow: o,
       position: "bottom",
       align: "left",
-      onRequestOpen: () => b(true),
+      onRequestOpen: () => C(true),
       onRequestClose: () => {
         var e;
-        h.current && !f.Z.keyboardModeEnabled && (0, p.Qj)(), b(false), null == (e = d.current) || e.focus()
+        h.current && !f.Z.keyboardModeEnabled && (0, p.Qj)(), C(false), null == (e = d.current) || e.focus()
       },
       renderPopout: e => {
         let {
@@ -110,7 +110,7 @@ function B(e) {
         }({}, e), u = u = {
           ref: d,
           onClick: () => i(t),
-          onKeyDown: C,
+          onKeyDown: b,
           wrapperClassName: k.tabWrapper,
           className: s()(k.tab, {
             [k.selected]: n
@@ -140,16 +140,16 @@ function B(e) {
   })
 }
 
-function N(e) {
+function B(e) {
   let {
     isFullScreen: t,
     isLayer: n,
     onClose: a,
     selectedTab: p,
     handleTransition: f
-  } = e, x = (0, g.ZP)(), N = (0, o.e7)([E.default], () => E.default.getCurrentUser()), P = (null == N ? true : N.isStaff()) || (null == N ? true : N.isStaffPersonal()) || false, {
+  } = e, x = (0, g.ZP)(), B = (0, o.e7)([E.default], () => E.default.getCurrentUser()), P = (null == B ? true : B.isStaff()) || (null == B ? true : B.isStaffPersonal()) || false, {
     enabled: A
-  } = (0, b.WX)({
+  } = (0, C.WX)({
     location: "collectibles_shop_header_bar"
   }), R = [{
     tab: T.AW.HOME,
@@ -199,7 +199,7 @@ function N(e) {
             tab: t,
             displayText: n
           } = e;
-          return t === T.AW.CATALOG ? (0, r.jsx)(B, {
+          return t === T.AW.CATALOG ? (0, r.jsx)(N, {
             tab: t,
             selected: (0, T.RE)(p) || p === t,
             displayText: n,
@@ -216,10 +216,10 @@ function N(e) {
         children: [D && (0, r.jsx)(y.Z, {
           handleTransition: f,
           selectedTab: p
-        }), A && (0, r.jsx)(C.V9, {
+        }), A && (0, r.jsx)(b.V9, {
           anchorPillType: t ? "SHOP_FULLSCREEN" : "SHOP",
           analyticsPage: w,
-          cardAlignment: C.V9.CardAlignment.END,
+          cardAlignment: b.V9.CardAlignment.END,
           ctaText: j.intl.string(j.t.VC4Mq6),
           ctaOnClick: F,
           className: k.balanceWidgetMenu

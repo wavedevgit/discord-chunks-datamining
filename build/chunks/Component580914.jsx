@@ -92,12 +92,12 @@ let A = {
         rankedSkuIds: null != (e = Z.heroRanking) ? e : [],
         name: Z.name,
         unpublishedAt: Z.unpublishedAt,
-        logoUrl: (0, C.uV)(null != (t = Z.heroLogo) ? t : Z.logo, {
+        logoUrl: (0, b.uV)(null != (t = Z.heroLogo) ? t : Z.logo, {
           size: v.n
         }),
         categorySkuId: Z.skuId,
         bannerAsset: Z.heroBannerAsset,
-        fallbackBannerUrl: (0, C.uV)(Z.heroBanner, {
+        fallbackBannerUrl: (0, b.uV)(Z.heroBanner, {
           size: I.pv,
           format: "jpg"
         }),
@@ -114,7 +114,7 @@ let A = {
       heroLogo: K,
       heroBannerStatic: Y,
       heroBannerAnimated: X
-    } = (0, T.hr)(V), Q = null == z ? true : z.heroBanner, J = null != (t = null == G ? true : G.responsive) && t, $ = null == G ? true : G.backgroundStyle, ee = l.useMemo(() => W(V.rankedSkuIds), [n, W, V.rankedSkuIds]), et = (0, S.a)()(ee), en = (0, O.l)(et).slice(0, 4), er = (0, j.St)(en), el = F === I.AW.ORBS ? N.intl.string(N.t["1CdL8f"]) : N.intl.formatToPlainString(N.t.wvKYCg, {
+    } = (0, T.hr)(V), Q = null == z ? true : z.heroBanner, J = null != (t = null == G ? true : G.responsive) && t, $ = null == G ? true : G.backgroundStyle, ee = l.useMemo(() => W(V.rankedSkuIds), [n, W, V.rankedSkuIds]), et = (0, S.a)()(ee), en = (0, O.l)(et).slice(0, 4), er = (0, j.St)(en), el = F === I.AW.ORBS ? B.intl.string(B.t["1CdL8f"]) : B.intl.formatToPlainString(B.t.wvKYCg, {
       category_name: V.name
     }), ea = (0, E.FF)("CollectiblesContent");
     return null != H && (n || V !== A) ? (0, r.jsxs)("div", {
@@ -145,7 +145,7 @@ let A = {
             className: P.heroHeaderBadgeLogoSummaryContainer,
             children: [null != V.unpublishedAt && (0, r.jsx)(d.IGR, {
               disableColor: true,
-              text: N.intl.string(N.t["h/uBCQ"]),
+              text: B.intl.string(B.t["h/uBCQ"]),
               className: P.limitedTimeBadge
             }), (0, r.jsxs)("div", {
               className: P.heroLogoNameContainer,
@@ -174,12 +174,12 @@ let A = {
               variant: "overlay-primary",
               onClick: () => {
                 F === I.AW.ORBS ? ((0, f.Y)({
-                  pageType: B.ZY5.SHOP_ORBS_TAB,
-                  sectionType: B.jXE.ORBS_SHOP_HERO_BLOCK,
-                  ctaObject: B.qAy.CTA_TO_QUEST_HOME
+                  pageType: N.ZY5.SHOP_ORBS_TAB,
+                  sectionType: N.jXE.ORBS_SHOP_HERO_BLOCK,
+                  ctaObject: N.qAy.CTA_TO_QUEST_HOME
                 }), (0, p.navigateToQuestHome)({
                   fromContent: o.j.ORBS_SHOP_HERO_CTA
-                })) : (a("shop latest category hero", ea && V.categorySkuId !== i.T.ORB ? true : V.categorySkuId), _.default.track(B.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+                })) : (a("shop latest category hero", ea && V.categorySkuId !== i.T.ORB ? true : V.categorySkuId), _.default.track(N.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                   collectibles_shop_session_id: null == U ? true : U.sessionId,
                   sku_id: V.categorySkuId,
                   page_type: F,
@@ -199,7 +199,7 @@ let A = {
             children: [true, true, true, true].map((e, t) => (0, r.jsx)(x.K, {}, t))
           }) : (0, r.jsx)(r.Fragment, {
             children: er.map((e, t) => {
-              let n = b.Z.getCategoryForProduct(e.skuId);
+              let n = C.Z.getCategoryForProduct(e.skuId);
               return null == e || null == n ? null : (0, r.jsx)(h.k0, {
                 newValue: {
                   tilePosition: t,
