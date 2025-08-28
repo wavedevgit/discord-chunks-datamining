@@ -693,7 +693,7 @@ class tA extends Chunk647438.PureComponent {
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           className: ti.panelTitleContainer,
-          children: (0, r.jsx)(e6.Z, {
+          children: (0, r.jsx)(e5.Z, {
             className: o()({
               [ti.withDisplayNameStyles]: i
             }),
@@ -707,7 +707,7 @@ class tA extends Chunk647438.PureComponent {
           })
         }), (0, r.jsx)("div", {
           className: ti.panelSubtextContainer,
-          children: (0, r.jsx)(e5.Z, {
+          children: (0, r.jsx)(e6.Z, {
             children: this.renderStatus()
           })
         })]
