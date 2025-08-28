@@ -1,0 +1,15 @@
+/** Chunk was on web.js **/
+/** chunk id: 453679, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+(0, require("./427164.js").le)({
+  kind: "user",
+  name: "2025-09-koala-pawtect-3",
+  defaultConfig: {
+    enabled: false
+  },
+  variations: {
+    1: {
+      enabled: true
+    }
+  }
+})
