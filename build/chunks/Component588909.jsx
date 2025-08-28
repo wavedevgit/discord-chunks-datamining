@@ -88,11 +88,11 @@ function Z(e, t) {
     }
     case b.nc.GO_LIVE_VOICE:
     case b.nc.GO_LIVE_NON_VOICE: {
-      _.confirmText = S.intl.string(S.t.pEuzio);
       let {
-        enabled: e
+        oneClickGoLiveEnabled: e,
+        useStreamCtaCopy: t
       } = (0, h.tU)("welcomeNotification");
-      _.onConfirmClick = e ? (e, t) => {
+      _.confirmText = S.intl.string(t ? S.t.pEuzio : S.t.U76Ft7), _.onConfirmClick = e ? (e, t) => {
         a.Z.updateNotificationStatus(t);
         let n = () => {
             u("unlock"), a.Z.setInputLocked(false, (0, f.getPID)())

@@ -95,19 +95,19 @@ function w(e) {
     s.length > 0 && d.Z.getDetectableGamesSupplemental([t, ...s])
   }, [t, s]), f && null == m) ? (0, n.jsxs)("div", {
     children: [(0, n.jsx)("div", {
-      className: a()(b.loadingHeading, O.sectionHeader)
+      className: a()(b.loadingHeading, h.sectionHeader)
     }), (0, n.jsx)("div", {
-      className: a()(O.row, O.gapLg),
+      className: a()(h.row, h.gapLg),
       children: o().range(0, 5).map(e => (0, n.jsx)("div", {
         className: b.loadingArtwork
       }, e))
     })]
   }) : (f || 0 !== x.length) && null == m ? (0, n.jsxs)("div", {
     children: [(0, n.jsx)(u.X6q, {
-      className: O.sectionHeader,
+      className: h.sectionHeader,
       variant: "text-md/semibold",
       color: "header-primary",
-      children: h.intl.string(h.t["6rLyQE"])
+      children: O.intl.string(O.t["6rLyQE"])
     }), (0, n.jsx)("div", {
       className: b.similarGames,
       style: {},

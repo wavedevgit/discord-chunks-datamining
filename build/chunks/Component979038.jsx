@@ -2,7 +2,7 @@
 /** chunk id: 979038, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => P
+  Z: () => D
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -12,6 +12,8 @@ var Chunk620662 = require("./620662.js"),
   Chunk802856 = require("./802856.js"),
   Chunk420660 = require("./420660.js"),
   Chunk206074 = require("./206074.js"),
+  Chunk100527 = require("./100527.js"),
+  Chunk906732 = require("./906732.jsx"),
   Chunk584057 = require("./584057.js"),
   Chunk355281 = require("./355281.js"),
   Chunk509003 = require("./509003.js"),
@@ -33,83 +35,86 @@ var Chunk620662 = require("./620662.js"),
   Chunk671955 = require("./671955.js"),
   Chunk723701 = require("./723701.js");
 
-function P(e) {
+function D(e) {
   let {
     user: t,
     activity: n,
-    onAction: P,
-    onClose: w,
-    application: D
+    onAction: D,
+    onClose: x,
+    application: L
   } = e, {
-    themeType: x
-  } = (0, m.z)(), L = (0, c.q)(D, "UserProfileActivityButtons"), j = (0, u.L)(null != n ? n : true, true), {
-    showPlayButton: M
-  } = d.m.useConfig({
+    themeType: j
+  } = (0, E.z)(), M = (0, c.q)(L, "UserProfileActivityButtons"), k = (0, f.L)(null != n ? n : true, true), {
+    showPlayButton: U
+  } = _.m.useConfig({
     location: "UserProfileActivityButtons"
-  });
-  if (M && null != D && (0, f.bP)(D)) return (0, r.jsx)(v.Z, {
+  }), {
+    analyticsLocations: G
+  } = (0, d.ZP)(u.Z.USER_PROFILE_ACTIVITY_BUTTONS);
+  if (U && null != L && (0, p.bP)(L)) return (0, r.jsx)(T.Z, {
     user: t,
-    application: D,
-    onAction: P,
-    onClose: w
+    application: L,
+    onAction: D,
+    onClose: x
   });
-  if ((0, s.Z)(n)) return (0, r.jsx)(O.Z, {
-    platformType: C.ABu.XBOX,
-    icon: () => (0, r.jsx)(h.Z, {}),
-    onAction: P
+  if ((0, s.Z)(n)) return (0, r.jsx)(I.Z, {
+    platformType: R.ABu.XBOX,
+    icon: () => (0, r.jsx)(g.Z, {}),
+    onAction: D
   });
-  if ((0, o.Z)(n)) return (0, r.jsx)(O.Z, {
-    platformType: C.ABu.PLAYSTATION,
-    icon: () => (0, r.jsx)(p.Z, {}),
-    onAction: P
+  if ((0, o.Z)(n)) return (0, r.jsx)(I.Z, {
+    platformType: R.ABu.PLAYSTATION,
+    icon: () => (0, r.jsx)(m.Z, {}),
+    onAction: D
   });
-  if ((0, l.Z)(n)) return (0, r.jsx)(S.Z, {
+  if ((0, l.Z)(n)) return (0, r.jsx)(C.Z, {
     activity: n,
-    onAction: P
+    onAction: D
   });
-  let k = x === N.l.MODAL || x === N.l.MODAL_V2;
-  if (!j && L && null != D && !k) return (0, r.jsx)(A.Z, {
-    application: D,
-    onAction: P,
-    onClose: w
+  let B = j === P.l.MODAL || j === P.l.MODAL_V2;
+  if (!k && M && null != L && !B) return (0, r.jsx)(N.Z, {
+    application: L,
+    onAction: D,
+    onClose: x,
+    analyticsLocations: G
   });
-  let U = (0, i.Z)(n, C.xjy.JOIN) || (0, a.Z)(n),
-    G = (null == n ? true : n.application_id) != null;
-  return U && G ? (0, r.jsxs)("div", {
-    className: R.buttonContainer,
-    children: [(0, r.jsx)(b.Z, {
+  let Z = (0, i.Z)(n, R.xjy.JOIN) || (0, a.Z)(n),
+    F = (null == n ? true : n.application_id) != null;
+  return Z && F ? (0, r.jsxs)("div", {
+    className: w.buttonContainer,
+    children: [(0, r.jsx)(O.Z, {
       user: t,
       activity: n,
-      onAction: P,
-      onClose: w
-    }), (0, r.jsx)(T.Z, {
+      onAction: D,
+      onClose: x
+    }), (0, r.jsx)(A.Z, {
       activity: n,
-      onAction: P
+      onAction: D
     })]
-  }) : U ? (0, r.jsx)(b.Z, {
+  }) : Z ? (0, r.jsx)(O.Z, {
     user: t,
     activity: n,
-    onAction: P,
-    onClose: w
-  }) : (null == n ? true : n.type) === C.IIU.HANG_STATUS ? (0, r.jsx)(E.Z, {
+    onAction: D,
+    onClose: x
+  }) : (null == n ? true : n.type) === R.IIU.HANG_STATUS ? (0, r.jsx)(y.Z, {
     user: t,
     activity: n,
-    onAction: P,
-    onClose: w
-  }) : (null == n ? true : n.buttons) != null && (null == n ? true : n.buttons.length) >= 1 ? (0, r.jsx)(g.Z, {
+    onAction: D,
+    onClose: x
+  }) : (null == n ? true : n.buttons) != null && (null == n ? true : n.buttons.length) >= 1 ? (0, r.jsx)(b.Z, {
     user: t,
     activity: n,
-    onAction: P
-  }) : G ? (0, r.jsx)(T.Z, {
+    onAction: D
+  }) : F ? (0, r.jsx)(A.Z, {
     activity: n,
-    onAction: P
-  }) : (0, i.Z)(n, C.xjy.INSTANCE) ? (0, r.jsx)(y.Z, {
+    onAction: D
+  }) : (0, i.Z)(n, R.xjy.INSTANCE) ? (0, r.jsx)(v.Z, {
     user: t,
     activity: n,
-    onAction: P
-  }) : (0, _.dS)(n) ? (0, r.jsx)(I.Z, {
+    onAction: D
+  }) : (0, h.dS)(n) ? (0, r.jsx)(S.Z, {
     activity: n,
-    onAction: P,
-    onClose: w
+    onAction: D,
+    onClose: x
   }) : null
 }

@@ -22,7 +22,7 @@ function x(e) {
   let {
     detectedGame: t,
     trackAction: r
-  } = e, [l, x] = i.useState((null == t ? true : t.summaryLocalized) != null), [v, h] = i.useState(true), [O, b] = i.useState(false), y = i.useRef(null), {
+  } = e, [l, x] = i.useState((null == t ? true : t.summaryLocalized) != null), [v, O] = i.useState(true), [h, b] = i.useState(false), y = i.useRef(null), {
     width: P,
     height: w
   } = (0, d.Z)();
@@ -50,10 +50,10 @@ function x(e) {
       lineClamp: v ? 8 : true,
       variant: "text-sm/normal",
       children: l ? t.summaryLocalized : t.summary
-    }), O && (0, n.jsx)(u.P3F, {
+    }), h && (0, n.jsx)(u.P3F, {
       className: g.clickable,
       onClick: () => {
-        r(v ? m.as.ShowMore : m.as.ShowLess), h(!v)
+        r(v ? m.as.ShowMore : m.as.ShowLess), O(!v)
       },
       children: (0, n.jsx)(o.xv, {
         variant: "text-sm/semibold",

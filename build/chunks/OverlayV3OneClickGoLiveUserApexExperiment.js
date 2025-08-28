@@ -227,11 +227,17 @@ let y = (0, Chunk427164.le)({
   name: "2025-08-overlay-v3-one-click-go-live",
   kind: "user",
   defaultConfig: {
-    enabled: false
+    oneClickGoLiveEnabled: false,
+    useStreamCtaCopy: false
   },
   variations: {
     1: {
-      enabled: true
+      oneClickGoLiveEnabled: false,
+      useStreamCtaCopy: true
+    },
+    2: {
+      oneClickGoLiveEnabled: true,
+      useStreamCtaCopy: true
     }
   }
 });

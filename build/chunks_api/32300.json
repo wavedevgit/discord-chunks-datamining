@@ -1,1 +1,1 @@
-{"id":"32300","type":"experiment","data":{"name":"2025-08-overlay-v3-one-click-go-live","kind":"user","defaultConfig":{"enabled":false},"variations":{"undefined":{"enabled":true}}},"fromModule":{"id":"web.js"}}
+{"id":"32300","type":"experiment","data":{"name":"2025-08-overlay-v3-one-click-go-live","kind":"user","defaultConfig":{"oneClickGoLiveEnabled":false,"useStreamCtaCopy":false},"variations":{"undefined":{"oneClickGoLiveEnabled":true,"useStreamCtaCopy":true}}},"fromModule":{"id":"web.js"}}

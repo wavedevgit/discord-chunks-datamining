@@ -2,30 +2,42 @@
 /** chunk id: 145843, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => u
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk481060 = require("./481060.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk990547 = require("./990547.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk906732 = require("./906732.jsx"),
+  Chunk213609 = require("./213609.js"),
   Chunk206074 = require("./206074.js"),
   Chunk388032 = require("./388032.jsx");
 
-function s(e) {
+function u(e) {
   let {
     application: t,
-    location: n
-  } = e, s = (0, a.Z)({
+    analyticsLocation: n
+  } = e, {
+    analyticsLocations: u
+  } = (0, o.ZP)(n), d = (0, l.Z)({
     application: t,
-    location: n
-  }), l = () => {
-    null == s || s()
+    analyticsLocations: u
+  });
+  (0, s.Z)({
+    name: i.ImpressionNames.CLOUD_PLAY_CTA,
+    type: i.ImpressionTypes.VIEW,
+    properties: {
+      location_stack: u
+    }
+  });
+  let f = () => {
+    null == d || d()
   };
-  return (0, r.jsx)(i.zxk, {
+  return (0, r.jsx)(a.zxk, {
     variant: "primary",
     size: "md",
-    icon: i.v3n,
-    text: o.intl.string(o.t["jaYS/v"]),
-    onClick: l,
+    icon: a.v3n,
+    text: c.intl.string(c.t["jaYS/v"]),
+    onClick: f,
     fullWidth: true
   }, "cloud-play")
 }
