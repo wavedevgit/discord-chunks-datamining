@@ -1,11 +1,12 @@
 /** Chunk was on 47129 **/
 /** chunk id: 36361, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => O
 }), require("./415506.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk28682 = require("./28682.js"),
+  Chunk30434 = require("./30434.jsx"),
   Chunk211512 = require("./211512.jsx"),
   Chunk401250 = require("./401250.jsx"),
   Chunk976713 = require("./976713.jsx"),
@@ -16,54 +17,69 @@ var Chunk28682 = require("./28682.js"),
   Chunk409322 = require("./409322.jsx"),
   Chunk670304 = require("./670304.jsx"),
   Chunk357660 = require("./357660.jsx");
-let g = function(e) {
+
+function E(e) {
   let {
     node: t
   } = e;
   switch (t.type) {
-    case r.J.ROOT:
-    case r.J.SECTION:
+    case l.J.ROOT:
+    case l.J.SECTION:
       throw Error("".concat(t.type, " nodes should never be rendered directly"));
-    case r.J.PANEL:
-      return (0, i.jsx)(N.T, {
+    case l.J.PANEL:
+      return (0, r.jsx)(v.T, {
         node: t
       });
-    case r.J.PANE:
-      return (0, i.jsx)(E.Z, {
+    case l.J.PANE:
+      return (0, r.jsx)(y.Z, {
         node: t
       });
-    case r.J.LIST:
-      return (0, i.jsx)(_.Z, {
+    case l.J.LIST:
+      return (0, r.jsx)(f.Z, {
         node: t
       });
-    case r.J.CATEGORY:
-      return (0, i.jsx)(d.Z, {
+    case l.J.CATEGORY:
+      return (0, r.jsx)(g.Z, {
         node: t
       });
-    case r.J.ACCORDION:
-      return (0, i.jsx)(c.Z, {
+    case l.J.ACCORDION:
+      return (0, r.jsx)(d.Z, {
         node: t
       });
-    case r.J.TOGGLE:
-      return (0, i.jsx)(u.I, {
+    case l.J.TOGGLE:
+      return (0, r.jsx)(c.I, {
         node: t
       });
-    case r.J.BUTTON:
-      return (0, i.jsx)(l.I, {
+    case l.J.BUTTON:
+      return (0, r.jsx)(o.I, {
         node: t
       });
-    case r.J.SELECT:
-      return (0, i.jsx)(s.Z, {
+    case l.J.SELECT:
+      return (0, r.jsx)(u.Z, {
         node: t
       });
-    case r.J.RADIO:
-      return (0, i.jsx)(a.Z, {
+    case l.J.RADIO:
+      return (0, r.jsx)(a.Z, {
         node: t
       });
-    case r.J.CUSTOM:
+    case l.J.CUSTOM:
     default:
-      return (0, i.jsx)(o.W, {
+      return (0, r.jsx)(s.W, {
         node: t
       })
   }
+}
+
+function O(e) {
+  let {
+    node: t
+  } = e;
+  return t.type === l.J.PANEL || t.type === l.J.PANE ? (0, r.jsx)(E, {
+    node: t
+  }) : (0, r.jsx)(i.Z, {
+    node: t,
+    children: (0, r.jsx)(E, {
+      node: t
+    })
+  })
 }

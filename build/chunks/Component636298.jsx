@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 636298, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,14 +15,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk214779 = require("./214779.js");
 
-function N(e) {
+function y(e) {
   let {
     icon: t,
     label: n,
-    onClick: r
+    onClick: l
   } = e;
-  return (0, i.jsx)(s.h, {
-    onClick: r,
+  return (0, r.jsx)(a.h, {
+    onClick: l,
     icon: t,
     size: "sm",
     variant: "icon-only",
@@ -30,51 +30,51 @@ function N(e) {
   })
 }
 
-function g(e) {
+function v(e) {
   let {
     title: t,
     onClose: n
   } = e, {
-    setShowNavigationMobile: r
+    setShowNavigationMobile: l
   } = (0, c.t)();
-  return (0, i.jsxs)("div", {
-    className: E.contentHeader,
-    children: [(0, i.jsxs)("div", {
-      className: E.contentHeaderLeft,
-      children: [a.tq && (0, i.jsx)(N, {
+  return (0, r.jsxs)("div", {
+    className: f.contentHeader,
+    children: [(0, r.jsxs)("div", {
+      className: f.contentHeaderLeft,
+      children: [s.tq && (0, r.jsx)(y, {
         icon: u.yFM,
-        onClick: () => r(true),
-        label: _.intl.string(_.t["13/7kZ"])
-      }), (0, i.jsx)(u.X6q, {
+        onClick: () => l(true),
+        label: g.intl.string(g.t["13/7kZ"])
+      }), (0, r.jsx)(u.X6q, {
         variant: "heading-md/normal",
         color: "header-secondary",
         children: t
       })]
-    }), (0, i.jsx)(N, {
+    }), (0, r.jsx)(y, {
       icon: u.Uz9,
       onClick: n,
-      label: _.intl.string(_.t.cpT0Cg)
+      label: g.intl.string(g.t.cpT0Cg)
     })]
   })
 }
-let O = Chunk647438.memo(function(e) {
+let E = Chunk647438.memo(function(e) {
   let {
     onClose: t,
     setting: n
-  } = e, r = null == n ? true : n.useTitle(), {
-    showNavigationMobile: l
+  } = e, l = null == n ? true : n.useTitle(), {
+    showNavigationMobile: i
   } = (0, c.t)();
-  return (0, i.jsxs)("div", {
-    className: o()(E.content, {
-      [E.mobile]: a.tq,
-      [E.mobileNavigationOpen]: l
+  return (0, r.jsxs)("div", {
+    className: o()(f.content, {
+      [f.mobile]: s.tq,
+      [f.mobileNavigationOpen]: i
     }),
-    children: [(0, i.jsx)(g, {
-      title: r,
+    children: [(0, r.jsx)(v, {
+      title: l,
       onClose: t
-    }), (0, i.jsx)("div", {
-      className: E.contentBody,
-      children: null != n && (0, i.jsx)(d.Z, {
+    }), (0, r.jsx)("div", {
+      className: f.contentBody,
+      children: null != n && (0, r.jsx)(d.Z, {
         node: n
       })
     })]

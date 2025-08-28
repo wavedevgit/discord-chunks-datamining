@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 674574, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => y
 });
 var Chunk657707 = require("./657707.js"),
   Chunk509613 = require("./509613.js"),
@@ -13,12 +13,12 @@ var Chunk657707 = require("./657707.js"),
   Chunk802 = require("./802.js"),
   Chunk348911 = require("./348911.js"),
   Chunk388032 = require("./388032.jsx");
-let E = (0, Chunk509613.x1)(Chunk869235.t.NOTIFICATIONS_PANE, {
+let f = (0, Chunk509613.x1)(Chunk869235.t.NOTIFICATIONS_PANE, {
     getLayout: () => [Chunk802.Z, Chunk348911.Z, Chunk441302.Z, Chunk736608.Z, Chunk61512.Z]
   }),
-  N = (0, Chunk509613.wf)(Chunk869235.t.NOTIFICATIONS_PANEL, {
+  y = (0, Chunk509613.wf)(Chunk869235.t.NOTIFICATIONS_PANEL, {
     icon: Chunk657707.Dkj,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.HcoRu7),
-    getLayout: () => [E],
+    getLayout: () => [f],
     usePredicate: Chunk526665.gj
   })

@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 357660, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  T: () => _
+  T: () => g
 }), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,48 +19,48 @@ function d(e) {
   } = e, {
     showNotice: u,
     handleStoreUpdate: d
-  } = (0, s.Cu)(), _ = null == t ? true : t.stores;
-  r.useEffect(() => {
-    if (null != _) {
-      let e = new l.Fh(_, () => {
-        d(_)
+  } = (0, a.Cu)(), g = null == t ? true : t.stores;
+  l.useEffect(() => {
+    if (null != g) {
+      let e = new i.Fh(g, () => {
+        d(g)
       });
-      return e.attach("SettingPanelNotice"), d(_), () => {
+      return e.attach("SettingPanelNotice"), d(g), () => {
         e.detach()
       }
     }
-  }, [_, d]);
-  let E = r.useMemo(() => {
+  }, [g, d]);
+  let f = l.useMemo(() => {
     if (null == t || !u) return null;
     let {
       element: e
     } = t;
-    return (0, i.jsx)(a.oXn, {
+    return (0, r.jsx)(s.oXn, {
       className: c.notice,
-      children: (0, i.jsx)(e, {})
+      children: (0, r.jsx)(e, {})
     })
   }, [t, u]);
-  return (0, i.jsxs)(i.Fragment, {
-    children: [n, (0, i.jsx)(o.W, {
+  return (0, r.jsxs)(r.Fragment, {
+    children: [n, (0, r.jsx)(o.W, {
       component: "div",
-      children: E
+      children: f
     })]
   })
 }
 
-function _(e) {
+function g(e) {
   let {
     node: t
   } = e, n = t.render;
-  if (null != n) return (0, i.jsx)(n, {});
+  if (null != n) return (0, r.jsx)(n, {});
   if (1 !== t.layout.length) throw Error("Panels with multiple panes must define a render prop to handle the multiple panes");
-  return (0, i.jsx)(d, {
+  return (0, r.jsx)(d, {
     notice: t.notice,
-    children: (0, i.jsx)(a.w0Z, {
+    children: (0, r.jsx)(s.w0Z, {
       className: c.scroller,
-      children: (0, i.jsx)("div", {
+      children: (0, r.jsx)("div", {
         className: c.panel,
-        children: (0, i.jsx)(u.Z, {
+        children: (0, r.jsx)(u.Z, {
           node: t.layout[0]
         })
       })

@@ -1,24 +1,24 @@
 /** Chunk was on 47129 **/
 /** chunk id: 670304, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => a
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk770102 = require("./770102.jsx"),
   Chunk36361 = require("./36361.jsx"),
   Chunk770877 = require("./770877.js");
-let s = Chunk647438.memo(function(e) {
+let a = Chunk647438.memo(function(e) {
   let {
     node: t
   } = e;
-  return null != t.render ? (0, i.jsx)(t.render, {}) : (0, i.jsx)("div", {
-    className: a.pane,
-    children: t.layout.map((e, n) => (0, i.jsxs)(r.Fragment, {
-      children: [(0, i.jsx)(o.Z, {
+  return null != t.render ? (0, r.jsx)(t.render, {}) : (0, r.jsx)("div", {
+    className: s.pane,
+    children: t.layout.map((e, n) => (0, r.jsxs)(l.Fragment, {
+      children: [(0, r.jsx)(o.Z, {
         node: e
-      }), n !== t.layout.length - 1 && (0, i.jsx)(l.$, {
-        className: a.divider
+      }), n !== t.layout.length - 1 && (0, r.jsx)(i.$, {
+        className: s.divider
       })]
     }, e.key))
   })

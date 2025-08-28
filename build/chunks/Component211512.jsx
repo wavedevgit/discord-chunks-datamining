@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 211512, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => s
+  I: () => a
 });
 var Chunk951288 = require("./951288.js"),
   Chunk540863 = require("./540863.jsx"),
@@ -9,30 +9,30 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk188639 = require("./188639.js");
 
-function s(e) {
+function a(e) {
   let {
     node: t
   } = e, {
     useLabel: n,
-    useTitle: s,
+    useTitle: a,
     useSubtitle: u,
     useVariant: c,
     useDisabled: d,
-    onClick: _
-  } = t, E = s(), N = null == u ? true : u(), g = n(), O = null == c ? true : c(), I = null == d ? true : d();
-  return (0, i.jsx)(r.x, {
-    title: E,
-    className: a.settingButtonContainer,
-    children: (0, i.jsxs)("div", {
-      className: a.settingButtonContent,
-      children: [null != N && (0, i.jsx)(l.R, {
-        type: l.g.DESCRIPTION,
-        children: N
-      }), (0, i.jsx)(o.zxk, {
-        onClick: _,
-        text: g,
-        variant: O,
-        disabled: I
+    onClick: g
+  } = t, f = a(), y = null == u ? true : u(), v = n(), E = null == c ? true : c(), O = null == d ? true : d();
+  return (0, r.jsx)(l.x, {
+    title: f,
+    className: s.settingButtonContainer,
+    children: (0, r.jsxs)("div", {
+      className: s.settingButtonContent,
+      children: [null != y && (0, r.jsx)(i.R, {
+        type: i.g.DESCRIPTION,
+        children: y
+      }), (0, r.jsx)(o.zxk, {
+        onClick: g,
+        text: v,
+        variant: E,
+        disabled: O
       })]
     })
   })

@@ -13,29 +13,33 @@ var Chunk481060 = require("./481060.js"),
   Chunk920952 = require("./920952.js");
 
 function c(e) {
-  let t = (0, a.Z7)(),
-    n = (0, o.Z)(u.Z, t);
-  return (0, i.jsx)(l.Z, function(e) {
+  let t = (0, s.Z7)(),
+    {
+      node: n,
+      directory: l
+    } = (0, o.Z)(u.Z, t);
+  return (0, r.jsx)(i.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
-        i = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), i.forEach(function(t) {
-        var i;
-        i = n[t], t in e ? Object.defineProperty(e, t, {
-          value: i,
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = i
+        }) : e[t] = r
       })
     }
     return e
   }({
     root: n,
+    directory: l,
     sidebarHeader: d,
-    sidebarFooter: s.Z
+    sidebarFooter: a.Z
   }, e))
 }
 

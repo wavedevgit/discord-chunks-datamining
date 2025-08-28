@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 367889, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk657707 = require("./657707.js"),
@@ -12,14 +12,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk869235 = require("./869235.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
-let _ = (0, Chunk509613.x1)(Chunk869235.t.SUBSCRIPTIONS_PANE, {
+let g = (0, Chunk509613.x1)(Chunk869235.t.SUBSCRIPTIONS_PANE, {
     getLayout: () => [],
     render: Chunk813732.Z
   }),
-  E = (0, Chunk509613.wf)(Chunk869235.t.SUBSCRIPTIONS_PANEL, {
+  f = (0, Chunk509613.wf)(Chunk869235.t.SUBSCRIPTIONS_PANEL, {
     icon: Chunk657707.SrA,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.trSpHR),
-    getLayout: () => [_],
+    getLayout: () => [g],
     trailing: {
       useDecoration: () => (0, Chunk160913.U)() ? (0, Chunk951288.jsx)(Chunk657707.Mgn, {
         size: "xs",

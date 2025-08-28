@@ -9,39 +9,39 @@ var Chunk951288 = require("./951288.js"),
   Chunk503089 = require("./503089.jsx"),
   Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js");
-let s = Chunk647438.createContext(true);
+let a = Chunk647438.createContext(true);
 
 function u(e) {
   let {
     children: t
-  } = e, n = r.useRef(l.$x), [u, c] = r.useState(false), d = r.useCallback(e => {
+  } = e, n = l.useRef(i.$x), [u, c] = l.useState(false), d = l.useCallback(e => {
     var t;
     c(null != (t = null == e ? true : e.some(e => {
       var t;
       return e.showNotice() && !(null == (t = e.canCloseEarly) ? true : t.call(e))
-    })) && t), n.current = l.$x
-  }, []), _ = r.useCallback(e => {
+    })) && t), n.current = i.$x
+  }, []), g = l.useCallback(e => {
     if (u) {
-      o.S.dispatch(a.CkL.SHAKE_APP, {
+      o.S.dispatch(s.CkL.SHAKE_APP, {
         duration: 300,
         intensity: n.current
-      }), n.current = Math.min(n.current + l.d7, l.w6), o.S.dispatch(a.CkL.EMPHASIZE_NOTICE);
+      }), n.current = Math.min(n.current + i.d7, i.w6), o.S.dispatch(s.CkL.EMPHASIZE_NOTICE);
       return
     }
     e()
-  }, [u]), E = r.useMemo(() => ({
-    navigateWithValidation: _,
+  }, [u]), f = l.useMemo(() => ({
+    navigateWithValidation: g,
     showNotice: u,
     handleStoreUpdate: d
-  }), [_, u, d]);
-  return (0, i.jsx)(s.Provider, {
-    value: E,
+  }), [g, u, d]);
+  return (0, r.jsx)(a.Provider, {
+    value: f,
     children: t
   })
 }
 
 function c() {
-  let e = Chunk647438.useContext(s);
+  let e = Chunk647438.useContext(a);
   if (null == module) throw Error("useNoticeContext must be used within a NoticeProvider");
   return module
 }
