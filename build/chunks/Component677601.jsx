@@ -679,34 +679,31 @@ class eV extends Chunk647438.PureComponent {
         })
       })
     }), eU(this, "renderHeader", () => {
-      var e, t;
       let {
-        renderExternalHeader: n,
-        channel: i,
-        guild: l,
-        appContext: a,
-        chatOpen: o,
-        inCall: s
+        renderExternalHeader: e,
+        channel: t,
+        guild: n,
+        appContext: i,
+        chatOpen: l,
+        inCall: a
       } = this.props, {
-        useExternalHeader: c,
-        canSelectRegion: u,
-        renderHeader: d
+        useExternalHeader: o,
+        canSelectRegion: s,
+        renderHeader: c
       } = this.viewProperties;
-      if (!d) return null;
-      let p = null != (t = null == (e = this._lastIdleProps) ? true : e.idle) && t;
-      return (0, r.jsxs)(K.Z, {
+      return c ? (0, r.jsxs)(K.Z, {
         children: [(0, r.jsx)("div", {
           className: ek.headerWrapper,
-          children: c ? null == n ? true : n(p) : (0, r.jsx)(eS.Z, {
-            channel: i,
-            guild: l,
-            appContext: a,
-            inCall: s,
-            isChatOpen: o || this.popoutOpen && !this.inPopout && s,
+          children: o ? null == e ? true : e() : (0, r.jsx)(eS.Z, {
+            channel: t,
+            guild: n,
+            appContext: i,
+            inCall: a,
+            isChatOpen: l || this.popoutOpen && !this.inPopout && a,
             exitFullScreen: this.maybeLeaveFullScreen
           })
-        }), u ? this.renderRegionSelect() : null]
-      })
+        }), s ? this.renderRegionSelect() : null]
+      }) : null
     })
   }
 }

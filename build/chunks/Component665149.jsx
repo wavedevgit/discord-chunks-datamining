@@ -273,14 +273,14 @@ let A = e => {
     role: E,
     scrollable: b,
     transparent: y = false,
-    showToolbar: O = true
+    hidden: O = false
   } = e, v = i.useRef(null), I = i.useContext(u.Z);
   return (0, r.jsx)("section", {
     className: o()(t, _.container, {
       [_.themed]: !y,
       [_.transparent]: y,
       [_.themedMobile]: l.tq,
-      [_.showToolbar]: O
+      [_.hidden]: O
     }),
     "aria-label": m,
     "aria-labelledby": g,
@@ -289,13 +289,10 @@ let A = e => {
     children: (0, r.jsxs)(c.JcV, {
       containerRef: v,
       children: [(0, r.jsxs)("div", {
-        className: o()(_.upperContainer, {
-          [_.showToolbar]: O
-        }),
+        className: _.upperContainer,
         children: [(0, r.jsxs)("div", {
           className: o()(_.children, n, {
-            [_.scrollable]: b,
-            [_.showToolbar]: O
+            [_.scrollable]: b
           }),
           onDoubleClick: h,
           children: [l.tq && null != I ? (0, r.jsx)(s.r, {
@@ -303,9 +300,7 @@ let A = e => {
             className: _.hamburger
           }) : null, d]
         }), null != p ? (0, r.jsx)("div", {
-          className: o()(_.toolbar, a, {
-            [_.showToolbar]: O
-          }),
+          className: o()(_.toolbar, a),
           children: p
         }) : null]
       }), f]

@@ -729,70 +729,69 @@ class to extends Chunk647438.PureComponent {
         }),
         children: tt.intl.string(tt.t["3aOv+v"])
       }) : null
-    }), tr(this, "renderHeaderBar", e => {
+    }), tr(this, "renderHeaderBar", () => {
       let {
-        channel: t,
-        channelName: n,
-        parentChannel: i,
-        guild: l,
-        guildId: o,
-        showCall: c,
-        showActivityPanel: u,
-        showFramePanel: d,
-        hasVideo: p,
-        showHeaderGuildBreadcrumb: h,
-        isFavorites: f
+        channel: e,
+        channelName: t,
+        parentChannel: n,
+        guild: i,
+        guildId: l,
+        showCall: o,
+        showActivityPanel: c,
+        showFramePanel: u,
+        hasVideo: d,
+        showHeaderGuildBreadcrumb: p,
+        isFavorites: h
       } = this.props;
-      s()(null != t, "Missing channel in Channel.renderHeaderBar"), s()(null != n, "Should not be null if channel is not null.");
-      let b = t.isDM() && !t.isSystemDM() ? this.openUserProfile : h ? () => (0, e_.Kh)(t.id) : true,
-        y = (null == i ? true : i.guild_id) != null && (null == i ? true : i.id) != null ? this.handleTitleParentClick : true,
-        _ = u || d,
-        C = c || _,
-        v = !C || false === e && !_;
+      s()(null != e, "Missing channel in Channel.renderHeaderBar"), s()(null != t, "Should not be null if channel is not null.");
+      let f = e.isDM() && !e.isSystemDM() ? this.openUserProfile : p ? () => (0, e_.Kh)(e.id) : true,
+        b = (null == n ? true : n.guild_id) != null && (null == n ? true : n.id) != null ? this.handleTitleParentClick : true,
+        y = c || u,
+        _ = o || y;
       return (0, r.jsxs)("div", {
         className: tn.subtitleContainer,
         children: [(0, r.jsx)(g.f6W, {
-          theme: p && c ? e3.BRd.DARK : true,
-          children: e => (0, r.jsxs)(ea.Z, {
-            guildId: o,
-            channelId: t.id,
-            channelType: t.type,
-            hideSearch: t.isDirectory() || f && !(0, eC.X$)(),
-            showDivider: f && !(0, eC.X$)(),
+          theme: d && o ? e3.BRd.DARK : true,
+          children: o => (0, r.jsxs)(ea.Z, {
+            guildId: l,
+            channelId: e.id,
+            channelType: e.type,
+            hideSearch: e.isDirectory() || h && !(0, eC.X$)(),
+            showDivider: h && !(0, eC.X$)(),
             toolbar: this.renderHeaderToolbar(),
             mobileToolbar: this.renderMobileToolbar(),
-            className: a()(tn.title, e, {
-              [tn.gdm]: t.type === e3.d4z.GROUP_DM
+            className: a()(tn.title, o, {
+              [tn.gdm]: e.type === e3.d4z.GROUP_DM
             }),
-            transparent: C,
-            showToolbar: v,
+            transparent: _,
+            hidden: u,
             "aria-label": tt.intl.string(tt.t.BIYAqa),
-            children: [h && (0, r.jsx)(eo.TS, {
-              channel: t,
-              guild: l,
+            children: [p && (0, r.jsx)(eo.TS, {
+              channel: e,
+              guild: i,
               caretPosition: "right"
             }), (0, eo.ud)({
-              channel: t,
-              channelName: n,
-              parentChannel: i,
-              guild: l,
-              hasVideo: p,
+              channel: e,
+              channelName: t,
+              parentChannel: n,
+              guild: i,
+              hasVideo: d,
               handleContextMenu: this.handleContextMenu,
               handleParentContextMenu: this.handleParentContextMenu,
-              handleClick: b,
-              handleParentClick: y,
+              handleClick: f,
+              handleParentClick: b,
               renderFollowButton: this.renderFollowButton
-            }), h ? (0, r.jsx)(m.zx, {
-              onClick: () => (0, ey.XU)(t.guild_id, t.id),
+            }), p ? (0, r.jsx)(m.zx, {
+              onClick: () => (0, ey.XU)(e.guild_id, e.id),
               className: tn.followButton,
               look: m.zx.Looks.FILLED,
               color: m.zx.Colors.PRIMARY,
               size: m.zx.Sizes.MIN,
               children: tt.intl.string(tt.t.k5WiPT)
-            }) : (0, eo.v0)(t, l)]
-          }, "header-".concat(t.id))
+            }) : (0, eo.v0)(e, i)]
+          }, "header-".concat(e.id))
         }), (0, r.jsx)(eb.Z, {
-          channelId: t.id
+          channelId: e.id
         })]
       })
     })
