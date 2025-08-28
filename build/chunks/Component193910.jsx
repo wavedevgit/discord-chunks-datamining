@@ -81,7 +81,7 @@ function A(e) {
     _.default.track(E.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), R("/", (0, O.JM)("/"))
   }
 
-  function F() {
+  function G() {
     M()
   }
 
@@ -129,7 +129,7 @@ function A(e) {
     })
   }
 
-  function G() {
+  function F() {
     _.default.track(E.rMx.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
       channel_type: t.type,
       channel_id: t.id,
@@ -204,7 +204,7 @@ function A(e) {
           return (0, r.jsx)(s.sNh, {
             id: "clips",
             label: i,
-            action: F
+            action: G
           }, "clips");
         case j.r.POLL:
           return (0, r.jsx)(s.sNh, {
@@ -270,7 +270,7 @@ function A(e) {
           return (0, r.jsx)(s.sNh, {
             id: "activity",
             label: i,
-            action: G,
+            action: F,
             hint: (0, r.jsx)(N, {})
           }, "activity");
         case j.r.SCHEDULED_MESSAGE:

@@ -156,7 +156,7 @@ function eE(e) {
             visibleContent: t,
             markAsDismissed: n
           } = e;
-          if (t === d.z.TRIAL_NUX_STREAM_COACH_MARK) return E(true), (0, r.jsx)(F.h, {
+          if (t === d.z.TRIAL_NUX_STREAM_COACH_MARK) return E(true), (0, r.jsx)(G.h, {
             buttonRef: b,
             dismissed: false,
             onDismiss: () => {
@@ -165,7 +165,7 @@ function eE(e) {
           })
         }
       })
-    })(), (0, r.jsx)(G.Z, {
+    })(), (0, r.jsx)(F.Z, {
       children: (0, r.jsx)(p.yRy, {
         targetElementRef: _,
         renderPopout: e => {
@@ -450,10 +450,10 @@ let eT = function(e) {
     canGoLive: M
   } = (0, u.cj)([er.Z], () => ({
     canGoLive: (0, R.Z)(er.Z)
-  })), D = (0, A.Z)(), L = (0, u.e7)([N.Z], () => null != N.Z.getAwaitingRemoteSessionInfo()), B = null != D, F = (0, u.e7)([ei.Z], () => {
+  })), D = (0, A.Z)(), L = (0, u.e7)([N.Z], () => null != N.Z.getAwaitingRemoteSessionInfo()), B = null != D, G = (0, u.e7)([ei.Z], () => {
     var e;
     return (null != (e = null == D ? true : D.channelId) ? e : ei.Z.getVoiceChannelId()) === n.id
-  }), G = (0, u.e7)([_.ZP], () => _.ZP.getCurrentEmbeddedActivity()), {
+  }), F = (0, u.e7)([_.ZP], () => _.ZP.getCurrentEmbeddedActivity()), {
     reachedLimit: z,
     limit: W
   } = (0, eo.Z)(n), {
@@ -478,7 +478,7 @@ let eT = function(e) {
       onInteraction: eZ("AudioDeviceMenu")
     })))
   } : true;
-  return F ? (0, r.jsx)(x.Gt, {
+  return G ? (0, r.jsx)(x.Gt, {
     value: q,
     children: (0, r.jsxs)(b.Z, {
       section: eb.jXE.VOICE_CONTROL_TRAY,
@@ -615,7 +615,7 @@ let eT = function(e) {
             remoteMode: B
           })]
         }), (0, r.jsx)(eI, {
-          connectedEmbeddedActivity: G,
+          connectedEmbeddedActivity: F,
           currentUser: y,
           channel: n,
           onDisconnectCall: o

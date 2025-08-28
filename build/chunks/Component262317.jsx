@@ -2,7 +2,7 @@
 /** chunk id: 262317, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   XX: () => U,
-  ZP: () => F,
+  ZP: () => G,
   ul: () => B
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -111,16 +111,16 @@ function B(e) {
     })]
   })
 }
-let F = (0, Chunk888651.$)(function(e) {
+let G = (0, Chunk888651.$)(function(e) {
   var t;
   let {
     collapsed: l,
     user: h,
     channel: U,
     mute: B,
-    localMute: F,
+    localMute: G,
     localVideoDisabled: H,
-    deaf: G,
+    deaf: F,
     video: V,
     embeddedApplication: z,
     serverMute: W,
@@ -221,14 +221,14 @@ let F = (0, Chunk888651.$)(function(e) {
             speaking: X,
             disconnected: Q,
             mute: B,
-            localMute: F,
+            localMute: G,
             localVideoDisabled: H,
             isStreaming: ee,
             isGuest: en,
             video: V,
             priority: er,
             ringing: K,
-            deaf: G,
+            deaf: F,
             nick: Y,
             collapsed: l,
             overlap: l,

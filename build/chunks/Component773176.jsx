@@ -209,7 +209,7 @@ function eg(e) {
       isFocused: s
     } = e, {
       author: d
-    } = n, p = (0, u.e7)([V.Z], () => V.Z.getGuild(t.guild_id), [t.guild_id]), h = (0, u.e7)([F.default], () => F.default.getId()), g = (0, U.$R)(t), b = (0, U.Gu)(t), {
+    } = n, p = (0, u.e7)([V.Z], () => V.Z.getGuild(t.guild_id), [t.guild_id]), h = (0, u.e7)([G.default], () => G.default.getId()), g = (0, U.$R)(t), b = (0, U.Gu)(t), {
       firstMessage: y
     } = (0, u.e7)([v.Z], () => v.Z.getMessage(t.id), [t.id]), _ = B.nc.useSetting(), C = B.Sb.useSetting(), O = (0, u.e7)([z.Z], () => null == t.guild_id || z.Z.canChatInGuild(t.guild_id), [t]), {
       canManageMessages: j,
@@ -217,7 +217,7 @@ function eg(e) {
     } = (0, u.cj)([W.Z], () => ({
       canAddNewReactions: O && W.Z.can(ea.Plq.ADD_REACTIONS, t),
       canManageMessages: W.Z.can(ea.Plq.MANAGE_MESSAGES, t)
-    }), [t, O]), I = (0, D.U)(t, n), P = (0, U.NE)(t, n), Z = (0, U.Ek)(n), T = (0, u.e7)([S.Z], () => null != t.guild_id && S.Z.isLurking(t.guild_id), [t]), N = (0, u.e7)([G.ZP], () => null != t.guild_id && G.ZP.isCurrentUserGuest(t.guild_id), [t]), A = d.id === h, w = (j || n.canDeleteOwnMessage(h)) && g && !ea.V$x.UNDELETABLE.has(n.type);
+    }), [t, O]), I = (0, D.U)(t, n), P = (0, U.NE)(t, n), Z = (0, U.Ek)(n), T = (0, u.e7)([S.Z], () => null != t.guild_id && S.Z.isLurking(t.guild_id), [t]), N = (0, u.e7)([F.ZP], () => null != t.guild_id && F.ZP.isCurrentUserGuest(t.guild_id), [t]), A = d.id === h, w = (j || n.canDeleteOwnMessage(h)) && g && !ea.V$x.UNDELETABLE.has(n.type);
     n.type === ea.uaV.AUTO_MODERATION_ACTION && (w = w && j), t.isModeratorReportChannel() && (w = w && n.id !== (null == y ? true : y.id) && !(0, ee.Z)(n));
     let R = (0, Q.a4)(n),
       M = (0, $.Z)(n, t),

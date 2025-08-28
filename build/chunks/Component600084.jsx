@@ -1,7 +1,7 @@
 /** Chunk was on 68197 **/
 /** chunk id: 600084, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => G
+  Z: () => F
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -66,7 +66,7 @@ function H(e) {
   })
 }
 
-function G(e) {
+function F(e) {
   var t, n;
   let {
     channel: p,
@@ -80,7 +80,7 @@ function G(e) {
     canManageRoles: x.Z.can(L.Plq.MANAGE_ROLES, p),
     canReadMessageHistory: x.Z.can(L.Plq.READ_MESSAGE_HISTORY, p)
   })), D = (0, l.e7)([b.Z], () => v === L.d4z.DM ? b.Z.getMutualGuilds(p.getRecipientId()) : null, [p, v]), {
-    systemDMRedesignEnabled: G
+    systemDMRedesignEnabled: F
   } = g.Z.useExperiment({
     location: "bf1a4f_1"
   }, {
@@ -100,7 +100,7 @@ function G(e) {
       }))
     }, [D, v, p, I]), i.useEffect(() => {
       (null == I ? true : I.bot) && W === C.M.NOT_FETCHED && s.Z.fetch()
-    }, [null == I ? true : I.bot, W]), p.isSystemDM()) return G ? (0, r.jsx)(w.Z, {
+    }, [null == I ? true : I.bot, W]), p.isSystemDM()) return F ? (0, r.jsx)(w.Z, {
     channel: p
   }) : (0, r.jsx)(N.Z, {
     channel: p,
@@ -132,7 +132,7 @@ function G(e) {
       user: I,
       children: [null != I && !I.isProvisional && (0, r.jsx)(a.X6q, {
         variant: "heading-xl/medium",
-        className: F.marginBottom20,
+        className: G.marginBottom20,
         children: A
       }), U.intl.format(U.t["Qvg+6+"], {
         username: _

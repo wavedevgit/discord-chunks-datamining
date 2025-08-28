@@ -107,7 +107,7 @@ function ea(e) {
   return (0, r.jsx)(N.d, {
     isTrayButton: true,
     onClick: () => {
-      (0, F.RK)(t, false), (0, m.v)(n, m.d.SPEAK_ON_STAGE)
+      (0, G.RK)(t, false), (0, m.v)(n, m.d.SPEAK_ON_STAGE)
     },
     iconComponent: a.Lrb,
     label: en.intl.string(en.t["8Joh+v"])
@@ -198,7 +198,7 @@ function es(e) {
     iconComponent: a.zRq,
     label: en.intl.string(en.t.ezLpY2),
     onClick: () => {
-      (0, m.v)(n, m.d.MOVE_TO_AUDIENCE), (0, F.yi)(t)
+      (0, m.v)(n, m.d.MOVE_TO_AUDIENCE), (0, G.yi)(t)
     }
   })
 }
@@ -244,7 +244,7 @@ let eu = Chunk647438.memo(function(e) {
   } = (0, O.Z)(), x = (0, E.Z)(t), {
     limit: N,
     reachedLimit: A
-  } = (0, j.Z)(t), M = (0, l.e7)([U.default], () => U.default.getCurrentUser()), L = (0, l.e7)([D.Z], () => (0, y.Z)(D.Z)), B = (0, l.e7)([k.Z], () => k.Z.getVoiceChannelId() === t.id, [t.id]), F = (0, l.e7)([d.Z], () => d.Z.getStreamParticipants(t.id)[0], [t.id]), G = (0, W.PK)(t.id), V = N > 0, z = A && !G || null != F && F.user.id !== (null == M ? true : M.id), q = (0, g.u)("AudioDeviceMenu", n, {
+  } = (0, j.Z)(t), M = (0, l.e7)([U.default], () => U.default.getCurrentUser()), L = (0, l.e7)([D.Z], () => (0, y.Z)(D.Z)), B = (0, l.e7)([k.Z], () => k.Z.getVoiceChannelId() === t.id, [t.id]), G = (0, l.e7)([d.Z], () => d.Z.getStreamParticipants(t.id)[0], [t.id]), F = (0, W.PK)(t.id), V = N > 0, z = A && !F || null != G && G.user.id !== (null == M ? true : M.id), q = (0, g.u)("AudioDeviceMenu", n, {
     entrypoint: et.A5.CARET
   }), Y = i.useRef(null), K = i.useRef(null);
   if (null == M) return null;
@@ -382,7 +382,7 @@ let ep = Chunk647438.memo(function(e) {
   let {
     channel: t,
     isOnStartStageScreen: n
-  } = e, i = (0, Q.Z)(t.id), a = (0, H.B)(t.id), o = (0, l.e7)([L.Z], () => L.Z.can(G.yP, t), [t]), s = (0, J.Z)(t.id), c = (0, l.e7)([d.Z], () => null != t ? d.Z.getSelectedParticipant(t.id) : null), u = !s && null == c;
+  } = e, i = (0, Q.Z)(t.id), a = (0, H.B)(t.id), o = (0, l.e7)([L.Z], () => L.Z.can(F.yP, t), [t]), s = (0, J.Z)(t.id), c = (0, l.e7)([d.Z], () => null != t ? d.Z.getSelectedParticipant(t.id) : null), u = !s && null == c;
   return n ? (0, r.jsx)(ed, {
     channel: t
   }) : i || a ? (0, r.jsxs)("div", {

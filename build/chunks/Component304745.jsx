@@ -43,10 +43,10 @@ function S(e) {
   }), L = (0, l.e7)([u.ZP], () => null != u.ZP.getSelfEmbeddedActivityForLocation(u.ZP.getConnectedActivityLocation())), k = !N, U = i.useCallback(e => {
     "focus" !== e.type && R()
   }, [R]), B = (0, c.bp)() === O.IlC.POPOUT, {
-    parentAnalyticsLocation: F,
+    parentAnalyticsLocation: G,
     newestAnalyticsLocation: H
-  } = (0, g.ZP)(), G = i.useCallback(() => {
-    (0, y.v)(F, y.d.ACTIVITY), (0, b.Z)({
+  } = (0, g.ZP)(), F = i.useCallback(() => {
+    (0, y.v)(G, y.d.ACTIVITY), (0, b.Z)({
       context: null != t ? {
         type: "channel",
         channel: t
@@ -56,7 +56,7 @@ function S(e) {
       openInPopout: B,
       analyticsLocation: H
     })
-  }, [t, B, H, F]), V = [];
+  }, [t, B, H, G]), V = [];
   N || V.push(a.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, h.Z)(t.id) && !N && V.push(a.z.ACTIVITY_GDM_ROCKET_SPARKLE), N || V.push(a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
   let z = i.useRef(false),
     W = i.useRef(null);
@@ -138,7 +138,7 @@ function S(e) {
                       label: k ? true : T,
                       isActivityActive: L,
                       onClick: () => {
-                        G(), (i === a.z.ACTIVITIES_MINI_SHELF_SPARKLES || i === a.z.ACTIVITY_GDM_ROCKET_SPARKLE || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || i === a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && l(j.L.TAKE_ACTION), t === a.z.ACTIVITIES_VOICE_LAUNCHER_BADGE && n(j.L.TAKE_ACTION)
+                        F(), (i === a.z.ACTIVITIES_MINI_SHELF_SPARKLES || i === a.z.ACTIVITY_GDM_ROCKET_SPARKLE || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || i === a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && l(j.L.TAKE_ACTION), t === a.z.ACTIVITIES_VOICE_LAUNCHER_BADGE && n(j.L.TAKE_ACTION)
                       },
                       onMouseEnter: U,
                       onMouseLeave: M

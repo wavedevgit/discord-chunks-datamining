@@ -42,7 +42,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk214785 = require("./214785.js"),
   Chunk127947 = require("./127947.js");
 
-function F(e) {
+function G(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -74,7 +74,7 @@ function H(e, t) {
   }), e
 }
 
-function G(e) {
+function F(e) {
   let {
     channel: t
   } = e, l = t.isArchivedThread(), a = (0, O.P0)(t), [o, u] = i.useState(false), d = () => {
@@ -230,11 +230,11 @@ function V(e) {
         })]
       }), (0, r.jsxs)("div", {
         className: k.buttons,
-        children: [en ? (0, r.jsx)(G, {
+        children: [en ? (0, r.jsx)(F, {
           channel: Y
         }) : (0, r.jsx)(c.ua7, {
           text: D.intl.string(D.t.F7oeDg),
-          children: e => (0, r.jsx)(c.zxk, H(F({}, e), {
+          children: e => (0, r.jsx)(c.zxk, H(G({}, e), {
             icon: eh,
             size: "sm",
             variant: "secondary",
@@ -243,13 +243,13 @@ function V(e) {
           }))
         }), (0, r.jsx)(c.ua7, {
           text: D.intl.string(D.t.WqhZsr),
-          children: e => W ? (0, r.jsx)(c.zxk, H(F({}, e), {
+          children: e => W ? (0, r.jsx)(c.zxk, H(G({}, e), {
             icon: c.dz2,
             size: "sm",
             variant: "secondary",
             onClick: ed,
             text: D.intl.string(D.t["t5VZ8/"])
-          })) : (0, r.jsx)(c.hU, H(F({}, e), {
+          })) : (0, r.jsx)(c.hU, H(G({}, e), {
             icon: c.xPt,
             size: "sm",
             variant: "secondary",
@@ -258,7 +258,7 @@ function V(e) {
           }))
         }), !n && (0, r.jsx)(c.ua7, {
           text: D.intl.string(D.t.nFP4oa),
-          children: e => (0, r.jsx)(c.hU, H(F({}, e), {
+          children: e => (0, r.jsx)(c.hU, H(G({}, e), {
             icon: c.Za2,
             size: "sm",
             variant: "secondary",

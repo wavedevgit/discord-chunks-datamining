@@ -75,7 +75,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
     } = e, s = i.useRef(null), u = (0, p.e7)([A.Z], () => A.Z.isTyping(t.id, a)), h = (0, p.e7)([P.ZP], () => P.ZP.getMember(t.guild_id, a)), g = (0, p.e7)([Z.Z], () => {
       var e;
       return (null == h ? true : h.colorRoleId) != null ? null == (e = Z.Z.getRole(t.guild_id, h.colorRoleId)) ? true : e.name : true
-    }, [t.guild_id, h]), b = (0, p.e7)([w.default], () => w.default.getUser(a)), y = (0, p.e7)([w.default], () => w.default.getCurrentUser()), _ = (null == b ? true : b.id) === (null == y ? true : y.id), C = (0, p.e7)([T.Z, N.Z], () => _ ? N.Z.getStatus() : T.Z.getStatus(a, t.guild_id)), x = (0, p.e7)([T.Z], () => T.Z.isMobileOnline(a)), j = (0, p.e7)([T.Z, N.Z], () => _ ? N.Z.getActivities() : T.Z.getActivities(a, t.guild_id)), R = (0, p.e7)([I.Z], () => I.Z.getAnyStreamForUser(a)), M = (0, c.JA)(a), L = (0, p.e7)([E.Z], () => E.Z.canUserViewChannel(t.id, l, a)), U = (null == b ? true : b.id) != null && b.id === o, G = i.useCallback(e => {
+    }, [t.guild_id, h]), b = (0, p.e7)([w.default], () => w.default.getUser(a)), y = (0, p.e7)([w.default], () => w.default.getCurrentUser()), _ = (null == b ? true : b.id) === (null == y ? true : y.id), C = (0, p.e7)([T.Z, N.Z], () => _ ? N.Z.getStatus() : T.Z.getStatus(a, t.guild_id)), x = (0, p.e7)([T.Z], () => T.Z.isMobileOnline(a)), j = (0, p.e7)([T.Z, N.Z], () => _ ? N.Z.getActivities() : T.Z.getActivities(a, t.guild_id)), R = (0, p.e7)([I.Z], () => I.Z.getAnyStreamForUser(a)), M = (0, c.JA)(a), L = (0, p.e7)([E.Z], () => E.Z.canUserViewChannel(t.id, l, a)), U = (null == b ? true : b.id) != null && b.id === o, F = i.useCallback(e => {
       null != b && (0, f.jW)(e, async () => {
         let {
           default: e
@@ -104,9 +104,9 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
           decoration: "never"
         })),
         n = "<@".concat(b.id, ">");
-      D.S.dispatch(F.CkL.TEXTAREA_FOCUS, {
+      D.S.dispatch(G.CkL.TEXTAREA_FOCUS, {
         channelId: t.id
-      }), D.S.dispatchToLastSubscribed(F.CkL.INSERT_TEXT, {
+      }), D.S.dispatchToLastSubscribed(G.CkL.INSERT_TEXT, {
         plainText: e,
         rawText: n
       }), m.Z.startTyping(t.id)
@@ -114,8 +114,8 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
       e.stopPropagation(), (0, v.f)({
         guildId: t.guild_id,
         location: {
-          section: F.jXE.THREAD_MEMBER_LIST,
-          object: F.qAy.BOOST_GEM_ICON
+          section: G.jXE.THREAD_MEMBER_LIST,
+          object: G.qAy.BOOST_GEM_ICON
         }
       })
     }, [t.guild_id]), Y = (0, O.K)({
@@ -156,7 +156,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
         }(e, ["onClick", "onMouseDown"]);
         return (0, r.jsx)(B.Z, z({
           ref: s,
-          onContextMenu: G,
+          onContextMenu: F,
           shouldAnimateStatus: W,
           user: b,
           currentUser: y,
@@ -199,7 +199,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
       guildId: l,
       size: 16
     });
-    return t === F.Skl.UNKNOWN ? (0, r.jsx)("div", {
+    return t === G.Skl.UNKNOWN ? (0, r.jsx)("div", {
       className: V.membersGroup,
       children: (0, r.jsx)("div", {
         className: V.memberGroupsPlaceholder
@@ -222,13 +222,13 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
     let {
       channel: t
     } = e;
-    return t.type === F.d4z.PRIVATE_THREAD ? (0, r.jsxs)(r.Fragment, {
+    return t.type === G.d4z.PRIVATE_THREAD ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: G.divider
+        className: F.divider
       }), (0, r.jsxs)(h.Text, {
         variant: "text-xs/bold",
         color: "header-secondary",
-        className: G.private,
+        className: F.private,
         children: [(0, r.jsx)(h.mBM, {
           size: "xxs",
           color: "currentColor"
@@ -236,7 +236,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
       }), (0, r.jsx)(h.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
-        className: G.instructions,
+        className: F.instructions,
         children: H.intl.string(H.t.Hsd8hI)
       })]
     }) : null
@@ -302,7 +302,7 @@ function Q(e) {
     }
   }(l, q), C = 0 === d.length || d.every(e => 0 === e.userIds.length);
   if (i.useEffect(() => {
-      M.default.track(F.rMx.MEMBER_LIST_VIEWED, {
+      M.default.track(G.rMx.MEMBER_LIST_VIEWED, {
         channel_id: t.id,
         channel_type: t.type,
         guild_id: t.guild_id
@@ -318,7 +318,7 @@ function Q(e) {
       navigator: m,
       children: (0, r.jsx)(h.Wdt, {
         children: e => (0, r.jsx)("div", {
-          className: a()(V.membersWrap, V.hiddenMembers, G.container),
+          className: a()(V.membersWrap, V.hiddenMembers, F.container),
           children: (0, r.jsx)(h.aVo, z({
             ref: _,
             className: V.members,
@@ -351,7 +351,7 @@ function Q(e) {
                 guildOwnerId: x
               }, l[i])
             },
-            footerHeight: e => 80 * (d[e] === f && t.type === F.d4z.PRIVATE_THREAD),
+            footerHeight: e => 80 * (d[e] === f && t.type === G.d4z.PRIVATE_THREAD),
             renderFooter: e => d[e.section] === f ? (0, r.jsx)(X, {
               channel: t
             }, "footer") : null,
@@ -371,28 +371,28 @@ function J(e) {
     channel: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(V.membersWrap, V.hiddenMembers, V.members, G.emptyState),
+    className: a()(V.membersWrap, V.hiddenMembers, V.members, F.emptyState),
     children: [(0, r.jsx)(h.Text, {
-      className: G.emptyStateHeader,
+      className: F.emptyStateHeader,
       variant: "text-xs/bold",
       color: "interactive-normal",
       children: H.intl.string(H.t["9Oq93t"])
     }), (0, r.jsxs)("div", {
-      className: G.emptyStateIconContainer,
+      className: F.emptyStateIconContainer,
       children: [(0, r.jsx)("div", {
-        className: G.emptyStateIcon,
+        className: F.emptyStateIcon,
         children: (0, r.jsx)(h.BFJ, {
           size: "lg",
           color: "currentColor"
         })
       }), (0, r.jsx)(R.Z, {
-        className: G.emptyStateStars
+        className: F.emptyStateStars
       })]
     }), (0, r.jsx)(h.X6q, {
       variant: "heading-md/semibold",
       children: t.isForumPost() ? H.intl.string(H.t.p0UgNT) : H.intl.string(H.t["9/n5v7"])
     }), (0, r.jsx)(h.Text, {
-      className: G.emptyStateSubtext,
+      className: F.emptyStateSubtext,
       variant: "text-sm/normal",
       color: "header-secondary",
       children: H.intl.string(H.t.emw8UF)

@@ -48,9 +48,9 @@ function j(e) {
   }), [k, U] = (0, h.cv)(L), {
     analyticsLocations: B
   } = (0, u.ZP)(), {
-    isHovered: F,
+    isHovered: G,
     setIsHovered: H,
-    onMouseEnter: G,
+    onMouseEnter: F,
     onMouseLeave: V
   } = (0, f.Z)(200, 300);
 
@@ -98,12 +98,12 @@ function j(e) {
   }
 
   function W() {
-    (0, d.v)(I, d.d.SOUNDBOARD), E === x.D.SOUNDBOARD ? (null == S || S(true), V()) : (null != E ? (Z(), G()) : Z(), null == S || S(x.D.SOUNDBOARD))
+    (0, d.v)(I, d.d.SOUNDBOARD), E === x.D.SOUNDBOARD ? (null == S || S(true), V()) : (null != E ? (Z(), F()) : Z(), null == S || S(x.D.SOUNDBOARD))
   }
   let q = i.useRef(null);
   return (0, r.jsx)(s.y, {
     targetElementRef: q,
-    shouldShow: F && (E === x.D.SOUNDBOARD || null == E) || E === x.D.SOUNDBOARD,
+    shouldShow: G && (E === x.D.SOUNDBOARD || null == E) || E === x.D.SOUNDBOARD,
     animation: s.y.Animation.FADE,
     animationPosition: "top",
     position: "top",
@@ -118,7 +118,7 @@ function j(e) {
       } = e;
       return D ? null : (0, r.jsx)(C.Z, {
         children: (0, r.jsx)("div", {
-          onMouseEnter: G,
+          onMouseEnter: F,
           onMouseLeave: V,
           children: (0, r.jsx)(b.Z, {
             guildId: A,
@@ -143,13 +143,13 @@ function j(e) {
       onContextMenu: z,
       onClick: W,
       onMouseEnter: () => {
-        G(), T()
+        F(), T()
       },
       onMouseLeave: () => {
         null == E && (V(), N())
       },
-      isActive: F || E === x.D.SOUNDBOARD,
-      color: F || E === x.D.SOUNDBOARD ? "primaryDark" : true
+      isActive: G || E === x.D.SOUNDBOARD,
+      color: G || E === x.D.SOUNDBOARD ? "primaryDark" : true
     })
   })
 }

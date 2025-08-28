@@ -144,7 +144,7 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
   s()(null != k, "chat input type must be set");
   let {
     analyticsLocations: eT
-  } = (0, C.ZP)(_.Z.CHANNEL_TEXT_AREA), eN = (0, G.qz)(t), eA = i.useRef(null), ew = i.useRef(null), eR = i.useRef(null), eM = i.useRef(null);
+  } = (0, C.ZP)(_.Z.CHANNEL_TEXT_AREA), eN = (0, F.qz)(t), eA = i.useRef(null), ew = i.useRef(null), eR = i.useRef(null), eM = i.useRef(null);
   null == e_ || e_(ew.current);
   let {
     activeCommand: eD
@@ -159,18 +159,18 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     isPendingMember: ek,
     disabled: eU,
     canAttachFiles: eB,
-    canEveryoneSendMessages: eF
-  } = (0, G.TE)(D, k, eD, P), eH = !A.dN.useSetting() && !(0, L.isAndroidWeb)() && null != window.ResizeObserver, eG = !eH || !(null == (n = k.commands) ? true : n.enabled) || !V || p !== q.GI, eV = (0, T.Z)(), {
+    canEveryoneSendMessages: eG
+  } = (0, F.TE)(D, k, eD, P), eH = !A.dN.useSetting() && !(0, L.isAndroidWeb)() && null != window.ResizeObserver, eF = !eH || !(null == (n = k.commands) ? true : n.enabled) || !V || p !== q.GI, eV = (0, T.Z)(), {
     fontSize: ez
   } = (0, d.cj)([y.Z], () => ({
     fontSize: y.Z.fontSize,
     isSubmitButtonEnabled: y.Z.isSubmitButtonEnabled
   })), eW = (0, d.e7)([R.Z], () => R.Z.isEnabled()), eq = (0, N.NE)(D);
-  (0, G.hJ)(k, eU);
+  (0, F.hJ)(k, eU);
   let {
     eventEmitter: eY,
     handleEditorSelectionChanged: eK
-  } = (0, G.x2)(ew, p, h), eX = i.useCallback(e => {
+  } = (0, F.x2)(ew, p, h), eX = i.useCallback(e => {
     let t = e => {
         if (e.shouldClear) {
           var t;
@@ -226,17 +226,17 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
   }, [ed, eS, eI, D.id, eZ, eP, eq]), {
     submit: eQ,
     handleSubmit: eJ
-  } = (0, G.bL)(eX, k, ew, eM, D.id), {
+  } = (0, F.bL)(eX, k, ew, eM, D.id), {
     autocompleteRef: e$,
     handleMaybeShowAutocomplete: e0,
     handleHideAutocomplete: e1
-  } = (0, G.jx)(), e2 = i.useCallback(() => {
+  } = (0, F.jx)(), e2 = i.useCallback(() => {
     var e;
     return null == eM || null == (e = eM.current) ? true : e.hide()
   }, []), {
     editorHeight: e8,
     handleResize: e3
-  } = (0, G.oR)(er), {
+  } = (0, F.oR)(er), {
     handleTab: e4,
     handleEnter: e7,
     handleMoveSelection: e6
@@ -256,12 +256,12 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
         return !!(!n && (null == (i = t.current) ? true : i.onMoveSelection(r))) || (null == (l = e.current) ? true : l.onMoveSelection(r)) || false
       }, [n])
     }
-  }(e$, eA, eG), {
+  }(e$, eA, eF), {
     expressionPickerView: e5,
     shouldHideExpressionPicker: e9,
     handleAutocompleteVisibilityChange: te,
     handleOuterClick: tt
-  } = (0, G.iV)(k, eY, ew), tn = (0, G.ae)(ew), tr = (0, G.Sg)(eQ, k, ew), ti = (0, G.O1)({
+  } = (0, F.iV)(k, eY, ew), tn = (0, F.ae)(ew), tr = (0, F.Sg)(eQ, k, ew), ti = (0, F.O1)({
     editorRef: ew,
     disabled: eU,
     textValue: p,
@@ -350,7 +350,7 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                 children: (0, r.jsx)(f.tEY, {
                   ringTarget: eN,
                   ringClassName: J.focusRing,
-                  children: (0, r.jsx)(F.Z, {
+                  children: (0, r.jsx)(G.Z, {
                     ref: ew,
                     id: E,
                     focused: V,
@@ -361,7 +361,7 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                     placeholder: eg,
                     required: I,
                     accessibilityLabel: Z,
-                    isPreviewing: (eL || ek) && eF,
+                    isPreviewing: (eL || ek) && eG,
                     channel: D,
                     type: B.Ie.CREATE_ANNOUNCEMENT_POST,
                     canPasteFiles: eB,

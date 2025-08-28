@@ -76,10 +76,10 @@ function P(e) {
       width: k,
       height: U,
       layout: B,
-      idle: F
+      idle: G
     } = e,
     H = null != A,
-    G = h.Z.getVideoComponent(),
+    F = h.Z.getVideoComponent(),
     V = p.default.getId(),
     [z, W] = i.useState(null),
     q = (0, c.Z)(z),
@@ -200,7 +200,7 @@ function P(e) {
                   noBorder: ed >= k || eu >= U,
                   channel: R,
                   className: x.focusedVideo,
-                  videoComponent: G,
+                  videoComponent: F,
                   width: k,
                   participant: t,
                   onClick: l,
@@ -215,7 +215,7 @@ function P(e) {
           })
         }), el ? (0, r.jsx)(o.animated.div, {
           className: a()(O.actionRow, {
-            [O.idle]: F
+            [O.idle]: G
           }),
           style: {
             bottom: e_.value

@@ -544,7 +544,7 @@ class ta extends Chunk647438.PureComponent {
         })), {
           location: e4.dy.CHAT_INPUT
         });
-        if (null != c && (O.announcementSendOptions = c), null != s && (O.flags = (0, eG.pj)(null != (y = O.flags) ? y : 0, e3.iLy.IS_COMPONENTS_V2)), o) return f.Z.sendMessage(d.id, x, true, O), (0, e_.A6)(d.id), {
+        if (null != c && (O.announcementSendOptions = c), null != s && (O.flags = (0, eF.pj)(null != (y = O.flags) ? y : 0, e3.iLy.IS_COMPONENTS_V2)), o) return f.Z.sendMessage(d.id, x, true, O), (0, e_.A6)(d.id), {
           shouldClear: false,
           shouldRefocus: true
         };
@@ -598,7 +598,7 @@ class ta extends Chunk647438.PureComponent {
       var t, n;
       let r = null == (t = this.editorRef) ? true : t.getSlateEditor();
       null != r && (z.Q.select(r, []), r.insertText(e), null == (n = this.editorRef) || n.focus())
-    }), e9(this, "renderAttachButton", (e, t) => (0, r.jsx)(G.Z, {
+    }), e9(this, "renderAttachButton", (e, t) => (0, r.jsx)(F.Z, {
       className: t,
       channel: this.props.channel,
       draftType: eN.d.ChannelMessage,
@@ -672,7 +672,7 @@ class to extends Chunk647438.PureComponent {
       } = this.state,
       B = Chunk442837 === Chunk541716.Ie.SIDEBAR;
     n = Chunk752305 && Chunk647438.type === Chunk981631.d4z.GUILD_VOICE ? Chunk388032.t.pnnyFR : Chunk752305 && Chunk647438.type === Chunk981631.d4z.GUILD_STAGE_VOICE ? Chunk388032.t.YInSkp : Chunk106351.T.THREADS.has(Chunk647438.type) ? Chunk388032.t["OkzL+f"] : Chunk388032.t.UbNmGR;
-    let F = (0, Chunk951288.jsx)("div", {
+    let G = (0, Chunk951288.jsx)("div", {
         className: Chunk97009.channelBottomBarArea,
         children: (0, Chunk951288.jsx)(Chunk685722.Z, {})
       }),
@@ -709,7 +709,7 @@ class to extends Chunk647438.PureComponent {
           })
         }), this.renderAppCommandButton()]
       }),
-      G = Chunk993766 && Chunk989573 || Chunk895924,
+      F = Chunk993766 && Chunk989573 || Chunk895924,
       V = Chunk974251 ? Chunk190210 : Chunk516887,
       z = a()({
         [Chunk180376.barWithAppLauncherButton]: Chunk450936,
@@ -972,9 +972,9 @@ let ts = Chunk647438.memo(function(e) {
     commands: U
   });
   let B = i.useRef(null),
-    F = (0, d.e7)([P.Z], () => P.Z.appDMChannelsWithFailedLoads().has(t.id)),
+    G = (0, d.e7)([P.Z], () => P.Z.appDMChannelsWithFailedLoads().has(t.id)),
     H = (0, d.e7)([eD.Z], () => eD.Z.getVoiceChannelId()),
-    G = (0, d.e7)([eT.Z], () => eT.Z.getChannel(H)),
+    F = (0, d.e7)([eT.Z], () => eT.Z.getChannel(H)),
     V = (0, d.e7)([ek.default], () => t.type !== e3.d4z.DM ? null : ek.default.getUser(t.getRecipientId())),
     z = (0, d.e7)([em.ZP, eP.default], () => em.ZP.getUserCombo(eP.default.getId(), t.id)),
     Y = (0, b.iD)(t),
@@ -1007,10 +1007,10 @@ let ts = Chunk647438.memo(function(e) {
     isInitialLoading: w,
     showEntryPointAppCommandButton: null != R,
     entryPointCommandButtonRef: B,
-    isFailedAppDMLoad: F,
+    isFailedAppDMLoad: G,
     pendingScheduledMessage: I,
     recipientUser: V,
-    voiceChannel: G,
+    voiceChannel: F,
     theme: Z,
     chatWallpaperState: N,
     wallpaperColorMix: A,

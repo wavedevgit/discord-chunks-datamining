@@ -51,7 +51,7 @@ let C = (0, Chunk112724.Z)(e => {
       speakerTileWidth: n,
       speakerTileHeight: r
     }
-  })(C, A), B = O ? C - 32 : Math.min(C - 64, 3 * k + 8), F = e => e === M.length - 1 || 0 === S && 1 === e, [H, G] = i.useState(false), [V, z] = i.useState(false);
+  })(C, A), B = O ? C - 32 : Math.min(C - 64, 3 * k + 8), G = e => e === M.length - 1 || 0 === S && 1 === e, [H, F] = i.useState(false), [V, z] = i.useState(false);
   return (0, r.jsx)(h.Z, {
     sections: L,
     renderSection: e => {
@@ -62,7 +62,7 @@ let C = (0, Chunk112724.Z)(e => {
         participantCount: E,
         label: b.intl.string(b.t.CduOk5),
         className: y.header,
-        onClick: () => G(!H),
+        onClick: () => F(!H),
         collapsed: H,
         speakers: Z,
         channel: a,
@@ -120,11 +120,11 @@ let C = (0, Chunk112724.Z)(e => {
       let {
         section: t
       } = e;
-      return F(t) ? (0, r.jsx)("div", {
+      return G(t) ? (0, r.jsx)("div", {
         className: y.spacer
       }, "bottom-spacer") : null
     },
-    footerHeight: e => 1 === e ? 8 : 0 === e ? 12 : 88 * !!F(e),
+    footerHeight: e => 1 === e ? 8 : 0 === e ? 12 : 88 * !!G(e),
     className: y.scroller,
     chunkSize: 60,
     onScroll: v

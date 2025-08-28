@@ -51,10 +51,10 @@ function w(e) {
     originApplicationId: u.Z.getOriginApplicationId(t.id)
   })), U = (0, o.vh)(t.id), B = (0, s.Y)({
     userId: t.id
-  }), F = (0, l.e7)([d.Z], () => d.Z.hidePersonalInformation), H = (0, l.e7)([h.Z], () => {
+  }), G = (0, l.e7)([d.Z], () => d.Z.hidePersonalInformation), H = (0, l.e7)([h.Z], () => {
     var e;
     return null == (e = h.Z.getUserProfile(t.id)) ? true : e.application
-  }), G = (0, f.b)({
+  }), F = (0, f.b)({
     location: "UserProfileSidebarBody"
   });
   return (0, r.jsxs)("div", {
@@ -71,7 +71,7 @@ function w(e) {
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(_.Z, {
           userId: t.id
-        }), !F && (0, r.jsx)(P.Z, {
+        }), !G && (0, r.jsx)(P.Z, {
           userId: t.id,
           isHovering: M,
           onOpenProfile: D
@@ -106,7 +106,7 @@ function w(e) {
           userId: t.id
         })
       })
-    }), G ? (0, r.jsx)(E.Z, {
+    }), F ? (0, r.jsx)(E.Z, {
       user: t,
       currentUser: n,
       onOpenUserProfileModal: D
@@ -116,7 +116,7 @@ function w(e) {
       className: A.card
     }), (0, r.jsxs)(S.Z.Overlay, {
       className: A.overlay,
-      children: [!F && (null == w ? true : w.bio) != null && (null == w ? true : w.bio) !== "" && (0, r.jsx)(j.Z, {
+      children: [!G && (null == w ? true : w.bio) != null && (null == w ? true : w.bio) !== "" && (0, r.jsx)(j.Z, {
         heading: N.intl.string(N.t["61W33d"]),
         headingColor: "header-primary",
         children: (0, r.jsx)(b.Z, {

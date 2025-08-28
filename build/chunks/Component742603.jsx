@@ -42,7 +42,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk39219 = require("./39219.js"),
   Chunk430864 = require("./430864.js");
 
-function F(e) {
+function G(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -74,7 +74,7 @@ function H(e, t) {
   }), e
 }
 
-function G(e) {
+function F(e) {
   let {
     focusedParticipant: t,
     channel: n
@@ -133,7 +133,7 @@ function z(e) {
       variant: "text-md/normal",
       color: "none",
       children: (0, d.Z)(n.name)
-    }), a && (0, r.jsx)(G, {
+    }), a && (0, r.jsx)(F, {
       channel: l,
       focusedParticipant: i
     })]
@@ -149,7 +149,7 @@ function z(e) {
         channel: l,
         stream: n,
         color: a ? "header-primary" : "none"
-      }), a && (0, r.jsx)(G, {
+      }), a && (0, r.jsx)(F, {
         channel: l,
         focusedParticipant: i
       })]
@@ -181,26 +181,26 @@ function W(e) {
   t.isDM() ? N = k.intl.string(k.t.jN2DfX) : t.isGroupDM() && (N = k.intl.string(k.t["e5y+go"]));
   let w = (0, o.e7)([h.Z], () => h.Z.getChannelStatus(t)),
     D = t.isGuildVoice() && u && null != w && w.length > 0,
-    G = (0, T.ZP)(t),
+    F = (0, T.ZP)(t),
     V = D ? (0, r.jsx)(s.ua7, {
       text: k.intl.string(k.t.Mgpxi4),
       delay: 500,
       position: "bottom",
-      shouldShow: G,
-      children: e => (0, r.jsxs)(s.P3F, H(F({}, e), {
+      shouldShow: F,
+      children: e => (0, r.jsxs)(s.P3F, H(G({}, e), {
         className: a()(U.channelStatusClickable, {
-          [U.hoverable]: G
+          [U.hoverable]: F
         }),
-        onClick: G ? W : true,
+        onClick: F ? W : true,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
           className: a()(U.channelStatus, B.markup, {
-            [U.hoverable]: G
+            [U.hoverable]: F
           }),
           children: O.Z.parseVoiceChannelStatus(w, true, {
             channelId: t.id
           })
-        }), G && (0, r.jsx)(s.vdY, {
+        }), F && (0, r.jsx)(s.vdY, {
           size: "custom",
           color: "currentColor",
           className: a()(U.pencilIcon, U.hoverable),
@@ -215,7 +215,7 @@ function W(e) {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 339340));
-      return n => (0, r.jsx)(e, F({
+      return n => (0, r.jsx)(e, G({
         channel: t
       }, n))
     }, {
@@ -252,7 +252,7 @@ function W(e) {
               "aria-label": N
             }) : null, _, q && (0, r.jsx)(s.ua7, {
               text: k.intl.string(k.t.QyZ4TU),
-              children: e => (0, r.jsx)(s.tQf, H(F({}, e), {
+              children: e => (0, r.jsx)(s.tQf, H(G({}, e), {
                 size: "xs",
                 "aria-label": k.intl.string(k.t.VHXh8f),
                 color: s.TVs.colors.INTERACTIVE_NORMAL,

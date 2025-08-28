@@ -63,7 +63,7 @@ function w(e) {
     layout: "SIDEBAR",
     userId: n.id,
     channelId: w.id
-  }), B = i.useRef(null), F = (0, o.Z)(B), H = e => {
+  }), B = i.useRef(null), G = (0, o.Z)(B), H = e => {
     (0, b.openUserProfileModal)(A({
       sourceAnalyticsLocations: k,
       hideRestrictedProfile: true
@@ -94,7 +94,7 @@ function w(e) {
               user: n,
               displayProfile: M,
               themeType: P.l.SIDEBAR,
-              animateOnHover: !F
+              animateOnHover: !G
             }), (0, r.jsx)(y.Z, {
               user: n,
               displayProfile: M,
@@ -122,7 +122,7 @@ function w(e) {
                   userBio: null == M ? true : M.bio,
                   userId: n.id,
                   animateOnHover: true,
-                  isHovering: F
+                  isHovering: G
                 })
               }), (0, r.jsx)(O.Z, {
                 heading: Z.intl.string(Z.t["A//N4u"]),
@@ -147,7 +147,7 @@ function w(e) {
           })
         }), (null == M ? true : M.profileEffect) != null && (0, r.jsx)(p.Z, {
           profileEffectId: null == M || null == (t = M.profileEffect) ? true : t.id,
-          isHovering: F
+          isHovering: G
         })]
       })
     })

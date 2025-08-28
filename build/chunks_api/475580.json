@@ -1,1 +1,0 @@
-{"id":"475580","type":"experiment","data":{"kind":"user","id":"2025-08_discount_expiring_notice","commonTriggerPoint":"Chunk987338.$P.CONNECTION_OPEN","label":"Discount Expiring Notice","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enabled","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

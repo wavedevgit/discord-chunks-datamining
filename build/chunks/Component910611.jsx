@@ -205,14 +205,14 @@ function k(e) {
     case N.d4z.GUILD_MEDIA:
       return null != t.linkedLobby ? (0, r.jsxs)(L, {
         channel: t,
-        children: [F(b, t.type === N.d4z.GUILD_ANNOUNCEMENT ? w.intl.string(w.t.l1dkSE) : w.intl.string(w.t.Pnajj4)), (0, r.jsx)(Z.Z.Title, {
+        children: [G(b, t.type === N.d4z.GUILD_ANNOUNCEMENT ? w.intl.string(w.t.l1dkSE) : w.intl.string(w.t.Pnajj4)), (0, r.jsx)(Z.Z.Title, {
           level: _,
           onContextMenu: d,
           onClick: u,
           children: v
         })]
       }) : (0, r.jsxs)(i.Fragment, {
-        children: [F(b, t.type === N.d4z.GUILD_ANNOUNCEMENT ? w.intl.string(w.t.l1dkSE) : w.intl.string(w.t.Pnajj4)), (0, r.jsx)(Z.Z.Title, {
+        children: [G(b, t.type === N.d4z.GUILD_ANNOUNCEMENT ? w.intl.string(w.t.l1dkSE) : w.intl.string(w.t.Pnajj4)), (0, r.jsx)(Z.Z.Title, {
           level: _,
           onContextMenu: d,
           onClick: u,
@@ -221,7 +221,7 @@ function k(e) {
       });
     case N.d4z.GUILD_VOICE:
       return (0, r.jsxs)(i.Fragment, {
-        children: [F(b, w.intl.string(w.t.BVZqJi)), (0, r.jsx)(Z.Z.Title, {
+        children: [G(b, w.intl.string(w.t.BVZqJi)), (0, r.jsx)(Z.Z.Title, {
           level: _,
           onContextMenu: d,
           onClick: u,
@@ -230,7 +230,7 @@ function k(e) {
       });
     case N.d4z.GUILD_STAGE_VOICE:
       return (0, r.jsxs)(i.Fragment, {
-        children: [F(b, w.intl.string(w.t.EErMzM)), (0, r.jsx)(Z.Z.Title, {
+        children: [G(b, w.intl.string(w.t.EErMzM)), (0, r.jsx)(Z.Z.Title, {
           level: _,
           onContextMenu: d,
           onClick: u,
@@ -244,7 +244,7 @@ function k(e) {
       if (!s && null != l) {
         let e = (0, h.KS)(l, o);
         O = (0, r.jsxs)(i.Fragment, {
-          children: [F(e, w.intl.string(w.t.Pnajj4)), (0, r.jsx)(Z.Z.Title, {
+          children: [G(e, w.intl.string(w.t.Pnajj4)), (0, r.jsx)(Z.Z.Title, {
             level: _,
             onContextMenu: m,
             onClick: f,
@@ -255,7 +255,7 @@ function k(e) {
       }
       let j = (null == l ? true : l.type) != null && N.TPd.GUILD_THREADS_ONLY.has(l.type);
       return (0, r.jsxs)(i.Fragment, {
-        children: [O, F(j ? null : b, w.intl.string(w.t["7Xm5QE"])), (0, r.jsx)(Z.Z.Title, {
+        children: [O, G(j ? null : b, w.intl.string(w.t["7Xm5QE"])), (0, r.jsx)(Z.Z.Title, {
           level: _,
           onContextMenu: d,
           onClick: u,
@@ -330,7 +330,7 @@ function B(e, t) {
   }
 }
 
-function F(e, t) {
+function G(e, t) {
   return (0, r.jsxs)(r.Fragment, {
     children: [null !== e && (0, r.jsx)(Z.Z.ChannelIcon, {
       icon: e,

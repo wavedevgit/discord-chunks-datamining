@@ -44,7 +44,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk151227 = require("./151227.js");
 
-function G(e) {
+function F(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -220,7 +220,7 @@ let W = (0, Chunk202841.animated)(Chunk481060.eTT),
       navigator: Q,
       children: [null != er && er, (0, r.jsxs)("div", {
         className: a()(H.messagesWrapper, l, "group-spacing-".concat(o)),
-        children: [null == er && ee, (0, r.jsxs)(W, V(G({
+        children: [null == er && ee, (0, r.jsxs)(W, V(F({
           ref: es,
           customTheme: true,
           className: a()(p, H.scroller, ec),
@@ -232,11 +232,11 @@ let W = (0, Chunk202841.animated)(Chunk481060.eTT),
         }, ei), {
           tabIndex: false,
           role: "group",
-          children: [en, (0, r.jsxs)("ol", V(G({
+          children: [en, (0, r.jsxs)("ol", V(F({
             className: a()(H.scrollerInner, {
               [H.scrollerAllowSticky]: m.isModeratorReportChannel()
             }),
-            "aria-label": F.intl.formatToPlainString(F.t.XarRiI, {
+            "aria-label": G.intl.formatToPlainString(G.t.XarRiI, {
               channelName: m.name
             })
           }, eo), {
@@ -244,7 +244,7 @@ let W = (0, Chunk202841.animated)(Chunk481060.eTT),
               className: H.navigationDescription,
               id: "messagesNavigationDescription",
               "aria-hidden": true,
-              children: F.intl.string(F.t.Spb3s7)
+              children: G.intl.string(G.t.Spb3s7)
             }), $, (0, r.jsx)("div", {
               className: a()({
                 [H.scrollerSpacer]: !T,
@@ -319,7 +319,7 @@ let W = (0, Chunk202841.animated)(Chunk481060.eTT),
         keyboardModeEnabled: i
       }
     }(), {
-      messages: F,
+      messages: G,
       channelStream: H,
       oldestUnreadMessageId: W,
       editingMessageId: Y
@@ -376,12 +376,12 @@ let W = (0, Chunk202841.animated)(Chunk481060.eTT),
     return (0, r.jsx)(b.aQ.Provider, {
       value: (0, w.Z)(k, h),
       children: (0, r.jsx)(D.v, {
-        children: (0, r.jsx)(q, V(G({}, d), {
+        children: (0, r.jsx)(q, V(F({}, d), {
           messageGroupSpacing: A,
           showNewMessagesBar: true,
           channel: t,
           messageDisplayCompact: !o && (a || L),
-          messages: F,
+          messages: G,
           channelStream: H,
           permissionVersion: C,
           uploads: (0, c.e7)([T.Z], () => T.Z.getFiles(t.id), [t]),

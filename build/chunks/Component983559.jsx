@@ -62,26 +62,26 @@ function D(e) {
     currentUser: f,
     channel: w
   } = e, D = __OVERLAY__, k = (0, g.ZP)(n.id), U = (0, c.ZP)(), B = i.useRef(Date.now()), {
-    analyticsLocations: F
+    analyticsLocations: G
   } = (0, d.ZP)(u.Z.USER_PROFILE_SIDEBAR), H = (0, h.ZB)({
     layout: "SIDEBAR",
     userId: n.id,
     channelId: w.id
-  }), G = i.useRef(null), V = (0, s.Z)(G), z = (0, b.$m)(), W = (0, o.q_F)({
+  }), F = i.useRef(null), V = (0, s.Z)(F), z = (0, b.$m)(), W = (0, o.q_F)({
     opacity: +(null != z.interactionType),
     config: {
       duration: 150
     }
   }), q = e => {
     (0, y.openUserProfileModal)(M({
-      sourceAnalyticsLocations: F,
+      sourceAnalyticsLocations: G,
       hideRestrictedProfile: true
     }, H, e))
   }, Y = (0, m.P)({
     location: "UserProfileSidebar"
   }), K = (null == k ? true : k.widgets) != null && k.widgets.length > 0;
   return (0, r.jsx)(d.Gt, {
-    value: F,
+    value: G,
     children: (0, r.jsx)(h.Mt, {
       value: H,
       openedAt: B.current,
@@ -91,7 +91,7 @@ function D(e) {
       children: (0, r.jsx)(b.NJ, {
         value: z,
         children: (0, r.jsxs)(x.Z, {
-          ref: G,
+          ref: F,
           user: n,
           displayProfile: k,
           themeType: A.l.SIDEBAR,
@@ -157,7 +157,7 @@ function D(e) {
             })]
           }), !D && (0, r.jsx)(L, {
             handleOpenProfile: q,
-            analyticsLocations: F,
+            analyticsLocations: G,
             context: H
           }), (null == k ? true : k.profileEffect) != null && (0, r.jsx)(p.Z, {
             profileEffectId: null == k || null == (t = k.profileEffect) ? true : t.id,

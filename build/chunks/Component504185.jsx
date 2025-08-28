@@ -94,7 +94,7 @@ function es(e) {
     selectedParticipant: c
   } = e, {
     parentAnalyticsLocation: u
-  } = (0, b.ZP)(), d = t.getGuildId(), h = (0, s.e7)([U.Z], () => U.Z.getMostRecentSelectedTextChannelId(d), [d]), f = M.default.getId(), m = !(0, s.e7)([y.Z], () => y.Z.isFullscreenInContext(n)) && (!B.isPlatformEmbedded || B.isPlatformEmbedded && F.ZP.supportsFeature(et.eRX.POPOUT_WINDOWS)), g = null != c && c.type !== en.fO.ACTIVITY && c.user.id !== f, C = i.useMemo(() => {
+  } = (0, b.ZP)(), d = t.getGuildId(), h = (0, s.e7)([U.Z], () => U.Z.getMostRecentSelectedTextChannelId(d), [d]), f = M.default.getId(), m = !(0, s.e7)([y.Z], () => y.Z.isFullscreenInContext(n)) && (!B.isPlatformEmbedded || B.isPlatformEmbedded && G.ZP.supportsFeature(et.eRX.POPOUT_WINDOWS)), g = null != c && c.type !== en.fO.ACTIVITY && c.user.id !== f, C = i.useMemo(() => {
     var e;
     return null != (e = null == a ? true : a.window) ? e : window
   }, [a]), v = (0, $.Z)({
@@ -103,7 +103,7 @@ function es(e) {
     popoutOpen: l,
     popoutWindow: a,
     currentWindow: C
-  }), x = n === et.IlC.POPOUT && B.isPlatformEmbedded && F.ZP.supportsFeature(et.eRX.POPOUT_WINDOWS);
+  }), x = n === et.IlC.POPOUT && B.isPlatformEmbedded && G.ZP.supportsFeature(et.eRX.POPOUT_WINDOWS);
   return (0, r.jsxs)(r.Fragment, {
     children: [g ? (0, r.jsx)(R.Z, {
       context: (0, _.Z)(c.type),
@@ -161,7 +161,7 @@ function eu(e) {
     O = (0, m.bp)(),
     j = (0, s.e7)([U.Z], () => U.Z.getVoiceChannelId() === c.id, [c.id]),
     E = (0, s.e7)([k.Z], () => k.Z.can(et.Plq.CONNECT, c)),
-    S = (0, G.w8)(c.id, V.pV.SPEAKER),
+    S = (0, F.w8)(c.id, V.pV.SPEAKER),
     I = (0, s.e7)([y.Z], () => y.Z.getSelectedParticipant(c.id)),
     P = f && O !== et.IlC.POPOUT,
     [Z, A] = i.useState(0),

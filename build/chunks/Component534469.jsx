@@ -192,7 +192,7 @@ function er(e) {
     handleFocus: k,
     handleBlur: B
   } = (0, R.bb)(S), {
-    popouts: F,
+    popouts: G,
     selected: V,
     setPopout: Q
   } = (0, D.Z)(o.id, q.d$), et = x.RS.useSetting(), en = x.NA.useSetting(), er = (0, u.e7)([C.Z], () => C.Z.getMessageByReference(j)), ei = (0, m.A)((null != (n = o.editedTimestamp) ? n : o.timestamp).valueOf()), {
@@ -203,7 +203,7 @@ function er(e) {
     groupId: _,
     message: o,
     defaultValue: V,
-    popouts: F
+    popouts: G
   }), es = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled), ec = V || es && N, eu = ec || eo, {
     content: ed,
     hasSpoilerEmbeds: ep
@@ -216,7 +216,7 @@ function er(e) {
     allowLinks: true,
     previewLinkTarget: true,
     viewingChannelId: O
-  }), eh = (0, M.Z)(s, h, es), ef = (0, T.ZP)(o), em = (0, w.iG)(o, _), eg = (0, w.Gx)(o), eb = (0, G.Z)(e, ed, false), ey = i.useCallback(() => (0, v.XU)(g, h, s), [g, h, s]), e_ = (0, f.p9)({
+  }), eh = (0, M.Z)(s, h, es), ef = (0, T.ZP)(o), em = (0, w.iG)(o, _), eg = (0, w.Gx)(o), eb = (0, F.Z)(e, ed, false), ey = i.useCallback(() => (0, v.XU)(g, h, s), [g, h, s]), e_ = (0, f.p9)({
     guildId: g,
     roleId: ef.iconRoleId
   });
@@ -245,8 +245,8 @@ function er(e) {
       onBlur: B,
       childrenRepliedMessage: o.type === Y.uaV.REPLY && (0, z.Z)($(J({}, e), {
         setPopout: Q,
-        referencedUsernameProfile: F.referencedUsernameProfile,
-        referencedAvatarProfile: F.referencedAvatarProfile,
+        referencedUsernameProfile: G.referencedUsernameProfile,
+        referencedAvatarProfile: G.referencedAvatarProfile,
         replyReference: j,
         replyMessage: er,
         isReplySpineClickable: true
@@ -254,7 +254,7 @@ function er(e) {
       childrenHeader: (0, H.Z)({
         messageProps: e,
         setPopout: Q,
-        messagePopouts: F,
+        messagePopouts: G,
         replyReference: j,
         author: ef,
         repliedMessage: er,
@@ -361,9 +361,9 @@ let ei = Chunk647438.memo(function(e) {
       previewLinkTarget: true
     }),
     eB = (0, M.Z)(P, et, eN),
-    eF = (0, T.ZP)(v),
+    eG = (0, T.ZP)(v),
     eH = (0, u.e7)([_.Z], () => _.Z.getPendingReply(et)),
-    eG = function(e) {
+    eF = function(e) {
       let t = i.useRef(e);
       return i.useEffect(() => {
         t.current = null != e ? e : t.current
@@ -371,7 +371,7 @@ let ei = Chunk647438.memo(function(e) {
     }(ei),
     eV = (0, f.p9)({
       guildId: Q.guild_id,
-      roleId: eF.iconRoleId
+      roleId: eG.iconRoleId
     }),
     ez = (0, w.iG)(v, el),
     eW = (0, w.Gx)(v),
@@ -383,7 +383,7 @@ let ei = Chunk647438.memo(function(e) {
     eK = i.useRef(window),
     eX = null != eq,
     eQ = i.useMemo(() => Object.values(em).some(e => e), [em]);
-  l = v.type === Y.uaV.CUSTOM_GIFT ? "" : !eT && eX ? (0, B.Z)(e, ek) : (0, G.Z)(e, ek, eT);
+  l = v.type === Y.uaV.CUSTOM_GIFT ? "" : !eT && eX ? (0, B.Z)(e, ek) : (0, F.Z)(e, ek, eT);
   let eJ = v.id === el,
     e$ = (0, r.jsx)(d.tEY, {
       offset: {
@@ -441,7 +441,7 @@ let ei = Chunk647438.memo(function(e) {
             setPopout: eb,
             messagePopouts: em,
             replyReference: eo,
-            author: eF,
+            author: eG,
             repliedMessage: ef,
             roleIcon: eV
           }),
@@ -453,7 +453,7 @@ let ei = Chunk647438.memo(function(e) {
             isAutomodBlockedMessage: eX,
             forceAddReactions: v.type === Y.uaV.EMOJI_ADDED
           }),
-          childrenButtons: ex || eE ? (0, F.Z)({
+          childrenButtons: ex || eE ? (0, G.Z)({
             buttonProps: e,
             setPopout: eb,
             messagePopouts: em,
@@ -471,12 +471,12 @@ let ei = Chunk647438.memo(function(e) {
             var t, n;
             eY.current = e, eK.current = null != (n = null == e || null == (t = e.ownerDocument) ? true : t.defaultView) ? n : window
           },
-          author: eF
+          author: eG
         }))]
       })
     });
-  return null != eG ? (0, r.jsx)(N.Z, {
-    flashKey: eG,
+  return null != eF ? (0, r.jsx)(N.Z, {
+    flashKey: eF,
     className: a()({
       [X.backgroundFlash]: true,
       [X.groupStart]: !en && v.id === el

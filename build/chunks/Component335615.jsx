@@ -136,7 +136,7 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       (0, f.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387)), t = F.Z.isInChannel(k.Z.getVoiceChannelId(), u.id);
+        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387)), t = G.Z.isInChannel(k.Z.getVoiceChannelId(), u.id);
         return n => (0, r.jsx)(e, Q(X({}, n), {
           user: u,
           guildId: C,
@@ -547,7 +547,7 @@ class el extends Chunk647438.Component {
         } = this.getDimensions();
       if (true === n || 0 === n || null == t) return;
       this.hasContentFeed() && (t = t.filter(e => e.section !== S.T));
-      let r = t.map(e => this.getRowProps(e)).slice(0, n + 1).filter(G.lm);
+      let r = t.map(e => this.getRowProps(e)).slice(0, n + 1).filter(F.lm);
       if (0 === r.length) return;
       let i = r.reduce((e, t) => {
         var n;

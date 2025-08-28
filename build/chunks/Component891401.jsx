@@ -84,8 +84,8 @@ function E() {
     }, [null == Chunk120356 ? true : Chunk120356.wallpaperId]),
     O = Chunk647438.useCallback(() => T(null == Chunk120356 ? true : Chunk120356.wallpaperId, true), [null == Chunk120356 ? true : Chunk120356.wallpaperId]),
     w = Chunk647438.useCallback(() => P(null == Chunk120356 ? true : Chunk120356.wallpaperId, true), [null == Chunk120356 ? true : Chunk120356.wallpaperId]),
-    k = Chunk647438.useCallback(() => S(null == Chunk120356 ? true : Chunk120356.wallpaperId, true), [null == Chunk120356 ? true : Chunk120356.wallpaperId]),
-    I = Chunk647438.useCallback(e => {
+    I = Chunk647438.useCallback(() => S(null == Chunk120356 ? true : Chunk120356.wallpaperId, true), [null == Chunk120356 ? true : Chunk120356.wallpaperId]),
+    k = Chunk647438.useCallback(e => {
       null != s && (0, h.i)(s, {
         token_mix_amount: Math.round(e)
       })
@@ -188,7 +188,7 @@ function E() {
         defaultValue: 100,
         minValue: 0,
         maxValue: 100,
-        onValueChange: I
+        onValueChange: k
       }, "tokenMixAmount-".concat(A)), (0, Chunk951288.jsx)(Chunk481060.ua7, {
         text: "The color used for hyperlinks.",
         children: e => (0, a.jsx)(o.X6, C(y({
@@ -210,7 +210,7 @@ function E() {
             size: "xs",
             color: "currentColor"
           }),
-          onClick: k,
+          onClick: I,
           className: Chunk715639.removeButton
         })]
       }), (0, Chunk951288.jsx)(Chunk755721.zx, {

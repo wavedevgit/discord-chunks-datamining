@@ -57,7 +57,7 @@ function S(e) {
         emoji: w
       })
     }, [N, w, U]),
-    F = i.useCallback(() => {
+    G = i.useCallback(() => {
       let e = null,
         t = null;
       do {
@@ -103,7 +103,7 @@ function S(e) {
           },
           trailing: {
             icon: d.$2U,
-            onClick: F,
+            onClick: G,
             "aria-label": O.intl.string(O.t["5UAi5+"])
           }
         })

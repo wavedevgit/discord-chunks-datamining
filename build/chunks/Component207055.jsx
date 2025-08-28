@@ -46,7 +46,7 @@ let L = Chunk647438.memo(e => {
     channel: I,
     sessionId: P,
     nick: D
-  } = e, L = x.id, k = (0, o.e7)([j.default], () => j.default.getId() === L, [L]), [U, B, F] = (0, o.Wu)([S.Z], () => k ? [!S.Z.isSupported() || S.Z.isSelfMute() || S.Z.isSelfMutedTemporarily(), S.Z.isSelfDeaf(), false] : [!S.Z.isSupported() || S.Z.isLocalMute(L), false, S.Z.isLocalVideoDisabled(L)], [k, L]), H = (0, o.e7)([T.Z], () => T.Z.isPrioritySpeaker(L)), G = (0, c.Z)({
+  } = e, L = x.id, k = (0, o.e7)([j.default], () => j.default.getId() === L, [L]), [U, B, G] = (0, o.Wu)([S.Z], () => k ? [!S.Z.isSupported() || S.Z.isSelfMute() || S.Z.isSelfMutedTemporarily(), S.Z.isSelfDeaf(), false] : [!S.Z.isSupported() || S.Z.isLocalMute(L), false, S.Z.isLocalVideoDisabled(L)], [k, L]), H = (0, o.e7)([T.Z], () => T.Z.isPrioritySpeaker(L)), F = (0, c.Z)({
     userId: L,
     checkSoundSharing: true
   }), V = (0, o.e7)([E.ZP], () => E.ZP.isGuestOrLurker(I.guild_id, L)), z = (0, o.e7)([h.Z], () => h.Z.getGuildRingingUsers(I.id).has(L)), W = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(I.id).find(e => {
@@ -70,7 +70,7 @@ let L = Chunk647438.memo(e => {
   });
   return (0, r.jsx)(y.Z, {
     shakeLocation: M.oZ.VOICE_USER,
-    isShaking: G,
+    isShaking: F,
     children: (0, r.jsx)(w.ZP, (i = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -95,10 +95,10 @@ let L = Chunk647438.memo(e => {
       otherClientSessionType: null == J || null == (t = J.clientInfo) ? true : t.os,
       voicePlatform: ee,
       localMute: U && !k,
-      localVideoDisabled: F,
+      localVideoDisabled: G,
       mute: a || U,
       deaf: s || B,
-      speaking: G,
+      speaking: F,
       ringing: z,
       priority: H,
       embeddedApplication: q[0],
@@ -159,7 +159,7 @@ let k = [],
       }), Array.from(e)
     });
     (0, p.Z)(B);
-    let F = (() => {
+    let G = (() => {
       if (null == T || 0 === T.length) return null;
       let e = u && T.length > d + 1 ? T.slice(0, d) : T,
         t = h.Z.getGuildRingingUsers(l.id),
@@ -198,12 +198,12 @@ let k = [],
         numUsers: T.length - d
       })), i
     })();
-    return null == F && null == _ ? null : (0, r.jsxs)(x.eJ, {
+    return null == G && null == _ ? null : (0, r.jsxs)(x.eJ, {
       className: a()(y, D.list, {
         [D.collapsed]: u,
         [D.withGuildIcon]: b
       }),
       collapsed: u,
-      children: [F, _]
+      children: [G, _]
     })
   }

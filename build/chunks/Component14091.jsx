@@ -42,7 +42,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk669922 = require("./669922.js");
 
-function F(e, t, n) {
+function G(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -62,7 +62,7 @@ class H extends Chunk647438.Component {
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, F(this, "autoAnalytics", function() {
+    super(...e), t = this, G(this, "autoAnalytics", function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : null;
       if (null == t.props.searchRequestAnalyticsId || t.props.isSearching) return;
       let n = 0,
@@ -100,7 +100,7 @@ class H extends Chunk647438.Component {
   }
 }
 
-function G(e) {
+function F(e) {
   let {
     children: t
   } = e;
@@ -148,7 +148,7 @@ function z(e) {
     isIndexing: C,
     hasError: v
   } = l;
-  if (v) return (0, r.jsxs)(G, {
+  if (v) return (0, r.jsxs)(F, {
     children: [(0, r.jsx)("div", {
       className: B.errorImage
     }), (0, r.jsx)("div", {
@@ -158,7 +158,7 @@ function z(e) {
   });
   if (C) {
     let e = o.type === L.aib.GUILD ? U.intl.string(U.t.AXPbZm) : U.intl.string(U.t.Q0JJjo);
-    return (0, r.jsxs)(G, {
+    return (0, r.jsxs)(F, {
       children: [(0, r.jsx)(I.Z, {}), (0, r.jsx)("div", {
         className: (B.emptyResultsText, B.stillIndexing),
         children: e
@@ -185,7 +185,7 @@ function z(e) {
   let {
     showNoResultsAlt: x
   } = l, O = x ? U.intl.string(U.t["VrK/2d"]) : U.intl.string(U.t.V6nAfH);
-  return (0, r.jsxs)(G, {
+  return (0, r.jsxs)(F, {
     children: [(0, r.jsx)("div", {
       className: a()(B.noResultsImage, {
         [B.alt]: x
@@ -248,7 +248,7 @@ let W = [],
         totalResults: n.totalResults,
         isSearching: n.isSearching
       }),
-      G = i.useCallback((e, t) => {
+      F = i.useCallback((e, t) => {
         let n = k + 1;
         if (!H || e.targetPage !== n) return t;
         {
@@ -273,7 +273,7 @@ let W = [],
                   "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                     return Object.getOwnPropertyDescriptor(n, e).enumerable
                   }))), r.forEach(function(t) {
-                    F(e, t, n[t])
+                    G(e, t, n[t])
                   })
                 }
                 return e
@@ -394,7 +394,7 @@ let W = [],
           onScrollTo: A,
           onPageChange: K,
           paginationTotalCount: H ? w : true,
-          renderPageWrapper: G,
+          renderPageWrapper: F,
           onBlockedResultsClick: O,
           searchRequestAnalyticsId: a,
           searchResultsQuery: j,

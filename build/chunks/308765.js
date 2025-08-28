@@ -200,7 +200,7 @@ let i = {
     neverLoadBeforeConnectionOpen: true
   },
   OverlayWindowRAFManager: {
-    actions: ["OVERLAY_UPDATE_OVERLAY_STATE"],
+    actions: ["OVERLAY_UPDATE_OVERLAY_METHOD", "WINDOW_FOCUS", "WINDOW_VISIBILITY_CHANGE", "OVERLAY_RENDER_DEBUG_MODE"],
     inlineRequire: () => require("./556809.js").Z,
     neverLoadBeforeConnectionOpen: true
   },

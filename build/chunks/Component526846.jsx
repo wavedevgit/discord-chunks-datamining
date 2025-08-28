@@ -146,7 +146,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
     return () => clearTimeout(e)
   }, []);
   let {
-    enabled: F
+    enabled: G
   } = I.c.useExperiment({
     location: "ActivitiesMiniShelf"
   }, {
@@ -162,12 +162,12 @@ let k = Chunk647438.forwardRef(function(e, t) {
       openInPopout: U,
       analyticsLocation: k
     }), u(), b()
-  }, [l, k, b, u, U]), G = i.useCallback(e => {
+  }, [l, k, b, u, U]), F = i.useCallback(e => {
     c(), S.default.track(A.rMx.ACTIVITIES_MINI_SHELF_HOVERED, {
       channel_id: l.id,
       guild_id: l.getGuildId()
     })
-  }, [c, l]), V = F ? p.iWm : p.nG3;
+  }, [c, l]), V = G ? p.iWm : p.nG3;
   return (0, r.jsx)(g.Gt, {
     value: M,
     children: (0, r.jsx)(j.Z, {
@@ -185,7 +185,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
           })
         }), (0, r.jsxs)("div", {
           className: R.container,
-          onMouseEnter: G,
+          onMouseEnter: F,
           onMouseLeave: u,
           children: [(0, r.jsxs)("div", {
             className: R.titleContainer,

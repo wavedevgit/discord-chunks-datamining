@@ -172,7 +172,7 @@ function en(e) {
           item: e,
           channel: f,
           isBeforeGroup: null == e.content && ee(el[t + 1])
-        }) : (0, r.jsx)(G.Z, {
+        }) : (0, r.jsx)(F.Z, {
           isUnread: l,
           isBeforeGroup: null == e.content && ee(el[t + 1]),
           id: l ? K.j1 : true,
@@ -199,7 +199,7 @@ function en(e) {
       e.type === X.ys_.MESSAGE && null == eI && (eI = e);
       let l = e.groupId === (null == eI ? true : eI.groupId) ? eI.content.id : e.groupId,
         a = eS && e.content.isFirstMessageInForumPost(f),
-        o = e.type === X.ys_.THREAD_STARTER_MESSAGE ? F.Ru : F.ZP;
+        o = e.type === X.ys_.THREAD_STARTER_MESSAGE ? G.Ru : G.ZP;
       return (0, r.jsx)(o, {
         compact: ei && !a,
         channel: f,

@@ -109,16 +109,16 @@ function k(e) {
     audienceCount: m,
     channel: n,
     speakerCount: f
-  }, F = i.useRef(B);
+  }, G = i.useRef(B);
   i.useEffect(() => {
-    F.current = B
+    G.current = B
   }), i.useEffect(() => {
     let {
       canModerate: e,
       audienceCount: t,
       channel: n,
       speakerCount: r
-    } = F.current;
+    } = G.current;
     P && E.default.track(w.rMx.BOOSTING_UPSELL_VIEWED, {
       guild_id: n.guild_id,
       type: R.cd.VIDEO_STAGE_LIMIT,

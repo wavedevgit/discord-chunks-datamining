@@ -131,13 +131,14 @@ function q(e) {
 }
 
 function X(e) {
-  return null != j[e]
+  return e in j
 }
 
 function Q(e, t, n) {
   let r = W(e);
   if (null == r) return void R.error("Tried to set property ".concat(t, " to ").concat(n, " for untracked pid ").concat(e));
-  r[t] = n, z(e, r)
+  let i = T({}, r);
+  i[t] = n, z(e, i)
 }
 
 function J() {
@@ -591,7 +592,7 @@ class ex extends(r = Chunk442837.ZP.Store) {
     return P
   }
   isAnyOverlayRendering() {
-    return Object.values(j).some(e => e.state === g.mM.OVERLAY_RENDERING)
+    return this.getOverlayRenderingTrackedGames().length > 0
   }
   getOverlayMethod(e) {
     var t, n;

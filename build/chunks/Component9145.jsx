@@ -43,7 +43,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk33985 = require("./33985.js");
 let H = Chunk884338.u8.SIZE_32,
-  G = {
+  F = {
     [Chunk918559.MI.NO_CHAT]: Chunk33985.noChat,
     [Chunk918559.MI.RESIZABLE]: Chunk33985.resizable
   };
@@ -162,29 +162,29 @@ function V(e) {
       children: (0, r.jsx)("img", {
         src: e.getAvatarURL(null == X ? true : X.guild_id, H),
         alt: i,
-        className: F.avatar
+        className: G.avatar
       }, e.id)
     }, e.id)
   };
   return (0, r.jsx)(u.f6W, {
     theme: U.BRd.DARK,
     children: e => (0, r.jsxs)("div", {
-      className: a()(F.wrapper, G[et], e),
+      className: a()(G.wrapper, F[et], e),
       ref: ee,
       style: eb,
       children: [null == W ? true : W(), (0, r.jsxs)("div", {
-        className: F.activityPanelContainer,
+        className: G.activityPanelContainer,
         children: [en ? null : (0, r.jsx)("div", {
-          className: F.header,
+          className: G.header,
           children: (0, r.jsx)(s.x, {
             color: "header-primary",
             variant: "text-md/semibold",
-            className: F.headerTitle,
+            className: G.headerTitle,
             children: null == q ? true : q.name
           })
         }), (0, r.jsx)("div", {
-          className: a()(F.activityContainer, {
-            [F.activityContainerNoMargin]: ep
+          className: a()(G.activityContainer, {
+            [G.activityContainerNoMargin]: ep
           }),
           style: {
             paddingLeft: eu,
@@ -194,11 +194,11 @@ function V(e) {
           },
           ref: ea,
           children: (0, r.jsx)(A.Z, {
-            className: F.iframe,
+            className: G.iframe,
             embedId: (0, M.Z)(z.id, q.id)
           })
         }), null != ef ? (0, r.jsxs)("div", {
-          className: F.footer,
+          className: G.footer,
           children: [(0, r.jsx)(w.ZP, {
             renderIcon: false,
             users: e_,
@@ -206,9 +206,9 @@ function V(e) {
             max: 6,
             renderUser: eC
           }), (0, r.jsxs)("div", {
-            className: F.footerButtons,
+            className: G.footerButtons,
             children: [(0, r.jsxs)("div", {
-              className: F.buttonSection,
+              className: G.buttonSection,
               children: [(0, r.jsx)(L.Z, {
                 channelId: ef
               }), (0, r.jsx)(b.d, {
@@ -219,7 +219,7 @@ function V(e) {
                 themeable: true
               })]
             }), (0, r.jsx)("div", {
-              className: F.leaveButtonContainer,
+              className: G.leaveButtonContainer,
               children: (0, r.jsx)(y.Z, {
                 applicationId: q.id,
                 location: z,

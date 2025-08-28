@@ -803,7 +803,7 @@ let ts = (0, Chunk112724.Z)(to),
     var t;
     let {
       providedChannel: n
-    } = e, [l, a] = i.useState(null), o = (0, p.e7)([eW.Z], () => eW.Z.getChannelId()), s = (0, p.e7)([eW.Z], () => eW.Z.getVoiceChannelId()), c = (0, p.e7)([eU.Z], () => null != n ? n : eU.Z.getChannel(o), [o, n]), m = (0, p.e7)([eU.Z], () => eU.Z.getChannel(s), [s]), g = null == c ? true : c.parent_id, y = (0, p.e7)([eU.Z], () => eU.Z.getChannel(g), [g]), _ = (0, p.e7)([eG.Z], () => eG.Z.getGuild(null == c ? true : c.guild_id), [c]), {
+    } = e, [l, a] = i.useState(null), o = (0, p.e7)([eW.Z], () => eW.Z.getChannelId()), s = (0, p.e7)([eW.Z], () => eW.Z.getVoiceChannelId()), c = (0, p.e7)([eU.Z], () => null != n ? n : eU.Z.getChannel(o), [o, n]), m = (0, p.e7)([eU.Z], () => eU.Z.getChannel(s), [s]), g = null == c ? true : c.parent_id, y = (0, p.e7)([eU.Z], () => eU.Z.getChannel(g), [g]), _ = (0, p.e7)([eF.Z], () => eF.Z.getGuild(null == c ? true : c.guild_id), [c]), {
       needSubscriptionToAccess: C
     } = (0, Q.Z)(null != (t = null == c ? true : c.id) ? t : true), v = (0, p.e7)([R.Z], () => {
       let e = null != o ? R.Z.getParticipants(o) : [],
@@ -827,7 +827,7 @@ let ts = (0, Chunk112724.Z)(to),
       B = (null == c ? true : c.isGuildVocal()) || U || k,
       H = (0, p.e7)([V.Z], () => V.Z.getFrameLayoutMode() === e5.U.FOCUSED),
       {
-        welcomeModalChannelId: G
+        welcomeModalChannelId: F
       } = (0, d.TH)(),
       W = (0, p.e7)([em.Z], () => null != c && em.Z.isLurking(c.guild_id), [c]),
       q = (0, p.e7)([eD.Z], () => eD.Z.hasSeen(null == c ? true : c.guild_id, W), [c, W]),
@@ -835,7 +835,7 @@ let ts = (0, Chunk112724.Z)(to),
       K = (0, p.e7)([R.Z], () => null != c ? R.Z.getSelectedParticipant(c.id) : null),
       X = (0, p.e7)([eY.default], () => eY.default.getCurrentUser()),
       J = (0, eh.Z)(null == _ ? true : _.id),
-      $ = (0, eL.Z)(G, null == _ ? true : _.id),
+      $ = (0, eL.Z)(F, null == _ ? true : _.id),
       {
         section: ee,
         channelSidebarState: et
@@ -884,7 +884,7 @@ let ts = (0, Chunk112724.Z)(to),
     i.useEffect(() => {
       let e = e_ && !eb,
         t = e_ && eb && (null == c ? true : c.id) !== eC;
-      (e || t) && (0, F.Q3)(h.z.ACTIVITY_GDM_CALL_TOOLTIP, {
+      (e || t) && (0, G.Q3)(h.z.ACTIVITY_GDM_CALL_TOOLTIP, {
         dismissAction: e6.L.AUTO
       })
     }, [null == c ? true : c.id, eC, eb, e_]);
@@ -910,7 +910,7 @@ let ts = (0, Chunk112724.Z)(to),
       showFramePanel: H,
       nsfwAgree: (0, p.e7)([eH.Z], () => eH.Z.didAgree(null == c ? true : c.guild_id)),
       isMobile: (0, p.e7)([eV.Z], () => (null == c ? true : c.type) === e3.d4z.DM && eV.Z.isMobileOnline(c.getRecipientId()), [c]),
-      isUnavailable: (0, p.e7)([eF.Z], () => (null == c ? true : c.guild_id) != null && eF.Z.isUnavailable(c.guild_id), [c]),
+      isUnavailable: (0, p.e7)([eG.Z], () => (null == c ? true : c.guild_id) != null && eG.Z.isUnavailable(c.guild_id), [c]),
       showRealNameModal: J,
       showWelcomeModal: !q && $,
       showFollowButton: (null == c ? true : c.type) === e3.d4z.GUILD_ANNOUNCEMENT && (null == _ ? true : _.features.has(e3.oNc.NEWS)) || false
