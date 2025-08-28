@@ -2,7 +2,7 @@
 /** chunk id: 73249, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => k
-}), require("./388685.js");
+}), require("./388685.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
@@ -28,8 +28,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk152514 = require("./152514.js");
 
-function P() {
-  return (P = Object.assign || function(e) {
+function D() {
+  return (D = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -38,7 +38,7 @@ function P() {
   }).apply(this, arguments)
 }
 
-function D(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -60,7 +60,7 @@ function D(e) {
 function x() {
   (0, Chunk481060.Mr3)(Chunk312097.Q)
 }
-let L = Chunk647438.forwardRef(function(e, t) {
+let w = Chunk647438.forwardRef(function(e, t) {
   var {
     tooltipText: n
   } = e, i = function(e, t) {
@@ -82,11 +82,11 @@ let L = Chunk647438.forwardRef(function(e, t) {
     text: n,
     position: "bottom",
     children: e => {
-      var l, o, a = P({}, function(e) {
+      var l, o, a = D({}, function(e) {
         if (null == e) throw TypeError("Cannot destructure " + e);
         return e
       }(e));
-      return (0, r.jsx)(s.hU, D((l = D({}, a), o = o = {
+      return (0, r.jsx)(s.hU, P((l = P({}, a), o = o = {
         buttonRef: t,
         variant: "icon-only",
         "aria-label": n,
@@ -105,12 +105,12 @@ let L = Chunk647438.forwardRef(function(e, t) {
   })
 });
 
-function w() {
+function L() {
   let {
     zoomed: e,
     setZoomed: t
   } = (0, Chunk212459.Y)();
-  return (0, Chunk951288.jsx)(L, {
+  return (0, Chunk951288.jsx)(w, {
     onClick: () => {
       (0, Chunk254109.yg)(module ? Chunk254109.uG.ZOOM_OUT_BUTTON_PRESSED : Chunk254109.uG.ZOOM_IN_BUTTON_PRESSED), exports(!module)
     },
@@ -143,7 +143,7 @@ function R(e) {
       })
     }
   }, [o, a]);
-  return null != o && null != a && (0, d.h)(o) ? (0, r.jsx)(L, {
+  return null != o && null != a && (0, d.h)(o) ? (0, r.jsx)(w, {
     onClick: c,
     tooltipText: j.intl.string(j.t.I3ltXF),
     icon: s.WZu
@@ -154,7 +154,7 @@ function M(e) {
   let {
     item: t
   } = e, [n, l] = i.useState(false), o = "VIDEO" === t.type, a = "IMAGE" === t.type, c = null != t.children, u = (0, f.gS)((0, f.lT)(t.original, t.url), t.contentType, t.originalContentType);
-  if (!(o || h.isPlatformEmbedded && !c && a && u)) return null;
+  if (!(o || E.isPlatformEmbedded && !c && a && u)) return null;
   let d = (0, f.s$)((0, f.lT)(t.original, t.url), t.contentType, t.originalContentType, f.wV);
   async function p() {
     if ((0, S.yg)(S.uG.SAVE_MEDIA_PRESSED), "VIDEO" === t.type && (0, g.q)({
@@ -162,7 +162,9 @@ function M(e) {
       }), "IMAGE" === t.type) {
       l(true);
       try {
-        await E.ZP.saveImage(d, t.contentType, f.wV), (0, S.rm)(d, true), (0, s.showToast)((0, s.createToast)(j.intl.string(j.t.cqpdJS), s.ToastType.SUCCESS))
+        let e = await h.ZP.saveImage(d, t.contentType, f.wV);
+        if (e === h.mQ.ERRORED) throw Error("DesktopNativeUtils.saveImage errored for ".concat(d));
+        e === h.mQ.SAVED && ((0, S.rm)(d, true), (0, s.showToast)((0, s.createToast)(j.intl.string(j.t.cqpdJS), s.ToastType.SUCCESS)))
       } catch (e) {
         (0, S.rm)(d, false), (0, s.showToast)((0, s.createToast)(j.intl.string(j.t["8Ve/S0"]), s.ToastType.FAILURE))
       } finally {
@@ -170,7 +172,7 @@ function M(e) {
       }
     }
   }
-  return (0, r.jsx)(L, {
+  return (0, r.jsx)(w, {
     onClick: p,
     tooltipText: j.intl.string("VIDEO" === t.type ? j.t.JVuuz8 : j.t["S/xNKS"]),
     loading: n,
@@ -184,7 +186,7 @@ function I(e) {
   } = e;
   if (!(0, f.Jj)(t.url)) return null;
   let n = (0, f.s$)((0, f.lT)(t.original, t.url), t.contentType, t.originalContentType);
-  return (0, r.jsx)(L, {
+  return (0, r.jsx)(w, {
     onClick: () => {
       (0, S.yg)(S.uG.OPEN_LINK_PRESSED), (0, S.jc)(n), (0, g.q)({
         href: n
@@ -236,7 +238,7 @@ function N(e) {
     let e = (0, f.s$)((0, f.lT)(i.original, i.url), i.contentType, i.originalContentType, f.wV);
     try {
       var t;
-      await E.ZP.copyImage(e, null != (t = i.originalContentType) ? t : i.contentType), (0, S.gR)(e, true), (0, s.showToast)((0, s.createToast)(j.intl.string(j.t.bhUpvL), s.ToastType.SUCCESS))
+      await h.ZP.copyImage(e, null != (t = i.originalContentType) ? t : i.contentType), (0, S.gR)(e, true), (0, s.showToast)((0, s.createToast)(j.intl.string(j.t.bhUpvL), s.ToastType.SUCCESS))
     } catch (t) {
       (0, S.gR)(e, false), (0, s.showToast)((0, s.createToast)(j.intl.string(j.t.PTPbj4), s.ToastType.FAILURE))
     }
@@ -278,7 +280,7 @@ function A(e, t, n) {
       id: "media-viewer-detail-copied"
     }))
   }, []);
-  return i => null != i ? (0, r.jsx)(s.sNh, D({
+  return i => null != i ? (0, r.jsx)(s.sNh, P({
     action: () => l(i),
     label: e,
     subtext: i,
@@ -309,7 +311,7 @@ function Z(e) {
       let {
         onClick: t
       } = e;
-      return (0, r.jsx)(L, {
+      return (0, r.jsx)(w, {
         ref: o,
         tooltipText: j.intl.string(j.t.UKOtz8),
         onClick: () => {
@@ -335,7 +337,7 @@ let k = Chunk647438.memo(function(e) {
       className: o()(C.actionButtons, e),
       onClick: e => e.stopPropagation(),
       onMouseLeave: u,
-      children: ["IMAGE" === t.type && (0, r.jsx)(w, {}), !n && (0, r.jsxs)(r.Fragment, {
+      children: ["IMAGE" === t.type && (0, r.jsx)(L, {}), !n && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(R, {
           item: t
         }), (0, r.jsx)(M, {

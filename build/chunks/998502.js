@@ -2,10 +2,11 @@
 /** chunk id: 998502, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => q,
-  jK: () => V,
-  tS: () => H,
-  xG: () => W
+  ZP: () => X,
+  jK: () => H,
+  mQ: () => B,
+  tS: () => Y,
+  xG: () => K
 }), require("./388685.js"), require("./35282.js"), require("./704826.js"), require("./415506.js"), require("./49124.js"), require("./539854.js");
 var r, i, a, o, Chunk512722 = require("./512722.js"),
   l = require.n(Chunk512722),
@@ -76,8 +77,11 @@ let D = new Set(["discord_erlpack", "discord_game_utils", "discord_rpc", "discor
   k = /(\.[a-zA-Z0-9]+)%3A.+$/,
   U = /[^a-zA-Z0-9]/g,
   G = /\.[^.]*$/;
+var B = function(e) {
+  return e.SAVED = "saved", e.CANCELED = "canceled", e.ERRORED = "errored", e
+}({});
 
-function B(e) {
+function Z(e) {
   try {
     let t = decodeURIComponent(e);
     return (t = (t = t.replace(M, "$1")).replace(/(.+)@([a-zA-Z0-9]+)$/, "$1.$2")).replace(j, "_")
@@ -85,7 +89,7 @@ function B(e) {
     return e.replace(k, "$1").replace(/(.+)%40([a-zA-Z0-9]+)$/, "$1.$2").replace(j, "_")
   }
 }
-async function Z(e) {
+async function F(e) {
   let t = {
       method: "GET",
       mode: "cors"
@@ -96,17 +100,17 @@ async function Z(e) {
   return l()(null != r, "Data is null"), r
 }
 
-function F(e) {
-  return Z(e)
+function V(e) {
+  return F(e)
 }
-var V = function(e) {
+var H = function(e) {
     return e[e.Camera = 0] = "Camera", e[e.Microphone = 1] = "Microphone", e[e.Photo = 2] = "Photo", e[e.InputMonitoring = 3] = "InputMonitoring", e[e.ScreenRecording = 4] = "ScreenRecording", e
   }({}),
-  H = function(e) {
+  Y = function(e) {
     return e.VIDEO = "VIDEO", e.MUTE = "MUTE", e.DEAFEN = "DEAFEN", e.DISCONNECT = "DISCONNECT", e
   }({});
 
-function Y(e) {
+function W(e) {
   var t, n, r, i, a, o, s, l, c;
   return {
     id: w[null != (t = e.id) ? t : ""],
@@ -132,7 +136,7 @@ function Y(e) {
   }
 }
 
-function W(e, t) {
+function K(e, t) {
   var n, r, i, a;
   if (null != t && A(t)) {
     let e = null == (a = t.split("/")[1]) ? true : a.toLowerCase();
@@ -145,12 +149,12 @@ function W(e, t) {
   return null != s && s.length <= C ? s : true
 }
 
-function K(e) {
+function z(e) {
   if ((0, h.isDesktop)()) try {
-    z.send(e)
+    q.send(e)
   } catch (e) {}
 }
-let z = {
+let q = {
     requireModule: e => I.nativeModules.requireModule(e),
     ensureModule: e => h.isPlatformEmbedded ? __OVERLAY__ && D.has(e) ? Promise.resolve() : I.nativeModules.ensureModule(e) : Promise.reject(Error("not embedded")),
     get canBootstrapNewUpdater() {
@@ -191,12 +195,12 @@ let z = {
             cmdline: e.cmdLine,
             id: t
           })
-        }), e => n(e.map(Y)))
+        }), e => n(e.map(W)))
       } catch (e) {}
     },
     setGameDetectionCallback(e) {
       var t, n;
-      null == (t = (n = this.getDiscordUtils()).setGameDetectionCallback) || t.call(n, (t, n) => e(t.map(Y), n.map(Y)))
+      null == (t = (n = this.getDiscordUtils()).setGameDetectionCallback) || t.call(n, (t, n) => e(t.map(W), n.map(W)))
     },
     setGameDetectionErrorCallback(e) {
       var t, n;
@@ -212,7 +216,7 @@ let z = {
     },
     setCandidateGamesCallback(e) {
       this.getDiscordUtils().setCandidateGamesCallback(t => {
-        e(t.map(Y))
+        e(t.map(W))
       })
     },
     clearCandidateGamesCallback() {
@@ -317,8 +321,8 @@ let z = {
     },
     async copyImage(e, t) {
       l()(h.isPlatformEmbedded, "Copy image method called outside native app"), l()("function" == typeof I.clipboard.copyImage, "Copy image not supported");
-      let n = await F(e),
-        r = W(e, t),
+      let n = await V(e),
+        r = K(e, t),
         i = null != r && T.has(r) ? "image.".concat(r) : e;
       I.clipboard.copyImage(E.from(n), i)
     },
@@ -328,32 +332,41 @@ let z = {
     },
     canSaveImage(e, t) {
       if (null == e || !h.isPlatformEmbedded) returnfalse;
-      let n = W(e, t);
+      let n = K(e, t);
       return null == n || S.has(n)
     },
     async saveImage(e, t, n) {
       var r, i, a;
+      let o, s;
       l()(h.isPlatformEmbedded, "Save image method called outside native app");
-      let o = m.Z.toURLSafe(e);
-      if (null == o) return;
-      let s = null != (r = o.pathname.split("/").pop()) ? r : "unknown";
-      s = B(s);
-      let c = o.searchParams.get("format");
-      if (null != c) {
-        let e = c.replace(U, "").toLowerCase();
+      let c = m.Z.toURLSafe(e);
+      if (null == c) return "errored";
+      let u = null != (r = c.pathname.split("/").pop()) ? r : "unknown";
+      u = Z(u);
+      let d = c.searchParams.get("format");
+      if (null != d) {
+        let e = d.replace(U, "").toLowerCase();
         if (e.length > 0) {
-          let t = s.replace(G, "");
-          s = "".concat(t, ".").concat(e)
+          let t = u.replace(G, "");
+          u = "".concat(t, ".").concat(e)
         }
-      } else if (!s.includes(".")) {
-        let r = null != (a = null != (i = W(e, t)) ? i : n) ? a : "png";
-        s = "".concat(s, ".").concat(r)
+      } else if (!u.includes(".")) {
+        let r = null != (a = null != (i = K(e, t)) ? i : n) ? a : "png";
+        u = "".concat(u, ".").concat(r)
       }
-      let u = f.K.get(L),
-        d = await F(e),
-        _ = E.from(d),
-        p = await I.fileManager.saveWithDialog(_, s, null != u ? u : true);
-      null != p && f.K.set(L, p)
+      let _ = await V(e),
+        p = E.from(_),
+        g = f.K.get(L);
+      if ("string" != typeof g && (g = true), "function" == typeof I.fileManager.saveWithDialog2) {
+        if (null == (o = await I.fileManager.saveWithDialog2(p, u, null != g ? g : true))) return "errored";
+        if (o.canceledByUser) return "canceled";
+        s = o.directory
+      } else try {
+        s = await I.fileManager.saveWithDialog(p, u, null != g ? g : true)
+      } catch (e) {
+        return "errored"
+      }
+      return null == s || "" === s ? "errored" : (f.K.set(L, s), "saved")
     },
     async saveFile(e, t) {
       var n;
@@ -361,10 +374,11 @@ let z = {
       let r = m.Z.toURLSafe(e);
       if (null == r) return null;
       let i = null != (n = null != t ? t : r.pathname.split("/").pop()) ? n : "unknown";
-      null == t && (i = B(i));
-      let a = await Z(e),
-        o = E.from(a);
-      return I.fileManager.saveWithDialog(o, i)
+      null == t && (i = Z(i));
+      let a = await F(e),
+        o = E.from(a),
+        s = await I.fileManager.saveWithDialog(o, i, true);
+      return null == s ? null : s
     },
     async downloadVoiceFilterFile(e, t, n) {
       l()(h.isPlatformEmbedded, "Download voice filter file method called outside native app");
@@ -382,7 +396,7 @@ let z = {
         t = arguments.length > 1 ? arguments[1] : true;
       if (!Chunk358085.isPlatformEmbedded) returnfalse;
       if (null != module) {
-        let n = W(module, exports);
+        let n = K(module, exports);
         if (null != require && !T.has(require)) returnfalse
       }
       return "function" == typeof I.clipboard.copyImage
@@ -765,10 +779,10 @@ let z = {
       (0, Chunk358085.isDesktop)() && this.send("APP_VIEWED")
     },
     appLoaded() {
-      K("APP_LOADED")
+      z("APP_LOADED")
     },
     indexLoadedAsync() {
-      K("DISCORD_APP_ASYNC_INDEX_TSX_LOADED")
+      z("DISCORD_APP_ASYNC_INDEX_TSX_LOADED")
     }
   },
-  q = z
+  X = q

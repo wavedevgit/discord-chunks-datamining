@@ -24,11 +24,11 @@ var Chunk951288 = require("./951288.js"),
 function v(e) {
   var t, n, v, j;
   let {
-    analyticsLocations: S
-  } = (0, u.ZP)(), E = null == (t = e.interactionMetadata) ? true : t.authorizing_integration_owners[l.Y.USER_INSTALL], P = null == (n = e.interactionMetadata) ? true : n.authorizing_integration_owners[l.Y.GUILD_INSTALL], _ = null == (v = e.interactionMetadata) ? true : v.user.id, Z = (0, a.e7)([m.default], () => m.default.getUser(E)), T = (0, a.e7)([O.Z], () => O.Z.getGuild(P)), w = p.Z.getChannel(e.channel_id), I = null == w ? true : w.getGuildId(), N = (0, a.e7)([m.default], () => m.default.getUser(_));
+    analyticsLocations: E
+  } = (0, u.ZP)(), S = null == (t = e.interactionMetadata) ? true : t.authorizing_integration_owners[l.Y.USER_INSTALL], P = null == (n = e.interactionMetadata) ? true : n.authorizing_integration_owners[l.Y.GUILD_INSTALL], _ = null == (v = e.interactionMetadata) ? true : v.user.id, Z = (0, a.e7)([O.default], () => O.default.getUser(S)), T = (0, a.e7)([m.Z], () => m.Z.getGuild(P)), w = p.Z.getChannel(e.channel_id), I = null == w ? true : w.getGuildId(), N = (0, a.e7)([O.default], () => O.default.getUser(_));
   if (i.useEffect(() => {
-      null == Z && null != E && (0, s.PR)(E)
-    }, [Z, E]), !(0, d.a)(e)) return null;
+      null == Z && null != S && (0, s.PR)(S)
+    }, [Z, S]), !(0, d.a)(e)) return null;
   null == N && (N = new b.Z(null == (j = e.interactionMetadata) ? true : j.user));
   let A = null;
   return null != T ? A = (0, r.jsx)(o.sNh, {
@@ -48,7 +48,7 @@ function v(e) {
       userId: Z.id,
       guildId: I,
       channelId: e.channel_id,
-      sourceAnalyticsLocations: S
+      sourceAnalyticsLocations: E
     }),
     className: h.interactionInfoMenuItem,
     iconLeft: () => (0, r.jsx)(c.Z, {
@@ -68,7 +68,7 @@ function v(e) {
         userId: N.id,
         guildId: I,
         channelId: e.channel_id,
-        sourceAnalyticsLocations: S
+        sourceAnalyticsLocations: E
       }),
       className: h.interactionInfoMenuItem,
       iconLeft: () => (0, r.jsx)(c.Z, {

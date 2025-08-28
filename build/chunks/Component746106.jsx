@@ -30,30 +30,31 @@ var Chunk951288 = require("./951288.js"),
 function S(e) {
   let {
     windowKey: t,
-    children: n
-  } = e, a = null != t, [S] = i.useState(() => v.ZP.getEnableHardwareAcceleration()), {
-    locale: A,
-    theme: C,
-    focused: N,
-    currentWindow: R,
-    fontScale: P,
-    fontScaleClass: w,
-    keyboardModeEnabled: D,
-    saturation: x,
-    desaturateUserColors: L,
-    useForcedColors: j,
-    systemForcedColors: M,
-    useReducedMotion: k,
-    alwaysShowLinkDecorations: U,
-    confettiMode: G,
-    highContrastMode: B
+    themeOverride: n,
+    children: a
+  } = e, S = null != t, [A] = i.useState(() => v.ZP.getEnableHardwareAcceleration()), {
+    locale: C,
+    theme: N,
+    focused: R,
+    currentWindow: P,
+    fontScale: w,
+    fontScaleClass: D,
+    keyboardModeEnabled: x,
+    saturation: L,
+    desaturateUserColors: j,
+    useForcedColors: M,
+    systemForcedColors: k,
+    useReducedMotion: U,
+    alwaysShowLinkDecorations: G,
+    confettiMode: B,
+    highContrastMode: Z
   } = (0, s.cj)([b.default, c.Z, y.Z, O.Z, m.Z, g.Z], () => {
     var e;
     return {
       locale: b.default.locale,
-      theme: y.Z.theme,
-      focused: a ? m.Z.getWindowFocused(t) : O.Z.isFocused(),
-      currentWindow: a && null != (e = m.Z.getWindow(t)) ? e : window,
+      theme: null != n ? n : y.Z.theme,
+      focused: S ? m.Z.getWindowFocused(t) : O.Z.isFocused(),
+      currentWindow: S && null != (e = m.Z.getWindow(t)) ? e : window,
       fontScale: c.Z.fontScale,
       fontScaleClass: c.Z.fontScaleClass,
       keyboardModeEnabled: c.Z.keyboardModeEnabled,
@@ -66,59 +67,59 @@ function S(e) {
       highContrastMode: c.Z.isHighContrastModeEnabled,
       confettiMode: g.Z.confettiMode
     }
-  }), Z = u.U.useExperiment({
+  }), F = u.U.useExperiment({
     location: "RootThemeContextProvider"
   }, {
     autoTrackExposure: true
-  }).enabled, F = (0, p.Z)(R, __OVERLAY__ || N), V = 0;
-  1 !== x && (V = (0, l.OdO)(V, l.bgu.REDUCE_SATURATION_ENABLED));
-  let H = (0, I.A)(),
-    Y = (0, h.Ml)("RootThemeContextProvider"),
-    W = (0, h.CL)("RootThemeContextProvider"),
-    K = (0, h.VM)("RootThemeContextProvider"),
-    z = f.Mc.useExperiment({
+  }).enabled, V = (0, p.Z)(P, __OVERLAY__ || R), H = 0;
+  1 !== L && (H = (0, l.OdO)(H, l.bgu.REDUCE_SATURATION_ENABLED));
+  let Y = (0, I.A)(),
+    W = (0, h.Ml)("RootThemeContextProvider"),
+    K = (0, h.CL)("RootThemeContextProvider"),
+    z = (0, h.VM)("RootThemeContextProvider"),
+    q = f.Mc.useExperiment({
       location: "RootThemeContextProvider"
     }).enabled,
-    q = (0, d.Z)("RootThemeContextProvider"),
-    X = (0, E.$V)({
+    X = (0, d.Z)("RootThemeContextProvider"),
+    Q = (0, E.$V)({
       location: "RootThemeContextProvider"
     }),
-    Q = (0, _.On)({
-      isPopoutWindow: a,
-      isSearchDesktopTopLevelEnabled: X
+    J = (0, _.On)({
+      isPopoutWindow: S,
+      isSearchDesktopTopLevelEnabled: Q
     });
   return (0, r.jsx)(l.wMY, {
-    theme: C,
-    flags: V,
-    saturation: x,
-    density: H,
+    theme: N,
+    flags: H,
+    saturation: L,
+    density: Y,
     children: (0, r.jsx)(T.cE, {
-      lang: A,
-      theme: C,
-      density: H,
-      focused: N,
-      fontScale: P,
-      fontScaleClass: w,
-      keyboardModeEnabled: D,
-      mouseMode: F,
-      saturation: x,
-      desaturateUserColors: L,
-      useForcedColors: j,
-      systemForcedColors: M,
-      useReducedMotion: k,
-      alwaysShowLinkDecorations: U,
-      hardwareAccelerationEnabled: S,
-      highContrastMode: Z && B,
-      isPopoutWindow: a,
-      rootClassName: o()(Q, {
-        "confetti-mode": G,
-        "refresh-fast-follow-avatars": Y && !q,
-        "refresh-fast-follow-guild-bg": W,
-        "refresh-fast-follow-distinct-borders": K,
-        "client-theme-color-picker": z,
-        "align-chat-input": q
+      lang: C,
+      theme: N,
+      density: Y,
+      focused: R,
+      fontScale: w,
+      fontScaleClass: D,
+      keyboardModeEnabled: x,
+      mouseMode: V,
+      saturation: L,
+      desaturateUserColors: j,
+      useForcedColors: M,
+      systemForcedColors: k,
+      useReducedMotion: U,
+      alwaysShowLinkDecorations: G,
+      hardwareAccelerationEnabled: A,
+      highContrastMode: F && Z,
+      isPopoutWindow: S,
+      rootClassName: o()(J, {
+        "confetti-mode": B,
+        "refresh-fast-follow-avatars": W && !X,
+        "refresh-fast-follow-guild-bg": K,
+        "refresh-fast-follow-distinct-borders": z,
+        "client-theme-color-picker": q,
+        "align-chat-input": X
       }),
-      children: n
+      children: a
     })
   })
 }

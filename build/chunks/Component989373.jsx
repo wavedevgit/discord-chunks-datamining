@@ -1,7 +1,7 @@
 /** Chunk was on 13368 **/
 /** chunk id: 989373, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => E
+  default: () => B
 }), require("./415506.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -49,7 +49,7 @@ async function x(e, t) {
     }
   }
 }
-let E = Chunk647438.memo(function(e) {
+let B = Chunk647438.memo(function(e) {
   let {
     withTitleBar: t,
     windowKey: n
@@ -64,7 +64,7 @@ let E = Chunk647438.memo(function(e) {
       }),
       [v, g] = o.useState(m),
       [y, S] = o.useState(false),
-      E = o.useCallback(() => {
+      B = o.useCallback(() => {
         let e = (0, h.getPID)(),
           n = null != f.Z.getVoiceChannelId();
         i.Z.track(w.rMx.OVERLAY_INITIALIZED, {
@@ -87,7 +87,7 @@ let E = Chunk647438.memo(function(e) {
         window.removeEventListener("message", e)
       }
     });
-    let B = o.useCallback((e, t) => {
+    let E = o.useCallback((e, t) => {
       null == a.current && (u.current = () => {
         null != a.current && e.cancelAnimationFrame(a.current), null != l.current && e.clearTimeout(l.current)
       }, a.current = e.requestAnimationFrame(async () => {
@@ -98,19 +98,20 @@ let E = Chunk647438.memo(function(e) {
           return
         }
         l.current = e.setTimeout(() => {
-          g(true), S(true), E(), u.current = null
+          g(true), S(true), B(), u.current = null
         }, 100)
       }))
-    }, [E]);
+    }, [B]);
     return o.useEffect(() => {
-      (!v || null == n) && m && m && null != n && B(n, e)
-    }, [B, v, m, e, n]), (0, c.Ng)(() => {
-      v && null != n && B(n, e)
+      (!v || null == n) && m && m && null != n && E(n, e)
+    }, [E, v, m, e, n]), (0, c.Ng)(() => {
+      v && null != n && E(n, e)
     }), (0, c.zq)(() => {
       null != u.current && u.current()
     }), y
   }(n, y.$S), m = (0, h.getPID)(), v = (0, r.e7)([s.default], () => s.default.isInputLocked(m), [m]);
   return l ? (0, a.jsx)(u.Z, {
+    themeOverride: w.BRd.MIDNIGHT,
     withTitleBar: t,
     windowKey: n,
     title: "Discord Overlay",

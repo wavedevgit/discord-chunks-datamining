@@ -17,9 +17,9 @@ function u(t) {
     src: e,
     onSelect: n
   } = t, u = (0, o.Z)(e), d = (0, c.Z)(e, null);
-  return r.isPlatformEmbedded ? (0, l.jsxs)(i.v2r, {
+  return a.isPlatformEmbedded ? (0, l.jsxs)(i.v2r, {
     navId: "image-context",
-    onClose: a.Zy,
+    onClose: r.Zy,
     "aria-label": s.intl.string(s.t.Zow2V1),
     onSelect: n,
     children: [(0, l.jsx)(i.kSQ, {

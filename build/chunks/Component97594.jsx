@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk105969 = require("./105969.js");
 
-function E(e, t) {
+function h(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   true === n || d.Z.useReducedMotion ? e.set(t) : e.start(t)
 }
@@ -49,7 +49,7 @@ function S(e) {
     }
     return i
   }(e, ["onClose", "items", "startingIndex", "enabledContentHarmTypeFlags", "shouldHideMediaOptions", "transitionState"]);
-  let [j, C] = i.useState(null != l ? l : 0), [P, D] = i.useState(false), [x, L] = (0, s.q_F)(() => ({
+  let [j, C] = i.useState(null != l ? l : 0), [D, P] = i.useState(false), [x, w] = (0, s.q_F)(() => ({
     scale: d.Z.useReducedMotion ? 1 : .9,
     x: 0,
     y: 0,
@@ -57,21 +57,21 @@ function S(e) {
       friction: 30,
       tension: 300
     }
-  })), w = i.useRef(null);
+  })), L = i.useRef(null);
   i.useEffect(() => {
     if (null != t) return p.S.subscribe(b.CkL.MEDIA_MODAL_CLOSE, t), () => {
       p.S.unsubscribe(b.CkL.MEDIA_MODAL_CLOSE, t)
     }
   }, [t]), i.useEffect(() => {
     var e, t;
-    v === s.Dvm.ENTERING && E(x.scale, 1), v === s.Dvm.ENTERED && (u.Z.disable(), u.Z.enableTemp(c.P)), v === s.Dvm.HIDDEN && (E(x.scale, .9), u.Z.disable(), u.Z.enableTemp(c.v)), v === s.Dvm.EXITING && E(x.scale, .9);
+    v === s.Dvm.ENTERING && h(x.scale, 1), v === s.Dvm.ENTERED && (u.Z.disable(), u.Z.enableTemp(c.P)), v === s.Dvm.HIDDEN && (h(x.scale, .9), u.Z.disable(), u.Z.enableTemp(c.v)), v === s.Dvm.EXITING && h(x.scale, .9);
     let n = () => {
         u.Z.disable(), v === s.Dvm.ENTERED ? u.Z.enableTemp(c.P) : u.Z.enableTemp(c.v)
       },
       r = () => {
         u.Z.disableTemp()
       },
-      i = null == (t = w.current) || null == (e = t.ownerDocument) ? true : e.defaultView;
+      i = null == (t = L.current) || null == (e = t.ownerDocument) ? true : e.defaultView;
     return null == i || i.addEventListener("focus", n), null == i || i.addEventListener("blur", r), () => {
       null == i || i.removeEventListener("focus", n), null == i || i.removeEventListener("blur", r), u.Z.disableTemp()
     }
@@ -84,16 +84,16 @@ function S(e) {
       x: x.x,
       y: x.y,
       setScale(e, t) {
-        E(x.scale, e, null == t ? true : t.immediate)
+        h(x.scale, e, null == t ? true : t.immediate)
       },
       setOffset(e, t, n) {
-        E(x.x, e, null == n ? true : n.immediate), E(x.y, t, null == n ? true : n.immediate)
+        h(x.x, e, null == n ? true : n.immediate), h(x.y, t, null == n ? true : n.immediate)
       },
-      zoomed: P,
+      zoomed: D,
       setZoomed(e) {
-        D(e), E(x.scale, e ? 2.5 : 1), e || (E(x.x, 0), E(x.y, 0))
+        P(e), h(x.scale, e ? 2.5 : 1), e || (h(x.x, 0), h(x.y, 0))
       }
-    }), [P, x]);
+    }), [D, x]);
   return (0, r.jsx)(s.f6W, {
     theme: b.BRd.MIDNIGHT,
     children: e => {
@@ -118,7 +118,7 @@ function S(e) {
       }({
         "data-migration-pending": true,
         hideShadow: true,
-        className: o()(h.carouselModal, e),
+        className: o()(E.carouselModal, e),
         transitionState: v
       }, T), l = l = {
         size: s.CgR.DYNAMIC,
@@ -137,7 +137,7 @@ function S(e) {
             style: {
               display: "none"
             },
-            ref: w
+            ref: L
           }), (0, r.jsx)(m.ZP, {
             items: n,
             startIndex: j,

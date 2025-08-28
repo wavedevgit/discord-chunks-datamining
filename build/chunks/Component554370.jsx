@@ -263,27 +263,24 @@ function eo(e) {
     n.removeEventListener("contextmenu", q, false), null == X && (X = Date.now(), d.Z.track(H.rMx.OVERLAY_UNLOCKED))
   }, [o, n]), (0, i.jsx)(h.Gt, {
     value: L,
-    children: C || m ? null : (0, i.jsx)(c.f6W, {
-      theme: H.BRd.MIDNIGHT,
-      children: e => (0, i.jsxs)("div", {
-        id: "overlay-container",
-        className: l()(Y.overlay, e),
-        children: [!t && K, (0, i.jsx)($, {
-          locked: o,
-          keybind: A,
-          onClick: et
-        }), (0, i.jsx)(R.Z, {
-          className: l()({
-            [Y.layoutLocked]: o,
-            [Y.layoutUnlocked]: !o
-          })
-        }), (0, i.jsx)(W.Z, {}), !t && Q && (0, i.jsx)(ee, {
-          locked: o,
-          focused: u
-        }), (0, i.jsx)(k.Z, {}), (0, i.jsx)(D.Z, {
-          locked: o
-        }), (0, i.jsx)(c.Ixi, {})]
-      })
+    children: C || m ? null : (0, i.jsxs)("div", {
+      id: "overlay-container",
+      className: Y.overlay,
+      children: [!t && K, (0, i.jsx)($, {
+        locked: o,
+        keybind: A,
+        onClick: et
+      }), (0, i.jsx)(R.Z, {
+        className: l()({
+          [Y.layoutLocked]: o,
+          [Y.layoutUnlocked]: !o
+        })
+      }), (0, i.jsx)(W.Z, {}), !t && Q && (0, i.jsx)(ee, {
+        locked: o,
+        focused: u
+      }), (0, i.jsx)(k.Z, {}), (0, i.jsx)(D.Z, {
+        locked: o
+      }), (0, i.jsx)(c.Ixi, {})]
     })
   })
 }

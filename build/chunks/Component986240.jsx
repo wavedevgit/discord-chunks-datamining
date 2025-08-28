@@ -19,8 +19,8 @@ var Chunk951288 = require("./951288.js"),
 function p(e, t) {
   let n = (0, d.Z)(t),
     p = e.hasPotions(),
-    O = (0, u.Nt)(),
-    m = i.useCallback(n => {
+    m = (0, u.Nt)(),
+    O = i.useCallback(n => {
       try {
         (0, a.qc)(t.id, e.id, n)
       } catch (e) {
@@ -33,12 +33,12 @@ function p(e, t) {
       }), (0, c.s)({
         channelId: t.id,
         message: e,
-        onRedeem: m,
+        onRedeem: O,
         onClose: o.Qy,
         source: s.YD.MessageContextMenu
       })
-    }, [t.id, e, m]);
-  return n && !p && O ? (0, r.jsx)(l.sNh, {
+    }, [t.id, e, O]);
+  return n && !p && m ? (0, r.jsx)(l.sNh, {
     id: "add-confetti-potion",
     label: b.intl.string(b.t.icaJW1),
     icon: l.l22,

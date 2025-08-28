@@ -1,7 +1,7 @@
 /** Chunk was on 37220 **/
 /** chunk id: 429260, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => S,
+  ZP: () => E,
   eH: () => _,
   wY: () => P
 });
@@ -26,8 +26,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk764295 = require("./764295.js");
 
-function S(e) {
-  let t = (0, i.e7)([O.Z], () => O.Z.getGuildId()),
+function E(e) {
+  let t = (0, i.e7)([m.Z], () => m.Z.getGuildId()),
     n = (0, p.Q_)(t);
   return (0, y.a4)(e) ? (0, r.jsx)(a.sNh, {
     id: "report",
@@ -38,7 +38,7 @@ function S(e) {
   }) : null
 }
 
-function E() {
+function S() {
   return (0, Chunk951288.jsx)(Chunk243778.ZP, {
     contentTypes: [Chunk704215.z.REPORT_TO_MOD_NEW_TAG],
     children: e => {
@@ -71,14 +71,14 @@ function P(e) {
         dismissAction: h.L.USER_DISMISS
       }), (0, f.tV)(e)
     },
-    icon: (0, r.jsx)(E, {}),
+    icon: (0, r.jsx)(S, {}),
     disabled: t
   }) : null
 }
 
 function _(e) {
   let t = (0, i.e7)([c.ZP], () => c.ZP.get("iar_testing")),
-    n = (0, i.e7)([m.default], () => m.default.getCurrentUser());
+    n = (0, i.e7)([O.default], () => O.default.getCurrentUser());
   return (0, y.a4)(e) && null != n && n.isStaff() && t ? (0, r.jsx)(a.sNh, {
     id: "staff-test-message-report",
     label: "[STAFF] Test Message Report",

@@ -21,8 +21,8 @@ function p(e, t) {
       location: "MessageContextMenu"
     }),
     {
-      handleTranslate: O,
-      handleRevertTranslation: m,
+      handleTranslate: m,
+      handleRevertTranslation: O,
       isTranslating: y,
       isTranslated: h
     } = function(e) {
@@ -96,17 +96,17 @@ function p(e, t) {
           disabled: t
         }, i.value)
       }), [e, t, l])
-    }(O, y);
+    }(m, y);
   return null != e.content && "" !== e.content.trim() && (null == p ? true : p.enableAIFeatures) ? h ? (0, r.jsx)(o.sNh, {
     id: "revert-translation",
     label: f.intl.string(f.t.JC9BXl),
     icon: o.os0,
-    action: m,
+    action: O,
     disabled: y
   }) : (0, r.jsx)(o.sNh, {
     id: "translate",
     label: y ? f.intl.string(f.t.SVKIdX) : f.intl.string(f.t["6epDlZ"]),
-    action: () => O(),
+    action: () => m(),
     disabled: y,
     children: v
   }) : null

@@ -54,8 +54,8 @@ function X(e) {
       message: g,
       target: b,
       mediaItem: p,
-      shouldHideMediaOptions: O,
-      onSelect: m,
+      shouldHideMediaOptions: m,
+      onSelect: O,
       onHeightUpdate: y
     } = e,
     {
@@ -63,8 +63,8 @@ function X(e) {
     } = (0, c.ZP)([s.Z.MESSAGE_CONTEXT_MENU]),
     v = b,
     j = b.getAttribute("data-type"),
-    S = b.getAttribute("data-id"),
-    E = b.getAttribute("data-name");
+    E = b.getAttribute("data-id"),
+    S = b.getAttribute("data-name");
   if (null != p) o = l = u = p.url;
   else
     for (;
@@ -78,19 +78,19 @@ function X(e) {
       mediaItem: p,
       textSelection: P,
       favoriteableType: j,
-      favoriteableId: S,
-      favoriteableName: E,
+      favoriteableId: E,
+      favoriteableName: S,
       itemHref: l,
       itemSrc: o,
       itemSafeSrc: u,
       itemTextContent: d,
       canReport: true,
       onHeightUpdate: y,
-      onSelect: m,
+      onSelect: O,
       onClose: a.Zy,
       navId: "message",
       ariaLabel: z.intl.string(z.t.ChPNkJ),
-      shouldHideMediaOptions: O
+      shouldHideMediaOptions: m
     })
   })
 }
@@ -119,17 +119,17 @@ function B(e) {
     type: s,
     id: c,
     name: X
-  }), ec = (0, R.Z)(t, n), eu = (0, w.Z)(t, n), ed = (0, A.Z)(t), ef = (0, j.Z)(t, n), eg = (0, S.Z)(t, n), eb = (0, x.Z)(t, n), ep = (0, D.Z)(t, n), eO = (0, P.Z)(t, n), em = (0, C.ZP)(t), ey = (0, C.wY)(t), eh = (0, C.eH)(t), ev = (0, L.Z)(t, n), ej = (0, g.Z)(null != B ? B : K, q, t, {
+  }), ec = (0, R.Z)(t, n), eu = (0, w.Z)(t, n), ed = (0, A.Z)(t), ef = (0, j.Z)(t, n), eg = (0, E.Z)(t, n), eb = (0, x.Z)(t, n), ep = (0, D.Z)(t, n), em = (0, P.Z)(t, n), eO = (0, C.ZP)(t), ey = (0, C.wY)(t), eh = (0, C.eH)(t), ev = (0, L.Z)(t, n), ej = (0, g.Z)(null != B ? B : K, q, t, {
     shouldHideMediaOptions: et
-  }), eS = (0, f.Z)(W, t, {
+  }), eE = (0, f.Z)(W, t, {
     shouldHideMediaOptions: et,
     contentType: null == i ? true : i.contentType,
     originalContentType: null == i ? true : i.originalContentType
-  }), eE = (0, F.Z)(t, i), eP = (0, u.Z)({
+  }), eS = (0, F.Z)(t, i), eP = (0, u.Z)({
     id: t.id,
     label: z.intl.string(z.t.zBoHlZ),
     shiftId: "".concat(t.channel_id, "-").concat(t.id)
-  }), e_ = (0, M.Z)(t, n), eZ = (0, T.Z)(t, n), eT = (0, k.Z)(t, n), ew = (0, m.Z)(a, n.getGuildId()), eI = (0, y.Z)(t), eN = (0, E.Z)(t), eA = (0, G.Z)(t, n), ex = (0, H.Z)(t), eD = (0, h.Z)(t, n), eM = (0, O.Z)({
+  }), e_ = (0, M.Z)(t, n), eZ = (0, T.Z)(t, n), eT = (0, k.Z)(t, n), ew = (0, O.Z)(a, n.getGuildId()), eI = (0, y.Z)(t), eN = (0, S.Z)(t), eA = (0, G.Z)(t, n), ex = (0, H.Z)(t), eD = (0, h.Z)(t, n), eM = (0, m.Z)({
     commandType: o.yU.MESSAGE,
     commandTargetId: t.id,
     channel: n,
@@ -152,9 +152,9 @@ function B(e) {
     }), (0, r.jsxs)(l.kSQ, {
       children: [eN, eA, eo, eI, eM, ec, eu, ef, eg, ev, eR, eC]
     }), (0, r.jsxs)(l.kSQ, {
-      children: [ep, eb, eO, V && em, V && eh, ey]
+      children: [ep, eb, em, V && eO, V && eh, ey]
     }), (0, r.jsxs)(l.kSQ, {
-      children: [es, ew, eS, eE, ex]
+      children: [es, ew, eE, eS, ex]
     }), (0, r.jsx)(l.kSQ, {
       children: ej
     }), (0, r.jsx)(l.kSQ, {

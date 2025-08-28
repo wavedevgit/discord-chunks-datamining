@@ -158,24 +158,26 @@ class z extends(r = Chunk647438.Component) {
       guestWindow: c,
       clientThemesClassName: u,
       contentClassName: f,
-      hideModals: _ = false
+      themeOverride: _,
+      hideModals: m = false
     } = this.props;
     (0, Chunk358085.getPlatform)();
-    let m = K({
+    let g = K({
         withTitleBar: Chunk120356,
         isFullScreen: Chunk647438
       }),
-      g = r === Chunk501787.$J ? Chunk22205.Z : Chunk628123.Z;
+      b = r === Chunk501787.$J ? Chunk22205.Z : Chunk628123.Z;
     return (0, Chunk951288.jsx)(Chunk799899.VK, {
       children: (0, Chunk951288.jsx)(Chunk746106.w, {
         windowKey: r,
+        themeOverride: Chunk442837,
         children: (0, Chunk951288.jsx)(Chunk899663.Z, {
           children: (0, Chunk951288.jsxs)(Chunk481060.JcV, {
             containerRef: this.rootRef,
             children: [(0, Chunk951288.jsx)(q, {
               guestWindow: Chunk512722,
               className: u,
-              children: (0, Chunk951288.jsxs)(Chunk280492, {
+              children: (0, Chunk951288.jsxs)(Chunk607070, {
                 children: [(0, Chunk951288.jsx)(Chunk686546.Co, {}), (0, Chunk951288.jsx)(Chunk40851.Wu, {
                   appContext: Chunk981631.IlC.POPOUT,
                   renderWindow: Chunk512722,
@@ -183,13 +185,13 @@ class z extends(r = Chunk647438.Component) {
                     children: (0, Chunk951288.jsxs)(Chunk314910.yP, {
                       children: [(0, Chunk951288.jsxs)("div", {
                         className: Chunk413943.popout,
-                        children: [Chunk175724 && (0, Chunk951288.jsx)(Chunk950796.TF, {
+                        children: [Chunk280492 && (0, Chunk951288.jsx)(Chunk950796.TF, {
                           windowKey: r
                         }), null, (0, Chunk951288.jsx)("div", {
                           className: s()(Chunk413943.content, Chunk731965),
                           children: require
                         })]
-                      }), !Chunk442837 && (0, Chunk951288.jsx)(Chunk481060.nKe, {}), (0, Chunk951288.jsx)(Chunk490173.Z, {}), (0, Chunk951288.jsx)(Chunk314910.Un, {})]
+                      }), !Chunk175724 && (0, Chunk951288.jsx)(Chunk481060.nKe, {}), (0, Chunk951288.jsx)(Chunk490173.Z, {}), (0, Chunk951288.jsx)(Chunk314910.Un, {})]
                     })
                   })
                 })]
