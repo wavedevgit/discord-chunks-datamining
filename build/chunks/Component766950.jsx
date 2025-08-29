@@ -38,7 +38,7 @@ function T(e) {
     analyticsLocations: R,
     guild: A,
     onClose: w
-  } = e, I = (0, s.e7)([h.default], () => h.default.getCurrentUser()), L = (0, s.e7)([g.Z], () => g.Z.getAllPending().pendingDisplayNameStyles), B = true !== L ? L : null == I ? true : I.displayNameStyles, [M, G] = o.useState(null != (t = null == B ? true : B.fontId) ? t : i.C.DEFAULT), [Z, Y] = o.useState(null != (n = null == B ? true : B.effectId) ? n : a.m.SOLID), H = (0, y.R)(Z), z = (0, y.R)(a.m.GRADIENT), F = null != (T = null == B ? true : B.colors) ? T : [], [U, K] = o.useState(F.length > 0 && Z !== a.m.GRADIENT ? F[0] : H.defaultColors[0]), [V, X] = o.useState(F.length > 0 && Z === a.m.GRADIENT ? F : z.defaultColors);
+  } = e, I = (0, s.e7)([h.default], () => h.default.getCurrentUser()), L = (0, s.e7)([g.Z], () => g.Z.getAllPending().pendingDisplayNameStyles), B = true !== L ? L : null == I ? true : I.displayNameStyles, [M, G] = o.useState(null != (t = null == B ? true : B.fontId) ? t : i.C.DEFAULT), [Z, Y] = o.useState(null != (n = null == B ? true : B.effectId) ? n : a.m.SOLID), H = (0, P.R)(Z), z = (0, P.R)(a.m.GRADIENT), F = null != (T = null == B ? true : B.colors) ? T : [], [U, K] = o.useState(F.length > 0 && Z !== a.m.GRADIENT ? F[0] : H.defaultColors[0]), [V, X] = o.useState(F.length > 0 && Z === a.m.GRADIENT ? F : z.defaultColors);
   (0, m.Z)({
     type: l.ImpressionTypes.POPOUT,
     name: l.ImpressionNames.DISPLAY_NAME_STYLES_MODAL
@@ -57,7 +57,7 @@ function T(e) {
         fontId: M,
         effectId: Z,
         colors: e
-      }), b.default.track(P.rMx.DISPLAY_NAME_STYLES_APPLIED, {
+      }), b.default.track(y.rMx.DISPLAY_NAME_STYLES_APPLIED, {
         font_name: i.C[M],
         effect_name: a.m[Z],
         colors: W
@@ -69,7 +69,7 @@ function T(e) {
       effectId: t,
       colors: n
     } = (0, j.aY)();
-    G(e), Y(t), t === a.m.GRADIENT ? X(n) : K(n[0]), b.default.track(P.rMx.DISPLAY_NAME_STYLES_SURPRISE_ME)
+    G(e), Y(t), t === a.m.GRADIENT ? X(n) : K(n[0]), b.default.track(y.rMx.DISPLAY_NAME_STYLES_SURPRISE_ME)
   }, [X, K]), ee = o.useCallback(e => {
     Y(e)
   }, [Y]), et = o.useCallback(e => {

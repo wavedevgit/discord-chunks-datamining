@@ -36,14 +36,14 @@ function m(e) {
       align: "center",
       wrap: true,
       children: c.P$.map(e => {
-        let o = s.y[e],
+        let o = (0, s.U)(e),
           c = e === t;
         return (0, r.jsx)(i.ua7, {
           text: u.intl.string(o.name),
           children: t => {
             let {
-              onMouseEnter: d,
-              onMouseLeave: p
+              onMouseEnter: s,
+              onMouseLeave: d
             } = t;
             return (0, r.jsx)(i.P3F, {
               className: l()(f.fontButton, {
@@ -51,12 +51,12 @@ function m(e) {
               }),
               onClick: () => n(e),
               "aria-label": u.intl.string(o.name),
-              onMouseEnter: d,
-              onMouseLeave: p,
+              onMouseEnter: s,
+              onMouseLeave: d,
               children: (0, r.jsx)(a.xv, {
                 variant: "text-lg/semibold",
                 color: c ? "text-primary" : "text-default",
-                className: l()(f.fontText, s.y[e].className),
+                className: l()(f.fontText, o.className),
                 children: "Gg"
               })
             })

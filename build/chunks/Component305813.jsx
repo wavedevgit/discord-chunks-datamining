@@ -143,7 +143,7 @@ function T(e) {
           author: F,
           message: (0, u.e5)(E(N({}, (0, p.ZP)({
             channelId: "1337",
-            content: P.intl.string(y.default.h5Cuen)
+            content: y.intl.string(P.default.h5Cuen)
           })), {
             state: O.yb.SENT,
             id: "0"
@@ -167,7 +167,7 @@ function T(e) {
       children: [(0, r.jsx)(s.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: P.intl.format(y.default.prQba2, {
+        children: y.intl.format(P.default.prQba2, {
           helpArticleLink: C.Z.getArticleURL(O.BhN.DISPLAY_NAME_STYLES)
         })
       }), (0, r.jsx)(D, {
@@ -188,13 +188,13 @@ function D(e) {
     optionClassName: k.themeToggleOption,
     options: [{
       name: "",
-      tooltip: P.intl.string(P.t.b8Cei4),
+      tooltip: y.intl.string(y.t.b8Cei4),
       value: O.BRd.DARK,
       icon: s.Z6G,
       className: o === O.BRd.DARK ? k.themeToggleOptionSelected : true
     }, {
       name: "",
-      tooltip: P.intl.string(P.t.K2sFfn),
+      tooltip: y.intl.string(y.t.K2sFfn),
       value: O.BRd.LIGHT,
       icon: s.chG,
       className: o === O.BRd.LIGHT ? k.themeToggleOptionSelected : true

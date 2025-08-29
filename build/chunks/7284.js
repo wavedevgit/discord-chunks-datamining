@@ -2,8 +2,8 @@
 /** chunk id: 7284, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  j: () => _,
-  y: () => f
+  U: () => _,
+  j: () => p
 });
 var Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
@@ -46,14 +46,15 @@ let d = {
     [Chunk342905.C.ZILLA_SLAB]: {
       name: Chunk693450.default.KMR8ra,
       className: Chunk806539.zillaSlab
-    },
-    [Chunk342905.C.BIO_RHYME]: d,
-    [Chunk342905.C.BANGERS]: d,
-    [Chunk342905.C.COMPAGNON]: d,
-    [Chunk342905.C.RIBES]: d
+    }
   };
 
 function _(e) {
+  var t;
+  return null != (t = f[e]) ? t : d
+}
+
+function p(e) {
   var t;
   let {
     displayNameStyles: n,
