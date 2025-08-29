@@ -84,13 +84,16 @@ function v(e) {
   }), Promise.reject(e)))
 }
 
-function I(e, t) {
+function I(e, t, n) {
   return s.Z.dispatch({
     type: "EMOJI_DELETE",
     guildId: e,
     emojiId: t
   }), a.tn.del({
     url: g.ANM.GUILD_EMOJI(e, t),
+    body: null != n ? {
+      replaced_by: n
+    } : true,
     oldFormErrors: true,
     rejectWithError: false
   })

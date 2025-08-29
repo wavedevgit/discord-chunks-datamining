@@ -60,7 +60,8 @@ class E extends Chunk495852.C {
       enableEditRawJsonUi: false,
       winningVariationId: 0,
       type: 0,
-      isTemplate: false
+      isTemplate: false,
+      fieldNumbersToCopy: []
     };
     return globalThis.Object.defineProperty(t, a.C, {
       enumerable: false,
@@ -153,6 +154,11 @@ class E extends Chunk495852.C {
         case 27:
           a.isTemplate = e.bool();
           break;
+        case 28:
+          if (i === r.TD.LengthDelimited)
+            for (let t = e.int32() + e.pos; e.pos < t;) a.fieldNumbersToCopy.push(e.int32());
+          else a.fieldNumbersToCopy.push(e.int32());
+          break;
         default:
           let o = n.readUnknownField;
           if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
@@ -171,7 +177,11 @@ class E extends Chunk495852.C {
       for (let n = 0; n < e.surfaces.length; n++) t.int32(e.surfaces[n]);
       t.join()
     }
-    "" !== e.owningTeamName && t.tag(20, r.TD.LengthDelimited).string(e.owningTeamName), "0" !== e.cachedNotificationChannelId && t.tag(21, r.TD.Bit64).fixed64(e.cachedNotificationChannelId), 0 !== e.exposureTracking && t.tag(22, r.TD.Varint).int32(e.exposureTracking), 0 !== e.assignmentMode && t.tag(25, r.TD.Varint).int32(e.assignmentMode), false !== e.enableEditRawJsonUi && t.tag(23, r.TD.Varint).bool(e.enableEditRawJsonUi), 0 !== e.winningVariationId && t.tag(24, r.TD.Varint).int32(e.winningVariationId), 0 !== e.type && t.tag(26, r.TD.Varint).int32(e.type), false !== e.isTemplate && t.tag(27, r.TD.Varint).bool(e.isTemplate);
+    if ("" !== e.owningTeamName && t.tag(20, r.TD.LengthDelimited).string(e.owningTeamName), "0" !== e.cachedNotificationChannelId && t.tag(21, r.TD.Bit64).fixed64(e.cachedNotificationChannelId), 0 !== e.exposureTracking && t.tag(22, r.TD.Varint).int32(e.exposureTracking), 0 !== e.assignmentMode && t.tag(25, r.TD.Varint).int32(e.assignmentMode), false !== e.enableEditRawJsonUi && t.tag(23, r.TD.Varint).bool(e.enableEditRawJsonUi), 0 !== e.winningVariationId && t.tag(24, r.TD.Varint).int32(e.winningVariationId), 0 !== e.type && t.tag(26, r.TD.Varint).int32(e.type), false !== e.isTemplate && t.tag(27, r.TD.Varint).bool(e.isTemplate), e.fieldNumbersToCopy.length) {
+      t.tag(28, r.TD.LengthDelimited).fork();
+      for (let n = 0; n < e.fieldNumbersToCopy.length; n++) t.int32(e.fieldNumbersToCopy[n]);
+      t.join()
+    }
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -309,6 +319,12 @@ class E extends Chunk495852.C {
       name: "is_template",
       kind: "scalar",
       T: 8
+    }, {
+      no: 28,
+      name: "field_numbers_to_copy",
+      kind: "scalar",
+      repeat: 1,
+      T: 5
     }])
   }
 }
