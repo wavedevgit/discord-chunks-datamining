@@ -88,4 +88,32 @@ function o(e) {
       contentGenerationEnabled: true
     }
   }]
+}), (0, Chunk818083.B)({
+  kind: "user",
+  id: "2025-08_icymi_conversations",
+  label: "New conversations experience in ICYMI",
+  defaultConfig: {
+    newConversationsEnabled: false
+  },
+  treatments: [{
+    id: 1,
+    label: "New conversations experience in ICYMI",
+    config: {
+      newConversationsEnabled: true
+    }
+  }]
+}), (0, Chunk818083.B)({
+  kind: "user",
+  id: "2025-08_icymi_ux_refresh",
+  label: "UX refresh in ICYMI",
+  defaultConfig: {
+    newUXEnabled: false
+  },
+  treatments: [{
+    id: 1,
+    label: "UX refresh in ICYMI",
+    config: {
+      newUXEnabled: true
+    }
+  }]
 })

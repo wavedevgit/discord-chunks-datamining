@@ -1,24 +1,27 @@
-/** Chunk was on 35755 **/
-/** chunk id: 312871, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 312871, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => r
+  Z: () => a
 });
 var Chunk647438 = require("./647438.js"),
   Chunk434650 = require("./434650.js");
 
-function r(e) {
+function a(e) {
   let {
     onVisible: t,
     threshold: n,
-    minTimeVisibleMs: r
-  } = e, a = l.useRef(false), o = l.useRef(null);
-  return l.useEffect(() => () => {
-    null != o.current && (clearTimeout(o.current), o.current = null)
-  }, []), (0, i.O)(e => {
-    if (null == o.current || e || false !== a.current || (clearTimeout(o.current), o.current = null), !e || true === a.current) return;
+    minTimeVisibleMs: a
+  } = e, o = r.useRef(false), s = r.useRef(null);
+  r.useEffect(() => () => {
+    null != s.current && (clearTimeout(s.current), s.current = null)
+  }, []);
+  let l = e => {
+    if (null == s.current || e || false !== o.current || (clearTimeout(s.current), s.current = null), !e || true === o.current) return;
     let n = () => {
-      t(), a.current = true, o.current = null
+      t(), o.current = true, s.current = null
     };
-    null != r ? o.current = setTimeout(n, r) : n()
-  }, n)
+    null != a ? s.current = setTimeout(n, a) : n()
+  };
+  return (0, i.O)(l, n)
 }

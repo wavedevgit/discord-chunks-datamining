@@ -2,15 +2,18 @@
 /** chunk id: 91907, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk120356 = require("./120356.js"),
+  o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
+  Chunk7284 = require("./7284.js"),
   Chunk256139 = require("./256139.jsx"),
   Chunk866040 = require("./866040.jsx");
 
-function l(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -19,20 +22,20 @@ function l(e, t, n) {
   }) : e[t] = n, e
 }
 
-function c(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      l(e, t, n[t])
+      d(e, t, n[t])
     })
   }
   return e
 }
 
-function u(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -43,30 +46,33 @@ function u(e, t) {
   return n
 }
 
-function d(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : u(Object(t)).forEach(function(n) {
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function f(e) {
+function h(e) {
   let {
     user: t,
     text: n,
-    channel: l,
-    textClassName: u,
-    onPopoutClosed: f
-  } = e, _ = i.useMemo(() => [t], [t]), p = i.useRef(null);
-  return (0, r.jsx)(s.Z, {
-    targetElementRef: p,
-    participants: _,
-    channel: l,
-    onPopoutClosed: f,
-    children: e => (0, r.jsx)(o.Z, d(c({}, e), {
+    channel: a,
+    textClassName: d,
+    onPopoutClosed: _,
+    enableDisplayNameStyles: h = false
+  } = e, m = i.useMemo(() => [t], [t]), g = i.useRef(null), E = (0, l.j)({
+    displayNameStyles: null == t ? true : t.displayNameStyles
+  });
+  return (0, r.jsx)(u.Z, {
+    targetElementRef: g,
+    participants: m,
+    channel: a,
+    onPopoutClosed: _,
+    children: e => (0, r.jsx)(c.Z, p(f({}, e), {
       tag: "span",
-      children: (0, r.jsx)(a.xv, {
-        ref: p,
-        className: u,
+      children: (0, r.jsx)(s.xv, {
+        ref: g,
+        className: h ? o()(d, E) : d,
         variant: "text-sm/semibold",
         color: "text-primary",
         lineClamp: 1,

@@ -32,13 +32,13 @@ let p = () => {
         richValue: a
       }), s.Z.saveDraft(e.channel_id, n, c.d.ChannelMessage)
     }, [module]),
-    [y, M] = Chunk647438.useState(false),
-    w = Chunk647438.useCallback(() => M(true), []),
-    x = Chunk647438.useCallback(() => M(false), []);
+    [M, y] = Chunk647438.useState(false),
+    x = Chunk647438.useCallback(() => y(true), []),
+    w = Chunk647438.useCallback(() => y(false), []);
   (0, Chunk647438.useEffect)(() => () => {
     Chunk430742.Z.clearDraft(module.channel_id, Chunk703558.d.ChannelMessage)
   }, [module]);
-  let I = async () => ({
+  let S = async () => ({
     shouldClear: true,
     shouldRefocus: false
   });
@@ -50,10 +50,10 @@ let p = () => {
     textValue: g,
     richValue: m,
     type: Chunk541716.Ie.SHARE_CUSTOM_CLIENT_THEME_INPUT,
-    onBlur: x,
-    onFocus: w,
-    focused: y,
-    onSubmit: I,
+    onBlur: w,
+    onFocus: x,
+    focused: M,
+    onSubmit: S,
     parentModalKey: Chunk135102.tj,
     autoCompletePosition: "bottom",
     emojiPickerCloseOnModalOuterClick: true,

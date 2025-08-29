@@ -423,14 +423,16 @@ function eT(e) {
             text: e,
             user: E[0],
             channel: t,
-            onPopoutClosed: s
+            onPopoutClosed: s,
+            enableDisplayNameStyles: true
           }, n),
           name1Hook: (e, n) => (0, r.jsx)(J.Z, {
             textClassName: o()(ef.popoutUsername, ef.popoutTextPrimary),
             text: e,
             user: E[1],
             channel: t,
-            onPopoutClosed: s
+            onPopoutClosed: s,
+            enableDisplayNameStyles: true
           }, n)
         })
       })]
