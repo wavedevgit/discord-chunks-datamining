@@ -19,7 +19,8 @@ var Chunk951288 = require("./951288.js"),
 let p = Chunk647438.createContext({
   lang: "",
   style: "",
-  className: ""
+  className: "",
+  focused: false
 });
 
 function h() {
@@ -75,8 +76,9 @@ function m(e) {
   }, t), U = i.useMemo(() => ({
     lang: n,
     style: D,
-    className: k
-  }), [n, D, k]), G = (0, f.$V)({
+    className: k,
+    focused: m
+  }), [n, D, k, m]), G = (0, f.$V)({
     location: "RootElementContextProvider"
   });
   return i.useLayoutEffect(() => {

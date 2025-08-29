@@ -11,9 +11,10 @@ var Chunk951288 = require("./951288.js"),
   o = require.n(Chunk120356),
   Chunk202841 = require("./202841.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk892071 = require("./892071.jsx"),
   Chunk199847 = require("./199847.js");
 
-function u(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,20 +23,20 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 
-function d(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      u(e, t, n[t])
+      d(e, t, n[t])
     })
   }
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,18 +47,14 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p() {
-  return new Promise(e => setTimeout(e, 1e3))
-}
-
 function h() {
-  return document.hasFocus()
+  return new Promise(e => setTimeout(e, 1e3))
 }
 let m = .25,
   g = 4,
@@ -103,20 +100,22 @@ let I = Chunk647438.memo(function(e) {
       dotPosition: n,
       fill: a = "currentColor",
       spacing: o = 2.5
-    } = e, c = i.useRef(h()), u = i.useRef(true);
-    i.useEffect(() => () => void(u.current = false), []);
-    let [f] = (0, l.q_F)(() => _(d({}, O), {
+    } = e, {
+      focused: u
+    } = (0, c.vP)(), d = i.useRef(true);
+    i.useEffect(() => () => void(d.current = false), []);
+    let [_] = (0, l.q_F)(() => p(f({}, O), {
       to: async e => {
         let t = b;
-        for (; u.current;) c.current = h(), c.current ? (t += E * g, await e({
+        for (; d.current;) u ? (t += E * g, await e({
           dotCycle: t,
           immediate: false
         })) : t !== b ? (t = b, await e({
           dotCycle: t,
           immediate: true
-        })) : await p()
+        })) : await h()
       }
-    }), "animate-always"), y = (2 * t * 3 + t / 4 * 2) / 2;
+    }), "animate-always", [u]), y = (2 * t * 3 + t / 4 * 2) / 2;
     return (0, r.jsx)(r.Fragment, {
       children: [0, 1, 2].map(e => {
         let i = m * e,
@@ -124,48 +123,51 @@ let I = Chunk647438.memo(function(e) {
         return (0, r.jsx)(s.animated.circle, {
           cx: n ? n.to([0, 1], [y, l]) : l,
           cy: t,
-          r: f.dotCycle.to(e => v(e - i)).to([0, .4, .8, 1], [.8 * t, .8 * t, t, t]).to(e => c.current ? e : t),
+          r: _.dotCycle.to(e => v(e - i)).to([0, .4, .8, 1], [.8 * t, .8 * t, t, t]).to(e => u ? e : t),
           fill: a,
           style: {
-            opacity: f.dotCycle.to(e => v(e - i)).to([0, .4, .8, 1], [.3, .3, 1, 1]).to(e => c.current ? e : 1)
+            opacity: _.dotCycle.to(e => v(e - i)).to([0, .4, .8, 1], [.3, .3, 1, 1]).to(e => u ? e : 1)
           }
         }, e)
       })
     })
   }),
-  T = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
+  T = Chunk647438.memo(function(e) {
     let {
-      dotRadius: n,
-      x: i,
-      y: a,
-      hide: u = false,
-      themed: f = false,
-      className: p
-    } = e;
-    return (0, l.Yzy)(u, _(d({}, y), {
+      dotRadius: t,
+      x: n,
+      y: i,
+      hide: a = false,
+      themed: d = false,
+      className: _,
+      ref: h
+    } = e, {
+      focused: m
+    } = (0, c.vP)();
+    return (0, l.Yzy)(a, p(f({}, y), {
       key: e => e ? "true" : "false"
-    }), h() ? "animate-always" : "animate-never")((e, l, u) => {
+    }), m ? "animate-always" : "animate-never")((e, a, l) => {
       let {
-        dotPosition: d
+        dotPosition: c
       } = e, {
-        key: _
-      } = u;
-      return l ? null : (0, r.jsx)("svg", {
-        ref: t,
-        x: i,
-        y: a,
-        width: 2 * n * 3 + n / 2 * 2,
-        height: 2 * n,
-        className: o()(p, c.dots, f ? c.themed : null),
+        key: f
+      } = l;
+      return a ? null : (0, r.jsx)("svg", {
+        ref: h,
+        x: n,
+        y: i,
+        width: 2 * t * 3 + t / 2 * 2,
+        height: 2 * t,
+        className: o()(_, u.dots, d ? u.themed : null),
         children: (0, r.jsx)(s.animated.g, {
           style: {
-            opacity: d.to(e => Math.min(1, Math.max(e, 0)))
+            opacity: c.to(e => Math.min(1, Math.max(e, 0)))
           },
           children: (0, r.jsx)(I, {
-            dotRadius: n,
-            dotPosition: d
+            dotRadius: t,
+            dotPosition: c
           })
         })
-      }, _)
+      }, f)
     })
-  }))
+  })
