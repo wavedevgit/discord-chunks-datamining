@@ -59,7 +59,7 @@ function R(e) {
       children: (0, r.jsx)("div", {
         className: w.customContainer,
         children: (0, r.jsx)(o.w0Z, {
-          className: w.customScroller,
+          className: a()(w.customScroller, P.settingsVerticalScroller),
           orientation: "auto",
           children: (0, r.jsx)(o.w0Z, {
             className: P.settingsHorizontalScroller,
