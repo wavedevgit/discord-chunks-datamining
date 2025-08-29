@@ -1,7 +1,7 @@
 /** Chunk was on 38062 **/
 /** chunk id: 409110, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk929148 = require("./929148.js");
 let h = "expanded-area";
 
-function j(e) {
+function p(e) {
   let {
     attachments: t,
     role: n,
@@ -68,7 +68,7 @@ function j(e) {
   })
 }
 
-function _(e) {
+function j(e) {
   var t;
   let {
     listing: n
@@ -80,7 +80,7 @@ function _(e) {
     role: s,
     textVariant: "text-md/medium",
     locked: o
-  }) : (0, r.jsx)(j, {
+  }) : (0, r.jsx)(p, {
     attachments: a,
     role: s,
     roleLocked: o

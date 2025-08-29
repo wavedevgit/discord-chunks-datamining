@@ -1,12 +1,12 @@
 /** Chunk was on 53162 **/
-/** chunk id: 490576, original params: t,a,n (module,exports,require) **/
+/** chunk id: 490576, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => x
+  default: () => b
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk512722 = require("./512722.js"),
-  i = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -16,51 +16,51 @@ var Chunk512722 = require("./512722.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk819994 = require("./819994.js");
 
-function h(t) {
+function p(t) {
   let {
-    attachment: a,
+    attachment: e,
     guildId: n,
     productId: o
   } = t;
-  return (0, e.jsxs)("li", {
+  return (0, r.jsxs)("li", {
     className: m.attachmentRow,
-    children: [(0, e.jsx)(d.Z, {
-      attachment: a
-    }), (0, e.jsx)(u.Z, {
+    children: [(0, r.jsx)(u.Z, {
+      attachment: e
+    }), (0, r.jsx)(f.Z, {
       className: m.attachmentDownloadButton,
-      icon: c._8t,
+      icon: l._8t,
       text: true,
       guildId: n,
       productId: o,
-      attachmentId: a.id
+      attachmentId: e.id
     })]
   })
 }
 
-function x(t) {
-  var a;
+function b(t) {
+  var e;
   let {
     guildId: n,
     productId: o,
-    onClose: c,
-    transitionState: d
-  } = t, u = (0, l.e7)([r.Z], () => r.Z.getGuildProduct(o));
-  i()(null != u, "guildProductListing cannot be null");
-  let m = null != (a = u.attachments) ? a : [];
-  return (0, e.jsx)(s.Modal, {
+    onClose: l,
+    transitionState: u
+  } = t, f = (0, c.e7)([s.Z], () => s.Z.getGuildProduct(o));
+  a()(null != f, "guildProductListing cannot be null");
+  let m = null != (e = f.attachments) ? e : [];
+  return (0, r.jsx)(i.Modal, {
     size: "md",
-    transitionState: d,
-    "aria-label": f.intl.string(f.t["3jaCaW"]),
-    title: u.name,
-    subtitle: f.intl.format(f.t["6dOuaG"], {
-      count: u.attachments_count
+    transitionState: u,
+    "aria-label": d.intl.string(d.t["3jaCaW"]),
+    title: f.name,
+    subtitle: d.intl.format(d.t["6dOuaG"], {
+      count: f.attachments_count
     }),
     actions: [],
-    onClose: c,
-    children: (0, e.jsx)("ul", {
-      children: m.map(t => (0, e.jsx)(h, {
+    onClose: l,
+    children: (0, r.jsx)("ul", {
+      children: m.map(t => (0, r.jsx)(p, {
         guildId: n,
-        productId: u.id,
+        productId: f.id,
         attachment: t
       }, t.id))
     })
