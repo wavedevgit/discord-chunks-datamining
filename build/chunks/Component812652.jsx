@@ -1,7 +1,7 @@
 /** Chunk was on 46746 **/
 /** chunk id: 812652, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => Z
+  ZP: () => w
 }), require("./388685.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -61,24 +61,24 @@ function O(e) {
   })
 }
 
-function Z(e) {
+function w(e) {
   var t, n;
   let {
     onClose: b,
-    onSelect: Z
+    onSelect: w
   } = e, [{
-    audioSourceId: w,
+    audioSourceId: Z,
     notifyFriends: I,
     hidePreview: N,
-    muteStreamAudio: T,
-    preset: P,
+    muteStreamAudio: P,
+    preset: T,
     resolution: E,
     fps: R,
     sourceType: A,
     selectedChannel: k
   }, M] = (0, h.E_)(), D = !(0, c.$s)(k, "StreamOptionsMenu"), L = (0, m.Z)(), [B, G] = null != (t = (0, x.Z)(g.tI.PRESET_VIDEO)) ? t : [g.LY.RESOLUTION_720, g.ws.FPS_30], [U, W] = null != (n = (0, x.Z)(g.tI.PRESET_DOCUMENTS)) ? n : [g.LY.RESOLUTION_SOURCE, g.ws.FPS_15], F = (0, o.M)({
     deviceType: _.h7.AUDIO_INPUT,
-    selectedDeviceId: w,
+    selectedDeviceId: Z,
     analyticsLocations: [s.Z.GO_LIVE_MODAL_SETTINGS_SELECTION],
     asSubmenu: true,
     onDeviceSelect: e => (M({
@@ -99,7 +99,7 @@ function Z(e) {
     "aria-label": j.intl.string(j.t["+1H47u"]),
     navId: "stream-options",
     onClose: b,
-    onSelect: Z,
+    onSelect: w,
     children: [(0, r.jsx)(l.kSQ, {
       label: j.intl.string(v.default.P2pjm5),
       children: C.filter(e => {
@@ -114,7 +114,7 @@ function Z(e) {
         return (0, r.jsx)(l.k5B, {
           group: "preset",
           id: "stream-preset-".concat(t),
-          checked: P === t,
+          checked: T === t,
           label: (0, u.L)(t),
           subtext: function(e) {
             switch (e) {
@@ -140,7 +140,7 @@ function Z(e) {
           })
         }, t)
       })
-    }), P === g.tI.PRESET_CUSTOM && (0, r.jsxs)(r.Fragment, {
+    }), T === g.tI.PRESET_CUSTOM && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.Clw, {}), (0, r.jsx)(l.sNh, {
         id: "resolution",
         label: j.intl.string(v.default.IG5n0d),
@@ -161,7 +161,7 @@ function Z(e) {
               label: (0, f.M)(t)
             }) : (0, f.M)(t),
             action: () => (function(e) {
-              if (!(0, d.Z)(P, e, R, a.default.getCurrentUser(), L)) return b(), (0, p.E)({
+              if (!(0, d.Z)(T, e, R, a.default.getCurrentUser(), L)) return b(), (0, p.E)({
                 analyticsLocation: s.Z.GO_LIVE_MODAL_SETTINGS_SELECTION
               });
               M({
@@ -182,7 +182,7 @@ function Z(e) {
             label: "".concat(e, "fps")
           }) : "".concat(e, "fps"),
           action: () => (function(e) {
-            if (!(0, d.Z)(P, E, e, a.default.getCurrentUser(), L)) return b(), (0, p.E)({
+            if (!(0, d.Z)(T, E, e, a.default.getCurrentUser(), L)) return b(), (0, p.E)({
               analyticsLocation: s.Z.GO_LIVE_MODAL_SETTINGS_SELECTION
             });
             M({
@@ -194,11 +194,11 @@ function Z(e) {
       })]
     }), (0, r.jsx)(l.Clw, {}), (0, r.jsx)(l.S89, {
       id: "stream-option-mute",
-      checked: T,
+      checked: P,
       label: j.intl.string(v.default["b0+Ira"]),
       action: () => M({
         type: "set_mute_audio",
-        value: !T
+        value: !P
       })
     }), A === i.vA.CAMERA && F, (0, r.jsxs)(l.sNh, {
       id: "advanced-items",

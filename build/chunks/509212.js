@@ -29,7 +29,7 @@ require.d(exports, {
   NI: () => tD,
   Nj: () => eR,
   OG: () => ts,
-  PB: () => e5,
+  PB: () => e6,
   PM: () => eu,
   Pb: () => ex,
   Qe: () => Z,
@@ -686,7 +686,7 @@ let eZ = (e, t) => e > 0 ? (0, i.floor)(Math.min(t / e, 1), 4) : 0,
       includeTaskTypes: null != t ? t : tt(e) ? o.T.CONSOLE : o.T.ALL
     });
     if (e8(e))
-      if (e6(e)) return eK({
+      if (e5(e)) return eK({
         quest: e,
         taskType: o.X.WATCH_VIDEO_ON_MOBILE
       });
@@ -747,9 +747,9 @@ function e3(e, t) {
 }
 let e4 = eJ([Chunk754700.X.PLAY_ON_XBOX, Chunk754700.X.PLAY_ON_PLAYSTATION]),
   e8 = eJ([Chunk754700.X.WATCH_VIDEO, Chunk754700.X.WATCH_VIDEO_ON_MOBILE]),
-  e5 = eJ([Chunk754700.X.WATCH_VIDEO]),
-  e6 = eJ([Chunk754700.X.WATCH_VIDEO_ON_MOBILE]),
-  e7 = e => e6(e) && !e5(e);
+  e6 = eJ([Chunk754700.X.WATCH_VIDEO]),
+  e5 = eJ([Chunk754700.X.WATCH_VIDEO_ON_MOBILE]),
+  e7 = e => e5(e) && !e6(e);
 
 function e9(e) {
   return e4(e)

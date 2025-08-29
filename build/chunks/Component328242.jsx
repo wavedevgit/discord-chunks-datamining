@@ -1,111 +1,130 @@
 /** Chunk was on 46746 **/
 /** chunk id: 328242, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
-}), require("./388685.js");
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  Z: () => S
+}), require("./388685.js"), require("./642613.js");
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
+  Chunk120356 = require("./120356.js"),
+  s = require.n(Chunk120356),
   Chunk268146 = require("./268146.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk594190 = require("./594190.js"),
+  Chunk320724 = require("./320724.js"),
+  Chunk569984 = require("./569984.js"),
   Chunk63063 = require("./63063.js"),
+  Chunk77118 = require("./77118.js"),
   Chunk855403 = require("./855403.js"),
+  Chunk567126 = require("./567126.jsx"),
   Chunk615161 = require("./615161.jsx"),
   Chunk637824 = require("./637824.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk602804 = require("./602804.js");
 
-function h(e) {
+function b(e) {
   let {
     source: t
   } = e;
-  return t.id.startsWith(s.vA.SCREEN) ? (0, r.jsx)(o.pzj, {
+  return t.id.startsWith(o.vA.SCREEN) ? (0, r.jsx)(c.pzj, {
     size: "xs"
-  }) : t.id.startsWith(s.vA.WINDOW) ? null != t.icon && "" !== t.icon ? (0, r.jsx)("img", {
+  }) : t.id.startsWith(o.vA.WINDOW) ? null != t.icon && "" !== t.icon ? (0, r.jsx)("img", {
     src: t.icon,
-    className: m.sourceIcon,
+    className: j.sourceIcon,
     alt: ""
-  }) : (0, r.jsx)(o.GON, {
+  }) : (0, r.jsx)(c.GON, {
     size: "xs"
-  }) : (0, r.jsx)(o.Odl, {
+  }) : (0, r.jsx)(c.Odl, {
     size: "xs"
   })
 }
 
-function p(e) {
+function C(e) {
   let {
     source: t,
     selected: n,
     onClick: i
   } = e, {
-    url: s,
-    name: a
+    url: l,
+    name: o
   } = t;
-  return (0, r.jsxs)(o.P3F, {
+  return (0, r.jsxs)(c.P3F, {
     onClick: () => i(t),
-    className: l()(m.source, {
-      [m.selectedSource]: n
+    className: s()(j.source, {
+      [j.selectedSource]: n
     }),
     children: [(0, r.jsx)("div", {
-      className: m.sourcePreviewContainer,
+      className: j.sourcePreviewContainer,
       children: (0, r.jsxs)("div", {
-        className: m.sourcePreview,
+        className: j.sourcePreview,
         children: [(0, r.jsx)("img", {
-          src: s,
-          className: m.sourcePreviewImage,
+          src: l,
+          className: j.sourcePreviewImage,
           alt: ""
         }), (0, r.jsx)("div", {
-          className: m.sourceOverlay,
+          className: j.sourceOverlay,
           children: (0, r.jsx)("div", {
-            className: m.sourceOverlayCTA,
-            children: (0, r.jsx)(o.Text, {
+            className: j.sourceOverlayCTA,
+            children: (0, r.jsx)(c.Text, {
               variant: "text-sm/medium",
               color: "button-filled-white-text",
-              children: f.intl.string(f.t.z7WGho)
+              children: v.intl.string(v.t.z7WGho)
             })
           })
         })]
       })
     }), (0, r.jsxs)("div", {
-      className: m.sourceNameContainer,
-      children: [(0, r.jsx)(h, {
+      className: j.sourceNameContainer,
+      children: [(0, r.jsx)(b, {
         source: t
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(c.Text, {
         variant: "text-sm/medium",
-        className: m.sourceName,
-        children: a
+        className: j.sourceName,
+        children: o
       })]
     })]
   })
 }
 
-function x(e) {
-  var t;
+function S(e) {
   let {
-    onClick: n
+    onClick: t
   } = e, [{
-    windowSources: i,
+    windowSources: n,
     deviceSources: l,
-    screenSources: a,
-    sourceType: u,
-    fetchingSources: f,
-    selectedSource: h
-  }] = (0, d.E_)();
-  return f ? (0, r.jsx)("div", {
-    className: m.loading,
-    children: (0, r.jsx)(o.$jN, {})
-  }) : (t = u === s.vA.WINDOW ? i : u === s.vA.SCREEN ? a : l, u === s.vA.CAMERA && 0 === t.length ? (0, r.jsx)(g, {}) : (0, r.jsx)("div", {
-    className: m.root,
-    children: t.map(e => (0, r.jsx)(p, {
-      onClick: n,
+    screenSources: s,
+    sourceType: m,
+    fetchingSources: _,
+    selectedSource: v,
+    discordSourceId: b
+  }] = (0, g.E_)(), {
+    smarterSourceOrdering: S
+  } = (0, h.Q)({
+    location: "GoLiveSourceGrid"
+  }), O = (0, a.e7)([d.ZP], () => d.ZP.getRunningGames()), w = (0, a.cj)([d.ZP], () => {
+    let e = d.ZP.getCandidateGames(),
+      t = {};
+    for (let n of e) null != n.windowHandle && (t[n.windowHandle] = n.exeName);
+    return t
+  }), Z = (0, a.e7)([f.Z], () => f.Z.quests), I = (0, x.jx)(Z, O, n);
+  i.useEffect(() => ((0, u.Ky)(), u.P7), []);
+  let N = i.useMemo(() => S ? [...n].sort((e, t) => (0, x.ov)(t, null == I ? true : I.source.id, b, w) - (0, x.ov)(e, null == I ? true : I.source.id, b, w)) : n, [I, S, n, b, w]);
+  if (_) return (0, r.jsx)("div", {
+    className: j.loading,
+    children: (0, r.jsx)(c.$jN, {})
+  });
+  let P = [];
+  return (P = m === o.vA.WINDOW ? N : m === o.vA.SCREEN ? s : l, m === o.vA.CAMERA && 0 === P.length) ? (0, r.jsx)(y, {}) : (0, r.jsx)("div", {
+    className: j.root,
+    children: P.map(e => (0, r.jsx)(C, {
+      onClick: t,
       source: e,
-      selected: null != h && "windowHandle" in h ? (0, c.Z)(e.id, h.windowHandle) : (null == h ? true : h.id) === e.id
+      selected: null != v && "windowHandle" in v ? (0, p.Z)(e.id, v.windowHandle) : (null == v ? true : v.id) === e.id
     }, e.id))
-  }))
+  })
 }
 
-function g() {
+function y() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk602804.emptyState,
     children: [(0, Chunk951288.jsx)(Chunk481060.Odl, {

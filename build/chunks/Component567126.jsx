@@ -1,10 +1,12 @@
 /** Chunk was on 46746 **/
 /** chunk id: 567126, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Hu: () => J,
-  oA: () => F,
-  se: () => V
-}), require("./388685.js"), require("./642613.js"), require("./539854.js");
+  Hu: () => Y,
+  jx: () => F,
+  oA: () => H,
+  ov: () => W,
+  se: () => J
+}), require("./35282.js"), require("./388685.js"), require("./642613.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
@@ -63,13 +65,40 @@ function U(e) {
   return e
 }
 
-function W(e) {
-  let t = (0, y.isWindows)() ? (0, T.Z)(x.ZP, S.Z) : null,
-    n = x.ZP.getRunningGames();
-  return null != t && (0, Z.Z)(e.id, t.windowHandle) ? 2 : +(null != n.find(t => (0, Z.Z)(e.id, t.windowHandle)))
+function W(e, t, n, r) {
+  let i = (0, y.isWindows)() ? (0, P.Z)(x.ZP, S.Z) : null,
+    l = x.ZP.getRunningGames(),
+    s = null == n ? true : n.split(":")[1],
+    o = e.id.split(":")[1];
+  if (null != s && s === o) return 0;
+  if (null != t && t === e.id) return 5;
+  if (null != i && (0, w.Z)(e.id, i.windowHandle)) return 4;
+  if (null != l.find(t => (0, w.Z)(e.id, t.windowHandle))) return 3;
+  let a = null == r ? true : r[o];
+  return null != a && k.Mm.has(a) ? 2 : 1
 }
 
-function F(e) {
+function F(e, t, n) {
+  let r = (0, j.Z)({
+    location: D.dr.STREAM_SOURCE_SELECT
+  });
+  return i.useMemo(() => {
+    if (null == n || !r) return null;
+    for (let r of n) {
+      var i, l;
+      let n = t.find(e => (0, w.Z)(r.id, e.windowHandle));
+      if ((null == n ? true : n.id) == null) continue;
+      let s = (0, _.lQ)(e, n.id);
+      if (null != s && (null == (i = s.userStatus) ? true : i.enrolledAt) != null && (null == (l = s.userStatus) ? true : l.completedAt) == null) return {
+        source: r,
+        quest: s
+      }
+    }
+    return null
+  }, [r, e, t, n])
+}
+
+function H(e) {
   let {
     selectedSource: t,
     onChangeSelectedSource: n
@@ -77,27 +106,9 @@ function F(e) {
     enableGoLiveCaptureCard: l
   } = O.Z.useExperiment({
     location: "GoLive_Source_Select"
-  }), o = C.Z.supports(L.AN.GO_LIVE_HARDWARE), [a, m] = i.useState(null), [S, y] = i.useState(null), [w, I] = i.useState(null), T = null != w && w.length > 0, [P, R] = i.useState(c.vA.WINDOW), [k, U] = i.useState(false), F = i.useRef(null), z = i.useRef(new u.Xp), H = (0, d.e7)([x.ZP], () => x.ZP.getRunningGames()), V = function(e, t, n) {
-    let r = (0, j.Z)({
-      location: D.dr.STREAM_SOURCE_SELECT
-    });
-    return i.useMemo(() => {
-      if (null == n || !r) return null;
-      for (let r of n) {
-        var i, l;
-        let n = t.find(e => (0, Z.Z)(r.id, e.windowHandle));
-        if ((null == n ? true : n.id) == null) continue;
-        let s = (0, _.lQ)(e, n.id);
-        if (null != s && (null == (i = s.userStatus) ? true : i.enrolledAt) != null && (null == (l = s.userStatus) ? true : l.completedAt) == null) return {
-          source: r,
-          quest: s
-        }
-      }
-      return null
-    }, [r, e, t, n])
-  }((0, d.e7)([v.Z], () => v.Z.quests), H, S), J = i.useMemo(() => null == S ? null : [...S].sort((e, t) => (null == V ? true : V.source.id) === e.id ? false : (null == V ? true : V.source.id) === t.id ? 1 : W(t) - W(e)), [V, S]);
+  }), o = C.Z.supports(L.AN.GO_LIVE_HARDWARE), [a, m] = i.useState(null), [_, j] = i.useState(null), [S, y] = i.useState(null), w = null != S && S.length > 0, [Z, I] = i.useState(c.vA.WINDOW), [P, T] = i.useState(false), R = i.useRef(null), k = i.useRef(new u.Xp), D = (0, d.e7)([x.ZP], () => x.ZP.getRunningGames()), U = F((0, d.e7)([v.Z], () => v.Z.quests), D, _), H = i.useMemo(() => null == _ ? null : [..._].sort((e, t) => W(t, null == U ? true : U.source.id) - W(e, null == U ? true : U.source.id)), [U, _]);
   i.useEffect(() => {
-    let e = z.current;
+    let e = k.current;
     return (0, N.t)({
       width: 176,
       height: 99
@@ -107,7 +118,7 @@ function F(e) {
         windowSources: n,
         cameraSources: r
       } = e;
-      m(t), y(n), I(r)
+      m(t), j(n), y(r)
     }), e.start(1e3, async () => {
       let {
         screenSources: e,
@@ -117,31 +128,31 @@ function F(e) {
         width: 176,
         height: 99
       });
-      m(e), y(t), I(n)
+      m(e), j(t), y(n)
     }), () => {
       e.stop()
     }
   }, []);
-  let Y = i.useCallback(e => {
-      null !== e && (F.current = e, U(!e.isScrolledToTop()))
+  let z = i.useCallback(e => {
+      null !== e && (R.current = e, T(!e.isScrolledToTop()))
     }, []),
-    [X, K] = i.useState(true);
+    [V, J] = i.useState(true);
   i.useEffect(() => {
     g.Z.hasPermission(M.Eu.SCREEN_RECORDING, {
       showAuthorizationError: false
-    }).then(K)
+    }).then(J)
   }, []);
-  let q = function(e) {
+  let Y = function(e) {
     switch (e) {
       case c.vA.WINDOW:
-        return J;
+        return H;
       case c.vA.SCREEN:
         return a;
       case c.vA.CAMERA:
-        return w
+        return S
     }
-  }(P);
-  if (null == q) returnfalse === X ? (0, r.jsxs)(f.Text, {
+  }(Z);
+  if (null == Y) returnfalse === V ? (0, r.jsxs)(f.Text, {
     className: G.errorMessage,
     variant: "text-md/normal",
     color: "text-danger",
@@ -152,7 +163,7 @@ function F(e) {
     align: h.Z.Align.CENTER,
     children: (0, r.jsx)(f.$jN, {})
   });
-  let Q = q.map(e => {
+  let X = Y.map(e => {
     let {
       id: i
     } = e, l = (null == t ? true : t.id) === i;
@@ -171,7 +182,7 @@ function F(e) {
     children: [(0, r.jsxs)("div", {
       className: G.segmentContainer,
       children: [(0, r.jsx)(E.Z, {
-        separator: k
+        separator: P
       }), (0, r.jsx)(f.sY7, {
         options: function() {
           let e = [{
@@ -181,35 +192,35 @@ function F(e) {
             name: B.intl.string(B.t["/iX8u7"]),
             value: c.vA.SCREEN
           }];
-          return l && o && T && e.push({
+          return l && o && w && e.push({
             name: B.intl.string(B.t.cWt5Ul),
             value: c.vA.CAMERA
           }), e
         }(),
-        value: P,
+        value: Z,
         onChange: e => {
           let {
             value: t
           } = e;
-          return R(t)
+          return I(t)
         },
         className: G.segmentControl,
         optionClassName: G.segmentControlOption
       })]
     }), (0, r.jsxs)(f.Den, {
-      ref: Y,
+      ref: z,
       className: G.sourceScroller,
       onScroll: function() {
-        let e = F.current;
-        null != e && U(!e.isScrolledToTop())
+        let e = R.current;
+        null != e && T(!e.isScrolledToTop())
       },
-      children: [P === c.vA.WINDOW && null != V && (0, r.jsx)(b.Z, {
-        quest: V.quest
+      children: [Z === c.vA.WINDOW && null != U && (0, r.jsx)(b.Z, {
+        quest: U.quest
       }), (0, r.jsx)(p.Z, {
         layout: p.Z.Layout.WRAP,
         columns: 2,
         className: G.sourceContainer,
-        children: Q
+        children: X
       })]
     })]
   })
@@ -244,7 +255,7 @@ function z(e) {
   })
 }
 
-function H(e) {
+function V(e) {
   let {
     id: t,
     name: n,
@@ -277,7 +288,7 @@ function H(e) {
   })
 }
 
-function V(e) {
+function J(e) {
   let {
     onSourceSelect: t
   } = e, [n, l] = i.useState([]), [o, c] = i.useState({}), d = i.useRef(new u.Xp);
@@ -330,19 +341,19 @@ function V(e) {
       onSelect: t
     }) : (0, r.jsxs)("div", {
       className: G.nativePickerTypes,
-      children: [(0, r.jsx)(H, {
+      children: [(0, r.jsx)(V, {
         onSelect: t,
         id: "screen",
         name: B.intl.string(B.t.R4wpLC),
         text: B.intl.string(B.t.cVUFXV),
         icon: f.pzj
-      }), (0, r.jsx)(H, {
+      }), (0, r.jsx)(V, {
         onSelect: t,
         id: "window",
         name: B.intl.string(B.t["+SLJCg"]),
         text: B.intl.string(B.t.dG2A1N),
         icon: f.GON
-      }), x ? (0, r.jsx)(H, {
+      }), x ? (0, r.jsx)(V, {
         onSelect: t,
         id: "app",
         name: B.intl.string(B.t.ct7AKS),
@@ -390,7 +401,7 @@ function V(e) {
   })
 }
 
-function J(e) {
+function Y(e) {
   let {
     onSourceSelect: t,
     onCancel: n,
@@ -398,9 +409,9 @@ function J(e) {
   } = e, {
     lastPickerAction: s,
     lastPickerError: o
-  } = (0, P.Z)(t, n);
+  } = (0, T.Z)(t, n);
   return i.useEffect(() => {
-    (0, y.isLinux)() || (0, y.isMac)() && a().satisfies(null === m.Z || true === m.Z ? true : m.Z.os.release, k.jR) ? (0, w.T)(l) : (0, w.t)()
+    (0, y.isLinux)() || (0, y.isMac)() && a().satisfies(null === m.Z || true === m.Z ? true : m.Z.os.release, k.jR) ? (0, Z.T)(l) : (0, Z.t)()
   }, [l]), s === I.Uc.Error ? (0, r.jsx)(f.Text, {
     className: G.errorMessage,
     variant: "text-md/normal",
