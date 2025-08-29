@@ -69,10 +69,15 @@ function p(e, t) {
 }
 let h = [{
     id: "strength",
-    label: "Strength"
+    label: "Strength",
+    icon: Chunk481060.lOy
   }, {
     id: "wisdom",
-    label: "Wisdom"
+    label: "Wisdom",
+    icon: {
+      type: "role",
+      color: Chunk481060.TVs.unsafe_rawColors.BRAND_500.css
+    }
   }, {
     id: "charisma",
     label: "Charisma"
