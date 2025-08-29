@@ -153,7 +153,7 @@ function e4(e, t) {
 
 function e8(e, t) {
   if (null == e) return {};
-  var n, r, i = e6(e, t);
+  var n, r, i = e5(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -161,7 +161,7 @@ function e8(e, t) {
   return i
 }
 
-function e6(e, t) {
+function e5(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -169,7 +169,7 @@ function e6(e, t) {
   return i
 }
 
-function e5() {
+function e6() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk636428.nitroFileSizeUpsell,
     children: [(0, Chunk951288.jsx)("img", {
@@ -267,7 +267,7 @@ class tr extends(r = Chunk647438.Component) {
   }
   renderSocialProofingFileSizeNitroUpsell(e) {
     let t = e.attachments.some(e => e.size > eQ.Lw);
-    return (0, eN.M)("attachment") && t ? (0, i.jsx)(e5, {}) : null
+    return (0, eN.M)("attachment") && t ? (0, i.jsx)(e6, {}) : null
   }
   renderCodedLinks(e) {
     return 0 === e.codedLinks.length ? null : e.codedLinks.map(t => {

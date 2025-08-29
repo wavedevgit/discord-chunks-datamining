@@ -149,8 +149,10 @@ function D(e, t) {
       C(e) && N(e, t)
     })
   }), w(e.resolved, t), (null == (o = e.interaction_metadata) ? true : o.user) != null && C(e.interaction_metadata.user) && N(e.interaction_metadata.user, t), null != e.message_snapshots && e.message_snapshots.forEach(e => {
-    var n, r, i, a;
-    (null == (r = e.moderator_report) || null == (n = r.reported_member) ? true : n.user) != null && N(e.moderator_report.reported_member.user, t), (null == (a = e.moderator_report) || null == (i = a.reporting_member) ? true : i.user) != null && N(e.moderator_report.reporting_member.user, t)
+    var n, r, i, a, o, s, l;
+    (null == (r = e.moderator_report) || null == (n = r.reported_member) ? true : n.user) != null && N(e.moderator_report.reported_member.user, t), (null == (a = e.moderator_report) || null == (i = a.reporting_member) ? true : i.user) != null && N(e.moderator_report.reporting_member.user, t), Object.values(null != (l = null == (s = e.message) || null == (o = s.resolved) ? true : o.users) ? l : {}).forEach(e => {
+      C(e) && N(e, t)
+    })
   })
 }
 

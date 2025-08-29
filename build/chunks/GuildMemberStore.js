@@ -4,7 +4,7 @@
 require.d(exports, {
   O5: () => K,
   V6: () => W,
-  ZP: () => ek
+  ZP: () => eU
 }), require("./35282.js"), require("./388685.js"), require("./997841.js"), require("./539854.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -646,27 +646,36 @@ function eN(e, t) {
   })
 }
 
-function eR(e) {
+function eR(e, t) {
+  var n;
+  let r = false;
+  return null == (n = e.message_snapshots) || n.forEach(t => {
+    var n, i;
+    eN(null == (n = t.message) ? true : n.resolved, null == (i = e.message_reference) ? true : i.guild_id) && (r = true)
+  }), eN(e.resolved, t) || r
+}
+
+function eP(e) {
   let {
     message: t,
     guildId: n
   } = e;
-  return eN(t.resolved, n)
-}
-
-function eP(e) {
-  let t = O.Z.getChannel(e.channel_id);
-  eN(e.resolved, null == t ? true : t.guild_id)
+  return eR(t, n)
 }
 
 function ew(e) {
-  let {
-    messages: t
-  } = e;
-  t.forEach(e => eP(e))
+  let t = O.Z.getChannel(e.channel_id);
+  eR(e, null == t ? true : t.guild_id)
 }
 
 function eD(e) {
+  let {
+    messages: t
+  } = e;
+  t.forEach(e => ew(e))
+}
+
+function ex(e) {
   let {
     pins: t
   } = e;
@@ -674,11 +683,11 @@ function eD(e) {
     let {
       message: t
     } = e;
-    return eP(t)
+    return ew(t)
   })
 }
 
-function ex(e) {
+function eL(e) {
   let {
     data: t
   } = e, n = [];
@@ -691,12 +700,12 @@ function ex(e) {
         n.push(e)
       })
     })
-  }), ew({
+  }), eD({
     messages: n
   })
 }
 
-function eL(e) {
+function ej(e) {
   let {
     location: t,
     participants: n
@@ -704,11 +713,11 @@ function eL(e) {
   return null != r && eO(r, n)
 }
 
-function ej(e) {
+function eM(e) {
   let t = O.Z.getChannel(e.channelId);
   return eN(e.resolved, null == t ? true : t.guild_id)
 }
-class eM extends(r = Chunk442837.ZP.Store) {
+class ek extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk430824.Z, Chunk485386.Z, Chunk314897.default, Chunk160404.Z)
   }
@@ -817,8 +826,8 @@ class eM extends(r = Chunk442837.ZP.Store) {
     return k
   }
 }
-S(eM, "displayName", "GuildMemberStore");
-let ek = new eM(Chunk570140.Z, {
+S(ek, "displayName", "GuildMemberStore");
+let eU = new ek(Chunk570140.Z, {
   CONNECTION_OPEN: X,
   CONNECTION_OPEN_SUPPLEMENTAL: Q,
   OVERLAY_INITIALIZE: $,
@@ -846,15 +855,15 @@ let ek = new eM(Chunk570140.Z, {
   PASSIVE_UPDATE_V2: ec,
   CLEAR_PENDING_CHANNEL_AND_ROLE_UPDATES: eA,
   LOCAL_MESSAGES_LOADED: er,
-  MESSAGE_CREATE: eR,
-  MESSAGE_UPDATE: eR,
-  LOAD_MESSAGES_SUCCESS: ew,
-  LOAD_MESSAGES_AROUND_SUCCESS: ew,
-  LOAD_RECENT_MENTIONS_SUCCESS: ew,
-  LOAD_PINNED_MESSAGES_SUCCESS: eD,
-  SEARCH_MESSAGES_SUCCESS: ex,
-  MOD_VIEW_SEARCH_MESSAGES_SUCCESS: ex,
+  MESSAGE_CREATE: eP,
+  MESSAGE_UPDATE: eP,
+  LOAD_MESSAGES_SUCCESS: eD,
+  LOAD_MESSAGES_AROUND_SUCCESS: eD,
+  LOAD_RECENT_MENTIONS_SUCCESS: eD,
+  LOAD_PINNED_MESSAGES_SUCCESS: ex,
+  SEARCH_MESSAGES_SUCCESS: eL,
+  MOD_VIEW_SEARCH_MESSAGES_SUCCESS: eL,
   MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: em,
-  EMBEDDED_ACTIVITY_UPDATE_V2: eL,
-  INTERACTION_MODAL_CREATE: ej
+  EMBEDDED_ACTIVITY_UPDATE_V2: ej,
+  INTERACTION_MODAL_CREATE: eM
 })

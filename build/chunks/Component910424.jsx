@@ -84,7 +84,7 @@ function y(e) {
   return t ? C = h.intl.string(h.t.XvBdeX) : S && (C = h.intl.string(h.t.JH1SJy)), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.zxk, {
       size: "sm",
-      variant: "active",
+      variant: S ? "secondary" : "active",
       icon: a.hGI,
       text: C,
       disabled: t || S || !v,

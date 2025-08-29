@@ -238,8 +238,8 @@ let eK = {},
   e3 = false,
   e4 = false,
   e8 = false,
-  e6 = false,
-  e5 = Chunk65154.Av,
+  e5 = false,
+  e6 = Chunk65154.Av,
   e7 = false,
   e9 = false,
   te = false,
@@ -329,12 +329,12 @@ function tj(e) {
 
 function tM() {
   var e, t, n;
-  let i = arguments.length > 0 && true !== arguments[0] ? arguments[0] : e6,
+  let i = arguments.length > 0 && true !== arguments[0] ? arguments[0] : e5,
     o = arguments.length > 1 && true !== arguments[1] ? arguments[1] : a,
     s = a;
-  if ((null == s ? true : s.desktopSource) != null && s.desktopSource.id !== (null == o || null == (e = o.desktopSource) ? true : module.id) && (null != s.desktopSource.soundshareId && (0, Chunk358085.isWindows)() && Chunk887278.pn(s.desktopSource.soundshareId), eW.setGoLiveSource(null, eQ)), (null == s ? true : s.cameraSource) != null && (s.cameraSource.videoDeviceGuid !== (null == o || null == (t = o.cameraSource) ? true : exports.videoDeviceGuid) || s.cameraSource.audioDeviceGuid !== (null == o || null == (n = o.cameraSource) ? true : require.audioDeviceGuid)) && eW.setGoLiveSource(null, eQ), e6 || i) {
+  if ((null == s ? true : s.desktopSource) != null && s.desktopSource.id !== (null == o || null == (e = o.desktopSource) ? true : module.id) && (null != s.desktopSource.soundshareId && (0, Chunk358085.isWindows)() && Chunk887278.pn(s.desktopSource.soundshareId), eW.setGoLiveSource(null, eQ)), (null == s ? true : s.cameraSource) != null && (s.cameraSource.videoDeviceGuid !== (null == o || null == (t = o.cameraSource) ? true : exports.videoDeviceGuid) || s.cameraSource.audioDeviceGuid !== (null == o || null == (n = o.cameraSource) ? true : require.audioDeviceGuid)) && eW.setGoLiveSource(null, eQ), e5 || i) {
     let e = tw().videoDeviceId;
-    e6 && module === Chunk65154.w5 && e5 !== Chunk65154.Av && (e = e5), e5 = (e6 = i) ? t3(e1, module) : Chunk65154.Av, eW.setVideoInputDevice(e5)
+    e5 && module === Chunk65154.w5 && e6 !== Chunk65154.Av && (e = e6), e6 = (e5 = i) ? t3(e1, module) : Chunk65154.Av, eW.setVideoInputDevice(e6)
   }
   if (a = o, null != o) {
     let e = {
@@ -852,18 +852,18 @@ function t8(e) {
   }
 }
 
-function t6(e) {
+function t5(e) {
   tr = e.length > 0;
   let t = e1;
-  if (e1 = t2(e, eT.intl.string(eT.t.WKWARU)), e6 && !p().isEqual(e1, t)) {
+  if (e1 = t2(e, eT.intl.string(eT.t.WKWARU)), e5 && !p().isEqual(e1, t)) {
     var n;
-    let e = true !== e1[e5],
-      r = e5 === eI.w5 && (null == (n = t[eI.w5]) ? true : n.disabled);
+    let e = true !== e1[e6],
+      r = e6 === eI.w5 && (null == (n = t[eI.w5]) ? true : n.disabled);
     tM(e || r)
   }
 }
 
-function t5() {
+function t6() {
   var e, t;
   let n = arguments.length > 0 && true !== arguments[0] && arguments[0],
     r = null != (e = Chunk581883.Z.settings.audioContextSettings) ? module : {
@@ -940,7 +940,7 @@ function ne(e) {
     playSoundEffect: true
   }), tQ({
     mostRecentlyRequestedVoiceFilter: null
-  })) : n(358820).r5()), t5()
+  })) : n(358820).r5()), t6()
 }
 
 function nt(e) {
@@ -990,7 +990,7 @@ function na(e) {
       e2 = t.mute || t.suppress, e8 = t.deaf, eW.eachConnection(tL);
       let e = null != t.guildId && null != t.channelId && null != tm && tm !== t.channelId,
         n = !ts && null == t.channelId;
-      return tM(!e && !n && e6), tm = t.channelId, true
+      return tM(!e && !n && e5), tm = t.channelId, true
     }
     return __OVERLAY__ || t.userId !== eu.default.getId() || null != ep.Z.getChannelId() || tM(false, null), e
   }, false)
@@ -1038,7 +1038,7 @@ function nc(e) {
     wasSaved: r
   } = e;
   if (t !== eO.yP.PRELOADED_USER_SETTINGS || n || null != r) returnfalse;
-  t5(true)
+  t6(true)
 }
 
 function nu(e) {
@@ -1239,7 +1239,7 @@ function nS(e) {
     outputDevices: n,
     videoDevices: r
   } = e;
-  t4(t), t8(n), t6(r)
+  t4(t), t8(n), t5(r)
 }
 
 function nA(e) {
@@ -1468,7 +1468,7 @@ function n$(e) {
       ty = true, eW.eachConnection(tL);
       break;
     case ey.Eu.CAMERA:
-      !r && e6 && tM(false);
+      !r && e5 && tM(false);
       break;
     default:
       returnfalse
@@ -1534,13 +1534,13 @@ function n8(e) {
   }), eW.eachConnection(e => e.setVoiceFilterId(t))
 }
 
-function n6() {
+function n5() {
   tQ({
     mostRecentlyRequestedVoiceFilter: null
   })
 }
 
-function n5(e) {
+function n6(e) {
   let {
     voiceFilterId: t
   } = e;
@@ -1704,7 +1704,7 @@ function ru(e) {
     ea.isPlatformEmbedded && true === o && ({
       soundshareId: e,
       soundshareSession: r
-    } = t7(c), null != e && t9(e, r)), tj(s), tM(s === eI.Yn.STREAM && e6, {
+    } = t7(c), null != e && t9(e, r)), tj(s), tM(s === eI.Yn.STREAM && e5, {
       desktopSource: {
         id: i,
         sourcePid: c,
@@ -1722,7 +1722,7 @@ function ru(e) {
         videoDeviceGuid: t,
         audioDeviceGuid: n
       } = a.cameraSettings,
-      o = e === eI.Yn.STREAM && e6,
+      o = e === eI.Yn.STREAM && e5,
       s = null != (i = a.qualityOptions) ? i : {
         resolution: 720,
         frameRate: 30
@@ -1737,7 +1737,7 @@ function ru(e) {
         frameRate: s.frameRate
       }
     })
-  } else tM(e6, null)
+  } else tM(e5, null)
 }
 
 function rd(e) {
@@ -1776,7 +1776,7 @@ function rh(e) {
   let {
     state: t
   } = e, n = D.Z.isEnabled();
-  if (t === eE.$7l.BACKGROUND && e6 && !n) tn = true, tM(false);
+  if (t === eE.$7l.BACKGROUND && e5 && !n) tn = true, tM(false);
   else {
     if (t !== eE.$7l.ACTIVE || !tn) returnfalse;
     tn = false, tM(true)
@@ -1789,7 +1789,7 @@ function rm(e) {
 }
 
 function rg() {
-  if (!e6 && null == a || null != Chunk19780.Z.getRTCConnectionId()) returnfalse;
+  if (!e5 && null == a || null != Chunk19780.Z.getRTCConnectionId()) returnfalse;
   tM(false, null)
 }
 
@@ -1930,7 +1930,7 @@ class rT extends(u = Chunk442837.ZP.Store) {
     return !this.isSupported() || tw(module).deaf
   }
   isVideoEnabled() {
-    return e6 && tr
+    return e5 && tr
   }
   isVideoAvailable() {
     return Object.values(e1).some(e => {
@@ -2372,7 +2372,7 @@ let rA = r = new rT(Chunk570140.Z, {
   MEDIA_ENGINE_SET_ENABLE_HARDWARE_MUTE_NOTICE: rI,
   VOICE_FILTER_REQUEST_SWITCH: n8,
   VOICE_FILTER_LOOPBACK_TOGGLE: n4,
-  VOICE_FILTER_APPLIED: n5,
-  VOICE_FILTER_DOWNLOAD_FAILED: n6,
-  VOICE_FILTER_APPLY_FAILED: n6
+  VOICE_FILTER_APPLIED: n6,
+  VOICE_FILTER_DOWNLOAD_FAILED: n5,
+  VOICE_FILTER_APPLY_FAILED: n5
 })
