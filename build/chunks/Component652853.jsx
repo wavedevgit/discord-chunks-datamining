@@ -13,7 +13,8 @@ let s = Chunk647438.createContext({
   theme: Chunk210887.Z.themePreferenceForSystemTheme((0, Chunk541049.Z)()),
   themeType: null,
   primaryColor: null,
-  secondaryColor: null
+  secondaryColor: null,
+  userId: null
 });
 
 function l(e) {
@@ -22,16 +23,18 @@ function l(e) {
     themeType: n,
     primaryColor: a,
     secondaryColor: o,
-    children: l
-  } = e, c = i.useMemo(() => ({
+    userId: l,
+    children: c
+  } = e, u = i.useMemo(() => ({
     theme: t,
     themeType: n,
     primaryColor: a,
-    secondaryColor: o
-  }), [t, n, a, o]);
+    secondaryColor: o,
+    userId: l
+  }), [t, n, a, o, l]);
   return (0, r.jsx)(s.Provider, {
-    value: c,
-    children: l
+    value: u,
+    children: c
   })
 }
 let c = () => Chunk647438.useContext(s)

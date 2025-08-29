@@ -57,6 +57,7 @@ let f = Object.assign(Chunk647438.forwardRef(function(e, t) {
           theme: null != p ? p : E,
           primaryColor: b,
           secondaryColor: y,
+          userId: n.id,
           children: h
         })
       })
