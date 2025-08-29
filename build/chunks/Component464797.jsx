@@ -1,5 +1,5 @@
 /** Chunk was on 88806 **/
-/** chunk id: 464797, original params: e,t,r (module,exports,require) **/
+/** chunk id: 464797, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   R: () => f,
   _: () => s
@@ -20,38 +20,38 @@ function s() {
 function f(e) {
   var {
     children: t,
-    guildProductListingId: r
+    guildProductListingId: n
   } = e, o = function(e, t) {
     if (null == e) return {};
-    var r, n, o = function(e, t) {
+    var n, r, o = function(e, t) {
       if (null == e) return {};
-      var r, n, o = {},
+      var n, r, o = {},
         c = Object.keys(e);
-      for (n = 0; n < c.length; n++) r = c[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
+      for (r = 0; r < c.length; r++) n = c[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
       return o
     }(e, t);
     if (Object.getOwnPropertySymbols) {
       var c = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < c.length; n++) r = c[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
+      for (r = 0; r < c.length; r++) n = c[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
     }
     return o
   }(e, ["children", "guildProductListingId"]);
-  let c = (0, i.e7)([u.Z], () => u.Z.getGuildProduct(r));
-  return l()(null != c, "guildProductListing cannot be null"), (0, n.jsx)(a.Provider, {
+  let c = (0, i.e7)([u.Z], () => u.Z.getGuildProduct(n));
+  return l()(null != c, "guildProductListing cannot be null"), (0, r.jsx)(a.Provider, {
     value: function(e) {
       for (var t = 1; t < arguments.length; t++) {
-        var r = null != arguments[t] ? arguments[t] : {},
-          n = Object.keys(r);
-        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(r, e).enumerable
-        }))), n.forEach(function(t) {
-          var n;
-          n = r[t], t in e ? Object.defineProperty(e, t, {
-            value: n,
+        var n = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = n
+          }) : e[t] = r
         })
       }
       return e

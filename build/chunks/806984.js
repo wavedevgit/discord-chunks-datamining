@@ -1,5 +1,5 @@
 /** Chunk was on 88806 **/
-/** chunk id: 806984, original params: e,t,r (module,exports,require) **/
+/** chunk id: 806984, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => a
 });
@@ -14,15 +14,15 @@ function a(e) {
   let {
     handleClose: t
   } = e, {
-    guildProductListing: r,
-    guildId: n
+    guildProductListing: n,
+    guildId: r
   } = (0, u._)(), {
     selectedSkuPricePreview: a
   } = (0, l.JL)();
   return (0, c.ZP)(() => {
     o()(null != a, "selectedSkuPricePreview cannot be null"), (0, i.u)({
-      guildId: n,
-      guildProductListingId: r.id,
+      guildId: r,
+      guildProductListingId: n.id,
       skuPricePreview: a
     }), t()
   }), null

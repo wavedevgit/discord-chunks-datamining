@@ -2,10 +2,12 @@
 /** chunk id: 477734, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  X$: () => i,
-  _f: () => a
+  X$: () => o,
+  _f: () => s
 }), require("./906732.jsx");
-let r = (0, require("./818083.js").B)({
+var Chunk818083 = require("./818083.js"),
+  Chunk387332 = require("./387332.js");
+let a = (0, Chunk818083.B)({
   kind: "user",
   id: "2023-08_remix_ga",
   label: "Remix General Available",
@@ -41,18 +43,24 @@ let r = (0, require("./818083.js").B)({
   }]
 });
 
-function i() {
-  return r.useExperiment({
+function o() {
+  let e = (0, Chunk387332.Y0)({
+    location: "canSeeRemixBadge"
+  });
+  return a.useExperiment({
     location: "canSeeRemixBadge"
   }, {
     autoTrackExposure: true
-  }).canSeeRemixBadge
+  }).canSeeRemixBadge && module
 }
 
-function a() {
-  return !!r.useExperiment({
+function s() {
+  let e = (0, Chunk387332.Y0)({
+    location: "isRemixANitroPerkHook"
+  });
+  return a.useExperiment({
     location: "isRemixANitroPerkHook"
   }, {
     autoTrackExposure: true
-  }).isNitroPerk
+  }).isNitroPerk && module
 }

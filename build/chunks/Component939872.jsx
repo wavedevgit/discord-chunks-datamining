@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk17894 = require("./17894.js"),
   Chunk430824 = require("./430824.js"),
@@ -39,15 +39,19 @@ let f = e => {
       children: u.intl.format(u.t.TnhFHh, {
         benefits: p.asString()
       })
-    }), (0, r.jsx)(a.zx, {
-      className: d.openDiscordButton,
-      onClick: () => (0, s.Z)("role_sub_mweb_success_modal"),
-      children: u.intl.string(u.t.WWvswM)
-    }), (0, r.jsx)(a.zx, {
-      className: d.doneButton,
-      look: a.zx.Looks.BLANK,
-      onClick: () => t(true),
-      children: u.intl.string(u.t.y84Dho)
+    }), (0, r.jsxs)("div", {
+      className: d.actions,
+      children: [(0, r.jsx)(a.zx, {
+        variant: "primary",
+        text: u.intl.string(u.t.WWvswM),
+        fullWidth: true,
+        onClick: () => (0, s.Z)("role_sub_mweb_success_modal")
+      }), (0, r.jsx)(a.zx, {
+        variant: "secondary",
+        text: u.intl.string(u.t.y84Dho),
+        fullWidth: true,
+        onClick: () => t(true)
+      })]
     })]
   })
 }
