@@ -1271,6 +1271,7 @@ function eb() {
       targetElementRef: es,
       shouldShow: Chunk213734,
       onRequestClose: eE,
+      position: "bottom",
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1291,6 +1292,7 @@ function eb() {
       targetElementRef: el,
       shouldShow: Chunk681715,
       onRequestClose: eE,
+      position: "left",
       caretConfig: {
         position: "bottom",
         align: "center"

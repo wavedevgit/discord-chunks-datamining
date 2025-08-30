@@ -96,7 +96,7 @@ function S(e) {
     return null == a.current || (null == (e = a.current.closest("[data-layer]")) ? true : e.getAttribute("data-layer")) === j
   }, [a, j]);
   i.useEffect(() => {
-    P(M && p)
+    M && p ? P(true) : M || P(false)
   }, [M, p]);
   let k = () => {
       P(false)
