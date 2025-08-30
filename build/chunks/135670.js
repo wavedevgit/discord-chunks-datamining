@@ -152,6 +152,10 @@ class c extends Chunk47770.Z {
   }
   setSidechainCompression(e) {}
   setSidechainCompressionStrength(e) {}
+  getSystemMicrophoneMode() {
+    return Promise.resolve("")
+  }
+  showSystemCaptureConfigurationUI(e) {}
   setNativeDesktopVideoSourcePickerActive(e) {}
   presentNativeScreenSharePicker(e) {}
   releaseNativeDesktopVideoSourcePickerStream() {}

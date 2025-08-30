@@ -286,6 +286,10 @@ class N extends Chunk47770.Z {
   presentNativeScreenSharePicker(e) {}
   releaseNativeDesktopVideoSourcePickerStream() {}
   setMaybePreprocessMute(e) {}
+  getSystemMicrophoneMode() {
+    return Promise.resolve("")
+  }
+  showSystemCaptureConfigurationUI(e) {}
   fetchAsyncResources(e) {
     return e.fetchDave ? (0, y.IT)() ? (0, y.Ft)() ? new Promise((e, t) => {
       (0, y.D5)().then(t => {

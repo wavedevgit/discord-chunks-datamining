@@ -602,7 +602,7 @@ function e8(e) {
   null != r && n(r.id, r.name, null != (t = e.pids) ? t : [])
 }
 
-function e6() {
+function e5() {
   Chunk353926.Z.hasLoadedExperiments && q.length > 0 && (eB(q), q = [])
 }!__OVERLAY__ && ((0, Chunk358085.isDesktop)() || Chunk987650.iP) && (el = function() {
   let e = [],
@@ -711,7 +711,7 @@ function e6() {
     })
   })
 });
-class e5 extends(i = Chunk442837.ZP.Store) {
+class e6 extends(i = Chunk442837.ZP.Store) {
   initialize() {
     var e, t, n, r, i;
     let a = null != (e = Chunk433517.K.get(W)) ? module : {
@@ -728,7 +728,7 @@ class e5 extends(i = Chunk442837.ZP.Store) {
         es.gameOverrides[t] = e
       }), es.enableOverlay = null != (n = Chunk392711.enableOverlay) ? require : {}, es.enableOverlayV3 = null != (r = Chunk392711.enableOverlayV3) ? r : {}, es.enableDetection = null != (i = Chunk392711.enableDetection) ? i : {}, eU(), Array.isArray(Chunk392711.gamesSeen))
       for (let e of Chunk392711.gamesSeen) "number" == typeof module.id && (module.nativeProcessObserverId = module.id, delete module.id, s = true);
-    this.waitFor(Chunk77498.Z, Chunk353926.Z, Chunk802512.Z), q = Chunk392711.gamesSeen, this.syncWith([Chunk353926.Z], e6), this.syncWith([Chunk283595.Z, Chunk77498.Z, Chunk417363.Z], o().throttle(ek, 1e3)), Chunk913527 && eL()
+    this.waitFor(Chunk77498.Z, Chunk353926.Z, Chunk802512.Z), q = Chunk392711.gamesSeen, this.syncWith([Chunk353926.Z], e5), this.syncWith([Chunk283595.Z, Chunk77498.Z, Chunk417363.Z], o().throttle(ek, 1e3)), Chunk913527 && eL()
   }
   getVisibleGame() {
     return null == er || ex(er) ? er : null
@@ -824,8 +824,8 @@ class e5 extends(i = Chunk442837.ZP.Store) {
     eh.add(null != (t = (0, p.F)(e)) ? t : e)
   }
 }
-Z(e5, "displayName", "RunningGameStore");
-let e7 = new e5(Chunk570140.Z, {
+Z(e6, "displayName", "RunningGameStore");
+let e7 = new e6(Chunk570140.Z, {
     ROBLOX_SUBGAME_UPDATE: eV,
     ROBLOX_SUBGAME_APPLICATION_FETCH_SUCCESS: eV,
     RUNNING_GAMES_CHANGE: eH,

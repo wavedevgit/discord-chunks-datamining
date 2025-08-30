@@ -293,7 +293,7 @@ function ed(e) {
     }),
     {
       requestedScopes: e8,
-      accountScopes: e6
+      accountScopes: e5
     } = i.useMemo(() => {
       let e = e0 ? null == e3 ? true : e3.scopes : ed,
         t = (0, U.K)(null != e ? e : []),
@@ -303,7 +303,7 @@ function ed(e) {
         accountScopes: n
       }
     }, [null == e3 ? true : e3.scopes, ed, e0]),
-    e5 = i.useMemo(() => {
+    e6 = i.useMemo(() => {
       var e;
       let t = e0 ? d.vB(null != (e = null == e3 ? true : e3.permissions) ? e : 0) : ef;
       return null != t ? t : M.Hn
@@ -363,7 +363,7 @@ function ed(e) {
           state: eo,
           nonce: es,
           integrationType: eJ,
-          permissions: d.Od(e5, eY),
+          permissions: d.Od(e6, eY),
           guildId: eJ === c.Y.GUILD_INSTALL && null != eZ ? eZ : true,
           channelId: eJ === c.Y.GUILD_INSTALL && null != eV ? eV : true,
           dmSettings: {
@@ -391,7 +391,7 @@ function ed(e) {
         let e = t.body;
         (null == e ? true : e.message) != null && "" !== e.message ? ej(Error(e.message)) : ej(e), ex("AUTHORIZE_SCOPES"), ek(false)
       }
-    }, [ev, eE, eO, null == eP ? true : eP.application, eQ, eI, P, e8, Q, et, ei, ea, eo, es, e5, eY, eZ, eJ, eV, e9, eK]),
+    }, [ev, eE, eO, null == eP ? true : eP.application, eQ, eI, P, e8, Q, et, ei, ea, eo, es, e6, eY, eZ, eJ, eV, e9, eK]),
     ti = i.useRef(false),
     ta = i.useCallback(async () => {
       if (!L.default.isAuthenticated()) return void(0, G.c$)(eN, "oauth2_error_not_authenticated");
@@ -442,10 +442,10 @@ function ed(e) {
       application_id: P,
       integration_type: eJ,
       scopes: e8,
-      permissions: e5.toString(),
+      permissions: e6.toString(),
       mobile_push_notification_default_setting: false
     }))
-  }, [P, eJ, e5, e8, eD]), i.useEffect(() => {
+  }, [P, eJ, e6, e8, eD]), i.useEffect(() => {
     if (null == eD && (!e0 || null != e1) && eR)
       if (null != eC) {
         var e;
@@ -455,8 +455,8 @@ function ed(e) {
     if (null == eJ || null != eP || null != eL) return;
     eJ === c.Y.USER_INSTALL && (eF(null), eH(null));
     let e = e8.filter(e => !F.ak.includes(e));
-    0 === e8.length ? ej(Error("No scopes were provided.")) : e.length > 0 ? ej(Error("Invalid scope: ".concat(e[0]))) : (0, Z._$)(e5) ? ej(Error("Invalid permission(s) provided.")) : ta()
-  }, [tt, ta, e8, e5, eJ, eP, eL]);
+    0 === e8.length ? ej(Error("No scopes were provided.")) : e.length > 0 ? ej(Error("Invalid scope: ".concat(e[0]))) : (0, Z._$)(e6) ? ej(Error("Invalid permission(s) provided.")) : ta()
+  }, [tt, ta, e8, e6, eJ, eP, eL]);
   let tl = i.useCallback(e => {
       e && eG(true)
     }, []),
@@ -530,10 +530,10 @@ function ed(e) {
       h = (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(Y.Z, {
           application: eP.application,
-          accountScopes: e6
+          accountScopes: e5
         }), (0, r.jsx)(W.Z, {
           application: eP.application,
-          accountScopes: e6,
+          accountScopes: e5,
           requestedScopes: e8,
           integrationType: eJ,
           errors: tE,
@@ -564,7 +564,7 @@ function ed(e) {
           selectedGuildId: eZ,
           onChannelChange: eH
         }) : null]
-      }), e8.includes(u.x.BOT) && !d.fS(e5, M.Hn) && (v = "AUTHORIZE_BOT_PERMISSIONS"), to.length > 1 && (m = "SELECT_INSTALL_TYPE"), t_ = tO && null == eQ || ty && null == eV, tf = true;
+      }), e8.includes(u.x.BOT) && !d.fS(e6, M.Hn) && (v = "AUTHORIZE_BOT_PERMISSIONS"), to.length > 1 && (m = "SELECT_INSTALL_TYPE"), t_ = tO && null == eQ || ty && null == eV, tf = true;
       break;
     case "AUTHORIZE_BOT_PERMISSIONS":
       if (null == eP) return {
@@ -573,7 +573,7 @@ function ed(e) {
       };
       h = (0, r.jsx)(K.Z, {
         application: eP.application,
-        permissions: e5,
+        permissions: e6,
         deniedPermissions: eY,
         onPermissionsChange: td,
         guild: eQ
@@ -600,7 +600,7 @@ function ed(e) {
     user: eq,
     application: eP.application,
     bot: eP.bot,
-    accountScopes: e6,
+    accountScopes: e5,
     showLogout: eg || false,
     location: eN,
     scopes: e8

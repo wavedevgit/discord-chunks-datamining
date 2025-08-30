@@ -4,7 +4,7 @@
 require.d(exports, {
   $Z: () => e3,
   OF: () => e8,
-  W8: () => e6,
+  W8: () => e5,
   c$: () => e4,
   iE: () => e7
 }), require("./539854.js"), require("./388685.js");
@@ -173,14 +173,14 @@ let e3 = () => {
       location: "SettingsRendererConfig"
     }).enabled && module.push(Chunk704215.z.DISPLAY_NAME_STYLES_NEW_BADGE), module
   },
-  e6 = () => {
+  e5 = () => {
     let e = e8(),
       [t] = (0, Chunk243778.US)(module);
     return exports === Chunk704215.z.DISPLAY_NAME_STYLES_NEW_BADGE || exports === Chunk704215.z.WIDGETS_USER_SETTINGS_NEW_BADGE ? (0, Chunk951288.jsx)(Chunk481060.IGR, {
       text: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
     }) : null
   },
-  e5 = Chunk200645.Z,
+  e6 = Chunk200645.Z,
   e7 = e => {
     let {
       unseenGiftCount: t,
@@ -356,7 +356,7 @@ let e3 = () => {
         label: eq.intl.string(eq.t["vi7f+v"]),
         ariaLabel: eq.intl.string(eq.t["vi7f+v"]),
         element: M.Z,
-        newIndicator: (0, r.jsx)(e6, {}),
+        newIndicator: (0, r.jsx)(e5, {}),
         newIndicatorDismissibleContentTypes: [...e8()],
         notice: {
           stores: [K.Z, P.Z],
@@ -1494,7 +1494,7 @@ let e3 = () => {
         section: eW.oAB.LINUX,
         searchableTitles: [eq.intl.string(eq.t["7pPjTU"])],
         label: eq.intl.string(eq.t["7pPjTU"]),
-        element: e5,
+        element: e6,
         predicate: () => Q.isPlatformEmbedded && (0, Q.isLinux)()
       },
       [eH.s6.STREAMER_MODE]: {

@@ -528,17 +528,18 @@ class eC extends Chunk47770.Z {
         return null != (t = await (null == (e = this._systemResources) ? true : e.getBatteryLevelStats())) ? t : {
           batteryUsageRounded: null
         }
-      })(), P.Z.getKrispModel(), j.Z.getKrispEnableStats() ? j.Z.getMediaEngine().getNoiseCancellationStats() : Promise.resolve(null)]).then(e => {
+      })(), P.Z.getKrispModel(), j.Z.getKrispEnableStats() ? j.Z.getMediaEngine().getNoiseCancellationStats() : Promise.resolve(null), j.Z.getMediaEngine().getSystemMicrophoneMode()]).then(e => {
         let [{
           batteryUsageRounded: t
-        }, n, r] = e;
+        }, n, r, i] = e;
         B.default.track(es.rMx.VOICE_DISCONNECT, ef(eu({}, s), {
           battery_usage: t,
           krisp_nc_model: n,
           duration_low_noise_detected_ms: null == r ? true : r.lowNoiseMs,
           duration_medium_noise_detected_ms: null == r ? true : r.mediumNoiseMs,
           duration_high_noise_detected_ms: null == r ? true : r.highNoiseMs,
-          duration_noise_cancellation_voice_detected_ms: null == r ? true : r.talkTimeMs
+          duration_noise_cancellation_voice_detected_ms: null == r ? true : r.talkTimeMs,
+          system_microphone_mode: i
         }))
       }), this._trackRemainingSecureFrameTransitions()
     }
