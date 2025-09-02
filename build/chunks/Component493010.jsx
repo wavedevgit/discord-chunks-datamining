@@ -1,7 +1,7 @@
 /** Chunk was on 62987 **/
 /** chunk id: 493010, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,28 +21,28 @@ var Chunk951288 = require("./951288.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk952899 = require("./952899.js");
-let v = function(e) {
+let x = function(e) {
   let {
     channel: t,
     guild: n,
-    maxWidth: v
+    maxWidth: x
   } = e;
   i.useEffect(() => {
     (0, p.Q3)(l.z.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK, {
       dismissAction: y.L.AUTO
     })
   }, []);
-  let x = i.useCallback(() => {
+  let v = i.useCallback(() => {
       o.Z.updateChatOpen(t.id, false), m.S.safeDispatch(b.CkL.FOCUS_CHAT_BUTTON)
     }, [t.id]),
     O = (0, r.jsx)(h.ZP.Icon, {
       icon: a.Dio,
       tooltip: _.intl.string(_.t.cpT0Cg),
-      onClick: x
+      onClick: v
     });
   return (0, r.jsxs)(u.Z, {
     sidebarType: u.y.CallChatSidebar,
-    maxWidth: v,
+    maxWidth: x,
     floatingLayer: g.ZP,
     children: [(0, r.jsx)(s.Z, {
       channel: t,

@@ -34,19 +34,18 @@ let j = e => (0, I.Z)(e).required().keys({
 });
 
 function x(e) {
-  var t;
   let {
     args: {
-      channel_id: n
+      channel_id: t
     },
-    socket: r
-  } = e, i = f.Z.getChannel(n);
-  if (null == i || !(0, y.zM)(i, r.application.id, r.authorization.scopes)) throw new E.Z({
+    socket: n
+  } = e, r = f.Z.getChannel(t);
+  if (null == r || !(0, y.zM)(r, n.application.id, n.authorization.scopes)) throw new E.Z({
     errorCode: P.lTL.INVALID_CHANNEL
-  }, "Invalid channel id: ".concat(n));
-  if ((0, s.aC)(i) && (null == (t = _.default.getCurrentUser()) ? true : t.nsfwAllowed) !== true) throw new E.Z({
+  }, "Invalid channel id: ".concat(t));
+  if ((0, s.ft)(r)) throw new E.Z({
     errorCode: P.lTL.INVALID_CHANNEL
-  }, "Invalid nsfw channel id: ".concat(i.id))
+  }, "Invalid nsfw channel id: ".concat(r.id))
 }
 let A = e => (0, I.Z)(e).keys({
   channel_id: e.string().allow(null)

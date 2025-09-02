@@ -2,7 +2,7 @@
 /** chunk id: 493754, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   W: () => C,
-  Z: () => v
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -83,14 +83,14 @@ function C(e) {
   })
 }
 
-function v(e) {
+function x(e) {
   var t, {
       stream: n,
       applicationId: i,
       channel: a,
       exitFullScreen: u,
-      appContext: v,
-      analyticsLocation: x,
+      appContext: x,
+      analyticsLocation: v,
       className: O
     } = e,
     j = function(e, t) {
@@ -124,9 +124,9 @@ function v(e) {
           channel: a,
           streamUserId: null == n ? true : n.ownerId,
           applicationId: i,
-          appContext: v,
+          appContext: x,
           exitFullScreen: u,
-          analyticsLocation: x,
+          analyticsLocation: v,
           guildScheduledEvent: P
         })
       },
@@ -136,10 +136,10 @@ function v(e) {
     })), (0, r.jsx)(p.Z, {
       channel: a,
       stream: n,
-      appContext: v,
+      appContext: x,
       className: l()(O, b.iconButton),
       exitFullScreen: u,
-      analyticsLocation: x,
+      analyticsLocation: v,
       guildScheduledEvent: P
     })]
   })

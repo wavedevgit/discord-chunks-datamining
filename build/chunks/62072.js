@@ -46,7 +46,7 @@ let P = function(e, t, n) {
         r && (y.Z.can(I.Plq.MANAGE_MESSAGES, R) || w.canDeleteOwnMessage(M)) && (n.preventDefault(), (0, S.$Z)(R, w, n));
         break;
       case "c":
-        ((0, v.isMac)() ? N : T) && _.wS && (n.preventDefault(), (0, _.JG)(w.content));
+        ((0, x.isMac)() ? N : T) && _.wS && (n.preventDefault(), (0, _.JG)(w.content));
         break;
       case "e":
         r && !R.isSystemDM() && (0, O.Z)(w, M) && (n.preventDefault(), (0, S.Hd)(R, w));
@@ -86,7 +86,7 @@ let P = function(e, t, n) {
       case "t":
         if (r && (0, c.ki)(R, w)) n.preventDefault(), (0, u.R6)(R, w, "Message Shortcut");
         else if (w.hasFlag(I.iLy.HAS_THREAD)) {
-          let e = h.Z.getChannel(x.default.castMessageIdAsChannelId(w.id));
+          let e = h.Z.getChannel(v.default.castMessageIdAsChannelId(w.id));
           null != e && (r || A) && (n.preventDefault(), (0, u.ok)(e, A))
         }
         break;

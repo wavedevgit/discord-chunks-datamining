@@ -73,11 +73,11 @@ let O = (0, Chunk146773.B)(function(e) {
     })
   }, [E]);
   if (null == E) return null;
-  let w = (0, h.jo)(c, v),
-    Z = (0, h.CN)(E, y, _),
+  let Z = (0, h.jo)(c, v),
+    w = (0, h.CN)(E, y, _),
     T = (0, r.jsx)("div", {
-      className: o()(w, {
-        [b.disabled]: Z,
+      className: o()(Z, {
+        [b.disabled]: w,
         [b.selected]: P
       }),
       "data-dnd-name": E.name,

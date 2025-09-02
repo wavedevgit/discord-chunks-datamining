@@ -97,13 +97,13 @@ function es(e) {
   } = (0, b.ZP)(), d = t.getGuildId(), h = (0, s.e7)([U.Z], () => U.Z.getMostRecentSelectedTextChannelId(d), [d]), f = M.default.getId(), m = !(0, s.e7)([y.Z], () => y.Z.isFullscreenInContext(n)) && (!B.isPlatformEmbedded || B.isPlatformEmbedded && G.ZP.supportsFeature(et.eRX.POPOUT_WINDOWS)), g = null != c && c.type !== en.fO.ACTIVITY && c.user.id !== f, C = i.useMemo(() => {
     var e;
     return null != (e = null == a ? true : a.window) ? e : window
-  }, [a]), v = (0, $.Z)({
+  }, [a]), x = (0, $.Z)({
     channel: t,
     appContext: n,
     popoutOpen: l,
     popoutWindow: a,
     currentWindow: C
-  }), x = n === et.IlC.POPOUT && B.isPlatformEmbedded && G.ZP.supportsFeature(et.eRX.POPOUT_WINDOWS);
+  }), v = n === et.IlC.POPOUT && B.isPlatformEmbedded && G.ZP.supportsFeature(et.eRX.POPOUT_WINDOWS);
   return (0, r.jsxs)(r.Fragment, {
     children: [g ? (0, r.jsx)(R.Z, {
       context: (0, _.Z)(c.type),
@@ -111,7 +111,7 @@ function es(e) {
       currentWindow: C,
       sliderClassName: ei.volumeSlider,
       location: u
-    }) : null, x ? (0, r.jsx)(w.Z, {
+    }) : null, v ? (0, r.jsx)(w.Z, {
       popoutWindowAlwaysOnTop: o,
       onToggleStayOnTop: eo
     }) : null, m ? (0, r.jsx)(A.Z, {
@@ -125,7 +125,7 @@ function es(e) {
       onClosePopout: () => {
         (0, j.v)(u, j.d.POPOUT, false), p.Z.wait(() => E.xv(et.KJ3.CHANNEL_CALL_POPOUT))
       }
-    }) : null, v]
+    }) : null, x]
   })
 }
 
@@ -153,10 +153,10 @@ function eu(e) {
       popoutWindowAlwaysOnTop: h,
       popoutOpen: f,
       chatOpen: _,
-      idleProps: v
+      idleProps: x
     } = e,
     {
-      analyticsLocations: x
+      analyticsLocations: v
     } = (0, b.ZP)(g.Z.VOICE_CONTROL_TRAY),
     O = (0, m.bp)(),
     j = (0, s.e7)([U.Z], () => U.Z.getVoiceChannelId() === c.id, [c.id]),
@@ -197,14 +197,14 @@ function eu(e) {
     },
     disableGradients: !j || 0 === Z && N.e.TOP,
     renderBottomCenter: () => j ? (0, r.jsx)(b.Gt, {
-      value: x,
+      value: v,
       children: (0, r.jsx)(Q.Z, {
         channel: c,
         isOnStartStageScreen: w
       })
     }) : null,
     renderBottomRight: () => j ? (0, r.jsx)(b.Gt, {
-      value: x,
+      value: v,
       children: (0, r.jsx)(es, {
         channel: c,
         appContext: O,
@@ -230,7 +230,7 @@ function eu(e) {
     screenMessage: P ? {
       mainText: er.intl.string(er.t.J5bXZW)
     } : null
-  }, v), n = n = {
+  }, x), n = n = {
     children: !P && l
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
@@ -313,11 +313,11 @@ function ed(e) {
           chatOpen: P
         }) : null, (0, r.jsxs)("div", {
           className: ei.channelChatWrapper,
-          children: [P && D && (0, r.jsx)(v.Z, {
+          children: [P && D && (0, r.jsx)(x.Z, {
             channel: t,
             guild: N,
             maxWidth: M
-          }), T && A && D && (0, r.jsx)(x.Z, {
+          }), T && A && D && (0, r.jsx)(v.Z, {
             channel: t,
             maxWidth: M
           })]

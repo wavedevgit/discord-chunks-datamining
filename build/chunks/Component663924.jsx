@@ -37,8 +37,8 @@ function E(e) {
     closeOnModalOuterClick: n = false,
     parentModalKey: u
   } = e, f = i.useRef(null), {
-    renderWindow: v,
-    windowDispatch: x
+    renderWindow: x,
+    windowDispatch: v
   } = i.useContext(s.ZP), O = null != u, E = (0, a.Jw)(null != u ? u : ""), S = i.useCallback(e => {
     var t;
     if (!O && (0, a.$s)() || O && !(E && n) || d.Z.isOpen() || e.defaultPrevented) return;
@@ -59,9 +59,9 @@ function E(e) {
     let i = null == (t = (0, h.uB)(e)) ? true : t.activeElement;
     (null == i || "BODY" === i.tagName) && p.S.dispatchToLastSubscribed(_.CkL.TEXTAREA_FOCUS)
   }, [n, E, O]);
-  i.useLayoutEffect(() => (v.addEventListener("mousedown", S), v.addEventListener("contextmenu", S), x.subscribe(_.CkL.POPOUT_CLOSE, j), () => {
-    v.removeEventListener("mousedown", S), v.removeEventListener("contextmenu", S), x.unsubscribe(_.CkL.POPOUT_CLOSE, j)
-  }), [S, v, x]), (0, o.Tbt)(f), i.useEffect(() => {
+  i.useLayoutEffect(() => (x.addEventListener("mousedown", S), x.addEventListener("contextmenu", S), v.subscribe(_.CkL.POPOUT_CLOSE, j), () => {
+    x.removeEventListener("mousedown", S), x.removeEventListener("contextmenu", S), v.unsubscribe(_.CkL.POPOUT_CLOSE, j)
+  }), [S, x, v]), (0, o.Tbt)(f), i.useEffect(() => {
     (!O && (0, a.$s)() || O && !E) && j()
   }, [E, O]);
   let I = (0, b.Z)();
@@ -96,7 +96,7 @@ let S = Chunk647438.memo(function(e) {
   return (0, r.jsx)("span", {
     style: y.u$,
     children: (0, r.jsx)(u.W5, {
-      className: x.positionLayer,
+      className: v.positionLayer,
       targetRef: t,
       position: "top",
       align: "right",
@@ -108,10 +108,10 @@ let S = Chunk647438.memo(function(e) {
           isPositioned: t
         } = e;
         return (0, r.jsx)("section", {
-          className: x.positionContainer,
+          className: v.positionContainer,
           role: "dialog",
           style: O,
-          "aria-label": v.intl.string(v.t["3CNGLC"]),
+          "aria-label": x.intl.string(x.t["3CNGLC"]),
           children: t && (0, r.jsx)(E, function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},

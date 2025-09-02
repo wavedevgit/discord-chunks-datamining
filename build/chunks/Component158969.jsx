@@ -33,18 +33,18 @@ let j = Chunk647438.memo(function(e) {
     } = e;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        className: a()(v.blockedNoticeContainer, {
-          [v.compact]: i
+        className: a()(x.blockedNoticeContainer, {
+          [x.compact]: i
         }),
         children: [(0, r.jsx)("div", {
-          className: v.blockedNoticeIcon,
+          className: x.blockedNoticeIcon,
           children: (0, r.jsx)(u.b7C, {
             size: "xs",
             color: "currentColor",
-            className: v.shieldIcon
+            className: x.shieldIcon
           })
         }), (0, r.jsx)("div", {
-          className: v.blockedNotice,
+          className: x.blockedNotice,
           children: (0, r.jsx)(u.Text, {
             variant: "text-sm/normal",
             color: "interactive-normal",
@@ -52,8 +52,8 @@ let j = Chunk647438.memo(function(e) {
           })
         })]
       }), (0, r.jsx)("div", {
-        className: a()(v.ephemeralAccessories, {
-          [v.compact]: i
+        className: a()(x.ephemeralAccessories, {
+          [x.compact]: i
         }),
         children: (0, r.jsx)(m.Z, {
           message: t,
@@ -62,7 +62,7 @@ let j = Chunk647438.memo(function(e) {
             variant: "text-xs/normal",
             color: "interactive-normal",
             tag: "span",
-            className: v.learnMore,
+            className: x.learnMore,
             children: C.intl.format(C.t.Nd3Gh4, {
               helpUrl: f.Z.getArticleURL(_.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
             })
@@ -88,10 +88,10 @@ let j = Chunk647438.memo(function(e) {
     }, [_, u.content, m, E, f]), (0, r.jsxs)("div", {
       id: (0, g.ut)(u),
       className: a()(l, O.markup, {
-        [x.messageContent]: true,
-        [x.markupRtl]: "rtl" === s()(u.content),
-        [v.blockedEdit]: null == I ? true : I.isBlockedEdit,
-        [v.blockedSend]: !(null == I ? true : I.isBlockedEdit)
+        [v.messageContent]: true,
+        [v.markupRtl]: "rtl" === s()(u.content),
+        [x.blockedEdit]: null == I ? true : I.isBlockedEdit,
+        [x.blockedSend]: !(null == I ? true : I.isBlockedEdit)
       }),
       children: [null != f ? f : (0, b.L5)(u, m), (null == I ? true : I.isBlockedEdit) && null != u.timestamp && (0, r.jsxs)(r.Fragment, {
         children: [" ", (0, r.jsx)(y.Z, {
@@ -99,7 +99,7 @@ let j = Chunk647438.memo(function(e) {
           isEdited: true,
           isInline: false,
           children: (0, r.jsxs)("span", {
-            className: x.edited,
+            className: v.edited,
             children: ["(", C.intl.string(C.t.Z7eEx8), ")"]
           })
         })]

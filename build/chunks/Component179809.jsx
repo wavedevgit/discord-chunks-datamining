@@ -1,7 +1,7 @@
 /** Chunk was on 11160 **/
 /** chunk id: 179809, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => w
+  Z: () => Z
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk534175 = require("./534175.js");
 let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
   N = (0, Chunk261616.animated)(Chunk481060.Kqy),
-  w = Chunk647438.memo(function(e) {
+  Z = Chunk647438.memo(function(e) {
     let {
       folderNode: t,
       setNodeRef: n,
@@ -38,8 +38,8 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
       expanded: s,
       mediaState: d,
       mentionCount: m = 0,
-      isMentionLowImportance: w,
-      unread: Z = false,
+      isMentionLowImportance: Z,
+      unread: w = false,
       defaultFolderName: T,
       draggable: A = false,
       sorting: R = false,
@@ -101,7 +101,7 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
         disabled: $ || s,
         hovered: K,
         selected: l,
-        unread: Z,
+        unread: w,
         className: P.pill
       }), (0, r.jsx)(x.Z, {
         text: er,
@@ -125,7 +125,7 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
             sorting: R,
             mediaState: d,
             mentionCount: m,
-            isMentionLowImportance: w,
+            isMentionLowImportance: Z,
             tooltipName: er,
             folderGroupId: el,
             onClick: L,

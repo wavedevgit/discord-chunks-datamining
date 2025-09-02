@@ -28,7 +28,7 @@ function m(e) {
     C = (0, a.j)({
       displayNameStyles: null == m ? true : m.displayNameStyles
     }),
-    v = (0, o.m$)({
+    x = (0, o.m$)({
       channelId: e.channel.id
     });
   return (0, r.jsxs)(r.Fragment, {
@@ -54,7 +54,7 @@ function m(e) {
           position: "bottom",
           className: C,
           children: null != y ? y : d.ZP.getName(m)
-        }), v && (0, r.jsx)(l.ua7, {
+        }), x && (0, r.jsx)(l.ua7, {
           text: h.intl.string(h.t.QyZ4TU),
           children: e => {
             var t, n;

@@ -2,8 +2,8 @@
 /** chunk id: 997638, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => j,
-  cy: () => x,
-  iu: () => v
+  cy: () => v,
+  iu: () => x
 }), require("./388685.js");
 var r, i, l, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -52,8 +52,8 @@ function C(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var v = ((i = {}).CENTER = "center", i.LEFT = "left", i),
-  x = ((l = {}).TOP = "top", l.MIDDLE = "middle", l);
+var x = ((i = {}).CENTER = "center", i.LEFT = "left", i),
+  v = ((l = {}).TOP = "top", l.MIDDLE = "middle", l);
 class O extends Chunk647438.PureComponent {
   componentDidMount() {
     let {
@@ -216,6 +216,6 @@ class j extends(r = Chunk647438.PureComponent) {
     })
   }
 }
-y(j, "TextAlignments", v), y(j, "defaultProps", {
+y(j, "TextAlignments", x), y(j, "defaultProps", {
   textAlign: "left"
 })

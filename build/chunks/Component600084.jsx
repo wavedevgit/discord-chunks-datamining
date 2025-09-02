@@ -47,7 +47,7 @@ function H(e) {
   let {
     canManageRoles: t,
     channel: n
-  } = e, i = t && (0, p.Yk)(n), a = (0, l.e7)([v.ZP], () => null != n.guild_id && n === v.ZP.getDefaultChannel(n.guild_id), [n]);
+  } = e, i = t && (0, p.Yk)(n), a = (0, l.e7)([x.ZP], () => null != n.guild_id && n === x.ZP.getDefaultChannel(n.guild_id), [n]);
   if ((0, h.Z)(n.id)) return null;
   if (n.isForumPost()) return (0, r.jsx)(I.Z, {
     channel: n
@@ -72,14 +72,14 @@ function F(e) {
     channel: p,
     showingBanner: h
   } = e, _ = (0, d.ZP)(p), {
-    type: v
+    type: x
   } = p, I = (0, l.e7)([O.default], () => p.isPrivate() ? O.default.getUser(p.getRecipientId()) : null), A = j.ZP.useUserTag(I), {
     canManageRoles: R,
     canReadMessageHistory: M
-  } = (0, l.cj)([x.Z], () => ({
-    canManageRoles: x.Z.can(L.Plq.MANAGE_ROLES, p),
-    canReadMessageHistory: x.Z.can(L.Plq.READ_MESSAGE_HISTORY, p)
-  })), D = (0, l.e7)([b.Z], () => v === L.d4z.DM ? b.Z.getMutualGuilds(p.getRecipientId()) : null, [p, v]), {
+  } = (0, l.cj)([v.Z], () => ({
+    canManageRoles: v.Z.can(L.Plq.MANAGE_ROLES, p),
+    canReadMessageHistory: v.Z.can(L.Plq.READ_MESSAGE_HISTORY, p)
+  })), D = (0, l.e7)([b.Z], () => x === L.d4z.DM ? b.Z.getMutualGuilds(p.getRecipientId()) : null, [p, x]), {
     systemDMRedesignEnabled: F
   } = g.Z.useExperiment({
     location: "bf1a4f_1"
@@ -95,10 +95,10 @@ function F(e) {
     location: "EmptyMessages"
   }).enabledDesktop;
   if (i.useEffect(() => {
-      v === L.d4z.DM && null == D && null != I && o.Z.wait(() => (0, y.Z)(p.getRecipientId(), I.getAvatarURL(null, 80), {
+      x === L.d4z.DM && null == D && null != I && o.Z.wait(() => (0, y.Z)(p.getRecipientId(), I.getAvatarURL(null, 80), {
         withMutualGuilds: true
       }))
-    }, [D, v, p, I]), i.useEffect(() => {
+    }, [D, x, p, I]), i.useEffect(() => {
       (null == I ? true : I.bot) && W === C.M.NOT_FETCHED && s.Z.fetch()
     }, [null == I ? true : I.bot, W]), p.isSystemDM()) return F ? (0, r.jsx)(w.Z, {
     channel: p
@@ -106,7 +106,7 @@ function F(e) {
     channel: p,
     children: U.intl.string(U.t.Rzvnio)
   });
-  if (v === L.d4z.DM) {
+  if (x === L.d4z.DM) {
     let e;
     return null != I && null != V ? null != z && (e = (0, r.jsxs)("div", {
       className: B.buttonContainer,

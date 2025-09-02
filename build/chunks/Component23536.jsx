@@ -33,11 +33,11 @@ function y(e) {
       items: null != (e = null == r ? true : r.items) ? e : b,
       state: null != (n = null == r ? true : r.state) ? n : p.M.LOADING
     }
-  }), v = i.useMemo(() => _.map(e => e.message), [_]), x = (0, l.e7)([h.ZP], () => h.ZP.hasUnreadPins(t.id));
+  }), x = i.useMemo(() => _.map(e => e.message), [_]), v = (0, l.e7)([h.ZP], () => h.ZP.hasUnreadPins(t.id));
   i.useEffect(() => {
-    x && s.Z.ackPins(t.id)
-  }, [x, t.id]), (0, c.ZP)(() => {
-    v.some(u.k5) && s.Z.fetchPins(t.id, {
+    v && s.Z.ackPins(t.id)
+  }, [v, t.id]), (0, c.ZP)(() => {
+    x.some(u.k5) && s.Z.fetchPins(t.id, {
       reset: true
     })
   });
@@ -56,7 +56,7 @@ function y(e) {
     children: (0, r.jsx)(f.ZP, {
       channel: t,
       onFetch: O,
-      messages: v,
+      messages: x,
       loading: C === p.M.LOADING,
       hasMore: C === p.M.LOADED_HAS_MORE,
       analyticsName: "Channel Pins",

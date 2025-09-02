@@ -35,8 +35,8 @@ let E = Chunk647438.memo(function(e) {
       canGoLive: P,
       guildId: I,
       isStreaming: N,
-      channel: w,
-      canStream: Z,
+      channel: Z,
+      canStream: w,
       runningGame: T,
       embeddedActivity: A,
       activity: R,
@@ -71,7 +71,7 @@ let E = Chunk647438.memo(function(e) {
       (0, m.Z)(S)
     }, [S]),
     V = i.useCallback(() => {
-      let e = null != w && (0, b.vd)(w.type) ? w : null,
+      let e = null != Z && (0, b.vd)(Z.type) ? Z : null,
         t = null != e ? e.getGuildId() : I;
       (0, a.ZDy)(async () => {
         let {
@@ -113,14 +113,14 @@ let E = Chunk647438.memo(function(e) {
           }), i))
         }
       })
-    }, [w, I, T, L]),
+    }, [Z, I, T, L]),
     H = (null != T || null == A || (0, c.R)()) && (N || P) ? (N ? (t = false, l = () => {
       F(), (0, h.v)(k, h.d.STREAM, false)
-    }, u = a.g5r, E = j.intl.string(j.t.S5anIS)) : Z ? (t = false, l = () => {
+    }, u = a.g5r, E = j.intl.string(j.t.S5anIS)) : w ? (t = false, l = () => {
       V(), (0, h.v)(k, h.d.STREAM, true)
     }, u = a.hGI, E = null != T ? j.intl.formatToPlainString(j.t.AB5gT0, {
       game: T.name
-    }) : j.intl.string(j.t.FeUKeH)) : (t = true, l = null, u = a.hGI, E = null != w && (0, b.vd)(w.type) ? j.intl.string(j.t.uQn9Bw) : null != I ? j.intl.string(j.t.fBXEoK) : j.intl.string(j.t.n3feND)), (0, r.jsx)("div", {
+    }) : j.intl.string(j.t.FeUKeH)) : (t = true, l = null, u = a.hGI, E = null != Z && (0, b.vd)(Z.type) ? j.intl.string(j.t.uQn9Bw) : null != I ? j.intl.string(j.t.fBXEoK) : j.intl.string(j.t.n3feND)), (0, r.jsx)("div", {
       className: x.panelButtonContainer,
       children: (0, r.jsx)(_.Z, {
         tooltipText: E,

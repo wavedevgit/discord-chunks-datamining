@@ -35,7 +35,7 @@ function S(e) {
   } = e, S = i.useRef(null), I = (0, u.e7)([m.Z], () => m.Z.getCustomHangStatus()), P = i.useRef(m.Z.getRecentCustomStatuses()), Z = (0, g.V)(), T = i.useRef(null), [N, A] = i.useState(null != (t = null == I ? true : I.status) ? t : ""), [w, R] = i.useState(null != (n = null == I ? true : I.emoji) ? n : null), M = (0, u.e7)([m.Z], () => m.Z.getCurrentHangStatus()), D = (0, u.e7)([h.ZP], () => h.ZP.emojiFrecencyWithoutFetchingLatest.frequently), L = i.useMemo(() => D.filter(e => (0, b.K)(e, l)), [D, l]);
   i.useEffect(() => {
     var e;
-    (null == M || M === x.tN.CUSTOM) && (null == (e = S.current) || e.focus())
+    (null == M || M === v.tN.CUSTOM) && (null == (e = S.current) || e.focus())
   }, [M]), i.useEffect(() => {
     null == o || o(null == T ? true : T.current)
   }, [T, o]), i.useEffect(() => {
@@ -92,7 +92,7 @@ function S(e) {
         children: (0, r.jsx)(d.oil, {
           inputRef: S,
           value: N,
-          onChange: e => A(e.substring(0, v.s)),
+          onChange: e => A(e.substring(0, x.s)),
           placeholder: O.intl.string(O.t.KPop4u),
           leading: {
             type: "emoji",

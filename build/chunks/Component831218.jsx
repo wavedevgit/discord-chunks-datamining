@@ -437,14 +437,14 @@ let V = e => {
     showDMHeader: a,
     listScrollerRef: s,
     createDMCTAButtonVariant: c
-  } = e, h = l.Children.count(o), g = T.Z.getMutablePrivateChannels(), O = (0, N.k1)(g), _ = (0, p.Wu)([R.Z, I.Z, w.Z], () => {
+  } = e, h = l.Children.count(o), g = T.Z.getMutablePrivateChannels(), O = (0, N.k1)(g), _ = (0, p.Wu)([R.Z, I.Z, Z.Z], () => {
     let e = R.Z.getPrivateChannelIds();
-    return (0, N.tU)(e, [I.Z, w.Z])
+    return (0, N.tU)(e, [I.Z, Z.Z])
   }, []);
   (0, S.z)(E.R);
   let {
     analyticsLocations: v
-  } = (0, y.ZP)(b.Z.CONTACTS_LIST), j = (0, Z.Ll)(), {
+  } = (0, y.ZP)(b.Z.CONTACTS_LIST), j = (0, w.Ll)(), {
     keyboardModeEnabled: x,
     version: P
   } = (0, p.cj)([m.Z, T.Z], () => ({

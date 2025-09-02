@@ -103,7 +103,7 @@ let W = (0, Chunk261616.animated)(Chunk481060.eTT),
       unreadCount: b,
       showNewMessagesBar: y,
       messageDisplayCompact: _,
-      channelStream: v,
+      channelStream: x,
       uploads: O,
       hasUnreads: E,
       editingMessageId: S,
@@ -157,7 +157,7 @@ let W = (0, Chunk261616.animated)(Chunk481060.eTT),
       unreadCount: b,
       showNewMessagesBar: y,
       messageDisplayCompact: _,
-      channelStream: v,
+      channelStream: x,
       uploads: O,
       loadMore: Q.loadMore,
       scrollManager: Q,
@@ -213,7 +213,7 @@ let W = (0, Chunk261616.animated)(Chunk481060.eTT),
         var t;
         Q.ref.current = e, eo.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
       }),
-      eu = x.L1.useSetting(),
+      eu = v.L1.useSetting(),
       ed = null != eu && (null != eu.backgroundGradientPresetId || null != eu.customUserThemeSettings),
       ep = i.useMemo(() => q ? Y ? H.chatTypingGradientAtBottom : H.chatTypingGradientNotAtBottom : H.chatGradient, [q, Y]),
       eh = i.useMemo(() => q ? Y ? H.typingGradientAtBottom : H.typingGradientNotAtBottom : H.gradientDefault, [q, Y]);
@@ -296,8 +296,8 @@ let W = (0, Chunk261616.animated)(Chunk481060.eTT),
       renderSpoilers: k,
       keyboardModeEnabled: U
     } = function() {
-      let e = x.jU.useSetting(),
-        t = x.cC.useSetting(),
+      let e = v.jU.useSetting(),
+        t = v.cC.useSetting(),
         {
           messageGroupSpacing: n,
           fontSize: r,
@@ -343,11 +343,11 @@ let W = (0, Chunk261616.animated)(Chunk481060.eTT),
         o = null != (n = null == (t = N.default.getUser(O.default.getId())) ? true : t.hasFlag(B.xW$.SPAMMER)) && n,
         s = (0, p.ts)(e),
         u = (0, y.Z)("use_topic_dividers_in_chat"),
-        d = (0, c.Wu)([v.Z], () => {
+        d = (0, c.Wu)([x.Z], () => {
           var t;
-          return s && u && null != (t = v.Z.summaries(e.id)) ? t : []
+          return s && u && null != (t = x.Z.summaries(e.id)) ? t : []
         }, [s, e.id, u]),
-        h = (0, c.e7)([v.Z], () => s ? v.Z.selectedSummary(e.id) : null, [s, e.id]),
+        h = (0, c.e7)([x.Z], () => s ? x.Z.selectedSummary(e.id) : null, [s, e.id]),
         f = function(e) {
           let t = i.useMemo(() => {
             let t = new Set;

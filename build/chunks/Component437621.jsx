@@ -169,10 +169,10 @@ class k extends Chunk98597.ZP {
       shouldShowThreadsPopout: false,
       shouldShowActivities: false
     }), D(this, "channelItemRef", i.createRef()), D(this, "enterTimer", 0), D(this, "exitTimer", 0), D(this, "handleMouseEnter", () => {
-      (this.props.canShowThreadPreviewForUser || null != this.props.embeddedApps) && (this.resetTextChannelPopoutTimers(), this.enterTimer = setTimeout(() => {
+      this.props.channelIsContentGated && null == this.props.embeddedApps || (this.resetTextChannelPopoutTimers(), this.enterTimer = setTimeout(() => {
         null != this.props.embeddedApps && this.props.embeddedApps.length > 0 ? this.setState({
           shouldShowActivities: true
-        }) : this.props.canShowThreadPreviewForUser && this.setState({
+        }) : this.props.channelIsContentGated || this.setState({
           shouldShowThreadsPopout: true
         })
       }, 200))
@@ -204,11 +204,12 @@ class k extends Chunk98597.ZP {
       let {
         channel: t,
         sorting: n,
-        embeddedApps: i
+        embeddedApps: i,
+        channelIsContentGated: l
       } = this.props, {
-        shouldShowActivities: l
+        shouldShowActivities: o
       } = this.state;
-      return t.isModeratorReportChannel() || (0, f.aC)(t) && (0, f.dl)() ? null : null != i && i.length > 0 && l && !n ? (0, r.jsx)(Z.Z, {
+      return t.isModeratorReportChannel() || l ? null : null != i && i.length > 0 && o && !n ? (0, r.jsx)(w.Z, {
         onAction: this.handleActivitiesPopoutClose,
         channel: t
       }) : (0, r.jsx)(P.Z, L(M({}, e), {
@@ -287,33 +288,30 @@ function G(e) {
     }
   }), O = (0, a.e7)([y.Z], () => y.Z.shouldIndicateNewChannel(n.id, t.id)), {
     needSubscriptionToAccess: j,
-    isSubscriptionGated: P
-  } = (0, b.Z)(t.id), I = (0, a.e7)([E.ZP], () => E.ZP.isFavorite(n.id, t.id)), w = (0, a.e7)([S.default], () => {
-    let e = S.default.getCurrentUser();
-    return null != e && (!(0, f.aC)(t) || e.nsfwAllowed)
-  }, [t]), Z = (0, p.NX)(t.id), R = (0, N.Z)({
+    isSubscriptionGated: S
+  } = (0, b.Z)(t.id), P = (0, a.e7)([E.ZP], () => E.ZP.isFavorite(n.id, t.id)), I = (0, f.$5)(t), Z = (0, p.NX)(t.id), w = (0, N.Z)({
     channel: t,
     isChannelCollapsed: false,
     isChannelSelected: s,
-    isSubscriptionGated: P,
+    isSubscriptionGated: S,
     needSubscriptionToAccess: j,
     isNewChannel: O,
     muted: o,
     enableActivities: Z,
     resolvedUnreadSetting: g
-  }), D = (0, h.ZP)(t);
+  }), R = (0, h.ZP)(t);
   return (0, r.jsx)(U, L(M({}, d, m, e), {
     hasActiveThreads: c,
     hasMoreActiveThreads: u,
-    isSubscriptionGated: P,
+    isSubscriptionGated: S,
     needSubscriptionToAccess: j,
     isNewChannel: O && e.canBeNewChannel,
-    isFavoriteSuggestion: l && !I,
-    canShowThreadPreviewForUser: w,
-    channelInfo: R,
-    embeddedApps: D,
+    isFavoriteSuggestion: l && !P,
+    channelIsContentGated: I,
+    channelInfo: w,
+    embeddedApps: R,
     resolvedUnreadSetting: g,
-    hasChannelInfo: null != R,
+    hasChannelInfo: null != w,
     enableActivities: Z
   }))
 }

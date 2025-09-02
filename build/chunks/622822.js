@@ -2,23 +2,29 @@
 /** chunk id: 622822, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Gb: () => P,
-  I8: () => N,
-  Kt: () => O,
-  RW: () => C,
-  T5: () => w,
-  Yt: () => b,
-  a1: () => v,
-  aC: () => R,
-  bN: () => E,
-  dl: () => y,
-  zd: () => S
-}), require("./442837.js"), require("./453679.js");
-var Chunk81643 = require("./81643.js"),
+  $5: () => U,
+  I8: () => x,
+  Kt: () => A,
+  RW: () => D,
+  T5: () => G,
+  Y3: () => k,
+  Yt: () => v,
+  _t: () => j,
+  a1: () => C,
+  bN: () => O,
+  dl: () => S,
+  ft: () => M,
+  qF: () => L,
+  zd: () => P
+});
+var Chunk442837 = require("./442837.js"),
+  Chunk453679 = require("./453679.js"),
+  Chunk81643 = require("./81643.js"),
   Chunk974814 = require("./974814.js"),
   Chunk500496 = require("./500496.js"),
   Chunk601964 = require("./601964.js"),
   Chunk592125 = require("./592125.js"),
+  Chunk731290 = require("./731290.js"),
   Chunk430824 = require("./430824.js"),
   Chunk594174 = require("./594174.js"),
   Chunk709054 = require("./709054.js"),
@@ -26,20 +32,33 @@ var Chunk81643 = require("./81643.js"),
   Chunk723359 = require("./723359.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let h = new Date("06/16/2020"),
-  m = [Chunk981631.V_K.AGE_RESTRICTED, Chunk981631.V_K.EXPLICIT],
-  g = [Chunk723359.L0.NSFW_SERVER, Chunk723359.L0.NSFW_SERVER_INVITE, Chunk723359.L0.NSFW_SERVER_INVITE_EMBED];
+let E = new Date("06/16/2020"),
+  b = [Chunk981631.V_K.AGE_RESTRICTED, Chunk981631.V_K.EXPLICIT],
+  y = [Chunk723359.L0.NSFW_SERVER, Chunk723359.L0.NSFW_SERVER_INVITE, Chunk723359.L0.NSFW_SERVER_INVITE_EMBED];
 
-function E() {
+function O() {
   let e = Chunk594174.default.getCurrentUser();
-  return null != module && Chunk709054.default.extractTimestamp(module.id) > h.getTime() && null == module.nsfwAllowed
+  return null != module && Chunk709054.default.extractTimestamp(module.id) > E.getTime() && null == module.nsfwAllowed
 }
 
-function b(e) {
-  return m.includes(e.nsfwLevel)
+function v(e) {
+  return b.includes(e.nsfwLevel)
 }
 
-function y() {
+function I(e) {
+  let t = d.Z.getGuild(e),
+    n = (0, a.sf)();
+  return null != t && t.features.has(m.oNc.AGE_VERIFICATION_LARGE_GUILD) && (0, i.u)("age_verification_utils") && n
+}
+
+function T(e) {
+  let t = (0, r.e7)([d.Z], () => d.Z.getGuild(e)),
+    n = (0, a.L5)(),
+    o = (0, i.z)("age_verification_utils");
+  return null != t && t.features.has(m.oNc.AGE_VERIFICATION_LARGE_GUILD) && o && n
+}
+
+function S() {
   let e = (0, Chunk974814.H1)({
       location: "age-gate-utils"
     }),
@@ -47,7 +66,7 @@ function y() {
   return module && exports
 }
 
-function O() {
+function A() {
   let e = (0, Chunk974814.s8)({
       location: "age-gate-utils"
     }),
@@ -55,56 +74,97 @@ function O() {
   return module && exports
 }
 
-function v(e) {
-  let t = (0, r.l6)(),
-    n = e === f.L0.NSFW_SERVER || e === f.L0.NSFW_SERVER_INVITE || e === f.L0.NSFW_SERVER_INVITE_EMBED;
+function C(e) {
+  let t = (0, a.l6)(),
+    n = e === h.L0.NSFW_SERVER || e === h.L0.NSFW_SERVER_INVITE || e === h.L0.NSFW_SERVER_INVITE_EMBED;
   return t ? {
-    verifyAgreementButtonText: p.intl.string(p.t.PBG51t),
-    verifyGateDescription: n ? p.intl.format(p.t["7uIWQE"], {}) : p.intl.format(p.t.x1coPj, {})
+    verifyAgreementButtonText: g.intl.string(g.t.PBG51t),
+    verifyGateDescription: n ? g.intl.format(g.t["7uIWQE"], {}) : g.intl.format(g.t.x1coPj, {})
   } : {
-    verifyAgreementButtonText: p.intl.string(p.t["5B+npK"]),
-    verifyGateDescription: n ? p.intl.string(p.t.akjk0d) : p.intl.string(p.t["u/xqhY"])
+    verifyAgreementButtonText: g.intl.string(g.t["5B+npK"]),
+    verifyGateDescription: n ? g.intl.string(g.t.akjk0d) : g.intl.string(g.t["u/xqhY"])
   }
 }
-let I = () => {
+let N = () => {
     let e = Chunk594174.default.getCurrentUser();
     if (null == module) returnfalse;
-    let t = y();
-    return null == module.nsfwAllowed || exports
+    let t = S();
+    returntrue !== module.nsfwAllowed || exports
   },
-  T = e => {
-    if (!I() || null == e) returnfalse;
-    let t = l.Z.getGuild(e);
-    return null != t && (0, o.Y2)(t) && (0, a.Tz)({
+  R = e => {
+    if (!N() || null == e) returnfalse;
+    let t = d.Z.getGuild(e);
+    return null != t && (0, l.Y2)(t) && (0, s.Tz)({
       guildId: e,
       location: "age-gate-utils"
     })
   },
-  S = e => !!I() && null != e && R(s.Z.getChannel(e)),
-  A = e => y() && S(e),
-  C = e => !!A(e) && ((0, d.mN)(f.L0.NSFW_VOICE_CHANNEL), true);
+  P = e => !!N() && null != e && k(c.Z.getChannel(e)),
+  w = e => S() && P(e),
+  D = e => !!w(e) && ((0, p.mN)(h.L0.NSFW_VOICE_CHANNEL), true);
 
-function N(e, t, n) {
-  if (T(e)) {
-    let e = null != n && g.includes(n) ? n : f.L0.NSFW_SERVER;
-    (0, d.mN)(e);
+function x(e, t, n) {
+  if (R(e)) {
+    let e = null != n && y.includes(n) ? n : h.L0.NSFW_SERVER;
+    (0, p.mN)(e);
     return
   }
-  if (S(t)) return void(0, d.mN)(null != n ? n : f.L0.NSFW_CHANNEL)
+  if (P(t)) return void(0, p.mN)(null != n ? n : h.L0.NSFW_CHANNEL)
 }
+let L = e => null != e && (e.isNSFW() || (0, l.Y2)(d.Z.getGuild(e.guild_id))),
+  j = e => {
+    if (null == e) returnfalse;
+    let t = (0, a.sf)();
+    return L(e) && t
+  },
+  M = e => {
+    var t;
+    if (null == e) returnfalse;
+    let n = (null == (t = f.default.getCurrentUser()) ? true : t.nsfwAllowed) === true;
+    return L(e) && !n
+  };
 
-function R(e) {
+function k(e) {
+  var t;
   if (null == e) returnfalse;
-  let t = e.guild_id,
-    n = l.Z.getGuild(t);
-  return e.isNSFW() || null != n && (0, o.Y2)(n)
+  let n = u.Z.didAgree(e.guild_id),
+    r = (null == (t = f.default.getCurrentUser()) ? true : t.nsfwAllowed) === false,
+    i = (0, o.H1)({
+      location: "age-gate-utils"
+    }),
+    c = (0, a.sf)(),
+    _ = !(n && !r) || c && i;
+  if (e.isNSFW() && _) returntrue;
+  let p = e.guild_id,
+    h = d.Z.getGuild(p);
+  return null != h && ((0, s.Tz)({
+    guildId: p,
+    location: "age-gate-utils"
+  }) && (0, l.Y2)(h) && c || I(p) && c)
 }
 
-function P(e) {
-  return null != e && e.isNSFW()
+function U(e) {
+  let t = (0, a.L5)(),
+    n = (0, r.e7)([u.Z], () => u.Z.didAgree(null == e ? true : e.guild_id)),
+    i = (0, r.e7)([f.default], () => {
+      var e;
+      return (null == (e = f.default.getCurrentUser()) ? true : e.nsfwAllowed) === false
+    }),
+    c = T(null == e ? true : e.guild_id),
+    _ = (0, o.s8)({
+      location: "age-gate-utils"
+    }),
+    p = (0, s.j0)({
+      guildId: null == e ? true : e.guild_id,
+      location: "age-gate-utils"
+    }),
+    h = (0, r.e7)([d.Z], () => d.Z.getGuild(null == e ? true : e.guild_id)),
+    m = _ && t,
+    g = !(n && !i) || m;
+  return null != e && (!!e.isNSFW() && !!g || null != h && (!!(p && (0, l.Y2)(h)) && !!t || !!c && !!t))
 }
 
-function w() {
+function G() {
   let e = Chunk594174.default.getCurrentUser();
   return null != module && null == module.nsfwAllowed
 }

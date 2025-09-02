@@ -149,16 +149,16 @@ let G = (0, Chunk888651.$)(function(e) {
     hangStatusActivity: em,
     requestToStreamActivity: eg,
     showHangStatus: eb
-  } = e, ey = i.useRef(null), [e_, eC] = i.useState(false), [ev, ex] = i.useState(false), eO = (null == eg ? true : eg.session_id) != null, ej = () => {
+  } = e, ey = i.useRef(null), [e_, eC] = i.useState(false), [ex, ev] = i.useState(false), eO = (null == eg ? true : eg.session_id) != null, ej = () => {
     eC(!e_)
   }, eE = () => {
     (ee || eb || eO) && (null == el || el(h.id))
   }, eS = i.useMemo(() => new o.sW(500, () => {
-    ex(true)
+    ev(true)
   }), []), eI = e => {
     e && eo ? eS.delay() : !e && eS.isDelayed() && eS.cancel()
   }, eP = e => {
-    e && (eS.cancel(), ex(false))
+    e && (eS.cancel(), ev(false))
   }, eZ = () => {
     if (!(ee && (0, C.p9)(U, A.Z, Z.Z, T.Z, b.Z)[0])) return;
     let e = {
@@ -167,7 +167,7 @@ let G = (0, Chunk888651.$)(function(e) {
       channelId: U.id,
       guildId: U.guild_id
     };
-    P.default.getId() !== h.id && d.default.selectVoiceChannel(U.id), et ? ((0, v.Z)(e), c.Z.selectParticipant(e.channelId, (0, _.V9)(e))) : (0, p.iV)(e), null == el || el(h.id)
+    P.default.getId() !== h.id && d.default.selectVoiceChannel(U.id), et ? ((0, x.Z)(e), c.Z.selectParticipant(e.channelId, (0, _.V9)(e))) : (0, p.iV)(e), null == el || el(h.id)
   }, eT = e => {
     (0, u.jW)(e, async () => {
       let {
@@ -192,7 +192,7 @@ let G = (0, Chunk888651.$)(function(e) {
   })) : null, eA = () => (0, r.jsx)(E.Z, {
     userId: h.id,
     channel: U
-  }), ew = () => (0, f.dl)() && (0, f.zd)(U.id) ? null : (0, r.jsx)(x.Z, {
+  }), ew = () => (0, f.dl)() && (0, f.zd)(U.id) ? null : (0, r.jsx)(v.Z, {
     user: h,
     channel: U,
     onWatch: eZ,
@@ -283,14 +283,14 @@ let G = (0, Chunk888651.$)(function(e) {
           })
         }
         let o = () => null;
-        return eb && ev ? o = eN : ee ? o = ew : eO && h.id !== P.default.getId() && (o = eA), (0, r.jsx)(s.yRy, {
+        return eb && ex ? o = eN : ee ? o = ew : eO && h.id !== P.default.getId() && (o = eA), (0, r.jsx)(s.yRy, {
           targetElementRef: ey,
           position: "right",
           renderPopout: o,
           shouldShow: ea && !e_,
           onRequestClose: eE,
-          align: eb && ev && !eh ? "center" : true,
-          spacing: eb && ev ? 8 : 0,
+          align: eb && ex && !eh ? "center" : true,
+          spacing: eb && ex ? 8 : 0,
           children: () => (0, r.jsx)(I.ZP, k(L({}, n), {
             ref: ey,
             onMouseDown: e.onMouseDown,

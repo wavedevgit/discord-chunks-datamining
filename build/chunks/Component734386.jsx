@@ -38,9 +38,9 @@ var Chunk951288 = require("./951288.js"),
 function R(e) {
   let {
     channel: t
-  } = e, [n, l] = i.useState(false), o = (0, f.ZP)(t, true), R = t.guild_id, M = (0, u.e7)([v.Z], () => null != R ? v.Z.getSortedRoles(R) : true), D = (0, u.e7)([j.default, x.Z], () => {
+  } = e, [n, l] = i.useState(false), o = (0, f.ZP)(t, true), R = t.guild_id, M = (0, u.e7)([x.Z], () => null != R ? x.Z.getSortedRoles(R) : true), D = (0, u.e7)([j.default, v.Z], () => {
     var e;
-    return j.default.getUser(null == (e = x.Z.getGuild(R)) ? true : e.ownerId)
+    return j.default.getUser(null == (e = v.Z.getGuild(R)) ? true : e.ownerId)
   }), L = i.useMemo(() => null != M ? M.filter(e => !(0, C.fI)(e)) : [], [M]), k = i.useMemo(() => s()(L).filter(e => {
     if (null == R) returnfalse;
     let n = E.I0({

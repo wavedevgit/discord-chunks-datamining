@@ -39,16 +39,16 @@ function S(e) {
     totalNumberOfParticipants: N
   } = e, A = (0, c.bp)() === j.IlC.POPOUT, w = (0, o.e7)([y.Z], () => y.Z.getGuild(P.guild_id), [P.guild_id]), {
     dismissedActivityEntryPointTileChannel: R
-  } = (0, x.d)(), M = (0, o.e7)([h.Z], () => h.Z.getUserParticipantCount(P.id), [P]), D = (0, b.bt)(P.id, t), L = i.useCallback(() => {
+  } = (0, v.d)(), M = (0, o.e7)([h.Z], () => h.Z.getUserParticipantCount(P.id), [P]), D = (0, b.bt)(P.id, t), L = i.useCallback(() => {
     (0, a.j)(() => {
-      x.d.setState({
+      v.d.setState({
         dismissedActivityEntryPointTileChannel: P.id
       })
     })
   }, [P.id]);
   i.useEffect(() => {
     null != R && P.id !== R && (0, a.j)(() => {
-      x.d.setState({
+      v.d.setState({
         dismissedActivityEntryPointTileChannel: null
       })
     })
@@ -60,7 +60,7 @@ function S(e) {
     H = (0, f.Nj)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
     F = (0, d.KF)(P.id) !== d.jy.CAN_LAUNCH,
     V = null != R && R === P.id,
-    z = D.map(e => t => (0, r.jsx)(v.ZP, {
+    z = D.map(e => t => (0, r.jsx)(x.ZP, {
       participant: e,
       channel: P,
       className: E.tile,

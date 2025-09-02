@@ -1,7 +1,7 @@
 /** Chunk was on 62987 **/
 /** chunk id: 57304, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,15 +10,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk23536 = require("./23536.jsx"),
   Chunk40851 = require("./40851.jsx"),
   Chunk622822 = require("./622822.js"),
-  Chunk731290 = require("./731290.js"),
   Chunk306680 = require("./306680.js"),
-  Chunk594174 = require("./594174.js"),
   Chunk585483 = require("./585483.js"),
   Chunk665149 = require("./665149.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function b(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +35,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,33 +47,30 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = function(e) {
+let b = function(e) {
   let {
     channel: t
-  } = e, n = (0, l.e7)([u.Z, p.default], () => {
-    let e = p.default.getCurrentUser();
-    return null == e || (0, c.aC)(t) && (!e.nsfwAllowed || !u.Z.didAgree(t.getGuildId()))
-  }, [t]), [_, C] = i.useState(false), v = (0, l.e7)([d.ZP], () => d.ZP.hasUnreadPins(t.id), [t]), x = (0, s.Aq)(), O = i.useRef(null), j = i.useCallback(() => {
-    n || C(e => !e)
+  } = e, n = (0, c.$5)(t), [b, y] = i.useState(false), _ = (0, l.e7)([u.ZP], () => u.ZP.hasUnreadPins(t.id), [t]), C = (0, s.Aq)(), x = i.useRef(null), v = i.useCallback(() => {
+    n || y(e => !e)
   }, [n]);
 
-  function E(e) {
-    (null == e ? true : e.shiftKey) || x.dispatch(m.CkL.POPOUT_CLOSE)
+  function O(e) {
+    (null == e ? true : e.shiftKey) || C.dispatch(h.CkL.POPOUT_CLOSE)
   }
-  return i.useEffect(() => (h.S.subscribe(m.CkL.TOGGLE_CHANNEL_PINS, j), () => {
-    h.S.unsubscribe(m.CkL.TOGGLE_CHANNEL_PINS, j)
-  }), [j]), (0, r.jsx)(a.yRy, {
-    targetElementRef: O,
-    shouldShow: _,
+  return i.useEffect(() => (d.S.subscribe(h.CkL.TOGGLE_CHANNEL_PINS, v), () => {
+    d.S.unsubscribe(h.CkL.TOGGLE_CHANNEL_PINS, v)
+  }), [v]), (0, r.jsx)(a.yRy, {
+    targetElementRef: x,
+    shouldShow: b,
     animation: a.yRy.Animation.NONE,
     position: "bottom",
     align: "right",
     autoInvert: false,
     ignoreModalClicks: true,
-    onRequestClose: () => C(false),
+    onRequestClose: () => y(false),
     renderPopout: function(e) {
-      return (0, r.jsx)(o.Z, y(b({}, e), {
-        onJump: E,
+      return (0, r.jsx)(o.Z, g(m({}, e), {
+        onJump: O,
         channel: t
       }))
     },
@@ -84,15 +79,15 @@ let _ = function(e) {
       let {
         isShown: i
       } = t;
-      return (0, r.jsx)(f.JO, y(b({}, e), {
-        ref: O,
-        onClick: j,
-        tooltip: i ? null : g.intl.string(g.t["mp1N//"]),
+      return (0, r.jsx)(p.JO, g(m({}, e), {
+        ref: x,
+        onClick: v,
+        tooltip: i ? null : f.intl.string(f.t["mp1N//"]),
         icon: a.qQX,
         iconSize: 20,
-        "aria-label": g.intl.string(g.t["mp1N//"]),
+        "aria-label": f.intl.string(f.t["mp1N//"]),
         disabled: n,
-        showBadge: v,
+        showBadge: _,
         selected: i
       }))
     }

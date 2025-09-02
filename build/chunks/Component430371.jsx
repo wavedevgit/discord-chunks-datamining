@@ -85,7 +85,7 @@ function P(e) {
     q = (0, c.Z)(z),
     [Y, K] = i.useState(true),
     [X, Q] = i.useState(false),
-    J = M.type === v.fO.ACTIVITY,
+    J = M.type === x.fO.ACTIVITY,
     $ = (0, u.Z)(J ? M.applicationId : true),
     ee = !J && null != M.streamId,
     et = U <= 2 * I + 144,
@@ -158,16 +158,16 @@ function P(e) {
         opacity: 0
       }
     }, em),
-    ev = i.useCallback(e => {
+    ex = i.useCallback(e => {
       W(e), K(false)
     }, []),
-    ex = en ? [] : (0, y.n3)(T, M, V),
+    ev = en ? [] : (0, y.n3)(T, M, V),
     {
       visibleParticipants: eO,
       participantTileWidth: ej
     } = (0, _.ZB)(k, N);
   return (0, r.jsxs)("div", {
-    className: a()(O.root, x.flexCenter, L),
+    className: a()(O.root, v.flexCenter, L),
     children: [(0, r.jsxs)("div", {
       className: O.tileWrapper,
       style: {
@@ -184,7 +184,7 @@ function P(e) {
           },
           className: O.videoWrapper,
           children: (0, r.jsx)("div", {
-            className: x.videoSizer,
+            className: v.videoSizer,
             style: {
               aspectRatio: ec
             },
@@ -193,20 +193,20 @@ function P(e) {
                 key: i
               } = n;
               return null != t ? (0, r.jsx)(o.animated.div, {
-                className: x.videoWrapperAnimated,
+                className: v.videoWrapperAnimated,
                 style: e,
                 children: (0, r.jsx)(g.ZP, {
                   focused: true,
                   noBorder: ed >= k || eu >= U,
                   channel: R,
-                  className: x.focusedVideo,
+                  className: v.focusedVideo,
                   videoComponent: F,
                   width: k,
                   participant: t,
                   onClick: l,
                   onDoubleClick: Z,
                   onContextMenu: P,
-                  onVideoResize: ev,
+                  onVideoResize: ex,
                   inCall: w,
                   inPopout: H
                 })
@@ -246,12 +246,12 @@ function P(e) {
           paused: X || !D
         })
       })]
-    }), ex.length > 0 ? (0, r.jsx)(b.Z, {
+    }), ev.length > 0 ? (0, r.jsx)(b.Z, {
       onContextMenuParticipant: P,
       width: k,
       height: U,
       channel: R,
-      participants: ex,
+      participants: ev,
       onSelectParticipant: l
     }) : null]
   })

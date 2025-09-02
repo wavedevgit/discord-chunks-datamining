@@ -39,8 +39,8 @@ function d(e) {
   }(e, ["selfMute", "serverMute", "suppress", "centerButton", "awaitingRemote", "onMouseEnter", "onMouseLeave", "onClick"]);
   let {
     parentAnalyticsLocation: y
-  } = (0, a.ZP)(), _ = t || n || d, C = p ? u.d : u.Z, v = (0, o.Z)(t, n, d, h), {
-    events: x,
+  } = (0, a.ZP)(), _ = t || n || d, C = p ? u.d : u.Z, x = (0, o.Z)(t, n, d, h), {
+    events: v,
     play: O,
     Component: j
   } = (0, c.b)(_), E = n || d ? l.v0G : j;
@@ -66,12 +66,12 @@ function d(e) {
     isTrayButton: true,
     caretColor: _ ? "red" : "primaryDark",
     color: _ ? "red" : true,
-    label: v,
+    label: x,
     onMouseEnter: e => {
-      null == f || f(e), x.onMouseEnter()
+      null == f || f(e), v.onMouseEnter()
     },
     onMouseLeave: e => {
-      null == m || m(e), x.onMouseLeave()
+      null == m || m(e), v.onMouseLeave()
     },
     onClick: e => {
       null == g || g(e), (0, s.v)(y, s.d.MIC, t)

@@ -98,16 +98,16 @@ function N(e) {
     channel: t,
     gotoChannel: n
   } = e;
-  return t.isPrivate() ? (0, r.jsx)(w, {
+  return t.isPrivate() ? (0, r.jsx)(Z, {
     channel: t,
     gotoChannel: n
-  }) : (0, r.jsx)(Z, {
+  }) : (0, r.jsx)(w, {
     channel: t,
     gotoChannel: n
   })
 }
 
-function w(e) {
+function Z(e) {
   let {
     channel: t,
     gotoChannel: n
@@ -124,7 +124,7 @@ function w(e) {
   })
 }
 
-function Z(e) {
+function w(e) {
   let {
     channel: t,
     gotoChannel: n

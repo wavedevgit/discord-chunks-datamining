@@ -192,8 +192,8 @@ function Q(e) {
       setTextAreaState: r
     }
   }(t, f), C = (0, k.vH)(t), {
-    isGeneratingAI: v,
-    enableAIFeatures: x,
+    isGeneratingAI: x,
+    enableAIFeatures: v,
     renderAiGenerateButton: j
   } = (0, G.U)({
     parentChannel: t,
@@ -278,7 +278,7 @@ function Q(e) {
     privateThreadMode: C,
     textAreaState: b,
     location: l,
-    enableAIFeatures: x
+    enableAIFeatures: v
   }), A = (0, k.oD)(p, C) ? c.qtY : c.or_;
   return (0, r.jsx)("div", {
     className: z.chat,
@@ -310,8 +310,8 @@ function Q(e) {
                 updateThreadSettings: g,
                 error: E,
                 disabled: N,
-                isGeneratingAI: v,
-                enableAIFeatures: x,
+                isGeneratingAI: x,
+                enableAIFeatures: v,
                 renderAiGenerateButton: j
               }), t.type === F.d4z.GUILD_TEXT ? (0, r.jsx)(J, {
                 startedFromMessage: null != n,
@@ -396,7 +396,7 @@ function $(e) {
     renderAiGenerateButton: m
   } = e, g = null != (t = l.name) ? t : "", b = (0, L.Op)(u, {
     content: g
-  }), y = (0, k.Od)(n, i), _ = null != i && !f, C = (0, x.Dt)(), v = f ? V.intl.string(V.t["Nb2/RE"]) : "" !== y ? y : V.intl.string(V.t["Nb2/RE"]);
+  }), y = (0, k.Od)(n, i), _ = null != i && !f, C = (0, v.Dt)(), x = f ? V.intl.string(V.t["Nb2/RE"]) : "" !== y ? y : V.intl.string(V.t["Nb2/RE"]);
   return (0, r.jsx)(c.hjN, {
     tag: "label",
     htmlFor: C,
@@ -407,7 +407,7 @@ function $(e) {
       children: [(0, r.jsx)(s.Is, {
         value: g,
         id: C,
-        placeholder: v,
+        placeholder: x,
         maxLength: F.HN8,
         onChange: e => {
           o({
@@ -458,18 +458,18 @@ function ee(e) {
     handler: g
   });
   let _ = (0, o.e7)([A.Z], () => A.Z.can(F.Plq.ATTACH_FILES, t)),
-    x = (0, L.Op)(p, {
+    v = (0, L.Op)(p, {
       content: n.textValue
     });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(v.Z, {
+    children: [(0, r.jsx)(x.Z, {
       channelId: t.id,
       type: Y,
       canAttachFiles: _
     }), (0, r.jsx)("div", {
       className: z.starterMessageError,
       children: (0, r.jsx)(c.pdY, {
-        error: x
+        error: v
       })
     }), (0, r.jsx)(C.ZP, {
       type: Y,
@@ -480,7 +480,7 @@ function ee(e) {
       focused: h,
       className: a()(z.channelTextArea, z.channelTextAreaWithTypingIndicator),
       innerClassName: a()(z.channelTextAreaInner, {
-        [z.channelTextAreaInnerError]: null != x
+        [z.channelTextAreaInnerError]: null != v
       }),
       onFocus: m,
       onBlur: g,

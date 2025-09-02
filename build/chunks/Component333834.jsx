@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk809946 = require("./809946.js");
 
-function Z(e) {
+function w(e) {
   e.stopPropagation()
 }
 
@@ -45,8 +45,8 @@ function T(e) {
   return (0, r.jsx)(p.P3F, {
     "aria-expanded": n,
     onClick: i,
-    className: o()(w.messagesGroupHeaderWrap, {
-      [w.collapsed]: !n
+    className: o()(Z.messagesGroupHeaderWrap, {
+      [Z.collapsed]: !n
     }),
     children: (0, r.jsxs)(p.Kqy, {
       gap: 4,
@@ -55,11 +55,11 @@ function T(e) {
       children: [(0, r.jsx)(p.X6q, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        className: w.messagesGroupHeader,
+        className: Z.messagesGroupHeader,
         children: (0, a.capitalize)(N.intl.string(S.Vv[t]).toLowerCase())
       }), (0, r.jsx)(p.CJ0, {
         size: "xxs",
-        className: w.chevron
+        className: Z.chevron
       })]
     })
   })
@@ -264,9 +264,9 @@ function D(e) {
     messagesByCategory: Y,
     viewId: D
   }), (0, r.jsx)("div", {
-    className: o()(g, w.messagesPopoutWrap),
-    onClick: Z,
-    onDoubleClick: Z,
+    className: o()(g, Z.messagesPopoutWrap),
+    onClick: w,
+    onDoubleClick: w,
     "aria-label": e["aria-label"],
     children: (0, r.jsx)(c.bG, {
       navigator: L,
@@ -312,7 +312,7 @@ function D(e) {
               var t;
               M.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
             },
-            className: o()(w.messagesPopout, f),
+            className: o()(Z.messagesPopout, f),
             onScroll: K,
             fade: true
           }, l), n = n = {

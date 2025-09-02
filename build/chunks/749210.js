@@ -502,7 +502,7 @@ let Z = {
       n = (0, h.Y2)(t);
     if (null == e || n) return void(0, p.uL)(N.Z5c.FRIENDS);
     let r = E.ZP.getDefaultChannel(e);
-    null == r || (0, l.aC)(r) ? (0, p.uL)(N.Z5c.FRIENDS) : (0, p.uL)(N.Z5c.CHANNEL(e, r.id))
+    null == r || (0, l.Y3)(r) ? (0, p.uL)(N.Z5c.FRIENDS) : (0, p.uL)(N.Z5c.CHANNEL(e, r.id))
   },
   escapeToDefaultChannel(e) {
     let t = E.ZP.getDefaultChannel(e);

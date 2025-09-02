@@ -250,7 +250,7 @@ class eV extends Chunk647438.PureComponent {
       awaitingRemoteSessionInfo: g,
       currentChannelActivities: b,
       callContainerDimensions: y
-    } = this.props, _ = f === eD.AEg.MINIMUM, C = _ || f === eD.AEg.NORMAL, v = i && a === eD.WtW.VIDEO, x = (null != (t = null == b ? true : b.length) ? t : 0) > 0 && p.isPrivate();
+    } = this.props, _ = f === eD.AEg.MINIMUM, C = _ || f === eD.AEg.NORMAL, x = i && a === eD.WtW.VIDEO, v = (null != (t = null == b ? true : b.length) ? t : 0) > 0 && p.isPrivate();
     return this._lastIdleProps = e, (0, r.jsx)(Q.Z, eG(eB({
       renderHeader: this.renderHeader,
       renderBottomLeft: this.renderBottomLeft,
@@ -271,13 +271,13 @@ class eV extends Chunk647438.PureComponent {
         participants: c,
         filteredParticipants: u,
         participantsVersion: d,
-        selectedParticipant: v ? n : null,
+        selectedParticipant: x ? n : null,
         layout: f,
         idle: e.idle,
         mode: a,
         onSelectParticipant: this.handleSelectParticipant,
         onContextMenuParticipant: this.handleContextMenu,
-        showParticipants: s && (!C || x),
+        showParticipants: s && (!C || v),
         popoutWindow: this.inPopout ? o : null,
         awaitingRemoteSessionInfo: g,
         callContainerDimensions: y
@@ -624,7 +624,7 @@ class eV extends Chunk647438.PureComponent {
       } = this.viewProperties;
       return (0, r.jsxs)(r.Fragment, {
         children: [null != i && i.type !== eM.fO.ACTIVITY && i.user.id !== n ? (0, r.jsx)(er.Z, {
-          context: (0, ex.Z)(i.type),
+          context: (0, ev.Z)(i.type),
           userId: i.user.id,
           currentWindow: this.inPopout ? null != e ? e : true : window,
           sliderClassName: ek.volumeSlider,
@@ -716,13 +716,13 @@ let ez = function(e) {
   } = e, {
     width: o = 0,
     ref: s
-  } = (0, x.ZP)(), {
+  } = (0, v.ZP)(), {
     width: c = 0,
     height: p = 0,
     ref: f
-  } = (0, x.ZP)(), {
+  } = (0, v.ZP)(), {
     ref: m
-  } = (0, x.ZP)(), g = (0, j.bp)(), b = (0, L.Z)(), y = (0, u.e7)([ep.Z], () => {
+  } = (0, v.ZP)(), g = (0, j.bp)(), b = (0, L.Z)(), y = (0, u.e7)([ep.Z], () => {
     var e;
     return (null != (e = null == b ? true : b.channelId) ? e : ep.Z.getVoiceChannelId()) === n.id
   }), {
@@ -735,21 +735,21 @@ let ez = function(e) {
     participantsListOpen: k,
     chatOpen: U,
     selectedParticipant: B
-  } = (0, u.cj)([ev.Z], () => {
+  } = (0, u.cj)([ex.Z], () => {
     let e = g === eD.IlC.POPOUT,
-      t = ev.Z.getMode(n.id);
+      t = ex.Z.getMode(n.id);
     e && (t = eD.WtW.VIDEO);
-    let r = t === eD.WtW.VIDEO ? ev.Z.getLayout(n.id, g) : eD.AEg.MINIMUM;
+    let r = t === eD.WtW.VIDEO ? ex.Z.getLayout(n.id, g) : eD.AEg.MINIMUM;
     return e && r !== eD.AEg.FULL_SCREEN && (r = eD.AEg.NO_CHAT), {
       mode: t,
       layout: r,
-      selectedParticipant: t !== eD.WtW.VOICE ? ev.Z.getSelectedParticipant(n.id) : null,
-      participants: ev.Z.getParticipants(n.id),
-      filteredParticipants: ev.Z.getFilteredParticipants(n.id),
-      participantsOpen: ev.Z.getParticipantsOpen(n.id),
-      chatOpen: ev.Z.getChatOpen(n.id),
-      participantsListOpen: ev.Z.getParticipantsListOpen(n.id),
-      participantsVersion: ev.Z.getParticipantsVersion(n.id)
+      selectedParticipant: t !== eD.WtW.VOICE ? ex.Z.getSelectedParticipant(n.id) : null,
+      participants: ex.Z.getParticipants(n.id),
+      filteredParticipants: ex.Z.getFilteredParticipants(n.id),
+      participantsOpen: ex.Z.getParticipantsOpen(n.id),
+      chatOpen: ex.Z.getChatOpen(n.id),
+      participantsListOpen: ex.Z.getParticipantsListOpen(n.id),
+      participantsVersion: ex.Z.getParticipantsVersion(n.id)
     }
   }, [g, n.id]), H = (0, u.Wu)([el.Z], () => el.Z.getAllActiveStreams()), {
     selectedStream: F
@@ -790,13 +790,13 @@ let ez = function(e) {
       analyticsLocations: ey
     } = (0, A.ZP)(T.Z.CHANNEL_CALL),
     eC = o - eM.oo,
-    ex = I.ZP.getEmbeddedActivitiesForChannel(n.id),
+    ev = I.ZP.getEmbeddedActivitiesForChannel(n.id),
     {
       theme: eE
     } = (0, h.TCT)();
   return (0, r.jsx)(A.Gt, {
     value: ey,
-    children: (0, r.jsx)(v.Z, {
+    children: (0, r.jsx)(x.Z, {
       page: eD.ZY5.CHANNEL_CALL,
       children: (0, r.jsx)(ej.B2, {
         children: (0, r.jsxs)(eN._A, {
@@ -841,7 +841,7 @@ let ez = function(e) {
             maxHeight: a,
             forceShowControls: eb,
             awaitingRemoteSessionInfo: $,
-            currentChannelActivities: ex,
+            currentChannelActivities: ev,
             theme: eE
           }), !n.isPrivate() && (0, r.jsx)(eN.YR, {}), (0, r.jsx)(ej.H_, {})]
         })

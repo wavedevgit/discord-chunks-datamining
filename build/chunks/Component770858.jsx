@@ -42,8 +42,8 @@ function E(e) {
   } = (0, g.pN)({
     location: "NotificationsInboxButtonInner"
   }), {
-    badge: w,
-    badgeDimensions: Z,
+    badge: Z,
+    badgeDimensions: w,
     unreadChannelsCount: T
   } = function(e) {
     let {
@@ -91,8 +91,8 @@ function E(e) {
     }), (0, r.jsx)(y.Z, {
       children: (0, r.jsx)(a.aRk, {
         selected: I || E,
-        lowerBadge: w,
-        lowerBadgeSize: Z,
+        lowerBadge: Z,
+        lowerBadgeSize: w,
         children: (0, r.jsx)(a.LYs, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},

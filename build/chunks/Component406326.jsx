@@ -56,8 +56,8 @@ function _(e) {
     searchMode: l,
     onSearchModeChange: s,
     totalResults: _,
-    isIndexing: v,
-    isSearching: x,
+    isIndexing: x,
+    isSearching: v,
     documentsIndexed: O
   } = e, j = (0, d.UX)({
     location: "SearchHeader"
@@ -109,8 +109,8 @@ function _(e) {
       children: (0, r.jsx)(C, {
         totalResults: _,
         subtitle: Z,
-        isIndexing: v,
-        isSearching: x,
+        isIndexing: x,
+        isSearching: v,
         documentsIndexed: O
       })
     }), E || S ? (0, r.jsxs)("div", {
@@ -158,7 +158,7 @@ function C(e) {
     isIndexing: l,
     documentsIndexed: a
   } = e;
-  return l ? (0, r.jsx)(x, {
+  return l ? (0, r.jsx)(v, {
     documentsIndexed: a
   }) : i ? (0, r.jsx)(O, {}) : (0, r.jsx)(j, {
     totalResults: t,
@@ -166,7 +166,7 @@ function C(e) {
   })
 }
 
-function v() {
+function x() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk865239.spinnerWrapper,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {
@@ -177,7 +177,7 @@ function v() {
   })
 }
 
-function x(e) {
+function v(e) {
   let {
     documentsIndexed: t
   } = e;
@@ -196,7 +196,7 @@ function x(e) {
           href: s.Z.getArticleURL(f.BhN.SEARCH_INDEXING),
           children: m.intl.string(m.t["G3EA+/"])
         })
-      }), (0, r.jsx)(v, {})]
+      }), (0, r.jsx)(x, {})]
     }))
   })
 }
@@ -207,7 +207,7 @@ function O() {
       variant: "text-md/medium",
       color: "header-secondary",
       children: Chunk388032.intl.string(Chunk388032.t.uixzLS)
-    }), (0, Chunk951288.jsx)(v, {})]
+    }), (0, Chunk951288.jsx)(x, {})]
   })
 }
 

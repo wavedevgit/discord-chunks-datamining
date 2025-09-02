@@ -146,9 +146,9 @@ function z(e) {
     totalResults: y,
     isSearching: _,
     isIndexing: C,
-    hasError: v
+    hasError: x
   } = l;
-  if (v) return (0, r.jsxs)(F, {
+  if (x) return (0, r.jsxs)(F, {
     children: [(0, r.jsx)("div", {
       className: B.errorImage
     }), (0, r.jsx)("div", {
@@ -183,16 +183,16 @@ function z(e) {
     isFavoritesSearch: b
   });
   let {
-    showNoResultsAlt: x
-  } = l, O = x ? U.intl.string(U.t["VrK/2d"]) : U.intl.string(U.t.V6nAfH);
+    showNoResultsAlt: v
+  } = l, O = v ? U.intl.string(U.t["VrK/2d"]) : U.intl.string(U.t.V6nAfH);
   return (0, r.jsxs)(F, {
     children: [(0, r.jsx)("div", {
       className: a()(B.noResultsImage, {
-        [B.alt]: x
+        [B.alt]: v
       })
     }), (0, r.jsx)("div", {
       className: a()(B.emptyResultsText, B.noResults, {
-        [B.alt]: x
+        [B.alt]: v
       }),
       children: O
     })]
@@ -212,7 +212,7 @@ let W = [],
       dismissFeedbackEntrypoint: m,
       onSearchModeChange: y,
       onPageChange: _,
-      searchMode: x,
+      searchMode: v,
       onBlockedResultsClick: O,
       searchResultsQuery: j,
       isFavoritesSearch: I
@@ -294,12 +294,12 @@ let W = [],
         }
       }, [H, k]),
       q = i.useCallback(e => {
-        e === x || n.isSearching || ((0, D.zW)({
+        e === v || n.isSearching || ((0, D.zW)({
           searchContext: t,
           searchRequestAnalyticsId: a,
           mode: e
         }), y(e))
-      }, [y, n.isSearching, t, x, a]),
+      }, [y, n.isSearching, t, v, a]),
       Y = i.useCallback((e, r) => {
         let i = g.Z.getChannel(e.channel_id),
           l = null != i ? i.getGuildId() : null,
@@ -334,7 +334,7 @@ let W = [],
       X = Math.floor(n.offset / L.vpv),
       Q = H && X >= k,
       J = k + 1,
-      $ = (0, v.C)({
+      $ = (0, x.C)({
         location: "SearchResults"
       }),
       ee = (0, c.Wu)([M.Z], () => {
@@ -362,7 +362,7 @@ let W = [],
       "aria-label": U.intl.string(U.t.zkoeq6),
       children: [(0, r.jsx)(S.Z, {
         searchContext: t,
-        searchMode: x,
+        searchMode: v,
         onSearchModeChange: q,
         totalResults: n.totalResults,
         isSearching: n.isSearching,
@@ -411,7 +411,7 @@ let W = [],
 function Y(e) {
   let {
     searchContext: t
-  } = e, n = (0, x.UX)({
+  } = e, n = (0, v.UX)({
     location: "SearchResults"
   }), {
     isFeedbackVisible: l,
@@ -456,12 +456,12 @@ function Y(e) {
     searchContext: t
   }), {
     searchMode: b,
-    setSearchMode: v
+    setSearchMode: x
   } = (0, w.Z)({
     searchContext: t
   }), E = i.useCallback(e => {
     if (s.isSearching) return;
-    v(e);
+    x(e);
     let r = P.Z.getSearchInputText(t),
       i = (0, C.Tm)(t),
       l = M.Z.getSearchResultsQuery(i);
@@ -477,7 +477,7 @@ function Y(e) {
       searchMode: e,
       offset: 0
     }))
-  }, [n, s.isSearching, t, v]), S = i.useCallback(e => {
+  }, [n, s.isSearching, t, x]), S = i.useCallback(e => {
     if (s.isSearching) return;
     let r = P.Z.getSearchInputText(t),
       i = (0, C.Tm)(t),

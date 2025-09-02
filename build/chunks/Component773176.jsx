@@ -211,7 +211,7 @@ function eg(e) {
       author: d
     } = n, p = (0, u.e7)([V.Z], () => V.Z.getGuild(t.guild_id), [t.guild_id]), h = (0, u.e7)([G.default], () => G.default.getId()), g = (0, U.$R)(t), b = (0, U.Gu)(t), {
       firstMessage: y
-    } = (0, u.e7)([v.Z], () => v.Z.getMessage(t.id), [t.id]), _ = B.nc.useSetting(), C = B.Sb.useSetting(), O = (0, u.e7)([z.Z], () => null == t.guild_id || z.Z.canChatInGuild(t.guild_id), [t]), {
+    } = (0, u.e7)([x.Z], () => x.Z.getMessage(t.id), [t.id]), _ = B.nc.useSetting(), C = B.Sb.useSetting(), O = (0, u.e7)([z.Z], () => null == t.guild_id || z.Z.canChatInGuild(t.guild_id), [t]), {
       canManageMessages: j,
       canAddNewReactions: E
     } = (0, u.cj)([W.Z], () => ({
@@ -238,7 +238,7 @@ function eg(e) {
       en = null != X && n.type === ea.uaV.USER_JOIN && W.Z.canWithPartialContext(ea.Plq.MANAGE_GUILD, {
         guildId: X
       }),
-      er = (0, x.a)(n),
+      er = (0, v.a)(n),
       {
         enabled: ei
       } = L.Z.useExperiment({
@@ -283,13 +283,13 @@ function eg(e) {
     es({
       emojiPicker: !K
     })
-  }, [K, es]), ey = (0, U.$R)(t), eC = n.hasFlag(ea.iLy.CROSSPOSTED), [ev, ex] = (0, g.cv)(R ? [d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), eO = ev === d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [ej, eE] = i.useState(false), eS = i.useCallback(() => {
+  }, [K, es]), ey = (0, U.$R)(t), eC = n.hasFlag(ea.iLy.CROSSPOSTED), [ex, ev] = (0, g.cv)(R ? [d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), eO = ex === d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [ej, eE] = i.useState(false), eS = i.useCallback(() => {
     eE(true)
   }, []), eI = i.useCallback(() => {
     eE(false)
   }, []), eP = i.useCallback((e, t) => {
-    ex(eo.L.TAKE_ACTION), (0, er.ts)(e, t)
-  }, [ex]), {
+    ev(eo.L.TAKE_ACTION), (0, er.ts)(e, t)
+  }, [ev]), {
     canShowReactionsOnMessageHover: eZ
   } = y.ZP.useExperiment({
     location: "ExpandingButtons"

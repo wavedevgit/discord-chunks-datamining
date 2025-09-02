@@ -1,9 +1,9 @@
 /** Chunk was on 11160 **/
 /** chunk id: 301342, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => Z,
+  P: () => w,
   Qo: () => T,
-  ZP: () => w,
+  ZP: () => Z,
   kw: () => R,
   rj: () => A
 });
@@ -74,8 +74,8 @@ let N = Chunk647438.memo(function(e) {
         disableManageChannels: v,
         position: j,
         sortingPosition: N,
-        hideIcon: w,
-        children: Z
+        hideIcon: Z,
+        children: w
       } = e,
       T = (0, s.e7)([_.ZP], () => _.ZP.isChannelMuted(l.getGuildId(), l.id)),
       A = (0, s.e7)([b.Z], () => b.Z.isCollapsed(l.id)),
@@ -170,7 +170,7 @@ let N = Chunk647438.memo(function(e) {
                 children: (0, r.jsx)(m.Z, {
                   children: l.name
                 })
-              }), w ? null : (0, r.jsx)(d.CJ0, {
+              }), Z ? null : (0, r.jsx)(d.CJ0, {
                 size: "md",
                 color: "currentColor",
                 className: E.icon
@@ -212,12 +212,12 @@ let N = Chunk647438.memo(function(e) {
               }) : null
             })]
           })
-        }), Z]
+        }), w]
       });
     return null != f && null != c ? f(c(H)) : H
   }),
-  w = (0, Chunk146773.B)(N),
-  Z = Chunk647438.memo(function(e) {
+  Z = (0, Chunk146773.B)(N),
+  w = Chunk647438.memo(function(e) {
     let {
       name: t,
       onDismiss: n,

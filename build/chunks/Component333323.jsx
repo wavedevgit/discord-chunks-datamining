@@ -51,7 +51,7 @@ function S(e) {
   return e
 }
 
-function A(e, n) {
+function k(e, n) {
   return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -63,7 +63,7 @@ function A(e, n) {
     Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
   }), e
 }
-let k = Chunk404488.q + 300 + 64,
+let A = Chunk404488.q + 300 + 64,
   M = Chunk647438.memo(function(e) {
     let {
       guild: n
@@ -89,12 +89,12 @@ function L(e) {
   let {
     guild: a,
     width: h
-  } = e, P = (0, s.e7)([g.ZP], () => g.ZP.getSection(O.oC.GUILD_HOME)), [L, T] = r.useState(false), [D, R] = r.useState(N.$Y6), H = P === N.ULH.SIDEBAR_CHAT, B = (0, c.mFp)(), W = (0, s.e7)([b.Z], () => b.Z.getSettings(a.id)), U = null == W ? true : W.welcomeMessage, G = (0, C.Z)(a.id), q = !G && (null != (t = null == W || null == (n = W.resourceChannels) ? true : n.length) ? t : 0) === 0, z = (0, d.Z)("(max-width: 1300px)"), F = h - N.PrS - D, V = H && F < k || z || q;
+  } = e, P = (0, s.e7)([g.ZP], () => g.ZP.getSection(O.oC.GUILD_HOME)), [L, T] = r.useState(false), [D, R] = r.useState(N.$Y6), H = P === N.ULH.SIDEBAR_CHAT, B = (0, c.mFp)(), W = (0, s.e7)([b.Z], () => b.Z.getSettings(a.id)), U = null == W ? true : W.welcomeMessage, G = (0, C.Z)(a.id), q = !G && (null != (t = null == W || null == (n = W.resourceChannels) ? true : n.length) ? t : 0) === 0, z = (0, d.Z)("(max-width: 1300px)"), F = h - N.PrS - D, V = H && F < A || z || q;
   return (r.useEffect(() => {
     if (W === b.P)(0, x.cP)(a.id);
     else if (null != W) {
       var e, n, t, l, r;
-      p.default.track(N.rMx.SERVER_GUIDE_VIEWED, A(S({}, (0, u.hH)(a.id)), {
+      p.default.track(N.rMx.SERVER_GUIDE_VIEWED, k(S({}, (0, u.hH)(a.id)), {
         num_member_actions: null != (t = null == (e = W.newMemberActions) ? true : e.length) ? t : 0,
         num_member_actions_completed: Object.keys(null != (l = j.Z.getCompletedActions(a.id)) ? l : {}).length,
         num_resource_channels: null != (r = null == (n = W.resourceChannels) ? true : n.length) ? r : 0
@@ -112,7 +112,7 @@ function L(e) {
       }),
       children: [(0, l.jsx)(M, {
         guild: a
-      }), (0, l.jsx)(c.yWw, A(S({}, B), {
+      }), (0, l.jsx)(c.yWw, k(S({}, B), {
         children: (0, l.jsxs)("div", {
           className: i()(w.homeContainer, {
             [w.homeContainerCollapsed]: V

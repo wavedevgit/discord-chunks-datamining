@@ -113,15 +113,15 @@ let F = Chunk647438.memo(function(e) {
       Z.S.unsubscribe(D.CkL.UPLOAD_FILE, e)
     }
   });
-  let eg = (0, x.NE)(V),
-    eb = (0, x.Xu)(V),
+  let eg = (0, v.NE)(V),
+    eb = (0, v.Xu)(V),
     ey = !O.dN.useSetting() && !(0, T.isAndroidWeb)() && null != window.ResizeObserver,
     e_ = (0, C.UI)(null != V ? V : true),
     eC = (0, h.qB)(),
-    ev = (0, v.Us)({
+    ex = (0, x.Us)({
       location: "ChannelAttachButton"
     }),
-    ex = null != (l = null == et ? true : et.length) ? l : 0,
+    ev = null != (l = null == et ? true : et.length) ? l : 0,
     eO = (0, M.Z)({
       canAttachFiles: ep,
       canStartThreads: eg || eb,
@@ -130,11 +130,11 @@ let F = Chunk647438.memo(function(e) {
       canUseApplicationCommands: !Y,
       channel: V,
       activities: J,
-      newClipsCount: ex,
+      newClipsCount: ev,
       canPostPolls: e_,
       canLaunchActivities: eC,
       appContext: K,
-      canSendScheduledMessages: ev
+      canSendScheduledMessages: ex
     }),
     ej = (0, f.Z)("ChannelAttachButton");
   if (0 === eO.length) return null;

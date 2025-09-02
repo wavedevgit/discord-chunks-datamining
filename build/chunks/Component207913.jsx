@@ -82,7 +82,7 @@ function V(e) {
     isSelected: a,
     isUnread: s,
     groupedMessages: d
-  } = e, p = n.type === L.d4z.UNKNOWN ? u.VL1 : (0, f.KS)(n, null), m = (0, h.ZP)(n, false), b = (0, c.e7)([w.Z], () => w.Z.getGuild(n.getGuildId())), {
+  } = e, p = n.type === L.d4z.UNKNOWN ? u.VL1 : (0, f.KS)(n, null), m = (0, h.ZP)(n, false), b = (0, c.e7)([Z.Z], () => Z.Z.getGuild(n.getGuildId())), {
     nick: y,
     colorString: _
   } = (0, O.ZP)(t), {
@@ -99,7 +99,7 @@ function V(e) {
     user: t.author,
     compact: true,
     isRepliedMessage: true
-  }), Z = (0, r.jsx)("div", {
+  }), w = (0, r.jsx)("div", {
     className: G.usernameTagContainer,
     inert: true,
     children: (0, r.jsx)(j.Z, {
@@ -161,7 +161,7 @@ function V(e) {
                 color: null != _ ? _ : true
               },
               children: (0, r.jsx)(g.Z, {
-                children: Z
+                children: w
               })
             }), I]
           }) : (0, r.jsx)(g.Z, {
@@ -385,7 +385,7 @@ let K = (0, Chunk647438.memo)(function(e) {
     return e.isMenuOpenForMessage(null != (t = null == h ? true : h.id) ? t : null)
   }), {
     notificationCenterVariant: O
-  } = (0, Z.pN)({
+  } = (0, w.pN)({
     location: "NotificationsInboxMessageUnit"
   }), y = i.useMemo(() => "".concat(null == h ? true : h.author.username, ": ").concat(null == m ? true : m.name), [null == h ? true : h.author.username, null == m ? true : m.name]), _ = null != (t = null == a ? true : a.map(e => e.message).filter(e => null != e)) ? t : [];
   return null == h || null == m ? null : (0, r.jsx)(u.kL8, {
@@ -399,7 +399,7 @@ let K = (0, Chunk647438.memo)(function(e) {
         message: h,
         channel: m,
         isUnread: p,
-        isSidebar: O === Z.jP.SIDEBAR,
+        isSidebar: O === w.jP.SIDEBAR,
         viewId: f
       })
     },

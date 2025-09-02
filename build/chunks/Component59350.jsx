@@ -98,7 +98,7 @@ function $(e) {
     })
   });
   let T = (0, _.parseBioReact)(null == P ? true : P.bio),
-    A = S.ZP.getEnableHardwareAcceleration() ? c.Xo$ : c.qEK;
+    k = S.ZP.getEnableHardwareAcceleration() ? c.Xo$ : c.qEK;
   return (0, l.jsxs)("div", {
     className: X.profile,
     children: [(0, l.jsx)(c.X6q, {
@@ -112,7 +112,7 @@ function $(e) {
     }), (0, l.jsxs)("div", {
       className: X.profileCard,
       children: [(0, l.jsx)("div", (n = Y({}, u), r = r = {
-        children: (0, l.jsx)(A, {
+        children: (0, l.jsx)(k, {
           src: d,
           avatarDecoration: g,
           size: K,
@@ -173,7 +173,7 @@ function ee(e) {
   let {
     prompt: n,
     guild: i
-  } = e, [s, d] = r.useState(null), [u, m] = r.useState(new Set), h = null == n || null == (t = n.options) ? true : t.filter(e => u.has(e.id)), p = (0, B.L6)(h), f = (0, B.dX)(h), x = (0, o.Wu)([k.Z], () => k.Z.getOnboardingResponsesForPrompt(i.id, n.id)), {
+  } = e, [s, d] = r.useState(null), [u, m] = r.useState(new Set), h = null == n || null == (t = n.options) ? true : t.filter(e => u.has(e.id)), p = (0, A.L6)(h), f = (0, A.dX)(h), x = (0, o.Wu)([B.Z], () => B.Z.getOnboardingResponsesForPrompt(i.id, n.id)), {
     helpText: _,
     helpTextAdditional: C
   } = (0, D.p)({
@@ -242,7 +242,7 @@ function et(e) {
   let {
     prompt: n,
     guild: i
-  } = e, [s, d] = r.useState(null), [u, m] = r.useState(new Set), h = null == n || null == (t = n.options) ? true : t.filter(e => u.has(e.id)), p = (0, B.L6)(h), f = (0, B.dX)(h), x = (0, o.Wu)([k.Z], () => k.Z.getOnboardingResponsesForPrompt(i.id, n.id)), {
+  } = e, [s, d] = r.useState(null), [u, m] = r.useState(new Set), h = null == n || null == (t = n.options) ? true : t.filter(e => u.has(e.id)), p = (0, A.L6)(h), f = (0, A.dX)(h), x = (0, o.Wu)([B.Z], () => B.Z.getOnboardingResponsesForPrompt(i.id, n.id)), {
     helpText: _,
     helpTextAdditional: C
   } = (0, D.p)({
@@ -313,10 +313,10 @@ function en(e) {
     onboardingPrompts: N
   } = (0, L.Z)(t);
   r.useEffect(() => {
-    (null == m ? true : m.id) != null && !x.Z.isFullServerPreview(m.id) && (k.Z.shouldFetchPrompts(m.id) || C) && (0, A.eM)(m.id)
+    (null == m ? true : m.id) != null && !x.Z.isFullServerPreview(m.id) && (B.Z.shouldFetchPrompts(m.id) || C) && (0, k.eM)(m.id)
   }, [null == m ? true : m.id, C]), r.useEffect(() => {
     if ((null == m ? true : m.id) != null && !x.Z.isFullServerPreview(m.id)) return () => {
-      (0, d.Ju)(m.id, F.W.GUILD_ONBOARDING_QUESTION, k.Z.ackIdForGuild(m.id)), T.Z.updateOnboardingResponses(m.id)
+      (0, d.Ju)(m.id, F.W.GUILD_ONBOARDING_QUESTION, B.Z.ackIdForGuild(m.id)), T.Z.updateOnboardingResponses(m.id)
     }
   }, [null == m ? true : m.id]);
   let E = r.useCallback(e => {

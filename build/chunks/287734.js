@@ -2,7 +2,7 @@
 /** chunk id: 287734, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => b
+  default: () => g
 });
 var Chunk570140 = require("./570140.js"),
   Chunk622822 = require("./622822.js"),
@@ -13,15 +13,13 @@ var Chunk788983 = require("./788983.js"),
   Chunk703656 = require("./703656.js"),
   Chunk700615 = require("./700615.js"),
   Chunk592125 = require("./592125.js"),
-  Chunk731290 = require("./731290.js"),
   Chunk131951 = require("./131951.js"),
   Chunk944486 = require("./944486.js"),
   Chunk914010 = require("./914010.js"),
-  Chunk594174 = require("./594174.js"),
   Chunk934415 = require("./934415.js"),
   Chunk604151 = require("./604151.js"),
   Chunk981631 = require("./981631.js");
-let b = {
+let g = {
   selectChannel(e) {
     let {
       guildId: t,
@@ -34,7 +32,7 @@ let b = {
     } = e;
     r.Z.dispatch({
       type: "CHANNEL_SELECT",
-      guildId: t === E.ME ? null : t,
+      guildId: t === m.ME ? null : t,
       channelId: n,
       messageId: i,
       jumpType: a,
@@ -44,17 +42,16 @@ let b = {
     })
   },
   selectPrivateChannel(e) {
-    (0, l.uL)(E.Z5c.CHANNEL(E.ME, e))
+    (0, l.uL)(m.Z5c.CHANNEL(m.ME, e))
   },
   selectVoiceChannel(e) {
-    var t;
-    let n = arguments.length > 1 && true !== arguments[1] && arguments[1],
-      r = arguments.length > 2 && true !== arguments[2] && arguments[2],
-      a = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {},
-      o = u.Z.getChannel(e),
-      s = null == o ? true : o.getGuildId();
-    if ((null == o ? true : o.isGuildVocal()) && (0, i.aC)(o) && (!(null == (t = h.default.getCurrentUser()) ? true : t.nsfwAllowed) || !d.Z.didAgree(s))) return void(0, l.uL)(E.Z5c.CHANNEL(s, e));
-    f.Z.isSupported() && (null != e && f.Z.getMediaEngine().interact(), (0, g.h)(e, s, n, r, a))
+    let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
+      n = arguments.length > 2 && true !== arguments[2] && arguments[2],
+      r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {},
+      a = u.Z.getChannel(e),
+      o = null == a ? true : a.getGuildId();
+    if ((null == a ? true : a.isGuildVocal()) && (0, i.Y3)(a)) return void(0, l.uL)(m.Z5c.CHANNEL(o, e));
+    d.Z.isSupported() && (null != e && d.Z.getMediaEngine().interact(), (0, h.h)(e, o, t, n, r))
   },
   disconnect() {
     let e = Chunk258609.Z.getRemoteSessionId();

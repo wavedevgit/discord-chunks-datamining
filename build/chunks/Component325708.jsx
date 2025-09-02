@@ -62,14 +62,14 @@ function y(e) {
       case 5:
         return "callParticipantsSidebarWidth"
     }
-  }(t), [_, C] = l.useState(h.ZP[y]), v = l.useCallback(e => {
+  }(t), [_, C] = l.useState(h.ZP[y]), x = l.useCallback(e => {
     d.ZP.updatedUnsyncedSettings({
       [y]: e
     })
-  }, [y]), x = 5 === t ? f.at : f.Co, O = (0, f.WL)({
+  }, [y]), v = 5 === t ? f.at : f.Co, O = (0, f.WL)({
     maxWidth: n,
-    minWidth: x
-  }), j = (0, u.dQu)(c.Z.modules.chat.RESIZE_HANDLE_WIDTH), E = (0, s.clamp)(_, x, n), S = O ? E : E + j;
+    minWidth: v
+  }), j = (0, u.dQu)(c.Z.modules.chat.RESIZE_HANDLE_WIDTH), E = (0, s.clamp)(_, v, n), S = O ? E : E + j;
   l.useEffect(() => {
     null == r || r(E, O)
   }, [E, r, O]);
@@ -93,11 +93,11 @@ function y(e) {
             width: S
           }
         }), !O && (0, i.jsx)(b, {
-          minWidth: x,
+          minWidth: v,
           maxWidth: n,
           resizableNode: g,
           onResize: C,
-          onResizeEnd: v
+          onResizeEnd: x
         }), (0, i.jsx)("div", {
           ref: g,
           className: o()(m.container, {

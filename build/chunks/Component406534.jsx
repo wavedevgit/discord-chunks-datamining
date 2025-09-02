@@ -133,17 +133,17 @@ function en(e) {
     eb = (0, c.ts)(f),
     ey = (0, l.e7)([S.Z], () => S.Z.shouldShowTopicsBar() && !ed),
     e_ = (0, j.P)(f.id),
-    eC = (0, x.z)(f.id, Q.zr),
-    ev = (0, p.k)(f.id),
-    ex = (0, k.Z)(),
+    eC = (0, v.z)(f.id, Q.zr),
+    ex = (0, p.k)(f.id),
+    ev = (0, k.Z)(),
     eO = function(e, t) {
       if (e.isDM() && null != t)
-        if (t.type === v.pj.STRANGER_DANGER) return (0, r.jsx)(E.M, {
+        if (t.type === x.pj.STRANGER_DANGER) return (0, r.jsx)(E.M, {
           channelId: e.id,
           warningId: t.id,
           senderId: e.getRecipientId()
         });
-        else if (t.type === v.pj.LIKELY_ATO) return (0, r.jsx)(h.M, {
+        else if (t.type === x.pj.LIKELY_ATO) return (0, r.jsx)(h.M, {
         channelId: e.id,
         warningId: t.id,
         senderId: e.getRecipientId()
@@ -154,7 +154,7 @@ function en(e) {
         senderId: e.getRecipientId()
       });
       return null
-    }(f, null != (n = null != e_ ? e_ : eC) ? n : ev),
+    }(f, null != (n = null != e_ ? e_ : eC) ? n : ex),
     ej = f.isForumPost() && !eg ? (0, r.jsx)(g.Z, {
       postId: f.id
     }) : null,
@@ -250,7 +250,7 @@ function en(e) {
     let e, t, n = T.ZP.getOldestUnreadTimestamp(f.id),
       l = 0 !== n ? n : M.default.extractTimestamp(f.id),
       o = (0, w.KC)(new Date, new Date(l));
-    if (T.ZP.isEstimated(f.id) ? (e = o ? J.t.wvtbbG : J.t.tHqbtr, t = J.t.vaPWFR) : (e = o ? J.t.BctFHx : J.t["3wXb9P"], t = J.t["4H8ldH"]), eb && (0, c.tW)(f) && ex.includes(Y.E.SUMMARIES)) {
+    if (T.ZP.isEstimated(f.id) ? (e = o ? J.t.wvtbbG : J.t.tHqbtr, t = J.t.vaPWFR) : (e = o ? J.t.BctFHx : J.t["3wXb9P"], t = J.t["4H8ldH"]), eb && (0, c.tW)(f) && ev.includes(Y.E.SUMMARIES)) {
       let n = T.ZP.ackMessageId(f.id),
         o = (0, I.q)(f.id, T.ZP.getOldestUnreadMessageId(f.id));
       if ((0, d.yw)(X.rMx.SUMMARIES_UNREAD_BAR_VIEWED, {
@@ -338,7 +338,7 @@ function en(e) {
           })
         }
       }
-    } else ex.includes(Y.E.NEW_MESSAGES) && (i = (0, r.jsx)(V.LE, {
+    } else ev.includes(Y.E.NEW_MESSAGES) && (i = (0, r.jsx)(V.LE, {
       content: J.intl.format(e, {
         count: en,
         timestamp: l
@@ -346,7 +346,7 @@ function en(e) {
       channelId: f.id
     }))
   }
-  if (null == i && (0, c.Lp)(f) && ey && ex.includes(Y.E.SUMMARIES) && (i = (0, r.jsx)(V.BO, {
+  if (null == i && (0, c.Lp)(f) && ey && ev.includes(Y.E.SUMMARIES) && (i = (0, r.jsx)(V.BO, {
       channel: f,
       scrollManager: eo
     })), B.error) s = (0, r.jsx)(V.Rp, {

@@ -49,7 +49,7 @@ function N(e) {
   return e
 }
 
-function w(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,7 +62,7 @@ function w(e, t) {
   }), e
 }
 
-function Z(e) {
+function w(e) {
   let {
     style: t,
     withGuildIcon: n,
@@ -79,7 +79,7 @@ function Z(e) {
   } = (0, c.TCT)();
   switch (a) {
     case "cozy":
-      return (0, r.jsxs)("svg", w(N({}, l), {
+      return (0, r.jsxs)("svg", Z(N({}, l), {
         width: "10",
         height: "20",
         viewBox: "0 0 10 20",
@@ -94,7 +94,7 @@ function Z(e) {
         })]
       }));
     case "compact":
-      return (0, r.jsxs)("svg", w(N({}, l), {
+      return (0, r.jsxs)("svg", Z(N({}, l), {
         width: "10",
         height: "19",
         viewBox: "0 0 10 19",
@@ -109,7 +109,7 @@ function Z(e) {
         })]
       }));
     default:
-      return (0, r.jsxs)("svg", w(N({}, l), {
+      return (0, r.jsxs)("svg", Z(N({}, l), {
         width: "10",
         height: "19",
         viewBox: "0 0 10 19",
@@ -150,7 +150,7 @@ let T = Chunk647438.memo(function(e) {
       let {
         default: e
       } = await n.e("40157").then(n.bind(n, 422200));
-      return t => (0, r.jsx)(e, w(N({}, t), {
+      return t => (0, r.jsx)(e, Z(N({}, t), {
         channel: i
       }))
     })
@@ -183,9 +183,9 @@ let T = Chunk647438.memo(function(e) {
     className: o()(S.containerDefault, {
       [S.selected]: l
     }),
-    children: [(0, r.jsx)(Z, {
+    children: [(0, r.jsx)(w, {
       withGuildIcon: A
-    }), T ? null : (0, r.jsx)(Z, {
+    }), T ? null : (0, r.jsx)(w, {
       withGuildIcon: A,
       inverted: true,
       style: {
@@ -210,7 +210,7 @@ let T = Chunk647438.memo(function(e) {
         onContextMenu: F,
         children: [!M || U || l ? null : (0, r.jsx)("div", {
           className: o()(P.unread, P.unreadImportant)
-        }), (0, r.jsx)(c.P3F, w(N({}, W), {
+        }), (0, r.jsx)(c.P3F, Z(N({}, W), {
           innerRef: K,
           className: P.link,
           onClick: G,

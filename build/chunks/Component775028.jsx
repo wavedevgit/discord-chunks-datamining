@@ -34,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk444630 = require("./444630.js"),
   Chunk430864 = require("./430864.js");
 
-function A(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       l = Object.keys(n);
@@ -53,7 +53,7 @@ function A(e) {
   return e
 }
 
-function k(e, t) {
+function B(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -65,7 +65,7 @@ function k(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let B = new Set([Chunk981631.d4z.GUILD_FORUM, Chunk981631.d4z.GUILD_MEDIA]),
+let A = new Set([Chunk981631.d4z.GUILD_FORUM, Chunk981631.d4z.GUILD_MEDIA]),
   R = new Set([Chunk981631.d4z.GUILD_VOICE, Chunk981631.d4z.GUILD_STAGE_VOICE]);
 
 function D(e) {
@@ -83,7 +83,7 @@ function D(e) {
         let {
           default: e
         } = await Promise.all([n.e("8965"), n.e("14280")]).then(n.bind(n, 139035));
-        return n => (0, l.jsx)(e, k(A({}, n), {
+        return n => (0, l.jsx)(e, B(k({}, n), {
           channel: r,
           guild: t
         }))
@@ -148,7 +148,7 @@ let L = Chunk647438.memo(function() {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("18320"), n.e("83331"), n.e("81070")]).then(n.bind(n, 213202));
-        return n => (0, l.jsx)(e, k(A({}, n), {
+        return n => (0, l.jsx)(e, B(k({}, n), {
           channel: t,
           guild: i
         }))
@@ -156,7 +156,7 @@ let L = Chunk647438.memo(function() {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("18320"), n.e("44011")]).then(n.bind(n, 373651));
-        return n => (0, l.jsx)(e, k(A({}, n), {
+        return n => (0, l.jsx)(e, B(k({}, n), {
           channel: t,
           guild: i
         }))
@@ -185,7 +185,7 @@ let L = Chunk647438.memo(function() {
       }, "topic")), [n.map((e, t) => [e, (0, l.jsx)(M, {
         index: t
       }, "subtitle-separator-".concat(t))])].flat(2).slice(0, false)
-    }(t, W), V = e => ((e.stopPropagation(), B.has(t.type) || e.shiftKey) ? (0, b.XU)(i.id, t.id) : t.isGuildStageVoice() || t.isGuildVoice() ? (0, v.Cq)(t) : j.Z.openChannelAsSidebar({
+    }(t, W), V = e => ((e.stopPropagation(), A.has(t.type) || e.shiftKey) ? (0, b.XU)(i.id, t.id) : t.isGuildStageVoice() || t.isGuildVoice() ? (0, v.Cq)(t) : j.Z.openChannelAsSidebar({
       guildId: t.guild_id,
       channelId: t.id,
       baseChannelId: P.oC.CHANNEL_BROWSER
@@ -198,7 +198,7 @@ let L = Chunk647438.memo(function() {
         text: G,
         delay: 500,
         position: I,
-        children: e => (0, l.jsxs)(u.P3F, k(A({
+        children: e => (0, l.jsxs)(u.P3F, B(k({
           className: a()(S.channelRow, {
             [S.firstChannel]: s,
             [S.lastChannel]: p,

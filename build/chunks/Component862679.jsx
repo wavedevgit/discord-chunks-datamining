@@ -25,12 +25,12 @@ let p = function(e) {
     animationSrc: y,
     secondaryButtonText: _,
     onSecondaryButtonClick: C,
-    children: v,
-    useReducedMotion: x = false
+    children: x,
+    useReducedMotion: v = false
   } = e, O = (0, a.e7)([u.ZP], () => u.ZP.getState().isMembersOpen);
   if (l.tq && O) return null;
   if (null == t) return (0, r.jsx)(r.Fragment, {
-    children: i.Children.only(v)
+    children: i.Children.only(x)
   });
   let j = null;
   return null != b ? j = (0, r.jsx)("img", {
@@ -39,7 +39,7 @@ let p = function(e) {
     className: d.image
   }) : null != y && (j = (0, r.jsx)(s.Fmz, {
     importData: y,
-    shouldAnimate: !x,
+    shouldAnimate: !v,
     className: d.animation
   })), (0, r.jsxs)("div", {
     className: d.wrapper,

@@ -26,8 +26,8 @@ let y = (0, Chunk112724.Z)(e => {
     participantsVersion: y,
     layout: _,
     onSelectParticipant: C,
-    onContextMenuParticipant: v,
-    onFullscreenParticipant: x,
+    onContextMenuParticipant: x,
+    onFullscreenParticipant: v,
     channel: O,
     hasConnectPermission: j,
     className: E,
@@ -56,7 +56,7 @@ let y = (0, Chunk112724.Z)(e => {
     width: P,
     className: b.voiceCallWrapper,
     participants: t,
-    onContextMenu: v
+    onContextMenu: x
   }) : (n = S ? n : t, null == l) ? 0 === n.length ? (0, r.jsx)(f.Z, {
     channelId: O.id
   }) : (0, r.jsx)(s.Z, {
@@ -69,13 +69,13 @@ let y = (0, Chunk112724.Z)(e => {
       participants: M,
       totalNumberOfParticipants: t.length,
       onClick: C,
-      onDoubleClick: x,
-      onContextMenu: v,
+      onDoubleClick: v,
+      onContextMenu: x,
       inCall: S
     })
   }) : (0, r.jsx)(h.Z, {
-    onFullscreenParticipant: x,
-    onContextMenuParticipant: v,
+    onFullscreenParticipant: v,
+    onContextMenuParticipant: x,
     onSelectParticipant: C,
     selectedParticipant: l,
     filteredParticipants: M,

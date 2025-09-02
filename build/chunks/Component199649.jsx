@@ -26,19 +26,19 @@ function b(e) {
     children: _
   } = e, C = (0, i.e7)([u.Z], () => u.Z.isBlocked(y.getRecipientId()));
   (0, o.Z)(y.id);
-  let v = (0, s.Z)(y.id),
-    x = y.isSystemDM(),
-    O = C && !x && !y.isMultiUserDM(),
+  let x = (0, s.Z)(y.id),
+    v = y.isSystemDM(),
+    O = C && !v && !y.isMultiUserDM(),
     j = {};
-  if (x) {
-    let e = v ? (0, r.jsxs)(r.Fragment, {
+  if (v) {
+    let e = x ? (0, r.jsxs)(r.Fragment, {
       children: [g.intl.string(g.t["+KSnWV"]), (0, r.jsx)(l.rgF, {
         size: "xs",
         color: c.Z.HEADER_PRIMARY
       })]
     }) : g.intl.string(g.t.hvVgAQ);
     j.message = g.intl.string(g.t.Bt2N7O), j.subtitle = g.intl.string(g.t["n/Vzk5"]), j.buttonText = e, j.onButtonClick = () => {
-      if (v) {
+      if (x) {
         open(m.D2), d.default.track(f.rMx.CHANGE_LOG_CTA_CLICKED, {
           cta_type: "chat_blocker",
           target: m.D2

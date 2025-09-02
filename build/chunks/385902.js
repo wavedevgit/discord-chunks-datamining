@@ -58,7 +58,7 @@ function O(e, t) {
     N = r.useCallback(e => {
       P(e)
     }, [P]),
-    w = r.useMemo(() => {
+    Z = r.useMemo(() => {
       if (!I) return null;
       let e = (0, p.Z)(E);
       return {
@@ -80,6 +80,6 @@ function O(e, t) {
     }, [I, C, E, O, N]);
   return {
     shouldShow: I,
-    modalConfig: w
+    modalConfig: Z
   }
 }

@@ -85,10 +85,10 @@ function V(e) {
     ec ? ((t = eo.width / k.I0) > eo.height && (e = (t = eo.height) * k.I0), ed = (eo.height - t) / 2) : ((e = Math.min(eo.height * k.I0)) > eo.width && (t = (e = eo.width) / k.I0), eu = (eo.width - e) / 2)
   }
   let eh = J.get(null != (l = null == q ? true : q.id) ? l : ""),
-    ef = (0, o.e7)([x.Z], () => x.Z.getChannelId()),
-    em = (0, o.Wu)([v.ZP], () => {
+    ef = (0, o.e7)([v.Z], () => v.Z.getChannelId()),
+    em = (0, o.Wu)([x.ZP], () => {
       var e;
-      return null == X ? [] : Array.from(null != (e = null == eh ? true : eh.embeddedActivity.userIds) ? e : []).map(e => v.ZP.getMember(X.guild_id, e))
+      return null == X ? [] : Array.from(null != (e = null == eh ? true : eh.embeddedActivity.userIds) ? e : []).map(e => x.ZP.getMember(X.guild_id, e))
     }, [eh, X]),
     eg = i.useMemo(() => {
       let e = new Map;

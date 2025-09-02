@@ -2,7 +2,7 @@
 /** chunk id: 518311, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => eC,
-  l: () => ev
+  l: () => ex
 }), require("./642613.js"), require("./415506.js"), require("./539854.js"), require("./388685.js"), require("./35282.js"), require("./49124.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -546,7 +546,7 @@ class eg extends(r = Chunk647438.PureComponent) {
     })
   }
   handleAddFriend(e) {
-    this.props.onClose(), v.Z.sendRequest({
+    this.props.onClose(), x.Z.sendRequest({
       discordTag: $.ZP.getUserTag(e, {
         identifiable: "always"
       }),
@@ -586,7 +586,7 @@ class eg extends(r = Chunk647438.PureComponent) {
       children: (0, i.jsx)(f.JcV, {
         containerRef: this._mobileCloseRef,
         children: (0, i.jsx)("div", {
-          children: (0, i.jsx)(x.Z, {
+          children: (0, i.jsx)(v.Z, {
             className: el.mobileToolsCloseIcon,
             closeAction: this.props.onClose,
             keybind: "ESC"
@@ -747,13 +747,13 @@ class eg extends(r = Chunk647438.PureComponent) {
         onClose: n
       } = this.props, r = Array.from(t);
       if (null != e) {
-        let t = ex(Array.from(new Set([...e.recipients, ...r])));
+        let t = ev(Array.from(new Set([...e.recipients, ...r])));
         t.size > 0 ? (0, f.h7j)(n => (0, i.jsx)(em, ec(es({}, n), {
           onConfirm: () => this.pushToExistingDM(e, r),
           channelIds: t
         })), {}, (0, f.VnL)(this.context.appContext)) : this.pushToExistingDM(e, r)
       } else {
-        let e = ex(r);
+        let e = ev(r);
         r.length > 1 && e.size > 0 ? (0, f.h7j)(t => (0, i.jsx)(em, ec(es({}, t), {
           onConfirm: () => this.createNewDM(r),
           channelIds: e
@@ -889,8 +889,8 @@ function eC(e) {
   } = e, b = l.useRef(null), y = null != s ? s : null == r ? f.kL_ : f.ejJ, {
     showModal: _,
     renderPopout: C,
-    toggleVisible: v,
-    popoutOpen: x,
+    toggleVisible: x,
+    popoutOpen: v,
     setPopoutOpen: O,
     inBornThisNamedExperiment: j
   } = e_({
@@ -911,7 +911,7 @@ function eC(e) {
     targetElementRef: b,
     renderPopout: C,
     position: d,
-    shouldShow: x,
+    shouldShow: v,
     nudgeAlignIntoViewport: true,
     autoInvert: true,
     align: h,
@@ -921,7 +921,7 @@ function eC(e) {
     clickTrap: true,
     children: e => (0, i.jsx)(et.ZP.Icon, ec(es({}, e), {
       ref: b,
-      onClick: v,
+      onClick: x,
       icon: y,
       className: o,
       iconClassName: a,
@@ -931,7 +931,7 @@ function eC(e) {
   })
 }
 
-function ev(e) {
+function ex(e) {
   var {
     channel: t,
     popoutPosition: n = "bottom",
@@ -987,7 +987,7 @@ function ev(e) {
   })
 }
 
-function ex(e) {
+function ev(e) {
   let t = eO(e);
   return new Set((0, s.chain)(B.Z.getMutablePrivateChannels()).values().filter(e => (0, U.bc)(e.type)).filter(e => eO(e.recipients) === t).map(e => e.id).value())
 }

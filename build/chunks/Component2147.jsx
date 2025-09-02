@@ -575,7 +575,7 @@ class eR extends Chunk647438.PureComponent {
         children: (0, i.jsx)(m.j7V, {
           note: ea.intl.string(ea.t["9eUgwc"]),
           onChange: this.handleNSFWChange,
-          value: (0, y.aC)(e),
+          value: (0, y.qF)(e),
           hideBorder: true,
           disabled: !b || null != e.linkedLobby || ed,
           disabledText: null != e.linkedLobby ? ea.intl.string(ea.t.l6uSVV) : null,

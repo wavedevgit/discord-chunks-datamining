@@ -5,7 +5,7 @@ require.d(exports, {
   ZP: () => M,
   eP: () => A,
   hR: () => T,
-  jo: () => w
+  jo: () => Z
 });
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -69,11 +69,11 @@ function N(e, t, n) {
   return null != t && !!t && !(0, j.ig)(n, e.type)
 }
 
-function w(e, t) {
+function Z(e, t) {
   return null == t ? E.containerDefault : e > t ? E.containerDragAfter : E.containerDragBefore
 }
 
-function Z(e) {
+function w(e) {
   let {
     tabIndex: t,
     forceShowButtons: n,
@@ -161,8 +161,8 @@ function A(e) {
     entrypoints: v
   } = (0, p._k)({
     location: "channel_base"
-  }), j = (0, s.e7)([y.Z], () => y.Z.getGuild(t.getGuildId())), S = (0, s.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), N = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), w = (0, s.e7)([_.Z], () => (0, h.b)(_.Z, j, t, S)), Z = (0, s.e7)([_.Z], () => _.Z.can(x.Plq.CREATE_INSTANT_INVITE, t) ? C.intl.string(C.t.zJrgTE) : C.intl.string(C.t.Sd8Ix8)), T = v ? C.intl.string(C.t["EE+P0N"]) : Z, A = l.useRef(null);
-  if (o || !w || t.isModeratorReportChannel()) return null;
+  }), j = (0, s.e7)([y.Z], () => y.Z.getGuild(t.getGuildId())), S = (0, s.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), N = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), Z = (0, s.e7)([_.Z], () => (0, h.b)(_.Z, j, t, S)), w = (0, s.e7)([_.Z], () => _.Z.can(x.Plq.CREATE_INSTANT_INVITE, t) ? C.intl.string(C.t.zJrgTE) : C.intl.string(C.t.Sd8Ix8)), T = v ? C.intl.string(C.t["EE+P0N"]) : w, A = l.useRef(null);
+  if (o || !Z || t.isModeratorReportChannel()) return null;
 
   function R() {
     if (null != j) {
@@ -259,7 +259,7 @@ class M extends(r = Chunk647438.PureComponent) {
     let {
       onContextMenu: t
     } = e;
-    return (0, i.jsx)(Z, I(P({}, this.props), {
+    return (0, i.jsx)(w, I(P({}, this.props), {
       onContextMenu: t
     }))
   }
@@ -280,7 +280,7 @@ class M extends(r = Chunk647438.PureComponent) {
       position: e,
       sortingPosition: t
     } = this.props;
-    return w(module, exports)
+    return Z(module, exports)
   }
   isDisabled() {
     let {

@@ -31,7 +31,7 @@ function C(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function v(e) {
   return e
 }
 
-function x(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -139,7 +139,7 @@ class O extends Chunk647438.PureComponent {
         [_.highPriority]: u
       }
     }, j = this.getTutorialPopoutText();
-    return (0, Chunk951288.jsx)(Chunk997638.ZP, x(v({
+    return (0, Chunk951288.jsx)(Chunk997638.ZP, v(x({
       innerRef: this.contentRef,
       position: Chunk451478,
       renderMedia: Chunk512722,
@@ -156,7 +156,7 @@ class O extends Chunk647438.PureComponent {
         let {
           isShown: i
         } = t;
-        return (0, r.jsx)(d.P3F, x(v({}, e), {
+        return (0, r.jsx)(d.P3F, v(x({}, e), {
           className: _.indicator,
           style: C,
           innerRef: this.contentRef,
@@ -211,7 +211,7 @@ let j = 12633 == require.j ? function() {
   return Chunk647438 ? (0, Chunk951288.jsx)(Chunk951288.Fragment, {
     children: Object.entries(module).map(e => {
       let [i, l] = e, a = t[i];
-      return s()(null != a, "Missing tutorial definition for ".concat(i)), (0, r.jsx)(O, v({
+      return s()(null != a, "Missing tutorial definition for ".concat(i)), (0, r.jsx)(O, x({
         tutorialId: i,
         tutorialDefinition: a,
         focused: n

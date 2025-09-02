@@ -78,7 +78,7 @@ function F(e) {
   let {
     channel: t
   } = e, l = t.isArchivedThread(), a = (0, O.P0)(t), [o, u] = i.useState(false), d = () => {
-    u(true), x.Z.resolveFlag(t.id).then(() => {
+    u(true), v.Z.resolveFlag(t.id).then(() => {
       u(false)
     })
   };
@@ -117,7 +117,7 @@ function V(e) {
     isLastItem: l = false,
     parentChannelId: s
   } = e, {
-    ref: x,
+    ref: v,
     width: O
   } = (0, p.ZP)(), [E, L] = i.useState(3), [V, z] = i.useState(!n), [W, q] = (0, h.Z)(false, 2e3), Y = (0, o.e7)([Z.Z], () => Z.Z.getChannel(t), [t]), {
     firstMessage: K
@@ -136,7 +136,7 @@ function V(e) {
     }
   }, [n]);
   i.useLayoutEffect(() => {
-    let e = x.current;
+    let e = v.current;
     if (null == e || !n) return;
     let t = new IntersectionObserver(ea, {
       threshold: 1
@@ -175,7 +175,7 @@ function V(e) {
       className: a()(k.container, {
         [k.header]: V
       }),
-      ref: x,
+      ref: v,
       children: [en ? (0, r.jsx)("div", {
         className: k.reportedMessageActions,
         children: (0, r.jsx)(S.Z, {
@@ -188,7 +188,7 @@ function V(e) {
         }),
         children: [!ec && !J && null != ei && (0, r.jsx)("div", {
           className: B.reactions,
-          children: (0, r.jsx)(v.le, {
+          children: (0, r.jsx)(x.le, {
             message: K,
             readOnly: false,
             useChatFontScaling: false,

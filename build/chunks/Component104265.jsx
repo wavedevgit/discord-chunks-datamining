@@ -38,9 +38,9 @@ function _(e) {
     config: {
       duration: 150
     }
-  }, "animate-always"), T = (0, u.dQu)(c.Z.colors.BORDER_SUBTLE), A = (0, u.dQu)(c.Z.unsafe_rawColors.BRAND_500), k = (0, u.q_F)({
+  }, "animate-always"), T = (0, u.dQu)(c.Z.colors.BORDER_SUBTLE), k = (0, u.dQu)(c.Z.unsafe_rawColors.BRAND_500), B = (0, u.q_F)({
     from: {
-      color: A.spring()
+      color: k.spring()
     },
     color: T.spring({
       opacity: j ? .5 : .25
@@ -49,7 +49,7 @@ function _(e) {
       duration: 300
     },
     delay: 500
-  }, "animate-always"), B = (0, u.Yzy)(O, {
+  }, "animate-always"), A = (0, u.Yzy)(O, {
     from: {
       transform: Z.enabled ? "translateX(0)" : "translateX(8px)",
       opacity: 0
@@ -78,7 +78,7 @@ function _(e) {
       [x.pressed]: R
     }),
     M = E ? {
-      borderColor: k.color
+      borderColor: B.color
     } : {};
   return (0, l.jsx)(o.animated.div, {
     style: M,
@@ -115,7 +115,7 @@ function _(e) {
           height: 10,
           color: c.Z.unsafe_rawColors.WHITE_500.css
         })
-      }), B((e, t) => P > 0 && t && (0, l.jsx)(o.animated.div, {
+      }), A((e, t) => P > 0 && t && (0, l.jsx)(o.animated.div, {
         className: x.memberCount,
         style: e,
         children: (0, l.jsx)(u.Text, {

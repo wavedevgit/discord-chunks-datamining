@@ -35,7 +35,7 @@ function S(e) {
 
 function x(e, t, n) {
   let l = n instanceof d.Sf;
-  if ((0, s.aC)(t) && !(l && (0, s.aC)(n))) return {
+  if ((0, s.Y3)(t) && !(l && (0, s.Y3)(n))) return {
     label: E.intl.string(E.t.KgPx1N)
   };
   if (l && (0, d.Km)(n.type)) {

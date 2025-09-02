@@ -30,7 +30,7 @@ let b = Chunk647438.memo(function(e) {
     badge: d.default.getMentionCount(y),
     isMentionLowImportance: d.default.getIsMentionLowImportance(y),
     unread: d.default.hasUnread(y)
-  })), N = (0, s.Ij)(_) && 0 === S, w = i.useMemo(() => null != O ? O : N ? (0, r.jsx)("div", {
+  })), N = (0, s.Ij)(_) && 0 === S, Z = i.useMemo(() => null != O ? O : N ? (0, r.jsx)("div", {
     className: m.pauseBackground,
     children: (0, r.jsx)(o.fpf, {
       size: "custom",
@@ -64,7 +64,7 @@ let b = Chunk647438.memo(function(e) {
     selected: C === y,
     badge: S,
     isMentionLowImportance: I,
-    lowerBadge: w,
+    lowerBadge: Z,
     unread: P,
     mediaState: E,
     guildJoinRequestStatus: v

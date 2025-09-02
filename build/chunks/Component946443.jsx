@@ -33,8 +33,8 @@ function S(e) {
   var t, n, l, a, y, S, I;
   let {
     onJump: N,
-    showTutorial: w,
-    setSeenTutorial: Z,
+    showTutorial: Z,
+    setSeenTutorial: w,
     closePopout: T
   } = e, A = i.useRef(null), [R, D] = (0, j.ZP)(A), {
     loadState: M,
@@ -142,8 +142,8 @@ function S(e) {
         }, l), n = n = {
           onScroll: M === j.jd.Done ? true : k,
           className: o()(E.scroller, "group-spacing-".concat(U)),
-          children: [w ? (0, r.jsx)(P, {
-            setSeenTutorial: Z
+          children: [Z ? (0, r.jsx)(P, {
+            setSeenTutorial: w
           }) : null, (0, v.Z)(L, D, N), M === j.jd.Done ? null : (0, r.jsx)(d.$jN, {
             className: E.spinner
           })]

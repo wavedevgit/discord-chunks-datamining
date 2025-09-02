@@ -1,46 +1,40 @@
 /** Chunk was on 62987 **/
 /** chunk id: 66556, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk622822 = require("./622822.js"),
   Chunk665149 = require("./665149.jsx"),
-  Chunk731290 = require("./731290.js"),
-  Chunk594174 = require("./594174.js"),
   Chunk91159 = require("./91159.js"),
   Chunk593130 = require("./593130.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk568592 = require("./568592.js");
 
-function m(e) {
+function p(e) {
   let {
     channel: t
-  } = e, [n, m] = i.useState(false), g = i.useRef(null), b = (0, l.e7)([c.Z, u.default], () => {
-    let e = u.default.getCurrentUser();
-    return null == e || (0, o.aC)(t) && (!e.nsfwAllowed || !c.Z.didAgree(t.getGuildId()))
-  }, [t]), y = i.useCallback(() => {
-    m(false)
-  }, []), _ = i.useCallback(() => {
-    n || (0, d.U4)("Popout"), m(!n)
+  } = e, [n, p] = i.useState(false), h = i.useRef(null), f = (0, a.$5)(t), m = i.useCallback(() => {
+    p(false)
+  }, []), g = i.useCallback(() => {
+    n || (0, s.U4)("Popout"), p(!n)
   }, [n]);
-  return (0, r.jsx)(a.yRy, {
-    targetElementRef: g,
-    animation: a.yRy.Animation.NONE,
+  return (0, r.jsx)(l.yRy, {
+    targetElementRef: h,
+    animation: l.yRy.Animation.NONE,
     position: "bottom",
     align: "right",
     autoInvert: false,
     shouldShow: n,
-    onRequestClose: y,
+    onRequestClose: m,
     renderPopout: function() {
-      return (0, r.jsx)(a.VqE, {
-        children: (0, r.jsx)(p.Z, {
-          className: f.browser,
+      return (0, r.jsx)(l.VqE, {
+        children: (0, r.jsx)(c.Z, {
+          className: d.browser,
           channel: t,
-          onClose: y
+          onClose: m
         })
       })
     },
@@ -48,9 +42,9 @@ function m(e) {
     children: (e, t) => {
       var n, i;
       let {
-        isShown: l
+        isShown: a
       } = t;
-      return (0, r.jsx)(s.JO, (n = function(e) {
+      return (0, r.jsx)(o.JO, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -68,14 +62,14 @@ function m(e) {
         }
         return e
       }({}, e), i = i = {
-        ref: g,
-        className: f.icon,
-        onClick: _,
-        icon: a.or_,
-        "aria-label": h.intl.string(h.t.B2panJ),
-        tooltip: l ? null : h.intl.string(h.t.B2panJ),
-        disabled: b,
-        selected: l
+        ref: h,
+        className: d.icon,
+        onClick: g,
+        icon: l.or_,
+        "aria-label": u.intl.string(u.t.B2panJ),
+        tooltip: a ? null : u.intl.string(u.t.B2panJ),
+        disabled: f,
+        selected: a
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

@@ -40,7 +40,7 @@ class v extends Chunk147913.Z {
       case i.d.GUILD_TEXT:
         let n = f.Z.getGuild(t),
           r = u.Z.getMemberCount(t);
-        return null != r && r <= y && (null == n ? true : n.rulesChannelId) !== e.id && !(0, s.aC)(e) && !(0, l.Z)(e) && null == e.linkedLobby;
+        return null != r && r <= y && (null == n ? true : n.rulesChannelId) !== e.id && !(0, s.Y3)(e) && !(0, l.Z)(e) && null == e.linkedLobby;
       default:
         returnfalse
     }

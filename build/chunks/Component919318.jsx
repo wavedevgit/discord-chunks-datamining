@@ -34,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk430864 = require("./430864.js"),
   Chunk931057 = require("./931057.js");
 
-function k(e) {
+function A(e) {
   let n, t, {
       firstMedia: r,
       channelId: a
@@ -137,7 +137,7 @@ function M(e) {
         alt: "",
         "aria-hidden": true
       })
-    }) : null, null == C && null != p ? (0, l.jsx)(k, {
+    }) : null, null == C && null != p ? (0, l.jsx)(A, {
       firstMedia: p,
       channelId: n.channelId
     }) : null]
@@ -157,7 +157,7 @@ function L(e) {
       children: w.intl.string(w.t.owvC9f)
     }), (0, l.jsx)("img", {
       className: E.emptyStateImage,
-      src: A,
+      src: k,
       alt: ""
     }), (0, l.jsx)("div", {
       className: E.emptyStateButton,

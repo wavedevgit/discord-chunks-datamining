@@ -19,25 +19,25 @@ var i, l, Chunk442837 = require("./442837.js"),
   Chunk594174 = require("./594174.js"),
   Chunk981631 = require("./981631.js");
 let C = false,
-  v = "",
-  x = 0,
+  x = "",
+  v = 0,
   O = [],
   j = false,
   E = new Set,
   S = null;
 
 function I() {
-  v = "", x = 0, O = [], E = new Set, C = false, S = null
+  x = "", v = 0, O = [], E = new Set, C = false, S = null
 }
 
 function P(e) {
-  v = e, x = 0, Z()
+  x = e, v = 0, Z()
 }
 
 function Z() {
   if (!C) returnfalse;
   let e = Chunk592125.Z.getChannel(S);
-  if (0 === v.trim().length) return null != r && r.clearQuery(), O = function(e) {
+  if (0 === x.trim().length) return null != r && r.clearQuery(), O = function(e) {
     let t = b.Z.getFriendIDs(),
       n = y.default.getCurrentUser();
     return (null == n ? true : n.isStaff()) && (t = Array.from(new Set([...t, ...y.default.filter(e => e.isStaff() && e.id !== n.id, false).map(e => e.id)]))), (null == e ? true : e.isPrivate()) && (t = t.filter(t => !e.recipients.includes(t))), t.reduce((e, t) => {
@@ -54,7 +54,7 @@ function Z() {
     let e = Chunk594174.default.getCurrentUser(),
       i = null != (n = null == module ? true : module.isStaff()) && require;
     r.setQuery({
-      query: v,
+      query: x,
       filters: {
         friends: true,
         staff: i,
@@ -103,7 +103,7 @@ function A(e) {
   let {
     results: t
   } = e;
-  if (!C || "" === v) return;
+  if (!C || "" === x) return;
   let n = [];
   for (let {
       id: e,
@@ -150,12 +150,12 @@ class L extends(i = Chunk442837.ZP.Store) {
     return E
   }
   getQuery() {
-    return v
+    return x
   }
   getState() {
     return {
-      query: v,
-      selectedRow: x,
+      query: x,
+      selectedRow: v,
       selectedUsers: E,
       results: O,
       hasFriends: j
@@ -192,7 +192,7 @@ let k = new L(Chunk570140.Z, {
       S = e.channelId, P(e.query)
     },
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_SELECT: function(e) {
-      x = e.row
+      v = e.row
     },
     PRIVATE_CHANNEL_RECIPIENTS_ADD_USER: function(e) {
       let {

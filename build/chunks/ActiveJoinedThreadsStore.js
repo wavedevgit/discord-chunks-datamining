@@ -161,7 +161,7 @@ function G(e) {
     channels: t
   } = e;
   for (let e of t)
-    if ((0, l.aC)(e) !== B(e.guild_id, e.parent_id)) return void w();
+    if ((0, l.Y3)(e) !== B(e.guild_id, e.parent_id)) return void w();
   returnfalse
 }
 
@@ -171,13 +171,13 @@ function B(e, t) {
     r = null == n ? null : n[t];
   if (null != r) {
     for (let e in r)
-      if ((0, l.aC)(r[e].channel)) returntrue
+      if ((0, l.Y3)(r[e].channel)) returntrue
   }
   let i = S[e],
     a = null == i ? null : i[t];
   if (null != a) {
     for (let e in a)
-      if ((0, l.aC)(a[e])) returntrue
+      if ((0, l.Y3)(a[e])) returntrue
   }
   returnfalse
 }

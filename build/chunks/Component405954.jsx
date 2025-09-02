@@ -30,14 +30,14 @@ let b = function(e) {
   } = (0, c.m)({
     location: "channel_header_toolbar",
     channelId: t.id
-  }), v = (0, u.Nj)(l.z.CHAT_WALLPAPERS_PICKER_COACHMARK), x = _ && C === o.FN.TOOLBAR && v, [O, j] = (0, d.US)(x ? [l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE] : []), E = O === l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE, S = i.useCallback(() => {
+  }), x = (0, u.Nj)(l.z.CHAT_WALLPAPERS_PICKER_COACHMARK), v = _ && C === o.FN.TOOLBAR && x, [O, j] = (0, d.US)(v ? [l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE] : []), E = O === l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE, S = i.useCallback(() => {
     E && j(m.L.TAKE_ACTION), n === t.id ? (y(), p.default.track(f.rMx.CHAT_WALLPAPER_TOOLBAR_ENTRY_POINT_CLICKED, {
       action: "close"
     })) : (b(t.id), p.default.track(f.rMx.CHAT_WALLPAPER_TOOLBAR_ENTRY_POINT_CLICKED, {
       action: "open"
     }))
   }, [n, t.id, y, b, E, j]);
-  return x ? (0, r.jsx)(h.JO, {
+  return v ? (0, r.jsx)(h.JO, {
     onClick: S,
     tooltip: g.intl.string(g.t.GixvUl),
     icon: a.XBm,

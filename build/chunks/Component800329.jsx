@@ -39,8 +39,8 @@ function p(e) {
   }), {
     width: b,
     height: y
-  } = m, _ = null != (t = null == l ? true : l.length) ? t : 0, C = b - 16, v = y - (h + f), {
-    tileStyle: x,
+  } = m, _ = null != (t = null == l ? true : l.length) ? t : 0, C = b - 16, x = y - (h + f), {
+    tileStyle: v,
     tileWidth: O,
     rows: j,
     columns: E
@@ -80,7 +80,7 @@ function p(e) {
       rows: r,
       columns: i
     }
-  })(_, C, v), [_, C, v]), S = E + 1, I = S * O + (S - 1) * 8 <= b, P = Math.floor(O / c) + 8, Z = Math.max(0, v - P * j) / 2;
+  })(_, C, x), [_, C, x]), S = E + 1, I = S * O + (S - 1) * 8 <= b, P = Math.floor(O / c) + 8, Z = Math.max(0, x - P * j) / 2;
   return (0, r.jsx)(o.Z, {
     fade: true,
     className: n,
@@ -94,7 +94,7 @@ function p(e) {
           var i;
           let l = n + t;
           return (0, r.jsx)("div", {
-            style: x,
+            style: v,
             className: a()(s.tile, {
               [s.padColumn]: I,
               [s.noVerticalMargin]: l >= (j - 1) * E,
