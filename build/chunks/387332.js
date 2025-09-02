@@ -6,7 +6,7 @@ require.d(exports, {
 });
 let r = (0, require("./427164.js").le)({
   kind: "user",
-  name: "2025-08-remix-negative",
+  name: "2025-08-sleepy-panda",
   defaultConfig: {
     isEnabled: true
   },

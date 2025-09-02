@@ -4,7 +4,7 @@
 require.d(exports, {
   hi: () => f,
   s2: () => _,
-  sU: () => p
+  sU: () => h
 });
 var Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -34,8 +34,12 @@ function _(e) {
 }
 
 function p() {
+  Chunk358085.isPlatformEmbedded && Chunk998502.ZP.InputEventServiceSetAllowed(true)
+}
+
+function h() {
   Chunk358085.isPlatformEmbedded && Chunk998502.ZP.InstallSystemService().then(() => {
-    (0, Chunk481060.showToast)((0, Chunk481060.createToast)(Chunk388032.intl.string(Chunk388032.t.kQnWb2), Chunk481060.ToastType.SUCCESS))
+    (0, Chunk481060.showToast)((0, Chunk481060.createToast)(Chunk388032.intl.string(Chunk388032.t.kQnWb2), Chunk481060.ToastType.SUCCESS)), p()
   }).catch(e => {
     (0, i.showToast)((0, i.createToast)(c.intl.string(c.t.sdKYCA), i.ToastType.FAILURE)), console.error(e)
   })
