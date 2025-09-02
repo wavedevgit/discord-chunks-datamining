@@ -73,7 +73,7 @@ function R(e) {
     baseChannelId: R,
     channelViewSource: D = "Split View",
     isResourceChannelView: L
-  } = e, M = (0, i.e7)([y.Z], () => y.Z.getChannel(t)), H = (0, i.e7)([N.Z], () => N.Z.getGuild(null == M ? true : M.getGuildId())), U = (0, i.e7)([w.default], () => w.default.getCurrentUser()), G = (0, i.e7)([Z.Z], () => Z.Z.didAgree(null == M ? true : M.guild_id)), W = (null == U ? true : U.nsfwAllowed) === true, F = (0, P.ZP)(M), q = (0, i.e7)([b.Z], () => (null == H ? true : H.id) != null && b.Z.isLurking(H.id), [H]), z = (0, g.Z)(t), X = (0, i.e7)([f.Z], () => {
+  } = e, M = (0, i.e7)([y.Z], () => y.Z.getChannel(t)), H = (0, i.e7)([Z.Z], () => Z.Z.getGuild(null == M ? true : M.getGuildId())), U = (0, i.e7)([w.default], () => w.default.getCurrentUser()), G = (0, i.e7)([N.Z], () => N.Z.didAgree(null == M ? true : M.guild_id)), W = (null == U ? true : U.nsfwAllowed) === true, q = (0, P.ZP)(M), F = (0, i.e7)([b.Z], () => (null == H ? true : H.id) != null && b.Z.isLurking(H.id), [H]), z = (0, g.Z)(t), X = (0, i.e7)([f.Z], () => {
     var e;
     return null == (e = f.Z.getResourceForChannel(null == H ? true : H.id, t)) ? true : e.title
   }), V = r.useRef(false);
@@ -84,10 +84,10 @@ function R(e) {
         channelId: M.id
       }))
     }, [M, D]), null == M || null == H) return null;
-  let J = [];
-  return (q || J.push((0, l.jsx)(_.Z, {
+  let Q = [];
+  return (F || Q.push((0, l.jsx)(_.Z, {
     channel: M
-  }, "notifications")), J.push((0, l.jsx)(x.ZP.Icon, {
+  }, "notifications")), Q.push((0, l.jsx)(x.ZP.Icon, {
     icon: a.Dio,
     tooltip: T.intl.string(T.t.cpT0Cg),
     onClick: () => v.Z.closeChannelSidebar(R)
@@ -96,11 +96,11 @@ function R(e) {
       channel: M,
       draftType: O.d.ChannelMessage
     }), (0, l.jsx)(x.ZP, {
-      toolbar: J,
+      toolbar: Q,
       "aria-label": T.intl.string(T.t.BIYAqa),
       children: (0, C.ud)({
         channel: M,
-        channelName: z ? X : F,
+        channelName: z ? X : q,
         guild: H,
         inSidebar: true,
         handleContextMenu: e => {

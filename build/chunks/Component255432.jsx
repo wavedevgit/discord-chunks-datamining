@@ -7,11 +7,11 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk793030 = require("./793030.js"),
-  Chunk178940 = require("./178940.jsx"),
   Chunk540863 = require("./540863.jsx"),
   Chunk619307 = require("./619307.jsx"),
   Chunk993365 = require("./993365.js"),
   Chunk463208 = require("./463208.jsx"),
+  Chunk755721 = require("./755721.js"),
   Chunk624315 = require("./624315.js");
 
 function d(e, t, n) {
@@ -70,23 +70,23 @@ function h(e) {
       children: h.map(e => {
         var t;
         let [i, u] = e, d = null != (t = n[i]) ? t : u.defaultValue;
-        return (0, r.jsxs)(o.x, {
+        return (0, r.jsxs)(a.x, {
           title: "boolean" === u.type ? true : u.label,
-          children: ["select" === u.type && null != u.options && (0, r.jsx)(s.q4, {
+          children: ["select" === u.type && null != u.options && (0, r.jsx)(o.q4, {
             value: d,
             onChange: e => _(i, e),
             options: u.options
-          }), "boolean" === u.type && (0, r.jsx)(a.X, {
+          }), "boolean" === u.type && (0, r.jsx)(c.$q, {
             value: d,
             onChange: (e, t) => _(i, t),
-            children: (0, r.jsx)(l.x, {
+            children: (0, r.jsx)(s.x, {
               variant: "text-md/medium",
               children: u.label
             })
-          }), "text" === u.type && (0, r.jsx)(c.o, {
+          }), "text" === u.type && (0, r.jsx)(l.o, {
             value: d,
             onChange: e => _(i, e)
-          }), "number" === u.type && (0, r.jsx)(c.o, {
+          }), "number" === u.type && (0, r.jsx)(l.o, {
             type: "number",
             value: String(d),
             min: u.minValue,

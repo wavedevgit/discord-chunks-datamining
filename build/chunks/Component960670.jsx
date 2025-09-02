@@ -1,21 +1,22 @@
 /** Chunk was on 14604 **/
 /** chunk id: 960670, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => a
+  default: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk905935 = require("./905935.js");
 
-function a(e) {
+function b(e) {
   var t, r, {
-      header: a,
+      header: b,
       body: s,
-      onSubmit: b
+      onSubmit: u
     } = e,
-    u = function(e, t) {
+    p = function(e, t) {
       if (null == e) return {};
       var r, n, o = function(e, t) {
         if (null == e) return {};
@@ -30,8 +31,8 @@ function a(e) {
       }
       return o
     }(e, ["header", "body", "onSubmit"]);
-  let [p, f] = o.useState(false);
-  return (0, n.jsxs)(c.ConfirmModal, (t = function(e) {
+  let [f, O] = o.useState(false);
+  return (0, n.jsxs)(i.ConfirmModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);
@@ -49,24 +50,24 @@ function a(e) {
     }
     return e
   }({
-    header: a,
-    confirmText: i.intl.string(i.t["26C4oq"]),
-    cancelText: i.intl.string(i.t["ETE/oK"]),
+    header: b,
+    confirmText: l.intl.string(l.t["26C4oq"]),
+    cancelText: l.intl.string(l.t["ETE/oK"]),
     onConfirm: () => {
-      b(null, p)
+      u(null, f)
     }
-  }, u), r = r = {
-    children: [(0, n.jsx)(c.Text, {
+  }, p), r = r = {
+    children: [(0, n.jsx)(i.Text, {
       variant: "text-md/normal",
       children: s
-    }), (0, n.jsx)(c.XZJ, {
-      type: c.XZJ.Types.INVERTED,
-      value: p,
-      onChange: () => f(e => !e),
-      className: l.checkbox,
-      children: (0, n.jsx)(c.Text, {
+    }), (0, n.jsx)(c.$q, {
+      type: c.M0.INVERTED,
+      value: f,
+      onChange: () => O(e => !e),
+      className: a.checkbox,
+      children: (0, n.jsx)(i.Text, {
         variant: "text-md/normal",
-        children: i.intl.string(i.t.bq3JXl)
+        children: l.intl.string(l.t.bq3JXl)
       })
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

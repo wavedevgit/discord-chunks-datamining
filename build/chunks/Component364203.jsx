@@ -295,8 +295,8 @@ function J(e) {
     align: "center",
     className: U.footerContainerStack,
     padding: 16,
-    children: [(0, r.jsx)(_.XZJ, {
-      type: _.XZJ.Types.INVERTED,
+    children: [(0, r.jsx)(f.$q, {
+      type: f.M0.INVERTED,
       value: i,
       onChange: (e, t) => {
         S.default.track(L.rMx.CHAT_WALLPAPER_PICKER_BLUR_TOGGLED, {

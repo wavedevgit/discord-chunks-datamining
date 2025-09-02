@@ -1,7 +1,7 @@
 /** Chunk was on 6850 **/
 /** chunk id: 123846, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => D
 }), require("./388685.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -140,14 +140,14 @@ function S(e) {
   })
 }
 
-function Z(e) {
+function D(e) {
   var t;
   let {
     guildId: n,
     onClose: o
   } = e, a = (0, d.e7)([h.Z], () => h.Z.getSearchStateByGuildId(n), [n], u()), {
     inviteCodes: c
-  } = (0, x.s)(n), p = (0, d.e7)([m.Z], () => m.Z.getGuild(n)), Z = null != (t = null == p ? true : p.vanityURLCode) ? t : null, [D, R] = l.useState(false), {
+  } = (0, x.s)(n), p = (0, d.e7)([m.Z], () => m.Z.getGuild(n)), D = null != (t = null == p ? true : p.vanityURLCode) ? t : null, [Z, R] = l.useState(false), {
     selectedSourceInviteCode: L,
     selectedJoinSourceType: I
   } = a, P = null != I && I !== g.gq.UNSPECIFIED, M = (0, d.e7)([b.Z], () => b.Z.hideInstantInvites, []);
@@ -191,7 +191,7 @@ function Z(e) {
     },
     "aria-label": y.intl.string(y.t["u/7RdX"]),
     onSelect: v.dG4,
-    children: D ? (0, r.jsxs)(C.kSQ, {
+    children: Z ? (0, r.jsxs)(C.kSQ, {
       children: [(0, r.jsx)(C.sNh, {
         id: "back",
         action: () => R(false),
@@ -213,8 +213,8 @@ function Z(e) {
         id: "join-source-type-option-".concat(e),
         label: t => (0, r.jsx)(S, w(H({}, t), {
           type: e,
-          vanityUrl: Z,
-          text: (0, g.bE)(e, Z, M)
+          vanityUrl: D,
+          text: (0, g.bE)(e, D, M)
         })),
         checked: I === e,
         disabled: false,
@@ -241,7 +241,7 @@ function Z(e) {
         id: "join-source-type-option-".concat(e),
         label: t => (0, r.jsx)(S, w(H({}, t), {
           type: g.gq.INVITE,
-          vanityUrl: Z,
+          vanityUrl: D,
           text: e
         })),
         checked: L === e,
@@ -265,9 +265,9 @@ function Z(e) {
               className: O.selectedOption,
               children: (0, r.jsx)(S, w(H({}, e), {
                 size: 12,
-                text: (0, g.bE)(I, Z, M),
+                text: (0, g.bE)(I, D, M),
                 type: I,
-                vanityUrl: Z
+                vanityUrl: D
               }))
             }) : null]
           }), P ? (0, r.jsx)(f.Z, {

@@ -1,58 +1,59 @@
 /** Chunk was on 31835 **/
 /** chunk id: 393809, original params: t,r,n (module,exports,require) **/
 require.d(exports, {
-  default: () => l
+  default: () => A
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk82659 = require("./82659.jsx"),
+  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk53365 = require("./53365.js"),
   Chunk377176 = require("./377176.js"),
   Chunk388032 = require("./388032.jsx");
 
-function l(t) {
+function A(t) {
   let {
     guildId: r,
     transitionState: n,
-    onClose: l
-  } = t, [A, _] = e.useState(false), [u, N] = e.useState(false), s = async () => {
-    _(true);
+    onClose: A
+  } = t, [_, u] = e.useState(false), [N, s] = e.useState(false), O = async () => {
+    u(true);
     try {
-      await (0, o.zo)(r), l()
+      await (0, T.zo)(r), A()
     } finally {
-      _(false)
+      u(false)
     }
-  }, O = c.intl.string(c.t["22itmp"]);
+  }, I = l.intl.string(l.t["22itmp"]);
   return (0, i.jsx)(a.Modal, {
     size: "md",
     transitionState: n,
-    onClose: l,
-    "aria-label": O,
-    title: O,
-    subtitle: c.intl.string(c.t.kdbm9P),
+    onClose: A,
+    "aria-label": I,
+    title: I,
+    subtitle: l.intl.string(l.t.kdbm9P),
     actions: [{
       variant: "secondary",
-      onClick: l,
-      text: c.intl.string(c.t["ETE/oK"])
+      onClick: A,
+      text: l.intl.string(l.t["ETE/oK"])
     }, {
       variant: "primary",
-      text: c.intl.string(c.t["cY+Ooa"]),
-      disabled: !u,
-      onClick: s,
-      loading: A
+      text: l.intl.string(l.t["cY+Ooa"]),
+      disabled: !N,
+      onClick: O,
+      loading: _
     }],
-    children: (0, i.jsx)(E.XZJ, {
+    children: (0, i.jsx)(E.$q, {
       onChange: () => {
-        N(t => !t)
+        s(t => !t)
       },
       size: 20,
-      type: E.XZJ.Types.INVERTED,
-      value: u,
-      children: (0, i.jsx)(E.Text, {
+      type: E.M0.INVERTED,
+      value: N,
+      children: (0, i.jsx)(o.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
-        children: (0, T.f)()
+        children: (0, c.f)()
       })
     })
   })

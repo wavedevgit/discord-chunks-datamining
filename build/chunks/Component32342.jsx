@@ -1,11 +1,12 @@
 /** Chunk was on 710 **/
 /** chunk id: 32342, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => x
+  default: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk82659 = require("./82659.jsx"),
+  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk782568 = require("./782568.js"),
   Chunk53365 = require("./53365.js"),
@@ -16,91 +17,91 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk170538 = require("./170538.js");
 
-function g(t) {
+function x(t) {
   let {
     selectedTeamId: e,
     onSetSelectedTeamId: n,
     teamOptions: a
   } = t;
   return (0, i.jsx)("div", {
-    className: h.teamSetup,
-    children: 0 !== a.length && (0, i.jsx)(l.q4e, {
+    className: g.teamSetup,
+    children: 0 !== a.length && (0, i.jsx)(r.q4e, {
       options: a,
-      placeholder: m.intl.string(m.t.QXf93N),
+      placeholder: h.intl.string(h.t.QXf93N),
       value: e,
       onChange: n,
-      "aria-label": m.intl.string(m.t.QXf93N)
+      "aria-label": h.intl.string(h.t.QXf93N)
     })
   })
 }
 
-function x(t) {
+function f(t) {
   let {
     guildId: e,
     requireTeamSetup: n,
-    onClose: h,
-    transitionState: x
-  } = t, [f, C] = a.useState(), [y, T] = a.useState(false), {
-    teams: v
-  } = (0, c.Z)(), E = v.filter(t => t.payout_account_status === p.C.ACTIVE), S = a.useMemo(() => E.map(t => ({
+    onClose: g,
+    transitionState: f
+  } = t, [C, v] = a.useState(), [E, S] = a.useState(false), {
+    teams: j
+  } = (0, u.Z)(), y = j.filter(t => t.payout_account_status === p.C.ACTIVE), T = a.useMemo(() => y.map(t => ({
     label: t.name,
     value: t.id
-  })), [E]), j = () => {
-    T(t => !t)
-  }, b = () => {
-    h(), (0, o.df)(e, f)
-  }, k = a.useCallback(() => {
-    (0, r.Z)(u.EYA.DEVELOPER_PORTAL_TEAMS)
+  })), [y]), b = () => {
+    S(t => !t)
+  }, k = () => {
+    g(), (0, d.df)(e, C)
+  }, _ = a.useCallback(() => {
+    (0, o.Z)(m.EYA.DEVELOPER_PORTAL_TEAMS)
   }, []);
-  if (!n) return (0, i.jsx)(s.Modal, {
-    title: m.intl.string(m.t.GfObDA),
+  if (!n) return (0, i.jsx)(l.Modal, {
+    title: h.intl.string(h.t.GfObDA),
     actions: [{
       variant: "primary",
-      text: m.intl.string(m.t.geKm7u),
-      onClick: b,
-      disabled: !y
+      text: h.intl.string(h.t.geKm7u),
+      onClick: k,
+      disabled: !E
     }],
-    onClose: h,
-    transitionState: x,
+    onClose: g,
+    transitionState: f,
     size: "md",
-    children: (0, i.jsx)(l.XZJ, {
-      onChange: j,
+    children: (0, i.jsx)(s.$q, {
+      onChange: b,
       size: 20,
-      type: l.XZJ.Types.INVERTED,
-      value: y,
-      children: (0, i.jsx)(l.Text, {
+      type: s.M0.INVERTED,
+      value: E,
+      children: (0, i.jsx)(r.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
-        children: (0, d.f)()
+        children: (0, c.f)()
       })
     })
   });
   {
-    let t = 0 === S.length;
-    return (0, i.jsxs)(s.Modal, {
-      title: m.intl.string(m.t.inJKQk),
-      subtitle: t ? m.intl.format(m.t.Jyy4pa, {}) : m.intl.string(m.t.U1Vz29),
+    let t = 0 === T.length;
+    return (0, i.jsxs)(l.Modal, {
+      title: h.intl.string(h.t.inJKQk),
+      subtitle: t ? h.intl.format(h.t.Jyy4pa, {}) : h.intl.string(h.t.U1Vz29),
       actions: [{
         variant: "primary",
-        text: t ? m.intl.string(m.t.JddVgI) : m.intl.string(m.t.geKm7u),
-        onClick: t ? k : b
+        text: t ? h.intl.string(h.t.JddVgI) : h.intl.string(h.t.geKm7u),
+        onClick: t ? _ : k
       }],
-      onClose: h,
-      transitionState: x,
+      onClose: g,
+      transitionState: f,
       size: "md",
-      children: [!t && (0, i.jsx)(g, {
-        selectedTeamId: f,
-        onSetSelectedTeamId: C,
-        teamOptions: S
-      }), (0, i.jsx)(l.XZJ, {
-        onChange: j,
+      children: [!t && (0, i.jsx)(x, {
+        selectedTeamId: C,
+        onSetSelectedTeamId: v,
+        teamOptions: T
+      }), (0, i.jsx)(s.$q, {
+        onChange: b,
         size: 20,
-        type: l.XZJ.Types.INVERTED,
-        value: y,
-        children: (0, i.jsx)(l.Text, {
+        type: s.M0.INVERTED,
+        value: E,
+        children: (0, i.jsx)(r.Text, {
           variant: "text-md/normal",
           color: "header-secondary",
-          children: (0, d.f)()
+          children: (0, c.f)()
         })
       })]
     })

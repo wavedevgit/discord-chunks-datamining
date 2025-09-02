@@ -35,7 +35,7 @@ function i(t) {
     authorityPrefix: u,
     hostname: m,
     theRestOfTheUrl: x
-  } = r(e), p = a.useCallback(() => {
+  } = r(e), h = a.useCallback(() => {
     o && n(e), null == s || s(), l()
   }, [e, o, n, l, s]);
   return {
@@ -45,7 +45,7 @@ function i(t) {
     theRestOfTheUrl: x,
     shouldTrustUrl: o,
     setShouldTrustUrl: c,
-    handleConfirm: p,
+    handleConfirm: h,
     handleCancel: a.useCallback(() => {
       null == s || s(), i()
     }, [i, s])

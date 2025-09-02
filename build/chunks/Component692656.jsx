@@ -90,7 +90,7 @@ function et(e) {
     children: [_ ? (0, l.jsx)(en, {}) : null, (0, l.jsx)(el, {
       searchQuery: r,
       setSearchQuery: a,
-      placeholder: h ? Y.intl.string(Y.t.ziyFv7) : Y.intl.string(Y.t["pw+r5e"])
+      placeholder: h ? X.intl.string(X.t.ziyFv7) : X.intl.string(X.t["pw+r5e"])
     }), (0, l.jsx)(f.Ttm, {
       ref: o,
       className: Q.scrollableContent,
@@ -117,7 +117,7 @@ function et(e) {
           onEmptyState: P
         }), O && (0, l.jsx)(B.A, {
           type: R.LG.HOME_EMPTY,
-          textContent: n === R._b.TEXT ? Y.intl.string(Y.t.iKZctb) : Y.intl.string(Y.t.RL7Ncn)
+          textContent: n === R._b.TEXT ? X.intl.string(X.t.iKZctb) : X.intl.string(X.t.RL7Ncn)
         }), A && (0, l.jsx)(F.Z, {})]
       })
     })]
@@ -206,8 +206,8 @@ function ei(e) {
       application: t.application
     });
     return e
-  }, [o]), u = Y.intl.string(Y.t["s+UQpa"]), d = u;
-  a && (d = Y.intl.string(Y.t["2pFD8P"]));
+  }, [o]), u = X.intl.string(X.t["s+UQpa"]), d = u;
+  a && (d = X.intl.string(X.t["2pFD8P"]));
   let {
     items: p,
     handleViewMore: m
@@ -307,7 +307,7 @@ function er(e) {
         s.current = e
       },
       children: (0, l.jsx)(W.Z, {
-        title: Y.intl.string(Y.t.shUONj)
+        title: X.intl.string(X.t.shUONj)
       })
     }), (0, l.jsx)("div", {
       className: Q.sectionTwoColumnContentContainer,
@@ -344,7 +344,7 @@ function ea(e) {
     items: s,
     handleViewMore: c
   } = eu({
-    title: Y.intl.string(Y.t.KfkuGR),
+    title: X.intl.string(X.t.KfkuGR),
     look: D.U4.ROW,
     items: a,
     limit: 4,
@@ -364,7 +364,7 @@ function ea(e) {
         u.current = e
       },
       children: (0, l.jsx)(W.Z, {
-        title: Y.intl.string(Y.t.KfkuGR),
+        title: X.intl.string(X.t.KfkuGR),
         buttonType: W.Z.buttonTypes.VIEW_MORE,
         onClickViewButton: c
       })
@@ -426,7 +426,7 @@ function eo(e) {
       },
       options: {
         placeholderCount: 0,
-        limit: X.tn,
+        limit: Y.tn,
         includeFrecency: true
       },
       allowFetch: true

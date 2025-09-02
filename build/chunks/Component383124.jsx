@@ -1,70 +1,71 @@
 /** Chunk was on 88479 **/
 /** chunk id: 383124, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
+  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk442837 = require("./442837.js"),
   Chunk210753 = require("./210753.js"),
   Chunk77498 = require("./77498.js"),
   Chunk512622 = require("./512622.js");
 
-function m(e) {
+function g(e) {
   let {
     applicationId: t,
     selected: n,
     onClick: l,
-    disabled: m
+    disabled: g
   } = e, {
-    isFetching: g,
-    coverImageUrl: p
-  } = (0, c.$)(t, {
+    isFetching: p,
+    coverImageUrl: f
+  } = (0, d.$)(t, {
     coverImageHeight: 336,
     coverImageWidth: 252
-  }), f = (0, o.e7)([d.Z], () => {
+  }), h = (0, c.e7)([u.Z], () => {
     var e, n;
-    return null != (n = null == (e = d.Z.getDetectableGame(t)) ? true : e.name) ? n : ""
-  }), h = i.useCallback(() => {
+    return null != (n = null == (e = u.Z.getDetectableGame(t)) ? true : e.name) ? n : ""
+  }), b = i.useCallback(() => {
     null == l || l(t)
-  }, [t, l]), b = i.useMemo(() => g ? null : null == p ? (0, r.jsx)("div", {
-    className: u.gameUnknownImage,
-    children: (0, r.jsx)(s.IMN, {
+  }, [t, l]), x = i.useMemo(() => p ? null : null == f ? (0, r.jsx)("div", {
+    className: m.gameUnknownImage,
+    children: (0, r.jsx)(o.IMN, {
       size: "lg"
     })
   }) : (0, r.jsx)("img", {
-    className: u.gameImage,
-    alt: f,
-    src: p
-  }), [p, g, f]);
+    className: m.gameImage,
+    alt: h,
+    src: f
+  }), [f, p, h]);
   return (0, r.jsxs)("div", {
-    className: a()(u.selectedGame, {
-      [u.dimmed]: !n,
-      [u.disabled]: m
+    className: a()(m.selectedGame, {
+      [m.dimmed]: !n,
+      [m.disabled]: g
     }),
-    children: [(0, r.jsxs)(s.P3F, {
-      "aria-disabled": m,
-      tabIndex: m ? false : 0,
-      onClick: m ? true : h,
-      className: a()(u.gameImageBackground, {
-        [u.gameImageLoading]: g,
-        [u.disabled]: m
+    children: [(0, r.jsxs)(o.P3F, {
+      "aria-disabled": g,
+      tabIndex: g ? false : 0,
+      onClick: g ? true : b,
+      className: a()(m.gameImageBackground, {
+        [m.gameImageLoading]: p,
+        [m.disabled]: g
       }),
       children: [n && (0, r.jsx)("div", {
-        className: u.checkBackground,
-        children: (0, r.jsx)(s.XZJ, {
+        className: m.checkBackground,
+        children: (0, r.jsx)(s.$q, {
           displayOnly: true,
           value: n
         })
-      }), b]
-    }), (0, r.jsx)(s.Text, {
-      className: u.gameName,
+      }), x]
+    }), (0, r.jsx)(o.Text, {
+      className: m.gameName,
       variant: "text-xs/medium",
       color: "header-primary",
-      children: f
+      children: h
     })]
   })
 }

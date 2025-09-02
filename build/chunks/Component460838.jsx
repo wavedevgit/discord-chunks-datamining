@@ -1,7 +1,7 @@
 /** Chunk was on 84722 **/
 /** chunk id: 460838, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Q: () => Z,
+  Q: () => S,
   Z: () => T
 }), require("./953529.js");
 var i, Chunk951288 = require("./951288.js"),
@@ -58,9 +58,9 @@ function I(e, n) {
     Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
   }), e
 }
-var Z = ((i = {})[i.BANNER = 0] = "BANNER", i[i.THUMBNAIL = 1] = "THUMBNAIL", i);
+var S = ((i = {})[i.BANNER = 0] = "BANNER", i[i.THUMBNAIL = 1] = "THUMBNAIL", i);
 
-function S(e) {
+function O(e) {
   let {
     channel: n,
     onClick: t
@@ -96,7 +96,7 @@ function S(e) {
   })
 }
 
-function O(e) {
+function Z(e) {
   let {
     channel: n,
     onJoinClick: t,
@@ -104,7 +104,7 @@ function O(e) {
     location: r,
     isExternal: a
   } = e;
-  return null != n ? (0, l.jsx)(S, {
+  return null != n ? (0, l.jsx)(O, {
     channel: n,
     onClick: t
   }) : (0, l.jsxs)(o.P3F, {
@@ -183,8 +183,8 @@ function T(e) {
     speakerCount: E,
     rsvped: b,
     canInvite: I,
-    location: Z,
-    truncate: S,
+    location: S,
+    truncate: O,
     onContextMenu: T,
     onJoinClick: P,
     onJoinGuildClick: A,
@@ -192,13 +192,13 @@ function T(e) {
     onStartClick: L,
     onInviteClick: X,
     onEndClick: R,
-    onClick: W,
-    isNew: M,
+    onClick: M,
+    isNew: W,
     guildEvent: J,
     eventPreview: U,
     recurrenceRule: V,
     recurrenceId: D
-  } = e, z = c === y.WX.EXTERNAL, q = z ? e => e.stopPropagation() : true, H = [];
+  } = e, q = c === y.WX.EXTERNAL, z = q ? e => e.stopPropagation() : true, H = [];
   if (null != V && null != event) {
     let e = (0, g.Ho)(V);
     H = (0, g.PJ)(4, e, new Date(J.scheduled_start_time))
@@ -206,7 +206,7 @@ function T(e) {
   let B = H.length > 0;
   return (0, l.jsxs)(o.kL8, {
     "aria-label": a,
-    onClick: () => null == W ? true : W(D),
+    onClick: () => null == M ? true : M(D),
     onContextMenu: T,
     className: s()(w.card, {
       [w.joined]: x,
@@ -223,9 +223,9 @@ function T(e) {
         name: a,
         description: u,
         imageSource: 1 === d ? h : null,
-        truncate: S,
+        truncate: O,
         guildId: null == t ? true : t.id,
-        isNew: M,
+        isNew: W,
         guildEvent: J,
         eventPreview: U,
         recurrenceId: D
@@ -238,12 +238,12 @@ function T(e) {
         className: w.divider
       }), (0, l.jsxs)("div", {
         className: s()(w.inline, w.footer),
-        children: [(0, l.jsx)(O, {
+        children: [(0, l.jsx)(Z, {
           channel: i,
           onJoinClick: P,
-          handleLocationClick: q,
-          location: Z,
-          isExternal: z
+          handleLocationClick: z,
+          location: S,
+          isExternal: q
         }), (0, l.jsx)("div", {
           children: (0, l.jsx)(_, {
             channel: i,
@@ -270,7 +270,7 @@ function T(e) {
       guildId: null == t ? true : t.id,
       recurrenceRule: V,
       guildEventId: J.id,
-      onRecurrenceClick: W
+      onRecurrenceClick: M
     })]
   })
 }

@@ -55,8 +55,8 @@ function _(e) {
   let Z = r.useMemo(() => null == s ? null : (0, u.dL)(s.id), [s]),
     [L, N] = r.useState(false),
     {
-      commands: T,
-      loading: D
+      commands: M,
+      loading: T
     } = (t = r.useMemo(() => null == s ? {
       type: "contextless"
     } : {
@@ -69,13 +69,13 @@ function _(e) {
       allowFetch: true,
       allowApplicationState: true
     })),
-    M = r.useRef(0),
+    D = r.useRef(0),
     [A, k] = r.useState(O && null != Z ? [Z] : []),
     I = A.length,
     R = I >= 5,
-    [F, U] = r.useState(""),
+    [F, q] = r.useState(""),
     {
-      results: q,
+      results: U,
       updateSearchText: H
     } = (0, c.s)({
       selectedDestinations: A,
@@ -83,13 +83,13 @@ function _(e) {
       includeMissingDMs: true
     }),
     z = r.useCallback(e => {
-      U(e), H(e)
+      q(e), H(e)
     }, [H]),
     G = r.useCallback(() => (E(false), _()), [E, _]),
     [W] = (0, o.Z)([n]),
     V = r.useCallback(() => {
-      U("")
-    }, [U]),
+      q("")
+    }, [q]),
     X = r.useRef(null);
   r.useEffect(() => {
     if ("" === F) {
@@ -106,16 +106,16 @@ function _(e) {
           } = t;
           return n === e.type && l === e.id
         });
-        if (false === n) return R ? t : (U(""), H(""), M.current += 1, [e, ...t]);
+        if (false === n) return R ? t : (q(""), H(""), D.current += 1, [e, ...t]);
         let l = [...t];
-        return l.splice(n, 1), M.current += 1, l
+        return l.splice(n, 1), D.current += 1, l
       })
     }, [R, H]),
     [Y, B] = r.useMemo(() => {
-      if (D) return [null, false];
-      let e = T.find(e => e.untranslatedName === y.name);
+      if (T) return [null, false];
+      let e = M.find(e => e.untranslatedName === y.name);
       return true !== e ? [e, false] : [null, true]
-    }, [y, T, D]),
+    }, [y, M, T]),
     Q = r.useCallback(async function(e) {
       let {
         closeAfterSend: t
@@ -147,7 +147,7 @@ function _(e) {
         closeAfterSend: true
       })
     }, [Q, A]);
-  if (D) return (0, l.jsx)(i.Modal, {
+  if (T) return (0, l.jsx)(i.Modal, {
     title: v.intl.string(v.t.fuFvw8),
     "aria-label": v.intl.string(v.t.fuFvw8),
     transitionState: w.transitionState,
@@ -169,10 +169,10 @@ function _(e) {
     }],
     children: v.intl.string(v.t.yAk8ZW)
   });
-  let $ = q.length > 0 ? (0, l.jsx)(g.F, {
+  let $ = U.length > 0 ? (0, l.jsx)(g.F, {
       paddingBottom: 16,
       paddingTop: 16,
-      rowData: q,
+      rowData: U,
       handleToggleDestination: J,
       selectedDestinations: A,
       disableSelection: R,

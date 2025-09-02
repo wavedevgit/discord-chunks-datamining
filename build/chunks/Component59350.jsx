@@ -51,7 +51,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk97009 = require("./97009.js"),
   Chunk430864 = require("./430864.js");
 
-function Q(e) {
+function Y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       l = Object.keys(n);
@@ -69,8 +69,8 @@ function Q(e) {
   }
   return e
 }
-let Y = Chunk481060.EFr.SIZE_80,
-  K = "required";
+let K = Chunk481060.EFr.SIZE_80,
+  J = "required";
 
 function $(e) {
   var t, n, r;
@@ -89,11 +89,11 @@ function $(e) {
     avatarDecorationSrc: g
   } = (0, f.Z)({
     user: s,
-    size: (0, p.y9)(Y),
+    size: (0, p.y9)(K),
     onlyAnimateOnHover: !h
-  }), x = (0, o.e7)([O.ZP], () => O.ZP.getSelfMember(i.id)), b = (0, o.Wu)([O.ZP], () => O.ZP.getMemberRoleWithPendingUpdates(i.id, s.id)), N = (0, o.e7)([Z.Z], () => Z.Z.getSortedRoles(i.id)), I = (0, C.ZP)(i.id, s.id), w = N.filter(e => b.includes(e.id)), P = (0, j.ZP)(s.id, i.id);
+  }), x = (0, o.e7)([O.ZP], () => O.ZP.getSelfMember(i.id)), b = (0, o.Wu)([O.ZP], () => O.ZP.getMemberRoleWithPendingUpdates(i.id, s.id)), Z = (0, o.e7)([N.Z], () => N.Z.getSortedRoles(i.id)), I = (0, C.ZP)(i.id, s.id), w = Z.filter(e => b.includes(e.id)), P = (0, j.ZP)(s.id, i.id);
   (0, m.ZP)(() => {
-    (0, y.Z)(s.id, s.getAvatarURL(i.id, (0, c.pxk)(Y)), {
+    (0, y.Z)(s.id, s.getAvatarURL(i.id, (0, c.pxk)(K)), {
       guildId: i.id
     })
   });
@@ -111,11 +111,11 @@ function $(e) {
       children: z.intl.string(z.t["+8um3N"])
     }), (0, l.jsxs)("div", {
       className: X.profileCard,
-      children: [(0, l.jsx)("div", (n = Q({}, u), r = r = {
+      children: [(0, l.jsx)("div", (n = Y({}, u), r = r = {
         children: (0, l.jsx)(A, {
           src: d,
           avatarDecoration: g,
-          size: Y,
+          size: K,
           "aria-label": s.username
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
@@ -135,7 +135,7 @@ function $(e) {
       }), (0, l.jsx)(c.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
-        className: a()(J.markup, X.bio),
+        className: a()(Q.markup, X.bio),
         children: T
       }), null != w && w.length > 0 && (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)("hr", {
@@ -188,7 +188,7 @@ function ee(e) {
     }, t)
   }), {
     handleSelectOption: b
-  } = (0, R.Z)(i.id), j = n.options.map(e => Q({
+  } = (0, R.Z)(i.id), j = n.options.map(e => Y({
     value: e.id
   }, e)), v = n.options.filter(e => x.includes(e.id)).map(e => e.id);
   return (0, l.jsxs)("div", {
@@ -204,7 +204,7 @@ function ee(e) {
       color: "header-primary",
       children: [n.title, n.required ? (0, l.jsx)("span", {
         className: a()(X.required, {
-          [X.error]: (null == s ? true : s.type) === K
+          [X.error]: (null == s ? true : s.type) === J
         }),
         children: "*"
       }) : null]
@@ -219,7 +219,7 @@ function ee(e) {
           let e = x.filter(e => !l.includes(e)),
             t = n.options.filter(t => e.includes(t.id));
           if (x.length <= t.length && n.required) return void d({
-            type: K
+            type: J
           });
           t.forEach(e => {
             b(n, e, false), u.delete(e.id)
@@ -271,7 +271,7 @@ function et(e) {
       color: "header-primary",
       children: [n.title, n.required ? (0, l.jsx)("span", {
         className: a()(X.required, {
-          [X.error]: (null == s ? true : s.type) === K
+          [X.error]: (null == s ? true : s.type) === J
         }),
         children: "*"
       }) : null]
@@ -283,7 +283,7 @@ function et(e) {
         option: e,
         onSelect: t => ((e, t) => {
           if (!t && 1 === x.length && n.required) return void d({
-            type: K
+            type: J
           });
           b(n, e, null != t && t), n.singleSelect && t && n.options.forEach(e => u.delete(e.id)), t ? u.add(e.id) : u.delete(e.id), m(new Set(u)), d(null)
         })(e, t),
@@ -303,20 +303,20 @@ function en(e) {
   let {
     guildId: t,
     onBrowseChannels: n
-  } = e, i = (0, s.wj)((0, h.ZP)()), m = (0, o.e7)([N.Z], () => N.Z.getGuild(t)), p = (0, o.e7)([w.default], () => w.default.getCurrentUser()), f = (0, u.Z)("(min-width: 1344px)") && null != p, _ = r.useCallback(() => {
-    (0, b.uL)(W.Z5c.CHANNEL(t, F.oC.CHANNEL_BROWSER)), null == n || n()
-  }, [t, n]), C = (0, o.e7)([I.ZP], () => I.ZP.hasUnread(t, q.W.GUILD_ONBOARDING_QUESTION)), {
+  } = e, i = (0, s.wj)((0, h.ZP)()), m = (0, o.e7)([Z.Z], () => Z.Z.getGuild(t)), p = (0, o.e7)([w.default], () => w.default.getCurrentUser()), f = (0, u.Z)("(min-width: 1344px)") && null != p, _ = r.useCallback(() => {
+    (0, b.uL)(W.Z5c.CHANNEL(t, q.oC.CHANNEL_BROWSER)), null == n || n()
+  }, [t, n]), C = (0, o.e7)([I.ZP], () => I.ZP.hasUnread(t, F.W.GUILD_ONBOARDING_QUESTION)), {
     onboardingPromptsRaw: j,
     newOnboardingPrompts: v,
     onboardingPromptsWithNewAnswers: y,
     newAnswersCount: O,
-    onboardingPrompts: Z
+    onboardingPrompts: N
   } = (0, L.Z)(t);
   r.useEffect(() => {
     (null == m ? true : m.id) != null && !x.Z.isFullServerPreview(m.id) && (k.Z.shouldFetchPrompts(m.id) || C) && (0, A.eM)(m.id)
   }, [null == m ? true : m.id, C]), r.useEffect(() => {
     if ((null == m ? true : m.id) != null && !x.Z.isFullServerPreview(m.id)) return () => {
-      (0, d.Ju)(m.id, q.W.GUILD_ONBOARDING_QUESTION, k.Z.ackIdForGuild(m.id)), T.Z.updateOnboardingResponses(m.id)
+      (0, d.Ju)(m.id, F.W.GUILD_ONBOARDING_QUESTION, k.Z.ackIdForGuild(m.id)), T.Z.updateOnboardingResponses(m.id)
     }
   }, [null == m ? true : m.id]);
   let E = r.useCallback(e => {
@@ -378,20 +378,20 @@ function en(e) {
         }), v.map(E), y.map(E), (0, l.jsx)("div", {
           className: X.sectionSeparator
         })]
-      }), Z.length > 0 && (0, l.jsxs)(l.Fragment, {
+      }), N.length > 0 && (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsxs)("div", {
           children: [(0, l.jsx)(c.X6q, {
             variant: "heading-md/semibold",
             color: "header-primary",
             children: z.intl.format(z.t["8IV8Ky"], {
-              count: Z.length
+              count: N.length
             })
           }), (0, l.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
             children: z.intl.string(z.t.Ecz7T0)
           })]
-        }), Z.map(E)]
+        }), N.map(E)]
       })]
     }), f && (0, l.jsx)($, {
       guild: m,

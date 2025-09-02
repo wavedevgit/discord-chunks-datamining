@@ -2,13 +2,14 @@
 /** chunk id: 730820, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => U
+  Z: () => G
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
   o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
+  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk816814 = require("./816814.js"),
   Chunk240872 = require("./240872.jsx"),
@@ -34,7 +35,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk343396 = require("./343396.js"),
   Chunk197571 = require("./197571.js");
 
-function D(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,20 +44,20 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      D(e, t, n[t])
+      x(e, t, n[t])
     })
   }
   return e
 }
 
-function L(e, t) {
+function j(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -67,44 +68,44 @@ function L(e, t) {
   return n
 }
 
-function j(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
+function M(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function M(e) {
+function k(e) {
   let {
     code: {
       code: t,
       consumed: n
     }
   } = e, a = "".concat(t.substr(0, 4), "-").concat(t.substr(4)), o = i.useRef(null), s = i.useCallback(e => {
-    if ("c" === e.key && e.metaKey && v.wS) {
+    if ("c" === e.key && e.metaKey && I.wS) {
       var t;
-      e.preventDefault(), e.stopPropagation(), (0, v.JG)(a), null == o || null == (t = o.current) || t.focus()
+      e.preventDefault(), e.stopPropagation(), (0, I.JG)(a), null == o || null == (t = o.current) || t.focus()
     }
   }, [a]);
   return (0, r.jsx)("li", {
-    className: w.marginBottom20,
-    children: (0, r.jsx)(l.P3F, {
+    className: D.marginBottom20,
+    children: (0, r.jsx)(c.P3F, {
       innerRef: o,
-      className: P.backupCode,
+      className: w.backupCode,
       onKeyDown: s,
-      children: (0, r.jsx)(l.XZJ, {
+      children: (0, r.jsx)(l.$q, {
         displayOnly: true,
         readOnly: true,
-        className: P.codeCheckbox,
+        className: w.codeCheckbox,
         value: n,
         children: (0, r.jsx)("span", {
-          className: P.code,
+          className: w.code,
           children: a
         })
       })
     })
   })
 }
-class k extends Chunk647438.PureComponent {
+class U extends Chunk647438.PureComponent {
   maskPhoneNumber(e) {
     return null == e ? "" : "".concat("*".repeat(e.length - 4)).concat(e.slice(false))
   }
@@ -118,9 +119,9 @@ class k extends Chunk647438.PureComponent {
         hasTOTPEnabled: o
       } = this.props,
       s = null != Chunk647438.phone,
-      c = Chunk647438.hasFlag(Chunk981631.xW$.MFA_SMS);
+      l = Chunk647438.hasFlag(Chunk981631.xW$.MFA_SMS);
     if (o) {
-      if (Chunk442837 || Chunk816814) {
+      if (Chunk442837 || Chunk755721) {
         let e = require ? Chunk647438.phone : this.maskPhoneNumber(Chunk647438.phone);
         t = (0, Chunk951288.jsxs)(Chunk481060.R94, {
           type: Chunk481060.R94.Types.DESCRIPTION,
@@ -134,7 +135,7 @@ class k extends Chunk647438.PureComponent {
           })]
         })
       }
-      if (Chunk816814) e = (0, Chunk951288.jsx)(Chunk600164.Z, {
+      if (Chunk755721) e = (0, Chunk951288.jsx)(Chunk600164.Z, {
         className: Chunk442837 ? "" : Chunk197571.marginTop8,
         children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "critical-secondary",
@@ -201,7 +202,7 @@ class k extends Chunk647438.PureComponent {
           text: Chunk388032.intl.string(Chunk388032.t.qZZUy8)
         })
       });
-      let i = e => e.map(e => (0, r.jsx)(M, {
+      let i = e => e.map(e => (0, r.jsx)(k, {
         code: e
       }, e.code));
       e = (0, Chunk951288.jsxs)(Chunk481060.hjN, {
@@ -303,52 +304,52 @@ class k extends Chunk647438.PureComponent {
   }
   openPhoneVerificationModal() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
-    (0, Chunk481060.h7j)(t => (0, r.jsx)(g.default, x({
-      reason: h.L.USER_SETTINGS_UPDATE
+    (0, Chunk481060.h7j)(t => (0, r.jsx)(E.default, L({
+      reason: m.L.USER_SETTINGS_UPDATE
     }, t, e)), {
       modalKey: Chunk815660.M
     })
   }
   constructor(...e) {
-    super(...e), D(this, "state", {
+    super(...e), x(this, "state", {
       revealed: false,
       password: ""
-    }), D(this, "togglePhoneNumberVisibility", e => {
+    }), x(this, "togglePhoneNumberVisibility", e => {
       e.preventDefault(), this.setState({
         revealed: !this.state.revealed
       })
-    }), D(this, "handleDisableMFA", () => {
-      u.Z.show({
-        title: R.intl.string(R.t["D+aE7u"]),
-        body: R.intl.string(R.t.EA4ZEh),
-        cancelText: R.intl.string(R.t["ETE/oK"]),
-        onConfirm: () => c.Z.disable()
+    }), x(this, "handleDisableMFA", () => {
+      d.Z.show({
+        title: P.intl.string(P.t["D+aE7u"]),
+        body: P.intl.string(P.t.EA4ZEh),
+        cancelText: P.intl.string(P.t["ETE/oK"]),
+        onConfirm: () => u.Z.disable()
       })
-    }), D(this, "generateBackupCodes", async () => {
-      let e = y.Z.getVerificationKey();
-      await c.Z.confirmViewBackupCodes(e, true)
-    }), D(this, "sendMFABackupCodesVerificationKeyEmail", () => {
-      (0, l.h7j)(e => (0, r.jsx)(_.Z, j(x({}, e), {
-        handleSubmit: e => c.Z.sendMFABackupCodesVerificationKeyEmail(e).then(() => {
+    }), x(this, "generateBackupCodes", async () => {
+      let e = O.Z.getVerificationKey();
+      await u.Z.confirmViewBackupCodes(e, true)
+    }), x(this, "sendMFABackupCodesVerificationKeyEmail", () => {
+      (0, c.h7j)(e => (0, r.jsx)(p.Z, M(L({}, e), {
+        handleSubmit: e => u.Z.sendMFABackupCodesVerificationKeyEmail(e).then(() => {
           this.viewBackupCodes(e)
         }),
-        title: R.intl.string(R.t.PsQmzc),
-        actionText: R.intl.string(R.t.ajkYcH)
+        title: P.intl.string(P.t.PsQmzc),
+        actionText: P.intl.string(P.t.ajkYcH)
       })))
-    }), D(this, "viewBackupCodes", e => {
-      (0, l.h7j)(t => (0, r.jsx)(f.Z, j(x({}, t), {
-        handleSubmit: e => c.Z.confirmViewBackupCodes(e, false).then(() => t.onClose()),
+    }), x(this, "viewBackupCodes", e => {
+      (0, c.h7j)(t => (0, r.jsx)(_.Z, M(L({}, t), {
+        handleSubmit: e => u.Z.confirmViewBackupCodes(e, false).then(() => t.onClose()),
         maxLength: 8,
-        title: R.intl.string(R.t.mGppp6),
-        label: R.intl.string(R.t.TjGb4e),
+        title: P.intl.string(P.t.mGppp6),
+        label: P.intl.string(P.t.TjGb4e),
         forceNoPlaceholder: true,
-        retryPrompt: R.intl.string(R.t.PZgmxs),
-        retrySuccessMessage: R.intl.string(R.t.j4qu8v),
-        onRetry: () => c.Z.sendMFABackupCodesVerificationKeyEmail(e),
-        actionText: R.intl.string(R.t.piW6YW),
-        helpMessage: R.intl.string(R.t["37S9yc"])
+        retryPrompt: P.intl.string(P.t.PZgmxs),
+        retrySuccessMessage: P.intl.string(P.t.j4qu8v),
+        onRetry: () => u.Z.sendMFABackupCodesVerificationKeyEmail(e),
+        actionText: P.intl.string(P.t.piW6YW),
+        helpMessage: P.intl.string(P.t["37S9yc"])
       })))
-    }), D(this, "getDownloadFileContents", () => {
+    }), x(this, "getDownloadFileContents", () => {
       let e = this.props.backupCodes.map(e => {
           let {
             consumed: t,
@@ -356,37 +357,37 @@ class k extends Chunk647438.PureComponent {
           } = e;
           return "* ".concat(n.substr(0, 4), "-").concat(n.substr(4), " ").concat(t ? "(used)" : "")
         }).join("\r\n"),
-        t = R.intl.formatToPlainString(R.t.uYWwh4, {
+        t = P.intl.formatToPlainString(P.t.uYWwh4, {
           email: this.props.currentUser.email
         });
       return "".concat(t, "\r\n\r\n").concat(e)
-    }), D(this, "handleChangePhoneNumber", () => {
+    }), x(this, "handleChangePhoneNumber", () => {
       this.openPhoneVerificationModal()
-    }), D(this, "handleEnableSMS", () => {
+    }), x(this, "handleEnableSMS", () => {
       let {
         currentUser: e
       } = this.props;
       null == e.phone ? this.openPhoneVerificationModal({
-        onAddedPhone: c.Z.enableSMS
-      }) : c.Z.enableSMS()
-    }), D(this, "handleDisableSMS", () => {
-      (0, l.h7j)(e => (0, r.jsx)(_.Z, j(x({}, e), {
-        handleSubmit: c.Z.disableSMS,
-        title: R.intl.string(R.t.KLWnio),
-        children: R.intl.string(R.t["W0/Dub"])
+        onAddedPhone: u.Z.enableSMS
+      }) : u.Z.enableSMS()
+    }), x(this, "handleDisableSMS", () => {
+      (0, c.h7j)(e => (0, r.jsx)(p.Z, M(L({}, e), {
+        handleSubmit: u.Z.disableSMS,
+        title: P.intl.string(P.t.KLWnio),
+        children: P.intl.string(P.t["W0/Dub"])
       })))
     })
   }
 }
 
-function U(e) {
-  let t = (0, s.e7)([O.default], () => O.default.getCurrentUser());
+function G(e) {
+  let t = (0, s.e7)([v.default], () => v.default.getCurrentUser());
   o()(null != t, "TwoFactorAuth: currentUser cannot be undefined");
-  let n = (0, s.cj)([y.Z, b.default], () => ({
-    togglingSMS: y.Z.togglingSMS,
-    hasTOTPEnabled: b.default.hasTOTPEnabled()
+  let n = (0, s.cj)([O.Z, y.default], () => ({
+    togglingSMS: O.Z.togglingSMS,
+    hasTOTPEnabled: y.default.hasTOTPEnabled()
   }));
-  return (0, r.jsx)(k, x({
+  return (0, r.jsx)(U, L({
     currentUser: t
   }, n, e))
 }

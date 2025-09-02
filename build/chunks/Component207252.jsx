@@ -22,16 +22,16 @@ function b(e) {
     guildId: t,
     transitionState: n,
     onClose: b,
-    onConfirm: g
-  } = e, k = (0, a.Dt)(), C = (0, r.e7)([d.Z], () => d.Z.theme), p = (0, l.wj)(C) ? m : _, {
+    onConfirm: k
+  } = e, g = (0, a.Dt)(), C = (0, r.e7)([d.Z], () => d.Z.theme), p = (0, l.wj)(C) ? m : _, {
     rules: y,
     rulesAccepted: E
   } = (0, u.V)(t), f = i.useCallback(() => {
-    b(), g()
-  }, [b, g]);
+    b(), k()
+  }, [b, k]);
   return (0, c.jsxs)(s.Y0X, {
     transitionState: n,
-    "aria-labelledby": k,
+    "aria-labelledby": g,
     className: x.modal,
     parentComponent: "GuildSettingsJoinRulesDiscoveryModal",
     children: [(0, c.jsx)(s.olH, {
@@ -48,7 +48,7 @@ function b(e) {
         }), (0, c.jsx)(s.X6q, {
           variant: "heading-xxl/semibold",
           color: "header-primary",
-          id: k,
+          id: g,
           children: h.intl.string(h.t.Q8OFNz)
         })]
       }), (0, c.jsx)(s.Text, {
@@ -58,11 +58,11 @@ function b(e) {
         children: h.intl.string(h.t["WT+829"])
       }), (0, c.jsx)("div", {
         className: x.checkboxContainer,
-        children: y.map(e => (0, c.jsxs)(s.XZJ, {
+        children: y.map(e => (0, c.jsxs)(o.$q, {
           className: x.checkbox,
           reverse: true,
           value: e.checked,
-          align: s.XZJ.Aligns.CENTER,
+          align: o.wb.CENTER,
           onChange: e.onCheck,
           children: [(0, c.jsx)(s.Text, {
             variant: "text-md/semibold",

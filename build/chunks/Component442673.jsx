@@ -1,10 +1,11 @@
 /** Chunk was on 50872 **/
 /** chunk id: 442673, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => b
+  default: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk985002 = require("./985002.js"),
   Chunk880257 = require("./880257.js"),
@@ -12,77 +13,77 @@ var Chunk951288 = require("./951288.js"),
   Chunk345909 = require("./345909.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk601582 = require("./601582.js");
-let b = e => {
+let f = e => {
   let {
     currentUser: t,
     otherUser: r,
-    transitionState: b,
-    onClose: f
-  } = e, h = o.useCallback(() => {
-    f()
-  }, [f]), p = (0, a.Z)(), [j, x] = o.useState(false), [m, g] = o.useState(false), y = o.useCallback(() => {
-    g(true), x(false)
+    transitionState: f,
+    onClose: h
+  } = e, p = o.useCallback(() => {
+    h()
+  }, [h]), j = (0, c.Z)(), [x, m] = o.useState(false), [g, y] = o.useState(false), O = o.useCallback(() => {
+    y(true), m(false)
   }, []), {
-    disconnectLinkRequest: O,
-    isDisconnectLoading: v
-  } = (0, s.G)({
-    onSuccess: h,
-    onError: y
+    disconnectLinkRequest: v,
+    isDisconnectLoading: k
+  } = (0, a.G)({
+    onSuccess: p,
+    onError: O
   });
-  return (0, n.jsx)(c.Z, {
-    transitionState: b,
+  return (0, n.jsx)(l.Z, {
+    transitionState: f,
     children: (0, n.jsxs)("form", {
       onSubmit: e => {
-        e.preventDefault(), O(r)
+        e.preventDefault(), v(r)
       },
-      children: [(0, n.jsx)(c.Z.Error, {
-        error: m ? d.intl.string(l.default.krIDd3) : true
-      }), (0, n.jsxs)(i.hzk, {
+      children: [(0, n.jsx)(l.Z.Error, {
+        error: g ? u.intl.string(d.default.krIDd3) : true
+      }), (0, n.jsxs)(s.hzk, {
         "data-migration-pending": true,
-        children: [(0, n.jsx)(c.Z.Header, {
+        children: [(0, n.jsx)(l.Z.Header, {
           currentUser: t,
           otherUser: r,
-          header: d.intl.formatToPlainString(l.default.NMSTb2, {
-            isAdult: String(p)
+          header: u.intl.formatToPlainString(d.default.NMSTb2, {
+            isAdult: String(j)
           }),
-          icon: (0, n.jsx)(i.Dio, {
+          icon: (0, n.jsx)(s.Dio, {
             size: "md",
             color: "currentColor",
-            className: u.closeIcon
+            className: b.closeIcon
           })
-        }), (0, n.jsx)(c.Z.Notice, {
-          notice: p ? d.intl.string(l.default.EvMGLS) : d.intl.string(l.default.f1SUeX)
-        }), (0, n.jsx)(i.XZJ, {
-          className: u.acknowledgementCheckbox,
-          type: i.XZJ.Types.INVERTED,
-          value: j,
+        }), (0, n.jsx)(l.Z.Notice, {
+          notice: j ? u.intl.string(d.default.EvMGLS) : u.intl.string(d.default.f1SUeX)
+        }), (0, n.jsx)(i.$q, {
+          className: b.acknowledgementCheckbox,
+          type: i.M0.INVERTED,
+          value: x,
           onChange: (e, t) => {
-            x(t), g(false)
+            m(t), y(false)
           },
-          children: (0, n.jsx)(i.Text, {
+          children: (0, n.jsx)(s.Text, {
             variant: "text-xs/semibold",
-            children: p ? d.intl.string(l.default["/MYCeX"]) : d.intl.string(l.default.VJaHUV)
+            children: j ? u.intl.string(d.default["/MYCeX"]) : u.intl.string(d.default.VJaHUV)
           })
         })]
-      }), (0, n.jsx)(i.mzw, {
+      }), (0, n.jsx)(s.mzw, {
         "data-migration-pending": true,
-        children: (0, n.jsx)(c.Z.ButtonFooter, {
-          children: (0, n.jsxs)(i.hE2, {
+        children: (0, n.jsx)(l.Z.ButtonFooter, {
+          children: (0, n.jsxs)(s.hE2, {
             direction: "horizontal-reverse",
-            children: [(0, n.jsx)(i.zxk, {
+            children: [(0, n.jsx)(s.zxk, {
               variant: "secondary",
               size: "sm",
-              text: d.intl.string(d.t["ETE/oK"]),
+              text: u.intl.string(u.t["ETE/oK"]),
               type: "button",
-              onClick: f,
-              disabled: v
-            }), (0, n.jsx)(i.zxk, {
+              onClick: h,
+              disabled: k
+            }), (0, n.jsx)(s.zxk, {
               variant: "critical-primary",
               size: "sm",
-              text: d.intl.string(l.default["c5L+sr"]),
+              text: u.intl.string(d.default["c5L+sr"]),
               type: "submit",
-              disabled: !j || v,
-              loading: v
+              disabled: !x || k,
+              loading: k
             })]
           })
         })

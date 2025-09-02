@@ -44,7 +44,7 @@ function C(e) {
     isScrolling: L,
     canShowMigrationTooltip: M,
     trailing: B
-  } = e, [W, U] = r.useState(false), [H, G] = r.useState(false), z = M && !L && !H && true !== R && null != P, F = r.useRef(null), K = r.useRef(null), V = r.useCallback((e, t, n, r) => null == e || null == r ? null : n ? (0, i.jsxs)(b.Z, {
+  } = e, [W, U] = r.useState(false), [H, G] = r.useState(false), z = M && !L && !H && true !== R && null != P, F = r.useRef(null), K = r.useRef(null), q = r.useCallback((e, t, n, r) => null == e || null == r ? null : n ? (0, i.jsxs)(b.Z, {
     align: b.Z.Align.CENTER,
     ref: K,
     children: [(0, i.jsx)(u.Text, {
@@ -99,7 +99,7 @@ function C(e) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
   }, [R, null == P ? true : P.application.id, z]);
-  let q = z ? (0, i.jsx)(u.yRy, {
+  let V = z ? (0, i.jsx)(u.yRy, {
       targetElementRef: A ? K : F,
       renderPopout: () => (0, i.jsx)(u.P3F, {
         onClick: e => {
@@ -114,8 +114,8 @@ function C(e) {
       align: "center",
       animation: u.yRy.Animation.TRANSLATE,
       shouldShow: true,
-      children: () => V
-    }) : V,
+      children: () => q
+    }) : q,
     Y = (0, s.Wu)([g.Z], () => {
       var e;
       return null != P && null != R && null != (e = g.Z.getApplicationEntitlementsForGuild(P.application.id, R)) ? e : []
@@ -177,7 +177,7 @@ function C(e) {
                 className: _.featureIcon
               })
             }, "commands")), a
-          }(P, W, J), q, B]
+          }(P, W, J), V, B]
         })
       })]
     });

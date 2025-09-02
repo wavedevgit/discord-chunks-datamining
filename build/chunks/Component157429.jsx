@@ -1,73 +1,52 @@
 /** Chunk was on 35282 **/
-/** chunk id: 157429, original params: n,t,e (module,exports,require) **/
+/** chunk id: 157429, original params: t,i,n (module,exports,require) **/
 require.d(exports, {
   default: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  e = require.n(Chunk512722),
+  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk935369 = require("./935369.js"),
   Chunk313201 = require("./313201.js"),
   Chunk53365 = require("./53365.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk965193 = require("./965193.js");
+  Chunk388032 = require("./388032.jsx");
 
-function h(n) {
+function h(t) {
   let {
-    transitionState: t,
-    guild: e,
-    onClose: s
-  } = n, h = (0, c.Dt)(), [m, {
-    loading: p,
-    error: _
-  }] = (0, o.Z)(r.oL), j = async () => {
-    a()(null != e, "no guild"), null != await m(e.id) && s()
+    transitionState: i,
+    guild: n,
+    onClose: a
+  } = t, h = (0, u.Dt)(), [x, {
+    loading: g,
+    error: k
+  }] = (0, c.Z)(d.oL), m = async () => {
+    e()(null != n, "no guild"), null != await x(n.id) && a()
   };
-  return (0, i.jsxs)(l.Y0X, {
-    transitionState: t,
+  return (0, l.jsx)(r.Modal, {
+    transitionState: i,
     "aria-labelledby": h,
-    parentComponent: "RemoveMonetizationModal",
-    children: [(0, i.jsxs)(l.xBx, {
-      children: [(0, i.jsx)(l.X6q, {
-        id: h,
-        variant: "heading-md/semibold",
-        children: u.intl.string(u.t.rRpcEx)
-      }), (0, i.jsx)(l.olH, {
-        className: x.closeButton,
-        onClick: s
+    actions: [{
+      variant: "critical-primary",
+      text: p.intl.string(p.t.R3BPHx),
+      loading: g,
+      onClick: m
+    }],
+    title: p.intl.string(p.t.rRpcEx),
+    subtitle: p.intl.format(p.t["Oa5P6+"], {
+      guildName: n.name,
+      url: o.EYA.DEVELOPER_PORTAL_TEAMS
+    }),
+    onClose: a,
+    children: null != k ? (0, l.jsxs)(l.Fragment, {
+      children: [(0, l.jsx)(s.kzN, {
+        children: k.message
+      }), (0, l.jsx)(s.LZC, {
+        size: 24
       })]
-    }), (0, i.jsxs)(l.hzk, {
-      className: x.content,
-      children: [null != _ ? (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(l.kzN, {
-          children: _.message
-        }), (0, i.jsx)(l.LZC, {
-          size: 24
-        })]
-      }) : null, (0, i.jsx)(l.R94, {
-        type: l.R94.Types.ERROR,
-        children: u.intl.format(u.t["Oa5P6+"], {
-          guildName: e.name,
-          url: d.EYA.DEVELOPER_PORTAL_TEAMS
-        })
-      }), (0, i.jsx)(l.LZC, {
-        size: 16
-      })]
-    }), (0, i.jsx)(l.mzw, {
-      className: x.__invalid_footer,
-      children: (0, i.jsx)("div", {
-        "data-button-hoisted-classname-wrapper": true,
-        className: x.__invalid_goBackButton,
-        children: (0, i.jsx)(l.zxk, {
-          variant: "critical-primary",
-          text: u.intl.string(u.t.R3BPHx),
-          loading: p,
-          onClick: j
-        })
-      })
-    })]
+    }) : null
   })
 }

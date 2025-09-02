@@ -1,7 +1,7 @@
 /** Chunk was on 15076 **/
 /** chunk id: 907941, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => H
+  default: () => X
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -69,7 +69,7 @@ function k(e) {
   return e
 }
 
-function W(e) {
+function V(e) {
   let {
     label: t,
     channelId: n
@@ -78,13 +78,13 @@ function W(e) {
     return [e, (null == e ? true : e.parent_id) != null ? b.Z.getChannel(e.parent_id) : null]
   });
   return null == s ? t : (0, i.jsx)(h.ZZ$, {
-    icon: (0, v.KS)(s),
+    icon: (0, p.KS)(s),
     title: t,
     subtitle: null == l ? true : l.name
   })
 }
 
-function V(e) {
+function W(e) {
   var t;
   let {
     muteConfig: n,
@@ -132,7 +132,7 @@ function V(e) {
   })
 }
 
-function X(e) {
+function z(e) {
   let {
     muted: t,
     messageNotifications: n,
@@ -164,7 +164,7 @@ function X(e) {
   })
 }
 
-function J(e) {
+function Y(e) {
   let {
     guildId: t,
     onClose: n
@@ -183,7 +183,7 @@ function J(e) {
   }) : null
 }
 
-function Y(e) {
+function B(e) {
   let {
     suppressEveryone: t,
     suppressRoles: n,
@@ -240,7 +240,7 @@ function Y(e) {
   })
 }
 
-function B(e) {
+function F(e) {
   let {
     setNewChannelOverrides: t,
     newChannelOverrides: n,
@@ -258,7 +258,7 @@ function B(e) {
     } = e;
     return {
       value: t.id,
-      label: (0, p.F6)(t, y.default, Z.Z)
+      label: (0, v.F6)(t, L.default, Z.Z)
     }
   }).value();
   return (0, i.jsxs)(h.xJW, {
@@ -271,7 +271,7 @@ function B(e) {
     }), (0, i.jsx)(h.VcW, {
       value: A.lds,
       placeholder: R.intl.string(R.t["Z+oF8v"]),
-      renderOptionLabel: e => (0, i.jsx)(W, {
+      renderOptionLabel: e => (0, i.jsx)(V, {
         label: e.label,
         channelId: e.value
       }),
@@ -285,7 +285,7 @@ function B(e) {
   })
 }
 
-function F(e) {
+function q(e) {
   let {
     newChannelOverrides: t,
     channelOverrides: n,
@@ -295,10 +295,10 @@ function F(e) {
     setNewChannelOverrides: o,
     latestOverrideId: d,
     messageNotifications: u
-  } = e, g = s.useMemo(() => new Set([...t, ...(0, M.OD)(n)]), [n, t]), x = (0, h.dQu)(c.Z.unsafe_rawColors.GREEN_360).hex(), p = e => {
+  } = e, g = s.useMemo(() => new Set([...t, ...(0, M.OD)(n)]), [n, t]), x = (0, h.dQu)(c.Z.unsafe_rawColors.GREEN_360).hex(), v = e => {
     let n = new Set(t);
     n.delete(e), o(n)
-  }, v = l.map(e => {
+  }, p = l.map(e => {
     let {
       channel: t
     } = e;
@@ -310,12 +310,12 @@ function F(e) {
       muted: null != s && (0, m.m$)(s),
       messageNotifications: null != s ? s.message_notifications : null,
       guildMessageNotifications: u,
-      onDelete: p,
+      onDelete: v,
       checkboxColor: x,
       autoFocus: t.id === d
     }, t.id)
-  }).filter(L.lm);
-  return (0 === g.size || 0 === v.length) && v.push((0, i.jsx)("div", {
+  }).filter(y.lm);
+  return (0 === g.size || 0 === p.length) && p.push((0, i.jsx)("div", {
     className: U.overridePlaceholder,
     children: (0, i.jsx)(h.Text, {
       className: U.overrideHeader,
@@ -364,11 +364,11 @@ function F(e) {
           }
         })
       })]
-    }), v]
+    }), p]
   })
 }
 
-function z(e) {
+function H(e) {
   let {
     guildId: t,
     onClose: n,
@@ -377,8 +377,8 @@ function z(e) {
     suppressEveryone: c,
     suppressRoles: h,
     muteEvents: m,
-    mobilePush: p,
-    muted: v,
+    mobilePush: v,
+    muted: p,
     muteConfig: j,
     messageNotifications: N,
     channelOverrides: S,
@@ -393,7 +393,7 @@ function z(e) {
     messageNotifications: _.ZP.getMessageNotifications(t),
     channelOverrides: _.ZP.getChannelOverrides(t),
     notifyHighlights: _.ZP.getNotifyHighlights(t)
-  })), [Z, y] = s.useState(new Set), [L, T] = s.useState(null), P = s.useMemo(() => (0, x.Z)(r._categories, r, e => {
+  })), [Z, L] = s.useState(new Set), [y, T] = s.useState(null), P = s.useMemo(() => (0, x.Z)(r._categories, r, e => {
     let {
       channel: {
         type: t
@@ -413,13 +413,13 @@ function z(e) {
     }],
     onClose: n,
     transitionState: l,
-    children: [(0, i.jsx)(V, {
+    children: [(0, i.jsx)(W, {
       muteConfig: j,
-      muted: v,
+      muted: p,
       guild: a,
       handleCheckboxChange: M
-    }), (0, i.jsx)(X, {
-      muted: v,
+    }), (0, i.jsx)(z, {
+      muted: p,
       messageNotifications: N,
       memberCount: o,
       handleRadioChange: (e, n, i) => {
@@ -427,41 +427,41 @@ function z(e) {
           [e]: n.value
         }, i)
       }
-    }), (0, i.jsx)(J, {
+    }), (0, i.jsx)(Y, {
       guildId: t,
       onClose: n
-    }), (0, i.jsx)(Y, {
+    }), (0, i.jsx)(B, {
       suppressEveryone: c,
       suppressRoles: h,
       handleCheckboxChange: M,
       notifyHighlights: b,
       muteEvents: m,
-      mobilePush: p,
-      muted: v,
+      mobilePush: v,
+      muted: p,
       guildId: t
-    }), (0, i.jsx)(B, {
-      setNewChannelOverrides: y,
+    }), (0, i.jsx)(F, {
+      setNewChannelOverrides: L,
       newChannelOverrides: Z,
       setLatestOverrideId: T,
       channels: P,
       categories: r
-    }), (0, i.jsx)(F, {
+    }), (0, i.jsx)(q, {
       newChannelOverrides: Z,
       channelOverrides: S,
       channels: P,
       categories: r,
-      muted: v,
-      setNewChannelOverrides: y,
-      latestOverrideId: L,
+      muted: p,
+      setNewChannelOverrides: L,
+      latestOverrideId: y,
       messageNotifications: N
     })]
   })
 }
 
-function H(e) {
+function X(e) {
   var t = D({}, function(e) {
     if (null == e) throw TypeError("Cannot destructure " + e);
     return e
   }(e));
-  return (0, M.Mn)("NotificationSettingsModal") ? (0, i.jsx)(I.Z, k({}, t)) : (0, i.jsx)(z, k({}, t))
+  return (0, M.Mn)("NotificationSettingsModal") ? (0, i.jsx)(I.Z, k({}, t)) : (0, i.jsx)(H, k({}, t))
 }

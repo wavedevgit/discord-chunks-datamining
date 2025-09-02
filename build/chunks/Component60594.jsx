@@ -150,8 +150,8 @@ function eo(e) {
     [eG, eU] = i.useState(ed),
     [eW, eF] = i.useState(eu),
     [eH, ez] = i.useState(ef),
-    [eV, eJ] = i.useState(em),
-    [eY, eX] = i.useState(null != (o = Z.I0.getSetting()) && o),
+    [eV, eY] = i.useState(em),
+    [eJ, eX] = i.useState(null != (o = Z.I0.getSetting()) && o),
     [eK, eq] = i.useState(null != X ? X : null),
     eQ = null != (d = null == ex ? true : ex.id) ? d : eA,
     [e$, e1] = i.useState(eO ? "" : true);
@@ -177,13 +177,13 @@ function eo(e) {
     let c = {};
     if (null == eM ? true : eM.id.startsWith("prepicked:")) c = F.ZP.getStreamStartOptions();
     else {
-      let e = (0, Y.Z)(eg, eM, y.ZP.getRunningGames()),
+      let e = (0, J.Z)(eg, eM, y.ZP.getRunningGames()),
         t = !(0, D.isWindows)() || null == e || (null == eM ? true : eM.id.startsWith("camera:"));
       c.pid = t || null == e ? true : e.pid, null == c.pid && null != eM && (c.sourceId = eM.id, c.sourceName = eM.name)
     }(0, x.WH)(i, n, el(ei({}, c), {
       audioSourceId: eL,
       sound: eV,
-      previewDisabled: eY,
+      previewDisabled: eJ,
       nativePickerStyleUsed: e$,
       goLiveModalDurationMs: Date.now() - ep.current
     })), null != eZ && eI($.L.AUTO_DISMISS), ey || (async () => {
@@ -232,7 +232,7 @@ function eo(e) {
     if (e.preventDefault(), 1 === eP) return e3();
     if (2 === eP) return eT(3);
     if (null != e$) return eT(1);
-    let t = (0, Y.Z)(eg, eM, y.ZP.getRunningGames());
+    let t = (0, J.Z)(eg, eM, y.ZP.getRunningGames());
     if (L.ZP.supportsFeature(Q.eRX.ELEVATED_HOOK) && (null == t ? true : t.elevated)) {
       var i;
       let e = null != (i = null == eg ? true : eg.pid) ? i : null;
@@ -399,9 +399,9 @@ function eo(e) {
                 id: 2,
                 children: (0, r.jsx)("div", {
                   className: en.modalSize,
-                  children: ey ? (0, r.jsx)(J.se, {
+                  children: ey ? (0, r.jsx)(Y.se, {
                     onSourceSelect: e8
-                  }) : (0, r.jsx)(J.oA, {
+                  }) : (0, r.jsx)(Y.oA, {
                     selectedSource: eM,
                     onChangeSelectedSource: e8
                   })
@@ -417,7 +417,7 @@ function eo(e) {
                     selectedSource: eM,
                     selectedFPS: eH,
                     sound: eV,
-                    previewDisabled: eY,
+                    previewDisabled: eJ,
                     sourceChanged: eE,
                     selectSource: B,
                     onChangeSelectedFPS: e => e5(eG, eW, e),
@@ -428,7 +428,7 @@ function eo(e) {
                     onChangeSource: () => tt(),
                     onChangeAudioDevice: e => eB(e),
                     onChangeGuild: () => eT(0),
-                    onChangeSound: e => eJ(e),
+                    onChangeSound: e => eY(e),
                     onChangePreviewDisabled: e => eX(e),
                     onClose: ea,
                     selectedGuildId: eK,
@@ -440,7 +440,7 @@ function eo(e) {
                 id: 1,
                 children: (0, r.jsx)("div", {
                   className: en.modalSize,
-                  children: (0, r.jsx)(J.Hu, {
+                  children: (0, r.jsx)(Y.Hu, {
                     onSourceSelect: e2,
                     onCancel: ti,
                     pickerType: e$

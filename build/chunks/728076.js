@@ -113,14 +113,14 @@ function b(e, t, n, b) {
         a = URL.createObjectURL(n);
       M(e, t), z(g(a, o._.PREPARING), t), s.fH(e, r, n), z(g(a, o._.READY_TO_UPLOAD), t)
     }, [w, z, M]),
-    H = r.useCallback((e, t) => {
+    q = r.useCallback((e, t) => {
       M(v, t), z({
         emoji: e,
         stickerId: true,
         mediaAttachmentState: true
       }, t)
     }, [v, z, M]),
-    q = r.useCallback(e => {
+    H = r.useCallback(e => {
       x(t => {
         let n = [...t];
         return n[e] = p(m({}, n[e]), {
@@ -152,7 +152,7 @@ function b(e, t, n, b) {
         (0, u.uY)(n) && (e = false, t["answer-".concat(n.localCreationAnswerId)] = f.intl.string(f.t["8Qqkc3"]))
       }), A(t), D(!e), e
     }, [w, O]),
-    J = r.useCallback(async () => {
+    Q = r.useCallback(async () => {
       await T({
         channel: e,
         question: O,
@@ -163,9 +163,9 @@ function b(e, t, n, b) {
         onClose: t
       })
     }, [O, S, P, _, T, e, t]),
-    Q = r.useCallback(() => {
-      !B && V() && J()
-    }, [J, B, V]);
+    J = r.useCallback(() => {
+      !B && V() && Q()
+    }, [Q, B, V]);
   return {
     answers: w,
     question: O,
@@ -180,14 +180,14 @@ function b(e, t, n, b) {
     handleQuestionChange: Y,
     handleAnswerTextChange: K,
     handleGifSelect: W,
-    handleEmojiSelect: H,
+    handleEmojiSelect: q,
     handleCustomUpload: F,
     handleAddAnswer: G,
     handleRemoveAnswer: X,
-    handleRemoveAnswerImage: q,
+    handleRemoveAnswerImage: H,
     fieldErrors: k,
-    createPoll: J,
-    handleSubmitPoll: Q,
+    createPoll: Q,
+    handleSubmitPoll: J,
     submitting: B,
     createPollError: L,
     shouldFocusOnInvalidField: E,

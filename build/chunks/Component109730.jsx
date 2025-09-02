@@ -45,26 +45,26 @@ function f(t) {
     modReportId: y
   } = t, {
     analyticsLocations: D
-  } = (0, d.ZP)(), A = null != (l = null != (e = null == v ? true : v[0]) ? e : null == D ? true : D[0]) ? l : null, j = (0, a.e7)([g.default], () => g.default.getUser(f), [f]), [K, b] = s.useState(O.UK.DURATION_60_SEC), [M, Z] = s.useState(""), [k, P] = s.useState(false), [w, B] = s.useState(false), L = (0, a.e7)([h.Z], () => {
+  } = (0, d.ZP)(), A = null != (l = null != (e = null == v ? true : v[0]) ? e : null == D ? true : D[0]) ? l : null, j = (0, a.e7)([g.default], () => g.default.getUser(f), [f]), [K, b] = s.useState(O.UK.DURATION_60_SEC), [M, k] = s.useState(""), [P, Z] = s.useState(false), [w, B] = s.useState(false), q = (0, a.e7)([h.Z], () => {
     var t;
     return null == (t = h.Z.getChannel(y)) ? true : t.isArchivedThread()
-  }), q = (0, _.sE)(U, {
+  }), L = (0, _.sE)(U, {
     location: A,
     targetUserId: f
   }), W = s.useCallback(async () => {
     if (null != j) {
-      P(true);
+      Z(true);
       try {
-        await c.Z.setCommunicationDisabledDuration(U, f, K, M, A, y), w && null != y && T.Z.resolveFlag(y), q(_.jQ.TIMEOUT), (0, o.showToast)((0, o.createToast)(E.intl.formatToPlainString(E.t.O9C3Nj, {
+        await c.Z.setCommunicationDisabledDuration(U, f, K, M, A, y), w && null != y && T.Z.resolveFlag(y), L(_.jQ.TIMEOUT), (0, o.showToast)((0, o.createToast)(E.intl.formatToPlainString(E.t.O9C3Nj, {
           user: p.ZP.getName(U, null, j)
         }), o.ToastType.SUCCESS)), I()
       } catch (t) {
         (0, o.showToast)((0, o.createToast)(E.intl.string(E.t.epyCur), o.ToastType.FAILURE))
       } finally {
-        P(false)
+        Z(false)
       }
     }
-  }, [U, j, f, I, K, M, A, q, y, w]);
+  }, [U, j, f, I, K, M, A, L, y, w]);
   return ((0, u.ZP)(() => {
     null != j && x.default.track(m.rMx.OPEN_MODAL, {
       type: O.Cl,
@@ -88,9 +88,9 @@ function f(t) {
     }, {
       text: E.intl.string(E.t.MlPTIi),
       onClick: W,
-      loading: k
+      loading: P
     }],
-    actionBarInput: null == y || L ? true : (0, n.jsx)(o.XZJ, {
+    actionBarInput: null == y || q ? true : (0, n.jsx)(i.$q, {
       value: w,
       onChange: (t, e) => {
         B(e)
@@ -129,7 +129,7 @@ function f(t) {
           children: E.intl.string(E.t.ewHW19)
         }), (0, n.jsx)(o.Kx8, {
           value: M,
-          onChange: t => Z(t),
+          onChange: t => k(t),
           placeholder: E.intl.string(E.t.GakiHx),
           rows: 4,
           maxLength: O.GN

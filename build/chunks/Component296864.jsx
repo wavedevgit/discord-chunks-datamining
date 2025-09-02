@@ -1,12 +1,13 @@
 /** Chunk was on 84722 **/
 /** chunk id: 296864, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => j
+  default: () => f
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk82659 = require("./82659.jsx"),
+  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk41776 = require("./41776.js"),
   Chunk357156 = require("./357156.js"),
@@ -20,45 +21,45 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk602872 = require("./602872.js");
 
-function j(e) {
+function f(e) {
   var n;
   let {
     transitionState: t,
-    event: j,
-    onSuccess: f,
-    onClose: N
+    event: f,
+    onSuccess: N,
+    onClose: y
   } = e, {
-    guild_id: y,
-    privacy_level: k
-  } = j, E = (0, r.e7)([d.Z], () => d.Z.getChannel(j.channel_id), [j]), w = (0, r.e7)([h.Z], () => h.Z.getGuild(y), [y]), {
-    canManageGuildEvent: b
-  } = (0, o.XJ)(null != E ? E : w), I = b(j), Z = (0, r.e7)([c.Z], () => c.Z.isLurking(y), [y]), S = j.entity_type === g.WX.STAGE_INSTANCE, [O, _] = l.useState(S), [T, {
-    loading: P,
-    error: A
-  }] = (0, v.Z)();
-  if (!I) return null;
-  let G = k === g.j8.PUBLIC ? C.intl.string(C.t.HhlaLC) : C.intl.string(C.t.GI3xXV),
-    L = () => {
-      null == f || f(), N(), (0, u.Ku)(false)
+    guild_id: k,
+    privacy_level: E
+  } = f, w = (0, r.e7)([h.Z], () => h.Z.getChannel(f.channel_id), [f]), b = (0, r.e7)([v.Z], () => v.Z.getGuild(k), [k]), {
+    canManageGuildEvent: I
+  } = (0, u.XJ)(null != w ? w : b), S = I(f), O = (0, r.e7)([o.Z], () => o.Z.isLurking(k), [k]), Z = f.entity_type === C.WX.STAGE_INSTANCE, [_, T] = l.useState(Z), [P, {
+    loading: A,
+    error: G
+  }] = (0, m.Z)();
+  if (!S) return null;
+  let L = E === C.j8.PUBLIC ? p.intl.string(p.t.HhlaLC) : p.intl.string(p.t.GI3xXV),
+    X = () => {
+      null == N || N(), y(), (0, d.Ku)(false)
     },
-    X = async () => {
-      await T(j, O, {
-        onSuccess: L
+    R = async () => {
+      await P(f, _, {
+        onSuccess: X
       })
     };
   return (0, i.jsxs)(a.Modal, {
     transitionState: t,
-    onClose: N,
-    title: j.name,
-    subtitle: C.intl.format(C.t.UMajoq, {
-      privacyLevel: G,
-      privacyLevelHook: (e, n) => k !== g.j8.PUBLIC ? null : (0, i.jsxs)("div", {
-        className: p.privacyLevel,
-        children: [(0, i.jsx)(s.enf, {
+    onClose: y,
+    title: f.name,
+    subtitle: p.intl.format(p.t.UMajoq, {
+      privacyLevel: L,
+      privacyLevelHook: (e, n) => E !== C.j8.PUBLIC ? null : (0, i.jsxs)("div", {
+        className: j.privacyLevel,
+        children: [(0, i.jsx)(c.enf, {
           size: "xs",
           color: "currentColor",
-          className: p.publicIcon
-        }), (0, i.jsx)(s.Text, {
+          className: j.publicIcon
+        }), (0, i.jsx)(c.Text, {
           variant: "text-md/normal",
           children: e
         })]
@@ -66,47 +67,47 @@ function j(e) {
     }),
     actions: [{
       variant: "secondary",
-      text: C.intl.string(C.t.CZGqeX),
+      text: p.intl.string(p.t.CZGqeX),
       onClick: () => {
-        N()
+        y()
       }
     }, {
       variant: "active",
-      text: C.intl.string(C.t.cK1GGR),
-      onClick: X,
-      loading: P
+      text: p.intl.string(p.t.cK1GGR),
+      onClick: R,
+      loading: A
     }],
-    children: [(0, i.jsx)(x.Z, {
-      guild: w,
-      channel: E,
-      name: j.name,
-      description: null != (n = j.description) ? n : true,
-      imageSource: (0, m.Z)(j),
+    children: [(0, i.jsx)(g.Z, {
+      guild: b,
+      channel: w,
+      name: f.name,
+      description: null != (n = f.description) ? n : true,
+      imageSource: (0, x.Z)(f),
       isActive: false,
-      isUserLurking: Z,
+      isUserLurking: O,
       speakers: [],
       speakerCount: 0,
       rsvped: true,
-      guildEvent: j
-    }), S && (0, i.jsx)(s.XZJ, {
-      className: p.verticalSpacing,
-      type: s.XZJ.Types.INVERTED,
-      value: O,
+      guildEvent: f
+    }), Z && (0, i.jsx)(s.$q, {
+      className: j.verticalSpacing,
+      type: s.M0.INVERTED,
+      value: _,
       onChange: e => {
         let {
           currentTarget: n
         } = e;
-        return _(n.checked)
+        return T(n.checked)
       },
-      children: (0, i.jsx)(s.Text, {
+      children: (0, i.jsx)(c.Text, {
         variant: "text-sm/normal",
-        children: C.intl.string(C.t.dGNtgI)
+        children: p.intl.string(p.t.dGNtgI)
       })
-    }), null != A && null != A.getAnyErrorMessage() ? (0, i.jsx)(s.Text, {
+    }), null != G && null != G.getAnyErrorMessage() ? (0, i.jsx)(c.Text, {
       color: "text-danger",
       variant: "text-sm/normal",
-      className: p.errorMessage,
-      children: A.getAnyErrorMessage()
+      className: j.errorMessage,
+      children: G.getAnyErrorMessage()
     }) : null]
   })
 }

@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk149765 = require("./149765.js"),
-  Chunk178940 = require("./178940.jsx"),
   Chunk993365 = require("./993365.js"),
+  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk422559 = require("./422559.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -31,11 +31,11 @@ function f(e) {
         n = !a.e$(f, e);
       return (0, r.jsx)("li", {
         className: d.permission,
-        children: (0, r.jsx)(o.X, {
+        children: (0, r.jsx)(s.$q, {
           value: n,
           onChange: (t, n) => _(n, e),
-          type: o.X.Types.INVERTED,
-          children: (0, r.jsx)(s.x, {
+          type: s.M0.INVERTED,
+          children: (0, r.jsx)(o.x, {
             variant: "text-md/normal",
             children: t
           })
@@ -53,7 +53,7 @@ function f(e) {
             color: "currentColor",
             className: d.icon
           })
-        }), (0, r.jsx)(s.x, {
+        }), (0, r.jsx)(o.x, {
           variant: "text-md/normal",
           children: t
         })]
@@ -62,7 +62,7 @@ function f(e) {
   return (0, r.jsxs)("div", {
     className: d.botPermissions,
     children: [g.length > 0 ? (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(s.x, {
+      children: [(0, r.jsx)(o.x, {
         variant: "text-sm/medium",
         color: "header-secondary",
         children: u.intl.format(u.t.sOaT2t, {
@@ -74,7 +74,7 @@ function f(e) {
         children: g
       })]
     }) : null, E.length > 0 ? (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(s.x, {
+      children: [(0, r.jsx)(o.x, {
         variant: "text-sm/medium",
         color: "header-secondary",
         children: u.intl.format(u.t.fsOkFx, {

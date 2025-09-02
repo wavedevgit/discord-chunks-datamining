@@ -14,9 +14,9 @@ var Chunk951288 = require("./951288.js"),
 function u(e) {
   var t, r, {
       onSubmit: u,
-      onClose: p
+      onClose: b
     } = e,
-    b = function(e, t) {
+    p = function(e, t) {
       if (null == e) return {};
       var r, n, o = function(e, t) {
         if (null == e) return {};
@@ -57,13 +57,13 @@ function u(e) {
     onConfirm: u,
     onClose: () => (f && l.ZP.updatedUnsyncedSettings({
       disableCallUserConfirmationPrompt: true
-    }), p())
-  }, b), r = r = {
+    }), b())
+  }, p), r = r = {
     children: [(0, n.jsx)(i.Text, {
       variant: "text-md/normal",
       children: s.intl.string(s.t.Jz3oqK)
-    }), (0, n.jsx)(i.XZJ, {
-      type: i.XZJ.Types.INVERTED,
+    }), (0, n.jsx)(c.$q, {
+      type: c.M0.INVERTED,
       value: f,
       onChange: (e, t) => O(t),
       className: a.checkbox,

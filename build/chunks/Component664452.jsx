@@ -58,7 +58,7 @@ function x(t) {
     transitionState: n,
     onClose: x,
     analyticsData: v
-  } = t, N = (0, l.e7)([o.Z], () => o.Z.getGuild(e), [e]), m = !!(null == N ? true : N.features.has(g.oNc.INVITES_DISABLED)), [E] = i.useState(false), [S, C] = i.useState(O.Fl), I = (0, l.e7)([b.Z], () => b.Z.getGuildIncident(e)), T = (0, u.BT)(N), D = (0, p.SG)(I) || m, A = (0, p.sN)(I), [P, w] = i.useState(D), [R, k] = i.useState(A), [M, G] = i.useState(false), L = P !== D || R !== A || M, Z = m && !T;
+  } = t, N = (0, l.e7)([o.Z], () => o.Z.getGuild(e), [e]), m = !!(null == N ? true : N.features.has(g.oNc.INVITES_DISABLED)), [E] = i.useState(false), [S, C] = i.useState(O.Fl), I = (0, l.e7)([b.Z], () => b.Z.getGuildIncident(e)), T = (0, u.BT)(N), D = (0, p.SG)(I) || m, A = (0, p.sN)(I), [P, w] = i.useState(D), [R, M] = i.useState(A), [k, G] = i.useState(false), L = P !== D || R !== A || k, Z = m && !T;
   if (null == N) return x(), null;
 
   function U() {
@@ -148,7 +148,7 @@ function x(t) {
         }), (0, r.jsx)(s.rsf, {
           className: h.toggle,
           onChange: function() {
-            k(t => !t)
+            M(t => !t)
           },
           checked: R
         })]

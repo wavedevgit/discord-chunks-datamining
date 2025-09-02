@@ -26,7 +26,7 @@ let N = e => {
       type: t
     }
   } = e;
-  return (0, u.r8)(t) || t === p.d4z.GUILD_CATEGORY
+  return (0, u.r8)(t) || t === v.d4z.GUILD_CATEGORY
 };
 
 function S(e) {
@@ -46,7 +46,7 @@ function S(e) {
     let {
       channel: t
     } = e;
-    return t.type !== p.d4z.GUILD_CATEGORY || null != u[t.id] && u[t.id].length > 0
+    return t.type !== v.d4z.GUILD_CATEGORY || null != u[t.id] && u[t.id].length > 0
   }).map(e => {
     let {
       channel: t
@@ -59,11 +59,11 @@ function S(e) {
   return (0, i.jsxs)(a.xJW, {
     children: [(0, i.jsx)(a.R94, {
       type: a.R94.Types.DESCRIPTION,
-      children: v.intl.string(v.t["2Y9ZfH"])
+      children: p.intl.string(p.t["2Y9ZfH"])
     }), (0, i.jsx)("div", {
       className: j.input,
       children: (0, i.jsx)(a.VcW, {
-        value: p.lds,
+        value: v.lds,
         onChange: n,
         options: S,
         renderOptionLabel: e => {
@@ -77,7 +77,7 @@ function S(e) {
             subtitle: s
           })
         },
-        placeholder: v.intl.string(v.t["Z+oF8v"])
+        placeholder: p.intl.string(p.t["Z+oF8v"])
       })
     })]
   })

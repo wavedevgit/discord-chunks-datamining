@@ -72,8 +72,8 @@ function U(e) {
     builtInIntegrations: z,
     customWebhooks: F,
     followedChannelWebhooks: K,
-    isLoadingWebhooks: V,
-    canCreateWebhook: q,
+    isLoadingWebhooks: q,
+    canCreateWebhook: V,
     onManageBuiltIn: Y,
     onManageCustomWebhooks: $,
     onManageFollowedChannels: J,
@@ -242,7 +242,7 @@ function U(e) {
       name: A.intl.string(A.t.xOg4SE),
       icon: u.tYf,
       buttonText: e,
-      buttonDisabled: !q,
+      buttonDisabled: !V,
       trailing: t,
       onButtonClick: $,
       hasNextSection: n > 0,
@@ -335,7 +335,7 @@ function U(e) {
       })
     }), (0, i.jsx)(u.$i$, {
       className: D.divider
-    }), V || ei || null == U ? (0, i.jsx)(u.$jN, {
+    }), q || ei || null == U ? (0, i.jsx)(u.$jN, {
       className: D.__invalid_spinner,
       type: u.$jN.Type.SPINNING_CIRCLE
     }) : (0, i.jsxs)(i.Fragment, {

@@ -1,7 +1,7 @@
 /** Chunk was on 54844 **/
 /** chunk id: 255514, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => J
+  Z: () => K
 }), require("./388685.js"), require("./457542.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -47,7 +47,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk764295 = require("./764295.js"),
   Chunk520310 = require("./520310.js");
 
-function q(e) {
+function V(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -65,7 +65,7 @@ function q(e) {
   }
   return e
 }
-let V = ["user_urf", "message_urf", "guild_urf"];
+let X = ["user_urf", "message_urf", "guild_urf"];
 
 function H(e, t) {
   let {
@@ -90,12 +90,12 @@ function Q(e, t) {
     return n === t
   })
 }
-let J = e => {
+let K = e => {
   let {
     node: t,
     reportType: n,
-    reportSubType: J,
-    history: K,
+    reportSubType: K,
+    history: J,
     onSelectChild: Y,
     onModalClose: $,
     onSubmit: ee,
@@ -112,7 +112,7 @@ let J = e => {
     } : true
   }), [t, es, eo, ei, eb, ef]), eO = i.useMemo(() => (0, c.VP)(es, eo, ei, ef, eb), [es, eo, ei, ef, eb]), eZ = function(e, t) {
     let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
-      r = q({}, ef);
+      r = V({}, ef);
     r[e] = {
       value: t,
       isValid: n
@@ -137,22 +137,22 @@ let J = e => {
           })(Object(t)).forEach(function(n) {
             Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
           }), e
-        })(q({}, e), {
+        })(V({}, e), {
           [t]: n
         }))
     }
   }, [ei]), i.useEffect(() => {
     t.is_auto_submit && !ep && (eg(true), ee(ey(["", t.id])))
   }, [t.is_auto_submit, ep, ee, ey, t.id]);
-  let eN = (0, o.fW)(J),
+  let eN = (0, o.fW)(K),
     eS = null != H(t, "ignore_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name);
   return (0, r.jsxs)("div", {
-    className: X.container,
+    className: q.container,
     children: [(0, r.jsxs)(a.xBx, {
       "data-migration-pending": true,
       separator: false,
       direction: s.Z.Direction.VERTICAL,
-      className: X.header,
+      className: q.header,
       children: [(0, r.jsx)(M.Z, {
         element: H(t, "success")
       }), (0, r.jsx)(I.Z, {
@@ -163,7 +163,7 @@ let J = e => {
       })]
     }), (0, r.jsxs)(a.hzk, {
       "data-migration-pending": true,
-      className: X.body,
+      className: q.body,
       children: [null != el && (0, r.jsx)(B.Z, {
         element: el
       }), null != ec && (0, r.jsx)(A.Z, {
@@ -179,7 +179,7 @@ let J = e => {
         guild: n.record
       }) : null, null != H(t, "breadcrumbs") && (0, r.jsx)(p.Z, {
         isModeratorReport: ed,
-        history: K
+        history: J
       }), function(e) {
         let {
           elements: t
@@ -223,7 +223,7 @@ let J = e => {
         onModalClose: $,
         reportId: en,
         reportType: n,
-        reportSubType: J
+        reportSubType: K
       }), null != H(t, "channel_preview") && "stage_channel" === n.name && (0, r.jsx)(D.Z, {
         stageInstance: n.record
       }), null != H(t, "guild_scheduled_event_preview") && "guild_scheduled_event" === n.name && (0, r.jsx)(Z.Z, {
@@ -237,20 +237,20 @@ let J = e => {
       }), null != ei && (0, r.jsx)(P.Z, {
         element: ei,
         onChange: (e, t) => {
-          let n = q({}, eb);
+          let n = V({}, eb);
           e in eb ? delete n[e] : n[e] = t, e_(n)
         },
         state: eb
-      }), V.includes(n.name) && null != eo && eo.length > 0 && (0, r.jsx)(b.Z, {
+      }), X.includes(n.name) && null != eo && eo.length > 0 && (0, r.jsx)(b.Z, {
         elements: eo,
         onChange: eZ,
         state: ef
-      }), V.includes(n.name) && null != es && es.length > 0 && (0, r.jsx)(v.Z, {
+      }), X.includes(n.name) && null != es && es.length > 0 && (0, r.jsx)(v.Z, {
         elements: es,
         onChange: eZ,
         state: ef
       }), (0, r.jsxs)("div", {
-        className: X.listContainer,
+        className: q.listContainer,
         children: [(0, r.jsx)(g.Z, {
           node: t,
           onSelectChild: eI
@@ -291,10 +291,10 @@ let J = e => {
         }
       },
       onBackClicked: e.onNavigateBack,
-      canNavigateBack: K.length > 0
+      canNavigateBack: J.length > 0
     }), (0, r.jsx)(a.olH, {
       "data-migration-pending": true,
-      className: X.closeButton,
+      className: q.closeButton,
       onClick: $
     })]
   })

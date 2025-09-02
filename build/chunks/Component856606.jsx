@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => et,
-  n: () => J
+  n: () => q
 }), require("./539854.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -81,7 +81,7 @@ function Y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let J = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk388610.Z], () => {
+let q = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk388610.Z], () => {
   let e = Chunk388610.Z.getChannel();
   return {
     submitting: Chunk277053.Z.formState === Chunk981631.QZA.SUBMITTING,
@@ -99,7 +99,7 @@ let J = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk388610.Z], () => {
   }
 })(Chunk852860.Z);
 
-function q(e) {
+function J(e) {
   let {
     overwrite: t
   } = e, n = (0, o.e7)([T.Z], () => T.Z.channel), l = (0, o.e7)([_.Z], () => null != n ? _.Z.getGuild(n.getGuildId()) : null), r = (0, o.e7)([I.Z], () => null != l && null != t && t.type === j.BN.ROLE ? I.Z.getRole(l.id, t.id) : true), s = S.D.useExperiment({
@@ -450,7 +450,7 @@ function et() {
   let l = exports[require];
   return (0, Chunk951288.jsxs)(Chunk325476.ZP, {
     className: Chunk198750.container,
-    children: [(0, Chunk951288.jsx)(ee, {}), (0, Chunk951288.jsx)(q, {
+    children: [(0, Chunk951288.jsx)(ee, {}), (0, Chunk951288.jsx)(J, {
       overwrite: Chunk647438
     })]
   })

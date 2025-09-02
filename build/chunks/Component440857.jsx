@@ -76,7 +76,7 @@ function O(e) {
     H()
   }, S = l.useCallback(() => {
     H()
-  }, [H]), Z = (0, r.jsxs)("span", {
+  }, [H]), D = (0, r.jsxs)("span", {
     className: x.messageContainer,
     children: [(0, r.jsx)(c.tBG, {
       size: "custom",
@@ -93,7 +93,7 @@ function O(e) {
       text: g.intl.string(g.t.yW6ZdH),
       onClick: S
     })]
-  }), D = (0, r.jsxs)("span", {
+  }), Z = (0, r.jsxs)("span", {
     className: x.buttonContainer,
     children: [(0, r.jsx)(c.pgN, {
       size: "custom",
@@ -129,9 +129,9 @@ function O(e) {
             }))
           })
         },
-        onSaveText: D,
+        onSaveText: Z,
         onSaveButtonColor: s.Tt.RED,
-        message: Z
+        message: D
       })
     })
   }) : null

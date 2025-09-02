@@ -70,11 +70,11 @@ let N = e => {
     color: m.Z.unsafe_rawColors.YELLOW_300.css,
     width: 20,
     height: 20
-  }), u = null != s ? s : i) : l ? (d = (0, r.jsx)(p.XZJ, {
+  }), u = null != s ? s : i) : l ? (d = (0, r.jsx)(g.$q, {
     readOnly: true,
-    shape: p.XZJ.Shapes.ROUND,
+    shape: g.zV.ROUND,
     size: 20,
-    type: p.XZJ.Types.INVERTED,
+    type: g.M0.INVERTED,
     value: true
   }), u = i) : (d = (0, r.jsx)(p.k$p, {
     size: "custom",

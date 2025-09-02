@@ -1,11 +1,12 @@
 /** Chunk was on 88479 **/
 /** chunk id: 769998, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk442837 = require("./442837.js"),
+  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk430824 = require("./430824.js"),
   Chunk496675 = require("./496675.js"),
@@ -16,58 +17,58 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk464992 = require("./464992.js");
 
-function p(e) {
+function f(e) {
   var t;
   let {
     action: n,
-    triggerType: p,
-    guildId: f,
-    toggled: h,
-    onToggleAction: b
-  } = e, x = e => () => b(e), j = (0, o.c)(n.type, n, p), _ = null == (t = n.metadata) ? true : t.durationSeconds, v = null != _ ? (0, u.L9)(_) : null, O = (0, i.e7)([s.Z, a.Z], () => s.Z.can(d.Plq.MODERATE_MEMBERS, a.Z.getGuild(f)), [f]);
-  if (null == j) return null;
+    triggerType: f,
+    guildId: h,
+    toggled: b,
+    onToggleAction: x
+  } = e, j = e => () => x(e), _ = (0, c.c)(n.type, n, f), v = null == (t = n.metadata) ? true : t.durationSeconds, O = null != v ? (0, m.L9)(v) : null, y = (0, i.e7)([o.Z, s.Z], () => o.Z.can(u.Plq.MODERATE_MEMBERS, s.Z.getGuild(h)), [h]);
+  if (null == _) return null;
   let {
-    headerText: y,
-    descriptionText: C,
-    icon: N
-  } = j;
+    headerText: C,
+    descriptionText: N,
+    icon: E
+  } = _;
   return (0, r.jsxs)("div", {
-    className: g.actionContainer,
+    className: p.actionContainer,
     children: [(0, r.jsx)("div", {
-      className: g.actionIconContainer,
-      children: (0, r.jsx)(N, {
+      className: p.actionIconContainer,
+      children: (0, r.jsx)(E, {
         size: "md",
         color: "currentColor",
-        className: g.actionIcon
+        className: p.actionIcon
       })
     }), (0, r.jsxs)("div", {
-      className: g.actionTextContainer,
-      children: [(0, r.jsx)(l.X6q, {
+      className: p.actionTextContainer,
+      children: [(0, r.jsx)(a.X6q, {
         variant: "heading-sm/semibold",
-        children: y
-      }), (0, r.jsx)(l.Text, {
-        color: "interactive-normal",
-        variant: "text-xs/medium",
         children: C
-      }), h && (0, r.jsxs)(l.Text, {
+      }), (0, r.jsx)(a.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
-        children: [null === v ? null : p === c.fX.MENTION_SPAM ? m.intl.format(m.t.i3lsKC, {
-          friendlyDurationString: v
-        }) : m.intl.format(m.t.mvHxzc, {
-          friendlyDurationString: v
-        }), O && (0, r.jsx)(l.P3F, {
-          onClick: x(true),
-          className: g.editChannel,
+        children: N
+      }), b && (0, r.jsxs)(a.Text, {
+        color: "interactive-normal",
+        variant: "text-xs/medium",
+        children: [null === O ? null : f === d.fX.MENTION_SPAM ? g.intl.format(g.t.i3lsKC, {
+          friendlyDurationString: O
+        }) : g.intl.format(g.t.mvHxzc, {
+          friendlyDurationString: O
+        }), y && (0, r.jsx)(a.P3F, {
+          onClick: j(true),
+          className: p.editChannel,
           tag: "span",
           role: "link",
-          children: m.intl.string(m.t["0B95RE"])
+          children: g.intl.string(g.t["0B95RE"])
         })]
       })]
-    }), (0, r.jsx)(l.ua7, {
-      text: m.intl.format(m.t.wx6Vb2, {}),
-      "aria-label": m.intl.formatToMarkdownString(m.t.wx6Vb2, {}),
-      shouldShow: !O,
+    }), (0, r.jsx)(a.ua7, {
+      text: g.intl.format(g.t.wx6Vb2, {}),
+      "aria-label": g.intl.formatToMarkdownString(g.t.wx6Vb2, {}),
+      shouldShow: !y,
       children: e => {
         var t, n;
         return (0, r.jsx)("div", (t = function(e) {
@@ -88,12 +89,12 @@ function p(e) {
           }
           return e
         }({}, e), n = n = {
-          children: (0, r.jsx)(l.XZJ, {
-            type: l.XZJ.Types.INVERTED,
-            value: h,
-            onChange: x(false),
-            disabled: !O,
-            className: g.__invalid_actionCheckbox
+          children: (0, r.jsx)(l.$q, {
+            type: l.M0.INVERTED,
+            value: b,
+            onChange: j(false),
+            disabled: !y,
+            className: p.__invalid_actionCheckbox
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);

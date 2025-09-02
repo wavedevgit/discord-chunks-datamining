@@ -1,37 +1,38 @@
 /** Chunk was on 73736 **/
 /** chunk id: 13664, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => c
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk481060 = require("./481060.js"),
+var Chunk755721 = require("./755721.js"),
+  Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk788931 = require("./788931.js");
 
-function o(e) {
+function c(e) {
   let {
     sendStartNotification: t,
     setSendStartNotification: n
-  } = e, o = t ? i.intl.string(i.t.xAT8lJ) : i.intl.string(i.t["Y+18hY"]);
+  } = e, c = t ? a.intl.string(a.t.xAT8lJ) : a.intl.string(a.t["Y+18hY"]);
   return (0, l.jsx)("div", {
-    className: a.notificationToggle,
-    children: (0, l.jsx)(r.XZJ, {
-      type: r.XZJ.Types.INVERTED,
+    className: o.notificationToggle,
+    children: (0, l.jsx)(r.$q, {
+      type: r.M0.INVERTED,
       size: 14,
-      className: a.__invalid_checkbox,
+      className: o.__invalid_checkbox,
       value: t,
       onChange: function() {
         n(!t)
       },
-      children: (0, l.jsx)(r.Text, {
+      children: (0, l.jsx)(i.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: (0, l.jsx)(r.ua7, {
+        children: (0, l.jsx)(i.ua7, {
           position: "bottom",
-          tooltipClassName: a.tooltip,
-          text: i.intl.string(i.t["4A/xnZ"]),
-          "aria-label": i.intl.string(i.t["4A/xnZ"]),
+          tooltipClassName: o.tooltip,
+          text: a.intl.string(a.t["4A/xnZ"]),
+          "aria-label": a.intl.string(a.t["4A/xnZ"]),
           children: e => {
             var t, n;
             return (0, l.jsx)("span", (t = function(e) {
@@ -52,7 +53,7 @@ function o(e) {
               }
               return e
             }({}, e), n = n = {
-              children: o
+              children: c
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {

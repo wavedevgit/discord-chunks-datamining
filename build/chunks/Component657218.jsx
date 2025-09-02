@@ -356,9 +356,9 @@ function J(e) {
       className: z.privateThreadFormTitleText,
       children: V.intl.string(V.t.F1zyvb)
     })
-  }), s = (0, r.jsx)(c.XZJ, {
+  }), u = (0, r.jsx)(s.$q, {
     className: z.checkbox,
-    type: c.XZJ.Types.INVERTED,
+    type: s.M0.INVERTED,
     disabled: l === k.Jw.PrivateOnly,
     value: a,
     onChange: (e, t) => i({
@@ -373,7 +373,7 @@ function J(e) {
   return t || l === k.Jw.Disabled ? null : (0, r.jsxs)(c.hjN, {
     title: o,
     className: z.formSection,
-    children: [s, a ? (0, r.jsx)(c.Text, {
+    children: [u, a ? (0, r.jsx)(c.Text, {
       className: z.privateThreadDescription,
       variant: "text-xs/normal",
       color: "header-secondary",

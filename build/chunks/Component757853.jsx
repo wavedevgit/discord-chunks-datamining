@@ -156,8 +156,8 @@ function G(e) {
           children: o
         })]
       })]
-    }), "toggle" === l && (0, r.jsx)(h.XZJ, {
-      type: h.XZJ.Types.INVERTED,
+    }), "toggle" === l && (0, r.jsx)(f.$q, {
+      type: f.M0.INVERTED,
       displayOnly: true,
       size: 24,
       value: d,
@@ -210,7 +210,7 @@ function H(e) {
   }))
 }
 
-function W(e) {
+function q(e) {
   var {
     channel: t,
     subLabel: n
@@ -229,7 +229,7 @@ function W(e) {
   }))
 }
 
-function q(e) {
+function W(e) {
   var {
     channel: t,
     subLabel: n
@@ -332,9 +332,9 @@ function V(e) {
         };
       return c === p.h8.USER ? (0, r.jsx)(H, k({
         user: f
-      }, E)) : c === p.h8.GROUP_DM ? (0, r.jsx)(W, k({
+      }, E)) : c === p.h8.GROUP_DM ? (0, r.jsx)(q, k({
         channel: f
-      }, E)) : c === p.h8.TEXT_CHANNEL || c === p.h8.VOICE_CHANNEL ? (0, r.jsx)(q, k({
+      }, E)) : c === p.h8.TEXT_CHANNEL || c === p.h8.VOICE_CHANNEL ? (0, r.jsx)(W, k({
         channel: f
       }, E)) : void(0, A.vE)(c)
     }, [o, u, l, s, t, n, y, d]),

@@ -26,7 +26,7 @@ function N(e) {
   } = e, n = (0, o.O)(), {
     analyticsLocations: N
   } = (0, c.ZP)(), [S, f] = s.useState(false), b = s.useCallback(e => {
-    !S && e && (g.default.track(p.rMx.PREMIUM_UPSELL_VIEWED, {
+    !S && e && (g.default.track(v.rMx.PREMIUM_UPSELL_VIEWED, {
       type: x.cd.CUSTOM_NOTIFICATION_SOUNDS_SETTINGS_UPSELL,
       location: n.location,
       location_stack: N
@@ -42,24 +42,24 @@ function N(e) {
     }), (0, i.jsxs)(r.Text, {
       className: j.text,
       variant: "text-sm/normal",
-      children: [v.intl.string(v.t["Pb0O6+"]), " ", (0, i.jsx)(h.Z, {
+      children: [p.intl.string(p.t["Pb0O6+"]), " ", (0, i.jsx)(h.Z, {
         onClick: () => {
-          t(), a.Z.open(p.oAB.PREMIUM)
+          t(), a.Z.open(v.oAB.PREMIUM)
         },
-        children: v.intl.string(v.t.hvVgAQ)
+        children: p.intl.string(p.t.hvVgAQ)
       })]
     }), (0, i.jsx)("div", {
       className: j.nitroButton,
       children: (0, i.jsx)(m.Z, {
         showGradient: true,
         textOptions: {
-          textOverride: v.intl.string(v.t.pj0XBA)
+          textOverride: p.intl.string(p.t.pj0XBA)
         },
         size: l.zx.Sizes.SMALL,
         shinyButtonClassName: j.nitroButton,
         subscriptionTier: x.Si.TIER_2,
         premiumModalAnalyticsLocation: {
-          section: p.jXE.PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL
+          section: v.jXE.PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL
         }
       })
     })]

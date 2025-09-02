@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk993365 = require("./993365.js"),
-  Chunk178940 = require("./178940.jsx");
+  Chunk755721 = require("./755721.js");
 let s = {
   title: "Checkbox",
   stories: [{
@@ -22,7 +22,7 @@ let s = {
         size: c,
         align: u
       } = e, [d, f] = i.useState(false);
-      return (0, r.jsx)(o.X, {
+      return (0, r.jsx)(o.$q, {
         value: d,
         onChange: (e, t) => f(t),
         disabled: t,
@@ -50,13 +50,13 @@ let s = {
       type: {
         type: "select",
         label: "Type",
-        defaultValue: Chunk178940.X.Types.DEFAULT,
+        defaultValue: Chunk755721.M0.DEFAULT,
         options: [{
           label: "Default",
-          value: Chunk178940.X.Types.DEFAULT
+          value: Chunk755721.M0.DEFAULT
         }, {
           label: "Row",
-          value: Chunk178940.X.Types.ROW
+          value: Chunk755721.M0.ROW
         }]
       },
       label: {

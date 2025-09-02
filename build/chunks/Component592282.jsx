@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk761224 = require("./761224.js"),
   Chunk670596 = require("./670596.js"),
   Chunk743236 = require("./743236.js"),
-  Chunk481060 = require("./481060.js"),
+  Chunk755721 = require("./755721.js"),
   Chunk939350 = require("./939350.js"),
   Chunk334405 = require("./334405.js");
 
@@ -97,8 +97,8 @@ function E(e) {
       })]
     }), (0, r.jsx)("div", {
       className: _.iconContainer,
-      children: (0, r.jsx)(d.FZ5, {
-        shape: d.XZJ.Shapes.BOX,
+      children: (0, r.jsx)(d.Ik, {
+        shape: d.zV.BOX,
         size: 20,
         value: a,
         disabled: m

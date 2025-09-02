@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk101105 = require("./101105.js");
 
-function p(e) {
+function v(e) {
   return (0, i.jsx)("div", {
     className: x.sectionHeader,
     children: (0, i.jsx)(a.X6q, {
@@ -30,9 +30,9 @@ function p(e) {
   })
 }
 
-function v(e) {
+function p(e) {
   return (0, i.jsxs)("div", {
-    children: [null != e.title && (0, i.jsx)(p, {
+    children: [null != e.title && (0, i.jsx)(v, {
       title: e.title
     }), (0, i.jsx)("div", {
       className: l()(x.sectionContent, {
@@ -90,29 +90,29 @@ function j(e) {
       text: m.intl.string(m.t.i4jeWV),
       onClick: l.onClose
     }],
-    children: [(0, i.jsx)(v, {
+    children: [(0, i.jsx)(p, {
       noPadding: true,
       children: (0, i.jsx)(h.Z, {
         guildId: s
       })
-    }), (0, i.jsx)(v, {
+    }), (0, i.jsx)(p, {
       title: m.intl.string(m.t["R9Ej9/"]),
       noPadding: true,
       children: (0, i.jsx)(g.Z, {
         guildId: s
       })
-    }), a && (0, i.jsx)(v, {
+    }), a && (0, i.jsx)(p, {
       children: (0, i.jsx)(d.Z, {
         onClose: l.onClose,
         guildId: s,
         isRedesign: true
       })
-    }), (0, i.jsx)(v, {
+    }), (0, i.jsx)(p, {
       title: m.intl.string(m.t["31DySk"]),
       children: (0, i.jsx)(c.Z, {
         guildId: s
       })
-    }), (0, i.jsx)(p, {
+    }), (0, i.jsx)(v, {
       title: m.intl.string(m.t.JrySi4)
     }), (0, i.jsx)(u.Z, {
       guildId: s

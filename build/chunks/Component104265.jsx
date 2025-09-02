@@ -27,13 +27,13 @@ function _(e) {
     onSelect: _,
     hideMemberCount: C,
     canBeNew: b
-  } = e, j = (0, d.wj)((0, h.ZP)()), [v, y] = r.useState(false), O = v && !C, Z = r.useRef(null), {
-    reducedMotion: N
+  } = e, j = (0, d.wj)((0, h.ZP)()), [v, y] = r.useState(false), O = v && !C, N = r.useRef(null), {
+    reducedMotion: Z
   } = r.useContext(u.Sfi), I = (0, s.e7)([p.ZP], () => {
     var e, t, l, r;
     return (null == (e = n.emoji) ? true : e.id) != null && null != (r = null == (t = p.ZP.getCustomEmojiById(null == (l = n.emoji) ? true : l.id)) ? true : t.animated) && r
   }), w = (0, f.Z)(t, 1e3), P = null == w || null == n.roleIds ? 0 : Math.max(...n.roleIds.map(e => w[e])), E = b && !i && n.isUnseen, S = (0, u.q_F)({
-    transform: i || N.enabled ? "scale(1)" : "scale(0.7)",
+    transform: i || Z.enabled ? "scale(1)" : "scale(0.7)",
     opacity: +!!i,
     config: {
       duration: 150
@@ -51,7 +51,7 @@ function _(e) {
     delay: 500
   }, "animate-always"), B = (0, u.Yzy)(O, {
     from: {
-      transform: N.enabled ? "translateX(0)" : "translateX(8px)",
+      transform: Z.enabled ? "translateX(0)" : "translateX(8px)",
       opacity: 0
     },
     enter: {
@@ -67,10 +67,10 @@ function _(e) {
     }
   }, "animate-always"), [R, D] = r.useState(false);
   r.useEffect(() => {
-    if (O) return Z.current = setTimeout(() => {
-      y(false), Z.current = null
+    if (O) return N.current = setTimeout(() => {
+      y(false), N.current = null
     }, 3e3), () => {
-      null != Z.current && clearTimeout(Z.current)
+      null != N.current && clearTimeout(N.current)
     }
   }, [O]);
   let L = a()(x.optionButtonWrapper, {

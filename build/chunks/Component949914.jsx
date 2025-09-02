@@ -177,7 +177,6 @@ let G = e => {
       },
       Y = () => {
         null != l && (0, N.h)({
-          guildId: l.id,
           groupListing: a,
           listing: n,
           subscription: t

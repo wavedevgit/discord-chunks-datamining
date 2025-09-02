@@ -1,7 +1,7 @@
 /** Chunk was on 35755 **/
 /** chunk id: 98880, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  U4: () => X,
+  U4: () => Y,
   cG: () => er,
   kA: () => ea,
   qR: () => eo
@@ -89,9 +89,9 @@ function z(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var X = ((l = {}).ICON = "icon", l.ROW = "row", l.NO_BANNER = "no_banner", l.MEDIUM_BANNER = "medium_banner", l.LARGE_BANNER = "large_banner", l);
+var Y = ((l = {}).ICON = "icon", l.ROW = "row", l.NO_BANNER = "no_banner", l.MEDIUM_BANNER = "medium_banner", l.LARGE_BANNER = "large_banner", l);
 
-function Y(e) {
+function X(e) {
   var t;
   let {
     application: n,
@@ -508,7 +508,7 @@ function ea(e) {
   let {
     onClickAppCard: t
   } = er(e);
-  return (0, i.jsx)(Y, z(q({}, e), {
+  return (0, i.jsx)(X, z(q({}, e), {
     onClick: t
   }))
 }
@@ -553,7 +553,7 @@ function eo(e) {
       launchingComponentId: m,
       fetchesApplication: d
     });
-  return j === b.JS.START || j === b.JS.JOIN ? o ? (0, i.jsx)(Y, z(q({}, p), {
+  return j === b.JS.START || j === b.JS.JOIN ? o ? (0, i.jsx)(X, z(q({}, p), {
     sectionName: a,
     application: n,
     onClick: g,
@@ -568,7 +568,7 @@ function eo(e) {
     sectionName: a,
     application: n,
     location: l
-  })) : (0, i.jsx)(Y, z(q({}, p), {
+  })) : (0, i.jsx)(X, z(q({}, p), {
     sectionName: a,
     application: n,
     onClick: e => {

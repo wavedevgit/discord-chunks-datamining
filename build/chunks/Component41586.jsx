@@ -60,16 +60,16 @@ let O = Chunk647438.forwardRef(function(e, t) {
     null != n && O && (0, d.ZDy)(async () => e => (0, r.jsx)(C.Z, y(v({}, e), {
       guild: n
     })))
-  }, [n, O]), H = (0, u.e7)([p.Z], () => p.Z.getSearchStateByGuildId(n.id), [n.id], s()), w = (0, b.gm)(n.id), [N, S] = l.useState(H.query), Z = l.useCallback(e => {
+  }, [n, O]), H = (0, u.e7)([p.Z], () => p.Z.getSearchStateByGuildId(n.id), [n.id], s()), w = (0, b.gm)(n.id), [N, S] = l.useState(H.query), D = l.useCallback(e => {
     let t = e.trim();
     t.length > 0 && w(), (0, f.Dr)(n.id, {
       query: t
     })
-  }, [n.id, w]), D = l.useMemo(() => i()(Z, 300), [Z]), R = l.useCallback(e => {
-    S(e), D(e)
-  }, [D]), L = l.useCallback(() => {
-    S(""), Z("")
-  }, [Z]);
+  }, [n.id, w]), Z = l.useMemo(() => i()(D, 300), [D]), R = l.useCallback(e => {
+    S(e), Z(e)
+  }, [Z]), L = l.useCallback(() => {
+    S(""), D("")
+  }, [D]);
   return l.useImperativeHandle(t, () => ({
     resetSearchText() {
       S("")

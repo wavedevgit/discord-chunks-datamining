@@ -113,7 +113,7 @@ let X = {
   },
   Y = {};
 
-function J(e) {
+function q(e) {
   let {
     id: t
   } = e, [n, l] = r.useState(false);
@@ -135,7 +135,7 @@ function J(e) {
     children: ["Application Id: ", t, " ", n ? G.intl.string(G.t["t5VZ8/"]) : null]
   })
 }
-let q = Chunk647438.memo(function(e) {
+let J = Chunk647438.memo(function(e) {
     let {
       trackedGame: t
     } = e, n = (0, d.e7)([v.ZP], () => v.ZP.getGameOrTransformedSubgameForPID(t.pid)), r = (0, d.e7)([P.Z], () => P.Z.getGameForPID(t.pid)), l = (0, d.e7)([v.ZP], () => null == n ? null : v.ZP.getGameOverlayStatus(n));
@@ -160,7 +160,7 @@ let q = Chunk647438.memo(function(e) {
       }), null != t.applicationId && (0, a.jsx)(m.Text, {
         variant: "text-md/bold",
         color: "text-primary",
-        children: (0, a.jsx)(J, {
+        children: (0, a.jsx)(q, {
           id: t.applicationId
         })
       }), (0, a.jsxs)(m.Text, {
@@ -355,12 +355,12 @@ function en() {
     className: Chunk454741.panelGroup,
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk454741.panelHeader,
-      children: [(0, Chunk951288.jsx)(Chunk481060.XZJ, {
+      children: [(0, Chunk951288.jsx)(Chunk755721.$q, {
         value: module,
         onChange: () => void Chunk13245.Z.setRenderDebugMode(!Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.TrackFocusPIDs), Chunk837268.GO.TrackFocusPIDs),
         size: 18,
-        type: Chunk481060.XZJ.Types.INVERTED,
-        shape: Chunk481060.XZJ.Shapes.BOX,
+        type: Chunk755721.M0.INVERTED,
+        shape: Chunk755721.zV.BOX,
         children: (0, Chunk951288.jsx)(Chunk481060.Text, {
           tag: "span",
           variant: "text-md/normal",
@@ -524,12 +524,12 @@ let ea = Chunk647438.memo(function(e) {
     })
   }),
   ei = Chunk647438.memo(function() {
-    let [e, t] = Q(Chunk981631.Odu.CLICK_ZONE_DEBUG), [n, l] = Q(Chunk981631.Odu.PERFORMANCE_DEBUG), i = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.ClickZones)), s = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.WidgetAreas)), o = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.DisabledGPUBoost)), c = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.ForceGPUBoost)), u = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.OverlayRafManagerForceEnabled)), x = e => {
+    let [e, t] = Q(Chunk981631.Odu.CLICK_ZONE_DEBUG), [n, l] = Q(Chunk981631.Odu.PERFORMANCE_DEBUG), i = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.ClickZones)), s = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.WidgetAreas)), o = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.DisabledGPUBoost)), c = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.ForceGPUBoost)), x = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.OverlayRafManagerForceEnabled)), p = e => {
       h.Z.setRenderDebugMode(!C.ZP.hasRenderDebugMode(e), e)
-    }, [p, f] = Chunk647438.useState({});
+    }, [f, v] = Chunk647438.useState({});
     return Chunk647438.useEffect(() => {
       let e = setInterval(() => {
-        Chunk393238({})
+        Chunk594190({})
       }, 200);
       return () => clearInterval(module)
     }, []), (0, Chunk951288.jsxs)("div", {
@@ -538,12 +538,12 @@ let ea = Chunk647438.memo(function(e) {
         position: "left",
         text: "Enables a red border around click zones to help with debugging.",
         children: e => (0, a.jsx)("div", K(W({}, e), {
-          children: (0, a.jsx)(m.XZJ, {
+          children: (0, a.jsx)(u.$q, {
             value: i,
-            onChange: () => void x(g.GO.ClickZones),
+            onChange: () => void p(g.GO.ClickZones),
             size: 18,
-            type: m.XZJ.Types.INVERTED,
-            shape: m.XZJ.Shapes.BOX,
+            type: u.M0.INVERTED,
+            shape: u.zV.BOX,
             children: (0, a.jsx)(m.Text, {
               tag: "span",
               variant: "text-md/normal",
@@ -556,12 +556,12 @@ let ea = Chunk647438.memo(function(e) {
         position: "left",
         text: "Enables a border around any widgets that are rendered on screen that are pinned (even if they are hidden). Blue = pinned widgets, Gray = unpinned widgets",
         children: e => (0, a.jsx)("div", K(W({}, e), {
-          children: (0, a.jsx)(m.XZJ, {
+          children: (0, a.jsx)(u.$q, {
             value: s,
-            onChange: () => void x(g.GO.WidgetAreas),
+            onChange: () => void p(g.GO.WidgetAreas),
             size: 18,
-            type: m.XZJ.Types.INVERTED,
-            shape: m.XZJ.Shapes.BOX,
+            type: u.M0.INVERTED,
+            shape: u.zV.BOX,
             children: (0, a.jsx)(m.Text, {
               tag: "span",
               variant: "text-md/normal",
@@ -574,12 +574,12 @@ let ea = Chunk647438.memo(function(e) {
         position: "left",
         text: "Disables GPU Boost, which can help with performance when games compete for GPU resources.",
         children: e => (0, a.jsx)("div", K(W({}, e), {
-          children: (0, a.jsx)(m.XZJ, {
+          children: (0, a.jsx)(u.$q, {
             value: o,
-            onChange: () => void x(g.GO.DisabledGPUBoost),
+            onChange: () => void p(g.GO.DisabledGPUBoost),
             size: 18,
-            type: m.XZJ.Types.INVERTED,
-            shape: m.XZJ.Shapes.BOX,
+            type: u.M0.INVERTED,
+            shape: u.zV.BOX,
             children: (0, a.jsx)(m.Text, {
               tag: "span",
               variant: "text-md/normal",
@@ -592,13 +592,13 @@ let ea = Chunk647438.memo(function(e) {
         position: "left",
         text: "Forces GPU Boost, which can help with performance when games compete for GPU resources.",
         children: e => (0, a.jsx)("div", K(W({}, e), {
-          children: (0, a.jsx)(m.XZJ, {
+          children: (0, a.jsx)(u.$q, {
             value: c,
-            onChange: () => void x(g.GO.ForceGPUBoost),
+            onChange: () => void p(g.GO.ForceGPUBoost),
             size: 18,
             disabled: o,
-            type: m.XZJ.Types.INVERTED,
-            shape: m.XZJ.Shapes.BOX,
+            type: u.M0.INVERTED,
+            shape: u.zV.BOX,
             children: (0, a.jsx)(m.Text, {
               tag: "span",
               variant: "text-md/normal",
@@ -611,12 +611,12 @@ let ea = Chunk647438.memo(function(e) {
         position: "left",
         text: "Creates a widget that has a clickzone inside of it, which will show/hide every few seconds.",
         children: n => (0, a.jsx)("div", K(W({}, n), {
-          children: (0, a.jsx)(m.XZJ, {
+          children: (0, a.jsx)(u.$q, {
             value: null != e,
             onChange: () => t(),
             size: 18,
-            type: m.XZJ.Types.INVERTED,
-            shape: m.XZJ.Shapes.BOX,
+            type: u.M0.INVERTED,
+            shape: u.zV.BOX,
             children: (0, a.jsx)(m.Text, {
               tag: "span",
               variant: "text-md/normal",
@@ -629,12 +629,12 @@ let ea = Chunk647438.memo(function(e) {
         position: "left",
         text: "Creates a widget that shows the overlay's window performance metrics.",
         children: e => (0, a.jsx)("div", K(W({}, e), {
-          children: (0, a.jsx)(m.XZJ, {
+          children: (0, a.jsx)(u.$q, {
             value: null != n,
             onChange: () => l(),
             size: 18,
-            type: m.XZJ.Types.INVERTED,
-            shape: m.XZJ.Shapes.BOX,
+            type: u.M0.INVERTED,
+            shape: u.zV.BOX,
             children: (0, a.jsx)(m.Text, {
               tag: "span",
               variant: "text-md/normal",
@@ -643,12 +643,12 @@ let ea = Chunk647438.memo(function(e) {
             })
           })
         }))
-      }), (0, Chunk951288.jsx)(Chunk481060.XZJ, {
-        value: Chunk755721,
-        onChange: () => void Chunk765250(Chunk837268.GO.OverlayRafManagerForceEnabled),
+      }), (0, Chunk951288.jsx)(Chunk755721.$q, {
+        value: Chunk765250,
+        onChange: () => void Chunk593472(Chunk837268.GO.OverlayRafManagerForceEnabled),
         size: 18,
-        type: Chunk481060.XZJ.Types.INVERTED,
-        shape: Chunk481060.XZJ.Shapes.BOX,
+        type: Chunk755721.M0.INVERTED,
+        shape: Chunk755721.zV.BOX,
         children: (0, Chunk951288.jsxs)(Chunk481060.Text, {
           tag: "span",
           variant: "text-md/normal",
@@ -693,7 +693,7 @@ let ea = Chunk647438.memo(function(e) {
               variant: "text-sm/normal",
               color: "text-default",
               children: "No running games"
-            }), Object.values(e).map(e => (0, a.jsx)(q, {
+            }), Object.values(e).map(e => (0, a.jsx)(J, {
               trackedGame: e
             }, e.pid))]
           })

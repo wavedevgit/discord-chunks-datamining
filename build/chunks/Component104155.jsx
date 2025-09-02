@@ -40,9 +40,9 @@ function j(e) {
 function v(e) {
   let {
     guildId: t
-  } = e, [o, s] = r.useState(""), j = (0, i.e7)([m.Z], () => m.Z.getGuild(t)), v = (0, i.e7)([u.ZP], () => u.ZP.getChannels(t)), y = (0, i.e7)([d.Z], () => d.Z.getCategories(t)), O = (0, f.Fo)(t, y, v, o), Z = (0, i.e7)([h.Z], () => h.Z.canWithPartialContext(x.Plq.MANAGE_CHANNELS, {
+  } = e, [o, s] = r.useState(""), j = (0, i.e7)([m.Z], () => m.Z.getGuild(t)), v = (0, i.e7)([u.ZP], () => u.ZP.getChannels(t)), y = (0, i.e7)([d.Z], () => d.Z.getCategories(t)), O = (0, f.Fo)(t, y, v, o), N = (0, i.e7)([h.Z], () => h.Z.canWithPartialContext(x.Plq.MANAGE_CHANNELS, {
     guildId: t
-  })), N = (0, i.e7)([c.ZP], () => null != c.ZP.getCurrentSidebarChannelId(_.oC.CHANNEL_BROWSER)), I = r.useCallback(() => s(""), [s]), w = r.useCallback(() => {
+  })), Z = (0, i.e7)([c.ZP], () => null != c.ZP.getCurrentSidebarChannelId(_.oC.CHANNEL_BROWSER)), I = r.useCallback(() => s(""), [s]), w = r.useCallback(() => {
     (0, a.ZDy)(async () => {
       let {
         default: e
@@ -96,7 +96,7 @@ function v(e) {
         },
         onClear: I,
         placeholder: C.intl.string(C.t.s5MnmJ)
-      }), Z ? (0, l.jsx)(a.zxk, {
+      }), N ? (0, l.jsx)(a.zxk, {
         icon: a.qJs,
         onClick: w,
         text: C.intl.string(C.t.CumH4u)
@@ -106,7 +106,7 @@ function v(e) {
       channels: v,
       categories: O,
       guild: j,
-      hasSidebar: N
+      hasSidebar: Z
     })]
   })
 }

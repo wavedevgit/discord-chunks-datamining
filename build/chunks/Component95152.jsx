@@ -204,7 +204,7 @@ class R extends Chunk647438.Component {
                   }
                 })
               }) : null]
-            }), true !== Chunk647438 && (0, Chunk951288.jsx)(Chunk481060.XZJ, {
+            }), true !== Chunk647438 && (0, Chunk951288.jsx)(Chunk755721.$q, {
               value: Chunk120356,
               onChange: (e, t) => this.setState({
                 hasSpoiler: t

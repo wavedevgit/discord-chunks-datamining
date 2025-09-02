@@ -1,11 +1,11 @@
 /** Chunk was on 46746 **/
 /** chunk id: 567126, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Hu: () => Y,
+  Hu: () => J,
   jx: () => F,
   oA: () => H,
   ov: () => W,
-  se: () => J
+  se: () => Y
 }), require("./35282.js"), require("./388685.js"), require("./642613.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -136,13 +136,13 @@ function H(e) {
   let z = i.useCallback(e => {
       null !== e && (R.current = e, T(!e.isScrolledToTop()))
     }, []),
-    [V, J] = i.useState(true);
+    [V, Y] = i.useState(true);
   i.useEffect(() => {
     g.Z.hasPermission(M.Eu.SCREEN_RECORDING, {
       showAuthorizationError: false
-    }).then(J)
+    }).then(Y)
   }, []);
-  let Y = function(e) {
+  let J = function(e) {
     switch (e) {
       case c.vA.WINDOW:
         return H;
@@ -152,7 +152,7 @@ function H(e) {
         return S
     }
   }(Z);
-  if (null == Y) returnfalse === V ? (0, r.jsxs)(f.Text, {
+  if (null == J) returnfalse === V ? (0, r.jsxs)(f.Text, {
     className: G.errorMessage,
     variant: "text-md/normal",
     color: "text-danger",
@@ -163,7 +163,7 @@ function H(e) {
     align: h.Z.Align.CENTER,
     children: (0, r.jsx)(f.$jN, {})
   });
-  let X = Y.map(e => {
+  let X = J.map(e => {
     let {
       id: i
     } = e, l = (null == t ? true : t.id) === i;
@@ -288,7 +288,7 @@ function V(e) {
   })
 }
 
-function J(e) {
+function Y(e) {
   let {
     onSourceSelect: t
   } = e, [n, l] = i.useState([]), [o, c] = i.useState({}), d = i.useRef(new u.Xp);
@@ -401,7 +401,7 @@ function J(e) {
   })
 }
 
-function Y(e) {
+function J(e) {
   let {
     onSourceSelect: t,
     onCancel: n,

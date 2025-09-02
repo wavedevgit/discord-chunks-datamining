@@ -1,7 +1,7 @@
 /** Chunk was on 15076 **/
 /** chunk id: 610617, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => L
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -29,20 +29,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk226339 = require("./226339.js");
 
-function y(e) {
+function L(e) {
   let {
     guildId: t,
     onClose: n,
     isRedesign: l = false
-  } = e, a = (0, c.e7)([x.Z], () => x.Z.getGuild(t)), y = (0, c.e7)([v.default], () => v.default.getCurrentUser()), {
-    playSound: L,
+  } = e, a = (0, c.e7)([x.Z], () => x.Z.getGuild(t)), L = (0, c.e7)([p.default], () => p.default.getCurrentUser()), {
+    playSound: y,
     isPlaying: T,
     soundpackPlaying: P
-  } = (0, S.Z)(), M = (0, N.OR)(t), w = j.ZP.canUseCustomNotificationSounds(y), I = w ? M : C.YC.CLASSIC, A = s.useRef(0), G = s.useRef(false), [R, U] = s.useState(false), D = (0, C.LB)(), k = s.useCallback(() => {
+  } = (0, S.Z)(), M = (0, N.OR)(t), w = j.ZP.canUseCustomNotificationSounds(L), I = w ? M : C.YC.CLASSIC, A = s.useRef(0), G = s.useRef(false), [R, U] = s.useState(false), D = (0, C.LB)(), k = s.useCallback(() => {
     clearTimeout(G.current), A.current += 1, A.current > 10 && (U(true), h.K.set(C.CZ, true)), G.current = setTimeout(() => {
       A.current = 0
     }, 1e3)
-  }, []), [W, V] = o().partition(D, e => !e.requirePremium || e.requirePremium && w), X = W.map(e => {
+  }, []), [V, W] = o().partition(D, e => !e.requirePremium || e.requirePremium && w), z = V.map(e => {
     var t;
     return {
       name: e.label,
@@ -53,13 +53,13 @@ function y(e) {
         [_.optionPlaying]: t === P && T
       }))
     }
-  }), [J, Y] = (0, m.US)([u.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE]), B = J === u.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE;
+  }), [Y, B] = (0, m.US)([u.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE]), F = Y === u.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE;
   s.useEffect(() => () => {
-    Y(E.L.AUTO_DISMISS)
-  }, [Y]);
-  let F = j.ZP.canUseCustomNotificationSounds(y),
-    z = (0, c.e7)([p.ZP], () => p.ZP.isMuted(t), [t]);
-  return null == y ? null : (0, i.jsxs)("div", {
+    B(E.L.AUTO_DISMISS)
+  }, [B]);
+  let q = j.ZP.canUseCustomNotificationSounds(L),
+    H = (0, c.e7)([v.ZP], () => v.ZP.isMuted(t), [t]);
+  return null == L ? null : (0, i.jsxs)("div", {
     children: [(0, i.jsxs)("div", {
       className: _.header,
       children: [(0, i.jsx)(g.X6q, {
@@ -73,7 +73,7 @@ function y(e) {
           color: "currentColor",
           className: _.nitroWheel
         })
-      }), B && (0, i.jsx)(g.IGR, {
+      }), F && (0, i.jsx)(g.IGR, {
         className: _.newBadge,
         text: Z.intl.string(Z.t.y2b7CA)
       })]
@@ -87,7 +87,7 @@ function y(e) {
           children: null == a ? true : a.name
         }, t)
       })
-    }), z && (0, i.jsxs)("div", {
+    }), H && (0, i.jsxs)("div", {
       className: _.warningContainer,
       children: [(0, i.jsx)(g.Mgn, {
         size: "custom",
@@ -104,19 +104,19 @@ function y(e) {
       title: Z.intl.string(Z.t.xxvoAg),
       children: (0, i.jsxs)("div", {
         className: r()({
-          [_.options]: !F
+          [_.options]: !q
         }),
         children: [(0, i.jsx)(g.FXm, {
           className: r()({
-            [_.options]: F
+            [_.options]: q
           }),
           value: null != I ? I : C.YC.CLASSIC,
           onChange: e => {
-            L(e.value), w && (0, f.t)(t, I, e.value, "notificationSettings")
+            y(e.value), w && (0, f.t)(t, I, e.value, "notificationSettings")
           },
-          options: X,
+          options: z,
           radioItemClassName: _.option
-        }), V.map((e, t) => (0, i.jsx)(b.Z, {
+        }), W.map((e, t) => (0, i.jsx)(b.Z, {
           className: _.playableOption,
           label: e.label,
           description: e.description,
@@ -124,7 +124,7 @@ function y(e) {
           location: "notificationSettings"
         }, "sound_option_".concat(t)))]
       })
-    }), !F && (0, i.jsx)(O.Z, {
+    }), !q && (0, i.jsx)(O.Z, {
       onClose: n
     })]
   })

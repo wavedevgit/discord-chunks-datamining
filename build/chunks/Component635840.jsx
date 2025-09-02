@@ -6,8 +6,8 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk103866 = require("./103866.jsx"),
-  Chunk213734 = require("./213734.jsx"),
   Chunk37148 = require("./37148.jsx"),
+  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk153867 = require("./153867.js"),
   Chunk626135 = require("./626135.js"),
@@ -36,7 +36,7 @@ function I(t) {
     application: i,
     subscriptionId: e,
     onClose: I
-  } = t, [S, E] = s.useState(false), [x, A] = s.useState(null), [O, T] = s.useState(""), p = s.useCallback(() => {
+  } = t, [S, E] = s.useState(false), [x, A] = s.useState(null), [O, T] = s.useState(""), h = s.useCallback(() => {
     null != x && (o.default.track(C.rMx.PREMIUM_APP_CANCELLATION_SURVEY_SUBMITTED, {
       answer: x,
       application_id: i.id,
@@ -49,7 +49,7 @@ function I(t) {
       disableApplicationSubscriptionCancellationSurvey: S
     })
   }, [S]), (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)(r.x, {
+    children: [(0, n.jsx)(l.x, {
       title: _.intl.string(_.t.zPxMdX),
       subtitle: _.intl.string(_.t.QJGdBw)
     }), (0, n.jsxs)(a.f, {
@@ -79,11 +79,11 @@ function I(t) {
           onChange: T
         })
       })]
-    }), (0, n.jsx)(l.m, {
+    }), (0, n.jsx)(c.mzw, {
       children: (0, n.jsxs)("div", {
         className: u.footer,
-        children: [(0, n.jsx)(c.XZJ, {
-          type: c.XZJ.Types.INVERTED,
+        children: [(0, n.jsx)(r.$q, {
+          type: r.M0.INVERTED,
           value: S,
           onChange: (t, i) => E(i),
           size: 20,
@@ -95,7 +95,7 @@ function I(t) {
         }), (0, n.jsx)(c.zxk, {
           variant: "primary",
           text: _.intl.string(_.t.geKm7u),
-          onClick: p,
+          onClick: h,
           disabled: null == x
         })]
       })

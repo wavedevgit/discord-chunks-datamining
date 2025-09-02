@@ -50,7 +50,7 @@ function j(e) {
       })]
     }), (0, l.jsx)(o.hzk, {
       className: C.modalContent,
-      children: (0, l.jsx)(p, {
+      children: (0, l.jsx)(_, {
         guildId: u,
         hideMutedChannels: x,
         parentId: i
@@ -65,8 +65,8 @@ function j(e) {
         onClick: t,
         children: g.intl.string(g.t["/g10LC"])
       }), (0, l.jsx)("div", {
-        children: (0, l.jsx)(o.XZJ, {
-          type: o.XZJ.Types.INVERTED,
+        children: (0, l.jsx)(r.$q, {
+          type: r.M0.INVERTED,
           value: x,
           onChange: (e, n) => f(n),
           children: (0, l.jsx)(o.Text, {
@@ -80,7 +80,7 @@ function j(e) {
   })
 }
 
-function p(e) {
+function _(e) {
   let {
     guildId: n,
     hideMutedChannels: t,
@@ -93,7 +93,7 @@ function p(e) {
     })
   }, [n]), (0, l.jsx)("div", {
     ref: s,
-    children: c.map(e => e.type === i.d.GUILD_CATEGORY ? (0, l.jsx)(_, {
+    children: c.map(e => e.type === i.d.GUILD_CATEGORY ? (0, l.jsx)(p, {
       name: e.name
     }, e.id) : (0, l.jsx)(I, {
       channel: e,
@@ -103,7 +103,7 @@ function p(e) {
   })
 }
 
-function _(e) {
+function p(e) {
   let {
     name: n
   } = e;

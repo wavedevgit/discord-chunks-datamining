@@ -115,7 +115,7 @@ function V(e) {
   })
 }
 
-function J(e) {
+function Y(e) {
   let {
     text: t
   } = e;
@@ -136,23 +136,23 @@ function J(e) {
   })
 }
 
-function Y(e) {
+function J(e) {
   let {
     guildId: t
   } = e, n = (0, o.e7)([j.Z], () => {
     var e;
     return null != (e = j.Z.getMemberCount(t)) ? e : 0
-  }), l = g.eo.useSetting(), a = i.useCallback((e, t) => {
+  }), l = g.eo.useSetting(), d = i.useCallback((e, t) => {
     g.eo.updateSetting(t), w.default.track(G.rMx.NOTIFY_STREAM_SETTING_UPDATE, {
       value: t
     })
   }, []);
   return n >= 2 && n <= B.tB ? (0, r.jsx)(c.xJW, {
     className: s()(H.modalContent, F.checkboxRow),
-    children: (0, r.jsx)(c.XZJ, {
+    children: (0, r.jsx)(a.$q, {
       value: !!l,
-      type: c.XZJ.Types.INVERTED,
-      onChange: a,
+      type: a.M0.INVERTED,
+      onChange: d,
       children: (0, r.jsx)(c.Text, {
         variant: "text-sm/normal",
         children: W.intl.string(W.t.Cef4t7)
@@ -166,18 +166,18 @@ function X(e) {
     enabled: t,
     onChange: n,
     screen: l
-  } = e, a = i.useCallback((e, t) => {
+  } = e, d = i.useCallback((e, t) => {
     n(t)
-  }, [n]), d = (0, o.e7)([C.Z], () => C.Z.getUseSystemScreensharePicker() && (0, N.isLinux)());
+  }, [n]), u = (0, o.e7)([C.Z], () => C.Z.getUseSystemScreensharePicker() && (0, N.isLinux)());
   return (0, r.jsx)(c.xJW, {
     className: s()(H.modalContent, F.checkboxRow),
-    children: (0, r.jsx)(c.XZJ, {
+    children: (0, r.jsx)(a.$q, {
       value: t,
-      type: c.XZJ.Types.INVERTED,
-      onChange: a,
+      type: a.M0.INVERTED,
+      onChange: d,
       children: (0, r.jsx)(c.Text, {
         variant: "text-sm/normal",
-        children: l || d ? W.intl.string(W.t["5Adrtb"]) : W.intl.string(W.t.gRpbRE)
+        children: l || u ? W.intl.string(W.t["5Adrtb"]) : W.intl.string(W.t.gRpbRE)
       })
     })
   })
@@ -192,9 +192,9 @@ function K(e) {
   }, [n]);
   return (0, r.jsx)(c.xJW, {
     className: s()(H.modalContent, F.checkboxRow),
-    children: (0, r.jsx)(c.XZJ, {
+    children: (0, r.jsx)(a.$q, {
       value: t,
-      type: c.XZJ.Types.INVERTED,
+      type: a.M0.INVERTED,
       onChange: l,
       children: (0, r.jsx)(c.Text, {
         variant: "text-sm/normal",
@@ -245,7 +245,7 @@ function q(e) {
         sourceChanged: c,
         onChangeSource: N,
         selectedSource: t
-      }), null != ee ? (0, r.jsx)(J, {
+      }), null != ee ? (0, r.jsx)(Y, {
         text: ee
       }) : null, null != t && null == ee ? (0, r.jsx)(X, {
         enabled: x,
@@ -261,11 +261,11 @@ function q(e) {
       guildId: u,
       selectedChannelId: l,
       onChangeSelectedChannelId: Z
-    }), null != u && en && er ? (0, r.jsx)(Y, {
+    }), null != u && en && er ? (0, r.jsx)(J, {
       guildId: u
-    }) : null, q ? (0, r.jsx)(J, {
+    }) : null, q ? (0, r.jsx)(Y, {
       text: W.intl.string(W.t.q65tS0)
-    }) : null, Q ? (0, r.jsx)(J, {
+    }) : null, Q ? (0, r.jsx)(Y, {
       text: W.intl.format(W.t.RrLvub, {
         helpCenterLink: I.Z.getArticleURL(G.BhN.NVIDIA_DRIVER_ISSUES)
       })

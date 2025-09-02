@@ -1,12 +1,13 @@
 /** Chunk was on 85668 **/
 /** chunk id: 720553, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => x
+  default: () => h
 }), require("./704826.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk990547 = require("./990547.js"),
   Chunk82659 = require("./82659.jsx"),
+  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk213609 = require("./213609.js"),
   Chunk626135 = require("./626135.js"),
@@ -15,88 +16,88 @@ var Chunk990547 = require("./990547.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk140080 = require("./140080.js");
 
-function x(t) {
+function h(t) {
   let {
     url: e,
     trustUrl: n,
-    isProtocol: x,
+    isProtocol: h,
     onConfirm: p,
-    onCancel: h,
-    onClose: C,
-    transitionState: _
+    onCancel: C,
+    onClose: _,
+    transitionState: f
   } = t, {
-    protocol: f,
-    authorityPrefix: k,
-    hostname: M,
-    theRestOfTheUrl: g,
-    shouldTrustUrl: b,
-    setShouldTrustUrl: v,
-    handleConfirm: D,
-    handleCancel: L
-  } = (0, c.X)({
+    protocol: k,
+    authorityPrefix: M,
+    hostname: g,
+    theRestOfTheUrl: b,
+    shouldTrustUrl: v,
+    setShouldTrustUrl: D,
+    handleConfirm: L,
+    handleCancel: A
+  } = (0, d.X)({
     url: e,
     trustUrl: n,
     onConfirm: p,
-    onCancel: h,
-    onClose: C
+    onCancel: C,
+    onClose: _
   });
-  return (0, s.Z)({
+  return (0, o.Z)({
     type: l.ImpressionTypes.MODAL,
     name: l.ImpressionNames.MASKED_LINK_MODAL
   }), (0, a.jsxs)(r.Modal, {
     size: "md",
-    transitionState: _,
-    onClose: C,
-    title: u.intl.string(u.t["3w1QGh"]),
-    subtitle: x ? u.intl.format(u.t.aCYv19, {}) : u.intl.string(u.t.soRxRU),
+    transitionState: f,
+    onClose: _,
+    title: m.intl.string(m.t["3w1QGh"]),
+    subtitle: h ? m.intl.format(m.t.aCYv19, {}) : m.intl.string(m.t.soRxRU),
     actions: [{
-      text: u.intl.string(u.t["/g10LC"]),
+      text: m.intl.string(m.t["/g10LC"]),
       onClick: () => {
-        L(), o.default.track(d.rMx.MASKED_LINK_MODAL_CLICKED, {
-          is_trust_url_selected: b,
+        A(), c.default.track(u.rMx.MASKED_LINK_MODAL_CLICKED, {
+          is_trust_url_selected: v,
           action_type: "cancel"
         })
       },
       variant: "secondary"
     }, {
-      text: x ? u.intl.string(u.t.COq6kp) : u.intl.string(u.t.NcJfJC),
+      text: h ? m.intl.string(m.t.COq6kp) : m.intl.string(m.t.NcJfJC),
       onClick: () => {
-        D(), o.default.track(d.rMx.MASKED_LINK_MODAL_CLICKED, {
-          is_trust_url_selected: b,
+        L(), c.default.track(u.rMx.MASKED_LINK_MODAL_CLICKED, {
+          is_trust_url_selected: v,
           action_type: "confirm"
         })
       },
       variant: "primary"
     }],
-    children: [(0, a.jsxs)(i.Ttm, {
-      className: m.linkCalloutContainer,
-      children: [(0, a.jsxs)(i.Text, {
+    children: [(0, a.jsxs)(s.Ttm, {
+      className: x.linkCalloutContainer,
+      children: [(0, a.jsxs)(s.Text, {
         tag: "span",
-        variant: x ? "text-md/semibold" : "text-md/normal",
-        color: x ? "text-default" : "text-muted",
-        children: [f, k]
-      }), (0, a.jsx)(i.Text, {
+        variant: h ? "text-md/semibold" : "text-md/normal",
+        color: h ? "text-default" : "text-muted",
+        children: [k, M]
+      }), (0, a.jsx)(s.Text, {
         tag: "span",
-        variant: x ? "text-md/normal" : "text-md/semibold",
-        color: x ? "text-muted" : "text-default",
-        children: M
-      }), (0, a.jsx)(i.Text, {
+        variant: h ? "text-md/normal" : "text-md/semibold",
+        color: h ? "text-muted" : "text-default",
+        children: g
+      }), (0, a.jsx)(s.Text, {
         tag: "span",
         variant: "text-md/normal",
         color: "text-muted",
-        children: g
+        children: b
       })]
-    }), (0, a.jsx)(i.XZJ, {
-      className: m.checkboxMana,
-      type: i.XZJ.Types.INVERTED,
-      value: b,
-      onChange: (t, e) => v(e),
-      children: (0, a.jsx)(i.Text, {
+    }), (0, a.jsx)(i.$q, {
+      className: x.checkboxMana,
+      type: i.M0.INVERTED,
+      value: v,
+      onChange: (t, e) => D(e),
+      children: (0, a.jsx)(s.Text, {
         variant: "text-sm/normal",
-        children: x ? u.intl.format(u.t["haA+X1"], {
-          protocol: f.replace(":", "")
-        }) : u.intl.format(u.t.ZgXDsL, {
-          domain: M
+        children: h ? m.intl.format(m.t["haA+X1"], {
+          protocol: k.replace(":", "")
+        }) : m.intl.format(m.t.ZgXDsL, {
+          domain: g
         })
       })
     })]

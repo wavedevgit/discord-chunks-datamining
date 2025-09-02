@@ -46,14 +46,14 @@ function j(e) {
   let A = l.useRef(0),
     [I, U] = l.useState([]),
     H = I.length,
-    F = H >= 5;
+    q = H >= 5;
   l.useEffect(() => {
     if ("" === D) {
       var e;
       null == (e = z.current) || e.focus()
     }
   }, [D]);
-  let q = l.useCallback(() => {
+  let F = l.useCallback(() => {
       R("")
     }, [R]),
     z = l.useRef(null),
@@ -67,7 +67,7 @@ function j(e) {
     W = l.useCallback(e => {
       R(e), V(e)
     }, [R, V]),
-    X = l.useCallback(e => {
+    Q = l.useCallback(e => {
       U(t => {
         let n = t.findIndex(t => {
           let {
@@ -76,12 +76,12 @@ function j(e) {
           } = t;
           return n === e.type && r === e.id
         });
-        if (false === n) return F ? t : (R(""), A.current += 1, [e, ...t]);
+        if (false === n) return q ? t : (R(""), A.current += 1, [e, ...t]);
         let r = [...t];
         return r.splice(n, 1), A.current += 1, r
       })
-    }, [F]),
-    J = l.useCallback(async e => {
+    }, [q]),
+    X = l.useCallback(async e => {
       if (null == L) return;
       let t = v.intl.formatToMarkdownString(v.t.dZJpdH, {
           applicationName: L.name,
@@ -97,7 +97,7 @@ function j(e) {
         applicationName: L.name
       }), s.ToastType.SUCCESS)), P(true), O()
     }, [Z, M, O, P, L]),
-    Q = l.useCallback(() => {
+    J = l.useCallback(() => {
       (0, m.JG)(M, () => {
         _(), (0, s.showToast)((0, s.createToast)(v.intl.string(v.t["t5VZ8/"]), s.ToastType.SUCCESS))
       })
@@ -106,9 +106,9 @@ function j(e) {
       paddingBottom: 8,
       paddingTop: 8,
       rowData: G,
-      handleToggleDestination: X,
+      handleToggleDestination: Q,
       selectedDestinations: I,
-      disableSelection: F
+      disableSelection: q
     }) : (0, r.jsxs)("div", {
       className: S.noResults,
       children: [(0, r.jsx)("img", {
@@ -131,7 +131,7 @@ function j(e) {
       ref: z,
       query: D,
       onChange: W,
-      onClear: q,
+      onClear: F,
       placeholder: v.intl.string(v.t["5h0QOD"]),
       "aria-label": v.intl.string(v.t["5h0QOD"]),
       autoFocus: true
@@ -139,11 +139,11 @@ function j(e) {
     actions: [{
       text: v.intl.string(v.t.WqhZsr),
       variant: "secondary",
-      onClick: Q
+      onClick: J
     }, {
       text: v.intl.string(v.t.TXNS7e),
       variant: "primary",
-      onClick: () => J(I),
+      onClick: () => X(I),
       loading: N,
       disabled: !(H > 0)
     }],

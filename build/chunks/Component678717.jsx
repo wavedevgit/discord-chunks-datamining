@@ -149,12 +149,12 @@ function eu(e) {
       id: "quick_switcher",
       name: "Quick Switcher",
       group: el.v0.USERS,
-      render: () => (0, a.jsx)(J.Z, {})
+      render: () => (0, a.jsx)(q.Z, {})
     })), e.push({
       id: "rive",
       name: "Rive",
       group: el.v0.UI,
-      render: () => (0, a.jsx)(q.Z, {})
+      render: () => (0, a.jsx)(J.Z, {})
     }), e.push({
       id: "intl",
       name: "Intl",

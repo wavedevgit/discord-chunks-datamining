@@ -256,7 +256,7 @@ function B(e) {
     isTemporaryInviteAllowed: k,
     setError: B,
     analyticsLocation: F
-  } = e, [G, z] = i.useState(false), [H, q] = i.useState(false), W = i.useRef(null), [Y] = (0, d.Wu)([_.Z], () => [_.Z.hideInstantInvites]), X = (0, x.Dt)(), K = (0, x.Dt)(), J = (0, x.Dt)(), Q = i.useMemo(() => f && null != r.vanityURLCode ? (0, O.Z)(r.vanityURLCode, false) : null, [r, f]), $ = i.useCallback(async () => {
+  } = e, [G, z] = i.useState(false), [H, q] = i.useState(false), W = i.useRef(null), [Y] = (0, d.Wu)([_.Z], () => [_.Z.hideInstantInvites]), K = (0, x.Dt)(), X = (0, x.Dt)(), Q = (0, x.Dt)(), J = i.useMemo(() => f && null != r.vanityURLCode ? (0, O.Z)(r.vanityURLCode, false) : null, [r, f]), $ = i.useCallback(async () => {
     var e, t;
     if (N) return;
     null !== W.current && clearTimeout(W.current);
@@ -386,7 +386,7 @@ function B(e) {
           })]
         })]
       }), M && (0, l.jsxs)(V, {
-        htmlFor: X,
+        htmlFor: K,
         children: [(0, l.jsxs)("div", {
           className: Z.advancedOptionContent,
           children: [(0, l.jsx)(g.X6q, {
@@ -401,12 +401,12 @@ function B(e) {
             }))
           })]
         }), (0, l.jsx)(g.rsf, {
-          id: X,
+          id: K,
           checked: S.flags === u.$.IS_APPLICATION_BYPASS,
           onChange: () => en(u.$.IS_APPLICATION_BYPASS)
         })]
       }), D && (0, l.jsxs)(V, {
-        htmlFor: K,
+        htmlFor: X,
         children: [(0, l.jsxs)("div", {
           className: Z.advancedOptionContent,
           children: [(0, l.jsx)(g.X6q, {
@@ -421,12 +421,12 @@ function B(e) {
             }))
           })]
         }), (0, l.jsx)(g.rsf, {
-          id: K,
+          id: X,
           checked: S.flags === u.$.IS_GUEST_INVITE,
           onChange: () => en(u.$.IS_GUEST_INVITE)
         })]
       }), k && (0, l.jsxs)(V, {
-        htmlFor: J,
+        htmlFor: Q,
         children: [(0, l.jsxs)("div", {
           className: Z.advancedOptionContent,
           children: [(0, l.jsx)(g.X6q, {
@@ -441,7 +441,7 @@ function B(e) {
             }))
           })]
         }), (0, l.jsx)(g.rsf, {
-          id: J,
+          id: Q,
           checked: !!S.temporary,
           onChange: e => el(e)
         })]
@@ -450,8 +450,8 @@ function B(e) {
       className: Z.buttonRow,
       children: [(0, l.jsx)(g.ua7, {
         position: "top",
-        text: Q,
-        shouldShow: null !== Q && !Y,
+        text: J,
+        shouldShow: null !== J && !Y,
         children: e => (0, l.jsx)(h.zx, A(w({
           className: Z.button,
           innerClassName: Z.buttonInner,

@@ -2,7 +2,7 @@
 /** chunk id: 36192, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => A
 }), require("./388685.js"), require("./953529.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -11,6 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
   Chunk544891 = require("./544891.js"),
   Chunk704215 = require("./704215.js"),
+  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk230711 = require("./230711.js"),
   Chunk497321 = require("./497321.jsx"),
@@ -27,31 +28,31 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk844642 = require("./844642.js");
 
-function S() {
+function A() {
   let e, {
       currentSession: t,
       otherSessions: n
     } = (0, Chunk136097.h)(),
     a = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.hidePersonalInformation),
     o = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
-    [d, _] = Chunk647438.useState(false);
+    [u, f] = Chunk647438.useState(false);
   Chunk647438.useEffect(() => {
     (0, Chunk266454.Q3)(Chunk704215.z.AUTH_SESSIONS_NEW, {
       dismissAction: Chunk921944.L.AUTO
     }), (0, Chunk43015.fw)();
-    let e = setTimeout(() => Chunk100527(true), 500);
+    let e = setTimeout(() => Chunk230711(true), 500);
     return () => {
       clearTimeout(module), (0, Chunk43015.$Z)()
     }
   }, []);
-  let b = () => {
+  let p = () => {
       Chunk544891.tn.post({
         url: Chunk981631.ANM.AUTH_SESSION_NOTIFICATIONS_DEBUG,
         rejectWithError: true
       })
     },
-    [y, S] = Chunk647438.useState(new Set);
-  return Chunk120356 ? (0, Chunk951288.jsx)(Chunk497321.Z, {}) : (e = null == exports && 0 === require.length ? Chunk230711 ? (0, Chunk951288.jsx)("div", {
+    [y, O] = Chunk647438.useState(new Set);
+  return Chunk120356 ? (0, Chunk951288.jsx)(Chunk497321.Z, {}) : (e = null == exports && 0 === require.length ? Chunk755721 ? (0, Chunk951288.jsx)("div", {
     className: Chunk844642.loading,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   }) : null : (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
@@ -61,7 +62,7 @@ function S() {
         tag: Chunk481060.RB0.H5,
         title: Chunk388032.intl.string(Chunk388032.t.LLS19v),
         titleClassName: Chunk844642.groupTitle,
-        children: null != exports ? (0, Chunk951288.jsx)(A, {
+        children: null != exports ? (0, Chunk951288.jsx)(C, {
           session: exports,
           current: true
         }) : null
@@ -70,19 +71,19 @@ function S() {
         title: Chunk388032.intl.string(Chunk388032.t.xx1MWV),
         titleClassName: Chunk844642.groupTitle,
         className: Chunk844642.otherSessions,
-        children: [require.map(e => (0, r.jsx)(A, {
+        children: [require.map(e => (0, r.jsx)(C, {
           session: e,
           useChecks: y.size > 0,
           checked: y.has(e.id_hash),
           setChecked: t => {
             let n = new Set(y);
-            t ? n.add(e.id_hash) : n.delete(e.id_hash), S(n)
+            t ? n.add(e.id_hash) : n.delete(e.id_hash), O(n)
           }
-        }, e.id_hash)), (null == o ? true : o.mfaEnabled) ? null : (0, Chunk951288.jsx)(C, {})]
+        }, e.id_hash)), (null == o ? true : o.mfaEnabled) ? null : (0, Chunk951288.jsx)(N, {})]
       })]
     }), require.length > 0 ? (0, Chunk951288.jsxs)(Chunk481060.hjN, {
       tag: Chunk481060.RB0.H5,
-      title: Chunk823379.size > 0 ? Chunk388032.intl.string(Chunk388032.t.mMEmRE) : Chunk388032.intl.string(Chunk388032.t.Vij32N),
+      title: Chunk460562.size > 0 ? Chunk388032.intl.string(Chunk388032.t.mMEmRE) : Chunk388032.intl.string(Chunk388032.t.Vij32N),
       children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.geA.DESCRIPTION,
         children: Chunk388032.intl.string(Chunk388032.t.OTXyaW)
@@ -92,11 +93,11 @@ function S() {
         children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "critical-secondary",
           size: "sm",
-          text: Chunk823379.size > 0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t["83CPLi"], {
-            count: Chunk823379.size
+          text: Chunk460562.size > 0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t["83CPLi"], {
+            count: Chunk460562.size
           }) : Chunk388032.intl.string(Chunk388032.t.cLmmeX),
           onClick: () => {
-            Chunk823379.size > 0 ? (0, Chunk43015.L$)(Array.from(Chunk823379)) : (0, Chunk43015.L$)(require.map(e => e.id_hash))
+            Chunk460562.size > 0 ? (0, Chunk43015.L$)(Array.from(Chunk460562)) : (0, Chunk43015.L$)(require.map(e => e.id_hash))
           }
         })
       })]
@@ -126,11 +127,11 @@ function S() {
             onMouseEnter: t,
             onMouseLeave: n
           } = e;
-          return (0, r.jsx)(u.zxk, {
+          return (0, r.jsx)(d.zxk, {
             variant: "secondary",
             size: "sm",
             text: "Trigger Suspicious Sessions Notification",
-            onClick: b,
+            onClick: p,
             onMouseEnter: t,
             onMouseLeave: n
           })
@@ -140,68 +141,68 @@ function S() {
   }))
 }
 
-function A(e) {
+function C(e) {
   var t, n, i, a, s;
   let {
     session: l,
     current: c,
-    setChecked: d,
-    checked: f,
-    useChecks: _
-  } = e, m = null != (s = null == (t = l.client_info) ? true : t.location) ? s : null == (n = l.client_info) ? true : n.ip, g = null == (i = l.client_info) ? true : i.platform, {
-    text: E,
-    icon: b
-  } = N(null == (a = l.client_info) ? true : a.os), O = c ? null : (0, h.p)(l.approx_last_used_time), v = [E, g].filter(y.lm), S = [m, O].filter(y.lm);
+    setChecked: f,
+    checked: _,
+    useChecks: p
+  } = e, g = null != (s = null == (t = l.client_info) ? true : t.location) ? s : null == (n = l.client_info) ? true : n.ip, E = null == (i = l.client_info) ? true : i.platform, {
+    text: b,
+    icon: y
+  } = R(null == (a = l.client_info) ? true : a.os), v = c ? null : (0, m.p)(l.approx_last_used_time), I = [b, E].filter(O.lm), A = [g, v].filter(O.lm);
   return (0, r.jsxs)("div", {
-    className: o()(T.session, c ? T.currentSession : null),
+    className: o()(S.session, c ? S.currentSession : null),
     children: [(0, r.jsx)("div", {
-      className: T.sessionIcon,
-      children: (0, r.jsx)(b, {
+      className: S.sessionIcon,
+      children: (0, r.jsx)(y, {
         size: "md",
         color: "currentColor"
       })
     }), (0, r.jsxs)("div", {
-      className: T.sessionInfo,
-      children: [(0, r.jsxs)(u.Text, {
+      className: S.sessionInfo,
+      children: [(0, r.jsxs)(d.Text, {
         variant: "eyebrow",
-        className: T.sessionInfoRow,
+        className: S.sessionInfoRow,
         children: [(0, r.jsx)("span", {
-          children: v[0]
-        }), v.length > 1 && (0, r.jsxs)(r.Fragment, {
+          children: I[0]
+        }), I.length > 1 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("span", {
             children: "\xb7"
           }), (0, r.jsx)("span", {
-            children: v[1]
+            children: I[1]
           })]
         })]
-      }), (0, r.jsxs)(u.Text, {
+      }), (0, r.jsxs)(d.Text, {
         variant: "text-sm/medium",
-        className: T.sessionInfoRow,
+        className: S.sessionInfoRow,
         children: [(0, r.jsx)("span", {
-          children: S[0]
-        }), S.length > 1 && (0, r.jsxs)(r.Fragment, {
+          children: A[0]
+        }), A.length > 1 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("span", {
             children: "\xb7"
           }), (0, r.jsx)("span", {
-            children: S[1]
+            children: A[1]
           })]
         })]
       })]
-    }), c ? null : _ ? (0, r.jsx)("div", {
-      className: T.sessionCheckbox,
-      children: (0, r.jsx)(u.XZJ, {
+    }), c ? null : p ? (0, r.jsx)("div", {
+      className: S.sessionCheckbox,
+      children: (0, r.jsx)(u.$q, {
         onChange: (e, t) => {
-          null == d || d(t)
+          null == f || f(t)
         },
-        value: f
+        value: _
       })
-    }) : (0, r.jsx)(u.P3F, {
-      className: T.sessionMoreButton,
+    }) : (0, r.jsx)(d.P3F, {
+      className: S.sessionMoreButton,
       onClick: e => {
-        e.shiftKey ? null == d || d(true) : (0, p.L$)(l.id_hash)
+        e.shiftKey ? null == f || f(true) : (0, h.L$)(l.id_hash)
       },
-      "aria-label": I.intl.string(I.t.E4MJNj),
-      children: (0, r.jsx)(u.Dio, {
+      "aria-label": T.intl.string(T.t.E4MJNj),
+      children: (0, r.jsx)(d.Dio, {
         size: "md",
         color: "currentColor"
       })
@@ -209,7 +210,7 @@ function A(e) {
   }, l.id_hash)
 }
 
-function C() {
+function N() {
   return (0, Chunk951288.jsxs)("div", {
     className: o()(Chunk844642.session, Chunk844642.legacySession),
     children: [(0, Chunk951288.jsx)("div", {
@@ -243,22 +244,22 @@ function C() {
   })
 }
 
-function N(e) {
+function R(e) {
   switch (null == e ? true : e.toLowerCase().trim()) {
     case null:
     case true:
     case "":
       return {
-        text: I.intl.string(I.t.cDHCNT), icon: u.pzj
+        text: T.intl.string(T.t.cDHCNT), icon: d.pzj
       };
     case "ios":
     case "android":
       return {
-        text: e, icon: u.AtH
+        text: e, icon: d.AtH
       };
     default:
       return {
-        text: e, icon: u.pzj
+        text: e, icon: d.pzj
       }
   }
 }

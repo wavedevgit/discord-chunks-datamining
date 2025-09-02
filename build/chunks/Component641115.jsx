@@ -163,15 +163,15 @@ function k(e) {
     location: G
   } = (0, m.O)(), U = (0, h.Zq)({
     autoTrackExposure: false
-  }), W = (0, g.B4)(), F = !B && !U, [H, z] = i.useState(false), V = M ? y.z8 : y.WC, J = T(P({}, G), {
+  }), W = (0, g.B4)(), F = !B && !U, [H, z] = i.useState(false), V = M ? y.z8 : y.WC, Y = T(P({}, G), {
     section: O.jXE.STREAM_SETTINGS
-  }), Y = (0, r.jsx)(d.hE, {
+  }), J = (0, r.jsx)(d.hE, {
     buttons: V.map(e => A({
       type: e,
       selected: e.value === l,
       needsPremium: !(0, C.Z)(n, e.value, s, D, k, L),
       needsDemo: W && e.value !== y.LY.RESOLUTION_720,
-      analyticsLocation: J,
+      analyticsLocation: Y,
       onClick: () => o(e.value),
       onClose: t,
       setIsHovering: z
@@ -182,7 +182,7 @@ function k(e) {
       selected: e.value === s,
       needsPremium: !(0, C.Z)(n, l, e.value, D, k, L),
       needsDemo: W && e.value === y.ws.FPS_60,
-      analyticsLocation: J,
+      analyticsLocation: Y,
       onClick: () => x(e.value),
       onClose: t,
       setIsHovering: z
@@ -220,7 +220,7 @@ function k(e) {
         title: w.intl.string(w.t.rHyPXl),
         className: I.settingsGroup,
         titleClassName: Z.formItemTitleSlim,
-        children: Y
+        children: J
       }), (0, r.jsx)(u.xJW, {
         title: w.intl.string(w.t.SkkeIi),
         className: I.settingsGroup,
@@ -233,7 +233,7 @@ function k(e) {
       glow: H
     }) : null, W && (0, r.jsx)(S.c, {})]
   });
-  return (0, r.jsx)(f.Z, T(P({}, J), {
+  return (0, r.jsx)(f.Z, T(P({}, Y), {
     children: (0, r.jsx)(u.xJW, {
       title: w.intl.string(w.t.ax4FnZ),
       titleClassName: Z.formItemTitle,

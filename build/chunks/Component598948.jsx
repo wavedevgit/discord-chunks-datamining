@@ -38,12 +38,12 @@ let w = {
     transform: "translate3d(0, 0, 0)",
     opacity: 1
   },
-  Z = {
+  D = {
     mass: 1.1,
     friction: 24,
     tension: 260
   },
-  D = e => e.shiftKey || e.key === _.vn.SHIFT,
+  Z = e => e.shiftKey || e.key === _.vn.SHIFT,
   R = e => e.metaKey || e.ctrlKey || ["Meta", "Control"].includes(e.key),
   L = Chunk647438.memo(function(e) {
     let {
@@ -59,10 +59,10 @@ let w = {
       L || (P(false), V(false))
     }, [L]), l.useLayoutEffect(() => {
       let e = e => {
-          D(e) && P(true), R(e) && V(true)
+          Z(e) && P(true), R(e) && V(true)
         },
         t = e => {
-          D(e) && P(false), R(e) && V(false)
+          Z(e) && P(false), R(e) && V(false)
         };
       return window.addEventListener("keydown", e), window.addEventListener("keyup", t), () => {
         window.removeEventListener("keydown", e), window.removeEventListener("keyup", t)
@@ -82,7 +82,7 @@ let w = {
           return l || !o ? S : T ? N : w
         },
         enter: S,
-        config: Z
+        config: D
       }),
       A = !f && a === x.po.LOADING;
     return (0, r.jsxs)("table", {

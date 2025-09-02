@@ -267,7 +267,7 @@ class eR extends Chunk647438.PureComponent {
     return (0, Q.A)(e, true)
   }
   getAutoArchiveDurationSliderMarker(e) {
-    return (0, Q.A)(e * J.Z.Seconds.MINUTE, true)
+    return (0, Q.A)(e * q.Z.Seconds.MINUTE, true)
   }
   renderChannelInfo(e, t) {
     var n, l, r, d, h, p;
@@ -352,10 +352,10 @@ class eR extends Chunk647438.PureComponent {
           }), (0, i.jsx)(P.Z, {
             channel: e
           })]
-        }), (0, i.jsx)(m.XZJ, {
+        }), (0, i.jsx)(g.$q, {
           disabled: !b || D,
           value: e.hasFlag(ei.zZ.REQUIRE_TAG),
-          type: m.XZJ.Types.INVERTED,
+          type: g.M0.INVERTED,
           onChange: (e, t) => this.handleRequireTagChanged(t),
           children: (0, i.jsx)(m.Text, {
             variant: "text-sm/normal",
@@ -492,8 +492,8 @@ class eR extends Chunk647438.PureComponent {
           className: s()(ec.marginTop40, ec.marginBottom40)
         })]
       }) : null,
-      J = R ? C : b,
-      q = V.X_.has(e.type) ? (0, i.jsxs)("div", {
+      q = R ? C : b,
+      J = V.X_.has(e.type) ? (0, i.jsxs)("div", {
         children: [(0, i.jsxs)(m.xJW, {
           children: [(0, i.jsx)(m.vwX, {
             id: ef,
@@ -512,7 +512,7 @@ class eR extends Chunk647438.PureComponent {
             stickToMarkers: true,
             onValueChange: this.handleChangeSlowmode,
             onMarkerRender: this.getCooldownSliderMarker,
-            disabled: !J,
+            disabled: !q,
             equidistant: true,
             "aria-labelledby": ef,
             "aria-describedby": ex
@@ -531,7 +531,7 @@ class eR extends Chunk647438.PureComponent {
               stickToMarkers: true,
               onValueChange: this.handleChangeThreadMessageSlowmode,
               onMarkerRender: this.getCooldownSliderMarker,
-              disabled: !J,
+              disabled: !q,
               equidistant: true,
               "aria-labelledby": ef,
               "aria-describedby": ex
@@ -670,7 +670,7 @@ class eR extends Chunk647438.PureComponent {
         })
       }), (0, i.jsx)(m.$i$, {
         className: s()(ec.marginTop40, ec.marginBottom40)
-      }), B, H, G, W, q, Q, F, z, Y, el, ej, eb, ey, ev, eC]
+      }), B, H, G, W, J, Q, F, z, Y, el, ej, eb, ey, ev, eC]
     })
   }
   renderBitrate(e) {
@@ -903,7 +903,7 @@ class eR extends Chunk647438.PureComponent {
         channel: t
       } = this.props;
       if (null == t) return null;
-      let n = (0, q.mB)(t.flags, ei.zZ.REQUIRE_TAG, e);
+      let n = (0, J.mB)(t.flags, ei.zZ.REQUIRE_TAG, e);
       (0, p.pW)({
         flags: n
       })
@@ -1010,7 +1010,7 @@ class eR extends Chunk647438.PureComponent {
         channel: t
       } = this.props;
       if (null == t) return null;
-      let n = (0, q.mB)(t.flags, ei.zZ.ACTIVE_CHANNELS_REMOVED, !e);
+      let n = (0, J.mB)(t.flags, ei.zZ.ACTIVE_CHANNELS_REMOVED, !e);
       (0, p.pW)({
         flags: n
       })
@@ -1051,7 +1051,7 @@ class eR extends Chunk647438.PureComponent {
         channel: t
       } = this.props;
       if (null == t) return null;
-      let n = (0, q.mB)(t.flags, ei.zZ.SUMMARIES_DISABLED, !e);
+      let n = (0, J.mB)(t.flags, ei.zZ.SUMMARIES_DISABLED, !e);
       (0, p.pW)({
         flags: n
       })
@@ -1060,7 +1060,7 @@ class eR extends Chunk647438.PureComponent {
         channel: t
       } = this.props;
       if (null == t) return null;
-      let n = (0, q.mB)(t.flags, ei.zZ.HIDE_MEDIA_DOWNLOAD_OPTIONS, !e);
+      let n = (0, J.mB)(t.flags, ei.zZ.HIDE_MEDIA_DOWNLOAD_OPTIONS, !e);
       (0, p.pW)({
         flags: n
       })

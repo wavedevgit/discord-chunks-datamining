@@ -1,7 +1,7 @@
 /** Chunk was on 47672 **/
 /** chunk id: 332664, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => R
+  Z: () => L
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -9,6 +9,7 @@ var Chunk951288 = require("./951288.js"),
   r = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   d = require.n(Chunk392711),
+  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk493773 = require("./493773.js"),
   Chunk110924 = require("./110924.js"),
@@ -25,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk817320 = require("./817320.js");
 
-function x() {
+function R() {
   return (0, Chunk951288.jsx)(Chunk481060.Text, {
     className: Chunk817320.helpdeskLink,
     variant: "text-xs/normal",
@@ -36,132 +37,132 @@ function x() {
   })
 }
 
-function R(e) {
+function L(e) {
   var t;
   let {
     modalType: n,
     header: i,
     body: s,
-    problemTitle: N,
-    problems: R,
-    transitionState: L,
-    ratingOptions: I,
-    ratingEmojiKind: D,
-    ratingTextLabels: T,
-    freeformNeededProblems: j = [],
-    otherKey: M,
-    hideDontShowAgainCheckbox: C,
-    startRating: A = null,
-    hideHelpDeskLink: P = false,
-    onSubmit: y,
-    onClose: F,
-    impression: $,
-    freeformDescription: U
-  } = e, k = (0, b.Z)(R), [Z, B] = l.useState(false), [G, J] = l.useState(A), [w, H] = l.useState(null), [z, K] = l.useState(d().shuffle(R)), [Y, X] = l.useState(""), Q = (0, E.Dt)(), V = (0, O.Z)(G), W = (0, O.Z)(Z), q = (0, O.Z)(w), ee = (0, O.Z)(y), et = (0, O.Z)(Y), en = null;
-  return null == G ? en = "RATING" : G !== g.aZ.GOOD && null == w ? en = "PROBLEM" : null != w && j.includes(w.value) && (en = "FREEFORM"), l.useEffect(() => {
-    d().isEqual(k, R) || K((0, h.Bi)(R, M))
-  }, [R, k, M]), (0, c.ZP)(() => (f.default.track(m.rMx.OPEN_MODAL, {
+    problemTitle: h,
+    problems: L,
+    transitionState: I,
+    ratingOptions: D,
+    ratingEmojiKind: T,
+    ratingTextLabels: j,
+    freeformNeededProblems: M = [],
+    otherKey: C,
+    hideDontShowAgainCheckbox: A,
+    startRating: P = null,
+    hideHelpDeskLink: $ = false,
+    onSubmit: F,
+    onClose: y,
+    impression: U,
+    freeformDescription: k
+  } = e, Z = (0, o.Z)(L), [B, G] = l.useState(false), [J, w] = l.useState(P), [H, z] = l.useState(null), [K, Y] = l.useState(d().shuffle(L)), [Q, V] = l.useState(""), X = (0, O.Dt)(), q = (0, v.Z)(J), W = (0, v.Z)(B), ee = (0, v.Z)(H), et = (0, v.Z)(F), en = (0, v.Z)(Q), ea = null;
+  return null == J ? ea = "RATING" : J !== m.aZ.GOOD && null == H ? ea = "PROBLEM" : null != H && M.includes(H.value) && (ea = "FREEFORM"), l.useEffect(() => {
+    d().isEqual(Z, L) || Y((0, S.Bi)(L, C))
+  }, [L, Z, C]), (0, b.ZP)(() => (N.default.track(_.rMx.OPEN_MODAL, {
     type: n,
     source: "Feedback Modal"
   }), () => {
-    ee.current({
-      rating: V.current,
-      problem: q.current,
+    et.current({
+      rating: q.current,
+      problem: ee.current,
       dontShowAgain: W.current,
-      feedback: et.current
+      feedback: en.current
     })
-  })), (0, a.jsxs)(u.Y0X, {
-    impression: $,
-    transitionState: L,
-    className: p.modalRoot,
-    "aria-labelledby": Q,
+  })), (0, a.jsxs)(c.Y0X, {
+    impression: U,
+    transitionState: I,
+    className: x.modalRoot,
+    "aria-labelledby": X,
     parentComponent: "FeedbackModal",
-    children: [(0, a.jsxs)(u.xBx, {
+    children: [(0, a.jsxs)(c.xBx, {
       separator: false,
-      className: p.headerContainer,
-      children: [(0, a.jsx)(u.X6q, {
-        id: Q,
+      className: x.headerContainer,
+      children: [(0, a.jsx)(c.X6q, {
+        id: X,
         variant: "heading-xl/extrabold",
         color: "none",
         children: i
-      }), (0, a.jsx)(u.Text, {
+      }), (0, a.jsx)(c.Text, {
         variant: "text-md/normal",
         color: "none",
-        className: p.ratingBody,
+        className: x.ratingBody,
         children: s
       })]
-    }), ("RATING" === en || "PROBLEM" === en && null == T) && (0, a.jsx)(u.xJW, {
-      className: r()(p.problemInfo, p.ratingSelectorContainer),
-      children: (0, a.jsx)(S.Z, {
-        ratingOptions: I,
-        emojiKind: D,
-        textLabels: T,
-        selectedRating: G,
+    }), ("RATING" === ea || "PROBLEM" === ea && null == j) && (0, a.jsx)(c.xJW, {
+      className: r()(x.problemInfo, x.ratingSelectorContainer),
+      children: (0, a.jsx)(g.Z, {
+        ratingOptions: D,
+        emojiKind: T,
+        textLabels: j,
+        selectedRating: J,
         onChangeRating: function(e) {
-          J(e), e === g.aZ.GOOD && F()
+          w(e), e === m.aZ.GOOD && y()
         }
       })
-    }), "PROBLEM" === en && (0, a.jsx)(u.hzk, {
-      className: p.__invalid_content,
-      children: (0, a.jsx)(u.xJW, {
-        title: N,
-        className: r()(p.problemInfo, p.presetList, {
-          [p.marginBottom16]: C
+    }), "PROBLEM" === ea && (0, a.jsx)(c.hzk, {
+      className: x.__invalid_content,
+      children: (0, a.jsx)(c.xJW, {
+        title: h,
+        className: r()(x.problemInfo, x.presetList, {
+          [x.marginBottom16]: A
         }),
-        children: (0, a.jsx)(v.Z, {
-          options: z,
+        children: (0, a.jsx)(f.Z, {
+          options: K,
           onClick: function(e) {
-            H(e), j.includes(e.value) || F()
+            z(e), M.includes(e.value) || y()
           },
           hideCaret: e => {
             let {
               value: t
             } = e;
-            return !j.includes(t)
+            return !M.includes(t)
           }
         })
       })
-    }), "FREEFORM" === en && (0, a.jsx)(u.hzk, {
-      className: p.__invalid_content,
-      children: (0, a.jsxs)(u.xJW, {
-        title: null != (t = null == U ? true : U(w)) ? t : _.intl.string(_.t.h95hcn),
-        className: p.problemInfo,
-        children: [(0, a.jsx)(u.Kx8, {
-          value: Y,
-          maxLength: g.iF,
-          onChange: X
-        }), !P && (0, a.jsx)(x, {})]
+    }), "FREEFORM" === ea && (0, a.jsx)(c.hzk, {
+      className: x.__invalid_content,
+      children: (0, a.jsxs)(c.xJW, {
+        title: null != (t = null == k ? true : k(H)) ? t : p.intl.string(p.t.h95hcn),
+        className: x.problemInfo,
+        children: [(0, a.jsx)(c.Kx8, {
+          value: Q,
+          maxLength: m.iF,
+          onChange: V
+        }), !$ && (0, a.jsx)(R, {})]
       })
-    }), "RATING" === en && !C && (0, a.jsx)(u.mzw, {
-      className: p.footer,
-      direction: o.Z.Direction.HORIZONTAL,
-      children: (0, a.jsx)(u.XZJ, {
-        type: u.XZJ.Types.INVERTED,
+    }), "RATING" === ea && !A && (0, a.jsx)(c.mzw, {
+      className: x.footer,
+      direction: E.Z.Direction.HORIZONTAL,
+      children: (0, a.jsx)(u.$q, {
+        type: u.M0.INVERTED,
         size: 18,
-        value: Z,
-        onChange: () => B(!Z),
-        children: (0, a.jsx)(u.Text, {
+        value: B,
+        onChange: () => G(!B),
+        children: (0, a.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: _.intl.string(_.t["5E9SBw"])
+          children: p.intl.string(p.t["5E9SBw"])
         })
       })
-    }), ("FREEFORM" === en || "PROBLEM" === en && null != T) && (0, a.jsx)(u.mzw, {
-      className: p.footer,
-      direction: o.Z.Direction.HORIZONTAL,
-      children: (0, a.jsxs)(u.hE2, {
+    }), ("FREEFORM" === ea || "PROBLEM" === ea && null != j) && (0, a.jsx)(c.mzw, {
+      className: x.footer,
+      direction: E.Z.Direction.HORIZONTAL,
+      children: (0, a.jsxs)(c.hE2, {
         direction: "horizontal-reverse",
-        children: [(0, a.jsx)(u.zxk, {
+        children: [(0, a.jsx)(c.zxk, {
           variant: "secondary",
           size: "sm",
-          text: _.intl.string(_.t["13/7kZ"]),
+          text: p.intl.string(p.t["13/7kZ"]),
           onClick: () => {
-            "FREEFORM" === en ? (H(null), X("")) : J(null)
+            "FREEFORM" === ea ? (z(null), V("")) : w(null)
           }
-        }), (0, a.jsx)(u.zxk, {
+        }), (0, a.jsx)(c.zxk, {
           variant: "primary",
           size: "sm",
-          text: _.intl.string(_.t.geKm7u),
-          onClick: F
+          text: p.intl.string(p.t.geKm7u),
+          onClick: y
         })]
       })
     })]
