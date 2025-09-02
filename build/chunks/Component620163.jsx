@@ -208,7 +208,8 @@ let e3 = () => {
       isEligibleForSensitiveContentDefaults: t_,
       inputMode: tp,
       activeInputProfile: th,
-      isInputProfileCustom: tm
+      isInputProfileCustom: tm,
+      isDataUsage3PToggleEnabled: tg
     } = e;
     return Object.freeze({
       [eH.s6.SEARCH_NO_RESULTS]: {
@@ -546,8 +547,14 @@ let e3 = () => {
       },
       [eH.s6.PRIVACY_DATA_QUESTS_V2]: {
         section: eW.oAB.DATA_AND_PRIVACY,
-        searchableTitles: [eq.intl.string(eq.t.VkS7YW)],
+        searchableTitles: [eq.intl.string(eq.t.VkS7YW), eq.intl.string(eq.t.sJYh5u)],
         parent: eH.s6.PRIVACY_AND_SAFETY_DISCORD_DATA_USAGE_CATEGORY
+      },
+      [eH.s6.PRIVACY_DATA_QUESTS_3P]: {
+        section: eW.oAB.DATA_AND_PRIVACY,
+        searchableTitles: [eq.intl.string(eq.t.CyLYKS)],
+        parent: eH.s6.PRIVACY_AND_SAFETY_DISCORD_DATA_USAGE_CATEGORY,
+        predicate: () => tg
       },
       [eH.s6.PRIVACY_DATA_BASIC_SERVICE_V2]: {
         section: eW.oAB.DATA_AND_PRIVACY,
