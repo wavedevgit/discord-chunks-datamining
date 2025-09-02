@@ -161,7 +161,7 @@ function K(e) {
     disabled: n = false
   } = e, {
     analyticsLocations: a
-  } = (0, p.ZP)(), s = (0, l.e7)([T.Z], () => T.Z.isFavoriteSound(t.soundId), [t.soundId]), c = i.useCallback(e => {
+  } = (0, p.ZP)(), s = (0, l.e7)([S.Z], () => S.Z.isFavoriteSound(t.soundId), [t.soundId]), c = i.useCallback(e => {
     e.stopPropagation(), e.currentTarget.blur(), s ? (0, I.hs)(t.soundId) : ((0, A.lF)({
       sound: t,
       location: k(j({}, a), {
@@ -204,7 +204,7 @@ function z(e, t) {
 let q = Chunk647438.forwardRef(function(e, t) {
   var n, a, u, p, y, v, {
       sound: I,
-      channel: T,
+      channel: S,
       containerClassName: R,
       className: L,
       focused: M,
@@ -215,7 +215,7 @@ let q = Chunk647438.forwardRef(function(e, t) {
       onMouseEnter: Q,
       onSelectItem: J,
       analyticsLocations: $,
-      buttonOverlay: ee = S.Pb.PLAY,
+      buttonOverlay: ee = T.Pb.PLAY,
       showLockForDisabledSound: et = true,
       inNitroLockedSection: en = false,
       isAnimated: er = true,
@@ -231,20 +231,20 @@ let q = Chunk647438.forwardRef(function(e, t) {
     name: ed,
     emojiId: ef,
     emojiName: e_
-  } = I, ep = (0, l.e7)([O.default], () => O.default.getCurrentUser()), eh = (0, N.z)(I, null == T ? true : T.guild_id), {
+  } = I, ep = (0, l.e7)([O.default], () => O.default.getCurrentUser()), eh = (0, N.z)(I, null == S ? true : S.guild_id), {
     playSoundboardSound: em,
     previewSound: eg,
     isPlayingSound: eE
-  } = (0, C.Z)(I, null != (u = null == T ? true : T.id) ? u : null, null != (p = ea ? b.AY.getSetting() : null == (n = b.kU.getSetting()) ? true : n.volume) ? p : 100, !ea && (null == T ? true : T.isVocal()) ? w.w.VOICE : w.w.DEFAULT), {
+  } = (0, C.Z)(I, null != (u = null == S ? true : S.id) ? u : null, null != (p = ea ? b.AY.getSetting() : null == (n = b.kU.getSetting()) ? true : n.volume) ? p : 100, !ea && (null == S ? true : S.isVocal()) ? w.w.VOICE : w.w.DEFAULT), {
     createMultipleConfettiAt: eb
-  } = i.useContext(h.h), ey = i.useRef(null), eO = z(I.soundId, ey.current), ev = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), eI = i.useRef(Z), eT = i.useRef(new c.Xp), eS = I.soundId === B, eA = "sound-".concat(I.soundId), eC = (0, s.JA)(eA), eN = null != ef || null != e_, eR = !(0, A.Nq)(ep, I, T) && !ea, eP = G || q && !eR, ew = null != (y = m.Wq.useStore().bottomPosition) ? y : 0, eD = (null != (v = null == (a = ey.current) ? true : a.getBoundingClientRect().bottom) ? v : 0) + 50 > ew ? "top" : "bottom", [ex, eL] = i.useState(false), ej = eR && et;
+  } = i.useContext(h.h), ey = i.useRef(null), eO = z(I.soundId, ey.current), ev = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), eI = i.useRef(Z), eS = i.useRef(new c.Xp), eT = I.soundId === B, eA = "sound-".concat(I.soundId), eC = (0, s.JA)(eA), eN = null != ef || null != e_, eR = !(0, A.Nq)(ep, I, S) && !ea, eP = G || q && !eR, ew = null != (y = m.Wq.useStore().bottomPosition) ? y : 0, eD = (null != (v = null == (a = ey.current) ? true : a.getBoundingClientRect().bottom) ? v : 0) + 50 > ew ? "top" : "bottom", [ex, eL] = i.useState(false), ej = eR && et;
 
   function eM() {
     X || em($)
   }
 
   function ek(e) {
-    if (eS && !ev && (eI.current = Math.min(eI.current + V, F), Math.random() < eI.current && eb(eO.x, eO.y, true, true, {
+    if (eT && !ev && (eI.current = Math.min(eI.current + V, F), Math.random() < eI.current && eb(eO.x, eO.y, true, true, {
         sprite: P.vv
       })), null != J) return void J(e);
     eM()
@@ -287,9 +287,9 @@ let q = Chunk647438.forwardRef(function(e, t) {
         })
       }), (0, r.jsx)("div", {
         className: x.buttonOverlayActions,
-        children: ee === S.Pb.SOUNDMOJI ? (0, r.jsx)(g.ZP, {
+        children: ee === T.Pb.SOUNDMOJI ? (0, r.jsx)(g.ZP, {
           sound: I,
-          channel: T,
+          channel: S,
           setTooltipShowing: eL
         }) : (0, r.jsxs)(r.Fragment, {
           children: [eP && eU, eG(), eP && eB]
@@ -299,7 +299,7 @@ let q = Chunk647438.forwardRef(function(e, t) {
 
   function eF() {
     switch (ee) {
-      case S.Pb.ADD:
+      case T.Pb.ADD:
         return (0, r.jsxs)("div", {
           className: x.addButtonOverlay,
           children: [(0, r.jsx)("div", {
@@ -320,20 +320,20 @@ let q = Chunk647438.forwardRef(function(e, t) {
             }), eP && eB]
           })]
         });
-      case S.Pb.NONE:
+      case T.Pb.NONE:
         return null;
-      case S.Pb.PLAY:
-      case S.Pb.SOUNDMOJI:
+      case T.Pb.PLAY:
+      case T.Pb.SOUNDMOJI:
       default:
         return eZ()
     }
   }
   i.useEffect(() => {
-    let e = eT.current;
-    return eS && e.start(H, () => {
+    let e = eS.current;
+    return eT && e.start(H, () => {
       eI.current = Math.max(eI.current - V, Z)
     }), () => e.stop()
-  }, [eS]);
+  }, [eT]);
   let eV = (0, E.a)(ey.current);
   return (0, r.jsxs)("li", {
     ref: t,

@@ -109,10 +109,10 @@ function E(e) {
     interactionSource: O,
     resetInteraction: v,
     interactionSourceId: I,
-    interactionPopoutTargetRef: T
-  } = (0, a.Xo)(), S = [u.l.MODAL, u.l.MODAL_V2].includes(_) ? (0, o.z)(t.id, n) : true, A = O === b.sourceType && y === c.P.REACT, C = O === b.sourceType && y === c.P.REPLY, N = (A || C) && I === b.sourceId;
+    interactionPopoutTargetRef: S
+  } = (0, a.Xo)(), T = [u.l.MODAL, u.l.MODAL_V2].includes(_) ? (0, o.z)(t.id, n) : true, A = O === b.sourceType && y === c.P.REACT, C = O === b.sourceType && y === c.P.REPLY, N = (A || C) && I === b.sourceId;
   return (0, r.jsx)(i.yRy, p(f({
-    targetElementRef: null != T ? T : true,
+    targetElementRef: null != S ? S : true,
     renderPopout: e => {
       let {
         setPopoutRef: i
@@ -123,7 +123,7 @@ function E(e) {
         channelId: d,
         themeType: _,
         onClose: m,
-        modalKey: S,
+        modalKey: T,
         setPopoutRef: i
       }, b))
     },

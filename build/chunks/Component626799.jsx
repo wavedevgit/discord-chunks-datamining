@@ -184,19 +184,19 @@ class P extends(r = Chunk647438.Component) {
         renderCustomActions: o
       } = this.props;
       if (null != o) return (0, i.jsx)("div", {
-        className: S.tileActions,
+        className: T.tileActions,
         children: o()
       });
       if (null == n) return null;
       let s = null != n && n.primarySkuId === r,
         c = null != a && a.hasFlag(I.eHb.HIDDEN);
       return (0, i.jsxs)("div", {
-        className: S.tileActions,
+        className: T.tileActions,
         children: [!s || c ? this.renderViewInStoreButton() : (0, i.jsx)(d.Z, {
           application: n,
           customDisabledColor: l.zx.Colors.PRIMARY,
           size: l.zx.Sizes.SMALL,
-          className: S.actionButton,
+          className: T.actionButton,
           source: I.Sbl.MESSAGE_EMBED,
           onClick: this.handleActionButtonClick
         }), t && !c || e.premium ? null : (0, i.jsx)(f.Z, {

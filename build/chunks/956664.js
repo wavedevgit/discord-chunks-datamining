@@ -2,7 +2,7 @@
 /** chunk id: 956664, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Bo: () => T,
+  Bo: () => S,
   Dc: () => f,
   OF: () => y,
   QB: () => I,
@@ -11,7 +11,7 @@ require.d(exports, {
   _H: () => p,
   c0: () => A,
   fD: () => v,
-  kD: () => S,
+  kD: () => T,
   rn: () => _,
   rv: () => h,
   zp: () => d
@@ -135,14 +135,14 @@ function I(e) {
   let t = e.split(";base64,");
   return i()(2 === t.length, "Input data is not a valid image."), atob(t[1]).length
 }
-async function T(e, t, n) {
-  let r = S(e);
+async function S(e, t, n) {
+  let r = T(e);
   return new File([await r.arrayBuffer()], t, {
     type: n
   })
 }
 
-function S(e) {
+function T(e) {
   let t;
   t = e.split(",")[0].indexOf("base64") >= 0 ? atob(e.split(",")[1]) : btoa(e.split(",")[1]);
   let n = e.split(",")[0].split(":")[1].split(";")[0],

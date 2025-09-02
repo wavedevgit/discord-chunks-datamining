@@ -7,7 +7,7 @@ require.d(exports, {
   Ct: () => A,
   DU: () => Z,
   EQ: () => B,
-  Ej: () => T,
+  Ej: () => S,
   ME: () => m,
   O1: () => v,
   O8: () => w,
@@ -15,7 +15,7 @@ require.d(exports, {
   Uw: () => x,
   ZE: () => j,
   _G: () => O,
-  _O: () => S,
+  _O: () => T,
   _y: () => g,
   do: () => k,
   g7: () => P,
@@ -75,8 +75,8 @@ let p = new _(Chunk848246.q.ANIMATED_EMOJIS),
   O = new _(Chunk848246.q.CUSTOM_DISCRIMINATOR),
   v = new _(Chunk848246.q.PREMIUM_GUILD_MEMBER_PROFILE),
   I = new _("profileBadges"),
-  T = new _(Chunk848246.q.PROFILE_PREMIUM_FEATURES, "custom banner and avatar decoration"),
-  S = new _("collectibles"),
+  S = new _(Chunk848246.q.PROFILE_PREMIUM_FEATURES, "custom banner and avatar decoration"),
+  T = new _("collectibles"),
   A = new _("appIcons"),
   C = new _(Chunk848246.q.CLIENT_THEMES),
   N = new _("boostDiscount"),
@@ -97,7 +97,7 @@ let k = new _(Chunk848246.q.INCREASED_GUILD_LIMIT),
   F = Object.freeze({
     [Chunk474936.Si.TIER_0]: new Chunk575691.Z(Chunk474936.Si.TIER_0, [p, h, m, I, M, G, B, A]),
     [Chunk474936.Si.TIER_1]: new Chunk575691.Z(Chunk474936.Si.TIER_1, [p, h, y, O, I, N, P, x, G, B, A]),
-    [Chunk474936.Si.TIER_2]: new Chunk575691.Z(Chunk474936.Si.TIER_2, [p, h, m, g, E, y, O, v, I, T, C, N, R, P, w, x, L, j, M, k, U, G, B, A, S, D, b, Z])
+    [Chunk474936.Si.TIER_2]: new Chunk575691.Z(Chunk474936.Si.TIER_2, [p, h, m, g, E, y, O, v, I, S, C, N, R, P, w, x, L, j, M, k, U, G, B, A, T, D, b, Z])
   }),
   V = [N, R];
 

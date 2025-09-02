@@ -2,7 +2,7 @@
 /** chunk id: 413189, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,8 +26,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk664677 = require("./664677.js");
 
-function T(e) {
-  var t, n, T, S;
+function S(e) {
+  var t, n, S, T;
   let A, C, N, {
       message: R,
       channel: P,
@@ -65,9 +65,9 @@ function T(e) {
     wallpaper_name: null != (n = null == k ? true : k.label) ? n : v.intl.string(v.t["UQMV/P"])
   }) : v.intl.format(v.t["+lKndX"], {
     username: null == j ? true : j.nick,
-    wallpaper_name: null != (T = null == k ? true : k.label) ? T : v.intl.string(v.t["UQMV/P"])
+    wallpaper_name: null != (S = null == k ? true : k.label) ? S : v.intl.string(v.t["UQMV/P"])
   }), x ? M || L ? Y && Z ? C = v.intl.formatToPlainString(v.t.PzTpVV, {
-    wallpaperName: null != (S = null == k ? true : k.label) ? S : v.intl.string(v.t["UQMV/P"])
+    wallpaperName: null != (T = null == k ? true : k.label) ? T : v.intl.string(v.t["UQMV/P"])
   }) : V || H || !Z || (C = v.intl.format(v.t.JwUhHh, {
     onClickNitro: () => {
       (0, d.uL)(y.Z5c.NITRO_HOME)

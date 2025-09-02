@@ -10,10 +10,10 @@ require.d(exports, {
   bL: () => eE,
   hJ: () => eI,
   iV: () => eR,
-  jx: () => eS,
+  jx: () => eT,
   oR: () => eC,
   qz: () => eA,
-  x2: () => eT
+  x2: () => eS
 }), require("./388685.js"), require("./415506.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -258,7 +258,7 @@ function eI(e, t) {
   })
 }
 
-function eT(e, t, n) {
+function eS(e, t, n) {
   let [r] = i.useState(() => new s.EventEmitter);
   i.useEffect(() => {
     r.emit("text-changed", t, n)
@@ -272,7 +272,7 @@ function eT(e, t, n) {
   }
 }
 
-function eS() {
+function eT() {
   let e = Chunk647438.useRef(null),
     t = Chunk647438.useCallback(() => {
       var t;
@@ -378,7 +378,7 @@ function ew(e, t) {
   let [n, r] = i.useState(null), a = i.useCallback(() => {
     var e, n;
     let i, a = null == (e = t.current) ? true : e.getSlateEditor();
-    null != a && (i = null == (n = ea.bN.getSelectedParentOfType(a, S.un)) ? true : n[0].type), r(null != i ? i : null)
+    null != a && (i = null == (n = ea.bN.getSelectedParentOfType(a, T.un)) ? true : n[0].type), r(null != i ? i : null)
   }, [t]);
   return i.useEffect(() => (e.on("selection-changed", a), a(), () => {
     e.off("selection-changed", a)
@@ -391,7 +391,7 @@ function eD(e, t) {
     textValue: f,
     richValue: h,
     className: O,
-    innerClassName: S,
+    innerClassName: T,
     editorClassName: C,
     id: R,
     required: P,
@@ -474,7 +474,7 @@ function eD(e, t) {
   let {
     eventEmitter: to,
     handleEditorSelectionChanged: ts
-  } = eT(ez, f, h), {
+  } = eS(ez, f, h), {
     submitting: tl,
     submit: tc,
     handleSubmit: tu
@@ -482,7 +482,7 @@ function eD(e, t) {
     autocompleteRef: td,
     handleMaybeShowAutocomplete: tf,
     handleHideAutocomplete: t_
-  } = eS(), tp = eb(tc, k, ez), th = ey(ez), tm = eO({
+  } = eT(), tp = eb(tc, k, ez), th = ey(ez), tm = eO({
     editorRef: ez,
     disabled: e4,
     textValue: f,
@@ -500,8 +500,8 @@ function eD(e, t) {
     handleEnter: tv,
     handleMoveSelection: tI
   } = eP(td, eK, te), {
-    expressionPickerView: tT,
-    shouldHideExpressionPicker: tS,
+    expressionPickerView: tS,
+    shouldHideExpressionPicker: tT,
     handleAutocompleteVisibilityChange: tA,
     handleOuterClick: tC
   } = eR(k, to, ez), tN = ew(to, ez);
@@ -568,7 +568,7 @@ function eD(e, t) {
         }), (0, r.jsxs)("div", {
           ref: eq,
           onScroll: tE,
-          className: o()(S, {
+          className: o()(T, {
             [eu.scrollableContainer]: true,
             [eu.themedBackground]: !eB,
             [eu.hasStackedBar]: tL.stacked.length > 0
@@ -640,7 +640,7 @@ function eD(e, t) {
           ref: eK,
           channel: M,
           canOnlyUseTextCommands: tR
-        }), (0, r.jsx)(T.Z, {
+        }), (0, r.jsx)(S.Z, {
           ref: td,
           channel: M,
           canMentionRoles: ep,
@@ -651,7 +651,7 @@ function eD(e, t) {
           canSendSoundmoji: null == (u = k.soundmoji) ? true : u.allowSending,
           textValue: f,
           focused: G,
-          expressionPickerView: tT,
+          expressionPickerView: tS,
           type: k,
           targetRef: eW,
           editorRef: ez,
@@ -670,7 +670,7 @@ function eD(e, t) {
         }), tG, eG]
       }), (0, r.jsx)(p.pdY, {
         error: B
-      }), tS ? null : (0, r.jsx)(N.Z, {
+      }), tT ? null : (0, r.jsx)(N.Z, {
         positionTargetRef: eW,
         type: k,
         onSelectGIF: tp,

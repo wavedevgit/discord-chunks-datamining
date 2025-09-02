@@ -130,8 +130,8 @@ function ey(e, t) {
 let eO = eR(null),
   ev = 20,
   eI = 16,
-  eT = 1,
-  eS = "voice-widget-display-users",
+  eS = 1,
+  eT = "voice-widget-display-users",
   eA = 25,
   eC = [0, 5, 10, 15, 20, 25];
 
@@ -301,7 +301,7 @@ function ej(e) {
       }
     }
     return (0, A.b6)(o, false, [q.Z, Q.Z])
-  }, [o, u]), p = (0, _.e7)([A.ZP, q.Z, Q.Z], () => null == o ? null : (0, A.FZ)(o, A.ZP, q.Z, Q.Z), [o], l()), [g, E] = i.useState(f), [y, I] = i.useState(d), [T, S] = i.useState(false);
+  }, [o, u]), p = (0, _.e7)([A.ZP, q.Z, Q.Z], () => null == o ? null : (0, A.FZ)(o, A.ZP, q.Z, Q.Z), [o], l()), [g, E] = i.useState(f), [y, I] = i.useState(d), [S, T] = i.useState(false);
   i.useEffect(() => {
     E(f), I(d)
   }, [f, d]);
@@ -463,8 +463,8 @@ function ej(e) {
   });
   let [er, ei] = i.useMemo(() => K ? ["text-muted", h.TVs.colors.TEXT_MUTED.css] : W && X ? ["text-feedback-warning", h.TVs.colors.TEXT_FEEDBACK_WARNING.css] : W && z ? ["text-feedback-positive", h.TVs.colors.TEXT_FEEDBACK_POSITIVE.css] : W && J ? ["text-primary", h.TVs.colors.TEXT_PRIMARY.css] : ["interactive-normal", h.TVs.colors.INTERACTIVE_NORMAL.css], [K, W, X, z, J]);
   return null == o ? null : (0, r.jsxs)(eD, {
-    onExpand: S,
-    className: T ? ef.expandedContainer : true,
+    onExpand: T,
+    className: S ? ef.expandedContainer : true,
     title: (0, r.jsxs)(r.Fragment, {
       children: [null != (a = null != (n = null != (t = null == s ? true : s.name) ? t : null == p ? true : p.name) ? n : null == o ? true : o.gameName) ? a : "", null != p && p.verified ? (0, r.jsx)(h.ua7, {
         text: ed.intl.string(ed.t["4PJP5u"]),
@@ -924,7 +924,7 @@ function eW() {
   }), d = null != (t = null == u || null == (e = u.meta) ? true : module.voiceStatesMaxShown) ? exports : Chunk501787.At, f = [null != l ? eV(l) : null, ...Chunk512722].filter(Chunk823379.lm), p = [new Map(f.map(e => [e.user.id, e])), f.map(e => e.user.id)];
 
   function m(e) {
-    null != u && (e < eT ? (0, E.zG)(u.id, {
+    null != u && (e < eS ? (0, E.zG)(u.id, {
       voiceStatesMaxShown: eu.Og
     }) : (0, E.zG)(u.id, {
       voiceStatesMaxShown: Math.floor(e)
@@ -1019,13 +1019,13 @@ function eW() {
       })
     }), (0, Chunk951288.jsx)(eP, {
       title: Chunk388032.intl.string(Chunk388032.t["X/Uyzc"]),
-      titleId: eS,
+      titleId: eT,
       children: (0, Chunk951288.jsx)("div", {
         className: Chunk607547.sliderContainer,
         children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
           initialValue: Chunk392711,
-          onValueRender: e => e < eT ? ed.intl.string(ed.t.nrUzFB) : "".concat(Math.floor(e)),
-          minValue: eT - 1,
+          onValueRender: e => e < eS ? ed.intl.string(ed.t.nrUzFB) : "".concat(Math.floor(e)),
+          minValue: eS - 1,
           maxValue: eA,
           onValueChange: Chunk224706,
           markers: eC,
@@ -1035,8 +1035,8 @@ function eW() {
           fillStyles: {
             background: Chunk481060.TVs.colors.BG_BRAND.css
           },
-          "aria-labelledby": eS,
-          onMarkerRender: e => e < eT ? ed.intl.string(ed.t.nrUzFB) : "".concat(Math.floor(e))
+          "aria-labelledby": eT,
+          onMarkerRender: e => e < eS ? ed.intl.string(ed.t.nrUzFB) : "".concat(Math.floor(e))
         })
       })
     })]

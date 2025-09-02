@@ -30,7 +30,7 @@ function b(e) {
     showLogout: O,
     location: v,
     scopes: I
-  } = e, T = (0, p.X)(), S = u.ZP.getApplicationIconURL({
+  } = e, S = (0, p.X)(), T = u.ZP.getApplicationIconURL({
     id: n.id,
     icon: n.icon
   }), A = u.ZP.getUserAvatarURL(t), C = i.useMemo(() => I.some(e => (0, _.sg)(e)) ? (0, r.jsxs)(r.Fragment, {
@@ -62,13 +62,13 @@ function b(e) {
     })]
   }), [y.length, n, b, I]);
   return (0, r.jsxs)("header", {
-    id: T,
+    id: S,
     className: E.header,
     children: [(0, r.jsxs)("div", {
       className: E.headerIcons,
       children: [(0, r.jsx)(o.qE, {
         className: E.avatar,
-        src: S,
+        src: T,
         size: m.EF.SIZE_80,
         "aria-label": n.name
       }), (0, r.jsxs)("div", {

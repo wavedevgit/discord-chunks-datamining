@@ -61,9 +61,9 @@ function I() {
   null == y && (y = {})
 }
 
-function T() {}
+function S() {}
 
-function S() {
+function T() {
   return y.darkSidebar = !y.darkSidebar, true
 }
 
@@ -201,6 +201,6 @@ let N = new C(Chunk570140.Z, {
   UNSYNCED_USER_SETTINGS_UPDATE: O,
   LOGOUT: v,
   LOGIN_SUCCESS: I,
-  REGISTER_SUCCESS: T,
-  ACCESSIBILITY_DARK_SIDEBAR_TOGGLE: S
+  REGISTER_SUCCESS: S,
+  ACCESSIBILITY_DARK_SIDEBAR_TOGGLE: T
 })

@@ -53,7 +53,7 @@ function f(e, t, n) {
     } = _(t, n);
     e._raw = (e._raw || "") + a;
     let o = m(i);
-    return (0, r.wB)(e, S(g(o, true))), true
+    return (0, r.wB)(e, T(g(o, true))), true
   } catch (e) {
     returnfalse
   }
@@ -128,18 +128,18 @@ function v(e) {
 
 function I(e) {
   return {
-    attributes: T(e),
+    attributes: S(e),
     value: g(e)
   }
 }
 
-function T(e) {
+function S(e) {
   let t = {};
   for (let n = 0; n < e.attributes.length; n++) t[e.attributes[n].nodeName] = decodeURIComponent(escape(e.attributes[n].value));
   return t
 }
 
-function S(e) {
+function T(e) {
   let t = {};
   if ("string" == typeof e) return e;
   for (let n in e) {
@@ -313,7 +313,7 @@ function Q(e) {
 }
 
 function J(e, t) {
-  let n = $(e) || S(e.value);
+  let n = $(e) || T(e.value);
   return {
     value: n,
     attributes: Z(e),

@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk301889 = require("./301889.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,14 +36,14 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -72,7 +72,7 @@ function N(e) {
     quest: n,
     errorHints: a,
     transitionState: b,
-    onClose: T,
+    onClose: S,
     sourceQuestContent: A
   } = e, [N, P] = (0, i.useState)(a), w = (0, m.KX)(), D = (0, _.O5)(), x = null == (t = (0, p.WD)()) ? true : t.getId(), L = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), j = (0, y.g2)({
     useReducedMotion: L,
@@ -94,7 +94,7 @@ function N(e) {
       j.stopAnimation(), P(e)
     }
   }), F = () => {
-    T(), (0, h.V$)({
+    S(), (0, h.V$)({
       quest: n
     }, {
       content: g.jn.CONNECTIONS_MODAL,
@@ -115,7 +115,7 @@ function N(e) {
         children: v.intl.string(v.t.STpNEB)
       })]
     }),
-    children: e => (0, r.jsx)("img", C(S({}, e), {
+    children: e => (0, r.jsx)("img", C(T({}, e), {
       className: I.gameTile,
       alt: n.config.messages.gameTitle,
       src: (0, E.fh)(n, E.eC.GAME_TILE, G).url
@@ -123,7 +123,7 @@ function N(e) {
   }) : null;
   return (0, r.jsx)(l.Modal, {
     transitionState: b,
-    onClose: T,
+    onClose: S,
     title: v.intl.string(v.t.W5lmKi),
     subtitle: w.message,
     actions: [{
@@ -132,7 +132,7 @@ function N(e) {
       text: v.intl.string(v.t["qiS+xs"])
     }, {
       variant: "primary",
-      onClick: () => T(),
+      onClick: () => S(),
       text: v.intl.string(v.t.cpT0Cg)
     }],
     children: (0, r.jsxs)(r.Fragment, {
@@ -234,7 +234,7 @@ function P(e) {
         questOrQuests: e.quest,
         questContent: g.jn.CONNECTIONS_MODAL,
         sourceQuestContent: e.sourceQuestContent,
-        children: () => (0, r.jsx)(t, S({}, n, e))
+        children: () => (0, r.jsx)(t, T({}, n, e))
       })
     }
   })

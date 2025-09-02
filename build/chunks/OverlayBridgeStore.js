@@ -227,11 +227,11 @@ async function em(e) {
       if (W.size > 0) {
         ed = "reconcile.getOverlayURL";
         let t = await ev();
-        ed = "reconcile.createHostProcess", e.createHostProcess(t, eS, eT)
+        ed = "reconcile.createHostProcess", e.createHostProcess(t, eT, eS)
       } else ed = "reconcile.destroyHostProcess", e.destroyHostProcess(), eO((0, j.getPID)());
     else if (z) {
       let t = await ev();
-      e.createHostProcess(t, eS, eT)
+      e.createHostProcess(t, eT, eS)
     } else e.destroyHostProcess(), eO((0, j.getPID)())
   } catch (t) {
     eo.error("reconcileHostProcess", t), (0, y.D1)(t), eO((0, j.getPID)());
@@ -299,7 +299,7 @@ async function eb(e) {
     eo.verbose("updateIntendedOverlayPIDs: retrying failed overlay pid ".concat(n)), await r(n), i = true
   }
   for (let t of null != (n = e.added) ? n : []) {
-    let n = T.default.getTrackedGameByPid(t);
+    let n = S.default.getTrackedGameByPid(t);
     if (null == n) {
       eo.error("updateIntendedOverlayPIDs: Tracked game not found for pid=".concat(t));
       continue
@@ -309,7 +309,7 @@ async function eb(e) {
         let r = new Date().getTime();
         ec(n.pid, {
           mounting_started_at: r,
-          fullscreen_type: await (0, S.hj)(n.pid, 0)
+          fullscreen_type: await (0, T.hj)(n.pid, 0)
         }), W.has(n.pid) || await eg(n.pid), H[n.pid] = {
           method: n.overlayMethod,
           deconstructor: async () => {
@@ -355,11 +355,11 @@ let eI = e_("setOverlayEnabled", async e => {
   z || await eb(true), W.size > 0 && await em(t)
 });
 
-function eT(e) {
+function eS(e) {
   f.Z.setFocusedPID(0 === e ? null : e)
 }
 
-function eS(e, t, n) {
+function eT(e, t, n) {
   var r;
   let i = null == (r = b.ZP.getGameForPID(e)) ? true : r.name,
     a = R.Z.getGameByName(i),
@@ -480,7 +480,7 @@ function ej(e) {
   } = e;
   $ = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
   let n = new URLSearchParams;
-  n.append("build_id", "9bbee0fb78dab8302dc54d529e6158ef2b9dcd32"), n.append("rpc", String(t)), n.append("rpc_auth_token", $), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+  n.append("build_id", "91823ccb5aa5dd19c91d25c8f9419c824fda852e"), n.append("rpc", String(t)), n.append("rpc_auth_token", $), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
 }
 
 function eM(e) {
@@ -584,7 +584,7 @@ function eK(e) {
   eo.verbose("Updating OverlayMethod", {
     pid: e.pid,
     overlayMethod: e.overlayMethod,
-    overlayLabel: (0, S.P_)(e.overlayMethod)
+    overlayLabel: (0, T.P_)(e.overlayMethod)
   }), e.overlayMethod === v.gl.Hook ? ey({
     added: [e.pid],
     removed: []
@@ -614,7 +614,7 @@ class eQ extends(i = Chunk442837.ZP.Store) {
     return null != module && this.isInputLocked(module)
   }
   isInputLocked(e) {
-    return T.default.isOverlayOOPEnabledForPid(e) ? A.ZP.isInputLocked(e) : !ee.has(e)
+    return S.default.isOverlayOOPEnabledForPid(e) ? A.ZP.isInputLocked(e) : !ee.has(e)
   }
   DEV_isInputLockedV3(e) {
     return A.ZP.isInputLocked(e)

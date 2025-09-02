@@ -69,23 +69,23 @@ function E(e) {
     focusedClassName: v
   } = e, {
     onInteraction: I
-  } = i.useContext(c.p), T = i.useRef(null);
+  } = i.useContext(c.p), S = i.useRef(null);
   i.useEffect(() => {
-    E && (0, u.F)(T)
+    E && (0, u.F)(S)
   }, [E]);
-  let S = i.useCallback(e => {
+  let T = i.useCallback(e => {
     y(e), null == I || I({
       type: c.U.CHECKBOX
     })
   }, [y, I]);
   return (0, r.jsxs)(s.P, g(h({
-    innerRef: T,
+    innerRef: S,
     className: o()(_.item, _.checkboxContainer, _.labelContainer, f._[t], O, {
       [_.disabled]: m,
       [_.focused]: E,
       [null != v ? v : ""]: E
     }),
-    onClick: m ? true : S
+    onClick: m ? true : T
   }, b), {
     "aria-checked": a,
     "aria-disabled": m,

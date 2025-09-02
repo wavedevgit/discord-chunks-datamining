@@ -128,14 +128,14 @@ function v(e, t, n) {
 }
 
 function I(e, t, n) {
-  return e ? T(e) ? e : S(e) ? e.name(n) : e.name : `undefined-${t}`
-}
-
-function T(e) {
-  return "string" == typeof e
+  return e ? S(e) ? e : T(e) ? e.name(n) : e.name : `undefined-${t}`
 }
 
 function S(e) {
+  return "string" == typeof e
+}
+
+function T(e) {
   return "function" == typeof e.name
 }
 

@@ -67,8 +67,8 @@ function p(e) {
     renderRow: O,
     renderSection: v,
     renderSectionHeader: I,
-    renderSectionFooter: T,
-    renderInspector: S,
+    renderSectionFooter: S,
+    renderInspector: T,
     renderEmptySearchState: A,
     renderCategoryList: C,
     renderHeaderAccessories: N,
@@ -119,10 +119,10 @@ function p(e) {
     rowIndex: e,
     totalRowCount: z,
     sectionIndex: t.sectionIndex
-  }, t => J(e, t), t => f.setInspectedExpressionPosition(t, e)), [K, J, $, Q, en, O, f, z]), ei = i.useCallback(e => null == v ? true : v(t[e]), [t, v]), ea = i.useCallback(e => null == I ? true : I(t[e], e), [t, I]), eo = i.useCallback(e => null == T ? true : T(t[e], e), [t, T]), es = i.useCallback(() => {
+  }, t => J(e, t), t => f.setInspectedExpressionPosition(t, e)), [K, J, $, Q, en, O, f, z]), ei = i.useCallback(e => null == v ? true : v(t[e]), [t, v]), ea = i.useCallback(e => null == I ? true : I(t[e], e), [t, I]), eo = i.useCallback(e => null == S ? true : S(t[e], e), [t, S]), es = i.useCallback(() => {
     var e;
-    return null == S ? true : S(null == K || null == (e = K[Y.rowIndex]) ? true : e[Y.columnIndex])
-  }, [K, Y.columnIndex, Y.rowIndex, S]);
+    return null == T ? true : T(null == K || null == (e = K[Y.rowIndex]) ? true : e[Y.columnIndex])
+  }, [K, Y.columnIndex, Y.rowIndex, T]);
   i.useEffect(() => {
     h(H)
   }, [h, H]), i.useEffect(() => {
@@ -166,8 +166,8 @@ function p(e) {
           renderRow: er,
           renderSection: null != v ? ei : true,
           renderSectionHeader: null != I ? ea : true,
-          renderSectionFooter: null != T ? eo : true,
-          renderInspector: null != S ? es : true,
+          renderSectionFooter: null != S ? eo : true,
+          renderInspector: null != T ? es : true,
           renderEmptySearchState: A,
           rowCount: z,
           rowCountBySection: q,

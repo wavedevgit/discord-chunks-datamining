@@ -12,7 +12,7 @@ require.d(exports, {
   YW: () => d,
   ae: () => O,
   b3: () => _,
-  cf: () => S,
+  cf: () => T,
   dr: () => I,
   fY: () => m,
   iU: () => l,
@@ -125,7 +125,7 @@ function I(e) {
   }
 }
 
-function T(e) {
+function S(e) {
   return {
     id: e.id,
     options: e.options.map(e => {
@@ -148,10 +148,10 @@ function T(e) {
   }
 }
 
-function S(e) {
+function T(e) {
   var t, n, r;
   return {
-    prompts: e.prompts.map(T),
+    prompts: e.prompts.map(S),
     defaultChannelIds: e.default_channel_ids,
     responses: null != (t = e.responses) ? t : [],
     mode: e.mode,

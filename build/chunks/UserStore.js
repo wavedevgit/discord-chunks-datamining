@@ -46,12 +46,12 @@ function I(e, t, n) {
   return a && O++, a
 }
 
-function T(e, t) {
+function S(e, t) {
   let n = y[e];
   return !(null == n || (0, c.d)(n.primaryGuild, t.primary_guild)) && (null == n.primaryGuild || null != t.primary_guild) && (n.primaryGuild = (0, c.l)(t.primary_guild), y[n.id] = n, O++, true)
 }
 
-function S(e, t) {
+function T(e, t) {
   switch (true) {
     case null == e.primaryGuild && null == t.primary_guild:
       break;
@@ -111,7 +111,7 @@ function N(e) {
   else if (n) {
     var a;
     let n = A(e);
-    true !== (t = null != (a = n.premium_type) ? a : n.premiumType) && i && (0, d.VR)(n) && (n = R(n)), n = S(r, n), r = r.merge(n)
+    true !== (t = null != (a = n.premium_type) ? a : n.premiumType) && i && (0, d.VR)(n) && (n = R(n)), n = T(r, n), r = r.merge(n)
   }(0, d.jX)((0, d.QI)(r), t, r.premiumType);
   let o = y[e.id] !== r;
   return y[e.id] = r, o && O++, o
@@ -171,7 +171,7 @@ function x(e) {
     t.preloadStaffMembers()
   }), i.forEach(e => {
     e.members.forEach(t => {
-      I(t.user.id, e.id, t.avatar), T(t.user.id, t.user)
+      I(t.user.id, e.id, t.avatar), S(t.user.id, t.user)
     })
   }), null != y[h.default.getId()] && (y[v] = new f.Z({
     id: v,
@@ -189,7 +189,7 @@ function L(e) {
   } = e;
   t.forEach(e => {
     e.members.forEach(t => {
-      I(t.user.id, e.id, t.avatar), T(t.user.id, t.user)
+      I(t.user.id, e.id, t.avatar), S(t.user.id, t.user)
     })
   }), null == n || n.forEach(e => {
     var t;
@@ -439,7 +439,7 @@ function es(e) {
       var n;
       let t = null == (n = e.item.member) ? true : n.user;
       if (null == t) continue;
-      T(t.id, t)
+      S(t.id, t)
     } returnfalse
 }
 
@@ -584,14 +584,14 @@ function eI(e) {
   return [...t, ...r].reduce((e, t) => N(t) || e, false)
 }
 
-function eT(e) {
+function eS(e) {
   let {
     users: t
   } = e;
   return t.reduce((e, t) => N(t) || e, false)
 }
 
-function eS(e) {
+function eT(e) {
   let {
     users: t
   } = e;
@@ -771,10 +771,10 @@ class eL extends Chunk750041.Z {
       PASSIVE_UPDATE_V2: ec,
       LOCAL_MESSAGES_LOADED: eu,
       FAMILY_CENTER_INITIAL_LOAD: eI,
-      FAMILY_CENTER_LINKED_USERS_FETCH_SUCCESS: eT,
+      FAMILY_CENTER_LINKED_USERS_FETCH_SUCCESS: eS,
       FAMILY_CENTER_TEEN_ACTIVITY_FETCH_SUCCESS: eA,
       FAMILY_CENTER_TEEN_ACTIVITY_MORE_FETCH_SUCCESS: eC,
-      FAMILY_CENTER_REQUEST_LINK_SUCCESS: eS,
+      FAMILY_CENTER_REQUEST_LINK_SUCCESS: eT,
       MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: eN,
       LOAD_ICYMI_HYDRATED: eR,
       EMBEDDED_ACTIVITY_UPDATE_V2: eP,

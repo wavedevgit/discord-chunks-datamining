@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,7 +43,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -71,7 +71,7 @@ function R(e) {
   var {
     user: t,
     closePopout: n
-  } = e, S = C(e, ["user", "closePopout"]);
+  } = e, T = C(e, ["user", "closePopout"]);
   let N = i.useRef(null),
     R = (0, a.e7)([y.Z], () => {
       var e;
@@ -95,7 +95,7 @@ function R(e) {
           applicationId: R.id
         }, R))
     }, [R, w, D, null == P ? true : P.guild_id, n]),
-    L = w ? T.intl.string(T.t["Cia+Aw"]) : T.intl.string(T.t.NgXl3N);
+    L = w ? S.intl.string(S.t["Cia+Aw"]) : S.intl.string(S.t.NgXl3N);
   if (null == R || !(0, d.Eb)(R)) return null;
   let {
     customInstallUrl: j
@@ -109,12 +109,12 @@ function R(e) {
       return (0, r.jsx)(o.v2r, {
         navId: "user-bot-profile-add-app",
         onClose: t,
-        "aria-label": T.intl.string(T.t.dbkxVl),
+        "aria-label": S.intl.string(S.t.dbkxVl),
         onSelect: true,
         children: (0, r.jsx)(o.kSQ, {
           children: (0, r.jsx)(o.sNh, {
             id: "copy",
-            label: T.intl.string(T.t.XWDiho),
+            label: S.intl.string(S.t.XWDiho),
             action: () => (0, g.JG)((0, u.J)(R))
           })
         })
@@ -131,12 +131,12 @@ function R(e) {
         icon: k,
         onContextMenu: t,
         onClick: x
-      }, n, S))
+      }, n, T))
     }
   }) : (0, r.jsx)(v.tG, A({
     action: "PRESS_ADD_APP",
     text: L,
     icon: k,
     onClick: x
-  }, S))
+  }, T))
 }

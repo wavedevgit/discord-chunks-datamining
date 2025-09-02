@@ -151,7 +151,7 @@ class m extends h {
     }))
   }
   mergeFromApplicationUpdate(e) {
-    var t, n, r, i, a, o, s, l, c, d, f, _, p, h, g, E, b, y, O, v, I, T, S, A, C, N, R, P, w, D, x, L, j, M, k, U, G, B, Z, F, V, H, Y;
+    var t, n, r, i, a, o, s, l, c, d, f, _, p, h, g, E, b, y, O, v, I, S, T, A, C, N, R, P, w, D, x, L, j, M, k, U, G, B, Z, F, V, H, Y;
     return new m({
       id: null != (t = e.id) ? t : this.id,
       name: null != (n = e.name) ? n : this.name,
@@ -174,8 +174,8 @@ class m extends h {
       hashes: null != (O = e.hashes) ? O : this.hashes,
       description: null != (v = e.description) ? v : this.description,
       eulaId: null != (I = e.eulaId) ? I : this.eulaId,
-      slug: null != (T = e.slug) ? T : this.slug,
-      coverImage: null != (S = e.coverImage) ? S : this.coverImage,
+      slug: null != (S = e.slug) ? S : this.slug,
+      coverImage: null != (T = e.coverImage) ? T : this.coverImage,
       bot: null != (A = e.bot) ? A : this.bot,
       flags: null != (C = e.flags) ? C : this.flags,
       maxParticipants: null != (N = e.maxParticipants) ? N : this.maxParticipants,

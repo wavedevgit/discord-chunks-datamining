@@ -140,12 +140,12 @@ function p(e) {
     }, e.key)
   }
 
-  function T(e) {
+  function S(e) {
     let t = I(e);
     return null != E ? E(e, t) : t
   }
 
-  function S(e) {
+  function T(e) {
     return (0, r.jsx)(_, {
       page: e,
       totalPageCount: b,
@@ -168,9 +168,9 @@ function p(e) {
             case u.s.BACK:
               return O(e);
             case u.s.PAGE:
-              return T(e);
-            case u.s.GAP:
               return S(e);
+            case u.s.GAP:
+              return T(e);
             case u.s.NEXT:
               return v(e);
             default:

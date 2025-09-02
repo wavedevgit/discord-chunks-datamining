@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk918559 = require("./918559.js"),
   Chunk671982 = require("./671982.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,14 +35,14 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -88,7 +88,7 @@ let P = 490,
   x = 200,
   L = 120,
   j = Chunk647438.forwardRef(function(e, t) {
-    var n, a, T, A, R, j, M;
+    var n, a, S, A, R, j, M;
     let {
       channel: k,
       type: U,
@@ -99,7 +99,7 @@ let P = 490,
     } = e, V = (0, h.Dt)(), H = (0, l.e7)([E.Z], () => {
       var e;
       return null != (e = E.Z.getGuild(k.guild_id)) ? e : null
-    }, [k.guild_id]), Y = i.useRef(null), [W, K, z] = (0, O.Z)(C(S({}, e), {
+    }, [k.guild_id]), Y = i.useRef(null), [W, K, z] = (0, O.Z)(C(T({}, e), {
       guild: H
     }), t, Y), q = (null == (n = U.autocomplete) ? true : n.forceChatLayer) ? g.ZP : m.ZP, X = (0, _.DJ)(W.selectedIndex);
     (0, p.KR)(V, W.isVisible, X);
@@ -117,7 +117,7 @@ let P = 490,
     if (i.useEffect(() => {
         B(W.isVisible)
       }, [B, W.isVisible]), !W.isVisible || null == W.query || true === Q) return null;
-    let ee = null != (T = W.query.typeInfo.renderResults({
+    let ee = null != (S = W.query.typeInfo.renderResults({
       results: W.query.results,
       selectedIndex: W.selectedIndex,
       channel: k,
@@ -126,7 +126,7 @@ let P = 490,
       options: W.query.options,
       onHover: e => K.onResultHover(e),
       onClick: e => K.onResultClick(e)
-    })) ? T : null;
+    })) ? S : null;
     if (null == ee) return null;
     let et = {
         [I.autocompleteAttached]: null == Q,
@@ -151,7 +151,7 @@ let P = 490,
             var {
               ref: t
             } = e, n = N(e, ["ref"]);
-            return (0, r.jsx)(c.h21, C(S({
+            return (0, r.jsx)(c.h21, C(T({
               id: V,
               ref: e => {
                 var n;

@@ -117,22 +117,22 @@ function v(e) {
 }
 
 function I(e, t, n, r) {
-  let i = S(e);
+  let i = T(e);
   return {
-    name: T(t, n, r),
+    name: S(t, n, r),
     value: i,
     description: t === a.Jn ? A(e) : i
   }
 }
 
-function T(e, t, n) {
+function S(e, t, n) {
   let i = (0, r.nZ)(n);
   if (e === a.a0 || 0 === t.length) return i;
   let o = (0, r.nZ)(t);
   return `${i} (${o})`
 }
 
-function S(e) {
+function T(e) {
   return e instanceof DataView ? (0, r.oH)(e, 0, e.byteLength) : e
 }
 

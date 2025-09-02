@@ -149,8 +149,8 @@ function K(e) {
     embeddedApplication: O,
     otherClientSessionType: v,
     voicePlatform: I,
-    application: T,
-    guildId: S,
+    application: S,
+    guildId: T,
     channelId: A,
     user: C,
     disconnected: N,
@@ -220,7 +220,7 @@ function K(e) {
   }, "watch")), m && V.push((0, r.jsx)(E.ZP, {
     size: E.ZP.Sizes.SMALL
   }, "stream"));
-  let K = null != T && !(0, w.yE)(T.flags, L.udG.EMBEDDED),
+  let K = null != S && !(0, w.yE)(S.flags, L.udG.EMBEDDED),
     z = null == D && K;
   return 0 !== V.length || null != H || x || z ? (0, r.jsxs)("div", {
     className: o()(U.icons, t),
@@ -234,9 +234,9 @@ function K(e) {
       onMouseEnter: () => null == B ? true : B(true),
       onMouseLeave: () => null == B ? true : B(false),
       children: z ? (0, r.jsx)(X, {
-        application: T,
+        application: S,
         iconClassName: y,
-        guildId: S,
+        guildId: T,
         channelId: A,
         userId: C.id
       }, "".concat(C.id, "-game")) : (0, r.jsx)(Y, {
@@ -282,7 +282,7 @@ function z(e, t) {
     channelId: er
   } = y, {
     parentAnalyticsLocation: ei
-  } = (0, h.ZP)(), ea = (0, d.bp)(), eo = null != er ? A.Z.getChannel(er) : null, es = (0, s.e7)([S.default, C.Z], () => C.Z.isInChannel(er, S.default.getId())), {
+  } = (0, h.ZP)(), ea = (0, d.bp)(), eo = null != er ? A.Z.getChannel(er) : null, es = (0, s.e7)([T.default, C.Z], () => C.Z.isInChannel(er, T.default.getId())), {
     enabled: el
   } = x.P.useExperiment({
     location: "VoiceUser"
@@ -369,7 +369,7 @@ function z(e, t) {
   }
 
   function eO(e) {
-    null != z && null != eo && ((0, m.v)(ei, m.d.MORE), ed(true), (0, T.D)(e, en, eo, {
+    null != z && null != eo && ((0, m.v)(ei, m.d.MORE), ed(true), (0, S.D)(e, en, eo, {
       context: ea
     }, (e, t) => {
       (0, g.o)({

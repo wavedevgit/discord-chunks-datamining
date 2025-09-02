@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk313464 = require("./313464.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -48,7 +48,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -144,7 +144,7 @@ function L(e) {
   } = (0, O.dv)();
   return (0, r.jsx)(l.P3F, {
     role: "checkbox",
-    className: o()(t, T.enabled),
+    className: o()(t, S.enabled),
     onClick: n,
     "aria-checked": i,
     ref: a ? c : true,
@@ -167,7 +167,7 @@ function j(e) {
   } = (0, O.dv)();
   return (0, r.jsx)(l.P3F, {
     role: "radio",
-    className: o()(n, T.enabled),
+    className: o()(n, S.enabled),
     onClick: a,
     "aria-checked": s,
     tabIndex: t,
@@ -279,7 +279,7 @@ function U(e) {
   } = e, a = (0, m.n)(), o = _.QK.useSetting(), s = 212;
   return (0, r.jsx)(f.ZP, {
     className: i,
-    imageClassName: T.attachmentImage,
+    imageClassName: S.attachmentImage,
     src: null != n.proxy_url && "" !== n.proxy_url ? n.proxy_url : n.url,
     alt: null != (t = n.description) ? t : (0, E.fw)(n.filename),
     responsive: true,
@@ -384,11 +384,11 @@ function V(e) {
   } = e, a = {
     width: n,
     height: n,
-    background: T.radioBackground,
+    background: S.radioBackground,
     "aria-hidden": true
   };
   return t ? (0, r.jsx)(h.Z, N(A({}, a), {
-    foreground: T.radioForeground,
+    foreground: S.radioForeground,
     className: i
   })) : (0, r.jsx)(p.Z, N(A({}, a), {
     className: i
@@ -402,8 +402,8 @@ function H(e) {
     className: i
   } = e, a = .85 * n;
   return (0, r.jsx)("div", {
-    className: o()(T.checkbox, {
-      [T.checkboxSelected]: t
+    className: o()(S.checkbox, {
+      [S.checkboxSelected]: t
     }, i),
     style: {
       width: n,

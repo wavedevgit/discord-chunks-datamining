@@ -58,12 +58,12 @@ function I(e) {
   return null == t || t <= Date.now() + p
 }
 
-function T(e) {
+function S(e) {
   let t = l.Z.toURLSafe(e.url);
   return null != t && I(t)
 }
 
-function S(e) {
+function T(e) {
   if (null == e) returnfalse;
   let t = l.Z.toURLSafe(e.url);
   return null != t && !!b(t) && I(t)
@@ -71,11 +71,11 @@ function S(e) {
 
 function A(e) {
   var t;
-  return S(e.image) || (null == (t = e.images) ? true : t.some(S)) || S(e.video)
+  return T(e.image) || (null == (t = e.images) ? true : t.some(T)) || T(e.video)
 }
 
 function C(e) {
-  return e.attachments.some(T) || e.embeds.some(A)
+  return e.attachments.some(S) || e.embeds.some(A)
 }
 async function N(e) {
   let t = await o.tn.post({

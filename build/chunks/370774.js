@@ -4,7 +4,7 @@
 require.d(exports, {
   D: () => y,
   O4: () => v,
-  Tj: () => T,
+  Tj: () => S,
   YH: () => E,
   bl: () => b,
   j4: () => O,
@@ -105,6 +105,6 @@ function I() {
   return module && exports && (require > 0 || (0, Chunk175006.Z)())
 }
 
-function T(e, t) {
+function S(e, t) {
   return null != t && e.channelId === t.channelId && p.default.compare(e.id, t.messageId) >= 0
 }

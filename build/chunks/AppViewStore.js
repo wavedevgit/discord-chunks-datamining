@@ -2,7 +2,7 @@
 /** chunk id: 774343, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 });
 var r, i, a, o, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -79,7 +79,7 @@ class I extends(o = Chunk442837.ZP.Store) {
   }
 }
 h(I, "displayName", "AppViewStore");
-let T = new I(Chunk570140.Z, {
+let S = new I(Chunk570140.Z, {
   OVERLAY_INITIALIZE: g,
   APP_VIEW_SET_HOME_LINK: E,
   APPLICATION_STORE_LOCATION_CHANGE: y,

@@ -83,7 +83,7 @@ function O(e) {
   } = e;
   null == r.installations[t] && (r.installations[t] = {}), r.installations[t][n] = {
     installationPath: i
-  }, r.installationPaths.has(i) || T({
+  }, r.installationPaths.has(i) || S({
     path: i,
     metadata: {}
   })
@@ -109,14 +109,14 @@ function I(e) {
   delete r.installations[t][n], 0 === Object.keys(r.installations[t]).length && delete r.installations[t]
 }
 
-function T(e) {
+function S(e) {
   if (r.installationPaths.has(e.path)) returnfalse;
   g(e.path, e.metadata);
   let t = new Set(r.installationPaths);
   t.add(e.path), r.installationPaths = t
 }
 
-function S(e) {
+function T(e) {
   let {
     path: t
   } = e;
@@ -186,8 +186,8 @@ let R = new N(Chunk570140.Z, {
   DISPATCH_APPLICATION_INSTALL: O,
   DISPATCH_APPLICATION_UNINSTALL: I,
   DISPATCH_APPLICATION_CANCEL: v,
-  INSTALLATION_LOCATION_ADD: T,
-  INSTALLATION_LOCATION_REMOVE: S,
+  INSTALLATION_LOCATION_ADD: S,
+  INSTALLATION_LOCATION_REMOVE: T,
   INSTALLATION_LOCATION_UPDATE: A,
   INSTALLATION_LOCATION_FETCH_METADATA: C,
   DISPATCH_APPLICATION_ADD_TO_INSTALLATIONS: O

@@ -75,14 +75,14 @@ function I(e) {
   _[t] = _[t].filter(e => e.id !== n)
 }
 
-function T(e) {
+function S(e) {
   let {
     emojiId: t,
     userImage: n
   } = e;
   m.set(t, n)
 }
-class S extends(r = Chunk442837.ZP.Store) {
+class T extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk914010.Z)
   }
@@ -103,14 +103,14 @@ class S extends(r = Chunk442837.ZP.Store) {
     return m.get(e)
   }
 }
-d(S, "displayName", "GuildSettingsEmojiStore");
-let A = new S(Chunk570140.Z, {
+d(T, "displayName", "GuildSettingsEmojiStore");
+let A = new T(Chunk570140.Z, {
   EMOJI_DELETE: I,
   EMOJI_FETCH_SUCCESS: g,
   EMOJI_FETCH_FAILURE: E,
   EMOJI_UPLOAD_START: b,
   EMOJI_UPLOAD_STOP: y,
   EMOJI_FILE_INPUT_AUTO_OPEN: O,
-  EMOJI_CACHE_RAW_EMOJI_ASSET: T,
+  EMOJI_CACHE_RAW_EMOJI_ASSET: S,
   GUILD_EMOJIS_UPDATE: v
 })

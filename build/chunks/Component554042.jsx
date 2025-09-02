@@ -50,7 +50,7 @@ function y() {
   } = (0, Chunk442837.cj)([Chunk210887.Z, Chunk607070.Z], () => ({
     theme: Chunk210887.Z.theme,
     platformZoom: Chunk607070.Z.zoom
-  })), [y, O] = Chunk647438.useState("upright"), v = ["normal", "medium", "semibold", "bold", "extrabold"], I = [10, 12, 14, 15, 16, 18, 20, 24], T = new Map([
+  })), [y, O] = Chunk647438.useState("upright"), v = ["normal", "medium", "semibold", "bold", "extrabold"], I = [10, 12, 14, 15, 16, 18, 20, 24], S = new Map([
     ["normal", 400],
     ["medium", 500],
     ["semibold", 600],
@@ -62,7 +62,7 @@ function y() {
       exports(Math.round(window.outerWidth / window.innerWidth * 100))
     })
   }, []);
-  let S = Chunk358085.isPlatformEmbedded ? require : module,
+  let T = Chunk358085.isPlatformEmbedded ? require : module,
     A = (0, Chunk442837.e7)([Chunk304761.C], () => {
       var e, t;
       return (0, Chunk865427.fD)() ? null == (t = Chunk304761.C.getCurrentBuildOverride()) || null == (e = exports.overrides) ? true : module.discord_web : null
@@ -94,7 +94,7 @@ function y() {
             style: {
               display: "inline-block"
             },
-            children: ["Zoom: ", S, "%"]
+            children: ["Zoom: ", T, "%"]
           }), null != A ? (0, Chunk951288.jsxs)(Chunk481060.Text, {
             tag: "div",
             variant: "heading-lg/bold",
@@ -178,10 +178,10 @@ function y() {
             children: [(0, r.jsxs)(l.X6q, {
               variant: "eyebrow",
               children: [e, "px"]
-            }), 100 !== S ? (0, r.jsxs)(l.X6q, {
+            }), 100 !== T ? (0, r.jsxs)(l.X6q, {
               variant: "eyebrow",
               color: "text-muted",
-              children: ["(", e * S / 100, ")"]
+              children: ["(", e * T / 100, ")"]
             }) : null]
           }, e), v.map(t => {
             var n;
@@ -195,7 +195,7 @@ function y() {
                 }),
                 style: {
                   fontSize: e,
-                  fontWeight: T.get(t)
+                  fontWeight: S.get(t)
                 },
                 children: [(0, r.jsx)("p", {
                   children: i

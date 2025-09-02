@@ -65,11 +65,11 @@ module.exports = {
       prevSibling: O.key
     }));
     var I = [new m(O), new m(v)],
-      T = a.createFromArray(I),
-      S = c.replaceWithFragment(b, p, T),
-      A = S.merge({
+      S = a.createFromArray(I),
+      T = c.replaceWithFragment(b, p, S),
+      A = T.merge({
         selectionBefore: s,
-        selectionAfter: S.getSelectionAfter().set("hasFocus", true)
+        selectionAfter: T.getSelectionAfter().set("hasFocus", true)
       });
     return u.push(e, A, "insert-fragment")
   },

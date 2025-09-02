@@ -2,7 +2,7 @@
 /** chunk id: 920155, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  m: () => S,
+  m: () => T,
   q: () => A
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -77,9 +77,9 @@ function O(e, t) {
 }
 let v = 10,
   I = 4,
-  T = Chunk231338.Vq;
+  S = Chunk231338.Vq;
 
-function S(e) {
+function T(e) {
   var t;
   let {
     children: n,
@@ -88,7 +88,7 @@ function S(e) {
     onRequestClose: m,
     position: E = "top",
     align: O = "center",
-    hasVideo: S = false,
+    hasVideo: T = false,
     gradientColor: C,
     onPositionChange: N
   } = e, [R, P] = i.useState(p), [w, D] = i.useState(E), x = i.useRef(E), L = (0, l.e7)([f.Z], () => f.Z.getLayers()), j = null != (t = L[L.length - 1]) ? t : "base", M = i.useMemo(() => {
@@ -117,7 +117,7 @@ function S(e) {
           setDialogRef: t,
           modal: false,
           className: o()(null != C ? h.popoverContentWithGradient : h.popover, {
-            [h["popover--video"]]: S
+            [h["popover--video"]]: T
           }),
           returnRef: a,
           children: n
@@ -150,7 +150,7 @@ function S(e) {
     closeOnClickOutside: false,
     scrollBehavior: "sticky",
     renderPopout: G,
-    children: T
+    children: S
   })
 }
 let A = e => {

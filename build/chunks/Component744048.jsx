@@ -35,16 +35,16 @@ let v = function() {
       location: "AppRightSidePanel"
     }),
     {
-      activePanel: T,
-      metadata: S
+      activePanel: S,
+      metadata: T
     } = (0, Chunk550385.oq)(),
     A = [];
-  !module && null == T && (require && !exports && A.push(Chunk704215.z.CLIENT_THEMES_COACHMARK), v && A.push(Chunk704215.z.CUSTOM_THEME_COACHMARK));
+  !module && null == S && (require && !exports && A.push(Chunk704215.z.CLIENT_THEMES_COACHMARK), v && A.push(Chunk704215.z.CUSTOM_THEME_COACHMARK));
   let [C, N] = (0, Chunk243778.US)(A, Chunk921944.R.SIDEBAR, true), R = C === Chunk704215.z.CLIENT_THEMES_COACHMARK, P = C === Chunk704215.z.CUSTOM_THEME_COACHMARK;
   if ((0, Chunk507962.HA)(v, C), module) return null;
   let w = I ? Chunk884134.Z : Chunk726034.Z;
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [(T === Chunk550385.wh.CLIENT_THEMES || R) && (0, Chunk951288.jsx)(Chunk724145.Z, {
+    children: [(S === Chunk550385.wh.CLIENT_THEMES || R) && (0, Chunk951288.jsx)(Chunk724145.Z, {
       markAsDismissed: R ? N : () => {
         (0, Chunk266454.Q3)(Chunk704215.z.CLIENT_THEMES_COACHMARK, {
           dismissAction: Chunk921944.L.INDIRECT_ACTION,
@@ -52,11 +52,11 @@ let v = function() {
         })
       },
       showClientThemesCoachmark: R
-    }), T === Chunk550385.wh.APP_ICON && (0, Chunk951288.jsx)(Chunk907459.Z, {
+    }), S === Chunk550385.wh.APP_ICON && (0, Chunk951288.jsx)(Chunk907459.Z, {
       isCoachmark: false,
       markAsDismissed: N
-    }), (T === Chunk550385.wh.CUSTOM_THEME || P) && (0, Chunk951288.jsx)(w, {
-      metadata: null != S ? S : {},
+    }), (S === Chunk550385.wh.CUSTOM_THEME || P) && (0, Chunk951288.jsx)(w, {
+      metadata: null != T ? T : {},
       markAsDismissed: N,
       isCoachmark: P
     })]

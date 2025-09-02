@@ -89,7 +89,7 @@ function B(e) {
     isGift: l = false,
     priceOptions: c,
     isApplicationHome: d = false
-  } = e, _ = (0, s.e7)([g.Z], () => g.Z.getPremiumTypeSubscription()), p = (0, s.e7)([m.default], () => m.default.getCurrentUser()), h = (0, I.N)(), b = null == h || null == (t = h.subscription_trial) ? true : t.sku_id, y = (null == _ ? true : _.hasActiveTrial) ? null == p ? true : p.premiumType : null, O = (0, C.y_)(y, b), v = null != O, T = (0, u.ap)((0, f.ZP)());
+  } = e, _ = (0, s.e7)([g.Z], () => g.Z.getPremiumTypeSubscription()), p = (0, s.e7)([m.default], () => m.default.getCurrentUser()), h = (0, I.N)(), b = null == h || null == (t = h.subscription_trial) ? true : t.sku_id, y = (null == _ ? true : _.hasActiveTrial) ? null == p ? true : p.premiumType : null, O = (0, C.y_)(y, b), v = null != O, S = (0, u.ap)((0, f.ZP)());
   return (0, r.jsxs)("div", {
     className: a()(D.card, D.tier0, o, {
       [D.pillMargin]: !d && v
@@ -99,7 +99,7 @@ function B(e) {
       className: D.pill
     }), (0, r.jsx)(E.Z, {
       className: D.wordmark,
-      color: T ? "black" : "white"
+      color: S ? "black" : "white"
     }), (0, r.jsx)(R.Z, {
       isGift: l,
       premiumTier: P.p9.TIER_0,
@@ -132,8 +132,8 @@ function Z(e) {
     priceOptions: p,
     showPromotionalGiftBanner: h = false,
     wumpusPosition: E = "inCard",
-    isApplicationHome: T = false
-  } = e, S = (0, s.e7)([g.Z], () => g.Z.getPremiumTypeSubscription()), M = (0, s.e7)([m.default], () => m.default.getCurrentUser()), k = (0, I.N)(), U = null == k || null == (t = k.subscription_trial) ? true : t.sku_id, G = (null == S ? true : S.hasActiveTrial) ? null == M ? true : M.premiumType : null, B = (0, v.Ng)(), Z = (0, y.t7)(), F = null != U || null != G ? P.C.PREMIUM_TRIAL : null != B || Z ? P.C.PREMIUM_DISCOUNT : null, V = (0, u.ap)((0, f.ZP)()), H = (0, C.A1)(Z, G, B, k, U), Y = () => (0, r.jsxs)(r.Fragment, {
+    isApplicationHome: S = false
+  } = e, T = (0, s.e7)([g.Z], () => g.Z.getPremiumTypeSubscription()), M = (0, s.e7)([m.default], () => m.default.getCurrentUser()), k = (0, I.N)(), U = null == k || null == (t = k.subscription_trial) ? true : t.sku_id, G = (null == T ? true : T.hasActiveTrial) ? null == M ? true : M.premiumType : null, B = (0, v.Ng)(), Z = (0, y.t7)(), F = null != U || null != G ? P.C.PREMIUM_TRIAL : null != B || Z ? P.C.PREMIUM_DISCOUNT : null, V = (0, u.ap)((0, f.ZP)()), H = (0, C.A1)(Z, G, B, k, U), Y = () => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("img", {
       src: L,
       alt: "",
@@ -177,7 +177,7 @@ function Z(e) {
       isModal: _,
       isGift: d,
       enablePremiumBrandRefresh: true,
-      isApplicationHome: T,
+      isApplicationHome: S,
       firstFeatureItemClassName: "inCard" === E ? D.firstFeatureItemContainer : true
     }), n, h && (0, r.jsx)(O.f, {})]
   })
@@ -191,7 +191,7 @@ let F = e => {
   } = e, s = t === P.Si.TIER_2, c = s ? Z : B, {
     subscribeButtonProps: u,
     subscriptionTier: f
-  } = (0, S.G)({
+  } = (0, T.G)({
     subscriptionTier: t,
     variantOverride: s ? "expressive" : "secondary"
   }), {
@@ -217,7 +217,7 @@ let F = e => {
   });
   return (0, r.jsx)("div", {
     className: o,
-    children: _ ? h : (0, r.jsx)(T.Z, {
+    children: _ ? h : (0, r.jsx)(S.Z, {
       subscriptionTier: f,
       children: e => {
         let {

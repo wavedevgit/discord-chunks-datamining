@@ -32,15 +32,15 @@ function E(e) {
   } = e, {
     analyticsLocations: v
   } = (0, c.ZP)(), I = null != n, {
-    userAvatarDecoration: T,
-    guildAvatarDecoration: S,
+    userAvatarDecoration: S,
+    guildAvatarDecoration: T,
     pendingAvatarDecoration: A,
     pendingErrors: C
   } = (0, p.$U)(t, n), N = (0, f.Z)("enable_avatar_decoration_uploads"), R = i.useCallback(() => (0, d.ps)({
     analyticsLocations: v,
     isTryItOutFlow: O,
     guild: n
-  }), [v, O, n]), P = O || true !== A ? null != A : (I ? S : T) != null;
+  }), [v, O, n]), P = O || true !== A ? null != A : (I ? T : S) != null;
 
   function w() {
     (0, p.PO)(null == n ? true : n.id, null)

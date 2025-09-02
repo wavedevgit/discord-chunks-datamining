@@ -30,14 +30,14 @@ var Chunk98405 = require("./98405.js"),
   O = "stack" in new g(m),
   v = "stack" in new E(1, 2),
   I = E && Chunk507604 && Object.getOwnPropertyDescriptor(Chunk127849, m),
-  T = !!I && !(I.writable && I.configurable),
-  S = O && !T && !v;
+  S = !!I && !(I.writable && I.configurable),
+  T = O && !S && !v;
 Chunk98405({
   global: true,
   constructor: true,
-  forced: Chunk511696 || S
+  forced: Chunk511696 || T
 }, {
-  DOMException: S ? b : E
+  DOMException: T ? b : E
 });
 var A = Chunk154028(m),
   C = A.prototype;

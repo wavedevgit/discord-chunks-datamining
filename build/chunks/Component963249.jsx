@@ -47,7 +47,7 @@ function I(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,8 +58,8 @@ function T(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+function T(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -87,7 +87,7 @@ function N(e) {
     initialPlanId: t,
     followupSKUInfo: i,
     onClose: v,
-    onComplete: T,
+    onComplete: S,
     onSubscriptionConfirmation: C,
     analyticsLocations: N,
     analyticsObject: R,
@@ -118,7 +118,7 @@ function N(e) {
       var {
         onClose: a
       } = n, o = A(n, ["onClose"]);
-      return (0, r.jsx)(e, S(I({}, o), {
+      return (0, r.jsx)(e, T(I({}, o), {
         loadId: q,
         subscriptionTier: U,
         skuId: $,
@@ -143,7 +143,7 @@ function N(e) {
           }, b.P) : n()
         },
         onComplete: e => {
-          z = true, null == T || T(), (0, p.M)(L, Q, (0, E.k5)(null == e ? true : e.subscription)) && (0, f.H)(true)
+          z = true, null == S || S(), (0, p.M)(L, Q, (0, E.k5)(null == e ? true : e.subscription)) && (0, f.H)(true)
         },
         onSubscriptionConfirmation: C,
         analyticsLocations: N,

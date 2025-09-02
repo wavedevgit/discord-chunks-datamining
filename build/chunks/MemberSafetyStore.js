@@ -50,7 +50,7 @@ function I(e) {
   O(t.id, n.isInitialized)
 }
 
-function T(e) {
+function S(e) {
   let {
     guild: {
       id: t
@@ -59,7 +59,7 @@ function T(e) {
   O(t)
 }
 
-function S() {
+function T() {
   returnfalse
 }
 
@@ -405,10 +405,10 @@ let J = new Q(Chunk570140.Z, {
   CACHE_LOADED: Z,
   PASSIVE_UPDATE_V2: V,
   GUILD_CREATE: I,
-  GUILD_DELETE: T,
+  GUILD_DELETE: S,
   GUILD_MEMBERS_CHUNK_BATCH: C,
-  GUILD_MEMBER_ADD: S,
-  GUILD_MEMBER_UPDATE: S,
+  GUILD_MEMBER_ADD: T,
+  GUILD_MEMBER_UPDATE: T,
   GUILD_MEMBER_UPDATE_LOCAL: N,
   GUILD_MEMBER_REMOVE: R,
   GUILD_ROLE_UPDATE: P,

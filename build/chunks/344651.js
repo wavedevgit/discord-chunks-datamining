@@ -168,7 +168,7 @@ function K(e) {
       selfStream: i.self_stream || false,
       requestToSpeakTimestamp: null != (n = i.request_to_speak_timestamp) ? n : null,
       discoverable: null == (r = i.discoverable) || r,
-      oldChannelId: S.Z.getUserVoiceChannelId(i.guild_id, i.user_id)
+      oldChannelId: T.Z.getUserVoiceChannelId(i.guild_id, i.user_id)
     })
   }
   z({
@@ -273,7 +273,7 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
   m.Z.initialGuild.measure(() => {
     a.ZP.Emitter.batched(() => {
       let t = R.Fx(e, w.Wb.identifyStartTime);
-      null != T.default.getCurrentUser() && (z({
+      null != S.default.getCurrentUser() && (z({
         type: "GUILD_CREATE",
         guild: t
       }), z({

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   $6: () => P,
-  MP: () => S,
+  MP: () => T,
   Mg: () => O,
   Nl: () => N,
   Ns: () => b,
@@ -115,7 +115,7 @@ function I(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     mid: t,
     type: n,
@@ -195,9 +195,9 @@ function T(e) {
         payload: l,
         rate: 9e4
       });
-      let T = "x-google-max-bitrate=".concat(c);
-      s === _.ad.H264 ? T += ";level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f" : s === _.ad.H265 && (T += ";level-id=180;profile-id=1;tier-flag=0;tx-mode=SRST"), v.fmtp.push({
-        config: T,
+      let S = "x-google-max-bitrate=".concat(c);
+      s === _.ad.H264 ? S += ";level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f" : s === _.ad.H265 && (S += ";level-id=180;profile-id=1;tier-flag=0;tx-mode=SRST"), v.fmtp.push({
+        config: S,
         payload: l
       }), v.rtcpFb = [{
         type: "ccm",
@@ -228,7 +228,7 @@ function T(e) {
   return v
 }
 
-function S(e) {
+function T(e) {
   let {
     type: t,
     baseSDP: n,
@@ -251,7 +251,7 @@ function S(e) {
       let g = "audio" === f ? i : s,
         E = "audio" === f ? a : l,
         b = "audio" === f ? o : c;
-      p.push(T({
+      p.push(S({
         mid: m,
         type: f,
         setup: e,
@@ -273,7 +273,7 @@ function S(e) {
         let [t, n] = e;
         return v(n, t, "a")
       });
-    if (p.push(T({
+    if (p.push(S({
         mid: "audio",
         type: "audio",
         setup: e,
@@ -292,7 +292,7 @@ function S(e) {
         let [t, n] = e;
         return v(n, t, "v")
       });
-      p.push(T({
+      p.push(S({
         mid: "video",
         type: "video",
         setup: e,
@@ -341,8 +341,8 @@ function A(e) {
     let y = "audio" === g ? r : o,
       O = "audio" === g ? i : s,
       I = "audio" === g ? null : u,
-      S = "audio" === g ? a : l;
-    p.push(T({
+      T = "audio" === g ? a : l;
+    p.push(S({
       mid: b,
       type: g,
       setup: h,
@@ -350,7 +350,7 @@ function A(e) {
       baseSDP: n,
       codec: y,
       payload: O,
-      bitrate: S,
+      bitrate: T,
       ssrcs: t,
       extensions: f,
       rtxPayload: I,

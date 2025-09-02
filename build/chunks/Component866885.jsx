@@ -86,7 +86,7 @@ function V(e) {
   let {
     channel: _,
     isLoading: p
-  } = e, [C, G] = i.useState(false), B = (0, s.e7)([S.ZP], () => S.ZP.getCurrentEmbeddedActivity()), Z = (0, s.e7)([S.ZP], () => S.ZP.getActivityPanelMode()), F = (0, h.q)(null == B ? true : B.applicationId), V = null == B ? true : B.launchId, H = (0, s.e7)([v.Z], () => v.Z.getChannelId() === (null == _ ? true : _.id)), {
+  } = e, [C, G] = i.useState(false), B = (0, s.e7)([T.ZP], () => T.ZP.getCurrentEmbeddedActivity()), Z = (0, s.e7)([T.ZP], () => T.ZP.getActivityPanelMode()), F = (0, h.q)(null == B ? true : B.applicationId), V = null == B ? true : B.launchId, H = (0, s.e7)([v.Z], () => v.Z.getChannelId() === (null == _ ? true : _.id)), {
     dockedRect: Y,
     isHidden: W
   } = (0, s.cj)([O.Z], () => {
@@ -154,7 +154,7 @@ function V(e) {
       onMouseDown: n,
       onMouseLeave: i,
       onJumpToChannel: () => {
-        ei(), (0, T.tg)(x.Ez.PANEL)
+        ei(), (0, S.tg)(x.Ez.PANEL)
       },
       channel: _,
       applicationId: B.applicationId,
@@ -256,7 +256,7 @@ let H = e => {
   var {
     channel: t
   } = e, n = Z(e, ["channel"]);
-  let i = S.ZP.getCurrentEmbeddedActivity();
+  let i = T.ZP.getCurrentEmbeddedActivity();
   (0, C.Z)({
     connectedEmbeddedActivity: i
   });

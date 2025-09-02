@@ -63,7 +63,7 @@ function v(e, t) {
 
 function I(e, t) {
   if (null == e) return {};
-  var n, r, i = T(e, t);
+  var n, r, i = S(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -71,14 +71,14 @@ function I(e, t) {
   return i
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let S = [Chunk409813.h8.PAYMENT_ELEMENT],
+let T = [Chunk409813.h8.PAYMENT_ELEMENT],
   A = Chunk647438.memo(function(e) {
     var {
       originalPaymentType: t,
@@ -181,7 +181,7 @@ let S = [Chunk409813.h8.PAYMENT_ELEMENT],
     i.useEffect(() => {
       c.current = p
     }, [p, c]);
-    let h = S.includes(t) && null != f,
+    let h = T.includes(t) && null != f,
       m = t === d.h8.ADDRESS;
     return (0, r.jsxs)("div", {
       className: E.body,

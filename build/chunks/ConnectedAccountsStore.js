@@ -65,7 +65,7 @@ function I(e) {
   v(e.connectedAccounts.map(e => new l.Z(e)))
 }
 
-function T(e) {
+function S(e) {
   e.local && null != e.accounts ? v(e.accounts.map(e => new l.Z(_(d({}, e), {
     integrations: e.integrations.map(e => _(d({}, e), {
       guild: (0, c.yS)(_(d({}, e.guild), {
@@ -75,7 +75,7 @@ function T(e) {
   })))) : o.Z.fetch()
 }
 
-function S(e) {
+function T(e) {
   E[e.integrationId] = e.joining
 }
 
@@ -145,8 +145,8 @@ class R extends(r = Chunk442837.ZP.Store) {
 u(R, "displayName", "ConnectedAccountsStore");
 let P = new R(Chunk570140.Z, {
   CONNECTION_OPEN: I,
-  USER_CONNECTIONS_UPDATE: T,
-  USER_CONNECTIONS_INTEGRATION_JOINING: S,
+  USER_CONNECTIONS_UPDATE: S,
+  USER_CONNECTIONS_INTEGRATION_JOINING: T,
   USER_CONNECTION_UPDATE: C,
   USER_CONNECTIONS_INTEGRATION_JOINING_ERROR: A,
   USER_CONNECTIONS_CALLBACK: N

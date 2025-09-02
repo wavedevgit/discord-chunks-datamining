@@ -75,8 +75,8 @@ function y(e, t) {
 let O = "US",
   v = "CA",
   I = 5,
-  T = ["AE", "AG", "AN", "AO", "AW", "BF", "BI", "BJ", "BM", "BO", "BQ", "BS", "BW", "BZ", "CD", "CF", "CG", "CI", "CK", "CM", "CW", "DJ", "DM", "ER", "FJ", "GA", "GD", "GH", "GM", "GQ", "GY", "HK", "HM", "IE", "JM", "KE", "KI", "KM", "KN", "KP", "LY", "ML", "MO", "MR", "MW", "NA", "NR", "NU", "QA", "RW", "SB", "SC", "SL", "SR", "ST", "SX", "SY", "TD", "TF", "TG", "TK", "TL", "TO", "TV", "UG", "VU", "YE", "ZA", "ZW"],
-  S = Chunk217986.Z.map(e => ({
+  S = ["AE", "AG", "AN", "AO", "AW", "BF", "BI", "BJ", "BM", "BO", "BQ", "BS", "BW", "BZ", "CD", "CF", "CG", "CI", "CK", "CM", "CW", "DJ", "DM", "ER", "FJ", "GA", "GD", "GH", "GM", "GQ", "GY", "HK", "HM", "IE", "JM", "KE", "KI", "KM", "KN", "KP", "LY", "ML", "MO", "MR", "MW", "NA", "NR", "NU", "QA", "RW", "SB", "SC", "SL", "SR", "ST", "SX", "SY", "TD", "TF", "TG", "TK", "TL", "TO", "TV", "UG", "VU", "YE", "ZA", "ZW"],
+  T = Chunk217986.Z.map(e => ({
     value: e.alpha2,
     label: e.name
   })).filter(e => "KP" !== e.value && "SY" !== e.value),
@@ -129,7 +129,7 @@ let j = {
         autoFocus: true,
         maxVisibleItems: 8,
         isDisabled: "edit" === t.mode,
-        options: S,
+        options: T,
         onChange: t => {
           null != n && n(t, e.name)
         }
@@ -381,7 +381,7 @@ class H extends(r = Chunk647438.PureComponent) {
         e && !n.postalCode || this.hasValue(t.postalCode) || (r.postalCode = _.intl.string(_.t.LRlhb2)), e && !n.state || this.hasValue(t.state) || (r.state = _.intl.string(_.t.PsJCcn));
         break;
       default:
-        e && !n.postalCode || this.hasValue(t.postalCode) || T.includes(null != i ? i : "") || (r.postalCode = _.intl.string(_.t.LRlhb2))
+        e && !n.postalCode || this.hasValue(t.postalCode) || S.includes(null != i ? i : "") || (r.postalCode = _.intl.string(_.t.LRlhb2))
     }
     return r
   }

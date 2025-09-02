@@ -42,7 +42,7 @@ var Chunk703656 = require("./703656.js"),
 require("./215023.js");
 var Chunk981631 = require("./981631.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -58,7 +58,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -87,7 +87,7 @@ let R = e => {
       openInLayer: t = true,
       tab: n
     } = e;
-    P(C(e, ["openInLayer", "tab"])), t ? (0, l.jN)(T.S9g.COLLECTIBLES_SHOP) : (0, d.uL)(n ? T.Z5c.COLLECTIBLES_SHOP_WITH_TAB(n) : T.Z5c.COLLECTIBLES_SHOP)
+    P(C(e, ["openInLayer", "tab"])), t ? (0, l.jN)(S.S9g.COLLECTIBLES_SHOP) : (0, d.uL)(n ? S.Z5c.COLLECTIBLES_SHOP_WITH_TAB(n) : S.Z5c.COLLECTIBLES_SHOP)
   },
   P = e => {
     s.Z.dispatch(A({
@@ -125,7 +125,7 @@ let R = e => {
     try {
       let a = (0, p.i)("CollectiblesActionCreators"),
         l = await o.tn.get({
-          url: a ? T.ANM.COLLECTIBLES_CATEGORIES_V2 : T.ANM.COLLECTIBLES_CATEGORIES,
+          url: a ? S.ANM.COLLECTIBLES_CATEGORIES_V2 : S.ANM.COLLECTIBLES_CATEGORIES,
           query: r,
           rejectWithError: true
         });
@@ -161,7 +161,7 @@ let R = e => {
     t && (0, f.v)("fetchCollectiblesPurchases started, options: ".concat(JSON.stringify(e, null, 2)));
     try {
       let n = {
-        url: T.ANM.COLLECTIBLES_PURCHASES,
+        url: S.ANM.COLLECTIBLES_PURCHASES,
         rejectWithError: true
       };
       (null == e ? true : e.variantsReturnStyle) === a.v.VARIANTS_GROUP && (n.query = {
@@ -188,7 +188,7 @@ let R = e => {
       let n = {};
       (null == t ? true : t.countryCode) !== null && (n.country_code = null == t ? true : t.countryCode), (null == t ? true : t.paymentGateway) !== null && (n.payment_gateway = null == t ? true : t.paymentGateway);
       let r = await o.tn.get({
-        url: T.ANM.COLLECTIBLES_PRODUCTS(e),
+        url: S.ANM.COLLECTIBLES_PRODUCTS(e),
         query: n,
         rejectWithError: true
       });
@@ -213,7 +213,7 @@ let R = e => {
     try {
       var t;
       let n = await o.tn.put({
-        url: T.ANM.COLLECTIBLES_CLAIM,
+        url: S.ANM.COLLECTIBLES_CLAIM,
         body: {
           sku_id: e
         },
@@ -235,7 +235,7 @@ let R = e => {
   }, G = async (e, t) => {
     try {
       return (await o.tn.get({
-        url: T.ANM.COLLECTIBLES_VALID_GIFT_RECIPIENT,
+        url: S.ANM.COLLECTIBLES_VALID_GIFT_RECIPIENT,
         query: {
           sku_id: t,
           recipient_id: e
@@ -258,7 +258,7 @@ let R = e => {
     t !== i.P.PROD && (n.release = t);
     try {
       let e = await o.tn.get({
-        url: T.ANM.COLLECTIBLES_MARKETING,
+        url: S.ANM.COLLECTIBLES_MARKETING,
         query: n,
         rejectWithError: true
       });
@@ -288,7 +288,7 @@ let R = e => {
     });
     try {
       let i = await o.tn.get({
-        url: T.ANM.COLLECTIBLES_SHOP,
+        url: S.ANM.COLLECTIBLES_SHOP,
         query: r,
         rejectWithError: true
       });

@@ -127,7 +127,7 @@ function Y() {
 function W(e) {
   if (r = e.sessionId, null != s) {
     let e = O.Z.getChannel(s);
-    null != e && S.Z.can(_.$e(C.Plq.VIEW_CHANNEL, C.Plq.CONNECT), e) || (s = null)
+    null != e && T.Z.can(_.$e(C.Plq.VIEW_CHANNEL, C.Plq.CONNECT), e) || (s = null)
   }
   Y() && Z()
 }

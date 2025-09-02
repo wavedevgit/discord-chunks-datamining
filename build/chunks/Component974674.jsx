@@ -64,9 +64,9 @@ function I(e, t) {
   }), e
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
-  var n, r, i = S(e, t);
+  var n, r, i = T(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -74,7 +74,7 @@ function T(e, t) {
   return i
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -95,7 +95,7 @@ function N(e) {
     size: t,
     isMobile: n,
     isTyping: i
-  } = e, a = T(e, ["size", "isMobile", "isTyping"]);
+  } = e, a = S(e, ["size", "isMobile", "isTyping"]);
   let o = (0, g.UC)(t),
     s = o.status * (n && !i ? g.EW : 1),
     l = o.status * (i ? g.D6 : 1),
@@ -369,11 +369,11 @@ function M(e) {
     isTyping: O = false,
     avatarDecoration: v,
     typingOffset: I,
-    specs: T
-  } = e, S = {
+    specs: S
+  } = e, T = {
     width: (0, g.px)(n),
     height: (0, g.px)(n)
-  }, A = null == p || h ? true : R(p, E, y), C = T.size * m.hs, N = P(E, n, y, O), w = null != v && (0, r.jsx)("svg", {
+  }, A = null == p || h ? true : R(p, E, y), C = S.size * m.hs, N = P(E, n, y, O), w = null != v && (0, r.jsx)("svg", {
     width: C + I,
     height: C,
     viewBox: "0 0 ".concat(C + I, " ").concat(C),
@@ -398,7 +398,7 @@ function M(e) {
   });
   return null != i || null != a ? (0, r.jsxs)(c.P, {
     className: o()(b.wrapper, b.pointer, f),
-    style: S,
+    style: T,
     onClick: i,
     tabIndex: _,
     onContextMenu: l,
@@ -411,7 +411,7 @@ function M(e) {
     children: [t, w]
   }) : (0, r.jsxs)("div", {
     className: o()(b.wrapper, f),
-    style: S,
+    style: T,
     onContextMenu: null != l ? l : true,
     onMouseEnter: null != u ? u : true,
     onMouseLeave: null != d ? d : true,
@@ -455,14 +455,14 @@ function U(e) {
     statusTooltip: E = false,
     statusTooltipDelay: y,
     statusBackdropColor: v,
-    "aria-hidden": T = false,
-    "aria-label": S,
+    "aria-hidden": S = false,
+    "aria-label": T,
     imageClassName: A,
     ref: C
   } = e, N = n !== h.Skl.UNKNOWN ? n : null, R = (0, g.UC)(i), P = null != N ? Math.ceil((R.status * g.D6 - R.status) / 2) : 0, x = R.size + P, j = (0, d.vj)(N, a);
   return (0, r.jsx)(M, I(O({}, e), {
-    ariaLabel: S,
-    ariaHidden: T,
+    ariaLabel: T,
+    ariaHidden: S,
     status: N,
     specs: R,
     typingOffset: P,
@@ -536,7 +536,7 @@ function Z(e) {
     size: E,
     src: y,
     status: v,
-    statusColor: S,
+    statusColor: T,
     statusTooltip: R = false,
     statusTooltipDelay: P,
     statusBackdropColor: w,
@@ -544,7 +544,7 @@ function Z(e) {
     "aria-label": x,
     imageClassName: U,
     pulseStatusIcon: Z
-  } = e, F = (0, d.vj)(v, S), V = i.useId(), H = i.useId(), [Y] = i.useState(() => O({
+  } = e, F = (0, d.vj)(v, T), V = i.useId(), H = i.useId(), [Y] = i.useState(() => O({
     fill: a
   }, j({
     size: E,
@@ -569,7 +569,7 @@ function Z(e) {
     avatarCutoutHeight: Q,
     avatarCutoutRadius: J,
     fill: $
-  } = K, ee = T(K, ["avatarCutoutX", "avatarCutoutY", "avatarCutoutWidth", "avatarCutoutHeight", "avatarCutoutRadius", "fill"]), et = (0, g.px)(E), en = (0, g.UC)(E), er = en.status * g.D6, ei = en.status * g.EW, ea = null != v ? (en.status * g.D6 - en.status) / 2 : 0, eo = en.size + Math.ceil(ea), [es, el, ec] = (0, l.q)({
+  } = K, ee = S(K, ["avatarCutoutX", "avatarCutoutY", "avatarCutoutWidth", "avatarCutoutHeight", "avatarCutoutRadius", "fill"]), et = (0, g.px)(E), en = (0, g.UC)(E), er = en.status * g.D6, ei = en.status * g.EW, ea = null != v ? (en.status * g.D6 - en.status) / 2 : 0, eo = en.size + Math.ceil(ea), [es, el, ec] = (0, l.q)({
     config: {
       tension: 450,
       friction: 20,
@@ -672,7 +672,7 @@ let V = Chunk647438.memo(function(e) {
   var {
     statusColor: t,
     status: n
-  } = e, a = T(e, ["statusColor", "status"]);
+  } = e, a = S(e, ["statusColor", "status"]);
   let {
     isMobile: o = false,
     isTyping: s = false

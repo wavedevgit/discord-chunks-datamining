@@ -63,9 +63,9 @@ function I(e, t) {
   }), e
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
-  var n, r, i = S(e, t);
+  var n, r, i = T(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -73,7 +73,7 @@ function T(e, t) {
   return i
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -122,7 +122,7 @@ function C(e) {
       var {
         onMouseEnter: i,
         onMouseLeave: _
-      } = e, p = T(e, ["onMouseEnter", "onMouseLeave"]);
+      } = e, p = S(e, ["onMouseEnter", "onMouseLeave"]);
       return (0, r.jsx)(l.P3F, I(O({}, p), {
         className: o()(n, b.ctaReactionButton),
         onClick: f,
@@ -160,13 +160,13 @@ function N(e) {
     message: n,
     compact: a,
     usernameHook: o
-  } = e, c = n.content, [_, y] = i.useState(false), O = (0, u.ZP)(n), v = o(O), I = (0, m.xE)(c), T = i.useCallback(() => {
+  } = e, c = n.content, [_, y] = i.useState(false), O = (0, u.ZP)(n), v = o(O), I = (0, m.xE)(c), S = i.useCallback(() => {
     null != I && h.S.dispatchToLastSubscribed(g.CkL.INSERT_TEXT, {
       plainText: ":".concat(I.name, ":"),
       rawText: c,
       addSpace: true
     })
-  }, [I, c]), S = i.useMemo(() => {
+  }, [I, c]), T = i.useMemo(() => {
     var e;
     return null == I ? null : {
       src: p.ZP.getEmojiURL({
@@ -189,20 +189,20 @@ function N(e) {
     compact: a,
     contentClassName: b.content,
     children: (0, r.jsx)("span", {
-      children: null == I || null == S ? E.intl.format(E.t.k6Jc9f, {
+      children: null == I || null == T ? E.intl.format(E.t.k6Jc9f, {
         username: O.nick,
         usernameHook: v
       }) : E.intl.format(E.t.IihHBw, {
         username: O.nick,
         usernameHook: v,
         emojiPreview: (0, r.jsx)(d.Y, {
-          node: S,
+          node: T,
           isInteracting: _
         }),
         emojiName: (0, r.jsx)(l.P3F, {
           className: b.clickableEmoji,
           tag: "span",
-          onClick: T,
+          onClick: S,
           onMouseEnter: () => y(true),
           onMouseLeave: () => y(false),
           children: (0, r.jsx)(l.Text, {

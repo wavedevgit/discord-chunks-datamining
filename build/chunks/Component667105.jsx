@@ -96,7 +96,7 @@ function M(e) {
       questContentPosition: r,
       questContentRowIndex: a,
       sourceQuestContent: s
-    }), (0, m.xN)(t.config) && !u ? (0, C.B)() : c ? (0, m.Bg)(t.config) ? (0, S.openQuestsNitroRewardModal)(t, n) : (0, m.Xv)(t.config) ? (0, A.m)(t, n) : (0, m.vQ)(t.config) ? (0, S.openQuestInGameRewardModal)(t, n, s) : (0, m.xN)(t.config) ? (0, S.openQuestOrbsRewardModal)(t, n) : (0, S.openQuestsRewardCodeModal)({
+    }), (0, m.xN)(t.config) && !u ? (0, C.B)() : c ? (0, m.Bg)(t.config) ? (0, T.openQuestsNitroRewardModal)(t, n) : (0, m.Xv)(t.config) ? (0, A.m)(t, n) : (0, m.vQ)(t.config) ? (0, T.openQuestInGameRewardModal)(t, n, s) : (0, m.xN)(t.config) ? (0, T.openQuestOrbsRewardModal)(t, n) : (0, T.openQuestsRewardCodeModal)({
       questId: t.id,
       questContent: n,
       questContentPosition: r,
@@ -242,7 +242,7 @@ function B(e) {
                 questContentPosition: s,
                 questContentRowIndex: f,
                 sourceQuestContent: v
-              }), (0, S.openPushToPhoneModal)(n);
+              }), (0, T.openPushToPhoneModal)(n);
               return
             }
             b || (0, g.AH)(n.id, {
@@ -251,7 +251,7 @@ function B(e) {
               questContentPosition: s,
               questContentRowIndex: f,
               sourceQuestContent: v
-            }), b ? (0, T.R)(N.dr.QUEST_HOME_DESKTOP) ? await (0, S.enrollAndStartVideoQuestWithErrorHandling)(n, {
+            }), b ? (0, S.R)(N.dr.QUEST_HOME_DESKTOP) ? await (0, T.enrollAndStartVideoQuestWithErrorHandling)(n, {
               questContent: o,
               questContentCTA: t,
               sourceQuestContent: v,
@@ -264,7 +264,7 @@ function B(e) {
               questContentPosition: s,
               questContentRowIndex: f,
               sourceQuestContent: v
-            }), (0, S.openVideoQuestModal)({
+            }), (0, T.openVideoQuestModal)({
               quest: n,
               questContent: o,
               sourceQuestContent: v,
@@ -292,13 +292,13 @@ function B(e) {
           text: w.intl.string(w.t.IsH2Sk),
           tooltipText: null,
           onClick: () => {
-            (0, S.openPushToPhoneModal)(n)
+            (0, T.openPushToPhoneModal)(n)
           }
         };
         if (b) return {
           text: (0, m.F9)(C),
           tooltipText: w.intl.string(w.t.hsbwjo),
-          onClick: () => (0, S.openVideoQuestModal)({
+          onClick: () => (0, T.openVideoQuestModal)({
             quest: n,
             questContent: o,
             sourceQuestContent: v,

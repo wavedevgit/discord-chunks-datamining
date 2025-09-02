@@ -32,15 +32,15 @@ let {
 } = Chunk915840.V, {
   Shadows: I
 } = Chunk868858.V, {
-  Spacing: T
+  Spacing: S
 } = Chunk897710.V, {
-  Modules: S
+  Modules: T
 } = Chunk387117.V, {
   Layout: A,
   Space: C
 } = Chunk196548.VV, N = l()(y, e => i()(e)), R = {
   themes: E,
-  modules: S,
+  modules: T,
   colors: l()(b, (e, t) => {
     let n = t;
     return {
@@ -87,7 +87,7 @@ let {
     })
   })),
   radii: Chunk949180.w,
-  spacing: l()(T, e => "".concat(e, "px")),
+  spacing: l()(S, e => "".concat(e, "px")),
   layout: l()(A, e => "number" == typeof e ? "".concat(e, "px") : e),
   space: l()(C, e => ({
     css: e.css,

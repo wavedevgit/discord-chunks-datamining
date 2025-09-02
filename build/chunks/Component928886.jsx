@@ -35,8 +35,8 @@ function I(e) {
     referralTrialOfferId: a,
     handleClose: I
   } = e, {
-    selectedSkuId: T,
-    step: S,
+    selectedSkuId: S,
+    step: T,
     selectedPlan: A,
     purchaseState: C,
     purchaseType: N,
@@ -47,9 +47,9 @@ function I(e) {
     isGift: D,
     selectedGiftStyle: x,
     giftRecipient: L
-  } = (0, h.wD)(), j = D && (0, p.pO)(L) && S === g.h8.CONFIRM && null != x && (null == R ? true : R.productLine) !== E.POd.COLLECTIBLES, M = null != n && null != S, k = [g.h8.SKU_SELECT, g.h8.SELECT_FREE_SKU], U = null != S && !k.includes(S) && null != T, G = (0, u.N)(a), B = !D && null != G && null != T && b.nG[G.trial_id].skus.includes(T), Z = (0, c.Ng)(), F = null == Z || null == (t = Z.discount) ? true : t.plan_ids.some(e => b.GP[e].skuId === T), V = !D && null != Z && null != T && F;
+  } = (0, h.wD)(), j = D && (0, p.pO)(L) && T === g.h8.CONFIRM && null != x && (null == R ? true : R.productLine) !== E.POd.COLLECTIBLES, M = null != n && null != T, k = [g.h8.SKU_SELECT, g.h8.SELECT_FREE_SKU], U = null != T && !k.includes(T) && null != S, G = (0, u.N)(a), B = !D && null != G && null != S && b.nG[G.trial_id].skus.includes(S), Z = (0, c.Ng)(), F = null == Z || null == (t = Z.discount) ? true : t.plan_ids.some(e => b.GP[e].skuId === S), V = !D && null != Z && null != S && F;
   return i.useMemo(() => {
-    if (null == S) return;
+    if (null == T) return;
     let e = null;
     return j ? e = (0, r.jsxs)("div", {
       className: O.container,
@@ -62,13 +62,13 @@ function I(e) {
         className: O.closeButton,
         "data-migration-pending": true
       })]
-    }) : M ? e = n(null != A ? A : null, I, S) : N === y.GZ.ONE_TIME ? e = (0, r.jsx)(_.t, {
-      step: S,
+    }) : M ? e = n(null != A ? A : null, I, T) : N === y.GZ.ONE_TIME ? e = (0, r.jsx)(_.t, {
+      step: T,
       onClose: I
-    }) : U && (o()(v(T, b.y7), "invalid sku id: ".concat(T)), e = (0, r.jsx)(f.Z, {
-      currentStep: null != S ? S : true,
+    }) : U && (o()(v(S, b.y7), "invalid sku id: ".concat(S)), e = (0, r.jsx)(f.Z, {
+      currentStep: null != T ? T : true,
       purchaseState: C,
-      premiumType: b.y7[T],
+      premiumType: b.y7[S],
       onClose: I,
       showTrialBadge: B,
       showDiscountBadge: V,
@@ -78,5 +78,5 @@ function I(e) {
       enablePremiumBrandRefresh: P,
       isDisplayingWowMomentConfirmation: w
     })), e
-  }, [x, I, C, n, A, T, S, B, V, j, U, M, N, D, L, P, w])
+  }, [x, I, C, n, A, S, T, B, V, j, U, M, N, D, L, P, w])
 }

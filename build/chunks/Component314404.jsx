@@ -188,7 +188,7 @@ function J(e) {
     setSelectedGiftingPromotionReward: eg
   } = (0, h.wD)(), eE = (0, C.cF)(el, ed && (0, y.pO)(ef), em);
   b = null != b ? b : es, g = null != g ? g : ea, l()(true !== g, "should not be undefined");
-  let [eb, ey] = (0, c.Wu)([E.Z], () => [null != g ? E.Z.get(g.planId) : null, null != M ? E.Z.get(M) : null]), eO = (0, P.N)($), ev = null == eO ? true : eO.subscription_trial, eI = (0, R.Ng)(), eT = (0, A.Vi)(), eS = null == eI || null == (t = eI.discount) ? true : t.plan_ids, eA = null != ey ? ey : el, eC = i.useCallback(e => {
+  let [eb, ey] = (0, c.Wu)([E.Z], () => [null != g ? E.Z.get(g.planId) : null, null != M ? E.Z.get(M) : null]), eO = (0, P.N)($), ev = null == eO ? true : eO.subscription_trial, eI = (0, R.Ng)(), eS = (0, A.Vi)(), eT = null == eI || null == (t = eI.discount) ? true : t.plan_ids, eA = null != ey ? ey : el, eC = i.useCallback(e => {
     null != k ? k(e) : eo(e)
   }, [k, eo]), eN = null != K ? K : ec;
   l()(null != eN, "Price option has to be set");
@@ -198,10 +198,10 @@ function J(e) {
       excludeReverseTrialFromCountdown: true
     }),
     eP = null != eO && B.nG[eO.trial_id].skus.includes(b),
-    ew = null != eI && X.some(e => null == eS ? true : eS.includes(e)) && null != eI.discount,
+    ew = null != eI && X.some(e => null == eT ? true : eT.includes(e)) && null != eI.discount,
     eD = (0, v.aS)(B.Xh.PREMIUM_MONTH_TIER_2, false, ed, eN);
   i.useEffect(() => {
-    J && S.ZP.trackExposure({
+    J && T.ZP.trackExposure({
       location: "5f89bb_1"
     })
   }, [J]);
@@ -302,7 +302,7 @@ function J(e) {
         kunaPriceWithCurrency: (0, I.T4)(7.5345 * ek.amount, F.pK.HRK)
       })
     }) : null,
-    ez = null != g && null != M && (0, T.R4)(g, M, Y),
+    ez = null != g && null != M && (0, S.R4)(g, M, Y),
     eq = eR.isFractionalPremiumActive && (null == g || ez) && !ed && null != M && B.dJ.has(M);
   if (ed) {
     let e = () => {
@@ -353,7 +353,7 @@ function J(e) {
     children: [eq && (0, r.jsx)(x.n, {
       fractionalPremiumInfo: eR,
       enablePremiumBrandRefresh: eu
-    }), null != eb && !eq && !eT && (0, r.jsx)("div", {
+    }), null != eb && !eq && !eS && (0, r.jsx)("div", {
       className: H.bodyText,
       children: Q(eb, b)
     }), eH(eO, eP, ew), eW(), eX && null != eA && null != ek && eY(eA, ek, eA.interval), eK(), !eF && et && (0, r.jsx)(d.Z, {

@@ -53,11 +53,11 @@ module.exports = function(e) {
         2: "keyword"
       }
     },
-    T = {
+    S = {
       match: r(/\./, a(...u)),
       relevance: 0
     },
-    S = u.filter(e => "string" == typeof e).concat(["_|0"]),
+    T = u.filter(e => "string" == typeof e).concat(["_|0"]),
     A = {
       variants: [{
         className: "keyword",
@@ -66,10 +66,10 @@ module.exports = function(e) {
     },
     C = {
       $pattern: a(/\b\w+/, /#\w+/),
-      keyword: S.concat(_),
+      keyword: T.concat(_),
       literal: d
     },
-    N = [E, T, A],
+    N = [E, S, A],
     R = [{
       match: r(/\./, a(...p)),
       relevance: 0

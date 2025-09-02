@@ -78,7 +78,7 @@ function I(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     assets: t,
     currentUser: n,
@@ -87,7 +87,7 @@ function T(e) {
   return t[i]
 }
 
-function S(e) {
+function T(e) {
   let {
     channel: t,
     message: n,
@@ -121,11 +121,11 @@ function C(e) {
     stickers: u,
     event: d,
     eventProperties: f
-  } = e, _ = i.useMemo(() => T({
+  } = e, _ = i.useMemo(() => S({
     assets: u,
     currentUser: t,
     message: a
-  }), [u, t, a]), p = i.useMemo(() => T({
+  }), [u, t, a]), p = i.useMemo(() => S({
     assets: s,
     currentUser: t,
     message: a
@@ -137,7 +137,7 @@ function C(e) {
       content: "",
       channel: n
     });
-    e && (S({
+    e && (T({
       channel: n,
       message: a,
       sticker: _

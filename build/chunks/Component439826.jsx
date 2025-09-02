@@ -104,7 +104,7 @@ function k(e) {
     opacity: +!!y,
     height: y ? p : 0,
     config: R.Y
-  }), I = 0 === E ? c.Mgn : c.d3s, T = (0, f.Lq)(P.Ilk.RED_345), S = 0 === E ? T : l ? c.TVs.colors.TEXT_DEFAULT : c.TVs.colors.WHITE;
+  }), I = 0 === E ? c.Mgn : c.d3s, S = (0, f.Lq)(P.Ilk.RED_345), T = 0 === E ? S : l ? c.TVs.colors.TEXT_DEFAULT : c.TVs.colors.WHITE;
   return (0, r.jsx)(s.animated.div, {
     style: O,
     children: (0, r.jsxs)("div", {
@@ -114,7 +114,7 @@ function k(e) {
         className: D.hintsContainer,
         children: [(0, r.jsx)(I, {
           size: "xs",
-          color: S
+          color: T
         }), (0, r.jsx)(c.Text, {
           variant: "text-xs/medium",
           color: l ? "text-muted" : "always-white",
@@ -184,12 +184,12 @@ function G(e) {
   }), W = (null == (n = f.userStatus) ? true : n.enrolledAt) != null, K = (null == (a = f.userStatus) ? true : a.completedAt) != null, {
     onAssetLoadComplete: z
   } = i.useContext(A.k), q = i.useCallback(async () => {
-    B && ((0, p.zi)(f) || W ? (0, T.openVideoQuestModal)({
+    B && ((0, p.zi)(f) || W ? (0, S.openVideoQuestModal)({
       quest: f,
       questContent: g.jn.QUEST_HOME_DESKTOP,
       sourceQuestContent: G,
       sourceQuestContentCTA: _.jZ.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
-    }) : (0, b.R)(N.dr.QUEST_HOME_DESKTOP) ? await (0, T.enrollAndStartVideoQuestWithErrorHandling)(f, {
+    }) : (0, b.R)(N.dr.QUEST_HOME_DESKTOP) ? await (0, S.enrollAndStartVideoQuestWithErrorHandling)(f, {
       questContent: g.jn.QUEST_HOME_DESKTOP,
       questContentCTA: _.jZ.ACCEPT_QUEST,
       sourceQuestContent: G,
@@ -198,7 +198,7 @@ function G(e) {
       questContent: g.jn.QUEST_HOME_DESKTOP,
       questContentCTA: _.jZ.ACCEPT_QUEST,
       sourceQuestContent: G
-    }), (0, T.openVideoQuestModal)({
+    }), (0, S.openVideoQuestModal)({
       quest: f,
       questContent: g.jn.QUEST_HOME_DESKTOP,
       sourceQuestContent: G,
@@ -244,7 +244,7 @@ function G(e) {
                 className: D.utilButtonIcon
               })
             }))
-          }), (0, r.jsx)(S.r, {
+          }), (0, r.jsx)(T.r, {
             onOpen: x,
             onClose: R,
             onSelect: j,

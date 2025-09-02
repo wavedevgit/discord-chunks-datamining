@@ -28,12 +28,12 @@ function v(e) {
   let t, n, a, {
       invite: v,
       currentUserId: I,
-      guild: T,
-      message: S,
+      guild: S,
+      message: T,
       onTransitionToInviteChannel: A,
       onAcceptInstantInvite: C
     } = e,
-    N = null == T ? true : T.id,
+    N = null == S ? true : S.id,
     R = (0, s.e7)([p.Z], () => p.Z.getGuildId()),
     P = (0, s.e7)([_.Z], () => null != v && null != v.target_user ? _.Z.getActiveStreamForUser(v.target_user.id, N) : null, [v, N]),
     w = (0, s.e7)([_.Z], () => null != v && null != v.target_user ? _.Z.getStreamForUser(v.target_user.id, N) : null, [v, N]),
@@ -55,14 +55,14 @@ function v(e) {
       x ? (A(), e = "transition") : (C(), e = "accept"), (0, l.r$)({
         invite: v,
         action: e,
-        inviter_id: S.author.id,
-        invite_message_id: S.id
+        inviter_id: T.author.id,
+        invite_message_id: T.id
       }, D)
-    }, [v, S, D, x, A, C]),
-    B = null != T;
-  if (null == T) {
+    }, [v, T, D, x, A, C]),
+    B = null != S;
+  if (null == S) {
     if (null == v.guild) return (0, r.jsx)(g.Z, {});
-    T = (0, h.Qs)(v.guild)
+    S = (0, h.Qs)(v.guild)
   }
   let Z = null != v.channel ? (0, f.jD)(v.channel) : null,
     F = m.ZP.getName(M);
@@ -71,10 +71,10 @@ function v(e) {
   }) : (t = y.intl.string(y.t["I6JG4+"]), n = d.Z.Button.Colors.GREEN, x && (t = y.intl.string(y.t["Q1W99/"]), n = d.Z.Button.Colors.PRIMARY), a = k ? y.intl.string(y.t["4hyaHh"]) : y.intl.formatToPlainString(y.t.QmlLEh, {
     name: F
   }));
-  let V = R === T.id && null != Z ? (0, r.jsx)(d.Z.Channel, {
+  let V = R === S.id && null != Z ? (0, r.jsx)(d.Z.Channel, {
     channel: Z
   }) : y.intl.formatToPlainString(y.t.u0vaDA, {
-    guildName: T.name
+    guildName: S.name
   });
   return (0, r.jsxs)(d.Z, {
     children: [(0, r.jsx)(d.Z.Header, {
@@ -83,7 +83,7 @@ function v(e) {
       children: [(0, r.jsxs)("div", {
         className: O.headerLine,
         children: [(0, r.jsx)(d.Z.Icon, {
-          guild: T,
+          guild: S,
           onClick: B && L ? G : true
         }), (0, r.jsx)(d.Z.Info, {
           title: a,

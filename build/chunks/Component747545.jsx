@@ -71,7 +71,7 @@ function L(e) {
     analyticsLocations: R
   } = (0, p.ZP)(), {
     id: P
-  } = (0, m.p6)(S.h7.VIDEO_INPUT), x = (0, c.e7)([y.Z], () => y.Z.isVideoAvailable()), L = E.qF.useSetting();
+  } = (0, m.p6)(T.h7.VIDEO_INPUT), x = (0, c.e7)([y.Z], () => y.Z.isVideoAvailable()), L = E.qF.useSetting();
   return (0, r.jsxs)(r.Fragment, {
     children: [u(P), y.Z.isEnabled() ? null : (0, r.jsx)(d.Text, {
       className: C.permissionWarning,
@@ -95,11 +95,11 @@ function L(e) {
         children: A.intl.string(A.t["3Ppr1t"])
       })
     }), !t && (0, r.jsx)(g.F, {
-      setting: T.s6.VOICE_AND_VIDEO_VIDEO_CAMERA_PREVIEW,
+      setting: S.s6.VOICE_AND_VIDEO_VIDEO_CAMERA_PREVIEW,
       children: (0, r.jsxs)(d.xJW, {
         title: n ? null : A.intl.string(A.t.FsQ3OT),
         children: [(0, r.jsx)(h.j, {
-          deviceType: S.h7.VIDEO_INPUT,
+          deviceType: T.h7.VIDEO_INPUT,
           location: "CameraSettings",
           className: o()(C.selector, {
             [C.selectorNoHeader]: n
@@ -118,7 +118,7 @@ function L(e) {
         })]
       })
     }), (0, r.jsx)(g.F, {
-      setting: T.s6.VOICE_AND_VIDEO_VIDEO_BACKGROUND,
+      setting: S.s6.VOICE_AND_VIDEO_VIDEO_BACKGROUND,
       children: (0, r.jsx)(b.Z, {
         className: C.spacingTop24,
         onLearnMore: a,

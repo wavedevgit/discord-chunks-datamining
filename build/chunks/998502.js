@@ -60,8 +60,8 @@ function v(e, t) {
   }), e
 }
 let I = window.DiscordNative,
-  T = new Set(["jpg", "jpeg", "png"]),
-  S = new Set(["jpg", "jpeg", "png", "webp", "gif", "tiff", "bmp", "avif"]),
+  S = new Set(["jpg", "jpeg", "png"]),
+  T = new Set(["jpg", "jpeg", "png", "webp", "gif", "tiff", "bmp", "avif"]),
   A = e => e.startsWith("image/"),
   C = 5,
   N = null,
@@ -323,7 +323,7 @@ let q = {
       l()(h.isPlatformEmbedded, "Copy image method called outside native app"), l()("function" == typeof I.clipboard.copyImage, "Copy image not supported");
       let n = await V(e),
         r = K(e, t),
-        i = null != r && T.has(r) ? "image.".concat(r) : e;
+        i = null != r && S.has(r) ? "image.".concat(r) : e;
       I.clipboard.copyImage(E.from(n), i)
     },
     async copyImageBlob(e, t) {
@@ -333,7 +333,7 @@ let q = {
     canSaveImage(e, t) {
       if (null == e || !h.isPlatformEmbedded) returnfalse;
       let n = K(e, t);
-      return null == n || S.has(n)
+      return null == n || T.has(n)
     },
     async saveImage(e, t, n) {
       var r, i, a;
@@ -397,7 +397,7 @@ let q = {
       if (!Chunk358085.isPlatformEmbedded) returnfalse;
       if (null != module) {
         let n = K(module, exports);
-        if (null != require && !T.has(require)) returnfalse
+        if (null != require && !S.has(require)) returnfalse
       }
       return "function" == typeof I.clipboard.copyImage
     },

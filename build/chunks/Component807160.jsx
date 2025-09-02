@@ -215,7 +215,7 @@ function ep(e) {
     guildProductListingId: a
   } = e, o = (0, O.hO)(r, a, {
     requireCurrentGuild: false
-  }), s = (0, f.e7)([v.Z], () => v.Z.getGuildProductFetchState(a) === v.M.FETCHING), l = null == o ? true : o.role_id, c = (0, f.e7)([x.Z], () => null != l ? x.Z.getRole(r, l) : true, [r, l]), u = (0, S.Z)({
+  }), s = (0, f.e7)([v.Z], () => v.Z.getGuildProductFetchState(a) === v.M.FETCHING), l = null == o ? true : o.role_id, c = (0, f.e7)([x.Z], () => null != l ? x.Z.getRole(r, l) : true, [r, l]), u = (0, T.Z)({
     guildId: r,
     productId: a
   }), d = (null != (n = null == o || null == (t = o.attachments) ? true : t.length) ? n : 0) > 0, h = null != c;
@@ -239,7 +239,7 @@ function ep(e) {
         color: "header-secondary",
         className: q.guildProductBenefitLabel,
         children: z.intl.string(z.t.gWBNen)
-      }), (0, i.jsx)(T.Z, {
+      }), (0, i.jsx)(S.Z, {
         role: c
       })]
     })]

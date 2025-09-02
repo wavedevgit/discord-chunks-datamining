@@ -6,7 +6,7 @@ require.d(exports, {
   JA: () => g,
   OP: () => O,
   SJ: () => I,
-  bG: () => T,
+  bG: () => S,
   eg: () => y,
   f$: () => m,
   l2: () => v,
@@ -152,7 +152,7 @@ function I(e) {
   return t(O())
 }
 
-function T(e) {
+function S(e) {
   let {
     children: t,
     navigator: n

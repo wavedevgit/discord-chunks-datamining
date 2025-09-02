@@ -105,14 +105,14 @@ function I(e) {
   E.limitedTimeVoices.current_set_end = e.toISOString(), E.limitedTimeVoices.next_set_start = e.toISOString(), E.limitedTimeVoices.next_set_end = (0, i.default)(e, 2).toISOString(), N()
 }
 
-function T(e) {
+function S(e) {
   return Object.entries(e).sort((e, t) => O(e[1]) - O(t[1])).map(e => {
     let [t] = e;
     return t
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     catalog: t,
     initialModelState: n
@@ -137,7 +137,7 @@ function S(e) {
     available: !!r || o,
     temporarilyAvailable: a.currentSet.includes(e)
   }));
-  E.voiceFilters = i, E.sortedVoiceFilters = T(E.voiceFilters), E.catalogLastFetchTime = new Date, null != n && (Object.keys(E.modelState).length > 0 ? E.modelState = n : g.warn("Attempted to replace existing model state with initial model state"))
+  E.voiceFilters = i, E.sortedVoiceFilters = S(E.voiceFilters), E.catalogLastFetchTime = new Date, null != n && (Object.keys(E.modelState).length > 0 ? E.modelState = n : g.warn("Attempted to replace existing model state with initial model state"))
 }
 
 function A() {
@@ -211,7 +211,7 @@ function N() {
   let e = v(E.limitedTimeVoices);
   E.catalogUpdateTime = module.catalogUpdateTime, Object.keys(E.voiceFilters).forEach(t => {
     E.voiceFilters[t].temporarilyAvailable = e.currentSet.includes(t)
-  }), E.sortedVoiceFilters = T(E.voiceFilters)
+  }), E.sortedVoiceFilters = S(E.voiceFilters)
 }
 
 function R(e) {
@@ -285,7 +285,7 @@ let U = new C(Chunk570140.Z, {
   VOICE_FILTER_DOWNLOAD_PROGRESS: P,
   VOICE_FILTER_DOWNLOAD_FAILED: w,
   VOICE_FILTER_FILE_READY: D,
-  VOICE_FILTER_CATALOG_FETCH_SUCCESS: S,
+  VOICE_FILTER_CATALOG_FETCH_SUCCESS: T,
   VOICE_FILTER_CATALOG_FETCH_FAILED: A,
   VOICE_FILTER_UPDATE_LIMITED_TIME_VOICES: N,
   VOICE_FILTER_DEV_TOOLS_SET_UPDATE_TIME: x,

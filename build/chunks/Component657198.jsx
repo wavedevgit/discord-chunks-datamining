@@ -111,8 +111,8 @@ let I = e => {
     v = (0, s.UE)(),
     I = (0, s._7)(),
     {
-      optionType: T,
-      errored: S
+      optionType: S,
+      errored: T
     } = (0, l.cj)([u.Z], () => {
       var e, t, r;
       return {
@@ -125,12 +125,12 @@ let I = e => {
     N = null != C && h.LC.isText(C) && C.text.endsWith("\n"),
     R = o()(g.inlineElement, g.optionPill, {
       [g.selectedPill]: v && y,
-      [g.erroredPill]: (!v || !y) && S
+      [g.erroredPill]: (!v || !y) && T
     }),
     P = i.useCallback(() => {
       h.bN.isVoid(I, a) || p.Q.selectCommandOption(I, a.optionName, true)
     }, [I, a]);
-  return t = T === c.jw.ATTACHMENT ? (null == A ? true : A.filename) != null ? (0, r.jsxs)("span", {
+  return t = S === c.jw.ATTACHMENT ? (null == A ? true : A.filename) != null ? (0, r.jsxs)("span", {
     className: o()(g.optionPillValue, g.attachmentFilename),
     contentEditable: false,
     children: [A.filename, E]

@@ -68,10 +68,10 @@ let N = 2;
 function R(e, t, n) {
   s.Z.dispatch(C({
     type: "STREAM_START",
-    streamType: null != e ? S.lo.GUILD : S.lo.CALL,
+    streamType: null != e ? T.lo.GUILD : T.lo.CALL,
     guildId: e,
     channelId: t,
-    appContext: __OVERLAY__ ? T.IlC.OVERLAY : T.IlC.APP
+    appContext: __OVERLAY__ ? S.IlC.OVERLAY : S.IlC.APP
   }, n))
 }
 
@@ -125,7 +125,7 @@ function L(e, t) {
   } = e;
   if (null != n && w(n, r)) return;
   D(e, t);
-  let i = d.Z.getWindowOpen(T.KJ3.CHANNEL_CALL_POPOUT),
+  let i = d.Z.getWindowOpen(S.KJ3.CHANNEL_CALL_POPOUT),
     a = g.Z.getVoiceChannelId();
   i && a === r || (0, u.Z)(e)
 }
@@ -136,7 +136,7 @@ function j(e) {
   n && M(e, t), s.Z.dispatch({
     type: "STREAM_STOP",
     streamKey: e,
-    appContext: __OVERLAY__ ? T.IlC.OVERLAY : T.IlC.APP
+    appContext: __OVERLAY__ ? S.IlC.OVERLAY : S.IlC.APP
   })
 }
 
@@ -151,7 +151,7 @@ function M(e) {
 async function k(e, t, n) {
   if (!f.Z.shouldFetchPreview(e, t, n)) return;
   let r = (0, c.V9)({
-    streamType: null != e ? S.lo.GUILD : S.lo.CALL,
+    streamType: null != e ? T.lo.GUILD : T.lo.CALL,
     guildId: e,
     channelId: t,
     ownerId: n
@@ -162,7 +162,7 @@ async function k(e, t, n) {
   });
   try {
     let e = await o.tn.get({
-      url: T.ANM.STREAM_PREVIEW(r),
+      url: S.ANM.STREAM_PREVIEW(r),
       query: {
         version: Date.now()
       },
@@ -186,7 +186,7 @@ async function k(e, t, n) {
 async function U(e) {
   try {
     await v.Z.post({
-      url: T.ANM.STREAM_NOTIFY(e),
+      url: S.ANM.STREAM_NOTIFY(e),
       oldFormErrors: true,
       trackedActionData: {
         event: a.NetworkActionNames.STREAM_NOTIFY
@@ -206,7 +206,7 @@ function B(e) {
 
 function Z(e, t) {
   o.tn.patch({
-    url: T.ANM.STREAM(e),
+    url: S.ANM.STREAM(e),
     body: {
       region: t
     },

@@ -163,14 +163,14 @@ function e_(e) {
   if (!f && !_ && !(null == i ? true : i.forceTransition) && s && F.Z.getGuildId() !== t) return;
   let {
     type: p
-  } = r, g = M.Z.getChannel(r.id), b = ed(t, r, i), I = p === J.d4z.GUILD_STAGE_VOICE, T = J.Z5c.CHANNEL(t, b);
+  } = r, g = M.Z.getChannel(r.id), b = ed(t, r, i), I = p === J.d4z.GUILD_STAGE_VOICE, S = J.Z5c.CHANNEL(t, b);
   L.tx.has(p) ? (0, y.h)(() => {
     Promise.resolve().then(n.bind(n, 287734)).then(e => {
       let {
         default: n
       } = e, o = () => {
         if (I) {
-          (0, x.Cq)(r instanceof L.Sf ? r : (0, L.kt)(r)), (0, D.uL)(T);
+          (0, x.Cq)(r instanceof L.Sf ? r : (0, L.kt)(r)), (0, D.uL)(S);
           return
         }(null == i ? true : i.muteOnJoinVoiceChannel) && q.Z.setSelfMute(d.Yn.DEFAULT, true), n.selectVoiceChannel(b), c === et.Iq.STREAM && null != l && Q.iV({
           streamType: ee.lo.GUILD,
@@ -195,7 +195,7 @@ function e_(e) {
     inviterUserId: null == i ? true : i.inviterUserId,
     analyticsLocations: a,
     commandOrigin: E.bB.CHAT
-  })), ef(r, i)(T)
+  })), ef(r, i)(S)
 }
 
 function ep(e) {
@@ -207,7 +207,7 @@ function ep(e) {
     let e = {
       guildScheduledEventId: t.id
     };
-    null != n && (e.welcomeModalChannelId = n), (0, T.P3)(t, e)
+    null != n && (e.welcomeModalChannelId = n), (0, S.P3)(t, e)
   })
 }
 
@@ -254,7 +254,7 @@ let em = function(e, t) {
       guild_id: t,
       channel_id: n
     } = e;
-    (0, S.xt)(e) && null != n ? em(n) : await X.Z.transitionToGuildSync(t)
+    (0, T.xt)(e) && null != n ? em(n) : await X.Z.transitionToGuildSync(t)
   };
 
 function eE(e, t) {
@@ -450,7 +450,7 @@ let ey = {
         invite: e.body,
         code: l
       });
-      let i = S.ZP.getGuildScheduledEvent(s.guildScheduledEventId),
+      let i = T.ZP.getGuildScheduledEvent(s.guildScheduledEventId),
         c = eo(ei({}, e.body), {
           guild_scheduled_event: i
         }),

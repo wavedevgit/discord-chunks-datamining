@@ -76,8 +76,8 @@ function I(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let T = 10,
-  S = 7.23;
+let S = 10,
+  T = 7.23;
 
 function A(e) {
   var t, {
@@ -112,9 +112,9 @@ function A(e) {
     }),
     F = i.useMemo(() => {
       if (B) return;
-      if (null == E) return T;
+      if (null == E) return S;
       let e = "".concat(E).length;
-      return S * (e += "".concat(E, " / ").length) + T
+      return T * (e += "".concat(E, " / ").length) + S
     }, [B, E]),
     V = e => {
       let {

@@ -58,7 +58,7 @@ require.d(exports, {
   ev: () => et,
   fq: () => O,
   fv: () => P,
-  fz: () => S,
+  fz: () => T,
   gR: () => Q,
   gw: () => eX,
   h2: () => J,
@@ -72,15 +72,15 @@ require.d(exports, {
   l4: () => eJ,
   lk: () => eH,
   mX: () => z,
-  nc: () => eT,
+  nc: () => eS,
   nh: () => eY,
   no: () => eU,
   qF: () => k,
-  rN: () => eS,
+  rN: () => eT,
   tU: () => ey,
   uL: () => B,
   uh: () => ez,
-  vF: () => T,
+  vF: () => S,
   x4: () => eO,
   xM: () => ec,
   xq: () => $,
@@ -133,7 +133,7 @@ let b = (0, Chunk560997.Zc)("textAndImages", "useLegacyChatInput", e => {
   }, e => o.Gm.create({
     value: e
   })),
-  T = (0, Chunk560997.Zc)("textAndImages", "useThreadSidebar", e => {
+  S = (0, Chunk560997.Zc)("textAndImages", "useThreadSidebar", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
@@ -145,7 +145,7 @@ let b = (0, Chunk560997.Zc)("textAndImages", "useLegacyChatInput", e => {
 }, e => o.D5.create({
   value: e
 }));
-let S = (0, Chunk560997.Zc)("notifications", "reactionNotifications", e => null != e ? e : a.Ns.NOTIFICATIONS_ENABLED, e => e);
+let T = (0, Chunk560997.Zc)("notifications", "reactionNotifications", e => null != e ? e : a.Ns.NOTIFICATIONS_ENABLED, e => e);
 (0, Chunk560997.Zc)("notifications", "customStatusPushNotifications", e => null != e ? e : a.Oi.STATUS_PUSH_UNSET, e => e);
 let A = (0, Chunk560997.Zc)("notifications", "gameActivityNotifications", e => null != e ? e : a.Tv.ACTIVITY_NOTIFICATIONS_UNSET, e => e),
   C = (0, Chunk560997.Zc)("notifications", "gameActivityExcludeSteamNotifications", e => {
@@ -414,7 +414,7 @@ let eh = new Set(Object.values(Chunk981631.Skl)),
   }, e => o.D5.create({
     value: e
   })), "text", "renderEmbeds"),
-  eT = (0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "renderReactions", e => {
+  eS = (0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "renderReactions", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
@@ -443,7 +443,7 @@ let eh = new Set(Object.values(Chunk981631.Skl)),
     })
   }
 }), "text", "defaultReactionEmoji");
-let eS = (0, Chunk560997.Zc)("localization", "timezoneOffset", e => {
+let eT = (0, Chunk560997.Zc)("localization", "timezoneOffset", e => {
     var t;
     return null != (t = null == e ? true : e.value) ? t : null
   }, e => o.T4.create({

@@ -134,7 +134,7 @@ function eo(e) {
     if (et(B, r)) returntrue;
     if ([F, V, H, Y, W].some(e => et(e, r))) {
       var t, n;
-      return null != (n = null == (t = r.pathname) ? true : t.toUpperCase().includes(T.g.INVITE)) && n
+      return null != (n = null == (t = r.pathname) ? true : t.toUpperCase().includes(S.g.INVITE)) && n
     }
   }
   returnfalse
@@ -167,27 +167,27 @@ function es(e) {
     if ((null == i ? true : i.match(C)) != null && ("https:" === r.protocol || "http:" === r.protocol)) {
       let t = (0, b.mb)(i.substring(1), r.search);
       if (O.Z.getInvite(t), e.includes("\\")) continue;
-      u(T.g.INVITE, t)
-    }(null == l ? true : l.match(C)) != null && u(T.g.TEMPLATE, l.substring(1));
+      u(S.g.INVITE, t)
+    }(null == l ? true : l.match(C)) != null && u(S.g.TEMPLATE, l.substring(1));
     let d = null == c ? true : c.match(R);
     if (null != d) {
       let t = d[1].toUpperCase();
-      if (t === T.g.INVITE) {
+      if (t === S.g.INVITE) {
         if (e.includes("\\")) continue;
         let t = (0, b.mb)(d[2], r.search);
-        u(T.g.INVITE, t)
+        u(S.g.INVITE, t)
       } else u(t, d[2])
-    }(null == c ? true : c.match(N)) != null && u(T.g.CHANNEL_LINK, c.replace("/channels/", ""));
+    }(null == c ? true : c.match(N)) != null && u(S.g.CHANNEL_LINK, c.replace("/channels/", ""));
     let f = ei(r.pathname);
-    if (null != f && u(T.g.EVENT, "".concat(f.guildId, "-").concat(f.guildEventId) + (null != f.recurrenceId ? "-".concat(f.recurrenceId) : "")), null != (null == c ? true : c.match(k)) && null != r.query) {
+    if (null != f && u(S.g.EVENT, "".concat(f.guildId, "-").concat(f.guildEventId) + (null != f.recurrenceId ? "-".concat(f.recurrenceId) : "")), null != (null == c ? true : c.match(k)) && null != r.query) {
       let e = (0, y.y)(r.query),
         t = e.clientId;
-      null == t || "" === t || (null == (a = e.scopes) ? true : a.some(e => e !== g.x.APPLICATIONS_COMMANDS)) || u(T.g.APP_OAUTH2_LINK, t)
+      null == t || "" === t || (null == (a = e.scopes) ? true : a.some(e => e !== g.x.APPLICATIONS_COMMANDS)) || u(S.g.APP_OAUTH2_LINK, t)
     }
     let _ = null == c ? true : c.match(w);
     if (null != _) {
       let e = _[2];
-      u(T.g.APP_DIRECTORY_PROFILE, e)
+      u(S.g.APP_DIRECTORY_PROFILE, e)
     }
     let p = null == c ? true : c.match(D);
     if (null != p) {
@@ -195,22 +195,22 @@ function es(e) {
         t = p[3];
       if (null != t) {
         let n = (0, E.l)(e, t);
-        u(T.g.APP_DIRECTORY_STOREFRONT_SKU, n)
-      } else u(T.g.APP_DIRECTORY_STOREFRONT, e)
+        u(S.g.APP_DIRECTORY_STOREFRONT_SKU, n)
+      } else u(S.g.APP_DIRECTORY_STOREFRONT, e)
     }
     let h = null == c ? true : c.match(x);
     if (null != h) {
       let e = h[1];
-      u(T.g.ACTIVITY_BOOKMARK, e)
+      u(S.g.ACTIVITY_BOOKMARK, e)
     }
     let m = null == c ? true : c.match(L);
-    null != m && u(T.g.GUILD_PRODUCT, "".concat(m[1], "-").concat(m[2]));
+    null != m && u(S.g.GUILD_PRODUCT, "".concat(m[1], "-").concat(m[2]));
     let v = null == c ? true : c.match(j);
-    null != v && u(T.g.SERVER_SHOP, v[1]);
+    null != v && u(S.g.SERVER_SHOP, v[1]);
     let I = el(e);
-    if (null != I && u(T.g.QUESTS_EMBED, I), "/shop" === c) {
+    if (null != I && u(S.g.QUESTS_EMBED, I), "/shop" === c) {
       let e = null == (o = r.hash) ? true : o.match(U);
-      u(T.g.COLLECTIBLES_SHOP, null != (s = null == e ? true : e[1]) ? s : "")
+      u(S.g.COLLECTIBLES_SHOP, null != (s = null == e ? true : e[1]) ? s : "")
     }
   }
   return n

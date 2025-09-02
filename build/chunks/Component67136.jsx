@@ -218,11 +218,11 @@ function O(e) {
 let v = "--__adaptive-focus-ring-color",
   I = "--__adaptive-focus-ring-radius";
 
-function T(e) {
+function S(e) {
   e !== r && (null == r || r.hide(), r = e)
 }
 
-function S(e) {
+function T(e) {
   if (e) return parseInt(e) > 0 ? e : true
 }
 class A {
@@ -237,7 +237,7 @@ class A {
   }
   showElement(e, t = {}) {
     var n;
-    this.targetElement = e, this.targetAncestry = this.getElementAncestors(this.targetElement), this.boundingBox = true, this.className = t.className, this.offset = null != (n = t.offset) ? n : 0, this.zIndex = t.zIndex, T(this), this.invalidate()
+    this.targetElement = e, this.targetAncestry = this.getElementAncestors(this.targetElement), this.boundingBox = true, this.className = t.className, this.offset = null != (n = t.offset) ? n : 0, this.zIndex = t.zIndex, S(this), this.invalidate()
   }
   hide() {
     this.targetElement = true, this.targetAncestry = true, this.boundingBox = true, this.className = true, this.offset = 0, this.zIndex = true, this.invalidate()
@@ -269,10 +269,10 @@ class A {
   }
   getBorderRadius(e) {
     var t, n, r, i, a, o, s, l;
-    let c = null != (n = S(null == (t = e.styles[0]) ? true : t.borderTopLeftRadius)) ? n : "0",
-      u = null != (i = S(null == (r = e.styles[0]) ? true : r.borderTopRightRadius)) ? i : "0",
-      d = null != (o = S(null == (a = e.styles[0]) ? true : a.borderBottomRightRadius)) ? o : "0",
-      f = null != (l = S(null == (s = e.styles[0]) ? true : s.borderBottomLeftRadius)) ? l : "0";
+    let c = null != (n = T(null == (t = e.styles[0]) ? true : t.borderTopLeftRadius)) ? n : "0",
+      u = null != (i = T(null == (r = e.styles[0]) ? true : r.borderTopRightRadius)) ? i : "0",
+      d = null != (o = T(null == (a = e.styles[0]) ? true : a.borderBottomRightRadius)) ? o : "0",
+      f = null != (l = T(null == (s = e.styles[0]) ? true : s.borderBottomLeftRadius)) ? l : "0";
     if ("0" !== c || "0" !== u || "0" !== d || "0" !== f) return `${c} ${u} ${d} ${f}`
   }
   makePositionFromDOMRect(e) {
@@ -443,7 +443,7 @@ function G(e) {
   let I = a.useCallback(e => {
       g.hide(), p.current = false, m(false), null == b || b(e)
     }, [b, g]),
-    T = a.useCallback(e => {
+    S = a.useCallback(e => {
       let n = null == s ? true : s.current;
       e.currentTarget === e.target ? (p.current = true, g.showElement(null != n ? n : e.currentTarget, v)) : (m(true), t && g.showElement(null != n ? n : e.currentTarget, v)), null == y || y(e)
     }, [s, t, y, g, v]);
@@ -451,6 +451,6 @@ function G(e) {
     ...O,
     className: d(O.className, p.current ? c : true, h ? u : true),
     onBlur: I,
-    onFocus: T
+    onFocus: S
   }) : E
 }

@@ -82,7 +82,7 @@ function L(e) {
   let {
     appId: t,
     message: a
-  } = e, o = (0, S.R)(t), [u, d, p, h, g, b, y] = (0, s.Wu)([f.Z, E.Z, m.Z], () => {
+  } = e, o = (0, T.R)(t), [u, d, p, h, g, b, y] = (0, s.Wu)([f.Z, E.Z, m.Z], () => {
     var e;
     let n = f.Z.getApplication(t),
       r = null != n ? (0, I.y)(n, 45) : true,
@@ -129,7 +129,7 @@ function L(e) {
       })
     },
     j = () => {
-      (0, T.X)(t, T.B.STORE_EMBED)
+      (0, S.X)(t, S.B.STORE_EMBED)
     };
   return (0, r.jsx)(M, {
     appName: u.name,
@@ -167,7 +167,7 @@ function j(e) {
   } = (0, d.IX)(null == _ ? true : _.applicationId), y = (0, s.e7)([m.Z], () => {
     var e;
     return null == (e = m.Z.getBasicChannel(u.channel_id)) ? true : e.guild_id
-  }, [u]), v = i.useMemo(() => null != b ? (0, I.y)(b, 45) : true, [b]), w = (0, S.R)(null != (a = null == b ? true : b.id) ? a : ""), {
+  }, [u]), v = i.useMemo(() => null != b ? (0, I.y)(b, 45) : true, [b]), w = (0, T.R)(null != (a = null == b ? true : b.id) ? a : ""), {
     openModal: D,
     subscriptionPurchaseButtonState: L
   } = (0, h.Z)({
@@ -253,7 +253,7 @@ function j(e) {
       })
     },
     Y = () => {
-      (0, T.X)(b.id, T.B.SKU_EMBED, c)
+      (0, S.X)(b.id, S.B.SKU_EMBED, c)
     };
   return (0, r.jsx)(M, {
     appName: b.name,

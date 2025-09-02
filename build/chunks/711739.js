@@ -63,7 +63,7 @@ let O = function(e) {
     for (e = r ? h(e / o) : e >> 1, e += h(e / t); e > p * i >> 1; s += n) e = h(e / p);
     return h(s + (p + 1) * e / (e + a))
   },
-  T = function(e) {
+  S = function(e) {
     let a = [],
       o = e.length,
       u = 0,
@@ -88,7 +88,7 @@ let O = function(e) {
     }
     return String.fromCodePoint(...a)
   },
-  S = function(e) {
+  T = function(e) {
     let a = [],
       o = (e = y(e)).length,
       u = l,
@@ -118,12 +118,12 @@ let O = function(e) {
   },
   A = function(e) {
     return b(e, function(e) {
-      return u.test(e) ? T(e.slice(4).toLowerCase()) : e
+      return u.test(e) ? S(e.slice(4).toLowerCase()) : e
     })
   },
   C = function(e) {
     return b(e, function(e) {
-      return d.test(e) ? "xn--" + S(e) : e
+      return d.test(e) ? "xn--" + T(e) : e
     })
   };
 module.exports = {
@@ -132,8 +132,8 @@ module.exports = {
     decode: y,
     encode: e => String.fromCodePoint(...e)
   },
-  decode: T,
-  encode: S,
+  decode: S,
+  encode: T,
   toASCII: C,
   toUnicode: A
 }

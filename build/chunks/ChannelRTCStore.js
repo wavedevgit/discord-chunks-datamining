@@ -84,7 +84,7 @@ let D = new Chunk710845.Z("ChannelRTCStore"),
 
 function W(e) {
   let t = j[e];
-  return null == t && (t = new S.ZP(e), j[e] = t), t
+  return null == t && (t = new T.ZP(e), j[e] = t), t
 }
 
 function K() {
@@ -152,7 +152,7 @@ function ee(e, t) {
 }
 
 function et(e) {
-  return e.size(S.sI.STREAM) > 0 || e.size(S.sI.VIDEO) > 0 || e.hasEmbeddedActivity()
+  return e.size(T.sI.STREAM) > 0 || e.size(T.sI.VIDEO) > 0 || e.hasEmbeddedActivity()
 }
 
 function en(e) {
@@ -160,11 +160,11 @@ function en(e) {
     n = W(e);
   if (0 === n.size() || y.Z.getVoiceChannelId() !== e) return void ee(e, null);
   let r = A.dF.NONE,
-    i = n.toArray(S.sI.STREAM).find(e => e.type === A.fO.STREAM && h.Z.getActiveStreamForStreamKey(e.id));
+    i = n.toArray(T.sI.STREAM).find(e => e.type === A.fO.STREAM && h.Z.getActiveStreamForStreamKey(e.id));
   if (null != i) a()(i.type === A.fO.STREAM, "Impossible condition"), r = i.id;
   else if (1 === n.size()) r = t;
-  else if (1 === n.size(S.sI.VIDEO)) {
-    let [e] = n.toArray(S.sI.VIDEO);
+  else if (1 === n.size(T.sI.VIDEO)) {
+    let [e] = n.toArray(T.sI.VIDEO);
     r = e.id
   } else {
     var o;
@@ -342,7 +342,7 @@ function eI(e) {
     channelId: t,
     id: n
   } = e, r = W(t);
-  null == n && r.toArray(S.sI.STREAM).forEach(e => {
+  null == n && r.toArray(T.sI.STREAM).forEach(e => {
     (0, A._5)(e) && r.updateParticipant(e.user.id)
   });
   let [, i] = Q(t);
@@ -359,7 +359,7 @@ function eI(e) {
   }
 }
 
-function eT(e) {
+function eS(e) {
   let {
     channel: t
   } = e;
@@ -375,7 +375,7 @@ function eT(e) {
   returnfalse
 }
 
-function eS(e) {
+function eT(e) {
   let {
     channel: {
       id: t
@@ -482,7 +482,7 @@ function ej(e) {
 }
 class eM extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(h.Z, m.default, g.Z, E.Z, u.ZP, b.Z, y.Z, O.Z, v.default, I.Z, T.Z), this.syncWith([u.ZP], ec), this.syncWith([b.Z], eu), this.syncWith([f.Z], ea), (null == e ? true : e.voiceParticipantsHidden) !== true && Object.assign(Z, null == e ? true : e.voiceParticipantsHidden)
+    this.waitFor(h.Z, m.default, g.Z, E.Z, u.ZP, b.Z, y.Z, O.Z, v.default, I.Z, S.Z), this.syncWith([u.ZP], ec), this.syncWith([b.Z], eu), this.syncWith([f.Z], ea), (null == e ? true : e.voiceParticipantsHidden) !== true && Object.assign(Z, null == e ? true : e.voiceParticipantsHidden)
   }
   getState() {
     return {
@@ -498,29 +498,29 @@ class eM extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getSpeakingParticipants(e) {
     var t;
-    return null != (t = W(e).toArray(S.sI.SPEAKING)) ? t : x
+    return null != (t = W(e).toArray(T.sI.SPEAKING)) ? t : x
   }
   getFilteredParticipants(e) {
-    return Z[e] ? W(e).toArray(S.sI.FILTERED) : W(e).toArray()
+    return Z[e] ? W(e).toArray(T.sI.FILTERED) : W(e).toArray()
   }
   getVideoParticipants(e) {
     var t;
-    return null != (t = W(e).toArray(S.sI.VIDEO)) ? t : x
+    return null != (t = W(e).toArray(T.sI.VIDEO)) ? t : x
   }
   getStreamParticipants(e) {
     var t;
-    return null != (t = W(e).toArray(S.sI.STREAM)) ? t : x
+    return null != (t = W(e).toArray(T.sI.STREAM)) ? t : x
   }
   getActivityParticipants(e) {
     var t;
-    return null != (t = W(e).toArray(S.sI.ACTIVITY)) ? t : x
+    return null != (t = W(e).toArray(T.sI.ACTIVITY)) ? t : x
   }
   getParticipant(e, t) {
     return W(e).getParticipant(t)
   }
   getUserParticipantCount(e) {
     let t = W(e);
-    return t.size() - t.size(S.sI.STREAM) - t.size(S.sI.ACTIVITY)
+    return t.size() - t.size(T.sI.STREAM) - t.size(T.sI.ACTIVITY)
   }
   getParticipantsOpen(e) {
     var t;
@@ -592,9 +592,9 @@ let ek = new eM(Chunk570140.Z, {
   CHANNEL_SELECT: es,
   CHANNEL_RTC_ACTIVE_CHANNELS: ea,
   VOICE_STATE_UPDATES: el,
-  CHANNEL_CREATE: eT,
-  CHANNEL_DELETE: eS,
-  THREAD_DELETE: eS,
+  CHANNEL_CREATE: eS,
+  CHANNEL_DELETE: eT,
+  THREAD_DELETE: eT,
   CALL_CREATE: e_,
   CALL_UPDATE: e_,
   CALL_DELETE: ep,

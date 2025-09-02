@@ -32,8 +32,8 @@ function v() {
     threshold: Chunk131951.Z.getModeOptions().threshold,
     autoThreshold: Chunk131951.Z.getModeOptions().autoThreshold
   })), {
-    inputMode: T,
-    automaticVADSupported: S,
+    inputMode: S,
+    automaticVADSupported: T,
     isEnabled: A
   } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
     inputMode: Chunk131951.Z.getMode(),
@@ -46,7 +46,7 @@ function v() {
   }
 
   function N(e, t) {
-    f.Z.setMode(T, {
+    f.Z.setMode(S, {
       threshold: e,
       autoThreshold: t
     })
@@ -103,7 +103,7 @@ function v() {
     title: Chunk388032.intl.string(Chunk388032.t["sqUm+v"]),
     titleId: O,
     className: Chunk192294.sensitivity,
-    children: [S && (0, Chunk951288.jsx)(Chunk313201.FG, {
+    children: [T && (0, Chunk951288.jsx)(Chunk313201.FG, {
       children: e => (0, r.jsxs)("div", {
         className: o()(b.horizontal, y.marginBottom4),
         children: [(0, r.jsx)(d.vwX, {

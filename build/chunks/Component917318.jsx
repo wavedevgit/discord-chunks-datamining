@@ -71,9 +71,9 @@ function m(e) {
     channelId: E,
     guildId: i.guild_id,
     messageId: n.id
-  })(v), T = null != (t = _[m]) ? t : null;
-  if (null == T) return null;
-  let S = f.intl.format(T(), {
+  })(v), S = null != (t = _[m]) ? t : null;
+  if (null == S) return null;
+  let T = f.intl.format(S(), {
     actorName: g.nick,
     actorHook: O,
     targetName: null == v ? true : v.nick,
@@ -85,7 +85,7 @@ function m(e) {
     }),
     timestamp: n.timestamp,
     compact: o,
-    children: S
+    children: T
   })
 }
 

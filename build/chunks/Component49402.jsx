@@ -82,8 +82,8 @@ function m(e, t, n) {
       paddingFix: O = true,
       style: v,
       gap: I,
-      experimental_useStack: T
-    } = u, S = p(u, ["children", "className", "dir", "orientation", "fade", "customTheme", "paddingFix", "style", "gap", "experimental_useStack"]);
+      experimental_useStack: S
+    } = u, T = p(u, ["children", "className", "dir", "orientation", "fade", "customTheme", "paddingFix", "style", "gap", "experimental_useStack"]);
     let {
       scrollerRef: A,
       getScrollerState: C
@@ -100,7 +100,7 @@ function m(e, t, n) {
       scrollerRef: A,
       specs: a
     });
-    return T ? (0, r.jsx)(l.K, _(d({
+    return S ? (0, r.jsx)(l.K, _(d({
       gap: I,
       ref: A,
       className: o()(m, {
@@ -110,7 +110,7 @@ function m(e, t, n) {
       }),
       style: (0, c.uT)(v, E),
       dir: g
-    }, S), {
+    }, T), {
       children: (0, r.jsxs)(s.Jc, {
         containerRef: A,
         children: [h, R]
@@ -124,7 +124,7 @@ function m(e, t, n) {
       }),
       style: (0, c.uT)(v, E),
       dir: g
-    }, S), {
+    }, T), {
       children: (0, r.jsxs)(s.Jc, {
         containerRef: A,
         children: [h, R]

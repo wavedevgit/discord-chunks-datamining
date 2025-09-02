@@ -9,7 +9,7 @@ require.d(exports, {
   M8: () => y,
   aj: () => h,
   bN: () => p,
-  lP: () => S,
+  lP: () => T,
   q: () => m
 }), require("./388685.js");
 var Chunk512722 = require("./512722.js"),
@@ -342,7 +342,7 @@ let p = f(u({}, Chunk327432.ML, Chunk755712.F3), {
       i = p.toDOMRange(e, n).getBoundingClientRect();
     return v(r, i) && v(i, r)
   },
-  T = (e, t, n, r) => {
+  S = (e, t, n, r) => {
     let i = {
         anchor: t,
         focus: t
@@ -362,7 +362,7 @@ let p = f(u({}, Chunk327432.ML, Chunk755712.F3), {
         }, i) && (s = o)
       } return n[s]
   },
-  S = {
+  T = {
     getLineStart(e, t, n) {
       let r, i = p.getParentElement(e, t);
       if (null == i) return null;
@@ -378,11 +378,11 @@ let p = f(u({}, Chunk327432.ML, Chunk755712.F3), {
         s = Array.from(p.positions(e, {
           at: o
         })),
-        l = T(e, t, s, true);
+        l = S(e, t, s, true);
       if (n && b.equals(t, l) && !b.isAtEnd(t, i)) {
         let n = p.after(e, t);
         if (null == n) return l;
-        l = T(e, n, s, true)
+        l = S(e, n, s, true)
       }
       return l
     },
@@ -401,11 +401,11 @@ let p = f(u({}, Chunk327432.ML, Chunk755712.F3), {
         s = Array.from(p.positions(e, {
           at: o
         })),
-        l = T(e, t, s, false);
+        l = S(e, t, s, false);
       if (n && b.equals(t, l) && !b.isAtEnd(t, i)) {
         let n = p.after(e, t);
         if (null == n) return l;
-        l = T(e, n, s, false)
+        l = S(e, n, s, false)
       }
       return l
     },
@@ -413,13 +413,13 @@ let p = f(u({}, Chunk327432.ML, Chunk755712.F3), {
       let n = y.toPoint(e.selection);
       if (null == n) return null;
       if (t) {
-        let t = S.getLineStart(e, n, false);
+        let t = T.getLineStart(e, n, false);
         return null == t ? null : {
           anchor: t,
           focus: n
         }
       } {
-        let t = S.getLineEnd(e, n, true);
+        let t = T.getLineEnd(e, n, true);
         return null == t ? null : {
           anchor: n,
           focus: t

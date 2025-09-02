@@ -62,7 +62,7 @@ function I(e, t) {
   }), e
 }
 
-function T(e) {
+function S(e) {
   let {
     guild: t,
     isBannerVisible: n,
@@ -115,7 +115,7 @@ function T(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     guild: t,
     disableColor: n,
@@ -160,14 +160,14 @@ function A(e) {
     guild: t,
     disableBoostClick: n
   } = e, i = false;
-  return (0, l.Z)(t) ? (0, r.jsx)(S, {
+  return (0, l.Z)(t) ? (0, r.jsx)(T, {
     guild: t,
     disableColor: false,
     disableBoostClick: n
-  }) : t.features.has(g.oNc.VERIFIED) || t.features.has(g.oNc.PARTNERED) ? (0, r.jsx)(S, {
+  }) : t.features.has(g.oNc.VERIFIED) || t.features.has(g.oNc.PARTNERED) ? (0, r.jsx)(T, {
     guild: t,
     disableColor: !i
-  }) : (0, r.jsx)(T, {
+  }) : (0, r.jsx)(S, {
     guild: t,
     isBannerVisible: i,
     disableBoostClick: n

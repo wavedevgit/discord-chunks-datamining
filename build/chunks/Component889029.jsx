@@ -66,14 +66,14 @@ function y() {
     body: Chunk388032.intl.format(Chunk388032.t["4rmZn5"], {
       streamkitURL: Chunk981631.EYA.STREAMKIT
     })
-  }), T = () => {
+  }), S = () => {
     if (Chunk358085.isPlatformEmbedded) return (0, Chunk951288.jsx)(Chunk481060.j7V, {
       value: exports,
-      onChange: e => S("autoToggle", e),
+      onChange: e => T("autoToggle", e),
       note: Chunk388032.intl.string(Chunk388032.t.ZPi4lJ),
       children: Chunk388032.intl.string(Chunk388032.t.PKDAJy)
     })
-  }, S = (e, t) => {
+  }, T = (e, t) => {
     l.Z.update({
       [e]: t
     })
@@ -91,12 +91,12 @@ function y() {
       setting: Chunk726985.s6.STREAMER_MODE_ENABLE,
       children: [(0, Chunk951288.jsx)(Chunk481060.j7V, {
         value: module,
-        onChange: e => S("enabled", e),
+        onChange: e => T("enabled", e),
         note: Chunk388032.intl.format(Chunk388032.t.MLVL2N, {
           onClick: A
         }),
         children: Chunk388032.intl.string(Chunk388032.t.p9ZAJS)
-      }), T()]
+      }), S()]
     }), (0, Chunk951288.jsxs)("div", {
       children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
         className: a()(Chunk197571.marginTop40, Chunk197571.marginBottom8, Chunk40086.sectionLabel),
@@ -105,7 +105,7 @@ function y() {
         setting: Chunk726985.s6.STREAMER_MODE_HIDE_PERSONAL_INFORMATION,
         children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
           value: E,
-          onChange: e => S("hidePersonalInformation", e),
+          onChange: e => T("hidePersonalInformation", e),
           note: Chunk388032.intl.string(Chunk388032.t["+9Lra2"]),
           children: Chunk388032.intl.string(Chunk388032.t.UpQziI)
         })
@@ -113,7 +113,7 @@ function y() {
         setting: Chunk726985.s6.STREAMER_MODE_HIDE_INVITE_LINKS,
         children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
           value: Chunk120356,
-          onChange: e => S("hideInstantInvites", e),
+          onChange: e => T("hideInstantInvites", e),
           note: Chunk388032.intl.string(Chunk388032.t.m7mS2d),
           children: Chunk388032.intl.string(Chunk388032.t.q7WNGh)
         })
@@ -121,7 +121,7 @@ function y() {
         setting: Chunk726985.s6.STREAMER_MODE_DISABLE_SOUNDS,
         children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
           value: y,
-          onChange: e => S("disableSounds", e),
+          onChange: e => T("disableSounds", e),
           note: Chunk388032.intl.string(Chunk388032.t.eAkaio),
           children: Chunk388032.intl.string(Chunk388032.t.o56OZm)
         })
@@ -129,7 +129,7 @@ function y() {
         setting: Chunk726985.s6.STREAMER_MODE_DISABLE_NOTIFICATIONS,
         children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
           value: O,
-          onChange: e => S("disableNotifications", e),
+          onChange: e => T("disableNotifications", e),
           note: Chunk388032.intl.string(Chunk388032.t.ZAmpQ0),
           children: Chunk388032.intl.string(Chunk388032.t.qmYiYW)
         })
@@ -137,7 +137,7 @@ function y() {
         setting: Chunk726985.s6.STREAMER_MODE_HIDE_DISCORD_WINDOW_FROM_SCREEN_CAPTURE,
         children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
           value: v,
-          onChange: e => S("enableContentProtection", e),
+          onChange: e => T("enableContentProtection", e),
           note: Chunk388032.intl.string(Chunk388032.t.P4vj0t),
           children: Chunk388032.intl.string(Chunk388032.t["iA81+f"])
         })

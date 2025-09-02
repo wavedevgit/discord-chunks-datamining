@@ -12,7 +12,7 @@ require.d(exports, {
   _t: () => j,
   a1: () => C,
   bN: () => O,
-  dl: () => S,
+  dl: () => T,
   ft: () => M,
   qF: () => L,
   zd: () => P
@@ -51,14 +51,14 @@ function I(e) {
   return null != t && t.features.has(m.oNc.AGE_VERIFICATION_LARGE_GUILD) && (0, i.u)("age_verification_utils") && n
 }
 
-function T(e) {
+function S(e) {
   let t = (0, r.e7)([d.Z], () => d.Z.getGuild(e)),
     n = (0, a.L5)(),
     o = (0, i.z)("age_verification_utils");
   return null != t && t.features.has(m.oNc.AGE_VERIFICATION_LARGE_GUILD) && o && n
 }
 
-function S() {
+function T() {
   let e = (0, Chunk974814.H1)({
       location: "age-gate-utils"
     }),
@@ -88,7 +88,7 @@ function C(e) {
 let N = () => {
     let e = Chunk594174.default.getCurrentUser();
     if (null == module) returnfalse;
-    let t = S();
+    let t = T();
     returntrue !== module.nsfwAllowed || exports
   },
   R = e => {
@@ -100,7 +100,7 @@ let N = () => {
     })
   },
   P = e => !!N() && null != e && k(c.Z.getChannel(e)),
-  w = e => S() && P(e),
+  w = e => T() && P(e),
   D = e => !!w(e) && ((0, p.mN)(h.L0.NSFW_VOICE_CHANNEL), true);
 
 function x(e, t, n) {
@@ -150,7 +150,7 @@ function U(e) {
       var e;
       return (null == (e = f.default.getCurrentUser()) ? true : e.nsfwAllowed) === false
     }),
-    c = T(null == e ? true : e.guild_id),
+    c = S(null == e ? true : e.guild_id),
     _ = (0, o.s8)({
       location: "age-gate-utils"
     }),

@@ -93,7 +93,7 @@ function I(e) {
   s.default.compare(n.id, p[t]) > 0 && (p[t] = n.id)
 }
 
-function T(e) {
+function S(e) {
   let {
     channelId: t,
     messages: n
@@ -101,7 +101,7 @@ function T(e) {
   if (null == r) returnfalse;
   p[t] = r.id
 }
-class S extends(r = Chunk442837.ZP.Store) {
+class T extends(r = Chunk442837.ZP.Store) {
   get isFetchingWallpapers() {
     return 1 === f
   }
@@ -128,12 +128,12 @@ class S extends(r = Chunk442837.ZP.Store) {
     return p[e]
   }
 }
-c(S, "displayName", "ChatWallpaperStore");
-let A = new S(Chunk570140.Z, {
+c(T, "displayName", "ChatWallpaperStore");
+let A = new T(Chunk570140.Z, {
   FETCH_CHAT_WALLPAPERS_START: m,
   FETCH_CHAT_WALLPAPERS_SUCCESS: g,
   FETCH_CHAT_WALLPAPERS_FAILURE: E,
-  LOAD_MESSAGES_SUCCESS: T,
+  LOAD_MESSAGES_SUCCESS: S,
   MESSAGE_CREATE: I,
   UPDATE_CHAT_WALLPAPER_FLAG_START: y,
   UPDATE_CHAT_WALLPAPER_FLAG_COMPLETE: O,

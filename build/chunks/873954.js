@@ -2,7 +2,7 @@
 /** chunk id: 873954, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  FE: () => S,
+  FE: () => T,
   G5: () => v,
   yF: () => h
 });
@@ -104,10 +104,10 @@ function I(e) {
     addIdAndValue: true
   })
 }
-let T = (0, Chunk647438.createContext)(null);
+let S = (0, Chunk647438.createContext)(null);
 
-function S(e) {
-  let t = (0, c.useContext)(T),
+function T(e) {
+  let t = (0, c.useContext)(S),
     n = ((null == t ? true : t.dependencies) || []).concat(e.dependencies),
     r = e.idScope || (null == t ? true : t.idScope),
     i = I({
@@ -118,7 +118,7 @@ function S(e) {
   return (0, c.useContext)(p) && (i = c.createElement(A, null, i)), t = (0, c.useMemo)(() => ({
     dependencies: n,
     idScope: r
-  }), [r, ...n]), c.createElement(T.Provider, {
+  }), [r, ...n]), c.createElement(S.Provider, {
     value: t
   }, i)
 }

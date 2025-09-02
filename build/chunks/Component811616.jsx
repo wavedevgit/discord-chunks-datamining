@@ -2,7 +2,7 @@
 /** chunk id: 811616, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -28,13 +28,13 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk399377 = require("./399377.js");
 
-function S(e) {
+function T(e) {
   let {
     premiumSubscription: t,
     planId: n,
     selectPlan: i,
     selected: o,
-    priceOptions: S,
+    priceOptions: T,
     shouldShowUpdatedPaymentModal: A,
     isEligibleForDiscount: C,
     discountAmountOff: N,
@@ -54,9 +54,9 @@ function S(e) {
     }, {
       autoTrackExposure: false
     });
-  U && (k = (0, g.UV)(w, D, S));
-  let G = (0, g.aS)(n, false, D, S),
-    B = (0, g.Ap)(S.paymentSourceId),
+  U && (k = (0, g.UV)(w, D, T));
+  let G = (0, g.aS)(n, false, D, T),
+    B = (0, g.Ap)(T.paymentSourceId),
     Z = null != k && !A,
     F = (0, O.Ng)(),
     V = (0, b.Vi)(),
@@ -65,31 +65,31 @@ function S(e) {
       tag: "span",
       variant: "eyebrow",
       color: "always-white",
-      className: T.planOptionDiscount,
+      className: S.planOptionDiscount,
       children: I.intl.string(I.t.iQTfW1)
     }) : null,
     W = () => null != k && !V && (0, r.jsx)(d.Text, {
       tag: "span",
       variant: "eyebrow",
       color: "always-white",
-      className: T.planOptionDiscount,
+      className: S.planOptionDiscount,
       children: I.intl.format(I.t.IAybsL, {
         discount: (0, m.T3)(P, k / 100)
       })
     }),
     K = () => V ? Y() : w.interval === v.rV.YEAR && null != t || Z && !j ? w.interval === v.rV.YEAR && null != t ? (0, r.jsxs)("span", {
-      className: T.planOptionMonthsFree,
+      className: S.planOptionMonthsFree,
       children: ["(", I.intl.string(I.t["122kWF"]), ")"]
     }) : Z && !j ? W() : true : null,
     z = () => (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
-        className: a()(T.planOptionInterval, {
-          [T.optionSelected]: o || L,
-          [T.updatedOptionSelected]: A && (o || L)
+        className: a()(S.planOptionInterval, {
+          [S.optionSelected]: o || L,
+          [S.updatedOptionSelected]: A && (o || L)
         }),
         children: [(0, g.L7)(w.interval, D, B, w.intervalCount, L, (0, g.Rd)(w.id)), L && K()]
       }), L && (0, r.jsx)("div", {
-        className: T.planOneTimeCost,
+        className: S.planOneTimeCost,
         children: I.intl.format(I.t.ori2Ji, {
           currencyAmount: (0, E.T4)(G.amount, G.currency)
         })
@@ -127,16 +127,16 @@ function S(e) {
       }
     },
     onClick: M ? true : () => i(n),
-    className: a()(T.planOptionClickableContainer, {
-      [T.selectedPlan]: L && o,
-      [T.selectionBox]: L
+    className: a()(S.planOptionClickableContainer, {
+      [S.selectedPlan]: L && o,
+      [S.selectionBox]: L
     }),
     children: [(0, r.jsxs)("div", {
-      className: a()(T.planOption, {
-        [T.planOptionDisabled]: M
+      className: a()(S.planOption, {
+        [S.planOptionDisabled]: M
       }),
       children: [(0, r.jsxs)("div", {
-        className: T.planOptionClickable,
+        className: S.planOptionClickable,
         children: [!L && (0, r.jsx)(u.$q, {
           readOnly: true,
           displayOnly: true,
@@ -144,31 +144,31 @@ function S(e) {
           shape: u.zV.ROUND,
           color: c.Z.unsafe_rawColors.BRAND_500.css,
           type: u.M0.INVERTED,
-          className: T.planOptionCheckbox
+          className: S.planOptionCheckbox
         }), z(), j && (0, r.jsxs)("span", {
-          className: T.planOptionCurrentPlan,
+          className: S.planOptionCurrentPlan,
           children: ["(", I.intl.string(I.t.ymSxh4), ")"]
         }), !L && K()]
       }), A ? (0, r.jsx)("div", {
         className: a()({
-          [T.optionPriceSelected]: o
+          [S.optionPriceSelected]: o
         }),
         children: I.intl.format(I.t.hXcaLS, {
           price: q()
         })
       }) : (0, r.jsx)("div", {
         className: a()({
-          [T.optionSelected]: o || L
+          [S.optionSelected]: o || L
         }),
         children: (0, E.T4)(G.amount, G.currency)
       })]
     }), A && (0, r.jsx)("div", {
-      className: T.planOptionSubtextContainer,
+      className: S.planOptionSubtextContainer,
       children: (0, r.jsx)(d.Text, {
         variant: "text-md/normal",
         color: o ? "text-default" : "interactive-normal",
-        className: a()(T.planOptionSubtext, {
-          [T.discountPlanOptionSubtext]: C
+        className: a()(S.planOptionSubtext, {
+          [S.discountPlanOptionSubtext]: C
         }),
         children: X()
       })

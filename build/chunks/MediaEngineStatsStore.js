@@ -2,7 +2,7 @@
 /** chunk id: 450109, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -43,10 +43,10 @@ function m(e, t, n, r, i) {
       minVersion: e
     }), null == v) return n;
   let I = h(v) ? null != (o = v.packetsSent) ? o : 0 : null != (s = v.packetsReceived) ? s : 0,
-    T = h(v) ? null != (l = v.packetsLost) ? l : 0 : null != (c = v.packetsLost) ? c : 0,
-    S = h(v) ? null != (u = v.frameRateEncode) ? u : 0 : null != (d = v.frameRateDecode) ? d : 0,
+    S = h(v) ? null != (l = v.packetsLost) ? l : 0 : null != (c = v.packetsLost) ? c : 0,
+    T = h(v) ? null != (u = v.frameRateEncode) ? u : 0 : null != (d = v.frameRateDecode) ? d : 0,
     A = null != (f = null == (a = v.resolution) ? true : a.height) ? f : 0;
-  n.numDatapoints += 1, n.frameRateAggregated += S, n.resolutionAggregated += A;
+  n.numDatapoints += 1, n.frameRateAggregated += T, n.resolutionAggregated += A;
   let C = null == i ? true : i.find(e => "video" === e.type);
   if (null != C && t >= n.minVersion) {
     n.numDatapoints -= 1;
@@ -54,8 +54,8 @@ function m(e, t, n, r, i) {
       t = h(C) ? null != (g = C.packetsLost) ? g : 0 : null != (E = C.packetsLost) ? E : 0,
       r = h(C) ? null != (b = C.frameRateEncode) ? b : 0 : null != (y = C.frameRateDecode) ? y : 0,
       i = null != (O = null == (_ = C.resolution) ? true : _.height) ? O : 0;
-    n.frameRateAggregated -= r, n.resolutionAggregated -= i, n.packetsSentOrReceived = I - e, n.packetsLost = T - t
-  } else n.packetsSentOrReceived = I, n.packetsLost = T;
+    n.frameRateAggregated -= r, n.resolutionAggregated -= i, n.packetsSentOrReceived = I - e, n.packetsLost = S - t
+  } else n.packetsSentOrReceived = I, n.packetsLost = S;
   return n.frameRate = n.frameRateAggregated / n.numDatapoints, n.resolution = n.resolutionAggregated / n.numDatapoints, n.packetLossRate = n.packetsLost / (n.packetsSentOrReceived + n.packetsLost), n
 }
 
@@ -117,7 +117,7 @@ function I(e, t) {
   let n = f[e];
   return null == n || n.length <= t ? null : n[n.length - t - 1]
 }
-class T extends(r = Chunk442837.ZP.Store) {
+class S extends(r = Chunk442837.ZP.Store) {
   getConnectionStats(e) {
     return I(e, 0)
   }
@@ -133,8 +133,8 @@ class T extends(r = Chunk442837.ZP.Store) {
     return null == e ? null : null != (i = null == (r = ("long" === n ? _ : p)[e]) ? true : r[t]) ? i : null
   }
 }
-c(T, "displayName", "MediaEngineStatsStore");
-let S = new T(Chunk570140.Z, {
+c(S, "displayName", "MediaEngineStatsStore");
+let T = new S(Chunk570140.Z, {
   MEDIA_ENGINE_CONNECTION_STATS: E,
   MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET: y,
   STREAM_UPDATE: v,

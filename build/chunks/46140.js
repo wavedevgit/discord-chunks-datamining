@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Dp: () => E,
-  Jp: () => S,
+  Jp: () => T,
   Lv: () => I,
   NH: () => m,
   Ot: () => u,
@@ -21,7 +21,7 @@ require.d(exports, {
   j5: () => C,
   l$: () => v,
   tD: () => p,
-  tt: () => T,
+  tt: () => S,
   v6: () => O
 }), require("./388685.js");
 var Chunk754700 = require("./754700.js"),
@@ -61,8 +61,8 @@ let y = "1333839522189938740",
   O = new Set([Chunk497505.Ok.DESKTOP_ACCOUNT_PANEL_AREA, Chunk497505.Ok.MOBILE_HOME_DOCK_AREA]),
   v = new Set([Chunk754700.X.STREAM_ON_DESKTOP, Chunk754700.X.PLAY_ON_DESKTOP, Chunk754700.X.PLAY_ON_XBOX, Chunk754700.X.PLAY_ON_PLAYSTATION, Chunk754700.X.PLAY_ON_DESKTOP_V2]),
   I = new Set([Chunk754700.X.STREAM_ON_DESKTOP, Chunk754700.X.PLAY_ON_DESKTOP, Chunk754700.X.PLAY_ON_XBOX, Chunk754700.X.PLAY_ON_PLAYSTATION, Chunk754700.X.PLAY_ON_DESKTOP_V2]),
-  T = new Set([Chunk754700.X.STREAM_ON_DESKTOP, Chunk754700.X.PLAY_ON_DESKTOP, Chunk754700.X.PLAY_ON_XBOX, Chunk754700.X.PLAY_ON_PLAYSTATION, Chunk754700.X.PLAY_ON_DESKTOP_V2]),
-  S = {
+  S = new Set([Chunk754700.X.STREAM_ON_DESKTOP, Chunk754700.X.PLAY_ON_DESKTOP, Chunk754700.X.PLAY_ON_XBOX, Chunk754700.X.PLAY_ON_PLAYSTATION, Chunk754700.X.PLAY_ON_DESKTOP_V2]),
+  T = {
     is_targeted: false
   };
 var A = function(e) {

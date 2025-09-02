@@ -79,7 +79,7 @@ let w = () => {
     let {
       isCoachmark: t,
       markAsDismissed: n
-    } = e, i = (0, s.e7)([T.Z], () => T.Z.isUpsellPreview), a = () => {
+    } = e, i = (0, s.e7)([S.Z], () => S.Z.isUpsellPreview), a = () => {
       null == n || n(C.L.DISMISS), (0, m.Ll)(), (0, I.O)(), t || d.Z.open()
     };
     return (0, r.jsxs)("div", {
@@ -102,8 +102,8 @@ function L(e) {
   } = (0, h.ZP)(p.Z.APP_ICON_EDITOR), l = (0, s.e7)([y.default], () => y.default.getCurrentUser()), {
     isUpsellPreview: c,
     shouldEditorAnimate: d
-  } = (0, s.cj)([T.Z, _.Z], () => ({
-    isUpsellPreview: T.Z.isUpsellPreview,
+  } = (0, s.cj)([S.Z, _.Z], () => ({
+    isUpsellPreview: S.Z.isUpsellPreview,
     shouldEditorAnimate: t && !_.Z.useReducedMotion
   })), g = m.oq.getState().activePanel === m.wh.APP_ICON;
   i.useEffect(() => {
@@ -126,7 +126,7 @@ function L(e) {
           markAsDismissed: n
         }), (0, r.jsx)(u.Ttm, {
           className: P.editorBody,
-          children: (0, r.jsx)(S.Z, {
+          children: (0, r.jsx)(T.Z, {
             className: P.selectionGroup,
             isEditor: true
           })

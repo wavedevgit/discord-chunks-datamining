@@ -21,13 +21,13 @@ var Chunk466293 = require("./466293.js"),
   O = "[object DataView]",
   v = Chunk466293 ? Chunk466293.prototype : true,
   I = v ? v.valueOf : true;
-module.exports = function(e, t, n, r, v, T, S) {
+module.exports = function(e, t, n, r, v, S, T) {
   switch (n) {
     case O:
       if (e.byteLength != t.byteLength || e.byteOffset != t.byteOffset) break;
       e = e.buffer, t = t.buffer;
     case y:
-      if (e.byteLength != t.byteLength || !T(new i(e), new i(t))) break;
+      if (e.byteLength != t.byteLength || !S(new i(e), new i(t))) break;
       returntrue;
     case d:
     case f:
@@ -43,11 +43,11 @@ module.exports = function(e, t, n, r, v, T, S) {
     case g:
       var C = r & c;
       if (A || (A = l), e.size != t.size && !C) break;
-      var N = S.get(e);
+      var N = T.get(e);
       if (N) return N == t;
-      r |= u, S.set(e, t);
-      var R = o(A(e), A(t), r, v, T, S);
-      return S.delete(e), R;
+      r |= u, T.set(e, t);
+      var R = o(A(e), A(t), r, v, S, T);
+      return T.delete(e), R;
     case b:
       if (I) return I.call(e) == I.call(t)
   }

@@ -335,7 +335,7 @@ class ei extends Chunk183139.Z {
     }
   }
   _tryDetectInvalidIOSToken(e, t, n) {
-    (0, S.isIOS)() && null != this.token && e === q && t === X && (this.iosGoingAwayEventCount += 1, 3 === this.iosGoingAwayEventCount && d.tn.get({
+    (0, T.isIOS)() && null != this.token && e === q && t === X && (this.iosGoingAwayEventCount += 1, 3 === this.iosGoingAwayEventCount && d.tn.get({
       url: U.ANM.ME,
       headers: {
         authorization: this.token

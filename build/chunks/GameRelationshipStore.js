@@ -79,13 +79,13 @@ function I(e) {
   }
 }
 
-function T(e) {
+function S(e) {
   m.clear(), e.gameRelationships.forEach(e => {
     O(u(e))
   }), y()
 }
 
-function S(e) {
+function T(e) {
   O(e.gameRelationship), y()
 }
 
@@ -132,8 +132,8 @@ class C extends(r = Chunk442837.ZP.Store) {
 }
 c(C, "displayName", "GameRelationshipStore");
 let N = new C(Chunk570140.Z, {
-  CONNECTION_OPEN: T,
-  GAME_RELATIONSHIP_ADD: S,
+  CONNECTION_OPEN: S,
+  GAME_RELATIONSHIP_ADD: T,
   GAME_RELATIONSHIP_REMOVE: A,
   APPLICATIONS_FETCH_SUCCESS: I
 })

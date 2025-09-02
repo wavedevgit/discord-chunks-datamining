@@ -27,8 +27,8 @@ let m = e => {
       secondaryConfirmText: O,
       onCancel: v,
       onClose: I,
-      onConfirm: T,
-      onConfirmSecondary: S,
+      onConfirm: S,
+      onConfirmSecondary: T,
       title: A,
       transitionState: C,
       titleClassName: N
@@ -36,13 +36,13 @@ let m = e => {
     R = s.zx.Sizes.MEDIUM,
     [P, w] = i.useState(false);
   i.useEffect(() => () => {
-    P && (null == S || S())
-  }, [P, S]);
+    P && (null == T || T())
+  }, [P, T]);
   let D = () => {
       null == I || I(), null == v || v()
     },
     x = e => {
-      null != e && e.preventDefault(), null == I || I(), null == T || T()
+      null != e && e.preventDefault(), null == I || I(), null == S || S()
     };
   return null != g && "" !== g && (t = (0, r.jsx)(s.zx, {
     type: "button",

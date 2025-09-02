@@ -60,13 +60,13 @@ function v(e, t) {
   }), e
 }
 let I = e => 1 - Math.pow(1 - e, 4),
-  T = {
+  S = {
     mass: 1,
     friction: 64,
     tension: 1e3,
     clamp: true
   },
-  S = {
+  T = {
     mass: 1,
     friction: 64,
     tension: 1e3
@@ -114,7 +114,7 @@ function N(e) {
       config: e => "backgroundColor" === e ? {
         easing: I,
         duration: 200
-      } : T,
+      } : S,
       delay: 100 * !!x
     }, "respect-motion-settings"),
     M = (0, c.Yzy)(null == l ? true : l.id, {
@@ -154,7 +154,7 @@ function N(e) {
       config: e => "opacity" === e ? {
         easing: I,
         duration: 200
-      } : S,
+      } : T,
       delay: L ? 50 - 50 * e : 200 + 50 * e
     }), "respect-motion-settings", [n]),
     U = (0, c.Yzy)(null == l ? true : l.iconURL, {
@@ -179,7 +179,7 @@ function N(e) {
       config: e => "opacity" === e ? {
         easing: I,
         duration: 200
-      } : w ? T : A
+      } : w ? S : A
     }, "respect-motion-settings"),
     G = (0, c.Yzy)(null == l ? true : l.name, {
       key: P,
@@ -197,7 +197,7 @@ function N(e) {
         config: e => "opacity" === e ? {
           easing: I,
           duration: 200
-        } : x ? T : S
+        } : x ? S : T
       },
       leave: {
         opacity: 0,
@@ -207,7 +207,7 @@ function N(e) {
         config: e => "opacity" === e ? {
           easing: I,
           duration: 200
-        } : x ? T : S
+        } : x ? S : T
       }
     }, "respect-motion-settings"),
     B = g.intl.string(f ? g.t.esVyo6 : g.t.UQqFCA);

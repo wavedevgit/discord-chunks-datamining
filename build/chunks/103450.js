@@ -88,7 +88,7 @@ function G(e) {
       channelId: ee,
       application: ei
     }),
-    es = (0, i.e7)([v.Z, S.Z, T.Z, N.Z, R.Z, w.Z, C.Z], () => null != Z ? eo === p.Fw.CAN_JOIN : (0, d.Z)({
+    es = (0, i.e7)([v.Z, T.Z, S.Z, N.Z, R.Z, w.Z, C.Z], () => null != Z ? eo === p.Fw.CAN_JOIN : (0, d.Z)({
       user: F,
       activity: B,
       application: ei,
@@ -96,8 +96,8 @@ function G(e) {
       currentUser: J,
       isEmbedded: Q,
       ChannelStore: v.Z,
-      GuildStore: S.Z,
-      GuildMemberCountStore: T.Z,
+      GuildStore: T.Z,
+      GuildMemberCountStore: S.Z,
       RelationshipStore: N.Z,
       SelectedChannelStore: R.Z,
       VoiceStateStore: w.Z,

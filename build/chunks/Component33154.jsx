@@ -43,7 +43,7 @@ let m = e => {
       return (0, u.vE)(t)
   }
   if (null == v) return null;
-  let T = async () => {
+  let S = async () => {
     y(true);
     try {
       await l.Z.joinGuild(h.id, {
@@ -76,7 +76,7 @@ let m = e => {
           variant: "primary",
           text: _.intl.string(_.t["9VLmlZ"]),
           buttonRef: g,
-          onClick: T,
+          onClick: S,
           loading: b
         }), (0, r.jsx)(o.zx, {
           onClick: m,

@@ -89,7 +89,7 @@ var m = {
     }
     return null
   },
-  T = function(e) {
+  S = function(e) {
     var t = I(e, m.TITLE),
       n = I(e, "titleTemplate");
     if (Array.isArray(t) && (t = t.join("")), n && t) return n.replace(/%s/g, function() {
@@ -98,7 +98,7 @@ var m = {
     var r = I(e, "defaultTitle");
     return t || r || true
   },
-  S = function(e) {
+  T = function(e) {
     return I(e, "onChangeClientState") || function() {}
   },
   A = function(e, t) {
@@ -473,10 +473,10 @@ var W = function(e, t) {
           linkTags: N(m.LINK, ["rel", "href"], e),
           metaTags: N(m.META, ["name", "charset", "http-equiv", "property", "itemprop"], e),
           noscriptTags: N(m.NOSCRIPT, ["innerHTML"], e),
-          onChangeClientState: S(e),
+          onChangeClientState: T(e),
           scriptTags: N(m.SCRIPT, ["src", "innerHTML"], e),
           styleTags: N(m.STYLE, ["cssText"], e),
-          title: T(e),
+          title: S(e),
           titleAttributes: A("titleAttributes", e),
           prioritizeSeoTags: R(e, "prioritizeSeoTags")
         };

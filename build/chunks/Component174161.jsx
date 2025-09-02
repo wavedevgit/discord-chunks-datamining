@@ -2,7 +2,7 @@
 /** chunk id: 174161, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -106,7 +106,7 @@ function I(e) {
   }))
 }
 
-function T(e) {
+function S(e) {
   let {
     profile: t,
     disableGuildNameClick: n

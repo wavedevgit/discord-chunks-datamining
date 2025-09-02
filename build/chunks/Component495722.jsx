@@ -63,8 +63,8 @@ function V(e) {
       l && f && p(false)
     },
     I = b(a.id),
-    T = (null == (t = a.userStatus) ? true : t.completedAt) != null && I === v.iw.COMPLETED,
-    S = !T && (!l || f);
+    S = (null == (t = a.userStatus) ? true : t.completedAt) != null && I === v.iw.COMPLETED,
+    T = !S && (!l || f);
   return (0, r.jsxs)(_.P3F, {
     className: F.videoQuestPreviewCont,
     onClick: s,
@@ -82,7 +82,7 @@ function V(e) {
       muted: true,
       playsInline: true,
       className: o()(F.assetBodyVideoPreviewVideo, {
-        [F.assetBodyVideoPreviewVisible]: S
+        [F.assetBodyVideoPreviewVisible]: T
       }),
       controls: false,
       children: (0, r.jsx)("source", {
@@ -91,7 +91,7 @@ function V(e) {
       })
     }) : null, (0, r.jsx)("div", {
       className: F.previewPlayButtonCont,
-      children: T ? (0, r.jsx)(_.Oe7, {
+      children: S ? (0, r.jsx)(_.Oe7, {
         color: d.Z.colors.WHITE,
         className: F.previewPlayButton
       }) : (0, r.jsx)(_.o1U, {
@@ -120,7 +120,7 @@ function Y(e) {
   return (0, r.jsx)(_.Text, {
     className: F.description,
     variant: "text-xs/normal",
-    children: (0, S.DD)({
+    children: (0, T.DD)({
       quest: e.quest,
       location: G.dr.QUESTS_BAR,
       questContent: O.jn.QUEST_BAR_V2,
@@ -140,12 +140,12 @@ function W(e) {
     containerRef: d,
     isExpanded: h,
     onAcceptQuest: m
-  } = e, g = (0, u.e7)([y.Z], () => y.Z.isEnrolling(t.id), [t]), E = i.useMemo(() => (0, A.fh)(t, A.eC.QUEST_BAR_HERO), [t]), b = (0, S.CR)({
+  } = e, g = (0, u.e7)([y.Z], () => y.Z.isEnrolling(t.id), [t]), E = i.useMemo(() => (0, A.fh)(t, A.eC.QUEST_BAR_HERO), [t]), b = (0, T.CR)({
     quest: t
   }), O = (0, I.h)({
     location: G.dr.QUESTS_BAR,
     questConfig: t.config
-  }), v = i.useMemo(() => (0, A.fh)(t, A.eC.HERO_IMAGE), [t]), T = i.useMemo(() => null == v ? {} : {
+  }), v = i.useMemo(() => (0, A.fh)(t, A.eC.HERO_IMAGE), [t]), S = i.useMemo(() => null == v ? {} : {
     backgroundImage: "url(".concat(v.url, ")")
   }, [v]), C = (0, p.ZP)(), N = (0, f.wj)(C);
   return (0, r.jsxs)(r.Fragment, {
@@ -187,7 +187,7 @@ function W(e) {
       },
       children: (0, r.jsx)("div", {
         className: F.contentCollapsedBackground,
-        style: T
+        style: S
       })
     }), (0, r.jsxs)(s.animated.div, {
       className: F.heroAssetWrapper,
@@ -273,7 +273,7 @@ function z(e) {
     onCtxMenuOpen: p,
     onCtxMenuClose: h,
     onCtxMenuSelect: E
-  } = e, y = (null == (t = n.userStatus) ? true : t.completedAt) != null, v = a.percentComplete > 0, I = (0, b.z)(n), [T, S, A] = (0, b.me)(n, a), C = i.useRef(null), N = (0, b._s)({
+  } = e, y = (null == (t = n.userStatus) ? true : t.completedAt) != null, v = a.percentComplete > 0, I = (0, b.z)(n), [S, T, A] = (0, b.me)(n, a), C = i.useRef(null), N = (0, b._s)({
     quest: n
   }), P = (0, g.q8)(n), Z = (0, b.Jf)(n), H = i.useCallback(() => {
     (0, R.openVideoQuestModal)({
@@ -317,9 +317,9 @@ function z(e) {
         progressBarRef: C,
         isExpanded: true,
         percentComplete: Y,
-        activeScreen: T
+        activeScreen: S
       }), (0, r.jsx)(w.n, {
-        children: !y && !(0, g.Gd)(n) && (0, l.EQ)(T).with(O.LI.SELECT, () => (0, r.jsx)(U.Z, {
+        children: !y && !(0, g.Gd)(n) && (0, l.EQ)(S).with(O.LI.SELECT, () => (0, r.jsx)(U.Z, {
           onConsole: () => A(G.cd.CONSOLE),
           onDesktop: () => A(G.cd.DESKTOP)
         })).with(O.LI.DESKTOP, () => (0, r.jsx)(j.Z, {
@@ -341,8 +341,8 @@ function z(e) {
           awaitingConsoleConnections: N,
           hasMadeProgress: v,
           isProgressing: I,
-          activeScreen: T,
-          showBackButton: T !== O.LI.SELECT && S.length > 1 && !v && !I,
+          activeScreen: S,
+          showBackButton: S !== O.LI.SELECT && T.length > 1 && !v && !I,
           onBack: () => A(null),
           taskDetails: a,
           sourceQuestContent: O.jn.QUEST_BAR_V2,
@@ -359,7 +359,7 @@ function z(e) {
 }
 async function q(e, t, n, r) {
   let i = (0, g.q8)(e);
-  if (i && (0, T.R)(G.dr.QUESTS_BAR)) return void await (0, R.enrollAndStartVideoQuestWithErrorHandling)(e, {
+  if (i && (0, S.R)(G.dr.QUESTS_BAR)) return void await (0, R.enrollAndStartVideoQuestWithErrorHandling)(e, {
     questContent: t,
     questContentCTA: n,
     sourceQuestContent: r,
@@ -392,13 +392,13 @@ let X = Chunk647438.forwardRef(function(e, t) {
     quest: y,
     useReducedMotion: v,
     taskDetails: I
-  } = e, T = (0, g.Vl)(y), {
-    launchInGameActivity: S
+  } = e, S = (0, g.Vl)(y), {
+    launchInGameActivity: T
   } = (0, b.zB)(y), A = i.useCallback(async () => {
     let e = y.config.features.includes(G.S7.START_QUEST_CTA),
       t = e ? m.jZ.START_QUEST : m.jZ.ACCEPT_QUEST;
-    await q(y, O.jn.QUEST_BAR_V2, t, O.jn.QUEST_BAR_V2), T && e && S()
-  }, [y, T, S]), C = (null == (n = y.userStatus) ? true : n.enrolledAt) != null, N = u && d;
+    await q(y, O.jn.QUEST_BAR_V2, t, O.jn.QUEST_BAR_V2), S && e && T()
+  }, [y, S, T]), C = (null == (n = y.userStatus) ? true : n.enrolledAt) != null, N = u && d;
   return (0, r.jsxs)(s.animated.div, {
     "aria-hidden": !N,
     className: o()(l, F.contentExpanded, {

@@ -185,7 +185,7 @@ let Z = {
     } catch (t) {
       if ((null == (i = t.body) ? true : i.code) === N.evJ.TOO_MANY_USER_GUILDS) {
         let e = v.default.getCurrentUser();
-        S.ZP.canUseIncreasedGuildCap(e) || (null == e ? true : e.isStaff()) ? M(N.tHP) : M(N.DZw)
+        T.ZP.canUseIncreasedGuildCap(e) || (null == e ? true : e.isStaff()) ? M(N.tHP) : M(N.DZw)
       }
       throw (null == (s = t.body) ? true : s.code) === N.evJ.GUILD_AT_CAPACITY && U(), h && (null == (l = t.body) ? true : l.code) === N.evJ.UNKNOWN_GUILD && k(e), t
     }
@@ -325,7 +325,7 @@ let Z = {
         secondary_color: null,
         tertiary_color: null
       },
-      permissions: T.Hn
+      permissions: S.Hn
     };
     try {
       let t = await a.tn.post({

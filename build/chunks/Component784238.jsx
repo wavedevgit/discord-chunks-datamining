@@ -75,9 +75,9 @@ let h = e => {
       useShorterCTA: h,
       isPersistentCTA: p
     }),
-    T = (0, s.N)(),
-    S = null == T ? true : T.subscription_trial,
-    A = null != S && I === S.sku_id,
+    S = (0, s.N)(),
+    T = null == S ? true : S.subscription_trial,
+    A = null != T && I === T.sku_id,
     C = null != b ? b : (0, i.wj)(O) ? a.Tt.BRAND_INVERTED : a.Tt.BRAND;
   return (0, r.jsx)(l.Z, f({
     color: C,

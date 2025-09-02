@@ -81,13 +81,13 @@ function I() {
   d = {}, p = {}, _ = {}, f = {}, h = new Set
 }
 
-function T() {
+function S() {
   if (r === Chunk706454.default.locale) returnfalse;
   I(), r = Chunk706454.default.locale
 }
-class S extends(i = Chunk442837.ZP.Store) {
+class T extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk706454.default), this.syncWith([Chunk706454.default], T), r = Chunk706454.default.locale
+    this.waitFor(Chunk706454.default), this.syncWith([Chunk706454.default], S), r = Chunk706454.default.locale
   }
   get(e) {
     return d[e]
@@ -125,13 +125,13 @@ class S extends(i = Chunk442837.ZP.Store) {
     return null != n ? this.getForSKU(n) : null
   }
 }
-u(S, "displayName", "StoreListingStore");
-let A = new S(Chunk570140.Z, {
+u(T, "displayName", "StoreListingStore");
+let A = new T(Chunk570140.Z, {
   STORE_LISTINGS_FETCH_START: O,
   STORE_LISTINGS_FETCH_FAIL: v,
   STORE_LISTINGS_FETCH_SUCCESS: E,
   STORE_LISTING_FETCH_SUCCESS: b,
-  USER_SETTINGS_PROTO_UPDATE: T,
+  USER_SETTINGS_PROTO_UPDATE: S,
   APPLICATION_STORE_CLEAR_DATA: I,
   GIFT_CODE_RESOLVE_SUCCESS: y
 })

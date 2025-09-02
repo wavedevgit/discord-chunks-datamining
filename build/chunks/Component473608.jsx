@@ -45,7 +45,7 @@ function I(e) {
   }
   return e
 }
-let T = e => {
+let S = e => {
     let {
       avatarDecoration: t,
       fallbackLabel: n
@@ -64,7 +64,7 @@ let T = e => {
       className: y.avatarDecoration
     }, o))
   },
-  S = e => {
+  T = e => {
     var t;
     let {
       profileEffect: n,
@@ -115,10 +115,10 @@ let T = e => {
     return true !== u && u in b.K ? b.K[u].render({
       animationState: "on_hover",
       className: y.externalProductAsset
-    }) : (0, s.EQ)(null == _ ? true : _.type).with(l.Z.AVATAR_DECORATION, () => (o()(_.type === l.Z.AVATAR_DECORATION, "ts-match checked the type"), (0, r.jsx)(T, {
+    }) : (0, s.EQ)(null == _ ? true : _.type).with(l.Z.AVATAR_DECORATION, () => (o()(_.type === l.Z.AVATAR_DECORATION, "ts-match checked the type"), (0, r.jsx)(S, {
       avatarDecoration: _,
       fallbackLabel: a
-    }))).with(l.Z.PROFILE_EFFECT, () => (o()(_.type === l.Z.PROFILE_EFFECT, "ts-match checked the type"), (0, r.jsx)(S, {
+    }))).with(l.Z.PROFILE_EFFECT, () => (o()(_.type === l.Z.PROFILE_EFFECT, "ts-match checked the type"), (0, r.jsx)(T, {
       profileEffect: _,
       fallbackLabel: a
     }))).with(l.Z.NAMEPLATE, () => (o()(_.type === l.Z.NAMEPLATE, "ts-match checked the type"), (0, r.jsx)(A, {

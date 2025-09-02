@@ -187,7 +187,7 @@ function v(e) {
   }), v = i.useCallback(e => (0, r.jsx)(b, {
     items: e,
     renderItem: a
-  }), [a]), I = null != f ? f : v, T = i.useMemo(() => n.slice(0, h + 1), [n, h]), S = i.useMemo(() => n.slice(h + 1), [n, h]);
+  }), [a]), I = null != f ? f : v, S = i.useMemo(() => n.slice(0, h + 1), [n, h]), T = i.useMemo(() => n.slice(h + 1), [n, h]);
   return (0, r.jsxs)("div", {
     className: o()(t, u.items),
     ref: _,
@@ -208,6 +208,6 @@ function v(e) {
           count: Number("1".concat(n.length))
         }))
       })]
-    }), T.map(a), S.length > 0 && I(S)]
+    }), S.map(a), T.length > 0 && I(T)]
   })
 }

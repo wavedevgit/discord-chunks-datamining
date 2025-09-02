@@ -5,7 +5,7 @@ let r, i, a, o, s, l, c, u, d, f, _, p, h, m, g, E, b, y, O, v, I;
 require.d(exports, {
   Z: () => eM
 }), require("./388685.js");
-var T, Chunk392711 = require("./392711.js"),
+var S, Chunk392711 = require("./392711.js"),
   Chunk754700 = require("./754700.js"),
   Chunk887003 = require("./887003.js"),
   Chunk442837 = require("./442837.js"),
@@ -65,7 +65,7 @@ function F() {
 function V(e, t) {
   var n, r, i, a;
   if (null != t.userStatus)
-    for (let o of Object.values(null != (r = null == (n = t.userStatus) ? true : n.progress) ? r : {})) !(0, S.isNil)(o) && A.T.DESKTOP.has(o.eventName) && ((null == (i = o.heartbeat) ? true : i.lastBeatAt) != null ? h.add(e) : (null == (a = o.heartbeat) ? true : a.lastBeatAt) == null && h.delete(e))
+    for (let o of Object.values(null != (r = null == (n = t.userStatus) ? true : n.progress) ? r : {})) !(0, T.isNil)(o) && A.T.DESKTOP.has(o.eventName) && ((null == (i = o.heartbeat) ? true : i.lastBeatAt) != null ? h.add(e) : (null == (a = o.heartbeat) ? true : a.lastBeatAt) == null && h.delete(e))
 }
 
 function H(e, t) {
@@ -339,14 +339,14 @@ function eI(e) {
   }
 }
 
-function eT(e) {
+function eS(e) {
   let {
     questId: t
   } = e;
   b = b === t ? null : t
 }
 
-function eS(e) {
+function eT(e) {
   let {
     questId: t,
     platform: n
@@ -419,7 +419,7 @@ function ex(e) {
   I = null != t ? new Date(t) : null
 }
 F();
-class eL extends(T = Chunk442837.ZP.Store) {
+class eL extends(S = Chunk442837.ZP.Store) {
   get quests() {
     return o
   }
@@ -526,8 +526,8 @@ let ej = new eL(Chunk570140.Z, {
     STREAM_CLOSE: eo,
     QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE: eO,
     QUESTS_PREVIEW_UPDATE_SUCCESS: eI,
-    QUESTS_DELIVERY_OVERRIDE: eT,
-    QUESTS_SELECT_TASK_PLATFORM: eS,
+    QUESTS_DELIVERY_OVERRIDE: eS,
+    QUESTS_SELECT_TASK_PLATFORM: eT,
     QUESTS_UPDATE_OPTIMISTIC_PROGRESS: eA,
     QUESTS_RESET_OPTIMISTIC_PROGRESS: eC,
     QUESTS_USER_COMPLETION_UPDATE: ex

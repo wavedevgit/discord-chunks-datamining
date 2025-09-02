@@ -34,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk818033 = require("./818033.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -50,7 +50,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -114,7 +114,7 @@ function L(e) {
       hideShadow: E = false,
       onAnimationEnd: y = v.dG,
       returnRef: I,
-      animation: S = "default",
+      animation: T = "default",
       parentComponent: C
     } = e,
     P = R(e, ["transitionState", "children", "size", "role", "className", "fullscreenOnMobile", "hideShadow", "onAnimationEnd", "returnRef", "animation", "parentComponent"]);
@@ -130,7 +130,7 @@ function L(e) {
     reducedMotion: x
   } = i.useContext(f.S), L = (0, d.q)({
     opacity: +!!w,
-    transform: w || x.enabled || "subtle" === S ? "scale(1)" : "scale(0.7)",
+    transform: w || x.enabled || "subtle" === T ? "scale(1)" : "scale(0.7)",
     config: {
       duration: 200,
       easing: c.Z.Easing.out(c.Z.Easing.quad),
@@ -144,16 +144,16 @@ function L(e) {
   return (0, r.jsx)(O.zM.Provider, {
     value: B,
     children: (0, r.jsx)(p.V, N(A({
-      className: T.focusLock,
+      className: S.focusLock,
       role: _,
       returnRef: I,
       impressionType: l.ImpressionTypes.MODAL,
       "aria-labelledby": M ? true : B.headerId
     }, P), {
       children: (0, r.jsx)(s.animated.div, {
-        className: o()(m, T.root, D[u], {
-          [T.fullscreenOnMobile]: g,
-          [T.rootWithShadow]: !E
+        className: o()(m, S.root, D[u], {
+          [S.fullscreenOnMobile]: g,
+          [S.rootWithShadow]: !E
         }),
         ref: j,
         style: L,
@@ -179,8 +179,8 @@ function j(e) {
     justify: null != (n = e.justify) ? n : y.Z.Justify.START,
     align: null != (a = e.align) ? a : y.Z.Align.CENTER,
     wrap: null != (s = e.wrap) ? s : y.Z.Wrap.NO_WRAP,
-    className: o()(T.header, e.className, {
-      [T.separator]: null == (l = e.separator) || l
+    className: o()(S.header, e.className, {
+      [S.separator]: null == (l = e.separator) || l
     }),
     id: u ? true : c,
     children: e.children
@@ -206,7 +206,7 @@ function k(e) {
     scrollbarType: a
   } = e, s = R(e, ["className", "children", "scrollerRef", "scrollbarType"]), l = M(a);
   return (0, r.jsx)(l, N(A({
-    className: o()(T.content, t),
+    className: o()(S.content, t),
     ref: i
   }, s), {
     children: (0, r.jsx)(E.y5t, {
@@ -224,8 +224,8 @@ function U(e) {
     justify: null != (n = e.justify) ? n : y.Z.Justify.START,
     align: null != (i = e.align) ? i : y.Z.Align.STRETCH,
     wrap: null != (a = e.wrap) ? a : y.Z.Wrap.NO_WRAP,
-    className: o()(T.footer, e.className, {
-      [T.footerSeparator]: null == (s = e.separator) || s
+    className: o()(S.footer, e.className, {
+      [S.footerSeparator]: null == (s = e.separator) || s
     }),
     children: (0, r.jsx)(E.y5t, {
       children: e.children
@@ -241,16 +241,16 @@ function G(e) {
     size: _.zx.Sizes.NONE,
     onClick: e.onClick,
     innerClassName: o()(e.innerClassName, {
-      [T.closeWithCircleBackground]: e.withCircleBackground
+      [S.closeWithCircleBackground]: e.withCircleBackground
     }),
     className: o()(e.className, {
-      [T.hideOnFullscreen]: e.hideOnFullscreen,
-      [T.close]: !e.withCircleBackground
+      [S.hideOnFullscreen]: e.hideOnFullscreen,
+      [S.close]: !e.withCircleBackground
     }),
     children: (0, r.jsx)(u.D, {
       size: "md",
       color: "currentColor",
-      className: o()(e.innerClassName, T.closeIcon)
+      className: o()(e.innerClassName, S.closeIcon)
     })
   })
 }

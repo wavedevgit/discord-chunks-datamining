@@ -2,7 +2,7 @@
 /** chunk id: 635921, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  PK: () => T,
+  PK: () => S,
   ZP: () => N,
   _O: () => C
 }), require("./953529.js");
@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk206127 = require("./206127.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk876544 = require("./876544.js");
-let T = e => {
+let S = e => {
     let {
       inOfferExperience: t,
       subscriptionTier: n,
@@ -61,7 +61,7 @@ let T = e => {
       children: [d, " ", f]
     })
   },
-  S = () => (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+  T = () => (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)(Chunk535322.A, {
       className: Chunk876544.settingsSparkleStar1
     }), (0, Chunk951288.jsx)(Chunk535322.A, {
@@ -110,7 +110,7 @@ let T = e => {
               className: o()(I.button, i),
               color: l.Tt.WHITE
             })
-          }) : (0, r.jsx)(T, {
+          }) : (0, r.jsx)(S, {
             subscriptionTier: a,
             inOfferExperience: A,
             buttonClassName: i,
@@ -119,7 +119,7 @@ let T = e => {
             variant: "text-md/normal",
             withBottomMargin: false
           })]
-        }), !A && (0, r.jsx)(S, {})]
+        }), !A && (0, r.jsx)(T, {})]
       })
     })
   };

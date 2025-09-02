@@ -68,13 +68,13 @@ let u = {},
   I = e => {
     p = Date.now() + m(h), h += 1, _ = false
   },
-  T = e => {
+  S = e => {
     let {
       product: t
     } = e;
     return E(t)
   },
-  S = e => {
+  T = e => {
     let {
       categories: t
     } = e;
@@ -126,8 +126,8 @@ let D = new w(Chunk570140.Z, {
   PROFILE_EFFECTS_FETCH_ALL: O,
   PROFILE_EFFECTS_FETCH_ALL_SUCCESS: v,
   PROFILE_EFFECTS_FETCH_ALL_FAILURE: I,
-  COLLECTIBLES_PRODUCT_FETCH_SUCCESS: T,
-  COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: S,
+  COLLECTIBLES_PRODUCT_FETCH_SUCCESS: S,
+  COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: T,
   COLLECTIBLES_CATEGORIES_V2_FETCH_SUCCESS: A,
   COLLECTIBLES_SHOP_HOME_FETCH_SUCCESS: C,
   COLLECTIBLES_PURCHASES_FETCH_SUCCESS: N,

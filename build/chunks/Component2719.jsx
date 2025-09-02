@@ -92,7 +92,7 @@ function X(e) {
   let {
     className: s,
     user: l
-  } = e, c = i.useRef(null), d = (0, T.o9)(), _ = (0, S.b)(), p = (0, v.gS)(), h = null != (a = null == p || null == (t = p.nick) ? true : t[0]) ? a : null, [m, g] = i.useState(false);
+  } = e, c = i.useRef(null), d = (0, S.o9)(), _ = (0, T.b)(), p = (0, v.gS)(), h = null != (a = null == p || null == (t = p.nick) ? true : t[0]) ? a : null, [m, g] = i.useState(false);
   i.useEffect(() => {
     g(null != c.current && c.current.scrollWidth > c.current.clientWidth)
   }, [l.username]);

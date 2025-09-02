@@ -267,8 +267,8 @@ function ed(e) {
       callback: eO,
       callbackWithoutPost: ev,
       onClose: eI,
-      disclosures: eT,
-      isExternalStandaloneOAuthPage: eS = false,
+      disclosures: eS,
+      isExternalStandaloneOAuthPage: eT = false,
       isTwoWayLinkDiscordConsent: eA = false
     } = e,
     eC = null != eh ? null == ec ? true : ec.get(eh) : true,
@@ -282,7 +282,7 @@ function ed(e) {
     return null == eC && null == eh && (null != (e = null == ed ? true : ed.length) ? e : 0) === 0 && null == et
   }, [eC, null == ed ? true : ed.length, et, eh]), [e1, e2] = i.useState(null);
   i.useEffect(() => {
-    e0 && T.ZP.fetchApplication(P).then(e => e2(D.ZP.createFromServer(e)))
+    e0 && S.ZP.fetchApplication(P).then(e => e2(D.ZP.createFromServer(e)))
   }, [P, e0]);
   let e3 = i.useMemo(() => {
       var e, t;
@@ -309,8 +309,8 @@ function ed(e) {
       return null != t ? t : M.Hn
     }, [null == e3 ? true : e3.permissions, ef, e0]),
     e7 = i.useRef(false),
-    [e9, te] = i.useState(null != eT ? eT : []),
-    [tt, tn] = i.useState(null != eT && eT.length > 0);
+    [e9, te] = i.useState(null != eS ? eS : []),
+    [tt, tn] = i.useState(null != eS && eS.length > 0);
   i.useEffect(() => {
     if (e7.current) return;
     let e = async () => {
@@ -319,7 +319,7 @@ function ed(e) {
         let {
           disclosures: e,
           allAcked: t
-        } = await (0, S.de)(P);
+        } = await (0, T.de)(P);
         tn(!t), te(e)
       } catch (n) {
         let {
@@ -332,11 +332,11 @@ function ed(e) {
         e7.current = false
       }
     };
-    if (null == eT) {
+    if (null == eS) {
       if (!L.default.isAuthenticated()) return void(0, G.c$)(eN, "oauth2_error_not_authenticated");
       e()
     }
-  }, [P, eN, eT, te, ej, tn, ex]);
+  }, [P, eN, eS, te, ej, tn, ex]);
   let tr = i.useCallback(async e => {
       if (null != ev) {
         ek(true), ev(e);
@@ -370,7 +370,7 @@ function ed(e) {
             allowMobilePush: eK
           }
         });
-        if (e && (await (0, S.x9)(P, e9), setTimeout(() => {
+        if (e && (await (0, T.x9)(P, e9), setTimeout(() => {
             b.Z.fetch()
           }, 100)), null != eO) eO({
           application: null == eP ? true : eP.application,
@@ -461,7 +461,7 @@ function ed(e) {
       e && eG(true)
     }, []),
     tc = (0, y.O)(tl);
-  if (eL instanceof Error) return eS ? {
+  if (eL instanceof Error) return eT ? {
     body: (0, r.jsx)(J.Lk, {
       message: eL.message
     })

@@ -61,7 +61,7 @@ function I(e, t) {
   }), e
 }
 
-function T(e) {
+function S(e) {
   let {
     channel: t,
     textVariant: n,
@@ -70,12 +70,12 @@ function T(e) {
     hideText: m = false,
     hideTooltip: y = false,
     canTruncate: v = true,
-    showChannelName: T = false
-  } = e, S = (0, s.vjg)(s.Skl.ONLINE), A = (0, u.ZP)(t), C = t.isDM() || t.isGroupDM(), {
+    showChannelName: S = false
+  } = e, T = (0, s.vjg)(s.Skl.ONLINE), A = (0, u.ZP)(t), C = t.isDM() || t.isGroupDM(), {
     enableTopNavButton: N
   } = (0, d.Cq)({
     location: "VoiceActivityStatus"
-  }), R = !N && T, {
+  }), R = !N && S, {
     analyticsLocations: P
   } = (0, l.ZP)(), w = i.useCallback(() => {
     (0, p.A)({
@@ -85,7 +85,7 @@ function T(e) {
     })
   }, [P, t.id]), D = () => y || C ? (0, r.jsx)(_.Z, {
     size: "custom",
-    color: S,
+    color: T,
     channel: t,
     className: o()(b.icon, f)
   }) : (0, r.jsx)(s.ua7, {
@@ -97,7 +97,7 @@ function T(e) {
     onTooltipShow: w,
     children: e => (0, r.jsx)(_.Z, I(O({}, e), {
       size: "custom",
-      color: S,
+      color: T,
       channel: t,
       className: o()(b.icon, f)
     }))
@@ -113,7 +113,7 @@ function T(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     channel: t,
     textVariant: n,
@@ -127,7 +127,7 @@ function S(e) {
     enableTopNavButton: O
   } = (0, d.Cq)({
     location: "VoiceActivityStatusWithCombinedTooltip"
-  }), v = O && null != g ? g : y ? E.intl.string(E.t["9FaEzs"]) : t.isGuildStageVoice() ? E.intl.string(E.t.QygGCA) : E.intl.string(E.t.msxteH), I = null == g || O ? v : "".concat(v, " (").concat(g, ")"), T = p ? I : v;
+  }), v = O && null != g ? g : y ? E.intl.string(E.t["9FaEzs"]) : t.isGuildStageVoice() ? E.intl.string(E.t.QygGCA) : E.intl.string(E.t.msxteH), I = null == g || O ? v : "".concat(v, " (").concat(g, ")"), S = p ? I : v;
   return (0, r.jsx)(m.Z, {
     icon: (0, r.jsx)(_.Z, {
       size: "custom",
@@ -135,7 +135,7 @@ function S(e) {
       channel: t,
       className: o()(b.icon, a)
     }),
-    text: T,
+    text: S,
     tooltipText: c ? true : I,
     textVariant: n,
     textClassName: i,
@@ -149,5 +149,5 @@ function S(e) {
 function A(e) {
   return (0, f.b)({
     location: "VoiceActivityStatusExperimentWrapper"
-  }) ? (0, r.jsx)(S, O({}, e)) : (0, r.jsx)(T, O({}, e))
+  }) ? (0, r.jsx)(T, O({}, e)) : (0, r.jsx)(S, O({}, e))
 }

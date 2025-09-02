@@ -53,7 +53,7 @@ function I(e) {
   return delete E[e], g === e && (g = null, t = true), m === e && (f.Z.getGuildsArray().find(t => t.id !== e), m = null, (0, c.dL)(_.Z5c.ME), t = true), t
 }
 
-function T(e) {
+function S(e) {
   let {
     guild: {
       id: t,
@@ -63,7 +63,7 @@ function T(e) {
   returntrue !== n && I(t)
 }
 
-function S(e) {
+function T(e) {
   let {
     guildId: t,
     user: n
@@ -106,7 +106,7 @@ let N = new C(Chunk570140.Z, {
   CONNECTION_OPEN: b,
   OVERLAY_INITIALIZE: y,
   CHANNEL_SELECT: v,
-  GUILD_MEMBER_REMOVE: S,
-  GUILD_DELETE: T,
+  GUILD_MEMBER_REMOVE: T,
+  GUILD_DELETE: S,
   LOGOUT: A
 })

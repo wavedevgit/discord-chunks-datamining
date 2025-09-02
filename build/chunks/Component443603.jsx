@@ -95,8 +95,8 @@ function y(e) {
     onDoubleClick: O,
     isActive: v,
     onMouseEnter: I,
-    onMouseLeave: T,
-    onFocus: S,
+    onMouseLeave: S,
+    onFocus: T,
     onBlur: A,
     pulse: C,
     sparkle: N,
@@ -141,8 +141,8 @@ function y(e) {
     onClick: i ? true : y,
     onDoubleClick: i ? true : O,
     onMouseEnter: I,
-    onMouseLeave: T,
-    onFocus: S,
+    onMouseLeave: S,
+    onFocus: T,
     onBlur: A,
     focusProps: {
       offset: {

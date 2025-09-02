@@ -10,9 +10,9 @@ require.d(exports, {
   M$: () => O,
   WD: () => C,
   g0: () => v,
-  kJ: () => S,
+  kJ: () => T,
   l6: () => A,
-  pY: () => T,
+  pY: () => S,
   sf: () => E
 }), require("./35282.js"), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
@@ -57,14 +57,14 @@ var v = function(e) {
     return e.VERIFIED_ADULT = "verified_adult", e.VERIFIED_TEEN = "verified_teen", e.ERROR = "error", e
   }({});
 
-function T(e, t) {
+function S(e, t) {
   let n = d.Z.getMessage(e, t);
   if (null == n || null == n.embeds || 0 === n.embeds.length || null == n.embeds[0].fields || n.embeds[0].type !== m.hBH.AGE_VERIFICATION_SYSTEM_NOTIFICATION) returnfalse;
   let r = n.embeds[0].fields.find(e => "ctas" === e.rawName);
   return null == r ? true : r.rawValue.split(",").includes("retry")
 }
 
-function S() {
+function T() {
   let e = Chunk594174.default.getCurrentUser();
   return (null == module ? true : module.ageVerificationStatus) !== Chunk911969.F$.UNVERIFIED && (null == module ? true : module.ageVerificationStatus) !== Chunk911969.F$.CLIENT_ONLY_PENDING
 }

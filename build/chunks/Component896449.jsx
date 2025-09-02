@@ -67,11 +67,11 @@ function y(e) {
     entry: y,
     onSelect: O,
     disableGameProfileLinks: v
-  } = e, I = i.useRef(null), T = i.useContext(f.Ir), S = (0, u.Z)({
+  } = e, I = i.useRef(null), S = i.useContext(f.Ir), T = (0, u.Z)({
     userId: n.id,
     guildId: h,
     channelId: null == g ? true : g.id,
-    onAction: T
+    onAction: S
   }), A = (0, s.Z)({
     id: n.id,
     label: _.intl.string(_.t["/AXYnJ"])
@@ -103,11 +103,11 @@ function y(e) {
         onSelect: O,
         children: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsxs)(a.kSQ, {
-            children: [S, null != P && (0, r.jsx)(a.sNh, {
+            children: [T, null != P && (0, r.jsx)(a.sNh, {
               id: "game-profile",
               label: _.intl.string(_.t.f7aVGh),
               action: e => {
-                P(e), null == T || T()
+                P(e), null == S || S()
               }
             })]
           }), (0, r.jsxs)(a.kSQ, {

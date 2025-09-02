@@ -92,11 +92,11 @@ let v = e => {
       leftAlignHeaders: E = false,
       showAllPerksButton: y,
       headerClassname: I
-    } = e, T = i.useRef(null), S = n === p.gM.WHATS_NEW, A = (0, f.x)();
+    } = e, S = i.useRef(null), T = n === p.gM.WHATS_NEW, A = (0, f.x)();
     i.useEffect(() => {
-      S && A()
-    }, [A, S]);
-    let C = (0, h.re)(S),
+      T && A()
+    }, [A, T]);
+    let C = (0, h.re)(T),
       N = (0, _.Z)(),
       R = (0, h.mN)(),
       {
@@ -121,7 +121,7 @@ let v = e => {
       }),
       j = L.some(e => null != e.pillText);
     return (0, r.jsxs)("div", {
-      ref: T,
+      ref: S,
       className: o()(g.section, {
         [g.centerAlignSection]: !E,
         [g.leftAlignSection]: E
@@ -137,7 +137,7 @@ let v = e => {
         className: o()(g.subtitle, {
           [g.subtitle]: null == y || E,
           [g.subtitleWithButton]: null != y && !E,
-          [g.fullWidth]: S || E,
+          [g.fullWidth]: T || E,
           [g.moreSubtitleMargin]: j,
           [g.leftAlignSubtitle]: E,
           [g.centerAlignSubtitle]: !E

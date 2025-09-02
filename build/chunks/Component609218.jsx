@@ -82,7 +82,7 @@ function U(e) {
       location: "PremiumUpsellPickerOverlay"
     }),
     ee = J || $,
-    et = (0, S.Z)(C.Si.TIER_2);
+    et = (0, T.Z)(C.Si.TIER_2);
   if (ee) {
     let e;
     e = H ? (0, g.rO)() ? x.Z : L.Z : (0, g.rO)() ? j.Z : M.Z;
@@ -195,7 +195,7 @@ function U(e) {
           look: u.zx.Looks.LINK,
           onClick: q,
           children: R.intl.string(R.t.ZnqyZ2)
-        }), (0, r.jsx)(T.Z, {
+        }), (0, r.jsx)(S.Z, {
           showGradient: true,
           premiumModalAnalyticsLocation: {
             section: G,

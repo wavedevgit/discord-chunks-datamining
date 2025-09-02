@@ -2,7 +2,7 @@
 /** chunk id: 539873, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -77,18 +77,18 @@ function I(e, t) {
   return i
 }
 
-function T(e) {
+function S(e) {
   let {
     className: t,
     disabled: n,
     isEditor: E,
     renderCTAButtons: y
-  } = e, [I] = (0, a.Wu)([d.Z], () => [d.Z.getCurrentDesktopIcon()]), T = i.useRef(null);
-  (0, u.Z)(T, p.h1.CUSTOM_APP_ICONS);
-  let S = (0, l.Dt)(),
+  } = e, [I] = (0, a.Wu)([d.Z], () => [d.Z.getCurrentDesktopIcon()]), S = i.useRef(null);
+  (0, u.Z)(S, p.h1.CUSTOM_APP_ICONS);
+  let T = (0, l.Dt)(),
     A = (0, o.arW)({
       orientation: "horizontal",
-      labelledBy: S
+      labelledBy: T
     }),
     {
       ref: C
@@ -101,7 +101,7 @@ function T(e) {
       })
     };
   return (0, r.jsx)("div", {
-    ref: T,
+    ref: S,
     children: (0, r.jsx)("div", O(b({}, N), {
       ref: C,
       className: m.__invalid_container,

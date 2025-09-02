@@ -35,7 +35,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function T(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -60,7 +60,7 @@ function S(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -68,7 +68,7 @@ function A(e, t) {
 function C(e) {
   let t, {
       currentUserId: I,
-      message: S,
+      message: T,
       application: C,
       channel: N,
       analyticsLocations: R,
@@ -83,20 +83,20 @@ function C(e) {
       id: C.id,
       icon: C.icon
     }),
-    j = (0, i.e7)([f.ZP, h.Z], () => null != S.application ? f.ZP.getVisibleRunningGames().find(e => {
+    j = (0, i.e7)([f.ZP, h.Z], () => null != T.application ? f.ZP.getVisibleRunningGames().find(e => {
       let {
         id: t
       } = e;
-      if (null == S.application) returnfalse;
-      if (t === S.application.id) returntrue;
-      let n = h.Z.getGameByName(S.application.name);
+      if (null == T.application) returnfalse;
+      if (t === T.application.id) returntrue;
+      let n = h.Z.getGameByName(T.application.name);
       return null != n && t === n.id
     }) : null),
     M = (0, i.e7)([p.Z], () => p.Z.getCurrentUserActiveStream()),
     k = (0, i.e7)([m.Z], () => m.Z.getChannelId()),
-    U = b.default.extractTimestamp(S.id) + y.O < Date.now(),
+    U = b.default.extractTimestamp(T.id) + y.O < Date.now(),
     G = (0, r.jsx)(r.Fragment, {
-      children: (0, o._0)(S, N, I)
+      children: (0, o._0)(T, N, I)
     }),
     {
       newestAnalyticsLocation: B
@@ -109,7 +109,7 @@ function C(e) {
     bannerAspectRatio: x,
     iconSrc: null != L ? L : true,
     info: G,
-    actions: S.author.id === I ? [] : [{
+    actions: T.author.id === I ? [] : [{
       label: v.intl.string(O.default["5+172d"]),
       trackingArea: u.j_.STREAM,
       disabledReason: t,
@@ -118,7 +118,7 @@ function C(e) {
           let {
             default: e
           } = await Promise.all([n.e("38697"), n.e("46746"), n.e("79839")]).then(n.bind(n, 60594));
-          return t => (0, r.jsx)(e, A(T({}, t), {
+          return t => (0, r.jsx)(e, A(S({}, t), {
             analyticsLocation: B
           }))
         }))

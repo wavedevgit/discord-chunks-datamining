@@ -2,7 +2,7 @@
 /** chunk id: 637879, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  N_: () => S,
+  N_: () => T,
   c2: () => I
 });
 var Chunk951288 = require("./951288.js"),
@@ -84,7 +84,7 @@ function I(e) {
     let e = l.Z.getChannelId();
     return s.Z.getChannel(e)
   });
-  return null == c ? null : (0, r.jsx)(T, {
+  return null == c ? null : (0, r.jsx)(S, {
     searchContext: t,
     selectedChannel: c,
     navId: n,
@@ -93,7 +93,7 @@ function I(e) {
   }, c.id)
 }
 
-function T(e) {
+function S(e) {
   let {
     searchContext: t,
     selectedChannel: n,
@@ -151,7 +151,7 @@ function T(e) {
   }))
 }
 
-function S(e) {
+function T(e) {
   let {
     searchContext: t,
     label: a,

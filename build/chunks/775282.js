@@ -2,7 +2,7 @@
 /** chunk id: 775282, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  E: () => S,
+  E: () => T,
   Jz: () => A,
   Kf: () => C,
   mG: () => P
@@ -72,14 +72,14 @@ let I = (e, t) => {
   t && r.removeEventListener("DOMContentLoaded", t), d.has(n) && (n.HTMLElement.prototype.focus = d.get(n).focus, r.removeEventListener("keydown", g, true), r.removeEventListener("keyup", g, true), r.removeEventListener("click", b, true), n.removeEventListener("focus", y, true), n.removeEventListener("blur", O, false), "undefined" != typeof PointerEvent && (r.removeEventListener("pointerdown", E, true), r.removeEventListener("pointermove", E, true), r.removeEventListener("pointerup", E, true)), d.delete(n))
 };
 
-function T(e) {
+function S(e) {
   let t, n = (0, o.r3)(e);
   return "loading" !== n.readyState ? v(e) : (t = () => {
     v(e)
   }, n.addEventListener("DOMContentLoaded", t)), () => I(e, t)
 }
 
-function S() {
+function T() {
   return "pointer" !== c
 }
 
@@ -99,7 +99,7 @@ function C() {
     }
   }, []), (0, Chunk179506.Av)() ? null : module
 }
-"undefined" != typeof document && T();
+"undefined" != typeof document && S();
 let N = new Set(["checkbox", "radio", "range", "color", "file", "image", "button", "submit", "reset"]);
 
 function R(e, t, n) {
@@ -114,7 +114,7 @@ function R(e, t, n) {
 function P(e, t, n) {
   v(), (0, s.useEffect)(() => {
     let t = (t, r) => {
-      R(!!(null == n ? true : n.isTextInput), t, r) && e(S())
+      R(!!(null == n ? true : n.isTextInput), t, r) && e(T())
     };
     return u.add(t), () => {
       u.delete(t)

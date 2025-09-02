@@ -59,8 +59,8 @@ let _ = 3e5,
   O = 0,
   v = {},
   I = 0,
-  T = 0,
   S = 0,
+  T = 0,
   A = {
     friends: true,
     blocked: true,
@@ -93,7 +93,7 @@ function P(e) {
 
 function w() {
   var e, t;
-  T = g.size, S = b.size, I = Math.max((null != (t = null == (e = N.get(Chunk981631.OGo.PENDING_INCOMING)) ? true : module.size) ? exports : 0) - T - S, 0), O++
+  S = g.size, T = b.size, I = Math.max((null != (t = null == (e = N.get(Chunk981631.OGo.PENDING_INCOMING)) ? true : module.size) ? exports : 0) - S - T, 0), O++
 }
 
 function D(e) {
@@ -185,10 +185,10 @@ class G extends(r = Chunk442837.ZP.Store) {
     return I
   }
   getSpamCount() {
-    return T
+    return S
   }
   getPendingIgnoredCount() {
-    return S
+    return T
   }
   getOutgoingCount() {
     var e, t;

@@ -2,7 +2,7 @@
 /** chunk id: 659580, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  default: () => S
+  default: () => T
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -28,11 +28,11 @@ var Chunk990547 = require("./990547.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk895634 = require("./895634.js");
 
-function S(e) {
+function T(e) {
   let {
     onClose: t,
     renderOutputDevices: n = false,
-    renderInputDevices: S = false,
+    renderInputDevices: T = false,
     renderInputProfiles: A = false,
     renderInputModes: C = false,
     renderInputVolume: N = false,
@@ -77,12 +77,12 @@ function S(e) {
     children: (0, r.jsxs)(s.v2r, {
       onSelect: D,
       onInteraction: L,
-      className: T.menu,
+      className: S.menu,
       onClose: t,
       navId: "audio-device-context",
       variant: "fixed",
       "aria-label": I.intl.string(I.t.ZR1Ss7),
-      children: [S && k, n && U, A && B, !w && C && G !== O._.STUDIO ? (0, r.jsx)(s.kSQ, {
+      children: [T && k, n && U, A && B, !w && C && G !== O._.STUDIO ? (0, r.jsx)(s.kSQ, {
         label: I.intl.string(I.t["pS+K2N"]),
         children: Z
       }) : null, (0, r.jsxs)(s.kSQ, {
@@ -94,7 +94,7 @@ function S(e) {
             location: "AudioDeviceMenu"
           }),
           checked: Y
-        }, "self-deafen") : null, w && S && E.isPlatformEmbedded ? (0, r.jsx)(s.S89, {
+        }, "self-deafen") : null, w && T && E.isPlatformEmbedded ? (0, r.jsx)(s.S89, {
           checked: W === y.pM4.PUSH_TO_TALK,
           id: "input-mode",
           label: I.intl.string(I.t.Q8gkVF),

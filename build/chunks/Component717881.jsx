@@ -62,9 +62,9 @@ function I(e, t) {
   }), e
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
-  var n, r, i = S(e, t);
+  var n, r, i = T(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -72,7 +72,7 @@ function T(e, t) {
   return i
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -113,14 +113,14 @@ function C(e) {
     showActions: g = true,
     hideHeader: b = false,
     showChannelDetails: y = false
-  } = e, v = T(e, ["activity", "user", "useStoreStream", "showActions", "hideHeader", "showChannelDetails"]);
-  let S = (0, a.e7)([h.Z, _.Z], () => {
+  } = e, v = S(e, ["activity", "user", "useStoreStream", "showActions", "hideHeader", "showChannelDetails"]);
+  let T = (0, a.e7)([h.Z, _.Z], () => {
       var e;
       return _.Z.getChannel(null == (e = h.Z.getVoiceStateForUser(n.id)) ? true : e.channelId)
     }),
-    C = (0, u.E)("UserActivityContainer", S),
+    C = (0, u.E)("UserActivityContainer", T),
     N = (0, a.e7)([f.Z], () => l ? f.Z.getAnyStreamForUser(n.id) : null),
-    R = (null == t ? true : t.type) === E.IIU.HANG_STATUS && C ? S : null,
+    R = (null == t ? true : t.type) === E.IIU.HANG_STATUS && C ? T : null,
     P = (0, a.e7)([p.Z, h.Z, _.Z], () => {
       var e, r;
       return (0, o.Z)(t, E.xjy.EMBEDDED) ? p.Z.getGuild(null == (e = _.Z.getChannel(null == (r = h.Z.getVoiceStateForSession(n.id, null == t ? true : t.session_id)) ? true : r.channelId)) ? true : e.getGuildId()) : null != R ? p.Z.getGuild(R.getGuildId()) : null
@@ -145,7 +145,7 @@ function C(e) {
     hideHeader: b,
     activityGuild: null != P ? P : w,
     showChannelDetails: y,
-    channel: y ? S : true,
+    channel: y ? T : true,
     renderActions: g ? () => (0, r.jsx)(A, I(O({}, v), {
       applicationStream: N,
       activity: t,

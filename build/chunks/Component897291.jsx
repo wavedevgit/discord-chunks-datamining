@@ -73,10 +73,10 @@ function y(e) {
     location: "gift-button"
   }, {
     autoTrackExposure: false
-  }), T = i.type === _.d4z.DM;
+  }), S = i.type === _.d4z.DM;
   if (t) return null;
-  let S = () => {
-    I && T && null != E ? (0, o.ZDy)(async () => {
+  let T = () => {
+    I && S && null != E ? (0, o.ZDy)(async () => {
       let {
         default: e
       } = await n.e("59207").then(n.bind(n, 435626));
@@ -111,7 +111,7 @@ function y(e) {
       "aria-label": p.intl.string(p.t.Z1RnTk),
       "aria-haspopup": "dialog",
       onClick: () => {
-        S(), v()
+        T(), v()
       }
     }), O), {
       children: (0, r.jsx)(y, {

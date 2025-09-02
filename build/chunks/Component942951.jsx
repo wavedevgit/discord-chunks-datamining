@@ -108,7 +108,7 @@ function y(e) {
           className: v
         }))
       },
-      T = e => t => {
+      S = e => t => {
         _ && null != t && t.stopPropagation(), e(t)
       };
     return (0, r.jsx)(s.Gt, {
@@ -126,7 +126,7 @@ function y(e) {
             onClick: t
           } = e, n = g(e, ["onClick"]);
           return b(p({
-            onClick: T(t)
+            onClick: S(t)
           }, n))
         }
       }) : b(true)

@@ -36,7 +36,7 @@ let I = [{
   }
 }];
 
-function T(e) {
+function S(e) {
   let t, n, {
     value: i
   } = e;
@@ -56,7 +56,7 @@ function T(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   if (0 === e.length) return null;
   switch (e[0].value) {
     case y.cd.DESKTOP:
@@ -205,8 +205,8 @@ function A(e) {
     isSelected: () => false,
     options: I,
     placeholder: O.intl.string(O.t.drVw4e),
-    renderOptionLabel: T,
-    renderOptionValue: S,
+    renderOptionLabel: S,
+    renderOptionValue: T,
     select: eo,
     serialize: e => {
       switch (e) {
@@ -304,8 +304,8 @@ function A(e) {
         },
         options: I,
         placeholder: O.intl.string(O.t.drVw4e),
-        renderOptionLabel: T,
-        renderOptionValue: S,
+        renderOptionLabel: S,
+        renderOptionValue: T,
         select: eo,
         serialize: e => {
           switch (e) {

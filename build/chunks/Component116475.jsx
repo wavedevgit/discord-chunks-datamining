@@ -45,7 +45,7 @@ function d(e) {
   } = (0, o.ZP)(), [b, y] = [null != g ? g : 0, null != E ? E : 0], O = i.useRef(false), [v, I] = i.useState({
     x: 0,
     y: 0
-  }), T = (e, t) => {
+  }), S = (e, t) => {
     let r = u({
       width: b * n.goal,
       height: y * n.goal,
@@ -61,7 +61,7 @@ function d(e) {
     _(r.x, r.y, {
       immediate: true
     })
-  }, S = e => {
+  }, T = e => {
     p && 0 === e.button && (e.preventDefault(), O.current = true, I({
       x: e.clientX,
       y: e.clientY
@@ -91,10 +91,10 @@ function d(e) {
   };
   return (0, r.jsx)(a.animated.div, {
     ref: m,
-    onMouseDown: S,
+    onMouseDown: T,
     onMouseUp: A,
-    onMouseMove: e => O.current && T(e.movementX, e.movementY),
-    onWheel: e => !e.ctrlKey && T(-e.deltaX, -e.deltaY),
+    onMouseMove: e => O.current && S(e.movementX, e.movementY),
+    onWheel: e => !e.ctrlKey && S(-e.deltaX, -e.deltaY),
     onMouseLeave: () => O.current = false,
     onClick: e => e.stopPropagation(),
     style: {

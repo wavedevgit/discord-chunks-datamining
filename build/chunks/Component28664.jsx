@@ -90,8 +90,8 @@ function b(e) {
       isVisible: y,
       isRendered: O,
       triggerProps: I,
-      handleExitComplete: T,
-      onTooltipMouseEnter: S,
+      handleExitComplete: S,
+      onTooltipMouseEnter: T,
       onTooltipMouseLeave: A
     } = (0, c.l)(_({
       targetElementRef: g.targetElementRef
@@ -110,11 +110,11 @@ function b(e) {
       caretConfig: p,
       layerContext: l,
       onAnimationRest: u,
-      handleExitComplete: T,
+      handleExitComplete: S,
       positionKey: "string" == typeof n ? n : true,
-      onTooltipMouseEnter: S,
+      onTooltipMouseEnter: T,
       onTooltipMouseLeave: A
-    }), [I, g.triggerRef, g.targetElementRef, b, y, O, n, a, o, s, p, l, u, T, S, A]);
+    }), [I, g.triggerRef, g.targetElementRef, b, y, O, n, a, o, s, p, l, u, S, T, A]);
   return (0, r.jsxs)(E.Provider, {
     value: C,
     children: [t, (0, r.jsx)(v, {})]

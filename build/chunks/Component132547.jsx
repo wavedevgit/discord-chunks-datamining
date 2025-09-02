@@ -101,13 +101,13 @@ let M = e => {
               userDiscountOffer: B,
               discountedPrice: K
             })
-          }), (0, r.jsx)(S.Z, {
+          }), (0, r.jsx)(T.Z, {
             variant: N.gM.WHATS_NEW,
             className: L.whatsNew,
             noBackground: true,
             leftAlignHeaders: true,
             shouldAutoScroll: $
-          }), (0, r.jsx)(S.Z, {
+          }), (0, r.jsx)(T.Z, {
             className: L.perksDiscoverability,
             variant: N.gM.PERKS_DISCOVERABILITY,
             noBackground: true,
@@ -144,7 +144,7 @@ let M = e => {
             alt: x.intl.string(x.t.X4IxWF)
           })]
         })
-      }), W && null != K && (0, r.jsx)(T.Z, {
+      }), W && null != K && (0, r.jsx)(S.Z, {
         isVisible: z && U,
         premiumSubscription: M,
         churnDiscountOffer: B,

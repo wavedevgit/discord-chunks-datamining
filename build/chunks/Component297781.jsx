@@ -45,7 +45,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk136011 = require("./136011.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -61,7 +61,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -122,7 +122,7 @@ function j(e) {
     children: t
   } = e, n = R(e, ["children"]);
   return (0, r.jsx)("div", N(A({
-    className: T.badgeContainer
+    className: S.badgeContainer
   }, n), {
     children: t
   }))
@@ -150,7 +150,7 @@ function M(e) {
       }), (0, r.jsx)(f.Text, {
         variant: "text-xs/normal",
         color: s,
-        className: T.badgeLabel,
+        className: S.badgeLabel,
         scaleFontToUserSetting: 5 === c,
         children: n
       })]
@@ -236,7 +236,7 @@ function B(e) {
     location: o
   } = L(), s = (0, b.Jg)(t) && (0, h.Hi)(o, [0, 4]), l = s ? f.TVs.colors.TEXT_FEEDBACK_POSITIVE : a, c = s ? "text-feedback-positive" : i;
   return (0, r.jsxs)("div", {
-    className: T.badgeContainer,
+    className: S.badgeContainer,
     children: [(0, r.jsx)(f.RZG, {
       size: "xxs",
       color: l
@@ -393,7 +393,7 @@ function q(e) {
     location: o
   } = L(), s = (0, b.Jg)(t) && 4 === o, l = s ? f.TVs.colors.TEXT_FEEDBACK_POSITIVE : a, c = s ? "text-feedback-positive" : i;
   return (0, r.jsxs)("div", {
-    className: T.badgeContainer,
+    className: S.badgeContainer,
     children: [(0, r.jsx)(f.ARS, {
       size: "xxs",
       color: l
@@ -439,10 +439,10 @@ function Q(e) {
       location: n
     }, t),
     children: (0, r.jsx)("div", {
-      className: o()(T.badgesContainer, {
-        [T.badgesContainerCard]: 0 === n,
-        [T.badgesContainerPopout]: (0, h.Hi)(n, [1, 2]),
-        [T.badgesContainerGameProfile]: 3 === n
+      className: o()(S.badgesContainer, {
+        [S.badgesContainerCard]: 0 === n,
+        [S.badgesContainerPopout]: (0, h.Hi)(n, [1, 2]),
+        [S.badgesContainerGameProfile]: 3 === n
       }, a),
       children: i
     })

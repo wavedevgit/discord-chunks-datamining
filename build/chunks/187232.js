@@ -2,7 +2,7 @@
 /** chunk id: 187232, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  p: () => S
+  p: () => T
 });
 var Chunk100527 = require("./100527.js"),
   Chunk717401 = require("./717401.js"),
@@ -49,10 +49,10 @@ let m = {
     skuId: "1287835633762701382",
     assetId: "a_604d1f0f336d41089acc3f82f458a99e"
   },
-  T = {
+  S = {
     gradient: ["rgb(35, 86, 53)", "rgb(3, 15, 40)"]
   },
-  S = {
+  T = {
     variants: [{
       listingId: "1303067552619958292",
       name: "Cat Ears",
@@ -98,7 +98,7 @@ let m = {
     planSelection: {
       heading: () => "Choose a FREE reward",
       subheading: () => "Yours to keep if you dare...",
-      gradientConfig: T,
+      gradientConfig: S,
       getImageUrl: () => Chunk955604.Z,
       getBannerImageUrl: () => Chunk29653.Z,
       getBackgroundImageUrl: () => Chunk154658.Z
@@ -107,7 +107,7 @@ let m = {
       desktopBannerText: () => "Pick a free Halloween avatar decoration. Yours to keep with a gift purchase.",
       mobileBannerText: () => "Free reward for YOU! Choose one you love!",
       getImageUrl: () => Chunk692557.Z,
-      gradientConfig: () => T,
+      gradientConfig: () => S,
       getBackgroundImageUrl: () => Chunk306225.Z
     },
     billingSettingsMarketingBanner: {

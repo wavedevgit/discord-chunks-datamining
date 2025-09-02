@@ -2,7 +2,7 @@
 /** chunk id: 938117, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -56,18 +56,18 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e) {
+function T(e) {
   let {
     onLearnMore: t,
     selectedBackgroundOption: O,
     onSelectBackgroundOption: I,
-    currentDeviceId: S,
+    currentDeviceId: T,
     smallerBackgroundOptions: A,
     className: C
   } = e, N = (0, a.e7)([l.default], () => l.default.getCurrentUser()), [R, P] = i.useState(null), w = (0, p.Z)(), D = c.ZP.canUseCustomBackgrounds(N);
@@ -91,10 +91,10 @@ function S(e) {
       onSelectBackgroundOption: t,
       selectedBackgroundOption: n
     } = k.current;
-    e ? (0, _.FU)(n, S, {
+    e ? (0, _.FU)(n, T, {
       track: false
     }).catch(() => t(null)) : null != n && t(null)
-  }, [S]);
+  }, [T]);
   let U = function(e, t) {
       let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
       return new Promise(async r => {
@@ -108,10 +108,10 @@ function S(e) {
       })
     },
     G = e => {
-      I(e), (0, _.FU)(e, S, {
+      I(e), (0, _.FU)(e, T, {
         location: j.location
       }).then(() => P(null)).catch(() => {
-        P(b.intl.string(b.t.ejrSLS)), (0, _.FU)(null, S, {
+        P(b.intl.string(b.t.ejrSLS)), (0, _.FU)(null, T, {
           location: j.location
         })
       })
@@ -121,9 +121,9 @@ function S(e) {
         let {
           default: e
         } = await n.e("87200").then(n.bind(n, 592163));
-        return n => (0, r.jsx)(e, T(v({}, n), {
+        return n => (0, r.jsx)(e, S(v({}, n), {
           onLearnMore: t,
-          analyticsSource: T(v({}, j.location), {
+          analyticsSource: S(v({}, j.location), {
             object: g.qAy.BUTTON_CTA
           })
         }))

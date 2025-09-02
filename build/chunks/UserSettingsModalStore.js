@@ -44,8 +44,8 @@ let f = Chunk981631.QZA.CLOSED,
   O = false,
   v = null,
   I = null,
-  T = [],
-  S = null,
+  S = [],
+  T = null,
   A = null;
 
 function C(e) {
@@ -56,7 +56,7 @@ function N(e) {
   var t, n, r, i, a, o;
   let s = l.default.getCurrentUser();
   if (null == s) return R();
-  p = null != (t = e.section) ? t : p, S = null != (n = e.section) ? n : p, null != e.subsection && null != p && (h[p] = e.subsection), null != e.scrollPosition && null != p && (m[p] = e.scrollPosition), O = !!e.openWithoutBackstack, f = c.QZA.OPEN, g = {}, b = d({}, E = {
+  p = null != (t = e.section) ? t : p, T = null != (n = e.section) ? n : p, null != e.subsection && null != p && (h[p] = e.subsection), null != e.scrollPosition && null != p && (m[p] = e.scrollPosition), O = !!e.openWithoutBackstack, f = c.QZA.OPEN, g = {}, b = d({}, E = {
     [c.oAB.ACCOUNT]: {
       userId: s.id,
       username: s.username,
@@ -67,16 +67,16 @@ function N(e) {
       newPassword: null,
       claimed: s.isClaimed()
     }
-  }), v = null != (r = e.onClose) ? r : null, I = null != (i = e.analyticsLocation) ? i : null, T = null != (a = e.analyticsLocations) ? a : [], A = null != (o = e.impressionSource) ? o : null
+  }), v = null != (r = e.onClose) ? r : null, I = null != (i = e.analyticsLocation) ? i : null, S = null != (a = e.analyticsLocations) ? a : [], A = null != (o = e.impressionSource) ? o : null
 }
 
 function R() {
-  f = Chunk981631.QZA.CLOSED, y = false, E = null, S = null, b = null, _ = null, p = null, h = {}, m = {}, v = null, I = null, T = [], A = null
+  f = Chunk981631.QZA.CLOSED, y = false, E = null, T = null, b = null, _ = null, p = null, h = {}, m = {}, v = null, I = null, S = [], A = null
 }
 
 function P(e) {
   var t;
-  _ = p, p = e.section, I = null, T = null != (t = e.analyticsLocations) ? t : [], null != e.subsection && (h[p] = e.subsection)
+  _ = p, p = e.section, I = null, S = null != (t = e.analyticsLocations) ? t : [], null != e.subsection && (h[p] = e.subsection)
 }
 
 function w(e) {
@@ -167,8 +167,8 @@ class U extends(r = Chunk442837.ZP.Store) {
       hasChanges: this.hasChanges(),
       openWithoutBackstack: O,
       analyticsLocation: I,
-      analyticsLocations: T,
-      initialSection: S,
+      analyticsLocations: S,
+      initialSection: T,
       impressionSource: A
     }
   }

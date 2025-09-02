@@ -34,7 +34,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function T(e) {
   }
   return e
 }
-let S = !Chunk358085.isPlatformEmbedded,
+let T = !Chunk358085.isPlatformEmbedded,
   A = (0, Chunk313201.hQ)();
 
 function C(e) {
@@ -150,16 +150,16 @@ function R() {
     name: Chunk388032.intl.string(Chunk388032.t.cHCEOD)
   }, {
     value: Chunk981631.pM4.PUSH_TO_TALK,
-    name: S ? Chunk388032.intl.string(Chunk388032.t["1AINrK"]) : Chunk388032.intl.string(Chunk388032.t.Q8gkVF)
+    name: T ? Chunk388032.intl.string(Chunk388032.t["1AINrK"]) : Chunk388032.intl.string(Chunk388032.t.Q8gkVF)
   }], o = Chunk647438.useCallback(t => {
     let {
       value: i
     } = t;
-    i === E.pM4.PUSH_TO_TALK && S && (0, l.ZDy)(async () => {
+    i === E.pM4.PUSH_TO_TALK && T && (0, l.ZDy)(async () => {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 468026));
-      return t => (0, r.jsx)(e, T({
+      return t => (0, r.jsx)(e, S({
         title: b.intl.string(b.t.Kdt0GR),
         confirmText: b.intl.string(b.t["1WjMbG"]),
         cancelText: b.intl.string(b.t.BddRzc),

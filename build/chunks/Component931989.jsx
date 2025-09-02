@@ -28,8 +28,8 @@ function f(e) {
     ref: g,
     artboardProperties: E,
     dataBinding: b
-  } = e, y = i.useContext(l.Sfi), O = _(), [v, I] = i.useState(true), T = i.useRef(null), {
-    rive: S,
+  } = e, y = i.useContext(l.Sfi), O = _(), [v, I] = i.useState(true), S = i.useRef(null), {
+    rive: T,
     RiveComponent: A
   } = (0, o.useRive)({
     eventTarget: null == f ? true : f.current,
@@ -44,57 +44,57 @@ function f(e) {
     })
   });
   i.useImperativeHandle(g, () => ({
-    play: () => null == S ? true : S.play(),
-    pause: () => null == S ? true : S.pause(),
-    stop: () => null == S ? true : S.stop()
-  }), [S]), p({
-    rive: S,
+    play: () => null == T ? true : T.play(),
+    pause: () => null == T ? true : T.pause(),
+    stop: () => null == T ? true : T.stop()
+  }), [T]), p({
+    rive: T,
     artboard: h,
     artboardProperties: E,
     dataBinding: b
   }), i.useEffect(() => {
-    if (null != S && "short-loop" === m && y.reducedMotion.enabled) {
+    if (null != T && "short-loop" === m && y.reducedMotion.enabled) {
       let e = () => {
-          S.isPlaying && (T.current = setTimeout(() => {
-            S.pause()
+          T.isPlaying && (S.current = setTimeout(() => {
+            T.pause()
           }, 5e3))
         },
         t = () => {
-          clearTimeout(T.current)
+          clearTimeout(S.current)
         };
-      return S.on(o.EventType.Play, e), S.on(o.EventType.Pause, t), S.on(o.EventType.Stop, t), () => {
-        S.off(o.EventType.Play, e), S.off(o.EventType.Pause, t), S.off(o.EventType.Stop, t)
+      return T.on(o.EventType.Play, e), T.on(o.EventType.Pause, t), T.on(o.EventType.Stop, t), () => {
+        T.off(o.EventType.Play, e), T.off(o.EventType.Pause, t), T.off(o.EventType.Stop, t)
       }
     }
-  }, [S, m, y.reducedMotion.enabled]), i.useLayoutEffect(() => {
-    null != S && "layout" === s && (S.resizeDrawingSurfaceToCanvas(), setTimeout(() => {
-      S.resizeDrawingSurfaceToCanvas()
+  }, [T, m, y.reducedMotion.enabled]), i.useLayoutEffect(() => {
+    null != T && "layout" === s && (T.resizeDrawingSurfaceToCanvas(), setTimeout(() => {
+      T.resizeDrawingSurfaceToCanvas()
     }, 100))
-  }, [S, s]), i.useEffect(() => {
-    null != S && null == v && (I(S.stateMachineNames), S.reset({
-      stateMachines: S.stateMachineNames,
+  }, [T, s]), i.useEffect(() => {
+    null != T && null == v && (I(T.stateMachineNames), T.reset({
+      stateMachines: T.stateMachineNames,
       autoplay: n,
       artboard: h,
       autoBind: true
-    }), S.setupRiveListeners())
-  }, [S, n, v, h]);
+    }), T.setupRiveListeners())
+  }, [T, n, v, h]);
   let C = i.useRef(0);
   i.useEffect(() => {
-    if (null == S) return;
-    S.play();
+    if (null == T) return;
+    T.play();
     let e = t => {
-      null != t.data && "number" == typeof t.data && (C.current = t.data, t.data > 0 && ("halt" === m && y.reducedMotion.enabled && S.isPlaying && S.pause(), S.off(o.EventType.Advance, e)))
+      null != t.data && "number" == typeof t.data && (C.current = t.data, t.data > 0 && ("halt" === m && y.reducedMotion.enabled && T.isPlaying && T.pause(), T.off(o.EventType.Advance, e)))
     };
-    return S.on(o.EventType.Advance, e), () => {
-      S.off(o.EventType.Advance, e)
+    return T.on(o.EventType.Advance, e), () => {
+      T.off(o.EventType.Advance, e)
     }
-  }, [S, y.reducedMotion.enabled, m]);
+  }, [T, y.reducedMotion.enabled, m]);
   let N = i.useRef(false);
   return i.useEffect(() => {
-    if (null != S) return !O && N.current && S.isPlaying && C.current > 0 ? S.pause() : O && !S.isPlaying && N.current && S.play(), () => {
-      null != S && O && (N.current = null != S.frameRequestId)
+    if (null != T) return !O && N.current && T.isPlaying && C.current > 0 ? T.pause() : O && !T.isPlaying && N.current && T.play(), () => {
+      null != T && O && (N.current = null != T.frameRequestId)
     }
-  }, [S, O]), (0, r.jsx)(A, {
+  }, [T, O]), (0, r.jsx)(A, {
     className: a,
     style: u
   })
@@ -152,8 +152,8 @@ function p(e) {
           m && (null == (s = p.current) ? true : s[h]) !== m && (null == (c = t.viewModelInstance) || null == (l = c.trigger(h)) || l.trigger());
           break;
         case "string":
-          let T = null == (u = t.viewModelInstance) ? true : u.string(h);
-          null != T && (T.value = m);
+          let S = null == (u = t.viewModelInstance) ? true : u.string(h);
+          null != S && (S.value = m);
           break;
         default:
           console.warn("Unknown property type: ".concat(g))

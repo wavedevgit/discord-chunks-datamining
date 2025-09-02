@@ -60,8 +60,8 @@ function O(e, t) {
 }
 let v = ["#51BC9D"],
   I = 100,
-  T = 20,
-  S = false;
+  S = 20,
+  T = false;
 
 function A(e, t, n, r) {
   return O(b({}, h.We), {
@@ -79,12 +79,12 @@ function A(e, t, n, r) {
     velocity: {
       type: "static-random",
       minValue: {
-        x: -T,
-        y: -T
+        x: -S,
+        y: -S
       },
       maxValue: {
-        x: T,
-        y: T
+        x: S,
+        y: S
       }
     },
     opacity: {
@@ -112,7 +112,7 @@ let C = e => {
     progressBarRef: b,
     isExpanded: y,
     isHovered: O,
-    shouldShowRewardsCTAWhenCollapsed: T
+    shouldShowRewardsCTAWhenCollapsed: S
   } = e, {
     completionSpring: C,
     startCompletionAnimation: N
@@ -143,8 +143,8 @@ let C = e => {
   }, [R, L, x, N, Z]), i.useEffect(() => {
     B.isReady && (!P.current && R && (N(), Z()), P.current = R)
   }, [R, P, Z, N, B]), i.useEffect(() => {
-    O && T && (N(), Z())
-  }, [O, T, N, Z]), w) ? null : (0, r.jsxs)("div", {
+    O && S && (N(), Z())
+  }, [O, S, N, Z]), w) ? null : (0, r.jsxs)("div", {
     className: m.wrapper,
     "aria-hidden": "true",
     ref: D,
@@ -163,7 +163,7 @@ let C = e => {
       style: {
         transform: n.to({
           range: [0, 1],
-          output: [S, 0]
+          output: [T, 0]
         }).to(e => "translateY(".concat(e, "px)"))
       },
       children: [(0, r.jsx)(s.O_, {

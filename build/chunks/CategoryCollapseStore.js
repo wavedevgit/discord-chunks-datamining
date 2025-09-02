@@ -2,7 +2,7 @@
 /** chunk id: 680089, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -115,7 +115,7 @@ class I extends(r = Chunk442837.ZP.PersistedStore) {
   }
 }
 d(I, "displayName", "CategoryCollapseStore"), d(I, "persistKey", "collapsedCategories");
-let T = new I(Chunk570140.Z, {
+let S = new I(Chunk570140.Z, {
   CONNECTION_OPEN: E,
   USER_GUILD_SETTINGS_FULL_UPDATE: b,
   CATEGORY_COLLAPSE: m,

@@ -5,7 +5,7 @@ require.d(exports, {
   Hg: () => I,
   KC: () => m,
   QX: () => A,
-  TD: () => S,
+  TD: () => T,
   Xf: () => y,
   Y4: () => b,
   _w: () => g,
@@ -93,7 +93,7 @@ function I(e) {
 Chunk706454.default.addChangeListener(() => {
   _ = Object.create(null)
 });
-let T = [{
+let S = [{
   key: "days",
   millisecondsInUnit: 864e5
 }, {
@@ -107,7 +107,7 @@ let T = [{
   millisecondsInUnit: 1e3
 }];
 
-function S(e, t) {
+function T(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = {
       days: 0,
@@ -117,7 +117,7 @@ function S(e, t) {
     };
   if (e > t || n && Number(e) + 1200 > Number(t)) return r;
   let i = Number(t) - Number(e);
-  return T.forEach(e => {
+  return S.forEach(e => {
     let {
       key: t,
       millisecondsInUnit: n

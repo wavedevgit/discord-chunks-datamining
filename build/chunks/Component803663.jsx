@@ -30,9 +30,9 @@ function g(e) {
   } = (0, _.z)(), b = (0, c.rq)(t), {
     channelId: y,
     guildId: O
-  } = null != b ? b : {}, v = (0, i.e7)([f.Z], () => null != y && f.Z.isInChannel(y), [y]), I = (0, i.e7)([u.Z], () => null != y ? u.Z.getChannel(y) : null, [y]), T = (0, i.e7)([d.Z], () => null != I && d.Z.can(l.gl, I), [I]);
-  if (!(0, c.dS)(t) || !T || null == O || null == y) return null;
-  let S = e => {
+  } = null != b ? b : {}, v = (0, i.e7)([f.Z], () => null != y && f.Z.isInChannel(y), [y]), I = (0, i.e7)([u.Z], () => null != y ? u.Z.getChannel(y) : null, [y]), S = (0, i.e7)([d.Z], () => null != I && d.Z.can(l.gl, I), [I]);
+  if (!(0, c.dS)(t) || !S || null == O || null == y) return null;
+  let T = e => {
     e.stopPropagation(), null == n || n({
       action: "PRESS_STAGE_CHANNEL_LISTEN_BUTTON"
     }), s.AC(O, y), (0, o.Kh)(y), null == g || g()
@@ -42,13 +42,13 @@ function g(e) {
     size: a.Ph.TINY,
     themeColor: "secondary",
     disabled: v,
-    onClick: S
+    onClick: T
   }) : (0, r.jsx)(p.tG, {
     text: m.intl.string(m.t.ZYO5OD),
     size: a.Ph.SMALL,
     themeColor: "secondary",
     fullWidth: true,
     disabled: v,
-    onClick: S
+    onClick: T
   })
 }

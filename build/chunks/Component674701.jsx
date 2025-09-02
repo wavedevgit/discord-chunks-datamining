@@ -53,7 +53,7 @@ function L(e) {
     giftIntentSecondaryAction: G
   } = e, B = (0, l.e7)([y.default], () => y.default.getCurrentUser()), {
     analyticsLocations: Z
-  } = (0, h.ZP)(), F = (0, l.e7)([S.Z], () => S.Z.getFriendAnniversaryYears(a.id));
+  } = (0, h.ZP)(), F = (0, l.e7)([T.Z], () => T.Z.getFriendAnniversaryYears(a.id));
   i.useEffect(() => {
     (0, m.h)({
       name: s.ImpressionNames.GIFT_INTENT_CARD,
@@ -61,7 +61,7 @@ function L(e) {
       properties: {
         gift_intent_type: t,
         type: n,
-        num_friend_anniversaries: S.Z.getFriendAnniversaries().length
+        num_friend_anniversaries: T.Z.getFriendAnniversaries().length
       }
     })
   }, [t, n]);
@@ -108,7 +108,7 @@ function L(e) {
         cta_type: G
       }), G === C.X2.VIEW_ALL ? _.Z.transitionToSection(N.pJs.ALL, {
         explicit: true
-      }) : G === C.X2.SEND_MESSAGE && ((0, T.PV)(a.id), f.Z.openPrivateChannel({
+      }) : G === C.X2.SEND_MESSAGE && ((0, S.PV)(a.id), f.Z.openPrivateChannel({
         recipientIds: a.id
       }).then(() => {
         setTimeout(() => {

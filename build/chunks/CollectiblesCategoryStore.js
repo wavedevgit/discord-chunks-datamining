@@ -30,8 +30,8 @@ let m = new Map,
   O = m,
   v = g,
   I = E,
-  T = [],
-  S = b,
+  S = [],
+  T = b,
   A = y,
   C = null,
   N = false,
@@ -82,14 +82,14 @@ let m = new Map,
         n = new Date;
       O.forEach((e, r) => {
         !t.has(r) && (null == e.unpublishedAt || e.unpublishedAt > n) && t.set(r, e)
-      }), S = new Map([...(O = t).values()].map(e => [e.storeListingId, e])), v = new Map((0, _.Cs)(O, true).map(e => [e.skuId, e])), T = [...(I = new Map((0, _.Cs)(O, false).map(e => [e.storeListingId, e]))).values()]
+      }), T = new Map([...(O = t).values()].map(e => [e.storeListingId, e])), v = new Map((0, _.Cs)(O, true).map(e => [e.skuId, e])), S = [...(I = new Map((0, _.Cs)(O, false).map(e => [e.storeListingId, e]))).values()]
     }
     V(e, v), i = Date.now(), N = false, r = true, a = true
   },
   F = e => {
     if (0 === e.shopHome.categories.length) return;
     let t = new Map(e.shopHome.categories.map(e => [e.skuId, e]));
-    S = new Map([...(O = new Map([...O, ...t])).values()].map(e => [e.storeListingId, e])), v = new Map((0, _.Cs)(O, true).map(e => [e.skuId, e]))
+    T = new Map([...(O = new Map([...O, ...t])).values()].map(e => [e.storeListingId, e])), v = new Map((0, _.Cs)(O, true).map(e => [e.skuId, e]))
   },
   V = (e, t) => {
     if (0 === e.length) {
@@ -154,7 +154,7 @@ class K extends(o = Chunk442837.ZP.Store) {
     return v
   }
   get productsWithVariantsAsGroup() {
-    return T
+    return S
   }
   get recommendedGiftSkuIds() {
     return A
@@ -181,7 +181,7 @@ class K extends(o = Chunk442837.ZP.Store) {
     return null != e ? I.get(e) : true
   }
   getCategoryByStoreListingId(e) {
-    return null != e ? S.get(e) : true
+    return null != e ? T.get(e) : true
   }
   getCategoryForProduct(e) {
     let t = this.getProduct(e);

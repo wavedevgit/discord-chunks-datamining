@@ -67,8 +67,8 @@ let I = e => {
     onCtxMenuOpen: b,
     onCtxMenuClose: O,
     useReducedMotion: I,
-    isExpanded: T,
-    isExpansionAnimationComplete: S
+    isExpanded: S,
+    isExpansionAnimationComplete: T
   } = e, A = (0, u.aM)(), C = i.useCallback(() => {
     (0, p.openDisclosureModal)(t, {
       content: f.jn.QUEST_BAR_V2,
@@ -82,7 +82,7 @@ let I = e => {
       impressionId: A,
       sourceQuestContent: f.jn.QUEST_BAR_V2
     })
-  }, [A, t]), R = T && S, P = (0, r.jsx)(l.P3F, {
+  }, [A, t]), R = S && T, P = (0, r.jsx)(l.P3F, {
     onClick: N,
     className: o()(E.clickable, {
       [E.logo]: R

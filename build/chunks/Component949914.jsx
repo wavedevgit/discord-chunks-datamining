@@ -117,7 +117,7 @@ let G = e => {
       renewal: true,
       analyticsLocations: n,
       analyticsLocation: p.Z.GUILD_ROLE_SUBSCRIPTION_PAYMENT_SOURCE_WITH_INVOICE
-    }), a = (0, l.e7)([T.Z], () => T.Z.hasFetchedPaymentSources);
+    }), a = (0, l.e7)([S.Z], () => S.Z.hasFetchedPaymentSources);
     return null != i && a ? (0, r.jsx)(v.Z, {
       subscription: t,
       currentInvoicePreview: i,
@@ -166,7 +166,7 @@ let G = e => {
       expanded: p,
       handleToggleExpanded: g,
       subscriptionInfo: O
-    } = (0, S.Z)(t), [v, T] = i.useState(false), j = (0, E.Dt)(), {
+    } = (0, T.Z)(t), [v, S] = i.useState(false), j = (0, E.Dt)(), {
       analyticsLocations: k
     } = (0, h.ZP)(), {
       shouldHideGuildPurchaseEntryPoints: F
@@ -184,9 +184,9 @@ let G = e => {
       },
       W = async () => {
         try {
-          T(true), await u.pl(t, k), (0, R.h)()
+          S(true), await u.pl(t, k), (0, R.h)()
         } finally {
-          T(false)
+          S(false)
         }
       }, {
         isCancelled: K,

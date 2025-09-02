@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   a: () => I,
-  default: () => S
+  default: () => T
 }), require("./388685.js"), require("./704826.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,22 +26,22 @@ var Chunk951288 = require("./951288.js"),
   Chunk459931 = require("./459931.js"),
   Chunk740353 = require("./740353.js");
 let I = "VoiceChannelStatusModal",
-  T = 500;
+  S = 500;
 
-function S(e) {
+function T(e) {
   let {
     channel: t,
     transitionState: n,
-    sourceAnalyticsLocations: S,
+    sourceAnalyticsLocations: T,
     onClose: A
-  } = e, C = (0, a.e7)([d.Z], () => d.Z.getChannelStatus(t)), N = (0, a.e7)([m.Z], () => m.Z.getMediaSessionId()), [R, P] = i.useState(null != C ? C : ""), [w, D] = i.useState(false), [x, L] = i.useState(null), j = (0, a.e7)([g.default], () => g.default.getCurrentUser()), M = R.length > T;
+  } = e, C = (0, a.e7)([d.Z], () => d.Z.getChannelStatus(t)), N = (0, a.e7)([m.Z], () => m.Z.getMediaSessionId()), [R, P] = i.useState(null != C ? C : ""), [w, D] = i.useState(false), [x, L] = i.useState(null), j = (0, a.e7)([g.default], () => g.default.getCurrentUser()), M = R.length > S;
   i.useEffect(() => {
     E.default.track(b.rMx.OPEN_MODAL, {
       type: "Voice Channel Topic Modal",
       guild_id: t.guild_id,
-      location_stack: S
+      location_stack: T
     })
-  }, [t.guild_id, S]);
+  }, [t.guild_id, T]);
   let k = e => {
       L(new o.Hx(e, e.status).getAnyErrorMessage())
     },
@@ -78,7 +78,7 @@ function S(e) {
             media_session_id: N,
             raw_length: n,
             text_length: r,
-            location_stack: S
+            location_stack: T
           }), A()) : k(e)
         } catch (e) {
           k(e)
@@ -108,8 +108,8 @@ function S(e) {
         canMentionChannels: false,
         allowNewLines: false,
         parentModalKey: I,
-        maxCharacterCount: T,
-        showRemainingCharsAfterCount: T / 2,
+        maxCharacterCount: S,
+        showRemainingCharsAfterCount: S / 2,
         emojiPickerCloseOnModalOuterClick: true
       }), null != x ? (0, r.jsx)(l.kzN, {
         className: O.error,

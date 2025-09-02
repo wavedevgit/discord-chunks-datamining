@@ -30,7 +30,7 @@ let m = () => {
       null !== b.current && null !== E && O(true)
     }, [b, E]), null === g) return null;
   let I = require === Chunk474936.p9.TIER_2,
-    T = [{
+    S = [{
       text: Chunk388032.intl.string(Chunk388032.t["/r8g/v"]),
       onClick: () => exports(),
       variant: "primary",
@@ -46,7 +46,7 @@ let m = () => {
       gradientColor: I ? "nitro-pink" : "nitro-green",
       transitionState: module,
       title: Chunk388032.intl.string(Chunk388032.t.PZSyRk),
-      actions: T,
+      actions: S,
       onClose: async () => exports(),
       children: (0, Chunk951288.jsx)("div", {
         className: Chunk950728.offerDetailContainer,

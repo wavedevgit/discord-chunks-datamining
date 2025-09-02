@@ -98,12 +98,12 @@ function I(e) {
   for (let e in t) g(e, t[e].most_recent_message)
 }
 
-function T(e) {
+function S(e) {
   if (e.isPushNotification || !m(e.message)) returnfalse;
   e.message.channel_id === u.default.castMessageIdAsChannelId(e.message.id) ? g(e.message.channel_id, null) : g(e.message.channel_id, e.message)
 }
 
-function S(e) {
+function T(e) {
   if (!m(e.message) || e.message.channel_id === e.message.id) returnfalse;
   E(e.message.channel_id, e.message)
 }
@@ -134,8 +134,8 @@ class N extends(r = Chunk442837.ZP.Store) {
 }
 d(N, "displayName", "ForumPostRecentMessageStore"), new N(Chunk570140.Z, {
   CONNECTION_OPEN: v,
-  MESSAGE_CREATE: T,
-  MESSAGE_UPDATE: S,
+  MESSAGE_CREATE: S,
+  MESSAGE_UPDATE: T,
   MESSAGE_DELETE: A,
   LOAD_FORUM_POSTS: I,
   LOAD_ARCHIVED_THREADS_SUCCESS: C,

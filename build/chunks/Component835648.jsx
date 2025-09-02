@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk422840 = require("./422840.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,14 +35,14 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -92,7 +92,7 @@ function D(e) {
     onClick: i,
     listItemProps: a
   } = e, s = N(e, ["icon", "isSelected", "onClick", "listItemProps"]);
-  return (0, r.jsx)(c.P3F, C(S({}, a, s), {
+  return (0, r.jsx)(c.P3F, C(T({}, a, s), {
     onClick: i,
     className: o()(I.categoryIcon, {
       [I.selected]: n
@@ -107,28 +107,28 @@ function D(e) {
 function x(e, t, n, i, a, o) {
   switch (e.categoryInfo.type) {
     case g.bg.FAVORITES:
-      return (0, r.jsx)(D, C(S({}, i), {
+      return (0, r.jsx)(D, C(T({}, i), {
         icon: c.r7p,
         onClick: t,
         isSelected: n,
         listItemProps: a
       }), e.key);
     case g.bg.RECENTLY_HEARD:
-      return (0, r.jsx)(D, C(S({}, i), {
+      return (0, r.jsx)(D, C(T({}, i), {
         icon: c.T39,
         onClick: t,
         isSelected: n,
         listItemProps: a
       }), e.key);
     case g.bg.FREQUENTLY_USED:
-      return (0, r.jsx)(D, C(S({}, i), {
+      return (0, r.jsx)(D, C(T({}, i), {
         icon: c.IeX,
         onClick: t,
         isSelected: n,
         listItemProps: a
       }), e.key);
     case g.bg.GUILD:
-      return (0, r.jsx)(c.P3F, C(S({}, a, i), {
+      return (0, r.jsx)(c.P3F, C(T({}, a, i), {
         className: I.category,
         onClick: t,
         children: (0, r.jsx)(u.Z, {
@@ -138,7 +138,7 @@ function x(e, t, n, i, a, o) {
         })
       }), e.key);
     case g.bg.DEFAULTS:
-      return (0, r.jsx)(D, C(S({}, i), {
+      return (0, r.jsx)(D, C(T({}, i), {
         icon: c.gw7,
         onClick: t,
         isSelected: n,

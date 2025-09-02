@@ -6,8 +6,8 @@ require.d(exports, {
   Hb: () => p,
   Hi: () => E,
   LN: () => g,
-  OG: () => S,
-  Qj: () => T,
+  OG: () => T,
+  Qj: () => S,
   Qy: () => v,
   Rg: () => h,
   q5: () => y,
@@ -156,14 +156,14 @@ function I(e, t, n) {
   n ? O(e) : E(e, t)
 }
 
-function T(e, t) {
+function S(e, t) {
   return f(n => {
     var r;
     return t ? n.messageReactionConfetti : null == (r = n.messageSendConfetti[e]) ? true : r.emoji
   })
 }
 
-function S(e) {
+function T(e) {
   return f(t => {
     let n = t.messageSendConfetti[e];
     if ((null == n ? true : n.state) === 0) return n.hasAutoPopped

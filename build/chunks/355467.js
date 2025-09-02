@@ -4,7 +4,7 @@
 require.d(exports, {
   Dk: () => ea,
   EH: () => ej,
-  EO: () => eS,
+  EO: () => eT,
   G: () => em,
   GE: () => ek,
   GM: () => eB,
@@ -297,7 +297,7 @@ function F(e, t) {
 }
 
 function V(e) {
-  return S.i.includes(e.type)
+  return T.i.includes(e.type)
 }
 
 function H(e) {
@@ -1024,7 +1024,7 @@ async function eb(e, t) {
   if (null == n) throw Y("Stripe cannot be null on a redirect.");
   if (I.j8d.has(t.type)) {
     let e = await ej(t.type);
-    return ev(await eT({
+    return ev(await eS({
       stripe: n,
       paymentSource: t,
       clientSecret: r,
@@ -1088,7 +1088,7 @@ async function eI(e) {
   if (null != l) throw Y(l);
   if (null == s) throw Y("paymentIntent not available with successful stripe call")
 }
-async function eT(e) {
+async function eS(e) {
   var t, n;
   let r, {
       stripe: i,
@@ -1174,7 +1174,7 @@ async function eT(e) {
   if ((null == (n = u.next_action) || null == (t = n.redirect_to_url) ? true : t.url) == null) throw Y("confirm payment did not return a redirect url");
   return u.next_action.redirect_to_url.url
 }
-async function eS(e, t, n) {
+async function eT(e, t, n) {
   c.Z.dispatch({
     type: "BILLING_SUBSCRIPTION_CANCEL_START"
   });

@@ -63,7 +63,7 @@ function v(e, t) {
 
 function I(e, t) {
   if (null == e) return {};
-  var n, r, i = T(e, t);
+  var n, r, i = S(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -71,14 +71,14 @@ function I(e, t) {
   return i
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let S = {
+let T = {
     xs: "text-xs/medium",
     sm: "text-sm/medium",
     md: "text-md/medium"
@@ -102,7 +102,7 @@ function N(e) {
       text: f,
       icon: b,
       iconPosition: O = "start",
-      iconOpticalOffsetMargin: T = 0,
+      iconOpticalOffsetMargin: S = 0,
       fullWidth: A = false,
       focusProps: C,
       loading: N,
@@ -132,7 +132,7 @@ function N(e) {
     ee = null != K ? K : $,
     et = (0, r.jsx)(w, {
       icon: b,
-      iconOpticalOffsetMargin: T,
+      iconOpticalOffsetMargin: S,
       iconPosition: O,
       size: X,
       ref: ee,
@@ -151,7 +151,7 @@ function N(e) {
       }),
       children: [null != et && "start" === O && et, J && (0, r.jsx)(_.x, {
         tag: "span",
-        variant: S[X],
+        variant: T[X],
         color: "none",
         lineClamp: 1,
         children: f

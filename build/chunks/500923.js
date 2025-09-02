@@ -1216,7 +1216,7 @@
         for (n = r - 1; n >= 0; n -= 1) t[n].animation.destroy(e)
       }
 
-      function T(e, t, n) {
+      function S(e, t, n) {
         var r, i = [].concat([].slice.call(document.getElementsByClassName("lottie")), [].slice.call(document.getElementsByClassName("bodymovin"))),
           a = i.length;
         for (r = 0; r < a; r += 1) n && i[r].setAttribute("data-bm-type", n), l(i[r], e);
@@ -1229,7 +1229,7 @@
         }
       }
 
-      function S() {
+      function T() {
         var e;
         for (e = 0; e < r; e += 1) t[e].animation.resize()
       }
@@ -1260,7 +1260,7 @@
         var n;
         for (n = 0; n < r; n += 1) t[n].animation.unmute(e)
       }
-      return e.registerAnimation = l, e.loadAnimation = _, e.setSpeed = p, e.setDirection = h, e.play = m, e.pause = b, e.stop = O, e.togglePause = v, e.searchAnimations = T, e.resize = S, e.goToAndStop = y, e.destroy = I, e.freeze = C, e.unfreeze = N, e.setVolume = R, e.mute = P, e.unmute = w, e.getRegisteredAnimations = c, e
+      return e.registerAnimation = l, e.loadAnimation = _, e.setSpeed = p, e.setDirection = h, e.play = m, e.pause = b, e.stop = O, e.togglePause = v, e.searchAnimations = S, e.resize = T, e.goToAndStop = y, e.destroy = I, e.freeze = C, e.unfreeze = N, e.setVolume = R, e.mute = P, e.unmute = w, e.getRegisteredAnimations = c, e
     }(),
     BezierFactory = function() {
       var e = {};
@@ -1499,15 +1499,15 @@
           O = d * p * h + p * d * h + p * p * f,
           v = d * d * h + p * d * f + d * p * f,
           I = d * d * f,
-          T = p * h * h,
-          S = d * h * h + p * f * h + p * h * f,
+          S = p * h * h,
+          T = d * h * h + p * f * h + p * h * f,
           A = d * f * h + p * f * f + d * h * f,
           C = d * f * f,
           N = h * h * h,
           R = f * h * h + h * f * h + h * h * f,
           P = f * f * h + h * f * f + f * h * f,
           w = f * f * f;
-        for (c = 0; c < _; c += 1) u[4 * c] = e.round((m * t[c] + g * r[c] + E * i[c] + b * n[c]) * 1e3) / 1e3, u[4 * c + 1] = e.round((y * t[c] + O * r[c] + v * i[c] + I * n[c]) * 1e3) / 1e3, u[4 * c + 2] = e.round((T * t[c] + S * r[c] + A * i[c] + C * n[c]) * 1e3) / 1e3, u[4 * c + 3] = e.round((N * t[c] + R * r[c] + P * i[c] + w * n[c]) * 1e3) / 1e3;
+        for (c = 0; c < _; c += 1) u[4 * c] = e.round((m * t[c] + g * r[c] + E * i[c] + b * n[c]) * 1e3) / 1e3, u[4 * c + 1] = e.round((y * t[c] + O * r[c] + v * i[c] + I * n[c]) * 1e3) / 1e3, u[4 * c + 2] = e.round((S * t[c] + T * r[c] + A * i[c] + C * n[c]) * 1e3) / 1e3, u[4 * c + 3] = e.round((N * t[c] + R * r[c] + P * i[c] + w * n[c]) * 1e3) / 1e3;
         return u
       },
       getPointInSegment: c,
@@ -1544,8 +1544,8 @@
         var h = e >= f ? p.points.length - 1 : 0;
         for (y = 0, O = p.points[h].point.length; y < O; y += 1) m[y] = p.points[h].point[y]
       } else {
-        b.__fnct ? T = b.__fnct : b.__fnct = T = BezierFactory.getBezierEasing(g.o.x, g.o.y, g.i.x, g.i.y, g.n).get;
-        var m, g, E, b, y, O, v, I, T, S, A, C = T((e - _) / (f - _)),
+        b.__fnct ? S = b.__fnct : b.__fnct = S = BezierFactory.getBezierEasing(g.o.x, g.o.y, g.i.x, g.i.y, g.n).get;
+        var m, g, E, b, y, O, v, I, S, T, A, C = S((e - _) / (f - _)),
           N = p.segmentLength * C,
           R = t.lastFrame < e && t._lastKeyframeIndex === c ? t._lastAddedLength : 0;
         for (I = t.lastFrame < e && t._lastKeyframeIndex === c ? t._lastPoint : 0, d = true, v = p.points.length; d;) {
@@ -1561,9 +1561,9 @@
         }
         t._lastPoint = I, t._lastAddedLength = R - p.points[I].partialLength, t._lastKeyframeIndex = c
       }
-    } else if (u = g.s.length, S = E.s || g.e, this.sh && 1 !== g.h) e >= f ? (m[0] = S[0], m[1] = S[1], m[2] = S[2]) : e <= _ ? (m[0] = g.s[0], m[1] = g.s[1], m[2] = g.s[2]) : quaternionToEuler(m, slerp(createQuaternion(g.s), createQuaternion(S), (e - _) / (f - _)));
+    } else if (u = g.s.length, T = E.s || g.e, this.sh && 1 !== g.h) e >= f ? (m[0] = T[0], m[1] = T[1], m[2] = T[2]) : e <= _ ? (m[0] = g.s[0], m[1] = g.s[1], m[2] = g.s[2]) : quaternionToEuler(m, slerp(createQuaternion(g.s), createQuaternion(T), (e - _) / (f - _)));
     else
-      for (c = 0; c < u; c += 1) 1 !== g.h && (e >= f ? C = 1 : e < _ ? C = 0 : (g.o.x.constructor === Array ? (b.__fnct || (b.__fnct = []), b.__fnct[c] ? T = b.__fnct[c] : (n = true === g.o.x[c] ? g.o.x[0] : g.o.x[c], r = true === g.o.y[c] ? g.o.y[0] : g.o.y[c], i = true === g.i.x[c] ? g.i.x[0] : g.i.x[c], a = true === g.i.y[c] ? g.i.y[0] : g.i.y[c], T = BezierFactory.getBezierEasing(n, r, i, a).get, b.__fnct[c] = T)) : b.__fnct ? T = b.__fnct : (n = g.o.x, r = g.o.y, i = g.i.x, a = g.i.y, T = BezierFactory.getBezierEasing(n, r, i, a).get, g.keyframeMetadata = T), C = T((e - _) / (f - _)))), S = E.s || g.e, o = 1 === g.h ? g.s[c] : g.s[c] + (S[c] - g.s[c]) * C, "multidimensional" === this.propType ? m[c] = o : m = o;
+      for (c = 0; c < u; c += 1) 1 !== g.h && (e >= f ? C = 1 : e < _ ? C = 0 : (g.o.x.constructor === Array ? (b.__fnct || (b.__fnct = []), b.__fnct[c] ? S = b.__fnct[c] : (n = true === g.o.x[c] ? g.o.x[0] : g.o.x[c], r = true === g.o.y[c] ? g.o.y[0] : g.o.y[c], i = true === g.i.x[c] ? g.i.x[0] : g.i.x[c], a = true === g.i.y[c] ? g.i.y[0] : g.i.y[c], S = BezierFactory.getBezierEasing(n, r, i, a).get, b.__fnct[c] = S)) : b.__fnct ? S = b.__fnct : (n = g.o.x, r = g.o.y, i = g.i.x, a = g.i.y, S = BezierFactory.getBezierEasing(n, r, i, a).get, g.keyframeMetadata = S), C = S((e - _) / (f - _)))), T = E.s || g.e, o = 1 === g.h ? g.s[c] : g.s[c] + (T[c] - g.s[c]) * C, "multidimensional" === this.propType ? m[c] = o : m = o;
     return t.lastIndex = l, m
   }
 
@@ -2055,8 +2055,8 @@
           O = m[4],
           v = m[5],
           I = m[6],
-          T = m[7],
-          S = m[8],
+          S = m[7],
+          T = m[8],
           A = m[9],
           C = m[10],
           N = m[11],
@@ -2064,7 +2064,7 @@
           P = m[13],
           w = m[14],
           D = m[15];
-        return m[0] = g * e + E * i + b * l + y * f, m[1] = g * t + E * a + b * c + y * _, m[2] = g * n + E * o + b * u + y * p, m[3] = g * r + E * s + b * d + y * h, m[4] = O * e + v * i + I * l + T * f, m[5] = O * t + v * a + I * c + T * _, m[6] = O * n + v * o + I * u + T * p, m[7] = O * r + v * s + I * d + T * h, m[8] = S * e + A * i + C * l + N * f, m[9] = S * t + A * a + C * c + N * _, m[10] = S * n + A * o + C * u + N * p, m[11] = S * r + A * s + C * d + N * h, m[12] = R * e + P * i + w * l + D * f, m[13] = R * t + P * a + w * c + D * _, m[14] = R * n + P * o + w * u + D * p, m[15] = R * r + P * s + w * d + D * h, this._identityCalculated = false, this
+        return m[0] = g * e + E * i + b * l + y * f, m[1] = g * t + E * a + b * c + y * _, m[2] = g * n + E * o + b * u + y * p, m[3] = g * r + E * s + b * d + y * h, m[4] = O * e + v * i + I * l + S * f, m[5] = O * t + v * a + I * c + S * _, m[6] = O * n + v * o + I * u + S * p, m[7] = O * r + v * s + I * d + S * h, m[8] = T * e + A * i + C * l + N * f, m[9] = T * t + A * a + C * c + N * _, m[10] = T * n + A * o + C * u + N * p, m[11] = T * r + A * s + C * d + N * h, m[12] = R * e + P * i + w * l + D * f, m[13] = R * t + P * a + w * c + D * _, m[14] = R * n + P * o + w * u + D * p, m[15] = R * r + P * s + w * d + D * h, this._identityCalculated = false, this
       }
 
       function m(e) {
@@ -2111,11 +2111,11 @@
         return e * this.props[1] + t * this.props[5] + n * this.props[9] + this.props[13]
       }
 
-      function T(e, t, n) {
+      function S(e, t, n) {
         return e * this.props[2] + t * this.props[6] + n * this.props[10] + this.props[14]
       }
 
-      function S() {
+      function T() {
         var e = this.props[0] * this.props[5] - this.props[1] * this.props[4],
           t = this.props[5] / e,
           n = -this.props[1] / e,
@@ -2179,7 +2179,7 @@
         return "matrix(" + D(e[0]) + "," + D(e[1]) + "," + D(e[4]) + "," + D(e[5]) + "," + D(e[12]) + "," + D(e[13]) + ")"
       }
       return function() {
-        this.reset = i, this.rotate = a, this.rotateX = o, this.rotateY = s, this.rotateZ = l, this.skew = u, this.skewFromAxis = d, this.shear = c, this.scale = f, this.setTransform = _, this.translate = p, this.transform = h, this.multiply = m, this.applyToPoint = O, this.applyToX = v, this.applyToY = I, this.applyToZ = T, this.applyToPointArray = R, this.applyToTriplePoints = N, this.applyToPointStringified = P, this.toCSS = w, this.to2dCSS = x, this.clone = b, this.cloneFromProps = y, this.equals = E, this.inversePoints = C, this.inversePoint = A, this.getInverseMatrix = S, this._t = this.transform, this.isIdentity = g, this._identity = true, this._identityCalculated = false, this.props = createTypedArray("float32", 16), this.reset()
+        this.reset = i, this.rotate = a, this.rotateX = o, this.rotateY = s, this.rotateZ = l, this.skew = u, this.skewFromAxis = d, this.shear = c, this.scale = f, this.setTransform = _, this.translate = p, this.transform = h, this.multiply = m, this.applyToPoint = O, this.applyToX = v, this.applyToY = I, this.applyToZ = S, this.applyToPointArray = R, this.applyToTriplePoints = N, this.applyToPointStringified = P, this.toCSS = w, this.to2dCSS = x, this.clone = b, this.cloneFromProps = y, this.equals = E, this.inversePoints = C, this.inversePoint = A, this.getInverseMatrix = T, this._t = this.transform, this.isIdentity = g, this._identity = true, this._identityCalculated = false, this.props = createTypedArray("float32", 16), this.reset()
       }
     }();
 
@@ -3188,13 +3188,13 @@
       return e === s
     }
 
-    function T(e) {
+    function S(e) {
       var t = O(e);
       return !!(t >= c) && !!(t <= u)
     }
 
-    function S(e) {
-      return T(e.substr(0, 2)) && T(e.substr(2, 2))
+    function T(e) {
+      return S(e.substr(0, 2)) && S(e.substr(2, 2))
     }
 
     function A(e) {
@@ -3221,7 +3221,7 @@
     return R.isModifier = function(e, t) {
       var n = e.toString(16) + t.toString(16);
       return false !== d.indexOf(n)
-    }, R.isZeroWidthJoiner = v, R.isFlagEmoji = S, R.isRegionalCode = T, R.isCombinedCharacter = A, R.isRegionalFlag = C, R.isVariationSelector = I, R.BLACK_FLAG_CODE_POINT = r, R.prototype = {
+    }, R.isZeroWidthJoiner = v, R.isFlagEmoji = T, R.isRegionalCode = S, R.isCombinedCharacter = A, R.isRegionalFlag = C, R.isVariationSelector = I, R.BLACK_FLAG_CODE_POINT = r, R.prototype = {
       addChars: g,
       addFonts: m,
       getCharData: E,
@@ -4349,11 +4349,11 @@
     e.fWeight = p.weight, e.fStyle = p.style, e.finalSize = e.s, e.finalText = this.buildFinalText(e.t), g = e.finalText.length, e.finalLineHeight = e.lh;
     var h = e.tr / 1e3 * e.finalSize;
     if (e.sz)
-      for (var m, g, E, b, y, O, v, I, T, S, A = true, C = e.sz[0], N = e.sz[1]; A;) {
-        S = this.buildFinalText(e.t), T = 0, u = 0, g = S.length, h = e.tr / 1e3 * e.finalSize;
+      for (var m, g, E, b, y, O, v, I, S, T, A = true, C = e.sz[0], N = e.sz[1]; A;) {
+        T = this.buildFinalText(e.t), S = 0, u = 0, g = T.length, h = e.tr / 1e3 * e.finalSize;
         var R = false;
-        for (m = 0; m < g; m += 1) I = S[m].charCodeAt(0), E = false, " " === S[m] ? R = m : (13 === I || 3 === I) && (u = 0, E = true, T += e.finalLineHeight || 1.2 * e.finalSize), t.chars ? (v = t.getCharData(S[m], f.fStyle, f.fFamily), _ = E ? 0 : v.w * e.finalSize / 100) : _ = t.measureText(S[m], e.f, e.finalSize), u + _ > C && " " !== S[m] ? (false === R ? g += 1 : m = R, T += e.finalLineHeight || 1.2 * e.finalSize, S.splice(m, +(R === m), "\r"), R = false, u = 0) : (u += _, u += h);
-        T += f.ascent * e.finalSize / 100, this.canResize && e.finalSize > this.minimumFontSize && N < T ? (e.finalSize -= 1, e.finalLineHeight = e.finalSize * e.lh / e.s) : (e.finalText = S, g = e.finalText.length, A = false)
+        for (m = 0; m < g; m += 1) I = T[m].charCodeAt(0), E = false, " " === T[m] ? R = m : (13 === I || 3 === I) && (u = 0, E = true, S += e.finalLineHeight || 1.2 * e.finalSize), t.chars ? (v = t.getCharData(T[m], f.fStyle, f.fFamily), _ = E ? 0 : v.w * e.finalSize / 100) : _ = t.measureText(T[m], e.f, e.finalSize), u + _ > C && " " !== T[m] ? (false === R ? g += 1 : m = R, S += e.finalLineHeight || 1.2 * e.finalSize, T.splice(m, +(R === m), "\r"), R = false, u = 0) : (u += _, u += h);
+        S += f.ascent * e.finalSize / 100, this.canResize && e.finalSize > this.minimumFontSize && N < S ? (e.finalSize -= 1, e.finalLineHeight = e.finalSize * e.lh / e.s) : (e.finalText = T, g = e.finalText.length, A = false)
       }
     u = -h, _ = 0;
     var P = 0;
@@ -4538,8 +4538,8 @@
         O = this._animatorsData,
         v = this._textData,
         I = this.mHelper,
-        T = this._renderType,
-        S = this.renderedLetters.length,
+        S = this._renderType,
+        T = this.renderedLetters.length,
         A = e.l;
       if (this._hasMaskedPath) {
         if (Y = this._pathData.m, !this._pathData.n || this._pathData._mdf) {
@@ -4629,9 +4629,9 @@
             }
             I.translate(0, -e.ls), I.translate(l, 0, 0), I.translate(y[0] * A[R].an * .005, y[1] * z * .01, 0), C += A[R].l + .001 * e.tr * e.finalSize
           }
-          "html" === T ? et = I.toCSS() : "svg" === T ? et = I.to2dCSS() : en = [I.props[0], I.props[1], I.props[2], I.props[3], I.props[4], I.props[5], I.props[6], I.props[7], I.props[8], I.props[9], I.props[10], I.props[11], I.props[12], I.props[13], I.props[14], I.props[15]], b = d
+          "html" === S ? et = I.toCSS() : "svg" === S ? et = I.to2dCSS() : en = [I.props[0], I.props[1], I.props[2], I.props[3], I.props[4], I.props[5], I.props[6], I.props[7], I.props[8], I.props[9], I.props[10], I.props[11], I.props[12], I.props[13], I.props[14], I.props[15]], b = d
         }
-        S <= R ? (o = new LetterProps(b, m, g, E, et, en), this.renderedLetters.push(o), S += 1, this.lettersChangedFlag = true) : (o = this.renderedLetters[R], this.lettersChangedFlag = o.update(b, m, g, E, et, en) || this.lettersChangedFlag)
+        T <= R ? (o = new LetterProps(b, m, g, E, et, en), this.renderedLetters.push(o), T += 1, this.lettersChangedFlag = true) : (o = this.renderedLetters[R], this.lettersChangedFlag = o.update(b, m, g, E, et, en) || this.lettersChangedFlag)
       }
     }
   }, TextAnimatorProperty.prototype.getValue = function() {
@@ -4821,8 +4821,8 @@
           I = "start"
       }
       v.setAttribute("text-anchor", I), v.setAttribute("letter-spacing", f);
-      var T = this.buildTextContents(e.finalText);
-      for (h = 0, m = T.length, u = e.ps ? e.ps[1] + e.ascent : 0; h < m; h += 1)(g = this.textSpans[h].span || createNS("tspan")).textContent = T[h], g.setAttribute("x", 0), g.setAttribute("y", u), g.style.display = "inherit", v.appendChild(g), this.textSpans[h] || (this.textSpans[h] = {
+      var S = this.buildTextContents(e.finalText);
+      for (h = 0, m = S.length, u = e.ps ? e.ps[1] + e.ascent : 0; h < m; h += 1)(g = this.textSpans[h].span || createNS("tspan")).textContent = S[h], g.setAttribute("x", 0), g.setAttribute("y", u), g.style.display = "inherit", v.appendChild(g), this.textSpans[h] || (this.textSpans[h] = {
         span: null,
         glyph: null
       }), this.textSpans[h].span = g, u += e.finalLineHeight;
@@ -5485,11 +5485,11 @@
       I = 0;
     for (e = 0; e < t; e += 1) {
       r = (n = this.globalData.fontManager.getCharData(f.finalText[e], h.fStyle, this.globalData.fontManager.getFontByName(f.f).fFamily)) && n.data || {}, g.reset(), E && m[e].n && (y = -b, O += f.yOffset, O += +!!v, v = false), l = (o = r.shapes ? r.shapes[0].it : []).length, g.scale(f.finalSize / 100, f.finalSize / 100), E && this.applyTextPropertiesToMatrix(f, g, m[e].line, y, O), u = createSizedArray(l - 1);
-      var T = 0;
+      var S = 0;
       for (s = 0; s < l; s += 1)
         if ("sh" === o[s].ty) {
           for (i = 1, a = o[s].ks.k.i.length, c = o[s].ks.k, d = []; i < a; i += 1) 1 === i && d.push(g.applyToX(c.v[0][0], c.v[0][1], 0), g.applyToY(c.v[0][0], c.v[0][1], 0)), d.push(g.applyToX(c.o[i - 1][0], c.o[i - 1][1], 0), g.applyToY(c.o[i - 1][0], c.o[i - 1][1], 0), g.applyToX(c.i[i][0], c.i[i][1], 0), g.applyToY(c.i[i][0], c.i[i][1], 0), g.applyToX(c.v[i][0], c.v[i][1], 0), g.applyToY(c.v[i][0], c.v[i][1], 0));
-          d.push(g.applyToX(c.o[i - 1][0], c.o[i - 1][1], 0), g.applyToY(c.o[i - 1][0], c.o[i - 1][1], 0), g.applyToX(c.i[0][0], c.i[0][1], 0), g.applyToY(c.i[0][0], c.i[0][1], 0), g.applyToX(c.v[0][0], c.v[0][1], 0), g.applyToY(c.v[0][0], c.v[0][1], 0)), u[T] = d, T += 1
+          d.push(g.applyToX(c.o[i - 1][0], c.o[i - 1][1], 0), g.applyToY(c.o[i - 1][0], c.o[i - 1][1], 0), g.applyToX(c.i[0][0], c.i[0][1], 0), g.applyToY(c.i[0][0], c.i[0][1], 0), g.applyToX(c.v[0][0], c.v[0][1], 0), g.applyToY(c.v[0][0], c.v[0][1], 0)), u[S] = d, S += 1
         } E && (y += m[e].l, y += b), this.textSpans[I] ? this.textSpans[I].elem = u : this.textSpans[I] = {
         elem: u
       }, I += 1

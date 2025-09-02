@@ -150,7 +150,7 @@ let ec = e => {
           applicationName: e.name
         })
       })]
-    })), (0, E.h7j)(e => (0, r.jsx)(T.default, eo({
+    })), (0, E.h7j)(e => (0, r.jsx)(S.default, eo({
       title: n,
       body: i,
       confirmText: et.intl.string(et.t.xUqheH),
@@ -218,7 +218,7 @@ let ec = e => {
       disclosures: d,
       locale: p,
       id: g
-    } = e, b = a.id, I = i.useMemo(() => j.ZP.createFromServer(a), [a]), T = (0, F.yE)(I.flags, $.udG.EMBEDDED), S = (0, _.e7)([q.Z], () => {
+    } = e, b = a.id, I = i.useMemo(() => j.ZP.createFromServer(a), [a]), S = (0, F.yE)(I.flags, $.udG.EMBEDDED), T = (0, _.e7)([q.Z], () => {
       var e, t, n, r;
       return null == (r = q.Z.settings.applications) || null == (n = r.appSettings) || null == (t = n[b]) || null == (e = t.appDmSettings) ? true : e.allowMobilePush
     }, [b]), A = N.w.useExperiment({
@@ -421,12 +421,12 @@ let ec = e => {
           variant: "text-sm/medium",
           children: et.intl.string(et.t.NkwaBg)
         })
-      }) : null, T && A.enabled ? (0, r.jsx)(E.j7V, {
+      }) : null, S && A.enabled ? (0, r.jsx)(E.j7V, {
         hideBorder: true,
         onChange: ep,
         className: en.dmSettingsSwitch,
         note: et.intl.string(et.t.hw1nKS),
-        value: S,
+        value: T,
         disabled: G,
         children: (0, r.jsx)(E.Text, {
           variant: "text-sm/medium",

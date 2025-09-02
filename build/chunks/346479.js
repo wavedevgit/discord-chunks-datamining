@@ -2,7 +2,7 @@
 /** chunk id: 346479, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 }), require("./997841.js");
 var Chunk697988 = require("./697988.js"),
   Chunk544891 = require("./544891.js"),
@@ -47,7 +47,7 @@ function I(e, t) {
     isJoining: t
   })
 }
-let T = {
+let S = {
   archiveThread(e, t) {
     let n = {
       archived: true

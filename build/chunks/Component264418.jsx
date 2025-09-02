@@ -84,8 +84,8 @@ function y(e) {
       actions: O,
       textLink: v,
       gradientColor: I,
-      onRequestClose: T,
-      popoverRef: S,
+      onRequestClose: S,
+      popoverRef: T,
       position: A,
       caretConfig: C
     } = e,
@@ -95,10 +95,10 @@ function y(e) {
     align: null != (t = null == C ? true : C.align) ? t : "center",
     customOffset: null == C ? true : C.customOffset
   }), x = i.useCallback((e, t) => {
-    null == T || T(t)
-  }, [T]), L = i.useCallback(() => {
-    null == T || T("user:explicit")
-  }, [T]), j = i.useCallback(e => {
+    null == S || S(t)
+  }, [S]), L = i.useCallback(() => {
+    null == S || S("user:explicit")
+  }, [S]), j = i.useCallback(e => {
     P(e), D(t => g(h({}, t), {
       position: (0, l.q)(e)
     }))
@@ -110,7 +110,7 @@ function y(e) {
     onPositionChange: j,
     caretConfig: w,
     children: (0, r.jsxs)("div", {
-      ref: S,
+      ref: T,
       children: [(0, r.jsx)(d.u, {
         onClick: L,
         variant: null != I ? "color-mix" : true

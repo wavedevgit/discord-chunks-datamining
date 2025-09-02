@@ -2,7 +2,7 @@
 /** chunk id: 676053, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  M: () => T
+  M: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -77,18 +77,18 @@ function I(e, t) {
   return i
 }
 
-function T(e) {
+function S(e) {
   var {
     title: t,
     body: n,
     assetUrl: E,
     previewUrl: y = E,
     action: I,
-    caretConfig: T = {
+    caretConfig: S = {
       position: "bottom",
       align: "center"
     },
-    badge: S,
+    badge: T,
     textLink: A,
     onWatchVideo: C,
     onRequestClose: N,
@@ -154,14 +154,14 @@ function T(e) {
       children: [(0, r.jsx)(p.N, {
         onClick: j
       }), (0, r.jsx)(f.$, {
-        caretConfig: T
+        caretConfig: S
       }), (0, r.jsx)("div", {
         className: g.assetContainer,
         children: k
       }), (0, r.jsx)(_.Y, {
         title: t,
         body: n,
-        badge: S,
+        badge: T,
         textLink: A,
         hasBottomMargin: null != I
       }), null != I ? (0, r.jsx)(d.k, {

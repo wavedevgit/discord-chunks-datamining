@@ -153,7 +153,7 @@ function Q() {
     n = new Set,
     r = Chunk594190.ZP.getGamesSeen(false, false).map(e => {
       let n = g.Z.getGameByGameData(e);
-      return null != n ? (t[n.id] = e.lastFocused * T.Z.Millis.SECOND, n.id) : null
+      return null != n ? (t[n.id] = e.lastFocused * S.Z.Millis.SECOND, n.id) : null
     }),
     i = Object.values(Chunk283595.Z.getAllLibraryApplications()).map(r => q(r, n, t, e, true)).filter(Chunk823379.lm),
     a = [...r.map(r => X(r, n, t, e)).filter(Chunk823379.lm), ...Chunk658722].sort((e, t) => e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? false : 1);

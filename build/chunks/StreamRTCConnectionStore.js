@@ -214,7 +214,7 @@ function z(e) {
     guildId: i,
     channelId: a
   } = e, o = (0, m.V9)({
-    streamType: null == i ? S.lo.CALL : S.lo.GUILD,
+    streamType: null == i ? T.lo.CALL : T.lo.GUILD,
     guildId: i,
     channelId: a,
     ownerId: r
@@ -277,7 +277,7 @@ class $ extends(i = Chunk442837.ZP.Store) {
   }
   getQuality(e) {
     var t, n;
-    return (0, E.Z)(O.Z) && null != e && null != (n = null == (t = L[e]) ? true : t.quality) ? n : T.IE4.UNKNOWN
+    return (0, E.Z)(O.Z) && null != e && null != (n = null == (t = L[e]) ? true : t.quality) ? n : S.IE4.UNKNOWN
   }
   getMediaSessionId(e) {
     if (null == e) return null;

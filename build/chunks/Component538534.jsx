@@ -124,7 +124,7 @@ function I(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   var t;
   let {
     disabled: n,
@@ -141,7 +141,7 @@ function T(e) {
     radioPosition: E = "left",
     icon: b,
     withTransparentBackground: y
-  } = e, O = null != (t = a.color) ? t : "", v = r || !g, T = (0, i.jsx)(I, {
+  } = e, O = null != (t = a.color) ? t : "", v = r || !g, S = (0, i.jsx)(I, {
     checked: r,
     disabled: n,
     radioItemIconClassName: p,
@@ -166,7 +166,7 @@ function T(e) {
         [h.radioPositionLeft]: "left" === E,
         [h.radioPositionRight]: "right" === E
       }, m),
-      children: ["left" === E ? T : null, (0, i.jsxs)("div", {
+      children: ["left" === E ? S : null, (0, i.jsxs)("div", {
         className: s()(h.info, u),
         children: [(0, i.jsx)(f.x, {
           variant: "text-md/medium",
@@ -178,11 +178,11 @@ function T(e) {
           variant: "text-sm/normal",
           children: a.desc
         }) : null]
-      }), "right" === E ? T : null]
+      }), "right" === E ? S : null]
     })
   })
 }
-class S extends(r = Chunk647438.PureComponent) {
+class T extends(r = Chunk647438.PureComponent) {
   render() {
     let {
       checked: e,
@@ -210,7 +210,7 @@ class S extends(r = Chunk647438.PureComponent) {
         let {
           onClick: u
         } = t;
-        return (0, i.jsx)(T, {
+        return (0, i.jsx)(S, {
           disabled: !!E,
           checked: e,
           hasSelection: o,
@@ -229,7 +229,7 @@ class S extends(r = Chunk647438.PureComponent) {
           withTransparentBackground: p
         })
       }
-    }) : (0, Chunk951288.jsx)(T, {
+    }) : (0, Chunk951288.jsx)(S, {
       disabled: !!E,
       checked: module,
       hasSelection: Chunk120356,
@@ -340,8 +340,8 @@ function N(e) {
     "aria-labelledby": E,
     orientation: O,
     withTransparentBackground: I
-  } = e, T = (0, d.Gc)(), C = A({
-    labelledBy: null != E ? E : T.titleId,
+  } = e, S = (0, d.Gc)(), C = A({
+    labelledBy: null != E ? E : S.titleId,
     orientation: O,
     isDisabled: _
   }), {
@@ -350,7 +350,7 @@ function N(e) {
   return (0, i.jsx)("div", b(g({}, R), {
     ref: N,
     className: s()(h.container, o),
-    children: m.map(e => (0, i.jsx)(S, {
+    children: m.map(e => (0, i.jsx)(T, {
       hasSelection: P,
       disabled: _,
       checked: l === e.value,
@@ -368,7 +368,7 @@ function N(e) {
     }, e.value))
   }))
 }
-m(S, "defaultProps", {
+m(T, "defaultProps", {
   withTransparentBackground: false,
   radioPosition: "left"
 }), N.Sizes = v

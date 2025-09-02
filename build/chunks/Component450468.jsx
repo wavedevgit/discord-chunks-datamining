@@ -2,7 +2,7 @@
 /** chunk id: 450468, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  default: () => T
+  default: () => S
 }), require("./388685.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -58,7 +58,7 @@ function I() {
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     guildBoostSlotId: t,
     transitionState: n,
@@ -70,21 +70,21 @@ function T(e) {
     g.Z.hasFetchedSubscriptions() || (0, u.jg)()
   }, []);
   let y = (0, s.e7)([g.Z], () => g.Z.getPremiumTypeSubscription()),
-    [T, S] = i.useState(1),
+    [S, T] = i.useState(1),
     [A, C] = i.useState(false),
     [N, R] = i.useState(null),
     P = i.useCallback(async () => {
       if (null != y) try {
         C(true), R(null);
         let e = (0, m.g)(y, 1);
-        o()((0, E.uV)(e) <= (0, E.uV)(y.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await O(y, e, t, d), S(2)
+        o()((0, E.uV)(e) <= (0, E.uV)(y.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await O(y, e, t, d), T(2)
       } catch (t) {
         let e = t instanceof f.HF ? t : new f.HF(t, t.code);
         R(b.intl.string(e.code === _.SM.BILLING_PAUSE_INVALID_UPDATE ? b.t.dq4vq6 : b.t["5mlOCQ"])), C(false)
       }
     }, [y, t, d]),
     w = () => {
-      switch (T) {
+      switch (S) {
         case 1:
           return b.intl.string(b.t.l52ih4);
         case 2:
@@ -94,7 +94,7 @@ function T(e) {
       }
     },
     D = () => {
-      switch (T) {
+      switch (S) {
         case 1:
           return [{
             variant: "secondary",
@@ -119,7 +119,7 @@ function T(e) {
     },
     x = () => {
       if (null == y) return (0, r.jsx)(c.$jN, {});
-      switch (T) {
+      switch (S) {
         case 1:
           return (0, r.jsx)(v, {
             errorMsg: N
@@ -127,7 +127,7 @@ function T(e) {
         case 2:
           return (0, r.jsx)(I, {});
         default:
-          throw Error("Unexpected step: ".concat(T))
+          throw Error("Unexpected step: ".concat(S))
       }
     };
   return (0, r.jsx)(h.Gt, {

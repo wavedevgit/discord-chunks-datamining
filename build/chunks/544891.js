@@ -228,14 +228,14 @@ function I(e, t, n) {
     null != a ? (h.verbose("makeRequest: queueing request for ", t.url), a.queue.push(E.bind(null, e, t, r, i, n))) : E(e, t, r, i, n)
   })
 }
-let T = I.bind(null, "get"),
-  S = I.bind(null, "post"),
+let S = I.bind(null, "get"),
+  T = I.bind(null, "post"),
   A = I.bind(null, "put"),
   C = I.bind(null, "patch"),
   N = I.bind(null, "del"),
   R = {
-    get: T,
-    post: S,
+    get: S,
+    post: T,
     put: A,
     patch: C,
     del: N
@@ -248,7 +248,7 @@ if (require.g.isServerRendering) {
     body: null,
     text: ""
   });
-  T = module, S = module, A = module, C = module, N = module
+  S = module, T = module, A = module, C = module, N = module
 }
 
 function P() {

@@ -60,21 +60,21 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = 3,
-  S = 3;
+let S = 3,
+  T = 3;
 
 function A(e) {
   let {
     applications: t
   } = e, n = i.useMemo(() => t.sort((e, t) => u.default.compare(t.id, e.id)), [t]), a = i.useMemo(() => {
     let e = [];
-    for (let t = 0; t < T; t++) {
+    for (let t = 0; t < S; t++) {
       let r = n[t];
       if (null == r) break;
       e.push(r.name)
     }
     let t = e.join(", "),
-      i = n.length - T;
+      i = n.length - S;
     return i > 0 ? E.intl.format(E.t.sHFdTk, {
       gameList: t,
       plusMoreHook: (e, t) => (0, r.jsx)(o.Text, {
@@ -88,7 +88,7 @@ function A(e) {
     }) : e.join(", ")
   }, [n]), c = i.useMemo(() => {
     let e = [];
-    for (let t = 0; t < S; t++) {
+    for (let t = 0; t < T; t++) {
       let i = n[t];
       if (null == i) break;
       let {
@@ -108,7 +108,7 @@ function A(e) {
         }))
       }, c))
     }
-    let t = n.length - S;
+    let t = n.length - T;
     return t > 0 && e.push((0, r.jsx)("div", {
       className: b.moreIcon,
       children: (0, r.jsx)(o.Text, {

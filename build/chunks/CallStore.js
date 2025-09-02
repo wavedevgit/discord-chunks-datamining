@@ -91,14 +91,14 @@ function I() {
   return b(true)
 }
 
-function T(e) {
+function S(e) {
   let {
     channelId: t
   } = e;
   return b(false, t)
 }
 
-function S(e) {
+function T(e) {
   let {
     channel: t
   } = e;
@@ -215,8 +215,8 @@ let D = new w(Chunk570140.Z, {
   CONNECTION_CLOSED: v,
   OVERLAY_INITIALIZE: O,
   CONNECTION_RESUMED: I,
-  CHANNEL_SELECT: T,
-  CHANNEL_DELETE: S,
+  CHANNEL_SELECT: S,
+  CHANNEL_DELETE: T,
   CALL_CREATE: A,
   CALL_UPDATE: N,
   CALL_DELETE: R,

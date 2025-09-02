@@ -68,8 +68,8 @@ function b(e) {
     subtextLineClamp: O,
     hasSubmenu: v,
     disabled: I,
-    isFocused: T,
-    menuItemProps: S,
+    isFocused: S,
+    menuItemProps: T,
     action: A,
     onClose: C,
     onFocus: N,
@@ -91,17 +91,17 @@ function b(e) {
     e.shiftKey && D || x || C(), e.persist(), null == M || M(), (null != (t = e.nativeEvent.view) ? t : window).requestAnimationFrame(() => A(e))
   }, [A, C, M, D, x, k]);
   return i.useEffect(() => {
-    T && ((0, u.F)(U), null == N || N())
-  }, [T, N]), (0, r.jsxs)(s.P, E(m({
+    S && ((0, u.F)(U), null == N || N())
+  }, [S, N]), (0, r.jsxs)(s.P, E(m({
     innerRef: U,
     className: o()(p.item, p.labelContainer, _._[t], R, {
       [p.disabled]: I,
-      [p.focused]: T,
-      [null != P ? P : ""]: T
+      [p.focused]: S,
+      [null != P ? P : ""]: S
     }),
     onClick: I ? true : G,
     "aria-disabled": I
-  }, S), {
+  }, T), {
     "data-menu-item": "true",
     children: [null != h && (0, r.jsx)("div", {
       className: o()(p.iconContainerLeft, {

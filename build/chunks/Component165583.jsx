@@ -249,7 +249,7 @@ function F(e) {
     analyticsLocationObject: p,
     trialOffer: y,
     discountOffer: O
-  } = e, A = (0, d.e7)([g.Z], () => g.Z.useReducedMotion), C = (0, m.ZP)(), N = (0, v.BU)(S.zz / v.XD, {
+  } = e, A = (0, d.e7)([g.Z], () => g.Z.useReducedMotion), C = (0, m.ZP)(), N = (0, v.BU)(T.zz / v.XD, {
     useKibibytes: true
   });
   switch (c) {
@@ -502,7 +502,7 @@ function F(e) {
         children: a
       });
     default:
-      return T.Z.captureMessage("Possible mishandling of a PremiumUpsellType: ".concat(c)), (0, r.jsx)(Z, {
+      return S.Z.captureMessage("Possible mishandling of a PremiumUpsellType: ".concat(c)), (0, r.jsx)(Z, {
         headingText: t,
         context: i,
         children: a,

@@ -38,7 +38,7 @@ function O(e) {
         }
       }), p.yD(e))
     },
-    T = v.map(i => {
+    S = v.map(i => {
       let a = new c.Z(i),
         l = a.id === (null == t ? true : t.id),
         u = i.tokenStatus === h.q.INVALID,
@@ -88,7 +88,7 @@ function O(e) {
         }
       }, a.id)
     });
-  return T.push((0, r.jsxs)(r.Fragment, {
+  return S.push((0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.Clw, {}), (0, r.jsx)(o.sNh, {
       id: "manage-accounts",
       label: b.intl.string(b.t.WbFpq6),
@@ -96,5 +96,5 @@ function O(e) {
         null == e || e(), (0, g.Z)()
       }
     })]
-  })), T
+  })), S
 }

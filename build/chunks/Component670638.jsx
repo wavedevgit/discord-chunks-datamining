@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,14 +35,14 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -87,8 +87,8 @@ function P(e) {
   var t;
   let n = (0, a.e7)([g.Z], () => g.Z.questDeliveryOverride, []),
     c = (0, p.GN)(e.questContent),
-    T = [E.jn.QUEST_BAR_V2, E.jn.QUEST_BAR].includes(e.questContent),
-    S = (0, f.O5)(),
+    S = [E.jn.QUEST_BAR_V2, E.jn.QUEST_BAR].includes(e.questContent),
+    T = (0, f.O5)(),
     A = (0, _.aM)(),
     C = (0, m.Yj)(e.quest),
     N = true === e.showShareLink && (0, p.vB)(e.quest.config),
@@ -130,7 +130,7 @@ function P(e) {
       })
     },
     U = () => {
-      S({
+      T({
         questId: e.quest.id,
         questContent: e.questContent,
         questContentPosition: e.questContentPosition,
@@ -145,13 +145,13 @@ function P(e) {
       null != e.onSelect ? e.onSelect() : (0, s.Zy)()
     },
     B = () => {
-      S({
+      T({
         questId: e.quest.id,
         questContent: e.questContent,
         questContentPosition: e.questContentPosition,
         questContentCTA: f.jZ.CONTEXT_MENU_HIDE_CONTENT,
         sourceQuestContent: e.sourceQuestContent
-      }), (0, p.GN)(e.questContent) && ((0, h.gl)(e.quest.id, e.questContent), T && (0, b.maybeShowSurveyForQuest)(e.quest))
+      }), (0, p.GN)(e.questContent) && ((0, h.gl)(e.quest.id, e.questContent), S && (0, b.maybeShowSurveyForQuest)(e.quest))
     },
     Z = e => (0, o.showToast)((0, o.createToast)(new l.Z(e, e.status).message, o.ToastType.FAILURE)),
     F = () => (0, h.CS)(e.quest.id, true).catch(Z),
@@ -274,14 +274,14 @@ function w(e) {
         closePopout: t
       } = e;
       return s ? (0, r.jsx)(c.Z, {
-        children: (0, r.jsx)(P, C(S({}, p), {
+        children: (0, r.jsx)(P, C(T({}, p), {
           quest: l,
           questContent: u,
           questContentPosition: d,
           onClose: t,
           sourceQuestContent: _
         }))
-      }) : (0, r.jsx)(P, C(S({}, p), {
+      }) : (0, r.jsx)(P, C(T({}, p), {
         quest: l,
         questContent: u,
         questContentPosition: d,

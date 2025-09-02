@@ -168,12 +168,12 @@ let P = e => {
         case a.z.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING:
           return (0, r.jsx)(h.Z, {
             dismissCurrentNotice: () => i(v.L.UNKNOWN),
-            subscriptionTier: S.Si.TIER_2
+            subscriptionTier: T.Si.TIER_2
           });
         case a.z.NAGBAR_NOTICE_PREMIUM_TIER_0_TRIAL_ENDING:
           return (0, r.jsx)(h.Z, {
             dismissCurrentNotice: () => i(v.L.UNKNOWN),
-            subscriptionTier: S.Si.TIER_0
+            subscriptionTier: T.Si.TIER_0
           });
         case a.z.NAGBAR_NOTICE_PREMIUM_REACTIVATE:
           return (0, r.jsxs)(o.qXd, {
@@ -225,7 +225,7 @@ let P = e => {
               onClick: () => i(v.L.UNKNOWN),
               noticeType: N
             }), A.intl.format(A.t.pdYZys, {}), (0, r.jsx)(o.NoS, {
-              onClick: () => (0, p.Z)(T.Kq.NOTICE),
+              onClick: () => (0, p.Z)(S.Kq.NOTICE),
               noticeType: N,
               children: A.intl.string(A.t.LhlgY2)
             })]
@@ -239,7 +239,7 @@ let P = e => {
             }), A.intl.string(A.t["O9GI+v"]), (0, r.jsx)(o.NoS, {
               onClick: () => {
                 (0, _.Z)({
-                  subscriptionTier: S.Si.TIER_2,
+                  subscriptionTier: T.Si.TIER_2,
                   analyticsLocations: [u.Z.CHECKOUT_RECOVERY_NAGBAR],
                   analyticsLocation: I.Sbl.CHECKOUT_RECOVERY_NAGBAR,
                   onClose: () => i(v.L.UNKNOWN)

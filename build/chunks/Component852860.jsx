@@ -64,10 +64,10 @@ let h = function(e) {
     onSaveButtonColor: b,
     disabled: y,
     saveButtonTooltip: O
-  } = e, v = i.useRef(null), [I, T] = i.useState(false);
+  } = e, v = i.useRef(null), [I, S] = i.useState(false);
   return i.useEffect(() => {
     function e() {
-      T(true), setTimeout(() => T(false), 1e3)
+      S(true), setTimeout(() => S(false), 1e3)
     }
     return s.S.subscribe(l.CkL.EMPHASIZE_NOTICE, e), () => {
       s.S.unsubscribe(l.CkL.EMPHASIZE_NOTICE, e)

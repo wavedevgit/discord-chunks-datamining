@@ -61,9 +61,9 @@ function I(e, t) {
   }), e
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
-  var n, r, i = S(e, t);
+  var n, r, i = T(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -71,7 +71,7 @@ function T(e, t) {
   return i
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -90,7 +90,7 @@ let A = Chunk647438.forwardRef((e, t) => {
     alt: b,
     width: y,
     height: v,
-    maxWidth: S = y,
+    maxWidth: T = y,
     maxHeight: A = v,
     minWidth: P = 0,
     minHeight: w = 0,
@@ -120,14 +120,14 @@ let A = Chunk647438.forwardRef((e, t) => {
     dataSafeSrc: Z,
     useFullWidth: F = false,
     srcIsAnimated: V
-  } = e, H = T(e, ["className", "imageClassName", "readyState", "src", "placeholder", "placeholderVersion", "alt", "width", "height", "maxWidth", "maxHeight", "minWidth", "minHeight", "mediaLayoutType", "limitResponsiveWidth", "accessory", "zoomable", "original", "children", "renderAccessory", "onClick", "tabIndex", "dataSafeSrc", "useFullWidth", "srcIsAnimated"]);
+  } = e, H = S(e, ["className", "imageClassName", "readyState", "src", "placeholder", "placeholderVersion", "alt", "width", "height", "maxWidth", "maxHeight", "minWidth", "minHeight", "mediaLayoutType", "limitResponsiveWidth", "accessory", "zoomable", "original", "children", "renderAccessory", "onClick", "tabIndex", "dataSafeSrc", "useFullWidth", "srcIsAnimated"]);
   let Y = i.useRef(null),
     W = i.useRef(null);
   if (1 === y && 1 === v) return null;
   let K = (0, d.Tj)({
       width: y,
       height: v,
-      maxWidth: S,
+      maxWidth: T,
       maxHeight: A,
       minWidth: P,
       minHeight: w

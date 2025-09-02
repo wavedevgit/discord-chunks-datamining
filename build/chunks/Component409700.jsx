@@ -5,7 +5,7 @@ require.d(exports, {
   Dp: () => C,
   Hh: () => N,
   ZP: () => R,
-  hq: () => S
+  hq: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -59,13 +59,13 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S() {
+function T() {
   let {
     volume: e,
     onVolumeChange: t
@@ -174,7 +174,7 @@ function N(e) {
     renderPopout: e => (0, r.jsx)(c.P3F, {
       onClick: e => e.stopPropagation(),
       onMouseOver: e => e.stopPropagation(),
-      children: t(T(v({}, e), {
+      children: t(S(v({}, e), {
         refreshPosition: h
       }))
     }),
@@ -196,7 +196,7 @@ function N(e) {
       text: a,
       position: "top",
       shouldShow: g,
-      children: t => (0, r.jsx)(c.P3F, T(v({
+      children: t => (0, r.jsx)(c.P3F, S(v({
         innerRef: m
       }, t, e), {
         "aria-label": a,
@@ -217,7 +217,7 @@ function R(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(N, {
       setTooltipShowing: i,
-      renderPopout: () => (0, r.jsx)(S, {}),
+      renderPopout: () => (0, r.jsx)(T, {}),
       tooltipText: E.intl.string(E.t["19lt29"]),
       position: "top",
       children: (0, r.jsx)(c.gj8, {

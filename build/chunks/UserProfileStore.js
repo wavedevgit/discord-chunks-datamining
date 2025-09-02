@@ -60,8 +60,8 @@ function y(e, t) {
 let O = Symbol("NO GUILD ID"),
   v = new Map,
   I = new Set,
-  T = "premium",
-  S = "guild_booster_lvl",
+  S = "premium",
+  T = "guild_booster_lvl",
   A = 0x7fffffff,
   C = new Map,
   N = new Map,
@@ -190,7 +190,7 @@ function W(e) {
     et = null == (r = q.user_profile) ? true : r.profile_effect,
     en = null != q.badges ? q.badges.map(e => {
       let t = (0, p.fv)(e.id);
-      if ((e.id === T || null != t) && null != J) {
+      if ((e.id === S || null != t) && null != J) {
         let n = m.intl.formatToPlainString(m.t["8zbGNT"], {
           date: J
         });
@@ -200,7 +200,7 @@ function W(e) {
           description: n
         })
       }
-      return e.id.startsWith(S) && null != $ ? y(E({}, e), {
+      return e.id.startsWith(T) && null != $ ? y(E({}, e), {
         description: m.intl.formatToPlainString(m.t.IWkAq6, {
           date: $
         })

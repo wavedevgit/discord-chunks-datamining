@@ -2,7 +2,7 @@
 /** chunk id: 247206, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Cm: () => T,
+  Cm: () => S,
   Hc: () => y,
   IV: () => O,
   JO: () => P,
@@ -173,11 +173,11 @@ function I(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     attachments: t,
     embeds: n
-  } = S(e), r = A(e);
+  } = T(e), r = A(e);
   return e = e.merge({
     attachments: t,
     embeds: n,
@@ -185,7 +185,7 @@ function T(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   return {
     attachments: e.attachments.map(e => (e.content_scan_version = false, e)),
     embeds: e.embeds.map(e => (e.contentScanVersion = false, e))
@@ -202,7 +202,7 @@ function A(e) {
     } = e, {
       attachments: n,
       embeds: r
-    } = S(t);
+    } = T(t);
     return t = t.merge({
       attachments: n,
       embeds: r

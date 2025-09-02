@@ -4,7 +4,7 @@
 require.d(exports, {
   W3: () => I,
   Wc: () => v,
-  Ye: () => T,
+  Ye: () => S,
   bp: () => O,
   ml: () => y,
   nG: () => g,
@@ -77,7 +77,7 @@ function I(e) {
   } : v(e), [n, e, t])
 }
 
-function T(e, t, n) {
+function S(e, t, n) {
   let r = b(e, t, n),
     i = c.default.getCurrentUser(),
     a = l.Z.getGuildId(),

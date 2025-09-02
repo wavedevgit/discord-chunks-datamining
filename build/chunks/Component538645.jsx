@@ -66,9 +66,9 @@ function b() {
   } = (0, Chunk373071.n6)(), [n, a] = Chunk647438.useState(), b = Chunk647438.useRef(null), y = (0, Chunk442837.Wu)([Chunk25251.Z], () => Chunk25251.Z.getAllProfileEffects()), [O, v] = Chunk647438.useState(""), I = Chunk647438.useMemo(() => "" === O ? y : y.filter(e => {
     let t = O.toLowerCase();
     return e.config.title.toLowerCase().includes(t) || e.config.description.toLowerCase().includes(t)
-  }), [O, y]), T = () => {
+  }), [O, y]), S = () => {
     exports(E())
-  }, S = Chunk647438.useCallback((e, n) => {
+  }, T = Chunk647438.useCallback((e, n) => {
     if (null == n || !e.type.startsWith("text/")) return (0, d.Eo)(m);
     let [r, i] = n.split(",");
     if (!r.includes("text/plain")) return (0, d.Eo)(m);
@@ -77,8 +77,8 @@ function b() {
   }, [exports]), A = Chunk647438.useCallback(e => {
     var t;
     if ((null == (t = e.currentTarget) ? true : t.files) == null) return void(0, d.Eo)("Error uploading file. Try again!");
-    (0, d.Kr)(e.currentTarget.files, S, d.Eo)
-  }, [S]);
+    (0, d.Kr)(e.currentTarget.files, T, d.Eo)
+  }, [T]);
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk558270.root,
     children: [null == require && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
@@ -115,7 +115,7 @@ function b() {
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Create New Effect",
-          onClick: T
+          onClick: S
         })]
       }), (0, Chunk951288.jsx)("hr", {}), (0, Chunk951288.jsxs)("div", {
         className: Chunk558270.section,

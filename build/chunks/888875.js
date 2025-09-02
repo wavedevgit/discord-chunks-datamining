@@ -33,7 +33,7 @@ let y = 10 + Math.random() * (10 * Chunk70956.Z.Millis.SECOND),
   O = 2 * Chunk70956.Z.Millis.HOUR + Math.floor(Math.random() * (10 * Chunk70956.Z.Millis.MINUTE)),
   v = null,
   I = false;
-class T extends Chunk147913.Z {
+class S extends Chunk147913.Z {
   _initialize() {
     Chunk675478.DZ.beforeSendCallbacks.push({
       hasChanges: () => false,
@@ -74,15 +74,15 @@ class T extends Chunk147913.Z {
   }
   constructor(...e) {
     super(...e), b(this, "actions", {
-      POST_CONNECTION_OPEN: S,
-      CONNECTION_RESUMED: S,
+      POST_CONNECTION_OPEN: T,
+      CONNECTION_RESUMED: T,
       CONNECTION_CLOSED: C,
       APP_STATE_UPDATE: A
     })
   }
 }
 
-function S() {
+function T() {
   I = true, R(y, true)
 }
 
@@ -102,4 +102,4 @@ async function N(e) {
 function R(e, t) {
   null != v && clearTimeout(v), v = setTimeout(() => N(t), e)
 }
-let P = new T
+let P = new S

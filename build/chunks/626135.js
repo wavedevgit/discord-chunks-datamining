@@ -77,9 +77,9 @@ function I(e, t) {
   }), e
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
-  var n, r, i = S(e, t);
+  var n, r, i = T(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -87,7 +87,7 @@ function T(e, t) {
   return i
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -389,13 +389,13 @@ function z(e) {
     let {
       location: e
     } = a;
-    a = O({}, T(a, ["location"]), F(e))
+    a = O({}, S(a, ["location"]), F(e))
   }
   if (null != a.source) {
     let {
       source: e
     } = a;
-    a = O({}, T(a, ["source"]), V(e))
+    a = O({}, S(a, ["source"]), V(e))
   }
   a.client_performance_cpu = p.Z.getCurrentCPUUsagePercent(), a.client_performance_memory = p.Z.getCurrentMemoryUsageKB(), a.cpu_core_count = p.Z.getCPUCoreCount(), a.accessibility_features = H(), a.rendered_locale = b.intl.currentLocale, a.uptime_app = Math.floor((performance.now() - k) / 1e3);
   let o = p.Z.getProcessUptime();

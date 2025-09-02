@@ -89,7 +89,7 @@ function x(e) {
     let e = g.Z.getChannel(r);
     t = null != e ? e.type : null
   }
-  O.default.track(T.rMx.QUICKSWITCHER_OPENED, {
+  O.default.track(S.rMx.QUICKSWITCHER_OPENED, {
     source: e,
     current_guild_id: n,
     current_channel_id: r,
@@ -103,7 +103,7 @@ function L(e, t) {
     queryMode: r,
     query: i,
     maxQueryLength: a
-  } = I.Z.getProps(), o = y.Z.getGuildId(), s = b.Z.getChannelId(o), l = n[(0, u.gJ)(u.a8.DOWN, false, n)], c = v.Z.isEmail(i), d = v.Z.isPhoneNumber(i), f = v.Z.isUserTagLike(i), _ = null != s && (0, S.AB)(s), p = e => null == e ? null : e.type === u.h8.IN_APP_NAVIGATION ? e.type + "_" + e.record.type : e.type, h = {
+  } = I.Z.getProps(), o = y.Z.getGuildId(), s = b.Z.getChannelId(o), l = n[(0, u.gJ)(u.a8.DOWN, false, n)], c = v.Z.isEmail(i), d = v.Z.isPhoneNumber(i), f = v.Z.isUserTagLike(i), _ = null != s && (0, T.AB)(s), p = e => null == e ? null : e.type === u.h8.IN_APP_NAVIGATION ? e.type + "_" + e.record.type : e.type, h = {
     current_channel_id: _ ? true : s,
     current_channel_static_route: _ ? s : true,
     current_guild_id: o,
@@ -189,12 +189,12 @@ function B(e) {
 
 function Z(e) {
   let t, n = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  j(), (0, r.pTH)(), L(T.rMx.QUICKSWITCHER_RESULT_SELECTED, e);
+  j(), (0, r.pTH)(), L(S.rMx.QUICKSWITCHER_RESULT_SELECTED, e);
   let {
     type: m,
     record: b
   } = e, y = {
-    page: T.ZY5.QUICK_SWITCHER
+    page: S.ZY5.QUICK_SWITCHER
   };
   switch (m) {
     case u.h8.GUILD:
@@ -222,19 +222,19 @@ function Z(e) {
       a.Z.openPrivateChannel({
         recipientIds: [b.id],
         location: "Quickswitcher"
-      }), s.Z.channelListScrollTo(T.ME, g.Z.getDMFromUserId(b.id));
+      }), s.Z.channelListScrollTo(S.ME, g.Z.getDMFromUserId(b.id));
       break;
     case u.h8.GROUP_DM:
       (0, _.Kh)(b.id, {
         navigationReplace: true
-      }), s.Z.channelListScrollTo(T.ME, b.id);
+      }), s.Z.channelListScrollTo(S.ME, b.id);
       break;
     case u.h8.APPLICATION:
       let O = E.Z.getActiveLibraryApplication(b.id);
       N(b.id, O, {
         analyticsParams: {
-          source: T.Sbl.QUICK_SWITCHER,
-          location: T.Sbl.QUICK_SWITCHER
+          source: S.Sbl.QUICK_SWITCHER,
+          location: S.Sbl.QUICK_SWITCHER
         }
       });
       break;

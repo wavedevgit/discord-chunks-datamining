@@ -70,7 +70,7 @@ let E = Chunk647438.memo(function(e) {
     }, 500);
     return () => clearTimeout(e)
   }, [b]);
-  let T = e => {
+  let S = e => {
     e.preventDefault(), e.stopPropagation(), y(true), O ? (0, l.PF)(p) : ((0, l.uL)({
       url: p,
       src: a,
@@ -87,7 +87,7 @@ let E = Chunk647438.memo(function(e) {
         [_.showPulse]: b
       }),
       onMouseDown: e => e.preventDefault(),
-      onClick: T,
+      onClick: S,
       onDoubleClick: e => e.preventDefault(),
       children: (0, r.jsx)(I, {
         color: "currentColor",

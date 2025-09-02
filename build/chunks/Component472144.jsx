@@ -29,10 +29,10 @@ let f = (e, t) => {
     }, I = {
       strokeDasharray: "".concat(y, " ").concat(y),
       strokeDashoffset: -i * y
-    }, T = {
+    }, S = {
       boxShadow: "0 0 30px 0px ".concat(g.glow)
     }, {
-      progressTextAnimation: S
+      progressTextAnimation: T
     } = (0, l.q_F)({
       progressTextAnimation: +(null != p && 1 !== i),
       config: u.Y
@@ -42,10 +42,10 @@ let f = (e, t) => {
       ref: t,
       children: [(0, r.jsxs)("div", {
         className: d.inner,
-        style: T,
+        style: S,
         children: [m, (0, r.jsxs)(s.animated.div, {
           style: {
-            opacity: S
+            opacity: T
           },
           className: o()(d.coverContent, d.progressTextWrapper),
           children: [(0, r.jsx)("div", {

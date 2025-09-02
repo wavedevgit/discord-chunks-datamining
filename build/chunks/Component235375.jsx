@@ -69,10 +69,10 @@ function I() {
   })
 }
 
-function T(e, t) {
+function S(e, t) {
   return null == t ? [] : t.split(" ").map(t => e[t])
 }
-let S = e => {
+let T = e => {
     let {
       level: t,
       children: n,
@@ -80,7 +80,7 @@ let S = e => {
       styleSheet: a = {}
     } = e, s = (0, c.xSt)(), l = parseInt(t, 10), u = s + (isNaN(l) ? 1 : l) - 1;
     return i.createElement("h".concat(u), {
-      className: o()(...T(a, r))
+      className: o()(...S(a, r))
     }, n)
   },
   A = null != Chunk454585.Z ? Chunk454585.Z.defaultRules : null,
@@ -116,7 +116,7 @@ let S = e => {
       }, n.key)
     },
     lheading: e => ({
-      react: (t, n, i) => (0, r.jsx)(S, {
+      react: (t, n, i) => (0, r.jsx)(T, {
         level: t.level,
         className: t.className,
         styleSheet: e,
@@ -124,7 +124,7 @@ let S = e => {
       }, i.key)
     }),
     heading: {
-      react: (e, t, n) => (0, r.jsx)(S, {
+      react: (e, t, n) => (0, r.jsx)(T, {
         level: e.level,
         children: t(e.content, n)
       }, n.key)

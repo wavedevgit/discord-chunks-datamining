@@ -43,13 +43,13 @@ function d(e, t, n, r, i) {
     O++, v += null != (t = Number(e.num_messages)) ? t : 0
   });
   let I = "\n**Pain**:\n- Everyones: ".concat(u.XR[null != (s = h.everyones) ? s : 0], "\n- Messages: ").concat(u.XR[null != (c = h.messages) ? c : 0], "\n- Size: ").concat(m, "\n**Remote**:\n- Channels: ").concat(O, "\n- AllVisits: ").concat(y.map(e => e.totalOpensAcrossAllServers).join(" / "), "\n- GuildVisits: ").concat(y.map(e => e.guildOpens).join(" / "), "\n- Biggest Channel (abs): ").concat(y.map(e => e.biggestChannel).join(" / "), "\n- Biggest Channel (%): ").concat(y.map(e => e.biggestChannelFormatted).join(" / "), "\n- Sent Msgs: ").concat(v, "\n"),
-    T = b.guildOpens >= .02 * b.totalOpensAcrossAllServers,
-    S = (null != (d = g.guildOpens) ? d : 0) > 0;
+    S = b.guildOpens >= .02 * b.totalOpensAcrossAllServers,
+    T = (null != (d = g.guildOpens) ? d : 0) > 0;
   if (h.messages === u.XR.High) {
-    if (!i) return [u.AR.UseGreyDot, T, "UseGreyDot" + I];
-    else if (!T && S) return [u.AR.UseGreyDot, T, "UseGreyDot" + I]
+    if (!i) return [u.AR.UseGreyDot, S, "UseGreyDot" + I];
+    else if (!S && T) return [u.AR.UseGreyDot, S, "UseGreyDot" + I]
   }
-  return [u.AR.KeepAsIs, T, "KeepAsIs" + I]
+  return [u.AR.KeepAsIs, S, "KeepAsIs" + I]
 }
 
 function f(e, t, n, r) {

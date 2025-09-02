@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
 let v = 2,
   I = 10;
 
-function T(e, t) {
+function S(e, t) {
   let n = e.id,
     r = t.id;
   return (0, s.e7)([g.Z], () => {
@@ -40,7 +40,7 @@ function T(e, t) {
   }, [n, r])
 }
 
-function S(e) {
+function T(e) {
   let {
     channel: t,
     message: n,
@@ -104,7 +104,7 @@ function A(e) {
     displayNameStyles: R
   } = (0, d.ZP)(a), P = (0, f.X7)(m, N, A), w = (0, u.j)({
     displayNameStyles: R
-  }), D = T(i, a), x = (0, h.NE)(i, a), L = n.showThreadPromptOnReply && D >= v && x, j = () => (0, p.uL)(b.Z5c.CHANNEL(i.getGuildId(), i.id, a.id));
+  }), D = S(i, a), x = (0, h.NE)(i, a), L = n.showThreadPromptOnReply && D >= v && x, j = () => (0, p.uL)(b.Z5c.CHANNEL(i.getGuildId(), i.id, a.id));
 
   function M(e) {
     e.stopPropagation(), (0, _.qx)(i.id, !s)
@@ -185,7 +185,7 @@ function A(e) {
             onClick: k
           })]
         })]
-      }), L && (0, r.jsx)(S, {
+      }), L && (0, r.jsx)(T, {
         channel: i,
         message: a,
         replyChainLength: D

@@ -133,17 +133,17 @@ function L(e) {
     let e = c || l.hasUniqueUsername() ? null : "#".concat(l.discriminator);
     return (0, r.jsx)(a.ua7, {
       text: (0, r.jsxs)("div", {
-        className: S.userTooltip,
+        className: T.userTooltip,
         children: [(0, r.jsx)(s.Z, {
           user: l,
           animate: true,
           size: a.EFr.SIZE_16,
-          className: S.avatar
+          className: T.avatar
         }), I.ZP.getUserTag(l, {
           mode: "username",
           identifiable: c ? "never" : "always"
         }), (0, r.jsx)("span", {
-          className: S.discriminator,
+          className: T.discriminator,
           children: e
         })]
       }),
@@ -168,7 +168,7 @@ function j(e) {
     guildId: n
   } = e, o = (0, i.e7)([g.Z], () => null != n ? g.Z.getRole(n, t) : true), s = (0, i.e7)([l.Z], () => l.Z.roleStyle), c = (0, p._f)(n, o, null == o ? true : o.colorStrings);
   if (null == o) return (0, r.jsxs)("span", {
-    children: ["@", T.intl.string(T.t["YV4F/v"])]
+    children: ["@", S.intl.string(S.t["YV4F/v"])]
   });
   let u = null != o.color && 0 !== o.color,
     d = "dot" === s,
@@ -188,10 +188,10 @@ function j(e) {
 function M(e) {
   let {
     id: t
-  } = e, n = (0, i.e7)([h.Z], () => h.Z.getChannel(t)), a = T.intl.string(T.t.zLZPmp).toLowerCase(), o = "text", s = true;
+  } = e, n = (0, i.e7)([h.Z], () => h.Z.getChannel(t)), a = S.intl.string(S.t.zLZPmp).toLowerCase(), o = "text", s = true;
   if (null != n) {
     var l;
-    a = (0, c.YO)(n) ? n.name : T.intl.string(T.t["/YzI6+"]), o = (0, c.YO)(n) ? null != (l = (0, O.wl)(n)) ? l : "text" : "locked", s = (0, u.B)(n.type)
+    a = (0, c.YO)(n) ? n.name : S.intl.string(S.t["/YzI6+"]), o = (0, c.YO)(n) ? null != (l = (0, O.wl)(n)) ? l : "text" : "locked", s = (0, u.B)(n.type)
   }
   return s ? (0, r.jsx)(f.Z, {
     iconType: o,
@@ -239,7 +239,7 @@ function B(e) {
     id: n
   } = e, a = (0, i.e7)([m.Z], () => m.Z.getDetectableGame(n)), o = null != a ? (0, r.jsx)("img", {
     alt: "",
-    className: S.icon,
+    className: T.icon,
     src: y.ZP.getApplicationIconURL({
       id: a.id,
       icon: a.icon,
@@ -247,6 +247,6 @@ function B(e) {
     })
   }) : null;
   return (0, r.jsxs)(f.Z, {
-    children: [o, null != (t = null == a ? true : a.name) ? t : T.intl.string(T.t["11pdXV"])]
+    children: [o, null != (t = null == a ? true : a.name) ? t : S.intl.string(S.t["11pdXV"])]
   })
 }

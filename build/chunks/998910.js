@@ -23,9 +23,9 @@ var t = "\ud800-\udfff",
   O = "(?:\\u200d(?:" + ["[^" + t + "]", f, _].join("|") + ")" + y + b + ")*",
   v = "\\d*(?:1st|2nd|3rd|(?![123])\\dth)(?=\\b|[A-Z_])",
   I = "\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a-z_])",
-  T = y + b + O,
-  S = "(?:" + [c, f, _].join("|") + ")" + T,
-  A = RegExp([p + "?" + u + "+" + g + "(?=" + [s, p, "$"].join("|") + ")", m + "+" + E + "(?=" + [s, p + h, "$"].join("|") + ")", p + "?" + h + "+" + g, p + "+" + E, I, v, l, S].join("|"), "g");
+  S = y + b + O,
+  T = "(?:" + [c, f, _].join("|") + ")" + S,
+  A = RegExp([p + "?" + u + "+" + g + "(?=" + [s, p, "$"].join("|") + ")", m + "+" + E + "(?=" + [s, p + h, "$"].join("|") + ")", p + "?" + h + "+" + g, p + "+" + E, I, v, l, T].join("|"), "g");
 module.exports = function(e) {
   return e.match(A) || []
 }

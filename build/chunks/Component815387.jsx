@@ -241,7 +241,7 @@ function eZ(e) {
     guildId: n.guild_id,
     messageId: t.id
   });
-  return n.isThread() ? (0, r.jsx)(eT.Z, {
+  return n.isThread() ? (0, r.jsx)(eS.Z, {
     message: t,
     channel: n,
     compact: i,
@@ -324,7 +324,7 @@ function eV(e) {
     guildId: n.guild_id,
     messageId: t.id
   });
-  return n.isThread() ? (0, r.jsx)(eS.Z, {
+  return n.isThread() ? (0, r.jsx)(eT.Z, {
     message: t,
     channel: n,
     compact: i,
@@ -462,7 +462,7 @@ function ez(e) {
     message: t,
     compact: n
   } = e, i = t.getChannelId(), o = (0, a.e7)([B.Z], () => B.Z.getChannel(i), [i]), s = null != o ? o.getGuildId() : null, l = () => {
-    null != s && S.Z.open(s, eR.pNK.ACCESS, eR.KsC.ACCESS_DISCOVERABLE)
+    null != s && T.Z.open(s, eR.pNK.ACCESS, eR.KsC.ACCESS_DISCOVERABLE)
   };
   return (0, r.jsx)(ed.FJ, {
     message: t,
@@ -556,7 +556,7 @@ function e$(e) {
       message: t,
       compact: i,
       usernameHook: o
-    }), null != s && s.name === t.content ? (0, r.jsx)(T.Z, {
+    }), null != s && s.name === t.content ? (0, r.jsx)(S.Z, {
       code: "".concat(n.guild_id, "-").concat(s.id)
     }) : null]
   })

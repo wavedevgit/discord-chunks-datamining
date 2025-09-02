@@ -139,7 +139,7 @@ function K(e) {
 function z(e) {
   let {
     markAsDismissed: t
-  } = e, n = (0, T.m)(M.p9.TIER_2);
+  } = e, n = (0, S.m)(M.p9.TIER_2);
   return (0, r.jsxs)("div", {
     className: G.coachmarkHeaderContainer,
     children: [(0, r.jsxs)("div", {
@@ -274,7 +274,7 @@ function $(e) {
   let {
     onSaveTheme: t,
     canApply: n
-  } = e, i = (0, T.m)(M.p9.TIER_2);
+  } = e, i = (0, S.m)(M.p9.TIER_2);
   return (0, w.hf)(i, E.Z.CUSTOM_THEMES_EDITOR_COACHMARK), (0, r.jsxs)("div", {
     className: G.coachmarkFooterContainer,
     children: [(0, r.jsx)(Q, {
@@ -303,7 +303,7 @@ function ee(e) {
     onSaveTheme: t,
     canApply: n,
     metadata: i
-  } = e, a = (0, T.m)(M.p9.TIER_2);
+  } = e, a = (0, S.m)(M.p9.TIER_2);
   (0, w.hf)(a, E.Z.CUSTOM_THEMES_EDITOR);
   let o = () => {
     (0, w.Vb)(), (0, O.Q3)(l.z.CUSTOM_THEME_COACHMARK), (null == i ? true : i.from) === y.tE.SETTING ? (m.Z.open(), (0, y.Ll)()) : (null == i ? true : i.from) === y.tE.CLIENT_THEMES_EDITOR ? (0, y.XO)(y.wh.CLIENT_THEMES) : (0, y.Ll)()
@@ -348,7 +348,7 @@ function et(e) {
     chassisMixAmount: m,
     gradientAngle: v,
     setColors: I,
-    setChassisMixAmount: T,
+    setChassisMixAmount: S,
     setGradientAngle: N
   } = (0, C.Ig)(), [L, M] = i.useState(null != (t = _[0]) ? t : C.Dp), k = (0, s.e7)([A.Z], () => A.Z.theme), B = (0, O.Nj)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
     analyticsLocations: Z
@@ -361,7 +361,7 @@ function et(e) {
         gradientAngle: v,
         baseMix: m
       }
-    }), (0, w.u7)(_, m, v, k, Z), null == a || a(j.L.TAKE_ACTION), B || (0, O.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, y.Ll)(), (0, S.UD)()
+    }), (0, w.u7)(_, m, v, k, Z), null == a || a(j.L.TAKE_ACTION), B || (0, O.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, y.Ll)(), (0, T.UD)()
   }, V = () => {
     d(R._m.RESET_BUTTON), (0, w.uf)()
   }, H = _.length > 0;
@@ -393,7 +393,7 @@ function et(e) {
           }), (0, r.jsx)(X, {
             chassisMixAmount: m,
             setChassisMixAmount: e => {
-              T(e), 0 === _.length && (0, R.lT)(_, L, I)
+              S(e), 0 === _.length && (0, R.lT)(_, L, I)
             }
           }), (0, r.jsx)(c.z, {
             variant: "secondary",

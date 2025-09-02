@@ -25,11 +25,11 @@ function s(e) {
     let t = y.current;
     null != t && t.stop()
   }), []);
-  let T = null != p.current,
-    S = false !== n && (h || u) && T && !I.current;
+  let S = null != p.current,
+    T = false !== n && (h || u) && S && !I.current;
   r.useEffect(() => {
-    S && E(true)
-  }, [S]);
+    T && E(true)
+  }, [T]);
   let A = r.useCallback(() => {
       E(false)
     }, []),
@@ -81,7 +81,7 @@ function s(e) {
     }), [P, D, w, N]);
   return r.useEffect(() => {
     var e, t;
-    if (!S) return;
+    if (!T) return;
     let n = null != (t = null == (e = p.current) ? true : e.ownerDocument) ? t : document,
       r = e => {
         ("Escape" === e.key || "Esc" === e.key) && (I.current = true, N())
@@ -89,8 +89,8 @@ function s(e) {
     return n.addEventListener("keydown", r), () => {
       n.removeEventListener("keydown", r)
     }
-  }, [S, N, p]), {
-    isVisible: S,
+  }, [T, N, p]), {
+    isVisible: T,
     isRendered: g,
     triggerProps: j,
     handleExitComplete: A,

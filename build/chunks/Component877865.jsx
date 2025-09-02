@@ -46,7 +46,7 @@ function I(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,8 +57,8 @@ function T(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+function T(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -134,13 +134,13 @@ function D(e) {
     className: a,
     colors: o,
     setColors: s
-  } = e, c = (0, h.Z)(), [v, T] = i.useState(0), [A, R] = i.useState(t);
+  } = e, c = (0, h.Z)(), [v, S] = i.useState(0), [A, R] = i.useState(t);
   i.useEffect(() => {
     if (o.length > 0 && v < o.length) {
       let e = o[v];
       (0, u.FX)(e) && (R(e), n(e))
     }
-    v >= o.length && T(0)
+    v >= o.length && S(0)
   }, [v, o, n]);
   let D = e => {
       let t = e.trim();
@@ -175,15 +175,15 @@ function D(e) {
       let e = o.length > 0 ? o[o.length - 1] : A,
         t = o.length > 0 ? w(e) : e,
         n = [...o, t];
-      s(n), T(n.length - 1)
+      s(n), S(n.length - 1)
     }, U = e => {
       if (o.length > 1) {
         (0, E.JL)();
         let t = o.filter((t, n) => n !== e);
-        s(t), v >= t.length ? T(t.length - 1) : v > e && T(v - 1)
+        s(t), v >= t.length ? S(t.length - 1) : v > e && S(v - 1)
       }
     }, G = e => {
-      T(e), (0, E.w8)()
+      S(e), (0, E.w8)()
     }, B = o.length > 1;
   return (0, r.jsxs)("div", {
     className: l()(O.container, a),
@@ -195,7 +195,7 @@ function D(e) {
       }), (0, r.jsx)(p.ua7, {
         text: y.intl.string(b.default["61KGaW"]),
         shouldShow: o.length === N,
-        children: e => (0, r.jsx)(p.P3F, S(I({}, e), {
+        children: e => (0, r.jsx)(p.P3F, T(I({}, e), {
           onClick: o.length === N ? true : k,
           className: l()(O.addColorButton, {
             [O.disabled]: o.length === N
@@ -229,7 +229,7 @@ function D(e) {
         children: [null != c && (0, r.jsx)(p.ua7, {
           text: y.intl.string(b.default["8QXO8v"]),
           tooltipClassName: O.eyeDropperTooltip,
-          children: e => (0, r.jsx)(_.h, S(I({
+          children: e => (0, r.jsx)(_.h, T(I({
             variant: "icon-only",
             size: "sm"
           }, e), {
@@ -239,7 +239,7 @@ function D(e) {
           }))
         }), B && (0, r.jsx)(p.ua7, {
           text: y.intl.string(b.default["rTik5+"]),
-          children: e => (0, r.jsx)(_.h, S(I({}, e), {
+          children: e => (0, r.jsx)(_.h, T(I({}, e), {
             variant: "icon-only",
             size: "sm",
             onClick: () => U(v),

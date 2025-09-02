@@ -30,8 +30,8 @@ function b(e) {
     source: y
   } = e, O = (0, _.q)(t), v = (0, s.e7)([p.Z], () => p.Z.getGame(t)), {
     isFetching: I,
-    fetchFailed: T,
-    isFetchingDetectable: S,
+    fetchFailed: S,
+    isFetchingDetectable: T,
     detectableFetchFailed: A
   } = (0, s.cj)([f.Z, p.Z], () => ({
     isFetching: f.Z.isFetchingApplication(t),
@@ -57,10 +57,10 @@ function b(e) {
       profileType: h.j7.MiniProfile
     })
   });
-  let P = i.useMemo(() => I || S ? (0, r.jsx)("div", {
+  let P = i.useMemo(() => I || T ? (0, r.jsx)("div", {
     className: o()(E.container, E.spinnerContainer),
     children: (0, r.jsx)(l.$jN, {})
-  }) : T || A || null == O || null == v ? (0, r.jsx)("div", {
+  }) : S || A || null == O || null == v ? (0, r.jsx)("div", {
     className: E.container,
     children: (0, r.jsx)(m.Z, {
       name: n,
@@ -73,7 +73,7 @@ function b(e) {
       detectedGame: v,
       onClose: b
     })
-  }), [I, S, T, A, O, v, n, R, b]);
+  }), [I, T, S, A, O, v, n, R, b]);
   return (0, r.jsx)(l.VqE, {
     ref: C,
     "aria-label": null == O ? true : O.name,

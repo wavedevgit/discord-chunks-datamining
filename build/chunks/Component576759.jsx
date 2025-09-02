@@ -32,8 +32,8 @@ function b(e) {
     data: O
   } = (0, u.IX)(t), v = (0, s.q)(O, l.Z.USER_PROFILE_ACTIVITY_CLOUD_PLAY_SECTION), {
     themeType: I
-  } = (0, p.z)(), T = I === m.l.MODAL || I === m.l.MODAL_V2, S = v && T && null != O, A = S ? [i.z.CLOUD_PLAY_NEW_BADGE] : [], [C] = (0, f.US)(A);
-  return S ? (0, r.jsxs)(r.Fragment, {
+  } = (0, p.z)(), S = I === m.l.MODAL || I === m.l.MODAL_V2, T = v && S && null != O, A = T ? [i.z.CLOUD_PLAY_NEW_BADGE] : [], [C] = (0, f.US)(A);
+  return T ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(_.Z, {
       className: E.cloudPlayDivider
     }), (0, r.jsxs)("div", {

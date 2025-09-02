@@ -21,22 +21,22 @@ function u(e) {
     idleAnimationState: f
   } = e, _ = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), [p, h] = i.useState(d), m = i.useRef((0, l._)(t, p)), [g, E] = i.useState(null == f), [b, y] = i.useState(false), [O, v] = i.useState(false), I = () => {
     m.current = (0, l._)(t, p), v(e => e + 1)
-  }, T = () => {
+  }, S = () => {
     E(false), y(true), v(false), h(d)
   };
   i.useEffect(() => {
     null == f && h(d)
   }, [f, d]);
-  let S = {
+  let T = {
       applyAnimation: I,
       idleAnimationState: f,
       isChanging: b,
-      resetAnimation: T,
+      resetAnimation: S,
       versionKey: O
     },
-    A = i.useRef(S);
+    A = i.useRef(T);
   i.useEffect(() => {
-    A.current = S
+    A.current = T
   }), i.useEffect(() => {
     let {
       resetAnimation: e,

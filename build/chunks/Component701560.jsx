@@ -45,7 +45,7 @@ function I(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -56,14 +56,14 @@ function T(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+function T(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 class A extends(r = Chunk647438.PureComponent) {
   get analyticsLocation() {
-    return S(I({}, this.props.analyticsContext.location), {
+    return T(I({}, this.props.analyticsContext.location), {
       object: Chunk981631.qAy.BUTTON_CTA
     })
   }
@@ -152,7 +152,7 @@ class A extends(r = Chunk647438.PureComponent) {
         let {
           default: e
         } = await n.e("53195").then(n.bind(n, 918306));
-        return n => (0, i.jsx)(e, S(I({}, n), {
+        return n => (0, i.jsx)(e, T(I({}, n), {
           libraryApplication: t,
           onPlay: this.handleClick
         }))
@@ -182,7 +182,7 @@ function C(e) {
     applicationId: t,
     libraryApplication: n
   } = e, r = (0, f.O)(), [a, o] = (0, l.Wu)([h.Z, p.Z, m.Z], () => [h.Z.isConnected(t) || p.Z.isLaunchable(t) || null != n && m.Z.isLaunchable(n.id, n.branchId), p.Z.launchingGames.has(t)], [t, n]), s = (0, l.e7)([_.ZP], () => new Set(_.ZP.getRunningVerifiedApplicationIds()).has(t), [t]), c = (0, l.e7)([m.Z], () => null != n ? m.Z.getState(n.id, n.branchId) : null, [n]);
-  return (0, i.jsx)(A, S(I({}, e), {
+  return (0, i.jsx)(A, T(I({}, e), {
     analyticsContext: r,
     isLaunchable: a,
     isLaunching: o,

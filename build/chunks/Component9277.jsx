@@ -2,7 +2,7 @@
 /** chunk id: 9277, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -67,7 +67,7 @@ function I(e, t) {
   } = e, [b, O] = i.useState(false), I = (0, l.e7)([f.Z], () => {
     var e, t;
     return b && Object.values(null != (t = null == (e = f.Z.frecencyWithoutFetchingLatest.favoriteGifs) ? true : e.gifs) ? t : {}).length <= 2
-  }), [T, S, A] = (0, d.Iu)(e => [e.activeView, e.activeViewType, e.pickerId], s.X), C = i.useRef(0), N = i.useCallback(() => {
+  }), [S, T, A] = (0, d.Iu)(e => [e.activeView, e.activeViewType, e.pickerId], s.X), C = i.useRef(0), N = i.useCallback(() => {
     O(true), clearTimeout(C.current), C.current = setTimeout(() => {
       O(false), C.current = 0
     }, 2e3)
@@ -85,7 +85,7 @@ function I(e, t) {
       play: D
     } = (0, c.V)();
   if (n) return null;
-  let x = T === m.X1.GIF && S === a;
+  let x = S === m.X1.GIF && T === a;
   return (0, r.jsx)(u.ua7, {
     text: I ? g.intl.string(g.t.mE2e8P) : null,
     forceOpen: true,
@@ -114,4 +114,4 @@ function I(e, t) {
     }))
   })
 }
-let T = Chunk647438.memo(Chunk647438.forwardRef(I))
+let S = Chunk647438.memo(Chunk647438.forwardRef(I))

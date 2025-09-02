@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   W: () => C,
-  u: () => T
+  u: () => S
 }), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -59,11 +59,11 @@ function I(e) {
   }
   return e
 }
-var T = function(e) {
+var S = function(e) {
   return e[e.BOT = 0] = "BOT", e[e.ACTIVITY = 1] = "ACTIVITY", e
 }({});
 
-function S(e) {
+function T(e) {
   var t, n, r;
   return {
     id: null != (t = null == e ? true : e.id) ? t : "0",
@@ -100,7 +100,7 @@ function C(e) {
     footer: a,
     info: p,
     staticBannerSrc: y,
-    videoBannerSrc: T,
+    videoBannerSrc: S,
     bannerAspectRatio: C = 0,
     iconSrc: N,
     embedUrl: R,
@@ -110,7 +110,7 @@ function C(e) {
     onClickContent: x,
     onClickBanner: L
   } = e;
-  D = S(D);
+  D = T(D);
   let {
     primaryColor: j,
     secondaryColor: M
@@ -139,10 +139,10 @@ function C(e) {
       size: "xs",
       color: c.TVs.colors.APP_MESSAGE_EMBED_SECONDARY_TEXT.css
     })
-  }) : null, V = null != y, H = null != T && false === U, Y = V || H, W = 0 === C ? b.bannerAspectRatioBot : b.bannerAspectRatioActivity, K = i.useRef(null), z = i.useCallback(() => {
+  }) : null, V = null != y, H = null != S && false === U, Y = V || H, W = 0 === C ? b.bannerAspectRatioBot : b.bannerAspectRatioActivity, K = i.useRef(null), z = i.useCallback(() => {
     let e = K.current;
     null != e && ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
-  }, []), q = i.useMemo(() => !!H && new URL(T).pathname.endsWith(".gif"), [H, T]), X = i.useMemo(() => {
+  }, []), q = i.useMemo(() => !!H && new URL(S).pathname.endsWith(".gif"), [H, S]), X = i.useMemo(() => {
     if (null != x) return e => {
       x(e), (0, m.KX)(D.id, D.linkType, m.j_.CONTENT, D.referrerId, D.activityCustomId)
     }
@@ -162,11 +162,11 @@ function C(e) {
       children: [H && (q ? (0, r.jsx)("div", {
         className: b.videoBanner,
         style: {
-          backgroundImage: "url(".concat(T, ")")
+          backgroundImage: "url(".concat(S, ")")
         }
       }) : (0, r.jsx)(_.Z, {
         ref: K,
-        src: T,
+        src: S,
         mediaLayoutType: g.hV.MOSAIC,
         loop: true,
         muted: true,

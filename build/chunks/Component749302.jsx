@@ -55,12 +55,12 @@ function m(e) {
   } = n, y = (0, a.e7)([u.default], () => {
     var e;
     return (null == (e = u.default.getCurrentUser()) ? true : e.id) === E
-  }) || b, O = y ? _ : f, [v, I] = i.useState(false), T = i.useCallback(() => I(true), []), S = i.useMemo(() => O.map(e => {
+  }) || b, O = y ? _ : f, [v, I] = i.useState(false), S = i.useCallback(() => I(true), []), T = i.useMemo(() => O.map(e => {
     let {
       applicationId: t
     } = e;
     return t
-  }), [O]), A = (0, a.e7)([c.Z], () => c.Z.getRelationshipType(E), [E]), C = p(S, v || 1 === O.length);
+  }), [O]), A = (0, a.e7)([c.Z], () => c.Z.getRelationshipType(E), [E]), C = p(T, v || 1 === O.length);
   if (y || 0 === O.length || A === d.OGo.FRIEND) return null;
   if (1 === O.length) {
     let {
@@ -73,7 +73,7 @@ function m(e) {
       subtext: (0, r.jsx)(h, {
         application: n
       }),
-      onFocus: T,
+      onFocus: S,
       action: () => m(n)
     })
   }
@@ -95,7 +95,7 @@ function m(e) {
     color: g,
     id: t,
     label: s,
-    onFocus: T,
+    onFocus: S,
     children: N
   })
 }

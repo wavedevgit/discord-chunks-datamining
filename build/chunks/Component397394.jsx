@@ -147,29 +147,29 @@ function U(e) {
     })
   }, [o, null == n ? true : n.id]), d = window.location.pathname.startsWith(C.Z5c.APPLICATION_DIRECTORY), f = i.useCallback(() => {
     (null == n ? true : n.id) != null && (null == o || o(), null != l && (0, g.uL)(""), setImmediate(() => {
-      T.S.dispatchToLastSubscribed(C.CkL.OPEN_APP_LAUNCHER, {
+      S.S.dispatchToLastSubscribed(C.CkL.OPEN_APP_LAUNCHER, {
         applicationId: n.id
       }), v.default.track(C.rMx.OAUTH2_AUTHORIZE_SUCCESS_OPEN_APP_CLICKED, {
         application_id: n.id
       })
     }))
-  }, [null == n ? true : n.id, o, l]), _ = (0, c.e7)([O.Z, b.Z], () => b.Z.getChannel(O.Z.getChannelId())), p = (0, c.e7)([y.Z], () => y.Z.can(C.Plq.SEND_MESSAGES, _)), h = null != t, I = null == t && p && (!d || null != l), S = [];
-  return (null != t || null != o) && (null != o && S.push({
+  }, [null == n ? true : n.id, o, l]), _ = (0, c.e7)([O.Z, b.Z], () => b.Z.getChannel(O.Z.getChannelId())), p = (0, c.e7)([y.Z], () => y.Z.can(C.Plq.SEND_MESSAGES, _)), h = null != t, I = null == t && p && (!d || null != l), T = [];
+  return (null != t || null != o) && (null != o && T.push({
     variant: "secondary",
     text: N.intl.string(N.t.cpT0Cg),
     onClick: u
-  }), h && S.push({
+  }), h && T.push({
     variant: "primary",
     text: (null == t ? true : t.name.length) > 30 ? N.intl.string(N.t.M35zFB) : N.intl.format(N.t.UdYYPz, {
       guildName: null == t ? true : t.name
     }),
     onClick: s
-  }), I && S.push({
+  }), I && T.push({
     variant: "primary",
     text: N.intl.string(N.t["0cCDKC"]),
     onClick: f
   })), (0, r.jsx)(A.j, x(w({}, a), {
-    actions: S,
+    actions: T,
     children: (0, r.jsx)(G, w({
       guild: t,
       application: n
@@ -301,7 +301,7 @@ function H(e) {
   } = e;
   i.useEffect(() => {
     if (null == a || "" === a.search) return;
-    let e = null != document.referrer && "" !== document.referrer ? S.Z.toURLSafe(document.referrer) : null;
+    let e = null != document.referrer && "" !== document.referrer ? T.Z.toURLSafe(document.referrer) : null;
     (null == e || e.host !== window.location.host || e.pathname !== C.Z5c.OAUTH2_AUTHORIZE) && (0, g.uL)(C.Z5c.INDEX)
   }, [a]);
   let o = null != a ? (0, s.parse)(a.search) : {},

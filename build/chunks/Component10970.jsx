@@ -31,7 +31,7 @@ function E(e) {
     navigateToHome: y,
     subscriptionGroup: O,
     renewalSkuId: v
-  } = e, I = (0, o.y)(n, 100), T = (0, f.KK)(O.flags), S = T ? a.QTo : a.tBG, A = T ? m.intl.string(m.t["46YF2N"]) : m.intl.string(m.t.fFyGiI), C = null == (t = _.metadata) ? true : t.application_subscription_guild_id, N = (0, i.e7)([u.Z], () => T && null != C ? u.Z.getGuild(C) : true, [C, T]), R = (0, i.e7)([d.Z], () => {
+  } = e, I = (0, o.y)(n, 100), S = (0, f.KK)(O.flags), T = S ? a.QTo : a.tBG, A = S ? m.intl.string(m.t["46YF2N"]) : m.intl.string(m.t.fFyGiI), C = null == (t = _.metadata) ? true : t.application_subscription_guild_id, N = (0, i.e7)([u.Z], () => S && null != C ? u.Z.getGuild(C) : true, [C, S]), R = (0, i.e7)([d.Z], () => {
     if (null != v) return d.Z.get(v)
   }, [v]), P = (0, p.p)(_.currentPeriodEnd);
   return (0, r.jsxs)("div", {
@@ -51,7 +51,7 @@ function E(e) {
           children: [(0, r.jsxs)(a.X6q, {
             variant: "heading-md/normal",
             className: g.subInfoType,
-            children: [(0, r.jsx)(S, {
+            children: [(0, r.jsx)(T, {
               size: "xs",
               color: "currentColor"
             }), " ", A]

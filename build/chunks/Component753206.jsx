@@ -68,18 +68,18 @@ function E(e) {
     previewGuildId: O,
     preview: v,
     author: I
-  } = e, T = null != O ? O : (0, l.k)(n), S = (0, s.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), {
+  } = e, S = null != O ? O : (0, l.k)(n), T = (0, s.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), {
     content: A
   } = (0, u.Z)(n, {
     hideSimpleEmbedContent: b,
-    allowList: S,
-    allowHeading: S,
+    allowList: T,
+    allowHeading: T,
     allowLinks: true,
     previewLinkTarget: true
   }), C = i.useMemo(() => (0, f.Z)(g(h({}, e), {
     channel: a,
-    guildId: T
-  })), [e, a, T]);
+    guildId: S
+  })), [e, a, S]);
   return (0, r.jsx)(c.Z, {
     compact: p,
     className: o()(m, {

@@ -30,9 +30,9 @@ function y(e) {
     location: "DisplayNameStylesSection"
   }).enabled, O = _.ZP.canUsePremiumProfileCustomization(t), {
     analyticsLocations: v
-  } = (0, l.ZP)(), I = null != t.displayNameStyles, T = [];
-  y && T.push(a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE);
-  let [S, A] = (0, c.US)(T), C = S === a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, N = (0, i.useCallback)(() => {
+  } = (0, l.ZP)(), I = null != t.displayNameStyles, S = [];
+  y && S.push(a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE);
+  let [T, A] = (0, c.US)(S), C = T === a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, N = (0, i.useCallback)(() => {
     A(m.L.TAKE_ACTION), f.default.track(h.rMx.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, d.I)({
       analyticsLocations: v
     })

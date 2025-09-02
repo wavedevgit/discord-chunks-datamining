@@ -101,12 +101,12 @@ function I() {
   return null != (e = null == require ? true : require.widgets) ? module : []
 }
 
-function T() {
+function S() {
   var e;
   return Chunk224724.Z.hasPendingChanges() ? null != (e = Chunk224724.Z.getPendingWidgets()) ? module : [] : I()
 }
 
-function S(e) {
+function T(e) {
   var t;
   let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [],
     r = I().find(t => t.type === e);
@@ -128,21 +128,21 @@ function A(e, t) {
 }
 
 function C(e) {
-  let t = T();
+  let t = S();
   if (null != t.find(t => t.type === e)) return;
-  let n = S(e);
+  let n = T(e);
   c.Z.setPendingWidgets([...t, n])
 }
 
 function N(e) {
-  let t = T().filter(t => t.type !== e);
+  let t = S().filter(t => t.type !== e);
   c.Z.setPendingWidgets(t)
 }
 
 function R(e, t, n) {
   let r = Object.values(i._).length;
   if (n.length > r) return;
-  let a = T(),
+  let a = S(),
     o = a.find(t => t.type === e);
   if (null == o) return;
   let s = o.games.find(e => e.applicationId === t);
@@ -158,7 +158,7 @@ function R(e, t, n) {
 }
 
 function P(e, t, n) {
-  let r = T().find(t => t.type === e);
+  let r = S().find(t => t.type === e);
   if (null == r) return;
   let i = r.games.find(e => e.applicationId === t);
   if (null == i || null == i.tags || 0 === i.tags.length) return;
@@ -167,7 +167,7 @@ function P(e, t, n) {
 }
 
 function w(e, t, n) {
-  let r = T(),
+  let r = S(),
     i = r.find(t => t.type === e);
   if (null == i) return;
   let a = i.games.find(e => e.applicationId === t);
@@ -184,7 +184,7 @@ function w(e, t, n) {
 
 function D(e, t) {
   var n, i, a;
-  let s, l = T(),
+  let s, l = S(),
     u = l.find(t => t.type === e),
     d = r.k[e];
   if (null != u && (null != (i = null == (n = u.games) ? true : n.length) ? i : 0) >= d) return;
@@ -193,15 +193,15 @@ function D(e, t) {
       comment: t.comment,
       tags: t.tags
     },
-    _ = A(l, S(e, s = null != u ? [...null != (a = u.games) ? a : [], f] : [f]));
+    _ = A(l, T(e, s = null != u ? [...null != (a = u.games) ? a : [], f] : [f]));
   c.Z.setPendingWidgets(_), o.Z.getDetectableGamesSupplemental([t.applicationId])
 }
 
 function x(e, t) {
-  let n = T(),
+  let n = S(),
     r = n.find(t => t.type === e);
   if (null == r) return;
-  let i = A(n, S(e, (null != r.games ? r.games : []).filter(e => e.applicationId !== t)));
+  let i = A(n, T(e, (null != r.games ? r.games : []).filter(e => e.applicationId !== t)));
   c.Z.setPendingWidgets(i)
 }
 

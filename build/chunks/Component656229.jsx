@@ -29,7 +29,7 @@ function _(e) {
     onUpsellClick: b
   } = e, {
     newestAnalyticsLocation: y
-  } = (0, a.ZP)(), O = p || (null == n ? true : n.canUsePremiumProfileCustomization) || false, v = O ? i.vdY : i.SrA, I = (0, o.M)(O), T = () => {
+  } = (0, a.ZP)(), O = p || (null == n ? true : n.canUsePremiumProfileCustomization) || false, v = O ? i.vdY : i.SrA, I = (0, o.M)(O), S = () => {
     if (!O && !I) {
       null == b || b();
       return
@@ -49,7 +49,7 @@ function _(e) {
     pendingAccentColor: m,
     canUsePremiumProfileCustomization: p,
     children: !E && (0, r.jsxs)(i.P3F, {
-      onClick: T,
+      onClick: S,
       className: f.clickable,
       children: [(0, r.jsx)(v, {
         size: "xs",

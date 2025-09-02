@@ -76,8 +76,8 @@ r.DEFAULT_GROUP_DM_AVATARS;
 let O = r.canUseWebp(),
   v = 5,
   I = 360,
-  T = 1096,
-  S = (0, Chunk358085.isAndroid)();
+  S = 1096,
+  T = (0, Chunk358085.isAndroid)();
 
 function A(e) {
   let t, {
@@ -107,7 +107,7 @@ function C(e) {
     animated: n,
     size: r,
     forcePNG: i = false
-  } = e, a = O ? "webp" : "png", o = O ? "webp" : "gif", s = i ? "png" : n ? o : a, c = O && n ? "&animated=true" : "", u = "size=".concat((0, l.oO)(r * (0, l.x_)(), S));
+  } = e, a = O ? "webp" : "png", o = O ? "webp" : "gif", s = i ? "png" : n ? o : a, c = O && n ? "&animated=true" : "", u = "size=".concat((0, l.oO)(r * (0, l.x_)(), T));
   return null != window.GLOBAL_ENV.CDN_HOST ? "".concat(location.protocol, "//").concat(window.GLOBAL_ENV.CDN_HOST, "/emojis/").concat(t, ".").concat(s) + "?".concat(u).concat(c) : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + f.ANM.EMOJI(t, s)
 }
 
@@ -287,7 +287,7 @@ function B(e) {
     homeHeader: r
   } = e;
   if (null == r) return null;
-  let i = (0, l.oO)(T * (0, l.x_)()),
+  let i = (0, l.oO)(S * (0, l.x_)()),
     a = window.GLOBAL_ENV.CDN_HOST;
   return (null != a ? "https://".concat(a, "/home-headers/").concat(n, "/").concat(r, ".png") : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + f.ANM.GUILD_HOME_HEADER(n, r)) + "?size=".concat(i)
 }

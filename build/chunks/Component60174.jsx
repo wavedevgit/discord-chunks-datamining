@@ -87,7 +87,7 @@ class D extends Chunk647438.Component {
     !Chunk995774 && Chunk659215 && (g = (0, Chunk951288.jsx)(Chunk466794.X, {
       tooltipText: Chunk388032.intl.string(Chunk388032.t.Kfcszs)
     }));
-    let T = Chunk120356 ? Chunk893973 : Chunk127947,
+    let S = Chunk120356 ? Chunk893973 : Chunk127947,
       N = {
         size: "sm",
         color: "currentColor",
@@ -109,8 +109,8 @@ class D extends Chunk647438.Component {
         return (0, r.jsx)(u.DY3, {
           text: g,
           color: u.FGA.PRIMARY,
-          "aria-label": p ? S.intl.string(S.t.Kfcszs) : S.intl.string(S.t.lfIHs7),
-          tooltipClassName: T.__invalid_addReactionTooltip,
+          "aria-label": p ? T.intl.string(T.t.Kfcszs) : T.intl.string(T.t.lfIHs7),
+          tooltipClassName: S.__invalid_addReactionTooltip,
           children: (0, r.jsxs)(u.P3F, w(R({}, e), {
             innerRef: this.ref,
             tabIndex: s,
@@ -119,8 +119,8 @@ class D extends Chunk647438.Component {
             },
             onMouseEnter: () => (0, d.x)(I.qR.AddReactionPopoutMouseEntered),
             onFocus: () => (0, d.x)(I.qR.AddReactionPopoutFocused),
-            className: o()(T.reactionBtn, {
-              [T.active]: a
+            className: o()(S.reactionBtn, {
+              [S.active]: a
             }, n),
             children: [p ? (0, r.jsx)(u.Pt5, R({}, N)) : (0, r.jsx)(u.EO4, R({}, N)), i]
           }))
@@ -154,7 +154,7 @@ class D extends Chunk647438.Component {
       let r = E.default.getCurrentUser();
       t !== O.O.BURST || (0, y.I5)(r) || (0, p.m)({
         analytics: {
-          type: T.cd.BURST_REACTION_UPSELL,
+          type: S.cd.BURST_REACTION_UPSELL,
           page: null != n.getGuildId() ? v.ZY5.GUILD_CHANNEL : v.ZY5.DM_CHANNEL,
           section: (0, m.s4)(n),
           object: v.qAy.INLINE_REACTION_PICKER_UPSELL
@@ -194,7 +194,7 @@ class D extends Chunk647438.Component {
             inDialog: t
           } = e;
           return t ? (0, r.jsx)(u.VqE, {
-            "aria-label": S.intl.string(S.t["7Xqzdn"]),
+            "aria-label": T.intl.string(T.t["7Xqzdn"]),
             children: s
           }) : s
         }

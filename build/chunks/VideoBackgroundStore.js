@@ -87,14 +87,14 @@ function I(e) {
   return null != c.Z.getVoiceChannelId() && l.Z.isVideoEnabled() && null != r
 }
 
-function T(e) {
+function S(e) {
   let {
     backgroundOption: t
   } = e;
   I(t) && (E = true)
 }
 
-function S(e) {
+function T(e) {
   let {
     settings: t
   } = e;
@@ -127,7 +127,7 @@ let R = new N(Chunk570140.Z, {
   VIDEO_FILTER_ASSETS_FETCH_SUCCESS: y,
   VIDEO_FILTER_ASSET_UPLOAD_SUCCESS: O,
   VIDEO_FILTER_ASSET_DELETE_SUCCESS: v,
-  VIDEO_SAVE_LAST_USED_BACKGROUND_OPTION: T,
-  MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS: S,
+  VIDEO_SAVE_LAST_USED_BACKGROUND_OPTION: S,
+  MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS: T,
   LOGOUT: C
 })

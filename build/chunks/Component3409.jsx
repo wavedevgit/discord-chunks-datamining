@@ -210,14 +210,14 @@ function eI() {
   })
 }
 
-function eT() {
+function eS() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk750441.body,
     children: (0, Chunk951288.jsx)(Chunk850228.Z, {})
   })
 }
 
-function eS() {
+function eT() {
   let e = (0, Chunk442837.e7)([Chunk351402.Z], () => Chunk351402.Z.isBusy),
     t = (0, Chunk442837.e7)([Chunk975060.Z], () => Chunk975060.Z.stripePaymentMethod);
   return (0, Chunk951288.jsx)(Chunk296214.k, {
@@ -425,13 +425,13 @@ function eP(e) {
     {
       shouldRenderPaymentElement: tv,
       paymentElementReady: tI,
-      paymentElementSelectedType: tT,
-      handlePaymentElementStep: tS,
+      paymentElementSelectedType: tS,
+      handlePaymentElementStep: tT,
       onBackPaymentElement: tA,
       combinedStripeElementsRef: tC,
       stripePaymentElementProps: tN,
       stripeAddressElementProps: tR
-    } = (0, S.M)({
+    } = (0, T.M)({
       step: eH,
       continueSessionToInitialStep: ea,
       paymentElementsEnabled: eP,
@@ -450,7 +450,7 @@ function eP(e) {
     case N.h8.ATTEMPT_APPLE_PAY:
     case N.h8.PAYMENT_TYPE:
       let tP = (e, t) => {
-          let n = eP && (0, v.qH)(e, ew) && !en ? () => tS(e) : e0;
+          let n = eP && (0, v.qH)(e, ew) && !en ? () => tT(e) : e0;
           switch (e) {
             case X.He.CARD:
               en ? n(N.h8.AWAITING_BROWSER_CHECKOUT) : (eq(eD), n(N.h8.CREDIT_CARD_INFORMATION));
@@ -549,15 +549,15 @@ function eP(e) {
       let tL = () => {
         te(true);
         try {
-          if (null == tT || !(0, v.qH)(tT, ew)) throw (0, d.PP)("Valid Payment Element source type not found", true);
+          if (null == tS || !(0, v.qH)(tS, ew)) throw (0, d.PP)("Valid Payment Element source type not found", true);
           let {
             steps: e,
             methodType: t
-          } = eM[tT];
+          } = eM[tS];
           eq({
             steps: e,
-            methodType: t === X.He.UNKNOWN ? tT : t
-          }), tT === X.He.PAYPAL ? e0(N.h8.PAYPAL_INFORMATION) : e0(N.h8.ADDRESS)
+            methodType: t === X.He.UNKNOWN ? tS : t
+          }), tS === X.He.PAYPAL ? e0(N.h8.PAYPAL_INFORMATION) : e0(N.h8.ADDRESS)
         } catch (t) {
           var e;
           eo.error(null != (e = t.message) ? e : JSON.stringify(t))
@@ -646,7 +646,7 @@ function eP(e) {
       });
       break;
     case N.h8.EPS_INFORMATION:
-      n = (0, r.jsx)(T.Z, {
+      n = (0, r.jsx)(S.Z, {
         type: X.He.EPS,
         onAccountHolderNameChange: e => e9({
           info: er(et({}, e7.info), {
@@ -684,7 +684,7 @@ function eP(e) {
       });
       break;
     case N.h8.PRZELEWY24_INFORMATION:
-      n = (0, r.jsx)(T.Z, {
+      n = (0, r.jsx)(S.Z, {
         type: X.He.PRZELEWY24,
         onNameChange: e => e9({
           info: er(et({}, e7.info), {
@@ -714,7 +714,7 @@ function eP(e) {
     case N.h8.PAYPAL_INFORMATION:
       let tU = 0 !== tr.length && null != ti;
       n = (0, r.jsx)(ev, {});
-      let tG = eP ? () => tS(X.He.PAYPAL) : () => e0(N.h8.PAYMENT_TYPE);
+      let tG = eP ? () => tT(X.He.PAYPAL) : () => e0(N.h8.PAYMENT_TYPE);
       o = (0, r.jsx)(eR, {
         onBack: tG,
         primaryCTA: P.Z.CTAType.CONTINUE,
@@ -732,14 +732,14 @@ function eP(e) {
       });
       break;
     case N.h8.PAYMENT_REQUEST_INFORMATION:
-      n = (0, r.jsx)(eS, {}), o = (0, r.jsx)(eR, {
+      n = (0, r.jsx)(eT, {}), o = (0, r.jsx)(eR, {
         onBack: () => e0(N.h8.PAYMENT_TYPE)
       });
       break;
     case N.h8.CASH_APP_INFORMATION:
       let tZ = null != to,
         tF = null != eQ;
-      n = (0, r.jsx)(eT, {}), o = (0, r.jsx)(eR, {
+      n = (0, r.jsx)(eS, {}), o = (0, r.jsx)(eR, {
         onBack: () => e0(N.h8.PAYMENT_TYPE),
         primaryCTA: P.Z.CTAType.CONTINUE,
         primaryText: tZ ? Q.intl.string(Q.t.PDTjLC) : Q.intl.string(Q.t["9ALP8/"]),
@@ -750,8 +750,8 @@ function eP(e) {
     case N.h8.ADDRESS:
       let tV = async () => {
         te(true);
-        let e = eP && null != tT,
-          t = e ? tT : ez.methodType;
+        let e = eP && null != tS,
+          t = e ? tS : ez.methodType;
         switch (t) {
           case X.He.CARD:
             try {
@@ -868,7 +868,7 @@ function eP(e) {
         default:
           p = N.h8.PAYMENT_TYPE, u = X.He.CARD
       }
-      eP && null != tT && (p = N.h8.PAYMENT_ELEMENT), n = eP ? null : (0, r.jsx)(eA, {
+      eP && null != tS && (p = N.h8.PAYMENT_ELEMENT), n = eP ? null : (0, r.jsx)(eA, {
         billingAddressInfo: e7.info,
         onBillingAddressChange: (e, t) => {
           e9({
@@ -903,14 +903,14 @@ function eP(e) {
       step: eH,
       steps: ez.steps,
       sideMargin: 20,
-      children: [tH && (0, r.jsx)(S.h, {
+      children: [tH && (0, r.jsx)(T.h, {
         step: eH,
         analyticsContext: null != G ? {
           activitySessionId: eN,
           contextMetadata: eb,
           analyticsData: G
         } : true,
-        paymentElementSelectedType: tT,
+        paymentElementSelectedType: tS,
         originalPaymentType: ez.methodType,
         elementsRef: tC,
         stripePaymentElementProps: tN,
@@ -966,7 +966,7 @@ function ew(e) {
     isValid: false
   })), [m, g] = i.useState(""), [E, b] = i.useState(""), [y, v] = i.useState(() => ({
     token: null
-  })), [I, T, S, A, C] = (0, l.Wu)([M.Z], () => [M.Z.braintreeEmail, M.Z.braintreeNonce, M.Z.error, M.Z.venmoUsername, M.Z.adyenPaymentData]), [N, R] = (0, l.Wu)([k.Z], () => [k.Z.error, k.Z.isAwaitingAuthentication]);
+  })), [I, S, T, A, C] = (0, l.Wu)([M.Z], () => [M.Z.braintreeEmail, M.Z.braintreeNonce, M.Z.error, M.Z.venmoUsername, M.Z.adyenPaymentData]), [N, R] = (0, l.Wu)([k.Z], () => [k.Z.error, k.Z.isAwaitingAuthentication]);
   i.useEffect(() => {
     let e = e => {
       let {
@@ -1002,10 +1002,10 @@ function ew(e) {
     hasRedirectURL: D,
     setHasRedirectURL: x,
     braintreeEmail: I,
-    braintreeNonce: T,
+    braintreeNonce: S,
     venmoUsername: A,
     adyenPaymentData: C,
-    paymentError: null != N ? N : S,
+    paymentError: null != N ? N : T,
     paymentAuthenticationState: R ? H.wr.PENDING : null != N ? H.wr.ERROR : H.wr.NONE,
     purchaseError: L,
     setPurchaseError: j,

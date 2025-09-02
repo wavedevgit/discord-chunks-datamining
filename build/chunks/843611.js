@@ -133,20 +133,20 @@ function I(e) {
     })
   })
 }
-var T = {},
-  S = 1e4,
+var S = {},
+  T = 1e4,
   A = 0;
 
 function C(e, t) {
   var n = "" + t.end + t.strict + t.sensitive,
-    r = T[n] || (T[n] = {});
+    r = S[n] || (S[n] = {});
   if (r[e]) return r[e];
   var i = [],
     a = {
       regexp: u()(e, i, t),
       keys: i
     };
-  return A < S && (r[e] = a, A++), a
+  return A < T && (r[e] = a, A++), a
 }
 
 function N(e, t) {

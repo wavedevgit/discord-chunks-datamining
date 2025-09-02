@@ -142,7 +142,7 @@ function Z(e) {
     message: n,
     onRedeem: a,
     buttonUseState: s
-  } = e, l = null != n, u = l && (0, T.Uw)(n), _ = (0, y.Qj)(t.id, l), {
+  } = e, l = null != n, u = l && (0, S.Uw)(n), _ = (0, y.Qj)(t.id, l), {
     price: p,
     fetchingPrice: m,
     error: g
@@ -150,12 +150,12 @@ function Z(e) {
     entitlement: E,
     fetchedEntitlement: O,
     error: I
-  } = (0, A.t6)(v.D1), S = g || I, {
+  } = (0, A.t6)(v.D1), T = g || I, {
     analyticsLocations: N
   } = (0, f.ZP)([d.Z.CONFETTI_POTION_MODAL]), R = null != E && !E.consumed, P = m || !O;
   (0, i.useEffect)(() => () => {
-    S && (0, b.SN)(v.D1)
-  }, [S, l]);
+    T && (0, b.SN)(v.D1)
+  }, [T, l]);
   let w = (0, i.useCallback)(() => {
       null != _ && ((0, c.pTH)(), a(_))
     }, [_, a]),
@@ -206,7 +206,7 @@ let F = e => {
       if (null == c) return;
       let t = null == (e = d.current) ? true : e.getBoundingClientRect();
       if (null == t) return;
-      let n = (0, T.NV)(c),
+      let n = (0, S.NV)(c),
         {
           x: r,
           y: i,
@@ -294,7 +294,7 @@ let F = e => {
       emojiName: null == n.id ? n.optionallyDiverseSequence : n.name,
       selectionText: n.name.replace(/_/g, " ")
     }, [n]), p = (0, i.useRef)(null);
-    return (0, r.jsx)(S.Z, {
+    return (0, r.jsx)(T.Z, {
       channel: t,
       shouldShow: o,
       onRequestClose: l,

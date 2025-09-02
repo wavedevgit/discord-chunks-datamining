@@ -81,7 +81,7 @@ function j() {
 
 function M(e) {
   var t;
-  let n = T.default.getNotificationPositionMode(),
+  let n = S.default.getNotificationPositionMode(),
     r = n !== C._vf.DISABLED,
     i = v.ZP.getOverlayKeybind(),
     a = v.ZP.getOverlayChatKeybind();
@@ -92,7 +92,7 @@ function M(e) {
     text_notifications_mode: y.Z.isNotificationDisabled(g.OverlayNotificationDisabledSetting.TEXT_CHAT) ? "DISABLED" : "ENABLED",
     hotkey: null != i ? (0, A.BB)(i.shortcut) : null,
     text_activation_hotkey: null != a ? (0, A.BB)(a.shortcut) : null,
-    text_opacity_slider: T.default.getTextWidgetOpacity(),
+    text_opacity_slider: S.default.getTextWidgetOpacity(),
     old_enabled: null != (t = null == e ? true : e.enabled) ? t : I.default.enabled
   }
 }
@@ -119,16 +119,16 @@ function U(e) {
   } = (0, l.cj)([b.default], () => b.default.getGlobalEnabledStatus()), {
     avatarSizeMode: s,
     displayNameMode: I,
-    displayUserMode: S,
+    displayUserMode: T,
     textChatDisabled: A,
     notificationPositionMode: P,
     shouldShowKeybindIndicators: D
-  } = (0, l.cj)([T.default, y.Z], () => ({
-    avatarSizeMode: T.default.getAvatarSizeMode(),
-    displayNameMode: T.default.getDisplayNameMode(),
-    displayUserMode: T.default.getDisplayUserMode(),
-    notificationPositionMode: T.default.getNotificationPositionMode(),
-    shouldShowKeybindIndicators: T.default.showKeybindIndicators,
+  } = (0, l.cj)([S.default, y.Z], () => ({
+    avatarSizeMode: S.default.getAvatarSizeMode(),
+    displayNameMode: S.default.getDisplayNameMode(),
+    displayUserMode: S.default.getDisplayUserMode(),
+    notificationPositionMode: S.default.getNotificationPositionMode(),
+    shouldShowKeybindIndicators: S.default.showKeybindIndicators,
     textChatDisabled: y.Z.isNotificationDisabled(g.OverlayNotificationDisabledSetting.TEXT_CHAT)
   })), L = (0, l.e7)([v.ZP], () => v.ZP.getOverlayKeybind()), M = (0, E.Z)({
     location: "overlay_user_settings"
@@ -234,7 +234,7 @@ function U(e) {
             } = e;
             return d.Z.setDisplayUserMode(t)
           },
-          value: S
+          value: T
         })
       }), M && (0, r.jsx)(k, {
         children: (0, r.jsx)(c.j7V, {

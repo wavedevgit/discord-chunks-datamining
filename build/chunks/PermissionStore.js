@@ -252,25 +252,25 @@ class J extends(r = Chunk442837.ZP.Store) {
   getGuildPermissionProps(e) {
     let t = I.default.getCurrentUser();
     return {
-      canManageGuild: this.can(T.Plq.MANAGE_GUILD, e),
-      canManageChannels: this.can(T.Plq.MANAGE_CHANNELS, e),
-      canManageRoles: this.can(T.Plq.MANAGE_ROLES, e),
-      canManageBans: this.can(T.Plq.BAN_MEMBERS, e),
-      canManageNicknames: this.can(T.Plq.MANAGE_NICKNAMES, e),
-      canManageGuildExpressions: this.can(T.Plq.MANAGE_GUILD_EXPRESSIONS, e) || this.can(T.Plq.CREATE_GUILD_EXPRESSIONS, e),
-      canViewAuditLog: this.can(T.Plq.VIEW_AUDIT_LOG, e),
-      canViewAuditLogV2: this.can(T.Plq.VIEW_AUDIT_LOG, e),
-      canManageWebhooks: this.can(T.Plq.MANAGE_WEBHOOKS, e),
-      canViewGuildAnalytics: this.can(T.Plq.VIEW_GUILD_ANALYTICS, e),
+      canManageGuild: this.can(S.Plq.MANAGE_GUILD, e),
+      canManageChannels: this.can(S.Plq.MANAGE_CHANNELS, e),
+      canManageRoles: this.can(S.Plq.MANAGE_ROLES, e),
+      canManageBans: this.can(S.Plq.BAN_MEMBERS, e),
+      canManageNicknames: this.can(S.Plq.MANAGE_NICKNAMES, e),
+      canManageGuildExpressions: this.can(S.Plq.MANAGE_GUILD_EXPRESSIONS, e) || this.can(S.Plq.CREATE_GUILD_EXPRESSIONS, e),
+      canViewAuditLog: this.can(S.Plq.VIEW_AUDIT_LOG, e),
+      canViewAuditLogV2: this.can(S.Plq.VIEW_AUDIT_LOG, e),
+      canManageWebhooks: this.can(S.Plq.MANAGE_WEBHOOKS, e),
+      canViewGuildAnalytics: this.can(S.Plq.VIEW_GUILD_ANALYTICS, e),
       canAccessMembersPage: this.canAccessMemberSafetyPage(e),
-      isGuildAdmin: this.can(T.Plq.ADMINISTRATOR, e),
+      isGuildAdmin: this.can(S.Plq.ADMINISTRATOR, e),
       isOwner: null != t && (0, h.eM)(e, t),
       isOwnerWithRequiredMfaLevel: null != t && (0, h.yn)(e, t),
       guild: e
     }
   }
   canAccessMemberSafetyPage(e) {
-    return o.Db(w(e.id), S.N)
+    return o.Db(w(e.id), T.N)
   }
   canAccessGuildSettings(e) {
     return o.Db(w(e.id), b.ym)
@@ -311,7 +311,7 @@ class J extends(r = Chunk442837.ZP.Store) {
   }
   canImpersonateRole(e, t) {
     let n = this.getHighestRole(e),
-      r = this.can(T.Plq.MANAGE_GUILD, e) && this.can(T.Plq.MANAGE_ROLES, e),
+      r = this.can(S.Plq.MANAGE_GUILD, e) && this.can(S.Plq.MANAGE_ROLES, e),
       i = this.isRoleHigher(e, n, t);
     return r && (i || t.id === (null == n ? true : n.id))
   }

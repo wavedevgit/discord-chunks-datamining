@@ -38,15 +38,15 @@ function g(e) {
     }
   }), {
     canAccessPicker: I,
-    entryPoint: T,
-    isChatWallpaperSetterExperimentEnabled: S,
+    entryPoint: S,
+    isChatWallpaperSetterExperimentEnabled: T,
     isDarkTheme: A
   } = (0, p.m)({
     location: "useChatWallpaperPickerConfig",
     channelId: y
   }), C = I && !t, [N, R] = (0, l.US)(C ? [a.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK] : [], true, true), P = N === a.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK, [w, D] = (0, l.US)(P ? [a.z.CHAT_WALLPAPERS_PICKER_COACHMARK] : []), x = (0, o.ZP)(e => e.recentlyShown[0]), L = (0, s.Nj)(a.z.CHAT_WALLPAPERS_PICKER_COACHMARK);
   if (r.useMemo(() => {
-      S && true === O && !L && w !== a.z.CHAT_WALLPAPERS_PICKER_COACHMARK && d.default.track(h.rMx.CHAT_WALLPAPER_PICKER_COACHMARK_NOT_SHOW_REASON, {
+      T && true === O && !L && w !== a.z.CHAT_WALLPAPERS_PICKER_COACHMARK && d.default.track(h.rMx.CHAT_WALLPAPER_PICKER_COACHMARK_NOT_SHOW_REASON, {
         channel_id: y,
         channel_type: v,
         is_settings_open: t,
@@ -54,14 +54,14 @@ function g(e) {
         is_overseer_dismissible_content_selected: P,
         last_dismissible_content_winner: null != x ? a.z[x] : "None"
       })
-    }, [O, S, v, y, L, w]), !I) return;
+    }, [O, T, v, y, L, w]), !I) return;
   let j = P && w === a.z.CHAT_WALLPAPERS_PICKER_COACHMARK;
   if (j && null != y && null == n && b !== _.j.COACHMARK && g(y), n === y) {
     let e = j ? _.j.COACHMARK : _.j.DEFAULT;
     return b !== e && E(e), {
       pickerType: e,
       markDismissed: j ? e => {
-        D(e), T === f.FN.TOOLBAR && R(m.L.INDIRECT_ACTION)
+        D(e), S === f.FN.TOOLBAR && R(m.L.INDIRECT_ACTION)
       } : true
     }
   }

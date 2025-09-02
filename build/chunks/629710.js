@@ -6,7 +6,7 @@ require.d(exports, {
   DQ: () => A,
   Hz: () => w,
   LD: () => C,
-  MD: () => S,
+  MD: () => T,
   SI: () => P,
   UJ: () => R,
   X6: () => I,
@@ -77,7 +77,7 @@ function I(e, t) {
   returnfalse
 }
 
-function T(e) {
+function S(e) {
   return (Array.isArray(e) ? e : [e]).flatMap(e => {
     switch (e.type) {
       case i.re.MEDIA_GALLERY:
@@ -88,14 +88,14 @@ function T(e) {
         return e.file;
       case i.re.SECTION:
       case i.re.ACTION_ROW:
-        return e.components.flatMap(T);
+        return e.components.flatMap(S);
       default:
         return []
     }
   }).map(e => "proxy_url" in e ? (0, s.ym)(e) : e)
 }
 
-function S(e, t) {
+function T(e, t) {
   var n, r;
   let i = null != t ? t : b(e);
   if (i === m.qn.NONE) returnfalse;
@@ -105,14 +105,14 @@ function S(e, t) {
     }, i))) || (null == (r = e.embeds) ? true : r.some(e => R({
       type: p.l.Embed,
       media: e
-    }, i))) || null != e.components && T(e.components).some(e => R({
+    }, i))) || null != e.components && S(e.components).some(e => R({
       type: p.l.GenericMedia,
       media: e
     }, i))) returntrue;
   let a = null;
   if ("messageSnapshots" in e ? a = e.messageSnapshots : "message_snapshots" in e && (a = e.message_snapshots), null == a || 0 === a.length) returnfalse;
   for (let e of a)
-    if (S(e.message, i)) returntrue;
+    if (T(e.message, i)) returntrue;
   returnfalse
 }
 

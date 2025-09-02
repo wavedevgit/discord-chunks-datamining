@@ -6,9 +6,9 @@ require.d(exports, {
   IZ: () => b,
   PP: () => g,
   Ub: () => m,
-  c6: () => T,
+  c6: () => S,
   m9: () => v,
-  mT: () => S,
+  mT: () => T,
   qn: () => O,
   rC: () => I,
   tI: () => y
@@ -176,7 +176,7 @@ function I(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     loadId: t,
     searchId: n,
@@ -198,7 +198,7 @@ function T(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let t = a.Z.getLoadId(e);
   u.default.track(d.rMx.GUILD_DISCOVERY_GUILD_JOIN_CLICKED, {
     guild_id: e,

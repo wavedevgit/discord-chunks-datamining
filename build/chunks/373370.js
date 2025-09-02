@@ -168,7 +168,7 @@ function I(e, t, n, r) {
   }, r)
 }
 
-function T(e) {
+function S(e) {
   let {
     quest: t,
     taskDetails: n,
@@ -180,7 +180,7 @@ function T(e) {
   }, r)
 }
 
-function S(e) {
+function T(e) {
   let t, {
       quest: n,
       taskDetails: r,
@@ -240,12 +240,12 @@ function A(e) {
     withoutMarkdown: i
   });
   if ((0, s.q8)(t)) return I(t, c, l, i);
-  else if ((0, s.pO)(t)) return T({
+  else if ((0, s.pO)(t)) return S({
     quest: t,
     taskDetails: n,
     withoutMarkdown: i
   });
-  return null != r ? r.description : S({
+  return null != r ? r.description : T({
     quest: t,
     taskDetails: n,
     withoutMarkdown: i,

@@ -46,7 +46,7 @@ function I(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,8 +57,8 @@ function T(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+function T(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -69,7 +69,7 @@ function A(e) {
     onClose: o,
     ticket: s,
     challenge: c
-  } = e, f = (0, u.Dt)(), [g, v] = i.useState(""), [I, T] = i.useState(true), [S, A] = i.useState(E.x.INIT), [C, N] = i.useState(""), [R, P] = i.useState(null), w = async () => {
+  } = e, f = (0, u.Dt)(), [g, v] = i.useState(""), [I, S] = i.useState(true), [T, A] = i.useState(E.x.INIT), [C, N] = i.useState(""), [R, P] = i.useState(null), w = async () => {
     let e;
     A(E.x.REGISTER);
     let t = _.isPlatformEmbedded && h.ZP.supportsFeature(b.eRX.WEBAUTHN) ? h.ZP.webAuthnRegister(c) : a.Ue(JSON.parse(c)).then(e => JSON.stringify(e));
@@ -91,13 +91,13 @@ function A(e) {
       children: [(0, r.jsxs)(l.X6q, {
         id: f,
         variant: "heading-lg/semibold",
-        children: [S === E.x.INIT && y.intl.string(y.t.vrOCCg), S === E.x.REGISTER && y.intl.string(y.t.wePEBA), S === E.x.NAME && y.intl.string(y.t["cY/IOj"])]
+        children: [T === E.x.INIT && y.intl.string(y.t.vrOCCg), T === E.x.REGISTER && y.intl.string(y.t.wePEBA), T === E.x.NAME && y.intl.string(y.t["cY/IOj"])]
       }), (0, r.jsx)(l.olH, {
         onClick: o,
         className: O.modalCloseButton
       })]
     }), (0, r.jsxs)(l.MyZ, {
-      activeSlide: S,
+      activeSlide: T,
       width: 440,
       children: [(0, r.jsxs)(l.Mi4, {
         id: E.x.INIT,
@@ -177,7 +177,7 @@ function A(e) {
               }), (0, r.jsx)(l.oil, {
                 value: g,
                 onChange: e => {
-                  v(e), T(0 === e.length)
+                  v(e), S(0 === e.length)
                 },
                 autoFocus: true,
                 minLength: 1
@@ -272,7 +272,7 @@ function N() {
           color: s.zx.Colors.TRANSPARENT,
           size: s.zx.Sizes.ICON,
           onClick: t => {
-            (0, c.vq)(t, t => (0, r.jsx)(C, S(I({}, t), {
+            (0, c.vq)(t, t => (0, r.jsx)(C, T(I({}, t), {
               credential: e
             })))
           },
@@ -297,7 +297,7 @@ function N() {
               ticket: t,
               challenge: n
             } = e;
-            (0, l.h7j)(e => (0, r.jsx)(A, S(I({}, e), {
+            (0, l.h7j)(e => (0, r.jsx)(A, T(I({}, e), {
               ticket: t,
               challenge: n
             })))

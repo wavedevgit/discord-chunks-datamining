@@ -68,20 +68,20 @@ let P = e => {
         return null == (e = L[t]) ? true : e[n]
       }, [L, G]);
     switch (null == B ? true : B.type) {
-      case T.ld.EMOJI:
+      case S.ld.EMOJI:
         t = null == B ? true : B.emoji;
         break;
-      case T.ld.EXPAND_OR_COLLAPSE_EMOJIS:
+      case S.ld.EXPAND_OR_COLLAPSE_EMOJIS:
         t = {
           type: "EXPAND_OR_COLLAPSE_EMOJI",
           guildId: null == B ? true : B.guildId,
           allNamesString: null == B ? true : B.name
         };
         break;
-      case T.ld.SOUNDMOJI:
+      case S.ld.SOUNDMOJI:
         t = null;
         break;
-      case T.ld.CREATE_EMOJI:
+      case S.ld.CREATE_EMOJI:
       default:
         t = {
           type: "CREATE_EMOJI",
@@ -98,15 +98,15 @@ let P = e => {
       {
         newlyAddedEmojis: K
       } = (0, v.Z)(j, M),
-      z = (null == B ? true : B.type) === T.ld.EMOJI ? B.subCategory : S.t0.NONE;
+      z = (null == B ? true : B.type) === S.ld.EMOJI ? B.subCategory : T.t0.NONE;
     if (i.useEffect(() => {
         let e = Date.now();
         return () => {
-          Date.now() - e >= N && R(t) && z !== S.t0.NONE && (z === S.t0.NEWLY_ADDED_EMOJI && null !== t && t.type === u.B.GUILD && (0, f.Zg)(t.guildId, K[0].id), null != G.source && (0, O.Gn)({
+          Date.now() - e >= N && R(t) && z !== T.t0.NONE && (z === T.t0.NEWLY_ADDED_EMOJI && null !== t && t.type === u.B.GUILD && (0, f.Zg)(t.guildId, K[0].id), null != G.source && (0, O.Gn)({
             emoji: t,
             subCategory: z,
             position: B.columnIndex + 1,
-            newlyAddedHighlight: z === S.t0.NEWLY_ADDED_EMOJI && d.Z.isNewerThanLastSeen(j, t.id)
+            newlyAddedHighlight: z === T.t0.NEWLY_ADDED_EMOJI && d.Z.isNewerThanLastSeen(j, t.id)
           }))
         }
       }), null == t) return null;

@@ -31,8 +31,8 @@ function v(e) {
     skuId: n,
     transitionState: v,
     onClose: I,
-    children: T,
-    footer: S
+    children: S,
+    footer: T
   } = e, A = (0, a.e7)([d.Z, f.Z], () => {
     var e;
     return null != (e = d.Z.getApplication(t)) ? e : f.Z.getApplicationRecord(t)
@@ -77,7 +77,7 @@ function v(e) {
     }), (0, r.jsx)(i.Z, {
       children: (0, r.jsx)("main", {
         className: O.bodyInner,
-        children: T
+        children: S
       })
     }), (0, r.jsx)(l.m, {
       children: (0, r.jsxs)("div", {
@@ -106,7 +106,7 @@ function v(e) {
               (0, p.JG)(e, () => (0, u.showToast)((0, u.createToast)(b.intl.string(b.t["L/PwZW"]), u.ToastType.SUCCESS))), (0, m.X)(t, m.B.DETAILS_MODAL, n)
             },
             variant: "icon-only"
-          }), S]
+          }), T]
         })]
       })
     })]

@@ -37,7 +37,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -50,7 +50,7 @@ function T(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -62,7 +62,7 @@ function S(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -140,7 +140,7 @@ class w {
           userId: e,
           checkIsMuted: true
         });
-        return t && (this.lastSpoke[e] = Date.now()), this.participantByIndex.set(n.id, A(T({}, n), {
+        return t && (this.lastSpoke[e] = Date.now()), this.participantByIndex.set(n.id, A(S({}, n), {
           speaking: t,
           lastSpoke: this.lastSpoke[e],
           soundsharing: p.Z.isSoundSharing(e)
@@ -151,7 +151,7 @@ class w {
   }
   updateParticipantQuality(e, t, n) {
     var r, i;
-    return null != (i = null == (r = this.participants[e]) ? true : r.reduce((e, r) => r.type === y.fO.STREAM ? (this.participantByIndex.set(r.id, A(T({}, r), {
+    return null != (i = null == (r = this.participants[e]) ? true : r.reduce((e, r) => r.type === y.fO.STREAM ? (this.participantByIndex.set(r.id, A(S({}, r), {
       maxResolution: t,
       maxFrameRate: n
     })), true) : e, false)) && i
@@ -185,18 +185,18 @@ class w {
   _getParticipantsForUser(e) {
     var t, n, r, i, o, d;
     let b, O, I = [],
-      S = h.default.getUser(e);
-    if (null == S) return I;
+      T = h.default.getUser(e);
+    if (null == T) return I;
     let C = g.Z.getVoiceStateForChannel(this.channelId, e),
       N = g.Z.getVoicePlatformForChannel(this.channelId, e),
       R = f.Z.getChannel(this.channelId),
       P = null == R ? true : R.getGuildId(),
       w = null != (r = (null == (n = this.call) || null == (t = n.ringing) ? true : t.includes(e)) || this.guildRingingUsers.has(e)) && r;
-    (null != C || w) && (b = A(T({
+    (null != C || w) && (b = A(S({
       type: y.fO.USER
     }, m.Z.getUserStreamData(e, P)), {
-      user: S,
-      id: S.id,
+      user: T,
+      id: T.id,
       voiceState: C,
       voicePlatform: N,
       speaking: (0, a.O)({
@@ -206,9 +206,9 @@ class w {
       lastSpoke: null != (i = this.lastSpoke[e]) ? i : 0,
       soundsharing: p.Z.isSoundSharing(e),
       ringing: w,
-      userNick: E.ZP.getName(P, this.channelId, S),
-      userAvatarDecoration: (0, s.o)(S, P),
-      localVideoDisabled: _.Z.isLocalVideoDisabled(S.id)
+      userNick: E.ZP.getName(P, this.channelId, T),
+      userAvatarDecoration: (0, s.o)(T, P),
+      localVideoDisabled: _.Z.isLocalVideoDisabled(T.id)
     }), I.push(b));
     let D = null != (o = c.Z.getStreamForUser(e, P)) ? o : c.Z.getActiveStreamForUser(e, P);
     if (null != D && D.channelId === this.channelId) {
@@ -216,15 +216,15 @@ class w {
         n = this.getParticipant(t),
         r = D.ownerId === u.default.getId() && c.Z.isSelfStreamHidden(this.channelId),
         i = (null == n ? true : n.type) === y.fO.STREAM ? {
-          maxResolution: null != n.maxResolution ? T({}, n.maxResolution) : true,
+          maxResolution: null != n.maxResolution ? S({}, n.maxResolution) : true,
           maxFrameRate: n.maxFrameRate
         } : null;
-      O = A(T({}, m.Z.getUserStreamData(e, P, v.Yn.STREAM), i), {
+      O = A(S({}, m.Z.getUserStreamData(e, P, v.Yn.STREAM), i), {
         type: r ? y.fO.HIDDEN_STREAM : y.fO.STREAM,
         id: t,
         userVideo: null != (d = null == C ? true : C.selfVideo) && d,
-        user: S,
-        userNick: E.ZP.getName(P, this.channelId, S),
+        user: T,
+        userNick: E.ZP.getName(P, this.channelId, T),
         stream: D
       }), I.push(O)
     }

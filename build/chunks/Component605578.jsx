@@ -65,9 +65,9 @@ let d = Chunk647438.forwardRef(function(e, t) {
     onMouseLeave: O,
     buttonProps: v,
     "aria-label": I
-  } = e, T = i.useRef(null);
-  return i.useImperativeHandle(t, () => T.current), (0, r.jsxs)(n, {
-    ref: T,
+  } = e, S = i.useRef(null);
+  return i.useImperativeHandle(t, () => S.current), (0, r.jsxs)(n, {
+    ref: S,
     className: c,
     style: d,
     onClick: _,
@@ -78,7 +78,7 @@ let d = Chunk647438.forwardRef(function(e, t) {
     onContextMenu: h,
     children: [(0, r.jsx)(a.P, u(l({}, v), {
       focusProps: l({
-        ringTarget: T
+        ringTarget: S
       }, f),
       className: o.focusTarget,
       "aria-label": I,

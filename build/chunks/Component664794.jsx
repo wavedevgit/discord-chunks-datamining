@@ -71,63 +71,63 @@ function y(e) {
       trackUserProfileAction: I
     } = (0, _.KZ)(),
     {
-      analyticsLocations: T,
-      newestAnalyticsLocation: S
+      analyticsLocations: S,
+      newestAnalyticsLocation: T
     } = (0, s.ZP)(o.Z.USER_PROFILE_OVERFLOW_MENU),
     A = (0, d.Z)({
       user: n,
       guildId: m,
       onAction: () => I({
         action: "PRESS_INVITE_TO_SERVER",
-        analyticsLocations: T
+        analyticsLocations: S
       })
     }),
     C = (0, c.Z)({
       user: n,
       guildId: m,
-      location: S,
+      location: T,
       color: "danger",
       appContext: y,
       onBlock: () => I({
         action: "BLOCK",
-        analyticsLocations: T
+        analyticsLocations: S
       }),
       onIgnore: () => I({
         action: "IGNORE",
-        analyticsLocations: T
+        analyticsLocations: S
       }),
       onUnblock: () => I({
         action: "UNBLOCK",
-        analyticsLocations: T
+        analyticsLocations: S
       })
     }),
     N = (0, u.Z)({
       user: n,
       guildId: m,
-      location: S,
+      location: T,
       appContext: y,
       onBlock: () => I({
         action: "BLOCK",
-        analyticsLocations: T
+        analyticsLocations: S
       }),
       onIgnore: () => I({
         action: "IGNORE",
-        analyticsLocations: T
+        analyticsLocations: S
       }),
       onUnignore: () => I({
         action: "UNIGNORE",
-        analyticsLocations: T
+        analyticsLocations: S
       })
     }),
     R = (0, f.Z)({
       user: n,
       guildId: m,
-      location: S,
+      location: T,
       appContext: y,
       color: "danger",
       onAction: () => I({
         action: "REPORT",
-        analyticsLocations: T
+        analyticsLocations: S
       })
     }),
     P = [
@@ -135,12 +135,12 @@ function y(e) {
       [N, C, R, (0, f.T)({
         user: n,
         guildId: m,
-        location: S,
+        location: T,
         appContext: y,
         color: "danger",
         onAction: () => I({
           action: "REPORT",
-          analyticsLocations: T
+          analyticsLocations: S
         })
       })],
       [(0, l.Z)({
@@ -148,14 +148,14 @@ function y(e) {
         label: h.intl.string(h.t["/AXYnJ"]),
         onSuccess: () => I({
           action: "COPY_USER_ID",
-          analyticsLocations: T
+          analyticsLocations: S
         })
       })]
     ];
   if (P.every(e => e.every(e => null == e))) return null;
   let w = t === p.j8.BANNER ? p.oY : p.ef;
   return (0, r.jsx)(s.Gt, {
-    value: T,
+    value: S,
     children: (0, r.jsx)(a.yRy, {
       targetElementRef: v,
       renderPopout: e => {

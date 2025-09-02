@@ -61,7 +61,7 @@ let v = [],
   I = new(s())({
     max: Chunk710111.zb
   }),
-  T = new Chunk704907.ZP({
+  S = new Chunk704907.ZP({
     computeBonus: () => 100,
     computeWeight: e => {
       let t = 1;
@@ -72,7 +72,7 @@ let v = [],
     numFrequentlyItems: Chunk710111.O6
   });
 
-function S(e) {
+function T(e) {
   let {
     sound: t,
     trigger: n
@@ -98,10 +98,10 @@ function C(e) {
 }
 
 function N(e) {
-  T.track(e), v.push({
+  S.track(e), v.push({
     key: e,
     timestamp: Date.now()
-  }), T.compute()
+  }), S.compute()
 }
 
 function R(e) {
@@ -120,7 +120,7 @@ function w() {
   var e;
   if (!L()) return;
   let t = null == (e = Chunk581883.Z.frecencyWithoutFetchingLatest.playedSoundFrecency) ? true : module.playedSounds;
-  T.overwriteHistory(P(null != exports ? exports : {}), v)
+  S.overwriteHistory(P(null != exports ? exports : {}), v)
 }
 
 function D(e) {
@@ -160,18 +160,18 @@ class j extends(r = Chunk442837.ZP.PersistedStore) {
     return v.length > 0
   }
   get playedSoundHistory() {
-    return T.usageHistory
+    return S.usageHistory
   }
   get recentlyHeardSoundIds() {
     return I.values()
   }
   get frecentlyPlayedSounds() {
-    return T.frequently
+    return S.frequently
   }
 }
 E(j, "displayName", "SoundboardEventStore"), E(j, "persistKey", "SoundboardEventStore");
 let M = new j(Chunk570140.Z, {
-  GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY: S,
+  GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY: T,
   GUILD_SOUNDBOARD_SOUND_PLAY_START: A,
   USER_SETTINGS_PROTO_UPDATE: D
 })

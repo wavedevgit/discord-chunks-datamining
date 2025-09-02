@@ -96,7 +96,7 @@ function I(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   var t;
   let {
     detectedGame: n,
@@ -130,7 +130,7 @@ function T(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     application: t
   } = e, n = i.useMemo(() => (0, m.fP)(), []), a = (0, l.e7)([_.Z], () => _.Z.getMute(t.id)), o = i.useMemo(() => a ? b.intl.string(b.t.tpvw4e) : b.intl.string(b.t["6EwEws"]), [a]);
@@ -188,14 +188,14 @@ function A(e) {
     className: o()(y.container, a),
     children: [(0, r.jsx)(O, {
       detectedGame: n
-    }), (0, r.jsx)(S, {
+    }), (0, r.jsx)(T, {
       application: t
     }), (0, r.jsx)(v, {
       application: t
     }), (0, r.jsx)(I, {
       application: t,
       detectedGame: n
-    }), (0, r.jsx)(T, {
+    }), (0, r.jsx)(S, {
       application: t,
       detectedGame: n,
       openFullGameProfile: c

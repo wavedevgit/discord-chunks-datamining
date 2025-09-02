@@ -105,14 +105,14 @@ function I(e) {
   t.forEach(g)
 }
 
-function T(e) {
+function S(e) {
   let {
     threads: t
   } = e;
   t.forEach(R)
 }
 
-function S(e) {
+function T(e) {
   let {
     channel: t
   } = e;
@@ -186,15 +186,15 @@ let D = new w(Chunk570140.Z, {
   OVERLAY_INITIALIZE: b,
   GUILD_CREATE: y,
   GUILD_DELETE: O,
-  CHANNEL_DELETE: S,
+  CHANNEL_DELETE: T,
   THREAD_CREATE: v,
   THREAD_UPDATE: v,
   THREAD_LIST_SYNC: I,
   THREAD_MEMBERS_UPDATE: P,
   SEARCH_MESSAGES_SUCCESS: N,
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: N,
-  LOAD_THREADS_SUCCESS: T,
-  LOAD_ARCHIVED_THREADS_SUCCESS: T,
+  LOAD_THREADS_SUCCESS: S,
+  LOAD_ARCHIVED_THREADS_SUCCESS: S,
   THREAD_DELETE: A,
   LOAD_MESSAGES_SUCCESS: C
 })

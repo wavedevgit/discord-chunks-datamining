@@ -138,7 +138,7 @@ function en(e) {
     disabledSounds: t,
     disableAllSounds: n,
     notifyMessagesInSelectedChannel: a
-  } = e, s = i.useRef(null), l = (0, T.p)(), c = i.useCallback((e, t) => {
+  } = e, s = i.useRef(null), l = (0, S.p)(), c = i.useCallback((e, t) => {
     t.stopPropagation(), t.preventDefault(), null != s.current && s.current.stop(), s.current = (0, D.GN)(e)
   }, []), u = i.useCallback((e, n) => {
     let r = t.filter(t => t !== e);
@@ -574,7 +574,7 @@ function es() {
 }
 async function el(e) {
   e(true);
-  let t = await (0, S.Tn)();
+  let t = await (0, T.Tn)();
   0 === t.length ? await (0, C.oL)() : f.Z.show({
     title: K.intl.string(K.t["cY+Ooa"]),
     body: K.intl.format(K.t["7zTJJS"], {
@@ -587,7 +587,7 @@ async function el(e) {
 }
 
 function ec(e) {
-  let t = (0, T.p)();
+  let t = (0, S.p)();
   return (0, r.jsx)(ei, $(Q({}, e), {
     focusMode: t
   }))

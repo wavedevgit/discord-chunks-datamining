@@ -58,7 +58,7 @@ function G(e) {
   var t, n;
   let {
     quest: a
-  } = e, E = (0, T.T)({
+  } = e, E = (0, S.T)({
     quest: a,
     location: D.dr.QUESTS_BAR
   }), G = (0, I.Z)({
@@ -133,7 +133,7 @@ function G(e) {
   let ev = K ? D.XZ : D.R4,
     [{
       expansionSpring: eI
-    }, eT] = (0, u.q_F)(() => ({
+    }, eS] = (0, u.q_F)(() => ({
       from: {
         expansionSpring: 0
       },
@@ -146,13 +146,13 @@ function G(e) {
       }
     }));
   i.useEffect(() => {
-    eT({
+    eS({
       expansionSpring: +!!ea,
       immediate: V
     })
-  }, [ea, eT, V]);
+  }, [ea, eS, V]);
   let {
-    visibilitySpring: eS
+    visibilitySpring: eT
   } = (0, u.q_F)({
     from: {
       visibilitySpring: 0
@@ -231,7 +231,7 @@ function G(e) {
   });
   if (!G || !J && ec && !Q || X) return X ? E.log("Not rendered due to asset error") : G || E.log("Not rendered due to ineligibility"), null;
   let eC = k + 78 * !!en;
-  return (0, r.jsx)(S.A, {
+  return (0, r.jsx)(T.A, {
     questOrQuests: a,
     questContent: y.jn.QUEST_BAR_V2,
     overrideVisibility: !H && J,
@@ -253,7 +253,7 @@ function G(e) {
         }),
         style: {
           color: eA ? true : a.config.colors.secondary,
-          height: eS.to({
+          height: eT.to({
             range: [0, 1],
             output: [0, eC]
           })

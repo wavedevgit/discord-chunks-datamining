@@ -26,12 +26,12 @@ var Chunk442837 = require("./442837.js"),
 let Chunk775322 = require("./775322.js"),
   Chunk853453 = require("./853453.js"),
   I = (0, Chunk313201.hQ)(),
-  T = {
+  S = {
     page: Chunk981631.ZY5.USER_SETTINGS,
     section: Chunk981631.jXE.SETTINGS_VOICE_AND_VIDEO
   };
 
-function S(e) {
+function T(e) {
   let t = e.currentTarget;
   _.default.track(E.rMx.NOISE_CANCELLATION_LINK_CLICKED, {
     text: t.text,
@@ -84,7 +84,7 @@ function A() {
       children: [(0, Chunk951288.jsx)(Chunk481060.FXm, {
         options: Chunk738486,
         onChange: e => {
-          s.Z.setNoiseCancellation(2 === e.value, T), s.Z.setNoiseSuppression(1 === e.value, T)
+          s.Z.setNoiseCancellation(2 === e.value, S), s.Z.setNoiseSuppression(1 === e.value, S)
         },
         value: Chunk626135
       }), Chunk921801 && (0, Chunk951288.jsx)(Chunk481060.ToO, {
@@ -97,7 +97,7 @@ function A() {
         align: Chunk600164.Z.Align.CENTER,
         body: (0, Chunk951288.jsx)(Chunk481060.eee, {
           href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.NOISE_SUPPRESSION),
-          onClick: S,
+          onClick: T,
           children: Chunk388032.intl.string(Chunk388032.t.hvVgAQ)
         })
       })]

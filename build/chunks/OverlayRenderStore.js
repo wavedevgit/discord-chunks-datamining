@@ -33,7 +33,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function T(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,7 +58,7 @@ function S(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -121,8 +121,8 @@ function K() {
 }
 
 function z(e, t) {
-  j = A(T({}, j), {
-    [e]: T({}, t)
+  j = A(S({}, j), {
+    [e]: S({}, t)
   })
 }
 
@@ -137,7 +137,7 @@ function X(e) {
 function Q(e, t, n) {
   let r = W(e);
   if (null == r) return void R.error("Tried to set property ".concat(t, " to ").concat(n, " for untracked pid ").concat(e));
-  let i = T({}, r);
+  let i = S({}, r);
   i[t] = n, z(e, i)
 }
 
@@ -178,7 +178,7 @@ async function ee(e) {
     f = _.Z.getGameByName(o.name),
     p = null != (t = await (0, y.hj)(e, 0)) ? t : o.fullscreenType;
   R.verbose("Tracking game ".concat(e, " for overlay"));
-  let h = A(T({}, u), {
+  let h = A(S({}, u), {
     pid: e,
     oopEnabled: l,
     legacyEnabled: c,
@@ -242,22 +242,22 @@ function et(e, t) {
   if (!(0, E.NW)("determineOverlayMethod", false)) {
     let e = (0, y.qT)(i),
       t = e.enabledLegacy && V();
-    return A(T({}, e), {
+    return A(S({}, e), {
       overlayMethod: t ? e.overlayMethod : g.gl.Disabled
     })
   }
   if (!H() && V()) {
     let e = (0, y.qT)(i);
-    return A(T({}, e), {
+    return A(S({}, e), {
       overlayMethod: e.enabledLegacy ? e.overlayMethod : g.gl.Disabled
     })
   }
-  if (!(0, p.supportsOutOfProcess)()) return A(T({}, (0, y.qT)(i)), {
+  if (!(0, p.supportsOutOfProcess)()) return A(S({}, (0, y.qT)(i)), {
     source: g.d0.NO_OUT_OF_PROCESS_SUPPORT
   });
-  if (!a.enabledOOP && a.enabledLegacy) return V() ? A(T({}, (0, y.qT)(i)), {
+  if (!a.enabledOOP && a.enabledLegacy) return V() ? A(S({}, (0, y.qT)(i)), {
     source: g.d0.LEGACY_ENABLED
-  }) : A(T({}, a), {
+  }) : A(S({}, a), {
     overlayMethod: g.gl.Disabled,
     source: g.d0.LEGACY_ENABLED
   });
@@ -271,14 +271,14 @@ function et(e, t) {
       let e = a.enabledOOP && H(),
         t = a.enabledLegacy && V(),
         n = s ? g.gl.OutOfProcessLimitedInteraction : g.gl.OutOfProcess;
-      return A(T({}, a), {
+      return A(S({}, a), {
         overlayMethod: e ? n : t ? (0, y.qT)(i).overlayMethod : g.gl.Disabled
       })
     }
     case l.Jx.FULLSCREEN: {
       let e = (0, y.qT)(i),
         t = e.enabledLegacy && V();
-      return A(T({}, e), {
+      return A(S({}, e), {
         overlayMethod: t ? e.overlayMethod : g.gl.Disabled
       })
     }
@@ -534,11 +534,11 @@ function eI(e) {
   return P = e.mode, eb(), true
 }
 
-function eT(e) {
+function eS(e) {
   if (null != W(e.pid)) return Q(e.pid, "state", e.overlayState), R.verbose("Updating overlay state for pid ".concat(e.pid, " to ").concat(e.overlayState)), e.overlayState === g.mM.WAITING_FOR_OVERLAY_OPEN ? $(e.pid, g.zE.MODULE_TRACKING) : e.overlayState === g.mM.OVERLAY_RENDERING && $(e.pid, g.zE.OVERLAY_RENDERING), true
 }
 
-function eS() {
+function eT() {
   return eb(), true
 }
 
@@ -614,7 +614,7 @@ class ex extends(r = Chunk442837.ZP.Store) {
   }
   getGameOverlayStatus(e) {
     let t = W(e.pid);
-    return null == t ? null : T({
+    return null == t ? null : S({
       enabledOOP: t.oopEnabled,
       enabledLegacy: t.legacyEnabled
     }, t)
@@ -664,8 +664,8 @@ let eL = new ex(Chunk570140.Z, __OVERLAY__ ? {} : {
     RUNNING_GAMES_CHANGE: eg,
     RUNNING_GAME_TOGGLE_OVERLAY: eE,
     OVERLAY_FORCE_RENDER_MODE: eI,
-    OVERLAY_UPDATE_OVERLAY_STATE: eT,
-    OVERLAY_SET_LIMITED_INTERACTION_OVERRIDE: eS,
+    OVERLAY_UPDATE_OVERLAY_STATE: eS,
+    OVERLAY_SET_LIMITED_INTERACTION_OVERRIDE: eT,
     OVERLAY_CRASHED: ev,
     OVERLAY_RELOAD: eO,
     OVERLAY_FOCUSED: eN,

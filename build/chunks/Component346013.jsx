@@ -84,9 +84,9 @@ function G(e) {
     channel: B
   } = e, Z = i.useRef(null), F = i.useRef(null), V = (0, R.J)(k, G), {
     setPopout: H
-  } = (0, b.Z)(G.id, w.d$), Y = (0, E.qo)(G, B, H, true), W = v.QK.useSetting(), K = (0, C.n)(), [z, q] = i.useState(false), [X, Q] = i.useState((null == V ? true : V.coverImage) == null), J = (0, c.e7)([I.ZP, T.default], () => {
+  } = (0, b.Z)(G.id, w.d$), Y = (0, E.qo)(G, B, H, true), W = v.QK.useSetting(), K = (0, C.n)(), [z, q] = i.useState(false), [X, Q] = i.useState((null == V ? true : V.coverImage) == null), J = (0, c.e7)([I.ZP, S.default], () => {
     var e;
-    return I.ZP.isMember(null == V ? true : V.guildId, null == (e = T.default.getCurrentUser()) ? true : e.id)
+    return I.ZP.isMember(null == V ? true : V.guildId, null == (e = S.default.getCurrentUser()) ? true : e.id)
   }, [V]), $ = (0, c.e7)([I.ZP], () => (null == V ? true : V.authorId) != null ? I.ZP.getMember(V.guildId, V.authorId) : null), ee = (0, _.Z)((null == $ ? true : $.avatarDecoration) != null ? null == $ ? true : $.avatarDecoration : null == V || null == (t = V.user) ? true : t.avatarDecoration), [et, en, er] = i.useMemo(() => {
     var e, t;
     return [null != (e = null == $ ? true : $.colorString) ? e : "inherit", null != (t = null == $ ? true : $.colorStrings) ? t : null, null == $ ? true : $.colorRoleId]
@@ -107,7 +107,7 @@ function G(e) {
     }))
   }, [V, B, J]);
   if (null == V) return null;
-  let ed = (0, S.NZ)({
+  let ed = (0, T.NZ)({
       avatarDecoration: ee,
       size: (0, p.y9)(u.EFr.SIZE_40),
       canAnimate: eo

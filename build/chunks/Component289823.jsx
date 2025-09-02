@@ -2,7 +2,7 @@
 /** chunk id: 289823, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -188,10 +188,10 @@ let I = {
   }
 };
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t ? I[n].typing : e ? I[n].status : I[n].default
 }
-let S = function(e) {
+let T = function(e) {
   var {
     backSrc: t,
     frontSrc: n,
@@ -206,13 +206,13 @@ let S = function(e) {
   } = c.ny6[a], {
     statusCoords: y,
     frontAvatarOffsetPx: I,
-    frontAvatarSizePx: S,
+    frontAvatarSizePx: T,
     backAvatarSizePx: A
   } = i.useMemo(() => {
     var e;
     let t = "".concat(b, "-").concat(s);
     return null != (e = g[t]) ? e : E(a, s, t)
-  }, [b, s, a]), C = T(null != l, s, a);
+  }, [b, s, a]), C = S(null != l, s, a);
   return (0, r.jsxs)("div", {
     style: p({
       width: b,
@@ -238,7 +238,7 @@ let S = function(e) {
         },
         children: (0, r.jsx)(v, {
           src: n,
-          size: S,
+          size: T,
           isTyping: s,
           status: l
         })

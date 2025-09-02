@@ -126,7 +126,7 @@ async function es(e) {
   let C = (0, N.r)();
   try {
     let e = A.Z.getConnectedFrame();
-    if (null != e && (0, S.xT)({
+    if (null != e && (0, T.xT)({
         applicationId: e.applicationId
       }), s.Z.dispatch({
         type: "EMBEDDED_ACTIVITY_LAUNCH_START",
@@ -204,7 +204,7 @@ async function es(e) {
       channelId: null != r ? r : null,
       guildId: null != v ? v : null,
       isStart: o,
-      error: t instanceof I.Z || t instanceof _.Z || t instanceof T.Z ? t : new _.Z(t),
+      error: t instanceof I.Z || t instanceof _.Z || t instanceof S.Z ? t : new _.Z(t),
       locationKind: e
     }), false
   }
@@ -319,7 +319,7 @@ async function ec(e) {
               message: n,
               code: e
             }
-          })) : null != o && o in T.Z.ReasonCodes ? c(new T.Z(o)) : c(new T.Z(T.Z.ReasonCodes.UNKNOWN))
+          })) : null != o && o in S.Z.ReasonCodes ? c(new S.Z(o)) : c(new S.Z(S.Z.ReasonCodes.UNKNOWN))
         }
       })
     })

@@ -71,9 +71,9 @@ let E = Chunk647438.memo(function(e) {
       isEdited: O = false,
       application: v,
       tooltipPosition: I
-    } = e, T = i.useMemo(() => g(_), [_]), S = i.useMemo(() => (0, l.Hg)(T), [T]), A = i.useMemo(() => null != p ? (0, l.vc)(T, p) : a ? (0, l.vc)(T, "LT") : (0, l.Y4)(T, true), [T, p, a]), C = i.useMemo(() => a ? (0, u.Z)(A) : null, [a, A]), N = i.useMemo(() => O ? d.intl.formatToPlainString(d.t.CDzOFR, {
-      timeFormatted: S
-    }) : S, [O, S]);
+    } = e, S = i.useMemo(() => g(_), [_]), T = i.useMemo(() => (0, l.Hg)(S), [S]), A = i.useMemo(() => null != p ? (0, l.vc)(S, p) : a ? (0, l.vc)(S, "LT") : (0, l.Y4)(S, true), [S, p, a]), C = i.useMemo(() => a ? (0, u.Z)(A) : null, [a, A]), N = i.useMemo(() => O ? d.intl.formatToPlainString(d.t.CDzOFR, {
+      timeFormatted: T
+    }) : T, [O, T]);
     return (0, r.jsx)("span", {
       className: o()(n, C, {
         [f.timestamp]: true,
@@ -82,7 +82,7 @@ let E = Chunk647438.memo(function(e) {
         [f.alt]: m
       }),
       children: null == v ? (0, r.jsx)(s.ua7, {
-        text: () => (0, l.vc)(T, "LLLL"),
+        text: () => (0, l.vc)(S, "LLLL"),
         "aria-label": N,
         tooltipClassName: f.timestampTooltip,
         position: I,
@@ -90,18 +90,18 @@ let E = Chunk647438.memo(function(e) {
         children: e => (0, r.jsx)(b, {
           tooltipProps: e,
           timeFormatted: A,
-          timestamp: T,
+          timestamp: S,
           id: y,
           compact: a,
           children: t
         })
       }) : (0, r.jsx)(c.Z, {
         application: v,
-        timestamp: T,
+        timestamp: S,
         compact: a,
         children: (0, r.jsx)(b, {
           timeFormatted: A,
-          timestamp: T,
+          timestamp: S,
           id: y,
           compact: a,
           children: t

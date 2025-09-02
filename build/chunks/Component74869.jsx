@@ -124,7 +124,7 @@ function b() {
     }), [m]),
     v = Chunk647438.useMemo(() => y.map(E), [y]),
     I = Chunk647438.useMemo(() => O.map(E), [O]),
-    T = (0, Chunk951288.jsx)(Chunk481060.II_, {
+    S = (0, Chunk951288.jsx)(Chunk481060.II_, {
       id: "experiments-search",
       control: (e, t) => (0, r.jsx)(s.ne, g(h({}, e), {
         query: d,
@@ -139,6 +139,6 @@ function b() {
   }, "overridden-group"), (0, Chunk951288.jsx)(Chunk481060.Clw, {}, "separator-2"), (0, Chunk951288.jsxs)(Chunk481060.sNh, {
     id: "other-experiments",
     label: "Other Experiments",
-    children: [T, I]
-  }, "other-experiments")] : [T, ...I]
+    children: [S, I]
+  }, "other-experiments")] : [S, ...I]
 }

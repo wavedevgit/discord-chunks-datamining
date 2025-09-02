@@ -242,7 +242,7 @@ function G(e, t, n, i, a, s) {
       iconSize: v
     } = s,
     I = null == t || "" === t || Array.isArray(t) && 0 === t.length,
-    T = (0, y.cv)(E).length > 0,
+    S = (0, y.cv)(E).length > 0,
     A = null != E.interaction,
     C = E.hasFlag(R.iLy.IS_VOICE_MESSAGE),
     N = E.isPoll(),
@@ -266,20 +266,20 @@ function G(e, t, n, i, a, s) {
         className: o()(w.repliedTextContent, D.markup),
         children: null == E || null == (j = E.poll) || null == (L = j.question) ? true : L.text
       })
-    } else x ? l = (0, g.N4)(E) : T ? l = P.intl.string(P.t.kHdYCQ) : A ? l = P.intl.string(P.t["E+6SSU"]) : C ? l = P.intl.string(P.t["XC3A5+"]) : E.hasFlag(R.iLy.IS_COMPONENTS_V2) ? l = P.intl.string(P.t.Xxat6e) : (l = P.intl.string(P.t["6hGo0d"]), d = (0, r.jsx)(c.XBm, {
+    } else x ? l = (0, g.N4)(E) : S ? l = P.intl.string(P.t.kHdYCQ) : A ? l = P.intl.string(P.t["E+6SSU"]) : C ? l = P.intl.string(P.t["XC3A5+"]) : E.hasFlag(R.iLy.IS_COMPONENTS_V2) ? l = P.intl.string(P.t.Xxat6e) : (l = P.intl.string(P.t["6hGo0d"]), d = (0, r.jsx)(c.XBm, {
       size: "custom",
       color: "currentColor",
       className: b,
       width: v,
       height: v
     }));
-  else u = (0, r.jsx)(S.ZP, {
+  else u = (0, r.jsx)(T.ZP, {
     message: E,
     content: t,
     className: a,
     compact: true
   });
-  return T ? d = (0, r.jsx)(c.B7q, {
+  return S ? d = (0, r.jsx)(c.B7q, {
     size: "custom",
     color: "currentColor",
     className: b,
@@ -333,7 +333,7 @@ function B(e) {
     y = i.useCallback(() => g(e => !e), []),
     O = M(e, b, s.type),
     I = k(e, b),
-    S = U(e, m, y),
+    T = U(e, m, y),
     A = i.useMemo(() => e.compact ? (0, C.Z)((0, v.vc)(l()(), "LT")) : null, [e.compact]);
   null != n && null != a && (t = P.intl.formatToPlainString(P.t.RhbQ2N, {
     author: null == a ? true : a.nick,
@@ -341,7 +341,7 @@ function B(e) {
   }));
   let N = s.type === R.uaV.CONTEXT_MENU_COMMAND;
   return (0, r.jsxs)("div", {
-    id: (0, T.Gq)(s),
+    id: (0, S.Gq)(s),
     className: o()(w.repliedMessage, A, N ? w.contextCommandMessage : {
       [w.messageSpine]: !h || !_ && p
     }),
@@ -355,6 +355,6 @@ function B(e) {
       onClick: e.onClickReply,
       onMouseEnter: y,
       onMouseLeave: y
-    }), O, I, S]
+    }), O, I, T]
   })
 }

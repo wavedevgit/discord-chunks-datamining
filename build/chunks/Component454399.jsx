@@ -89,7 +89,7 @@ function O(e) {
     layerContext: O
   } = e, v = E(e, ["children", "title", "body", "asset", "targetElementRef", "onAnimationRest", "position", "align", "spacing", "caretConfig", "layerContext"]);
   let I = (0, f.c)(l),
-    S = i.useId(),
+    T = i.useId(),
     A = i.useMemo(() => (0, r.jsxs)("div", {
       className: _.richTooltipContent,
       children: [null != s && (0, r.jsx)("div", {
@@ -118,12 +118,12 @@ function O(e) {
     }, v)),
     x = i.useMemo(() => ({
       triggerProps: g(h({}, R), {
-        "aria-describedby": S,
+        "aria-describedby": T,
         ref: I.triggerRef
       }),
       triggerRef: I.triggerRef,
       targetElementRef: I.targetElementRef,
-      tooltipId: S,
+      tooltipId: T,
       isVisible: C,
       isRendered: N,
       content: A,
@@ -137,10 +137,10 @@ function O(e) {
       positionKey: "string" == typeof n && "string" == typeof o ? "".concat(n, "|").concat(o) : true,
       onTooltipMouseEnter: w,
       onTooltipMouseLeave: D
-    }), [R, I.triggerRef, I.targetElementRef, S, C, N, A, d, p, m, b, O, c, P, n, o, w, D]);
+    }), [R, I.triggerRef, I.targetElementRef, T, C, N, A, d, p, m, b, O, c, P, n, o, w, D]);
   return (0, r.jsxs)(y.Provider, {
     value: x,
-    children: [t, (0, r.jsx)(T, {})]
+    children: [t, (0, r.jsx)(S, {})]
   })
 }
 
@@ -194,7 +194,7 @@ function I(e) {
   })) : null
 }
 
-function T() {
+function S() {
   var e;
   let t = Chunk647438.useContext(y);
   if (null == exports) throw Error("RichTooltipContent must be used within RichTooltipRoot");

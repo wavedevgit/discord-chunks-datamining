@@ -71,8 +71,8 @@ function f(e) {
   } = e, b = (0, a.Z)(), y = (0, r.useRef)(d), [O] = (0, r.useState)(() => new i.Z), {
     dirty: v,
     chunkStart: I,
-    chunkEnd: T,
-    forceUpdateOnChunkChange: S
+    chunkEnd: S,
+    forceUpdateOnChunkChange: T
   } = (0, o.Z)({
     chunkSize: p,
     getScrollerState: g,
@@ -109,10 +109,10 @@ function f(e) {
       paddingTop: h,
       sections: t,
       getAnchorId: E
-    }), O.compute(Math.max(0, I * p), T * p)), [v, I, T, n, s, c, _, m, h, t, O, p, E]);
+    }), O.compute(Math.max(0, I * p), S * p)), [v, I, S, n, s, c, _, m, h, t, O, p, E]);
   return (0, r.useLayoutEffect)(() => void(y.current = P)), u(l({}, P), {
     listComputer: O,
-    forceUpdateOnChunkChange: S,
+    forceUpdateOnChunkChange: T,
     anchor: C,
     isSidebarVisible: R
   })

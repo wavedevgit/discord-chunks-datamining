@@ -29,7 +29,7 @@ let b = (0, Chunk313201.hQ)(),
     } = e, [y, O] = (0, c.US)([o.z.GUILD_TAG_USER_PROFILE_NEW_BADGE]), v = i.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), I = (0, a.e7)([_.default], () => {
       var e;
       return (0, u.Pb)(null == (e = _.default.getCurrentUser()) ? true : e.primaryGuild).guildId
-    }), T = true !== n ? n : I, S = i.useMemo(() => t.reduce((e, t) => {
+    }), S = true !== n ? n : I, T = i.useMemo(() => t.reduce((e, t) => {
       var n;
       return (null == (n = t.profile) ? true : n.tag) != null && e.push({
         label: t.name,
@@ -56,7 +56,7 @@ let b = (0, Chunk313201.hQ)(),
       })
     }, [A]), N = i.useCallback(e => {
       O(h.L.TAKE_ACTION), null == l || l(e)
-    }, [O, l]), R = i.useCallback(e => e === T, [T]), P = i.useCallback(e => e, []), w = i.useCallback(() => {
+    }, [O, l]), R = i.useCallback(e => e === S, [S]), P = i.useCallback(e => e, []), w = i.useCallback(() => {
       O(h.L.TAKE_ACTION), null == l || l(null)
     }, [O, l]), D = i.useRef(null);
     return (0, f.Z)(D, m.Y_.GUILD_TAG), (0, r.jsxs)(d.Z, {
@@ -75,13 +75,13 @@ let b = (0, Chunk313201.hQ)(),
         className: E.select,
         optionClassName: E.selectPopout,
         isSelected: R,
-        options: S,
+        options: T,
         select: N,
         renderOptionValue: C,
         renderOptionLabel: A,
         serialize: P,
         clear: w,
-        clearable: null != T
+        clearable: null != S
       })]
     })
   })

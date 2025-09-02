@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   A2: () => I,
-  BU: () => T,
+  BU: () => S,
   Pz: () => y,
   Qf: () => N,
   ZC: () => C,
-  a0: () => S,
+  a0: () => T,
   t8: () => v,
   tq: () => A
 }), require("./704826.js"), require("./35282.js"), require("./997841.js"), require("./642613.js");
@@ -61,12 +61,12 @@ async function I(e) {
   })).body)
 }
 
-function T(e, t) {
+function S(e, t) {
   var n;
   return null != t.outboundRedemptionUrlFormat && "" !== t.outboundRedemptionUrlFormat ? t.outboundRedemptionUrlFormat.replace(E, encodeURIComponent(e)) : null != (n = t.outboundRedemptionPageLink) ? n : ""
 }
 
-function S() {
+function T() {
   var e, t;
   let n = Chunk1844.Z.outboundPromotions,
     r = Chunk1844.Z.consumedInboundPromotionId,
@@ -92,7 +92,7 @@ function S() {
 }
 
 function A() {
-  let e = S();
+  let e = T();
   return null != module && !(0, Chunk605236.UJ)(Chunk704215.z.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR, module, {
     cooldownDurationMs: b
   })

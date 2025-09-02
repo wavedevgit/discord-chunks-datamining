@@ -88,8 +88,8 @@ function I(e) {
     type: b,
     placeholder: v,
     maxValues: I,
-    disabled: T
-  } = t, [S, A] = i.useState(false), [C, N] = i.useState(false), [R, P] = i.useState(new Map(null == g ? true : g.map(e => [e.value, e]))), [w, D] = i.useState(new Set(R.keys())), [x, L] = i.useState(() => (null != g ? g : []).map(e => e.value)), [j, M] = i.useState(0);
+    disabled: S
+  } = t, [T, A] = i.useState(false), [C, N] = i.useState(false), [R, P] = i.useState(new Map(null == g ? true : g.map(e => [e.value, e]))), [w, D] = i.useState(new Set(R.keys())), [x, L] = i.useState(() => (null != g ? g : []).map(e => e.value)), [j, M] = i.useState(0);
   i.useEffect(() => {
     let e = (null != g ? g : []).map(e => e.value);
     if (e.every(e => x.includes(e)) && x.every(t => e.includes(t))) return;
@@ -122,10 +122,10 @@ function I(e) {
     }) && D(new Set(R.keys()))
   }, [G, b, R]);
   i.useEffect(() => {
-    !S && !C && (R.size === w.size && Array.from(R.keys()).every(e => w.has(e)) || W())
-  }, [S, C, w, R, W]);
+    !T && !C && (R.size === w.size && Array.from(R.keys()).every(e => w.has(e)) || W())
+  }, [T, C, w, R, W]);
   let K = e => {
-      S || N(true), P(new Map(e.map(e => [e.value, e])))
+      T || N(true), P(new Map(e.map(e => [e.value, e])))
     },
     z = e => P(null != e ? new Map([
       [e.value, e]
@@ -142,10 +142,10 @@ function I(e) {
         iconSize: i
       }) : null
     },
-    Q = 0 === R.size || S,
+    Q = 0 === R.size || T,
     J = {
       isProcessing: Y,
-      isDisabled: T || B === _.gH.DISABLED || Z,
+      isDisabled: S || B === _.gH.DISABLED || Z,
       wrapperClassName: o()(h.select, {
         [h.inModal]: V
       }),

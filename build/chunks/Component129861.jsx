@@ -2,7 +2,7 @@
 /** chunk id: 129861, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -80,7 +80,7 @@ function v(e, t) {
 function I(e) {
   return e.isSystemUser() ? f.J.SYSTEM_DM : e.bot ? f.J.BOT : null
 }
-let T = e => {
+let S = e => {
     let {
       primary: t,
       secondary: n,
@@ -122,7 +122,7 @@ let T = e => {
       })]
     })
   },
-  S = e => {
+  T = e => {
     var {
       user: t,
       nick: n,
@@ -138,7 +138,7 @@ let T = e => {
       b = g || d || t.isNonUserBot(),
       y = t.toString(),
       v = c ? null : I(t),
-      S = t.isVerifiedBot(),
+      T = t.isVerifiedBot(),
       A = p.ZP.getName(t),
       C = i ? y : null != n ? n : A,
       N = t.hasUniqueUsername() || l;
@@ -147,11 +147,11 @@ let T = e => {
           forcePomelo: l
         }) : C,
         n = a && e !== "@".concat(y) ? p.ZP.getUserTag(t) : true;
-      return (0, r.jsx)(T, E({
+      return (0, r.jsx)(S, E({
         primary: e,
         secondary: n,
         botType: v,
-        botVerified: S,
+        botVerified: T,
         showStreamerModeTooltip: g && p.ZP.isNameConcealed(e),
         displayNameStyles: C !== y ? t.displayNameStyles : null,
         displayNameStylesType: h
@@ -160,7 +160,7 @@ let T = e => {
     return (0, r.jsx)(f.Z, E({
       name: C,
       botType: v,
-      botVerified: S,
+      botVerified: T,
       discriminator: b || C !== y ? null : null != s ? s : t.discriminator
     }, m))
   }

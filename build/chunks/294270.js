@@ -36,9 +36,9 @@ let p = 15 * Chunk70956.Z.Millis.SECOND,
   O = [],
   v = {},
   I = (0, Chunk460181.tu)("highfive_whistle", "highfive_whistle", .6),
-  T = (0, Chunk460181.tu)("highfive_clap", "highfive_clap", .6);
+  S = (0, Chunk460181.tu)("highfive_clap", "highfive_clap", .6);
 
-function S(e) {
+function T(e) {
   let {
     emoji: t,
     channelId: n,
@@ -69,7 +69,7 @@ function C(e, t, n) {
     let [t] = e;
     return t !== i
   })) ? r : [];
-  if (null != o && null != s) s.cancel(), T.play(), delete v[o], (0, u.Ym)(o.split(":")[0], t, n, e);
+  if (null != o && null != s) s.cancel(), S.play(), delete v[o], (0, u.Ym)(o.split(":")[0], t, n, e);
   else {
     (0, u._g)(e, t, n), I.play();
     let r = new a.sW(h, () => {
@@ -84,7 +84,7 @@ class N extends Chunk147913.Z {
   }
   constructor(...e) {
     super(...e), _(this, "actions", {
-      VOICE_CHANNEL_EFFECT_SEND: S,
+      VOICE_CHANNEL_EFFECT_SEND: T,
       HIGH_FIVE_COMPLETE: A
     })
   }

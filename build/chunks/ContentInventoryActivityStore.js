@@ -66,7 +66,7 @@ function I() {
   E.clear()
 }
 
-function T() {
+function S() {
   let e = false,
     t = Array.from(E.keys()),
     n = new Set,
@@ -83,9 +83,9 @@ function T() {
   for (let n of a().difference(exports, [...r])) E.delete(require), e = true;
   return module
 }
-class S extends(r = Chunk442837.ZP.Store) {
+class T extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk146282.Z, Chunk158776.Z), this.syncWith([Chunk158776.Z], T)
+    this.waitFor(Chunk146282.Z, Chunk158776.Z), this.syncWith([Chunk158776.Z], S)
   }
   getMatchingActivity(e) {
     return (0, p.n2)(e) ? null : E.get(b(e))
@@ -94,8 +94,8 @@ class S extends(r = Chunk442837.ZP.Store) {
     super(...e), m(this, "canRenderContent", e => !(0, p.n2)(e) && (!g.has(e.content_type) || null != this.getMatchingActivity(e)))
   }
 }
-m(S, "displayName", "ContentInventoryActivityStore");
-let A = new S(Chunk570140.Z, {
+m(T, "displayName", "ContentInventoryActivityStore");
+let A = new T(Chunk570140.Z, {
   CONNECTION_OPEN: I,
   CONTENT_INVENTORY_SET_FEED: v
 })

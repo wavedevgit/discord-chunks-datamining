@@ -181,7 +181,7 @@ function ev(e) {
     buttons: s = [],
     header: f,
     onVoiceChannelPreview: h
-  } = e, [m, g] = i.useState(false), [E, b] = i.useState(null), y = (0, c.e7)([Z.Z], () => null != t && ec.TPd.CONTENT_ENTRY_EMBEDS.has(t.type) && Z.Z.can(ec.Plq.SEND_MESSAGES, t)), [v, I] = i.useState(false), [S, A] = i.useState(false), {
+  } = e, [m, g] = i.useState(false), [E, b] = i.useState(null), y = (0, c.e7)([Z.Z], () => null != t && ec.TPd.CONTENT_ENTRY_EMBEDS.has(t.type) && Z.Z.can(ec.Plq.SEND_MESSAGES, t)), [v, I] = i.useState(false), [T, A] = i.useState(false), {
     voiceBar: C,
     joinVoiceButton: N
   } = eR({
@@ -203,7 +203,7 @@ function ev(e) {
           surface_type: el.Kd.GUILD_MEMBER_LIST,
           channel_id: null == t ? true : t.id,
           guild_id: null == t ? true : t.guild_id
-        }), (0, T.Q3)(u.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP), I(true), A(false), m) l()(null != t, "shareToChannelMode should only be true if a valid channel is passed"), r = t;
+        }), (0, S.Q3)(u.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP), I(true), A(false), m) l()(null != t, "shareToChannelMode should only be true if a valid channel is passed"), r = t;
       else {
         var o;
         let e = await p.Z.getOrEnsurePrivateChannel(n.id);
@@ -223,7 +223,7 @@ function ev(e) {
     }
   }, F = async e => {
     let r;
-    if ((0, T.Q3)(u.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP), m) l()(null != t, "shareToChannelMode should only be true if a valid channel is passed"), r = t;
+    if ((0, S.Q3)(u.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP), m) l()(null != t, "shareToChannelMode should only be true if a valid channel is passed"), r = t;
     else {
       let e = await p.Z.openPrivateChannel({
           recipientIds: n.id
@@ -265,7 +265,7 @@ function ev(e) {
       pointerEvents: v ? "none" : "all"
     },
     children: [(0, r.jsx)(es.Z, {
-      sent: S,
+      sent: T,
       shown: v,
       className: ef.toastContainer
     }), null != H ? H : (0, r.jsx)(ea.Z, {
@@ -335,7 +335,7 @@ let eI = e => {
     o(true)
   }, []);
   let s = !!E.Z.keyboardModeEnabled && !a,
-    l = (0, S.wC)(null == t ? true : t.guild_id).slice(0, 5).map(e => null == e.id ? {
+    l = (0, T.wC)(null == t ? true : t.guild_id).slice(0, 5).map(e => null == e.id ? {
       emoji: e,
       url: e.url
     } : {
@@ -377,7 +377,7 @@ let eI = e => {
   })
 };
 
-function eT(e) {
+function eS(e) {
   let {
     channel: t,
     userDescription: n,
@@ -448,7 +448,7 @@ function eT(e) {
   })
 }
 
-function eS(e) {
+function eT(e) {
   let {
     children: t,
     onClick: n
@@ -487,34 +487,34 @@ function eA(e) {
   }, {
     onOpened: () => null == m ? true : m(el.xP.OPENED_GAME_PROFILE)
   }), {
-    largeImage: T,
-    smallImage: S
+    largeImage: S,
+    smallImage: T
   } = (0, X.rv)({
     entry: E,
     showCoverImage: p
   }), A = b ? I : true;
   return (0, r.jsxs)("div", {
     className: ef.popoutContentWrapper,
-    children: [(0, r.jsx)(eT, em(ep({
+    children: [(0, r.jsx)(eS, em(ep({
       disableGameProfileLinks: f
     }, g), {
       onUserPopoutClosed: h
     })), (0, r.jsxs)(ey, {
-      backgroundImgSrc: null == T ? true : T.src,
+      backgroundImgSrc: null == S ? true : S.src,
       children: [(0, r.jsxs)("div", {
         className: ef.popoutHeroInner,
         children: [(0, r.jsx)("div", {
           className: ef.popoutThumbnailContainer,
           children: (0, r.jsx)($.E, {
-            image: T,
-            smallImage: S,
+            image: S,
+            smallImage: T,
             aspectRatio: p ? "none" : true,
             onClick: null != l ? l : A,
             size: $.J.SIZE_72
           })
         }), (0, r.jsxs)("div", {
           className: ef.popoutHeroBody,
-          children: [(0, r.jsx)(eS, {
+          children: [(0, r.jsx)(eT, {
             onClick: null != c ? c : A,
             children: (0, r.jsx)(_.X6q, {
               variant: "heading-md/medium",
@@ -524,7 +524,7 @@ function eA(e) {
               lineClamp: 3,
               children: n
             })
-          }), null != i ? (0, r.jsx)(eS, {
+          }), null != i ? (0, r.jsx)(eT, {
             onClick: null != u ? u : A,
             children: (0, r.jsx)(_.Text, {
               variant: "text-sm/normal",
@@ -569,8 +569,8 @@ function eC(e) {
     } = h,
     v = (0, Q.dX)(O),
     I = v ? null == (t = O.extra) ? true : t.application_id : true,
-    T = (0, N.u)(I, y.Z.MEMBER_LIST),
-    S = (0, P.Z)({
+    S = (0, N.u)(I, y.Z.MEMBER_LIST),
+    T = (0, P.Z)({
       location: "ContentPopout",
       applicationId: I,
       source: R.m1.ActivityCard,
@@ -579,7 +579,7 @@ function eC(e) {
     }, {
       onOpened: () => null == p ? true : p(el.xP.OPENED_GAME_PROFILE)
     }),
-    A = v ? S : true,
+    A = v ? T : true,
     {
       activity: x,
       activityApplication: L,
@@ -596,12 +596,12 @@ function eC(e) {
     });
   return (0, r.jsxs)("div", {
     className: ef.popoutContentWrapper,
-    children: [(0, r.jsx)(eT, em(ep({}, h), {
+    children: [(0, r.jsx)(eS, em(ep({}, h), {
       onUserPopoutClosed: f
     })), (0, r.jsxs)(ey, {
       backgroundImgSrc: null == U ? true : U.src,
       className: ef.streamingPopoutHero,
-      children: [(0, r.jsx)(eS, {
+      children: [(0, r.jsx)(eT, {
         onClick: b ? () => {
           m.default.selectVoiceChannel(s.channelId), (0, g.iV)(s)
         } : true,
@@ -631,7 +631,7 @@ function eC(e) {
           })
         }), (0, r.jsxs)("div", {
           className: ef.streamingPopoutHeaderText,
-          children: [(0, r.jsx)(eS, {
+          children: [(0, r.jsx)(eT, {
             onClick: null != u ? u : A,
             children: (0, r.jsx)(_.X6q, {
               variant: "heading-md/semibold",
@@ -639,7 +639,7 @@ function eC(e) {
               lineClamp: 3,
               children: n
             })
-          }), null != a ? (0, r.jsx)(eS, {
+          }), null != a ? (0, r.jsx)(eT, {
             onClick: null != d ? d : A,
             children: (0, r.jsx)(_.Text, {
               variant: "text-sm/normal",
@@ -650,11 +650,11 @@ function eC(e) {
             size: 8
           }), o]
         })]
-      }), null != T ? (0, r.jsx)(_.zxk, {
-        icon: T.icon,
-        text: ed.intl.string(T.labelKey),
+      }), null != S ? (0, r.jsx)(_.zxk, {
+        icon: S.icon,
+        text: ed.intl.string(S.labelKey),
         variant: "secondary",
-        onClick: T.openLink,
+        onClick: S.openLink,
         fullWidth: true
       }) : null]
     })]

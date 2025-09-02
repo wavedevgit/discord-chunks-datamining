@@ -32,15 +32,15 @@ let E = new Map,
   O = 0,
   v = 0,
   I = new Set,
-  T = new Map,
-  S = false;
+  S = new Map,
+  T = false;
 
 function A() {
-  E.clear(), b.clear(), T.clear(), S = false, v = 0, O = 0
+  E.clear(), b.clear(), S.clear(), T = false, v = 0, O = 0
 }
 
 function C() {
-  b.clear(), T.clear()
+  b.clear(), S.clear()
 }
 
 function N() {
@@ -106,8 +106,8 @@ function M(e) {
   let {
     soundId: i,
     userId: a
-  } = e, o = (null != (n = b.get(i)) ? n : 0) + 1, s = (null != (r = T.get(a)) ? r : 0) + 1;
-  b.set(i, o), T.set(a, s), a !== (null == (t = u.default.getCurrentUser()) ? true : t.id) && (S = true)
+  } = e, o = (null != (n = b.get(i)) ? n : 0) + 1, s = (null != (r = S.get(a)) ? r : 0) + 1;
+  b.set(i, o), S.set(a, s), a !== (null == (t = u.default.getCurrentUser()) ? true : t.id) && (T = true)
 }
 
 function k(e) {
@@ -115,8 +115,8 @@ function k(e) {
   let {
     soundId: r,
     userId: i
-  } = e, a = (null != (t = b.get(r)) ? t : 0) - 1, o = (null != (n = T.get(i)) ? n : 0) - 1;
-  a <= 0 ? b.delete(r) : b.set(r, a), o <= 0 ? T.delete(i) : T.set(i, o)
+  } = e, a = (null != (t = b.get(r)) ? t : 0) - 1, o = (null != (n = S.get(i)) ? n : 0) - 1;
+  a <= 0 ? b.delete(r) : b.set(r, a), o <= 0 ? S.delete(i) : S.set(i, o)
 }
 let U = a().debounce((e, t) => {
   d.default.track(h.rMx.UPDATE_SOUNDBOARD_SETTINGS, {
@@ -208,7 +208,7 @@ class H extends(r = Chunk442837.ZP.Store) {
     return 2 === O
   }
   isUserPlayingSounds(e) {
-    let t = T.get(e);
+    let t = S.get(e);
     return null != t && t > 0
   }
   isPlayingSound(e) {
@@ -224,7 +224,7 @@ class H extends(r = Chunk442837.ZP.Store) {
     return y.has(e)
   }
   hasHadOtherUserPlaySoundInSession() {
-    return S
+    return T
   }
   hasFetchedAllSounds() {
     return 2 === v && 2 === O

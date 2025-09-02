@@ -5,8 +5,8 @@ require.d(exports, {
   DM: () => E,
   Ey: () => b,
   No: () => v,
-  Ry: () => T,
-  qX: () => S,
+  Ry: () => S,
+  qX: () => T,
   u3: () => I
 });
 var Chunk951288 = require("./951288.js");
@@ -147,7 +147,7 @@ function I(e) {
   }))
 }
 
-function T(e) {
+function S(e) {
   let {
     onClick: t,
     noticeType: n
@@ -169,7 +169,7 @@ function T(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     color: t = E.DEFAULT,
     className: n,

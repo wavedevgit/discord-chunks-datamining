@@ -13,13 +13,13 @@ require.d(exports, {
   OA: () => x,
   Ow: () => Z,
   UJ: () => w,
-  XM: () => S,
+  XM: () => T,
   XY: () => D,
   ZF: () => A,
   bj: () => U,
   kk: () => j,
   oK: () => L,
-  po: () => T,
+  po: () => S,
   u9: () => M,
   wH: () => G,
   wx: () => y,
@@ -68,7 +68,7 @@ function I(e) {
   })
 }
 
-function T(e, t) {
+function S(e, t) {
   return (0, o.Cd)(e, {
     lastDismissedVersion: 0,
     lastDismissedAtMs: Date.now().toString(),
@@ -76,7 +76,7 @@ function T(e, t) {
   })
 }
 
-function S(e, t) {
+function T(e, t) {
   return (0, o.m9)(e, t, {
     dismissed: true,
     lastDismissedVersion: 0,
@@ -231,7 +231,7 @@ async function G(e, t) {
   M(e, n), await v(e, t), k(e, n)
 }
 async function B(e, t, n) {
-  M(e, n), await T(e, t), k(e, n)
+  M(e, n), await S(e, t), k(e, n)
 }
 async function Z(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};

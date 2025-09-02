@@ -49,7 +49,7 @@ let y = (e, t) => null != t && e.productLine === g.POd.COLLECTIBLES && t.type !=
       children: t
     })
   },
-  T = e => {
+  S = e => {
     let {
       children: t,
       className: n
@@ -59,7 +59,7 @@ let y = (e, t) => null != t && e.productLine === g.POd.COLLECTIBLES && t.type !=
       children: t
     })
   },
-  S = e => {
+  T = e => {
     let {
       children: t,
       className: n
@@ -103,10 +103,10 @@ let y = (e, t) => null != t && e.productLine === g.POd.COLLECTIBLES && t.type !=
           children: (0, r.jsx)(A, {
             sku: t
           })
-        }), (0, r.jsx)(T, {
+        }), (0, r.jsx)(S, {
           className: b.invoiceRegularText,
           children: t.name
-        }), (0, r.jsx)(S, {
+        }), (0, r.jsx)(T, {
           className: b.invoiceRegularText,
           children: n
         })]
@@ -134,10 +134,10 @@ function R(e) {
         children: (0, r.jsx)(A, {
           sku: t
         })
-      }), (0, r.jsx)(T, {
+      }), (0, r.jsx)(S, {
         className: b.invoiceRegularText,
         children: t.name
-      }), (0, r.jsx)(S, {
+      }), (0, r.jsx)(T, {
         className: b.invoiceRegularText,
         children: (0, m.T4)(l, n.currency)
       })]
@@ -146,18 +146,18 @@ function R(e) {
         children: (0, r.jsx)(C, {
           discount: f
         })
-      }), (0, r.jsx)(T, {
+      }), (0, r.jsx)(S, {
         className: b.invoiceDiscountText,
         children: f.description
-      }), (0, r.jsx)(S, {
+      }), (0, r.jsx)(T, {
         className: b.invoiceDiscountText,
         children: (0, m.T4)(false * f.amount, n.currency)
       })]
     }), u && (0, r.jsxs)(v, {
-      children: ["THREE_COLUMN" === a && (0, r.jsx)(I, {}), (0, r.jsx)(T, {
+      children: ["THREE_COLUMN" === a && (0, r.jsx)(I, {}), (0, r.jsx)(S, {
         className: b.invoiceRegularText,
         children: E.intl.string(E.t["/I8zmJ"])
-      }), (0, r.jsx)(S, {
+      }), (0, r.jsx)(T, {
         className: b.invoiceRegularText,
         children: (0, m.T4)(n.tax, n.currency)
       })]
@@ -167,7 +167,7 @@ function R(e) {
         children: [(0, r.jsx)(I, {
           className: b.invoiceRegularText,
           children: E.intl.format(E.t["+B5KfH"], {})
-        }), "THREE_COLUMN" === a && (0, r.jsx)(T, {}), (0, r.jsx)(S, {
+        }), "THREE_COLUMN" === a && (0, r.jsx)(S, {}), (0, r.jsx)(T, {
           className: b.invoiceRegularText,
           children: (0, m.T4)(n.amount, n.currency)
         })]

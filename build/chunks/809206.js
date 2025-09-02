@@ -8,14 +8,14 @@ require.d(exports, {
   NI: () => N,
   OU: () => L,
   P6: () => D,
-  Rx: () => S,
+  Rx: () => T,
   S2: () => E,
   V3: () => y,
   W0: () => v,
   W3: () => w,
   Zy: () => m,
   b9: () => R,
-  cV: () => T,
+  cV: () => S,
   e1: () => I,
   iR: () => x,
   s4: () => C,
@@ -151,8 +151,8 @@ function b(e) {
     let l = i.K.get(u.JkL),
       f = (0, d.xJ)();
     null != f && null != l && (o.push_provider = f, o.push_token = l);
-    let T = i.K.get(u.scU);
-    return null != d.mv && null != T && (o.push_voip_provider = d.mv, o.push_voip_token = T), E(o)
+    let S = i.K.get(u.scU);
+    return null != d.mv && null != S && (o.push_voip_provider = d.mv, o.push_voip_token = S), E(o)
   }, {
     checkEnabled: false,
     modalProps: {
@@ -206,14 +206,14 @@ function I(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR_DECORATION",
     avatarDecoration: e
   })
 }
 
-function S(e) {
+function T(e) {
   o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_NAMEPLATE",
     nameplate: e

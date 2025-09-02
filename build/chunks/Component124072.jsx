@@ -87,9 +87,9 @@ let g = e => {
     colorStrings: null != _ ? _ : null,
     roleStyle: "username",
     animateGradient: y
-  }), T = i.useCallback(e => {
+  }), S = i.useCallback(e => {
     O(true), null == g || g(e)
-  }, [O, g]), S = i.useCallback(e => {
+  }, [O, g]), T = i.useCallback(e => {
     O(false), null == E || E(e)
   }, [O, E]), A = {};
   return null != d && (A = {
@@ -102,8 +102,8 @@ let g = e => {
       [u.wrapper]: true,
       interactive: b.onClick
     }),
-    onMouseEnter: T,
-    onMouseLeave: S,
+    onMouseEnter: S,
+    onMouseLeave: T,
     style: A,
     tabIndex: null != b.onClick ? 0 : false,
     children: null != m ? (0, r.jsx)(c.Z, {

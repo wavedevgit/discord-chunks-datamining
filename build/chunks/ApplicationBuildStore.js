@@ -32,8 +32,8 @@ function O(e, t, n) {
 }
 let v = new Set,
   I = {},
-  T = new Set,
-  S = {},
+  S = new Set,
+  T = {},
   A = new Set,
   C = {},
   N = 10 * Chunk70956.Z.Millis.MINUTE,
@@ -103,7 +103,7 @@ function U(e) {
       return t
     }),
     o = i.id;
-  T.delete(n), I[n] = {
+  S.delete(n), I[n] = {
     id: o,
     applicationId: t,
     branchId: n,
@@ -116,14 +116,14 @@ function G(e) {
   let {
     branchId: t
   } = e;
-  v.delete(t), T.add(t)
+  v.delete(t), S.add(t)
 }
 
 function B(e) {
   let {
     buildId: t
   } = e;
-  S.hasOwnProperty(t) || (S[t] = null)
+  T.hasOwnProperty(t) || (T[t] = null)
 }
 
 function Z(e) {
@@ -131,14 +131,14 @@ function Z(e) {
     buildId: t,
     sizeKB: n
   } = e;
-  S[t] = n
+  T[t] = n
 }
 
 function F(e) {
   let {
     buildId: t
   } = e;
-  null == S[t] && delete S[t]
+  null == T[t] && delete T[t]
 }
 
 function V(e) {
@@ -194,16 +194,16 @@ class K extends(r = Chunk442837.ZP.Store) {
     return null == I[t] ? null : I[t].manifestIds
   }
   hasNoBuild(e, t) {
-    return T.has(t)
+    return S.has(t)
   }
   isFetching(e, t) {
     return v.has(t)
   }
   needsToFetchBuildSize(e) {
-    return !S.hasOwnProperty(e)
+    return !T.hasOwnProperty(e)
   }
   getBuildSize(e) {
-    return S[e]
+    return T[e]
   }
 }
 O(K, "displayName", "ApplicationBuildStore");

@@ -85,9 +85,9 @@ function g() {
       title: O,
       description: v,
       color: I,
-      Icon: T
+      Icon: S
     } = y[module.state],
-    S = Object.keys(y).length;
+    T = Object.keys(y).length;
   return (0, Chunk951288.jsxs)(Chunk481060.Zbd, {
     className: Chunk498714.container,
     outline: false,
@@ -133,14 +133,14 @@ function g() {
             ref: e => {
               E.current[parseInt(i)] = e
             },
-            children: [o ? (0, r.jsx)(T, {
+            children: [o ? (0, r.jsx)(S, {
               className: h.marker,
               color: a.color
             }) : (0, r.jsx)("div", {
               className: h.marker,
               style: {
                 marginLeft: 0 === n ? false : 0,
-                marginRight: n === S - 1 ? false : 0
+                marginRight: n === T - 1 ? false : 0
               },
               children: (0, r.jsx)("div", {
                 className: h.empty

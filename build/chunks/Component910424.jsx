@@ -74,23 +74,23 @@ function y(e) {
       } = e;
       return t !== n.ownerId
     }).length > 0
-  })), O = (0, i.e7)([f.Z], () => f.Z.getChannel(null == n ? true : n.channelId)), [v, I] = (0, u.wq)(O), T = (0, c.Aq)(), S = null != E && null != n && E.state !== p.jm8.ENDED && E.ownerId === n.ownerId, A = e => {
-    null != n && (null == m || m(), s.default.selectVoiceChannel(n.channelId), S || (0, l.iV)(n, {
+  })), O = (0, i.e7)([f.Z], () => f.Z.getChannel(null == n ? true : n.channelId)), [v, I] = (0, u.wq)(O), S = (0, c.Aq)(), T = null != E && null != n && E.state !== p.jm8.ENDED && E.ownerId === n.ownerId, A = e => {
+    null != n && (null == m || m(), s.default.selectVoiceChannel(n.channelId), T || (0, l.iV)(n, {
       forceMultiple: e
-    }), T.dispatch(p.CkL.POPOUT_CLOSE), _.S.dispatch(p.CkL.MODAL_CLOSE), o.Z.popAll())
+    }), S.dispatch(p.CkL.POPOUT_CLOSE), _.S.dispatch(p.CkL.MODAL_CLOSE), o.Z.popAll())
   };
   if (null == n) return null;
   let C = (0, u.P9)(I);
-  return t ? C = h.intl.string(h.t.XvBdeX) : S && (C = h.intl.string(h.t.JH1SJy)), (0, r.jsxs)(r.Fragment, {
+  return t ? C = h.intl.string(h.t.XvBdeX) : T && (C = h.intl.string(h.t.JH1SJy)), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.zxk, {
       size: "sm",
-      variant: S ? "secondary" : "active",
+      variant: T ? "secondary" : "active",
       icon: a.hGI,
       text: C,
-      disabled: t || S || !v,
+      disabled: t || T || !v,
       onClick: () => A(false),
       fullWidth: true
-    }), y && !S ? (0, r.jsx)(a.ua7, {
+    }), y && !T ? (0, r.jsx)(a.ua7, {
       text: h.intl.string(h.t.wCrzur),
       children: e => (0, r.jsx)(a.hU, b(g({}, e), {
         variant: "secondary",

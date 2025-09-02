@@ -581,8 +581,8 @@ class et extends(i = Chunk647438.PureComponent) {
     } = this.playPausePopRef;
     if (null == u) return;
     a && !t.playing ? (this.play(), this.handleMouseMove(), this.handleUIUpdate(), t.hasClickedPlay && (null == d || d.pop(a))) : !a && t.playing && (u.pause(), null == d || d.pop(a), null == n || n()), a && null == this._analytics.metadata.hasValidFrame && this.checkVideoDecodability();
-    let f = (0, S.fn)(u.parentNode, u);
-    o && !t.fullscreen && null != f ? ((0, S.Dj)(f), f.addEventListener(S.NO, this.handleFullScreenExit)) : !o && t.fullscreen && null != f && (f.removeEventListener(S.NO, this.handleFullScreenExit), (0, S.Pr)(f, f.ownerDocument)), l === C.Z.Types.DURATION && t.dragging !== C.Z.Types.DURATION && a ? u.pause() : l !== C.Z.Types.DURATION && t.dragging === C.Z.Types.DURATION && a && u.play(), s !== t.muted && (u.muted = s, null == i || i(s)), c !== t.volume && (u.volume = c, null == r || r(c))
+    let f = (0, T.fn)(u.parentNode, u);
+    o && !t.fullscreen && null != f ? ((0, T.Dj)(f), f.addEventListener(T.NO, this.handleFullScreenExit)) : !o && t.fullscreen && null != f && (f.removeEventListener(T.NO, this.handleFullScreenExit), (0, T.Pr)(f, f.ownerDocument)), l === C.Z.Types.DURATION && t.dragging !== C.Z.Types.DURATION && a ? u.pause() : l !== C.Z.Types.DURATION && t.dragging === C.Z.Types.DURATION && a && u.play(), s !== t.muted && (u.muted = s, null == i || i(s)), c !== t.volume && (u.volume = c, null == r || r(c))
   }
   componentWillUnmount() {
     this._unmounted = true;
@@ -917,8 +917,8 @@ class et extends(i = Chunk647438.PureComponent) {
         current: e
       } = this.mediaRef;
       if (null == e) return;
-      let t = (0, S.fn)(e.parentNode, e);
-      null != t && (0, S.rB)(t, null == t ? true : t.ownerDocument) || this.setState({
+      let t = (0, T.fn)(e.parentNode, e);
+      null != t && (0, T.rB)(t, null == t ? true : t.ownerDocument) || this.setState({
         fullscreen: false
       })
     }), k(this, "toggleFullscreen", () => {
@@ -950,7 +950,7 @@ class et extends(i = Chunk647438.PureComponent) {
       } = this.mediaRef;
       if (t === C.Z.Types.DURATION) null != n && isFinite(n.duration) && this.setTime(n.duration * e, false);
       else if (t === C.Z.Types.VOLUME) {
-        let t = (0, T.A)(e, 1);
+        let t = (0, S.A)(e, 1);
         0 === t ? this.setState({
           muted: true,
           volume: t

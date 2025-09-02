@@ -29,8 +29,8 @@ function O(e) {
     application: O,
     customId: v,
     customLink: I,
-    embedUrl: T,
-    referrerId: S
+    embedUrl: S,
+    referrerId: T
   } = e, A = null == O || null == (t = O.bot) ? true : t.id, C = (0, c.ms)({
     context: {
       type: "contextless"
@@ -54,7 +54,7 @@ function O(e) {
         isStart: null == x,
         embeddedActivitiesManager: j,
         customId: k,
-        referrerId: S,
+        referrerId: T,
         analyticsLocations: P
       })
     },
@@ -68,7 +68,7 @@ function O(e) {
         botId: A,
         analyticsLocations: P,
         customId: k,
-        referrerId: S
+        referrerId: T
       })
     }
   });
@@ -76,7 +76,7 @@ function O(e) {
   return (0, r.jsx)(d.W, {
     actions: U,
     onClickContent: G,
-    embedUrl: T,
+    embedUrl: S,
     header: O.name,
     iconSrc: h.ZP.getApplicationIconURL({
       id: O.id,
@@ -91,7 +91,7 @@ function O(e) {
     trackingConfig: {
       id: O.id,
       linkType: u.U.CUSTOM_ACTIVITY_LINK,
-      referrerId: S,
+      referrerId: T,
       activityCustomId: k
     }
   })

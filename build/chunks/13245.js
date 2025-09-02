@@ -285,7 +285,7 @@ let O = new Chunk710845.Z("OverlayActionCreators"),
           right: 0,
           bottom: 0
         },
-        T = {
+        S = {
           width: 0,
           height: 0
         };
@@ -304,14 +304,14 @@ let O = new Chunk710845.Z("OverlayActionCreators"),
               O = (0, _.vS)(r, i, g), v = (0, _.w_)(i, g), (0, h.E9)(n);
               break;
             case m.Odu.GUILDS_TEXT:
-              I = (0, _.vS)(r, i, g), T = (0, _.w_)(i, g), (0, h.E9)(n)
+              I = (0, _.vS)(r, i, g), S = (0, _.w_)(i, g), (0, h.E9)(n)
           }
         }), e) {
-        let e = "auto" === T.width ? l.minSize.width : T.width;
+        let e = "auto" === S.width ? l.minSize.width : S.width;
         e -= c.minSize.width;
-        let [n, i] = (0, _.o4)(I, y(E({}, T), {
+        let [n, i] = (0, _.o4)(I, y(E({}, S), {
           width: c.minSize.width
-        }), g), [a, o] = (0, _.uq)(I, y(E({}, T), {
+        }), g), [a, o] = (0, _.uq)(I, y(E({}, S), {
           width: e
         }), g, {
           x: 10,

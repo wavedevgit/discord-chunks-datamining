@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk115488 = require("./115488.js"),
   Chunk430864 = require("./430864.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,14 +35,14 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -118,11 +118,11 @@ class P extends Chunk647438.PureComponent {
       attributes: o,
       children: s
     } = e;
-    "rtl" === o.dir && (o.style = C(S({}, o.style), {
+    "rtl" === o.dir && (o.style = C(T({}, o.style), {
       textAlign: "right"
     }));
     let l = null != (t = null == a ? true : a(e)) ? t : (0, b.Z)(e, n, i);
-    return null != l ? l : (0, r.jsx)("div", C(S({}, o), {
+    return null != l ? l : (0, r.jsx)("div", C(T({}, o), {
       children: s
     }))
   }
@@ -135,7 +135,7 @@ class P extends Chunk647438.PureComponent {
       attributes: a,
       children: o
     } = e, s = null != (t = null == i ? true : i(e)) ? t : (0, y.Z)(n, e);
-    return null != s ? s : (0, r.jsx)("span", C(S({}, a), {
+    return null != s ? s : (0, r.jsx)("span", C(T({}, a), {
       children: o
     }))
   }
@@ -324,7 +324,7 @@ class P extends Chunk647438.PureComponent {
         let {
           default: e
         } = await n.e("41984").then(n.bind(n, 343602));
-        return n => (0, r.jsx)(e, C(S({}, n), {
+        return n => (0, r.jsx)(e, C(T({}, n), {
           editor: t,
           text: m.bN.getSelectedText(t, true)
         }))
@@ -373,7 +373,7 @@ class P extends Chunk647438.PureComponent {
       }) : null, (0, Chunk951288.jsx)(Chunk755712.mH, {
         editor: exports,
         value: [...this.state.initialValue],
-        children: (0, Chunk951288.jsx)(Chunk755712.CX, C(S({}, Chunk653309), {
+        children: (0, Chunk951288.jsx)(Chunk755712.CX, C(T({}, Chunk653309), {
           className: o()(Chunk430864.markup, Chunk115488.editor, require),
           decorate: this.decorate,
           renderElement: this.renderElement,
@@ -397,7 +397,7 @@ class P extends Chunk647438.PureComponent {
     })
   }
   constructor(e) {
-    super(e), T(this, "containerRef", i.createRef()), T(this, "state", true), this.decorate = this.decorate.bind(this), this.renderElement = this.renderElement.bind(this), this.renderLeaf = this.renderLeaf.bind(this), this.handleOnChange = this.handleOnChange.bind(this), this.handleKeyDown = this.handleKeyDown.bind(this), this.handleKeyUp = this.handleKeyUp.bind(this), this.handleBeforeInput = this.handleBeforeInput.bind(this), this.handleCompositionStart = this.handleCompositionStart.bind(this), this.handleCompositionEnd = this.handleCompositionEnd.bind(this), this.handleFocusCapture = this.handleFocusCapture.bind(this), this.handleBlurCapture = this.handleBlurCapture.bind(this), this.handleContextMenu = this.handleContextMenu.bind(this), this.handlePasteCapture = this.handlePasteCapture.bind(this), m.bN.isEditorEmpty(e.editor) ? this.state = {
+    super(e), S(this, "containerRef", i.createRef()), S(this, "state", true), this.decorate = this.decorate.bind(this), this.renderElement = this.renderElement.bind(this), this.renderLeaf = this.renderLeaf.bind(this), this.handleOnChange = this.handleOnChange.bind(this), this.handleKeyDown = this.handleKeyDown.bind(this), this.handleKeyUp = this.handleKeyUp.bind(this), this.handleBeforeInput = this.handleBeforeInput.bind(this), this.handleCompositionStart = this.handleCompositionStart.bind(this), this.handleCompositionEnd = this.handleCompositionEnd.bind(this), this.handleFocusCapture = this.handleFocusCapture.bind(this), this.handleBlurCapture = this.handleBlurCapture.bind(this), this.handleContextMenu = this.handleContextMenu.bind(this), this.handlePasteCapture = this.handlePasteCapture.bind(this), m.bN.isEditorEmpty(e.editor) ? this.state = {
       initialValue: (0, f.H2)().richValue,
       showPlaceholder: true
     } : this.state = {

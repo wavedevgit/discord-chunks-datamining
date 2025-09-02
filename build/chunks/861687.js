@@ -117,23 +117,23 @@ function ev(e) {
   return e
 }
 let eI = 0,
-  eT = [],
-  eS = 50;
+  eS = [],
+  eT = 50;
 
 function eA() {
   let e = [],
     t = (0, Chunk379649.zO)();
-  for (let n of eT) module.push(ef(eu({}, require), {
+  for (let n of eS) module.push(ef(eu({}, require), {
     t: exports - require.t
   }));
   return JSON.stringify(module)
 }
 class eC extends Chunk47770.Z {
   recordEvent(e) {
-    for (eT.push(ef(eu({}, e), {
+    for (eS.push(ef(eu({}, e), {
         t: (0, _.zO)(),
         n: this._connectionSerial
-      })); eT.length > eS;) eT.shift()
+      })); eS.length > eT;) eS.shift()
   }
   get quality() {
     let e = this.getLastPing();
@@ -376,7 +376,7 @@ class eC extends Chunk47770.Z {
     }, {
       autoTrackExposure: true
     }).enabled && t.push("network_aware_socket");
-    let n = S.Z.getCurrentConfig({
+    let n = T.Z.getCurrentConfig({
       location: "_chooseExperiments"
     }, {
       disable: !(0, H.isWindows)(),
@@ -409,7 +409,7 @@ class eC extends Chunk47770.Z {
     })
   }
   _handleDisconnect(e, t, n, r) {
-    var i, a, o, s, l, c, u, d, f, _, p, h, m, g, E, b, y, v, I, T, S, A;
+    var i, a, o, s, l, c, u, d, f, _, p, h, m, g, E, b, y, v, I, S, T, A;
     this.logger.info("Disconnected from RTC server, clean: ".concat(t, ", code: ").concat(n, ", reason: ").concat(r, ", state: ").concat(this.state)), t || !this._connecting || this._encountered_socket_failure || (B.default.track(es.rMx.VOICE_CONNECTION_SOCKET_FAILURE, ef(eu({}, this._getAnalyticsProperties()), {
       hostname: this.hostname,
       connect_count: this._connectCount,
@@ -484,7 +484,7 @@ class eC extends Chunk47770.Z {
           reconnect: C,
           reason: r,
           duration: this.getDuration()
-        }), null == (d = this._voiceQuality) ? true : d.getMosStats(), null == (f = this._voiceQuality) ? true : f.getPacketStats(), null == (_ = this._voiceQuality) ? true : _.getBytesStats(), null == (p = this._voiceQuality) ? true : p.getBufferStats(), null == (h = this._voiceQuality) ? true : h.getNetworkStats(), null == (m = this._voiceQuality) ? true : m.getSystemResourceStats(), null == (g = this._voiceQuality) ? true : g.getFrameOpStats(), null == (E = this._voiceQuality) ? true : E.getDurationStats(), null == (b = this._voiceQuality) ? true : b.getTransportStats(), null == (y = this._voiceQuality) ? true : y.getE2EEStats(), null == (v = this._voiceQuality) ? true : v.getAudioDeviceStats(), null == (I = this._voiceQuality) ? true : I.getAudioLevelStats(), null == (T = this._voiceDuration) ? true : T.getDurationStats(), this.getAudioDeviceStates(), null == (S = this._systemResponsiveness) ? true : S.getPttQueueLatencyStats()), {
+        }), null == (d = this._voiceQuality) ? true : d.getMosStats(), null == (f = this._voiceQuality) ? true : f.getPacketStats(), null == (_ = this._voiceQuality) ? true : _.getBytesStats(), null == (p = this._voiceQuality) ? true : p.getBufferStats(), null == (h = this._voiceQuality) ? true : h.getNetworkStats(), null == (m = this._voiceQuality) ? true : m.getSystemResourceStats(), null == (g = this._voiceQuality) ? true : g.getFrameOpStats(), null == (E = this._voiceQuality) ? true : E.getDurationStats(), null == (b = this._voiceQuality) ? true : b.getTransportStats(), null == (y = this._voiceQuality) ? true : y.getE2EEStats(), null == (v = this._voiceQuality) ? true : v.getAudioDeviceStats(), null == (I = this._voiceQuality) ? true : I.getAudioLevelStats(), null == (S = this._voiceDuration) ? true : S.getDurationStats(), this.getAudioDeviceStates(), null == (T = this._systemResponsiveness) ? true : T.getPttQueueLatencyStats()), {
           num_noise_cancellation_changes: this._numNoiseCancellationChanges,
           media_session_id: this.getMediaSessionId(),
           channel_bitrate: null != a ? a.bitrate : null,
@@ -915,7 +915,7 @@ class eC extends Chunk47770.Z {
   }
   _handleBandwidthEstimationExperiment(e) {
     this._bandwidthEstimationExperiment = e;
-    let t = T.Z.getMediaEngineExperiments(e);
+    let t = S.Z.getMediaEngineExperiments(e);
     if (null !== t && 0 !== t.length) {
       var n;
       null == (n = this._connection) || n.setBandwidthEstimationExperiments(t)

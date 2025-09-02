@@ -37,10 +37,10 @@ let m = new Chunk710845.Z("OverlayWindowRAFManager"),
   I = e => {
     delete O[e]
   },
-  T = () => {
+  S = () => {
     O = {}
   },
-  S = () => Object.entries(O).map(e => {
+  T = () => Object.entries(O).map(e => {
     let [t, n] = e;
     return {
       timeoutId: Number(t),
@@ -75,13 +75,13 @@ function C() {
 function N() {
   let e = Chunk522474.Z.getWindow(Chunk501787.$J),
     t = null != module && "function" == typeof module.cancelAnimationFrame;
-  S().forEach(n => {
+  T().forEach(n => {
     let {
       timeoutId: r,
       callback: i
     } = n;
     t && e.cancelAnimationFrame(r), g(i)
-  }), T()
+  }), S()
 }
 
 function R(e) {

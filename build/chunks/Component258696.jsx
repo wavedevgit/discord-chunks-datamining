@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk728386 = require("./728386.jsx"),
   Chunk564355 = require("./564355.js");
 
-function S(e) {
+function T(e) {
   let {
     disabled: t,
     channel: n
@@ -65,7 +65,7 @@ function A(e) {
   }, {
     autoTrackExposure: false
   }), U = [], G = !N.isDM() || true === N.recipients || N.recipients.length > 1, B = (0, o.e7)([h.default], () => G ? null : h.default.getUser(N.recipients[0])), Z = (0, d.Nt)() && (null == (t = O.confetti) ? true : t.button) != null;
-  return (a.tq || ((null == (_ = O.gifts) ? true : _.button) != null && null == j && !k && (null == B || m.ZP.isPremiumEligible(B)) && U.push((0, r.jsx)(S, {
+  return (a.tq || ((null == (_ = O.gifts) ? true : _.button) != null && null == j && !k && (null == B || m.ZP.isPremiumEligible(B)) && U.push((0, r.jsx)(T, {
     disabled: A,
     channel: N
   }, "gift")), (null == (p = O.gifs) ? true : p.button) != null && null == j && w && U.push((0, r.jsx)(E.Z, {
@@ -84,7 +84,7 @@ function A(e) {
     onClick: R,
     disabled: A || L
   }, "submit")), 0 === U.length) ? null : (0, r.jsx)("div", {
-    className: T.buttons,
+    className: S.buttons,
     children: U
   })
 }

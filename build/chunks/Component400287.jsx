@@ -34,8 +34,8 @@ function E() {
     O = Chunk695346.ev.useSetting(),
     v = Chunk695346.x4.useSetting(),
     I = Chunk695346.RS.useSetting(),
-    T = Chunk695346.NA.useSetting(),
-    S = Chunk695346.nc.useSetting(),
+    S = Chunk695346.NA.useSetting(),
+    T = Chunk695346.nc.useSetting(),
     {
       analyticsLocations: A
     } = (0, Chunk906732.ZP)(Chunk100527.Z.TEXT_AND_IMAGES),
@@ -106,7 +106,7 @@ function E() {
         setting: Chunk726985.s6.CHAT_EMBEDS_LINK_PREVIEWS,
         children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
           className: a()(Chunk197571.marginTop8, Chunk197571.marginBottom40),
-          value: T,
+          value: S,
           onChange: Chunk695346.NA.updateSetting,
           children: Chunk388032.intl.string(Chunk388032.t.xX0ZTE)
         })
@@ -120,7 +120,7 @@ function E() {
         setting: Chunk726985.s6.CHAT_EMOJI_REACTIONS,
         children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
           className: a()(Chunk197571.marginTop8, Chunk197571.marginBottom20),
-          value: S,
+          value: T,
           onChange: Chunk695346.nc.updateSetting,
           children: Chunk388032.intl.string(Chunk388032.t.Iv24sr)
         })

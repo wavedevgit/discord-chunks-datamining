@@ -46,8 +46,8 @@ function I(e) {
   }
   return e
 }
-let T = 8,
-  S = 4,
+let S = 8,
+  T = 4,
   A = 4,
   C = 40,
   N = 6;
@@ -100,7 +100,7 @@ let D = {
     if (r.allowStickers) {
       (0, c.$p)();
       let t = h.ZP.queryStickers([n], true, [e, (e, t) => t === l.eb.SENDABLE]),
-        r = Math.max(S, T - d.length);
+        r = Math.max(T, S - d.length);
       f = t.slice(0, r), "-" === n[0] && (f = t.filter(e => e.sticker.name === n))
     }
     let _ = [];

@@ -63,14 +63,14 @@ let E = {
   O = "M6.56666 11.0013L6.56666 8.96683L13.5667 8.96683L13.5667 11.0013L6.56666 11.0013Z",
   v = "M13.5582 8.96683L13.5582 11.0013L6.56192 11.0013L6.56192 8.96683L13.5582 8.96683Z",
   I = "M7.89561 14.8538L6.30462 13.2629L14.3099 5.25755L15.9009 6.84854L7.89561 14.8538Z",
-  T = "M4.08643 11.0903L5.67742 9.49929L9.4485 13.2704L7.85751 14.8614L4.08643 11.0903Z";
+  S = "M4.08643 11.0903L5.67742 9.49929L9.4485 13.2704L7.85751 14.8614L4.08643 11.0903Z";
 
-function S(e, t, n, i) {
+function T(e, t, n, i) {
   let a = e.to({
       output: [t, n]
     }),
     o = i ? [b, b, I, I] : [b, O, O, I],
-    l = i ? [y, y, T, T] : [y, v, v, T];
+    l = i ? [y, y, S, S] : [y, v, v, S];
   return (0, r.jsxs)("svg", {
     viewBox: "0 0 20 20",
     fill: "none",
@@ -100,7 +100,7 @@ let A = function(e) {
     innerRef: y
   } = e, {
     reducedMotion: O
-  } = i.useContext(u.S), v = i.useRef(null), [I, T] = i.useState(false), A = (0, f.d)(l.Z.colors.INTERACTIVE_MUTED).spring(), C = (0, f.d)(l.Z.colors.BG_BRAND).spring(), {
+  } = i.useContext(u.S), v = i.useRef(null), [I, S] = i.useState(false), A = (0, f.d)(l.Z.colors.INTERACTIVE_MUTED).spring(), C = (0, f.d)(l.Z.colors.BG_BRAND).spring(), {
     state: N,
     opacity: R
   } = (0, c.q)({
@@ -110,16 +110,16 @@ let A = function(e) {
   }, "animate-always");
 
   function P(e) {
-    T(false), null == n || n(e.currentTarget.checked, e)
+    S(false), null == n || n(e.currentTarget.checked, e)
   }
 
   function w(e) {
-    p || e.repeat || (" " === e.key || "Enter" === e.key) && T(true)
+    p || e.repeat || (" " === e.key || "Enter" === e.key) && S(true)
   }
 
   function D(e) {
     var t;
-    p || !I || e.repeat || (T(false), "Enter" === e.key && (null == (t = v.current) || t.click()))
+    p || !I || e.repeat || (S(false), "Enter" === e.key && (null == (t = v.current) || t.click()))
   }
   return (0, r.jsx)(d.t, g(h({}, b), {
     within: true,
@@ -130,9 +130,9 @@ let A = function(e) {
         [_.checked]: a,
         [_.disabled]: p
       }),
-      onMouseDown: () => !p && T(true),
-      onMouseUp: () => T(false),
-      onMouseLeave: () => T(false),
+      onMouseDown: () => !p && S(true),
+      onMouseUp: () => S(false),
+      onMouseLeave: () => S(false),
       style: {
         opacity: R,
         backgroundColor: N.to({
@@ -169,7 +169,7 @@ let A = function(e) {
             output: [20, 28, 28, 20]
           }),
           rx: "10"
-        }), S(N, A, C, O.enabled)]
+        }), T(N, A, C, O.enabled)]
       }), (0, r.jsx)("input", {
         id: t,
         type: "checkbox",

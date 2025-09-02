@@ -113,7 +113,7 @@ let W = Object.freeze({
       themeName: n,
       analyticsLocations: r
     } = e;
-    S.default.track(D.rMx.CLIENT_THEME_UPDATED, {
+    T.default.track(D.rMx.CLIENT_THEME_UPDATED, {
       feature_name: x.QP.CLIENT_THEME,
       theme_name: n,
       is_persisted: t,
@@ -226,7 +226,7 @@ let W = Object.freeze({
     } = (0, h.ZP)(p.Z.CLIENT_THEMES_THEME_SELECTOR), [E, b] = (0, l.Wu)([C.Z], () => {
       var e;
       return [C.Z.isPreview, null == (e = C.Z.gradientPreset) ? true : e.id]
-    }), [y, O] = i.useState(false), [v, I] = i.useState(false), T = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), S = N.Mc.useExperiment({
+    }), [y, O] = i.useState(false), [v, I] = i.useState(false), S = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), T = N.Mc.useExperiment({
       location: "GradientSelectors"
     }).enabled;
     i.useEffect(() => {
@@ -270,13 +270,13 @@ let W = Object.freeze({
             onSelect: () => D(e)
           }), (0, r.jsx)(u.Fmz, {
             importData: t,
-            shouldAnimate: !T,
+            shouldAnimate: !S,
             className: U.sparkles
           })]
         })
       };
     return (0, r.jsxs)(r.Fragment, {
-      children: [S && (0, r.jsx)(R.Z, {
+      children: [T && (0, r.jsx)(R.Z, {
         isDisabled: t,
         onSelect: () => {
           (0, m.XO)(m.wh.CUSTOM_THEME, {
@@ -327,7 +327,7 @@ let W = Object.freeze({
       delay: a
     } = i.useContext(K), {
       analyticsLocations: o
-    } = (0, h.ZP)(p.Z.CLIENT_THEMES_THEME_SELECTOR), [s, c, u] = (0, l.Wu)([v.Z, I.ZP, C.Z], () => [v.Z.theme, null == C.Z.gradientPreset && null == T.L1.getSetting().customUserThemeSettings, I.ZP.useSystemTheme === L.KW.ON]), d = e => {
+    } = (0, h.ZP)(p.Z.CLIENT_THEMES_THEME_SELECTOR), [s, c, u] = (0, l.Wu)([v.Z, I.ZP, C.Z], () => [v.Z.theme, null == C.Z.gradientPreset && null == S.L1.getSetting().customUserThemeSettings, I.ZP.useSystemTheme === L.KW.ON]), d = e => {
       (0, A.xs)(), z({
         isPersisted: true,
         analyticsLocations: o,

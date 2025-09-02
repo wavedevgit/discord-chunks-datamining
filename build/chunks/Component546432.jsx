@@ -103,7 +103,7 @@ function B(e, t) {
   return {
     uniqueId: e.id,
     originalItem: e,
-    type: (0, S.aw)(e, t),
+    type: (0, T.aw)(e, t),
     downloadUrl: e.url,
     height: e.height,
     width: e.width,
@@ -198,7 +198,7 @@ function F(e) {
     onPlay: m,
     renderImageComponent: g,
     renderVideoComponent: I,
-    renderAudioComponent: S,
+    renderAudioComponent: T,
     renderPlaintextFilePreview: P,
     renderGenericFileComponent: w,
     renderVisualPlaceholderComponent: D,
@@ -230,7 +230,7 @@ function F(e) {
   }).imageRecsEnabled, el = i.useMemo(() => null != $ && false !== $.indexOf("/") ? $.split("/") : ["unknown", "unknown"], [$]), ec = "IMAGE" === J && !b.uo.test(n.downloadUrl) && !((b.YG.test(n.downloadUrl) || b.FH.test(n.downloadUrl)) && true === n.srcIsAnimated), eu = false;
   if (H) {
     (null == q || null == X) && (eu = true);
-    let e = (0, T.Dc)({
+    let e = (0, S.Dc)({
       width: null != q ? q : 0,
       height: null != X ? X : 0,
       maxWidth: null != G ? G : A.mT,
@@ -368,7 +368,7 @@ function F(e) {
         useFullWidth: V
       });
     case "AUDIO":
-      return (0, r.jsx)(S, {
+      return (0, r.jsx)(T, {
         item: n,
         message: t,
         className: x,
@@ -408,7 +408,7 @@ function V(e, t, n) {
   if (true !== e.width && true !== e.height) {
     let {
       width: t
-    } = (0, T.Tj)({
+    } = (0, S.Tj)({
       width: e.width,
       height: e.height,
       maxWidth: 400,
@@ -440,7 +440,7 @@ let H = function(e) {
     width: E,
     height: b,
     type: y
-  } = n, O = s(n, (0, g.v)(a)), [v, I] = i.useState(null != O), T = (0, h.JO)(O), C = c === A.hV.MOSAIC, N = !C && (null != E && E < k || null != b && b < U), P = G(y), w = (0, S.R_)(y), x = u && null != O && (0, h.yf)(E, b), [M, B] = i.useState(false), Z = () => {
+  } = n, O = s(n, (0, g.v)(a)), [v, I] = i.useState(null != O), S = (0, h.JO)(O), C = c === A.hV.MOSAIC, N = !C && (null != E && E < k || null != b && b < U), P = G(y), w = (0, T.R_)(y), x = u && null != O && (0, h.yf)(E, b), [M, B] = i.useState(false), Z = () => {
     B(true)
   }, H = () => {
     B(false)
@@ -465,7 +465,7 @@ let H = function(e) {
       isVisualMediaType: w,
       onVideoControlsShow: Z,
       onVideoControlsHide: H,
-      forcePlaceholder: T && v
+      forcePlaceholder: S && v
     }))
   };
   return (0, r.jsxs)("div", {

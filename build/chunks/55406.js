@@ -75,7 +75,7 @@ let I = e => {
       }
     }
   },
-  T = e => _(d({}, r.baseRules), {
+  S = e => _(d({}, r.baseRules), {
     image: d({}, g, "function" == typeof r.customRules.image ? r.customRules.image(e) : r.customRules.image),
     link: d({}, m, "function" == typeof r.customRules.link ? r.customRules.link(e) : r.customRules.link),
     list: d({}, E, "function" == typeof r.customRules.list ? r.customRules.list(e) : r.customRules.list),
@@ -103,14 +103,14 @@ let I = e => {
     blockQuote: d({}, b, "function" == typeof r.customRules.blockQuote ? r.customRules.blockQuote(e) : r.customRules.blockQuote),
     paragraph: d({}, y, "function" == typeof r.customRules.paragraph ? r.customRules.paragraph(e) : r.customRules.paragraph)
   }),
-  S = e => ({
+  T = e => ({
     lheading: d(_(d({}, p), {
       parse: I({
         transformUpperCase: false
       })
     }), "function" == typeof r.customRules.lheading ? r.customRules.lheading(e) : r.customRules.lheading)
   }),
-  A = e => _(d({}, T(e)), {
+  A = e => _(d({}, S(e)), {
     newline: d({}, a().defaultRules.newline),
     text: l.ZP,
     list: o.Z,
@@ -118,11 +118,11 @@ let I = e => {
   });
 
 function C(e) {
-  return d({}, T(e))
+  return d({}, S(e))
 }
 let N = {
   getDefaultRules: C,
-  getSpecialRules: e => d({}, T(e), S(e)),
+  getSpecialRules: e => d({}, S(e), T(e)),
   getMessageRules: e => d({}, A(e))
 };
 

@@ -2,7 +2,7 @@
 /** chunk id: 987716, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  q: () => S
+  q: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -62,7 +62,7 @@ function v(e, t) {
 
 function I(e, t) {
   if (null == e) return {};
-  var n, r, i = T(e, t);
+  var n, r, i = S(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -70,14 +70,14 @@ function I(e, t) {
   return i
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let S = e => {
+let T = e => {
   let {
     isShopGift: t,
     className: n,
@@ -85,8 +85,8 @@ let S = e => {
   } = e, {
     giftRecipient: b,
     selectedGiftStyle: O,
-    setSelectedGiftStyle: T,
-    emojiConfetti: S,
+    setSelectedGiftStyle: S,
+    emojiConfetti: T,
     soundEffect: A,
     setEmojiConfetti: C,
     setSoundEffect: N
@@ -117,7 +117,7 @@ let S = e => {
           onSelect: B
         }), (0, r.jsx)(h.Z, {
           setEmojiConfetti: C,
-          emojiConfetti: null == S ? true : S
+          emojiConfetti: null == T ? true : T
         })]
       })]
     }), (0, r.jsx)("div", v(y({
@@ -133,7 +133,7 @@ let S = e => {
       children: null != U && !G && U.map((e, t) => (0, r.jsx)(m.m, {
         isSelected: O === e,
         giftStyle: e,
-        setSelectedGiftStyle: T,
+        setSelectedGiftStyle: S,
         ref: 0 === t ? w : null,
         onFocus: () => P(true),
         onBlur: () => P(false)

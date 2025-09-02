@@ -77,11 +77,11 @@ function U(e, t, n) {
     var r, i;
     let t = null != (r = e.attachments) ? r : [],
       n = null != (i = e.embeds) ? i : [],
-      a = t.filter(e => (0, A.SI)(S._.EXPLICIT, {
+      a = t.filter(e => (0, A.SI)(T._.EXPLICIT, {
         type: v.l.Attachment,
         media: e
       })),
-      o = n.filter(e => (0, A.SI)(S._.EXPLICIT, {
+      o = n.filter(e => (0, A.SI)(T._.EXPLICIT, {
         type: v.l.Embed,
         media: e
       }));
@@ -179,16 +179,16 @@ function V(e) {
       b = t[e.channel_id];
     b.numOfAttachments += h, b.numOfEmbeds += m, b.numOfAttachmentsPendingScan += g.length, b.numOfEmbedsPendingScan += E.length;
     let y = n[e.id];
-    y.numOfAttachments += h, y.numOfEmbeds += m, y.numOfExplicitAttachments = null != (d = null == (a = e.attachments) ? true : a.filter(e => (0, A.SI)(S._.EXPLICIT, {
+    y.numOfAttachments += h, y.numOfEmbeds += m, y.numOfExplicitAttachments = null != (d = null == (a = e.attachments) ? true : a.filter(e => (0, A.SI)(T._.EXPLICIT, {
       type: v.l.Attachment,
       media: e
-    })).length) ? d : 0, y.numOfExplicitEmbeds = null != (f = null == (o = e.embeds) ? true : o.filter(e => (0, A.SI)(S._.EXPLICIT, {
+    })).length) ? d : 0, y.numOfExplicitEmbeds = null != (f = null == (o = e.embeds) ? true : o.filter(e => (0, A.SI)(T._.EXPLICIT, {
       type: v.l.Embed,
       media: e
-    })).length) ? f : 0, y.numOfGoreAttachments = null != (_ = null == (s = e.attachments) ? true : s.filter(e => (0, A.SI)(S._.GORE, {
+    })).length) ? f : 0, y.numOfGoreAttachments = null != (_ = null == (s = e.attachments) ? true : s.filter(e => (0, A.SI)(T._.GORE, {
       type: v.l.Attachment,
       media: e
-    })).length) ? _ : 0, y.numOfGoreEmbeds = null != (p = null == (l = e.embeds) ? true : l.filter(e => (0, A.SI)(S._.GORE, {
+    })).length) ? _ : 0, y.numOfGoreEmbeds = null != (p = null == (l = e.embeds) ? true : l.filter(e => (0, A.SI)(T._.GORE, {
       type: v.l.Embed,
       media: e
     })).length) ? p : 0
@@ -310,7 +310,7 @@ function z(e) {
   } = e;
   if (null == s.channel_id || null == s.id || (null == (t = s.author) ? true : t.id) === _.default.getId() || null == s.embeds && null == s.attachments || (null == (n = s.embeds) ? true : n.length) === 0 && (null == (r = s.attachments) ? true : r.length) === 0) returnfalse;
   if (!(0, A.MD)(s)) {
-    let e = null != (o = null != (a = m.Z.getMessage(s.channel_id, s.id)) ? a : T.Z.getMessage(s.id, s.channel_id)) ? o : null == (i = f.Z.getMessage(s.channel_id, s.id)) ? true : i.message;
+    let e = null != (o = null != (a = m.Z.getMessage(s.channel_id, s.id)) ? a : S.Z.getMessage(s.id, s.channel_id)) ? o : null == (i = f.Z.getMessage(s.channel_id, s.id)) ? true : i.message;
     null == e || (0, A.MD)((0, u.wi)(e, s)) || k(e, I.Pq.UPDATE)
   }
   let l = g.Z.getChannelId(),

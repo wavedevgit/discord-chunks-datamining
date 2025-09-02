@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   NK: () => C,
-  R6: () => S,
-  ok: () => T,
+  R6: () => T,
+  ok: () => S,
   vN: () => A
 });
 var Chunk512722 = require("./512722.js"),
@@ -29,7 +29,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   if (!(0, _.WF)(e.id)) return void(0, f.V)();
   c.UI.dispatch(v.CkL.POPOUT_CLOSE);
   let r = !o().isEmpty(b.Z.getVoiceStatesForChannel(e.id));
@@ -53,7 +53,7 @@ function T(e, t, n) {
   }, 0)
 }
 
-function S(e, t, n) {
+function T(e, t, n) {
   if (i()(!e.isForumLikeChannel(), "cannot open thread creation sidebar in forums"), i()(!__OVERLAY__, "Cannot create threads in the overlay."), (0, u.yw)(v.rMx.THREAD_CREATION_STARTED, {
       location: n,
       channel_id: e.id,

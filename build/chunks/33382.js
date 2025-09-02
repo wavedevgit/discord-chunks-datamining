@@ -24,17 +24,17 @@ function a(e, t) {
     var O = null != h && null != p && p !== h,
       v = "+" === b || "*" === b,
       I = "?" === b || "*" === b,
-      T = n[2] || l,
-      S = g || E;
+      S = n[2] || l,
+      T = g || E;
     r.push({
       name: m || a++,
       prefix: h || "",
-      delimiter: T,
+      delimiter: S,
       optional: I,
       repeat: v,
       partial: O,
       asterisk: !!y,
-      pattern: S ? d(S) : y ? ".*" : "[^" + u(T) + "]+?"
+      pattern: T ? d(T) : y ? ".*" : "[^" + u(S) + "]+?"
     })
   }
   return o < e.length && (s += e.substr(o)), s && r.push(s), r

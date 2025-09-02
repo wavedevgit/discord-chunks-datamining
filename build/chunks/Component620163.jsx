@@ -593,7 +593,7 @@ let e3 = () => {
         badgeCount: C,
         newIndicator: (0, r.jsx)(s.IGR, {
           text: eq.intl.string(eq.t.y2b7CA),
-          color: T.Z.BG_BRAND
+          color: S.Z.BG_BRAND
         }),
         newIndicatorDismissibleContentTypes: [a.z.FAMILY_CENTER_NEW_BADGE],
         url: eW.Z5c.SETTINGS("family-center")
@@ -796,7 +796,7 @@ let e3 = () => {
         parent: eH.s6.APPEARANCE,
         newIndicator: (0, r.jsx)(s.IGR, {
           text: eq.intl.string(eq.t.y2b7CA),
-          color: T.Z.BG_BRAND
+          color: S.Z.BG_BRAND
         })
       },
       [eH.s6.APPEARANCE_SCALING_SPACING]: {
@@ -1341,7 +1341,7 @@ let e3 = () => {
         searchableTitles: [eq.intl.string(eq.t.HcoRu7)],
         label: eq.intl.string(eq.t.HcoRu7),
         ariaLabel: eq.intl.string(eq.t.HcoRu7),
-        element: eS.Z,
+        element: eT.Z,
         url: eW.Z5c.SETTINGS("notifications")
       },
       [eH.s6.NOTIFICATIONS_ENABLE_DESKTOP]: {
@@ -1487,7 +1487,7 @@ let e3 = () => {
         section: eW.oAB.LOCALE,
         searchableTitles: [eq.intl.string(eq.t.IHMsPj)],
         label: eq.intl.string(eq.t.IHMsPj),
-        element: eT.Z,
+        element: eS.Z,
         url: eW.Z5c.SETTINGS("language")
       },
       [eH.s6.WINDOW_SETTINGS]: {
@@ -1909,7 +1909,7 @@ let e3 = () => {
         section: eW.oAB.DISMISSIBLE_CONTENT_OPTIONS,
         searchableTitles: ["Dismissible Contents"],
         label: "Dismissible Contents",
-        element: S.Z,
+        element: T.Z,
         predicate: () => H.Z.isDeveloper
       },
       [eH.s6.PAYMENT_FLOW_MODALS]: {

@@ -32,10 +32,10 @@ function E(e) {
     placeholder: E,
     currentBio: b,
     disabled: y = false
-  } = e, [O, v] = i.useState(null != u ? u : b), [I, T] = i.useState((0, s.JM)(O)), S = i.useRef(false);
+  } = e, [O, v] = i.useState(null != u ? u : b), [I, S] = i.useState((0, s.JM)(O)), T = i.useRef(false);
 
   function A(e, t, n) {
-    t !== O && (v(t), T(n), c(t))
+    t !== O && (v(t), S(n), c(t))
   }
 
   function C() {
@@ -49,7 +49,7 @@ function E(e) {
   return i.useEffect(() => {
     if (true === u) {
       let e = (0, s.JM)(b);
-      v(b), T(e)
+      v(b), S(e)
     }
   }, [u, b]), (0, r.jsxs)(d.Z, {
     title: t,
@@ -70,12 +70,12 @@ function E(e) {
       richValue: I,
       type: o.Ie.PROFILE_BIO_INPUT,
       onBlur: () => {
-        S.current = false
+        T.current = false
       },
       onFocus: () => {
-        S.current = true
+        T.current = true
       },
-      focused: S.current,
+      focused: T.current,
       onSubmit: C
     }), (0, r.jsx)(a.nn4, {
       id: g,

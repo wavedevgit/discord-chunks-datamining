@@ -72,7 +72,7 @@ let C = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
       details: L,
       activity: j,
       embeddedActivity: M
-    } = (0, T.n)(n), {
+    } = (0, S.n)(n), {
       primaryColor: k,
       secondaryColor: U
     } = (0, O.Z)(null == D ? true : D.src), G = (0, a.e7)([p.default], () => p.default.locale), {
@@ -125,7 +125,7 @@ let C = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
         onClickSubtitle: w ? true : H,
         onClickThumbnail: w ? true : H
       }),
-      q = (0, l.Z)(j, S.xjy.JOIN) || (0, c.Z)(j),
+      q = (0, l.Z)(j, T.xjy.JOIN) || (0, c.Z)(j),
       X = q ? (0, r.jsx)(u.Z, {
         embeddedActivity: M,
         activity: j,

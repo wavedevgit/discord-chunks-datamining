@@ -153,10 +153,10 @@ function ec(e) {
     eO = G.Sb.useSetting(),
     ev = (0, q.I)(eh),
     eI = (0, W.g)(n),
-    eT = (0, g.Z)({
+    eS = (0, g.Z)({
       analyticsLocations: ed
     }),
-    eS = (0, H.I5)(t),
+    eT = (0, H.I5)(t),
     eA = (0, _.p)({
       location: "UserProfileAccountPopout"
     }),
@@ -205,7 +205,7 @@ function ec(e) {
               user: t,
               displayProfile: eu,
               themeType: $.l.POPOUT
-            }), (0, r.jsx)(T.Z, {
+            }), (0, r.jsx)(S.Z, {
               user: t,
               displayProfile: eu,
               themeType: $.l.POPOUT,
@@ -228,7 +228,7 @@ function ec(e) {
               nickname: V.ZP.getName(null, null, t),
               onOpenProfile: ec ? true : ex,
               pronouns: null == eu ? true : eu.pronouns,
-              tags: (0, r.jsx)(S.Z, {
+              tags: (0, r.jsx)(T.Z, {
                 displayProfile: eu,
                 themeType: $.l.POPOUT,
                 onClose: n,
@@ -256,7 +256,7 @@ function ec(e) {
                 })
               }
             }), (0, r.jsx)(C.Z, {
-              isPremiumUser: eS,
+              isPremiumUser: eT,
               onInteraction: n
             }), eC ? (0, r.jsx)(w.Z, {
               user: t,
@@ -279,7 +279,7 @@ function ec(e) {
                     label: ee.intl.string(ee.t.s5vZlZ),
                     icon: l.vdY,
                     onClick: () => {
-                      eT(), n()
+                      eS(), n()
                     }
                   }), (0, r.jsx)(N.Z, {
                     className: et.menuDivider

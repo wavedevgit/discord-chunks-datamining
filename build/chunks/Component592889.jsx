@@ -52,23 +52,23 @@ function A(e) {
   }
   return (0, r.jsxs)(f.Y0X, {
     transitionState: i,
-    "aria-label": T.intl.string(T.t["E9kB4+"]),
+    "aria-label": S.intl.string(S.t["E9kB4+"]),
     parentComponent: "SubscriptionRenewalMutationNotice",
     children: [(0, r.jsxs)(f.xBx, {
       justify: g.Z.Justify.BETWEEN,
       separator: false,
       children: [(0, r.jsx)(f.vwX, {
         tag: f.RB0.H4,
-        children: T.intl.string(T.t["E9kB4+"])
+        children: S.intl.string(S.t["E9kB4+"])
       }), (0, r.jsx)(f.olH, {
         onClick: a
       })]
     }), (0, r.jsx)(f.hzk, {
-      className: S.modalBody,
-      children: (0, b.Q0)(t.planId) ? T.intl.format(T.t.GMp54O, {
+      className: T.modalBody,
+      children: (0, b.Q0)(t.planId) ? S.intl.format(S.t.GMp54O, {
         downgradedPlan: O.ZP.getDisplayName(n.planId),
         existingRate: C
-      }) : T.intl.format(T.t["vx/NZ2"], {
+      }) : S.intl.format(S.t["vx/NZ2"], {
         existingPlan: O.ZP.getDisplayName(t.planId),
         downgradedPlan: O.ZP.getDisplayName(n.planId),
         existingRate: C
@@ -76,13 +76,13 @@ function A(e) {
     }), (0, r.jsxs)(f.mzw, {
       children: [(0, r.jsx)(f.zxk, {
         variant: "primary",
-        text: T.intl.string(T.t.frE8KC),
+        text: S.intl.string(S.t.frE8KC),
         onClick: N
       }), (0, r.jsx)(d.zx, {
         look: d.zx.Looks.LINK,
         color: (0, u.ap)(s) ? d.zx.Colors.PRIMARY : d.zx.Colors.WHITE,
         onClick: a,
-        children: T.intl.string(T.t.oEAioK)
+        children: S.intl.string(S.t.oEAioK)
       })]
     })]
   })
@@ -96,16 +96,16 @@ function C(e) {
     analyticsLocation: s
   } = e, [l, c] = i.useState(false), u = (0, m.Z)(), d = t.currentPeriodEnd;
   return u.fractionalState === I.a$.FP_SUB_PAUSED && (d = u.endsAt.toDate()), (0, r.jsxs)("div", {
-    className: o()(S.root, a),
+    className: o()(T.root, a),
     children: [(0, r.jsx)(f.Mgn, {
       size: "custom",
       width: 20,
       height: 20,
       color: "currentColor",
-      className: S.infoIcon
+      className: T.infoIcon
     }), (0, r.jsx)("div", {
-      className: S.text,
-      children: T.intl.format(T.t.ar1cPj, {
+      className: T.text,
+      children: S.intl.format(S.t.ar1cPj, {
         planName: t.hasExternalPlanChange ? (0, O.zL)(n) : O.ZP.getDisplayName(n.planId),
         date: d
       })
@@ -113,8 +113,8 @@ function C(e) {
       onClick: e => {
         c(true), e.preventDefault()
       },
-      className: S.cancelLink,
-      children: T.intl.string(T.t["ETE/oK"])
+      className: T.cancelLink,
+      children: S.intl.string(S.t["ETE/oK"])
     }), l ? (0, r.jsx)(f.u_l, {
       renderModal: e => {
         let {

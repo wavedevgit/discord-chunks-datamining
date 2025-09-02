@@ -119,12 +119,12 @@ function M(e) {
     guildId: a
   }), Z = t.id === n.id, F = (0, s.e7)([h.Z, p.Z], () => {
     let e = Z ? h.Z.getStatus() : p.Z.getStatus(t.id, a);
-    return e === S.Sk.OFFLINE || e === S.Sk.INVISIBLE
+    return e === T.Sk.OFFLINE || e === T.Sk.INVISIBLE
   }), {
     voiceActivityStatusEnabled: V
   } = (0, d.U)({
     location: "UserProfileStackedActivity"
-  }), H = V && null == U && null == B && null != G, Y = (0, y.yi)(), W = (null == Y ? true : Y.interactionSource) === T.n_.ACTIVITY, K = i.useRef(null), z = i.useRef(null), q = i.useRef(null), X = i.useRef(null), [Q, J] = i.useReducer(L, j), {
+  }), H = V && null == U && null == B && null != G, Y = (0, y.yi)(), W = (null == Y ? true : Y.interactionSource) === S.n_.ACTIVITY, K = i.useRef(null), z = i.useRef(null), q = i.useRef(null), X = i.useRef(null), [Q, J] = i.useReducer(L, j), {
     height: $,
     animationPhase: ee
   } = Q, et = "awaitingInput" !== ee, en = "animating" === ee || "done" === ee, er = [], ei = {
@@ -152,7 +152,7 @@ function M(e) {
         action: "PRESS_VIEW_PROFILE",
         analyticsLocations: w
       }), m({
-        section: T.oh.ACTIVITY
+        section: S.oh.ACTIVITY
       })
     },
     children: (0, r.jsx)(c.Text, {

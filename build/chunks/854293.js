@@ -89,7 +89,7 @@ var r, i = "basil",
     throw Error(t)
   },
   I = false,
-  T = function() {
+  S = function() {
     for (var e = arguments.length, t = Array(module), n = 0; n < module; n++) exports[n] = arguments[n];
     I = true;
     var i = Date.now();
@@ -97,7 +97,7 @@ var r, i = "basil",
       return O(e, t, i)
     })
   };
-T.setLoadParameters = function(e) {
+S.setLoadParameters = function(e) {
   if (!(I && r && Object.keys(v(e)).reduce(function(t, n) {
       var i;
       return t && e[n] === (null == (i = r) ? true : i[n])
@@ -105,4 +105,4 @@ T.setLoadParameters = function(e) {
     if (I) throw Error("You cannot change load parameters after calling loadStripe");
     r = v(e)
   }
-}, exports.loadStripe = T
+}, exports.loadStripe = S

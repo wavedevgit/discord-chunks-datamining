@@ -32,13 +32,13 @@ let f = 5,
   O = null,
   v = [],
   I = false,
-  T = 0,
-  S = false,
+  S = 0,
+  T = false,
   A = false,
   C = null;
 
 function N() {
-  _ = null, p = new Set, m = false, g = new Set, E = new Set, b = new Map, y = 0, O = null, v = [], I = false, T = 0, S = false, A = false, C = null, h = new Map
+  _ = null, p = new Set, m = false, g = new Set, E = new Set, b = new Map, y = 0, O = null, v = [], I = false, S = 0, T = false, A = false, C = null, h = new Map
 }
 let R = () => true;
 
@@ -55,14 +55,14 @@ function w(e) {
     recipient_status: i,
     has_eligible_friends: a
   } = e;
-  S = true === c.Z.getCurrentConfig({
+  T = true === c.Z.getCurrentConfig({
     location: "handleReferralsRemainingFetchSuccess"
   }).enabled || null == r && a, A = a, m = false, _ = t, p = new Set(n), C = r, h = i
 }
 
 function D(e) {
   let {} = e;
-  S = false, A = false, C = null, m = false, y += 1, O = Date.now() + 1e3 * Math.pow(2, y)
+  T = false, A = false, C = null, m = false, y += 1, O = Date.now() + 1e3 * Math.pow(2, y)
 }
 
 function x(e) {
@@ -133,7 +133,7 @@ function V(e) {
     users: t,
     nextIndex: n
   } = e;
-  I = false, v = t, T = n
+  I = false, v = t, S = n
 }
 
 function H() {
@@ -168,10 +168,10 @@ class Y extends(r = Chunk442837.ZP.Store) {
     return I
   }
   getNextIndexOfEligibleUsers() {
-    return T
+    return S
   }
   getIsEligibleToSendReferrals() {
-    return S
+    return T
   }
   getHasEligibleFriends() {
     return A

@@ -72,7 +72,7 @@ let b = {
     let v = p({}, O, (0, l.zH)(b)),
       I = (0, l.s5)(t);
     null != I && (0, l.jW)(v, I);
-    let T = d.Z.create({
+    let S = d.Z.create({
       id: (0, l.Tm)(t),
       searchContext: t,
       searchQuery: v,
@@ -86,11 +86,11 @@ let b = {
       searchQueryString: r,
       searchQuery: v
     });
-    let S = n.map(e => u(e));
+    let T = n.map(e => u(e));
     return a.Z.dispatch({
       type: "SEARCH_MESSAGES_START",
-      ids: S
-    }), T.fetch(e => {
+      ids: T
+    }), S.fetch(e => {
       let {
         body: n
       } = e, r = Object.entries(n.tabs);
@@ -120,12 +120,12 @@ let b = {
     }, () => {
       a.Z.dispatch({
         type: "SEARCH_MESSAGES_INDEXING",
-        ids: S
+        ids: T
       })
     }, e => {
       a.Z.dispatch({
         type: "SEARCH_MESSAGES_FAILURE",
-        ids: S,
+        ids: T,
         error: e
       })
     }), true

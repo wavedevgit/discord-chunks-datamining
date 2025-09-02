@@ -2,7 +2,7 @@
 /** chunk id: 415104, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -74,7 +74,7 @@ function I(e) {
   }
 }
 
-function T(e) {
+function S(e) {
   var t, n;
   let {
     quest: a,
@@ -84,8 +84,8 @@ function T(e) {
     rowIndex: b,
     impressionRef: y,
     sourceQuestContent: O
-  } = e, [v, T] = i.useState(false), [S, A] = i.useState([]), C = (0, c.qb)(a), N = i.useMemo(() => (0, l.q8)(a), [a]), R = (0, s._F)(), P = i.useCallback(() => {
-    T(true), R({
+  } = e, [v, S] = i.useState(false), [T, A] = i.useState([]), C = (0, c.qb)(a), N = i.useMemo(() => (0, l.q8)(a), [a]), R = (0, s._F)(), P = i.useCallback(() => {
+    S(true), R({
       questId: a.id,
       event: g.rMx.QUEST_HOVER,
       properties: {
@@ -96,7 +96,7 @@ function T(e) {
       sourceQuestContent: O
     }), N && (0, f.loadVideoQuestModal)()
   }, [R, a.id, d, N, O, _]), w = i.useCallback(() => {
-    T(false), R({
+    S(false), R({
       questId: a.id,
       event: g.rMx.QUEST_HOVER_OFF,
       properties: {
@@ -123,7 +123,7 @@ function T(e) {
     children: [(0, r.jsx)(h.Z, {
       quest: a,
       isHovering: v,
-      errorHints: S,
+      errorHints: T,
       warningHints: C,
       isVisibleInViewport: L,
       sourceQuestContent: O
@@ -140,7 +140,7 @@ function T(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   return (0, r.jsx)(d.A, {
     questOrQuests: e.quest,
     questContent: e.questContent,
@@ -148,7 +148,7 @@ function S(e) {
     questContentRowIndex: e.rowIndex,
     trackGuildAndChannelMetadata: e.questContent === u.jn.QUESTS_EMBED,
     sourceQuestContent: e.sourceQuestContent,
-    children: t => (0, r.jsx)(T, v(y({}, e), {
+    children: t => (0, r.jsx)(S, v(y({}, e), {
       impressionRef: t
     }))
   })

@@ -95,17 +95,17 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
         "aria-setsize": D,
         "aria-posinset": a,
         children: (0, r.jsx)(l.P3F, {
-          "aria-label": T.intl.string(T.t.y3LQCA),
-          className: o()(S.stickerCategory, S.stickerCategoryGeneric, {
-            [S.stickerCategoryGenericDisabled]: P && !g,
-            [S.stickerCategoryGenericSelected]: !m && g && 0 === t,
-            [S.stickerCategoryGenericLast]: !N
+          "aria-label": S.intl.string(S.t.y3LQCA),
+          className: o()(T.stickerCategory, T.stickerCategoryGeneric, {
+            [T.stickerCategoryGenericDisabled]: P && !g,
+            [T.stickerCategoryGenericSelected]: !m && g && 0 === t,
+            [T.stickerCategoryGenericLast]: !N
           }),
           onClick: s,
           children: (0, r.jsx)(l.r7p, {
             size: "custom",
             color: "currentColor",
-            className: S.stickerCategoryGenericIcon,
+            className: T.stickerCategoryGenericIcon,
             height: x,
             width: x
           })
@@ -116,16 +116,16 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
         "aria-setsize": D,
         "aria-posinset": a,
         children: (0, r.jsx)(l.P3F, {
-          "aria-label": T.intl.string(T.t.RxAmVF),
-          className: o()(S.stickerCategory, S.stickerCategoryGeneric, S.stickerCategoryGenericLast, {
-            [S.stickerCategoryGenericDisabled]: P && !N,
-            [S.stickerCategoryGenericSelected]: !m && N && t === A
+          "aria-label": S.intl.string(S.t.RxAmVF),
+          className: o()(T.stickerCategory, T.stickerCategoryGeneric, T.stickerCategoryGenericLast, {
+            [T.stickerCategoryGenericDisabled]: P && !N,
+            [T.stickerCategoryGenericSelected]: !m && N && t === A
           }),
           onClick: s,
           children: (0, r.jsx)(l.T39, {
             size: "custom",
             color: "currentColor",
-            className: S.stickerCategoryGenericIcon,
+            className: T.stickerCategoryGenericIcon,
             height: x,
             width: x
           })
@@ -156,16 +156,16 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
         children: [(0, r.jsx)(l.ua7, {
           position: "right",
           text: G,
-          tooltipContentClassName: S.__invalid_tooltip,
+          tooltipContentClassName: T.__invalid_tooltip,
           children: e => (0, r.jsx)("div", {
             role: "listitem",
             "aria-setsize": D,
             "aria-posinset": a,
             children: (0, r.jsx)(l.P3F, R(C({}, e), {
               "aria-label": G,
-              className: o()(S.stickerCategory, {
-                [S.firstPartyCategory]: U,
-                [S.firstPartyCategorySelected]: !m && L && U
+              className: o()(T.stickerCategory, {
+                [T.firstPartyCategory]: U,
+                [T.firstPartyCategorySelected]: !m && L && U
               }),
               onClick: () => {
                 j.type === b.Ih.PACK && h.default.track(v.rMx.EXPRESSION_PICKER_CATEGORY_SELECTED, {
@@ -179,7 +179,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
             }))
           })
         }), k ? (0, r.jsx)("hr", {
-          className: S.guildCategorySeparator
+          className: T.guildCategorySeparator
         }, "separator") : null]
       }, j.id)
     }, [t, _, m, n]), A = i.useCallback((e, t) => t ? k : 0, []);
@@ -237,7 +237,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
       e(p), null == (t = a.current) || t.scrollTo(h)
     }, [p, h]);
     return (0, r.jsx)(_.Z, {
-      className: S.categoryList,
+      className: T.categoryList,
       categoryListRef: a,
       expressionsListRef: t,
       store: d.ZN,
@@ -248,8 +248,8 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
       categories: f,
       categoryHeight: O,
       children: e => E && s && (0, r.jsx)(l.P3F, {
-        className: o()(S.standardStickerShortcut, {
-          [S.invisibleShortcut]: !s
+        className: o()(T.standardStickerShortcut, {
+          [T.invisibleShortcut]: !s
         }),
         onClick: () => I(e),
         children: (0, r.jsx)(l.SlE, {

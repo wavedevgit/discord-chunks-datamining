@@ -102,7 +102,7 @@ function K(e) {
         children: (0, r.jsx)(d.P, {
           size: "sm",
           onClick: () => {
-            S.default.track(L.rMx.CHAT_WALLPAPER_PICKER_CANCEL_CLICKED, {
+            T.default.track(L.rMx.CHAT_WALLPAPER_PICKER_CANCEL_CLICKED, {
               cta_location: "coachmark_header"
             }), t()
           }
@@ -144,7 +144,7 @@ function z(e) {
       children: (0, r.jsx)(d.P, {
         size: "sm",
         onClick: () => {
-          S.default.track(L.rMx.CHAT_WALLPAPER_PICKER_CANCEL_CLICKED, {
+          T.default.track(L.rMx.CHAT_WALLPAPER_PICKER_CANCEL_CLICKED, {
             cta_location: "header"
           }), n()
         }
@@ -299,7 +299,7 @@ function J(e) {
       type: f.M0.INVERTED,
       value: i,
       onChange: (e, t) => {
-        S.default.track(L.rMx.CHAT_WALLPAPER_PICKER_BLUR_TOGGLED, {
+        T.default.track(L.rMx.CHAT_WALLPAPER_PICKER_BLUR_TOGGLED, {
           selected: t
         }), a(t)
       },
@@ -313,7 +313,7 @@ function J(e) {
           variant: "secondary",
           text: k.intl.string(k.t["ETE/oK"]),
           onClick: () => {
-            S.default.track(L.rMx.CHAT_WALLPAPER_PICKER_CANCEL_CLICKED, {
+            T.default.track(L.rMx.CHAT_WALLPAPER_PICKER_CANCEL_CLICKED, {
               cta_location: "footer"
             }), o()
           },
@@ -400,8 +400,8 @@ let ee = function(e) {
   });
   let ee = i.useCallback(() => {
       if (null == c || null == g || true === g.wallpaperId) return;
-      let e = T.Z.getChannel(c);
-      S.default.track(L.rMx.CHAT_WALLPAPER_PICKER_APPLY_CLICKED, {
+      let e = S.Z.getChannel(c);
+      T.default.track(L.rMx.CHAT_WALLPAPER_PICKER_APPLY_CLICKED, {
         wallpaper_id: g.wallpaperId,
         is_blur_enabled: b,
         channel_id: c,
@@ -421,7 +421,7 @@ let ee = function(e) {
       let t = D[e];
       if (null == t) return;
       let n = t.find(e => e.isBlurred === b);
-      null != n && (S.default.track(L.rMx.CHAT_WALLPAPER_WALLPAPER_OPTION_SELECTED, {
+      null != n && (T.default.track(L.rMx.CHAT_WALLPAPER_WALLPAPER_OPTION_SELECTED, {
         wallpaper_id: n.id,
         is_blurred: n.isBlurred
       }), f(n.id))
@@ -462,7 +462,7 @@ let ee = function(e) {
       children: [(0, r.jsx)(Q, {
         isSelected: null == g || null === g.wallpaperId,
         onSelect: () => {
-          S.default.track(L.rMx.CHAT_WALLPAPER_WALLPAPER_OPTION_SELECTED, {
+          T.default.track(L.rMx.CHAT_WALLPAPER_WALLPAPER_OPTION_SELECTED, {
             wallpaper_id: null,
             is_blurred: false
           }), f(null)

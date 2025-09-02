@@ -13,7 +13,7 @@ require.d(exports, {
   C1: () => td,
   C9: () => tu,
   Dr: () => eP,
-  F9: () => tT,
+  F9: () => tS,
   FI: () => tb,
   FX: () => em,
   Fs: () => tf,
@@ -48,7 +48,7 @@ require.d(exports, {
   _j: () => tc,
   _p: () => th,
   b7: () => eQ,
-  bA: () => tS,
+  bA: () => tT,
   f$: () => tp,
   f2: () => eU,
   fY: () => ti,
@@ -71,12 +71,12 @@ require.d(exports, {
   uN: () => tR,
   vB: () => tL,
   vQ: () => eO,
-  vR: () => eT,
+  vR: () => eS,
   xN: () => eb,
   xn: () => eh,
   yH: () => t_,
   yI: () => ei,
-  ys: () => eS,
+  ys: () => eT,
   zE: () => ep,
   zK: () => ej,
   zi: () => z
@@ -488,11 +488,11 @@ function eI(e) {
   return null == t ? true : t.orbQuantity
 }
 
-function eT(e, t) {
+function eS(e, t) {
   return e.targetedContent.includes(t)
 }
 
-function eS(e, t) {
+function eT(e, t) {
   v.Z.captureException(e, U(M({}, t), {
     tags: U(M({}, null == t ? true : t.tags), {
       app_context: "quests"
@@ -602,7 +602,7 @@ function eB(e) {
   return (null == e ? true : e.type) === o.X.PLAY_ON_DESKTOP
 }
 let eZ = (e, t) => e > 0 ? (0, i.floor)(Math.min(t / e, 1), 4) : 0,
-  eF = e => tt(e) || S.Z.isProgressingOnDesktop(e.id),
+  eF = e => tt(e) || T.Z.isProgressingOnDesktop(e.id),
   eV = (e, t) => {
     var n, r, a, o;
     let s = null == (o = e.userStatus) || null == (a = o.progress) || null == (r = a[t.type]) || null == (n = r.heartbeat) ? true : n.lastBeatAt;
@@ -615,7 +615,7 @@ let eZ = (e, t) => e > 0 ? (0, i.floor)(Math.min(t / e, 1), 4) : 0,
     let s = null == (r = e.userStatus) || null == (n = r.progress) ? true : n[t.type],
       l = null != (o = null != (a = null == s ? true : s.value) ? a : null == (i = e.userStatus) ? true : i.streamProgressSeconds) ? o : 0;
     if (e8(e)) {
-      let n = S.Z.getOptimisticProgress(e.id, t.type);
+      let n = T.Z.getOptimisticProgress(e.id, t.type);
       return null == n || n < l ? l : n
     }
     return l + eV(e, t)
@@ -931,7 +931,7 @@ function tE(e) {
 
 function tb(e, t) {
   var n, r;
-  z(e) || (null == (n = e.userStatus) ? true : n.enrolledAt) == null || (null == (r = e.userStatus) ? true : r.completedAt) != null || (0, T.cT)(e.id, t)
+  z(e) || (null == (n = e.userStatus) ? true : n.enrolledAt) == null || (null == (r = e.userStatus) ? true : r.completedAt) != null || (0, S.cT)(e.id, t)
 }
 
 function ty(e) {
@@ -952,13 +952,13 @@ function tI(e) {
   let t = e.assets.video;
   return null == t || null == t.width || null == t.height ? tv : t.width > t.height ? "landscape" : "portrait"
 }
-let tT = e => e.percentComplete > 0 ? L.intl.formatToPlainString(L.t["c59/Tk"], {
+let tS = e => e.percentComplete > 0 ? L.intl.formatToPlainString(L.t["c59/Tk"], {
   remainTime: e2(e)
 }) : L.intl.formatToPlainString(L.t.GNsKiY, {
   remainTime: e2(e)
 });
 
-function tS(e, t) {
+function tT(e, t) {
   return e <= 0 || t <= 0 ? 0 : e >= t ? 1 : Math.min(1, Math.round(e / t * 100) / 100)
 }
 
@@ -973,7 +973,7 @@ function tC(e, t) {
   let {
     quest: r,
     adDecisionData: i
-  } = null != (n = S.Z.questToDeliverForPlacement.get(ty(t))) ? n : {};
+  } = null != (n = T.Z.questToDeliverForPlacement.get(ty(t))) ? n : {};
   return null != i && (null == r ? true : r.id) === e ? i : w.Jp
 }
 
@@ -981,7 +981,7 @@ function tN(e) {
   var t;
   let {
     metadataRaw: n
-  } = null != (t = S.Z.questToDeliverForPlacement.get(ty(e))) ? t : {};
+  } = null != (t = T.Z.questToDeliverForPlacement.get(ty(e))) ? t : {};
   return n
 }
 
@@ -989,7 +989,7 @@ function tR(e) {
   var t;
   let {
     adContext: n
-  } = null != (t = S.Z.questToDeliverForPlacement.get(ty(e))) ? t : {};
+  } = null != (t = T.Z.questToDeliverForPlacement.get(ty(e))) ? t : {};
   return n
 }
 
@@ -1023,9 +1023,9 @@ function tx(e) {
     videoSessionId: a
   } = e, o = C.ZP.getState().getVideoProgress(r);
   if (null == o) return;
-  let s = S.Z.getQuest(r);
+  let s = T.Z.getQuest(r);
   null != s && (null == (t = s.userStatus) ? true : t.enrolledAt) != null && (null == (n = s.userStatus) ? true : n.completedAt) == null && tb(s, o.maxTimestampSec);
-  let l = tS(o.maxTimestampSec, o.duration);
+  let l = tT(o.maxTimestampSec, o.duration);
   (0, I.dA)({
     questId: r,
     event: D.rMx.QUEST_VIDEO_PROGRESSED,

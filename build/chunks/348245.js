@@ -55,7 +55,7 @@ function w(e) {
   let d = b.Z.getChannel(n);
   if ((null == d ? true : d.type) === A.d4z.GUILD_STORE || (null == d ? true : d.type) != null && A.TPd.GUILD_THREADS_ONLY.has(d.type)) return;
   let p = f.Z.getOrCreate(n);
-  p.some(S.k5) && (P.log("Found expired attachment link, clearing messages"), f.Z.clear(n), p = f.Z.getOrCreate(n)), null != p.jumpTargetId && null == r && (p = p.mutate({
+  p.some(T.k5) && (P.log("Found expired attachment link, clearing messages"), f.Z.clear(n), p = f.Z.getOrCreate(n)), null != p.jumpTargetId && null == r && (p = p.mutate({
     jumpTargetId: null,
     jumped: false,
     jumpType: u.SR.ANIMATED
@@ -285,7 +285,7 @@ function K(e) {
   } = e;
   if (a) return;
   let o = null != (t = W[n]) ? t : 0;
-  if (Date.now() - o < 10 * T.Z.Millis.SECOND) return;
+  if (Date.now() - o < 10 * S.Z.Millis.SECOND) return;
   W[n] = Date.now();
   let s = v.Z.getChannelId(),
     l = E.ZP.getCurrentSidebarChannelId(s),

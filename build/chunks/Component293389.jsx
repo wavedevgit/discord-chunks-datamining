@@ -138,7 +138,7 @@ function B(e) {
     isSubgame: g = false,
     parentGame: v
   } = e, I = (0, s.cj)([p.ZP, b.Z, y.Z], () => (0, p.FZ)(t, p.ZP, b.Z, y.Z)), {
-    canToggleDetection: T,
+    canToggleDetection: S,
     isCurrentGameDetectionEnabled: N
   } = (0, s.cj)([p.ZP], () => ({
     canToggleDetection: null == v || p.ZP.isDetectionEnabled(v),
@@ -201,7 +201,7 @@ function B(e) {
   function K() {
     if (w) return;
     let e = null != I.id ? b.Z.getDetectableGame(I.id) : null;
-    O.default.track(S.rMx.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
+    O.default.track(T.rMx.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
       application_id: null == e ? true : e.id,
       game_name: (0, E.le)(I) ? I.gameName : I.name
     }), (0, u.showToast)((0, u.createToast)(A.intl.formatToPlainString(A.t["6klMOj"], {
@@ -303,7 +303,7 @@ function B(e) {
   function Q() {
     let {
       detectable: e
-    } = I, t = e && T ? (0, r.jsx)(u.tEF, {
+    } = I, t = e && S ? (0, r.jsx)(u.tEF, {
       size: "md",
       color: "currentColor",
       className: C.toggleIconOn,
@@ -311,7 +311,7 @@ function B(e) {
     }) : (0, r.jsx)(u.kZF, {
       size: "md",
       color: "currentColor",
-      className: T ? C.toggleIconOff : C.toggleIconInactive,
+      className: S ? C.toggleIconOff : C.toggleIconInactive,
       colorClass: C.fill
     });
     return (0, r.jsx)("div", {
@@ -323,7 +323,7 @@ function B(e) {
             onMouseEnter: n,
             onMouseLeave: i
           } = e;
-          return T ? (0, r.jsx)(u.P3F, {
+          return S ? (0, r.jsx)(u.P3F, {
             "aria-label": A.intl.string(A.t.QmitzM),
             className: C.toggleIcon,
             onClick: W,

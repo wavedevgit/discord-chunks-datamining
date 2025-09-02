@@ -82,7 +82,7 @@ let G = () => (0, Chunk951288.jsx)("div", {
       markAsDismissed: o
     } = e, {
       analyticsLocations: s
-    } = (0, E.ZP)(g.Z.CLIENT_THEMES_EDITOR), [u, f] = (0, l.Wu)([S.default, N.Z], () => [N.Z.gradientPreset, C.ZP.isPremium(S.default.getCurrentUser())]), p = (0, O.N)(), {
+    } = (0, E.ZP)(g.Z.CLIENT_THEMES_EDITOR), [u, f] = (0, l.Wu)([T.default, N.Z], () => [N.Z.gradientPreset, C.ZP.isPremium(T.default.getCurrentUser())]), p = (0, O.N)(), {
       v2EditorEnabled: h
     } = R.Mc.useExperiment({
       location: "ClientThemesEditor"

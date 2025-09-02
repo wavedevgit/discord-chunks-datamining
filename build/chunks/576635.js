@@ -23,15 +23,15 @@ function f(e) {
     pendingAvatarSrc: m,
     isPreview: g,
     forceUserTheme: E
-  } = e, b = (0, o.ZP)(), y = (0, i.e7)([s.Z], () => s.Z.syncProfileThemeWithUserTheme), O = null != m ? m : null == _ ? true : _.getAvatarURL(null == p ? true : p.guildId, 80), v = (0, c.Sl)(d.Ilk.PRIMARY_530).hex, [I, T] = (0, l.Cf)(O, v, false);
+  } = e, b = (0, o.ZP)(), y = (0, i.e7)([s.Z], () => s.Z.syncProfileThemeWithUserTheme), O = null != m ? m : null == _ ? true : _.getAvatarURL(null == p ? true : p.guildId, 80), v = (0, c.Sl)(d.Ilk.PRIMARY_530).hex, [I, S] = (0, l.Cf)(O, v, false);
   if (!(null == p ? true : p.canEditThemes) && !g) return {
     theme: b,
     primaryColor: null,
     secondaryColor: null
   };
-  let S = null == p ? true : p.getPreviewThemeColors(h),
-    A = null != (t = null == S ? true : S[0]) ? t : (0, r._i)(I),
-    C = null != (n = null == S ? true : S[1]) ? n : (0, r._i)(T),
+  let T = null == p ? true : p.getPreviewThemeColors(h),
+    A = null != (t = null == T ? true : T[0]) ? t : (0, r._i)(I),
+    C = null != (n = null == T ? true : T[1]) ? n : (0, r._i)(S),
     N = y || E ? b : null != (f = (0, u.V3)(A)) ? f : b;
   return N === d.BRd.DARK && (0, a.wj)(b) ? N = b : N === d.BRd.DARK && (0, a.ap)(b) && (N = d.BRd.DARKER), {
     theme: N,

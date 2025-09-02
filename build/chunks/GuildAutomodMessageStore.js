@@ -54,14 +54,14 @@ function I(e) {
   return b(t, n), true
 }
 
-function T(e) {
+function S(e) {
   let {
     messageId: t
   } = e;
   return O(t), true
 }
 
-function S(e) {
+function T(e) {
   let {
     response: t
   } = e;
@@ -155,8 +155,8 @@ let w = new P(Chunk570140.Z, {
   MESSAGE_CREATE: N,
   MESSAGE_SEND_FAILED_AUTOMOD: I,
   MESSAGE_EDIT_FAILED_AUTOMOD: I,
-  REMOVE_AUTOMOD_MESSAGE_NOTICE: T,
-  MESSAGE_END_EDIT: S,
+  REMOVE_AUTOMOD_MESSAGE_NOTICE: S,
+  MESSAGE_END_EDIT: T,
   AUTO_MODERATION_MENTION_RAID_DETECTION: A,
   AUTO_MODERATION_MENTION_RAID_NOTICE_DISMISS: C
 })

@@ -11,8 +11,8 @@ require.d(exports, {
   cG: () => O,
   li: () => I,
   ob: () => b,
-  pC: () => T,
-  v4: () => S,
+  pC: () => S,
+  v4: () => T,
   wO: () => A,
   wi: () => R
 }), require("./415506.js");
@@ -127,7 +127,7 @@ function I(e, t, n, r) {
   })
 }
 
-function T(e, t, n) {
+function S(e, t, n) {
   let r = a.Z.getApplication(e);
   null != r && (f.Z.removeShortcuts(r.name), u.default.track(h.rMx.LIBRARY_UNINSTALL_INITIATED, {
     application_id: r.id,
@@ -141,7 +141,7 @@ function T(e, t, n) {
   })
 }
 
-function S() {
+function T() {
   Chunk830168.Z.resume()
 }
 

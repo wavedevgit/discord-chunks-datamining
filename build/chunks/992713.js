@@ -54,7 +54,7 @@ function O(e) {
 
 function v() {
   Chunk662896.Z.getAll().then(e => {
-    e.forEach(e => T(e))
+    e.forEach(e => S(e))
   })
 }
 
@@ -62,14 +62,14 @@ function I(e) {
   let {
     guild: t
   } = e;
-  t.unableToSyncDeletes && T(t.id)
-}
-
-function T(e) {
-  setTimeout(() => S(e), Math.ceil(Math.random() * E))
+  t.unableToSyncDeletes && S(t.id)
 }
 
 function S(e) {
+  setTimeout(() => T(e), Math.ceil(Math.random() * E))
+}
+
+function T(e) {
   var t, n, r;
   let i = null == (t = p.Z.getGuild(e)) ? true : t.name;
   b.fileOnly("requesting deleted guild entities (id: ".concat(e, ", name: ").concat(i, ")"));

@@ -52,19 +52,19 @@ function p(e) {
     pendingBio: O,
     tryItOutThemeColors: v,
     tryItOutAvatar: I,
-    tryItOutBanner: T,
-    tryItOutAvatarDecoration: S,
+    tryItOutBanner: S,
+    tryItOutAvatarDecoration: T,
     tryItOutProfileEffectId: A
   } = (0, a.cj)([c.Z], () => _({}, c.Z.getAllPending(), c.Z.getAllTryItOut())), C = (0, l.SD)({
     userId: f.id,
     image: null != I ? I : g
-  }), N = (0, s.Z)(S, false);
+  }), N = (0, s.Z)(T, false);
   return (0, r.jsx)(u.Z, {
     containerClassName: h,
     user: f,
     pendingPronouns: y,
     pendingBio: O,
-    pendingBanner: null != (t = null != T ? T : E) ? t : n(466045),
+    pendingBanner: null != (t = null != S ? S : E) ? t : n(466045),
     pendingAvatar: C,
     pendingThemeColors: null != v ? v : b,
     pendingAvatarDecoration: N,

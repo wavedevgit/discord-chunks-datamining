@@ -164,7 +164,7 @@ function B(e) {
       n(t, r)
     }), true
   };
-  if (null != N && N.type === g.g.QUESTS_EMBED && (0, T.c)({
+  if (null != N && N.type === g.g.QUESTS_EMBED && (0, S.c)({
       location: M.dr.EMBED_MOBILE
     })) return e => (null == e || e.preventDefault(), Promise.resolve().then(n.bind(n, 110560)).then(e => {
     let {
@@ -246,7 +246,7 @@ function B(e) {
       analyticsLocations: s
     }), true)
   }
-  return V && (null == B ? true : B.startsWith("/discovery/quests")) ? e => (null == e || e.preventDefault(), (0, S.navigateToQuestHome)({
+  return V && (null == B ? true : B.startsWith("/discovery/quests")) ? e => (null == e || e.preventDefault(), (0, T.navigateToQuestHome)({
     fromContent: i.j.QUEST_BADGE
   }), true) : V && (null == B ? true : B.startsWith("/discovery/servers")) ? e => (null == e || e.preventDefault(), Promise.resolve().then(n.bind(n, 749681)).then(e => {
     let {

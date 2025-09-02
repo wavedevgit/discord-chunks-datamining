@@ -74,8 +74,8 @@ function y(e) {
   var t, n, i, o, s;
   let {
     compact: f = false
-  } = e, h = window.GLOBAL_ENV.RELEASE_CHANNEL, g = "439560", y = "9bbee0fb78dab8302dc54d529e6158ef2b9dcd32".substring(0, 7), O = null === c.Z || true === c.Z ? true : c.Z.remoteApp.getVersion(), v = null === c.Z || true === c.Z || null == (t = (n = c.Z.remoteApp).getBuildNumber) ? true : t.call(n), I = null === c.Z || true === c.Z || null == (i = (o = c.Z.remoteApp).getAppArch) ? true : i.call(o), T = null == (s = u.C.getCurrentBuildOverride().overrides) ? true : s.discord_web, S = b(), A = [h, g, "(".concat(y, ")")];
-  return (null != O && (A.push("Host ".concat(O)), null != I && A.push(I.toLowerCase()), null != v && A.push("(".concat(v, ")"))), A.push("Build Override: ".concat(null != T ? T.id : "N/A")), null != S && A.push(S), f) ? (0, r.jsx)(d.Z, {
+  } = e, h = window.GLOBAL_ENV.RELEASE_CHANNEL, g = "439566", y = "91823ccb5aa5dd19c91d25c8f9419c824fda852e".substring(0, 7), O = null === c.Z || true === c.Z ? true : c.Z.remoteApp.getVersion(), v = null === c.Z || true === c.Z || null == (t = (n = c.Z.remoteApp).getBuildNumber) ? true : t.call(n), I = null === c.Z || true === c.Z || null == (i = (o = c.Z.remoteApp).getAppArch) ? true : i.call(o), S = null == (s = u.C.getCurrentBuildOverride().overrides) ? true : s.discord_web, T = b(), A = [h, g, "(".concat(y, ")")];
+  return (null != O && (A.push("Host ".concat(O)), null != I && A.push(I.toLowerCase()), null != v && A.push("(".concat(v, ")"))), A.push("Build Override: ".concat(null != S ? S.id : "N/A")), null != T && A.push(T), f) ? (0, r.jsx)(d.Z, {
     copyValue: A.join(" "),
     text: _.intl.string(_.t["9Al4QU"]),
     "aria-label": false,
@@ -93,13 +93,13 @@ function y(e) {
             className: p.versionHash,
             children: ["(", y, ")"]
           })]
-        }), null != T && (0, r.jsx)(l.Text, {
+        }), null != S && (0, r.jsx)(l.Text, {
           tag: "span",
           variant: "text-xxs/normal",
           color: "text-muted",
           children: (0, r.jsxs)("span", {
             className: p.versionHash,
-            children: ["Build Override: ", T.id]
+            children: ["Build Override: ", S.id]
           })
         }), null != O && (0, r.jsxs)(l.Text, {
           tag: "span",
@@ -111,12 +111,12 @@ function y(e) {
           }), null != v && (0, r.jsxs)("span", {
             children: [" (", v, ")"]
           })]
-        }), null != S && (0, r.jsx)(l.Text, {
+        }), null != T && (0, r.jsx)(l.Text, {
           tag: "span",
           variant: "text-xxs/normal",
           color: "text-muted",
           className: p.os,
-          children: S
+          children: T
         })]
       })
     }))
@@ -139,14 +139,14 @@ function y(e) {
             className: p.versionHash,
             children: ["(", y, ")"]
           })]
-        }), " ", null != T && (0, r.jsx)(l.Text, {
+        }), " ", null != S && (0, r.jsx)(l.Text, {
           tag: "span",
           className: p.line,
           variant: "text-xs/normal",
           color: "text-muted",
           children: (0, r.jsxs)("span", {
             className: p.versionHash,
-            children: ["Build Override: ", T.id]
+            children: ["Build Override: ", S.id]
           })
         }), null != O ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsxs)(l.Text, {
@@ -161,12 +161,12 @@ function y(e) {
               children: ["(", v, ")"]
             }) : null]
           }), " "]
-        }) : null, null != S ? (0, r.jsx)(l.Text, {
+        }) : null, null != T ? (0, r.jsx)(l.Text, {
           tag: "span",
           className: a()(p.line, p.os),
           variant: "text-xs/normal",
           color: "text-muted",
-          children: S
+          children: T
         }) : null]
       })
     }))

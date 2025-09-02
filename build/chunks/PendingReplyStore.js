@@ -144,13 +144,13 @@ function I(e) {
   O(t)
 }
 
-function T() {
+function S() {
   Chunk709054.default.keys(p).forEach(e => {
     null == o.Z.getChannel(e) && delete p[e]
   })
 }
 
-function S() {
+function T() {
   _ = {}, p = {}, h = {}
 }
 class A extends(r = Chunk442837.ZP.PersistedStore) {
@@ -180,8 +180,8 @@ let C = new A(Chunk570140.Z, {
   CREATE_SHALLOW_PENDING_REPLY: g,
   SET_PENDING_REPLY_SHOULD_MENTION: E,
   DELETE_PENDING_REPLY: b,
-  CONNECTION_OPEN: T,
-  LOGOUT: S,
+  CONNECTION_OPEN: S,
+  LOGOUT: T,
   MESSAGE_DELETE: y,
   CHANNEL_SELECT: v,
   LOAD_MESSAGES_SUCCESS: I

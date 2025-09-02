@@ -60,8 +60,8 @@ let y = new Chunk710845.Z("Games"),
   O = {},
   v = 0,
   I = null,
-  T = 250,
-  S = 12e4,
+  S = 250,
+  T = 12e4,
   A = 36e5;
 
 function C() {
@@ -112,8 +112,8 @@ function w(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : 0;
   if (e()) return void t();
   setTimeout(() => {
-    r * T <= S ? w(e, t, n, r + 1) : n()
-  }, T)
+    r * S <= T ? w(e, t, n, r + 1) : n()
+  }, S)
 }
 
 function D(e) {

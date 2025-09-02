@@ -67,10 +67,10 @@ let b = function(e, t) {
         return t => e(t)
       })
     }
-    g && (0, c.eH)(), (0, u.Z)(T, e, b, g)
+    g && (0, c.eH)(), (0, u.Z)(S, e, b, g)
   }
 
-  function T() {
+  function S() {
     let n = (0, r.Z)();
     a.Z.dispatch({
       type: "VOICE_CHANNEL_SELECT",

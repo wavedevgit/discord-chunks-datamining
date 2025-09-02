@@ -60,7 +60,7 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = e => {
+let S = e => {
     let {
       startingScreen: t,
       analyticsLocations: i
@@ -76,7 +76,7 @@ let T = e => {
       }))
     })
   },
-  S = e => {
+  T = e => {
     let {
       user: t
     } = e, {
@@ -117,7 +117,7 @@ let T = e => {
       className: E.reminderContainer,
       children: [(0, r.jsxs)("div", {
         className: E.remindersSentContainer,
-        children: [t.map(e => (0, r.jsx)(S, {
+        children: [t.map(e => (0, r.jsx)(T, {
           user: e
         }, e.id)), (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
@@ -132,7 +132,7 @@ let T = e => {
         size: "sm",
         disabled: n,
         text: g.intl.string(g.t.NPCYFR),
-        onClick: () => T({
+        onClick: () => S({
           startingScreen: h.K.REMINDER,
           analyticsLocations: []
         })
@@ -178,7 +178,7 @@ let T = e => {
             variant: "primary",
             disabled: false === l || true === d,
             text: g.intl.string(g.t.Lm2nFR),
-            onClick: () => T({
+            onClick: () => S({
               startingScreen: h.K.SELECT_FRIENDS,
               analyticsLocations: []
             })

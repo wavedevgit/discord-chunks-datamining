@@ -85,9 +85,9 @@ class h extends Chunk803358.Z {
       hero_logo: O,
       banner_text_color: v,
       hero_banner_config: I,
-      hero_logo_display_config: T
-    } = e, S = f(e, ["products", "logo", "hero_ranking", "pdp_bg", "mobile_bg", "mobile_banner", "banner", "banner_asset", "catalog_banner_asset", "hero_banner", "hero_banner_asset", "featured_block", "hero_logo", "banner_text_color", "hero_banner_config", "hero_logo_display_config"]);
-    return new h(d(c({}, super.fromServer(S)), {
+      hero_logo_display_config: S
+    } = e, T = f(e, ["products", "logo", "hero_ranking", "pdp_bg", "mobile_bg", "mobile_banner", "banner", "banner_asset", "catalog_banner_asset", "hero_banner", "hero_banner_asset", "featured_block", "hero_logo", "banner_text_color", "hero_banner_config", "hero_logo_display_config"]);
+    return new h(d(c({}, super.fromServer(T)), {
       products: t.reduce((e, t) => {
         let n = i.Z.fromServer(t);
         return (p(n.type) || 0 !== n.items.length) && e.push(n), e
@@ -106,7 +106,7 @@ class h extends Chunk803358.Z {
       heroLogo: O,
       bannerTextColor: v,
       heroBannerConfig: null != I ? o.Z.fromServer(I) : true,
-      heroLogoDisplayConfig: null != T ? s.X.fromServer(T) : true
+      heroLogoDisplayConfig: null != S ? s.X.fromServer(S) : true
     }))
   }
   constructor(e) {

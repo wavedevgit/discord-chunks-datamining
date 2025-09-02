@@ -32,11 +32,11 @@ function I() {
   b = Chunk981631.QZA.SUBMITTING, y = {}
 }
 
-function T(e) {
+function S(e) {
   f = e.guild, y = {}
 }
 
-function S(e) {
+function T(e) {
   var t;
   if (b !== g.QZA.SUBMITTING) returnfalse;
   b = g.QZA.OPEN, y = null != (t = e.errors) ? t : {}
@@ -195,9 +195,9 @@ E(Z, "displayName", "GuildIdentitySettingsStore");
 let F = new Z(Chunk570140.Z, {
   GUILD_IDENTITY_SETTINGS_INIT: O,
   GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM: B,
-  GUILD_IDENTITY_SETTINGS_SET_GUILD: T,
+  GUILD_IDENTITY_SETTINGS_SET_GUILD: S,
   GUILD_IDENTITY_SETTINGS_SUBMIT: I,
-  GUILD_IDENTITY_SETTINGS_SUBMIT_FAILURE: S,
+  GUILD_IDENTITY_SETTINGS_SUBMIT_FAILURE: T,
   USER_PROFILE_UPDATE_FAILURE: A,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR: C,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR_DECORATION: N,

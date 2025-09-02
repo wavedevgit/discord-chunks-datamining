@@ -2,7 +2,7 @@
 /** chunk id: 174212, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -135,7 +135,7 @@ function I(e, t) {
     r = _.get(e);
   return null != r && (t !== r.commandId || n !== r.optionName) && (null != t && t !== r.commandId && (r.optionNameToLastResults.clear(), r.optionNameToNonce.clear(), r.optionNameToLastQuery.clear(), r.optionNameToAutocompleteQueries.clear()), r.lastErrored = false, r.commandId = t, r.optionName = n, true)
 }
-class T extends(r = Chunk442837.ZP.Store) {
+class S extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk998698.Z)
   }
@@ -153,8 +153,8 @@ class T extends(r = Chunk442837.ZP.Store) {
     return h(e).lastResponseNonce
   }
 }
-d(T, "displayName", "ApplicationCommandAutocompleteStore");
-let S = new T(Chunk570140.Z, {
+d(S, "displayName", "ApplicationCommandAutocompleteStore");
+let T = new S(Chunk570140.Z, {
   CONNECTION_OPEN: m,
   LOGOUT: m,
   CHANNEL_SELECT: m,

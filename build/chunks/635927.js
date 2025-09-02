@@ -28,8 +28,8 @@ let a = {
   O = "MPF\0",
   v = 65472,
   I = 65474,
-  T = 65476,
-  S = 65499,
+  S = 65476,
+  T = 65499,
   A = 65501,
   C = 65498,
   N = 65504,
@@ -158,7 +158,7 @@ function ee(e, t) {
 
 function et(e, t) {
   let n = e.getUint16(t);
-  return n >= N && n <= D || n === x || n === v || n === I || n === T || n === S || n === A || n === C
+  return n >= N && n <= D || n === x || n === v || n === I || n === S || n === T || n === A || n === C
 }
 
 function en(e, t) {

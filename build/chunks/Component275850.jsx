@@ -2,7 +2,7 @@
 /** chunk id: 275850, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => S
+  ZP: () => T
 }), require("./415506.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -106,14 +106,14 @@ function I(e, t) {
   throw Error("Invalid Payment Source")
 }
 
-function T(e, t) {
+function S(e, t) {
   let n = null;
   return e && null != t && !t.canRedeemTrial() ? n = m.intl.string(m.t.SvheW1) : e && null != t && t.hasFlag(h.Cw.NEW) && (n = m.intl.format(m.t.d7ZLKC, {
     helpDeskArticle: _.Z.getArticleURL(p.BhN.PAYMENT_AUTHORIZATION_CHARGE)
   })), n
 }
 
-function S(e) {
+function T(e) {
   let {
     selectedPaymentSourceId: t,
     paymentSources: n,
@@ -125,7 +125,7 @@ function S(e) {
     disabled: E = false,
     className: b,
     optionClassName: y,
-    dropdownLoading: S,
+    dropdownLoading: T,
     paymentGatewayRestrictions: A
   } = e, C = 0 === n.length, N = e => {
     if (e === O) null != p && p();
@@ -163,7 +163,7 @@ function S(e) {
         children: e.label
       })
     }
-  }), P = T(h, i.useMemo(() => n.find(e => e.id === t), [n, t]));
+  }), P = S(h, i.useMemo(() => n.find(e => e.id === t), [n, t]));
   if (null == t && null != A && A.length > 0) {
     let e = n.filter(e => A.includes(e.paymentGateway));
     t = 0 === e.length ? O : e[0].id
@@ -186,7 +186,7 @@ function S(e) {
       placeholder: m.intl.string(m.t["8lqkf3"]),
       renderOptionValue: e => {
         let [t] = e;
-        return S ? (0, r.jsx)(c.$jN, {
+        return T ? (0, r.jsx)(c.$jN, {
           type: c.RAz.SPINNING_CIRCLE
         }) : t.label
       }

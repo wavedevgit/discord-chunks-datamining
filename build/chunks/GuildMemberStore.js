@@ -28,7 +28,7 @@ var r, Chunk392711 = require("./392711.js"),
   Chunk430824 = require("./430824.js"),
   Chunk372897 = require("./372897.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -44,7 +44,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -166,7 +166,7 @@ function q(e) {
   } = e, {
     colorString: v,
     colorStrings: I,
-    colorRoleId: S,
+    colorRoleId: T,
     iconRoleId: C,
     hoistRoleId: R,
     highestRoleId: w
@@ -179,7 +179,7 @@ function q(e) {
     roles: c,
     colorString: v,
     colorStrings: I,
-    colorRoleId: S,
+    colorRoleId: T,
     iconRoleId: C,
     hoistRoleId: R,
     highestRoleId: w,
@@ -192,7 +192,7 @@ function q(e) {
     flags: E,
     collectibles: O
   };
-  if ((0, m.yE)(null != (t = x.flags) ? t : 0, T.q.IS_GUEST) && (x.flags = (0, m.pj)(null != (n = x.flags) ? n : 0, T.q.BYPASSES_VERIFICATION)), null == P[a]) return x;
+  if ((0, m.yE)(null != (t = x.flags) ? t : 0, S.q.IS_GUEST) && (x.flags = (0, m.pj)(null != (n = x.flags) ? n : 0, S.q.BYPASSES_VERIFICATION)), null == P[a]) return x;
   if (r === y.default.getId())
     if (h.Z.isViewingRoles(a) || h.Z.isFullServerPreview(a)) {
       let e = h.Z.getViewingRoles(a);
@@ -535,7 +535,7 @@ function eI(e) {
   delete P[t.id], delete w[t.id], F(t.id)
 }
 
-function eT(e) {
+function eS(e) {
   let t = P[e.guildId];
   if (null == t) returnfalse;
   let n = I.Z.getGuild(e.guildId);
@@ -564,7 +564,7 @@ function eT(e) {
   }
 }
 
-function eS(e) {
+function eT(e) {
   var t, n, r;
   let {
     guildId: i,
@@ -762,7 +762,7 @@ class ek extends(r = Chunk442837.ZP.Store) {
       n = P[e];
     if (null == n || null == n[t]) returnfalse;
     let r = n[t].flags;
-    return null != r && (0, m.yE)(r, T.q.IS_GUEST)
+    return null != r && (0, m.yE)(r, S.q.IS_GUEST)
   }
   getMemberIds(e) {
     if (null == e) return [];
@@ -826,7 +826,7 @@ class ek extends(r = Chunk442837.ZP.Store) {
     return k
   }
 }
-S(ek, "displayName", "GuildMemberStore");
+T(ek, "displayName", "GuildMemberStore");
 let eU = new ek(Chunk570140.Z, {
   CONNECTION_OPEN: X,
   CONNECTION_OPEN_SUPPLEMENTAL: Q,
@@ -837,7 +837,7 @@ let eU = new ek(Chunk570140.Z, {
   GUILD_DELETE: eI,
   GUILD_MEMBER_ADD: ei,
   GUILD_MEMBER_UPDATE: ei,
-  GUILD_MEMBER_UPDATE_LOCAL: eS,
+  GUILD_MEMBER_UPDATE_LOCAL: eT,
   GUILD_MEMBERS_CHUNK_BATCH: el,
   GUILD_MEMBER_REMOVE: eg,
   GUILD_MEMBER_REMOVE_LOCAL: eE,
@@ -845,8 +845,8 @@ let eU = new ek(Chunk570140.Z, {
   THREAD_MEMBERS_UPDATE: e_,
   LOAD_ARCHIVED_THREADS_SUCCESS: ed,
   LOAD_FORUM_POSTS: ef,
-  GUILD_ROLE_UPDATE: eT,
-  GUILD_ROLE_DELETE: eT,
+  GUILD_ROLE_UPDATE: eS,
+  GUILD_ROLE_DELETE: eS,
   GUILD_ROLE_MEMBER_REMOVE: eo,
   GUILD_ROLE_MEMBER_ADD: ea,
   GUILD_MEMBER_PROFILE_UPDATE: es,

@@ -250,23 +250,23 @@ class E extends(r = Chunk647438.PureComponent) {
       E = true;
       let {
         clientWidth: I,
-        clientHeight: T
-      } = r, S = m(d({
+        clientHeight: S
+      } = r, T = m(d({
         top: n - this._offsetY,
         left: t - this._offsetX
-      }, i, a, I, T));
+      }, i, a, I, S));
       if (g) {
-        let e = _(S = p(S));
+        let e = _(T = p(T));
         y = e[0], O = e[1]
-      } else S = {
-        top: S.top,
-        left: S.left
+      } else T = {
+        top: T.top,
+        left: T.left
       };
-      2 === s && O !== this.state.horizontalOrientation && (this._offsetX = I - this._offsetX, v = true), 2 === o && y !== this.state.verticalOrientation && (this._offsetY = T - this._offsetY, v = true), this.setDOMPositions(S), b || null == u || u(S, r), null == f || f(S, r), v && (null == h || h([y, O])), this.setState({
+      2 === s && O !== this.state.horizontalOrientation && (this._offsetX = I - this._offsetX, v = true), 2 === o && y !== this.state.verticalOrientation && (this._offsetY = S - this._offsetY, v = true), this.setDOMPositions(T), b || null == u || u(T, r), null == f || f(T, r), v && (null == h || h([y, O])), this.setState({
         dragging: E,
         verticalOrientation: y,
         horizontalOrientation: O,
-        atTopEdge: 0 === S.top
+        atTopEdge: 0 === T.top
       })
     }), s(this, "handleMouseUp", () => {
       window.removeEventListener("mousemove", this.handleMouseMove), window.removeEventListener("mouseup", this.handleMouseUp), this.state.dragging && this.setState({

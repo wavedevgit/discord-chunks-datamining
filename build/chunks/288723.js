@@ -26,7 +26,7 @@ let d = {
       n = e.options,
       a = e.name;
     if (!t.modifiersData[a]._skip) {
-      for (var d = n.mainAxis, f = true === d || d, _ = n.altAxis, p = true === _ || _, h = n.fallbackPlacements, m = n.padding, g = n.boundary, E = n.rootBoundary, b = n.altBoundary, y = n.flipVariations, O = true === y || y, v = n.allowedAutoPlacements, I = t.options.placement, T = (0, i.Z)(I), S = T === I, A = h || (S || !O ? [(0, r.Z)(I)] : u(I)), C = [I].concat(A).reduce(function(e, n) {
+      for (var d = n.mainAxis, f = true === d || d, _ = n.altAxis, p = true === _ || _, h = n.fallbackPlacements, m = n.padding, g = n.boundary, E = n.rootBoundary, b = n.altBoundary, y = n.flipVariations, O = true === y || y, v = n.allowedAutoPlacements, I = t.options.placement, S = (0, i.Z)(I), T = S === I, A = h || (T || !O ? [(0, r.Z)(I)] : u(I)), C = [I].concat(A).reduce(function(e, n) {
           return e.concat((0, i.Z)(n) === l.d7 ? (0, s.Z)(t, {
             placement: n,
             boundary: g,

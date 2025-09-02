@@ -43,8 +43,8 @@ let E = [],
   O = null,
   v = null,
   I = false,
-  T = false,
-  S = null,
+  S = false,
+  T = null,
   A = false,
   C = null;
 
@@ -146,7 +146,7 @@ function N(e, t) {
         userIds: e
       })
     })
-  }), O = new c.Z(f.default.getId(), t), v = null, I = false, T = false, a
+  }), O = new c.Z(f.default.getId(), t), v = null, I = false, S = false, a
 }
 
 function R() {
@@ -231,7 +231,7 @@ function B(e) {
 }
 
 function Z(e) {
-  return e.state === p.hes.RTC_CONNECTED && (T = true), true
+  return e.state === p.hes.RTC_CONNECTED && (S = true), true
 }
 
 function F(e) {
@@ -251,7 +251,7 @@ function H(e) {
       let [t, n] = e;
       return "any" !== t && 0 !== n
     })) returnfalse;
-  S = performance.now()
+  T = performance.now()
 }
 
 function Y(e) {
@@ -347,7 +347,7 @@ class z extends(a = Chunk442837.ZP.Store) {
     return I
   }
   getWasEverRtcConnected() {
-    return T
+    return S
   }
   getUserIds() {
     return null == r ? true : r.getUserIds()
@@ -366,7 +366,7 @@ class z extends(a = Chunk442837.ZP.Store) {
     return null == t ? true : t.get(e)
   }
   getLastNonZeroRemoteVideoSinkWantsTime() {
-    return S
+    return T
   }
   getWasMoved() {
     return A

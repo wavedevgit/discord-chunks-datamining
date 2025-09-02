@@ -93,7 +93,7 @@ function O(e, t, n, r) {
           path: f.C0.child(i, 0),
           offset: 0
         };
-      (n || null != r && S(e, a, l, r)) && (d.Q.voidToText(e, (0, u.sg)(s, {
+      (n || null != r && T(e, a, l, r)) && (d.Q.voidToText(e, (0, u.sg)(s, {
         mode: "plain",
         preventEmojiSurrogates: true
       }), i), o = true)
@@ -239,7 +239,7 @@ function I(e, t, n, r, i) {
         _.lastIndex = u.index + 1;
         continue
       }
-      if (S(e, o, {
+      if (T(e, o, {
           path: p,
           offset: u.index
         }, i)) continue;
@@ -250,12 +250,12 @@ function I(e, t, n, r, i) {
         node: a
       }) : _.lastIndex = u.index + 1
     }
-    for (let t of h.reverse()) T(e, [d, f.C0.child(o, c)], t.index, t.length, t.node), l = true
+    for (let t of h.reverse()) S(e, [d, f.C0.child(o, c)], t.index, t.length, t.node), l = true
   }
   return l
 }
 
-function T(e, t, n, r, a) {
+function S(e, t, n, r, a) {
   let [o, s] = t, l = {
     path: s,
     offset: n
@@ -269,7 +269,7 @@ function T(e, t, n, r, a) {
   })
 }
 
-function S(e, t, n, r) {
+function T(e, t, n, r) {
   let i = 0;
   for (let [r, a] of f.bN.nodes(e, {
       at: {

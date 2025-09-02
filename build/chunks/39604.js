@@ -326,8 +326,8 @@ async function H(e) {
     streamKey: y,
     thumbnail: I
   });
-  let T = (0, d.GN)("clip_save", .5),
-    S = performance.now();
+  let S = (0, d.GN)("clip_save", .5),
+    T = performance.now();
   try {
     let e = await V(y);
     a.Z.dispatch({
@@ -335,11 +335,11 @@ async function H(e) {
       clip: e
     })
   } catch (e) {
-    C.jF.error("Clip Failed to Save", e), null == T || T.stop(), (0, d.GN)("clip_error", .5), a.Z.dispatch({
+    C.jF.error("Clip Failed to Save", e), null == S || S.stop(), (0, d.GN)("clip_error", .5), a.Z.dispatch({
       type: "CLIPS_SAVE_CLIP_ERROR"
     })
   }
-  C.jF.info("".concat(O.Z.getSettings().clipsLength / 1e3, "s clip save took ").concat(Math.round(performance.now() - S), "ms"))
+  C.jF.info("".concat(O.Z.getSettings().clipsLength / 1e3, "s clip save took ").concat(Math.round(performance.now() - T), "ms"))
 }
 
 function Y(e, t) {
@@ -353,7 +353,7 @@ async function W(e, t) {
   let n = O.Z.getClips().find(t => t.id === e);
   if (null == n) return;
   let r = P({}, n, t);
-  null != await (0, T.w)(r) && (await m.Z.getMediaEngine().updateClipMetadata(r.filepath, JSON.stringify(r)), b.default.track(N.rMx.CLIP_EDITED, {
+  null != await (0, S.w)(r) && (await m.Z.getMediaEngine().updateClipMetadata(r.filepath, JSON.stringify(r)), b.default.track(N.rMx.CLIP_EDITED, {
     clip_id: r.id
   }), a.Z.dispatch({
     type: "CLIPS_UPDATE_METADATA",
@@ -378,7 +378,7 @@ async function q(e) {
   let n = await o.Z.clips.loadClipsDirectory(e),
     r = [];
   for (let e of n) {
-    let t = await (0, T.w)(D(P({}, e.metadata), {
+    let t = await (0, S.w)(D(P({}, e.metadata), {
       filepath: e.filepath
     }));
     null != t && r.push(t)
@@ -398,5 +398,5 @@ async function X(e) {
 async function Q(e, t) {
   let n = m.Z.getMediaEngine(),
     r = await n.exportClip(e.filepath, t);
-  return (0, S.Z)(r)
+  return (0, T.Z)(r)
 }

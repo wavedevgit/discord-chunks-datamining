@@ -70,9 +70,9 @@ function i() {
   f(I, c, function() {
     return this
   });
-  var T = Object.getPrototypeOf,
-    S = T && T(T(L([])));
-  S && S !== a && o.call(S, c) && (I = S);
+  var S = Object.getPrototypeOf,
+    T = S && S(S(L([])));
+  T && T !== a && o.call(T, c) && (I = T);
   var A = v.prototype = y.prototype = Object.create(I);
 
   function C(e) {

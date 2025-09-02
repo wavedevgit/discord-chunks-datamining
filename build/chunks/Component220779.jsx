@@ -2,7 +2,7 @@
 /** chunk id: 220779, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A7: () => T,
+  A7: () => S,
   dE: () => A
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -65,7 +65,7 @@ let I = (0, Chunk131704.kt)({
   type: Chunk981631.d4z.DM
 });
 
-function T(e) {
+function S(e) {
   let {
     placeholder: t,
     onEnter: n,
@@ -76,8 +76,8 @@ function T(e) {
     onFocus: _,
     channel: p,
     className: m
-  } = e, [g, b] = i.useState(""), [O, T] = i.useState((0, u.JM)("")), S = () => {
-    b(""), T((0, u.JM)(""))
+  } = e, [g, b] = i.useState(""), [O, S] = i.useState((0, u.JM)("")), T = () => {
+    b(""), S((0, u.JM)(""))
   }, A = c.Ie.ATOMIC_REACTOR_REPLY_INPUT, C = i.useRef(null), N = () => {
     if (null == C.current) return "top";
     let e = C.current.getBoundingClientRect(),
@@ -94,7 +94,7 @@ function T(e) {
     maxCharacterCount: h.z,
     channel: null != p ? p : I,
     onChange: (e, t, n) => {
-      b(t), T(n)
+      b(t), S(n)
     },
     type: s ? v(y({}, A), {
       emojis: {
@@ -110,7 +110,7 @@ function T(e) {
       return t.length > h.z ? Promise.resolve({
         shouldClear: false,
         shouldRefocus: true
-      }) : (n(t), S(), Promise.resolve({
+      }) : (n(t), T(), Promise.resolve({
         shouldClear: true,
         shouldRefocus: false
       }))
@@ -125,7 +125,7 @@ function T(e) {
     renderAttachButton: l
   })
 }
-let S = (e, t) => {
+let T = (e, t) => {
     i.useEffect(() => {
       let n = t => {
           "Escape" === t.key && e()
@@ -144,7 +144,7 @@ let S = (e, t) => {
       onSelectEmoji: t,
       onClick: n
     } = e, a = (0, l.ZP)(), [o, c] = i.useState(false), u = i.useRef(null), d = i.useRef(null);
-    return S(() => c(false), u), (0, r.jsx)(s.yRy, {
+    return T(() => c(false), u), (0, r.jsx)(s.yRy, {
       targetElementRef: d,
       align: "right",
       position: "top",

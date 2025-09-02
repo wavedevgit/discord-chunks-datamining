@@ -77,7 +77,7 @@ function w() {
   (0, Chunk481060.h7j)(n => (0, r.jsx)(s.ConfirmModal, R(C({
     header: e,
     confirmButtonColor: o.zx.Colors.BRAND,
-    confirmText: T.intl.string(T.t.BddRzc)
+    confirmText: S.intl.string(S.t.BddRzc)
   }, n), {
     children: (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
@@ -88,16 +88,16 @@ function w() {
 
 function D(e) {
   var t;
-  let n = T.intl.string(T.t.QZg0Jy),
-    i = null != e ? e : T.intl.string(T.t.VzHcSk),
+  let n = S.intl.string(S.t.QZg0Jy),
+    i = null != e ? e : S.intl.string(S.t.VzHcSk),
     a = null == (t = (0, p.hp)(p.u.DEBUG_LOG_UPLOAD_FAILED)) ? true : t.errorCode,
-    l = T.intl.formatToPlainString(T.t["ejOT9/"], {
+    l = S.intl.formatToPlainString(S.t["ejOT9/"], {
       errorCode: a
     });
   (0, s.h7j)(e => (0, r.jsx)(s.ConfirmModal, R(C({
     header: n,
     confirmButtonColor: o.zx.Colors.BRAND,
-    confirmText: T.intl.string(T.t.BddRzc)
+    confirmText: S.intl.string(S.t.BddRzc)
   }, e), {
     children: (0, r.jsxs)("div", {
       style: {
@@ -122,15 +122,15 @@ function D(e) {
 
 function x(e) {
   (0, s.h7j)(t => (0, r.jsx)(s.ConfirmModal, R(C({
-    header: T.intl.string(T.t["7UXEFx"]),
-    confirmText: T.intl.string(T.t.BddRzc),
-    cancelText: T.intl.string(T.t["ETE/oK"]),
+    header: S.intl.string(S.t["7UXEFx"]),
+    confirmText: S.intl.string(S.t.BddRzc),
+    cancelText: S.intl.string(S.t["ETE/oK"]),
     onCancel: t.onClose,
     onConfirm: () => l.Z.setDebugLogging(e)
   }, t), {
     children: (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
-      children: T.intl.string(T.t.IYPrRk)
+      children: S.intl.string(S.t.IYPrRk)
     })
   })))
 }

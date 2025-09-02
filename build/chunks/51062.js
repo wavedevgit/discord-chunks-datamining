@@ -60,7 +60,7 @@ function O(e, t) {
 }
 
 function v(e, t, n) {
-  var E, y, v, I, T, S, A, C, N, R;
+  var E, y, v, I, S, T, A, C, N, R;
   let {
     channel: P,
     type: w
@@ -86,7 +86,7 @@ function v(e, t, n) {
     state: D,
     onFocus: e => Y.setSelectedIndex(e)
   }), Z = null == (E = e.editorRef.current) ? true : E.getCurrentWord(), F = null == (y = e.editorRef.current) ? true : y.getSlateEditor(), V = null;
-  null != F && (V = null != (A = null == (S = c.bN.getSelectedParentOfType(F, p.un)) ? true : S[0]) ? A : null);
+  null != F && (V = null != (A = null == (T = c.bN.getSelectedParentOfType(F, p.un)) ? true : T[0]) ? A : null);
   let H = O(b({}, e), {
       navigator: B,
       activeCommand: U,
@@ -121,5 +121,5 @@ function v(e, t, n) {
         for (let n of t) n.removeChangeListener(e)
       }
     }
-  }, [Y, null == (T = D.query) ? true : T.typeInfo]), [D, Y, B]
+  }, [Y, null == (S = D.query) ? true : S.typeInfo]), [D, Y, B]
 }

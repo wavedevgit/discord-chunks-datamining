@@ -34,8 +34,8 @@ function E(e) {
   if (null == t || null == n) return null;
   let I = e.items.map(e => (0, o.ze)(e.media, t)).filter(e => "INVALID" !== e.type),
     {
-      srcToOnClickOverride: T,
-      srcToHandlePreloadImage: S
+      srcToOnClickOverride: S,
+      srcToHandlePreloadImage: T
     } = I.length > 1 ? (0, f.G)(I, {
       shouldHideMediaOptions: E,
       enabledContentHarmTypeFlags: b
@@ -85,7 +85,7 @@ function E(e) {
         proxyURL: r.proxyUrl,
         url: r.url
       });
-    return u in T && (s.onClick = T[u], s.handlePreloadImage = S[u]), s
+    return u in S && (s.onClick = S[u], s.handlePreloadImage = T[u]), s
   });
   return (0, r.jsx)("div", {
     children: (0, r.jsx)(d.Z, {

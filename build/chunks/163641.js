@@ -24,16 +24,16 @@ module.exports = function(e, t, n, m) {
     var v = O.prototype;
     if (!h && i(v, "cause") && delete v.cause, !n) return O;
     var I = r("Error"),
-      T = t(function(e, t) {
+      S = t(function(e, t) {
         var n = d(m ? t : e, true),
           r = m ? new O(e) : new O;
-        return true !== n && a(r, "message", n), _(r, T, r.stack, 2), this && o(v, this) && u(r, this, T), arguments.length > E && f(r, arguments[E]), r
+        return true !== n && a(r, "message", n), _(r, S, r.stack, 2), this && o(v, this) && u(r, this, S), arguments.length > E && f(r, arguments[E]), r
       });
-    if (T.prototype = v, "Error" !== y ? s ? s(T, I) : l(T, I, {
+    if (S.prototype = v, "Error" !== y ? s ? s(S, I) : l(S, I, {
         name: true
-      }) : p && g in O && (c(T, O, g), c(T, O, "prepareStackTrace")), l(T, O), !h) try {
-      v.name !== y && a(v, "name", y), v.constructor = T
+      }) : p && g in O && (c(S, O, g), c(S, O, "prepareStackTrace")), l(S, O), !h) try {
+      v.name !== y && a(v, "name", y), v.constructor = S
     } catch (e) {}
-    return T
+    return S
   }
 }

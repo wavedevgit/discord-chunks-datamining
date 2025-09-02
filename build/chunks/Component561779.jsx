@@ -2,7 +2,7 @@
 /** chunk id: 561779, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  i: () => T
+  i: () => S
 }), require("./642613.js"), require("./415506.js"), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -115,7 +115,7 @@ function I(e, t) {
     newClosestIndex: null
   }, v(e))
 }
-class T extends(r = Chunk647438.PureComponent) {
+class S extends(r = Chunk647438.PureComponent) {
   static getDerivedStateFromProps(e, t) {
     return e.initialValue !== t.initialValueProp ? y(E({}, I(e, t.value)), {
       active: t.active
@@ -148,7 +148,7 @@ class T extends(r = Chunk647438.PureComponent) {
       className: O,
       children: v,
       barStyles: I,
-      fillStyles: T,
+      fillStyles: S,
       mini: A,
       hideBubble: C,
       defaultValue: N,
@@ -192,7 +192,7 @@ class T extends(r = Chunk647438.PureComponent) {
       }) : null,
       H = null != P ? P(exports) : "".concat(Z.toFixed(0), "%"),
       Y = null != (e = null == D ? true : D(exports)) ? module : true;
-    return (0, Chunk951288.jsx)(S, {
+    return (0, Chunk951288.jsx)(T, {
       active: require,
       keyboardFocused: r && Chunk607070.Z.keyboardModeEnabled,
       children: e => {
@@ -238,7 +238,7 @@ class T extends(r = Chunk647438.PureComponent) {
               style: I,
               children: (0, i.jsx)("div", {
                 className: m.barFill,
-                style: y(E({}, T), {
+                style: y(E({}, S), {
                   width: F
                 })
               })
@@ -459,7 +459,7 @@ class T extends(r = Chunk647438.PureComponent) {
   }
 }
 
-function S(e) {
+function T(e) {
   let {
     active: t,
     keyboardFocused: n,
@@ -476,7 +476,7 @@ function S(e) {
     setHovered: o
   })
 }
-g(T, "defaultProps", {
+g(S, "defaultProps", {
   initialValue: 10,
   minValue: 0,
   maxValue: 100,

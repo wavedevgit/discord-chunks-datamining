@@ -158,7 +158,7 @@ function K(e) {
   return a()(t).map(e => {
     var t;
     return null == (t = g.Z.getChannel(e.channelId)) ? true : t.guild_id
-  }).filter(T.lm).uniq().forEach(e => {
+  }).filter(S.lm).uniq().forEach(e => {
     w.clearGuildId(e) && (n = true)
   }), n
 }
@@ -267,7 +267,7 @@ function el(e) {
   if (n.type !== C.yP.PRELOADED_USER_SETTINGS) returnfalse;
   let r = null == (t = n.proto.guilds) ? true : t.guilds,
     i = false;
-  return null != r && S.default.keys(r).forEach(e => {
+  return null != r && T.default.keys(r).forEach(e => {
     null != r[e].guildRecentsDismissedAt && (i = w.updateRecentsCategory(e) || i)
   }), i
 }

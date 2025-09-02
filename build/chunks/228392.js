@@ -13,9 +13,9 @@ require.d(exports, {
   KR: () => P,
   MO: () => U,
   N3: () => k,
-  Oq: () => S,
+  Oq: () => T,
   P_: () => v,
-  Vn: () => T,
+  Vn: () => S,
   ab: () => C,
   e5: () => x,
   e7: () => O,
@@ -173,7 +173,7 @@ function I(e) {
   }))
 }
 
-function T(e) {
+function S(e) {
   var t, n, i, a;
   let {
     guildId: l,
@@ -196,7 +196,7 @@ function T(e) {
   }))
 }
 
-function S(e) {
+function T(e) {
   let {
     guildId: t,
     channelId: n

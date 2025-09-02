@@ -202,13 +202,13 @@ function Y() {
 let W = .2;
 
 function K(e) {
-  let t = (0, S.T)({
+  let t = (0, T.T)({
       quest: e
     }),
     n = {
       location: R.dr.QUESTS_BAR
     };
-  if (!(0, T.j)(n) || Math.random() > W) return;
+  if (!(0, S.j)(n) || Math.random() > W) return;
   let r = (0, A.Z)(e);
   t.log("Showing survey ".concat(r.id)), (0, C.C)({
     questId: e.id,

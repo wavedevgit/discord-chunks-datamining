@@ -128,7 +128,7 @@ class Z extends(s = Chunk442837.ZP.PersistedStore) {
     if (null != t) {
       let e = null != (n = null == i ? true : i.summaryIdLastRequestedAt) ? n : 0,
         r = Date.now() - e;
-      return t !== (null == i ? true : i.summaryId) || r > S.cS
+      return t !== (null == i ? true : i.summaryId) || r > T.cS
     }
     let o = null != (r = null == i ? true : i.lastReceivedAt) ? r : 0;
     return !(null == i ? true : i.fetching) && 0 === o
@@ -190,7 +190,7 @@ let V = new Z(Chunk570140.Z, {
       receivedAt: o
     } = e;
     if (null != r && Object.keys(r).length > 0) {
-      let e = (0, T.b)(r, i),
+      let e = (0, S.b)(r, i),
         n = [...null != (t = P[i]) ? t : []],
         a = n.findIndex(t => t.id === (null == e ? true : e.id));
       a > false ? n[a] = e : n.push(e), P[i] = n
@@ -224,7 +224,7 @@ let V = new Z(Chunk570140.Z, {
       channelId: n,
       error: r,
       receivedAt: i
-    } = e, a = t.filter(e => Object.keys(e).length > 0).map(e => (0, T.b)(e, n));
+    } = e, a = t.filter(e => Object.keys(e).length > 0).map(e => (0, S.b)(e, n));
     if (null != o && o.channelId === n && !a.some(e => e.id === (null == o ? true : o.summaryId))) {
       var s;
       let e = (null != (s = P[n]) ? s : []).find(e => e.id === (null == o ? true : o.summaryId));
@@ -330,7 +330,7 @@ let V = new Z(Chunk570140.Z, {
         channelIds: i
       }
     } = e, a = c().toPairs(t).reduce((e, t) => {
-      let [n, r] = t, i = c().chain(r.map(e => (0, T.b)(e, n))).sortBy(e => I.default.extractTimestamp(e.startId)).takeRight(U).reverse().filter(e => Object.keys(e).length > 0).value();
+      let [n, r] = t, i = c().chain(r.map(e => (0, S.b)(e, n))).sortBy(e => I.default.extractTimestamp(e.startId)).takeRight(U).reverse().filter(e => Object.keys(e).length > 0).value();
       return e[n] = i, e
     }, {}), o = i.reduce((e, t) => {
       var i;
@@ -353,7 +353,7 @@ let V = new Z(Chunk570140.Z, {
       channel_id: i,
       summaries: a,
       guild_id: o
-    } = e, s = Date.now(), l = c().chain(a).sortBy(e => I.default.extractTimestamp(e.start_id)).filter(e => Object.keys(e).length > 0).map(e => (0, T.b)(e, i)).reverse().value(), u = null != (n = P[i]) ? n : [], d = c().chain(l).concat(u).sortBy(e => I.default.extractTimestamp(e.startId)).takeRight(U).uniqBy("id").reverse().value();
+    } = e, s = Date.now(), l = c().chain(a).sortBy(e => I.default.extractTimestamp(e.start_id)).filter(e => Object.keys(e).length > 0).map(e => (0, S.b)(e, i)).reverse().value(), u = null != (n = P[i]) ? n : [], d = c().chain(l).concat(u).sortBy(e => I.default.extractTimestamp(e.startId)).takeRight(U).uniqBy("id").reverse().value();
     P[i] = d, w[i] = R(C({}, w[i]), {
       error: true,
       fetching: null != (r = null == (t = w[i]) ? true : t.fetching) && r,

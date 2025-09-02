@@ -55,7 +55,7 @@ let w = (e, t) => {
           className: C.container,
           children: (0, r.jsxs)("div", {
             className: C.marketingPageTextContainer,
-            children: [M && (0, r.jsx)(T.Z, {}), (0, r.jsx)(c.X6q, {
+            children: [M && (0, r.jsx)(S.Z, {}), (0, r.jsx)(c.X6q, {
               className: C.marketingPageHeading,
               variant: "display-sm",
               color: "header-primary",
@@ -105,7 +105,7 @@ let w = (e, t) => {
             ref: x,
             children: (0, r.jsx)("source", {
               src: V ? N.Z : P.Z,
-              type: V ? S.m.MP4 : S.m.WEBM
+              type: V ? T.m.MP4 : T.m.WEBM
             })
           })
         })]

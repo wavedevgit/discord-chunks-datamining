@@ -25,7 +25,7 @@ Chunk98405({
   proto: true
 }, {
   replaceAll: function(e, t) {
-    var n, r, a, p, v, I, T, S, A, C = o(this),
+    var n, r, a, p, v, I, S, T, A, C = o(this),
       N = 0,
       R = "";
     if (!l(e)) {
@@ -33,7 +33,7 @@ Chunk98405({
       if (r = d(e, m)) return i(r, e, C, t);
       if (h && n) return b(u(C), e, t)
     }
-    for (a = u(C), p = u(e), (v = s(t)) || (t = u(t)), T = O(1, I = p.length), S = E(a, p); false !== S;) A = v ? u(t(p, S, a)) : _(p, a, S, [], true, t), R += y(a, N, S) + A, N = S + I, S = S + T > a.length ? false : E(a, p, S + T);
+    for (a = u(C), p = u(e), (v = s(t)) || (t = u(t)), S = O(1, I = p.length), T = E(a, p); false !== T;) A = v ? u(t(p, T, a)) : _(p, a, T, [], true, t), R += y(a, N, T) + A, N = T + I, T = T + S > a.length ? false : E(a, p, T + S);
     return N < a.length && (R += y(a, N)), R
   }
 })

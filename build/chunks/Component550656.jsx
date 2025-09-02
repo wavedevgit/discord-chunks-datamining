@@ -31,8 +31,8 @@ function E(e) {
     align: O = "center",
     spacing: v = h,
     caretConfig: I,
-    layerContext: T,
-    animationStyle: S,
+    layerContext: S,
+    animationStyle: T,
     positionKey: A,
     onMouseEnter: C,
     onMouseLeave: N
@@ -77,14 +77,14 @@ function E(e) {
           }) : b
         })]
       });
-      return S ? (0, r.jsx)(s.animated.div, {
-        style: S,
+      return T ? (0, r.jsx)(s.animated.div, {
+        style: T,
         children: O
       }) : O
     }
   });
-  return null != T ? (0, r.jsx)(l.mh, {
-    layerContext: T,
+  return null != S ? (0, r.jsx)(l.mh, {
+    layerContext: S,
     children: D
   }) : D
 }

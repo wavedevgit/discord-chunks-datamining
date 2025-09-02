@@ -2,8 +2,8 @@
 /** chunk id: 208049, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $d: () => T,
-  AA: () => S,
+  $d: () => S,
+  AA: () => T,
   Db: () => x,
   Dx: () => I,
   R: () => w,
@@ -91,7 +91,7 @@ async function I(e) {
   });
   return (0, f.o3)(l.body, t)
 }
-async function T(e) {
+async function S(e) {
   let {
     guildId: t,
     soundId: n,
@@ -111,7 +111,7 @@ async function T(e) {
   });
   return (0, f.o3)(l.body, t)
 }
-async function S(e, t) {
+async function T(e, t) {
   await a.tn.del({
     url: h.ANM.GUILD_SOUNDBOARD_SOUND(e, t),
     oldFormErrors: true,

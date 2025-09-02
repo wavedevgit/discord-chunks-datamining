@@ -60,11 +60,11 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = {
+let S = {
     transform: "scale(0.7)",
     opacity: 0
   },
-  S = {
+  T = {
     transform: "scale(1)",
     opacity: 1
   };
@@ -103,10 +103,10 @@ function C() {
       return null == (t = e.channel) ? true : t.id
     },
     enter: {
-      from: T,
-      to: S
+      from: S,
+      to: T
     },
-    leave: T,
+    leave: S,
     config: {
       mass: 1,
       tension: 500,

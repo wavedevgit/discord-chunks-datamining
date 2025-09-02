@@ -76,7 +76,7 @@ let v = (0, Chunk624138.Mg)(Chunk477690.Z.FULL_SCREEN_LAYER_ANIMATION_DURATION),
     })
   }));
 
-function T(e) {
+function S(e) {
   let {
     item: t,
     containerRef: n
@@ -96,7 +96,7 @@ function T(e) {
     })
   })
 }
-let S = {
+let T = {
     enter: Chunk102521.enter,
     enterActive: Chunk102521.enterActive,
     enterDone: Chunk102521.enterDone,
@@ -116,7 +116,7 @@ let S = {
 function C() {
   let {
     reducedMotion: e
-  } = Chunk647438.useContext(Chunk481060.Sfi), t = module.enabled ? A : S, n = I(e => e.fullScreenLayers), a = require.map(e => ({
+  } = Chunk647438.useContext(Chunk481060.Sfi), t = module.enabled ? A : T, n = I(e => e.fullScreenLayers), a = require.map(e => ({
     item: e,
     nodeRef: i.createRef()
   }));
@@ -140,7 +140,7 @@ function C() {
           })
         },
         unmountOnExit: true,
-        children: (0, r.jsx)(T, {
+        children: (0, r.jsx)(S, {
           containerRef: a,
           item: i
         })

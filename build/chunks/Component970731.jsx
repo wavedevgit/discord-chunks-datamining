@@ -88,17 +88,17 @@ function y(e) {
       color: o.zx.Colors.BRAND,
       look: o.zx.Looks.FILLED
     },
-    secondaryButtonProps: T = {
+    secondaryButtonProps: S = {
       color: o.zx.Colors.BRAND_INVERTED
     },
-    onComponentMount: S,
+    onComponentMount: T,
     asset: A,
     markAsDismissed: C,
     caretPosition: N = "caretTopCenter",
     buttonLayout: R = 0
   } = e;
   (0, l.ZP)(() => {
-    null == S || S()
+    null == T || T()
   });
   let P = null != y,
     w = e => {
@@ -124,7 +124,7 @@ function y(e) {
         [u.upsellButtonsAdjacent]: 0 === R,
         [u.upsellButtonsStacked]: 1 === R
       }),
-      children: [P ? (0, r.jsx)(o.zx, p(f({}, T), {
+      children: [P ? (0, r.jsx)(o.zx, p(f({}, S), {
         fullWidth: 1 === R,
         onClick: D,
         children: y

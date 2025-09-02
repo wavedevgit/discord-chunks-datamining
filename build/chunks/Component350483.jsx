@@ -2,7 +2,7 @@
 /** chunk id: 350483, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -79,7 +79,7 @@ function I(e, t) {
   }, ...v(e, t)]
 }
 
-function T(e, t) {
+function S(e, t) {
   var i, a;
   let s, {
       channelPredicate: d = () => true,
@@ -89,11 +89,11 @@ function T(e, t) {
       withVoiceChannels: b = false
     } = t,
     v = null != (i = l.Z.getState().guildId) ? i : h.ME,
-    T = l.Z.getState().channelId,
-    S = O(v, e),
-    A = e > 0 ? 0 : S.length - 1,
+    S = l.Z.getState().channelId,
+    T = O(v, e),
+    A = e > 0 ? 0 : T.length - 1,
     C = I(v, b),
-    N = C.indexOf(T) + e;
+    N = C.indexOf(S) + e;
   for (; null != v && "" !== v;) {
     if (s = C[N], f(v))
       for (; null != s && "" !== s;) {
@@ -109,7 +109,7 @@ function T(e, t) {
         });
         N += e, s = C[N]
       }
-    if (A += e, null == (v = S[A]) || "" === v) break;
+    if (A += e, null == (v = T[A]) || "" === v) break;
     C = I(v, b), N = e < 0 ? C.length - 1 : 0
   }
   _.S.dispatch(h.CkL.SHAKE_APP, {
@@ -117,4 +117,4 @@ function T(e, t) {
     intensity: 2
   })
 }
-let S = a().throttle(T, Chunk981631.aZC)
+let T = a().throttle(S, Chunk981631.aZC)

@@ -11,7 +11,7 @@ require.d(exports, {
   _U: () => m,
   fL: () => E,
   gG: () => s,
-  gv: () => T,
+  gv: () => S,
   j8: () => p,
   nz: () => h,
   p: () => a,
@@ -59,6 +59,6 @@ let b = 100,
 var I = function(e) {
     return e.NEW_EVENT = "Upcoming Event Notice", e.EVENT_STARTING_SOON = "Event Starting Soon Notice", e
   }({}),
-  T = function(e) {
+  S = function(e) {
     return e[e.UNINTERESTED = 0] = "UNINTERESTED", e[e.INTERESTED = 1] = "INTERESTED", e
   }({})

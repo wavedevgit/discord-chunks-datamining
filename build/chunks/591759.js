@@ -29,13 +29,13 @@ function I(e, t) {
   return null != e && null != t && e !== t
 }
 
-function T(e) {
+function S(e) {
   return v.has(e.toLowerCase())
 }
 
-function S(e) {
+function T(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  return null != e && (d.test(e) || t && T(e))
+  return null != e && (d.test(e) || t && S(e))
 }
 
 function A(e) {
@@ -63,7 +63,7 @@ function P(e) {
   if (null != e) {
     var n;
     let r = null == (n = c.Z.toURLSafe(e)) ? true : n.hostname;
-    if (null != r && S(r, t)) returntrue
+    if (null != r && T(r, t)) returntrue
   }
   returnfalse
 }
@@ -78,7 +78,7 @@ let D = {
     return "".concat(location.protocol, "//").concat(n).concat(e)
   },
   isOriginalContentTypeDifferent: I,
-  isDiscordHostname: S,
+  isDiscordHostname: T,
   isDiscordLocalhost: function(e, t) {
     return null != e && null != t && window.location.host === e
   },

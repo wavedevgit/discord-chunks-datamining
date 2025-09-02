@@ -98,7 +98,7 @@ let k = 24,
         className: D.benefitsList,
         "aria-labelledby": m,
         children: l.map((e, t) => (0, r.jsx)("li", {
-          children: (0, r.jsx)(S.Z, {
+          children: (0, r.jsx)(T.Z, {
             guildId: a,
             benefit: e
           }, (0, h.ab)(e))
@@ -170,7 +170,7 @@ let k = 24,
         }),
         children: [(0, r.jsx)(c.LZC, {
           size: 8
-        }), (0, r.jsx)(T.Z, {
+        }), (0, r.jsx)(S.Z, {
           role: d,
           guildId: n,
           className: D.roleMessagePreview
@@ -226,8 +226,8 @@ let k = 24,
     } = e, y = (0, m.jO)(n), {
       openModal: O,
       canOpenModal: v,
-      cannotOpenReason: T,
-      isCheckingTrialEligibility: S
+      cannotOpenReason: S,
+      isCheckingTrialEligibility: T
     } = (0, N.Z)(y, a, d, p), x = (0, s.e7)([_.Z], () => _.Z.isSyncing), {
       activeSubscription: j,
       activeSubscriptionListing: k
@@ -278,12 +278,12 @@ let k = 24,
               disabled: true,
               children: G ? w.intl.string(w.t.iKHmu7) : w.intl.string(w.t.XvAuMj)
             }) : (0, r.jsx)(c.ua7, {
-              text: v ? null : T,
-              "aria-label": null != (t = v && T) && t,
+              text: v ? null : S,
+              "aria-label": null != (t = v && S) && t,
               children: e => (0, r.jsx)(I.Z, M(L({}, e), {
                 fullWidth: true,
                 disabled: !v || x,
-                submitting: S,
+                submitting: T,
                 onClick: O,
                 onlyShineOnHover: true,
                 children: w.intl.string(w.t.fM5Zsb)
