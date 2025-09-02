@@ -1,15 +1,16 @@
 /** Chunk was on 1272 **/
 /** chunk id: 705444, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => u
 });
 var Chunk243814 = require("./243814.js"),
   Chunk570140 = require("./570140.js"),
   Chunk569984 = require("./569984.js"),
+  Chunk626135 = require("./626135.js"),
   Chunk996106 = require("./996106.js"),
   Chunk914946 = require("./914946.js"),
   Chunk981631 = require("./981631.js");
-let c = {
+let u = {
   [Chunk981631.Etm.GET_QUEST_ENROLLMENT_STATUS]: {
     scope: Chunk243814.x.IDENTIFY,
     handler(e) {
@@ -17,17 +18,17 @@ let c = {
       let {
         socket: i,
         args: {
-          quest_id: c
+          quest_id: a
         }
       } = e;
-      (0, o.bu)(i.transport);
-      let u = (0, o._f)(i.application),
-        d = l.Z.getQuest(c);
-      if (null == d || d.config.application.id !== u) throw new a.Z({
-        errorCode: s.lTL.INVALID_COMMAND
-      }, "Quest not found: ".concat(c));
+      (0, s.bu)(i.transport);
+      let u = (0, s._f)(i.application),
+        d = l.Z.getQuest(a);
+      if (null == d || d.config.application.id !== u) throw new o.Z({
+        errorCode: c.lTL.INVALID_COMMAND
+      }, "Quest not found: ".concat(a));
       return {
-        quest_id: c,
+        quest_id: a,
         is_enrolled: (null == (t = d.userStatus) ? true : t.enrolledAt) != null,
         enrolled_at: null != (r = null == (n = d.userStatus) ? true : n.enrolledAt) ? r : null
       }
@@ -43,19 +44,22 @@ let c = {
           quest_id: r
         }
       } = e;
-      (0, o.bu)(n.transport);
-      let c = (0, o._f)(n.application),
-        u = l.Z.getQuest(r);
-      if (null == u || u.config.application.id !== c) throw new a.Z({
-        errorCode: s.lTL.INVALID_COMMAND
+      (0, s.bu)(n.transport);
+      let u = (0, s._f)(n.application),
+        d = l.Z.getQuest(r);
+      if (null == d || d.config.application.id !== u) throw new o.Z({
+        errorCode: c.lTL.INVALID_COMMAND
       }, "Quest not found: ".concat(r));
-      if ((null == (t = u.userStatus) ? true : t.enrolledAt) == null) throw new a.Z({
-        errorCode: s.lTL.INVALID_COMMAND
+      if ((null == (t = d.userStatus) ? true : t.enrolledAt) == null) throw new o.Z({
+        errorCode: c.lTL.INVALID_COMMAND
       }, "User is not enrolled in quest");
-      return i.Z.dispatch({
+      return a.default.track(c.rMx.RPC_QUEST_START_TIMER_CALLED, {
+        application_id: u,
+        quest_id: r
+      }), i.Z.dispatch({
         type: "QUEST_APPLICATION_START_TIMER",
         questId: r,
-        applicationId: c
+        applicationId: u
       }), {
         success: true
       }
