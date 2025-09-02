@@ -28,7 +28,7 @@ function l(e) {
           className: s.row,
           children: [(0, r.jsx)(a.Z, {
             game: e,
-            size: a.Z.Sizes.XXSMALL
+            size: a.A.XXSMALL
           }), (0, r.jsx)(i.Text, {
             variant: "text-xs/normal",
             color: "text-muted",

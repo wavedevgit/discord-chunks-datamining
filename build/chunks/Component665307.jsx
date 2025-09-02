@@ -98,7 +98,7 @@ let L = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
       align: _.Z.Align.CENTER,
       children: [(0, i.jsx)(E.Z, {
         game: e.application,
-        size: E.Z.Sizes.SMALL,
+        size: E.A.SMALL,
         className: x.gameIcon
       }), (0, i.jsxs)("div", {
         className: x.nameCellInfo,

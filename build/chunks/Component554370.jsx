@@ -140,7 +140,7 @@ let $ = Chunk647438.memo(function(e) {
     return t && n ? (0, i.jsx)(L.Z, {
       className: Y.closeContainer,
       children: (0, i.jsx)(A.Z, {
-        onClick: () => d.Z.setInputLocked(false, (0, Z.getPID)()),
+        onClick: () => d.Z.setInputLocked(false, (0, w.getPID)()),
         IconComponent: c.d$P
       })
     }) : null
@@ -159,7 +159,7 @@ function ei() {
 }
 
 function er(e) {
-  let t = U.ZP.isInputLocked((0, Z.getPID)());
+  let t = U.ZP.isInputLocked((0, w.getPID)());
   "alt" !== e.key.toLowerCase() || t || ("keyup" === e.type.toLowerCase() ? j.S.dispatch(H.CkL.OVERLAY_V3_SHOW_WIDGETS, {
     show: true
   }) : "keydown" === e.type.toLowerCase() && j.S.dispatch(H.CkL.OVERLAY_V3_SHOW_WIDGETS, {
@@ -177,9 +177,9 @@ function eo(e) {
     hasZeroSizeDimension: C,
     keybind: A
   } = (0, a.cj)([U.ZP, I.default, x.Z, _.ZP], () => {
-    let e = x.Z.windowSize((0, w.ZY)(n)),
+    let e = x.Z.windowSize((0, Z.ZY)(n)),
       t = _.ZP.getOverlayKeybind(),
-      i = (0, Z.getPID)();
+      i = (0, w.getPID)();
     return {
       locked: U.ZP.isInputLocked(i),
       focused: U.ZP.isFocused(i),
@@ -204,7 +204,7 @@ function eo(e) {
       n.current.unmount()
     }), [])
   }(() => {
-    d.Z.overlayReady((0, Z.getPID)()), n.addEventListener("keydown", er), n.addEventListener("keyup", er), Q && (n.document.hasFocus() && d.Z.setFocusedPID(Z.DEV_PID), n.addEventListener("focus", en), n.addEventListener("blur", ei))
+    d.Z.overlayReady((0, w.getPID)()), n.addEventListener("keydown", er), n.addEventListener("keyup", er), Q && (n.document.hasFocus() && d.Z.setFocusedPID(w.DEV_PID), n.addEventListener("focus", en), n.addEventListener("blur", ei))
   }, () => {
     n.removeEventListener("keydown", er), n.removeEventListener("keyup", er), Q && (n.removeEventListener("focus", en), n.removeEventListener("blur", ei))
   });
@@ -222,7 +222,7 @@ function eo(e) {
       {
         allowActivityWidget: c
       } = (0, T.Rb)("overlay"),
-      u = null != (e = S.default.getFocusedPID()) ? e : (0, Z.getPID)();
+      u = null != (e = S.default.getFocusedPID()) ? e : (0, w.getPID)();
     if (M.default.hasChangedRenderMode(u)) return;
     let p = z.Z.isNotificationDisabled(P.OverlayNotificationDisabledSetting.WELCOME_GENERAL),
       f = z.Z.isNotificationDisabled(P.OverlayNotificationDisabledSetting.GO_LIVE_NUDGE),

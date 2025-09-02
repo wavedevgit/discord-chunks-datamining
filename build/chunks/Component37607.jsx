@@ -30,7 +30,7 @@ function x(e) {
       className: h.header,
       children: [(0, i.jsx)(u.Z, {
         game: r,
-        size: u.Z.Sizes.XSMALL
+        size: u.A.XSMALL
       }), (0, i.jsx)(o.X6q, {
         variant: "heading-md/semibold",
         children: null == r ? true : r.name

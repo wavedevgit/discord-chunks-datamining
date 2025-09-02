@@ -515,7 +515,7 @@ class eh extends(r = Chunk647438.PureComponent) {
         guildClassName: Chunk982710.guildDescriptionIcon,
         game: Chunk120356,
         guild: s,
-        size: Chunk925329.Z.Sizes.XSMALL,
+        size: Chunk925329.A.XSMALL,
         skuId: null != Chunk647438 ? Chunk647438 : null == Chunk442837 ? true : Chunk442837.id
       })
     } else if (null != Chunk442837) {
@@ -540,7 +540,7 @@ class eh extends(r = Chunk647438.PureComponent) {
         guildClassName: Chunk982710.guildDescriptionIcon,
         game: Chunk120356,
         guild: s,
-        size: Chunk925329.Z.Sizes.XSMALL,
+        size: Chunk925329.A.XSMALL,
         skuId: Chunk442837.id
       })
     } else e = (0, Chunk951288.jsx)(Chunk481060.SrA, {

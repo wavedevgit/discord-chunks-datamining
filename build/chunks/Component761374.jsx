@@ -49,7 +49,7 @@ function N(e) {
   return e
 }
 
-function Z(e, t) {
+function w(e, t) {
   if (null == e) return {};
   var n, i, r = function(e, t) {
     if (null == e) return {};
@@ -64,7 +64,7 @@ function Z(e, t) {
   }
   return r
 }
-let w = [],
+let Z = [],
   P = (e, t) => ({
     fixed: true,
     width: e,
@@ -118,7 +118,7 @@ function R(e) {
     padding: r,
     minSize: o,
     containerSpecs: l
-  } = e, s = Z(e, ["widgetId", "size", "borderWidth", "padding", "minSize", "containerSpecs"]);
+  } = e, s = w(e, ["widgetId", "size", "borderWidth", "padding", "minSize", "containerSpecs"]);
   let {
     width: c,
     height: u
@@ -201,7 +201,7 @@ function L(e) {
     participantsVersion: ea
   } = (S = B && en || H && G, P = !B && en || !H && G, (0, o.cj)([h.Z, d.Z], () => {
     if (null == q) return {
-      streamParticipants: w,
+      streamParticipants: Z,
       participantsVersion: false,
       activeStreams: new Set
     };
@@ -290,7 +290,7 @@ function L(e) {
           padding: s,
           widget: c
         } = e,
-        u = Z(e, ["id", "containerSize", "tileSize", "sizeOffset", "layout", "padding", "widget"]);
+        u = w(e, ["id", "containerSize", "tileSize", "sizeOffset", "layout", "padding", "widget"]);
       if (null == c) return;
       if (0 === l) return void R(N({
         widgetId: t,
@@ -330,7 +330,7 @@ function L(e) {
           participants: a,
           widget: s
         } = e,
-        c = Z(e, ["id", "sizeOffset", "containerSize", "padding", "participants", "widget"]);
+        c = w(e, ["id", "sizeOffset", "containerSize", "padding", "participants", "widget"]);
       null != s && R(N({
         widgetId: t,
         size: A(n, a, {
@@ -352,7 +352,7 @@ function L(e) {
           widget: r,
           padding: l
         } = e,
-        a = Z(e, ["id", "sizeOffset", "widget", "padding"]);
+        a = w(e, ["id", "sizeOffset", "widget", "padding"]);
       null != r && R(N({
         widgetId: t,
         size: T,

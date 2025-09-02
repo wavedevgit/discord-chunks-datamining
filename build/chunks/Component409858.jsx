@@ -332,7 +332,7 @@ class J extends Chunk647438.Component {
             [Chunk269142.contentCustomGift]: Chunk728345
           }),
           children: [!Chunk812206 && !Chunk745510 && (null == Chunk647438.giftStyle || Chunk728345 && Chunk884697) && (0, Chunk951288.jsx)(Chunk925329.Z, {
-            size: Chunk925329.Z.Sizes.LARGE,
+            size: Chunk925329.A.LARGE,
             game: module,
             skuId: Chunk647438.skuId
           }), Chunk703656 && (0, Chunk951288.jsx)("img", {

@@ -1,7 +1,7 @@
 /** Chunk was on 46290 **/
 /** chunk id: 588909, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => w
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -70,7 +70,7 @@ function N(e) {
   })
 }
 
-function Z(e, t) {
+function w(e, t) {
   let {
     trackView: c,
     trackClick: u
@@ -138,9 +138,9 @@ function Z(e, t) {
         })
       })
   }
-  let Z = (0, d.zu)(r.z.OVERLAY_OOP_WELCOME_NUX),
-    w = Z ? S.intl.string(S.t.KWDIrq) : S.intl.string(S.t["prl+ra"]),
-    P = Z ? true : S.intl.string(S.t.R3CpPT),
+  let w = (0, d.zu)(r.z.OVERLAY_OOP_WELCOME_NUX),
+    Z = w ? S.intl.string(S.t.KWDIrq) : S.intl.string(S.t["prl+ra"]),
+    P = w ? true : S.intl.string(S.t.R3CpPT),
     T = null != e ? (0, i.jsx)(N, {
       game: e
     }) : (0, i.jsx)("img", {
@@ -150,25 +150,25 @@ function Z(e, t) {
     });
   return C(j({
     icon: T,
-    title: w,
+    title: Z,
     body: P,
     hint: () => (0, y.Q)((0, O.P)(), S.t["z8/sgI"], S.intl.string(S.t.jZkzVF), true),
-    confirmText: Z ? true : S.intl.string(S.t.TxyTbm),
-    onConfirmClick: Z ? true : () => {
-      u("unlock"), a.Z.setInputLocked(false, (0, f.getPID)()), Z || (0, d.Q3)(r.z.OVERLAY_OOP_WELCOME_NUX)
+    confirmText: w ? true : S.intl.string(S.t.TxyTbm),
+    onConfirmClick: w ? true : () => {
+      u("unlock"), a.Z.setInputLocked(false, (0, f.getPID)()), w || (0, d.Q3)(r.z.OVERLAY_OOP_WELCOME_NUX)
     }
   }, _), {
     onNotificationShow: e => {
       var t;
-      c(), Z || (0, d.Q3)(r.z.OVERLAY_OOP_WELCOME_NUX), null == (t = _.onNotificationShow) || t.call(_, e)
+      c(), w || (0, d.Q3)(r.z.OVERLAY_OOP_WELCOME_NUX), null == (t = _.onNotificationShow) || t.call(_, e)
     },
     onNotificationClick: (e, t) => {
       var n;
-      u("unlock"), a.Z.setInputLocked(false, (0, f.getPID)()), Z || (0, d.Q3)(r.z.OVERLAY_OOP_WELCOME_NUX), null == (n = _.onNotificationClick) || n.call(_, e, t)
+      u("unlock"), a.Z.setInputLocked(false, (0, f.getPID)()), w || (0, d.Q3)(r.z.OVERLAY_OOP_WELCOME_NUX), null == (n = _.onNotificationClick) || n.call(_, e, t)
     },
     onDismissClick: (e, t) => {
       var n;
-      u("dismiss"), Z || (0, d.Q3)(r.z.OVERLAY_OOP_WELCOME_NUX), null == (n = _.onDismissClick) || n.call(_, e, t)
+      u("dismiss"), w || (0, d.Q3)(r.z.OVERLAY_OOP_WELCOME_NUX), null == (n = _.onDismissClick) || n.call(_, e, t)
     }
   })
 }

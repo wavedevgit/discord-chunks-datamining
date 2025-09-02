@@ -498,7 +498,7 @@ function ej(e) {
     icon: (0, r.jsx)(R.Z, {
       game: s,
       pid: null == o ? true : o.pid,
-      size: R.Z.Sizes.MEDIUM
+      size: R.A.MEDIUM
     }),
     "aria-label": ed.intl.string(ed.t["87O5GB"]),
     action: (0, r.jsx)(h.P3F, {
@@ -559,7 +559,7 @@ function eM(e) {
   return (0, r.jsx)(R.Z, {
     game: o,
     pid: a,
-    size: R.Z.Sizes.SMALL
+    size: R.A.SMALL
   })
 }
 

@@ -1,7 +1,7 @@
 /** Chunk was on 46746 **/
-/** chunk id: 77118, original params: e,t,n (module,exports,require) **/
+/** chunk id: 215915, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Q: () => u
+  E: () => u
 });
 var r, i, Chunk442837 = require("./442837.js"),
   Chunk722733 = require("./722733.js"),
@@ -11,7 +11,7 @@ let c = {
     smarterSourceOrdering: false
   },
   d = (0, Chunk722733.Z)({
-    name: "2025-08-go-live-followups",
+    name: "2025-08-go-live-source-ordering",
     kind: "user",
     defaultConfig: c,
     variations: {

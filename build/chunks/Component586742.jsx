@@ -77,7 +77,7 @@ let D = Chunk647438.memo(function(e) {
   }),
   R = Chunk647438.memo(function(e) {
     let {
-      context: t = w.Yn.DEFAULT,
+      context: t = Z.Yn.DEFAULT,
       participants: o,
       locked: l,
       channel: a,
@@ -86,7 +86,7 @@ let D = Chunk647438.memo(function(e) {
       shouldDisplay: d
     } = e, p = r.useCallback((e, r) => {
       let o = e.user;
-      (0, _.Ws)(Z.Odu.VIDEO, {
+      (0, _.Ws)(w.Odu.VIDEO, {
         type: _.Qu.CAMERA,
         value: _.bk.SETTINGS_OPENED,
         userId: null == o ? true : o.id
@@ -98,7 +98,7 @@ let D = Chunk647438.memo(function(e) {
           user: o,
           mediaEngineContext: t,
           onWatchStream: () => {
-            (0, _.Ws)(Z.Odu.VIDEO, {
+            (0, _.Ws)(w.Odu.VIDEO, {
               type: _.Qu.GO_LIVE,
               value: _.bk.ENABLED,
               userId: null == o ? true : o.id
@@ -111,7 +111,7 @@ let D = Chunk647438.memo(function(e) {
       return null == (t = e.user) ? true : t.id
     })), [o]);
     r.useEffect(() => {
-      d && (0, _.zi)(Z.Odu.VIDEO, {
+      d && (0, _.zi)(w.Odu.VIDEO, {
         locked: v.default.isInstanceLocked(),
         shownUserIds: Array.from(h),
         liveUserIds: Array.from(h),
@@ -143,7 +143,7 @@ let D = Chunk647438.memo(function(e) {
   }),
   L = Chunk647438.memo(function(e) {
     let {
-      context: t = w.Yn.DEFAULT,
+      context: t = Z.Yn.DEFAULT,
       participants: n,
       participantsVersion: o,
       locked: a,
@@ -243,8 +243,8 @@ function z(e) {
       cropSelfVideo: true,
       version: O
     }),
-    Z = (0, a.e7)([h.Z], () => h.Z.getWindowState(N.$J)),
-    w = {
+    w = (0, a.e7)([h.Z], () => h.Z.getWindowState(N.$J)),
+    Z = {
       id: e.widget.id,
       containerSize: {
         containerHeight: S,
@@ -254,8 +254,8 @@ function z(e) {
       padding: e.padding,
       borderWidth: e.borderWidth,
       containerSpecs: {
-        maxX: null != (t = null == Z ? true : Z.width) ? t : e.width - c,
-        maxY: null != (n = null == Z ? true : Z.height) ? n : e.height - c,
+        maxX: null != (t = null == w ? true : w.width) ? t : e.width - c,
+        maxY: null != (n = null == w ? true : w.height) ? n : e.height - c,
         minX: 0,
         minY: 0
       },
@@ -263,8 +263,8 @@ function z(e) {
       orientedPosition: {
         top: 0,
         left: 0,
-        bottom: null != (o = null == Z ? true : Z.height) ? o : e.height,
-        right: null != (l = null == Z ? true : Z.width) ? l : e.width
+        bottom: null != (o = null == w ? true : w.height) ? o : e.height,
+        right: null != (l = null == w ? true : w.width) ? l : e.width
       }
     };
   return ! function(e) {
@@ -317,7 +317,7 @@ function z(e) {
   }({
     horizontal: v,
     widget: e.widget,
-    widgetLayoutSpecs: w
+    widgetLayoutSpecs: Z
   }), (0, i.jsx)(L, A(k({}, e), {
     channel: s,
     participants: C,

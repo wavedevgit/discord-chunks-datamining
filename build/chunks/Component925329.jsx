@@ -2,19 +2,20 @@
 /** chunk id: 925329, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  A: () => _,
   Z: () => g
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
+  Chunk120356 = require("./120356.js"),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk829968 = require("./829968.js"),
   Chunk565138 = require("./565138.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk520816 = require("./520816.js");
-let f = {
+let _ = {
   XXSMALL: Chunk520816.xxsmall,
   XSMALL: Chunk520816.xsmall,
   SMALL: Chunk520816.small,
@@ -23,86 +24,85 @@ let f = {
   XLARGE: Chunk520816.xlarge
 };
 
-function _(e) {
+function p(e) {
   switch (e) {
-    case f.XXSMALL:
+    case _.XXSMALL:
       return 16;
-    case f.XSMALL:
+    case _.XSMALL:
       return 24;
-    case f.SMALL:
+    case _.SMALL:
       return 30;
-    case f.MEDIUM:
+    case _.MEDIUM:
       return 40;
-    case f.LARGE:
+    case _.LARGE:
       return 60;
     default:
       return 80
   }
 }
 
-function p(e) {
+function h(e) {
   if (null == e) return null;
   switch (e) {
-    case c.Si.GUILD:
+    case u.Si.GUILD:
       return n(632342);
-    case c.Si.TIER_0:
+    case u.Si.TIER_0:
       return n(467596);
-    case c.Si.TIER_1:
+    case u.Si.TIER_1:
       return n(670957);
-    case c.Si.TIER_2:
-    case c.Si.LEGACY:
+    case u.Si.TIER_2:
+    case u.Si.LEGACY:
       return n(480768);
     default:
       return null
   }
 }
 
-function h(e) {
+function m(e) {
   switch (e) {
-    case f.XSMALL:
-      return l.Z.Sizes.SMALLER;
-    case f.SMALL:
-      return l.Z.Sizes.SMALL;
-    case f.LARGE:
-      return l.Z.Sizes.LARGE;
+    case _.XSMALL:
+      return c.Z.Sizes.SMALLER;
+    case _.SMALL:
+      return c.Z.Sizes.SMALL;
+    case _.LARGE:
+      return c.Z.Sizes.LARGE;
     default:
-    case f.MEDIUM:
-      return l.Z.Sizes.MEDIUM
+    case _.MEDIUM:
+      return c.Z.Sizes.MEDIUM
   }
 }
-let m = e => {
-  let t, {
-    game: n,
-    guild: i,
-    skuId: c,
-    pid: m,
-    className: g,
-    guildClassName: E,
-    size: b = f.MEDIUM,
-    allowUnknownGameIcon: y = true
+let g = Chunk647438.forwardRef(function(e, t) {
+  let n, {
+    game: i,
+    guild: a,
+    skuId: u,
+    pid: g,
+    className: E,
+    guildClassName: b,
+    size: y = _.MEDIUM,
+    allowUnknownGameIcon: O = true
   } = e;
-  if (null != c && (t = p(c)), null != n && null == t && (t = n.getIconURL(_(b))), true === (t = (0, s.Z)(m, t)) && null != i) {
-    let e = h(b);
-    return (0, r.jsx)(l.Z, {
-      className: a()(d.gameIcon, E, g),
-      guild: i,
+  if (null != u && (n = h(u)), null != i && null == n && (n = i.getIconURL(p(y))), true === (n = (0, l.Z)(g, n)) && null != a) {
+    let e = m(y);
+    return (0, r.jsx)(c.Z, {
+      className: o()(f.gameIcon, b, E),
+      guild: a,
       size: e
     })
   }
-  if (true === t || "" === t) return y ? (0, r.jsx)(o.IMN, {
+  if (true === n || "" === n) return O ? (0, r.jsx)(s.IMN, {
     size: "md",
     color: "currentColor",
-    className: a()(d.gameIcon, b, g)
+    className: o()(f.gameIcon, y, E)
   }) : null;
-  let O = null == n ? true : n.name,
-    v = null != O && "" !== O ? u.intl.formatToPlainString(u.t.tiKyYm, {
-      applicationName: O
-    }) : u.intl.string(u.t["2B/phI"]);
+  let v = null == i ? true : i.name,
+    I = null != v && "" !== v ? d.intl.formatToPlainString(d.t.tiKyYm, {
+      applicationName: v
+    }) : d.intl.string(d.t["2B/phI"]);
   return (0, r.jsx)("img", {
-    alt: v,
-    src: t,
-    className: a()(d.gameIcon, b, g)
+    ref: t,
+    alt: I,
+    src: n,
+    className: o()(f.gameIcon, y, E)
   })
-};
-m.Sizes = f;
-let g = m
+})

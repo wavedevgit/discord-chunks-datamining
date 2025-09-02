@@ -133,8 +133,8 @@ function m(e) {
         }), i))
       }
     }, []),
-    Z = (0, r.useCallback)(() => {}, []),
-    w = (0, r.useCallback)(() => (0, i.jsx)(d.lE, {
+    w = (0, r.useCallback)(() => {}, []),
+    Z = (0, r.useCallback)(() => (0, i.jsx)(d.lE, {
       activity: C,
       currentUser: y,
       showInviteButton: false
@@ -142,8 +142,8 @@ function m(e) {
   return t ? null : (0, i.jsx)(a.r1, {
     containerClassName: h.container,
     listClassName: h.list,
-    closePopout: Z,
-    renderHeader: w,
+    closePopout: w,
+    renderHeader: Z,
     appContext: f.IlC.OVERLAY,
     onAction: N,
     onFriendVisible: S

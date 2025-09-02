@@ -18,7 +18,7 @@ function o(e) {
     children: [(0, r.jsx)(i.Z, {
       className: a.applicationIcon,
       game: t,
-      size: i.Z.Sizes.XSMALL
+      size: i.A.XSMALL
     }), (0, r.jsx)("strong", {
       children: "".concat(t.name).concat(n ? ", " : "")
     })]

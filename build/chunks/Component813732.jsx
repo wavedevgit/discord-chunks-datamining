@@ -56,7 +56,7 @@ function W() {
       align: Chunk600164.Z.Align.CENTER,
       children: [(0, Chunk951288.jsx)(Chunk925329.Z, {
         game: null,
-        size: Chunk925329.Z.Sizes.SMALL,
+        size: Chunk925329.A.SMALL,
         className: Chunk49122.noItemsIcon
       }), (0, Chunk951288.jsx)("span", {
         className: Chunk49122.cardText,

@@ -49,7 +49,7 @@ function y(e, t, n) {
             gameIcon: () => null != E || null != _ ? (0, i.jsx)(s.Z, {
               game: E,
               pid: null == _ ? true : _.pid,
-              size: s.Z.Sizes.XSMALL,
+              size: s.A.XSMALL,
               className: g.gameIcon
             }) : null
           })

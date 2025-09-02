@@ -187,7 +187,7 @@ class x extends Chunk647438.PureComponent {
                 shouldAnimate: this.state.isHovered
               }) : (0, Chunk951288.jsx)(Chunk925329.Z, {
                 game: exports,
-                size: Chunk925329.Z.Sizes.MEDIUM,
+                size: Chunk925329.A.MEDIUM,
                 skuId: o.id
               }), (0, Chunk951288.jsxs)("div", {
                 className: Chunk669255.headerText,

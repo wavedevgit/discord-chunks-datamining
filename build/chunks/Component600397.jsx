@@ -40,7 +40,7 @@ function p(e) {
       className: _.gameContainer,
       children: [(0, r.jsx)(o.Z, {
         game: E,
-        size: o.Z.Sizes.XXSMALL,
+        size: o.A.XXSMALL,
         className: _.inlineIcon
       }), " ", e]
     }),

@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk912278 = require("./912278.js");
 
-function L(t, e, s) {
+function S(t, e, s) {
   return e in t ? Object.defineProperty(t, e, {
     value: s,
     enumerable: true,
@@ -114,7 +114,7 @@ class b extends Chunk647438.Component {
           align: Chunk600164.Z.Align.CENTER,
           children: [(0, Chunk951288.jsx)(Chunk925329.Z, {
             game: module,
-            size: Chunk925329.Z.Sizes.MEDIUM,
+            size: Chunk925329.A.MEDIUM,
             className: Chunk912278.gameIcon
           }), (0, Chunk951288.jsx)("div", {
             className: Chunk912278.gameName,
@@ -146,17 +146,17 @@ class b extends Chunk647438.Component {
     })
   }
   constructor(...t) {
-    super(...t), L(this, "state", {
+    super(...t), S(this, "state", {
       selectedInstallationPath: this.props.defaultInstallationPath,
       hasError: false,
       isInstalling: false,
       hasAcceptedNeccessaryTerms: false
-    }), L(this, "isUnmounted", false), L(this, "handleChangePath", (t, e) => {
+    }), S(this, "isUnmounted", false), S(this, "handleChangePath", (t, e) => {
       this.setState({
         selectedInstallationPath: t,
         hasError: e
       })
-    }), L(this, "install", (t, e) => {
+    }), S(this, "install", (t, e) => {
       let {
         application: s,
         branchId: l,
@@ -171,7 +171,7 @@ class b extends Chunk647438.Component {
         installationPath: this.state.selectedInstallationPath,
         analyticsLocation: n
       }), (0, g.uL)(C.Z5c.APPLICATION_LIBRARY), this.close()
-    }), L(this, "handleInstall", () => {
+    }), S(this, "handleInstall", () => {
       let {
         application: t,
         buildId: e,
@@ -180,11 +180,11 @@ class b extends Chunk647438.Component {
       } = this.props;
       if (null != e && null != s) l || (0, d.B)(), null != t && null != t.eulaId && (0, d.D)(t.eulaId), this.install(e, s);
       else throw Error("Unexpected missing build info for non-premium product")
-    }), L(this, "handlePurchaseTermsChange", t => {
+    }), S(this, "handlePurchaseTermsChange", t => {
       this.setState({
         hasAcceptedNeccessaryTerms: t
       })
-    }), L(this, "close", () => {
+    }), S(this, "close", () => {
       this.props.onClose()
     })
   }

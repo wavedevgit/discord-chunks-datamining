@@ -343,7 +343,7 @@ function et(e) {
     (0, N._)()
   });
   let l = (0, u.e7)([k.Z], () => null == t ? null : k.Z.getApplicationActivity(t), [t]),
-    d = (0, u.Wu)([L.Z, D.Z, Z.Z], () => {
+    d = (0, u.Wu)([L.Z, D.Z, w.Z], () => {
       if (null == t) return [];
       let e = L.Z.nowPlayingCards,
         n = {
@@ -378,7 +378,7 @@ function et(e) {
             default:
               return t
           }
-        }(Z.Z.getUserAffinity(t), i, n)
+        }(w.Z.getUserAffinity(t), i, n)
       })
     }, [t, i]);
   return (0, O.ZP)(() => (j.L(), () => j.v())), {
@@ -425,7 +425,7 @@ function ei(e) {
     showInviteButton: r = true
   } = e, o = null != t && (0, v.Z)(t, F.xjy.JOIN), l = (0, E.q)(null == t ? true : t.application_id), a = null != l && (0, z.yE)(l.flags, F.udG.EMBEDDED);
   return null == t || null == n ? null : (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(w.Z, {
+    children: [(0, i.jsx)(Z.Z, {
       className: Y.activityCard,
       activity: t,
       user: n,

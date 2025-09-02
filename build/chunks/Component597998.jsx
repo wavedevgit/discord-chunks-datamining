@@ -106,17 +106,15 @@ let Y = e => {
       isSelf: i
     } = e;
     return i && null == t ? (0, r.jsx)(l.u, {
-      asContainer: true,
       text: k.intl.string(k.t.qstQub),
       children: (0, r.jsx)(c.svS, {
         className: o()(U.icon, n)
       })
     }, "add-status") : (0, r.jsx)(l.u, {
-      asContainer: true,
       text: (0, v.O8)(t),
       children: (0, r.jsx)(I.Z, {
         hangStatusActivity: t,
-        className: o()(U.hangStatusIcon, n)
+        className: o()(U.icon, n)
       })
     }, "hang-status")
   },
@@ -179,7 +177,6 @@ function K(e) {
       serverDeaf: d
     });
   h && (a ? V.push((0, r.jsx)(l.u, {
-    asContainer: true,
     text: k.intl.string(k.t["PXMZ//"]),
     children: (0, r.jsx)(c.Amn, {
       size: "md",
@@ -188,7 +185,6 @@ function K(e) {
       colorClass: U.strikethrough
     })
   }, "video")) : V.push((0, r.jsx)(l.u, {
-    asContainer: true,
     text: k.intl.string(k.t.FlNoSU),
     children: (0, r.jsx)(c.Odl, {
       size: "md",
@@ -196,7 +192,6 @@ function K(e) {
       className: o()(U.icon, y)
     })
   }, "video"))), N && V.push((0, r.jsx)(l.u, {
-    asContainer: true,
     text: k.intl.string(k.t.HFwRpq),
     children: (0, r.jsx)(c.Mgn, {
       className: o()(U.icon, y),
@@ -205,36 +200,25 @@ function K(e) {
   }, "disconnected"));
   let W = F ? c.iWm : c.nG3;
   null != O && V.push((0, r.jsx)(l.u, {
-    asContainer: true,
     text: (0, _.Z)(O.name),
     children: (0, r.jsx)(W, {
       size: "md",
       color: "currentColor",
       className: o()(U.icon, y)
     })
-  }, "activity")), v === M.YE.XBOX || I === j.wR.XBOX ? V.push((0, r.jsx)("div", {
-    className: U.iconSpacing,
-    children: (0, r.jsx)(P.Z, {
-      className: o()(U.icon, y)
-    })
-  }, "xbox")) : (v === M.YE.PLAYSTATION || I === j.wR.PLAYSTATION) && V.push((0, r.jsx)("div", {
-    className: U.iconSpacing,
-    children: (0, r.jsx)(R.Z, {
-      className: o()(U.icon, y)
-    })
+  }, "activity")), v === M.YE.XBOX || I === j.wR.XBOX ? V.push((0, r.jsx)(P.Z, {
+    className: o()(U.icon, y)
+  }, "xbox")) : (v === M.YE.PLAYSTATION || I === j.wR.PLAYSTATION) && V.push((0, r.jsx)(R.Z, {
+    className: o()(U.icon, y)
   }, "playstation")), b && V.push((0, r.jsx)(l.u, {
-    asContainer: true,
     text: k.intl.string(k.t.JH1SJy),
     children: (0, r.jsx)(c.tEF, {
       size: "xs",
       color: "currentColor",
       className: o()(U.icon, y)
     })
-  }, "watch")), m && V.push((0, r.jsx)("div", {
-    className: o()(U.iconSpacing, U.liveIconSpacing),
-    children: (0, r.jsx)(E.ZP, {
-      size: E.ZP.Sizes.SMALL
-    })
+  }, "watch")), m && V.push((0, r.jsx)(E.ZP, {
+    size: E.ZP.Sizes.SMALL
   }, "stream"));
   let K = null != T && !(0, w.yE)(T.flags, L.udG.EMBEDDED),
     z = null == D && K;
@@ -472,21 +456,18 @@ function X(e) {
     })
   };
   return (0, r.jsx)(l.u, {
-    asContainer: true,
     text: k.intl.formatToPlainString(k.t.Sq9xJy, {
       game: t.name
     }),
     "aria-label": k.intl.formatToPlainString(k.t.Sq9xJy, {
       game: t.name
     }),
-    children: (0, r.jsx)("div", {
+    children: (0, r.jsx)(y.Z, {
       ref: _,
-      children: (0, r.jsx)(y.Z, {
-        className: o()(U.icon, U.gameIcon, n),
-        game: t,
-        size: y.Z.Sizes.XSMALL,
-        onMouseEnter: h
-      })
+      className: o()(U.icon, U.gameIcon, n),
+      game: t,
+      size: y.A.XSMALL,
+      onMouseEnter: h
     })
   })
 }
@@ -510,7 +491,6 @@ function Q(e) {
       color: "currentColor"
     });
     d.push((0, r.jsx)(l.u, {
-      asContainer: true,
       text: n(),
       children: s
     }, "mute"))
@@ -524,7 +504,6 @@ function Q(e) {
         color: "currentColor"
       });
     d.push((0, r.jsx)(l.u, {
-      asContainer: true,
       text: u ? k.intl.string(k.t.btxSdH) : k.intl.string(k.t.NjmiOD),
       children: n
     }, "deaf"))

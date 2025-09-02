@@ -71,7 +71,7 @@ let N = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z
       }), (0, r.jsxs)(u.Dx, {
         className: o()(I.marginTop8, j.flexCenter),
         children: [s.productLine !== x.POd.COLLECTIBLES && (0, r.jsx)(d.Z, {
-          size: d.Z.Sizes.MEDIUM,
+          size: d.A.MEDIUM,
           className: b.applicationIcon,
           game: c,
           skuId: s.id

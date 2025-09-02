@@ -503,7 +503,7 @@ let Y = () => (0, Chunk951288.jsx)(B, {
       children: [(0, r.jsx)(C.Z, {
         game: e.application,
         className: k.__invalid_gameIcon,
-        size: C.Z.Sizes.SMALL
+        size: C.A.SMALL
       }), (0, r.jsx)("div", {
         className: k.nameCellText,
         children: e.application.name

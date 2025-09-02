@@ -129,7 +129,7 @@ function M(e) {
     children: [null != n ? (0, r.jsx)(m.Z, {
       game: n,
       className: L.__invalid_icon,
-      size: m.Z.Sizes.LARGE,
+      size: m.A.LARGE,
       skuId: H()
     }) : null, (0, r.jsx)(f.$jN, {
       type: f.RAz.PULSING_ELLIPSIS
@@ -141,7 +141,7 @@ function M(e) {
     children: [null != n ? (0, r.jsx)(m.Z, {
       game: n,
       className: L.__invalid_icon,
-      size: m.Z.Sizes.LARGE,
+      size: m.A.LARGE,
       skuId: H()
     }) : null, (0, r.jsx)(f.X6q, {
       variant: "heading-lg/semibold",

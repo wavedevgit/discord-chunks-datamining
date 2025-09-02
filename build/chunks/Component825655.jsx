@@ -33,7 +33,7 @@ function h(e) {
     children: [(0, r.jsx)(c.Z, {
       game: n,
       pid: t.pid,
-      size: c.Z.Sizes.MEDIUM
+      size: c.A.MEDIUM
     }), (0, r.jsx)("div", {
       className: p.warningCorner,
       children: (0, r.jsx)(s.Mgn, {

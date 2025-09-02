@@ -93,7 +93,7 @@ function D(e) {
     u.Z.toggleLocalMute(n, s.Yn.STREAM)
   }, [n]);
   return (0, i.jsx)(c.ua7, {
-    text: p ? w.intl.string(w.t.YqAjX1) : w.intl.string(w.t["w4m94+"]),
+    text: p ? Z.intl.string(Z.t.YqAjX1) : Z.intl.string(Z.t["w4m94+"]),
     children: e => {
       var {
         onClick: n
@@ -101,7 +101,7 @@ function D(e) {
       return (0, i.jsx)(c.P3F, k(T({}, r), {
         className: P.controlAction,
         onClick: e => {
-          e.stopPropagation(), (0, C.Ws)(Z.Odu.GO_LIVE, {
+          e.stopPropagation(), (0, C.Ws)(w.Odu.GO_LIVE, {
             type: C.Qu.AUDIO,
             value: p ? C.bk.ENABLED : C.bk.DISABLED,
             userId: t.user.id
@@ -121,7 +121,7 @@ function D(e) {
 
 function R(e, t, r) {
   return o => {
-    (0, C.Ws)(Z.Odu.GO_LIVE, {
+    (0, C.Ws)(w.Odu.GO_LIVE, {
       type: C.Qu.GO_LIVE,
       value: C.bk.SETTINGS_OPENED,
       userId: e.user.id
@@ -146,7 +146,7 @@ function L(e) {
   } = e, o = (0, h.bp)(), s = n.user, u = (0, a.e7)([x.default], () => {
     var e;
     return null != (e = x.default.getUser(s.id)) ? e : s
-  }, [s]), d = t ? w.intl.string(w.t.tLxK4u) : w.intl.string(w.t.E5RDnJ);
+  }, [s]), d = t ? Z.intl.string(Z.t.tLxK4u) : Z.intl.string(Z.t.E5RDnJ);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)("div", {
       className: l()(P.controlBackground, {
@@ -163,7 +163,7 @@ function L(e) {
             null == (t = e.onClick) || t.call(e), (0, f.rn)(n.stream, {
               forceMultiple: true,
               noFocus: true
-            }), r(), (0, C.Ws)(Z.Odu.GO_LIVE, {
+            }), r(), (0, C.Ws)(w.Odu.GO_LIVE, {
               type: C.Qu.GO_LIVE,
               value: C.bk.ENABLED,
               userId: n.user.id
@@ -172,7 +172,7 @@ function L(e) {
           children: [(0, i.jsx)(c.Text, {
             variant: "text-sm/semibold",
             color: "always-white",
-            children: w.intl.string(w.t["I6JG4+"])
+            children: Z.intl.string(Z.t["I6JG4+"])
           }), (0, i.jsx)(c.OgY, {
             size: "sm",
             color: "currentColor"
@@ -199,7 +199,7 @@ function L(e) {
             containerClassName: P.guildTag,
             inline: false,
             onShowProfile: () => {
-              (0, C.Ws)(Z.Odu.GO_LIVE, {
+              (0, C.Ws)(w.Odu.GO_LIVE, {
                 type: C.Qu.GO_LIVE,
                 value: C.bk.GUILD_PROFILE_OPENED,
                 userId: n.user.id
@@ -213,7 +213,7 @@ function L(e) {
           children: [(0, i.jsx)(D, {
             participant: n
           }), (0, i.jsx)(c.ua7, {
-            text: w.intl.string(w.t["3D5yo6"]),
+            text: Z.intl.string(Z.t["3D5yo6"]),
             children: e => {
               var {
                 onClick: t
@@ -250,7 +250,7 @@ let M = new Set([Chunk981631.jm8.ENDED, Chunk981631.jm8.FAILED, Chunk981631.jm8.
       }), f ? (0, i.jsx)("div", {
         className: P.streamTile,
         children: (0, i.jsx)(c.kL8, {
-          "aria-label": w.intl.formatToPlainString(w.t.gHPz3d, {
+          "aria-label": Z.intl.formatToPlainString(Z.t.gHPz3d, {
             streamerName: t.user.username
           }),
           onClick: () => {},

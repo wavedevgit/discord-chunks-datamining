@@ -212,7 +212,7 @@ function q(e) {
       className: W.linkedChannelJoinSource,
       children: [(0, i.jsx)(S.Z, {
         game: o,
-        size: S.Z.Sizes.XXSMALL
+        size: S.A.XXSMALL
       }), (0, i.jsx)(g.Text, {
         className: W.linkedChannelJoinSourceText,
         variant: "text-sm/normal",

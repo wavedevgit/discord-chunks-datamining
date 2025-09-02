@@ -202,7 +202,7 @@ class ec extends Chunk647438.PureComponent {
         children: [(0, Chunk951288.jsx)(Chunk925329.Z, {
           className: Chunk800339.gameIcon,
           game: exports,
-          size: Chunk925329.Z.Sizes.SMALL
+          size: Chunk925329.A.SMALL
         }), (0, Chunk951288.jsx)(Chunk736409.j, {
           isForceShowSharingPopout: Chunk512722,
           setIsForceShowSharingPopout: s,

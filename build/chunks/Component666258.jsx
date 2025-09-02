@@ -180,7 +180,7 @@ let R = e => {
       }),
       s = (0, l.jsx)(f.Z, {
         game: n,
-        size: f.Z.Sizes.MEDIUM,
+        size: f.A.MEDIUM,
         className: Z.inviteIcon
       });
     return (0, l.jsx)(R, {

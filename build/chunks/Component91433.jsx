@@ -60,7 +60,7 @@ function E(e) {
         applicationIcon: () => (0, r.jsx)(u.Z, {
           className: g.gameIcon,
           game: w,
-          size: u.Z.Sizes.XXSMALL
+          size: u.A.XXSMALL
         }, null == w ? true : w.id),
         applicationName: null == w ? true : w.name
       })

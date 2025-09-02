@@ -110,7 +110,7 @@ function C(e) {
         width: 2
       }), (0, r.jsx)(u.Z, {
         game: f,
-        size: u.Z.Sizes.XXSMALL
+        size: u.A.XXSMALL
       }), (0, r.jsx)(o.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",

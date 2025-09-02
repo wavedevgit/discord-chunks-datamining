@@ -82,7 +82,7 @@ let T = e => [e.userId, ... function(e) {
       overflowCountClassName: P.overflowCount,
       overflowCountVariant: "text-xs/semibold",
       disableUserPopout: true,
-      "aria-label": w.intl.string(w.t.TxqPQU)
+      "aria-label": Z.intl.string(Z.t.TxqPQU)
     })
   }),
   R = Chunk647438.memo(function(e) {
@@ -91,12 +91,12 @@ let T = e => [e.userId, ... function(e) {
       channel: n
     } = e, r = n.getGuildId(), o = (0, a.e7)([_.Z], () => _.Z.getGuild(r), [r]);
     if (null == o) switch (n.type) {
-      case Z.d4z.DM:
+      case w.d4z.DM:
         return (0, i.jsx)(h.je, {
           channel: n,
           size: s.EFr.SIZE_32
         });
-      case Z.d4z.GROUP_DM:
+      case w.d4z.GROUP_DM:
         return (0, i.jsx)(h.ge, {
           channel: n,
           size: s.EFr.SIZE_32
@@ -112,7 +112,7 @@ let T = e => [e.userId, ... function(e) {
         className: P.guildIconWrapper,
         children: (0, i.jsx)(f.Ft, {
           guildId: o.id,
-          guildName: null != (t = o.name) ? t : w.intl.string(w.t.DmIUGB),
+          guildName: null != (t = o.name) ? t : Z.intl.string(Z.t.DmIUGB),
           guildIcon: o.icon,
           iconSize: 32
         })
@@ -208,7 +208,7 @@ let T = e => [e.userId, ... function(e) {
       }), (0, i.jsxs)(m, {
         className: P.channelList,
         children: [a && 0 === n.length && (0, i.jsx)(M, {
-          emptyText: w.intl.string(w.t.nxSS09)
+          emptyText: Z.intl.string(Z.t.nxSS09)
         }), n.map(e => (0, i.jsx)(L, {
           channelId: e,
           isHighlighted: e === d,
@@ -245,7 +245,7 @@ function U(e) {
           let n = null == t ? true : t.channelId;
           if (null == n) return e;
           let i = v.Z.getChannel(n);
-          return null != i && S.Z.can(Z.Plq.CONNECT, i) && e.add(n), e
+          return null != i && S.Z.can(w.Plq.CONNECT, i) && e.add(n), e
         }, new Set)).filter(C.lm), [e])
       }(),
       t = (0, a.Wu)([g.Z, v.Z, S.Z], () => {
@@ -253,7 +253,7 @@ function U(e) {
           n = new Set(e);
         return Array.from(new Set(t.reduce((e, t) => {
           let i = v.Z.getChannel(t);
-          return null != i && S.Z.can(Z.Plq.CONNECT, i) && !n.has(t) && e.push(t), e
+          return null != i && S.Z.can(w.Plq.CONNECT, i) && !n.has(t) && e.push(t), e
         }, [])))
       }, [e]);
     return {
@@ -264,7 +264,7 @@ function U(e) {
   return o.length > 0 || c.length > 0 ? (0, i.jsxs)(s.zJl, {
     className: l()(P.channelList, P.channelListWrapper),
     children: [o.length > 0 && (0, i.jsx)(z, {
-      sectionHeader: w.intl.string(w.t.lnk2NT),
+      sectionHeader: Z.intl.string(Z.t.lnk2NT),
       channelIds: o.slice(0, 3),
       hasQuery: false,
       query: t,
@@ -272,7 +272,7 @@ function U(e) {
       onSelect: r,
       scrollable: false
     }), c.length > 0 && (0, i.jsx)(z, {
-      sectionHeader: w.intl.string(w.t["0lvb9P"]),
+      sectionHeader: Z.intl.string(Z.t["0lvb9P"]),
       channelIds: c.slice(0, 8),
       hasQuery: false,
       query: t,
@@ -281,7 +281,7 @@ function U(e) {
       scrollable: false
     })]
   }) : (0, i.jsx)(M, {
-    emptyText: w.intl.string(w.t["3ET7Aw"])
+    emptyText: Z.intl.string(Z.t["3ET7Aw"])
   })
 }
 
@@ -295,7 +295,7 @@ function W(e) {
     currentVoiceChannel: o,
     onClose: l,
     onSelect: c
-  } = e, u = (0, a.Wu)([_.Z, E.ZP, j.Z, I.Z, S.Z], () => _.Z.getGuildsArray().reduce((e, t) => [...e, ...E.ZP.getChannels(t.id)[E.Zb].filter(e => S.Z.can(Z.Plq.VIEW_CHANNEL, e.channel) && S.Z.can(Z.Plq.CONNECT, e.channel)).map(e => {
+  } = e, u = (0, a.Wu)([_.Z, E.ZP, j.Z, I.Z, S.Z], () => _.Z.getGuildsArray().reduce((e, t) => [...e, ...E.ZP.getChannels(t.id)[E.Zb].filter(e => S.Z.can(w.Plq.VIEW_CHANNEL, e.channel) && S.Z.can(w.Plq.CONNECT, e.channel)).map(e => {
     let {
       channel: t
     } = e;
@@ -351,7 +351,7 @@ function W(e) {
       children: (0, i.jsx)(s.E1j, {
         autoFocus: true,
         query: d,
-        placeholder: w.intl.string(w.t.UyA6SU),
+        placeholder: Z.intl.string(Z.t.UyA6SU),
         onClear: () => {
           p("")
         },
@@ -361,11 +361,11 @@ function W(e) {
         },
         className: P.searchBar,
         inputProps: {
-          "aria-label": w.intl.string(w.t.UyA6SU)
+          "aria-label": Z.intl.string(Z.t.UyA6SU)
         }
       })
     }), y ? (0, i.jsx)(z, {
-      sectionHeader: b ? w.intl.format(w.t.qdXiQ0, v) : w.intl.format(w.t["Aq+8wM"], v),
+      sectionHeader: b ? Z.intl.format(Z.t.qdXiQ0, v) : Z.intl.format(Z.t["Aq+8wM"], v),
       channelIds: f.map(e => {
         let {
           channel: t

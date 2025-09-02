@@ -65,8 +65,8 @@ function v(e) {
       averageFrameTime: j,
       timeSinceLastDrop: C,
       onResetFrameData: N,
-      droppedFramesRef: Z,
-      renderedFrameCount: w,
+      droppedFramesRef: w,
+      renderedFrameCount: Z,
       bufferFramecountRef: P,
       frameCheckerEffect: T
     } = (0, d.d6)(true, S, true),
@@ -144,13 +144,13 @@ function v(e) {
           tag: "span",
           variant: "code",
           color: C < 2 ? "text-danger" : C < 5 ? "text-feedback-warning" : "text-primary",
-          children: Z.current
+          children: w.current
         }), (0, i.jsxs)(c.Text, {
           tag: "span",
           variant: "code",
           color: "text-secondary",
           className: y.secondaryInfoText,
-          children: ["(", (Z.current / w.current * 100).toFixed(3), "%)"]
+          children: ["(", (w.current / Z.current * 100).toFixed(3), "%)"]
         })]
       })]
     }), (Y || !t) && (0, i.jsxs)("div", {
@@ -170,7 +170,7 @@ function v(e) {
           tag: "span",
           variant: "code",
           color: "text-primary",
-          children: w.current.toFixed(0)
+          children: Z.current.toFixed(0)
         })]
       })]
     }), (K || !t) && (0, i.jsxs)("div", {

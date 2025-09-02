@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk320724 = require("./320724.js"),
   Chunk569984 = require("./569984.js"),
   Chunk63063 = require("./63063.js"),
-  Chunk77118 = require("./77118.js"),
+  Chunk215915 = require("./215915.js"),
   Chunk855403 = require("./855403.js"),
   Chunk567126 = require("./567126.jsx"),
   Chunk615161 = require("./615161.jsx"),
@@ -99,7 +99,7 @@ function S(e) {
     discordSourceId: b
   }] = (0, g.E_)(), {
     smarterSourceOrdering: S
-  } = (0, h.Q)({
+  } = (0, h.E)({
     location: "GoLiveSourceGrid"
   }), O = (0, a.e7)([d.ZP], () => d.ZP.getRunningGames()), w = (0, a.cj)([d.ZP], () => {
     let e = d.ZP.getCandidateGames(),

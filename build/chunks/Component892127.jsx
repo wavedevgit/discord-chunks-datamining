@@ -63,7 +63,7 @@ let I = Chunk647438.memo(function(e) {
     resizeValidation: x,
     className: j,
     dragContainerClassName: C
-  } = e, N = u.Z.getWidgetConfig(t.type), Z = (0, a.e7)([d.default], () => d.default.isLocked((0, h.getPID)())), w = (0, b.Z)(), P = (0, a.e7)([p.Z], () => p.Z.windowSize((0, m.ZY)(w))), T = r.useCallback((e, t, n, i, r) => {
+  } = e, N = u.Z.getWidgetConfig(t.type), w = (0, a.e7)([d.default], () => d.default.isLocked((0, h.getPID)())), Z = (0, b.Z)(), P = (0, a.e7)([p.Z], () => p.Z.windowSize((0, m.ZY)(Z))), T = r.useCallback((e, t, n, i, r) => {
     let o = p.Z.windowSize((0, m.ZY)((0, b.i)())),
       l = (0, f.jL)(n, o),
       a = (0, f.Ox)(i, o);
@@ -98,7 +98,7 @@ let I = Chunk647438.memo(function(e) {
     resizeX: W,
     resizeY: G,
     dragAnywhere: F
-  } = null != N ? N : {}, B = D || !Z, H = r.useMemo(() => ({
+  } = null != N ? N : {}, B = D || !w, H = r.useMemo(() => ({
     minX: 0,
     minY: 0,
     maxX: P.width,
@@ -130,17 +130,17 @@ let I = Chunk647438.memo(function(e) {
       height: 0
     },
     hidden: !B,
-    locked: Z,
+    locked: w,
     resizeX: null != W && W,
     resizeY: null != G && G,
     style: {
       zIndex: R
     },
     dragAnywhere: null != F && F,
-    active: !Z,
+    active: !w,
     onUpdate: T,
     onClick: k,
-    targetWindow: w,
+    targetWindow: Z,
     renderExtras: Q,
     resizeValidation: X,
     children: Y

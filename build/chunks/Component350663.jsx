@@ -97,7 +97,7 @@ let _ = {
       locked: v,
       widgetId: t,
       pinned: x
-    })), Z = (0, c.Z)(n), w = (0, c.Z)(v), P = b === h.C5.VERTICAL, T = v || w !== v || Z !== n, k = 0, A = 0, D = (0, s.Yzy)(P ? N.map((e, t) => O(y({}, e), {
+    })), w = (0, c.Z)(n), Z = (0, c.Z)(v), P = b === h.C5.VERTICAL, T = v || Z !== v || w !== n, k = 0, A = 0, D = (0, s.Yzy)(P ? N.map((e, t) => O(y({}, e), {
       y: (k += e.height + (t > 0 ? j : 0)) - e.height,
       x: 0
     })) : N.map((e, t) => O(y({}, e), {

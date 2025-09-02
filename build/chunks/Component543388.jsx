@@ -59,7 +59,7 @@ function p(e) {
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Z, {
-      size: s.Z.Sizes.LARGE,
+      size: s.A.LARGE,
       game: t
     }), (0, r.jsxs)("div", {
       className: c.textContainer,

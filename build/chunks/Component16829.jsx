@@ -355,7 +355,7 @@ function y(e) {
           onClick: S,
           children: [(0, r.jsx)(_.Z, {
             game: N,
-            size: _.Z.Sizes.XXSMALL
+            size: _.A.XXSMALL
           }), (0, r.jsx)(o.Text, {
             variant: "text-sm/medium",
             className: C.linkedChannelApplicationName,
