@@ -352,12 +352,6 @@ let i = {
     inlineRequire: () => require("./529726.js").Z,
     neverLoadBeforeConnectionOpen: true
   },
-  RobloxSubgameManager: {
-    actions: ["RUNNING_GAMES_CHANGE", "POST_CONNECTION_OPEN"],
-    inlineRequire: () => require("./277358.js").Z,
-    hasStoreChangeListeners: true,
-    neverLoadBeforeConnectionOpen: true
-  },
   DetectableGamesManager: {
     actions: ["POST_CONNECTION_OPEN"],
     inlineRequire: () => require("./114957.js").Z,

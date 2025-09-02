@@ -1,1 +1,0 @@
-{"id":"543696","type":"store","data":{"name":"RobloxSupplementalDataStore","functions":[{"name":"initialize","args":["e"]},{"name":"getSupplementalData","args":["e"]},{"name":"getState","args":[]}],"events":["ROBLOX_SUBGAME_SUPPLEMENTAL_DATA_FETCH_SUCCESS"]},"fromModule":{"id":"web.js"}}

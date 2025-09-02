@@ -2,7 +2,7 @@
 /** chunk id: 812206, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => q
+  Z: () => z
 }), require("./388685.js"), require("./642613.js"), require("./539854.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -150,19 +150,12 @@ function R(e) {
 
 function P(e) {
   let {
-    application: t
-  } = e;
-  null != t && b(t)
-}
-
-function w(e) {
-  let {
     applications: t
   } = e;
   for (let e of t) b(o.ZP.createFromServer(e))
 }
 
-function D(e) {
+function w(e) {
   let {
     recommendations: t
   } = e;
@@ -173,7 +166,7 @@ function D(e) {
   })
 }
 
-function x(e) {
+function D(e) {
   let {
     userProfile: t
   } = e, {
@@ -186,7 +179,7 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     botUserId: t
   } = e, n = g.botUserIdToAppUsage[t];
@@ -195,7 +188,7 @@ function L(e) {
   }))
 }
 
-function j(e) {
+function L(e) {
   let {
     applicationIds: t
   } = e, n = false;
@@ -206,7 +199,7 @@ function j(e) {
   return n
 }
 
-function M(e) {
+function j(e) {
   let {
     entitlements: t
   } = e, n = false;
@@ -217,7 +210,7 @@ function M(e) {
   return n
 }
 
-function k(e) {
+function M(e) {
   let {
     guildId: t,
     applications: n
@@ -226,7 +219,7 @@ function k(e) {
   _.set(t, r)
 }
 
-function U(e) {
+function k(e) {
   let {
     payments: t
   } = e, n = new Set;
@@ -238,7 +231,7 @@ function U(e) {
   return n.size > 0
 }
 
-function G(e) {
+function U(e) {
   var t;
   let {
     payment: n
@@ -247,7 +240,7 @@ function G(e) {
   b(o.ZP.createFromServer(n.sku.application))
 }
 
-function B(e) {
+function G(e) {
   var t;
   let {
     giftCode: n
@@ -256,7 +249,7 @@ function B(e) {
   b(o.ZP.createFromServer(n.store_listing.sku.application))
 }
 
-function Z(e) {
+function B(e) {
   let {
     invite: t
   } = e;
@@ -264,7 +257,7 @@ function Z(e) {
   b(o.ZP.createFromServer(t.target_application))
 }
 
-function F(e) {
+function Z(e) {
   let {
     storeListing: t
   } = e;
@@ -272,28 +265,28 @@ function F(e) {
   b(o.ZP.createFromServer(t.sku.application))
 }
 
-function V(e) {
+function F(e) {
   let {
     messages: t
   } = e;
-  t.forEach(e => H(e))
+  t.forEach(e => V(e))
 }
 
-function H(e) {
+function V(e) {
   var t;
   null == (t = e.attachments) || t.forEach(e => {
     null != e.application && b(o.ZP.createFromServer(e.application))
   })
 }
 
-function Y(e) {
+function H(e) {
   let {
     application: t
   } = e;
   b(o.ZP.createFromServer(t))
 }
 
-function W(e) {
+function Y(e) {
   e.tokens.forEach(e => {
     b(o.ZP.createFromServer(e.application));
     let t = e.application.bot;
@@ -304,12 +297,12 @@ function W(e) {
   })
 }
 
-function K(e) {
+function W(e) {
   e.items.forEach(e => {
     null != e.application && b(o.ZP.createFromServer(e.application))
   })
 }
-class z extends(r = Chunk442837.ZP.PersistedStore) {
+class K extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     if (null != e && "object" == typeof e.botUserIdToAppUsage)
       for (let t in e.botUserIdToAppUsage) {
@@ -366,33 +359,32 @@ class z extends(r = Chunk442837.ZP.PersistedStore) {
     if (null != e) return null == (t = g.botUserIdToAppUsage[e]) ? true : t.applicationId
   }
 }
-s(z, "displayName", "ApplicationStore"), s(z, "persistKey", "ApplicationStore");
-let q = new z(Chunk570140.Z, {
+s(K, "displayName", "ApplicationStore"), s(K, "persistKey", "ApplicationStore");
+let z = new K(Chunk570140.Z, {
   LOGOUT: y,
   OVERLAY_INITIALIZE: O,
   APPLICATION_FETCH: v,
   APPLICATION_FETCH_SUCCESS: T,
   APPLICATION_FETCH_FAIL: C,
   APPLICATIONS_FETCH: N,
-  APPLICATIONS_FETCH_SUCCESS: w,
-  APPLICATIONS_FETCH_FAIL: j,
+  APPLICATIONS_FETCH_SUCCESS: P,
+  APPLICATIONS_FETCH_FAIL: L,
   APPLICATION_UPDATE: I,
-  APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS: M,
-  ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: M,
-  ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: M,
-  GUILD_APPLICATIONS_FETCH_SUCCESS: k,
-  BILLING_PAYMENTS_FETCH_SUCCESS: U,
-  PAYMENT_UPDATE: G,
-  INVITE_RESOLVE_SUCCESS: Z,
-  GIFT_CODE_RESOLVE_SUCCESS: B,
+  APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS: j,
+  ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: j,
+  ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: j,
+  GUILD_APPLICATIONS_FETCH_SUCCESS: M,
+  BILLING_PAYMENTS_FETCH_SUCCESS: k,
+  PAYMENT_UPDATE: U,
+  INVITE_RESOLVE_SUCCESS: B,
+  GIFT_CODE_RESOLVE_SUCCESS: G,
   LIBRARY_FETCH_SUCCESS: R,
-  STORE_LISTING_FETCH_SUCCESS: F,
-  LOAD_MESSAGES_SUCCESS: V,
-  APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS_SUCCESS: D,
-  USER_PROFILE_FETCH_SUCCESS: x,
-  APP_DM_OPEN: L,
-  USER_AUTHORIZED_APPS_UPDATE: W,
-  LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: K,
-  OAUTH2_TOKEN_CREATE: Y,
-  ROBLOX_SUBGAME_APPLICATION_FETCH_SUCCESS: P
+  STORE_LISTING_FETCH_SUCCESS: Z,
+  LOAD_MESSAGES_SUCCESS: F,
+  APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS_SUCCESS: w,
+  USER_PROFILE_FETCH_SUCCESS: D,
+  APP_DM_OPEN: x,
+  USER_AUTHORIZED_APPS_UPDATE: Y,
+  LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: W,
+  OAUTH2_TOKEN_CREATE: H
 })
