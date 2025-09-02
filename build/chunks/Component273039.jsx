@@ -16,24 +16,22 @@ function c(e) {
     onClick: n,
     children: r,
     className: c,
-    buttonClassName: u,
-    look: d
-  } = e, [m, j] = i.useState(false), v = i.useCallback(() => {
-    n(), j(false)
-  }, [n, j]);
+    buttonClassName: u
+  } = e, [d, m] = i.useState(false), j = i.useCallback(() => {
+    n(), m(false)
+  }, [n, m]);
   return (0, l.jsxs)("div", {
     className: o()(a.container, c),
     onMouseEnter: () => {
-      if (t) return void j(true);
-      j(false)
+      if (t) return void m(true);
+      m(false)
     },
     onMouseLeave: () => {
-      j(false)
+      m(false)
     },
-    children: [r, t && m ? (0, l.jsx)(s.Z, {
-      onClick: v,
-      className: o()(a.removeButton, u),
-      look: d
+    children: [r, t && d ? (0, l.jsx)(s.Z, {
+      onClick: j,
+      className: o()(a.removeButton, u)
     }) : null]
   })
 }

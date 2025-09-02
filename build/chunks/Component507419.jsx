@@ -18,7 +18,7 @@ let m = Chunk647438.memo(function(e) {
     sound: n,
     volume: t,
     disabled: m
-  } = e, [h, g] = l.useState(false), p = l.useRef(null), {
+  } = e, [g, h] = l.useState(false), p = l.useRef(null), {
     file: y,
     audio: b,
     loadAudioFromFile: v
@@ -29,13 +29,13 @@ let m = Chunk647438.memo(function(e) {
     className: f.previewContainer,
     children: [(0, a.jsx)(i.P3F, {
       onClick: m ? true : function() {
-        null != b && (b.paused ? (b.volume = (0, o.Z)(t), b.currentTime = 0, b.play(), g(true), b.addEventListener("ended", () => g(false), {
+        null != b && (b.paused ? (b.volume = (0, o.Z)(t), b.currentTime = 0, b.play(), h(true), b.addEventListener("ended", () => h(false), {
           once: true
-        })) : (b.pause(), g(false)))
+        })) : (b.pause(), h(false)))
       },
       className: f.playButton,
-      "aria-label": h ? d.intl.string(d.t.hHBkuL) : d.intl.string(d.t.RscU7O),
-      children: h ? (0, a.jsx)(i.wNq, {
+      "aria-label": g ? d.intl.string(d.t.hHBkuL) : d.intl.string(d.t.RscU7O),
+      children: g ? (0, a.jsx)(i.wNq, {
         size: "xs",
         color: "currentColor",
         className: f.playIcon

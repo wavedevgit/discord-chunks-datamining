@@ -2,7 +2,5 @@
 /** chunk id: 903443, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = {
-  button: "button_e18686",
-  default: "default_e18686",
-  filled: "filled_e18686"
+  button: "button_e18686"
 }

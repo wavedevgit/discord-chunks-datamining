@@ -24,20 +24,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk697847 = require("./697847.js");
 
-function w(e) {
+function _(e) {
   let {
     availableSlots: n,
     className: t
   } = e;
   return (0, a.jsxs)(s.Text, {
-    className: r()(_.suffixNode, t),
+    className: r()(j.suffixNode, t),
     variant: "text-sm/medium",
     color: "text-primary",
     children: [(0, a.jsx)(s.gj8, {
       size: "md",
       color: "currentColor",
-      className: _.speakerIcon
-    }), j.intl.format(j.t["8Dyg1N"], {
+      className: j.speakerIcon
+    }), w.intl.format(w.t["8Dyg1N"], {
       slots: n
     })]
   })
@@ -48,18 +48,18 @@ function N(e) {
     value: n,
     className: t,
     onChange: i
-  } = e, N = (0, o.cj)([m.ZP, f.Z, h.default, d.Z], () => {
+  } = e, N = (0, o.cj)([m.ZP, f.Z, g.default, d.Z], () => {
     let e = {};
     for (let n of m.ZP.getFlattenedGuildIds()) {
       let t = d.Z.getGuild(n);
-      null != t && (0, c.Gw)(t, f.Z, h.default).canCreateExpressions && (e[t.id] = t)
+      null != t && (0, c.Gw)(t, f.Z, g.default).canCreateExpressions && (e[t.id] = t)
     }
     return e
   }), C = (0, o.cj)([b.Z], () => {
     let e = {};
     for (let [t, a] of p.default.entries(N)) {
       var n;
-      let l = (0, g.yw)(a, null != (n = b.Z.getSoundsForGuild(t)) ? n : v.Hy, a.premiumTier);
+      let l = (0, h.yw)(a, null != (n = b.Z.getSoundsForGuild(t)) ? n : v.Hy, a.premiumTier);
       e[t] = l
     }
     return e
@@ -79,8 +79,8 @@ function N(e) {
       }
     }), [N, C]),
     O = l.useCallback(e => null == e || "" === e.value ? null : (0, a.jsx)(u.Z, {
-      className: r()(_.guildSelectOptionIcon, {
-        [_.disabledOption]: e.disabled
+      className: r()(j.guildSelectOptionIcon, {
+        [j.disabledOption]: e.disabled
       }),
       guild: N[e.value],
       size: u.Z.Sizes.SMOL,
@@ -88,20 +88,20 @@ function N(e) {
     }), [N]),
     E = l.useCallback(e => {
       let n = null == e ? true : e.value;
-      return null == n || "" === n ? null : (0, a.jsx)(w, {
+      return null == n || "" === n ? null : (0, a.jsx)(_, {
         className: r()({
-          [_.disabledOption]: null == e ? true : e.disabled
+          [j.disabledOption]: null == e ? true : e.disabled
         }),
         availableSlots: C[n]
       })
     }, [C]),
-    I = l.useCallback(e => (0, a.jsx)("div", {
+    P = l.useCallback(e => (0, a.jsx)("div", {
       className: r()({
-        [_.disabledOption]: e.disabled
+        [j.disabledOption]: e.disabled
       }),
       children: e.label
     }), []),
-    P = l.useCallback(e => {
+    I = l.useCallback(e => {
       C[e] <= 0 || i(e)
     }, [C, i]),
     k = (() => {
@@ -110,13 +110,13 @@ function N(e) {
     })();
   return (0, a.jsx)(s.VcW, {
     className: t,
-    onChange: P,
+    onChange: I,
     value: k,
     multi: false,
     options: S,
     renderOptionPrefix: O,
     renderOptionSuffix: E,
-    renderOptionLabel: I,
-    placeholder: 0 === S.length ? j.intl.string(j.t.O3i2gY) : j.intl.string(j.t.CunCMD)
+    renderOptionLabel: P,
+    placeholder: 0 === S.length ? w.intl.string(w.t.O3i2gY) : w.intl.string(w.t.CunCMD)
   })
 }

@@ -2,12 +2,11 @@
 /** chunk id: 282164, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk873115 = require("./873115.js"),
   Chunk219929 = require("./219929.jsx"),
@@ -15,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk975060 = require("./975060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk632236 = require("./632236.js");
-class p extends Chunk647438.PureComponent {
+class _ extends Chunk647438.PureComponent {
   componentDidMount() {
     null != this.props.paypalClient && Chunk873115.f6()
   }
@@ -31,23 +30,22 @@ class p extends Chunk647438.PureComponent {
     return (0, Chunk951288.jsx)(Chunk481060.hjN, {
       className: exports,
       title: Chunk388032.intl.string(Chunk388032.t.QQBAoq),
-      children: (0, Chunk951288.jsxs)("div", {
+      children: (0, Chunk951288.jsx)("div", {
         className: Chunk632236.inputWrapper,
-        children: [(0, Chunk951288.jsx)(Chunk219929.ZP, {
-          type: Chunk219929.ZP.Types.PAYPAL,
-          className: Chunk632236.paypalIcon
-        }), (0, Chunk951288.jsx)(Chunk755721.Is, {
+        children: (0, Chunk951288.jsx)(Chunk481060.oil, {
+          leading: {
+            type: "image",
+            src: (0, Chunk219929.hx)(Chunk219929.ZP.Types.PAYPAL)
+          },
           value: module,
-          editable: false,
           readOnly: true,
-          placeholder: null == require ? Chunk388032.intl.string(Chunk388032.t.dte2Mz) : Chunk388032.intl.string(Chunk388032.t.hopw7e),
-          inputClassName: Chunk632236.paypalInput
-        })]
+          placeholder: null == require ? Chunk388032.intl.string(Chunk388032.t.dte2Mz) : Chunk388032.intl.string(Chunk388032.t.hopw7e)
+        })
       })
     })
   }
 }
-let h = Chunk442837.ZP.connectStores([Chunk618541.Z, Chunk975060.Z], () => ({
+let p = Chunk442837.ZP.connectStores([Chunk618541.Z, Chunk975060.Z], () => ({
   braintreeEmail: Chunk975060.Z.braintreeEmail,
   paypalClient: Chunk618541.Z.getPayPalClient()
-}))(p)
+}))(_)

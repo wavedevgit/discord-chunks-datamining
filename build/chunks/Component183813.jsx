@@ -35,12 +35,12 @@ function g(e) {
     setSelectedGiftingPromotionReward: S,
     selectedGiftingPromotionReward: E,
     claimableRewards: v,
-    claimableVariants: P
-  } = (0, _.wD)(), O = (0, a.e7)([u.default], () => u.default.getCurrentUser()), [w, I] = i.useState(null), k = Math.floor(Math.random() * d.mo), [M, T] = i.useState(k);
+    claimableVariants: O
+  } = (0, _.wD)(), P = (0, a.e7)([u.default], () => u.default.getCurrentUser()), [w, I] = i.useState(null), k = Math.floor(Math.random() * d.mo), [M, Z] = i.useState(k);
   i.useEffect(() => {
     null != v && v.length > 0 && null == E && S(v[0])
   }, [v, E, S]), s()(null != l, "Expected plan to selected"), s()(null != g, "Expected selectedSkuId"), s()(null != y, "Step should be set");
-  let Z = i.useMemo(() => null == P ? null != v ? v : [] : P.flatMap(e => {
+  let T = i.useMemo(() => null == O ? null != v ? v : [] : O.flatMap(e => {
       var t, n;
       return e.variants.length < d.mo ? [] : (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -71,17 +71,17 @@ function g(e) {
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t)
-    }), [P, v, M]),
+    }), [O, v, M]),
     A = e => {
-      S(Z.find(t => t.skuId === e)), I(e)
+      S(T.find(t => t.skuId === e)), I(e)
     },
-    N = Z.map(e => (0, r.jsx)(C.c, {
+    N = T.map(e => (0, r.jsx)(C.c, {
       skuId: e.skuId,
       assetId: e.assetId,
       productName: e.name,
       a11yLabel: e.a11yLabel,
       claimed: null != v && !v.some(t => t.skuId === e.skuId),
-      user: O,
+      user: P,
       onSelect: A,
       selectedSkuId: null != w ? w : true,
       category: M
@@ -91,8 +91,8 @@ function g(e) {
         className: b.modalFooter,
         children: (0, r.jsx)(p.y, {
           onStepChange: e => {
-            null != O && null != E && x.default.track(m.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
-              user_id: O.id,
+            null != P && null != E && x.default.track(m.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
+              user_id: P.id,
               reward_sku_id: E.skuId
             }), t(e)
           },
@@ -113,7 +113,7 @@ function g(e) {
         color: "text-secondary",
         className: b.subtitle,
         children: L.intl.format(L.t.xGzXNT, {
-          rewardCount: Z.length * d.mo
+          rewardCount: T.length * d.mo
         })
       })]
     });
@@ -127,9 +127,9 @@ function g(e) {
       direction: "vertical",
       justify: "center",
       align: "center",
-      children: [U, null != P && P.length > 1 && (0, r.jsx)(c.Z, {
+      children: [U, null != O && O.length > 1 && (0, r.jsx)(c.Z, {
         defaultCategory: M,
-        onCategoryChange: T
+        onCategoryChange: Z
       })]
     }), (0, r.jsx)(o.hzk, {
       children: (0, r.jsx)("div", {

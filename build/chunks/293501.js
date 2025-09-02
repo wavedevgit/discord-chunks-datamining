@@ -45,8 +45,8 @@ let f = function(e) {
 }({}, Chunk943351.nl);
 
 function m(e, n, t) {
-  let [i, u] = a.useState(null), [c, d] = a.useState(null), [m, h] = a.useState(1), {
-    setMaxVolume: g
+  let [i, u] = a.useState(null), [c, d] = a.useState(null), [m, g] = a.useState(1), {
+    setMaxVolume: h
   } = (0, r.p)(), p = a.useCallback((e, n) => {
     var a;
     d(null), (a = n.offsetWidth, new Promise(n => {
@@ -59,7 +59,7 @@ function m(e, n, t) {
               normalizedVolumeMultipler: l
             }
           } = e;
-          i === a && (n(t), h(l)), null == s || s.removeEventListener("message", r)
+          i === a && (n(t), g(l)), null == s || s.removeEventListener("message", r)
         };
       null == s || s.addEventListener("message", r), null == s || s.postMessage({
         id: i,
@@ -75,6 +75,6 @@ function m(e, n, t) {
     let a = (0, o.V3)(e, t);
     i !== a && (u(a), p(e, n))
   }, [e, p, n, t, i]), a.useEffect(() => {
-    g(m)
-  }, [m, g]), c
+    h(m)
+  }, [m, h]), c
 }

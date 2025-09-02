@@ -124,8 +124,7 @@ class H extends Chunk647438.PureComponent {
       children: [!module && (0, Chunk951288.jsx)(Chunk225433.Z, {
         "aria-label": Chunk388032.intl.string(Chunk388032.t.qEHmmJ),
         className: Chunk894462.removeKeybind,
-        onClick: this.handleDeleteKeybind,
-        look: Chunk225433.Z.Looks.FILLED
+        onClick: this.handleDeleteKeybind
       }), (0, Chunk951288.jsxs)(Chunk600164.Z, {
         className: Chunk197571.marginBottom8,
         children: [(0, Chunk951288.jsx)(Chunk600164.Z.Child, {

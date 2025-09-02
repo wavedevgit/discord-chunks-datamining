@@ -1,5 +1,5 @@
 /** Chunk was on 73628 **/
-/** chunk id: 972797, original params: e,A,t (module,exports,require) **/
+/** chunk id: 972797, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 }), require("./388685.js");
@@ -13,19 +13,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk750404 = require("./750404.js");
 
-function u(e) {
+function u(A) {
   let {
-    disabled: A = false,
+    disabled: e = false,
     disabledTooltip: t,
     published: a,
     submitting: u = false,
     onClick: g
-  } = e, f = (0, s.Dt)(), [p, m] = r.useState(a);
+  } = A, f = (0, s.Dt)(), [p, m] = r.useState(a);
   return r.useEffect(() => {
-    m(e => e || a)
+    m(A => A || a)
   }, [a]), (0, n.jsxs)("div", {
     className: l()({
-      [c.publishable]: !A && !a,
+      [c.publishable]: !e && !a,
       [c.wasEverPublished]: p
     }, c.outerContainer),
     children: [(0, n.jsxs)("div", {
@@ -48,12 +48,12 @@ function u(e) {
         iconPosition: "end",
         variant: a ? "critical-primary" : "expressive",
         "aria-describedby": f,
-        "aria-disabled": A,
-        disabled: A,
-        onClick: A ? true : g,
+        "aria-disabled": e,
+        disabled: e,
+        onClick: e ? true : g,
         loading: u
       })]
-    }), A && (0, n.jsx)(o.Text, {
+    }), e && (0, n.jsx)(o.Text, {
       variant: "text-sm/normal",
       color: "text-muted",
       children: t

@@ -34,14 +34,14 @@ function g(e) {
       continueSessionToInitialStep: v
     } = e,
     {
-      activeSubscription: P,
-      paymentSources: O,
+      activeSubscription: O,
+      paymentSources: P,
       paymentSourceId: w,
       selectedPlan: I,
       selectedSkuId: k,
       step: M,
-      updatedSubscription: T,
-      startingPremiumSubscriptionPlanIdRef: Z,
+      updatedSubscription: Z,
+      startingPremiumSubscriptionPlanIdRef: T,
       startingFractionalPremiumEndsAtRef: A
     } = (0, _.JL)(),
     {
@@ -62,8 +62,8 @@ function g(e) {
     Y = (0, C.Z)(),
     V = (0, d.a5)(I),
     q = (0, d.tK)(null == D ? true : D.skuId),
-    X = (0, m.$)(O, w),
-    J = N && null != D && V;
+    J = (0, m.$)(P, w),
+    X = N && null != D && V;
   s()(null != I, "Expected plan to selected"), s()(null != k, "Expected selectedSkuId"), s()(null != M, "Step should be set");
   let Q = i.useCallback(() => {
     n(), null == g || g()
@@ -76,29 +76,29 @@ function g(e) {
     null != Y && null != Y.reminderNotice && K && (0, o.wH)(a.z.GIFTING_PROMOTION_REMINDER, Y.dismissibleContentVersion, {
       dismissAction: b.L.INDIRECT_ACTION
     })
-  }, [Y, K]), t = null != y ? y(I, Q, T) : null != v ? (0, r.jsx)(c.VY, {}) : N ? (0, r.jsx)(c.TB, {
+  }, [Y, K]), t = null != y ? y(I, Q, Z) : null != v ? (0, r.jsx)(c.VY, {}) : N ? (0, r.jsx)(c.TB, {
     planId: I.id,
     onClose: Q
-  }) : Z.current === I.id ? (0, r.jsx)(c.ZP, {
+  }) : T.current === I.id ? (0, r.jsx)(c.ZP, {
     planId: I.id,
     postSuccessGuild: S,
     onClose: Q,
-    paymentSourceType: X,
+    paymentSourceType: J,
     hideClose: W,
     startingFractionalPremiumEndsAt: A.current
   }) : (0, r.jsx)(c.ZP, {
     followupSKUInfo: E,
-    startingPremiumSubscriptionPlanId: Z.current,
+    startingPremiumSubscriptionPlanId: T.current,
     planId: I.id,
     onClose: Q,
-    isDowngrade: null != P && (0, u.GY)(P, I.id, l),
-    paymentSourceType: X,
+    isDowngrade: null != O && (0, u.GY)(O, I.id, l),
+    paymentSourceType: J,
     hideClose: W,
     startingFractionalPremiumEndsAt: A.current
   }), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(f.C3, {
       children: [(0, r.jsx)(L.Z, {}), t]
-    }), null != z && z, J && null != q && (0, r.jsx)(j.Z, {
+    }), null != z && z, X && null != q && (0, r.jsx)(j.Z, {
       onClose: Q,
       selectedPromotionalDecoPurchaseRecord: q,
       selectedGiftingPromotionReward: D

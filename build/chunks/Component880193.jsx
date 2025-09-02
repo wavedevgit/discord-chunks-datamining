@@ -61,7 +61,7 @@ function O(e) {
           title: j.intl.string(j.t.grbGJy),
           titleId: k,
           disabled: L,
-          children: (0, r.jsx)(a.Is, {
+          children: (0, r.jsx)(s.oil, {
             placeholder: j.intl.string(j.t["So2/xM"]),
             value: y,
             onChange: C,

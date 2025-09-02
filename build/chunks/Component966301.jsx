@@ -123,7 +123,7 @@ function C(e) {
     saveOnClose: n
   } = e, s = (0, l.e7)([c.Z], () => c.Z.isLoading()), o = (0, l.e7)([f.Z], () => f.Z.editedOnboardingPrompts), d = (0, l.e7)([f.Z], () => f.Z.advancedMode), u = i.useRef(false);
   i.useEffect(() => {
-    s || u.current || 0 !== o.length || (u.current = true, d || (0, p.tS)(t, [(0, j.ae)()], false))
+    s || u.current || (u.current = true, d || 0 !== o.length || (0, p.tS)(t, [(0, j.ae)()], false))
   });
   let m = i.useRef(t);
   if (i.useEffect(() => {

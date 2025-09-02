@@ -194,7 +194,7 @@ function Q(e) {
   }(t, f), C = (0, k.vH)(t), {
     isGeneratingAI: x,
     enableAIFeatures: v,
-    renderAiGenerateButton: j
+    getThreadNameInputAccessory: j
   } = (0, G.U)({
     parentChannel: t,
     parentMessageId: n,
@@ -299,7 +299,7 @@ function Q(e) {
             children: [(0, r.jsxs)(O.ZP, {
               channelId: "create-thread-null",
               children: [(0, r.jsx)("div", {
-                className: W.iconWrapper,
+                className: a()(W.iconWrapper, z.iconWrapper),
                 children: (0, r.jsx)(A, {
                   className: W.icon
                 })
@@ -312,7 +312,7 @@ function Q(e) {
                 disabled: N,
                 isGeneratingAI: x,
                 enableAIFeatures: v,
-                renderAiGenerateButton: j
+                getThreadNameInputAccessory: j
               }), t.type === F.d4z.GUILD_TEXT ? (0, r.jsx)(J, {
                 startedFromMessage: null != n,
                 threadSettings: p,
@@ -388,45 +388,35 @@ function $(e) {
     parentChannel: n,
     parentMessageId: i,
     threadSettings: l,
-    updateThreadSettings: o,
-    error: u,
-    disabled: p,
-    isGeneratingAI: h,
-    enableAIFeatures: f,
-    renderAiGenerateButton: m
-  } = e, g = null != (t = l.name) ? t : "", b = (0, L.Op)(u, {
-    content: g
-  }), y = (0, k.Od)(n, i), _ = null != i && !f, C = (0, v.Dt)(), x = f ? V.intl.string(V.t["Nb2/RE"]) : "" !== y ? y : V.intl.string(V.t["Nb2/RE"]);
-  return (0, r.jsx)(c.hjN, {
-    tag: "label",
-    htmlFor: C,
-    title: V.intl.string(_ ? V.t.JPvIiI : V.t.j3XWjI),
-    className: z.formSection,
-    children: (0, r.jsxs)("div", {
-      className: z.threadNameContainer,
-      children: [(0, r.jsx)(s.Is, {
-        value: g,
-        id: C,
-        placeholder: x,
-        maxLength: F.HN8,
-        onChange: e => {
-          o({
-            name: (0, U.Z)(e, false)
-          }), "" !== e ? d.Z.startTyping(n.id) : d.Z.stopTyping(n.id)
-        },
-        onBlur: () => {
-          let e = (0, U.Z)(g, true);
-          e !== g && o({
-            name: e
-          })
-        },
-        error: b,
-        disabled: p || h,
-        inputClassName: a()({
-          [z.threadNameInputWithAI]: f
-        })
-      }), m(p)]
-    })
+    updateThreadSettings: a,
+    error: o,
+    disabled: s,
+    isGeneratingAI: u,
+    enableAIFeatures: p,
+    getThreadNameInputAccessory: h
+  } = e, f = null != (t = l.name) ? t : "", m = (0, L.Op)(o, {
+    content: f
+  }), g = (0, k.Od)(n, i), b = null != i && !p, y = (0, v.Dt)(), _ = p ? V.intl.string(V.t["Nb2/RE"]) : "" !== g ? g : V.intl.string(V.t["Nb2/RE"]);
+  return (0, r.jsx)(c.oil, {
+    label: V.intl.string(b ? V.t.JPvIiI : V.t.j3XWjI),
+    trailing: h(s),
+    value: f,
+    id: y,
+    placeholder: _,
+    maxLength: F.HN8,
+    onChange: e => {
+      a({
+        name: (0, U.Z)(e, false)
+      }), "" !== e ? d.Z.startTyping(n.id) : d.Z.stopTyping(n.id)
+    },
+    onBlur: () => {
+      let e = (0, U.Z)(f, true);
+      e !== f && a({
+        name: e
+      })
+    },
+    error: m,
+    disabled: s || u
   })
 }
 

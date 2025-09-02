@@ -1,14 +1,13 @@
 /** Chunk was on 93626 **/
 /** chunk id: 349709, original params: e,t,l (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk74655 = require("./74655.jsx"),
+  Chunk886025 = require("./886025.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk596454 = require("./596454.jsx"),
   Chunk225433 = require("./225433.jsx"),
@@ -21,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk239336 = require("./239336.js");
 
-function h(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var l = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(l);
@@ -40,7 +39,7 @@ function h(e) {
   return e
 }
 
-function y(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var l = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,90 +52,90 @@ function y(e, t) {
   }), e
 }
 
-function E(e) {
+function y(e) {
   let {
     className: t,
     guildId: l,
-    error: s,
+    error: y,
     emojiId: E,
-    emojiName: I,
-    isRequiredField: w = true,
-    shouldUpdateBothEmojiFields: N = false,
+    emojiName: w,
+    isRequiredField: I = true,
+    shouldUpdateBothEmojiFields: S = false,
     setEmojiId: O,
-    setEmojiName: S
-  } = e, C = (0, j.Z)({
+    setEmojiName: N
+  } = e, P = (0, p.Z)({
     emojiId: E,
-    emojiName: I
-  }), P = (0, a.e7)([p.ZP], () => null != l ? p.ZP.getDefaultChannel(l) : null), D = i.useRef(null), k = (0, m.Z)(D), Z = () => {
-    S(true), O(true)
+    emojiName: w
+  }), C = (0, r.e7)([g.ZP], () => null != l ? g.ZP.getDefaultChannel(l) : null), k = i.useRef(null), D = (0, d.Z)(k), Z = () => {
+    N(true), O(true)
   }, R = e => {
     e.stopPropagation(), Z()
   }, _ = i.useMemo(() => {
     let e = null != E && "" !== E,
-      t = null != I && "" !== I,
-      l = null != C && "" !== C,
-      n = t && !Number.isNaN(parseInt(I)) && !l && !e;
+      t = null != w && "" !== w,
+      l = null != P && "" !== P,
+      n = t && !Number.isNaN(parseInt(w)) && !l && !e;
     return {
       hasEmojiId: e,
       hasEmojiName: t,
       hasEmojiDisplayName: l,
       isDeletedCustomEmoji: n
     }
-  }, [E, I, C]);
-  return (0, n.jsx)(u.xJW, {
-    required: w,
-    title: b.intl.string(b.t["3BQmiI"]),
-    className: r()(t, x.section),
-    error: s,
-    children: (0, n.jsx)(u.yRy, {
-      targetElementRef: D,
-      animation: u.yRy.Animation.NONE,
-      position: "top",
-      renderPopout: e => {
-        let {
-          closePopout: t
-        } = e;
-        return (0, n.jsx)(g.Z, {
-          closePopout: t,
-          pickerIntention: v.Hz.SOUNDBOARD,
-          onNavigateAway: t,
-          onSelectEmoji: e => {
-            let {
-              emoji: l,
-              willClose: n
-            } = e, i = (null == l ? true : l.id) == null;
-            Z(), i ? S(null == l ? true : l.optionallyDiverseSequence) : (N && S(null == l ? true : l.name), O(null == l ? true : l.id)), n && t()
-          },
-          guildId: l,
-          channel: P
-        })
-      },
-      children: (e, t) => {
-        let {
-          isShown: l
-        } = t;
-        return (0, n.jsxs)("div", y(h({}, e), {
-          className: x.emojiInput,
-          ref: D,
-          children: [(0, n.jsx)(f.Z, {
-            className: x.emojiButton,
-            active: l,
-            tabIndex: 0,
-            renderButtonContents: !_.isDeletedCustomEmoji && (_.hasEmojiId || _.hasEmojiName) ? () => (0, n.jsx)(c.Z, {
-              emojiName: I,
-              emojiId: E
-            }) : null
-          }), (0, n.jsx)(o.Is, {
-            inputClassName: x.emojiText,
-            placeholder: b.intl.string(b.t.QTK0TE),
-            value: !_.isDeletedCustomEmoji && _.hasEmojiDisplayName ? ":".concat(C, ":") : "",
-            readOnly: true
-          }), !_.isDeletedCustomEmoji && _.hasEmojiDisplayName && k && (0, n.jsx)(d.Z, y(h({}, e), {
-            onClick: R,
-            className: x.removeButton
-          }))]
-        }))
-      }
+  }, [E, w, P]), T = !_.isDeletedCustomEmoji && _.hasEmojiDisplayName;
+  return (0, n.jsx)("div", {
+    className: t,
+    children: (0, n.jsx)(a.N, {
+      required: I,
+      label: v.intl.string(v.t["3BQmiI"]),
+      errorMessage: null != y ? y : true,
+      children: (0, n.jsx)(o.yRy, {
+        targetElementRef: k,
+        animation: o.yRy.Animation.NONE,
+        position: "top",
+        renderPopout: e => {
+          let {
+            closePopout: t
+          } = e;
+          return (0, n.jsx)(f.Z, {
+            closePopout: t,
+            pickerIntention: j.Hz.SOUNDBOARD,
+            onNavigateAway: t,
+            onSelectEmoji: e => {
+              let {
+                emoji: l,
+                willClose: n
+              } = e, i = (null == l ? true : l.id) == null;
+              Z(), i ? N(null == l ? true : l.optionallyDiverseSequence) : (S && N(null == l ? true : l.name), O(null == l ? true : l.id)), n && t()
+            },
+            guildId: l,
+            channel: C
+          })
+        },
+        children: (e, t) => {
+          let {
+            isShown: l
+          } = t;
+          return (0, n.jsxs)(s.U, h(b({}, e), {
+            className: x.emojiInput,
+            ref: k,
+            children: [(0, n.jsx)(m.Z, {
+              active: l,
+              tabIndex: 0,
+              renderButtonContents: !_.isDeletedCustomEmoji && (_.hasEmojiId || _.hasEmojiName) ? () => (0, n.jsx)(u.Z, {
+                emojiName: w,
+                emojiId: E
+              }) : null
+            }), (0, n.jsx)(o.Text, {
+              variant: "text-md/normal",
+              lineClamp: 1,
+              color: T ? "text-default" : "text-muted",
+              children: T ? ":".concat(P, ":") : v.intl.string(v.t.QTK0TE)
+            }), T && D && (0, n.jsx)(c.Z, h(b({}, e), {
+              onClick: R
+            }))]
+          }))
+        }
+      })
     })
   })
 }

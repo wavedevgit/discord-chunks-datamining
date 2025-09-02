@@ -2,11 +2,11 @@
 /** chunk id: 861066, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  h: () => c
+  h: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk780605 = require("./780605.jsx");
+var Chunk378215 = require("./378215.jsx");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -30,26 +30,6 @@ function o(e) {
   return e
 }
 
-function s(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function l(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : s(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function c(e) {
-  return (0, r.jsx)(i.Y, l(o({}, e), {
-    text: true,
-    fullWidth: false
-  }))
+function s(e) {
+  return (0, r.jsx)(i.H, o({}, e))
 }

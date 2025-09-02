@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk174727 = require("./174727.js"),
   Chunk710111 = require("./710111.js"),
   Chunk400029 = require("./400029.js");
-let g = {
+let h = {
     startPositionMs: 0,
     endPositionMs: 2 * (10 * Chunk70956.Z.Millis.SECOND),
     playheadPositionMs: 0
@@ -28,13 +28,13 @@ let g = {
       onChange: p
     } = e, {
       audio: y
-    } = (0, c.p)(), [b, v] = l.useState(false), [x, j] = l.useState(g), {
-      playheadPositionMs: _,
-      endPositionMs: w,
+    } = (0, c.p)(), [b, v] = l.useState(false), [x, w] = l.useState(h), {
+      playheadPositionMs: j,
+      endPositionMs: _,
       startPositionMs: N
-    } = x, C = null != y, S = w - N, O = S > m.YW * s.Z.Millis.SECOND;
+    } = x, C = null != y, S = _ - N, O = S > m.YW * s.Z.Millis.SECOND;
     l.useEffect(() => {
-      if (null != y) return j({
+      if (null != y) return w({
         playheadPositionMs: 0,
         endPositionMs: y.duration * s.Z.Millis.SECOND,
         startPositionMs: 0
@@ -45,14 +45,14 @@ let g = {
     let E = l.useCallback(e => {
         null != y && (y.pause(), null != e && (y.currentTime = e), v(false))
       }, [y]),
-      I = l.useCallback(() => {
+      P = l.useCallback(() => {
         if (null != y) {
           if (b) return void E();
-          _ >= w ? y.currentTime = (0, f.my)(N) : y.currentTime = (0, f.my)(_), y.volume = (0, u.Z)(t), y.play(), v(true)
+          j >= _ ? y.currentTime = (0, f.my)(N) : y.currentTime = (0, f.my)(j), y.volume = (0, u.Z)(t), y.play(), v(true)
         }
-      }, [y, w, E, _, b, N, t]),
-      P = l.useCallback(e => {
-        j(e), null == p || p({
+      }, [y, _, E, j, b, N, t]),
+      I = l.useCallback(e => {
+        w(e), null == p || p({
           startMs: e.startPositionMs,
           endMs: e.endPositionMs
         })
@@ -61,28 +61,28 @@ let g = {
         null != y && (y.currentTime = e)
       }, [y]);
     return (0, a.jsxs)("div", {
-      className: r()(h.container, {
-        [h.initialized]: C,
-        [h.disabled]: !C || i
+      className: r()(g.container, {
+        [g.initialized]: C,
+        [g.disabled]: !C || i
       }, n),
       children: [(0, a.jsxs)("div", {
-        className: h.playButtonContainer,
+        className: g.playButtonContainer,
         children: [(0, a.jsx)(o.P3F, {
-          className: h.playButton,
-          onClick: C ? I : true,
+          className: g.playButton,
+          onClick: C ? P : true,
           children: b ? (0, a.jsx)(o.wNq, {
             size: "xs",
             color: "currentColor",
-            className: h.playButtonIcon
+            className: g.playButtonIcon
           }) : (0, a.jsx)(o.o1U, {
             size: "xs",
             color: "currentColor",
-            className: h.playButtonIcon
+            className: g.playButtonIcon
           })
         }), (0, a.jsx)("div", {
-          className: h.durationContainer,
+          className: g.durationContainer,
           children: (0, a.jsx)(o.Text, {
-            className: h.__invalid_duration,
+            className: g.__invalid_duration,
             variant: "text-xs/normal",
             color: O ? "text-feedback-warning" : "text-feedback-positive",
             children: "".concat((0, f.my)(S).toFixed(2), "s")
@@ -92,7 +92,7 @@ let g = {
         playing: b,
         onPlaybackChange: k,
         onPausePlayback: E,
-        onChangePosition: P,
+        onChangePosition: I,
         disabled: i
       })]
     })

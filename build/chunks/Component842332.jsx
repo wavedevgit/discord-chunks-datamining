@@ -68,54 +68,66 @@ function p(e) {
     (null == c.name || "" === c.name.trim()) && !m && b && null != n && (g(true), y())
   }, [t.id, n, l, c.name, m, b, y]);
   let _ = i.useCallback(function() {
-    let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-    return b ? (0, r.jsx)(a.ua7, {
-      text: u.intl.string(u.t.ZF2oBg),
-      children: t => {
-        var i, l;
-        return (0, r.jsx)(a.hU, (i = function(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-              r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-              var r;
-              r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: true,
-                configurable: true,
-                writable: true
-              }) : e[t] = r
-            })
-          }
-          return e
-        }({}, t), l = l = {
-          icon: a.$2U,
-          variant: "secondary",
-          size: "sm",
-          "aria-label": u.intl.string(u.t.ZF2oBg),
-          onClick: y,
-          disabled: e || h || null == n && p.textValue.trim().length < 10,
-          loading: h,
-          type: "button"
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-          var n = Object.keys(e);
-          if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-          }
-          return n
-        })(Object(l)).forEach(function(e) {
-          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
-        }), i))
+      let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
+      if (b) return {
+        icon: a.$2U,
+        onClick: y,
+        "aria-label": u.intl.string(u.t.ZF2oBg),
+        disabled: e || h || null == n && p.textValue.trim().length < 10,
+        tooltip: u.intl.string(u.t.ZF2oBg),
+        loading: h
       }
-    }) : null
-  }, [b, h, n, p.textValue, y]);
+    }, [b, y, h, n, p.textValue]),
+    C = i.useCallback(function() {
+      let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
+      return b ? (0, r.jsx)(a.ua7, {
+        text: u.intl.string(u.t.ZF2oBg),
+        children: t => {
+          var i, l;
+          return (0, r.jsx)(a.hU, (i = function(e) {
+            for (var t = 1; t < arguments.length; t++) {
+              var n = null != arguments[t] ? arguments[t] : {},
+                r = Object.keys(n);
+              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(n, e).enumerable
+              }))), r.forEach(function(t) {
+                var r;
+                r = n[t], t in e ? Object.defineProperty(e, t, {
+                  value: r,
+                  enumerable: true,
+                  configurable: true,
+                  writable: true
+                }) : e[t] = r
+              })
+            }
+            return e
+          }({}, t), l = l = {
+            icon: a.$2U,
+            variant: "secondary",
+            size: "sm",
+            "aria-label": u.intl.string(u.t.ZF2oBg),
+            onClick: y,
+            disabled: e || h || null == n && p.textValue.trim().length < 10,
+            loading: h,
+            type: "button"
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+            var n = Object.keys(e);
+            if (Object.getOwnPropertySymbols) {
+              var r = Object.getOwnPropertySymbols(e);
+              n.push.apply(n, r)
+            }
+            return n
+          })(Object(l)).forEach(function(e) {
+            Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+          }), i))
+        }
+      }) : null
+    }, [b, h, n, p.textValue, y]);
   return {
     isGeneratingAI: h,
     generateAIName: y,
     enableAIFeatures: b,
-    renderAiGenerateButton: _
+    renderAiGenerateButton: C,
+    getThreadNameInputAccessory: _
   }
 }

@@ -205,13 +205,14 @@ function P(e) {
     requireTag: l,
     error: a
   } = e, [s, m] = i.useState(null), g = i.useCallback(e => {
-    let r = [...n.keywords];
-    r.splice(e, 1), m(null), (0, d.zH)(t, r)
+    let r = Array.from(e),
+      i = [...n.keywords].filter(e => !r.includes(e));
+    m(null), (0, d.zH)(t, i)
   }, [t, n]), p = i.useCallback(e => {
     let {
       keywords: r
     } = n;
-    r.length >= y.G7 || (m(null), (0, d.zH)(t, [...r, e]))
+    !(r.length >= y.G7) && (r.includes(e) || (m(null), (0, d.zH)(t, [...r, e])))
   }, [t, n]), f = i.useMemo(() => (0, _.P5)(n.primaryCategoryId).filter(e => !n.keywords.includes(e)).map(e => {
     let t = n.keywords.length >= y.G7;
     return {
@@ -220,22 +221,19 @@ function P(e) {
       disabled: t,
       tooltipText: t ? N.intl.string(N.t.Xx7XeH) : true
     }
-  }), [n.keywords, n.primaryCategoryId, p]), h = null != a ? a : s;
+  }), [n.keywords, n.primaryCategoryId, p]), h = null != a ? a : s, b = i.useMemo(() => n.keywords.map(e => ({
+    id: e,
+    label: e
+  })), [n.keywords]);
   return (0, r.jsxs)("div", {
     className: E.sectionContainer,
     children: [(0, r.jsxs)("div", {
-      children: [(0, r.jsxs)(o.X6q, {
-        variant: "text-md/semibold",
-        color: "header-primary",
-        className: E.header,
-        children: [N.intl.string(N.t["0PJZXl"]), l ? (0, r.jsx)(I, {}) : null]
-      }), (0, r.jsx)(o.Text, {
-        variant: "text-sm/medium",
-        color: "text-secondary",
-        children: N.intl.string(N.t.ztiTDA)
-      }), (0, r.jsx)(c.Z, {
-        className: E.editableSection,
-        tags: n.keywords,
+      children: [(0, r.jsx)(c.Z, {
+        required: l,
+        label: N.intl.string(N.t["0PJZXl"]),
+        description: N.intl.string(N.t.ztiTDA),
+        tagsLabel: N.intl.string(N.t["0PJZXl"]),
+        tags: b,
         onRemoveTag: g,
         onAddTag: p,
         onAddTagError: m,

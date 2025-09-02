@@ -13,6 +13,6 @@ module.exports = {
   options: "options__5d756",
   buttons: "buttons__5d756",
   checkboxes: "checkboxes__5d756",
-  closeIcon: "closeIcon__5d756",
-  collapseButton: "collapseButton__5d756"
+  collapseButton: "collapseButton__5d756",
+  closeIcon: "closeIcon__5d756"
 }
