@@ -255,7 +255,7 @@ function z(e) {
 }
 
 function q() {
-  h = null, m = null, g = {}, E = N(), b = R(), A = {}, I = false, T = null
+  h = null, m = null, g = {}, E = N(), b = R(), A = {}, I = false, T = null, O = C()
 }
 class X extends Chunk750041.Z {
   initialize() {
