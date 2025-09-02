@@ -2,10 +2,10 @@
 /** chunk id: 970184, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  CJ: () => k,
-  Ee: () => M,
-  Il: () => j,
-  h4: () => U
+  CJ: () => U,
+  Ee: () => k,
+  Il: () => M,
+  h4: () => G
 }), require("./388685.js"), require("./997841.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,10 +26,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk607744 = require("./607744.js"),
   Chunk594174 = require("./594174.js"),
   Chunk280501 = require("./280501.js"),
+  Chunk292419 = require("./292419.js"),
   Chunk892902 = require("./892902.js"),
   Chunk359232 = require("./359232.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,20 +39,20 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
 }
 
-function A(e, t) {
+function C(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -62,12 +63,12 @@ function A(e, t) {
   return n
 }
 
-function C(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function N(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let N = e => {
+let R = e => {
     switch (e.type) {
       case c.re.BUTTON:
         return e.style !== c.ZJ.LINK;
@@ -83,12 +84,12 @@ let N = e => {
         returnfalse
     }
   },
-  R = function(e, t) {
+  P = function(e, t) {
     let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
       r = O.gH.NORMAL;
-    return null != e && e.state !== _.F.FAILED && (e.data.interactionType === c.B8.MESSAGE_COMPONENT && e.data.componentId === t.id ? r = O.gH.LOADING : N(t) && (r = O.gH.DISABLED)), n && N(t) && (r = O.gH.DISABLED), r
+    return null != e && e.state !== _.F.FAILED && (e.data.interactionType === c.B8.MESSAGE_COMPONENT && e.data.componentId === t.id ? r = O.gH.LOADING : R(t) && (r = O.gH.DISABLED)), n && R(t) && (r = O.gH.DISABLED), r
   },
-  P = e => {
+  w = e => {
     let t = g.Z.getChannel(e),
       n = (0, s.e7)([b.Z], () => (null == t ? true : t.guild_id) == null || b.Z.canChatInGuild(t.guild_id), [t]),
       r = (0, s.e7)([h.Z], () => (null == t ? true : t.guild_id) != null && h.Z.isLurking(t.guild_id), [t]),
@@ -102,13 +103,13 @@ let N = e => {
     return !!(!n || r || i || (null == t ? true : t.isLockedThread()) || (null == t ? true : t.isArchivedThread()) && !o) || !!a
   };
 
-function w(e, t) {
+function D(e, t) {
   var n, r;
-  let a = i.useContext(L),
+  let a = i.useContext(j),
     o = i.useCallback(t => {
       var n;
-      let r = (0, I.Z)(e, t, null != a.modal ? "modal" : "message");
-      return null == (n = a.setValidationErrors) || n.call(a, t => C(S({}, t), {
+      let r = (0, T.Z)(e, t, null != a.modal ? "modal" : "message");
+      return null == (n = a.setValidationErrors) || n.call(a, t => N(A({}, t), {
         [e.id]: r
       })), null == r
     }, [e, a]);
@@ -125,15 +126,15 @@ function w(e, t) {
   }
 }
 
-function D(e, t, n, r) {
+function x(e, t, n, r) {
   var a;
-  let o = (0, s.e7)([v.Z], () => v.Z.getInteractionComponentState(e.id, n.id)),
+  let o = (0, s.e7)([I.Z], () => I.Z.getInteractionComponentState(e.id, n.id)),
     l = (0, s.e7)([f.ZP], () => f.ZP.getInteraction(e), [e]),
-    c = P(e.channel_id) || t,
+    c = w(e.channel_id) || t,
     {
       error: u,
       validate: d
-    } = w(n, o),
+    } = D(n, o),
     _ = null != (a = e.applicationId) ? a : e.author.id;
   return {
     state: o,
@@ -152,18 +153,18 @@ function D(e, t, n, r) {
         localState: t
       }), true
     }, [e.channel_id, e.flags, e.id, n.customId, n.type, n.id, _, d]),
-    isDisabled: c && N(n),
-    visualState: R(l, n, c),
+    isDisabled: c && R(n),
+    visualState: P(l, n, c),
     error: u
   }
 }
 
-function x(e, t, n) {
-  let r = (0, s.e7)([v.Z], () => v.Z.getInteractionComponentState(e.customId, t.id)),
+function L(e, t, n) {
+  let r = (0, s.e7)([I.Z], () => I.Z.getInteractionComponentState(e.customId, t.id)),
     {
       error: a,
       validate: o
-    } = w(t, r),
+    } = D(t, r),
     c = i.useCallback(n => null == n || (l.Z.dispatch({
       type: "SET_INTERACTION_COMPONENT_STATE",
       rootContainerId: e.customId,
@@ -180,9 +181,9 @@ function x(e, t, n) {
     error: a
   }
 }
-let L = Chunk647438.createContext(null);
+let j = Chunk647438.createContext(null);
 
-function j(e) {
+function M(e) {
   let {
     children: t,
     message: n,
@@ -192,33 +193,35 @@ function j(e) {
     setValidationErrors: c,
     shouldDisableInteractiveComponents: u = false
   } = e, d = i.useMemo(() => null != n ? {
-    useComponentState: D.bind(null, n, u),
+    useComponentState: x.bind(null, n, u),
     channelId: n.channel_id,
     message: n,
-    validators: s
+    validators: s,
+    getParents: e => (0, v.cd)(n.components, e)
   } : (o()(null != a, "modal is present if message is not"), {
-    useComponentState: x.bind(null, a),
+    useComponentState: L.bind(null, a),
     channelId: a.channelId,
     modal: a,
     validators: s,
     validationErrors: l,
-    setValidationErrors: c
+    setValidationErrors: c,
+    getParents: e => (0, v.cd)(a.components, e)
   }), [n, a, s, l, c, u]);
-  return (0, r.jsx)(L.Provider, {
+  return (0, r.jsx)(j.Provider, {
     value: d,
     children: t
   })
 }
 
-function M(e, t) {
-  return i.useContext(L).useComponentState(e, t)
+function k(e, t) {
+  return i.useContext(j).useComponentState(e, t)
 }
 
-function k() {
-  return Chunk647438.useContext(L)
+function U() {
+  return Chunk647438.useContext(j)
 }
 
-function U(e) {
+function G(e) {
   var t, n;
-  return null != (n = null == (t = i.useContext(L).validationErrors) ? true : t[e.id]) ? n : null
+  return null != (n = null == (t = i.useContext(j).validationErrors) ? true : t[e.id]) ? n : null
 }
