@@ -424,7 +424,7 @@ function eN(e) {
     let {
       editorHeight: n,
       isGridLayout: r
-    } = eJ.current, i = r ? e8 : ea, a = null == (e = i.current) ? true : e.getScrollerState();
+    } = eJ.current, i = r ? e6 : ea, a = null == (e = i.current) ? true : e.getScrollerState();
     null != a && !eX && a.scrollTop > n && (null == (t = i.current) || t.scrollTo({
       to: 0
     }))
@@ -496,8 +496,8 @@ function eN(e) {
     goToThread: eV,
     observePostVisibilityAnalytics: es,
     isShowingSearchResult: e_
-  }), e8 = i.useRef(null), {
-    updateMasonryListScrollerRef: e6,
+  }), e6 = i.useRef(null), {
+    updateMasonryListScrollerRef: e8,
     getItemKey: e1,
     renderGridSection: e4,
     renderGridItem: e9,
@@ -592,7 +592,7 @@ function eN(e) {
       getGridSectionHeight: i.useCallback(e => 0 === e ? g - 8 - 24 : 2 === e ? o || !u ? 40 : 0 : 1 === e && c && !d ? 40 : 0, [g, c, d, o, u])
     }
   }({
-    masonryListScrollerRef: e8,
+    masonryListScrollerRef: e6,
     threadIdsBySection: eU,
     goToThread: eV,
     renderSectionOrItem: eW,
@@ -633,7 +633,7 @@ function eN(e) {
       }
     }, [s, n, r, a, l, t])
   }({
-    masonryListScrollerRef: e8,
+    masonryListScrollerRef: e6,
     containerWidth: eM,
     isGridLayout: eo,
     threadIdsBySection: eU,
@@ -643,7 +643,7 @@ function eN(e) {
   let te = i.useCallback(() => {
       var e, n;
       if (e_) return;
-      let r = eo ? null == (e = e8.current) ? true : e.getScrollerState() : null == (n = ea.current) ? true : n.getScrollerState();
+      let r = eo ? null == (e = e6.current) ? true : e.getScrollerState() : null == (n = ea.current) ? true : n.getScrollerState();
       if (null == r) return;
       (0, $.ab)({
         guildId: t.guild_id,
@@ -701,7 +701,7 @@ function eN(e) {
           children: (0, r.jsx)(p.GMG, eb({
             ref: e => {
               var t;
-              ta.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null, e6(e)
+              ta.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null, e8(e)
             },
             itemGutter: 16,
             padding: 24,

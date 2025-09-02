@@ -752,11 +752,23 @@ let q = {
       } = this.getDiscordUtils();
       null != t && t(e)
     },
-    IsServiceHelperInstalled() {
+    IsSystemServiceInstalled() {
       let {
-        isServiceHelperInstalled: e
+        isSystemServiceInstalled: e
       } = this.getDiscordUtils();
       if (null != module) return module()
+    },
+    CanSystemServiceBeInstalled() {
+      let {
+        canSystemServiceBeInstalled: e
+      } = this.getDiscordUtils();
+      if (null != module) return module()
+    },
+    InstallSystemService() {
+      let {
+        installSystemService: e
+      } = this.getDiscordUtils();
+      return null != module ? module() : Promise.reject(Error("System service native not available"))
     },
     InputEventServiceSetAllowed(e) {
       let {

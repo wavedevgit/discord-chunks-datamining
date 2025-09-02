@@ -2,17 +2,16 @@
 /** chunk id: 176412, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Bm: () => w,
-  P7: () => P,
-  X: () => D,
-  ae: () => R
+  Bm: () => P,
+  P7: () => R,
+  X: () => w,
+  ae: () => N
 });
 var Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk25209 = require("./25209.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk2052 = require("./2052.js"),
   Chunk542094 = require("./542094.js"),
   Chunk513202 = require("./513202.jsx"),
@@ -30,7 +29,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -39,7 +38,7 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,8 +48,8 @@ function A(e, t) {
   }
   return n
 }
-let C = function(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+let A = function(e, t) {
+    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
   }(function(e) {
@@ -60,80 +59,79 @@ let C = function(e, t) {
       "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
       }))), r.forEach(function(t) {
-        S(e, t, n[t])
+        T(e, t, n[t])
       })
     }
     return e
   }({}, Chunk428595.Z.RULES.commandMention), {
     parse: (e, t, n) => ({
-      content: m.Z.RULES.commandMention.parse(e, t, n).content
+      content: h.Z.RULES.commandMention.parse(e, t, n).content
     })
   }),
-  N = a().pick((0, Chunk364458.Z)([Chunk428595.Z.RULES, {
-    commandMention: C
+  C = a().pick((0, Chunk364458.Z)([Chunk428595.Z.RULES, {
+    commandMention: A
   }, (0, Chunk691424.Z)({
     enableBuildOverrides: false,
     enableEmojiClick: false
   })]), ["commandMention", "customEmoji", "em", "emoji", "emoticon", "highlight", "inlineCode", "looseEm", "s", "strong", "text", "timestamp", "u", "spoiler"]),
-  R = Chunk25209.w4(N);
+  N = Chunk25209.w4(C);
 
-function P(e) {
+function R(e) {
   let {
     context: t,
     application: n,
     location: i,
     sectionName: a,
     commandName: s,
-    autoDismissOnClick: h = true,
-    launchingComponentId: m,
-    submitting: g = false,
-    fetchesApplication: E = true,
-    onConfirmActivityLaunchChecksAlertOpen: S
-  } = e, A = (0, c.O)(), C = (0, u.Qv)({
+    autoDismissOnClick: p = true,
+    launchingComponentId: h,
+    submitting: m = false,
+    fetchesApplication: g = true,
+    onConfirmActivityLaunchChecksAlertOpen: T
+  } = e, S = (0, l.O)(), A = (0, c.Qv)({
     context: t,
     applicationId: n.id,
-    fetchesApplication: E
-  }), N = (0, v.Q)(C), R = (0, o.e7)([y.Z], () => y.Z.entrypoint()), P = r.useMemo(() => {
+    fetchesApplication: g
+  }), C = (0, O.Q)(A), N = (0, o.e7)([b.Z], () => b.Z.entrypoint()), R = r.useMemo(() => {
     var e, r, i;
-    if ("channel" !== t.type) return null != (i = null == (e = n.bot) ? true : e.id) ? i : null == (r = (0, _.If)(t, n.id).descriptor) ? true : r.botId
-  }, [t, n.id, n.bot]), w = (0, u.w1)({
+    if ("channel" !== t.type) return null != (i = null == (e = n.bot) ? true : e.id) ? i : null == (r = (0, f.If)(t, n.id).descriptor) ? true : r.botId
+  }, [t, n.id, n.bot]), P = (0, c.w1)({
     application: n,
-    botUserIdForAppDM: P,
-    embeddedActivitiesManager: d.Z,
+    botUserIdForAppDM: R,
+    embeddedActivitiesManager: u.Z,
     context: t,
-    locationObject: A.location,
+    locationObject: S.location,
     onActivityItemSelectedProp: e => {
       let {
         applicationId: t
       } = e;
-      h && b.yT(O.ti.ACTIVITY), (0, f.yw)(I.rMx.APP_LAUNCHER_ACTIVITY_ITEM_SELECTED, {
+      p && E.yT(y.ti.ACTIVITY), (0, d.yw)(v.rMx.APP_LAUNCHER_ACTIVITY_ITEM_SELECTED, {
         location: i,
         application_id: t,
         section_name: a,
-        action: N,
-        source: R
+        action: C,
+        source: N
       })
     },
-    launchingComponentId: m,
-    commandOrigin: p.bB.APPLICATION_LAUNCHER,
+    launchingComponentId: h,
+    commandOrigin: _.bB.APPLICATION_LAUNCHER,
     sectionName: a,
-    source: R,
-    fetchesApplication: E,
-    onConfirmActivityLaunchChecksAlertOpen: S
-  }), D = "primary", x = l.Tt.BRAND, L = null != s ? s : T.intl.string(T.t.zKX8Nj);
-  return N === u.JS.JOIN ? (D = "active", x = l.Tt.GREEN, L = T.intl.string(T.t.d9PsMj)) : N !== u.JS.LEAVE || g || (D = "critical-primary", L = T.intl.string(T.t["Hi1/aW"])), {
-    onActivityItemSelected: w,
-    activityAction: N,
-    buttonVariant: D,
-    buttonColor: x,
-    buttonText: L
+    source: N,
+    fetchesApplication: g,
+    onConfirmActivityLaunchChecksAlertOpen: T
+  }), w = "primary", D = null != s ? s : I.intl.string(I.t.zKX8Nj);
+  return C === c.JS.JOIN ? (w = "active", D = I.intl.string(I.t.d9PsMj)) : C !== c.JS.LEAVE || m || (w = "critical-primary", D = I.intl.string(I.t["Hi1/aW"])), {
+    onActivityItemSelected: P,
+    activityAction: C,
+    buttonVariant: w,
+    buttonText: D
   }
 }
 
-function w(e, t) {
-  let n = y.Z.entrypoint(),
+function P(e, t) {
+  let n = b.Z.entrypoint(),
     a = r.useMemo(() => (0, i.debounce)((e, t) => {
-      (0, f.yw)(I.rMx.APP_LAUNCHER_EMPTY_STATE_ENCOUNTERED, {
+      (0, d.yw)(v.rMx.APP_LAUNCHER_EMPTY_STATE_ENCOUNTERED, {
         type: e,
         source: t
       })
@@ -146,8 +144,8 @@ function w(e, t) {
   }, [e, t, n, a])
 }
 
-function D(e) {
-  E.S.dispatchToLastSubscribed(I.CkL.OPEN_APP_LAUNCHER, {
+function w(e) {
+  g.S.dispatchToLastSubscribed(v.CkL.OPEN_APP_LAUNCHER, {
     applicationId: e
   })
 }
