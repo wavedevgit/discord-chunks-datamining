@@ -18,26 +18,26 @@ function l(e) {
     index: s
   } = e, u = function(e, t) {
     if (null == e) return {};
-    var r, n, i = function(e, t) {
+    var r, n, a = function(e, t) {
       if (null == e) return {};
-      var r, n, i = {},
-        a = Object.keys(e);
-      for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
-      return i
+      var r, n, a = {},
+        o = Object.keys(e);
+      for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (a[r] = e[r]);
+      return a
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+      var o = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
     }
-    return i
+    return a
   }(e, ["user", "widget", "containerClassName", "disableInteraction", "index"]);
-  return (0, n.jsx)(i.Z, {
+  return (0, n.jsx)(a.Z, {
     userId: t.id,
     widget: r,
     className: l,
     disableInteraction: c,
     index: s,
-    children: r.games.length > 0 ? (0, n.jsx)(o.Z, function(e) {
+    children: r.games.length > 0 ? (0, n.jsx)(i.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(r);
@@ -59,7 +59,7 @@ function l(e) {
       games: r.games,
       widgetType: r.type,
       disableInteraction: c
-    }, u)) : (0, n.jsx)(a.Z, {
+    }, u)) : (0, n.jsx)(o.Z, {
       widgetType: r.type
     })
   })

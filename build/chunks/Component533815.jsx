@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk785717 = require("./785717.jsx"),
   Chunk86419 = require("./86419.js"),
@@ -17,7 +17,7 @@ function d(e) {
   let {
     game: t,
     widgetType: r,
-    iconSize: i = "refresh_sm",
+    iconSize: a = "refresh_sm",
     className: d
   } = e, {
     trackUserProfileAction: f
@@ -26,11 +26,11 @@ function d(e) {
       action: "EDIT_ACTION"
     })
   };
-  return (0, n.jsx)(o.ua7, {
+  return (0, n.jsx)(i.ua7, {
     text: s.intl.string(s.t.HUvyDQ),
     children: e => {
       var t, r;
-      return (0, n.jsx)(o.P3F, (t = function(e) {
+      return (0, n.jsx)(i.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
             n = Object.keys(r);
@@ -50,11 +50,11 @@ function d(e) {
       }({}, e), r = r = {
         onClick: g,
         "aria-label": s.intl.string(s.t.HUvyDQ),
-        className: a()(d, u.clickable),
-        children: (0, n.jsx)(o.XHJ, {
-          size: i,
+        className: o()(d, u.clickable),
+        children: (0, n.jsx)(i.XHJ, {
+          size: a,
           className: u.icon,
-          color: o.TVs.colors.STATUS_DANGER
+          color: i.TVs.colors.STATUS_DANGER
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var r = Object.keys(e);

@@ -45,19 +45,19 @@ function s(e, t) {
 function u(e) {
   n.useEffect(() => {
     if (e.length > 0) {
-      let t = e.filter(e => o.Z.canFetch(e));
-      t.length > 0 && a.Z.getDetectableGamesSupplemental(t)
+      let t = e.filter(e => i.Z.canFetch(e));
+      t.length > 0 && o.Z.getDetectableGamesSupplemental(t)
     }
   }, [e]);
-  let [t, r] = (0, i.Wu)([o.Z], () => [o.Z.numNoDataAvailable(), o.Z.numSupplementalGames()]);
+  let [t, r] = (0, a.Wu)([i.Z], () => [i.Z.numNoDataAvailable(), i.Z.numSupplementalGames()]);
   return {
     gameDataMap: n.useMemo(() => {
       let t = {};
       return e.forEach(e => {
-        t[e] = o.Z.getGame(e)
+        t[e] = i.Z.getGame(e)
       }), t
     }, [e, t, r]),
-    isGameFetching: n.useCallback(e => o.Z.isFetching(e), [])
+    isGameFetching: n.useCallback(e => i.Z.isFetching(e), [])
   }
 }
 

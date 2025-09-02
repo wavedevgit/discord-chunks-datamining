@@ -17,26 +17,26 @@ function d(e) {
     widgetType: t
   } = e, r = function(e, t) {
     if (null == e) return {};
-    var r, n, i = function(e, t) {
+    var r, n, a = function(e, t) {
       if (null == e) return {};
-      var r, n, i = {},
-        a = Object.keys(e);
-      for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
-      return i
+      var r, n, a = {},
+        o = Object.keys(e);
+      for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (a[r] = e[r]);
+      return a
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+      var o = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
     }
-    return i
+    return a
   }(e, ["widgetType"]);
   let {
     games: d,
     isGameFetching: f,
     onAddGame: g
-  } = (0, s.K)(t), [b] = (0, a.Wu)([l.Z], () => [l.Z.suggestedFetchIsLoading]), {
+  } = (0, s.K)(t), [b] = (0, o.Wu)([l.Z], () => [l.Z.suggestedFetchIsLoading]), {
     trackUserProfileAction: p
-  } = (0, o.KZ)(), m = i.useCallback((e, r, n) => {
+  } = (0, i.KZ)(), m = a.useCallback((e, r, n) => {
     g(e), (0, c.ES)(t, {
       applicationId: e,
       gameName: r,

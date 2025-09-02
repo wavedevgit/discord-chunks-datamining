@@ -24,7 +24,7 @@ function s(e) {
     r.splice(t, 0, n), l.Z.setPendingWidgets(r)
   }, [g]), [{
     isDragging: p
-  }, m, O] = (0, i.c)({
+  }, m, y] = (0, a.c)({
     type: "WIDGET",
     item: {
       widgetId: u.id,
@@ -38,11 +38,11 @@ function s(e) {
     })
   });
   (0, n.useEffect)(() => {
-    O((0, o.r)(), {
+    y((0, i.r)(), {
       captureDraggingState: true
     })
-  }, [O]);
-  let [y, j] = (0, a.L)({
+  }, [y]);
+  let [O, j] = (0, o.L)({
     accept: "WIDGET",
     canDrop: () => !f,
     collect: e => ({
@@ -53,15 +53,15 @@ function s(e) {
       if (f || null == t.current || !r.isOver({
           shallow: true
         })) return;
-      let i = e.index,
-        a = null != d ? d : 0;
-      if (i === a) return;
-      let o = null == (n = t.current) ? true : n.getBoundingClientRect(),
-        l = (o.bottom - o.top) / 2,
+      let a = e.index,
+        o = null != d ? d : 0;
+      if (a === o) return;
+      let i = null == (n = t.current) ? true : n.getBoundingClientRect(),
+        l = (i.bottom - i.top) / 2,
         c = r.getClientOffset();
       if (null == c) return;
-      let s = c.y - o.top;
-      (!(i < a) || !(s < l)) && (i > a && s > l || (b(i, a), e.index = a))
+      let s = c.y - i.top;
+      (!(a < o) || !(s < l)) && (a > o && s > l || (b(a, o), e.index = o))
     }
   });
   return null == d || f ? {

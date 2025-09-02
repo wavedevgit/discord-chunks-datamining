@@ -52,18 +52,18 @@ let m = e => {
       children: t
     } = e, {
       isDragging: r
-    } = (0, i.f)(e => ({
+    } = (0, a.f)(e => ({
       isDragging: e.isDragging()
     }));
-    return (0, n.jsx)(a.ua7, {
+    return (0, n.jsx)(o.ua7, {
       "aria-label": f.intl.string(f.t.HWNJJC),
-      text: (0, n.jsx)(O, {}),
+      text: (0, n.jsx)(y, {}),
       position: "top",
       shouldShow: true !== r,
       children: t
     })
   },
-  O = () => (0, Chunk951288.jsxs)("div", {
+  y = () => (0, Chunk951288.jsxs)("div", {
     className: Chunk176870.dragClickTooltipText,
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
@@ -81,31 +81,31 @@ let m = e => {
       })
     })]
   }),
-  y = e => {
+  O = e => {
     let {
       children: t,
-      widget: i,
+      widget: a,
       targetRef: g
     } = e, {
       trackUserProfileAction: m
-    } = (0, c.KZ)(), O = e => {
+    } = (0, c.KZ)(), y = e => {
       if (e.shiftKey) {
-        (0, s.y8)(i.type), (0, u.L$)(d.qb.WIDGET_REMOVED);
+        (0, s.y8)(a.type), (0, u.L$)(d.qb.WIDGET_REMOVED);
         return
-      }(0, a.ZDy)(async () => {
+      }(0, o.ZDy)(async () => {
         let {
           default: e
         } = await r.e("70887").then(r.bind(r, 37668));
         return t => (0, n.jsx)(e, p(b({}, t), {
           userId: l.default.getId(),
-          widget: i,
+          widget: a,
           trackUserProfileAction: m
         }))
       }, {
         stackingBehavior: "stack"
       })
     };
-    return (0, n.jsx)(a.yRy, {
+    return (0, n.jsx)(o.yRy, {
       targetElementRef: g,
       align: "top",
       position: "right",
@@ -114,20 +114,20 @@ let m = e => {
         let {
           closePopout: t
         } = e;
-        return (0, n.jsx)(a.v2r, {
+        return (0, n.jsx)(o.v2r, {
           navId: "user-profile-widget-context-menu",
           onClose: () => {
-            (0, o.Zy)(), t()
+            (0, i.Zy)(), t()
           },
           onSelect: () => {},
           "aria-label": f.intl.string(f.t.xpSHSk),
-          children: (0, n.jsx)(a.kSQ, {
-            children: (0, n.jsx)(a.sNh, {
+          children: (0, n.jsx)(o.kSQ, {
+            children: (0, n.jsx)(o.sNh, {
               id: "remove-widget",
               label: f.intl.string(f.t.Mm07YW),
-              action: O,
+              action: y,
               color: "danger",
-              icon: a.XHJ
+              icon: o.XHJ
             })
           })
         })
@@ -139,17 +139,17 @@ let m = e => {
     let {
       widget: t,
       className: r,
-      buttonRef: i
+      buttonRef: a
     } = e;
     return (0, n.jsx)(m, {
-      children: e => (0, n.jsx)(y, {
-        targetRef: i,
+      children: e => (0, n.jsx)(O, {
+        targetRef: a,
         widget: t,
-        children: t => (0, n.jsx)(a.P3F, p(b({
-          innerRef: i,
+        children: t => (0, n.jsx)(o.P3F, p(b({
+          innerRef: a,
           className: r
         }, e, t), {
-          children: (0, n.jsx)(a.Vni, {
+          children: (0, n.jsx)(o.Vni, {
             size: "sm"
           })
         }))

@@ -1,12 +1,11 @@
 /** Chunk was on 61149 **/
 /** chunk id: 840367, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk624238 = require("./624238.js"),
-  Chunk296009 = require("./296009.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk314897 = require("./314897.js"),
@@ -15,66 +14,60 @@ var Chunk624238 = require("./624238.js"),
   Chunk825354 = require("./825354.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk635318 = require("./635318.js");
-let b = {
-  [Chunk296009.l.FAVORITE_GAMES]: () => Chunk388032.intl.string(Chunk388032.t.sUQar6),
-  [Chunk296009.l.CURRENT_GAMES]: () => Chunk388032.intl.string(Chunk388032.t.SqNnur),
-  [Chunk296009.l.WANT_TO_PLAY_GAMES]: () => Chunk388032.intl.string(Chunk388032.t.bWSQwc),
-  [Chunk296009.l.PLAYED_GAMES]: () => Chunk388032.intl.string(Chunk388032.t.scOKER)
-};
 
-function p(e) {
+function g(e) {
   var t;
   let {
     userId: r,
-    headingId: a,
+    headingId: s,
     widget: u,
-    disableInteraction: d = false
-  } = e, p = (0, o.e7)([c.default], () => c.default.getId() === r), O = (0, s.kQ)(u), y = b[u.type](), j = p && u.games.length > 0 ? (t = u.type, 1 === i.k[t] ? f.intl.string(f.t.wiXdER) : f.intl.format(f.t["zR1+09"], {
-    numGames: i.k[t]
+    disableInteraction: g = false
+  } = e, p = (0, o.e7)([l.default], () => l.default.getId() === r), m = (0, c.kQ)(u), y = (0, c.Nc)(u.type), O = p && u.games.length > 0 ? (t = u.type, 1 === a.k[t] ? d.intl.string(d.t.wiXdER) : d.intl.format(d.t["zR1+09"], {
+    numGames: a.k[t]
   })) : true;
   return (0, n.jsxs)("div", {
-    className: g.headerRow,
+    className: f.headerRow,
     children: [(0, n.jsxs)("div", {
-      className: g.title,
-      children: [(0, n.jsx)(l.X6q, {
+      className: f.title,
+      children: [(0, n.jsx)(i.X6q, {
         variant: "heading-sm/medium",
         color: "text-default",
-        id: a,
+        id: s,
         children: y
-      }), null != j && (0, n.jsx)(l.Text, {
+      }), null != O && (0, n.jsx)(i.Text, {
         variant: "text-xs/normal",
         color: "text-secondary",
-        children: j
+        children: O
       })]
-    }), (0, n.jsx)(m, {
+    }), (0, n.jsx)(b, {
       widget: u,
-      disabled: O,
-      disabledInteraction: d,
+      disabled: m,
+      disabledInteraction: g,
       userId: r
     })]
   })
 }
 
-function m(e) {
+function b(e) {
   let {
     widget: t,
     disabled: r,
-    disabledInteraction: i,
-    userId: a
-  } = e, l = (0, o.e7)([c.default], () => c.default.getId() === a), f = (0, s.vI)(t.type) && t.games.some(e => null != e.comment);
-  return i ? null : l ? (0, n.jsx)("div", {
-    className: g.actions,
-    children: (0, n.jsx)(u.Z, {
+    disabledInteraction: a,
+    userId: i
+  } = e, d = (0, o.e7)([l.default], () => l.default.getId() === i), g = (0, c.vI)(t.type) && t.games.some(e => null != e.comment);
+  return a ? null : d ? (0, n.jsx)("div", {
+    className: f.actions,
+    children: (0, n.jsx)(s.Z, {
       disabled: r,
       widgetType: t.type,
       widget: t
     })
-  }) : f ? (0, n.jsx)("div", {
-    className: g.actions,
-    children: (0, n.jsx)(d.Z, {
+  }) : g ? (0, n.jsx)("div", {
+    className: f.actions,
+    children: (0, n.jsx)(u.Z, {
       widget: t,
-      userId: a,
-      className: g.menuButton
+      userId: i,
+      className: f.menuButton
     })
   }) : null
 }
