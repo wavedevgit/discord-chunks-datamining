@@ -17,15 +17,15 @@ function o(e) {
     useSubtitle: a,
     useOptions: u
   } = t, c = s(), d = null == a ? true : a(), g = n(), f = u();
-  return (0, r.jsx)(l.xJW, {
+  return (0, r.jsx)(i.xJW, {
     title: c,
-    className: i.radioContainer,
+    className: l.radioContainer,
     children: (0, r.jsxs)("div", {
-      className: i.radioContent,
-      children: [null != d && (0, r.jsx)(l.R94, {
-        type: l.geA.DESCRIPTION,
+      className: l.radioContent,
+      children: [null != d && (0, r.jsx)(i.R94, {
+        type: i.geA.DESCRIPTION,
         children: d
-      }), (0, r.jsx)(l.FXm, {
+      }), (0, r.jsx)(i.FXm, {
         options: f,
         value: g,
         onChange: e => o(e.value)

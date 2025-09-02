@@ -244,7 +244,7 @@ function tv(e) {
     setHighlightBadge: T
   } = tO(), S = (0, ea.A)(f);
   return null == s ? null : (0, r.jsx)(b.Z, {
-    object: e6.qAy.AVATAR,
+    object: e5.qAy.AVATAR,
     children: (0, r.jsx)(em.Z, {
       user: s,
       targetElementRef: h,
@@ -296,7 +296,7 @@ function tv(e) {
           src: s.getAvatarURL(true, O - 4, false),
           avatarDecoration: E,
           "aria-label": s.username,
-          status: a ? e6.Skl.STREAMING : l,
+          status: a ? e5.Skl.STREAMING : l,
           isSpeaking: n,
           className: tr.avatar
         }), (0, r.jsx)("div", {
@@ -377,7 +377,7 @@ class tT extends Chunk647438.PureComponent {
       let {
         type: t
       } = e;
-      return t === e6.IIU.CUSTOM_STATUS
+      return t === e5.IIU.CUSTOM_STATUS
     });
     return null != Chunk374470 ? (0, Chunk951288.jsx)(Chunk570928.Z, {
       hoverText: o,
@@ -531,13 +531,13 @@ class tT extends Chunk647438.PureComponent {
         suppress: t,
         selfMute: n
       } = this.props;
-      (0, B.Z)(e, t, e6.jXE.ACCOUNT_PANEL), (0, Z.v)(N.Z.ACCOUNT, Z.d.MIC, n)
+      (0, B.Z)(e, t, e5.jXE.ACCOUNT_PANEL), (0, Z.v)(N.Z.ACCOUNT, Z.d.MIC, n)
     }), ti(this, "handleToggleSelfDeaf", () => {
       let {
         serverDeaf: e,
         selfDeaf: t
       } = this.props;
-      (0, G.Z)(e, e6.jXE.ACCOUNT_PANEL), (0, Z.v)(N.Z.ACCOUNT, Z.d.DEAFEN, !t)
+      (0, G.Z)(e, e5.jXE.ACCOUNT_PANEL), (0, Z.v)(N.Z.ACCOUNT, Z.d.DEAFEN, !t)
     }), ti(this, "handleOpenAccountSettings", () => {
       this.dismissTooltips(), this.handleOpenSettings()
     }), ti(this, "handleOpenSettings", function() {
@@ -635,7 +635,7 @@ class tT extends Chunk647438.PureComponent {
       (0, eK.JG)(e0.ZP.getUserTag(e, {
         decoration: "never",
         identifiable: "always"
-      })), eY.default.track(e6.rMx.TEXT_COPIED, {
+      })), eY.default.track(e5.rMx.TEXT_COPIED, {
         type: "User Tag"
       });
       let r = {
@@ -688,7 +688,7 @@ class tT extends Chunk647438.PureComponent {
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           className: tr.panelTitleContainer,
-          children: (0, r.jsx)(e5.Z, {
+          children: (0, r.jsx)(e6.Z, {
             className: o()({
               [tr.withDisplayNameStyles]: i
             }),
@@ -821,7 +821,7 @@ function tC() {
           let {
             type: t
           } = e;
-          return t === e6.IIU.STREAMING
+          return t === e5.IIU.STREAMING
         }),
         status: Chunk885110.Z.getStatus()
       }
@@ -1092,7 +1092,7 @@ function tR(e) {
       $(false)
     }, []);
   (0, ez.yp)({
-    event: e6.CkL.OPEN_VOICE_FILTER_POPOUT,
+    event: e5.CkL.OPEN_VOICE_FILTER_POPOUT,
     handler: () => {
       $(true)
     }

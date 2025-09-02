@@ -49,45 +49,45 @@ function g(e) {
     root: g,
     directory: f,
     target: y,
-    onClose: v,
-    sidebarHeader: E,
-    sidebarFooter: O
-  } = e, [N, b] = l.useState(true), [T, _] = l.useState(null == (t = f.entry(y)) ? true : t.parentPanel), [I, p] = l.useState({
+    onClose: O,
+    sidebarHeader: v,
+    sidebarFooter: E
+  } = e, [b, N] = i.useState(true), [p, T] = i.useState(null == (t = f.entry(y)) ? true : t.parentPanel), [_, j] = i.useState({
     target: y,
     targetAccordion: null == (n = f.entry(y)) ? true : n.parentAccordion,
     animateScroll: false,
-    complete: m
+    complete: I
   });
 
-  function m() {
-    p(true)
+  function I() {
+    j(true)
   }
   let {
-    navigateWithValidation: S
+    navigateWithValidation: m
   } = (0, s.Cu)(), x = {
-    currentPanel: f.get(T),
+    currentPanel: f.get(p),
     navigateTo: e => {
       let t = f.entry(e);
       if ((null == t ? true : t.parentPanel) == null) return;
       let n = {
         target: e,
         targetAccordion: t.parentAccordion,
-        complete: m
+        complete: I
       };
-      if (t.parentPanel.key !== (null == T ? true : T.key)) {
+      if (t.parentPanel.key !== (null == p ? true : p.key)) {
         let e = t.parentPanel;
-        S(() => {
-          p(d(c({}, n), {
+        m(() => {
+          j(d(c({}, n), {
             animateScroll: false
-          })), _(e)
+          })), T(e)
         })
-      } else p(d(c({}, n), {
+      } else j(d(c({}, n), {
         animateScroll: true
       }))
     },
-    navTransition: I,
-    showNavigationMobile: N,
-    setShowNavigationMobile: b
+    navTransition: _,
+    showNavigationMobile: b,
+    setShowNavigationMobile: N
   };
   return (0, r.jsx)(a.j.Provider, {
     value: x,
@@ -95,10 +95,10 @@ function g(e) {
       className: u.container,
       children: [(0, r.jsx)(o.P, {
         root: g,
-        header: E,
-        footer: O
-      }), (0, r.jsx)(i.Z, {
-        onClose: () => S(v),
+        header: v,
+        footer: E
+      }), (0, r.jsx)(l.Z, {
+        onClose: () => m(O),
         setting: x.currentPanel
       })]
     })

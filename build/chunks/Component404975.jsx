@@ -1,28 +1,30 @@
 /** Chunk was on 47129 **/
 /** chunk id: 404975, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => g
+  P: () => y
 }), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk873546 = require("./873546.js"),
   Chunk481060 = require("./481060.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk59662 = require("./59662.js"),
+  Chunk28682 = require("./28682.js"),
   Chunk829210 = require("./829210.jsx"),
+  Chunk854014 = require("./854014.jsx"),
   Chunk845435 = require("./845435.js");
 
-function g(e) {
+function y(e) {
   let {
     root: t,
     header: n,
-    footer: l
+    footer: i
   } = e, {
-    showNavigationMobile: c
+    showNavigationMobile: d
   } = (0, u.t)(), g = t.layout.flatMap(e => e.layout).flatMap(e => {
     var t;
-    return null == (t = e.trailing) ? true : t.newIndicatorDismissibleContentTypes
+    return e.type === c.J.PANEL && (null == (t = e.trailing) ? true : t.newIndicatorDismissibleContentTypes) != null ? e.trailing.newIndicatorDismissibleContentTypes : []
   }).filter(e => null != e);
   return (0, r.jsx)(a.ZP, {
     contentTypes: g,
@@ -31,46 +33,50 @@ function g(e) {
         visibleContent: a
       } = e;
       return (0, r.jsxs)("div", {
-        className: i()(d.sidebar, {
-          [d.mobile]: o.tq,
-          [d.mobileNavigationOpen]: c
+        className: l()(f.sidebar, {
+          [f.mobile]: o.tq,
+          [f.mobileNavigationOpen]: d
         }),
         children: [null != n && (0, r.jsx)(n, {}), (0, r.jsx)(s.zJl, {
-          className: d.navScroller,
+          className: f.navScroller,
           fade: true,
           children: (0, r.jsx)("nav", {
-            className: d.nav,
-            children: t.layout.map(e => (0, r.jsx)(f, {
+            className: f.nav,
+            children: t.layout.map(e => (0, r.jsx)(O, {
               section: e,
               visibleContent: a
             }, e.key))
           })
-        }), null != l && (0, r.jsx)("footer", {
-          className: d.footer,
-          children: (0, r.jsx)(l, {})
+        }), null != i && (0, r.jsx)("footer", {
+          className: f.footer,
+          children: (0, r.jsx)(i, {})
         })]
       })
     }
   })
 }
 
-function f(e) {
+function O(e) {
   var t;
   let {
     section: n,
-    visibleContent: l
-  } = e, i = null == (t = n.useLabel) ? true : t.call(n);
+    visibleContent: i
+  } = e, l = null == (t = n.useLabel) ? true : t.call(n);
   return (0, r.jsxs)("ul", {
-    className: d.section,
-    children: [null != i && (0, r.jsx)(s.X6q, {
-      className: d.label,
+    className: f.section,
+    children: [null != l && (0, r.jsx)(s.X6q, {
+      className: f.label,
       variant: "heading-sm/medium",
       color: "text-tertiary",
-      children: i
+      children: l
     }), n.layout.map(e => (0, r.jsx)("li", {
-      children: (0, r.jsx)(c.Z, {
+      children: e.type === c.J.PANEL ? (0, r.jsx)(d.Z, {
         node: e,
-        visibleContent: l
+        visibleContent: i
+      }) : (0, r.jsx)(g.Z, {
+        icon: e.icon,
+        title: e.useTitle(),
+        onClick: e.onClick
       })
     }, e.key))]
   })

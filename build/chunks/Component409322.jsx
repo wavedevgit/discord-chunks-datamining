@@ -15,39 +15,39 @@ function u(e) {
   let n, {
       node: u
     } = e,
-    [c, d] = l.useState(false),
+    [c, d] = i.useState(false),
     {
       layout: g,
       collapseAfter: f,
       ContextProvider: y,
-      useCollapsibleTitle: v
+      useCollapsibleTitle: O
     } = u,
-    E = g.filter(e => {
+    v = g.filter(e => {
       var t, n;
       return null == (n = null == (t = e.usePredicate) ? true : t.call(e)) || n
     }),
-    O = null != f ? E.slice(0, f) : E,
-    N = null != f ? E.slice(f) : [],
-    b = null != y ? y : l.Fragment,
-    T = null != (t = null == v ? true : v(c, N.length)) ? t : (n = N.length, c ? a.intl.formatToPlainString(a.t["3SHL+f"], {
+    E = null != f ? v.slice(0, f) : v,
+    b = null != f ? v.slice(f) : [],
+    N = null != y ? y : i.Fragment,
+    p = null != (t = null == O ? true : O(c, b.length)) ? t : (n = b.length, c ? a.intl.formatToPlainString(a.t["3SHL+f"], {
       count: n
     }) : a.intl.formatToPlainString(a.t["8JRFyc"], {
       count: n
     }));
-  return (0, r.jsxs)(b, {
-    children: [O.map((e, t) => (0, r.jsxs)(l.Fragment, {
+  return (0, r.jsxs)(N, {
+    children: [E.map((e, t) => (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(o.Z, {
         node: e
-      }), (t !== O.length - 1 || N.length > 0) && (0, r.jsx)(i.$i$, {})]
-    }, e.key)), N.length > 0 && (0, r.jsx)(s.I, {
-      title: T,
+      }), (t !== E.length - 1 || b.length > 0) && (0, r.jsx)(l.$i$, {})]
+    }, e.key)), b.length > 0 && (0, r.jsx)(s.I, {
+      title: p,
       isOpen: c,
       setIsOpen: d,
       compact: true,
-      children: N.map((e, t) => (0, r.jsxs)(l.Fragment, {
+      children: b.map((e, t) => (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)(o.Z, {
           node: e
-        }), t !== N.length - 1 && (0, r.jsx)(i.$i$, {})]
+        }), t !== b.length - 1 && (0, r.jsx)(l.$i$, {})]
       }, e.key))
     })]
   })

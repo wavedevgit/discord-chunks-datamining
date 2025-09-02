@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk873395 = require("./873395.js");
 
@@ -13,13 +13,13 @@ function a(e) {
   let {
     icon: t,
     title: n,
-    onClick: l,
+    onClick: i,
     active: a,
     trailing: u
   } = e;
   return (0, r.jsxs)(o.P3F, {
-    className: i()(s.item, a && s.active),
-    onClick: l,
+    className: l()(s.item, a && s.active),
+    onClick: i,
     children: [(0, r.jsxs)("div", {
       className: s.itemContent,
       children: [(0, r.jsx)(t, {

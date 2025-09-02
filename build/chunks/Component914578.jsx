@@ -18,21 +18,21 @@ function f(e) {
   let {
     onClose: t
   } = e;
-  return (0, r.jsx)(i.v2r, {
+  return (0, r.jsx)(l.v2r, {
     navId: "settings-footer-more-menu",
     onClose: t,
     onSelect: () => {},
     "aria-label": "More options",
-    children: (0, r.jsxs)(i.kSQ, {
-      children: [(0, r.jsx)(i.sNh, {
+    children: (0, r.jsxs)(l.kSQ, {
+      children: [(0, r.jsx)(l.sNh, {
         id: "changelog",
         label: d.intl.string(d.t.LRmNAg),
         action: () => (0, s.Z)(true)
-      }), (0, r.jsx)(i.sNh, {
+      }), (0, r.jsx)(l.sNh, {
         id: "acknowledgements",
         label: d.intl.string(d.t["0nUKy8"]),
         action: () => (0, o.Z)(c.EYA.ACKNOWLEDGEMENTS)
-      }), (0, r.jsx)(i.sNh, {
+      }), (0, r.jsx)(l.sNh, {
         id: "support",
         label: d.intl.string(d.t["Yl/Rio"]),
         action: () => (0, o.Z)(a.w)
@@ -79,8 +79,8 @@ function y() {
           })
         },
         children: t => {
-          var n, l;
-          return (0, r.jsx)(i.eee, (n = function(e) {
+          var n, i;
+          return (0, r.jsx)(l.eee, (n = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);
@@ -97,23 +97,23 @@ function y() {
               })
             }
             return e
-          }({}, t), l = l = {
+          }({}, t), i = i = {
             ref: e,
-            children: (0, r.jsx)(i.Text, {
+            children: (0, r.jsx)(l.Text, {
               tag: "span",
               variant: "text-xxs/normal",
               color: "text-muted",
               children: d.intl.string(d.t.UKOtz8)
             })
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
               n.push.apply(n, r)
             }
             return n
-          })(Object(l)).forEach(function(e) {
-            Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
+          })(Object(i)).forEach(function(e) {
+            Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
           }), n))
         }
       })]

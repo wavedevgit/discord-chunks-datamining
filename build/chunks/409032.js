@@ -1,10 +1,11 @@
 /** Chunk was on 47129 **/
 /** chunk id: 409032, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => i
+  Z: () => o
 });
 var Chunk509613 = require("./509613.js"),
-  Chunk869235 = require("./869235.js");
-let i = (0, Chunk509613.vB)(Chunk869235.t.LOGOUT_SECTION, {
-  getLayout: () => []
+  Chunk869235 = require("./869235.js"),
+  Chunk462718 = require("./462718.jsx");
+let o = (0, Chunk509613.vB)(Chunk869235.t.LOGOUT_SECTION, {
+  getLayout: () => [Chunk462718.Z]
 })

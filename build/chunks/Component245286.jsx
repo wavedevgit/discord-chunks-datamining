@@ -16,9 +16,9 @@ function c(e) {
   let t = (0, s.Z7)(),
     {
       node: n,
-      directory: l
+      directory: i
     } = (0, o.Z)(u.Z, t);
-  return (0, r.jsx)(i.Z, function(e) {
+  return (0, r.jsx)(l.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -37,7 +37,7 @@ function c(e) {
     return e
   }({
     root: n,
-    directory: l,
+    directory: i,
     sidebarHeader: d,
     sidebarFooter: a.Z
   }, e))

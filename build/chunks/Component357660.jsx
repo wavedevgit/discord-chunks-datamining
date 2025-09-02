@@ -20,9 +20,9 @@ function d(e) {
     showNotice: u,
     handleStoreUpdate: d
   } = (0, a.Cu)(), g = null == t ? true : t.stores;
-  l.useEffect(() => {
+  i.useEffect(() => {
     if (null != g) {
-      let e = new i.Fh(g, () => {
+      let e = new l.Fh(g, () => {
         d(g)
       });
       return e.attach("SettingPanelNotice"), d(g), () => {
@@ -30,7 +30,7 @@ function d(e) {
       }
     }
   }, [g, d]);
-  let f = l.useMemo(() => {
+  let f = i.useMemo(() => {
     if (null == t || !u) return null;
     let {
       element: e

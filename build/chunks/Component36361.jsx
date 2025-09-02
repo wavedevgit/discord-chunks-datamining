@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 36361, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => E
 }), require("./415506.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -18,51 +18,52 @@ var Chunk28682 = require("./28682.js"),
   Chunk670304 = require("./670304.jsx"),
   Chunk357660 = require("./357660.jsx");
 
-function E(e) {
+function v(e) {
   let {
     node: t
   } = e;
   switch (t.type) {
-    case l.J.ROOT:
-    case l.J.SECTION:
+    case i.J.ROOT:
+    case i.J.SECTION:
+    case i.J.SIDEBAR_ITEM:
       throw Error("".concat(t.type, " nodes should never be rendered directly"));
-    case l.J.PANEL:
-      return (0, r.jsx)(v.T, {
+    case i.J.PANEL:
+      return (0, r.jsx)(O.T, {
         node: t
       });
-    case l.J.PANE:
+    case i.J.PANE:
       return (0, r.jsx)(y.Z, {
         node: t
       });
-    case l.J.LIST:
+    case i.J.LIST:
       return (0, r.jsx)(f.Z, {
         node: t
       });
-    case l.J.CATEGORY:
+    case i.J.CATEGORY:
       return (0, r.jsx)(g.Z, {
         node: t
       });
-    case l.J.ACCORDION:
+    case i.J.ACCORDION:
       return (0, r.jsx)(d.Z, {
         node: t
       });
-    case l.J.TOGGLE:
+    case i.J.TOGGLE:
       return (0, r.jsx)(c.I, {
         node: t
       });
-    case l.J.BUTTON:
+    case i.J.BUTTON:
       return (0, r.jsx)(o.I, {
         node: t
       });
-    case l.J.SELECT:
+    case i.J.SELECT:
       return (0, r.jsx)(u.Z, {
         node: t
       });
-    case l.J.RADIO:
+    case i.J.RADIO:
       return (0, r.jsx)(a.Z, {
         node: t
       });
-    case l.J.CUSTOM:
+    case i.J.CUSTOM:
     default:
       return (0, r.jsx)(s.W, {
         node: t
@@ -70,15 +71,15 @@ function E(e) {
   }
 }
 
-function O(e) {
+function E(e) {
   let {
     node: t
   } = e;
-  return t.type === l.J.PANEL || t.type === l.J.PANE ? (0, r.jsx)(E, {
+  return t.type === i.J.PANEL || t.type === i.J.PANE ? (0, r.jsx)(v, {
     node: t
-  }) : (0, r.jsx)(i.Z, {
+  }) : (0, r.jsx)(l.Z, {
     node: t,
-    children: (0, r.jsx)(E, {
+    children: (0, r.jsx)(v, {
       node: t
     })
   })

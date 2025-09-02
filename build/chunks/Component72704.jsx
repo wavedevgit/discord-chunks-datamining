@@ -18,15 +18,15 @@ function o(e) {
     useOptions: u,
     renderOptionLabel: c
   } = t, d = s(), g = null == a ? true : a(), f = n(), y = u();
-  return (0, r.jsx)(l.xJW, {
+  return (0, r.jsx)(i.xJW, {
     title: d,
-    className: i.selectContainer,
+    className: l.selectContainer,
     children: (0, r.jsxs)("div", {
-      className: i.selectContent,
-      children: [null != g && (0, r.jsx)(l.R94, {
-        type: l.geA.DESCRIPTION,
+      className: l.selectContent,
+      children: [null != g && (0, r.jsx)(i.R94, {
+        type: i.geA.DESCRIPTION,
         children: g
-      }), (0, r.jsx)(l.q4e, {
+      }), (0, r.jsx)(i.q4e, {
         value: f,
         onChange: e => o(e),
         options: y,

@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 206942, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => T
+  ZP: () => p
 }), require("./415506.js"), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,15 +15,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk869235 = require("./869235.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk649926 = require("./649926.js");
-let v = Chunk647438.createContext(true);
+let O = Chunk647438.createContext(true);
 
-function E(e) {
+function v(e) {
   let {
     sound: t
   } = e, {
     handlePreviewSound: n
   } = function() {
-    let e = l.useContext(v);
+    let e = i.useContext(O);
     if (null == e) throw Error("useSoundPlayback must be used within a SoundPlaybackProvider");
     return e
   }();
@@ -39,7 +39,7 @@ function E(e) {
     })
   })
 }
-let O = [{
+let E = [{
     useLabel: () => Chunk388032.intl.string(Chunk388032.t.jD1qzM),
     sound: "message1",
     useDisabled: Chunk734934.p,
@@ -121,14 +121,14 @@ let O = [{
           className: y.soundRow,
           children: [(0, r.jsx)("span", {
             children: t
-          }), (0, r.jsx)(E, {
+          }), (0, r.jsx)(v, {
             sound: e.sound
           })]
         })
       },
       useValue: () => {
         var t;
-        let n = (0, i.e7)([d.Z], () => d.Z.isSoundDisabled(e.sound)),
+        let n = (0, l.e7)([d.Z], () => d.Z.isSoundDisabled(e.sound)),
           r = null == (t = e.useDisabled) ? true : t.call(e);
         return !n && !r
       },
@@ -139,24 +139,24 @@ let O = [{
       useDisabled: () => {
         var t;
         let n = null == (t = e.useDisabled) ? true : t.call(e),
-          r = (0, i.e7)([d.Z], () => d.Z.getDisableAllSounds());
+          r = (0, l.e7)([d.Z], () => d.Z.getDisableAllSounds());
         return n || r
       },
       useTooltip: e.useTooltip
     })
   })),
-  N = (0, Chunk509613.qs)(Chunk869235.t.SELECTED_CHANNEL_NOTIFICATIONS, {
+  b = (0, Chunk509613.qs)(Chunk869235.t.SELECTED_CHANNEL_NOTIFICATIONS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.TzjwV1),
     useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getNotifyMessagesInSelectedChannel()),
     setValue: e => s.default.setNotifyMessagesInSelectedChannel(e)
   }),
-  b = (0, Chunk509613.qs)(Chunk869235.t.DISABLE_ALL_NOTIFICATION_SOUNDS, {
+  N = (0, Chunk509613.qs)(Chunk869235.t.DISABLE_ALL_NOTIFICATION_SOUNDS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["2ZhCOT"]),
     useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["+B0XLC"]),
     useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getDisableAllSounds()),
     setValue: e => s.default.toggleDisableAllSounds(e)
   }),
-  T = (0, Chunk509613.$l)(Chunk869235.t.NOTIFICATION_SOUNDS_LIST, {
+  p = (0, Chunk509613.$l)(Chunk869235.t.NOTIFICATION_SOUNDS_LIST, {
     collapseAfter: 4,
     useCollapsibleTitle: (e, t) => e ? f.intl.formatToPlainString(f.t["0JYT9/"], {
       count: t
@@ -166,20 +166,20 @@ let O = [{
     ContextProvider: function(e) {
       let {
         children: t
-      } = e, n = l.useRef(null), i = l.useCallback((e, t) => {
+      } = e, n = i.useRef(null), l = i.useCallback((e, t) => {
         t.stopPropagation(), t.preventDefault(), null != n.current && n.current.stop(), n.current = (0, c.GN)(e)
       }, []);
-      l.useEffect(() => () => {
+      i.useEffect(() => () => {
         var e;
         null == (e = n.current) || e.stop()
       }, []);
-      let o = l.useMemo(() => ({
-        handlePreviewSound: i
-      }), [i]);
-      return (0, r.jsx)(v.Provider, {
+      let o = i.useMemo(() => ({
+        handlePreviewSound: l
+      }), [l]);
+      return (0, r.jsx)(O.Provider, {
         value: o,
         children: t
       })
     },
-    getLayout: () => [O[0].node, N, O[1].node, b, ...O.slice(2).map(e => e.node)]
+    getLayout: () => [E[0].node, b, E[1].node, N, ...E.slice(2).map(e => e.node)]
   })

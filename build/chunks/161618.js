@@ -13,5 +13,5 @@ let u = (0, Chunk509613.qs)(Chunk869235.t.ENABLE_UNREAD_MESSAGE_BADGE, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.VH8AIC),
   useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["9K4qwc"]),
   useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => !Chunk292959.Z.getDisableUnreadBadge()),
-  setValue: e => l.default.setDisableUnreadBadge(!e)
+  setValue: e => i.default.setDisableUnreadBadge(!e)
 })
