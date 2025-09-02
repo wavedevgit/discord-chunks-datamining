@@ -23,6 +23,7 @@ let d = Chunk647438.memo(function(e) {
     "aria-label": s.intl.string(s.t.r6EJOj),
     onClose: a,
     onSelect: () => {},
+    className: u.gameTagsMenu,
     children: Object.entries(c.aE).map(e => {
       let [a, o] = e, u = ((e, a) => {
         let o = [];
