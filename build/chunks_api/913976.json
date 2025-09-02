@@ -1,1 +1,0 @@
-{"id":"913976","type":"experiment","data":{"kind":"user","id":"2023-12_marketing_automation_experiment","label":"Marketing Automation","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Ask server for marketing content for rendering","config":{"enabled":true}}]},"fromModule":{"id":"1272"}}
