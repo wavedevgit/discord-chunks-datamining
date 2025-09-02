@@ -166,7 +166,8 @@ async function A(e, t, n) {
       gift: E,
       sku_subscription_plan_id: v,
       gateway_checkout_context: await (0, f.cn)(r),
-      load_id: I
+      load_id: I,
+      gift_info_options: y
     };
     if (C) e.test_mode = true;
     else {
@@ -174,7 +175,7 @@ async function A(e, t, n) {
         let t = await (0, m.EH)(r.type);
         e.return_url = (0, i.K0)() + g.ANM.BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX(r.type, null != t ? t : "", "success")
       }
-      e.gift_info_options = y, null != T && (e.country_code = T)
+      null != T && (e.country_code = T)
     }
     null != l && (e.expected_amount = l), null != u && (e.expected_currency = u), e.purchase_token = (0, p.d)(), null != A && (e.order_id = A);
     let n = await i.tn.post({
