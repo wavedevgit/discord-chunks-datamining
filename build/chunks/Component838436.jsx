@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   H: () => p,
-  U: () => g
+  U: () => E
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -70,6 +70,17 @@ function p(e) {
 
 function h(e) {
   let {
+    className: t,
+    children: n
+  } = e;
+  return (0, r.jsx)("div", {
+    className: a()(d.container, t),
+    children: n
+  })
+}
+
+function m(e) {
+  let {
     setting: t,
     className: n,
     children: i
@@ -83,7 +94,7 @@ function h(e) {
   })
 }
 
-function m(e) {
+function g(e) {
   let {
     setting: t,
     className: n,
@@ -106,6 +117,6 @@ function m(e) {
   })
 }
 
-function g(e) {
-  return null != e.scrollPosition ? (0, r.jsx)(m, _({}, e)) : (0, r.jsx)(h, _({}, e))
+function E(e) {
+  return null != e.scrollPosition ? (0, r.jsx)(g, _({}, e)) : null != e.setting ? (0, r.jsx)(m, _({}, e)) : (0, r.jsx)(h, _({}, e))
 }
