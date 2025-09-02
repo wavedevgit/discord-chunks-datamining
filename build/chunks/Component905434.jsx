@@ -1,4 +1,4 @@
-/** Chunk was on 54844 **/
+/** Chunk was on 87023 **/
 /** chunk id: 905434, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -15,19 +15,19 @@ let c = e => {
     stageInstance: t
   } = e, n = a.Z.getGuild(t.guild_id);
   return null == n ? null : (0, r.jsxs)("div", {
-    className: o.container,
+    className: s.container,
     children: [(0, r.jsx)(i.X6q, {
-      className: o.header,
+      className: s.header,
       variant: "heading-sm/semibold",
-      children: s.intl.string(s.t["InbJ8/"])
+      children: o.intl.string(o.t["InbJ8/"])
     }), (0, r.jsxs)("div", {
-      className: o.guildContainer,
+      className: s.guildContainer,
       children: [(0, r.jsxs)("div", {
-        className: o.guildInfo,
+        className: s.guildInfo,
         children: [(0, r.jsx)(l.Z, {
           guild: n,
           size: l.Z.Sizes.MINI,
-          className: o.guildIcon
+          className: s.guildIcon
         }), (0, r.jsx)(i.Text, {
           color: "header-secondary",
           variant: "text-sm/normal",

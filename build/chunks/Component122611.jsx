@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 122611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => P
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -32,7 +32,7 @@ function T(e) {
   e.stopPropagation()
 }
 
-function P(e) {
+function j(e) {
   var t;
   let {
     guild: n
@@ -96,7 +96,7 @@ function P(e) {
     }
   })
 }
-let j = e => {
+let P = e => {
   let {
     guild: t
   } = e;
@@ -130,7 +130,7 @@ let j = e => {
         guild: t
       })
   }
-  return _.s.isDisallowPopupsSet() ? null : (0, r.jsx)(P, {
+  return _.s.isDisallowPopupsSet() ? null : (0, r.jsx)(j, {
     guild: e.guild
   })
 }

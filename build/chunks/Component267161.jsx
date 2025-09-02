@@ -298,7 +298,7 @@ let ei = Chunk647438.memo(function() {
                 color: "currentColor"
               })
             })]
-          }), O && (0, r.jsx)(P.Z, {
+          }), O && (0, r.jsx)(j.Z, {
             focusSectionProps: "NOTIFICATIONS_INBOX" === x ? e : true
           })]
         }),

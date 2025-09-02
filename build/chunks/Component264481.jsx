@@ -1,9 +1,9 @@
-/** Chunk was on 8188 **/
-/** chunk id: 264481, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 30355 **/
+/** chunk id: 264481, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  P9: () => _,
-  Uf: () => w,
-  b0: () => h,
+  P9: () => P,
+  Uf: () => S,
+  b0: () => y,
   s_: () => v
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -19,33 +19,33 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk839468 = require("./839468.js");
-let m = [() => Chunk388032.intl.string(Chunk388032.t.madJdH), () => Chunk388032.intl.string(Chunk388032.t.NYmfoK), () => Chunk388032.intl.string(Chunk388032.t.R2PaCg), () => Chunk388032.intl.string(Chunk388032.t.laSR8v), () => Chunk388032.intl.string(Chunk388032.t.DnsJEx)],
-  O = [() => Chunk388032.intl.string(Chunk388032.t.nFSbeH), () => Chunk388032.intl.string(Chunk388032.t.gTcxOz), () => Chunk388032.intl.string(Chunk388032.t["8T0wYm"]), () => Chunk388032.intl.string(Chunk388032.t.BIHl1t), () => Chunk388032.intl.string(Chunk388032.t.jhBm09)],
-  j = [() => Chunk388032.intl.string(Chunk388032.t.AyMGXF), () => Chunk388032.intl.string(Chunk388032.t.aAFW7e), e => b.intl.formatToPlainString(b.t.h2g0cH, {
+let j = [() => Chunk388032.intl.string(Chunk388032.t.madJdH), () => Chunk388032.intl.string(Chunk388032.t.NYmfoK), () => Chunk388032.intl.string(Chunk388032.t.R2PaCg), () => Chunk388032.intl.string(Chunk388032.t.laSR8v), () => Chunk388032.intl.string(Chunk388032.t.DnsJEx)],
+  b = [() => Chunk388032.intl.string(Chunk388032.t.nFSbeH), () => Chunk388032.intl.string(Chunk388032.t.gTcxOz), () => Chunk388032.intl.string(Chunk388032.t["8T0wYm"]), () => Chunk388032.intl.string(Chunk388032.t.BIHl1t), () => Chunk388032.intl.string(Chunk388032.t.jhBm09)],
+  h = [() => Chunk388032.intl.string(Chunk388032.t.AyMGXF), () => Chunk388032.intl.string(Chunk388032.t.aAFW7e), e => m.intl.formatToPlainString(m.t.h2g0cH, {
     name: e
   }), () => Chunk388032.intl.string(Chunk388032.t["rrYh5+"]), () => Chunk388032.intl.string(Chunk388032.t["HX3K+P"]), () => Chunk388032.intl.string(Chunk388032.t["/yW3aW"]), () => Chunk388032.intl.string(Chunk388032.t["PmL/v7"]), () => Chunk388032.intl.string(Chunk388032.t.IALa3t), () => Chunk388032.intl.string(Chunk388032.t.HRcTFB), () => Chunk388032.intl.string(Chunk388032.t.NuCqPj), () => Chunk388032.intl.string(Chunk388032.t["M1tw+/"]), () => Chunk388032.intl.string(Chunk388032.t.UBm1y8), () => Chunk388032.intl.string(Chunk388032.t.Cu95PT), () => Chunk388032.intl.string(Chunk388032.t["R/wFur"]), () => Chunk388032.intl.string(Chunk388032.t.HQPAVV), () => Chunk388032.intl.string(Chunk388032.t.YolGh4)],
-  y = [Chunk981631.ABu.STEAM, Chunk981631.ABu.PLAYSTATION, Chunk981631.ABu.XBOX, Chunk981631.ABu.TWITCH, Chunk981631.ABu.BATTLENET, Chunk981631.ABu.LEAGUE_OF_LEGENDS, Chunk981631.ABu.EPIC_GAMES, Chunk981631.ABu.RIOT_GAMES, Chunk981631.ABu.ROBLOX, Chunk981631.ABu.SPOTIFY, Chunk981631.ABu.YOUTUBE, Chunk981631.ABu.CRUNCHYROLL, Chunk981631.ABu.BUNGIE];
+  x = [Chunk981631.ABu.STEAM, Chunk981631.ABu.PLAYSTATION, Chunk981631.ABu.XBOX, Chunk981631.ABu.TWITCH, Chunk981631.ABu.BATTLENET, Chunk981631.ABu.LEAGUE_OF_LEGENDS, Chunk981631.ABu.EPIC_GAMES, Chunk981631.ABu.RIOT_GAMES, Chunk981631.ABu.ROBLOX, Chunk981631.ABu.SPOTIFY, Chunk981631.ABu.YOUTUBE, Chunk981631.ABu.CRUNCHYROLL, Chunk981631.ABu.BUNGIE];
 
-function x(e) {
+function O(e) {
   let {
     heading: t,
-    bodyText: n,
-    children: i
+    bodyText: r,
+    children: l
   } = e;
-  return (0, r.jsxs)("div", {
+  return (0, n.jsxs)("div", {
     className: p.empty,
-    children: [(0, r.jsxs)("div", {
+    children: [(0, n.jsxs)("div", {
       className: p.textContainer,
-      children: [(0, r.jsx)(a.X6q, {
+      children: [(0, n.jsx)(s.X6q, {
         variant: "heading-md/medium",
         color: "header-primary",
         children: t
-      }), (0, r.jsx)(a.Text, {
+      }), (0, n.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: n
+        children: r
       })]
-    }), i]
+    }), l]
   })
 }
 
@@ -53,94 +53,94 @@ function v() {
   let e = Chunk388032.intl.string(Chunk388032.t.RnD2yc),
     [t] = Chunk647438.useState(() => {
       var e;
-      return (null != (e = (0, Chunk392711.sample)(m)) ? module : m[0])()
+      return (null != (e = (0, Chunk392711.sample)(j)) ? module : j[0])()
     });
-  return (0, Chunk951288.jsx)(x, {
+  return (0, Chunk951288.jsx)(O, {
     heading: module,
     bodyText: exports
   })
 }
 
-function h() {
+function y() {
   let e = Chunk388032.intl.string(Chunk388032.t.bFgqYG),
     [t] = Chunk647438.useState(() => {
       var e;
-      return (null != (e = (0, Chunk392711.sample)(O)) ? module : O[0])()
+      return (null != (e = (0, Chunk392711.sample)(b)) ? module : b[0])()
     });
-  return (0, Chunk951288.jsx)(x, {
+  return (0, Chunk951288.jsx)(O, {
     heading: module,
     bodyText: exports
   })
 }
 
-function _(e) {
+function P(e) {
   let {
     user: t,
-    guildId: n,
-    channelId: c,
-    onClose: s
-  } = e, u = d.ZP.getName(n, c, t), g = b.intl.formatToPlainString(b.t.sjSitL, {
+    guildId: r,
+    channelId: o,
+    onClose: c
+  } = e, u = d.ZP.getName(r, o, t), g = m.intl.formatToPlainString(m.t.sjSitL, {
     name: u
-  }), [m] = i.useState(() => {
+  }), [j] = l.useState(() => {
     var e;
-    return (null != (e = (0, l.sample)(j)) ? e : j[0])(u)
-  }), O = i.useCallback(() => {
-    o.Z.openPrivateChannel({
+    return (null != (e = (0, i.sample)(h)) ? e : h[0])(u)
+  }), b = l.useCallback(() => {
+    a.Z.openPrivateChannel({
       recipientIds: t.id
-    }), null == s || s()
-  }, [t.id, s]);
-  return (0, r.jsx)(x, {
+    }), null == c || c()
+  }, [t.id, c]);
+  return (0, n.jsx)(O, {
     heading: g,
-    bodyText: m,
-    children: (0, r.jsx)("div", {
+    bodyText: j,
+    children: (0, n.jsx)("div", {
       className: p.buttonRow,
-      children: (0, r.jsx)(f.tG, {
-        icon: a.kBi,
-        text: b.intl.string(b.t["g33r/P"]),
-        onClick: O,
+      children: (0, n.jsx)(f.tG, {
+        icon: s.kBi,
+        text: m.intl.string(m.t["g33r/P"]),
+        onClick: b,
         themeColor: "secondary"
       })
     })
   })
 }
 
-function P() {
+function A() {
   let e = (0, Chunk410030.ZP)();
   return (0, Chunk951288.jsx)("div", {
     className: Chunk839468.connectionPlatforms,
-    children: y.map((t, n) => {
-      let i = u.Z.get(t);
-      if (null == i) return null;
-      let l = (0, a.wjy)(e) ? i.icon.darkPNG : i.icon.lightPNG;
-      return (0, r.jsx)("img", {
-        src: l,
-        alt: i.name,
+    children: x.map((t, r) => {
+      let l = u.Z.get(t);
+      if (null == l) return null;
+      let i = (0, s.wjy)(e) ? l.icon.darkPNG : l.icon.lightPNG;
+      return (0, n.jsx)("img", {
+        src: i,
+        alt: l.name,
         className: p.connectionIcon
-      }, n)
+      }, r)
     })
   })
 }
 
-function w(e) {
+function S(e) {
   let {
     onClose: t
-  } = e, n = i.useCallback(() => {
-    null == t || t(), c.Z.open(g.oAB.CONNECTIONS)
-  }, [t]), l = i.useCallback(() => {
-    null == t || t(), c.Z.open(g.oAB.CONTENT_AND_SOCIAL, "CONNECTED_GAMES")
+  } = e, r = l.useCallback(() => {
+    null == t || t(), o.Z.open(g.oAB.CONNECTIONS)
+  }, [t]), i = l.useCallback(() => {
+    null == t || t(), o.Z.open(g.oAB.CONTENT_AND_SOCIAL, "CONNECTED_GAMES")
   }, [t]);
-  return (0, r.jsxs)(x, {
-    heading: b.intl.string(b.t.VB6LWV),
-    bodyText: b.intl.string(b.t.KpjsU1),
-    children: [(0, r.jsx)(P, {}), (0, r.jsxs)("div", {
+  return (0, n.jsxs)(O, {
+    heading: m.intl.string(m.t.VB6LWV),
+    bodyText: m.intl.string(m.t.KpjsU1),
+    children: [(0, n.jsx)(A, {}), (0, n.jsxs)("div", {
       className: p.buttonRow,
-      children: [(0, r.jsx)(f.tG, {
-        text: b.intl.string(b.t["/Hl24e"]),
-        onClick: n,
+      children: [(0, n.jsx)(f.tG, {
+        text: m.intl.string(m.t["/Hl24e"]),
+        onClick: r,
         themeColor: "secondary"
-      }), (0, r.jsx)(f.tG, {
-        text: b.intl.string(b.t.GTCx0t),
-        onClick: l,
+      }), (0, n.jsx)(f.tG, {
+        text: m.intl.string(m.t.GTCx0t),
+        onClick: i,
         themeColor: "secondary"
       })]
     })]

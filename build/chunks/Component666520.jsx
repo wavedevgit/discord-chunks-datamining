@@ -1,7 +1,7 @@
-/** Chunk was on 93979 **/
+/** Chunk was on 31553 **/
 /** chunk id: 666520, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 }), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,31 +14,31 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk215258 = require("./215258.js");
 
-function f(e) {
+function p(e) {
   let {
     autoFocus: n = false,
     className: t,
-    userId: f,
-    onUpdate: p
-  } = e, x = (0, r.e7)([a.Z], () => a.Z.hidePersonalInformation), {
-    loading: h,
-    note: b
-  } = (0, s.Z)(f), j = o.useRef(null);
-  return (o.useEffect(() => {
-    if (!n || x) return;
-    let e = j.current;
+    userId: p,
+    onUpdate: f
+  } = e, h = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), {
+    loading: j,
+    note: x
+  } = (0, a.Z)(p), v = r.useRef(null);
+  return (r.useEffect(() => {
+    if (!n || h) return;
+    let e = v.current;
     (null == e ? true : e.selectionStart) != null && (e.focus(), e.setSelection(e.value.length, e.value.length))
-  }, [n, x]), x) ? null : (0, l.jsx)("div", {
+  }, [n, h]), h) ? null : (0, l.jsx)("div", {
     className: t,
-    children: (0, l.jsx)(i.lcI, {
-      ref: j,
+    children: (0, l.jsx)(o.lcI, {
+      ref: v,
       className: m.textarea,
-      disabled: h,
-      placeholder: h ? u.intl.string(u.t["WLKx//"]) : u.intl.string(u.t.VBhOe3),
+      disabled: j,
+      placeholder: j ? u.intl.string(u.t["WLKx//"]) : u.intl.string(u.t.VBhOe3),
       "aria-label": u.intl.string(u.t.PbMNh4),
       onBlur: e => {
         let n = e.currentTarget.value;
-        (null != b ? b : "") !== n && (null == p || p(), c.Z.updateNote(f, n))
+        (null != x ? x : "") !== n && (null == f || f(), s.Z.updateNote(p, n))
       },
       onKeyPress: e => {
         if (13 === e.which)
@@ -48,7 +48,7 @@ function f(e) {
           } else e.preventDefault(), e.currentTarget.blur();
         else e.which === d.yXg.SPACE && e.stopPropagation()
       },
-      defaultValue: null != b ? b : true,
+      defaultValue: null != x ? x : true,
       maxLength: d.vuo
     })
   })

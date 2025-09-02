@@ -1,5 +1,5 @@
-/** Chunk was on 93979 **/
-/** chunk id: 78806, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 62987 **/
+/** chunk id: 78806, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
 });
@@ -12,37 +12,37 @@ var Chunk481060 = require("./481060.js"),
 
 function s(e) {
   let {
-    applicationIds: n
-  } = e, t = (0, r.Z)(n).filter(e => null != e);
-  if (0 === t.length) return null;
+    applicationIds: t
+  } = e, n = (0, l.Z)(t).filter(e => null != e);
+  if (0 === n.length) return null;
   let s = null;
-  if (1 === t.length) s = c.intl.format(c.t.wQ6ur6, {
-    applicationName: () => (0, l.jsx)(i.Z, {
-      application: t[0]
-    }, t[0].id)
+  if (1 === n.length) s = o.intl.format(o.t.wQ6ur6, {
+    applicationName: () => (0, r.jsx)(a.Z, {
+      application: n[0]
+    }, n[0].id)
   });
-  else if (2 === t.length) s = c.intl.format(c.t.C98CSE, {
-    applicationName: () => (0, l.jsx)(i.Z, {
-      application: t[0]
-    }, t[0].id),
-    applicationName2: () => (0, l.jsx)(i.Z, {
-      application: t[1]
-    }, t[1].id)
+  else if (2 === n.length) s = o.intl.format(o.t.C98CSE, {
+    applicationName: () => (0, r.jsx)(a.Z, {
+      application: n[0]
+    }, n[0].id),
+    applicationName2: () => (0, r.jsx)(a.Z, {
+      application: n[1]
+    }, n[1].id)
   });
   else {
-    let e = t[t.length - 1],
-      n = t.slice(0, false);
-    s = c.intl.format(c.t.UxpwAg, {
-      applications: () => n.map(e => (0, l.jsx)(i.Z, {
+    let e = n[n.length - 1],
+      t = n.slice(0, false);
+    s = o.intl.format(o.t.UxpwAg, {
+      applications: () => t.map(e => (0, r.jsx)(a.Z, {
         application: e,
         useComma: true
       }, e.id)),
-      applicationNameLast: () => (0, l.jsx)(i.Z, {
+      applicationNameLast: () => (0, r.jsx)(a.Z, {
         application: e
       }, e.id)
     })
   }
-  return (0, l.jsx)(o.Text, {
+  return (0, r.jsx)(i.Text, {
     variant: "text-sm/normal",
     children: s
   })

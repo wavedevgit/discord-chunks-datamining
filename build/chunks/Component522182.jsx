@@ -1,4 +1,4 @@
-/** Chunk was on 93979 **/
+/** Chunk was on 31553 **/
 /** chunk id: 522182, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -19,23 +19,23 @@ function m(e) {
     onClose: n
   } = e, t = function(e, n) {
     if (null == e) return {};
-    var t, l, o = function(e, n) {
+    var t, l, r = function(e, n) {
       if (null == e) return {};
-      var t, l, o = {},
-        r = Object.keys(e);
-      for (l = 0; l < r.length; l++) t = r[l], n.indexOf(t) >= 0 || (o[t] = e[t]);
-      return o
+      var t, l, r = {},
+        i = Object.keys(e);
+      for (l = 0; l < i.length; l++) t = i[l], n.indexOf(t) >= 0 || (r[t] = e[t]);
+      return r
     }(e, n);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      for (l = 0; l < r.length; l++) t = r[l], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (o[t] = e[t])
+      var i = Object.getOwnPropertySymbols(e);
+      for (l = 0; l < i.length; l++) t = i[l], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (r[t] = e[t])
     }
-    return o
+    return r
   }(e, ["onClose"]);
   let {
     analyticsLocations: m,
-    newestAnalyticsLocation: f
-  } = (0, i.ZP)(), p = (0, o.e7)([a.Z], () => a.Z.hasSaveablePendingChanges());
+    newestAnalyticsLocation: p
+  } = (0, o.ZP)(), f = (0, r.e7)([c.Z], () => c.Z.hasSaveablePendingChanges());
   return (0, l.jsx)(d.ef, function(e) {
     for (var n = 1; n < arguments.length; n++) {
       var t = null != arguments[n] ? arguments[n] : {},
@@ -55,15 +55,15 @@ function m(e) {
     return e
   }({
     action: "VISIT_SHOP",
-    icon: r.EOn,
+    icon: i.EOn,
     tooltipText: u.intl.string(u.t.b2d0Nz),
     themeColor: "secondary",
     onClick: () => {
-      if (p) return void s.Z.notifyPendingWidgets();
-      (0, c.mK)({
+      if (f) return void a.Z.notifyPendingWidgets();
+      (0, s.mK)({
         analyticsLocations: m,
         openInLayer: false,
-        analyticsSource: f
+        analyticsSource: p
       }), null == n || n()
     }
   }, t))

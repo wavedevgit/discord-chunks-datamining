@@ -35,9 +35,9 @@ function T(e) {
     analyticsPage: l,
     shouldHighlight: T
   } = e, {
-    analyticsLocations: P
+    analyticsLocations: j
   } = (0, d.ZP)(), {
-    isHovered: j,
+    isHovered: P,
     setIsHovered: x,
     onMouseEnter: A,
     onMouseLeave: Z
@@ -73,7 +73,7 @@ function T(e) {
         initialPlanId: null,
         giftRecipient: t,
         analyticsLocation: (0, E.F)(n).actionButton,
-        analyticsLocations: P,
+        analyticsLocations: j,
         analyticsObject: {
           page: l,
           section: I.jXE.FRIENDS_LIST_FRIEND_ROW,
@@ -93,7 +93,7 @@ function T(e) {
     animation: u.yRy.Animation.FADE,
     nudgeAlignIntoViewport: false,
     scrollBehavior: "close",
-    shouldShow: j,
+    shouldShow: P,
     position: "right",
     align: "top",
     spacing: 9,

@@ -1,4 +1,4 @@
-/** Chunk was on 93979 **/
+/** Chunk was on 31553 **/
 /** chunk id: 384816, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -31,76 +31,76 @@ function Z(e) {
     user: n,
     currentUser: t,
     displayProfile: Z,
-    subsection: _,
-    onClose: P
+    subsection: P,
+    onClose: N
   } = e, {
-    trackUserProfileAction: N
-  } = (0, m.KZ)(), T = (0, o.e7)([d.Z], () => d.Z.getGuildId()), A = (0, c.Y)({
+    trackUserProfileAction: T
+  } = (0, m.KZ)(), E = (0, r.e7)([d.Z], () => d.Z.getGuildId()), A = (0, s.Y)({
     userId: n.id
-  }), E = (0, o.e7)([u.Z], () => u.Z.hidePersonalInformation), C = (0, o.e7)([a.default], () => a.default.locale), S = (0, p.Z)(n.id), w = (0, f.Z)(n.id);
-  return (0, l.jsxs)(r.zJl, {
+  }), S = (0, r.e7)([u.Z], () => u.Z.hidePersonalInformation), C = (0, r.e7)([c.default], () => c.default.locale), w = (0, f.Z)(n.id), _ = (0, p.Z)(n.id);
+  return (0, l.jsxs)(i.zJl, {
     fade: true,
     className: I.scroller,
-    children: [(null == Z ? true : Z.bio) != null && (null == Z ? true : Z.bio) !== "" && !E && (0, l.jsx)(x.Z, {
+    children: [(null == Z ? true : Z.bio) != null && (null == Z ? true : Z.bio) !== "" && !S && (0, l.jsx)(h.Z, {
       userBio: Z.bio,
       setLineClamp: false
-    }), (null == Z ? true : Z.guildId) != null && (0, l.jsx)(g.Z, {
+    }), (null == Z ? true : Z.guildId) != null && (0, l.jsx)(b.Z, {
       user: n,
       currentUser: t,
       guildId: Z.guildId,
-      scrollIntoView: _ === y.Tb.ROLES
-    }), n.isProvisional && (0, l.jsx)(v.Z, {
+      scrollIntoView: P === y.Tb.ROLES
+    }), n.isProvisional && (0, l.jsx)(g.Z, {
       heading: O.intl.string(O.t.Iyka0d),
-      headingIcon: (0, l.jsx)(r.Mgn, {
+      headingIcon: (0, l.jsx)(i.Mgn, {
         size: "xxs",
-        color: r.TVs.colors.HEADER_PRIMARY
+        color: i.TVs.colors.HEADER_PRIMARY
       }),
       headingColor: "header-secondary",
-      children: (0, l.jsx)(s.n, {
+      children: (0, l.jsx)(a.n, {
         userId: n.id
       })
-    }), A.length > 0 && (0, l.jsx)(v.Z, {
+    }), A.length > 0 && (0, l.jsx)(g.Z, {
       heading: O.intl.string(O.t["Uv/eT0"]),
-      children: (0, l.jsx)(b.Z, {
+      children: (0, l.jsx)(x.Z, {
         applicationIds: A
       })
-    }), (0, l.jsx)(v.Z, {
+    }), (0, l.jsx)(g.Z, {
       heading: O.intl.string(O.t.a6XYDw),
-      children: (0, l.jsx)(j.Z, {
+      children: (0, l.jsx)(v.Z, {
         userId: n.id,
         guildId: null == Z ? true : Z.guildId,
         tooltipDelay: y.vB
       })
-    }), S.length > 0 && (0, l.jsx)(v.Z, {
+    }), w.length > 0 && (0, l.jsx)(g.Z, {
       heading: O.intl.string(O.t["3fe7U1"]),
-      scrollIntoView: _ === y.Tb.CONNECTIONS,
-      children: (0, l.jsx)(h.ZP, {
-        connectedAccounts: S,
+      scrollIntoView: P === y.Tb.CONNECTIONS,
+      children: (0, l.jsx)(j.ZP, {
+        connectedAccounts: w,
         className: I.connections,
         userId: n.id,
         locale: C
       })
-    }), w.length > 0 && (0, l.jsx)(v.Z, {
+    }), _.length > 0 && (0, l.jsx)(g.Z, {
       heading: O.intl.string(O.t.PHjkRE),
-      children: w.map(e => (0, l.jsx)(h.tH, {
+      children: _.map(e => (0, l.jsx)(j.tH, {
         className: I.appsConnections,
         applicationRoleConnection: e,
         locale: C,
         onApplicationClicked: () => {
-          N({
+          T({
             action: "PRESS_APP_CONNECTION"
-          }), P()
+          }), N()
         },
-        selectedGuildId: null != T ? T : true
+        selectedGuildId: null != E ? E : true
       }, e.application.id))
-    }), (0, l.jsx)(v.Z, {
+    }), (0, l.jsx)(g.Z, {
       heading: O.intl.string(O.t["mQKv+v"]),
-      scrollIntoView: _ === y.Tb.NOTE,
-      children: (0, l.jsx)(i.Z, {
+      scrollIntoView: P === y.Tb.NOTE,
+      children: (0, l.jsx)(o.Z, {
         userId: n.id,
         className: I.note,
-        autoFocus: _ === y.Tb.NOTE,
-        onUpdate: () => N({
+        autoFocus: P === y.Tb.NOTE,
+        onUpdate: () => T({
           action: "SET_NOTE"
         })
       })

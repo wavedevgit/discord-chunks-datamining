@@ -1,7 +1,7 @@
-/** Chunk was on 93979 **/
+/** Chunk was on 31553 **/
 /** chunk id: 323090, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -21,51 +21,51 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk54966 = require("./54966.js");
 
-function v(e) {
+function g(e) {
   let {
     user: n,
     currentUser: t,
-    displayProfile: v,
-    guildId: g,
+    displayProfile: g,
+    guildId: b,
     subsection: y,
     onClose: O
   } = e, {
     trackUserProfileAction: I
-  } = (0, a.KZ)(), Z = (0, o.e7)([d.Z], () => {
+  } = (0, c.KZ)(), Z = (0, r.e7)([d.Z], () => {
     var e;
     return null == (e = d.Z.getUserProfile(n.id)) ? true : e.application
-  }), _ = (0, o.e7)([c.Z, s.Z], () => c.Z.getChannel(s.Z.getChannelId()));
-  return (0, l.jsxs)(r.zJl, {
+  }), P = (0, r.e7)([s.Z, a.Z], () => s.Z.getChannel(a.Z.getChannelId()));
+  return (0, l.jsxs)(i.zJl, {
     fade: true,
-    className: j.scroller,
-    children: [(null == v ? true : v.bio) != null && (null == v ? true : v.bio) !== "" && (0, l.jsx)(m.Z, {
-      userBio: v.bio,
+    className: v.scroller,
+    children: [(null == g ? true : g.bio) != null && (null == g ? true : g.bio) !== "" && (0, l.jsx)(m.Z, {
+      userBio: g.bio,
       setLineClamp: false
-    }), (null == Z ? true : Z.popularApplicationCommandIds) != null && null != _ && (0, l.jsx)(u.Z, {
+    }), (null == Z ? true : Z.popularApplicationCommandIds) != null && null != P && (0, l.jsx)(u.Z, {
       applicationId: Z.id,
       commandIds: Z.popularApplicationCommandIds,
-      channel: _,
-      guildId: g,
+      channel: P,
+      guildId: b,
       onClick: O
-    }), (null == v ? true : v.guildId) != null && (0, l.jsx)(x.Z, {
+    }), (null == g ? true : g.guildId) != null && (0, l.jsx)(h.Z, {
       user: n,
       currentUser: t,
-      guildId: v.guildId,
-      scrollIntoView: y === h.Tb.ROLES
-    }), (0, l.jsx)(p.Z, {
-      heading: b.intl.string(b.t["A//N4u"]),
-      children: (0, l.jsx)(f.Z, {
+      guildId: g.guildId,
+      scrollIntoView: y === j.Tb.ROLES
+    }), (0, l.jsx)(f.Z, {
+      heading: x.intl.string(x.t["A//N4u"]),
+      children: (0, l.jsx)(p.Z, {
         userId: n.id,
-        guildId: g,
-        tooltipDelay: h.vB
+        guildId: b,
+        tooltipDelay: j.vB
       })
-    }), (0, l.jsx)(p.Z, {
-      heading: b.intl.string(b.t["mQKv+v"]),
-      scrollIntoView: y === h.Tb.NOTE,
-      children: (0, l.jsx)(i.Z, {
+    }), (0, l.jsx)(f.Z, {
+      heading: x.intl.string(x.t["mQKv+v"]),
+      scrollIntoView: y === j.Tb.NOTE,
+      children: (0, l.jsx)(o.Z, {
         userId: n.id,
-        className: j.note,
-        autoFocus: y === h.Tb.NOTE,
+        className: v.note,
+        autoFocus: y === j.Tb.NOTE,
         onUpdate: () => I({
           action: "SET_NOTE"
         })

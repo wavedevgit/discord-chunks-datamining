@@ -70,7 +70,7 @@ let w = {
           code: t
         }
       } = e;
-      return await (0, P.T)(t, "Desktop Modal")
+      return await (0, j.T)(t, "Desktop Modal")
     }
   },
   [Chunk981631.Etm.GUILD_TEMPLATE_BROWSER]: {
@@ -159,64 +159,64 @@ let w = {
         }
       } = e;
       switch (N.ZP.focus(), t) {
-        case j.jE.USER_SETTINGS:
-          null != n && ((0, E.dL)(x.Z5c.SETTINGS(n.section, n.subsection)), Z(n.fingerprint, (0, j.O)(t)));
+        case P.jE.USER_SETTINGS:
+          null != n && ((0, E.dL)(x.Z5c.SETTINGS(n.section, n.subsection)), Z(n.fingerprint, (0, P.O)(t)));
           break;
-        case j.jE.CHANGELOG:
-          null != n && ((0, E.dL)(S.Z.formatPathWithQuery(x.Z5c.CHANGELOGS(n.date), n.query)), Z(n.fingerprint, (0, j.O)(t)));
+        case P.jE.CHANGELOG:
+          null != n && ((0, E.dL)(S.Z.formatPathWithQuery(x.Z5c.CHANGELOGS(n.date), n.query)), Z(n.fingerprint, (0, P.O)(t)));
           break;
-        case j.jE.LIBRARY:
-          (0, E.dL)(x.Z5c.APPLICATION_LIBRARY), null != n && Z(n.fingerprint, (0, j.O)(t));
+        case P.jE.LIBRARY:
+          (0, E.dL)(x.Z5c.APPLICATION_LIBRARY), null != n && Z(n.fingerprint, (0, P.O)(t));
           break;
-        case j.jE.STORE_HOME:
-          (0, E.dL)(x.Z5c.APPLICATION_STORE), null != n && Z(n.fingerprint, (0, j.O)(t));
+        case P.jE.STORE_HOME:
+          (0, E.dL)(x.Z5c.APPLICATION_STORE), null != n && Z(n.fingerprint, (0, P.O)(t));
           break;
-        case j.jE.STORE_LISTING:
-          null != n && ((0, E.dL)(x.Z5c.APPLICATION_STORE_LISTING_SKU(n.skuId, n.slug)), Z(n.fingerprint, (0, j.O)(t)));
+        case P.jE.STORE_LISTING:
+          null != n && ((0, E.dL)(x.Z5c.APPLICATION_STORE_LISTING_SKU(n.skuId, n.slug)), Z(n.fingerprint, (0, P.O)(t)));
           break;
-        case j.jE.PICK_GUILD_SETTINGS:
+        case P.jE.PICK_GUILD_SETTINGS:
           null != n && ((0, E.dL)({
             pathname: x.Z5c.PICK_GUILD_SETTINGS(n.section, n.subsection),
             search: n.search
-          }), Z(n.fingerprint, (0, j.O)(t)));
+          }), Z(n.fingerprint, (0, P.O)(t)));
           break;
-        case j.jE.CHANNEL:
+        case P.jE.CHANNEL:
           null != n && ((0, E.dL)({
             pathname: x.Z5c.CHANNEL(n.guildId, n.channelId, n.messageId),
             search: n.search
-          }), Z(n.fingerprint, (0, j.O)(t)));
+          }), Z(n.fingerprint, (0, P.O)(t)));
           break;
-        case j.jE.QUEST_HOME:
+        case P.jE.QUEST_HOME:
           null != n ? ((0, E.dL)({
             pathname: x.Z5c.QUEST_HOME,
             hash: n.questId
-          }), Z(n.fingerprint, (0, j.O)(t))) : (0, E.dL)(x.Z5c.QUEST_HOME);
+          }), Z(n.fingerprint, (0, P.O)(t))) : (0, E.dL)(x.Z5c.QUEST_HOME);
           break;
-        case j.jE.DISCOVERY_GAME_RESULTS:
+        case P.jE.DISCOVERY_GAME_RESULTS:
           null != n && ((0, E.dL)({
             pathname: x.Z5c.GLOBAL_DISCOVERY_SERVERS,
             search: "?game=".concat(n.gameId)
-          }), Z(n.fingerprint, (0, j.O)(t)));
+          }), Z(n.fingerprint, (0, P.O)(t)));
           break;
-        case j.jE.OAUTH2:
+        case P.jE.OAUTH2:
           let r = new URL(x.Z5c.OAUTH2_AUTHORIZE, window.location.origin);
           r.search = n.search;
           let l = (0, O.getOAuth2AuthorizeProps)(r.toString());
           if (null != l) return (0, O.openOAuth2ModalWithCreateGuildModal)(l), true;
           returnfalse;
-        case j.jE.SHOP:
+        case P.jE.SHOP:
           null != n && ((0, E.dL)({
             pathname: x.Z5c.COLLECTIBLES_SHOP,
             search: n.search
-          }), Z(n.fingerprint, (0, j.O)(t)));
+          }), Z(n.fingerprint, (0, P.O)(t)));
           break;
-        case j.jE.FEATURES:
-        case j.jE.SHOP:
+        case P.jE.FEATURES:
+        case P.jE.SHOP:
           (null == n ? true : n.path) != null && ((0, E.dL)({
             pathname: n.path
-          }), Z(n.fingerprint, (0, j.O)(t)));
+          }), Z(n.fingerprint, (0, P.O)(t)));
           break;
-        case j.jE.ACTIVITIES:
+        case P.jE.ACTIVITIES:
           if (null != n) {
             let e = n.attemptId || (0, i.Z)();
             return async function(e, t, n) {
@@ -265,7 +265,7 @@ let w = {
                   attempt_id: n
                 })
               }
-            }(n.applicationId, n.url, e), Z(n.fingerprint, (0, j.O)(t)), true
+            }(n.applicationId, n.url, e), Z(n.fingerprint, (0, P.O)(t)), true
           }
           returnfalse
       }

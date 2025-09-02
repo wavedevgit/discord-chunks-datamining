@@ -62,18 +62,18 @@ let T = e => {
     ref: n,
     width: c,
     height: u
-  } = (0, s.ZP)(), [f, h] = i.useState(I.hO.INITIAL), T = (0, l.e7)([_.Z], () => _.Z.getRequest(t)), P = (0, l.e7)([p.Z], () => p.Z.getGuild(t)), {
-    hasFetchedRequestToJoinGuilds: j,
+  } = (0, s.ZP)(), [f, h] = i.useState(I.hO.INITIAL), T = (0, l.e7)([_.Z], () => _.Z.getRequest(t)), j = (0, l.e7)([p.Z], () => p.Z.getGuild(t)), {
+    hasFetchedRequestToJoinGuilds: P,
     guildPreviewDisabled: x
   } = (0, l.cj)([_.Z], () => ({
     hasFetchedRequestToJoinGuilds: _.Z.hasFetchedRequestToJoinGuilds,
     guildPreviewDisabled: _.Z.getJoinRequestGuild(t)
   }));
   i.useEffect(() => {
-    null != P && (0, d.uL)(v.Z5c.CHANNEL(t))
-  }, [P, t]), i.useEffect(() => {
-    j || g.Z.fetchRequestToJoinGuilds()
-  }, [j]);
+    null != j && (0, d.uL)(v.Z5c.CHANNEL(t))
+  }, [j, t]), i.useEffect(() => {
+    P || g.Z.fetchRequestToJoinGuilds()
+  }, [P]);
   let A = i.useCallback(() => {
       h(Math.max(f, I.hO.FILLING)), g.Z.removeGuildJoinRequest(t), (0, d.uL)(v.Z5c.ME)
     }, [t, f]),

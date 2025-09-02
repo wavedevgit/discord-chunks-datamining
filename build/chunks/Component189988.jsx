@@ -1,5 +1,5 @@
-/** Chunk was on 8188 **/
-/** chunk id: 189988, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 61149 **/
+/** chunk id: 189988, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 });
@@ -14,12 +14,12 @@ function c(e) {
   let {
     widgetType: t
   } = e;
-  return (0, r.jsx)("div", {
-    className: o.container,
-    children: (0, r.jsx)(l.Text, {
+  return (0, n.jsx)("div", {
+    className: l.container,
+    children: (0, n.jsx)(a.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      children: a.intl.format(a.t.W8K2GB, {
+      children: o.intl.format(o.t.W8K2GB, {
         maxGames: i.k[t]
       })
     })

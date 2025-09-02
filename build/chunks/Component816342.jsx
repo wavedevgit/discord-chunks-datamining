@@ -1,7 +1,7 @@
-/** Chunk was on 54844 **/
+/** Chunk was on 87023 **/
 /** chunk id: 816342, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,30 +15,30 @@ var Chunk951288 = require("./951288.js"),
   Chunk5192 = require("./5192.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let _ = e => {
+let g = e => {
   let {
     user: t,
     channelId: n,
-    reportId: _,
-    reportType: h
-  } = e, b = (0, l.e7)([u.Z], () => u.Z.isBlocked(t.id), [t.id]), x = (0, l.e7)([d.Z], () => d.Z.getChannel(n), [n]), f = i.useMemo(() => m.ZP.getName(null == x ? true : x.guild_id, null == x ? true : x.id, t), [x, t]), v = i.useCallback(() => {
-    s.ZP.trackWithMetadata(p.rMx.IAR_BLOCK_USER_BUTTON_CLICKED, {
+    reportId: g,
+    reportType: f
+  } = e, b = (0, l.e7)([u.Z], () => u.Z.isBlocked(t.id), [t.id]), x = (0, l.e7)([d.Z], () => d.Z.getChannel(n), [n]), h = i.useMemo(() => m.ZP.getName(null == x ? true : x.guild_id, null == x ? true : x.id, t), [x, t]), v = i.useCallback(() => {
+    o.ZP.trackWithMetadata(_.rMx.IAR_BLOCK_USER_BUTTON_CLICKED, {
       other_user_id: t.id,
-      report_id: _
+      report_id: g
     }), a.Z.blockUser(t.id, {
       location: "ReportMenuBlockUser-iOS"
     }).then(() => {
-      o.Z.showBlockSuccessToast(t.id, n)
+      s.Z.showBlockSuccessToast(t.id, n)
     })
-  }, [t, _, n]);
+  }, [t, g, n]);
   return (0, r.jsx)(c.JZ, {
-    title: g.intl.formatToPlainString(g.t["Q1o/f3"], {
-      username: f
+    title: p.intl.formatToPlainString(p.t["Q1o/f3"], {
+      username: h
     }),
-    description: g.intl.string(g.t.G08MKi),
-    buttonText: b ? g.intl.string(g.t.ot2tSk) : g.intl.string(g.t["l+7PZW"]),
+    description: p.intl.string(p.t.G08MKi),
+    buttonText: b ? p.intl.string(p.t.ot2tSk) : p.intl.string(p.t["l+7PZW"]),
     buttonDisabled: b,
     onButtonPress: v,
-    buttonVariant: "application" === h.name && b ? "secondary" : "critical-primary"
+    buttonVariant: "application" === f.name && b ? "secondary" : "critical-primary"
   })
 }

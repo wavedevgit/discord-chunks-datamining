@@ -1,4 +1,4 @@
-/** Chunk was on 44234 **/
+/** Chunk was on 50439 **/
 /** chunk id: 166516, original params: e (module,exports,require) **/
 ! function() {
   var t = function(e) {
@@ -23,7 +23,7 @@
     x.ready = function() {
       c = true, x.reset(), p()
     }, x.reset = function() {
-      c && (m = [], l = false, d = false, a.clearRect(0, 0, o, n), a.drawImage(s, 0, 0, o, n), C.setIcon(i), window.clearTimeout(f), window.clearTimeout(y))
+      c && (m = [], l = false, d = false, a.clearRect(0, 0, o, n), a.drawImage(s, 0, 0, o, n), A.setIcon(i), window.clearTimeout(f), window.clearTimeout(y))
     }, x.start = function() {
       if (c && !d) {
         var e = function() {
@@ -34,11 +34,11 @@
           var r = function() {
             ["type", "animation", "bgColor", "textColor", "fontFamily", "fontStyle"].forEach(function(e) {
               e in m[0].options && (t[e] = m[0].options[e])
-            }), T.run(m[0].options, function() {
+            }), I.run(m[0].options, function() {
               e()
             }, false)
           };
-          l ? T.run(l.options, function() {
+          l ? I.run(l.options, function() {
             r()
           }, true) : r()
         }
@@ -56,7 +56,7 @@
       } catch (e) {}
       y = setTimeout(function() {
         E(e)
-      }, T.duration), C.setIcon(i)
+      }, I.duration), A.setIcon(i)
     }
     b.circle = function(e) {
       e = v(e);
@@ -66,9 +66,9 @@
       e = v(e);
       2 === e.len ? (e.x = e.x - .4 * e.w, e.w = 1.4 * e.w) : e.len >= 3 && (e.x = e.x - .65 * e.w, e.w = 1.65 * e.w), a.clearRect(0, 0, o, n), a.drawImage(s, 0, 0, o, n), a.beginPath(), a.font = t.fontStyle + " " + Math.floor(e.h * (e.n > 99 ? .9 : 1)) + "px " + t.fontFamily, a.textAlign = "center", a.fillStyle = "rgba(" + t.bgColor.r + "," + t.bgColor.g + "," + t.bgColor.b + "," + e.o + ")", a.fillRect(e.x, e.y, e.w, e.h), a.fillStyle = "rgba(" + t.textColor.r + "," + t.textColor.g + "," + t.textColor.b + "," + e.o + ")", "number" == typeof e.n && e.n > 999 ? a.fillText((e.n > 9999 ? 9 : Math.floor(e.n / 1e3)) + "k+", Math.floor(e.x + e.w / 2), Math.floor(e.y + e.h - .2 * e.h)) : a.fillText(e.n, Math.floor(e.x + e.w / 2), Math.floor(e.y + e.h - .15 * e.h)), a.closePath()
     };
-    var C = {};
+    var A = {};
 
-    function R(e) {
+    function C(e) {
       e = e.replace(/^#?([a-f\d])([a-f\d])([a-f\d])$/i, function(e, t, r, n) {
         return t + t + r + r + n + n
       });
@@ -80,20 +80,20 @@
       }
     }
 
-    function A(e, t) {
+    function R(e, t) {
       var r, n = {};
       for (r in e) n[r] = e[r];
       for (r in t) n[r] = t[r];
       return n
     }
-    C.getIcon = function() {
+    A.getIcon = function() {
       var e = false;
       return t.element ? e = t.element : t.elementId ? (e = g.getElementById(t.elementId)).setAttribute("href", e.getAttribute("src")) : false === (e = function() {
         for (var e = g.getElementsByTagName("head")[0].getElementsByTagName("link"), t = e.length, r = t - 1; r >= 0; r--)
           if (/(^|\s)icon(\s|$)/i.test(e[r].getAttribute("rel"))) return e[r];
         returnfalse
       }()) && ((e = g.createElement("link")).setAttribute("rel", "icon"), g.getElementsByTagName("head")[0].appendChild(e)), e.setAttribute("type", "image/png"), e
-    }, C.setIcon = function(e) {
+    }, A.setIcon = function(e) {
       var n = e.toDataURL("image/png");
       if (t.dataUrl && t.dataUrl(n), t.element) t.element.setAttribute("href", n), t.element.setAttribute("src", n);
       else if (t.elementId) {
@@ -104,8 +104,8 @@
         r = g.createElement("link"), h.opera && r.setAttribute("rel", "icon"), r.setAttribute("rel", "icon"), r.setAttribute("type", "image/png"), g.getElementsByTagName("head")[0].appendChild(r), r.setAttribute("href", n), i.parentNode && i.parentNode.removeChild(i)
       } else r.setAttribute("href", n)
     };
-    var T = {};
-    T.duration = 40, T.types = {}, T.types.fade = [{
+    var I = {};
+    I.duration = 40, I.types = {}, I.types.fade = [{
       x: .4,
       y: .4,
       w: .6,
@@ -171,13 +171,13 @@
       w: .6,
       h: .6,
       o: 1
-    }], T.types.none = [{
+    }], I.types.none = [{
       x: .4,
       y: .4,
       w: .6,
       h: .6,
       o: 1
-    }], T.types.pop = [{
+    }], I.types.pop = [{
       x: 1,
       y: 1,
       w: 0,
@@ -219,7 +219,7 @@
       w: .6,
       h: .6,
       o: 1
-    }], T.types.popFade = [{
+    }], I.types.popFade = [{
       x: .75,
       y: .75,
       w: 0,
@@ -261,7 +261,7 @@
       w: .6,
       h: .6,
       o: 1
-    }], T.types.slide = [{
+    }], I.types.slide = [{
       x: .4,
       y: 1,
       w: .6,
@@ -309,21 +309,21 @@
       w: .6,
       h: .6,
       o: 1
-    }], T.run = function(e, r, n, o) {
-      var a = T.types[g.hidden || g.msHidden || g.webkitHidden || g.mozHidden ? "none" : t.animation];
+    }], I.run = function(e, r, n, o) {
+      var a = I.types[g.hidden || g.msHidden || g.webkitHidden || g.mozHidden ? "none" : t.animation];
       if (o = true === n ? true !== o ? o : a.length - 1 : true !== o ? o : 0, r = r || function() {}, !(o < a.length) || !(o >= 0)) return void r();
-      b[t.type](A(e, a[o])), f = setTimeout(function() {
-        n ? o -= 1 : o += 1, T.run(e, r, n, o)
-      }, T.duration), C.setIcon(i)
-    }, (t = A(w, e)).bgColor = R(t.bgColor), t.textColor = R(t.textColor), t.position = t.position.toLowerCase(), t.animation = T.types["" + t.animation] ? t.animation : w.animation, g = t.win.document;
-    var _ = t.position.indexOf("up") > false,
-      I = t.position.indexOf("left") > false;
-    if (_ || I)
-      for (var M = 0; M < T.types["" + t.animation].length; M++) {
-        var U = T.types["" + t.animation][M];
-        _ && (U.y < .6 ? U.y = U.y - .4 : U.y = U.y - 2 * U.y + (1 - U.w)), I && (U.x < .6 ? U.x = U.x - .4 : U.x = U.x - 2 * U.x + (1 - U.h)), T.types["" + t.animation][M] = U
+      b[t.type](R(e, a[o])), f = setTimeout(function() {
+        n ? o -= 1 : o += 1, I.run(e, r, n, o)
+      }, I.duration), A.setIcon(i)
+    }, (t = R(w, e)).bgColor = C(t.bgColor), t.textColor = C(t.textColor), t.position = t.position.toLowerCase(), t.animation = I.types["" + t.animation] ? t.animation : w.animation, g = t.win.document;
+    var T = t.position.indexOf("up") > false,
+      _ = t.position.indexOf("left") > false;
+    if (T || _)
+      for (var M = 0; M < I.types["" + t.animation].length; M++) {
+        var U = I.types["" + t.animation][M];
+        T && (U.y < .6 ? U.y = U.y - .4 : U.y = U.y - 2 * U.y + (1 - U.w)), _ && (U.x < .6 ? U.x = U.x - .4 : U.x = U.x - 2 * U.x + (1 - U.h)), I.types["" + t.animation][M] = U
       }
-    return t.type = b["" + t.type] ? t.type : w.type, r = C.getIcon(), i = document.createElement("canvas"), s = document.createElement("img"), r.hasAttribute("href") ? (s.setAttribute("crossOrigin", "anonymous"), s.onload = function() {
+    return t.type = b["" + t.type] ? t.type : w.type, r = A.getIcon(), i = document.createElement("canvas"), s = document.createElement("img"), r.hasAttribute("href") ? (s.setAttribute("crossOrigin", "anonymous"), s.onload = function() {
       n = s.height > 0 ? s.height : 32, o = s.width > 0 ? s.width : 32, i.height = n, i.width = o, a = i.getContext("2d"), x.ready()
     }, s.setAttribute("src", r.getAttribute("href"))) : (s.onload = function() {
       n = 32, o = 32, s.height = n, s.width = o, i.height = n, i.width = o, a = i.getContext("2d"), x.ready()
@@ -340,8 +340,8 @@
                   n: e
                 }
               };
-              if ("animation" in t && T.types["" + t.animation] && (r.options.animation = "" + t.animation), "type" in t && b["" + t.type] && (r.options.type = "" + t.type), ["bgColor", "textColor"].forEach(function(e) {
-                  e in t && (r.options[e] = R(t[e]))
+              if ("animation" in t && I.types["" + t.animation] && (r.options.animation = "" + t.animation), "type" in t && b["" + t.type] && (r.options.type = "" + t.type), ["bgColor", "textColor"].forEach(function(e) {
+                  e in t && (r.options[e] = C(t[e]))
                 }), ["fontStyle", "fontFamily"].forEach(function(e) {
                   e in t && (r.options[e] = t[e])
                 }), m.push(r), m.length > 100) throw Error("Too many badges requests in queue.");
@@ -375,7 +375,7 @@
               s = document.createElement("img"),
               c = t / o < r / n ? t / o : r / n;
             s.setAttribute("crossOrigin", "anonymous"), s.onload = function() {
-              a.clearRect(0, 0, o, n), a.drawImage(s, 0, 0, o, n), C.setIcon(i)
+              a.clearRect(0, 0, o, n), a.drawImage(s, 0, 0, o, n), A.setIcon(i)
             }, s.setAttribute("src", e.getAttribute("src")), s.height = r / c, s.width = t / c
           } catch (e) {
             throw Error("Error setting image. Message: " + e.message)

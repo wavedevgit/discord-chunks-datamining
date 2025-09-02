@@ -24,14 +24,14 @@ let v = "ActivityTrackingStore",
   N = {},
   T = false;
 
-function P(e) {
+function j(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-  t && j(e, true);
+  t && P(e, true);
   let n = N[e.applicationId];
   null != n && (n.stop(), delete N[e.applicationId]), delete S[e.applicationId], o.K.set(v, S)
 }
 
-function j(e) {
+function P(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = Date.now(),
     r = null != e.updatedAt ? n - e.updatedAt : 0;
@@ -53,7 +53,7 @@ function j(e) {
     mediaSessionId: c
   }), e.updatedAt = n;
   let d = N[e.applicationId];
-  null == d && (d = N[e.applicationId] = new s.Xp).start(I, () => j(e)), t || (S[e.applicationId] = e, o.K.set(v, S))
+  null == d && (d = N[e.applicationId] = new s.Xp).start(I, () => P(e)), t || (S[e.applicationId] = e, o.K.set(v, S))
 }
 
 function x() {
@@ -67,18 +67,18 @@ function x() {
     }
     of exports) {
     let t = Chunk77498.Z.getGameByName(module);
-    null != exports && (require.add(exports.id), exports.id in S || j({
+    null != exports && (require.add(exports.id), exports.id in S || P({
       applicationId: exports.id,
       updatedAt: Date.now(),
       distributor: r,
       exePath: (0, Chunk581567.N6)(null != i ? i : "")
     }))
   }
-  for (let t of Object.keys(S)) require.has(exports) || P(S[exports], module)
+  for (let t of Object.keys(S)) require.has(exports) || j(S[exports], module)
 }
 
 function A() {
-  for (let e of Object.keys(S)) P(S[module]);
+  for (let e of Object.keys(S)) j(S[module]);
   T = false
 }
 class Z extends(i = Chunk442837.ZP.Store) {
@@ -97,7 +97,7 @@ class Z extends(i = Chunk442837.ZP.Store) {
   RUNNING_GAMES_CHANGE: () => x(),
   CONNECTION_OPEN: function() {
     if (T) returnfalse;
-    for (let e of Object.keys(S)) j(S[module]);
+    for (let e of Object.keys(S)) P(S[module]);
     x(false), T = true
   },
   CONNECTION_CLOSED: function(e) {

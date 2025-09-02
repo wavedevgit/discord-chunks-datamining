@@ -100,8 +100,8 @@ let _ = ["1402418171662569542"],
           assets: S,
           party: N,
           secrets: T,
-          timestamps: P,
-          buttons: j,
+          timestamps: j,
+          buttons: P,
           type: x
         } = a;
         if (null == x && (a.type = b.IIU.PLAYING), null != T) {
@@ -112,12 +112,12 @@ let _ = ["1402418171662569542"],
           if (i().uniq(e).length < e.length) throw new h.Z({
             errorCode: b.lTL.INVALID_ACTIVITY_SECRET
           }, "secrets must be unique");
-          if (null != j) throw new h.Z({
+          if (null != P) throw new h.Z({
             errorCode: b.lTL.INVALID_ACTIVITY_SECRET
           }, "secrets cannot currently be sent with buttons")
         }
-        if (null != j && (O.button_urls = j.map(e => e.url), a.buttons = j.map(e => e.label)), a.metadata = O, null != P)
-          for (let e of Object.keys(P)) Date.now().toString().length - P[e].toString().length > 2 && (P[e] = Math.floor(P[e] * f.Z.Millis.SECOND));
+        if (null != P && (O.button_urls = P.map(e => e.url), a.buttons = P.map(e => e.label)), a.metadata = O, null != j)
+          for (let e of Object.keys(j)) Date.now().toString().length - j[e].toString().length > 2 && (j[e] = Math.floor(j[e] * f.Z.Millis.SECOND));
         if (null == S) n = Promise.resolve([]);
         else {
           if (null == r.application || null == r.application.id) throw Error();

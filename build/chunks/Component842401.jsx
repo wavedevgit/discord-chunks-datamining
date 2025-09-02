@@ -1,7 +1,7 @@
-/** Chunk was on 54844 **/
+/** Chunk was on 87023 **/
 /** chunk id: 842401, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -9,22 +9,22 @@ var Chunk481060 = require("./481060.js"),
   Chunk99690 = require("./99690.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk430147 = require("./430147.js");
-let o = e => {
+let s = e => {
   let {
     user: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: s.container,
+    className: o.container,
     children: [(0, r.jsx)(i.X6q, {
-      className: s.header,
+      className: o.header,
       variant: "heading-sm/semibold",
       children: a.intl.string(a.t["Rsth7+"])
     }), (0, r.jsx)("div", {
-      className: s.userContainer,
+      className: o.userContainer,
       children: (0, r.jsxs)("div", {
-        className: s.userInfo,
+        className: o.userInfo,
         children: [(0, r.jsx)(l.Z, {
-          className: s.userIcon,
+          className: o.userIcon,
           user: t,
           size: i.EFr.SIZE_40
         }), (0, r.jsxs)("div", {

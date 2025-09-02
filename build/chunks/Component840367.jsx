@@ -1,5 +1,5 @@
-/** Chunk was on 8188 **/
-/** chunk id: 840367, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 61149 **/
+/** chunk id: 840367, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => p
 });
@@ -25,32 +25,32 @@ let b = {
 function p(e) {
   var t;
   let {
-    userId: n,
-    headingId: l,
+    userId: r,
+    headingId: a,
     widget: u,
     disableInteraction: d = false
-  } = e, p = (0, a.e7)([c.default], () => c.default.getId() === n), O = (0, s.kQ)(u), j = b[u.type](), y = p && u.games.length > 0 ? (t = u.type, 1 === i.k[t] ? f.intl.string(f.t.wiXdER) : f.intl.format(f.t["zR1+09"], {
+  } = e, p = (0, o.e7)([c.default], () => c.default.getId() === r), O = (0, s.kQ)(u), y = b[u.type](), j = p && u.games.length > 0 ? (t = u.type, 1 === i.k[t] ? f.intl.string(f.t.wiXdER) : f.intl.format(f.t["zR1+09"], {
     numGames: i.k[t]
   })) : true;
-  return (0, r.jsxs)("div", {
+  return (0, n.jsxs)("div", {
     className: g.headerRow,
-    children: [(0, r.jsxs)("div", {
+    children: [(0, n.jsxs)("div", {
       className: g.title,
-      children: [(0, r.jsx)(o.X6q, {
+      children: [(0, n.jsx)(l.X6q, {
         variant: "heading-sm/medium",
         color: "text-default",
-        id: l,
-        children: j
-      }), null != y && (0, r.jsx)(o.Text, {
+        id: a,
+        children: y
+      }), null != j && (0, n.jsx)(l.Text, {
         variant: "text-xs/normal",
         color: "text-secondary",
-        children: y
+        children: j
       })]
-    }), (0, r.jsx)(m, {
+    }), (0, n.jsx)(m, {
       widget: u,
       disabled: O,
       disabledInteraction: d,
-      userId: n
+      userId: r
     })]
   })
 }
@@ -58,22 +58,22 @@ function p(e) {
 function m(e) {
   let {
     widget: t,
-    disabled: n,
+    disabled: r,
     disabledInteraction: i,
-    userId: l
-  } = e, o = (0, a.e7)([c.default], () => c.default.getId() === l), f = (0, s.vI)(t.type) && t.games.some(e => null != e.comment);
-  return i ? null : o ? (0, r.jsx)("div", {
+    userId: a
+  } = e, l = (0, o.e7)([c.default], () => c.default.getId() === a), f = (0, s.vI)(t.type) && t.games.some(e => null != e.comment);
+  return i ? null : l ? (0, n.jsx)("div", {
     className: g.actions,
-    children: (0, r.jsx)(u.Z, {
-      disabled: n,
+    children: (0, n.jsx)(u.Z, {
+      disabled: r,
       widgetType: t.type,
       widget: t
     })
-  }) : f ? (0, r.jsx)("div", {
+  }) : f ? (0, n.jsx)("div", {
     className: g.actions,
-    children: (0, r.jsx)(d.Z, {
+    children: (0, n.jsx)(d.Z, {
       widget: t,
-      userId: l,
+      userId: a,
       className: g.menuButton
     })
   }) : null

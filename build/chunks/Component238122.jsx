@@ -1,4 +1,4 @@
-/** Chunk was on 54844 **/
+/** Chunk was on 87023 **/
 /** chunk id: 238122, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -17,14 +17,14 @@ let u = e => {
       data: {
         title: u,
         subtitle: m,
-        placeholder: p,
-        rows: g,
-        character_limit: _,
-        pattern: h
+        placeholder: _,
+        rows: p,
+        character_limit: g,
+        pattern: f
       },
       onChange: b,
       initialText: x,
-      isRequired: f
+      isRequired: h
     } = e, v = i.useRef(a.Z.reactParserFor((t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -43,7 +43,7 @@ let u = e => {
       }
       return e
     }({}, a.Z.defaultRules), n = n = {
-      link: s.s
+      link: o.s
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -59,33 +59,33 @@ let u = e => {
       y(null != (e = null == x ? true : x.value) ? e : "")
     }, [x]);
     let I = i.useCallback(e => {
-      let t = null != h ? new RegExp(h) : null;
+      let t = null != f ? new RegExp(f) : null;
       null == t || t.test(e) ? null != e && (Z(null), y(e), b({
         value: e,
         isValid: true
-      })) : (Z(o.intl.string(o.t["24xrGR"])), b({
+      })) : (Z(s.intl.string(s.t["24xrGR"])), b({
         value: e,
         isValid: false
       }))
-    }, [b, h]);
+    }, [b, f]);
     return (0, r.jsxs)("div", {
       className: d.marginBottom8,
       children: [null != u && (0, r.jsx)("div", {
         className: d.marginBottom8,
         children: (0, r.jsxs)(l.Text, {
           variant: "text-sm/bold",
-          children: [u, f && (0, r.jsx)("span", {
+          children: [u, h && (0, r.jsx)("span", {
             className: c.required,
             children: "*"
           })]
         })
       }), (0, r.jsx)(l.Kx8, {
-        maxLength: _,
+        maxLength: g,
         onChange: I,
         value: j,
         error: O,
-        rows: g,
-        placeholder: p,
+        rows: p,
+        placeholder: _,
         autoFocus: true
       }), null != m && (0, r.jsx)("div", {
         children: (0, r.jsx)(l.Text, {

@@ -1,4 +1,4 @@
-/** Chunk was on 54844 **/
+/** Chunk was on 87023 **/
 /** chunk id: 778231, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -23,35 +23,35 @@ let b = e => {
     entry: b
   } = e, {
     name: x
-  } = b, f = (0, l.e7)([m.Z], () => m.Z.getNewestTokenForApplication(b.id)), v = null != (n = b.getIconURL(40)) ? n : h, j = (0, d.Z)({
+  } = b, h = (0, l.e7)([m.Z], () => m.Z.getNewestTokenForApplication(b.id)), v = null != (n = b.getIconURL(40)) ? n : f, j = (0, d.Z)({
     application: b
   }), y = i.useRef(false);
   i.useEffect(() => {
-    y.current || (s.Z.fetch(), y.current = true)
+    y.current || (o.Z.fetch(), y.current = true)
   }, []);
-  let O = null != f ? p.default.extractTimestamp(f.id) : true;
+  let O = null != h ? _.default.extractTimestamp(h.id) : true;
   return (0, r.jsxs)("div", {
-    className: _.container,
+    className: g.container,
     children: [(0, r.jsx)(a.X6q, {
-      className: _.header,
+      className: g.header,
       variant: "heading-sm/semibold",
-      children: g.intl.string(g.t["aYfK//"])
+      children: p.intl.string(p.t["aYfK//"])
     }), (0, r.jsx)("div", {
-      className: _.appContainer,
+      className: g.appContainer,
       children: (0, r.jsxs)("div", {
-        className: _.appInfo,
-        children: [(0, r.jsx)(o.ZP, {
-          mask: o.ZP.Masks.AVATAR_DEFAULT,
+        className: g.appInfo,
+        children: [(0, r.jsx)(s.ZP, {
+          mask: s.ZP.Masks.AVATAR_DEFAULT,
           width: 40,
           height: 40,
-          className: _.appIconMask,
+          className: g.appIconMask,
           children: (0, r.jsx)("img", {
             src: v,
             alt: "",
-            className: _.appIcon
+            className: g.appIcon
           })
         }), (0, r.jsxs)("div", {
-          className: _.textContainer,
+          className: g.textContainer,
           children: [(0, r.jsx)(a.Text, {
             color: "header-primary",
             variant: "text-md/medium",
@@ -62,7 +62,7 @@ let b = e => {
               variant: "text-md/normal",
               children: (0, u.Z)(j.length)
             }), (0, r.jsx)(c.Z, {
-              className: _.guildStack,
+              className: g.guildStack,
               guilds: j,
               maxGuilds: 6
             })]
@@ -74,7 +74,7 @@ let b = e => {
             }), null != O && (0, r.jsx)(a.Text, {
               color: "text-default",
               variant: "text-md/normal",
-              children: g.intl.formatToPlainString(g.t.C9rUOz, {
+              children: p.intl.formatToPlainString(p.t.C9rUOz, {
                 authorizedAt: O
               })
             })]

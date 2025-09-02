@@ -1,4 +1,4 @@
-/** Chunk was on 54844 **/
+/** Chunk was on 87023 **/
 /** chunk id: 255514, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => K
@@ -102,17 +102,17 @@ let K = e => {
     multiSelect: et,
     reportId: en,
     textInput: er
-  } = e, ei = H(t, "checkbox"), el = H(t, "text_line_resource"), ea = Q(t, "external_link"), es = Q(t, "free_text"), eo = Q(t, "dropdown"), ec = H(t, "text"), ed = l.s.REPORT_TO_MOD.has(n.name), [eu, em] = i.useState(false), [ep, eg] = i.useState(false), [e_, eh] = i.useState(""), [eb, ex] = i.useState(() => ({})), [ef, ev] = i.useState(() => ({})), ej = i.useMemo(() => "message" === n.name ? n.record.channel_id : true, [n]), ey = i.useCallback(e => ({
+  } = e, ei = H(t, "checkbox"), el = H(t, "text_line_resource"), ea = Q(t, "external_link"), eo = Q(t, "free_text"), es = Q(t, "dropdown"), ec = H(t, "text"), ed = l.s.REPORT_TO_MOD.has(n.name), [eu, em] = i.useState(false), [e_, ep] = i.useState(false), [eg, ef] = i.useState(""), [eb, ex] = i.useState(() => ({})), [eh, ev] = i.useState(() => ({})), ej = i.useMemo(() => "message" === n.name ? n.record.channel_id : true, [n]), ey = i.useCallback(e => ({
     nodeRef: t.id,
     destination: e,
-    textInput: null != es || null != eo ? ef : true,
+    textInput: null != eo || null != es ? eh : true,
     multiSelect: null != ei ? {
       name: ei.name,
       state: eb
     } : true
-  }), [t, es, eo, ei, eb, ef]), eO = i.useMemo(() => (0, c.VP)(es, eo, ei, ef, eb), [es, eo, ei, ef, eb]), eZ = function(e, t) {
+  }), [t, eo, es, ei, eb, eh]), eO = i.useMemo(() => (0, c.VP)(eo, es, ei, eh, eb), [eo, es, ei, eh, eb]), eZ = function(e, t) {
     let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
-      r = V({}, ef);
+      r = V({}, eh);
     r[e] = {
       value: t,
       isValid: n
@@ -142,16 +142,16 @@ let K = e => {
         }))
     }
   }, [ei]), i.useEffect(() => {
-    t.is_auto_submit && !ep && (eg(true), ee(ey(["", t.id])))
-  }, [t.is_auto_submit, ep, ee, ey, t.id]);
-  let eS = (0, o.fW)(K),
+    t.is_auto_submit && !e_ && (ep(true), ee(ey(["", t.id])))
+  }, [t.is_auto_submit, e_, ee, ey, t.id]);
+  let eS = (0, s.fW)(K),
     eC = null != H(t, "ignore_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name);
   return (0, r.jsxs)("div", {
     className: q.container,
     children: [(0, r.jsxs)(a.xBx, {
       "data-migration-pending": true,
       separator: false,
-      direction: s.Z.Direction.VERTICAL,
+      direction: o.Z.Direction.VERTICAL,
       className: q.header,
       children: [(0, r.jsx)(M.Z, {
         element: H(t, "success")
@@ -170,14 +170,14 @@ let K = e => {
         element: ec
       }), null != H(t, "message_preview") && ("message" === n.name || "first_dm" === n.name || "report_to_mod_message" === n.name) && (0, r.jsx)(T.Z, {
         message: n.record
-      }), null != H(t, "user_preview") && "user" === n.name ? (0, r.jsx)(U.Z, {
+      }), null != H(t, "user_preview") && "user" === n.name ? (0, r.jsx)(L.Z, {
         user: n.record
-      }) : null, null != H(t, "widget_preview") && "widget" === n.name ? (0, r.jsx)(L.Z, {
+      }) : null, null != H(t, "widget_preview") && "widget" === n.name ? (0, r.jsx)(U.Z, {
         widget: n.widget,
         userId: n.user_id
       }) : null, null != H(t, "guild_preview") && "guild" === n.name ? (0, r.jsx)(O.Z, {
         guild: n.record
-      }) : null, null != H(t, "breadcrumbs") && (0, r.jsx)(p.Z, {
+      }) : null, null != H(t, "breadcrumbs") && (0, r.jsx)(_.Z, {
         isModeratorReport: ed,
         history: J
       }), function(e) {
@@ -204,13 +204,13 @@ let K = e => {
           user: "user" === n.name ? n.record : n.record.author,
           channelId: ej,
           reportId: en
-        }), null != H(t, "delete_message") && ("message" === n.name || "report_to_mod_message" === n.name) && (0, r.jsx)(h.Z, {
+        }), null != H(t, "delete_message") && ("message" === n.name || "report_to_mod_message" === n.name) && (0, r.jsx)(f.Z, {
           message: n.record,
           reportId: en
         }), null != H(t, "leave_guild") && "guild" === n.name && (0, r.jsx)(N.Z, {
           guildId: n.record.id,
           reportId: en
-        }), null != H(t, "deauthorize_app") && "application" === n.name && (0, r.jsx)(_.Z, {
+        }), null != H(t, "deauthorize_app") && "application" === n.name && (0, r.jsx)(g.Z, {
           application: n.record,
           reportId: en
         }), null != H(t, "deauthorize_app") && "application" === n.name && (0, r.jsx)(w.Z, {
@@ -241,26 +241,26 @@ let K = e => {
           e in eb ? delete n[e] : n[e] = t, ex(n)
         },
         state: eb
-      }), X.includes(n.name) && null != eo && eo.length > 0 && (0, r.jsx)(b.Z, {
-        elements: eo,
-        onChange: eZ,
-        state: ef
-      }), X.includes(n.name) && null != es && es.length > 0 && (0, r.jsx)(v.Z, {
+      }), X.includes(n.name) && null != es && es.length > 0 && (0, r.jsx)(b.Z, {
         elements: es,
         onChange: eZ,
-        state: ef
+        state: eh
+      }), X.includes(n.name) && null != eo && eo.length > 0 && (0, r.jsx)(v.Z, {
+        elements: eo,
+        onChange: eZ,
+        state: eh
       }), (0, r.jsxs)("div", {
         className: q.listContainer,
-        children: [(0, r.jsx)(g.Z, {
+        children: [(0, r.jsx)(p.Z, {
           node: t,
           onSelectChild: eI
-        }), null != ea && ea.length > 0 ? (0, r.jsx)(f.Z, {
+        }), null != ea && ea.length > 0 ? (0, r.jsx)(h.Z, {
           elements: ea
         }) : null]
       }), (0, r.jsx)(x.Z, {
-        errorMessage: e_,
+        errorMessage: eg,
         onClose: () => {
-          eh("")
+          ef("")
         }
       })]
     }), (0, r.jsx)(d.Z, {
@@ -281,10 +281,10 @@ let K = e => {
             em(true);
             let n = ["", e.successNodeId];
             ee(ey(n)).then(() => {
-              eh(""), eI(n)
+              ef(""), eI(n)
             }).catch(e => {
               var t;
-              (null == (t = e.body) ? true : t.code) === W.evJ.INVALID_FORM_BODY ? eh(F.intl.string(F.t.VjAAuL)) : ed ? eh(F.intl.string(z.default.psKFdH)) : eh(F.intl.string(F.t.h6D8V1))
+              (null == (t = e.body) ? true : t.code) === W.evJ.INVALID_FORM_BODY ? ef(F.intl.string(F.t.VjAAuL)) : ed ? ef(F.intl.string(z.default.psKFdH)) : ef(F.intl.string(F.t.h6D8V1))
             }).finally(() => {
               em(false)
             })

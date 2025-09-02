@@ -1,5 +1,5 @@
-/** Chunk was on 8188 **/
-/** chunk id: 403239, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 61149 **/
+/** chunk id: 403239, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   q: () => s
 }), require("./388685.js");
@@ -13,15 +13,15 @@ var Chunk647438 = require("./647438.js"),
 function s(e) {
   let {
     dropRef: t,
-    dragRef: n,
+    dragRef: r,
     userId: s,
     widget: u,
     index: d,
     disableInteraction: f = false
-  } = e, g = (0, c.Z)(s), b = (0, r.useCallback)((e, t) => {
-    let n = g.slice(),
-      [r] = n.splice(e, 1);
-    n.splice(t, 0, r), o.Z.setPendingWidgets(n)
+  } = e, g = (0, c.Z)(s), b = (0, n.useCallback)((e, t) => {
+    let r = g.slice(),
+      [n] = r.splice(e, 1);
+    r.splice(t, 0, n), l.Z.setPendingWidgets(r)
   }, [g]), [{
     isDragging: p
   }, m, O] = (0, i.c)({
@@ -37,36 +37,36 @@ function s(e) {
       isDragging: e.isDragging()
     })
   });
-  (0, r.useEffect)(() => {
-    O((0, a.r)(), {
+  (0, n.useEffect)(() => {
+    O((0, o.r)(), {
       captureDraggingState: true
     })
   }, [O]);
-  let [j, y] = (0, l.L)({
+  let [y, j] = (0, a.L)({
     accept: "WIDGET",
     canDrop: () => !f,
     collect: e => ({
       handlerId: e.getHandlerId()
     }),
-    hover: (e, n) => {
-      var r;
-      if (f || null == t.current || !n.isOver({
+    hover: (e, r) => {
+      var n;
+      if (f || null == t.current || !r.isOver({
           shallow: true
         })) return;
       let i = e.index,
-        l = null != d ? d : 0;
-      if (i === l) return;
-      let a = null == (r = t.current) ? true : r.getBoundingClientRect(),
-        o = (a.bottom - a.top) / 2,
-        c = n.getClientOffset();
+        a = null != d ? d : 0;
+      if (i === a) return;
+      let o = null == (n = t.current) ? true : n.getBoundingClientRect(),
+        l = (o.bottom - o.top) / 2,
+        c = r.getClientOffset();
       if (null == c) return;
-      let s = c.y - a.top;
-      (!(i < l) || !(s < o)) && (i > l && s > o || (b(i, l), e.index = l))
+      let s = c.y - o.top;
+      (!(i < a) || !(s < l)) && (i > a && s > l || (b(i, a), e.index = a))
     }
   });
   return null == d || f ? {
     isDragging: false
-  } : (m(n), y(t), {
+  } : (m(r), j(t), {
     isDragging: p
   })
 }

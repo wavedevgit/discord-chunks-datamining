@@ -1,7 +1,7 @@
-/** Chunk was on 8188 **/
-/** chunk id: 640078, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 30355 **/
+/** chunk id: 640078, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => c
 });
 var Chunk951288 = require("./951288.js"),
   Chunk323946 = require("./323946.js"),
@@ -9,30 +9,30 @@ var Chunk951288 = require("./951288.js"),
   Chunk594174 = require("./594174.js"),
   Chunk778414 = require("./778414.jsx"),
   Chunk836717 = require("./836717.js");
-let s = function(e) {
+let c = function(e) {
   var t;
   let {
-    scrollerRef: n
+    scrollerRef: r
   } = e, {
-    isDragging: s,
+    isDragging: c,
     item: u,
     sourceClientOffset: d
-  } = (0, i.f)(e => ({
+  } = (0, l.f)(e => ({
     isDragging: e.isDragging(),
     item: e.getItem(),
     sourceClientOffset: e.getSourceClientOffset()
-  })), f = (0, l.e7)([a.default], () => a.default.getCurrentUser());
-  if (true !== s || null == d || null == u.widget) return null;
-  let g = null == n || null == (t = n.current) ? true : t.getBoundingClientRect();
+  })), f = (0, i.e7)([s.default], () => s.default.getCurrentUser());
+  if (true !== c || null == d || null == u.widget) return null;
+  let g = null == r || null == (t = r.current) ? true : t.getBoundingClientRect();
   if (null == g || null == f) return null;
-  let b = d.x - g.left,
+  let m = d.x - g.left,
     p = d.y - g.top;
-  return (0, r.jsx)("div", {
-    className: c.container,
+  return (0, n.jsx)("div", {
+    className: o.container,
     style: {
-      transform: "translate(".concat(b, "px, ").concat(p, "px)")
+      transform: "translate(".concat(m, "px, ").concat(p, "px)")
     },
-    children: (0, r.jsx)(o.Z, {
+    children: (0, n.jsx)(a.Z, {
       widget: u.widget,
       user: f,
       isGameFetching: () => false,

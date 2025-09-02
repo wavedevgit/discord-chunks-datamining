@@ -1,5 +1,5 @@
-/** Chunk was on 8188 **/
-/** chunk id: 795990, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 30355 **/
+/** chunk id: 795990, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 });
@@ -32,8 +32,8 @@ function u() {
     }), (0, Chunk951288.jsx)("ul", {
       className: Chunk958461.widgetGrid,
       "aria-label": Chunk388032.intl.string(Chunk388032.t["+EIBSE"]),
-      children: Chunk247397.rR.map(t => (0, r.jsx)("li", {
-        children: (0, r.jsx)(a.Z, {
+      children: Chunk247397.rR.map(t => (0, n.jsx)("li", {
+        children: (0, n.jsx)(s.Z, {
           widgetType: t,
           size: "small",
           trackUserProfileAction: e

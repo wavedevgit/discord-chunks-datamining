@@ -1,12 +1,12 @@
-/** Chunk was on 8188 **/
-/** chunk id: 977416, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 61149 **/
+/** chunk id: 977416, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
   Chunk817053 = require("./817053.jsx"),
@@ -17,18 +17,18 @@ var Chunk120356 = require("./120356.js"),
 
 function g(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    var r = null != arguments[t] ? arguments[t] : {},
+      n = Object.keys(r);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(r, e).enumerable
+    }))), n.forEach(function(t) {
+      var n;
+      n = r[t], t in e ? Object.defineProperty(e, t, {
+        value: n,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = r
+      }) : e[t] = n
     })
   }
   return e
@@ -36,58 +36,58 @@ function g(e) {
 
 function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
+    var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var n = Object.getOwnPropertySymbols(e);
+      r.push.apply(r, n)
     }
-    return n
-  })(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+    return r
+  })(Object(t)).forEach(function(r) {
+    Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
   }), e
 }
 
 function p(e) {
   var {
     gameName: t,
-    onClick: n,
+    onClick: r,
     loading: i = true
-  } = e, l = function(e, t) {
+  } = e, a = function(e, t) {
     if (null == e) return {};
-    var n, r, i = function(e, t) {
+    var r, n, i = function(e, t) {
       if (null == e) return {};
-      var n, r, i = {},
-        l = Object.keys(e);
-      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      var r, n, i = {},
+        a = Object.keys(e);
+      for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var a = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
     }
     return i
   }(e, ["gameName", "onClick", "loading"]);
-  let o = null != t ? t : u.intl.string(u.t.GIWFlJ),
+  let l = null != t ? t : u.intl.string(u.t.GIWFlJ),
     s = u.intl.formatToPlainString(u.t["3mb1s7"], {
-      game: o
+      game: l
     });
-  return i ? (0, r.jsx)("div", {
+  return i ? (0, n.jsx)("div", {
     className: d.loadingCover
-  }) : (0, r.jsx)(a.ua7, {
+  }) : (0, n.jsx)(o.ua7, {
     text: s,
-    children: e => (0, r.jsxs)(a.P3F, b(g({
+    children: e => (0, n.jsxs)(o.P3F, b(g({
       className: f.addButton
     }, e), {
-      onClick: n,
-      children: [(0, r.jsx)(c.Z, b(g({
+      onClick: r,
+      children: [(0, n.jsx)(c.Z, b(g({
         className: f.cover,
         gameName: t
-      }, l), {
+      }, a), {
         disableInteraction: true
-      })), (0, r.jsx)(a.svS, {
+      })), (0, n.jsx)(o.svS, {
         size: "md",
         className: f.addIcon,
-        color: a.TVs.colors.WHITE
+        color: o.TVs.colors.WHITE
       })]
     }))
   })
@@ -96,47 +96,47 @@ function p(e) {
 function m(e) {
   let {
     userId: t,
-    games: n,
+    games: r,
     isGameFetching: i,
     isSuggestedGamesLoading: c,
     onDismiss: d,
     onClick: g,
     className: b
-  } = e, m = (0, o.Dt)();
-  return (0, r.jsxs)("aside", {
-    className: l()(f.container, b),
+  } = e, m = (0, l.Dt)();
+  return (0, n.jsxs)("aside", {
+    className: a()(f.container, b),
     "aria-labelledby": m,
-    children: [(0, r.jsxs)("div", {
+    children: [(0, n.jsxs)("div", {
       className: f.header,
-      children: [(0, r.jsx)(a.P3F, {
+      children: [(0, n.jsx)(o.P3F, {
         className: f.dismissButton,
         "aria-label": u.intl.string(u.t["pUR+3t"]),
         onClick: d,
-        children: (0, r.jsx)(a.Dio, {
+        children: (0, n.jsx)(o.Dio, {
           size: "sm",
           color: "currentColor"
         })
-      }), (0, r.jsx)(a.X6q, {
+      }), (0, n.jsx)(o.X6q, {
         id: m,
         variant: "text-xs/medium",
         color: "text-secondary",
         children: u.intl.string(u.t.zMUr6e)
       })]
-    }), (0, r.jsx)(s.Z, {
-      games: n,
+    }), (0, n.jsx)(s.Z, {
+      games: r,
       renderGame: e => {
         let {
-          applicationId: n,
-          gameName: l,
-          imageSrc: a
+          applicationId: r,
+          gameName: a,
+          imageSrc: o
         } = e;
-        return (0, r.jsx)(p, {
-          onClick: () => g(n, l, a),
+        return (0, n.jsx)(p, {
+          onClick: () => g(r, a, o),
           userId: t,
-          loading: c || i(n),
-          applicationId: n,
-          gameName: l,
-          imageSrc: a
+          loading: c || i(r),
+          applicationId: r,
+          gameName: a,
+          imageSrc: o
         })
       }
     })]

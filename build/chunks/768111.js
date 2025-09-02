@@ -1,4 +1,4 @@
-/** Chunk was on 93979 **/
+/** Chunk was on 31553 **/
 /** chunk id: 768111, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -19,27 +19,27 @@ function m(e) {
     currentUser: t
   } = e, {
     mutualFriendsCount: m,
-    mutualGuilds: f
-  } = (0, i.Z)(n), p = null == f ? true : f.length, x = (0, r.Z)(n), h = (0, l.k)({
+    mutualGuilds: p
+  } = (0, o.Z)(n), f = null == p ? true : p.length, h = (0, i.Z)(n), j = (0, l.k)({
     location: "useUserProfileModalV2TabBarItems"
-  }), b = (0, o.P)({
+  }), x = (0, r.P)({
     location: "useUserProfileModalV2TabBarItems"
-  }), j = (0, c.Z)(n.id), v = [], g = n.id === (null == t ? true : t.id), y = j.length > 0;
-  return (g && h || y && b) && v.push({
+  }), v = (0, s.Z)(n.id), g = [], b = n.id === (null == t ? true : t.id), y = v.length > 0;
+  return (b && j || y && x) && g.push({
     text: u.intl.string(u.t.laViw8),
     section: d.oh.WIDGETS,
     subsection: true
-  }), v.push({
+  }), g.push({
     text: u.intl.string(u.t.chq59f),
     section: d.oh.ACTIVITY,
     subsection: true
-  }), n.id !== (null == t ? true : t.id) && x && (v.push({
-    text: (0, s.Z)(m),
+  }), n.id !== (null == t ? true : t.id) && h && (g.push({
+    text: (0, a.Z)(m),
     section: d.oh.MUTUAL_FRIENDS,
     subsection: true
-  }), v.push({
-    text: (0, a.Z)(p),
+  }), g.push({
+    text: (0, c.Z)(f),
     section: d.oh.MUTUAL_GUILDS,
     subsection: true
-  })), v
+  })), g
 }

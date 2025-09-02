@@ -53,14 +53,14 @@ function S(e) {
     width: 20
   }), {
     badge: T,
-    badgeType: P
+    badgeType: j
   } = (0, b.h6)({
     isSelected: O
   }), {
-    backForwardButtons: j
+    backForwardButtons: P
   } = (0, d.t)({
     location: "AppTitleBar"
-  }), x = (0, h.isDesktop)() && j, A = (0, p.A)(), Z = (0, h.isMac)() ? v[A] : x ? I[A] : C[A];
+  }), x = (0, h.isDesktop)() && P, A = (0, p.A)(), Z = (0, h.isMac)() ? v[A] : x ? I[A] : C[A];
   return (0, r.jsxs)(c.Kqy, {
     gap: 0,
     direction: "horizontal",
@@ -107,7 +107,7 @@ function S(e) {
           },
           children: [(0, r.jsx)("div", {
             className: a()(y.iconWrapper, null),
-            children: "unread" === P ? (0, r.jsxs)(r.Fragment, {
+            children: "unread" === j ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)(u.ZP, {
                 width: 20,
                 height: 20,

@@ -1,5 +1,5 @@
-/** Chunk was on 8188 **/
-/** chunk id: 978369, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 61149 **/
+/** chunk id: 978369, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => f
 }), require("./539854.js"), require("./388685.js");
@@ -14,45 +14,45 @@ var Chunk951288 = require("./951288.js"),
 let d = Chunk647438.memo(function(e) {
   let {
     currentTags: t,
-    onTagSelect: n,
+    onTagSelect: r,
     onNoneSelect: i,
-    onClose: a
+    onClose: o
   } = e;
-  return (0, r.jsx)(l.v2r, {
+  return (0, n.jsx)(a.v2r, {
     navId: "widget-game-tags",
     "aria-label": s.intl.string(s.t.r6EJOj),
-    onClose: a,
+    onClose: o,
     onSelect: () => {},
     className: u.gameTagsMenu,
     children: Object.entries(c.aE).map(e => {
-      let [a, o] = e, u = ((e, a) => {
-        let o = [];
-        return a.type === c.kd.RADIO && o.push((0, r.jsx)(l.k5B, {
+      let [o, l] = e, u = ((e, o) => {
+        let l = [];
+        return o.type === c.kd.RADIO && l.push((0, n.jsx)(a.k5B, {
           id: "".concat(e, "-none"),
           group: e,
           label: s.intl.string(s.t.PoWNfX),
-          checked: !a.tags.some(e => t.includes(e)),
-          action: () => i(a.tags)
-        }, "none")), a.tags.forEach(i => {
+          checked: !o.tags.some(e => t.includes(e)),
+          action: () => i(o.tags)
+        }, "none")), o.tags.forEach(i => {
           let s = c.XV[i];
-          null != s && (a.type === c.kd.RADIO ? o.push((0, r.jsx)(l.k5B, {
+          null != s && (o.type === c.kd.RADIO ? l.push((0, n.jsx)(a.k5B, {
             id: i,
             group: e,
             label: s.getText(),
             checked: t.includes(i),
-            action: () => n(i, true)
-          }, i)) : o.push((0, r.jsx)(l.S89, {
+            action: () => r(i, true)
+          }, i)) : l.push((0, n.jsx)(a.S89, {
             id: i,
             label: s.getText(),
             checked: t.includes(i),
-            action: () => n(i, false)
+            action: () => r(i, false)
           }, i)))
-        }), o
-      })(a, o);
-      return (0, r.jsx)(l.kSQ, {
-        label: o.getLabel(),
+        }), l
+      })(o, l);
+      return (0, n.jsx)(a.kSQ, {
+        label: l.getLabel(),
         children: u
-      }, a)
+      }, o)
     })
   })
 });
@@ -60,34 +60,34 @@ let d = Chunk647438.memo(function(e) {
 function f(e) {
   let {
     tags: t,
-    widgetType: n,
+    widgetType: r,
     applicationId: f,
     ref: g
   } = e, b = (0, i.useRef)(null), {
     trackUserProfileAction: p
-  } = (0, a.KZ)(), m = (0, i.useMemo)(() => null != t ? t : [], [t]), O = (0, i.useCallback)(function(e) {
+  } = (0, o.KZ)(), m = (0, i.useMemo)(() => null != t ? t : [], [t]), O = (0, i.useCallback)(function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-      r = new Set(m);
+      n = new Set(m);
     if (t) {
       let t = Object.values(c.aE).find(t => t.tags.includes(e));
       null != t && (t.tags.forEach(e => {
-        r.delete(e)
-      }), r.add(e), p({
+        n.delete(e)
+      }), n.add(e), p({
         action: "EDIT_ACTION"
       }))
-    } else r.has(e) ? r.delete(e) : r.add(e), p({
+    } else n.has(e) ? n.delete(e) : n.add(e), p({
       action: "EDIT_ACTION"
     });
-    (0, o.n$)(n, f, Array.from(r))
-  }, [m, p, n, f]), j = (0, i.useCallback)(e => {
+    (0, l.n$)(r, f, Array.from(n))
+  }, [m, p, r, f]), y = (0, i.useCallback)(e => {
     let t = new Set(m);
     e.forEach(e => {
       t.delete(e)
     }), p({
       action: "EDIT_ACTION"
-    }), (0, o.n$)(n, f, Array.from(t))
-  }, [m, p, n, f]);
-  return (0, r.jsx)(l.yRy, {
+    }), (0, l.n$)(r, f, Array.from(t))
+  }, [m, p, r, f]);
+  return (0, n.jsx)(a.yRy, {
     targetElementRef: b,
     position: "right",
     align: "top",
@@ -95,53 +95,53 @@ function f(e) {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(d, {
+      return (0, n.jsx)(d, {
         currentTags: m,
         onTagSelect: O,
-        onNoneSelect: j,
+        onNoneSelect: y,
         onClose: t
       })
     },
     children: e => {
-      var t, n;
-      return (0, r.jsx)("div", {
+      var t, r;
+      return (0, n.jsx)("div", {
         ref: e => (null != e && (b.current = e, g.current = e), () => {
           b.current = null, g.current = null
         }),
-        children: (0, r.jsx)(l.P3F, (t = function(e) {
+        children: (0, n.jsx)(a.P3F, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-              r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-              var r;
-              r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
+            var r = null != arguments[t] ? arguments[t] : {},
+              n = Object.keys(r);
+            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(r, e).enumerable
+            }))), n.forEach(function(t) {
+              var n;
+              n = r[t], t in e ? Object.defineProperty(e, t, {
+                value: n,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[t] = r
+              }) : e[t] = n
             })
           }
           return e
-        }({}, e), n = n = {
+        }({}, e), r = r = {
           className: u.addButton,
           "aria-label": s.intl.string(s.t.r6EJOj),
-          children: (0, r.jsx)(l.Text, {
+          children: (0, n.jsx)(a.Text, {
             variant: "text-xxs/medium",
             color: "none",
             children: s.intl.string(s.t.fZSej4)
           })
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-          var n = Object.keys(e);
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+          var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
+            var n = Object.getOwnPropertySymbols(e);
+            r.push.apply(r, n)
           }
-          return n
-        })(Object(n)).forEach(function(e) {
-          Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+          return r
+        })(Object(r)).forEach(function(e) {
+          Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
         }), t))
       })
     }

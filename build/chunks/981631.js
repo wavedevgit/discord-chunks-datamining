@@ -425,7 +425,7 @@ var v = function(e) {
     return e.NONE = "NONE", e.MEMBERS = "MEMBERS", e.SEARCH = "SEARCH", e.SIDEBAR_CHAT = "SIDEBAR_CHAT", e.PROFILE = "PROFILE", e.SUMMARIES = "SUMMARIES", e
   }({}),
   x = function(e) {
-    return e.ADD_FRIEND = "ADD_FRIEND", e.ALL = "ALL", e.ONLINE = "ONLINE", e.PENDING = "PENDING", e.PENDING_IGNORED = "PENDING_IGNORED", e.SPAM = "SPAM", e.SUGGESTIONS = "SUGGESTIONS", e
+    return e.ADD_FRIEND = "ADD_FRIEND", e.ALL = "ALL", e.ONLINE = "ONLINE", e.PENDING = "PENDING", e.PENDING_IGNORED = "PENDING_IGNORED", e.SPAM = "SPAM", e.SUGGESTIONS = "SUGGESTIONS", e.YOU = "YOU", e
   }({}),
   L = function(e) {
     return e.NEVER = "NEVER", e.ALL = "ALL", e

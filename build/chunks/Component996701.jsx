@@ -1,4 +1,4 @@
-/** Chunk was on 54844 **/
+/** Chunk was on 87023 **/
 /** chunk id: 996701, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -18,14 +18,14 @@ let u = e => {
       url: t,
       link_text: n,
       link_description: i,
-      is_localized: o
+      is_localized: s
     }
   } = e;
-  return o ? (0, r.jsxs)(a.P3F, {
+  return s ? (0, r.jsxs)(a.P3F, {
     role: "link",
     className: l()(d.linkButton, c.listElement),
     onClick: () => {
-      (0, s.Z)(t)
+      (0, o.Z)(t)
     },
     children: [(0, r.jsxs)("div", {
       className: d.linkTextContainer,
@@ -76,7 +76,7 @@ function m(e) {
       variant: "heading-sm/semibold",
       color: "header-secondary",
       className: d.header,
-      children: o.intl.string(o.t.hvVgAQ)
+      children: s.intl.string(s.t.hvVgAQ)
     }), n]
   })
 }

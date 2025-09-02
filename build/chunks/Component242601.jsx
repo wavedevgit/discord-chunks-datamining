@@ -402,7 +402,7 @@ class e_ extends Chunk647438.PureComponent {
         guild: e,
         showGuildTemplateDirtyTooltip: t
       } = this.props;
-      null != e && t && j.Z.hideGuildTemplateDirtyTooltip(e.id)
+      null != e && t && P.Z.hideGuildTemplateDirtyTooltip(e.id)
     }), ep(this, "renderMenuPopout", async () => {
       let {
         default: e
@@ -486,7 +486,7 @@ function eO(e) {
     f = (0, c.e7)([H.Z], () => H.Z.getGuildDimensions(n).scrollTo),
     h = (0, c.e7)([Q.Z], () => Q.Z.getChannelId()),
     g = (0, c.e7)([K.Z], () => K.Z.can(ea.Plq.MANAGE_GUILD, o)),
-    j = (0, c.e7)([F.Z], () => F.Z.isUnavailable(n)),
+    P = (0, c.e7)([F.Z], () => F.Z.isUnavailable(n)),
     Z = (0, c.e7)([X.default], () => X.default.getCurrentUser()),
     {
       enableStudyGroup: w
@@ -500,7 +500,7 @@ function eO(e) {
   i.useEffect(() => {
     n !== z && B(!M)
   }, [n, z, M]);
-  let [et, en] = (0, v.ZP)(e => [eo.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(es.R.GUILD_HEADER_TOOLTIPS)], s.X), er = (0, y.Z)(o), ei = (0, p.s9z)(p.JQI), el = (0, c.e7)([Y.Z], () => Y.Z.hasLayers()), ec = (0, c.e7)([G.Z], () => G.Z.shouldShow(em)), eu = (0, R.cT)(n, "GuildSidebar") && g && (null == o ? true : o.premiumProgressBarEnabled) === false && !$.s.isDisallowPopupsSet(), ed = (0, P.Z)(n), ep = (null == o ? true : o.features.has(ea.oNc.HUB)) === true, ef = g && (null == o ? true : o.features.has(ea.oNc.DISCOVERABLE)) === true, eh = (0, E.Q)(), eg = (g || (null == o ? true : o.premiumTier) === ea.Eu4.NONE) && !$.s.isDisallowPopupsSet() && !eh, eb = (0, c.e7)([x.Z, Y.Z], () => null != o && null != Z && g && !Y.Z.hasLayers() && x.Z.shouldShowGuildTemplateDirtyTooltip(n)), eO = (0, c.e7)([V.Z], () => V.Z.getChannel(a)), {
+  let [et, en] = (0, v.ZP)(e => [eo.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(es.R.GUILD_HEADER_TOOLTIPS)], s.X), er = (0, y.Z)(o), ei = (0, p.s9z)(p.JQI), el = (0, c.e7)([Y.Z], () => Y.Z.hasLayers()), ec = (0, c.e7)([G.Z], () => G.Z.shouldShow(em)), eu = (0, R.cT)(n, "GuildSidebar") && g && (null == o ? true : o.premiumProgressBarEnabled) === false && !$.s.isDisallowPopupsSet(), ed = (0, j.Z)(n), ep = (null == o ? true : o.features.has(ea.oNc.HUB)) === true, ef = g && (null == o ? true : o.features.has(ea.oNc.DISCOVERABLE)) === true, eh = (0, E.Q)(), eg = (g || (null == o ? true : o.premiumTier) === ea.Eu4.NONE) && !$.s.isDisallowPopupsSet() && !eh, eb = (0, c.e7)([x.Z, Y.Z], () => null != o && null != Z && g && !Y.Z.hasLayers() && x.Z.shouldShowGuildTemplateDirtyTooltip(n)), eO = (0, c.e7)([V.Z], () => V.Z.getChannel(a)), {
     isPopoutOpen: eE
   } = (0, S.y)(), ey = null != (t = null == o ? true : o.features.has(ea.oNc.COMMUNITY)) && t, ev = J.ZP.isNewUser(Z), eI = U && !ev;
   (0, N.Z)(o);
@@ -508,8 +508,8 @@ function eO(e) {
     eS = (0, L.Z)(n),
     eN = (0, T.Z)(n),
     eT = (0, c.e7)([Q.Z], () => Q.Z.getChannelId()),
-    eP = (0, c.e7)([q.Z], () => q.Z.desyncedVoiceStatesCount),
-    ej = k.Y.useExperiment({
+    ej = (0, c.e7)([q.Z], () => q.Z.desyncedVoiceStatesCount),
+    eP = k.Y.useExperiment({
       location: "GuildSidebar"
     }, {
       autoTrackExposure: true
@@ -525,8 +525,8 @@ function eO(e) {
     selectedVoiceChannelId: h,
     voiceStates: d,
     rtcConnectedChannelId: eT,
-    rtcDesyncedVoiceStatesCount: eP,
-    isUnavailable: j,
+    rtcDesyncedVoiceStatesCount: ej,
+    isUnavailable: P,
     user: Z,
     hasChannelNotice: null != er || et,
     anyLayerOpen: ei || el,
@@ -547,7 +547,7 @@ function eO(e) {
     headerAnalyticsLocations: ee,
     isTutorialHighlightDismissed: eC,
     shouldRenderBurstCoachmark: eI,
-    shouldRenderCustomNotificationSoundsCoachmark: ej,
+    shouldRenderCustomNotificationSoundsCoachmark: eP,
     shouldRenderGuildPowerupPerkCoachmark: false === ex
   })
 }

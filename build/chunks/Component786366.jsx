@@ -1,4 +1,4 @@
-/** Chunk was on 93979 **/
+/** Chunk was on 31553 **/
 /** chunk id: 786366, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -17,7 +17,7 @@ function u(e) {
   let {
     icon: n,
     title: t,
-    description: o
+    description: r
   } = e;
   return (0, l.jsxs)("div", {
     className: d.row,
@@ -31,12 +31,12 @@ function u(e) {
       })
     }), (0, l.jsxs)("div", {
       className: d.rowText,
-      children: [(0, l.jsx)(i.X6q, {
+      children: [(0, l.jsx)(o.X6q, {
         variant: "text-xs/semibold",
         children: t
-      }), (0, l.jsx)(i.Text, {
+      }), (0, l.jsx)(o.Text, {
         variant: "text-sm/normal",
-        children: o
+        children: r
       })]
     })]
   })
@@ -45,34 +45,34 @@ function u(e) {
 function m(e) {
   let {
     user: n
-  } = e, t = (0, r.e7)([s.Z], () => {
+  } = e, t = (0, i.e7)([a.Z], () => {
     var e;
-    return null == (e = s.Z.getUserProfile(n.id)) ? true : e.application
+    return null == (e = a.Z.getUserProfile(n.id)) ? true : e.application
   }), {
     hasMessageContent: m,
-    hasGuildPresences: f,
-    hasGuildMembers: p
-  } = (0, c.w)({
+    hasGuildPresences: p,
+    hasGuildMembers: f
+  } = (0, s.w)({
     flags: null == t ? true : t.flags
   });
-  return (0, l.jsxs)(o.zJ, {
+  return (0, l.jsxs)(r.zJ, {
     fade: true,
     className: d.scroller,
     children: [m && (0, l.jsx)(u, {
-      icon: i.kBi,
-      title: a.intl.string(a.t["7Tmhfn"]),
-      description: a.intl.string(a.t["eu5x7+"])
-    }), f && (0, l.jsx)(u, {
-      icon: i.iWm,
-      title: a.intl.string(a.t.awYSsL),
-      description: a.intl.string(a.t.TpsXoK)
+      icon: o.kBi,
+      title: c.intl.string(c.t["7Tmhfn"]),
+      description: c.intl.string(c.t["eu5x7+"])
     }), p && (0, l.jsx)(u, {
-      icon: i.BFJ,
-      title: a.intl.string(a.t.WuKeSE),
-      description: a.intl.string(a.t.wOBmtb)
-    }), (0, l.jsx)(i.Text, {
+      icon: o.iWm,
+      title: c.intl.string(c.t.awYSsL),
+      description: c.intl.string(c.t.TpsXoK)
+    }), f && (0, l.jsx)(u, {
+      icon: o.BFJ,
+      title: c.intl.string(c.t.WuKeSE),
+      description: c.intl.string(c.t.wOBmtb)
+    }), (0, l.jsx)(o.Text, {
       variant: "text-xs/normal",
-      children: a.intl.format(a.t.b6nqk5, {
+      children: c.intl.format(c.t.b6nqk5, {
         helpCenterUrl: "https://support.discord.com/hc/articles/7933951485975"
       })
     })]

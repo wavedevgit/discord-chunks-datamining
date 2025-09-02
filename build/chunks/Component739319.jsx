@@ -1,4 +1,4 @@
-/** Chunk was on 54844 **/
+/** Chunk was on 87023 **/
 /** chunk id: 739319, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -23,24 +23,24 @@ function m(e) {
         is_localized: m
       }
     }
-  } = e, [p, g] = i.useState(false), _ = i.useRef(o.Z.reactParserFor(o.Z.defaultRules));
+  } = e, [_, p] = i.useState(false), g = i.useRef(s.Z.reactParserFor(s.Z.defaultRules));
   return m ? (0, r.jsxs)("div", {
     className: u.container,
-    children: [(0, r.jsx)(s.X6q, {
+    children: [(0, r.jsx)(o.X6q, {
       variant: "heading-sm/semibold",
       color: "header-secondary",
       className: u.header,
       children: t
-    }), (0, r.jsx)(s.Text, {
+    }), (0, r.jsx)(o.Text, {
       variant: "text-sm/normal",
       className: u.bodyText,
-      children: _.current(n)
+      children: g.current(n)
     }), (0, r.jsx)("div", {
       children: (0, r.jsxs)("div", {
         className: a()(u.smsNumberContainer, {
-          [u.copied]: p
+          [u.copied]: _
         }),
-        children: [(0, r.jsx)(s.Text, {
+        children: [(0, r.jsx)(o.Text, {
           variant: "text-md/normal",
           selectable: true,
           className: u.smsNumberText,
@@ -48,12 +48,12 @@ function m(e) {
         }), (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: u.__invalid_trailingButton,
-          children: (0, r.jsx)(s.zxk, {
+          children: (0, r.jsx)(o.zxk, {
             variant: "secondary",
             size: "sm",
-            text: p ? d.intl.string(d.t["t5VZ8/"]) : d.intl.string(d.t.OpuAlJ),
+            text: _ ? d.intl.string(d.t["t5VZ8/"]) : d.intl.string(d.t.OpuAlJ),
             onClick: () => {
-              (0, c.JG)(l, () => g(true))
+              (0, c.JG)(l, () => p(true))
             }
           })
         })]

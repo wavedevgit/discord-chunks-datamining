@@ -1,12 +1,12 @@
-/** Chunk was on 8188 **/
-/** chunk id: 753436, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 61149 **/
+/** chunk id: 753436, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   S: () => b
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk594174 = require("./594174.js"),
   Chunk971082 = require("./971082.jsx"),
   Chunk817053 = require("./817053.jsx"),
@@ -19,35 +19,35 @@ var Chunk120356 = require("./120356.js"),
 function b(e) {
   let {
     game: t,
-    userId: n,
+    userId: r,
     widgetType: i,
     guildId: b,
     channelId: p,
     loading: m = false,
     disableInteraction: O = false
-  } = e, j = (0, u.Z)(t.applicationId), y = j.length > 0, x = a.default.getCurrentUser(), v = (null == x ? true : x.id) === n;
-  return m ? (0, r.jsx)("div", {
+  } = e, y = (0, u.Z)(t.applicationId), j = y.length > 0, x = o.default.getCurrentUser(), v = (null == x ? true : x.id) === r;
+  return m ? (0, n.jsx)("div", {
     className: f.loadingCover
-  }) : (0, r.jsxs)("div", {
+  }) : (0, n.jsxs)("div", {
     className: g.container,
-    children: [(0, r.jsx)(c.Z, {
+    children: [(0, n.jsx)(c.Z, {
       imageSrc: t.imageSrc,
       gameName: t.gameName,
       applicationId: t.applicationId,
-      userId: n,
+      userId: r,
       disableInteraction: O,
-      className: l()(y ? g.socialProofBackdrop : true, (null == t ? true : t.imageSrc) == null || O ? true : f.hoverActiveEffect)
-    }), !O && v && (0, r.jsx)(s.Z, {
+      className: a()(j ? g.socialProofBackdrop : true, (null == t ? true : t.imageSrc) == null || O ? true : f.hoverActiveEffect)
+    }), !O && v && (0, n.jsx)(s.Z, {
       game: t,
       widgetType: i,
       className: g.removeGameButton,
       iconSize: "xs"
-    }), !O && y && (0, r.jsx)(o.Z, {
+    }), !O && j && (0, n.jsx)(l.Z, {
       label: d.intl.formatToPlainString(d.t.ujhJdH, {
-        numFriends: j.length
+        numFriends: y.length
       }),
       className: g.socialProof,
-      users: j,
+      users: y,
       guildId: b,
       channelId: p,
       visuallyHideLabel: true

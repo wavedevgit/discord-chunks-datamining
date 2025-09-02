@@ -61,16 +61,16 @@ function E(e) {
       analyticsLocation: N,
       isLightTheme: T
     } = e,
-    P = "AnnouncementModalVariant1_".concat(l.z[Number(I.dismissKey)]),
+    j = "AnnouncementModalVariant1_".concat(l.z[Number(I.dismissKey)]),
     {
-      onClose: j
+      onClose: P
     } = C,
     x = null != (y = null == (t = I.button) ? true : t.copy) ? y : m.intl.string(m.t.YScQSE),
     A = (null == (n = I.button) ? true : n.buttonAction) === a.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button";
   switch (null == (E = I.button) ? true : E.buttonAction) {
     case a.Wc.OPEN_MARKETING_PAGE:
       v = () => {
-        (0, u.uL)(g.Z5c.APPLICATION_STORE), j()
+        (0, u.uL)(g.Z5c.APPLICATION_STORE), P()
       };
       break;
     case a.Wc.OPEN_TIER_1_PAYMENT_MODAL:
@@ -82,7 +82,7 @@ function E(e) {
           objectType: g.Qqv.TIER_1
         }),
         onClose: e => {
-          e && j()
+          e && P()
         }
       });
       break;
@@ -97,7 +97,7 @@ function E(e) {
           objectType: g.Qqv.TIER_2
         }),
         onClose: e => {
-          e && j()
+          e && P()
         }
       })
   }
@@ -138,7 +138,7 @@ function E(e) {
       imageSrc: T ? e.imageLinkLightTheme : e.imageLink,
       tagText: "" !== e.pill ? e.pill : true
     })),
-    changeLogId: P,
+    changeLogId: j,
     button: () => {
       let e = Date.now();
       return (0, r.jsx)(o.z, {
@@ -146,10 +146,10 @@ function E(e) {
         size: "md",
         onClick: () => {
           d.default.track(g.rMx.CHANGE_LOG_CTA_CLICKED, {
-            change_log_id: P,
+            change_log_id: j,
             cta_type: A,
             seconds_open: Math.round((Date.now() - e) / 1e3),
-            target: P
+            target: j
           }), v()
         },
         text: x,

@@ -1,7 +1,7 @@
-/** Chunk was on 93979 **/
+/** Chunk was on 31553 **/
 /** chunk id: 30556, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => a
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,27 +10,27 @@ var Chunk481060 = require("./481060.js"),
   Chunk475413 = require("./475413.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function s(e) {
+function a(e) {
   var {
     type: n,
     userId: t,
-    onClose: s
-  } = e, a = function(e, n) {
+    onClose: a
+  } = e, c = function(e, n) {
     if (null == e) return {};
-    var t, l, o = function(e, n) {
+    var t, l, r = function(e, n) {
       if (null == e) return {};
-      var t, l, o = {},
-        r = Object.keys(e);
-      for (l = 0; l < r.length; l++) t = r[l], n.indexOf(t) >= 0 || (o[t] = e[t]);
-      return o
+      var t, l, r = {},
+        i = Object.keys(e);
+      for (l = 0; l < i.length; l++) t = i[l], n.indexOf(t) >= 0 || (r[t] = e[t]);
+      return r
     }(e, n);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      for (l = 0; l < r.length; l++) t = r[l], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (o[t] = e[t])
+      var i = Object.getOwnPropertySymbols(e);
+      for (l = 0; l < i.length; l++) t = i[l], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (r[t] = e[t])
     }
-    return o
+    return r
   }(e, ["type", "userId", "onClose"]);
-  let d = n === i.j8.TEXT ? i.tG : i.ef;
+  let d = n === o.j8.TEXT ? o.tG : o.ef;
   return (0, l.jsx)(d, function(e) {
     for (var n = 1; n < arguments.length; n++) {
       var t = null != arguments[n] ? arguments[n] : {},
@@ -50,13 +50,13 @@ function s(e) {
     return e
   }({
     action: "SEND_MESSAGE",
-    icon: o.kBi,
-    text: c.intl.string(c.t.zROXER),
-    tooltipText: c.intl.string(c.t.zROXER),
+    icon: r.kBi,
+    text: s.intl.string(s.t.zROXER),
+    tooltipText: s.intl.string(s.t.zROXER),
     onClick: () => {
-      r.Z.openPrivateChannel({
+      i.Z.openPrivateChannel({
         recipientIds: t
-      }), null == s || s()
+      }), null == a || a()
     }
-  }, a))
+  }, c))
 }

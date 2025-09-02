@@ -1,4 +1,4 @@
-/** Chunk was on 93979 **/
+/** Chunk was on 31553 **/
 /** chunk id: 116906, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -31,80 +31,80 @@ function Z(e) {
     user: n,
     currentUser: t,
     guildId: Z,
-    subsection: _,
-    onClose: P
+    subsection: P,
+    onClose: N
   } = e, {
-    voiceActivityStatusEnabled: N
-  } = (0, i.U)({
+    voiceActivityStatusEnabled: T
+  } = (0, o.U)({
     location: "UserProfileModalActivity"
-  }), T = (0, u.b)({
+  }), E = (0, u.b)({
     location: "UserProfileModalActivity"
   }), {
     live: A,
-    recent: E,
+    recent: S,
     stream: C
   } = (0, m.Z)(n.id), {
-    voiceChannel: S,
-    voiceActivity: w
-  } = (0, f.Z)({
+    voiceChannel: w,
+    voiceActivity: _
+  } = (0, p.Z)({
     userId: n.id,
     guildId: Z
-  }), D = (0, o.e7)([c.Z], () => c.Z.isFetchingUserOutbox(n.id)), L = n.id === t.id, M = (0, o.e7)([a.Z, s.Z], () => {
-    let e = L ? a.Z.getStatus() : s.Z.getStatus(n.id);
-    return e === r.Skl.OFFLINE || e === r.Skl.INVISIBLE
-  }), R = A.length > 0 || null != C, B = N && null == C && null == w && null != S, U = !M && (R || B), k = E.length > 0;
-  return U || k || !D ? (0, l.jsxs)(r.zJl, {
+  }), D = (0, r.e7)([s.Z], () => s.Z.isFetchingUserOutbox(n.id)), R = n.id === t.id, L = (0, r.e7)([c.Z, a.Z], () => {
+    let e = R ? c.Z.getStatus() : a.Z.getStatus(n.id);
+    return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
+  }), M = A.length > 0 || null != C, U = T && null == C && null == _ && null != w, k = !L && (M || U), B = S.length > 0;
+  return k || B || !D ? (0, l.jsxs)(i.zJl, {
     className: O.scroller,
     fade: true,
-    children: [U ? (0, l.jsx)(p.Z, {
+    children: [k ? (0, l.jsx)(f.Z, {
       "aria-label": y.intl.string(y.t.J6STd3),
       children: (0, l.jsxs)("ul", {
         className: O.activityList,
-        children: [!T && B && (0, l.jsx)("li", {
-          children: (0, l.jsx)(j.Z, {
+        children: [!E && U && (0, l.jsx)("li", {
+          children: (0, l.jsx)(v.Z, {
             user: n,
             currentUser: t,
-            voiceChannel: S,
-            onClose: P
+            voiceChannel: w,
+            onClose: N
           })
         }), null != C && (0, l.jsx)("li", {
-          children: (0, l.jsx)(b.Z, {
-            user: n,
-            currentUser: t,
-            stream: C,
-            onClose: P
-          })
-        }), A.map((e, o) => (0, l.jsx)("li", {
           children: (0, l.jsx)(x.Z, {
             user: n,
             currentUser: t,
-            activity: e,
-            onClose: P
+            stream: C,
+            onClose: N
           })
-        }, "live-".concat(o)))]
+        }), A.map((e, r) => (0, l.jsx)("li", {
+          children: (0, l.jsx)(h.Z, {
+            user: n,
+            currentUser: t,
+            activity: e,
+            onClose: N
+          })
+        }, "live-".concat(r)))]
       })
-    }) : null, k ? (0, l.jsx)(p.Z, {
+    }) : null, B ? (0, l.jsx)(f.Z, {
       heading: y.intl.string(y.t.M0zgnZ),
-      introText: L ? y.intl.format(y.t["4bk9Ag"], {
-        learnMoreHook: (e, n) => (0, l.jsx)(r.eee, {
-          href: d.Z.getArticleURL(g.BhN.ACTIVITY_STATUS_SETTINGS),
+      introText: R ? y.intl.format(y.t["4bk9Ag"], {
+        learnMoreHook: (e, n) => (0, l.jsx)(i.eee, {
+          href: d.Z.getArticleURL(b.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, n)
       }) : true,
-      scrollIntoView: _ === v.Tb.RECENT_ACTIVITY,
+      scrollIntoView: P === g.Tb.RECENT_ACTIVITY,
       children: (0, l.jsx)("ul", {
         className: O.activityList,
-        children: E.map(e => (0, l.jsx)("li", {
-          children: (0, l.jsx)(h.Z, {
+        children: S.map(e => (0, l.jsx)("li", {
+          children: (0, l.jsx)(j.Z, {
             user: n,
             entry: e,
-            onClose: P
+            onClose: N
           })
         }, e.id))
       })
     }) : null]
   }) : (0, l.jsx)("div", {
     className: I.empty,
-    children: (0, l.jsx)(r.$jN, {})
+    children: (0, l.jsx)(i.$jN, {})
   })
 }

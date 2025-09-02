@@ -1,4 +1,4 @@
-/** Chunk was on 54844 **/
+/** Chunk was on 87023 **/
 /** chunk id: 356110, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -8,27 +8,27 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100993 = require("./100993.js"),
   Chunk197571 = require("./197571.js");
-let o = e => {
+let s = e => {
     let {
       element: t,
       onChange: n,
-      initialOption: o
+      initialOption: s
     } = e, [c, d] = i.useState("");
     i.useEffect(() => {
-      d(null != o ? o : "")
-    }, [o]);
+      d(null != s ? s : "")
+    }, [s]);
     let u = t.name,
       {
         title: m,
-        options: p
+        options: _
       } = t.data,
-      g = i.useCallback(e => {
+      p = i.useCallback(e => {
         null != e && (d(e), n(e))
       }, [n]);
     return (0, r.jsxs)("div", {
-      className: s.marginBottom8,
+      className: o.marginBottom8,
       children: [null != m && (0, r.jsx)("div", {
-        className: s.marginBottom8,
+        className: o.marginBottom8,
         children: (0, r.jsxs)(l.Text, {
           variant: "text-sm/bold",
           children: [m, t.should_submit_data && (0, r.jsx)("span", {
@@ -38,8 +38,8 @@ let o = e => {
         })
       }), (0, r.jsx)(l.q4e, {
         value: c,
-        onChange: g,
-        options: p
+        onChange: p,
+        options: _
       })]
     }, u)
   },
@@ -51,7 +51,7 @@ let o = e => {
     } = e, l = t.map(e => {
       var t, l;
       let a = e.name;
-      return (0, r.jsx)(o, {
+      return (0, r.jsx)(s, {
         element: e,
         initialOption: null != (l = null == i || null == (t = i[a]) ? true : t.value) ? l : true,
         onChange: e => n(a, e)

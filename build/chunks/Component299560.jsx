@@ -1,12 +1,12 @@
-/** Chunk was on 8188 **/
-/** chunk id: 299560, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 30355 **/
+/** chunk id: 299560, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk296009 = require("./296009.js"),
   Chunk481060 = require("./481060.js"),
   Chunk804919 = require("./804919.js"),
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk247397 = require("./247397.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk229870 = require("./229870.js");
-let O = {
+let b = {
   [Chunk296009.l.FAVORITE_GAMES]: {
     placeholder: {
       variant: "details",
@@ -48,42 +48,42 @@ let O = {
   }
 };
 
-function j(e) {
+function h(e) {
   let {
     widgetType: t,
-    onAddWidget: n,
-    size: l = "default",
-    loading: o = false,
-    trackUserProfileAction: s
+    onAddWidget: r,
+    size: i = "default",
+    loading: a = false,
+    trackUserProfileAction: c
   } = e, {
-    placeholder: j,
-    getAriaLabel: y
-  } = O[t], x = "small" === l, v = i.useCallback(() => {
-    o || ((0, u.qH)(t), s({
+    placeholder: h,
+    getAriaLabel: x
+  } = b[t], O = "small" === i, v = l.useCallback(() => {
+    a || ((0, u.qH)(t), c({
       action: "EDIT_ACTION"
-    }), (0, d.L$)(g.qb.WIDGET_ADDED), null == n || n())
-  }, [t, n, o, s]);
-  return (0, r.jsxs)(c.P3F, {
-    className: a()(m.addButtonContainer, x && m.sizeSmall, o && m.loading),
+    }), (0, d.L$)(g.qb.WIDGET_ADDED), null == r || r())
+  }, [t, r, a, c]);
+  return (0, n.jsxs)(o.P3F, {
+    className: s()(j.addButtonContainer, O && j.sizeSmall, a && j.loading),
     onClick: v,
-    "aria-label": y(),
-    "aria-busy": o,
-    children: ["details" === j.variant ? (0, r.jsx)(f.i, {
-      applicationId: j.applicationId,
-      size: l
-    }) : (0, r.jsx)(f.c, {
-      applicationIds: j.applicationIds,
-      size: l
-    }), (0, r.jsxs)("div", {
-      className: m.overlay,
-      children: [(0, r.jsx)(c.oFk, {
+    "aria-label": x(),
+    "aria-busy": a,
+    children: ["details" === h.variant ? (0, n.jsx)(f.i, {
+      applicationId: h.applicationId,
+      size: i
+    }) : (0, n.jsx)(f.c, {
+      applicationIds: h.applicationIds,
+      size: i
+    }), (0, n.jsxs)("div", {
+      className: j.overlay,
+      children: [(0, n.jsx)(o.oFk, {
         size: "md",
         color: "currentColor",
-        className: m.addButton
-      }), (0, r.jsx)(c.Text, {
+        className: j.addButton
+      }), (0, n.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        children: p.intl.string(b.NP[t])
+        children: p.intl.string(m.NP[t])
       })]
     })]
   })

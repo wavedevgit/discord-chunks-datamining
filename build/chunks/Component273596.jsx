@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 273596, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => P
 }), require("./388685.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -42,12 +42,12 @@ let S = Object.freeze({
     object: Chunk981631.qAy.CARD,
     section: Chunk981631.jXE.DISCOVER_SEARCH
   },
-  P = s().throttle(Chunk900849.c6, 1e3, {
+  j = s().throttle(Chunk900849.c6, 1e3, {
     leading: false,
     trailing: true
   });
 
-function j(e) {
+function P(e) {
   let {
     loadId: t,
     onGuildCardSeen: n,
@@ -56,13 +56,13 @@ function j(e) {
     guildIds: s,
     loading: f,
     searchResultsQuery: I,
-    loadMore: j,
+    loadMore: P,
     searchCategoryId: x
   } = (0, b.f)({
     loadId: t
   }), A = 0 === s.length && !f, Z = i.useContext(d.AnalyticsContext), [w, L] = i.useState((0, m.PM)()), [R, D] = i.useState(true), k = i.useRef(R), [M, U] = i.useState(3), G = i.useRef(M), B = i.useRef(null), V = i.useCallback(e => {
-    if (null != e && !A && !f) 336 * (s.length / M) <= e.height && j()
-  }, [A, f, s.length, M, j]), H = i.useCallback(e => {
+    if (null != e && !A && !f) 336 * (s.length / M) <= e.height && P()
+  }, [A, f, s.length, M, P]), H = i.useCallback(e => {
     let t = e.contentRect;
     if (null == t) return;
     let n = t.width;
@@ -74,7 +74,7 @@ function j(e) {
   i.useEffect(() => {
     L((0, m.PM)())
   }, [I]), i.useEffect(() => {
-    P({
+    j({
       loadId: t,
       searchId: w,
       query: I,
@@ -197,10 +197,10 @@ function j(e) {
       let t = null == (e = B.current) ? true : e.getScrollerState();
       if (null == t) return;
       let n = t.scrollTop + t.offsetHeight;
-      t.scrollHeight - n < 240 && j()
+      t.scrollHeight - n < 240 && P()
     }, 100, {
       leading: true
-    }), [j]),
+    }), [P]),
     ee = R ? S : N;
   return (0, r.jsx)("div", {
     className: C.container,

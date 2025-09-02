@@ -1,7 +1,7 @@
-/** Chunk was on 54844 **/
+/** Chunk was on 87023 **/
 /** chunk id: 186023, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => _
+  default: () => g
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,16 +15,16 @@ var Chunk951288 = require("./951288.js"),
   Chunk255514 = require("./255514.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk584581 = require("./584581.js");
-let _ = e => {
+let g = e => {
   let {
     reportType: t,
     menu: n,
-    modalProps: _,
-    onSubmit: h,
+    modalProps: g,
+    onSubmit: f,
     onNavigate: b,
     emailToken: x,
-    isAuthenticated: f = true
-  } = e, v = (0, o.Dt)(), {
+    isAuthenticated: h = true
+  } = e, v = (0, s.Dt)(), {
     nodes: j,
     root_node_id: y,
     success_node_id: O,
@@ -33,7 +33,7 @@ let _ = e => {
     var n, r, i;
     let {
       destination: a
-    } = e, [, o] = a, u = j[o];
+    } = e, [, s] = a, u = j[s];
     if (true === u) return void c.Z.increment({
       name: l.V.IN_APP_REPORT_NAVIGATE_TO_NONEXISTENT_NODE
     });
@@ -68,7 +68,7 @@ let _ = e => {
     }), r));
     if (k([...E, e]), null != u.key && (null == b || b(u.key)), N(true), P(true), t.name === d.b.MESSAGE || t.name === d.b.FIRST_DM) {
       let e = t.record.id;
-      s.ZP.trackWithMetadata(p.rMx.IAR_NAVIGATE, {
+      o.ZP.trackWithMetadata(_.rMx.IAR_NAVIGATE, {
         message_id: e,
         content_type: t.name,
         report_sub_type: u.report_type,
@@ -76,13 +76,13 @@ let _ = e => {
         next_node: u.id
       })
     }
-    S(o)
+    S(s)
   }, B = async e => {
     var r;
-    let i = f ? await (0, u.ZD)(n, t, [...E, e]) : await (0, u.fw)(n, t, [...E, e], x),
+    let i = h ? await (0, u.ZD)(n, t, [...E, e]) : await (0, u.fw)(n, t, [...E, e], x),
       l = null == i || null == (r = i.body) ? true : r.report_id;
-    null != l && R(l), M(j[e.nodeRef].report_type), null == h || h(l)
-  }, U = () => {
+    null != l && R(l), M(j[e.nodeRef].report_type), null == f || f(l)
+  }, L = () => {
     var e, n;
     if (E.length < 1) return;
     let r = [...E],
@@ -90,7 +90,7 @@ let _ = e => {
       l = null != (n = null == i ? true : i.nodeRef) ? n : y;
     if (t.name === d.b.MESSAGE || t.name === d.b.FIRST_DM) {
       let e = t.record.id;
-      s.ZP.trackWithMetadata(p.rMx.IAR_NAVIGATE, {
+      o.ZP.trackWithMetadata(_.rMx.IAR_NAVIGATE, {
         message_id: e,
         content_type: t.name,
         report_sub_type: j[l].report_type,
@@ -99,7 +99,7 @@ let _ = e => {
       })
     }
     N(null == i || null == (e = i.multiSelect) ? true : e.state), P(null == i ? true : i.textInput), S(l), k(r), null == b || b("..")
-  }, L = i.useMemo(() => {
+  }, U = i.useMemo(() => {
     let e = [],
       t = [];
     for (let l in j) {
@@ -121,25 +121,25 @@ let _ = e => {
   }, [j, y, Z, O]);
   return (0, r.jsx)(a.Y0X, {
     "data-migration-pending": true,
-    transitionState: _.transitionState,
+    transitionState: g.transitionState,
     "aria-labelledby": v,
     parentComponent: "InAppReportModal",
     children: (0, r.jsx)(a.MyZ, {
       width: 440,
       activeSlide: I,
       centered: false,
-      children: L.map(e => (0, r.jsx)(a.Mi4, {
+      children: U.map(e => (0, r.jsx)(a.Mi4, {
         id: e.id,
         children: (0, r.jsx)("div", {
-          className: g.slideContainer,
+          className: p.slideContainer,
           children: (0, r.jsx)(m.Z, {
             node: e,
             reportType: t,
             reportSubType: D,
             history: E,
-            onModalClose: _.onClose,
+            onModalClose: g.onClose,
             onSelectChild: A,
-            onNavigateBack: U,
+            onNavigateBack: L,
             multiSelect: C,
             textInput: T,
             successNodeId: O,

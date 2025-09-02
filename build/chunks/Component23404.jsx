@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk408228 = require("./408228.js");
 
-function j(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -55,13 +55,13 @@ function x(e) {
     quest: n
   } = e, i = (0, f.B6)(n.config.expiresAt), l = (0, f.B6)(_.r.build(n.config).rewardsExpireAt), a = (0, o.e7)([c.Z], () => c.Z.getState().theme), u = (0, s.wjy)(a) ? N.BRd.DARK : N.BRd.LIGHT, d = (null == (t = n.userStatus) ? true : t.completedAt) != null;
   return (0, r.jsxs)("div", {
-    className: P.heading,
+    className: j.heading,
     children: [(0, r.jsx)("img", {
-      className: P.headingGameTile,
+      className: j.headingGameTile,
       alt: "",
       src: (0, b.fh)(n, b.eC.GAME_TILE, u).url
     }), (0, r.jsxs)("div", {
-      className: P.headingCopy,
+      className: j.headingCopy,
       children: [(0, r.jsx)(s.X6q, {
         variant: "heading-md/semibold",
         color: "header-primary",
@@ -129,8 +129,8 @@ function A(e) {
     ref: e => {
       b.current = e
     },
-    className: a()(P.wrapper, {
-      [P.wrapperQuestAccepted]: V
+    className: a()(j.wrapper, {
+      [j.wrapperQuestAccepted]: V
     }),
     onClick: D,
     onKeyPress: D,
@@ -139,7 +139,7 @@ function A(e) {
     onBlur: R,
     onMouseLeave: R,
     children: [(0, r.jsxs)("div", {
-      className: P.utils,
+      className: j.utils,
       children: [V ? (0, r.jsx)(x, {
         quest: _
       }) : (0, r.jsx)(E.Z, {}), (0, r.jsx)(v.r, {
@@ -150,12 +150,12 @@ function A(e) {
         sourceQuestContent: g.jn.ACTIVITY_PANEL,
         children: e => {
           var t, n;
-          return (0, r.jsx)(s.P3F, (t = j({}, e), n = n = {
+          return (0, r.jsx)(s.P3F, (t = P({}, e), n = n = {
             "aria-label": T.intl.string(T.t.DEoVWV),
             children: (0, r.jsx)(s.xhG, {
               size: "md",
               color: "currentColor",
-              className: P.submenuIcon
+              className: j.submenuIcon
             })
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
             var n = Object.keys(e);
@@ -173,7 +173,7 @@ function A(e) {
       children: [(0, r.jsx)(x, {
         quest: _
       }), (0, r.jsx)("div", {
-        className: P.instructions,
+        className: j.instructions,
         children: (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "text-default",
@@ -182,14 +182,14 @@ function A(e) {
       })]
     }), V && !H && (0, r.jsx)(C.Z, {
       autoplay: Z,
-      className: P.rewardTileWithInstructions,
+      className: j.rewardTileWithInstructions,
       quest: _,
       questContent: g.jn.ACTIVITY_PANEL,
       location: S.dr.ACTIVITY_PANEL,
       taskDetails: W,
       sourceQuestContent: g.jn.ACTIVITY_PANEL
     }), (0, r.jsxs)("div", {
-      className: P.ctas,
+      className: j.ctas,
       children: [!V && (0, r.jsxs)(s.hE2, {
         size: "sm",
         fullWidth: true,
@@ -224,7 +224,7 @@ let Z = function(e) {
     questOrQuests: e.quest,
     questContent: g.jn.ACTIVITY_PANEL,
     sourceQuestContent: g.jn.ACTIVITY_PANEL,
-    children: t => (0, r.jsx)(A, j({
+    children: t => (0, r.jsx)(A, P({
       nodeRef: t
     }, e))
   })

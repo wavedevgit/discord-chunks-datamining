@@ -1,4 +1,4 @@
-/** Chunk was on 54844 **/
+/** Chunk was on 87023 **/
 /** chunk id: 15667, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -20,19 +20,19 @@ let c = e => {
     return l.length > 0 && (i[0] = l.join(", ")), "" !== n && (i[1] = n), i
   }).filter(e => null != e);
   return 0 === t.length ? null : (0, r.jsxs)("div", {
-    className: o.container,
+    className: s.container,
     children: [(0, r.jsx)(l.X6q, {
-      className: o.breadcrumbsHeader,
+      className: s.breadcrumbsHeader,
       color: "header-secondary",
       variant: "heading-sm/semibold",
-      children: e.isModeratorReport ? a.intl.string(s.default["6mx/DA"]) : a.intl.string(a.t["+3V9Tk"])
+      children: e.isModeratorReport ? a.intl.string(o.default["6mx/DA"]) : a.intl.string(a.t["+3V9Tk"])
     }), t.map((e, t) => (0, r.jsxs)("div", {
-      className: o.breadcrumbContainer,
+      className: s.breadcrumbContainer,
       children: [(0, r.jsx)("div", {
-        className: o.breadcrumbDot
+        className: s.breadcrumbDot
       }), (0, r.jsx)(l.Text, {
         variant: "text-md/normal",
-        className: o.breadcrumbText,
+        className: s.breadcrumbText,
         children: e
       })]
     }, "".concat(e, "+").concat(t)))]
