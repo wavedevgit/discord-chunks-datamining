@@ -670,7 +670,7 @@ function e8(e) {
   })
 }
 
-function e6(e) {
+function e5(e) {
   var t;
   let {
     message: n,
@@ -684,7 +684,7 @@ function e6(e) {
   }) : null
 }
 
-function e5(e) {
+function e6(e) {
   let {
     message: t,
     channel: n,
@@ -835,7 +835,7 @@ let to = Object.freeze({
   [Chunk981631.uaV.GUILD_INCIDENT_REPORT_RAID]: eQ,
   [Chunk981631.uaV.GUILD_INCIDENT_REPORT_FALSE_ALARM]: eJ,
   [Chunk981631.uaV.ROLE_SUBSCRIPTION_PURCHASE]: Chunk345114.Z,
-  [Chunk981631.uaV.PURCHASE_NOTIFICATION]: e6,
+  [Chunk981631.uaV.PURCHASE_NOTIFICATION]: e5,
   [Chunk981631.uaV.INTERACTION_PREMIUM_UPSELL]: true,
   [Chunk981631.uaV.STAGE_START]: e$,
   [Chunk981631.uaV.STAGE_END]: e0,
@@ -859,7 +859,7 @@ let to = Object.freeze({
   [Chunk981631.uaV.GUILD_JOIN_REQUEST_ACCEPT_NOTIFICATION]: Chunk29887.Cn,
   [Chunk981631.uaV.GUILD_JOIN_REQUEST_REJECT_NOTIFICATION]: Chunk29887.Ue,
   [Chunk981631.uaV.GUILD_JOIN_REQUEST_WITHDRAWN_NOTIFICATION]: Chunk29887.R6,
-  [Chunk981631.uaV.HD_STREAMING_UPGRADED]: e5,
+  [Chunk981631.uaV.HD_STREAMING_UPGRADED]: e6,
   [Chunk981631.uaV.EMOJI_ADDED]: ta,
   [Chunk981631.uaV.CHAT_WALLPAPER_SET]: tn,
   [Chunk981631.uaV.CHAT_WALLPAPER_REMOVED]: ti,
