@@ -1,4 +1,4 @@
-/** Chunk was on 91488 **/
+/** Chunk was on 11160 **/
 /** chunk id: 324081, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => I
@@ -98,16 +98,16 @@ function N(e) {
     channel: t,
     gotoChannel: n
   } = e;
-  return t.isPrivate() ? (0, r.jsx)(Z, {
+  return t.isPrivate() ? (0, r.jsx)(w, {
     channel: t,
     gotoChannel: n
-  }) : (0, r.jsx)(w, {
+  }) : (0, r.jsx)(Z, {
     channel: t,
     gotoChannel: n
   })
 }
 
-function Z(e) {
+function w(e) {
   let {
     channel: t,
     gotoChannel: n
@@ -124,7 +124,7 @@ function Z(e) {
   })
 }
 
-function w(e) {
+function Z(e) {
   let {
     channel: t,
     gotoChannel: n

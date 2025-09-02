@@ -1,4 +1,4 @@
-/** Chunk was on 91488 **/
+/** Chunk was on 11160 **/
 /** chunk id: 61634, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -43,8 +43,8 @@ function S(e) {
     I = (0, a.p)(null == (t = P[0]) ? true : t.location),
     N = (0, l.NX)(I),
     {
-      guildHasVoice: Z,
-      guildHasVideo: w,
+      guildHasVoice: w,
+      guildHasVideo: Z,
       selectedVoiceChannelHasVideo: T
     } = (0, i.cj)([y.Z, v.Z, m.Z, b.Z, g.Z], () => {
       var t;
@@ -107,7 +107,7 @@ function S(e) {
         returnfalse
       })(),
       L = o.ZP.getEmbeddedActivitiesForGuild(e).length > 0;
-    return l ? (c = true, f = (null == S ? true : S.channel_id) === i, m = E, O = D, _ = I, v = L) : (c = Z, f = null != S, m = x, O = w, _ = R, v = M), {
+    return l ? (c = true, f = (null == S ? true : S.channel_id) === i, m = E, O = D, _ = I, v = L) : (c = w, f = null != S, m = x, O = Z, _ = R, v = M), {
       audio: c,
       video: O,
       screenshare: _,
@@ -116,5 +116,5 @@ function S(e) {
       activity: v,
       isCurrentUserConnected: l || E
     }
-  }, [e, C, T, A, N, P, S, Z, w])
+  }, [e, C, T, A, N, P, S, w, Z])
 }

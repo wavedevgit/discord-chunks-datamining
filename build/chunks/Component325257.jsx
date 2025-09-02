@@ -1,4 +1,4 @@
-/** Chunk was on 91488 **/
+/** Chunk was on 11160 **/
 /** chunk id: 325257, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => k
@@ -111,8 +111,8 @@ let k = Chunk647438.memo(function(e) {
   } = e, {
     id: eo,
     parentId: ea
-  } = U, es = null != (t = e.upperBadge) ? t : q ? (0, Z.Ny)() : null != Y ? (0, Z.Or)(Y) : true, ec = null != (n = e.lowerBadge) ? n : true;
-  null == ec && X > 0 ? ec = null != (l = (0, Z.Ne)(X, Q ? m.Z.BACKGROUND_ACCENT : m.Z.STATUS_DANGER)) ? l : true : null == ec && null != en && (ec = null != (f = (0, Z.jt)({
+  } = U, es = null != (t = e.upperBadge) ? t : q ? (0, w.Ny)() : null != Y ? (0, w.Or)(Y) : true, ec = null != (n = e.lowerBadge) ? n : true;
+  null == ec && X > 0 ? ec = null != (l = (0, w.Ne)(X, Q ? m.Z.BACKGROUND_ACCENT : m.Z.STATUS_DANGER)) ? l : true : null == ec && null != en && (ec = null != (f = (0, w.jt)({
     guildJoinRequestStatus: en
   })) ? f : true);
   let eu = null != (k = e.lowerBadgeSize) ? k : {
@@ -135,7 +135,7 @@ let k = Chunk647438.memo(function(e) {
         dragging: e.isDragging()
       })
     }),
-    eh = (0, c.Ie)(null != eo ? eo : w.lds, null != ea ? 2 : 1),
+    eh = (0, c.Ie)(null != eo ? eo : Z.lds, null != ea ? 2 : 1),
     [ef, eg] = i.useState(false),
     em = !ee && ef,
     [eb, eO] = i.useState(false),
@@ -174,7 +174,7 @@ let k = Chunk647438.memo(function(e) {
     }, [eo, G]),
     eN = (0, p.dQu)(p.TVs.modules.guildbar.AVATAR_SIZE);
   if (null == H) return null;
-  let eZ = ey || eb ? (0, r.jsx)(E.Z, {
+  let ew = ey || eb ? (0, r.jsx)(E.Z, {
       guild: H,
       show: ey,
       active: W,
@@ -207,7 +207,7 @@ let k = Chunk647438.memo(function(e) {
       "aria-posinset": el,
       "aria-selected": W
     })),
-    ew = ed ? (0, r.jsx)(S.OG, {
+    eZ = ed ? (0, r.jsx)(S.OG, {
       children: (0, r.jsx)(I.Z, {})
     }) : (0, r.jsx)(s.animated.div, {
       ref: $ ? e => {
@@ -228,7 +228,7 @@ let k = Chunk647438.memo(function(e) {
         upperBadge: es,
         lowerBadge: ec,
         lowerBadgeSize: eu,
-        children: eZ
+        children: ew
       })
     });
   return (0, r.jsxs)(N.H, {
@@ -242,7 +242,7 @@ let k = Chunk647438.memo(function(e) {
       guild: H,
       disabled: ee,
       isDragging: ed,
-      children: ew
+      children: eZ
     }), $ ? (0, r.jsx)(S.ZP, {
       name: H.name,
       targetNode: U,

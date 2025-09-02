@@ -1,4 +1,4 @@
-/** Chunk was on 91488 **/
+/** Chunk was on 11160 **/
 /** chunk id: 831700, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ei
@@ -193,7 +193,7 @@ class en extends Chunk98597.ZP {
       shouldShowGuildVerificationPopout: I
     } = this.state, N = (0, Chunk340541.jW)({
       location: "voice_channel"
-    }).entrypoints, w = this.getVoiceStatesCount(), T = (0, Chunk951288.jsxs)("li", {
+    }).entrypoints, Z = this.getVoiceStatesCount(), T = (0, Chunk951288.jsxs)("li", {
       ref: this.ref,
       className: o()(this.getModeClass(), {
         [Chunk55940.disabled]: this.isDisabled()
@@ -257,7 +257,7 @@ class en extends Chunk98597.ZP {
                   channel: e,
                   unread: i,
                   mentionCount: a,
-                  userCount: w,
+                  userCount: Z,
                   embeddedActivitiesCount: j.length,
                   isSubscriptionGated: x
                 }),
@@ -460,7 +460,7 @@ function ei(e) {
   }), j = (0, a.e7)([b.Z], () => !!v && null != b.Z.getStartTime(n), [n, v]), {
     isSubscriptionGated: C,
     needSubscriptionToAccess: E
-  } = (0, S.Z)(n.id), I = (0, x.Z)(), Z = (0, a.e7)([G.ZP], () => G.ZP.isFavorite(t.id, n.id)), T = e.connected || (null == I ? true : I.channelId) === n.id, {
+  } = (0, S.Z)(n.id), I = (0, x.Z)(), w = (0, a.e7)([G.ZP], () => G.ZP.isFavorite(t.id, n.id)), T = e.connected || (null == I ? true : I.channelId) === n.id, {
     enableHangStatus: A,
     allowChannelTopic: R
   } = N.n.useExperiment({
@@ -470,7 +470,7 @@ function ei(e) {
     autoTrackExposure: false
   }), {
     enableOpenTIVForPing: M
-  } = w.A.useExperiment({
+  } = Z.A.useExperiment({
     guildId: n.guild_id,
     location: "VoiceChannel"
   }, {
@@ -495,7 +495,7 @@ function ei(e) {
     needSubscriptionToAccess: E
   }, u, p, e), {
     connected: T,
-    isFavoriteSuggestion: l && !Z,
+    isFavoriteSuggestion: l && !w,
     forceShowButtons: V,
     channelInfo: F,
     resolvedUnreadSetting: d,

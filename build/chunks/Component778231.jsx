@@ -22,7 +22,7 @@ let b = e => {
   let {
     entry: b
   } = e, {
-    name: _
+    name: x
   } = b, f = (0, l.e7)([m.Z], () => m.Z.getNewestTokenForApplication(b.id)), v = null != (n = b.getIconURL(40)) ? n : h, j = (0, d.Z)({
     application: b
   }), y = i.useRef(false);
@@ -31,38 +31,38 @@ let b = e => {
   }, []);
   let O = null != f ? p.default.extractTimestamp(f.id) : true;
   return (0, r.jsxs)("div", {
-    className: x.container,
+    className: _.container,
     children: [(0, r.jsx)(a.X6q, {
-      className: x.header,
+      className: _.header,
       variant: "heading-sm/semibold",
       children: g.intl.string(g.t["aYfK//"])
     }), (0, r.jsx)("div", {
-      className: x.appContainer,
+      className: _.appContainer,
       children: (0, r.jsxs)("div", {
-        className: x.appInfo,
+        className: _.appInfo,
         children: [(0, r.jsx)(o.ZP, {
           mask: o.ZP.Masks.AVATAR_DEFAULT,
           width: 40,
           height: 40,
-          className: x.appIconMask,
+          className: _.appIconMask,
           children: (0, r.jsx)("img", {
             src: v,
             alt: "",
-            className: x.appIcon
+            className: _.appIcon
           })
         }), (0, r.jsxs)("div", {
-          className: x.textContainer,
+          className: _.textContainer,
           children: [(0, r.jsx)(a.Text, {
             color: "header-primary",
             variant: "text-md/medium",
-            children: _
+            children: x
           }), j.length > 0 ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(a.Text, {
               color: "text-default",
               variant: "text-md/normal",
               children: (0, u.Z)(j.length)
             }), (0, r.jsx)(c.Z, {
-              className: x.guildStack,
+              className: _.guildStack,
               guilds: j,
               maxGuilds: 6
             })]

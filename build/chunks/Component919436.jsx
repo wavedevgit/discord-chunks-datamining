@@ -1,4 +1,4 @@
-/** Chunk was on 91488 **/
+/** Chunk was on 11160 **/
 /** chunk id: 919436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -38,7 +38,7 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function Z(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,7 +51,7 @@ function Z(e) {
   return e
 }
 
-function w(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -72,11 +72,11 @@ function A(e) {
   switch (e) {
     case "height":
     case "opacity":
-      return Z({
+      return w({
         duration: 150
       }, T);
     case "scale":
-      return Z({}, T);
+      return w({}, T);
     default:
       throw Error("DirectMessage: getSpringConfigs() - Invalid spring ".concat(String(e)))
   }
@@ -163,7 +163,7 @@ class R extends(r = Chunk647438.PureComponent) {
     } = this.props, {
       hovered: f,
       animating: m
-    } = this.state, b = module.isMultiUserDM() && null == module.icon && Chunk43267, O = () => (0, Chunk951288.jsx)(Chunk481060.LYs, Z({
+    } = this.state, b = module.isMultiUserDM() && null == module.icon && Chunk43267, O = () => (0, Chunk951288.jsx)(Chunk481060.LYs, w({
       to: Chunk981631.Z5c.CHANNEL(Chunk981631.ME, module.id),
       onMouseEnter: () => this.setState({
         hovered: true
@@ -235,7 +235,7 @@ class R extends(r = Chunk647438.PureComponent) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("98783"), n.e("57789"), n.e("56826"), n.e("69497")]).then(n.bind(n, 131404));
-        return n => (0, i.jsx)(e, w(Z({}, n), {
+        return n => (0, i.jsx)(e, Z(w({}, n), {
           channel: t,
           user: r
         }))
@@ -243,7 +243,7 @@ class R extends(r = Chunk647438.PureComponent) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("57789"), n.e("81239")]).then(n.bind(n, 354741));
-        return n => (0, i.jsx)(e, w(Z({}, n), {
+        return n => (0, i.jsx)(e, Z(w({}, n), {
           channel: t,
           selected: false
         }))
@@ -278,7 +278,7 @@ let D = Chunk647438.forwardRef(function(e, t) {
     C = false;
   j && (x = u === S.WtW.VOICE, C = u === S.WtW.VIDEO);
   let E = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE);
-  return (0, i.jsx)(R, w(Z({}, e), {
+  return (0, i.jsx)(R, Z(w({}, e), {
     ref: t,
     channelName: r,
     unread: _ > 0,

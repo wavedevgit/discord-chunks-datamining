@@ -1,17 +1,17 @@
-/** Chunk was on 91488 **/
+/** Chunk was on 27978 **/
 /** chunk id: 731971, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  NQ: () => b,
-  U1: () => _,
+  NQ: () => _,
+  U1: () => E,
   XW: () => d,
   _J: () => m,
-  aP: () => f,
+  aP: () => p,
   e7: () => g,
-  h6: () => O,
-  oE: () => h,
-  pB: () => p,
-  y: () => y,
-  yS: () => v,
+  h6: () => x,
+  oE: () => f,
+  pB: () => h,
+  y: () => v,
+  yS: () => b,
   yr: () => j
 }), require("./781311.js");
 var Chunk879690 = require("./879690.js"),
@@ -19,7 +19,7 @@ var Chunk879690 = require("./879690.js"),
   Chunk695346 = require("./695346.js"),
   Chunk594174 = require("./594174.js");
 
-function a(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function a(e) {
   return e
 }
 
-function s(e, t) {
+function a(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -68,31 +68,31 @@ let d = (0, Chunk879690.U)(e => ({
     inviteCode: true,
     guildId: true,
     touched: false,
-    setNickname: t => e(e => s(a({}, e), {
+    setNickname: t => e(e => a(s({}, e), {
       nickname: t,
       touched: true
     })),
-    setDmsAllowed: t => e(e => s(a({}, e), {
+    setDmsAllowed: t => e(e => a(s({}, e), {
       dmsAllowed: t,
       touched: true
     })),
-    setShowActivity: t => e(e => s(a({}, e), {
+    setShowActivity: t => e(e => a(s({}, e), {
       showActivity: t,
       touched: true
     })),
-    setMutedServer: t => e(e => s(a({}, e), {
+    setMutedServer: t => e(e => a(s({}, e), {
       mutedServer: t,
       touched: true
     })),
-    setInviteCode: t => e(e => s(a({}, e), {
+    setInviteCode: t => e(e => a(s({}, e), {
       inviteCode: t,
       touched: true
     })),
-    setGuildId: t => e(e => s(a({}, e), {
+    setGuildId: t => e(e => a(s({}, e), {
       guildId: t,
       touched: true
     })),
-    initialize: (t, n, r) => e(e => s(a({}, e), {
+    initialize: (t, n, r) => e(e => a(s({}, e), {
       guildSize: t,
       inviteCode: n,
       guildId: r,
@@ -111,23 +111,23 @@ let d = (0, Chunk879690.U)(e => ({
       touched: false
     }))
   })),
-  p = (e, t, n) => {
+  h = (e, t, n) => {
     d.getState().initialize(e, t, n)
   },
-  h = () => {
+  f = () => {
     d.getState().reset()
   },
-  f = () => {
+  p = () => {
     let e = d.getState();
     return module.nickname !== c.nickname || module.dmsAllowed !== c.dmsAllowed || module.showActivity !== u(module.guildSize) || module.mutedServer !== c.mutedServer
   },
   g = () => d.getState().inviteCode,
   m = () => d.getState().guildId,
-  b = () => d.getState().touched,
-  O = () => d.getState().dmsAllowed,
-  y = () => d.getState().nickname,
-  _ = () => d.getState().showActivity,
-  v = () => d.getState().mutedServer,
+  _ = () => d.getState().touched,
+  x = () => d.getState().dmsAllowed,
+  v = () => d.getState().nickname,
+  E = () => d.getState().showActivity,
+  b = () => d.getState().mutedServer,
   j = () => {
     var e, t;
     let {

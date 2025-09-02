@@ -1,5 +1,5 @@
-/** Chunk was on 83789 **/
-/** chunk id: 750312, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 8188 **/
+/** chunk id: 750312, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
 }), require("./388685.js");
@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk314897 = require("./314897.js"),
   Chunk556045 = require("./556045.js"),
   Chunk403239 = require("./403239.js"),
-  Chunk471892 = require("./471892.jsx"),
+  Chunk781040 = require("./781040.jsx"),
   Chunk840367 = require("./840367.jsx"),
   Chunk272289 = require("./272289.jsx"),
   Chunk415734 = require("./415734.js");
@@ -21,52 +21,50 @@ var Chunk951288 = require("./951288.js"),
 function O(e) {
   let {
     userId: t,
-    widget: r,
+    widget: n,
     children: l,
     disableInteraction: O,
     className: y,
     index: x
   } = e, v = (0, s.Dt)(), h = (0, c.e7)([u.default], () => u.default.getId() === t), {
     shouldShowSuggestions: _,
-    handleDismissSuggestions: w
-  } = (0, d.h)(r), P = h && !O && _, I = i.useRef(null), S = i.useRef(null), {
-    isDragging: E
+    handleDismissSuggestions: P
+  } = (0, d.h)(n), w = h && !O && _, I = i.useRef(null), S = i.useRef(null), E = h && null != x && !O, {
+    isDragging: T
   } = (0, f.q)({
     dropRef: I,
     dragRef: S,
     userId: t,
-    widget: r,
-    index: x
-  }), [T, N] = i.useState(false);
-  return (0, n.jsx)(j, {
+    widget: n,
+    index: x,
+    disableInteraction: !E
+  }), [N, C] = i.useState(false);
+  return (0, r.jsx)(j, {
     ref: I,
-    enable: !O,
-    onMouseEnter: () => N(true),
-    onMouseLeave: () => N(false),
-    dragClick: h && (0, n.jsx)("div", {
-      ref: S,
-      className: a()(m.dragClick, {
-        [m.opacity]: T || E
-      }),
-      children: (0, n.jsx)(g.Z, {
-        widget: r
-      })
-    }),
-    children: (0, n.jsxs)("section", {
+    disableInteraction: !E,
+    onMouseEnter: () => C(true),
+    onMouseLeave: () => C(false),
+    children: (0, r.jsxs)("section", {
       className: a()(m.container, y, {
-        [m.isDragging]: E
+        [m.isDragging]: T
       }),
       "aria-labelledby": v,
-      children: [(0, n.jsx)(p.Z, {
+      children: [E && (0, r.jsx)(g.Z, {
+        buttonRef: S,
+        widget: n,
+        className: a()(m.dragHandleButton, {
+          [m.opacity]: N || T
+        })
+      }), (0, r.jsx)(b.Z, {
         userId: t,
         headingId: v,
-        widget: r,
+        widget: n,
         disableInteraction: O
-      }), (0, n.jsxs)(o.y5, {
-        children: [l, P && (0, n.jsx)(b.Z, {
+      }), (0, r.jsxs)(o.y5, {
+        children: [l, w && (0, r.jsx)(p.Z, {
           userId: t,
-          widgetType: r.type,
-          onDismiss: w,
+          widgetType: n.type,
+          onDismiss: P,
           className: m.suggestedGames
         })]
       })]
@@ -76,17 +74,16 @@ function O(e) {
 let j = e => {
   let {
     ref: t,
-    children: r,
-    enable: i,
+    children: n,
+    disableInteraction: i,
     onMouseEnter: l,
-    onMouseLeave: a,
-    dragClick: o
+    onMouseLeave: a
   } = e;
-  return i ? (0, n.jsxs)("div", {
+  return i ? n : (0, r.jsx)("div", {
     ref: t,
-    className: m.hitbox,
+    className: m.dragAndDropHitbox,
     onMouseEnter: l,
     onMouseLeave: a,
-    children: [o, r]
-  }) : r
+    children: n
+  })
 }

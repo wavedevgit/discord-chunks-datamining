@@ -1,5 +1,5 @@
-/** Chunk was on 83789 **/
-/** chunk id: 881410, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 8188 **/
+/** chunk id: 881410, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
 }), require("./388685.js"), require("./781311.js");
@@ -15,18 +15,18 @@ var Chunk951288 = require("./951288.js"),
 
 function f(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = n
+      }) : e[t] = r
     })
   }
   return e
@@ -35,37 +35,37 @@ function f(e) {
 function g(e) {
   let {
     disabled: t,
-    widgetType: r,
+    widgetType: n,
     widget: g
-  } = e, [p] = (0, a.ynZ)(), [b, m] = i.useState(""), O = i.useRef(null), j = i.useMemo(() => new Set(g.games.map(e => e.applicationId)), [g.games]), {
+  } = e, [b] = (0, a.ynZ)(), [p, m] = i.useState(""), O = i.useRef(null), j = i.useMemo(() => new Set(g.games.map(e => e.applicationId)), [g.games]), {
     trackUserProfileAction: y
   } = (0, c.KZ)(), x = i.useCallback(e => {
-    (0, s.ES)(r, {
+    (0, s.ES)(n, {
       applicationId: e
     }), y({
       action: "EDIT_ACTION"
     })
-  }, [r, y]), {
+  }, [n, y]), {
     options: v,
     matchSorterOptions: h
-  } = (0, o.h)(), _ = i.useMemo(() => "" !== b.trim() ? u.intl.formatToPlainString(u.t.ZoearK, {
-    searchTerm: b.trim()
-  }) : u.intl.string(u.t.QwSXv7), [b]), w = i.useCallback(e => {
-    var t, r;
-    return "" === e.trim() ? v : (0, l.Lu)(v, e, (t = f({}, h), r = r = {
+  } = (0, o.h)(), _ = i.useMemo(() => "" !== p.trim() ? u.intl.formatToPlainString(u.t.ZoearK, {
+    searchTerm: p.trim()
+  }) : u.intl.string(u.t.QwSXv7), [p]), P = i.useCallback(e => {
+    var t, n;
+    return "" === e.trim() ? v : (0, l.Lu)(v, e, (t = f({}, h), n = n = {
       threshold: l.Lu.rankings.CONTAINS
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-      var r = Object.keys(e);
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+      var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var n = Object.getOwnPropertySymbols(e);
-        r.push.apply(r, n)
+        var r = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, r)
       }
-      return r
-    })(Object(r)).forEach(function(e) {
-      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+      return n
+    })(Object(n)).forEach(function(e) {
+      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   }, [v, h]);
-  return (0, n.jsx)(a.yRy, {
+  return (0, r.jsx)(a.yRy, {
     targetElementRef: O,
     position: "bottom",
     align: "center",
@@ -73,11 +73,11 @@ function g(e) {
       let {
         closePopout: t
       } = e;
-      return (0, n.jsx)(a.DBG, {
+      return (0, r.jsx)(a.DBG, {
         className: d.gameSearchCombobox,
         placeholder: u.intl.string(u.t["5h0QOD"]),
         autoFocus: true,
-        value: p,
+        value: b,
         onChange: e => {
           x(e), t()
         },
@@ -88,11 +88,11 @@ function g(e) {
         emptyStateText: _,
         emptyStateHeader: "",
         onQueryChange: m,
-        children: e => w(e).map(e => (0, n.jsx)(a.lo1, {
+        children: e => P(e).map(e => (0, r.jsx)(a.lo1, {
           disabled: j.has(e.value),
           value: String(e.value),
-          children: (0, n.jsx)(a.lo1.Label, {
-            children: (0, n.jsx)(a.Text, {
+          children: (0, r.jsx)(a.lo1.Label, {
+            children: (0, r.jsx)(a.Text, {
               variant: "text-md/medium",
               color: "header-secondary",
               children: e.label
@@ -101,9 +101,9 @@ function g(e) {
         }, String(e.value)))
       })
     },
-    children: e => (0, n.jsx)("div", {
+    children: e => (0, r.jsx)("div", {
       ref: O,
-      children: (0, n.jsx)(a.zxk, f({
+      children: (0, r.jsx)(a.zxk, f({
         variant: "secondary",
         size: "sm",
         icon: a.qJs,

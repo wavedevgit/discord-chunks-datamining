@@ -19,11 +19,11 @@ let u = e => {
         subtitle: m,
         placeholder: p,
         rows: g,
-        character_limit: x,
+        character_limit: _,
         pattern: h
       },
       onChange: b,
-      initialText: _,
+      initialText: x,
       isRequired: f
     } = e, v = i.useRef(a.Z.reactParserFor((t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -56,8 +56,8 @@ let u = e => {
     }), t))), [j, y] = i.useState(""), [O, Z] = i.useState(null);
     i.useEffect(() => {
       var e;
-      y(null != (e = null == _ ? true : _.value) ? e : "")
-    }, [_]);
+      y(null != (e = null == x ? true : x.value) ? e : "")
+    }, [x]);
     let I = i.useCallback(e => {
       let t = null != h ? new RegExp(h) : null;
       null == t || t.test(e) ? null != e && (Z(null), y(e), b({
@@ -80,7 +80,7 @@ let u = e => {
           })]
         })
       }), (0, r.jsx)(l.Kx8, {
-        maxLength: x,
+        maxLength: _,
         onChange: I,
         value: j,
         error: O,

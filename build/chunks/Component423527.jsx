@@ -421,7 +421,7 @@ class eu extends(r = Chunk647438.PureComponent) {
               color: "text-secondary",
               children: Chunk388032.intl.string(Chunk388032.t["330TCQ"])
             })
-          }), (0, Chunk951288.jsx)(Chunk13430.Z, {
+          }), Chunk188785.a ? null : (0, Chunk951288.jsx)(Chunk13430.Z, {
             label: Chunk388032.intl.string(Chunk388032.t.rhBeKS),
             labelTag: Chunk481060.RB0.H3,
             wrapperClassName: Chunk33724.inviteBirthdayInput,
@@ -710,17 +710,19 @@ class eu extends(r = Chunk647438.PureComponent) {
       if (null === o) return;
       let s = this.inGuildOrChannelInviteFlow(),
         a = false;
-      s ? 0 === l.length && (this.setState({
+      s ? (0 === l.length && (this.setState({
         globalNameClientError: en.intl.string(en.t.EkokLy)
-      }), a = true) : (0 === t.length && (this.setState({
+      }), a = true), null != i || $.a || (this.setState({
+        dateOfBirthClientError: en.intl.string(en.t.EkokLy)
+      }), a = true)) : (0 === t.length && (this.setState({
         emailClientError: en.intl.string(en.t.EkokLy)
       }), a = true), 0 === n.length && (this.setState({
         usernameClientError: en.intl.string(en.t.EkokLy)
       }), a = true), 0 === r.length && (this.setState({
         passwordClientError: en.intl.string(en.t.EkokLy)
-      }), a = true)), null == i && (this.setState({
+      }), a = true), null == i && (this.setState({
         dateOfBirthClientError: en.intl.string(en.t.EkokLy)
-      }), a = true), a || this.handleRegister()
+      }), a = true)), a || this.handleRegister()
     }), el(this, "trackInputFocus", e => {
       V.default.track(X.rMx.REGISTER_INPUT_FOCUS, {
         field: e

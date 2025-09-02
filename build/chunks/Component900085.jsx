@@ -1,4 +1,4 @@
-/** Chunk was on 91488 **/
+/** Chunk was on 11160 **/
 /** chunk id: 900085, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => X
@@ -183,7 +183,7 @@ class q extends Chunk647438.PureComponent {
   search(e) {
     this.setState({
       query: e
-    }), (0, Z.yC)(e)
+    }), (0, w.yC)(e)
   }
   renderInput() {
     let {
@@ -310,9 +310,9 @@ class q extends Chunk647438.PureComponent {
         mouseFocusDisabled: false
       })
     }), k(this, "focusResult", e => {
-      this.state.mouseFocusDisabled || (0, Z.tF)(this.props.results.indexOf(e))
+      this.state.mouseFocusDisabled || (0, w.tF)(this.props.results.indexOf(e))
     }), k(this, "selectResult", e => {
-      (0, Z.Se)(e, this.props.queryMode === f.h8.TEXT_CHANNEL)
+      (0, w.Se)(e, this.props.queryMode === f.h8.TEXT_CHANNEL)
     }), k(this, "handleContextMenu", e => {
       let t = this.props.results[this.props.selectedIndex];
       switch (t.type) {
@@ -323,7 +323,7 @@ class q extends Chunk647438.PureComponent {
             } = await Promise.all([n.e("1806"), n.e("36599"), n.e("60962"), n.e("58175"), n.e("55616"), n.e("7654"), n.e("44156"), n.e("47463"), n.e("6850"), n.e("58227"), n.e("54408"), n.e("90746"), n.e("88479"), n.e("56534"), n.e("87154"), n.e("33213"), n.e("35237")]).then(n.bind(n, 545135));
             return n => (0, i.jsx)(e, G(U({}, n), {
               guild: t.record,
-              onSelect: Z.Cp,
+              onSelect: w.Cp,
               hideSettings: true
             }))
           });
@@ -344,7 +344,7 @@ class q extends Chunk647438.PureComponent {
                 return t => (0, i.jsx)(e, G(U({}, t), {
                   channel: r,
                   guild: l,
-                  onSelect: Z.Cp
+                  onSelect: w.Cp
                 }))
               });
             case D.d4z.GUILD_VOICE:
@@ -356,7 +356,7 @@ class q extends Chunk647438.PureComponent {
                 return t => (0, i.jsx)(e, G(U({}, t), {
                   channel: r,
                   guild: l,
-                  onSelect: Z.Cp
+                  onSelect: w.Cp
                 }))
               });
             case D.d4z.ANNOUNCEMENT_THREAD:
@@ -368,7 +368,7 @@ class q extends Chunk647438.PureComponent {
                 } = await n.e("40157").then(n.bind(n, 422200));
                 return t => (0, i.jsx)(e, G(U({}, t), {
                   channel: r,
-                  onSelect: Z.Cp
+                  onSelect: w.Cp
                 }))
               });
             case D.d4z.GUILD_STORE:
@@ -379,7 +379,7 @@ class q extends Chunk647438.PureComponent {
                 return t => (0, i.jsx)(e, G(U({}, t), {
                   channel: r,
                   guild: l,
-                  onSelect: Z.Cp
+                  onSelect: w.Cp
                 }))
               });
             case D.d4z.GUILD_DIRECTORY:
@@ -401,7 +401,7 @@ class q extends Chunk647438.PureComponent {
             return n => (0, i.jsx)(e, G(U({}, n), {
               channel: t.record,
               selected: C.Z.getChannelId() === t.record.id,
-              onSelect: Z.Cp
+              onSelect: w.Cp
             }))
           });
         case f.h8.USER:
@@ -411,7 +411,7 @@ class q extends Chunk647438.PureComponent {
             } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
             return n => (0, i.jsx)(e, G(U({}, n), {
               user: t.record,
-              onSelect: Z.Cp
+              onSelect: w.Cp
             }))
           })
       }
@@ -431,10 +431,10 @@ class q extends Chunk647438.PureComponent {
         } = this.props;
       switch (i) {
         case "escape":
-          e.preventDefault(), e.stopPropagation(), n.length > 0 ? this.search("") : (0, Z.Cp)();
+          e.preventDefault(), e.stopPropagation(), n.length > 0 ? this.search("") : (0, w.Cp)();
           return;
         case "k":
-          (true === e.ctrlKey || true === e.metaKey) && (e.preventDefault(), e.stopPropagation(), (0, Z.Cp)());
+          (true === e.ctrlKey || true === e.metaKey) && (e.preventDefault(), e.stopPropagation(), (0, w.Cp)());
           return;
         case "enter": {
           if (false === l) return;
@@ -460,7 +460,7 @@ class q extends Chunk647438.PureComponent {
         default:
           return
       }
-      e.preventDefault(), (0, Z.tF)(l)
+      e.preventDefault(), (0, w.tF)(l)
     }), k(this, "handleGlobalPaste", e => {
       var t, n;
       let {
@@ -583,7 +583,7 @@ class q extends Chunk647438.PureComponent {
 }
 
 function X(e) {
-  let t = (0, s.cj)([w.Z], () => w.Z.getProps()),
+  let t = (0, s.cj)([Z.Z], () => Z.Z.getProps()),
     n = (0, y.Pt)(),
     r = R.Z.useExperiment({
       location: "QuickSwitcher"

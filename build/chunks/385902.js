@@ -1,4 +1,4 @@
-/** Chunk was on 91488 **/
+/** Chunk was on 11160 **/
 /** chunk id: 385902, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   K: () => O,
@@ -58,7 +58,7 @@ function O(e, t) {
     N = r.useCallback(e => {
       P(e)
     }, [P]),
-    Z = r.useMemo(() => {
+    w = r.useMemo(() => {
       if (!I) return null;
       let e = (0, p.Z)(E);
       return {
@@ -80,6 +80,6 @@ function O(e, t) {
     }, [I, C, E, O, N]);
   return {
     shouldShow: I,
-    modalConfig: Z
+    modalConfig: w
   }
 }

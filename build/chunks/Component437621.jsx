@@ -1,4 +1,4 @@
-/** Chunk was on 91488 **/
+/** Chunk was on 11160 **/
 /** chunk id: 437621, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => G
@@ -208,7 +208,7 @@ class k extends Chunk98597.ZP {
       } = this.props, {
         shouldShowActivities: l
       } = this.state;
-      return t.isModeratorReportChannel() || (0, f.aC)(t) && (0, f.dl)() ? null : null != i && i.length > 0 && l && !n ? (0, r.jsx)(w.Z, {
+      return t.isModeratorReportChannel() || (0, f.aC)(t) && (0, f.dl)() ? null : null != i && i.length > 0 && l && !n ? (0, r.jsx)(Z.Z, {
         onAction: this.handleActivitiesPopoutClose,
         channel: t
       }) : (0, r.jsx)(P.Z, L(M({}, e), {
@@ -288,10 +288,10 @@ function G(e) {
   }), O = (0, a.e7)([y.Z], () => y.Z.shouldIndicateNewChannel(n.id, t.id)), {
     needSubscriptionToAccess: j,
     isSubscriptionGated: P
-  } = (0, b.Z)(t.id), I = (0, a.e7)([E.ZP], () => E.ZP.isFavorite(n.id, t.id)), Z = (0, a.e7)([S.default], () => {
+  } = (0, b.Z)(t.id), I = (0, a.e7)([E.ZP], () => E.ZP.isFavorite(n.id, t.id)), w = (0, a.e7)([S.default], () => {
     let e = S.default.getCurrentUser();
     return null != e && (!(0, f.aC)(t) || e.nsfwAllowed)
-  }, [t]), w = (0, p.NX)(t.id), R = (0, N.Z)({
+  }, [t]), Z = (0, p.NX)(t.id), R = (0, N.Z)({
     channel: t,
     isChannelCollapsed: false,
     isChannelSelected: s,
@@ -299,7 +299,7 @@ function G(e) {
     needSubscriptionToAccess: j,
     isNewChannel: O,
     muted: o,
-    enableActivities: w,
+    enableActivities: Z,
     resolvedUnreadSetting: g
   }), D = (0, h.ZP)(t);
   return (0, r.jsx)(U, L(M({}, d, m, e), {
@@ -309,11 +309,11 @@ function G(e) {
     needSubscriptionToAccess: j,
     isNewChannel: O && e.canBeNewChannel,
     isFavoriteSuggestion: l && !I,
-    canShowThreadPreviewForUser: Z,
+    canShowThreadPreviewForUser: w,
     channelInfo: R,
     embeddedApps: D,
     resolvedUnreadSetting: g,
     hasChannelInfo: null != R,
-    enableActivities: w
+    enableActivities: Z
   }))
 }

@@ -1,10 +1,10 @@
-/** Chunk was on 91488 **/
+/** Chunk was on 55196 **/
 /** chunk id: 763520, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  m: () => f,
-  o: () => m
+  m: () => m,
+  o: () => g
 }), require("./388685.js");
-var r, Chunk379649 = require("./379649.js"),
+var l, Chunk379649 = require("./379649.js"),
   Chunk710845 = require("./710845.js"),
   Chunk314897 = require("./314897.js"),
   Chunk592125 = require("./592125.js"),
@@ -14,7 +14,7 @@ var r, Chunk379649 = require("./379649.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js");
 
-function h(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,25 +22,25 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-var f = ((r = {}).SELF_VIDEO = "self_video", r.SELF_STREAM = "self_stream", r.REMOTE_VIDEO = "remote_video", r.REMOTE_STREAM = "remote_stream", r.CHANGE_VIDEO_BACKGROUND = "change_video_background", r.REPLAY_VIDEO_STREAM = "replay_video_stream", r);
-let g = new Map;
-class m {
+var m = ((l = {}).SELF_VIDEO = "self_video", l.SELF_STREAM = "self_stream", l.REMOTE_VIDEO = "remote_video", l.REMOTE_STREAM = "remote_stream", l.CHANGE_VIDEO_BACKGROUND = "change_video_background", l.REPLAY_VIDEO_STREAM = "replay_video_stream", l);
+let v = new Map;
+class g {
   onSpinnerStarted() {
     null == this.spinnerVisibleStart && (this.spinnerVisibleStart = (0, Chunk379649.zO)())
   }
   trackSpinnerDuration(e, t, n) {
     if (null == this.spinnerVisibleStart) return;
-    let r = function(e) {
+    let l = function(e) {
         var t;
-        let n = (null != (t = g.get(e)) ? t : 0) + 1;
-        return g.set(e, n), n
+        let n = (null != (t = v.get(e)) ? t : 0) + 1;
+        return v.set(e, n), n
       }(n),
-      l = (0, i.zO)() - this.spinnerVisibleStart;
-    if (this.spinnerVisibleStart = null, l < 0) return void this.logger.warn("spinner duration is negative: ".concat(l, " ms\n        [").concat(e, ", count for stream: ").concat(r, "]"));
-    this.logger.info("spinner visible for ".concat(l, " ms\n      [").concat(e, ", count for stream: ").concat(r, "]"));
-    let h = c.Z.getGuildId(),
-      f = u.Z.getUserVoiceChannelId(h, o.default.getId()),
-      m = function(e) {
+      r = (0, i.zO)() - this.spinnerVisibleStart;
+    if (this.spinnerVisibleStart = null, r < 0) return void this.logger.warn("spinner duration is negative: ".concat(r, " ms\n        [").concat(e, ", count for stream: ").concat(l, "]"));
+    this.logger.info("spinner visible for ".concat(r, " ms\n      [").concat(e, ", count for stream: ").concat(l, "]"));
+    let f = c.Z.getGuildId(),
+      m = u.Z.getUserVoiceChannelId(f, s.default.getId()),
+      g = function(e) {
         if (null != e) {
           if (e.isGuildVoice()) return "guild_voice";
           if (e.isGuildStageVoice()) return "is_stage_channel";
@@ -48,23 +48,23 @@ class m {
           if (e.isGroupDM()) return "group_dm"
         }
         return null
-      }(a.Z.getChannel(f));
+      }(a.Z.getChannel(m));
     d.default.track(p.rMx.VIDEO_SPINNER_SHOWN_V2, {
       video_spinner_context: e,
-      duration_video_spinner_visible_ms: l,
+      duration_video_spinner_visible_ms: r,
       rtc_connection_id: c.Z.getRTCConnectionId(),
       media_session_id: c.Z.getMediaSessionId(),
-      event_count_for_stream: r,
-      guild_id: h,
-      channel_id: f,
-      channel_type: m,
+      event_count_for_stream: l,
+      guild_id: f,
+      channel_id: m,
+      channel_type: g,
       spinning_user_id: t,
-      connection_type: s.Z.getType(),
-      effective_connection_speed: s.Z.getEffectiveConnectionSpeed(),
-      service_provider: s.Z.getServiceProvider()
+      connection_type: o.Z.getType(),
+      effective_connection_speed: o.Z.getEffectiveConnectionSpeed(),
+      service_provider: o.Z.getServiceProvider()
     })
   }
   constructor(e) {
-    h(this, "logger", true), h(this, "spinnerVisibleStart", null), this.logger = new l.Z(e)
+    f(this, "logger", true), f(this, "spinnerVisibleStart", null), this.logger = new r.Z(e)
   }
 }

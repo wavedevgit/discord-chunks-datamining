@@ -21,7 +21,7 @@ let h = e => {
     user: t,
     channelId: n,
     reportId: h
-  } = e, b = d.Z.getDMFromUserId(t.id), _ = (0, l.e7)([d.Z], () => d.Z.getChannel(n), [n]), f = i.useMemo(() => m.ZP.getName(null == _ ? true : _.guild_id, null == _ ? true : _.id, t), [_, t]), v = (0, l.e7)([u.ZP], () => null == b ? null : u.ZP.isChannelMuted(null, b)), [j, y] = i.useState(null != v && v), O = i.useCallback(() => {
+  } = e, b = d.Z.getDMFromUserId(t.id), x = (0, l.e7)([d.Z], () => d.Z.getChannel(n), [n]), f = i.useMemo(() => m.ZP.getName(null == x ? true : x.guild_id, null == x ? true : x.id, t), [x, t]), v = (0, l.e7)([u.ZP], () => null == b ? null : u.ZP.isChannelMuted(null, b)), [j, y] = i.useState(null != v && v), O = i.useCallback(() => {
     null != b && (y(true), s.ZP.trackWithMetadata(g.rMx.IAR_MUTE_USER_BUTTON_CLICKED, {
       other_user_id: t.id,
       report_id: h
@@ -30,11 +30,11 @@ let h = e => {
     }, p.ZB.Muted), o.Z.showMuteSuccessToast(t.id, n))
   }, [b, n, t, h]);
   return (0, r.jsx)(c.JZ, {
-    title: x.intl.formatToPlainString(x.t.TRp5wc, {
+    title: _.intl.formatToPlainString(_.t.TRp5wc, {
       username: f
     }),
-    description: x.intl.string(x.t["yM/+AA"]),
-    buttonText: j ? x.intl.string(x.t.E8x4Nj) : x.intl.string(x.t.HITUcX),
+    description: _.intl.string(_.t["yM/+AA"]),
+    buttonText: j ? _.intl.string(_.t.E8x4Nj) : _.intl.string(_.t.HITUcX),
     buttonDisabled: j,
     onButtonPress: O
   })

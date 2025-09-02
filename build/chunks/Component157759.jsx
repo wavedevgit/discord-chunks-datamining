@@ -21,12 +21,12 @@ let b = e => {
   let {
     application: t,
     reportId: n
-  } = e, [b, _] = i.useState(false), [f, v] = i.useState(false), j = (0, l.e7)([g.Z, u.Z], () => {
+  } = e, [b, x] = i.useState(false), [f, v] = i.useState(false), j = (0, l.e7)([g.Z, u.Z], () => {
     var e;
     return null == (e = u.Z.getChannel(g.Z.getChannelId())) ? true : e.guild_id
   }), [y, O] = i.useState(null);
   i.useEffect(() => {
-    null != y && (_(true), v(true))
+    null != y && (x(true), v(true))
   }, [y]), i.useEffect(() => {
     if (null == j) return;
     let e = false;
@@ -46,7 +46,7 @@ let b = e => {
     }
   }, [j, t.id]);
   let Z = i.useCallback(() => {
-      v(false), s.ZP.trackWithMetadata(x.rMx.IAR_REMOVE_APP_BUTTON_CLICKED, {
+      v(false), s.ZP.trackWithMetadata(_.rMx.IAR_REMOVE_APP_BUTTON_CLICKED, {
         guild_id: j,
         application_id: t.id,
         report_id: n
@@ -60,8 +60,8 @@ let b = e => {
     I = (0, l.e7)([p.Z, m.Z], () => {
       let e = m.Z.getGuild(j);
       if (null == e) returnfalse;
-      let n = p.Z.can(x.Plq.MANAGE_GUILD, e),
-        r = null == t.bot || p.Z.canManageUser(x.Plq.MANAGE_GUILD, t.bot.id, e);
+      let n = p.Z.can(_.Plq.MANAGE_GUILD, e),
+        r = null == t.bot || p.Z.canManageUser(_.Plq.MANAGE_GUILD, t.bot.id, e);
       return n && r
     });
   return null != t && null != j && b && I ? (0, r.jsx)(d.JZ, {

@@ -1,4 +1,4 @@
-/** Chunk was on 91488 **/
+/** Chunk was on 11160 **/
 /** chunk id: 770858, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -42,8 +42,8 @@ function E(e) {
   } = (0, g.pN)({
     location: "NotificationsInboxButtonInner"
   }), {
-    badge: Z,
-    badgeDimensions: w,
+    badge: w,
+    badgeDimensions: Z,
     unreadChannelsCount: T
   } = function(e) {
     let {
@@ -91,8 +91,8 @@ function E(e) {
     }), (0, r.jsx)(y.Z, {
       children: (0, r.jsx)(a.aRk, {
         selected: I || E,
-        lowerBadge: Z,
-        lowerBadgeSize: w,
+        lowerBadge: w,
+        lowerBadgeSize: Z,
         children: (0, r.jsx)(a.LYs, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},

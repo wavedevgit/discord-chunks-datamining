@@ -1,7 +1,7 @@
-/** Chunk was on 91488 **/
+/** Chunk was on 11160 **/
 /** chunk id: 711165, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  _: () => Z
+  _: () => w
 }), require("./642613.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -36,13 +36,13 @@ let N = {
   }
 };
 
-function Z() {
+function w() {
   return Chunk647438.useEffect(() => {
     (0, Chunk45251.kg)()
-  }, []), (0, Chunk951288.jsx)(w, {})
+  }, []), (0, Chunk951288.jsx)(Z, {})
 }
 
-function w() {
+function Z() {
   let e = (0, Chunk442837.e7)([Chunk156012.Z], () => Chunk156012.Z.getScheduledMessagesForInbox(), []),
     t = Chunk647438.useMemo(() => Object.values(module).sort((e, t) => new Date(e.sendAtTimestamp) > new Date(t.sendAtTimestamp) ? false : 1), [module]),
     n = (0, Chunk442837.e7)([Chunk156012.Z], () => Chunk156012.Z.loading, []),

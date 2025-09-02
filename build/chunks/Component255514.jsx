@@ -102,7 +102,7 @@ let K = e => {
     multiSelect: et,
     reportId: en,
     textInput: er
-  } = e, ei = H(t, "checkbox"), el = H(t, "text_line_resource"), ea = Q(t, "external_link"), es = Q(t, "free_text"), eo = Q(t, "dropdown"), ec = H(t, "text"), ed = l.s.REPORT_TO_MOD.has(n.name), [eu, em] = i.useState(false), [ep, eg] = i.useState(false), [ex, eh] = i.useState(""), [eb, e_] = i.useState(() => ({})), [ef, ev] = i.useState(() => ({})), ej = i.useMemo(() => "message" === n.name ? n.record.channel_id : true, [n]), ey = i.useCallback(e => ({
+  } = e, ei = H(t, "checkbox"), el = H(t, "text_line_resource"), ea = Q(t, "external_link"), es = Q(t, "free_text"), eo = Q(t, "dropdown"), ec = H(t, "text"), ed = l.s.REPORT_TO_MOD.has(n.name), [eu, em] = i.useState(false), [ep, eg] = i.useState(false), [e_, eh] = i.useState(""), [eb, ex] = i.useState(() => ({})), [ef, ev] = i.useState(() => ({})), ej = i.useMemo(() => "message" === n.name ? n.record.channel_id : true, [n]), ey = i.useCallback(e => ({
     nodeRef: t.id,
     destination: e,
     textInput: null != es || null != eo ? ef : true,
@@ -121,12 +121,12 @@ let K = e => {
     Y(ey(e))
   };
   i.useEffect(() => {
-    null != et && e_(et), null != er && ev(er)
+    null != et && ex(et), null != er && ev(er)
   }, [et, er]), i.useEffect(() => {
     if (null != ei) {
       let e = ei.data;
       if (null != e)
-        for (let [t, n, r, i] of e) i && e_(e => (function(e, t) {
+        for (let [t, n, r, i] of e) i && ex(e => (function(e, t) {
           return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -144,8 +144,8 @@ let K = e => {
   }, [ei]), i.useEffect(() => {
     t.is_auto_submit && !ep && (eg(true), ee(ey(["", t.id])))
   }, [t.is_auto_submit, ep, ee, ey, t.id]);
-  let eN = (0, o.fW)(K),
-    eS = null != H(t, "ignore_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name);
+  let eS = (0, o.fW)(K),
+    eC = null != H(t, "ignore_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name);
   return (0, r.jsxs)("div", {
     className: q.container,
     children: [(0, r.jsxs)(a.xBx, {
@@ -158,7 +158,7 @@ let K = e => {
       }), (0, r.jsx)(I.Z, {
         node: t,
         isModeratorReport: ed
-      }), (0, r.jsx)(S.Z, {
+      }), (0, r.jsx)(C.Z, {
         node: t
       })]
     }), (0, r.jsxs)(a.hzk, {
@@ -191,7 +191,7 @@ let K = e => {
           return G.O.includes(t)
         })
       }(t) && (0, r.jsxs)(k.Z, {
-        children: [eS && (0, r.jsx)(N.Z, {
+        children: [eC && (0, r.jsx)(S.Z, {
           user: "user" === n.name ? n.record : n.record.author,
           channelId: ej,
           reportId: en
@@ -200,25 +200,25 @@ let K = e => {
           channelId: ej,
           reportId: en,
           reportType: n
-        }), !eS && null != H(t, "mute_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name || "report_to_mod_message" === n.name) && (0, r.jsx)(E.Z, {
+        }), !eC && null != H(t, "mute_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name || "report_to_mod_message" === n.name) && (0, r.jsx)(E.Z, {
           user: "user" === n.name ? n.record : n.record.author,
           channelId: ej,
           reportId: en
         }), null != H(t, "delete_message") && ("message" === n.name || "report_to_mod_message" === n.name) && (0, r.jsx)(h.Z, {
           message: n.record,
           reportId: en
-        }), null != H(t, "leave_guild") && "guild" === n.name && (0, r.jsx)(C.Z, {
+        }), null != H(t, "leave_guild") && "guild" === n.name && (0, r.jsx)(N.Z, {
           guildId: n.record.id,
           reportId: en
-        }), null != H(t, "deauthorize_app") && "application" === n.name && (0, r.jsx)(x.Z, {
+        }), null != H(t, "deauthorize_app") && "application" === n.name && (0, r.jsx)(_.Z, {
           application: n.record,
           reportId: en
         }), null != H(t, "deauthorize_app") && "application" === n.name && (0, r.jsx)(w.Z, {
           application: n.record,
           reportId: en
         })]
-      }), null != H(t, "settings_upsells") && ("message" === n.name || "report_to_mod_message" === n.name) && null != eN && (0, r.jsx)(R.Z, {
-        settingsUpsells: eN,
+      }), null != H(t, "settings_upsells") && ("message" === n.name || "report_to_mod_message" === n.name) && null != eS && (0, r.jsx)(R.Z, {
+        settingsUpsells: eS,
         channelId: n.record.channel_id,
         onModalClose: $,
         reportId: en,
@@ -238,7 +238,7 @@ let K = e => {
         element: ei,
         onChange: (e, t) => {
           let n = V({}, eb);
-          e in eb ? delete n[e] : n[e] = t, e_(n)
+          e in eb ? delete n[e] : n[e] = t, ex(n)
         },
         state: eb
       }), X.includes(n.name) && null != eo && eo.length > 0 && (0, r.jsx)(b.Z, {
@@ -257,8 +257,8 @@ let K = e => {
         }), null != ea && ea.length > 0 ? (0, r.jsx)(f.Z, {
           elements: ea
         }) : null]
-      }), (0, r.jsx)(_.Z, {
-        errorMessage: ex,
+      }), (0, r.jsx)(x.Z, {
+        errorMessage: e_,
         onClose: () => {
           eh("")
         }

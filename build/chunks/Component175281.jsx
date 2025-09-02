@@ -1,4 +1,4 @@
-/** Chunk was on 91488 **/
+/** Chunk was on 11160 **/
 /** chunk id: 175281, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => A
@@ -68,7 +68,7 @@ function N(e) {
   })
 }
 
-function Z() {
+function w() {
   let e = Chunk647438.useMemo(() => u()((0, Chunk612226.Rv)()).groupBy(e => e.group).value(), []);
   return (0, Chunk951288.jsx)("div", {
     className: Chunk870525.keyboardShortcutList,
@@ -110,7 +110,7 @@ function Z() {
     })
   })
 }
-class w extends Chunk647438.PureComponent {
+class Z extends Chunk647438.PureComponent {
   componentDidMount() {
     this.lastInputedKeys = [], Chunk585483.S.subscribe(Chunk981631.CkL.SCROLL_PAGE_UP, this.scrollPageUp), Chunk585483.S.subscribe(Chunk981631.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown), window.addEventListener("keydown", this.handleKeyDown, {
       capture: true
@@ -173,7 +173,7 @@ class w extends Chunk647438.PureComponent {
         ref: this.scrollerRef,
         fade: true,
         children: (0, Chunk951288.jsx)(Chunk481060.y5t, {
-          children: (0, Chunk951288.jsx)(Z, {})
+          children: (0, Chunk951288.jsx)(w, {})
         })
       })]
     })
@@ -309,7 +309,7 @@ function A(e) {
           handleDemonClose: function() {
             c(false), setTimeout(n, 500)
           }
-        }, "raging-demo") : (0, r.jsx)(w, {
+        }, "raging-demo") : (0, r.jsx)(Z, {
           content: u,
           keyboardModeEnabled: d,
           activateRagingDemon: function() {

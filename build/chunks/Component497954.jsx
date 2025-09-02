@@ -20,20 +20,20 @@ let g = e => {
     channelId: n,
     reportId: g
   } = e, {
-    isIgnored: x,
+    isIgnored: _,
     isBlocked: h
   } = (0, l.cj)([d.Z], () => ({
     isIgnored: d.Z.isIgnored(t.id),
     isBlocked: d.Z.isBlocked(t.id)
-  }), [t]), b = (0, l.e7)([c.Z], () => c.Z.getChannel(n), [n]), _ = i.useMemo(() => u.ZP.getName(null == b ? true : b.guild_id, null == b ? true : b.id, t), [b, t]), f = i.useCallback(() => {
+  }), [t]), b = (0, l.e7)([c.Z], () => c.Z.getChannel(n), [n]), x = i.useMemo(() => u.ZP.getName(null == b ? true : b.guild_id, null == b ? true : b.id, t), [b, t]), f = i.useCallback(() => {
     s.ZP.trackWithMetadata(m.rMx.IAR_IGNORE_USER_BUTTON_CLICKED, {
       other_user_id: t.id,
       report_id: g
     }), a.Z.ignoreUser(t.id, "web_iar_ignore_user_element", n)
-  }, [t, g, n]), v = i.useMemo(() => x || h, [x, h]);
+  }, [t, g, n]), v = i.useMemo(() => _ || h, [_, h]);
   return (0, r.jsx)(o.JZ, {
     title: p.intl.formatToPlainString(p.t.U3yyFh, {
-      username: _
+      username: x
     }),
     description: p.intl.string(p.t.naWE6e),
     buttonText: v ? p.intl.string(p.t.nDdxOD) : p.intl.string(p.t.ICYEfX),

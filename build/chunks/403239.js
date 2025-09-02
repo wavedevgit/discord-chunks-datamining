@@ -1,71 +1,72 @@
-/** Chunk was on 83789 **/
-/** chunk id: 403239, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 8188 **/
+/** chunk id: 403239, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  q: () => d
+  q: () => s
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk574981 = require("./574981.js"),
   Chunk194630 = require("./194630.js"),
   Chunk665379 = require("./665379.js"),
-  Chunk442837 = require("./442837.js"),
-  Chunk594174 = require("./594174.js"),
   Chunk592183 = require("./592183.js"),
   Chunk517157 = require("./517157.js");
 
-function d(e) {
+function s(e) {
   let {
     dropRef: t,
-    dragRef: r,
-    userId: d,
-    widget: f,
-    index: g
-  } = e, p = (0, u.Z)(d), b = (0, o.e7)([c.default], () => c.default.getCurrentUser()), m = (0, n.useCallback)((e, t) => {
-    let r = p.slice(),
-      [n] = r.splice(e, 1);
-    r.splice(t, 0, n), s.Z.setPendingWidgets(r)
-  }, [p]), [{
-    isDragging: O
-  }, j, y] = (0, i.c)({
+    dragRef: n,
+    userId: s,
+    widget: u,
+    index: d,
+    disableInteraction: f = false
+  } = e, g = (0, c.Z)(s), b = (0, r.useCallback)((e, t) => {
+    let n = g.slice(),
+      [r] = n.splice(e, 1);
+    n.splice(t, 0, r), o.Z.setPendingWidgets(n)
+  }, [g]), [{
+    isDragging: p
+  }, m, O] = (0, i.c)({
     type: "WIDGET",
     item: {
-      widgetId: f.id,
-      index: g,
-      widget: f
+      widgetId: u.id,
+      index: d,
+      widget: u
     },
+    canDrag: () => !f,
     collect: e => ({
       handlerId: e.getHandlerId(),
       isDragging: e.isDragging()
     })
   });
-  (0, n.useEffect)(() => {
-    y((0, a.r)(), {
+  (0, r.useEffect)(() => {
+    O((0, a.r)(), {
       captureDraggingState: true
     })
-  }, [y]);
-  let [x, v] = (0, l.L)({
+  }, [O]);
+  let [j, y] = (0, l.L)({
     accept: "WIDGET",
+    canDrop: () => !f,
     collect: e => ({
       handlerId: e.getHandlerId()
     }),
-    hover: (e, r) => {
-      var n;
-      if (null == t.current || !r.isOver({
+    hover: (e, n) => {
+      var r;
+      if (f || null == t.current || !n.isOver({
           shallow: true
         })) return;
       let i = e.index,
-        l = null != g ? g : 0;
+        l = null != d ? d : 0;
       if (i === l) return;
-      let a = null == (n = t.current) ? true : n.getBoundingClientRect(),
+      let a = null == (r = t.current) ? true : r.getBoundingClientRect(),
         o = (a.bottom - a.top) / 2,
-        c = r.getClientOffset();
+        c = n.getClientOffset();
       if (null == c) return;
       let s = c.y - a.top;
-      (!(i < l) || !(s < o)) && (i > l && s > o || (m(i, l), e.index = l))
+      (!(i < l) || !(s < o)) && (i > l && s > o || (b(i, l), e.index = l))
     }
   });
-  return null == g ? {
+  return null == d || f ? {
     isDragging: false
-  } : ((null == b ? true : b.id) === d && (j(r), v(t)), {
-    isDragging: O
+  } : (m(n), y(t), {
+    isDragging: p
   })
 }

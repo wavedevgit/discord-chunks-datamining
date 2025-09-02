@@ -1,4 +1,4 @@
-/** Chunk was on 91488 **/
+/** Chunk was on 11160 **/
 /** chunk id: 809780, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   As: () => z,
@@ -345,7 +345,7 @@ function Q(e, t, n, r) {
     }) && (0, g.sf)()) return;
   let l = R.ZP.ackMessageId(r);
   if (null == l) {
-    let e = w.Z.getGuild(i.guild_id);
+    let e = Z.Z.getGuild(i.guild_id);
     if (null == e || null == e.joinedAt) return;
     l = U.default.fromTimestamp(e.joinedAt.getTime())
   }
@@ -388,7 +388,7 @@ function Q(e, t, n, r) {
     }(n, r, a),
     order: 0
   };
-  (0, b.aC)(i) && !Z.Z.didAgree(i.guild_id) ? t.push(H(V({}, u), {
+  (0, b.aC)(i) && !w.Z.didAgree(i.guild_id) ? t.push(H(V({}, u), {
     type: "nsfw"
   })) : i.isForumLikeChannel() ? t.push(H(V({}, u), {
     type: "forum"

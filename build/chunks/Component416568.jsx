@@ -1,4 +1,4 @@
-/** Chunk was on 91488 **/
+/** Chunk was on 11160 **/
 /** chunk id: 416568, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ec
@@ -207,7 +207,7 @@ function ea(e) {
   } = e, [a] = (0, p.Wu)([R.ZP], () => {
     let e = R.ZP.getGuildsTree();
     return [e, e.version]
-  }), s = a.getRoots(), c = (0, p.Wu)([w.Z], () => w.Z.getGeoRestrictedGuilds()).map(e => (0, r.jsx)(F.Z, {
+  }), s = a.getRoots(), c = (0, p.Wu)([Z.Z], () => Z.Z.getGeoRestrictedGuilds()).map(e => (0, r.jsx)(F.Z, {
     id: e.id,
     name: e.name,
     icon: e.icon
@@ -234,7 +234,7 @@ function es(e) {
   } = e, [s] = (0, p.Wu)([R.ZP], () => {
     let e = R.ZP.getGuildsTree();
     return [e, e.version]
-  }), d = (0, p.e7)([S.Z], () => S.Z.lurkingGuildIds()), h = i.useMemo(() => n ? [] : d, [d, n]), b = (0, p.e7)([j.Z], () => j.Z.isFullscreenInContext()), [y, x] = i.useState(false), C = i.useCallback(() => x(true), []), E = i.useCallback(() => x(false), []), w = i.useRef(false), [T] = i.useState(() => new f.V7), A = i.useRef(null), U = i.useRef(null), G = (0, u.OP)(), {
+  }), d = (0, p.e7)([S.Z], () => S.Z.lurkingGuildIds()), h = i.useMemo(() => n ? [] : d, [d, n]), b = (0, p.e7)([j.Z], () => j.Z.isFullscreenInContext()), [y, x] = i.useState(false), C = i.useCallback(() => x(true), []), E = i.useCallback(() => x(false), []), Z = i.useRef(false), [T] = i.useState(() => new f.V7), A = i.useRef(null), U = i.useRef(null), G = (0, u.OP)(), {
     ref: B
   } = G, F = function(e, t) {
     if (null == e) return {};
@@ -276,20 +276,20 @@ function es(e) {
     pathname: ec
   } = (0, c.TH)(), eu = ei(ec);
   (0, O.Ng)(() => {
-    if (!w.current && 0 !== s.size) {
+    if (!Z.current && 0 !== s.size) {
       if (!eu) {
         let {
           scrollTop: e
-        } = Z.Z.getGuildListDimensions();
+        } = w.Z.getGuildListDimensions();
         et.scrollTo({
           to: e,
           animate: false
         })
       }
-      return w.current = true, () => T.stop()
+      return Z.current = true, () => T.stop()
     }
   }), i.useEffect(() => {
-    if (et.setGuildsTree(s), w.current || 0 === s.size) return;
+    if (et.setGuildsTree(s), Z.current || 0 === s.size) return;
     let e = N.Z.getState().guildId;
     et.scrollToGuild(e, false);
     let t = null;

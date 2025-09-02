@@ -1,4 +1,4 @@
-/** Chunk was on 91488 **/
+/** Chunk was on 11160 **/
 /** chunk id: 82409, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => B
@@ -78,7 +78,7 @@ function G(e) {
     includePanelSpacing: l
   } = e, a = (0, C.fJ)(), {
     selectedFilter: h
-  } = (0, E.Z)(), I = (0, s.e7)([S.Z], () => S.Z.oldestDisplayedMessageId), N = (0, s.Wu)([S.Z], () => S.Z.getInboxMessages()), Z = (0, s.Wu)([_.ZP, O.Z, S.Z], () => N.filter(e => !(0, P.YH)({
+  } = (0, E.Z)(), I = (0, s.e7)([S.Z], () => S.Z.oldestDisplayedMessageId), N = (0, s.Wu)([S.Z], () => S.Z.getInboxMessages()), w = (0, s.Wu)([_.ZP, O.Z, S.Z], () => N.filter(e => !(0, P.YH)({
     messageId: e.id,
     channelId: e.channelId,
     guildId: e.guildId,
@@ -138,7 +138,7 @@ function G(e) {
         message: n
       }]
     }), [K]),
-    q = F(Z, h, I),
+    q = F(w, h, I),
     X = F(D, h, null);
   (0, p.ZP)(() => {
     var e;
@@ -220,7 +220,7 @@ function G(e) {
           style: {
             marginRight: false
           },
-          children: Q === j.v8.DROPDOWN && !J && (0, r.jsx)(w.p, {})
+          children: Q === j.v8.DROPDOWN && !J && (0, r.jsx)(Z.p, {})
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
@@ -270,7 +270,7 @@ function V() {
 }
 
 function H(e, t) {
-  return (0, r.jsx)(Z.Z, {
+  return (0, r.jsx)(w.Z, {
     message: e[0],
     groupedMessages: e.slice(1),
     isUnread: t

@@ -1,4 +1,4 @@
-/** Chunk was on 82008 **/
+/** Chunk was on 93979 **/
 /** chunk id: 76076, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk361623 = require("./361623.js"),
   Chunk583140 = require("./583140.js");
-let b = {
+let h = {
     [Chunk228168.qb.WIDGET_ADDED]: {
       message: Chunk388032.intl.string(Chunk388032.t.fFP1U1),
       icon: (0, Chunk951288.jsx)(Chunk481060.dz2, {
@@ -43,19 +43,19 @@ let b = {
       type: Chunk481060.ToastType.FAILURE
     }
   },
-  x = e => {
+  b = e => {
     let {
       message: n,
       icon: t,
-      type: l
+      type: o
     } = e;
-    return (0, r.jsxs)("div", {
-      className: i()(h.toast, p.toast),
-      "data-type": l,
-      children: [(0, r.jsx)("div", {
+    return (0, l.jsxs)("div", {
+      className: i()(x.toast, p.toast),
+      "data-type": o,
+      children: [(0, l.jsx)("div", {
         className: p.toastIcon,
         children: t
-      }), (0, r.jsx)(a.Text, {
+      }), (0, l.jsx)(a.Text, {
         color: "header-primary",
         variant: "text-sm/semibold",
         children: n
@@ -66,13 +66,13 @@ let b = {
     let {
       className: n,
       onAutoHide: t
-    } = e, o = (0, u.be)(), f = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), [m, h] = l.useState(false), [j, g] = l.useState(null);
-    l.useEffect(() => {
-      null !== o ? (h(true), g(b[o]), a.uvj.announce(b[o].message)) : h(false)
-    }, [o]);
-    let v = (0, a.Yzy)(m, {
+    } = e, r = (0, u.be)(), m = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), [f, x] = o.useState(false), [j, v] = o.useState(null);
+    o.useEffect(() => {
+      null !== r ? (x(true), v(h[r]), a.uvj.announce(h[r].message)) : x(false)
+    }, [r]);
+    let g = (0, a.Yzy)(f, {
       from: {
-        transform: f ? "translateY(0)" : "translateY(-12px)",
+        transform: m ? "translateY(0)" : "translateY(-12px)",
         opacity: 0
       },
       enter: {
@@ -80,7 +80,7 @@ let b = {
         opacity: 1
       },
       leave: {
-        transform: f ? "translateY(0)" : "translateY(-12px)",
+        transform: m ? "translateY(0)" : "translateY(-12px)",
         opacity: 0
       },
       config: {
@@ -90,31 +90,31 @@ let b = {
         clamp: true
       }
     }, "animate-always");
-    return l.useEffect(() => {
-      if (m) {
+    return o.useEffect(() => {
+      if (f) {
         let e = setTimeout(() => {
           null == t || t()
         }, 2e3);
         return () => clearTimeout(e)
       }
-    }, [m, t]), (0, r.jsx)(r.Fragment, {
-      children: v((e, t) => t && null !== j && (0, r.jsx)(c.animated.div, {
+    }, [f, t]), (0, l.jsx)(l.Fragment, {
+      children: g((e, t) => t && null !== j && (0, l.jsx)(c.animated.div, {
         className: i()(n, p.toastContainer),
         style: e,
-        children: (0, r.jsx)(x, function(e) {
+        children: (0, l.jsx)(b, function(e) {
           for (var n = 1; n < arguments.length; n++) {
             var t = null != arguments[n] ? arguments[n] : {},
-              r = Object.keys(t);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+              l = Object.keys(t);
+            "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
               return Object.getOwnPropertyDescriptor(t, e).enumerable
-            }))), r.forEach(function(n) {
-              var r;
-              r = t[n], n in e ? Object.defineProperty(e, n, {
-                value: r,
+            }))), l.forEach(function(n) {
+              var l;
+              l = t[n], n in e ? Object.defineProperty(e, n, {
+                value: l,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[n] = r
+              }) : e[n] = l
             })
           }
           return e

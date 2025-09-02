@@ -1,11 +1,10 @@
-/** Chunk was on 82008 **/
-/** chunk id: 311044, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 8188 **/
+/** chunk id: 311044, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk481060 = require("./481060.js"),
   Chunk81897 = require("./81897.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk566898 = require("./566898.jsx"),
@@ -15,86 +14,86 @@ var Chunk951288 = require("./951288.js"),
   Chunk892001 = require("./892001.js"),
   Chunk252417 = require("./252417.jsx"),
   Chunk264481 = require("./264481.jsx"),
+  Chunk661462 = require("./661462.jsx"),
   Chunk443680 = require("./443680.js");
 
-function b(e) {
+function m(e) {
   let {
-    user: n,
-    guildId: t,
-    channelId: b,
-    onClose: x
+    user: t,
+    guildId: n,
+    channelId: m,
+    onClose: O
   } = e, {
     analyticsLocations: j
-  } = (0, c.ZP)(), {
-    context: g,
-    trackUserProfileAction: v
-  } = (0, a.KZ)(), {
-    mutualFriends: y,
-    mutualFriendsCount: O
-  } = (0, d.Z)(n), I = (0, i.Z)();
-  return l.useEffect(() => {
-    (0, u.Z)(n.id, I)
-  }, [n.id, I]), (0, r.jsx)(o.Ttm, {
-    className: h.scroller,
-    fade: true,
-    children: null == y ? Array.from({
-      length: null != O ? O : 10
-    }).map((e, n) => (0, r.jsxs)("div", {
-      className: h.friendsLoadingItem,
-      children: [(0, r.jsx)(s.ZT, {
+  } = (0, a.ZP)(), {
+    context: y,
+    trackUserProfileAction: x
+  } = (0, c.KZ)(), {
+    mutualFriends: v,
+    mutualFriendsCount: h
+  } = (0, s.Z)(t), _ = (0, l.Z)();
+  return i.useEffect(() => {
+    (0, u.Z)(t.id, _)
+  }, [t.id, _]), (0, r.jsx)(b.F, {
+    className: p.scroller,
+    children: null == v ? Array.from({
+      length: null != h ? h : 10
+    }).map((e, t) => (0, r.jsxs)("div", {
+      className: p.friendsLoadingItem,
+      children: [(0, r.jsx)(o.ZT, {
         width: 40,
         opacity: .08
-      }), (0, r.jsx)(s.ZT, {
+      }), (0, r.jsx)(o.ZT, {
         width: 135,
         opacity: .08
       })]
-    }, n)) : 0 === y.length ? (0, r.jsx)(p.s_, {}) : y.map(e => {
+    }, t)) : 0 === v.length ? (0, r.jsx)(g.s_, {}) : v.map(e => {
       let {
-        key: n,
-        user: l,
-        status: o
+        key: t,
+        user: i,
+        status: l
       } = e;
-      return (0, r.jsx)(m.Z, {
-        user: l,
-        status: o,
-        guildId: t,
-        channelId: b,
+      return (0, r.jsx)(f.Z, {
+        user: i,
+        status: l,
+        guildId: n,
+        channelId: m,
         onSelect: () => {
-          var e, n;
-          null == x || x(), v({
+          var e, t;
+          null == O || O(), x({
             action: "PRESS_MUTUAL_FRIEND"
-          }), (0, f.openUserProfileModal)((e = function(e) {
-            for (var n = 1; n < arguments.length; n++) {
-              var t = null != arguments[n] ? arguments[n] : {},
-                r = Object.keys(t);
-              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(t, e).enumerable
-              }))), r.forEach(function(n) {
+          }), (0, d.openUserProfileModal)((e = function(e) {
+            for (var t = 1; t < arguments.length; t++) {
+              var n = null != arguments[t] ? arguments[t] : {},
+                r = Object.keys(n);
+              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(n, e).enumerable
+              }))), r.forEach(function(t) {
                 var r;
-                r = t[n], n in e ? Object.defineProperty(e, n, {
+                r = n[t], t in e ? Object.defineProperty(e, t, {
                   value: r,
                   enumerable: true,
                   configurable: true,
                   writable: true
-                }) : e[n] = r
+                }) : e[t] = r
               })
             }
             return e
-          }({}, g), n = n = {
-            userId: l.id,
+          }({}, y), t = t = {
+            userId: i.id,
             sourceAnalyticsLocations: j
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
-            var t = Object.keys(e);
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+            var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
-              t.push.apply(t, r)
+              n.push.apply(n, r)
             }
-            return t
-          })(Object(n)).forEach(function(t) {
-            Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+            return n
+          })(Object(t)).forEach(function(n) {
+            Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
           }), e))
         }
-      }, n)
+      }, t)
     })
   })
 }

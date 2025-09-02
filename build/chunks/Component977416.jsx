@@ -1,5 +1,5 @@
-/** Chunk was on 83789 **/
-/** chunk id: 977416, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 8188 **/
+/** chunk id: 977416, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
 });
@@ -17,53 +17,53 @@ var Chunk120356 = require("./120356.js"),
 
 function g(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = n
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function p(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var r = Object.keys(e);
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      r.push.apply(r, n)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
-    return r
-  })(Object(t)).forEach(function(r) {
-    Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function b(e) {
+function p(e) {
   var {
     gameName: t,
-    onClick: r,
+    onClick: n,
     loading: i = true
   } = e, l = function(e, t) {
     if (null == e) return {};
-    var r, n, i = function(e, t) {
+    var n, r, i = function(e, t) {
       if (null == e) return {};
-      var r, n, i = {},
+      var n, r, i = {},
         l = Object.keys(e);
-      for (n = 0; n < l.length; n++) r = l[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
       var l = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
   }(e, ["gameName", "onClick", "loading"]);
@@ -71,20 +71,20 @@ function b(e) {
     s = u.intl.formatToPlainString(u.t["3mb1s7"], {
       game: o
     });
-  return i ? (0, n.jsx)("div", {
+  return i ? (0, r.jsx)("div", {
     className: d.loadingCover
-  }) : (0, n.jsx)(a.ua7, {
+  }) : (0, r.jsx)(a.ua7, {
     text: s,
-    children: e => (0, n.jsxs)(a.P3F, p(g({
+    children: e => (0, r.jsxs)(a.P3F, b(g({
       className: f.addButton
     }, e), {
-      onClick: r,
-      children: [(0, n.jsx)(c.Z, p(g({
+      onClick: n,
+      children: [(0, r.jsx)(c.Z, b(g({
         className: f.cover,
         gameName: t
       }, l), {
         disableInteraction: true
-      })), (0, n.jsx)(a.svS, {
+      })), (0, r.jsx)(a.svS, {
         size: "md",
         className: f.addIcon,
         color: a.TVs.colors.WHITE
@@ -96,45 +96,45 @@ function b(e) {
 function m(e) {
   let {
     userId: t,
-    games: r,
+    games: n,
     isGameFetching: i,
     isSuggestedGamesLoading: c,
     onDismiss: d,
     onClick: g,
-    className: p
+    className: b
   } = e, m = (0, o.Dt)();
-  return (0, n.jsxs)("aside", {
-    className: l()(f.container, p),
+  return (0, r.jsxs)("aside", {
+    className: l()(f.container, b),
     "aria-labelledby": m,
-    children: [(0, n.jsxs)("div", {
+    children: [(0, r.jsxs)("div", {
       className: f.header,
-      children: [(0, n.jsx)(a.P3F, {
+      children: [(0, r.jsx)(a.P3F, {
         className: f.dismissButton,
         "aria-label": u.intl.string(u.t["pUR+3t"]),
         onClick: d,
-        children: (0, n.jsx)(a.Dio, {
+        children: (0, r.jsx)(a.Dio, {
           size: "sm",
           color: "currentColor"
         })
-      }), (0, n.jsx)(a.X6q, {
+      }), (0, r.jsx)(a.X6q, {
         id: m,
         variant: "text-xs/medium",
         color: "text-secondary",
         children: u.intl.string(u.t.zMUr6e)
       })]
-    }), (0, n.jsx)(s.Z, {
-      games: r,
+    }), (0, r.jsx)(s.Z, {
+      games: n,
       renderGame: e => {
         let {
-          applicationId: r,
+          applicationId: n,
           gameName: l,
           imageSrc: a
         } = e;
-        return (0, n.jsx)(b, {
-          onClick: () => g(r, l, a),
+        return (0, r.jsx)(p, {
+          onClick: () => g(n, l, a),
           userId: t,
-          loading: c || i(r),
-          applicationId: r,
+          loading: c || i(n),
+          applicationId: n,
           gameName: l,
           imageSrc: a
         })

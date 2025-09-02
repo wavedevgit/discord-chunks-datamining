@@ -1,5 +1,5 @@
-/** Chunk was on 83789 **/
-/** chunk id: 776385, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 8188 **/
+/** chunk id: 776385, original params: e,t,n (module,exports,require) **/
 module.exports = {
   "text-sm/normal": "text-sm/normal_e1364f",
   card: "card_e1364f",

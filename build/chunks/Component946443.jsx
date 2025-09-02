@@ -1,4 +1,4 @@
-/** Chunk was on 91488 **/
+/** Chunk was on 11160 **/
 /** chunk id: 946443, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   QP: () => N,
@@ -33,8 +33,8 @@ function S(e) {
   var t, n, l, a, y, S, I;
   let {
     onJump: N,
-    showTutorial: Z,
-    setSeenTutorial: w,
+    showTutorial: w,
+    setSeenTutorial: Z,
     closePopout: T
   } = e, A = i.useRef(null), [R, D] = (0, j.ZP)(A), {
     loadState: M,
@@ -142,8 +142,8 @@ function S(e) {
         }, l), n = n = {
           onScroll: M === j.jd.Done ? true : k,
           className: o()(E.scroller, "group-spacing-".concat(U)),
-          children: [Z ? (0, r.jsx)(P, {
-            setSeenTutorial: w
+          children: [w ? (0, r.jsx)(P, {
+            setSeenTutorial: Z
           }) : null, (0, v.Z)(L, D, N), M === j.jd.Done ? null : (0, r.jsx)(d.$jN, {
             className: E.spinner
           })]

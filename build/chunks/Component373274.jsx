@@ -1,4 +1,4 @@
-/** Chunk was on 91488 **/
+/** Chunk was on 11160 **/
 /** chunk id: 373274, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => eg,
@@ -123,7 +123,7 @@ class ep extends(r = Chunk647438.PureComponent) {
       initialized: l
     } = this.state, {
       scrollTop: o
-    } = w.Z.getGuildDimensions(r);
+    } = Z.Z.getGuildDimensions(r);
     null != n ? (this.scrollToChannel(n), p.Z.clearChannelListScrollTo(r)) : r !== e.guildId ? null != o && this.scrollTo(o) : i !== e.selectedChannelId ? this.scrollToChannel(i) : !t.initialized && l && (null == o && null != i ? this.scrollToChannel(i, false, er.yE, this.handleListScroll) : this.scrollTo(null != o ? o : 0, this.handleListScroll)), this.testShouldSkipTutorial()
   }
   getSectionRowsFromChannel(e) {
@@ -768,7 +768,7 @@ let eh = e => {
     selectedVoiceChannelId: r
   } = e, o = (0, u.e7)([g.Z], () => g.Z.keyboardModeEnabled), {
     analyticsLocations: a
-  } = (0, b.ZP)(m.Z.GUILD_CHANNEL_LIST), d = (0, u.e7)([Z.Z], () => Z.Z.getChannel(n)), p = (0, u.e7)([Z.Z], () => Z.Z.getChannel(r)), h = (0, u.e7)([A.Z], () => A.Z.getGuildId()), O = (0, x.DM)(t), y = l.useRef(null), _ = l.useCallback((e, t) => {
+  } = (0, b.ZP)(m.Z.GUILD_CHANNEL_LIST), d = (0, u.e7)([w.Z], () => w.Z.getChannel(n)), p = (0, u.e7)([w.Z], () => w.Z.getChannel(r)), h = (0, u.e7)([A.Z], () => A.Z.getGuildId()), O = (0, x.DM)(t), y = l.useRef(null), _ = l.useCallback((e, t) => {
     let n = y.current;
     if (null != n)
       if (ei.Xyh.test(t) || (0, el.AB)(t)) n.scrollToChannel(t, false, 2 * er.yE, () => {

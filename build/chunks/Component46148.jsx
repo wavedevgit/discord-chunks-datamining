@@ -1,4 +1,4 @@
-/** Chunk was on 91488 **/
+/** Chunk was on 11160 **/
 /** chunk id: 46148, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   W: () => C
@@ -55,8 +55,8 @@ let C = Chunk647438.memo(function(e) {
       channelId: t
     }),
     I = P === h.FN.CONTEXT_MENU,
-    [N, Z] = (0, u.US)(C && I && n && S && !E ? [o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK] : []),
-    w = (0, d.m)(y.p9.TIER_2),
+    [N, w] = (0, u.US)(C && I && n && S && !E ? [o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK] : []),
+    Z = (0, d.m)(y.p9.TIER_2),
     T = (0, g.Z)(t),
     A = N === o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK,
     R = (0, i.useRef)(null),
@@ -75,12 +75,12 @@ let C = Chunk647438.memo(function(e) {
       return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
     }, [A]), !A) return (0, r.jsx)(s.ZP, x({}, e));
   let U = () => {
-      Z(O.L.USER_DISMISS)
+      w(O.L.USER_DISMISS)
     },
     G = ((e, t) => {
       let n = null != t && !t.isPreview;
       return e ? e && !n ? "no-wallpaper-nitro" : "has-wallpaper-nitro" : "non-nitro"
-    })(w, null != T ? T : null),
+    })(Z, null != T ? T : null),
     B = "has-wallpaper-nitro" === G ? _.intl.string(_.t.T9dXPj) : _.intl.string(_.t.zyvzQ0),
     F = (e => {
       switch (e) {

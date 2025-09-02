@@ -1,7 +1,7 @@
-/** Chunk was on 1268 **/
-/** chunk id: 900927, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 93979 **/
+/** chunk id: 900927, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,85 +16,85 @@ var Chunk399606 = require("./399606.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk131806 = require("./131806.js");
 
-function b(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
+function p(e) {
+  for (var n = 1; n < arguments.length; n++) {
+    var t = null != arguments[n] ? arguments[n] : {},
+      l = Object.keys(t);
+    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(t, e).enumerable
+    }))), l.forEach(function(n) {
+      var l;
+      l = t[n], n in e ? Object.defineProperty(e, n, {
+        value: l,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = n
+      }) : e[n] = l
     })
   }
   return e
 }
 
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var r = Object.keys(e);
+function x(e, n) {
+  return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
+    var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      r.push.apply(r, n)
+      var l = Object.getOwnPropertySymbols(e);
+      t.push.apply(t, l)
     }
-    return r
-  })(Object(t)).forEach(function(r) {
-    Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
+    return t
+  })(Object(n)).forEach(function(t) {
+    Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
   }), e
 }
 
-function j(e) {
+function h(e) {
   let {
-    userId: t,
-    guildId: r,
-    textClassName: j,
-    tooltipDelay: v
-  } = e, x = (0, i.e7)([s.default], () => s.default.locale), y = (0, i.e7)([u.Z], () => null != r ? u.Z.getGuild(r) : null), O = (0, i.e7)([c.ZP], () => null != r ? c.ZP.getMember(r, t) : null), h = (0, l.FI)(d.default.extractTimestamp(t), x), g = (0, l.FI)(null == O ? true : O.joinedAt, x);
-  return null == y || null == O ? (0, n.jsx)(a.Text, {
+    userId: n,
+    guildId: t,
+    textClassName: h,
+    tooltipDelay: b
+  } = e, j = (0, o.e7)([s.default], () => s.default.locale), v = (0, o.e7)([d.Z], () => null != t ? d.Z.getGuild(t) : null), g = (0, o.e7)([a.ZP], () => null != t ? a.ZP.getMember(t, n) : null), y = (0, i.FI)(u.default.extractTimestamp(n), j), O = (0, i.FI)(null == g ? true : g.joinedAt, j);
+  return null == v || null == g ? (0, l.jsx)(r.Text, {
     variant: "text-sm/normal",
-    className: j,
-    children: h
-  }) : (0, n.jsxs)("div", {
-    className: p.memberSinceWrapper,
-    children: [(0, n.jsxs)("div", {
-      className: p.memberSince,
-      children: [(0, n.jsx)(a.ua7, {
+    className: h,
+    children: y
+  }) : (0, l.jsxs)("div", {
+    className: f.memberSinceWrapper,
+    children: [(0, l.jsxs)("div", {
+      className: f.memberSince,
+      children: [(0, l.jsx)(r.ua7, {
         text: m.intl.string(m.t.uvGmCw),
-        delay: v,
-        children: e => (0, n.jsx)(a.gw7, f(b({
+        delay: b,
+        children: e => (0, l.jsx)(r.gw7, x(p({
           size: "custom",
           width: 28,
           height: 28,
           color: "currentColor"
         }, e), {
-          className: p.discordIcon
+          className: f.discordIcon
         }))
-      }), (0, n.jsx)(a.Text, {
+      }), (0, l.jsx)(r.Text, {
         variant: "text-sm/normal",
-        className: j,
-        children: h
+        className: h,
+        children: y
       })]
-    }), (0, n.jsx)("div", {
-      className: p.divider
-    }), (0, n.jsxs)("div", {
-      className: p.memberSince,
-      children: [(0, n.jsx)(a.ua7, {
-        text: y.name,
-        delay: v,
-        children: e => (0, n.jsx)(o.Z, f(b({}, e), {
-          guild: y,
-          size: o.Z.Sizes.SMOL,
-          className: p.guildIcon
+    }), (0, l.jsx)("div", {
+      className: f.divider
+    }), (0, l.jsxs)("div", {
+      className: f.memberSince,
+      children: [(0, l.jsx)(r.ua7, {
+        text: v.name,
+        delay: b,
+        children: e => (0, l.jsx)(c.Z, x(p({}, e), {
+          guild: v,
+          size: c.Z.Sizes.SMOL,
+          className: f.guildIcon
         }))
-      }), (0, n.jsx)(a.Text, {
+      }), (0, l.jsx)(r.Text, {
         variant: "text-sm/normal",
-        className: j,
-        children: g
+        className: h,
+        children: O
       })]
     })]
   })

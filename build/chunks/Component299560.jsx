@@ -1,5 +1,5 @@
-/** Chunk was on 83789 **/
-/** chunk id: 299560, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 8188 **/
+/** chunk id: 299560, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
 });
@@ -51,7 +51,7 @@ let O = {
 function j(e) {
   let {
     widgetType: t,
-    onAddWidget: r,
+    onAddWidget: n,
     size: l = "default",
     loading: o = false,
     trackUserProfileAction: s
@@ -61,29 +61,29 @@ function j(e) {
   } = O[t], x = "small" === l, v = i.useCallback(() => {
     o || ((0, u.qH)(t), s({
       action: "EDIT_ACTION"
-    }), (0, d.L$)(g.qb.WIDGET_ADDED), null == r || r())
-  }, [t, r, o, s]);
-  return (0, n.jsxs)(c.P3F, {
+    }), (0, d.L$)(g.qb.WIDGET_ADDED), null == n || n())
+  }, [t, n, o, s]);
+  return (0, r.jsxs)(c.P3F, {
     className: a()(m.addButtonContainer, x && m.sizeSmall, o && m.loading),
     onClick: v,
     "aria-label": y(),
     "aria-busy": o,
-    children: ["details" === j.variant ? (0, n.jsx)(f.i, {
+    children: ["details" === j.variant ? (0, r.jsx)(f.i, {
       applicationId: j.applicationId,
       size: l
-    }) : (0, n.jsx)(f.c, {
+    }) : (0, r.jsx)(f.c, {
       applicationIds: j.applicationIds,
       size: l
-    }), (0, n.jsxs)("div", {
+    }), (0, r.jsxs)("div", {
       className: m.overlay,
-      children: [(0, n.jsx)(c.oFk, {
+      children: [(0, r.jsx)(c.oFk, {
         size: "md",
         color: "currentColor",
         className: m.addButton
-      }), (0, n.jsx)(c.Text, {
+      }), (0, r.jsx)(c.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        children: b.intl.string(p.NP[t])
+        children: p.intl.string(b.NP[t])
       })]
     })]
   })

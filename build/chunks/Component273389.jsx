@@ -19,16 +19,16 @@ let c = e => {
       onBackClicked: p,
       isModeratorReport: g
     } = e,
-    x = i.useRef(null),
+    _ = i.useRef(null),
     h = null != n && "cancel" !== n.type,
     b = m && (null == n ? true : n.type) !== "done",
-    _ = h || b;
+    x = h || b;
   if (i.useEffect(() => {
       if ((null == n ? true : n.type) === "submit" || (null == n ? true : n.type) === "done") {
         var e;
-        null == (e = x.current) || e.focus()
+        null == (e = _.current) || e.focus()
       }
-    }, [null == n ? true : n.type]), !_) return null;
+    }, [null == n ? true : n.type]), !x) return null;
   let f = s.intl.string(s.t.i4jeWV);
   return (null == n ? true : n.type) === "submit" ? (t = "critical-primary", f = g ? s.intl.string(o.default.ZUyreX) : s.intl.string(s.t["G+vU8/"])) : (null == n ? true : n.type) === "next" ? f = s.intl.string(s.t.PDTjLC) : (null == n ? true : n.type) === "cancel" && (f = s.intl.string(s.t["ETE/oK"]), t = "secondary"), (0, r.jsx)(l.mzw, {
     "data-migration-pending": true,
@@ -46,7 +46,7 @@ let c = e => {
         },
         variant: t,
         disabled: c || d,
-        buttonRef: x,
+        buttonRef: _,
         text: f
       })]
     })

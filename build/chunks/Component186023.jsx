@@ -1,7 +1,7 @@
 /** Chunk was on 54844 **/
 /** chunk id: 186023, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => x
+  default: () => _
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,21 +15,21 @@ var Chunk951288 = require("./951288.js"),
   Chunk255514 = require("./255514.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk584581 = require("./584581.js");
-let x = e => {
+let _ = e => {
   let {
     reportType: t,
     menu: n,
-    modalProps: x,
+    modalProps: _,
     onSubmit: h,
     onNavigate: b,
-    emailToken: _,
+    emailToken: x,
     isAuthenticated: f = true
   } = e, v = (0, o.Dt)(), {
     nodes: j,
     root_node_id: y,
     success_node_id: O,
     fail_node_id: Z
-  } = n, [I, N] = i.useState(y), [S, C] = i.useState(true), [T, P] = i.useState(true), [E, k] = i.useState([]), [w, R] = i.useState(true), [D, M] = i.useState(true), A = e => {
+  } = n, [I, S] = i.useState(y), [C, N] = i.useState(true), [T, P] = i.useState(true), [E, k] = i.useState([]), [w, R] = i.useState(true), [D, M] = i.useState(true), A = e => {
     var n, r, i;
     let {
       destination: a
@@ -66,7 +66,7 @@ let x = e => {
     })(Object(i)).forEach(function(e) {
       Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
     }), r));
-    if (k([...E, e]), null != u.key && (null == b || b(u.key)), C(true), P(true), t.name === d.b.MESSAGE || t.name === d.b.FIRST_DM) {
+    if (k([...E, e]), null != u.key && (null == b || b(u.key)), N(true), P(true), t.name === d.b.MESSAGE || t.name === d.b.FIRST_DM) {
       let e = t.record.id;
       s.ZP.trackWithMetadata(p.rMx.IAR_NAVIGATE, {
         message_id: e,
@@ -76,10 +76,10 @@ let x = e => {
         next_node: u.id
       })
     }
-    N(o)
+    S(o)
   }, B = async e => {
     var r;
-    let i = f ? await (0, u.ZD)(n, t, [...E, e]) : await (0, u.fw)(n, t, [...E, e], _),
+    let i = f ? await (0, u.ZD)(n, t, [...E, e]) : await (0, u.fw)(n, t, [...E, e], x),
       l = null == i || null == (r = i.body) ? true : r.report_id;
     null != l && R(l), M(j[e.nodeRef].report_type), null == h || h(l)
   }, U = () => {
@@ -98,7 +98,7 @@ let x = e => {
         next_node: j[l].id
       })
     }
-    C(null == i || null == (e = i.multiSelect) ? true : e.state), P(null == i ? true : i.textInput), N(l), k(r), null == b || b("..")
+    N(null == i || null == (e = i.multiSelect) ? true : e.state), P(null == i ? true : i.textInput), S(l), k(r), null == b || b("..")
   }, L = i.useMemo(() => {
     let e = [],
       t = [];
@@ -121,7 +121,7 @@ let x = e => {
   }, [j, y, Z, O]);
   return (0, r.jsx)(a.Y0X, {
     "data-migration-pending": true,
-    transitionState: x.transitionState,
+    transitionState: _.transitionState,
     "aria-labelledby": v,
     parentComponent: "InAppReportModal",
     children: (0, r.jsx)(a.MyZ, {
@@ -137,10 +137,10 @@ let x = e => {
             reportType: t,
             reportSubType: D,
             history: E,
-            onModalClose: x.onClose,
+            onModalClose: _.onClose,
             onSelectChild: A,
             onNavigateBack: U,
-            multiSelect: S,
+            multiSelect: C,
             textInput: T,
             successNodeId: O,
             failNodeId: Z,

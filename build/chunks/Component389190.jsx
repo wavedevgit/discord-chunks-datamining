@@ -1,7 +1,7 @@
-/** Chunk was on 82008 **/
+/** Chunk was on 93979 **/
 /** chunk id: 389190, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,76 +16,76 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk878449 = require("./878449.js");
 
-function h(e) {
+function x(e) {
   let {
     user: n,
     guildId: t,
-    channelId: h,
-    onClose: b
+    channelId: x,
+    onClose: h
   } = e, {
-    mutualFriends: x
+    mutualFriends: b
   } = (0, a.Z)(n), {
     analyticsLocations: j
   } = (0, c.ZP)(), {
-    context: g,
-    trackUserProfileAction: v
+    context: v,
+    trackUserProfileAction: g
   } = (0, s.KZ)(), y = (0, i.Z)();
-  return l.useEffect(() => {
+  return o.useEffect(() => {
     (0, d.Z)(n.id, y)
-  }, [n.id, y]), (0, r.jsx)(o.zJl, {
+  }, [n.id, y]), (0, l.jsx)(r.zJl, {
     className: p.listScroller,
     fade: true,
-    children: null == x ? (0, r.jsx)("div", {
+    children: null == b ? (0, l.jsx)("div", {
       className: p.empty,
-      children: (0, r.jsx)(o.$jN, {})
-    }) : 0 === x.length ? (0, r.jsxs)("div", {
+      children: (0, l.jsx)(r.$jN, {})
+    }) : 0 === b.length ? (0, l.jsxs)("div", {
       className: p.empty,
-      children: [(0, r.jsx)("div", {
+      children: [(0, l.jsx)("div", {
         className: p.emptyIconFriends
-      }), (0, r.jsx)("div", {
+      }), (0, l.jsx)("div", {
         className: p.emptyText,
-        children: m.intl.string(m.t["/5p4g4"])
+        children: f.intl.string(f.t["/5p4g4"])
       })]
-    }) : x.map(e => {
+    }) : b.map(e => {
       let {
         key: n,
-        user: l,
-        status: o
+        user: o,
+        status: r
       } = e;
-      return (0, r.jsx)(f.Z, {
-        user: l,
-        status: o,
+      return (0, l.jsx)(m.Z, {
+        user: o,
+        status: r,
         guildId: t,
-        channelId: h,
+        channelId: x,
         onSelect: () => {
           var e, n, t;
-          null == b || b(), v({
+          null == h || h(), g({
             action: "PRESS_MUTUAL_FRIEND"
-          }), e = l.id, (0, u.openUserProfileModal)((n = function(e) {
+          }), e = o.id, (0, u.openUserProfileModal)((n = function(e) {
             for (var n = 1; n < arguments.length; n++) {
               var t = null != arguments[n] ? arguments[n] : {},
-                r = Object.keys(t);
-              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+                l = Object.keys(t);
+              "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
                 return Object.getOwnPropertyDescriptor(t, e).enumerable
-              }))), r.forEach(function(n) {
-                var r;
-                r = t[n], n in e ? Object.defineProperty(e, n, {
-                  value: r,
+              }))), l.forEach(function(n) {
+                var l;
+                l = t[n], n in e ? Object.defineProperty(e, n, {
+                  value: l,
                   enumerable: true,
                   configurable: true,
                   writable: true
-                }) : e[n] = r
+                }) : e[n] = l
               })
             }
             return e
-          }({}, g), t = t = {
+          }({}, v), t = t = {
             userId: e,
             sourceAnalyticsLocations: j
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(t)) : (function(e, n) {
             var t = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
-              var r = Object.getOwnPropertySymbols(e);
-              t.push.apply(t, r)
+              var l = Object.getOwnPropertySymbols(e);
+              t.push.apply(t, l)
             }
             return t
           })(Object(t)).forEach(function(e) {

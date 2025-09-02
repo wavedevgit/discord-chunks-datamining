@@ -1,5 +1,5 @@
-/** Chunk was on 82008 **/
-/** chunk id: 443680, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 8188 **/
+/** chunk id: 443680, original params: e,t,n (module,exports,require) **/
 module.exports = {
   scroller: "scroller__28fdc",
   friendsLoadingItem: "friendsLoadingItem__28fdc",

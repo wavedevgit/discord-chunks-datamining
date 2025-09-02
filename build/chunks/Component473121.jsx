@@ -19,7 +19,7 @@ let d = e => {
       button: m
     },
     isModeratorReport: p
-  } = e, g = (null == m ? true : m.type) === "submit", x = i.useRef(a.Z.reactParserFor((t = function(e) {
+  } = e, g = (null == m ? true : m.type) === "submit", _ = i.useRef(a.Z.reactParserFor((t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -57,7 +57,7 @@ let d = e => {
     }) : null, null != u && "" !== d ? (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
-      children: x.current(u)
+      children: _.current(u)
     }) : null, g && !p && (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
       children: o.intl.format(o.t.Q0tSKS, {})

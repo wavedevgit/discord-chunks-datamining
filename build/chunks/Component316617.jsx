@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
 let f = e => {
   let {
     message: t
-  } = e, n = (0, o.ZP)(t), f = (0, l.e7)([x.Z], () => x.Z.getChannel(t.channel_id)), v = i.useMemo(() => (0, s.Z)(t), [t]), {
+  } = e, n = (0, o.ZP)(t), f = (0, l.e7)([_.Z], () => _.Z.getChannel(t.channel_id)), v = i.useMemo(() => (0, s.Z)(t), [t]), {
     content: j
   } = (0, p.Z)(v, {
     hideSimpleEmbedContent: false
@@ -31,12 +31,12 @@ let f = e => {
       leadingIcon: e,
       trailingIcon: n
     } = (0, m.f)(t, j, false, false, "", {
-      leadingIconClass: _.attachmentIcon,
-      trailingIconClass: _.attachmentIcon,
+      leadingIconClass: x.attachmentIcon,
+      trailingIconClass: x.attachmentIcon,
       iconSize: h.WW
     });
     return (0, r.jsxs)("div", {
-      className: _.contentContainer,
+      className: x.contentContainer,
       children: [e, (0, r.jsx)(d.ZP, {
         message: t,
         content: j,
@@ -45,13 +45,13 @@ let f = e => {
     })
   }, [t, j, y]);
   return null == f ? null : (0, r.jsxs)("div", {
-    className: _.container,
+    className: x.container,
     children: [(0, r.jsx)(a.X6q, {
-      className: _.header,
+      className: x.header,
       variant: "heading-sm/semibold",
       children: b.intl.string(b.t.iouM3d)
     }), (0, r.jsx)(a.Ttm, {
-      className: _.messagePreviewContainer,
+      className: x.messagePreviewContainer,
       children: (0, r.jsx)(c.Z, {
         childrenMessageContent: O(),
         childrenHeader: (0, r.jsx)(u.ZP, {
