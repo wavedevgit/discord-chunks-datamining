@@ -132,7 +132,7 @@ let G = Chunk442837.ZP.connectStores([Chunk928518.Z, Chunk317381.ZP, Chunk451478
           withTitleBar: g,
           isFullScreen: Y
         })) {
-        let t = (0, y.Qg)({
+        let t = (0, y.Q)({
           location: "PictureInPicture"
         });
         return e - (0, _.Y7)({

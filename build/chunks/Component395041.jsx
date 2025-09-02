@@ -24,7 +24,7 @@ function c(e, t) {
   })
 }
 let u = e => {
-    let t = (0, s.$V)({
+    let t = (0, s.$)({
       location: "SearchTokens"
     });
     return c(e, a()(l.searchFilter, {
@@ -32,7 +32,7 @@ let u = e => {
     }))
   },
   d = e => {
-    let t = (0, s.$V)({
+    let t = (0, s.$)({
       location: "SearchTokens"
     });
     return c(e, a()(l.searchAnswer, {

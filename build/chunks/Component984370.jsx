@@ -119,7 +119,7 @@ function P(e) {
     hasParticipantsPanel: B
   } = (0, u.Z)({
     location: "HeaderBar"
-  }), Z = (0, _.$V)({
+  }), Z = (0, _.$)({
     location: "HeaderBar"
   });
 
