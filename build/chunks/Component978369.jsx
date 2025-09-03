@@ -1,4 +1,4 @@
-/** Chunk was on 61149 **/
+/** Chunk was on 30397 **/
 /** chunk id: 978369, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -62,10 +62,10 @@ function f(e) {
     tags: t,
     widgetType: r,
     applicationId: f,
-    ref: g
-  } = e, b = (0, a.useRef)(null), {
+    ref: b
+  } = e, g = (0, a.useRef)(null), {
     trackUserProfileAction: p
-  } = (0, i.KZ)(), m = (0, a.useMemo)(() => null != t ? t : [], [t]), y = (0, a.useCallback)(function(e) {
+  } = (0, i.KZ)(), m = (0, a.useMemo)(() => null != t ? t : [], [t]), O = (0, a.useCallback)(function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
       n = new Set(m);
     if (t) {
@@ -79,7 +79,7 @@ function f(e) {
       action: "EDIT_ACTION"
     });
     (0, l.n$)(r, f, Array.from(n))
-  }, [m, p, r, f]), O = (0, a.useCallback)(e => {
+  }, [m, p, r, f]), y = (0, a.useCallback)(e => {
     let t = new Set(m);
     e.forEach(e => {
       t.delete(e)
@@ -88,7 +88,7 @@ function f(e) {
     }), (0, l.n$)(r, f, Array.from(t))
   }, [m, p, r, f]);
   return (0, n.jsx)(o.yRy, {
-    targetElementRef: b,
+    targetElementRef: g,
     position: "right",
     align: "top",
     renderPopout: e => {
@@ -97,16 +97,16 @@ function f(e) {
       } = e;
       return (0, n.jsx)(d, {
         currentTags: m,
-        onTagSelect: y,
-        onNoneSelect: O,
+        onTagSelect: O,
+        onNoneSelect: y,
         onClose: t
       })
     },
     children: e => {
       var t, r;
       return (0, n.jsx)("div", {
-        ref: e => (null != e && (b.current = e, g.current = e), () => {
-          b.current = null, g.current = null
+        ref: e => (null != e && (g.current = e, b.current = e), () => {
+          g.current = null, b.current = null
         }),
         children: (0, n.jsx)(o.P3F, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {

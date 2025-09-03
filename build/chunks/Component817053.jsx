@@ -1,8 +1,8 @@
-/** Chunk was on 61149 **/
+/** Chunk was on 30397 **/
 /** chunk id: 817053, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => m,
-  o: () => b
+  o: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -33,7 +33,7 @@ function f(e) {
   return e
 }
 
-function g(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,7 +46,7 @@ function g(e, t) {
   }), e
 }
 
-function b(e) {
+function g(e) {
   let {
     imageSrc: t,
     gameName: r
@@ -78,30 +78,30 @@ function p(e) {
     userId: o,
     className: p,
     hideTooltip: m = false
-  } = e, y = (0, s.Z)({
+  } = e, O = (0, s.Z)({
     location: "GameCover",
     applicationId: a,
     source: c.m1.UserProfile,
     sourceUserId: o,
     trackEntryPointImpression: true
-  }), O = null != r ? r : u.intl.string(u.t.GIWFlJ), j = u.intl.formatToPlainString(u.t["8QLQBw"], {
-    gameName: O
+  }), y = null != r ? r : u.intl.string(u.t.GIWFlJ), j = u.intl.formatToPlainString(u.t["8QLQBw"], {
+    gameName: y
   }), v = e => m ? e() : (0, n.jsx)(l.ua7, {
-    text: O,
+    text: y,
     children: t => e(t)
   });
-  return v(null == y ? e => (0, n.jsx)("div", g(f({
+  return v(null == O ? e => (0, n.jsx)("div", b(f({
     className: p
   }, e), {
-    children: (0, n.jsx)(b, {
+    children: (0, n.jsx)(g, {
       imageSrc: t,
       gameName: r
     })
-  })) : e => (0, n.jsx)(l.P3F, g(f({}, e), {
-    onClick: y,
+  })) : e => (0, n.jsx)(l.P3F, b(f({}, e), {
+    onClick: O,
     "aria-label": j,
     className: i()(d.clickable, p),
-    children: (0, n.jsx)(b, {
+    children: (0, n.jsx)(g, {
       imageSrc: t,
       gameName: r
     })
@@ -133,7 +133,7 @@ function m(e) {
   let s = i()(d.coverContainer, a);
   return o ? (0, n.jsx)("div", {
     className: s,
-    children: (0, n.jsx)(b, f({}, c))
+    children: (0, n.jsx)(g, f({}, c))
   }) : (0, n.jsx)(p, f({
     className: s,
     applicationId: t,

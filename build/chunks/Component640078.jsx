@@ -35,7 +35,6 @@ let c = function(e) {
     children: (0, n.jsx)(a.Z, {
       widget: u.widget,
       user: f,
-      isGameFetching: () => false,
       disableInteraction: true
     })
   })

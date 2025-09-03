@@ -1,4 +1,4 @@
-/** Chunk was on 61149 **/
+/** Chunk was on 30397 **/
 /** chunk id: 932366, original params: e,t,r (module,exports,require) **/
 module.exports = {
   gameCover: "gameCover__1a3d6",

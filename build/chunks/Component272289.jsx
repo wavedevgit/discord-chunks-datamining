@@ -1,18 +1,16 @@
-/** Chunk was on 61149 **/
+/** Chunk was on 30397 **/
 /** chunk id: 272289, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
-}), require("./388685.js");
+  Z: () => s
+});
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk399606 = require("./399606.js"),
   Chunk785717 = require("./785717.jsx"),
-  Chunk224724 = require("./224724.js"),
   Chunk86419 = require("./86419.js"),
   Chunk206599 = require("./206599.js"),
   Chunk977416 = require("./977416.jsx");
 
-function d(e) {
+function s(e) {
   var {
     widgetType: t
   } = e, r = function(e, t) {
@@ -31,21 +29,20 @@ function d(e) {
     return a
   }(e, ["widgetType"]);
   let {
-    games: d,
-    isGameFetching: f,
-    onAddGame: g
-  } = (0, s.K)(t), [b] = (0, o.Wu)([l.Z], () => [l.Z.suggestedFetchIsLoading]), {
-    trackUserProfileAction: p
-  } = (0, i.KZ)(), m = a.useCallback((e, r, n) => {
-    g(e), (0, c.ES)(t, {
+    games: s,
+    onAddGame: u
+  } = (0, l.K)(t), {
+    trackUserProfileAction: d
+  } = (0, o.KZ)(), f = a.useCallback((e, r, n) => {
+    u(e), (0, i.ES)(t, {
       applicationId: e,
       gameName: r,
       imageSrc: n
-    }), p({
+    }), d({
       action: "EDIT_ACTION"
     })
-  }, [g, t, p]);
-  return (0, n.jsx)(u.Z, function(e) {
+  }, [u, t, d]);
+  return (0, n.jsx)(c.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);
@@ -63,9 +60,7 @@ function d(e) {
     }
     return e
   }({
-    games: d,
-    isGameFetching: f,
-    isSuggestedGamesLoading: b,
-    onClick: m
+    games: s,
+    onClick: f
   }, r))
 }

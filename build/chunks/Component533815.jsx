@@ -1,4 +1,4 @@
-/** Chunk was on 61149 **/
+/** Chunk was on 30397 **/
 /** chunk id: 533815, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -21,7 +21,7 @@ function d(e) {
     className: d
   } = e, {
     trackUserProfileAction: f
-  } = (0, l.KZ)(), g = () => {
+  } = (0, l.KZ)(), b = () => {
     (0, c.$b)(r, t.applicationId), f({
       action: "EDIT_ACTION"
     })
@@ -48,7 +48,7 @@ function d(e) {
         }
         return e
       }({}, e), r = r = {
-        onClick: g,
+        onClick: b,
         "aria-label": s.intl.string(s.t.HUvyDQ),
         className: o()(d, u.clickable),
         children: (0, n.jsx)(i.XHJ, {

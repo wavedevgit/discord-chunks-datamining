@@ -1,7 +1,7 @@
-/** Chunk was on 61149 **/
+/** Chunk was on 30397 **/
 /** chunk id: 623132, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => R
 }), require("./781311.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,6 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk5192 = require("./5192.js"),
   Chunk785717 = require("./785717.jsx"),
   Chunk86419 = require("./86419.js"),
+  Chunk747101 = require("./747101.js"),
   Chunk971082 = require("./971082.jsx"),
   Chunk817053 = require("./817053.jsx"),
   Chunk248554 = require("./248554.jsx"),
@@ -27,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk932366 = require("./932366.js"),
   Chunk776385 = require("./776385.js");
 
-function S(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -46,7 +47,7 @@ function S(e) {
   return e
 }
 
-function I(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -86,12 +87,12 @@ function C(e) {
     sourceUserId: r,
     trackEntryPointImpression: true
   });
-  return null == i ? (0, n.jsx)(s.X6q, I(S({}, o), {
+  return null == i ? (0, n.jsx)(s.X6q, k(I({}, o), {
     children: a
-  })) : (0, n.jsx)(s.X6q, I(S({}, o), {
+  })) : (0, n.jsx)(s.X6q, k(I({}, o), {
     children: (0, n.jsx)(s.P3F, {
       onClick: i,
-      className: _.clickableText,
+      className: S.clickableText,
       children: a
     })
   }))
@@ -106,13 +107,13 @@ function E(e) {
   } = e;
   return (0, n.jsx)(s.nn4, {
     id: o,
-    children: w.intl.format(w.t.TM0XDQ, {
-      name: b.ZP.getName(r, a, t)
+    children: P.intl.format(P.t.TM0XDQ, {
+      name: g.ZP.getName(r, a, t)
     })
   })
 }
 
-function k(e) {
+function N(e) {
   let {
     text: t,
     className: r
@@ -138,19 +139,19 @@ function D(e) {
     children: [(0, n.jsx)(s.PEf, {
       size: "xxs",
       color: s.TVs.colors.ICON_TERTIARY,
-      className: _.commentIcon
+      className: S.commentIcon
     }), (0, n.jsx)(E, {
       user: r,
       guildId: a,
       channelId: o,
       id: i
-    }), (0, n.jsx)(k, {
+    }), (0, n.jsx)(N, {
       text: t
     })]
   })
 }
 
-function N(e) {
+function T(e) {
   let {
     text: t,
     user: r,
@@ -158,84 +159,84 @@ function N(e) {
     channelId: c,
     widgetType: d,
     applicationId: f
-  } = e, g = (0, u.Dt)(), b = (0, u.Dt)(), {
-    trackUserProfileAction: y
-  } = (0, p.KZ)(), [O, j] = a.useState("idle"), [v, x] = a.useState(null != t ? t : ""), h = a.useRef(null), P = a.useRef(null), S = w.intl.string(w.t.xKSfBQ), I = null != t && "" !== t.trim(), C = a.useCallback(() => {
+  } = e, b = (0, u.Dt)(), g = (0, u.Dt)(), {
+    trackUserProfileAction: O
+  } = (0, p.KZ)(), [y, j] = a.useState("idle"), [v, x] = a.useState(null != t ? t : ""), h = a.useRef(null), w = a.useRef(null), _ = P.intl.string(P.t.xKSfBQ), I = null != t && "" !== t.trim(), k = a.useCallback(() => {
     j("editing")
-  }, []), D = a.useCallback(() => {
+  }, []), C = a.useCallback(() => {
     let e = v.trim();
-    (0, m.Bu)(d, f, "" !== e ? e : true), j("completed"), y({
+    (0, m.Bu)(d, f, "" !== e ? e : true), j("completed"), O({
       action: "EDIT_ACTION"
     })
-  }, [d, f, v, y]), N = a.useCallback(e => {
+  }, [d, f, v, O]), D = a.useCallback(e => {
     x(e)
   }, []);
   return a.useEffect(() => {
-    "editing" === O && x(null != t ? t : "")
-  }, [t, O]), a.useEffect(() => {
-    if ("completed" === O) {
+    "editing" === y && x(null != t ? t : "")
+  }, [t, y]), a.useEffect(() => {
+    if ("completed" === y) {
       var e;
       null == (e = h.current) || e.focus()
     }
-  }, [O]), "editing" === O ? (0, n.jsxs)("div", {
-    className: _.textAreaContainer,
+  }, [y]), "editing" === y ? (0, n.jsxs)("div", {
+    className: S.textAreaContainer,
     children: [(0, n.jsx)(s.nn4, {
       tag: "label",
-      htmlFor: g,
-      children: w.intl.string(w.t.JxKXeX)
+      htmlFor: b,
+      children: P.intl.string(P.t.JxKXeX)
     }), (0, n.jsx)(s.Kx8, {
-      id: g,
+      id: b,
       value: v,
-      placeholder: S,
-      onChange: N,
-      onBlur: D,
+      placeholder: _,
+      onChange: D,
+      onBlur: C,
       rows: 3,
-      autoFocus: "editing" === O,
+      autoFocus: "editing" === y,
       onKeyDown: e => {
-        "Enter" !== e.key || e.shiftKey || (e.preventDefault(), D())
+        "Enter" !== e.key || e.shiftKey || (e.preventDefault(), C())
       },
       maxLength: l.r
     })]
   }) : (0, n.jsxs)("div", {
-    ref: P,
+    ref: w,
     role: "group",
-    "aria-labelledby": b,
-    onClick: C,
-    className: _.editableCommentContainer,
+    "aria-labelledby": g,
+    onClick: k,
+    className: S.editableCommentContainer,
     children: [(0, n.jsx)(s.vdY, {
       size: "xxs",
       color: s.TVs.colors.ICON_TERTIARY,
-      className: _.commentIcon
+      className: S.commentIcon
     }), (0, n.jsx)(E, {
       user: r,
       guildId: o,
       channelId: c,
-      id: b
-    }), (0, n.jsx)(k, {
-      text: null != t ? t : S,
-      className: i()(_.editableCommentText, !I && _.placeholder)
+      id: g
+    }), (0, n.jsx)(N, {
+      text: null != t ? t : _,
+      className: i()(S.editableCommentText, !I && S.placeholder)
     }), (0, n.jsx)(s.P3F, {
       innerRef: h,
-      "aria-label": w.intl.string(w.t.ppb9MD),
+      "aria-label": P.intl.string(P.t.ppb9MD),
       onClick: e => {
-        e.stopPropagation(), C()
+        e.stopPropagation(), k()
       },
       focusProps: {
-        ringTarget: P
+        ringTarget: w
       }
     })]
   })
 }
 
-function T(e) {
+function Z(e) {
   let {
     applicationId: t,
     guildId: r,
     channelId: a,
     className: o
-  } = e, i = (0, h.Z)(t);
+  } = e, i = (0, w.Z)(t);
   return i.length > 0 ? (0, n.jsx)(y.Z, {
-    label: w.intl.formatToPlainString(w.t.ujhJdH, {
+    label: P.intl.formatToPlainString(P.t.ujhJdH, {
       numFriends: i.length
     }),
     className: o,
@@ -245,72 +246,71 @@ function T(e) {
   }) : null
 }
 
-function Z(e) {
+function R(e) {
   let {
     user: t,
     guildId: r,
     channelId: a,
     game: o,
     widgetType: i,
-    loading: l = false,
-    disableInteraction: u = false
+    disableInteraction: l = false
   } = e, {
-    gameName: d = w.intl.string(w.t.GIWFlJ),
-    imageSrc: f,
-    applicationId: b,
-    comment: p,
-    tags: m
-  } = o, y = {
+    gameName: u = P.intl.string(P.t.GIWFlJ),
+    imageSrc: d,
+    applicationId: f,
+    comment: g,
+    tags: p
+  } = o, m = {
     variant: "heading-sm/medium",
     color: "text-default"
-  }, h = g.default.getCurrentUser(), E = (null == h ? true : h.id) === t.id, k = !u && E && i === c.l.FAVORITE_GAMES;
-  return l ? (0, n.jsx)(j.i, {}) : (0, n.jsxs)("div", {
-    className: _.card,
-    children: [(0, n.jsx)(O.Z, {
-      className: null == f || u ? true : P.hoverActiveEffect,
-      imageSrc: f,
-      gameName: d,
-      applicationId: b,
+  }, y = b.default.getCurrentUser(), w = (null == y ? true : y.id) === t.id, E = !l && w && i === c.l.FAVORITE_GAMES;
+  return (0, O.kO)(f) ? (0, n.jsx)(v.i, {}) : (0, n.jsxs)("div", {
+    className: S.card,
+    children: [(0, n.jsx)(j.Z, {
+      className: null == d || l ? true : _.hoverActiveEffect,
+      imageSrc: d,
+      gameName: u,
+      applicationId: f,
       userId: t.id,
-      disableInteraction: u,
+      disableInteraction: l,
       hideTooltip: true
     }), (0, n.jsxs)("div", {
-      className: _.details,
-      children: [u ? (0, n.jsx)(s.X6q, I(S({}, y), {
-        children: d
-      })) : (0, n.jsx)(C, S({
-        applicationId: b,
+      className: S.details,
+      children: [l ? (0, n.jsx)(s.X6q, k(I({}, m), {
+        children: u
+      })) : (0, n.jsx)(C, I({
+        applicationId: f,
         userId: t.id,
-        gameName: d
-      }, y)), k ? (0, n.jsx)(N, {
-        text: p,
+        gameName: u
+      }, m)), E ? (0, n.jsx)(T, {
+        text: g,
         user: t,
         guildId: r,
         channelId: a,
         widgetType: i,
-        applicationId: b
+        applicationId: f
       }) : (0, n.jsx)(D, {
-        text: p,
+        text: g,
         user: t,
         guildId: r,
         channelId: a
-      }), (0, n.jsx)(v.Z, {
-        tags: m,
-        isCurrentUser: E,
+      }), (0, n.jsx)(x.Z, {
+        tags: p,
+        isCurrentUser: w,
         widgetType: i,
-        applicationId: b,
-        disableInteraction: u,
-        className: _.tags
-      }), !u && (0, n.jsx)(T, {
-        className: _.socialProof,
-        applicationId: b,
+        applicationId: f,
+        disableInteraction: l,
+        className: S.tags
+      }), !l && (0, n.jsx)(Z, {
+        className: S.socialProof,
+        applicationId: f,
         guildId: r,
         channelId: a
       })]
-    }), !u && E && (0, n.jsx)(x.Z, {
+    }), !l && w && (0, n.jsx)(h.Z, {
       game: o,
       widgetType: i,
-      className: _.removeGameButton
+      className: S.removeGameButton
     })]
   })
 }

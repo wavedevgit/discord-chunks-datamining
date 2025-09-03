@@ -1,4 +1,4 @@
-/** Chunk was on 61149 **/
+/** Chunk was on 30397 **/
 /** chunk id: 566007, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => l
@@ -13,11 +13,10 @@ function l(e) {
   var {
     user: t,
     widget: r,
-    isGameFetching: l,
-    containerClassName: c,
-    disableInteraction: s,
-    index: u
-  } = e, d = function(e, t) {
+    containerClassName: l,
+    disableInteraction: c,
+    index: s
+  } = e, u = function(e, t) {
     if (null == e) return {};
     var r, n, a = function(e, t) {
       if (null == e) return {};
@@ -31,15 +30,15 @@ function l(e) {
       for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
     }
     return a
-  }(e, ["user", "widget", "isGameFetching", "containerClassName", "disableInteraction", "index"]);
-  let f = r.games[0];
+  }(e, ["user", "widget", "containerClassName", "disableInteraction", "index"]);
+  let d = r.games[0];
   return (0, n.jsx)(a.Z, {
     userId: t.id,
     widget: r,
-    className: c,
-    disableInteraction: s,
-    index: u,
-    children: null != f ? (0, n.jsx)(i.Z, function(e) {
+    className: l,
+    disableInteraction: c,
+    index: s,
+    children: null != d ? (0, n.jsx)(i.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(r);
@@ -58,11 +57,10 @@ function l(e) {
       return e
     }({
       user: t,
-      game: f,
+      game: d,
       widgetType: r.type,
-      loading: l(f.applicationId),
-      disableInteraction: s
-    }, d)) : (0, n.jsx)(o.Z, {
+      disableInteraction: c
+    }, u)) : (0, n.jsx)(o.Z, {
       widgetType: r.type
     })
   })

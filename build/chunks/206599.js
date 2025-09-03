@@ -22,17 +22,14 @@ function d(e) {
   } = (0, c.b)(), {
     remove: o,
     peekedGameIds: d
-  } = (0, c.b)(), {
-    gameDataMap: f,
-    isGameFetching: g
-  } = (0, u.F)(null != (t = d[e]) ? t : []);
+  } = (0, c.b)(), f = (0, u.Fn)(null != (t = d[e]) ? t : []), g = n.useCallback(e => i.Z.isFetching(e), []);
   n.useEffect(() => {
     var t;
     for (let r of null != (t = d[e]) ? t : []) {
       let t = f[r];
       (null == t ? true : t.coverImageUrl) != null || g(r) || o(r, e)
     }
-  }, [d, f, g, o, e]);
+  }, [d, f, o, e, g]);
   let m = n.useMemo(() => {
       var t;
       return null != (t = a[e]) ? t : []
@@ -40,17 +37,14 @@ function d(e) {
     p = n.useCallback(t => {
       l(t, e)
     }, [l, e]),
-    {
-      gameDataMap: j,
-      isGameFetching: b
-    } = (0, u.F)(m),
-    [h, x] = n.useState([]),
-    O = (r = m.map(e => b(e)), n.useMemo(() => r.join("\x1f"), [r]));
+    j = (0, u.Fn)(m),
+    [b, h] = n.useState([]),
+    x = (r = m.map(e => i.Z.isFetching(e)), n.useMemo(() => r.join("\x1f"), [r]));
   return n.useEffect(() => {
     let t = m.filter(e => i.Z.noDataAvailable(e));
     t.length > 0 && s(t, e)
-  }, [j, O, m, e, s]), n.useEffect(() => {
-    x(m.map(e => {
+  }, [j, x, m, e, s]), n.useEffect(() => {
+    h(m.map(e => {
       let t = j[e];
       return {
         applicationId: e,
@@ -59,8 +53,7 @@ function d(e) {
       }
     }))
   }, [m, j, e]), {
-    games: h,
-    isGameFetching: b,
+    games: b,
     onAddGame: p
   }
 }

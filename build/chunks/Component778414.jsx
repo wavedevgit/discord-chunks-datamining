@@ -106,24 +106,20 @@ function E(e) {
     user: t,
     guildId: r,
     channelId: i
-  } = e, a = (0, p.Z)(t.id), {
-    widgets: g,
-    isGameFetching: j
-  } = (0, m.Z)(a), b = (0, s.e7)([u.default], () => u.default.getId() === t.id), h = (() => {
+  } = e, a = (0, p.Z)(t.id), g = (0, m.ZP)(a), j = (0, s.e7)([u.default], () => u.default.getId() === t.id), b = (() => {
     let [e, t] = (0, s.Wu)([d.Z], () => [d.Z.ipCountryCode, d.Z.ipCountryCodeRequest]), r = (0, c.U)();
     return l.useEffect(() => {
       null == e && null == t && r && (0, o.GE)()
     }, [e, t, r]), "GB" === e && r
-  })(), x = 0 === g.length && b;
-  return ((0, f.J)(b, g), x) ? (0, n.jsx)(P.Z, {}) : (0, n.jsxs)(n.Fragment, {
-    children: [b && h && (0, n.jsx)(N, {}), g.map((e, l) => (0, n.jsx)(I, {
+  })(), h = 0 === g.length && j;
+  return ((0, f.J)(j, g), h) ? (0, n.jsx)(P.Z, {}) : (0, n.jsxs)(n.Fragment, {
+    children: [j && b && (0, n.jsx)(N, {}), g.map((e, l) => (0, n.jsx)(I, {
       widget: e,
       user: t,
       guildId: r,
       channelId: i,
-      isGameFetching: j,
       index: l
-    }, e.id)), b && (0, n.jsx)(O.Z, {})]
+    }, e.id)), j && (0, n.jsx)(O.Z, {})]
   })
 }
 

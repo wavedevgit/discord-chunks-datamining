@@ -2,7 +2,7 @@
 /** chunk id: 897942, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,47 +10,43 @@ var Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
   Chunk821982 = require("./821982.js"),
-  Chunk70097 = require("./70097.jsx"),
   Chunk594174 = require("./594174.js"),
   Chunk967282 = require("./967282.js"),
   Chunk328756 = require("./328756.js"),
   Chunk131812 = require("./131812.js");
-let _ = 1.3,
-  p = .321;
+let f = 1.3,
+  _ = .321;
 
-function h(e) {
+function p(e) {
   let {
     maxRewardImageSrc: t,
     claimableRewards: n,
-    size: h,
-    imageScaling: m = _
-  } = e, g = (0, i.e7)([c.default], () => c.default.getCurrentUser()), E = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), b = (0, a.pxk)(h), y = {
-    height: b * m
+    size: p,
+    imageScaling: h = f
+  } = e, m = (0, i.e7)([l.default], () => l.default.getCurrentUser()), g = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), E = (0, a.pxk)(p), b = {
+    height: E * h
   };
-  return n.length > 2 ? (0, r.jsx)(l.Z, {
-    style: y,
+  return n.length > 2 ? (0, r.jsx)("img", {
+    alt: "",
     src: t,
-    autoPlay: true,
-    loop: true,
-    muted: true,
-    playsInline: true
+    style: b
   }) : (0, r.jsxs)("div", {
-    className: u.container,
+    className: c.container,
     children: [(1 === n.length || 2 === n.length) && (0, r.jsx)(a.Xo$, {
-      "aria-label": null == g ? true : g.username,
-      size: h,
-      className: u.firstPromotionalAvatar,
-      src: 1 === n.length ? null == g ? true : g.getAvatarURL(true, (0, a.pxk)(h), !E) : f,
-      avatarDecoration: (0, s.Z)(n[0].assetId, h, !E)
+      "aria-label": null == m ? true : m.username,
+      size: p,
+      className: c.firstPromotionalAvatar,
+      src: 1 === n.length ? null == m ? true : m.getAvatarURL(true, (0, a.pxk)(p), !g) : d,
+      avatarDecoration: (0, s.Z)(n[0].assetId, p, !g)
     }), 2 === n.length && (0, r.jsx)("div", {
       style: {
-        marginRight: -Math.round(b * p)
+        marginRight: -Math.round(E * _)
       },
       children: (0, r.jsx)(a.Xo$, {
-        "aria-label": null == g ? true : g.username,
-        size: h,
-        src: d,
-        avatarDecoration: (0, s.Z)(n[1].assetId, h, !E)
+        "aria-label": null == m ? true : m.username,
+        size: p,
+        src: u,
+        avatarDecoration: (0, s.Z)(n[1].assetId, p, !g)
       })
     })]
   })

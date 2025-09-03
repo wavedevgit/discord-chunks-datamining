@@ -1,7 +1,7 @@
-/** Chunk was on 61149 **/
+/** Chunk was on 30397 **/
 /** chunk id: 881410, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => b
 }), require("./388685.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -32,12 +32,12 @@ function f(e) {
   return e
 }
 
-function g(e) {
+function b(e) {
   let {
     disabled: t,
     widgetType: r,
-    widget: g
-  } = e, [b] = (0, i.ynZ)(), [p, m] = a.useState(""), y = a.useRef(null), O = a.useMemo(() => new Set(g.games.map(e => e.applicationId)), [g.games]), {
+    widget: b
+  } = e, [g] = (0, i.ynZ)(), [p, m] = a.useState(""), O = a.useRef(null), y = a.useMemo(() => new Set(b.games.map(e => e.applicationId)), [b.games]), {
     trackUserProfileAction: j
   } = (0, c.KZ)(), v = a.useCallback(e => {
     (0, s.ES)(r, {
@@ -66,7 +66,7 @@ function g(e) {
     }), t))
   }, [x, h]);
   return (0, n.jsx)(i.yRy, {
-    targetElementRef: y,
+    targetElementRef: O,
     position: "bottom",
     align: "center",
     renderPopout: e => {
@@ -77,7 +77,7 @@ function g(e) {
         className: d.gameSearchCombobox,
         placeholder: u.intl.string(u.t["5h0QOD"]),
         autoFocus: true,
-        value: b,
+        value: g,
         onChange: e => {
           v(e), t()
         },
@@ -89,7 +89,7 @@ function g(e) {
         emptyStateHeader: "",
         onQueryChange: m,
         children: e => P(e).map(e => (0, n.jsx)(i.lo1, {
-          disabled: O.has(e.value),
+          disabled: y.has(e.value),
           value: String(e.value),
           children: (0, n.jsx)(i.lo1.Label, {
             children: (0, n.jsx)(i.Text, {
@@ -102,7 +102,7 @@ function g(e) {
       })
     },
     children: e => (0, n.jsx)("div", {
-      ref: y,
+      ref: O,
       children: (0, n.jsx)(i.zxk, f({
         variant: "secondary",
         size: "sm",

@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk107669 = require("./107669.js");
 
-function w(t) {
+function g(t) {
   let {
     widget: e,
     user: i
@@ -25,7 +25,6 @@ function w(t) {
   return (0, n.jsx)(u.Z, {
     widget: e,
     user: i,
-    isGameFetching: () => false,
     disableInteraction: true
   })
 }
@@ -36,13 +35,13 @@ function b(t) {
     widget: i,
     userId: u,
     onClose: b,
-    trackUserProfileAction: m
-  } = t, v = r.useCallback(() => {
-    (0, o.y8)(i.type), m({
+    trackUserProfileAction: v
+  } = t, f = r.useCallback(() => {
+    (0, o.y8)(i.type), v({
       action: "EDIT_ACTION"
     }), b(), (0, x.L$)(h.qb.WIDGET_REMOVED)
-  }, [i.type, b, m]), f = (0, s.e7)([c.default], () => c.default.getUser(u));
-  return null == f ? null : (0, n.jsxs)(a.Modal, {
+  }, [i.type, b, v]), m = (0, s.e7)([c.default], () => c.default.getUser(u));
+  return null == m ? null : (0, n.jsxs)(l.Modal, {
     transitionState: e,
     onClose: b,
     title: p.intl.string(p.t.Mm07YW),
@@ -56,17 +55,17 @@ function b(t) {
     }, {
       variant: "critical-primary",
       text: p.intl.string(p.t.Mm07YW),
-      onClick: v
+      onClick: f
     }],
     children: [(0, n.jsx)("div", {
-      className: g.widgetPreview,
-      children: (0, n.jsx)(w, {
+      className: w.widgetPreview,
+      children: (0, n.jsx)(g, {
         widget: i,
-        user: f
+        user: m
       })
     }), (0, n.jsx)("div", {
-      className: g.hintText,
-      children: (0, n.jsx)(l.Text, {
+      className: w.hintText,
+      children: (0, n.jsx)(a.Text, {
         color: "text-secondary",
         variant: "text-sm/normal",
         children: p.intl.string(p.t.bQNGeX)

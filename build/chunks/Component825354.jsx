@@ -1,4 +1,4 @@
-/** Chunk was on 61149 **/
+/** Chunk was on 30397 **/
 /** chunk id: 825354, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -18,7 +18,7 @@ function f(e) {
     widget: t,
     userId: r,
     className: o
-  } = e, f = a.useRef(null), g = () => {
+  } = e, f = a.useRef(null), b = () => {
     (0, s.G1)(r, t)
   };
   return (0, n.jsx)(l.yRy, {
@@ -41,7 +41,7 @@ function f(e) {
           children: (0, n.jsx)(l.sNh, {
             id: "flag-widget",
             label: u.intl.string(u.t.D4GvHB),
-            action: g,
+            action: b,
             color: "danger",
             icon: l.U65
           })

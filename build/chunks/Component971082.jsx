@@ -1,4 +1,4 @@
-/** Chunk was on 61149 **/
+/** Chunk was on 30397 **/
 /** chunk id: 971082, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -34,7 +34,7 @@ function u(e) {
     }
     return a
   }(e, ["label", "visuallyHideLabel", "className", "size", "maxUsers"]);
-  let g = (0, l.Dt)();
+  let b = (0, l.Dt)();
   return (0, n.jsxs)("div", {
     className: o()(a, s.container),
     children: [(0, n.jsx)(c.Z, function(e) {
@@ -55,17 +55,17 @@ function u(e) {
       }
       return e
     }({
-      "aria-labelledby": g,
+      "aria-labelledby": b,
       overflowCountClassName: s.overflowButton,
       size: u,
       maxUsers: d
     }, f)), r ? (0, n.jsx)(i.nn4, {
-      id: g,
+      id: b,
       children: t
     }) : (0, n.jsx)(i.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      id: g,
+      id: b,
       children: t
     })]
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 61149 **/
+/** Chunk was on 30397 **/
 /** chunk id: 403239, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   q: () => s
@@ -18,13 +18,13 @@ function s(e) {
     widget: u,
     index: d,
     disableInteraction: f = false
-  } = e, g = (0, c.Z)(s), b = (0, n.useCallback)((e, t) => {
-    let r = g.slice(),
+  } = e, b = (0, c.Z)(s), g = (0, n.useCallback)((e, t) => {
+    let r = b.slice(),
       [n] = r.splice(e, 1);
     r.splice(t, 0, n), l.Z.setPendingWidgets(r)
-  }, [g]), [{
+  }, [b]), [{
     isDragging: p
-  }, m, y] = (0, a.c)({
+  }, m, O] = (0, a.c)({
     type: "WIDGET",
     item: {
       widgetId: u.id,
@@ -38,11 +38,11 @@ function s(e) {
     })
   });
   (0, n.useEffect)(() => {
-    y((0, i.r)(), {
+    O((0, i.r)(), {
       captureDraggingState: true
     })
-  }, [y]);
-  let [O, j] = (0, o.L)({
+  }, [O]);
+  let [y, j] = (0, o.L)({
     accept: "WIDGET",
     canDrop: () => !f,
     collect: e => ({
@@ -61,7 +61,7 @@ function s(e) {
         c = r.getClientOffset();
       if (null == c) return;
       let s = c.y - i.top;
-      (!(a < o) || !(s < l)) && (a > o && s > l || (b(a, o), e.index = o))
+      (!(a < o) || !(s < l)) && (a > o && s > l || (g(a, o), e.index = o))
     }
   });
   return null == d || f ? {

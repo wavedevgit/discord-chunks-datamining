@@ -25,7 +25,6 @@ let d = e => {
     }), (0, r.jsx)(a.Z, {
       widget: t,
       user: d,
-      isGameFetching: () => false,
       disableInteraction: true
     })]
   })

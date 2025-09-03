@@ -1,7 +1,7 @@
-/** Chunk was on 61149 **/
+/** Chunk was on 30397 **/
 /** chunk id: 840367, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,14 +15,14 @@ var Chunk624238 = require("./624238.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk635318 = require("./635318.js");
 
-function g(e) {
+function b(e) {
   var t;
   let {
     userId: r,
     headingId: s,
     widget: u,
-    disableInteraction: g = false
-  } = e, p = (0, o.e7)([l.default], () => l.default.getId() === r), m = (0, c.kQ)(u), y = (0, c.Nc)(u.type), O = p && u.games.length > 0 ? (t = u.type, 1 === a.k[t] ? d.intl.string(d.t.wiXdER) : d.intl.format(d.t["zR1+09"], {
+    disableInteraction: b = false
+  } = e, p = (0, o.e7)([l.default], () => l.default.getId() === r), m = (0, c.kQ)(u), O = (0, c.Nc)(u.type), y = p && u.games.length > 0 ? (t = u.type, 1 === a.k[t] ? d.intl.string(d.t.wiXdER) : d.intl.format(d.t["zR1+09"], {
     numGames: a.k[t]
   })) : true;
   return (0, n.jsxs)("div", {
@@ -33,28 +33,28 @@ function g(e) {
         variant: "heading-sm/medium",
         color: "text-default",
         id: s,
-        children: y
-      }), null != O && (0, n.jsx)(i.Text, {
+        children: O
+      }), null != y && (0, n.jsx)(i.Text, {
         variant: "text-xs/normal",
         color: "text-secondary",
-        children: O
+        children: y
       })]
-    }), (0, n.jsx)(b, {
+    }), (0, n.jsx)(g, {
       widget: u,
       disabled: m,
-      disabledInteraction: g,
+      disabledInteraction: b,
       userId: r
     })]
   })
 }
 
-function b(e) {
+function g(e) {
   let {
     widget: t,
     disabled: r,
     disabledInteraction: a,
     userId: i
-  } = e, d = (0, o.e7)([l.default], () => l.default.getId() === i), g = (0, c.vI)(t.type) && t.games.some(e => null != e.comment);
+  } = e, d = (0, o.e7)([l.default], () => l.default.getId() === i), b = (0, c.vI)(t.type) && t.games.some(e => null != e.comment);
   return a ? null : d ? (0, n.jsx)("div", {
     className: f.actions,
     children: (0, n.jsx)(s.Z, {
@@ -62,7 +62,7 @@ function b(e) {
       widgetType: t.type,
       widget: t
     })
-  }) : g ? (0, n.jsx)("div", {
+  }) : b ? (0, n.jsx)("div", {
     className: f.actions,
     children: (0, n.jsx)(u.Z, {
       widget: t,

@@ -1,8 +1,9 @@
-/** Chunk was on 61149 **/
+/** Chunk was on 30397 **/
 /** chunk id: 747101, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  F: () => u,
-  Z: () => d
+  Fn: () => d,
+  ZP: () => f,
+  kO: () => u
 }), require("./539854.js"), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -43,6 +44,10 @@ function s(e, t) {
 }
 
 function u(e) {
+  return (0, a.e7)([i.Z], () => i.Z.isFetching(e))
+}
+
+function d(e) {
   n.useEffect(() => {
     if (e.length > 0) {
       let t = e.filter(e => i.Z.canFetch(e));
@@ -50,22 +55,16 @@ function u(e) {
     }
   }, [e]);
   let [t, r] = (0, a.Wu)([i.Z], () => [i.Z.numNoDataAvailable(), i.Z.numSupplementalGames()]);
-  return {
-    gameDataMap: n.useMemo(() => {
-      let t = {};
-      return e.forEach(e => {
-        t[e] = i.Z.getGame(e)
-      }), t
-    }, [e, t, r]),
-    isGameFetching: n.useCallback(e => i.Z.isFetching(e), [])
-  }
+  return n.useMemo(() => {
+    let t = {};
+    return e.forEach(e => {
+      t[e] = i.Z.getGame(e)
+    }), t
+  }, [e, t, r])
 }
 
-function d(e) {
-  let {
-    gameDataMap: t,
-    isGameFetching: r
-  } = u(n.useMemo(() => (function(e) {
+function f(e) {
+  let t = d(n.useMemo(() => (function(e) {
     let t = [];
     return e.forEach(e => {
       e.games.forEach(e => {
@@ -73,23 +72,20 @@ function d(e) {
       })
     }), [...new Set(t)]
   })(e), [e]));
-  return {
-    widgets: n.useMemo(() => e.map(e => {
-      let r = e.games.map(e => {
-        let r = t[e.applicationId];
-        if (null != r) return s(c({}, e), {
-          gameName: r.name,
-          imageSrc: r.coverImageUrl
-        });
-        let n = l.Z.getDetectableGame(e.applicationId);
-        return s(c({}, e), {
-          gameName: null == n ? true : n.name
-        })
+  return n.useMemo(() => e.map(e => {
+    let r = e.games.map(e => {
+      let r = t[e.applicationId];
+      if (null != r) return s(c({}, e), {
+        gameName: r.name,
+        imageSrc: r.coverImageUrl
       });
+      let n = l.Z.getDetectableGame(e.applicationId);
       return s(c({}, e), {
-        games: r
+        gameName: null == n ? true : n.name
       })
-    }), [e, t]),
-    isGameFetching: r
-  }
+    });
+    return s(c({}, e), {
+      games: r
+    })
+  }), [e, t])
 }

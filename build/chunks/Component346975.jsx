@@ -1194,7 +1194,10 @@ function ek(e) {
           className: ep.sortDropdownText,
           variant: "text-sm/medium",
           color: "interactive-normal",
-          children: n ? ex.intl.string(ex.t.JxU0ws) : ex.intl.string(ex.t.xyYt8P)
+          children: (0, r.jsx)("span", {
+            className: ep.sortDropdownTextHighContrastForcedColor,
+            children: n ? ex.intl.string(ex.t.JxU0ws) : ex.intl.string(ex.t.xyYt8P)
+          })
         }), i ? (0, r.jsx)(p.u04, {
           size: "custom",
           color: "currentColor",

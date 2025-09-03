@@ -1,4 +1,4 @@
-/** Chunk was on 61149 **/
+/** Chunk was on 30397 **/
 /** chunk id: 232083, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => i
@@ -11,9 +11,8 @@ var Chunk623132 = require("./623132.jsx"),
 function i(e) {
   var {
     games: t,
-    widgetType: r,
-    isGameFetching: i
-  } = e, l = function(e, t) {
+    widgetType: r
+  } = e, i = function(e, t) {
     if (null == e) return {};
     var r, n, a = function(e, t) {
       if (null == e) return {};
@@ -27,7 +26,7 @@ function i(e) {
       for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
     }
     return a
-  }(e, ["games", "widgetType", "isGameFetching"]);
+  }(e, ["games", "widgetType"]);
   return (0, n.jsx)("ul", {
     className: o.cardList,
     children: t.map((e, t) => (0, n.jsx)("li", {
@@ -50,9 +49,8 @@ function i(e) {
         return e
       }({
         game: e,
-        widgetType: r,
-        loading: i(e.applicationId)
-      }, l))
+        widgetType: r
+      }, i))
     }, "".concat(e.applicationId, "-").concat(t)))
   })
 }

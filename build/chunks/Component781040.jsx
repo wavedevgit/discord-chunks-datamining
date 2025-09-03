@@ -1,4 +1,4 @@
-/** Chunk was on 61149 **/
+/** Chunk was on 30397 **/
 /** chunk id: 781040, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -16,7 +16,7 @@ var Chunk323946 = require("./323946.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk176870 = require("./176870.js");
 
-function b(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -57,13 +57,13 @@ let m = e => {
     }));
     return (0, n.jsx)(o.ua7, {
       "aria-label": f.intl.string(f.t.HWNJJC),
-      text: (0, n.jsx)(y, {}),
+      text: (0, n.jsx)(O, {}),
       position: "top",
       shouldShow: true !== r,
       children: t
     })
   },
-  y = () => (0, Chunk951288.jsxs)("div", {
+  O = () => (0, Chunk951288.jsxs)("div", {
     className: Chunk176870.dragClickTooltipText,
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
@@ -81,14 +81,14 @@ let m = e => {
       })
     })]
   }),
-  O = e => {
+  y = e => {
     let {
       children: t,
       widget: a,
-      targetRef: g
+      targetRef: b
     } = e, {
       trackUserProfileAction: m
-    } = (0, c.KZ)(), y = e => {
+    } = (0, c.KZ)(), O = e => {
       if (e.shiftKey) {
         (0, s.y8)(a.type), (0, u.L$)(d.qb.WIDGET_REMOVED);
         return
@@ -96,7 +96,7 @@ let m = e => {
         let {
           default: e
         } = await r.e("70887").then(r.bind(r, 37668));
-        return t => (0, n.jsx)(e, p(b({}, t), {
+        return t => (0, n.jsx)(e, p(g({}, t), {
           userId: l.default.getId(),
           widget: a,
           trackUserProfileAction: m
@@ -106,7 +106,7 @@ let m = e => {
       })
     };
     return (0, n.jsx)(o.yRy, {
-      targetElementRef: g,
+      targetElementRef: b,
       align: "top",
       position: "right",
       disablePointerEvents: false,
@@ -125,7 +125,7 @@ let m = e => {
             children: (0, n.jsx)(o.sNh, {
               id: "remove-widget",
               label: f.intl.string(f.t.Mm07YW),
-              action: y,
+              action: O,
               color: "danger",
               icon: o.XHJ
             })
@@ -142,10 +142,10 @@ let m = e => {
       buttonRef: a
     } = e;
     return (0, n.jsx)(m, {
-      children: e => (0, n.jsx)(O, {
+      children: e => (0, n.jsx)(y, {
         targetRef: a,
         widget: t,
-        children: t => (0, n.jsx)(o.P3F, p(b({
+        children: t => (0, n.jsx)(o.P3F, p(g({
           innerRef: a,
           className: r
         }, e, t), {

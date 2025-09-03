@@ -1,4 +1,4 @@
-/** Chunk was on 61149 **/
+/** Chunk was on 30397 **/
 /** chunk id: 30344, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => i
@@ -10,9 +10,8 @@ var Chunk890814 = require("./890814.jsx"),
 
 function i(e) {
   var {
-    games: t,
-    isGameFetching: r
-  } = e, i = function(e, t) {
+    games: t
+  } = e, r = function(e, t) {
     if (null == e) return {};
     var r, n, a = function(e, t) {
       if (null == e) return {};
@@ -26,7 +25,7 @@ function i(e) {
       for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
     }
     return a
-  }(e, ["games", "isGameFetching"]);
+  }(e, ["games"]);
   return (0, n.jsx)(a.Z, {
     games: t,
     renderGame: e => (0, n.jsx)(o.S, function(e) {
@@ -47,8 +46,7 @@ function i(e) {
       }
       return e
     }({
-      game: e,
-      loading: r(e.applicationId)
-    }, i))
+      game: e
+    }, r))
   })
 }
