@@ -12,9 +12,6 @@ let r = (0, require("./427164.js").le)({
   },
   variations: {
     0: {
-      enabled: false
-    },
-    1: {
       enabled: true
     }
   }
