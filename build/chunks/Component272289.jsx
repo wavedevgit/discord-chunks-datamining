@@ -1,4 +1,4 @@
-/** Chunk was on 30397 **/
+/** Chunk was on 18877 **/
 /** chunk id: 272289, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -15,31 +15,33 @@ function s(e) {
     widgetType: t
   } = e, r = function(e, t) {
     if (null == e) return {};
-    var r, n, a = function(e, t) {
+    var r, n, i = function(e, t) {
       if (null == e) return {};
-      var r, n, a = {},
-        o = Object.keys(e);
-      for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (a[r] = e[r]);
-      return a
+      var r, n, i = {},
+        l = Object.keys(e);
+      for (n = 0; n < l.length; n++) r = l[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+      return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var o = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
+      var l = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
     }
-    return a
+    return i
   }(e, ["widgetType"]);
   let {
     games: s,
     onAddGame: u
-  } = (0, l.K)(t), {
-    trackUserProfileAction: d
-  } = (0, o.KZ)(), f = a.useCallback((e, r, n) => {
-    u(e), (0, i.ES)(t, {
+  } = (0, o.K)(t), {
+    trackUserProfileEditAction: d
+  } = (0, l.KZ)(), f = i.useCallback((e, r, n) => {
+    u(e), (0, a.ES)(t, {
       applicationId: e,
       gameName: r,
       imageSrc: n
     }), d({
-      action: "EDIT_ACTION"
+      action: "GAME_ADDED",
+      gameId: e,
+      widgetEdited: t
     })
   }, [u, t, d]);
   return (0, n.jsx)(c.Z, function(e) {

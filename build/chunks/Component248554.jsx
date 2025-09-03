@@ -18,10 +18,10 @@ function u(e) {
     applicationId: t
   } = e, {
     coverImageUrl: r
-  } = (0, s.$)(t);
+  } = (0, a.$)(t);
   return null != r && "" !== r ? (0, n.jsx)("div", {
     className: i()(o.coverContainer, c.placeholderCover),
-    children: (0, n.jsx)(a.o, {
+    children: (0, n.jsx)(s.o, {
       imageSrc: r
     })
   }) : (0, n.jsx)("div", {
@@ -56,11 +56,11 @@ function f(e) {
   let {
     applicationIds: t,
     size: r = "default"
-  } = e, l = "small" === r, s = l ? t.slice(0, 3) : t.slice(0, 4);
+  } = e, l = "small" === r, a = l ? t.slice(0, 3) : t.slice(0, 4);
   return (0, n.jsx)("div", {
     className: i()(c.container, c.placeholderCoverGrid, l && c.sizeSmall),
     "aria-hidden": true,
-    children: s.map((e, t) => (0, n.jsx)(u, {
+    children: a.map((e, t) => (0, n.jsx)(u, {
       applicationId: e
     }, t))
   })

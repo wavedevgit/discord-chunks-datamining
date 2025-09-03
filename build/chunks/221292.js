@@ -3,6 +3,7 @@
 "use strict";
 require.d(exports, {
   NE: () => P,
+  Of: () => x,
   QN: () => A,
   Qf: () => w,
   RV: () => N,
@@ -275,4 +276,26 @@ let v = e => {
       profile_has_theme_color_customized: null == i ? true : i.hasThemeColors(),
       profile_has_theme_animation: (null == i ? true : i.popoutAnimationParticleType) != null
     })
+  },
+  x = e => {
+    let {
+      guildId: t,
+      channelId: n,
+      analyticsLocations: i,
+      action: a,
+      widgetEdited: o,
+      gameId: s,
+      numResults: l,
+      numCharacters: c
+    } = e;
+    C(O(b({}, e), {
+      action: a
+    })), u.default.track(m.rMx.USER_PROFILE_EDIT_ACTION, O(b({}, (0, r.hH)(t), (0, r.JS)(n), T(e)), {
+      location_stack: i,
+      edit_action: a,
+      widget_edited: o,
+      game_id: s,
+      num_results: l,
+      num_characters: c
+    }))
   }

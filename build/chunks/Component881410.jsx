@@ -1,7 +1,7 @@
-/** Chunk was on 30397 **/
+/** Chunk was on 18877 **/
 /** chunk id: 881410, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => g
 }), require("./388685.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -32,28 +32,30 @@ function f(e) {
   return e
 }
 
-function b(e) {
+function g(e) {
   let {
     disabled: t,
     widgetType: r,
-    widget: b
-  } = e, [g] = (0, i.ynZ)(), [p, m] = a.useState(""), O = a.useRef(null), y = a.useMemo(() => new Set(b.games.map(e => e.applicationId)), [b.games]), {
-    trackUserProfileAction: j
-  } = (0, c.KZ)(), v = a.useCallback(e => {
+    widget: g
+  } = e, [b] = (0, a.ynZ)(), [p, m] = i.useState(""), O = i.useRef(null), y = i.useMemo(() => new Set(g.games.map(e => e.applicationId)), [g.games]), {
+    trackUserProfileEditAction: j
+  } = (0, c.KZ)(), v = i.useCallback(e => {
     (0, s.ES)(r, {
       applicationId: e
     }), j({
-      action: "EDIT_ACTION"
+      action: "GAME_ADDED",
+      gameId: e,
+      widgetEdited: r
     })
   }, [r, j]), {
     options: x,
     matchSorterOptions: h
-  } = (0, l.h)(), w = a.useMemo(() => "" !== p.trim() ? u.intl.formatToPlainString(u.t.ZoearK, {
+  } = (0, o.h)(), w = i.useMemo(() => "" !== p.trim() ? u.intl.formatToPlainString(u.t.ZoearK, {
     searchTerm: p.trim()
-  }) : u.intl.string(u.t.QwSXv7), [p]), P = a.useCallback(e => {
+  }) : u.intl.string(u.t.QwSXv7), [p]), P = i.useCallback(e => {
     var t, r;
-    return "" === e.trim() ? x : (0, o.Lu)(x, e, (t = f({}, h), r = r = {
-      threshold: o.Lu.rankings.CONTAINS
+    return "" === e.trim() ? x : (0, l.Lu)(x, e, (t = f({}, h), r = r = {
+      threshold: l.Lu.rankings.CONTAINS
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var r = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -65,19 +67,25 @@ function b(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
     }), t))
   }, [x, h]);
-  return (0, n.jsx)(i.yRy, {
+  return (0, n.jsx)(a.yRy, {
     targetElementRef: O,
     position: "bottom",
     align: "center",
+    onRequestOpen: () => {
+      j({
+        action: "PRESS_ADD_GAME",
+        widgetEdited: r
+      })
+    },
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return (0, n.jsx)(i.DBG, {
+      return (0, n.jsx)(a.DBG, {
         className: d.gameSearchCombobox,
         placeholder: u.intl.string(u.t["5h0QOD"]),
         autoFocus: true,
-        value: g,
+        value: b,
         onChange: e => {
           v(e), t()
         },
@@ -88,11 +96,11 @@ function b(e) {
         emptyStateText: w,
         emptyStateHeader: "",
         onQueryChange: m,
-        children: e => P(e).map(e => (0, n.jsx)(i.lo1, {
+        children: e => P(e).map(e => (0, n.jsx)(a.lo1, {
           disabled: y.has(e.value),
           value: String(e.value),
-          children: (0, n.jsx)(i.lo1.Label, {
-            children: (0, n.jsx)(i.Text, {
+          children: (0, n.jsx)(a.lo1.Label, {
+            children: (0, n.jsx)(a.Text, {
               variant: "text-md/medium",
               color: "header-secondary",
               children: e.label
@@ -103,10 +111,10 @@ function b(e) {
     },
     children: e => (0, n.jsx)("div", {
       ref: O,
-      children: (0, n.jsx)(i.zxk, f({
+      children: (0, n.jsx)(a.zxk, f({
         variant: "secondary",
         size: "sm",
-        icon: i.qJs,
+        icon: a.qJs,
         text: u.intl.string(u.t.SgTOtb),
         disabled: t
       }, e))

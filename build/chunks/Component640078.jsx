@@ -21,7 +21,7 @@ let c = function(e) {
     isDragging: e.isDragging(),
     item: e.getItem(),
     sourceClientOffset: e.getSourceClientOffset()
-  })), f = (0, i.e7)([s.default], () => s.default.getCurrentUser());
+  })), f = (0, i.e7)([a.default], () => a.default.getCurrentUser());
   if (true !== c || null == d || null == u.widget) return null;
   let g = null == r || null == (t = r.current) ? true : t.getBoundingClientRect();
   if (null == g || null == f) return null;
@@ -32,7 +32,7 @@ let c = function(e) {
     style: {
       transform: "translate(".concat(m, "px, ").concat(p, "px)")
     },
-    children: (0, n.jsx)(a.Z, {
+    children: (0, n.jsx)(s.Z, {
       widget: u.widget,
       user: f,
       disableInteraction: true

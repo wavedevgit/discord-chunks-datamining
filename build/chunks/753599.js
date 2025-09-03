@@ -1,5 +1,5 @@
-/** Chunk was on 87023 **/
-/** chunk id: 753599, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 82961 **/
+/** chunk id: 753599, original params: t,n,e (module,exports,require) **/
 module.exports = {
   row: "row__19fd1",
   rowMana: "rowMana__19fd1",

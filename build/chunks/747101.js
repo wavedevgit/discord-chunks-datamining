@@ -1,9 +1,11 @@
-/** Chunk was on 30397 **/
+/** Chunk was on 18877 **/
 /** chunk id: 747101, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Fn: () => d,
+  FX: () => b,
   ZP: () => f,
-  kO: () => u
+  kN: () => g,
+  kO: () => u,
+  qU: () => d
 }), require("./539854.js"), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -44,48 +46,52 @@ function s(e, t) {
 }
 
 function u(e) {
-  return (0, a.e7)([i.Z], () => i.Z.isFetching(e))
+  return (0, i.e7)([a.Z], () => a.Z.isFetching(e))
 }
 
 function d(e) {
   n.useEffect(() => {
     if (e.length > 0) {
-      let t = e.filter(e => i.Z.canFetch(e));
-      t.length > 0 && o.Z.getDetectableGamesSupplemental(t)
+      let t = e.filter(e => a.Z.canFetch(e));
+      t.length > 0 && l.Z.getDetectableGamesSupplemental(t)
     }
-  }, [e]);
-  let [t, r] = (0, a.Wu)([i.Z], () => [i.Z.numNoDataAvailable(), i.Z.numSupplementalGames()]);
-  return n.useMemo(() => {
-    let t = {};
-    return e.forEach(e => {
-      t[e] = i.Z.getGame(e)
-    }), t
-  }, [e, t, r])
+  }, [e])
 }
 
 function f(e) {
-  let t = d(n.useMemo(() => (function(e) {
+  d(n.useMemo(() => (function(e) {
     let t = [];
     return e.forEach(e => {
       e.games.forEach(e => {
         t.push(e.applicationId)
       })
     }), [...new Set(t)]
-  })(e), [e]));
-  return n.useMemo(() => e.map(e => {
-    let r = e.games.map(e => {
+  })(e), [e]))
+}
+
+function g(e) {
+  let [t, r] = (0, i.Wu)([a.Z], () => [a.Z.numNoDataAvailable(), a.Z.numSupplementalGames()]);
+  return (0, i.cj)([a.Z], () => {
+    let t = {};
+    return e.forEach(e => {
+      t[e] = a.Z.getGame(e)
+    }), t
+  }, [e, t, r])
+}
+
+function b(e) {
+  let t = g(e.games.map(e => e.applicationId));
+  return n.useMemo(() => s(c({}, e), {
+    games: e.games.map(e => {
       let r = t[e.applicationId];
       if (null != r) return s(c({}, e), {
         gameName: r.name,
         imageSrc: r.coverImageUrl
       });
-      let n = l.Z.getDetectableGame(e.applicationId);
+      let n = o.Z.getDetectableGame(e.applicationId);
       return s(c({}, e), {
         gameName: null == n ? true : n.name
       })
-    });
-    return s(c({}, e), {
-      games: r
     })
   }), [e, t])
 }

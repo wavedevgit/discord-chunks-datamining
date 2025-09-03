@@ -1,4 +1,4 @@
-/** Chunk was on 87023 **/
+/** Chunk was on 42944 **/
 /** chunk id: 76264, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk259580 = require("./259580.jsx"),
   Chunk520310 = require("./520310.js"),
@@ -16,10 +16,10 @@ let d = e => {
       child: t,
       onClick: n
     } = e, [i] = t;
-    return (0, r.jsxs)(a.P3F, {
-      className: l()(c.childButton, s.listElement),
+    return (0, r.jsxs)(l.P3F, {
+      className: a()(c.childButton, s.listElement),
       onClick: () => n(t),
-      children: [(0, r.jsx)(a.Text, {
+      children: [(0, r.jsx)(l.Text, {
         className: c.childText,
         variant: "text-md/semibold",
         children: i

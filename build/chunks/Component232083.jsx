@@ -1,36 +1,36 @@
-/** Chunk was on 30397 **/
+/** Chunk was on 18877 **/
 /** chunk id: 232083, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => i
+  Z: () => a
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk623132 = require("./623132.jsx"),
   Chunk112794 = require("./112794.js");
 
-function i(e) {
+function a(e) {
   var {
     games: t,
     widgetType: r
-  } = e, i = function(e, t) {
+  } = e, a = function(e, t) {
     if (null == e) return {};
-    var r, n, a = function(e, t) {
+    var r, n, i = function(e, t) {
       if (null == e) return {};
-      var r, n, a = {},
-        o = Object.keys(e);
-      for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (a[r] = e[r]);
-      return a
+      var r, n, i = {},
+        l = Object.keys(e);
+      for (n = 0; n < l.length; n++) r = l[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+      return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var o = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
+      var l = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
     }
-    return a
+    return i
   }(e, ["games", "widgetType"]);
   return (0, n.jsx)("ul", {
-    className: o.cardList,
+    className: l.cardList,
     children: t.map((e, t) => (0, n.jsx)("li", {
-      children: (0, n.jsx)(a.Z, function(e) {
+      children: (0, n.jsx)(i.Z, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
             n = Object.keys(r);
@@ -50,7 +50,7 @@ function i(e) {
       }({
         game: e,
         widgetType: r
-      }, i))
+      }, a))
     }, "".concat(e.applicationId, "-").concat(t)))
   })
 }

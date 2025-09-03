@@ -1,4 +1,4 @@
-/** Chunk was on 87023 **/
+/** Chunk was on 42944 **/
 /** chunk id: 763431, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -18,16 +18,16 @@ let s = e => {
     children: [(0, r.jsx)(i.X6q, {
       className: o.header,
       variant: "heading-sm/semibold",
-      children: a.intl.string(a.t["0ox7Hh"])
+      children: l.intl.string(l.t["0ox7Hh"])
     }), (0, r.jsx)("div", {
       className: o.guildContainer,
       children: (0, r.jsxs)("div", {
         className: o.guildInfo,
         children: [(0, r.jsx)("div", {
           className: o.guildIcon,
-          children: (0, r.jsx)(l.Z, {
+          children: (0, r.jsx)(a.Z, {
             guild: t,
-            size: l.Z.Sizes.LARGE
+            size: a.Z.Sizes.LARGE
           })
         }), (0, r.jsx)("div", {
           children: (0, r.jsx)(i.Text, {

@@ -1,4 +1,4 @@
-/** Chunk was on 87023 **/
+/** Chunk was on 42944 **/
 /** chunk id: 473121, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -16,10 +16,10 @@ let d = e => {
     node: {
       header: d,
       subheader: u,
-      button: m
+      button: _
     },
-    isModeratorReport: _
-  } = e, p = (null == m ? true : m.type) === "submit", g = i.useRef(a.Z.reactParserFor((t = function(e) {
+    isModeratorReport: m
+  } = e, p = (null == _ ? true : _.type) === "submit", f = i.useRef(l.Z.reactParserFor((t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -36,7 +36,7 @@ let d = e => {
       })
     }
     return e
-  }({}, a.Z.defaultRules), n = n = {
+  }({}, l.Z.defaultRules), n = n = {
     link: o.s
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
@@ -50,15 +50,15 @@ let d = e => {
   }), t)));
   return (0, r.jsxs)("div", {
     className: c.headerContainer,
-    children: [null != d && "" !== d ? (0, r.jsx)(l.X6q, {
+    children: [null != d && "" !== d ? (0, r.jsx)(a.X6q, {
       variant: "heading-xl/semibold",
       color: "header-primary",
       children: d
-    }) : null, null != u && "" !== d ? (0, r.jsx)(l.Text, {
+    }) : null, null != u && "" !== d ? (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
-      children: g.current(u)
-    }) : null, p && !_ && (0, r.jsx)(l.Text, {
+      children: f.current(u)
+    }) : null, p && !m && (0, r.jsx)(a.Text, {
       variant: "text-sm/normal",
       children: s.intl.format(s.t.Q0tSKS, {})
     })]

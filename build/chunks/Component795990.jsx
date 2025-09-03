@@ -14,7 +14,7 @@ var Chunk481060 = require("./481060.js"),
 
 function u() {
   let {
-    trackUserProfileAction: e
+    trackUserProfileEditAction: e
   } = (0, Chunk785717.KZ)();
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk958461.empty,
@@ -33,10 +33,10 @@ function u() {
       className: Chunk958461.widgetGrid,
       "aria-label": Chunk388032.intl.string(Chunk388032.t["+EIBSE"]),
       children: Chunk286957.rR.map(t => (0, n.jsx)("li", {
-        children: (0, n.jsx)(s.Z, {
+        children: (0, n.jsx)(a.Z, {
           widgetType: t,
           size: "small",
-          trackUserProfileAction: e
+          trackUserProfileEditAction: e
         })
       }, t))
     })]

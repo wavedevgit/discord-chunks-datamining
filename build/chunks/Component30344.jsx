@@ -1,34 +1,34 @@
-/** Chunk was on 30397 **/
+/** Chunk was on 18877 **/
 /** chunk id: 30344, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => i
+  Z: () => a
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk890814 = require("./890814.jsx"),
   Chunk753436 = require("./753436.jsx");
 
-function i(e) {
+function a(e) {
   var {
     games: t
   } = e, r = function(e, t) {
     if (null == e) return {};
-    var r, n, a = function(e, t) {
+    var r, n, i = function(e, t) {
       if (null == e) return {};
-      var r, n, a = {},
-        o = Object.keys(e);
-      for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (a[r] = e[r]);
-      return a
+      var r, n, i = {},
+        l = Object.keys(e);
+      for (n = 0; n < l.length; n++) r = l[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+      return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var o = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
+      var l = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
     }
-    return a
+    return i
   }(e, ["games"]);
-  return (0, n.jsx)(a.Z, {
+  return (0, n.jsx)(i.Z, {
     games: t,
-    renderGame: e => (0, n.jsx)(o.S, function(e) {
+    renderGame: e => (0, n.jsx)(l.S, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(r);

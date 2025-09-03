@@ -1,4 +1,4 @@
-/** Chunk was on 30397 **/
+/** Chunk was on 18877 **/
 /** chunk id: 825354, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
   Chunk726521 = require("./726521.js"),
@@ -17,11 +17,11 @@ function f(e) {
   let {
     widget: t,
     userId: r,
-    className: o
-  } = e, f = a.useRef(null), b = () => {
+    className: l
+  } = e, f = i.useRef(null), g = () => {
     (0, s.G1)(r, t)
   };
-  return (0, n.jsx)(l.yRy, {
+  return (0, n.jsx)(o.yRy, {
     targetElementRef: f,
     align: "top",
     position: "right",
@@ -30,27 +30,27 @@ function f(e) {
       let {
         closePopout: t
       } = e;
-      return (0, n.jsx)(l.v2r, {
+      return (0, n.jsx)(o.v2r, {
         navId: "user-profile-widget-context-menu",
         onClose: () => {
           (0, c.Zy)(), t()
         },
         onSelect: () => {},
         "aria-label": u.intl.string(u.t.xpSHSk),
-        children: (0, n.jsx)(l.kSQ, {
-          children: (0, n.jsx)(l.sNh, {
+        children: (0, n.jsx)(o.kSQ, {
+          children: (0, n.jsx)(o.sNh, {
             id: "flag-widget",
             label: u.intl.string(u.t.D4GvHB),
-            action: b,
+            action: g,
             color: "danger",
-            icon: l.U65
+            icon: o.U65
           })
         })
       })
     },
     children: e => {
       var t, r;
-      return (0, n.jsx)(l.P3F, (t = function(e) {
+      return (0, n.jsx)(o.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
             n = Object.keys(r);
@@ -70,8 +70,8 @@ function f(e) {
       }({}, e), r = r = {
         innerRef: f,
         "aria-label": u.intl.string(u.t.xpSHSk),
-        className: i()(d.button, o),
-        children: (0, n.jsx)(l.xhG, {
+        className: a()(d.button, l),
+        children: (0, n.jsx)(o.xhG, {
           size: "sm",
           color: "currentColor"
         })

@@ -1,4 +1,4 @@
-/** Chunk was on 30397 **/
+/** Chunk was on 18877 **/
 /** chunk id: 977416, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
@@ -54,43 +54,43 @@ function y(e) {
   var {
     gameName: t,
     onClick: r
-  } = e, a = function(e, t) {
+  } = e, i = function(e, t) {
     if (null == e) return {};
-    var r, n, a = function(e, t) {
+    var r, n, i = function(e, t) {
       if (null == e) return {};
-      var r, n, a = {},
-        o = Object.keys(e);
-      for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (a[r] = e[r]);
-      return a
+      var r, n, i = {},
+        l = Object.keys(e);
+      for (n = 0; n < l.length; n++) r = l[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+      return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var o = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
+      var l = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
     }
-    return a
+    return i
   }(e, ["gameName", "onClick"]);
-  let o = null != t ? t : b.intl.string(b.t.GIWFlJ),
-    c = b.intl.formatToPlainString(b.t["3mb1s7"], {
-      game: o
+  let l = null != t ? t : g.intl.string(g.t.GIWFlJ),
+    c = g.intl.formatToPlainString(g.t["3mb1s7"], {
+      game: l
     }),
-    f = (0, i.e7)([s.Z], () => s.Z.suggestedFetchIsLoading);
-  return (0, u.kO)(a.applicationId) || f ? (0, n.jsx)("div", {
-    className: g.loadingCover
-  }) : (0, n.jsx)(l.ua7, {
+    f = (0, a.e7)([s.Z], () => s.Z.suggestedFetchIsLoading);
+  return (0, u.kO)(i.applicationId) || f ? (0, n.jsx)("div", {
+    className: b.loadingCover
+  }) : (0, n.jsx)(o.ua7, {
     text: c,
-    children: e => (0, n.jsxs)(l.P3F, O(m({
+    children: e => (0, n.jsxs)(o.P3F, O(m({
       className: p.addButton
     }, e), {
       onClick: r,
       children: [(0, n.jsx)(d.Z, O(m({
         className: p.cover,
         gameName: t
-      }, a), {
+      }, i), {
         disableInteraction: true
-      })), (0, n.jsx)(l.svS, {
+      })), (0, n.jsx)(o.svS, {
         size: "md",
         className: p.addIcon,
-        color: l.TVs.colors.WHITE
+        color: o.TVs.colors.WHITE
       })]
     }))
   })
@@ -100,43 +100,43 @@ function j(e) {
   let {
     userId: t,
     games: r,
-    onDismiss: a,
-    onClick: i,
+    onDismiss: i,
+    onClick: a,
     className: s
   } = e, u = (0, c.Dt)();
   return (0, n.jsxs)("aside", {
-    className: o()(p.container, s),
+    className: l()(p.container, s),
     "aria-labelledby": u,
     children: [(0, n.jsxs)("div", {
       className: p.header,
-      children: [(0, n.jsx)(l.P3F, {
+      children: [(0, n.jsx)(o.P3F, {
         className: p.dismissButton,
-        "aria-label": b.intl.string(b.t["pUR+3t"]),
-        onClick: a,
-        children: (0, n.jsx)(l.Dio, {
+        "aria-label": g.intl.string(g.t["pUR+3t"]),
+        onClick: i,
+        children: (0, n.jsx)(o.Dio, {
           size: "sm",
           color: "currentColor"
         })
-      }), (0, n.jsx)(l.X6q, {
+      }), (0, n.jsx)(o.X6q, {
         id: u,
         variant: "text-xs/medium",
         color: "text-secondary",
-        children: b.intl.string(b.t.zMUr6e)
+        children: g.intl.string(g.t.zMUr6e)
       })]
     }), (0, n.jsx)(f.Z, {
       games: r,
       renderGame: e => {
         let {
           applicationId: r,
-          gameName: a,
-          imageSrc: o
+          gameName: i,
+          imageSrc: l
         } = e;
         return (0, n.jsx)(y, {
-          onClick: () => i(r, a, o),
+          onClick: () => a(r, i, l),
           userId: t,
           applicationId: r,
-          gameName: a,
-          imageSrc: o
+          gameName: i,
+          imageSrc: l
         })
       }
     })]

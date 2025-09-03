@@ -1,4 +1,4 @@
-/** Chunk was on 30397 **/
+/** Chunk was on 18877 **/
 /** chunk id: 978369, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -15,44 +15,44 @@ let d = Chunk647438.memo(function(e) {
   let {
     currentTags: t,
     onTagSelect: r,
-    onNoneSelect: a,
-    onClose: i
+    onNoneSelect: i,
+    onClose: a
   } = e;
-  return (0, n.jsx)(o.v2r, {
+  return (0, n.jsx)(l.v2r, {
     navId: "widget-game-tags",
     "aria-label": s.intl.string(s.t.r6EJOj),
-    onClose: i,
+    onClose: a,
     onSelect: () => {},
     className: u.gameTagsMenu,
     children: Object.entries(c.aE).map(e => {
-      let [i, l] = e, u = ((e, i) => {
-        let l = [];
-        return i.type === c.kd.RADIO && l.push((0, n.jsx)(o.k5B, {
+      let [a, o] = e, u = ((e, a) => {
+        let o = [];
+        return a.type === c.kd.RADIO && o.push((0, n.jsx)(l.k5B, {
           id: "".concat(e, "-none"),
           group: e,
           label: s.intl.string(s.t.PoWNfX),
-          checked: !i.tags.some(e => t.includes(e)),
-          action: () => a(i.tags)
-        }, "none")), i.tags.forEach(a => {
-          let s = c.XV[a];
-          null != s && (i.type === c.kd.RADIO ? l.push((0, n.jsx)(o.k5B, {
-            id: a,
+          checked: !a.tags.some(e => t.includes(e)),
+          action: () => i(a.tags)
+        }, "none")), a.tags.forEach(i => {
+          let s = c.XV[i];
+          null != s && (a.type === c.kd.RADIO ? o.push((0, n.jsx)(l.k5B, {
+            id: i,
             group: e,
             label: s.getText(),
-            checked: t.includes(a),
-            action: () => r(a, true)
-          }, a)) : l.push((0, n.jsx)(o.S89, {
-            id: a,
+            checked: t.includes(i),
+            action: () => r(i, true)
+          }, i)) : o.push((0, n.jsx)(l.S89, {
+            id: i,
             label: s.getText(),
-            checked: t.includes(a),
-            action: () => r(a, false)
-          }, a)))
-        }), l
-      })(i, l);
-      return (0, n.jsx)(o.kSQ, {
-        label: l.getLabel(),
+            checked: t.includes(i),
+            action: () => r(i, false)
+          }, i)))
+        }), o
+      })(a, o);
+      return (0, n.jsx)(l.kSQ, {
+        label: o.getLabel(),
         children: u
-      }, i)
+      }, a)
     })
   })
 });
@@ -62,10 +62,10 @@ function f(e) {
     tags: t,
     widgetType: r,
     applicationId: f,
-    ref: b
-  } = e, g = (0, a.useRef)(null), {
-    trackUserProfileAction: p
-  } = (0, i.KZ)(), m = (0, a.useMemo)(() => null != t ? t : [], [t]), O = (0, a.useCallback)(function(e) {
+    ref: g
+  } = e, b = (0, i.useRef)(null), {
+    trackUserProfileEditAction: p
+  } = (0, a.KZ)(), m = (0, i.useMemo)(() => null != t ? t : [], [t]), O = (0, i.useCallback)(function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
       n = new Set(m);
     if (t) {
@@ -73,24 +73,40 @@ function f(e) {
       null != t && (t.tags.forEach(e => {
         n.delete(e)
       }), n.add(e), p({
-        action: "EDIT_ACTION"
+        action: "TAG_ADDED",
+        widgetEdited: r,
+        gameId: f
       }))
-    } else n.has(e) ? n.delete(e) : n.add(e), p({
-      action: "EDIT_ACTION"
-    });
-    (0, l.n$)(r, f, Array.from(n))
-  }, [m, p, r, f]), y = (0, a.useCallback)(e => {
+    } else n.has(e) ? (n.delete(e), p({
+      action: "TAG_REMOVED",
+      widgetEdited: r,
+      gameId: f
+    })) : (n.add(e), p({
+      action: "TAG_ADDED",
+      widgetEdited: r,
+      gameId: f
+    }));
+    (0, o.n$)(r, f, Array.from(n))
+  }, [m, p, r, f]), y = (0, i.useCallback)(e => {
     let t = new Set(m);
     e.forEach(e => {
       t.delete(e)
     }), p({
-      action: "EDIT_ACTION"
-    }), (0, l.n$)(r, f, Array.from(t))
+      action: "TAG_REMOVED",
+      widgetEdited: r,
+      gameId: f
+    }), (0, o.n$)(r, f, Array.from(t))
   }, [m, p, r, f]);
-  return (0, n.jsx)(o.yRy, {
-    targetElementRef: g,
+  return (0, n.jsx)(l.yRy, {
+    targetElementRef: b,
     position: "right",
     align: "top",
+    onRequestOpen: () => {
+      p({
+        action: "PRESS_ADD_TAG",
+        widgetEdited: r
+      })
+    },
     renderPopout: e => {
       let {
         closePopout: t
@@ -105,10 +121,10 @@ function f(e) {
     children: e => {
       var t, r;
       return (0, n.jsx)("div", {
-        ref: e => (null != e && (g.current = e, b.current = e), () => {
-          g.current = null, b.current = null
+        ref: e => (null != e && (b.current = e, g.current = e), () => {
+          b.current = null, g.current = null
         }),
-        children: (0, n.jsx)(o.P3F, (t = function(e) {
+        children: (0, n.jsx)(l.P3F, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var r = null != arguments[t] ? arguments[t] : {},
               n = Object.keys(r);
@@ -128,7 +144,7 @@ function f(e) {
         }({}, e), r = r = {
           className: u.addButton,
           "aria-label": s.intl.string(s.t.r6EJOj),
-          children: (0, n.jsx)(o.Text, {
+          children: (0, n.jsx)(l.Text, {
             variant: "text-xxs/medium",
             color: "none",
             children: s.intl.string(s.t.fZSej4)

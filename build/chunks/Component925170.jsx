@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
 function d(e) {
   var t, r, {
       onClose: d,
-      trackUserProfileAction: O
+      trackUserProfileEditAction: O
     } = e,
     y = function(e, t) {
       if (null == e) return {};
@@ -34,7 +34,7 @@ function d(e) {
         for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
       }
       return o
-    }(e, ["onClose", "trackUserProfileAction"]);
+    }(e, ["onClose", "trackUserProfileEditAction"]);
   let g = (0, i.e7)([s.default], () => s.default.getCurrentUser()),
     j = (0, u.Z)(),
     m = o.useRef(new Set(j)),
@@ -78,7 +78,7 @@ function d(e) {
         widgetType: e,
         onAddWidget: x,
         loading: v,
-        trackUserProfileAction: O
+        trackUserProfileEditAction: O
       }, e))
     }) : (0, n.jsx)(c.Text, {
       variant: "text-md/medium",

@@ -1,4 +1,4 @@
-/** Chunk was on 87023 **/
+/** Chunk was on 42944 **/
 /** chunk id: 15682, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -16,16 +16,16 @@ let o = e => {
       selected: s
     } = e;
     return (0, r.jsx)("div", {
-      className: a.checkboxRow,
+      className: l.checkboxRow,
       children: (0, r.jsxs)(i.$q, {
         type: i.M0.INVERTED,
         onChange: () => t(),
         value: s,
-        children: [(0, r.jsx)(l.Text, {
+        children: [(0, r.jsx)(a.Text, {
           color: "interactive-active",
           variant: "text-md/semibold",
           children: n
-        }), null != o ? (0, r.jsx)(l.Text, {
+        }), null != o ? (0, r.jsx)(a.Text, {
           color: "interactive-active",
           variant: "text-sm/normal",
           children: o
@@ -41,15 +41,15 @@ let o = e => {
     } = e;
     if ((null == t ? true : t.type) !== "checkbox") return null;
     let {
-      data: l
+      data: a
     } = t;
     return (0, r.jsx)("div", {
-      children: l.map((e, t) => {
-        let [l, a, s] = e;
+      children: a.map((e, t) => {
+        let [a, l, s] = e;
         return (0, r.jsx)(o, {
-          onChange: () => i(l, a),
-          selected: l in n,
-          label: a,
+          onChange: () => i(a, l),
+          selected: a in n,
+          label: l,
           subtitle: s
         }, "".concat(t, "+button"))
       })

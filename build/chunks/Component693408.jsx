@@ -28,7 +28,7 @@ function o(e) {
     }
     return l
   }(e, ["className"]);
-  return (0, n.jsx)(s.Z, function(e) {
+  return (0, n.jsx)(a.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);
@@ -46,7 +46,7 @@ function o(e) {
     }
     return e
   }({
-    className: i()(a.section, t),
+    className: i()(s.section, t),
     headingVariant: "text-xs/medium",
     headingColor: "currentColor"
   }, r))

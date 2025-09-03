@@ -35,18 +35,19 @@ function b(t) {
     widget: i,
     userId: u,
     onClose: b,
-    trackUserProfileAction: v
-  } = t, f = r.useCallback(() => {
+    trackUserProfileEditAction: v
+  } = t, E = r.useCallback(() => {
     (0, o.y8)(i.type), v({
-      action: "EDIT_ACTION"
+      action: "WIDGET_REMOVED",
+      widgetEdited: i.type
     }), b(), (0, x.L$)(h.qb.WIDGET_REMOVED)
-  }, [i.type, b, v]), m = (0, s.e7)([c.default], () => c.default.getUser(u));
-  return null == m ? null : (0, n.jsxs)(l.Modal, {
+  }, [i.type, b, v]), f = (0, s.e7)([d.default], () => d.default.getUser(u));
+  return null == f ? null : (0, n.jsxs)(l.Modal, {
     transitionState: e,
     onClose: b,
     title: p.intl.string(p.t.Mm07YW),
     subtitle: p.intl.format(p.t["x+djIy"], {
-      helpUrl: d.w
+      helpUrl: c.w
     }),
     actions: [{
       variant: "secondary",
@@ -55,13 +56,13 @@ function b(t) {
     }, {
       variant: "critical-primary",
       text: p.intl.string(p.t.Mm07YW),
-      onClick: f
+      onClick: E
     }],
     children: [(0, n.jsx)("div", {
       className: w.widgetPreview,
       children: (0, n.jsx)(g, {
         widget: i,
-        user: m
+        user: f
       })
     }), (0, n.jsx)("div", {
       className: w.hintText,

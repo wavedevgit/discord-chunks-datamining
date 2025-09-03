@@ -14,47 +14,55 @@ var Chunk647438 = require("./647438.js"),
   Chunk747101 = require("./747101.js");
 
 function d(e) {
-  var t, r;
+  var t;
   let {
-    bump: l,
-    bumpMultiple: s,
+    bump: r,
+    bumpMultiple: l,
     gameIds: a
-  } = (0, c.b)(), {
-    remove: o,
-    peekedGameIds: d
-  } = (0, c.b)(), f = (0, u.Fn)(null != (t = d[e]) ? t : []), g = n.useCallback(e => i.Z.isFetching(e), []);
-  n.useEffect(() => {
-    var t;
-    for (let r of null != (t = d[e]) ? t : []) {
-      let t = f[r];
-      (null == t ? true : t.coverImageUrl) != null || g(r) || o(r, e)
-    }
-  }, [d, f, o, e, g]);
-  let m = n.useMemo(() => {
+  } = (0, c.b)();
+  ! function(e) {
+    var t, r;
+    let {
+      remove: l,
+      peekedGameIds: a
+    } = (0, c.b)();
+    (0, u.qU)(null != (t = a[e]) ? t : []);
+    let s = n.useCallback(e => i.Z.isFetching(e), []),
+      o = (0, u.kN)(null != (r = a[e]) ? r : []);
+    n.useEffect(() => {
+      var t;
+      for (let r of null != (t = a[e]) ? t : []) {
+        let t = o[r];
+        (null == t ? true : t.coverImageUrl) != null || s(r) || l(r, e)
+      }
+    }, [a, l, e, s, o])
+  }(e);
+  let s = n.useMemo(() => {
       var t;
       return null != (t = a[e]) ? t : []
     }, [a, e]),
-    p = n.useCallback(t => {
-      l(t, e)
-    }, [l, e]),
-    j = (0, u.Fn)(m),
-    [b, h] = n.useState([]),
-    x = (r = m.map(e => i.Z.isFetching(e)), n.useMemo(() => r.join("\x1f"), [r]));
+    o = n.useCallback(t => {
+      r(t, e)
+    }, [r, e]);
+  (0, u.qU)(s);
+  let d = (0, u.kN)(s),
+    [f, g] = n.useState([]),
+    m = (t = s.map(e => i.Z.isFetching(e)), n.useMemo(() => t.join("\x1f"), [t]));
   return n.useEffect(() => {
-    let t = m.filter(e => i.Z.noDataAvailable(e));
-    t.length > 0 && s(t, e)
-  }, [j, x, m, e, s]), n.useEffect(() => {
-    h(m.map(e => {
-      let t = j[e];
+    let t = s.filter(e => i.Z.noDataAvailable(e));
+    t.length > 0 && l(t, e)
+  }, [m, s, e, l, d]), n.useEffect(() => {
+    g(s.map(e => {
+      let t = d[e];
       return {
         applicationId: e,
         gameName: null == t ? true : t.name,
         imageSrc: null == t ? true : t.coverImageUrl
       }
     }))
-  }, [m, j, e]), {
-    games: b,
-    onAddGame: p
+  }, [s, d, e]), {
+    games: f,
+    onAddGame: o
   }
 }
 
@@ -63,13 +71,13 @@ function f(e, t) {
     onLoad: f
   } = (0, c.b)();
   n.useEffect(() => {
-    !r && e && a.Z.fetchSuggestedGames()
+    !r && e && s.Z.fetchSuggestedGames()
   }, [r, e]);
   let g = r && !d;
   n.useEffect(() => {
     var e, r;
     if (!g) return;
     let n = t.map(e => e.games).flat();
-    f(i ? [] : (null != (e = u.suggestedGamesIds) ? e : []).filter(s.z6), i ? [] : (null != (r = u.suggestedWishlistGamesIds) ? r : []).filter(s.z6), n)
+    f(i ? [] : (null != (e = u.suggestedGamesIds) ? e : []).filter(a.z6), i ? [] : (null != (r = u.suggestedWishlistGamesIds) ? r : []).filter(a.z6), n)
   }, [g])
 }

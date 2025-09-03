@@ -1,13 +1,13 @@
 /** Chunk was on 30355 **/
 /** chunk id: 661462, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  F: () => b,
-  Z: () => x
+  F: () => j,
+  Z: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk785717 = require("./785717.jsx"),
   Chunk128156 = require("./128156.jsx"),
@@ -36,7 +36,7 @@ function p(e) {
   return e
 }
 
-function j(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,7 +49,7 @@ function j(e, t) {
   }), e
 }
 
-function b(e) {
+function j(e) {
   var {
     children: t,
     className: r,
@@ -69,37 +69,37 @@ function b(e) {
     }
     return l
   }(e, ["children", "className", "scrollerRef"]);
-  return (0, n.jsx)(a.Ttm, j(p({
+  return (0, n.jsx)(s.Ttm, b(p({
     ref: l,
-    className: s()(m.tabPanelScroller, r),
+    className: a()(m.tabPanelScroller, r),
     fade: true
   }, i), {
     children: t
   }))
 }
 
-function h(e) {
+function O(e) {
   let {
     user: t,
     currentUser: r,
     section: l,
     subsection: i,
-    displayProfile: s,
-    guildId: a,
+    displayProfile: a,
+    guildId: s,
     channelId: o,
     onClose: m
   } = e;
   return l === g.oh.ACTIVITY ? (0, n.jsx)(c.Z, {
     user: t,
     currentUser: r,
-    displayProfile: s,
-    guildId: a,
+    displayProfile: a,
+    guildId: s,
     channelId: o,
     subsection: i,
     onClose: m
   }) : l === g.oh.MUTUAL_FRIENDS ? (0, n.jsx)(u.Z, {
     user: t,
-    guildId: a,
+    guildId: s,
     channelId: o,
     onClose: m
   }) : l === g.oh.MUTUAL_GUILDS ? (0, n.jsx)(d.Z, {
@@ -107,30 +107,30 @@ function h(e) {
     onClose: m
   }) : l === g.oh.WIDGETS ? (0, n.jsx)(f.C, {
     user: t,
-    guildId: a,
+    guildId: s,
     channelId: o
   }) : null
 }
 
-function x(e) {
+function h(e) {
   var t;
   let {
     user: r,
     currentUser: i,
-    displayProfile: s,
+    displayProfile: a,
     guildId: c,
     channelId: u,
     items: d,
     initialSection: f,
     initialSubsection: g,
-    onClose: b
+    onClose: j
   } = e, {
-    trackUserProfileAction: x
+    trackUserProfileAction: h
   } = (0, o.KZ)(), [{
-    section: O,
-    subsection: v,
-    text: y
-  }, P] = l.useState(j(p({}, null != (t = d.find(e => {
+    section: x,
+    subsection: y,
+    text: v
+  }, P] = l.useState(b(p({}, null != (t = d.find(e => {
     let {
       section: t
     } = e;
@@ -140,17 +140,17 @@ function x(e) {
   }));
   return (0, n.jsxs)("div", {
     className: m.container,
-    children: [(0, n.jsx)(a.Ttm, {
+    children: [(0, n.jsx)(s.Ttm, {
       orientation: "horizontal",
       className: m.tabListScroller,
       fade: true,
       paddingFix: false,
-      children: (0, n.jsx)(a.njP, {
+      children: (0, n.jsx)(s.njP, {
         type: "top",
         look: "custom",
-        selectedItem: O,
+        selectedItem: x,
         onItemSelect: e => {
-          x({
+          h({
             action: "PRESS_SECTION",
             section: e
           }), P(t => {
@@ -158,26 +158,26 @@ function x(e) {
             return null != (r = d.find(t => t.section === e)) ? r : t
           })
         },
-        children: d.map(e => (0, n.jsx)(a.njP.Item, {
+        children: d.map(e => (0, n.jsx)(s.njP.Item, {
           className: m.tabBarItem,
           id: e.section,
           "aria-label": e.text,
           children: e.text
         }, e.section))
       })
-    }), (0, n.jsx)(a.njP.Panel, {
-      id: O,
-      "aria-label": y,
+    }), (0, n.jsx)(s.njP.Panel, {
+      id: x,
+      "aria-label": v,
       className: m.tabBarPanel,
-      children: (0, n.jsx)(h, {
+      children: (0, n.jsx)(O, {
         user: r,
         currentUser: i,
-        displayProfile: s,
+        displayProfile: a,
         guildId: c,
         channelId: u,
-        section: O,
-        subsection: v,
-        onClose: b
+        section: x,
+        subsection: y,
+        onClose: j
       })
     })]
   })

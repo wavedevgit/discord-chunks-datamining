@@ -1,4 +1,4 @@
-/** Chunk was on 87023 **/
+/** Chunk was on 42944 **/
 /** chunk id: 805746, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -18,32 +18,32 @@ let p = e => {
   let {
     application: t,
     reportId: n
-  } = e, [p, g] = i.useState(false), f = (0, l.e7)([u.Z], () => u.Z.getNewestTokenForApplication(t.id));
+  } = e, [p, f] = i.useState(false), g = (0, a.e7)([u.Z], () => u.Z.getNewestTokenForApplication(t.id));
   i.useEffect(() => {
-    null != f && g(true)
-  }, [f]);
+    null != g && f(true)
+  }, [g]);
   let b = i.useRef(false);
   i.useEffect(() => {
-    b.current || (a.Z.fetch(), b.current = true)
+    b.current || (l.Z.fetch(), b.current = true)
   }, []);
-  let x = (0, l.e7)([o.ZP], () => o.ZP.getSelfEmbeddedActivities()),
+  let x = (0, a.e7)([o.ZP], () => o.ZP.getSelfEmbeddedActivities()),
     h = i.useCallback(() => {
-      if (g(false), c.ZP.trackWithMetadata(m.rMx.IAR_DEAUTHORIZE_APP_BUTTON_CLICKED, {
+      if (f(false), c.ZP.trackWithMetadata(_.rMx.IAR_DEAUTHORIZE_APP_BUTTON_CLICKED, {
           application_id: t.id,
           report_id: n
-        }), null == f) return;
-      a.Z.delete(f.id);
+        }), null == g) return;
+      l.Z.delete(g.id);
       let e = x.get(t.id);
       null != e && s.Z.leaveActivity({
         location: e.location,
         applicationId: t.id,
         showFeedback: false
       })
-    }, [t.id, f, x, n]);
+    }, [t.id, g, x, n]);
   return null == t ? null : (0, r.jsx)(d.JZ, {
-    title: _.intl.string(_.t.ygG62N),
-    description: _.intl.string(_.t.S51EKi),
-    buttonText: p ? _.intl.string(_.t.xXpoGR) : _.intl.string(_.t.JsiUnJ),
+    title: m.intl.string(m.t.ygG62N),
+    description: m.intl.string(m.t.S51EKi),
+    buttonText: p ? m.intl.string(m.t.xXpoGR) : m.intl.string(m.t.JsiUnJ),
     buttonDisabled: !p,
     onButtonPress: h,
     buttonVariant: p ? "critical-primary" : "secondary"

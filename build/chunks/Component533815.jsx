@@ -1,4 +1,4 @@
-/** Chunk was on 30397 **/
+/** Chunk was on 18877 **/
 /** chunk id: 533815, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk785717 = require("./785717.jsx"),
   Chunk86419 = require("./86419.js"),
@@ -17,20 +17,22 @@ function d(e) {
   let {
     game: t,
     widgetType: r,
-    iconSize: a = "refresh_sm",
+    iconSize: i = "refresh_sm",
     className: d
   } = e, {
-    trackUserProfileAction: f
-  } = (0, l.KZ)(), b = () => {
+    trackUserProfileEditAction: f
+  } = (0, o.KZ)(), g = () => {
     (0, c.$b)(r, t.applicationId), f({
-      action: "EDIT_ACTION"
+      action: "GAME_REMOVED",
+      gameId: t.applicationId,
+      widgetEdited: r
     })
   };
-  return (0, n.jsx)(i.ua7, {
+  return (0, n.jsx)(a.ua7, {
     text: s.intl.string(s.t.HUvyDQ),
     children: e => {
       var t, r;
-      return (0, n.jsx)(i.P3F, (t = function(e) {
+      return (0, n.jsx)(a.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
             n = Object.keys(r);
@@ -48,13 +50,13 @@ function d(e) {
         }
         return e
       }({}, e), r = r = {
-        onClick: b,
+        onClick: g,
         "aria-label": s.intl.string(s.t.HUvyDQ),
-        className: o()(d, u.clickable),
-        children: (0, n.jsx)(i.XHJ, {
-          size: a,
+        className: l()(d, u.clickable),
+        children: (0, n.jsx)(a.XHJ, {
+          size: i,
           className: u.icon,
-          color: i.TVs.colors.STATUS_DANGER
+          color: a.TVs.colors.STATUS_DANGER
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var r = Object.keys(e);

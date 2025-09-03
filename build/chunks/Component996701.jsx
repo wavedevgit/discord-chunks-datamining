@@ -1,12 +1,12 @@
-/** Chunk was on 87023 **/
+/** Chunk was on 42944 **/
 /** chunk id: 996701, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk782568 = require("./782568.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -21,24 +21,24 @@ let u = e => {
       is_localized: s
     }
   } = e;
-  return s ? (0, r.jsxs)(a.P3F, {
+  return s ? (0, r.jsxs)(l.P3F, {
     role: "link",
-    className: l()(d.linkButton, c.listElement),
+    className: a()(d.linkButton, c.listElement),
     onClick: () => {
       (0, o.Z)(t)
     },
     children: [(0, r.jsxs)("div", {
       className: d.linkTextContainer,
-      children: [(0, r.jsx)(a.Text, {
+      children: [(0, r.jsx)(l.Text, {
         className: d.__invalid_linkText,
         variant: "text-md/semibold",
         children: n
-      }), null != i && "" !== i && (0, r.jsx)(a.Text, {
+      }), null != i && "" !== i && (0, r.jsx)(l.Text, {
         variant: "text-md/normal",
         color: "text-muted",
         children: i
       })]
-    }), (0, r.jsx)(a.Gr1, {
+    }), (0, r.jsx)(l.Gr1, {
       size: "sm",
       color: "currentColor",
       className: d.linkIcon
@@ -46,7 +46,7 @@ let u = e => {
   }) : null
 };
 
-function m(e) {
+function _(e) {
   let {
     elements: t
   } = e;
@@ -71,8 +71,8 @@ function m(e) {
       return t.is_header_hidden
     });
   return (0, r.jsxs)("div", {
-    className: l()(d.linksContainer, c.listElementWrapper),
-    children: [!i && (0, r.jsx)(a.X6q, {
+    className: a()(d.linksContainer, c.listElementWrapper),
+    children: [!i && (0, r.jsx)(l.X6q, {
       variant: "heading-sm/semibold",
       color: "header-secondary",
       className: d.header,

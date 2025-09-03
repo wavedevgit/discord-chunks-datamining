@@ -1,4 +1,4 @@
-/** Chunk was on 87023 **/
+/** Chunk was on 42944 **/
 /** chunk id: 730719, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -14,23 +14,23 @@ let o = e => {
     onClose: n
   } = e;
   return null == t || "" === t ? null : (0, r.jsxs)("div", {
-    className: a.errorContainer,
+    className: l.errorContainer,
     children: [(0, r.jsx)(i.Mgn, {
       size: "custom",
       color: "currentColor",
       width: 20,
       height: 20,
-      className: a.errorIcon
+      className: l.errorIcon
     }), (0, r.jsx)(i.Text, {
-      className: a.errorText,
+      className: l.errorText,
       variant: "text-sm/normal",
       children: t
     }), (0, r.jsx)(i.P3F, {
       onClick: () => {
         n()
       },
-      "aria-label": l.intl.string(l.t.WAI6xs),
-      className: a.closeIcon
+      "aria-label": a.intl.string(a.t.WAI6xs),
+      className: l.closeIcon
     })]
   })
 }

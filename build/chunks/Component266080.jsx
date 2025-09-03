@@ -1,7 +1,7 @@
-/** Chunk was on 87023 **/
+/** Chunk was on 42944 **/
 /** chunk id: 266080, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,16 +12,16 @@ var Chunk951288 = require("./951288.js"),
   Chunk430824 = require("./430824.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let m = e => {
+let _ = e => {
   let {
     guildId: t,
     reportId: n
-  } = e, [m, _] = i.useState(false), p = c.Z.getGuild(t), g = null != p;
+  } = e, [_, m] = i.useState(false), p = c.Z.getGuild(t), f = null != p;
   i.useEffect(() => {
-    _(!g)
-  }, [g]);
-  let f = i.useCallback(() => {
-    _(true), a.ZP.trackWithMetadata(d.rMx.IAR_LEAVE_GUILD_BUTTON_CLICKED, {
+    m(!f)
+  }, [f]);
+  let g = i.useCallback(() => {
+    m(true), l.ZP.trackWithMetadata(d.rMx.IAR_LEAVE_GUILD_BUTTON_CLICKED, {
       guild_id: t,
       report_id: n
     }), o.Z.leaveGuild(t)
@@ -31,13 +31,13 @@ let m = e => {
     description: u.intl.formatToPlainString(u.t["26mR6+"], {
       guildName: null == p ? true : p.name
     }),
-    buttonText: m ? u.intl.string(u.t["9Ak99v"]) : u.intl.string(u.t.F3qExs),
-    buttonDisabled: m,
+    buttonText: _ ? u.intl.string(u.t["9Ak99v"]) : u.intl.string(u.t.F3qExs),
+    buttonDisabled: _,
     buttonVariant: "critical-primary",
     onButtonPress: () => {
-      (0, l.h7j)(e => {
+      (0, a.h7j)(e => {
         var t, n;
-        return (0, r.jsx)(l.ConfirmModal, (t = function(e) {
+        return (0, r.jsx)(a.ConfirmModal, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -60,9 +60,9 @@ let m = e => {
           }),
           confirmText: u.intl.string(u.t.J2TBi4),
           cancelText: u.intl.string(u.t["ETE/oK"]),
-          onConfirm: f
+          onConfirm: g
         }, e), n = n = {
-          children: (0, r.jsx)(l.Text, {
+          children: (0, r.jsx)(a.Text, {
             variant: "text-md/normal",
             children: u.intl.format(u.t.ZEXC0t, {
               name: p.name

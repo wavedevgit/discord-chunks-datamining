@@ -1,7 +1,7 @@
-/** Chunk was on 31553 **/
+/** Chunk was on 28883 **/
 /** chunk id: 389190, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,76 +16,76 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk878449 = require("./878449.js");
 
-function h(e) {
+function x(e) {
   let {
     user: n,
     guildId: t,
-    channelId: h,
-    onClose: j
+    channelId: x,
+    onClose: h
   } = e, {
-    mutualFriends: x
-  } = (0, c.Z)(n), {
-    analyticsLocations: v
-  } = (0, s.ZP)(), {
+    mutualFriends: b
+  } = (0, s.Z)(n), {
+    analyticsLocations: j
+  } = (0, c.ZP)(), {
     context: g,
-    trackUserProfileAction: b
-  } = (0, a.KZ)(), y = (0, o.Z)();
-  return r.useEffect(() => {
+    trackUserProfileAction: v
+  } = (0, a.KZ)(), y = (0, i.Z)();
+  return l.useEffect(() => {
     (0, d.Z)(n.id, y)
-  }, [n.id, y]), (0, l.jsx)(i.zJl, {
-    className: f.listScroller,
+  }, [n.id, y]), (0, o.jsx)(r.zJl, {
+    className: p.listScroller,
     fade: true,
-    children: null == x ? (0, l.jsx)("div", {
-      className: f.empty,
-      children: (0, l.jsx)(i.$jN, {})
-    }) : 0 === x.length ? (0, l.jsxs)("div", {
-      className: f.empty,
-      children: [(0, l.jsx)("div", {
-        className: f.emptyIconFriends
-      }), (0, l.jsx)("div", {
-        className: f.emptyText,
-        children: p.intl.string(p.t["/5p4g4"])
+    children: null == b ? (0, o.jsx)("div", {
+      className: p.empty,
+      children: (0, o.jsx)(r.$jN, {})
+    }) : 0 === b.length ? (0, o.jsxs)("div", {
+      className: p.empty,
+      children: [(0, o.jsx)("div", {
+        className: p.emptyIconFriends
+      }), (0, o.jsx)("div", {
+        className: p.emptyText,
+        children: m.intl.string(m.t["/5p4g4"])
       })]
-    }) : x.map(e => {
+    }) : b.map(e => {
       let {
         key: n,
-        user: r,
-        status: i
+        user: l,
+        status: r
       } = e;
-      return (0, l.jsx)(m.Z, {
-        user: r,
-        status: i,
+      return (0, o.jsx)(f.Z, {
+        user: l,
+        status: r,
         guildId: t,
-        channelId: h,
+        channelId: x,
         onSelect: () => {
           var e, n, t;
-          null == j || j(), b({
+          null == h || h(), v({
             action: "PRESS_MUTUAL_FRIEND"
-          }), e = r.id, (0, u.openUserProfileModal)((n = function(e) {
+          }), e = l.id, (0, u.openUserProfileModal)((n = function(e) {
             for (var n = 1; n < arguments.length; n++) {
               var t = null != arguments[n] ? arguments[n] : {},
-                l = Object.keys(t);
-              "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+                o = Object.keys(t);
+              "function" == typeof Object.getOwnPropertySymbols && (o = o.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
                 return Object.getOwnPropertyDescriptor(t, e).enumerable
-              }))), l.forEach(function(n) {
-                var l;
-                l = t[n], n in e ? Object.defineProperty(e, n, {
-                  value: l,
+              }))), o.forEach(function(n) {
+                var o;
+                o = t[n], n in e ? Object.defineProperty(e, n, {
+                  value: o,
                   enumerable: true,
                   configurable: true,
                   writable: true
-                }) : e[n] = l
+                }) : e[n] = o
               })
             }
             return e
           }({}, g), t = t = {
             userId: e,
-            sourceAnalyticsLocations: v
+            sourceAnalyticsLocations: j
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(t)) : (function(e, n) {
             var t = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
-              var l = Object.getOwnPropertySymbols(e);
-              t.push.apply(t, l)
+              var o = Object.getOwnPropertySymbols(e);
+              t.push.apply(t, o)
             }
             return t
           })(Object(t)).forEach(function(e) {

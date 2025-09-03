@@ -1,4 +1,4 @@
-/** Chunk was on 30397 **/
+/** Chunk was on 18877 **/
 /** chunk id: 403239, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   q: () => s
@@ -18,13 +18,13 @@ function s(e) {
     widget: u,
     index: d,
     disableInteraction: f = false
-  } = e, b = (0, c.Z)(s), g = (0, n.useCallback)((e, t) => {
-    let r = b.slice(),
+  } = e, g = (0, c.Z)(s), b = (0, n.useCallback)((e, t) => {
+    let r = g.slice(),
       [n] = r.splice(e, 1);
-    r.splice(t, 0, n), l.Z.setPendingWidgets(r)
-  }, [b]), [{
+    r.splice(t, 0, n), o.Z.setPendingWidgets(r)
+  }, [g]), [{
     isDragging: p
-  }, m, O] = (0, a.c)({
+  }, m, O] = (0, i.c)({
     type: "WIDGET",
     item: {
       widgetId: u.id,
@@ -38,11 +38,11 @@ function s(e) {
     })
   });
   (0, n.useEffect)(() => {
-    O((0, i.r)(), {
+    O((0, a.r)(), {
       captureDraggingState: true
     })
   }, [O]);
-  let [y, j] = (0, o.L)({
+  let [y, j] = (0, l.L)({
     accept: "WIDGET",
     canDrop: () => !f,
     collect: e => ({
@@ -53,15 +53,15 @@ function s(e) {
       if (f || null == t.current || !r.isOver({
           shallow: true
         })) return;
-      let a = e.index,
-        o = null != d ? d : 0;
-      if (a === o) return;
-      let i = null == (n = t.current) ? true : n.getBoundingClientRect(),
-        l = (i.bottom - i.top) / 2,
+      let i = e.index,
+        l = null != d ? d : 0;
+      if (i === l) return;
+      let a = null == (n = t.current) ? true : n.getBoundingClientRect(),
+        o = (a.bottom - a.top) / 2,
         c = r.getClientOffset();
       if (null == c) return;
-      let s = c.y - i.top;
-      (!(a < o) || !(s < l)) && (a > o && s > l || (g(a, o), e.index = o))
+      let s = c.y - a.top;
+      (!(i < l) || !(s < o)) && (i > l && s > o || (b(i, l), e.index = l))
     }
   });
   return null == d || f ? {

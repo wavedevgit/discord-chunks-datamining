@@ -21,7 +21,7 @@ function g(e) {
     onClose: r
   } = e, {
     trackUserProfileAction: g
-  } = (0, a.KZ)(), {
+  } = (0, s.KZ)(), {
     mutualGuilds: m,
     isFetching: p
   } = (0, o.Z)(t);
@@ -42,16 +42,16 @@ function g(e) {
     }, t)) : (null != m || p) && (null == m ? true : m.length) !== 0 ? null == m ? true : m.map(e => {
       let {
         guild: i,
-        nick: a
+        nick: s
       } = e;
       return (0, n.jsx)(c.Z, {
         user: t,
         guild: i,
-        nick: a,
+        nick: s,
         onSelect: () => {
           g({
             action: "PRESS_MUTUAL_GUILD"
-          }), (0, s.X)(i.id), r(), (0, l.xf)()
+          }), (0, a.X)(i.id), r(), (0, l.xf)()
         }
       }, i.id)
     }) : (0, n.jsx)(u.b0, {})

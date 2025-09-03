@@ -1,7 +1,7 @@
-/** Chunk was on 31553 **/
+/** Chunk was on 28883 **/
 /** chunk id: 116906, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -26,85 +26,85 @@ var Chunk442837 = require("./442837.js"),
   Chunk7994 = require("./7994.js"),
   Chunk878449 = require("./878449.js");
 
-function Z(e) {
+function O(e) {
   let {
     user: n,
     currentUser: t,
-    guildId: Z,
-    subsection: P,
-    onClose: N
+    guildId: O,
+    subsection: Z,
+    onClose: P
   } = e, {
     voiceActivityStatusEnabled: T
-  } = (0, o.U)({
+  } = (0, i.U)({
     location: "UserProfileModalActivity"
-  }), E = (0, u.b)({
+  }), N = (0, u.b)({
     location: "UserProfileModalActivity"
   }), {
     live: A,
-    recent: S,
-    stream: C
-  } = (0, m.Z)(n.id), {
-    voiceChannel: w,
-    voiceActivity: _
-  } = (0, p.Z)({
+    recent: C,
+    stream: E
+  } = (0, f.Z)(n.id), {
+    voiceChannel: S,
+    voiceActivity: w
+  } = (0, m.Z)({
     userId: n.id,
-    guildId: Z
-  }), D = (0, r.e7)([s.Z], () => s.Z.isFetchingUserOutbox(n.id)), R = n.id === t.id, L = (0, r.e7)([c.Z, a.Z], () => {
-    let e = R ? c.Z.getStatus() : a.Z.getStatus(n.id);
-    return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
-  }), M = A.length > 0 || null != C, U = T && null == C && null == _ && null != w, k = !L && (M || U), B = S.length > 0;
-  return k || B || !D ? (0, l.jsxs)(i.zJl, {
-    className: O.scroller,
+    guildId: O
+  }), D = (0, l.e7)([c.Z], () => c.Z.isFetchingUserOutbox(n.id)), B = n.id === t.id, L = (0, l.e7)([s.Z, a.Z], () => {
+    let e = B ? s.Z.getStatus() : a.Z.getStatus(n.id);
+    return e === r.Skl.OFFLINE || e === r.Skl.INVISIBLE
+  }), R = A.length > 0 || null != E, M = T && null == E && null == w && null != S, U = !L && (R || M), k = C.length > 0;
+  return U || k || !D ? (0, o.jsxs)(r.zJl, {
+    className: _.scroller,
     fade: true,
-    children: [k ? (0, l.jsx)(f.Z, {
+    children: [U ? (0, o.jsx)(p.Z, {
       "aria-label": y.intl.string(y.t.J6STd3),
-      children: (0, l.jsxs)("ul", {
-        className: O.activityList,
-        children: [!E && U && (0, l.jsx)("li", {
-          children: (0, l.jsx)(v.Z, {
+      children: (0, o.jsxs)("ul", {
+        className: _.activityList,
+        children: [!N && M && (0, o.jsx)("li", {
+          children: (0, o.jsx)(j.Z, {
             user: n,
             currentUser: t,
-            voiceChannel: w,
-            onClose: N
+            voiceChannel: S,
+            onClose: P
           })
-        }), null != C && (0, l.jsx)("li", {
-          children: (0, l.jsx)(x.Z, {
+        }), null != E && (0, o.jsx)("li", {
+          children: (0, o.jsx)(b.Z, {
             user: n,
             currentUser: t,
-            stream: C,
-            onClose: N
+            stream: E,
+            onClose: P
           })
-        }), A.map((e, r) => (0, l.jsx)("li", {
-          children: (0, l.jsx)(h.Z, {
+        }), A.map((e, l) => (0, o.jsx)("li", {
+          children: (0, o.jsx)(x.Z, {
             user: n,
             currentUser: t,
             activity: e,
-            onClose: N
+            onClose: P
           })
-        }, "live-".concat(r)))]
+        }, "live-".concat(l)))]
       })
-    }) : null, B ? (0, l.jsx)(f.Z, {
+    }) : null, k ? (0, o.jsx)(p.Z, {
       heading: y.intl.string(y.t.M0zgnZ),
-      introText: R ? y.intl.format(y.t["4bk9Ag"], {
-        learnMoreHook: (e, n) => (0, l.jsx)(i.eee, {
-          href: d.Z.getArticleURL(b.BhN.ACTIVITY_STATUS_SETTINGS),
+      introText: B ? y.intl.format(y.t["4bk9Ag"], {
+        learnMoreHook: (e, n) => (0, o.jsx)(r.eee, {
+          href: d.Z.getArticleURL(v.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, n)
       }) : true,
-      scrollIntoView: P === g.Tb.RECENT_ACTIVITY,
-      children: (0, l.jsx)("ul", {
-        className: O.activityList,
-        children: S.map(e => (0, l.jsx)("li", {
-          children: (0, l.jsx)(j.Z, {
+      scrollIntoView: Z === g.Tb.RECENT_ACTIVITY,
+      children: (0, o.jsx)("ul", {
+        className: _.activityList,
+        children: C.map(e => (0, o.jsx)("li", {
+          children: (0, o.jsx)(h.Z, {
             user: n,
             entry: e,
-            onClose: N
+            onClose: P
           })
         }, e.id))
       })
     }) : null]
-  }) : (0, l.jsx)("div", {
+  }) : (0, o.jsx)("div", {
     className: I.empty,
-    children: (0, l.jsx)(i.$jN, {})
+    children: (0, o.jsx)(r.$jN, {})
   })
 }

@@ -12,9 +12,11 @@ var Chunk951288 = require("./951288.js"),
 
 function c() {
   let {
-    trackUserProfileAction: e
+    trackUserProfileEditAction: e
   } = (0, Chunk785717.KZ)(), t = Chunk647438.useCallback(() => {
-    (0, Chunk481060.ZDy)(async () => {
+    module({
+      action: "PRESS_ADD_WIDGET"
+    }), (0, Chunk481060.ZDy)(async () => {
       let {
         default: t
       } = await require.e("38576").then(require.bind(require, 925170));
@@ -38,7 +40,7 @@ function c() {
           }
           return e
         }({}, r), i = i = {
-          trackUserProfileAction: e
+          trackUserProfileEditAction: e
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

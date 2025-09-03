@@ -1,12 +1,12 @@
 /** Chunk was on 30355 **/
 /** chunk id: 299560, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk296009 = require("./296009.js"),
   Chunk481060 = require("./481060.js"),
   Chunk804919 = require("./804919.js"),
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk229870 = require("./229870.js");
-let j = {
+let b = {
   [Chunk296009.l.FAVORITE_GAMES]: {
     placeholder: {
       variant: "details",
@@ -47,26 +47,27 @@ let j = {
   }
 };
 
-function b(e) {
+function j(e) {
   let {
     widgetType: t,
     onAddWidget: r,
     size: i = "default",
-    loading: a = false,
-    trackUserProfileAction: c
+    loading: s = false,
+    trackUserProfileEditAction: c
   } = e, {
     placeholder: m,
-    getAriaLabel: b
-  } = j[t], h = "small" === i, x = l.useCallback(() => {
-    a || ((0, u.qH)(t), c({
-      action: "EDIT_ACTION"
+    getAriaLabel: j
+  } = b[t], O = "small" === i, h = l.useCallback(() => {
+    s || ((0, u.qH)(t), c({
+      action: "WIDGET_ADDED",
+      widgetEdited: t
     }), (0, d.L$)(g.qb.WIDGET_ADDED), null == r || r())
-  }, [t, r, a, c]);
+  }, [t, r, s, c]);
   return (0, n.jsxs)(o.P3F, {
-    className: s()(p.addButtonContainer, h && p.sizeSmall, a && p.loading),
-    onClick: x,
-    "aria-label": b(),
-    "aria-busy": a,
+    className: a()(p.addButtonContainer, O && p.sizeSmall, s && p.loading),
+    onClick: h,
+    "aria-label": j(),
+    "aria-busy": s,
     children: ["details" === m.variant ? (0, n.jsx)(f.i, {
       applicationId: m.applicationId,
       size: i

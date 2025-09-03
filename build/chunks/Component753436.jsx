@@ -1,4 +1,4 @@
-/** Chunk was on 30397 **/
+/** Chunk was on 18877 **/
 /** chunk id: 753436, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   S: () => p
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk594174 = require("./594174.js"),
   Chunk747101 = require("./747101.js"),
   Chunk971082 = require("./971082.jsx"),
@@ -21,32 +21,32 @@ function p(e) {
   let {
     game: t,
     userId: r,
-    widgetType: a,
+    widgetType: i,
     guildId: p,
     channelId: m,
     disableInteraction: O = false
-  } = e, y = (0, d.Z)(t.applicationId), j = y.length > 0, v = i.default.getCurrentUser(), x = (null == v ? true : v.id) === r;
-  return (0, l.kO)(t.applicationId) ? (0, n.jsx)("div", {
-    className: b.loadingCover
+  } = e, y = (0, d.Z)(t.applicationId), j = y.length > 0, v = a.default.getCurrentUser(), x = (null == v ? true : v.id) === r;
+  return (0, o.kO)(t.applicationId) ? (0, n.jsx)("div", {
+    className: g.loadingCover
   }) : (0, n.jsxs)("div", {
-    className: g.container,
+    className: b.container,
     children: [(0, n.jsx)(s.Z, {
       imageSrc: t.imageSrc,
       gameName: t.gameName,
       applicationId: t.applicationId,
       userId: r,
       disableInteraction: O,
-      className: o()(j ? g.socialProofBackdrop : true, (null == t ? true : t.imageSrc) == null || O ? true : b.hoverActiveEffect)
+      className: l()(j ? b.socialProofBackdrop : true, (null == t ? true : t.imageSrc) == null || O ? true : g.hoverActiveEffect)
     }), !O && x && (0, n.jsx)(u.Z, {
       game: t,
-      widgetType: a,
-      className: g.removeGameButton,
+      widgetType: i,
+      className: b.removeGameButton,
       iconSize: "xs"
     }), !O && j && (0, n.jsx)(c.Z, {
       label: f.intl.formatToPlainString(f.t.ujhJdH, {
         numFriends: y.length
       }),
-      className: g.socialProof,
+      className: b.socialProof,
       users: y,
       guildId: p,
       channelId: m,

@@ -1,4 +1,4 @@
-/** Chunk was on 30397 **/
+/** Chunk was on 18877 **/
 /** chunk id: 556045, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   h: () => c
@@ -10,13 +10,13 @@ var Chunk647438 = require("./647438.js"),
   Chunk86419 = require("./86419.js");
 
 function c(e) {
-  let [t, r] = n.useState(false), c = e.type, s = (0, a.e7)([o.default, i.Z], () => {
+  let [t, r] = n.useState(false), c = e.type, s = (0, i.e7)([l.default, a.Z], () => {
     var e;
-    let t = o.default.getId();
+    let t = l.default.getId();
     if (null == t) returnfalse;
-    let r = i.Z.getUserProfile(t);
+    let r = a.Z.getUserProfile(t);
     return (null != (e = null == r ? true : r.widgets) ? e : []).some(e => e.type === c)
-  }), u = (0, l.kQ)(e);
+  }), u = (0, o.kQ)(e);
   return {
     shouldShowSuggestions: !s && !t && !u,
     handleDismissSuggestions: n.useCallback(() => {
