@@ -88,24 +88,27 @@ let m = {
     dismissibleContentVersion: 4,
     firstTimeNotice: {
       getImageUrl: () => Chunk700366.Z,
-      title: () => "Gift Nitro. Get a reward.",
-      description: () => "Choose between 4 avatar decos in either a trick or treat theme.",
+      title: () => Chunk388032.intl.string(Chunk388032.t.UPFiIi),
+      description: () => Chunk388032.intl.string(Chunk388032.t["F/5kFB"]),
       cta: () => Chunk388032.intl.string(Chunk388032.t.RzWDqa),
       analyticsLocation: Chunk100527.Z.GIFTING_PROMOTION_COACHMARK,
       analyticsPage: Chunk981631.ZY5.PREMUIM_UPSELL_GIFTING_PROMOTION
     },
     eligiblePlanIds: [Chunk474936.Xh.PREMIUM_YEAR_TIER_2, Chunk474936.Xh.PREMIUM_MONTH_TIER_2],
     planSelection: {
-      heading: () => "Choose a FREE reward",
-      subheading: () => "Yours to keep if you dare...",
+      heading: () => Chunk388032.intl.string(Chunk388032.t.ruVnPj),
+      subheading: () => Chunk388032.intl.string(Chunk388032.t.q4BJSE),
+      mobileSubheading: e => s.intl.formatToPlainString(s.t.eDBuFx, {
+        rewardCount: e
+      }),
       gradientConfig: S,
       getImageUrl: () => Chunk955604.Z,
       getBannerImageUrl: () => Chunk29653.Z,
       getBackgroundImageUrl: () => Chunk154658.Z
     },
     planSelectionBanner: {
-      desktopBannerText: () => "Pick a free Halloween avatar decoration. Yours to keep with a gift purchase.",
-      mobileBannerText: () => "Free reward for YOU! Choose one you love!",
+      desktopBannerText: () => Chunk388032.intl.string(Chunk388032.t.mMgymZ),
+      mobileBannerText: () => Chunk388032.intl.string(Chunk388032.t.dAqTcH),
       getImageUrl: () => Chunk692557.Z,
       gradientConfig: () => S,
       getBackgroundImageUrl: () => Chunk306225.Z
@@ -113,8 +116,8 @@ let m = {
     billingSettingsMarketingBanner: {
       getAnimatedImageUrl: () => Chunk59144.Z,
       getStaticImageUrl: () => "",
-      title: () => "Gift Nitro, Get Treated",
-      body: () => "All treat, no jumpscare. Gift Nitro this October and get this exclusive, spooky avatar decoration for free.",
+      title: () => Chunk388032.intl.string(Chunk388032.t.CGgAyM),
+      body: () => Chunk388032.intl.string(Chunk388032.t["9rInzc"]),
       getBackgroundImageUrl: () => Chunk103865.Z
     }
   }

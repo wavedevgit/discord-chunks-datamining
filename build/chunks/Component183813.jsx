@@ -75,7 +75,7 @@ function g(e) {
     A = e => {
       S(T.find(t => t.skuId === e)), I(e)
     },
-    N = T.map(e => (0, r.jsx)(C.c, {
+    B = T.map(e => (0, r.jsx)(C.c, {
       skuId: e.skuId,
       assetId: e.assetId,
       productName: e.name,
@@ -86,7 +86,7 @@ function g(e) {
       selectedSkuId: null != w ? w : true,
       category: M
     }, e.skuId)),
-    B = (0, r.jsx)(j.O3, {
+    N = (0, r.jsx)(j.O3, {
       children: (0, r.jsx)(o.mzw, {
         className: b.modalFooter,
         children: (0, r.jsx)(p.y, {
@@ -108,13 +108,11 @@ function g(e) {
       variant: "heading-lg/bold",
       color: "header-primary",
       className: b.title,
-      children: [L.intl.string(L.t["Rp0+ZG"]), (0, r.jsx)(o.Text, {
+      children: [L.intl.string(L.t["3JCuX1"]), (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
         color: "text-secondary",
         className: b.subtitle,
-        children: L.intl.format(L.t.xGzXNT, {
-          rewardCount: T.length * d.mo
-        })
+        children: L.intl.string(L.t.MhwtRU)
       })]
     });
   return (0, r.jsxs)("div", {
@@ -134,8 +132,8 @@ function g(e) {
     }), (0, r.jsx)(o.hzk, {
       children: (0, r.jsx)("div", {
         className: b.cardsGrid,
-        children: N
+        children: B
       })
-    }), B]
+    }), N]
   })
 }
