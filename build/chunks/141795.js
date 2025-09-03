@@ -158,7 +158,7 @@ class k extends Chunk476326.ZP {
   async uploadFileToCloud() {
     let e, t;
     if (null == this.responseUrl) throw Error("_uploadFileToCloud - responseUrl is not set");
-    w.log("Uploading ".concat(this.id)), this.item.platform === Chunk476326.ow.REACT_NATIVE ? t = null != (e = {
+    w.log("Uploading ".concat(this.id), this.item.platform === Chunk476326.ow.REACT_NATIVE ? "filename=".concat(this.item.filename, ", uri=").concat(this.item.uri) : "filename=".concat(this.item.file.name)), this.item.platform === Chunk476326.ow.REACT_NATIVE ? t = null != (e = {
       type: this.item.mimeType,
       uri: this.item.uri,
       name: this.item.filename
@@ -166,7 +166,7 @@ class k extends Chunk476326.ZP {
     let n = (0, Chunk481981.m)({
       location: "CloudUpload"
     });
-    if (require.enableNewRetry) return (0, Chunk596956.Z_)(this.item) && (this._uploadHttpClient = new Chunk596956.Qn, this._libdiscoreEnabled = true), this._resumptionEnabled = require.enableResumption, await this.uploadFileWithResumption(this.responseUrl, module, exports);
+    if (require.enableNewRetry) return (0, Chunk596956.Z_)(this.item) && (this._uploadHttpClient = new Chunk596956.Qn, this._libdiscoreEnabled = true, w.log("Using libdiscore client for file upload")), this._resumptionEnabled = require.enableResumption, await this.uploadFileWithResumption(this.responseUrl, module, exports);
     let r = {
       "Content-Type": exports
     };
@@ -355,7 +355,7 @@ class k extends Chunk476326.ZP {
     w.log("Starting compression/conversion for ".concat(this.id));
     let n = await this.trackTime("compressTimeMs", async () => {
       var e;
-      return await (0, Chunk510990.J)(this, null != (e = this.reactNativeFileIndex) ? module : 0)
+      return await (0, Chunk510990.Jf)(this, null != (e = this.reactNativeFileIndex) ? module : 0)
     });
     if (null == require || null == require.file) return w.error("Failed to get compressed file for ".concat(this.id)), this;
     let r = require.uri,

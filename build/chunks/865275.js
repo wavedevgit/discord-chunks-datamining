@@ -132,7 +132,7 @@ class E extends Chunk836560.EventEmitter {
     let n = this.files.indexOf(t);
     this.files = [...this.files.slice(0, n), ...this.files.slice(n + 1)], this._file = m(p({}, this._file), {
       items: this.files
-    }), await (0, s.V)(t), t.cancel(), this.emit("cancel-upload-item", this._file), 0 === this.files.length && this.cancel()
+    }), await (0, s.V_)(t), t.cancel(), this.emit("cancel-upload-item", this._file), 0 === this.files.length && this.cancel()
   }
   upload(e, t) {
     if (null != this._cancel) throw Error("Uploader.upload(...): An upload is already in progress.");
