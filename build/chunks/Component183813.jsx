@@ -33,14 +33,14 @@ function g(e) {
     step: y
   } = (0, h.JL)(), {
     setSelectedGiftingPromotionReward: S,
-    selectedGiftingPromotionReward: E,
-    claimableRewards: v,
+    selectedGiftingPromotionReward: v,
+    claimableRewards: E,
     claimableVariants: O
   } = (0, _.wD)(), P = (0, a.e7)([u.default], () => u.default.getCurrentUser()), [w, I] = i.useState(null), k = Math.floor(Math.random() * d.mo), [M, Z] = i.useState(k);
   i.useEffect(() => {
-    null != v && v.length > 0 && null == E && S(v[0])
-  }, [v, E, S]), s()(null != l, "Expected plan to selected"), s()(null != g, "Expected selectedSkuId"), s()(null != y, "Step should be set");
-  let T = i.useMemo(() => null == O ? null != v ? v : [] : O.flatMap(e => {
+    null != E && E.length > 0 && null == v && S(E[0])
+  }, [E, v, S]), s()(null != l, "Expected plan to selected"), s()(null != g, "Expected selectedSkuId"), s()(null != y, "Step should be set");
+  let T = i.useMemo(() => null == O ? null != E ? E : [] : O.flatMap(e => {
       var t, n;
       return e.variants.length < d.mo ? [] : (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -71,29 +71,29 @@ function g(e) {
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t)
-    }), [O, v, M]),
+    }), [O, E, M]),
     A = e => {
       S(T.find(t => t.skuId === e)), I(e)
     },
-    B = T.map(e => (0, r.jsx)(C.c, {
+    N = T.map(e => (0, r.jsx)(C.c, {
       skuId: e.skuId,
       assetId: e.assetId,
       productName: e.name,
       a11yLabel: e.a11yLabel,
-      claimed: null != v && !v.some(t => t.skuId === e.skuId),
+      claimed: null != E && !E.some(t => t.skuId === e.skuId),
       user: P,
       onSelect: A,
       selectedSkuId: null != w ? w : true,
       category: M
     }, e.skuId)),
-    N = (0, r.jsx)(j.O3, {
+    B = (0, r.jsx)(j.O3, {
       children: (0, r.jsx)(o.mzw, {
         className: b.modalFooter,
         children: (0, r.jsx)(p.y, {
           onStepChange: e => {
-            null != P && null != E && x.default.track(m.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
+            null != P && null != v && x.default.track(m.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
               user_id: P.id,
-              reward_sku_id: E.skuId
+              reward_sku_id: v.skuId
             }), t(e)
           },
           onBackClick: () => t(f.h8.PLAN_SELECT),
@@ -132,8 +132,8 @@ function g(e) {
     }), (0, r.jsx)(o.hzk, {
       children: (0, r.jsx)("div", {
         className: b.cardsGrid,
-        children: B
+        children: N
       })
-    }), N]
+    }), B]
   })
 }

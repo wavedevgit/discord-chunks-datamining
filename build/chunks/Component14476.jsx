@@ -28,7 +28,7 @@ let f = e => {
     a11yLabel: L,
     selectedSkuId: b,
     category: g
-  } = e, y = i.useRef(null), S = (0, d.Z)(y), E = (0, x.m)(y), v = !f && (S || E), O = (0, c.ZP)(), P = (0, o.wj)(O), w = {
+  } = e, y = i.useRef(null), S = (0, d.Z)(y), v = (0, x.m)(y), E = !f && (S || v), O = (0, c.ZP)(), P = (0, o.wj)(O), w = {
     type: a.Z.AVATAR_DECORATION,
     label: L,
     asset: n
@@ -41,8 +41,8 @@ let f = e => {
         null != t && null != j && j(t)
       },
       className: s()(P ? h.shopCardDark : h.shopCard, {
-        [h.shopCardAnimation]: v,
-        [P ? h.shopCardDarkHighlighted : h.shopCardHighlighted]: v,
+        [h.shopCardAnimation]: E,
+        [P ? h.shopCardDarkHighlighted : h.shopCardHighlighted]: E,
         [h.shopCardSelected]: b === t
       }),
       children: [(0, r.jsx)("div", {
@@ -54,7 +54,7 @@ let f = e => {
         children: (0, r.jsx)(u.R, {
           item: w,
           user: l,
-          isHighlighted: v,
+          isHighlighted: E,
           avatarSize: C.EFr.SIZE_120,
           isPurchased: f
         })

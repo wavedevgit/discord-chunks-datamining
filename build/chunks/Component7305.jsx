@@ -38,7 +38,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk867983 = require("./867983.js");
 
-function B(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -56,7 +56,7 @@ function B(e) {
   }
   return e
 }
-let N = [Chunk409813.h8.PLAN_SELECT, Chunk409813.h8.ADD_PAYMENT_STEPS, Chunk409813.h8.REVIEW, Chunk409813.h8.CONFIRM];
+let B = [Chunk409813.h8.PLAN_SELECT, Chunk409813.h8.ADD_PAYMENT_STEPS, Chunk409813.h8.REVIEW, Chunk409813.h8.CONFIRM];
 
 function U(e) {
   let {
@@ -72,8 +72,8 @@ function U(e) {
     trialFooterMessageOverride: b,
     reviewWarningMessage: g,
     openInvoiceId: y,
-    onSubscriptionConfirmation: E,
-    renderPurchaseConfirmation: v,
+    onSubscriptionConfirmation: v,
+    renderPurchaseConfirmation: E,
     postSuccessGuild: O,
     followupSKUInfo: P,
     renderHeader: w,
@@ -81,8 +81,8 @@ function U(e) {
     guildId: k,
     referralTrialOfferId: T,
     skuId: A,
-    returnRef: B,
-    skipConfirm: N = false,
+    returnRef: N,
+    skipConfirm: B = false,
     continueSessionToInitialStep: U
   } = e, {
     analyticsLocations: R
@@ -117,8 +117,8 @@ function U(e) {
       reviewWarningMessage: g,
       planGroup: Z.Y1,
       openInvoiceId: y,
-      onSubscriptionConfirmation: E,
-      renderPurchaseConfirmation: v,
+      onSubscriptionConfirmation: v,
+      renderPurchaseConfirmation: E,
       postSuccessGuild: O,
       followupSKUInfo: P,
       renderHeader: w,
@@ -128,8 +128,8 @@ function U(e) {
       skuId: A,
       shakeWhilePurchasing: true,
       isDynamicModal: z,
-      returnRef: B,
-      skipConfirm: N,
+      returnRef: N,
+      skipConfirm: B,
       continueSessionToInitialStep: U
     })
   })
@@ -153,8 +153,8 @@ function R(e) {
     skuId: o,
     referralTrialOfferId: s
   }), x = (0, O.Fv)(u), j = (0, c.id)(C, d, p);
-  return (0, r.jsx)(L.J, (t = B({}, e), n = n = {
-    breadcrumbSteps: N,
+  return (0, r.jsx)(L.J, (t = N({}, e), n = n = {
+    breadcrumbSteps: B,
     onReturn: () => {
       let e = Object.values(a),
         t = e.length < 1 && null == i ? f.h8.PLAN_SELECT : f.h8.REVIEW;
@@ -175,10 +175,10 @@ function R(e) {
 }
 let H = [{
   key: null,
-  renderStep: e => (0, r.jsx)(m.I, B({}, e))
+  renderStep: e => (0, r.jsx)(m.I, N({}, e))
 }, {
   key: Chunk409813.h8.SKU_SELECT,
-  renderStep: e => (0, r.jsx)(w.q, B({}, e)),
+  renderStep: e => (0, r.jsx)(w.q, N({}, e)),
   options: {
     renderHeader: false,
     hideSlider: true,
@@ -186,14 +186,14 @@ let H = [{
   }
 }, {
   key: Chunk409813.h8.WHAT_YOU_LOSE,
-  renderStep: e => (0, r.jsx)(I.x, B({}, e)),
+  renderStep: e => (0, r.jsx)(I.x, N({}, e)),
   options: {
     renderHeader: false,
     hideSlider: true
   }
 }, {
   key: Chunk409813.h8.PLAN_SELECT,
-  renderStep: e => (0, r.jsx)(P.x, B({}, e)),
+  renderStep: e => (0, r.jsx)(P.x, N({}, e)),
   options: {
     renderHeader: true,
     useBreadcrumbLabel: e => (0, O.Fv)(e) ? null : T.intl.string(T.t["r+SebW"]),
@@ -201,7 +201,7 @@ let H = [{
   }
 }, {
   key: Chunk409813.h8.ADD_PAYMENT_STEPS,
-  renderStep: e => (0, r.jsx)(R, B({}, e)),
+  renderStep: e => (0, r.jsx)(R, N({}, e)),
   options: {
     renderHeader: true,
     useBreadcrumbLabel: e => (0, O.Fv)(e) ? null : T.intl.string(T.t.Sb6wIy)
@@ -214,17 +214,17 @@ let H = [{
   renderStep: () => (0, Chunk951288.jsx)(Chunk793541.Z, {})
 }, {
   key: Chunk409813.h8.REVIEW,
-  renderStep: e => (0, r.jsx)(y.l, B({}, e)),
+  renderStep: e => (0, r.jsx)(y.l, N({}, e)),
   options: {
     renderHeader: true,
     useBreadcrumbLabel: e => (0, O.Fv)(e) ? T.intl.string(T.t.UKbp1N) : T.intl.string(T.t.QBnNHh)
   }
 }, {
   key: Chunk409813.h8.CONFIRM,
-  renderStep: e => (0, r.jsx)(E.b, B({}, e))
+  renderStep: e => (0, r.jsx)(v.b, N({}, e))
 }, {
   key: Chunk409813.h8.SELECT_FREE_SKU,
-  renderStep: e => (0, r.jsx)(v.S, B({}, e)),
+  renderStep: e => (0, r.jsx)(E.S, N({}, e)),
   options: {
     bodyClassName: Chunk867983.selectFreeSku,
     isDynamicModal: true
@@ -273,7 +273,7 @@ function F(e) {
           giftMessage: p,
           giftStyle: f,
           giftingOrigin: c,
-          children: (0, r.jsx)(U, B({}, e))
+          children: (0, r.jsx)(U, N({}, e))
         })
       })
     })

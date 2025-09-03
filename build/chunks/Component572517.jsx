@@ -27,23 +27,27 @@ function x() {
     } = (0, Chunk987209.wD)();
   if (null == f || null == j) return null;
   let m = null == (e = f.getBackgroundImageUrl) ? true : module.call(f, _),
-    L = null == (t = f.gradientConfig) ? true : exports.call(f, {
+    L = (0, Chunk717401.Yr)(m),
+    b = null == (t = f.gradientConfig) ? true : exports.call(f, {
       isDarkMode: _,
       isAndroid: false
     }),
-    b = (0, Chunk717401.Tl)(L);
+    g = (0, Chunk717401.Tl)(b);
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk432483.promotionalFooterBanner,
-    style: null != m ? {
-      backgroundImage: "url(".concat(m, ")")
-    } : b,
-    children: [(0, Chunk951288.jsx)(Chunk897942.Z, {
-      claimableRewards: j,
-      maxRewardImageSrc: f.getImageUrl(_, require),
-      size: Chunk481060.EFr.SIZE_40
+    style: null != L ? L : g,
+    children: [(0, Chunk951288.jsx)("div", {
+      className: Chunk432483.avatar,
+      children: (0, Chunk951288.jsx)(Chunk897942.Z, {
+        claimableRewards: j,
+        maxRewardImageSrc: f.getImageUrl(_, require),
+        size: Chunk481060.EFr.SIZE_40,
+        imageScaling: 2
+      })
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/medium",
       className: Chunk432483.bannerText,
+      color: "always-white",
       children: f.desktopBannerText(j.length)
     })]
   })

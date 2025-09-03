@@ -4,6 +4,7 @@
 require.d(exports, {
   Tl: () => _,
   YV: () => c,
+  Yr: () => p,
   a5: () => f,
   cF: () => d,
   iE: () => o,
@@ -70,5 +71,14 @@ function _(e) {
     r = Array.isArray(e) || null == e.angle ? t : e.angle;
   return {
     background: "linear-gradient(".concat(r, "deg, ").concat(n.join(", "), ")")
+  }
+}
+
+function p(e) {
+  if (null != e) return {
+    backgroundImage: "url(".concat(e, ")"),
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat"
   }
 }

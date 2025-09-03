@@ -480,7 +480,7 @@ function ej(e) {
   } = e;
   $ = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
   let n = new URLSearchParams;
-  n.append("build_id", "0a14da9f87f6fa0e04c8214f509afe462bf8aadb"), n.append("rpc", String(t)), n.append("rpc_auth_token", $), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+  n.append("build_id", "83087f90dcef1f0501cc05c84907f87a8ec25a87"), n.append("rpc", String(t)), n.append("rpc_auth_token", $), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
 }
 
 function eM(e) {

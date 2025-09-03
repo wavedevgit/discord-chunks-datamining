@@ -30,8 +30,8 @@ function g(e) {
       onSubscriptionConfirmation: g,
       renderPurchaseConfirmation: y,
       postSuccessGuild: S,
-      followupSKUInfo: E,
-      continueSessionToInitialStep: v
+      followupSKUInfo: v,
+      continueSessionToInitialStep: E
     } = e,
     {
       activeSubscription: O,
@@ -45,8 +45,8 @@ function g(e) {
       startingFractionalPremiumEndsAtRef: A
     } = (0, _.JL)(),
     {
-      isGift: B,
-      giftRecipient: N,
+      isGift: N,
+      giftRecipient: B,
       giftCode: U,
       hasSentMessage: R,
       isSendingMessage: H,
@@ -58,25 +58,25 @@ function g(e) {
       confirmationFooter: z
     } = (0, h.zb)(),
     W = null != z,
-    K = (0, d.id)(I, B, G),
-    Y = (0, C.Z)(),
+    Y = (0, d.id)(I, N, G),
+    K = (0, C.Z)(),
     V = (0, d.a5)(I),
     q = (0, d.tK)(null == D ? true : D.skuId),
     J = (0, m.$)(P, w),
-    X = B && null != D && V;
+    X = N && null != D && V;
   s()(null != I, "Expected plan to selected"), s()(null != k, "Expected selectedSkuId"), s()(null != M, "Step should be set");
   let Q = i.useCallback(() => {
     n(), null == g || g()
   }, [n, g]);
   return i.useEffect(() => {
-    !B || null == N || null == U || R || H || (0, p.pO)(N) || F({
+    !N || null == B || null == U || R || H || (0, p.pO)(B) || F({
       onSubscriptionConfirmation: g
     })
-  }, [F, B, N, U, R, H, g]), i.useEffect(() => {
-    null != Y && null != Y.reminderNotice && K && (0, o.wH)(a.z.GIFTING_PROMOTION_REMINDER, Y.dismissibleContentVersion, {
+  }, [F, N, B, U, R, H, g]), i.useEffect(() => {
+    null != K && null != K.reminderNotice && Y && (0, o.wH)(a.z.GIFTING_PROMOTION_REMINDER, K.dismissibleContentVersion, {
       dismissAction: b.L.INDIRECT_ACTION
     })
-  }, [Y, K]), t = null != y ? y(I, Q, Z) : null != v ? (0, r.jsx)(c.VY, {}) : B ? (0, r.jsx)(c.TB, {
+  }, [K, Y]), t = null != y ? y(I, Q, Z) : null != E ? (0, r.jsx)(c.VY, {}) : N ? (0, r.jsx)(c.TB, {
     planId: I.id,
     onClose: Q
   }) : T.current === I.id ? (0, r.jsx)(c.ZP, {
@@ -87,7 +87,7 @@ function g(e) {
     hideClose: W,
     startingFractionalPremiumEndsAt: A.current
   }) : (0, r.jsx)(c.ZP, {
-    followupSKUInfo: E,
+    followupSKUInfo: v,
     startingPremiumSubscriptionPlanId: T.current,
     planId: I.id,
     onClose: Q,

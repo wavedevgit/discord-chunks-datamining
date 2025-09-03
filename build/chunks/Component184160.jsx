@@ -30,7 +30,7 @@ function f(e) {
     startedPaymentFlowWithPaymentSourcesRef: L
   } = (0, p.JL)(), {
     isGift: b
-  } = (0, c.wD)(), g = null != f ? (0, d.Af)(f) : null, y = null != g ? (0, d.gq)(g.planId) : null, S = null != g ? (0, d.Rd)(g.planId) : null, E = (0, x.Kp)({
+  } = (0, c.wD)(), g = null != f ? (0, d.Af)(f) : null, y = null != g ? (0, d.gq)(g.planId) : null, S = null != g ? (0, d.Rd)(g.planId) : null, v = (0, x.Kp)({
     isTrial: false,
     isGift: b,
     selectedSkuId: j,
@@ -46,7 +46,7 @@ function f(e) {
       className: h.whatYouLoseButtonContainer,
       children: [(0, r.jsx)(a.zx, {
         onClick: () => {
-          E ? (m((0, x.nA)(j, f)), t(u.h8.REVIEW)) : t(u.h8.PLAN_SELECT)
+          v ? (m((0, x.nA)(j, f)), t(u.h8.REVIEW)) : t(u.h8.PLAN_SELECT)
         },
         children: _.intl.string(_.t["3PatS0"])
       }), (0, r.jsx)(a.zx, {

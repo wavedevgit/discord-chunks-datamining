@@ -239,40 +239,38 @@ function eu() {
 }
 
 function ed(e) {
-  var t, n;
+  var t, n, i;
   let {
-    className: i,
-    config: a
-  } = e, s = (0, c.e7)([O.Z], () => O.Z.useReducedMotion) ? a.getStaticImageUrl() : a.getAnimatedImageUrl(), l = null != a.getBackgroundImageUrl ? a.getBackgroundImageUrl() : true, u = (0, B.Tl)(null != (t = a.gradientConfig) ? t : true), d = {
-    color: null != (n = a.textColor) ? n : "var(--always-white)"
+    className: a,
+    config: s
+  } = e, l = (0, c.e7)([O.Z], () => O.Z.useReducedMotion) ? s.getStaticImageUrl() : s.getAnimatedImageUrl(), u = (0, B.Yr)(null == (t = s.getBackgroundImageUrl) ? true : t.call(s)), d = (0, B.Tl)(null != (n = s.gradientConfig) ? n : true), f = {
+    color: null != (i = s.textColor) ? i : "var(--always-white)"
   };
   return (0, r.jsxs)("div", {
-    className: o()(ee.giftCardPromotion, i),
-    style: null != l ? {
-      backgroundImage: "url(".concat(l, ")")
-    } : u,
+    className: o()(ee.giftCardPromotion, a),
+    style: null != u ? u : d,
     children: [(0, r.jsx)("img", {
       alt: "",
       className: ee.giftImagePromotion,
       "aria-hidden": true,
-      src: s
+      src: l
     }), (0, r.jsxs)("div", {
       className: ee.giftInfoPromotion,
       children: [(0, r.jsx)(_.X6q, {
         className: ee.giftInfoTitlePromotion,
-        style: d,
+        style: f,
         variant: "text-lg/bold",
-        children: a.title()
+        children: s.title()
       }), (0, r.jsx)(_.Text, {
         className: ee.giftText,
-        style: d,
+        style: f,
         variant: "text-sm/medium",
-        children: a.body()
-      }), null != a.additionalTerm && (0, r.jsx)(_.Text, {
+        children: s.body()
+      }), null != s.additionalTerm && (0, r.jsx)(_.Text, {
         className: ee.giftAdditionalTerm,
-        style: d,
+        style: f,
         variant: "text-xxs/normal",
-        children: a.additionalTerm()
+        children: s.additionalTerm()
       }), (0, r.jsx)(H.Z, {
         variant: "overlay-secondary",
         size: "md",

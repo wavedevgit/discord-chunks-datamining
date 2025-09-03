@@ -34,12 +34,15 @@ class u {
     this.inner = e
   }
   getCurrentConfig() {
-    return i()(null != this.inner, "experiment must be set before calling getCurrentConfig"), this.inner.getCurrentConfig({
+    return (i()(null != this.inner, "experiment must be set before calling getCurrentConfig"), "getCurrentConfig" in this.inner) ? this.inner.getCurrentConfig({
+      location: "default"
+    }) : this.inner.getConfig({
       location: "default"
     })
   }
-  constructor(e) {
-    s(this, "id", true), s(this, "inner", true), s(this, "cachedConfig", true), this.id = e, this.inner = null, this.cachedConfig = c, l.push(this)
+  constructor(e, t) {
+    var n;
+    s(this, "id", true), s(this, "inner", true), s(this, "cachedConfig", true), s(this, "legacyExperiment", true), this.id = e, this.inner = null, this.cachedConfig = c, l.push(this), this.legacyExperiment = null != (n = null == t ? true : t.legacyExperiment) && n
   }
 }
 class d extends u {
@@ -77,8 +80,8 @@ class d extends u {
       label: "Use libdiscore as the source of truth"
     }]
   }
-  constructor(e, t, n = "Kv") {
-    super(e), s(this, "storeName", true), s(this, "type", true), this.storeName = t, this.type = n
+  constructor(e, t, n, r) {
+    super(e, r), s(this, "storeName", true), s(this, "type", true), this.storeName = t, this.type = n
   }
 }
 class f extends u {
@@ -124,7 +127,11 @@ class f extends u {
     super(...e), s(this, "MAX_EMISSIONS_PER_APP_LAUNCH", 5), s(this, "emissionsCount", 0)
   }
 }
-let _ = new d("2025-05_libdiscore_notestore_v2", "NoteStore"),
-  p = new d("2025-07_libdiscore_guildstore_v2", "GuildStore"),
-  h = new d("2025-08_libdiscore_guildrolestore", "GuildRoleStore", "Kkv");
-new f("2025-07_libdiscore_telemetry")
+let _ = new d("2025-05_libdiscore_notestore_v2", "NoteStore", "Kv", {
+    legacyExperiment: true
+  }),
+  p = new d("2025-07_libdiscore_guildstore_v2", "GuildStore", "Kv", {
+    legacyExperiment: true
+  }),
+  h = new d("2025-09-libdiscore-guildrolestore", "GuildRoleStore", "Kkv");
+new f("2025-09-libdiscore-telemetry")

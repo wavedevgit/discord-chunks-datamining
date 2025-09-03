@@ -22,22 +22,20 @@ function f() {
     } = (0, Chunk987209.wD)(),
     f = (0, Chunk347896.Z)(),
     _ = null == f ? true : f.planSelection,
-    p = null == _ || null == (e = _.getBannerImageUrl) ? true : module.call(_),
+    p = (0, Chunk717401.Yr)(null == _ || null == (e = _.getBannerImageUrl) ? true : module.call(_)),
     h = (0, Chunk717401.Tl)(null == _ ? true : _.gradientConfig);
   return null == _ || null == require || 0 === require.length ? null : (0, Chunk951288.jsxs)("div", {
     className: Chunk487276.container,
-    style: null != p ? {
-      backgroundImage: "url(".concat(p, ")")
-    } : h,
+    style: null != p ? p : h,
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk487276.textSection,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
-        color: "text-primary",
+        color: "always-white",
         children: _.heading()
       }), null != _.subheading && require.length > 1 && (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
-        className: Chunk487276.subheading,
+        color: "always-white",
         children: _.subheading(require.length)
       })]
     }), (0, Chunk951288.jsx)("div", {
@@ -46,7 +44,7 @@ function f() {
         maxRewardImageSrc: _.getImageUrl(true, exports),
         claimableRewards: require,
         size: Chunk481060.EFr.SIZE_48,
-        imageScaling: 2.1
+        imageScaling: 2.4
       })
     })]
   })
