@@ -2,8 +2,8 @@
 /** chunk id: 218390, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C: () => ed,
-  Z: () => e_
+  C: () => ef,
+  Z: () => ep
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,6 +13,7 @@ var Chunk951288 = require("./951288.js"),
   l = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
   Chunk622535 = require("./622535.js"),
+  Chunk159691 = require("./159691.js"),
   Chunk780384 = require("./780384.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -59,62 +60,62 @@ var Chunk951288 = require("./951288.js"),
   Chunk458622 = require("./458622.js"),
   Chunk881188 = require("./881188.js"),
   Chunk434691 = require("./434691.js");
-let er = "to_subscriptions_button",
-  ei = "subscriptions settings",
-  ea = "to_premium_home_button",
-  eo = "premium home page",
-  es = "gifting_button",
-  el = "payment modal";
+let ei = "to_subscriptions_button",
+  ea = "subscriptions settings",
+  eo = "to_premium_home_button",
+  es = "premium home page",
+  el = "gifting_button",
+  ec = "payment modal";
 
-function ec(e) {
+function eu(e) {
   let {
     premiumSubscription: t,
     isDiscountApplied: n,
     activeDiscountInfo: i,
     theme: a
-  } = e, o = t.hasActiveTrial, s = t.planIdFromItems === Q.Xh.PREMIUM_YEAR_TIER_2, c = n || o, u = null != t.trialEndsAt ? l()(t.trialEndsAt).diff(l()(), "d") : 0, f = Q.GP[t.planIdFromItems], p = j.ZP.formatPriceString(j.ZP.getDefaultPrice(f.id), f.interval), {
+  } = e, o = t.hasActiveTrial, s = t.planIdFromItems === J.Xh.PREMIUM_YEAR_TIER_2, c = n || o, u = null != t.trialEndsAt ? l()(t.trialEndsAt).diff(l()(), "d") : 0, d = J.GP[t.planIdFromItems], _ = M.ZP.formatPriceString(M.ZP.getDefaultPrice(d.id), d.interval), {
     enabled: h
-  } = U.T.getCurrentConfig({
+  } = G.T.getCurrentConfig({
     location: "SubscriptionUserHeroSubheader"
   }), m = () => {
     var e, t, n;
-    return h ? "" : o ? $.intl.format($.t["2CGBrq"], {
+    return h ? "" : o ? ee.intl.format(ee.t["2CGBrq"], {
       remainingTime: u,
-      price: p
-    }) : s ? $.intl.format($.t["+qqh6u"], {
-      percent: null != (e = null == i ? true : i.percentage) ? e : Q.Bo,
-      regularPrice: p
-    }) : $.intl.formatToPlainString($.t["3Ziutb"], {
-      percent: null != (t = null == i ? true : i.percentage) ? t : Q.M_,
-      regularPrice: p,
-      numMonths: null != (n = null == i ? true : i.duration) ? n : Q.rt
+      price: _
+    }) : s ? ee.intl.format(ee.t["+qqh6u"], {
+      percent: null != (e = null == i ? true : i.percentage) ? e : J.Bo,
+      regularPrice: _
+    }) : ee.intl.formatToPlainString(ee.t["3Ziutb"], {
+      percent: null != (t = null == i ? true : i.percentage) ? t : J.M_,
+      regularPrice: _,
+      numMonths: null != (n = null == i ? true : i.duration) ? n : J.rt
     })
   };
   return c ? (0, r.jsxs)(r.Fragment, {
-    children: [(o || !s) && (0, r.jsx)(W.Cy, {
-      text: o ? $.intl.string($.t.qYKftb) : $.intl.string($.t.EyjDRE),
-      className: ee.topRimPillWithSparkles,
-      colorOptions: (0, d.wj)(a) ? W.VE.PREMIUM_TIER_2_WHITE_FILL : W.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL
+    children: [(o || !s) && (0, r.jsx)(K.Cy, {
+      text: o ? ee.intl.string(ee.t.qYKftb) : ee.intl.string(ee.t.EyjDRE),
+      className: et.topRimPillWithSparkles,
+      colorOptions: (0, f.wj)(a) ? K.VE.PREMIUM_TIER_2_WHITE_FILL : K.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL
     }), (o || !s) && (0, r.jsx)("div", {
-      className: ee.rimGlowTier2
-    }), (0, r.jsx)(_.X6q, {
+      className: et.rimGlowTier2
+    }), (0, r.jsx)(p.X6q, {
       variant: "heading-md/normal",
       color: "always-white",
-      className: ee.trialHeader,
+      className: et.trialHeader,
       children: m()
     })]
   }) : h ? (0, r.jsx)("div", {
     style: {
       marginBottom: "18px"
     }
-  }) : (0, r.jsx)(z.Z, {
+  }) : (0, r.jsx)(q.Z, {
     variant: true,
-    subscriptionTier: Q.Si.TIER_2,
-    interval: f.interval
+    subscriptionTier: J.Si.TIER_2,
+    interval: d.interval
   })
 }
 
-function eu() {
+function ed() {
   let e = (0, Chunk140465.t7)(),
     t = (0, Chunk140465.lr)(),
     n = (0, Chunk410030.ZP)(),
@@ -124,9 +125,9 @@ function eu() {
     l = null !== Chunk647438 && null !== Chunk647438.planIdFromItems;
   if (!l && !Chunk120356.isFractionalPremiumActive) return null;
   let u = Chunk120356.isFractionalPremiumActive,
-    p = null !== Chunk647438 && Chunk647438.hasActiveTrial,
-    h = module || Chunk570140,
-    g = () => Chunk622535 && !Chunk913527 ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    h = null !== Chunk647438 && Chunk647438.hasActiveTrial,
+    m = module || Chunk570140,
+    E = () => Chunk622535 && !Chunk913527 ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk382791.mn, {
         text: Chunk388032.intl.string(Chunk388032.t.uXF4c3),
         className: Chunk458622.fractionalPremiumTopRimPill,
@@ -139,7 +140,7 @@ function eu() {
           helpCenterLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.FRACTIONAL_PREMIUM_ABOUT)
         })
       })]
-    }) : l ? (0, Chunk951288.jsx)(ec, {
+    }) : l ? (0, Chunk951288.jsx)(eu, {
       premiumSubscription: Chunk647438,
       isDiscountApplied: module,
       activeDiscountInfo: exports,
@@ -158,62 +159,54 @@ function eu() {
         })
       })]
     }) : null,
-    b = () => Chunk622535 && !l ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    y = () => Chunk622535 && !l ? (0, Chunk951288.jsxs)(Chunk159691.hE, {
+      fullWidth: true,
+      direction: "vertical",
       children: [(0, Chunk951288.jsx)(Chunk767714.Z, {
         textOptions: {
           textOverride: Chunk913527 ? Chunk388032.intl.string(Chunk388032.t.YScQSE) : Chunk388032.intl.string(Chunk388032.t["0b3YRk"]),
           textClassName: Chunk458622.tierCardButtonCTA
         },
-        className: Chunk458622.tierCardButton,
         color: Chunk755721.zx.Colors.WHITE,
         disableShine: true,
         showIcon: false
-      }), (0, Chunk951288.jsx)(Chunk755721.zx, {
-        className: Chunk458622.managePlanButton,
-        look: Chunk755721.zx.Looks.OUTLINED,
-        color: Chunk755721.zx.Colors.WHITE,
+      }), (0, Chunk951288.jsx)(Chunk159691.zx, {
         onClick: () => {
           Chunk626135.default.track(Chunk981631.rMx.PREMIUM_SETTINGS_INTERACTED, {
-            cta_type: ea,
-            target: eo
+            cta_type: eo,
+            target: es
           }), (0, Chunk37234.xf)(), (0, Chunk703656.uL)(Chunk981631.Z5c.APPLICATION_STORE)
         },
-        children: (0, Chunk951288.jsx)(Chunk481060.Text, {
-          variant: "text-sm/medium",
-          color: "always-white",
-          children: Chunk913527 ? Chunk388032.intl.string(Chunk388032.t.VR2iVF) : Chunk388032.intl.string(Chunk388032.t.T1aUAQ)
-        })
+        variant: "overlay-secondary",
+        fullWidth: true,
+        size: "md",
+        text: Chunk913527 ? Chunk388032.intl.string(Chunk388032.t.VR2iVF) : Chunk388032.intl.string(Chunk388032.t.T1aUAQ)
       })]
-    }) : (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [(0, Chunk951288.jsx)(Chunk755721.zx, {
-        className: Chunk458622.tierCardButton,
-        color: Chunk755721.zx.Colors.WHITE,
+    }) : (0, Chunk951288.jsxs)(Chunk159691.hE, {
+      fullWidth: true,
+      direction: "vertical",
+      children: [(0, Chunk951288.jsx)(Chunk159691.zx, {
+        variant: "overlay-primary",
+        fullWidth: true,
         onClick: () => {
           Chunk626135.default.track(Chunk981631.rMx.PREMIUM_SETTINGS_INTERACTED, {
-            cta_type: ea,
-            target: eo
+            cta_type: eo,
+            target: es
           }), (0, Chunk37234.xf)(), (0, Chunk703656.uL)(Chunk981631.Z5c.APPLICATION_STORE)
         },
-        children: (0, Chunk951288.jsx)(Chunk481060.Text, {
-          className: Chunk458622.tierCardButtonCTA,
-          variant: "text-sm/medium",
-          children: Chunk388032.intl.string(Chunk388032.t.VR2iVF)
-        })
-      }), (0, Chunk951288.jsx)(Chunk755721.zx, {
-        className: Chunk458622.managePlanButton,
-        look: Chunk755721.zx.Looks.OUTLINED,
-        color: Chunk755721.zx.Colors.WHITE,
+        text: Chunk388032.intl.string(Chunk388032.t.VR2iVF),
+        size: "md"
+      }), (0, Chunk951288.jsx)(Chunk159691.zx, {
+        variant: "overlay-secondary",
         onClick: () => {
           Chunk626135.default.track(Chunk981631.rMx.PREMIUM_SETTINGS_INTERACTED, {
-            cta_type: er,
-            target: ei
+            cta_type: ei,
+            target: ea
           }), Chunk230711.Z.open(Chunk981631.oAB.SUBSCRIPTIONS)
         },
-        children: (0, Chunk951288.jsx)(Chunk481060.Text, {
-          variant: "text-sm/medium",
-          color: "always-white",
-          children: Chunk388032.intl.string(Chunk388032.t["9uDy6O"])
-        })
+        text: Chunk388032.intl.string(Chunk388032.t["9uDy6O"]),
+        fullWidth: true,
+        size: "md"
       })]
     });
   return (0, Chunk951288.jsxs)("div", {
@@ -238,47 +231,47 @@ function eu() {
   })
 }
 
-function ed(e) {
+function ef(e) {
   var t, n, i;
   let {
     className: a,
     config: s
-  } = e, l = (0, c.e7)([O.Z], () => O.Z.useReducedMotion) ? s.getStaticImageUrl() : s.getAnimatedImageUrl(), u = (0, B.Yr)(null == (t = s.getBackgroundImageUrl) ? true : t.call(s)), d = (0, B.Tl)(null != (n = s.gradientConfig) ? n : true), f = {
+  } = e, l = (0, c.e7)([v.Z], () => v.Z.useReducedMotion) ? s.getStaticImageUrl() : s.getAnimatedImageUrl(), u = (0, Z.Yr)(null == (t = s.getBackgroundImageUrl) ? true : t.call(s)), d = (0, Z.Tl)(null != (n = s.gradientConfig) ? n : true), f = {
     color: null != (i = s.textColor) ? i : "var(--always-white)"
   };
   return (0, r.jsxs)("div", {
-    className: o()(ee.giftCardPromotion, a),
+    className: o()(et.giftCardPromotion, a),
     style: null != u ? u : d,
     children: [(0, r.jsx)("img", {
       alt: "",
-      className: ee.giftImagePromotion,
+      className: et.giftImagePromotion,
       "aria-hidden": true,
       src: l
     }), (0, r.jsxs)("div", {
-      className: ee.giftInfoPromotion,
-      children: [(0, r.jsx)(_.X6q, {
-        className: ee.giftInfoTitlePromotion,
+      className: et.giftInfoPromotion,
+      children: [(0, r.jsx)(p.X6q, {
+        className: et.giftInfoTitlePromotion,
         style: f,
         variant: "text-lg/bold",
         children: s.title()
-      }), (0, r.jsx)(_.Text, {
-        className: ee.giftText,
+      }), (0, r.jsx)(p.Text, {
+        className: et.giftText,
         style: f,
         variant: "text-sm/medium",
         children: s.body()
-      }), null != s.additionalTerm && (0, r.jsx)(_.Text, {
-        className: ee.giftAdditionalTerm,
+      }), null != s.additionalTerm && (0, r.jsx)(p.Text, {
+        className: et.giftAdditionalTerm,
         style: f,
         variant: "text-xxs/normal",
         children: s.additionalTerm()
-      }), (0, r.jsx)(H.Z, {
+      }), (0, r.jsx)(Y.Z, {
         variant: "overlay-secondary",
         size: "md",
         fullWidth: true,
         onClick: () => {
-          x.default.track(J.rMx.PREMIUM_SETTINGS_INTERACTED, {
-            cta_type: es,
-            target: el
+          L.default.track($.rMx.PREMIUM_SETTINGS_INTERACTED, {
+            cta_type: el,
+            target: ec
           })
         }
       })]
@@ -286,7 +279,7 @@ function ed(e) {
   })
 }
 
-function ef() {
+function e_() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk458622.giftCard,
     children: [(0, Chunk951288.jsx)("img", {
@@ -312,15 +305,15 @@ function ef() {
         color: Chunk755721.zx.Colors.CUSTOM,
         onClick: () => {
           Chunk626135.default.track(Chunk981631.rMx.PREMIUM_SETTINGS_INTERACTED, {
-            cta_type: es,
-            target: el
+            cta_type: el,
+            target: ec
           })
         }
       })]
     })]
   })
 }
-let e_ = function() {
+let ep = function() {
   var e;
   let t = (0, Chunk211242.Q)(),
     {
@@ -333,51 +326,51 @@ let e_ = function() {
     f = (0, Chunk975298.Z)({
       forceFetch: true
     }),
-    m = null == (e = (0, Chunk347896.Z)()) ? true : module.billingSettingsMarketingBanner,
-    E = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.enabled),
-    y = Chunk647438.useRef(null);
+    _ = null == (e = (0, Chunk347896.Z)()) ? true : module.billingSettingsMarketingBanner,
+    g = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.enabled),
+    b = Chunk647438.useRef(null);
   (0, Chunk232076.B)();
   let O = (0, Chunk533525.b)();
   Chunk647438.useEffect(() => {
     Chunk570140.Z.wait(async () => {
-      Chunk230711 || exports || await Promise.all([Chunk355467.jg(), Chunk355467.tZ(), (0, Chunk821849.Y2)(null, null, Chunk981631.JjL.DISCOVERY)]), Chunk780384(false)
+      Chunk37234 || exports || await Promise.all([Chunk355467.jg(), Chunk355467.tZ(), (0, Chunk821849.Y2)(null, null, Chunk981631.JjL.DISCOVERY)]), Chunk159691(false)
     })
-  }, [Chunk230711, exports]);
-  let [R, D] = Chunk647438.useState(false);
-  if (Chunk230711) return (0, Chunk951288.jsx)(Chunk497321.Z, {});
+  }, [Chunk37234, exports]);
+  let [v, P] = Chunk647438.useState(false);
+  if (Chunk37234) return (0, Chunk951288.jsx)(Chunk497321.Z, {});
   if (exports) return (0, Chunk951288.jsx)(Chunk89057.c8, {});
-  let L = o && null !== Chunk120356 && Chunk913527,
-    j = Chunk755721.fetched && Chunk755721.isFractionalPremiumActive;
-  if (!Chunk63063 && !Chunk74538 && !l) return (0, Chunk951288.jsx)(Chunk406128.Z, {
+  let x = o && null !== Chunk120356 && Chunk913527,
+    j = Chunk780384.fetched && Chunk780384.isFractionalPremiumActive;
+  if (!Chunk483444 && !Chunk63063 && !l) return (0, Chunk951288.jsx)(Chunk406128.Z, {
     title: Chunk388032.intl.string(Chunk388032.t.dyq9TU),
     note: null
   });
-  if (!Chunk63063 && !Chunk74538 || l) return (0, Chunk951288.jsx)(Chunk481060.$jN, {});
+  if (!Chunk483444 && !Chunk63063 || l) return (0, Chunk951288.jsx)(Chunk481060.$jN, {});
   let M = !!(null == Chunk120356 ? true : Chunk120356.hasActiveTrial);
   return (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: require,
     children: (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsxs)("div", {
-        children: [null != Chunk37234 && (0, Chunk951288.jsx)(ed, {
-          config: Chunk37234
-        }), (0, Chunk951288.jsx)(eu, {}), Chunk607070 && (0, Chunk951288.jsx)(Chunk386733.Z, {
+        children: [null != Chunk755721 && (0, Chunk951288.jsx)(ef, {
+          config: Chunk755721
+        }), (0, Chunk951288.jsx)(ed, {}), Chunk410030 && (0, Chunk951288.jsx)(Chunk386733.Z, {
           isInSettings: true
-        }), null == Chunk37234 && (0, Chunk951288.jsx)(ef, {}), (0, Chunk951288.jsx)(Chunk179984.Z, {
+        }), null == Chunk755721 && (0, Chunk951288.jsx)(e_, {}), (0, Chunk951288.jsx)(Chunk179984.Z, {
           hideCTAs: true,
           headingOverride: Chunk388032.intl.string(Chunk388032.t.dnVvQU),
-          hidePill: !Chunk140465,
+          hidePill: !Chunk74538,
           selectedPlanColumnClassName: Chunk458622.tier2PlanComparisonTableBackground,
           selectedPlanTier: Chunk474936.p9.TIER_2
         })]
       }), (0, Chunk951288.jsx)(Chunk622535.$, {
-        innerRef: Chunk410030,
+        innerRef: Chunk230711,
         onChange: e => {
-          e && !R && (x.default.track(J.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+          e && !v && (L.default.track($.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
             location_stack: n
-          }), D(true))
+          }), P(true))
         },
         children: (0, Chunk951288.jsx)("div", {
-          ref: Chunk410030,
+          ref: Chunk230711,
           className: Chunk458622.bottomOfPageVisibilitySensor
         })
       })]
