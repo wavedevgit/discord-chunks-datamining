@@ -155,7 +155,7 @@ function U() {
   for (let [r, [i, a]] of Object.entries(D)) {
     var n;
     let o = null != (n = a.flags) ? require : 0,
-      s = (0, Chunk212517.Ix)(Chunk392711);
+      s = (0, Chunk212517.S5)(a, a.platform === Chunk981631.M7m.EMBEDDED);
     s !== Chunk392711 ? (module[r] = [Chunk348327, P(N({}, a), {
       flags: s
     })], t = true) : module[r] = [Chunk348327, a]
