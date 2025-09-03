@@ -2,9 +2,9 @@
 /** chunk id: 350663, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   IV: () => E,
-  ZP: () => S,
-  bt: () => b,
-  fd: () => v
+  ZP: () => I,
+  bt: () => v,
+  fd: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -52,21 +52,21 @@ function O(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = 256,
-  v = 144;
+let v = 256,
+  b = 144;
 
 function E(e, t, n) {
   if (e === h.C5.VERTICAL) {
-    let e = Math.max(t, b),
-      n = Math.max(9 / 16 * e, v);
+    let e = Math.max(t, v),
+      n = Math.max(9 / 16 * e, b);
     return {
       tileWidth: e,
       tileHeight: n
     }
   }
-  let i = Math.max(n, v);
+  let i = Math.max(n, b);
   return {
-    tileWidth: Math.max(16 / 9 * i, b),
+    tileWidth: Math.max(16 / 9 * i, v),
     tileHeight: i
   }
 }
@@ -76,32 +76,32 @@ let _ = {
     friction: 18,
     clamp: true
   },
-  S = Chunk647438.memo(function(e) {
+  I = Chunk647438.memo(function(e) {
     let {
       widgetId: t,
       tileWidth: n,
       tileHeight: o,
-      layout: b,
-      locked: v,
+      layout: v,
+      locked: b,
       activeStreams: E,
-      streamParticipants: S,
-      participantsVersion: I,
+      streamParticipants: I,
+      participantsVersion: S,
       pinned: x,
       padding: j,
       sizeOffset: C
-    } = e, N = S.map(e => ({
+    } = e, N = I.map(e => ({
       participant: e,
       key: e.user.id,
       width: n,
       height: o,
-      locked: v,
+      locked: b,
       widgetId: t,
       pinned: x
-    })), w = (0, c.Z)(n), Z = (0, c.Z)(v), P = b === h.C5.VERTICAL, T = v || Z !== v || w !== n, k = 0, A = 0, D = (0, s.Yzy)(P ? N.map((e, t) => O(y({}, e), {
-      y: (k += e.height + (t > 0 ? j : 0)) - e.height,
+    })), w = (0, c.Z)(n), Z = (0, c.Z)(b), P = v === h.C5.VERTICAL, T = b || Z !== b || w !== n, A = 0, k = 0, D = (0, s.Yzy)(P ? N.map((e, t) => O(y({}, e), {
+      y: (A += e.height + (t > 0 ? j : 0)) - e.height,
       x: 0
     })) : N.map((e, t) => O(y({}, e), {
-      x: (A += e.width + (t > 0 ? j : 0)) - e.width,
+      x: (k += e.width + (t > 0 ? j : 0)) - e.width,
       y: 0
     })), {
       key: e => e.key,
@@ -144,7 +144,7 @@ let _ = {
       },
       config: _,
       trail: 100 * !T
-    }, T ? "animate-never" : "respect-motion-settings"), R = (0, p.ee)(() => new Set(S.map(e => e.user.id)), [S, I]), L = (0, p.ee)(() => new Set(S.filter(e => E.has((0, u.V9)(e.stream))).map(e => e.user.id)), [S, E, I]);
+    }, T ? "animate-never" : "respect-motion-settings"), R = (0, p.ee)(() => new Set(I.map(e => e.user.id)), [I, S]), L = (0, p.ee)(() => new Set(I.filter(e => E.has((0, u.V9)(e.stream))).map(e => e.user.id)), [I, E, S]);
     return r.useEffect(() => {
       0 !== R.size && (0, p.zi)(m.Odu.GO_LIVE, {
         locked: d.default.isInstanceLocked(),
@@ -159,9 +159,9 @@ let _ = {
         [g.horizontal]: !P
       }),
       style: P ? {
-        height: k
+        height: A
       } : {
-        width: A
+        width: k
       },
       children: D((e, t, r, l) => (0, i.jsx)(a.animated.div, {
         className: g.gridItem,

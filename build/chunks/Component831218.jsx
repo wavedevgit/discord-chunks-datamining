@@ -211,7 +211,7 @@ class F extends(r = Chunk647438.Component) {
       totalRowCount: n.length
     };
     {
-      let e = t.filter(e => null != e),
+      let e = t.filter(e => null != e && false !== e),
         r = e.length;
       return {
         preRenderedChildren: r,

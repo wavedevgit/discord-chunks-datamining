@@ -74,7 +74,8 @@ function f(e, t) {
     {
       position: r = c.si.position,
       component: i = c.si.component,
-      duration: o = c.si.duration
+      duration: o = c.si.duration,
+      appContext: s = c.si.appContext
     } = n;
   return {
     message: e,
@@ -83,7 +84,8 @@ function f(e, t) {
     options: {
       position: r,
       component: i,
-      duration: o
+      duration: o,
+      appContext: s
     }
   }
 }

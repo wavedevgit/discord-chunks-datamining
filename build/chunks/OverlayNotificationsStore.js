@@ -1,7 +1,7 @@
 /** Chunk was on 46290 **/
 /** chunk id: 371467, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => eb
+  Z: () => ev
 }), require("./539854.js"), require("./388685.js"), require("./642613.js"), require("./290780.js");
 var i, Chunk512722 = require("./512722.js"),
   o = require.n(Chunk512722),
@@ -196,13 +196,13 @@ function eg() {
     if (!_.Z.isFriend(e)) returnfalse;
     let r = t.gameId;
     if (null == r) returnfalse;
-    let o = null == (n = v.Z.getNowPlaying(r)[e]) ? true : n.activity;
+    let o = null == (n = b.Z.getNowPlaying(r)[e]) ? true : n.activity;
     if (null == o || o.type !== Q.IIU.PLAYING || ! function(e) {
         var t;
         let n = (null == (t = e.timestamps) ? true : t.start) != null ? e.timestamps.start : e.created_at;
         return null != n && Date.now() - n < eu
       }(o)) returnfalse;
-    let l = S.Z.getVoiceChannelId(),
+    let l = I.Z.getVoiceChannelId(),
       a = null == (i = C.Z.getDiscoverableVoiceStateForUser(e)) ? true : i.channelId;
     if (null != l && null != a && l === a) returnfalse;
     let s = (0, M.pL)();
@@ -255,7 +255,7 @@ function ey(e) {
   if (null == r || !r.isRingable() || "GUILD_RING_START" === e.type && !m.Z.getCurrentConfig({
       guildId: e.guildId,
       location: "OverlayV3StartRinging"
-    }).enabled || I.Z.getStatus() === Q.Skl.DND || h.QZ.getSetting()) returnfalse;
+    }).enabled || S.Z.getStatus() === Q.Skl.DND || h.QZ.getSetting()) returnfalse;
   let o = er.find(e => e.type === L.kL.TEXT && e.channelId === t && e.messageType === Q.uaV.CALL);
   null != o && ef(o.id), em((0, W.Z)(r), {
     priority: L.Tu.HIGH,
@@ -273,7 +273,7 @@ class eO extends(i = Chunk442837.ZP.Store) {
   }
 }
 X(eO, "displayName", "OverlayNotificationsStore");
-let eb = new eO(Chunk570140.Z, {
+let ev = new eO(Chunk570140.Z, {
   OVERLAY_UPDATE_NOTIFICATION_STATUS: function(e) {
     let {
       notificationId: t,
@@ -288,7 +288,7 @@ let eb = new eO(Chunk570140.Z, {
     } = e;
     ep(0);
     let i = null != (t = R.ZP.getFocusedPID()) ? t : P.UNSET_PID;
-    if (A.default.hasChangedRenderMode(i)) return;
+    if (k.default.hasChangedRenderMode(i)) return;
     let r = (0, Y.Z)((0, M.pL)(), n);
     null != r && em(r, {
       priority: L.Tu.URGENT,
@@ -332,7 +332,7 @@ let eb = new eO(Chunk570140.Z, {
             l = (0, z.Z)(e, t, n, a, r);
             break;
           case Q.mFx.JOIN_REQUEST:
-            if (null == (r = I.Z.getApplicationActivity(s)) || null == r.party || r.party.id !== t.activity.party_id) returnfalse;
+            if (null == (r = S.Z.getApplicationActivity(s)) || null == r.party || r.party.id !== t.activity.party_id) returnfalse;
             l = (0, F.Z)(e, n, a, r);
             break;
           case Q.mFx.STREAM_REQUEST:
@@ -344,7 +344,7 @@ let eb = new eO(Chunk570140.Z, {
             }, {
               autoTrackExposure: false
             });
-            if (!c || null == (r = I.Z.getApplicationActivity(s)) || r.application_id !== s) returnfalse;
+            if (!c || null == (r = S.Z.getApplicationActivity(s)) || r.application_id !== s) returnfalse;
             l = (0, B.Z)(e, n, a, r)
         }
         if (null == l) returnfalse;
@@ -363,7 +363,7 @@ let eb = new eO(Chunk570140.Z, {
       if (false !== e) return e
     }
     if (D.Z.isNotificationDisabled(T.OverlayNotificationDisabledSetting.TEXT_CHAT) || x.Z.disableNotifications || !(0, p.eF)(l, r)) returnfalse;
-    let c = !b.Z.isSoundDisabled(N.Ay),
+    let c = !v.Z.isSoundDisabled(N.Ay),
       u = null != (i = O.Z.getMessage(r, l.id)) ? i : (0, d.e5)(l);
     em((0, H.Z)(a, u, s, c), {
       type: L.kL.TEXT,

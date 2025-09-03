@@ -52,7 +52,7 @@ function T(e) {
   return e
 }
 
-function k(e, t) {
+function A(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -65,7 +65,7 @@ function k(e, t) {
   }), e
 }
 
-function A(e, t) {
+function k(e, t) {
   if (null == e) return {};
   var n, i, r = function(e, t) {
     if (null == e) return {};
@@ -84,10 +84,10 @@ function A(e, t) {
 function D(e) {
   let {
     participant: t
-  } = e, n = t.user.id, o = (0, a.e7)([I.Z], () => {
+  } = e, n = t.user.id, o = (0, a.e7)([S.Z], () => {
     let e = (0, m.Z)(t.type);
-    return I.Z.isLocalMute(t.user.id, e)
-  }, [t]), l = (0, a.e7)([S.default], () => S.default.getId()), {
+    return S.Z.isLocalMute(t.user.id, e)
+  }, [t]), l = (0, a.e7)([I.default], () => I.default.getId()), {
     hasVideo: d
   } = (0, E.Z)(t, l), p = o && d, f = r.useCallback(() => {
     u.Z.toggleLocalMute(n, s.Yn.STREAM)
@@ -97,8 +97,8 @@ function D(e) {
     children: e => {
       var {
         onClick: n
-      } = e, r = A(e, ["onClick"]);
-      return (0, i.jsx)(c.P3F, k(T({}, r), {
+      } = e, r = k(e, ["onClick"]);
+      return (0, i.jsx)(c.P3F, A(T({}, r), {
         className: P.controlAction,
         onClick: e => {
           e.stopPropagation(), (0, C.Ws)(w.Odu.GO_LIVE, {
@@ -129,7 +129,7 @@ function R(e, t, r) {
       let {
         default: r
       } = await n.e("5704").then(n.bind(n, 360429));
-      return n => (0, i.jsx)(r, k(T({}, n), {
+      return n => (0, i.jsx)(r, A(T({}, n), {
         stream: e.stream,
         exitFullscreen: () => {},
         appContext: t
@@ -156,7 +156,7 @@ function L(e) {
       className: P.watchActionContainer,
       children: (0, i.jsx)(c.ua7, {
         text: d,
-        children: e => (0, i.jsxs)(c.P3F, k(T({}, e), {
+        children: e => (0, i.jsxs)(c.P3F, A(T({}, e), {
           className: P.watchButton,
           onClick: () => {
             var t;
@@ -217,8 +217,8 @@ function L(e) {
             children: e => {
               var {
                 onClick: t
-              } = e, r = A(e, ["onClick"]);
-              return (0, i.jsx)(c.P3F, k(T({}, r), {
+              } = e, r = k(e, ["onClick"]);
+              return (0, i.jsx)(c.P3F, A(T({}, r), {
                 className: P.controlAction,
                 onClick: R(n, o, t),
                 children: (0, i.jsx)(c.xhG, {
@@ -259,10 +259,10 @@ let M = new Set([Chunk981631.jm8.ENDED, Chunk981631.jm8.FAILED, Chunk981631.jm8.
           style: {
             transform: "scale(".concat(m, ")")
           },
-          children: (0, i.jsx)(v.Z, {
+          children: (0, i.jsx)(b.Z, {
             participant: t,
             width: n,
-            fit: null != O ? O : b.L.CONTAIN,
+            fit: null != O ? O : v.L.CONTAIN,
             inPopout: true,
             focused: !r,
             selected: false,

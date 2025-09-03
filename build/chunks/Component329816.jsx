@@ -111,7 +111,9 @@ let X = (0, Chunk663993.Un)({
                               children: [(0, r.jsx)("div", {
                                 className: o()(u ? q.mobileApp : q.app),
                                 children: t
-                              }), (0, r.jsx)(f.Z, {}), (0, r.jsx)(I.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(d.nKe, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(D.Ox, {}), (0, r.jsx)(w.Un, {}), (0, r.jsx)(x.ot, {}), (0, r.jsx)(d.Ixi, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(L.Z, {}), (0, r.jsx)(X, {}), (0, r.jsx)(Q, {}), (0, r.jsx)(M.Z, {})]
+                              }), (0, r.jsx)(f.Z, {}), (0, r.jsx)(I.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(d.nKe, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(D.Ox, {}), (0, r.jsx)(w.Un, {}), (0, r.jsx)(x.ot, {}), (0, r.jsx)(d.Ixi, {
+                                appContext: z.IlC.APP
+                              }), (0, r.jsx)(v.Z, {}), (0, r.jsx)(L.Z, {}), (0, r.jsx)(X, {}), (0, r.jsx)(Q, {}), (0, r.jsx)(M.Z, {})]
                             })
                           })
                         })

@@ -72,16 +72,16 @@ let Z = [],
   }),
   T = P(Chunk350663.bt, Chunk350663.fd);
 
-function k(e, t, n, i, r) {
+function A(e, t, n, i, r) {
   let {
     padding: o,
     sizeOffset: l
   } = r, a = Math.max(1, i), s = (a - 1) * o, c = t * a + s, u = n * a + s;
-  return e === I.C5.HORIZONTAL ? u = n : c = t, P(c + l, u + l)
+  return e === S.C5.HORIZONTAL ? u = n : c = t, P(c + l, u + l)
 }
 
-function A(e, t, n) {
-  return k(e, _.bt, _.fd, t, n)
+function k(e, t, n) {
+  return A(e, _.bt, _.fd, t, n)
 }
 let D = e => {
   let {
@@ -93,8 +93,8 @@ let D = e => {
     containerSpecs: l
   } = e, a = 2 * r + 2 * o, s = Math.max(1, i.width - a) / Math.max(1, i.height - a), c = (() => {
     switch (t) {
-      case v.B.RESIZE_NORTH:
-      case v.B.RESIZE_SOUTH:
+      case b.B.RESIZE_NORTH:
+      case b.B.RESIZE_SOUTH:
         return {
           height: n.height, width: Math.round((n.height - a) * s + a)
         };
@@ -104,7 +104,7 @@ let D = e => {
         }
     }
   })();
-  return (0, S.S)(c, s, a, {
+  return (0, I.S)(c, s, a, {
     maxWidth: .75 * l.maxX,
     maxHeight: .75 * l.maxY
   })
@@ -123,7 +123,7 @@ function R(e) {
     width: c,
     height: u
   } = D(N({
-    operation: v.B.RESIZE_NORTH,
+    operation: b.B.RESIZE_NORTH,
     computedSize: {
       width: n.width,
       height: n.height
@@ -139,7 +139,7 @@ function R(e) {
     width: d,
     height: p
   } = D(N({
-    operation: v.B.RESIZE_NORTH,
+    operation: b.B.RESIZE_NORTH,
     computedSize: {
       width: o.width,
       height: o.height
@@ -167,7 +167,7 @@ function R(e) {
 }
 
 function L(e) {
-  var t, n, a, v, S, P;
+  var t, n, a, b, I, P;
   let {
     id: D,
     widget: L,
@@ -194,12 +194,12 @@ function L(e) {
   } = (0, c.ZP)(), et = (0, o.e7)([y.Z], () => {
     var e;
     let t = y.Z.getWidget(D);
-    return !!(0, I.ZL)(t) && !z && (null == (e = t.meta.showAllStreams) || e)
+    return !!(0, S.ZL)(t) && !z && (null == (e = t.meta.showAllStreams) || e)
   }, [D, z]), en = !G, ei = (0, o.e7)([g.Z], () => g.Z.getChannel(q)), er = (0, o.e7)([m.default], () => m.default.getId()), {
     streamParticipants: eo,
     activeStreams: el,
     participantsVersion: ea
-  } = (S = B && en || H && G, P = !B && en || !H && G, (0, o.cj)([h.Z, d.Z], () => {
+  } = (I = B && en || H && G, P = !B && en || !H && G, (0, o.cj)([h.Z, d.Z], () => {
     if (null == q) return {
       streamParticipants: Z,
       participantsVersion: false,
@@ -209,7 +209,7 @@ function L(e) {
       t = t => e.has((0, p.V9)(t.stream)),
       n = d.Z.getStreamParticipants(q).filter(e => e.user.id !== er && (!!et || t(e)));
     return n.sort((e, n) => {
-      if (S) {
+      if (I) {
         if (t(e) && !t(n)) return false;
         if (!t(e) && t(n)) return 1
       } else if (P) {
@@ -222,7 +222,7 @@ function L(e) {
       activeStreams: e,
       participantsVersion: d.Z.getParticipantsVersion(q)
     }
-  }, [q, er, et, S, P])), es = eo.length, ec = null == ei || 0 === el.size && z || 0 === es && !z, eu = G ? I.C5.HORIZONTAL : I.C5.VERTICAL, ed = {
+  }, [q, er, et, I, P])), es = eo.length, ec = null == ei || 0 === el.size && z || 0 === es && !z, eu = G ? S.C5.HORIZONTAL : S.C5.VERTICAL, ed = {
     containerWidth: J,
     containerHeight: $
   }, {
@@ -262,13 +262,13 @@ function L(e) {
       top: 0,
       left: 0,
       bottom: null != (a = null == eh ? true : eh.height) ? a : X,
-      right: null != (v = null == eh ? true : eh.width) ? v : K
+      right: null != (b = null == eh ? true : eh.width) ? b : K
     }
   };
   return (r.useEffect(() => {
-    s.Z.setGpuBoostRequested(b.zS.OVERLAY_VIDEO_STREAM_RENDERING, !ec)
+    s.Z.setGpuBoostRequested(v.zS.OVERLAY_VIDEO_STREAM_RENDERING, !ec)
   }, [ec]), (0, u.ZP)(() => () => {
-    s.Z.setGpuBoostRequested(b.zS.OVERLAY_VIDEO_STREAM_RENDERING, false)
+    s.Z.setGpuBoostRequested(v.zS.OVERLAY_VIDEO_STREAM_RENDERING, false)
   }), function(e) {
     let {
       streamParticipants: t,
@@ -295,7 +295,7 @@ function L(e) {
       if (0 === l) return void R(N({
         widgetId: t,
         size: T,
-        minSize: A(a, 1, {
+        minSize: k(a, 1, {
           padding: s,
           sizeOffset: r
         }),
@@ -308,11 +308,11 @@ function L(e) {
       } = i;
       R(N({
         widgetId: t,
-        size: k(a, d, p, l, {
+        size: A(a, d, p, l, {
           padding: s,
           sizeOffset: r
         }),
-        minSize: A(a, l, {
+        minSize: k(a, l, {
           padding: s,
           sizeOffset: r
         }),
@@ -333,11 +333,11 @@ function L(e) {
         c = w(e, ["id", "sizeOffset", "containerSize", "padding", "participants", "widget"]);
       null != s && R(N({
         widgetId: t,
-        size: A(n, a, {
+        size: k(n, a, {
           padding: l,
           sizeOffset: i
         }),
-        minSize: A(n, a, {
+        minSize: k(n, a, {
           padding: l,
           sizeOffset: i
         }),
@@ -356,7 +356,7 @@ function L(e) {
       null != r && R(N({
         widgetId: t,
         size: T,
-        minSize: A(n, 0, {
+        minSize: k(n, 0, {
           padding: l,
           sizeOffset: i
         }),

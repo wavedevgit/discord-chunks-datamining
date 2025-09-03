@@ -124,7 +124,7 @@ let $ = Chunk647438.memo(function(e) {
       onContextMenu: J,
       children: r ? null : (0, i.jsx)(L.Z, {
         className: Y.closeContainer,
-        children: (0, i.jsx)(A.Z, {
+        children: (0, i.jsx)(k.Z, {
           keybind: t,
           onClick: n,
           IconComponent: c.Uz9
@@ -139,7 +139,7 @@ let $ = Chunk647438.memo(function(e) {
     } = e;
     return t && n ? (0, i.jsx)(L.Z, {
       className: Y.closeContainer,
-      children: (0, i.jsx)(A.Z, {
+      children: (0, i.jsx)(k.Z, {
         onClick: () => d.Z.setInputLocked(false, (0, w.getPID)()),
         IconComponent: c.d$P
       })
@@ -175,15 +175,15 @@ function eo(e) {
     focused: u,
     incompatibleApp: m,
     hasZeroSizeDimension: C,
-    keybind: A
-  } = (0, a.cj)([U.ZP, I.default, x.Z, _.ZP], () => {
+    keybind: k
+  } = (0, a.cj)([U.ZP, S.default, x.Z, _.ZP], () => {
     let e = x.Z.windowSize((0, Z.ZY)(n)),
       t = _.ZP.getOverlayKeybind(),
       i = (0, w.getPID)();
     return {
       locked: U.ZP.isInputLocked(i),
       focused: U.ZP.isFocused(i),
-      incompatibleApp: I.default.incompatibleApp,
+      incompatibleApp: S.default.incompatibleApp,
       hasZeroSizeDimension: 0 === e.height || 0 === e.width,
       keybind: null != t ? (0, N.BB)(t.shortcut, true) : "???"
     }
@@ -214,15 +214,15 @@ function eo(e) {
     let t = (0, V.pL)(),
       n = E.Z.getVoiceChannelId(),
       i = O.Z.getChannel(n),
-      r = null != i ? b.Z.getGuild(i.guild_id) : null,
+      r = null != i ? v.Z.getGuild(i.guild_id) : null,
       o = null != y.Z.getCurrentUserActiveStream(),
       l = null != n,
-      a = (0, g.Z)(v.Z) && !o && null != t,
+      a = (0, g.Z)(b.Z) && !o && null != t,
       s = l && null != r && null != n,
       {
         allowActivityWidget: c
       } = (0, T.Rb)("overlay"),
-      u = null != (e = S.default.getFocusedPID()) ? e : (0, w.getPID)();
+      u = null != (e = I.default.getFocusedPID()) ? e : (0, w.getPID)();
     if (M.default.hasChangedRenderMode(u)) return;
     let p = z.Z.isNotificationDisabled(P.OverlayNotificationDisabledSetting.WELCOME_GENERAL),
       f = z.Z.isNotificationDisabled(P.OverlayNotificationDisabledSetting.GO_LIVE_NUDGE),
@@ -268,7 +268,7 @@ function eo(e) {
       className: Y.overlay,
       children: [!t && K, (0, i.jsx)($, {
         locked: o,
-        keybind: A,
+        keybind: k,
         onClick: et
       }), (0, i.jsx)(R.Z, {
         className: l()({
@@ -278,9 +278,11 @@ function eo(e) {
       }), (0, i.jsx)(W.Z, {}), !t && Q && (0, i.jsx)(ee, {
         locked: o,
         focused: u
-      }), (0, i.jsx)(k.Z, {}), (0, i.jsx)(D.Z, {
+      }), (0, i.jsx)(A.Z, {}), (0, i.jsx)(D.Z, {
         locked: o
-      }), (0, i.jsx)(c.Ixi, {})]
+      }), (0, i.jsx)(c.Ixi, {
+        appContext: H.IlC.OVERLAY
+      })]
     })
   })
 }

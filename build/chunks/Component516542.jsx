@@ -1,7 +1,7 @@
 /** Chunk was on 46290 **/
 /** chunk id: 516542, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => v
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,23 +20,23 @@ var Chunk951288 = require("./951288.js"),
   Chunk959517 = require("./959517.js"),
   Chunk572985 = require("./572985.js");
 
-function b(e) {
+function v(e) {
   let {
     id: t,
     replyToMessageId: n,
-    channel: b,
-    onSend: v
+    channel: v,
+    onSend: b
   } = e, E = (0, h.Z)(), {
     placeholder: _,
-    accessibilityLabel: S
+    accessibilityLabel: I
   } = (0, c.Z)({
-    channel: b
-  }), [I, x] = r.useState(() => (0, d.H2)()), {
+    channel: v
+  }), [S, x] = r.useState(() => (0, d.H2)()), {
     textValue: j,
     richValue: C
-  } = I, [N, w] = r.useState(false), Z = r.useCallback(() => w(true), []), P = r.useCallback(() => w(false), []);
+  } = S, [N, w] = r.useState(false), Z = r.useCallback(() => w(true), []), P = r.useCallback(() => w(false), []);
   (0, s.ZP)(() => {
-    (0, a.In)(b.id, {
+    (0, a.In)(v.id, {
       section: g.jXE.OVERLAY,
       object: g.qAy.ACK_INLINE_REPLY,
       objectType: g.Qqv.ACK_SEMI_AUTOMATIC
@@ -48,23 +48,23 @@ function b(e) {
         richValue: n
       })
     }, []),
-    k = r.useCallback(e => {
+    A = r.useCallback(e => {
       "Escape" === e.key && l.Z.updateNotificationStatus(t, g._1z.ACTIVE)
     }, [t]),
-    A = r.useCallback(() => (j.length > E || (o.Z.sendMessage(b.id, f.ZP.parse(b, j), false, {
+    k = r.useCallback(() => (j.length > E || (o.Z.sendMessage(v.id, f.ZP.parse(v, j), false, {
       location: y.dy.OVERLAY
-    }), l.Z.setInputLocked(true, (0, m.getPID)()), l.Z.updateNotificationStatus(t, g._1z.DISMISSED), null == v || v(j)), Promise.resolve({
+    }), l.Z.setInputLocked(true, (0, m.getPID)()), l.Z.updateNotificationStatus(t, g._1z.DISMISSED), null == b || b(j)), Promise.resolve({
       shouldClear: false,
       shouldRefocus: true
-    })), [j, E, b, t, v]);
+    })), [j, E, v, t, b]);
   return (0, i.jsx)("div", {
     className: O.container,
     children: (0, i.jsx)(p.ZP, {
       innerClassName: O.textArea,
       onChange: T,
       placeholder: _,
-      accessibilityLabel: S,
-      channel: b,
+      accessibilityLabel: I,
+      channel: v,
       textValue: j,
       richValue: C,
       type: u.Ie.OVERLAY_INLINE_REPLY,
@@ -72,8 +72,8 @@ function b(e) {
       onBlur: P,
       onFocus: Z,
       focused: N,
-      onSubmit: A,
-      onKeyDown: k,
+      onSubmit: k,
+      onKeyDown: A,
       autoCompletePosition: "bottom",
       disableThemedBackground: true
     })
