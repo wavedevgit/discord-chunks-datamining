@@ -198,17 +198,33 @@ function X(e) {
         placeholder: "".concat(V, "\xb0"),
         className: U.controlLabelInput
       })]
-    }), (0, r.jsx)(f.iRW, {
-      initialValue: t,
-      defaultValue: 0,
-      minValue: 0,
-      maxValue: 360,
-      onValueChange: e => {
-        (0, R.fR)(), s(e), n(e)
-      },
-      onValueRender: () => null,
-      keyboardStep: 1
-    }, a)]
+    }), (0, r.jsxs)("div", {
+      className: U.sliderWrapper,
+      children: [(0, r.jsxs)("div", {
+        className: U.angleIndicatorOverlay,
+        children: [(0, r.jsx)("div", {
+          className: U.angleIndicatorDot
+        }), (0, r.jsx)("div", {
+          className: U.angleIndicatorDot
+        }), (0, r.jsx)("div", {
+          className: U.angleIndicatorLargeDot
+        }), (0, r.jsx)("div", {
+          className: U.angleIndicatorDot
+        }), (0, r.jsx)("div", {
+          className: U.angleIndicatorDot
+        })]
+      }), (0, r.jsx)(f.iRW, {
+        initialValue: t,
+        defaultValue: 0,
+        minValue: 0,
+        maxValue: 360,
+        onValueChange: e => {
+          (0, R.fR)(), s(e), n(e)
+        },
+        onValueRender: () => null,
+        keyboardStep: 1
+      }, a)]
+    })]
   })
 }
 
