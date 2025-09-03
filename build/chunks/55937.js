@@ -10,7 +10,7 @@ let a = null;
 
 function o(e, t) {
   a || (a = r.jA.configure({
-    environmentId: "{{cf_shim}}SPRIG_API_KEY{{/cf_shim}}"
+    environmentId: window.GLOBAL_ENV.SPRIG_API_KEY
   })), a.identifyAndTrack({
     eventName: e,
     userId: i.default.getId(),
