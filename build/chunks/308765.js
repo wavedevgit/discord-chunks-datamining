@@ -264,6 +264,10 @@ let i = {
     actions: ["POST_CONNECTION_OPEN"],
     inlineRequire: () => require("./892264.js").Z
   },
+  SystemServiceManager: {
+    actions: ["POST_CONNECTION_OPEN", "LOGOUT"],
+    inlineRequire: () => require("./711926.js").Z
+  },
   VoiceFiltersCatalogManager: {
     actions: ["POST_CONNECTION_OPEN", "VOICE_FILTER_CATALOG_FETCH_SUCCESS", "VOICE_FILTER_DEV_TOOLS_SET_UPDATE_TIME"],
     inlineRequire: () => require("./886196.js").Z
