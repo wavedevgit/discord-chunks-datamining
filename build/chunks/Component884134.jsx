@@ -262,7 +262,7 @@ function Q(e) {
 function J(e) {
   let {
     isCoachmark: t
-  } = e, [n, a] = i.useState(false), o = i.useRef(false), [s, l] = i.useState(false), u = i.useRef(null), _ = i.useCallback(() => {
+  } = e, [n, a] = i.useState(false), o = i.useRef(false), [s, l] = i.useState(false), u = i.useRef(null), _ = i.useRef(null), p = i.useCallback(() => {
     var e;
     (0, R.Om)();
     let t = (0, A.C)();
@@ -279,24 +279,26 @@ function J(e) {
       null != u.current && clearTimeout(u.current)
     }
   }, [t]);
-  let p = i.useCallback(() => {
+  let h = i.useCallback(() => {
       o.current = true
     }, []),
-    h = i.useCallback(() => {
+    m = i.useCallback(() => {
       a(false)
     }, []),
-    m = n && !s;
+    g = n && !s;
   return (0, r.jsx)(d.i_, {
     title: k.intl.string(M.default.NJ9m8f),
     body: k.intl.string(M.default["6pabtb"]),
     position: "left",
-    asset: m ? (0, r.jsx)(f.$2U, {}) : true,
+    asset: g ? (0, r.jsx)(f.$2U, {}) : true,
     forceOpen: n,
-    onTooltipShow: p,
-    onTooltipHide: h,
+    onTooltipShow: h,
+    onTooltipHide: m,
+    targetElementRef: _,
     children: (0, r.jsx)(c.z, {
+      buttonRef: _,
       variant: "secondary",
-      onClick: _,
+      onClick: p,
       onMouseEnter: () => l(true),
       onMouseLeave: () => l(false),
       icon: {
@@ -305,7 +307,8 @@ function J(e) {
         riveProps: {
           dataBinding: {
             fill: f.TVs.colors.ICON_PRIMARY
-          }
+          },
+          eventTargetRef: _
         }
       },
       text: k.intl.string(M.default.c9MBEB),

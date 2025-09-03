@@ -1,4 +1,4 @@
-/** Chunk was on 72853 **/
+/** Chunk was on 59289 **/
 /** chunk id: 852758, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk815660 = require("./815660.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -65,7 +65,7 @@ function P() {
   } = (0, Chunk442837.cj)([Chunk23434.Z, Chunk210887.Z], () => ({
     action: Chunk23434.Z.getAction(),
     theme: Chunk210887.Z.theme
-  })), P = Chunk1964.Z.getVerificationTypes(module), [S, I] = Chunk647438.useState(0), k = (0, Chunk110924.Z)(P);
+  })), P = Chunk1964.Z.getVerificationTypes(module), [I, N] = Chunk647438.useState(0), S = (0, Chunk110924.Z)(P);
   (0, Chunk213609.Z)({
     type: Chunk990547.ImpressionTypes.MODAL,
     name: Chunk990547.ImpressionNames.USER_ACTION_REQUIRED,
@@ -74,12 +74,12 @@ function P() {
       verification_types: P
     }
   }, {}, [P.toString()]);
-  let N = () => {
+  let k = () => {
     (0, Chunk809206.FD)(), (0, Chunk481060.ZDy)(async () => {
       let {
         default: e
       } = await require.e("35401").then(require.bind(require, 284549));
-      return t => (0, r.jsx)(e, _({}, t))
+      return t => (0, r.jsx)(e, w({}, t))
     }, {
       modalKey: Chunk308569.F0,
       Layer: Chunk429142.ZP
@@ -88,23 +88,23 @@ function P() {
   return Chunk647438.useEffect(() => (Chunk714338.Z.disable(), () => {
     Chunk714338.Z.enable()
   }), []), Chunk647438.useEffect(() => {
-    (null == k ? true : k[0]) === Chunk981631.PUi.PHONE && (null == P ? true : P[0]) === Chunk981631.PUi.EMAIL && (0, Chunk481060.ZDy)(async () => {
+    (null == S ? true : S[0]) === Chunk981631.PUi.PHONE && (null == P ? true : P[0]) === Chunk981631.PUi.EMAIL && (0, Chunk481060.ZDy)(async () => {
       let {
         default: e
       } = await Promise.resolve().then(require.bind(require, 468026));
-      return t => (0, r.jsx)(e, A(_({}, t), {
-        title: w.intl.string(w.t.KLnLIC),
-        body: w.intl.string(w.t.XGbCq6),
-        confirmText: w.intl.string(w.t["3oK4q6"])
+      return t => (0, r.jsx)(e, A(w({}, t), {
+        title: _.intl.string(_.t.KLnLIC),
+        body: _.intl.string(_.t.XGbCq6),
+        confirmText: _.intl.string(_.t["3oK4q6"])
       }))
     }, {
       modalKey: Chunk308569.HR,
       Layer: Chunk429142.ZP,
-      onCloseCallback: N
+      onCloseCallback: k
     })
-  }, [P, k]), (0, Chunk951288.jsx)(Chunk762756.Z, {
+  }, [P, S]), (0, Chunk951288.jsx)(Chunk762756.Z, {
     types: P,
-    captchaKey: S,
+    captchaKey: I,
     onCaptchaVerify: e => {
       c.tn.post({
         url: E.ANM.CAPTCHA,
@@ -114,16 +114,16 @@ function P() {
         oldFormErrors: true,
         rejectWithError: true
       }).then(u.xf, () => {
-        I(e => e + 1)
+        N(e => e + 1)
       })
     },
     theme: exports,
     onClick: e => {
-      e === E.PUi.EMAIL_OR_PHONE || e === E.PUi.EMAIL || e === E.PUi.REVERIFY_EMAIL ? N() : (0, o.ZDy)(async () => {
+      e === E.PUi.EMAIL_OR_PHONE || e === E.PUi.EMAIL || e === E.PUi.REVERIFY_EMAIL ? k() : (0, o.ZDy)(async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 607018));
-        return t => (0, r.jsx)(e, _({
+        return t => (0, r.jsx)(e, w({
           reason: h.L.USER_ACTION_REQUIRED
         }, t))
       }, {
@@ -137,15 +137,15 @@ function P() {
           ConfirmModal: e,
           Text: t
         } = await Promise.resolve().then(require.bind(require, 481060));
-        return n => (0, r.jsx)(e, A(_({
-          header: w.intl.string(w.t["2jxGen"]),
-          confirmText: w.intl.string(w.t["2jxGen"]),
-          cancelText: w.intl.string(w.t["ETE/oK"]),
+        return n => (0, r.jsx)(e, A(w({
+          header: _.intl.string(_.t["2jxGen"]),
+          confirmText: _.intl.string(_.t["2jxGen"]),
+          cancelText: _.intl.string(_.t["ETE/oK"]),
           onConfirm: () => s.Z.logout("verification")
         }, n), {
           children: (0, r.jsx)(t, {
             variant: "text-md/normal",
-            children: w.intl.string(w.t.SUnWBA)
+            children: _.intl.string(_.t.SUnWBA)
           })
         }))
       }, {

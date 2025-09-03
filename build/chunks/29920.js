@@ -1,17 +1,18 @@
-/** Chunk was on 1272 **/
+/** Chunk was on 59289 **/
 /** chunk id: 29920, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  He: () => a
+  He: () => c,
+  Ul: () => o
 });
-var Chunk544891 = require("./544891.js");
-require("./570140.js");
-var Chunk960048 = require("./960048.js"),
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk960048 = require("./960048.js"),
   Chunk981631 = require("./981631.js");
-async function a(e) {
+async function c(e) {
   let {
     userTrialOffer: t,
     userDiscount: n,
-    userDiscountOffer: a
+    userDiscountOffer: i
   } = e;
   try {
     let e = await r.tn.post({
@@ -19,13 +20,30 @@ async function a(e) {
       body: {
         user_trial_offer: t,
         user_discount: n,
-        user_discount_offer: a
+        user_discount_offer: i
       },
       rejectWithError: true
     });
     if (e.ok) return e.body;
-    return i.Z.captureMessage("fetchPremiumMarketingContentWithUserOffer failed"), []
+    return a.Z.captureMessage("fetchPremiumMarketingContentWithUserOffer failed"), []
   } catch (e) {
     return []
+  }
+}
+async function o(e) {
+  let {
+    subscriptionId: t
+  } = e;
+  try {
+    let e = await r.tn.post({
+      url: l.ANM.BILLING_SUBSCRIPTION_PROMOTION_REWARD(t),
+      rejectWithError: true
+    });
+    return i.Z.dispatch({
+      type: "ENTITLEMENT_CREATE",
+      entitlement: e.body
+    }), e.ok
+  } catch (e) {
+    returnfalse
   }
 }
