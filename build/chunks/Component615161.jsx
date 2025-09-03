@@ -187,12 +187,13 @@ function C(e, t, n) {
     modalStep: _
   }));
   return i.useEffect(() => {
+    var e, t;
     a.Z.hasPermission(h.Eu.SCREEN_RECORDING, {
       showAuthorizationError: false
     }).then(e => I({
       type: "set_has_permission",
       value: e
-    })), o.Z.window.getMediaSourceId().then(e => {
+    })), null == (e = (t = o.Z.window).getMediaSourceId) || e.call(t).then(e => {
       I({
         type: "set_discord_source_id",
         sourceId: null != e ? e : ""

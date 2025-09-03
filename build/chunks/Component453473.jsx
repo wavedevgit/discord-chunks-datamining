@@ -318,7 +318,7 @@ function X(e) {
       })
     }, "edit-reminder"), (0, r.jsx)(y.fO, {}), (0, r.jsx)(y.sF, {
       label: j.intl.string(j.t["+TSRGB"]),
-      icon: p.d4D,
+      icon: p.acy,
       onClick: e => i(e)
     }, "jump-to-message"), (0, r.jsx)(y.sF, {
       label: j.intl.string(j.t.SvXS1d),
@@ -340,7 +340,7 @@ function X(e) {
       })
     }, "create-reminder"), (0, r.jsx)(y.sF, {
       label: j.intl.string(j.t["+TSRGB"]),
-      icon: p.d4D,
+      icon: p.acy,
       onClick: e => i(e)
     }, "jump-to-message"), (0, r.jsx)(y.sF, {
       label: j.intl.string(j.t.SvXS1d),

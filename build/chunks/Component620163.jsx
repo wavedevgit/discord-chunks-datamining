@@ -1476,6 +1476,11 @@ let e3 = () => {
         parent: eH.s6.NOTIFICATIONS,
         predicate: () => (0, V.JN)("SettingsRendererConfig")
       },
+      [eH.s6.NOTIFICATIONS_GO_LIVE]: {
+        section: eW.oAB.NOTIFICATIONS,
+        searchableTitles: [eq.intl.string(eq.t.pW4TMj)],
+        parent: eH.s6.NOTIFICATIONS
+      },
       [eH.s6.KEYBINDS]: {
         section: eW.oAB.KEYBINDS,
         searchableTitles: [eq.intl.string(eq.t.T9DA2N)],
