@@ -115,7 +115,7 @@ let W = e => {
       eb = S.ZP.useExperiment({
         location: "NitroTabButton"
       }),
-      e_ = (0, G.Kn)("NitroTabButton") && eb.cohort === S.xI.Control,
+      e_ = (0, G.Kn)() && eb.cohort === S.xI.Control,
       eO = eo && null != ed && null != et && et.status === H.O0b.CANCELED,
       {
         fractionalState: eE,

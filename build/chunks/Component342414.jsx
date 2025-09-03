@@ -361,35 +361,34 @@ let $ = (e, t, i) => {
   eo = e => {
     let {
       className: t,
-      location: n,
-      enablePremiumBrandRefresh: i,
-      buttonVisibilityRef: o,
-      userDiscountOffer: s,
-      discountedPrice: c
+      enablePremiumBrandRefresh: n,
+      buttonVisibilityRef: i,
+      userDiscountOffer: o,
+      discountedPrice: s
     } = e, {
-      analyticsLocations: h
-    } = (0, d.ZP)(u.Z.PREMIUM_MARKETING_HERO_CTA), m = (0, O.W)(), E = (0, b.Vi)(), v = (0, y._O)(), I = H.intl.string(H.t.qYKftb), S = (0, C.b)(n), T = (0, r.jsx)(et, {
+      analyticsLocations: c
+    } = (0, d.ZP)(u.Z.PREMIUM_MARKETING_HERO_CTA), h = (0, O.W)(), m = (0, b.Vi)(), E = (0, y._O)(), v = H.intl.string(H.t.qYKftb), I = (0, C.b)(), S = (0, r.jsx)(et, {
       className: t
-    }), A = H.intl.string(H.t.ifwQZW), {
-      fractionalState: N,
-      endsAt: R
-    } = (0, _.Z)(), P = (0, f.ZP)(R, f.aj.CREDITS_ENDS_IN);
-    m || E ? T = (0, r.jsx)(er, {
-      isEligibleForBogoPromotion: E
-    }) : S && (I = H.intl.string(H.t.qYKftb), T = (0, r.jsx)(en, {}));
-    let w = null;
-    if (N === F.a$.NONE || m) w = i ? (0, r.jsx)(U.Z, {
+    }), T = H.intl.string(H.t.ifwQZW), {
+      fractionalState: A,
+      endsAt: N
+    } = (0, _.Z)(), R = (0, f.ZP)(N, f.aj.CREDITS_ENDS_IN);
+    h || m ? S = (0, r.jsx)(er, {
+      isEligibleForBogoPromotion: m
+    }) : I && (v = H.intl.string(H.t.qYKftb), S = (0, r.jsx)(en, {}));
+    let P = null;
+    if (A === F.a$.NONE || h) P = n ? (0, r.jsx)(U.Z, {
       enablePremiumBrandRefresh: true,
-      text: I
+      text: v
     }) : (0, r.jsx)(L.Cy, {
       className: a()(Y.trialPill, {
-        [Y.hidden]: !v
+        [Y.hidden]: !E
       }),
-      text: I,
+      text: v,
       colorOptions: L.VE.PREMIUM_TIER_2_WHITE_FILL
     });
     else {
-      v = true;
+      E = true;
       let e = (0, r.jsx)("div", {
           className: Y.pillIcon,
           children: (0, r.jsx)(l.d3s, {
@@ -400,7 +399,7 @@ let $ = (e, t, i) => {
         t = H.intl.format(H.t["yR+oDA"], {
           helpCenterLink: g.Z.getArticleURL(V.BhN.FRACTIONAL_PREMIUM_ABOUT)
         });
-      w = (0, r.jsx)(p.Z, {
+      P = (0, r.jsx)(p.Z, {
         text: t,
         "aria-label": t.toString(),
         tooltipClassName: Y.tooltip,
@@ -409,14 +408,14 @@ let $ = (e, t, i) => {
           className: Y.pillContainer,
           children: (0, r.jsx)("div", {
             className: Y.flexCentered,
-            children: i ? (0, r.jsx)(U.Z, {
+            children: n ? (0, r.jsx)(U.Z, {
               enablePremiumBrandRefresh: true,
-              text: P
+              text: R
             }) : (0, r.jsx)(L.mn, {
               className: a()(Y.trialPill, {
-                [Y.hidden]: !v
+                [Y.hidden]: !E
               }),
-              text: P,
+              text: R,
               colorOptions: L.VE.PREMIUM_TIER_2_WHITE_FILL,
               icon: e,
               gap: false
@@ -426,22 +425,22 @@ let $ = (e, t, i) => {
       })
     }
     return (0, r.jsx)(d.Gt, {
-      value: h,
+      value: c,
       children: (0, r.jsx)(ei.Provider, {
         value: {
-          headingText: A,
-          headingTop: w,
-          showPill: v,
-          userDiscountOffer: s,
-          discountedPrice: c,
-          buttonVisibilityRef: o
+          headingText: T,
+          headingTop: P,
+          showPill: E,
+          userDiscountOffer: o,
+          discountedPrice: s,
+          buttonVisibilityRef: i
         },
-        children: i ? (0, r.jsx)(ee, {
+        children: n ? (0, r.jsx)(ee, {
           className: t,
-          isEligibleForBogoPromotion: E,
-          isInReverseTrial: m,
-          shouldShowReferralProgressBar: S
-        }) : T
+          isEligibleForBogoPromotion: m,
+          isInReverseTrial: h,
+          shouldShowReferralProgressBar: I
+        }) : S
       })
     })
   }

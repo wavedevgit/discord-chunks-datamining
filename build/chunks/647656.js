@@ -64,88 +64,90 @@ let _ = ["1402418171662569542"],
         }).allow(null)
       }),
       handler(e) {
-        var t;
-        let n, {
-          socket: r,
+        var t, n, r;
+        let l, {
+          socket: a,
           args: {
-            pid: l,
-            activity: a
+            pid: g,
+            activity: O
           },
-          isSocketConnected: g
+          isSocketConnected: E
         } = e;
-        if (![m.He.IPC, m.He.WEBSOCKET, m.He.POST_MESSAGE].includes(r.transport)) throw new h.Z({
+        if (![m.He.IPC, m.He.WEBSOCKET, m.He.POST_MESSAGE].includes(a.transport)) throw new h.Z({
           errorCode: b.lTL.INVALID_COMMAND
-        }, 'command not available from "'.concat(r.transport, '" transport'));
-        if (null == l && m.He.IPC === r.transport) throw new h.Z({
+        }, 'command not available from "'.concat(a.transport, '" transport'));
+        if (null == g && m.He.IPC === a.transport) throw new h.Z({
           errorCode: b.lTL.INVALID_COMMAND
         }, "nonzero pid required");
-        if (null == a) return o.Z.dispatch({
+        if (null == O) return o.Z.dispatch({
           type: "LOCAL_ACTIVITY_UPDATE",
-          socketId: r.id,
-          pid: l,
-          activity: a
-        }), Promise.resolve(a);
-        let O = {};
-        a.name = r.application.name;
-        let E = r.application.id;
-        a.application_id = E;
-        let y = r.transport === m.He.POST_MESSAGE;
-        a.platform = y ? b.M7m.EMBEDDED : b.M7m.DESKTOP;
-        let v = c.Z.getApplication(null != E ? E : true),
-          I = 0;
-        null != v && (0, u.g)(v) && y && (I |= (0, s.ZW)(I));
-        let C = (0, s.S5)(a, y);
-        C > 0 && (a.flags = C | I), delete a.instance, null == (t = a.party) || delete t.privacy;
+          socketId: a.id,
+          pid: g,
+          activity: O
+        }), Promise.resolve(O);
+        let y = {};
+        O.name = a.application.name;
+        let v = a.application.id;
+        O.application_id = v;
+        let I = a.transport === m.He.POST_MESSAGE;
+        O.platform = I ? b.M7m.EMBEDDED : b.M7m.DESKTOP;
+        let C = c.Z.getApplication(null != v ? v : true),
+          S = null != (r = O.instance) && r,
+          N = null == (t = O.party) ? true : t.privacy;
+        delete O.instance, null == (n = O.party) || delete n.privacy;
+        let T = (0, s.S)(O, S, I, null != C && (0, u.g)(C) && I, N);
+        T > 0 && (O.flags = T);
         let {
-          assets: S,
-          party: N,
-          secrets: T,
-          timestamps: j,
-          buttons: P,
-          type: x
-        } = a;
-        if (null == x && (a.type = b.IIU.PLAYING), null != T) {
-          let e = i().values(T).filter(e => !!e);
-          if (null != N && i().intersection(e, [N.id]).length > 0 && !_.includes(r.application.id)) throw new h.Z({
+          assets: j,
+          party: P,
+          secrets: x,
+          timestamps: A,
+          buttons: Z,
+          type: w
+        } = O;
+        if (null == w && (O.type = b.IIU.PLAYING), null != x) {
+          let e = i().values(x).filter(e => !!e);
+          if (null != P && i().intersection(e, [P.id]).length > 0 && !_.includes(a.application.id)) throw new h.Z({
             errorCode: b.lTL.INVALID_ACTIVITY_SECRET
           }, "secrets cannot match the party id");
           if (i().uniq(e).length < e.length) throw new h.Z({
             errorCode: b.lTL.INVALID_ACTIVITY_SECRET
           }, "secrets must be unique");
-          if (null != P) throw new h.Z({
+          if (null != Z) throw new h.Z({
             errorCode: b.lTL.INVALID_ACTIVITY_SECRET
           }, "secrets cannot currently be sent with buttons")
         }
-        if (null != P && (O.button_urls = P.map(e => e.url), a.buttons = P.map(e => e.label)), a.metadata = O, null != j)
-          for (let e of Object.keys(j)) Date.now().toString().length - j[e].toString().length > 2 && (j[e] = Math.floor(j[e] * f.Z.Millis.SECOND));
-        if (null == S) n = Promise.resolve([]);
+        if (null != Z && (y.button_urls = Z.map(e => e.url), O.buttons = Z.map(e => e.label)), O.metadata = y, null != A)
+          for (let e of Object.keys(A)) Date.now().toString().length - A[e].toString().length > 2 && (A[e] = Math.floor(A[e] * f.Z.Millis.SECOND));
+        if (null == j) l = Promise.resolve([]);
         else {
-          if (null == r.application || null == r.application.id) throw Error();
-          n = (0, p.hR)(r.application.id, [S.large_image, S.small_image])
+          if (null == a.application || null == a.application.id) throw Error();
+          l = (0, p.hR)(a.application.id, [j.large_image, j.small_image])
         }
-        return n.then(e => {
-          var t, n, i, s;
-          let [c, u] = e;
-          if (null != S && (null != c ? S.large_image = c : delete S.large_image, null != u ? S.small_image = u : delete S.small_image), !g()) return;
+        return l.then(e => {
+          var t, n, r, i;
+          let [l, s] = e;
+          if (null != j && (null != l ? j.large_image = l : delete j.large_image, null != s ? j.small_image = s : delete j.small_image), !E()) return;
           o.Z.dispatch({
             type: "LOCAL_ACTIVITY_UPDATE",
-            socketId: r.id,
-            pid: l,
-            activity: a
+            socketId: a.id,
+            pid: g,
+            activity: O,
+            partyPrivacy: N
           });
           let {
-            secrets: p,
-            party: f
-          } = a, h = {
-            application_id: r.application.id,
-            type: a.type,
-            name: a.name,
-            status_display_type: a.status_display_type,
-            details: null != (i = a.details) ? i : "",
-            state: null != (s = a.state) ? s : "",
-            has_urls: null != a.state_url || null != a.details_url || (null == (t = a.assets) ? true : t.large_url) != null || (null == (n = a.assets) ? true : n.small_url) != null
+            secrets: c,
+            party: u
+          } = O, p = {
+            application_id: a.application.id,
+            type: O.type,
+            name: O.name,
+            status_display_type: O.status_display_type,
+            details: null != (r = O.details) ? r : "",
+            state: null != (i = O.state) ? i : "",
+            has_urls: null != O.state_url || null != O.details_url || (null == (t = O.assets) ? true : t.large_url) != null || (null == (n = O.assets) ? true : n.small_url) != null
           };
-          return null != p && (h.has_match_secret = !!p.match, h.has_join_secret = !!p.join), null != S && (h.has_images = !!(S.large_image || S.small_image)), null != f && (h.party_max = null != f.size && f.size[1] > 0 ? f.size[1] : true, h.party_id = f.id), d.default.track(b.rMx.ACTIVITY_UPDATED, h), a
+          return null != c && (p.has_match_secret = !!c.match, p.has_join_secret = !!c.join), null != j && (p.has_images = !!(j.large_image || j.small_image)), null != u && (p.party_max = null != u.size && u.size[1] > 0 ? u.size[1] : true, p.party_id = u.id), d.default.track(b.rMx.ACTIVITY_UPDATED, p), O
         })
       }
     }

@@ -1,101 +1,116 @@
 /** Chunk was on 62987 **/
 /** chunk id: 36311, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk749210 = require("./749210.js"),
   Chunk168107 = require("./168107.jsx"),
   Chunk480916 = require("./480916.js"),
   Chunk622822 = require("./622822.js"),
   Chunk986035 = require("./986035.jsx"),
-  Chunk601964 = require("./601964.js"),
-  Chunk594174 = require("./594174.js"),
-  Chunk63063 = require("./63063.js"),
-  Chunk981631 = require("./981631.js"),
-  Chunk723359 = require("./723359.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk118177 = require("./118177.js");
 
-function x(e) {
-  let {
-    guild: t,
-    channelId: n
-  } = e, l = (0, o.e7)([g.default], () => {
-    var e;
-    return (null == (e = g.default.getCurrentUser()) ? true : e.nsfwAllowed) === false
-  }), a = (0, h.Kt)(), {
-    verifyAgreementButtonText: c,
-    verifyGateDescription: x
-  } = (0, h.a1)((0, m.Y2)(t) ? _.L0.NSFW_SERVER : _.L0.NSFW_CHANNEL), O = i.useCallback(() => {
-    null != t && u.Z.nsfwReturnToSafety(t.id)
-  }, [t]), j = i.useCallback(() => {
-    null != t && u.Z.nsfwAgree(t.id)
-  }, [t]), E = i.useCallback(() => {
-    d.Z.showAgeVerificationGetStartedModal({
-      entryPoint: p.cU.NSFW_GUILD
+function m(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
     })
-  }, []), S = (0, m.Y2)(t), I = C.intl.string(S ? C.t.xi46lp : C.t.ZmwvDQ);
-  return a ? (0, r.jsx)(f.Z, {
-    guildId: null == t ? true : t.id,
-    channelId: n,
-    modalType: p.it.NSFW_CHANNEL_AGE_VERIFY,
-    onAgree: E,
-    onDisagree: O,
-    title: I,
-    description: x,
-    agreement: c,
-    agreementButtonColor: s.zx.Colors.BRAND,
-    disagreement: C.intl.string(C.t["/g10LC"]),
-    imageClassName: v.ageGatedImage
-  }) : l ? (0, r.jsx)(f.Z, {
-    guildId: null == t ? true : t.id,
-    channelId: n,
-    modalType: p.it.NSFW_CHANNEL_UNDERAGE,
-    onAgree: j,
-    onDisagree: O,
-    title: C.intl.string(S ? C.t["H0SG/v"] : C.t.NEabBQ),
-    description: C.intl.format(S ? C.t["6++3cX"] : C.t["2kHZen"], {
-      helpURL: b.Z.getArticleURL(y.BhN.NSFW_AGE_GATING)
-    }),
-    agreement: null,
-    disagreement: C.intl.string(C.t["/g10LC"]),
-    imageClassName: v.ageGatedImage
-  }) : (0, r.jsx)(f.Z, {
-    guildId: null == t ? true : t.id,
-    channelId: n,
-    modalType: p.it.NSFW_CHANNEL_VERIFIED,
-    onAgree: j,
-    onDisagree: O,
-    title: I,
-    description: C.intl.string(S ? C.t.ZtuRtr : C.t.E4Cd5O),
-    agreement: C.intl.string(C.t.wVq7ur),
-    disagreement: C.intl.string(C.t["/g10LC"])
-  })
+  }
+  return e
 }
-let O = function(e) {
+
+function g(e) {
+  var t, n;
+  let {
+    guild: l,
+    channelId: a
+  } = e, o = (0, d.kH)(l), {
+    modalType: f
+  } = o, g = function(e, t) {
+    if (null == e) return {};
+    var n, r, i = function(e, t) {
+      if (null == e) return {};
+      var n, r, i = {},
+        l = Object.keys(e);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      return i
+    }(e, t);
+    if (Object.getOwnPropertySymbols) {
+      var l = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    }
+    return i
+  }(o, ["modalType"]), b = i.useCallback(() => {
+    null != l && s.Z.nsfwReturnToSafety(l.id)
+  }, [l]), y = i.useCallback(() => {
+    null != l && s.Z.nsfwAgree(l.id)
+  }, [l]), _ = i.useCallback(() => {
+    c.Z.showAgeVerificationGetStartedModal({
+      entryPoint: u.cU.NSFW_GUILD
+    })
+  }, []), C = (t = m({}, g), n = n = {
+    guildId: null == l ? true : l.id,
+    channelId: a,
+    disagreement: h.intl.string(h.t["/g10LC"])
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(n)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+  }), t);
+  switch (f) {
+    case u.it.NSFW_CHANNEL_AGE_VERIFY:
+    case u.it.GUILD_LARGE_SERVER:
+      return (0, r.jsx)(p.Z, m({
+        onAgree: _,
+        onDisagree: b,
+        modalType: f
+      }, C));
+    default:
+      return (0, r.jsx)(p.Z, m({
+        onAgree: y,
+        onDisagree: b,
+        modalType: f
+      }, C))
+  }
+}
+let b = function(e) {
   let {
     guild: t,
     channelId: n,
     className: l
-  } = e, o = i.useRef(null);
+  } = e, s = i.useRef(null);
   return i.useEffect(() => {
     let {
       current: e
-    } = o;
+    } = s;
     null == e || e.scrollToBottom()
-  }, []), (0, r.jsx)(c.Den, {
-    ref: o,
-    className: v.scroller,
+  }, []), (0, r.jsx)(o.Den, {
+    ref: s,
+    className: f.scroller,
     children: (0, r.jsx)("div", {
-      className: a()(l, v.wrapper),
-      children: (0, r.jsx)(x, {
+      className: a()(l, f.wrapper),
+      children: (0, r.jsx)(g, {
         guild: t,
         channelId: n
       })

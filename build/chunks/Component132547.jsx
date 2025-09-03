@@ -96,7 +96,6 @@ let M = e => {
             children: (0, r.jsx)(C.Z, {
               buttonVisibilityRef: Z,
               className: L.heroHeading,
-              location: N.MQ.HOME,
               enablePremiumBrandRefresh: ee,
               userDiscountOffer: B,
               discountedPrice: K

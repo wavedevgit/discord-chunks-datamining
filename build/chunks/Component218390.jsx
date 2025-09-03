@@ -322,63 +322,62 @@ function ef() {
 }
 let e_ = function() {
   var e;
-  let t = "PremiumManagementSettings",
-    n = (0, Chunk211242.Q)(),
+  let t = (0, Chunk211242.Q)(),
     {
-      analyticsLocations: a
+      analyticsLocations: n
     } = (0, Chunk906732.ZP)(Chunk100527.Z.PREMIUM_SETTINGS),
-    o = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
-    s = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.hasFetchedSubscriptions()),
-    l = (0, Chunk15640.V)(Chunk474936.nS),
-    [d, f] = Chunk647438.useState(true),
-    m = (0, Chunk975298.Z)({
+    a = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
+    o = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.hasFetchedSubscriptions()),
+    s = (0, Chunk15640.V)(Chunk474936.nS),
+    [l, d] = Chunk647438.useState(true),
+    f = (0, Chunk975298.Z)({
       forceFetch: true
     }),
-    E = null == (e = (0, Chunk347896.Z)()) ? true : module.billingSettingsMarketingBanner,
-    y = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.enabled),
-    O = Chunk647438.useRef(null);
-  (0, Chunk232076.B)(exports);
-  let R = (0, Chunk533525.b)(exports);
+    m = null == (e = (0, Chunk347896.Z)()) ? true : module.billingSettingsMarketingBanner,
+    E = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.enabled),
+    y = Chunk647438.useRef(null);
+  (0, Chunk232076.B)();
+  let O = (0, Chunk533525.b)();
   Chunk647438.useEffect(() => {
     Chunk570140.Z.wait(async () => {
-      Chunk410030 || require || await Promise.all([Chunk355467.jg(), Chunk355467.tZ(), (0, Chunk821849.Y2)(null, null, Chunk981631.JjL.DISCOVERY)]), Chunk755721(false)
+      Chunk230711 || exports || await Promise.all([Chunk355467.jg(), Chunk355467.tZ(), (0, Chunk821849.Y2)(null, null, Chunk981631.JjL.DISCOVERY)]), Chunk780384(false)
     })
-  }, [Chunk410030, require]);
-  let [D, L] = Chunk647438.useState(false);
-  if (Chunk410030) return (0, Chunk951288.jsx)(Chunk497321.Z, {});
-  if (require) return (0, Chunk951288.jsx)(Chunk89057.c8, {});
-  let j = Chunk913527 && null !== o && l,
-    M = Chunk37234.fetched && Chunk37234.isFractionalPremiumActive;
-  if (!Chunk74538 && !Chunk140465 && !Chunk780384) return (0, Chunk951288.jsx)(Chunk406128.Z, {
+  }, [Chunk230711, exports]);
+  let [R, D] = Chunk647438.useState(false);
+  if (Chunk230711) return (0, Chunk951288.jsx)(Chunk497321.Z, {});
+  if (exports) return (0, Chunk951288.jsx)(Chunk89057.c8, {});
+  let L = o && null !== Chunk120356 && Chunk913527,
+    j = Chunk755721.fetched && Chunk755721.isFractionalPremiumActive;
+  if (!Chunk63063 && !Chunk74538 && !l) return (0, Chunk951288.jsx)(Chunk406128.Z, {
     title: Chunk388032.intl.string(Chunk388032.t.dyq9TU),
     note: null
   });
-  if (!Chunk74538 && !Chunk140465 || Chunk780384) return (0, Chunk951288.jsx)(Chunk481060.$jN, {});
-  let k = !!(null == o ? true : o.hasActiveTrial);
+  if (!Chunk63063 && !Chunk74538 || l) return (0, Chunk951288.jsx)(Chunk481060.$jN, {});
+  let M = !!(null == Chunk120356 ? true : Chunk120356.hasActiveTrial);
   return (0, Chunk951288.jsx)(Chunk906732.Gt, {
-    value: Chunk120356,
+    value: require,
     children: (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsxs)("div", {
-        children: [null != Chunk230711 && (0, Chunk951288.jsx)(ed, {
-          config: Chunk230711
-        }), (0, Chunk951288.jsx)(eu, {}), Chunk703656 && (0, Chunk951288.jsx)(Chunk386733.Z, {
+        children: [null != Chunk37234 && (0, Chunk951288.jsx)(ed, {
+          config: Chunk37234
+        }), (0, Chunk951288.jsx)(eu, {}), Chunk607070 && (0, Chunk951288.jsx)(Chunk386733.Z, {
           isInSettings: true
-        }), null == Chunk230711 && (0, Chunk951288.jsx)(ef, {}), (0, Chunk951288.jsx)(Chunk179984.Z, {
+        }), null == Chunk37234 && (0, Chunk951288.jsx)(ef, {}), (0, Chunk951288.jsx)(Chunk179984.Z, {
           hideCTAs: true,
           headingOverride: Chunk388032.intl.string(Chunk388032.t.dnVvQU),
-          hidePill: !Chunk695349,
+          hidePill: !Chunk140465,
           selectedPlanColumnClassName: Chunk458622.tier2PlanComparisonTableBackground,
           selectedPlanTier: Chunk474936.p9.TIER_2
         })]
       }), (0, Chunk951288.jsx)(Chunk622535.$, {
-        innerRef: Chunk607070,
+        innerRef: Chunk410030,
         onChange: e => {
-          e && !D && (x.default.track(J.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
-            location_stack: a
-          }), L(true))
+          e && !R && (x.default.track(J.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+            location_stack: n
+          }), D(true))
         },
         children: (0, Chunk951288.jsx)("div", {
-          ref: Chunk607070,
+          ref: Chunk410030,
           className: Chunk458622.bottomOfPageVisibilitySensor
         })
       })]

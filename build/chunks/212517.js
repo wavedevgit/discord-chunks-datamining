@@ -2,9 +2,8 @@
 /** chunk id: 212517, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Dp: () => u,
-  S5: () => c,
-  ZW: () => d
+  D: () => u,
+  S: () => c
 }), require("./997841.js");
 var Chunk433517 = require("./433517.js"),
   Chunk695346 = require("./695346.js"),
@@ -20,20 +19,17 @@ function l(e) {
 
 function c(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
+    n = arguments.length > 2 && true !== arguments[2] && arguments[2],
+    i = arguments.length > 3 && true !== arguments[3] && arguments[3],
+    a = arguments.length > 4 && true !== arguments[4] ? arguments[4] : s.RYY.PRIVATE,
     {
-      instance: n,
-      secrets: i,
-      party: a
+      secrets: o
     } = e,
-    o = 0;
-  return (n && (o |= s.xjy.INSTANCE), (null == i ? true : i.join) != null && (o |= s.xjy.JOIN), t) ? (o |= s.xjy.EMBEDDED, o |= l(o)) : (((null == a ? true : a.privacy) === s.RYY.PUBLIC || r.K.get("ACTIVITIES_FORCE_PUBLIC")) && (o |= l(o)), o)
+    c = 0;
+  return (t && (c |= s.xjy.INSTANCE), (null == o ? true : o.join) != null && (c |= s.xjy.JOIN), i && (c |= s.xjy.CONTEXTLESS), n) ? (c |= s.xjy.EMBEDDED, c |= l(c)) : ((a === s.RYY.PUBLIC || r.K.get("ACTIVITIES_FORCE_PUBLIC")) && (c |= l(c)), c)
 }
 
 function u(e) {
   var t;
   return (0, a.yE)(null != (t = null == e ? true : e.flags) ? t : 0, s.xjy.CONTEXTLESS) && (0, o.Z)(e)
-}
-
-function d(e) {
-  return e | s.xjy.CONTEXTLESS
 }

@@ -15,7 +15,7 @@ function c(e) {
   let {
     platform: t
   } = e;
-  return !!(0, s.Dp)(e) || ((0, a.isAndroid)() ? t === l.M7m.ANDROID : (0, a.isIOS)() ? t === l.M7m.IOS : !!((0, a.isDesktop)() || (0, a.isWeb)()) && t === l.M7m.DESKTOP)
+  return !!(0, s.D)(e) || ((0, a.isAndroid)() ? t === l.M7m.ANDROID : (0, a.isIOS)() ? t === l.M7m.IOS : !!((0, a.isDesktop)() || (0, a.isWeb)()) && t === l.M7m.DESKTOP)
 }
 
 function u(e) {
