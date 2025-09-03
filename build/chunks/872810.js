@@ -195,8 +195,22 @@ async function U(e) {
     })
   } catch (e) {}
 }
-
-function G(e, t) {}
+async function G(e, t, n) {
+  try {
+    await v.Z.post({
+      url: S.ANM.STREAM_NOTIFY_V2(e),
+      body: {
+        application_id: t,
+        game_title: n
+      },
+      oldFormErrors: true,
+      trackedActionData: {
+        event: a.NetworkActionNames.STREAM_NOTIFY
+      },
+      rejectWithError: true
+    })
+  } catch (e) {}
+}
 
 function B(e) {
   (0, O.Ye)(e.preset, e.resolution, e.frameRate), s.Z.dispatch(C({

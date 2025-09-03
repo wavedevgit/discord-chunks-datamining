@@ -129,34 +129,34 @@ function B(e) {
 }
 
 function Z(e) {
-  var t, n, r;
+  var t, n, r, i;
   let {
-    streamKey: i,
-    rtcServerId: a,
-    rtcChannelId: o,
-    region: s,
-    viewerIds: l
-  } = e, c = L[i], u = (0, m.my)(i);
-  if (null == c && null != a) {
-    null == R[i] && (N[i] = null), null == N[i] && null == P[i] && (N[i] = (0, g.L2)(u, v.Z));
+    streamKey: a,
+    rtcServerId: o,
+    rtcChannelId: s,
+    region: l,
+    viewerIds: c
+  } = e, u = L[a], _ = (0, m.my)(a);
+  if (null == u && null != o) {
+    null == R[a] && (N[a] = null), null == N[a] && null == P[a] && (N[a] = (0, g.L2)(_, v.Z));
     let e = new h.A({
-      streamRegion: s,
-      streamApplication: N[i],
-      streamSourceType: J(P[i]),
-      actionContext: null == (t = C[i]) ? true : t.appContext,
-      numViewers: null != l ? l.length : 0,
-      goLiveModalDurationMs: w[i],
-      analyticsLocations: null == (n = C[i]) ? true : n.analyticsLocations
+      streamRegion: l,
+      streamApplication: N[a],
+      streamSourceType: J(P[a]),
+      actionContext: null == (t = C[a]) ? true : t.appContext,
+      numViewers: null != c ? c.length : 0,
+      goLiveModalDurationMs: w[a],
+      analyticsLocations: null == (n = C[a]) ? true : n.analyticsLocations
     });
-    c = j(i, a, o, e), L[i] = c
+    u = j(a, o, s, e), L[a] = u
   }
-  delete D[i], d.Z.dispatch({
+  delete D[a], d.Z.dispatch({
     type: "MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET",
-    mediaEngineConnectionId: c.getMediaEngineConnectionId()
+    mediaEngineConnectionId: u.getMediaEngineConnectionId()
   }), (0, p.Bx)({
-    guildId: u.guildId,
+    guildId: _.guildId,
     location: "StreamRTCConnectionStore"
-  }) && u.ownerId === y.default.getId() && (0, f.zf)(i, null == (r = N[i]) ? true : r.id)
+  }) && _.ownerId === y.default.getId() && (0, f.zf)(a, null == (r = N[a]) ? true : r.id, null == (i = N[a]) ? true : i.name)
 }
 
 function F(e) {
