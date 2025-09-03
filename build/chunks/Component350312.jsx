@@ -58,7 +58,7 @@ function v(e) {
     children: [(0, r.jsx)(C, {
       title: n,
       subtitle: o
-    }), (0, r.jsx)(g, {
+    }), (0, r.jsx)(E, {
       label: t,
       icon: s.d4D,
       onClick: a
@@ -85,7 +85,7 @@ function C(e) {
   })
 }
 
-function g(e) {
+function E(e) {
   let {
     label: t,
     icon: n,

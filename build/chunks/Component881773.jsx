@@ -1,7 +1,7 @@
 /** Chunk was on 32249 **/
 /** chunk id: 881773, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => T
 }), require("./781311.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -42,7 +42,7 @@ function y(e) {
   let {
     current: t,
     duration: n
-  } = e, o = null != t ? (0, E.yv)(t) : b, a = null != n ? (0, E.yv)(n) : b;
+  } = e, o = null != t ? (0, g.yv)(t) : b, a = null != n ? (0, g.yv)(n) : b;
   return o = o.padStart(a.length, "0"), (0, r.jsxs)("div", {
     className: l()(O.durationTimeWrapper, O.controlsBarItem),
     children: [(0, r.jsx)(d.Text, {
@@ -72,7 +72,7 @@ let j = Chunk647438.forwardRef(function(e, t) {
     tooltipDelayMs: m = 1500,
     shortcut: v,
     onClick: C
-  } = e, g = e => {
+  } = e, E = e => {
     var p, m;
     return (0, r.jsx)(d.P3F, (p = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -126,7 +126,7 @@ let j = Chunk647438.forwardRef(function(e, t) {
       Object.defineProperty(p, e, Object.getOwnPropertyDescriptor(m, e))
     }), p))
   };
-  if (null == p || !a) return g();
+  if (null == p || !a) return E();
   {
     let e = (0, r.jsxs)(r.Fragment, {
       children: [p, "" !== (null != v ? v : "").trim() && (0, r.jsx)(d.M2$, {
@@ -139,27 +139,27 @@ let j = Chunk647438.forwardRef(function(e, t) {
       "aria-label": p,
       tooltipContentClassName: O.videoControlsBtnTooltip,
       delay: m,
-      children: e => g(e)
+      children: e => E(e)
     })
   }
 });
 
-function x(e) {
+function T(e) {
   var t, n;
   let {
     videoRef: a,
-    playerState: E,
+    playerState: g,
     animSpring: b,
-    visible: x,
-    seekForwardEnabled: T,
+    visible: T,
+    seekForwardEnabled: x,
     hideCaptionBtn: P,
     hideTranscriptBtn: D,
     videoTask: R,
     handlePlaybackBtnClick: I,
-    handleTranscriptBtnClick: k,
-    handleCaptionBtnClick: N,
-    handleFullScreenBtnClick: w,
-    handleSeekBackBtnClick: A,
+    handleTranscriptBtnClick: N,
+    handleCaptionBtnClick: k,
+    handleFullScreenBtnClick: A,
+    handleSeekBackBtnClick: w,
     handleSeekForwardBtnClick: L,
     handleControlBarPendingInteraction: M,
     onVolumeChange: B
@@ -191,21 +191,21 @@ function x(e) {
         Y || (e.preventDefault(), I());
         break;
       case _.Y1.SEEK_BACK:
-        A();
+        w();
         break;
       case _.Y1.SEEK_FORWARD:
         L();
         break;
       case _.Y1.CAPTION:
-        N();
+        k();
         break;
       case _.Y1.FULLSCREEN:
-        w();
+        A();
         break;
       case _.Y1.MUTE:
         ea()
     }
-  }, [N, w, I, A, L, ea, Y]);
+  }, [k, A, I, w, L, ea, Y]);
   o.useEffect(() => {
     null != en.current && en.current.focus()
   }, []), o.useEffect(() => (et({
@@ -220,14 +220,14 @@ function x(e) {
     {
       icon: eu,
       label: ed
-    } = h[E];
+    } = h[g];
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: O.videoControlsGroup,
       children: [(0, r.jsx)(j, {
         iconComponent: eu,
         animationTime: b,
-        visible: x,
+        visible: T,
         ariaLabel: ed,
         tooltipLabel: ed,
         shortcut: _.Y1.PLAYBACK,
@@ -237,20 +237,20 @@ function x(e) {
         children: [(0, r.jsx)(j, {
           iconComponent: C.d,
           animationTime: b,
-          visible: x,
-          onClick: A,
+          visible: T,
+          onClick: w,
           ariaLabel: S.intl.string(S.t.r9s3Ul),
           tooltipLabel: S.intl.string(S.t.r9s3Ul),
           shortcut: _.Y1.SEEK_BACK
         }), (0, r.jsx)(j, {
-          iconComponent: g.o,
+          iconComponent: E.o,
           animationTime: b,
-          visible: x,
+          visible: T,
           onClick: L,
-          disabled: !T,
-          ariaLabel: T ? S.intl.string(S.t.zWDcND) : S.intl.string(S.t.xXh3y8),
-          tooltipLabel: T ? S.intl.string(S.t.zWDcND) : S.intl.string(S.t.xXh3y8),
-          tooltipDelayMs: 1500 * !!T,
+          disabled: !x,
+          ariaLabel: x ? S.intl.string(S.t.zWDcND) : S.intl.string(S.t.xXh3y8),
+          tooltipLabel: x ? S.intl.string(S.t.zWDcND) : S.intl.string(S.t.xXh3y8),
+          tooltipDelayMs: 1500 * !!x,
           shortcut: _.Y1.SEEK_FORWARD
         })]
       })]
@@ -260,7 +260,7 @@ function x(e) {
         opacity: (0, i.to)([b.to({
           range: [0, 1],
           output: [0, 1]
-        })], e => "".concat(x ? e : Math.pow(e, 8)))
+        })], e => "".concat(T ? e : Math.pow(e, 8)))
       },
       children: [(0, r.jsxs)("div", {
         onMouseEnter: el,
@@ -271,7 +271,7 @@ function x(e) {
         children: [(0, r.jsx)(j, {
           iconComponent: ec,
           animationTime: b,
-          visible: x,
+          visible: T,
           onClick: ea,
           ariaLabel: S.intl.string(S.t["eIl+AA"]),
           tooltipLabel: S.intl.string(S.t["eIl+AA"]),
@@ -282,7 +282,7 @@ function x(e) {
             opacity: (0, i.to)([ee.to({
               range: [0, 1],
               output: [0, 1]
-            })], e => "".concat(x ? e : Math.pow(e, 8))),
+            })], e => "".concat(T ? e : Math.pow(e, 8))),
             width: (0, i.to)([ee.to({
               range: [0, 1],
               output: [0, 100]
@@ -316,26 +316,26 @@ function x(e) {
       children: [!D && (0, r.jsx)(j, {
         iconComponent: d.hH0,
         animationTime: b,
-        visible: x,
-        onClick: k,
-        active: q && E !== _.rq.ENDED,
-        disabled: E === _.rq.ENDED,
+        visible: T,
+        onClick: N,
+        active: q && g !== _.rq.ENDED,
+        disabled: g === _.rq.ENDED,
         ariaLabel: S.intl.string(S.t.KCzjTk),
         tooltipLabel: S.intl.string(S.t.KCzjTk)
       }), !P && (0, r.jsx)(j, {
         iconComponent: v.c,
         animationTime: b,
-        visible: x,
+        visible: T,
         active: H,
-        onClick: N,
+        onClick: k,
         ariaLabel: S.intl.string(S.t.bDSZOz),
         tooltipLabel: S.intl.string(S.t.bDSZOz),
         shortcut: _.Y1.CAPTION
       }), (0, r.jsx)(j, {
         iconComponent: G ? d.wvt : d.NpZ,
         animationTime: b,
-        visible: x,
-        onClick: w,
+        visible: T,
+        onClick: A,
         ariaLabel: S.intl.string(S.t.vKZT5u),
         tooltipLabel: S.intl.string(S.t.vKZT5u),
         shortcut: _.Y1.FULLSCREEN

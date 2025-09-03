@@ -29,64 +29,64 @@ function v(e) {
     interactionEnabled: a,
     backgroundColor: v,
     preloadedBuffers: C,
-    duration: g,
+    duration: E,
     maxSeekableTime: _,
-    onClick: E,
+    onClick: g,
     onScrubBack: S,
     onScrubForward: O
-  } = e, [b, h] = o.useState(null), [y, j] = o.useState(null), [x, T] = o.useState(null), [P, D] = o.useState(false), R = o.useRef(null), I = e => {
+  } = e, [b, h] = o.useState(null), [y, j] = o.useState(null), [T, x] = o.useState(null), [P, D] = o.useState(false), R = o.useRef(null), I = e => {
     R.current = e, h(e)
   };
   o.useEffect(() => {
-    null != b && (null == _ ? T(null) : T(m(_, g, b)))
-  }, [b, _, g]);
-  let k = (0, c.Z)(e => {
+    null != b && (null == _ ? x(null) : x(m(_, E, b)))
+  }, [b, _, E]);
+  let N = (0, c.Z)(e => {
       I(e.contentRect)
     }),
-    N = (0, s.y)(k);
+    k = (0, s.y)(N);
   o.useLayoutEffect(() => {
-    null != N.current && I(N.current.getBoundingClientRect())
-  }, [N]), o.useEffect(() => {
+    null != k.current && I(k.current.getBoundingClientRect())
+  }, [k]), o.useEffect(() => {
     let e = () => {
-      null != N.current && I(N.current.getBoundingClientRect())
+      null != k.current && I(k.current.getBoundingClientRect())
     };
     return window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
-  }, [N]);
-  let w = e => {
+  }, [k]);
+  let A = e => {
       j(e.clientX)
     },
-    A = o.useCallback(e => {
+    w = o.useCallback(e => {
       let {
         key: t
       } = e;
       t === d.mR.ArrowLeft && null != S ? (e.preventDefault(), e.stopPropagation(), S()) : t === d.mR.ArrowRight && null != O && (e.preventDefault(), e.stopPropagation(), O())
     }, [S, O]),
-    L = null != y && null != b ? p(y, b, g) : 0,
+    L = null != y && null != b ? p(y, b, E) : 0,
     M = (0, u.yv)(L),
-    B = null != b ? b.right - m(t / 100 * g, g, b) : null,
+    B = null != b ? b.right - m(t / 100 * E, E, b) : null,
     V = null != y && null != b ? b.right - y : null,
-    F = null != x && null != b ? b.right - x : null;
+    F = null != T && null != b ? b.right - T : null;
   return (0, r.jsxs)("div", {
     className: f.cont,
-    ref: N,
+    ref: k,
     children: [(0, r.jsxs)(i.P3F, {
       className: l()(f.hitboxArea, {
         [f.interactionEnabled]: a
       }),
       ignoreKeyPress: true,
       onClick: e => {
-        a && null != E && E(p(e.clientX, e.currentTarget.getBoundingClientRect(), g))
+        a && null != g && g(p(e.clientX, e.currentTarget.getBoundingClientRect(), E))
       },
       onMouseEnter: e => {
-        a && (null != N.current && I(N.current.getBoundingClientRect()), D(true), w(e))
+        a && (null != k.current && I(k.current.getBoundingClientRect()), D(true), A(e))
       },
       onMouseLeave: e => {
         a && (D(false), j(null))
       },
       onMouseMove: e => {
-        a && P && w(e)
+        a && P && A(e)
       },
-      onKeyDown: A,
+      onKeyDown: w,
       tabIndex: a ? true : false,
       focusProps: {
         offset: {

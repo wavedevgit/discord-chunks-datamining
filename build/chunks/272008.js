@@ -566,7 +566,8 @@ async function $(e, t) {
     y.ZP.getState().setTranscriptAsset({
       questId: e.id,
       fetchStatus: y.iF.SUCCESS,
-      text: t.text
+      text: t.text,
+      url: n.url
     })
   } catch (t) {
     y.ZP.getState().setTranscriptAsset({
