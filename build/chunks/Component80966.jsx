@@ -122,6 +122,7 @@ class m extends Chunk647438.Component {
           }
         } = e, d = !(m <= l.N_j && g <= l.XKF || m <= l.XKF && g <= l.N_j);
         return (0, r.jsx)(s.ZP, {
+          alt: k,
           className: u,
           forceExternal: d,
           src: t,

@@ -654,33 +654,36 @@ class et extends(i = Chunk647438.PureComponent) {
   }
   renderVideo() {
     let {
-      src: e,
-      poster: t,
-      forceExternal: n,
-      responsive: r,
-      mediaLayoutType: i
+      alt: e,
+      src: t,
+      poster: n,
+      forceExternal: r,
+      responsive: i,
+      mediaLayoutType: o
     } = this.props, {
-      playing: o,
-      fullscreen: s
-    } = this.state, l = this.getWidth(), c = this.getHeight();
-    return require ? (0, Chunk951288.jsx)(Chunk70097.Z, {
+      playing: s,
+      fullscreen: l
+    } = this.state, c = this.getWidth(), u = this.getHeight();
+    return r ? (0, Chunk951288.jsx)(Chunk70097.Z, {
+      alt: module,
       className: Chunk55343.video,
       controls: false,
-      height: Chunk392711,
-      poster: exports,
-      width: l,
-      responsive: r && !Chunk120356,
-      mediaLayoutType: i,
+      height: u,
+      poster: require,
+      width: Chunk392711,
+      responsive: i && !l,
+      mediaLayoutType: Chunk647438,
       playsInline: true,
-      autoPlay: Chunk647438
+      autoPlay: Chunk120356
     }) : (0, Chunk951288.jsx)(Chunk70097.Z, {
+      alt: module,
       className: Chunk55343.video,
       controls: false,
       playsInline: true,
-      autoPlay: Chunk647438,
-      height: Chunk392711,
-      responsive: r && !Chunk120356,
-      mediaLayoutType: Chunk120356 ? Chunk217702.hV.STATIC : i,
+      autoPlay: Chunk120356,
+      height: u,
+      responsive: i && !l,
+      mediaLayoutType: l ? Chunk217702.hV.STATIC : Chunk647438,
       onClick: this.handleVideoClick,
       onEnded: this.handleEnded,
       onError: this.handleError,
@@ -692,11 +695,11 @@ class et extends(i = Chunk647438.PureComponent) {
       onTimeUpdate: this._analytics.onTimeUpdate,
       onLoadedMetadata: this.handleLoaded,
       onProgress: this.handleBuffer,
-      poster: exports,
+      poster: require,
       preload: this.state.preload,
       ref: this.mediaRef,
-      width: l,
-      src: module
+      width: Chunk392711,
+      src: exports
     })
   }
   renderAudio() {

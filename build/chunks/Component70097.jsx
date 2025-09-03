@@ -78,38 +78,39 @@ function h(e) {
 }
 let m = e => {
     var {
-      externalRef: t,
-      autoPlay: n,
-      playOnHover: a,
-      responsive: c,
-      mediaLayoutType: d
-    } = e, f = _(e, ["externalRef", "autoPlay", "playOnHover", "responsive", "mediaLayoutType"]);
-    let p = !(0, o.e7)([s.Z], () => s.Z.useReducedMotion) && !a && n,
-      m = i.useRef(null);
-
-    function g() {
-      var e;
-      a && (null == m || null == (e = m.current) || e.play())
-    }
+      alt: t,
+      externalRef: n,
+      autoPlay: a,
+      playOnHover: c,
+      responsive: d,
+      mediaLayoutType: f
+    } = e, p = _(e, ["alt", "externalRef", "autoPlay", "playOnHover", "responsive", "mediaLayoutType"]);
+    let m = !(0, o.e7)([s.Z], () => s.Z.useReducedMotion) && !c && a,
+      g = i.useRef(null);
 
     function E() {
       var e;
-      a && (null == m || null == (e = m.current) || e.pause())
+      c && (null == g || null == (e = g.current) || e.play())
     }
 
     function b() {
-      return d === l.hV.MOSAIC ? {
+      var e;
+      c && (null == g || null == (e = g.current) || e.pause())
+    }
+
+    function y() {
+      return f === l.hV.MOSAIC ? {
         width: "100%",
         height: "100%",
         maxHeight: "inherit",
         objectFit: "contain"
-      } : c ? y() : {}
+      } : d ? O() : {}
     }
 
-    function y() {
+    function O() {
       return {
-        maxWidth: f.width,
-        maxHeight: f.height,
+        maxWidth: p.width,
+        maxHeight: p.height,
         width: "100%",
         height: "100%"
       }
@@ -117,19 +118,20 @@ let m = e => {
     return i.useLayoutEffect(() => () => {
       let {
         current: e
-      } = m;
+      } = g;
       null != e && h(e)
-    }, []), i.useLayoutEffect(() => ("function" == typeof t ? (t(null), t(m.current)) : null != t && (t.current = m.current), () => {
-      "function" == typeof t ? t(null) : null != t && (t.current = null)
-    }), [t, m]), (0, r.jsx)("video", u({
-      ref: m,
-      autoPlay: p,
-      onMouseEnter: g,
-      onMouseLeave: E,
-      onFocus: g,
-      onBlur: E,
-      style: b()
-    }, f))
+    }, []), i.useLayoutEffect(() => ("function" == typeof n ? (n(null), n(g.current)) : null != n && (n.current = g.current), () => {
+      "function" == typeof n ? n(null) : null != n && (n.current = null)
+    }), [n, g]), (0, r.jsx)("video", u({
+      "aria-label": t,
+      ref: g,
+      autoPlay: m,
+      onMouseEnter: E,
+      onMouseLeave: b,
+      onFocus: E,
+      onBlur: b,
+      style: y()
+    }, p))
   },
   g = Chunk647438.forwardRef((e, t) => (0, r.jsx)(m, f(u({}, e), {
     externalRef: t
