@@ -2,12 +2,36 @@
 /** chunk id: 189451, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  l: () => i,
-  u: () => r
-});
-var r = function(e) {
-    return e.EROTIC = "Erotic", e
-  }({}),
-  i = function(e) {
-    return e[e.NONE = 0] = "NONE", e[e.WINDOWED_ONLY = 1] = "WINDOWED_ONLY", e[e.ALL = 2] = "ALL", e
-  }({})
+  J8: () => o,
+  ZP: () => s,
+  ls: () => l
+}), require("./953529.js");
+var Chunk81825 = require("./81825.js"),
+  Chunk973616 = require("./973616.js");
+
+function a(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+var o = function(e) {
+  return e.EROTIC = "Erotic", e
+}({});
+class s extends Chunk81825.Z {
+  getIconURL(e) {
+    return null == this.icon ? null : "https://cdn.discordapp.com/app-icons/".concat(this.id, "/").concat(this.icon, ".png").concat(null != e ? "?size=".concat(e) : "")
+  }
+  hasTheme(e) {
+    return this.themes.includes(e)
+  }
+  constructor(e) {
+    var t;
+    super(), a(this, "id", true), a(this, "name", true), a(this, "description", true), a(this, "icon", true), a(this, "icon_hash", true), a(this, "aliases", true), a(this, "executables", true), a(this, "overlay", true), a(this, "overlayWarn", true), a(this, "overlayCompatibilityHook", true), a(this, "hook", true), a(this, "supportsOutOfProcessOverlay", true), a(this, "thirdPartySkus", true), a(this, "themes", true), a(this, "linkedApplications", true), this.id = e.id, this.name = e.name, this.description = e.description, this.icon = e.icon, this.icon_hash = e.icon_hash, this.aliases = e.aliases || [], this.executables = (null != (t = e.executables) ? t : []).map(i.BA), this.overlay = e.overlay || false, this.overlayWarn = e.overlayWarn || false, this.overlayCompatibilityHook = e.overlayCompatibilityHook || false, this.hook = e.hook || false, this.supportsOutOfProcessOverlay = e.supportsOutOfProcessOverlay || false, this.thirdPartySkus = e.thirdPartySkus || [], this.themes = e.themes || [], this.linkedApplications = e.linkedApplications
+  }
+}
+var l = function(e) {
+  return e[e.NONE = 0] = "NONE", e[e.WINDOWED_ONLY = 1] = "WINDOWED_ONLY", e[e.ALL = 2] = "ALL", e
+}({})

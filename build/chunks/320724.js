@@ -27,4 +27,4 @@ function s() {
     type: "GAME_DETECTION_WATCH_CANDIDATE_GAMES_STOP"
   })
 }
-require("./189451.js").l.ALL
+require("./189451.js").ls.ALL

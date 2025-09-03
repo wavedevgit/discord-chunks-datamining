@@ -232,7 +232,7 @@ let q = {
       this.getDiscordUtils().setObserverDebugCallback(t => e(t), t, n)
     },
     clearObserverDebugCallback() {
-      this.getDiscordUtils().setObserverDebugCallback(null, Chunk189451.l.NONE, 0)
+      this.getDiscordUtils().setObserverDebugCallback(null, Chunk189451.ls.NONE, 0)
     },
     shouldDisplayNotifications() {
       return this.getDiscordUtils().shouldDisplayNotifications()

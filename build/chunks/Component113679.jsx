@@ -1,11 +1,12 @@
 /** Chunk was on 88479 **/
 /** chunk id: 113679, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk399606 = require("./399606.js"),
+  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk279542 = require("./279542.jsx"),
   Chunk496675 = require("./496675.js"),
@@ -14,35 +15,35 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk49465 = require("./49465.js");
 
-function g(e) {
+function p(e) {
   let {
     guild: t
-  } = e, n = i.useId(), g = (0, l.e7)([o.Z], () => null != t && o.Z.can(d.Plq.MANAGE_GUILD, t), [t]), p = t.features.has(d.oNc.COMMUNITY), [f, h] = i.useState(t.features.has(d.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), b = i.useCallback(async e => {
-    h(e), await (0, s.fp)(t, e)
+  } = e, n = i.useId(), p = (0, l.e7)([c.Z], () => null != t && c.Z.can(u.Plq.MANAGE_GUILD, t), [t]), f = t.features.has(u.oNc.COMMUNITY), [h, b] = i.useState(t.features.has(u.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), x = i.useCallback(async e => {
+    b(e), await (0, o.fp)(t, e)
   }, [t]);
-  return p ? null : (0, r.jsxs)("div", {
-    className: m.bannerContainer,
-    children: [(0, r.jsx)(c.Z, {
+  return f ? null : (0, r.jsxs)("div", {
+    className: g.bannerContainer,
+    children: [(0, r.jsx)(d.Z, {
       width: 64,
       height: 64
     }), (0, r.jsxs)("div", {
-      className: m.headingContainer,
-      children: [(0, r.jsx)(a.X6q, {
+      className: g.headingContainer,
+      children: [(0, r.jsx)(s.X6q, {
         variant: "heading-lg/semibold",
         color: "always-white",
-        children: u.intl.string(u.t.jDarm5)
-      }), (0, r.jsx)(a.Text, {
+        children: m.intl.string(m.t.jDarm5)
+      }), (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "always-white",
-        children: u.intl.string(u.t["/ee7yM"])
+        children: m.intl.string(m.t["/ee7yM"])
       })]
     }), (0, r.jsx)("div", {
-      className: m.buttonContainer,
-      children: (0, r.jsx)(a.rsf, {
+      className: g.buttonContainer,
+      children: (0, r.jsx)(a.T2, {
         id: n,
-        checked: f,
-        onChange: b,
-        disabled: !g
+        checked: h,
+        onChange: x,
+        disabled: !p
       })
     })]
   })

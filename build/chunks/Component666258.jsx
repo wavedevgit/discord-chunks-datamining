@@ -400,7 +400,7 @@ function B(e) {
               color: c.Z.colors.INTERACTIVE_NORMAL
             }))
           })]
-        }), (0, l.jsx)(h.rsf, {
+        }), (0, l.jsx)(g.T2, {
           id: K,
           checked: S.flags === u.$.IS_APPLICATION_BYPASS,
           onChange: () => en(u.$.IS_APPLICATION_BYPASS)
@@ -420,7 +420,7 @@ function B(e) {
               color: c.Z.colors.INTERACTIVE_NORMAL
             }))
           })]
-        }), (0, l.jsx)(h.rsf, {
+        }), (0, l.jsx)(g.T2, {
           id: X,
           checked: S.flags === u.$.IS_GUEST_INVITE,
           onChange: () => en(u.$.IS_GUEST_INVITE)
@@ -440,7 +440,7 @@ function B(e) {
               color: c.Z.colors.INTERACTIVE_NORMAL
             }))
           })]
-        }), (0, l.jsx)(h.rsf, {
+        }), (0, l.jsx)(g.T2, {
           id: Q,
           checked: !!S.temporary,
           onChange: e => el(e)

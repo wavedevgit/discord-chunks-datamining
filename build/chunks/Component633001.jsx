@@ -985,23 +985,23 @@ function eb() {
   let [e, t] = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.DEV_getOverlayLoggingBreadcrumbs(), [], Chunk136015.Q), {
     ref: n,
     height: l
-  } = (0, Chunk393238.ZP)(), s = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.DEV_isOverlayModuleLoggingEnabled()), [o, c] = Chunk647438.useState(Chunk913527), [u, x] = Chunk647438.useState(Object.keys(ec)), [p, v] = Chunk647438.useState(""), b = Chunk647438.useMemo(() => 0 === exports ? [] : module.filter(e => {
-    for (let t of u) {
+  } = (0, Chunk393238.ZP)(), s = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.DEV_isOverlayModuleLoggingEnabled()), [o, c] = Chunk647438.useState(Chunk913527), [x, p] = Chunk647438.useState(Object.keys(ec)), [v, b] = Chunk647438.useState(""), j = Chunk647438.useMemo(() => 0 === exports ? [] : module.filter(e => {
+    for (let t of x) {
       let {
         filter: n
       } = ec[t];
       if (n(e)) returntrue
     }
     returnfalse
-  }), [module, Chunk755721, exports]), [j, g] = Chunk647438.useState(Chunk984370), [_, y] = Chunk647438.useState(null), N = Chunk647438.useMemo(() => module.find(e => e.key === _), [module, Chunk371651]), E = Chunk647438.useCallback(e => {
-    g(e)
+  }), [module, Chunk765250, exports]), [g, _] = Chunk647438.useState(Chunk427860), [y, N] = Chunk647438.useState(null), E = Chunk647438.useMemo(() => module.find(e => e.key === y), [module, Chunk829907]), T = Chunk647438.useCallback(e => {
+    _(e)
   }, []), {
-    renderSelectedTab: T
+    renderSelectedTab: S
   } = (0, Chunk621060.ZP)({
     tabs: ef
   }, []);
-  (0, Chunk301801.BO)(Chunk593472, Chunk984370, Chunk886118, ev, [module]);
-  let S = Chunk647438.useCallback(e => {
+  (0, Chunk301801.BO)(Chunk594190, Chunk427860, Chunk352527, ev, [module]);
+  let P = Chunk647438.useCallback(e => {
     c(e), h.Z.setModuleLogging(e)
   }, []);
   Chunk647438.useEffect(() => {
@@ -1013,16 +1013,16 @@ function eb() {
       clearTimeout(module)
     }
   }, []);
-  let [P, w] = Chunk647438.useState(false), I = Chunk647438.useRef(null), R = Chunk647438.useCallback(() => {
-    (0, Chunk572004.JG)(JSON.stringify(module)), Chunk808506(true)
+  let [w, I] = Chunk647438.useState(false), R = Chunk647438.useRef(null), A = Chunk647438.useCallback(() => {
+    (0, Chunk572004.JG)(JSON.stringify(module)), Chunk55935(true)
   }, [module]);
   return Chunk647438.useEffect(() => {
-    if (Chunk449224) return Chunk55935.current = setTimeout(() => {
-      Chunk808506(false)
+    if (Chunk808506) return Chunk70956.current = setTimeout(() => {
+      Chunk55935(false)
     }, 4e3), () => {
-      null != Chunk55935.current && clearTimeout(Chunk55935.current)
+      null != Chunk70956.current && clearTimeout(Chunk70956.current)
     }
-  }, [Chunk449224]), (0, Chunk951288.jsxs)("div", {
+  }, [Chunk808506]), (0, Chunk951288.jsxs)("div", {
     ref: require,
     className: Chunk454741.panelContainer,
     children: [(0, Chunk951288.jsxs)("div", {
@@ -1032,9 +1032,9 @@ function eb() {
         children: [(0, Chunk951288.jsxs)("div", {
           title: "Toggles the Polling of Native",
           className: Chunk454741.pollBreadcrumbs,
-          children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
+          children: [(0, Chunk951288.jsx)(Chunk755721.T2, {
             checked: o,
-            onChange: e => S(e)
+            onChange: e => P(e)
           }), (0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-md/normal",
             color: "currentColor",
@@ -1043,9 +1043,9 @@ function eb() {
         }), Object.entries(ec).map(e => {
           let [t, n] = e;
           return (0, a.jsx)(m.P3F, {
-            className: i()(V.filter, u.includes(t) && V.activeFilter),
+            className: i()(V.filter, x.includes(t) && V.activeFilter),
             onClick: () => {
-              x(e => e.includes(t) ? e.filter(e => e !== t) : [...e, t])
+              p(e => e.includes(t) ? e.filter(e => e !== t) : [...e, t])
             },
             children: (0, a.jsx)(m.Text, {
               variant: "text-sm/normal",
@@ -1055,12 +1055,12 @@ function eb() {
           }, t)
         }), (0, Chunk951288.jsxs)(Chunk481060.P3F, {
           className: Chunk454741.copyAll,
-          onClick: Chunk70956,
+          onClick: Chunk145597,
           children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-sm/normal",
             color: "text-secondary",
-            children: Chunk449224 ? "Copied" : "Copy All"
-          }), Chunk449224 ? (0, Chunk951288.jsx)(Chunk481060.dz2, {
+            children: Chunk808506 ? "Copied" : "Copy All"
+          }), Chunk808506 ? (0, Chunk951288.jsx)(Chunk481060.dz2, {
             size: "sm",
             color: Chunk481060.TVs.unsafe_rawColors.GREEN_330.css
           }) : (0, Chunk951288.jsx)(Chunk481060.TIy, {
@@ -1072,9 +1072,9 @@ function eb() {
         className: Chunk454741.toolbar,
         children: (0, Chunk951288.jsx)(Chunk481060.E1j, {
           className: Chunk454741.searchBar,
-          query: Chunk593472,
-          onChange: Chunk594190,
-          onClear: () => Chunk594190(""),
+          query: Chunk594190,
+          onChange: Chunk984370,
+          onClear: () => Chunk984370(""),
           placeholder: "Regex search by breadcrumb name and data"
         })
       })]
@@ -1082,17 +1082,17 @@ function eb() {
       className: i()(Chunk454741.panelGroup, Chunk454741.tableContainer),
       children: (0, Chunk951288.jsx)(Chunk681619.Z, {
         columns: eu,
-        data: Chunk427860,
-        selectedRowKey: null != Chunk371651 ? Chunk371651 : true,
-        onClickRow: e => y(e.key)
+        data: Chunk837268,
+        selectedRowKey: null != Chunk829907 ? Chunk829907 : true,
+        onClickRow: e => N(e.key)
       })
-    }), null != Chunk556809 && (0, Chunk951288.jsx)(Chunk484036.Z, {
+    }), null != Chunk886118 && (0, Chunk951288.jsx)(Chunk484036.Z, {
       className: i()(Chunk454741.panelGroup, Chunk454741.subPanel),
       minHeight: 100,
       initialHeight: null != Chunk120356 ? Chunk120356 / 3 : 300,
-      children: Chunk352527({
-        breadcrumb: Chunk556809,
-        onClose: () => Chunk829907(null)
+      children: Chunk355863({
+        breadcrumb: Chunk886118,
+        onClose: () => Chunk556809(null)
       })
     })]
   })

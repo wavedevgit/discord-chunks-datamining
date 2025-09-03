@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
-/** chunk id: 437337, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 497039, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  r: () => A
+  T: () => A
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk186325 = require("./186325.js"),
   Chunk84735 = require("./84735.js"),
   Chunk180035 = require("./180035.js"),
-  Chunk760042 = require("./760042.js");
+  Chunk580229 = require("./580229.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -89,7 +89,8 @@ function T(e, t, n, i) {
     })]
   })
 }
-let A = function(e) {
+
+function A(e) {
   let {
     id: t,
     onChange: n,

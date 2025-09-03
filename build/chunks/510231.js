@@ -19,7 +19,7 @@ function u(e) {
 }
 
 function d(e) {
-  return (null == e ? true : e.themes) != null && e.themes.includes(s.u.EROTIC)
+  return (null == e ? true : e.themes) != null && e.themes.includes(s.J8.EROTIC)
 }
 
 function f() {

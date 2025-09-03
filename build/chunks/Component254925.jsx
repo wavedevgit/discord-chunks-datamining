@@ -1,13 +1,14 @@
 /** Chunk was on 88479 **/
 /** chunk id: 254925, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => w
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk580685 = require("./580685.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
+  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
   Chunk266454 = require("./266454.js"),
@@ -30,51 +31,51 @@ var Chunk951288 = require("./951288.js"),
   Chunk899926 = require("./899926.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk616397 = require("./616397.js");
-let P = function() {
-  var e, t, n, P;
+let w = function() {
+  var e, t, n, w;
   (0, Chunk388032.useSyncMessages)(Chunk899926.messagesLoader);
-  let w = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
-    R = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuildProfile()),
+  let R = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
+    Z = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuildProfile()),
     {
-      fetchGuildProfile: Z,
-      fetchStatus: D
-    } = (0, Chunk65361.u)(null == w ? true : w.id);
+      fetchGuildProfile: D,
+      fetchStatus: A
+    } = (0, Chunk65361.u)(null == R ? true : R.id);
   if (Chunk647438.useEffect(() => {
       (0, Chunk266454.Q3)(Chunk704215.z.GUILD_TAG_SERVER_SETTINGS_NEW_BADGE, {
         dismissAction: Chunk921944.L.AUTO
       })
     }, []), Chunk647438.useEffect(() => {
-      D === Chunk314852.a.NOT_FETCHED && Z()
-    }, [Z, D]), D !== Chunk314852.a.FETCHED) return (0, Chunk951288.jsx)("div", {
+      A === Chunk314852.a.NOT_FETCHED && D()
+    }, [D, A]), A !== Chunk314852.a.FETCHED) return (0, Chunk951288.jsx)("div", {
     className: Chunk616397.spinnerContainer,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   });
-  if (null == w || null == R) return null;
-  let A = Chunk580685.Y.VISIBLE.has(R.visibility),
-    L = (0, Chunk731722.up)(w),
-    k = !L || (null == R ? true : R.tag) == null,
-    M = null != (e = R.badge) ? module : Chunk131085.QV["0"],
-    G = null != (t = R.badgeColorPrimary) ? exports : Chunk131085.Ek["0"].primary,
-    U = null != (n = R.badgeColorSecondary) ? require : Chunk131085.Ek["0"].secondary,
-    B = (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+  if (null == R || null == Z) return null;
+  let L = Chunk580685.Y.VISIBLE.has(Z.visibility),
+    k = (0, Chunk731722.up)(R),
+    M = !k || (null == Z ? true : Z.tag) == null,
+    G = null != (e = Z.badge) ? module : Chunk131085.QV["0"],
+    U = null != (t = Z.badgeColorPrimary) ? exports : Chunk131085.Ek["0"].primary,
+    B = null != (n = Z.badgeColorSecondary) ? require : Chunk131085.Ek["0"].secondary,
+    F = (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk388661.Z, {
         className: Chunk616397.section,
-        guildId: w.id,
-        isDisabled: k,
-        tag: null != (P = R.tag) ? P : "",
-        badge: M,
-        primaryColor: G,
-        secondaryColor: U
+        guildId: R.id,
+        isDisabled: M,
+        tag: null != (w = Z.tag) ? w : "",
+        badge: G,
+        primaryColor: U,
+        secondaryColor: B
       }), (0, Chunk951288.jsx)(Chunk835887.Z, {
         className: Chunk616397.section,
-        selectedBadge: M,
-        guildId: w.id
+        selectedBadge: G,
+        guildId: R.id
       }), (0, Chunk951288.jsx)(Chunk500230.Z, {
         className: Chunk616397.section,
-        guildId: w.id,
-        badge: M,
-        primaryColor: G,
-        secondaryColor: U
+        guildId: R.id,
+        badge: G,
+        primaryColor: U,
+        secondaryColor: B
       })]
     });
   return (0, Chunk951288.jsxs)("div", {
@@ -99,7 +100,7 @@ let P = function() {
                 Chunk434404.Z.setSection(Chunk981631.pNK.ACCESS)
               }
             })
-          }), !A && (0, Chunk951288.jsx)(Chunk494620.Z, {
+          }), !L && (0, Chunk951288.jsx)(Chunk494620.Z, {
             className: Chunk616397.privateProfileWarning,
             children: (0, Chunk951288.jsx)(Chunk481060.Text, {
               variant: "text-xs/medium",
@@ -108,7 +109,7 @@ let P = function() {
               })
             })
           })]
-        }), L ? (0, Chunk951288.jsxs)("div", {
+        }), k ? (0, Chunk951288.jsxs)("div", {
           className: Chunk616397.enableSwitchContainer,
           children: [(0, Chunk951288.jsx)("label", {
             htmlFor: "enable-server-tag",
@@ -117,19 +118,19 @@ let P = function() {
               color: "header-primary",
               children: Chunk388032.intl.string(Chunk899926.default["1zams7"])
             })
-          }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
+          }), (0, Chunk951288.jsx)(Chunk755721.T2, {
             id: "enable-server-tag",
-            checked: !k,
+            checked: !M,
             onChange: () => {
-              if (k) {
+              if (M) {
                 var e;
-                Chunk434404.Z.updateGuildProfile(w.id, {
-                  tag: null != (e = R.tag) ? module : "",
-                  badge: M,
-                  badgeColorPrimary: G,
-                  badgeColorSecondary: U
+                Chunk434404.Z.updateGuildProfile(R.id, {
+                  tag: null != (e = Z.tag) ? module : "",
+                  badge: G,
+                  badgeColorPrimary: U,
+                  badgeColorSecondary: B
                 })
-              } else Chunk434404.Z.updateGuildProfile(w.id, {
+              } else Chunk434404.Z.updateGuildProfile(R.id, {
                 tag: null
               })
             }
@@ -138,25 +139,25 @@ let P = function() {
           className: Chunk616397.boostingLinkContainer,
           children: (0, Chunk951288.jsx)(Chunk70086.P, {
             onClick: () => {
-              (0, Chunk441536.Z)(w.id, Chunk100527.Z.GUILD_POWERUPS_GUILD_SETTINGS_TAGS), Chunk434404.Z.close()
+              (0, Chunk441536.Z)(R.id, Chunk100527.Z.GUILD_POWERUPS_GUILD_SETTINGS_TAGS), Chunk434404.Z.close()
             }
           })
-        }), k ? (0, Chunk951288.jsx)(Chunk481060.nuw, {
+        }), M ? (0, Chunk951288.jsx)(Chunk481060.nuw, {
           children: (0, Chunk951288.jsx)("div", {
             className: Chunk616397.disabledForm,
-            children: B
+            children: F
           })
-        }) : B]
+        }) : F]
       }), (0, Chunk951288.jsxs)("div", {
         className: Chunk616397.sidebarContainer,
         children: [(0, Chunk951288.jsx)(Chunk742409.Z, {
-          guildId: w.id,
-          tag: R.tag,
-          badge: M,
-          primaryColor: G,
-          secondaryColor: U
-        }), !k && (0, Chunk951288.jsx)(Chunk58909.Z, {
-          guildId: w.id
+          guildId: R.id,
+          tag: Z.tag,
+          badge: G,
+          primaryColor: U,
+          secondaryColor: B
+        }), !M && (0, Chunk951288.jsx)(Chunk58909.Z, {
+          guildId: R.id
         })]
       })]
     })]

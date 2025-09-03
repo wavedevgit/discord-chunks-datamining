@@ -2,11 +2,12 @@
 /** chunk id: 335082, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => y
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk524437 = require("./524437.js"),
+  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk921801 = require("./921801.js"),
   Chunk695346 = require("./695346.js"),
@@ -18,42 +19,42 @@ var Chunk524437 = require("./524437.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk764055 = require("./764055.js");
 
-function h(e) {
+function m(e) {
   let {
     label: t,
     sublabel: n,
     id: i,
-    checked: o,
-    onChange: s
+    checked: s,
+    onChange: l
   } = e;
   return (0, r.jsxs)("div", {
-    className: p.settingSwitch,
+    className: h.settingSwitch,
     children: [(0, r.jsxs)("label", {
-      className: p.settingSwitchLabel,
+      className: h.settingSwitchLabel,
       htmlFor: i,
-      children: [(0, r.jsx)(a.X6q, {
+      children: [(0, r.jsx)(o.X6q, {
         variant: "heading-md/semibold",
         children: t
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
         children: n
       })]
-    }), (0, r.jsx)(a.rsf, {
+    }), (0, r.jsx)(a.T2, {
       id: i,
-      checked: o,
-      onChange: s
+      checked: s,
+      onChange: l
     })]
   })
 }
 
-function m() {
+function g() {
   let e = Chunk695346.G6.useSetting(),
     t = Chunk695346.no.useSetting(),
     n = e => {
-      s.no.updateSetting(e)
+      l.no.updateSetting(e)
     },
-    o = [{
+    a = [{
       value: Chunk524437.GI.ACTIVITY_STATUS_ON,
       name: Chunk388032.intl.string(Chunk388032.t.UzGMHx)
     }, {
@@ -85,7 +86,7 @@ function m() {
           color: "header-primary",
           children: Chunk388032.intl.string(Chunk933554.default["/LHVbm"])
         }), (0, Chunk951288.jsx)(Chunk481060.FXm, {
-          options: Chunk921801,
+          options: Chunk755721,
           value: exports,
           onChange: e => n(e.value)
         })]
@@ -110,7 +111,7 @@ function m() {
   })
 }
 
-function g() {
+function E() {
   let e = Chunk695346.cP.useSetting(),
     t = Chunk695346.Ou.useSetting();
   return (0, Chunk951288.jsx)(Chunk921801.F, {
@@ -124,24 +125,24 @@ function g() {
           color: "header-primary",
           children: Chunk388032.intl.string(Chunk933554.default["5rYBAQ"])
         })
-      }), (0, Chunk951288.jsx)(h, {
+      }), (0, Chunk951288.jsx)(m, {
         label: Chunk388032.intl.string(Chunk933554.default.khuuzs),
         sublabel: Chunk388032.intl.string(Chunk933554.default["8EWsJy"]),
         id: "allow-friends-to-join-my-game",
         checked: module,
-        onChange: e => s.cP.updateSetting(e)
-      }), (0, Chunk951288.jsx)(h, {
+        onChange: e => l.cP.updateSetting(e)
+      }), (0, Chunk951288.jsx)(m, {
         label: Chunk388032.intl.string(Chunk933554.default.Uz5Ipq),
         sublabel: Chunk388032.intl.string(Chunk933554.default.CZI2GR),
         id: "allow-vc-join-without-request",
         checked: exports,
-        onChange: e => s.Ou.updateSetting(e)
+        onChange: e => l.Ou.updateSetting(e)
       })]
     })
   })
 }
 
-function E() {
+function b() {
   let e = Chunk695346.G6.useSetting(),
     t = Chunk358085.isPlatformEmbedded ? Chunk388032.intl.string(Chunk933554.default.UQ9RHB) : Chunk388032.intl.string(Chunk388032.t.oKqC4u);
   return (0, Chunk951288.jsx)(Chunk921801.F, {
@@ -156,7 +157,7 @@ function E() {
         })
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk764055.switchContainer,
-        children: (0, Chunk951288.jsx)(h, {
+        children: (0, Chunk951288.jsx)(m, {
           label: Chunk388032.intl.string(Chunk933554.default.WhdCGB),
           sublabel: exports,
           id: "share-my-activity",
@@ -168,7 +169,7 @@ function E() {
   })
 }
 
-function b() {
+function y() {
   return (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_TOS,
     children: (0, Chunk951288.jsx)(Chunk481060.hjN, {
@@ -182,27 +183,27 @@ function b() {
     })
   })
 }
-let y = function(e) {
+let O = function(e) {
   let {
     className: t
   } = e;
-  return (0, r.jsx)(a.hjN, {
+  return (0, r.jsx)(o.hjN, {
     className: t,
-    children: (0, r.jsxs)(a.y5t, {
+    children: (0, r.jsxs)(o.y5t, {
       forceLevel: 1,
-      component: (0, r.jsx)(a.X6q, {
-        className: p.formTitle,
+      component: (0, r.jsx)(o.X6q, {
+        className: h.formTitle,
         variant: "heading-xl/semibold",
         color: "header-primary",
-        children: _.intl.string(_.t.Cq98yM)
+        children: p.intl.string(p.t.Cq98yM)
       }),
-      children: [(0, r.jsx)(E, {}), (0, r.jsx)(a.$i$, {
-        className: p.divider
-      }), (0, r.jsx)(m, {}), (0, r.jsx)(a.$i$, {
-        className: p.divider
-      }), (0, r.jsx)(g, {}), (0, r.jsx)(a.$i$, {
-        className: p.divider
-      }), (0, r.jsx)(b, {})]
+      children: [(0, r.jsx)(b, {}), (0, r.jsx)(o.$i$, {
+        className: h.divider
+      }), (0, r.jsx)(g, {}), (0, r.jsx)(o.$i$, {
+        className: h.divider
+      }), (0, r.jsx)(E, {}), (0, r.jsx)(o.$i$, {
+        className: h.divider
+      }), (0, r.jsx)(y, {})]
     })
   })
 }

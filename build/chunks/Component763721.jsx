@@ -455,7 +455,7 @@ let h = [{
               })
             }), (0, r.jsx)(o.xJW, {
               title: "Text Input (Legacy)",
-              children: (0, r.jsx)(o.GSy, u({}, v))
+              children: (0, r.jsx)(a.Is, u({}, v))
             })]
           }), (0, r.jsx)(o.xJW, {
             title: "Search Bar",

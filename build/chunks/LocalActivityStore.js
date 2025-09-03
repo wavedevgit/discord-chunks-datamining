@@ -91,30 +91,31 @@ function L() {
     u = null != Chunk199902.Z.getCurrentUserActiveStream(),
     d = Chunk442837 || Chunk570140 && !Chunk317381;
   if (null != Chunk392711 && null != Chunk392711.name && !Chunk212517) {
-    var f, O, v;
+    var f, O;
+    let t = Chunk77498.Z.getGameByName(Chunk392711.name);
     module.push(R({
       type: Chunk981631.IIU.PLAYING,
       name: Chunk392711.name,
-      application_id: null != (O = Chunk392711.id) ? Chunk581883 : null == (f = Chunk77498.Z.getGameByName(Chunk392711.name)) ? true : Chunk812206.id,
+      application_id: null != (f = Chunk392711.id) ? Chunk812206 : null == exports ? true : exports.id,
       metadata: {
-        distributor: null != (v = Chunk392711.distributor) ? Chunk630388 : true
+        distributor: null != (O = Chunk392711.distributor) ? Chunk581883 : true
       },
       timestamps: {
         start: Chunk392711.start
       }
     }, (0, Chunk509003.LK)(Chunk392711)))
   }
-  let N = Chunk768419.Z.getActivity();
-  null != N && module.push(R({
+  let v = Chunk768419.Z.getActivity();
+  null != Chunk630388 && module.push(R({
     type: Chunk981631.IIU.LISTENING
-  }, N));
-  let P = Chunk106301.Z.getCurrentHangStatus();
-  if (null != P) {
+  }, Chunk630388));
+  let N = Chunk106301.Z.getCurrentHangStatus();
+  if (null != N) {
     let t = Chunk106301.Z.getCustomHangStatus();
     module.push({
       type: Chunk981631.IIU.HANG_STATUS,
       name: "Hang Status",
-      state: P,
+      state: N,
       details: null == exports ? true : exports.status,
       emoji: null == exports ? true : exports.emoji
     })

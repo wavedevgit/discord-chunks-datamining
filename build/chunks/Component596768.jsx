@@ -154,7 +154,7 @@ function S() {
       children: [(0, Chunk951288.jsx)("div", {
         title: "Enables tracking of all triggers",
         className: Chunk599832.triggersEnable,
-        children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+        children: (0, Chunk951288.jsx)(Chunk755721.T2, {
           checked: S,
           onChange: P,
           className: Chunk599832.__invalid_toolbarSwitch

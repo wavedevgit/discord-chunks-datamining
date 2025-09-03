@@ -157,7 +157,7 @@ class H extends Chunk647438.PureComponent {
             children: (0, Chunk951288.jsx)(Chunk481060.ua7, {
               text: Chunk388032.intl.string(Chunk388032.t.uCD7qK),
               children: e => (0, r.jsx)("div", Z(G({}, e), {
-                children: (0, r.jsx)(f.rsf, {
+                children: (0, r.jsx)(d.T2, {
                   checked: t,
                   onChange: this.handleEnableDisable
                 })
