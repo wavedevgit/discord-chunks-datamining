@@ -1,4 +1,4 @@
-/** Chunk was on 28883 **/
+/** Chunk was on 72164 **/
 /** chunk id: 384816, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -37,7 +37,7 @@ function O(e) {
     trackUserProfileAction: T
   } = (0, f.KZ)(), N = (0, l.e7)([d.Z], () => d.Z.getGuildId()), A = (0, c.Y)({
     userId: n.id
-  }), C = (0, l.e7)([u.Z], () => u.Z.hidePersonalInformation), E = (0, l.e7)([s.default], () => s.default.locale), S = (0, p.Z)(n.id), w = (0, m.Z)(n.id);
+  }), C = (0, l.e7)([u.Z], () => u.Z.hidePersonalInformation), E = (0, l.e7)([s.default], () => s.default.locale), S = (0, m.Z)(n.id), w = (0, p.Z)(n.id);
   return (0, o.jsxs)(r.zJl, {
     fade: true,
     className: I.scroller,
@@ -61,7 +61,7 @@ function O(e) {
       })
     }), A.length > 0 && (0, o.jsx)(g.Z, {
       heading: _.intl.string(_.t["Uv/eT0"]),
-      children: (0, o.jsx)(b.Z, {
+      children: (0, o.jsx)(h.Z, {
         applicationIds: A
       })
     }), (0, o.jsx)(g.Z, {
@@ -74,7 +74,7 @@ function O(e) {
     }), S.length > 0 && (0, o.jsx)(g.Z, {
       heading: _.intl.string(_.t["3fe7U1"]),
       scrollIntoView: Z === y.Tb.CONNECTIONS,
-      children: (0, o.jsx)(h.ZP, {
+      children: (0, o.jsx)(b.ZP, {
         connectedAccounts: S,
         className: I.connections,
         userId: n.id,
@@ -82,7 +82,7 @@ function O(e) {
       })
     }), w.length > 0 && (0, o.jsx)(g.Z, {
       heading: _.intl.string(_.t.PHjkRE),
-      children: w.map(e => (0, o.jsx)(h.tH, {
+      children: w.map(e => (0, o.jsx)(b.tH, {
         className: I.appsConnections,
         applicationRoleConnection: e,
         locale: E,

@@ -1,4 +1,4 @@
-/** Chunk was on 28883 **/
+/** Chunk was on 72164 **/
 /** chunk id: 595145, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => eo
@@ -72,14 +72,14 @@ function eo(e) {
     initialSubsection: ed,
     transitionState: eu,
     customStatusPrompt: ef,
-    openedAt: em,
-    onClose: ep,
+    openedAt: ep,
+    onClose: em,
     showGuildProfile: ex = true,
-    sourceAnalyticsLocations: eh = [],
-    disableActionsForPreview: eb = false
+    sourceAnalyticsLocations: eb = [],
+    disableActionsForPreview: eh = false
   } = e, {
     analyticsLocations: ej
-  } = (0, f.ZP)([...eh, u.Z.USER_PROFILE_MODAL_V2]), eg = (0, Z.ZB)({
+  } = (0, f.ZP)([...eb, u.Z.USER_PROFILE_MODAL_V2]), eg = (0, Z.ZB)({
     layout: "MODAL_V2",
     userId: t.id,
     sourceSessionId: ea,
@@ -111,7 +111,7 @@ function eo(e) {
       canAnimate: false,
       size: 1024
     }),
-    ew = (0, p.p)({
+    ew = (0, m.p)({
       location: "UserProfileModalV2"
     }),
     eD = l.useMemo(() => null != ef ? ef : (0, x.Z)(), [ef]),
@@ -119,12 +119,12 @@ function eo(e) {
       user: t,
       currentUser: eo
     }),
-    eL = (0, b.Y)({
+    eL = (0, h.Y)({
       userId: t.id
     }),
-    eR = (0, h.vh)(t.id),
+    eR = (0, b.vh)(t.id),
     eM = (0, N.Z)(t.id),
-    eU = (0, m.Dt)(),
+    eU = (0, p.Dt)(),
     ek = en.intl.format(en.t.KRe1Fh, {
       name: eN
     });
@@ -141,7 +141,7 @@ function eo(e) {
     value: ej,
     children: (0, o.jsx)(Z.Mt, {
       value: eg,
-      openedAt: em,
+      openedAt: ep,
       fetchStartedAt: null == eT ? true : eT.fetchStartedAt,
       fetchEndedAt: null == eT ? true : eT.fetchEndedAt,
       isLoaded: null == eT ? true : eT.isLoaded,
@@ -157,7 +157,7 @@ function eo(e) {
             transitionState: eu,
             "aria-labelledby": eU,
             parentComponent: "UserProfileModalV2",
-            children: [eb ? (0, o.jsxs)("div", {
+            children: [eh ? (0, o.jsxs)("div", {
               className: et.previewBar,
               children: [(0, o.jsxs)(c.X6q, {
                 id: eU,
@@ -173,7 +173,7 @@ function eo(e) {
                 size: "sm",
                 variant: "secondary",
                 text: en.intl.string(en.t.ojM1xM),
-                onClick: ep,
+                onClick: em,
                 "aria-label": en.intl.string(en.t.cpT0Cg)
               })]
             }) : (0, o.jsx)(c.nn4, {
@@ -183,7 +183,7 @@ function eo(e) {
               })
             }), (0, o.jsx)(c.y5t, {
               children: (0, o.jsxs)(V.Z, {
-                className: eb ? et.disabled : true,
+                className: eh ? et.disabled : true,
                 user: t,
                 displayProfile: eT,
                 themeType: ee.l.MODAL_V2,
@@ -209,7 +209,7 @@ function eo(e) {
                       themeType: ee.l.MODAL_V2
                     }), (0, o.jsx)(M.Z, {
                       userId: t.id,
-                      onClose: ep,
+                      onClose: em,
                       className: et.interactionToast
                     }), (0, o.jsx)(C.Z, {
                       user: t,
@@ -224,14 +224,14 @@ function eo(e) {
                       themeType: ee.l.MODAL_V2,
                       hasEntered: eu === c.Dvm.ENTERED,
                       prompt: ew && t.id === eo.id ? eD : null,
-                      disableToolbar: eb
+                      disableToolbar: eh
                     })]
                   }), (0, o.jsxs)(c.Ttm, {
                     fade: true,
                     className: et.profileBody,
                     children: [(0, o.jsx)(F.Z, {
                       user: t,
-                      onClose: ep,
+                      onClose: em,
                       nickname: I.ZP.useName(null == eT ? true : eT.guildId, er, t),
                       nicknameIcons: (0, o.jsx)(B.Z, {
                         size: "sm",
@@ -242,7 +242,7 @@ function eo(e) {
                       tags: (0, o.jsx)(E.Z, {
                         displayProfile: eT,
                         themeType: ee.l.MODAL_V2,
-                        onClose: ep
+                        onClose: em
                       })
                     }), eA === $.OGo.PENDING_INCOMING && (0, o.jsx)(V.Z.Overlay, {
                       className: et.profileOverlay,
@@ -286,7 +286,7 @@ function eo(e) {
                       })
                     }), t.id === eo.id && (0, o.jsx)(D.Z, {
                       isPremiumUser: (0, O.I5)(eo),
-                      onInteraction: ep
+                      onInteraction: em
                     }), (0, o.jsx)(k.Z, {
                       user: t,
                       className: et.profileBanner
@@ -299,7 +299,7 @@ function eo(e) {
                         channelId: er,
                         displayProfile: eT,
                         relationshipType: eA,
-                        onClose: ep
+                        onClose: em
                       })
                     }), (null == eT ? true : eT.bio) != null && (null == eT ? true : eT.bio) !== "" && !eE && (0, o.jsx)(w.Z, {
                       userBio: eT.bio,
@@ -374,7 +374,7 @@ function eo(e) {
                   items: eB,
                   initialSection: es,
                   initialSubsection: ed,
-                  onClose: ep
+                  onClose: em
                 })]
               })
             })]

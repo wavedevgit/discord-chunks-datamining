@@ -1,4 +1,4 @@
-/** Chunk was on 28883 **/
+/** Chunk was on 72164 **/
 /** chunk id: 389190, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -21,9 +21,9 @@ function x(e) {
     user: n,
     guildId: t,
     channelId: x,
-    onClose: h
+    onClose: b
   } = e, {
-    mutualFriends: b
+    mutualFriends: h
   } = (0, s.Z)(n), {
     analyticsLocations: j
   } = (0, c.ZP)(), {
@@ -33,20 +33,20 @@ function x(e) {
   return l.useEffect(() => {
     (0, d.Z)(n.id, y)
   }, [n.id, y]), (0, o.jsx)(r.zJl, {
-    className: p.listScroller,
+    className: m.listScroller,
     fade: true,
-    children: null == b ? (0, o.jsx)("div", {
-      className: p.empty,
+    children: null == h ? (0, o.jsx)("div", {
+      className: m.empty,
       children: (0, o.jsx)(r.$jN, {})
-    }) : 0 === b.length ? (0, o.jsxs)("div", {
-      className: p.empty,
+    }) : 0 === h.length ? (0, o.jsxs)("div", {
+      className: m.empty,
       children: [(0, o.jsx)("div", {
-        className: p.emptyIconFriends
+        className: m.emptyIconFriends
       }), (0, o.jsx)("div", {
-        className: p.emptyText,
-        children: m.intl.string(m.t["/5p4g4"])
+        className: m.emptyText,
+        children: p.intl.string(p.t["/5p4g4"])
       })]
-    }) : b.map(e => {
+    }) : h.map(e => {
       let {
         key: n,
         user: l,
@@ -59,7 +59,7 @@ function x(e) {
         channelId: x,
         onSelect: () => {
           var e, n, t;
-          null == h || h(), v({
+          null == b || b(), v({
             action: "PRESS_MUTUAL_FRIEND"
           }), e = l.id, (0, u.openUserProfileModal)((n = function(e) {
             for (var n = 1; n < arguments.length; n++) {

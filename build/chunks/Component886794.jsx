@@ -1,4 +1,4 @@
-/** Chunk was on 28883 **/
+/** Chunk was on 72164 **/
 /** chunk id: 886794, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -45,7 +45,7 @@ function E(e) {
     openedAt: R,
     onClose: M,
     sourceAnalyticsLocations: U = []
-  } = e, k = E === Z.ME ? true : E, V = (0, m.ZP)(t.id, k), F = u.ZP.getName(k, S, t), G = (0, s.Dt)(), {
+  } = e, k = E === Z.ME ? true : E, V = (0, p.ZP)(t.id, k), F = u.ZP.getName(k, S, t), G = (0, s.Dt)(), {
     analyticsLocations: z
   } = (0, a.ZP)([...U, c.Z.USER_PROFILE_MODAL]), K = (0, f.ZB)({
     layout: "MODAL",
@@ -90,13 +90,13 @@ function E(e) {
                 user: t
               })
             }), (0, o.jsxs)("div", {
-              children: [(0, o.jsx)(h.Z, {
+              children: [(0, o.jsx)(b.Z, {
                 user: t,
                 displayProfile: V,
                 themeType: P.l.MODAL
               }), (0, o.jsx)("div", {
                 className: N.headerInner,
-                children: (0, o.jsx)(p.Z, {
+                children: (0, o.jsx)(m.Z, {
                   user: t,
                   displayProfile: V,
                   guildId: k,
@@ -136,7 +136,7 @@ function E(e) {
                 }), (0, o.jsxs)(r.zJl, {
                   fade: true,
                   className: A.scroller,
-                  children: [(0, o.jsx)(b.Z, {
+                  children: [(0, o.jsx)(h.Z, {
                     userId: t.id,
                     userBio: null == V ? true : V.bio,
                     setLineClamp: false

@@ -1,4 +1,4 @@
-/** Chunk was on 28883 **/
+/** Chunk was on 72164 **/
 /** chunk id: 740628, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -32,29 +32,29 @@ function v(e) {
     channelId: a,
     onClose: s
   } = e;
-  return n === h.oh.ACTIVITY ? (0, o.jsx)(f.Z, {
+  return n === b.oh.ACTIVITY ? (0, o.jsx)(f.Z, {
     user: l,
     currentUser: r,
     guildId: c,
     onClose: s
-  }) : n === h.oh.MUTUAL_FRIENDS ? (0, o.jsx)(p.Z, {
+  }) : n === b.oh.MUTUAL_FRIENDS ? (0, o.jsx)(m.Z, {
     user: l,
     guildId: c,
     channelId: a,
     onClose: s
-  }) : n === h.oh.MUTUAL_GUILDS ? (0, o.jsx)(x.Z, {
+  }) : n === b.oh.MUTUAL_GUILDS ? (0, o.jsx)(x.Z, {
     user: l,
     onClose: s
-  }) : n === h.oh.BOT_DATA_ACCESS ? (0, o.jsx)(d.Z, {
+  }) : n === b.oh.BOT_DATA_ACCESS ? (0, o.jsx)(d.Z, {
     user: l
-  }) : n === h.oh.BOT_INFO ? (0, o.jsx)(u.Z, {
+  }) : n === b.oh.BOT_INFO ? (0, o.jsx)(u.Z, {
     user: l,
     currentUser: r,
     displayProfile: i,
     guildId: c,
     subsection: t,
     onClose: s
-  }) : (0, o.jsx)(m.Z, {
+  }) : (0, o.jsx)(p.Z, {
     user: l,
     currentUser: r,
     displayProfile: i,
@@ -68,10 +68,10 @@ function y(e) {
   let {
     user: u,
     currentUser: f,
-    displayProfile: m,
-    guildId: p,
+    displayProfile: p,
+    guildId: m,
     items: x,
-    initialSection: y = h.oh.USER_INFO,
+    initialSection: y = b.oh.USER_INFO,
     initialSubsection: _,
     onClose: I
   } = e, {
@@ -111,7 +111,7 @@ function y(e) {
         className: j.emptyIconStreamerMode
       }), (0, o.jsx)("div", {
         className: j.emptyText,
-        children: b.intl.string(b.t.Br1ls7)
+        children: h.intl.string(h.t.Br1ls7)
       })]
     })
   }) : (0, o.jsxs)("div", {
@@ -142,8 +142,8 @@ function y(e) {
       subsection: T,
       user: u,
       currentUser: f,
-      displayProfile: m,
-      guildId: p,
+      displayProfile: p,
+      guildId: m,
       onClose: I
     })]
   })

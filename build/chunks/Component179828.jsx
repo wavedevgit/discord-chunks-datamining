@@ -1,4 +1,4 @@
-/** Chunk was on 28883 **/
+/** Chunk was on 72164 **/
 /** chunk id: 179828, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => N
@@ -82,9 +82,9 @@ function T(e) {
     roles: d,
     highestRole: u,
     canManageRoles: f,
-    onAddRole: m,
-    onRemoveRole: p
-  } = e, h = f && null != s, b = l.useRef(null), g = l.useMemo(() => "roles-".concat((0, r.Z)()), []), T = (0, i.ZP)({
+    onAddRole: p,
+    onRemoveRole: m
+  } = e, b = f && null != s, h = l.useRef(null), g = l.useMemo(() => "roles-".concat((0, r.Z)()), []), T = (0, i.ZP)({
     id: g,
     isEnabled: true,
     scrollToStart: y.Cyb,
@@ -98,7 +98,7 @@ function T(e) {
       role: e,
       guildId: a.id,
       disableBorderColor: true,
-      onRemove: () => p(e),
+      onRemove: () => m(e),
       canRemove: (null == (l = e.tags) ? true : l.guild_connections) === null ? n.id === t.id : f && x.r6(a, t.id, u, e)
     }, e.id)
   });
@@ -114,13 +114,13 @@ function T(e) {
           "aria-label": A,
           ref: n
         }, t), {
-          children: [C, h && (0, o.jsx)(v.Z, {
-            buttonRef: b,
+          children: [C, b && (0, o.jsx)(v.Z, {
+            buttonRef: h,
             guild: a,
             guildMember: s,
             numRoles: N,
             highestRole: u,
-            onAddRole: m
+            onAddRole: p
           })]
         }))
       }
@@ -136,7 +136,7 @@ function N(e) {
   } = e, i = P(e, ["user", "currentUser", "guildId"]);
   let {
     trackUserProfileAction: c
-  } = (0, h.KZ)(), j = (0, a.e7)([m.Z], () => m.Z.getGuild(r)), v = (0, a.e7)([u.ZP], () => u.ZP.getMember(r, n.id)), I = null == v ? true : v.roles, N = (0, a.Wu)([f.Z], () => f.Z.getManyRoles(r, null != I ? I : []).sort(b.Z), [I, r]), [A] = (0, a.Wu)([p.Z], () => [p.Z.can(y.Plq.MANAGE_ROLES, j), p.Z.getGuildVersion(r)]), C = l.useCallback(e => {
+  } = (0, b.KZ)(), j = (0, a.e7)([p.Z], () => p.Z.getGuild(r)), v = (0, a.e7)([u.ZP], () => u.ZP.getMember(r, n.id)), I = null == v ? true : v.roles, N = (0, a.Wu)([f.Z], () => f.Z.getManyRoles(r, null != I ? I : []).sort(h.Z), [I, r]), [A] = (0, a.Wu)([m.Z], () => [m.Z.can(y.Plq.MANAGE_ROLES, j), m.Z.getGuildVersion(r)]), C = l.useCallback(e => {
     var t, o;
     c({
       action: "REMOVE_ROLE"

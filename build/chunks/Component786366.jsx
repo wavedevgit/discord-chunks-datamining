@@ -1,4 +1,4 @@
-/** Chunk was on 28883 **/
+/** Chunk was on 72164 **/
 /** chunk id: 786366, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -50,8 +50,8 @@ function f(e) {
     return null == (e = a.Z.getUserProfile(n.id)) ? true : e.application
   }), {
     hasMessageContent: f,
-    hasGuildPresences: m,
-    hasGuildMembers: p
+    hasGuildPresences: p,
+    hasGuildMembers: m
   } = (0, c.w)({
     flags: null == t ? true : t.flags
   });
@@ -62,11 +62,11 @@ function f(e) {
       icon: i.kBi,
       title: s.intl.string(s.t["7Tmhfn"]),
       description: s.intl.string(s.t["eu5x7+"])
-    }), m && (0, o.jsx)(u, {
+    }), p && (0, o.jsx)(u, {
       icon: i.iWm,
       title: s.intl.string(s.t.awYSsL),
       description: s.intl.string(s.t.TpsXoK)
-    }), p && (0, o.jsx)(u, {
+    }), m && (0, o.jsx)(u, {
       icon: i.BFJ,
       title: s.intl.string(s.t.WuKeSE),
       description: s.intl.string(s.t.wOBmtb)

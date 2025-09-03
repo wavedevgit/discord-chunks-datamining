@@ -1,4 +1,4 @@
-/** Chunk was on 28883 **/
+/** Chunk was on 72164 **/
 /** chunk id: 428927, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -21,16 +21,16 @@ function f(e) {
   } = e, {
     trackUserProfileAction: f
   } = (0, c.KZ)(), {
-    mutualGuilds: m,
-    isFetching: p
+    mutualGuilds: p,
+    isFetching: m
   } = (0, a.Z)(n);
   return (0, o.jsx)(l.zJl, {
     className: u.listScroller,
     fade: true,
-    children: null == m && p ? (0, o.jsx)("div", {
+    children: null == p && m ? (0, o.jsx)("div", {
       className: u.empty,
       children: (0, o.jsx)(l.$jN, {})
-    }) : (null != m || p) && (null == m ? true : m.length) !== 0 ? null == m ? true : m.map(e => {
+    }) : (null != p || m) && (null == p ? true : p.length) !== 0 ? null == p ? true : p.map(e => {
       let {
         guild: l,
         nick: c

@@ -1,4 +1,4 @@
-/** Chunk was on 28883 **/
+/** Chunk was on 72164 **/
 /** chunk id: 993160, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -22,8 +22,8 @@ function x(e) {
     user: n,
     currentUser: t,
     guildId: x,
-    channelId: h,
-    displayProfile: b,
+    channelId: b,
+    displayProfile: h,
     relationshipType: j,
     onClose: g
   } = e, {
@@ -31,17 +31,17 @@ function x(e) {
   } = (0, i.ZP)(), y = (0, c.Z)({
     user: n,
     guildId: x,
-    channelId: h,
-    displayProfile: b,
+    channelId: b,
+    displayProfile: h,
     onClose: g
   }), {
     gameFriends: _,
     hasOutgoingPendingGameFriends: I,
     hasIncomingPendingGameFriends: O
-  } = (0, m.H)({
+  } = (0, p.H)({
     userId: n.id
   }), Z = _.length > 0 || I || O;
-  return j === p.OGo.BLOCKED ? null : n.id === t.id ? (0, o.jsxs)(o.Fragment, {
+  return j === m.OGo.BLOCKED ? null : n.id === t.id ? (0, o.jsxs)(o.Fragment, {
     children: [(0, o.jsx)(a.Z, {
       user: n,
       guildId: x,
@@ -68,7 +68,7 @@ function x(e) {
       viewProfileItem: y,
       themeColor: "secondary"
     })]
-  }) : j === p.OGo.PENDING_INCOMING ? (0, o.jsxs)(o.Fragment, {
+  }) : j === m.OGo.PENDING_INCOMING ? (0, o.jsxs)(o.Fragment, {
     children: [(0, o.jsx)(s.Z, {
       type: "text",
       userId: n.id,
@@ -81,7 +81,7 @@ function x(e) {
       guildId: x,
       themeColor: "secondary"
     })]
-  }) : j === p.OGo.FRIEND || j === p.OGo.PENDING_OUTGOING ? (0, o.jsxs)(o.Fragment, {
+  }) : j === m.OGo.FRIEND || j === m.OGo.PENDING_OUTGOING ? (0, o.jsxs)(o.Fragment, {
     children: [(0, o.jsx)(s.Z, {
       type: "text",
       userId: n.id,
@@ -102,7 +102,7 @@ function x(e) {
       viewProfileItem: y,
       themeColor: "secondary"
     })]
-  }) : j === p.OGo.NONE && Z ? (0, o.jsxs)(o.Fragment, {
+  }) : j === m.OGo.NONE && Z ? (0, o.jsxs)(o.Fragment, {
     children: [(0, o.jsx)(s.Z, {
       type: "text",
       userId: n.id,

@@ -1,4 +1,4 @@
-/** Chunk was on 18877 **/
+/** Chunk was on 74449 **/
 /** chunk id: 173951, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -15,8 +15,9 @@ function o(e) {
     widget: r,
     containerClassName: o,
     disableInteraction: c,
-    index: s
-  } = e, u = function(e, t) {
+    index: s,
+    trailingContent: u
+  } = e, d = function(e, t) {
     if (null == e) return {};
     var r, n, i = function(e, t) {
       if (null == e) return {};
@@ -30,13 +31,14 @@ function o(e) {
       for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
     }
     return i
-  }(e, ["user", "widget", "containerClassName", "disableInteraction", "index"]);
+  }(e, ["user", "widget", "containerClassName", "disableInteraction", "index", "trailingContent"]);
   return (0, n.jsx)(i.Z, {
     userId: t.id,
     widget: r,
     className: o,
     disableInteraction: c,
     index: s,
+    trailingContent: u,
     children: r.games.length > 0 ? (0, n.jsx)(a.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
@@ -59,7 +61,7 @@ function o(e) {
       games: r.games,
       disableInteraction: c,
       widgetType: r.type
-    }, u)) : (0, n.jsx)(l.Z, {
+    }, d)) : (0, n.jsx)(l.Z, {
       widgetType: r.type
     })
   })

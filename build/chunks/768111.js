@@ -1,4 +1,4 @@
-/** Chunk was on 28883 **/
+/** Chunk was on 72164 **/
 /** chunk id: 768111, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -19,13 +19,13 @@ function f(e) {
     currentUser: t
   } = e, {
     mutualFriendsCount: f,
-    mutualGuilds: m
-  } = (0, i.Z)(n), p = null == m ? true : m.length, x = (0, r.Z)(n), h = (0, o.k)({
+    mutualGuilds: p
+  } = (0, i.Z)(n), m = null == p ? true : p.length, x = (0, r.Z)(n), b = (0, o.k)({
     location: "useUserProfileModalV2TabBarItems"
-  }), b = (0, l.P)({
+  }), h = (0, l.P)({
     location: "useUserProfileModalV2TabBarItems"
   }), j = (0, c.Z)(n.id), g = [], v = n.id === (null == t ? true : t.id), y = j.length > 0;
-  return (v && h || y && b) && g.push({
+  return (v && b || y && h) && g.push({
     text: u.intl.string(u.t.laViw8),
     section: d.oh.WIDGETS,
     subsection: true
@@ -38,7 +38,7 @@ function f(e) {
     section: d.oh.MUTUAL_FRIENDS,
     subsection: true
   }), g.push({
-    text: (0, s.Z)(p),
+    text: (0, s.Z)(m),
     section: d.oh.MUTUAL_GUILDS,
     subsection: true
   })), g

@@ -1,10 +1,9 @@
-/** Chunk was on 42944 **/
-/** chunk id: 415734, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 72164 **/
+/** chunk id: 415734, original params: e,n,t (module,exports,require) **/
 module.exports = {
   container: "container__62dd3",
   dragHandleButton: "dragHandleButton__62dd3",
   dragAndDropHitbox: "dragAndDropHitbox__62dd3",
   opacity: "opacity__62dd3",
-  isDragging: "isDragging__62dd3",
-  suggestedGames: "suggestedGames__62dd3"
+  isDragging: "isDragging__62dd3"
 }

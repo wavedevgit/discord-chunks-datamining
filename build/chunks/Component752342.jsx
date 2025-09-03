@@ -1,4 +1,4 @@
-/** Chunk was on 28883 **/
+/** Chunk was on 72164 **/
 /** chunk id: 752342, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -83,7 +83,7 @@ function E(e) {
               })
             })
           }),
-          children: (0, o.jsxs)(h.Z, {
+          children: (0, o.jsxs)(b.Z, {
             user: n,
             displayProfile: G,
             themeType: N.l.MODAL,
@@ -94,7 +94,7 @@ function E(e) {
                 onCloseProfile: k
               })
             }), (0, o.jsxs)("div", {
-              children: [(0, o.jsx)(p.Z, {
+              children: [(0, o.jsx)(m.Z, {
                 user: n,
                 displayProfile: G,
                 themeType: N.l.MODAL
@@ -134,7 +134,7 @@ function E(e) {
               })]
             }), (0, o.jsxs)("div", {
               className: C.body,
-              children: [(0, o.jsx)(b.Z, {
+              children: [(0, o.jsx)(h.Z, {
                 className: C.username,
                 user: n,
                 nickname: z,
@@ -144,7 +144,7 @@ function E(e) {
                   size: "sm",
                   userId: n.id
                 }),
-                tags: (0, o.jsx)(m.Z, {
+                tags: (0, o.jsx)(p.Z, {
                   displayProfile: G,
                   themeType: N.l.MODAL,
                   onClose: k

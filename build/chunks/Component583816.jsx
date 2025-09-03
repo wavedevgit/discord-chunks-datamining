@@ -1,4 +1,4 @@
-/** Chunk was on 28883 **/
+/** Chunk was on 72164 **/
 /** chunk id: 583816, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -70,7 +70,7 @@ function O(e) {
   }, {
     icon: i.owK,
     description: y.intl.string(S ? y.t.QxrDY2 : y.t.W6fjkZ)
-  }], L = (0, p.ZP)(n.id, E), R = u.ZP.getName(null == L ? true : L.guildId, O, n), M = y.intl.formatToPlainString(y.t.KRe1Fh, {
+  }], L = (0, m.ZP)(n.id, E), R = u.ZP.getName(null == L ? true : L.guildId, O, n), M = y.intl.formatToPlainString(y.t.KRe1Fh, {
     name: R
   });
   return (0, o.jsx)(a.Gt, {
@@ -87,7 +87,7 @@ function O(e) {
         className: _.root,
         "aria-label": M,
         parentComponent: "RestrictedUserProfileModalV2",
-        children: (0, o.jsxs)(h.Z, {
+        children: (0, o.jsxs)(b.Z, {
           user: n,
           displayProfile: L,
           themeType: v.l.MODAL_V2,
@@ -132,15 +132,15 @@ function O(e) {
                 size: r.Ph.MEDIUM,
                 isBlocked: S,
                 onClick: () => {
-                  A(), (0, m.pQ)(I({
+                  A(), (0, p.pQ)(I({
                     action: S ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                     analyticsLocations: w
                   }, D))
                 }
-              }), (0, o.jsx)(b.Z, {
+              }), (0, o.jsx)(h.Z, {
                 userId: n.id,
                 onClick: () => {
-                  A(), (0, m.pQ)(I({
+                  A(), (0, p.pQ)(I({
                     action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                     analyticsLocations: w
                   }, D))

@@ -1,4 +1,4 @@
-/** Chunk was on 28883 **/
+/** Chunk was on 72164 **/
 /** chunk id: 76076, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk361623 = require("./361623.js"),
   Chunk583140 = require("./583140.js");
-let h = {
+let b = {
     [Chunk228168.qb.WIDGET_ADDED]: {
       message: Chunk388032.intl.string(Chunk388032.t.fFP1U1),
       icon: (0, Chunk951288.jsx)(Chunk481060.dz2, {
@@ -43,17 +43,17 @@ let h = {
       type: Chunk481060.ToastType.FAILURE
     }
   },
-  b = e => {
+  h = e => {
     let {
       message: n,
       icon: t,
       type: l
     } = e;
     return (0, o.jsxs)("div", {
-      className: i()(x.toast, p.toast),
+      className: i()(x.toast, m.toast),
       "data-type": l,
       children: [(0, o.jsx)("div", {
-        className: p.toastIcon,
+        className: m.toastIcon,
         children: t
       }), (0, o.jsx)(s.Text, {
         color: "header-primary",
@@ -66,11 +66,11 @@ let h = {
     let {
       className: n,
       onAutoHide: t
-    } = e, r = (0, u.be)(), f = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), [m, x] = l.useState(false), [j, g] = l.useState(null);
+    } = e, r = (0, u.be)(), f = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), [p, x] = l.useState(false), [j, g] = l.useState(null);
     l.useEffect(() => {
-      null !== r ? (x(true), g(h[r]), s.uvj.announce(h[r].message)) : x(false)
+      null !== r ? (x(true), g(b[r]), s.uvj.announce(b[r].message)) : x(false)
     }, [r]);
-    let v = (0, s.Yzy)(m, {
+    let v = (0, s.Yzy)(p, {
       from: {
         transform: f ? "translateY(0)" : "translateY(-12px)",
         opacity: 0
@@ -91,17 +91,17 @@ let h = {
       }
     }, "animate-always");
     return l.useEffect(() => {
-      if (m) {
+      if (p) {
         let e = setTimeout(() => {
           null == t || t()
         }, 2e3);
         return () => clearTimeout(e)
       }
-    }, [m, t]), (0, o.jsx)(o.Fragment, {
+    }, [p, t]), (0, o.jsx)(o.Fragment, {
       children: v((e, t) => t && null !== j && (0, o.jsx)(c.animated.div, {
-        className: i()(n, p.toastContainer),
+        className: i()(n, m.toastContainer),
         style: e,
-        children: (0, o.jsx)(b, function(e) {
+        children: (0, o.jsx)(h, function(e) {
           for (var n = 1; n < arguments.length; n++) {
             var t = null != arguments[n] ? arguments[n] : {},
               o = Object.keys(t);

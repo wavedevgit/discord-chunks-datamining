@@ -1,4 +1,4 @@
-/** Chunk was on 28883 **/
+/** Chunk was on 72164 **/
 /** chunk id: 323090, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -51,21 +51,21 @@ function g(e) {
       user: n,
       currentUser: t,
       guildId: g.guildId,
-      scrollIntoView: y === h.Tb.ROLES
-    }), (0, o.jsx)(p.Z, {
-      heading: b.intl.string(b.t["A//N4u"]),
-      children: (0, o.jsx)(m.Z, {
+      scrollIntoView: y === b.Tb.ROLES
+    }), (0, o.jsx)(m.Z, {
+      heading: h.intl.string(h.t["A//N4u"]),
+      children: (0, o.jsx)(p.Z, {
         userId: n.id,
         guildId: v,
-        tooltipDelay: h.vB
+        tooltipDelay: b.vB
       })
-    }), (0, o.jsx)(p.Z, {
-      heading: b.intl.string(b.t["mQKv+v"]),
-      scrollIntoView: y === h.Tb.NOTE,
+    }), (0, o.jsx)(m.Z, {
+      heading: h.intl.string(h.t["mQKv+v"]),
+      scrollIntoView: y === b.Tb.NOTE,
       children: (0, o.jsx)(i.Z, {
         userId: n.id,
         className: j.note,
-        autoFocus: y === h.Tb.NOTE,
+        autoFocus: y === b.Tb.NOTE,
         onUpdate: () => I({
           action: "SET_NOTE"
         })
