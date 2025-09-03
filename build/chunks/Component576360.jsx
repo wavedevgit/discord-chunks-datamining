@@ -18,6 +18,7 @@ function d() {
   let t = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser());
   return ((0, Chunk687158.le)(null != (e = null == exports ? true : exports.id) ? module : ""), null == exports) ? null : (0, Chunk951288.jsx)(Chunk481060.Ttm, {
     className: Chunk784968.container,
+    orientation: "auto",
     children: (0, Chunk951288.jsx)(Chunk866035.default, {
       user: exports,
       currentUser: exports,
