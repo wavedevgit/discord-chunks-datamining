@@ -1,7 +1,7 @@
-/** Chunk was on 81239 **/
+/** Chunk was on 25421 **/
 /** chunk id: 858687, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,29 +13,29 @@ var Chunk951288 = require("./951288.js"),
   Chunk933557 = require("./933557.js"),
   Chunk388032 = require("./388032.jsx");
 
-function b(e, t) {
+function f(e, t) {
   let {
-    rearrangeContextMenu: b
+    rearrangeContextMenu: f
   } = o.Z.useExperiment({
     location: "useChannelLeaveItem"
-  }), f = i.useCallback(() => {
-    let i = (0, s.F6)(e, c.default, d.Z),
-      o = u.intl.formatToPlainString(u.t.hJ5Ap6, {
+  }), O = i.useCallback(() => {
+    let i = (0, s.F6)(e, u.default, c.Z),
+      o = d.intl.formatToPlainString(d.t.hJ5Ap6, {
         name: i
       }),
-      b = u.intl.format(u.t.SSIVOj, {
+      f = d.intl.format(d.t.SSIVOj, {
         name: i
       });
-    e.isManaged() && (o = u.intl.formatToPlainString(u.t.hVGjER, {
+    e.isManaged() && (o = d.intl.formatToPlainString(d.t.hVGjER, {
       name: i
-    }), b = u.intl.format(u.t.IK1Qvr, {
+    }), f = d.intl.format(d.t.IK1Qvr, {
       name: i
     }));
-    let f = function(n) {
+    let O = function(n) {
       let r = arguments.length > 1 && true !== arguments[1] && arguments[1];
-      l.Z.closePrivateChannel(e.id, t, r)
+      a.Z.closePrivateChannel(e.id, t, r)
     };
-    (0, a.ZDy)(async () => {
+    (0, l.ZDy)(async () => {
       let {
         default: e
       } = await n.e("14604").then(n.bind(n, 960670));
@@ -58,16 +58,16 @@ function b(e, t) {
         return e
       }({
         header: o,
-        body: b,
-        onSubmit: f
+        body: f,
+        onSubmit: O
       }, t))
     })
   }, [e, t]);
-  return (0, r.jsx)(a.sNh, {
+  return (0, r.jsx)(l.sNh, {
     id: "leave-channel",
-    label: u.intl.string(u.t["26C4oq"]),
-    action: f,
+    label: d.intl.string(d.t["26C4oq"]),
+    action: O,
     color: "danger",
-    subtext: b ? u.intl.string(u.t["2HOk0t"]) : true
+    subtext: f ? d.intl.string(d.t["2HOk0t"]) : true
   })
 }

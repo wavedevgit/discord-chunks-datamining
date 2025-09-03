@@ -98,12 +98,12 @@ function j(e) {
   }
 
   function W() {
-    (0, d.v)(I, d.d.SOUNDBOARD), E === v.D.SOUNDBOARD ? (null == S || S(true), V()) : (null != E ? (Z(), F()) : Z(), null == S || S(v.D.SOUNDBOARD))
+    (0, d.v)(I, d.d.SOUNDBOARD), E === x.D.SOUNDBOARD ? (null == S || S(true), V()) : (null != E ? (Z(), F()) : Z(), null == S || S(x.D.SOUNDBOARD))
   }
   let q = i.useRef(null);
   return (0, r.jsx)(s.y, {
     targetElementRef: q,
-    shouldShow: G && (E === v.D.SOUNDBOARD || null == E) || E === v.D.SOUNDBOARD,
+    shouldShow: G && (E === x.D.SOUNDBOARD || null == E) || E === x.D.SOUNDBOARD,
     animation: s.y.Animation.FADE,
     animationPosition: "top",
     position: "top",
@@ -133,7 +133,7 @@ function j(e) {
         })
       })
     },
-    children: () => (0, r.jsx)(x.d, {
+    children: () => (0, r.jsx)(v.d, {
       ref: q,
       isTrayButton: true,
       themeable: j,
@@ -148,8 +148,8 @@ function j(e) {
       onMouseLeave: () => {
         null == E && (V(), N())
       },
-      isActive: G || E === v.D.SOUNDBOARD,
-      color: G || E === v.D.SOUNDBOARD ? "primaryDark" : true
+      isActive: G || E === x.D.SOUNDBOARD,
+      color: G || E === x.D.SOUNDBOARD ? "primaryDark" : true
     })
   })
 }

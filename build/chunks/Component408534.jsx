@@ -43,11 +43,11 @@ function j(e) {
     onSelect: n,
     onInteraction: S,
     navId: "more-settings-context",
-    "aria-label": v.intl.string(v.t.FTLzdX),
+    "aria-label": x.intl.string(x.t.FTLzdX),
     children: [(0, r.jsx)(l.kSQ, {
-      children: Z !== x.d4z.GUILD_STAGE_VOICE ? D : null
+      children: Z !== v.d4z.GUILD_STAGE_VOICE ? D : null
     }), (0, r.jsxs)(l.kSQ, {
-      children: [Z === x.d4z.GUILD_STAGE_VOICE ? U : null, Z === x.d4z.GUILD_STAGE_VOICE ? B : null, E || Z === x.d4z.GUILD_STAGE_VOICE ? null : L, F, Z !== x.d4z.GUILD_STAGE_VOICE ? R : null, Z === x.d4z.GUILD_STAGE_VOICE || Z === x.d4z.GUILD_VOICE ? M : null]
+      children: [Z === v.d4z.GUILD_STAGE_VOICE ? U : null, Z === v.d4z.GUILD_STAGE_VOICE ? B : null, E || Z === v.d4z.GUILD_STAGE_VOICE ? null : L, F, Z !== v.d4z.GUILD_STAGE_VOICE ? R : null, Z === v.d4z.GUILD_STAGE_VOICE || Z === v.d4z.GUILD_VOICE ? M : null]
     }), (0, r.jsx)(l.kSQ, {
       children: V
     }), (0, r.jsx)(l.kSQ, {

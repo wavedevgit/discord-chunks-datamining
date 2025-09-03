@@ -1,7 +1,7 @@
-/** Chunk was on 81239 **/
+/** Chunk was on 25421 **/
 /** chunk id: 354741, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => v
+  default: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -11,7 +11,6 @@ var Chunk481060 = require("./481060.js"),
   Chunk108843 = require("./108843.jsx"),
   Chunk947440 = require("./947440.jsx"),
   Chunk100527 = require("./100527.js"),
-  Chunk658138 = require("./658138.jsx"),
   Chunk299206 = require("./299206.jsx"),
   Chunk895563 = require("./895563.jsx"),
   Chunk489618 = require("./489618.js"),
@@ -23,19 +22,19 @@ var Chunk481060 = require("./481060.js"),
   Chunk776568 = require("./776568.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let v = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
+let _ = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   let {
     channel: t,
-    selected: l,
+    selected: a,
     onSelect: o
-  } = e, v = t.isOwner(g.default.getId()), x = (0, O.Z)(t), Z = (0, y.ZP)(t), P = (0, p.Uf)(_.aIL, t.id, "top"), {
-    rearrangeContextMenu: C
+  } = e, _ = t.isOwner(h.default.getId()), v = (0, y.Z)(t), N = (0, g.ZP)(t), S = (0, b.Uf)(p.aIL, t.id, "top"), {
+    rearrangeContextMenu: x
   } = f.Z.useExperiment({
-    location: c.Z.GROUP_DM_CONTEXT_MENU
-  }), w = (0, j.Z)(t, l), S = (0, u.Z)({
+    location: u.Z.GROUP_DM_CONTEXT_MENU
+  }), C = (0, j.Z)(t, a), P = (0, s.Z)({
     id: t.id,
     label: m.intl.string(m.t.gFHI3t)
-  }), k = (0, d.Z)(t), E = (0, b.l)(t), N = (0, b.P)(t), M = (0, s.D)(t), T = v ? (0, r.jsx)(i.sNh, {
+  }), E = (0, c.Z)(t), T = (0, d.l)(t), I = (0, d.P)(t), U = _ ? (0, r.jsx)(i.sNh, {
     id: "instant-invites",
     label: m.intl.string(m.t.ngRFjY),
     action: () => (0, i.ZDy)(async () => {
@@ -67,25 +66,25 @@ let v = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   return null == t || t.isManaged() ? null : (0, r.jsxs)(i.v2r, {
     navId: "gdm-context",
     "aria-label": m.intl.string(m.t.Xm41aW),
-    onClose: a.Zy,
+    onClose: l.Zy,
     onSelect: o,
     children: [(0, r.jsxs)(i.kSQ, {
-      children: [x, P, E]
+      children: [v, S, T]
     }), (0, r.jsxs)(i.kSQ, {
-      children: [!C && T, (0, r.jsx)(i.sNh, {
+      children: [!x && U, (0, r.jsx)(i.sNh, {
         id: "edit-gdm",
         label: m.intl.string(m.t["5Q9+/P"]),
-        action: () => (0, h.B)(t.id, c.Z.GROUP_DM_CONTEXT_MENU),
-        subtext: C ? m.intl.string(m.t.pPwcQU) : true
-      }), M, C && T]
+        action: () => (0, O.B)(t.id, u.Z.GROUP_DM_CONTEXT_MENU),
+        subtext: x ? m.intl.string(m.t.pPwcQU) : true
+      }), x && U]
     }), (0, r.jsx)(i.kSQ, {
-      children: k
+      children: E
     }), (0, r.jsx)(i.kSQ, {
-      children: !C && Z
+      children: !x && N
     }), (0, r.jsxs)(i.kSQ, {
-      children: [C && Z, N, w]
+      children: [x && N, I, C]
     }), (0, r.jsx)(i.kSQ, {
-      children: S
+      children: P
     })]
   })
 }, {

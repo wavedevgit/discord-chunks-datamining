@@ -135,13 +135,13 @@ function D(e) {
     participant: E,
     showQuality: true,
     premiumIndicator: false
-  }, "live-indicator"))), (null == E ? true : E.type) === T.fO.USER && G.push((0, r.jsx)(x.Z, {
+  }, "live-indicator"))), (null == E ? true : E.type) === T.fO.USER && G.push((0, r.jsx)(v.Z, {
     className: A.button,
     userId: E.id
   }, "video-warning")), _ && !L && G.push((0, r.jsx)(u.yRy, {
     targetElementRef: l,
     position: "bottom",
-    renderPopout: () => (0, r.jsx)(v.Z, {
+    renderPopout: () => (0, r.jsx)(x.Z, {
       children: (0, r.jsx)(P.Z, {
         channel: t
       })

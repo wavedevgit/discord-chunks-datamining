@@ -192,11 +192,11 @@ function D(e) {
     callUnavailable: C.Z.isCallUnavailable(n.id)
   })), y = n.getRecipientId(), {
     notFriend: _,
-    isBlocked: v
+    isBlocked: x
   } = (0, l.cj)([O.Z], () => ({
     notFriend: n.type === P.d4z.DM && null != y && !O.Z.isFriend(y),
     isBlocked: n.type === P.d4z.DM && null != y && O.Z.isBlocked(y)
-  })), S = (0, l.e7)([j.default], () => j.default.getUser(y)), I = (0, u.bp)(), Z = [], T = (0, p.Z)(n.id), N = (0, l.e7)([x.Z], () => x.Z.hasLayers());
+  })), S = (0, l.e7)([j.default], () => j.default.getUser(y)), I = (0, u.bp)(), Z = [], T = (0, p.Z)(n.id), N = (0, l.e7)([v.Z], () => v.Z.hasLayers());
   T && !N && Z.push(a.z.ACTIVITY_GDM_CALL_TOOLTIP);
   let [A, w] = i.useState(false);
   return (i.useEffect(() => {
@@ -212,7 +212,7 @@ function D(e) {
     isProvisional: null != (t = null == S ? true : S.isProvisional) && t,
     callUnavailable: b,
     notFriend: _,
-    isBlocked: v,
+    isBlocked: x,
     appContext: I,
     canShowTooltip: A,
     canShowActivityGdmTooltip: T,

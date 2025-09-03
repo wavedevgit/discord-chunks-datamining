@@ -1,5 +1,5 @@
 /** Chunk was on 56826 **/
-/** chunk id: 165855, original params: t,n,e (module,exports,require) **/
+/** chunk id: 165855, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
 });
@@ -14,23 +14,23 @@ var Chunk442837 = require("./442837.js"),
   Chunk583332 = require("./583332.jsx"),
   Chunk594174 = require("./594174.js");
 
-function f(t) {
+function f(e) {
   let {
-    channel: n
-  } = t, e = (0, r.e7)([c.default], () => c.default.getCurrentUser()), f = (0, d.V)(n), g = (0, s.i)(n), h = (0, o.g)(n), j = (0, u.H)(n), p = (0, a.e)(n);
-  return (null == e ? true : e.isStaff()) !== true ? null : (0, i.jsxs)(l.sNh, {
+    channel: t
+  } = e, n = (0, i.e7)([d.default], () => d.default.getCurrentUser()), f = (0, s.V)(t), O = (0, a.i)(t), h = (0, u.g)(t), g = (0, c.H)(t), j = (0, o.e)(t);
+  return (null == n ? true : n.isStaff()) !== true ? null : (0, r.jsxs)(l.sNh, {
     id: "dev tools",
     label: "Dev Tools",
-    children: [(0, i.jsx)(l.kSQ, {
+    children: [(0, r.jsx)(l.kSQ, {
       children: f
-    }), (0, i.jsx)(l.kSQ, {
-      children: j
-    }), (0, i.jsx)(l.kSQ, {
-      children: h
-    }), (0, i.jsx)(l.kSQ, {
+    }), (0, r.jsx)(l.kSQ, {
       children: g
-    }), (0, i.jsx)(l.kSQ, {
-      children: p
+    }), (0, r.jsx)(l.kSQ, {
+      children: h
+    }), (0, r.jsx)(l.kSQ, {
+      children: O
+    }), (0, r.jsx)(l.kSQ, {
+      children: j
     })]
   })
 }

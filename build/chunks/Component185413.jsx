@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk257803 = require("./257803.js");
 
-function x(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function x(e) {
   return e
 }
 
-function v(e, t) {
+function x(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -60,14 +60,14 @@ function v(e, t) {
 function O(e) {
   var {
     channelId: t
-  } = e, n = v(e, ["channelId"]);
+  } = e, n = x(e, ["channelId"]);
   let a = (0, l.e7)([d.Z], () => d.Z.getChannel(t), [t]),
     o = (0, l.e7)([p.Z], () => p.Z.getGuild(null == a ? true : a.getGuildId()));
   return (i.useEffect(() => {
     h.default.track(y.rMx.OPEN_MODAL, {
       type: "Grant Channel Access"
     })
-  }, []), null == a || null == o) ? null : (0, r.jsx)(j, x({
+  }, []), null == a || null == o) ? null : (0, r.jsx)(j, v({
     guild: o,
     channel: a
   }, n))
@@ -81,7 +81,7 @@ function j(e) {
       newChannel: h,
       inSettings: y
     } = e,
-    O = v(e, ["guild", "channel", "onClose", "newChannel", "inSettings"]);
+    O = x(e, ["guild", "channel", "onClose", "newChannel", "inSettings"]);
   let [j, E] = i.useState(""), [S, I] = i.useState({}), [P, Z] = i.useState(false), [T, N] = i.useState(null), A = i.useRef(null), {
     roles: w,
     members: R,
@@ -119,7 +119,7 @@ function j(e) {
     roles: w,
     members: R,
     getRichTag: M,
-    children: (0, r.jsx)(a.Modal, (t = x({}, O), n = n = {
+    children: (0, r.jsx)(a.Modal, (t = v({}, O), n = n = {
       title: _.intl.string(_.t.dMJ3Y2),
       onClose: p,
       input: (0, r.jsxs)("div", {

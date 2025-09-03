@@ -45,8 +45,8 @@ function _(e) {
     stream: i,
     channel: _,
     exitFullScreen: C,
-    appContext: x,
-    analyticsLocation: v,
+    appContext: v,
+    analyticsLocation: x,
     guildScheduledEvent: O,
     shouldPrioritizeGroupPlusIcon: j = false,
     isRichPresenceInvite: E = false,
@@ -138,9 +138,9 @@ function _(e) {
           channel: _,
           streamUserId: null == i ? true : i.ownerId,
           applicationId: t,
-          appContext: null != x ? x : A,
+          appContext: null != v ? v : A,
           exitFullScreen: C,
-          analyticsLocation: v,
+          analyticsLocation: x,
           guildScheduledEvent: O
         })
     },

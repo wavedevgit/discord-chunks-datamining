@@ -177,7 +177,7 @@ function k(e) {
           prefix: null, level: 1
         }
     }
-  }(t.type, o), x = (0, r.jsxs)(r.Fragment, {
+  }(t.type, o), v = (0, r.jsxs)(r.Fragment, {
     children: [null != y ? (0, r.jsxs)(c.nn4, {
       children: [y, ":"]
     }) : null, " ", n]
@@ -191,7 +191,7 @@ function k(e) {
         handleContextMenu: d
       });
     case N.d4z.GROUP_DM:
-      if (t.isManaged()) return x;
+      if (t.isManaged()) return v;
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(c.nn4, {
           children: w.intl.string(w.t["e5y+go"])
@@ -209,14 +209,14 @@ function k(e) {
           level: _,
           onContextMenu: d,
           onClick: u,
-          children: x
+          children: v
         })]
       }) : (0, r.jsxs)(i.Fragment, {
         children: [G(b, t.type === N.d4z.GUILD_ANNOUNCEMENT ? w.intl.string(w.t.l1dkSE) : w.intl.string(w.t.Pnajj4)), (0, r.jsx)(Z.Z.Title, {
           level: _,
           onContextMenu: d,
           onClick: u,
-          children: x
+          children: v
         }), null != g ? g() : null]
       });
     case N.d4z.GUILD_VOICE:
@@ -225,7 +225,7 @@ function k(e) {
           level: _,
           onContextMenu: d,
           onClick: u,
-          children: x
+          children: v
         })]
       });
     case N.d4z.GUILD_STAGE_VOICE:
@@ -234,7 +234,7 @@ function k(e) {
           level: _,
           onContextMenu: d,
           onClick: u,
-          children: x
+          children: v
         })]
       });
     case N.d4z.ANNOUNCEMENT_THREAD:
@@ -249,7 +249,7 @@ function k(e) {
             onContextMenu: m,
             onClick: f,
             className: a()(R.parentChannelName, R.cursorPointer),
-            children: (0, p.F6)(l, v.default, C.Z)
+            children: (0, p.F6)(l, x.default, C.Z)
           }), (0, r.jsx)(Z.Z.Caret, {})]
         })
       }
@@ -264,7 +264,7 @@ function k(e) {
             [R.forumPostTitle]: j,
             [R.forumPostSidebarTitle]: s && j
           }),
-          children: x
+          children: v
         })]
       });
     case N.d4z.GUILD_DIRECTORY:
@@ -292,7 +292,7 @@ let U = e => {
   var t, n, l;
   let {
     channel: a
-  } = e, s = (0, o.e7)([v.default], () => v.default.getCurrentUser()), c = (0, o.e7)([v.default], () => v.default.getUser(a.getRecipientId())), u = (0, E.G)(), p = (0, o.e7)([y.Z], () => null != c ? y.Z.getUserProfile(c.id) : null), h = null != p && (null != (t = null == p ? true : p.fetchEndedAt) ? t : 0) > 0;
+  } = e, s = (0, o.e7)([x.default], () => x.default.getCurrentUser()), c = (0, o.e7)([x.default], () => x.default.getUser(a.getRecipientId())), u = (0, E.G)(), p = (0, o.e7)([y.Z], () => null != c ? y.Z.getUserProfile(c.id) : null), h = null != p && (null != (t = null == p ? true : p.fetchEndedAt) ? t : 0) > 0;
   return (i.useEffect(() => {
     (null == s ? true : s.isStaff()) && null != c && !c.isStaff() && (0, _.Z)(c.id, c.getAvatarURL(true, 80), {
       dispatchWait: true,
@@ -346,7 +346,7 @@ function H(e) {
     guild: t,
     channel: n,
     caretPosition: l = "left"
-  } = e, a = (0, o.e7)([x.Z], () => x.Z.getGuildId()), s = (0, g.D)(), u = i.useRef(null);
+  } = e, a = (0, o.e7)([v.Z], () => v.Z.getGuildId()), s = (0, g.D)(), u = i.useRef(null);
   if (a !== N.I_8 && !s || null == t) return null;
   let d = () => {
     (0, b.XU)(t.id, n.id)

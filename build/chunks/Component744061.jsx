@@ -25,7 +25,7 @@ function g(e) {
     channel: y,
     analyticsType: _,
     popoutText: C,
-    animation: x
+    animation: v
   } = e;
   i.useEffect(() => {
     d.default.track(p.rMx.OPEN_POPOUT, function(e) {
@@ -49,7 +49,7 @@ function g(e) {
       type: _
     }, (0, c.v_)(y)))
   }, [_, y]);
-  let v = i.useCallback(() => {
+  let x = i.useCallback(() => {
       null == g || g(), t()
     }, [g, t]),
     O = i.useCallback(() => {
@@ -59,10 +59,10 @@ function g(e) {
   return i.useEffect(() => {
     let e, t = u.Z.theme,
       r = false;
-    return null != x && (async () => {
+    return null != v && (async () => {
       let [{
         default: i
-      }, l] = await Promise.all([Promise.resolve().then(n.t.bind(n, 500923, 23)), (0, a.wj)(t) ? x.dark() : x.light()]);
+      }, l] = await Promise.all([Promise.resolve().then(n.t.bind(n, 500923, 23)), (0, a.wj)(t) ? v.dark() : v.light()]);
       r || null == j.current || (e = i.loadAnimation({
         container: j.current,
         renderer: "svg",
@@ -73,14 +73,14 @@ function g(e) {
     })(), () => {
       r = true, null != e && (e.destroy(), e = true)
     }
-  }, [x]), (0, r.jsx)(s.VqE, {
+  }, [v]), (0, r.jsx)(s.VqE, {
     "aria-labelledby": "content-warning-popout-label",
     children: (0, r.jsxs)("form", {
       className: f.contentWarningPopout,
-      onSubmit: v,
+      onSubmit: x,
       children: [(0, r.jsxs)("div", {
         className: f.body,
-        children: [null != x && (0, r.jsx)("div", {
+        children: [null != v && (0, r.jsx)("div", {
           className: f.animation,
           ref: j
         }), (0, r.jsxs)("div", {
@@ -111,7 +111,7 @@ function g(e) {
               className: f.buttonContainer,
               children: [(0, r.jsx)(o.zx, {
                 className: f.button,
-                onClick: v,
+                onClick: x,
                 type: "submit",
                 autoFocus: true,
                 children: h.intl.string(h.t.KJnHq6)

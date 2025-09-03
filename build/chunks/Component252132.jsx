@@ -27,8 +27,8 @@ function o(e) {
     onVideoResize: y,
     paused: _,
     pulseSpeakingIndicator: C,
-    participant: x,
-    width: v
+    participant: v,
+    width: x
   } = e, O = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
@@ -47,7 +47,7 @@ function o(e) {
   let j = l.Z.getVideoComponent();
   return (0, r.jsx)("div", {
     style: {
-      width: v
+      width: x
     },
     className: a.spaceBetweenTiles,
     children: (0, r.jsxs)("div", {
@@ -85,11 +85,11 @@ function o(e) {
         onContextMenu: g,
         onDoubleClick: b,
         onVideoResize: y,
-        participant: x,
+        participant: v,
         paused: _,
         pulseSpeakingIndicator: C,
         videoComponent: j,
-        width: v
+        width: x
       }, O)), d]
     })
   })

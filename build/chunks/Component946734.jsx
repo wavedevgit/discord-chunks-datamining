@@ -104,7 +104,7 @@ class S {
         userId: this.userId,
         channelId: this.channelId,
         sourceAnalyticsLocations: this.analyticsLocations,
-        section: v.oh.MUTUAL_GUILDS
+        section: x.oh.MUTUAL_GUILDS
       })
     }), this.userId = e, this.user = t, this.channelId = n, this.analyticsLocations = i
   }
@@ -136,7 +136,7 @@ function I(e) {
     userId: n,
     analyticsLocations: m,
     channelId: t.id
-  }), [_, C] = i.useState(false), v = i.useCallback(() => {
+  }), [_, C] = i.useState(false), x = i.useCallback(() => {
     C(true)
   }, [C]), E = i.useCallback(() => {
     C(false)
@@ -145,7 +145,7 @@ function I(e) {
     className: j.spacer
   }) : (0, r.jsxs)(p.Gt, {
     value: m,
-    children: [(0, r.jsx)(x.iz, {
+    children: [(0, r.jsx)(v.iz, {
       className: j.divider
     }), (0, r.jsx)(c.IGR, {
       text: O.intl.string(O.t.l1QVfn),
@@ -180,7 +180,7 @@ function I(e) {
       position: "bottom",
       className: j.nicknames,
       delay: 0,
-      onTooltipShow: v,
+      onTooltipShow: x,
       onTooltipHide: E,
       children: g.renderNicknamePairs(!_)
     }) : null]

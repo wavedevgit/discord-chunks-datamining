@@ -25,7 +25,7 @@ let p = Chunk647438.memo(function(e) {
       author: m,
       repliedMessage: g,
       roleIcon: b
-    } = e, y = (0, u.wq)(t.author.id, n.id), _ = (0, u.XO)(t, n, p, f), C = (0, u.R9)(h, f), x = i.useCallback(() => {
+    } = e, y = (0, u.wq)(t.author.id, n.id), _ = (0, u.XO)(t, n, p, f), C = (0, u.R9)(h, f), v = i.useCallback(() => {
       f({
         usernameProfile: false,
         avatarProfile: false,
@@ -47,7 +47,7 @@ let p = Chunk647438.memo(function(e) {
       onClickAvatar: C,
       onClickUsername: _,
       onContextMenu: y,
-      onPopoutRequestClose: x,
+      onPopoutRequestClose: v,
       roleIcon: b
     })
   }),

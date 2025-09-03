@@ -36,20 +36,20 @@ function g(e) {
     location: "VoiceEffectsActionBar"
   }, {
     autoTrackExposure: false
-  }), x = (0, a.Z)(u.Z);
+  }), v = (0, a.Z)(u.Z);
   if (null == t || null != y) return null;
-  let v = C && x,
+  let x = C && v,
     O = _ && n;
   return (0, r.jsxs)(l.Gt, {
     value: b,
     children: [(0, r.jsxs)("div", {
       className: m.voiceEffectsActionBar,
-      children: [v && (0, r.jsx)(d.Z, {
+      children: [x && (0, r.jsx)(d.Z, {
         channel: t
       }), O && (0, r.jsx)(p.Z, {}), O && (0, r.jsx)(h.Z, {
         channel: t
       }), O && (0, r.jsx)(f.Z, {})]
-    }), g && (v || O) && (0, r.jsx)("div", {
+    }), g && (x || O) && (0, r.jsx)("div", {
       className: m.divider
     })]
   })

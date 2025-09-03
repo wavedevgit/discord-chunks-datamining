@@ -79,7 +79,7 @@ let b = e => {
       handleSelectCategory: y,
       categoryCounts: _,
       allEntriesCount: C,
-      isLoading: x
+      isLoading: v
     } = e;
     return (0, r.jsx)("div", {
       className: h.pageContainer,
@@ -116,7 +116,7 @@ let b = e => {
               }, t)
             })]
           })
-        }), x && null == n ? (0, r.jsx)(o.$jN, {
+        }), v && null == n ? (0, r.jsx)(o.$jN, {
           className: h.spinner
         }) : null == n ? true : n.map((e, t) => (0, r.jsxs)(i.Fragment, {
           children: [true !== e.header ? (0, r.jsx)(o.Text, {

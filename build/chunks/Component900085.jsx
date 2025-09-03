@@ -397,7 +397,7 @@ class q extends Chunk647438.PureComponent {
           return (0, d.jW)(e, async () => {
             let {
               default: e
-            } = await Promise.all([n.e("79695"), n.e("57789"), n.e("81239")]).then(n.bind(n, 354741));
+            } = await Promise.all([n.e("79695"), n.e("25421"), n.e("20230")]).then(n.bind(n, 354741));
             return n => (0, i.jsx)(e, G(U({}, n), {
               channel: t.record,
               selected: C.Z.getChannelId() === t.record.id,

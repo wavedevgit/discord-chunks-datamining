@@ -90,7 +90,7 @@ function D(e) {
       isLoaded: null == k ? true : k.isLoaded,
       children: (0, r.jsx)(b.NJ, {
         value: z,
-        children: (0, r.jsxs)(v.Z, {
+        children: (0, r.jsxs)(x.Z, {
           ref: F,
           user: n,
           displayProfile: k,
@@ -119,7 +119,7 @@ function D(e) {
                 themeType: A.l.SIDEBAR,
                 animateOnHover: !V,
                 className: R.banner
-              }), (0, r.jsx)(x.Z, {
+              }), (0, r.jsx)(v.Z, {
                 userId: n.id,
                 className: R.toast
               }), (0, r.jsx)(_.Z, {

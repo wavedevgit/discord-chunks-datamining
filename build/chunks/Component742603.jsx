@@ -196,7 +196,7 @@ function V(e) {
           className: l()(L.channelStatus, k.markup, {
             [L.hoverable]: R
           }),
-          children: v.Z.parseVoiceChannelStatus(Z, true, {
+          children: x.Z.parseVoiceChannelStatus(Z, true, {
             channelId: t.id
           })
         }), R && (0, r.jsx)(o.vdY, {
@@ -258,7 +258,7 @@ function V(e) {
               }))
             })]
           })
-        }), (0, r.jsx)(x.TS, {
+        }), (0, r.jsx)(v.TS, {
           channel: t,
           guild: i
         }), (0, r.jsx)(F, {

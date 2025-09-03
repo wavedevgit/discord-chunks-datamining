@@ -105,15 +105,15 @@ function S(e) {
   let {
     id: P,
     expires_at: w,
-    redeemed_at: I,
-    trial_id: k,
+    redeemed_at: k,
+    trial_id: I,
     subscription_trial: R,
     referrer: Z
   } = m, A = null != (n = null == (t = p.find(e => {
     let {
       value: t
     } = e;
-    return t === k
+    return t === I
   })) ? true : t.label) ? n : "Unknown";
   null != Z && (A = "".concat(A, " from @").concat(Z.username));
   let D = null != w,
@@ -205,12 +205,12 @@ function S(e) {
     }), (0, a.jsxs)(c.P3F, {
       className: i()(g.row, g.idRow),
       onClick: () => {
-        (0, x.JG)(k, () => C(true))
+        (0, x.JG)(I, () => C(true))
       },
       children: [(0, a.jsxs)(c.Text, {
         variant: "eyebrow",
         color: "always-white",
-        children: ["Trial: ", k]
+        children: ["Trial: ", I]
       }), y ? (0, a.jsx)(c.dz2, {
         size: "md",
         color: "currentColor",
@@ -270,7 +270,7 @@ function S(e) {
           color: "Acked" === z ? true : "always-white",
           children: z
         })
-      }), null != I && (0, a.jsx)("div", {
+      }), null != k && (0, a.jsx)("div", {
         className: i()(g.badge, g.redeemed),
         children: (0, a.jsx)(c.Text, {
           variant: "eyebrow",
@@ -323,7 +323,7 @@ function P(e) {
       value: t
     } = e;
     return t === T
-  })) ? true : t.label) ? n : "Unknown", w = null != E, I = null != E && new Date(E).getTime() < Date.now(), k = async () => {
+  })) ? true : t.label) ? n : "Unknown", w = null != E, k = null != E && new Date(E).getTime() < Date.now(), I = async () => {
     j(true), w ? await R({
       expiresAt: null
     }) : await (0, d.ab)(true, l), u(), j(false)
@@ -363,7 +363,7 @@ function P(e) {
     }
   }, [m, p]);
   let Z = "Active";
-  return I && (Z = "Expired"), w && (Z = "Acked"), (0, a.jsxs)("div", {
+  return k && (Z = "Expired"), w && (Z = "Acked"), (0, a.jsxs)("div", {
     className: i()(g.card, g.discount),
     children: [(0, a.jsxs)("div", {
       className: i()(g.row, g.nameRow),
@@ -439,10 +439,10 @@ function P(e) {
     }), (0, a.jsxs)("div", {
       className: g.badgeContainer,
       children: [(0, a.jsx)(c.P3F, {
-        onClick: k,
+        onClick: I,
         className: i()(g.badge, g.clickable, {
           [g.acked]: w,
-          [g.expired]: I
+          [g.expired]: k
         }),
         children: (0, a.jsx)(c.Text, {
           variant: "eyebrow",
@@ -467,7 +467,7 @@ function P(e) {
 }
 
 function w() {
-  let [e, t] = Chunk647438.useState([]), [n, l] = Chunk647438.useState([]), [i, s] = Chunk647438.useState(), [x, h] = Chunk647438.useState(), [j, N] = Chunk647438.useState([]), [w, I] = Chunk647438.useState([]), [k, R] = Chunk647438.useState(true), [Z, A] = Chunk647438.useState(10080), [D, L] = Chunk647438.useState([]), {
+  let [e, t] = Chunk647438.useState([]), [n, l] = Chunk647438.useState([]), [i, s] = Chunk647438.useState(), [x, h] = Chunk647438.useState(), [j, N] = Chunk647438.useState([]), [w, k] = Chunk647438.useState([]), [I, R] = Chunk647438.useState(true), [Z, A] = Chunk647438.useState(10080), [D, L] = Chunk647438.useState([]), {
     entitlements: M,
     deleteFractionalPremium: F,
     refreshEntitlementList: U
@@ -477,7 +477,7 @@ function w() {
   }, [U]), Chunk647438.useEffect(() => {
     L(M.filter(e => e.sourceType === b.kNB.REVERSE_TRIAL && null != e.endsAt && e.endsAt > new Date))
   }, [M]), Chunk647438.useEffect(() => {
-    (0 === module.length || 0 === require.length || k) && y().then(e => {
+    (0 === module.length || 0 === require.length || I) && y().then(e => {
       let n = Object.keys(e.trial).map(t => ({
           label: t,
           value: e.trial[t]
@@ -488,11 +488,11 @@ function w() {
         }));
       t(n), l(a), null == i && s(n[0].value), null == x && h(a[0].value)
     })
-  }, [module, require, i, Chunk572004, k]), Chunk647438.useEffect(() => {
-    k && (R(false), Chunk431.Z.forceReset(), (0, Chunk937579.Tf)(), E().then(e => {
-      N(e.trial.sort((e, t) => e.id.localeCompare(t.id))), I(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
+  }, [module, require, i, Chunk572004, I]), Chunk647438.useEffect(() => {
+    I && (R(false), Chunk431.Z.forceReset(), (0, Chunk937579.Tf)(), E().then(e => {
+      N(e.trial.sort((e, t) => e.id.localeCompare(t.id))), k(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
     }))
-  }, [k]);
+  }, [I]);
   let z = async () => {
     null != i && (await C(i, "trial"), R(true))
   }, B = async () => {

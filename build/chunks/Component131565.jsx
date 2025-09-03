@@ -62,7 +62,7 @@ function _(e) {
   let {
     channel: t
   } = e, n = (0, f.Z)(t.id);
-  return null == n || !n.isViewable || !t.isDM() && !t.isMultiUserDM() && !t.isGroupDM() || d.t(t) && !n.isPreview ? null : (0, r.jsx)(y, {
+  return null == n || !n.isViewable || !t.isDM() && !t.isMultiUserDM() && !t.isGroupDM() || d.t(t) ? null : (0, r.jsx)(y, {
     chatWallpaperState: n
   })
 }

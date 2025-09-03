@@ -28,16 +28,16 @@ let C = (0, Chunk112724.Z)(e => {
   let {
     channel: a,
     width: C,
-    onScroll: x
+    onScroll: v
   } = e, {
-    selectedParticipantId: v,
+    selectedParticipantId: x,
     largeStream: O,
     chatOpen: j
   } = (0, l.cj)([o.Z], () => ({
     selectedParticipantId: o.Z.getSelectedParticipantId(a.id),
     largeStream: o.Z.getStageStreamSize(a.id),
     chatOpen: o.Z.getChatOpen(a.id)
-  }), [a.id]), E = (0, c.Io)(a.id), S = (0, c.Rk)(a.id, u.pV.AUDIENCE), I = (0, l.e7)([s.Z], () => null != v ? s.Z.getParticipant(a.id, v) : null), P = (0, c.w8)(a.id, u.pV.SPEAKER), Z = P.filter(_), T = null != P.find(e => e.type === u.Ui.STREAM), N = Math.floor((C - 32) / 102), A = C < 424 ? 1 : C < 624 ? 2 : C < 824 || j ? 3 : 4, w = {
+  }), [a.id]), E = (0, c.Io)(a.id), S = (0, c.Rk)(a.id, u.pV.AUDIENCE), I = (0, l.e7)([s.Z], () => null != x ? s.Z.getParticipant(a.id, x) : null), P = (0, c.w8)(a.id, u.pV.SPEAKER), Z = P.filter(_), T = null != P.find(e => e.type === u.Ui.STREAM), N = Math.floor((C - 32) / 102), A = C < 424 ? 1 : C < 624 ? 2 : C < 824 || j ? 3 : 4, w = {
     [u.pV.SPEAKER]: A,
     [u.pV.AUDIENCE]: N,
     [u.pV.SELECTED]: 1
@@ -127,6 +127,6 @@ let C = (0, Chunk112724.Z)(e => {
     footerHeight: e => 1 === e ? 8 : 0 === e ? 12 : 88 * !!G(e),
     className: y.scroller,
     chunkSize: 60,
-    onScroll: x
+    onScroll: v
   })
 })

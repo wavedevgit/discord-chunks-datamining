@@ -1,7 +1,7 @@
 /** Chunk was on 62987 **/
 /** chunk id: 351248, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => x
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -36,7 +36,7 @@ let C = {
   EASING_IN: Chunk748780.Z.Easing.inOut(Chunk748780.Z.Easing.back()),
   EASING_OUT: Chunk748780.Z.Easing.quad
 };
-class x extends Chunk647438.PureComponent {
+class v extends Chunk647438.PureComponent {
   componentDidMount() {
     this.componentDidAppear()
   }
@@ -144,7 +144,7 @@ class x extends Chunk647438.PureComponent {
   }
 }
 
-function v(e) {
+function x(e) {
   var t;
   let {
     participants: n,
@@ -153,7 +153,7 @@ function v(e) {
     onClick: o,
     width: u,
     guildId: b
-  } = e, y = (0, p.ZP)(), _ = (t = n.length, ((0, d.pxk)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), C = (0, s.e7)([h.Z], () => h.Z.isFocused()), v = n.map(e => {
+  } = e, y = (0, p.ZP)(), _ = (t = n.length, ((0, d.pxk)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), C = (0, s.e7)([h.Z], () => h.Z.isFocused()), x = n.map(e => {
     var t, n;
     if (e.type !== m.fO.USER) return null;
     let {
@@ -162,7 +162,7 @@ function v(e) {
       speaking: s,
       ringing: c
     } = e;
-    return (0, r.jsx)(x, {
+    return (0, r.jsx)(v, {
       className: g.participant,
       width: (0, d.pxk)(_),
       theme: y,
@@ -182,6 +182,6 @@ function v(e) {
   return (0, r.jsx)(c.W, {
     component: "div",
     className: a()(g.root, l),
-    children: v
+    children: x
   })
 }

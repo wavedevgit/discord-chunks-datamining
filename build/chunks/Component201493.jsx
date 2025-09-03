@@ -133,7 +133,7 @@ let O = e => {
       })
     } : true,
     U = e => {
-      0 !== w.trim().length && e.key === x.vn.ENTER && (d.Rq(t.id, w), u.default.track(C.rMx.GUILD_DIRECTORY_SEARCH, {
+      0 !== w.trim().length && e.key === v.vn.ENTER && (d.Rq(t.id, w), u.default.track(C.rMx.GUILD_DIRECTORY_SEARCH, {
         directory_channel_id: t.id,
         directory_guild_id: O.id
       }))
@@ -151,12 +151,12 @@ let O = e => {
     searchResults: A,
     searchFetching: N
   }) : null == Z && null == j ? (0, r.jsx)("div", {
-    className: v.pageContainer,
+    className: x.pageContainer,
     children: (0, r.jsx)(a.$jN, {
-      className: v.spinner
+      className: x.spinner
     })
   }) : (null == Z ? true : Z.length) === 0 && null == j ? (0, r.jsx)("div", {
-    className: v.pageContainer,
+    className: x.pageContainer,
     children: (0, r.jsx)(m.Z, {
       guild: O,
       onAddGuild: k

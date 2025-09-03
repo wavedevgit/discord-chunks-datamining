@@ -75,7 +75,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
     } = e, s = i.useRef(null), u = (0, p.e7)([A.Z], () => A.Z.isTyping(t.id, a)), h = (0, p.e7)([P.ZP], () => P.ZP.getMember(t.guild_id, a)), g = (0, p.e7)([Z.Z], () => {
       var e;
       return (null == h ? true : h.colorRoleId) != null ? null == (e = Z.Z.getRole(t.guild_id, h.colorRoleId)) ? true : e.name : true
-    }, [t.guild_id, h]), b = (0, p.e7)([w.default], () => w.default.getUser(a)), y = (0, p.e7)([w.default], () => w.default.getCurrentUser()), _ = (null == b ? true : b.id) === (null == y ? true : y.id), C = (0, p.e7)([T.Z, N.Z], () => _ ? N.Z.getStatus() : T.Z.getStatus(a, t.guild_id)), v = (0, p.e7)([T.Z], () => T.Z.isMobileOnline(a)), j = (0, p.e7)([T.Z, N.Z], () => _ ? N.Z.getActivities() : T.Z.getActivities(a, t.guild_id)), R = (0, p.e7)([I.Z], () => I.Z.getAnyStreamForUser(a)), M = (0, c.JA)(a), L = (0, p.e7)([E.Z], () => E.Z.canUserViewChannel(t.id, l, a)), U = (null == b ? true : b.id) != null && b.id === o, F = i.useCallback(e => {
+    }, [t.guild_id, h]), b = (0, p.e7)([w.default], () => w.default.getUser(a)), y = (0, p.e7)([w.default], () => w.default.getCurrentUser()), _ = (null == b ? true : b.id) === (null == y ? true : y.id), C = (0, p.e7)([T.Z, N.Z], () => _ ? N.Z.getStatus() : T.Z.getStatus(a, t.guild_id)), x = (0, p.e7)([T.Z], () => T.Z.isMobileOnline(a)), j = (0, p.e7)([T.Z, N.Z], () => _ ? N.Z.getActivities() : T.Z.getActivities(a, t.guild_id)), R = (0, p.e7)([I.Z], () => I.Z.getAnyStreamForUser(a)), M = (0, c.JA)(a), L = (0, p.e7)([E.Z], () => E.Z.canUserViewChannel(t.id, l, a)), U = (null == b ? true : b.id) != null && b.id === o, F = i.useCallback(e => {
       null != b && (0, f.jW)(e, async () => {
         let {
           default: e
@@ -111,7 +111,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
         rawText: n
       }), m.Z.startTyping(t.id)
     }, [b, t]), q = i.useCallback(e => {
-      e.stopPropagation(), (0, x.f)({
+      e.stopPropagation(), (0, v.f)({
         guildId: t.guild_id,
         location: {
           section: G.jXE.THREAD_MEMBER_LIST,
@@ -169,7 +169,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
           isTyping: u,
           channel: t,
           guildId: t.guild_id,
-          isMobile: v,
+          isMobile: x,
           selected: K,
           applicationStream: R,
           premiumSince: null == Q ? null : new Date(Q),
@@ -194,7 +194,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
       label: n,
       count: i,
       guildId: l
-    } = e, a = (0, v.p9)({
+    } = e, a = (0, x.p9)({
       roleId: t,
       guildId: l,
       size: 16
@@ -310,8 +310,8 @@ function Q(e) {
     }, [t.guild_id, t.id, t.type]), C) return (0, r.jsx)(J, {
     channel: t
   });
-  let x = s().omit(m.containerProps, ["ref"]),
-    v = L.iJ(n);
+  let v = s().omit(m.containerProps, ["ref"]),
+    x = L.iJ(n);
   return (0, r.jsx)(y.Gt, {
     value: o,
     children: (0, r.jsx)(c.bG, {
@@ -348,7 +348,7 @@ function Q(e) {
                 channel: t,
                 sectionId: a,
                 userId: l[i],
-                guildOwnerId: v
+                guildOwnerId: x
               }, l[i])
             },
             footerHeight: e => 80 * (d[e] === f && t.type === G.d4z.PRIVATE_THREAD),
@@ -359,7 +359,7 @@ function Q(e) {
             innerTag: "ul",
             sections: d.map(e => e.userIds.length),
             fade: true
-          }, x, e), l)
+          }, v, e), l)
         })
       })
     })

@@ -70,7 +70,7 @@ function L(e) {
         showRequestToSpeakSidebar: i,
         numRequestToSpeak: _
       })
-    }) : null, !g && C && (0, r.jsx)(v.Z, {
+    }) : null, !g && C && (0, r.jsx)(x.Z, {
       className: a()(D.button, {
         [D.sidebarOpen]: c
       }),
@@ -81,7 +81,7 @@ function L(e) {
       className: a()(D.button, {
         [D.sidebarOpen]: O || i
       }),
-      children: (0, r.jsx)(x.T, {
+      children: (0, r.jsx)(v.T, {
         channelId: t.id,
         showRequestToSpeakSidebar: i,
         toggleRequestToSpeakSidebar: n,
@@ -97,7 +97,7 @@ function k(e) {
     channel: n,
     toggleRequestToSpeakSidebar: l,
     showRequestToSpeakSidebar: d
-  } = e, p = (0, g.ZP)(n), h = (0, o.e7)([T.Z], () => T.Z.getStageInstanceByChannel(n.id)), f = (0, S.Io)(n.id), m = (0, S.Rk)(n.id, I.pV.AUDIENCE), b = (0, o.e7)([O.Z], () => O.Z.getGuild(n.guild_id), [n.guild_id]), x = null != (t = null == b ? true : b.maxStageVideoChannelUsers) ? t : 0, v = null != b && b.features.has(w.oNc.COMMUNITY) ? x < w.TU7 : (null == b ? true : b.premiumTier) !== w.Eu4.TIER_3 && x <= w.eez, P = (0, A.Z)(n), N = (0, o.e7)([j.Z], () => j.Z.can(Z.yP, n)), k = () => {
+  } = e, p = (0, g.ZP)(n), h = (0, o.e7)([T.Z], () => T.Z.getStageInstanceByChannel(n.id)), f = (0, S.Io)(n.id), m = (0, S.Rk)(n.id, I.pV.AUDIENCE), b = (0, o.e7)([O.Z], () => O.Z.getGuild(n.guild_id), [n.guild_id]), v = null != (t = null == b ? true : b.maxStageVideoChannelUsers) ? t : 0, x = null != b && b.features.has(w.oNc.COMMUNITY) ? v < w.TU7 : (null == b ? true : b.premiumTier) !== w.Eu4.TIER_3 && v <= w.eez, P = (0, A.Z)(n), N = (0, o.e7)([j.Z], () => j.Z.can(Z.yP, n)), k = () => {
     u.Z.updateStageVideoLimitBoostUpsellDismissed(n.id, true), E.default.track(w.rMx.BOOSTING_UPSELL_CLICKED, {
       guild_id: n.guild_id,
       type: R.cd.VIDEO_STAGE_LIMIT,
@@ -186,15 +186,15 @@ function k(e) {
         children: [(0, r.jsx)(c.Text, {
           variant: "text-md/medium",
           color: "header-primary",
-          children: v ? M.intl.string(M.t["T+zF9P"]) : M.intl.string(M.t["IZ+SVl"])
+          children: x ? M.intl.string(M.t["T+zF9P"]) : M.intl.string(M.t["IZ+SVl"])
         }), (0, r.jsx)(c.Text, {
           variant: "text-xs/medium",
           color: "text-default",
-          children: v ? M.intl.string(M.t.Izgpmp) : M.intl.string(M.t["7FHbPD"])
+          children: x ? M.intl.string(M.t.Izgpmp) : M.intl.string(M.t["7FHbPD"])
         })]
       }), (0, r.jsx)("div", {
         className: D.buttons,
-        children: v ? (0, r.jsxs)(r.Fragment, {
+        children: x ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(c.zxk, {
             onClick: k,
             size: "sm",

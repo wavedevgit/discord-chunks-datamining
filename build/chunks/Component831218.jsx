@@ -21,7 +21,6 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk453542 = require("./453542.js"),
   Chunk702321 = require("./702321.js"),
-  Chunk46148 = require("./46148.jsx"),
   Chunk82295 = require("./82295.jsx"),
   Chunk313201 = require("./313201.js"),
   Chunk860144 = require("./860144.js"),
@@ -34,6 +33,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk592125 = require("./592125.js"),
   Chunk158776 = require("./158776.js"),
   Chunk55589 = require("./55589.js"),
+  Chunk515753 = require("./515753.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk777126 = require("./777126.js");
@@ -326,7 +326,7 @@ class F extends(r = Chunk647438.Component) {
         c = n.some(e => (0, v.Z)(e)),
         u = {
           num_users_visible: a.length,
-          num_users_visible_with_mobile_indicator: s.filter(e => null != e && A.Z.isMobileOnline(e)).length
+          num_users_visible_with_mobile_indicator: s.filter(e => null != e && T.Z.isMobileOnline(e)).length
         };
       this.hasReportedAnalytics = true, O.ZP.trackWithMetadata(D.rMx.DM_LIST_VIEWED, G(U({}, u, (0, _.X)()), {
         visible_user_ids: s.filter(e => null != e),
@@ -352,7 +352,7 @@ class F extends(r = Chunk647438.Component) {
         totalRowCount: o,
         preRenderedChildren: a
       } = this.state, s = r[n[t]];
-      return null == s ? null : (0, i.jsx)(j.W, {
+      return null == s ? null : (0, i.jsx)(R.ZP, {
         channel: s,
         selected: s.id === l,
         "aria-posinset": a + t + 1,
@@ -382,14 +382,14 @@ class F extends(r = Chunk647438.Component) {
         showDMHeader: n,
         createDMCTAButtonVariant: r
       } = this.props;
-      return 0 !== t && n ? (0, i.jsxs)(x.Z, {
+      return 0 !== t && n ? (0, i.jsxs)(j.Z, {
         className: a()(L.privateChannelsHeaderContainer, {
           [L.tall]: "side" === r
         }),
         children: [(0, i.jsx)("span", {
           className: L.headerText,
           children: M.intl.string(M.t.YUU0RE)
-        }), null == r && (0, i.jsx)(P.Z, {
+        }), null == r && (0, i.jsx)(S.Z, {
           location: "PrivateChannelsList-CreateDMButton",
           tooltip: M.intl.string(M.t["6Urw1t"]),
           tooltipPosition: "top",
@@ -398,7 +398,7 @@ class F extends(r = Chunk647438.Component) {
           iconClassName: L.privateChannelRecipientsInviteButtonIcon,
           icon: f.BRu,
           subscribeToGlobalHotkey: true
-        }), "side" === r && (0, i.jsx)(P.l, {
+        }), "side" === r && (0, i.jsx)(S.l, {
           popoutAlign: "left",
           icon: f.kL_,
           text: M.intl.string(M.t["6Urw1t"]),
@@ -437,20 +437,20 @@ let V = e => {
     showDMHeader: a,
     listScrollerRef: s,
     createDMCTAButtonVariant: c
-  } = e, h = l.Children.count(o), g = T.Z.getMutablePrivateChannels(), O = (0, N.k1)(g), _ = (0, p.Wu)([R.Z, I.Z, Z.Z], () => {
-    let e = R.Z.getPrivateChannelIds();
-    return (0, N.tU)(e, [I.Z, Z.Z])
+  } = e, h = l.Children.count(o), g = w.Z.getMutablePrivateChannels(), O = (0, I.k1)(g), _ = (0, p.Wu)([A.Z, P.Z, N.Z], () => {
+    let e = A.Z.getPrivateChannelIds();
+    return (0, I.tU)(e, [P.Z, N.Z])
   }, []);
-  (0, S.z)(E.R);
+  (0, E.z)(C.R);
   let {
     analyticsLocations: v
-  } = (0, y.ZP)(b.Z.CONTACTS_LIST), j = (0, w.Ll)(), {
-    keyboardModeEnabled: x,
-    version: P
-  } = (0, p.cj)([m.Z, T.Z], () => ({
+  } = (0, y.ZP)(b.Z.CONTACTS_LIST), j = (0, Z.Ll)(), {
+    keyboardModeEnabled: S,
+    version: T
+  } = (0, p.cj)([m.Z, w.Z], () => ({
     keyboardModeEnabled: m.Z.keyboardModeEnabled,
-    version: null != n ? "".concat(n, ":").concat(T.Z.getPrivateChannelsVersion()) : T.Z.getPrivateChannelsVersion()
-  })), A = l.useRef(null), D = null != s ? s : A, M = l.useCallback(e => {
+    version: null != n ? "".concat(n, ":").concat(w.Z.getPrivateChannelsVersion()) : w.Z.getPrivateChannelsVersion()
+  })), R = l.useRef(null), D = null != s ? s : R, M = l.useCallback(e => {
     let t = D.current,
       n = document.querySelector(e);
     null != t && null != n && t.scrollIntoViewNode({
@@ -478,9 +478,9 @@ let V = e => {
         requestAnimationFrame(() => setTimeout(e, 100))
       }
     })
-  }), [D]), B = (0, C.Dt)(), V = (0, d.ZP)({
+  }), [D]), B = (0, x.Dt)(), V = (0, d.ZP)({
     id: "private-channels-".concat(B),
-    isEnabled: x,
+    isEnabled: S,
     scrollToStart: L,
     scrollToEnd: k,
     defaultFocused: (h + +!!a).toString(),
@@ -496,7 +496,7 @@ let V = e => {
         privateChannelIds: _,
         listRef: D,
         theme: null != j ? j : r,
-        version: P,
+        version: T,
         createDMCTAButtonVariant: c
       }))
     })

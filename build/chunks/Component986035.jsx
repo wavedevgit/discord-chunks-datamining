@@ -32,7 +32,7 @@ let p = function(e) {
   let C = i.useCallback(() => {
       (0, c.qd)(c.iP.NSFW_CHANNEL_DISAGREE_CTA, b, y, _), null == f || f()
     }, [f, b, y, _]),
-    x = i.useCallback(() => {
+    v = i.useCallback(() => {
       (0, c.qd)(c.iP.NSFW_CHANNEL_AGREE_CTA, b, y, _), null == h || h()
     }, [h, b, y, _]);
   return (0, r.jsxs)(s.Kqy, {
@@ -60,7 +60,7 @@ let p = function(e) {
         onClick: C
       }) : null, null != l && null != h ? (0, r.jsx)(o.zx, {
         color: g,
-        onClick: x,
+        onClick: v,
         children: l
       }) : null]
     })]

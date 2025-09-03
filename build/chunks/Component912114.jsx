@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk358993 = require("./358993.js");
 
-function v(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -70,19 +70,19 @@ function j(e) {
     analyticsLocations: g
   } = (0, h.ZP)(o, p.Z.GROUP_DM_ICON_EDITOR), b = s ? 32 : 64;
   return (0, r.jsxs)("div", {
-    className: a()(x.iconSection, u),
+    className: a()(v.iconSection, u),
     children: [(0, r.jsxs)(c.P3F, {
-      className: a()(x.iconContainer, {
-        [x.petite]: s
+      className: a()(v.iconContainer, {
+        [v.petite]: s
       }),
       "aria-label": C.intl.string(C.t["0qPSMT"]),
       onClick: () => (0, y.ND)(i, g),
       children: [null != m ? (0, r.jsx)("img", {
         src: m,
         alt: "",
-        className: x.iconImage
+        className: v.iconImage
       }) : (0, r.jsx)("div", {
-        className: x.iconPlaceholder,
+        className: v.iconPlaceholder,
         children: (0, r.jsx)(c.BFJ, {
           size: "custom",
           width: b,
@@ -90,7 +90,7 @@ function j(e) {
           color: "currentColor"
         })
       }), (0, r.jsx)("div", {
-        className: x.pencilIconWrapper,
+        className: v.pencilIconWrapper,
         children: (0, r.jsx)(c.vdY, {
           color: "currentColor",
           size: s ? "xs" : "refresh_sm"
@@ -128,10 +128,10 @@ let E = function(e) {
   };
   return (i.useEffect(() => {
     a(Z !== I || w)
-  }, [Z, I, w, a]), (0, d.ZP)(() => (b.default.track(_.rMx.GDM_EDIT_INTERACTED, O(v({}, M), {
+  }, [Z, I, w, a]), (0, d.ZP)(() => (b.default.track(_.rMx.GDM_EDIT_INTERACTED, O(x({}, M), {
     action: "opened"
   })), () => {
-    b.default.track(_.rMx.GDM_EDIT_INTERACTED, O(v({}, M), {
+    b.default.track(_.rMx.GDM_EDIT_INTERACTED, O(x({}, M), {
       action: "dismissed"
     }))
   })), null == S) ? null : (0, r.jsx)(h.Gt, {
@@ -141,7 +141,7 @@ let E = function(e) {
         e.preventDefault();
         let r = Z !== I,
           i = true !== N;
-        if (b.default.track(_.rMx.GDM_EDIT_INTERACTED, O(v({}, M), {
+        if (b.default.track(_.rMx.GDM_EDIT_INTERACTED, O(x({}, M), {
             action: "saved",
             new_name_set: "" !== Z,
             new_icon_set: (i ? N : null == S ? true : S.icon) != null,
@@ -168,7 +168,7 @@ let E = function(e) {
         onClose: () => Promise.resolve(f()),
         transitionState: l,
         children: (0, r.jsxs)("div", {
-          className: x.modalContent,
+          className: v.modalContent,
           children: [(0, r.jsx)(j, {
             channel: S,
             previewIcon: N,

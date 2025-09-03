@@ -27,8 +27,8 @@ function g(e) {
     comparator: y,
     selected: _,
     checked: C,
-    disabled: x = false,
-    inlineUsername: v = true,
+    disabled: v = false,
+    inlineUsername: x = true,
     onClick: O,
     onMouseEnter: j,
     "aria-setsize": E,
@@ -54,7 +54,7 @@ function g(e) {
   }({
     id: "user-row-".concat(g),
     className: l()(m.friendWrapper, {
-      [m.disabled]: x
+      [m.disabled]: v
     }),
     onClick: () => {
       null != O && O(i.id)
@@ -65,14 +65,14 @@ function g(e) {
   }, P), n = n = {
     role: "option",
     "aria-selected": C,
-    "aria-disabled": x,
+    "aria-disabled": v,
     "aria-setsize": E,
     "aria-posinset": S,
     children: (0, r.jsxs)(p.Z, {
       align: p.Z.Align.CENTER,
       className: l()(m.friend, {
         [m.friendSelected]: _,
-        [m.twoRows]: !v
+        [m.twoRows]: !x
       }),
       children: [(0, r.jsx)(d.Z, {
         user: i,
@@ -81,7 +81,7 @@ function g(e) {
       }), (0, r.jsxs)(p.Z, {
         className: m.match,
         align: p.Z.Align.BASELINE,
-        direction: v ? p.Z.Direction.HORIZONTAL : p.Z.Direction.VERTICAL,
+        direction: x ? p.Z.Direction.HORIZONTAL : p.Z.Direction.VERTICAL,
         children: [(0, r.jsx)(c.Text, {
           tag: "strong",
           className: m.nickname,
@@ -104,7 +104,7 @@ function g(e) {
         displayOnly: true,
         size: 22,
         value: C,
-        disabled: x,
+        disabled: v,
         className: m.checkbox
       })]
     })

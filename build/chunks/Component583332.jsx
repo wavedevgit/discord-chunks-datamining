@@ -1,7 +1,7 @@
 /** Chunk was on 56826 **/
-/** chunk id: 583332, original params: t,n,e (module,exports,require) **/
+/** chunk id: 583332, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  g: () => o
+  g: () => u
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -12,12 +12,12 @@ var Chunk442837 = require("./442837.js"),
   Chunk594174 = require("./594174.js"),
   Chunk388032 = require("./388032.jsx");
 
-function o(t) {
-  let n = (0, r.e7)([d.default], () => d.default.getCurrentUser()),
-    e = (0, a.P)(t.id);
-  return (null == n ? true : n.isStaff()) === true && t.isDM() && null == e ? (0, i.jsx)(l.sNh, {
+function u(e) {
+  let t = (0, i.e7)([s.default], () => s.default.getCurrentUser()),
+    n = (0, o.P)(e.id);
+  return (null == t ? true : t.isStaff()) === true && e.isDM() && null == n ? (0, r.jsx)(l.sNh, {
     id: "mark-as-stranger-danger",
-    label: u.intl.string(u.t.CgWmmZ),
-    action: () => (0, s.Dl)(t.id)
+    label: c.intl.string(c.t.CgWmmZ),
+    action: () => (0, a.Dl)(e.id)
   }) : null
 }

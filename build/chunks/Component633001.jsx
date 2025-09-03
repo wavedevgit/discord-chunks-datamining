@@ -129,7 +129,7 @@ function q(e) {
     color: u.zx.Colors.LINK,
     size: u.zx.Sizes.MIN,
     onClick: function() {
-      (0, I.JG)(t, () => l(true))
+      (0, k.JG)(t, () => l(true))
     },
     className: V.copyId,
     children: ["Application Id: ", t, " ", n ? G.intl.string(G.t["t5VZ8/"]) : null]
@@ -829,7 +829,7 @@ let eu = [{
     let {
       timestamp: t
     } = e;
-    return (0, k.vc)(o()(t), "h:mm:ss.SSS")
+    return (0, I.vc)(o()(t), "h:mm:ss.SSS")
   }
 }];
 
@@ -891,7 +891,7 @@ let eh = ["__webpack_require__", "fn"],
             children: [s, " (", c, ")", (0, a.jsx)(m.P3F, {
               tag: "span",
               className: V.copyEventButton,
-              onClick: () => (0, I.JG)(s),
+              onClick: () => (0, k.JG)(s),
               children: (0, a.jsx)(m.TIy, {
                 color: "currentColor",
                 size: "sm"
@@ -901,7 +901,7 @@ let eh = ["__webpack_require__", "fn"],
             icon: m.TIy,
             tooltip: "Copy all properties",
             onClick: () => {
-              (0, I.JG)(ex(r))
+              (0, k.JG)(ex(r))
             }
           }), (0, a.jsx)(b.Z.Icon, {
             icon: m.k$p,
@@ -915,8 +915,8 @@ let eh = ["__webpack_require__", "fn"],
             copyValue: f.toISOString(),
             children: (0, a.jsx)("time", {
               dateTime: f.toISOString(),
-              title: (0, k.vc)(f, "LLLL"),
-              children: (0, k.vc)(f, "L h:mm:ss.SSS")
+              title: (0, I.vc)(f, "LLLL"),
+              children: (0, I.vc)(f, "L h:mm:ss.SSS")
             })
           }), (0, a.jsx)(L.Z9, {
             name: "Log Type",
@@ -1013,7 +1013,7 @@ function eb() {
       clearTimeout(module)
     }
   }, []);
-  let [P, w] = Chunk647438.useState(false), k = Chunk647438.useRef(null), R = Chunk647438.useCallback(() => {
+  let [P, w] = Chunk647438.useState(false), I = Chunk647438.useRef(null), R = Chunk647438.useCallback(() => {
     (0, Chunk572004.JG)(JSON.stringify(module)), Chunk808506(true)
   }, [module]);
   return Chunk647438.useEffect(() => {

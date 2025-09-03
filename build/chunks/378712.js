@@ -1,17 +1,17 @@
 /** Chunk was on 56826 **/
-/** chunk id: 378712, original params: t,n,e (module,exports,require) **/
+/** chunk id: 378712, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  J: () => s
+  J: () => a
 });
 var Chunk544891 = require("./544891.js"),
   Chunk359119 = require("./359119.js"),
   Chunk981631 = require("./981631.js");
 
-function s(t) {
-  return i.tn.post({
-    url: l.ANM.ADD_SAFETY_WARNING(t),
+function a(e) {
+  return r.tn.post({
+    url: l.ANM.ADD_SAFETY_WARNING(e),
     body: {
-      safety_warning_type: r.pj.LIKELY_ATO
+      safety_warning_type: i.pj.LIKELY_ATO
     },
     rejectWithError: false
   })

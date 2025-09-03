@@ -152,7 +152,7 @@ function A(e) {
       n = "txt",
       r = "",
       i = w.match(T);
-    null != i && (r = i[1], n = i[2], e = i[3], r += i[4]), await (0, v.d5)([(0, x.dp)(new Blob([e], {
+    null != i && (r = i[1], n = i[2], e = i[3], r += i[4]), await (0, x.d5)([(0, v.dp)(new Blob([e], {
       type: "text/plain"
     }), "message.".concat(n), "text/plain")], t, A), C.S.dispatchToLastSubscribed(E.CkL.CLEAR_TEXT), "" !== r && C.S.dispatchToLastSubscribed(E.CkL.INSERT_TEXT, {
       plainText: r

@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk315146 = require("./315146.js");
-let v = "749054660769218631";
+let x = "749054660769218631";
 
 function O(e) {
   var t;
@@ -35,10 +35,10 @@ function O(e) {
   let j = (0, o.e7)([f.Z, h.default], () => !!a()(f.Z.getMessages(n.id).toArray()).reverse().find(e => e.author.id !== h.default.getId() && e.state === _.yb.SENT && !(0, y.Z)(e))),
     E = (0, o.e7)([m.default], () => m.default.getUser(n.isPrivate() ? n.getRecipientId() : null)),
     S = null != (t = b.ZP.useName(E)) ? t : C.intl.string(C.t.y1Wu2d),
-    I = (0, o.e7)([d.Z], () => d.Z.getStickerById(v)),
+    I = (0, o.e7)([d.Z], () => d.Z.getStickerById(x)),
     P = i.useCallback(async () => {
       if (null == l || "" === l) try {
-        await c.Z.sendGreetMessage(n.id, v), g.default.track(_.rMx.DM_EMPTY_ACTION, {
+        await c.Z.sendGreetMessage(n.id, x), g.default.track(_.rMx.DM_EMPTY_ACTION, {
           channel_id: n.id,
           channel_type: n.type,
           source: "Wave",
@@ -52,32 +52,32 @@ function O(e) {
       username: S
     }),
     T = null != l && "" !== l ? (0, r.jsx)(s.Text, {
-      className: x.error,
+      className: v.error,
       color: "text-danger",
       variant: "text-sm/normal",
       children: l
     }) : null;
   return j ? (0, r.jsxs)("div", {
-    className: x.containerCompact,
+    className: v.containerCompact,
     children: [(0, r.jsxs)(s.P3F, {
-      className: null != l && "" !== l ? x.compactButtonDisabled : x.compactButton,
+      className: null != l && "" !== l ? v.compactButtonDisabled : v.compactButton,
       "aria-label": C.intl.string(C.t.pJObYG),
       onClick: P,
       children: [(0, r.jsx)(p.Z, {
         sticker: I,
         size: 24
       }), (0, r.jsx)(s.Text, {
-        className: x.text,
+        className: v.text,
         variant: "text-md/medium",
         children: Z
       })]
     }), T]
   }) : (0, r.jsxs)("div", {
-    className: x.containerExpanded,
+    className: v.containerExpanded,
     children: [(0, r.jsx)(p.Z, {
       sticker: I,
       size: 160,
-      className: x.stickerExpanded
+      className: v.stickerExpanded
     }), (0, r.jsx)(s.zxk, {
       fullWidth: true,
       variant: "primary",

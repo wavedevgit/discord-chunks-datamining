@@ -76,16 +76,16 @@ function O(e) {
     }), (0, r.jsx)(C.jz, {
       children: O
     }), n.isMultiUserDM() && (0, r.jsxs)(o.h, {
-      className: v.buttonContainer,
+      className: x.buttonContainer,
       children: [(0, r.jsx)(y.l, {
         channel: n,
-        text: x.intl.string(x.t["6Qgren"]),
+        text: v.intl.string(v.t["6Qgren"]),
         icon: s.ejJ
       }), (0, r.jsx)(a.z, {
         icon: s.vdY,
         variant: "secondary",
-        text: x.intl.string(x.t["5Q9+/P"]),
-        "aria-label": x.intl.string(x.t["5Q9+/P"]),
+        text: v.intl.string(v.t["5Q9+/P"]),
+        "aria-label": v.intl.string(v.t["5Q9+/P"]),
         onClick: () => (0, b.B)(n.id, u.Z.EMPTY_GROUP_DM)
       })]
     })]

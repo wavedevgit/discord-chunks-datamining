@@ -136,8 +136,8 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     "aria-labelledby": ey,
     setEditorRef: e_,
     autoCompletePosition: eC,
-    children: ex,
-    disableThemedBackground: ev = false,
+    children: ev,
+    disableThemedBackground: ex = false,
     emojiPickerCloseOnModalOuterClick: eO,
     parentModalKey: ej
   } = e, eE = O.Z.useField("channelDrafts")[D.id], eS = null != (l = null == eE ? true : eE.title) ? l : "", eI = null == eE ? true : eE.heroFile, eP = null == (o = null == eE ? true : eE.publish) || o, eZ = null == (u = null == eE ? true : eE.createThread) || u;
@@ -148,11 +148,11 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
   null == e_ || e_(ew.current);
   let {
     activeCommand: eD
-  } = (0, d.cj)([x.Z], () => {
+  } = (0, d.cj)([v.Z], () => {
     var e, t;
     return {
-      activeCommand: (null == (e = k.commands) ? true : e.enabled) ? x.Z.getActiveCommand(D.id) : null,
-      activeCommandSection: (null == (t = k.commands) ? true : t.enabled) ? x.Z.getActiveCommandSection(D.id) : null
+      activeCommand: (null == (e = k.commands) ? true : e.enabled) ? v.Z.getActiveCommand(D.id) : null,
+      activeCommandSection: (null == (t = k.commands) ? true : t.enabled) ? v.Z.getActiveCommandSection(D.id) : null
     }
   }), {
     isLurking: eL,
@@ -313,7 +313,7 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
           ref: eR,
           onScroll: e2,
           className: a()(J.announcementScrollableContainer, {
-            [J.themedBackground]: !ev
+            [J.themedBackground]: !ex
           }),
           children: (0, r.jsxs)("div", {
             className: a()(J.inner, Q.inner),
@@ -464,7 +464,7 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
               })
             })
           })]
-        }), (0, r.jsx)(v.Z, {
+        }), (0, r.jsx)(x.Z, {
           targetRef: eN,
           ref: e$,
           channel: D,
@@ -484,7 +484,7 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
           editorHeight: e8,
           setValue: (e, t) => null == K ? true : K(null, e, t),
           position: eC
-        }), ex]
+        }), ev]
       }), e9 ? null : (0, r.jsx)(S.Z, {
         positionTargetRef: eN,
         type: k,

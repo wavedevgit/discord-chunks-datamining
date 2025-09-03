@@ -51,22 +51,22 @@ function L(e) {
     } = function() {
       let e = (0, d.e7)([E.default], () => E.default.onlyShowPreviewAppCollections) ? s.E.PREVIEW : s.E.ACTIVE;
       return i.useEffect(() => {
-        (0, x.XK)({
+        (0, v.XK)({
           surface: M,
           activeState: e
         })
       }, [e]), {
-        fetchState: (0, d.e7)([v.Z], () => v.Z.getFetchState({
+        fetchState: (0, d.e7)([x.Z], () => x.Z.getFetchState({
           surface: M,
           activeState: e
         })),
-        voiceBannerCollection: (0, d.e7)([v.Z], () => v.Z.getCollections({
+        voiceBannerCollection: (0, d.e7)([x.Z], () => x.Z.getCollections({
           surface: M,
           activeState: e
         }))[0]
       }
     }(),
-    f = c === v.M.FETCHING,
+    f = c === x.M.FETCHING,
     g = i.useMemo(() => {
       let e = null == h ? true : h.application_directory_collection_items[0];
       return null == e ? null : e.type === u.C.APPLICATION_BANNER ? e : null
@@ -120,16 +120,16 @@ let k = Chunk647438.forwardRef(function(e, t) {
     onMouseLeave: u,
     onClick: b,
     className: y
-  } = e, x = (0, d.e7)([f.Z], () => f.Z.useReducedMotion), {
-    id: v,
+  } = e, v = (0, d.e7)([f.Z], () => f.Z.useReducedMotion), {
+    id: x,
     guild_id: O
   } = l;
   i.useEffect(() => {
     S.default.track(A.rMx.ACTIVITIES_CENTER_CONTROL_TRAY_BUTTON_HOVERED, {
-      channel_id: v,
+      channel_id: x,
       guild_id: O
     })
-  }, [v, O]), i.useEffect(() => {
+  }, [x, O]), i.useEffect(() => {
     o || s()
   }, [s, o]);
   let E = (0, h.bp)(),
@@ -235,7 +235,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
               commandOrigin: C.bB.MINI_SHELF
             }, e.application.id)), (0, r.jsx)("div", {
               className: a()(R.wumpusRocketOuterContainer, {
-                [R.wumpusReducedMotion]: x
+                [R.wumpusReducedMotion]: v
               }),
               children: (0, r.jsx)("div", {
                 className: R.wumpusRocketInnerContainer,

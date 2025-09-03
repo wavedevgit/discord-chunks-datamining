@@ -358,7 +358,8 @@ function eE(e) {
         applicationId: x.application_id,
         partyId: null == (t = x.party) ? true : t.id,
         messageId: P.id,
-        analyticsLocations: I
+        analyticsLocations: I,
+        remoteJoinPlatform: ef
       })
     }
   } : e_ ? {

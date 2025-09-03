@@ -2,7 +2,7 @@
 /** chunk id: 329816, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => ee
+  Z: () => $
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -43,7 +43,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk819640 = require("./819640.js"),
   Chunk358085 = require("./358085.js"),
   Chunk663993 = require("./663993.js"),
-  Chunk766127 = require("./766127.jsx"),
   Chunk823453 = require("./823453.jsx"),
   Chunk744048 = require("./744048.jsx"),
   Chunk628123 = require("./628123.jsx"),
@@ -63,15 +62,15 @@ require("./167666.jsx"), Promise.resolve().then(require.bind(require, 62883)).th
   createPromise: () => Promise.all([require.e("50448"), require.e("80451"), require.e("30634"), require.e("58493")]).then(require.bind(require, 80753)),
   webpackId: 80753
 });
-let Q = (0, Chunk663993.Un)({
+let X = (0, Chunk663993.Un)({
     createPromise: () => require.e("67110").then(require.bind(require, 177741)),
     webpackId: 177741
   }),
-  J = (0, Chunk663993.Un)({
+  Q = (0, Chunk663993.Un)({
     createPromise: () => require.e("13474").then(require.bind(require, 420541)),
     webpackId: 420541
   }),
-  $ = Chunk647438.memo(function() {
+  J = Chunk647438.memo(function() {
     let e = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.hasLayers()),
       t = (0, Chunk526665.wy)("AppSkeleton"),
       n = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.getLayers().includes(Chunk981631.S9g.USER_SETTINGS)),
@@ -82,27 +81,27 @@ let Q = (0, Chunk663993.Un)({
       show: module || Chunk647438 || !Chunk120356
     })
   }),
-  ee = function(e) {
+  $ = function(e) {
     let {
       children: t,
       skipsSettingDefaultPageTitle: n
     } = e, a = (0, B.getPlatform)(), u = l.tq || l.Em, m = (0, c.e7)([E.Z], () => E.Z.useForcedColors ? "yes" : "no"), k = i.useRef(document.body), U = "".concat(m);
     return (0, N.G)(), (0, P.G)("AppSkeleton"), (0, r.jsx)(j.w, {
       children: (0, r.jsxs)(b.Z, {
-        children: [(0, r.jsx)(V.Z, {
+        children: [(0, r.jsx)(F.Z, {
           skipsSettingDefaultPageTitle: n
         }), (0, r.jsx)(h.T, {
-          children: (0, r.jsx)(Y.Z, {
+          children: (0, r.jsx)(H.Z, {
             children: (0, r.jsxs)(d.JcV, {
               containerRef: k,
-              children: [(0, r.jsx)(K.Co, {}), (0, r.jsx)(W.ZP, {}), (0, r.jsx)(s.OU, {}), (0, r.jsx)(g.Wu, {
-                appContext: q.IlC.APP,
+              children: [(0, r.jsx)(W.Co, {}), (0, r.jsx)(Y.ZP, {}), (0, r.jsx)(s.OU, {}), (0, r.jsx)(g.Wu, {
+                appContext: z.IlC.APP,
                 renderWindow: window,
                 children: (0, r.jsxs)(w.yP, {
-                  children: [null != a ? (0, r.jsx)($, {}) : null, (0, r.jsxs)("div", {
-                    className: o()(X.appAsidePanelWrapper, u && X.mobileAppAsidePanelWrapper),
+                  children: [null != a ? (0, r.jsx)(J, {}) : null, (0, r.jsxs)("div", {
+                    className: o()(q.appAsidePanelWrapper, u && q.mobileAppAsidePanelWrapper),
                     children: [(0, r.jsx)(C.K, {}), (0, r.jsx)("div", {
-                      className: X.notAppAsidePanel,
+                      className: q.notAppAsidePanel,
                       "data-app-not-dev-tools": true,
                       children: (0, r.jsx)(A.m, {
                         children: (0, r.jsx)(x.OR, {
@@ -110,14 +109,14 @@ let Q = (0, Chunk663993.Un)({
                             value: O.Z,
                             children: (0, r.jsxs)(T.p, {
                               children: [(0, r.jsx)("div", {
-                                className: o()(u ? X.mobileApp : X.app),
+                                className: o()(u ? q.mobileApp : q.app),
                                 children: t
-                              }), (0, r.jsx)(f.Z, {}), (0, r.jsx)(I.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(d.nKe, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(D.Ox, {}), (0, r.jsx)(w.Un, {}), (0, r.jsx)(x.ot, {}), (0, r.jsx)(d.Ixi, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(L.Z, {}), (0, r.jsx)(Q, {}), (0, r.jsx)(J, {}), (0, r.jsx)(M.Z, {})]
+                              }), (0, r.jsx)(f.Z, {}), (0, r.jsx)(I.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(d.nKe, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(D.Ox, {}), (0, r.jsx)(w.Un, {}), (0, r.jsx)(x.ot, {}), (0, r.jsx)(d.Ixi, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(L.Z, {}), (0, r.jsx)(X, {}), (0, r.jsx)(Q, {}), (0, r.jsx)(M.Z, {})]
                             })
                           })
                         })
                       })
-                    }), (0, r.jsx)(S.Z, {}), (0, r.jsx)(H.Z, {}), (0, r.jsx)(F.Z, {}), (0, r.jsx)(R.Z, {
+                    }), (0, r.jsx)(S.Z, {}), (0, r.jsx)(V.Z, {}), (0, r.jsx)(R.Z, {
                       mobile: u
                     })]
                   }), false]

@@ -1,7 +1,7 @@
 /** Chunk was on 62987 **/
 /** chunk id: 561472, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => v
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,14 +21,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk731994 = require("./731994.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let x = function(e) {
+let v = function(e) {
   let {
     className: t,
     style: n,
-    channel: x,
-    draftType: v
-  } = e, [O, j] = i.useState(true), E = (0, l.e7)([d.Z], () => d.Z.hasLayers()), S = (0, l.e7)([p.Z], () => null != x && p.Z.can(_.Plq.ATTACH_FILES, x), [x]), I = null != (0, l.e7)([o.Z], () => o.Z.getActiveCommand(x.id)), P = x.getGuildId(), Z = v === c.d.FirstThreadMessage, T = (0, a.$5)(x), N = i.useMemo(() => !E && (x.isPrivate() && !x.isManaged() || null != P && !T && S && u.Z.canChatInGuild(P)), [S, T, x, P, E]), A = Z ? _.TPd.GUILD_THREADS_ONLY.has(x.type) ? C.intl.string(C.t.RBBLhI) : C.intl.string(C.t.gUx4en) : O ? C.intl.format(C.t.dYP2FR, {
-    destination: (0, s.F6)(x, f.default, h.Z, true)
+    channel: v,
+    draftType: x
+  } = e, [O, j] = i.useState(true), E = (0, l.e7)([d.Z], () => d.Z.hasLayers()), S = (0, l.e7)([p.Z], () => null != v && p.Z.can(_.Plq.ATTACH_FILES, v), [v]), I = null != (0, l.e7)([o.Z], () => o.Z.getActiveCommand(v.id)), P = v.getGuildId(), Z = x === c.d.FirstThreadMessage, T = (0, a.$5)(v), N = i.useMemo(() => !E && (v.isPrivate() && !v.isManaged() || null != P && !T && S && u.Z.canChatInGuild(P)), [S, T, v, P, E]), A = Z ? _.TPd.GUILD_THREADS_ONLY.has(v.type) ? C.intl.string(C.t.RBBLhI) : C.intl.string(C.t.gUx4en) : O ? C.intl.format(C.t.dYP2FR, {
+    destination: (0, s.F6)(v, f.default, h.Z, true)
   }) : C.intl.string(C.t.h76ulJ);
   return I || !N ? null : (0, r.jsx)(b.Z, {
     className: t,
@@ -38,7 +38,7 @@ let x = function(e) {
     icons: y.J6,
     onDrop: e => {
       if (I) returnfalse;
-      N && null != x && ((0, g.d5)(e, x, v, {
+      N && null != v && ((0, g.d5)(e, v, x, {
         requireConfirm: O,
         showLargeMessageDialog: false,
         origin: "drag_drop"

@@ -1,7 +1,7 @@
 /** Chunk was on 62987 **/
 /** chunk id: 83896, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => v
+  I: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,15 +23,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk10359 = require("./10359.js"),
   Chunk254477 = require("./254477.js");
 
-function v(e) {
+function x(e) {
   let {
     hangStatusActivity: t,
     channel: n,
     setPopoutRef: l
-  } = e, v = i.useRef(null), O = (0, o.e7)([p.Z], () => p.Z.getVoiceChannelId() === n.id), j = (0, o.e7)([u.Z], () => u.Z.can(y.Plq.CONNECT, n)), E = (null == t ? true : t.emoji) == null || (0, g.K)(t.emoji, n), S = (0, o.e7)([d.Z], () => d.Z.getMediaSessionId());
+  } = e, x = i.useRef(null), O = (0, o.e7)([p.Z], () => p.Z.getVoiceChannelId() === n.id), j = (0, o.e7)([u.Z], () => u.Z.can(y.Plq.CONNECT, n)), E = (null == t ? true : t.emoji) == null || (0, g.K)(t.emoji, n), S = (0, o.e7)([d.Z], () => d.Z.getMediaSessionId());
   i.useEffect(() => {
-    null == l || l(null == v ? true : v.current)
-  }, [v, l]), i.useEffect(() => {
+    null == l || l(null == x ? true : x.current)
+  }, [x, l]), i.useEffect(() => {
     h.default.track(y.rMx.VIEW_HANG_STATUS, {
       source: "HangStatusPopout",
       guild_id: n.guild_id,
@@ -59,8 +59,8 @@ function v(e) {
       })
     }, [O, E, t, S, n.guild_id, n.id]);
   return (0, r.jsxs)("div", {
-    ref: v,
-    className: a()(x.popover, C.container),
+    ref: x,
+    className: a()(v.popover, C.container),
     children: [(0, r.jsx)(b.Z, {
       className: C.icon,
       hangStatusActivity: t
