@@ -1,13 +1,11 @@
-/** Chunk was on web.js **/
-/** chunk id: 336219, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 1272 **/
+/** chunk id: 336219, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  t: () => s,
-  v: () => l
+  t: () => a
 });
 var Chunk818083 = require("./818083.js"),
   Chunk358085 = require("./358085.js");
-let a = (0, Chunk818083.B)({
+let l = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-03_fast_travel",
   label: "Fast Travel",
@@ -43,20 +41,9 @@ let a = (0, Chunk818083.B)({
   }]
 });
 
-function o() {
-  return {
+function a(e) {
+  return l.useExperiment(e, {
     autoTrackExposure: true,
-    disable: !(0, Chunk358085.isDesktop)()
-  }
-}
-
-function s(e) {
-  return a.useExperiment(e, o())
-}
-
-function l(e) {
-  let {
-    backForwardButtons: t
-  } = a.getCurrentConfig(e, o());
-  return t
+    disable: !(0, i.isDesktop)()
+  })
 }

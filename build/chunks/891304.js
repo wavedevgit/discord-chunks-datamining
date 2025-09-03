@@ -8,8 +8,8 @@ require.d(exports, {
 });
 var Chunk570140 = require("./570140.js"),
   Chunk703656 = require("./703656.js"),
-  Chunk365355 = require("./365355.js"),
-  Chunk336219 = require("./336219.js");
+  Chunk719961 = require("./719961.js"),
+  Chunk365355 = require("./365355.js");
 
 function s(e, t, n) {
   r.Z.dispatch({
@@ -22,10 +22,10 @@ function s(e, t, n) {
 
 function l(e) {
   if (!(0, i.x3)()) return;
-  if (!(0, o.v)({
+  if (!(0, a.v)({
       location: e
     })) return void(0, i.op)();
-  let t = a.Z.backDestination;
+  let t = o.Z.backDestination;
   null != t && (r.Z.dispatch({
     type: "GO_BACK"
   }), (0, i.uL)(t.path))
@@ -33,10 +33,10 @@ function l(e) {
 
 function c(e) {
   if (!(0, i.x3)()) return;
-  if (!(0, o.v)({
+  if (!(0, a.v)({
       location: e
     })) return void(0, i.eH)();
-  let t = a.Z.forwardDestination;
+  let t = o.Z.forwardDestination;
   null != t && (r.Z.dispatch({
     type: "GO_FORWARD"
   }), (0, i.uL)(t.path))
