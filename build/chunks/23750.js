@@ -83,7 +83,7 @@ class m extends p {
   }
   userHasReactedWithEmoji(e, t) {
     return this.reactions.some(n => {
-      if ((0, s.ir)(n.emoji, e)) return t && n.me || !t && n.me_burst
+      if ((0, s.ir)(n.emoji, e)) return t && n.me_burst || !t && n.me
     })
   }
   addReaction(e) {
