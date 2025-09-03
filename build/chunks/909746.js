@@ -1123,13 +1123,8 @@ function eN(e, t) {
                 return eR(e, e => "".concat((0, c.Rf)(e[0]).toUpperCase(), ", ").concat((0, c.Rf)(e[1]).toUpperCase()));
               case v.zUn.MAX_AGE:
                 return eR(e, e => {
-                  let t = L.ZP.getMaxAgeOptions.find(t => {
-                    let {
-                      value: n
-                    } = t;
-                    return e === n
-                  });
-                  return t ? t.label : e
+                  let t = L.ZP.getMaxAgeOptionByValue(e);
+                  return null !== t ? t.label : e
                 });
               case v.zUn.PERMISSIONS: {
                 let t = [],

@@ -1,1 +1,0 @@
-{"id":"956829","type":"experiment","data":{"kind":"guild","id":"2023-04_community_endless_invites","label":"Community Endless Invites","defaultConfig":{"defaultInvitesToNeverExpire":false},"treatments":[{"id":1,"label":"Causes invites to never expire (by default) in the Guild","config":{"defaultInvitesToNeverExpire":true}}]},"fromModule":{"id":"7654"}}

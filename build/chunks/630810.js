@@ -1,7 +1,7 @@
 /** Chunk was on 7654 **/
 /** chunk id: 630810, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g,
+  Z: () => h,
   m: () => c
 });
 var l, Chunk493683 = require("./493683.js"),
@@ -12,7 +12,7 @@ var l, Chunk493683 = require("./493683.js"),
   Chunk651655 = require("./651655.js");
 let d = +Chunk70956.Z.Millis.SECOND + 10;
 var c = ((l = {})[l.GROUP_DM = 0] = "GROUP_DM", l[l.USER = 1] = "USER", l[l.CHANNEL = 2] = "CHANNEL", l);
-class h extends Chunk651655.Z {
+class g extends Chunk651655.Z {
   _sendInvite(e, t, n, l, i) {
     r.Z.sendInvite(e.id, t, n, l).then(() => i(null, true), () => i(null, false))
   }
@@ -37,4 +37,4 @@ class h extends Chunk651655.Z {
     super(new Chunk710845.Z("InviteQueue"), d)
   }
 }
-let g = new h
+let h = new g

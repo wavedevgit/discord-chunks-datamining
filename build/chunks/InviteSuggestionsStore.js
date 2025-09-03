@@ -25,13 +25,13 @@ let _ = new Set,
     numChannels: 0
   };
 
-function T(e) {
+function O(e) {
   let t = new Set,
-    n = null == r || o === j.Iq.EMBEDDED_APPLICATION ? true : r.id,
+    n = null == r || o === N.Iq.EMBEDDED_APPLICATION ? true : r.id,
     l = (0, v.rh)(_, n);
   for (let e of (null == l || f.Z.isBlockedOrIgnored(l.id) || t.add(l.id), m.Z.getUserAffinities())) t.add(e.otherUserId);
   let i = new Set;
-  return o === j.Iq.EMBEDDED_APPLICATION && g.Z.getChannelHistory().map(e => I.Z.getChannel(e)).filter(p.lm).filter(e => e.type === N.d4z.GUILD_TEXT).filter(e => x.Z.can(N.Plq.SEND_MESSAGES, e)).slice(0, 3).forEach(e => i.add(e.id)), (0, v.an)({
+  return o === N.Iq.EMBEDDED_APPLICATION && h.Z.getChannelHistory().map(e => x.Z.getChannel(e)).filter(p.lm).filter(e => e.type === j.d4z.GUILD_TEXT).filter(e => I.Z.can(j.Plq.SEND_MESSAGES, e)).slice(0, 3).forEach(e => i.add(e.id)), (0, v.an)({
     query: e,
     omitUserIds: _,
     suggestedUserIds: t,
@@ -42,7 +42,7 @@ function T(e) {
   })
 }
 
-function O(e) {
+function T(e) {
   E = e, S = new Map, e.forEach((e, t) => {
     S.set(e, {
       index: t
@@ -94,10 +94,10 @@ let C = new y(Chunk570140.Z, {
       inviteTargetType: c
     })]), i = false;
     let {
-      rows: h,
-      counts: g
-    } = T("");
-    O(h), b = g, l = E.length
+      rows: g,
+      counts: h
+    } = O("");
+    T(g), b = h, l = E.length
   },
   INVITE_SUGGESTIONS_SEARCH: function(e) {
     let {
@@ -106,7 +106,7 @@ let C = new y(Chunk570140.Z, {
     i = "" !== t;
     let {
       rows: n
-    } = T(t);
-    n.sort((e, t) => null != e.score && null != t.score ? e.score - t.score : 0), O(n)
+    } = O(t);
+    n.sort((e, t) => null != e.score && null != t.score ? e.score - t.score : 0), T(n)
   }
 })

@@ -1,7 +1,7 @@
 /** Chunk was on 7654 **/
 /** chunk id: 585385, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  D: () => g
+  D: () => h
 }), require("./997841.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -14,23 +14,24 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk451964 = require("./451964.js"),
   Chunk197571 = require("./197571.js");
-let g = e => {
+let h = e => {
   let {
     handleDone: t,
     headerId: n,
     modalState: i,
-    shouldHideTemporaryInviteToggle: g,
+    shouldHideTemporaryInviteToggle: h,
     onGenerateNewLink: m,
     onToggleTemporary: p,
     onSelectMaxAge: v,
-    onSelectMaxUses: I,
-    isGuestInviteCreationToggleEnabled: x,
+    onSelectMaxUses: x,
+    isGuestInviteCreationToggleEnabled: I,
     onSetInviteFlags: f
-  } = e, N = (0, a.ZP)(), {
-    maxAge: j,
-    maxUses: _,
-    temporary: E,
-    flags: S
+  } = e, j = (0, a.ZP)(), {
+    maxAgeOptions: N,
+    maxAge: _,
+    maxUses: E,
+    temporary: S,
+    flags: b
   } = i;
   return (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsxs)(s.xBx, {
@@ -44,26 +45,27 @@ let g = e => {
         children: (0, l.jsx)(s.vwX, {
           id: n,
           tag: "h2",
-          className: r()(h.marginReset, c.headerCloseButtonSpacing, c.headerText),
+          className: r()(g.marginReset, c.headerCloseButtonSpacing, c.headerText),
           children: d.intl.string(d.t.Atdlys)
         })
       })]
     }), (0, l.jsx)(o.Z, {
-      shouldHideTemporaryInviteToggle: g,
-      maxAge: j,
-      maxUses: _,
-      temporary: E,
+      shouldHideTemporaryInviteToggle: h,
+      maxAgeOptions: N,
+      maxAge: _,
+      maxUses: E,
+      temporary: S,
       onToggleTemporary: p,
       onSelectMaxAge: v,
-      onSelectMaxUses: I,
+      onSelectMaxUses: x,
       onGenerateNewLink: m,
-      isGuestInviteCreationToggleEnabled: x,
+      isGuestInviteCreationToggleEnabled: I,
       onSetInviteFlags: f,
-      inviteFlags: S
+      inviteFlags: b
     }), (0, l.jsx)(s.mzw, {
       className: c.settingsFooter,
       children: (0, l.jsx)(u.Z, {
-        theme: N,
+        theme: j,
         onConfirm: () => {
           m(), t()
         },
