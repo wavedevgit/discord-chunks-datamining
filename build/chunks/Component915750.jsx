@@ -146,7 +146,7 @@ class L {
           (t = !D.has(r) && (0, y.VB)(this.questContent)) && D.add(r)
         }
         let r = (0, y.jY)(this.questContent);
-        (0, u.S)().then(n => {
+        (0, u.S)((0, b._b)(this.questContent)).then(n => {
           (0, b.dA)({
             questId: e.id,
             event: T.rMx.QUEST_CONTENT_VIEWED,

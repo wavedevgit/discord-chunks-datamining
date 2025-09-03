@@ -341,6 +341,10 @@ let Z = {
   [Chunk981631.rMx.SEARCH_BAR_VIEWED]: {
     throttlePeriod: L,
     throttleKeys: e => [e.search_type]
+  },
+  [Chunk981631.rMx.AD_IDENTIFIER_FETCHED]: {
+    throttlePeriod: j,
+    throttleKeys: () => []
   }
 };
 

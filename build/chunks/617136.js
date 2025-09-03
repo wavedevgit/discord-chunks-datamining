@@ -136,7 +136,7 @@ async function x(e) {
     impressionId: c,
     trackGuildAndChannelMetadata: u = false,
     sourceQuestContent: d
-  } = e, _ = h.Z.getQuest(t), m = await (0, a.S)();
+  } = e, _ = h.Z.getQuest(t), m = await (0, a.S)(C(n));
   w({
     questId: t,
     event: y.rMx.QUEST_CONTENT_CLICKED,
@@ -198,7 +198,7 @@ function M() {
       trackGuildAndChannelMetadata: u = false,
       sourceQuestContent: d
     } = t, _ = h.Z.getQuest(n);
-    (0, a.S)().then(t => {
+    (0, a.S)(C(r)).then(t => {
       e({
         questId: n,
         event: y.rMx.QUEST_CONTENT_CLICKED,
