@@ -17,7 +17,7 @@ function d(e) {
     guildScheduledEvent: t,
     channel: n,
     onClose: d
-  } = e, h = t.entity_type === c.WX.EXTERNAL, f = i.useCallback(e => (0, s.Qt)(t, d)(e), [t, d]), p = (0, a.u)(t, n);
+  } = e, h = t.entity_type === c.WX.EXTERNAL, f = i.useCallback(e => (0, o.Qt)(t, d)(e), [t, d]), p = (0, a.u)(t, n);
   if (null == p) return null;
   let {
     IconComponent: g,
@@ -33,7 +33,7 @@ function d(e) {
       color: "header-secondary",
       variant: "text-sm/normal",
       className: u.locationText,
-      children: (0, o.m)(m, true)
+      children: (0, s.m)(m, true)
     })]
   });
   return (0, r.jsx)("div", {

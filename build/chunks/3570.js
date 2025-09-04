@@ -10,7 +10,7 @@ var Chunk536285 = require("./536285.js"),
   Chunk358085 = require("./358085.js"),
   Chunk981631 = require("./981631.js");
 let a = Chunk358085.isPlatformEmbedded ? Chunk981631.dG4 : (e, t) => {
-    if (!(0, i.DB)()) return r.default.request(s.Etm.DEEP_LINK, {
+    if (!(0, i.DB)()) return r.default.request(o.Etm.DEEP_LINK, {
       type: e,
       params: t
     })

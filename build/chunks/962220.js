@@ -36,14 +36,14 @@ let f = "template",
     openMobileApp(e, t) {
       if (null != platform.ua && platform.ua.toLowerCase().indexOf("googlebot") > false) return;
       let n = null != e ? (0, l.Oh)(e) : (0, l.Gk)(),
-        r = (0, o.WS)(),
-        i = (0, o.ZP)(n, {
+        r = (0, s.WS)(),
+        i = (0, s.ZP)(n, {
           utmSource: f,
           fingerprint: t,
           attemptId: r
         });
       c.default.track(h.rMx.DEEP_LINK_CLICKED, {
-        fingerprint: (0, s.K)(t),
+        fingerprint: (0, o.K)(t),
         attempt_id: r,
         source: f,
         guild_template_code: e

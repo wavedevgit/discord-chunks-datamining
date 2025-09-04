@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
@@ -52,7 +52,7 @@ class L extends Chunk647438.PureComponent {
     this.props.code !== e.code && p.Z.resolveGuildTemplate(this.props.code)
   }
   renderButton(e, t) {
-    return Z.KO ? (0, r.jsx)(u.zx, {
+    return T.KO ? (0, r.jsx)(u.zx, {
       className: R.marginTop40,
       onClick: t,
       children: e
@@ -73,7 +73,7 @@ class L extends Chunk647438.PureComponent {
         src: require("./167969.js"),
         className: Chunk197571.marginBottom8
       }), (0, Chunk951288.jsx)(Chunk388905.Dx, {
-        className: o()(Chunk197571.marginTop8, Chunk197571.marginBottom8),
+        className: s()(Chunk197571.marginTop8, Chunk197571.marginBottom8),
         children: Chunk388032.intl.string(Chunk388032.t.C7ZRNz)
       }), (0, Chunk951288.jsx)(Chunk388905.DK, {
         children: Chunk388032.intl.string(Chunk388032.t.A6MwXF)
@@ -160,8 +160,8 @@ function D(e) {
   let t = {
     guildTemplate: (0, c.e7)([h.Z], () => h.Z.getGuildTemplate(e.code)),
     nativeAppState: (0, c.e7)([d.Z], () => d.Z.getState(e.code)),
-    authenticated: (0, c.e7)([E.default], () => E.default.isAuthenticated()),
-    defaultRoute: (0, c.e7)([b.Z], () => b.Z.defaultRoute)
+    authenticated: (0, c.e7)([v.default], () => v.default.isAuthenticated()),
+    defaultRoute: (0, c.e7)([j.Z], () => j.Z.defaultRoute)
   };
   return (0, r.jsx)(L, function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -184,15 +184,15 @@ function k(e) {
     form: n,
     handleSubmit: i
   } = (0, f.Z)(t, false);
-  v.Z.flowStep(A.MK.ORGANIC_GUILD_TEMPLATES, A.X2.GUILD_CREATE);
+  E.Z.flowStep(A.MK.ORGANIC_GUILD_TEMPLATES, A.X2.GUILD_CREATE);
   let l = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.Dx, {
       className: P.header,
-      children: T.intl.string(T.t.UNFvtL)
+      children: Z.intl.string(Z.t.UNFvtL)
     }), n, (0, r.jsx)(u.zx, {
       className: P.createButton,
       onClick: i,
-      children: T.intl.string(T.t.xr59t7)
+      children: Z.intl.string(Z.t.xr59t7)
     })]
   });
   return (0, r.jsx)(N.Z, {

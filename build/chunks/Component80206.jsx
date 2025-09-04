@@ -20,7 +20,7 @@ function c(e) {
     onButtonClick: d,
     loading: h
   } = e;
-  return (0, r.jsx)(s.ZP, {
+  return (0, r.jsx)(o.ZP, {
     className: a.container,
     children: (0, r.jsxs)(i.Kq, {
       align: "center",
@@ -37,8 +37,8 @@ function c(e) {
             justify: "center",
             className: a.image,
             children: u
-          }), h && (0, r.jsx)(o.$jN, {
-            type: o.$jN.Type.SPINNING_CIRCLE
+          }), h && (0, r.jsx)(s.$jN, {
+            type: s.$jN.Type.SPINNING_CIRCLE
           }), (0, r.jsx)(i.X6, {
             variant: "heading-xl/semibold",
             color: "header-primary",

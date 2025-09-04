@@ -32,19 +32,19 @@ function _(e) {
     if (null == e) return void _("failed");
     (async () => {
       try {
-        let t = await s.Z.verify(e);
+        let t = await o.Z.verify(e);
         _("succeeded"), x.current = t
       } catch (e) {
         _("failed")
       }
     })()
   });
-  let v = i.useCallback(() => {
+  let E = i.useCallback(() => {
       n(p.Z5c.LOGIN, {
         source: "verify_email"
       })
     }, [n]),
-    E = i.useCallback(() => {
+    v = i.useCallback(() => {
       f.default.track(p.rMx.VERIFY_ACCOUNT_APP_OPENED, {
         verifying_user_id: x.current
       }), (0, d.Z)("verify_email")
@@ -53,12 +53,12 @@ function _(e) {
     title: g.intl.string(g.t.PCgG39),
     subtitle: g.intl.string(g.t.tQpeAw),
     buttonText: g.intl.string(g.t.dKhVQE),
-    onButtonClick: v
+    onButtonClick: E
   }) : "succeeded" === l ? (0, r.jsx)(u.Z, {
     title: g.intl.string(g.t.dAfGb2),
     buttonText: g.intl.string(g.t.uJWIj4),
-    onButtonClick: E,
-    image: (0, r.jsx)(o.Om, {
+    onButtonClick: v,
+    image: (0, r.jsx)(s.Om, {
       alt: g.intl.string(g.t.dAfGb2)
     })
   }) : (0, r.jsx)(u.Z, {

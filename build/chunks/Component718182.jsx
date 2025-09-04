@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk525654 = require("./525654.js"),
-  o = require.n(Chunk525654),
+  s = require.n(Chunk525654),
   Chunk442837 = require("./442837.js"),
   Chunk893776 = require("./893776.js"),
   Chunk493773 = require("./493773.js"),
@@ -22,10 +22,10 @@ function _(e) {
   let {
     location: t,
     transitionTo: l = h.uL
-  } = e, [s, _] = i.useState("submitting");
+  } = e, [o, _] = i.useState("submitting");
 
   function x() {
-    return "Android" === o().os.family || "iOS" === o().os.family ? null : (0, r.jsx)(d.zx, {
+    return "Android" === s().os.family || "iOS" === s().os.family ? null : (0, r.jsx)(d.zx, {
       onClick: () => l(p.Z5c.LOGIN, {
         source: "authorizeIPAdress"
       }),
@@ -43,7 +43,7 @@ function _(e) {
         _("failed")
       }
     })()
-  }), "failed" === s) ? (0, r.jsxs)(d.ZP, {
+  }), "failed" === o) ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)("img", {
       alt: "",
       src: n(262467),
@@ -55,7 +55,7 @@ function _(e) {
       className: m.marginBottom40,
       children: g.intl.string(g.t.i3ehMj)
     }), x()]
-  }) : "succeeded" === s ? (0, r.jsxs)(d.ZP, {
+  }) : "succeeded" === o ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)("img", {
       alt: "",
       src: n(640356),

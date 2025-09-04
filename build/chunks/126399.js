@@ -44,16 +44,16 @@ class f extends Chunk317770.Z {
       let {
         body: t
       } = e;
-      (0, o.Vb)(t.user), l.Z.loginToken(t.token, false), h(true, a)
+      (0, s.Vb)(t.user), l.Z.loginToken(t.token, false), h(true, a)
     }, e => {
-      if (null != i && h(false, a), l.Z.setFingerprint(i), (0, o.lx)(), a === s.F.ROLE_SUBSCRIPTION) {
+      if (null != i && h(false, a), l.Z.setFingerprint(i), (0, s.lx)(), a === o.F.ROLE_SUBSCRIPTION) {
         var t;
         c.default.track(d.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
           reason: null != (t = e.message) ? t : e.text,
           handoff_source: a
         })
       }
-    }) : null != i ? (l.Z.setFingerprint(i), h(false, a), (0, o.lx)()) : (l.Z.setFingerprint(i), (0, o.by)())
+    }) : null != i ? (l.Z.setFingerprint(i), h(false, a), (0, s.lx)()) : (l.Z.setFingerprint(i), (0, s.by)())
   }
   constructor(...e) {
     super(...e),
@@ -74,7 +74,7 @@ class f extends Chunk317770.Z {
           handoffToken: t,
           fingerprint: n,
           handoffSource: true
-        }) : (l.Z.setFingerprint(null), (0, o.by)())
+        }) : (l.Z.setFingerprint(null), (0, s.by)())
       })
   }
 }

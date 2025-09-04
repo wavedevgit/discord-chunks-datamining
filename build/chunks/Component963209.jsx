@@ -1,4 +1,4 @@
-/** Chunk was on 63359 **/
+/** Chunk was on 91848 **/
 /** chunk id: 963209, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk652410 = require("./652410.js");
@@ -15,22 +15,22 @@ function c(e) {
   let {
     onComplete: t
   } = e;
-  return (0, r.jsxs)(i.P3F, {
-    className: l.container,
+  return (0, a.jsxs)(r.P3F, {
+    className: i.container,
     onClick: t,
-    children: [(0, r.jsx)(i.X6q, {
+    children: [(0, a.jsx)(r.X6q, {
       variant: "heading-xl/bold",
       color: "always-white",
-      className: l.title,
-      children: s.intl.string(s.t["Deps4+"])
-    }), (0, r.jsx)(i.X6q, {
+      className: i.title,
+      children: l.intl.string(l.t["Deps4+"])
+    }), (0, a.jsx)(r.X6q, {
       variant: "heading-lg/bold",
       color: "always-white",
-      className: a()(l.title, l.subtitle),
-      children: s.intl.string(s.t.xv5g7O)
-    }), (0, r.jsx)(i.zxk, {
+      className: s()(i.title, i.subtitle),
+      children: l.intl.string(l.t.xv5g7O)
+    }), (0, a.jsx)(r.zxk, {
       variant: "overlay-primary",
-      text: s.intl.string(s.t["6X9YKC"]),
+      text: l.intl.string(l.t["6X9YKC"]),
       onClick: t
     })]
   })

@@ -2,7 +2,7 @@
 /** chunk id: 590965, original params: e,t,n (module,exports,require) **/
 let r;
 require.d(exports, {
-  Z: () => S
+  Z: () => y
 }), require("./388685.js"), require("./539854.js");
 var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -19,7 +19,7 @@ var i, Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js");
 
-function v(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,33 +28,33 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function E(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      E(e, t, n[t])
     })
   }
   return e
 }
-let b = Chunk981631.IlC.APP,
-  j = false,
+let j = Chunk981631.IlC.APP,
+  b = false,
   I = false,
   N = [];
 
 function O() {
-  j = true
+  b = true
 }
-class y extends(i = Chunk442837.ZP.Store) {
+class S extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk430824.Z, Chunk701190.Z, Chunk594174.default)
   }
   isOpen() {
     let e = __OVERLAY__ ? Chunk981631.IlC.OVERLAY : Chunk981631.IlC.APP;
-    return !!(j && N.length > 0 && b === module)
+    return !!(b && N.length > 0 && j === module)
   }
   getProps() {
     return {
@@ -64,12 +64,12 @@ class y extends(i = Chunk442837.ZP.Store) {
     }
   }
 }
-v(y, "displayName", "InviteModalStore");
-let S = new y(Chunk570140.Z, {
+E(S, "displayName", "InviteModalStore");
+let y = new S(Chunk570140.Z, {
   OVERLAY_INITIALIZE: O,
   CONNECTION_OPEN: O,
   CONNECTION_CLOSED: function() {
-    j = false
+    b = false
   },
   INVITE_MODAL_OPEN: function(e) {
     let t = e.invite;
@@ -84,9 +84,9 @@ let S = new y(Chunk570140.Z, {
         if (null != u.Z.getChannel(e.id)) return (0, a.XU)(_.ME, e.id), m.ZP.focus(), false
       } else {
         if (null == n) returnfalse;
-        if (null != d.Z.getGuild(n.id) && !(0, s.TY)(t)) {
+        if (null != d.Z.getGuild(n.id) && !(0, o.TY)(t)) {
           let e = function(e) {
-            if ((0, s.W6)(e)) return x.oC.ROLE_SUBSCRIPTIONS;
+            if ((0, o.W6)(e)) return x.oC.ROLE_SUBSCRIPTIONS;
             let {
               channel: t
             } = e;
@@ -104,7 +104,7 @@ let S = new y(Chunk570140.Z, {
         let [n] = e;
         return n.code === t.code
       })) returnfalse;
-    b = e.context, I = false;
+    j = e.context, I = false;
     let n = function(e) {
       let {
         approximate_member_count: t,
@@ -112,8 +112,8 @@ let S = new y(Chunk570140.Z, {
         code: r,
         state: i,
         target_type: l,
-        target_user: o,
-        target_application: s,
+        target_user: s,
+        target_application: o,
         type: a,
         channel: c,
         guild: u,
@@ -124,12 +124,12 @@ let S = new y(Chunk570140.Z, {
         approximate_member_count: t,
         approximate_presence_count: n,
         target_type: l,
-        target_user: o,
-        target_application: s,
+        target_user: s,
+        target_application: o,
         type: a,
         is_nickname_changeable: d
       };
-      return null != c && (h.channel = E({}, c)), null != u && (h.guild = (0, g.Qs)(u)), null != e.inviter && (h.inviter = E({}, e.inviter)), h
+      return null != c && (h.channel = v({}, c)), null != u && (h.guild = (0, g.Qs)(u)), null != e.inviter && (h.inviter = v({}, e.inviter)), h
     }(t);
     N.push([n, e.resolve])
   },

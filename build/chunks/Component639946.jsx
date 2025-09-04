@@ -15,14 +15,14 @@ function a(e) {
     channel: t
   } = e, n = (0, l.Th)(t.type);
   return (0, r.jsxs)("div", {
-    className: s.channelInfoContainer,
+    className: o.channelInfoContainer,
     children: [null != n ? (0, r.jsx)(n, {
       color: "currentColor",
       size: "custom",
       width: 20,
       height: 20
     }) : null, (0, r.jsx)(i.Text, {
-      className: s.channelInfoText,
+      className: o.channelInfoText,
       color: "none",
       variant: "text-sm/semibold",
       children: t.name
@@ -36,13 +36,13 @@ function c(e) {
     guildScheduledEvent: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: s.container,
-    children: [(0, r.jsx)(o.HZ, {
-      className: s.statusContainer,
+    className: o.container,
+    children: [(0, r.jsx)(s.HZ, {
+      className: o.statusContainer,
       guildId: n.guild_id,
       guildEvent: n,
       eventPreview: n
-    }), (0, r.jsx)(o.Rf, {
+    }), (0, r.jsx)(s.Rf, {
       name: n.name,
       description: n.description,
       guildId: n.guild_id

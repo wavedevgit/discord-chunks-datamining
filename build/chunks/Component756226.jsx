@@ -17,7 +17,7 @@ var Chunk435935 = require("./435935.jsx"),
   Chunk292352 = require("./292352.js"),
   Chunk345909 = require("./345909.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk465533 = require("./465533.js");
+  Chunk441076 = require("./441076.js");
 let j = {
     [Chunk292352.MY.USER_INTERACTION]: (0, Chunk951288.jsx)(Chunk863552.Z, {
       width: 18,
@@ -32,7 +32,7 @@ let j = {
     [Chunk292352.MY.USER_ADD]: (0, Chunk951288.jsx)(Chunk481060.iFz, {
       size: "custom",
       color: "currentColor",
-      className: Chunk465533.personWavingIcon,
+      className: Chunk441076.personWavingIcon,
       width: 22,
       height: 22
     }),
@@ -45,7 +45,7 @@ let j = {
     [Chunk292352.MY.GUILD_INTERACTION]: (0, Chunk951288.jsx)(Chunk481060.VL1, {
       size: "custom",
       color: "currentColor",
-      className: Chunk465533.threadIcon,
+      className: Chunk441076.threadIcon,
       width: 22,
       height: 22
     }),

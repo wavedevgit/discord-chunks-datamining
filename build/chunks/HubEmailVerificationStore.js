@@ -5,13 +5,13 @@ require.d(exports, {
 });
 var r, i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
-let s = false,
+let o = false,
   a = null,
   c = null;
 class u extends(i = Chunk442837.ZP.Store) {
   getState() {
     return {
-      verifySuccess: s,
+      verifySuccess: o,
       verifyErrors: a,
       redirectGuildId: c
     }
@@ -27,12 +27,12 @@ let d = new u(Chunk570140.Z, {
     let {
       guildId: t
     } = e;
-    s = true, a = null, c = t
+    o = true, a = null, c = t
   },
   HUB_VERIFY_EMAIL_FAILURE: function(e) {
     let {
       errors: t
     } = e;
-    s = false, a = t
+    o = false, a = t
   }
 })

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk536285 = require("./536285.js"),
   Chunk857458 = require("./857458.jsx"),
   Chunk388905 = require("./388905.jsx"),
@@ -20,11 +20,11 @@ let f = function(e) {
     attemptDeepLink: l
   } = e, [f, p] = i.useState(0);
   i.useEffect(() => {
-    s.default.once("connected", () => {
+    o.default.once("connected", () => {
       p(1)
-    }), s.default.once("disconnected", () => {
+    }), o.default.once("disconnected", () => {
       (0, u.uL)((0, a.M)())
-    }), s.default.connect()
+    }), o.default.connect()
   }, []), i.useEffect(() => {
     if (0 !== f) return;
     let e = setTimeout(() => (0, u.uL)((0, a.M)()), 3e3);
@@ -51,7 +51,7 @@ let f = function(e) {
           onClick: () => g(t, n),
           children: d.intl.string(d.t.UQvCf3)
         }), (0, r.jsx)(c.zx, {
-          className: o()(h.marginTop8, h.marginCenterHorz),
+          className: s()(h.marginTop8, h.marginCenterHorz),
           color: c.zx.Colors.LINK,
           look: c.zx.Looks.LINK,
           onClick: () => (0, u.uL)((0, a.M)()),

@@ -1,12 +1,12 @@
-/** Chunk was on 63359 **/
+/** Chunk was on 91848 **/
 /** chunk id: 436046, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => x
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  i = require.n(Chunk512722),
+  r = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
   Chunk755721 = require("./755721.js"),
@@ -20,79 +20,79 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk181576 = require("./181576.js");
 
-function N(e) {
+function x(e) {
   let {
     onComplete: t,
     onClose: n
-  } = e, [a, N] = o.useState(null), [y, j] = o.useState(null), [E, v] = o.useState(false), C = (0, s.e7)([_.default], () => _.default.getCurrentUser()), T = o.useRef(null);
+  } = e, [s, x] = o.useState(null), [N, T] = o.useState(null), [A, C] = o.useState(false), j = (0, l.e7)([p.default], () => p.default.getCurrentUser()), y = o.useRef(null);
   async function O(e) {
-    e.preventDefault(), i()(null != a, "Cannot submit null birthday."), v(true);
+    e.preventDefault(), r()(null != s, "Cannot submit null birthday."), C(true);
     try {
-      await d.Av(a, b.L0.NEW_USER_FLOW), t()
+      await d.Av(s, h.L0.NEW_USER_FLOW), t()
     } catch (e) {
-      if (null != e.body && null != e.body.date_of_birth) d.wE(b.L0.NEW_USER_FLOW), d.hp(b.L0.NEW_USER_FLOW), n();
+      if (null != e.body && null != e.body.date_of_birth) d.wE(h.L0.NEW_USER_FLOW), d.hp(h.L0.NEW_USER_FLOW), n();
       else {
-        var r;
-        (null == e || null == (r = e.body) ? true : r.username) != null ? j(h.intl.string(h.t["TGg/2t"])) : j(null == e ? true : e.body.message)
+        var a;
+        (null == e || null == (a = e.body) ? true : a.username) != null ? T(b.intl.string(b.t["TGg/2t"])) : T(null == e ? true : e.body.message)
       }
     }
-    v(false)
+    C(false)
   }
   o.useEffect(() => {
-    null != C && null != C.nsfwAllowed && t()
-  }, [C, t]);
-  let I = o.useCallback(e => {
-      N(e)
-    }, [N]),
-    g = o.useCallback(() => {
+    null != j && null != j.nsfwAllowed && t()
+  }, [j, t]);
+  let v = o.useCallback(e => {
+      x(e)
+    }, [x]),
+    I = o.useCallback(() => {
       var e;
-      null == (e = T.current) || e.focus()
-    }, [T]);
-  return null == C ? null : (0, r.jsxs)("form", {
-    className: x.content,
+      null == (e = y.current) || e.focus()
+    }, [y]);
+  return null == j ? null : (0, a.jsxs)("form", {
+    className: E.content,
     onSubmit: O,
-    children: [(0, r.jsx)(u.gw7, {
+    children: [(0, a.jsx)(u.gw7, {
       size: "custom",
       width: 56,
       height: 40,
-      className: x.logo,
-      color: l.Z.unsafe_rawColors.BRAND_500.css
-    }), (0, r.jsx)(u.X6q, {
-      className: x.title,
+      className: E.logo,
+      color: i.Z.unsafe_rawColors.BRAND_500.css
+    }), (0, a.jsx)(u.X6q, {
+      className: E.title,
       variant: "heading-xl/semibold",
-      children: h.intl.string(h.t.n7i7sr)
-    }), (0, r.jsx)(u.Text, {
+      children: b.intl.string(b.t.n7i7sr)
+    }), (0, a.jsx)(u.Text, {
       color: "text-default",
-      className: x.description,
+      className: E.description,
       variant: "text-md/normal",
-      children: h.intl.format(h.t.fa8kW1, {
-        helpURL: p.Z.getArticleURL(m.BhN.AGE_GATE)
+      children: b.intl.format(b.t.fa8kW1, {
+        helpURL: f.Z.getArticleURL(m.BhN.AGE_GATE)
       })
-    }), (0, r.jsx)(u.ze6, {
+    }), (0, a.jsx)(u.ze6, {
       theme: m.BRd.LIGHT,
-      children: (0, r.jsx)(f.Z, {
+      children: (0, a.jsx)(_.Z, {
         required: true,
         autoFocus: true,
-        wrapperClassName: x.formItem,
-        label: h.intl.string(h.t.rhBeKS),
+        wrapperClassName: E.formItem,
+        label: b.intl.string(b.t.rhBeKS),
         name: "birthday",
-        onChange: I,
-        onPopulated: g,
-        error: y,
-        value: a
+        onChange: v,
+        onPopulated: I,
+        error: N,
+        value: s
       })
-    }), (0, r.jsx)("div", {
-      className: x.footer,
-      children: (0, r.jsx)("div", {
-        className: x.buttonWrapper,
-        children: (0, r.jsx)(c.zx, {
-          buttonRef: T,
+    }), (0, a.jsx)("div", {
+      className: E.footer,
+      children: (0, a.jsx)("div", {
+        className: E.buttonWrapper,
+        children: (0, a.jsx)(c.zx, {
+          buttonRef: y,
           type: "submit",
           size: c.zx.Sizes.LARGE,
-          submitting: E,
-          disabled: null == a,
+          submitting: A,
+          disabled: null == s,
           fullWidth: true,
-          children: h.intl.string(h.t.PDTjLC)
+          children: b.intl.string(b.t.PDTjLC)
         })
       })
     })]

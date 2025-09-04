@@ -23,32 +23,32 @@ function m(e) {
   } = e, [n, m] = i.useState(false), {
     verifySuccess: _,
     verifyErrors: x,
-    redirectGuildId: v
+    redirectGuildId: E
   } = (0, l.e7)([h.Z], () => h.Z.getState());
   i.useEffect(() => {
     let e = (0, a.Z)(t);
-    s.Z.verify(e), (0, d.e)("verify_hub_email")
+    o.Z.verify(e), (0, d.e)("verify_hub_email")
   }, [t]);
-  let E = () => {
-    (0, f.Z)(v), m(true)
+  let v = () => {
+    (0, f.Z)(E), m(true)
   };
   return n ? (0, r.jsx)(c.Z, {
     title: g.intl.string(g.t.csrAMD),
     subtitle: g.intl.string(g.t["m1+IBg"]),
     buttonText: g.intl.string(g.t.fIv16O),
-    onButtonClick: () => (0, u.uL)(p.Z5c.CHANNEL(v))
+    onButtonClick: () => (0, u.uL)(p.Z5c.CHANNEL(E))
   }) : _ ? (0, r.jsx)(c.Z, {
     title: g.intl.string(g.t.dAfGb2),
     buttonText: g.intl.string(g.t.uJWIj4),
-    onButtonClick: E,
-    image: (0, r.jsx)(o.Om, {
+    onButtonClick: v,
+    image: (0, r.jsx)(s.Om, {
       alt: g.intl.string(g.t.dAfGb2)
     })
   }) : null != x ? (0, r.jsx)(c.Z, {
     title: g.intl.string(g.t.PCgG39),
     subtitle: g.intl.string(g.t.tQpeAw),
     buttonText: g.intl.string(g.t.uJWIj4),
-    onButtonClick: E
+    onButtonClick: v
   }) : (0, r.jsx)(c.Z, {
     title: g.intl.string(g.t["0c8+5u"]),
     subtitle: g.intl.string(g.t.ULTCBA),

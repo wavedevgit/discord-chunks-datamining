@@ -2,105 +2,107 @@
 /** chunk id: 931989, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  v: () => f
+  v: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk572721 = require("./572721.js"),
   Chunk995803 = require("./995803.js"),
+  Chunk873546 = require("./873546.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk40851 = require("./40851.jsx"),
   Chunk607070 = require("./607070.js"),
   Chunk912811 = require("./912811.js");
 
-function f(e) {
+function _(e) {
   let {
     buffer: t,
     autoplay: n = true,
     className: a,
-    fit: s,
-    alignment: c,
-    style: u,
-    eventTargetRef: f,
-    artboard: h,
-    withReducedMotion: m = "halt",
-    ref: g,
-    artboardProperties: E,
-    dataBinding: b
-  } = e, y = i.useContext(l.Sfi), O = _(), [v, I] = i.useState(true), S = i.useRef(null), {
-    rive: T,
-    RiveComponent: A
+    fit: l,
+    alignment: u,
+    style: d,
+    eventTargetRef: _,
+    artboard: m,
+    withReducedMotion: g = "halt",
+    ref: E,
+    artboardProperties: b,
+    dataBinding: y
+  } = e, O = i.useContext(c.Sfi), v = p(), [I, S] = i.useState(true), T = i.useRef(null), {
+    rive: A,
+    RiveComponent: C
   } = (0, o.useRive)({
-    eventTarget: null == f ? true : f.current,
+    eventTarget: null == _ ? true : _.current,
     buffer: t,
     autoplay: n,
-    stateMachines: v,
-    artboard: h,
+    stateMachines: I,
+    artboard: m,
     useOffscreenRenderer: true,
     layout: new o.Layout({
-      fit: null != s ? d.L[s] : o.Fit.Cover,
-      alignment: null != c ? d.E[c] : o.Alignment.Center
-    })
+      fit: null != l ? f.L[l] : o.Fit.Cover,
+      alignment: null != u ? f.E[u] : o.Alignment.Center
+    }),
+    shouldDisableRiveListeners: s.Em || s.tq
   });
-  i.useImperativeHandle(g, () => ({
-    play: () => null == T ? true : T.play(),
-    pause: () => null == T ? true : T.pause(),
-    stop: () => null == T ? true : T.stop()
-  }), [T]), p({
-    rive: T,
-    artboard: h,
-    artboardProperties: E,
-    dataBinding: b
+  i.useImperativeHandle(E, () => ({
+    play: () => null == A ? true : A.play(),
+    pause: () => null == A ? true : A.pause(),
+    stop: () => null == A ? true : A.stop()
+  }), [A]), h({
+    rive: A,
+    artboard: m,
+    artboardProperties: b,
+    dataBinding: y
   }), i.useEffect(() => {
-    if (null != T && "short-loop" === m && y.reducedMotion.enabled) {
+    if (null != A && "short-loop" === g && O.reducedMotion.enabled) {
       let e = () => {
-          T.isPlaying && (S.current = setTimeout(() => {
-            T.pause()
+          A.isPlaying && (T.current = setTimeout(() => {
+            A.pause()
           }, 5e3))
         },
         t = () => {
-          clearTimeout(S.current)
+          clearTimeout(T.current)
         };
-      return T.on(o.EventType.Play, e), T.on(o.EventType.Pause, t), T.on(o.EventType.Stop, t), () => {
-        T.off(o.EventType.Play, e), T.off(o.EventType.Pause, t), T.off(o.EventType.Stop, t)
+      return A.on(o.EventType.Play, e), A.on(o.EventType.Pause, t), A.on(o.EventType.Stop, t), () => {
+        A.off(o.EventType.Play, e), A.off(o.EventType.Pause, t), A.off(o.EventType.Stop, t)
       }
     }
-  }, [T, m, y.reducedMotion.enabled]), i.useLayoutEffect(() => {
-    null != T && "layout" === s && (T.resizeDrawingSurfaceToCanvas(), setTimeout(() => {
-      T.resizeDrawingSurfaceToCanvas()
+  }, [A, g, O.reducedMotion.enabled]), i.useLayoutEffect(() => {
+    null != A && "layout" === l && (A.resizeDrawingSurfaceToCanvas(), setTimeout(() => {
+      A.resizeDrawingSurfaceToCanvas()
     }, 100))
-  }, [T, s]), i.useEffect(() => {
-    null != T && null == v && (I(T.stateMachineNames), T.reset({
-      stateMachines: T.stateMachineNames,
+  }, [A, l]), i.useEffect(() => {
+    null != A && null == I && (S(A.stateMachineNames), A.reset({
+      stateMachines: A.stateMachineNames,
       autoplay: n,
-      artboard: h,
+      artboard: m,
       autoBind: true
-    }), T.setupRiveListeners())
-  }, [T, n, v, h]);
-  let C = i.useRef(0);
+    }), A.setupRiveListeners())
+  }, [A, n, I, m]);
+  let N = i.useRef(0);
   i.useEffect(() => {
-    if (null == T) return;
-    T.play();
+    if (null == A) return;
+    A.play();
     let e = t => {
-      null != t.data && "number" == typeof t.data && (C.current = t.data, t.data > 0 && ("halt" === m && y.reducedMotion.enabled && T.isPlaying && T.pause(), T.off(o.EventType.Advance, e)))
+      null != t.data && "number" == typeof t.data && (N.current = t.data, t.data > 0 && ("halt" === g && O.reducedMotion.enabled && A.isPlaying && A.pause(), A.off(o.EventType.Advance, e)))
     };
-    return T.on(o.EventType.Advance, e), () => {
-      T.off(o.EventType.Advance, e)
+    return A.on(o.EventType.Advance, e), () => {
+      A.off(o.EventType.Advance, e)
     }
-  }, [T, y.reducedMotion.enabled, m]);
-  let N = i.useRef(false);
+  }, [A, O.reducedMotion.enabled, g]);
+  let R = i.useRef(false);
   return i.useEffect(() => {
-    if (null != T) return !O && N.current && T.isPlaying && C.current > 0 ? T.pause() : O && !T.isPlaying && N.current && T.play(), () => {
-      null != T && O && (N.current = null != T.frameRequestId)
+    if (null != A) return !v && R.current && A.isPlaying && N.current > 0 ? A.pause() : v && !A.isPlaying && R.current && A.play(), () => {
+      null != A && v && (R.current = null != A.frameRequestId)
     }
-  }, [T, O]), (0, r.jsx)(A, {
+  }, [A, v]), (0, r.jsx)(C, {
     className: a,
-    style: u
+    style: d
   })
 }
 
-function _() {
+function p() {
   let {
     renderWindow: e
   } = Chunk647438.useContext(Chunk40851.ZP), [t, n] = Chunk647438.useState(module.document.hasFocus());
@@ -113,28 +115,28 @@ function _() {
   }, [module]), exports
 }
 
-function p(e) {
+function h(e) {
   let {
     rive: t,
     artboard: n,
     artboardProperties: r,
     dataBinding: a
-  } = e, c = (0, o.useViewModel)(t);
-  (0, o.useViewModelInstance)(c);
+  } = e, s = (0, o.useViewModel)(t);
+  (0, o.useViewModelInstance)(s);
   let {
-    theme: d,
+    theme: u,
     saturation: f
-  } = (0, l.TCT)(), _ = (0, s.e7)([u.Z], () => u.Z.isHighContrastModeEnabled), p = i.useRef(null);
+  } = (0, c.TCT)(), _ = (0, l.e7)([d.Z], () => d.Z.isHighContrastModeEnabled), p = i.useRef(null);
   i.useEffect(() => {
     if (null == t || null == t.viewModelInstance || null == a) return;
     let e = r[n];
     Object.entries(a).forEach(n => {
-      var r, i, a, o, s, l, c, u;
+      var r, i, a, o, s, l, c, d;
       let [h, m] = n, g = e[h];
       switch (g) {
         case "color":
           let [E, b, y, O] = m.resolve({
-            theme: d,
+            theme: u,
             saturation: f,
             highContrastModeEnabled: _
           }).rgba();
@@ -152,13 +154,13 @@ function p(e) {
           m && (null == (s = p.current) ? true : s[h]) !== m && (null == (c = t.viewModelInstance) || null == (l = c.trigger(h)) || l.trigger());
           break;
         case "string":
-          let S = null == (u = t.viewModelInstance) ? true : u.string(h);
+          let S = null == (d = t.viewModelInstance) ? true : d.string(h);
           null != S && (S.value = m);
           break;
         default:
           console.warn("Unknown property type: ".concat(g))
       }
     }), p.current = a
-  }, [a, t, n, r, d, null == t ? true : t.viewModelInstance, f, _])
+  }, [a, t, n, r, u, null == t ? true : t.viewModelInstance, f, _])
 }
 Chunk995803.RuntimeLoader.setWasmUrl(Chunk572721)

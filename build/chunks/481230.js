@@ -77,21 +77,21 @@ function _(e) {
     globalName: m,
     consent: _,
     password: x,
-    guildTemplateCode: v,
-    birthday: E,
-    invite: b = null,
-    giftCodeSKUId: j = null,
+    guildTemplateCode: E,
+    birthday: v,
+    invite: j = null,
+    giftCodeSKUId: b = null,
     promoEmailConsent: I = null,
     usedUsernameSuggestion: N = null
   } = e;
-  if (o.Z.dispatch({
+  if (s.Z.dispatch({
       type: "REGISTER"
-    }), null != E) {
-    (0, f.Z)(E, p.jXE.REGISTER), d.default.track(p.rMx.AGE_GATE_ACTION, {
+    }), null != v) {
+    (0, f.Z)(v, p.jXE.REGISTER), d.default.track(p.rMx.AGE_GATE_ACTION, {
       source: g.L0.REGISTER,
       action: g.Al.AGE_GATE_SUBMITTED
     });
-    let e = i()().diff(E, "years");
+    let e = i()().diff(v, "years");
     e < 13 || d.default.track(p.rMx.USER_AGE_SUBMITTED, {
       age_bucket: e >= 13 && e <= 17 ? "13-17" : e >= 18 && e <= 22 ? "18-22" : "23+"
     })
@@ -104,18 +104,18 @@ function _(e) {
       username: r,
       global_name: m,
       password: x,
-      invite: b,
+      invite: j,
       consent: _,
       phone_token: n,
-      date_of_birth: null == E ? true : E.format("YYYY-MM-DD"),
-      gift_code_sku_id: j,
-      guild_template_code: v,
+      date_of_birth: null == v ? true : v.format("YYYY-MM-DD"),
+      gift_code_sku_id: b,
+      guild_template_code: E,
       promotional_email_opt_in: null == I ? true : I.checked
     },
     trackedActionData: {
       event: l.NetworkActionNames.USER_REGISTER,
       properties: {
-        invite_code: b,
+        invite_code: j,
         used_username_suggestion: N,
         promotional_email_opt_in: null == I ? true : I.checked,
         promotional_email_pre_checked: null == I ? true : I.preChecked,
@@ -124,7 +124,7 @@ function _(e) {
     },
     rejectWithError: false
   }).then(e => {
-    o.Z.dispatch({
+    s.Z.dispatch({
       type: "REGISTER_SUCCESS",
       token: e.body.token
     }), d.default.track(p.rMx.AGE_GATE_ACTION, {
@@ -133,7 +133,7 @@ function _(e) {
     })
   }, e => {
     if (e instanceof c.CaptchaCancelError) throw e;
-    let t = new s.Z(e);
+    let t = new o.Z(e);
     throw null != t.getFieldErrors("date_of_birth") && a.wE(g.L0.REGISTER), d.default.track(p.rMx.REGISTER_SUBMIT_ERRORED, {
       is_unique_username_registration: true,
       email_error_reason: t.getFirstFieldErrorMessage("email"),

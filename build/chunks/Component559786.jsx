@@ -24,11 +24,11 @@ function d(e) {
     style: {
       margin: "8px"
     },
-    children: (0, r.jsxs)(o.MyZ, {
+    children: (0, r.jsxs)(s.MyZ, {
       activeSlide: h,
       width: d,
       onSlideReady: g,
-      children: [(0, r.jsx)(o.Mi4, {
+      children: [(0, r.jsx)(s.Mi4, {
         id: u.n.START,
         impressionProperties: x,
         impressionName: l.ImpressionNames.ACCOUNT_REVERT_EXPLAINER,
@@ -36,18 +36,18 @@ function d(e) {
           setSlide: f,
           transitionTo: t
         })
-      }), (0, r.jsx)(o.Mi4, {
+      }), (0, r.jsx)(s.Mi4, {
         id: u.n.PASSWORD,
         impressionProperties: x,
         impressionName: l.ImpressionNames.ACCOUNT_REVERT_CHANGE_PASSWORD,
-        children: (0, r.jsx)(s.Z, {
+        children: (0, r.jsx)(o.Z, {
           setOriginalEmail: _,
           setSlide: f,
           transitionTo: t,
           ready: p === u.n.PASSWORD,
           token: n
         })
-      }), (0, r.jsx)(o.Mi4, {
+      }), (0, r.jsx)(s.Mi4, {
         id: u.n.SUCCESS,
         impressionProperties: x,
         impressionName: l.ImpressionNames.ACCOUNT_REVERT_SUCCESS,

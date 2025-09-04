@@ -33,9 +33,9 @@ function g(e) {
     }), (0, r.jsx)(a.DK, {
       className: p.marginBottom40,
       children: d.intl.string(d.t["poAv6+"])
-    }), (0, r.jsxs)(s.Zbd, {
+    }), (0, r.jsxs)(o.Zbd, {
       className: h.card,
-      type: s.Zbd.Types.CUSTOM,
+      type: o.Zbd.Types.CUSTOM,
       children: [(0, r.jsx)("img", {
         alt: "",
         className: h.cardAccentLeft,
@@ -49,12 +49,12 @@ function g(e) {
         direction: c.Z.Direction.VERTICAL,
         align: c.Z.Align.STRETCH,
         grow: 0,
-        children: [(0, r.jsx)(s.Text, {
+        children: [(0, r.jsx)(o.Text, {
           tag: "strong",
           className: h.buttonTitle,
           variant: "text-md/normal",
           style: {
-            color: o.Z.unsafe_rawColors.PRIMARY_300.css
+            color: s.Z.unsafe_rawColors.PRIMARY_300.css
           },
           children: t
         }), (0, r.jsx)(a.zx, {

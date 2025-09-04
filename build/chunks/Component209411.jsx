@@ -24,7 +24,7 @@ function x(e) {
   let x = i.useCallback(t => {
       if (function(e) {
           var t;
-          let n = (0, o.LX)(e, {
+          let n = (0, s.LX)(e, {
             path: m.Z5c.CHANNEL(h.Hw.guildId(), h.Hw.channelId())
           });
           return (null == n || null == (t = n.params) ? true : t.channelId) === _.oC.ROLE_SUBSCRIPTIONS
@@ -35,17 +35,17 @@ function x(e) {
       }
     }, [e.transitionTo]),
     {
-      isAuthenticated: v,
-      loginStatus: E
-    } = (0, s.cj)([p.default], () => ({
+      isAuthenticated: E,
+      loginStatus: v
+    } = (0, o.cj)([p.default], () => ({
       isAuthenticated: p.default.isAuthenticated(),
       loginStatus: p.default.getLoginStatus()
     })),
     {
-      location: b,
-      redirectTo: j
+      location: j,
+      redirectTo: b
     } = e,
-    [I, N] = i.useState(v);
+    [I, N] = i.useState(E);
 
   function O(e) {
     let {
@@ -60,13 +60,13 @@ function x(e) {
     }), N(false)
   }
   return ((0, u.ZP)(() => {
-    if (null != b) {
+    if (null != j) {
       let {
         handoff_key: e,
         handoff_token: t
-      } = (0, l.parse)(b.search);
+      } = (0, l.parse)(j.search);
       if (null != e && null != t) {
-        let n = null != j ? (0, d.L)(j) : true;
+        let n = null != b ? (0, d.L)(b) : true;
         I ? a.Z.logout("handoff", null).finally(() => {
           O({
             handoffKey: e,
@@ -80,7 +80,7 @@ function x(e) {
         })
       }
     }
-  }), I || E === m.u34.LOGGING_IN) ? (0, r.jsx)(g.q, {}) : (0, r.jsx)(g.Z, (t = function(e) {
+  }), I || v === m.u34.LOGGING_IN) ? (0, r.jsx)(g.q, {}) : (0, r.jsx)(g.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

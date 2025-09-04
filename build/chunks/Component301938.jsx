@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk990547 = require("./990547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk479531 = require("./479531.js"),
@@ -24,8 +24,8 @@ function x(e) {
     setOriginalEmail: t,
     setSlide: l,
     ready: x,
-    token: v
-  } = e, [E, b] = i.useState(false), [j, I] = i.useState(null), [N, O] = i.useState(null), [y, S] = i.useState(""), C = i.useRef(null);
+    token: E
+  } = e, [v, j] = i.useState(false), [b, I] = i.useState(null), [N, O] = i.useState(null), [S, y] = i.useState(""), C = i.useRef(null);
   return i.useEffect(() => {
     if (x) {
       var e;
@@ -34,7 +34,7 @@ function x(e) {
   }, [x]), (0, r.jsxs)("div", {
     children: [(0, r.jsx)(u.Ee, {
       src: null == N ? n(26230) : n(935227),
-      className: o()(_.marginBottom20, _.marginTop8)
+      className: s()(_.marginBottom20, _.marginTop8)
     }), (0, r.jsx)(u.Dx, {
       children: g.intl.string(g.t["IfBQ5+"])
     }), null != N && "" !== N ? (0, r.jsx)(a.Text, {
@@ -42,35 +42,35 @@ function x(e) {
       color: "text-danger",
       children: N
     }) : null, (0, r.jsxs)(u.gO, {
-      className: o()(_.marginBottom20, _.marginTop20),
+      className: s()(_.marginBottom20, _.marginTop20),
       children: [(0, r.jsx)(u.II, {
         name: "password",
         type: "password",
         label: g.intl.string(g.t["8dM4FB"]),
         setRef: C,
         className: _.marginBottom20,
-        value: y,
-        onChange: S,
-        error: j,
+        value: S,
+        onChange: y,
+        error: b,
         autoComplete: "new-password",
         maxLength: 72,
         placeholder: g.intl.string(g.t["yY/PXV"])
       }), (0, r.jsx)(u.zx, {
         className: _.marginTop8,
         onClick: () => {
-          if (!E) {
-            if (0 === y.length) {
+          if (!v) {
+            if (0 === S.length) {
               I(g.intl.string(g.t.R98xDw)), d.S.dispatch(p.CkL.WAVE_EMPHASIZE);
               return
             }
-            return null != N && O(null), null != j && I(null), t(""), b(true), h.Z.post({
+            return null != N && O(null), null != b && I(null), t(""), j(true), h.Z.post({
               url: p.ANM.ACCOUNT_REVERT,
               body: {
-                token: v,
-                password: y
+                token: E,
+                password: S
               },
               trackedActionData: {
-                event: s.NetworkActionNames.ACCOUNT_REVERT
+                event: o.NetworkActionNames.ACCOUNT_REVERT
               },
               rejectWithError: false
             }).then(e => {
@@ -79,7 +79,7 @@ function x(e) {
                   email: n
                 }
               } = e;
-              S(""), t(n), l(f.n.SUCCESS)
+              y(""), t(n), l(f.n.SUCCESS)
             }).catch(e => {
               if (e instanceof Error) O(g.intl.formatToPlainString(g.t.aTVNen, {
                 statusPageURL: p.yXt.STATUS
@@ -103,12 +103,12 @@ function x(e) {
               }
               d.S.dispatch(p.CkL.WAVE_EMPHASIZE)
             }).finally(() => {
-              b(false)
+              j(false)
             })
           }
         },
-        submitting: E,
-        disabled: E,
+        submitting: v,
+        disabled: v,
         children: g.intl.string(g.t.ezv91d)
       })]
     }), (0, r.jsx)("div", {
@@ -116,7 +116,7 @@ function x(e) {
       children: (0, r.jsx)(u.zx, {
         color: u.zx.Colors.PRIMARY,
         onClick: () => {
-          S(""), l(f.n.START)
+          y(""), l(f.n.START)
         },
         children: g.intl.string(g.t.rzxnQ0)
       })

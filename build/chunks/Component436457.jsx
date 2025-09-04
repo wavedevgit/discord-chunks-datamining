@@ -1,13 +1,13 @@
-/** Chunk was on 63359 **/
+/** Chunk was on 91848 **/
 /** chunk id: 436457, original params: e,t,n (module,exports,require) **/
-let r, o;
+let a, o;
 require.d(exports, {
-  Z: () => y
+  Z: () => N
 }), require("./388685.js"), require("./781311.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk447543 = require("./447543.js"),
@@ -18,33 +18,33 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk888113 = require("./888113.js");
-let N = (r = window.GLOBAL_ENV.INVITE_HOST, o = "", null == r && (r = location.host, o = Chunk981631.Z5c.INVITE("")), "".concat(location.protocol, "//").concat(r).concat(o, "/"));
+let x = (a = window.GLOBAL_ENV.INVITE_HOST, o = "", null == a && (a = location.host, o = Chunk981631.Z5c.INVITE("")), "".concat(location.protocol, "//").concat(a).concat(o, "/"));
 
-function y(e) {
+function N(e) {
   let {
     onBack: t,
     onComplete: n,
-    onConnect: r,
+    onConnect: a,
     isSlideReady: o
-  } = e, [s, y] = i.useState(""), [j, E] = i.useState(false), [v, C] = i.useState(null), T = i.useRef(null);
-  i.useEffect(() => {
+  } = e, [l, N] = r.useState(""), [T, A] = r.useState(false), [C, j] = r.useState(null), y = r.useRef(null);
+  r.useEffect(() => {
     var e;
-    o && (null == (e = T.current) || e.focus())
+    o && (null == (e = y.current) || e.focus())
   }, [o]);
-  let O = i.useCallback(e => {
+  let O = r.useCallback(e => {
     e.preventDefault();
-    let t = s.trim();
-    if ("" === t) return void C(h.intl.string(h.t.IRq5am));
-    C(null), E(true);
-    let r = t.split("/"),
-      o = r[r.length - 1];
+    let t = l.trim();
+    if ("" === t) return void j(b.intl.string(b.t.IRq5am));
+    j(null), A(true);
+    let a = t.split("/"),
+      o = a[a.length - 1];
     d.ZP.resolveInvite(o, "Join Guild", {
       inputValue: t
     }).then(e => {
       let {
         invite: t
       } = e;
-      if (E(false), null == t) return void C(h.intl.string(h.t["GEYI+f"]));
+      if (A(false), null == t) return void j(b.intl.string(b.t["GEYI+f"]));
       if (null != t.channel) {
         let e = d.ZP.getInviteContext("Join Guild", t);
         d.ZP.acceptInvite({
@@ -54,78 +54,78 @@ function y(e) {
             n(), d.ZP.transitionToInvite(e)
           }
         }).catch(e => {
-          e instanceof _.yZ || e instanceof _.Hx ? C((0, m.O)(e.code)) : C(h.intl.string(h.t.dDZRd3))
+          e instanceof p.yZ || e instanceof p.Hx ? j((0, m.O)(e.code)) : j(b.intl.string(b.t.dDZRd3))
         })
       }
     }, e => {
-      E(false);
-      let t = new _.yZ(e);
-      C((0, m.O)(t.code))
+      A(false);
+      let t = new p.yZ(e);
+      j((0, m.O)(t.code))
     })
-  }, [s, E, C, n]);
+  }, [l, A, j, n]);
   return {
-    content: (0, a.jsxs)(a.Fragment, {
-      children: [(0, a.jsxs)(u.xBx, {
-        className: x.header,
-        direction: p.Z.Direction.VERTICAL,
+    content: (0, s.jsxs)(s.Fragment, {
+      children: [(0, s.jsxs)(u.xBx, {
+        className: E.header,
+        direction: f.Z.Direction.VERTICAL,
         separator: false,
-        children: [(0, a.jsx)(u.X6q, {
+        children: [(0, s.jsx)(u.X6q, {
           variant: "heading-xl/bold",
           color: "header-primary",
-          className: x.title,
-          children: h.intl.string(h.t.riOUtL)
-        }), (0, a.jsx)(u.Text, {
+          className: E.title,
+          children: b.intl.string(b.t.riOUtL)
+        }), (0, s.jsx)(u.Text, {
           variant: "text-md/normal",
           color: "header-secondary",
-          children: h.intl.string(h.t["7jub2t"])
+          children: b.intl.string(b.t["7jub2t"])
         })]
-      }), (0, a.jsxs)(u.hzk, {
-        children: [(0, a.jsx)("form", {
+      }), (0, s.jsxs)(u.hzk, {
+        children: [(0, s.jsx)("form", {
           onSubmit: O,
-          className: x.inputForm,
-          children: (0, a.jsx)(u.xJW, {
-            title: h.intl.string(h.t.qreV29),
-            error: v,
-            titleClassName: l()(x.formTitle, {
-              [x.error]: null != v
+          className: E.inputForm,
+          children: (0, s.jsx)(u.xJW, {
+            title: b.intl.string(b.t.qreV29),
+            error: C,
+            titleClassName: i()(E.formTitle, {
+              [E.error]: null != C
             }),
-            children: (0, a.jsx)(u.oil, {
-              value: s,
-              onChange: y,
-              inputRef: T
+            children: (0, s.jsx)(u.oil, {
+              value: l,
+              onChange: N,
+              inputRef: y
             })
           })
-        }), (0, a.jsx)(u.Text, {
+        }), (0, s.jsx)(u.Text, {
           color: "header-secondary",
           variant: "text-xs/normal",
-          children: h.intl.format(h.t.lHTZl5, {
-            examples: "".concat(N).concat("wumpus-friends", ", ").concat("hTKzmak")
+          children: b.intl.format(b.t.lHTZl5, {
+            examples: "".concat(x).concat("wumpus-friends", ", ").concat("hTKzmak")
           })
-        }), (0, a.jsx)(u.Text, {
+        }), (0, s.jsx)(u.Text, {
           variant: "text-xs/normal",
           color: "header-secondary",
-          className: x.connectCTA,
-          children: h.intl.format(h.t["8F/who"], {
+          className: E.connectCTA,
+          children: b.intl.format(b.t["8F/who"], {
             onClick: () => {
-              r(), f.Z.open(b.oAB.CONNECTIONS)
+              a(), _.Z.open(h.oAB.CONNECTIONS)
             }
           })
         })]
       })]
     }),
-    footer: (0, a.jsxs)(a.Fragment, {
-      children: [(0, a.jsx)(u.zxk, {
+    footer: (0, s.jsxs)(s.Fragment, {
+      children: [(0, s.jsx)(u.zxk, {
         variant: "primary",
-        text: h.intl.string(h.t.VJlc0d),
+        text: b.intl.string(b.t.VJlc0d),
         onClick: O,
-        disabled: 0 === s.length,
-        loading: j
-      }), (0, a.jsx)(c.zx, {
-        className: x.__invalid_skipButton,
+        disabled: 0 === l.length,
+        loading: T
+      }), (0, s.jsx)(c.zx, {
+        className: E.__invalid_skipButton,
         look: c.zx.Looks.BLANK,
         size: c.zx.Sizes.MIN,
         onClick: t,
-        children: h.intl.string(h.t["13/7kZ"])
+        children: b.intl.string(b.t["13/7kZ"])
       })]
     })
   }

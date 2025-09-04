@@ -2,7 +2,8 @@
 /** chunk id: 719961, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  v: () => s
+  T: () => s,
+  v: () => l
 });
 var Chunk818083 = require("./818083.js"),
   Chunk358085 = require("./358085.js");
@@ -48,6 +49,10 @@ function o() {
 }
 
 function s(e) {
+  return a.useExperiment(e, o())
+}
+
+function l(e) {
   let {
     backForwardButtons: t
   } = a.getCurrentConfig(e, o());

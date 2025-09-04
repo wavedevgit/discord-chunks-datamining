@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 /** chunk id: 424044, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,10 +20,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197571 = require("./197571.js");
 Chunk442837.ZP.initialize();
-let v = e => {
+let E = e => {
   let {
     location: t
-  } = e, n = (0, l.e7)([g.default], () => g.default.isAuthenticated()), v = (0, l.e7)([d.Z], () => d.Z.hasLoadedExperiments), E = (0, f.oK)("RSL - Landing Page"), [b, j] = i.useState(false), [I, N] = i.useState(_.intl.string(_.t["9exy+f"])), [O, y] = i.useState(true), S = e => {
+  } = e, n = (0, l.e7)([g.default], () => g.default.isAuthenticated()), E = (0, l.e7)([d.Z], () => d.Z.hasLoadedExperiments), v = (0, f.oK)("RSL - Landing Page"), [j, b] = i.useState(false), [I, N] = i.useState(_.intl.string(_.t["9exy+f"])), [O, S] = i.useState(true), y = e => {
     switch (e) {
       case m.evJ.INVALID_FORM_BODY:
       case m.evJ.DSA_RSL_REPORT_NOT_FOUND:
@@ -43,28 +43,28 @@ let v = e => {
     }
   };
   return i.useEffect(() => {
-    n ? (y(true), a.k({
+    n ? (S(true), a.k({
       withAnalyticsToken: true
-    }).then(() => y(false)).catch(() => y(false))) : y(false)
+    }).then(() => S(false)).catch(() => S(false))) : S(false)
   }, [n]), i.useEffect(() => {
-    v || E || s.Z.getExperiments()
-  }, [v, E]), i.useEffect(() => {
+    E || v || o.Z.getExperiments()
+  }, [E, v]), i.useEffect(() => {
     let e = async e => {
       var t, n;
       try {
         let n = null != e ? await (0, h.hs)(e) : true;
-        null != n ? N(_.intl.string(_.t.e6mZMj)) : S(null == (t = n.body) ? true : t.code)
+        null != n ? N(_.intl.string(_.t.e6mZMj)) : y(null == (t = n.body) ? true : t.code)
       } catch (e) {
-        S(null == (n = e.body) ? true : n.code)
+        y(null == (n = e.body) ? true : n.code)
       } finally {
-        j(false)
+        b(false)
       }
     };
-    j(true), e((0, c.Z)(t)), (0, p.e)("report_second_look")
-  }, [t]), E && !O && (0, r.jsxs)(u.ZP, {
+    b(true), e((0, c.Z)(t)), (0, p.e)("report_second_look")
+  }, [t]), v && !O && (0, r.jsxs)(u.ZP, {
     children: [(0, r.jsx)(u.Dx, {
       className: x.marginBottom8,
       children: I
-    }), b && (0, r.jsx)(o.$jN, {})]
+    }), j && (0, r.jsx)(s.$jN, {})]
   })
 }

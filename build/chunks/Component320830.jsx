@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk954955 = require("./954955.js"),
-  o = require.n(Chunk954955),
+  s = require.n(Chunk954955),
   Chunk748780 = require("./748780.js"),
   Chunk873546 = require("./873546.js"),
   Chunk477690 = require("./477690.js"),
@@ -58,7 +58,7 @@ let g = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
         this.state.shouldAnimate ? this.animateTo(0, e) : e()
       }
       animateTo(e, t) {
-        s.Z.spring(this.anim, p({
+        o.Z.spring(this.anim, p({
           toValue: e
         }, m)).start(t)
       }
@@ -88,7 +88,7 @@ let g = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
               let {
                 reducedMotion: n
               } = t;
-              return (0, r.jsx)(s.Z.div, {
+              return (0, r.jsx)(o.Z.div, {
                 style: this.getAnimatedStyle(n.enabled),
                 children: (0, r.jsx)(e, p({}, this.props))
               })
@@ -97,14 +97,14 @@ let g = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
         })
       }
       constructor(...e) {
-        super(...e), f(this, "timeout", true), f(this, "anim", new s.Z.Value(0)), f(this, "state", {
+        super(...e), f(this, "timeout", true), f(this, "anim", new o.Z.Value(0)), f(this, "state", {
           shouldAnimate: !a.tq
         }), f(this, "handleResize", () => {
           let e = window.innerWidth > g;
           !this.state.shouldAnimate && e && this.anim.setValue(1), this.setState({
             shouldAnimate: e
           })
-        }), f(this, "handleResizeDebounced", o()(this.handleResize, 60))
+        }), f(this, "handleResizeDebounced", s()(this.handleResize, 60))
       }
     }
   }

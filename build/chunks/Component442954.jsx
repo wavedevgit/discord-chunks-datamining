@@ -91,10 +91,16 @@ let b = {
   ExistingUserAgeGatePrompt: async () => {
     let {
       default: e
-    } = await Promise.all([require.e("71172"), require.e("1337"), require.e("26328")]).then(require.bind(require, 746882));
+    } = await Promise.all([require.e("1716"), require.e("53837")]).then(require.bind(require, 746882));
     return t => (0, a.jsx)(e, v(f({}, t), {
       source: m.L0.NSFW_SERVER
     }))
+  },
+  NewUserAgeGate: async () => {
+    let {
+      default: e
+    } = await require.e("76323").then(require.bind(require, 298237));
+    return t => (0, a.jsx)(e, f({}, t))
   },
   AutomatedUnderageAppealModal: async () => {
     let {

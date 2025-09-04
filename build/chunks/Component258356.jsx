@@ -22,8 +22,8 @@ function p(e) {
   let {
     guildScheduledEvent: n,
     channel: l,
-    onAcceptInvite: o,
-    isSubmitting: s
+    onAcceptInvite: s,
+    isSubmitting: o
   } = e;
   return (0, r.jsxs)("div", {
     className: f.guildEventCard,
@@ -44,8 +44,8 @@ function p(e) {
     }), (0, r.jsx)(i.zx, {
       className: f.acceptButton,
       color: i.zx.Colors.GREEN,
-      onClick: o,
-      submitting: s,
+      onClick: s,
+      submitting: o,
       children: h.intl.string(h.t.riu2R0)
     })]
   })
@@ -66,10 +66,10 @@ function g(e) {
       children: h.intl.string(h.t.Eabu19)
     }), (0, r.jsxs)("div", {
       className: f.guildContainer,
-      children: [(0, r.jsx)(o.Z, {
+      children: [(0, r.jsx)(s.Z, {
         guild: i,
         active: true,
-        size: o.Z.Sizes.MEDIUM
+        size: s.Z.Sizes.MEDIUM
       }), (0, r.jsxs)("div", {
         className: f.guildDetailsContanier,
         children: [(0, r.jsxs)(l.Text, {
@@ -77,7 +77,7 @@ function g(e) {
           color: "header-primary",
           variant: "text-sm/medium",
           tag: "span",
-          children: [i.name, (0, r.jsx)(s.Z, {
+          children: [i.name, (0, r.jsx)(o.Z, {
             guild: i,
             className: f.guildBadge,
             tooltipPosition: "left"
@@ -106,10 +106,10 @@ function m(e) {
     isSubmitting: i,
     onAcceptInvite: l
   } = e, {
-    guild_scheduled_event: o
+    guild_scheduled_event: s
   } = t;
-  return null != o ? (0, r.jsx)(p, {
-    guildScheduledEvent: o,
+  return null != s ? (0, r.jsx)(p, {
+    guildScheduledEvent: s,
     channel: n,
     isSubmitting: i,
     onAcceptInvite: l

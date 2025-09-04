@@ -17,16 +17,16 @@ function u(e) {
     email: t
   } = e;
   return (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(s.Ee, {
+    children: [(0, r.jsx)(o.Ee, {
       src: n(26230),
       className: l()(c.marginBottom20, c.marginTop8)
-    }), (0, r.jsx)(s.Dx, {
+    }), (0, r.jsx)(o.Dx, {
       children: a.intl.string(a.t.ailkVF)
-    }), (0, r.jsx)(s.DK, {
+    }), (0, r.jsx)(o.DK, {
       children: a.intl.format(a.t["4ZMVCA"], {
         email: t
       })
-    }), (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(s.Text, {
       className: l()(c.marginBottom8, c.marginTop20),
       variant: "text-md/normal",
       children: a.intl.string(a.t["dpAn+/"])
