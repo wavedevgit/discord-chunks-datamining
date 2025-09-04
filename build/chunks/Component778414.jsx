@@ -1,7 +1,7 @@
 /** Chunk was on 30355 **/
 /** chunk id: 778414, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  C: () => I,
+  C: () => w,
   Z: () => A
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -89,7 +89,7 @@ function S() {
   })
 }
 
-function w(e) {
+function I(e) {
   let {
     user: t,
     guildId: r,
@@ -111,7 +111,7 @@ function w(e) {
   })
 }
 
-function I(e) {
+function w(e) {
   let t = l.useRef(null);
   return (0, g.r)({
     container: t.current
@@ -122,6 +122,6 @@ function I(e) {
     fade: true,
     children: [(0, n.jsx)(j.Z, {
       scrollerRef: t
-    }), (0, n.jsx)(w, P({}, e)), (0, n.jsx)(s.c43, {})]
+    }), (0, n.jsx)(I, P({}, e)), (0, n.jsx)(s.c43, {})]
   })
 }

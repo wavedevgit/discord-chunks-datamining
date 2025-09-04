@@ -38,10 +38,10 @@ let f = e => {
       ref: S,
       "aria-label": null != m ? m : "",
       onClick: () => {
-        null != t && null != j && j(t)
+        null == t || null == j || f || j(t)
       },
       className: s()(P ? h.shopCardDark : h.shopCard, {
-        [h.shopCardAnimation]: E,
+        [h.shopCardAnimation]: !f,
         [P ? h.shopCardDarkHighlighted : h.shopCardHighlighted]: E,
         [h.shopCardSelected]: g === t
       }),

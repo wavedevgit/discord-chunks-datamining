@@ -2,22 +2,23 @@
 /** chunk id: 86419, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $b: () => L,
-  Bu: () => D,
-  ES: () => x,
+  $b: () => j,
+  Bu: () => x,
+  ES: () => L,
+  Gv: () => O,
   M8: () => y,
   Nc: () => E,
-  RZ: () => w,
-  X6: () => M,
-  kQ: () => U,
-  n$: () => P,
-  np: () => I,
-  ou: () => V,
-  qH: () => N,
-  tk: () => k,
-  vH: () => j,
+  RZ: () => D,
+  X6: () => k,
+  kQ: () => G,
+  n$: () => w,
+  np: () => S,
+  ou: () => H,
+  qH: () => R,
+  tk: () => U,
+  vH: () => M,
   vI: () => b,
-  y8: () => R
+  y8: () => P
 }), require("./388685.js"), require("./642613.js"), require("./415506.js");
 var Chunk624238 = require("./624238.js"),
   Chunk379405 = require("./379405.js"),
@@ -80,38 +81,42 @@ function y(e) {
 }
 
 function O(e) {
+  return e in r.k ? r.k[e] : 0
+}
+
+function v(e) {
   return e[Math.floor(Math.random() * e.length)]
 }
 
-function v(e, t) {
+function I(e, t) {
   return [...e].sort(() => .5 - Math.random()).slice(0, t)
 }
 
-function I(e) {
+function S(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : new Set,
     n = _.J6.filter(e => !t.has(e)),
     r = {
-      applicationId: O(n.length > 0 ? n : _.J6)
+      applicationId: v(n.length > 0 ? n : _.J6)
     };
-  return b(e) && (r.comment = Math.random() > .5 ? O(f.x) : true), y(e) && (r.tags = Math.random() > .3 ? v(f.T, f.T.length) : true), r
+  return b(e) && (r.comment = Math.random() > .5 ? v(f.x) : true), y(e) && (r.tags = Math.random() > .3 ? I(f.T, f.T.length) : true), r
 }
 
-function S() {
+function T() {
   var e;
   let t = Chunk594174.default.getCurrentUser(),
     n = null != exports ? Chunk621853.Z.getUserProfile(exports.id) : null;
   return null != (e = null == require ? true : require.widgets) ? module : []
 }
 
-function T() {
+function A() {
   var e;
-  return Chunk224724.Z.hasPendingChanges() ? null != (e = Chunk224724.Z.getPendingWidgets()) ? module : [] : S()
+  return Chunk224724.Z.hasPendingChanges() ? null != (e = Chunk224724.Z.getPendingWidgets()) ? module : [] : T()
 }
 
-function A(e) {
+function C(e) {
   var t;
   let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [],
-    r = S().find(t => t.type === e);
+    r = T().find(t => t.type === e);
   return g(h({}, {
     id: null != (t = null == r ? true : r.id) ? t : e
   }), {
@@ -120,7 +125,7 @@ function A(e) {
   })
 }
 
-function C(e, t) {
+function N(e, t) {
   let n = e.findIndex(e => e.id === t.id);
   if (false === n) return [...e, t];
   {
@@ -129,22 +134,22 @@ function C(e, t) {
   }
 }
 
-function N(e) {
-  let t = T();
+function R(e) {
+  let t = A();
   if (null != t.find(t => t.type === e)) return;
-  let n = A(e);
+  let n = C(e);
   c.Z.setPendingWidgets([...t, n])
 }
 
-function R(e) {
-  let t = T().filter(t => t.type !== e);
+function P(e) {
+  let t = A().filter(t => t.type !== e);
   c.Z.setPendingWidgets(t)
 }
 
-function P(e, t, n) {
+function w(e, t, n) {
   let r = Object.values(i._).length;
   if (n.length > r) return;
-  let a = T(),
+  let a = A(),
     o = a.find(t => t.type === e);
   if (null == o) return;
   let s = o.games.find(e => e.applicationId === t);
@@ -153,23 +158,23 @@ function P(e, t, n) {
       tags: n
     }),
     u = o.games.map(e => e.applicationId === t ? l : e),
-    d = C(a, g(h({}, o), {
+    d = N(a, g(h({}, o), {
       games: u
     }));
   c.Z.setPendingWidgets(d)
 }
 
-function w(e, t, n) {
-  let r = T().find(t => t.type === e);
+function D(e, t, n) {
+  let r = A().find(t => t.type === e);
   if (null == r) return;
   let i = r.games.find(e => e.applicationId === t);
   if (null == i || null == i.tags || 0 === i.tags.length) return;
   let a = i.tags.filter(e => e !== n);
-  P(e, t, a.length > 0 ? a : [])
+  w(e, t, a.length > 0 ? a : [])
 }
 
-function D(e, t, n) {
-  let r = T(),
+function x(e, t, n) {
+  let r = A(),
     i = r.find(t => t.type === e);
   if (null == i) return;
   let a = i.games.find(e => e.applicationId === t);
@@ -178,36 +183,36 @@ function D(e, t, n) {
       comment: n
     }),
     s = i.games.map(e => e.applicationId === t ? o : e),
-    l = C(r, g(h({}, i), {
+    l = N(r, g(h({}, i), {
       games: s
     }));
   c.Z.setPendingWidgets(l)
 }
 
-function x(e, t) {
-  var n, i, a;
-  let s, l = T(),
-    u = l.find(t => t.type === e),
-    d = r.k[e];
-  if (null != u && (null != (i = null == (n = u.games) ? true : n.length) ? i : 0) >= d) return;
-  let f = {
+function L(e, t) {
+  var n, r, i;
+  let a, s = A(),
+    l = s.find(t => t.type === e),
+    u = O(e);
+  if (null != l && (null != (r = null == (n = l.games) ? true : n.length) ? r : 0) >= u) return;
+  let d = {
       applicationId: t.applicationId,
       comment: t.comment,
       tags: t.tags
     },
-    _ = C(l, A(e, s = null != u ? [...null != (a = u.games) ? a : [], f] : [f]));
-  c.Z.setPendingWidgets(_), o.Z.getDetectableGamesSupplemental([t.applicationId])
+    f = N(s, C(e, a = null != l ? [...null != (i = l.games) ? i : [], d] : [d]));
+  c.Z.setPendingWidgets(f), o.Z.getDetectableGamesSupplemental([t.applicationId])
 }
 
-function L(e, t) {
-  let n = T(),
+function j(e, t) {
+  let n = A(),
     r = n.find(t => t.type === e);
   if (null == r) return;
-  let i = C(n, A(e, (null != r.games ? r.games : []).filter(e => e.applicationId !== t)));
+  let i = N(n, C(e, (null != r.games ? r.games : []).filter(e => e.applicationId !== t)));
   c.Z.setPendingWidgets(i)
 }
 
-function j(e) {
+function M(e) {
   let t = e => ({
       game_id: e.applicationId,
       comment: e.comment,
@@ -222,7 +227,7 @@ function j(e) {
     }
   }
 }
-async function M() {
+async function k() {
   let e = Chunk224724.Z.getPendingWidgets();
   if (null !== module) try {
     await Chunk592183.Z.savePendingWidgets(module)
@@ -230,7 +235,7 @@ async function M() {
     console.error("Failed to save sample widgets:", module)
   }
 }
-async function k() {
+async function U() {
   try {
     await Chunk592183.Z.savePendingWidgets([])
   } catch (e) {
@@ -238,43 +243,43 @@ async function k() {
   }
 }
 
-function U(e) {
+function G(e) {
   let t = r.k[e.type];
   return e.games.length >= t
 }
 
-function G(e) {
+function B(e) {
   return null == e || "" === e || Array.isArray(e) && 0 === e.length ? null : e
 }
 
-function B(e, t) {
-  return e.applicationId === t.applicationId && G(e.comment) === G(t.comment)
-}
-
 function Z(e, t) {
-  if (e.applicationId !== t.applicationId) returnfalse;
-  let n = G(e.tags),
-    r = G(t.tags);
-  return null === n && null === r || null !== n && null !== r && n.length === r.length && n.every((e, t) => e === r[t])
+  return e.applicationId === t.applicationId && B(e.comment) === B(t.comment)
 }
 
 function F(e, t) {
+  if (e.applicationId !== t.applicationId) returnfalse;
+  let n = B(e.tags),
+    r = B(t.tags);
+  return null === n && null === r || null !== n && null !== r && n.length === r.length && n.every((e, t) => e === r[t])
+}
+
+function V(e, t) {
   return e.applicationId === t.applicationId
 }
 
-function V(e, t, n) {
+function H(e, t, n) {
   let r;
   if (e.length !== t.length) returnfalse;
   switch (n) {
     case a.l.FAVORITE_GAMES:
-      r = B;
+      r = Z;
       break;
     case a.l.CURRENT_GAMES:
-      r = Z;
+      r = F;
       break;
     case a.l.WANT_TO_PLAY_GAMES:
     case a.l.PLAYED_GAMES:
-      r = F;
+      r = V;
       break;
     default:
       throw Error("Unknown widget type: ".concat(n))

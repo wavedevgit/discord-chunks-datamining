@@ -44,6 +44,12 @@ let b = {
       applicationIds: [Chunk804919.L.MARVEL_RIVALS, Chunk804919.L.WORLD_OF_WARCRAFT, Chunk804919.L.RUST, Chunk804919.L.DELTA_FORCE]
     },
     getAriaLabel: () => Chunk388032.intl.string(Chunk388032.t.NtoBi4)
+  },
+  [Chunk296009.l.APPLICATION]: {
+    placeholder: {
+      variant: "details"
+    },
+    getAriaLabel: () => ""
   }
 };
 
