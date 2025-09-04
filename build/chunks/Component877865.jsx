@@ -162,14 +162,14 @@ function D(e) {
         t[v] = e.hex, s(t)
       }
     },
-    M = async () => {
+    k = async () => {
       if (null != c) try {
         let {
           sRGBHex: e
         } = await c.open();
         (0, E.J4)(), x(e)
       } catch (e) {}
-    }, k = () => {
+    }, M = () => {
       if (o.length === N) return;
       0 === o.length && (0, g.ft)(), (0, E.gG)();
       let e = o.length > 0 ? o[o.length - 1] : A,
@@ -196,7 +196,7 @@ function D(e) {
         text: y.intl.string(b.default["61KGaW"]),
         shouldShow: o.length === N,
         children: e => (0, r.jsx)(p.P3F, S(I({}, e), {
-          onClick: o.length === N ? true : k,
+          onClick: o.length === N ? true : M,
           className: l()(O.addColorButton, {
             [O.disabled]: o.length === N
           }),
@@ -233,7 +233,7 @@ function D(e) {
             variant: "icon-only",
             size: "sm"
           }, e), {
-            onClick: M,
+            onClick: k,
             icon: d.i,
             "aria-label": y.intl.string(b.default["8QXO8v"])
           }))

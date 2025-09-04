@@ -86,13 +86,13 @@ let C = function(e) {
     showTrialBadge: C = false,
     showDiscountBadge: N = false
   } = e, R = (0, s.apv)((0, l.ZP)()), P = O === g.p9.TIER_2, w = (0, d.Fv)(v), D = (0, h.Ng)(), x = null == D || null == (t = D.discount) ? true : t.amount, L = P ? T : I, j = P ? p.Z : _.Z, {
-    step: M,
-    breadcrumbs: k,
+    step: k,
+    breadcrumbs: M,
     startedPaymentFlowWithPaymentSourcesRef: U,
     isDisplayingWowMomentConfirmation: G
   } = (0, c.JL)();
-  if (null == k || 0 === k.length) return null;
-  let B = k.flatMap(e => {
+  if (null == M || 0 === M.length) return null;
+  let B = M.flatMap(e => {
     let t = e.useBreadcrumbLabel(v),
       n = e.sectionHeaderText;
     return null != t ? {
@@ -106,10 +106,10 @@ let C = function(e) {
       let t = e.id !== u.h8.ADD_PAYMENT_STEPS,
         n = e.id === u.h8.ADD_PAYMENT_STEPS && !U.current;
       return !v || v && (t || n)
-    })).find(e => e.id === M),
+    })).find(e => e.id === k),
     F = null != (i = null == Z || null == (n = Z.sectionHeaderText) ? true : n.call(Z)) ? i : null == Z ? true : Z.label,
-    V = null != F && null != M,
-    H = w && V && M === u.h8.REVIEW,
+    V = null != F && null != k,
+    H = w && V && k === u.h8.REVIEW,
     Y = P ? "nitro-pink" : "nitro-green";
   return G ? (0, r.jsx)("div", {
     className: E.container,
@@ -147,7 +147,7 @@ let C = function(e) {
     }), V && (0, r.jsx)(S, {
       isOneStepCheckout: w,
       headerText: F,
-      step: M,
+      step: k,
       filteredBreadcrumbs: B
     }), H && (0, r.jsx)("div", {
       className: E.bodyGradientContainer,

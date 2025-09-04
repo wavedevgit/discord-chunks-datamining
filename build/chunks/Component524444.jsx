@@ -206,7 +206,7 @@ function et(e) {
     mediaLayoutType: f,
     imageContainerStyle: _,
     mosaicStyleAlt: h
-  } = e, m = f === k.hV.MOSAIC || true === h, g = !c && N.H1.getSetting() && null != t && "" !== t && true !== n, E = e => {
+  } = e, m = f === M.hV.MOSAIC || true === h, g = !c && N.H1.getSetting() && null != t && "" !== t && true !== n, E = e => {
     let {
       altText: t
     } = e;
@@ -378,7 +378,7 @@ function eu(e) {
       context: "Mark As Read"
     }) : f.Z.jumpToMessage({
       channelId: n,
-      messageId: M.default.castChannelIdAsMessageId(n),
+      messageId: k.default.castChannelIdAsMessageId(n),
       offset: 1,
       context: "Mark As Read"
     })
@@ -436,9 +436,9 @@ function ed(e) {
   } = i.useContext(b.G), [y, v] = i.useState(null), I = i.useRef(null), [T, N] = i.useState(null), R = i.useRef(null), j = (0, u.Wu)([A.Z], () => {
     var e;
     return null != (e = A.Z.summaries(s.id)) ? e : []
-  }, [s]), k = (0, g.Z)(j);
+  }, [s]), M = (0, g.Z)(j);
   i.useEffect(() => {
-    l().isEqual(k, j) || x.default.track(U.rMx.SUMMARIES_TOPICS_PILL_VIEWED, {
+    l().isEqual(M, j) || x.default.track(U.rMx.SUMMARIES_TOPICS_PILL_VIEWED, {
       num_summaries: j.length,
       message_counts: j.map(e => e.count),
       start_message_ids: j.map(e => e.startId),
@@ -448,7 +448,7 @@ function ed(e) {
       channel_id: s.id,
       channel_type: s.type
     })
-  }, [j, k, s.guild_id, s.id, s.type]);
+  }, [j, M, s.guild_id, s.id, s.type]);
   let G = (0, u.e7)([w.default], () => {
       var e;
       return null != (e = null == j ? true : j.map(e => {
@@ -564,7 +564,7 @@ function ed(e) {
         context: "Mark As Read"
       }) : f.Z.jumpToMessage({
         channelId: s.id,
-        messageId: M.default.castChannelIdAsMessageId(s.id),
+        messageId: k.default.castChannelIdAsMessageId(s.id),
         offset: 1,
         context: "Mark As Read"
       })
@@ -703,9 +703,9 @@ function ep(e) {
       })) ? e : []
     }, [N], e_),
     j = null != (n = (0, u.e7)([A.Z], () => A.Z.visibleSummaryIndex())) ? n : false,
-    M = null == N || null == (t = N[j]) ? true : t.topic;
-  null == M && null == h && (null == N ? true : N.length) >= 1 && (M = null == (a = N[0]) ? true : a.topic);
-  let k = i.useMemo(() => l().get(N, j - 1), [j, N]),
+    k = null == N || null == (t = N[j]) ? true : t.topic;
+  null == k && null == h && (null == N ? true : N.length) >= 1 && (k = null == (a = N[0]) ? true : a.topic);
+  let M = i.useMemo(() => l().get(N, j - 1), [j, N]),
     G = i.useMemo(() => l().get(N, j + 1), [j, N]),
     V = i.useMemo(() => l().debounce(e => {
       var t;
@@ -808,7 +808,7 @@ function ep(e) {
   }), [N, P, q, J, s]);
   if (!(0, u.e7)([A.Z], () => A.Z.shouldShowTopicsBar())) return null;
   let et = Z.intl.string(Z.t["38qwgI"]);
-  return N.length > 0 && (et = "" === M || null == M ? Z.intl.string(Z.t.DwnFuL) : M), p ? null : (0, r.jsxs)("div", {
+  return N.length > 0 && (et = "" === k || null == k ? Z.intl.string(Z.t.DwnFuL) : k), p ? null : (0, r.jsxs)("div", {
     ref: y,
     className: o()(F.topicsPillContainer, F.containerMarginTop),
     children: [(0, r.jsxs)("div", {
@@ -854,7 +854,7 @@ function ep(e) {
           "aria-label": Z.intl.string(Z.t["58KOoK"]),
           onClick: X,
           className: o()(F.topicsPillCaret, F.topicsCaretRight, {
-            [F.topicsPillCaretDisabled]: null == k
+            [F.topicsPillCaretDisabled]: null == M
           }),
           children: (0, r.jsx)(D.Z, {
             width: 16,

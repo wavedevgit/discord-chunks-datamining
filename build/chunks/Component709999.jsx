@@ -235,7 +235,7 @@ let eh = 250,
       children: a
     } = e, {
       handleCardVisibilityChange: o
-    } = (0, M.E)(n.skuId, t === ei.AW.CATALOG ? "full" : t);
+    } = (0, k.E)(n.skuId, t === ei.AW.CATALOG ? "full" : t);
     return (0, r.jsx)(_.$, {
       innerRef: i,
       onChange: o,
@@ -296,7 +296,7 @@ function ev(e) {
     isPartiallyOwnedBundle: E,
     isDisabled: O,
     discount: v
-  } = e, C = (0, R.sp)(), w = (0, D.rN)(t), [L, j] = (0, f.Wu)([P.Z], () => [P.Z.isClaiming === t.skuId, null != P.Z.isClaiming && P.Z.isClaiming !== t.skuId]), M = (0, D.XM)(i, _, false), U = (0, D.ne)({
+  } = e, C = (0, R.sp)(), w = (0, D.rN)(t), [L, j] = (0, f.Wu)([P.Z], () => [P.Z.isClaiming === t.skuId, null != P.Z.isClaiming && P.Z.isClaiming !== t.skuId]), k = (0, D.XM)(i, _, false), U = (0, D.ne)({
     product: i,
     isPartiallyOwnedBundle: E,
     isPurchased: m
@@ -341,7 +341,7 @@ function ev(e) {
       color: "header-muted",
       className: el.priceTag,
       children: es.intl.string(es.t.wu4gyc)
-    }) : m || E ? (0, r.jsx)(k.U, {
+    }) : m || E ? (0, r.jsx)(M.U, {
       className: el.priceTag,
       isPartiallyPurchased: E
     }) : h ? (0, r.jsx)(p.Text, {
@@ -417,7 +417,7 @@ function ev(e) {
         i = K ? es.intl.formatToPlainString(es.t["5U5RBw"], {
           discountOfferAmount: W
         }) : es.intl.formatToPlainString(es.t["cNSL/v"], {
-          price: M
+          price: k
         });
       return (0, r.jsx)(p.zxk, {
         variant: "primary",
@@ -571,12 +571,12 @@ let eI = Chunk647438.memo(function(e) {
       variantType: N = ei.Ch.DEFAULT
     } = e, {
       analyticsLocations: P
-    } = (0, E.ZP)([g.Z.COLLECTIBLES_SHOP_CARD]), w = (0, R.sp)(), x = (0, h.Z)(d), M = (0, J.m)(d), k = x || M, G = (0, et.To)(t), B = (0, f.e7)([m.Z], () => m.Z.useReducedMotion), V = C.ZP.canUseCollectibles(n), W = i.useMemo(() => (0, D.BH)(t, V), [t, V]), z = (0, D.G1)(t), q = (0, f.e7)([v.Z], () => (0, p.wjy)(v.Z.theme)), X = (0, D.Yq)(t.skuId), Q = a.skuId === c.T.ANIME_V3 && (0, D.WW)(t.skuId), {
+    } = (0, E.ZP)([g.Z.COLLECTIBLES_SHOP_CARD]), w = (0, R.sp)(), x = (0, h.Z)(d), k = (0, J.m)(d), M = x || k, G = (0, et.To)(t), B = (0, f.e7)([m.Z], () => m.Z.useReducedMotion), V = C.ZP.canUseCollectibles(n), W = i.useMemo(() => (0, D.BH)(t, V), [t, V]), z = (0, D.G1)(t), q = (0, f.e7)([v.Z], () => (0, p.wjy)(v.Z.theme)), X = (0, D.Yq)(t.skuId), Q = a.skuId === c.T.ANIME_V3 && (0, D.WW)(t.skuId), {
       isPurchased: $,
       isPartiallyOwnedBundle: ee
     } = (0, j.L)(_), {
       isDisabled: er
-    } = (0, L.G)(_.skuId), eo = null !== T ? T : y, [ec, ed] = i.useState(false), e_ = k, ep = i.useCallback(function(e, t, i) {
+    } = (0, L.G)(_.skuId), eo = null !== T ? T : y, [ec, ed] = i.useState(false), e_ = M, ep = i.useCallback(function(e, t, i) {
       let a = arguments.length > 3 && true !== arguments[3] && arguments[3];
       return (0, s.EQ)(e.type).with(u.Z.PROFILE_EFFECT, () => (0, r.jsx)(em, {
         isHighlighted: t,
@@ -659,7 +659,7 @@ let eI = Chunk647438.memo(function(e) {
           },
           selectedVariantIndex: y,
           setIsHoveringOnSwitch: ed,
-          minimal: !k,
+          minimal: !M,
           alternativeBackgroundColor: (null == b ? true : b.type) === u.Z.PROFILE_EFFECT
         }) : (0, r.jsx)(Y.r, {
           variantGroupProduct: t,
@@ -689,9 +689,9 @@ let eI = Chunk647438.memo(function(e) {
     return (0, D.x6)(t) && null != W && W.discountPercentage < 0 ? null : (0, r.jsx)(p.tEY, {
       children: (0, r.jsxs)(p.kL8, {
         className: o()(S, q ? el.shopCardDark : el.shopCard, {
-          [el.partiallyOwned]: ee && !k,
+          [el.partiallyOwned]: ee && !M,
           [el.shopCardAnimation]: !B,
-          [q ? el.shopCardDarkHighlighted : el.shopCardHighlighted]: k
+          [q ? el.shopCardDarkHighlighted : el.shopCardHighlighted]: M
         }),
         ref: d,
         onClick: eI,
@@ -730,7 +730,7 @@ let eI = Chunk647438.memo(function(e) {
             product: t,
             user: n,
             isPurchased: $,
-            isHighlighted: k
+            isHighlighted: M
           })).with(u.Z.VARIANTS_GROUP, () => {
             if (null == t.variants || 0 === t.variants.length) return null;
             let e = t.variants[eo];

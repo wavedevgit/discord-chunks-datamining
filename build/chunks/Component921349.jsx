@@ -88,8 +88,8 @@ function j(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let M = 44,
-  k = {
+let k = 44,
+  M = {
     keys: ["label"]
   };
 
@@ -175,7 +175,7 @@ let Z = Chunk647438.forwardRef(function(e, t) {
     maxVisibleItems: D = 7,
     autoFocus: x = false,
     popoutPosition: j = "bottom",
-    filter: M = true,
+    filter: k = true,
     debounceTime: Z,
     renderOptionLabel: V = U,
     onSearchChange: W,
@@ -212,7 +212,7 @@ let Z = Chunk647438.forwardRef(function(e, t) {
     active: ey,
     loadableOptions: n,
     debounceTime: Z
-  }), ew = i.useMemo(() => B(eN, a), [eN, a]), eD = i.useMemo(() => ew.map(e => e.value), [ew]), ex = ew[ew.length - 1], eL = (0, C.Z)(ex), ej = i.useId(), eM = i.useId(), ek = i.useId(), eU = i.useCallback(e => {
+  }), ew = i.useMemo(() => B(eN, a), [eN, a]), eD = i.useMemo(() => ew.map(e => e.value), [ew]), ex = ew[ew.length - 1], eL = (0, C.Z)(ex), ej = i.useId(), ek = i.useId(), eM = i.useId(), eU = i.useCallback(e => {
     ey === e || P || (eO(e), e ? null == g || g() : null == b || b())
   }, [P, b, g, ey]), eG = i.useCallback(e => {
     ey && !e && eU(false)
@@ -244,7 +244,7 @@ let Z = Chunk647438.forwardRef(function(e, t) {
       })
     }), []),
     eH = (0, c.ZP)({
-      id: eM,
+      id: ek,
       defaultFocused: null != ex ? String(ex.value) : true,
       scrollToStart: eF,
       scrollToEnd: eV,
@@ -324,7 +324,7 @@ let Z = Chunk647438.forwardRef(function(e, t) {
       }
     }, [eU, ey]),
     eX = eN;
-  eT && null != ev && false !== M && (eX = "function" == typeof M ? M(eN, ev) : (0, s.Lu)(eN, ev, null != ei ? ei : k)), i.useEffect(() => {
+  eT && null != ev && false !== k && (eX = "function" == typeof k ? k(eN, ev) : (0, s.Lu)(eN, ev, null != ei ? ei : M)), i.useEffect(() => {
     let e = eA.current;
     null == e || e.scrollToTop()
   }, [ev]), i.useEffect(() => {
@@ -447,9 +447,9 @@ let Z = Chunk647438.forwardRef(function(e, t) {
                   onKeyDown: u,
                   activeDescendant: eE,
                   placeholder: y,
-                  inputId: ek,
+                  inputId: eM,
                   listboxId: ej,
-                  navigatorId: eM,
+                  navigatorId: ek,
                   selectValue: function(e) {
                     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
                     eK(e, t)
@@ -470,7 +470,7 @@ let Z = Chunk647438.forwardRef(function(e, t) {
             }) : (0, r.jsxs)(r.Fragment, {
               children: [d && (null != ev && "" !== ev || ew.length > 0) ? (0, r.jsx)(_.P, {
                 "aria-label": N.intl.string(N.t.VkKicX),
-                "aria-controls": ek,
+                "aria-controls": eM,
                 onClick: ez,
                 children: (0, r.jsx)(I.Dio, {
                   size: "xs",
@@ -479,7 +479,7 @@ let Z = Chunk647438.forwardRef(function(e, t) {
                 })
               }) : null, (0, r.jsx)(_.P, {
                 "aria-label": ey ? N.intl.string(N.t.cpT0Cg) : N.intl.string(N.t["3xjX0d"]),
-                "aria-controls": ek,
+                "aria-controls": eM,
                 onClick: () => {
                   eU(!ey)
                 },
@@ -568,7 +568,7 @@ function F(e) {
         }),
         style: {
           width: l,
-          maxHeight: c * M
+          maxHeight: c * k
         },
         ref: e => {
           var n;
@@ -581,7 +581,7 @@ function F(e) {
         innerRole: "listbox",
         innerAriaMultiselectable: E,
         innerId: _,
-        rowHeight: M,
+        rowHeight: k,
         sections: [s.length],
         sectionHeight: 0,
         renderRow: e => {
@@ -736,7 +736,7 @@ function W(e) {
   return (0, r.jsxs)(_.P, x(w({
     tag: "li",
     style: {
-      height: M
+      height: k
     },
     focusProps: {
       enabled: false

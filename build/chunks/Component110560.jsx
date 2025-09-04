@@ -71,7 +71,7 @@ function j(e) {
   return e
 }
 
-function M(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -82,8 +82,8 @@ function M(e, t) {
   return n
 }
 
-function k(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
+function M(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -103,7 +103,7 @@ function B(e) {
     let {
       default: e
     } = await n.e("61624").then(n.bind(n, 985866));
-    return n => (0, r.jsx)(e, k(j({}, n), {
+    return n => (0, r.jsx)(e, M(j({}, n), {
       questId: t,
       questContentPosition: a,
       questContent: i,
@@ -120,7 +120,7 @@ function Z(e, t) {
     let {
       default: i
     } = await n.e("838").then(n.bind(n, 824393));
-    return n => (0, r.jsx)(i, k(j({}, n), {
+    return n => (0, r.jsx)(i, M(j({}, n), {
       quest: e,
       location: t
     }))
@@ -132,7 +132,7 @@ function F(e, t, i) {
     let {
       default: a
     } = await n.e("88938").then(n.bind(n, 390238));
-    return n => (0, r.jsx)(a, k(j({}, n), {
+    return n => (0, r.jsx)(a, M(j({}, n), {
       quest: e,
       location: t,
       sourceQuestContent: i
@@ -145,7 +145,7 @@ function V(e, t) {
     let {
       default: i
     } = await n.e("20565").then(n.bind(n, 383294));
-    return n => (0, r.jsx)(i, k(j({}, n), {
+    return n => (0, r.jsx)(i, M(j({}, n), {
       quest: e,
       location: t
     }))
@@ -157,7 +157,7 @@ function H(e, t, i) {
     let {
       default: a
     } = await n.e("58641").then(n.bind(n, 828664));
-    return n => (0, r.jsx)(a, k(j({}, n), {
+    return n => (0, r.jsx)(a, M(j({}, n), {
       quest: e,
       location: t,
       sourceQuestContent: i
@@ -177,7 +177,7 @@ function Y(e, t) {
     let {
       default: i
     } = await n.e("4266").then(n.bind(n, 316210));
-    return n => (0, r.jsx)(i, k(j({}, n), {
+    return n => (0, r.jsx)(i, M(j({}, n), {
       questContent: t.content,
       quest: e
     }))
@@ -267,7 +267,7 @@ function X(e) {
     let {
       default: e
     } = await q();
-    return t => (0, r.jsx)(e, k(j({}, t), {
+    return t => (0, r.jsx)(e, M(j({}, t), {
       openStartClockTime: performance.now(),
       questId: n.id,
       autoplay: c,
@@ -329,7 +329,7 @@ function $(e) {
     let {
       default: t
     } = await Promise.all([n.e("25520"), n.e("33628")]).then(n.bind(n, 570387));
-    return n => (0, r.jsx)(t, k(j({}, n), {
+    return n => (0, r.jsx)(t, M(j({}, n), {
       questId: e.id,
       questName: e.config.messages.questName
     }))

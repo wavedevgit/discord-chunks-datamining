@@ -73,7 +73,7 @@ function eu(e) {
     isDiscountApplied: n,
     activeDiscountInfo: i,
     theme: a
-  } = e, o = t.hasActiveTrial, s = t.planIdFromItems === J.Xh.PREMIUM_YEAR_TIER_2, c = n || o, u = null != t.trialEndsAt ? l()(t.trialEndsAt).diff(l()(), "d") : 0, d = J.GP[t.planIdFromItems], _ = M.ZP.formatPriceString(M.ZP.getDefaultPrice(d.id), d.interval), {
+  } = e, o = t.hasActiveTrial, s = t.planIdFromItems === J.Xh.PREMIUM_YEAR_TIER_2, c = n || o, u = null != t.trialEndsAt ? l()(t.trialEndsAt).diff(l()(), "d") : 0, d = J.GP[t.planIdFromItems], _ = k.ZP.formatPriceString(k.ZP.getDefaultPrice(d.id), d.interval), {
     enabled: h
   } = G.T.getCurrentConfig({
     location: "SubscriptionUserHeroSubheader"
@@ -346,7 +346,7 @@ let ep = function() {
     note: null
   });
   if (!Chunk483444 && !Chunk63063 || l) return (0, Chunk951288.jsx)(Chunk481060.$jN, {});
-  let M = !!(null == Chunk120356 ? true : Chunk120356.hasActiveTrial);
+  let k = !!(null == Chunk120356 ? true : Chunk120356.hasActiveTrial);
   return (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: require,
     children: (0, Chunk951288.jsxs)(Chunk951288.Fragment, {

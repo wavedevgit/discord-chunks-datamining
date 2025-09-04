@@ -51,7 +51,7 @@ let D = (e, t) => n => {
     return () => {}
   },
   j = (e, t) => t && [R.WX.STAGE_INSTANCE, R.WX.VOICE].includes(null == e ? true : e.entity_type),
-  M = Chunk647438.memo(function(e) {
+  k = Chunk647438.memo(function(e) {
     var t;
     let {
       guild: n,
@@ -115,7 +115,7 @@ let D = (e, t) => n => {
       })]
     })
   }),
-  k = Chunk647438.memo(function(e) {
+  M = Chunk647438.memo(function(e) {
     let {
       guildId: t,
       guildScheduledEventId: n,
@@ -210,12 +210,12 @@ let D = (e, t) => n => {
           recurrenceId: p
         }), (0, r.jsxs)("div", {
           className: w.footerContainer,
-          children: [(0, r.jsx)(M, {
+          children: [(0, r.jsx)(k, {
             guild: a,
             channel: s,
             guildScheduledEvent: n,
             isMember: l
-          }), (0, r.jsx)(k, {
+          }), (0, r.jsx)(M, {
             isActive: y,
             isEnded: C,
             isMember: l,

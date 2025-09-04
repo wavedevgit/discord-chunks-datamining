@@ -159,8 +159,8 @@ class T extends(r = Chunk647438.PureComponent) {
       barClassName: x,
       grabberClassName: L,
       grabberStyles: j = {},
-      markerPosition: M = 0,
-      "aria-hidden": k,
+      markerPosition: k = 0,
+      "aria-hidden": M,
       "aria-label": U,
       "aria-labelledby": G,
       "aria-describedby": B
@@ -174,8 +174,8 @@ class T extends(r = Chunk647438.PureComponent) {
         return (0, i.jsx)("div", {
           className: s()(m.mark, {
             [m.defaultValue]: r,
-            [m.markAbove]: 0 === M,
-            [m.markBelow]: 1 === M
+            [m.markAbove]: 0 === k,
+            [m.markBelow]: 1 === k
           }),
           style: {
             left: "".concat(e, "%")
@@ -212,7 +212,7 @@ class T extends(r = Chunk647438.PureComponent) {
             "aria-valuenow": t,
             "aria-disabled": g,
             "aria-orientation": R,
-            "aria-hidden": k,
+            "aria-hidden": M,
             "aria-label": U,
             "aria-labelledby": G,
             "aria-describedby": B,

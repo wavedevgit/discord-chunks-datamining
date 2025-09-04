@@ -85,7 +85,7 @@ let X = (0, Chunk663993.Un)({
     let {
       children: t,
       skipsSettingDefaultPageTitle: n
-    } = e, a = (0, B.getPlatform)(), u = l.tq || l.Em, m = (0, c.e7)([E.Z], () => E.Z.useForcedColors ? "yes" : "no"), k = i.useRef(document.body), U = "".concat(m);
+    } = e, a = (0, B.getPlatform)(), u = l.tq || l.Em, m = (0, c.e7)([E.Z], () => E.Z.useForcedColors ? "yes" : "no"), M = i.useRef(document.body), U = "".concat(m);
     return (0, N.G)(), (0, P.G)("AppSkeleton"), (0, r.jsx)(j.w, {
       children: (0, r.jsxs)(b.Z, {
         children: [(0, r.jsx)(F.Z, {
@@ -93,7 +93,7 @@ let X = (0, Chunk663993.Un)({
         }), (0, r.jsx)(h.T, {
           children: (0, r.jsx)(H.Z, {
             children: (0, r.jsxs)(d.JcV, {
-              containerRef: k,
+              containerRef: M,
               children: [(0, r.jsx)(W.Co, {}), (0, r.jsx)(Y.ZP, {}), (0, r.jsx)(s.OU, {}), (0, r.jsx)(g.Wu, {
                 appContext: z.IlC.APP,
                 renderWindow: window,
@@ -113,7 +113,7 @@ let X = (0, Chunk663993.Un)({
                                 children: t
                               }), (0, r.jsx)(f.Z, {}), (0, r.jsx)(I.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(d.nKe, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(D.Ox, {}), (0, r.jsx)(w.Un, {}), (0, r.jsx)(x.ot, {}), (0, r.jsx)(d.Ixi, {
                                 appContext: z.IlC.APP
-                              }), (0, r.jsx)(v.Z, {}), (0, r.jsx)(L.Z, {}), (0, r.jsx)(X, {}), (0, r.jsx)(Q, {}), (0, r.jsx)(M.Z, {})]
+                              }), (0, r.jsx)(v.Z, {}), (0, r.jsx)(L.Z, {}), (0, r.jsx)(X, {}), (0, r.jsx)(Q, {}), (0, r.jsx)(k.Z, {})]
                             })
                           })
                         })

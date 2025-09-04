@@ -305,7 +305,7 @@ let L = {
       }
     }
   },
-  M = {
+  k = {
     appearance: {
       theme: "flat",
       variables: {
@@ -314,7 +314,7 @@ let L = {
       }
     }
   },
-  k = {
+  M = {
     buttonType: {
       googlePay: "pay",
       applePay: "book"
@@ -329,14 +329,14 @@ let L = {
   G = "``";
 
 function B() {
-  let [e, t] = Chunk647438.useState(U(M)), [n, o] = Chunk647438.useState(M), [s, u] = Chunk647438.useState(U(k)), [d, _] = Chunk647438.useState(k), [p, h] = Chunk647438.useState(null), [m, E] = Chunk647438.useState((0, Chunk951288.jsx)(Chunk450272.DS, {
+  let [e, t] = Chunk647438.useState(U(k)), [n, o] = Chunk647438.useState(k), [s, u] = Chunk647438.useState(U(M)), [d, _] = Chunk647438.useState(M), [p, h] = Chunk647438.useState(null), [m, E] = Chunk647438.useState((0, Chunk951288.jsx)(Chunk450272.DS, {
     errorLabel: L.CONFIGURABLE,
-    elementOptions: M,
+    elementOptions: k,
     children: (0, Chunk951288.jsx)(Chunk289008.ExpressCheckoutElement, {
       onConfirm: e => {
         console.log("ExpressCheckoutElement onConfirm event: ", e)
       },
-      options: k
+      options: M
     })
   })), b = () => {
     try {

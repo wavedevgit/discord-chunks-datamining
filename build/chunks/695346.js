@@ -13,7 +13,7 @@ require.d(exports, {
   Fg: () => J,
   G6: () => e_,
   H1: () => x,
-  I0: () => M,
+  I0: () => k,
   JG: () => eZ,
   JN: () => er,
   JT: () => ea,
@@ -53,7 +53,7 @@ require.d(exports, {
   d8: () => A,
   dN: () => b,
   eR: () => v,
-  eo: () => k,
+  eo: () => M,
   ev: () => $,
   fq: () => O,
   fv: () => N,
@@ -63,7 +63,7 @@ require.d(exports, {
   h2: () => X,
   hg: () => eX,
   iG: () => z,
-  iH: () => eM,
+  iH: () => ek,
   j7: () => ez,
   jU: () => ee,
   kJ: () => K,
@@ -73,7 +73,7 @@ require.d(exports, {
   mX: () => W,
   nc: () => eI,
   nh: () => eH,
-  no: () => ek,
+  no: () => eM,
   qF: () => j,
   rN: () => eT,
   tU: () => eb,
@@ -181,10 +181,10 @@ let A = (0, Chunk560997.Zc)("notifications", "enableVoiceActivityNotifications",
   }, e => o.D5.create({
     value: e
   })),
-  M = (0, Chunk560997.Zc)("voiceAndVideo", "disableStreamPreviews", e => null == e ? true : e.value, e => o.D5.create({
+  k = (0, Chunk560997.Zc)("voiceAndVideo", "disableStreamPreviews", e => null == e ? true : e.value, e => o.D5.create({
     value: e
   })),
-  k = (0, Chunk560997.Zc)("notifications", "notifyFriendsOnGoLive", e => null == e ? true : e.value, e => o.D5.create({
+  M = (0, Chunk560997.Zc)("notifications", "notifyFriendsOnGoLive", e => null == e ? true : e.value, e => o.D5.create({
     value: e
   })),
   U = "0",
@@ -518,7 +518,7 @@ let eC = (0, Chunk560997.KM)((0, Chunk560997.Zc)("appearance", "developerMode", 
   ex = (0, Chunk560997.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eD, e => e),
   eL = (0, Chunk560997.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eD, e => e, Chunk526761.fy.FREQUENT_USER_ACTION),
   ej = [],
-  eM = (0, Chunk560997.Zc)("privacy", "activityJoiningRestrictedGuildIds", e => null != e ? e : ej, e => e);
+  ek = (0, Chunk560997.Zc)("privacy", "activityJoiningRestrictedGuildIds", e => null != e ? e : ej, e => e);
 (0, Chunk560997.TG)({
   baseSetting: (0, Chunk560997.Zc)("privacy", "defaultGuildsActivityRestricted", e => e, e => null != e ? e : a.E5.OFF),
   isEligible: () => (0, Chunk362352.o0)("user_settings"),
@@ -526,7 +526,7 @@ let eC = (0, Chunk560997.KM)((0, Chunk560997.Zc)("appearance", "developerMode", 
   ineligibleDefault: Chunk524437.E5.OFF,
   eligibleDefault: () => Chunk524437.E5.ON_FOR_LARGE_GUILDS
 });
-let ek = (0, Chunk560997.TG)({
+let eM = (0, Chunk560997.TG)({
     baseSetting: (0, Chunk560997.Zc)("privacy", "defaultGuildsActivityRestrictedV2", e => e, e => null != e ? e : a.GI.ACTIVITY_STATUS_OFF),
     isEligible: () => (0, Chunk362352.o0)("user_settings"),
     useIsEligible: () => (0, Chunk362352.Yd)("user_settings"),

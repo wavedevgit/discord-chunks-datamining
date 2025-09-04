@@ -12,7 +12,7 @@ require.d(exports, {
   Vw: () => y,
   WW: () => K,
   XM: () => O,
-  XS: () => k,
+  XS: () => M,
   Yq: () => W,
   bl: () => G,
   eu: () => q,
@@ -179,12 +179,12 @@ let E = e => (null == e ? true : e.premiumType) != null,
   x = e => P(e, i.Z.AVATAR_DECORATION),
   L = e => w(e, i.Z.AVATAR_DECORATION),
   j = (e, t) => (0, r.uniqBy)([...x(e), ...L(t)], "id"),
-  M = e => P(e, i.Z.PROFILE_EFFECT),
-  k = e => w(e, i.Z.PROFILE_EFFECT),
-  U = (e, t) => (0, r.uniqBy)([...M(e), ...k(t)], "id"),
+  k = e => P(e, i.Z.PROFILE_EFFECT),
+  M = e => w(e, i.Z.PROFILE_EFFECT),
+  U = (e, t) => (0, r.uniqBy)([...k(e), ...M(t)], "id"),
   G = (e, t) => {
-    let n = M(t),
-      r = k(e).filter(e => {
+    let n = k(t),
+      r = M(e).filter(e => {
         let {
           id: t
         } = e;

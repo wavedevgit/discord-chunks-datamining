@@ -1,8 +1,8 @@
 /** Chunk was on 11160 **/
 /** chunk id: 339144, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  J: () => P,
-  y: () => S
+  J: () => I,
+  y: () => P
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,6 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk620662 = require("./620662.js"),
   Chunk513202 = require("./513202.jsx"),
   Chunk906732 = require("./906732.jsx"),
+  Chunk20471 = require("./20471.js"),
   Chunk522651 = require("./522651.js"),
   Chunk311352 = require("./311352.jsx"),
   Chunk668519 = require("./668519.js"),
@@ -28,53 +29,53 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk258628 = require("./258628.js");
 
-function S(e, t, n) {
-  return null != e && (null != n ? n.applicationId === e.id : null != t && t.application_id === e.id && t.type === x.IIU.PLAYING && (0, d.Z)(t, x.xjy.JOIN))
+function P(e, t, n) {
+  return null != e && (null != n ? n.applicationId === e.id : null != t && t.application_id === e.id && t.type === C.IIU.PLAYING && (0, d.Z)(t, C.xjy.JOIN))
 }
-let P = Chunk647438.memo(function(e) {
-  let t, l, d, P, {
-      stream: I,
-      canGoLive: N,
-      guildId: Z,
-      isStreaming: w,
-      channel: T,
-      canStream: A,
-      runningGame: R,
-      embeddedActivity: D,
-      activity: M,
-      application: L,
-      analyticsContext: k
+let I = Chunk647438.memo(function(e) {
+  let t, l, d, I, {
+      stream: N,
+      canGoLive: Z,
+      guildId: w,
+      isStreaming: T,
+      channel: A,
+      canStream: R,
+      runningGame: D,
+      embeddedActivity: M,
+      activity: L,
+      application: k,
+      analyticsContext: U
     } = e,
     {
-      showRefreshedGoLiveModal: U
-    } = (0, m.a)({
+      showRefreshedGoLiveModal: G
+    } = (0, b.a)({
       location: "Activity Panel",
       autoTrackExposure: false
     }),
     {
-      parentAnalyticsLocation: G
+      parentAnalyticsLocation: B
     } = (0, h.ZP)(),
-    B = S(L, M, D),
-    F = i.useCallback(() => {
-      o()(null != M, "Received null activity"), (0, f.v)(G, f.d.INVITE), _.default.track(x.rMx.OPEN_MODAL, {
+    F = P(k, L, M),
+    V = i.useCallback(() => {
+      o()(null != L, "Received null activity"), (0, g.v)(B, g.d.INVITE), v.default.track(C.rMx.OPEN_MODAL, {
         type: "Send Join Invite",
-        application_id: M.application_id,
-        location: k.location
-      }), (0, c.h7)(M, false)
-    }, [M, k, G]),
-    V = i.useCallback((e, t) => () => {
-      (0, f.v)(G, f.d.LEAVE_ACTIVITY), p.Z.leaveActivity({
+        application_id: L.application_id,
+        location: U.location
+      }), (0, c.h7)(L, false)
+    }, [L, U, B]),
+    H = i.useCallback((e, t) => () => {
+      (0, g.v)(B, g.d.LEAVE_ACTIVITY), p.Z.leaveActivity({
         location: t,
         applicationId: e,
         showFeedback: true
       })
-    }, [G]),
-    H = i.useCallback(() => {
-      (0, b.Z)(I)
-    }, [I]),
+    }, [B]),
     z = i.useCallback(() => {
-      let e = null != T && (0, O.vd)(T.type) ? T : null,
-        t = null != e ? e.getGuildId() : Z;
+      (0, O.Z)(N)
+    }, [N]),
+    W = i.useCallback(() => {
+      let e = null != A && (0, y.vd)(A.type) ? A : null,
+        t = null != e ? e.getGuildId() : w;
       (0, s.ZDy)(async () => {
         let {
           default: e
@@ -99,10 +100,10 @@ let P = Chunk647438.memo(function(e) {
             }
             return e
           }({}, n), l = l = {
-            sourcePID: null == R ? true : R.pid,
-            selectSource: !!U && null != y.Z.getVoiceChannelId(),
+            sourcePID: null == D ? true : D.pid,
+            selectSource: !!G && null != _.Z.getVoiceChannelId(),
             guildId: t,
-            analyticsLocation: x.Sbl.ACTIVITY_PANEL
+            analyticsLocation: C.Sbl.ACTIVITY_PANEL
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -115,41 +116,48 @@ let P = Chunk647438.memo(function(e) {
           }), i))
         }
       })
-    }, [T, Z, R, U]),
-    W = (null != R || null == D || (0, u.R)()) && (w || N) ? (w ? (t = false, l = () => {
-      H(), (0, f.v)(G, f.d.STREAM, false)
-    }, d = s.g5r, P = C.intl.string(C.t.S5anIS)) : A ? (t = false, l = () => {
-      z(), (0, f.v)(G, f.d.STREAM, true)
-    }, d = s.hGI, P = null != R ? C.intl.formatToPlainString(C.t.AB5gT0, {
-      game: R.name
-    }) : C.intl.string(C.t.FeUKeH)) : (t = true, l = null, d = s.hGI, P = null != T && (0, O.vd)(T.type) ? C.intl.string(C.t.uQn9Bw) : null != Z ? C.intl.string(C.t.fBXEoK) : C.intl.string(C.t.n3feND)), (0, r.jsx)("div", {
-      className: E.panelButtonContainer,
-      children: (0, r.jsx)(j.Z, {
-        tooltipText: P,
+    }, [A, w, D, G]),
+    {
+      canStartAuthorization: K,
+      startAuthorization: Y,
+      hasAlreadyLinked: q
+    } = (0, f.F)(k),
+    X = j.Z.useConfig({
+      location: "ActivityActions"
+    }).enabled,
+    Q = (null != D || null == M || (0, u.R)()) && (T || Z) ? (T ? (t = false, l = () => {
+      z(), (0, g.v)(B, g.d.STREAM, false)
+    }, d = s.g5r, I = E.intl.string(E.t.S5anIS)) : R ? (t = false, l = () => {
+      W(), (0, g.v)(B, g.d.STREAM, true)
+    }, d = s.hGI, I = null != D ? E.intl.formatToPlainString(E.t.AB5gT0, {
+      game: D.name
+    }) : E.intl.string(E.t.FeUKeH)) : (t = true, l = null, d = s.hGI, I = null != A && (0, y.vd)(A.type) ? E.intl.string(E.t.uQn9Bw) : null != w ? E.intl.string(E.t.fBXEoK) : E.intl.string(E.t.n3feND)), (0, r.jsx)("div", {
+      className: S.panelButtonContainer,
+      children: (0, r.jsx)(x.Z, {
+        tooltipText: I,
         disabled: t,
         onClick: l,
         icon: d
       })
     })) : null,
-    K = B && null == D ? (0, r.jsx)(j.Z, {
-      tooltipText: C.intl.string(C.t["hC/Ze3"]),
-      onClick: F,
+    J = F && null == M ? (0, r.jsx)(x.Z, {
+      tooltipText: E.intl.string(E.t["hC/Ze3"]),
+      onClick: V,
       icon: s.ejJ
     }) : null,
-    Y = null == D ? null : (0, r.jsx)(j.Z, {
-      tooltipText: C.intl.string(C.t["R/FK4O"]),
-      onClick: V(D.applicationId, D.location),
+    $ = null == M ? null : (0, r.jsx)(x.Z, {
+      tooltipText: E.intl.string(E.t["R/FK4O"]),
+      onClick: H(M.applicationId, M.location),
       icon: s.PBZ
     }),
-    q = null == I ? null : (0, r.jsx)(g.Z, {}),
-    X = v.Z.getConfig({
-      location: "ActivityActions"
-    }).enabled ? (0, r.jsx)(j.Z, {
+    ee = null == N ? null : (0, r.jsx)(m.Z, {}),
+    et = X && K && !q ? (0, r.jsx)(x.Z, {
+      onClick: Y,
       icon: a.u,
-      tooltipText: C.intl.string(C.t.sbdnp6)
+      tooltipText: E.intl.string(E.t.sbdnp6)
     }) : null;
-  return null == W && null == K && null == Y ? null : (0, r.jsxs)("div", {
-    className: E.actions,
-    children: [X, W, K, null != Y ? Y : q]
+  return null == Q && null == J && null == $ ? null : (0, r.jsxs)("div", {
+    className: S.actions,
+    children: [et, Q, J, null != $ ? $ : ee]
   })
 })

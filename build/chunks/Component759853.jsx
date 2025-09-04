@@ -116,10 +116,10 @@ let C = e => {
   } = e, {
     completionSpring: C,
     startCompletionAnimation: N
-  } = (0, p.G)(), R = (null == (t = E.userStatus) ? true : t.completedAt) != null, P = i.useRef(false), w = (0, u.e7)([f.Z], () => f.Z.useReducedMotion), D = i.useRef(null), x = (0, u.e7)([_.Z], () => _.Z.hasLayers()), L = (0, d.Z)(x), [j, M] = i.useState(null), [k, U] = i.useState(null), G = i.useRef(new s.qA({
+  } = (0, p.G)(), R = (null == (t = E.userStatus) ? true : t.completedAt) != null, P = i.useRef(false), w = (0, u.e7)([f.Z], () => f.Z.useReducedMotion), D = i.useRef(null), x = (0, u.e7)([_.Z], () => _.Z.hasLayers()), L = (0, d.Z)(x), [j, k] = i.useState(null), [M, U] = i.useState(null), G = i.useRef(new s.qA({
     gravity: 0,
     wind: 0
-  })), B = (0, s.uR)(j, k), Z = i.useCallback(() => {
+  })), B = (0, s.uR)(j, M), Z = i.useCallback(() => {
     if (w) return;
     let e = b.current,
       t = D.current;
@@ -167,7 +167,7 @@ let C = e => {
         }).to(e => "translateY(".concat(e, "px)"))
       },
       children: [(0, r.jsx)(s.O_, {
-        ref: M,
+        ref: k,
         className: m.confetti,
         environment: G.current
       }), (0, r.jsx)(s.Ji, {

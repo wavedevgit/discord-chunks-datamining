@@ -3,7 +3,7 @@
 "use strict";
 let r, i, a, o, s, l, c, u, d, f, _, p, h, m, g, E, b, y, O, v, I;
 require.d(exports, {
-  Z: () => eM
+  Z: () => ek
 }), require("./388685.js");
 var T, Chunk392711 = require("./392711.js"),
   Chunk754700 = require("./754700.js"),
@@ -25,7 +25,7 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function M(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function M(e) {
   return e
 }
 
-function k(e, t) {
+function M(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,7 +50,7 @@ function k(e, t) {
 }
 
 function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -71,7 +71,7 @@ function V(e, t) {
 function H(e, t) {
   let n = (o = new Map(o)).get(e);
   if (null != n) {
-    let r = M({}, n, t);
+    let r = k({}, n, t);
     V(e, t), o.set(e, r)
   }
 }
@@ -86,7 +86,7 @@ function W(e, t) {
   let n = o.get(e),
     r = null == n ? true : n.userStatus;
   null != r && null == r.claimedAt && H(e, {
-    userStatus: U(M({}, r), {
+    userStatus: U(k({}, r), {
       claimedAt: t.claimedAt
     })
   })
@@ -111,7 +111,7 @@ function z(e, t) {
       entitlements: t
     });
     null != n && Y(e, n), H(e, {
-      userStatus: U(M({}, i), {
+      userStatus: U(k({}, i), {
         claimedAt: t.claimedAt,
         claimedTier: null != (a = null == n ? true : n.tier) ? a : null
       })
@@ -532,4 +532,4 @@ let ej = new eL(Chunk570140.Z, {
     QUESTS_RESET_OPTIMISTIC_PROGRESS: eC,
     QUESTS_USER_COMPLETION_UPDATE: ex
   }),
-  eM = ej
+  ek = ej

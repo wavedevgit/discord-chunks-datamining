@@ -46,7 +46,7 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function M(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -59,7 +59,7 @@ function M(e) {
   return e
 }
 
-function k(e, t) {
+function M(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -71,7 +71,7 @@ function k(e, t) {
 }
 
 function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -194,9 +194,9 @@ function Z(e) {
       })
     }),
     j = I.Z.getChannel(null == (n = o.channel) ? true : n.id),
-    M = (0, c.e7)([S.Z], () => null != j && S.Z.can(w.Plq.USE_EMBEDDED_ACTIVITIES, j), [j]),
+    k = (0, c.e7)([S.Z], () => null != j && S.Z.can(w.Plq.USE_EMBEDDED_ACTIVITIES, j), [j]),
     {
-      analyticsLocations: k
+      analyticsLocations: M
     } = (0, p.ZP)(_.Z.INVITE_EMBED),
     U = (0, c.Wu)([f.ZP], () => null != j ? f.ZP.getEmbeddedActivitiesForChannel(j.id).filter(e => e.applicationId === E.id).flatMap(e => Array.from(e.userIds)) : [], [j, E.id]),
     G = (0, c.Wu)([A.default], () => U.map(e => A.default.getUser(e)).filter(e => null != e), [U]),
@@ -206,21 +206,21 @@ function Z(e) {
         action: "accept",
         inviter_id: s.author.id,
         invite_message_id: s.id
-      }, k), d.ZP.acceptInviteAndTransitionToInviteChannel({
+      }, M), d.ZP.acceptInviteAndTransitionToInviteChannel({
         inviteKey: o.code,
         context: u("Invite Button Embed"),
-        analyticsLocations: k
+        analyticsLocations: M
       })
-    }, [o, s, k, u]),
+    }, [o, s, M, u]),
     Z = o.state === w.r2o.ACCEPTING,
     V = null != O;
   if (null == O) {
     if (null == o.guild) return (0, r.jsx)(P.Z, {});
     O = (0, R.Qs)(o.guild)
   }
-  let H = V && !M || V && N;
-  return (V && N && (a = x.intl.string(x.t.wJNK8P)), M || (a = x.intl.string(x.t.hHGrW1)), null == o.code || "" === o.code || null == v) ? null : (0, r.jsx)(p.Gt, {
-    value: k,
+  let H = V && !k || V && N;
+  return (V && N && (a = x.intl.string(x.t.wJNK8P)), k || (a = x.intl.string(x.t.hHGrW1)), null == o.code || "" === o.code || null == v) ? null : (0, r.jsx)(p.Gt, {
+    value: M,
     children: (0, r.jsx)(F, {
       app: v,
       activityUsers: G,
@@ -268,7 +268,7 @@ function F(e) {
     disabledReason: f && null != _ ? _ : true,
     onClick: p
   }], [p, u, f, a, d, _]);
-  return (0, r.jsx)(h.W, U(M({
+  return (0, r.jsx)(h.W, U(k({
     header: t.name,
     title: x.intl.string(x.t["7vb6n5"]),
     iconSrc: I

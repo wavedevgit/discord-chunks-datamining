@@ -5,9 +5,9 @@ require.d(exports, {
   L6: () => V,
   Rc: () => Z,
   WH: () => P,
-  aP: () => k,
+  aP: () => M,
   dV: () => F,
-  g: () => M,
+  g: () => k,
   iV: () => j,
   n9: () => U,
   pR: () => L,
@@ -136,17 +136,17 @@ function j(e, t) {
   i && a === r || (0, d.Z)(e)
 }
 
-function M(e) {
+function k(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     n = !(arguments.length > 2) || true === arguments[2] || arguments[2];
-  n && k(e, t), s.Z.dispatch({
+  n && M(e, t), s.Z.dispatch({
     type: "STREAM_STOP",
     streamKey: e,
     appContext: __OVERLAY__ ? S.IlC.OVERLAY : S.IlC.APP
   })
 }
 
-function k(e) {
+function M(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
   s.Z.dispatch({
     type: "STREAM_CLOSE",
@@ -238,5 +238,5 @@ function F(e, t) {
 function V() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
     t = Chunk199902.Z.getCurrentUserActiveStream();
-  null != exports && M((0, Chunk569545.V9)(exports), module)
+  null != exports && k((0, Chunk569545.V9)(exports), module)
 }

@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   $5: () => F,
-  I8: () => k,
+  I8: () => M,
   Kt: () => R,
-  RW: () => M,
+  RW: () => k,
   T5: () => V,
   Y3: () => Z,
   Yt: () => T,
@@ -153,9 +153,9 @@ let D = () => {
   },
   L = e => !!D() && null != e && Z(u.Z.getChannel(e)),
   j = e => N() && L(e),
-  M = e => !!j(e) && ((0, m.mN)(g.L0.NSFW_VOICE_CHANNEL), true);
+  k = e => !!j(e) && ((0, m.mN)(g.L0.NSFW_VOICE_CHANNEL), true);
 
-function k(e, t, n) {
+function M(e, t, n) {
   if (x(e)) {
     let e = null != n && v.includes(n) ? n : g.L0.NSFW_SERVER;
     (0, m.mN)(e);

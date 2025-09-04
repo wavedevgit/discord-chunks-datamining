@@ -2,7 +2,7 @@
 /** chunk id: 430198, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => M
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -148,7 +148,7 @@ function j(e) {
   } = e;
   I.add(t)
 }
-class M extends(r = Chunk442837.ZP.Store) {
+class k extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk430824.Z, Chunk485386.Z, Chunk592125.Z, Chunk160404.Z), Chunk644542.Zo.subscribe({
       location: "1"
@@ -169,8 +169,8 @@ class M extends(r = Chunk442837.ZP.Store) {
     return !!(null != n && null != n.parent_id && _.Ec.has(null == n ? true : n.type)) && this.isChannelOrThreadParentGated(e, n.parent_id)
   }
 }
-O(M, "displayName", "GatedChannelStore");
-let k = new M(Chunk570140.Z, {
+O(k, "displayName", "GatedChannelStore");
+let M = new k(Chunk570140.Z, {
   CONNECTION_OPEN: R,
   OVERLAY_INITIALIZE: R,
   CACHE_LOADED_LAZY: R,

@@ -20,7 +20,7 @@ require.d(exports, {
   bA: () => ea,
   e5: () => ei,
   eN: () => eo,
-  eQ: () => eM,
+  eQ: () => ek,
   fN: () => eO,
   iO: () => ey,
   kJ: () => ev,
@@ -30,7 +30,7 @@ require.d(exports, {
   t5: () => eb,
   tP: () => el,
   uA: () => eE,
-  vf: () => ek,
+  vf: () => eM,
   z: () => ep,
   z6: () => eI,
   zB: () => eB
@@ -316,7 +316,7 @@ function el(e) {
 }
 
 function ec(e) {
-  return r.useMemo(() => (0, S.q8)(e) || (0, S.Pb)(e) || (0, S.pO)(e) || (0, S.Vl)(e) ? k.intl.string(k.t.hvVgAQ) : k.intl.string(k.t.lwQdjI), [e])
+  return r.useMemo(() => (0, S.q8)(e) || (0, S.Pb)(e) || (0, S.pO)(e) || (0, S.Vl)(e) ? M.intl.string(M.t.hvVgAQ) : M.intl.string(M.t.lwQdjI), [e])
 }
 
 function eu(e) {
@@ -404,12 +404,12 @@ function eb(e, t, n, r) {
   });
   if ((0, S.$J)(e) && !(0, S.Nj)({
       quest: e
-    })) return k.intl.format(k.t["l4S+cX"], {
+    })) return M.intl.format(M.t["l4S+cX"], {
     minutes: i,
     onClick: o,
     gameTitle: x.r.build(e.config).application.name
   });
-  if ((0, S.$J)(e)) return k.intl.format(k.t.Ajlcd3, {
+  if ((0, S.$J)(e)) return M.intl.format(M.t.Ajlcd3, {
     minutes: i,
     onClick: o,
     gameTitle: x.r.build(e.config).application.name
@@ -417,18 +417,18 @@ function eb(e, t, n, r) {
   if ((0, S.q8)(e)) {
     let t = x.r.build(e.config).defaultWatchVideoTask,
       n = null == t ? true : t.messages.videoTitle;
-    return null == n ? k.intl.string(k.t["o+e9ys"]) : k.intl.formatToPlainString(k.t["9m9MnZ"], {
+    return null == n ? M.intl.string(M.t["o+e9ys"]) : M.intl.formatToPlainString(M.t["9m9MnZ"], {
       videoTitle: n
     })
   }
   if (null != a) return a.title;
-  if ((0, S.pO)(e) && (0, S.KM)(e)) return k.intl.format(k.t["1NaRSk"], {
+  if ((0, S.pO)(e) && (0, S.KM)(e)) return M.intl.format(M.t["1NaRSk"], {
     minutes: i
   });
-  let s = k.t["6zWtV1"];
+  let s = M.t["6zWtV1"];
   return (0, S.Nj)({
     quest: e
-  }) && (s = k.t["wmOh/v"]), k.intl.format(s, {
+  }) && (s = M.t["wmOh/v"]), M.intl.format(s, {
     minutes: i,
     gameTitle: e.config.messages.gameTitle
   })
@@ -604,7 +604,7 @@ function eP(e, t) {
     }),
     s = (null == (n = e.userStatus) ? true : n.claimedAt) != null,
     l = eu(null == (r = e.userStatus) ? true : r.claimedAt);
-  return s ? k.intl.formatToPlainString(k.t.lOVr0N, {
+  return s ? M.intl.formatToPlainString(M.t.lOVr0N, {
     claimDate: l
   }) : null != a ? a.description : null != o ? o : null
 }
@@ -681,7 +681,7 @@ function ex(e) {
     p = (0, O.isWeb)() && _ && !(0, S.Gd)(e),
     h = (0, O.isMac)() && i.taskType === o.X.STREAM_ON_DESKTOP && _,
     m = [];
-  return h && m.push(k.intl.string(k.t.MFGxFB)), p && m.push(k.intl.string(k.t.BV6xDg)), m
+  return h && m.push(M.intl.string(M.t.MFGxFB)), p && m.push(M.intl.string(M.t.BV6xDg)), m
 }
 
 function eL(e) {
@@ -717,7 +717,7 @@ function ej(e) {
   }, [a, n, i])
 }
 
-function eM(e) {
+function ek(e) {
   var t, n;
   let r = (0, c.e7)([h.default], () => h.default.locale),
     i = em(e),
@@ -725,19 +725,19 @@ function eM(e) {
     o = eg(e),
     s = (null == (t = e.userStatus) ? true : t.completedAt) != null,
     l = null != o ? o.percentComplete : i.percentComplete;
-  if (s) return k.intl.string(k.t["ij5E//"]);
+  if (s) return M.intl.string(M.t["ij5E//"]);
   if ((null == (n = e.userStatus) ? true : n.enrolledAt) != null && l > 0) {
     let e = (0, y.T3)(r, l, {
       roundingMode: "floor"
     });
-    return k.intl.formatToPlainString(k.t.lVZaXF, {
+    return M.intl.formatToPlainString(M.t.lVZaXF, {
       percent: e
     })
   }
-  return a === N.LI.SELECT ? k.intl.string(k.t.EMrUHR) : (0, S.$J)(e) ? k.intl.string(k.t.mOrpXF) : k.intl.string(k.t["7e5k7O"])
+  return a === N.LI.SELECT ? M.intl.string(M.t.EMrUHR) : (0, S.$J)(e) ? M.intl.string(M.t.mOrpXF) : M.intl.string(M.t["7e5k7O"])
 }
 
-function ek(e) {
+function eM(e) {
   var t;
   let {
     quest: n,
@@ -751,21 +751,21 @@ function ek(e) {
     taskDetails: l,
     sourceQuestContent: a
   }), _ = null != c ? c.percentComplete : l.percentComplete;
-  if (u) return k.intl.formatToPlainString(k.t.APddvL, {
+  if (u) return M.intl.formatToPlainString(M.t.APddvL, {
     expirationDate: s
   });
   if (i)
-    if (o === N.LI.SELECT) return k.intl.string(k.t.sWUpNz);
+    if (o === N.LI.SELECT) return M.intl.string(M.t.sWUpNz);
     else return f;
-  if ((0, S.q8)(n)) return k.intl.string(k.t["o+e9ys"]);
+  if ((0, S.q8)(n)) return M.intl.string(M.t["o+e9ys"]);
   if (_ > 0)
-    if (!d) return k.intl.string(k.t.mOrpXF);
+    if (!d) return M.intl.string(M.t.mOrpXF);
     else return (0, S.AV)({
       quest: n,
       taskDetails: l,
       thirdPartyTaskDetails: null != c ? c : true
     });
-  return k.intl.string(k.t.S6UUc3)
+  return M.intl.string(M.t.S6UUc3)
 }
 
 function eU(e, t) {
@@ -785,29 +785,29 @@ function eG(e) {
     i = (0, S._p)(e),
     a = (0, S.f$)(e),
     o = (0, c.e7)([g.default], () => g.default.getCurrentUser()),
-    s = (0, v.I5)(o, M.p9.TIER_2);
-  if (null == n) return k.intl.formatToPlainString(k.t.l9uXLy, {
+    s = (0, v.I5)(o, k.p9.TIER_2);
+  if (null == n) return M.intl.formatToPlainString(M.t.l9uXLy, {
     decorationName: t
   });
-  let l = k.intl.formatToPlainString(k.t.o97tNj, {
+  let l = M.intl.formatToPlainString(M.t.o97tNj, {
       rewardName: t
     }),
-    u = k.intl.formatToPlainString(k.t.PkyRZm, {
+    u = M.intl.formatToPlainString(M.t.PkyRZm, {
       rewardName: t,
       expirationDate: r
     }),
-    d = k.intl.formatToPlainString(k.t.ie4YKy, {
+    d = M.intl.formatToPlainString(M.t.ie4YKy, {
       rewardName: t,
       duration: n
     }),
-    f = k.intl.formatToPlainString(k.t.yCpc0d, {
+    f = M.intl.formatToPlainString(M.t.yCpc0d, {
       duration: n,
       rewardName: t
     }),
     _ = s ? l : d,
     p = s ? u : f,
     h = i ? _ : p;
-  return a ? h : k.intl.formatToPlainString(k.t.tTlItr, {
+  return a ? h : M.intl.formatToPlainString(M.t.tTlItr, {
     duration: n,
     decorationName: t
   })

@@ -2,10 +2,10 @@
 /** chunk id: 86419, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $b: () => k,
+  $b: () => M,
   A5: () => b,
   Bu: () => j,
-  ES: () => M,
+  ES: () => k,
   Gv: () => I,
   Hy: () => y,
   M8: () => v,
@@ -199,7 +199,7 @@ function j(e, t, n) {
   c.Z.setPendingWidgets(l)
 }
 
-function M(e, t) {
+function k(e, t) {
   var n, r, i;
   let a, s = N(),
     l = s.find(t => t.type === e),
@@ -214,7 +214,7 @@ function M(e, t) {
   c.Z.setPendingWidgets(f), o.Z.getDetectableGamesSupplemental([t.applicationId])
 }
 
-function k(e, t) {
+function M(e, t) {
   let n = N(),
     r = n.find(t => t.type === e);
   if (null == r) return;

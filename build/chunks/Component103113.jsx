@@ -63,12 +63,12 @@ function P(e) {
     openedAt: x,
     setPopoutRef: L,
     closePopout: j,
-    disableUserProfileLink: M = __OVERLAY__,
-    newAnalyticsLocations: k = [],
+    disableUserProfileLink: k = __OVERLAY__,
+    newAnalyticsLocations: M = [],
     disableAutoFocus: U = false
   } = e, G = (0, h.ZP)(n.id, N), {
     analyticsLocations: B
-  } = (0, l.ZP)([...k, s.Z.USER_PROFILE_POPOUT]), Z = (0, _.ZB)({
+  } = (0, l.ZP)([...M, s.Z.USER_PROFILE_POPOUT]), Z = (0, _.ZB)({
     layout: "POPOUT",
     userId: n.id,
     guildId: N,
@@ -85,7 +85,7 @@ function P(e) {
         hideRestrictedProfile: true
       }, Z))
     },
-    Y = !M && (0, c.Z)(n.id),
+    Y = !k && (0, c.Z)(n.id),
     W = () => Y ? (0, r.jsx)(a.sNh, {
       id: "view-profile",
       label: A.intl.string(A.t["+Xp3ho"]),

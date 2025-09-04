@@ -237,11 +237,11 @@ function j(e) {
   return null != n && T(null != t ? t : g.ME).updateVoiceState(n)
 }
 
-function M() {
+function k() {
   return a().reduce(I, (e, t) => t.updateUsers() || e, false)
 }
 
-function k(e) {
+function M(e) {
   let {
     guildId: t,
     user: n
@@ -274,7 +274,7 @@ function B() {
 }
 class Z extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    B(), this.waitFor(Chunk314897.default, Chunk594174.default, Chunk271383.ZP, Chunk979651.Z), this.syncWith([Chunk594174.default], M)
+    B(), this.waitFor(Chunk314897.default, Chunk594174.default, Chunk271383.ZP, Chunk979651.Z), this.syncWith([Chunk594174.default], k)
   }
   getVoiceStates(e) {
     return T(null != e ? e : g.ME).getVoiceStates()
@@ -306,7 +306,7 @@ let F = new Z(Chunk570140.Z, {
   OVERLAY_INITIALIZE: D,
   VOICE_CHANNEL_SELECT: j,
   VOICE_STATE_UPDATES: x,
-  GUILD_MEMBER_UPDATE: k,
+  GUILD_MEMBER_UPDATE: M,
   GUILD_CREATE: U,
   GUILD_DELETE: G,
   PASSIVE_UPDATE_V2: L

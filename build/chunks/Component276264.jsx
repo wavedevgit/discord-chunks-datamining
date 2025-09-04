@@ -40,7 +40,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk894723 = require("./894723.js");
 
-function k(e, t, n) {
+function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -56,7 +56,7 @@ function U(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      k(e, t, n[t])
+      M(e, t, n[t])
     })
   }
   return e
@@ -110,7 +110,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         size: "md",
         color: "currentColor"
       }, e), {
-        className: M.ownerIcon
+        className: k.ownerIcon
       }))
     }) : null
   }),
@@ -128,7 +128,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         tabIndex: false,
         children: (0, r.jsx)(c.$Eu, B(U({}, e), {
           color: c.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
-          className: M.premiumIcon
+          className: k.premiumIcon
         }))
       })
     })
@@ -140,7 +140,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
     if (null == t || !t.bot) return null;
     let n = x.Hb.BOT;
     return (0, r.jsx)(h.Z, {
-      className: M.botTag,
+      className: k.botTag,
       type: n,
       verified: t.isVerifiedBot()
     })
@@ -191,7 +191,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         colorString: n,
         colorStrings: i,
         name: a,
-        className: M.name,
+        className: k.name,
         displayNameStylesFont: d,
         animateRoleGradient: u
       }), !o && (0, r.jsx)(v.ZP, {
@@ -199,7 +199,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         userId: null == s ? true : s.id,
         contextGuildId: l,
         disableGuildProfile: true,
-        className: M.clanTag
+        className: k.clanTag
       })]
     })
   }),
@@ -295,7 +295,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       shouldAnimateStatus: x = false,
       isMobile: L,
       premiumSince: j,
-      channel: k,
+      channel: M,
       guildId: G,
       className: F,
       nameplate: V,
@@ -340,8 +340,8 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       n && eL(false)
     }, [n]);
     let ej = (0, S.fN)(v),
-      eM = null != ej && !e_ && n && !ex,
-      ek = i.useCallback(() => {
+      ek = null != ej && !e_ && n && !ex,
+      eM = i.useCallback(() => {
         eg(true)
       }, []),
       eU = i.useCallback(() => {
@@ -367,12 +367,12 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       })), [ej, eh, I, eD, b, ef]);
     return null == y ? (0, r.jsx)(m.Z, {
       avatarSize: c.EFr.SIZE_32,
-      className: M.placeholder
+      className: k.placeholder
     }) : (0, r.jsx)(c.yRy, {
       targetElementRef: eh,
       renderPopout: eF,
       position: "bottom",
-      shouldShow: eM,
+      shouldShow: ek,
       nudgeAlignIntoViewport: false,
       useRawTargetDimensions: true,
       animation: c.yRy.Animation.NONE,
@@ -380,21 +380,21 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       children: () => (0, r.jsx)(g.Z, U({
         ref: eh,
         selected: n,
-        className: o()(M.member, F, {
-          [M.offline]: P === D.Skl.OFFLINE && !n,
-          [M.flatBottom]: eM
+        className: o()(k.member, F, {
+          [k.offline]: P === D.Skl.OFFLINE && !n,
+          [k.flatBottom]: ek
         }),
-        innerClassName: M.memberInner,
+        innerClassName: k.memberInner,
         onClick: ee,
         onKeyDown: $,
         onMouseDown: J,
         onContextMenu: et,
-        onMouseEnter: ek,
+        onMouseEnter: eM,
         onMouseLeave: eU,
         onBlur: eB,
         hovered: em,
         name: null == h ? (0, r.jsx)("span", {
-          className: M.username,
+          className: k.username,
           children: (0, r.jsx)(q, {
             colorRoleName: u,
             colorString: null != a ? a : null,
@@ -408,7 +408,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         }) : (0, r.jsx)(c.ua7, {
           text: h,
           children: e => (0, r.jsx)("span", B(U({}, e), {
-            className: o()(M.username, M.lostPermission),
+            className: o()(k.username, k.lostPermission),
             children: (0, r.jsx)(q, {
               colorRoleName: u,
               colorString: null != a ? a : null,
@@ -443,7 +443,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
           applicationStream: I,
           voiceStatusChannel: eT,
           user: y,
-          channel: k,
+          channel: M,
           isHoveringOrFocusing: em || eE,
           quest: ej,
           hideTooltip: K

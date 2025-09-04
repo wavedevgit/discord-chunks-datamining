@@ -106,7 +106,7 @@ let Y = e => {
       isSelf: i
     } = e;
     return i && null == t ? (0, r.jsx)(l.u, {
-      text: k.intl.string(k.t.qstQub),
+      text: M.intl.string(M.t.qstQub),
       children: (0, r.jsx)(c.svS, {
         className: o()(U.icon, n)
       })
@@ -177,7 +177,7 @@ function K(e) {
       serverDeaf: d
     });
   h && (a ? V.push((0, r.jsx)(l.u, {
-    text: k.intl.string(k.t["PXMZ//"]),
+    text: M.intl.string(M.t["PXMZ//"]),
     children: (0, r.jsx)(c.Amn, {
       size: "md",
       color: "currentColor",
@@ -185,14 +185,14 @@ function K(e) {
       colorClass: U.strikethrough
     })
   }, "video")) : V.push((0, r.jsx)(l.u, {
-    text: k.intl.string(k.t.FlNoSU),
+    text: M.intl.string(M.t.FlNoSU),
     children: (0, r.jsx)(c.Odl, {
       size: "md",
       color: "currentColor",
       className: o()(U.icon, y)
     })
   }, "video"))), N && V.push((0, r.jsx)(l.u, {
-    text: k.intl.string(k.t.HFwRpq),
+    text: M.intl.string(M.t.HFwRpq),
     children: (0, r.jsx)(c.Mgn, {
       className: o()(U.icon, y),
       color: c.TVs.colors.STATUS_WARNING_BACKGROUND
@@ -206,12 +206,12 @@ function K(e) {
       color: "currentColor",
       className: o()(U.icon, y)
     })
-  }, "activity")), v === M.YE.XBOX || I === j.wR.XBOX ? V.push((0, r.jsx)(P.Z, {
+  }, "activity")), v === k.YE.XBOX || I === j.wR.XBOX ? V.push((0, r.jsx)(P.Z, {
     className: o()(U.icon, y)
-  }, "xbox")) : (v === M.YE.PLAYSTATION || I === j.wR.PLAYSTATION) && V.push((0, r.jsx)(R.Z, {
+  }, "xbox")) : (v === k.YE.PLAYSTATION || I === j.wR.PLAYSTATION) && V.push((0, r.jsx)(R.Z, {
     className: o()(U.icon, y)
   }, "playstation")), b && V.push((0, r.jsx)(l.u, {
-    text: k.intl.string(k.t.JH1SJy),
+    text: M.intl.string(M.t.JH1SJy),
     children: (0, r.jsx)(c.tEF, {
       size: "xs",
       color: "currentColor",
@@ -264,7 +264,7 @@ function z(e, t) {
     onDoubleClick: R,
     onContextMenu: P,
     onMouseLeave: w,
-    onMouseDown: M,
+    onMouseDown: k,
     priority: G,
     speaking: Z,
     collapsed: H,
@@ -309,12 +309,12 @@ function z(e, t) {
       null == w || w(e, en)
     },
     em = e => {
-      null == M || M(e, en)
+      null == k || k(e, en)
     };
 
   function eg() {
     return G && !H ? (0, r.jsx)(c.ua7, {
-      text: k.intl.string(k.t.BVK71t),
+      text: M.intl.string(M.t.BVK71t),
       children: e => (0, r.jsx)("div", B({
         className: o()(U.iconPriortySpeaker, {
           [U.iconPriortySpeakerSpeaking]: !Y && !W && Z
@@ -343,7 +343,7 @@ function z(e, t) {
         }),
         children: [null != q ? q : D.ZP.getName(en), X ? (0, r.jsxs)("span", {
           className: U.guestSuffix,
-          children: ["\xa0", k.intl.string(k.t["pFO/Pj"])]
+          children: ["\xa0", M.intl.string(M.t["pFO/Pj"])]
         }) : ""]
       }),
       t = {
@@ -385,7 +385,7 @@ function z(e, t) {
   function ev() {
     return H || !es || el ? null : (0, r.jsx)(l.u, {
       asContainer: true,
-      text: k.intl.string(k.t["+1H47u"]),
+      text: M.intl.string(M.t["+1H47u"]),
       children: (0, r.jsx)(c.P3F, {
         className: o()(U.optionsButton, {
           [U.optionsActive]: eu
@@ -456,10 +456,10 @@ function X(e) {
     })
   };
   return (0, r.jsx)(l.u, {
-    text: k.intl.formatToPlainString(k.t.Sq9xJy, {
+    text: M.intl.formatToPlainString(M.t.Sq9xJy, {
       game: t.name
     }),
-    "aria-label": k.intl.formatToPlainString(k.t.Sq9xJy, {
+    "aria-label": M.intl.formatToPlainString(M.t.Sq9xJy, {
       game: t.name
     }),
     children: (0, r.jsx)(y.Z, {
@@ -482,7 +482,7 @@ function Q(e) {
     serverDeaf: u
   } = e, d = [];
   if (n) {
-    let e, n = () => i ? k.intl.string(k.t.Q8Uzoa) : a ? k.intl.string(k.t.uLddbW) : k.intl.string(k.t.tjtv3N);
+    let e, n = () => i ? M.intl.string(M.t.Q8Uzoa) : a ? M.intl.string(M.t.uLddbW) : M.intl.string(M.t.tjtv3N);
     e = a || i ? c.v0G : c.nRN;
     let s = (0, r.jsx)(e, {
       className: o()(U.icon, t, {
@@ -504,7 +504,7 @@ function Q(e) {
         color: "currentColor"
       });
     d.push((0, r.jsx)(l.u, {
-      text: u ? k.intl.string(k.t.btxSdH) : k.intl.string(k.t.NjmiOD),
+      text: u ? M.intl.string(M.t.btxSdH) : M.intl.string(M.t.NjmiOD),
       children: n
     }, "deaf"))
   }

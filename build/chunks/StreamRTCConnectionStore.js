@@ -57,18 +57,18 @@ function j(e, t, n, i) {
   })
 }
 
-function M() {
+function k() {
   l().forEach(L, (e, t) => {
     e.destroy(e.isOwner ? "sender-disconnect" : "receiver-disconnect"), delete L[t], delete D[t]
   })
 }
 
-function k(e) {
-  r = e.sessionId, M()
+function M(e) {
+  r = e.sessionId, k()
 }
 
 function U() {
-  r = null, M()
+  r = null, k()
 }
 
 function G(e) {
@@ -335,7 +335,7 @@ class $ extends(i = Chunk442837.ZP.Store) {
 }
 A($, "displayName", "StreamRTCConnectionStore");
 let ee = new $(Chunk570140.Z, !Chunk131951.Z.isSupported() || __OVERLAY__ ? {} : {
-  CONNECTION_OPEN: k,
+  CONNECTION_OPEN: M,
   CONNECTION_CLOSED: U,
   RTC_CONNECTION_STATE: K,
   RTC_CONNECTION_PING: K,

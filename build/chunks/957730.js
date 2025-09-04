@@ -68,13 +68,13 @@ function j(e, t) {
   return n
 }
 
-function M(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function k(e, t, n) {
+function M(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : null;
   if (t[0] !== e) return null;
   let i = t.substr(e.length);
@@ -105,7 +105,7 @@ function k(e, t, n) {
 function U(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : null;
   if (t[0] !== e) return null;
-  if ('"' !== t[1]) return k(e, t, n, r);
+  if ('"' !== t[1]) return M(e, t, n, r);
   let i = 2;
   for (; i < t.length; i++) {
     if ("\\" === t[i]) {
@@ -176,9 +176,9 @@ let Z = Chunk428595.Z.RULES,
       match(e, t, n) {
         let r = n.split(" ").pop() + e;
         if (/^[^ ]+@[^ ]+\.[^ .]+/.test(r)) return null;
-        let i = k("@", e, t.users, "mention");
-        if (i || (i = k("@", e, t.mentionableRoles, "roleMention"))) return i;
-        if (!(i = k("@", e, t.users.map(e => M(L({}, e), {
+        let i = M("@", e, t.users, "mention");
+        if (i || (i = M("@", e, t.mentionableRoles, "roleMention"))) return i;
+        if (!(i = M("@", e, t.users.map(e => k(L({}, e), {
             text: e.text.split("#")[0]
           })), "mention"))) return null;
         let a = z.exec(e);
@@ -256,7 +256,7 @@ let Z = Chunk428595.Z.RULES,
         }
       }
     },
-    text: M(L({}, F), {
+    text: k(L({}, F), {
       match: (e, t) => "string" == typeof t.textExclusions && "" !== t.textExclusions ? (0, f.T9)(t.textExclusions).exec(e) : null != F.match ? F.match(e, t, "") : null
     })
   },
@@ -378,7 +378,7 @@ let Z = Chunk428595.Z.RULES,
         content: "<id:".concat(e[1], ">")
       })
     },
-    timestamp: M(L({}, Z.timestamp), {
+    timestamp: k(L({}, Z.timestamp), {
       parse() {
         for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
         let r = Z.timestamp.parse(...exports);
