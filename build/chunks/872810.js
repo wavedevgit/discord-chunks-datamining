@@ -2,19 +2,19 @@
 /** chunk id: 872810, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  L6: () => F,
-  Rc: () => B,
-  WH: () => R,
-  aP: () => M,
-  dV: () => Z,
-  g: () => j,
-  iV: () => L,
-  n9: () => k,
-  pR: () => x,
-  rn: () => D,
-  tK: () => P,
-  xc: () => U,
-  zf: () => G
+  L6: () => V,
+  Rc: () => Z,
+  WH: () => P,
+  aP: () => k,
+  dV: () => F,
+  g: () => M,
+  iV: () => j,
+  n9: () => U,
+  pR: () => L,
+  rn: () => x,
+  tK: () => w,
+  xc: () => G,
+  zf: () => B
 });
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -22,6 +22,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk258609 = require("./258609.js"),
+  Chunk595816 = require("./595816.js"),
   Chunk569545 = require("./569545.js"),
   Chunk525925 = require("./525925.js"),
   Chunk522474 = require("./522474.js"),
@@ -42,7 +43,7 @@ require("./287734.js");
 var Chunk981631 = require("./981631.js"),
   Chunk70722 = require("./70722.js");
 
-function A(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -51,32 +52,32 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function C(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      C(e, t, n[t])
     })
   }
   return e
 }
-let N = 2;
+let R = 2;
 
-function R(e, t, n) {
-  s.Z.dispatch(C({
+function P(e, t, n) {
+  s.Z.dispatch(N({
     type: "STREAM_START",
-    streamType: null != e ? S.lo.GUILD : S.lo.CALL,
+    streamType: null != e ? A.lo.GUILD : A.lo.CALL,
     guildId: e,
     channelId: t,
-    appContext: __OVERLAY__ ? T.IlC.OVERLAY : T.IlC.APP
+    appContext: __OVERLAY__ ? S.IlC.OVERLAY : S.IlC.APP
   }, n))
 }
 
-function P(e, t) {
-  let n = (0, c.V9)(e);
+function w(e, t) {
+  let n = (0, u.V9)(e);
   s.Z.dispatch({
     type: "STREAM_SET_PAUSED",
     streamKey: n,
@@ -84,33 +85,38 @@ function P(e, t) {
   })
 }
 
-function w(e, t) {
-  let n = h.Z.getChannel(t);
-  return i()(null != n, "Cannot join a null voice channel"), !E.Z.isInChannel(t) && (0, b.rY)(n, E.Z, m.Z)
-}
-
 function D(e, t) {
-  if (null != l.Z.getRemoteSessionId()) return;
-  let {
-    guildId: n,
-    channelId: r
-  } = e;
-  if (null != n && w(n, r)) return;
-  let i = (0, c.V9)(e),
-    a = (null == t ? true : t.forceMultiple) || _.Z.getAllActiveStreamsForChannel(r).filter(e => {
-      let {
-        ownerId: t
-      } = e;
-      return t !== p.default.getId()
-    }).length >= N;
-  s.Z.dispatch({
-    type: "STREAM_WATCH",
-    streamKey: i,
-    allowMultiple: a
-  }), a || null != t && t.noFocus || I.Z.selectParticipant(e.channelId, i)
+  let n = m.Z.getChannel(t);
+  return i()(null != n, "Cannot join a null voice channel"), !b.Z.isInChannel(t) && (0, y.rY)(n, b.Z, g.Z)
 }
 
 function x(e, t) {
+  let {
+    defaultWatchMultipleStreams: n
+  } = (0, c.$)({
+    location: "StreamActionCreators.watchStream"
+  });
+  if (null != l.Z.getRemoteSessionId()) return;
+  let {
+    guildId: r,
+    channelId: i
+  } = e;
+  if (null != r && D(r, i)) return;
+  let a = (0, u.V9)(e),
+    o = (null == t ? true : t.forceMultiple) || p.Z.getAllActiveStreamsForChannel(i).filter(e => {
+      let {
+        ownerId: t
+      } = e;
+      return t !== h.default.getId()
+    }).length >= R;
+  s.Z.dispatch({
+    type: "STREAM_WATCH",
+    streamKey: a,
+    allowMultiple: o || n
+  }), o || null != t && t.noFocus || T.Z.selectParticipant(e.channelId, a)
+}
+
+function L(e, t) {
   s.Z.dispatch({
     type: "STREAM_UPDATE_SELF_HIDDEN",
     channelId: e,
@@ -118,29 +124,29 @@ function x(e, t) {
   })
 }
 
-function L(e, t) {
+function j(e, t) {
   let {
     guildId: n,
     channelId: r
   } = e;
-  if (null != n && w(n, r)) return;
-  D(e, t);
-  let i = d.Z.getWindowOpen(T.KJ3.CHANNEL_CALL_POPOUT),
-    a = g.Z.getVoiceChannelId();
-  i && a === r || (0, u.Z)(e)
-}
-
-function j(e) {
-  let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
-    n = !(arguments.length > 2) || true === arguments[2] || arguments[2];
-  n && M(e, t), s.Z.dispatch({
-    type: "STREAM_STOP",
-    streamKey: e,
-    appContext: __OVERLAY__ ? T.IlC.OVERLAY : T.IlC.APP
-  })
+  if (null != n && D(n, r)) return;
+  x(e, t);
+  let i = f.Z.getWindowOpen(S.KJ3.CHANNEL_CALL_POPOUT),
+    a = E.Z.getVoiceChannelId();
+  i && a === r || (0, d.Z)(e)
 }
 
 function M(e) {
+  let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
+    n = !(arguments.length > 2) || true === arguments[2] || arguments[2];
+  n && k(e, t), s.Z.dispatch({
+    type: "STREAM_STOP",
+    streamKey: e,
+    appContext: __OVERLAY__ ? S.IlC.OVERLAY : S.IlC.APP
+  })
+}
+
+function k(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
   s.Z.dispatch({
     type: "STREAM_CLOSE",
@@ -148,10 +154,10 @@ function M(e) {
     canShowFeedback: t
   })
 }
-async function k(e, t, n) {
-  if (!f.Z.shouldFetchPreview(e, t, n)) return;
-  let r = (0, c.V9)({
-    streamType: null != e ? S.lo.GUILD : S.lo.CALL,
+async function U(e, t, n) {
+  if (!_.Z.shouldFetchPreview(e, t, n)) return;
+  let r = (0, u.V9)({
+    streamType: null != e ? A.lo.GUILD : A.lo.CALL,
     guildId: e,
     channelId: t,
     ownerId: n
@@ -162,7 +168,7 @@ async function k(e, t, n) {
   });
   try {
     let e = await o.tn.get({
-      url: T.ANM.STREAM_PREVIEW(r),
+      url: S.ANM.STREAM_PREVIEW(r),
       query: {
         version: Date.now()
       },
@@ -176,17 +182,17 @@ async function k(e, t, n) {
     })
   } catch (t) {
     let e;
-    429 === t.status && (e = t.body.retry_after * y.Z.Millis.SECOND), s.Z.dispatch({
+    429 === t.status && (e = t.body.retry_after * O.Z.Millis.SECOND), s.Z.dispatch({
       type: "STREAM_PREVIEW_FETCH_FAIL",
       streamKey: r,
       retryAfter: e
     })
   }
 }
-async function U(e) {
+async function G(e) {
   try {
-    await v.Z.post({
-      url: T.ANM.STREAM_NOTIFY(e),
+    await I.Z.post({
+      url: S.ANM.STREAM_NOTIFY(e),
       oldFormErrors: true,
       trackedActionData: {
         event: a.NetworkActionNames.STREAM_NOTIFY
@@ -195,10 +201,10 @@ async function U(e) {
     })
   } catch (e) {}
 }
-async function G(e, t, n) {
+async function B(e, t, n) {
   try {
-    await v.Z.post({
-      url: T.ANM.STREAM_NOTIFY_V2(e),
+    await I.Z.post({
+      url: S.ANM.STREAM_NOTIFY_V2(e),
       body: {
         application_id: t,
         game_title: n
@@ -212,15 +218,15 @@ async function G(e, t, n) {
   } catch (e) {}
 }
 
-function B(e) {
-  (0, O.Ye)(e.preset, e.resolution, e.frameRate), s.Z.dispatch(C({
+function Z(e) {
+  (0, v.Ye)(e.preset, e.resolution, e.frameRate), s.Z.dispatch(N({
     type: "STREAM_UPDATE_SETTINGS"
   }, e))
 }
 
-function Z(e, t) {
+function F(e, t) {
   o.tn.patch({
-    url: T.ANM.STREAM(e),
+    url: S.ANM.STREAM(e),
     body: {
       region: t
     },
@@ -229,8 +235,8 @@ function Z(e, t) {
   })
 }
 
-function F() {
+function V() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
     t = Chunk199902.Z.getCurrentUserActiveStream();
-  null != exports && j((0, Chunk569545.V9)(exports), module)
+  null != exports && M((0, Chunk569545.V9)(exports), module)
 }

@@ -72,9 +72,7 @@ function w(e) {
     guild: t,
     onSelect: r,
     hideSettings: a
-  } = e, u = t.id, w = E.ZP.getDefaultChannel(u), {
-    entrypoints: I
-  } = (0, b._k)({
+  } = e, u = t.id, w = E.ZP.getDefaultChannel(u), I = (0, b._k)({
     location: "guild_context_menu"
   }), U = (0, l.e7)([O.default], () => {
     let e = O.default.getCurrentUser();
@@ -82,7 +80,7 @@ function w(e) {
   }, [t]), T = (0, x.Z)({
     guild: t,
     source: G.t4x.GUILD_CONTEXT_MENU,
-    channel: I ? null : w
+    channel: I.isGuildEntrypointEnabled ? null : w
   }), R = (0, m.Z)(u), C = (0, P.Z)(t), B = (0, L.Z)(t), Q = (0, A.Z)(t), Y = (0, y.Z)({
     guildId: t.id,
     userId: f.default.getId(),

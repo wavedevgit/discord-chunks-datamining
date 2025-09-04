@@ -199,9 +199,7 @@ function G(e) {
     filterStyle: Q
   } = (0, j.pN)({
     location: "NotificationsInboxSidebar"
-  }), {
-    entrypoints: J
-  } = (0, g._k)({
+  }), J = (0, g._k)({
     location: "NotificationsInboxSidebar"
   }), $ = Q === j.v8.DROPDOWN && h !== A.V5.ALL, ee = (0, A.H_)(h);
   return (0, r.jsx)("nav", {
@@ -220,7 +218,7 @@ function G(e) {
           style: {
             marginRight: false
           },
-          children: Q === j.v8.DROPDOWN && !J && (0, r.jsx)(w.p, {})
+          children: Q === j.v8.DROPDOWN && !J.isGuildEntrypointEnabled && (0, r.jsx)(w.p, {})
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);

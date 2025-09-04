@@ -42,12 +42,10 @@ function d(e, t, n, d) {
         guild: t
       }, p))
     },
-    {
-      entrypoints: f
-    } = (0, a._k)({
+    f = (0, a._k)({
       location: "more_settings_invite_item"
     }),
-    m = f ? i.oLu : i.ejJ;
+    m = f.isInCallEntrypointEnabled ? i.oLu : i.ejJ;
   if (null != d) return (0, r.jsx)(i.sNh, {
     id: "invite-to-stream",
     label: u.intl.string(u.t["OzOM/v"]),
@@ -55,7 +53,7 @@ function d(e, t, n, d) {
     icon: i.ejJ
   });
   if (null == t || null == e || !s.Z.can(c.Plq.CREATE_INSTANT_INVITE, e)) return null;
-  let g = f ? u.intl.string(u.t["EE+P0N"]) : u.intl.string(u.t["6Qgren"]);
+  let g = f.isInCallEntrypointEnabled ? u.intl.string(u.t["EE+P0N"]) : u.intl.string(u.t["6Qgren"]);
   return (0, r.jsx)(i.sNh, {
     id: "invite-friends",
     label: g,

@@ -45,37 +45,37 @@ function d(e, t) {
 }
 
 function p(e) {
-  let t = (0, l.e7)([c.Z], () => c.Z.can(o.Plq.MANAGE_CHANNELS, e));
-  return __OVERLAY__ ? null : e.id === a._ ? (0, r.jsx)(i.sNh, {
+  let t = (0, i.e7)([a.Z], () => a.Z.can(c.Plq.MANAGE_CHANNELS, e));
+  return __OVERLAY__ ? null : e.id === o._ ? (0, r.jsx)(l.sNh, {
     id: "create-category",
     label: u.intl.string(u.t["ISN+ND"]),
-    action: () => (0, i.ZDy)(async () => {
+    action: () => (0, l.ZDy)(async () => {
       let {
         default: e
       } = await n.e("1812").then(n.bind(n, 477782));
       return t => (0, r.jsx)(e, s({}, t))
     })
-  }) : t ? [(0, r.jsx)(i.sNh, {
+  }) : t ? [(0, r.jsx)(l.sNh, {
     id: "create-channel",
     label: u.intl.string(u.t["fUYU+v"]),
-    action: () => (0, i.ZDy)(async () => {
+    action: () => (0, l.ZDy)(async () => {
       let {
         default: t
       } = await Promise.all([n.e("33285"), n.e("45094"), n.e("70725")]).then(n.bind(n, 218613));
       return n => (0, r.jsx)(t, d(s({}, n), {
-        channelType: o.d4z.GUILD_TEXT,
+        channelType: c.d4z.GUILD_TEXT,
         guildId: e.id
       }))
     })
-  }, "create-channel"), (0, r.jsx)(i.sNh, {
+  }, "create-channel"), (0, r.jsx)(l.sNh, {
     id: "create-category",
     label: u.intl.string(u.t["ISN+ND"]),
-    action: () => (0, i.ZDy)(async () => {
+    action: () => (0, l.ZDy)(async () => {
       let {
         default: t
       } = await Promise.all([n.e("33285"), n.e("45094"), n.e("70725")]).then(n.bind(n, 218613));
       return n => (0, r.jsx)(t, d(s({}, n), {
-        channelType: o.d4z.GUILD_CATEGORY,
+        channelType: c.d4z.GUILD_CATEGORY,
         guildId: e.id
       }))
     })

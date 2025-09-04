@@ -1,12 +1,12 @@
 /** Chunk was on 62635 **/
 /** chunk id: 564232, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => y
+  default: () => I
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
-  s = require.n(Chunk392711),
+  u = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk283602 = require("./283602.js");
 
-function I(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -39,15 +39,15 @@ function I(e) {
   return e
 }
 
-function j(e) {
+function w(e) {
   let {
     guildId: t,
-    guildOwnerId: u,
-    member: s
-  } = e, o = g.default.getUser(s.userId), l = i.useRef(null);
-  return (0, n.jsx)(f.Z, {
-    targetElementRef: l,
-    userId: s.userId,
+    guildOwnerId: s,
+    member: u
+  } = e, l = p.default.getUser(u.userId), o = i.useRef(null);
+  return (0, n.jsx)(m.Z, {
+    targetElementRef: o,
+    userId: u.userId,
     guildId: t,
     spacing: 14,
     clickTrap: true,
@@ -55,16 +55,16 @@ function j(e) {
       let {
         isShown: c
       } = i;
-      return (0, n.jsx)(a.Z, I({
-        ref: l,
-        className: h.member,
+      return (0, n.jsx)(a.Z, y({
+        ref: o,
+        className: j.member,
         selected: c,
-        colorString: s.colorString,
-        colorStrings: s.colorStrings,
-        user: o,
-        isOwner: s.userId === u,
-        nick: s.nick,
-        premiumSince: null == s.premiumSince ? null : new Date(s.premiumSince),
+        colorString: u.colorString,
+        colorStrings: u.colorStrings,
+        user: l,
+        isOwner: u.userId === s,
+        nick: u.nick,
+        premiumSince: null == u.premiumSince ? null : new Date(u.premiumSince),
         guildId: t,
         onContextMenu: e => {
           (0, d.jW)(e, async () => {
@@ -72,58 +72,58 @@ function j(e) {
               default: e
             } = await Promise.all([r.e("79695"), r.e("26976"), r.e("52092")]).then(r.bind(r, 415118));
             return r => {
-              var i, u;
-              return (0, n.jsx)(e, (i = I({}, r), u = u = {
-                user: o,
+              var i, s;
+              return (0, n.jsx)(e, (i = y({}, r), s = s = {
+                user: l,
                 guildId: t,
                 showMediaItems: true
-              }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(u)) : (function(e, t) {
+              }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
                 var r = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                   var n = Object.getOwnPropertySymbols(e);
                   r.push.apply(r, n)
                 }
                 return r
-              })(Object(u)).forEach(function(e) {
-                Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(u, e))
+              })(Object(s)).forEach(function(e) {
+                Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
               }), i))
             }
           })
         }
-      }, e), s.userId)
+      }, e), u.userId)
     }
-  }, o.id)
+  }, l.id)
 }
 
-function y(e) {
+function I(e) {
   let {
     guild: t,
     transitionState: r,
-    onClose: u
+    onClose: s
   } = e, d = i.useMemo(() => b.Z.getFriendIDs(), []);
   i.useEffect(() => {
-    p.Z.fetchFriendMembersIfNotFetched(t.id, d)
+    g.Z.fetchFriendMembersIfNotFetched(t.id, d)
   }, [t.id, d]);
-  let a = (0, o.e7)([m.ZP], () => m.ZP.getMembers(t.id)),
-    f = i.useMemo(() => s()(a).filter(e => !!d.includes(e.userId) && null != g.default.getUser(e.userId)).sortBy(e => {
+  let a = (0, l.e7)([f.ZP], () => f.ZP.getMembers(t.id)),
+    m = i.useMemo(() => u()(a).filter(e => !!d.includes(e.userId) && null != p.default.getUser(e.userId)).sortBy(e => {
       var t;
-      let r = g.default.getUser(e.userId);
+      let r = p.default.getUser(e.userId);
       return (null != r ? null != (t = e.nick) ? t : r.username : "").toLocaleLowerCase()
-    }).map(e => (0, n.jsx)(j, {
+    }).map(e => (0, n.jsx)(w, {
       guildId: t.id,
       guildOwnerId: t.ownerId,
       member: e
     }, e.userId)).value(), [d, t.id, t.ownerId, a]),
-    h = p.Z.isFetchingFriendsForGuild(t.id);
-  return (0, n.jsxs)(l.Modal, {
+    j = g.Z.isFetchingFriendsForGuild(t.id);
+  return (0, n.jsxs)(o.Modal, {
     title: O.intl.string(O.t.kYxEcH),
-    subtitle: O.intl.format(h ? O.t.EtQnZm : O.t.OgMdNT, {
+    subtitle: O.intl.format(j ? O.t.EtQnZm : O.t.OgMdNT, {
       guildName: t.name,
-      numFriends: f.length
+      numFriends: m.length
     }),
     actions: true,
     transitionState: r,
-    onClose: u,
-    children: [h && (0, n.jsx)(c.$jN, {}), f]
+    onClose: s,
+    children: [j && (0, n.jsx)(c.$jN, {}), m]
   })
 }

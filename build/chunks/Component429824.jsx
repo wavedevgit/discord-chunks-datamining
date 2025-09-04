@@ -1,5 +1,5 @@
 /** Chunk was on 87154 **/
-/** chunk id: 429824, original params: e,t,r (module,exports,require) **/
+/** chunk id: 429824, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
 });
@@ -17,57 +17,57 @@ function b(e) {
     {
       shouldShowIncidentActions: b,
       isUnderLockdown: p,
-      incidentData: O
+      incidentData: d
     } = (0, o.mI)(e.id),
-    f = i.useCallback(() => {
+    O = i.useCallback(() => {
       let t = {
         source: c.Zu.CONTEXT_MENU,
-        alertType: (0, a.T1)(O)
+        alertType: (0, a.T1)(d)
       };
       (0, l.ZDy)(async () => {
         let {
           default: i
-        } = await Promise.all([r.e("58175"), r.e("41187")]).then(r.bind(r, 664452));
-        return r => {
+        } = await Promise.all([n.e("58175"), n.e("41187")]).then(n.bind(n, 664452));
+        return n => {
           var l, o;
-          return (0, n.jsx)(i, (l = function(e) {
+          return (0, r.jsx)(i, (l = function(e) {
             for (var t = 1; t < arguments.length; t++) {
-              var r = null != arguments[t] ? arguments[t] : {},
-                n = Object.keys(r);
-              "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(r, e).enumerable
-              }))), n.forEach(function(t) {
-                var n;
-                n = r[t], t in e ? Object.defineProperty(e, t, {
-                  value: n,
+              var n = null != arguments[t] ? arguments[t] : {},
+                r = Object.keys(n);
+              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(n, e).enumerable
+              }))), r.forEach(function(t) {
+                var r;
+                r = n[t], t in e ? Object.defineProperty(e, t, {
+                  value: r,
                   enumerable: true,
                   configurable: true,
                   writable: true
-                }) : e[t] = n
+                }) : e[t] = r
               })
             }
             return e
-          }({}, r), o = o = {
+          }({}, n), o = o = {
             guildId: e.id,
             analyticsData: t
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
-            var r = Object.keys(e);
+            var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
-              var n = Object.getOwnPropertySymbols(e);
-              r.push.apply(r, n)
+              var r = Object.getOwnPropertySymbols(e);
+              n.push.apply(n, r)
             }
-            return r
+            return n
           })(Object(o)).forEach(function(e) {
             Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(o, e))
           }), l))
         }
       })
-    }, [e.id, O]);
-  return e.features.has(u.oNc.COMMUNITY) && b ? (0, n.jsx)(l.sNh, {
+    }, [e.id, d]);
+  return e.features.has(u.oNc.COMMUNITY) && b ? (0, r.jsx)(l.sNh, {
     id: "server-lockdown",
     label: p ? s.intl.string(s.t["+tSVi4"]) : s.intl.string(s.t.EPlEdn),
     icon: t ? p ? l.d$P : l.mBM : true,
-    action: f,
+    action: O,
     color: "danger"
   }) : null
 }

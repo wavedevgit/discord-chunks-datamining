@@ -157,14 +157,12 @@ function A(e) {
     tabIndex: u,
     forceShowButtons: f,
     hasChannelInfo: b = false
-  } = e, {
-    entrypoints: v
-  } = (0, p._k)({
+  } = e, v = (0, p._k)({
     location: "channel_base"
-  }), j = (0, s.e7)([y.Z], () => y.Z.getGuild(t.getGuildId())), S = (0, s.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), N = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), Z = (0, s.e7)([_.Z], () => (0, h.b)(_.Z, j, t, S)), w = (0, s.e7)([_.Z], () => _.Z.can(x.Plq.CREATE_INSTANT_INVITE, t) ? C.intl.string(C.t.zJrgTE) : C.intl.string(C.t.Sd8Ix8)), T = v ? C.intl.string(C.t["EE+P0N"]) : w, A = l.useRef(null);
+  }), j = (0, s.e7)([y.Z], () => y.Z.getGuild(t.getGuildId())), S = (0, s.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), N = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), Z = (0, s.e7)([_.Z], () => (0, h.b)(_.Z, j, t, S)), w = (0, s.e7)([_.Z], () => (null == t ? true : t.type) === x.d4z.GUILD_VOICE && v.isVoiceChannelEntrypointEnabled ? C.intl.string(C.t["EE+P0N"]) : v.isTextChannelEntrypointEnabled ? C.intl.string(C.t["0jeAXl"]) : _.Z.can(x.Plq.CREATE_INSTANT_INVITE, t) ? C.intl.string(C.t.zJrgTE) : C.intl.string(C.t.Sd8Ix8)), T = l.useRef(null);
   if (o || !Z || t.isModeratorReportChannel()) return null;
 
-  function R() {
+  function A() {
     if (null != j) {
       let e = O.Z.getAllActiveStreams().filter(e => e.state !== x.jm8.ENDED && e.channelId === t.id);
       (0, c.ZDy)(async () => {
@@ -181,30 +179,30 @@ function A(e) {
       })
     }
   }
-  let D = v ? c.oLu : c.ejJ,
-    M = (0, i.jsx)(D, {
+  let R = [v.isVoiceChannelEntrypointEnabled, v.isTextChannelEntrypointEnabled].some(Boolean) ? c.oLu : c.ejJ,
+    D = (0, i.jsx)(R, {
       size: "xs",
       className: E.actionIcon,
       "aria-hidden": true,
       color: "currentColor"
     });
-  return r && (M = (0, i.jsx)(m.Z, {
-    childRef: A,
+  return r && (D = (0, i.jsx)(m.Z, {
+    childRef: T,
     tutorialId: "instant-invite",
     position: "left",
     children: (0, i.jsx)("div", {
-      ref: A,
-      children: M
+      ref: T,
+      children: D
     })
   })), (0, i.jsx)(c.ua7, {
-    text: T,
+    text: w,
     children: e => (0, i.jsx)(c.P3F, I(P({
       className: a()(E.iconItem, f ? E.alwaysShown : true, b ? E.iconWithChannelInfo : E.iconNoChannelInfo)
     }, e), {
-      onClick: R,
+      onClick: A,
       tabIndex: u,
-      "aria-label": T,
-      children: M
+      "aria-label": w,
+      children: D
     }))
   })
 }

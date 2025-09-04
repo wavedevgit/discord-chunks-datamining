@@ -1,5 +1,5 @@
 /** Chunk was on 87154 **/
-/** chunk id: 837949, original params: e,t,r (module,exports,require) **/
+/** chunk id: 837949, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
 });
@@ -16,9 +16,9 @@ var Chunk442837 = require("./442837.js"),
 
 function p(e) {
   let t = (0, u.DM)(e),
-    r = (0, i.e7)([o.Z], () => o.Z.getGuild(e)),
+    n = (0, i.e7)([o.Z], () => o.Z.getGuild(e)),
     p = (0, i.e7)([c.default], () => c.default.getCurrentUser());
-  return null != p && null != r && (r.features.has(s.oNc.COMMUNITY) || p.isStaff()) ? (0, n.jsx)(l.S89, {
+  return null != p && null != n && (n.features.has(s.oNc.COMMUNITY) || p.isStaff()) ? (0, r.jsx)(l.S89, {
     id: "opt-in",
     label: b.intl.string(b.t.FB2ZZW),
     checked: !t,

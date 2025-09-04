@@ -1,5 +1,5 @@
 /** Chunk was on 87154 **/
-/** chunk id: 894059, original params: e,t,r (module,exports,require) **/
+/** chunk id: 894059, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => a
 });
@@ -14,7 +14,7 @@ function a(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     a = (0, l.Z)(e),
     u = (0, o.Z)();
-  return a ? (0, n.jsx)(i.sNh, {
+  return a ? (0, r.jsx)(i.sNh, {
     id: "create-event",
     label: c.intl.string(c.t["60lJ0N"]),
     icon: t ? i.VZI : true,
@@ -22,35 +22,35 @@ function a(e) {
       (0, i.ZDy)(async () => {
         let {
           default: t
-        } = await Promise.all([r.e("36599"), r.e("60962"), r.e("82758"), r.e("61"), r.e("7082")]).then(r.bind(r, 779250));
-        return r => {
+        } = await Promise.all([n.e("36599"), n.e("60962"), n.e("82758"), n.e("61"), n.e("7082")]).then(n.bind(n, 779250));
+        return n => {
           var i, l;
-          return (0, n.jsx)(t, (i = function(e) {
+          return (0, r.jsx)(t, (i = function(e) {
             for (var t = 1; t < arguments.length; t++) {
-              var r = null != arguments[t] ? arguments[t] : {},
-                n = Object.keys(r);
-              "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(r, e).enumerable
-              }))), n.forEach(function(t) {
-                var n;
-                n = r[t], t in e ? Object.defineProperty(e, t, {
-                  value: n,
+              var n = null != arguments[t] ? arguments[t] : {},
+                r = Object.keys(n);
+              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(n, e).enumerable
+              }))), r.forEach(function(t) {
+                var r;
+                r = n[t], t in e ? Object.defineProperty(e, t, {
+                  value: r,
                   enumerable: true,
                   configurable: true,
                   writable: true
-                }) : e[t] = n
+                }) : e[t] = r
               })
             }
             return e
-          }({}, r), l = l = {
+          }({}, n), l = l = {
             guildId: e
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-            var r = Object.keys(e);
+            var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
-              var n = Object.getOwnPropertySymbols(e);
-              r.push.apply(r, n)
+              var r = Object.getOwnPropertySymbols(e);
+              n.push.apply(n, r)
             }
-            return r
+            return n
           })(Object(l)).forEach(function(e) {
             Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
           }), i))

@@ -13,7 +13,7 @@ var Chunk442837 = require("./442837.js"),
 
 function u(e, t) {
   let u = arguments.length > 2 && true !== arguments[2] ? arguments[2] : e.type,
-    s = (0, c.e7)([i.Z], () => i.Z.can(o.Plq.MANAGE_CHANNELS, e), [e]);
+    s = (0, i.e7)([c.Z], () => c.Z.can(o.Plq.MANAGE_CHANNELS, e), [e]);
   if (__OVERLAY__ || !s) return null;
   let b = () => {
     (0, l.ZDy)(async () => {
@@ -21,8 +21,8 @@ function u(e, t) {
         default: t
       } = await Promise.all([n.e("33285"), n.e("45094"), n.e("70725")]).then(n.bind(n, 218613));
       return n => {
-        var c, l;
-        return (0, r.jsx)(t, (c = function(e) {
+        var i, l;
+        return (0, r.jsx)(t, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -43,7 +43,7 @@ function u(e, t) {
           channelType: u,
           guildId: e.guild_id,
           categoryId: e.parent_id
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(c, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
@@ -51,8 +51,8 @@ function u(e, t) {
           }
           return n
         })(Object(l)).forEach(function(e) {
-          Object.defineProperty(c, e, Object.getOwnPropertyDescriptor(l, e))
-        }), c))
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+        }), i))
       }
     })
   };

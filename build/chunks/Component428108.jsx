@@ -1,7 +1,7 @@
 /** Chunk was on 40283 **/
 /** chunk id: 428108, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => y
+  default: () => O
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,28 +16,28 @@ var Chunk481060 = require("./481060.js"),
   Chunk852245 = require("./852245.jsx"),
   Chunk367722 = require("./367722.js"),
   Chunk388032 = require("./388032.jsx");
-let y = (0, Chunk108843.Z)(function(e) {
+let O = (0, Chunk108843.Z)(function(e) {
   let {
     channel: t,
     guild: n,
-    onSelect: i
-  } = e, o = (0, p.Z)(t), y = (0, O.Z)(t, n), d = (0, u.Z)(t, n), j = (0, s.Z)(t, n), g = (0, b.Z)(t), P = (0, a.Z)({
+    onSelect: c
+  } = e, o = (0, p.Z)(t), O = (0, d.Z)(t, n), y = (0, u.Z)(t, n), j = (0, s.Z)(t, n), E = (0, b.Z)(t), g = (0, a.Z)({
     id: t.id,
     label: f.intl.string(f.t.gFHI3t)
   });
-  return (0, r.jsxs)(c.v2r, {
+  return (0, r.jsxs)(i.v2r, {
     navId: "channel-context",
     onClose: l.Zy,
     "aria-label": f.intl.string(f.t.Xm41aW),
-    onSelect: i,
-    children: [(0, r.jsx)(c.kSQ, {
+    onSelect: c,
+    children: [(0, r.jsx)(i.kSQ, {
       children: o
-    }), (0, r.jsxs)(c.kSQ, {
-      children: [y, d, j]
-    }), (0, r.jsx)(c.kSQ, {
+    }), (0, r.jsxs)(i.kSQ, {
+      children: [O, y, j]
+    }), (0, r.jsx)(i.kSQ, {
+      children: E
+    }), (0, r.jsx)(i.kSQ, {
       children: g
-    }), (0, r.jsx)(c.kSQ, {
-      children: P
     })]
   })
 }, [Chunk100527.Z.CONTEXT_MENU, Chunk100527.Z.CHANNEL_ACTIVITY_FEED_VOICE_MENU])

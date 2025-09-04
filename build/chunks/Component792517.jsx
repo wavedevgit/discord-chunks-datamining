@@ -2,7 +2,7 @@
 /** chunk id: 792517, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -11,63 +11,68 @@ var Chunk120356 = require("./120356.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk872810 = require("./872810.js"),
+  Chunk595816 = require("./595816.js"),
   Chunk199902 = require("./199902.js"),
   Chunk314897 = require("./314897.js"),
   Chunk685203 = require("./685203.jsx"),
   Chunk112560 = require("./112560.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk866752 = require("./866752.js");
-let h = 175,
-  m = 195,
+let m = 175,
+  g = 195,
   Chunk978538 = require("./978538.js");
 
-function E(e) {
+function b(e) {
   let {
     participant: t,
     width: n,
     noArt: i = false,
-    selected: E = false
-  } = e, b = n < m, y = (0, o.e7)([c.Z, u.default], () => c.Z.getAllActiveStreams().some(e => {
+    selected: b = false
+  } = e, y = n < g, {
+    defaultWatchMultipleStreams: O
+  } = (0, c.P)({
+    location: "StreamHidden"
+  }), v = (0, o.e7)([u.Z, d.default], () => u.Z.getAllActiveStreams().some(e => {
     let {
       ownerId: t
     } = e;
-    return t !== u.default.getId()
+    return t !== d.default.getId()
   }));
   return (0, r.jsx)("div", {
-    className: a()(p.content, p.streamHidden, {
-      [p.__invalid_small]: b
+    className: a()(h.content, h.streamHidden, {
+      [h.__invalid_small]: y
     }),
-    children: (0, r.jsx)(f.Z, {
-      className: p.streamHiddenEmptyState,
-      artURL: g,
+    children: (0, r.jsx)(_.Z, {
+      className: h.streamHiddenEmptyState,
+      artURL: E,
       noArt: i,
-      selected: E,
-      size: (0, f.L)(n),
-      header: b ? null : _.intl.string(_.t.epU4ER),
-      description: E ? null : (0, r.jsxs)("div", {
-        className: a()(p.streamHiddenCTA, {
-          [p.largePaddingTop]: !b
+      selected: b,
+      size: (0, _.L)(n),
+      header: y ? null : p.intl.string(p.t.epU4ER),
+      description: b ? null : (0, r.jsxs)("div", {
+        className: a()(h.streamHiddenCTA, {
+          [h.largePaddingTop]: !y
         }),
-        children: [(0, r.jsx)(d.a, {
-          isSmall: b,
+        children: [(0, r.jsx)(f.a, {
+          isSmall: y,
           children: (0, r.jsx)(s.Text, {
-            variant: b ? "text-sm/semibold" : "text-md/semibold",
+            variant: y ? "text-sm/semibold" : "text-md/semibold",
             color: "none",
-            children: n < h ? _.intl.string(_.t["I6JG4+"]) : _.intl.string(_.t["7Xq/nZ"])
+            children: n < m ? p.intl.string(p.t["I6JG4+"]) : p.intl.string(p.t["7Xq/nZ"])
           })
-        }), y ? (0, r.jsx)(d.a, {
-          className: p.addCTA,
-          tooltip: _.intl.string(_.t.wCrzur),
+        }), v && !O ? (0, r.jsx)(f.a, {
+          className: h.addCTA,
+          tooltip: p.intl.string(p.t.wCrzur),
           onClick: e => {
             e.stopPropagation(), (0, l.rn)(t.stream, {
               forceMultiple: true
             })
           },
-          isSmall: b,
+          isSmall: y,
           children: (0, r.jsx)(s.OgY, {
             size: "xs",
             color: "currentColor",
-            className: p.addStreamIcon
+            className: h.addStreamIcon
           })
         }) : null]
       })

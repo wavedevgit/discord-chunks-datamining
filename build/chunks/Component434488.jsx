@@ -187,9 +187,7 @@ function N(e) {
   let {
     analyticsLocations: s,
     newestAnalyticsLocation: u
-  } = (0, m.ZP)(f.Z.VC_TILE_ACTIVITY_INVITE), {
-    entrypoints: p
-  } = (0, _._k)({
+  } = (0, m.ZP)(f.Z.VC_TILE_ACTIVITY_INVITE), p = (0, _._k)({
     location: "single_user_tile"
   }), {
     enabled: h
@@ -227,7 +225,7 @@ function N(e) {
     })
   }
   let C = h ? c.iWm : c.nG3,
-    Z = p ? c.oLu : c.iFz;
+    Z = p.isInCallEntrypointEnabled ? c.oLu : c.iFz;
   return (0, r.jsx)(m.Gt, {
     value: s,
     children: (0, r.jsx)(c.f6W, {
@@ -245,7 +243,7 @@ function N(e) {
           children: [(0, r.jsx)(c.zxk, {
             variant: "secondary",
             icon: Z,
-            text: p ? j.intl.string(j.t["EE+P0N"]) : j.intl.string(j.t["6Qgren"]),
+            text: p.isInCallEntrypointEnabled ? j.intl.string(j.t["EE+P0N"]) : j.intl.string(j.t["6Qgren"]),
             onClick: b
           }), (0, r.jsx)(c.zxk, {
             variant: "secondary",

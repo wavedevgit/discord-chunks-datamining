@@ -1,5 +1,5 @@
 /** Chunk was on 24783 **/
-/** chunk id: 442754, original params: e,t,n (module,exports,require) **/
+/** chunk id: 442754, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => p
 });
@@ -16,13 +16,13 @@ var Chunk442837 = require("./442837.js"),
 
 function p(e) {
   let {
-    isFavoritesPerk: t
-  } = (0, o.z)("useChannelOptInItems"), n = (0, a.DM)(e.guild_id), p = (0, i.e7)([u.ZP], () => u.ZP.isChannelOptedIn(e.guild_id, e.id)), b = (0, i.e7)([u.ZP], () => null != e.parent_id && u.ZP.isChannelOptedIn(e.guild_id, e.parent_id)), f = (0, i.e7)([u.ZP], () => u.ZP.isFavorite(e.guild_id, e.id)), O = () => {
+    isFavoritesPerk: n
+  } = (0, o.z)("useChannelOptInItems"), t = (0, a.DM)(e.guild_id), p = (0, i.e7)([u.ZP], () => u.ZP.isChannelOptedIn(e.guild_id, e.id)), b = (0, i.e7)([u.ZP], () => null != e.parent_id && u.ZP.isChannelOptedIn(e.guild_id, e.parent_id)), f = (0, i.e7)([u.ZP], () => u.ZP.isFavorite(e.guild_id, e.id)), O = () => {
     (0, c.XQ)(e.guild_id, e.id, !p, {
       section: s.jXE.CONTEXT_MENU
     })
   };
-  if (!n || e.isThread()) return null;
+  if (!t || e.isThread()) return null;
   if (e.isCategory()) return (0, r.jsx)(l.sNh, {
     id: "opt-into-category",
     label: p ? d.intl.string(d.t["3zySTE"]) : d.intl.string(d.t["9mysCg"]),
@@ -33,7 +33,7 @@ function p(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.sNh, {
       id: "opt-in-favorite-channel",
-      label: t ? g : y,
+      label: n ? g : y,
       action: () => {
         (0, c.dM)(e.guild_id, e.id, !f, {
           section: s.jXE.CONTEXT_MENU

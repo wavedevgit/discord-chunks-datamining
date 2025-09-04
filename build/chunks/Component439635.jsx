@@ -1,5 +1,5 @@
 /** Chunk was on 24783 **/
-/** chunk id: 439635, original params: e,t,n (module,exports,require) **/
+/** chunk id: 439635, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   default: () => Z
 });
@@ -27,14 +27,14 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 let Z = (0, Chunk108843.Z)(function(e) {
   let {
-    channel: t,
-    guild: n,
+    channel: n,
+    guild: t,
     includeTopic: o = false,
     onSelect: c
-  } = e, Z = (0, E.Z)(t), N = (0, g.ZP)(t), w = (0, j.Z)(t), C = (0, d.Z)(t), x = (0, p.Z)(t), m = (0, O.Z)(t), S = (0, y.Z)(t, n), T = (0, s.Z)(t, n), A = (0, b.Z)(t, n, _.d4z.GUILD_TEXT), D = (0, b.Z)(t, n, _.d4z.GUILD_VOICE), I = (0, f.Z)(t), k = (0, a.Z)({
-    id: t.id,
+  } = e, Z = (0, P.Z)(n), N = (0, g.ZP)(n), C = (0, j.Z)(n), x = (0, d.Z)(n), w = (0, p.Z)(n), m = (0, O.Z)(n), S = (0, y.Z)(n, t), T = (0, s.Z)(n, t), I = (0, b.Z)(n, t, _.d4z.GUILD_TEXT), A = (0, b.Z)(n, t, _.d4z.GUILD_VOICE), D = (0, f.Z)(n), k = (0, a.Z)({
+    id: n.id,
     label: v.intl.string(v.t.gFHI3t)
-  }), L = (0, P.Z)(t, "title_context_menu"), M = (0, u.Mn)("ChannelTitleContextMenu"), U = (0, h.ZP)(t);
+  }), G = (0, E.Z)(n, "title_context_menu"), L = (0, u.Mn)("ChannelTitleContextMenu"), M = (0, h.ZP)(n);
   return (0, r.jsxs)(i.v2r, {
     navId: "channel-context",
     onClose: l.Zy,
@@ -45,13 +45,13 @@ let Z = (0, Chunk108843.Z)(function(e) {
     }), (0, r.jsx)(i.kSQ, {
       children: N
     }), (0, r.jsxs)(i.kSQ, {
-      children: [o ? x : M ? U : w, m]
+      children: [o ? w : L ? M : C, m]
     }), (0, r.jsxs)(i.kSQ, {
-      children: [S, C, T, A, D]
+      children: [S, x, T, I, A]
     }), (0, r.jsx)(i.kSQ, {
-      children: L
+      children: G
     }), (0, r.jsx)(i.kSQ, {
-      children: I
+      children: D
     }), (0, r.jsx)(i.kSQ, {
       children: k
     })]

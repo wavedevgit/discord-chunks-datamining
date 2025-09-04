@@ -12,17 +12,17 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function u(e, t) {
-  let u = (0, c.e7)([i.Z], () => i.Z.can(o.Plq.MANAGE_CHANNELS, e), [e]);
+  let u = (0, i.e7)([c.Z], () => c.Z.can(o.Plq.MANAGE_CHANNELS, e), [e]);
   return __OVERLAY__ || !u ? null : (0, r.jsx)(l.sNh, {
     id: "clone-channel",
     label: a.intl.string(a.t.dEaPc3),
     action: () => (0, l.ZDy)(async () => {
       let {
-        default: c
+        default: i
       } = await Promise.all([n.e("33285"), n.e("45094"), n.e("70725")]).then(n.bind(n, 218613));
       return n => {
-        var l, i;
-        return (0, r.jsx)(c, (l = function(e) {
+        var l, c;
+        return (0, r.jsx)(i, (l = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -39,20 +39,20 @@ function u(e, t) {
             })
           }
           return e
-        }({}, n), i = i = {
+        }({}, n), c = c = {
           channelType: e.type,
           guildId: t.id,
           categoryId: e.parent_id,
           cloneChannelId: e.id
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(c)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(i)).forEach(function(e) {
-          Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(i, e))
+        })(Object(c)).forEach(function(e) {
+          Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(c, e))
         }), l))
       }
     })

@@ -18,19 +18,19 @@ function p(e) {
   let {
     guild: t,
     onSelect: n
-  } = e, p = c.ZP.getDefaultChannel(t.id, true, s.Plq.CREATE_INSTANT_INVITE), b = (0, a.Z)(t.id), y = (0, o.Z)(t), f = (0, u.Z)({
+  } = e, p = a.ZP.getDefaultChannel(t.id, true, s.Plq.CREATE_INSTANT_INVITE), b = (0, o.Z)(t.id), y = (0, c.Z)(t), f = (0, u.Z)({
     guild: t,
     source: s.t4x.GUILD_CONTEXT_MENU,
     channel: p
   });
-  return (0, r.jsxs)(l.v2r, {
+  return (0, r.jsxs)(i.v2r, {
     navId: "guild-context",
     "aria-label": d.intl.string(d.t.HpQykZ),
-    onClose: i.Zy,
+    onClose: l.Zy,
     onSelect: n,
-    children: [(0, r.jsx)(l.kSQ, {
+    children: [(0, r.jsx)(i.kSQ, {
       children: b
-    }), (0, r.jsxs)(l.kSQ, {
+    }), (0, r.jsxs)(i.kSQ, {
       children: [y, f]
     })]
   })

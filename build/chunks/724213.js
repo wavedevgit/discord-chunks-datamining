@@ -1,9 +1,9 @@
 /** Chunk was on 87154 **/
-/** chunk id: 724213, original params: e,t,r (module,exports,require) **/
+/** chunk id: 724213, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   hi: () => b,
   kH: () => p,
-  rz: () => O
+  rz: () => d
 }), require("./997841.js"), require("./388685.js"), require("./539854.js"), require("./524437.js");
 var Chunk549817 = require("./549817.js");
 require("./581883.js");
@@ -16,36 +16,36 @@ var Chunk984933 = require("./984933.js"),
   Chunk372897 = require("./372897.js");
 
 function b(e) {
-  var t, r;
-  let n = (0, u.r1)(e),
-    i = null != (r = null == (t = l.ZP.getSelfMember(e)) ? true : t.flags) ? r : 0,
+  var t, n;
+  let r = (0, u.r1)(e),
+    i = null != (n = null == (t = l.ZP.getSelfMember(e)) ? true : t.flags) ? n : 0,
     a = (0, c.yE)(i, s.q.COMPLETED_ONBOARDING),
     b = o.ZP.getOptedInChannels(e).size > 0;
-  return !n && !a && !b
+  return !r && !a && !b
 }
 
 function p(e) {
-  if (b(e)) return void O(e);
+  if (b(e)) return void d(e);
   {
     let t = (0, u.r1)(e);
     (0, a.QG)(e, !t)
   }
 }
 
-function O(e) {
+function d(e) {
   let {
     include: t = new Set,
-    exclude: r = new Set
+    exclude: n = new Set
   } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, l = i.ZP.getChannels(e), o = [...l[i.sH], ...l[i.Zb]].filter(e => {
     let {
       channel: t
     } = e;
-    return !t.isThread() && !r.has(t.id)
+    return !t.isThread() && !n.has(t.id)
   }).map(e => {
     let {
       channel: t
     } = e;
     return t.id
   });
-  t.forEach(e => o.push(e)), n.Z.onboardExistingMember(e, new Set(o))
+  t.forEach(e => o.push(e)), r.Z.onboardExistingMember(e, new Set(o))
 }
