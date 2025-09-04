@@ -70,9 +70,9 @@ function O(e, t, n) {
     }, [n]),
     C = null != n ? n : t,
     N = null != n ? O : a,
-    Z = i.useMemo(() => null != _ ? _ : y({}, null != N ? N : {}), [_, N]),
-    S = i.useMemo(() => Object.keys(Z).length, [Z]),
-    w = i.useMemo(() => null == N || null == Z ? null : !o().isEqual(N, Z), [N, Z]);
+    S = i.useMemo(() => null != _ ? _ : y({}, null != N ? N : {}), [_, N]),
+    Z = i.useMemo(() => Object.keys(S).length, [S]),
+    w = i.useMemo(() => null == N || null == S ? null : !o().isEqual(N, S), [N, S]);
   return i.useEffect(() => {
     C === t && (w ? c.Z.startEditingCommandPermissions(C) : c.Z.stopEditingCommandPermissions(C))
   }, [t, w, C]), {
@@ -143,8 +143,8 @@ function O(e, t, n) {
         }
         return l
       }, [O, n, r, o, t, _, C])
-    }(e, Z),
+    }(e, S),
     hasChanges: w,
-    selectedPermissionCount: S
+    selectedPermissionCount: Z
   }
 }

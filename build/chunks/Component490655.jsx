@@ -35,17 +35,17 @@ function w(e, t) {
       var n;
       return null != (n = null == t ? true : t.application.name) ? n : "";
     case N.b4C.OVERVIEW:
-      return Z.intl.string(Z.t.s69NLC);
+      return S.intl.string(S.t.s69NLC);
     case N.b4C.CHANNEL_FOLLOWING:
-      return Z.intl.string(Z.t.OrV60t);
+      return S.intl.string(S.t.OrV60t);
     case N.b4C.TWITCH:
-      return Z.intl.string(Z.t.q4pBGx);
+      return S.intl.string(S.t.q4pBGx);
     case N.b4C.WEBHOOKS:
-      return Z.intl.string(Z.t.xOg4SE);
+      return S.intl.string(S.t.xOg4SE);
     case N.b4C.YOUTUBE:
-      return Z.intl.string(Z.t.aS6cKy);
+      return S.intl.string(S.t.aS6cKy);
     case N.b4C.LOBBIES_LINKED:
-      return Z.intl.string(Z.t.tqtDXF);
+      return S.intl.string(S.t.tqtDXF);
     default:
       return ""
   }
@@ -56,8 +56,8 @@ let I = Chunk647438.memo(function(e) {
     sectionId: n,
     guild: l,
     channel: I,
-    integrations: T,
-    editedIntegration: P,
+    integrations: P,
+    editedIntegration: T,
     webhooks: E,
     editedWebhook: k,
     isFetchingWebhooks: A,
@@ -71,16 +71,16 @@ let I = Chunk647438.memo(function(e) {
     applicationIntegrations: V,
     applicationBotIds: Y,
     builtInIntegrations: $,
-    customWebhooks: J,
-    followedChannelWebhooks: X
+    customWebhooks: X,
+    followedChannelWebhooks: J
   } = r.useMemo(() => {
     let e = {},
       t = {},
       n = {},
       i = [],
       r = [];
-    if (null != T)
-      for (let i of T)
+    if (null != P)
+      for (let i of P)
         if ("discord" === i.type) {
           if (null != i.application) {
             var l;
@@ -99,7 +99,7 @@ let I = Chunk647438.memo(function(e) {
       customWebhooks: i,
       followedChannelWebhooks: r
     }
-  }, [T, W, U, E]);
+  }, [P, W, U, E]);
   r.useEffect(() => {
     if (!A) switch (t) {
       case N.b4C.TWITCH:
@@ -122,11 +122,11 @@ let I = Chunk647438.memo(function(e) {
       null != $[N.ABu.TWITCH] && (Q = (0, i.jsx)(v.Z, {
         guild: l,
         integrations: $[N.ABu.TWITCH],
-        editedIntegration: P,
-        labelText: Z.intl.string(Z.t.q4pBGx),
+        editedIntegration: T,
+        labelText: S.intl.string(S.t.q4pBGx),
         platformType: N.ABu.TWITCH,
-        descriptionText: Z.intl.string(Z.t.V9kNqq),
-        helpText: Z.intl.format(Z.t.ro1jEB, {
+        descriptionText: S.intl.string(S.t.V9kNqq),
+        helpText: S.intl.format(S.t.ro1jEB, {
           connectAction: () => (0, u.Z)({
             platformType: N.ABu.TWITCH,
             location: "Integration Settings"
@@ -140,11 +140,11 @@ let I = Chunk647438.memo(function(e) {
       null != $[N.ABu.YOUTUBE] && (Q = (0, i.jsx)(v.Z, {
         guild: l,
         integrations: $[N.ABu.YOUTUBE],
-        editedIntegration: P,
-        labelText: Z.intl.string(Z.t.aS6cKy),
+        editedIntegration: T,
+        labelText: S.intl.string(S.t.aS6cKy),
         platformType: N.ABu.YOUTUBE,
-        descriptionText: Z.intl.string(Z.t["7Tv7JC"]),
-        helpText: Z.intl.format(Z.t["4OSAQ0"], {
+        descriptionText: S.intl.string(S.t["7Tv7JC"]),
+        helpText: S.intl.format(S.t["4OSAQ0"], {
           connectAction: () => (0, u.Z)({
             platformType: N.ABu.YOUTUBE
           }),
@@ -167,7 +167,7 @@ let I = Chunk647438.memo(function(e) {
       break;
     case N.b4C.CHANNEL_FOLLOWING:
       Q = (0, i.jsx)(y.Z, {
-        followedChannelWebhooks: X,
+        followedChannelWebhooks: J,
         editedWebhook: k,
         selectableWebhookChannels: W,
         canNavigate: K,
@@ -178,7 +178,7 @@ let I = Chunk647438.memo(function(e) {
       Q = (0, i.jsx)(C.Z, {
         guild: l,
         channel: I,
-        customWebhooks: J,
+        customWebhooks: X,
         editedWebhook: k,
         selectableWebhookChannels: function(e) {
           for (var t = 1; t < arguments.length; t++) {
@@ -214,8 +214,8 @@ let I = Chunk647438.memo(function(e) {
         channel: I,
         applicationIntegrations: V,
         builtInIntegrations: $,
-        customWebhooks: J,
-        followedChannelWebhooks: X,
+        customWebhooks: X,
+        followedChannelWebhooks: J,
         isLoadingWebhooks: A || null == l,
         canCreateWebhook: null != H,
         onManageCustomWebhooks: () => {
@@ -244,7 +244,7 @@ let I = Chunk647438.memo(function(e) {
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(p.Z, {
       align: p.Z.Align.CENTER,
-      className: S.breadcrumbs,
+      className: Z.breadcrumbs,
       children: t === N.b4C.OVERVIEW ? (0, i.jsx)(s.vwX, {
         tag: "h1",
         children: w(N.b4C.OVERVIEW)
@@ -259,7 +259,7 @@ let I = Chunk647438.memo(function(e) {
         },
         renderCustomBreadcrumb: (e, t) => (0, i.jsx)(s.vwX, {
           tag: "h1",
-          className: t ? S.breadcrumbActive : S.breadcrumbInactive,
+          className: t ? Z.breadcrumbActive : Z.breadcrumbInactive,
           children: e.label
         })
       })

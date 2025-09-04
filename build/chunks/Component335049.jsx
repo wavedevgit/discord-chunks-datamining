@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk243226 = require("./243226.js");
 
-function Z(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -46,7 +46,7 @@ function Z(e) {
   return e
 }
 
-function S(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -73,7 +73,7 @@ function w(e) {
       let {
         default: e
       } = await n.e("5396").then(n.bind(n, 731646));
-      return t => (0, i.jsx)(e, S(Z({}, t), {
+      return t => (0, i.jsx)(e, Z(S({}, t), {
         id: l,
         label: C.intl.string(C.t.oJ1Mu7)
       }))
@@ -89,7 +89,7 @@ function w(e) {
         openEntryContextMenu: m
       });
     case p.Kw.ROLE:
-      return (0, i.jsx)(T, {
+      return (0, i.jsx)(P, {
         guild: t,
         id: l,
         isLocked: o,
@@ -97,7 +97,7 @@ function w(e) {
         openEntryContextMenu: m
       });
     case p.Kw.USER:
-      return (0, i.jsx)(P, {
+      return (0, i.jsx)(T, {
         guild: t,
         id: l,
         isLocked: o,
@@ -157,7 +157,7 @@ function I(e) {
   })
 }
 
-function T(e) {
+function P(e) {
   var t;
   let {
     guild: l,
@@ -173,7 +173,7 @@ function T(e) {
       let {
         default: e
       } = await n.e("14486").then(n.bind(n, 786746));
-      return t => (0, i.jsx)(e, S(Z({}, t), {
+      return t => (0, i.jsx)(e, Z(S({}, t), {
         guild: l,
         role: m
       }))
@@ -182,7 +182,7 @@ function T(e) {
   return (null == m ? true : m.name) == null ? null : (0, i.jsxs)("div", {
     onContextMenu: h,
     className: N.identifier,
-    children: [null != b ? (0, i.jsx)(g.Z, Z({
+    children: [null != b ? (0, i.jsx)(g.Z, S({
       className: a()(N.__invalid_icon, N.image)
     }, b)) : (0, i.jsx)(d.lZ8, {
       size: "custom",
@@ -201,7 +201,7 @@ function T(e) {
   })
 }
 
-function P(e) {
+function T(e) {
   let {
     guild: t,
     id: n,
@@ -241,7 +241,7 @@ function E(e) {
   } = e;
   return (0, i.jsx)(d.ua7, {
     text: t,
-    children: e => (0, i.jsx)("div", S(Z({
+    children: e => (0, i.jsx)("div", Z(S({
       className: N.lockIcon
     }, e), {
       children: (0, i.jsx)(d.mBM, {

@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk547063 = require("./547063.js");
 
-function P(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -75,7 +75,7 @@ function k(e) {
   } = e, f = (0, o.e7)([x.Z], () => x.Z.getGuild(l));
   a()(null != f, "");
   let v = (0, o.e7)([h.Z], () => h.Z.getSortedRoles(l)),
-    [Z, S] = r.useState(new Set),
+    [S, Z] = r.useState(new Set),
     w = r.useMemo(() => {
       let e = (0, m.bD)(l),
         t = v.toReversed().reduce((e, t, n) => (e[t.id] = n, e), {});
@@ -111,7 +111,7 @@ function k(e) {
     I = r.useCallback((e, t) => {
       n({}, [(0, N.rE)(e, t)])
     }, [n]),
-    P = r.useCallback((e, t, i) => {
+    T = r.useCallback((e, t, i) => {
       let r = (0, N.rE)(e, t);
       null != u[r] && n({
         [r]: {
@@ -122,9 +122,9 @@ function k(e) {
       }, [])
     }, [n, u]);
   r.useEffect(() => {
-    let e = Object.values(u).filter(e => e.type === p.Kw.USER && !e.canRead && !Z.has(e.id)).map(e => e.id);
-    0 !== e.length && (d.Z.requestMembersById(l, e, false), S(t => new Set([...t, ...e])))
-  }, [l, u, Z, S]);
+    let e = Object.values(u).filter(e => e.type === p.Kw.USER && !e.canRead && !S.has(e.id)).map(e => e.id);
+    0 !== e.length && (d.Z.requestMembersById(l, e, false), Z(t => new Set([...t, ...e])))
+  }, [l, u, S, Z]);
   let E = (0, o.e7)([C.Z], () => C.Z.getApplicationId()),
     k = (0, o.e7)([_.default], () => null == E ? true : _.default.integrations.find(e => {
       var t;
@@ -134,14 +134,14 @@ function k(e) {
   return w.length > 0 ? w.map(e => (0, i.jsx)(A, {
     guild: f,
     commandId: t,
-    onChange: t => P(e.id, e.type, t),
+    onChange: t => T(e.id, e.type, t),
     onRemove: () => I(e.id, e.type),
     overwrite: e,
     integration: k,
     canShowMigrationTooltip: D,
     hasAccessToMutatePermissions: b
   }, e.id)) : (0, i.jsx)("div", {
-    className: T.noItemsSelected,
+    className: P.noItemsSelected,
     children: (0, i.jsx)(c.Text, {
       color: "text-muted",
       variant: "text-sm/normal",
@@ -171,7 +171,7 @@ function A(e) {
   r.useEffect(() => {
     if (A) {
       var e;
-      v.default.track(w.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, E(P({}, (0, u.hH)(o.id)), {
+      v.default.track(w.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, E(T({}, (0, u.hH)(o.id)), {
         application_id: null == j || null == (e = j.application) ? true : e.id,
         location: "toggle"
       }))
@@ -179,14 +179,14 @@ function A(e) {
   }, [o.id, null == j || null == (l = j.application) ? true : l.id, A]);
   let R = r.useRef(null),
     L = (0, i.jsx)(c.ua7, {
-      tooltipClassName: T.tooltip,
+      tooltipClassName: P.tooltip,
       text: a,
       shouldShow: N,
       position: "left",
       hideOnClick: false,
-      children: e => (0, i.jsx)("div", E(P({}, e), {
+      children: e => (0, i.jsx)("div", E(T({}, e), {
         ref: R,
-        children: (0, i.jsx)(S.Z, {
+        children: (0, i.jsx)(Z.Z, {
           isDisabled: N,
           currentValue: x.permission,
           onChange: A ? e => {
@@ -212,10 +212,10 @@ function A(e) {
       }
     });
   return (0, i.jsxs)("div", {
-    className: T.entryItem,
+    className: P.entryItem,
     children: [(0, i.jsx)("div", {
-      className: T.entryName,
-      children: (0, i.jsx)(Z.Z, {
+      className: P.entryName,
+      children: (0, i.jsx)(S.Z, {
         guild: o,
         id: x.id,
         type: x.type,
@@ -223,7 +223,7 @@ function A(e) {
         lockTooltipText: a
       })
     }), (0, i.jsxs)("div", {
-      className: T.entryActions,
+      className: P.entryActions,
       children: [(0, i.jsx)(D, {
         commandId: d,
         isSentinel: _,
@@ -242,15 +242,15 @@ function D(e) {
     onRemove: l
   } = e;
   return r ? null : null == t && n ? null : (0, i.jsx)("div", {
-    className: T.removeActions,
+    className: P.removeActions,
     children: (0, i.jsx)(c.P3F, {
-      className: T.removeContainer,
+      className: P.removeContainer,
       "aria-label": I.intl.string(I.t.mT0CQE),
       onClick: l,
       children: (0, i.jsx)(c.XHJ, {
         size: "md",
         color: "currentColor",
-        className: T.removeIcon
+        className: P.removeIcon
       })
     })
   })

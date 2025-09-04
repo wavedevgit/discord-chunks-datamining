@@ -1,7 +1,7 @@
 /** Chunk was on 47463 **/
 /** chunk id: 665578, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => P
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -61,13 +61,13 @@ function I(e, t) {
   }), e
 }
 
-function T(e) {
+function P(e) {
   let {
     applicationId: t,
     commandId: l,
     guildId: j,
     inModal: v,
-    editedTargetPermissions: T,
+    editedTargetPermissions: P,
     originalApplicationPermissions: k,
     originalCommandPermissions: A,
     selectedPermissionCount: D
@@ -85,9 +85,9 @@ function T(e) {
   }, [j, R, k, A]), B = null != l ? l : t, [W, U] = r.useMemo(() => {
     let e = {},
       t = {};
-    for (let [n, i] of Object.entries(T)) i.type === d.Kw.CHANNEL ? e[n] = i : t[n] = i;
+    for (let [n, i] of Object.entries(P)) i.type === d.Kw.CHANNEL ? e[n] = i : t[n] = i;
     return [e, t]
-  }, [T]), H = r.useCallback(e => {
+  }, [P]), H = r.useCallback(e => {
     let t = g.Z.getGuild(j),
       n = m.ZP.getSelfMember(j);
     return null != t && null != n && (null != l ? (0, u.Ft)({
@@ -106,7 +106,7 @@ function T(e) {
   }, [j, R, l, k]), G = r.useCallback((e, t) => {
     let n, i = null;
     if (0 !== t.length) {
-      let e = T[t[0]];
+      let e = P[t[0]];
       if (e.type === d.Kw.USER) n = O.s.REMOVE_SELF;
       else {
         let t = e.id;
@@ -124,16 +124,16 @@ function T(e) {
         i = null != e ? e.name : "role"
       }
     }(0, O._)(n, i)
-  }, [j, T]), z = r.useCallback((e, n) => {
+  }, [j, P]), z = r.useCallback((e, n) => {
     let i = {};
-    for (let [e, t] of Object.entries(T)) i[e] = {
+    for (let [e, t] of Object.entries(P)) i[e] = {
       id: t.id,
       permission: t.permission,
       type: t.type
     };
     if (i = Object.assign(i, e), n.length > 0 && (i = a().omit(i, n)), !H(i)) return void G(e, n);
     h.W4(t, B, i)
-  }, [t, T, B, H, G]), F = r.useCallback(() => {
+  }, [t, P, B, H, G]), F = r.useCallback(() => {
     let e = Object.keys(W);
     return (0, c.ZDy)(async () => {
       let {
@@ -142,11 +142,11 @@ function T(e) {
       return n => (0, i.jsx)(t, w({
         editPermissions: z,
         guildId: j,
-        headerText: Z.intl.string(Z.t["i1c+kZ"]),
+        headerText: S.intl.string(S.t["i1c+kZ"]),
         hasMemberSearch: false,
         overwrittenKeys: e,
-        search: P,
-        searchPlaceholderText: Z.intl.string(Z.t["TLQo/v"]),
+        search: T,
+        searchPlaceholderText: S.intl.string(S.t["TLQo/v"]),
         selectedPermissionCount: D
       }, n))
     })
@@ -160,10 +160,10 @@ function T(e) {
         editPermissions: z,
         guildId: j,
         hasMemberSearch: true,
-        headerText: Z.intl.string(Z.t["56jRn5"]),
+        headerText: S.intl.string(S.t["56jRn5"]),
         overwrittenKeys: e,
         search: E,
-        searchPlaceholderText: Z.intl.string(Z.t.wAfO5e),
+        searchPlaceholderText: S.intl.string(S.t.wAfO5e),
         selectedPermissionCount: D
       }, n))
     })
@@ -176,43 +176,43 @@ function T(e) {
     }))
   }), [R]), V = D - N._n, Y = V >= 0, $ = [{
     buttonClick: K,
-    buttonText: Z.intl.string(Z.t["56jRn5"]),
-    noneSelectedText: Z.intl.string(Z.t.C0rYfn),
+    buttonText: S.intl.string(S.t["56jRn5"]),
+    noneSelectedText: S.intl.string(S.t.C0rYfn),
     overwrites: U,
-    title: null == l ? Z.intl.string(Z.t["vPWe+/"]) : Z.intl.string(Z.t["1jLVGB"])
+    title: null == l ? S.intl.string(S.t["vPWe+/"]) : S.intl.string(S.t["1jLVGB"])
   }, {
     buttonClick: F,
-    buttonText: Z.intl.string(Z.t["i1c+kZ"]),
-    noneSelectedText: Z.intl.string(Z.t.UBJhCw),
+    buttonText: S.intl.string(S.t["i1c+kZ"]),
+    noneSelectedText: S.intl.string(S.t.UBJhCw),
     overwrites: W,
-    title: null == l ? Z.intl.string(Z.t.OGiMXF) : Z.intl.string(Z.t.Ujbaqq)
+    title: null == l ? S.intl.string(S.t.OGiMXF) : S.intl.string(S.t.Ujbaqq)
   }];
   return (0, i.jsxs)(r.Fragment, {
     children: [V > 0 ? (0, i.jsx)(c.Wn, {
       messageType: c.QYI.WARNING,
-      children: Z.intl.format(Z.t["B/dFBA"], {
+      children: S.intl.format(S.t["B/dFBA"], {
         removeCount: V
       })
     }) : null, L ? (0, i.jsxs)("div", {
-      className: S.requiredPermissionsBanner,
+      className: Z.requiredPermissionsBanner,
       children: [(0, i.jsx)(c.d3s, {
         size: "sm",
         color: "currentColor",
-        className: S.icon
+        className: Z.icon
       }), (0, i.jsx)("span", {
-        className: S.message,
-        children: Z.intl.format(Z.t["2889Gh"], {})
+        className: Z.message,
+        children: S.intl.format(S.t["2889Gh"], {})
       }), (0, i.jsx)(c.zxk, {
         variant: "secondary",
         size: "sm",
         onClick: q,
-        text: Z.intl.string(Z.t["HO/oXl"])
+        text: S.intl.string(S.t["HO/oXl"])
       })]
     }) : null, $.map((e, t) => {
       let n = null;
-      return M ? Y && (n = Z.intl.string(Z.t.XTwtW1)) : n = null != l ? Z.intl.string(Z.t.tybdam) : Z.intl.string(Z.t.z2hjk5), (0, i.jsx)(_.Z, {
+      return M ? Y && (n = S.intl.string(S.t.XTwtW1)) : n = null != l ? S.intl.string(S.t.tybdam) : S.intl.string(S.t.z2hjk5), (0, i.jsx)(_.Z, {
         bar: (0, i.jsx)(c.ua7, {
-          tooltipClassName: S.tooltip,
+          tooltipClassName: Z.tooltip,
           text: n,
           shouldShow: null != n,
           children: t => (0, i.jsx)(c.zxk, I(w({}, t), {
@@ -226,7 +226,7 @@ function T(e) {
         inModal: v,
         title: e.title,
         children: (0, i.jsx)("div", {
-          className: v ? true : S.listContainer,
+          className: v ? true : Z.listContainer,
           children: (0, i.jsx)(y.Z, {
             guildId: j,
             commandId: l,
@@ -241,7 +241,7 @@ function T(e) {
   })
 }
 
-function P(e) {
+function T(e) {
   let t = (0, j.w)(e);
   return I(w({}, t), {
     results: t.results.map(e => I(w({}, e), {

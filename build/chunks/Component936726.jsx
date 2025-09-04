@@ -45,7 +45,7 @@ function N(e) {
   return e
 }
 
-function Z(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -58,7 +58,7 @@ function Z(e, t) {
   }), e
 }
 
-function S(e, t) {
+function Z(e, t) {
   return null != t && /^data:/.test(t) ? t : (0, h.ov)({
     id: e.id,
     avatar: t,
@@ -74,17 +74,17 @@ function w(e) {
     channelOptions: h,
     isExpanded: w,
     isNew: I,
-    errors: T,
-    onToggleExpand: P
+    errors: P,
+    onToggleExpand: T
   } = e, [E, k] = r.useState(false), [A] = r.useState(new s.V7);
   r.useEffect(() => () => A.stop(), [A]);
-  let D = r.useMemo(() => S(n, n.avatar), [n]),
+  let D = r.useMemo(() => Z(n, n.avatar), [n]),
     R = r.useCallback(() => {
       let e = "".concat((0, o.K0)(false)).concat(O.ANM.WEBHOOK_INTEGRATION(n.id, n.token));
       (0, x.JG)(e)
     }, [n]),
     L = r.useCallback(() => {
-      (0, c.h7j)(e => (0, i.jsx)(c.ConfirmModal, Z(N({}, e), {
+      (0, c.h7j)(e => (0, i.jsx)(c.ConfirmModal, S(N({}, e), {
         header: _.intl.formatToPlainString(_.t.QVFjHh, {
           name: n.name
         }),
@@ -148,13 +148,13 @@ function w(e) {
                 avatar: e
               })
             },
-            makeURL: e => S(n, e),
+            makeURL: e => Z(n, e),
             imageClassName: C.avatarUploaderInner,
             showIcon: true
-          }), null != T.avatar && "" !== T.avatar ? (0, i.jsx)(c.Text, {
+          }), null != P.avatar && "" !== P.avatar ? (0, i.jsx)(c.Text, {
             color: "text-danger",
             variant: "text-sm/normal",
-            children: T.avatar
+            children: P.avatar
           }) : null]
         })
       }), (0, i.jsxs)(m.Z, {
@@ -172,7 +172,7 @@ function w(e) {
                   })
                 },
                 maxLength: 80,
-                error: T.name
+                error: P.name
               })
             })
           }), (0, i.jsx)(m.Z.Child, {
@@ -224,7 +224,7 @@ function w(e) {
               return (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": true,
                 className: C.copyButton,
-                children: (0, i.jsx)(c.zxk, Z(N({
+                children: (0, i.jsx)(c.zxk, S(N({
                   variant: "secondary",
                   size: "sm",
                   text: _.intl.string(_.t.Ae9rUV)
@@ -255,7 +255,7 @@ function w(e) {
       children: [(0, i.jsx)(c.P3F, {
         className: C.header,
         "aria-expanded": w,
-        onClick: P,
+        onClick: T,
         children: (0, i.jsxs)(m.Z, {
           align: m.Z.Align.CENTER,
           children: [(0, i.jsx)(y.Z, {
