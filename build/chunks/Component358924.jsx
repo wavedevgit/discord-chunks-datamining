@@ -254,7 +254,7 @@ let eb = e => {
   } = e;
   switch (n) {
     case "XBOX":
-      t = (0, i.jsx)(X.Z, {
+      t = (0, i.jsx)(Q.Z, {
         className: er.headerIcon,
         color: d.Z.unsafe_rawColors.PRIMARY_300.css
       });
@@ -532,7 +532,7 @@ eO.Header = e_, eO.Body = e => {
   return (0, i.jsx)(eu, {
     children: (0, i.jsxs)("div", {
       className: er.xboxSection,
-      children: [(0, i.jsx)(X.Z, {
+      children: [(0, i.jsx)(Q.Z, {
         className: er.xboxSectionIcon
       }), (0, i.jsxs)("div", {
         className: er.__invalid_xboxSectionDetails,
@@ -676,7 +676,7 @@ eO.Header = e_, eO.Body = e => {
     participants: a
   } = e, [o, s] = l.useState(null), u = t.application_id;
   l.useEffect(() => {
-    null != u && (0, Q.hR)(u, ["embedded_background"]).then(e => {
+    null != u && (0, X.hR)(u, ["embedded_background"]).then(e => {
       let [t] = e;
       return s(t)
     })
@@ -692,7 +692,7 @@ eO.Header = e_, eO.Body = e => {
   let _ = null != t.created_at && t.created_at > 0 ? {
       start: t.created_at
     } : true,
-    O = (0, Q.xF)(m.id, o, 300);
+    O = (0, X.xF)(m.id, o, 300);
   return (0, i.jsxs)(eu, {
     children: [(0, i.jsxs)("div", {
       className: er.embeddedActivityTopRow,

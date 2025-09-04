@@ -234,14 +234,14 @@ function eq() {
   })
 }
 
-function eX(e) {
+function eQ(e) {
   let {
     channel: t,
     enableActivities: n,
     disabled: l
   } = e, o = i.useRef(null), {
     parentAnalyticsLocation: s
-  } = (0, A.ZP)(), c = (0, eo.Z)(), d = (0, ec.Z)(t), p = (0, u.e7)([C.ZP], () => null != C.ZP.getSelfEmbeddedActivityForLocation(C.ZP.getConnectedActivityLocation())), h = (0, Q.Z)(t), {
+  } = (0, A.ZP)(), c = (0, eo.Z)(), d = (0, ec.Z)(t), p = (0, u.e7)([C.ZP], () => null != C.ZP.getSelfEmbeddedActivityForLocation(C.ZP.getConnectedActivityLocation())), h = (0, X.Z)(t), {
     reachedLimit: _,
     limit: O
   } = (0, es.Z)(t), E = i.useCallback(() => {
@@ -346,7 +346,7 @@ function eX(e) {
   }))
 }
 
-function eQ(e) {
+function eX(e) {
   let {
     channel: t,
     enableActivities: n
@@ -441,7 +441,7 @@ function eJ(e) {
     _ = (0, ec.Z)(n),
     O = n.getGuildId(),
     E = (0, u.cj)([C.ZP], () => null != C.ZP.getSelfEmbeddedActivityForChannel(n.id)),
-    y = (0, Q.Z)(n),
+    y = (0, X.Z)(n),
     v = i.useCallback(() => {
       (0, ef.Z)(O, n.id, f)
     }, [O, n.id, f]),
@@ -644,7 +644,7 @@ class e$ extends Chunk647438.PureComponent {
       d = (0, Chunk368442.xJ)(module.id);
     return (0, Chunk951288.jsxs)("div", {
       className: Chunk890332.actionButtons,
-      children: [(0, Chunk951288.jsx)(eX, {
+      children: [(0, Chunk951288.jsx)(eQ, {
         channel: module,
         enableActivities: Chunk799899,
         disabled: !Chunk704215 && Chunk442837
@@ -653,7 +653,7 @@ class e$ extends Chunk647438.PureComponent {
         canGoLive: exports,
         enableActivities: Chunk799899,
         disabled: module.isGuildStageVoice() && (Chunk704215 && null == a || !Chunk704215 && Chunk442837)
-      }), Chunk799899 ? (0, Chunk951288.jsx)(eQ, {
+      }), Chunk799899 ? (0, Chunk951288.jsx)(eX, {
         channel: module,
         enableActivities: Chunk647438
       }) : null, (0, Chunk641015.Z)(module) ? (0, Chunk951288.jsx)(Chunk848543.Z, {

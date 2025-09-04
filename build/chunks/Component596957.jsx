@@ -175,8 +175,8 @@ let k = function(e) {
       }
     }, [z, u]),
     q = i.useMemo(() => z.filter(e => e.type === j.OGo.PENDING_INCOMING).length, [z]),
-    X = u === j.pJs.PENDING && q > 0 && q >= T.yf,
-    Q = i.useCallback(e => {
+    Q = u === j.pJs.PENDING && q > 0 && q >= T.yf,
+    X = i.useCallback(e => {
       e.stopPropagation(), d.Z.confirmClearPendingRelationships(q)
     }, [q]),
     J = i.useCallback(e => {
@@ -209,12 +209,12 @@ let k = function(e) {
         children: [(0, r.jsx)(S.Z, {
           id: t,
           title: n
-        }), X && (0, r.jsx)(s.zx, {
+        }), Q && (0, r.jsx)(s.zx, {
           look: s.iL.LINK,
           color: s.Tt.LINK,
           className: x.clearButton,
           size: s.zx.Sizes.TINY,
-          onClick: Q,
+          onClick: X,
           "aria-label": P.intl.string(P.t.O8k7Oz),
           children: P.intl.string(P.t.O8k7Oz)
         })]
@@ -225,7 +225,7 @@ let k = function(e) {
           title: n
         })
       }, n)
-    }, [K, u, t, X, Q]);
+    }, [K, u, t, Q, X]);
   if (i.useEffect(() => {
       u === j.pJs.ALL && (0, m.d$)()
     }, [u]), 0 === z.length && "" === U[u]) return (0, r.jsx)(D, {

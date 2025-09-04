@@ -1,8 +1,8 @@
 /** Chunk was on 1272 **/
 /** chunk id: 862099, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Co: () => X,
-  ZP: () => Q,
+  Co: () => Q,
+  ZP: () => X,
   bZ: () => q,
   gt: () => B
 }), require("./388685.js");
@@ -125,7 +125,7 @@ function V(e) {
       color: "currentColor",
       className: G.stageIcon
     }) : null,
-    children: (0, i.jsx)(X, {
+    children: (0, i.jsx)(Q, {
       channel: n,
       speakers: r,
       voiceType: 1
@@ -337,7 +337,7 @@ function K(e) {
       className: G.stageIcon
     }),
     topic: t.topic,
-    children: (0, i.jsx)(X, {
+    children: (0, i.jsx)(Q, {
       channel: n,
       speakers: r,
       voiceType: 2
@@ -346,7 +346,7 @@ function K(e) {
 }
 var q = ((r = {})[r.VOICE = 1] = "VOICE", r[r.STAGE = 2] = "STAGE", r[r.STUDY_ROOM = 3] = "STUDY_ROOM", r);
 
-function X(e) {
+function Q(e) {
   let {
     channel: t,
     speakers: n,
@@ -385,7 +385,7 @@ function X(e) {
     })]
   })
 }
-let Q = Chunk647438.memo(function(e) {
+let X = Chunk647438.memo(function(e) {
   let {
     guild: t
   } = e, {
