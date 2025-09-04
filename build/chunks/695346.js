@@ -424,16 +424,19 @@ let em = new Set(Object.values(Chunk981631.Skl)),
 (0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "defaultReactionEmoji", e => {
   let {
     emojiId: t,
-    emojiName: n
+    emojiName: n,
+    animated: r
   } = null != e ? e : {};
   return {
     emojiId: null == t ? true : t.value,
-    emojiName: null == n ? true : n.value
+    emojiName: null == n ? true : n.value,
+    animated: null == r ? true : r.value
   }
 }, e => {
   let {
     emojiId: t,
-    emojiName: n
+    emojiName: n,
+    animated: r
   } = e;
   return {
     emojiId: o.wA.create({
@@ -441,6 +444,9 @@ let em = new Set(Object.values(Chunk981631.Skl)),
     }),
     emojiName: o.Gm.create({
       value: n
+    }),
+    animated: o.D5.create({
+      value: r
     })
   }
 }), "text", "defaultReactionEmoji");

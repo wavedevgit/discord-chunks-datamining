@@ -3929,6 +3929,9 @@ class tc extends Chunk495852.C {
         case 2:
           a.emojiName = s.Gm.internalBinaryRead(e, e.uint32(), n, a.emojiName);
           break;
+        case 3:
+          a.animated = s.D5.internalBinaryRead(e, e.uint32(), n, a.animated);
+          break;
         default:
           let o = n.readUnknownField;
           if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
@@ -3939,7 +3942,7 @@ class tc extends Chunk495852.C {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    e.emojiId && s.wA.internalBinaryWrite(e.emojiId, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), e.emojiName && s.Gm.internalBinaryWrite(e.emojiName, t.tag(2, r.TD.LengthDelimited).fork(), n).join();
+    e.emojiId && s.wA.internalBinaryWrite(e.emojiId, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), e.emojiName && s.Gm.internalBinaryWrite(e.emojiName, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), e.animated && s.D5.internalBinaryWrite(e.animated, t.tag(3, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -3954,6 +3957,11 @@ class tc extends Chunk495852.C {
       name: "emoji_name",
       kind: "message",
       T: () => Chunk381499.Gm
+    }, {
+      no: 3,
+      name: "animated",
+      kind: "message",
+      T: () => Chunk381499.D5
     }])
   }
 }
