@@ -28,15 +28,16 @@ function f(e) {
     ref: g,
     artboardProperties: E,
     dataBinding: b,
-    touchScrollEnabled: y = true
-  } = e, O = i.useContext(l.Sfi), v = _(), [I, S] = i.useState(true), T = i.useRef(null), {
-    rive: A,
-    RiveComponent: C
+    touchScrollEnabled: y = true,
+    dynamicDataBinding: O
+  } = e, v = i.useContext(l.Sfi), I = _(), [S, T] = i.useState(true), A = i.useRef(null), {
+    rive: C,
+    RiveComponent: N
   } = (0, o.useRive)({
     eventTarget: null == f ? true : f.current,
     buffer: t,
     autoplay: n,
-    stateMachines: I,
+    stateMachines: S,
     artboard: h,
     useOffscreenRenderer: true,
     layout: new o.Layout({
@@ -46,57 +47,58 @@ function f(e) {
     isTouchScrollEnabled: y
   });
   i.useImperativeHandle(g, () => ({
-    play: () => null == A ? true : A.play(),
-    pause: () => null == A ? true : A.pause(),
-    stop: () => null == A ? true : A.stop()
-  }), [A]), p({
-    rive: A,
+    play: () => null == C ? true : C.play(),
+    pause: () => null == C ? true : C.pause(),
+    stop: () => null == C ? true : C.stop()
+  }), [C]), p({
+    rive: C,
     artboard: h,
     artboardProperties: E,
-    dataBinding: b
+    dataBinding: b,
+    dynamicDataBinding: O
   }), i.useEffect(() => {
-    if (null != A && "short-loop" === m && O.reducedMotion.enabled) {
+    if (null != C && "short-loop" === m && v.reducedMotion.enabled) {
       let e = () => {
-          A.isPlaying && (T.current = setTimeout(() => {
-            A.pause()
+          C.isPlaying && (A.current = setTimeout(() => {
+            C.pause()
           }, 5e3))
         },
         t = () => {
-          clearTimeout(T.current)
+          clearTimeout(A.current)
         };
-      return A.on(o.EventType.Play, e), A.on(o.EventType.Pause, t), A.on(o.EventType.Stop, t), () => {
-        A.off(o.EventType.Play, e), A.off(o.EventType.Pause, t), A.off(o.EventType.Stop, t)
+      return C.on(o.EventType.Play, e), C.on(o.EventType.Pause, t), C.on(o.EventType.Stop, t), () => {
+        C.off(o.EventType.Play, e), C.off(o.EventType.Pause, t), C.off(o.EventType.Stop, t)
       }
     }
-  }, [A, m, O.reducedMotion.enabled]), i.useLayoutEffect(() => {
-    null != A && "layout" === s && (A.resizeDrawingSurfaceToCanvas(), setTimeout(() => {
-      A.resizeDrawingSurfaceToCanvas()
+  }, [C, m, v.reducedMotion.enabled]), i.useLayoutEffect(() => {
+    null != C && "layout" === s && (C.resizeDrawingSurfaceToCanvas(), setTimeout(() => {
+      C.resizeDrawingSurfaceToCanvas()
     }, 100))
-  }, [A, s]), i.useEffect(() => {
-    null != A && null == I && (S(A.stateMachineNames), A.reset({
-      stateMachines: A.stateMachineNames,
+  }, [C, s]), i.useEffect(() => {
+    null != C && null == S && (T(C.stateMachineNames), C.reset({
+      stateMachines: C.stateMachineNames,
       autoplay: n,
       artboard: h,
       autoBind: true
-    }), A.setupRiveListeners())
-  }, [A, n, I, h]);
-  let N = i.useRef(0);
+    }), C.setupRiveListeners())
+  }, [C, n, S, h]);
+  let R = i.useRef(0);
   i.useEffect(() => {
-    if (null == A) return;
-    A.play();
+    if (null == C) return;
+    C.play();
     let e = t => {
-      null != t.data && "number" == typeof t.data && (N.current = t.data, t.data > 0 && ("halt" === m && O.reducedMotion.enabled && A.isPlaying && A.pause(), A.off(o.EventType.Advance, e)))
+      null != t.data && "number" == typeof t.data && (R.current = t.data, t.data > 0 && ("halt" === m && v.reducedMotion.enabled && C.isPlaying && C.pause(), C.off(o.EventType.Advance, e)))
     };
-    return A.on(o.EventType.Advance, e), () => {
-      A.off(o.EventType.Advance, e)
+    return C.on(o.EventType.Advance, e), () => {
+      C.off(o.EventType.Advance, e)
     }
-  }, [A, O.reducedMotion.enabled, m]);
-  let R = i.useRef(false);
+  }, [C, v.reducedMotion.enabled, m]);
+  let P = i.useRef(false);
   return i.useEffect(() => {
-    if (null != A) return !v && R.current && A.isPlaying && N.current > 0 ? A.pause() : v && !A.isPlaying && R.current && A.play(), () => {
-      null != A && v && (R.current = null != A.frameRequestId)
+    if (null != C) return !I && P.current && C.isPlaying && R.current > 0 ? C.pause() : I && !C.isPlaying && P.current && C.play(), () => {
+      null != C && I && (P.current = null != C.frameRequestId)
     }
-  }, [A, v]), (0, r.jsx)(C, {
+  }, [C, I]), (0, r.jsx)(N, {
     className: a,
     style: u
   })
@@ -120,47 +122,48 @@ function p(e) {
     rive: t,
     artboard: n,
     artboardProperties: r,
-    dataBinding: a
-  } = e, c = (0, o.useViewModel)(t);
-  (0, o.useViewModelInstance)(c);
+    dataBinding: a,
+    dynamicDataBinding: c
+  } = e, d = null != c ? c : a, f = (0, o.useViewModel)(t);
+  (0, o.useViewModelInstance)(f);
   let {
-    theme: d,
-    saturation: f
-  } = (0, l.TCT)(), _ = (0, s.e7)([u.Z], () => u.Z.isHighContrastModeEnabled), p = i.useRef(null);
+    theme: _,
+    saturation: p
+  } = (0, l.TCT)(), h = (0, s.e7)([u.Z], () => u.Z.isHighContrastModeEnabled), m = i.useRef(null);
   i.useEffect(() => {
-    if (null == t || null == t.viewModelInstance || null == a) return;
-    let e = r[n];
-    Object.entries(a).forEach(n => {
+    if (null == t || null == t.viewModelInstance || null == d) return;
+    let e = r[null != n ? n : ""];
+    Object.entries(d).forEach(n => {
       var r, i, a, o, s, l, c, u;
-      let [h, m] = n, g = e[h];
-      switch (g) {
+      let [d, f] = n, g = "object" == typeof f && "type" in f, E = g ? f.type : e[d], b = g ? f.value : f;
+      switch (E) {
         case "color":
-          let [E, b, y, O] = m.resolve({
-            theme: d,
-            saturation: f,
-            highContrastModeEnabled: _
+          let [y, O, v, I] = b.resolve({
+            theme: _,
+            saturation: p,
+            highContrastModeEnabled: h
           }).rgba();
-          null == (i = t.viewModelInstance) || null == (r = i.color(h)) || r.rgba(E, b, y, 255 * O);
+          null == (i = t.viewModelInstance) || null == (r = i.color(d)) || r.rgba(y, O, v, 255 * I);
           break;
         case "number":
-          let v = null == (a = t.viewModelInstance) ? true : a.number(h);
-          null != v && (v.value = m);
+          let S = null == (a = t.viewModelInstance) ? true : a.number(d);
+          null != S && (S.value = b);
           break;
         case "boolean":
-          let I = null == (o = t.viewModelInstance) ? true : o.boolean(h);
-          null != I && (I.value = m);
+          let T = null == (o = t.viewModelInstance) ? true : o.boolean(d);
+          null != T && (T.value = b);
           break;
         case "trigger":
-          m && (null == (s = p.current) ? true : s[h]) !== m && (null == (c = t.viewModelInstance) || null == (l = c.trigger(h)) || l.trigger());
+          null != b && ("boolean" == typeof b ? b : 0 !== b) && (null == (s = m.current) ? true : s[d]) !== b && (null == (c = t.viewModelInstance) || null == (l = c.trigger(d)) || l.trigger());
           break;
         case "string":
-          let S = null == (u = t.viewModelInstance) ? true : u.string(h);
-          null != S && (S.value = m);
+          let A = null == (u = t.viewModelInstance) ? true : u.string(d);
+          null != A && (A.value = b);
           break;
         default:
-          console.warn("Unknown property type: ".concat(g))
+          console.warn("Unknown property type: ".concat(E))
       }
-    }), p.current = a
-  }, [a, t, n, r, d, null == t ? true : t.viewModelInstance, f, _])
+    }), m.current = d
+  }, [d, t, n, r, _, null == t ? true : t.viewModelInstance, p, h])
 }
 Chunk995803.RuntimeLoader.setWasmUrl(Chunk252762)
