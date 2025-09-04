@@ -12,21 +12,32 @@ let l = (0, Chunk818083.B)({
   kind: "user",
   defaultConfig: {
     enabled: false,
-    backButtonBadge: false
+    backButtonBadge: false,
+    animateBetweenServers: false
   },
   treatments: [{
     id: 1,
     label: "You Bar",
     config: {
       enabled: true,
-      backButtonBadge: false
+      backButtonBadge: false,
+      animateBetweenServers: false
     }
   }, {
     id: 2,
-    label: "You Bar",
+    label: "You Bar with badged back button",
     config: {
       enabled: true,
-      backButtonBadge: true
+      backButtonBadge: true,
+      animateBetweenServers: false
+    }
+  }, {
+    id: 3,
+    label: "You Bar with badged back button and animate between servers",
+    config: {
+      enabled: true,
+      backButtonBadge: true,
+      animateBetweenServers: true
     }
   }]
 })
