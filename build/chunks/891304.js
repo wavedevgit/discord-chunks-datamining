@@ -2,16 +2,18 @@
 /** chunk id: 891304, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Hm: () => l,
-  TL: () => c,
-  pN: () => s
+  Hm: () => u,
+  TL: () => d,
+  pN: () => c
 });
 var Chunk570140 = require("./570140.js"),
   Chunk703656 = require("./703656.js"),
+  Chunk626135 = require("./626135.js"),
   Chunk719961 = require("./719961.js"),
-  Chunk365355 = require("./365355.js");
+  Chunk365355 = require("./365355.js"),
+  Chunk981631 = require("./981631.js");
 
-function s(e, t, n) {
+function c(e, t, n) {
   r.Z.dispatch({
     type: "ROUTE_CHANGED",
     path: e,
@@ -20,23 +22,29 @@ function s(e, t, n) {
   })
 }
 
-function l(e) {
+function u(e) {
   if (!(0, i.x3)()) return;
-  if (!(0, a.v)({
+  if (a.default.track(l.rMx.APP_BACK_FORWARD_NAVIGATED, {
+      nav_direction: false,
+      nav_trigger: e
+    }), !(0, o.v)({
       location: e
     })) return void(0, i.op)();
-  let t = o.Z.backDestination;
+  let t = s.Z.backDestination;
   null != t && (r.Z.dispatch({
     type: "GO_BACK"
   }), (0, i.uL)(t.path))
 }
 
-function c(e) {
+function d(e) {
   if (!(0, i.x3)()) return;
-  if (!(0, a.v)({
+  if (a.default.track(l.rMx.APP_BACK_FORWARD_NAVIGATED, {
+      nav_direction: 1,
+      nav_trigger: e
+    }), !(0, o.v)({
       location: e
     })) return void(0, i.eH)();
-  let t = o.Z.forwardDestination;
+  let t = s.Z.forwardDestination;
   null != t && (r.Z.dispatch({
     type: "GO_FORWARD"
   }), (0, i.uL)(t.path))

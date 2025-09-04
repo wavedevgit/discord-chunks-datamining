@@ -79,7 +79,7 @@ let m = Chunk185514.Nx.binds["0"],
           className: l()(f.button, f.back, {
             [f.disabled]: !i
           }),
-          onClick: () => (0, d.Hm)("arrow")
+          onClick: () => (0, d.Hm)("nav_button")
         }), t), {
           children: (0, r.jsx)(o.whL, {
             size: n,
@@ -100,7 +100,7 @@ let m = Chunk185514.Nx.binds["0"],
           className: l()(f.button, f.forward, {
             [f.disabled]: !s
           }),
-          onClick: () => (0, d.TL)("arrow"),
+          onClick: () => (0, d.TL)("nav_button"),
           children: (0, r.jsx)(o.ZSh, {
             size: n,
             color: "currentColor"

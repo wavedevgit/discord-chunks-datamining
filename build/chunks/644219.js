@@ -6,6 +6,7 @@ module.exports = {
   containerV2: "containerV2__3ce43",
   trialPill: "trialPill__3ce43",
   content: "content__3ce43",
+  churnDiscountContent: "churnDiscountContent__3ce43 content__3ce43",
   contentV2: "contentV2__3ce43",
   hidden: "hidden__3ce43",
   heroHeadingOriginalButtonContainer: "heroHeadingOriginalButtonContainer__3ce43",
@@ -24,5 +25,6 @@ module.exports = {
   referralBanner: "referralBanner__3ce43",
   churnEntrypointButtons: "churnEntrypointButtons__3ce43",
   churnEntrypointDescriptionBrandRefresh: "churnEntrypointDescriptionBrandRefresh__3ce43",
-  churnEntrypointDescription: "churnEntrypointDescription__3ce43"
+  churnEntrypointDescription: "churnEntrypointDescription__3ce43",
+  churnDiscountHeader: "churnDiscountHeader__3ce43"
 }

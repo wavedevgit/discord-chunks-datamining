@@ -46,7 +46,6 @@ let m = e => {
       type: "image",
       src: g
     },
-    gradientColor: "nitro-pink",
     actions: [{
       text: h.intl.string(h.t.zrCzVF),
       variant: "expressive",
@@ -90,7 +89,8 @@ let m = e => {
             }), n))
           }
         })
-      }
+      },
+      icon: a.SrA
     }],
     onRequestClose: () => {
       _(f.L.USER_DISMISS)
