@@ -49,10 +49,10 @@ function v(e) {
   } = e, j = (0, l.e7)([u.ZP], () => u.ZP.getGuildScheduledEvent(v)), I = (0, _.Z)(n, null == j ? true : j.id), y = (0, l.e7)([d.Z], () => d.Z.getGuild(null == j ? true : j.guild_id)), w = (0, l.e7)([s.Z], () => s.Z.getChannel(null == j ? true : j.channel_id));
   if (null == j) return null;
   let {
-    is_canceled: k = false
-  } = null != I ? I : {}, P = (null == I ? true : I.scheduled_start_time) != null ? new Date(null == I ? true : I.scheduled_start_time) : r, Z = (0, b.DK)(j), E = k ? h.p1.CANCELED : h.p1.SCHEDULED;
+    is_canceled: P = false
+  } = null != I ? I : {}, k = (null == I ? true : I.scheduled_start_time) != null ? new Date(null == I ? true : I.scheduled_start_time) : r, Z = (0, b.DK)(j), E = P ? h.p1.CANCELED : h.p1.SCHEDULED;
   Z === n && (E = j.status);
-  let N = (null == j ? true : j.scheduled_start_time) != null ? (0, b.lh)(I, P, new Date(null == j ? true : j.scheduled_start_time)) : null,
+  let N = (null == j ? true : j.scheduled_start_time) != null ? (0, b.lh)(I, k, new Date(null == j ? true : j.scheduled_start_time)) : null,
     S = e => {
       e.stopPropagation(), null != y && (0, c.jW)(e, async () => {
         let {
@@ -69,23 +69,23 @@ function v(e) {
     };
   return (0, i.jsxs)(o.kL8, {
     className: a()(g.container, {
-      [g.canceled]: k,
+      [g.canceled]: P,
       [g.clickable]: null != x,
       [g.active]: C
     }),
     onClick: e => {
-      e.stopPropagation(), k || null == x || x(n)
+      e.stopPropagation(), P || null == x || x(n)
     },
     onContextMenu: S,
     "aria-label": "",
     children: [(0, i.jsx)(p.z, {
-      startTime: P.toISOString(),
+      startTime: k.toISOString(),
       status: null != N ? N : E,
       eventType: j.entity_type,
       guildEventId: j.id,
       recurrenceId: n,
       className: g.timeStatus
-    }), k && (0, i.jsx)(o.Text, {
+    }), P && (0, i.jsx)(o.Text, {
       variant: "text-sm/semibold",
       color: "text-danger",
       className: g.canceledStatus,

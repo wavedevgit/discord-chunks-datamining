@@ -2,7 +2,7 @@
 /** chunk id: 320596, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Ie: () => g,
-  mv: () => h
+  mv: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -17,21 +17,21 @@ var Chunk442837 = require("./442837.js"),
   Chunk930180 = require("./930180.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk165393 = require("./165393.js");
-let h = e => {
+let b = e => {
     let {
       channelId: t
     } = e;
-    return (0, n.jsx)(b, {
+    return (0, n.jsx)(h, {
       channelId: t
     })
   },
-  b = e => {
+  h = e => {
     let {
       channelId: t
     } = e, r = (0, x._d)(t), l = (0, x.K3)(t);
     if (0 === r && 0 === l) return null;
-    let a = e => {
-      (0, c.vq)(e, e => {
+    let c = e => {
+      (0, a.vq)(e, e => {
         var r, l;
         return (0, n.jsx)(p, (r = function(e) {
           for (var t = 1; t < arguments.length; t++) {
@@ -78,7 +78,7 @@ let h = e => {
         children: j.intl.string(j.t["P/KFX1"])
       }), (0, n.jsx)(i.P3F, {
         className: m.blockedButton,
-        onClick: a,
+        onClick: c,
         children: j.intl.string(j.t.rUEjBQ)
       })]
     }) : l > 0 ? (0, n.jsxs)("div", {
@@ -93,7 +93,7 @@ let h = e => {
         })
       }), (0, n.jsx)(i.P3F, {
         className: m.blockedButton,
-        onClick: a,
+        onClick: c,
         children: j.intl.string(j.t.rUEjBQ)
       })]
     }) : (0, n.jsxs)("div", {
@@ -109,7 +109,7 @@ let h = e => {
         })
       }), (0, n.jsx)(i.P3F, {
         className: m.blockedButton,
-        onClick: a,
+        onClick: c,
         children: j.intl.string(j.t.rUEjBQ)
       })]
     })
@@ -119,11 +119,11 @@ let h = e => {
       user: t,
       showStatus: r,
       speaker: s,
-      channelId: c
-    } = e, x = (0, l.e7)([u.ZP], () => u.ZP.isModerator(t.id, c)), h = (0, l.e7)([o.Z], () => o.Z.isBlocked(t.id)), b = null;
-    return r && (b = s ? j.intl.string(j.t.LqMmGx) : x ? j.intl.string(j.t.GMZqSk) : j.intl.string(j.t.suRAp6)), (0, n.jsxs)("div", {
+      channelId: a
+    } = e, x = (0, l.e7)([u.ZP], () => u.ZP.isModerator(t.id, a)), b = (0, l.e7)([o.Z], () => o.Z.isBlocked(t.id)), h = null;
+    return r && (h = s ? j.intl.string(j.t.LqMmGx) : x ? j.intl.string(j.t.GMZqSk) : j.intl.string(j.t.suRAp6)), (0, n.jsxs)("div", {
       className: m.user,
-      children: [(0, n.jsx)(a.Z, {
+      children: [(0, n.jsx)(c.Z, {
         src: t.getAvatarURL(null, 32),
         size: i.EFr.SIZE_32,
         muted: false,
@@ -151,12 +151,12 @@ let h = e => {
           className: m.username,
           children: [(0, n.jsx)(i.Text, {
             variant: "text-xs/normal",
-            color: h ? "text-danger" : "text-default",
-            children: h ? j.intl.string(j.t["4bDptL"]) : j.intl.string(j.t.tFY5ZW)
+            color: b ? "text-danger" : "text-default",
+            children: b ? j.intl.string(j.t["4bDptL"]) : j.intl.string(j.t.tFY5ZW)
           }), (0, n.jsxs)(i.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
-            children: ["| ", b]
+            children: ["| ", h]
           })]
         })]
       })]

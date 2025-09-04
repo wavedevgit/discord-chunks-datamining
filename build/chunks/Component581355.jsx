@@ -90,8 +90,8 @@ function G(e) {
     onSelectChannel: r
   } = e;
   return null == r ? null : (0, l.jsx)(u.xJW, {
-    title: k.intl.string(k.t.S7GjDw),
-    className: D.channelSelectionFormItem,
+    title: D.intl.string(D.t.S7GjDw),
+    className: Z.channelSelectionFormItem,
     required: true,
     children: (0, l.jsx)(u.VcW, {
       value: n.id,
@@ -125,11 +125,11 @@ function B(e) {
     loading: M,
     error: R,
     onSave: J
-  } = (0, I.Z)(i, _), L = r.useMemo(() => y.Z.getStageInstanceByChannel(i.id), [i.id]), [U, W] = r.useState(null != (t = null == L ? true : L.topic) ? t : ""), [q, H] = r.useState(""), [V] = r.useState(B), [K, Y] = r.useState({
+  } = (0, N.Z)(i, _), L = r.useMemo(() => y.Z.getStageInstanceByChannel(i.id), [i.id]), [U, W] = r.useState(null != (t = null == L ? true : L.topic) ? t : ""), [q, H] = r.useState(""), [V] = r.useState(B), [K, Y] = r.useState({
     startDate: (0, b.ib)()
   }), [Q, z] = r.useState(false), X = (0, v.J)(i), $ = (0, v.U)(i), ee = null == L && X && !V, [et, en] = r.useState(ee && $), el = (0, o.e7)([h.Z], () => h.Z.hasHotspot(E.v.LIVE_STAGE_NOTIFICATION_BADGE)), er = C.j8.GUILD_ONLY, [ei] = r.useState(null != (n = null == L ? true : L.privacy_level) ? n : er), [ea, eo] = r.useState(null), ec = (0, S._d)(i.id), es = (0, S.K3)(i.id), [eu, ed] = r.useState(false), ef = (0, f.ZP)(i), eg = (0, g.q)(x), eb = null != j, em = eg.length > 1;
   (0, d.ZP)(() => {
-    O.default.track(P.rMx.START_STAGE_OPENED, {
+    O.default.track(I.rMx.START_STAGE_OPENED, {
       stage_instance_id: null == L ? true : L.id,
       can_start_public_stage: false,
       guild_id: i.guild_id
@@ -151,32 +151,32 @@ function B(e) {
   let ex = Q && null != K.startDate && K.startDate >= a()(),
     e_ = (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsx)("div", {
-        className: D.blockedUsersContainer,
+        className: Z.blockedUsersContainer,
         children: null == L && (ec > 0 || es > 0) && (0, l.jsx)(w.mv, {
           channelId: i.id
         })
       }), (0, l.jsxs)("form", {
         onSubmit: ep,
-        className: D.form,
+        className: Z.form,
         children: [(0, l.jsxs)(u.xJW, {
-          title: B ? k.intl.string(k.t["0HbEQ0"]) : k.intl.string(k.t["5FPBOD"]),
+          title: B ? D.intl.string(D.t["0HbEQ0"]) : D.intl.string(D.t["5FPBOD"]),
           required: true,
           children: [(0, l.jsx)(u.oil, {
             onChange: e => W(e),
-            placeholder: k.intl.string(k.t.ZwWrub),
-            maxLength: N.xA,
+            placeholder: D.intl.string(D.t.ZwWrub),
+            maxLength: P.xA,
             value: U,
             autoComplete: "off",
             inputRef: eh
           }), eu && (0, l.jsx)(u.Text, {
             variant: "text-xs/normal",
             color: "text-feedback-warning",
-            className: D.warning,
-            children: k.intl.string(k.t.AqTyaW)
+            className: Z.warning,
+            children: D.intl.string(D.t.AqTyaW)
           }), null != R ? (0, l.jsx)(u.Text, {
             color: "text-danger",
             variant: "text-xs/normal",
-            className: D.warning,
+            className: Z.warning,
             children: R.getAnyErrorMessage()
           }) : null]
         }), eb && em ? (0, l.jsx)(G, {
@@ -185,7 +185,7 @@ function B(e) {
           onSelectChannel: j
         }) : null, V && (0, l.jsxs)(l.Fragment, {
           children: [(0, l.jsx)(p.Z, {
-            className: D.formItem,
+            className: Z.formItem,
             onScheduleChange: Y,
             onRecurrenceChange: e => {
               let t = K.startDate;
@@ -198,14 +198,14 @@ function B(e) {
           }), null != K.startDate && K.startDate < a()() ? (0, l.jsx)(u.Text, {
             color: "text-danger",
             variant: "text-xs/normal",
-            className: D.warning,
-            children: k.intl.string(k.t.AXR5Sk)
+            className: Z.warning,
+            children: D.intl.string(D.t.AXR5Sk)
           }) : null]
         }), B && (0, l.jsx)(u.xJW, {
-          title: k.intl.string(k.t["+gRCCw"]),
-          className: D.formItem,
+          title: D.intl.string(D.t["+gRCCw"]),
+          className: Z.formItem,
           children: (0, l.jsx)(u.Kx8, {
-            placeholder: k.intl.string(k.t["kWO/Ex"]),
+            placeholder: D.intl.string(D.t["kWO/Ex"]),
             value: q,
             onChange: e => H(e),
             maxLength: C.wm
@@ -217,11 +217,11 @@ function B(e) {
         }) : null, eb && !em ? (0, l.jsx)(u.Text, {
           color: "header-secondary",
           variant: "text-xs/normal",
-          className: D.channelSelection,
-          children: k.intl.format(k.t["S+9O7u"], {
+          className: Z.channelSelection,
+          children: D.intl.format(D.t["S+9O7u"], {
             stageName: ef,
             stageHook: (e, t) => (0, l.jsx)("span", {
-              className: D.channelName,
+              className: Z.channelName,
               children: i.name
             }, t)
           })
@@ -229,16 +229,16 @@ function B(e) {
       })]
     }),
     ej = {
-      title: null == L ? k.intl.string(k.t.DDF0cH) : k.intl.string(k.t.YPdQOj),
-      subtitle: null == L ? k.intl.string(k.t.bqQIwc) : k.intl.string(k.t["I+9bLy"]),
+      title: null == L ? D.intl.string(D.t.DDF0cH) : D.intl.string(D.t.YPdQOj),
+      subtitle: null == L ? D.intl.string(D.t.bqQIwc) : D.intl.string(D.t["I+9bLy"]),
       transitionState: F,
       actions: [{
         variant: "secondary",
-        text: k.intl.string(k.t["ETE/oK"]),
+        text: D.intl.string(D.t["ETE/oK"]),
         onClick: () => _()
       }, {
         variant: "primary",
-        text: V ? k.intl.string(k.t["60lJ0N"]) : null == L ? k.intl.string(k.t.s8mM8P) : k.intl.string(k.t.K344S0),
+        text: V ? D.intl.string(D.t["60lJ0N"]) : null == L ? D.intl.string(D.t.s8mM8P) : D.intl.string(D.t.K344S0),
         onClick: ep,
         disabled: "" === U || null == ei || B && !ex,
         loading: M
@@ -248,7 +248,7 @@ function B(e) {
   return null == L ? (0, l.jsx)(c.I, A(T({
     graphic: {
       type: "image",
-      src: Z.Z
+      src: k.Z
     }
   }, ej), {
     children: e_
