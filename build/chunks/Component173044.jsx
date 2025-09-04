@@ -26,12 +26,12 @@ function _(e) {
     onClose: v
   } = e, {
     analyticsLocations: j
-  } = (0, o.ZP)(s.Z.GO_LIVE_MODAL_V2), b = (0, d.N)(), C = (0, c.Ng)(), S = (null == b || null == (t = b.subscription_trial) ? true : t.sku_id) === h.Si.TIER_2 || (0, c.Wp)(C, h.Si.TIER_2), y = x.intl.string(p.default["+f+cqq"]);
-  return S && (null != b ? y = (0, f.Rt)({
+  } = (0, o.ZP)(s.Z.GO_LIVE_MODAL_V2), b = (0, d.N)(), y = (0, c.Ng)(), C = (null == b || null == (t = b.subscription_trial) ? true : t.sku_id) === h.Si.TIER_2 || (0, c.Wp)(y, h.Si.TIER_2), S = x.intl.string(p.default["+f+cqq"]);
+  return C && (null != b ? S = (0, f.Rt)({
     intervalType: null == b || null == (n = b.subscription_trial) ? true : n.interval,
     intervalCount: null == b || null == (_ = b.subscription_trial) ? true : _.interval_count
-  }) : null != C && (y = x.intl.formatToPlainString(x.t.bkQ4bG, {
-    percent: C.discount.amount
+  }) : null != y && (S = x.intl.formatToPlainString(x.t.bkQ4bG, {
+    percent: y.discount.amount
   }))), (0, r.jsxs)("div", {
     className: g.root,
     children: [(0, r.jsxs)(l.Text, {
@@ -61,7 +61,7 @@ function _(e) {
         v()
       },
       textOptions: {
-        subscribeText: y,
+        subscribeText: S,
         textClassName: g.ctaButtonText
       }
     })]

@@ -2,9 +2,9 @@
 /** chunk id: 567126, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Hu: () => X,
-  jx: () => H,
-  oA: () => z,
-  ov: () => F,
+  jx: () => F,
+  oA: () => H,
+  ov: () => z,
   se: () => J
 }), require("./35282.js"), require("./388685.js"), require("./642613.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
@@ -66,8 +66,8 @@ function W(e) {
   return e
 }
 
-function F(e, t, n, r) {
-  let i = (0, O.isWindows)() ? (0, T.Z)(g.ZP, y.Z) : null,
+function z(e, t, n, r) {
+  let i = (0, O.isWindows)() ? (0, T.Z)(g.ZP, S.Z) : null,
     l = g.ZP.getRunningGames(),
     s = null == n ? true : n.split(":")[1],
     o = e.id.split(":")[1];
@@ -79,7 +79,7 @@ function F(e, t, n, r) {
   return null != a && M.Mm.has(a) ? 2 : 1
 }
 
-function H(e, t, n) {
+function F(e, t, n) {
   let r = (0, b.Z)({
     location: L.dr.STREAM_SOURCE_SELECT
   });
@@ -99,7 +99,7 @@ function H(e, t, n) {
   }, [r, e, t, n])
 }
 
-function z(e) {
+function H(e) {
   let {
     selectedSource: t,
     onChangeSelectedSource: n
@@ -107,7 +107,7 @@ function z(e) {
     enableGoLiveCaptureCard: l
   } = w.Z.useExperiment({
     location: "GoLive_Source_Select"
-  }), o = S.Z.supports(B.AN.GO_LIVE_HARDWARE), [a, f] = i.useState(null), [h, v] = i.useState(null), [b, y] = i.useState(null), O = null != b && b.length > 0, [Z, I] = i.useState(c.vA.WINDOW), [N, T] = i.useState(false), E = i.useRef(null), A = i.useRef(new u.Xp), M = (0, d.e7)([g.ZP], () => g.ZP.getRunningGames()), L = H((0, d.e7)([j.Z], () => j.Z.quests), M, h), W = i.useMemo(() => null == h ? null : [...h].sort((e, t) => F(t, null == L ? true : L.source.id) - F(e, null == L ? true : L.source.id)), [L, h]);
+  }), o = C.Z.supports(B.AN.GO_LIVE_HARDWARE), [a, f] = i.useState(null), [h, v] = i.useState(null), [b, S] = i.useState(null), O = null != b && b.length > 0, [Z, I] = i.useState(c.vA.WINDOW), [N, T] = i.useState(false), E = i.useRef(null), A = i.useRef(new u.Xp), M = (0, d.e7)([g.ZP], () => g.ZP.getRunningGames()), L = F((0, d.e7)([j.Z], () => j.Z.quests), M, h), W = i.useMemo(() => null == h ? null : [...h].sort((e, t) => z(t, null == L ? true : L.source.id) - z(e, null == L ? true : L.source.id)), [L, h]);
   i.useEffect(() => {
     let e = A.current;
     return (0, P.t)({
@@ -119,7 +119,7 @@ function z(e) {
         windowSources: n,
         cameraSources: r
       } = e;
-      f(t), v(n), y(r)
+      f(t), v(n), S(r)
     }), e.start(1e3, async () => {
       let {
         screenSources: e,
@@ -129,12 +129,12 @@ function z(e) {
         width: 176,
         height: 99
       });
-      f(e), v(t), y(n)
+      f(e), v(t), S(n)
     }), () => {
       e.stop()
     }
   }, []);
-  let z = i.useCallback(e => {
+  let H = i.useCallback(e => {
       null !== e && (E.current = e, T(!e.isScrolledToTop()))
     }, []),
     [V, Y] = i.useState(true);
@@ -209,13 +209,13 @@ function z(e) {
         optionClassName: U.segmentControlOption
       })]
     }), (0, r.jsxs)(m.Den, {
-      ref: z,
+      ref: H,
       className: U.sourceScroller,
       onScroll: function() {
         let e = E.current;
         null != e && T(!e.isScrolledToTop())
       },
-      children: [Z === c.vA.WINDOW && null != L && (0, r.jsx)(C.Z, {
+      children: [Z === c.vA.WINDOW && null != L && (0, r.jsx)(y.Z, {
         quest: L.quest
       }), (0, r.jsx)(x.Z, {
         layout: x.Z.Layout.WRAP,
@@ -296,7 +296,7 @@ function J(e) {
   i.useEffect(() => {
     let e = d.current,
       t = () => {
-        let e = Object.entries(S.Z.getVideoDevices()).filter(e => {
+        let e = Object.entries(C.Z.getVideoDevices()).filter(e => {
           let [t, n] = e;
           return !n.disabled
         });

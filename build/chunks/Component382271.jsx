@@ -96,7 +96,7 @@ let C = (e, t) => {
       }), (0, r.jsx)(d.zxk, {
         variant: "secondary",
         size: "sm",
-        text: v.intl.string(v.t["E+yYpq"]),
+        text: v.intl.string(v.t["g33r/P"]),
         icon: d.kBi,
         onClick: () => C(t.id, i)
       })]

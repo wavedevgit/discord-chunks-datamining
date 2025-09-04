@@ -2,91 +2,89 @@
 /** chunk id: 695346, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A2: () => e2,
-  AY: () => ei,
-  CM: () => el,
-  CW: () => eM,
-  Cr: () => eE,
-  DC: () => ec,
-  Eo: () => ez,
-  Ex: () => eB,
-  Fg: () => ee,
-  G6: () => eh,
-  H1: () => j,
-  I0: () => U,
-  JG: () => eV,
-  JN: () => ea,
-  JT: () => es,
-  L1: () => eP,
-  NA: () => eS,
-  OW: () => ef,
-  Ok: () => ey,
-  Ou: () => Y,
-  P4: () => eb,
-  Pe: () => V,
-  QK: () => ew,
-  QZ: () => R,
-  Qq: () => C,
+  A2: () => e0,
+  AY: () => en,
+  CM: () => eo,
+  CW: () => eL,
+  Cr: () => em,
+  DC: () => es,
+  Eo: () => eW,
+  Ex: () => eU,
+  Fg: () => J,
+  G6: () => e_,
+  H1: () => x,
+  I0: () => M,
+  JG: () => eZ,
+  JN: () => er,
+  JT: () => ea,
+  L1: () => eN,
+  NA: () => ev,
+  OW: () => eu,
+  Ok: () => eE,
+  Ou: () => V,
+  P4: () => eg,
+  Pe: () => Z,
+  QK: () => eR,
+  QZ: () => C,
   R$: () => y,
-  RS: () => eI,
-  R_: () => eZ,
-  Rt: () => e0,
-  SE: () => ej,
-  Sb: () => eR,
-  Sh: () => eK,
-  T4: () => L,
-  UP: () => e_,
-  Wp: () => ex,
-  Xc: () => F,
-  Xk: () => M,
-  Xr: () => ep,
-  YC: () => e1,
-  YT: () => A,
-  Yk: () => eD,
-  _O: () => x,
-  _j: () => eF,
-  bh: () => eo,
-  bm: () => ed,
+  RS: () => eO,
+  R_: () => eG,
+  Rt: () => eJ,
+  SE: () => ex,
+  Sb: () => eC,
+  Sh: () => eY,
+  T4: () => D,
+  UP: () => ed,
+  Wp: () => ew,
+  Xc: () => B,
+  Xk: () => L,
+  Xr: () => ef,
+  YC: () => e$,
+  Yk: () => eP,
+  _O: () => w,
+  _j: () => eB,
+  bh: () => ei,
+  bm: () => ec,
   cC: () => I,
-  cP: () => H,
-  co: () => eg,
-  d$: () => Z,
-  d4: () => D,
-  d8: () => N,
+  cP: () => F,
+  co: () => eh,
+  d$: () => G,
+  d4: () => P,
+  d8: () => A,
   dN: () => b,
   eR: () => v,
-  eo: () => G,
-  ev: () => et,
+  eo: () => k,
+  ev: () => $,
   fq: () => O,
-  fv: () => P,
+  fv: () => N,
   fz: () => T,
-  gR: () => Q,
-  gw: () => eQ,
-  h2: () => J,
-  hg: () => eJ,
-  iG: () => X,
-  iH: () => eU,
-  j7: () => eX,
-  jU: () => en,
-  kJ: () => q,
-  kU: () => er,
-  l4: () => e$,
-  lk: () => eY,
-  mX: () => z,
-  nc: () => eT,
-  nh: () => eW,
-  no: () => eG,
-  qF: () => k,
-  rN: () => eA,
-  tU: () => eO,
-  uL: () => B,
-  uh: () => eq,
+  gR: () => q,
+  gw: () => eq,
+  h2: () => X,
+  hg: () => eX,
+  iG: () => z,
+  iH: () => eM,
+  j7: () => ez,
+  jU: () => ee,
+  kJ: () => K,
+  kU: () => et,
+  l4: () => eQ,
+  lk: () => eV,
+  mX: () => W,
+  nc: () => eI,
+  nh: () => eH,
+  no: () => ek,
+  qF: () => j,
+  rN: () => eS,
+  tU: () => eb,
+  uL: () => U,
+  uh: () => eK,
   vF: () => S,
-  x4: () => ev,
-  xM: () => eu,
-  xq: () => $,
-  zA: () => K,
-  zY: () => eH
+  x4: () => ey,
+  xM: () => el,
+  xq: () => Q,
+  zA: () => Y,
+  zY: () => eF
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
   Chunk442837 = require("./442837.js"),
@@ -148,86 +146,79 @@ let b = (0, Chunk560997.Zc)("textAndImages", "useLegacyChatInput", e => {
 }));
 let T = (0, Chunk560997.Zc)("notifications", "reactionNotifications", e => null != e ? e : a.Ns.NOTIFICATIONS_ENABLED, e => e);
 (0, Chunk560997.Zc)("notifications", "customStatusPushNotifications", e => null != e ? e : a.Oi.STATUS_PUSH_UNSET, e => e);
-let A = (0, Chunk560997.Zc)("notifications", "gameActivityNotifications", e => null != e ? e : a.Tv.ACTIVITY_NOTIFICATIONS_UNSET, e => e),
-  C = (0, Chunk560997.Zc)("notifications", "gameActivityExcludeSteamNotifications", e => {
-    var t;
-    return null != (t = null == e ? true : e.value) && t
-  }, e => o.D5.create({
-    value: !!e
-  })),
-  N = (0, Chunk560997.Zc)("notifications", "enableVoiceActivityNotifications", e => {
+let A = (0, Chunk560997.Zc)("notifications", "enableVoiceActivityNotifications", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
     value: !!e
   })),
-  R = (0, Chunk560997.Zc)("notifications", "quietMode", e => {
+  C = (0, Chunk560997.Zc)("notifications", "quietMode", e => {
     var t;
     return null != (t = null == e ? true : e.value) && t
   }, e => o.D5.create({
     value: !!e
   })),
-  P = (0, Chunk560997.Zc)("notifications", "focusModeExpiresAtMs", e => null != e ? e : "0", e => e),
-  w = [],
-  D = (0, Chunk560997.Zc)("textAndImages", "emojiPickerCollapsedSections", e => null != e ? e : w, e => e),
-  x = (0, Chunk560997.Zc)("textAndImages", "stickerPickerCollapsedSections", e => null != e ? e : w, e => e),
-  L = (0, Chunk560997.Zc)("textAndImages", "soundboardPickerCollapsedSections", e => null != e ? e : w, e => e),
-  j = (0, Chunk560997.Zc)("textAndImages", "viewImageDescriptions", e => {
+  N = (0, Chunk560997.Zc)("notifications", "focusModeExpiresAtMs", e => null != e ? e : "0", e => e),
+  R = [],
+  P = (0, Chunk560997.Zc)("textAndImages", "emojiPickerCollapsedSections", e => null != e ? e : R, e => e),
+  w = (0, Chunk560997.Zc)("textAndImages", "stickerPickerCollapsedSections", e => null != e ? e : R, e => e),
+  D = (0, Chunk560997.Zc)("textAndImages", "soundboardPickerCollapsedSections", e => null != e ? e : R, e => e),
+  x = (0, Chunk560997.Zc)("textAndImages", "viewImageDescriptions", e => {
     var t;
     return null != (t = null == e ? true : e.value) && t
   }, e => o.D5.create({
     value: e
   })),
-  M = (0, Chunk560997.Zc)("textAndImages", "showCommandSuggestions", e => {
+  L = (0, Chunk560997.Zc)("textAndImages", "showCommandSuggestions", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
     value: e
   })),
-  k = (0, Chunk560997.Zc)("voiceAndVideo", "alwaysPreviewVideo", e => {
+  j = (0, Chunk560997.Zc)("voiceAndVideo", "alwaysPreviewVideo", e => {
     var t;
     return null != (t = null == e ? true : e.value) && t
   }, e => o.D5.create({
     value: e
   })),
-  U = (0, Chunk560997.Zc)("voiceAndVideo", "disableStreamPreviews", e => null == e ? true : e.value, e => o.D5.create({
+  M = (0, Chunk560997.Zc)("voiceAndVideo", "disableStreamPreviews", e => null == e ? true : e.value, e => o.D5.create({
     value: e
   })),
-  G = (0, Chunk560997.Zc)("notifications", "notifyFriendsOnGoLive", e => null == e ? true : e.value, e => o.D5.create({
+  k = (0, Chunk560997.Zc)("notifications", "notifyFriendsOnGoLive", e => null == e ? true : e.value, e => o.D5.create({
     value: e
   })),
-  B = "0",
-  Z = (0, Chunk560997.Zc)("notifications", "notificationCenterAckedBeforeId", e => null != e ? e : B, e => e),
-  F = (0, Chunk560997.Zc)("gameLibrary", "installShortcutDesktop", e => {
+  U = "0",
+  G = (0, Chunk560997.Zc)("notifications", "notificationCenterAckedBeforeId", e => null != e ? e : U, e => e),
+  B = (0, Chunk560997.Zc)("gameLibrary", "installShortcutDesktop", e => {
     var t;
     return null != (t = null == e ? true : e.value) && t
   }, e => o.D5.create({
     value: e
   })),
-  V = (0, Chunk560997.Zc)("gameLibrary", "installShortcutStartMenu", e => {
+  Z = (0, Chunk560997.Zc)("gameLibrary", "installShortcutStartMenu", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
     value: e
   })),
-  H = (0, Chunk560997.Zc)("privacy", "allowActivityPartyPrivacyFriends", e => {
+  F = (0, Chunk560997.Zc)("privacy", "allowActivityPartyPrivacyFriends", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
     value: e
   })),
-  Y = (0, Chunk560997.Zc)("privacy", "allowActivityPartyPrivacyVoiceChannel", e => {
+  V = (0, Chunk560997.Zc)("privacy", "allowActivityPartyPrivacyVoiceChannel", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
     value: e
   })),
-  W = [],
-  K = (0, Chunk560997.Zc)("privacy", "messageRequestRestrictedGuildIds", e => null != e ? e : W, e => e),
-  z = (0, Chunk560997.Zc)("privacy", "defaultMessageRequestRestricted", e => null == e ? true : e.value, e => o.D5.create({
+  H = [],
+  Y = (0, Chunk560997.Zc)("privacy", "messageRequestRestrictedGuildIds", e => null != e ? e : H, e => e),
+  W = (0, Chunk560997.Zc)("privacy", "defaultMessageRequestRestricted", e => null == e ? true : e.value, e => o.D5.create({
     value: e
   })),
-  q = (0, Chunk560997.Zc)("privacy", "nonSpamRetrainingOptIn", e => null == e ? true : e.value, e => null == e ? true : o.D5.create({
+  K = (0, Chunk560997.Zc)("privacy", "nonSpamRetrainingOptIn", e => null == e ? true : e.value, e => null == e ? true : o.D5.create({
     value: e
   }));
 (0, Chunk560997.Zc)("privacy", "contactSyncEnabled", e => {
@@ -236,18 +227,18 @@ let A = (0, Chunk560997.Zc)("notifications", "gameActivityNotifications", e => n
 }, e => o.D5.create({
   value: e
 }));
-let X = (0, Chunk560997.Zc)("privacy", "defaultGuildsRestricted", e => null != e && e, e => e),
-  Q = (0, Chunk560997.Zc)("privacy", "defaultGuildsRestrictedV2", e => null == e ? true : e.value, e => o.D5.create({
+let z = (0, Chunk560997.Zc)("privacy", "defaultGuildsRestricted", e => null != e && e, e => e),
+  q = (0, Chunk560997.Zc)("privacy", "defaultGuildsRestrictedV2", e => null == e ? true : e.value, e => o.D5.create({
     value: e
   })),
-  J = (0, Chunk560997.Zc)("privacy", "restrictedGuildIds", e => null != e ? e : [], e => e);
+  X = (0, Chunk560997.Zc)("privacy", "restrictedGuildIds", e => null != e ? e : [], e => e);
 (0, Chunk560997.Zc)("privacy", "friendDiscoveryFlags", e => {
   var t;
   return null != (t = null == e ? true : e.value) ? t : 0
 }, e => o.yC.create({
   value: e
 }));
-let $ = (0, Chunk560997.TG)({
+let Q = (0, Chunk560997.TG)({
     baseSetting: (0, Chunk560997.Zc)("privacy", "friendSourceFlags", e => null == e ? true : e.value, e => o.yC.create({
       value: e
     })),
@@ -256,7 +247,7 @@ let $ = (0, Chunk560997.TG)({
     ineligibleDefault: Chunk981631.HGf,
     eligibleDefault: () => Chunk981631.O8q
   }),
-  ee = (0, Chunk560997.TG)({
+  J = (0, Chunk560997.TG)({
     baseSetting: (0, Chunk560997.Zc)("debug", "rtcPanelShowVoiceStates", e => null == e ? true : e.value, e => o.D5.create({
       value: e
     })),
@@ -276,38 +267,38 @@ let $ = (0, Chunk560997.TG)({
       })
     }
   }),
-  et = (0, Chunk560997.Zc)("textAndImages", "convertEmoticons", e => {
+  $ = (0, Chunk560997.Zc)("textAndImages", "convertEmoticons", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
     value: e
   })),
-  en = (0, Chunk560997.Zc)("textAndImages", "messageDisplayCompact", e => {
+  ee = (0, Chunk560997.Zc)("textAndImages", "messageDisplayCompact", e => {
     var t;
     return null != (t = null == e ? true : e.value) && t
   }, e => o.D5.create({
     value: e
   })),
-  er = (0, Chunk560997.Zc)("voiceAndVideo", "soundboardSettings", e => e, e => e),
-  ei = (0, Chunk560997.Zc)("voiceAndVideo", "soundmojiVolume", e => {
+  et = (0, Chunk560997.Zc)("voiceAndVideo", "soundboardSettings", e => e, e => e),
+  en = (0, Chunk560997.Zc)("voiceAndVideo", "soundmojiVolume", e => {
     var t;
     return null != (t = null == e ? true : e.value) ? t : 100
   }, e => o.A8.create({
     value: e
   })),
-  ea = (0, Chunk560997.Zc)("voiceAndVideo", "streamNotificationsEnabled", e => {
+  er = (0, Chunk560997.Zc)("voiceAndVideo", "streamNotificationsEnabled", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
     value: e
   })),
-  eo = (0, Chunk560997.Zc)("privacy", "dropsOptedOut", e => {
+  ei = (0, Chunk560997.Zc)("privacy", "dropsOptedOut", e => {
     var t;
     return null != (t = null == e ? true : e.value) && t
   }, e => o.D5.create({
     value: e
   })),
-  es = (0, Chunk560997.Zc)("privacy", "quests3PDataOptedOut", e => {
+  ea = (0, Chunk560997.Zc)("privacy", "quests3PDataOptedOut", e => {
     var t;
     return null != (t = null == e ? true : e.value) && t
   }, e => o.D5.create({
@@ -319,7 +310,7 @@ let $ = (0, Chunk560997.TG)({
 }, e => o.D5.create({
   value: e
 }));
-let el = (0, Chunk560997.TG)({
+let eo = (0, Chunk560997.TG)({
     baseSetting: (0, Chunk560997.Zc)("voiceAndVideo", "afkTimeout", e => null == e ? true : e.value, e => o.yC.create({
       value: e
     })),
@@ -329,13 +320,13 @@ let el = (0, Chunk560997.TG)({
     eligibleDefault: () => (0, Chunk291741.fD)("user_settings"),
     onUseDefault: () => (0, Chunk291741.Dl)("user_settings")
   }),
-  ec = (0, Chunk560997.Zc)("textAndImages", "viewNsfwGuilds", e => {
+  es = (0, Chunk560997.Zc)("textAndImages", "viewNsfwGuilds", e => {
     var t;
     return null != (t = null == e ? true : e.value) && t
   }, e => o.D5.create({
     value: e
   })),
-  eu = (0, Chunk560997.Zc)("textAndImages", "viewNsfwCommands", e => {
+  el = (0, Chunk560997.Zc)("textAndImages", "viewNsfwCommands", e => {
     var t;
     return null != (t = null == e ? true : e.value) && t
   }, e => o.D5.create({
@@ -347,19 +338,19 @@ let el = (0, Chunk560997.TG)({
 }, e => o.D5.create({
   value: e
 }));
-let ed = (0, Chunk560997.Zc)("gameLibrary", "disableGamesTab", e => {
+let ec = (0, Chunk560997.Zc)("gameLibrary", "disableGamesTab", e => {
     var t;
     return null != (t = null == e ? true : e.value) && t
   }, e => o.D5.create({
     value: e
   })),
-  ef = (0, Chunk560997.Zc)("textAndImages", "enableTtsCommand", e => {
+  eu = (0, Chunk560997.Zc)("textAndImages", "enableTtsCommand", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
     value: e
   })),
-  e_ = (0, Chunk560997.Zc)("textAndImages", "explicitContentFilter", e => {
+  ed = (0, Chunk560997.Zc)("textAndImages", "explicitContentFilter", e => {
     var t;
     return null != (t = null == e ? true : e.value) ? t : p.TI.NON_FRIENDS
   }, e => o.yC.create({
@@ -371,8 +362,8 @@ let ed = (0, Chunk560997.Zc)("gameLibrary", "disableGamesTab", e => {
 }, e => o.yC.create({
   value: e
 }));
-let ep = (0, Chunk560997.Zc)("textAndImages", "dmSpamFilterV2", e => null != e ? e : a.Xr.DEFAULT_UNSET, e => e),
-  eh = (0, Chunk560997.Zc)("status", "showCurrentGame", e => {
+let ef = (0, Chunk560997.Zc)("textAndImages", "dmSpamFilterV2", e => null != e ? e : a.Xr.DEFAULT_UNSET, e => e),
+  e_ = (0, Chunk560997.Zc)("status", "showCurrentGame", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
@@ -384,38 +375,38 @@ let ep = (0, Chunk560997.Zc)("textAndImages", "dmSpamFilterV2", e => null != e ?
 }, e => o.D5.create({
   value: e
 }));
-let em = new Set(Object.values(Chunk981631.Skl)),
-  eg = (0, Chunk560997.Zc)("status", "status", e => null != e && em.has(e.value) ? e.value : m.Skl.UNKNOWN, e => o.Gm.create({
+let ep = new Set(Object.values(Chunk981631.Skl)),
+  eh = (0, Chunk560997.Zc)("status", "status", e => null != e && ep.has(e.value) ? e.value : m.Skl.UNKNOWN, e => o.Gm.create({
     value: e
   })),
-  eE = (0, Chunk560997.Zc)("status", "statusExpiresAtMs", e => null != e ? e : "0", e => e),
-  eb = (0, Chunk560997.Zc)("status", "statusCreatedAtMs", e => e, e => e),
-  ey = (0, Chunk560997.Zc)("status", "customStatus", e => e, e => e),
-  eO = (0, Chunk560997.Zc)("clips", "allowVoiceRecording", e => {
+  em = (0, Chunk560997.Zc)("status", "statusExpiresAtMs", e => null != e ? e : "0", e => e),
+  eg = (0, Chunk560997.Zc)("status", "statusCreatedAtMs", e => e, e => e),
+  eE = (0, Chunk560997.Zc)("status", "customStatus", e => e, e => e),
+  eb = (0, Chunk560997.Zc)("clips", "allowVoiceRecording", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
     value: e
   })),
-  ev = (0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "inlineAttachmentMedia", e => {
+  ey = (0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "inlineAttachmentMedia", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
     value: e
   })), "text", "inlineAttachmentMedia"),
-  eI = (0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "inlineEmbedMedia", e => {
+  eO = (0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "inlineEmbedMedia", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
     value: e
   })), "text", "inlineEmbedMedia"),
-  eS = (0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "renderEmbeds", e => {
+  ev = (0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "renderEmbeds", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
     value: e
   })), "text", "renderEmbeds"),
-  eT = (0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "renderReactions", e => {
+  eI = (0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "renderReactions", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
@@ -450,22 +441,22 @@ let em = new Set(Object.values(Chunk981631.Skl)),
     })
   }
 }), "text", "defaultReactionEmoji");
-let eA = (0, Chunk560997.Zc)("localization", "timezoneOffset", e => {
+let eS = (0, Chunk560997.Zc)("localization", "timezoneOffset", e => {
     var t;
     return null != (t = null == e ? true : e.value) ? t : null
   }, e => o.T4.create({
     value: null != e ? e : 0
   })),
-  eC = new Set([Chunk969943.fx.AUTO, Chunk85746.l.COZY, Chunk85746.l.COMPACT]);
-(0, Chunk560997.Zc)("appearance", "channelListLayout", e => null != e && eC.has(e.value) ? e.value : s.l.COZY, e => o.Gm.create({
+  eT = new Set([Chunk969943.fx.AUTO, Chunk85746.l.COZY, Chunk85746.l.COMPACT]);
+(0, Chunk560997.Zc)("appearance", "channelListLayout", e => null != e && eT.has(e.value) ? e.value : s.l.COZY, e => o.Gm.create({
   value: e
 }));
-let eN = new Set([Chunk85746.Z.ALL, Chunk85746.Z.UNREADS, Chunk85746.Z.NONE]);
-(0, Chunk560997.Zc)("appearance", "messagePreviews", e => null != e && eN.has(e.value) ? e.value : s.Z.ALL, e => o.Gm.create({
+let eA = new Set([Chunk85746.Z.ALL, Chunk85746.Z.UNREADS, Chunk85746.Z.NONE]);
+(0, Chunk560997.Zc)("appearance", "messagePreviews", e => null != e && eA.has(e.value) ? e.value : s.Z.ALL, e => o.Gm.create({
   value: e
 }));
-let eR = (0, Chunk560997.KM)((0, Chunk560997.Zc)("appearance", "developerMode", e => null != e && e, e => e), "appearance", "developerMode"),
-  eP = (0, Chunk560997.Zc)("appearance", "clientThemeSettings", e => {
+let eC = (0, Chunk560997.KM)((0, Chunk560997.Zc)("appearance", "developerMode", e => null != e && e, e => e), "appearance", "developerMode"),
+  eN = (0, Chunk560997.Zc)("appearance", "clientThemeSettings", e => {
     var t;
     return {
       backgroundGradientPresetId: null == e || null == (t = e.backgroundGradientPresetId) ? true : t.value,
@@ -487,7 +478,7 @@ let eR = (0, Chunk560997.KM)((0, Chunk560997.Zc)("appearance", "developerMode", 
       baseMix: e.customUserThemeSettings.baseMix
     } : true
   })),
-  ew = (0, Chunk560997.R2)((0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "gifAutoPlay", e => {
+  eR = (0, Chunk560997.R2)((0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "gifAutoPlay", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
@@ -499,7 +490,7 @@ let eR = (0, Chunk560997.KM)((0, Chunk560997.Zc)("appearance", "developerMode", 
     var e;
     return null == (e = Chunk263937.Z.getOverride("gifAutoPlay")) ? true : module.value
   })),
-  eD = (0, Chunk560997.R2)((0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "animateEmoji", e => {
+  eP = (0, Chunk560997.R2)((0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "animateEmoji", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
@@ -511,7 +502,7 @@ let eR = (0, Chunk560997.KM)((0, Chunk560997.Zc)("appearance", "developerMode", 
     var e;
     return null == (e = Chunk263937.Z.getOverride("animateEmoji")) ? true : module.value
   })),
-  ex = (0, Chunk560997.R2)((0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "animateStickers", e => {
+  ew = (0, Chunk560997.R2)((0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "animateStickers", e => {
     var t;
     return null != (t = null == e ? true : e.value) ? t : E.yr.ALWAYS_ANIMATE
   }, e => o.yC.create({
@@ -523,11 +514,11 @@ let eR = (0, Chunk560997.KM)((0, Chunk560997.Zc)("appearance", "developerMode", 
     var e;
     return null == (e = Chunk263937.Z.getOverride("animateStickers")) ? true : module.value
   })),
-  eL = [],
-  ej = (0, Chunk560997.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eL, e => e),
-  eM = (0, Chunk560997.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eL, e => e, Chunk526761.fy.FREQUENT_USER_ACTION),
-  ek = [],
-  eU = (0, Chunk560997.Zc)("privacy", "activityJoiningRestrictedGuildIds", e => null != e ? e : ek, e => e);
+  eD = [],
+  ex = (0, Chunk560997.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eD, e => e),
+  eL = (0, Chunk560997.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eD, e => e, Chunk526761.fy.FREQUENT_USER_ACTION),
+  ej = [],
+  eM = (0, Chunk560997.Zc)("privacy", "activityJoiningRestrictedGuildIds", e => null != e ? e : ej, e => e);
 (0, Chunk560997.TG)({
   baseSetting: (0, Chunk560997.Zc)("privacy", "defaultGuildsActivityRestricted", e => e, e => null != e ? e : a.E5.OFF),
   isEligible: () => (0, Chunk362352.o0)("user_settings"),
@@ -535,31 +526,31 @@ let eR = (0, Chunk560997.KM)((0, Chunk560997.Zc)("appearance", "developerMode", 
   ineligibleDefault: Chunk524437.E5.OFF,
   eligibleDefault: () => Chunk524437.E5.ON_FOR_LARGE_GUILDS
 });
-let eG = (0, Chunk560997.TG)({
+let ek = (0, Chunk560997.TG)({
     baseSetting: (0, Chunk560997.Zc)("privacy", "defaultGuildsActivityRestrictedV2", e => e, e => null != e ? e : a.GI.ACTIVITY_STATUS_OFF),
     isEligible: () => (0, Chunk362352.o0)("user_settings"),
     useIsEligible: () => (0, Chunk362352.Yd)("user_settings"),
     ineligibleDefault: Chunk524437.GI.ACTIVITY_STATUS_OFF,
     eligibleDefault: () => Chunk524437.GI.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS
   }),
-  eB = (0, Chunk560997.Zc)("privacy", "familyCenterEnabledV2", e => null == e ? true : e.value, e => o.D5.create({
+  eU = (0, Chunk560997.Zc)("privacy", "familyCenterEnabledV2", e => null == e ? true : e.value, e => o.D5.create({
     value: e
   })),
-  eZ = (0, Chunk560997.Zc)("privacy", "hideLegacyUsername", e => {
+  eG = (0, Chunk560997.Zc)("privacy", "hideLegacyUsername", e => {
     var t;
     return null != (t = null == e ? true : e.value) && t
   }, e => o.D5.create({
     value: e
   })),
-  eF = (0, Chunk560997.Zc)("privacy", "allowGameFriendDmsInDiscord", e => {
+  eB = (0, Chunk560997.Zc)("privacy", "allowGameFriendDmsInDiscord", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
     value: e
   })),
-  eV = (0, Chunk560997.Zc)("privacy", "slayerSdkReceiveDmsInGame", e => null != e ? e : a.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET, e => e),
-  eH = (0, Chunk560997.Zc)("ads", "alwaysDeliver", e => null != e && e, e => e),
-  eY = e => {
+  eZ = (0, Chunk560997.Zc)("privacy", "slayerSdkReceiveDmsInGame", e => null != e ? e : a.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET, e => e),
+  eF = (0, Chunk560997.Zc)("ads", "alwaysDeliver", e => null != e && e, e => e),
+  eV = e => {
     let {
       explicitContentGuilds: t,
       explicitContentFriendDm: n,
@@ -571,7 +562,7 @@ let eG = (0, Chunk560997.TG)({
       explicitContentNonFriendDm: null != r ? r : a.Q4.UNSET_EXPLICIT_CONTENT_REDACTION
     }
   },
-  eW = e => {
+  eH = e => {
     let {
       explicitContentGuilds: t,
       explicitContentFriendDm: n,
@@ -583,8 +574,8 @@ let eG = (0, Chunk560997.TG)({
       explicitContentNonFriendDm: null != r ? r : true
     }
   },
-  eK = (0, Chunk560997.Zc)("textAndImages", "explicitContentSettings", eY, eW),
-  ez = e => {
+  eY = (0, Chunk560997.Zc)("textAndImages", "explicitContentSettings", eV, eH),
+  eW = e => {
     let {
       goreContentGuilds: t,
       goreContentFriendDm: n,
@@ -596,7 +587,7 @@ let eG = (0, Chunk560997.TG)({
       goreContentNonFriendDm: null != r ? r : a.Q4.UNSET_EXPLICIT_CONTENT_REDACTION
     }
   },
-  eq = e => {
+  eK = e => {
     let {
       goreContentGuilds: t,
       goreContentFriendDm: n,
@@ -608,8 +599,8 @@ let eG = (0, Chunk560997.TG)({
       goreContentNonFriendDm: null != r ? r : true
     }
   },
-  eX = (0, Chunk560997.Zc)("textAndImages", "goreContentSettings", ez, eq),
-  eQ = (0, Chunk560997.Zc)("textAndImages", "keywordFilterSettings", e => {
+  ez = (0, Chunk560997.Zc)("textAndImages", "goreContentSettings", eW, eK),
+  eq = (0, Chunk560997.Zc)("textAndImages", "keywordFilterSettings", e => {
     let {
       profanity: t,
       sexualContent: n,
@@ -649,11 +640,11 @@ let eG = (0, Chunk560997.TG)({
 }, e => o.D5.create({
   value: e
 }));
-let eJ = (0, Chunk560997.Zc)("appearance", "timestampHourCycle", e => null != e ? e : a.hg.AUTO, e => e);
+let eX = (0, Chunk560997.Zc)("appearance", "timestampHourCycle", e => null != e ? e : a.hg.AUTO, e => e);
 (0, Chunk560997.Zc)("appearance", "launchPadMode", e => null != e ? e : a.l1.LAUNCH_PAD_DISABLED, e => e), (0, Chunk560997.Zc)("appearance", "swipeRightToLeftMode", e => null != e ? e : a.n9.SWIPE_RIGHT_TO_LEFT_UNSET, e => e);
-let e$ = (0, Chunk560997.Zc)("userContent", "lastReceivedChangelogId", e => null != e ? e : "0", e => e),
-  e0 = (0, Chunk560997.Zc)("safetySettings", "ignoreProfileSpeedbumpDisabled", e => null != e && e, e => e),
-  e1 = (0, Chunk560997.Zc)("appearance", "uiDensity", e => e === a.Pi.UNSET_UI_DENSITY ? a.Pi.DEFAULT : null != e ? e : a.Pi.DEFAULT, e => e),
-  e2 = (0, Chunk560997.Zc)("inAppFeedbackSettings", "inAppFeedbackStates", e => (0, r.mapValues)(null != e ? e : {}, e => (0, r.mapValues)(e, e => (null == e ? true : e.value) != null ? Number(e.value) : true)), e => (0, r.mapValues)(e, e => (0, r.mapValues)(e, e => o.wA.create({
+let eQ = (0, Chunk560997.Zc)("userContent", "lastReceivedChangelogId", e => null != e ? e : "0", e => e),
+  eJ = (0, Chunk560997.Zc)("safetySettings", "ignoreProfileSpeedbumpDisabled", e => null != e && e, e => e),
+  e$ = (0, Chunk560997.Zc)("appearance", "uiDensity", e => e === a.Pi.UNSET_UI_DENSITY ? a.Pi.DEFAULT : null != e ? e : a.Pi.DEFAULT, e => e),
+  e0 = (0, Chunk560997.Zc)("inAppFeedbackSettings", "inAppFeedbackStates", e => (0, r.mapValues)(null != e ? e : {}, e => (0, r.mapValues)(e, e => (null == e ? true : e.value) != null ? Number(e.value) : true)), e => (0, r.mapValues)(e, e => (0, r.mapValues)(e, e => o.wA.create({
     value: null != e ? String(e) : true
   }))), Chunk526761.fy.AUTOMATED)

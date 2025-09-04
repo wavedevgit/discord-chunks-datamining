@@ -26,7 +26,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk214795 = require("./214795.js");
 
-function y() {
+function S() {
   return (0, Chunk951288.jsx)("span", {
     className: Chunk214795.ellipsis,
     children: "•"
@@ -40,20 +40,20 @@ function O(e) {
     data: n
   } = (0, c.IX)(null != t && (0, x.T)(t) ? t.id : true);
   return null == t ? (0, r.jsx)(a.hGI, {
-    className: S.screenArrowIcon,
+    className: C.screenArrowIcon,
     size: "md",
     color: "currentColor"
   }) : (0, x.T)(t) ? (0, r.jsx)(d.Z, {
     game: n,
     pid: t.pid
   }) : null == t.icon || "" === t.icon ? (0, r.jsx)(a.hGI, {
-    className: S.screenArrowIcon,
+    className: C.screenArrowIcon,
     size: "md",
     color: "currentColor"
   }) : (0, r.jsx)("img", {
     src: t.icon,
     alt: "",
-    className: S.sourceIcon
+    className: C.sourceIcon
   })
 }
 
@@ -93,17 +93,17 @@ function w() {
               size: "xxs",
               color: "currentColor"
             }), k]
-          }), (0, Chunk951288.jsx)(y, {})]
+          }), (0, Chunk951288.jsx)(S, {})]
         }), null != G && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
           children: [(0, Chunk951288.jsx)("span", {
             children: G
-          }), (0, Chunk951288.jsx)(y, {})]
+          }), (0, Chunk951288.jsx)(S, {})]
         }), (0, Chunk951288.jsx)("span", {
           children: M
-        }), (0, Chunk951288.jsx)(y, {}), (0, Chunk951288.jsx)("span", {
+        }), (0, Chunk951288.jsx)(S, {}), (0, Chunk951288.jsx)("span", {
           children: "".concat(A, "fps")
         }), w && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-          children: [(0, Chunk951288.jsx)(y, {}), (0, Chunk951288.jsxs)("span", {
+          children: [(0, Chunk951288.jsx)(S, {}), (0, Chunk951288.jsxs)("span", {
             className: Chunk214795.iconSummaryContainer,
             children: [(0, Chunk951288.jsx)(Chunk481060.OyP, {
               className: l()(Chunk214795.icon, Chunk214795.mutedIcon),
@@ -112,9 +112,9 @@ function w() {
             }), Chunk388032.intl.string(Chunk637824.default.FzMGWV)]
           })]
         }), !w && !B && U && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-          children: [(0, Chunk951288.jsx)(y, {}), Chunk388032.intl.string(Chunk637824.default["n9/rUl"])]
+          children: [(0, Chunk951288.jsx)(S, {}), Chunk388032.intl.string(Chunk637824.default["n9/rUl"])]
         }), B ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-          children: [(0, Chunk951288.jsx)(y, {}), (0, Chunk951288.jsx)("span", {
+          children: [(0, Chunk951288.jsx)(S, {}), (0, Chunk951288.jsx)("span", {
             children: null == (t = E.find(e => {
               let {
                 id: t

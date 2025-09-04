@@ -56,9 +56,9 @@ function Y(e) {
     sourceApplication: o,
     analyticsLocations: Y = [],
     selectSource: J = true
-  } = e, X = i.useRef(performance.now()), K = (0, f.e7)([b.Z], () => b.Z.getUseSystemScreensharePicker() && ((0, O.isLinux)() || (0, O.isMac)() && a().satisfies(null === p.Z || true === p.Z ? true : p.Z.os.release, F.jR))), {
+  } = e, X = i.useRef(performance.now()), K = (0, f.e7)([b.Z], () => b.Z.getUseSystemScreensharePicker() && ((0, O.isLinux)() || (0, O.isMac)() && a().satisfies(null === p.Z || true === p.Z ? true : p.Z.os.release, z.jR))), {
     analyticsLocations: q
-  } = (0, _.ZP)(Y, g.Z.GO_LIVE_MODAL_V2), Q = (0, f.e7)([S.default], () => S.default.getCurrentUser()), $ = (0, T.Z)(), {
+  } = (0, _.ZP)(Y, g.Z.GO_LIVE_MODAL_V2), Q = (0, f.e7)([C.default], () => C.default.getCurrentUser()), $ = (0, T.Z)(), {
     state: ee,
     dispatch: et
   } = (0, k.Ti)(o, Q, $, (0, O.isWindows)() && null != o && J ? "confirm" : "source_select");
@@ -70,16 +70,16 @@ function Y(e) {
     es = K && ee.sourceType !== u.vA.CAMERA,
     eo = i.useMemo(() => {
       let e = [{
-        name: z.intl.string(z.t.tHoi7u),
+        name: H.intl.string(H.t.tHoi7u),
         value: u.vA.WINDOW,
         icon: m.GON
       }, {
-        name: z.intl.string(z.t.MhJ43N),
+        name: H.intl.string(H.t.MhJ43N),
         value: u.vA.CAMERA,
         icon: m.Odl
       }];
       return K || e.splice(1, 0, {
-        name: z.intl.string(z.t.slM8rK),
+        name: H.intl.string(H.t.slM8rK),
         value: u.vA.SCREEN,
         icon: m.pzj
       }), e
@@ -101,8 +101,8 @@ function Y(e) {
       });
       if (t) return n();
       "no permission" === r && h.Z.show({
-        title: z.intl.string(z.t["X+mXen"]),
-        body: z.intl.string(z.t.MIJCzs)
+        title: H.intl.string(H.t["X+mXen"]),
+        body: H.intl.string(H.t.MIJCzs)
       }), n()
     }, [n, ee, q]);
   async function ed(e) {
@@ -114,7 +114,7 @@ function Y(e) {
     var e;
     ec({
       id: "prepicked:" + ee.nativeSourceType,
-      name: null != (e = I.ZP.getLastPickedContentTitle()) ? e : z.intl.string(z.t["KKcy9/"]),
+      name: null != (e = I.ZP.getLastPickedContentTitle()) ? e : H.intl.string(H.t["KKcy9/"]),
       url: ""
     })
   }, [ec, ee.nativeSourceType]);
@@ -126,8 +126,8 @@ function Y(e) {
         impressionName: c.ImpressionNames.GO_LIVE_MODAL,
         impressionProperties: {
           location_stack: q,
-          application_id: (0, O.isWindows)() ? null == (t = (0, N.Z)(v.ZP, y.Z)) ? true : t.id : true,
-          parent_media_session_id: C.Z.getMediaSessionId()
+          application_id: (0, O.isWindows)() ? null == (t = (0, N.Z)(v.ZP, S.Z)) ? true : t.id : true,
+          parent_media_session_id: y.Z.getMediaSessionId()
         }
       },
       className: s()(V.root, {
@@ -191,7 +191,7 @@ function Y(e) {
                 (0, Z.t)(), (0, Z.T)(ee.nativeSourceType)
               },
               align: "right",
-              ctaText: z.intl.string(z.t.FiBjwc),
+              ctaText: H.intl.string(H.t.FiBjwc),
               hideOptionsButton: !en
             }), ei && !es && (0, r.jsx)(E.Z, {
               mainCTADisabled: null == ee.selectedSource,
@@ -200,7 +200,7 @@ function Y(e) {
               },
               align: "right",
               hideOptionsButton: !en,
-              ctaText: z.intl.string(H.default["5AyH/v"])
+              ctaText: H.intl.string(F.default["5AyH/v"])
             }), (!en || !(ei || es)) && (0, r.jsx)(L.Z, {
               align: "right"
             })]
