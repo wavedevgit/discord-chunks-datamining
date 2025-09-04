@@ -37,6 +37,7 @@ async function g(e) {
     {
       enableHangStatus: n
     } = s.n.getCurrentConfig({
+      guildId: null == t ? true : t.guild_id,
       location: "GameActivityManager"
     }, {
       autoTrackExposure: false

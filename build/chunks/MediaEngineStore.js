@@ -434,11 +434,10 @@ function tV() {
         muteBeforeProcessing: o,
         pttBeforeProcessing: s,
         skipEncode: l
-      } = (null != i ? B.Z : G.Z).getCurrentConfig(eA({
-        location: "setupMediaEngine"
-      }, null != i && {
-        guildId: i
-      }), {
+      } = (null != i ? B.Z : G.Z).getCurrentConfig({
+        location: "setupMediaEngine",
+        guildId: null != i ? i : true
+      }, {
         autoTrackExposure: true
       });
     o && e.setExperimentFlag(eI.V8.MUTE_BEFORE_PROCESSING, true), s && e.setExperimentFlag(eI.V8.PTT_BEFORE_PROCESSING, true), l && e.setExperimentFlag(eI.V8.SKIP_ENCODE, true);
