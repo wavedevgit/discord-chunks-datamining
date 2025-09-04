@@ -34,7 +34,7 @@ let v = e => {
       showActivitySharingIndicatorWhenSharing: r
     } = (0, m.D)("SharingPrivacyPopout"), i = (0, d.Ws)({
       location: _.dr.CONFLICT_CHECKS
-    }), o = p.G6.useSetting(), a = (0, l.e7)([h.Z], () => h.Z.getLayers().includes(O.S9g.USER_SETTINGS)), s = (0, l.e7)([f.Z], () => f.Z.getStatus()), {
+    }), o = p.G6.useSetting(), a = (0, l.e7)([f.Z], () => f.Z.getLayers().includes(O.S9g.USER_SETTINGS)), s = (0, l.e7)([h.Z], () => h.Z.getStatus()), {
       isOpen: c
     } = (0, u.Z)();
     if ((i || !i && t) && !a && !c && !__OVERLAY__ && n) {

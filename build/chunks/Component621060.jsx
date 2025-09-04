@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 /** chunk id: 621060, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => g,
+  ZP: () => j,
   v0: () => f
 }), require("./388685.js"), require("./539854.js"), require("./642613.js");
 var a, Chunk951288 = require("./951288.js"),
@@ -36,23 +36,23 @@ let v = ["Experiments", "Events", "Premium", "Billing", "Users", "Guilds", "UI",
     })
   });
 
-function j(e) {
+function g(e) {
   let {
     tabs: t,
     selectedTabId: n,
     onSelectTab: a
   } = e, i = l.useRef(new Map), [s, f] = l.useState(() => new Set), {
-    ref: j,
-    width: g
+    ref: g,
+    width: j
   } = (0, u.ZP)(), _ = l.useRef(null);
   l.useEffect(() => {
     var e, a, r, l;
-    if (null == g) return;
+    if (null == j) return;
     let s = new Set,
-      o = null != g ? g : 0;
+      o = null != j ? j : 0;
     for (let c of (o -= null != (a = null == (e = i.current.get(n)) ? true : e.getBoundingClientRect().width) ? a : 0, t)) c.id !== n && (o -= null != (l = null == (r = i.current.get(c.id)) ? true : r.getBoundingClientRect().width) ? l : 0) < 0 && s.add(c.id);
     f(s)
-  }, [t, g, j, n]);
+  }, [t, j, g, n]);
   let y = l.useCallback(e => {
     var n, l;
     let {
@@ -99,7 +99,7 @@ function j(e) {
     className: p.tabBarContainer,
     children: [(0, r.jsxs)("div", {
       className: p.tabBar,
-      ref: j,
+      ref: g,
       children: [t.map(e => {
         let {
           id: t,
@@ -183,7 +183,7 @@ function j(e) {
   })
 }
 
-function g(e, t) {
+function j(e, t) {
   var n, a, i;
   let {
     tabs: s,
@@ -191,7 +191,7 @@ function g(e, t) {
     onChangeTab: c
   } = e, [d, u] = l.useState(null != o ? o : null == (n = s[0]) ? true : n.id);
   return {
-    TabBar: l.useCallback(() => (0, r.jsx)(j, {
+    TabBar: l.useCallback(() => (0, r.jsx)(g, {
       tabs: s,
       selectedTabId: d,
       onSelectTab: e => {

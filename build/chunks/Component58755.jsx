@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 /** chunk id: 58755, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => j
+  P: () => g
 }), require("./388685.js"), require("./35282.js"), require("./49124.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -59,7 +59,7 @@ let v = Object.keys(Chunk500949.jQ).map(e => ({
     label: e
   }));
 
-function j(e) {
+function g(e) {
   let {
     state: t,
     setState: n
@@ -106,7 +106,7 @@ function j(e) {
         })
       }, e.name))
     })]
-  }), u = l.find(e => e.name === i), v = null != u ? (0, a.jsx)(g, {
+  }), u = l.find(e => e.name === i), v = null != u ? (0, a.jsx)(j, {
     onClose: () => s(null),
     scale: u,
     setState: n
@@ -116,7 +116,7 @@ function j(e) {
   })
 }
 
-function g(e) {
+function j(e) {
   let {
     scale: t,
     setState: n,
@@ -126,12 +126,12 @@ function g(e) {
     base: p,
     darkness: f,
     lightness: b,
-    showColumnarPalettePreview: j,
-    colorSpace: g,
+    showColumnarPalettePreview: g,
+    colorSpace: j,
     easingStrength: _ = 1,
     useP3ColorSpace: C,
     steps: N = 26
-  } = t, E = (0, x.XM)(t), O = (0, x.W6)(E, c);
+  } = t, E = (0, x.XM)(t), T = (0, x.W6)(E, c);
   return (0, a.jsxs)(d.hjN, {
     className: h.paletteSettings,
     children: [(0, a.jsxs)("div", {
@@ -186,7 +186,7 @@ function g(e) {
         children: "The color space used to generate the palette. Different color spaces will produce different results."
       }), (0, a.jsx)(d.q4e, {
         options: v,
-        value: g,
+        value: j,
         onChange: e => (0, x.t4)(c, e, n),
         popoutLayerContext: m.O$
       })]
@@ -248,7 +248,7 @@ function g(e) {
       children: [(0, a.jsx)(d.xJW, {
         children: (0, a.jsx)(d.j7V, {
           note: "Renders the palette preview in a single column, useful for comparing the luminance of each step.",
-          value: j,
+          value: g,
           onChange: e => (0, x.KB)(c, e, n),
           children: "Show columnar palette preview"
         })
@@ -274,22 +274,22 @@ function g(e) {
         title: "Palette Preview",
         children: (0, a.jsx)("div", {
           className: h.paletteOverrides,
-          "data-columnar": j,
+          "data-columnar": g,
           children: Object.entries(E).map((e, n) => {
-            let [r, c] = e, u = (0, x.HI)(c), m = (0, s.Z)((0, o.Z)("black"), c) > 4.5 ? "black" : "white", h = O[r];
+            let [r, c] = e, u = (0, x.HI)(c), m = (0, s.Z)((0, o.Z)("black"), c) > 4.5 ? "black" : "white", h = T[r];
             return (0, a.jsxs)("div", {
               style: {
                 backgroundColor: u
               },
               children: [(0, a.jsxs)(d.Text, {
-                variant: j ? "text-sm/medium" : "text-xs/medium",
+                variant: g ? "text-sm/medium" : "text-xs/medium",
                 style: {
                   color: m
                 },
-                children: [t.name, ".", n + 1, j && null != h ? (0, a.jsx)("strong", {
+                children: [t.name, ".", n + 1, g && null != h ? (0, a.jsx)("strong", {
                   children: " - ".concat(h)
                 }) : ""]
-              }), j && (0, a.jsxs)(d.Text, {
+              }), g && (0, a.jsxs)(d.Text, {
                 variant: "text-xxs/medium",
                 style: {
                   opacity: .75,

@@ -1,63 +1,63 @@
 /** Chunk was on 99014 **/
-/** chunk id: 119331, original params: e,t,n (module,exports,require) **/
+/** chunk id: 119331, original params: e,t,o (module,exports,require) **/
 require.d(exports, {
-  t: () => c
+  t: () => i
 }), require("./415506.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk267642 = require("./267642.js"),
   Chunk191083 = require("./191083.js");
 
-function c(e, t) {
+function i(e, t) {
   if (t) return {
-    Icon: i.dz2,
+    Icon: a.dz2,
     className: s.unlocked
   };
   switch (e) {
-    case a.Ro.EMOJI:
+    case c.Ro.EMOJI:
       return {
-        Icon: i.EO4, className: o()(s.icon, s.emoji)
+        Icon: a.EO4, className: r()(s.icon, s.emoji)
       };
-    case a.Ro.AUDIO:
+    case c.Ro.AUDIO:
       return {
-        Icon: i.VWR, className: o()(s.icon, s.audio)
+        Icon: a.VWR, className: r()(s.icon, s.audio)
       };
-    case a.Ro.ANIMATED:
+    case c.Ro.ANIMATED:
       return {
-        Icon: i.OUq, className: o()(s.icon, s.animated)
+        Icon: a.OUq, className: r()(s.icon, s.animated)
       };
-    case a.Ro.CUSTOMIZATION:
+    case c.Ro.CUSTOMIZATION:
       return {
-        Icon: i.Ka2, className: o()(s.icon, s.customization)
+        Icon: a.Ka2, className: r()(s.icon, s.customization)
       };
-    case a.Ro.UPLOAD:
+    case c.Ro.UPLOAD:
       return {
-        Icon: i.rG2, className: o()(s.icon, s.upload)
+        Icon: a.rG2, className: r()(s.icon, s.upload)
       };
-    case a.Ro.VANITY:
+    case c.Ro.VANITY:
       return {
-        Icon: i.r7p, className: o()(s.icon, s.vanity)
+        Icon: a.r7p, className: r()(s.icon, s.vanity)
       };
-    case a.Ro.STREAM:
+    case c.Ro.STREAM:
       return {
-        Icon: i.hGI, className: o()(s.icon, s.stream)
+        Icon: a.hGI, className: r()(s.icon, s.stream)
       };
-    case a.Ro.STICKER:
+    case c.Ro.STICKER:
       return {
-        Icon: i.SlE, className: o()(s.icon, s.sticker)
+        Icon: a.SlE, className: r()(s.icon, s.sticker)
       };
-    case a.Ro.CUSTOM_ROLE_ICON:
+    case c.Ro.CUSTOM_ROLE_ICON:
       return {
-        Icon: i.lZ8, className: o()(s.icon, s.customRoleIcon)
+        Icon: a.lZ8, className: r()(s.icon, s.customRoleIcon)
       };
-    case a.Ro.STAGE_VIDEO:
+    case c.Ro.STAGE_VIDEO:
       return {
-        Icon: i.ewx, className: o()(s.icon, s.stage)
+        Icon: a.ewx, className: r()(s.icon, s.stage)
       };
-    case a.Ro.SOUNDBOARD:
+    case c.Ro.SOUNDBOARD:
       return {
-        Icon: i.KY1, className: o()(s.icon, s.soundboard)
+        Icon: a.KY1, className: r()(s.icon, s.soundboard)
       }
   }
   throw Error("Unexpected perk icon ".concat(e))

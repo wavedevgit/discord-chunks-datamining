@@ -18,7 +18,7 @@ var i, Chunk442837 = require("./442837.js"),
   Chunk55589 = require("./55589.js"),
   Chunk981631 = require("./981631.js");
 
-function y(e, t, n) {
+function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,9 +26,9 @@ function y(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let O = [Chunk212819.h8.TEXT_CHANNEL, Chunk212819.h8.GROUP_DM, Chunk212819.h8.USER],
-  _ = null,
+let y = [Chunk212819.h8.TEXT_CHANNEL, Chunk212819.h8.GROUP_DM, Chunk212819.h8.USER],
   C = null,
+  _ = null,
   T = [],
   m = [];
 
@@ -42,7 +42,7 @@ function I(e) {
         "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), l.forEach(function(t) {
-          y(e, t, n[t])
+          O(e, t, n[t])
         })
       }
       return e
@@ -62,19 +62,19 @@ function I(e) {
 }
 
 function S() {
-  _ = null, null != l && (l.destroy(), l = null), null != C && C()
+  C = null, null != l && (l.destroy(), l = null), null != _ && _()
 }
 
 function b() {
-  let e = null != _ && null != _.application_id ? Chunk293273.Z.getApplicationActivity(_.application_id) : null;
-  if (null != _ && (null == module || null == module.party || null == module.party.id)) return S()
+  let e = null != C && null != C.application_id ? Chunk293273.Z.getApplicationActivity(C.application_id) : null;
+  if (null != C && (null == module || null == module.party || null == module.party.id)) return S()
 }
 class v extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk293273.Z)
   }
   getActivity() {
-    return _
+    return C
   }
   getQuery() {
     var e;
@@ -84,10 +84,10 @@ class v extends(i = Chunk442837.ZP.Store) {
     return m
   }
 }
-y(v, "displayName", "ActivityInviteModalStore");
+O(v, "displayName", "ActivityInviteModalStore");
 let x = new v(Chunk570140.Z, {
     ACTIVITY_INVITE_MODAL_OPEN: function(e) {
-      _ = e.activity, C = e.resolve, T = [], null == l && (l = new s.ZP((e, t) => {
+      C = e.activity, _ = e.resolve, T = [], null == l && (l = new s.ZP((e, t) => {
         m = ("" === t.trim() ? function() {
           let e = [];
           return E.Z.getPrivateChannelIds().forEach(t => {
@@ -147,7 +147,7 @@ let x = new v(Chunk570140.Z, {
               return null
           }
         }).filter(e => null != e), x.emitChange()
-      }, O, 100)), l.search("")
+      }, y, 100)), l.search("")
     },
     ACTIVITY_INVITE_MODAL_QUERY: function(e) {
       let {
@@ -156,18 +156,18 @@ let x = new v(Chunk570140.Z, {
       null != l && l.search(t)
     },
     ACTIVITY_INVITE_MODAL_SEND: function(e) {
-      if (null == _) return;
+      if (null == C) return;
       let t = e.channelId,
         n = e.userId;
       null != t ? o.Z.sendActivityInvite({
         channelId: t,
         type: N.mFx.JOIN,
-        activity: _,
+        activity: C,
         location: "Channel Text Area - Invite to Join Modal"
       }).then(() => I(t)) : null != n && o.Z.sendActivityInviteUser({
         userId: n,
         type: N.mFx.JOIN,
-        activity: _,
+        activity: C,
         location: "Channel Text Area - Invite to Join Modal"
       }).then(() => I(n))
     },
@@ -176,7 +176,7 @@ let x = new v(Chunk570140.Z, {
       let {
         locked: t
       } = e;
-      return !!t && null != _ && (S(), true)
+      return !!t && null != C && (S(), true)
     },
     LOCAL_ACTIVITY_UPDATE: b,
     RPC_APP_DISCONNECTED: b

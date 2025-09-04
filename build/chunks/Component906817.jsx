@@ -22,14 +22,14 @@ var Chunk951288 = require("./951288.js"),
 function m(e, t, n, r) {
   let i = "compact" === r ? 8 : p.$k;
   if (e === u.wZ) return i;
-  if (e === u.wd) return t.features.has(h.oNc.HUB) ? 0 : i;
+  if (e === u.wd) return t.features.has(f.oNc.HUB) ? 0 : i;
   if (e === n.voiceChannelsSectionNumber) {
     var l;
     let t = n.getCategoryFromSection(e);
     if (null == t || t.isEmpty()) return 0;
     if (t.isCollapsed) return p.Pw + 9;
     let r = null == (l = n.getChannelFromSectionRow(e, 0)) ? true : l.channel;
-    return null == r || r.record.type === h.d4z.GUILD_CATEGORY ? 9 : 25
+    return null == r || r.record.type === f.d4z.GUILD_CATEGORY ? 9 : 25
   }
   return "compact" === r ? 32 : p.Pw
 }
@@ -80,7 +80,7 @@ let O = Chunk647438.memo(function(e) {
         }
       });
     case u.wd:
-      if (n.features.has(h.oNc.HUB)) return null;
+      if (n.features.has(f.oNc.HUB)) return null;
       return (0, r.jsx)("div", {
         style: {
           height: x
@@ -88,11 +88,11 @@ let O = Chunk647438.memo(function(e) {
       });
     case u.p2:
       return (0, r.jsx)(d.P, {
-        name: _ ? f.intl.string(f.t.mlPMCw) : f.intl.string(f.t.k8fFjo)
+        name: _ ? h.intl.string(h.t.mlPMCw) : h.intl.string(h.t.k8fFjo)
       });
     case m.recentsSectionNumber:
       return (0, r.jsx)(d.P, {
-        name: f.intl.string(f.t.gKcrqK),
+        name: h.intl.string(h.t.gKcrqK),
         onDismiss: v
       });
     case m.voiceChannelsSectionNumber: {

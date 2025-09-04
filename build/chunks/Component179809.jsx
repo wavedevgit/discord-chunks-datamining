@@ -50,13 +50,13 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
       renderChildNode: U,
       folderButtonSize: G,
       folderButtonContent: B,
-      "aria-setsize": F,
-      "aria-posinset": V
+      "aria-setsize": V,
+      "aria-posinset": F
     } = e, {
       id: H,
       name: z,
       children: W
-    } = t, [K, Y] = i.useState(false), [q, X] = i.useState(false), Q = K || q, J = (0, f.Ml)("FolderItem");
+    } = t, [K, Y] = i.useState(false), [q, X] = i.useState(false), Q = K || q, J = (0, h.Ml)("FolderItem");
     i.useEffect(() => {
       R && Y(false)
     }, [R]);
@@ -69,7 +69,7 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
         nodeId: t.id
       }),
       end() {
-        null == M || M(), (0, h.V1)(g.ZP.getCompatibleGuildFolders())
+        null == M || M(), (0, f.V1)(g.ZP.getCompatibleGuildFolders())
       },
       collect: e => ({
         dragging: e.isDragging()
@@ -134,8 +134,8 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
             onKeyDown: en,
             treeItemProps: ei,
             folderButtonContent: B,
-            "aria-setsize": F,
-            "aria-posinset": V
+            "aria-setsize": V,
+            "aria-posinset": F
           })
         })
       }), A ? (0, r.jsx)(_.ZP, {

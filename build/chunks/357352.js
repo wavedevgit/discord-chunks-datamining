@@ -2,16 +2,10 @@
 /** chunk id: 357352, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  I: () => o,
-  b: () => a
+  b: () => i
 });
-let r = "https://cdn.discordapp.com/assets",
-  i = "https://cdn.discordapp.com/assets/content";
+let r = "https://cdn.discordapp.com/assets";
 
-function a(e) {
+function i(e) {
   return "".concat(r, "/").concat(e)
-}
-
-function o(e) {
-  return "".concat(i, "/").concat(e)
 }

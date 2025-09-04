@@ -2,8 +2,8 @@
 /** chunk id: 620481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   FB: () => v,
-  OC: () => g,
-  Sr: () => j,
+  OC: () => j,
+  Sr: () => g,
   lG: () => b,
   mo: () => f
 }), require("./539854.js");
@@ -99,7 +99,7 @@ function b() {
   }), h.info("END Discord Friends\n")
 }
 
-function j() {
+function g() {
   let e = Chunk580005.Z.getFrequentlyWithoutFetchingLatest(),
     t = [],
     n = [],
@@ -122,7 +122,7 @@ function j() {
   }), p(), h.info("END Frecency\n")
 }
 
-function g() {
+function j() {
   let e = Chunk823385.Z.getProps();
   h.info("START Quick Switcher State"), h.info("Query: ".concat(module.query)), module.results.forEach(e => {
     switch (h.info("Result Type: ".concat(e.type)), e.type) {

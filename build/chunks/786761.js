@@ -2,15 +2,14 @@
 /** chunk id: 786761, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Pv: () => G,
-  e5: () => P,
-  gx: () => w,
-  lp: () => U,
-  wi: () => D
+  Pv: () => U,
+  e5: () => R,
+  gx: () => P,
+  lp: () => M,
+  wi: () => w
 }), require("./997841.js"), require("./388685.js");
 var Chunk913527 = require("./913527.js"),
   i = require.n(Chunk913527),
-  Chunk920412 = require("./920412.js"),
   Chunk830121 = require("./830121.js"),
   Chunk292419 = require("./292419.js"),
   Chunk330044 = require("./330044.js"),
@@ -29,7 +28,7 @@ require("./739566.js");
 var Chunk959517 = require("./959517.js"),
   Chunk981631 = require("./981631.js");
 
-function v(e, t, n) {
+function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,20 +37,20 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      O(e, t, n[t])
     })
   }
   return e
 }
 
-function T(e, t) {
+function I(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -62,137 +61,136 @@ function T(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+function T(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let A = new Chunk598077.Z({
+let S = new Chunk598077.Z({
   id: "???",
   username: "???"
 });
 
-function C(e) {
+function A(e) {
   var t;
-  return null == e.author ? A : null != e.webhook_id ? new f.Z(e.author) : null != (t = h.default.getUser(e.author.id)) ? t : new f.Z(e.author)
+  return null == e.author ? S : null != e.webhook_id ? new d.Z(e.author) : null != (t = p.default.getUser(e.author.id)) ? t : new d.Z(e.author)
 }
 
-function N(e) {
+function C(e) {
   returnfalse
 }
 
-function R(e) {
+function N(e) {
   var t;
-  return new d.pi(S(I({}, e), {
+  return new u.pi(T(v({}, e), {
     timestamp: new Date(e.timestamp),
     editedTimestamp: null != e.edited_timestamp ? new Date(e.edited_timestamp) : null,
-    attachments: x(e),
-    embeds: j(e),
-    components: (0, s.uZ)(null != (t = e.components) ? t : [], {
+    attachments: D(e),
+    embeds: L(e),
+    components: (0, o.uZ)(null != (t = e.components) ? t : [], {
       includeEmojiSrc: false
     }),
-    codedLinks: e.type === O.uaV.THREAD_CREATED ? [] : (0, o.ZP)(e.content)
+    codedLinks: e.type === y.uaV.THREAD_CREATED ? [] : (0, a.ZP)(e.content)
   }))
 }
 
-function P(e) {
-  var t, n, r, i, o, s, c, f;
-  let h, m, {
-      reactions: y,
-      interactionData: v
+function R(e) {
+  var t, n, r, i, a, o, l, d;
+  let p, {
+      reactions: h,
+      interactionData: b
     } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
-    T = R(e),
-    A = null != (i = null == (t = e.mentions) ? true : t.map(e => e.id)) ? i : [],
-    P = null != (o = e.mention_roles) ? o : [],
-    w = null != (s = e.mention_channels) ? s : [],
-    D = null != (c = e.mention_games) ? c : [],
-    x = e.message_reference,
-    j = C(e),
-    U = null,
-    G = null == e ? true : e.gift_info,
-    B = e.gifting_prompt,
-    Z = null != e.interaction ? u.Z.createFromServer(e.interaction) : null,
-    F = e.type === O.uaV.THREAD_STARTER_MESSAGE ? null == (r = e.referenced_message) || null == (n = r.author) ? true : n.id : true,
-    V = e.content;
-  return new d.ZP((e.type === O.uaV.PREMIUM_REFERRAL ? (h = E.default.isProbablyAValidSnowflake(e.content) ? e.content : true, V = "") : e.type === O.uaV.CHAT_WALLPAPER_SET && (m = (0, a.Z)(e.content), V = ""), N(e)) ? S(I({}, U), {
+    O = N(e),
+    I = null != (i = null == (t = e.mentions) ? true : t.map(e => e.id)) ? i : [],
+    S = null != (a = e.mention_roles) ? a : [],
+    R = null != (o = e.mention_channels) ? o : [],
+    P = null != (l = e.mention_games) ? l : [],
+    w = e.message_reference,
+    D = A(e),
+    L = null,
+    M = null == e ? true : e.gift_info,
+    U = e.gifting_prompt,
+    G = null != e.interaction ? c.Z.createFromServer(e.interaction) : null,
+    B = e.type === y.uaV.THREAD_STARTER_MESSAGE ? null == (r = e.referenced_message) || null == (n = r.author) ? true : n.id : true,
+    Z = e.content;
+  return new u.ZP((e.type === y.uaV.PREMIUM_REFERRAL && (p = g.default.isProbablyAValidSnowflake(e.content) ? e.content : true, Z = ""), C(e)) ? T(v({}, L), {
     id: e.id,
     channel_id: e.channel_id,
-    type: O.uaV.DEFAULT,
-    author: j,
-    timestamp: T.timestamp,
+    type: y.uaV.DEFAULT,
+    author: D,
+    timestamp: O.timestamp,
     isUnsupported: true
-  }) : S(I({}, e, U, T.toJS()), {
-    author: j,
+  }) : T(v({}, e, L, O.toJS()), {
+    author: D,
     webhookId: e.webhook_id,
-    blocked: p.Z.isBlockedForMessage(e) || null != F && p.Z.isBlocked(F),
-    ignored: p.Z.isIgnoredForMessage(e) || null != F && p.Z.isIgnored(F),
+    blocked: _.Z.isBlockedForMessage(e) || null != B && _.Z.isBlocked(B),
+    ignored: _.Z.isIgnoredForMessage(e) || null != B && _.Z.isIgnored(B),
     mentionEveryone: e.mention_everyone,
-    mentions: A,
-    mentionRoles: P,
-    mentionChannels: w,
-    mentionGames: D,
-    messageReference: x,
-    mentioned: (0, b.Sz)({
-      userId: _.default.getId(),
+    mentions: I,
+    mentionRoles: S,
+    mentionChannels: R,
+    mentionGames: P,
+    messageReference: w,
+    mentioned: (0, E.Sz)({
+      userId: f.default.getId(),
       channelId: e.channel_id,
-      mentionEveryone: null != (f = e.mention_everyone) && f,
-      mentionUsers: A,
-      mentionRoles: P,
-      mentionGames: D.map(e => e.id)
+      mentionEveryone: null != (d = e.mention_everyone) && d,
+      mentionUsers: I,
+      mentionRoles: S,
+      mentionGames: P.map(e => e.id)
     }),
-    giftCodes: (0, g.Fp)(e) ? (0, g.Q_)(null == e ? true : e.embeds[0].url) : (0, g.Q_)(e.content),
-    content: V,
-    referralTrialOfferId: h,
-    call: L(e.call, T.timestamp),
-    messageSnapshots: M(e),
-    reactions: k(null != y ? y : e.reactions, e.poll),
-    interaction: Z,
-    interactionData: null != v ? v : e.interaction_data,
+    giftCodes: (0, m.Fp)(e) ? (0, m.Q_)(null == e ? true : e.embeds[0].url) : (0, m.Q_)(e.content),
+    content: Z,
+    referralTrialOfferId: p,
+    call: x(e.call, O.timestamp),
+    messageSnapshots: k(e),
+    reactions: j(null != h ? h : e.reactions, e.poll),
+    interaction: G,
+    interactionData: null != b ? b : e.interaction_data,
     interactionMetadata: e.interaction_metadata,
     roleSubscriptionData: e.role_subscription_data,
     purchaseNotification: e.purchase_notification,
-    poll: null == e.poll ? true : (0, l.Z)(e.poll),
+    poll: null == e.poll ? true : (0, s.Z)(e.poll),
     sharedClientTheme: e.shared_client_theme,
     potions: e.potions,
-    giftInfo: null == G ? true : G,
-    giftingPrompt: B,
-    chatWallpaperInfo: m
+    giftInfo: null == M ? true : M,
+    giftingPrompt: U
   }))
 }
 
-function w(e, t) {
-  return null != t.edited_timestamp ? S(I({}, t), {
+function P(e, t) {
+  return null != t.edited_timestamp ? T(v({}, t), {
     reactions: e.reactions,
     interaction_data: e.interaction_data
-  }) : I({}, e, t)
+  }) : v({}, e, t)
 }
 
-function D(e, t) {
-  if (null != t.edited_timestamp) return P(t, {
+function w(e, t) {
+  if (null != t.edited_timestamp) return R(t, {
     reactions: e.reactions,
     interactionData: e.interactionData
   });
   let n = e,
     r = false;
-  if (null != t.call && (n = n.set("call", L(t.call, e.timestamp))), null != t.attachments && (n = n.set("attachments", x(t))), null != t.application && (n = n.set("application", t.application)), null != t.activity && (n = n.set("activity", t.activity)), null != t.content && "" !== t.content && (n = n.set("content", t.content)), null != t.embeds && (n = n.set("embeds", j(t))), null != t.message_snapshots && (n = n.set("messageSnapshots", M(t))), t.pinned !== n.pinned && (n = n.set("pinned", t.pinned)), null != n.webhookId && null != t.author && (n = n.set("author", new f.Z(t.author))), null != t.flags && t.flags !== n.flags && (n = n.set("flags", t.flags)), null != t.components && (n = n.set("components", (0, s.uZ)(t.components, {
+  if (null != t.call && (n = n.set("call", x(t.call, e.timestamp))), null != t.attachments && (n = n.set("attachments", D(t))), null != t.application && (n = n.set("application", t.application)), null != t.activity && (n = n.set("activity", t.activity)), null != t.content && "" !== t.content && (n = n.set("content", t.content)), null != t.embeds && (n = n.set("embeds", L(t))), null != t.message_snapshots && (n = n.set("messageSnapshots", k(t))), t.pinned !== n.pinned && (n = n.set("pinned", t.pinned)), null != n.webhookId && null != t.author && (n = n.set("author", new d.Z(t.author))), null != t.flags && t.flags !== n.flags && (n = n.set("flags", t.flags)), null != t.components && (n = n.set("components", (0, o.uZ)(t.components, {
       includeEmojiSrc: false
     }))), null != t.role_subscription_data && (n = n.set("roleSubscriptionData", t.role_subscription_data)), null != t.reactions) {
     var i;
-    n = n.set("reactions", k(null != (i = e.reactions) ? i : t.reactions))
+    n = n.set("reactions", j(null != (i = e.reactions) ? i : t.reactions))
   }
-  return null != t.poll && (n = n.set("poll", (0, l.Z)(t.poll))), null != t.mentions && (n = n.set("mentions", t.mentions.map(e => e.id)), r = true), null != t.mention_games && (n = n.set("mentionGames", t.mention_games), r = true), null != t.mention_everyone && (n = n.set("mentionEveryone", t.mention_everyone), r = true), null != t.mention_roles && (n = n.set("mentionRoles", t.mention_roles), r = true), null != t.potions && (n = n.set("potions", t.potions)), r && (n = n.set("mentioned", (0, b.ZP)({
+  return null != t.poll && (n = n.set("poll", (0, s.Z)(t.poll))), null != t.mentions && (n = n.set("mentions", t.mentions.map(e => e.id)), r = true), null != t.mention_games && (n = n.set("mentionGames", t.mention_games), r = true), null != t.mention_everyone && (n = n.set("mentionEveryone", t.mention_everyone), r = true), null != t.mention_roles && (n = n.set("mentionRoles", t.mention_roles), r = true), null != t.potions && (n = n.set("potions", t.potions)), r && (n = n.set("mentioned", (0, E.ZP)({
     message: n,
-    userId: _.default.getId()
+    userId: f.default.getId()
   }))), n
 }
 
-function x(e) {
-  return null == e.attachments ? [] : e.attachments.map(e => S(I({}, e), {
-    spoiler: e.filename.startsWith(y._j)
+function D(e) {
+  return null == e.attachments ? [] : e.attachments.map(e => T(v({}, e), {
+    spoiler: e.filename.startsWith(b._j)
   }))
 }
 
-function L(e, t) {
+function x(e, t) {
   if (null != e) {
     let n = null != e.ended_timestamp ? i()(new Date(e.ended_timestamp)) : null,
       r = null != n ? i().duration(n.diff(t)) : null;
@@ -205,13 +203,13 @@ function L(e, t) {
   return null
 }
 
-function j(e) {
+function L(e) {
   if (null == e.embeds) return [];
-  let t = e.embeds.map(t => (0, m.kC)(e.channel_id, e.id, t));
-  return (0, m.o3)(t)
+  let t = e.embeds.map(t => (0, h.kC)(e.channel_id, e.id, t));
+  return (0, h.o3)(t)
 }
 
-function k(e, t) {
+function j(e, t) {
   var n;
   if (null == e && (null == t ? true : t.results) == null) return [];
   let r = null == t || null == (n = t.results) ? true : n.answer_counts.map(e => ({
@@ -230,7 +228,7 @@ function k(e, t) {
     burst_count: 0
   }));
   return [...null != e ? e : [], ...null != r ? r : []].map(e => {
-    let t = I({}, e);
+    let t = v({}, e);
     if ((null == t ? true : t.count_details) != null) {
       var n, r;
       t.burst_count = null != (n = t.count_details.burst) ? n : 0, t.count = null != (r = t.count_details.normal) ? r : 0
@@ -239,20 +237,20 @@ function k(e, t) {
   })
 }
 
-function M(e) {
+function k(e) {
   return null == e.message_snapshots ? [] : e.message_snapshots.map(e => {
     let {
       message: t,
       moderator_report: n
     } = e;
-    return new d.Hx({
-      message: R(t),
+    return new u.Hx({
+      message: N(t),
       moderator_report: n
     })
   })
 }
-let U = e => 0 === (0, c.cv)(e).length || "" !== e.content;
+let M = e => 0 === (0, l.cv)(e).length || "" !== e.content;
 
-function G(e) {
-  return e.hasFlag(O.iLy.EPHEMERAL) && e.type !== O.uaV.IN_GAME_MESSAGE_NUX
+function U(e) {
+  return e.hasFlag(y.iLy.EPHEMERAL) && e.type !== y.uaV.IN_GAME_MESSAGE_NUX
 }

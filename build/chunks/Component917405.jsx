@@ -1,7 +1,7 @@
 /** Chunk was on 60831 **/
 /** chunk id: 917405, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => C
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -45,14 +45,14 @@ let E = {
     [Chunk981631.IE4.BAD]: Chunk445233.rtcConnectionQualityBad,
     [Chunk981631.IE4.UNKNOWN]: null
   },
-  y = {
+  O = {
     [Chunk981631.IE4.FINE]: Chunk481060.B_b,
     [Chunk981631.IE4.AVERAGE]: Chunk481060.hLg,
     [Chunk981631.IE4.BAD]: Chunk481060.mbS,
     [Chunk981631.IE4.UNKNOWN]: Chunk481060._3e
   };
 
-function O(e) {
+function y(e) {
   var {
     quality: t,
     largePing: n
@@ -71,7 +71,7 @@ function O(e) {
     }
     return i
   }(e, ["quality", "largePing"]);
-  let r = y[t];
+  let r = O[t];
   return (0, l.jsx)(r, p({
     className: a()(h.ping, {
       [h.largePing]: n
@@ -79,21 +79,21 @@ function O(e) {
   }, i))
 }
 
-function _(e) {
+function C(e) {
   let {
     quality: t,
     lastPing: n,
     state: r,
-    className: y,
-    children: _,
-    channelId: C,
+    className: O,
+    children: C,
+    channelId: _,
     childrenAsSubtitle: T,
     connectionStatusTextVariant: m,
     hasVideo: I
   } = e, S = i.useRef(null), b = r === g.hes.RTC_CONNECTED, v = i.useCallback(e => {
     var t, n;
     return (0, l.jsx)(d.Z, (t = p({}, e), n = n = {
-      channelId: C
+      channelId: _
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -104,17 +104,17 @@ function _(e) {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
-  }, [C]), {
+  }, [_]), {
     connectionStatus: x,
     connectionStatusText: P
   } = c.Z.getStatus(r, I);
   return (0, l.jsxs)("div", {
     className: h.rtcConnectionStatusWrapper,
     children: [(0, l.jsxs)("div", {
-      className: a()(h.rtcConnectionStatus, N[t], y),
+      className: a()(h.rtcConnectionStatus, N[t], O),
       children: [b && (0, l.jsx)(o.ua7, {
         text: t !== g.IE4.UNKNOWN && null != n ? "".concat(n.toFixed(0), " ms") : null,
-        children: e => (0, l.jsx)(O, p({
+        children: e => (0, l.jsx)(y, p({
           quality: t,
           largePing: T
         }, e))
@@ -138,12 +138,12 @@ function _(e) {
                 textVariant: m,
                 hasVideo: I,
                 className: E[x],
-                hasConnectedChannel: null != C
+                hasConnectedChannel: null != _
               })
             })
           }
-        }), T ? _ : null]
+        }), T ? C : null]
       })]
-    }), T ? null : _]
+    }), T ? null : C]
   })
 }

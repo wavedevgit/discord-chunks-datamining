@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk599832 = require("./599832.js"),
   Chunk451429 = require("./451429.js");
-let O = [{
+let T = [{
     key: "id",
     cellClassName: Chunk599832.eventColumn,
     render(e) {
@@ -54,7 +54,7 @@ let O = [{
       return t.toLocaleString()
     }
   }],
-  T = [{
+  O = [{
     id: "details",
     name: "Details",
     group: Chunk621060.v0.NONE,
@@ -79,51 +79,51 @@ let O = [{
           }), (0, a.jsx)(p.ZP.Title, {
             children: t
           })]
-        }), (0, a.jsxs)(j.E, {
+        }), (0, a.jsxs)(g.E, {
           className: N.commonProperties,
-          children: [(0, a.jsx)(j.Z9, {
+          children: [(0, a.jsx)(g.Z9, {
             name: "Timestamp (local)",
             children: (0, a.jsx)("time", {
               dateTime: s.toISOString(),
               title: (0, f.vc)(u, "LLLL"),
               children: (0, f.Y4)(u)
             })
-          }), "guild" === n.type && (0, a.jsx)(j.Z9, {
+          }), "guild" === n.type && (0, a.jsx)(g.Z9, {
             name: "Guild ID",
             children: (0, a.jsx)("code", {
               children: n.guildId
             })
-          }), (0, a.jsx)(j.Z9, {
+          }), (0, a.jsx)(g.Z9, {
             name: "Bucket",
             children: (0, a.jsx)("code", {
               children: n.bucket
             })
-          }), (0, a.jsx)(j.Z9, {
+          }), (0, a.jsx)(g.Z9, {
             name: "Revision",
             children: (0, a.jsx)("code", {
               children: n.revision
             })
-          }), (0, a.jsx)(j.Z9, {
+          }), (0, a.jsx)(g.Z9, {
             name: "Override",
-            children: (0, a.jsx)(j.wl, {
+            children: (0, a.jsx)(g.wl, {
               value: n.override
             })
-          }), (0, a.jsx)(j.Z9, {
+          }), (0, a.jsx)(g.Z9, {
             name: "Exposure type",
             children: (0, a.jsx)("code", {
               children: r
             })
-          }), (0, a.jsx)(j.Z9, {
+          }), (0, a.jsx)(g.Z9, {
             name: "Excluded",
-            children: (0, a.jsx)(j.wl, {
+            children: (0, a.jsx)(g.wl, {
               value: l
             })
-          }), (0, a.jsx)(j.Z9, {
+          }), (0, a.jsx)(g.Z9, {
             name: "Previously tracked",
-            children: (0, a.jsx)(j.wl, {
+            children: (0, a.jsx)(g.wl, {
               value: c
             })
-          }), (0, a.jsx)(j.Z9, {
+          }), (0, a.jsx)(g.Z9, {
             name: "Location",
             children: (0, a.jsx)("code", {
               children: o
@@ -137,9 +137,9 @@ let O = [{
 function S() {
   let [e, t] = Chunk647438.useState(""), n = Chunk647438.useRef(null), l = (0, Chunk442837.Wu)([Chunk120816.Z], () => Chunk120816.Z.loggedTriggers), s = Chunk647438.useMemo(() => Chunk120356.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [Chunk120356, module]), [c, d] = Chunk647438.useState(true), p = Chunk658722.find(e => e.key === c), {
     TabBar: f,
-    renderSelectedTab: j
+    renderSelectedTab: g
   } = (0, Chunk621060.ZP)({
-    tabs: T
+    tabs: O
   }, []), S = (0, Chunk442837.e7)([Chunk120816.Z], () => Chunk120816.Z.trackTriggers), P = Chunk647438.useCallback(e => {
     h.Z.dispatch({
       type: "SET_TRACK_TRIGGERS",
@@ -181,7 +181,7 @@ function S() {
         placeholder: "Search by experiment id"
       })]
     }), (0, Chunk951288.jsx)(Chunk681619.Z, {
-      columns: O,
+      columns: T,
       data: Chunk658722,
       selectedRowKey: Chunk913527,
       onClickRow: e => d(e.key)

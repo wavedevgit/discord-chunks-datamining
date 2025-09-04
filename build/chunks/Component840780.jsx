@@ -198,7 +198,7 @@ class ec extends Chunk647438.PureComponent {
           children: exports.name
         })
       }),
-      h = (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      f = (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk925329.Z, {
           className: Chunk800339.gameIcon,
           game: exports,
@@ -255,7 +255,7 @@ class ec extends Chunk647438.PureComponent {
         embeddedActivity: n,
         isActivityPopoutOpen: r
       } = this.props;
-      s()(null != n, "Activity cannot be null during navigation click"), s()(null != t, "Channel cannot be null during navigation click"), h.Z.channelListScrollTo(null != (e = t.guild_id) ? e : er.ME, t.id), !r && ((0, U.vd)(t.type) && p.Z.selectParticipant(t.id, (0, x.gN)({
+      s()(null != n, "Activity cannot be null during navigation click"), s()(null != t, "Channel cannot be null during navigation click"), f.Z.channelListScrollTo(null != (e = t.guild_id) ? e : er.ME, t.id), !r && ((0, U.vd)(t.type) && p.Z.selectParticipant(t.id, (0, x.gN)({
         applicationId: n.applicationId,
         instanceId: n.compositeInstanceId
       })), (0, U.Qm)(t.type) && (0, O.tg)(ei.Ez.PANEL))
@@ -283,14 +283,14 @@ let eu = (0, Chunk730749.Z)(function(e) {
     }(e, ["guildId"]);
   let s = (0, c.e7)([B.default], () => B.default.getId()),
     u = (0, c.e7)([I.ZP, Q.Z], () => (0, R.Z)(I.ZP, Q.Z)),
-    d = (0, c.e7)([q.Z, F.Z], () => F.Z.getChannel(q.Z.getVoiceChannelId())),
+    d = (0, c.e7)([q.Z, V.Z], () => V.Z.getChannel(q.Z.getVoiceChannelId())),
     p = (0, c.e7)([y.ZP], () => y.ZP.getConnectedActivityChannelId()),
-    h = (0, c.e7)([F.Z], () => F.Z.getChannel(p)),
-    f = (0, c.e7)([H.Z], () => H.Z.getGuild(null == h ? true : h.guild_id)),
+    f = (0, c.e7)([V.Z], () => V.Z.getChannel(p)),
+    h = (0, c.e7)([H.Z], () => H.Z.getGuild(null == f ? true : f.guild_id)),
     [g, O] = (0, c.Wu)([G.Z], () => [G.Z.getCurrentUserActiveStream(), G.Z.getStreamerActiveStreamMetadata()]),
     v = (0, c.e7)([m.Z], () => m.Z.useReducedMotion),
     x = (0, c.e7)([y.ZP], () => y.ZP.getCurrentEmbeddedActivity()),
-    E = (0, c.e7)([H.Z, W.Z, V.ZP], () => null != d ? Z.JL(d, H.Z, W.Z, false) : null != o && Z.h_(V.ZP.getChannels(o), H.Z, W.Z).length > 0),
+    E = (0, c.e7)([H.Z, W.Z, F.ZP], () => null != d ? Z.JL(d, H.Z, W.Z, false) : null != o && Z.h_(F.ZP.getChannels(o), H.Z, W.Z).length > 0),
     [P] = (0, j.Z)([null != (l = null != O && null != O.id ? O.id : null != u && null != u.id ? u.id : null != x ? x.applicationId : true) ? l : ""]),
     N = (0, c.e7)([S.Z], () => S.Z.getFakeGameData()),
     T = (0, c.e7)([y.ZP], () => y.ZP.getCurrentEmbeddedActivity()),
@@ -298,7 +298,7 @@ let eu = (0, Chunk730749.Z)(function(e) {
     D = (0, c.e7)([z.Z], () => (0, w.Z)(z.Z) && (0, J.isWindows)()),
     k = (0, c.e7)([K.Z], () => null != s ? K.Z.findActivity(s, e => e.type === er.IIU.PLAYING) : null),
     U = null != g && g.ownerId === s && g.state !== er.jm8.ENDED,
-    $ = (0, c.e7)([X.default, Y.Z], () => null != h ? (0, C.F6)(h, X.default, Y.Z) : true),
+    $ = (0, c.e7)([X.default, Y.Z], () => null != f ? (0, C.F6)(f, X.default, Y.Z) : true),
     ee = (0, L.Z)(),
     [et, en] = i.useState(false),
     ei = (0, c.e7)([M.Z], () => M.Z.getWindowOpen(er.KJ3.ACTIVITY_POPOUT));
@@ -312,12 +312,12 @@ let eu = (0, Chunk730749.Z)(function(e) {
     application: P,
     useReducedMotion: v,
     isStreaming: U,
-    channel: h,
+    channel: f,
     canStream: E,
     stream: g,
     streamMetadata: O,
     channelName: $,
-    guildForConnectedChannel: f,
+    guildForConnectedChannel: h,
     streamQualityIndicator: ee,
     isForceShowSharingPopout: et,
     setIsForceShowSharingPopout: en,

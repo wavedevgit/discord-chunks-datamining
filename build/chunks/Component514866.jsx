@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 /** chunk id: 514866, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -41,7 +41,7 @@ let b = () => {
   })
 };
 
-function j() {
+function g() {
   let e = Chunk594174.default.getCurrentUser(),
     t = null == module ? true : module.isStaff(),
     n = Chunk695346.Rt.useSetting();

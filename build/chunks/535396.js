@@ -124,20 +124,16 @@ let u = "1340102344645283891",
       includedInLevel: Chunk981631.Eu4.TIER_3
     },
     [Chunk981631.oNc.GUILD_TAGS]: {
-      boostPrice: 3,
-      includedInLevel: true
+      boostPrice: 3
     },
     [Chunk981631.oNc.ENHANCED_ROLE_COLORS]: {
-      boostPrice: 3,
-      includedInLevel: true
+      boostPrice: 3
     },
     [Chunk981631.oNc.GUILD_TAGS_BADGE_PACK_PETS]: {
-      boostPrice: 3,
-      includedInLevel: true
+      boostPrice: 3
     },
     [Chunk981631.oNc.GUILD_TAGS_BADGE_PACK_FLEX]: {
-      boostPrice: 5,
-      includedInLevel: true
+      boostPrice: 5
     }
   },
   O = {

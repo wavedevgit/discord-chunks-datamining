@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk246992 = require("./246992.js"),
   Chunk451429 = require("./451429.js"),
   Chunk441900 = require("./441900.js");
-let g = [{
+let j = [{
   label: "Unset",
   value: Chunk524437.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET
 }, {
@@ -57,7 +57,7 @@ function _() {
         variant: "text-md/normal",
         children: "Receive DMs In Game"
       }), (0, Chunk951288.jsx)(Chunk481060.PhF, {
-        options: g,
+        options: j,
         isSelected: e => e === t,
         select: Chunk695346.JG.updateSetting,
         popoutLayerContext: Chunk246992.O$,

@@ -58,7 +58,7 @@ function I(e) {
   let {
     guildId: t,
     markAsDismissed: n
-  } = e, i = (0, f.Z)(t);
+  } = e, i = (0, h.Z)(t);
   return (0, r.jsx)(w, {
     asset: (0, r.jsx)("img", {
       alt: "",
@@ -84,9 +84,9 @@ function N(e) {
     guildId: t,
     powerups: n,
     markAsDismissed: i
-  } = e, l = (0, s.e7)([h.Z], () => {
+  } = e, l = (0, s.e7)([f.Z], () => {
     var e;
-    return null == (e = h.Z.getGuild(t)) ? true : e.name
+    return null == (e = f.Z.getGuild(t)) ? true : e.name
   }), {
     onActivate: o
   } = (0, b.ZP)(t, n[0]);
@@ -174,7 +174,7 @@ function w(e) {
     return i
   }(e, ["asset", "header", "content", "caretPosition", "markAsDismissed"]);
   let d = null != o ? o : p.DF.LEFT_TOP,
-    h = d === p.DF.TOP_CENTER || d === p.DF.LEFT_TOP ? x[d] : "";
+    f = d === p.DF.TOP_CENTER || d === p.DF.LEFT_TOP ? x[d] : "";
   return (0, r.jsx)(p.ZP, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -209,7 +209,7 @@ function w(e) {
       color: "text-muted",
       children: i
     }),
-    className: l()(x.container, h),
+    className: l()(x.container, f),
     headerClassName: x.header,
     contentClassName: x.header,
     caretPosition: d,

@@ -1,7 +1,7 @@
 /** Chunk was on 11160 **/
 /** chunk id: 831218, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => V
+  Z: () => F
 }), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -199,7 +199,7 @@ let B = Chunk647438.memo(function() {
     })]
   })
 });
-class F extends(r = Chunk647438.Component) {
+class V extends(r = Chunk647438.Component) {
   static getDerivedStateFromProps(e) {
     let {
       children: t,
@@ -228,7 +228,7 @@ class F extends(r = Chunk647438.Component) {
     null != module && null != exports && exports.indexOf(module) >= 0 && this.scrollToChannel(module), this.reportAnalytics()
   }
   shouldComponentUpdate(e) {
-    return !(0, h.Z)(this.props, e, ["children"])
+    return !(0, f.Z)(this.props, e, ["children"])
   }
   componentDidUpdate(e) {
     let {
@@ -278,8 +278,8 @@ class F extends(r = Chunk647438.Component) {
           }
           return i
         }(r, ["ref", "role"]);
-        return (0, i.jsx)(f.Wdt, {
-          children: r => (0, i.jsx)(f.aVo, U({
+        return (0, i.jsx)(h.Wdt, {
+          children: r => (0, i.jsx)(h.aVo, U({
             fade: true,
             innerRole: o,
             innerAriaLabel: M.intl.string(M.t.YUU0RE),
@@ -396,11 +396,11 @@ class F extends(r = Chunk647438.Component) {
           popoutAlign: "left",
           className: L.privateChannelRecipientsInviteButtonIconContainer,
           iconClassName: L.privateChannelRecipientsInviteButtonIcon,
-          icon: f.BRu,
+          icon: h.BRu,
           subscribeToGlobalHotkey: true
         }), "side" === r && (0, i.jsx)(S.l, {
           popoutAlign: "left",
-          icon: f.kL_,
+          icon: h.kL_,
           text: M.intl.string(M.t["6Urw1t"]),
           size: "sm",
           subscribeToGlobalHotkey: true
@@ -424,20 +424,20 @@ class F extends(r = Chunk647438.Component) {
     })
   }
 }
-k(F, "defaultProps", {
+k(V, "defaultProps", {
   padding: 8
 });
-let V = e => {
+let F = e => {
   let {
     density: t
-  } = (0, f.TCT)(), {
+  } = (0, h.TCT)(), {
     version: n,
     theme: r,
     children: o,
     showDMHeader: a,
     listScrollerRef: s,
     createDMCTAButtonVariant: c
-  } = e, h = l.Children.count(o), g = w.Z.getMutablePrivateChannels(), O = (0, I.k1)(g), _ = (0, p.Wu)([A.Z, P.Z, N.Z], () => {
+  } = e, f = l.Children.count(o), g = w.Z.getMutablePrivateChannels(), O = (0, I.k1)(g), _ = (0, p.Wu)([A.Z, P.Z, N.Z], () => {
     let e = A.Z.getPrivateChannelIds();
     return (0, I.tU)(e, [P.Z, N.Z])
   }, []);
@@ -478,19 +478,19 @@ let V = e => {
         requestAnimationFrame(() => setTimeout(e, 100))
       }
     })
-  }), [D]), B = (0, x.Dt)(), V = (0, d.ZP)({
+  }), [D]), B = (0, x.Dt)(), F = (0, d.ZP)({
     id: "private-channels-".concat(B),
     isEnabled: S,
     scrollToStart: L,
     scrollToEnd: k,
-    defaultFocused: (h + +!!a).toString(),
+    defaultFocused: (f + +!!a).toString(),
     setFocus: M
   });
   return (0, i.jsx)(y.Gt, {
     value: v,
     children: (0, i.jsx)(u.bG, {
-      navigator: V,
-      children: (0, i.jsx)(F, G(U({}, e), {
+      navigator: F,
+      children: (0, i.jsx)(V, G(U({}, e), {
         density: t,
         channels: O,
         privateChannelIds: _,

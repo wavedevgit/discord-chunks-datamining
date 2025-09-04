@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 /** chunk id: 496025, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => O
 }), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -43,13 +43,13 @@ function E() {
         }
       })
     })),
-    j = Chunk647438.useCallback(() => {
+    g = Chunk647438.useCallback(() => {
       var e;
       if (null == i || !i.isPrivate()) return;
       let t = (0, Chunk630388.x9)(null != (e = i.recipientFlags) ? module : 0, Chunk602715.V.DISMISSED_IN_GAME_MESSAGE_NUX);
       Chunk258732.Z.updatePrivateChannelRecipientFlags(i.id, exports)
     }, [i]),
-    g = null != i && !!i.isPrivate() && (0, Chunk630388.yE)(null != (e = i.recipientFlags) ? module : 0, Chunk602715.V.DISMISSED_IN_GAME_MESSAGE_NUX);
+    j = null != i && !!i.isPrivate() && (0, Chunk630388.yE)(null != (e = i.recipientFlags) ? module : 0, Chunk602715.V.DISMISSED_IN_GAME_MESSAGE_NUX);
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/semibold",
@@ -83,7 +83,7 @@ function E() {
   })
 }
 
-function O() {
+function T() {
   let e = Chunk647438.useCallback(() => {
     Chunk493683.Z.openPrivateChannel({
       recipientIds: [Chunk894257.I]
@@ -97,14 +97,14 @@ function O() {
   })
 }
 
-function T() {
+function O() {
   let e = (0, Chunk442837.e7)([Chunk432877.ZP], () => Chunk432877.ZP.allByCategory(Chunk432877.zU.MESSAGING), [], Chunk442837.pF).map(e => {
     let [t, n, {
       label: r
     }] = e;
     return (0, a.jsx)(c.j7V, {
       value: n,
-      onChange: e => (0, j.Z)(t, e),
+      onChange: e => (0, g.Z)(t, e),
       hideBorder: true,
       className: C.switch,
       children: r
@@ -116,6 +116,6 @@ function T() {
       className: Chunk165432.divider
     }), (0, Chunk951288.jsx)(E, {}), (0, Chunk951288.jsx)("div", {
       className: Chunk165432.divider
-    }), (0, Chunk951288.jsx)(O, {})]
+    }), (0, Chunk951288.jsx)(T, {})]
   })
 }

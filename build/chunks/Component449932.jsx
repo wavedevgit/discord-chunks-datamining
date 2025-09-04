@@ -88,16 +88,16 @@ let j = e => {
     members: i,
     embeddedApp: l,
     onAction: a
-  } = e, p = null != l, m = p ? Array.from(l.embeddedActivity.userIds) : [], b = (0, o.e7)([g.default, f.default], () => {
+  } = e, p = null != l, m = p ? Array.from(l.embeddedActivity.userIds) : [], b = (0, o.e7)([g.default, h.default], () => {
     if (p) return g.default.getUser(m[0]);
     if (null != i) {
       var e, t;
-      return i.length <= 0 ? null : null != (t = null == (e = i.find(e => e.user.id !== f.default.getId())) ? true : e.user) ? t : i[0].user
+      return i.length <= 0 ? null : null != (t = null == (e = i.find(e => e.user.id !== h.default.getId())) ? true : e.user) ? t : i[0].user
     }
   });
   if (null == b) return null;
   let _ = p || (0, c.Z)(n),
-    j = (0, h.vd)(t.type);
+    j = (0, f.vd)(t.type);
   return (0, r.jsxs)("div", {
     className: y.activity,
     children: [(0, r.jsx)("div", {

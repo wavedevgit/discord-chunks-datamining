@@ -73,15 +73,15 @@ let O = (0, Chunk146773.B)(function(e) {
     })
   }, [E]);
   if (null == E) return null;
-  let Z = (0, h.jo)(c, v),
-    w = (0, h.CN)(E, y, _),
+  let Z = (0, f.jo)(c, v),
+    w = (0, f.CN)(E, y, _),
     T = (0, r.jsx)("div", {
       className: o()(Z, {
         [b.disabled]: w,
         [b.selected]: P
       }),
       "data-dnd-name": E.name,
-      children: (0, r.jsxs)(f.ZP, {
+      children: (0, r.jsxs)(h.ZP, {
         className: b.iconVisibility,
         channel: E,
         guild: t,
@@ -89,10 +89,10 @@ let O = (0, Chunk146773.B)(function(e) {
         onContextMenu: N,
         forceInteractable: true,
         resolvedUnreadSetting: m.i.ONLY_MENTIONS,
-        children: [(0, r.jsx)(h.eP, {
+        children: [(0, r.jsx)(f.eP, {
           channel: E,
           tabIndex: C
-        }), (0, r.jsx)(h.hR, {
+        }), (0, r.jsx)(f.hR, {
           channel: E,
           disableManageChannels: O,
           tabIndex: C

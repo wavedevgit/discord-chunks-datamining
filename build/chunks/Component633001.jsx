@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 /** chunk id: 633001, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => eg
+  Z: () => ej
 }), require("./388685.js"), require("./583741.js"), require("./539854.js"), require("./49124.js"), require("./35282.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -78,7 +78,7 @@ function K(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let X = {
+let Y = {
     [Chunk981631.Odu.CLICK_ZONE_DEBUG]: e => K(W({
       type: z.Odu.CLICK_ZONE_DEBUG,
       id: (0, c.Z)(),
@@ -111,7 +111,7 @@ let X = {
       pinned: true
     })
   },
-  Y = {};
+  X = {};
 
 function q(e) {
   let {
@@ -129,7 +129,7 @@ function q(e) {
     color: u.zx.Colors.LINK,
     size: u.zx.Sizes.MIN,
     onClick: function() {
-      (0, w.JG)(t, () => l(true))
+      (0, k.JG)(t, () => l(true))
     },
     className: V.copyId,
     children: ["Application Id: ", t, " ", n ? B.intl.string(B.t["t5VZ8/"]) : null]
@@ -305,7 +305,7 @@ function Q(e) {
   return [n, () => {
     if (null != n)(0, x.E9)(n.id);
     else {
-      let t = X[e];
+      let t = Y[e];
       if (null == t) return;
       let n = t(G.$S);
       (0, x.A4)(n)
@@ -339,7 +339,7 @@ let et = Chunk647438.memo(function(e) {
     var e, n;
     if (null == t) return "Unknown";
     let a = null == (e = _.default.getTrackedGameByPid(t)) ? true : e.gameName;
-    return null != a ? (Y[t] = a, a) : null != (n = Y[t]) ? n : "Unknown"
+    return null != a ? (X[t] = a, a) : null != (n = X[t]) ? n : "Unknown"
   }, [t]);
   return (0, a.jsx)(m.Text, K(W({}, n), {
     variant: "text-md/semibold",
@@ -386,13 +386,13 @@ function en() {
         return (0, a.jsx)(r.Fragment, {
           children: (0, a.jsx)(m.ua7, {
             position: "left",
-            text: l === g.d5.TRACK_FOCUS ? "Tracked Focus Event" : "Clear Focus Event",
+            text: l === j.d5.TRACK_FOCUS ? "Tracked Focus Event" : "Clear Focus Event",
             children: e => {
               var r;
               return (0, a.jsx)("div", K(W({}, e), {
                 children: (0, a.jsxs)(m.Text, {
                   variant: "text-sm/medium",
-                  color: l === g.d5.TRACK_FOCUS ? "text-default" : "text-danger",
+                  color: l === j.d5.TRACK_FOCUS ? "text-default" : "text-danger",
                   children: [(0, a.jsx)(et, {
                     pid: n,
                     tag: "span"
@@ -540,7 +540,7 @@ let ea = Chunk647438.memo(function(e) {
         children: e => (0, a.jsx)("div", K(W({}, e), {
           children: (0, a.jsx)(u.$q, {
             value: i,
-            onChange: () => void p(g.GO.ClickZones),
+            onChange: () => void p(j.GO.ClickZones),
             size: 18,
             type: u.M0.INVERTED,
             shape: u.zV.BOX,
@@ -558,7 +558,7 @@ let ea = Chunk647438.memo(function(e) {
         children: e => (0, a.jsx)("div", K(W({}, e), {
           children: (0, a.jsx)(u.$q, {
             value: s,
-            onChange: () => void p(g.GO.WidgetAreas),
+            onChange: () => void p(j.GO.WidgetAreas),
             size: 18,
             type: u.M0.INVERTED,
             shape: u.zV.BOX,
@@ -576,7 +576,7 @@ let ea = Chunk647438.memo(function(e) {
         children: e => (0, a.jsx)("div", K(W({}, e), {
           children: (0, a.jsx)(u.$q, {
             value: o,
-            onChange: () => void p(g.GO.DisabledGPUBoost),
+            onChange: () => void p(j.GO.DisabledGPUBoost),
             size: 18,
             type: u.M0.INVERTED,
             shape: u.zV.BOX,
@@ -594,7 +594,7 @@ let ea = Chunk647438.memo(function(e) {
         children: e => (0, a.jsx)("div", K(W({}, e), {
           children: (0, a.jsx)(u.$q, {
             value: c,
-            onChange: () => void p(g.GO.ForceGPUBoost),
+            onChange: () => void p(j.GO.ForceGPUBoost),
             size: 18,
             disabled: o,
             type: u.M0.INVERTED,
@@ -740,31 +740,31 @@ let ea = Chunk647438.memo(function(e) {
   ec = {
     native: {
       label: "Native",
-      filter: e => e.type === j.C7.NativeLegacy || e.type === j.C7.NativeOOP
+      filter: e => e.type === g.C7.NativeLegacy || e.type === g.C7.NativeOOP
     },
     render: {
       label: "Render",
-      filter: e => e.type === j.C7.Renderer
+      filter: e => e.type === g.C7.Renderer
     },
     client: {
       label: "Client",
-      filter: e => e.type === j.C7.OOPModule || e.type === j.C7.LegacyModule
+      filter: e => e.type === g.C7.OOPModule || e.type === g.C7.LegacyModule
     }
   };
 
 function ed(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : j.l6.Info;
-  if (t === j.l6.Error) return "var(--text-danger)";
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : g.l6.Info;
+  if (t === g.l6.Error) return "var(--text-danger)";
   switch (e) {
-    case j.C7.NativeLegacy:
+    case g.C7.NativeLegacy:
       return "var(--yellow-500)";
-    case j.C7.NativeOOP:
+    case g.C7.NativeOOP:
       return "var(--green-500)";
-    case j.C7.Renderer:
+    case g.C7.Renderer:
       return "var(--brand-500)";
-    case j.C7.LegacyModule:
+    case g.C7.LegacyModule:
       return "var(--yellow-300)";
-    case j.C7.OOPModule:
+    case g.C7.OOPModule:
       return "var(--green-300)";
     default:
       return "var(--gray-400)"
@@ -804,11 +804,11 @@ let eu = [{
         variant: "text-md/normal",
         color: function(e) {
           switch (e) {
-            case j.l6.Info:
+            case g.l6.Info:
               return "text-primary";
-            case j.l6.Warning:
+            case g.l6.Warning:
               return "text-feedback-warning";
-            case j.l6.Error:
+            case g.l6.Error:
               return "text-danger";
             default:
               return "text-secondary"
@@ -829,21 +829,21 @@ let eu = [{
     let {
       timestamp: t
     } = e;
-    return (0, k.vc)(o()(t), "h:mm:ss.SSS")
+    return (0, R.vc)(o()(t), "h:mm:ss.SSS")
   }
 }];
 
 function em(e) {
   switch (e) {
-    case j.C7.NativeLegacy:
+    case g.C7.NativeLegacy:
       return m.GON;
-    case j.C7.NativeOOP:
+    case g.C7.NativeOOP:
       return m.ljO;
-    case j.C7.Renderer:
+    case g.C7.Renderer:
       return m.n6r;
-    case j.C7.LegacyModule:
+    case g.C7.LegacyModule:
       return m.pzj;
-    case j.C7.OOPModule:
+    case g.C7.OOPModule:
       return m.m3e;
     default:
       return m.pzj
@@ -891,7 +891,7 @@ let eh = ["__webpack_require__", "fn"],
             children: [s, " (", c, ")", (0, a.jsx)(m.P3F, {
               tag: "span",
               className: V.copyEventButton,
-              onClick: () => (0, w.JG)(s),
+              onClick: () => (0, k.JG)(s),
               children: (0, a.jsx)(m.TIy, {
                 color: "currentColor",
                 size: "sm"
@@ -901,7 +901,7 @@ let eh = ["__webpack_require__", "fn"],
             icon: m.TIy,
             tooltip: "Copy all properties",
             onClick: () => {
-              (0, w.JG)(ex(r))
+              (0, k.JG)(ex(r))
             }
           }), (0, a.jsx)(b.Z.Icon, {
             icon: m.k$p,
@@ -915,8 +915,8 @@ let eh = ["__webpack_require__", "fn"],
             copyValue: f.toISOString(),
             children: (0, a.jsx)("time", {
               dateTime: f.toISOString(),
-              title: (0, k.vc)(f, "LLLL"),
-              children: (0, k.vc)(f, "L h:mm:ss.SSS")
+              title: (0, R.vc)(f, "LLLL"),
+              children: (0, R.vc)(f, "L h:mm:ss.SSS")
             })
           }), (0, a.jsx)(L.Z9, {
             name: "Log Type",
@@ -985,7 +985,7 @@ function eb() {
   let [e, t] = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.DEV_getOverlayLoggingBreadcrumbs(), [], Chunk136015.Q), {
     ref: n,
     height: l
-  } = (0, Chunk393238.ZP)(), s = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.DEV_isOverlayModuleLoggingEnabled()), [o, c] = Chunk647438.useState(Chunk913527), [x, p] = Chunk647438.useState(Object.keys(ec)), [v, b] = Chunk647438.useState(""), j = Chunk647438.useMemo(() => 0 === exports ? [] : module.filter(e => {
+  } = (0, Chunk393238.ZP)(), s = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.DEV_isOverlayModuleLoggingEnabled()), [o, c] = Chunk647438.useState(Chunk913527), [x, p] = Chunk647438.useState(Object.keys(ec)), [v, b] = Chunk647438.useState(""), g = Chunk647438.useMemo(() => 0 === exports ? [] : module.filter(e => {
     for (let t of x) {
       let {
         filter: n
@@ -993,7 +993,7 @@ function eb() {
       if (n(e)) returntrue
     }
     returnfalse
-  }), [module, Chunk765250, exports]), [g, _] = Chunk647438.useState(Chunk427860), [y, N] = Chunk647438.useState(null), E = Chunk647438.useMemo(() => module.find(e => e.key === y), [module, Chunk829907]), T = Chunk647438.useCallback(e => {
+  }), [module, Chunk765250, exports]), [j, _] = Chunk647438.useState(Chunk427860), [y, N] = Chunk647438.useState(null), E = Chunk647438.useMemo(() => module.find(e => e.key === y), [module, Chunk829907]), O = Chunk647438.useCallback(e => {
     _(e)
   }, []), {
     renderSelectedTab: S
@@ -1013,7 +1013,7 @@ function eb() {
       clearTimeout(module)
     }
   }, []);
-  let [I, k] = Chunk647438.useState(false), R = Chunk647438.useRef(null), A = Chunk647438.useCallback(() => {
+  let [I, R] = Chunk647438.useState(false), w = Chunk647438.useRef(null), A = Chunk647438.useCallback(() => {
     (0, Chunk572004.JG)(JSON.stringify(module)), Chunk55935(true)
   }, [module]);
   return Chunk647438.useEffect(() => {
@@ -1098,7 +1098,7 @@ function eb() {
   })
 }
 
-function ej() {
+function eg() {
   return (0, Chunk951288.jsx)(Chunk481060.w0Z, {
     children: (0, Chunk951288.jsxs)("div", {
       className: i()(Chunk451429.panel, Chunk454741.subPanel),
@@ -1107,7 +1107,7 @@ function ej() {
   })
 }
 
-function eg() {
+function ej() {
   let [e, t] = Chunk647438.useState("state");
   return (0, Chunk951288.jsxs)("div", {
     className: i()(Chunk451429.panel, Chunk454741.panel),
@@ -1130,6 +1130,6 @@ function eg() {
           children: "Logging"
         })
       })]
-    }), "state" === module && (0, Chunk951288.jsx)(ej, {}), "logging" === module && (0, Chunk951288.jsx)(eb, {})]
+    }), "state" === module && (0, Chunk951288.jsx)(eg, {}), "logging" === module && (0, Chunk951288.jsx)(eb, {})]
   })
 }

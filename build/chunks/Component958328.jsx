@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 /** chunk id: 958328, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -21,7 +21,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk989295 = require("./989295.js"),
   Chunk451429 = require("./451429.js");
 
-function j(e) {
+function g(e) {
   let {
     title: t,
     can: n
@@ -43,12 +43,12 @@ function j(e) {
   })
 }
 
-function g() {
+function j() {
   let e = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getChannelId()),
     t = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
     n = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getChannel(module)),
     r = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(exports)),
-    g = (0, Chunk442837.e7)([Chunk496675.Z], () => Chunk496675.Z.computePermissions(require)),
+    j = (0, Chunk442837.e7)([Chunk496675.Z], () => Chunk496675.Z.computePermissions(require)),
     _ = (0, Chunk442837.e7)([Chunk496675.Z], () => Chunk496675.Z.computePermissions(Chunk120356)),
     y = (0, Chunk933557.ZP)(require, true),
     C = null != require ? (0, Chunk71080.IG)(require, false) : null,
@@ -57,18 +57,18 @@ function g() {
       let {
         title: t,
         flag: n
-      } = e, r = i.e$(g, n);
-      return (0, a.jsx)(j, {
+      } = e, r = i.e$(j, n);
+      return (0, a.jsx)(g, {
         title: t,
         can: r
       }, t)
     }),
-    O = Object.values(null != N ? N : {}).map(e => {
+    T = Object.values(null != N ? N : {}).map(e => {
       let {
         title: t,
         flag: n
       } = e, r = i.e$(_, n);
-      return (0, a.jsx)(j, {
+      return (0, a.jsx)(g, {
         title: t,
         can: r
       }, t)
@@ -88,7 +88,7 @@ function g() {
         children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "heading-md/semibold",
           children: null != Chunk120356 ? "Permissions in ".concat(Chunk120356.name) : "No guild selected"
-        }), O]
+        }), T]
       })]
     })
   })

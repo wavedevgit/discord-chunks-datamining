@@ -77,7 +77,7 @@ function G(e) {
   let {
     includePanelSpacing: l
   } = e, a = (0, C.fJ)(), {
-    selectedFilter: h
+    selectedFilter: f
   } = (0, E.Z)(), I = (0, s.e7)([S.Z], () => S.Z.oldestDisplayedMessageId), N = (0, s.Wu)([S.Z], () => S.Z.getInboxMessages()), Z = (0, s.Wu)([_.ZP, O.Z, S.Z], () => N.filter(e => !(0, P.YH)({
     messageId: e.id,
     channelId: e.channelId,
@@ -91,11 +91,11 @@ function G(e) {
     ReadStateStore_: _.ZP,
     GuildStore_: O.Z
   }) || (0, P.Tj)(e, S.Z.selectedItemInfo))), G = i.useCallback(e => {
-    h !== A.V5.BOOKMARKS && x.Z.loadMoreInbox({
+    f !== A.V5.BOOKMARKS && x.Z.loadMoreInbox({
       viewId: a,
       loadingTrigger: e
     })
-  }, [h, a]), {
+  }, [f, a]), {
     hasLoadedEver: B,
     canLoadMore: W
   } = (0, s.cj)([S.Z], () => ({
@@ -138,8 +138,8 @@ function G(e) {
         message: n
       }]
     }), [K]),
-    q = F(Z, h, I),
-    X = F(D, h, null);
+    q = V(Z, f, I),
+    X = V(D, f, null);
   (0, p.ZP)(() => {
     var e;
     u.Z.dispatch({
@@ -201,14 +201,14 @@ function G(e) {
     location: "NotificationsInboxSidebar"
   }), J = (0, g._k)({
     location: "NotificationsInboxSidebar"
-  }), $ = Q === j.v8.DROPDOWN && h !== A.V5.ALL, ee = (0, A.H_)(h);
+  }), $ = Q === j.v8.DROPDOWN && f !== A.V5.ALL, ee = (0, A.H_)(f);
   return (0, r.jsx)("nav", {
     className: o()(M.container, {
       [M.panelSpacing]: l
     }),
     children: (0, r.jsxs)(c.y5t, {
       forceLevel: 1,
-      component: (0, r.jsx)(f.ZP, (t = L({
+      component: (0, r.jsx)(h.ZP, (t = L({
         hasSubheader: true,
         guild: ee
       }, U), n = n = {
@@ -230,18 +230,18 @@ function G(e) {
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t)),
-      children: [h === A.V5.ALL && (0, r.jsx)(z, {
-        hideBanner: !B || h !== A.V5.ALL
+      children: [f === A.V5.ALL && (0, r.jsx)(z, {
+        hideBanner: !B || f !== A.V5.ALL
       }), $ && (0, r.jsx)(c.LZC, {
         size: 8
       }), (0, r.jsx)(T.Z, {
         className: M.messageList,
         renderMessageGroup: H,
-        messages: h === A.V5.BOOKMARKS ? Y : q,
-        unreadMessages: h === A.V5.BOOKMARKS ? [] : X,
+        messages: f === A.V5.BOOKMARKS ? Y : q,
+        unreadMessages: f === A.V5.BOOKMARKS ? [] : X,
         listName: "notifications-inbox",
-        renderLoadingState: V,
-        ignoreGrouping: h === A.V5.BOOKMARKS,
+        renderLoadingState: F,
+        ignoreGrouping: f === A.V5.BOOKMARKS,
         loadMore: G
       })]
     })
@@ -254,7 +254,7 @@ function B(e) {
   })
 }
 
-function F(e, t, n) {
+function V(e, t, n) {
   return i.useMemo(() => 0 === e.length || t === A.V5.BOOKMARKS ? k : e.filter(e => {
     let {
       id: r
@@ -263,7 +263,7 @@ function F(e, t, n) {
   }), [e, t, n])
 }
 
-function V() {
+function F() {
   return (0, Chunk951288.jsx)(Chunk862149.Z, {})
 }
 
@@ -292,7 +292,7 @@ function z(e) {
         children: D.intl.string(D.t["6XMM+P"])
       }), (0, r.jsx)(c.W6s, {
         size: "sm",
-        color: h.Z.TEXT_FEEDBACK_POSITIVE
+        color: f.Z.TEXT_FEEDBACK_POSITIVE
       })]
     })
   })

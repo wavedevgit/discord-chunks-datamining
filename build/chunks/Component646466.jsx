@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 /** chunk id: 646466, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  O: () => O
+  O: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -59,7 +59,7 @@ let p = [{
       onCloseRequest: () => (0, Chunk481060.Mr3)(Chunk637443.g)
     })
   },
-  j = () => {
+  g = () => {
     (0, Chunk481060.nfh)(Chunk637443.c) ? (0, Chunk481060.Mr3)(Chunk637443.c) : (0, Chunk481060.ZDy)(async () => {
       let {
         ShopPFXPreviewInstructionModal: e
@@ -70,7 +70,7 @@ let p = [{
       onCloseRequest: () => (0, Chunk481060.Mr3)(Chunk637443.c)
     })
   },
-  g = () => {
+  j = () => {
     let e = (0, Chunk373071.lb)(),
       {
         previewProfileEffectId: t,
@@ -92,7 +92,7 @@ let p = [{
         }), (0, Chunk951288.jsx)(Chunk481060.hU, {
           variant: "icon-only",
           size: "sm",
-          onClick: j,
+          onClick: g,
           icon: Chunk481060.idN,
           "aria-label": "Open PFX preview instructions"
         })]
@@ -332,7 +332,7 @@ let p = [{
           icon: Chunk481060.idN,
           "aria-label": "Open preview instructions"
         })]
-      }), (0, Chunk951288.jsx)(g, {}), (0, Chunk951288.jsx)(_, {}), (0, Chunk951288.jsx)(y, {
+      }), (0, Chunk951288.jsx)(j, {}), (0, Chunk951288.jsx)(_, {}), (0, Chunk951288.jsx)(y, {
         clearAssets: Chunk637443,
         clearIgnoredFiles: Chunk206878
       }), (0, Chunk951288.jsx)(C, {
@@ -341,7 +341,7 @@ let p = [{
       })]
     })
   },
-  O = () => {
+  T = () => {
     let [e, t] = Chunk647438.useState("preview");
     return (0, Chunk951288.jsxs)("div", {
       className: Chunk198764.container,

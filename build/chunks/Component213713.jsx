@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk206583 = require("./206583.js"),
   Chunk680027 = require("./680027.js"),
   Chunk451429 = require("./451429.js");
-let R = [{
+let w = [{
   key: "type",
   cellClassName: i()(Chunk680027.cell, Chunk680027.cellType),
   render(e) {
@@ -76,7 +76,7 @@ function Z(e) {
   var t, n;
   let {
     type: r
-  } = e, l = (0, u.e7)([O.Z], () => O.Z.getFilters()), i = null != (n = null == l || null == (t = l.types) ? true : t.has(r)) && n;
+  } = e, l = (0, u.e7)([T.Z], () => T.Z.getFilters()), i = null != (n = null == l || null == (t = l.types) ? true : t.has(r)) && n;
   return (0, a.jsx)(x.$q, {
     value: i,
     onClick: function() {
@@ -140,7 +140,7 @@ function A() {
         children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           children: "Inventory"
         }), Chunk392711.length > 0 && (0, Chunk951288.jsx)(Chunk681619.Z, {
-          columns: R,
+          columns: w,
           data: Chunk392711
         }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
           size: 8
@@ -252,7 +252,7 @@ let D = e => {
   } = e, n = (0, _.Z)({
     applicationId: t.id,
     location: "DevToolsContentInventory",
-    source: g.m1.DevTools
+    source: j.m1.DevTools
   });
   return (0, a.jsx)(h.P3F, {
     onClick: n,

@@ -31,7 +31,7 @@ function m(e) {
   return (0, r.jsx)(o.P3F, {
     onClick: i,
     className: l()(null != i && g.clickableGameName),
-    children: (0, r.jsx)(h.Z, {
+    children: (0, r.jsx)(f.Z, {
       className: g.gameName,
       children: t
     })
@@ -46,7 +46,7 @@ function b(e) {
     onClickNotSharing: l,
     isForceShowSharingPopout: d,
     setIsForceShowSharingPopout: p
-  } = e, h = null != n ? n.name : null != i ? i.name : f.intl.string(f.t["UQMV/P"]);
+  } = e, f = null != n ? n.name : null != i ? i.name : h.intl.string(h.t["UQMV/P"]);
   return (0, c.V)(), (0, r.jsxs)("div", {
     className: g.gameWrapper,
     children: [(0, r.jsxs)("div", {
@@ -65,8 +65,8 @@ function b(e) {
       setIsForceShowSharingPopout: p,
       children: (0, r.jsxs)("div", {
         className: g.info,
-        children: [null != h ? (0, r.jsx)(m, {
-          name: h,
+        children: [null != f ? (0, r.jsx)(m, {
+          name: f,
           applicationId: null == n ? true : n.id
         }) : null, (0, r.jsx)(a.V, {
           onClick: l

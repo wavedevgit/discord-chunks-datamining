@@ -54,7 +54,7 @@ function Z(e) {
     }, O.fy.FREQUENT_USER_ACTION)
   }, [])], {
     showTutorial: B,
-    setSeenTutorial: F
+    setSeenTutorial: V
   } = function(e) {
     let t = (0, s.e7)([y.Z], () => {
         var e, t;
@@ -69,7 +69,7 @@ function Z(e) {
       showTutorial: !t && e === c.X.UNREADS,
       setSeenTutorial: n
     }
-  }(U), V = i.useCallback(() => {
+  }(U), F = i.useCallback(() => {
     k(false), L && (null == n || n())
   }, [n, L]), H = i.useCallback(() => {
     k(!L), L ? null == n || n() : null == t || t()
@@ -78,19 +78,19 @@ function Z(e) {
   let {
     enabled: z,
     inInbox: W
-  } = f.Z.useExperiment({
+  } = h.Z.useExperiment({
     location: "RecentsPopout"
   }), K = (0, s.e7)([g.Z], () => g.Z.hasOverdueReminder(), []) && z && W, {
     enabled: Y
-  } = h.Z.useExperiment({
+  } = f.Z.useExperiment({
     location: "RecentsPopout"
   });
   i.useEffect(() => {
     U !== c.X.BOOKMARKS || z || W || G(c.X.MENTIONS)
   });
   let q = i.useCallback(e => {
-      e.shiftKey || V()
-    }, [V]),
+      e.shiftKey || F()
+    }, [F]),
     X = (0, b.Us)({
       location: "ForYou"
     });
@@ -103,7 +103,7 @@ function Z(e) {
       align: T,
       autoInvert: false,
       shouldShow: L,
-      onRequestClose: V,
+      onRequestClose: F,
       renderPopout: function() {
         return (0, r.jsx)(u.VqE, {
           "aria-label": I.intl.string(I.t.GSmTKC),
@@ -117,19 +117,19 @@ function Z(e) {
                 tab: U,
                 setTab: G,
                 badgeState: Z,
-                closePopout: V
+                closePopout: F
               }),
               children: U === c.X.FOR_YOU ? (0, r.jsx)(v.ZP, {}) : U === c.X.MENTIONS ? (0, r.jsx)(j.Z, {
                 onJump: q
               }) : Y && U === c.X.GAME_INVITES ? (0, r.jsx)(S.Z, {}) : z && W && U === c.X.BOOKMARKS ? (0, r.jsx)(m.K, {
-                closePopout: V
+                closePopout: F
               }) : U === c.X.SCHEDULED ? (0, r.jsx)(C._, {}) : (0, r.jsx)(a.SV, {
                 fallback: (0, r.jsx)(E.h6, {}),
                 children: (0, r.jsx)(E.ZP, {
                   onJump: q,
                   showTutorial: B,
-                  setSeenTutorial: F,
-                  closePopout: V
+                  setSeenTutorial: V,
+                  closePopout: F
                 })
               })
             })

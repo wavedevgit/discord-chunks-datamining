@@ -21,21 +21,21 @@ var Chunk442837 = require("./442837.js"),
   Chunk685960 = require("./685960.js");
 
 function b() {
-  var e, t, n, b, j, g, _, y;
+  var e, t, n, b, g, j, _, y;
   (0, Chunk223143.mw)();
   let C = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
     N = Chunk695346.L1.useSetting(),
     E = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme),
-    O = N.backgroundGradientPresetId,
-    T = (0, Chunk442837.e7)([Chunk1870.Z], () => Chunk1870.Z.purchases),
-    S = (0, Chunk884697.Ad)(T),
-    P = (0, Chunk884697.jT)(T),
+    T = N.backgroundGradientPresetId,
+    O = (0, Chunk442837.e7)([Chunk1870.Z], () => Chunk1870.Z.purchases),
+    S = (0, Chunk884697.Ad)(O),
+    P = (0, Chunk884697.jT)(O),
     I = null == C || null == (e = C.avatarDecoration) ? true : module.skuId,
-    w = null == C || null == (n = C.collectibles) || null == (t = require.nameplate) ? true : exports.skuId,
-    k = null != I && null != (j = S.find(e => e.skuId === I)) ? j : null,
-    R = null != w && null != (g = P.find(e => e.skuId === w)) ? g : null,
-    Z = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == k ? true : k.skuId)),
-    A = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == R ? true : R.skuId)),
+    k = null == C || null == (n = C.collectibles) || null == (t = require.nameplate) ? true : exports.skuId,
+    R = null != I && null != (g = S.find(e => e.skuId === I)) ? g : null,
+    w = null != k && null != (j = P.find(e => e.skuId === k)) ? j : null,
+    Z = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == R ? true : R.skuId)),
+    A = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == w ? true : w.skuId)),
     D = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.fontSize),
     L = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.messageGroupSpacing),
     M = Chunk695346.YC.useSetting();
@@ -73,7 +73,7 @@ function b() {
         children: ["Theme: ", E]
       }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
-        children: ["Client Theme ID:", " ", null != O ? null == (b = Chunk469115.qt[O]) ? true : b.getName() : "None"]
+        children: ["Client Theme ID:", " ", null != T ? null == (b = Chunk469115.qt[T]) ? true : b.getName() : "None"]
       }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: ["Avatar Decoration: ", null != (_ = null == Z ? true : Z.name) ? _ : "None"]

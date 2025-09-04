@@ -17,11 +17,11 @@ function l(e, t, n) {
     removingAt: e.storeRemovalDate
   } : t.type === r.A3.LEVEL_ACTIVATED ? {
     type: "active",
-    statusText: o.intl.formatToPlainString(i.default.WRRYUV, {
-      perkName: null != (s = null == (a = t.sourcePowerup) ? true : a.title) ? s : o.intl.string(o.t.BfF6EB)
+    statusText: i.intl.formatToPlainString(o.default.WRRYUV, {
+      perkName: null != (s = null == (a = t.sourcePowerup) ? true : a.title) ? s : i.intl.string(i.t.BfF6EB)
     })
   } : t.type === r.A3.POWERUP_ACTIVATED ? {
     type: "active",
-    statusText: o.intl.string(i.default.FFLkm5)
+    statusText: i.intl.string(o.default.FFLkm5)
   } : null
 }

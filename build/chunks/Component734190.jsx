@@ -140,11 +140,11 @@ let T = Chunk647438.memo(function(e) {
     unread: m.ZP.hasUnread(t.id),
     mentionCount: m.ZP.getMentionCount(t.id),
     isMentionLowImportance: m.ZP.getIsMentionLowImportance(t.id)
-  })), U = (0, s.e7)([h.Z], () => h.Z.isMuted(t.id)), G = i.useCallback(e => {
-    (0, f.ok)(t, !e.shiftKey, C.on.CHANNEL_LIST)
+  })), U = (0, s.e7)([f.Z], () => f.Z.isMuted(t.id)), G = i.useCallback(e => {
+    (0, h.ok)(t, !e.shiftKey, C.on.CHANNEL_LIST)
   }, [t]), B = i.useCallback(() => {
     u.Z.preload(t.guild_id, t.id)
-  }, [t.guild_id, t.id]), F = i.useCallback(e => {
+  }, [t.guild_id, t.id]), V = i.useCallback(e => {
     let i = g.Z.getChannel(t.id);
     null != i && (0, d.jW)(e, async () => {
       let {
@@ -154,7 +154,7 @@ let T = Chunk647438.memo(function(e) {
         channel: i
       }))
     })
-  }, [t.id]), V = null == R ? 0 : R.length, H = (0, a.JA)(t.id), {
+  }, [t.id]), F = null == R ? 0 : R.length, H = (0, a.JA)(t.id), {
     role: z
   } = H, W = function(e, t) {
     if (null == e) return {};
@@ -207,7 +207,7 @@ let T = Chunk647438.memo(function(e) {
           [P.withGuildIcon]: A
         }),
         onMouseDown: B,
-        onContextMenu: F,
+        onContextMenu: V,
         children: [!M || U || l ? null : (0, r.jsx)("div", {
           className: o()(P.unread, P.unreadImportant)
         }), (0, r.jsx)(c.P3F, Z(N({}, W), {
@@ -226,8 +226,8 @@ let T = Chunk647438.memo(function(e) {
               children: t.name
             }), (0, r.jsxs)("div", {
               className: P.children,
-              children: [V > 0 && t.userLimit > 0 ? (0, r.jsx)(_.Z, {
-                userCount: V,
+              children: [F > 0 && t.userLimit > 0 ? (0, r.jsx)(_.Z, {
+                userCount: F,
                 video: D,
                 channel: t
               }) : null, (0, y.Z)(L) ? (0, r.jsx)(v.Z, {

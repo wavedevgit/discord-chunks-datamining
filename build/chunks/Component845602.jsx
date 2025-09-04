@@ -1,4 +1,4 @@
-/** Chunk was on 93704 **/
+/** Chunk was on 99982 **/
 /** chunk id: 845602, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => k,
@@ -103,7 +103,7 @@ function v() {
 function k(e) {
   let {
     guildId: t
-  } = e, [n, a] = o.useState(x.x_.HEART), s = (0, m.Z)(), l = o.useMemo(() => ({
+  } = e, [n, a] = o.useState(x.x_.HEART), s = (0, _.Z)(), l = o.useMemo(() => ({
     unlockedBadges: s.unlockedBadges.slice(0, 10),
     lockedBadges: []
   }), [s]);
@@ -118,7 +118,7 @@ function k(e) {
           color: "var(--brand-400)"
         },
         message: C.intl.string(C.t["6OSasb"]),
-        decorations: (0, r.jsx)(_.S, {
+        decorations: (0, r.jsx)(m.S, {
           guildId: t,
           tag: "GGEZ",
           badge: n

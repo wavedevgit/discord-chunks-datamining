@@ -37,15 +37,15 @@ function u(e) {
     disableWrapper: u = false,
     disabled: d = false,
     hideOnClick: p = true,
-    shouldShow: h,
-    forceOpen: f,
+    shouldShow: f,
+    forceOpen: h,
     selected: g = false,
     tooltipClass: m,
     tooltipContentClass: b
   } = e;
   return (0, r.jsx)(a.ua7, {
-    shouldShow: h,
-    forceOpen: f,
+    shouldShow: f,
+    forceOpen: h,
     spacing: 12,
     hideOnClick: p,
     text: d ? null : n,

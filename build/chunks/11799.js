@@ -18,14 +18,14 @@ let p = () => {
     loading: t,
     items: n,
     hasMore: p,
-    loadMore: h
+    loadMore: f
   } = (e => {
     let {
       isFocused: t,
       navigatedAway: n,
       isDesktop: p,
-      withMentions: h = false,
-      initialPageSize: f
+      withMentions: f = false,
+      initialPageSize: h
     } = e, g = (0, i.e7)([u.Z], () => u.Z.shouldReload()), m = r.useRef(false), [b, O] = r.useState(false), {
       initialized: y,
       loading: _,
@@ -56,23 +56,23 @@ let p = () => {
     }, [n, v, p, P, C]), r.useEffect(() => {
       let e = g && t;
       (!y || e) && (0, s.jk)({
-        limit: null != f ? f : h ? 8 : 20,
-        with_mentions: h,
+        limit: null != h ? h : f ? 8 : 20,
+        with_mentions: f,
         roles_filter: E,
         everyone_filter: S
       })
-    }, [y, g, t, h, E, S, f]);
+    }, [y, g, t, f, E, S, h]);
     let I = r.useCallback(async e => {
       !m.current && y && j && null != x && (e || !C) && (m.current = true, O(true), await (0, s.jk)({
         after: x,
-        with_mentions: h,
+        with_mentions: f,
         roles_filter: E,
         everyone_filter: S,
-        limit: h ? 8 : 20
+        limit: f ? 8 : 20
       }, () => {
         m.current = false
       }), O(false))
-    }, [y, j, x, C, h, E, S]);
+    }, [y, j, x, C, f, E, S]);
     return {
       initialized: y,
       loading: _,
@@ -94,6 +94,6 @@ let p = () => {
     loading: exports,
     items: require.filter(e => "notification-center-item" === e.kind),
     hasMore: p,
-    loadMore: h
+    loadMore: f
   }
 }

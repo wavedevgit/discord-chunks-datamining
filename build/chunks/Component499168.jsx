@@ -1,4 +1,4 @@
-/** Chunk was on 5410 **/
+/** Chunk was on 79255 **/
 /** chunk id: 499168, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -62,20 +62,20 @@ function b(e) {
     m = e.registerHandler,
     D = e.containerDisplayName,
     k = e.getType,
-    w = e.collect,
-    j = e.options.arePropsEqual,
-    x = true === j ? i.w : j,
+    j = e.collect,
+    w = e.options.arePropsEqual,
+    O = true === w ? i.w : w,
     C = t.displayName || t.name || "Component",
-    O = function(e) {
+    S = function(e) {
       if ("function" != typeof e && null !== e) throw TypeError("Super expression must either be null or a function");
-      O.prototype = Object.create(e && e.prototype, {
+      S.prototype = Object.create(e && e.prototype, {
         constructor: {
-          value: O,
+          value: S,
           writable: true,
           configurable: true
         }
-      }), e && h(O, e);
-      var p, D, j = (p = function() {
+      }), e && h(S, e);
+      var p, D, w = (p = function() {
         if ("undefined" == typeof Reflect || !Reflect.construct || Reflect.construct.sham) returnfalse;
         if ("function" == typeof Proxy) returntrue;
         try {
@@ -84,7 +84,7 @@ function b(e) {
           returnfalse
         }
       }(), function() {
-        var e, t = y(O);
+        var e, t = y(S);
         return e = p ? Reflect.construct(t, arguments, y(this).constructor) : t.apply(this, arguments),
           function(e, t) {
             if (t && ("object" === f(t) || "function" == typeof t)) return t;
@@ -93,10 +93,10 @@ function b(e) {
           }(this, e)
       });
 
-      function O(e) {
+      function S(e) {
         var t;
-        if (!(this instanceof O)) throw TypeError("Cannot call a class as a function");
-        return g(v(t = j.call(this, e)), "decoratedRef", (0, o.createRef)()), g(v(t), "handlerId", true), g(v(t), "manager", true), g(v(t), "handlerMonitor", true), g(v(t), "handlerConnector", true), g(v(t), "handler", true), g(v(t), "disposable", true), g(v(t), "currentType", true), g(v(t), "handleChange", function() {
+        if (!(this instanceof S)) throw TypeError("Cannot call a class as a function");
+        return g(v(t = w.call(this, e)), "decoratedRef", (0, o.createRef)()), g(v(t), "handlerId", true), g(v(t), "manager", true), g(v(t), "handlerMonitor", true), g(v(t), "handlerConnector", true), g(v(t), "handler", true), g(v(t), "disposable", true), g(v(t), "currentType", true), g(v(t), "handleChange", function() {
           var e = t.getCurrentState();
           (0, i.w)(e, t.state) || t.setState(e)
         }), t.disposable = new c.M$, t.receiveProps(e), t.dispose(), t
@@ -114,7 +114,7 @@ function b(e) {
         }, {
           key: "shouldComponentUpdate",
           value: function(e, t) {
-            return !x(e, this.props) || !(0, i.w)(t, this.state)
+            return !O(e, this.props) || !(0, i.w)(t, this.state)
           }
         }, {
           key: "componentDidMount",
@@ -124,7 +124,7 @@ function b(e) {
         }, {
           key: "componentDidUpdate",
           value: function(e) {
-            x(this.props, e) || (this.receiveProps(this.props), this.handleChange())
+            O(this.props, e) || (this.receiveProps(this.props), this.handleChange())
           }
         }, {
           key: "componentWillUnmount",
@@ -189,7 +189,7 @@ function b(e) {
         }, {
           key: "getCurrentState",
           value: function() {
-            return this.handlerConnector ? w(this.handlerConnector.hooks, this.handlerMonitor, this.props) : {}
+            return this.handlerConnector ? j(this.handlerConnector.hooks, this.handlerMonitor, this.props) : {}
           }
         }, {
           key: "render",
@@ -218,7 +218,7 @@ function b(e) {
             var n = t[r];
             n.enumerable = n.enumerable || false, n.configurable = true, "value" in n && (n.writable = true), Object.defineProperty(e, n.key, n)
           }
-        }(O.prototype, D), O
+        }(S.prototype, D), S
     }(o.Component);
-  return g(O, "DecoratedComponent", t), g(O, "displayName", "".concat(D, "(").concat(C, ")")), p()(O, t)
+  return g(S, "DecoratedComponent", t), g(S, "displayName", "".concat(D, "(").concat(C, ")")), p()(S, t)
 }

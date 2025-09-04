@@ -2,13 +2,14 @@
 /** chunk id: 909123, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => E
 }), require("./388685.js");
 var Chunk179360 = require("./179360.js"),
   Chunk147913 = require("./147913.js"),
   Chunk430824 = require("./430824.js"),
   Chunk496675 = require("./496675.js"),
   Chunk914010 = require("./914010.js"),
+  Chunk634952 = require("./634952.js"),
   Chunk713081 = require("./713081.js"),
   Chunk905128 = require("./905128.js"),
   Chunk901005 = require("./901005.js"),
@@ -17,7 +18,7 @@ var Chunk179360 = require("./179360.js"),
   Chunk981631 = require("./981631.js"),
   Chunk647086 = require("./647086.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,12 +26,15 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class m extends Chunk147913.Z {
+class g extends Chunk147913.Z {
   handleSelectedGuildChange() {
     let e = Chunk914010.Z.getGuildId();
     if (null == module || module === Chunk647086._ || module === Chunk981631.I_8) return;
     let t = Chunk430824.Z.getGuild(module);
     null != exports && (Chunk158638.sT.trackExposure({
+      guildId: exports.id,
+      location: "GuildPowerupsManager"
+    }), Chunk634952.Lz.trackExposure({
       guildId: exports.id,
       location: "GuildPowerupsManager"
     }), Chunk901005.G.trackExposure({
@@ -51,14 +55,14 @@ class m extends Chunk147913.Z {
     this.refreshGuildPowerups(t)
   }
   refreshGuildPowerups(e) {
-    true === (0, f.D)(o.Z, a.Z.getGuild(e)) && ((0, l.Fm)(e), (0, r.C0)(e))
+    true === (0, _.D)(o.Z, a.Z.getGuild(e)) && ((0, c.Fm)(e), (0, r.C0)(e))
   }
   constructor(...e) {
-    super(...e), h(this, "stores", new Map().set(s.Z, this.handleSelectedGuildChange)), h(this, "actions", {
+    super(...e), m(this, "stores", new Map().set(s.Z, this.handleSelectedGuildChange)), m(this, "actions", {
       GUILD_POWERUP_ENTITLEMENTS_CREATE: this.handleEntitlementUpdate.bind(this),
       GUILD_POWERUP_ENTITLEMENTS_DELETE: this.handleEntitlementUpdate.bind(this),
       GUILD_APPLIED_BOOSTS_UPDATE: this.handleAppliedBoostUpdate.bind(this)
     })
   }
 }
-let g = new m
+let E = new g

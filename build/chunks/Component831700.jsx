@@ -176,8 +176,8 @@ class en extends Chunk98597.ZP {
       sorting: u,
       isUserOver: d,
       connectChannelDropTarget: p,
-      connectChannelDragSource: h,
-      connectUserDropTarget: f,
+      connectChannelDragSource: f,
+      connectUserDropTarget: h,
       connectDragPreview: g,
       canReorderChannel: m,
       canMoveMembers: b,
@@ -453,7 +453,7 @@ function ei(e) {
       bypassLimit: k.Z.can(q.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), h = (0, a.e7)([B.Z], () => B.Z.hasVideo(n.id)), g = (0, f.ZP)(n), O = (0, _.ZP)(n), y = (0, P.qY)(n.id), {
+  }), f = (0, a.e7)([B.Z], () => B.Z.hasVideo(n.id)), g = (0, h.ZP)(n), O = (0, _.ZP)(n), y = (0, P.qY)(n.id), {
     enabled: v
   } = m.W.useExperiment({
     guildId: t.id,
@@ -476,7 +476,7 @@ function ei(e) {
     location: "VoiceChannel"
   }, {
     autoTrackExposure: false
-  }), F = (0, H.Z)({
+  }), V = (0, H.Z)({
     channel: n,
     isChannelSelected: o,
     isChannelCollapsed: s,
@@ -485,25 +485,25 @@ function ei(e) {
     needSubscriptionToAccess: E,
     enableConnectedUserLimit: true,
     enableActivities: true
-  }), V = T && null == F;
+  }), F = T && null == V;
   return (0, r.jsx)(er, et(ee({
     channelName: O,
     embeddedApps: g,
     embeddedActivityType: q.IIU.PLAYING,
-    video: h,
+    video: f,
     hasActiveEvent: null != y,
     isSubscriptionGated: C,
     needSubscriptionToAccess: E
   }, u, p, e), {
     connected: T,
     isFavoriteSuggestion: l && !Z,
-    forceShowButtons: V,
-    channelInfo: F,
+    forceShowButtons: F,
+    channelInfo: V,
     resolvedUnreadSetting: d,
     enableHangStatus: A,
     allowChannelTopic: R,
     enableOpenTIVForPing: M,
-    hasChannelInfo: null != F,
+    hasChannelInfo: null != V,
     hasStartTime: j
   }))
 }

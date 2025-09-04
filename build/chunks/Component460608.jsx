@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 460608, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => _
 }), require("./642613.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,41 +19,41 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk240379 = require("./240379.js");
 
-function x(e) {
+function _(e) {
   let {
     guildId: t
-  } = e, n = (0, a.Wu)([c.Z], () => {
+  } = e, n = (0, a.Wu)([u.Z], () => {
     var e;
-    return null != (e = c.Z.getAppliedGuildBoostsForGuild(t)) ? e : []
-  }, [t]), x = i.useMemo(() => n.sort((e, t) => m.default.extractTimestamp(e.id) < m.default.extractTimestamp(t.id) ? 1 : false), [n]), b = (0, a.Wu)([p.ZP], () => {
+    return null != (e = u.Z.getAppliedGuildBoostsForGuild(t)) ? e : []
+  }, [t]), _ = o.useMemo(() => n.sort((e, t) => f.default.extractTimestamp(e.id) < f.default.extractTimestamp(t.id) ? 1 : false), [n]), b = (0, a.Wu)([p.ZP], () => {
     let e = new Set;
-    return x.forEach(n => {
+    return _.forEach(n => {
       null == p.ZP.getMember(t, n.userId) && e.add(n.userId)
     }), Array.from(e)
-  }, [t, x]);
-  i.useEffect(() => {
+  }, [t, _]);
+  o.useEffect(() => {
     b.length > 0 && b.forEach(e => d.Z.requestMember(t, e))
   }, [t, b]);
-  let h = i.useMemo(() => b.length > 0 ? {
+  let h = o.useMemo(() => b.length > 0 ? {
     [t]: b
   } : {}, [t, b]);
-  (0, u.$)(h, "GuildPowerupsRecentActivity");
-  let C = (0, a.e7)([f.Z], () => {
+  (0, c.$)(h, "GuildPowerupsRecentActivity");
+  let C = (0, a.e7)([m.Z], () => {
     var e;
-    return null == (e = f.Z.getGuild(t)) ? true : e.premiumSubscriberCount
+    return null == (e = m.Z.getGuild(t)) ? true : e.premiumSubscriberCount
   });
-  return (i.useEffect(() => {
+  return (o.useEffect(() => {
     C !== n.length && (0, s.C0)(t)
-  }, [t, C, n.length]), 0 === x.length) ? null : (0, r.jsxs)(r.Fragment, {
+  }, [t, C, n.length]), 0 === _.length) ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.X6, {
-      className: v.header,
+      className: x.header,
       variant: "eyebrow",
       color: "text-secondary",
-      children: g.intl.string(g.t.yM9Krq)
-    }), (0, r.jsx)(o.zJ, {
-      className: v.container,
+      children: v.intl.string(v.t.yM9Krq)
+    }), (0, r.jsx)(i.zJ, {
+      className: x.container,
       fade: true,
-      children: x.map((e, t) => (0, r.jsx)(_.Z, {
+      children: _.map((e, t) => (0, r.jsx)(g.Z, {
         boost: e
       }, "boost-activity-".concat(t)))
     })]

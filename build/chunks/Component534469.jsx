@@ -415,7 +415,7 @@ let ei = Chunk647438.memo(function(e) {
             [X.cozyMessage]: !en,
             [X.mentioned]: v.mentioned,
             [X.ephemeral]: (0, I.Pv)(v),
-            [X.nitroMessage]: v.type === Y.uaV.NITRO_NOTIFICATION || v.type === Y.uaV.CHAT_WALLPAPER_SET || v.type === Y.uaV.CHAT_WALLPAPER_REMOVED,
+            [X.nitroMessage]: v.type === Y.uaV.NITRO_NOTIFICATION,
             [X.systemMessage]: (0, Z.Z)(v),
             [X.groupStart]: !ea && (eJ || v.type === Y.uaV.REPLY),
             [X.selected]: eA,

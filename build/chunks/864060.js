@@ -45,7 +45,7 @@ function w(e, t, n) {
   let l = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
   if (t.hasFlag(j.xW$.SPAMMER) || n.isManaged()) returnfalse;
   let i = n.getGuildId();
-  return !(null != i && o.Z.isLurking(i) || !l.ignoreSameUser && t.id === e.id || C.Z.isBlockedOrIgnored(t.id) || !l.ignoreStatus && I.Z.getStatus() === j.Skl.DND || p.QZ.getSetting() || !l.ignoreNoMessagesSetting && S.ZP.allowNoMessages(n))
+  return !(null != i && o.Z.isLurking(i) || !l.ignoreSameUser && t.id === e.id || _.Z.isBlockedOrIgnored(t.id) || !l.ignoreStatus && I.Z.getStatus() === j.Skl.DND || p.QZ.getSetting() || !l.ignoreNoMessagesSetting && S.ZP.allowNoMessages(n))
 }
 
 function k(e, t) {
@@ -53,11 +53,11 @@ function k(e, t) {
   let r = !(arguments.length > 2) || true === arguments[2] || arguments[2],
     a = arguments.length > 3 && true !== arguments[3] && arguments[3];
   if (null != e.flags && (0, v.yE)(e.flags, j.iLy.SUPPRESS_NOTIFICATIONS)) returnfalse;
-  let o = y.Z.getChannel(t);
-  e.type === j.uaV.THREAD_STARTER_MESSAGE && (o = y.Z.getChannel(null == o ? true : o.parent_id));
+  let o = O.Z.getChannel(t);
+  e.type === j.uaV.THREAD_STARTER_MESSAGE && (o = O.Z.getChannel(null == o ? true : o.parent_id));
   let u = b.default.getCurrentUser(),
     c = b.default.getUser(null == (n = e.author) ? true : n.id);
-  if (null == o || null == u || null == c || o.type === j.d4z.GROUP_DM && e.type === j.uaV.RECIPIENT_REMOVE || Z.Z.areSlayerNotificationsSuppressed() && ((i = o).type === j.d4z.DM || null != i.linkedLobby) || !w(u, c, o, {
+  if (null == o || null == u || null == c || o.type === j.d4z.GROUP_DM && e.type === j.uaV.RECIPIENT_REMOVE || A.Z.areSlayerNotificationsSuppressed() && ((i = o).type === j.d4z.DM || null != i.linkedLobby) || !w(u, c, o, {
       ignoreStatus: a,
       ignoreSameUser: j.V$x.SELF_MENTIONABLE_SYSTEM.has(e.type)
     }) || s.Z.isMessageRequest(t)) returnfalse;
@@ -65,12 +65,11 @@ function k(e, t) {
     let e = T.Z.getChannelId(m.Z.getGuildId());
     if (e === o.id || N.ZP.getCurrentSidebarChannelId(e) === o.id) returnfalse
   }
-  if (C.Z.isBlockedOrIgnoredForMessage(e) || true !== e.activity_instance && null != e.interaction && e.interaction.user.id === u.id) returnfalse;
+  if (_.Z.isBlockedOrIgnoredForMessage(e) || true !== e.activity_instance && null != e.interaction && e.interaction.user.id === u.id) returnfalse;
   if (null != e.application_id) {
     let n = l.ZP.getCurrentEmbeddedActivity();
     if ((null == n ? true : n.applicationId) === e.application_id && n.location.channel_id === t) returnfalse
   }
-  if (e.type === j.uaV.CHAT_WALLPAPER_SET || e.type === j.uaV.CHAT_WALLPAPER_REMOVED) returnfalse;
   if (E.Ec.has(o.type)) {
     if (g.Z.isMuted(o.id)) returnfalse;
     let t = (0, h.J)(o);
@@ -81,7 +80,7 @@ function k(e, t) {
       suppressRoles: false
     }))
   } {
-    let t = !E.tx.has(o.type) || _.Z.getChannelId() === o.id;
+    let t = !E.tx.has(o.type) || C.Z.getChannelId() === o.id;
     if (S.ZP.allowAllMessages(o) && t) returntrue;
     let n = S.ZP.isSuppressEveryoneEnabled(o.getGuildId()),
       l = S.ZP.isSuppressRolesEnabled(o.getGuildId());
@@ -97,11 +96,11 @@ function k(e, t) {
 function U(e, t) {
   var n;
   if (T.Z.getChannelId(m.Z.getGuildId()) !== t) returnfalse;
-  let l = y.Z.getChannel(t);
-  e.type === j.uaV.THREAD_STARTER_MESSAGE && (l = y.Z.getChannel(null == l ? true : l.parent_id));
+  let l = O.Z.getChannel(t);
+  e.type === j.uaV.THREAD_STARTER_MESSAGE && (l = O.Z.getChannel(null == l ? true : l.parent_id));
   let i = b.default.getCurrentUser(),
     r = b.default.getUser(null == (n = e.author) ? true : n.id);
-  return !(null == l || null == i || null == r || l.isManaged() || r.hasFlag(j.xW$.SPAMMER) || C.Z.isBlockedOrIgnoredForMessage(e) || r.id === i.id || I.Z.getStatus() === j.Skl.DND || p.QZ.getSetting() || S.ZP.allowNoMessages(l)) && e.type !== j.uaV.CHAT_WALLPAPER_SET && e.type !== j.uaV.CHAT_WALLPAPER_REMOVED
+  return !(null == l || null == i || null == r || l.isManaged() || r.hasFlag(j.xW$.SPAMMER) || _.Z.isBlockedOrIgnoredForMessage(e) || r.id === i.id || I.Z.getStatus() === j.Skl.DND || p.QZ.getSetting() || S.ZP.allowNoMessages(l))
 }
 
 function M(e, t) {
@@ -114,7 +113,7 @@ function M(e, t) {
     ignoreNoMessagesSetting: true
   }) || S.ZP.isGuildOrCategoryOrChannelMuted(t.guild_id, t.id)) && (!!n || T.Z.getChannelId(m.Z.getGuildId()) !== t.id) && S.ZP.getNewForumThreadsCreated(t)
 }
-let L = (e, t, n) => "".concat(e, " (").concat((0, i.F6)(t, b.default, C.Z, true)).concat(null != n ? ", ".concat((0, i.F6)(n, b.default, C.Z)) : "", ")");
+let L = (e, t, n) => "".concat(e, " (").concat((0, i.F6)(t, b.default, _.Z, true)).concat(null != n ? ", ".concat((0, i.F6)(n, b.default, _.Z)) : "", ")");
 
 function G(e, t, n, l) {
   switch (e.type) {
@@ -139,11 +138,11 @@ function V(e, t, n) {
     case j.d4z.ANNOUNCEMENT_THREAD:
     case j.d4z.PUBLIC_THREAD:
     case j.d4z.PRIVATE_THREAD:
-      let d = y.Z.getChannel(e.parent_id);
-      t.type === j.uaV.THREAD_STARTER_MESSAGE && null != d ? s = L(s, d, y.Z.getChannel(d.parent_id)) : (0, f.Z)(t) ? null != O.Z.getGuild(e.getGuildId()) && (s = L(s, e, d)) : s = L(s, e, d);
+      let d = O.Z.getChannel(e.parent_id);
+      t.type === j.uaV.THREAD_STARTER_MESSAGE && null != d ? s = L(s, d, O.Z.getChannel(d.parent_id)) : (0, f.Z)(t) ? null != y.Z.getGuild(e.getGuildId()) && (s = L(s, e, d)) : s = L(s, e, d);
       break;
     case j.d4z.GROUP_DM:
-      e.isManaged() && n.bot && s === (0, i.F6)(e, b.default, C.Z) || (s = "".concat(s, " (").concat((0, i.F6)(e, b.default, C.Z, true), ")"))
+      e.isManaged() && n.bot && s === (0, i.F6)(e, b.default, _.Z) || (s = "".concat(s, " (").concat((0, i.F6)(e, b.default, _.Z, true), ")"))
   }
   let g = t.content;
   if ((0, f.Z)(t) && null == (g = P.Z.stringify(t, e))) throw new r.Z("NotificationTextUtils").warn("SystemMessageUtils.stringify(...) could not convert", {
@@ -167,7 +166,7 @@ function V(e, t, n) {
     stickerName: h[0].name
   });
   else if (t.type === j.uaV.PREMIUM_REFERRAL) l = D.intl.formatToPlainString(D.t.lieTqa, {
-    username: A.ZP.getName(n)
+    username: Z.ZP.getName(n)
   });
   else if (null != t.poll) l = D.intl.formatToPlainString(D.t.ImizdH, {
     question: t.poll.question.text

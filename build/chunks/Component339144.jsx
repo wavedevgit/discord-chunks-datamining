@@ -54,9 +54,9 @@ let I = Chunk647438.memo(function(e) {
     }),
     {
       parentAnalyticsLocation: B
-    } = (0, h.ZP)(),
-    F = P(k, L, M),
-    V = i.useCallback(() => {
+    } = (0, f.ZP)(),
+    V = P(k, L, M),
+    F = i.useCallback(() => {
       o()(null != L, "Received null activity"), (0, g.v)(B, g.d.INVITE), v.default.track(C.rMx.OPEN_MODAL, {
         type: "Send Join Invite",
         application_id: L.application_id,
@@ -121,7 +121,7 @@ let I = Chunk647438.memo(function(e) {
       canStartAuthorization: K,
       startAuthorization: Y,
       hasAlreadyLinked: q
-    } = (0, f.F)(k),
+    } = (0, h.F)(k),
     X = j.Z.useConfig({
       location: "ActivityActions"
     }).enabled,
@@ -140,9 +140,9 @@ let I = Chunk647438.memo(function(e) {
         icon: d
       })
     })) : null,
-    J = F && null == M ? (0, r.jsx)(x.Z, {
+    J = V && null == M ? (0, r.jsx)(x.Z, {
       tooltipText: E.intl.string(E.t["hC/Ze3"]),
-      onClick: V,
+      onClick: F,
       icon: s.ejJ
     }) : null,
     $ = null == M ? null : (0, r.jsx)(x.Z, {

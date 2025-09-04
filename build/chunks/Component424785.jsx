@@ -137,7 +137,7 @@ class K extends Chunk98597.ZP {
       connectDragPreview: u,
       canReorderChannel: d,
       canMoveMembers: p,
-      stageInstance: f,
+      stageInstance: h,
       isSubscriptionGated: g,
       needSubscriptionToAccess: m,
       unread: b,
@@ -181,9 +181,9 @@ class K extends Chunk98597.ZP {
             }(l, ["onClick", "onContextMenu"]);
             return (0, r.jsxs)(L.ZP, W(z({
               ref: this.channelItemRef,
-              className: F.iconVisibility,
+              className: V.iconVisibility,
               iconClassName: o()({
-                [V.iconLive]: null != f
+                [F.iconLive]: null != h
               }),
               channel: e,
               selected: !_ && t,
@@ -201,7 +201,7 @@ class K extends Chunk98597.ZP {
               connectDragPreview: u,
               subtitle: this.renderSubtitle(),
               isFavoriteSuggestion: _,
-              "aria-label": (0, h.ZP)({
+              "aria-label": (0, f.ZP)({
                 channel: e,
                 unread: b,
                 mentionCount: y,
@@ -282,7 +282,7 @@ class K extends Chunk98597.ZP {
             onBlur: u
           } = t;
           return (0, r.jsx)(s.P3F, {
-            className: o()(F.iconItem, n ? F.alwaysShown : null),
+            className: o()(V.iconItem, n ? V.alwaysShown : null),
             onClick: () => {
               c.Z.updateChatOpen(e.id, true), this.handleClickChat()
             },
@@ -294,7 +294,7 @@ class K extends Chunk98597.ZP {
             children: (0, r.jsx)(s.kBi, {
               size: "xs",
               color: "currentColor",
-              className: F.actionIcon
+              className: V.actionIcon
             })
           })
         }
@@ -307,7 +307,7 @@ class K extends Chunk98597.ZP {
     }), H(this, "renderSubtitle", () => {
       var e;
       let t = null == (e = this.props.stageInstance) ? true : e.topic;
-      return null == t ? null : (0, r.jsx)(f.Z, {
+      return null == t ? null : (0, r.jsx)(h.Z, {
         children: t
       })
     })
@@ -337,7 +337,7 @@ function q(e) {
       bypassLimit: Z.Z.can(U.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), p = (0, a.e7)([S.Z], () => S.Z.isCollapsed(n.parent_id)), h = (0, E.ZP)(n.id), f = (0, a.e7)([x.Z], () => x.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, v.Rk)(n.id, j.pV.AUDIENCE), {
+  }), p = (0, a.e7)([S.Z], () => S.Z.isCollapsed(n.parent_id)), f = (0, E.ZP)(n.id), h = (0, a.e7)([x.Z], () => x.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, v.Rk)(n.id, j.pV.AUDIENCE), {
     isSubscriptionGated: m,
     needSubscriptionToAccess: O
   } = (0, b.Z)(n.id), y = (0, a.e7)([T.ZP], () => T.ZP.isFavorite(t.id, n.id)), _ = (0, C.xJ)(n.id), I = (0, M.Z)({
@@ -351,9 +351,9 @@ function q(e) {
   }), A = e.connected && null == I;
   return (0, r.jsx)(Y, W(z({
     categoryCollapsed: p,
-    connectAction: h,
+    connectAction: f,
     numAudience: g,
-    stageInstance: f,
+    stageInstance: h,
     isSubscriptionGated: m,
     needSubscriptionToAccess: O
   }, c, d, e), {

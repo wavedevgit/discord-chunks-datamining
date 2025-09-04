@@ -23,7 +23,7 @@ function O(e) {
   let {
     guild: t,
     selected: n
-  } = e, O = (0, l.e7)([f.Z], () => f.Z.can(m.Plq.KICK_MEMBERS, t)), y = (0, l.e7)([u.Z], () => u.Z.getSubmittedGuildJoinRequestTotal(t.id)), _ = O && null != y ? y : 0;
+  } = e, O = (0, l.e7)([h.Z], () => h.Z.can(m.Plq.KICK_MEMBERS, t)), y = (0, l.e7)([u.Z], () => u.Z.getSubmittedGuildJoinRequestTotal(t.id)), _ = O && null != y ? y : 0;
   i.useEffect(() => {
     O && t.features.has(m.oNc.MEMBER_VERIFICATION_GATE_ENABLED) && t.features.has(m.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.Z.fetchGuildJoinRequests({
       guildId: t.id,
@@ -37,7 +37,7 @@ function O(e) {
     j = (0, s.XL)(t.id, o.z.MEMBERS_LAUNCH_UPSELL);
   return (0, r.jsx)("div", {
     ref: j,
-    children: (0, r.jsx)(h.m, {
+    children: (0, r.jsx)(f.m, {
       id: "members-".concat(t.id),
       renderIcon: e => (0, r.jsx)(a.BFJ, {
         size: "md",

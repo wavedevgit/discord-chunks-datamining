@@ -2,7 +2,7 @@
 /** chunk id: 849027, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => y
+  Z: () => v
 });
 var Chunk430198 = require("./430198.js"),
   Chunk897345 = require("./897345.js"),
@@ -12,48 +12,53 @@ var Chunk430198 = require("./430198.js"),
   Chunk931261 = require("./931261.js"),
   Chunk994592 = require("./994592.js"),
   Chunk653521 = require("./653521.js"),
+  Chunk634952 = require("./634952.js"),
   Chunk953252 = require("./953252.js"),
   Chunk911560 = require("./911560.js"),
   Chunk592125 = require("./592125.js"),
   Chunk485386 = require("./485386.js"),
   Chunk430824 = require("./430824.js"),
+  Chunk594174 = require("./594174.js"),
   Chunk823379 = require("./823379.js"),
   Chunk754688 = require("./754688.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js");
-async function y(e) {
+async function v(e) {
   let {
     guildId: t,
     channelId: n
-  } = e, y = h.Z.getGuild(t), O = p.Z.getUnsafeMutableRoles(t);
-  if (null == y && t !== E.ME) returnfalse;
+  } = e, v = m.Z.getGuild(t), I = h.Z.getUnsafeMutableRoles(t);
+  if (null == v && t !== y.ME) returnfalse;
   if (null == n) returntrue;
-  if ((0, b.AB)(n)) switch (n) {
-    case b.oC.ROLE_SUBSCRIPTIONS:
-      return (0, c.on)(t, O);
-    case b.oC.SERVER_MONETIZATION_ONBOARDING:
-      return null != y && (0, u.U)(y);
-    case b.oC.GUILD_SHOP:
-      return (0, i.r)(y, O);
-    case b.oC.MEMBER_APPLICATIONS:
+  if ((0, O.AB)(n)) switch (n) {
+    case O.oC.ROLE_SUBSCRIPTIONS:
+      return (0, c.on)(t, I);
+    case O.oC.SERVER_MONETIZATION_ONBOARDING:
+      return null != v && (0, u.U)(v);
+    case O.oC.GUILD_SHOP:
+      return (0, i.r)(v, I);
+    case O.oC.MEMBER_APPLICATIONS:
       return (0, a.v)(t);
-    case b.oC.GUILD_HOME:
+    case O.oC.GUILD_HOME:
       return (0, l.s)(t);
-    case b.oC.CHANNEL_BROWSER:
-      return null != y && y.features.has(E.oNc.COMMUNITY);
-    case b.oC.GUILD_ONBOARDING:
+    case O.oC.CHANNEL_BROWSER:
+      return null != v && v.features.has(y.oNc.COMMUNITY);
+    case O.oC.GUILD_ONBOARDING:
       return s.ZP.shouldShowOnboarding(t);
-    case b.oC.CUSTOMIZE_COMMUNITY:
-      return null != y && y.features.has(E.oNc.COMMUNITY);
-    case b.oC.MEMBER_SAFETY:
+    case O.oC.CUSTOMIZE_COMMUNITY:
+      return null != v && v.features.has(y.oNc.COMMUNITY);
+    case O.oC.MEMBER_SAFETY:
       return (0, o.lv)(t);
-    case b.oC.GUILD_BOOSTS:
+    case O.oC.GUILD_BOOSTS:
       returntrue;
-    case b.oC.REPORT_TO_MOD:
-      return null != y && (0, d.Z)(y);
+    case O.oC.REPORT_TO_MOD:
+      return null != v && (0, f.Z)(v);
+    case O.oC.PORTKEY:
+      var T, S;
+      return (0, d.ZO)(t, "isAccessibleChannelOrThreadPath") && (null != v && v.features.has(y.oNc.GAME_SERVER_HOSTING) || null != (S = null == (T = g.default.getCurrentUser()) ? true : T.isStaff()) && S);
     default:
-      (0, m.vE)(n)
+      (0, E.vE)(n)
   }
-  let v = _.Z.getChannel(n);
-  return (null != v || (await f.Z.loadThread(n), null != (v = _.Z.getChannel(n)))) && ((0, g.YO)(v) || r.Z.isChannelGatedAndVisible(t, n))
+  let A = p.Z.getChannel(n);
+  return (null != A || (await _.Z.loadThread(n), null != (A = p.Z.getChannel(n)))) && ((0, b.YO)(A) || r.Z.isChannelGatedAndVisible(t, n))
 }

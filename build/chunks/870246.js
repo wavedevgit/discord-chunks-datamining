@@ -1,17 +1,17 @@
-/** Chunk was on 99014 **/
+/** Chunk was on 99982 **/
 /** chunk id: 870246, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $: () => c,
-  w: () => s
+  $: () => i,
+  w: () => l
 });
 var r, Chunk647438 = require("./647438.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
-  s = ((r = {}).DETAIL = "Boost Perk Shop Details", r.DEACTIVATE = "Boost Perk Shop Disable", r);
+  l = ((r = {}).DETAIL = "Boost Perk Shop Details", r.DEACTIVATE = "Boost Perk Shop Disable", r);
 
-function c(e, t, n) {
+function i(e, t, n) {
   o.useEffect(() => {
-    i.default.track(a.rMx.OPEN_MODAL, {
+    a.default.track(s.rMx.OPEN_MODAL, {
       type: n,
       sku_id: t.skuId,
       guild_id: e

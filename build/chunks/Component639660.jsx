@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk547885 = require("./547885.js");
 
-function x() {
+function _() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk547885.staffContainer,
     children: (0, Chunk951288.jsx)(Chunk793030.xv, {
@@ -32,36 +32,36 @@ function x() {
 function b(e) {
   let {
     guildId: t
-  } = e, n = (0, o.e7)([s.Z], () => {
+  } = e, n = (0, i.e7)([s.Z], () => {
     var e;
-    return (null == (e = s.Z.getGuild(t)) ? true : e.features.has(m.oNc.PREMIUM_TIER_3_OVERRIDE)) === true
-  }), b = (0, u.Z)(t), h = b.length > 0, {
+    return (null == (e = s.Z.getGuild(t)) ? true : e.features.has(f.oNc.PREMIUM_TIER_3_OVERRIDE)) === true
+  }), b = (0, c.Z)(t), h = b.length > 0, {
     shouldShow: C,
     notificationConfig: j
-  } = (0, f._)(t, "GuildPowerupNotificationContainer"), I = [];
-  C && I.push(l.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION);
-  let [E, w] = (0, a.ZT)(I, t), Z = null != E && null != j, N = [];
-  Z || h || N.push(l.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK);
-  let [P, y] = (0, a.US)(N), T = (e => {
+  } = (0, m._)(t, "GuildPowerupNotificationContainer"), P = [];
+  C && P.push(l.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION);
+  let [E, I] = (0, a.ZT)(P, t), T = null != E && null != j, y = [];
+  T || h || y.push(l.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK);
+  let [w, Z] = (0, a.US)(y), S = (e => {
     let n = [];
     return h && n.push((0, r.jsx)(p.Z, {
       guildId: t,
       powerups: b
-    }, "expiring-powerups")), Z && n.push((0, r.jsx)(d.Z, {
+    }, "expiring-powerups")), T && n.push((0, r.jsx)(d.Z, {
       notificationConfig: j,
       markAsDismissed: e => {
-        w(e)
+        I(e)
       }
-    }, "rollback-notification")), null != e && e === l.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK && n.push((0, r.jsx)(c.Z, {
-      markAsDismissed: y
+    }, "rollback-notification")), null != e && e === l.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK && n.push((0, r.jsx)(u.Z, {
+      markAsDismissed: Z
     }, "info-card")), n
-  })(P);
-  return 0 !== T.length || n ? (0, r.jsxs)("div", {
-    className: v.container,
-    children: [(0, r.jsx)(i.xv, {
+  })(w);
+  return 0 !== S.length || n ? (0, r.jsxs)("div", {
+    className: x.container,
+    children: [(0, r.jsx)(o.xv, {
       variant: "eyebrow",
       color: "text-secondary",
-      children: g.intl.string(_.default["3FRira"])
-    }), n && (0, r.jsx)(x, {}), T.map(e => e)]
+      children: v.intl.string(g.default["3FRira"])
+    }), n && (0, r.jsx)(_, {}), S.map(e => e)]
   }) : null
 }

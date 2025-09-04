@@ -72,7 +72,7 @@ function ed(e) {
     onResize: n,
     onResizeEnd: r
   } = e, l = (0, d.Z)({
-    minDimension: g.h,
+    minDimension: j.h,
     resizableDomNodeRef: t,
     onElementResize: n,
     onElementResizeEnd: r,
@@ -108,7 +108,7 @@ function eu(e) {
       id: "dispatcher",
       name: "Dispatcher",
       group: el.v0.EVENTS,
-      render: () => (0, a.jsx)(T.Z, {})
+      render: () => (0, a.jsx)(O.Z, {})
     }];
     return v.Z.isDeveloper && (e.push({
       id: "shop",
@@ -119,7 +119,7 @@ function eu(e) {
       id: "quick_actions",
       name: "Quick Actions",
       group: el.v0.DEVELOPMENT,
-      render: () => (0, a.jsx)(Y.Z, {})
+      render: () => (0, a.jsx)(X.Z, {})
     }), e.push({
       id: "end_to_end_encryption",
       name: "E2EE",
@@ -169,17 +169,17 @@ function eu(e) {
       id: "design_toggles",
       name: "Design Toggles",
       group: el.v0.UI,
-      render: () => (0, a.jsx)(O.Z, {})
+      render: () => (0, a.jsx)(T.Z, {})
     }), e.push({
       id: "appearance_randomizer",
       name: "Appearance Randomizer",
       group: el.v0.UI,
-      render: () => (0, a.jsx)(X.Z, {})
+      render: () => (0, a.jsx)(Y.Z, {})
     }), e.push({
       id: "overlays",
       name: "Dev Overlays",
       group: el.v0.DEVELOPMENT,
-      render: () => (0, a.jsx)(w.Z, {
+      render: () => (0, a.jsx)(k.Z, {
         devSettingsCategory: _.zU.OVERLAYS
       })
     }), e.push({
@@ -191,7 +191,7 @@ function eu(e) {
       id: "reporting",
       name: "Reporting",
       group: el.v0.EXPERIMENTS,
-      render: () => (0, a.jsx)(w.Z, {
+      render: () => (0, a.jsx)(k.Z, {
         devSettingsCategory: _.zU.REPORTING
       })
     }), e.push({
@@ -268,7 +268,7 @@ function eu(e) {
       id: "gifting_intent",
       name: "Gifting Intent",
       group: el.v0.PREMIUM,
-      render: () => (0, a.jsx)(k.Z, {})
+      render: () => (0, a.jsx)(R.Z, {})
     }), e.push({
       id: "voice_filters",
       name: "Voice Filters",
@@ -283,7 +283,7 @@ function eu(e) {
       id: "skill_trees",
       name: "Skill Trees",
       group: el.v0.GUILDS,
-      render: () => (0, a.jsx)(R.Z, {})
+      render: () => (0, a.jsx)(w.Z, {})
     }), e.push({
       id: "language",
       name: "Language",
@@ -296,9 +296,9 @@ function eu(e) {
     selectedTabId: d
   } = (0, el.ZP)({
     tabs: l,
-    initialSelectedTabId: null != (t = g.Z.lastOpenTabId) ? t : true,
+    initialSelectedTabId: null != (t = j.Z.lastOpenTabId) ? t : true,
     onChangeTab: e => {
-      (0, j.Qh)({
+      (0, g.Qh)({
         lastOpenTabId: e
       })
     }
@@ -333,7 +333,7 @@ function eu(e) {
         }), (0, a.jsx)(x.ZP.Icon, {
           icon: c.Dio,
           tooltip: es.intl.string(es.t.cpT0Cg),
-          onClick: j.SO
+          onClick: g.SO
         })]
       }),
       children: [(0, a.jsx)(x.ZP.Icon, {
@@ -352,7 +352,7 @@ function em() {
   let e = Chunk647438.useRef(null),
     t = (0, Chunk442837.e7)([Chunk19759.Z], () => Chunk19759.Z.sidebarWidth),
     [n, l] = Chunk647438.useState(null),
-    i = Chunk647438.useCallback(e => (0, j.Qh)({
+    i = Chunk647438.useCallback(e => (0, g.Qh)({
       sidebarWidth: e
     }), []);
   return (Chunk647438.useEffect(() => {

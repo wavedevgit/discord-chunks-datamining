@@ -48,7 +48,7 @@ let b = [{
       return t.getName()
     }
   }],
-  j = [{
+  g = [{
     id: "local",
     name: "Local Variables",
     group: Chunk621060.v0.NONE,
@@ -81,7 +81,7 @@ let b = [{
     }
   }];
 
-function g(e) {
+function j(e) {
   let {
     store: t,
     initialHeight: n
@@ -89,7 +89,7 @@ function g(e) {
     TabBar: r,
     renderSelectedTab: l
   } = (0, x.ZP)({
-    tabs: j
+    tabs: g
   }, []);
   return (0, a.jsxs)(u.Z, {
     className: p.subPanel,
@@ -143,7 +143,7 @@ function _() {
       data: Chunk665149,
       selectedRowKey: Chunk428530,
       onClickRow: e => u(e.key)
-    }), null != Chunk621060 && (0, Chunk951288.jsx)(g, {
+    }), null != Chunk621060 && (0, Chunk951288.jsx)(j, {
       store: Chunk621060,
       initialHeight: null != module.current ? module.current.clientHeight / 2 : 300
     })]

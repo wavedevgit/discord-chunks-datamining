@@ -110,11 +110,11 @@ function D(e) {
     loadMore: l,
     renderLoadingState: a,
     renderMessageGroup: d,
-    scrollerClassName: f,
+    scrollerClassName: h,
     className: g,
     listName: I,
     ignoreGrouping: N = false
-  } = e, D = (0, _.fJ)(), M = i.useRef(null), L = (0, h.Z)(I, M), {
+  } = e, D = (0, _.fJ)(), M = i.useRef(null), L = (0, f.Z)(I, M), {
     entrypoint: k,
     notificationCenterVariant: U
   } = (0, y.pN)({
@@ -122,12 +122,12 @@ function D(e) {
   }), {
     isLoading: G,
     isLoadingComplete: B,
-    hasLoadedEver: F
+    hasLoadedEver: V
   } = (0, u.cj)([j.Z], () => ({
     isLoading: j.Z.isLoading,
     isLoadingComplete: j.Z.isLoadingComplete,
     hasLoadedEver: j.Z.hasLoadedEver
-  })), V = !F && G, {
+  })), F = !V && G, {
     messageCategoryOpenStates: H,
     toggleOpenState: z
   } = (0, v.Z)(), W = function() {
@@ -201,7 +201,7 @@ function D(e) {
       })), e
     }, [t, n]),
     q = 0 === t.length && 0 === n.length && B,
-    X = 0 === t.length && 0 === n.length && !F && G,
+    X = 0 === t.length && 0 === n.length && !V && G,
     Q = i.useMemo(() => {
       let e = [];
       return X ? e.push(a()) : q ? e.push((0, r.jsx)(R, {}, "empty-state")) : N ? (e.push(...n.map(e => d([e], true))), e.push(...t.map(e => d([e], false)))) : s().each(A, t => {
@@ -238,7 +238,7 @@ function D(e) {
     }, [o, l, t])
   }({
     messagesByCategory: Y,
-    loadingInitial: V
+    loadingInitial: F
   });
   let en = i.useCallback(() => {
     var e;
@@ -312,7 +312,7 @@ function D(e) {
               var t;
               M.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
             },
-            className: o()(Z.messagesPopout, f),
+            className: o()(Z.messagesPopout, h),
             onScroll: K,
             fade: true
           }, l), n = n = {

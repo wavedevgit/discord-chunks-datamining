@@ -51,7 +51,7 @@ function R(e) {
   let {
     selected: o,
     user: p,
-    badge: h,
+    badge: f,
     link: m,
     showProgressBadge: b
   } = e, [O, y] = i.useState(false), [_, v] = i.useState(false), [j, x] = i.useState(null), [N, R] = i.useState(0), D = (0, l.Ie)("home"), M = (0, d.oq)().activePanel === d.wh.APP_ICON, L = () => {
@@ -68,10 +68,10 @@ function R(e) {
   let G = o || O || M,
     B = (0, r.jsx)(s.aRk, {
       selected: true,
-      lowerBadge: h > 0 ? (0, P.Ne)(h) : null,
+      lowerBadge: f > 0 ? (0, P.Ne)(f) : null,
       upperBadge: U,
       lowerBadgeSize: {
-        width: (0, s.OVM)(h)
+        width: (0, s.OVM)(f)
       },
       children: (0, r.jsx)(s.LYs, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -97,7 +97,7 @@ function R(e) {
           if (!__OVERLAY__ && (null != j && clearTimeout(j), x(setTimeout(L, 500)), R(N + 1), 15 === N)) {
             L();
             let e = !a.K.get(I.wli);
-            a.K.set(I.wli, e), e && a.K.set(Z.O, true), e ? (0, f.GN)("discodo") : (0, f.GN)("user_leave"), v(true), setTimeout(() => {
+            a.K.set(I.wli, e), e && a.K.set(Z.O, true), e ? (0, h.GN)("discodo") : (0, h.GN)("user_leave"), v(true), setTimeout(() => {
               v(false)
             }, 1e3)
           }
@@ -175,7 +175,7 @@ function D() {
     s = Chunk91192 + Chunk433517,
     u = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
     d = (0, Chunk899740.q)(),
-    f = require + Chunk481060 + Chunk550385,
+    h = require + Chunk481060 + Chunk550385,
     g = Chunk460181 === Chunk481060 && Chunk481060 > 0 && require + Chunk550385 === 0,
     C = Chunk774343.Z.getHomeLink();
   return Chunk155409 && (C = Chunk981631.Z5c.APPLICATION_STORE), (0, Chunk951288.jsx)(R, {

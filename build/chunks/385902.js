@@ -25,8 +25,8 @@ function b(e, t) {
     o = (0, d.ZP)(e, r),
     a = (0, c.q8)(e, t),
     u = null == r ? true : r.storeRemovalDate,
-    h = a && null != u && o.type !== f.A3.INACTIVE,
-    b = h ? {
+    f = a && null != u && o.type !== h.A3.INACTIVE,
+    b = f ? {
       title: m.intl.formatToPlainString(g.default.mgoPkZ, {
         perkName: null == r ? true : r.title
       }),
@@ -35,13 +35,13 @@ function b(e, t) {
       })
     } : null;
   return {
-    shouldShow: h,
+    shouldShow: f,
     notificationConfig: b
   }
 }
 
 function O(e, t) {
-  var n, d, f, b;
+  var n, d, h, b;
   let O = (0, l.e7)([o.Z], () => o.Z.getGuild(e)),
     y = (0, l.e7)([a.Z], () => a.Z.hasLayers()),
     _ = null != (b = (0, u.Z)(e)) && b,
@@ -50,10 +50,10 @@ function O(e, t) {
     x = (null == j || null == (n = j.unlockedPowerups) ? true : n[i.A$]) != null,
     C = null == j || null == (d = j.allPowerups) ? true : d[i.A$],
     E = null == C ? true : C.storeRemovalDate,
-    S = null == j || null == (f = j.allPowerups) ? true : f[i.XW],
+    S = null == j || null == (h = j.allPowerups) ? true : h[i.XW],
     {
       onActivate: P
-    } = (0, h._C)(e, S),
+    } = (0, f._C)(e, S),
     I = !y && _ && v && x && null != C && null != E && null != S && null != O,
     N = r.useCallback(e => {
       P(e)

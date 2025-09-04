@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 /** chunk id: 604776, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  D: () => j,
+  D: () => g,
   Z: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -26,7 +26,7 @@ let b = {
     [Chunk981631.kNB.REVERSE_TRIAL]: "Reverse Trial",
     [Chunk981631.kNB.FRACTIONAL_PREMIUM_GIVEBACK]: "Giveback"
   },
-  j = e => {
+  g = e => {
     var t;
     let {
       entitlement: n,
@@ -40,7 +40,7 @@ let b = {
         children: ["ID: ", n.id, " "]
       }), !r && (0, a.jsxs)(c.Text, {
         variant: "text-md/normal",
-        children: ["SKU: ", null == (t = g.find(e => e.value === n.skuId)) ? true : t.label]
+        children: ["SKU: ", null == (t = j.find(e => e.value === n.skuId)) ? true : t.label]
       }), null != n.startsAt && null != n.endsAt && (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsxs)(c.Text, {
           variant: "text-md/normal",
@@ -65,7 +65,7 @@ let b = {
       })]
     })
   },
-  g = [{
+  j = [{
     label: "1 hour",
     value: Chunk314794.a.PREMIUM_TIER_2_1_HOUR
   }, {
@@ -81,15 +81,15 @@ function _() {
     refreshEntitlementList: C,
     grantFractionalPremium: N,
     deleteFractionalPremium: E,
-    triggerNextEntitlementFulfillment: O,
-    entitlements: T,
+    triggerNextEntitlementFulfillment: T,
+    entitlements: O,
     loading: S
   } = (0, Chunk232867.m)();
   return Chunk647438.useEffect(() => {
     C()
   }, [C]), Chunk647438.useEffect(() => {
-    b(T.filter(e => null != e.endsAt && e.endsAt > new Date && e.type === h.qc2.FRACTIONAL_REDEMPTION)), y(T.filter(e => Object.values(s.a).includes(e.skuId) && null == e.startsAt))
-  }, [T]), (0, Chunk951288.jsx)(Chunk481060.zJl, {
+    b(O.filter(e => null != e.endsAt && e.endsAt > new Date && e.type === h.qc2.FRACTIONAL_REDEMPTION)), y(O.filter(e => Object.values(s.a).includes(e.skuId) && null == e.startsAt))
+  }, [O]), (0, Chunk951288.jsx)(Chunk481060.zJl, {
     className: Chunk451429.panel,
     children: (0, Chunk951288.jsxs)("div", {
       className: Chunk711322.panelInner,
@@ -143,7 +143,7 @@ function _() {
         }), (0, Chunk951288.jsx)(Chunk481060.PhF, {
           serialize: e => e,
           isSelected: e => e === n,
-          options: g,
+          options: j,
           select: Chunk120356,
           popoutLayerContext: Chunk246992.O$
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
@@ -171,7 +171,7 @@ function _() {
               size: Chunk755721.zx.Sizes.TINY,
               color: Chunk755721.zx.Colors.PRIMARY,
               look: Chunk755721.zx.Looks.OUTLINED,
-              onClick: () => O(),
+              onClick: () => T(),
               children: "Run fulfillment"
             }), (0, Chunk951288.jsx)(Chunk755721.zx, {
               disabled: S,
@@ -202,7 +202,7 @@ function _() {
             variant: "text-md/bold",
             children: "Active premium"
           }), (0, Chunk951288.jsx)("div", {
-            children: Chunk55935.map(e => (0, a.jsx)(j, {
+            children: Chunk55935.map(e => (0, a.jsx)(g, {
               entitlement: e,
               active: true,
               onDelete: () => E(e.id)
@@ -216,7 +216,7 @@ function _() {
             variant: "text-md/bold",
             children: "Unconsumed Fractional Premium"
           }), (0, Chunk951288.jsx)("div", {
-            children: _.map(e => (0, a.jsx)(j, {
+            children: _.map(e => (0, a.jsx)(g, {
               entitlement: e
             }, e.id))
           })]

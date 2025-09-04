@@ -26,10 +26,10 @@ function m(e) {
     onClick: n
   } = e;
   return (0, r.jsxs)(l.P3F, {
-    className: f.chevronButton,
+    className: h.chevronButton,
     onClick: n,
     children: [(0, r.jsx)("div", {
-      className: f.chevronButtonContent,
+      className: h.chevronButtonContent,
       children: t
     }), (0, r.jsx)(l.Fbu, {
       color: l.TVs.colors.TEXT_SECONDARY,
@@ -41,16 +41,16 @@ function m(e) {
 function b(e) {
   let {
     onClosePopout: t
-  } = e, n = a.G6.useSetting(), o = (0, i.e7)([s.ZP], () => s.ZP.getFlattenedGuildIds()), d = (0, c._o)(), f = o.filter(e => !d.has(e));
+  } = e, n = a.G6.useSetting(), o = (0, i.e7)([s.ZP], () => s.ZP.getFlattenedGuildIds()), d = (0, c._o)(), h = o.filter(e => !d.has(e));
   return 0 === o.length ? null : (0, r.jsxs)(m, {
     onClick: () => {
       t(), g()
     },
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/semibold",
-      children: h.intl.string(n ? p.default["3GrhnJ"] : p.default["54ycKC"])
+      children: f.intl.string(n ? p.default["3GrhnJ"] : p.default["54ycKC"])
     }), (0, r.jsx)(u.c, {
-      guildIds: f
+      guildIds: h
     })]
   })
 }
@@ -60,14 +60,14 @@ function O(e) {
     onClosePopout: t
   } = e;
   return (0, r.jsx)(l.P3F, {
-    className: f.customizeLink,
+    className: h.customizeLink,
     onClick: () => {
       t(), g()
     },
     children: (0, r.jsx)(l.Text, {
       variant: "text-xs/medium",
       color: "text-link",
-      children: h.intl.string(h.t["ZrN+DQ"])
+      children: f.intl.string(f.t["ZrN+DQ"])
     })
   })
 }

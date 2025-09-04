@@ -34,6 +34,5 @@ module.exports = {
   linkedLobbyEducationTooltip: "linkedLobbyEducationTooltip_f75fb0",
   linkedLobbyEducationTooltipCloseClickContainer: "linkedLobbyEducationTooltipCloseClickContainer_f75fb0",
   linkedLobbyEducationTooltipCloseIcon: "linkedLobbyEducationTooltipCloseIcon_f75fb0",
-  entryPointButtonContainer: "entryPointButtonContainer_f75fb0",
-  hasWallpaper: "hasWallpaper_f75fb0"
+  entryPointButtonContainer: "entryPointButtonContainer_f75fb0"
 }

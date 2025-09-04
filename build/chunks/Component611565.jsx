@@ -88,14 +88,14 @@ function b() {
     hasLoadedEver: r,
     hasPreloaded: l,
     hasMoreToLoad: b,
-    isLoadingComplete: j
+    isLoadingComplete: g
   } = (0, Chunk399606.cj)([Chunk787879.Z], () => ({
     isLoading: Chunk787879.Z.isLoading,
     hasLoadedEver: Chunk787879.Z.hasLoadedEver,
     hasPreloaded: Chunk787879.Z.hasPreloaded,
     hasMoreToLoad: Chunk787879.Z.hasMoreToLoad,
     isLoadingComplete: Chunk787879.Z.isLoadingComplete
-  })), g = (0, Chunk399606.e7)([Chunk787879.Z], () => Chunk787879.Z.currentRequestAnalyticsPayload), _ = (0, Chunk399606.cj)([Chunk787879.Z], () => Chunk787879.Z.getChannelInfoMap()), y = (0, Chunk399606.cj)([Chunk592125.Z], () => {
+  })), j = (0, Chunk399606.e7)([Chunk787879.Z], () => Chunk787879.Z.currentRequestAnalyticsPayload), _ = (0, Chunk399606.cj)([Chunk787879.Z], () => Chunk787879.Z.getChannelInfoMap()), y = (0, Chunk399606.cj)([Chunk592125.Z], () => {
     let e = {};
     return Object.entries(_).forEach(t => {
       let [n] = t, a = u.Z.getChannel(n);
@@ -174,9 +174,9 @@ function b() {
         }), (0, Chunk951288.jsxs)("div", {
           children: ["Has More To Load: ", b ? "✅" : "❌"]
         }), (0, Chunk951288.jsxs)("div", {
-          children: ["Is Loading Complete: ", j ? "✅" : "❌"]
+          children: ["Is Loading Complete: ", g ? "✅" : "❌"]
         }), (0, Chunk951288.jsxs)("div", {
-          children: ["Last Loading Trigger: ", null == g ? true : g.loadingTrigger]
+          children: ["Last Loading Trigger: ", null == j ? true : j.loadingTrigger]
         })]
       }), (0, Chunk951288.jsxs)("div", {
         children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {

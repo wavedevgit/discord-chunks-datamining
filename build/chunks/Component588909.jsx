@@ -112,7 +112,7 @@ function w(e, t) {
         u("go-live-modal"), a.Z.updateNotificationStatus(t), a.Z.setInputLocked(false, (0, f.getPID)()), (0, o.ZD)(async () => {
           let {
             default: e
-          } = await Promise.all([n.e("38697"), n.e("46746"), n.e("79839")]).then(n.bind(n, 60594));
+          } = await Promise.all([n.e("38697"), n.e("46746"), n.e("39173")]).then(n.bind(n, 60594));
           return t => (0, i.jsx)(e, C(j({}, t), {
             selectSource: false,
             sourcePID: (0, f.getPID)(),

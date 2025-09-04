@@ -1,4 +1,4 @@
-/** Chunk was on 93704 **/
+/** Chunk was on 99982 **/
 /** chunk id: 326055, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => j
@@ -45,13 +45,13 @@ function j(e) {
   let [y, O] = o.useState(true), w = o.useMemo(() => {
     switch (v.skuId) {
       case a.IN:
-        return (0, r.jsx)(m.E, {
+        return (0, r.jsx)(_.E, {
           guildId: j
         });
       case a.If:
-        return (0, r.jsx)(m.Z, {});
+        return (0, r.jsx)(_.Z, {});
       case a.A$:
-        return (0, r.jsx)(g.Z, {});
+        return (0, r.jsx)(b.Z, {});
       default:
         return
     }
@@ -91,7 +91,7 @@ function j(e) {
         className: h.sidebar,
         children: [(0, r.jsx)(l.$, {
           className: h.powerupImage,
-          children: (0, r.jsx)(_.m, {
+          children: (0, r.jsx)(m.m, {
             powerup: v
           })
         }), (0, r.jsxs)("div", {
@@ -109,7 +109,7 @@ function j(e) {
             children: C.intl.formatToPlainString(x.default.NAFGkJ, {
               level: N.title
             })
-          }), (0, r.jsx)(b.q, {
+          }), (0, r.jsx)(g.q, {
             powerup: v
           }), null != y && (0, r.jsx)(i.Text, {
             className: h.error,

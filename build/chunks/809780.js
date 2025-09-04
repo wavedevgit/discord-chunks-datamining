@@ -1,10 +1,10 @@
 /** Chunk was on 11160 **/
 /** chunk id: 809780, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  As: () => F,
+  As: () => V,
   ZP: () => Q,
   hC: () => H,
-  jd: () => V
+  jd: () => F
 }), require("./539854.js"), require("./388685.js");
 var r, i, Chunk647438 = require("./647438.js"),
   Chunk836560 = require("./836560.js"),
@@ -75,8 +75,8 @@ function B(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var F = ((r = {})[r.Favorite = 0] = "Favorite", r[r.PrivateChannel = 1] = "PrivateChannel", r[r.HighImportanceMentioned = 2] = "HighImportanceMentioned", r[r.LowImportanceMentioned = 3] = "LowImportanceMentioned", r[r.AllMessagesNotifications = 4] = "AllMessagesNotifications", r[r.GuildChannel = 5] = "GuildChannel", r[r.OldChannel = 6] = "OldChannel", r[r.NoNotifications = 7] = "NoNotifications", r[r.ReallyOldChannel = 8] = "ReallyOldChannel", r),
-  V = ((i = {}).Loading = "loading", i.Loaded = "loaded", i.Done = "done", i);
+var V = ((r = {})[r.Favorite = 0] = "Favorite", r[r.PrivateChannel = 1] = "PrivateChannel", r[r.HighImportanceMentioned = 2] = "HighImportanceMentioned", r[r.LowImportanceMentioned = 3] = "LowImportanceMentioned", r[r.AllMessagesNotifications = 4] = "AllMessagesNotifications", r[r.GuildChannel = 5] = "GuildChannel", r[r.OldChannel = 6] = "OldChannel", r[r.NoNotifications = 7] = "NoNotifications", r[r.ReallyOldChannel = 8] = "ReallyOldChannel", r),
+  F = ((i = {}).Loading = "loading", i.Loaded = "loaded", i.Done = "done", i);
 let H = 25;
 class z extends Chunk836560.EventEmitter {
   loadMore() {
@@ -183,7 +183,7 @@ class z extends Chunk836560.EventEmitter {
         channelId: t,
         newestUnreadMessageId: n
       } = e;
-      d.Z.wait(() => h.In(t, {
+      d.Z.wait(() => f.In(t, {
         section: L.jXE.INBOX,
         object: L.qAy.ACK_INBOX_NEWEST_UNREAD_MESSAGE,
         objectType: L.Qqv.ACK_AUTOMATIC
@@ -194,12 +194,12 @@ class z extends Chunk836560.EventEmitter {
         channels: this.updateChannel(t, e => B(G({}, e), {
           deleted: true
         }))
-      }), f.Z.useReducedMotion && this.deleteChannel(t), this.maybeLoadMore()
+      }), h.Z.useReducedMotion && this.deleteChannel(t), this.maybeLoadMore()
     }, this.undoMarkChannelRead = () => {
       if (0 === this.undoStack.length) return;
       let e = this.undoStack.pop();
       if (null == e) return;
-      h.In(e.channelId, {
+      f.In(e.channelId, {
         section: L.jXE.INBOX,
         object: L.qAy.UNDO_MARK_AS_READ,
         objectType: L.Qqv.ACK_MANUAL
@@ -220,7 +220,7 @@ class z extends Chunk836560.EventEmitter {
         channels: this.state.channels.filter(t => t.channelId !== e)
       }), this.maybeLoadMore()
     }, this.markAllRead = () => {
-      h.y5(this.state.channels.map(e => ({
+      f.y5(this.state.channels.map(e => ({
         channelId: e.channelId,
         messageId: e.newestUnreadMessageId
       }))), this.setState({

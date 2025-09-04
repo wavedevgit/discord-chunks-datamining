@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk653301 = require("./653301.js"),
   Chunk451429 = require("./451429.js");
 
-function j(e) {
+function g(e) {
   let {
     recording: t
   } = e;
@@ -47,7 +47,7 @@ function j(e) {
   })
 }
 
-function g(e) {
+function j(e) {
   let {
     recording: t,
     playing: n,
@@ -55,7 +55,7 @@ function g(e) {
     onStop: l
   } = e;
   return (0, a.jsx)(c.zF9, {
-    collapsibleContent: (0, a.jsx)(j, {
+    collapsibleContent: (0, a.jsx)(g, {
       recording: t
     }),
     children: e => {
@@ -101,14 +101,14 @@ function g(e) {
 function _() {
   let {
     name: e
-  } = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT), [t, n] = Chunk647438.useState(false), [l, i] = Chunk647438.useState([]), j = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getKrispSuppressionLevel()), [_, y] = Chunk647438.useState(null), C = Chunk647438.useRef(null), N = Chunk647438.useRef(null), [E, O] = Chunk647438.useState(.5), {
-    krispModels: T,
+  } = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT), [t, n] = Chunk647438.useState(false), [l, i] = Chunk647438.useState([]), g = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getKrispSuppressionLevel()), [_, y] = Chunk647438.useState(null), C = Chunk647438.useRef(null), N = Chunk647438.useRef(null), [E, T] = Chunk647438.useState(.5), {
+    krispModels: O,
     krispModelOverride: S,
     inputMode: P,
     echoCancellation: I,
-    autoThreshold: w,
-    vadUseKrisp: k,
-    vadKrispActivationThreshold: R,
+    autoThreshold: k,
+    vadUseKrisp: R,
+    vadKrispActivationThreshold: w,
     noiseCancellation: Z,
     noiseSuppression: A,
     noiseSuppressionSupported: D,
@@ -184,7 +184,7 @@ function _() {
           title: "Krisp Suppression Level",
           tag: Chunk481060.RB0.H3,
           children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
-            initialValue: j,
+            initialValue: g,
             onValueChange: Chunk846027.Z.setKrispSuppressionLevel,
             minValue: 0,
             maxValue: 100
@@ -198,7 +198,7 @@ function _() {
               Chunk846027.Z.setKrispModelOverride("")
             },
             isSelected: e => e === S,
-            options: T.map(e => ({
+            options: O.map(e => ({
               label: e,
               value: e
             })),
@@ -223,29 +223,29 @@ function _() {
           tag: Chunk481060.RB0.H3,
           children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
             hideBorder: true,
-            value: w,
+            value: k,
             onChange: e => d.Z.setMode(f.pM.VOICE_ACTIVITY, {
               autoThreshold: e
             }),
             children: "Auto Threshold"
           })
-        }), w && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+        }), k && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
           children: [(0, Chunk951288.jsx)(Chunk481060.hjN, {
             title: "VAD Krisp Auto Threshold",
             tag: Chunk481060.RB0.H3,
             children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
               hideBorder: true,
-              value: k,
+              value: R,
               onChange: e => d.Z.setMode(f.pM.VOICE_ACTIVITY, {
                 vadUseKrisp: e
               }),
               children: "Use Krisp VAD"
             })
-          }), k && (0, Chunk951288.jsx)(Chunk481060.hjN, {
+          }), R && (0, Chunk951288.jsx)(Chunk481060.hjN, {
             title: "Krisp VAD Activation Threshold",
             tag: Chunk481060.RB0.H3,
             children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
-              initialValue: R,
+              initialValue: w,
               onValueChange: e => d.Z.setMode(f.pM.VOICE_ACTIVITY, {
                 vadKrispActivationThreshold: e
               }),
@@ -286,7 +286,7 @@ function _() {
                 createdAt: Date.now(),
                 suppression: F,
                 echoCancellation: I,
-                krispSuppressionLevel: j
+                krispSuppressionLevel: g
               }])
             })
           },
@@ -298,7 +298,7 @@ function _() {
         children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
           initialValue: E,
           asValueChanges: function(e) {
-            null != N.current && (N.current.gain.value = e, O(e))
+            null != N.current && (N.current.gain.value = e, T(e))
           },
           minValue: 0,
           maxValue: 1
@@ -306,7 +306,7 @@ function _() {
       }), (0, Chunk951288.jsx)(Chunk481060.hjN, {
         title: "Recordings",
         tag: Chunk481060.RB0.H3,
-        children: Chunk345959.map((e, t) => (0, a.jsx)(g, {
+        children: Chunk345959.map((e, t) => (0, a.jsx)(j, {
           recording: e,
           playing: e === _,
           onPlay: B,

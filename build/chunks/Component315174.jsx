@@ -220,7 +220,7 @@ function A(e) {
     ariaControls: d,
     ariaExpanded: p,
     children: g
-  } = e, b = (0, c.e7)([m.Z], () => (0, h.b)(m.Z, o)), O = i.useCallback(() => {
+  } = e, b = (0, c.e7)([m.Z], () => (0, f.b)(m.Z, o)), O = i.useCallback(() => {
     b ? (0, u.ZDy)(async () => {
       let {
         default: e
@@ -273,7 +273,7 @@ function A(e) {
           color: "currentColor"
         })
       }))
-    }), o.id === _.STv && (0, r.jsx)(f.p, {})]
+    }), o.id === _.STv && (0, r.jsx)(h.p, {})]
   })
 }
 let R = Chunk647438.memo(function(e) {
@@ -283,8 +283,8 @@ let R = Chunk647438.memo(function(e) {
     controller: l,
     className: a,
     onClick: c,
-    onContextMenu: h,
-    onMouseDown: f,
+    onContextMenu: f,
+    onMouseDown: h,
     disableBannerAnimation: m,
     "aria-expanded": y,
     "aria-controls": v,
@@ -295,10 +295,10 @@ let R = Chunk647438.memo(function(e) {
     headerClassName: T,
     communityInfoVisible: R,
     hasSubheader: M
-  } = e, L = j.features.has(_.oNc.ANIMATED_BANNER), k = (0, d.Z)(j), U = !k && (0, O.Z)(j), G = !k && R, B = (0, b.xR)(I) && L && !m, [F, V] = i.useState(false), H = i.useRef(false), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(true), Y = g.QK.getSetting();
+  } = e, L = j.features.has(_.oNc.ANIMATED_BANNER), k = (0, d.Z)(j), U = !k && (0, O.Z)(j), G = !k && R, B = (0, b.xR)(I) && L && !m, [V, F] = i.useState(false), H = i.useRef(false), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(true), Y = g.QK.getSetting();
   i.useEffect(() => {
-    if (B && n && !H.current && Y) return V(true), K.current = setTimeout(() => {
-      V(false)
+    if (B && n && !H.current && Y) return F(true), K.current = setTimeout(() => {
+      F(false)
     }, 5e3), () => {
       clearTimeout(K.current)
     }
@@ -319,7 +319,7 @@ let R = Chunk647438.memo(function(e) {
       bannerVisible: n,
       guild: j,
       onClick: c,
-      onContextMenu: h,
+      onContextMenu: f,
       ariaControls: v,
       ariaExpanded: y,
       guildHeaderRef: W
@@ -341,9 +341,9 @@ let R = Chunk647438.memo(function(e) {
           [x.communityInfoVisible]: G || M && U,
           [x.invitesRefresh]: X.isGuildEntrypointEnabled
         }),
-        onMouseDown: f,
+        onMouseDown: h,
         onClick: X.isGuildEntrypointEnabled ? true : c,
-        onContextMenu: h,
+        onContextMenu: f,
         children: [(0, r.jsxs)("header", {
           className: o()(x.header, T, {
             [x.themedHeaderMobile]: s.tq
@@ -365,16 +365,16 @@ let R = Chunk647438.memo(function(e) {
           guild: j,
           controller: l,
           guildBanner: I,
-          animate: F
+          animate: V
         }) : null, (0, r.jsx)(D, {
           controller: l
         })]
       }), B && q() ? (0, r.jsx)("div", {
         className: x.animatedBannerHoverLayer,
         onMouseEnter: () => {
-          V(true), clearTimeout(K.current)
+          F(true), clearTimeout(K.current)
         },
-        onMouseLeave: () => V(false),
+        onMouseLeave: () => F(false),
         style: {
           height: N
         }

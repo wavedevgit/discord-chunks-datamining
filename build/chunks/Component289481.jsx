@@ -59,7 +59,7 @@ let E = Chunk647438.memo(function(e) {
     }
     let {
       opacity: p,
-      size: h
+      size: f
     } = (0, u.q_F)({
       config: {
         clamp: true,
@@ -71,16 +71,16 @@ let E = Chunk647438.memo(function(e) {
       onRest: () => {
         n(t.channelId)
       }
-    }, "animate-always"), f = {
+    }, "animate-always"), h = {
       opacity: p,
-      height: h.to(e => {
+      height: f.to(e => {
         var t, n;
         return d ? (t = o, (n = s) + (t - n) * e) : "auto"
       })
     };
     return (0, r.jsx)(a.animated.div, {
       ref: l,
-      style: f,
+      style: h,
       children: (0, r.jsx)(S, C({}, e))
     })
   }),
@@ -101,12 +101,12 @@ let E = Chunk647438.memo(function(e) {
         })
       }), null == a || !t.hasLoadedAnything) return null;
     let s = (e, r) => {
-      (0, h.yw)(v.rMx.INBOX_CHANNEL_CLICKED, {
+      (0, f.yw)(v.rMx.INBOX_CHANNEL_CLICKED, {
         channel_id: t.channelId,
         guild_id: t.guildId
       });
       let i = null != r ? r : t.oldestUnreadMessageId;
-      (0, f.uL)(v.Z5c.CHANNEL(t.guildId, t.channelId, "forum" === t.type ? null : i)), n(e)
+      (0, h.uL)(v.Z5c.CHANNEL(t.guildId, t.channelId, "forum" === t.type ? null : i)), n(e)
     };
     return (0, r.jsx)("div", {
       className: x.channel,
@@ -153,7 +153,7 @@ function P(e) {
       color: "currentColor"
     }),
     onClick: function() {
-      o && null != t.guildId ? i(t.guildId) : n(t), (0, h.yw)(v.rMx.INBOX_CHANNEL_ACKED, {
+      o && null != t.guildId ? i(t.guildId) : n(t), (0, f.yw)(v.rMx.INBOX_CHANNEL_ACKED, {
         channel_id: t.channelId,
         guild_id: t.guildId,
         marked_all_channels_as_read: false,
@@ -171,7 +171,7 @@ function I(e) {
   } = e;
 
   function l() {
-    n(t), (0, h.yw)(v.rMx.INBOX_CHANNEL_COLLAPSED, {
+    n(t), (0, f.yw)(v.rMx.INBOX_CHANNEL_COLLAPSED, {
       channel_id: t.channelId,
       guild_id: t.guildId,
       num_unread_channels_remaining: i(),

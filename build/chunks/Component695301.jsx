@@ -22,7 +22,7 @@ let b = Chunk647438.memo(function(e) {
   let {
     guildNode: b,
     lowerBadge: O
-  } = e, y = b.id, _ = (0, l.e7)([p.Z], () => p.Z.getGuild(y)), v = (0, a.E)(_), j = (0, l.e7)([h.Z], () => h.Z.isFocused()), x = (0, l.e7)([u.Z], () => u.Z.isUnavailable(y)), C = (0, c.Z)(e => e.guildId), E = (0, f.Z)(y), {
+  } = e, y = b.id, _ = (0, l.e7)([p.Z], () => p.Z.getGuild(y)), v = (0, a.E)(_), j = (0, l.e7)([f.Z], () => f.Z.isFocused()), x = (0, l.e7)([u.Z], () => u.Z.isUnavailable(y)), C = (0, c.Z)(e => e.guildId), E = (0, h.Z)(y), {
     badge: S,
     unread: P,
     isMentionLowImportance: I

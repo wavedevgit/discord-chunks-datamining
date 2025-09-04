@@ -3,7 +3,7 @@
 require.d(exports, {
   $R: () => K,
   A0: () => et,
-  GU: () => Y,
+  GU: () => X,
   H8: () => J,
   HI: () => q,
   HW: () => z,
@@ -18,7 +18,7 @@ require.d(exports, {
   iw: () => en,
   jC: () => V,
   jQ: () => G,
-  lT: () => X,
+  lT: () => Y,
   rd: () => ed,
   t4: () => ec,
   uF: () => em,
@@ -119,7 +119,7 @@ let z = {
     XYZ_D65: Chunk856308.Z
   },
   G = Object.fromEntries(Object.keys(z).map(e => [e, e]));
-Object.values(z).forEach(e => k.Z.register(e));
+Object.values(z).forEach(e => R.Z.register(e));
 let {
   SemanticColors: B
 } = Chunk521904.V, V = B, H = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
@@ -146,7 +146,7 @@ function K(e) {
   }
 }
 
-function X(e, t, n, a, r) {
+function Y(e, t, n, a, r) {
   return {
     name: t,
     colors: U(F({}, e.colors), {
@@ -159,14 +159,14 @@ function X(e, t, n, a, r) {
   }
 }
 
-function Y(e) {
+function X(e) {
   return U(F({}, e), {
     highlight: !e.highlight
   })
 }
 
 function q(e) {
-  return (0, R.Z)((0, Z.Z)(e, i.Z), {
+  return (0, w.Z)((0, Z.Z)(e, i.Z), {
     format: "hex"
   })
 }

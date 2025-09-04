@@ -75,7 +75,7 @@ let M = {
 };
 
 function L(e, t) {
-  (0, f.jW)(e, async () => {
+  (0, h.jW)(e, async () => {
     let {
       default: e
     } = await Promise.all([n.e("1806"), n.e("36599"), n.e("60962"), n.e("58175"), n.e("55616"), n.e("7654"), n.e("44156"), n.e("47463"), n.e("6850"), n.e("58227"), n.e("54408"), n.e("90746"), n.e("88479"), n.e("56534"), n.e("87154"), n.e("33213"), n.e("63933")]).then(n.bind(n, 545135));
@@ -85,13 +85,13 @@ function L(e, t) {
   })
 }
 let k = Chunk647438.memo(function(e) {
-  var t, n, l, f, k;
+  var t, n, l, h, k;
   let {
     guildNode: U,
     setRef: G,
     onDragStart: B,
-    onDragEnd: F,
-    route: V,
+    onDragEnd: V,
+    route: F,
     guild: H,
     animatable: z,
     selected: W = false,
@@ -112,9 +112,9 @@ let k = Chunk647438.memo(function(e) {
     id: eo,
     parentId: ea
   } = U, es = null != (t = e.upperBadge) ? t : q ? (0, Z.Ny)() : null != Y ? (0, Z.Or)(Y) : true, ec = null != (n = e.lowerBadge) ? n : true;
-  null == ec && X > 0 ? ec = null != (l = (0, Z.Ne)(X, Q ? m.Z.BACKGROUND_ACCENT : m.Z.STATUS_DANGER)) ? l : true : null == ec && null != en && (ec = null != (f = (0, Z.jt)({
+  null == ec && X > 0 ? ec = null != (l = (0, Z.Ne)(X, Q ? m.Z.BACKGROUND_ACCENT : m.Z.STATUS_DANGER)) ? l : true : null == ec && null != en && (ec = null != (h = (0, Z.jt)({
     guildJoinRequestStatus: en
-  })) ? f : true);
+  })) ? h : true);
   let eu = null != (k = e.lowerBadgeSize) ? k : {
       width: (0, p.OVM)(X)
     },
@@ -129,32 +129,32 @@ let k = Chunk647438.memo(function(e) {
         nodeId: U.id
       }),
       end() {
-        null == F || F(), (0, g.V1)(j.ZP.getCompatibleGuildFolders())
+        null == V || V(), (0, g.V1)(j.ZP.getCompatibleGuildFolders())
       },
       collect: e => ({
         dragging: e.isDragging()
       })
     }),
-    eh = (0, c.Ie)(null != eo ? eo : w.lds, null != ea ? 2 : 1),
-    [ef, eg] = i.useState(false),
-    em = !ee && ef,
+    ef = (0, c.Ie)(null != eo ? eo : w.lds, null != ea ? 2 : 1),
+    [eh, eg] = i.useState(false),
+    em = !ee && eh,
     [eb, eO] = i.useState(false),
     [ey, e_] = i.useState(false),
     [ev] = i.useState(() => new d.sW(70, () => e_(true)));
   i.useEffect(() => () => ev.cancel(), [ev]);
   let ej = i.useCallback(() => {
-      if (null != V) return void(0, O.uL)(V, {
+      if (null != F) return void(0, O.uL)(F, {
         state: M
       });
       (0, y.X)(eo, {
         state: M
       })
-    }, [eo, V]),
+    }, [eo, F]),
     ex = i.useCallback(() => {
-      if (null != V || null == H || q || !et) return;
+      if (null != F || null == H || q || !et) return;
       let e = (0, b.V)(H.id);
-      null != e && h.Z.preload(H.id, e)
-    }, [V, H, q, et]),
+      null != e && f.Z.preload(H.id, e)
+    }, [F, H, q, et]),
     eC = (0, u.e7)([v.ZP], () => v.ZP.isCurrentUserGuest(eo)),
     eE = i.useCallback(e => {
       null == H || eC || J(e, H)
@@ -202,7 +202,7 @@ let k = Chunk647438.memo(function(e) {
       onKeyDown: eS,
       icon: (0, _.EB)(H, 2 * eN, em && z, true),
       selected: W || em
-    }, eh), {
+    }, ef), {
       "aria-setsize": ei,
       "aria-posinset": el,
       "aria-selected": W
