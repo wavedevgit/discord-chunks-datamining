@@ -143,7 +143,8 @@ function ek(e) {
     user: l,
     channelId: d,
     guildId: o.guild_id,
-    messageId: t.id
+    messageId: t.id,
+    enableDisplayNameStyles: true
   });
   return (0, r.jsx)(ei.Z, {
     compact: n,
