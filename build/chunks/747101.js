@@ -71,7 +71,7 @@ function f(e) {
 
 function b(e) {
   let [t, r] = (0, i.Wu)([o.Z], () => [o.Z.numNoDataAvailable(), o.Z.numSupplementalGames()]);
-  return (0, i.cj)([o.Z], () => {
+  return n.useMemo(() => {
     let t = {};
     return e.forEach(e => {
       t[e] = o.Z.getGame(e)

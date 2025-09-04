@@ -94,31 +94,31 @@ function I(e) {
     user: t,
     guildId: r,
     channelId: i
-  } = e, s = (0, p.Z)(t.id), g = (0, a.e7)([u.default], () => u.default.getId() === t.id), j = (() => {
+  } = e, s = (0, p.Z)(t.id), m = (0, a.e7)([u.default], () => u.default.getId() === t.id), j = (() => {
     let [e, t] = (0, a.Wu)([d.Z], () => [d.Z.ipCountryCode, d.Z.ipCountryCodeRequest]), r = (0, c.U)();
     return l.useEffect(() => {
       null == e && null == t && r && (0, o.GE)()
     }, [e, t, r]), "GB" === e && r
-  })(), O = 0 === s.length && g;
-  return ((0, m.ZP)(s), (0, f.J)(g, s), O) ? (0, n.jsx)(x.Z, {}) : (0, n.jsxs)(n.Fragment, {
-    children: [g && j && (0, n.jsx)(S, {}), s.map((e, l) => (0, n.jsx)(A, {
+  })(), O = 0 === s.length && m;
+  return ((0, g.ZP)(s), (0, f.J)(m, s), O) ? (0, n.jsx)(x.Z, {}) : (0, n.jsxs)(n.Fragment, {
+    children: [m && j && (0, n.jsx)(S, {}), s.map((e, l) => (0, n.jsx)(A, {
       widget: e,
       user: t,
       guildId: r,
       channelId: i,
       index: l
-    }, e.id)), g && (0, n.jsx)(b.Z, {})]
+    }, e.id)), m && (0, n.jsx)(b.Z, {})]
   })
 }
 
 function w(e) {
   let t = l.useRef(null);
-  return (0, g.r)({
+  return (0, m.r)({
     container: t.current
   }), (0, n.jsxs)(h.F, {
     "data-scroller": true,
     scrollerRef: t,
-    className: v.scroller,
+    className: y.scroller,
     fade: true,
     children: [(0, n.jsx)(j.Z, {
       scrollerRef: t

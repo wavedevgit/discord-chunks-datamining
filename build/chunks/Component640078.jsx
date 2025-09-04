@@ -23,14 +23,14 @@ let c = function(e) {
     sourceClientOffset: e.getSourceClientOffset()
   })), f = (0, i.e7)([a.default], () => a.default.getCurrentUser());
   if (true !== c || null == d || null == u.widget) return null;
-  let g = null == r || null == (t = r.current) ? true : t.getBoundingClientRect();
-  if (null == g || null == f) return null;
-  let m = d.x - g.left,
-    p = d.y - g.top;
+  let m = null == r || null == (t = r.current) ? true : t.getBoundingClientRect();
+  if (null == m || null == f) return null;
+  let g = d.x - m.left,
+    p = d.y - m.top;
   return (0, n.jsx)("div", {
     className: o.container,
     style: {
-      transform: "translate(".concat(m, "px, ").concat(p, "px)")
+      transform: "translate(".concat(g, "px, ").concat(p, "px)")
     },
     children: (0, n.jsx)(s.Z, {
       widget: u.widget,

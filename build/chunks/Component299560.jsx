@@ -61,24 +61,24 @@ function j(e) {
     loading: s = false,
     trackUserProfileEditAction: c
   } = e, {
-    placeholder: m,
+    placeholder: g,
     getAriaLabel: j
   } = b[t], O = "small" === i, h = l.useCallback(() => {
     s || ((0, u.qH)(t), c({
       action: "WIDGET_ADDED",
       widgetEdited: t
-    }), (0, d.L$)(g.qb.WIDGET_ADDED), null == r || r())
+    }), (0, d.L$)(m.qb.WIDGET_ADDED), null == r || r())
   }, [t, r, s, c]);
   return (0, n.jsxs)(o.P3F, {
     className: a()(p.addButtonContainer, O && p.sizeSmall, s && p.loading),
     onClick: h,
     "aria-label": j(),
     "aria-busy": s,
-    children: ["details" === m.variant ? (0, n.jsx)(f.i, {
-      applicationId: m.applicationId,
+    children: ["details" === g.variant ? (0, n.jsx)(f.i, {
+      applicationId: g.applicationId,
       size: i
     }) : (0, n.jsx)(f.c, {
-      applicationIds: m.applicationIds,
+      applicationIds: g.applicationIds,
       size: i
     }), (0, n.jsxs)("div", {
       className: p.overlay,

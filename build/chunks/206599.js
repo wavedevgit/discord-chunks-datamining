@@ -14,10 +14,10 @@ var Chunk647438 = require("./647438.js"),
 
 function u(e) {
   var t;
-  let {
-    bump: r,
-    bumpMultiple: l,
-    gameIds: a
+  let [r, a] = (0, l.Wu)([i.Z], () => [i.Z.numNoDataAvailable(), i.Z.numSupplementalGames()]), {
+    bump: s,
+    bumpMultiple: u,
+    gameIds: d
   } = (0, o.b)();
   ! function(e) {
     var t, r;
@@ -36,32 +36,32 @@ function u(e) {
       }
     }, [a, l, e, s, u])
   }(e);
-  let s = n.useMemo(() => {
+  let f = n.useMemo(() => {
       var t;
-      return null != (t = a[e]) ? t : []
-    }, [a, e]),
-    u = n.useCallback(t => {
-      r(t, e)
-    }, [r, e]);
-  (0, c.qU)(s);
-  let d = (0, c.kN)(s),
-    [f, g] = n.useState([]),
-    m = (t = s.map(e => i.Z.isFetching(e)), n.useMemo(() => t.join("\x1f"), [t]));
+      return null != (t = d[e]) ? t : []
+    }, [d, e]),
+    m = n.useCallback(t => {
+      s(t, e)
+    }, [s, e]);
+  (0, c.qU)(f);
+  let g = (0, c.kN)(f),
+    [p, b] = n.useState([]),
+    j = (t = f.map(e => i.Z.isFetching(e)), n.useMemo(() => t.join("\x1f"), [t]));
   return n.useEffect(() => {
-    let t = s.filter(e => i.Z.noDataAvailable(e));
-    t.length > 0 && l(t, e)
-  }, [m, s, e, l, d]), n.useEffect(() => {
-    g(s.map(e => {
-      let t = d[e];
+    let t = f.filter(e => i.Z.noDataAvailable(e));
+    t.length > 0 && u(t, e)
+  }, [j, f, e, u, g]), n.useEffect(() => {
+    b(f.map(e => {
+      let t = g[e];
       return {
         applicationId: e,
         gameName: null == t ? true : t.name,
         imageSrc: null == t ? true : t.coverImageUrl
       }
     }))
-  }, [s, d, e]), {
-    games: f,
-    onAddGame: u
+  }, [f, g, e, r, a]), {
+    games: p,
+    onAddGame: m
   }
 }
 

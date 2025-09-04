@@ -2,7 +2,7 @@
 /** chunk id: 817053, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => b,
-  o: () => m
+  o: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -33,7 +33,7 @@ function f(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,7 +46,7 @@ function g(e, t) {
   }), e
 }
 
-function m(e) {
+function g(e) {
   let {
     imageSrc: t,
     gameName: r
@@ -90,18 +90,18 @@ function p(e) {
     text: O,
     children: t => e(t)
   });
-  return x(null == j ? e => (0, n.jsx)("div", g(f({
+  return x(null == j ? e => (0, n.jsx)("div", m(f({
     className: p
   }, e), {
-    children: (0, n.jsx)(m, {
+    children: (0, n.jsx)(g, {
       imageSrc: t,
       gameName: r
     })
-  })) : e => (0, n.jsx)(s.P3F, g(f({}, e), {
+  })) : e => (0, n.jsx)(s.P3F, m(f({}, e), {
     onClick: j,
     "aria-label": h,
     className: a()(d.clickable, p),
-    children: (0, n.jsx)(m, {
+    children: (0, n.jsx)(g, {
       imageSrc: t,
       gameName: r
     })
@@ -133,7 +133,7 @@ function b(e) {
   let c = a()(d.coverContainer, l);
   return i ? (0, n.jsx)("div", {
     className: c,
-    children: (0, n.jsx)(m, f({}, o))
+    children: (0, n.jsx)(g, f({}, o))
   }) : (0, n.jsx)(p, f({
     className: c,
     applicationId: t,
