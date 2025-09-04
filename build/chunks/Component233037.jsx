@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk442837 = require("./442837.js"),
-  Chunk481060 = require("./481060.js"),
+  Chunk755721 = require("./755721.js"),
   Chunk984933 = require("./984933.js"),
   Chunk430824 = require("./430824.js"),
   Chunk496675 = require("./496675.js"),
@@ -47,7 +47,7 @@ function x(e) {
   return (0, r.jsx)(m.Z, {
     title: h.intl.string(h.t["eg7R/v"]),
     scrollerInnerClassName: p.channelSelectScrollerInner,
-    children: (0, r.jsx)(l.FXm, {
+    children: (0, r.jsx)(l.Gu, {
       options: j,
       value: t,
       itemInfoClassName: p.channelInfoWrapper,

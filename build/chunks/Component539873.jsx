@@ -2,11 +2,12 @@
 /** chunk id: 539873, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
   Chunk313201 = require("./313201.js"),
@@ -20,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk339637 = require("./339637.js"),
   Chunk226518 = require("./226518.js");
 
-function E(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,20 +30,20 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      E(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function y(e, t) {
+function O(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,15 +54,15 @@ function y(e, t) {
   return n
 }
 
-function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function v(e, t) {
+function I(e, t) {
   if (null == e) return {};
-  var n, r, i = I(e, t);
+  var n, r, i = S(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -69,7 +70,7 @@ function v(e, t) {
   return i
 }
 
-function I(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -77,66 +78,66 @@ function I(e, t) {
   return i
 }
 
-function S(e) {
+function T(e) {
   let {
     className: t,
     disabled: n,
-    isEditor: E,
-    renderCTAButtons: y
-  } = e, [I] = (0, a.Wu)([d.Z], () => [d.Z.getCurrentDesktopIcon()]), S = i.useRef(null);
-  (0, u.Z)(S, p.h1.CUSTOM_APP_ICONS);
-  let T = (0, l.Dt)(),
-    A = (0, o.arW)({
+    isEditor: b,
+    renderCTAButtons: O
+  } = e, [S] = (0, a.Wu)([f.Z], () => [f.Z.getCurrentDesktopIcon()]), T = i.useRef(null);
+  (0, d.Z)(T, h.h1.CUSTOM_APP_ICONS);
+  let A = (0, c.Dt)(),
+    C = (0, o.Jb)({
       orientation: "horizontal",
-      labelledBy: T
+      labelledBy: A
     }),
     {
-      ref: C
-    } = A,
-    N = v(A, ["ref"]),
-    R = e => {
-      s.Z.dispatch({
+      ref: N
+    } = C,
+    R = I(C, ["ref"]),
+    P = e => {
+      l.Z.dispatch({
         type: "APP_ICON_UPDATED",
         id: e
       })
     };
   return (0, r.jsx)("div", {
-    ref: S,
-    children: (0, r.jsx)("div", O(b({}, N), {
-      ref: C,
-      className: m.__invalid_container,
+    ref: T,
+    children: (0, r.jsx)("div", v(y({}, R), {
+      ref: N,
+      className: g.__invalid_container,
       children: (0, r.jsxs)("div", {
         className: t,
         children: [(0, r.jsxs)("div", {
-          className: m.header,
+          className: g.header,
           children: [(0, r.jsxs)("div", {
-            className: m.headings,
-            children: [!E && (0, r.jsxs)("div", {
-              className: m.title,
-              children: [(0, r.jsx)(o.X6q, {
-                className: m.titleText,
+            className: g.headings,
+            children: [!b && (0, r.jsxs)("div", {
+              className: g.title,
+              children: [(0, r.jsx)(s.X6q, {
+                className: g.titleText,
                 variant: "text-lg/medium",
-                children: h.intl.string(h.t.NThqT0)
-              }), (0, r.jsx)(c.Z, {
-                className: m.premiumIcon
+                children: m.intl.string(m.t.NThqT0)
+              }), (0, r.jsx)(u.Z, {
+                className: g.premiumIcon
               })]
-            }), (0, r.jsx)(o.X6q, {
+            }), (0, r.jsx)(s.X6q, {
               variant: "text-sm/normal",
-              className: g.subtext,
-              children: h.intl.string(h.t.IgENJi)
+              className: E.subtext,
+              children: m.intl.string(m.t.IgENJi)
             })]
-          }), null == y ? true : y()]
+          }), null == O ? true : O()]
         }), (0, r.jsx)("div", {
-          className: m.presets,
-          children: (0, _.wu)().filter(e => {
+          className: g.presets,
+          children: (0, p.wu)().filter(e => {
             let {
               isHidden: t
             } = e;
             return !t
-          }).map((e, t) => (0, r.jsx)(f.Z, {
+          }).map((e, t) => (0, r.jsx)(_.Z, {
             icon: e,
-            isSelected: I === e.id,
-            onSelect: e => R(e),
+            isSelected: S === e.id,
+            onSelect: e => P(e),
             disabled: n,
             tabIndex: 0 !== t || n ? true : 0,
             locked: false

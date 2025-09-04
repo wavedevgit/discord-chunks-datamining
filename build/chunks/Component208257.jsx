@@ -6,12 +6,12 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk538534 = require("./538534.jsx");
+  Chunk695046 = require("./695046.jsx");
 let o = {
-  title: "RadioGroup",
+  title: "VoidRadioGroup",
   stories: [{
     id: "radiogroup",
-    name: "RadioGroup",
+    name: "VoidRadioGroup",
     component: function(e) {
       let {
         optionCount: t,
@@ -26,7 +26,7 @@ let o = {
         value: "option".concat(t + 1),
         name: "Option ".concat(t + 1)
       }));
-      return (0, r.jsx)(a.Ee, {
+      return (0, r.jsx)(a.Gu, {
         value: u,
         onChange: e => {
           let {

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   o = require.n(Chunk512722),
   Chunk831209 = require("./831209.js"),
@@ -86,12 +86,12 @@ function M(A) {
     text: e,
     onChange: t,
     value: r,
-    disabled: a,
+    disabled: l,
     warning: i
-  } = A, o = (0, h.Dt)(), s = a ? "text-muted" : "text-default";
+  } = A, o = (0, h.Dt)(), s = l ? "text-muted" : "text-default";
   return (0, n.jsxs)("label", {
-    className: l()(k.benefitToggleContainer, {
-      [k.disabled]: a
+    className: a()(k.benefitToggleContainer, {
+      [k.disabled]: l
     }),
     htmlFor: o,
     children: [(0, n.jsx)(f.Text, {
@@ -109,7 +109,7 @@ function M(A) {
     }), (0, n.jsx)(g.T2, {
       onChange: t,
       checked: r,
-      disabled: a,
+      disabled: l,
       id: o
     })]
   })
@@ -129,49 +129,49 @@ function _(A) {
   let {
     guildId: e,
     selectedPriceTier: t,
-    setPriceTier: a
+    setPriceTier: l
   } = A, {
-    priceTiers: l
-  } = (0, b.R)(e, w.RG5.GUILD_PRODUCTS), i = r.useMemo(() => (null != l ? l : null != t ? [t] : []).map(A => ({
+    priceTiers: a
+  } = (0, b.R)(e, w.RG5.GUILD_PRODUCTS), i = r.useMemo(() => (null != a ? a : null != t ? [t] : []).map(A => ({
     value: A,
     label: (0, V.T4)(A, w.pKx.USD)
-  })), [l, t]);
+  })), [a, t]);
   return (0, n.jsx)(f.VcW, {
     value: t,
     placeholder: L.intl.string(L.t.aI4J5O),
     maxVisibleItems: 5,
     options: i,
-    onChange: a,
+    onChange: l,
     filter: J,
     "aria-required": true
   })
 }
 
 function $(A) {
-  var e, a, l, i, g, h, b, U;
+  var e, l, a, i, g, h, b, U;
   let {
     guildId: J,
     productId: $,
     transitionState: Ae,
     onClose: At
-  } = A, [An, Ar] = r.useState($), Aa = (0, d.e7)([I.Z], () => null == An ? null : I.Z.getGuildProduct(An), [An]), Al = (null == Aa ? true : Aa.published) === true, {
+  } = A, [An, Ar] = r.useState($), Al = (0, d.e7)([I.Z], () => null == An ? null : I.Z.getGuildProduct(An), [An]), Aa = (null == Al ? true : Al.published) === true, {
     application: Ai
   } = (0, q.Z)(J, B.wW.GUILD_ROLE_SUBSCRIPTIONS), Ao = y.M["0"], As = j.QK.useSetting(), Ad = (0, O.n)(), Ac = r.useCallback(() => {
     var A;
-    return (null == Aa || null == (A = Aa.image_asset) ? true : A.application_id) == null ? Ao.data : (0, P._W)(Aa.image_asset.application_id, Aa.image_asset, 600, Ad && As ? true : "webp")
-  }, [Ao, Aa, Ad, As]), {
+    return (null == Al || null == (A = Al.image_asset) ? true : A.application_id) == null ? Ao.data : (0, P._W)(Al.image_asset.application_id, Al.image_asset, 600, Ad && As ? true : "webp")
+  }, [Ao, Al, Ad, As]), {
     shouldRestrictUpdatingCreatorMonetizationSettings: Au
   } = (0, v.gX)(J);
   r.useEffect(() => {
     Au && (At(), (0, Z.B)(L.intl.string(L.t.OLf3xs), L.t["90LBVl"]))
   }, [Au, At]);
-  let [Ag, Af] = r.useState(null != (l = null == Aa ? true : Aa.name) ? l : ""), [Ap, Am] = r.useState(null != (i = null == Aa ? true : Aa.description) ? i : ""), [Aq, Ah] = r.useState(null != (g = null == Aa ? true : Aa.price_tier) ? g : true), [Ab, AC] = r.useState(Ac), [Av, AU] = r.useState(null != (h = null == Aa || null == (e = Aa.image_asset) ? true : e.filename) ? h : Ao.name), [Aj, Ax] = r.useState(false), [AV, AP] = r.useState(), AO = r.useMemo(() => null != Aq ? (0, V.T4)(Aq, w.pKx.USD) : true, [Aq]), [AF, AI] = r.useState(true), {
+  let [Ag, Af] = r.useState(null != (a = null == Al ? true : Al.name) ? a : ""), [Ap, Am] = r.useState(null != (i = null == Al ? true : Al.description) ? i : ""), [Aq, Ah] = r.useState(null != (g = null == Al ? true : Al.price_tier) ? g : true), [Ab, AC] = r.useState(Ac), [Av, AU] = r.useState(null != (h = null == Al || null == (e = Al.image_asset) ? true : e.filename) ? h : Ao.name), [Aj, Ax] = r.useState(false), [AV, AP] = r.useState(), AO = r.useMemo(() => null != Aq ? (0, V.T4)(Aq, w.pKx.USD) : true, [Aq]), [AF, AI] = r.useState(true), {
     changesSaving: AK,
     saveError: Ay,
     saveProductWithAttachments: AN,
     hasUnsavedAttachmentChanges: AT,
     cancelUnusedUploads: AX
-  } = (0, F.P)(), AZ = (null == Aa ? true : Aa.attachments) != null && (null == Aa ? true : Aa.attachments.length) > 0, AW = null != Ay ? Ay : AV, AQ = null != AK && "published" in AK, Az = null != AK && !AQ, AS = null != (b = null == Aa ? true : Aa.role_id) ? b : null, [AR, Aw] = r.useState(), AB = null != AR || null != AS, AL = (0, d.e7)([x.Z], () => null != AS && null !== AR ? x.Z.getRole(J, AS) : null != AR ? AR : true, [AR, AS, J]), Ak = "";
+  } = (0, F.P)(), AZ = (null == Al ? true : Al.attachments) != null && (null == Al ? true : Al.attachments.length) > 0, AW = null != Ay ? Ay : AV, AQ = null != AK && "published" in AK, Az = null != AK && !AQ, AS = null != (b = null == Al ? true : Al.role_id) ? b : null, [AR, Aw] = r.useState(), AB = null != AR || null != AS, AL = (0, d.e7)([x.Z], () => null != AS && null !== AR ? x.Z.getRole(J, AS) : null != AR ? AR : true, [AR, AS, J]), Ak = "";
   AB && AF ? Ak = L.intl.string(L.t.ih4QMT) : AB ? Ak = L.intl.string(L.t.o9xphY) : AF && (Ak = L.intl.string(L.t.DWYJub));
   let AG = () => {
       AI(false), AX()
@@ -184,7 +184,7 @@ function $(A) {
       canSaveForPublished: AJ,
       canPublishOrUnpublish: A_
     } = r.useMemo(() => (0, K.fG)({
-      guildProductListing: Aa,
+      guildProductListing: Al,
       name: Ag,
       priceTier: Aq,
       description: Ap,
@@ -194,7 +194,7 @@ function $(A) {
       newRoleParams: AR,
       hasSavedAttachments: AZ,
       hasUnsavedAttachmentChanges: AT
-    }), [Aa, Ag, Aq, Ap, Ab, Av, Aj, AR, AZ, AT]),
+    }), [Al, Ag, Aq, Ap, Ab, Av, Aj, AR, AZ, AT]),
     A$ = r.useMemo(() => AH || null == AE || "publish" === AE || null != AW ? null : (0, n.jsx)(f.oXn, {
       className: k.successNotice,
       children: (0, n.jsx)(m.Z, {
@@ -343,11 +343,11 @@ function $(A) {
               radioGroupAriaLabel: L.intl.string(L.t.fKzQj4),
               image: Ab,
               imageName: Av,
-              savedImageName: null == Aa || null == (a = Aa.image_asset) ? true : a.filename,
+              savedImageName: null == Al || null == (l = Al.image_asset) ? true : l.filename,
               onChange: (A, e) => {
                 if (null != A) {
                   var t;
-                  AC(A), AU(e), Ax(A.startsWith("data:") || e !== (null == Aa || null == (t = Aa.image_asset) ? true : t.filename))
+                  AC(A), AU(e), Ax(A.startsWith("data:") || e !== (null == Al || null == (t = Al.image_asset) ? true : t.filename))
                 }
               }
             })]
@@ -379,11 +379,11 @@ function $(A) {
           className: k.productPreview,
           children: [(0, n.jsx)(z.Z, {
             disabled: !A_,
-            disabledTooltip: Al ? L.intl.string(L.t["0NQ00t"]) : L.intl.string(L.t["Ax89/f"]),
-            published: Al,
+            disabledTooltip: Aa ? L.intl.string(L.t["0NQ00t"]) : L.intl.string(L.t["Ax89/f"]),
+            published: Aa,
             onClick: () => {
-              o()(A_, "Attempting to publish/unpublish when not allowed"), AY(Al ? "unpublish" : "publish"), A1(E(G({}, AD), {
-                published: !Al
+              o()(A_, "Attempting to publish/unpublish when not allowed"), AY(Aa ? "unpublish" : "publish"), A1(E(G({}, AD), {
+                published: !Aa
               }))
             },
             submitting: AQ
@@ -455,7 +455,7 @@ function $(A) {
           })]
         }), (0, n.jsx)("div", {
           className: k.footerActionRightButtons,
-          children: Al ? (0, n.jsx)(u.zx, {
+          children: Aa ? (0, n.jsx)(u.zx, {
             variant: "secondary",
             text: L.intl.string(L.t.XYBEaW),
             disabled: !AJ,

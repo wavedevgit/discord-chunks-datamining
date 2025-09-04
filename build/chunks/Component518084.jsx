@@ -40,25 +40,25 @@ let m = Chunk981631.t_t.DEFAULT,
       var n, i, r = function(e, t) {
         if (null == e) return {};
         var n, i, r = {},
-          o = Object.keys(e);
-        for (i = 0; i < o.length; i++) n = o[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+          l = Object.keys(e);
+        for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
         return r
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (i = 0; i < o.length; i++) n = o[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+        var l = Object.getOwnPropertySymbols(e);
+        for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
       }
       return r
     }(e, ["children", "className"]);
     return (0, r.jsx)(O.Consumer, {
       children: e => {
         let {
-          type: o
+          type: l
         } = e;
         return (0, r.jsx)(v.Consumer, {
           children: e => {
-            var l, a;
-            return (0, r.jsx)("div", (l = function(e) {
+            var o, a;
+            return (0, r.jsx)("div", (o = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                   i = Object.keys(n);
@@ -70,11 +70,11 @@ let m = Chunk981631.t_t.DEFAULT,
               }
               return e
             }({
-              className: s()(p.bar, p[c()(o)], n),
+              className: s()(p.bar, p[c()(l)], n),
               style: e
             }, i), a = a = {
               children: t
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
                 var i = Object.getOwnPropertySymbols(e);
@@ -82,8 +82,8 @@ let m = Chunk981631.t_t.DEFAULT,
               }
               return n
             })(Object(a)).forEach(function(e) {
-              Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(a, e))
-            }), l))
+              Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(a, e))
+            }), o))
           }
         })
       }
@@ -98,15 +98,15 @@ class b extends(i = Chunk647438.PureComponent) {
     } = this.props;
     return (0, Chunk951288.jsx)(v.Consumer, {
       children: i => (0, r.jsx)(O.Consumer, {
-        children: o => {
-          let l = s()(p.body, p[c()(o.type)], n);
+        children: l => {
+          let o = s()(p.body, p[c()(l.type)], n);
           return e ? (0, r.jsx)("div", {
-            className: l,
+            className: o,
             style: i,
             children: t
           }) : (0, r.jsx)(u.Ttm, {
             fade: true,
-            className: l,
+            className: o,
             children: t
           })
         }
@@ -122,8 +122,8 @@ let E = e => {
       type: t = m,
       width: n,
       height: i,
-      children: o,
-      className: l,
+      children: l,
+      className: o,
       opacity: a = y,
       onClick: d
     } = e;
@@ -133,13 +133,13 @@ let E = e => {
         opacity: a
       },
       children: (0, r.jsx)("div", {
-        className: s()(p.widget, p[c()(t)], l),
+        className: s()(p.widget, p[c()(t)], o),
         style: {
           width: n,
           height: i
         },
         onClick: d,
-        children: o
+        children: l
       })
     })
   },
@@ -169,11 +169,11 @@ E.Background = e => {
   return (0, r.jsx)(O.Consumer, {
     children: e => {
       let {
-        opacity: l
+        opacity: o
       } = e, s = {
-        backgroundColor: "rgba(54, 57, 63, ".concat("" + (null != n ? n : l), ")")
+        backgroundColor: "rgba(54, 57, 63, ".concat("" + (null != n ? n : o), ")")
       };
-      if ("string" == typeof t.type) return o.cloneElement(t, {
+      if ("string" == typeof t.type) return l.cloneElement(t, {
         style: s
       });
       {
@@ -191,8 +191,8 @@ E.Background = e => {
     ref: t,
     icon: n,
     label: i,
-    onClick: o,
-    isActive: l,
+    onClick: l,
+    isActive: o,
     tooltipPosition: a = "top",
     size: c = 20,
     isTutorial: h = false
@@ -215,11 +215,11 @@ E.Background = e => {
         buttonRef: t,
         look: d.zx.Looks.BLANK,
         size: d.zx.Sizes.NONE,
-        onClick: o,
+        onClick: l,
         onMouseEnter: a,
         onMouseLeave: u,
         className: s()(p.icon, {
-          [p.toggledIconOn]: l
+          [p.toggledIconOn]: o
         }),
         innerClassName: f.flexCenter,
         "aria-label": i,

@@ -35,7 +35,7 @@ function L(e) {
     transitionState: T,
     onSubmit: j,
     onClose: B
-  } = e, D = (0, _.Dt)(), R = (0, _.Dt)(), M = (0, _.Dt)(), [S, k] = r.useState(y.Sc2), [Z, W] = r.useState(y.d4z.GUILD_TEXT), [A, G] = r.useState(""), [H, O] = r.useState(false), U = (0, l.e7)([x.Z], () => x.Z.getGuild(L), [L]), P = (0, h.m)(L), V = (0, f.Ui)(U), F = r.useMemo(() => (function(e) {
+  } = e, D = (0, _.Dt)(), R = (0, _.Dt)(), M = (0, _.Dt)(), [S, k] = r.useState(y.Sc2), [Z, G] = r.useState(y.d4z.GUILD_TEXT), [W, A] = r.useState(""), [H, O] = r.useState(false), U = (0, l.e7)([x.Z], () => x.Z.getGuild(L), [L]), P = (0, h.m)(L), V = (0, f.Ui)(U), F = r.useMemo(() => (function(e) {
     let {
       canCreateStageChannel: t,
       canCreateMediaChannel: n
@@ -108,14 +108,14 @@ function L(e) {
       value: t.id,
       label: t.name
     }
-  }), [q]), X = null != (n = null == (t = F.find(e => e.value === Z)) ? true : t.channelIcon) ? n : C.Vq, J = "" !== A;
+  }), [q]), X = null != (n = null == (t = F.find(e => e.value === Z)) ? true : t.channelIcon) ? n : C.Vq, J = "" !== W;
   return (0, i.jsx)("form", {
     onSubmit: function(e) {
       if (e.preventDefault(), !J) return;
       O(true);
       let t = {
         type: Z,
-        name: A,
+        name: W,
         parent_id: "null" !== S ? S : true,
         permission_overwrites: [{
           id: L,
@@ -176,14 +176,14 @@ function L(e) {
         }), (0, i.jsx)(d.xJW, {
           title: E.intl.string(E.t["7ZcXGx"]),
           titleId: R,
-          children: (0, i.jsx)(d.FXm, {
+          children: (0, i.jsx)(s.Gu, {
             options: F,
             value: Z,
             onChange: e => {
               let {
                 value: t
               } = e;
-              return W(t)
+              return G(t)
             },
             "aria-labelledby": R
           })
@@ -191,9 +191,9 @@ function L(e) {
           title: E.intl.string(E.t.PVbHDg),
           titleId: M,
           children: (0, i.jsx)(s.Is, {
-            value: A,
+            value: W,
             onChange: function(e) {
-              (0, b.zi)(Z) && (e = (0, I.Nj)(e)), G(e)
+              (0, b.zi)(Z) && (e = (0, I.Nj)(e)), A(e)
             },
             maxLength: y.HN8,
             placeholder: E.intl.string(E.t["bw/b8P"]),

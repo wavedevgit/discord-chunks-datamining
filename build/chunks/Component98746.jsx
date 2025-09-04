@@ -69,7 +69,7 @@ function S(t) {
       isModReportClosed: null == t ? true : t.isArchivedThread(),
       isModReport: null == t ? true : t.isModeratorReportChannel()
     }
-  }), [A, K] = l.useState(false), [F, U] = l.useState(false), Y = (0, p.sE)(e, {
+  }), [A, K] = l.useState(false), [U, Y] = l.useState(false), F = (0, p.sE)(e, {
     location: i,
     targetUserId: null == n ? true : n.id,
     targets: b
@@ -82,20 +82,20 @@ function S(t) {
     } else {
       if (null == n) return;
       d.Z.banUser(e, null == n ? true : n.id, k, t, T).then(() => {
-        F && null != T && g.Z.resolveFlag(T)
+        U && null != T && g.Z.resolveFlag(T)
       })
     }
-    Y(p.jQ.BAN), P()
-  }, [w, M, S, Y, P, b, R, A, e, k, n, T, F]), B = l.useCallback(t => {
+    F(p.jQ.BAN), P()
+  }, [w, M, S, F, P, b, R, A, e, k, n, T, U]), B = l.useCallback(t => {
     E(t)
   }, []), J = l.useCallback(t => {
     let {
       value: e
     } = t;
     Z(e), K(false), N(null)
-  }, []), X = l.useCallback(t => {
+  }, []), q = l.useCallback(t => {
     N(t), A && K(false)
-  }, [A]), q = I && !D && null != T, L = [{
+  }, [A]), G = I && !D && null != T, L = [{
     name: j.intl.string(j.t.tamLhY),
     value: j.intl.string(j.t.tamLhY)
   }, {
@@ -107,7 +107,7 @@ function S(t) {
   }, {
     name: j.intl.string(j.t.BcZTKi),
     value: "other"
-  }], G = (() => {
+  }], X = (() => {
     if (null != S && null != b) return j.intl.formatToPlainString(j.t.HVJexc, {
       count: null == b ? true : b.size
     });
@@ -120,7 +120,7 @@ function S(t) {
   return (0, r.jsx)(s.Modal, {
     onClose: P,
     transitionState: _,
-    title: G,
+    title: X,
     subtitle: null != H ? H : true,
     actions: (() => {
       let t = [];
@@ -134,9 +134,9 @@ function S(t) {
         onClick: W
       }), t
     })(),
-    actionBarInput: q ? (0, r.jsx)(u.$q, {
-      value: F,
-      onChange: (t, e) => U(e),
+    actionBarInput: G ? (0, r.jsx)(u.$q, {
+      value: U,
+      onChange: (t, e) => Y(e),
       children: (0, r.jsx)(c.Text, {
         variant: "text-md/normal",
         color: "text-default",
@@ -159,7 +159,7 @@ function S(t) {
           children: [A && (0, r.jsx)(c.kzN, {
             className: O.error,
             children: j.intl.string(j.t.IrYX19)
-          }), (0, r.jsx)(c.FXm, {
+          }), (0, r.jsx)(u.Gu, {
             className: O.radioGroup,
             value: M,
             options: L.map(t => {
@@ -203,7 +203,7 @@ function S(t) {
           }),
           children: (0, r.jsx)(c.Kx8, {
             maxLength: m.GNZ,
-            onChange: X,
+            onChange: q,
             value: null != w ? w : "",
             rows: 5,
             autoFocus: true

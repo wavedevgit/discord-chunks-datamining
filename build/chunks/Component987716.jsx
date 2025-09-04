@@ -2,12 +2,13 @@
 /** chunk id: 987716, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  q: () => T
+  q: () => A
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
+  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk987209 = require("./987209.jsx"),
   Chunk321051 = require("./321051.jsx"),
@@ -21,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk611344 = require("./611344.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,20 +31,20 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
 }
 
-function O(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,15 +55,15 @@ function O(e, t) {
   return n
 }
 
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function I(e, t) {
+function S(e, t) {
   if (null == e) return {};
-  var n, r, i = S(e, t);
+  var n, r, i = T(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -70,76 +71,76 @@ function I(e, t) {
   return i
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let T = e => {
+let A = e => {
   let {
     isShopGift: t,
     className: n,
     optionsContainerClassName: a
   } = e, {
-    giftRecipient: b,
-    selectedGiftStyle: O,
-    setSelectedGiftStyle: S,
-    emojiConfetti: T,
-    soundEffect: A,
-    setEmojiConfetti: C,
-    setSoundEffect: N
-  } = (0, l.wD)(), [R, P] = i.useState(false), w = i.useRef(null), D = (0, s.arW)({
+    giftRecipient: y,
+    selectedGiftStyle: v,
+    setSelectedGiftStyle: T,
+    emojiConfetti: A,
+    soundEffect: C,
+    setEmojiConfetti: N,
+    setSoundEffect: R
+  } = (0, c.wD)(), [P, w] = i.useState(false), D = i.useRef(null), x = (0, s.Jb)({
     orientation: "horizontal"
   }), {
-    ref: x
-  } = D, L = I(D, ["ref"]), j = (0, u.MY)(b, t), M = j === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, k = j !== u.xr.DEFAULT, U = (0, _.m)(), G = (0, f.ZP)({
+    ref: L
+  } = x, j = S(x, ["ref"]), M = (0, d.MY)(y, t), k = M === d.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = M !== d.xr.DEFAULT, G = (0, p.m)(), B = (0, _.ZP)({
     location: "GiftAnimationOptions"
-  }), B = e => {
-    null != N && N(null == e ? true : e)
+  }), Z = e => {
+    null != R && R(null == e ? true : e)
   };
   return (0, r.jsxs)("div", {
-    children: [k && (0, r.jsxs)("div", {
-      className: o()(E.giftMainAnimation, n),
-      children: [null != O ? (0, r.jsx)(p.Z, {
-        giftStyle: O,
-        defaultAnimationState: d.SR.ACTION,
-        idleAnimationState: d.SR.LOOP,
+    children: [U && (0, r.jsxs)("div", {
+      className: o()(b.giftMainAnimation, n),
+      children: [null != v ? (0, r.jsx)(h.Z, {
+        giftStyle: v,
+        defaultAnimationState: f.SR.ACTION,
+        idleAnimationState: f.SR.LOOP,
         shouldAnimate: true,
-        className: E.animation
-      }) : (0, r.jsx)(s.$jN, {
-        className: E.spinner
-      }), M && (0, r.jsxs)("div", {
-        className: o()(E.soundEmojiContainer, G && E.refresh),
-        children: [(0, r.jsx)(c.Z, {
-          sound: A,
-          onSelect: B
-        }), (0, r.jsx)(h.Z, {
-          setEmojiConfetti: C,
-          emojiConfetti: null == T ? true : T
+        className: b.animation
+      }) : (0, r.jsx)(l.$jN, {
+        className: b.spinner
+      }), k && (0, r.jsxs)("div", {
+        className: o()(b.soundEmojiContainer, B && b.refresh),
+        children: [(0, r.jsx)(u.Z, {
+          sound: C,
+          onSelect: Z
+        }), (0, r.jsx)(m.Z, {
+          setEmojiConfetti: N,
+          emojiConfetti: null == A ? true : A
         })]
       })]
-    }), (0, r.jsx)("div", v(y({
-      tabIndex: null != O || R ? true : 0,
+    }), (0, r.jsx)("div", I(O({
+      tabIndex: null != v || P ? true : 0,
       onFocus: e => {
         var t;
-        e.target === e.currentTarget && (null == (t = w.current) || t.focus())
+        e.target === e.currentTarget && (null == (t = D.current) || t.focus())
       },
-      className: o()(E.giftBoxOptionContainer, a),
-      "aria-label": g.intl.string(g.t.v54NrK),
-      ref: x
-    }, L), {
-      children: null != U && !G && U.map((e, t) => (0, r.jsx)(m.m, {
-        isSelected: O === e,
+      className: o()(b.giftBoxOptionContainer, a),
+      "aria-label": E.intl.string(E.t.v54NrK),
+      ref: L
+    }, j), {
+      children: null != G && !B && G.map((e, t) => (0, r.jsx)(g.m, {
+        isSelected: v === e,
         giftStyle: e,
-        setSelectedGiftStyle: S,
-        ref: 0 === t ? w : null,
-        onFocus: () => P(true),
-        onBlur: () => P(false)
+        setSelectedGiftStyle: T,
+        ref: 0 === t ? D : null,
+        onFocus: () => w(true),
+        onBlur: () => w(false)
       }, e))
     })), (0, r.jsx)("div", {
-      className: E.__invalid_selectPlanDivider
+      className: b.__invalid_selectPlanDivider
     })]
   })
 }

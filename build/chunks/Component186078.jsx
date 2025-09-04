@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
-  Chunk481060 = require("./481060.js"),
+  Chunk755721 = require("./755721.js"),
   Chunk489813 = require("./489813.jsx"),
   Chunk707592 = require("./707592.jsx"),
   Chunk624463 = require("./624463.js");
@@ -30,7 +30,7 @@ function d(e) {
     radioItemIconClassName: s()(u.multipleChoiceIcon, c),
     radioBarClassName: u.multipleChoiceItem
   })), [m, c]);
-  return (0, r.jsx)(a.FXm, {
+  return (0, r.jsx)(a.Gu, {
     radioPosition: "right",
     disabled: t,
     options: f,

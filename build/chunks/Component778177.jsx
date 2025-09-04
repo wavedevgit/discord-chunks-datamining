@@ -381,7 +381,9 @@ class er extends Chunk647438.PureComponent {
   setSelectedIndex(e) {
     this.setState({
       selectedIndex: e
-    }, () => this.props.onSelectedIndexChanged(e))
+    }, () => {
+      this.props.onSelectedIndexChanged(e), this.scrollSelectedIndexIntoView()
+    })
   }
   render() {
     let {
@@ -423,6 +425,21 @@ class er extends Chunk647438.PureComponent {
     super(...e), t = this, B(this, "state", {
       dateHint: (0, w.Pr)(),
       selectedIndex: false
+    }), B(this, "scrollSelectedIndexIntoView", () => {
+      let {
+        navId: e,
+        resultsState: t
+      } = this.props;
+      if ((0, P.Fz)(t.mode.filter)) return;
+      let {
+        selectedIndex: n
+      } = this.state;
+      if (null == n) return;
+      let r = document.getElementById("".concat(e, "-").concat(n));
+      null != r && r.scrollIntoView({
+        block: "nearest",
+        inline: "nearest"
+      })
     }), B(this, "handleDateChange", e => {
       let t = (0, P.Tm)(this.props.searchContext);
       (0, j.bh)({

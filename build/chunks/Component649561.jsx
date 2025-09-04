@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
   Chunk818405 = require("./818405.js"),
@@ -82,7 +82,7 @@ class T extends Chunk647438.PureComponent {
         theme: Chunk981631.BRd.DARK,
         children: r => (0, i.jsxs)(h.P3F, {
           innerRef: this.contentDomRef,
-          className: l()(r, I.container),
+          className: o()(r, I.container),
           onClick: e => e.stopPropagation(),
           children: [(0, i.jsx)(m.ZP, {
             expand: true,
@@ -174,7 +174,7 @@ class k extends Chunk647438.PureComponent {
         pid: i
       }]
     }), setImmediate(() => window.addEventListener("click", N));
-    let o = (0, b.V6)(e, E.gl.Hook, {
+    let l = (0, b.V6)(e, E.gl.Hook, {
       extra: t
     });
     p.Z.track(Z.rMx.APP_CRASHED, {
@@ -182,7 +182,7 @@ class k extends Chunk647438.PureComponent {
       extra: t,
       error_message: e.message,
       error_stack: e.stack,
-      sentry_issue_id: o,
+      sentry_issue_id: l,
       error_level: "fatal"
     }), D()
   }

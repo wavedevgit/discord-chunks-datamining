@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   Chunk442837 = require("./442837.js"),
   Chunk261435 = require("./261435.js"),
@@ -22,23 +22,23 @@ function y(e) {
   let {
     locked: t,
     keybind: n
-  } = e, o = r.useRef(null), p = (0, a.Wu)([c.Z], () => c.Z.getNotifications()), y = (0, a.e7)([d.default], () => d.default.getNotificationPositionMode());
+  } = e, l = r.useRef(null), p = (0, a.Wu)([c.Z], () => c.Z.getNotifications()), y = (0, a.e7)([d.default], () => d.default.getNotificationPositionMode());
   if ((0, a.e7)([f.Z], () => f.Z.isNotificationDisabled(u.OverlayNotificationDisabledSetting.TEXT_CHAT)) || y === g._vf.DISABLED) return null;
   let v = p.filter(e => !t || e.status !== g._1z.TIMED_OUT),
     _ = (0, s.groupBy)(v, e => e.type);
   return (0, i.jsx)(h.Z, {
-    contentDomRef: o,
+    contentDomRef: l,
     observeInterval: 200,
     children: (0, i.jsx)("div", {
-      ref: o,
-      className: l()(m.container, m[y]),
+      ref: l,
+      className: o()(m.container, m[y]),
       children: Object.entries(_).map(e => {
-        let [r, o] = e;
-        return 0 === o.length ? null : (0, i.jsx)(O, {
+        let [r, l] = e;
+        return 0 === l.length ? null : (0, i.jsx)(O, {
           locked: t,
           keybind: n,
           position: y,
-          notification: o[0]
+          notification: l[0]
         }, r)
       })
     })
@@ -50,7 +50,7 @@ function O(e) {
     notification: t,
     position: n,
     keybind: r,
-    locked: o
+    locked: l
   } = e;
   return (0, i.jsx)("div", {
     className: m.notificationGroup,
@@ -59,7 +59,7 @@ function O(e) {
       position: n,
       notification: t,
       keybind: r,
-      locked: o
+      locked: l
     }, t.id)
   })
 }

@@ -347,7 +347,7 @@ function e_() {
         type: Chunk481060.R94.Types.DESCRIPTION,
         className: Chunk197571.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t["86hjzc"])
-      }), (0, Chunk951288.jsx)(Chunk481060.FXm, {
+      }), (0, Chunk951288.jsx)(Chunk755721.Gu, {
         options: [{
           name: Chunk388032.intl.string(Chunk388032.t.YEOEi4),
           value: "username"
@@ -533,7 +533,7 @@ function eE() {
       type: Chunk481060.R94.Types.DESCRIPTION,
       className: Chunk197571.marginBottom8,
       children: null != exports ? (0, Chunk440849.Z)(exports) : Chunk388032.intl.string(Chunk388032.t.GRa6U1)
-    }), (0, Chunk951288.jsx)(Chunk481060.FXm, {
+    }), (0, Chunk951288.jsx)(Chunk755721.Gu, {
       options: [{
         name: Chunk388032.intl.string(Chunk388032.t["Xp+X2d"]),
         value: Chunk611480.yr.ALWAYS_ANIMATE

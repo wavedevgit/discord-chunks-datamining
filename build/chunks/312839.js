@@ -17,8 +17,8 @@ function c(e, t) {
       i.Z.track(s.rMx.NOTIFICATION_VIEWED, t), i.Z.notificationEvent(e, a.bv.Viewed)
     },
     trackClick(n) {
-      var r, l;
-      let c = o.default.isInstanceLocked() ? s.Sbl.LOCKED_OVERLAY : s.Sbl.UNLOCKED_OVERLAY;
+      var r, o;
+      let c = l.default.isInstanceLocked() ? s.Sbl.LOCKED_OVERLAY : s.Sbl.UNLOCKED_OVERLAY;
       i.Z.track(s.rMx.NOTIFICATION_CLICKED, (r = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -36,18 +36,18 @@ function c(e, t) {
           })
         }
         return e
-      }({}, t), l = l = {
+      }({}, t), o = o = {
         location: c,
         action_type: n
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var i = Object.getOwnPropertySymbols(e);
           n.push.apply(n, i)
         }
         return n
-      })(Object(l)).forEach(function(e) {
-        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
+      })(Object(o)).forEach(function(e) {
+        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(o, e))
       }), r)), i.Z.notificationEvent(e, a.bv.Clicked)
     }
   }

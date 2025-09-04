@@ -128,13 +128,13 @@ let eE = e => {
       keybind: t,
       onClick: n,
       isPreviewingInGame: i,
-      locked: o
-    } = e, l = o ? m.P3F : "div";
-    return (0, r.jsx)(l, {
+      locked: l
+    } = e, o = l ? m.P3F : "div";
+    return (0, r.jsx)(o, {
       className: s()(ey.overlayBackground, {
-        [ey.overlayActive]: !o,
-        [ey.overlayLocked]: o,
-        [ey.previewMode]: !o && i
+        [ey.overlayActive]: !l,
+        [ey.overlayLocked]: l,
+        [ey.previewMode]: !l && i
       }),
       onMouseDown: e => {
         let {
@@ -145,7 +145,7 @@ let eE = e => {
         r === eg.AeJ.PRIMARY && t === i && n()
       },
       onContextMenu: eb,
-      children: o ? null : (0, r.jsx)("div", {
+      children: l ? null : (0, r.jsx)("div", {
         className: ey.closeContainer,
         children: (0, r.jsx)(_.Z, {
           variant: _.Z.Variants.BOLD,
@@ -161,14 +161,14 @@ let eE = e => {
       shiftKey: n,
       metaKey: i,
       altKey: r,
-      ctrlKey: o
+      ctrlKey: l
     } = e;
     return {
       keyCode: t,
       shiftKey: n,
       metaKey: i,
       altKey: r,
-      ctrlKey: o
+      ctrlKey: l
     }
   };
 class ex extends Chunk647438.Component {
@@ -206,8 +206,8 @@ class ex extends Chunk647438.Component {
       canGoLive: n,
       isStreaming: i,
       voiceGuild: r,
-      voiceChannelId: o,
-      game: l,
+      voiceChannelId: l,
+      game: o,
       showKeybindNotification: s,
       dismissKeybindNotification: a,
       isOOPOverlayAvailable: c
@@ -290,8 +290,8 @@ class ex extends Chunk647438.Component {
       locked: e,
       keybind: t,
       incompatibleApp: n,
-      initialized: o,
-      isPreviewingInGame: l,
+      initialized: l,
+      isPreviewingInGame: o,
       activeRegions: a,
       windowSize: c,
       voiceGuild: d,
@@ -333,7 +333,7 @@ class ex extends Chunk647438.Component {
   }
   constructor(e) {
     super(e), eO(this, "handleWindowResize", () => {
-      F.default.isFocusedPidOutOfProcess() ? this.forceUpdate() : u()(() => {
+      H.default.isFocusedPidOutOfProcess() ? this.forceUpdate() : u()(() => {
         this.forceUpdate()
       }, 500)
     }), eO(this, "activeKeyEventShapes", []), eO(this, "lockEventShape", (0, $.d2)(this.props.keybindKeyCodes)), eO(this, "getActiveKeyEventIndex", e => this.activeKeyEventShapes.findIndex(t => p()(t, e))), eO(this, "onKeyDownGlobal", e => {
@@ -343,9 +343,9 @@ class ex extends Chunk647438.Component {
       n || i || this.activeKeyEventShapes.push(t), this.activeKeyEventShapes.length === this.lockEventShape.length && this.lockEventShape.every(e => this.activeKeyEventShapes.some(t => p()(e, t))) && (e.preventDefault(), e.stopPropagation());
       let {
         locked: r,
-        activeRegions: o
+        activeRegions: l
       } = this.props;
-      t.keyCode === c().codes.esc && r && o.has(eg.O0n.TEXT_WIDGET) && v.Z.deactivateAllRegions()
+      t.keyCode === c().codes.esc && r && l.has(eg.O0n.TEXT_WIDGET) && v.Z.deactivateAllRegions()
     }), eO(this, "onKeyUpGlobal", e => {
       let t = eS(e),
         n = this.getActiveKeyEventIndex(t);
@@ -361,8 +361,8 @@ function ej() {
   let {
     locked: n,
     initialized: i,
-    incompatibleApp: o,
-    activeRegions: l,
+    incompatibleApp: l,
+    activeRegions: o,
     isPreviewingInGame: s,
     trackedGame: a
   } = (0, Chunk442837.cj)([Chunk237997.default], () => ({

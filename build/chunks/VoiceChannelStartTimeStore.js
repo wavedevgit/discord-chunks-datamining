@@ -49,6 +49,7 @@ let b = new m(Chunk570140.Z, {
       voiceStartTime: r
     } = e;
     if (!u.W.getCurrentConfig({
+        guildId: t,
         location: "VoiceChannelStartTimeStore"
       }).enabled) returnfalse;
     null == p[t] && (p[t] = {}), p[t][n] = null != r ? h(r) : true

@@ -2,11 +2,12 @@
 /** chunk id: 901151, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => P
 }), require("./642613.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk524437 = require("./524437.js"),
+  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk230711 = require("./230711.js"),
   Chunk768581 = require("./768581.js"),
@@ -22,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk42101 = require("./42101.js");
 
-function y(e, t, n) {
+function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,20 +32,20 @@ function y(e, t, n) {
   }) : e[t] = n, e
 }
 
-function O(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      O(e, t, n[t])
     })
   }
   return e
 }
 
-function v(e, t) {
+function I(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,102 +56,102 @@ function v(e, t) {
   return n
 }
 
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = 3,
-  T = 3;
+let T = 3,
+  A = 3;
 
-function A(e) {
+function C(e) {
   let {
     applications: t
-  } = e, n = i.useMemo(() => t.sort((e, t) => u.default.compare(t.id, e.id)), [t]), a = i.useMemo(() => {
+  } = e, n = i.useMemo(() => t.sort((e, t) => d.default.compare(t.id, e.id)), [t]), a = i.useMemo(() => {
     let e = [];
-    for (let t = 0; t < S; t++) {
+    for (let t = 0; t < T; t++) {
       let r = n[t];
       if (null == r) break;
       e.push(r.name)
     }
     let t = e.join(", "),
-      i = n.length - S;
-    return i > 0 ? E.intl.format(E.t.sHFdTk, {
+      i = n.length - T;
+    return i > 0 ? b.intl.format(b.t.sHFdTk, {
       gameList: t,
-      plusMoreHook: (e, t) => (0, r.jsx)(o.Text, {
+      plusMoreHook: (e, t) => (0, r.jsx)(s.Text, {
         tag: "span",
         variant: "text-sm/medium",
         color: "text-muted",
-        children: E.intl.format(E.t["EADv+/"], {
+        children: b.intl.format(b.t["EADv+/"], {
           count: i
         })
       }, t)
     }) : e.join(", ")
-  }, [n]), c = i.useMemo(() => {
+  }, [n]), o = i.useMemo(() => {
     let e = [];
-    for (let t = 0; t < T; t++) {
+    for (let t = 0; t < A; t++) {
       let i = n[t];
       if (null == i) break;
       let {
         icon: a,
-        name: s,
-        id: c
-      } = i, u = l.ZP.getApplicationIconURL({
-        id: c,
+        name: o,
+        id: l
+      } = i, u = c.ZP.getApplicationIconURL({
+        id: l,
         icon: a
       });
-      e.push((0, r.jsx)(o.ua7, {
-        text: s,
-        children: e => (0, r.jsx)("img", I(O({}, e), {
+      e.push((0, r.jsx)(s.ua7, {
+        text: o,
+        children: e => (0, r.jsx)("img", S(v({}, e), {
           src: u,
-          "aria-label": s,
-          className: b.icon
+          "aria-label": o,
+          className: y.icon
         }))
-      }, c))
+      }, l))
     }
-    let t = n.length - T;
+    let t = n.length - A;
     return t > 0 && e.push((0, r.jsx)("div", {
-      className: b.moreIcon,
-      children: (0, r.jsx)(o.Text, {
+      className: y.moreIcon,
+      children: (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "text-default",
         children: "+".concat(t)
       })
     }, "omitted")), e
-  }, [n]), d = i.useCallback(() => {
-    s.Z.open(g.oAB.AUTHORIZED_APPS)
+  }, [n]), u = i.useCallback(() => {
+    l.Z.open(E.oAB.AUTHORIZED_APPS)
   }, []);
   return (0, r.jsxs)("div", {
-    className: b.header,
+    className: y.header,
     children: [(0, r.jsxs)("div", {
-      className: b.gameNamesHeader,
-      children: [(0, r.jsx)(o.Text, {
+      className: y.gameNamesHeader,
+      children: [(0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         color: "header-primary",
         children: a
-      }), (0, r.jsxs)(o.P3F, {
-        onClick: d,
-        className: b.manageGamesLink,
-        children: [(0, r.jsx)(o.Text, {
+      }), (0, r.jsxs)(s.P3F, {
+        onClick: u,
+        className: y.manageGamesLink,
+        children: [(0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "interactive-normal",
-          children: E.intl.format(E.t.oYaYOT, {})
-        }), (0, r.jsx)(o.Fbu, {
+          children: b.intl.format(b.t.oYaYOT, {})
+        }), (0, r.jsx)(s.Fbu, {
           size: "xxs",
-          color: o.TVs.colors.INTERACTIVE_NORMAL,
-          className: b.manageGamesChevron
+          color: s.TVs.colors.INTERACTIVE_NORMAL,
+          className: y.manageGamesChevron
         })]
       })]
     }), (0, r.jsx)("div", {
-      className: b.divider
+      className: y.divider
     }), (0, r.jsx)("div", {
-      className: b.gameIcons,
-      children: c
+      className: y.gameIcons,
+      children: o
     })]
   })
 }
 
-function C() {
+function N() {
   let e = Chunk695346._j.useSetting();
   return (0, Chunk951288.jsx)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
@@ -165,7 +166,7 @@ function C() {
   })
 }
 
-function N() {
+function R() {
   let e = Chunk695346.JG.useSetting(),
     t = module === Chunk524437.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET ? Chunk524437.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL : module,
     n = [{
@@ -183,31 +184,31 @@ function N() {
     children: [(0, Chunk951288.jsx)(Chunk838436.H, {
       header: Chunk388032.intl.string(Chunk388032.t["ms+TmZ"]),
       description: Chunk388032.intl.string(Chunk388032.t["4NN4+/"])
-    }), (0, Chunk951288.jsx)(Chunk481060.FXm, {
+    }), (0, Chunk951288.jsx)(Chunk755721.Gu, {
       value: exports,
       options: require,
       onChange: e => {
         let {
           value: t
         } = e;
-        return d.JG.updateSetting(t)
+        return f.JG.updateSetting(t)
       }
     })]
   })
 }
 
-function R() {
+function P() {
   let {
     showLoadingIndicator: e,
     slayerSdkApplications: t
   } = (0, Chunk749876.Z)(true);
   return (0, Chunk951288.jsx)(Chunk546957.Z, {
     children: module ? (0, Chunk951288.jsx)(Chunk481060.$jN, {}) : exports.length > 0 ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [(0, Chunk951288.jsx)(A, {
+      children: [(0, Chunk951288.jsx)(C, {
         applications: exports
-      }), (0, Chunk951288.jsx)(C, {}), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk951288.jsx)(N, {}), (0, Chunk951288.jsx)("div", {
         className: Chunk42101.divider
-      }), (0, Chunk951288.jsx)(N, {})]
+      }), (0, Chunk951288.jsx)(R, {})]
     }) : (0, Chunk951288.jsxs)("div", {
       className: Chunk42101.emptyContainer,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {

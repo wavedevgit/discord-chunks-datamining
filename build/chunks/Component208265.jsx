@@ -33,12 +33,12 @@ function h(e) {
   let f = a.useCallback(() => {
       d.Z.close(), g()
     }, [g]),
-    S = a.useCallback(() => {
+    k = a.useCallback(() => {
       var e;
       let n = null == (e = p.JQ[C]) ? true : e.next;
       n ? N(n) : f()
     }, [C, f]),
-    k = a.useCallback(() => {
+    S = a.useCallback(() => {
       var e;
       let n = null == (e = p.JQ[C]) ? true : e.prev;
       n ? N(n) : f()
@@ -61,7 +61,7 @@ function h(e) {
           children: (0, i.jsx)(m.Z, {
             classification: j,
             onClose: f,
-            onNext: S,
+            onNext: k,
             isSpam: E,
             isCoppa: T,
             appealIngestionType: v,
@@ -74,8 +74,8 @@ function h(e) {
           children: (0, i.jsx)(o.Z, {
             isDsaEligible: I,
             onClose: f,
-            onNext: S,
-            onBack: k
+            onNext: k,
+            onBack: S
           })
         }), (0, i.jsx)(l.Mi4, {
           id: p.Cs.CONFIRM_SUBMISSION,
@@ -84,15 +84,15 @@ function h(e) {
           children: (0, i.jsx)(c.Z, {
             isDsaEligible: I,
             onClose: f,
-            onNext: S,
-            onBack: k
+            onNext: k,
+            onBack: S
           })
         }), (0, i.jsx)(l.Mi4, {
           id: p.Cs.REQUEST_SENT,
           impressionName: s.ImpressionNames.APPEAL_INGESTION_REQUEST_SENT,
           impressionProperties: p.ZW,
           children: (0, i.jsx)(x.Z, {
-            onNext: S
+            onNext: k
           })
         })]
       })

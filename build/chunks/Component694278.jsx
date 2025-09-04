@@ -1,10 +1,11 @@
 /** Chunk was on 72458 **/
 /** chunk id: 694278, original params: t,e,r (module,exports,require) **/
 require.d(exports, {
-  default: () => b
+  default: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk881052 = require("./881052.js"),
   Chunk434404 = require("./434404.js"),
@@ -14,25 +15,25 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197571 = require("./197571.js");
 
-function b(t) {
+function g(t) {
   var e, r;
   let {
-    guild: b,
-    onClose: g,
-    hideColors: y
-  } = t, [f, _] = a.useState(b.verificationLevel), [m, O] = a.useState(null), j = b.features.has(d.oNc.COMMUNITY), v = (0, l.IF)(j, y).filter(t => !t.disabled), h = a.useCallback(async () => {
-    null != m && O(null);
+    guild: g,
+    onClose: y,
+    hideColors: f
+  } = t, [_, m] = a.useState(g.verificationLevel), [O, j] = a.useState(null), v = g.features.has(d.oNc.COMMUNITY), h = (0, s.IF)(v, f).filter(t => !t.disabled), x = a.useCallback(async () => {
+    null != O && j(null);
     try {
-      await c.Z.saveGuild(b.id, {
-        verificationLevel: f
-      }), c.Z.updateGuild({
-        verificationLevel: f
-      }), g()
+      await l.Z.saveGuild(g.id, {
+        verificationLevel: _
+      }), l.Z.updateGuild({
+        verificationLevel: _
+      }), y()
     } catch (t) {
-      O(new o.Hx(t).getAnyErrorMessage())
+      j(new c.Hx(t).getAnyErrorMessage())
     }
-  }, [m, b.id, f, g]);
-  return (0, n.jsx)(s.Z, (e = function(t) {
+  }, [O, g.id, _, y]);
+  return (0, n.jsx)(u.Z, (e = function(t) {
     for (var e = 1; e < arguments.length; e++) {
       var r = null != arguments[e] ? arguments[e] : {},
         n = Object.keys(r);
@@ -50,19 +51,19 @@ function b(t) {
     }
     return t
   }({}, t), r = r = {
-    title: u.intl.string(u.t.DpRdYG),
-    errorText: m,
-    onConfirm: h,
-    onCancel: g,
-    children: (0, n.jsxs)(i.hjN, {
-      children: [(0, n.jsx)(i.R94, {
-        type: i.R94.Types.DESCRIPTION,
-        className: p.marginBottom20,
-        children: u.intl.format(u.t.iuRk2t, {})
-      }), (0, n.jsx)(i.FXm, {
-        value: f,
-        options: v,
-        onChange: t => _(t.value)
+    title: p.intl.string(p.t.DpRdYG),
+    errorText: O,
+    onConfirm: x,
+    onCancel: y,
+    children: (0, n.jsxs)(o.hjN, {
+      children: [(0, n.jsx)(o.R94, {
+        type: o.R94.Types.DESCRIPTION,
+        className: b.marginBottom20,
+        children: p.intl.format(p.t.iuRk2t, {})
+      }), (0, n.jsx)(i.Gu, {
+        value: _,
+        options: h,
+        onChange: t => m(t.value)
       })]
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(t, e) {

@@ -87,7 +87,7 @@ function E(e) {
     cancelText: u.intl.string(u.t["ETE/oK"]),
     onConfirm: I,
     confirmButtonColor: a.zx.Colors.BRAND,
-    children: (0, r.jsx)(o.FXm, {
+    children: (0, r.jsx)(a.Gu, {
       className: d.responseOptions,
       value: E,
       options: (0, l.pF)(),

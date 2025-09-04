@@ -745,7 +745,7 @@ class eR extends Chunk647438.PureComponent {
       className: ec.marginBottom40,
       children: [(0, i.jsx)(m.xJW, {
         title: ea.intl.string(ea.t.jhJEJi),
-        children: (0, i.jsx)(m.FXm, {
+        children: (0, i.jsx)(g.Gu, {
           onChange: e => {
             let {
               value: t

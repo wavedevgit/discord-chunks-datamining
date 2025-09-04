@@ -1,7 +1,7 @@
 /** Chunk was on 83264 **/
 /** chunk id: 368003, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -9,11 +9,12 @@ var Chunk951288 = require("./951288.js"),
   o = require.n(Chunk404759),
   Chunk423650 = require("./423650.js"),
   l = require.n(Chunk423650),
+  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk947719 = require("./947719.js");
 
-function d(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,7 +22,7 @@ function d(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class h extends Chunk647438.Component {
+class g extends Chunk647438.Component {
   render() {
     let {
       selectedValue: e
@@ -37,7 +38,7 @@ class h extends Chunk647438.Component {
         className: Chunk947719.selectYourAnswer,
         variant: "text-xs/normal",
         children: Chunk388032.intl.string(Chunk388032.t.YeiLeH)
-      }), (0, Chunk951288.jsx)(Chunk481060.FXm, {
+      }), (0, Chunk951288.jsx)(Chunk755721.Gu, {
         options: this.getQuestionOptions(),
         onChange: this.handleOptionChange,
         value: module
@@ -45,12 +46,12 @@ class h extends Chunk647438.Component {
     })
   }
   constructor(...e) {
-    super(...e), d(this, "state", {
+    super(...e), h(this, "state", {
       selectedValue: null
-    }), d(this, "getQuestionOptions", o()(() => l()(this.props.options.map(e => ({
+    }), h(this, "getQuestionOptions", o()(() => l()(this.props.options.map(e => ({
       name: e.copy,
       value: e.house
-    }))))), d(this, "handleOptionChange", e => {
+    }))))), h(this, "handleOptionChange", e => {
       let {
         onSelect: t
       } = this.props;

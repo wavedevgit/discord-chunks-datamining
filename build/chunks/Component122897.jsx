@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk524437 = require("./524437.js"),
-  Chunk481060 = require("./481060.js"),
+  Chunk755721 = require("./755721.js"),
   Chunk63063 = require("./63063.js"),
   Chunk78451 = require("./78451.js"),
   Chunk695346 = require("./695346.js"),
@@ -32,7 +32,7 @@ function m() {
       description: Chunk388032.intl.format(Chunk388032.t.RvjRRE, {
         appealLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SAFE_DIRECT_MESSAGING)
       })
-    }), (0, Chunk951288.jsx)(Chunk481060.FXm, {
+    }), (0, Chunk951288.jsx)(Chunk755721.Gu, {
       className: Chunk918526.radioGroup,
       radioItemClassName: Chunk918526.radioGroupItem,
       value: module,

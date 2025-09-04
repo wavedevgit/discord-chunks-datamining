@@ -106,11 +106,11 @@ function L(e) {
   })), [d]), m = null != c && c >= 400;
   return (0, r.jsx)("div", {
     ref: o,
-    children: (0, r.jsx)(p.FXm, {
+    children: (0, r.jsx)(g.Gu, {
       options: u,
       value: t,
       orientation: m ? "horizontal" : "vertical",
-      size: p.FXm.Sizes.NONE,
+      size: g.l7.NONE,
       className: a()({
         [w.radioGroupHorizontal]: m
       }),

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  l = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk866442 = require("./866442.js"),
   Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
@@ -52,10 +52,10 @@ function q(A) {
   let {
     newRoleParams: e,
     setNewRoleParams: t
-  } = A, a = r.useRef(null), {
+  } = A, l = r.useRef(null), {
     name: s,
     color: q
-  } = e, h = A => t(e => (l()(null != e, "newRoleParams should be defined"), p(f({}, e), {
+  } = e, h = A => t(e => (a()(null != e, "newRoleParams should be defined"), p(f({}, e), {
     color: A
   })));
   return (0, n.jsxs)("div", {
@@ -63,7 +63,7 @@ function q(A) {
     children: [(0, n.jsx)(o.oil, {
       autoFocus: true,
       value: s,
-      onChange: A => t(e => (l()(null != e, "newRoleParams should be defined"), p(f({}, e), {
+      onChange: A => t(e => (a()(null != e, "newRoleParams should be defined"), p(f({}, e), {
         name: A
       }))),
       id: m,
@@ -76,7 +76,7 @@ function q(A) {
           color: (0, i.Rf)(q)
         })
       }), (0, n.jsx)(o.yRy, {
-        targetElementRef: a,
+        targetElementRef: l,
         renderPopout: A => (0, n.jsx)(o.Z$W, p(f({}, A), {
           value: q,
           onChange: h
@@ -84,7 +84,7 @@ function q(A) {
         children: A => (0, n.jsx)(o.hU, p(f({}, A), {
           variant: "secondary",
           icon: o.ilE,
-          buttonRef: a,
+          buttonRef: l,
           "aria-label": u.intl.string(u.t.QLgdlZ)
         }))
       })]

@@ -27,7 +27,7 @@ function g(e) {
     onBack: N
   } = e, j = (0, s.e7)([d.Z], () => d.Z.getAppealClassificationId()), {
     classification: I
-  } = (0, m.YG)(null != j ? j : p.lds), E = (0, x.c7)(null == I ? true : I.description), T = (0, s.e7)([d.Z], () => d.Z.getIsSubmitting()), v = (0, s.e7)([d.Z], () => d.Z.getAppealSignal()), f = (0, s.e7)([d.Z], () => d.Z.getFreeTextAppealReason()), [S, k] = a.useState(false), [A, Z] = a.useState(""), L = a.useCallback(e => {
+  } = (0, m.YG)(null != j ? j : p.lds), E = (0, x.c7)(null == I ? true : I.description), T = (0, s.e7)([d.Z], () => d.Z.getIsSubmitting()), v = (0, s.e7)([d.Z], () => d.Z.getAppealSignal()), f = (0, s.e7)([d.Z], () => d.Z.getFreeTextAppealReason()), [k, S] = a.useState(false), [A, Z] = a.useState(""), L = a.useCallback(e => {
     r.Z.dispatch({
       type: "SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE",
       userInput: e
@@ -76,14 +76,14 @@ function g(e) {
       }), t && (0, i.jsx)("div", {
         className: _.anchorContainer,
         children: (0, i.jsx)(l.eee, {
-          onClick: () => k(e => !e),
+          onClick: () => S(e => !e),
           children: (0, i.jsx)(l.X6q, {
             variant: "heading-md/normal",
             color: "text-link",
             children: f.length > 0 ? u.intl.string(u.t.tnE3bW) : u.intl.string(u.t.uoQFIi)
           })
         })
-      }), S && t && (0, i.jsx)("div", {
+      }), k && t && (0, i.jsx)("div", {
         className: _.inputContainer,
         children: (0, i.jsx)(l.Kx8, {
           value: f,

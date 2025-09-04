@@ -388,7 +388,7 @@ function ep() {
       title: "Button Options",
       children: [(0, Chunk951288.jsx)(Chunk481060.xJW, {
         title: "Button size",
-        children: (0, Chunk951288.jsx)(Chunk481060.FXm, {
+        children: (0, Chunk951288.jsx)(Chunk755721.Gu, {
           onChange: e => {
             let {
               value: n
@@ -406,7 +406,7 @@ function ep() {
         })
       }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
         title: "Icon position",
-        children: (0, Chunk951288.jsx)(Chunk481060.FXm, {
+        children: (0, Chunk951288.jsx)(Chunk755721.Gu, {
           onChange: e => {
             let {
               value: t
@@ -427,7 +427,7 @@ function ep() {
         })
       }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
         title: "Loading animation",
-        children: (0, Chunk951288.jsx)(Chunk481060.FXm, {
+        children: (0, Chunk951288.jsx)(Chunk755721.Gu, {
           onChange: e => {
             let {
               value: t
@@ -1851,6 +1851,12 @@ function eO() {
         value: require,
         onChange: e => a(e),
         children: "FormSwitch with a label"
+      }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
+        disabled: true,
+        hideBorder: true,
+        value: require,
+        onChange: e => a(e),
+        children: "FormSwitch with a label"
       })]
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk726927.section,
@@ -1858,7 +1864,7 @@ function eO() {
         variant: "heading-xl/semibold",
         children: "Radio Buttons"
       }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
-        children: (0, Chunk951288.jsx)(Chunk481060.FXm, {
+        children: (0, Chunk951288.jsx)(Chunk755721.Gu, {
           onChange: e => {
             let {
               value: t
@@ -2438,7 +2444,8 @@ function eC(e) {
     }), (0, r.jsx)(y.G, {
       leading: E ? (0, r.jsx)(y.B, {
         value: false,
-        onChange: () => {}
+        onChange: (e, t) => {},
+        text: "Don't show again"
       }) : true,
       actionsFullWidth: S,
       actions: [{

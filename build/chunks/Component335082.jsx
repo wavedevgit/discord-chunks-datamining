@@ -54,7 +54,7 @@ function g() {
     n = e => {
       l.no.updateSetting(e)
     },
-    a = [{
+    s = [{
       value: Chunk524437.GI.ACTIVITY_STATUS_ON,
       name: Chunk388032.intl.string(Chunk388032.t.UzGMHx)
     }, {
@@ -85,8 +85,8 @@ function g() {
           variant: "heading-md/medium",
           color: "header-primary",
           children: Chunk388032.intl.string(Chunk933554.default["/LHVbm"])
-        }), (0, Chunk951288.jsx)(Chunk481060.FXm, {
-          options: Chunk755721,
+        }), (0, Chunk951288.jsx)(Chunk755721.Gu, {
+          options: Chunk921801,
           value: exports,
           onChange: e => n(e.value)
         })]

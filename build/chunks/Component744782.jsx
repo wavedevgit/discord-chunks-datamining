@@ -49,8 +49,8 @@ function E(e) {
     }) : null,
     A = null == D || null == P,
     R = (0, s.Z)(null != D ? D : ""),
-    L = null != (n = null == P ? true : P.maxAge) ? n : y.value,
-    _ = null != (E = null == P ? true : P.maxUses) ? E : b.value;
+    G = null != (n = null == P ? true : P.maxAge) ? n : y.value,
+    L = null != (E = null == P ? true : P.maxUses) ? E : b.value;
   return (0, l.jsxs)("div", {
     className: j.container,
     children: [(0, l.jsx)(i.P3F, {
@@ -103,7 +103,7 @@ function E(e) {
         variant: "text-xs/normal",
         color: "header-secondary",
         className: j.inviteDetail,
-        children: (0, v.Vg)(L, _)
+        children: (0, v.Vg)(G, L)
       })]
     })]
   })

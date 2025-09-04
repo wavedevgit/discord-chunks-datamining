@@ -40,13 +40,13 @@ function E(e) {
     image: D,
     scheduledEndTime: A,
     scheduledStartTime: R,
-    recurrenceRule: L
-  } = t, _ = (0, d._d)(I), k = (0, d.K3)(I), G = null != t && (0, m.xt)(t), M = r.useMemo(() => {
+    recurrenceRule: G
+  } = t, L = (0, d._d)(I), _ = (0, d.K3)(I), k = null != t && (0, m.xt)(t), M = r.useMemo(() => {
     let e = (0, v.v1)(t);
     return null != e ? e : {
       startDate: a()(R)
     }
-  }, [t, R]), [X, W] = r.useState(() => (0, v.zi)(a()(R), L)), z = r.useRef(null);
+  }, [t, R]), [X, W] = r.useState(() => (0, v.zi)(a()(R), G)), z = r.useRef(null);
   r.useEffect(() => {
     if (T) {
       var e;
@@ -100,7 +100,7 @@ function E(e) {
   return (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)("div", {
       className: b.blockedUsersContainer,
-      children: null != I && !G && (_ > 0 || k > 0) && (0, l.jsx)(x.mv, {
+      children: null != I && !k && (L > 0 || _ > 0) && (0, l.jsx)(x.mv, {
         channelId: I
       })
     }), (0, l.jsxs)("div", {
@@ -144,10 +144,10 @@ function E(e) {
           }), W(e))
         },
         schedule: M,
-        recurrenceRule: L,
+        recurrenceRule: G,
         showEndDate: Z === f.WX.EXTERNAL,
         requireEndDate: Z === f.WX.EXTERNAL,
-        disableStartDateTime: G,
+        disableStartDateTime: k,
         guildId: E
       }), (0, l.jsx)(N, {
         error: C

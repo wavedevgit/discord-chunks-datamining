@@ -113,7 +113,7 @@ class v extends(i = Chunk647438.PureComponent) {
         confirmText: t,
         onConfirmClick: n,
         onCancelClick: i,
-        hint: l
+        hint: o
       },
       state: {
         expanded: s

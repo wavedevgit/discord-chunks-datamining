@@ -33,7 +33,7 @@ function h(e, t, n, h) {
     icon: g,
     title: p,
     body: f,
-    hint: e => (0, l.QR)(e, (0, a.P)(), u.t["Odi54+"]),
+    hint: e => (0, o.QR)(e, (0, a.P)(), u.t["Odi54+"]),
     confirmText: u.intl.string(u.t["fgP/wc"]),
     cancelText: u.intl.string(u.t.tpXzJy),
     onNotificationShow: () => {
@@ -48,7 +48,7 @@ function h(e, t, n, h) {
       }), y("join"), r.Z.updateNotificationStatus(n)
     },
     onCancelClick: (t, n) => {
-      (0, o.In)(e.id, {
+      (0, l.In)(e.id, {
         section: c.jXE.OVERLAY,
         object: c.qAy.ACK_DECLINE_REQUEST_TO_JOIN,
         objectType: c.Qqv.ACK_SEMI_AUTOMATIC

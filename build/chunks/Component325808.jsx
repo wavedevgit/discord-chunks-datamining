@@ -175,7 +175,7 @@ function P() {
     children: [(0, Chunk951288.jsx)(Chunk481060.xJW, {
       title: Chunk388032.intl.string(Chunk388032.t["pS+K2N"]),
       className: Chunk197571.marginBottom20,
-      children: (0, Chunk951288.jsx)(Chunk481060.FXm, {
+      children: (0, Chunk951288.jsx)(Chunk755721.Gu, {
         onChange: o,
         options: Chunk120356,
         value: exports

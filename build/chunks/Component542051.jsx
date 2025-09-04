@@ -194,7 +194,7 @@ class y extends(r = Chunk647438.PureComponent) {
       navId: n,
       className: r
     } = this.props, a = "" === module.trim();
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk951288.jsxs)(Chunk481060.u2D, {
       className: s()(Chunk575209.container, r),
       onMouseDown: E,
       role: "listbox",

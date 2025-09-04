@@ -102,7 +102,7 @@ function v(e) {
               color: I ? "text-danger" : "text-muted",
               children: p.intl.string(p.t.yhUvdX)
             })
-          }), (0, a.jsx)(l.FXm, {
+          }), (0, a.jsx)(o.Gu, {
             value: C,
             radioItemClassName: g.radioItem,
             className: g.radioGroup,

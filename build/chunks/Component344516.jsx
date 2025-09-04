@@ -97,16 +97,16 @@ class A extends Chunk647438.PureComponent {
 function N(e) {
   let t, {
       mediaEngineContext: n,
-      speaking: a = false
+      speaking: h = false
     } = e,
     {
-      inputVolume: h,
-      outputVolume: c,
-      inputMode: g,
-      shortcut: C,
-      vadThreshold: v,
-      vadAutoThreshold: N,
-      delay: O
+      inputVolume: u,
+      outputVolume: g,
+      inputMode: C,
+      shortcut: v,
+      vadThreshold: N,
+      vadAutoThreshold: O,
+      delay: B
     } = (0, s.cj)([x.Z], () => ({
       inputVolume: x.Z.getInputVolume(),
       outputVolume: x.Z.getOutputVolume(),
@@ -116,20 +116,20 @@ function N(e) {
       vadAutoThreshold: x.Z.getModeOptions(n).autoThreshold,
       delay: x.Z.getModeOptions(n).delay
     })),
-    B = [{
+    S = [{
       value: p.pM4.VOICE_ACTIVITY,
       name: V.intl.string(V.t.cHCEOD)
     }, {
       value: p.pM4.PUSH_TO_TALK,
       name: V.intl.string(V.t.Q8gkVF)
     }];
-  return t = g === p.pM4.PUSH_TO_TALK ? (0, i.jsxs)(l.Fragment, {
+  return t = C === p.pM4.PUSH_TO_TALK ? (0, i.jsxs)(l.Fragment, {
     children: [(0, i.jsx)(r.xJW, {
       title: V.intl.string(V.t.YkDjVF),
       className: T.marginBottom20,
       children: (0, i.jsx)(d.Z, {
-        defaultValue: C,
-        onChange: e => o.Z.setMode(g, {
+        defaultValue: v,
+        onChange: e => o.Z.setMode(C, {
           shortcut: e
         }, n)
       })
@@ -139,8 +139,8 @@ function N(e) {
         id: Z,
         children: V.intl.string(V.t.y0ShVl)
       }), (0, i.jsx)(r.iRW, {
-        initialValue: O,
-        onValueChange: e => o.Z.setMode(g, {
+        initialValue: B,
+        onValueChange: e => o.Z.setMode(C, {
           delay: e
         }, n),
         onValueRender: e => e >= 1e3 ? (e /= 1e3, "".concat(e.toFixed(2), "s")) : "".concat(e.toFixed(0), "ms"),
@@ -149,11 +149,11 @@ function N(e) {
       })]
     })]
   }) : (0, i.jsx)(A, {
-    speaking: a,
-    inputMode: g,
-    threshold: v,
-    autoThreshold: N,
-    onThresholdChange: (e, t) => o.Z.setMode(g, {
+    speaking: h,
+    inputMode: C,
+    threshold: N,
+    autoThreshold: O,
+    onThresholdChange: (e, t) => o.Z.setMode(C, {
       threshold: e,
       autoThreshold: t
     }, n)
@@ -161,7 +161,7 @@ function N(e) {
     children: [(0, i.jsx)(r.xJW, {
       title: V.intl.string(V.t.hHMYbW),
       className: T.marginBottom20,
-      children: (0, i.jsx)(u.j, {
+      children: (0, i.jsx)(c.j, {
         deviceType: j.h7.AUDIO_INPUT,
         location: "VoiceSettingsModal"
       })
@@ -171,14 +171,14 @@ function N(e) {
         id: M,
         children: V.intl.string(V.t.OX2Bnp)
       }), (0, i.jsx)(r.iRW, {
-        initialValue: (0, m.P)(h),
+        initialValue: (0, m.P)(u),
         asValueChanges: e => o.Z.setInputVolume((0, m.A)(e)),
         "aria-labelledby": M
       })]
     }), (0, i.jsx)(r.xJW, {
       title: V.intl.string(V.t.dl18zc),
       className: T.marginBottom20,
-      children: (0, i.jsx)(u.j, {
+      children: (0, i.jsx)(c.j, {
         deviceType: j.h7.AUDIO_OUTPUT,
         location: "VoiceSettingsModal"
       })
@@ -188,7 +188,7 @@ function N(e) {
         id: b,
         children: V.intl.string(V.t.eATD2N)
       }), (0, i.jsx)(r.iRW, {
-        initialValue: (0, m.P)(c),
+        initialValue: (0, m.P)(g),
         maxValue: 200,
         asValueChanges: e => o.Z.setOutputVolume((0, m.A)(e)),
         "aria-labelledby": b
@@ -196,15 +196,15 @@ function N(e) {
     }), (0, i.jsx)(r.xJW, {
       title: V.intl.string(V.t["pS+K2N"]),
       className: T.marginBottom20,
-      children: (0, i.jsx)(r.FXm, {
+      children: (0, i.jsx)(a.Gu, {
         onChange: e => {
           let {
             value: t
           } = e;
           return o.Z.setMode(t, {}, n)
         },
-        options: B,
-        value: g
+        options: S,
+        value: C
       })
     }), t]
   })

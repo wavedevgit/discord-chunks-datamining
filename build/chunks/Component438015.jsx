@@ -22,7 +22,7 @@ class c extends Chunk647438.Component {
     let e, t, n, i, {
       props: {
         position: r,
-        zIndex: o
+        zIndex: l
       }
     } = this;
     switch (Chunk647438) {
@@ -57,7 +57,7 @@ class c extends Chunk647438.Component {
         notification: {
           props: {
             renderFooter: r,
-            onNotificationShow: o,
+            onNotificationShow: l,
             onDismissClick: s,
             onNotificationClick: c,
             onConfirmClick: d,
@@ -70,13 +70,13 @@ class c extends Chunk647438.Component {
       var n, i, r = function(e, t) {
         if (null == e) return {};
         var n, i, r = {},
-          o = Object.keys(e);
-        for (i = 0; i < o.length; i++) n = o[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+          l = Object.keys(e);
+        for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
         return r
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (i = 0; i < o.length; i++) n = o[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+        var l = Object.getOwnPropertySymbols(e);
+        for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
       }
       return r
     }(this.props.notification.props, ["renderFooter", "onNotificationShow", "onDismissClick", "onNotificationClick", "onConfirmClick", "onCancelClick"]);
@@ -127,7 +127,7 @@ class c extends Chunk647438.Component {
           onDismissClick: n
         }
       } = this.props.notification;
-      o.Z.updateNotificationStatus(t), null == n || n(e, t)
+      l.Z.updateNotificationStatus(t), null == n || n(e, t)
     }), a(this, "handleNotificationClick", e => {
       let {
         id: t,

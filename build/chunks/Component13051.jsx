@@ -171,7 +171,7 @@ function P(e) {
       })
     }]
   }
-  let X = (0, i.jsxs)(g.Z, {
+  let J = (0, i.jsxs)(g.Z, {
       className: Z.header,
       align: g.Z.Align.CENTER,
       children: [(0, i.jsx)(C.Z, {
@@ -203,8 +203,8 @@ function P(e) {
         })
       })]
     }),
-    J = null;
-  return P && !A && null != o && (J = (0, i.jsxs)(g.Z, {
+    X = null;
+  return P && !A && null != o && (X = (0, i.jsxs)(g.Z, {
     className: Z.body,
     direction: g.Z.Direction.VERTICAL,
     children: [(0, i.jsx)(p.$i$, {
@@ -401,8 +401,8 @@ function P(e) {
         className: Z.expandableHeader,
         "aria-expanded": P && !A,
         onClick: T,
-        children: X
-      }) : X, J]
+        children: J
+      }) : J, X]
     })
   })
 }

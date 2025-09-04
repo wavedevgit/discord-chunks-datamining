@@ -52,13 +52,13 @@ function b(t) {
     pauseDuration: r,
     setPauseDuration: s,
     footer: o,
-    premiumSubscription: c
-  } = t, d = a.useCallback(t => {
+    premiumSubscription: d
+  } = t, p = a.useCallback(t => {
     let {
       value: e
     } = t;
     s(e)
-  }, [s]), p = c.status === j.O0b.PAUSED ? E.intl.string(E.t.Lp9WoK) : E.intl.string(E.t.eSR83d), x = function(t) {
+  }, [s]), x = d.status === j.O0b.PAUSED ? E.intl.string(E.t.Lp9WoK) : E.intl.string(E.t.eSR83d), _ = function(t) {
     let e = t.status === j.O0b.PAUSED ? E.t.o3upfX : E.t.dBXZEh,
       {
         durations: n,
@@ -81,9 +81,9 @@ function b(t) {
       radioBarClassName: g.cancelText,
       radioItemIconClassName: g.cancelText
     }), a
-  }(c);
+  }(d);
   return (0, m.ZP)(() => {
-    x.length < 1 || s(x[0].value)
+    _.length < 1 || s(_[0].value)
   }), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(h.Z, {
       premiumType: e,
@@ -99,14 +99,14 @@ function b(t) {
         }), (0, i.jsx)(u.X6q, {
           variant: "heading-sm/medium",
           className: g.subtitle,
-          children: p
+          children: x
         })]
       })
     }), (0, i.jsx)(u.hzk, {
       className: g.body,
-      children: (0, i.jsx)(u.FXm, {
-        options: x,
-        onChange: d,
+      children: (0, i.jsx)(c.Gu, {
+        options: _,
+        onChange: p,
         value: r
       })
     }), (0, i.jsx)(u.mzw, {

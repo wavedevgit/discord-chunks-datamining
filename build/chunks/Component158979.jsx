@@ -86,13 +86,13 @@ function O(e) {
           f()
         },
         onNotificationClick: (e, t) => {
-          O("unlock"), l.Z.updateNotificationStatus(t);
+          O("unlock"), o.Z.updateNotificationStatus(t);
           let d = s.default.isOverlayOOPEnabledForPid((0, c.getPID)());
-          if (d ? l.Z.setInputLocked(false, (0, c.getPID)()) : l.Z.setInstanceLocked(false), null == a.default.getCurrentUser()) return;
+          if (d ? o.Z.setInputLocked(false, (0, c.getPID)()) : o.Z.setInstanceLocked(false), null == a.default.getCurrentUser()) return;
           let h = d ? {
-            contextKey: o.u1M
+            contextKey: l.u1M
           } : true;
-          (0, o.ZDy)(async () => {
+          (0, l.ZDy)(async () => {
             let {
               default: e
             } = await Promise.all([n.e("46746"), n.e("33641")]).then(n.bind(n, 60594));
@@ -130,13 +130,13 @@ function O(e) {
           r()
         },
         onNotificationClick: (e, t) => {
-          a("unlock"), l.Z.updateNotificationStatus(t);
+          a("unlock"), o.Z.updateNotificationStatus(t);
           let r = s.default.isOverlayOOPEnabledForPid((0, c.getPID)());
-          r ? l.Z.setInputLocked(false, (0, c.getPID)()) : l.Z.setInstanceLocked(false);
+          r ? o.Z.setInputLocked(false, (0, c.getPID)()) : o.Z.setInstanceLocked(false);
           let d = r ? {
-            contextKey: o.u1M
+            contextKey: l.u1M
           } : true;
-          (0, o.ZDy)(async () => {
+          (0, l.ZDy)(async () => {
             let {
               default: e
             } = await Promise.all([n.e("46746"), n.e("33641")]).then(n.bind(n, 60594));

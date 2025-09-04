@@ -76,8 +76,8 @@ function U(e) {
     canCreateWebhook: V,
     onManageBuiltIn: Y,
     onManageCustomWebhooks: $,
-    onManageFollowedChannels: X,
-    onManageApplication: J,
+    onManageFollowedChannels: J,
+    onManageApplication: X,
     onManageLobbiesLinked: Q
   } = e, ee = (0, m.ZP)(), [et, en] = r.useState(""), {
     isFetchingConnections: ei,
@@ -162,7 +162,7 @@ function U(e) {
         buttonText: A.intl.string(A.t["Z/qRnJ"]),
         hasNextSection: true,
         onButtonClick: () => {
-          J(r.id), C.default.track(E.rMx.APP_MANAGE_CTA_CLICKED, {
+          X(r.id), C.default.track(E.rMx.APP_MANAGE_CTA_CLICKED, {
             application_id: r.id,
             guild_id: null == U ? true : U.id,
             is_admin: null != U ? _.Z.can(E.Plq.ADMINISTRATOR, U) : true
@@ -253,7 +253,7 @@ function U(e) {
       }]
     }, "webhooks"))), (null == H ? true : H.type) === E.d4z.GUILD_VOICE || (null == H ? true : H.type) != null && E.TPd.GUILD_THREADS_ONLY.has(H.type) || eI.push((l = K.length, l > 0 ? (o = (0, i.jsx)(u.LJT, {
       size: "xs"
-    }), a = X) : (r = A.intl.string(A.t["ZwSt+f"]), a = () => open(S.Z.getArticleURL(E.BhN.CHANNEL_FOLLOWING))), (0, i.jsx)(P.Z, {
+    }), a = J) : (r = A.intl.string(A.t["ZwSt+f"]), a = () => open(S.Z.getArticleURL(E.BhN.CHANNEL_FOLLOWING))), (0, i.jsx)(P.Z, {
       name: A.intl.string(A.t.OrV60t),
       icon: u.AsW,
       buttonText: r,

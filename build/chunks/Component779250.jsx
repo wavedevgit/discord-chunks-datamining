@@ -35,7 +35,7 @@ var l, Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk869939 = require("./869939.js");
 
-function L(e) {
+function G(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       l = Object.keys(n);
@@ -54,10 +54,10 @@ function L(e) {
   return e
 }
 let {
-  INVITE_OPTIONS_7_DAYS: _,
-  INVITE_OPTIONS_UNLIMITED: k
+  INVITE_OPTIONS_7_DAYS: L,
+  INVITE_OPTIONS_UNLIMITED: _
 } = Chunk971130.ZP;
-var G = ((l = G || {})[l.ENTITY = 0] = "ENTITY", l[l.SETTINGS = 1] = "SETTINGS", l[l.PREVIEW = 2] = "PREVIEW", l[l.SUCCESS = 3] = "SUCCESS", l);
+var k = ((l = k || {})[l.ENTITY = 0] = "ENTITY", l[l.SETTINGS = 1] = "SETTINGS", l[l.PREVIEW = 2] = "PREVIEW", l[l.SUCCESS = 3] = "SUCCESS", l);
 
 function M(e) {
   let {
@@ -147,12 +147,12 @@ function X(e) {
     slideId: 2,
     label: A.intl.string(A.t["8aJzT0"]),
     valid: true
-  }], [d, c, O]), w = Object.keys(G).length, D = (0, f.xt)(n), L = e => Math.max(0, Math.min(e, w - 1)), [_, k] = i.useState(+!!D), [X, W] = i.useState(false), z = i.useMemo(() => P.slice(0, _ + 1).map(e => e.valid).every(Boolean), [P, _]), V = _ >= P.length ? 3 : P[L(_)].slideId, U = 3 === V;
+  }], [d, c, O]), w = Object.keys(k).length, D = (0, f.xt)(n), G = e => Math.max(0, Math.min(e, w - 1)), [L, _] = i.useState(+!!D), [X, W] = i.useState(false), z = i.useMemo(() => P.slice(0, L + 1).map(e => e.valid).every(Boolean), [P, L]), V = L >= P.length ? 3 : P[G(L)].slideId, U = 3 === V;
   (0, C.l)(e => e.onUpdateCanCloseModal)(U);
   let F = (0, s.e7)([u.Z], () => u.Z.useReducedMotion),
     q = i.useRef(null),
     B = e => {
-      W(false), k(L(e))
+      W(false), _(G(e))
     },
     H = i.useRef(B);
   i.useEffect(() => {
@@ -161,10 +161,10 @@ function X(e) {
     (null == b ? true : b.id) != null && H.current(3)
   }, [null == b ? true : b.id]);
   let Y = () => {
-      z && (2 === V ? j() : U ? y() : B(_ + 1))
+      z && (2 === V ? j() : U ? y() : B(L + 1))
     },
     J = () => {
-      B(_ - 1)
+      B(L - 1)
     },
     K = A.intl.string(A.t.PDTjLC);
   return 2 === V && (K = c ? A.intl.string(A.t.e5VEcH) : A.intl.string(A.t["60lJ0N"])), (0, r.jsxs)(o.Y0X, {
@@ -181,9 +181,9 @@ function X(e) {
       "data-migration-pending": true,
       children: [!U && (0, r.jsx)(x.Z, {
         steps: P.map(e => e.label),
-        stepIndex: _,
+        stepIndex: L,
         onClick: e => {
-          e < _ ? J() : e > _ && Y()
+          e < L ? J() : e > L && Y()
         }
       }), (0, r.jsxs)(o.MyZ, {
         activeSlide: V,
@@ -276,7 +276,7 @@ function W(e) {
     [T, Z] = i.useState(null),
     [I, {
       loading: R,
-      error: G
+      error: k
     }] = (0, p.Z)(async () => {
       if (null != T) return;
       if (S && null != l) return await j.Z.saveEvent(l, h, t), u();
@@ -286,8 +286,8 @@ function W(e) {
         let n = (0, y.so)(e),
           l = null != (t = e.channel_id) ? t : null == x ? true : x.id;
         null != l && c.ZP.createInvite(l, {
-          max_age: _.value,
-          max_uses: k.value
+          max_age: L.value,
+          max_uses: _.value
         }, D.t4x.GUILD_EVENTS), n ? Z(e) : u()
       })(e.body), e
     }),
@@ -300,7 +300,7 @@ function W(e) {
     formErrors: M,
     transitionState: a,
     loading: R,
-    error: G,
+    error: k,
     onChange: e => {
       if (null != e.entityType) {
         var n;
@@ -308,7 +308,7 @@ function W(e) {
           [r] = (0, b.SU)(t, l);
         e.channelId = null != (n = null == r ? true : r.id) ? n : null, e.entityType !== w.WX.EXTERNAL && h.entityType === w.WX.EXTERNAL && (e.entityMetadata = null)
       }
-      C(t => L({}, t, e))
+      C(t => G({}, t, e))
     },
     onSave: () => {
       null != h.recurrenceRule && S && (0, O.BP)(d, h) ? (0, o.ZDy)(async () => {
@@ -317,7 +317,7 @@ function W(e) {
         } = await Promise.resolve().then(n.bind(n, 481060));
         return t => {
           var n, l;
-          return (0, r.jsxs)(e, (n = L({}, t), l = l = {
+          return (0, r.jsxs)(e, (n = G({}, t), l = l = {
             header: A.intl.string(A.t.BW1Qoq),
             confirmText: A.intl.string(A.t.e5VEcH),
             cancelText: A.intl.string(A.t.oEAioK),

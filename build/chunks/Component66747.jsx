@@ -163,7 +163,7 @@ let Q = Chunk647438.memo(function(e) {
       })]
     })
   }),
-  X = Chunk647438.memo(function(e) {
+  J = Chunk647438.memo(function(e) {
     let {
       member: t,
       highestRole: n
@@ -210,7 +210,7 @@ let Q = Chunk647438.memo(function(e) {
       })]
     })
   }),
-  J = Chunk647438.memo(function(e) {
+  X = Chunk647438.memo(function(e) {
     var t, n;
     let {
       member: l,
@@ -364,7 +364,7 @@ let et = Chunk647438.memo(function(e) {
         className: i()({
           [Y.compact]: b
         }),
-        children: (0, r.jsx)(J, {
+        children: (0, r.jsx)(X, {
           member: t,
           user: n
         })
@@ -398,7 +398,7 @@ let et = Chunk647438.memo(function(e) {
         className: i()(Y.mediumCol, {
           [Y.compact]: b
         }),
-        children: (0, r.jsx)(X, {
+        children: (0, r.jsx)(J, {
           member: t,
           highestRole: o
         })

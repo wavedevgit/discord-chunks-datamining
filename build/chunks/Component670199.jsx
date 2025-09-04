@@ -29,7 +29,7 @@ function h(e) {
     className: j,
     onClose: I,
     onNext: E
-  } = e, T = (0, d.n)(), v = null != (n = null == a ? true : a.explainer_link) ? n : "", f = null != a && null != a.flagged_content && a.flagged_content.length > 0, S = (0, c.c7)(null == a ? true : a.description), k = !g && !C && (null == N || N === o.j4.IN_APP), A = null != a && ((0, c.FB)(a) || f);
+  } = e, T = (0, d.n)(), v = null != (n = null == a ? true : a.explainer_link) ? n : "", f = null != a && null != a.flagged_content && a.flagged_content.length > 0, k = (0, c.c7)(null == a ? true : a.description), S = !g && !C && (null == N || N === o.j4.IN_APP), A = null != a && ((0, c.FB)(a) || f);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(l.xBx, {
       "data-migration-pending": true,
@@ -64,7 +64,7 @@ function h(e) {
         className: _.policyContainer,
         children: (0, i.jsx)(l.Text, {
           variant: "text-md/semibold",
-          children: S
+          children: k
         })
       }), C && (0, i.jsx)(x.Z, {
         url: p.sQ.AGE_VERIFICATION_LINK,
@@ -78,12 +78,12 @@ function h(e) {
         text: u.intl.string(u.t["Vtyn//"]),
         url: v,
         onClick: () => T(p.n0.ClickLearnMoreLink)
-      }), k && h && (0, i.jsx)(l.Text, {
+      }), S && h && (0, i.jsx)(l.Text, {
         className: _.learnMore,
         variant: "text-xs/normal",
         children: u.intl.format(u.t.WMUgCQ, {})
       })]
-    }), k && (0, i.jsx)(l.mzw, {
+    }), S && (0, i.jsx)(l.mzw, {
       "data-migration-pending": true,
       children: (0, i.jsx)(l.zxk, {
         variant: "primary",

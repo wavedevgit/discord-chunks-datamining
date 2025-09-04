@@ -1,13 +1,14 @@
 /** Chunk was on 6850 **/
 /** chunk id: 102560, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
+  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk48210 = require("./48210.js"),
   Chunk345162 = require("./345162.js"),
@@ -15,20 +16,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk496675 = require("./496675.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk792353 = require("./792353.js");
-let p = e => {
+let f = e => {
   let {
     guild: t,
     transitionState: n,
     onClose: o
-  } = e, [p, f] = l.useState(7), [h, j] = l.useState(null), [g, x] = l.useState([]), v = l.useCallback(async () => {
-    j(null), j(await c.Z.updateEstimate(t.id, p, g))
-  }, [p, t.id, g]);
+  } = e, [f, h] = l.useState(7), [j, g] = l.useState(null), [x, v] = l.useState([]), y = l.useCallback(async () => {
+    g(null), g(await u.Z.updateEstimate(t.id, f, x))
+  }, [f, t.id, x]);
   l.useEffect(() => {
-    v()
-  }, [v]);
-  let y = (0, a.Wu)([C.Z, d.Z], () => {
-    let e = C.Z.getHighestRole(t);
-    return i()(d.Z.getSortedRoles(t.id)).filter(n => !(0, u.fI)(n) && C.Z.isRoleHigher(t, e, n)).map(e => {
+    y()
+  }, [y]);
+  let O = (0, a.Wu)([m.Z, C.Z], () => {
+    let e = m.Z.getHighestRole(t);
+    return i()(C.Z.getSortedRoles(t.id)).filter(n => !(0, d.fI)(n) && m.Z.isRoleHigher(t, e, n)).map(e => {
       let {
         id: t,
         name: n
@@ -39,28 +40,28 @@ let p = e => {
       }
     }).value()
   }, [t]);
-  return (0, r.jsxs)(s.Y0X, {
+  return (0, r.jsxs)(c.Y0X, {
     transitionState: n,
     parentComponent: "PruneGuild",
-    children: [(0, r.jsx)(s.xBx, {
+    children: [(0, r.jsx)(c.xBx, {
       separator: false,
-      children: (0, r.jsxs)(s.X6q, {
+      children: (0, r.jsxs)(c.X6q, {
         variant: "heading-lg/semibold",
-        children: [m.intl.string(m.t.zbyz7u), "—", null != t ? t.name : ""]
+        children: [b.intl.string(b.t.zbyz7u), "—", null != t ? t.name : ""]
       })
     }), (0, r.jsxs)("div", {
-      className: b.content,
-      children: [(0, r.jsx)(s.xJW, {
-        title: m.intl.string(m.t.YccTvL),
-        children: (0, r.jsx)(s.FXm, {
-          value: p,
+      className: p.content,
+      children: [(0, r.jsx)(c.xJW, {
+        title: b.intl.string(b.t.YccTvL),
+        children: (0, r.jsx)(s.Gu, {
+          value: f,
           options: [{
-            name: m.intl.formatToPlainString(m.t.FM1dHR, {
+            name: b.intl.formatToPlainString(b.t.FM1dHR, {
               days: 7
             }),
             value: 7
           }, {
-            name: m.intl.formatToPlainString(m.t.FM1dHR, {
+            name: b.intl.formatToPlainString(b.t.FM1dHR, {
               days: 30
             }),
             value: 30
@@ -69,45 +70,45 @@ let p = e => {
             let {
               value: t
             } = e;
-            f(t)
+            h(t)
           },
-          className: b.spacing
+          className: p.spacing
         })
-      }), (0, r.jsx)(s.xJW, {
-        title: m.intl.string(m.t.buoe19),
-        children: (0, r.jsx)(s.zJl, {
-          className: b.scroller,
-          children: (0, r.jsx)(s.VcW, {
+      }), (0, r.jsx)(c.xJW, {
+        title: b.intl.string(b.t.buoe19),
+        children: (0, r.jsx)(c.zJl, {
+          className: p.scroller,
+          children: (0, r.jsx)(c.VcW, {
             maxVisibleItems: 10,
             multi: true,
-            value: g,
-            onChange: e => x(e),
-            options: y
+            value: x,
+            onChange: e => v(e),
+            options: O
           })
         })
-      }), (0, r.jsx)(s.R94, {
-        type: s.R94.Types.DESCRIPTION,
-        className: b.spacing,
-        children: g.length > 0 ? m.intl.format(m.t["5WxHHh"], {
-          members: h,
-          days: p
-        }) : m.intl.format(m.t.f13az8, {
-          members: h,
-          days: p
+      }), (0, r.jsx)(c.R94, {
+        type: c.R94.Types.DESCRIPTION,
+        className: p.spacing,
+        children: x.length > 0 ? b.intl.format(b.t["5WxHHh"], {
+          members: j,
+          days: f
+        }) : b.intl.format(b.t.f13az8, {
+          members: j,
+          days: f
         })
       })]
-    }), (0, r.jsx)(s.mzw, {
-      children: (0, r.jsxs)(s.hE2, {
+    }), (0, r.jsx)(c.mzw, {
+      children: (0, r.jsxs)(c.hE2, {
         direction: "horizontal-reverse",
-        children: [(0, r.jsx)(s.zxk, {
+        children: [(0, r.jsx)(c.zxk, {
           variant: "primary",
-          text: m.intl.string(m.t["2mIlKS"]),
+          text: b.intl.string(b.t["2mIlKS"]),
           onClick: () => {
-            c.Z.prune(t.id, p, g), o()
+            u.Z.prune(t.id, f, x), o()
           }
-        }), (0, r.jsx)(s.zxk, {
+        }), (0, r.jsx)(c.zxk, {
           variant: "secondary",
-          text: m.intl.string(m.t["ETE/oK"]),
+          text: b.intl.string(b.t["ETE/oK"]),
           onClick: o
         })]
       })
