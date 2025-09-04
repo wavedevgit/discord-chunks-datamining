@@ -77,17 +77,19 @@ let E = Chunk647438.memo(function(e) {
           });
         case l.z.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL:
           return (0, r.jsx)(O, {
-            renderPopout: (0, r.jsx)(c.Z, {
+            renderPopout: e => (0, r.jsx)(c.Z, {
               guildId: n.id,
-              markAsDismissed: y
+              markAsDismissed: y,
+              targetElementRef: e
             }),
             renderGuildHeaderDropdownButton: i
           });
         case l.z.GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL:
           return (0, r.jsx)(O, {
-            renderPopout: (0, r.jsx)(b.Z, {
+            renderPopout: e => (0, r.jsx)(b.Z, {
               guild: n,
-              markAsDismissed: y
+              markAsDismissed: y,
+              targetElementRef: e
             }),
             renderGuildHeaderDropdownButton: i
           });
@@ -116,9 +118,10 @@ let E = Chunk647438.memo(function(e) {
           });
         case l.z.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL:
           return (0, r.jsx)(O, {
-            renderPopout: (0, r.jsx)(u.Z, {
+            renderPopout: e => (0, r.jsx)(u.Z, {
               guildId: n.id,
-              markAsDismissed: y
+              markAsDismissed: y,
+              targetElementRef: e
             }),
             renderGuildHeaderDropdownButton: i
           });

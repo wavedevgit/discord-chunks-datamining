@@ -5,34 +5,39 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk434404 = require("./434404.js"),
-  Chunk970731 = require("./970731.jsx"),
+var Chunk907862 = require("./907862.js"),
+  Chunk434404 = require("./434404.js"),
   Chunk981631 = require("./981631.js"),
+  Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk501130 = require("./501130.js"),
   Chunk930128 = require("./930128.js");
 
 function u(e) {
   let {
     guild: t,
-    markAsDismissed: n
+    markAsDismissed: n,
+    targetElementRef: u
   } = e;
-  return (0, r.jsx)(l.ZP, {
-    header: o.intl.string(o.t.Hgd22t),
-    content: o.intl.string(o.t.SorTPD),
-    asset: (0, r.jsx)("div", {
-      className: s.image,
-      children: (0, r.jsx)("img", {
-        alt: "",
-        src: c
-      })
-    }),
-    buttonCTA: o.intl.string(o.t["9l+df3"]),
-    onClick: e => {
-      i.Z.open(t.id, a.pNK.DISCOVERY_LANDING_PAGE)
+  return (0, r.jsx)(i.J2, {
+    targetElementRef: u,
+    title: s.intl.string(s.t.Hgd22t),
+    body: s.intl.string(s.t.SorTPD),
+    graphic: {
+      type: "image",
+      src: c
     },
-    secondaryButtonCTA: o.intl.string(o.t.duVdqq),
-    onSecondaryClick: () => {},
-    markAsDismissed: n
+    actions: [{
+      text: s.intl.string(s.t["9l+df3"]),
+      variant: "primary",
+      onClick: e => {
+        l.Z.open(t.id, a.pNK.DISCOVERY_LANDING_PAGE)
+      }
+    }],
+    onRequestClose: () => n(o.L.USER_DISMISS),
+    position: "bottom",
+    caretConfig: {
+      position: "top",
+      align: "center"
+    }
   })
 }

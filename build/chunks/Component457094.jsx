@@ -163,7 +163,7 @@ let tt = (0, Chunk951752.l)(e => {
       openWithoutBackstack: false,
       impressionSource: n.source
     })), (0, r.jsx)(g.Z, {
-      deepLinkType: e6.jE.USER_SETTINGS,
+      deepLinkType: e2.jE.USER_SETTINGS,
       path: t.pathname,
       paramsBuilder: function(e, t) {
         let [, , n, r] = e.split("/");
@@ -391,7 +391,7 @@ let to = [{
       guildId: n,
       channelId: i
     } = t.params;
-    (0, eu.c)(e2.M5.MARKETING_UNCLAIMED);
+    (0, eu.c)(e6.M5.MARKETING_UNCLAIMED);
     let l = e3.Z5c.CHANNEL(n, i);
     return (0, r.jsx)(a.l_, {
       to: l

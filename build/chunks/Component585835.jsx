@@ -9,12 +9,12 @@ var Chunk951288 = require("./951288.js"),
   a = require.n(Chunk120356),
   Chunk243814 = require("./243814.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk907862 = require("./907862.js"),
   Chunk753450 = require("./753450.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk367907 = require("./367907.js"),
   Chunk213459 = require("./213459.js"),
   Chunk488915 = require("./488915.js"),
-  Chunk970731 = require("./970731.jsx"),
   Chunk598077 = require("./598077.js"),
   Chunk626135 = require("./626135.js"),
   Chunk486199 = require("./486199.jsx"),
@@ -42,28 +42,28 @@ function O(e) {
     isScrolling: D,
     canShowMigrationTooltip: R,
     trailing: L
-  } = e, [M, B] = r.useState(false), W = R && !D && !M && true !== A && null != I, U = r.useRef(null), H = r.useRef(null), G = r.useCallback((e, t, n, r) => null == e || null == r ? null : n ? (0, i.jsxs)(d.Kqy, {
+  } = e, [M, B] = r.useState(false), W = R && !D && !M && true !== A && null != I, U = r.useRef(null), H = r.useRef(null), G = null == P || null == k ? null : E ? (0, i.jsxs)(u.Kqy, {
     direction: "horizontal",
     fullWidth: false,
     align: "center",
     ref: H,
-    children: [(0, i.jsx)(d.Text, {
+    children: [(0, i.jsx)(u.Text, {
       variant: "text-sm/normal",
-      children: e
-    }), n ? (0, i.jsx)(d.Fbu, {
+      children: P
+    }), E ? (0, i.jsx)(u.Fbu, {
       size: "custom",
       color: "currentColor",
       width: 10,
       height: 10,
       className: y.caret
     }) : null]
-  }) : (0, i.jsx)(d.zxk, {
+  }) : (0, i.jsx)(u.zxk, {
     size: "sm",
     buttonRef: U,
-    disabled: t,
-    onClick: r,
-    text: e
-  }), [U, H])(P, T, E, k);
+    disabled: T,
+    onClick: k,
+    text: P
+  });
   r.useEffect(() => {
     var e, t;
     W && f.default.track(j.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, (e = function(e) {
@@ -83,7 +83,7 @@ function O(e) {
         })
       }
       return e
-    }({}, (0, u.hH)(A)), t = t = {
+    }({}, (0, p.hH)(A)), t = t = {
       application_id: null == I ? true : I.application.id,
       location: "overview"
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
@@ -97,30 +97,27 @@ function O(e) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
   }, [A, null == I ? true : I.application.id, W]);
-  let z = W ? (0, i.jsx)(d.yRy, {
+  let z = W && (null != H.current || null != U.current) ? (0, i.jsx)(c.J2, {
       targetElementRef: E ? H : U,
-      renderPopout: () => (0, i.jsx)(d.P3F, {
-        onClick: e => {
-          e.stopPropagation(), B(true), x.Z.dismissOverviewTooltip(A, I.integration)
-        },
-        children: (0, i.jsx)(b.ZP, {
-          content: v.intl.string(v.t.TyMJwM),
-          onClick: () => {}
-        })
-      }),
+      title: v.intl.string(v.t.ufFDiI),
+      body: v.intl.string(v.t.TyMJwM),
+      onRequestClose: () => {
+        B(true), x.Z.dismissOverviewTooltip(A, I.integration)
+      },
       position: "bottom",
       align: "center",
-      animation: d.yRy.Animation.TRANSLATE,
-      shouldShow: true,
-      children: () => G
-    }) : G,
-    F = (0, s.Wu)([m.Z], () => {
+      caretConfig: {
+        position: "top",
+        align: "center"
+      }
+    }) : null,
+    F = (0, s.Wu)([b.Z], () => {
       var e;
-      return null != I && null != A && null != (e = m.Z.getApplicationEntitlementsForGuild(I.application.id, A)) ? e : []
+      return null != I && null != A && null != (e = b.Z.getApplicationEntitlementsForGuild(I.application.id, A)) ? e : []
     }),
-    K = (0, p.LD)(A, true),
+    K = (0, m.LD)(A, true),
     q = (null == I ? true : I.application) != null && Object.keys(null != (l = null == (n = K.result) || null == (t = n.sections[I.application.id]) ? true : t.commands) ? l : {}).length > 0,
-    V = (0, i.jsxs)(d.Kqy, {
+    V = (0, i.jsxs)(u.Kqy, {
       direction: "horizontal",
       align: "center",
       children: [(0, i.jsx)(h.Z, {
@@ -139,44 +136,44 @@ function O(e) {
             {
               application: a,
               integration: s,
-              webhooks: u
+              webhooks: c
             } = e;
           return null != a.bot && (null == s || null == (n = s.scopes) ? true : n.includes(o.x.BOT)) && l.push({
             id: "bot",
             label: new g.Z(a.bot).isVerifiedBot() ? v.intl.string(v.t.xxcTGx) : v.intl.string(v.t.AOdOYm),
-            icon: d.wGt
-          }), u.length > 0 && l.push({
+            icon: u.wGt
+          }), c.length > 0 && l.push({
             id: "webhooks",
             label: v.intl.formatToPlainString(v.t["6HqDfX"], {
-              count: u.length
+              count: c.length
             }),
-            icon: d.tYf
+            icon: u.tYf
           }), (null == s || null == (r = s.scopes) ? true : r.includes(o.x.APPLICATIONS_COMMANDS)) === true && t && l.push({
             id: "commands",
             label: v.intl.string(v.t["0hKkS0"]),
-            icon: d.SsZ
-          }), (0, i.jsx)(d.Kqy, {
+            icon: u.SsZ
+          }), (0, i.jsx)(u.Kqy, {
             direction: "horizontal",
             gap: 4,
-            children: (0, i.jsx)(c.Q, {
+            children: (0, i.jsx)(d.Q, {
               label: v.intl.string(v.t.G8u3JS),
               layout: "inline",
               items: l
             })
           })
         }(I, q)
-      }), z, L]
+      }), z, G, L]
     });
-  return E ? (0, i.jsx)(d.P3F, {
+  return E ? (0, i.jsx)(u.P3F, {
     onClick: () => {
       R && null != A && null != I && x.Z.dismissOverviewTooltip(A, I.integration), null == k || k()
     },
-    children: (0, i.jsx)(d.Zbd, {
+    children: (0, i.jsx)(u.Zbd, {
       editable: true,
       className: a()(y.card, y.clickable),
       children: V
     })
-  }) : (0, i.jsx)(d.Zbd, {
+  }) : (0, i.jsx)(u.Zbd, {
     editable: true,
     className: y.card,
     children: V
