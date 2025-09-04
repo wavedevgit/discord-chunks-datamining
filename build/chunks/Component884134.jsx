@@ -277,8 +277,9 @@ function Q(e) {
 
 function J(e) {
   let {
-    isCoachmark: t
-  } = e, [n, a] = i.useState(false), o = i.useRef(false), [s, l] = i.useState(false), u = i.useRef(null), _ = i.useRef(null), p = i.useCallback(() => {
+    isCoachmark: t,
+    isMobile: n
+  } = e, [a, o] = i.useState(false), s = i.useRef(false), [l, u] = i.useState(false), _ = i.useRef(null), p = i.useRef(null), h = i.useCallback(() => {
     var e;
     (0, R.Om)();
     let t = (0, A.C)();
@@ -289,47 +290,51 @@ function J(e) {
     })
   }, []);
   i.useEffect(() => {
-    if (t) return o.current = false, u.current = setTimeout(() => {
-      o.current || a(true)
+    if (t) return s.current = false, _.current = setTimeout(() => {
+      s.current || o(true)
     }, H), () => {
-      null != u.current && clearTimeout(u.current)
+      null != _.current && clearTimeout(_.current)
     }
   }, [t]);
-  let h = i.useCallback(() => {
-      o.current = true
+  let m = i.useCallback(() => {
+      s.current = true
     }, []),
-    m = i.useCallback(() => {
-      a(false)
+    g = i.useCallback(() => {
+      o(false)
     }, []),
-    g = n && !s;
-  return (0, r.jsx)(d.i_, {
-    title: k.intl.string(M.default.NJ9m8f),
-    body: k.intl.string(M.default["6pabtb"]),
-    position: "left",
-    asset: g ? (0, r.jsx)(f.$2U, {}) : true,
-    forceOpen: n,
-    onTooltipShow: h,
-    onTooltipHide: m,
-    targetElementRef: _,
-    children: (0, r.jsx)(c.z, {
-      buttonRef: _,
+    E = a && !l,
+    b = () => (0, r.jsx)(c.z, {
+      buttonRef: p,
       variant: "secondary",
-      onClick: p,
-      onMouseEnter: () => l(true),
-      onMouseLeave: () => l(false),
-      icon: {
+      onClick: h,
+      onMouseEnter: () => u(true),
+      onMouseLeave: () => u(false),
+      icon: n ? {
+        type: "icon",
+        asset: f.$2U
+      } : {
         type: "rive",
         asset: f.xhK,
         riveProps: {
           dataBinding: {
             fill: f.TVs.colors.ICON_PRIMARY
           },
-          eventTargetRef: _
+          eventTargetRef: p
         }
       },
       text: k.intl.string(M.default.c9MBEB),
       fullWidth: true
-    })
+    });
+  return n ? b() : (0, r.jsx)(d.i_, {
+    title: k.intl.string(M.default.NJ9m8f),
+    body: k.intl.string(M.default["6pabtb"]),
+    position: "left",
+    asset: E ? (0, r.jsx)(f.$2U, {}) : true,
+    forceOpen: a,
+    onTooltipShow: m,
+    onTooltipHide: g,
+    targetElementRef: p,
+    children: b()
   })
 }
 
@@ -426,38 +431,39 @@ function en(e) {
   let {
     metadata: n,
     markAsDismissed: a,
-    isCoachmark: o
-  } = e, u = N.Mc.useExperiment({
+    isCoachmark: o,
+    isMobile: u
+  } = e, d = N.Mc.useExperiment({
     location: "ClientThemeColorPickerTools"
-  }).enabled, d = (0, C.jJ)(), p = (0, C.SK)(), y = i.useRef(false), {
-    colors: O,
-    chassisMixAmount: S,
-    gradientAngle: A,
-    setColors: w,
-    setChassisMixAmount: x,
-    setGradientAngle: j
-  } = (0, T.Ig)(), [G, B] = i.useState(null != (t = O[0]) ? t : T.Dp), Z = (0, s.e7)([I.Z], () => I.Z.theme), F = (0, b.Nj)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
-    analyticsLocations: V
-  } = (0, g.ZP)(m.Z.CUSTOM_THEMES_EDITOR), H = async () => {
-    y.current = true, await (0, _.ZI)({
-      theme: Z,
+  }).enabled, p = (0, C.jJ)(), y = (0, C.SK)(), O = i.useRef(false), {
+    colors: S,
+    chassisMixAmount: A,
+    gradientAngle: w,
+    setColors: x,
+    setChassisMixAmount: j,
+    setGradientAngle: G
+  } = (0, T.Ig)(), [B, Z] = i.useState(null != (t = S[0]) ? t : T.Dp), F = (0, s.e7)([I.Z], () => I.Z.theme), V = (0, b.Nj)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
+    analyticsLocations: H
+  } = (0, g.ZP)(m.Z.CUSTOM_THEMES_EDITOR), Y = async () => {
+    O.current = true, await (0, _.ZI)({
+      theme: F,
       customUserThemeSettings: {
-        colors: O,
+        colors: S,
         gradientColorStops: [],
-        gradientAngle: A,
-        baseMix: S
+        gradientAngle: w,
+        baseMix: A
       }
-    }), (0, R.u7)(O, S, A, Z, V), null == a || a(L.L.TAKE_ACTION), F || (0, b.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, E.Ll)(), (0, v.UD)()
-  }, Y = () => {
-    d(C._m.RESET_BUTTON), (0, R.uf)()
-  }, W = O.length > 0;
+    }), (0, R.u7)(S, A, w, F, H), null == a || a(L.L.TAKE_ACTION), V || (0, b.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, E.Ll)(), (0, v.UD)()
+  }, W = () => {
+    p(C._m.RESET_BUTTON), (0, R.uf)()
+  }, K = S.length > 0;
   return (i.useEffect(() => () => {
-    y.current || d(C._m.EDITOR_CLOSE)
-  }, [d]), (0, h.ZP)(() => {
-    o || (0, C.lT)(O, G, w)
-  }), u) ? (0, r.jsxs)("div", {
-    className: U.container,
-    "data-app-right-panel": true,
+    O.current || p(C._m.EDITOR_CLOSE)
+  }, [p]), (0, h.ZP)(() => {
+    o || (0, C.lT)(S, B, x)
+  }), d) ? (0, r.jsxs)("div", {
+    className: u ? U.mobileContainer : U.container,
+    "data-app-right-panel": !u,
     children: [(0, r.jsx)(f.Ttm, {
       children: (0, r.jsxs)("div", {
         className: U.editorBody,
@@ -479,11 +485,11 @@ function en(e) {
             children: k.intl.string(M.default.uSL2Gx)
           }), (0, r.jsx)(P.U, {
             onChange: e => {
-              B(e), 0 === O.length && (0, C.lT)(O, e, w)
+              Z(e), 0 === S.length && (0, C.lT)(S, e, x)
             },
-            value: G,
-            colors: O,
-            setColors: w
+            value: B,
+            colors: S,
+            setColors: x
           })]
         }), (0, r.jsxs)("div", {
           className: U.section,
@@ -491,34 +497,35 @@ function en(e) {
             variant: "text-sm/semibold",
             color: "text-secondary",
             children: k.intl.string(M.default.F1t0c3)
-          }), O.length > 1 && (0, r.jsx)(X, {
-            gradientAngle: A,
-            setGradientAngle: j
+          }), S.length > 1 && (0, r.jsx)(X, {
+            gradientAngle: w,
+            setGradientAngle: G
           }), (0, r.jsx)(Q, {
-            chassisMixAmount: S,
+            chassisMixAmount: A,
             setChassisMixAmount: e => {
-              x(e), 0 === O.length && (0, C.lT)(O, G, w)
+              j(e), 0 === S.length && (0, C.lT)(S, B, x)
             }
           })]
         }), (0, r.jsxs)("div", {
           className: U.resetButton,
           children: [(0, r.jsx)(J, {
-            isCoachmark: o
+            isCoachmark: o,
+            isMobile: u
           }), (0, r.jsx)(c.z, {
             variant: "secondary",
-            onClick: Y,
-            disabled: p,
+            onClick: W,
+            disabled: y,
             text: k.intl.string(k.t.yBZMsb),
             fullWidth: true
           })]
         })]
       })
     }), o ? (0, r.jsx)(ee, {
-      onSaveTheme: H,
-      canApply: W
+      onSaveTheme: Y,
+      canApply: K
     }) : (0, r.jsx)(et, {
-      onSaveTheme: H,
-      canApply: W,
+      onSaveTheme: Y,
+      canApply: K,
       metadata: n
     })]
   }) : null

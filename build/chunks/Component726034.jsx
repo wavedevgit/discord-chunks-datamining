@@ -340,75 +340,80 @@ function et(e) {
   let {
     metadata: n,
     markAsDismissed: a,
-    isCoachmark: o
-  } = e, u = P.Mc.useExperiment({
+    isCoachmark: u,
+    isMobile: d
+  } = e, f = P.Mc.useExperiment({
     location: "ClientThemeColorPickerTools"
-  }).enabled, d = (0, R.jJ)(), f = i.useRef(false), {
-    colors: _,
-    chassisMixAmount: m,
-    gradientAngle: v,
-    setColors: I,
-    setChassisMixAmount: S,
-    setGradientAngle: N
-  } = (0, C.Ig)(), [L, M] = i.useState(null != (t = _[0]) ? t : C.Dp), k = (0, s.e7)([A.Z], () => A.Z.theme), B = (0, O.Nj)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
-    analyticsLocations: Z
-  } = (0, b.ZP)(E.Z.CUSTOM_THEMES_EDITOR), F = async () => {
-    f.current = true, await (0, h.ZI)({
-      theme: k,
+  }).enabled, _ = (0, R.jJ)(), m = i.useRef(false), {
+    colors: v,
+    chassisMixAmount: I,
+    gradientAngle: S,
+    setColors: N,
+    setChassisMixAmount: L,
+    setGradientAngle: M
+  } = (0, C.Ig)(), [k, B] = i.useState(null != (t = v[0]) ? t : C.Dp), Z = (0, s.e7)([A.Z], () => A.Z.theme), F = (0, O.Nj)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
+    analyticsLocations: V
+  } = (0, b.ZP)(E.Z.CUSTOM_THEMES_EDITOR), H = async () => {
+    m.current = true, await (0, h.ZI)({
+      theme: Z,
       customUserThemeSettings: {
-        colors: _,
+        colors: v,
         gradientColorStops: [],
-        gradientAngle: v,
-        baseMix: m
+        gradientAngle: S,
+        baseMix: I
       }
-    }), (0, w.u7)(_, m, v, k, Z), null == a || a(j.L.TAKE_ACTION), B || (0, O.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, y.Ll)(), (0, T.UD)()
-  }, V = () => {
-    d(R._m.RESET_BUTTON), (0, w.uf)()
-  }, H = _.length > 0;
+    }), (0, w.u7)(v, I, S, Z, V), null == a || a(j.L.TAKE_ACTION), F || (0, O.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, y.Ll)(), (0, T.UD)()
+  }, Y = () => {
+    _(R._m.RESET_BUTTON), (0, w.uf)()
+  }, W = v.length > 0;
   return (i.useEffect(() => () => {
-    f.current || d(R._m.EDITOR_CLOSE)
-  }, [d]), (0, g.ZP)(() => {
-    o || (0, R.lT)(_, L, I)
-  }), u) ? (0, r.jsx)("div", {
-    className: G.container,
-    "data-app-right-panel": true,
+    m.current || _(R._m.EDITOR_CLOSE)
+  }, [_]), (0, g.ZP)(() => {
+    u || (0, R.lT)(v, k, N)
+  }), f) ? (0, r.jsx)("div", {
+    className: o()(G.container, {
+      [G.mobileContainer]: d
+    }),
+    "data-app-right-panel": !d,
     children: (0, r.jsxs)("div", {
       className: G.containerInner,
       children: [(0, r.jsx)(p.Ttm, {
         children: (0, r.jsxs)("div", {
-          className: G.editorBody,
+          className: o()(G.editorBody, {
+            [G.mobileEditorBody]: d
+          }),
           children: [(0, r.jsx)(K, {
             markAsDismissed: a,
-            isCoachmark: o
+            isCoachmark: u
           }), (0, r.jsx)(x.o, {}), (0, r.jsx)(D.U, {
             onChange: e => {
-              M(e), 0 === _.length && (0, R.lT)(_, e, I)
+              B(e), 0 === v.length && (0, R.lT)(v, e, N)
             },
-            value: L,
-            colors: _,
-            setColors: I
-          }), _.length > 1 && (0, r.jsx)(q, {
-            gradientAngle: v,
-            setGradientAngle: N
+            value: k,
+            colors: v,
+            setColors: N
+          }), v.length > 1 && (0, r.jsx)(q, {
+            gradientAngle: S,
+            setGradientAngle: M
           }), (0, r.jsx)(X, {
-            chassisMixAmount: m,
+            chassisMixAmount: I,
             setChassisMixAmount: e => {
-              S(e), 0 === _.length && (0, R.lT)(_, L, I)
+              L(e), 0 === v.length && (0, R.lT)(v, k, N)
             }
           }), (0, r.jsx)(c.z, {
             variant: "secondary",
-            onClick: V,
+            onClick: Y,
             icon: p.Oe7,
             text: U.intl.string(U.t.yBZMsb),
             fullWidth: true
           })]
         })
-      }), o ? (0, r.jsx)($, {
-        onSaveTheme: F,
-        canApply: H
+      }), u ? (0, r.jsx)($, {
+        onSaveTheme: H,
+        canApply: W
       }) : (0, r.jsx)(ee, {
-        onSaveTheme: F,
-        canApply: H,
+        onSaveTheme: H,
+        canApply: W,
         metadata: n
       })]
     })

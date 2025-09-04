@@ -118,7 +118,9 @@ let X = (0, Chunk663993.Un)({
                           })
                         })
                       })
-                    }), (0, r.jsx)(S.Z, {}), (0, r.jsx)(V.Z, {}), (0, r.jsx)(R.Z, {
+                    }), (0, r.jsx)(S.Z, {}), (0, r.jsx)(V.Z, {
+                      mobile: u
+                    }), (0, r.jsx)(R.Z, {
                       mobile: u
                     })]
                   }), false]

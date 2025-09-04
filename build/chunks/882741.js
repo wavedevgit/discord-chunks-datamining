@@ -3,6 +3,7 @@
 "use strict";
 module.exports = {
   container: "container__5a2df",
+  mobileContainer: "mobileContainer__5a2df",
   editorBody: "editorBody__5a2df",
   section: "section__5a2df",
   resetButton: "resetButton__5a2df",
