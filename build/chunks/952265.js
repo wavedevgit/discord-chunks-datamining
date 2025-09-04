@@ -19,7 +19,7 @@ require.d(exports, {
   o: () => T,
   pT: () => P,
   s9: () => y
-}), require("./415506.js"), require("./388685.js"), require("./784620.js"), require("./973216.js");
+}), require("./415506.js"), require("./784620.js"), require("./973216.js"), require("./388685.js");
 var Chunk97613 = require("./97613.js"),
   i = require.n(Chunk97613),
   Chunk879690 = require("./879690.js"),
@@ -136,31 +136,39 @@ function v(e) {
       onCloseRequest: l,
       onCloseCallback: c,
       backdropStyle: u,
-      stackingBehavior: f = "replace"
+      stackingBehavior: f,
+      stackNextByDefault: p
     } = t,
-    p = null != r ? r : i()();
+    h = null != r ? r : i()();
   return (0, o.j)(() => {
     y.setState(t => {
       let r = t[n];
-      return true !== r && r.some(e => {
-        let {
-          key: t
-        } = e;
-        return t === p
-      }) ? t : _(d({}, t), {
+      if (true !== r && r.some(e => {
+          let {
+            key: t
+          } = e;
+          return t === h
+        })) return t;
+      let i = f;
+      if (null == i) {
+        var o;
+        i = (null == (o = r.at(false)) ? true : o.stackNextByDefault) === true ? "stack" : "replace"
+      }
+      return _(d({}, t), {
         [n]: [...r, {
-          key: p,
+          key: h,
           Layer: s,
           render: e,
-          onCloseRequest: null != l ? l : () => I(p, n),
+          onCloseRequest: null != l ? l : () => I(h, n),
           onCloseCallback: c,
           instant: a,
           backdropStyle: u,
-          stackingBehavior: f
+          stackingBehavior: i,
+          stackNextByDefault: p
         }]
       })
     })
-  }), p
+  }), h
 }
 
 function I(e) {
