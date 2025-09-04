@@ -13,7 +13,7 @@ require.d(exports, {
   bu: () => er,
   kb: () => W,
   s9: () => Y,
-  t9: () => Q,
+  t9: () => X,
   tr: () => et,
   vv: () => $,
   zM: () => K,
@@ -234,11 +234,11 @@ function q(e) {
   }
 }
 
-function Q(e, t, n) {
+function X(e, t, n) {
   return e === A.mFx.JOIN && null != t && null != t.id && null != n.join
 }
 
-function X(e) {
+function Q(e) {
   return o.tn.get({
     url: A.ANM.APPLICATION_RPC(e),
     oldFormErrors: true,
@@ -264,11 +264,11 @@ async function J(e, t, n) {
         closeCode: A.$VG.INVALID_ORIGIN
       }, "Invalid Origin")
     } else {
-      let e = await X(t);
+      let e = await Q(t);
       if (r = h.ZP.createFromServer(e), !B(n, e.rpc_origins)) throw new j.Z({
         closeCode: A.$VG.INVALID_ORIGIN
       }, "Invalid Origin")
-    } null == r && (r = h.ZP.createFromServer(await X(t)));
+    } null == r && (r = h.ZP.createFromServer(await Q(t)));
   let {
     id: i,
     name: l,

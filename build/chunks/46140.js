@@ -13,16 +13,17 @@ require.d(exports, {
   Uo: () => h,
   V6: () => y,
   V_: () => b,
+  XJ: () => C,
   XZ: () => d,
-  _v: () => A,
   a_: () => Chunk438954.a,
   cd: () => _,
   dr: () => c,
-  j5: () => C,
   l$: () => v,
   tD: () => p,
   tt: () => S,
-  v6: () => O
+  v6: () => O,
+  vy: () => N,
+  yq: () => A
 }), require("./388685.js");
 var Chunk754700 = require("./754700.js"),
   Chunk758846 = require("./758846.js"),
@@ -69,5 +70,21 @@ var A = function(e) {
     return e.SUGGESTED = "suggested", e.MOST_RECENT = "most_recent", e.EXPIRING_SOON = "expiring_soon", e.RECENTLY_ENROLLED = "recently_enrolled", e
   }({}),
   C = function(e) {
-    return e.REWARD_VIRTUAL_CURRENCY = "reward_virtual_currency", e.REWARD_COLLECTIBLE = "reward_collectible", e.REWARD_IN_GAME = "reward_in_game", e.QUEST_TYPE_VIDEO = "quest_type_video", e.QUEST_TYPE_PLAY = "quest_type_play", e
-  }({})
+    return e.REWARD_VIRTUAL_CURRENCY = "reward_virtual_currency", e.REWARD_COLLECTIBLE = "reward_collectible", e.REWARD_IN_GAME = "reward_in_game", e.TASK_VIDEO = "task_video", e.TASK_PLAY = "task_play", e
+  }({});
+let N = [{
+  group: "task",
+  filter: "task_play"
+}, {
+  group: "task",
+  filter: "task_video"
+}, {
+  group: "reward",
+  filter: "reward_virtual_currency"
+}, {
+  group: "reward",
+  filter: "reward_collectible"
+}, {
+  group: "reward",
+  filter: "reward_in_game"
+}]

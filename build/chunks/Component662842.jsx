@@ -60,8 +60,8 @@ function D(e) {
     title: Y,
     location: K,
     locationIcon: q,
-    canListenIn: Q,
-    buttonText: X,
+    canListenIn: X,
+    buttonText: Q,
     users: J,
     overflowUsers: $,
     onClose: ee
@@ -299,15 +299,15 @@ function D(e) {
         className: R.location,
         children: K
       })]
-    }), Q || 1 === W ? (0, r.jsx)("div", {
+    }), X || 1 === W ? (0, r.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: R.button,
       children: (0, r.jsx)(c.zxk, {
         variant: "active",
         size: "sm",
-        text: X,
+        text: Q,
         onClick: () => {
-          if (Q) null != l && null != l.getGuildId() && ((0, I.Cq)(l), (0, v.XU)(l.getGuildId(), l.id));
+          if (X) null != l && null != l.getGuildId() && ((0, I.Cq)(l), (0, v.XU)(l.getGuildId(), l.id));
           else {
             if (null == d) return;
             (0, f.bO)({

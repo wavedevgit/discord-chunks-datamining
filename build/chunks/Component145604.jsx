@@ -93,13 +93,13 @@ async function ee(e) {
     exe: m,
     distributor: b
   } = (0, _.G8)(n), E = (0, T.NW)("ChatAutoAnalytics", false), y = l.enabledLegacy || E && l.enabledOOP, v = S.v.legacyEnabled || E && S.v.oopEnabled, I = l.source;
-  K.default.track(X.rMx.LAUNCH_GAME, {
+  K.default.track(Q.rMx.LAUNCH_GAME, {
     game: h,
     game_id: g,
     verified: null != r && (0, _.vp)(m, null == r ? true : r.executables),
     elevated: n.elevated,
     is_launcher: null != (t = null == n ? true : n.isLauncher) && t,
-    game_platform: X.M7m.DESKTOP,
+    game_platform: Q.M7m.DESKTOP,
     detection_method: i,
     distributor: b,
     is_overlay_enabled: v,
@@ -142,7 +142,7 @@ class et extends Chunk647438.PureComponent {
         n = null != t ? t.name : "",
         r = A.Z.getStageInstanceByChannel(e.voiceChannelId),
         i = v.ZP.getActiveEventByChannel(e.voiceChannelId);
-      K.default.track(X.rMx.LEAVE_VOICE_CHANNEL, $({
+      K.default.track(Q.rMx.LEAVE_VOICE_CHANNEL, $({
         channel_id: e.voiceChannelId,
         channel_type: e.voiceChannelType,
         channel_bitrate: e.voiceChannelBitrate,
@@ -162,12 +162,12 @@ class et extends Chunk647438.PureComponent {
         t = null != e ? e.name : "",
         n = A.Z.getStageInstanceByChannel(o),
         r = v.ZP.getActiveEventByChannel(o);
-      (0, d.yw)(X.rMx.CHANNEL_OPENED, $({}, (0, d.$H)(o))), (0, f.a)(X.rMx.CHANNEL_OPENED_CLICKSTREAM, {
+      (0, d.yw)(Q.rMx.CHANNEL_OPENED, $({}, (0, d.$H)(o))), (0, f.a)(Q.rMx.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: o
       });
       let i = null,
         l = Y.default.getFocusedPID();
-      null != l && j.default.getOverlayMethod(l) !== N.gl.Disabled && (Y.default.isInstanceLocked() ? i = X.ADE.OVERLAY_LOCKED_ACTIVATED : Y.default.isInstanceLocked() || (i = Y.default.isPinned(X.Odu.TEXT) ? X.ADE.OVERLAY_UNLOCKED_PINNED : X.ADE.OVERLAY_UNLOCKED)), K.default.track(X.rMx.JOIN_VOICE_CHANNEL, $({
+      null != l && j.default.getOverlayMethod(l) !== N.gl.Disabled && (Y.default.isInstanceLocked() ? i = Q.ADE.OVERLAY_LOCKED_ACTIVATED : Y.default.isInstanceLocked() || (i = Y.default.isPinned(Q.Odu.TEXT) ? Q.ADE.OVERLAY_UNLOCKED_PINNED : Q.ADE.OVERLAY_UNLOCKED)), K.default.track(Q.rMx.JOIN_VOICE_CHANNEL, $({
         location: i,
         channel_id: o,
         channel_type: u,
@@ -202,7 +202,7 @@ class et extends Chunk647438.PureComponent {
         },
         I = null != (l = j.default.getOverlayMethod(E.pid)) ? l : v.overlayMethod;
       if (setTimeout(() => {
-          (E.distributor === X.GQo.ROBLOX ? this.debouncedRobloxAnalytics : ee)({
+          (E.distributor === Q.GQo.ROBLOX ? this.debouncedRobloxAnalytics : ee)({
             runningGame: E,
             game: e,
             detectionMethod: g,
@@ -221,9 +221,9 @@ class et extends Chunk647438.PureComponent {
     }
     if ((e.videoEnabled !== h || e.isScreenSharing !== _) && null != o) {
       let e = "none",
-        t = [_ ? "screen" : null, h ? "camera" : null].filter(Q.lm),
+        t = [_ ? "screen" : null, h ? "camera" : null].filter(X.lm),
         n = null;
-      _ ? (e = "screen", n = (0, g.t)()) : h && (e = "camera"), K.default.track(X.rMx.VIDEO_INPUT_TOGGLED, $({
+      _ ? (e = "screen", n = (0, g.t)()) : h && (e = "camera"), K.default.track(Q.rMx.VIDEO_INPUT_TOGGLED, $({
         video_input_type: e,
         video_toggle_source: __OVERLAY__ ? "overlay" : "app",
         enabled_inputs: t,
@@ -238,9 +238,9 @@ class et extends Chunk647438.PureComponent {
         let e = M.Z.getMessages(t),
           i = e.toArray().reverse().find(e => {
             var t;
-            return (0, q.yE)(e.flags, X.iLy.IS_CROSSPOST) && (null == (t = e.messageReference) ? true : t.guild_id) === "667560445975986187"
+            return (0, q.yE)(e.flags, Q.iLy.IS_CROSSPOST) && (null == (t = e.messageReference) ? true : t.guild_id) === "667560445975986187"
           });
-        K.default.track(X.rMx.ACK_COMMUNITY_MESSAGES, $({
+        K.default.track(Q.rMx.ACK_COMMUNITY_MESSAGES, $({
           last_message_id: null == i ? true : i.id,
           last_message_reference_message_id: null == i || null == (a = i.messageReference) ? true : a.message_id,
           messages_loaded: e.hasFetched
@@ -300,7 +300,7 @@ function en() {
     connected: U,
     friendsTabSection: Y,
     homeLink: q,
-    isMemberPending: Q,
+    isMemberPending: X,
     selectedChannelId: J,
     selectedGuildId: ee
   } = Chunk77498;

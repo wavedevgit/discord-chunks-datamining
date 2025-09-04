@@ -57,8 +57,8 @@ let W = e => {
     let t, n, E;
     var Y, K, {
         selected: q,
-        nitroTabButtonRef: Q,
-        route: X,
+        nitroTabButtonRef: X,
+        route: Q,
         locationState: J
       } = e,
       $ = function(e, t) {
@@ -218,9 +218,9 @@ let W = e => {
       }
       return e
     }({
-      listItemRef: Q,
+      listItemRef: X,
       selected: q,
-      route: X,
+      route: Q,
       icon: s.SrA,
       text: eR,
       locationState: J,
@@ -243,7 +243,7 @@ let W = e => {
     }) : e_ ? (0, r.jsx)(k.C, {
       children: eD
     }) : eO && eZ === o.z.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK && 8 === E ? (0, r.jsx)(L.Z, {
-      targetElementRef: Q,
+      targetElementRef: X,
       discountOffer: ed,
       premiumSubscription: et,
       dismissCoachmark: ew,

@@ -159,7 +159,7 @@ let tt = (0, Chunk951752.l)(e => {
     let {
       location: t
     } = e, n = (0, eM.default)(t.pathname);
-    return null != n && (0, X.h)(() => h.Z.open(n.section, n.subsection, {
+    return null != n && (0, Q.h)(() => h.Z.open(n.section, n.subsection, {
       openWithoutBackstack: false,
       impressionSource: n.source
     })), (0, r.jsx)(g.Z, {
@@ -259,7 +259,7 @@ let to = [{
     } = e, {
       id: n
     } = t.params;
-    return (0, X.h)(() => (0, eL.openUserProfileModal)({
+    return (0, Q.h)(() => (0, eL.openUserProfileModal)({
       userId: n,
       sourceAnalyticsLocations: [N.Z.URI_SCHEME]
     })), (0, r.jsx)(a.l_, {
@@ -292,7 +292,7 @@ let to = [{
             break
           }
           case "test-mode":
-            eX.Z.whenInitialized(() => f.Wt(n));
+            eQ.Z.whenInitialized(() => f.Wt(n));
             break;
           case "uninstall": {
             let e = eK.Z.getActiveLibraryApplication(n);
@@ -323,7 +323,7 @@ let to = [{
       section: n,
       subsection: i
     } = t.params, o = (0, l.parse)(location.search).feature;
-    return (0, X.h)(() => er.v({
+    return (0, Q.h)(() => er.v({
       section: (0, en.Z)(e3.pNK, n),
       subsection: (0, en.Z)(e3.KsC, i),
       feature: o
@@ -344,7 +344,7 @@ let to = [{
     } = e, {
       guildId: i
     } = t.params;
-    return (0, X.h)(() => {
+    return (0, Q.h)(() => {
       (0, s.ZDy)(async () => {
         let {
           default: e
@@ -409,7 +409,7 @@ let to = [{
       guildId: n,
       guildEventId: i
     } = t.params;
-    return (0, X.h)(() => {
+    return (0, Q.h)(() => {
       (0, ee.bO)({
         eventId: i
       })
@@ -428,7 +428,7 @@ let to = [{
       section: i,
       subsection: l
     } = t.params;
-    return (0, X.h)(() => {
+    return (0, Q.h)(() => {
       et.Z.open(n, (0, en.Z)(e3.pNK, i), true, (0, en.Z)(e3.KsC, l))
     }), (0, r.jsx)(a.l_, {
       to: e3.Z5c.CHANNEL(n)
@@ -470,7 +470,7 @@ function tc(e) {
     guildId: n,
     pathname: r
   } = e;
-  if (!Q.Z.isConnected()) return;
+  if (!X.Z.isConnected()) return;
   let {
     location: i
   } = (0, eI.s1)();
@@ -498,7 +498,7 @@ class tu extends Chunk647438.PureComponent {
       key: i
     } = e;
     ! function(e) {
-      if (Q.Z.isConnected() || Q.Z.isTryingToConnect()) return;
+      if (X.Z.isConnected() || X.Z.isTryingToConnect()) return;
       let t = eV.default.getToken();
       null != t && null != function(e) {
         for (let {
@@ -523,7 +523,7 @@ class tu extends Chunk647438.PureComponent {
         channelId: i,
         messageId: o,
         threadId: s
-      } = ta(n), c = (0, ev.Ss)(r), u = (0, ev.cq)(i), f = (0, ev.cq)(s), h = eQ.Z.getGuildId(), g = h !== r;
+      } = ta(n), c = (0, ev.Ss)(r), u = (0, ev.cq)(i), f = (0, ev.cq)(s), h = eX.Z.getGuildId(), g = h !== r;
       if (c && g && d.Z.selectGuild(r), c && u) {
         let n = eq.Z.getChannelId(h),
           a = n !== i;
@@ -569,7 +569,7 @@ class tu extends Chunk647438.PureComponent {
     }(n, r), (0, G.pN)(n, i, "REPLACE" === t)
   }
   ensureChannelMatchesGuild(e) {
-    if (!Q.Z.isConnected()) return null;
+    if (!X.Z.isConnected()) return null;
     let {
       pathname: t
     } = e, n = ts(t);

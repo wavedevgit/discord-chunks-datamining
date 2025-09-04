@@ -578,7 +578,7 @@ class ep extends Chunk647438.PureComponent {
       } = this.props;
       return (0, r.jsx)(m.Z, {
         section: el.jXE.HERO,
-        children: (0, r.jsx)(Q.Z, {
+        children: (0, r.jsx)(X.Z, {
           pageSize: n,
           items: t.carouselItems.map(n => this.parseMediaItems(e, n, t.assets)),
           autoplayInterval: 8e3,

@@ -123,14 +123,14 @@ function x(e) {
   } = e, {
     onClose: G,
     transitionState: B
-  } = n, V = (0, h.Dt)(), H = D.length % 2 == 0, F = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), [z, W] = i.useState(Date.now()), [Y, K] = i.useState(0), [q, Q] = i.useState(0), [X, J] = i.useState(false), [$, ee] = i.useState(true), et = i.useRef(z), en = i.useRef(Y), er = i.useRef(q), ei = i.useRef(X), el = i.useRef($), [ea, eo] = i.useState(T), es = i.useRef(false);
+  } = n, V = (0, h.Dt)(), H = D.length % 2 == 0, F = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), [z, W] = i.useState(Date.now()), [Y, K] = i.useState(0), [q, X] = i.useState(0), [Q, J] = i.useState(false), [$, ee] = i.useState(true), et = i.useRef(z), en = i.useRef(Y), er = i.useRef(q), ei = i.useRef(Q), el = i.useRef($), [ea, eo] = i.useState(T), es = i.useRef(false);
 
   function ec() {
     let e = Date.now(),
       t = e - et.current,
       n = en.current,
       r = er.current;
-    return ei.current && (K(n += t), el.current || Q(r += t)), W(e), [n, r]
+    return ei.current && (K(n += t), el.current || X(r += t)), W(e), [n, r]
   }
   return i.useEffect(() => {
     let e = async () => {
@@ -160,8 +160,8 @@ function x(e) {
       URL.revokeObjectURL(e.src)
     })
   }, [ea]), i.useEffect(() => {
-    et.current = z, en.current = Y, er.current = q, ei.current = X, el.current = $
-  }, [z, Y, q, X, $]), i.useEffect(() => () => {
+    et.current = z, en.current = Y, er.current = q, ei.current = Q, el.current = $
+  }, [z, Y, q, Q, $]), i.useEffect(() => () => {
     if ("video" === l.type || "embed" === l.type) {
       let [e, t] = ec();
       O.default.track(y.rMx.CHANGE_LOG_VIDEO_PLAYED, {

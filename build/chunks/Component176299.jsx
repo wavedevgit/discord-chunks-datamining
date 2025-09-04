@@ -278,7 +278,7 @@ let eZ = (0, Chunk608787.Un)({
         flash: true,
         context: "notification_center_navigation"
       })
-    }, [t, n]), null == t) ? (0, r.jsx)(X.Z, {}) : eH(e)
+    }, [t, n]), null == t) ? (0, r.jsx)(Q.Z, {}) : eH(e)
   },
   eY = e => {
     let {
@@ -298,8 +298,8 @@ let eZ = (0, Chunk608787.Un)({
     }) : null
   },
   eq = () => (0, Chunk951288.jsx)(Chunk425369.Z, {}),
-  eQ = () => (0, Chunk951288.jsx)(Chunk715702.Z, {}),
-  eX = function() {
+  eX = () => (0, Chunk951288.jsx)(Chunk715702.Z, {}),
+  eQ = function() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
     return function(t) {
       let {
@@ -619,24 +619,24 @@ function e5() {
                   disableTrack: true
                 }), (0, Chunk951288.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.APPLICATION_STORE,
-                  render: eQ,
+                  render: eX,
                   impressionName: Chunk990547.ImpressionNames.APPLICATION_STORE,
                   disableTrack: true
                 }), (0, Chunk951288.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.COLLECTIBLES_SHOP_FULLSCREEN,
-                  render: eX(true),
+                  render: eQ(true),
                   disableTrack: true
                 }), (0, Chunk951288.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.COLLECTIBLES_SHOP_WITH_TAB(":tab"),
-                  render: eX(false),
+                  render: eQ(false),
                   disableTrack: true
                 }), (0, Chunk951288.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.COLLECTIBLES_SHOP,
-                  render: eX(false),
+                  render: eQ(false),
                   disableTrack: true
                 }), (0, Chunk951288.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.COLLECTIBLES_SHOP_PRODUCT_DETAIL(":skuId"),
-                  render: eX(false),
+                  render: eQ(false),
                   disableTrack: true
                 }), (0, Chunk951288.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.MESSAGE_REQUESTS,

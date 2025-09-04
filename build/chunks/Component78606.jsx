@@ -13,13 +13,13 @@ var Chunk951288 = require("./951288.js"),
 
 function u(e) {
   switch (e) {
-    case o._v.SUGGESTED:
+    case o.yq.SUGGESTED:
       return s.intl.string(s.t.gBfXPT);
-    case o._v.MOST_RECENT:
+    case o.yq.MOST_RECENT:
       return s.intl.string(s.t.K6oEu7);
-    case o._v.EXPIRING_SOON:
+    case o.yq.EXPIRING_SOON:
       return s.intl.string(s.t.IB22n5);
-    case o._v.RECENTLY_ENROLLED:
+    case o.yq.RECENTLY_ENROLLED:
       return s.intl.string(s.t["BB+2tb"])
   }
 }
@@ -30,9 +30,9 @@ let d = function(e) {
     selectedSortMethod: d
   } = e, p = i.useCallback(e => {
     t(e.value)
-  }, [t]), f = i.useMemo(() => Object.keys(o._v).map(e => ({
-    name: u(o._v[e]),
-    value: o._v[e],
+  }, [t]), f = i.useMemo(() => Object.keys(o.yq).map(e => ({
+    name: u(o.yq[e]),
+    value: o.yq[e],
     radioBarClassName: n
   })), [n]);
   return (0, r.jsx)(a.Z, {

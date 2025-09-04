@@ -38,7 +38,7 @@ let j = (0, Chunk647438.memo)(function(e) {
   } = (0, p.ZP)(), F = (0, f.ZP)(), z = (0, O.B6)(null == (t = A.userStatus) ? true : t.claimedAt, {
     month: "numeric",
     day: "numeric"
-  }), W = null != (P = null == (n = A.userStatus) ? true : n.claimedTier) ? P : 0, Y = A.config.rewards[W], K = (null == Y ? true : Y.type) === s.w.FRACTIONAL_PREMIUM, q = (null == Y ? true : Y.type) === s.w.COLLECTIBLE, Q = (null == Y ? true : Y.type) === s.w.VIRTUAL_CURRENCY, X = null == Y || null == (j = Y.collectibleProduct) || null == (l = j.items) ? true : l[0], J = (null == X ? true : X.type) === o.Z.AVATAR_DECORATION ? X : null;
+  }), W = null != (P = null == (n = A.userStatus) ? true : n.claimedTier) ? P : 0, Y = A.config.rewards[W], K = (null == Y ? true : Y.type) === s.w.FRACTIONAL_PREMIUM, q = (null == Y ? true : Y.type) === s.w.COLLECTIBLE, X = (null == Y ? true : Y.type) === s.w.VIRTUAL_CURRENCY, Q = null == Y || null == (j = Y.collectibleProduct) || null == (l = j.items) ? true : l[0], J = (null == Q ? true : Q.type) === o.Z.AVATAR_DECORATION ? Q : null;
   (0, p.PM)(M, e => {
     let {
       height: t
@@ -127,7 +127,7 @@ let j = (0, Chunk647438.memo)(function(e) {
         })
       }), K ? (0, r.jsx)(v.Z, {
         className: T.image
-      }) : Q ? (0, r.jsx)(I.Z, {
+      }) : X ? (0, r.jsx)(I.Z, {
         className: T.image
       }) : et.isAnimated ? (0, r.jsx)(g.Z, {
         className: T.assetBlurred,

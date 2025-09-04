@@ -484,10 +484,10 @@ function eO(e) {
   (0, m.J_)(n);
   let d = (0, C.Z)(n),
     f = (0, c.e7)([H.Z], () => H.Z.getGuildDimensions(n).scrollTo),
-    h = (0, c.e7)([Q.Z], () => Q.Z.getChannelId()),
+    h = (0, c.e7)([X.Z], () => X.Z.getChannelId()),
     g = (0, c.e7)([K.Z], () => K.Z.can(ea.Plq.MANAGE_GUILD, o)),
     P = (0, c.e7)([F.Z], () => F.Z.isUnavailable(n)),
-    Z = (0, c.e7)([X.default], () => X.default.getCurrentUser()),
+    Z = (0, c.e7)([Q.default], () => Q.default.getCurrentUser()),
     {
       enableStudyGroup: w
     } = (0, A.s)(o),
@@ -507,7 +507,7 @@ function eO(e) {
   let eC = (0, I.Nj)(u.z.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
     eS = (0, L.Z)(n),
     eN = (0, T.Z)(n),
-    eT = (0, c.e7)([Q.Z], () => Q.Z.getChannelId()),
+    eT = (0, c.e7)([X.Z], () => X.Z.getChannelId()),
     ej = (0, c.e7)([q.Z], () => q.Z.desyncedVoiceStatesCount),
     eP = k.Y.useExperiment({
       location: "GuildSidebar"

@@ -119,7 +119,7 @@ function et(e) {
     }) : true,
     S = null;
   null != y && I ? (t = y.name, S = (0, r.jsx)("img", {
-    className: X.appIcon,
+    className: Q.appIcon,
     alt: q.intl.string(q.t.X4IxWF),
     src: C,
     "aria-hidden": true,
@@ -132,7 +132,7 @@ function et(e) {
     guild: m,
     size: v.Z.Sizes.MINI,
     active: true,
-    className: X.guildIcon
+    className: Q.guildIcon
   }), t = m.name) : null != h && (h.isDM() || h.isGroupDM()) ? (t = q.intl.string(q.t.YUU0RE), S = (0, r.jsx)(u.gw7, {
     size: "xs"
   })) : d.pathname.startsWith(z.Z5c.GLOBAL_DISCOVERY) ? (t = q.intl.string(q.t["4nEZLi"]), S = (0, r.jsx)(u.Jmo, {
@@ -143,7 +143,7 @@ function et(e) {
     size: "xs"
   })) : d.pathname.startsWith(z.Z5c.FRIENDS) ? (t = q.intl.string(q.t.TdEu5e), S = (0, r.jsx)(u.iFz, {
     size: "xs"
-  })) : d.pathname.startsWith(z.Z5c.FAMILY_CENTER) && (t = q.intl.string(Q.default.RZqaJi), S = (0, r.jsx)(u.BFJ, {
+  })) : d.pathname.startsWith(z.Z5c.FAMILY_CENTER) && (t = q.intl.string(X.default.RZqaJi), S = (0, r.jsx)(u.BFJ, {
     size: "xs"
   }));
   let N = i.useCallback(e => {
@@ -152,15 +152,15 @@ function et(e) {
   return null == t || "" === t ? null : (0, r.jsx)(u.ua7, {
     shouldShow: l,
     "aria-label": q.intl.string(q.t["7P/+q6"]),
-    tooltipContentClassName: X.navigationTooltip,
+    tooltipContentClassName: Q.navigationTooltip,
     text: (0, r.jsxs)(r.Fragment, {
       children: [q.intl.string(q.t["7P/+q6"]), (0, r.jsx)(u.M2$, {
         shortcut: ["mod", "k"]
       })]
     }),
     children: e => (0, r.jsxs)(u.P3F, $(J({
-      className: a()(X.title, {
-        [X.fastTravel]: l
+      className: a()(Q.title, {
+        [Q.fastTravel]: l
       })
     }, e, s), {
       onClick: l ? N : true,
@@ -281,7 +281,7 @@ let ei = Chunk647438.memo(function() {
             firstElementFocusJumpSectionProps: "BACK_FORWARD_NAVIGATION" === x ? e : true
           }), _ && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(u.P3F, $(J({}, "SIDEBAR" === x ? e : {}), {
-              className: X.button,
+              className: Q.button,
               onClick: () => {
                 ee.setState({
                   isOpen: !ee.getState().isOpen
@@ -289,7 +289,7 @@ let ei = Chunk647438.memo(function() {
               },
               children: (0, r.jsx)(el, {})
             })), (0, r.jsx)(u.P3F, {
-              className: X.button,
+              className: Q.button,
               onClick: () => {
                 d.Z.open(z.oAB.ACCOUNT)
               },
@@ -309,20 +309,20 @@ let ei = Chunk647438.memo(function() {
         }),
         trailing: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(y.Z, {
-            className: X.button
+            className: Q.button
           }), (0, r.jsx)(h.Z, {
             canShowReminder: true,
-            className: X.button
+            className: Q.button
           }), E && (0, r.jsx)(A.Z, $(J({}, "RECENTS" === x ? e : {}), {
-            className: X.button
+            className: Q.button
           })), p ? (0, r.jsx)(C.Z, {
             focusSectionProps: "HELP" === x ? e : true,
-            className: X.button
+            className: Q.button
           }) : (0, r.jsx)(I.Z, {
             focusSectionProps: "HELP" === x ? e : true,
-            className: X.button
+            className: Q.button
           }), (0, r.jsx)(S.Z, {
-            className: X.button
+            className: Q.button
           })]
         })
       })

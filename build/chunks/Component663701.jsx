@@ -140,7 +140,7 @@ let eu = e => {
       children: [(0, r.jsx)(J.Qj, es(eo({
         onClick: () => {
           let e;
-          f ? (Q.default.track(et.rMx.GIFT_INTENT_BADGE_CLICKED, {
+          f ? (X.default.track(et.rMx.GIFT_INTENT_BADGE_CLICKED, {
             gift_intent_type: er.hX.FRIEND_ANNIVERSARY
           }), e = et.pJs.ALL, b.Z.setSection(et.pJs.ALL), (0, L.Gk)()) : e = q.ZP.getState().section, (0, O.Z)({
             tab_opened: e

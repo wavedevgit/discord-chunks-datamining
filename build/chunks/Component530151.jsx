@@ -485,7 +485,7 @@ let Y = () => (0, Chunk951288.jsx)(B, {
       onClick: () => m.A1(t.applicationId, t.branchId)
     })
   },
-  Q = e => {
+  X = e => {
     let {
       item: t
     } = e;
@@ -495,7 +495,7 @@ let Y = () => (0, Chunk951288.jsx)(B, {
       onClick: () => m.al(t.applicationId, t.branchId)
     })
   },
-  X = [{
+  Q = [{
     key: "name",
     cellClassName: Chunk248241.nameCell,
     render: e => (0, r.jsxs)(v.Z, {
@@ -532,9 +532,9 @@ let Y = () => (0, Chunk951288.jsx)(B, {
         item: e
       }) : null != t && t.paused ? (0, r.jsx)(Y, {}) : (0, r.jsx)(K, {
         item: e
-      }), i = (0, r.jsx)(Q, {
+      }), i = (0, r.jsx)(X, {
         item: e
-      })) : i = (0, r.jsx)(Q, {
+      })) : i = (0, r.jsx)(X, {
         item: e
       }), (0, r.jsxs)(v.Z, {
         justify: v.Z.Justify.END,
@@ -586,7 +586,7 @@ class J extends Chunk647438.PureComponent {
         })]
       }), (0, Chunk951288.jsx)(Chunk167533.Z, {
         hasHeader: false,
-        columns: X,
+        columns: Q,
         data: module,
         className: Chunk248241.table,
         rowClassName: Chunk248241.row,

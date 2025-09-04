@@ -16,14 +16,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk872058 = require("./872058.js");
-let m = new Set;
+let m = [];
 
 function b() {
   let {
     enabled: e
   } = Chunk937797.$d.useConfig({
     location: Chunk46140.dr.QUEST_HOME_DESKTOP
-  }), [t, n] = Chunk647438.useState(Chunk46140._v.SUGGESTED), [b, _] = Chunk647438.useState(m), {
+  }), [t, n] = Chunk647438.useState(Chunk46140.yq.SUGGESTED), [b, _] = Chunk647438.useState(m), {
     quests: O,
     isFetchingCurrentQuests: E
   } = (0, Chunk113434.bA)(Chunk113434.e5.ALL, Chunk647438.useMemo(() => ({
@@ -38,7 +38,7 @@ function b() {
     })
   }, [exports, module]), Chunk647438.useEffect(() => {
     module && Chunk626135.default.track(Chunk981631.rMx.QUEST_HOME_FILTERS_CHANGED, {
-      filters: Array.from(b),
+      filters: b.map(e => e.filter),
       num_quests_visible: O.length
     })
   }, [b, module, O.length]), (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
@@ -62,7 +62,7 @@ function b() {
     }), (0, Chunk951288.jsx)(Chunk710914.Z, {
       quests: O,
       isFetching: E,
-      hasFiltersApplied: b.size > 0,
+      hasFiltersApplied: b.length > 0,
       onClearFilters: y
     })]
   })
