@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-/** chunk id: 968114, original params: e (module,exports,re quire) **/
+/** chunk id: 925527, original params: e (module,exports,re quire) **/
 ! function(t, n) {
   e.exports = n()
 }(0, () => (() => {
@@ -3109,15 +3109,13 @@
                 }
               }
             }).bind(r);
-          return t.ownerDocument.body.addEventListener("mouseover", g, true), t.ownerDocument.body.addEventListener("mouseenter", g, true), t.ownerDocument.body.addEventListener("mouseout", g, true), t.ownerDocument.body.addEventListener("mouseleave", g, true), t.ownerDocument.body.addEventListener("mousemove", g, true), t.ownerDocument.body.addEventListener("mousedown", g, true), t.ownerDocument.body.addEventListener("mouseup", g, true), t.ownerDocument.body.addEventListener("touchmove", g, {
-              passive: f,
-              capture: true
-            }), t.ownerDocument.body.addEventListener("touchstart", g, {
-              passive: f,
-              capture: true
-            }), t.ownerDocument.body.addEventListener("touchend", g, true),
+          return t.ownerDocument.body.addEventListener("mouseover", g, true), t.ownerDocument.body.addEventListener("mouseenter", g, true), t.ownerDocument.body.addEventListener("mouseout", g, true), t.ownerDocument.body.addEventListener("mouseleave", g, true), t.ownerDocument.body.addEventListener("mousemove", g, true), t.ownerDocument.body.addEventListener("mousedown", g, true), t.ownerDocument.body.addEventListener("mouseup", g, true), t.addEventListener("touchmove", g, {
+              passive: f
+            }), t.addEventListener("touchstart", g, {
+              passive: f
+            }), t.addEventListener("touchend", g),
             function() {
-              t.ownerDocument.body.removeEventListener("mouseover", g, true), t.ownerDocument.body.removeEventListener("mouseenter", g, true), t.ownerDocument.body.removeEventListener("mouseout", g, true), t.ownerDocument.body.removeEventListener("mouseleave", g, true), t.ownerDocument.body.removeEventListener("mousemove", g, true), t.ownerDocument.body.removeEventListener("mousedown", g, true), t.ownerDocument.body.removeEventListener("mouseup", g, true), t.ownerDocument.body.removeEventListener("touchmove", g, true), t.ownerDocument.body.removeEventListener("touchstart", g, true), t.ownerDocument.body.removeEventListener("touchend", g, true)
+              t.ownerDocument.body.removeEventListener("mouseover", g, true), t.ownerDocument.body.removeEventListener("mouseenter", g, true), t.ownerDocument.body.removeEventListener("mouseout", g, true), t.ownerDocument.body.removeEventListener("mouseleave", g, true), t.ownerDocument.body.removeEventListener("mousemove", g, true), t.ownerDocument.body.removeEventListener("mousedown", g, true), t.ownerDocument.body.removeEventListener("mouseup", g, true), t.removeEventListener("touchmove", g), t.removeEventListener("touchstart", g), t.removeEventListener("touchend", g)
             }
         }
     }, (e, t, n) => {
