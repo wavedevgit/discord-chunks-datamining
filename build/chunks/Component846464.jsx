@@ -35,12 +35,12 @@ function L(e) {
     priceOptions: m,
     defaultPlanId: L
   } = (0, u.JL)(), {
-    isGift: g,
-    claimableRewards: y
-  } = (0, p.wD)(), S = g && null != y && y.length > 0, v = (0, C.N)(i), E = (0, a.Nx)(), O = (0, o.ZP)({
+    isGift: b,
+    claimableRewards: S
+  } = (0, p.wD)(), y = b && null != S && S.length > 0, v = (0, C.N)(i), E = (0, a.Nx)(), O = (0, o.ZP)({
     location: "PremiumPaymentSelect"
   });
-  return (0, r.jsx)(b, {
+  return (0, r.jsx)(g, {
     selectSku: e => (function(e) {
       let {
         activeSubscription: t,
@@ -78,22 +78,22 @@ function L(e) {
       newSkuId: e,
       setSelectedSkuId: l,
       handleStepChange: t,
-      isGift: g,
+      isGift: b,
       userTrialOffer: v,
       startedPaymentFlowWithPaymentSources: d.current,
       setSelectedPlanId: j,
       defaultPlanId: L
     }),
     onClose: n,
-    isGift: g,
+    isGift: b,
     inOfferExperience: E,
     priceOptions: m,
-    showPromotionalGiftBanner: S,
+    showPromotionalGiftBanner: y,
     enablePremiumBrandRefresh: O
   })
 }
 
-function b(e) {
+function g(e) {
   let {
     selectSku: t,
     onClose: n,

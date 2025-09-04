@@ -1,7 +1,7 @@
 /** Chunk was on 54400 **/
 /** chunk id: 293858, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  b: () => g
+  b: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,13 +23,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk698708 = require("./698708.jsx"),
   Chunk921944 = require("./921944.js");
 
-function g(e) {
+function b(e) {
   let t, {
       handleClose: n,
       planGroup: l,
-      onSubscriptionConfirmation: g,
-      renderPurchaseConfirmation: y,
-      postSuccessGuild: S,
+      onSubscriptionConfirmation: b,
+      renderPurchaseConfirmation: S,
+      postSuccessGuild: y,
       followupSKUInfo: v,
       continueSessionToInitialStep: E
     } = e,
@@ -45,8 +45,8 @@ function g(e) {
       startingFractionalPremiumEndsAtRef: A
     } = (0, _.JL)(),
     {
-      isGift: N,
-      giftRecipient: B,
+      isGift: B,
+      giftRecipient: N,
       giftCode: U,
       hasSentMessage: R,
       isSendingMessage: H,
@@ -58,30 +58,30 @@ function g(e) {
       confirmationFooter: z
     } = (0, h.zb)(),
     W = null != z,
-    Y = (0, d.id)(I, N, G),
+    Y = (0, d.id)(I, B, G),
     K = (0, C.Z)(),
     V = (0, d.a5)(I),
     q = (0, d.tK)(null == D ? true : D.skuId),
     J = (0, m.$)(P, w),
-    X = N && null != D && V;
+    X = B && null != D && V;
   s()(null != I, "Expected plan to selected"), s()(null != k, "Expected selectedSkuId"), s()(null != M, "Step should be set");
   let Q = i.useCallback(() => {
-    n(), null == g || g()
-  }, [n, g]);
+    n(), null == b || b()
+  }, [n, b]);
   return i.useEffect(() => {
-    !N || null == B || null == U || R || H || (0, p.pO)(B) || F({
-      onSubscriptionConfirmation: g
+    !B || null == N || null == U || R || H || (0, p.pO)(N) || F({
+      onSubscriptionConfirmation: b
     })
-  }, [F, N, B, U, R, H, g]), i.useEffect(() => {
+  }, [F, B, N, U, R, H, b]), i.useEffect(() => {
     null != K && null != K.reminderNotice && Y && (0, o.wH)(a.z.GIFTING_PROMOTION_REMINDER, K.dismissibleContentVersion, {
-      dismissAction: b.L.INDIRECT_ACTION
+      dismissAction: g.L.INDIRECT_ACTION
     })
-  }, [K, Y]), t = null != y ? y(I, Q, Z) : null != E ? (0, r.jsx)(c.VY, {}) : N ? (0, r.jsx)(c.TB, {
+  }, [K, Y]), t = null != S ? S(I, Q, Z) : null != E ? (0, r.jsx)(c.VY, {}) : B ? (0, r.jsx)(c.TB, {
     planId: I.id,
     onClose: Q
   }) : T.current === I.id ? (0, r.jsx)(c.ZP, {
     planId: I.id,
-    postSuccessGuild: S,
+    postSuccessGuild: y,
     onClose: Q,
     paymentSourceType: J,
     hideClose: W,

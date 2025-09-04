@@ -26,8 +26,8 @@ function f(e) {
     selectedGiftingPromotionReward: f
   } = e, j = (0, i.e7)([u.default], () => u.default.getCurrentUser()), m = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), {
     analyticsLocations: L
-  } = (0, o.ZP)(), b = s.EFr.SIZE_32, g = (0, C.Z)(null == f ? true : f.assetId, b, !m), y = (0, p.Z)(), S = null == y ? true : y.giftPurchaseConfirmation;
-  return null == n || null == S ? null : (0, r.jsx)(x.O3, {
+  } = (0, o.ZP)(), g = s.EFr.SIZE_32, b = (0, C.Z)(null == f ? true : f.assetId, g, !m), S = (0, p.Z)(), y = null == S ? true : S.giftPurchaseConfirmation;
+  return null == n || null == y ? null : (0, r.jsx)(x.O3, {
     children: (0, r.jsx)(s.mzw, {
       align: c.Z.Align.CENTER,
       "data-migration-pending": true,
@@ -35,12 +35,12 @@ function f(e) {
         className: h.promotionalFooter,
         children: [(0, r.jsx)(s.Xo$, {
           "aria-label": null == j ? true : j.username,
-          size: b,
-          src: null == j ? true : j.getAvatarURL(true, (0, s.pxk)(b), !m),
-          avatarDecoration: g
+          size: g,
+          src: null == j ? true : j.getAvatarURL(true, (0, s.pxk)(g), !m),
+          avatarDecoration: b
         }), (0, r.jsx)(l.zx, {
           variant: "primary",
-          text: S.collectRewardButtonText(),
+          text: y.collectRewardButtonText(),
           onClick: () => {
             t(), (0, d.Z)({
               product: n,

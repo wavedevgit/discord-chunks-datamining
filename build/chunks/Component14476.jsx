@@ -26,16 +26,16 @@ let f = e => {
     onSelect: j,
     productName: m,
     a11yLabel: L,
-    selectedSkuId: b,
-    category: g
-  } = e, y = i.useRef(null), S = (0, d.Z)(y), v = (0, x.m)(y), E = !f && (S || v), O = (0, c.ZP)(), P = (0, o.wj)(O), w = {
+    selectedSkuId: g,
+    category: b
+  } = e, S = i.useRef(null), y = (0, d.Z)(S), v = (0, x.m)(S), E = !f && (y || v), O = (0, c.ZP)(), P = (0, o.wj)(O), w = {
     type: a.Z.AVATAR_DECORATION,
     label: L,
     asset: n
   };
   return (0, r.jsx)(C.tEY, {
     children: (0, r.jsxs)(C.kL8, {
-      ref: y,
+      ref: S,
       "aria-label": null != m ? m : "",
       onClick: () => {
         null != t && null != j && j(t)
@@ -43,12 +43,12 @@ let f = e => {
       className: s()(P ? h.shopCardDark : h.shopCard, {
         [h.shopCardAnimation]: E,
         [P ? h.shopCardDarkHighlighted : h.shopCardHighlighted]: E,
-        [h.shopCardSelected]: b === t
+        [h.shopCardSelected]: g === t
       }),
       children: [(0, r.jsx)("div", {
         className: s()(h.preview, {
-          [h.previewTrick]: g === p.KN.Trick,
-          [h.previewTreat]: g === p.KN.Treat,
+          [h.previewTrick]: b === p.KN.Trick,
+          [h.previewTreat]: b === p.KN.Treat,
           [h.shopCardClaimed]: f
         }),
         children: (0, r.jsx)(u.R, {
