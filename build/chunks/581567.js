@@ -32,7 +32,7 @@ function l(e) {
     u = "exePath" in e ? e.exePath : e.exe;
   return {
     gameName: null != (t = e.name) ? t : true,
-    gameId: null != (a = null != (n = null == c ? true : c.id) ? n : e.id) ? a : true,
+    gameId: null != (a = null != (n = e.id) ? n : null == c ? true : c.id) ? a : true,
     exe: null != u ? s(u) : true,
     distributor: null != (o = e.distributor) ? o : true,
     sku: null != (l = e.sku) ? l : true,

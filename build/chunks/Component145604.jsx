@@ -130,12 +130,12 @@ class et extends Chunk647438.PureComponent {
       voiceChannelType: u,
       voiceChannelBitrate: p,
       videoEnabled: h,
-      isScreenSharing: _,
-      runningGame: E,
-      runningGamePid: y,
-      selectedChannelId: I,
-      selectedGuildId: C,
-      connected: S
+      isScreenSharing: E,
+      runningGame: y,
+      runningGamePid: I,
+      selectedChannelId: C,
+      selectedGuildId: S,
+      connected: T
     } = this.props;
     if (e.voiceChannelId !== o && null != e.voiceChannelId) {
       let t = O.ZP.getCurrentGameForAnalytics(),
@@ -182,55 +182,52 @@ class et extends Chunk647438.PureComponent {
         join_voice_id: U.Z.getJoinVoiceId()
       }, (0, d.oG)(c, o), (0, d.kO)(c, o, h)))
     }
-    let T = null != E && null != E.distributor && null != E.sku && null != e.runningGame && e.runningGame.distributor === E.distributor && E.sku === e.runningGame.sku && E.name === e.runningGame.name,
-      P = null != e.runningGame && null != E && e.runningGame.isLauncher !== E.isLauncher;
-    if (e.runningGame !== E && null != E && !E.isLauncher && (!T || P)) {
-      let e = L.Z.getGameByName(E.name),
-        a = O.ZP.getOverrideForGame(E),
-        d = D.Z.getGuildIds(),
-        f = Z.SE.getSetting(),
-        h = d.filter(e => !f.includes(e)).slice(0, 200),
-        g = null;
-      g = null != a ? "custom_override" : null != e ? "verified_game" : "launcher";
-      let m = j.default.getTrackedGameByPid(E.pid),
-        _ = (0, O.b6)(E),
-        v = {
-          enabledOOP: null != (t = null == m ? true : m.oopEnabled) ? t : _.enabledOOP,
-          enabledLegacy: null != (n = null == m ? true : m.legacyEnabled) ? n : _.enabledLegacy,
-          overlayMethod: null != (r = null == m ? true : m.overlayMethod) ? r : _.overlayMethod,
-          source: null != (i = null == m ? true : m.source) ? i : _.source
+    let P = null != y && null != y.distributor && null != y.sku && null != e.runningGame && e.runningGame.distributor === y.distributor && y.sku === e.runningGame.sku && y.name === e.runningGame.name,
+      x = null != e.runningGame && null != y && e.runningGame.isLauncher !== y.isLauncher;
+    if (e.runningGame !== y && null != y && !y.isLauncher && (!P || x)) {
+      let {
+        gameId: e
+      } = (0, _.G8)(y), a = true !== e ? L.Z.getDetectableGame(e) : null, d = O.ZP.getOverrideForGame(y), f = D.Z.getGuildIds(), h = Z.SE.getSetting(), g = f.filter(e => !h.includes(e)).slice(0, 200), m = null;
+      m = null != d ? "custom_override" : null != a ? "verified_game" : "launcher";
+      let E = j.default.getTrackedGameByPid(y.pid),
+        v = (0, O.b6)(y),
+        C = {
+          enabledOOP: null != (t = null == E ? true : E.oopEnabled) ? t : v.enabledOOP,
+          enabledLegacy: null != (n = null == E ? true : E.legacyEnabled) ? n : v.enabledLegacy,
+          overlayMethod: null != (r = null == E ? true : E.overlayMethod) ? r : v.overlayMethod,
+          source: null != (i = null == E ? true : E.source) ? i : v.source
         },
-        I = null != (l = j.default.getOverlayMethod(E.pid)) ? l : v.overlayMethod;
+        S = null != (l = j.default.getOverlayMethod(y.pid)) ? l : C.overlayMethod;
       if (setTimeout(() => {
-          (E.distributor === Q.GQo.ROBLOX ? this.debouncedRobloxAnalytics : ee)({
-            runningGame: E,
-            game: e,
-            detectionMethod: g,
-            overlayStatus: v,
-            overlayMethod: I,
-            sharedGuildIds: h,
+          (y.distributor === Q.GQo.ROBLOX ? this.debouncedRobloxAnalytics : ee)({
+            runningGame: y,
+            game: a,
+            detectionMethod: m,
+            overlayStatus: C,
+            overlayMethod: S,
+            sharedGuildIds: g,
             voiceChannelId: o,
             voiceChannelType: u,
             voiceChannelBitrate: p,
             voiceChannelGuildId: c
           })
-        }, 1e4), null != E.name && null != y && L.Z.shouldReport(E.name)) {
-        let e = E.name;
-        s.Z.identifyGame(y, e).then(e => s.Z.reportUnverifiedGame(e)).catch(e => new b.Z("AutoAnalytics").error("Cannot identify game", e))
+        }, 1e4), null != y.name && null != I && L.Z.shouldReport(y.name)) {
+        let e = y.name;
+        s.Z.identifyGame(I, e).then(e => s.Z.reportUnverifiedGame(e)).catch(e => new b.Z("AutoAnalytics").error("Cannot identify game", e))
       }
     }
-    if ((e.videoEnabled !== h || e.isScreenSharing !== _) && null != o) {
+    if ((e.videoEnabled !== h || e.isScreenSharing !== E) && null != o) {
       let e = "none",
-        t = [_ ? "screen" : null, h ? "camera" : null].filter(X.lm),
+        t = [E ? "screen" : null, h ? "camera" : null].filter(X.lm),
         n = null;
-      _ ? (e = "screen", n = (0, g.t)()) : h && (e = "camera"), K.default.track(Q.rMx.VIDEO_INPUT_TOGGLED, $({
+      E ? (e = "screen", n = (0, g.t)()) : h && (e = "camera"), K.default.track(Q.rMx.VIDEO_INPUT_TOGGLED, $({
         video_input_type: e,
         video_toggle_source: __OVERLAY__ ? "overlay" : "app",
         enabled_inputs: t,
         preview_enabled: Z.qF.getSetting()
       }, n, this.getGameMetadata(), (0, d.AB)(o)))
     }
-    if (S && null != I && (!e.connected || I !== e.selectedChannelId || C !== e.selectedGuildId)) {
+    if (T && null != C && (!e.connected || C !== e.selectedChannelId || S !== e.selectedGuildId)) {
       let t = e.selectedChannelId,
         n = w.Z.getChannel(t),
         r = D.Z.getGuild(null == n ? true : n.getGuildId());
