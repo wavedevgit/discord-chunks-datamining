@@ -23,12 +23,12 @@ function s(e) {
   return (0, i.jsx)(r.sNh, {
     id: "application-directory",
     label: (0, i.jsx)(i.Fragment, {
-      children: c.intl.string(c.t.AKcFUl)
+      children: d.intl.string(d.t.AKcFUl)
     }),
     icon: n,
     action: () => {
       (0, a.transitionToGlobalDiscovery)({
-        tab: d.GlobalDiscoveryTab.APPS,
+        tab: c.GlobalDiscoveryTab.APPS,
         newSessionState: {
           entrypoint: {
             name: o.xF.GUILD_HEADER_POPOUT

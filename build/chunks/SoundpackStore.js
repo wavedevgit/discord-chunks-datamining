@@ -17,7 +17,7 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 let l = {
-  soundpack: Chunk871465.YC.CLASSIC,
+  soundpack: Chunk871465.Y.CLASSIC,
   lastSoundpackExperimentId: null
 };
 
@@ -33,7 +33,7 @@ function c(e) {
 }
 class u extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (l = e, Object.values(o.YC).includes(l.soundpack) || (l.soundpack = o.YC.CLASSIC))
+    null != e && (l = e, Object.values(o.Y).includes(l.soundpack) || (l.soundpack = o.Y.CLASSIC))
   }
   getState() {
     return l

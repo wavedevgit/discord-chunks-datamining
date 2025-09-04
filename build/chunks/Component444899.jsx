@@ -1,7 +1,7 @@
 /** Chunk was on 15076 **/
 /** chunk id: 444899, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  f: () => f
+  f: () => N
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk385888 = require("./385888.js");
 
-function S(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,7 +29,7 @@ function S(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class f extends Chunk647438.PureComponent {
+class N extends Chunk647438.PureComponent {
   highlight() {
     this.setState({
       highlight: true
@@ -58,7 +58,7 @@ class f extends Chunk647438.PureComponent {
     }, n)
   }
   handleRadioChange(e) {
-    this.setMessageNotification(e, true, v.UE.notifications(e))
+    this.setMessageNotification(e, true, p.UE.notifications(e))
   }
   renderMessageNotificationsRadioOption(e) {
     let {
@@ -68,9 +68,9 @@ class f extends Chunk647438.PureComponent {
       guildMessageNotifications: r,
       checkboxColor: a
     } = this.props, o = t === e;
-    (null == t || t === p.bL.NULL) && e === r && (o = true);
+    (null == t || t === v.bL.NULL) && e === r && (o = true);
     let d = l.M0.INVERTED;
-    return (s || t === p.bL.NULL || null == t) && (d = l.M0.GHOST), (0, i.jsx)(l.$q, {
+    return (s || t === v.bL.NULL || null == t) && (d = l.M0.GHOST), (0, i.jsx)(l.$q, {
       value: !n && o,
       disabled: n,
       shape: l.zV.ROUND,
@@ -171,23 +171,23 @@ class f extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), S(this, "_timeout", true), S(this, "contentDomRef", s.createRef()), S(this, "state", {
+    super(...e), b(this, "_timeout", true), b(this, "contentDomRef", s.createRef()), b(this, "state", {
       highlight: false
-    }), S(this, "unhighlight", () => {
+    }), b(this, "unhighlight", () => {
       this.setState({
         highlight: false
       })
-    }), S(this, "handleMute", (e, t) => {
+    }), b(this, "handleMute", (e, t) => {
       let {
         messageNotifications: n
       } = this.props;
-      this.setMessageNotification(null != n ? n : p.bL.NULL, t, v.UE.muted(t))
-    }), S(this, "handleDelete", () => {
+      this.setMessageNotification(null != n ? n : v.bL.NULL, t, p.UE.muted(t))
+    }), b(this, "handleDelete", () => {
       let {
         onDelete: e,
         channel: t
       } = this.props;
-      this.setMessageNotification(p.bL.NULL, false, v.ZB.OverrideDeleted), null != e && e(t.id)
+      this.setMessageNotification(v.bL.NULL, false, p.ZB.OverrideDeleted), null != e && e(t.id)
     })
   }
 }

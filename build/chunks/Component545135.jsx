@@ -1,12 +1,12 @@
 /** Chunk was on 33213 **/
 /** chunk id: 545135, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => w
+  default: () => I
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk512722 = require("./512722.js"),
-  l = require.n(Chunk512722),
+  s = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
@@ -17,7 +17,6 @@ var Chunk512722 = require("./512722.js"),
   Chunk340541 = require("./340541.js"),
   Chunk423589 = require("./423589.js"),
   Chunk837949 = require("./837949.jsx"),
-  Chunk122074 = require("./122074.jsx"),
   Chunk601964 = require("./601964.js"),
   Chunk314897 = require("./314897.js"),
   Chunk984933 = require("./984933.js"),
@@ -36,7 +35,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function T(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -55,7 +54,7 @@ function T(e) {
   return e
 }
 
-function k(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -68,70 +67,70 @@ function k(e, t) {
   }), e
 }
 
-function G(e) {
+function w(e) {
   let {
     guild: t,
     onSelect: r,
-    hideSettings: c
-  } = e, u = t.id, G = E.ZP.getDefaultChannel(u), {
-    entrypoints: w
+    hideSettings: a
+  } = e, u = t.id, w = E.ZP.getDefaultChannel(u), {
+    entrypoints: I
   } = (0, b._k)({
     location: "guild_context_menu"
-  }), U = (0, s.e7)([y.default], () => {
-    let e = y.default.getCurrentUser();
-    return l()(null != e, "GuildContextMenu: user cannot be undefined"), (0, O.eM)(t, e)
-  }, [t]), C = (0, I.Z)({
+  }), U = (0, l.e7)([O.default], () => {
+    let e = O.default.getCurrentUser();
+    return s()(null != e, "GuildContextMenu: user cannot be undefined"), (0, h.eM)(t, e)
+  }, [t]), T = (0, x.Z)({
     guild: t,
-    source: M.t4x.GUILD_CONTEXT_MENU,
-    channel: w ? null : G
-  }), R = (0, Z.Z)(u), B = (0, v.Z)(t), Y = (0, m.Z)(t), Q = (0, L.Z)(t), F = (0, j.Z)({
+    source: G.t4x.GUILD_CONTEXT_MENU,
+    channel: I ? null : w
+  }), R = (0, m.Z)(u), C = (0, P.Z)(t), B = (0, L.Z)(t), Q = (0, A.Z)(t), Y = (0, y.Z)({
     guildId: t.id,
-    userId: h.default.getId(),
+    userId: f.default.getId(),
     analyticsLocation: {
-      page: M.ZY5.GUILD_CHANNEL,
-      section: M.jXE.CHAT_USERNAME,
-      object: M.qAy.CONTEXT_MENU_ITEM
+      page: G.ZY5.GUILD_CHANNEL,
+      section: G.jXE.CHAT_USERNAME,
+      object: G.qAy.CONTEXT_MENU_ITEM
     }
-  }), H = (0, _.Z)(t), V = (0, g.Z)(t.id), q = (0, d.Z)({
+  }), H = (0, j.Z)(t), V = (0, g.Z)(t.id), q = (0, d.Z)({
     id: t.id,
-    label: D.intl.string(D.t["94lLDw"])
-  }), W = (0, P.Z)(t, {
-    section: M.jXE.GUILD_LIST
-  }), X = (0, f.Z)(t.id), K = (0, x.Z)(t.id), z = (0, S.ng)(t.id, false), J = (0, N.Z)(t), $ = (0, p.Mn)("GuildContextMenu"), ee = (0, A.p)(t);
+    label: M.intl.string(M.t["94lLDw"])
+  }), F = (0, N.Z)(t, {
+    section: G.jXE.GUILD_LIST
+  }), W = (0, S.Z)(t.id), X = (0, v.Z)(t.id), K = (0, _.Z)(t), J = (0, p.Mn)("GuildContextMenu"), z = (0, Z.p)(t);
 
-  function et() {
+  function $() {
     (0, o.ZDy)(async () => {
       let {
         default: e
       } = await n.e("53961").then(n.bind(n, 402979));
-      return n => (0, i.jsx)(e, k(T({}, n), {
+      return n => (0, i.jsx)(e, D(k({}, n), {
         guild: t
       }))
     })
   }
-  return t.features.has(M.oNc.HUB) ? (0, i.jsxs)(o.v2r, {
+  return t.features.has(G.oNc.HUB) ? (0, i.jsxs)(o.v2r, {
     navId: "guild-context",
-    onClose: a.Zy,
-    "aria-label": D.intl.string(D.t.HpQykZ),
+    onClose: c.Zy,
+    "aria-label": M.intl.string(M.t.HpQykZ),
     onSelect: r,
     children: [(0, i.jsxs)(o.kSQ, {
-      children: [C, (0, i.jsx)(o.sNh, {
+      children: [T, (0, i.jsx)(o.sNh, {
         id: "privacy",
-        label: D.intl.string(D.t.IlFwwc),
+        label: M.intl.string(M.t.IlFwwc),
         action: () => (0, o.ZDy)(async () => {
           let {
             default: e
           } = await n.e("59500").then(n.bind(n, 241420));
-          return n => (0, i.jsx)(e, k(T({}, n), {
+          return n => (0, i.jsx)(e, D(k({}, n), {
             guild: t
           }))
         })
-      }), F]
+      }), Y]
     }), U ? null : (0, i.jsx)(o.kSQ, {
       children: (0, i.jsx)(o.sNh, {
         id: "leave-guild",
-        label: D.intl.string(D.t.Dv8gFR),
-        action: et,
+        label: M.intl.string(M.t.Dv8gFR),
+        action: $,
         color: "danger"
       })
     }), (0, i.jsx)(o.kSQ, {
@@ -139,51 +138,51 @@ function G(e) {
     })]
   }) : (0, i.jsxs)(o.v2r, {
     navId: "guild-context",
-    onClose: a.Zy,
-    "aria-label": D.intl.string(D.t.HpQykZ),
+    onClose: c.Zy,
+    "aria-label": M.intl.string(M.t.HpQykZ),
     onSelect: r,
     children: [(0, i.jsx)(o.kSQ, {
-      children: W
+      children: F
     }), (0, i.jsx)(o.kSQ, {
-      children: C
+      children: T
     }), (0, i.jsxs)(o.kSQ, {
-      children: [B, $ || __OVERLAY__ ? null : Y, $ && !__OVERLAY__ ? K : null, z, R, X]
+      children: [C, J || __OVERLAY__ ? null : B, J && !__OVERLAY__ ? X : null, R, W]
     }), (0, i.jsxs)(o.kSQ, {
-      children: [c ? null : Q, __OVERLAY__ ? null : (0, i.jsx)(o.sNh, {
+      children: [a ? null : Q, __OVERLAY__ ? null : (0, i.jsx)(o.sNh, {
         id: "privacy",
-        label: D.intl.string(D.t.BayiAg),
+        label: M.intl.string(M.t.BayiAg),
         action: () => (0, o.ZDy)(async () => {
           let {
             default: e
           } = await n.e("59500").then(n.bind(n, 241420));
-          return n => (0, i.jsx)(e, k(T({}, n), {
+          return n => (0, i.jsx)(e, D(k({}, n), {
             guild: t
           }))
         })
-      }), F]
+      }), Y]
     }), (0, i.jsxs)(o.kSQ, {
       children: [H, V]
     }), (0, i.jsxs)(o.kSQ, {
-      children: [J, !U && (0, i.jsx)(o.sNh, {
+      children: [K, !U && (0, i.jsx)(o.sNh, {
         id: "leave-guild",
-        label: D.intl.string(D.t.J2TBi4),
-        action: et,
+        label: M.intl.string(M.t.J2TBi4),
+        action: $,
         color: "danger"
       })]
     }), (0, i.jsx)(o.kSQ, {
-      children: ee
+      children: z
     }), (0, i.jsx)(o.kSQ, {
       children: q
     })]
   })
 }
 
-function w(e) {
+function I(e) {
   let {
     analyticsLocations: t
-  } = (0, u.ZP)(c.Z.CONTEXT_MENU);
+  } = (0, u.ZP)(a.Z.CONTEXT_MENU);
   return (0, i.jsx)(u.Gt, {
     value: t,
-    children: (0, i.jsx)(G, T({}, e))
+    children: (0, i.jsx)(w, k({}, e))
   })
 }

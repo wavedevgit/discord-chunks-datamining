@@ -97,7 +97,7 @@ function R(e) {
           if (!__OVERLAY__ && (null != j && clearTimeout(j), x(setTimeout(L, 500)), R(N + 1), 15 === N)) {
             L();
             let e = !a.K.get(I.wli);
-            a.K.set(I.wli, e), e && a.K.set(Z.O5, true), e ? (0, f.GN)("discodo") : (0, f.GN)("user_leave"), v(true), setTimeout(() => {
+            a.K.set(I.wli, e), e && a.K.set(Z.O, true), e ? (0, f.GN)("discodo") : (0, f.GN)("user_leave"), v(true), setTimeout(() => {
               v(false)
             }, 1e3)
           }

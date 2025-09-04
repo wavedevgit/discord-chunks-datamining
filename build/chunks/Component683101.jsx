@@ -1,12 +1,10 @@
 /** Chunk was on 10576 **/
 /** chunk id: 683101, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
   Chunk374470 = require("./374470.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
@@ -15,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk374815 = require("./374815.js");
 
-function A(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,20 +22,20 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      E(e, t, n[t])
     })
   }
   return e
 }
 
-function T(e, t) {
+function A(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,29 +47,27 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class I extends Chunk647438.PureComponent {
+class m extends Chunk647438.PureComponent {
   render() {
     let {
-      result: e,
+      message: e,
       listItemProps: t,
       searchOffset: n,
       index: l,
       totalResults: i
-    } = this.props, s = a().find(module, e => e.isSearchHit);
-    if (null == Chunk374470) return null;
-    let u = Chunk592125.Z.getChannel(Chunk374470.channel_id);
+    } = this.props, s = Chunk592125.Z.getChannel(module.channel_id);
     if (null == Chunk239091) return null;
-    let A = "search-result-".concat(Chunk374470.id);
+    let E = "search-result-".concat(module.id);
     return (0, Chunk951288.jsx)(Chunk481060.tEY, {
       ringTarget: this.hitRef,
       ringClassName: Chunk374815.__invalid_searchResultFocusRing,
       offset: 4,
-      children: (0, Chunk951288.jsxs)("li", T(m({
+      children: (0, Chunk951288.jsxs)("li", A(_({
         className: Chunk374815.container
       }, exports), {
         "aria-posinset": 1 + require + Chunk647438,
-        "aria-setsize": Chunk392711,
-        "aria-labelledby": A,
+        "aria-setsize": Chunk374470,
+        "aria-labelledby": E,
         children: [(0, Chunk951288.jsx)(Chunk481060.P3F, {
           tabIndex: false,
           onClick: this.handleMessageClick,
@@ -84,16 +80,16 @@ class I extends Chunk647438.PureComponent {
             ref: this.hitRef,
             className: Chunk374815.message,
             children: (0, Chunk951288.jsx)(Chunk294218.Z, {
-              id: A,
-              message: Chunk374470,
+              id: E,
+              message: module,
               channel: Chunk239091,
-              onContextMenu: e => this.handleContextMenu(e, s),
+              onContextMenu: t => this.handleContextMenu(t, e),
               animateAvatar: false,
               subscribeToComponentDispatch: false,
               trackAnnouncementViews: true,
               isSearchResult: true
             })
-          }, Chunk374470.id)
+          }, module.id)
         }), (0, Chunk951288.jsx)("div", {
           className: Chunk374815.buttonsContainer,
           "aria-hidden": true,
@@ -107,33 +103,33 @@ class I extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), A(this, "containerRef", l.createRef()), A(this, "hitRef", l.createRef()), A(this, "handleContextMenu", (e, t) => {
-      let l = d.Z.getChannel(t.channel_id);
-      null != l && (e.stopPropagation(), (0, u.jW)(e, async () => {
+    super(...e), E(this, "containerRef", l.createRef()), E(this, "hitRef", l.createRef()), E(this, "handleContextMenu", (e, t) => {
+      let l = u.Z.getChannel(t.channel_id);
+      null != l && (e.stopPropagation(), (0, s.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("76676"), n.e("93077"), n.e("69363")]).then(n.bind(n, 858341));
-        return n => (0, r.jsx)(e, T(m({}, n), {
+        return n => (0, r.jsx)(e, A(_({}, n), {
           message: t,
           channel: l
         }))
       }))
-    }), A(this, "jumpTo", e => {
+    }), E(this, "jumpTo", e => {
       null != e && (e.preventDefault(), e.stopPropagation());
       let {
         onJump: t,
-        result: n,
+        message: n,
         index: r
-      } = this.props, l = n.find(e => e.isSearchHit);
-      null != l && t(l, r)
-    }), A(this, "handleMessageClick", e => {
+      } = this.props;
+      null != n && t(n, r)
+    }), E(this, "handleMessageClick", e => {
       if (function(e, t) {
           var n;
           let r = null == (n = window) ? true : n.getSelection();
           if (null != r && !r.isCollapsed) returntrue;
           if (null == e || null == t) returnfalse;
           for (;
-            (0, s.k)(e) && e !== t;) {
+            (0, i.k)(e) && e !== t;) {
             let {
               tagName: t
             } = e;

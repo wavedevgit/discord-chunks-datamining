@@ -10,9 +10,9 @@ var Chunk163400 = require("./163400.js"),
 
 function o(e) {
   var t, n;
-  let o = l.Z.getGuildPermissionProps(e),
-    a = (0, i.p)(e.id).length > 0;
-  return s.ZP.generateSections((t = function(e) {
+  let o = s.Z.getGuildPermissionProps(e),
+    c = (0, i.p)(e.id).length > 0;
+  return l.ZP.generateSections((t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);
@@ -32,7 +32,7 @@ function o(e) {
   }({
     showDirtyGuildTemplateIndicator: false
   }, o), n = n = {
-    canUnlinkChannels: a,
+    canUnlinkChannels: c,
     welcomeScreenEmpty: r.Z.isEmpty(e.id)
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

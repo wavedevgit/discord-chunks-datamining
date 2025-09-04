@@ -1,12 +1,12 @@
-/** Chunk was on 70205 **/
-/** chunk id: 687272, original params: t,e,n (module,exports,require) **/
+/** Chunk was on 60831 **/
+/** chunk id: 687272, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  QU: () => r,
+  QU: () => a,
   _x: () => o
 });
 var Chunk818083 = require("./818083.js"),
   Chunk432919 = require("./432919.js");
-let a = (0, Chunk818083.B)({
+let r = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-06_desktop_notifications_view_tracking",
     label: "Track when a desktop notification is viewed",
@@ -21,19 +21,19 @@ let a = (0, Chunk818083.B)({
       }
     }]
   }),
-  r = t => {
+  a = e => {
     let {
-      enabled: e
-    } = a.getCurrentConfig({
-      location: t
+      enabled: t
+    } = r.getCurrentConfig({
+      location: e
     }, {
       autoTrackExposure: true
     });
-    return e
+    return t
   },
-  o = (t, e) => {
-    if (null == e) returnfalse;
-    let n = (0, l.h)(e),
-      i = r(t);
-    return n && i
+  o = (e, t) => {
+    if (null == t) returnfalse;
+    let n = (0, i.h)(t),
+      l = a(e);
+    return n && l
   }

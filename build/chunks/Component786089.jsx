@@ -111,12 +111,12 @@ let j = (0, Chunk647438.memo)(function(e) {
       onBlur: es,
       onMouseEnter: eo,
       onMouseLeave: es,
-      className: a()(N.container, {
-        [N.hovered]: Z
+      className: a()(T.container, {
+        [T.hovered]: Z
       }),
       children: [null != B && q && null != J && (0, r.jsx)("div", {
         ref: G,
-        className: N.decoWrapper,
+        className: T.decoWrapper,
         style: {
           top: L
         },
@@ -126,11 +126,11 @@ let j = (0, Chunk647438.memo)(function(e) {
           guildId: null
         })
       }), K ? (0, r.jsx)(v.Z, {
-        className: N.image
+        className: T.image
       }) : Q ? (0, r.jsx)(I.Z, {
-        className: N.image
+        className: T.image
       }) : et.isAnimated ? (0, r.jsx)(g.Z, {
-        className: N.assetBlurred,
+        className: T.assetBlurred,
         autoPlay: false,
         children: (0, r.jsx)("source", {
           src: et.url,
@@ -138,36 +138,36 @@ let j = (0, Chunk647438.memo)(function(e) {
           onError: () => ec(et.url)
         })
       }) : (0, r.jsx)("img", {
-        className: N.image,
+        className: T.image,
         src: et.url,
         alt: A.config.messages.questName,
         onError: () => ec(et.url)
       }), (0, r.jsx)("div", {
-        className: a()(N.overlay, {
-          [N.darkThemeGradient]: $,
-          [N.lightThemeGradient]: !$
+        className: a()(T.overlay, {
+          [T.darkThemeGradient]: $,
+          [T.lightThemeGradient]: !$
         })
       }), (0, r.jsx)("div", {
         ref: U,
-        className: N.logoContainer,
+        className: T.logoContainer,
         style: {
           transform: "translateY(-".concat(en, "px)")
         },
         children: (0, r.jsx)(C.ZP, {
-          logotypeClassName: a()(N.logo, {
-            [N.logoWithCosponsor]: ee
+          logotypeClassName: a()(T.logo, {
+            [T.logoWithCosponsor]: ee
           }),
           quest: A,
           withGameTile: false
         })
       }), (0, r.jsxs)("div", {
         ref: V,
-        className: N.details,
+        className: T.details,
         children: [(0, r.jsx)(d.X6q, {
-          className: N.title,
+          className: T.title,
           variant: "heading-md/semibold",
           color: "always-white",
-          children: T.intl.format(T.t.EAYZAg, {
+          children: N.intl.format(N.t.EAYZAg, {
             questName: A.config.messages.questName
           })
         }), (0, r.jsx)(d.Text, {
@@ -176,7 +176,7 @@ let j = (0, Chunk647438.memo)(function(e) {
           style: {
             opacity: $ ? 1 : .75
           },
-          children: T.intl.format(T.t.kXVcV1, {
+          children: N.intl.format(N.t.kXVcV1, {
             reward: Y.name,
             claimedDate: z
           })

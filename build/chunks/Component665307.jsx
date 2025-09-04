@@ -168,7 +168,7 @@ let L = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
             item: e,
             icon: f.o8v,
             tooltip: P.intl.string(P.t.Az9eqq)
-          }), (0, i.jsx)(N.Z, {
+          }), (0, i.jsx)(T.Z, {
             className: o()(x.settingIcon, {
               [x.hidden]: !e.supportsCloudSync
             }),

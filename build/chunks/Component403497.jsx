@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 403497, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  d: () => T
+  d: () => N
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,13 +27,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk345909 = require("./345909.js"),
   Chunk832818 = require("./832818.js");
 
-function T(e) {
+function N(e) {
   let t, {
       selectedChannelId: n,
       withFastTravel: l,
-      focusSectionProps: T
+      focusSectionProps: N
     } = e,
-    N = (0, o.TH)(),
+    T = (0, o.TH)(),
     j = (0, s.e7)([O.Z], () => O.Z.getGuildId()),
     P = (0, s.e7)([b.Z], () => b.Z.getChannel(n), [n]),
     x = null != j ? j : null == P ? true : P.guild_id,
@@ -79,15 +79,15 @@ function T(e) {
     className: S.guildIcon
   }), t = A.name) : null != P && (P.isDM() || P.isGroupDM()) ? (t = I.intl.string(I.t.YUU0RE), U = (0, r.jsx)(c.gw7, {
     size: L
-  })) : N.pathname.startsWith(y.Z5c.GLOBAL_DISCOVERY) ? (t = I.intl.string(I.t["4nEZLi"]), U = (0, r.jsx)(c.Jmo, {
+  })) : T.pathname.startsWith(y.Z5c.GLOBAL_DISCOVERY) ? (t = I.intl.string(I.t["4nEZLi"]), U = (0, r.jsx)(c.Jmo, {
     size: L
-  })) : N.pathname.startsWith(y.Z5c.NITRO_HOME) ? (t = I.intl.string(I.t.Ipxkoq), U = (0, r.jsx)(c.SrA, {
+  })) : T.pathname.startsWith(y.Z5c.NITRO_HOME) ? (t = I.intl.string(I.t.Ipxkoq), U = (0, r.jsx)(c.SrA, {
     size: L
-  })) : N.pathname.startsWith(y.Z5c.COLLECTIBLES_SHOP) ? (t = I.intl.string(I.t.pWG4zc), U = (0, r.jsx)(c.EOn, {
+  })) : T.pathname.startsWith(y.Z5c.COLLECTIBLES_SHOP) ? (t = I.intl.string(I.t.pWG4zc), U = (0, r.jsx)(c.EOn, {
     size: L
-  })) : N.pathname.startsWith(y.Z5c.FRIENDS) ? (t = I.intl.string(I.t.TdEu5e), U = (0, r.jsx)(c.iFz, {
+  })) : T.pathname.startsWith(y.Z5c.FRIENDS) ? (t = I.intl.string(I.t.TdEu5e), U = (0, r.jsx)(c.iFz, {
     size: L
-  })) : N.pathname.startsWith(y.Z5c.FAMILY_CENTER) && (t = I.intl.string(C.default.RZqaJi), U = (0, r.jsx)(c.BFJ, {
+  })) : T.pathname.startsWith(y.Z5c.FAMILY_CENTER) && (t = I.intl.string(C.default.RZqaJi), U = (0, r.jsx)(c.BFJ, {
     size: L
   }));
   let G = i.useCallback(e => {
@@ -126,7 +126,7 @@ function T(e) {
         className: a()(S.title, {
           [S.fastTravel]: l
         })
-      }, e, T), n = n = {
+      }, e, N), n = n = {
         onClick: l ? G : true,
         children: [U, (0, r.jsx)(c.Text, {
           variant: "text-sm/medium",

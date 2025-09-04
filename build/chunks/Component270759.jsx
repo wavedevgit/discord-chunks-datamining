@@ -50,10 +50,10 @@ let Z = function(e) {
       type: "AGE_GATE_MODAL_OPEN",
       source: j.L0.DEEP_LINK_PROMPT
     }).then(() => {
-      l.replace(N.Z5c.ME)
+      l.replace(T.Z5c.ME)
     })
   }, [l, n]), i.useEffect(() => {
-    d.Y(N.Z5c.FRIENDS), (0, O.e)("friends")
+    d.Y(T.Z5c.FRIENDS), (0, O.e)("friends")
   }, []);
   let b = (0, s.e7)([E.Z], () => E.Z.theme),
     Z = (0, I.If)(),
@@ -64,7 +64,7 @@ let Z = function(e) {
     R = (0, s.e7)([g.Z], () => g.Z.getSuggestionCount()),
     D = i.useMemo(() => L.getRelationshipCounts(), [L]);
   i.useEffect(() => {
-    null != t && p.Z.setInitialSection(t), 0 === D[N.OGo.FRIEND] && 0 === D[N.OGo.PENDING_INCOMING] && 0 === D[N.OGo.PENDING_OUTGOING] && 0 === D[N.OGo.BLOCKED] && p.Z.transitionToSection(N.pJs.ADD_FRIEND)
+    null != t && p.Z.setInitialSection(t), 0 === D[T.OGo.FRIEND] && 0 === D[T.OGo.PENDING_INCOMING] && 0 === D[T.OGo.PENDING_OUTGOING] && 0 === D[T.OGo.BLOCKED] && p.Z.transitionToSection(T.pJs.ADD_FRIEND)
   }, [t, D]);
   let k = e => {
       p.Z.transitionToSection(e, {
@@ -74,18 +74,18 @@ let Z = function(e) {
     M = (0, h.Dt)(),
     U = (0, h.Dt)(),
     G = [{
-      id: N.pJs.ONLINE,
-      show: L.filter(N.pJs.ONLINE).length > 0,
+      id: T.pJs.ONLINE,
+      show: L.filter(T.pJs.ONLINE).length > 0,
       content: P.intl.string(P.t.b9w3bG),
       className: x.item
     }, {
-      id: N.pJs.ALL,
-      show: D[N.OGo.FRIEND] > 0,
+      id: T.pJs.ALL,
+      show: D[T.OGo.FRIEND] > 0,
       content: P.intl.string(P.t.PfjFjY),
       className: x.item
     }, {
-      id: N.pJs.PENDING,
-      show: L.filter(N.pJs.PENDING).length > 0,
+      id: T.pJs.PENDING,
+      show: L.filter(T.pJs.PENDING).length > 0,
       content: (0, r.jsxs)(r.Fragment, {
         children: [P.intl.string(P.t.p6IHGB), Z > 0 && (0, r.jsx)(c.mAB, {
           count: Z,
@@ -97,7 +97,7 @@ let Z = function(e) {
       }),
       className: x.item
     }, {
-      id: N.pJs.SUGGESTIONS,
+      id: T.pJs.SUGGESTIONS,
       show: R > 0,
       content: (0, r.jsxs)(r.Fragment, {
         children: [P.intl.string(P.t["8rSi19"]), (0, r.jsx)(c.mAB, {
@@ -110,7 +110,7 @@ let Z = function(e) {
       }),
       className: x.item
     }, {
-      id: N.pJs.ADD_FRIEND,
+      id: T.pJs.ADD_FRIEND,
       show: true,
       content: (0, r.jsx)("span", {
         children: P.intl.string(P.t.j0wbEx)
@@ -121,7 +121,7 @@ let Z = function(e) {
   return v.o.useConfig({
     location: "friendstore"
   }).landOnProfilePage && G.unshift({
-    id: N.pJs.YOU,
+    id: T.pJs.YOU,
     show: true,
     content: P.intl.string(P.t.LuZzxs),
     className: x.item
@@ -164,7 +164,7 @@ let Z = function(e) {
         id: w,
         className: x.peopleColumn,
         "aria-labelledby": U,
-        children: w === N.pJs.ADD_FRIEND ? (0, r.jsx)(C.Z, {}) : w === N.pJs.YOU ? (0, r.jsx)(T.Z, {}) : (0, r.jsx)(S.Z, {
+        children: w === T.pJs.ADD_FRIEND ? (0, r.jsx)(C.Z, {}) : w === T.pJs.YOU ? (0, r.jsx)(N.Z, {}) : (0, r.jsx)(S.Z, {
           titleId: U
         })
       }), (0, r.jsx)("div", {

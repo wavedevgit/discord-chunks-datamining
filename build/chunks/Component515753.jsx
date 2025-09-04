@@ -303,7 +303,7 @@ function eg(e) {
     eg(true), t.isMultiUserDM() ? (0, g.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("90508"), n.e("70205"), n.e("25421"), n.e("50595")]).then(n.bind(n, 354741));
+      } = await Promise.all([n.e("79695"), n.e("90508"), n.e("25421")]).then(n.bind(n, 354741));
       return n => (0, r.jsx)(e, eo(ei({}, n), {
         channel: t,
         selected: s
@@ -315,7 +315,7 @@ function eg(e) {
     }) : (0, g.jW)(e, async () => {
       let {
         default: e
-      } = a ? await Promise.all([n.e("90508"), n.e("56167")]).then(n.bind(n, 416951)) : await Promise.all([n.e("79695"), n.e("90508"), n.e("70205"), n.e("98783"), n.e("56826"), n.e("68136")]).then(n.bind(n, 131404));
+      } = a ? await Promise.all([n.e("90508"), n.e("56167")]).then(n.bind(n, 416951)) : await Promise.all([n.e("79695"), n.e("90508"), n.e("98783"), n.e("56826"), n.e("8074")]).then(n.bind(n, 131404));
       return n => (0, r.jsx)(e, eo(ei({}, n), {
         user: f,
         channel: t,

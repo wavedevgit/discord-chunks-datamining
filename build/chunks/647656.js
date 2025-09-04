@@ -93,10 +93,10 @@ let _ = ["1402418171662569542"],
         O.platform = I ? b.M7m.EMBEDDED : b.M7m.DESKTOP;
         let C = c.Z.getApplication(null != v ? v : true),
           S = null != (r = O.instance) && r,
-          T = null == (t = O.party) ? true : t.privacy;
+          N = null == (t = O.party) ? true : t.privacy;
         delete O.instance, null == (n = O.party) || delete n.privacy;
-        let N = (0, s.S)(O, S, I, null != C && (0, u.g)(C) && I, T);
-        N > 0 && (O.flags = N);
+        let T = (0, s.S)(O, S, I, null != C && (0, u.g)(C) && I, N);
+        T > 0 && (O.flags = T);
         let {
           assets: j,
           party: P,
@@ -133,7 +133,7 @@ let _ = ["1402418171662569542"],
             socketId: a.id,
             pid: g,
             activity: O,
-            partyPrivacy: T
+            partyPrivacy: N
           });
           let {
             secrets: c,

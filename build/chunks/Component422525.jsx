@@ -17,11 +17,11 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 
 function p(e) {
-  let t = (0, l.Aq)(),
-    n = (0, c.Z)(e);
+  let t = (0, s.Aq)(),
+    n = (0, a.Z)(e);
   if (__OVERLAY__ || !n) return null;
   let p = n => {
-    a.Z.open(e.id, n), t.dispatch(d.CkL.POPOUT_CLOSE), (0, r.pTH)()
+    c.Z.open(e.id, n), t.dispatch(d.CkL.POPOUT_CLOSE), (0, r.pTH)()
   };
   return (0, i.jsx)(r.sNh, {
     id: "guild-settings",
@@ -30,9 +30,9 @@ function p(e) {
     children: (0, u.t)(e).map(t => {
       let {
         section: n,
-        label: l
+        label: s
       } = t;
-      if (null == l) return null;
+      if (null == s) return null;
       switch (n) {
         case d.pNK.DELETE:
           return null;
@@ -46,7 +46,7 @@ function p(e) {
           return (0, i.jsx)(r.sNh, {
             id: n,
             action: () => {
-              (0, s.transitionToGlobalDiscovery)({
+              (0, l.transitionToGlobalDiscovery)({
                 tab: g.GlobalDiscoveryTab.APPS,
                 newSessionState: {
                   guildId: e.id,
@@ -56,13 +56,13 @@ function p(e) {
                 }
               })
             },
-            label: l
+            label: s
           }, n);
         default:
           return (0, i.jsx)(r.sNh, {
             id: n,
             action: () => p(n),
-            label: l
+            label: s
           }, n)
       }
     })

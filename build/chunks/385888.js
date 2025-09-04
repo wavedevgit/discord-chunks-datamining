@@ -1,4 +1,4 @@
-/** Chunk was on 99964 **/
+/** Chunk was on 79692 **/
 /** chunk id: 385888, original params: e,n,t (module,exports,require) **/
 module.exports = {
   spacing: "spacing__856b5",
@@ -27,6 +27,5 @@ module.exports = {
   channelNameContainer: "channelNameContainer__856b5",
   channelName: "channelName__856b5",
   channelNameByline: "channelNameByline__856b5 lighten__856b5",
-  highlightsLink: "highlightsLink__856b5",
-  customNotificationSoundsDivider: "customNotificationSoundsDivider__856b5"
+  highlightsLink: "highlightsLink__856b5"
 }

@@ -38,7 +38,7 @@ function y(e) {
   }, [t, n]), C = (0, o.e7)([f.Z], () => f.Z.getGuild(t)), S = i.useMemo(() => null == C ? null : h.ZP.getGuildSplashURL({
     id: C.id,
     splash: C.splash
-  }), [C]), T = (0, d.N)(S);
+  }), [C]), N = (0, d.N)(S);
   return (0, r.jsxs)("div", {
     className: a()(O.outerWrapping, E.main, {
       [E.fullBorderWithGradient]: null == S
@@ -50,10 +50,10 @@ function y(e) {
       width: y,
       height: v,
       imageClassName: E.cover
-    }) : (0, r.jsx)(p.Z, {}), null != T && null != S && (0, r.jsx)("div", {
+    }) : (0, r.jsx)(p.Z, {}), null != N && null != S && (0, r.jsx)("div", {
       className: E.gradient,
       style: {
-        background: "linear-gradient(180deg, ".concat((0, g.aD)(T, .16), " 0%, ").concat((0, g.aD)(T, 1), " 100%)")
+        background: "linear-gradient(180deg, ".concat((0, g.aD)(N, .16), " 0%, ").concat((0, g.aD)(N, 1), " 100%)")
       }
     }), null != S && (0, r.jsx)("div", {
       className: E.gradient

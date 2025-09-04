@@ -1,44 +1,44 @@
-/** Chunk was on 84927 **/
+/** Chunk was on 60831 **/
 /** chunk id: 476221, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => r
 }), require("./35282.js");
 var Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let s = {
+let r = {
   getStatus: function(e) {
-    let t, n, s = arguments.length > 1 && true !== arguments[1] && arguments[1];
+    let t, n, r = arguments.length > 1 && true !== arguments[1] && arguments[1];
     switch (e) {
-      case r.hes.CONNECTING:
-        t = r.QKv.CONNECTING, n = l.intl.string(l.t.MzW9sL);
+      case l.hes.CONNECTING:
+        t = l.QKv.CONNECTING, n = i.intl.string(i.t.MzW9sL);
         break;
-      case r.hes.AUTHENTICATING:
-        t = r.QKv.CONNECTING, n = l.intl.string(l.t.GxXwEx);
+      case l.hes.AUTHENTICATING:
+        t = l.QKv.CONNECTING, n = i.intl.string(i.t.GxXwEx);
         break;
-      case r.hes.AWAITING_ENDPOINT:
-        t = r.QKv.CONNECTING, n = l.intl.string(l.t.xEbu0d);
+      case l.hes.AWAITING_ENDPOINT:
+        t = l.QKv.CONNECTING, n = i.intl.string(i.t.xEbu0d);
         break;
-      case r.hes.RTC_CONNECTED:
-        t = r.QKv.CONNECTED, n = s ? l.intl.string(l.t.HtVOdX) : l.intl.string(l.t["daXg4+"]);
+      case l.hes.RTC_CONNECTED:
+        t = l.QKv.CONNECTED, n = r ? i.intl.string(i.t.HtVOdX) : i.intl.string(i.t["daXg4+"]);
         break;
-      case r.hes.RTC_CONNECTING:
-        t = r.QKv.CONNECTING, n = l.intl.string(l.t.Gp51dn);
+      case l.hes.RTC_CONNECTING:
+        t = l.QKv.CONNECTING, n = i.intl.string(i.t.Gp51dn);
         break;
-      case r.hes.ICE_CHECKING:
-        t = r.QKv.CONNECTING, n = l.intl.string(l.t.rdCyAw);
+      case l.hes.ICE_CHECKING:
+        t = l.QKv.CONNECTING, n = i.intl.string(i.t.rdCyAw);
         break;
-      case r.hes.DTLS_CONNECTING:
-        t = r.QKv.CONNECTING, n = l.intl.string(l.t.UvB3gY);
+      case l.hes.DTLS_CONNECTING:
+        t = l.QKv.CONNECTING, n = i.intl.string(i.t.UvB3gY);
         break;
-      case r.hes.NO_ROUTE:
-        t = r.QKv.ERROR, n = l.intl.string(l.t.mGhOIi);
+      case l.hes.NO_ROUTE:
+        t = l.QKv.ERROR, n = i.intl.string(i.t.mGhOIi);
         break;
-      case r.hes.RTC_DISCONNECTED:
-        t = r.QKv.ERROR, n = l.intl.string(l.t.M7LDmJ);
+      case l.hes.RTC_DISCONNECTED:
+        t = l.QKv.ERROR, n = i.intl.string(i.t.M7LDmJ);
         break;
-      case r.hes.DISCONNECTED:
+      case l.hes.DISCONNECTED:
       default:
-        t = r.QKv.ERROR, n = l.intl.string(l.t.NLKQb2)
+        t = l.QKv.ERROR, n = i.intl.string(i.t.NLKQb2)
     }
     return {
       connectionStatus: t,

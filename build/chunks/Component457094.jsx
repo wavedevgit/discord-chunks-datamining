@@ -261,7 +261,7 @@ let to = [{
     } = t.params;
     return (0, X.h)(() => (0, eL.openUserProfileModal)({
       userId: n,
-      sourceAnalyticsLocations: [T.Z.URI_SCHEME]
+      sourceAnalyticsLocations: [N.Z.URI_SCHEME]
     })), (0, r.jsx)(a.l_, {
       to: ez.Z.defaultRoute
     })
@@ -348,7 +348,7 @@ let to = [{
       (0, s.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("15076"), n.e("39672")]).then(n.bind(n, 907941));
+        } = await Promise.all([n.e("15076"), n.e("79692")]).then(n.bind(n, 907941));
         return t => {
           var n, l;
           return (0, r.jsx)(e, (n = e9({}, t), l = l = {
@@ -545,16 +545,16 @@ class tu extends Chunk647438.PureComponent {
             if (t)(0, eI.dL)(e3.Z5c.CHANNEL(r, s, o));
             else {
               let e = {
-                type: eN.Ff.THREAD
+                type: eT.Ff.THREAD
               };
-              null != o && (e.initialMessageId = o), eT.Z.openThreadAsSidebar({
+              null != o && (e.initialMessageId = o), eN.Z.openThreadAsSidebar({
                 guildId: r,
                 baseChannelId: i,
                 channelId: s,
                 details: e
               })
             }
-        } else null == i || a || eT.Z.closeChannelSidebar(i);
+        } else null == i || a || eN.Z.closeChannelSidebar(i);
         let c = ec.Z.getIsOpen();
         if (i === e5.oC.ROLE_SUBSCRIPTIONS) es.Z.closeSidebar();
         else if (g && c) {
@@ -598,7 +598,7 @@ class tu extends Chunk647438.PureComponent {
           guildId: r,
           pathname: t
         }));
-        else if ((null == n ? true : n.parent_id) !== i) return eT.Z.closeChannelSidebar(i), {
+        else if ((null == n ? true : n.parent_id) !== i) return eN.Z.closeChannelSidebar(i), {
           path: e3.Z5c.CHANNEL(r, i),
           state: e.state
         }

@@ -87,9 +87,9 @@ function F(e, t) {
   }
   return l
 }
-let z = () => Promise.resolve();
+let Z = () => Promise.resolve();
 
-function Z(e) {
+function z(e) {
   let {
     userRoleIds: t,
     position: n
@@ -160,24 +160,24 @@ let B = Chunk647438.forwardRef(function(e, t) {
         }))
       })
     }, [g.id]),
-    z = (0, m.dQu)(A.Z.unsafe_rawColors.PRIMARY_300).hsl(),
-    Z = null != (s = g.colorString) ? s : z,
-    B = null != (o = (0, E.wK)(Z, .6)) ? o : true,
+    Z = (0, m.dQu)(A.Z.unsafe_rawColors.PRIMARY_300).hsl(),
+    z = null != (s = g.colorString) ? s : Z,
+    B = null != (o = (0, E.wK)(z, .6)) ? o : true,
     V = A.Z.unsafe_rawColors.WHITE_500.css,
-    H = (0, E._i)(Z);
+    H = (0, E._i)(z);
   null != H && .3 > (0, E.Bd)(H) && (V = A.Z.unsafe_rawColors.PRIMARY_630.css), u = P ? (0, r.jsx)(h.Z, {
     className: w.roleFlowerStar,
     iconClassName: d ? w.roleVerifiedIcon : true,
-    color: Z,
+    color: z,
     size: 14
   }) : "dot" === M ? (0, r.jsx)(m.FhE, {
     className: w.roleDot,
-    color: Z,
+    color: z,
     colors: x,
     background: false,
     tooltip: false
   }) : (0, r.jsx)(m.xko, {
-    color: Z,
+    color: z,
     colors: x
   });
   let K = l.useMemo(() => {
@@ -242,7 +242,7 @@ function V(e) {
       let {
         position: n
       } = t;
-      return (0, r.jsx)(Z, k(G({}, e), {
+      return (0, r.jsx)(z, k(G({}, e), {
         position: null != n ? n : "top"
       }))
     },
@@ -354,14 +354,14 @@ function K(e) {
   }, [E, A, L]);
   let P = M.default.getCurrentUser();
   o()(null != P, "MemberRolesList: currentUser cannot be undefined");
-  let Z = !T && v.Z.can(j.Plq.MANAGE_ROLES, i),
+  let z = !T && v.Z.can(j.Plq.MANAGE_ROLES, i),
     K = x.e9(i, P.id),
     W = l.useMemo(() => "roles-".concat((0, u.Z)()), []),
     q = (0, d.ZP)({
       id: W,
       isEnabled: true,
-      scrollToStart: z,
-      scrollToEnd: z,
+      scrollToStart: Z,
+      scrollToEnd: Z,
       wrap: true
     }),
     Y = L.map(e => {
@@ -369,7 +369,7 @@ function K(e) {
       return (0, r.jsx)(B, {
         className: g,
         role: e,
-        canRemove: (null == (t = e.tags) ? true : t.guild_connections) === null ? n.id === P.id : Z && x.r6(i, P.id, K, e),
+        canRemove: (null == (t = e.tags) ? true : t.guild_connections) === null ? n.id === P.id : z && x.r6(i, P.id, K, e),
         onRemove: () => N(e),
         ref: t => {
           var n;
@@ -381,7 +381,7 @@ function K(e) {
     });
   return null != p && 0 !== b ? t = (0, r.jsx)(V, k(G({}, e), {
     numRolesHidden: b
-  })) : Z && (t = (0, r.jsx)(H, k(G({}, e), {
+  })) : z && (t = (0, r.jsx)(H, k(G({}, e), {
     handleAddRole: O
   }))), (0, r.jsx)(c.bG, {
     navigator: q,

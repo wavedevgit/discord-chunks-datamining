@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 111666, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => N
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -120,7 +120,7 @@ function S(e) {
         s.Z.unsubscribe("PRESENCE_UPDATES", a), s.Z.unsubscribe("VOICE_STATE_UPDATES", o), null != l.current && (window.clearTimeout(l.current), l.current = null)
       }
     }, [n]), e
-  }(), T = i.useRef(null), N = (0, o.Yzy)(S, {
+  }(), N = i.useRef(null), T = (0, o.Yzy)(S, {
     keys: e => {
       var t, n, r;
       return null != e ? null != e.voiceChannel ? "".concat(e.user.id, "-voice-").concat(e.voiceChannel.id) : "".concat(e.user.id, "-").concat(null == (t = e.activity) ? true : t.state, ":").concat(null == (n = e.activity) ? true : n.details, ":").concat(null == (r = e.activity) ? true : r.name) : "none"
@@ -145,15 +145,15 @@ function S(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: v.container,
-      children: N((e, t) => null == t ? null : (0, r.jsx)(p.Z, {
-        targetElementRef: T,
+      children: T((e, t) => null == t ? null : (0, r.jsx)(p.Z, {
+        targetElementRef: N,
         position: "bottom",
         align: "left",
         userId: t.user.id,
         children: n => {
           var i;
           return (0, r.jsxs)(l.animated.div, C(I({
-            ref: T,
+            ref: N,
             className: v.activityWrapper,
             style: e
           }, n), {
@@ -190,7 +190,7 @@ function S(e) {
   })
 }
 
-function T(e) {
+function N(e) {
   let {
     className: t
   } = e, {

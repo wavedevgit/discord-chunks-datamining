@@ -251,15 +251,15 @@ function G() {
         voiceChannelActivities: c
       } = t,
       u = c.some(e => e.applicationId === (null == s ? true : s.applicationId) && e.launchId === s.launchId);
-    if ((0, N.lm)(i)) {
+    if ((0, T.lm)(i)) {
       let t = e.voiceChannelActivities.find(e => e.userIds.has(l)),
         r = c.find(e => e.userIds.has(l));
-      e.voiceChannelActivities.length < c.length && (0, N.lm)(e.voiceChannelId) && (n = "activity_launch"), true === r && (0, N.lm)(t) && (n = "activity_end"), true === t && (0, N.lm)(r) && r.userIds.size > 1 && (n = "activity_user_join"), (0, N.lm)(r) && (0, N.lm)(t) && (r.userIds.size > t.userIds.size && (n = "activity_user_join"), r.userIds.size < t.userIds.size && (n = "activity_user_left"))
+      e.voiceChannelActivities.length < c.length && (0, T.lm)(e.voiceChannelId) && (n = "activity_launch"), true === r && (0, T.lm)(t) && (n = "activity_end"), true === t && (0, T.lm)(r) && r.userIds.size > 1 && (n = "activity_user_join"), (0, T.lm)(r) && (0, T.lm)(t) && (r.userIds.size > t.userIds.size && (n = "activity_user_join"), r.userIds.size < t.userIds.size && (n = "activity_user_left"))
     }
     if (!u) {
       e.connectedChannelActivities.length < o.length && e.channelActivities.length < a.length && (n = "activity_launch");
       let t = e.userConnectedActivity;
-      null == s && (0, N.lm)(t) && (n = "activity_end"), (0, N.lm)(s) && (0, N.lm)(t) && (s.userIds.size > t.userIds.size && (n = "activity_user_join"), s.userIds.size < t.userIds.size && (n = "activity_user_left"))
+      null == s && (0, T.lm)(t) && (n = "activity_end"), (0, T.lm)(s) && (0, T.lm)(t) && (s.userIds.size > t.userIds.size && (n = "activity_user_join"), s.userIds.size < t.userIds.size && (n = "activity_user_left"))
     }
     return null == n && (null != e.connectedActivityLocation || null != r) && (null == e.connectedActivityLocation && null != r ? n = "activity_launch" : null != e.connectedActivityLocation && null == r ? n = "activity_end" : null != s && null != e.userConnectedActivity && (e.userConnectedActivity.userIds.size < s.userIds.size ? n = "activity_user_join" : e.userConnectedActivity.userIds.size > s.userIds.size && (n = "activity_user_leave"))), n
   }), null

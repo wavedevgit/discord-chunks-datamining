@@ -441,7 +441,7 @@ class ep extends Chunk647438.PureComponent {
       let {
         sku: r
       } = this.props;
-      null != r && G.default.track(el.rMx.STORE_LISTING_MEDIA_SCROLLED, ed(eu({}, (0, T.Z)(r)), {
+      null != r && G.default.track(el.rMx.STORE_LISTING_MEDIA_SCROLLED, ed(eu({}, (0, N.Z)(r)), {
         card_index: n,
         card_type: e.type === el.s9s.IMG ? "image" : "video"
       }))
@@ -561,7 +561,7 @@ class ep extends Chunk647438.PureComponent {
             className: a()(es.headerPurchase, {
               [es.active]: s
             }),
-            children: [null != t ? (0, N.Z)(t) : null, null != e && null != t ? (0, r.jsx)("div", {
+            children: [null != t ? (0, T.Z)(t) : null, null != e && null != t ? (0, r.jsx)("div", {
               children: "deprecated!"
             }) : null, (0, r.jsx)(J.Z, {
               messageStyle: J.G.SHORT,

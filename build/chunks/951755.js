@@ -34,7 +34,7 @@ class f extends Chunk147913.Z {
       t = Chunk474873.Z.getLastSoundpackExperimentId(),
       n = Chunk378364.Z.experiment.definition.id,
       r = Chunk197344.Z.isEligible();
-    Chunk147913 || null == exports && module === Chunk871465.YC.CLASSIC ? Chunk147913 && null != Chunk378364.Z.soundpack && require !== exports && module !== Chunk378364.Z.soundpack && (0, Chunk716364.c)(Chunk378364.Z.soundpack, require) : (0, Chunk716364.c)(Chunk871465.YC.CLASSIC, null)
+    Chunk147913 || null == exports && module === Chunk871465.Y.CLASSIC ? Chunk147913 && null != Chunk378364.Z.soundpack && require !== exports && module !== Chunk378364.Z.soundpack && (0, Chunk716364.c)(Chunk378364.Z.soundpack, require) : (0, Chunk716364.c)(Chunk871465.Y.CLASSIC, null)
   }
   updateRingtone() {
     if (Chunk197344.Z.isEligible()) {

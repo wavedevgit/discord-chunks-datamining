@@ -37,24 +37,22 @@ function b(e) {
     disabled: t,
     widgetType: r,
     widget: b
-  } = e, [p] = (0, o.ynZ)(), [g, O] = i.useState(""), y = i.useRef(null), j = i.useMemo(() => new Set(b.games.map(e => e.applicationId)), [b.games]), {
-    trackUserProfileEditAction: m
-  } = (0, c.KZ)(), v = i.useCallback(e => {
+  } = e, [p] = (0, o.ynZ)(), [g, O] = i.useState(""), y = i.useRef(null), j = i.useRef(""), m = i.useMemo(() => new Set(b.games.map(e => e.applicationId)), [b.games]), {
+    trackUserProfileEditAction: v
+  } = (0, c.KZ)(), h = i.useCallback(e => {
     (0, s.ES)(r, {
       applicationId: e
-    }), m({
+    }), v({
       action: "GAME_ADDED",
       gameId: e,
       widgetEdited: r
     })
-  }, [r, m]), {
-    options: h,
-    matchSorterOptions: x
-  } = (0, a.h)(), w = i.useMemo(() => "" !== g.trim() ? u.intl.formatToPlainString(u.t.ZoearK, {
-    searchTerm: g.trim()
-  }) : u.intl.string(u.t.QwSXv7), [g]), P = i.useCallback(e => {
+  }, [r, v]), {
+    options: x,
+    matchSorterOptions: w
+  } = (0, a.h)(), P = i.useCallback(e => {
     var t, r;
-    return "" === e.trim() ? h : (0, l.Lu)(h, e, (t = f({}, x), r = r = {
+    return "" === e.trim() ? x : (0, l.Lu)(x, e, (t = f({}, w), r = r = {
       threshold: l.Lu.rankings.CONTAINS
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var r = Object.keys(e);
@@ -66,15 +64,32 @@ function b(e) {
     })(Object(r)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
     }), t))
-  }, [h, x]);
+  }, [x, w]), S = i.useCallback(e => {
+    "" === g.trim() && "" !== e.trim() && v({
+      action: "GAME_SEARCH_SESSION_STARTED",
+      widgetEdited: r,
+      numCharacters: e.trim().length,
+      numResults: P(e).length
+    }), O(e), j.current = e
+  }, [g, v, r, P]), E = i.useMemo(() => "" !== g.trim() ? u.intl.formatToPlainString(u.t.ZoearK, {
+    searchTerm: g.trim()
+  }) : u.intl.string(u.t.QwSXv7), [g]);
   return (0, n.jsx)(o.yRy, {
     targetElementRef: y,
     position: "bottom",
     align: "center",
     onRequestOpen: () => {
-      m({
+      v({
         action: "PRESS_ADD_GAME",
         widgetEdited: r
+      }), O(""), j.current = ""
+    },
+    onRequestClose: () => {
+      v({
+        action: "GAME_SEARCH_SESSION_ENDED",
+        widgetEdited: r,
+        numCharacters: j.current.trim().length,
+        numResults: P(j.current).length
       })
     },
     renderPopout: e => {
@@ -87,17 +102,16 @@ function b(e) {
         autoFocus: true,
         value: p,
         onChange: e => {
-          v(e), t()
+          h(e), t()
         },
-        onClose: t,
         multiSelect: false,
         showScrollbar: true,
         maxVisibleItems: 7,
-        emptyStateText: w,
+        emptyStateText: E,
         emptyStateHeader: "",
-        onQueryChange: O,
+        onQueryChange: S,
         children: e => P(e).map(e => (0, n.jsx)(o.lo1, {
-          disabled: j.has(e.value),
+          disabled: m.has(e.value),
           value: String(e.value),
           children: (0, n.jsx)(o.lo1.Label, {
             children: (0, n.jsx)(o.Text, {

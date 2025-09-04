@@ -21,7 +21,7 @@ function _() {
     t = Chunk197344.Z.useHolidaySoundpack();
   a()(null != exports, "should not render this without a holiday soundpack");
   let n = [{
-    value: Chunk871465.YC.CLASSIC,
+    value: Chunk871465.Y.CLASSIC,
     label: Chunk388032.intl.string(Chunk388032.t.p3Hg5e)
   }, {
     value: exports.soundpack,

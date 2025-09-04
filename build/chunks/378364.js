@@ -18,7 +18,7 @@ let c = {
   startTimeMs: 17346312e5,
   endTimeMs: 17359524e5,
   isDesktopOnly: true,
-  soundpack: Chunk871465.YC.WINTER_HOLIDAY,
+  soundpack: Chunk871465.Y.WINTER_HOLIDAY,
   soundpackLabel: Chunk388032.t.Z5OQNj,
   appSpinnerSources: {
     webmDark: Chunk586393,

@@ -1,132 +1,181 @@
-/** Chunk was on 15076 **/
-/** chunk id: 610617, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 95257 **/
+/** chunk id: 610617, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
-}), require("./388685.js"), require("./953529.js");
+  default: () => j
+}), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
-  Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
-  Chunk831209 = require("./831209.js"),
+  Chunk106351 = require("./106351.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk704215 = require("./704215.js"),
-  Chunk433517 = require("./433517.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk243778 = require("./243778.jsx"),
-  Chunk430824 = require("./430824.js"),
+  Chunk471445 = require("./471445.js"),
+  Chunk856768 = require("./856768.jsx"),
+  Chunk324067 = require("./324067.js"),
+  Chunk771845 = require("./771845.js"),
   Chunk9156 = require("./9156.js"),
-  Chunk594174 = require("./594174.js"),
-  Chunk74538 = require("./74538.js"),
-  Chunk671105 = require("./671105.js"),
-  Chunk552958 = require("./552958.js"),
-  Chunk213931 = require("./213931.js"),
-  Chunk940165 = require("./940165.jsx"),
-  Chunk820408 = require("./820408.jsx"),
-  Chunk921944 = require("./921944.js"),
-  Chunk871465 = require("./871465.js"),
+  Chunk117984 = require("./117984.js"),
+  Chunk593214 = require("./593214.js"),
+  Chunk378337 = require("./378337.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk226339 = require("./226339.js");
+  Chunk345986 = require("./345986.js");
 
-function y(e) {
+function j(e) {
   let {
-    guildId: t,
-    onClose: n,
-    isRedesign: l = false
-  } = e, a = (0, c.e7)([v.Z], () => v.Z.getGuild(t)), y = (0, c.e7)([j.default], () => j.default.getCurrentUser()), {
-    playSound: T,
-    isPlaying: P,
-    soundpackPlaying: M
-  } = (0, f.Z)(), w = (0, S.OR)(t), I = N.ZP.canUseCustomNotificationSounds(y), A = I ? w : Z.YC.CLASSIC, G = s.useRef(0), R = s.useRef(false), [U, D] = s.useState(false), k = (0, Z.LB)(), V = s.useCallback(() => {
-    clearTimeout(R.current), G.current += 1, G.current > 10 && (D(true), h.K.set(Z.CZ, true)), R.current = setTimeout(() => {
-      G.current = 0
-    }, 1e3)
-  }, []), [W, z] = o().partition(k, e => !e.requirePremium || e.requirePremium && I), Y = W.map(e => {
-    var t;
-    return {
-      name: e.label,
-      value: e.value,
-      desc: e.description,
-      radioBarClassName: (t = e.value, r()(L.option, {
-        [L.optionRedesign]: l,
-        [L.optionPlaying]: t === M && P
-      }))
-    }
-  }), [B, F] = (0, x.US)([u.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE]), q = B === u.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE;
-  s.useEffect(() => () => {
-    F(C.L.AUTO_DISMISS)
-  }, [F]);
-  let H = N.ZP.canUseCustomNotificationSounds(y),
-    X = (0, c.e7)([p.ZP], () => p.ZP.isMuted(t), [t]);
-  return null == y ? null : (0, i.jsxs)("div", {
-    children: [(0, i.jsxs)("div", {
-      className: L.header,
-      children: [(0, i.jsx)(m.X6q, {
-        variant: "heading-md/semibold",
-        children: _.intl.string(_.t.mrqSOj)
-      }), (0, i.jsx)(m.P3F, {
-        onClick: V,
-        className: L.nitroWheelContainer,
-        children: (0, i.jsx)(m.SrA, {
-          size: "md",
-          color: "currentColor",
-          className: L.nitroWheel
+    transitionState: n,
+    onClose: t,
+    parentId: i
+  } = e, c = (0, d.e7)([h.ZP], () => h.ZP.getFlattenedGuildIds()[0]), [u, m] = a.useState(c), [x, f] = a.useState(false);
+  return (0, l.jsxs)(o.Y0X, {
+    transitionState: n,
+    parentComponent: "AddFavoriteChannelModal",
+    children: [(0, l.jsxs)(o.xBx, {
+      className: C.modalHeader,
+      children: [(0, l.jsxs)("div", {
+        className: C.modalHeaderTitle,
+        children: [(0, l.jsx)(o.X6q, {
+          variant: "text-lg/semibold",
+          children: g.intl.string(g.t["4wcdEx"])
+        }), (0, l.jsx)(o.olH, {
+          onClick: t
+        })]
+      }), (0, l.jsx)("div", {
+        className: C.guildSelector,
+        children: (0, l.jsx)(s.q, {
+          guildId: u,
+          onChange: function(e) {
+            null != e && m(e.id)
+          }
         })
-      }), q && (0, i.jsx)(m.IGR, {
-        className: L.newBadge,
-        text: _.intl.string(_.t.y2b7CA)
       })]
-    }), (0, i.jsx)(m.Text, {
-      className: L.subheader,
-      variant: "text-sm/normal",
-      children: _.intl.format(_.t.LuYDy8, {
-        guildName: (e, t) => (0, i.jsx)(m.Text, {
-          tag: "span",
-          variant: "text-sm/medium",
-          children: null == a ? true : a.name
-        }, t)
+    }), (0, l.jsx)(o.hzk, {
+      className: C.modalContent,
+      children: (0, l.jsx)(_, {
+        guildId: u,
+        hideMutedChannels: x,
+        parentId: i
       })
-    }), X && (0, i.jsxs)("div", {
-      className: L.warningContainer,
-      children: [(0, i.jsx)(m.Mgn, {
-        size: "custom",
-        width: 20,
-        height: 20,
-        color: d.Z.STATUS_WARNING
-      }), (0, i.jsx)(m.Text, {
-        className: L.warningLabel,
-        variant: "text-sm/medium",
-        children: _.intl.string(_.t["a9G/ER"])
+    }), (0, l.jsxs)(o.mzw, {
+      className: C.modalFooter,
+      children: [(0, l.jsx)(r.zx, {
+        className: C.goBackButton,
+        look: r.iL.BLANK,
+        color: r.Tt.PRIMARY,
+        size: r.Ph.SMALL,
+        onClick: t,
+        children: g.intl.string(g.t["/g10LC"])
+      }), (0, l.jsx)("div", {
+        children: (0, l.jsx)(r.$q, {
+          type: r.M0.INVERTED,
+          value: x,
+          onChange: (e, n) => f(n),
+          children: (0, l.jsx)(o.Text, {
+            variant: "text-sm/medium",
+            color: "interactive-normal",
+            children: g.intl.string(g.t.UwOLJC)
+          })
+        })
       })]
-    }), (0, i.jsx)(m.xJW, {
-      className: L.optionsContainer,
-      title: _.intl.string(_.t.xxvoAg),
-      children: (0, i.jsxs)("div", {
-        className: r()({
-          [L.options]: !H
-        }),
-        children: [(0, i.jsx)(g.Gu, {
-          className: r()({
-            [L.options]: H
-          }),
-          value: null != A ? A : Z.YC.CLASSIC,
-          onChange: e => {
-            T(e.value), I && (0, b.t)(t, A, e.value, "notificationSettings")
-          },
-          options: Y,
-          radioItemClassName: L.option
-        }), z.map((e, t) => (0, i.jsx)(O.Z, {
-          className: L.playableOption,
-          label: e.label,
-          description: e.description,
-          soundpack: e.value,
-          location: "notificationSettings"
-        }, "sound_option_".concat(t)))]
-      })
-    }), !H && (0, i.jsx)(E.Z, {
-      onClose: n
     })]
+  })
+}
+
+function _(e) {
+  let {
+    guildId: n,
+    hideMutedChannels: t,
+    parentId: r
+  } = e, o = (0, d.e7)([u.Z], () => u.Z.getCategories(n)), c = (0, v.Z)(o), s = a.useRef(null);
+  return a.useEffect(() => {
+    var e;
+    null == s || null == (e = s.current) || e.scroll({
+      top: 0
+    })
+  }, [n]), (0, l.jsx)("div", {
+    ref: s,
+    children: c.map(e => e.type === i.d.GUILD_CATEGORY ? (0, l.jsx)(p, {
+      name: e.name
+    }, e.id) : (0, l.jsx)(I, {
+      channel: e,
+      hideMutedChannels: t,
+      parentId: r
+    }, e.id))
+  })
+}
+
+function p(e) {
+  let {
+    name: n
+  } = e;
+  return (0, l.jsx)(o.Text, {
+    className: C.categoryRow,
+    variant: "eyebrow",
+    color: "interactive-normal",
+    children: n
+  })
+}
+
+function I(e) {
+  let {
+    channel: n,
+    hideMutedChannels: t,
+    parentId: a
+  } = e, i = (0, f.s4)(n.id);
+  if ((0, d.e7)([m.ZP], () => m.ZP.isChannelMuted(n.guild_id, n.id)) && t) return null;
+  let r = (0, c.KS)(n);
+  return (0, l.jsxs)("div", {
+    className: C.channelRow,
+    children: [(0, l.jsxs)("div", {
+      className: C.channelName,
+      children: [null != r && (0, l.jsx)("div", {
+        className: C.channelIconContainer,
+        children: (0, l.jsx)(r, {
+          className: C.channelIcon,
+          size: "custom",
+          color: "currentColor",
+          height: 20,
+          width: 20
+        })
+      }), (0, l.jsx)(o.Text, {
+        variant: "text-md/medium",
+        color: "interactive-normal",
+        children: n.name
+      })]
+    }), null != i ? (0, l.jsx)(A, {
+      channelId: n.id
+    }) : (0, l.jsx)(k, {
+      channelId: n.id,
+      parentId: a
+    })]
+  }, n.id)
+}
+
+function k(e) {
+  let {
+    channelId: n,
+    parentId: t
+  } = e;
+  return (0, l.jsx)(r.zx, {
+    look: r.iL.OUTLINED,
+    size: r.Ph.SMALL,
+    color: r.Tt.BRAND,
+    onClick: function() {
+      (0, x.kj)(n, t)
+    },
+    children: g.intl.string(g.t.OYkgVl)
+  })
+}
+
+function A(e) {
+  let {
+    channelId: n
+  } = e;
+  return (0, l.jsx)(o.zxk, {
+    variant: "secondary",
+    size: "sm",
+    text: g.intl.string(g.t.N86XcH),
+    onClick: function() {
+      (0, x.oC)(n)
+    }
   })
 }

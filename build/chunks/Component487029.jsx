@@ -1,7 +1,7 @@
-/** Chunk was on 84927 **/
+/** Chunk was on 60831 **/
 /** chunk id: 487029, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => T
 }), require("./388685.js"), require("./642613.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,86 +23,86 @@ var Chunk951288 = require("./951288.js"),
   Chunk710111 = require("./710111.js"),
   Chunk649093 = require("./649093.js");
 
-function E(e) {
+function T(e) {
   let {
     guildId: t,
     channel: n,
-    width: E,
-    height: C,
-    keepOpen: j,
-    interactive: v = true,
-    analyticsSource: T,
-    onClose: I
-  } = e, P = function(e) {
-    let [t, n] = (0, i.Wu)([g.Z], () => [g.Z.getSounds(), g.Z.getFavorites()]);
-    return l.useMemo(() => {
-      let r = [],
-        l = [...e, N.X8],
-        s = (e, l) => {
-          var s, i;
-          for (let a of null != (i = null == (s = t.get(e)) ? true : s.sort((e, t) => h.default.compare(e.soundId, t.soundId))) ? i : []) {
-            let e = n.has(a.soundId);
-            (e && l || !e && !l) && a.available && r.push(a)
+    width: T,
+    height: m,
+    keepOpen: I,
+    interactive: S = true,
+    analyticsSource: b,
+    onClose: v
+  } = e, x = function(e) {
+    let [t, n] = (0, a.Wu)([h.Z], () => [h.Z.getSounds(), h.Z.getFavorites()]);
+    return i.useMemo(() => {
+      let l = [],
+        i = [...e, _.X8],
+        r = (e, i) => {
+          var r, a;
+          for (let o of null != (a = null == (r = t.get(e)) ? true : r.sort((e, t) => f.default.compare(e.soundId, t.soundId))) ? a : []) {
+            let e = n.has(o.soundId);
+            (e && i || !e && !i) && o.available && l.push(o)
           }
         };
-      return l.forEach(e => s(e, true)), l.forEach(e => s(e, false)), r
+      return i.forEach(e => r(e, true)), i.forEach(e => r(e, false)), l
     }, [t, n, e])
-  }((0, y.h)(n, true)), S = (0, O.j)(), _ = l.useRef(null), [R, w] = l.useState(true), D = (0, i.e7)([d.Z], () => d.Z.getMediaSessionId()), {
-    analyticsLocations: A
-  } = (0, o.ZP)(a.Z.SOUNDBOARD_WHEEL), Z = l.useCallback(e => {
-    (0, p.GN)(e, n.id, A), I()
-  }, [A, n.id, I]);
-  l.useEffect(() => {
-    f.w(), u.DZ.loadIfNecessary()
-  }, []), l.useEffect(() => {
-    0 === P.length && 0 === S.length && I()
-  }, [P.length, S, I]), l.useEffect(() => () => {
-    let e = _.current;
-    j || null == e || Z(e)
-  }, [j, Z]), (0, c.Z)({
-    type: s.ImpressionTypes.POPOUT,
-    name: s.ImpressionNames.SOUNDBOARD_POPOUT,
+  }((0, N.h)(n, true)), P = (0, E.j)(), A = i.useRef(null), [Z, j] = i.useState(true), R = (0, a.e7)([d.Z], () => d.Z.getMediaSessionId()), {
+    analyticsLocations: D
+  } = (0, s.ZP)(o.Z.SOUNDBOARD_WHEEL), w = i.useCallback(e => {
+    (0, p.GN)(e, n.id, D), v()
+  }, [D, n.id, v]);
+  i.useEffect(() => {
+    g.w(), c.DZ.loadIfNecessary()
+  }, []), i.useEffect(() => {
+    0 === x.length && 0 === P.length && v()
+  }, [x.length, P, v]), i.useEffect(() => () => {
+    let e = A.current;
+    I || null == e || w(e)
+  }, [I, w]), (0, u.Z)({
+    type: r.ImpressionTypes.POPOUT,
+    name: r.ImpressionNames.SOUNDBOARD_POPOUT,
     properties: {
-      source: T,
+      source: b,
       guild_id: t,
-      media_session_id: D
+      media_session_id: R
     }
   }, {
-    disableTrack: !v
+    disableTrack: !S
   });
-  let k = l.useCallback(e => {
-      _.current = e, w(null == e ? true : e.soundId)
+  let k = i.useCallback(e => {
+      A.current = e, j(null == e ? true : e.soundId)
     }, []),
-    M = l.useCallback(e => {
+    U = i.useCallback(e => {
       if (null == e) return void k(null);
-      let t = P[e];
+      let t = x[e];
       null != t && k(t)
-    }, [k, P]),
-    B = l.useCallback(e => {
+    }, [k, x]),
+    M = i.useCallback(e => {
       if (null == e) return;
-      let t = P[e];
-      null != t && Z(t)
-    }, [P, Z]),
-    L = l.useMemo(() => P.map(e => (0, r.jsx)(b.ZP, {
-      interactive: v,
-      className: m.soundButton,
+      let t = x[e];
+      null != t && w(t)
+    }, [x, w]),
+    L = i.useMemo(() => x.map(e => (0, l.jsx)(O.ZP, {
+      interactive: S,
+      className: C.soundButton,
       sound: e,
-      focused: R === e.soundId,
+      focused: Z === e.soundId,
       channel: n
-    }, e.soundId)), [R, n, v, P]);
-  return 0 === P.length ? null : (0, r.jsx)(o.Gt, {
-    value: A,
-    children: (0, r.jsx)(x.Z, {
-      wheelWidth: E,
-      wheelHeight: C,
+    }, e.soundId)), [Z, n, S, x]);
+  return 0 === x.length ? null : (0, l.jsx)(s.Gt, {
+    value: D,
+    children: (0, l.jsx)(y.Z, {
+      wheelWidth: T,
+      wheelHeight: m,
       itemWidth: 96,
       itemHeight: 52,
-      showDeadZoneIndicator: !j,
-      activeItem: R,
-      onItemSelect: M,
-      onItemAction: B,
-      onClose: I,
-      interactive: v,
+      showDeadZoneIndicator: !I,
+      activeItem: Z,
+      onItemSelect: U,
+      onItemAction: M,
+      onClose: v,
+      interactive: S,
       children: L
     })
   })

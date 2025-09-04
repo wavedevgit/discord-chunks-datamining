@@ -90,7 +90,7 @@ let R = {
       if (null == i) throw new j.Z({
         errorCode: A.lTL.INVALID_GUILD_TEMPLATE
       }, "Invalid guild template id: ".concat(t));
-      return N.ZP.focus(), (0, a.ZDy)(async () => {
+      return T.ZP.focus(), (0, a.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("10778"), n.e("86015")]).then(n.bind(n, 766775));
@@ -129,7 +129,7 @@ let R = {
             let {
               giftCode: l
             } = i;
-            N.ZP.focus(), C.default.track(A.rMx.OPEN_MODAL, {
+            T.ZP.focus(), C.default.track(A.rMx.OPEN_MODAL, {
               type: "gift_accept",
               location: A.SaU
             }), (0, a.ZDy)(async () => {
@@ -160,12 +160,12 @@ let R = {
           params: n
         }
       } = e;
-      switch (N.ZP.focus(), t) {
+      switch (T.ZP.focus(), t) {
         case x.jE.USER_SETTINGS:
           null != n && ((0, y.dL)(A.Z5c.SETTINGS(n.section, n.subsection)), L(n.fingerprint, (0, x.O)(t)));
           break;
         case x.jE.CHANGELOG:
-          null != n && ((0, y.dL)(T.Z.formatPathWithQuery(A.Z5c.CHANGELOGS(n.date), n.query)), L(n.fingerprint, (0, x.O)(t)));
+          null != n && ((0, y.dL)(N.Z.formatPathWithQuery(A.Z5c.CHANGELOGS(n.date), n.query)), L(n.fingerprint, (0, x.O)(t)));
           break;
         case x.jE.LIBRARY:
           (0, y.dL)(A.Z5c.APPLICATION_LIBRARY), null != n && L(n.fingerprint, (0, x.O)(t));
@@ -288,7 +288,7 @@ let R = {
           fingerprint: n
         }
       } = e;
-      N.ZP.focus(null, true), (0, c.lx)(t, n)
+      T.ZP.focus(null, true), (0, c.lx)(t, n)
     }
   },
   [Chunk981631.Etm.CONNECTIONS_CALLBACK]: {

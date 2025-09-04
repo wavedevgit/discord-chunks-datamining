@@ -1,8 +1,8 @@
-/** Chunk was on 84927 **/
+/** Chunk was on 60831 **/
 /** chunk id: 183584, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  IN: () => o,
-  oZ: () => c
+  IN: () => s,
+  oZ: () => u
 }), require("./951288.js"), require("./647438.js");
 var Chunk570140 = require("./570140.js"),
   Chunk610394 = require("./610394.js");
@@ -11,7 +11,7 @@ var Chunk237997 = require("./237997.js");
 require("./998502.js"), require("./487029.jsx");
 var Chunk710111 = require("./710111.js");
 require("./981631.js"), require("./388032.jsx");
-let a = {
+let o = {
   width: Chunk710111.FW.width,
   height: Chunk710111.FW.height,
   resizable: false,
@@ -26,14 +26,14 @@ let a = {
   titleBarStyle: null
 };
 
-function o(e, t) {
-  let n = l.ZP.isOverlayV3EnabledForPID(t),
-    i = s.default.disableClickableRegions;
-  n || i || r.Z.dispatch({
+function s(e, t) {
+  let n = i.ZP.isOverlayV3EnabledForPID(t),
+    a = r.default.disableClickableRegions;
+  n || a || l.Z.dispatch({
     type: "OVERLAY_SET_INPUT_LOCKED",
     locked: false,
     pid: t
-  }), r.Z.dispatch({
+  }), l.Z.dispatch({
     type: "SOUNDBOARD_SET_OVERLAY_ENABLED",
     pid: t,
     enabled: true,
@@ -41,18 +41,18 @@ function o(e, t) {
   })
 }
 
-function c(e) {
-  r.Z.dispatch({
+function u(e) {
+  l.Z.dispatch({
     type: "SOUNDBOARD_SET_OVERLAY_ENABLED",
     pid: e,
     enabled: false
   });
-  let t = l.ZP.isOverlayV3EnabledForPID(e),
-    n = s.default.disableClickableRegions;
-  s.default.isLocked(e) || t || n || r.Z.dispatch({
+  let t = i.ZP.isOverlayV3EnabledForPID(e),
+    n = r.default.disableClickableRegions;
+  r.default.isLocked(e) || t || n || l.Z.dispatch({
     type: "OVERLAY_SET_INPUT_LOCKED",
     locked: true,
     pid: e
   })
 }
-Chunk710111.FW.padding, a.width, a.height
+Chunk710111.FW.padding, o.width, o.height

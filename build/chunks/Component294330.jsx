@@ -2,7 +2,7 @@
 /** chunk id: 294330, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Eo: () => P,
-  VD: () => N,
+  VD: () => T,
   ZP: () => x
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
@@ -30,17 +30,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk330065 = require("./330065.js"),
   Chunk755386 = require("./755386.js");
 
-function N(e) {
+function T(e) {
   let {
     guild: t,
     onClick: l,
     onView: o
-  } = e, [h, g] = i.useState(false), [O, N] = i.useState(false), [j, P] = i.useState(false), x = i.useRef(null), A = i.useCallback(async () => {
-    N(true);
+  } = e, [h, g] = i.useState(false), [O, T] = i.useState(false), [j, P] = i.useState(false), x = i.useRef(null), A = i.useCallback(async () => {
+    T(true);
     try {
       await l(t.id)
     } finally {
-      N(false)
+      T(false)
     }
   }, [t.id, l]), Z = i.useCallback(e => {
     e && !h && (g(true), null == o || o(t.id))
@@ -89,7 +89,7 @@ function N(e) {
       size: 300 * (0, b.x_)()
     });
     if (null != e) return e;
-    if (R) return T;
+    if (R) return N;
     switch (L) {
       case y.BRd.DARK:
         return C;
@@ -215,7 +215,7 @@ function j(e) {
     onClick: n,
     onView: i
   } = e, l = (0, o.e7)([O.Z], () => O.Z.getGuild(t));
-  return null == l ? null : (0, r.jsx)(N, {
+  return null == l ? null : (0, r.jsx)(T, {
     guild: l,
     onClick: n,
     onView: i

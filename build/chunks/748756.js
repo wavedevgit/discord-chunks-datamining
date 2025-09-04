@@ -1,7 +1,7 @@
-/** Chunk was on 99964 **/
+/** Chunk was on 79692 **/
 /** chunk id: 748756, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  V: () => l
+  V: () => d
 }), require("./399606.js");
 var Chunk87051 = require("./87051.js"),
   Chunk9156 = require("./9156.js"),
@@ -11,16 +11,16 @@ var Chunk87051 = require("./87051.js"),
   Chunk981631 = require("./981631.js"),
   Chunk526761 = require("./526761.js");
 
-function l(e, n) {
-  let t = a.ZP.getGuildFlags(e);
-  n === _.s8.ALL_MESSAGES ? i.Z.updateGuildNotificationSettings(e, {
+function d(e, n) {
+  let t = i.ZP.getGuildFlags(e);
+  n === c.s8.ALL_MESSAGES ? a.Z.updateGuildNotificationSettings(e, {
     message_notifications: r.bL.ALL_MESSAGES,
-    flags: (0, s.Q4)(t, c.vc.UNREADS_ALL_MESSAGES)
-  }, o.ZB.PresetAll) : n === _.s8.MENTIONS ? i.Z.updateGuildNotificationSettings(e, {
+    flags: (0, o.Q4)(t, s.vc.UNREADS_ALL_MESSAGES)
+  }, _.ZB.PresetAll) : n === c.s8.MENTIONS ? a.Z.updateGuildNotificationSettings(e, {
     message_notifications: r.bL.ONLY_MENTIONS,
-    flags: (0, s.Q4)(t, c.vc.UNREADS_ONLY_MENTIONS)
-  }, o.ZB.PresetMentions) : n === _.s8.NOTHING && i.Z.updateGuildNotificationSettings(e, {
+    flags: (0, o.Q4)(t, s.vc.UNREADS_ONLY_MENTIONS)
+  }, _.ZB.PresetMentions) : n === c.s8.NOTHING && a.Z.updateGuildNotificationSettings(e, {
     message_notifications: r.bL.NO_MESSAGES,
-    flags: (0, s.Q4)(t, c.vc.UNREADS_ONLY_MENTIONS)
-  }, o.ZB.PresetNothing)
+    flags: (0, o.Q4)(t, s.vc.UNREADS_ONLY_MENTIONS)
+  }, _.ZB.PresetNothing)
 }

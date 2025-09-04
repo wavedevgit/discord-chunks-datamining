@@ -1,7 +1,7 @@
-/** Chunk was on 84927 **/
+/** Chunk was on 60831 **/
 /** chunk id: 586646, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,57 +17,57 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk506317 = require("./506317.js");
 
-function O(e) {
+function E(e) {
   let {
     channelId: t
-  } = e, n = (0, s.e7)([a.Z], () => {
+  } = e, n = (0, r.e7)([o.Z], () => {
     var e;
-    return null == (e = a.Z.getSecureFramesState()) ? true : e.epochAuthenticator
-  }), O = (0, u.W)({
+    return null == (e = o.Z.getSecureFramesState()) ? true : e.epochAuthenticator
+  }), E = (0, c.W)({
     fingerprintBase64: n,
-    chunkSize: f.y6,
-    desiredLength: f.YP
-  }), y = l.useCallback(() => {
-    (0, o.PM)({
+    chunkSize: g.y6,
+    desiredLength: g.YP
+  }), N = i.useCallback(() => {
+    (0, s.PM)({
       channelId: t
     })
   }, [t]);
-  return (0, r.jsxs)("div", {
+  return (0, l.jsxs)("div", {
     className: p.container,
-    children: [(0, r.jsxs)("div", {
+    children: [(0, l.jsxs)("div", {
       className: p.tag,
-      children: [(0, r.jsx)(i.mBM, {
+      children: [(0, l.jsx)(a.mBM, {
         size: "xxs",
-        color: i.TVs.colors.TEXT_FEEDBACK_POSITIVE
-      }), (0, r.jsx)(i.Text, {
+        color: a.TVs.colors.TEXT_FEEDBACK_POSITIVE
+      }), (0, l.jsx)(a.Text, {
         variant: "text-xs/medium",
         color: "text-feedback-positive",
-        children: g.intl.string(g.t["3BogKS"])
+        children: h.intl.string(h.t["3BogKS"])
       })]
-    }), (0, r.jsx)(i.Text, {
+    }), (0, l.jsx)(a.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      children: g.intl.string(g.t.B9JNsr)
-    }), (0, r.jsxs)("div", {
+      children: h.intl.string(h.t.B9JNsr)
+    }), (0, l.jsxs)("div", {
       className: p.header,
-      children: [(0, r.jsx)(i.X6q, {
+      children: [(0, l.jsx)(a.X6q, {
         variant: "text-sm/bold",
         color: "header-primary",
-        children: g.intl.string(g.t.cTQI5u)
-      }), null != O && (0, r.jsx)(h.H, {
-        chunks: O,
-        color: i.TVs.colors.INTERACTIVE_NORMAL.css,
-        onCopy: y
+        children: h.intl.string(h.t.cTQI5u)
+      }), null != E && (0, l.jsx)(f.H, {
+        chunks: E,
+        color: a.TVs.colors.INTERACTIVE_NORMAL.css,
+        onCopy: N
       })]
-    }), (0, r.jsx)(d.b, {
+    }), (0, l.jsx)(d.b, {
       className: p.code,
-      chunks: O,
-      columns: f.WK
-    }), (0, r.jsx)(i.Text, {
+      chunks: E,
+      columns: g.WK
+    }), (0, l.jsx)(a.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      children: g.intl.format(g.t.wKxADQ, {
-        helpArticle: (0, c.uV)()
+      children: h.intl.format(h.t.wKxADQ, {
+        helpArticle: (0, u.uV)()
       })
     })]
   })

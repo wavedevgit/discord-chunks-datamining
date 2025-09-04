@@ -30,34 +30,39 @@ function m(e) {
     let u = (0, i.nC)(null != (e = (0, p.UP)(a)) ? e : ""),
       g = [];
     return o.forEach(e => {
-      let t = new c.ZP(e),
-        r = (t = function(e, t) {
-          let [n] = t, r = n.getMessage(e.id, e.channel_id);
-          return null != r && (e = e.merge({
-            attachments: r.attachments,
-            embeds: r.embeds
-          })), e
-        }(t, [l.Z])).isSearchHit ? t.set("customRenderedContent", (0, s.ZP)(t, {
-          postProcessor: u,
-          allowHeading: true,
-          allowList: true,
-          allowGameMentions: m,
-          shouldFilterKeywords: n
-        })) : t;
-      g.push([r])
+      let t = new c.ZP(e);
+      t = (t = function(e, t) {
+        let [n] = t, r = n.getMessage(e.id, e.channel_id);
+        return null != r && (e = e.merge({
+          attachments: r.attachments,
+          embeds: r.embeds
+        })), e
+      }(t, [l.Z])).set("customRenderedContent", (0, s.ZP)(t, {
+        postProcessor: u,
+        allowHeading: true,
+        allowList: true,
+        allowGameMentions: m,
+        shouldFilterKeywords: n
+      })), g.push(t)
     }), g
-  }, [m, t, n], r.pF);
-  return (0, r.e7)([u.Z], () => {
+  }, [m, t, n], r.pF), {
+    blockCount: b,
+    ignoreCount: y
+  } = (0, r.cj)([u.Z], () => {
     let e = 0,
       t = 0;
-    return {
-      searchResults: g.map(n => n.filter(n => {
-        let r = u.Z.isBlockedForMessage(n),
-          i = u.Z.isIgnoredForMessage(n);
-        return r && n.isSearchHit ? e++ : i && n.isSearchHit && t++, !r && !i || n.isSearchHit
-      })),
+    return g.forEach(n => {
+      let r = u.Z.isBlockedForMessage(n),
+        i = u.Z.isIgnoredForMessage(n);
+      r ? e++ : i && t++
+    }), {
       blockCount: e,
       ignoreCount: t
     }
-  }, [g], r.pF)
+  });
+  return {
+    renderedMessages: g,
+    blockCount: b,
+    ignoreCount: y
+  }
 }

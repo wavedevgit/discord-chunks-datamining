@@ -44,7 +44,7 @@ function S(e) {
   return "function" == typeof e ? e() : e
 }
 
-function T() {
+function N() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 0,
     t = module > 0 ? true : () => {
       if (!S(i.listening)) return;
@@ -57,7 +57,7 @@ function T() {
   i.listen(Chunk981631.V6Z + module % Chunk981631.frH, "127.0.0.1", exports)
 }
 
-function N(e, t, n) {
+function T(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : 200,
     i = arguments.length > 4 && true !== arguments[4] ? arguments[4] : {},
     l = null != S(e.headers).origin ? {
@@ -82,7 +82,7 @@ function N(e, t, n) {
 
 function j(e, t, n, r) {
   let i = arguments.length > 4 && true !== arguments[4] ? arguments[4] : 0;
-  N(e, t, {
+  T(e, t, {
     code: i,
     message: r
   }, n)
@@ -123,7 +123,7 @@ class x extends Chunk76238.Z {
 class A extends Chunk836560.EventEmitter {
   handleRequest(e, t) {
     let [n, r] = S(e.url).split("?"), i = S(e.method);
-    if ("/rpc" === n && "OPTIONS" === i) return void N(e, t, {
+    if ("/rpc" === n && "OPTIONS" === i) return void T(e, t, {
       body: ""
     });
     let l = "POST" === i;
@@ -138,7 +138,7 @@ class A extends Chunk836560.EventEmitter {
           } = null != (r = d.Z.toURLSafe(null != (e = n.get("callback")) ? e : "")) ? r : {};
           i === location.protocol && l === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", v), t.writeHead(301), t.end()
         },
-        s = new x(!l ? o : N.bind(null, e, t), !l ? o : j.bind(null, e, t, 400), Number(n.get("v")), i);
+        s = new x(!l ? o : T.bind(null, e, t), !l ? o : j.bind(null, e, t, 400), Number(n.get("v")), i);
       if (l)(0, m.em)(s, S(e.headers).origin, n.get("client_id")).then(() => {
         let n = "";
         e.on("data", e => n += e), e.on("error", () => j(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(s, n))
@@ -195,8 +195,8 @@ class A extends Chunk836560.EventEmitter {
     super();
     let t = 0;
     (i = y.http.createServer()).on("error", e => {
-      I.error("Error: ".concat(e.message)), ("EADDRINUSE" === e.code || e.message.includes("EADDRINUSE")) && setTimeout(() => T(++t), 1e3)
-    }), i.on("request", this.handleRequest.bind(this)), T(exports);
+      I.error("Error: ".concat(e.message)), ("EADDRINUSE" === e.code || e.message.includes("EADDRINUSE")) && setTimeout(() => N(++t), 1e3)
+    }), i.on("request", this.handleRequest.bind(this)), N(exports);
     let n = {
       instanceId: null != (e = i.instanceId) ? module : 0,
       server: i

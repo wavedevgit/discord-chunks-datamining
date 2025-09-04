@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 135864, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => N
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -52,10 +52,10 @@ function S(e) {
           color: "currentColor"
         })
     }
-  })(t, n), [t, n]), S = i.useMemo(() => (0, _.s)(t), [t]), T = l === t, N = i.useCallback(() => {
+  })(t, n), [t, n]), S = i.useMemo(() => (0, _.s)(t), [t]), N = l === t, T = i.useCallback(() => {
     switch (t) {
       case E.GlobalDiscoveryTab.QUESTS:
-        return T && g.Z.resetState(), m.default.track(y.rMx.DISCOVERY_QUEST_TAB_CLICKED, {
+        return N && g.Z.resetState(), m.default.track(y.rMx.DISCOVERY_QUEST_TAB_CLICKED, {
           client_ad_session_id: (0, u.Gy)().uuid
         }), (0, O.transitionToGlobalDiscovery)({
           tab: E.GlobalDiscoveryTab.QUESTS,
@@ -63,7 +63,7 @@ function S(e) {
           questContent: o.j.DISCOVERY_SIDEBAR
         });
       case E.GlobalDiscoveryTab.APPS:
-        if (!T) return (0, O.transitionToGlobalDiscovery)({
+        if (!N) return (0, O.transitionToGlobalDiscovery)({
           tab: t,
           newSessionState: {
             entrypoint: {
@@ -77,7 +77,7 @@ function S(e) {
         });
         return;
       case E.GlobalDiscoveryTab.SERVERS:
-        if (!T) return (0, O.transitionToGlobalDiscovery)({
+        if (!N) return (0, O.transitionToGlobalDiscovery)({
           tab: t
         });
         f.Z.resetState(), h.Z.resetState();
@@ -87,11 +87,11 @@ function S(e) {
           tab: t
         })
     }
-  }, [t, T]);
+  }, [t, N]);
   return (0, r.jsxs)(s.P3F, {
-    onClick: N,
+    onClick: T,
     className: a()(C.navItem, {
-      [C.selected]: T
+      [C.selected]: N
     }),
     children: [(0, r.jsx)("div", {
       className: C.navItemIcon,
@@ -103,7 +103,7 @@ function S(e) {
     })]
   })
 }
-let T = function() {
+let N = function() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk990999.container,
     children: [(0, Chunk951288.jsx)("div", {

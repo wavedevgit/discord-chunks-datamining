@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk871465 = require("./871465.js");
 let i = {
-  [Chunk871465.YC.CLASSIC]: {
+  [Chunk871465.Y.CLASSIC]: {
     discodo: "discodo",
     message1: "message1",
     deafen: "deafen",
@@ -32,25 +32,25 @@ let i = {
     camera_off: "camera_off",
     camera_on: "camera_on"
   },
-  [Chunk871465.YC.RETRO]: {
+  [Chunk871465.Y.RETRO]: {
     message1: "bit_message1"
   },
-  [Chunk871465.YC.BUBBLE]: {
+  [Chunk871465.Y.BUBBLE]: {
     message1: "bop_message1"
   },
-  [Chunk871465.YC.DUCKY]: {
+  [Chunk871465.Y.DUCKY]: {
     message1: "ducky_message1"
   },
-  [Chunk871465.YC.LOFI]: {
+  [Chunk871465.Y.LOFI]: {
     message1: "lofi_message1"
   },
-  [Chunk871465.YC.ASMR]: {
+  [Chunk871465.Y.ASMR]: {
     message1: "asmr_message1"
   },
-  [Chunk871465.YC.DISCODO]: {
+  [Chunk871465.Y.DISCODO]: {
     message1: "discodo"
   },
-  [Chunk871465.YC.HALLOWEEN]: {
+  [Chunk871465.Y.HALLOWEEN]: {
     call_calling: "halloween_call_calling",
     call_ringing: "halloween_call_ringing",
     message1: "halloween_message1",
@@ -62,7 +62,7 @@ let i = {
     user_join: "halloween_user_join",
     user_leave: "halloween_user_leave"
   },
-  [Chunk871465.YC.WINTER_HOLIDAY]: {
+  [Chunk871465.Y.WINTER_HOLIDAY]: {
     call_calling: "winter_call_calling",
     call_ringing: "winter_call_ringing",
     deafen: "winter_deafen",

@@ -87,7 +87,7 @@ function C() {
     y = Chunk647438.useRef(false),
     v = (0, Chunk548680.Z)(() => {
       let e = "call_ringing";
-      return o === Chunk871465.YC.CLASSIC ? (0, Chunk460181.tu)(A(), module) : (0, Chunk460181.uk)("call_ringing", o)
+      return o === Chunk871465.Y.CLASSIC ? (0, Chunk460181.tu)(A(), module) : (0, Chunk460181.uk)("call_ringing", o)
     }, [o]);
   return Chunk647438.useEffect(() => () => {
     v.stop()

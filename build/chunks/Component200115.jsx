@@ -1,7 +1,7 @@
 /** Chunk was on 15076 **/
 /** chunk id: 200115, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -18,15 +18,15 @@ var Chunk913527 = require("./913527.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk565375 = require("./565375.js");
 
-function v(e) {
+function p(e) {
   var t, n;
   let {
     guildId: s
-  } = e, v = (0, r.e7)([d.Z], () => d.Z.getGuild(s)), p = (0, r.e7)([c.ZP], () => c.ZP.isMuted(s)), j = (0, r.e7)([c.ZP], () => c.ZP.getMuteConfig(s));
-  return null == v ? null : (0, i.jsxs)(a.xJW, {
+  } = e, p = (0, r.e7)([d.Z], () => d.Z.getGuild(s)), v = (0, r.e7)([c.ZP], () => c.ZP.isMuted(s)), j = (0, r.e7)([c.ZP], () => c.ZP.getMuteConfig(s));
+  return null == p ? null : (0, i.jsxs)(a.xJW, {
     children: [(0, i.jsx)(a.j7V, {
       hideBorder: true,
-      value: p,
+      value: v,
       onChange: e => {
         o.Z.updateGuildNotificationSettings(s, {
           muted: e
@@ -37,9 +37,9 @@ function v(e) {
       },
       note: m.intl.string(m.t.IngcUl),
       children: m.intl.format(m.t["J+7D9P"], {
-        name: v.name
+        name: p.name
       })
-    }), p && (0, i.jsxs)("div", {
+    }), v && (0, i.jsxs)("div", {
       className: x.mutedConfig,
       children: [(0, i.jsxs)("div", {
         children: [(0, i.jsx)(a.vwX, {

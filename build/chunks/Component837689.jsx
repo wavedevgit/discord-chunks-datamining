@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 837689, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -35,7 +35,7 @@ function C(e, t, n) {
   }) : e[t] = n, e
 }
 let S = "PremiumServerDriveAnnouncementModal";
-class T extends Chunk317770.Z {
+class N extends Chunk317770.Z {
   _initialize() {
     Chunk570140.Z.subscribe("PREMIUM_MARKETING_DATA_READY", this.mayShowAnnouncementModal), Chunk570140.Z.subscribe("PREMIUM_MARKETING_PREVIEW", this.handlePreview)
   }
@@ -95,4 +95,4 @@ class T extends Chunk317770.Z {
     })
   }
 }
-let N = new T
+let T = new N

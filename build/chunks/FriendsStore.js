@@ -46,7 +46,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,7 +59,7 @@ function T(e, t) {
   }), e
 }
 
-function N(e) {
+function T(e) {
   let t = y.default.getUser(e);
   return {
     user: t,
@@ -100,12 +100,12 @@ class A {
     let e = new Set,
       t = Array.from(Chunk699516.Z.getMutableRelationships().entries()).map(t => {
         let [n, r] = t;
-        return r === v.OGo.FRIEND && e.add(n), new x(T(S({
+        return r === v.OGo.FRIEND && e.add(n), new x(N(S({
           key: n,
           type: r,
           userId: n,
           nickname: E.Z.getNickname(n)
-        }, N(n), j(n), P(n)), {
+        }, T(n), j(n), P(n)), {
           spam: E.Z.isSpam(n),
           ignoredUser: E.Z.isIgnored(n),
           giftIntentType: r === v.OGo.FRIEND && g.Z.isTopAffinityFriendAnniversary({
@@ -123,13 +123,13 @@ class A {
         applicationId: l,
         type: a
       } = t;
-      !(a === v.OGo.FRIEND && e.has(r)) && (a === v.OGo.FRIEND && i.has(r) || (a === v.OGo.FRIEND && i.add(r), n.push(new x(T(S({
+      !(a === v.OGo.FRIEND && e.has(r)) && (a === v.OGo.FRIEND && i.has(r) || (a === v.OGo.FRIEND && i.add(r), n.push(new x(N(S({
         key: "".concat(r, "-").concat(l),
         type: a,
         userId: r,
         applicationId: l,
         nickname: E.Z.getNickname(r)
-      }, N(r), j(r), P(r)), {
+      }, T(r), j(r), P(r)), {
         spam: E.Z.isSpam(r),
         ignoredUser: E.Z.isIgnored(r),
         isGameRelationship: true
@@ -140,7 +140,7 @@ class A {
       userId: e.key,
       type: 99,
       nickname: e.name
-    }, N(e.key), j(e.key), P(e.key))));
+    }, T(e.key), j(e.key), P(e.key))));
     return new A(l().concat(exports, require, Chunk442837))
   }
   clone() {
@@ -228,7 +228,7 @@ function B(e) {
 }
 class V extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk699516.Z, Chunk158776.Z, Chunk594174.default, Chunk430824.Z, Chunk271383.ZP, Chunk199902.Z, Chunk5254.Z, Chunk353926.Z, Chunk633289.Z), this.syncWith([Chunk699516.Z], G), this.syncWith([Chunk91896.Z], G), this.syncWith([Chunk5254.Z], G), this.syncWith([Chunk441623.Z], G), this.syncWith([Chunk594174.default], B(N)), this.syncWith([Chunk158776.Z, Chunk199902.Z], B(j)), U()
+    this.waitFor(Chunk699516.Z, Chunk158776.Z, Chunk594174.default, Chunk430824.Z, Chunk271383.ZP, Chunk199902.Z, Chunk5254.Z, Chunk353926.Z, Chunk633289.Z), this.syncWith([Chunk699516.Z], G), this.syncWith([Chunk91896.Z], G), this.syncWith([Chunk5254.Z], G), this.syncWith([Chunk441623.Z], G), this.syncWith([Chunk594174.default], B(T)), this.syncWith([Chunk158776.Z, Chunk199902.Z], B(j)), U()
   }
   getState() {
     return {

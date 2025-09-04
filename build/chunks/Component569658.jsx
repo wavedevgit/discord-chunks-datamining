@@ -1,7 +1,7 @@
 /** Chunk was on 15076 **/
 /** chunk id: 569658, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -20,16 +20,16 @@ var Chunk392711 = require("./392711.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk821209 = require("./821209.js");
-let N = e => {
+let f = e => {
   let {
     channel: {
       type: t
     }
   } = e;
-  return (0, u.r8)(t) || t === v.d4z.GUILD_CATEGORY
+  return (0, u.r8)(t) || t === p.d4z.GUILD_CATEGORY
 };
 
-function S(e) {
+function b(e) {
   let {
     guildId: t,
     onSelected: n
@@ -39,14 +39,14 @@ function S(e) {
   } = (0, r.cj)([g.Z], () => {
     let e = g.Z.getCategories(t);
     return {
-      channels: (0, o.Z)(e._categories, e, N),
+      channels: (0, o.Z)(e._categories, e, f),
       categories: e
     }
-  }), S = l()(s).filter(e => {
+  }), b = l()(s).filter(e => {
     let {
       channel: t
     } = e;
-    return t.type !== v.d4z.GUILD_CATEGORY || null != u[t.id] && u[t.id].length > 0
+    return t.type !== p.d4z.GUILD_CATEGORY || null != u[t.id] && u[t.id].length > 0
   }).map(e => {
     let {
       channel: t
@@ -59,13 +59,13 @@ function S(e) {
   return (0, i.jsxs)(a.xJW, {
     children: [(0, i.jsx)(a.R94, {
       type: a.R94.Types.DESCRIPTION,
-      children: p.intl.string(p.t["2Y9ZfH"])
+      children: v.intl.string(v.t["2Y9ZfH"])
     }), (0, i.jsx)("div", {
       className: j.input,
       children: (0, i.jsx)(a.VcW, {
-        value: v.lds,
+        value: p.lds,
         onChange: n,
-        options: S,
+        options: b,
         renderOptionLabel: e => {
           let t = h.Z.getChannel(e.value);
           if (null == t) return e.label;
@@ -77,7 +77,7 @@ function S(e) {
             subtitle: s
           })
         },
-        placeholder: p.intl.string(p.t["Z+oF8v"])
+        placeholder: v.intl.string(v.t["Z+oF8v"])
       })
     })]
   })

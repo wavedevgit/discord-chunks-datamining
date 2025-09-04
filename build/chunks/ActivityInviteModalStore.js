@@ -1,10 +1,10 @@
-/** Chunk was on 84927 **/
+/** Chunk was on 60831 **/
 /** chunk id: 606206, original params: e,t,n (module,exports,require) **/
-let r;
+let l;
 require.d(exports, {
-  Z: () => S
+  Z: () => P
 }), require("./388685.js"), require("./539854.js"), require("./781311.js"), require("./35282.js");
-var l, Chunk442837 = require("./442837.js"),
+var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk278323 = require("./278323.js"),
   Chunk212819 = require("./212819.js"),
@@ -18,7 +18,7 @@ var l, Chunk442837 = require("./442837.js"),
   Chunk55589 = require("./55589.js"),
   Chunk981631 = require("./981631.js");
 
-function x(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,159 +26,159 @@ function x(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let b = [Chunk212819.h8.TEXT_CHANNEL, Chunk212819.h8.GROUP_DM, Chunk212819.h8.USER],
-  N = null,
-  m = null,
-  E = [],
-  C = [];
+let O = [Chunk212819.h8.TEXT_CHANNEL, Chunk212819.h8.GROUP_DM, Chunk212819.h8.USER],
+  _ = null,
+  C = null,
+  T = [],
+  m = [];
 
-function j(e) {
-  E = [...E, e], C = C.map(e => {
+function I(e) {
+  T = [...T, e], m = m.map(e => {
     var t, n;
     return t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          l = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          x(e, t, n[t])
+        }))), l.forEach(function(t) {
+          y(e, t, n[t])
         })
       }
       return e
     }({}, e), n = n = {
-      sent: E.includes(e.data.record.id)
+      sent: T.includes(e.data.record.id)
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, r)
+        var l = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, l)
       }
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t
-  }), P.emitChange()
+  }), x.emitChange()
 }
 
-function v() {
-  N = null, null != r && (r.destroy(), r = null), null != m && m()
+function S() {
+  _ = null, null != l && (l.destroy(), l = null), null != C && C()
 }
 
-function T() {
-  let e = null != N && null != N.application_id ? Chunk293273.Z.getApplicationActivity(N.application_id) : null;
-  if (null != N && (null == module || null == module.party || null == module.party.id)) return v()
+function b() {
+  let e = null != _ && null != _.application_id ? Chunk293273.Z.getApplicationActivity(_.application_id) : null;
+  if (null != _ && (null == module || null == module.party || null == module.party.id)) return S()
 }
-class I extends(l = Chunk442837.ZP.Store) {
+class v extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk293273.Z)
   }
   getActivity() {
-    return N
+    return _
   }
   getQuery() {
     var e;
-    return null != (e = null == r ? true : r.query) ? module : ""
+    return null != (e = null == l ? true : l.query) ? module : ""
   }
   getResults() {
-    return C
+    return m
   }
 }
-x(I, "displayName", "ActivityInviteModalStore");
-let P = new I(Chunk570140.Z, {
+y(v, "displayName", "ActivityInviteModalStore");
+let x = new v(Chunk570140.Z, {
     ACTIVITY_INVITE_MODAL_OPEN: function(e) {
-      N = e.activity, m = e.resolve, E = [], null == r && (r = new o.ZP((e, t) => {
-        C = ("" === t.trim() ? function() {
+      _ = e.activity, C = e.resolve, T = [], null == l && (l = new s.ZP((e, t) => {
+        m = ("" === t.trim() ? function() {
           let e = [];
-          return O.Z.getPrivateChannelIds().forEach(t => {
-            let n = u.Z.getChannel(t);
+          return E.Z.getPrivateChannelIds().forEach(t => {
+            let n = c.Z.getChannel(t);
             if (null != n)
-              if (n.type === y.d4z.DM) {
+              if (n.type === N.d4z.DM) {
                 let t = n.getRecipientId(),
-                  r = null != t ? p.default.getUser(t) : null;
-                null != r && e.push({
-                  type: o.h8.USER,
-                  record: r,
+                  l = null != t ? p.default.getUser(t) : null;
+                null != l && e.push({
+                  type: s.h8.USER,
+                  record: l,
                   score: 0
                 })
               } else n.isMultiUserDM() && e.push({
-                type: o.h8.GROUP_DM,
+                type: s.h8.GROUP_DM,
                 record: n,
                 score: 0
               })
           }), e
         }() : e).map(e => {
           switch (e.type) {
-            case o.h8.USER: {
+            case s.h8.USER: {
               let {
                 record: t
               } = e;
               return {
-                type: o.h8.USER,
-                sent: E.includes(t.id),
-                status: f.Z.getStatus(t.id),
+                type: s.h8.USER,
+                sent: T.includes(t.id),
+                status: g.Z.getStatus(t.id),
                 data: e
               }
             }
-            case o.h8.TEXT_CHANNEL: {
+            case s.h8.TEXT_CHANNEL: {
               var t;
               let {
                 record: n
-              } = e, r = u.Z.getChannel(n.parent_id), l = d.Z.getGuild(n.guild_id);
+              } = e, l = c.Z.getChannel(n.parent_id), i = d.Z.getGuild(n.guild_id);
               return {
-                type: o.h8.TEXT_CHANNEL,
-                sent: E.includes(n.id),
-                categoryName: null != r ? (0, c.F6)(r, p.default, g.Z) : "",
-                guildName: null != (t = null == l ? true : l.name) ? t : "",
+                type: s.h8.TEXT_CHANNEL,
+                sent: T.includes(n.id),
+                categoryName: null != l ? (0, u.F6)(l, p.default, h.Z) : "",
+                guildName: null != (t = null == i ? true : i.name) ? t : "",
                 data: e
               }
             }
-            case o.h8.GROUP_DM: {
+            case s.h8.GROUP_DM: {
               let {
                 record: t
               } = e;
               return {
-                type: o.h8.GROUP_DM,
-                sent: E.includes(t.id),
+                type: s.h8.GROUP_DM,
+                sent: T.includes(t.id),
                 data: e
               }
             }
             default:
               return null
           }
-        }).filter(e => null != e), P.emitChange()
-      }, b, 100)), r.search("")
+        }).filter(e => null != e), x.emitChange()
+      }, O, 100)), l.search("")
     },
     ACTIVITY_INVITE_MODAL_QUERY: function(e) {
       let {
         query: t
       } = e;
-      null != r && r.search(t)
+      null != l && l.search(t)
     },
     ACTIVITY_INVITE_MODAL_SEND: function(e) {
-      if (null == N) return;
+      if (null == _) return;
       let t = e.channelId,
         n = e.userId;
-      null != t ? a.Z.sendActivityInvite({
+      null != t ? o.Z.sendActivityInvite({
         channelId: t,
-        type: y.mFx.JOIN,
-        activity: N,
+        type: N.mFx.JOIN,
+        activity: _,
         location: "Channel Text Area - Invite to Join Modal"
-      }).then(() => j(t)) : null != n && a.Z.sendActivityInviteUser({
+      }).then(() => I(t)) : null != n && o.Z.sendActivityInviteUser({
         userId: n,
-        type: y.mFx.JOIN,
-        activity: N,
+        type: N.mFx.JOIN,
+        activity: _,
         location: "Channel Text Area - Invite to Join Modal"
-      }).then(() => j(n))
+      }).then(() => I(n))
     },
-    ACTIVITY_INVITE_MODAL_CLOSE: v,
+    ACTIVITY_INVITE_MODAL_CLOSE: S,
     OVERLAY_SET_INPUT_LOCKED: function(e) {
       let {
         locked: t
       } = e;
-      return !!t && null != N && (v(), true)
+      return !!t && null != _ && (S(), true)
     },
-    LOCAL_ACTIVITY_UPDATE: T,
-    RPC_APP_DISCONNECTED: T
+    LOCAL_ACTIVITY_UPDATE: b,
+    RPC_APP_DISCONNECTED: b
   }),
-  S = 12633 == require.j ? P : null
+  P = 12633 == require.j ? x : null
