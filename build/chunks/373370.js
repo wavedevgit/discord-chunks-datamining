@@ -2,8 +2,8 @@
 /** chunk id: 373370, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  CR: () => w,
-  DD: () => N
+  CR: () => D,
+  DD: () => R
 }), require("./953529.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -57,8 +57,7 @@ function g(e, t) {
 }
 
 function E(e, t, n) {
-  let r = arguments.length > 3 && true !== arguments[3] && arguments[3];
-  return r && !n ? _.intl.format(e, t) : _.intl.formatToPlainString(e, t)
+  return n ? _.intl.formatToPlainString(e, t) : _.intl.format(e, t)
 }
 
 function b(e) {
@@ -71,21 +70,18 @@ function b(e) {
     } = e,
     l = u.r.build(n.config).defaultRewardNameWithArticle,
     {
-      targetMinutes: d,
-      applications: f
+      targetMinutes: c
     } = r,
-    p = (0, s.Z5)(f),
-    h = n.config.messages.gameTitle,
-    m = (0, s.f$)(n.config),
-    g = (0, s._p)(n.config);
-  return E(t = p ? _.t.BfgxRk : a && m ? g ? _.t["eb/SnZ"] : _.t.ziB0HB : m || null != o ? _.t.AwuMRU : _.t.NIimTk, {
-    gameTitle: h,
-    streamingDurationRequirement: d,
+    d = n.config.messages.gameTitle,
+    f = (0, s.f$)(n.config),
+    p = (0, s._p)(n.config);
+  return E(t = a && f ? p ? _.t["eb/SnZ"] : _.t.ziB0HB : f || null != o ? _.t.AwuMRU : _.t.NIimTk, {
+    gameTitle: d,
+    streamingDurationRequirement: c,
     rewardNameWithArticle: l,
     duration: o,
-    targetMinutes: d,
-    onClick: p ? () => (0, c.v)(f) : () => {}
-  }, i, p)
+    targetMinutes: c
+  }, i)
 }
 
 function y(e) {
@@ -122,22 +118,18 @@ function O(e) {
     } = e,
     l = u.r.build(n.config).defaultRewardNameWithArticle,
     {
-      targetMinutes: d,
-      applications: f
+      targetMinutes: c
     } = r,
-    p = (0, s.Z5)(f),
-    h = n.config.messages.gameTitle,
-    m = (0, s.f$)(n.config),
-    g = (0, s._p)(n.config);
-  return E(t = p ? _.t.BfgxRk : a && m ? g ? _.t["eb/SnZ"] : _.t.ziB0HB : m || null != o ? _.t.AwuMRU : _.t.FZL5Q0, {
-    gameTitle: h,
-    streamingDurationRequirement: d,
+    d = n.config.messages.gameTitle,
+    f = (0, s.f$)(n.config),
+    p = (0, s._p)(n.config);
+  return E(t = a && f ? p ? _.t["eb/SnZ"] : _.t.ziB0HB : f || null != o ? _.t.AwuMRU : _.t.FZL5Q0, {
+    gameTitle: d,
+    streamingDurationRequirement: c,
     rewardNameWithArticle: l,
     duration: o,
-    questReward: l,
-    targetMinutes: d,
-    onClick: p ? () => (0, c.v)(f) : () => {}
-  }, i, p)
+    questReward: l
+  }, i)
 }
 
 function v(e) {
@@ -207,11 +199,32 @@ function A(e) {
   let {
     quest: t,
     taskDetails: n,
+    withoutMarkdown: r
+  } = e, i = u.r.build(t.config).defaultRewardNameWithArticle, {
+    targetMinutes: a,
+    applications: o
+  } = n;
+  return E(_.t.BfgxRk, {
+    rewardNameWithArticle: i,
+    targetMinutes: a,
+    onClick: () => (0, c.v)(o)
+  }, r)
+}
+
+function C(e) {
+  let {
+    quest: t,
+    taskDetails: n,
     thirdPartyTaskDetails: r,
     withoutMarkdown: i,
     currentUser: a
-  } = e, l = (0, o.I5)(a, f.p9.TIER_2), c = (0, s.Kr)(t.config);
-  if ((0, s.$J)(t) && (0, s.$H)(t)) return b({
+  } = e, l = (0, o.I5)(a, f.p9.TIER_2), c = (0, s.Kr)(t.config), u = (0, s.$J)(t) && (0, s.$H)(t);
+  if ((0, s.Pb)(t)) return A({
+    quest: t,
+    taskDetails: n,
+    withoutMarkdown: i
+  });
+  if (u) return b({
     quest: t,
     taskDetails: n,
     withoutMarkdown: i,
@@ -239,7 +252,7 @@ function A(e) {
     taskDetails: n,
     withoutMarkdown: i
   });
-  if ((0, s.q8)(t)) return I(t, c, l, i);
+  else if ((0, s.q8)(t)) return I(t, c, l, i);
   else if ((0, s.pO)(t)) return S({
     quest: t,
     taskDetails: n,
@@ -254,14 +267,14 @@ function A(e) {
   })
 }
 
-function C(e) {
+function N(e) {
   var t;
-  return A(g(h({}, e), {
+  return C(g(h({}, e), {
     currentUser: null != (t = e.currentUser) ? t : a.default.getCurrentUser()
   }))
 }
 
-function N(e) {
+function R(e) {
   let {
     quest: t,
     questContent: n,
@@ -271,7 +284,7 @@ function N(e) {
     questContent: n,
     sourceQuestContent: r
   }), s = (0, i.e7)([a.default], () => a.default.getCurrentUser()), c = (0, l.Jf)(t);
-  return C(g(h({}, e), {
+  return N(g(h({}, e), {
     connectedConsoleLinkOnClick: o,
     currentUser: s,
     withoutMarkdown: false,
@@ -279,21 +292,21 @@ function N(e) {
   }))
 }
 
-function R(e) {
+function P(e) {
   return (0, s.$J)(e) || (0, s.pO)(e) ? 0 : (0, s.Dr)({
     quest: e
   }) ? 1 : (0, s.q8)(e) ? 2 : 3 * !!(0, s.Vl)(e)
 }
 
-function P(e) {
-  return r.useMemo(() => R(e), [e])
+function w(e) {
+  return r.useMemo(() => P(e), [e])
 }
 
-function w(e) {
+function D(e) {
   let {
     quest: t
   } = e;
-  switch (P(t)) {
+  switch (w(t)) {
     case 0:
     case 1:
       return _.intl.string(_.t.l7E81t);
