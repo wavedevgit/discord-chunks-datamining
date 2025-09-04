@@ -81,7 +81,7 @@ let D = Object.freeze({
 
 function L(e) {
   let t = O.en(e.sku);
-  return null != t ? T.intl.formatToPlainString(T.t.Aqe2ZG, {
+  return null != t ? S.intl.formatToPlainString(S.t.Aqe2ZG, {
     date: t
   }) : null
 }
@@ -95,24 +95,24 @@ class j extends(r = Chunk647438.Component) {
     switch ("uninstalling" !== e && (this._uninstallStringIndex = null), e) {
       case "install":
       case "unsupported_os":
-        return T.intl.string(T.t.nL0WvL);
+        return S.intl.string(S.t.nL0WvL);
       case "update":
-        return T.intl.string(T.t.tkhwp6);
+        return S.intl.string(S.t.tkhwp6);
       case "paused":
-        return T.intl.string(T.t["6EKrh4"]);
+        return S.intl.string(S.t["6EKrh4"]);
       case "locate":
-        return T.intl.string(T.t["nIj+a2"]);
+        return S.intl.string(S.t["nIj+a2"]);
       case "uninstalling":
         let t = x();
         return null == this._uninstallStringIndex && (this._uninstallStringIndex = Math.floor(Math.random() * t.length)), t[this._uninstallStringIndex];
       case "queued":
-        return T.intl.string(T.t.TiJg5u);
+        return S.intl.string(S.t.TiJg5u);
       case "downloading":
-        return T.intl.string(T.t.Tdhepa);
+        return S.intl.string(S.t.Tdhepa);
       case "preorder_wait":
-        return T.intl.string(T.t.xiXyPT);
+        return S.intl.string(S.t.xiXyPT);
       case "add_to_library":
-        return T.intl.string(T.t.r3fwub);
+        return S.intl.string(S.t.r3fwub);
       default:
         throw Error("Unexpected button state")
     }
@@ -236,7 +236,7 @@ class j extends(r = Chunk647438.Component) {
         let {
           libraryApplication: e
         } = this.props;
-        await u.h(e.id, e.branchId, e.getFlags() & ~S.eHb.HIDDEN), (0, _.uL)(S.Z5c.APPLICATION_LIBRARY)
+        await u.h(e.id, e.branchId, e.getFlags() & ~T.eHb.HIDDEN), (0, _.uL)(T.Z5c.APPLICATION_LIBRARY)
       } catch (e) {
         new f.Z("LibraryApplicationButton").error(e)
       }

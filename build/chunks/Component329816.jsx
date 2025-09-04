@@ -107,7 +107,7 @@ let X = (0, Chunk663993.Un)({
                         children: (0, r.jsx)(x.OR, {
                           children: (0, r.jsx)(y.Z.Provider, {
                             value: O.Z,
-                            children: (0, r.jsxs)(T.p, {
+                            children: (0, r.jsxs)(S.p, {
                               children: [(0, r.jsx)("div", {
                                 className: o()(u ? q.mobileApp : q.app),
                                 children: t
@@ -118,7 +118,7 @@ let X = (0, Chunk663993.Un)({
                           })
                         })
                       })
-                    }), (0, r.jsx)(S.Z, {}), (0, r.jsx)(V.Z, {
+                    }), (0, r.jsx)(T.Z, {}), (0, r.jsx)(V.Z, {
                       mobile: u
                     }), (0, r.jsx)(R.Z, {
                       mobile: u

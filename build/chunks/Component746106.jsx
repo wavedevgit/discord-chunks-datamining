@@ -2,7 +2,7 @@
 /** chunk id: 746106, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  w: () => T
+  w: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,12 +27,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk264783 = require("./264783.js"),
   Chunk892071 = require("./892071.jsx");
 
-function T(e) {
+function S(e) {
   let {
     windowKey: t,
     themeOverride: n,
     children: a
-  } = e, T = null != t, [A] = i.useState(() => v.ZP.getEnableHardwareAcceleration()), {
+  } = e, S = null != t, [A] = i.useState(() => v.ZP.getEnableHardwareAcceleration()), {
     locale: C,
     theme: N,
     focused: R,
@@ -53,8 +53,8 @@ function T(e) {
     return {
       locale: b.default.locale,
       theme: null != n ? n : y.Z.theme,
-      focused: T ? m.Z.getWindowFocused(t) : O.Z.isFocused(),
-      currentWindow: T && null != (e = m.Z.getWindow(t)) ? e : window,
+      focused: S ? m.Z.getWindowFocused(t) : O.Z.isFocused(),
+      currentWindow: S && null != (e = m.Z.getWindow(t)) ? e : window,
       fontScale: c.Z.fontScale,
       fontScaleClass: c.Z.fontScaleClass,
       keyboardModeEnabled: c.Z.keyboardModeEnabled,
@@ -85,7 +85,7 @@ function T(e) {
       location: "RootThemeContextProvider"
     }),
     J = (0, _.On)({
-      isPopoutWindow: T,
+      isPopoutWindow: S,
       isSearchDesktopTopLevelEnabled: Q
     });
   return (0, r.jsx)(l.wMY, {
@@ -93,7 +93,7 @@ function T(e) {
     flags: H,
     saturation: L,
     density: Y,
-    children: (0, r.jsx)(S.cE, {
+    children: (0, r.jsx)(T.cE, {
       lang: C,
       theme: N,
       density: Y,
@@ -110,7 +110,7 @@ function T(e) {
       alwaysShowLinkDecorations: G,
       hardwareAccelerationEnabled: A,
       highContrastMode: F && Z,
-      isPopoutWindow: T,
+      isPopoutWindow: S,
       rootClassName: o()(J, {
         "confetti-mode": B,
         "refresh-fast-follow-avatars": W && !X,

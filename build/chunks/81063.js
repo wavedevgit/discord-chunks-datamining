@@ -2,10 +2,10 @@
 /** chunk id: 81063, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Vh: () => T,
+  Vh: () => S,
   f: () => I,
   hR: () => R,
-  xF: () => S
+  xF: () => T
 }), require("./35282.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -83,7 +83,7 @@ function I(e, t) {
   return n ? "".concat(e, ":").concat(n.toString()) : null
 }
 
-function S(e, t, n) {
+function T(e, t, n) {
   if (null != t && t.includes(":")) {
     let [e, r] = t.split(":");
     return e === u.ABu.TWITCH ? null == n || "number" == typeof n ? void new l.Z("ApplicationAssetUtils").warn("getAssetImage: size must === [number, number] for Twitch") : E[u.ABu.TWITCH].deserialize(r, n) : Object.prototype.hasOwnProperty.call(E, e) ? E[e].deserialize(r) : true
@@ -93,7 +93,7 @@ function S(e, t, n) {
     i = "number" == typeof r ? "?size=".concat((0, c.oO)(r)) : "";
   return null != window.GLOBAL_ENV.CDN_HOST ? "".concat(location.protocol, "//").concat(window.GLOBAL_ENV.CDN_HOST, "/app-assets/").concat(e, "/").concat(t, ".png").concat(i) : "".concat((0, a.K0)(), "/applications/").concat(e, "/app-assets/").concat(t, ".png").concat(i)
 }
-async function T(e) {
+async function S(e) {
   let t = await v(e);
   return null == t ? true : t.assets
 }
@@ -158,7 +158,7 @@ async function R(e, t) {
     type: "APPLICATION_ASSETS_FETCH_SUCCESS",
     applicationId: e
   }), r;
-  let a = await T(e);
+  let a = await S(e);
   return (o.Z.dispatch({
     type: "APPLICATION_ASSETS_UPDATE",
     applicationId: e,

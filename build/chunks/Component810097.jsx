@@ -2,7 +2,7 @@
 /** chunk id: 810097, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => T,
+  ZP: () => S,
   _1: () => O,
   jd: () => v
 });
@@ -66,13 +66,13 @@ let O = 2700,
     [Chunk228168.n_.STATUS]: () => Chunk388032.intl.string(Chunk388032.t.TKdBCw),
     [Chunk228168.n_.ACTIVITY]: () => Chunk388032.intl.string(Chunk388032.t.bSe71N)
   },
-  S = {
+  T = {
     [Chunk228168.n_.AVATAR]: () => Chunk388032.intl.string(Chunk388032.t.xvN0fX),
     [Chunk228168.n_.STATUS]: () => Chunk388032.intl.string(Chunk388032.t["C/vzS0"]),
     [Chunk228168.n_.ACTIVITY]: () => Chunk388032.intl.string(Chunk388032.t.ObfsSk)
   };
 
-function T(e) {
+function S(e) {
   let {
     user: t,
     sourceType: n,
@@ -81,7 +81,7 @@ function T(e) {
     interactionSourceId: b,
     targetRef: O,
     onAction: v,
-    renderMoreButtonPopout: T
+    renderMoreButtonPopout: S
   } = e, A = i.useRef(null), C = (0, s.e7)([d.default], () => d.default.getId() === t.id), N = (0, f.Z)(t.id), {
     onInteraction: R,
     onInteractionPopoutTargetRefChange: P
@@ -146,14 +146,14 @@ function T(e) {
       children: (0, r.jsx)(u.zx, {
         onClick: D,
         className: m.button,
-        "aria-label": S[n](),
+        "aria-label": T[n](),
         "aria-haspopup": "dialog",
         children: (0, r.jsx)(c.n$P, {
           size: "xs",
           className: m.icon
         })
       })
-    }), null == T ? true : T(e => {
+    }), null == S ? true : S(e => {
       let t = () => {
         var t;
         P(A), null == (t = e.onClick) || t.call(e)

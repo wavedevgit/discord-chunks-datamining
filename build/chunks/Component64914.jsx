@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk692278 = require("./692278.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,14 +36,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -82,14 +82,14 @@ function P(e) {
 function w() {
   let [e] = Chunk647438.useState(() => R()), t = Chunk695346.bm.useSetting(), n = Chunk695346.Sb.useSetting(), o = (0, Chunk442837.e7)([Chunk695103.Z], () => Chunk695103.Z.testModeApplicationId), f = (0, Chunk442837.e7)([Chunk740492.ZP], () => Chunk740492.ZP.showPlayAgain), h = Chunk647438.useCallback(e => {
     g.bm.updateSetting(!e)
-  }, []), S = Chunk647438.useCallback(e => {
-    e ? (0, s.h7j)(e => (0, r.jsx)(b.Z, T({}, e))) : l.mc()
+  }, []), T = Chunk647438.useCallback(e => {
+    e ? (0, s.h7j)(e => (0, r.jsx)(b.Z, S({}, e))) : l.mc()
   }, []), A = Chunk647438.useCallback(e => {
     (0, u.BV)(e, c.Z.USER_SETTINGS)
   }, []), N = Chunk647438.useCallback(e => {
     (0, s.h7j)(t => {
       let n = e ? v.intl.format(v.t.LYXRxM, {}) : v.intl.format(v.t.uDP3Ky, {});
-      return (0, r.jsx)(s.ConfirmModal, C(T({
+      return (0, r.jsx)(s.ConfirmModal, C(S({
         header: v.intl.string(v.t.aqpAvr),
         confirmText: v.intl.string(v.t.vT7ckp),
         cancelText: v.intl.string(v.t["ETE/oK"]),
@@ -155,7 +155,7 @@ function w() {
       children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
         value: null != Chunk433517,
         note: Chunk388032.intl.string(Chunk388032.t["52hMnJ"]),
-        onChange: S,
+        onChange: T,
         children: Chunk388032.intl.string(Chunk388032.t.erOqlp)
       })
     }), (0, Chunk951288.jsx)(Chunk921801.F, {

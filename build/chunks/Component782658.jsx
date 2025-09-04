@@ -114,7 +114,7 @@ function x(e) {
     default:
       switch ((0, h.VR)(k)) {
         case h.wx.GROUP_DM:
-          Y = (0, r.jsx)(T.Z, {
+          Y = (0, r.jsx)(S.Z, {
             onTransitionToInviteChannel: V,
             onAcceptInstantInvite: H,
             currentUserId: Z,
@@ -123,7 +123,7 @@ function x(e) {
           });
           break;
         case h.wx.FRIEND:
-          Y = (0, r.jsx)(S.Z, {
+          Y = (0, r.jsx)(T.Z, {
             invite: k,
             message: n,
             getAcceptInviteContext: x

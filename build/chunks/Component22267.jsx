@@ -66,10 +66,10 @@ let C = {
         width: "100%"
       },
       children: (0, r.jsxs)(c.Rny, {
-        className: o()(R, S.nameplatePreview, {
-          [S.nameplatePurchased]: U && !w,
-          [S.large]: "large" === k,
-          [S.xlarge]: "xlarge" === k
+        className: o()(R, T.nameplatePreview, {
+          [T.nameplatePurchased]: U && !w,
+          [T.large]: "large" === k,
+          [T.xlarge]: "xlarge" === k
         }),
         children: [null != Z && (0, r.jsx)(g.Z, {
           nameplate: Z,
@@ -77,9 +77,9 @@ let C = {
           placement: m.i.PREVIEW,
           content: x ? true : H
         }, null == a ? true : a.id), (0, r.jsxs)("div", {
-          className: S.overlayContainer,
+          className: T.overlayContainer,
           children: [null != t ? (0, r.jsx)("div", {
-            className: o()(S.avatarContainer, !x && S.avatarVisible),
+            className: o()(T.avatarContainer, !x && T.avatarVisible),
             children: (0, r.jsx)(u.Z, {
               ref: H,
               avatar: (0, r.jsx)(d.Z, {
@@ -95,7 +95,7 @@ let C = {
               decorators: (0, r.jsx)(h.ZP, {
                 userId: t.id,
                 contextGuildId: n,
-                className: S.tagChiplet
+                className: T.tagChiplet
               }),
               name: (0, r.jsx)(p.Z, {
                 userName: W,
@@ -107,16 +107,16 @@ let C = {
               withDisplayNameStyles: z && null != q
             })
           }) : null, (0, r.jsxs)("div", {
-            className: o()(S.avatarContainer, x && S.avatarVisible),
+            className: o()(T.avatarContainer, x && T.avatarVisible),
             children: [(0, r.jsx)(c.qEK, {
-              src: B ? T : A,
+              src: B ? S : A,
               size: K,
               "aria-hidden": true,
               status: c.Skl.ONLINE,
               statusColor: V,
-              className: S.avatar
+              className: T.avatar
             }), (0, r.jsx)("div", {
-              className: S.placeholderUsername
+              className: T.placeholderUsername
             })]
           })]
         })]

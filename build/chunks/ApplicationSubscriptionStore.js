@@ -52,14 +52,14 @@ let E = new Chunk759174.h(e => [p(e.application_id), ...e.subscription_listings_
 
 function I(e) {
   var t;
-  for (let n of (E.set(e.id, e), null != (t = e.subscription_listings) ? t : [])) S(n)
+  for (let n of (E.set(e.id, e), null != (t = e.subscription_listings) ? t : [])) T(n)
 }
 
-function S(e) {
+function T(e) {
   b.set(e.id, e)
 }
 
-function T() {
+function S() {
   E.clear(), b.clear(), y.clear(), O = {}, v = {}
 }
 
@@ -132,7 +132,7 @@ class P extends(r = Chunk442837.yh) {
 }
 d(P, "displayName", "ApplicationSubscriptionStore");
 let w = new P(Chunk570140.Z, {
-  LOGOUT: T,
+  LOGOUT: S,
   APPLICATION_SUBSCRIPTIONS_FETCH_LISTINGS: A,
   APPLICATION_SUBSCRIPTIONS_FETCH_LISTINGS_SUCCESS: C,
   APPLICATION_SUBSCRIPTIONS_FETCH_LISTINGS_FAILURE: N,

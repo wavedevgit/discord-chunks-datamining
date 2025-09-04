@@ -35,7 +35,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -60,7 +60,7 @@ function T(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -73,19 +73,19 @@ let C = 40,
       name: I
     } = t;
     (0, o.ZP)(() => {
-      g.default.track(b.rMx.OPEN_POPOUT, S({
+      g.default.track(b.rMx.OPEN_POPOUT, T({
         type: "Role Icon Popout",
         guild_id: n.id
       }, (0, s.v_)(p.Z.getChannel(m.Z.getChannelId(n.id)))))
     });
-    let T = (0, i.e7)([h.Z], () => null != t.roleId ? h.Z.getRole(n.id, t.roleId) : true),
-      N = (0, f.Z)(T),
+    let S = (0, i.e7)([h.Z], () => null != t.roleId ? h.Z.getRole(n.id, t.roleId) : true),
+      N = (0, f.Z)(S),
       R = N ? O.intl.formatToPlainString(O.t.t0928f, {
         name: I
       }) : O.intl.formatToPlainString(O.t.UDDkGx, {
         name: I
       }),
-      P = A(S({}, t), {
+      P = A(T({}, t), {
         src: null == t.src ? t.src : (0, u.o)(t.src, C),
         size: C
       }),
@@ -109,7 +109,7 @@ let C = 40,
             className: v.mainContent,
             children: [(0, r.jsx)("div", {
               className: v.roleIconContainer,
-              children: (0, r.jsx)(c.Z, A(S({}, P), {
+              children: (0, r.jsx)(c.Z, A(T({}, P), {
                 enableTooltip: false,
                 className: v.__invalid_roleIcon,
                 enableHeight: false

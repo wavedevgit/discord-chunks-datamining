@@ -46,7 +46,7 @@ function I(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,8 +57,8 @@ function S(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -129,7 +129,7 @@ let C = e => {
         previewImage: d,
         videoUrl: _,
         shouldLoadVideo: v,
-        index: S,
+        index: T,
         customVideoStyle: N,
         isReducedMotion: R,
         onClick: P,
@@ -200,7 +200,7 @@ let C = e => {
           })
         }, _)
       }),
-      H = S % 2 != 0,
+      H = T % 2 != 0,
       Y = () => H ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(F, {}), (0, r.jsx)(V, {})]
       }) : (0, r.jsxs)(r.Fragment, {
@@ -213,10 +213,10 @@ let C = e => {
         onBlur: B,
         onMouseLeave: B
       };
-    return x ? (0, r.jsx)(c.$, T(I({}, W), {
+    return x ? (0, r.jsx)(c.$, S(I({}, W), {
       color: "purple",
       children: (0, r.jsx)(Y, {})
-    })) : (0, r.jsx)("div", T(I({}, W), {
+    })) : (0, r.jsx)("div", S(I({}, W), {
       children: (0, r.jsx)(Y, {})
     }))
   }

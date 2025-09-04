@@ -109,19 +109,19 @@ async function z(e, t, n) {
   w.verbose("loading early cache");
   let c = y.Z.getSocket();
   c.connect();
-  let u = null != (r = S.Z.getGuildId()) ? r : null,
+  let u = null != (r = T.Z.getGuildId()) ? r : null,
     d = null != (o = I.Z.getChannelId()) ? o : null,
     f = performance.now(),
     _ = O.Z.loadCachedMessages.measureAsyncWithoutNesting(() => K(e, u, d)),
     E = O.Z.fetchGuildCache.measureAsync(() => Q(e, n)),
     b = O.Z.fetchGuildCache.measureAsync(() => J(e, n)),
     v = null != e ? i.Z.timeAsync("\uD83D\uDCBE", "cache: private_channels", () => g.Z.getAsync(e, null)) : Promise.resolve([]),
-    T = null == e ? Promise.resolve({}) : i.Z.timeAsync("\uD83D\uDCBE", "cache: user_settings", () => m.Z.getAll(e)),
+    S = null == e ? Promise.resolve({}) : i.Z.timeAsync("\uD83D\uDCBE", "cache: user_settings", () => m.Z.getAll(e)),
     A = null == e ? Promise.resolve([]) : i.Z.timeAsync("\uD83D\uDCBE", "cache: read_states", () => p.Z.getAll(e)),
     C = null == e ? Promise.resolve([]) : i.Z.timeAsync("\uD83D\uDCBE", "cache: user_guild_settings", () => h.Z.getAll(e)),
     [
       [R, P], D, x, L, j, M, k
-    ] = await Promise.all([_, E, b, v, T, A, C]),
+    ] = await Promise.all([_, E, b, v, S, A, C]),
     U = performance.now() - f;
   if (w.verbose("cache loaded in ".concat(U, "ms (channel_history ").concat(R, "ms)")), null == P) return (0, N.Z)("database:history_cache_null"), w.verbose("finished without dispatching CACHE_LOADED"), [false, null, 0];
   {
@@ -315,7 +315,7 @@ class en extends(r = Chunk442837.ZP.Store) {
     return j
   }
   canWriteCaches(e) {
-    return (0, T.$8)() ? x ? (w.log("Not writing cache because caches cleared"), false) : !!e || !!U || (w.log("Not writing cache because never connected"), false) : (w.log("Not writing cache because not authenticated"), false)
+    return (0, S.$8)() ? x ? (w.log("Not writing cache because caches cleared"), false) : !!e || !!U || (w.log("Not writing cache because never connected"), false) : (w.log("Not writing cache because not authenticated"), false)
   }
   async loadCacheAsync(e, t) {
     let n = (0, A.h)(t);

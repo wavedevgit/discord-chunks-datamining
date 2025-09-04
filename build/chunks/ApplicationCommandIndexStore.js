@@ -10,7 +10,7 @@ require.d(exports, {
   ZP: () => eh,
   em: () => em,
   un: () => eU,
-  v1: () => eS
+  v1: () => eT
 }), require("./953529.js"), require("./388685.js"), require("./539854.js"), require("./642613.js"), require("./35282.js"), require("./361932.js"), require("./187205.js"), require("./997841.js");
 var r, Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
@@ -190,7 +190,7 @@ async function en(e) {
       abort: t,
       promise: n.promise
     }
-  }, true), await (0, T.a)(e, t).then(n.resolve).catch(n.reject)
+  }, true), await (0, S.a)(e, t).then(n.resolve).catch(n.reject)
 }
 
 function er(e) {
@@ -431,19 +431,19 @@ class e_ extends(r = Chunk442837.ZP.Store) {
     n.allowFetch && (u && c && null != r && eC(r) && (y.default.track(D.rMx.APPLICATION_COMMAND_CACHE_FETCH, {
       miss: null == i.result,
       size: Object.keys(ep.indices).length
-    }), eN(i) && null != r && (null != r.guild_id ? (0, T.j)({
+    }), eN(i) && null != r && (null != r.guild_id ? (0, S.j)({
       type: "guild",
       guildId: r.guild_id
-    }) : (0, T.j)({
+    }) : (0, S.j)({
       type: "channel",
       channelId: r.id
-    }), d = true)), eN(a) && ((0, T.j)({
+    }), d = true)), eN(a) && ((0, S.j)({
       type: "user"
-    }), d = true), eN(o) && null != n.applicationId && ((0, T.j)({
+    }), d = true), eN(o) && null != n.applicationId && ((0, S.j)({
       type: "application",
       applicationId: n.applicationId
     }), d = true));
-    let f = eT({
+    let f = eS({
       permissionContext: l,
       text: t.text,
       allowApplicationCommands: u,
@@ -501,7 +501,7 @@ function em(e, t, n) {
   return i.useEffect(() => {
     if (r) {
       if ("contextless" === e.type) {
-        n && eN(o) && (0, T.j)({
+        n && eN(o) && (0, S.j)({
           type: "user"
         });
         return
@@ -509,10 +509,10 @@ function em(e, t, n) {
       n && t && eC(e.channel) && (y.default.track(D.rMx.APPLICATION_COMMAND_CACHE_FETCH, {
         miss: null == o.result,
         size: Object.keys(ep.indices).length
-      }), eN(o) && (null != e.channel.guild_id ? (0, T.j)({
+      }), eN(o) && (null != e.channel.guild_id ? (0, S.j)({
         type: "guild",
         guildId: e.channel.guild_id
-      }) : (0, T.j)({
+      }) : (0, S.j)({
         type: "channel",
         channelId: e.channel.id
       }))), a(false)
@@ -529,7 +529,7 @@ function eg(e, t) {
     n && null != e && (t && (y.default.track(D.rMx.APPLICATION_COMMAND_CACHE_FETCH, {
       miss: null == a.result,
       size: Object.keys(ep.indices).length
-    }), eN(a) && (0, T.j)({
+    }), eN(a) && (0, S.j)({
       type: "guild",
       guildId: e
     })), r(false))
@@ -539,7 +539,7 @@ function eg(e, t) {
 function eE(e, t) {
   let [n, r] = i.useState(true), a = (0, s.cj)([ep], () => ep.getUserState());
   return i.useEffect(() => {
-    n && (t && eN(a) && e && (0, T.j)({
+    n && (t && eN(a) && e && (0, S.j)({
       type: "user"
     }), r(false))
   }, [a, t, e, n]), a
@@ -548,7 +548,7 @@ function eE(e, t) {
 function eb(e, t) {
   let [n, r] = i.useState(true), a = (0, s.e7)([ep], () => ep.getApplicationState(e));
   i.useEffect(() => {
-    n && (t && eN(a) && null != e && (0, T.j)({
+    n && (t && eN(a) && null != e && (0, S.j)({
       type: "application",
       applicationId: e
     }), r(false))
@@ -569,7 +569,7 @@ function ev(e, t, n, r) {
     commands: o,
     sectionedCommands: s,
     loading: l
-  } = eS(e, n, r), c = i.useMemo(() => "channel" === e.type ? {
+  } = eT(e, n, r), c = i.useMemo(() => "channel" === e.type ? {
     channel: e.channel,
     guild: t
   } : true, [e, t]), u = (0, I.R)(c);
@@ -581,8 +581,8 @@ function ev(e, t, n, r) {
       loading: l
     };
     let e = o.filter(e => u.includes(e.id)).sort((e, t) => {
-      let n = S.ZP.getScoreWithoutLoadingLatest(c, e);
-      return S.ZP.getScoreWithoutLoadingLatest(c, t) - n
+      let n = T.ZP.getScoreWithoutLoadingLatest(c, e);
+      return T.ZP.getScoreWithoutLoadingLatest(c, t) - n
     }).splice(0, w.hz);
     return 0 === e.length ? {
       descriptors: a,
@@ -611,7 +611,7 @@ let eI = Object.freeze({
   }
 });
 
-function eS(e, t, n) {
+function eT(e, t, n) {
   let r = "channel" === e.type ? e.channel : true,
     a = (0, R.Hs)(r, t.commandTypes),
     o = false !== t.applicationCommands,
@@ -619,7 +619,7 @@ function eS(e, t, n) {
     l = eE(o, n.allowFetch),
     c = ey(),
     u = eO();
-  return eb(n.applicationId, n.allowFetch), i.useMemo(() => eT({
+  return eb(n.applicationId, n.allowFetch), i.useMemo(() => eS({
     permissionContext: a,
     text: t.text,
     allowApplicationCommands: o,
@@ -635,7 +635,7 @@ function eS(e, t, n) {
   }), [a, t.text, t.builtIns, o, n.scoreMethod, n.allowEmptySections, n.sortOptions, n.allowApplicationState, n.applicationId, n.installOnDemand, s, l, c, u])
 }
 
-function eT(e) {
+function eS(e) {
   var t, n, r, i, a, s, l;
   let {
     permissionContext: c,
@@ -649,7 +649,7 @@ function eT(e) {
     allowEmptySections: y = false,
     scoreMethod: O = A.p.NONE,
     sortOptions: I = eI,
-    installOnDemand: T = false
+    installOnDemand: S = false
   } = e, {
     commandTypes: C
   } = c, N = null == p ? true : p.toLowerCase(), R = null == N ? true : N.split(" "), P = m === A.D.ONLY_TEXT, D = m !== A.D.DENY ? (0, v.Kh)(C, true, P) : [], x = [], j = {
@@ -658,7 +658,7 @@ function eT(e) {
     splitQuery: R,
     allowEmptySections: y,
     scoreMethod: O,
-    installOnDemand: T
+    installOnDemand: S
   }, k = null != (i = null == (t = u.result) ? true : t.sections) ? i : {}, U = null != (a = null == (n = f.result) ? true : n.sections) ? a : {}, G = new Set;
   if (g) {
     if (c.hasBaseAccessPermissions)
@@ -734,8 +734,8 @@ function eT(e) {
         if (n !== a) return n - a
       }
       if (I.commands.useFrecency) {
-        let r = S.ZP.getScoreWithoutLoadingLatest(n, e),
-          i = S.ZP.getScoreWithoutLoadingLatest(n, t);
+        let r = T.ZP.getScoreWithoutLoadingLatest(n, e),
+          i = T.ZP.getScoreWithoutLoadingLatest(n, t);
         if (r !== i) return i - r
       }
       return ek(e.displayName, t.displayName)

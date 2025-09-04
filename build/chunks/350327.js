@@ -8,14 +8,14 @@ require.d(exports, {
   Ls: () => g,
   Xz: () => A,
   Z: () => m,
-  c_: () => T,
+  c_: () => S,
   f4: () => C,
   g_: () => y,
   ho: () => b,
   pG: () => E,
   rf: () => N,
   x3: () => R,
-  z5: () => S
+  z5: () => T
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -149,14 +149,14 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   i.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_THEME_COLORS",
     themeColors: e
   })
 }
 
-function T(e) {
+function S(e) {
   i.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR",
     avatar: e

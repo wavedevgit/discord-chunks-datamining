@@ -76,11 +76,11 @@ function O(e) {
   }, n);
   switch (t.content_type) {
     case s.s.TOP_ARTIST:
-      return (0, r.jsx)(S, m({
+      return (0, r.jsx)(T, m({
         entry: t
       }, i));
     case s.s.TOP_GAME:
-      return (0, r.jsx)(T, m({
+      return (0, r.jsx)(S, m({
         entry: t
       }, i));
     case s.s.PLAYED_GAME:
@@ -130,7 +130,7 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   var {
     entry: t,
     children: n
@@ -146,7 +146,7 @@ function S(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   var {
     entry: t,
     children: n

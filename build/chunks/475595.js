@@ -7,7 +7,7 @@ require.d(exports, {
   Q2: () => b,
   Rt: () => h,
   eC: () => p,
-  f0: () => S,
+  f0: () => T,
   fh: () => g,
   nK: () => v,
   sN: () => I
@@ -172,7 +172,7 @@ function I(e) {
   return null == n ? e : (null != t.format && n.searchParams.append("format", t.format), null != t.width && n.searchParams.append("width", "".concat(O(t.width))), null != t.height && n.searchParams.append("height", "".concat(O(t.height))), n.toString())
 }
 
-function S(e, t) {
+function T(e, t) {
   if (e.startsWith("blob:")) return e;
   let n = i.Z.toURLSafe(e);
   return null == n ? null : (n.searchParams.append("format", "webp"), null != t && (n.searchParams.append("width", "".concat(O(t.width))), n.searchParams.append("height", "".concat(O(t.height)))), n.toString())

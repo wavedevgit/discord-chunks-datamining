@@ -89,7 +89,7 @@ function j(e) {
       }), (0, n.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        children: (0, u.Nc)(t)
+        children: (0, u.A5)(t)
       })]
     })]
   })

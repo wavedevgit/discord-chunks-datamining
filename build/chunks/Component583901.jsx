@@ -2,7 +2,7 @@
 /** chunk id: 583901, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  DR: () => S,
+  DR: () => T,
   S4: () => v,
   bD: () => I,
   oK: () => O
@@ -162,7 +162,7 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     preset: t,
     isSelected: n,

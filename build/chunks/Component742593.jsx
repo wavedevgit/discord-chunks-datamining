@@ -2,8 +2,8 @@
 /** chunk id: 742593, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  HZ: () => S,
-  Rf: () => T,
+  HZ: () => T,
+  Rf: () => S,
   ZP: () => A
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
@@ -64,7 +64,7 @@ function I(e, t) {
   }), e
 }
 
-function S(e) {
+function T(e) {
   let {
     className: t,
     creator: n,
@@ -73,17 +73,17 @@ function S(e) {
     guildEvent: m,
     eventPreview: y,
     recurrenceId: v
-  } = e, S = (0, f.Z)(i, m.id, v), T = null != m ? m : y, A = (0, o.e7)([l.ZP], () => l.ZP.getNick(i, null == n ? true : n.id), [i, n]);
-  v = null == T || null != v ? v : (0, p.DK)(T);
+  } = e, T = (0, f.Z)(i, m.id, v), S = null != m ? m : y, A = (0, o.e7)([l.ZP], () => l.ZP.getNick(i, null == n ? true : n.id), [i, n]);
+  v = null == S || null != v ? v : (0, p.DK)(S);
   let {
     startTime: C
-  } = (0, d.ZP)(null != m ? m : y, v), N = (0, u.Z)(v, m.id), R = (null == T ? true : T.scheduled_start_time) != null ? (0, p.lh)(N, C, new Date(T.scheduled_start_time)) : null;
-  if (null == T) return null;
+  } = (0, d.ZP)(null != m ? m : y, v), N = (0, u.Z)(v, m.id), R = (null == S ? true : S.scheduled_start_time) != null ? (0, p.lh)(N, C, new Date(S.scheduled_start_time)) : null;
+  if (null == S) return null;
   let {
     entity_type: P,
     status: w,
     recurrence_rule: D
-  } = T;
+  } = S;
   return (0, r.jsxs)("div", {
     className: a()(b.statusContainer, t),
     children: [(0, r.jsx)(g.z, {
@@ -108,7 +108,7 @@ function S(e) {
       }))
     }), (0, r.jsx)(s.ua7, {
       text: E.intl.formatToPlainString(E.t["+DLsDw"], {
-        count: S
+        count: T
       }),
       children: e => (0, r.jsxs)("div", I(O({
         className: b.rsvpCount
@@ -120,14 +120,14 @@ function S(e) {
         }), (0, r.jsx)(s.Text, {
           color: "header-secondary",
           variant: "text-sm/normal",
-          children: S
+          children: T
         })]
       }))
     })]
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     headerVariant: t = "heading-lg/medium",
     descriptionClassName: n,
@@ -189,7 +189,7 @@ function A(e) {
         source: s,
         className: b.thumbnail
       })
-    }) : null, (0, r.jsx)(S, {
+    }) : null, (0, r.jsx)(T, {
       className: b.eventInfoStatusContainer,
       creator: i,
       guildId: c,
@@ -197,7 +197,7 @@ function A(e) {
       guildEvent: d,
       eventPreview: f,
       recurrenceId: _
-    }), (0, r.jsx)(T, {
+    }), (0, r.jsx)(S, {
       name: a,
       description: o,
       headerVariant: t,

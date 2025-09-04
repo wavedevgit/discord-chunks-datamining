@@ -28,10 +28,10 @@ function O(e) {
     message: t,
     channel: a,
     compact: O
-  } = e, v = (0, s.Wu)([_.Z], () => Array.from(_.Z.getAllGuildStickers().values()).flat()).slice(0, 20), [I, S] = i.useState(null);
+  } = e, v = (0, s.Wu)([_.Z], () => Array.from(_.Z.getAllGuildStickers().values()).flat()).slice(0, 20), [I, T] = i.useState(null);
   return (i.useEffect(() => {
     let e = setInterval(() => {
-      v.length > 0 && S(v[Math.floor(Math.random() * v.length)])
+      v.length > 0 && T(v[Math.floor(Math.random() * v.length)])
     }, 500);
     return () => clearInterval(e)
   }, [v]), null == a.guild_id) ? null : (0, r.jsxs)("div", {

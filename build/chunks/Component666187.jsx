@@ -2,7 +2,7 @@
 /** chunk id: 666187, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  L: () => S
+  L: () => T
 }), require("./539854.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -32,7 +32,7 @@ let b = (0, Chunk772848.Z)(),
   O = (0, Chunk772848.Z)(),
   v = 10,
   I = 7.23;
-class S extends(r = Chunk647438.Component) {
+class T extends(r = Chunk647438.Component) {
   getPaddingRight() {
     let {
       maxLength: e,
@@ -127,8 +127,8 @@ class S extends(r = Chunk647438.Component) {
       resizeable: b,
       className: v,
       id: I,
-      rows: S,
-      flex: T,
+      rows: T,
+      flex: S,
       autosize: A,
       required: C,
       onInvalid: N,
@@ -136,11 +136,11 @@ class S extends(r = Chunk647438.Component) {
     } = this.props, P = A ? Chunk639317.g : "textarea", w = this.hasError(), D = null != (t = this.props["aria-labelledby"]) ? exports : null == (e = this.context) ? true : module.titleId, x = this.getAriaDescribedBy();
     return (0, Chunk951288.jsxs)("div", {
       className: s()(Chunk979712.inputWrapper, {
-        [Chunk8542.flex]: T
+        [Chunk8542.flex]: S
       }),
       children: [(0, Chunk951288.jsxs)("div", {
         className: s()(Chunk8542.inputMaxLength, {
-          [Chunk8542.flex]: T
+          [Chunk8542.flex]: S
         }),
         children: [(0, Chunk951288.jsx)(Chunk84735.t, {
           children: (0, Chunk951288.jsx)(P, {
@@ -170,7 +170,7 @@ class S extends(r = Chunk647438.Component) {
             onFocus: this.onFocus,
             onKeyDown: this.onKeyDown,
             onInvalid: N,
-            rows: S,
+            rows: T,
             ref: R
           })
         }), null != Chunk772848 && (0, Chunk951288.jsx)(Chunk766646.n, {
@@ -227,7 +227,7 @@ class S extends(r = Chunk647438.Component) {
     }
   }
 }
-E(S, "contextType", Chunk15127.q3), E(S, "defaultProps", {
+E(T, "contextType", Chunk15127.q3), E(T, "defaultProps", {
   name: "",
   disabled: false,
   placeholder: "",

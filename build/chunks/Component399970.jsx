@@ -42,10 +42,10 @@ function b(e) {
     authorizedApplicationId: _.Z.testModeApplicationId,
     authorizationError: _.Z.error,
     authorizing: _.Z.isFetchingAuthorization
-  })), [O, v] = i.useState(null != u ? u : ""), [I, S] = i.useState("8080"), [T, A] = i.useState("localhost"), C = (0, f.Dt)(), N = g.test(O);
+  })), [O, v] = i.useState(null != u ? u : ""), [I, T] = i.useState("8080"), [S, A] = i.useState("localhost"), C = (0, f.Dt)(), N = g.test(O);
   async function R() {
     c.q$();
-    let e = E(T, I, O);
+    let e = E(S, I, O);
     null != await c.Wt(O, e) && t()
   }
 
@@ -69,14 +69,14 @@ function b(e) {
   }
 
   function L() {
-    return "localhost" !== T ? null : (0, r.jsx)(s.xJW, {
+    return "localhost" !== S ? null : (0, r.jsx)(s.xJW, {
       className: h.inputWrapper,
       title: p.intl.string(p.t.fF4zxs),
       required: true,
       children: (0, r.jsx)(s.oil, {
         value: I,
         maxLength: 5,
-        onChange: e => S(e),
+        onChange: e => T(e),
         disabled: y
       })
     })
@@ -128,7 +128,7 @@ function b(e) {
             title: p.intl.string(p.t["/GTqXF"]),
             children: (0, r.jsx)(s.q4e, {
               isDisabled: !N || "" === O,
-              value: T,
+              value: S,
               options: [{
                 value: "localhost",
                 label: p.intl.string(p.t["+Y9Y6u"]),
@@ -144,7 +144,7 @@ function b(e) {
           }), L(), (0, r.jsx)(o.zx, {
             submitting: y,
             type: "submit",
-            disabled: !N || 0 === O.length || "localhost" === T && 0 === I.length,
+            disabled: !N || 0 === O.length || "localhost" === S && 0 === I.length,
             color: j ? o.zx.Colors.RED : o.zx.Colors.GREEN,
             children: j ? p.intl.string(p.t.d6TR3N) : p.intl.string(p.t.qwuK5O)
           })]

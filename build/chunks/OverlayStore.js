@@ -58,7 +58,7 @@ function y(e, t) {
 let O = "migrated",
   v = .02,
   I = .01,
-  S = {
+  T = {
     [Chunk981631.Odu.GUILDS]: {
       resizeX: false,
       resizeY: true,
@@ -376,7 +376,7 @@ let O = "migrated",
     }
   };
 
-function T(e) {
+function S(e) {
   let {
     layoutId: t,
     widgets: n,
@@ -567,7 +567,7 @@ function F(e) {
 }
 
 function V(e) {
-  let t = S[e];
+  let t = T[e];
   if (null != t) return t.defaultSettings
 }
 class H extends(a = Chunk442837.ZP.PersistedStore) {
@@ -575,14 +575,14 @@ class H extends(a = Chunk442837.ZP.PersistedStore) {
     null != e && null != e.layouts && null != e.widgets ? (r = Z(e.layouts), i = F(e.widgets)) : (r = {}, i = {});
     let t = false,
       n = [];
-    s().forEach(S, (e, t) => {
+    s().forEach(T, (e, t) => {
       "REQUIRED" === e.layoutPolicy && n.push(t)
     }), s().forEach(r, (e, a) => {
       let o = this.getWidgetsForLayout(a),
         s = false;
       for (let r of n) {
         let n = o.find(e => e.type === r);
-        if (null != n || S[r].version !== e.version) continue;
+        if (null != n || T[r].version !== e.version) continue;
         s = t = true;
         let c = (0, l.Z)(),
           u = V(r);
@@ -647,7 +647,7 @@ class H extends(a = Chunk442837.ZP.PersistedStore) {
     }), n
   }
   getWidgetConfig(e) {
-    return S[e]
+    return T[e]
   }
   getWidgetDefaultSettings(e) {
     return V(e)
@@ -657,7 +657,7 @@ class H extends(a = Chunk442837.ZP.PersistedStore) {
     return null != t ? t.type : ""
   }
   getRegisteredWidgets() {
-    return S
+    return T
   }
   getDefaultLayout(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 0,
@@ -792,7 +792,7 @@ g(H, "displayName", "LayoutStore"), g(H, "persistKey", "LayoutStore"), g(H, "mig
   }
 }]);
 let Y = new H(Chunk570140.Z, {
-  LAYOUT_CREATE: T,
+  LAYOUT_CREATE: S,
   LAYOUT_SET_PINNED: x,
   LAYOUT_UPDATE_WIDGET: N,
   LAYOUT_SET_TOP_WIDGET: R,

@@ -124,20 +124,20 @@ let x = Chunk647438.forwardRef(function(e, t) {
     onChangeStart: eO,
     onChangeEnd: ev,
     updateState: ey
-  }), eS = i.useCallback((e, t) => {
+  }), eT = i.useCallback((e, t) => {
     let n = p.tM(eI, e, x.id),
       r = p.lk(e, x.guild_id, x.id, n, t);
     return {
       values: n,
       results: r
     }
-  }, [x.guild_id, x.id, eI]), eT = i.useCallback(() => {
+  }, [x.guild_id, x.id, eI]), eS = i.useCallback(() => {
     let e, t = b.bN.getNodesOfType(eI, ["gameMentionInput"]),
       n = null != t ? [...t] : null,
       r = et ? c.Z.getActiveCommand(x.id) : null,
       i = false;
     if (null != r && null != r.options) {
-      let t = eS(r, false);
+      let t = eT(r, false);
       e = t.values;
       let n = p.cu(eI).filter(e => !t.results[e].success).map(e => {
         var t;
@@ -169,8 +169,8 @@ let x = Chunk647438.forwardRef(function(e, t) {
       mode: "raw",
       ignoreTrailingEmptyNodes: true
     }), r, e)
-  }, [x.id, eI, X, eS, et]);
-  (0, v.Z)(t, eI, x, eT), (0, T.Z)(eI, eh, V);
+  }, [x.id, eI, X, eT, et]);
+  (0, v.Z)(t, eI, x, eS), (0, S.Z)(eI, eh, V);
   let {
     handleKeyDown: eA,
     handleKeyUp: eC
@@ -183,13 +183,13 @@ let x = Chunk647438.forwardRef(function(e, t) {
     onTab: z,
     onEnter: q,
     allowNewLines: ea,
-    submit: eT,
+    submit: eS,
     hideAutocomplete: J,
     moveSelection: $
   }), {
     handlePaste: eN,
     handleGlobalPaste: eR
-  } = (0, S.Z)(eI, eb, F), eP = i.useCallback(e => {
+  } = (0, T.Z)(eI, eb, F), eP = i.useCallback(e => {
     null == Q || Q()
   }, [Q]), ew = i.useCallback(e => {
     e !== em.current ? eE.current && (null == Z || Z(null, (0, g.sk)(e, {
@@ -204,10 +204,10 @@ let x = Chunk647438.forwardRef(function(e, t) {
     let e = () => {
       var e;
       let t = null != (e = c.Z.getActiveCommand(x.id)) ? e : null;
-      null !== t && null != t.options && eS(t, true)
+      null !== t && null != t.options && eT(t, true)
     };
     return u.Z.addChangeListener(e), () => u.Z.removeChangeListener(e)
-  }, [x, eI, eS]);
+  }, [x, eI, eT]);
   let eD = i.useCallback((e, t) => (0, y.Z)(e, t), []),
     ex = i.useCallback(e => {
       let t = (0, N.Z)(eI, e, x.id);

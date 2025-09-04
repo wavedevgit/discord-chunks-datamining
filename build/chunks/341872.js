@@ -57,17 +57,17 @@ function d(e, t, n) {
     I = (0, c.p)(n, {
       isDisabled: 0 !== t.collection.size
     }),
-    S = (0, a.z)(e, {
+    T = (0, a.z)(e, {
       labelable: true
     }),
-    T = (0, o.d)(S, {
+    S = (0, o.d)(T, {
       role: "grid",
       id: O,
       "aria-multiselectable": "multiple" === t.selectionManager.selectionMode ? "true" : true
     }, 0 === t.collection.size ? {
       tabIndex: I ? false : 0
     } : y, v);
-  return d && (T["aria-rowcount"] = t.collection.size, T["aria-colcount"] = 1), (0, l.B)({}, t), {
-    gridProps: T
+  return d && (S["aria-rowcount"] = t.collection.size, S["aria-colcount"] = 1), (0, l.B)({}, t), {
+    gridProps: S
   }
 }

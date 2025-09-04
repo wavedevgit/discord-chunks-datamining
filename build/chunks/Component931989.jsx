@@ -30,14 +30,14 @@ function f(e) {
     dataBinding: b,
     touchScrollEnabled: y = true,
     dynamicDataBinding: O
-  } = e, v = i.useContext(l.Sfi), I = _(), [S, T] = i.useState(true), A = i.useRef(null), {
+  } = e, v = i.useContext(l.Sfi), I = _(), [T, S] = i.useState(true), A = i.useRef(null), {
     rive: C,
     RiveComponent: N
   } = (0, o.useRive)({
     eventTarget: null == f ? true : f.current,
     buffer: t,
     autoplay: n,
-    stateMachines: S,
+    stateMachines: T,
     artboard: h,
     useOffscreenRenderer: true,
     layout: new o.Layout({
@@ -75,13 +75,13 @@ function f(e) {
       C.resizeDrawingSurfaceToCanvas()
     }, 100))
   }, [C, s]), i.useEffect(() => {
-    null != C && null == S && (T(C.stateMachineNames), C.reset({
+    null != C && null == T && (S(C.stateMachineNames), C.reset({
       stateMachines: C.stateMachineNames,
       autoplay: n,
       artboard: h,
       autoBind: true
     }), C.setupRiveListeners())
-  }, [C, n, S, h]);
+  }, [C, n, T, h]);
   let R = i.useRef(0);
   i.useEffect(() => {
     if (null == C) return;
@@ -146,12 +146,12 @@ function p(e) {
           null == (i = t.viewModelInstance) || null == (r = i.color(d)) || r.rgba(y, O, v, 255 * I);
           break;
         case "number":
-          let S = null == (a = t.viewModelInstance) ? true : a.number(d);
-          null != S && (S.value = b);
+          let T = null == (a = t.viewModelInstance) ? true : a.number(d);
+          null != T && (T.value = b);
           break;
         case "boolean":
-          let T = null == (o = t.viewModelInstance) ? true : o.boolean(d);
-          null != T && (T.value = b);
+          let S = null == (o = t.viewModelInstance) ? true : o.boolean(d);
+          null != S && (S.value = b);
           break;
         case "trigger":
           null != b && ("boolean" == typeof b ? b : 0 !== b) && (null == (s = m.current) ? true : s[d]) !== b && (null == (c = t.viewModelInstance) || null == (l = c.trigger(d)) || l.trigger());

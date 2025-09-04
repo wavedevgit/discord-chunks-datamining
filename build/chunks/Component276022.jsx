@@ -27,7 +27,7 @@ function g(e) {
     guildId: b,
     context: y,
     onItemClick: O
-  } = e, v = null != (t = null == E ? true : E.id) ? t : null == g ? true : g.id, I = _.Z.getGuild(b), S = (0, a.e7)([p.Z], () => null != I ? p.Z.can(h.Plq.MANAGE_GUILD, I) : null), T = true, A = true, C = (0, c.LD)(b, A), N = (0, c.PL)(T, A), R = (0, a.e7)([f.Z], () => null != f.Z.getNewestTokenForApplication(v)), {
+  } = e, v = null != (t = null == E ? true : E.id) ? t : null == g ? true : g.id, I = _.Z.getGuild(b), T = (0, a.e7)([p.Z], () => null != I ? p.Z.can(h.Plq.MANAGE_GUILD, I) : null), S = true, A = true, C = (0, c.LD)(b, A), N = (0, c.PL)(S, A), R = (0, a.e7)([f.Z], () => null != f.Z.getNewestTokenForApplication(v)), {
     isUserApp: P,
     isGuildApp: w
   } = i.useMemo(() => {
@@ -64,7 +64,7 @@ function g(e) {
     }, [E, O, g]);
   if (y === h.IlC.POPOUT) return null;
   let L = [];
-  return w && S && L.push((0, r.jsx)(o.sNh, {
+  return w && T && L.push((0, r.jsx)(o.sNh, {
     id: "manage-server-integration",
     label: m.intl.string(m.t.IuSJT0),
     action: D

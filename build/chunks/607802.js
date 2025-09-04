@@ -16,7 +16,7 @@ require.d(exports, {
   WU: () => H,
   X$: () => Q,
   X3: () => q,
-  b7: () => T,
+  b7: () => S,
   cl: () => Z,
   g9: () => M,
   i3: () => G,
@@ -25,7 +25,7 @@ require.d(exports, {
   nI: () => j,
   nl: () => X,
   qc: () => k,
-  s5: () => S,
+  s5: () => T,
   zH: () => C
 }), require("./539854.js"), require("./997841.js"), require("./35282.js"), require("./388685.js"), require("./781311.js"), require("./413496.js"), require("./433524.js"), require("./804061.js"), require("./704826.js");
 var Chunk392711 = require("./392711.js"),
@@ -87,7 +87,7 @@ function I(e) {
   }
 }
 
-function S(e) {
+function T(e) {
   switch (e.type) {
     case b.aib.GUILD_CHANNEL:
     case b.aib.GUILD:
@@ -104,7 +104,7 @@ function S(e) {
   }
 }
 
-function T(e) {
+function S(e) {
   return e.type === b.aib.GUILD || e.type === b.aib.GUILD_CHANNEL || e.type === b.aib.THREAD
 }
 
@@ -378,7 +378,7 @@ function K() {
 }
 
 function z(e) {
-  if (T(e)) returntrue;
+  if (S(e)) returntrue;
   {
     let t = (0, m.ad)({
       location: "isChannelFilterSupported"

@@ -250,7 +250,7 @@ function ei(e) {
       let n = Z[e];
       if (null != n) {
         let e = H[n.action];
-        (null == e ? true : e.isPressed) === true && T.nextTick(() => e.onTrigger(false, n))
+        (null == e ? true : e.isPressed) === true && S.nextTick(() => e.onTrigger(false, n))
       }
       t.reset(), B[e] = null
     }

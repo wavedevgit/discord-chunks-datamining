@@ -29,14 +29,14 @@ let m = () => {
     premiumSubscription: b
   } = (0, Chunk594135.a)(), [y, O] = Chunk647438.useState(false), [v, I] = Chunk647438.useState(false);
   if (null == require) return null;
-  let S = async () => {
+  let T = async () => {
     O(true), I(false);
     try {
       await m(), Chunk120356()
     } catch (e) {
       I(true), O(false)
     }
-  }, T = [{
+  }, S = [{
     text: Chunk388032.intl.string(Chunk388032.t.h9tkAA),
     onClick: () => Chunk120356(),
     variant: "secondary"
@@ -44,7 +44,7 @@ let m = () => {
     text: "".concat(Chunk388032.intl.format(Chunk388032.t.yxFzdH, {
       planPremiumType: Chunk74538.ZP.getDisplayPremiumType("".concat(exports))
     })),
-    onClick: S,
+    onClick: T,
     disabled: y,
     variant: "critical-primary",
     loading: y
@@ -66,7 +66,7 @@ let m = () => {
     }) : Chunk388032.intl.format(Chunk388032.t["+y0Tj4"], {
       renewalDate: require.subscriptionPeriodStart
     }),
-    actions: T,
+    actions: S,
     onClose: async () => Chunk120356(),
     children: [(0, Chunk951288.jsxs)(Chunk811334.aO, {
       isPremiumRebrand: true,

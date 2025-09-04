@@ -31,8 +31,8 @@ function g(e) {
     shouldValidateSelectedSound: O,
     shouldShowUpsell: v = true,
     gridNotice: I,
-    inExpressionPicker: S,
-    soundButtonOverlay: T,
+    inExpressionPicker: T,
+    soundButtonOverlay: S,
     listPadding: A,
     renderHeader: C,
     defaultSoundsOnly: N
@@ -40,13 +40,13 @@ function g(e) {
     analyticsLocations: P
   } = (0, u.ZP)(c.Z.SOUNDBOARD_POPOUT);
   return i.useEffect(() => {
-    _.w(), f.DZ.loadIfNecessary(), S || (0, d.ql)("")
-  }, [S]), (0, r.jsx)(u.Gt, {
+    _.w(), f.DZ.loadIfNecessary(), T || (0, d.ql)("")
+  }, [T]), (0, r.jsx)(u.Gt, {
     value: P,
     children: (0, r.jsx)(l.VqE, {
       className: o()(m.picker, {
         [m.fetching]: R,
-        [m.inExpressionPicker]: S
+        [m.inExpressionPicker]: T
       }),
       children: R ? (0, r.jsx)(l.$jN, {}) : (0, r.jsx)(h.Z, {
         guildId: t,
@@ -58,11 +58,11 @@ function g(e) {
         suppressPlaySound: y,
         shouldShowUpsell: v,
         gridNotice: I,
-        soundButtonOverlay: T,
+        soundButtonOverlay: S,
         listPadding: A,
         renderHeader: C,
         defaultSoundsOnly: N,
-        inExpressionPicker: S,
+        inExpressionPicker: T,
         analyticsSource: b
       })
     })

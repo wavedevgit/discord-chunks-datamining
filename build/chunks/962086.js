@@ -5,7 +5,7 @@ require.d(exports, {
   Zm: () => I,
   aq: () => R,
   iD: () => v,
-  mL: () => S,
+  mL: () => T,
   og: () => N,
   zS: () => C
 }), require("./388685.js");
@@ -73,7 +73,7 @@ function v(e, t) {
     type: "IMPERSONATE_UPDATE",
     guildId: e,
     data: t
-  }), T(e)
+  }), S(e)
 }
 
 function I(e, t) {
@@ -86,17 +86,17 @@ function I(e, t) {
     type: "IMPERSONATE_UPDATE",
     guildId: e,
     data: b({}, n, t)
-  }), T(e))
+  }), S(e))
 }
 
-function S(e) {
+function T(e) {
   r.Z.dispatch({
     type: "IMPERSONATE_STOP",
     guildId: e
   })
 }
 
-function T(e) {
+function S(e) {
   let t = d.Z.getChannelId(e),
     n = o.Z.getChannel(t);
   if (!(null != t && (0, g.AB)(t)) && !u.Z.can(m.Plq.VIEW_CHANNEL, n)) {

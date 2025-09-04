@@ -31,8 +31,8 @@ function p(e) {
     pendingLegacyUsernameDisabled: O,
     pendingBadges: v,
     pendingDisplayNameStyles: I,
-    isTryItOutFlow: S,
-    hideBioSection: T,
+    isTryItOutFlow: T,
+    hideBioSection: S,
     shouldOpenBadgeTooltip: A
   } = e, C = (0, i.e7)([c.ZP], () => null == h ? null : c.ZP.getMember(h.id, n.id)), N = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), R = null == p || null == (t = p.getPreviewBio(b)) ? true : t.value, P = null != y ? y : null == p ? true : p.pronouns, w = (0, d.Ly)({
     pendingNickname: g,
@@ -54,7 +54,7 @@ function p(e) {
       nickname: w,
       displayNameStyles: true !== I ? I : n.displayNameStyles,
       pronouns: P,
-      isTryItOut: S,
+      isTryItOut: T,
       tags: (0, r.jsx)(a.Z, {
         displayProfile: p,
         themeType: f.l.POPOUT,
@@ -62,7 +62,7 @@ function p(e) {
         pendingBadges: v,
         shouldOpenBadgeTooltip: A
       })
-    }), !T && null != R && "" !== R && (0, r.jsx)(s.Z, {
+    }), !S && null != R && "" !== R && (0, r.jsx)(s.Z, {
       user: n,
       bio: R,
       hidePersonalInformation: N,

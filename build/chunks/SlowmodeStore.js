@@ -108,12 +108,12 @@ function I(e) {
   })
 }
 
-function S() {
+function T() {
   [0, 1].forEach(e => {
     Object.keys(p[e]).forEach(t => p[e][t].timer.stop()), p[e] = {}
   })
 }
-class T extends(r = Chunk442837.ZP.Store) {
+class S extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z)
   }
@@ -125,13 +125,13 @@ class T extends(r = Chunk442837.ZP.Store) {
     return this.getSlowmodeCooldownGuess(e.id, t) > 0 && e.rateLimitPerUser > 0
   }
 }
-d(T, "displayName", "SlowmodeStore");
-let A = new T(Chunk570140.Z, {
+d(S, "displayName", "SlowmodeStore");
+let A = new S(Chunk570140.Z, {
   SLOWMODE_RESET_COOLDOWN: O,
   SLOWMODE_SET_COOLDOWN: v,
   UPLOAD_START: b,
   UPLOAD_FAIL: y,
   UPLOAD_CANCEL_REQUEST: y,
   CHANNEL_UPDATES: I,
-  LOGOUT: S
+  LOGOUT: T
 })

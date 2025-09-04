@@ -74,7 +74,7 @@ function g(e, t) {
         steamSku: r
       }
     }, [O, v]),
-    S = (0, r.useMemo)(() => {
+    T = (0, r.useMemo)(() => {
       if (null == I) return null;
       let {
         app: n,
@@ -109,8 +109,8 @@ function g(e, t) {
       }) : null
     }, [I, e, g, t]);
   return (0, r.useEffect)(() => {
-    null != S && d.m.trackExposure({
+    null != T && d.m.trackExposure({
       location: "GameStoreLink"
     })
-  }, [S]), l ? S : null
+  }, [T]), l ? T : null
 }

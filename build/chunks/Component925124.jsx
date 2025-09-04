@@ -57,7 +57,7 @@ let T = async () => {
   } catch (e) {} finally {
     await (0, u.Tf)()
   }
-}, w = async () => {
+}, I = async () => {
   try {
     let {
       body: e
@@ -72,7 +72,7 @@ let T = async () => {
       discount: []
     }
   }
-}, k = async () => {
+}, w = async () => {
   try {
     await Chunk544891.tn.del({
       url: Chunk981631.ANM.USER_OFFERS,
@@ -81,7 +81,7 @@ let T = async () => {
   } catch (e) {} finally {
     await Chunk431.Z.forceReset(), await (0, Chunk937579.Tf)()
   }
-}, I = async e => {
+}, k = async e => {
   await o.tn.post({
     url: y.ANM.CREATE_REVERSE_TRIAL,
     body: {
@@ -109,20 +109,20 @@ function R(e) {
   }, [_]);
   let {
     id: S,
-    expires_at: w,
-    redeemed_at: k,
-    trial_id: I,
+    expires_at: I,
+    redeemed_at: w,
+    trial_id: k,
     subscription_trial: R,
     referrer: Z
   } = m, A = null != (n = null == (t = x.find(e => {
     let {
       value: t
     } = e;
-    return t === I
+    return t === k
   })) ? true : t.label) ? n : "Unknown";
   null != Z && (A = "".concat(A, " from @").concat(Z.username));
-  let D = null != w,
-    L = null != w && new Date(w).getTime() < Date.now(),
+  let D = null != I,
+    L = null != I && new Date(I).getTime() < Date.now(),
     M = (null == R ? true : R.sku_id) === C.Si.TIER_0,
     F = async () => {
       N(true), D ? await U({
@@ -210,12 +210,12 @@ function R(e) {
     }), (0, a.jsxs)(d.P3F, {
       className: i()(E.row, E.idRow),
       onClick: () => {
-        (0, v.JG)(I, () => g(true))
+        (0, v.JG)(k, () => g(true))
       },
       children: [(0, a.jsxs)(d.Text, {
         variant: "eyebrow",
         color: "always-white",
-        children: ["Trial: ", I]
+        children: ["Trial: ", k]
       }), j ? (0, a.jsx)(d.dz2, {
         size: "md",
         color: "currentColor",
@@ -244,7 +244,7 @@ function R(e) {
         children: "Expires:"
       }), (0, a.jsx)("input", {
         type: "date",
-        value: null != w ? w.substring(0, 10) : "",
+        value: null != I ? I.substring(0, 10) : "",
         onChange: e => U({
           expiresAt: e.target.value
         })
@@ -275,7 +275,7 @@ function R(e) {
           color: "Acked" === z ? true : "always-white",
           children: z
         })
-      }), null != k && (0, a.jsx)("div", {
+      }), null != w && (0, a.jsx)("div", {
         className: i()(E.badge, E.redeemed),
         children: (0, a.jsx)(d.Text, {
           variant: "eyebrow",
@@ -328,8 +328,8 @@ function Z(e) {
       value: t
     } = e;
     return t === O
-  })) ? true : t.label) ? n : "Unknown", w = null != C, k = null != C && new Date(C).getTime() < Date.now(), I = async () => {
-    b(true), w ? await R({
+  })) ? true : t.label) ? n : "Unknown", I = null != C, w = null != C && new Date(C).getTime() < Date.now(), k = async () => {
+    b(true), I ? await R({
       expiresAt: null
     }) : await (0, u.ab)(true, l), c(), b(false)
   }, R = async e => {
@@ -368,7 +368,7 @@ function Z(e) {
     }
   }, [m, h]);
   let Z = "Active";
-  return k && (Z = "Expired"), w && (Z = "Acked"), (0, a.jsxs)("div", {
+  return w && (Z = "Expired"), I && (Z = "Acked"), (0, a.jsxs)("div", {
     className: i()(E.card, E.discount),
     children: [(0, a.jsxs)("div", {
       className: i()(E.row, E.nameRow),
@@ -444,10 +444,10 @@ function Z(e) {
     }), (0, a.jsxs)("div", {
       className: E.badgeContainer,
       children: [(0, a.jsx)(d.P3F, {
-        onClick: I,
+        onClick: k,
         className: i()(E.badge, E.clickable, {
-          [E.acked]: w,
-          [E.expired]: k
+          [E.acked]: I,
+          [E.expired]: w
         }),
         children: (0, a.jsx)(d.Text, {
           variant: "eyebrow",
@@ -472,16 +472,16 @@ function Z(e) {
 }
 
 function A() {
-  let [e, t] = Chunk647438.useState([]), [n, l] = Chunk647438.useState([]), [i, o] = Chunk647438.useState(), [v, b] = Chunk647438.useState(), [C, P] = Chunk647438.useState([]), [A, D] = Chunk647438.useState([]), [L, M] = Chunk647438.useState(true), [F, U] = Chunk647438.useState(10080), [z, B] = Chunk647438.useState([]), {
-    entitlements: G,
+  let [e, t] = Chunk647438.useState([]), [n, l] = Chunk647438.useState([]), [i, o] = Chunk647438.useState(), [v, b] = Chunk647438.useState(), [C, P] = Chunk647438.useState([]), [A, D] = Chunk647438.useState([]), [L, M] = Chunk647438.useState(true), [F, U] = Chunk647438.useState(10080), [z, G] = Chunk647438.useState([]), {
+    entitlements: B,
     deleteFractionalPremium: V,
     refreshEntitlementList: H
   } = (0, Chunk232867.m)();
   Chunk647438.useEffect(() => {
     H()
   }, [H]), Chunk647438.useEffect(() => {
-    B(G.filter(e => e.sourceType === y.kNB.REVERSE_TRIAL && null != e.endsAt && e.endsAt > new Date))
-  }, [G]), Chunk647438.useEffect(() => {
+    G(B.filter(e => e.sourceType === y.kNB.REVERSE_TRIAL && null != e.endsAt && e.endsAt > new Date))
+  }, [B]), Chunk647438.useEffect(() => {
     (0 === module.length || 0 === require.length || L) && T().then(e => {
       let n = Object.keys(e.trial).map(t => ({
           label: t,
@@ -494,7 +494,7 @@ function A() {
       t(n), l(a), null == i && o(n[0].value), null == v && b(a[0].value)
     })
   }, [module, require, i, Chunk572004, L]), Chunk647438.useEffect(() => {
-    L && (M(false), Chunk431.Z.forceReset(), (0, Chunk937579.Tf)(), w().then(e => {
+    L && (M(false), Chunk431.Z.forceReset(), (0, Chunk937579.Tf)(), I().then(e => {
       P(e.trial.sort((e, t) => e.id.localeCompare(t.id))), D(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
     }))
   }, [L]);
@@ -503,10 +503,10 @@ function A() {
   }, K = async () => {
     null != Chunk572004 && (await S(Chunk572004, "discount"), M(true))
   }, X = async () => {
-    await k(), M(true)
+    await w(), M(true)
   }, Y = async () => {
     let e = new Date(Date.now() + 60 * F * 1e3).toISOString();
-    await I(module), H()
+    await k(module), H()
   }, q = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumSubscription()), J = async () => {
     if (false === (0, Chunk219333.W)({
         campaignID: Chunk304426.C

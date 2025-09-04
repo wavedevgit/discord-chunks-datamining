@@ -45,9 +45,9 @@ function m(e) {
   } = e, [g, E] = i.useState(false), b = i.useCallback(() => E(true), []), y = i.useCallback(() => E(false), []), O = (0, o.tP)(t), {
     containerRef: v,
     size: I,
-    height: S
+    height: T
   } = (0, f.h)(), {
-    expansionSpring: T,
+    expansionSpring: S,
     isAnimating: A,
     isExpanded: C,
     toggleExpanded: N
@@ -56,7 +56,7 @@ function m(e) {
       location: n,
       quest: t
     })
-  }), R = null != S ? S : c.U0;
+  }), R = null != T ? T : c.U0;
   return (0, r.jsx)(l.A, {
     questOrQuests: t,
     questContent: n,
@@ -65,7 +65,7 @@ function m(e) {
     sourceQuestContent: m,
     children: e => (0, r.jsx)(a.animated.div, {
       style: {
-        maxHeight: n === s.jn.QUESTS_EMBED ? true : T.to({
+        maxHeight: n === s.jn.QUESTS_EMBED ? true : S.to({
           range: [0, 1],
           output: [c.DJ, R]
         })
@@ -84,7 +84,7 @@ function m(e) {
           location: n,
           quest: t,
           size: I,
-          expansionSpring: T,
+          expansionSpring: S,
           isAnimating: A,
           isExpanded: C,
           contentPosition: h,

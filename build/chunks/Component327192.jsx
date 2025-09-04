@@ -113,8 +113,8 @@ let z = e => {
     className: F.integrationWrapper,
     children: [(0, r.jsxs)("div", {
       className: F.integration,
-      children: [(0, r.jsx)(T.Z, {
-        size: T.Z.Sizes.SMALL,
+      children: [(0, r.jsx)(S.Z, {
+        size: S.Z.Sizes.SMALL,
         guild: a.guild,
         className: F.guildIcon
       }), (0, r.jsxs)("div", {
@@ -147,9 +147,9 @@ function q(e) {
     account: n,
     theme: a,
     locale: o
-  } = e, [s, l] = i.useState(n.friendSync), [_, h] = i.useState(n.visibility), [m, E] = i.useState(n.metadataVisibility), [S, T] = i.useState(n.showActivity), [C, N] = i.useState(null), [R, P] = i.useState(null), [w, x] = i.useState(false), [B, V] = i.useState([]), H = (0, y.rR)(n.type), W = b.Z.get(H);
+  } = e, [s, l] = i.useState(n.friendSync), [_, h] = i.useState(n.visibility), [m, E] = i.useState(n.metadataVisibility), [T, S] = i.useState(n.showActivity), [C, N] = i.useState(null), [R, P] = i.useState(null), [w, x] = i.useState(false), [B, V] = i.useState([]), H = (0, y.rR)(n.type), W = b.Z.get(H);
   i.useEffect(() => {
-    l(n.friendSync), h(n.visibility), E(n.metadataVisibility), T(n.showActivity)
+    l(n.friendSync), h(n.visibility), E(n.metadataVisibility), S(n.showActivity)
   }, [n]);
   let q = {
       inProgressVisibility: C,
@@ -309,7 +309,7 @@ function q(e) {
     })), U.vbS.has(n.type) && (a = (0, r.jsx)(f.j7V, {
       className: F.connectionOptionSwitch,
       hideBorder: true,
-      value: S,
+      value: T,
       onChange: el,
       children: (0, r.jsx)(f.Text, {
         variant: "text-sm/semibold",
@@ -439,7 +439,7 @@ function q(e) {
   }
 
   function el(e) {
-    T(e), p.Z.setShowActivity(n.type, n.id, e)
+    S(e), p.Z.setShowActivity(n.type, n.id, e)
   }
   return i.useEffect(() => {
     X.current = q

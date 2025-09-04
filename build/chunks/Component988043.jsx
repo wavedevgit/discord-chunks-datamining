@@ -28,7 +28,7 @@ function v(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, g = (0, f.c_)(), v = u.h2.useSetting().includes(n), I = (0, c.q)(), S = (0, d.r)(), T = i.useCallback(e => {
+  } = e, g = (0, f.c_)(), v = u.h2.useSetting().includes(n), I = (0, c.q)(), T = (0, d.r)(), S = i.useCallback(e => {
     let r = (0, l.YK)();
     e ? r.delete(n) : r.add(n), u.h2.updateSetting(Array.from(r)), s.default.track(y.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: m.Y.DIRECT_MESSAGES_TOGGLE,
@@ -63,19 +63,19 @@ function v(e) {
         onCancel: t
       })
     },
-    R = S ? O.intl.string(O.t.PMsfcH) : O.intl.string(O.t.RAQUSE);
+    R = T ? O.intl.string(O.t.PMsfcH) : O.intl.string(O.t.RAQUSE);
   return (0, r.jsx)(_.U, {
     setting: E.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_DMS_V2,
     children: n === b.T ? (0, r.jsx)(p.Z, {
       title: R,
-      note: S ? O.intl.string(O.t.XXGmuL) : O.intl.string(O.t.wbYDfX),
+      note: T ? O.intl.string(O.t.XXGmuL) : O.intl.string(O.t.wbYDfX),
       value: !I,
       onChange: C
     }) : (0, r.jsx)(p.Z, {
       title: R,
-      note: g ? O.intl.string(O.t.V0ka0d) : S ? O.intl.string(O.t.F9WY3d) : O.intl.string(O.t.G7c3Xl),
+      note: g ? O.intl.string(O.t.V0ka0d) : T ? O.intl.string(O.t.F9WY3d) : O.intl.string(O.t.G7c3Xl),
       value: !v,
-      onChange: T
+      onChange: S
     })
   })
 }

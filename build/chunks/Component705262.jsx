@@ -227,7 +227,7 @@ let K = Object.freeze({
     } = (0, m.ZP)(h.Z.CLIENT_THEMES_THEME_SELECTOR), [E, b] = (0, l.Wu)([N.Z], () => {
       var e;
       return [N.Z.isPreview, null == (e = N.Z.gradientPreset) ? true : e.id]
-    }), [y, O] = i.useState(false), [v, I] = i.useState(false), S = (0, l.e7)([p.Z], () => p.Z.useReducedMotion), T = R.Mc.useExperiment({
+    }), [y, O] = i.useState(false), [v, I] = i.useState(false), T = (0, l.e7)([p.Z], () => p.Z.useReducedMotion), S = R.Mc.useExperiment({
       location: "GradientSelectors"
     }).enabled;
     i.useEffect(() => {
@@ -271,13 +271,13 @@ let K = Object.freeze({
             onSelect: () => A(e)
           }), (0, r.jsx)(d.Fmz, {
             importData: t,
-            shouldAnimate: !S,
+            shouldAnimate: !T,
             className: G.sparkles
           })]
         })
       };
     return (0, r.jsxs)(r.Fragment, {
-      children: [T && (0, r.jsx)(P.Z, {
+      children: [S && (0, r.jsx)(P.Z, {
         isDisabled: t,
         onSelect: () => {
           (0, g.XO)(g.wh.CUSTOM_THEME, {
@@ -328,7 +328,7 @@ let K = Object.freeze({
       delay: a
     } = i.useContext(z), {
       analyticsLocations: o
-    } = (0, m.ZP)(h.Z.CLIENT_THEMES_THEME_SELECTOR), [s, c, u] = (0, l.Wu)([I.Z, S.ZP, N.Z], () => [I.Z.theme, null == N.Z.gradientPreset && null == T.L1.getSetting().customUserThemeSettings, S.ZP.useSystemTheme === j.KW.ON]), d = e => {
+    } = (0, m.ZP)(h.Z.CLIENT_THEMES_THEME_SELECTOR), [s, c, u] = (0, l.Wu)([I.Z, T.ZP, N.Z], () => [I.Z.theme, null == N.Z.gradientPreset && null == S.L1.getSetting().customUserThemeSettings, T.ZP.useSystemTheme === j.KW.ON]), d = e => {
       (0, C.xs)(), q({
         isPersisted: true,
         analyticsLocations: o,

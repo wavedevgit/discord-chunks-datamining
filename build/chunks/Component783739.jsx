@@ -2,7 +2,7 @@
 /** chunk id: 783739, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,17 +27,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk28616 = require("./28616.js");
 
-function T(e) {
+function S(e) {
   let {
     premiumSubscription: t
-  } = e, n = (0, a.e7)([h.Z], () => h.Z.boostSlots), T = i.useMemo(() => Object.values(n), [n]), A = (0, a.e7)([p.default], () => p.default.getCurrentUser()), C = m.ZP.isPremium(A, I.p9.TIER_2), N = (0, a.e7)([f.Z], () => f.Z.affinities), R = (0, a.e7)([_.ZP], () => _.ZP.getFlattenedGuildIds()), P = N.length > 0 || R.length > 0, w = T.length > 0, D = i.useMemo(() => T.filter(e => null != e.premiumGuildSubscription), [T]), x = D.length > 0, L = T.length > D.length, j = (0, a.e7)([d.Z], () => d.Z.getCurrentUserAppliedBoosts()), {
+  } = e, n = (0, a.e7)([h.Z], () => h.Z.boostSlots), S = i.useMemo(() => Object.values(n), [n]), A = (0, a.e7)([p.default], () => p.default.getCurrentUser()), C = m.ZP.isPremium(A, I.p9.TIER_2), N = (0, a.e7)([f.Z], () => f.Z.affinities), R = (0, a.e7)([_.ZP], () => _.ZP.getFlattenedGuildIds()), P = N.length > 0 || R.length > 0, w = S.length > 0, D = i.useMemo(() => S.filter(e => null != e.premiumGuildSubscription), [S]), x = D.length > 0, L = S.length > D.length, j = (0, a.e7)([d.Z], () => d.Z.getCurrentUserAppliedBoosts()), {
     fractionalState: M
   } = (0, o.Z)({
     forceFetch: true
   }), k = (null == t ? true : t.isPausedOrPausePending) === true && M === I.a$.NONE, U = (null == t ? true : t.isPausedOrPausePending) !== true && M === I.a$.NONE, G = C && M === I.a$.FP_SUB_PAUSED;
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(s.oQ, {
-      className: S.blockedPaymentsWarning
+      className: T.blockedPaymentsWarning
     }), (0, r.jsx)(E.Z, {
       hasGuildBoostSlots: w,
       hasAppliedGuildBoosts: x,
@@ -55,19 +55,19 @@ function T(e) {
       guildBoostSlots: n,
       premiumSubscription: t
     }), (0, r.jsx)(v.Z, {
-      guildBoostSlots: T,
+      guildBoostSlots: S,
       fractionalPremiumState: M
     }), (0, r.jsx)(y.Z, {
       canAddBoosts: x && U,
       canApplyBoosts: L
     }), (0, r.jsx)(u.Z, {
-      className: S.tierComparisonTable,
+      className: T.tierComparisonTable,
       hideHeading: true,
       hideTier0: true
     }), (0, r.jsx)(l.Z, {
-      cardClassName: S.boosterRecognitionCard
+      cardClassName: T.boosterRecognitionCard
     }), (0, r.jsx)(c.Z, {
-      className: S.faq
+      className: T.faq
     })]
   })
 }

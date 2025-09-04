@@ -112,7 +112,7 @@ let G = Chunk442837.ZP.connectStores([Chunk928518.Z, Chunk317381.ZP, Chunk451478
     x = b.Z.getWindowOpen(R.KJ3.ACTIVITY_POPOUT),
     L = s.ZP.getCurrentEmbeddedActivity(),
     j = (0, c.p)(null == L ? true : L.location),
-    M = null != L && !(0, u.Z)(j, S.Z, A.Z),
+    M = null != L && !(0, u.Z)(j, T.Z, A.Z),
     U = s.ZP.getActivityPanelMode(),
     G = M && U === P.Ez.PANEL,
     B = null != L && null != j && (null == (t = f.Z.getSelectedParticipant(j)) ? true : t.type) === w.fO.ACTIVITY,
@@ -142,9 +142,9 @@ let G = Chunk442837.ZP.connectStores([Chunk928518.Z, Chunk317381.ZP, Chunk451478
       }
       return e
     };
-  h = null != L && x || V && M ? null : V || !I || M ? null != L && G ? null != (n = T.Z.pipActivityWindow) ? n : T.Z.pipVideoWindow : null != Z && F ? null != (i = null != (r = T.Z.pipFrameWindow) ? r : T.Z.pipVideoWindow) ? i : T.Z.pipActivityWindow : null != (o = null != (a = T.Z.pipVideoWindow) ? a : T.Z.pipActivityWindow) ? o : T.Z.pipFrameWindow : null;
-  let q = Array.from(T.Z.pipWindows.values()),
-    X = T.Z.pipWidth(w.cL.VIDEO),
+  h = null != L && x || V && M ? null : V || !I || M ? null != L && G ? null != (n = S.Z.pipActivityWindow) ? n : S.Z.pipVideoWindow : null != Z && F ? null != (i = null != (r = S.Z.pipFrameWindow) ? r : S.Z.pipVideoWindow) ? i : S.Z.pipActivityWindow : null != (o = null != (a = S.Z.pipVideoWindow) ? a : S.Z.pipActivityWindow) ? o : S.Z.pipFrameWindow : null;
+  let q = Array.from(S.Z.pipWindows.values()),
+    X = S.Z.pipWidth(w.cL.VIDEO),
     Q = q.find(e => e.component === R.NYg.VIDEO),
     J = q.find(e => e.component === R.NYg.ACTIVITY),
     $ = [Q, J, q.find(e => e.component === R.NYg.FRAME)].filter(N.lm),
@@ -162,7 +162,7 @@ let G = Chunk442837.ZP.connectStores([Chunk928518.Z, Chunk317381.ZP, Chunk451478
     maxX: W.width - (eo ? ee : 0),
     maxY: W.height,
     theme: O.Z.theme,
-    dockedRect: T.Z.getDockedRect(null != (d = null == h ? true : h.id) ? d : ""),
+    dockedRect: S.Z.getDockedRect(null != (d = null == h ? true : h.id) ? d : ""),
     getDockedRectPositionY: z,
     appContext: K,
     roundCorners: !ea,

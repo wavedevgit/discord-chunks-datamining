@@ -57,7 +57,7 @@ function P() {
 }
 
 function w(e, t, n, r, i) {
-  n ? O.Z.createSecureFramesVerifiedKey(e, t) : O.Z.createSecureFramesTransientKey(e, t), (0, S.M1)({
+  n ? O.Z.createSecureFramesVerifiedKey(e, t) : O.Z.createSecureFramesTransientKey(e, t), (0, T.M1)({
     channelId: r,
     userId: e,
     analyticsLocation: i
@@ -76,7 +76,7 @@ function x(e, t) {
     title: C.intl.string(C.t["hdL15+"]),
     subtitle: C.intl.string(C.t["8VGYKi"]),
     onConfirm: () => {
-      O.Z.deleteSecureFramesVerifiedKey(e, t), (0, S.Pn)()
+      O.Z.deleteSecureFramesVerifiedKey(e, t), (0, T.Pn)()
     }
   })
 }
@@ -90,7 +90,7 @@ function L(e) {
     }),
     subtitle: C.intl.string(C.t.F1BQKy),
     onConfirm: () => {
-      O.Z.deleteSecureFramesUserVerifiedKeys(e), (0, S.DF)()
+      O.Z.deleteSecureFramesUserVerifiedKeys(e), (0, T.DF)()
     }
   })
 }
@@ -211,7 +211,7 @@ async function V(e) {
       key: n
     } = await k(e),
     r = await G(t, n, e);
-  return r || (0, S.KA)(e), r
+  return r || (0, T.KA)(e), r
 }
 
 function H(e, t) {
@@ -237,11 +237,11 @@ function Y(e) {
     channelId: n,
     nickname: r
   } = e;
-  (0, S.CW)({
+  (0, T.CW)({
     userId: t,
     channelId: n,
-    keyVersion: T.GB,
-    reason: T.Xe.OTHER_USER_INCONSISTENT_KEYS
+    keyVersion: S.GB,
+    reason: S.Xe.OTHER_USER_INCONSISTENT_KEYS
   }), u.Z.show({
     title: C.intl.string(C.t.mznLyc),
     body: C.intl.format(C.t.WY6IKS, {

@@ -42,34 +42,34 @@ let A = (e, t) => {
       value: A,
       children: (0, r.jsx)("div", {
         ref: t,
-        className: o()(T.container, n),
+        className: o()(S.container, n),
         "data-testid": "marketing-page-hero-header",
         children: (0, r.jsx)("div", {
           ref: D,
           children: (0, r.jsxs)("div", {
-            className: T.contentContainer,
+            className: S.contentContainer,
             children: [(0, r.jsx)(I.Z, {
               containerVisibilityPercentage: x
             }), C && (0, r.jsx)("div", {
-              className: T.offerPillContainer,
+              className: S.offerPillContainer,
               children: (0, r.jsx)(O.Z, {
                 enablePremiumBrandRefresh: true
               })
             }), (0, r.jsx)("div", {
-              className: T.marketingPageTextContainer,
+              className: S.marketingPageTextContainer,
               children: (0, r.jsx)(v.Z, {
-                children: S.intl.string(S.t["EW+VIS"])
+                children: T.intl.string(T.t["EW+VIS"])
               })
             }), (0, r.jsxs)("div", {
-              className: T.body,
+              className: S.body,
               children: [P && (0, r.jsx)("div", {
-                className: T.referrerAttributionContainer,
+                className: S.referrerAttributionContainer,
                 children: (0, r.jsx)(b.Z, {
                   referrer: R,
                   enablePremiumBrandRefresh: true
                 })
               }), j && (0, r.jsx)("div", {
-                className: T.affinitiesContainer,
+                className: S.affinitiesContainer,
                 children: (0, r.jsx)(g.Z, {
                   textColor: "text-primary",
                   smallerText: false,
@@ -77,7 +77,7 @@ let A = (e, t) => {
                   enablePremiumBrandRefresh: true
                 })
               }), (0, r.jsxs)("div", {
-                className: C ? T.singleButtonContainer : T.twoButtonContainer,
+                className: C ? S.singleButtonContainer : S.twoButtonContainer,
                 children: [(0, r.jsx)(m.Z, {
                   size: "md",
                   fullWidth: C,
@@ -88,11 +88,11 @@ let A = (e, t) => {
                   size: "md"
                 })]
               }), (0, r.jsx)("div", {
-                className: T.descriptionContainer,
+                className: S.descriptionContainer,
                 children: (0, r.jsx)(l.Text, {
                   color: "text-tertiary",
                   variant: "text-xs/medium",
-                  children: S.intl.format(S.t.kt9wxs, {
+                  children: T.intl.format(T.t.kt9wxs, {
                     cheapestMonthlyPrice: N
                   })
                 })

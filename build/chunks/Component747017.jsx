@@ -31,8 +31,8 @@ function v(e) {
     applicationStream: a,
     voiceChannel: v,
     textClassName: I,
-    iconClassName: S,
-    textSize: T = "xs",
+    iconClassName: T,
+    textSize: S = "xs",
     animateEmoji: A = true,
     hasQuest: C = false,
     hideEmoji: N = false,
@@ -56,14 +56,14 @@ function v(e) {
     }, [n]);
   if ((0, l.e7)([_.Z], () => _.Z.isBlockedOrIgnored(null == t ? true : t.id))) return null;
   let L = (null == t ? true : t.bot) === true,
-    j = (null == x ? true : x.state) != null && "xs" === T,
+    j = (null == x ? true : x.state) != null && "xs" === S,
     M = () => {
       if (null != P) return (0, r.jsx)(h.Z, {
         stream: P,
         game: null == n ? true : n.find(c.Z),
-        textVariant: "text-".concat(T, "/medium"),
+        textVariant: "text-".concat(S, "/medium"),
         textClassName: I,
-        iconClassName: S,
+        iconClassName: T,
         hideText: j,
         hideIcon: L,
         hideTooltip: R
@@ -76,33 +76,33 @@ function v(e) {
       });
       return null != e ? (0, r.jsx)(g.Z, {
         activity: e,
-        textVariant: "text-".concat(T, "/medium"),
+        textVariant: "text-".concat(S, "/medium"),
         textClassName: I,
-        iconClassName: S,
+        iconClassName: T,
         hideText: j,
         hideIcon: L,
         hideTooltip: R
       }) : null != v ? (0, r.jsx)(E.Z, {
         channel: v,
-        textVariant: "text-".concat(T, "/medium"),
+        textVariant: "text-".concat(S, "/medium"),
         textClassName: I,
-        iconClassName: S,
+        iconClassName: T,
         hideText: j,
         hideTooltip: R
       }) : null
     },
     k = o()(O.container, {
-      [O.textXs]: "xs" === T,
-      [O.textSm]: "sm" === T
+      [O.textXs]: "xs" === S,
+      [O.textSm]: "sm" === S
     }),
     U = () => null == x ? null : (0, r.jsx)(m.Z, {
       customStatusActivity: x,
-      textSize: T,
+      textSize: S,
       animateEmoji: A,
       hideEmoji: N,
       hideTooltip: R,
       textClassName: I,
-      iconClassName: S,
+      iconClassName: T,
       tooltipClassName: k,
       voiceChannel: v,
       hangStatus: D
@@ -110,7 +110,7 @@ function v(e) {
   return (0, r.jsxs)("div", {
     className: k,
     children: [M(), (0, r.jsx)(s.xv, {
-      variant: "text-".concat(T, "/normal"),
+      variant: "text-".concat(S, "/normal"),
       className: o()(O.truncated, O.dot, I),
       children: b.l
     }), U(), C && (0, r.jsx)(p.Z, {})]

@@ -54,7 +54,7 @@ let p = () => (0, Chunk951288.jsx)("img", {
       disabled: y,
       isInModalOverlay: O,
       className: v
-    } = e, [I, S] = (0, i.useState)(false), T = (0, i.useMemo)(() => m(f, I), [f, I]), [A, C] = (0, i.useState)(false), [N, R] = (0, i.useState)(false), [P, w] = (0, i.useState)(.9 * u.D2), D = null === a;
+    } = e, [I, T] = (0, i.useState)(false), S = (0, i.useMemo)(() => m(f, I), [f, I]), [A, C] = (0, i.useState)(false), [N, R] = (0, i.useState)(false), [P, w] = (0, i.useState)(.9 * u.D2), D = null === a;
     (0, i.useEffect)(() => {
       D && !A && (C(true), setTimeout(() => {
         R(true)
@@ -86,10 +86,10 @@ let p = () => (0, Chunk951288.jsx)("img", {
       id: null != n ? n : h,
       children: (0, r.jsxs)("span", {
         onMouseDown: b,
-        onMouseEnter: y ? true : () => S(true),
-        onMouseLeave: y ? true : () => S(false),
+        onMouseEnter: y ? true : () => T(true),
+        onMouseLeave: y ? true : () => T(false),
         ref: t,
-        className: o()(d.container, T, v, {
+        className: o()(d.container, S, v, {
           [d.containerLoading]: x,
           [d.inModalOverlay]: O,
           [d.disabled]: y

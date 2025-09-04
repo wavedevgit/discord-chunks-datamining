@@ -73,18 +73,18 @@ function C(e) {
     })
   }, [l, f]), F = (0, p.M)(), V = F && (0, u.G1)(x), H = () => null != L && (!(0, u.qS)(L) || j) || null === w ? (0, r.jsx)(o.zxk, {
     variant: "primary",
-    text: T.intl.string(T.t.Jh8fJy),
+    text: S.intl.string(S.t.Jh8fJy),
     onClick: B,
     disabled: U
   }) : null == L && (j || !(0, u.G1)(x)) ? (0, r.jsx)(o.zxk, {
     variant: "primary",
     onClick: () => Z(null == x ? true : x.skuId),
-    text: T.intl.string(T.t.fYfGgI)
+    text: S.intl.string(S.t.fYfGgI)
   }) : (0, r.jsx)(m.Z, {
-    subscriptionTier: S.Si.TIER_2,
+    subscriptionTier: T.Si.TIER_2,
     showGradient: F,
     textOptions: {
-      textOverride: y.ZP.isPremium(t) ? T.intl.string(T.t.KXLX7u) : F ? T.intl.string(T.t.pj0XBA) : T.intl.string(T.t.mr4K7O)
+      textOverride: y.ZP.isPremium(t) ? S.intl.string(S.t.KXLX7u) : F ? S.intl.string(S.t.pj0XBA) : S.intl.string(S.t.mr4K7O)
     }
   });
   return (0, r.jsxs)(r.Fragment, {
@@ -94,7 +94,7 @@ function C(e) {
       className: A.modalHeader,
       children: [(0, r.jsx)(o.X6q, {
         variant: "heading-lg/semibold",
-        children: T.intl.string(T.t.HykynZ)
+        children: S.intl.string(S.t.HykynZ)
       }), (0, r.jsx)(o.olH, {
         "data-migration-pending": true,
         className: A.modalCloseButton,
@@ -125,7 +125,7 @@ function C(e) {
         onSecondaryClick: f
       }) : (0, r.jsx)(o.zxk, {
         variant: "secondary",
-        text: T.intl.string(T.t["ETE/oK"]),
+        text: S.intl.string(S.t["ETE/oK"]),
         onClick: f
       })]
     })]
@@ -148,8 +148,8 @@ function N(e) {
     categories: y,
     purchases: O,
     isFetchingCategories: v,
-    isFetchingPurchases: S
-  } = (0, f.ZP)(), T = v || S && 0 === O.size, N = () => {
+    isFetchingPurchases: T
+  } = (0, f.ZP)(), S = v || T && 0 === O.size, N = () => {
     u(), null == c || c()
   };
   return i.useEffect(() => {
@@ -162,10 +162,10 @@ function N(e) {
     children: (0, r.jsx)(o.Y0X, {
       transitionState: t,
       className: A.modal,
-      size: T ? o.CgR.DYNAMIC : o.CgR.MEDIUM,
+      size: S ? o.CgR.DYNAMIC : o.CgR.MEDIUM,
       parentComponent: "AvatarDecorationModal",
       "data-migration-pending": true,
-      children: T ? (0, r.jsx)(o.$jN, {
+      children: S ? (0, r.jsx)(o.$jN, {
         className: A.spinner,
         type: o.$jN.Type.SPINNING_CIRCLE
       }) : (0, r.jsx)(C, {

@@ -4,8 +4,9 @@
 require.d(exports, {
   $H: () => eD,
   $J: () => e7,
+  $V: () => to,
   AV: () => ef,
-  B2: () => tT,
+  B2: () => tS,
   B3: () => th,
   BM: () => tt,
   Bg: () => eE,
@@ -28,7 +29,6 @@ require.d(exports, {
   Mo: () => tD,
   NI: () => tw,
   Nj: () => eR,
-  OG: () => to,
   PB: () => e8,
   PM: () => eu,
   Pb: () => ex,
@@ -47,7 +47,7 @@ require.d(exports, {
   _j: () => tl,
   _p: () => tp,
   b7: () => eX,
-  bA: () => tS,
+  bA: () => tT,
   f$: () => t_,
   f2: () => eU,
   fY: () => tr,
@@ -70,12 +70,12 @@ require.d(exports, {
   uN: () => tN,
   vB: () => tx,
   vQ: () => eO,
-  vR: () => eS,
+  vR: () => eT,
   xN: () => eb,
   xn: () => eh,
   yH: () => tf,
   yI: () => ei,
-  ys: () => eT,
+  ys: () => eS,
   zE: () => ep,
   zK: () => ej,
   zi: () => z
@@ -487,11 +487,11 @@ function eI(e) {
   return null == t ? true : t.orbQuantity
 }
 
-function eS(e, t) {
+function eT(e, t) {
   return e.targetedContent.includes(t)
 }
 
-function eT(e, t) {
+function eS(e, t) {
   v.Z.captureException(e, U(M({}, t), {
     tags: U(M({}, null == t ? true : t.tags), {
       app_context: "quests"
@@ -596,7 +596,7 @@ function eG(e) {
   return (null == e ? true : e.type) === o.X.PLAY_ON_DESKTOP
 }
 let eB = (e, t) => e > 0 ? (0, i.floor)(Math.min(t / e, 1), 4) : 0,
-  eZ = e => te(e) || T.Z.isProgressingOnDesktop(e.id),
+  eZ = e => te(e) || S.Z.isProgressingOnDesktop(e.id),
   eF = (e, t) => {
     var n, r, a, o;
     let s = null == (o = e.userStatus) || null == (a = o.progress) || null == (r = a[t.type]) || null == (n = r.heartbeat) ? true : n.lastBeatAt;
@@ -609,7 +609,7 @@ let eB = (e, t) => e > 0 ? (0, i.floor)(Math.min(t / e, 1), 4) : 0,
     let s = null == (r = e.userStatus) || null == (n = r.progress) ? true : n[t.type],
       l = null != (o = null != (a = null == s ? true : s.value) ? a : null == (i = e.userStatus) ? true : i.streamProgressSeconds) ? o : 0;
     if (e4(e)) {
-      let n = T.Z.getOptimisticProgress(e.id, t.type);
+      let n = S.Z.getOptimisticProgress(e.id, t.type);
       return null == n || n < l ? l : n
     }
     return l + eF(e, t)
@@ -926,7 +926,7 @@ function tg(e) {
 
 function tE(e, t) {
   var n, r;
-  z(e) || (null == (n = e.userStatus) ? true : n.enrolledAt) == null || (null == (r = e.userStatus) ? true : r.completedAt) != null || (0, S.cT)(e.id, t)
+  z(e) || (null == (n = e.userStatus) ? true : n.enrolledAt) == null || (null == (r = e.userStatus) ? true : r.completedAt) != null || (0, T.cT)(e.id, t)
 }
 
 function tb(e) {
@@ -953,11 +953,11 @@ let tI = e => e.percentComplete > 0 ? L.intl.formatToPlainString(L.t["c59/Tk"], 
   remainTime: e1(e)
 });
 
-function tS(e, t) {
+function tT(e, t) {
   return e <= 0 || t <= 0 ? 0 : e >= t ? 1 : Math.min(1, Math.round(e / t * 100) / 100)
 }
 
-function tT(e) {
+function tS(e) {
   var t, n;
   let r = R.r.build(e).defaultWatchVideoTask;
   return null != (n = null != (t = null == r ? true : r.messages.videoEndCtaButtonLabel) ? t : null == r ? true : r.messages.videoEndCtaTitle) ? n : L.intl.string(L.t.iiTtpK)
@@ -968,7 +968,7 @@ function tA(e, t) {
   let {
     quest: r,
     adDecisionData: i
-  } = null != (n = T.Z.questToDeliverForPlacement.get(tb(t))) ? n : {};
+  } = null != (n = S.Z.questToDeliverForPlacement.get(tb(t))) ? n : {};
   return null != i && (null == r ? true : r.id) === e ? i : w.Jp
 }
 
@@ -976,7 +976,7 @@ function tC(e) {
   var t;
   let {
     metadataRaw: n
-  } = null != (t = T.Z.questToDeliverForPlacement.get(tb(e))) ? t : {};
+  } = null != (t = S.Z.questToDeliverForPlacement.get(tb(e))) ? t : {};
   return n
 }
 
@@ -984,7 +984,7 @@ function tN(e) {
   var t;
   let {
     adContext: n
-  } = null != (t = T.Z.questToDeliverForPlacement.get(tb(e))) ? t : {};
+  } = null != (t = S.Z.questToDeliverForPlacement.get(tb(e))) ? t : {};
   return n
 }
 
@@ -1018,9 +1018,9 @@ function tD(e) {
     videoSessionId: a
   } = e, o = C.ZP.getState().getVideoProgress(r);
   if (null == o) return;
-  let s = T.Z.getQuest(r);
+  let s = S.Z.getQuest(r);
   null != s && (null == (t = s.userStatus) ? true : t.enrolledAt) != null && (null == (n = s.userStatus) ? true : n.completedAt) == null && tE(s, o.maxTimestampSec);
-  let l = tS(o.maxTimestampSec, o.duration);
+  let l = tT(o.maxTimestampSec, o.duration);
   (0, I.dA)({
     questId: r,
     event: D.rMx.QUEST_VIDEO_PROGRESSED,

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
   Chunk726521 = require("./726521.js"),
@@ -18,10 +18,10 @@ function f(e) {
     widget: t,
     userId: r,
     className: l
-  } = e, f = i.useRef(null), g = () => {
+  } = e, f = i.useRef(null), b = () => {
     (0, s.G1)(r, t)
   };
-  return (0, n.jsx)(o.yRy, {
+  return (0, n.jsx)(a.yRy, {
     targetElementRef: f,
     align: "top",
     position: "right",
@@ -30,27 +30,27 @@ function f(e) {
       let {
         closePopout: t
       } = e;
-      return (0, n.jsx)(o.v2r, {
+      return (0, n.jsx)(a.v2r, {
         navId: "user-profile-widget-context-menu",
         onClose: () => {
           (0, c.Zy)(), t()
         },
         onSelect: () => {},
         "aria-label": u.intl.string(u.t.xpSHSk),
-        children: (0, n.jsx)(o.kSQ, {
-          children: (0, n.jsx)(o.sNh, {
+        children: (0, n.jsx)(a.kSQ, {
+          children: (0, n.jsx)(a.sNh, {
             id: "flag-widget",
             label: u.intl.string(u.t.D4GvHB),
-            action: g,
+            action: b,
             color: "danger",
-            icon: o.U65
+            icon: a.U65
           })
         })
       })
     },
     children: e => {
       var t, r;
-      return (0, n.jsx)(o.P3F, (t = function(e) {
+      return (0, n.jsx)(a.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
             n = Object.keys(r);
@@ -70,8 +70,8 @@ function f(e) {
       }({}, e), r = r = {
         innerRef: f,
         "aria-label": u.intl.string(u.t.xpSHSk),
-        className: a()(d.button, l),
-        children: (0, n.jsx)(o.xhG, {
+        className: o()(d.button, l),
+        children: (0, n.jsx)(a.xhG, {
           size: "sm",
           color: "currentColor"
         })

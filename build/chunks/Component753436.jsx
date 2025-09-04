@@ -1,7 +1,7 @@
 /** Chunk was on 74449 **/
 /** chunk id: 753436, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  S: () => p
+  S: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -17,39 +17,39 @@ var Chunk120356 = require("./120356.js"),
   Chunk932366 = require("./932366.js"),
   Chunk133458 = require("./133458.js");
 
-function p(e) {
+function g(e) {
   let {
     game: t,
     userId: r,
     widgetType: i,
-    guildId: p,
-    channelId: m,
-    disableInteraction: O = false
-  } = e, y = (0, d.Z)(t.applicationId), j = y.length > 0, v = a.default.getCurrentUser(), x = (null == v ? true : v.id) === r;
-  return (0, o.kO)(t.applicationId) ? (0, n.jsx)("div", {
-    className: g.loadingCover
+    guildId: g,
+    channelId: O,
+    disableInteraction: y = false
+  } = e, j = (0, d.Z)(t.applicationId), m = j.length > 0, v = o.default.getCurrentUser(), h = (null == v ? true : v.id) === r;
+  return (0, a.kO)(t.applicationId) ? (0, n.jsx)("div", {
+    className: b.loadingCover
   }) : (0, n.jsxs)("div", {
-    className: b.container,
+    className: p.container,
     children: [(0, n.jsx)(s.Z, {
       imageSrc: t.imageSrc,
       gameName: t.gameName,
       applicationId: t.applicationId,
       userId: r,
-      disableInteraction: O,
-      className: l()(j ? b.socialProofBackdrop : true, (null == t ? true : t.imageSrc) == null || O ? true : g.hoverActiveEffect)
-    }), !O && x && (0, n.jsx)(u.Z, {
+      disableInteraction: y,
+      className: l()(m ? p.socialProofBackdrop : true, (null == t ? true : t.imageSrc) == null || y ? true : b.hoverActiveEffect)
+    }), !y && h && (0, n.jsx)(u.Z, {
       game: t,
       widgetType: i,
-      className: b.removeGameButton,
+      className: p.removeGameButton,
       iconSize: "xs"
-    }), !O && j && (0, n.jsx)(c.Z, {
+    }), !y && m && (0, n.jsx)(c.Z, {
       label: f.intl.formatToPlainString(f.t.ujhJdH, {
-        numFriends: y.length
+        numFriends: j.length
       }),
-      className: b.socialProof,
-      users: y,
-      guildId: p,
-      channelId: m,
+      className: p.socialProof,
+      users: j,
+      guildId: g,
+      channelId: O,
       visuallyHideLabel: true
     })]
   })

@@ -2,8 +2,8 @@
 /** chunk id: 267642, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A3: () => T,
-  FZ: () => S,
+  A3: () => S,
+  FZ: () => T,
   Hl: () => J,
   Je: () => N,
   Jh: () => L,
@@ -64,11 +64,11 @@ var O = function(e) {
 }({});
 let v = [Chunk981631.Eu4.NONE, Chunk981631.Eu4.TIER_1, Chunk981631.Eu4.TIER_2, Chunk981631.Eu4.TIER_3],
   I = v.slice().reverse(),
-  S = e => {
+  T = e => {
     var t;
     return e === g.Eu4.NONE ? g.Eu4.TIER_1 : null == (t = Z.find(t => t.tier === e)) ? true : t.nextTier
   },
-  T = (e, t) => null != t && t.features.has(g.oNc.MORE_STICKERS) && e === g.Eu4.TIER_3 ? a.D.MAX_STICKER_SLOTS : b.$8[e],
+  S = (e, t) => null != t && t.features.has(g.oNc.MORE_STICKERS) && e === g.Eu4.TIER_3 ? a.D.MAX_STICKER_SLOTS : b.$8[e],
   A = e => b.pH[e],
   C = (e, t) => null != t && t.features.has(g.oNc.MORE_SOUNDBOARD) ? b.w1 : b._k[e],
   N = e => {
@@ -89,7 +89,7 @@ let v = [Chunk981631.Eu4.NONE, Chunk981631.Eu4.TIER_1, Chunk981631.Eu4.TIER_2, C
     }, {
       title: y.intl.formatToPlainString(y.t["/9p2/v"], {
         adding: A(g.Eu4.TIER_1),
-        total: T(g.Eu4.TIER_1)
+        total: S(g.Eu4.TIER_1)
       }),
       description: y.intl.string(y.t.JfsnDQ),
       icon: 8
@@ -132,7 +132,7 @@ let v = [Chunk981631.Eu4.NONE, Chunk981631.Eu4.TIER_1, Chunk981631.Eu4.TIER_2, C
     }, {
       title: y.intl.formatToPlainString(y.t["/9p2/v"], {
         adding: A(g.Eu4.TIER_2),
-        total: T(g.Eu4.TIER_2)
+        total: S(g.Eu4.TIER_2)
       }),
       description: y.intl.string(y.t.t4TM29),
       icon: 8
@@ -191,7 +191,7 @@ let v = [Chunk981631.Eu4.NONE, Chunk981631.Eu4.TIER_1, Chunk981631.Eu4.TIER_2, C
     }, {
       title: y.intl.formatToPlainString(y.t["/9p2/v"], {
         adding: A(g.Eu4.TIER_3),
-        total: T(g.Eu4.TIER_3)
+        total: S(g.Eu4.TIER_3)
       }),
       description: y.intl.string(y.t["+ZI4QU"]),
       icon: 8
@@ -367,8 +367,8 @@ function V(e, t) {
     r = v.indexOf(t);
   if (false === r) return 0;
   let i = v[r - 1],
-    a = null != i ? T(i) : 0,
-    o = T(t);
+    a = null != i ? S(i) : 0,
+    o = S(t);
   return Math.max(0, n - e.slice(a, o).length)
 }
 

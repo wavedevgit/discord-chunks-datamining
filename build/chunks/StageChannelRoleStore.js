@@ -65,14 +65,14 @@ function I(e, t) {
   return E[t][e] = r, r
 }
 
-function S(e, t) {
+function T(e, t) {
   var n;
   if (null == t) returnfalse;
   let r = l.Z.getChannel(t);
   return null != r && !!r.isGuildStageVoice() && (null == (n = E[t]) || delete n[e], true)
 }
 
-function T(e, t) {
+function S(e, t) {
   for (let n in E) {
     let r = l.Z.getBasicChannel(n);
     null != r && r.guild_id === t && delete E[n][e]
@@ -105,7 +105,7 @@ function R(e) {
     guildId: t,
     user: n
   } = e;
-  return null != n && null != t && T(n.id, t)
+  return null != n && null != t && S(n.id, t)
 }
 
 function P(e) {
@@ -117,7 +117,7 @@ function P(e) {
       userId: n,
       channelId: r
     } = t;
-    return S(n, r) || e
+    return T(n, r) || e
   }, false)
 }
 

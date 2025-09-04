@@ -2114,7 +2114,7 @@ function eI() {
   })
 }
 
-function eS(e) {
+function eT(e) {
   let {
     transitionState: t
   } = e, [n, a] = i.useState(false), [o, s] = i.useState(N.CgR.SMALL), [l, c] = i.useState(false), u = n ? V.modalOutlines : "";
@@ -2185,14 +2185,14 @@ function eS(e) {
   })
 }
 
-function eT(e) {
+function eS(e) {
   let {
     transitionState: t,
     onClose: n,
     modalCount: a = 1
   } = e, [o, s] = i.useState("replace"), l = () => {
     let e = a + 1;
-    (0, N.h7j)(t => (0, r.jsx)(eT, $(Q({}, t), {
+    (0, N.h7j)(t => (0, r.jsx)(eS, $(Q({}, t), {
       modalCount: e
     })), {
       stackingBehavior: o
@@ -2341,7 +2341,7 @@ function eC(e) {
   let {
     transitionState: t,
     onClose: n
-  } = e, [a, o] = i.useState("md"), [s, l] = i.useState("Demo Modal"), [c, u] = i.useState("Header body copy"), [d, f] = i.useState(false), [_, p] = i.useState(false), [h, m] = i.useState(false), [E, b] = i.useState(false), [S, T] = i.useState(false);
+  } = e, [a, o] = i.useState("md"), [s, l] = i.useState("Demo Modal"), [c, u] = i.useState("Header body copy"), [d, f] = i.useState(false), [_, p] = i.useState(false), [h, m] = i.useState(false), [E, b] = i.useState(false), [T, S] = i.useState(false);
   return (0, r.jsxs)(g.I, {
     transitionState: t,
     onClose: n,
@@ -2422,8 +2422,8 @@ function eC(e) {
                 children: "Show Action Bar Leading Input"
               })
             }), (0, r.jsx)(C.$q, {
-              value: S,
-              onChange: (e, t) => T(t),
+              value: T,
+              onChange: (e, t) => S(t),
               children: (0, r.jsx)(N.Text, {
                 variant: "text-md/medium",
                 children: "Full Width Actions"
@@ -2447,7 +2447,7 @@ function eC(e) {
         onChange: (e, t) => {},
         text: "Don't show again"
       }) : true,
-      actionsFullWidth: S,
+      actionsFullWidth: T,
       actions: [{
         variant: "secondary",
         text: "Cancel",
@@ -2730,10 +2730,10 @@ function ew(e) {
 
 function eD() {
   let e = () => {
-      (0, Chunk481060.h7j)(e => (0, r.jsx)(eS, Q({}, e)))
+      (0, Chunk481060.h7j)(e => (0, r.jsx)(eT, Q({}, e)))
     },
     t = () => {
-      (0, Chunk481060.h7j)(e => (0, r.jsx)(eT, Q({}, e)))
+      (0, Chunk481060.h7j)(e => (0, r.jsx)(eS, Q({}, e)))
     },
     n = () => {
       (0, Chunk481060.h7j)(e => (0, r.jsx)(eA, Q({}, e)))

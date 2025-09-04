@@ -5,7 +5,7 @@ require.d(exports, {
   $5: () => y,
   B3: () => O,
   Ee: () => p,
-  Jh: () => T,
+  Jh: () => S,
   Qs: () => b,
   R: () => E,
   Rj: () => I,
@@ -16,7 +16,7 @@ require.d(exports, {
   rk: () => m,
   sp: () => g,
   wD: () => h,
-  yS: () => S,
+  yS: () => T,
   z$: () => N
 }), require("./953529.js");
 var Chunk512722 = require("./512722.js"),
@@ -70,7 +70,7 @@ function _(e) {
 }
 
 function p(e, t, n) {
-  var r, i, l, c, u, d, f, _, p, h, m, g, E, b, y, O, v, I, S, T, A, C, N, R, w, x, L;
+  var r, i, l, c, u, d, f, _, p, h, m, g, E, b, y, O, v, I, T, S, A, C, N, R, w, x, L;
   return (0, o.oI)(s.VI, n, {
     id: e.id,
     joinedAt: t.joinedAt,
@@ -99,8 +99,8 @@ function p(e, t, n) {
     discoverySplash: null != (O = e.discovery_splash) ? O : null,
     rulesChannelId: null != (v = e.rules_channel_id) ? v : null,
     safetyAlertsChannelId: null != (I = e.safety_alerts_channel_id) ? I : null,
-    publicUpdatesChannelId: null != (S = e.public_updates_channel_id) ? S : null,
-    maxStageVideoChannelUsers: null != (T = e.max_stage_video_channel_users) ? T : s.Cx.maxStageVideoChannelUsers,
+    publicUpdatesChannelId: null != (T = e.public_updates_channel_id) ? T : null,
+    maxStageVideoChannelUsers: null != (S = e.max_stage_video_channel_users) ? S : s.Cx.maxStageVideoChannelUsers,
     maxVideoChannelUsers: null != (A = e.max_video_channel_users) ? A : s.Cx.maxVideoChannelUsers,
     maxMembers: null != (C = e.max_members) ? C : s.Cx.maxMembers,
     nsfwLevel: null != (N = e.nsfw_level) ? N : s.Cx.nsfwLevel,
@@ -218,7 +218,7 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   var t, n, r, i;
   return N({
     id: e.id,
@@ -231,7 +231,7 @@ function S(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   var t, n, r, i, o, l;
   return R({
     id: e.id,

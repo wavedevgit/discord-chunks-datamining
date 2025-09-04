@@ -120,7 +120,7 @@ let q = (e, t, n) => {
     if (null == s) return (0, r.jsx)("strong", {
       children: l
     });
-    let c = S.default.getUser(s.id),
+    let c = T.default.getUser(s.id),
       u = (0, P.AH)(e),
       d = (0, P.s5)(e),
       f = b.Z.getChannel(u),
@@ -561,7 +561,7 @@ class er extends Chunk647438.PureComponent {
         a = 0;
       null != r.token ? a = r.token.start : (null == i ? true : i.currentToken) != null && (a = i.currentToken.end);
       let o = null != r.token ? r.token.end : a;
-      T.S.dispatch(k.CkL.SET_SEARCH_QUERY, {
+      S.S.dispatch(k.CkL.SET_SEARCH_QUERY, {
         query: e,
         anchor: a,
         focus: o,
@@ -620,7 +620,7 @@ class er extends Chunk647438.PureComponent {
     })), B(this, "handleHintClick", () => {
       this.setSearchQuery(this.state.dateHint, true)
     }), B(this, "performSearch", e => {
-      T.S.dispatch(k.CkL.PERFORM_SEARCH, null != e ? e : {})
+      S.S.dispatch(k.CkL.PERFORM_SEARCH, null != e ? e : {})
     }), B(this, "renderAutocompletes", () => {
       let {
         selectedIndex: e

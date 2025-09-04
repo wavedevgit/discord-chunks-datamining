@@ -100,7 +100,7 @@ class D extends Chunk647438.PureComponent {
         giftCode: t,
         sku: n
       } = this.props;
-      (0, S.dM)(t, n), (0, I.JG)(e, () => this.setState({
+      (0, T.dM)(t, n), (0, I.JG)(e, () => this.setState({
         copyMode: u.uA3.SUCCESS
       }), () => this.setState({
         copyMode: u.uA3.ERROR
@@ -261,7 +261,7 @@ let L = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk246946.Z, Chunk82142.Z,
     isFetching: E.Z.getUserGiftCodesFetchingForSKUAndPlan(t, n),
     loadedAt: E.Z.getUserGiftCodesLoadedAtForSKUAndPlan(t, n),
     application: _.Z.getApplication(i.applicationId),
-    subscriptionPlan: null != n ? (0, T.oE)(n) : null,
+    subscriptionPlan: null != n ? (0, S.oE)(n) : null,
     giftCodes: a
   }
 })(x)

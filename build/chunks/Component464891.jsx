@@ -148,14 +148,14 @@ let $ = Chunk647438.memo(function(e) {
     preview: y,
     subscribeToGroupId: O,
     hideGuildTag: v
-  } = e, I = (0, L.ZP)(t, n), S = i.useMemo(() => (0, G.x)({
+  } = e, I = (0, L.ZP)(t, n), T = i.useMemo(() => (0, G.x)({
     message: t,
     channel: a,
     user: null == t ? true : t.author,
     compact: s,
     isRepliedMessage: false
-  }), [t, a, s]), T = i.useRef(null), C = (0, l.e7)([A.Z], () => A.Z.getGuild(o)), R = i.useMemo(() => ei(s, E, u, C), [s, E, u, C]), P = i.useMemo(() => null == u ? null : 1 === R && null != C ? (0, r.jsx)(c.yRy, {
-    targetElementRef: T,
+  }), [t, a, s]), S = i.useRef(null), C = (0, l.e7)([A.Z], () => A.Z.getGuild(o)), R = i.useMemo(() => ei(s, E, u, C), [s, E, u, C]), P = i.useMemo(() => null == u ? null : 1 === R && null != C ? (0, r.jsx)(c.yRy, {
+    targetElementRef: S,
     animation: c.yRy.Animation.TRANSLATE,
     align: "center",
     autoInvert: true,
@@ -171,7 +171,7 @@ let $ = Chunk647438.memo(function(e) {
         onClick: t
       } = e;
       return (0, r.jsx)(p.Z, z(W({
-        ref: T
+        ref: S
       }, u), {
         className: V.roleIcon,
         onClick: t
@@ -210,7 +210,7 @@ let $ = Chunk647438.memo(function(e) {
       onContextMenu: g,
       onPopoutRequestClose: b,
       decorations: {
-        [j.a.SYSTEM_TAG]: S,
+        [j.a.SYSTEM_TAG]: T,
         [j.a.BADGES]: M
       },
       renderRemixTag: true,
@@ -283,9 +283,9 @@ function et(e) {
     showAvatarPopout: I
   } = a, A = i.useRef(null), [C, N] = i.useState(false), {
     analyticsLocations: w
-  } = (0, d.ZP)(u.Z.AVATAR), D = (0, l.e7)([T.ZP], () => {
+  } = (0, d.ZP)(u.Z.AVATAR), D = (0, l.e7)([S.ZP], () => {
     var e;
-    return null != (e = a.displayCompactAvatars) ? e : T.ZP.displayCompactAvatars
+    return null != (e = a.displayCompactAvatars) ? e : S.ZP.displayCompactAvatars
   }), x = (0, B.Z)(p), L = m ? q : X, {
     avatarSrc: j,
     avatarDecorationSrc: M,
@@ -314,7 +314,7 @@ function et(e) {
       if (null != g) return P.S.subscribeKeyed(Z.LPv.ANIMATE_CHAT_AVATAR, "".concat(g, ":").concat(p.author.id), N), () => void P.S.unsubscribeKeyed(Z.LPv.ANIMATE_CHAT_AVATAR, "".concat(g, ":").concat(p.author.id), N)
     }, [p.author.id, g]), !m || D) return null != c && null != I ? (0, r.jsx)(d.Gt, {
     value: w,
-    children: (0, r.jsx)(S.Z, {
+    children: (0, r.jsx)(T.Z, {
       targetElementRef: A,
       user: p.author,
       guildId: o,
@@ -456,17 +456,17 @@ let ea = Chunk647438.memo(function(e) {
       className: m,
       channel: E,
       preview: O
-    } = e, v = i.useMemo(() => null != s ? e => s(e, t) : true, [s, t]), [, I] = (0, h.ZP)(t.author.id, e.guildId), S = (0, l.e7)([C.Z, A.Z], () => {
+    } = e, v = i.useMemo(() => null != s ? e => s(e, t) : true, [s, t]), [, I] = (0, h.ZP)(t.author.id, e.guildId), T = (0, l.e7)([C.Z, A.Z], () => {
       let n = A.Z.getGuild(e.guildId);
       return null != t.author && null != n && C.Z.canManageUser(Z.Plq.MODERATE_MEMBERS, t.author, n)
-    }, [t.author, e.guildId]), N = I && S, R = et({
+    }, [t.author, e.guildId]), N = I && T, R = et({
       props: e,
       guildId: e.guildId,
       handleRenderPopout: v,
       showCommunicationDisabledStyles: N
-    }), P = (0, l.e7)([T.ZP], () => {
+    }), P = (0, l.e7)([S.ZP], () => {
       var t;
-      return null != (t = e.displayCompactAvatars) ? t : T.ZP.displayCompactAvatars
+      return null != (t = e.displayCompactAvatars) ? t : S.ZP.displayCompactAvatars
     }), D = i.useMemo(() => (0, G.b)({
       message: t,
       channel: E,

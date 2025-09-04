@@ -119,7 +119,7 @@ function I(e, t, n, i, a) {
   }
 }
 
-function S(e) {
+function T(e) {
   let t, {
       timeStatus: n,
       textBrand: r,
@@ -153,7 +153,7 @@ function S(e) {
   }
 }
 
-function T() {
+function S() {
   return (0, Chunk951288.jsx)(Chunk481060.IGR, {
     className: Chunk646615.newBadge,
     color: Chunk692547.Z.unsafe_rawColors.BRAND_260.css,
@@ -227,7 +227,7 @@ function C(e) {
       iconColor: V,
       textColor: H,
       tooltipText: Y
-    } = i.useMemo(() => S({
+    } = i.useMemo(() => T({
       timeStatus: B,
       textBrand: R,
       textPositive: P,
@@ -249,7 +249,7 @@ function C(e) {
       [m.isRecurring]: null != W
     }),
     tooltipText: Y,
-    children: [b && n === p.p1.SCHEDULED ? (0, r.jsx)(T, {}) : (0, r.jsx)(F, {
+    children: [b && n === p.p1.SCHEDULED ? (0, r.jsx)(S, {}) : (0, r.jsx)(F, {
       color: V,
       size: "custom",
       width: O,

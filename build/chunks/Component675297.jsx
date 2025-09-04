@@ -2,7 +2,7 @@
 /** chunk id: 675297, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  H: () => S
+  H: () => T
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -47,13 +47,13 @@ function v(e) {
 }
 let I = 600;
 
-function S(e) {
+function T(e) {
   let {
     guildProductListing: t,
     guildId: n,
     location: O,
-    shouldShowFullDescriptionButton: S = true,
-    hideRoleTag: T = false,
+    shouldShowFullDescriptionButton: T = true,
+    hideRoleTag: S = false,
     lineClamp: A = 1,
     cardWidth: C,
     cardHeight: N,
@@ -111,12 +111,12 @@ function S(e) {
     role: x,
     ctaComponent: (0, r.jsx)(a.zx, v({}, G)),
     productType: j,
-    shouldShowFullDescriptionButton: S,
+    shouldShowFullDescriptionButton: T,
     onShowFullDescription: B,
     onTapCard: B,
     actionMenu: H,
     showOpaqueBackground: w,
-    hideRoleTag: T,
+    hideRoleTag: S,
     lineClamp: A,
     cardWidth: C,
     cardHeight: N,

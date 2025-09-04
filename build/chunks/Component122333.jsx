@@ -135,7 +135,7 @@ class Z extends Chunk317770.Z {
             onSlideChange: t
           }))
         }, {
-          onCloseRequest: N.dG4,
+          onCloseRequest: T.dG4,
           onCloseCallback: e,
           modalKey: r
         })

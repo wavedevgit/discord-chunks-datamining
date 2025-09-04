@@ -28,8 +28,8 @@ function g(e, t) {
     allowHeading: O = false,
     allowList: v = false,
     allowLinks: I = false,
-    allowDevLinks: S = false,
-    previewLinkTarget: T = false,
+    allowDevLinks: T = false,
+    previewLinkTarget: S = false,
     viewingChannelId: A
   } = t, C = (0, o.p)(), N = a.d.useExperiment({
     location: "useMessageRenderedContent"
@@ -81,11 +81,11 @@ function g(e, t) {
       allowHeading: O,
       allowList: v,
       allowLinks: I,
-      allowDevLinks: S,
-      previewLinkTarget: T,
+      allowDevLinks: T,
+      previewLinkTarget: S,
       shouldFilterKeywords: C,
       viewingChannelId: A,
       allowGameMentions: N
     })
-  }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, g, E, b, y, O, v, I, T, C, S, A, R.enabled, N, P])
+  }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, g, E, b, y, O, v, I, S, C, T, A, R.enabled, N, P])
 }

@@ -29,8 +29,8 @@ let g = 280,
       tryItText: O,
       dismissText: v,
       onTryFeature: I,
-      onClose: S,
-      className: T,
+      onClose: T,
+      className: S,
       inlineArt: A = false,
       isPremiumFeature: C = false,
       shouldUseHorizontalButtons: N = false,
@@ -75,7 +75,7 @@ let g = 280,
     }, [V, W, Y, j]), i.useEffect(() => {
       (0, f.kk)(P)
     }, [P]), (0, r.jsx)("div", {
-      className: T,
+      className: S,
       ref: t,
       children: (0, r.jsxs)("div", {
         className: o()(m.content, y, {
@@ -123,7 +123,7 @@ let g = 280,
               className: m.button,
               size: F,
               onClick: e => {
-                null == S || S(e), I(e), K(p.L.PRIMARY)
+                null == T || T(e), I(e), K(p.L.PRIMARY)
               },
               color: null != Z ? Z : C || L ? s.zx.Colors.BRAND_INVERTED : s.zx.Colors.WHITE,
               children: null != O ? O : h.intl.string(h.t.IHf1RE)
@@ -131,7 +131,7 @@ let g = 280,
               className: m.button,
               size: F,
               onClick: e => {
-                null == S || S(e), K(p.L.DISMISS)
+                null == T || T(e), K(p.L.DISMISS)
               },
               color: C || L ? s.zx.Colors.WHITE : s.zx.Colors.BRAND,
               look: C || L ? s.zx.Looks.LINK : s.zx.Looks.FILLED,
@@ -141,7 +141,7 @@ let g = 280,
             className: m.button,
             size: s.zx.Sizes.MAX,
             onClick: e => {
-              null == S || S(e), K(p.L.PRIMARY)
+              null == T || T(e), K(p.L.PRIMARY)
             },
             color: s.zx.Colors.WHITE,
             children: h.intl.string(h.t.HU2IR0)

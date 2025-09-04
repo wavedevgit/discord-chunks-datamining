@@ -67,7 +67,8 @@ function h(e) {
     case d.GlobalDiscoveryTab.QUESTS:
       return (0, o.navigateToQuestHome)({
         fromContent: e.questContent,
-        questId: e.questId
+        questId: e.questId,
+        forceDiscoveryQuestHomeRoute: true
       });
     default:
       throw Error("[transitionToGlobalDiscovery] Unhandled tab type: ".concat(E))

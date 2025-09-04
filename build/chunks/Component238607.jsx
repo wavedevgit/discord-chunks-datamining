@@ -94,8 +94,8 @@ function E(e) {
   if (null == y) return null;
   let {
     isJoining: I,
-    handleJoinRequest: S,
-    buttonCTA: T,
+    handleJoinRequest: T,
+    buttonCTA: S,
     tooltip: A,
     isEnabled: C,
     isEmbedded: N
@@ -104,7 +104,7 @@ function E(e) {
     text: A,
     children: e => (0, r.jsx)(u.tG, g(h({}, e), {
       icon: a.YVR,
-      text: T,
+      text: S,
       disabled: !C,
       submitting: I,
       size: E === f.l.MODAL_V2 ? i.Ph.TINY : i.Ph.SMALL,
@@ -113,14 +113,14 @@ function E(e) {
       onClick: e => {
         e.stopPropagation(), null == p || p({
           action: "PRESS_JOIN_BUTTON"
-        }), S()
+        }), T()
       }
     }))
   }) : (0, r.jsx)(a.ua7, {
     text: A,
     children: e => (0, r.jsx)(u.tG, g(h({}, e), {
       icon: a.iWm,
-      text: T,
+      text: S,
       disabled: !C,
       submitting: I,
       size: E === f.l.MODAL_V2 ? i.Ph.TINY : i.Ph.SMALL,
@@ -129,7 +129,7 @@ function E(e) {
       onClick: e => {
         e.stopPropagation(), null == p || p({
           action: "PRESS_ASK_TO_JOIN_BUTTON"
-        }), S()
+        }), T()
       }
     }))
   })

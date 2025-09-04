@@ -21,18 +21,18 @@ function d(e) {
     className: d
   } = e, {
     trackUserProfileEditAction: f
-  } = (0, o.KZ)(), g = () => {
+  } = (0, a.KZ)(), b = () => {
     (0, c.$b)(r, t.applicationId), f({
       action: "GAME_REMOVED",
       gameId: t.applicationId,
       widgetEdited: r
     })
   };
-  return (0, n.jsx)(a.ua7, {
+  return (0, n.jsx)(o.ua7, {
     text: s.intl.string(s.t.HUvyDQ),
     children: e => {
       var t, r;
-      return (0, n.jsx)(a.P3F, (t = function(e) {
+      return (0, n.jsx)(o.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
             n = Object.keys(r);
@@ -50,13 +50,13 @@ function d(e) {
         }
         return e
       }({}, e), r = r = {
-        onClick: g,
+        onClick: b,
         "aria-label": s.intl.string(s.t.HUvyDQ),
         className: l()(d, u.clickable),
-        children: (0, n.jsx)(a.XHJ, {
+        children: (0, n.jsx)(o.XHJ, {
           size: i,
           className: u.icon,
-          color: a.TVs.colors.STATUS_DANGER
+          color: o.TVs.colors.STATUS_DANGER
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var r = Object.keys(e);

@@ -79,7 +79,7 @@ function j(e) {
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(g.Z, {
           userId: t.id
-        }), !Y && (0, r.jsx)(S.Z, {
+        }), !Y && (0, r.jsx)(T.Z, {
           userId: t.id,
           isHovering: k,
           onOpenProfile: U
@@ -124,7 +124,7 @@ function j(e) {
       bio: null == j ? true : j.bio,
       hidePersonalInformation: Y,
       onClose: B
-    }), X && (0, r.jsx)(T.Z, {
+    }), X && (0, r.jsx)(S.Z, {
       widgets: null == j ? true : j.widgets,
       onClick: () => {
         null == U || U({

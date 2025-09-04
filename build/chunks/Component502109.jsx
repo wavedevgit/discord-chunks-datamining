@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Ch: () => A,
-  Tr: () => T
+  Tr: () => S
 }), require("./642613.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -67,7 +67,7 @@ let v = new Chunk710845.Z("PaymentRequest"),
     link: "link",
     browserCard: "browserCard"
   });
-class S extends Chunk647438.Component {
+class T extends Chunk647438.Component {
   componentDidMount() {
     if (!(0, Chunk358085.isDesktop)()) {
       if (!this.isBrowserCompatible()) return void this.onPaymentRequestFailure();
@@ -232,7 +232,7 @@ class S extends Chunk647438.Component {
     })
   }
 }
-class T extends S {
+class S extends T {
   isBrowserCompatible() {
     return (0, Chunk526167.vu)() >= 61
   }
@@ -292,7 +292,7 @@ class T extends S {
     super(...e), E(this, "state", b({}, this.initialState)), E(this, "paymentRequestWallet", "googlePay")
   }
 }
-class A extends S {
+class A extends T {
   isBrowserCompatible() {
     return (0, Chunk526167.G6)()
   }

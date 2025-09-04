@@ -53,7 +53,7 @@ function L(e) {
     icon: t.icon,
     bot: E
   }), {
-    staticBannerSrc: S,
+    staticBannerSrc: T,
     videoBannerSrc: C,
     bannerAspectRatio: x
   } = (0, P.E)(t), L = (0, s.e7)([b.default], () => null != l ? l : b.default.getId(), [l]), {
@@ -63,7 +63,7 @@ function L(e) {
     instanceId: G,
     isCurrentlyInInstance: B,
     canLaunchInChannel: Z
-  } = (0, T.c)(t.id), F = (0, u.Z)(), V = (0, h.ms)({
+  } = (0, S.c)(t.id), F = (0, u.Z)(), V = (0, h.ms)({
     context: {
       type: "contextless"
     },
@@ -106,7 +106,7 @@ function L(e) {
   });
   return (0, r.jsx)(A.W, {
     title: g,
-    staticBannerSrc: S,
+    staticBannerSrc: T,
     videoBannerSrc: C,
     onClickBanner: W,
     bannerAspectRatio: x,
@@ -129,7 +129,7 @@ function j(e) {
   var t, n, o;
   let {
     app: c
-  } = e, u = (0, S.Eb)({
+  } = e, u = (0, T.Eb)({
     customInstallUrl: c.customInstallUrl,
     installParams: c.installParams,
     integrationTypesConfig: c.integrationTypesConfig

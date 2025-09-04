@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk734501 = require("./734501.js"),
   Chunk690813 = require("./690813.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,7 +43,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -114,7 +114,7 @@ let C = (e, t) => {
     } = i.useContext(u.Sf);
     if (null === o) return (0, r.jsx)(d.$jN, {});
     let _ = () => f.enabled ? {
-        src: S.Z,
+        src: T.Z,
         type: "image"
       } : {
         rive: d.p8m,

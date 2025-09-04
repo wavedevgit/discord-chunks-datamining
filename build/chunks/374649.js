@@ -2,8 +2,8 @@
 /** chunk id: 374649, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ED: () => S,
-  Ox: () => T,
+  ED: () => T,
+  Ox: () => S,
   hz: () => b,
   o5: () => I,
   pV: () => A
@@ -229,7 +229,7 @@ function I(e) {
   return v(e, (0, r.useCallback)(() => y(t.current), [n]))
 }
 
-function S(e) {
+function T(e) {
   if ("subscriptionId" in e && null == e.subscriptionId) {
     let {
       subscriptionId: t
@@ -250,7 +250,7 @@ function S(e) {
   return v(e, i)
 }
 
-function T(e) {
+function S(e) {
   let t = (0, r.useRef)(e);
   (0, r.useEffect)(() => {
     t.current = e

@@ -119,8 +119,8 @@ function er(e) {
     autoMute: y,
     volume: O,
     onPlay: I,
-    onPause: S,
-    onEnded: T,
+    onPause: T,
+    onEnded: S,
     onControlsHide: A,
     onControlsShow: C,
     onVolumeChange: N,
@@ -159,7 +159,7 @@ function er(e) {
       height: W,
       responsive: p,
       autoPlay: b,
-      onEnded: T,
+      onEnded: S,
       naturalWidth: d.width,
       naturalHeight: d.height,
       onVolumeChange: N,
@@ -167,7 +167,7 @@ function er(e) {
       autoMute: y,
       volume: O,
       onPlay: I,
-      onPause: S,
+      onPause: T,
       onMute: P,
       onControlsHide: A,
       onControlsShow: C,
@@ -632,7 +632,7 @@ class ea extends(r = Chunk647438.PureComponent) {
         original: e.url,
         srcIsAnimated: e.srcIsAnimated
       })), {}, "Embed"),
-      S = Chunk124347.ZP.isAnimated({
+      T = Chunk124347.ZP.isAnimated({
         src: (0, Chunk52824.q)(Chunk228458),
         original: Chunk228458.url,
         animated: false,
@@ -675,7 +675,7 @@ class ea extends(r = Chunk647438.PureComponent) {
           } = t;
           return f(z(W({}, A), {
             autoPlay: p && !n && !a,
-            renderAccessory: S ? e : null,
+            renderAccessory: T ? e : null,
             handlePreloadImage: I[y],
             onClick: v[y],
             onMouseEnter: () => this.handleImageHover(true, l, P),

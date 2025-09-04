@@ -28,7 +28,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk997892 = require("./997892.js"),
   Chunk234286 = require("./234286.js");
 
-function T(e) {
+function S(e) {
   let {
     isOneStepCheckout: t,
     headerText: n,
@@ -85,7 +85,7 @@ let C = function(e) {
     isEligibleForTrial: v = false,
     showTrialBadge: C = false,
     showDiscountBadge: N = false
-  } = e, R = (0, s.apv)((0, l.ZP)()), P = O === g.p9.TIER_2, w = (0, d.Fv)(v), D = (0, h.Ng)(), x = null == D || null == (t = D.discount) ? true : t.amount, L = P ? S : I, j = P ? p.Z : _.Z, {
+  } = e, R = (0, s.apv)((0, l.ZP)()), P = O === g.p9.TIER_2, w = (0, d.Fv)(v), D = (0, h.Ng)(), x = null == D || null == (t = D.discount) ? true : t.amount, L = P ? T : I, j = P ? p.Z : _.Z, {
     step: M,
     breadcrumbs: k,
     startedPaymentFlowWithPaymentSourcesRef: U,
@@ -144,7 +144,7 @@ let C = function(e) {
       })]
     }), (C || N) && (0, r.jsx)(m.Z, {
       discountAmount: x
-    }), V && (0, r.jsx)(T, {
+    }), V && (0, r.jsx)(S, {
       isOneStepCheckout: w,
       headerText: F,
       step: M,

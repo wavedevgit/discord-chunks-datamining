@@ -2,7 +2,7 @@
 /** chunk id: 49308, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  x: () => S
+  x: () => T
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -61,24 +61,24 @@ function I(e) {
   o()(null != l, "Expected selectedSkuId"), o()(null != u, "Expected application");
   let I = a[l];
   o()(null != I, "Expected sku");
-  let S = null != d || null != f || null != p,
-    T = m.length > 0 ? y.intl.formatToPlainString(y.t.VuV3TU, {
+  let T = null != d || null != f || null != p,
+    S = m.length > 0 ? y.intl.formatToPlainString(y.t.VuV3TU, {
       discountOfferAmount: m[0].discount.amount
     }) : true;
   return (i.useEffect(() => {
-    null == O || S || v.current || (v.current = true, (0, _.Z)({
+    null == O || T || v.current || (v.current = true, (0, _.Z)({
       product: O,
-      overrideTitle: T,
+      overrideTitle: S,
       analyticsLocations: n,
       onCloseCallback: t,
       purchaseType: b.o8.FIAT
     }))
-  }, [O, n, t, S, T]), S) ? (0, r.jsx)(g.C3, {
+  }, [O, n, t, T, S]), T) ? (0, r.jsx)(g.C3, {
     children: (0, r.jsx)(E.Z, {})
   }) : null
 }
 
-function S(e) {
+function T(e) {
   let {
     isGift: t,
     giftCode: n,
@@ -89,9 +89,9 @@ function S(e) {
     isSendingMessage: E
   } = (0, p.wD)(), b = (0, s.e7)([l.Z], () => l.Z.useReducedMotion), y = i.useRef(null), {
     selectedSkuId: O
-  } = (0, h.JL)(), S = (0, s.e7)([c.Z], () => c.Z.getProduct(O)), {
-    confettiColors: T
-  } = (0, u.Z)(null == S ? true : S.styles);
+  } = (0, h.JL)(), T = (0, s.e7)([c.Z], () => c.Z.getProduct(O)), {
+    confettiColors: S
+  } = (0, u.Z)(null == T ? true : T.styles);
   return t ? (0, r.jsxs)("div", {
     ref: y,
     children: [(0, r.jsx)(m.Z, {
@@ -105,8 +105,8 @@ function S(e) {
     }), !e.hideConfetti && !b && (0, r.jsx)(d.Z, {
       confettiTarget: y.current,
       confettiCanvas: e.confettiCanvas,
-      sprites: (0, f.vK)(null == S ? true : S.categorySkuId),
-      colors: null == T ? true : T.map(e => e.toHexString())
+      sprites: (0, f.vK)(null == T ? true : T.categorySkuId),
+      colors: null == S ? true : S.map(e => e.toHexString())
     })]
   }) : (0, r.jsx)(I, v({}, e))
 }

@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk149715 = require("./149715.js"),
   Chunk197571 = require("./197571.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,14 +35,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -64,7 +64,7 @@ function R(e) {
       pttLatchingEnabled: _
     } = (0, s.cj)([h.Z], () => h.Z.getModeOptions()),
     {
-      enableLatching: S
+      enableLatching: T
     } = (0, g.H)({
       location: "PTTTools"
     });
@@ -114,7 +114,7 @@ function R(e) {
           })]
         })
       })]
-    }), S && (0, r.jsxs)(c.xJW, {
+    }), T && (0, r.jsxs)(c.xJW, {
       className: I.marginTop8,
       children: [(0, r.jsx)(p.FG, {
         children: e => (0, r.jsxs)("div", {
@@ -160,7 +160,7 @@ function P() {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 468026));
-      return t => (0, r.jsx)(e, T({
+      return t => (0, r.jsx)(e, S({
         title: y.intl.string(y.t.Kdt0GR),
         confirmText: y.intl.string(y.t["1WjMbG"]),
         cancelText: y.intl.string(y.t.BddRzc),

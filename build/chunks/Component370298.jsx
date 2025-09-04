@@ -142,7 +142,7 @@ function U(e) {
     channel: o,
     imageUrl: I,
     mimeType: x
-  } = e, j = (0, a.e7)([T.Z], () => T.Z.getGuild(o.guild_id)), {
+  } = e, j = (0, a.e7)([S.Z], () => S.Z.getGuild(o.guild_id)), {
     fetchState: M,
     imageRecCommandContexts: k
   } = (0, N.h)({
@@ -181,7 +181,7 @@ function U(e) {
           platform: u.ow.WEB,
           origin: "unknown:app_recommendation"
         },
-        draftType: S.d.SlashCommand
+        draftType: T.d.SlashCommand
       })
     }, [I, o.id, x]),
     V = i.useCallback(async (e, t, n, r) => {

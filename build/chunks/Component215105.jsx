@@ -25,11 +25,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk420212 = require("./420212.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk36190 = require("./36190.js");
-let S = (0, Chunk131704.kt)({
+let T = (0, Chunk131704.kt)({
     id: "1",
     type: Chunk106351.d.DM
   }),
-  T = e => {
+  S = e => {
     let {
       input: t,
       username: n,
@@ -103,7 +103,7 @@ function C(e) {
     }) : C({
       action: "SEND_REPLY_ACTIVITY"
     });
-    let n = T({
+    let n = S({
       input: e,
       username: h.ZP.getName(t),
       sourceType: s,
@@ -143,7 +143,7 @@ function C(e) {
         placeholder: v.intl.formatToPlainString(A(s), {
           username: p.ZP.getName(n, a, t)
         }),
-        channel: S,
+        channel: T,
         textValue: x,
         richValue: j,
         onChange: (e, t, n) => {

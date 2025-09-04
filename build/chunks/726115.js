@@ -5,13 +5,13 @@ require.d(exports, {
   Ew: () => y,
   Iv: () => v,
   Mf: () => m,
-  PM: () => T,
+  PM: () => S,
   QW: () => E,
   Uv: () => O,
   Xp: () => I,
   a$: () => g,
   lg: () => b,
-  vL: () => S,
+  vL: () => T,
   vb: () => h
 }), require("./415506.js"), require("./953529.js"), require("./388685.js"), require("./704826.js"), require("./35282.js");
 var Chunk772848 = require("./772848.js"),
@@ -210,7 +210,7 @@ function I() {
   let [t] = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [Chunk706454.default], n = (0, Chunk128449.Cf)(), r = exports.locale;
   return (null != (e = require.find(e => e.code === r)) ? module : require[0]).code
 }
-async function S(e) {
+async function T(e) {
   let {
     loadId: t,
     guildId: n,
@@ -230,6 +230,6 @@ async function S(e) {
   })
 }
 
-function T() {
+function S() {
   return (0, Chunk772848.Z)().replace(/-/g, "")
 }

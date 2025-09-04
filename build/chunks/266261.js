@@ -111,7 +111,7 @@ var b = /^(matrix|translate|scale|rotate|skew)/,
       return e(t, n)
     }) : u.is.num(t) ? t === n : parseFloat(t) === n
   },
-  S = function(e) {
+  T = function(e) {
     function t(t) {
       var n = t.x,
         r = t.y,
@@ -142,11 +142,11 @@ var b = /^(matrix|translate|scale|rotate|skew)/,
             }).join(",") + ")", I(e, +!!t.startsWith("scale"))]
           })
         }
-      }), s.length && (o.transform = new T(s, l)), e.call(this, o) || this
+      }), s.length && (o.transform = new S(s, l)), e.call(this, o) || this
     }
     return d(t, e), t
   }(Chunk363920.AnimatedObject),
-  T = function(e) {
+  S = function(e) {
     function t(t, n) {
       var r;
       return (r = e.call(this) || this).inputs = t, r.transforms = n, r._value = null, r._children = new Set, r
@@ -197,7 +197,7 @@ Chunk41958.Globals.assign({
 var C = Chunk363920.createHost(A, {
   applyAnimatedValues: h,
   createAnimatedStyle: function(e) {
-    return new S(e)
+    return new T(e)
   },
   getComponentProps: function(e) {
     return e.scrollTop, e.scrollLeft, i(e, ["scrollTop", "scrollLeft"])

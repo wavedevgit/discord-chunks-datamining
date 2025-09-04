@@ -74,9 +74,9 @@ function h(e, t) {
     o = m(n[3]),
     s = m(n[4]),
     l = m(n[5]) - 1;
-  if (r) return T(t, s, l) ? y(t, s, l) : new Date(NaN);
+  if (r) return S(t, s, l) ? y(t, s, l) : new Date(NaN);
   var c = new Date(0);
-  return I(t, a, o) && S(t, i) ? (c.setUTCFullYear(t, a, Math.max(i, o)), c) : new Date(NaN)
+  return I(t, a, o) && T(t, i) ? (c.setUTCFullYear(t, a, Math.max(i, o)), c) : new Date(NaN)
 }
 
 function m(e) {
@@ -122,11 +122,11 @@ function I(e, t, n) {
   return t >= 0 && t <= 11 && n >= 1 && n <= (O[t] || (v(e) ? 29 : 28))
 }
 
-function S(e, t) {
+function T(e, t) {
   return t >= 1 && t <= (v(e) ? 366 : 365)
 }
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t >= 1 && t <= 53 && n >= 0 && n <= 6
 }
 

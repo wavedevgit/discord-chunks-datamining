@@ -46,7 +46,7 @@ function I(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,8 +57,8 @@ function S(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -150,13 +150,13 @@ function L(e) {
     className: a,
     colors: o,
     setColors: s
-  } = e, c = (0, h.Z)(), [v, S] = i.useState(0), [A, R] = i.useState(t);
+  } = e, c = (0, h.Z)(), [v, T] = i.useState(0), [A, R] = i.useState(t);
   i.useEffect(() => {
     if (o.length > 0 && v < o.length) {
       let e = o[v];
       (0, u.FX)(e) && (R(e), n(e))
     }
-    v >= o.length && S(0)
+    v >= o.length && T(0)
   }, [v, o, n]);
   let P = e => {
       let t = e.trim();
@@ -191,15 +191,15 @@ function L(e) {
       let e = o.length > 0 ? o[o.length - 1] : A,
         t = o.length > 0 ? x(e) : e,
         n = [...o, t];
-      s(n), S(n.length - 1)
+      s(n), T(n.length - 1)
     }, G = e => {
       if (o.length > 1) {
         (0, E.JL)();
         let t = o.filter((t, n) => n !== e);
-        s(t), v >= t.length ? S(t.length - 1) : v > e && S(v - 1)
+        s(t), v >= t.length ? T(t.length - 1) : v > e && T(v - 1)
       }
     }, B = e => {
-      S(e), (0, E.w8)()
+      T(e), (0, E.w8)()
     }, Z = o.length > 1;
   return (0, r.jsxs)("div", {
     className: l()(O.container, a),
@@ -227,7 +227,7 @@ function L(e) {
         children: [null != c && (0, r.jsx)(p.ua7, {
           text: y.intl.string(b.default["NCFz+P"]),
           tooltipClassName: O.eyeDropperTooltip,
-          children: e => (0, r.jsx)(_.h, T(I({
+          children: e => (0, r.jsx)(_.h, S(I({
             variant: "icon-only",
             size: "sm"
           }, e), {
@@ -237,7 +237,7 @@ function L(e) {
           }))
         }), Z && (0, r.jsx)(p.ua7, {
           text: y.intl.string(y.t.N86XcH),
-          children: e => (0, r.jsx)(_.h, T(I({}, e), {
+          children: e => (0, r.jsx)(_.h, S(I({}, e), {
             variant: "icon-only",
             size: "sm",
             onClick: () => G(v),

@@ -130,8 +130,8 @@ function eO(e, t) {
 }
 let ev = eP(null),
   eI = 20,
-  eS = 16,
-  eT = 1,
+  eT = 16,
+  eS = 1,
   eA = "voice-widget-display-users",
   eC = 25,
   eN = [0, 5, 10, 15, 20, 25];
@@ -302,9 +302,9 @@ function eM(e) {
       }
     }
     return (0, C.b6)(o, false, [X.Z, J.Z])
-  }, [o, u]), p = (0, _.e7)([C.ZP, X.Z, J.Z], () => null == o ? null : (0, C.FZ)(o, C.ZP, X.Z, J.Z), [o], l()), [E, b] = i.useState(f), [O, S] = i.useState(d), [T, A] = i.useState(false);
+  }, [o, u]), p = (0, _.e7)([C.ZP, X.Z, J.Z], () => null == o ? null : (0, C.FZ)(o, C.ZP, X.Z, J.Z), [o], l()), [E, b] = i.useState(f), [O, T] = i.useState(d), [S, A] = i.useState(false);
   i.useEffect(() => {
-    b(f), S(d)
+    b(f), T(d)
   }, [f, d]);
   let N = !(0, es.supportsLegacy)(),
     R = !(0, es.supportsOutOfProcess)(),
@@ -319,7 +319,7 @@ function eM(e) {
         l = false;
       switch (t) {
         case D.AE.LEGACY_GAME:
-          S(e), g.Z.toggleOverlay(o, e, E), s = !e && O;
+          T(e), g.Z.toggleOverlay(o, e, E), s = !e && O;
           break;
         case D.AE.OOP_GAME:
           b(e), g.Z.toggleOverlay(o, O, e), l = !e && E;
@@ -352,13 +352,13 @@ function eM(e) {
         i = false;
       switch (t) {
         case "game":
-          g.Z.toggleOverlay(o, e, e), S(e), b(e), r = !e && O, i = !e && E;
+          g.Z.toggleOverlay(o, e, e), T(e), b(e), r = !e && O, i = !e && E;
           break;
         case "global":
           y.Z.setEnabled(e, e), r = !e && x, i = !e && j;
           break;
         case "both":
-          y.Z.setEnabled(e, e), g.Z.toggleOverlay(o, e, e), S(e), b(e), r = !e && x || !e && O, i = !e && j || !e && E
+          y.Z.setEnabled(e, e), g.Z.toggleOverlay(o, e, e), T(e), b(e), r = !e && x || !e && O, i = !e && j || !e && E
       }
       let a = null;
       if (r ? a = "game" === t ? D.AE.LEGACY_GAME : D.AE.LEGACY : i && (a = "game" === t ? D.AE.OOP_GAME : D.AE.OOP), null != a) {
@@ -465,18 +465,18 @@ function eM(e) {
   let [ei, ea] = i.useMemo(() => z ? ["text-muted", m.TVs.colors.TEXT_MUTED.css] : K && Q ? ["text-feedback-warning", m.TVs.colors.TEXT_FEEDBACK_WARNING.css] : K && q ? ["text-feedback-positive", m.TVs.colors.TEXT_FEEDBACK_POSITIVE.css] : K && $ ? ["text-primary", m.TVs.colors.TEXT_PRIMARY.css] : ["interactive-normal", m.TVs.colors.INTERACTIVE_NORMAL.css], [z, K, Q, q, $]);
   return null == o ? null : (0, r.jsxs)(ex, {
     onExpand: A,
-    className: T ? e_.expandedContainer : true,
+    className: S ? e_.expandedContainer : true,
     title: (0, r.jsxs)(r.Fragment, {
       children: [null != (a = null != (n = null != (t = null == s ? true : s.name) ? t : null == p ? true : p.name) ? n : null == o ? true : o.gameName) ? a : "", null != p && p.verified ? (0, r.jsx)(m.ua7, {
         text: ef.intl.string(ef.t["4PJP5u"]),
         children: e => (0, r.jsx)(w.Z, eb(eg({
-          size: eS,
+          size: eT,
           color: m.TVs.colors.BG_BRAND.css
         }, e), {
           children: (0, r.jsx)(m.kmB, {
             size: "custom",
-            width: eS,
-            height: eS,
+            width: eT,
+            height: eT,
             color: m.TVs.colors.WHITE.css
           })
         }))
@@ -556,7 +556,7 @@ function ek(e) {
   let {
     game: t,
     gameApplication: n
-  } = e, a = i.useMemo(() => null == t ? null : "pid" in t ? t.pid : null, [t]), o = (0, _.e7)([S.Z], () => null != n ? n : S.Z.getApplication(null == t ? true : t.id), [n, t]);
+  } = e, a = i.useMemo(() => null == t ? null : "pid" in t ? t.pid : null, [t]), o = (0, _.e7)([T.Z], () => null != n ? n : T.Z.getApplication(null == t ? true : t.id), [n, t]);
   return (0, r.jsx)(P.Z, {
     game: o,
     pid: a,
@@ -925,7 +925,7 @@ function eK() {
   }), d = null != (t = null == u || null == (e = u.meta) ? true : module.voiceStatesMaxShown) ? exports : Chunk501787.At, f = [null != l ? eH(l) : null, ...Chunk512722].filter(Chunk823379.lm), p = [new Map(f.map(e => [e.user.id, e])), f.map(e => e.user.id)];
 
   function h(e) {
-    null != u && (e < eT ? (0, b.zG)(u.id, {
+    null != u && (e < eS ? (0, b.zG)(u.id, {
       voiceStatesMaxShown: ed.Og
     }) : (0, b.zG)(u.id, {
       voiceStatesMaxShown: Math.floor(e)
@@ -1025,8 +1025,8 @@ function eK() {
         className: Chunk607547.sliderContainer,
         children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
           initialValue: Chunk392711,
-          onValueRender: e => e < eT ? ef.intl.string(ef.t.nrUzFB) : "".concat(Math.floor(e)),
-          minValue: eT - 1,
+          onValueRender: e => e < eS ? ef.intl.string(ef.t.nrUzFB) : "".concat(Math.floor(e)),
+          minValue: eS - 1,
           maxValue: eC,
           onValueChange: Chunk755721,
           markers: eN,
@@ -1037,7 +1037,7 @@ function eK() {
             background: Chunk481060.TVs.colors.BG_BRAND.css
           },
           "aria-labelledby": eA,
-          onMarkerRender: e => e < eT ? ef.intl.string(ef.t.nrUzFB) : "".concat(Math.floor(e))
+          onMarkerRender: e => e < eS ? ef.intl.string(ef.t.nrUzFB) : "".concat(Math.floor(e))
         })
       })
     })]

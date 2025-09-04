@@ -572,14 +572,14 @@ function ei() {
 async function ea(e) {
   e(true);
   let t = await (0, I.Tn)();
-  0 === t.length ? await (0, T.oL)() : _.Z.show({
+  0 === t.length ? await (0, S.oL)() : _.Z.show({
     title: H.intl.string(H.t["cY+Ooa"]),
     body: H.intl.format(H.t["7zTJJS"], {
       date: new Date(t[t.length - 1].recorded_at)
     }),
     cancelText: H.intl.string(H.t["ETE/oK"]),
     confirmText: H.intl.string(H.t.Rm96T0),
-    onConfirm: T.oL
+    onConfirm: S.oL
   }), e(false)
 }
 

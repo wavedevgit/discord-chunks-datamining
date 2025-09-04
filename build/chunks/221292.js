@@ -9,7 +9,7 @@ require.d(exports, {
   RV: () => N,
   TY: () => D,
   pQ: () => C,
-  te: () => S,
+  te: () => T,
   z7: () => R
 }), require("./539854.js"), require("./388685.js");
 var Chunk367907 = require("./367907.js"),
@@ -88,8 +88,8 @@ let v = e => {
       n = s.Z.isMobileOnline(e);
     return t === g.Sk.ONLINE && n ? "".concat(t, "-mobile") : t === g.Sk.ONLINE ? "".concat(t, "-desktop") : t
   },
-  S = e => null == e ? e : "VOICE" === e ? "VOICE" : Object.keys(m.IIU)[Object.values(m.IIU).indexOf(e)],
-  T = e => {
+  T = e => null == e ? e : "VOICE" === e ? "VOICE" : Object.keys(m.IIU)[Object.values(m.IIU).indexOf(e)],
+  S = e => {
     var t, n, r;
     let {
       layout: i,
@@ -160,7 +160,7 @@ let v = e => {
       action: s,
       section: l
     } = e;
-    u.default.track(m.rMx.USER_PROFILE_ACTION, O(b({}, (0, r.hH)(t), (0, r.JS)(n), T(e), A(e)), {
+    u.default.track(m.rMx.USER_PROFILE_ACTION, O(b({}, (0, r.hH)(t), (0, r.JS)(n), S(e), A(e)), {
       location_stack: o,
       profile_action: s,
       profile_section: l,
@@ -183,7 +183,7 @@ let v = e => {
       timeToLoadMs: c,
       timeToFetchMs: d
     } = e;
-    (null != l ? l : 0) <= 0 || (null != c ? c : 0) <= 0 || (null != d ? d : 0) <= 0 || u.default.track(m.rMx.USER_PROFILE_UI_VIEWED, O(b({}, (0, r.hH)(t), (0, r.JS)(n), T(e), A(e)), {
+    (null != l ? l : 0) <= 0 || (null != c ? c : 0) <= 0 || (null != d ? d : 0) <= 0 || u.default.track(m.rMx.USER_PROFILE_UI_VIEWED, O(b({}, (0, r.hH)(t), (0, r.JS)(n), S(e), A(e)), {
       location_stack: i,
       profile_ui: a,
       view_started_at: o,
@@ -206,11 +206,11 @@ let v = e => {
       outbox: d,
       voiceChannelId: f
     } = e;
-    u.default.track(m.rMx.USER_PROFILE_ACTIVITY_ACTION, O(b({}, (0, r.hH)(t), (0, r.JS)(n), T(e), A(e)), {
+    u.default.track(m.rMx.USER_PROFILE_ACTIVITY_ACTION, O(b({}, (0, r.hH)(t), (0, r.JS)(n), S(e), A(e)), {
       location_stack: i,
       activity_action: a,
       activity_display: o,
-      activity_type: S(null != l ? m.IIU.STREAMING : null == s ? true : s.type),
+      activity_type: T(null != l ? m.IIU.STREAMING : null == s ? true : s.type),
       activity_name: null == s ? true : s.name,
       activity_platform: null == s ? true : s.platform,
       activity_session_id: null == s ? true : s.session_id,
@@ -239,7 +239,7 @@ let v = e => {
       analyticsLocations: i,
       badge: a
     } = e;
-    u.default.track(m.rMx.USER_PROFILE_BADGE_PRESSED, O(b({}, (0, r.hH)(t), (0, r.JS)(n), T(e), A(e)), {
+    u.default.track(m.rMx.USER_PROFILE_BADGE_PRESSED, O(b({}, (0, r.hH)(t), (0, r.JS)(n), S(e), A(e)), {
       location_stack: i,
       badge: a
     }))
@@ -251,7 +251,7 @@ let v = e => {
       analyticsLocations: i,
       badge: a
     } = e;
-    u.default.track(m.rMx.USER_PROFILE_BADGE_HOVERED, O(b({}, (0, r.hH)(t), (0, r.JS)(n), T(e), A(e)), {
+    u.default.track(m.rMx.USER_PROFILE_BADGE_HOVERED, O(b({}, (0, r.hH)(t), (0, r.JS)(n), S(e), A(e)), {
       location_stack: i,
       badge: a
     }))
@@ -290,7 +290,7 @@ let v = e => {
     } = e;
     C(O(b({}, e), {
       action: a
-    })), u.default.track(m.rMx.USER_PROFILE_EDIT_ACTION, O(b({}, (0, r.hH)(t), (0, r.JS)(n), T(e)), {
+    })), u.default.track(m.rMx.USER_PROFILE_EDIT_ACTION, O(b({}, (0, r.hH)(t), (0, r.JS)(n), S(e)), {
       location_stack: i,
       edit_action: a,
       widget_edited: o,

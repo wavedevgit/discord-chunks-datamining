@@ -29,11 +29,11 @@ let f = e => {
     var e;
     return null == (e = l.default.getCurrentUser()) ? true : e.id
   }), I = null == O ? null == n ? true : n.avatarDecoration : null === O.avatarDecoration ? null : null != (t = O.avatarDecoration) ? t : null == n ? true : n.avatarDecoration, {
-    pendingAvatarDecoration: S
+    pendingAvatarDecoration: T
   } = (0, o.Z)({
     isTryItOut: m,
     guildId: f
-  }), T = h && true !== S && true !== v && v === (null == n ? true : n.id), A = null != f && null === S, C = (0, u.Z)(T ? A ? null == n ? true : n.avatarDecoration : null != S ? S : I : null != I ? I : null == n ? true : n.avatarDecoration), N = r.useMemo(() => (0, c.NZ)({
+  }), S = h && true !== T && true !== v && v === (null == n ? true : n.id), A = null != f && null === T, C = (0, u.Z)(S ? A ? null == n ? true : n.avatarDecoration : null != T ? T : I : null != I ? I : null == n ? true : n.avatarDecoration), N = r.useMemo(() => (0, c.NZ)({
     avatarDecoration: true !== g ? g : C,
     canAnimate: y,
     size: _

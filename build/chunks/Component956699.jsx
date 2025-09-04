@@ -844,7 +844,7 @@ function ed() {
           minValue: 0,
           maxValue: require,
           markers: o,
-          onValueChange: e => T.i.getState().setHorizontalSpacing(e),
+          onValueChange: e => S.i.getState().setHorizontalSpacing(e),
           onValueRender: e => "".concat(Math.round(e), "px"),
           onMarkerRender: e => e % 4 == 0 ? "".concat(e) : true,
           equidistant: true
@@ -862,7 +862,7 @@ function ed() {
           minValue: 0,
           maxValue: Chunk120356,
           markers: Chunk392711,
-          onValueChange: e => T.i.getState().setVerticalSpacing(e),
+          onValueChange: e => S.i.getState().setVerticalSpacing(e),
           onValueRender: e => "".concat(Math.round(e), "px"),
           onMarkerRender: e => e % 4 == 0 ? "".concat(e) : true,
           equidistant: true

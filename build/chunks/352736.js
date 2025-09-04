@@ -30,13 +30,13 @@ let O = {
   v = () => [Chunk388032.t["0cuj7u"], Chunk388032.t["MuW+CA"], Chunk388032.t.osqpHR, Chunk388032.t["5ToSh4"], Chunk388032.t.JEB8pq, Chunk388032.t.pkOV5e, Chunk388032.t.kRb1Jy, Chunk388032.t.EmKLY2, Chunk388032.t.rPtBnZ, Chunk388032.t["5B/ekZ"], Chunk388032.t.ESNC3d, Chunk388032.t["Iw6d8/"], Chunk388032.t.WecSZ2],
   I = () => [Chunk388032.t.Jm6e09, Chunk388032.t.MGRnRU, Chunk388032.t.EXOEGh, Chunk388032.t["5uCTFB"], Chunk388032.t.rl45Qk, Chunk388032.t.Bh9zpa, Chunk388032.t.RdEy1N, Chunk388032.t.qcdp09, Chunk388032.t.F7w2Rk, Chunk388032.t.gSyOgI, Chunk388032.t.uYgqv7, Chunk388032.t["b/1SBQ"], Chunk388032.t.LhebZG];
 
-function S(e) {
+function T(e) {
   let t = I(),
     n = E.default.extractTimestamp(e) % t.length;
   return t[n]
 }
 
-function T(e) {
+function S(e) {
   return (0, a.Rp)(y.intl.formatToParts(y.t["ihxM9/"], {
     username: e,
     usernameOnClick: b.dG4
@@ -45,7 +45,7 @@ function T(e) {
 
 function A(e, t) {
   let n = p.Z.getChannel(t);
-  return null == n || null == h.Z.getGuild(n.getGuildId()) ? T(e) : (0, a.Rp)(y.intl.formatToParts(y.t["ihxM9/"], {
+  return null == n || null == h.Z.getGuild(n.getGuildId()) ? S(e) : (0, a.Rp)(y.intl.formatToParts(y.t["ihxM9/"], {
     username: e,
     usernameOnClick: b.dG4
   }))
@@ -155,12 +155,12 @@ let w = {
           usernameOnClick: b.dG4
         }));
       case b.uaV.USER_JOIN:
-        return (0, a.Rp)(y.intl.formatToParts(S(e.id), {
+        return (0, a.Rp)(y.intl.formatToParts(T(e.id), {
           username: O,
           usernameOnClick: b.dG4
         }));
       case b.uaV.GUILD_BOOST:
-        return T(O);
+        return S(O);
       case b.uaV.GUILD_BOOST_TIER_1:
       case b.uaV.GUILD_BOOST_TIER_2:
       case b.uaV.GUILD_BOOST_TIER_3:
@@ -234,7 +234,7 @@ let w = {
       n = E.default.extractTimestamp(e) % t.length;
     return t[n]
   },
-  getSystemMessageUserJoinMobile: S,
+  getSystemMessageUserJoinMobile: T,
   getSystemMessageBotJoin: function(e) {
     return null == O[e] ? null : y.intl.format(y.t.xw1Ij4, {
       learnOnClick: {

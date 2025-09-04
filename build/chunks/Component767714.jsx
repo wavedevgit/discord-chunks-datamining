@@ -85,8 +85,8 @@ let y = function(e) {
     onSubscribeModalClose: O,
     premiumModalAnalyticsLocation: v,
     showIcon: I = true,
-    disableShine: S,
-    applicationId: T,
+    disableShine: T,
+    applicationId: S,
     shinyButtonClassName: A,
     showGradient: C = false,
     confirmationFooter: N,
@@ -106,7 +106,7 @@ let y = function(e) {
       postSuccessGuild: y,
       onSubscribeModalClose: O,
       premiumModalAnalyticsLocation: v,
-      applicationId: T,
+      applicationId: S,
       confirmationFooter: N,
       paymentModalBanner: R
     };
@@ -131,7 +131,7 @@ let y = function(e) {
             [_.tier1Gradient]: C && t === f.Si.TIER_1
           }, p),
           buttonShineClassName: "buttonShineClassName" in D ? D.buttonShineClassName : n === s.Tt.BRAND_INVERTED ? _.brandShine : true,
-          pauseAnimation: !x || S
+          pauseAnimation: !x || T
         }, D, e), {
           children: [I && (0, r.jsx)(l.SrA, {
             size: "md",

@@ -117,7 +117,7 @@ let en = e => {
       messageId: a
     } = e, [s, l] = i.useState(true), [c, u] = i.useState([]), d = i.useMemo(() => {
       if (null == c || c.length < 1) return;
-      let e = (0, S.Zn)(t, c[0], n, {
+      let e = (0, T.Zn)(t, c[0], n, {
         emojiSize: I.M.LARGE,
         messageId: a
       });
@@ -230,11 +230,11 @@ function ei(e) {
   } = e, d = (0, u.e7)([R.default], () => R.default.getId()), _ = (0, u.e7)([M.default], () => M.default.getUser(n.id), [n]), m = (0, C.$R)(a), E = (0, u.e7)([L.Z], () => L.Z.can(F.Plq.MANAGE_MESSAGES, a) && m) || d === n.id, b = (0, u.e7)([w.ZP, P.Z, j.Z], () => G.ZP.getName(o, a.id, n));
 
   function y() {
-    T.WO({
+    S.WO({
       channelId: a.id,
       messageId: i.id,
       emoji: t,
-      location: T.TW.MESSAGE,
+      location: S.TW.MESSAGE,
       userId: n.id,
       options: {
         burst: s === v.O.BURST
@@ -455,16 +455,16 @@ function ec(e) {
     var e, n;
     let r = null != (n = x.Z.getMessage(t.getChannelId(), t.id)) ? n : null == (e = y.Z.getMessage(B.default.castMessageIdAsChannelId(t.id))) ? true : e.firstMessage;
     return null != r ? r.reactions : []
-  }, [t]), g = es(h), E = g[0], [I, S] = el(n, null != E ? {
+  }, [t]), g = es(h), E = g[0], [I, T] = el(n, null != E ? {
     emoji: E.emoji,
     reactionType: E.burst_count > 0 ? v.O.BURST : v.O.NORMAL
-  } : null, g), T = i.useMemo(() => {
+  } : null, g), S = i.useMemo(() => {
     var e;
     return null == I ? null : null != (e = h.find(e => (0, A.ir)(e.emoji, I.emoji))) ? e : null
   }, [h, I]), C = (0, u.e7)([m.Z], () => m.Z.saturation), R = (0, u.e7)([N.Z], () => (0, d.wj)(N.Z.theme));
   if (i.useEffect(() => {
-      (0 === h.length || null == I && null == T) && setImmediate(s)
-    }, [s, h.length, T, I]), null == I || null == T) return (0, r.jsx)(f.$jN, {});
+      (0 === h.length || null == I && null == S) && setImmediate(s)
+    }, [s, h.length, S, I]), null == I || null == S) return (0, r.jsx)(f.$jN, {});
   if (null == _) throw Error("MessageReactions.render: Message does not have a channelId");
   return (0, r.jsx)(O.Z.Provider, {
     value: null != p ? p : true,
@@ -482,7 +482,7 @@ function ec(e) {
           let n = e.burst_count > 0;
           return (0, r.jsx)(er, {
             isSelected: eu(I, e, n ? v.O.BURST : v.O.NORMAL),
-            setSelected: S,
+            setSelected: T,
             reactionType: n ? v.O.BURST : v.O.NORMAL,
             emoji: e.emoji,
             count: n ? e.burst_count : e.count,
@@ -491,7 +491,7 @@ function ec(e) {
         })
       }), (0, r.jsx)(eo, {
         message: t,
-        reaction: T,
+        reaction: S,
         guildId: p,
         channel: _,
         reactionType: I.reactionType,

@@ -118,7 +118,7 @@ function I(e) {
   return null == e ? true : e.map(e => {
     var t, n;
     let r = O(b({}, e), {
-      choices: S(e.choices),
+      choices: T(e.choices),
       options: I(e.options),
       serverLocalizedName: e.name_localized,
       displayName: null != (t = e.name_localized) ? t : e.name,
@@ -136,7 +136,7 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   return null == e ? true : e.map(e => {
     var t;
     return O(b({}, e), {
@@ -145,7 +145,7 @@ function S(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   var t, n;
   let {
     rootCommand: r,
@@ -172,7 +172,7 @@ function T(e) {
   let l = [];
   if (null == i.options) return l;
   let c = i.options.filter(e => e.type === u.jw.SUB_COMMAND_GROUP);
-  for (let e = 0; e < c.length; e++) l.push(...T({
+  for (let e = 0; e < c.length; e++) l.push(...S({
     rootCommand: r,
     command: c[e],
     applicationId: a,
@@ -205,7 +205,7 @@ function T(e) {
 }
 
 function A(e, t) {
-  return l().flatMap(e, e => (o()(null != e.id, "Missing command id"), T({
+  return l().flatMap(e, e => (o()(null != e.id, "Missing command id"), S({
     rootCommand: e,
     command: e,
     applicationId: e.application_id,

@@ -2,7 +2,7 @@
 /** chunk id: 942951, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  l: () => T
+  l: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -77,14 +77,14 @@ function I(e, t) {
   return i
 }
 
-function S(e, t) {
+function T(e, t) {
   return i.useCallback(n => {
     let r = h.Z.getChannel(t);
     null != r && null != e && (0, m.Pv)(n, e, r)
   }, [e, t])
 }
 
-function T(e) {
+function S(e) {
   let {
     user: t,
     channelId: n,
@@ -93,11 +93,11 @@ function T(e) {
     stopPropagation: E = false,
     ariaLabel: y,
     enableDisplayNameStyles: I = false
-  } = e, T = i.useRef(null), {
+  } = e, S = i.useRef(null), {
     analyticsLocations: A
   } = (0, c.ZP)(l.Z.USERNAME), C = (0, _.ZP)(h, null == t ? true : t.id), N = (0, f.j)({
     displayNameStyles: null == t ? true : t.displayNameStyles
-  }), R = S(t, n), P = i.useContext(o.d);
+  }), R = T(t, n), P = i.useContext(o.d);
   return (0, g.Z)({
     subscribeToGroupId: m,
     authorId: null == t ? true : t.id,
@@ -108,7 +108,7 @@ function T(e) {
       _ = (t, n) => {
         var o, c, _;
         if (!I || (null == e ? true : e.displayNameStyles) == null || null != h) return (0, r.jsx)(s.rz2, O(b({}, null != t ? t : {}), {
-          ref: T,
+          ref: S,
           onContextMenu: R,
           name: null != (c = (0, s.qgQ)(i)) ? c : "",
           colorString: null != (_ = null == e ? true : e.colorString) ? _ : null,
@@ -120,7 +120,7 @@ function T(e) {
         {
           let l = (null == P ? true : P.animate) || (null == n ? true : n.isShown) ? u.F.ANIMATED : u.F.PLAIN;
           return (0, r.jsx)(a.Anchor, O(b({}, null != t ? t : {}), {
-            ref: T,
+            ref: S,
             onContextMenu: R,
             "aria-label": y,
             children: (0, r.jsx)(d.Z, {
@@ -139,7 +139,7 @@ function T(e) {
     return (0, r.jsx)(c.Gt, {
       value: A,
       children: null != t ? (0, r.jsx)(p.Z, {
-        targetElementRef: T,
+        targetElementRef: S,
         user: t,
         guildId: h,
         channelId: n,

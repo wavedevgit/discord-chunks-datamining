@@ -34,7 +34,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,7 +59,7 @@ function T(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -137,7 +137,7 @@ let P = ["TOP_LEFT", "TOP_RIGHT"],
       },
       leafRotationDirection: false
     },
-    BOTTOM_LEFT: A(S({}, L), {
+    BOTTOM_LEFT: A(T({}, L), {
       getConfettiPosition: e => ({
         x: e - D,
         y: x
@@ -147,7 +147,7 @@ let P = ["TOP_LEFT", "TOP_RIGHT"],
         y: false
       }
     }),
-    BOTTOM_RIGHT: A(S({}, L), {
+    BOTTOM_RIGHT: A(T({}, L), {
       getConfettiPosition: e => ({
         x: D,
         y: x
@@ -252,7 +252,7 @@ function ee(e) {
   } = e, u = i.useRef(null), [f, p] = i.useState(null), [h] = i.useState(null != a ? a : H()), {
     createMultipleConfettiAt: m,
     confettiCanvas: g
-  } = i.useContext(_.h), [E, b] = i.useState(null), y = (0, s.uR)(g, E), O = Q(f, h), I = P.includes(h), S = I && "exit" === f, T = i.useCallback(e => {
+  } = i.useContext(_.h), [E, b] = i.useState(null), y = (0, s.uR)(g, E), O = Q(f, h), I = P.includes(h), T = I && "exit" === f, S = i.useCallback(e => {
     p(e)
   }, []), A = i.useCallback(() => {
     "exit" === f && (null == t || t())
@@ -336,11 +336,11 @@ function ee(e) {
       children: (0, r.jsx)(d.kci, {
         animationRef: C,
         className: o()(v.easterEggAnimation, {
-          [v.easterEggAnimationHideLeaf]: S
+          [v.easterEggAnimationHideLeaf]: T
         }),
         nextScene: O,
         sceneSegments: N,
-        onScenePlay: T,
+        onScenePlay: S,
         onSceneComplete: A,
         importData: X,
         pauseWhileUnfocused: false
@@ -361,9 +361,9 @@ function et(e) {
     u = (0, m.Z)(n),
     {
       createMultipleConfettiAt: I,
-      addClickListener: S
+      addClickListener: T
     } = i.useContext(_.h),
-    [T, A] = i.useState(false),
+    [S, A] = i.useState(false),
     N = i.useRef(null),
     {
       reducedMotion: R
@@ -392,13 +392,13 @@ function et(e) {
   });
   let x = i.useCallback(() => {
       if (!R.enabled)
-        if (T || 0 !== Math.floor(Math.random() * C)) {
+        if (S || 0 !== Math.floor(Math.random() * C)) {
           var e;
           let t = null == (e = N.current) ? true : e.getBoundingClientRect();
           if (null == t) return;
           I(t.left + t.width / 2, t.top + t.height / 2)
         } else A(true)
-    }, [I, R, T]),
+    }, [I, R, S]),
     L = i.useCallback(() => {
       A(false)
     }, []),
@@ -410,7 +410,7 @@ function et(e) {
     M = i.useCallback((e, t) => {
       (null == t ? true : t.id.startsWith(F)) && j()
     }, [j]);
-  i.useEffect(() => S(M));
+  i.useEffect(() => T(M));
   let k = (0, r.jsx)(d.P3F, {
     className: v.iconWrapper,
     innerRef: N,
@@ -429,7 +429,7 @@ function et(e) {
       onClick: l,
       className: v.message,
       children: t
-    }), T ? (0, r.jsx)(p.ZP, {
+    }), S ? (0, r.jsx)(p.ZP, {
       children: (0, r.jsx)("div", {
         className: v.cannonWrapper,
         children: (0, r.jsx)(ee, {

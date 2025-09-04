@@ -73,7 +73,7 @@ function R(e, t) {
     g === v.i.SUCCEEDED && (l.Z.dispatch({
       type: "CLEAR_INTERACTION_MODAL_STATE",
       customId: i
-    }), t()), g === v.i.ERRORED && f(T.intl.string(T.t.uJgdEh))
+    }), t()), g === v.i.ERRORED && f(S.intl.string(S.t.uJgdEh))
   }, [_, g, t, i]);
   let {
     applicationIconURL: y,
@@ -177,7 +177,7 @@ function D(e, t) {
   });
   let l = () => {
     null != t && t.aborted || s.tn.post({
-      url: S.ANM.INTERACTIONS,
+      url: T.ANM.INTERACTIONS,
       body: {
         type: c.B8.MODAL_SUBMIT,
         application_id: e.application.id,

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Yk: () => I,
-  ZP: () => T
+  ZP: () => S
 }), require("./415506.js"), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -91,7 +91,7 @@ let v = Object.freeze({
 var I = function(e) {
   return e.PREMIUM_ACTIVATED = "PREMIUM_ACTIVATED", e.PREMIUM_UPDATED = "PREMIUM_UPDATED", e.PREMIUM_UPGRADED = "PREMIUM_UPGRADED", e.GUILD_BOOST_APPLIED = "GUILD_BOOST_APPLIED", e.PREMIUM_PAYMENT_STARTED = "PREMIUM_PAYMENT_STARTED", e
 }({});
-class S extends(r = Chunk647438.PureComponent) {
+class T extends(r = Chunk647438.PureComponent) {
   componentDidMount() {
     this.animate()
   }
@@ -346,16 +346,16 @@ class S extends(r = Chunk647438.PureComponent) {
   }
 }
 
-function T(e) {
+function S(e) {
   var {
     theme: t
   } = e, n = y(e, ["theme"]);
   let r = (0, d.dQu)(c.Z.unsafe_rawColors.WHITE_500).hex(),
     a = (0, d.dQu)(c.Z.unsafe_rawColors.BRAND_500).hex(),
     o = (0, u.wj)(t) ? r : a;
-  return (0, i.jsx)(S, b(g({}, n), {
+  return (0, i.jsx)(T, b(g({}, n), {
     theme: t,
     flashColor: o
   }))
 }
-m(S, "Types", I), T.Types = I
+m(T, "Types", I), S.Types = I

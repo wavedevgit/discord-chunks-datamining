@@ -91,10 +91,10 @@ function k(e) {
     isMoreLoading: E
   } = (0, m.G)({
     onError: a
-  }), y = (0, f.E2)(n).get(t), [O, S] = i.useState(C.iB), T = (0, p.Xi)({
+  }), y = (0, f.E2)(n).get(t), [O, T] = i.useState(C.iB), S = (0, p.Xi)({
     location: "family_center_activity_section_web"
   }), A = i.useCallback(() => {
-    S(e => e + C.iB), h(t)
+    T(e => e + C.iB), h(t)
   }, [t, h]);
   o()(y, "No text for action type: ".concat(t));
   let N = y.sectionHeader(d),
@@ -120,9 +120,9 @@ function k(e) {
         className: w.sectionDescription,
         variant: "text-md/medium",
         color: "text-muted",
-        children: y.sectionDescription(null != s && s, T)
+        children: y.sectionDescription(null != s && s, S)
       }) : null]
-    }), [N, y, s, T]);
+    }), [N, y, s, S]);
   if (0 === c.length) return null;
   let L = c.slice(0, O);
   return (0, r.jsxs)("div", {
@@ -183,12 +183,12 @@ let U = () => {
     } = e, o = (0, E.In)(t);
     return true === o ? null : (0, r.jsxs)("div", {
       className: w.accountRow,
-      children: [(0, r.jsx)(S.r, {
+      children: [(0, r.jsx)(T.r, {
         user: o,
         avatarSize: i
       }), (0, r.jsxs)("div", {
         className: w.headerText,
-        children: [(0, r.jsx)(T.Z, {
+        children: [(0, r.jsx)(S.Z, {
           user: o,
           hideUserTag: a
         }), true !== n ? (0, r.jsx)(l.Text, {

@@ -222,8 +222,8 @@ class U extends Chunk647438.Component {
       useSlate: E,
       spellcheckEnabled: b,
       useNewSlashCommands: O,
-      canOnlyUseTextCommands: S,
-      className: T,
+      canOnlyUseTextCommands: T,
+      className: S,
       id: N,
       required: P,
       maxCharacterCount: D,
@@ -380,10 +380,10 @@ class U extends Chunk647438.Component {
           maxCharacterCount: c,
           type: u
         } = this.props,
-        d = null != i ? (0, T.im)(i) : null,
-        f = (0, T.Mo)(),
+        d = null != i ? (0, S.im)(i) : null,
+        f = (0, S.Mo)(),
         _ = null != (r = null != d ? d : f) ? r : a,
-        E = (0, T._K)(i, this._getEditorWindow()) ? a : _;
+        E = (0, S._K)(i, this._getEditorWindow()) ? a : _;
       if (null == l || !E.isPrivate() && !o || E.isPrivate() && E.isManaged()) returnfalse;
       let y = async (e, t) => {
         var n, r;
@@ -426,7 +426,7 @@ class U extends Chunk647438.Component {
           }
         }
       })), 0 !== v.length && (e.preventDefault(), e.stopPropagation(), this.saveCurrentText(), y(v), this.focus(), true)
-    }), this._unsubscribe = S.p8.subscribe(e => {
+    }), this._unsubscribe = T.p8.subscribe(e => {
       requestAnimationFrame(() => {
         this.setState({
           popup: e
@@ -435,7 +435,7 @@ class U extends Chunk647438.Component {
     }), this.state = {
       focused: false,
       submitting: false,
-      popup: S.p8.getState()
+      popup: T.p8.getState()
     }
   }
 }

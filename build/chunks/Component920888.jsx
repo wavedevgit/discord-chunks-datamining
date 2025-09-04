@@ -2,7 +2,7 @@
 /** chunk id: 920888, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -64,7 +64,7 @@ let O = (e, t) => null == e && null == t || e === t,
     let n = v(e, t);
     return n < 0 ? e : [e[n], ...e.slice(0, n), ...e.slice(n + 1)]
   };
-class S extends Chunk647438.PureComponent {
+class T extends Chunk647438.PureComponent {
   static getDerivedStateFromProps(e, t) {
     let n = e.message.reactions.length;
     return 0 === t.reactionsCount && n > 0 ? {
@@ -88,8 +88,8 @@ class S extends Chunk647438.PureComponent {
       forceAddReactions: O,
       reactionClassName: v,
       useChatFontScaling: I,
-      forceHideReactionCreates: S,
-      remainingReactions: T,
+      forceHideReactionCreates: T,
+      remainingReactions: S,
       combinedReactions: A,
       visibleReactionsCount: C
     } = this.props, {
@@ -120,7 +120,7 @@ class S extends Chunk647438.PureComponent {
         isForumToolbar: E,
         useChatFontScaling: I,
         className: v
-      }), T > 0 && (0, Chunk951288.jsx)(Chunk481060.P3F, {
+      }), S > 0 && (0, Chunk951288.jsx)(Chunk481060.P3F, {
         onClick: t => {
           t.stopPropagation(), (0, _.op)(b, e)
         },
@@ -129,9 +129,9 @@ class S extends Chunk647438.PureComponent {
         children: (0, Chunk951288.jsxs)(Chunk481060.Text, {
           className: R.reactionInner,
           variant: "text-sm/normal",
-          children: ["+", T]
+          children: ["+", S]
         })
-      }), !exports && !S && (0, Chunk951288.jsx)(Chunk60174.X, {
+      }), !exports && !T && (0, Chunk951288.jsx)(Chunk60174.X, {
         tabIndex: w || this.state.isHovered ? 0 : false,
         type: Chunk566006.O.NORMAL,
         message: module,
@@ -152,7 +152,7 @@ class S extends Chunk647438.PureComponent {
     })
   }
 }
-let T = e => {
+let S = e => {
   let {
     message: t,
     maxReactions: n,
@@ -179,7 +179,7 @@ let T = e => {
       remainingReactions: o
     }
   }, [a, n, t.reactions]);
-  return (0, r.jsx)(S, y(E({}, e), {
+  return (0, r.jsx)(T, y(E({}, e), {
     visibleReactionsCount: l,
     combinedReactions: o,
     remainingReactions: s

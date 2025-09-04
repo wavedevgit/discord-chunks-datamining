@@ -27,7 +27,7 @@ var Chunk304789 = require("./304789.jsx"),
   Chunk355758 = require("./355758.js"),
   Chunk22767 = require("./22767.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,14 +36,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -146,7 +146,7 @@ let w = function(e) {
     isLoading: _,
     analyticsLocation: h,
     discountInfo: b,
-    renewalChurnDiscountInfo: S,
+    renewalChurnDiscountInfo: T,
     discountOffer: A
   } = e, {
     analyticsLocations: w
@@ -161,7 +161,7 @@ let w = function(e) {
       let {
         default: i
       } = await Promise.all([n.e("58067"), n.e("81709"), n.e("70349")]).then(n.bind(n, 833569));
-      return n => (0, r.jsx)(i, C(T({}, n), {
+      return n => (0, r.jsx)(i, C(S({}, n), {
         premiumSubscription: t,
         analyticsLocation: h,
         analyticsLocations: w,
@@ -184,7 +184,7 @@ let w = function(e) {
       className: v.activeSubButtons,
       children: [(0, r.jsx)(a.ua7, {
         text: n,
-        children: n => (0, r.jsx)(a.zxk, C(T({}, n), {
+        children: n => (0, r.jsx)(a.zxk, C(S({}, n), {
           variant: "expressive",
           disabled: e,
           text: O.intl.string(O.t["dylp//"]),
@@ -243,7 +243,7 @@ let w = function(e) {
               premiumSubscription: t
             }) : (0, r.jsx)(R, {
               premiumSubscription: t,
-              discountInfo: null != b ? b : S,
+              discountInfo: null != b ? b : T,
               invoicePreview: u,
               isDiscountActive: null != b
             }), (0, r.jsx)("div", {

@@ -65,9 +65,9 @@ function y(e, t, n) {
   if (!(0, f.Y)(e)) return Promise.resolve();
   let v = null != (m = O.modViewPanel) ? m : _.k.INFO,
     I = null != (E = O.sourceLocation) ? E : i.Z.MEMBER_SAFETY_PAGE,
-    S = u.Z.getCurrentlySelectedChannelId(),
-    T = null != S ? l.Z.getChannel(S) : null;
-  if (n !== h.oC.MEMBER_SAFETY && (null == T || T.getGuildId() !== e)) {
+    T = u.Z.getCurrentlySelectedChannelId(),
+    S = null != T ? l.Z.getChannel(T) : null;
+  if (n !== h.oC.MEMBER_SAFETY && (null == S || S.getGuildId() !== e)) {
     let t = c.ZP.getDefaultChannel(e);
     null == t || (0, r.Y3)(t) || (0, a.uL)(p.Z5c.CHANNEL(e, t.id))
   }

@@ -200,10 +200,10 @@ function v(e) {
 function I(e) {
   return "bigint" == typeof e
 }
-let S = f(b(function(e) {
+let T = f(b(function(e) {
     returntrue
   })),
-  T = S,
+  S = T,
   A = e => Object.assign(f(e), {
     startsWith: t => {
       var n;
@@ -389,8 +389,8 @@ var Q = {
   },
   when: b,
   select: y,
-  any: S,
-  _: T,
+  any: T,
+  _: S,
   string: C,
   between: N,
   lt: R,

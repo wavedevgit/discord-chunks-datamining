@@ -66,9 +66,9 @@ function I(e, t) {
   }), e
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
-  var n, r, i = T(e, t);
+  var n, r, i = S(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -76,7 +76,7 @@ function S(e, t) {
   return i
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -170,7 +170,7 @@ function x(e) {
     clearable: g = false,
     size: y = "md",
     variant: v = "filled",
-    onClose: T,
+    onClose: S,
     onOpen: A,
     renderOptionLabel: C = w,
     renderOptionValue: N = D,
@@ -196,8 +196,8 @@ function x(e) {
     s && W(false)
   }, [s]);
   let X = i.useCallback(e => {
-      Y === e || s || (W(e), e ? null == A || A() : null == T || T())
-    }, [s, T, A, Y]),
+      Y === e || s || (W(e), e ? null == A || A() : null == S || S())
+    }, [s, S, A, Y]),
     Q = i.useCallback(e => {
       Y && !e && X(false)
     }, [X, Y]),
@@ -257,7 +257,7 @@ function x(e) {
       var {
         onClick: i,
         onKeyDown: l
-      } = e, u = S(e, ["onClick", "onKeyDown"]), {
+      } = e, u = T(e, ["onClick", "onKeyDown"]), {
         isShown: d
       } = t;
       let f = d ? p.u04 : p.CJ0;
@@ -334,7 +334,7 @@ function L(e) {
     serialize: E,
     optionClassName: y,
     buttonHeight: v,
-    updatePosition: T,
+    updatePosition: S,
     popoutPosition: A
   } = e, [C, N] = i.useState(0), R = i.useRef(null), P = i.useId(), w = (0, s.ZP)({
     id: P,
@@ -347,14 +347,14 @@ function L(e) {
     var e;
     null == (e = D.current) || e.focus()
   }, []), i.useEffect(() => {
-    v > 0 && T()
-  }, [v, T]), (0, g.Z)(T), i.useLayoutEffect(() => {
+    v > 0 && S()
+  }, [v, S]), (0, g.Z)(S), i.useLayoutEffect(() => {
     var e, t;
     let n = null == (t = R.current) || null == (e = t.getBoundingClientRect()) ? true : e.height;
     null != n && N(n)
   }, [h, _.length]), i.useEffect(() => {
-    T()
-  }, [T, C]);
+    S()
+  }, [S, C]);
   let x = i.useCallback((e, t) => {
       n(e), c && !t && a()
     }, [a, n, c]),
@@ -378,7 +378,7 @@ function L(e) {
       children: e => {
         var {
           ref: n
-        } = e, i = S(e, ["ref"]);
+        } = e, i = T(e, ["ref"]);
         return (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(M, I(O({
             className: o()(b.popout, t, {
@@ -446,7 +446,7 @@ function M(e) {
   var {
     value: t,
     onChange: n
-  } = e, i = S(e, ["value", "onChange"]);
+  } = e, i = T(e, ["value", "onChange"]);
   let a = A({
     value: t,
     onChange: n

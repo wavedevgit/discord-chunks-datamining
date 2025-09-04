@@ -63,11 +63,11 @@ function I() {
   v = true
 }
 
-function S() {
+function T() {
   v = false, b = {}
 }
 
-function T(e, t, n) {
+function S(e, t, n) {
   let r = false,
     i = [];
   for (let t = 0; t < e.options.length; t++) {
@@ -85,7 +85,7 @@ function T(e, t, n) {
 }
 
 function A(e, t, n) {
-  return e.map(e => T(e, t, n))
+  return e.map(e => S(e, t, n))
 }
 
 function C(e) {
@@ -267,7 +267,7 @@ class U extends(r = Chunk442837.ZP.Store) {
 }
 h(U, "displayName", "GuildOnboardingPromptsStore");
 let G = new U(Chunk570140.Z, {
-  CONNECTION_OPEN: S,
+  CONNECTION_OPEN: T,
   GUILD_ONBOARDING_PROMPTS_FETCH_START: I,
   GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS: C,
   GUILD_ONBOARDING_PROMPTS_FETCH_FAILURE: N,

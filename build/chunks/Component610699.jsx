@@ -178,7 +178,7 @@ function Z(e) {
         invite_inviter_id: null == (e = o.inviter) ? true : e.id
       })
     }, [null == (t = o.inviter) ? true : t.id, E.id]),
-    O = (0, c.e7)([S.Z], () => null != o.guild ? S.Z.getGuild(o.guild.id) : null, [o]),
+    O = (0, c.e7)([T.Z], () => null != o.guild ? T.Z.getGuild(o.guild.id) : null, [o]),
     v = (0, y.Z)([E.id])[0],
     N = (0, c.e7)([f.ZP], () => {
       var e;
@@ -194,7 +194,7 @@ function Z(e) {
       })
     }),
     j = I.Z.getChannel(null == (n = o.channel) ? true : n.id),
-    M = (0, c.e7)([T.Z], () => null != j && T.Z.can(w.Plq.USE_EMBEDDED_ACTIVITIES, j), [j]),
+    M = (0, c.e7)([S.Z], () => null != j && S.Z.can(w.Plq.USE_EMBEDDED_ACTIVITIES, j), [j]),
     {
       analyticsLocations: k
     } = (0, p.ZP)(_.Z.INVITE_EMBED),
@@ -261,7 +261,7 @@ function F(e) {
     id: t.id,
     icon: v,
     bot: O
-  }), S = (0, b.G)(t), T = (0, E.E)(t), A = n.length, C = i.useMemo(() => [{
+  }), T = (0, b.G)(t), S = (0, E.E)(t), A = n.length, C = i.useMemo(() => [{
     label: a ? u ? x.intl.string(x.t.VJlc0d) : x.intl.string(x.t.RscU7O) : x.intl.string(x.t["2BP08P"]),
     trackingArea: a ? g.j_.PLAY : g.j_.JOIN_SERVER,
     submitting: d,
@@ -272,8 +272,8 @@ function F(e) {
     header: t.name,
     title: x.intl.string(x.t["7vb6n5"]),
     iconSrc: I
-  }, T), {
-    onClickBanner: S,
+  }, S), {
+    onClickBanner: T,
     info: (0, r.jsxs)("div", {
       className: L.infoWrapper,
       children: [(0, r.jsx)(B, {
@@ -292,7 +292,7 @@ function F(e) {
       })]
     }),
     actions: C,
-    onClickContent: S,
+    onClickContent: T,
     trackingConfig: {
       id: t.id,
       linkType: g.Un.ACTIVITY_INVITE,

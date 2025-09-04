@@ -68,7 +68,7 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   return I(e).reduce((e, t) => {
     var n, r;
     if (t.type === h.Cl) return e.push({
@@ -76,7 +76,7 @@ function S(e) {
       navigable: false
     }), e;
     if (t.type === h.kS) {
-      let n = S(t.props.children);
+      let n = T(t.props.children);
       return n.length > 0 && (e.push({
         type: "groupstart",
         length: n.length,
@@ -100,7 +100,7 @@ function S(e) {
       key: t.props.id,
       navigable: true,
       label: t.props.label,
-      children: t.props.children ? S(t.props.children) : true,
+      children: t.props.children ? T(t.props.children) : true,
       onChildrenScroll: t.props.onChildrenScroll,
       props: t.props,
       childRowHeight: t.props.childRowHeight,
@@ -135,10 +135,10 @@ function S(e) {
   }, [])
 }
 
-function T(e) {
+function S(e) {
   return e.reduce((e, t) => (t.navigable && e.push({
     key: t.key,
-    children: "item" === t.type && null != t.children ? T(t.children) : true
+    children: "item" === t.type && null != t.children ? S(t.children) : true
   }), e), [])
 }
 
@@ -272,7 +272,7 @@ function C(e) {
     onClose: b,
     onSelect: O,
     onInteraction: I
-  } = e, C = S(h), N = T(C), P = i.useRef([]);
+  } = e, C = T(h), N = S(C), P = i.useRef([]);
   l()(P.current, N) || (P.current = N);
   let w = null == (t = C.find(e => null != e.key)) ? true : t.key,
     D = (0, c.ZP)({

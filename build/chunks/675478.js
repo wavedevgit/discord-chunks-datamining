@@ -47,7 +47,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -59,7 +59,7 @@ function S(e) {
   }
   return e
 }
-let T = 5e3,
+let S = 5e3,
   A = "UserSettingsProtoLastWriteTimes",
   C = Date.now();
 
@@ -216,7 +216,7 @@ class R {
       editInfo: e
     } = this.getEditInfo();
     i()(null != module.protoToSave, "protoToSave cannot be null"), i()(null != module.offlineEditDataVersion, "offlineEditDataVersion cannot be null"), i()(null == module.timeout, "timeout must not be set already");
-    let t = T + Math.floor(Math.random() * T),
+    let t = S + Math.floor(Math.random() * S),
       n = setTimeout(this.persistChanges, exports);
     this.dispatchChanges({
       timeout: require,
@@ -315,12 +315,12 @@ function k(e) {
 }
 async function U(e, t) {
   return await P.updateAsync("userContent", n => {
-    n.recurringDismissibleContentStates[e] = S({}, n.recurringDismissibleContentStates[e], t)
+    n.recurringDismissibleContentStates[e] = T({}, n.recurringDismissibleContentStates[e], t)
   }, O.fy.INFREQUENT_USER_ACTION)
 }
 async function G(e, t, n) {
   return await x(t, t => {
-    t.guildDismissibleContentStates[e] = S({}, t.guildDismissibleContentStates[e], n)
+    t.guildDismissibleContentStates[e] = T({}, t.guildDismissibleContentStates[e], n)
   }, O.fy.INFREQUENT_USER_ACTION)
 }
 

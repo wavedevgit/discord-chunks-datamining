@@ -4,7 +4,7 @@
 require.d(exports, {
   $R: () => D,
   C7: () => C,
-  Ek: () => S,
+  Ek: () => T,
   Gu: () => B,
   JQ: () => A,
   NE: () => b,
@@ -78,12 +78,12 @@ function I(e, t, n) {
   return !(__OVERLAY__ || !e || !d.uC.has(t.type) || null != n && (n.hasFlag(g.iLy.HAS_THREAD) || (0, u.Z)(n))) && true
 }
 
-function S(e) {
+function T(e) {
   let t = (0, o.e7)([_.Z], () => _.Z.getChannel(h.default.castMessageIdAsChannelId(e.id)), [e]);
-  return T((0, o.e7)([p.Z], () => p.Z.can(g.Plq.VIEW_CHANNEL, t), [t]), e, t)
+  return S((0, o.e7)([p.Z], () => p.Z.can(g.Plq.VIEW_CHANNEL, t), [t]), e, t)
 }
 
-function T(e, t, n) {
+function S(e, t, n) {
   return !!t.hasFlag(g.iLy.HAS_THREAD) && null != n && !!e
 }
 

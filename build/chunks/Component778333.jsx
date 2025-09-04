@@ -28,8 +28,8 @@ function b(e) {
     message: b,
     getAcceptInviteContext: y
   } = e, O = (0, a.e7)([f.default], () => f.default.getId()), v = (null == (t = n.inviter) ? true : t.id) === O, I = n.state === m.r2o.ACCEPTING, {
-    analyticsLocations: S
-  } = (0, c.ZP)(l.Z.INVITE_EMBED), T = (0, a.e7)([p.Z], () => {
+    analyticsLocations: T
+  } = (0, c.ZP)(l.Z.INVITE_EMBED), S = (0, a.e7)([p.Z], () => {
     var e;
     return null != n.inviter && p.Z.isFriend(null == (e = n.inviter) ? true : e.id)
   }), A = i.useCallback(() => {
@@ -41,25 +41,25 @@ function b(e) {
       action: e,
       inviter_id: b.author.id,
       invite_message_id: b.id
-    }, S)
-  }, [n, b, S]), C = i.useCallback(() => {
+    }, T)
+  }, [n, b, T]), C = i.useCallback(() => {
     (0, s.r$)({
       invite: n,
       action: "accept",
       inviter_id: b.author.id,
       invite_message_id: b.id
-    }, S);
+    }, T);
     let e = y("Invite Button Embed");
     s.ZP.acceptInviteAndTransitionToInviteChannel({
       inviteKey: n.code,
       context: e
     })
-  }, [n, b, S, y]);
+  }, [n, b, T, y]);
   if (null == n.inviter) return null;
-  let N = T ? A : C,
+  let N = S ? A : C,
     R = g.intl.string(g.t.ib7Ng4),
     P = u.Z.Button.Colors.GREEN;
-  T ? (R = g.intl.string(g.t.xhxnPj), P = u.Z.Button.Colors.PRIMARY) : v && (R = g.intl.string(g.t.ib7Ng4), P = u.Z.Button.Colors.PRIMARY);
+  S ? (R = g.intl.string(g.t.xhxnPj), P = u.Z.Button.Colors.PRIMARY) : v && (R = g.intl.string(g.t.ib7Ng4), P = u.Z.Button.Colors.PRIMARY);
   let w = v ? g.intl.string(g.t.eQyu1N) : g.intl.string(g.t.PYJHW1),
     D = null != n.inviter ? "".concat(n.inviter.username) : "",
     x = null != n.inviter ? h.ZP.getUserTag(n.inviter) : "";
@@ -71,10 +71,10 @@ function b(e) {
         className: E.headerLine,
         children: [(0, r.jsx)(u.Z.Icon, {
           user: new d.Z(n.inviter),
-          onClick: T ? N : true
+          onClick: S ? N : true
         }), (0, r.jsx)(u.Z.Info, {
           title: D,
-          onClick: T ? N : true,
+          onClick: S ? N : true,
           children: x
         })]
       }), (0, r.jsx)(u.Z.Button, {

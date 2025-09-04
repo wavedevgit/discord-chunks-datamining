@@ -2,7 +2,7 @@
 /** chunk id: 401460, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -64,7 +64,7 @@ let v = () => [Chunk388032.intl.string(Chunk388032.t.EgWTY2), Chunk388032.intl.s
     return null != (e = l().sample(v())) ? module : Chunk388032.intl.string(Chunk388032.t.EgWTY2)
   };
 
-function S(e) {
+function T(e) {
   let {
     id: t,
     className: n,
@@ -73,7 +73,7 @@ function S(e) {
     tabIndex: l,
     children: _,
     locked: m = false
-  } = e, [E, y] = i.useState((0, p.aW)(t).name), v = t === f.Ru.PIRATE, S = (0, c.jm)({
+  } = e, [E, y] = i.useState((0, p.aW)(t).name), v = t === f.Ru.PIRATE, T = (0, c.jm)({
     label: E,
     isSelected: s
   });
@@ -82,8 +82,8 @@ function S(e) {
     onTooltipShow: () => v && y(I()),
     children: e => (0, r.jsxs)("div", {
       className: g.appIconSelectionContainer,
-      children: [(0, r.jsx)(u.P3F, O(b({}, e, S), {
-        tabIndex: null != l ? l : S.tabIndex,
+      children: [(0, r.jsx)(u.P3F, O(b({}, e, T), {
+        tabIndex: null != l ? l : T.tabIndex,
         className: o()(g.appIconSelection, {
           [g.selected]: s
         }, n),
@@ -100,7 +100,7 @@ function S(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     icon: t,
     isSelected: n,
@@ -109,7 +109,7 @@ function T(e) {
     onSelect: o,
     locked: s
   } = e;
-  return (0, r.jsx)(S, {
+  return (0, r.jsx)(T, {
     onSelect: i ? true : o,
     isSelected: n,
     id: t.id,

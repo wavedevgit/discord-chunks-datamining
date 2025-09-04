@@ -141,7 +141,7 @@ function eo(e) {
   } = (0, m.ZP)(), {
     cameraUnavailable: l,
     enabled: d
-  } = (0, S.Z)(), _ = (0, T.Z)(n), p = i.useRef(null), g = a > 1;
+  } = (0, T.Z)(), _ = (0, S.Z)(n), p = i.useRef(null), g = a > 1;
   return (0, r.jsxs)("div", {
     className: o()(z.wrapper, z.actions),
     children: [(0, r.jsx)(C.Z, {
@@ -222,11 +222,11 @@ function es(e) {
     channel: h
   } = e, {
     analyticsLocations: y
-  } = (0, m.ZP)(p.Z.INCOMING_CALL_MODAL), [O, v] = i.useState(false), I = (0, l.e7)([D.Z], () => D.Z.getGuild(h.guild_id)), S = null != I ? k.ZP.getGuildIconURL({
+  } = (0, m.ZP)(p.Z.INCOMING_CALL_MODAL), [O, v] = i.useState(false), I = (0, l.e7)([D.Z], () => D.Z.getGuild(h.guild_id)), T = null != I ? k.ZP.getGuildIconURL({
     id: I.id,
     icon: I.icon,
     size: ei
-  }) : null, T = null != (t = (0, g.x)(h, ei, true)) ? t : S, A = (0, E.ZP)(h), [C, N] = (0, l.Wu)([x.Z], () => [x.Z.supports(Y.AN.VIDEO), Object.keys(x.Z.getVideoDevices()).length]), R = null != I ? "".concat(A, ", ").concat(I.name) : A, L = (0, l.e7)([j.Z], () => j.Z.isFocused()), M = (0, l.e7)([U.Z], () => U.Z.getMode(h.id)), B = i.useCallback(e => {
+  }) : null, S = null != (t = (0, g.x)(h, ei, true)) ? t : T, A = (0, E.ZP)(h), [C, N] = (0, l.Wu)([x.Z], () => [x.Z.supports(Y.AN.VIDEO), Object.keys(x.Z.getVideoDevices()).length]), R = null != I ? "".concat(A, ", ").concat(I.name) : A, L = (0, l.e7)([j.Z], () => j.Z.isFocused()), M = (0, l.e7)([U.Z], () => U.Z.getMode(h.id)), B = i.useCallback(e => {
     null != e.top && null != e.left && d.Z.move(e.left, e.top)
   }, []), Z = (0, c.q_F)({
     value: +!!O,
@@ -249,7 +249,7 @@ function es(e) {
     }),
     X = M === H.WtW.VOICE || V && h.type === H.d4z.GUILD_VOICE ? W.intl.string(W.t.Js8cKy) : W.intl.string(W.t.KcnWCA),
     J = (0, r.jsxs)(r.Fragment, {
-      children: [null != I && null == S ? (0, r.jsx)("div", {
+      children: [null != I && null == T ? (0, r.jsx)("div", {
         className: o()(z.icon, K.wrapper, K.ringingIncoming),
         children: (0, r.jsx)(b.ZP, {
           className: z.mask,
@@ -267,7 +267,7 @@ function es(e) {
       }) : (0, r.jsx)(G.Z, {
         className: z.icon,
         ringing: L,
-        src: null != T ? T : "",
+        src: null != S ? S : "",
         ringingType: G.Z.RingingType.INCOMING,
         size: O ? c.EFr.SIZE_40 : c.EFr.SIZE_80
       }), (0, r.jsxs)("div", {

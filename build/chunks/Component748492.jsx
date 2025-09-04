@@ -67,7 +67,7 @@ function j(e) {
     idle: L,
     selectedParticipant: j,
     embeddedActivity: M
-  } = e, k = (0, c.bp)() === R.IlC.POPOUT, U = (0, o.e7)([T.Z], () => T.Z.isVideoEnabled()), G = (0, o.e7)([T.Z], () => Object.values(T.Z.getVideoDevices())[0]), B = false === (null == (t = null == G ? true : G.disabled) || t), Z = (0, d.Z)([s])[0], F = (0, m.Z)(a), {
+  } = e, k = (0, c.bp)() === R.IlC.POPOUT, U = (0, o.e7)([S.Z], () => S.Z.isVideoEnabled()), G = (0, o.e7)([S.Z], () => Object.values(S.Z.getVideoDevices())[0]), B = false === (null == (t = null == G ? true : G.disabled) || t), Z = (0, d.Z)([s])[0], F = (0, m.Z)(a), {
     parentAnalyticsLocation: V
   } = (0, u.ZP)(), H = e => {
     (0, _.v)(V, _.d.CAMERA, e), l.Z.setVideoEnabled(e)
@@ -98,7 +98,7 @@ function j(e) {
         shrink: 1,
         basis: "50%",
         align: p.Z.Align.CENTER,
-        children: [(0, r.jsx)(S.C, {
+        children: [(0, r.jsx)(T.C, {
           className: D.leftPipIcon,
           enabled: U,
           cameraUnavailable: !B,

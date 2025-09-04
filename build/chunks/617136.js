@@ -65,17 +65,17 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = Object.keys(Chunk497505.jn),
+let S = Object.keys(Chunk497505.jn),
   A = new Set([Chunk981631.rMx.QUEST_CONTENT_VIEWED, Chunk981631.rMx.QUEST_CONTENT_CLICKED]);
 
 function C(e) {
   var t;
-  return null != (t = T.find(t => m.jn[t] === e)) ? t : ""
+  return null != (t = S.find(t => m.jn[t] === e)) ? t : ""
 }
 
 function N(e) {
@@ -84,12 +84,14 @@ function N(e) {
 }
 
 function R(e, t, n) {
-  let r = E.r.build(e.config);
+  var r, i;
+  let a = E.r.build(e.config);
   return v({
     quest_id: e.id,
-    quest_type: r.questType,
-    game_id: r.application.id,
-    game_name: r.application.name,
+    quest_type: a.questType,
+    game_id: a.application.id,
+    game_name: a.application.name,
+    application_ids: null != (i = null == (r = a.applications) ? true : r.map(e => e.id)) ? i : [],
     client_ad_session_id: (0, o.Gy)(n).uuid
   }, (0, p.qe)(e.id, t))
 }
@@ -140,7 +142,7 @@ async function x(e) {
   w({
     questId: t,
     event: y.rMx.QUEST_CONTENT_CLICKED,
-    properties: S(v({}, P(n, o, s), (0, l.Z)()), {
+    properties: T(v({}, P(n, o, s), (0, l.Z)()), {
       cta_name: r,
       quest_status: null != _ ? N(_) : null,
       impression_id: c,
@@ -178,8 +180,8 @@ function L(e) {
 function j() {
   let e = (0, Chunk915750.WD)();
   return Chunk647438.useCallback(t => {
-    w(S(v({}, t), {
-      properties: S(v({}, t.properties), {
+    w(T(v({}, t), {
+      properties: T(v({}, t.properties), {
         impression_id: null == e ? true : e.getId()
       })
     }))
@@ -202,7 +204,7 @@ function M() {
       e({
         questId: n,
         event: y.rMx.QUEST_CONTENT_CLICKED,
-        properties: S(v({}, P(r, s, c), (0, l.Z)()), {
+        properties: T(v({}, P(r, s, c), (0, l.Z)()), {
           cta_name: o,
           quest_status: null != _ ? N(_) : null,
           click_id: (0, i.Z)(),

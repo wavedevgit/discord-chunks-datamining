@@ -6,7 +6,7 @@ require.d(exports, {
   Tt: () => y,
   iL: () => b,
   nY: () => I,
-  zx: () => S
+  zx: () => T
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -131,7 +131,7 @@ function I() {
   })
 }
 
-function S(e) {
+function T(e) {
   var {
     look: t = b.FILLED,
     color: n = y.BRAND,
@@ -140,8 +140,8 @@ function S(e) {
     grow: _ = true,
     disabled: h = false,
     submitting: E = false,
-    type: S = "button",
-    style: T,
+    type: T = "button",
+    style: S,
     wrapperClassName: A,
     className: C,
     innerClassName: N,
@@ -181,9 +181,9 @@ function S(e) {
       onMouseEnter: x,
       onMouseLeave: L,
       onKeyDown: h ? true : j,
-      type: S,
+      type: T,
       disabled: h,
-      style: T,
+      style: S,
       rel: k,
       className: o()(C, I({
         look: t,
@@ -216,7 +216,7 @@ function S(e) {
     })]
   }) : q
 }
-S.Looks = b, S.Colors = y, S.Sizes = O, S.Link = function(e) {
+T.Looks = b, T.Colors = y, T.Sizes = O, T.Link = function(e) {
   var {
     look: t = b.FILLED,
     color: n = y.BRAND,
@@ -231,15 +231,15 @@ S.Looks = b, S.Colors = y, S.Sizes = O, S.Link = function(e) {
     onMouseDown: E,
     onMouseUp: v,
     children: I,
-    rel: S
-  } = e, T = g(e, ["look", "color", "size", "fullWidth", "grow", "style", "className", "innerClassName", "to", "onClick", "onMouseDown", "onMouseUp", "children", "rel"]);
-  return (0, r.jsx)(s.rU, m(p({}, T), {
+    rel: T
+  } = e, S = g(e, ["look", "color", "size", "fullWidth", "grow", "style", "className", "innerClassName", "to", "onClick", "onMouseDown", "onMouseUp", "children", "rel"]);
+  return (0, r.jsx)(s.rU, m(p({}, S), {
     to: _,
     onClick: h,
     onMouseUp: v,
     onMouseDown: E,
     style: c,
-    rel: S,
+    rel: T,
     className: o()(u, f.button, t, n, i, {
       [f.fullWidth]: a,
       [f.grow]: l

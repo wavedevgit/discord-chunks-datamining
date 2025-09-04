@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   K: () => v,
-  Z: () => S
+  Z: () => T
 }), require("./997841.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -89,7 +89,7 @@ function I(e, t) {
   }), t())
 }
 
-function S(e) {
+function T(e) {
   var t;
   let {
     legalTermsNodeRef: n,
@@ -100,8 +100,8 @@ function S(e) {
     isSubmitting: m,
     premiumSubscription: E,
     isGift: y,
-    planGroup: S,
-    isPrepaid: T,
+    planGroup: T,
+    isPrepaid: S,
     isTrial: A,
     makePurchase: C,
     needsPaymentSource: N,
@@ -126,8 +126,8 @@ function S(e) {
     plan: x,
     premiumSubscription: E,
     isGift: y,
-    planGroup: S,
-    isPrepaidPaymentSource: T,
+    planGroup: T,
+    isPrepaidPaymentSource: S,
     inReverseTrial: R,
     paymentSourceId: M,
     hasPaymentSources: G

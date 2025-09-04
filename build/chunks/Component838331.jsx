@@ -79,8 +79,8 @@ function v(e, t) {
   return i
 }
 let I = "data-listbox-item-id",
-  S = 40,
-  T = Object.freeze({
+  T = 40,
+  S = Object.freeze({
     STANDARD: Chunk792323.selected,
     BRAND: Chunk792323.selectedBrand
   });
@@ -122,7 +122,7 @@ function P(e) {
     listClassName: g,
     "aria-label": b,
     multiSelect: v = false,
-    autoFocus: T = false,
+    autoFocus: S = false,
     maxVisibleItems: A = 5,
     itemToString: C = N,
     showScrollbar: P = false,
@@ -193,7 +193,7 @@ function P(e) {
           "aria-haspopup": "listbox",
           className: o()(m.combobox, _),
           children: [(0, r.jsx)(d.E, {
-            autoFocus: T,
+            autoFocus: S,
             placeholder: t,
             query: L,
             onChange: M,
@@ -227,7 +227,7 @@ function P(e) {
               },
               children: (0, r.jsx)(X, y(E({}, s), {
                 style: {
-                  maxHeight: A * (S + 6)
+                  maxHeight: A * (T + 6)
                 },
                 "aria-multiselectable": v,
                 id: B,
@@ -237,7 +237,7 @@ function P(e) {
                 }),
                 sections: [F.length],
                 sectionHeight: 0,
-                rowHeight: S,
+                rowHeight: T,
                 renderRow: e => {
                   let {
                     row: t
@@ -260,7 +260,7 @@ function D(e) {
       value: n,
       children: a,
       disabled: s = false,
-      selectedColor: u = T.STANDARD
+      selectedColor: u = S.STANDARD
     } = e,
     d = O(e, ["value", "children", "disabled", "selectedColor"]);
   let {
@@ -268,7 +268,7 @@ function D(e) {
     selected: _,
     setSelected: p,
     itemToString: h
-  } = i.useContext(R), g = h(n), b = f === g, v = null != (t = null == d ? true : d.selected) ? t : _.has(n), S = (0, l.JA)(g);
+  } = i.useContext(R), g = h(n), b = f === g, v = null != (t = null == d ? true : d.selected) ? t : _.has(n), T = (0, l.JA)(g);
   return (0, r.jsx)(c.P, y(E({
     tag: "li",
     id: g,
@@ -279,7 +279,7 @@ function D(e) {
       [u]: v,
       [m.disabled]: s
     })
-  }, S), {
+  }, T), {
     role: "option",
     "aria-selected": v,
     "aria-disabled": s,
@@ -289,7 +289,7 @@ function D(e) {
     })
   }))
 }
-D.Colors = T, D.Label = function(e) {
+D.Colors = S, D.Label = function(e) {
   let {
     children: t
   } = e;

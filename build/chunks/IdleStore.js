@@ -56,14 +56,14 @@ function I() {
   })
 }
 
-function S() {
+function T() {
   I(), v()
 }
 
-function T() {
+function S() {
   var e;
   let t = e => {
-    h = Math.max(Date.now() - e, h), S(), setTimeout(T, 10 * c.Z.Millis.SECOND)
+    h = Math.max(Date.now() - e, h), T(), setTimeout(S, 10 * c.Z.Millis.SECOND)
   };
   if ((null === Chunk579806.Z || true === Chunk579806.Z || null == (e = Chunk579806.Z.remotePowerMonitor) ? true : module.getSystemIdleTimeMs) != null) {
     let e = Chunk579806.Z.remotePowerMonitor.getSystemIdleTimeMs();
@@ -91,7 +91,7 @@ function R(e) {
   let {
     state: t
   } = e;
-  return y = t === f.$7l.BACKGROUND, h = Date.now(), S(), false
+  return y = t === f.$7l.BACKGROUND, h = Date.now(), T(), false
 }
 
 function P(e) {
@@ -102,9 +102,9 @@ function P(e) {
   return (!r || !(t <= h)) && (h = r ? t : Date.now(), __OVERLAY__ ? a.Z.dispatch({
     type: "OVERLAY_SET_NOT_IDLE",
     timestamp: h
-  }) : S(), false)
+  }) : T(), false)
 }
-__OVERLAY__ || (Chunk358085.isPlatformEmbedded && (null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.remotePowerMonitor) != null ? (T(), Chunk579806.Z.remotePowerMonitor.on("resume", () => {
+__OVERLAY__ || (Chunk358085.isPlatformEmbedded && (null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.remotePowerMonitor) != null ? (S(), Chunk579806.Z.remotePowerMonitor.on("resume", () => {
   E = false, P({})
 }), Chunk579806.Z.remotePowerMonitor.on("suspend", () => {
   E = true, P({}), Chunk287734.default.disconnect()
@@ -112,7 +112,7 @@ __OVERLAY__ || (Chunk358085.isPlatformEmbedded && (null === Chunk579806.Z || tru
   b = true, P({})
 }), Chunk579806.Z.remotePowerMonitor.on("unlock-screen", () => {
   b = false, P({})
-})) : setInterval(S, 30 * Chunk70956.Z.Millis.SECOND));
+})) : setInterval(T, 30 * Chunk70956.Z.Millis.SECOND));
 class w extends(r = Chunk442837.ZP.Store) {
   isIdle() {
     return m

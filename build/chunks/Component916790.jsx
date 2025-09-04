@@ -65,7 +65,7 @@ function P(e) {
     })
   })
 }
-let w = [{
+let I = [{
   id: "action",
   name: "Action",
   group: Chunk621060.v0.NONE,
@@ -110,11 +110,11 @@ let w = [{
   }
 }];
 
-function k(e) {
+function w(e) {
   let {
     actionLog: t,
     initialHeight: n
-  } = e, l = r.useMemo(() => t.error ? [...w, {
+  } = e, l = r.useMemo(() => t.error ? [...I, {
     id: "error",
     name: (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(f.Z, {
@@ -146,7 +146,7 @@ function k(e) {
         })]
       })
     }
-  }] : w, [t]), {
+  }] : I, [t]), {
     TabBar: s,
     renderSelectedTab: o
   } = (0, C.ZP)({
@@ -186,7 +186,7 @@ function k(e) {
     })]
   })
 }
-let I = [{
+let k = [{
     key: "action",
     cellClassName: Chunk687278.actionColumn,
     render(e) {
@@ -280,11 +280,11 @@ function Z() {
         placeholder: "Search by action name"
       })]
     }), (0, Chunk951288.jsx)(Chunk681619.Z, {
-      columns: I,
+      columns: k,
       data: T,
       selectedRowKey: null == Chunk428530 ? true : Chunk428530.id.toString(),
       onClickRow: e => g(e.actionLog)
-    }), null != Chunk428530 && (0, Chunk951288.jsx)(k, {
+    }), null != Chunk428530 && (0, Chunk951288.jsx)(w, {
       actionLog: Chunk428530,
       initialHeight: null != module.current ? module.current.clientHeight / 2 : 300
     })]

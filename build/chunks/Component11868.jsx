@@ -196,8 +196,8 @@ let D = (e, t) => n => {
       }),
       children: (0, r.jsxs)(c.P3F, {
         onClick: g,
-        children: [null != n.image && (0, r.jsx)(T.Z, {
-          source: (0, S.Z)(n),
+        children: [null != n.image && (0, r.jsx)(S.Z, {
+          source: (0, T.Z)(n),
           className: w.banner
         }), (0, r.jsx)(A.ZP, {
           name: n.name,

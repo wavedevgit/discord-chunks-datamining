@@ -53,25 +53,25 @@ function y(e) {
     hideText: y = false,
     hideTooltip: O = false,
     canTruncate: v = true
-  } = e, I = (0, a.e7)([d.Z], () => d.Z.getChannel(t.channelId)), S = (0, c.ZP)(I), {
-    analyticsLocations: T
+  } = e, I = (0, a.e7)([d.Z], () => d.Z.getChannel(t.channelId)), T = (0, c.ZP)(I), {
+    analyticsLocations: S
   } = (0, s.ZP)(), A = i.useCallback(() => {
     (0, f.A)({
-      analyticsLocations: T,
+      analyticsLocations: S,
       activityType: m.IIU.STREAMING,
       voiceChannelId: t.channelId
     })
-  }, [T, t.channelId]);
+  }, [S, t.channelId]);
   if (b && y) return null;
   let C = (null == n ? true : n.name) === "" ? null : null == n ? true : n.name,
     N = null != C ? g.intl.format(g.t["0wJXSk"], {
       name: C
     }) : g.intl.string(g.t.eXan7O),
-    R = !O && null != I && null != S;
+    R = !O && null != I && null != T;
   return (0, r.jsxs)(r.Fragment, {
     children: [!b && (0, r.jsx)(_.Z, {
       icon: o.ARS,
-      tooltipText: R ? S : true,
+      tooltipText: R ? T : true,
       tooltipAriaLabel: R ? (0, l.ZP)({
         channel: I
       }) : true,
@@ -103,16 +103,16 @@ function O(e) {
     name: O
   }) : g.intl.string(g.t.eXan7O), I = null != O ? g.intl.formatToPlainString(g.t["0wJXSk"], {
     name: O
-  }) : g.intl.string(g.t.eXan7O), S = null != y ? (0, r.jsxs)(r.Fragment, {
+  }) : g.intl.string(g.t.eXan7O), T = null != y ? (0, r.jsxs)(r.Fragment, {
     children: [v, " (", y, ")"]
-  }) : v, T = E ? S : v, A = null != y ? "".concat(I, " (").concat(y, ")") : I;
+  }) : v, S = E ? T : v, A = null != y ? "".concat(I, " (").concat(y, ")") : I;
   return (0, r.jsx)(h.Z, {
     icon: u ? true : (0, r.jsx)(_.Z, {
       icon: o.ARS,
       className: l
     }),
-    text: T,
-    tooltipText: p ? true : S,
+    text: S,
+    tooltipText: p ? true : T,
     textVariant: i,
     className: s,
     canTruncate: m,

@@ -58,9 +58,9 @@ let l = e => {
       },
       v = p ? "pointerup" : "mouseup",
       I = p ? "pointermove" : "mousemove",
-      S = n.current.ownerDocument;
-    return S.addEventListener(v, O), S.addEventListener(I, a), () => {
-      S.removeEventListener(v, O), S.removeEventListener(I, a), r.cancel()
+      T = n.current.ownerDocument;
+    return T.addEventListener(v, O), T.addEventListener(I, a), () => {
+      T.removeEventListener(v, O), T.removeEventListener(I, a), r.cancel()
     }
   }, [m, c, l, o, _, n, f, d, p, h, u]), r.useCallback(e => {
     let t = 1 === s(_);

@@ -2,7 +2,7 @@
 /** chunk id: 539873, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -62,7 +62,7 @@ function v(e, t) {
 
 function I(e, t) {
   if (null == e) return {};
-  var n, r, i = S(e, t);
+  var n, r, i = T(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -70,7 +70,7 @@ function I(e, t) {
   return i
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -78,14 +78,14 @@ function S(e, t) {
   return i
 }
 
-function T(e) {
+function S(e) {
   let {
     className: t,
     disabled: n,
     isEditor: b,
     renderCTAButtons: O
-  } = e, [S] = (0, a.Wu)([f.Z], () => [f.Z.getCurrentDesktopIcon()]), T = i.useRef(null);
-  (0, d.Z)(T, h.h1.CUSTOM_APP_ICONS);
+  } = e, [T] = (0, a.Wu)([f.Z], () => [f.Z.getCurrentDesktopIcon()]), S = i.useRef(null);
+  (0, d.Z)(S, h.h1.CUSTOM_APP_ICONS);
   let A = (0, c.Dt)(),
     C = (0, o.Jb)({
       orientation: "horizontal",
@@ -102,7 +102,7 @@ function T(e) {
       })
     };
   return (0, r.jsx)("div", {
-    ref: T,
+    ref: S,
     children: (0, r.jsx)("div", v(y({}, R), {
       ref: N,
       className: g.__invalid_container,
@@ -136,7 +136,7 @@ function T(e) {
             return !t
           }).map((e, t) => (0, r.jsx)(_.Z, {
             icon: e,
-            isSelected: S === e.id,
+            isSelected: T === e.id,
             onSelect: e => P(e),
             disabled: n,
             tabIndex: 0 !== t || n ? true : 0,

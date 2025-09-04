@@ -32,8 +32,8 @@ function I(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let S = null,
-  T = new Map,
+let T = null,
+  S = new Map,
   A = new Map,
   C = 10,
   N = 3;
@@ -109,7 +109,7 @@ function L(e) {
   let {
     id: t
   } = e, n = A.get(t);
-  null != n && (n.context.destroy(), n.results = [], A.delete(t)), T.delete(t), S = null
+  null != n && (n.context.destroy(), n.results = [], A.delete(t)), S.delete(t), T = null
 }
 
 function j(e) {
@@ -124,7 +124,7 @@ function M(e) {
 function k(e, t) {
   let {
     results: n
-  } = t, r = (0, E.Tm)(e), i = A.get(r), a = T.get(r);
+  } = t, r = (0, E.Tm)(e), i = A.get(r), a = S.get(r);
   if (null == i || null == a || !M(a.mode)) return;
   i.results = U(n, a.mode.type === O.Sap.FILTER ? C : N);
   let {
@@ -140,7 +140,7 @@ function k(e, t) {
     cursorScope: c,
     autocompletes: u
   });
-  T.set(r, d), en.emitChange()
+  S.set(r, d), en.emitChange()
 }
 
 function U(e) {
@@ -160,7 +160,7 @@ function U(e) {
 }
 
 function G(e) {
-  a()(S, e) || (S = e, (0, E.WU)())
+  a()(T, e) || (T = e, (0, E.WU)())
 }
 
 function B(e) {
@@ -180,7 +180,7 @@ function Z(e) {
   let a = (0, E.cl)(r),
     o = (0, E.qc)(i, r),
     s = (0, E.Tm)(n),
-    l = T.get(s),
+    l = S.get(s),
     c = true;
   if (null != l && a === l.query && (null == l.mode || l.mode.filter === o.filter)) t = l.autocompletes, c = false;
   else if (M(o)) {
@@ -210,7 +210,7 @@ function Z(e) {
     cursorScope: i,
     autocompletes: t
   });
-  return T.set(s, f), c
+  return S.set(s, f), c
 }
 
 function F(e) {
@@ -358,7 +358,7 @@ function z() {
 }
 
 function q(e) {
-  let t = T.get(e);
+  let t = S.get(e);
   if (null == t) return;
   let {
     searchContext: n,
@@ -379,7 +379,7 @@ function q(e) {
     cursorScope: o,
     autocompletes: l
   });
-  T.set(e, c)
+  S.set(e, c)
 }
 
 function X(e) {
@@ -390,12 +390,12 @@ function X(e) {
 }
 
 function Q() {
-  for (let e of T.keys()) q(module)
+  for (let e of S.keys()) q(module)
 }
 
 function J(e) {
   let t = (0, E.Tm)(e),
-    n = T.get(t);
+    n = S.get(t);
   if (null == n) returnfalse;
   let {
     query: r,
@@ -410,26 +410,26 @@ function J(e) {
     cursorScope: o,
     autocompletes: K(e, i, a)
   });
-  T.set(t, s)
+  S.set(t, s)
 }
 
 function $() {
-  return null != S && J(S)
+  return null != T && J(T)
 }
 
 function ee() {
-  if (null == S) returnfalse;
-  if ((0, Chunk607802.R6)(S)) {
+  if (null == T) returnfalse;
+  if ((0, Chunk607802.R6)(T)) {
     var e;
-    let t = (0, Chunk607802.Tm)(S),
-      n = T.get(exports);
+    let t = (0, Chunk607802.Tm)(T),
+      n = S.get(exports);
     if (null == require) returnfalse;
     let {
       type: r,
       filter: i,
       token: a
     } = require.mode, o = null == a || null == (e = a.getFullMatch()) ? true : module.trim(), s = null == Chunk442837 || 0 === Chunk442837.length;
-    if (r === Chunk981631.Sap.FILTER && Chunk498607 === Chunk981631.dCx.FILTER_IN && Chunk570140) return J(S)
+    if (r === Chunk981631.Sap.FILTER && Chunk498607 === Chunk981631.dCx.FILTER_IN && Chunk570140) return J(T)
   }
   returnfalse
 }
@@ -440,10 +440,10 @@ class et extends(r = Chunk442837.ZP.Store) {
   getState(e) {
     var t;
     let n = (0, E.Tm)(e);
-    return null != (t = T.get(n)) ? t : D(e)
+    return null != (t = S.get(n)) ? t : D(e)
   }
   getSelectedSearchContext() {
-    return S
+    return T
   }
 }
 I(et, "displayName", "SearchAutocompleteStore");

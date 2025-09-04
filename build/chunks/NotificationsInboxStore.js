@@ -251,7 +251,7 @@ function eo(e) {
   let {
     preload: n
   } = e;
-  return null != (null == (t = (0, S.Ag)({
+  return null != (null == (t = (0, T.Ag)({
     location: "NotificationsInboxStore.canLoadMore",
     autoTrackExposure: false
   })) ? true : t.notificationCenterVariant) && null != D && !j && !M && (!n || !U) && B
@@ -266,10 +266,10 @@ function el(e) {
     messageId: t,
     channelId: n,
     isUnread: r
-  } = e, i = (0, S.Ag)({
+  } = e, i = (0, T.Ag)({
     location: "handleInboxItemClick"
   }).notificationCenterVariant;
-  Z = r && i === S.jP.SIDEBAR ? {
+  Z = r && i === T.jP.SIDEBAR ? {
     channelId: n,
     messageId: t
   } : null
@@ -280,7 +280,7 @@ function ec(e) {
     channelId: t,
     messageId: n
   } = e;
-  (0, T.Tj)({
+  (0, S.Tj)({
     channelId: t,
     id: n
   }, Z) && (Z = null)

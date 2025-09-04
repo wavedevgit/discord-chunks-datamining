@@ -189,7 +189,7 @@ function e_(e) {
       premiumType: i,
       onClose: a
     } = e,
-    o = (0, T.ZP)(n.id),
+    o = (0, S.ZP)(n.id),
     s = (0, d.e7)([b.Z], () => b.Z.useReducedMotion),
     l = i === B.p9.TIER_1,
     c = () => {
@@ -274,7 +274,7 @@ function ep(e) {
         className: V.personalizedEmoji,
         alt: "",
         src: e
-      }) : null), l ? null : o.map(e => (0, r.jsx)(S.Z, {
+      }) : null), l ? null : o.map(e => (0, r.jsx)(T.Z, {
         disableAnimation: i,
         sticker: e,
         size: 58,

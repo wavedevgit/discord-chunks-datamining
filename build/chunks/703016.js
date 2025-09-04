@@ -77,12 +77,12 @@ function k() {
 }
 async function M(e, t, n, r, i) {
   let l = o.e6(e, n);
-  null !== l && (null == w && k(), t ? await (0, N.NB)() : null == Z || Z.removeEventListener("end", N.NB), l.addEventListener("end", N.NB), null != r && l.addEventListener("start", r), null != i && l.addEventListener("end", i), Z = l, o.iq(l, w))
+  null !== l && (null == w && k(), t ? await (0, T.NB)() : null == Z || Z.removeEventListener("end", T.NB), l.addEventListener("end", T.NB), null != r && l.addEventListener("start", r), null != i && l.addEventListener("end", i), Z = l, o.iq(l, w))
 }
 
 function U(e, t, n, r, i) {
   M(e, t, i, () => {
-    (0, N.Bo)(n, r)
+    (0, T.Bo)(n, r)
   })
 }
 
@@ -124,9 +124,9 @@ function H(e) {
     b = h.ZP.getCurrentSidebarChannelId(d),
     _ = o === d || o === b,
     C = p.OW.getSetting() && s.tts && _,
-    N = E.Z.getTTSType(),
-    T = (null == (t = s.author) ? true : t.id) !== f.default.getId() && (N === P.PrB.ALL_CHANNELS || N === P.PrB.SELECTED_CHANNEL && _);
-  if ((C || T) && !y.Z.isBlockedOrIgnoredForMessage(s)) {
+    T = E.Z.getTTSType(),
+    N = (null == (t = s.author) ? true : t.id) !== f.default.getId() && (T === P.PrB.ALL_CHANNELS || T === P.PrB.SELECTED_CHANNEL && _);
+  if ((C || N) && !y.Z.isBlockedOrIgnoredForMessage(s)) {
     if (A.indexOf(s.id) >= 0) returnfalse;
     A.unshift(s.id) > 10 && A.pop();
     let e = u.getGuildId();
@@ -143,8 +143,8 @@ function F(e) {
   let {
     id: t,
     channelId: n
-  } = e, r = T.Z.currentMessage;
-  return null != r && t === r.messageId && n === r.channelId && ((0, N.NB)(), true)
+  } = e, r = N.Z.currentMessage;
+  return null != r && t === r.messageId && n === r.channelId && ((0, T.NB)(), true)
 }
 
 function z() {

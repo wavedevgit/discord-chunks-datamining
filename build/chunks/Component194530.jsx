@@ -23,11 +23,11 @@ function _(e) {
     onClose: g,
     requirementsUpdated: E,
     noSkip: b = false
-  } = e, [y, O] = i.useState(""), [v, I] = i.useState(""), [S, T] = i.useState(""), [A, C] = i.useState(null), [N, R] = i.useState(null), P = (0, a.e7)([l.Z], () => l.Z.getErrors()), w = (0, a.e7)([l.Z], () => l.Z.getFormState()), D = i.useRef(null);
+  } = e, [y, O] = i.useState(""), [v, I] = i.useState(""), [T, S] = i.useState(""), [A, C] = i.useState(null), [N, R] = i.useState(null), P = (0, a.e7)([l.Z], () => l.Z.getErrors()), w = (0, a.e7)([l.Z], () => l.Z.getFormState()), D = i.useRef(null);
   async function x(e) {
     e.preventDefault(), (0, s.b9)();
     let t = false;
-    if ("" === v ? (C(d.intl.string(d.t["/7/oPT"])), t = true) : C(null), v !== S ? (R(d.intl.string(d.t.IEKYZ2)), t = true) : R(null), t) return;
+    if ("" === v ? (C(d.intl.string(d.t["/7/oPT"])), t = true) : C(null), v !== T ? (R(d.intl.string(d.t.IEKYZ2)), t = true) : R(null), t) return;
     let n = await (0, s.Mn)({
       password: y,
       newPassword: v
@@ -98,8 +98,8 @@ function _(e) {
           required: true,
           children: (0, r.jsx)(o.oil, {
             type: "password",
-            value: S,
-            onChange: T,
+            value: T,
+            onChange: S,
             autoComplete: "new-password",
             required: true
           })

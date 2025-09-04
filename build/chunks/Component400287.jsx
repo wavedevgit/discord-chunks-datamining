@@ -34,8 +34,8 @@ function b() {
     O = Chunk695346.H1.useSetting(),
     v = Chunk695346.ev.useSetting(),
     I = Chunk695346.x4.useSetting(),
-    S = Chunk695346.RS.useSetting(),
-    T = Chunk695346.NA.useSetting(),
+    T = Chunk695346.RS.useSetting(),
+    S = Chunk695346.NA.useSetting(),
     A = Chunk695346.nc.useSetting(),
     {
       analyticsLocations: C
@@ -73,7 +73,7 @@ function b() {
         setting: Chunk726985.s6.CHAT_INLINE_MEDIA_LINKS,
         children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
           className: a()(Chunk197571.marginTop8, Chunk197571.marginBottom20),
-          value: S,
+          value: T,
           onChange: Chunk695346.RS.updateSetting,
           children: Chunk388032.intl.string(Chunk388032.t.U47N1t)
         })
@@ -107,7 +107,7 @@ function b() {
         setting: Chunk726985.s6.CHAT_EMBEDS_LINK_PREVIEWS,
         children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
           className: a()(Chunk197571.marginTop8, Chunk197571.marginBottom40),
-          value: T,
+          value: S,
           onChange: Chunk695346.NA.updateSetting,
           children: Chunk388032.intl.string(Chunk388032.t.xX0ZTE)
         })

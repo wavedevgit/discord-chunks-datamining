@@ -18,8 +18,8 @@ var Chunk48657 = require("./48657.js"),
   h = p.prototype;
 module.exports = function(e, t, n) {
   var m, g, E, b, y, O, v, I = n && n.that,
-    S = !!(n && n.AS_ENTRIES),
-    T = !!(n && n.IS_RECORD),
+    T = !!(n && n.AS_ENTRIES),
+    S = !!(n && n.IS_RECORD),
     A = !!(n && n.IS_ITERATOR),
     C = !!(n && n.INTERRUPTED),
     N = r(t, I),
@@ -27,9 +27,9 @@ module.exports = function(e, t, n) {
       return m && f(m, "normal", e), new p(true, e)
     },
     P = function(e) {
-      return S ? (a(e), C ? N(e[0], e[1], R) : N(e[0], e[1])) : C ? N(e, R) : N(e)
+      return T ? (a(e), C ? N(e[0], e[1], R) : N(e[0], e[1])) : C ? N(e, R) : N(e)
     };
-  if (T) m = e.iterator;
+  if (S) m = e.iterator;
   else if (A) m = e;
   else {
     if (!(g = d(e))) throw new _(o(e) + " is not iterable");
@@ -40,7 +40,7 @@ module.exports = function(e, t, n) {
     }
     m = u(e, g)
   }
-  for (O = T ? e.next : m.next; !(v = i(O, m)).done;) {
+  for (O = S ? e.next : m.next; !(v = i(O, m)).done;) {
     try {
       y = P(v.value)
     } catch (e) {

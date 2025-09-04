@@ -32,8 +32,8 @@ function g(e, t, n) {
     allowNsfw: g,
     computedPermissions: v,
     userId: I,
-    roleIds: S,
-    isImpersonating: T,
+    roleIds: T,
+    isImpersonating: S,
     hasBaseAccessPermissions: A
   } = t, {
     applicationAllowedForUser: C,
@@ -64,7 +64,7 @@ function g(e, t, n) {
     let t = y(e.permissions, l, x);
     if (b(t) || !E(t) && b(N)) return 6
   }
-  let L = O(e.permissions, x, I, S, T);
+  let L = O(e.permissions, x, I, T, S);
   if (E(L)) return 0;
   if (b(L) || b(C)) return 7;
   if (null != e.defaultMemberPermissions && !(!o.fS(e.defaultMemberPermissions, f.BO) && o.e$(v, e.defaultMemberPermissions))) return 7;

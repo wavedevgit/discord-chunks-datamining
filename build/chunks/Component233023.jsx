@@ -33,25 +33,25 @@ function _(e) {
   let O = null == t ? true : t.emoji,
     v = null == t ? true : t.state,
     I = null != v && "" !== v,
-    S = null;
-  null != h && y ? S = (0, r.jsx)(l.Z, {
+    T = null;
+  null != h && y ? T = (0, r.jsx)(l.Z, {
     className: a()(i, f.hangStatusIcon),
     hangStatusActivity: h
-  }) : null == O || E || (S = (0, r.jsx)(u.Z, {
+  }) : null == O || E || (T = (0, r.jsx)(u.Z, {
     emoji: O,
     animate: g,
     className: i,
     hideTooltip: b || I
   }));
-  let T = I && (null != S ? " ".concat(v) : v),
+  let S = I && (null != T ? " ".concat(v) : v),
     A = () => {
       let e = null != O && !E && !I;
       return b || e ? (0, r.jsxs)(r.Fragment, {
-        children: [S, T]
+        children: [T, S]
       }) : (0, r.jsxs)(s.Z, {
         delay: d.X,
         tooltipClassName: _,
-        children: [S, T]
+        children: [T, S]
       })
     };
   return (0, r.jsx)(o.Text, {

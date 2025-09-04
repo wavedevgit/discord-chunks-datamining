@@ -274,7 +274,7 @@ let Z = Chunk428595.Z.RULES,
           content: e[0]
         };
         let s = R.ZP.getUserTag(o, {
-          identifiable: r && T.Z.enabled ? "never" : "always"
+          identifiable: r && S.Z.enabled ? "never" : "always"
         });
         if (r) {
           let e = R.ZP.getGlobalName(o);
@@ -342,7 +342,7 @@ let Z = Chunk428595.Z.RULES,
       parse(e) {
         let t = g.Z.getChannel(e[1]);
         return {
-          content: null == t ? e[0] : (0, s.F6)(t, A.default, S.Z, true, true)
+          content: null == t ? e[0] : (0, s.F6)(t, A.default, T.Z, true, true)
         }
       }
     },

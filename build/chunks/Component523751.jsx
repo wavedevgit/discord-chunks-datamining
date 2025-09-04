@@ -141,24 +141,24 @@ function x(e) {
     guildTraits: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: T.tooltipPremiumFooterContainer,
+    className: S.tooltipPremiumFooterContainer,
     children: [(0, r.jsxs)("div", {
-      className: o()(T.tooltipPremiumFooterSegment, T.tooltipPremiumFooterTierSegment),
+      className: o()(S.tooltipPremiumFooterSegment, S.tooltipPremiumFooterTierSegment),
       children: [(0, r.jsx)(E.Z, {
         width: 18,
         height: 18,
-        className: T.gemIcon
+        className: S.gemIcon
       }), (0, r.jsx)(u.Text, {
         variant: "text-xs/semibold",
         color: "always-white",
         children: b.nW(t.premiumTier)
       })]
     }), (0, r.jsx)("div", {
-      className: T.tooltipPremiumFooterSegment,
+      className: S.tooltipPremiumFooterSegment,
       children: (0, r.jsx)(u.Text, {
         variant: "text-xs/semibold",
         color: "always-white",
-        children: S.intl.format(S.t["dR/SVF"], {
+        children: T.intl.format(T.t["dR/SVF"], {
           count: t.premiumSubscriberCount
         })
       })
@@ -177,7 +177,7 @@ function L(e) {
   } = (0, v.G)(t, n.visibility);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: T.tooltipBodyContainer,
+      className: S.tooltipBodyContainer,
       children: [(0, r.jsx)(u.Text, {
         color: "interactive-active",
         variant: "text-xs/bold",
@@ -207,7 +207,7 @@ function j(e) {
     flowerStarClassName: E,
     iconClassName: b,
     badgeStrokeColor: v,
-    badgeColor: S,
+    badgeColor: T,
     disableBoostClick: A,
     "aria-label": N = false
   } = e;
@@ -254,7 +254,7 @@ function j(e) {
       badgeType: k,
       guildTraits: M
     }),
-    tooltipContentClassName: T.tooltipRemovePadding,
+    tooltipContentClassName: S.tooltipRemovePadding,
     children: e => (0, r.jsx)(u.P3F, {
       onClick: G,
       tabIndex: U ? 0 : false,
@@ -262,7 +262,7 @@ function j(e) {
         className: g,
         flowerStarClassName: E,
         allowFullSizedIcon: true,
-        color: null != n ? n : S,
+        color: null != n ? n : T,
         stroke: v,
         size: w,
         children: (0, r.jsx)(B, {

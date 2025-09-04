@@ -2,7 +2,7 @@
 /** chunk id: 776031, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -61,7 +61,7 @@ function I(e, t) {
   }), e
 }
 
-function S(e, t) {
+function T(e, t) {
   (0, o.ZDy)(async () => {
     let {
       default: e
@@ -74,19 +74,19 @@ function S(e, t) {
   })
 }
 
-function T(e, t) {
+function S(e, t) {
   let {
     preset: n,
     resolution: y,
     fps: v
-  } = (0, a.cj)([u.Z], () => u.Z.getState()), T = (0, a.e7)([_.Z], () => _.Z.getGoLiveSource()), A = (0, a.e7)([h.default], () => h.default.getCurrentUser()), C = (0, a.e7)([f.Z], () => {
+  } = (0, a.cj)([u.Z], () => u.Z.getState()), S = (0, a.e7)([_.Z], () => _.Z.getGoLiveSource()), A = (0, a.e7)([h.default], () => h.default.getCurrentUser()), C = (0, a.e7)([f.Z], () => {
     var t;
     return null == (t = f.Z.getGuild(null == e ? true : e.guildId)) ? true : t.premiumTier
   }), {
     location: N
   } = (0, l.O)(), R = (0, a.e7)([p.Z, d.Z], () => d.Z.getChannel(p.Z.getVoiceChannelId())), P = i.useCallback((e, n, r, i) => {
     if (e) {
-      if (null != T) {
+      if (null != S) {
         let e = {
           qualityOptions: {
             preset: g.tI.PRESET_CUSTOM,
@@ -95,19 +95,19 @@ function T(e, t) {
           },
           context: E.Yn.STREAM
         };
-        null != T.desktopSource ? e.desktopSettings = {
-          sourceId: T.desktopSource.id,
+        null != S.desktopSource ? e.desktopSettings = {
+          sourceId: S.desktopSource.id,
           sound: true
-        } : null != T.cameraSource && (e.cameraSettings = {
-          videoDeviceGuid: T.cameraSource.videoDeviceGuid,
-          audioDeviceGuid: T.cameraSource.audioDeviceGuid
+        } : null != S.cameraSource && (e.cameraSettings = {
+          videoDeviceGuid: S.cameraSource.videoDeviceGuid,
+          audioDeviceGuid: S.cameraSource.audioDeviceGuid
         }), s.Z.setGoLiveSource(e)
       }
-    } else S(t, I(O({}, N), {
+    } else T(t, I(O({}, N), {
       object: m.qAy.RADIO_ITEM,
       objectType: i
     }))
-  }, [t, N, T]);
+  }, [t, N, S]);
   if (null == e) return null;
   let w = n === g.tI.PRESET_DOCUMENTS ? g.ws.FPS_30 : v,
     D = g.af.map(e => {

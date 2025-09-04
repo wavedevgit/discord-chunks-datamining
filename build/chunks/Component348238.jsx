@@ -219,7 +219,7 @@ function Y(e, t) {
     id: r
   } = t;
   return i.useCallback(e => {
-    e.altKey && (e.preventDefault(), (0, S.Z)(r, n))
+    e.altKey && (e.preventDefault(), (0, T.Z)(r, n))
   }, [r, n])
 }
 
@@ -274,7 +274,7 @@ function z(e, t) {
     let {
       messageReference: n
     } = e;
-    (null == t || (0, T.Z)(t)) && o.Z.jumpToMessage({
+    (null == t || (0, S.Z)(t)) && o.Z.jumpToMessage({
       channelId: n.channel_id,
       messageId: n.message_id,
       flash: true,

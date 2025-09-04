@@ -29,8 +29,8 @@ let f = 20,
       rowCount: O,
       rowCountBySection: v,
       rowHeight: I,
-      sectionHeaderHeight: S,
-      sectionFooterHeight: T,
+      sectionHeaderHeight: T,
+      sectionFooterHeight: S,
       renderUpsell: A,
       onScroll: C
     } = e, N = i.useRef(false), R = i.useRef(null), P = (0, l.Iu)(e => e.searchQuery), w = a.useStore(e => e.activeCategoryIndex), D = n.map(e => (0, s._O)(e.categoryInfo) ? {
@@ -105,8 +105,8 @@ let f = 20,
         rowCount: O,
         rowCountBySection: v,
         rowHeight: I,
-        sectionHeaderHeight: S,
-        sectionFooterHeight: T,
+        sectionHeaderHeight: T,
+        sectionFooterHeight: S,
         stickyHeaders: true,
         ref: R
       }), null == A ? true : A(), null == b ? true : b()]

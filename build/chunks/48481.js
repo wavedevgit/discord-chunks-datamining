@@ -6,12 +6,12 @@ require.d(exports, {
   ac: () => E,
   cv: () => b,
   d5: () => g,
-  i7: () => S,
+  i7: () => T,
   kI: () => m,
   re: () => O,
   tU: () => C,
   u0: () => I,
-  uL: () => T,
+  uL: () => S,
   xU: () => y,
   xt: () => A
 }), require("./415506.js"), require("./388685.js"), require("./539854.js"), require("./583741.js");
@@ -93,11 +93,11 @@ function I(e, t, n) {
   return (null == t || "null" === t) && (t = d.aIL), t in e.guilds || (e.guilds[t] = l.C4.create()), n(e.guilds[t])
 }
 
-function S(e, t, n, r) {
-  return v(e, t, e => T(e, n, r))
+function T(e, t, n, r) {
+  return v(e, t, e => S(e, n, r))
 }
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e.channels || (e.channels[t] = l.p5.create()), n(e.channels[t])
 }
 

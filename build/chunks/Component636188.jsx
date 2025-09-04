@@ -180,9 +180,9 @@ function B(e) {
     isVideo: b,
     hotspotLocation: O
   } = e, v = x(e, ["option", "source", "selected", "onSelectOption", "isAnimatedImage", "isVideo", "hotspotLocation"]);
-  let S = (0, u.O)(),
+  let T = (0, u.O)(),
     {
-      analyticsLocations: T
+      analyticsLocations: S
     } = (0, _.ZP)(f.Z.VIDEO_BACKGROUND_IMAGE_OPTION),
     R = (0, s.e7)([m.Z], () => null != O && m.Z.hasHotspot(O)),
     w = b ? (0, r.jsx)(p.Z, {
@@ -200,8 +200,8 @@ function B(e) {
   function L() {
     null != O && R && (h.Kw(O), g.default.track(I.rMx.PREMIUM_UPSELL_VIEWED, {
       type: A.cd.ANIMATED_VIDEO_BACKGROUND_NEW_PRESET,
-      location: S.location,
-      location_stack: T
+      location: T.location,
+      location_stack: S
     }))
   }
   return (0, r.jsxs)(l.P3F, D(P({}, v), {
@@ -257,10 +257,10 @@ function F(e) {
     onClick: t,
     tooltipText: n,
     disabled: i = false
-  } = e, a = (0, s.e7)([m.Z], () => m.Z.hasHotspot(S.v.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW));
+  } = e, a = (0, s.e7)([m.Z], () => m.Z.hasHotspot(T.v.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW));
 
   function o() {
-    h.Kw(S.v.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW)
+    h.Kw(T.v.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW)
   }
   let c = a ? C.intl.string(C.t["5TUJOj"]) : n;
   return (0, r.jsxs)(l.DY3, {
@@ -337,7 +337,7 @@ function H(e) {
           } = e;
           return t(n, r, i)
         },
-        uploadType: T.pC.VIDEO_BACKGROUND,
+        uploadType: S.pC.VIDEO_BACKGROUND,
         filters: s,
         modalTitle: C.intl.string(C.t.yG2pUl),
         imageSpecifications: C.intl.string(C.t["72OaxM"]),

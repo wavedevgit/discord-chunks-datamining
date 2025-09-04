@@ -2,9 +2,9 @@
 /** chunk id: 91159, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A_: () => S,
+  A_: () => T,
   Ok: () => N,
-  U4: () => T,
+  U4: () => S,
   Ye: () => Chunk814391.Z,
   ZJ: () => C,
   q: () => A
@@ -83,11 +83,11 @@ function I(e, t) {
 }
 require("./388032.jsx");
 
-function S() {
+function T() {
   (0, Chunk367907.yw)(Chunk981631.rMx.THREAD_BROWSER_TAB_CHANGED)
 }
 
-function T() {
+function S() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "Modal";
   (0, Chunk367907.yw)(Chunk981631.rMx.OPEN_MODAL, {
     type: "Thread Browser",
@@ -114,8 +114,8 @@ function C(e, t) {
     y = p.Z.isMuted(e.id),
     I = (0, f.sK)(p.Z.getMuteConfig(e.id)),
     {
-      can_send_message: S,
-      parent_channel_type: T
+      can_send_message: T,
+      parent_channel_type: S
     } = i,
     A = O(b({}, v(i, ["can_send_message", "parent_channel_type"])), {
       channel_id: e.id,

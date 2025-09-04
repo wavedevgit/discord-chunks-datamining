@@ -5,7 +5,7 @@ require.d(exports, {
   FL: () => B,
   Mq: () => k,
   NK: () => V,
-  OP: () => S,
+  OP: () => T,
   Sw: () => Y,
   ZP: () => F,
   ge: () => H,
@@ -74,7 +74,7 @@ function I(e) {
   return e.type === g.uaV.AUTO_MODERATION_ACTION
 }
 
-function S(e) {
+function T(e) {
   var t;
   return null == (t = e.embeds) ? true : t.some(e => {
     let {
@@ -84,7 +84,7 @@ function S(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   return e.type === g.hBH.AUTO_MODERATION_NOTIFICATION
 }
 
@@ -102,7 +102,7 @@ function C(e, t) {
       } = e;
       return n === t
     })) ? true : r.rawValue;
-    if (T(s)) return null == s || null == (o = s.fields) || null == (a = o.find(e => {
+    if (S(s)) return null == s || null == (o = s.fields) || null == (a = o.find(e => {
       let {
         rawName: n
       } = e;

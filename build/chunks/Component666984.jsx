@@ -28,9 +28,9 @@ function g(e) {
     onAction: O
   } = e, {
     themeType: v
-  } = (0, d.z)(), I = (0, c.Ih)(y, b), S = (0, c.Fe)(y, b);
+  } = (0, d.z)(), I = (0, c.Ih)(y, b), T = (0, c.Fe)(y, b);
   if (!(0, l.Z)(y) || !(0, s.Z)(y, _.xjy.PLAY) && !(0, s.Z)(y, _.xjy.SYNC)) return null;
-  let T = e => {
+  let S = e => {
       null == e || e.stopPropagation(), null == O || O({
         action: "PRESS_PLAY_ON_SPOTIFY_BUTTON"
       }), I.onClick()
@@ -38,16 +38,16 @@ function g(e) {
     A = e => {
       e.stopPropagation(), null == O || O({
         action: "PRESS_LISTEN_ALONG_ON_SPOTIFY_BUTTON"
-      }), S.onClick()
+      }), T.onClick()
     };
   return v === p.l.MODAL_V2 ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.u, {
       asContainer: true,
-      text: S.tooltip,
+      text: T.tooltip,
       children: (0, r.jsx)(f.tG, {
-        text: null != (t = S.label) ? t : h.intl.string(h.t.eU3inJ),
-        disabled: S.disabled,
-        submitting: S.loading,
+        text: null != (t = T.label) ? t : h.intl.string(h.t.eU3inJ),
+        disabled: T.disabled,
+        submitting: T.loading,
         size: a.Ph.TINY,
         themeColor: "secondary",
         onClick: A
@@ -61,7 +61,7 @@ function g(e) {
         submitting: I.loading,
         size: a.Ph.TINY,
         themeColor: "secondary",
-        onClick: T
+        onClick: S
       })
     })]
   }) : (0, r.jsxs)(r.Fragment, {
@@ -76,13 +76,13 @@ function g(e) {
         wrapperClassName: m.primaryButton,
         themeColor: "secondary",
         fullWidth: true,
-        onClick: T
+        onClick: S
       })
     }), (0, r.jsx)(f.ef, {
       icon: o.iOO,
-      tooltipText: null != (E = S.tooltip) ? E : h.intl.string(h.t.eU3inJ),
-      disabled: S.disabled,
-      submitting: S.loading,
+      tooltipText: null != (E = T.tooltip) ? E : h.intl.string(h.t.eU3inJ),
+      disabled: T.disabled,
+      submitting: T.loading,
       themeColor: "secondary",
       fullWidth: true,
       onClick: A

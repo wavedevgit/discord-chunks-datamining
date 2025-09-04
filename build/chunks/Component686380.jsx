@@ -332,7 +332,7 @@ function V(e) {
     return d ? null == (e = E.Z.getPremiumTypeSubscription()) ? true : e.trialEndsAt : null
   }), {
     analyticsLocations: m
-  } = (0, p.ZP)(_.Z.SHARE_NITRO_EMBED), b = S.ZP.useExperiment({
+  } = (0, p.ZP)(_.Z.SHARE_NITRO_EMBED), b = T.ZP.useExperiment({
     location: "ConnectedReferralTrialEmbed"
   });
   return o ? (0, r.jsx)(f.OR, {

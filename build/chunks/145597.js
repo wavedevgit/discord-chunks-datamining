@@ -15,8 +15,8 @@ require.r(exports), require.d(exports, {
   log: () => O,
   setOutOfProcessSupport: () => I,
   setPID: () => E,
-  supportsLegacy: () => T,
-  supportsOutOfProcess: () => S,
+  supportsLegacy: () => S,
+  supportsOutOfProcess: () => T,
   validResolution: () => v
 }), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./35282.js");
 var Chunk887278 = require("./887278.js"),
@@ -75,11 +75,11 @@ function I(e) {
   m = e
 }
 
-function S() {
+function T() {
   return m
 }
 
-function T() {
+function S() {
   let e = (0, Chunk358085.isWindows)() && "arm64" === Chunk998502.ZP.architecture;
   return Chunk987650.iP && !module && !(0, Chunk887278.$1)()
 }

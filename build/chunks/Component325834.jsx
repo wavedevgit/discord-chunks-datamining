@@ -86,15 +86,15 @@ let v = e => {
     } = e, {
       isPurchased: v
     } = (0, f.L)(n), I = (0, s.JA)("shop-variants-group-".concat(t.storeListingId, "-").concat(a)), {
-      onFocus: S
-    } = I, T = y(I, ["onFocus"]), A = i.useCallback(e => {
-      e.preventDefault(), e.stopPropagation(), (0, d.$)(t, a), S()
-    }, [S, t, a]), C = (0, _.SQ)(n);
+      onFocus: T
+    } = I, S = y(I, ["onFocus"]), A = i.useCallback(e => {
+      e.preventDefault(), e.stopPropagation(), (0, d.$)(t, a), T()
+    }, [T, t, a]), C = (0, _.SQ)(n);
     return (0, r.jsx)(c.ua7, {
       text: p.intl.string(p.t["6cfuDg"]),
       "aria-label": false,
       shouldShow: v,
-      children: e => (0, r.jsx)(c.P3F, b(g({}, T), {
+      children: e => (0, r.jsx)(c.P3F, b(g({}, S), {
         tag: "li",
         onMouseEnter: () => {
           var t;

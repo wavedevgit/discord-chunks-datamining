@@ -60,19 +60,19 @@ function b(e) {
     O = false,
     v = false,
     I = false,
-    S = false;
-  r.isPhoneVerified() || r.isStaff() || (O = n.verificationLevel >= _.sFg.LOW && !r.verified, v = n.verificationLevel >= _.sFg.VERY_HIGH, I = n.verificationLevel >= _.sFg.MEDIUM && h > 0, S = n.verificationLevel >= _.sFg.HIGH && m > 0);
-  let T = [];
-  S && T.push(m), I && T.push(h), T.length > 0 && (t = setTimeout(() => a.Z.dispatch({
+    T = false;
+  r.isPhoneVerified() || r.isStaff() || (O = n.verificationLevel >= _.sFg.LOW && !r.verified, v = n.verificationLevel >= _.sFg.VERY_HIGH, I = n.verificationLevel >= _.sFg.MEDIUM && h > 0, T = n.verificationLevel >= _.sFg.HIGH && m > 0);
+  let S = [];
+  T && S.push(m), I && S.push(h), S.length > 0 && (t = setTimeout(() => a.Z.dispatch({
     type: "GUILD_VERIFICATION_CHECK",
     guildId: e
-  }), Math.max(...T))), E[e] = {
+  }), Math.max(...S))), E[e] = {
     notClaimed: b,
     notEmailVerified: O,
     notPhoneVerified: v,
     newAccount: I,
-    newMember: S,
-    canChat: !(b || O || v || I || S),
+    newMember: T,
+    canChat: !(b || O || v || I || T),
     accountDeadline: new Date(Date.now() + h),
     memberDeadline: new Date(Date.now() + m),
     timeoutRef: t
@@ -96,14 +96,14 @@ function I(e) {
   g.delete(e.guild.id), b(e.guild.id)
 }
 
-function S(e) {
+function T(e) {
   let {
     guild: t
   } = e;
   y(t.id)
 }
 
-function T(e) {
+function S(e) {
   var t;
   let {
     guildId: n,
@@ -142,7 +142,7 @@ let R = new N(Chunk570140.Z, {
   CURRENT_USER_UPDATE: A,
   GUILD_CREATE: I,
   GUILD_UPDATE: I,
-  GUILD_DELETE: S,
-  GUILD_MEMBER_UPDATE: T,
+  GUILD_DELETE: T,
+  GUILD_MEMBER_UPDATE: S,
   GUILD_VERIFICATION_CHECK: C
 })

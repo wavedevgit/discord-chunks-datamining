@@ -8,7 +8,7 @@ require.d(exports, {
   RW: () => M,
   T5: () => V,
   Y3: () => Z,
-  Yt: () => S,
+  Yt: () => T,
   _t: () => G,
   a1: () => w,
   bN: () => I,
@@ -44,11 +44,11 @@ function I() {
   return null != module && Chunk709054.default.extractTimestamp(module.id) > y.getTime() && null == module.nsfwAllowed
 }
 
-function S(e) {
+function T(e) {
   return O.includes(e.nsfwLevel)
 }
 
-function T(e) {
+function S(e) {
   return null != e && A(f.Z.getGuild(e))
 }
 
@@ -161,7 +161,7 @@ function k(e, t, n) {
     (0, m.mN)(e);
     return
   }
-  return T(e) ? void(0, m.mN)(g.L0.LARGE_GUILD) : L(t) ? void(0, m.mN)(null != n ? n : g.L0.NSFW_CHANNEL) : true
+  return S(e) ? void(0, m.mN)(g.L0.LARGE_GUILD) : L(t) ? void(0, m.mN)(null != n ? n : g.L0.NSFW_CHANNEL) : true
 }
 let U = e => null != e && (e.isNSFW() || (0, c.Y2)(f.Z.getGuild(e.guild_id))),
   G = e => {

@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk120472 = require("./120472.js"),
   Chunk691766 = require("./691766.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,7 +43,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -165,7 +165,7 @@ let R = e => {
     n.forEach(e => {
       e === m.Fe.REDEEMED && p.redeemed++, e === m.Fe.CONVERTED && (p.redeemed++, p.converted++)
     });
-    let T = p.sent === E.Q,
+    let S = p.sent === E.Q,
       A = h.Z.getArticleURL(O.BhN.REFERRAL_PROGRAM),
       {
         analyticsLocations: C
@@ -187,7 +187,7 @@ let R = e => {
             variant: t ? "heading-xl/extrabold" : "heading-xxl/extrabold",
             className: I.expandedProgressBarHeader,
             children: (0, y.$s)({
-              hasSentAll: T
+              hasSentAll: S
             })
           }), (0, r.jsx)(w, {
             userRecords: f
@@ -212,10 +212,10 @@ let R = e => {
               children: (0, r.jsxs)("div", {
                 className: I.expandedProgressBarSelectFriendsCTAInner,
                 children: [(0, r.jsx)("img", {
-                  src: S,
+                  src: T,
                   alt: "",
                   className: I.expandedProgressBarSelectFriendsIcon
-                }), T ? v.intl.string(v.t.SY9tyM) : v.intl.string(v.t.Lm2nFR)]
+                }), S ? v.intl.string(v.t.SY9tyM) : v.intl.string(v.t.Lm2nFR)]
               })
             })
           })]

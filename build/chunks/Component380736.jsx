@@ -62,9 +62,9 @@ function I(e, t) {
   }), e
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
-  var n, r, i = T(e, t);
+  var n, r, i = S(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -72,7 +72,7 @@ function S(e, t) {
   return i
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -95,8 +95,8 @@ let C = Chunk647438.memo(function(e) {
     hint: O,
     cancelText: v,
     confirmText: I,
-    icon: S,
-    body: T,
+    icon: T,
+    body: S,
     title: C,
     renderFooter: N,
     contentOpacity: R,
@@ -163,14 +163,14 @@ let C = Chunk647438.memo(function(e) {
   }
 
   function W() {
-    return null == S ? null : "string" == typeof S ? (0, r.jsx)(u.qEK, {
-      src: S,
+    return null == T ? null : "string" == typeof T ? (0, r.jsx)(u.qEK, {
+      src: T,
       size: u.EFr.SIZE_40,
       className: b.avatar,
       "aria-hidden": true
     }) : (0, r.jsx)("div", {
       className: b.avatar,
-      children: S
+      children: T
     })
   }
 
@@ -189,11 +189,11 @@ let C = Chunk647438.memo(function(e) {
             variant: "text-sm/semibold",
             lineClamp: 2,
             children: C
-          }), null != T ? (0, r.jsx)(u.Text, {
+          }), null != S ? (0, r.jsx)(u.Text, {
             color: "interactive-normal",
             variant: "text-sm/normal",
             lineClamp: null != t ? t * (M ? 2 : 1) : true,
-            children: T
+            children: S
           }) : null, H(), Y()]
         })]
       }), null != e && (0, r.jsx)(u.P3F, {
@@ -287,7 +287,7 @@ function P(e) {
     d.Z.updateNotificationStatus(c), null == f || f(e, c)
   }, [c, f]), v = i.useCallback(e => {
     null == _ || _(e, c)
-  }, [_, c]), T = i.useCallback(e => {
+  }, [_, c]), S = i.useCallback(e => {
     null == p || p(e, c)
   }, [p, c]), A = i.useCallback(e => {
     null == h || h(e, c)
@@ -302,7 +302,7 @@ function P(e) {
       disableClickableRegions: k = false
     },
     status: U
-  } = t, G = S(t.props, ["onNotificationShow", "onDismissClick", "renderFooter", "onNotificationClick", "onConfirmClick", "onCancelClick", "disableClickableRegions"]), B = !o && a, Z = 0 === n && !k && !B, {
+  } = t, G = T(t.props, ["onNotificationShow", "onDismissClick", "renderFooter", "onNotificationClick", "onConfirmClick", "onCancelClick", "disableClickableRegions"]), B = !o && a, Z = 0 === n && !k && !B, {
     ref: F,
     springs: V
   } = (0, m.X4)(t.id, s, l);
@@ -321,7 +321,7 @@ function P(e) {
         onNotificationShow: 0 === n ? b : true,
         onDismissClick: y,
         onNotificationClick: null != _ ? v : true,
-        onConfirmClick: null != p ? T : true,
+        onConfirmClick: null != p ? S : true,
         onCancelClick: null != h ? A : true,
         renderFooter: P,
         expand: false,

@@ -27,9 +27,9 @@ function g(e) {
       compact: v
     } = e,
     I = null == (t = y.chatWallpaperInfo) ? true : t.wallpaperId,
-    S = (0, l.ZP)(y),
+    T = (0, l.ZP)(y),
     {
-      chatWallpaper: T,
+      chatWallpaper: S,
       isUpdatingChatWallpaperFlag: A,
       lastSetMessageId: C
     } = (0, a.cj)([u.Z], () => ({
@@ -43,13 +43,13 @@ function g(e) {
     w = (null == P ? true : P.id) === y.author.id,
     D = d.t(O);
   if (i.useEffect(() => {
-      null == T && u.Z.shouldFetchWallpapers && f.k9()
-    }, [T]), null == I) return null;
+      null == S && u.Z.shouldFetchWallpapers && f.k9()
+    }, [S]), null == I) return null;
   E = w ? h.intl.format(h.t.z847Tk, {
-    wallpaper_name: null != (n = null == T ? true : T.label) ? n : h.intl.string(h.t["UQMV/P"])
+    wallpaper_name: null != (n = null == S ? true : S.label) ? n : h.intl.string(h.t["UQMV/P"])
   }) : h.intl.format(h.t["+lKndX"], {
-    username: null == S ? true : S.nick,
-    wallpaper_name: null != (g = null == T ? true : T.label) ? g : h.intl.string(h.t["UQMV/P"])
+    username: null == T ? true : T.nick,
+    wallpaper_name: null != (g = null == S ? true : S.label) ? g : h.intl.string(h.t["UQMV/P"])
   });
   let x = h.intl.string(h.t["6JSOu7"]);
   return (null == N ? true : N.isViewable) && R && !w && (b = (0, r.jsx)("div", {

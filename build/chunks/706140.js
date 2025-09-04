@@ -6,7 +6,7 @@ require.d(exports, {
   Tt: () => v,
   cv: () => y,
   sx: () => I,
-  zH: () => S
+  zH: () => T
 });
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -101,7 +101,7 @@ function v(e, t, n) {
     }),
     o = (0, i.e7)([l.Z], () => l.Z.getGuildId()),
     c = null;
-  return null != e && (c = T(!(0, h.Bh)(e), a, t) ? e : null), [b(c, o, n), r.useCallback((e, t) => {
+  return null != e && (c = S(!(0, h.Bh)(e), a, t) ? e : null), [b(c, o, n), r.useCallback((e, t) => {
     null != c && (0, p.Ow)(c, {
       dismissAction: e,
       groupName: n,
@@ -124,7 +124,7 @@ function I(e, t, n, a) {
   }, [s, a, o, n])]
 }
 
-function S(e, t, n) {
+function T(e, t, n) {
   let a = (0, i.e7)([s.Z], () => s.Z.getGuildDismissedContentState(t)),
     o = (0, h.ig)(e),
     l = null;
@@ -138,7 +138,7 @@ function S(e, t, n) {
   }, [l, n, t])]
 }
 
-function T(e, t, n) {
+function S(e, t, n) {
   let r = null != t ? Number.isNaN(Number(t)) ? true : Number(t) : true,
     i = true === r ? 0 : r + n.cooldownDurationMs,
     a = Date.now(),

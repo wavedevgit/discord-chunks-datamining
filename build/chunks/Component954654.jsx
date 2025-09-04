@@ -97,7 +97,7 @@ function D(e, t) {
     case s.re.TEXT_INPUT:
       return (0, r.jsx)(h.Z, N({}, e), t);
     case s.re.SECTION:
-      return (0, r.jsx)(T.Z, P(N({}, e), {
+      return (0, r.jsx)(S.Z, P(N({}, e), {
         renderComponents: w
       }), t);
     case s.re.TEXT_DISPLAY:
@@ -117,7 +117,7 @@ function D(e, t) {
         renderComponents: w
       }), t);
     case s.re.LABEL:
-      return (0, r.jsx)(S.Z, P(N({}, e), {
+      return (0, r.jsx)(T.Z, P(N({}, e), {
         renderComponent: D
       }), t)
   }

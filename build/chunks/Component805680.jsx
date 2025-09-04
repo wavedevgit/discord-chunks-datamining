@@ -198,7 +198,7 @@ function J(e) {
   }), ec = (0, L.Iu)(e => e.activeView), eu = (0, C.fQ)(K), {
     renderWindow: ed,
     windowDispatch: ef
-  } = i.useContext(E.ZP), e_ = (0, d.e7)([N.Z], () => !N.Z.hasLoadedStickerPacks), ep = (0, T.V2)({
+  } = i.useContext(E.ZP), e_ = (0, d.e7)([N.Z], () => !N.Z.hasLoadedStickerPacks), ep = (0, S.V2)({
     location: "expression_picker"
   }), eh = (0, d.e7)([w.Z], () => w.Z.isOpen()), em = null != en, eg = (0, _.Jw)(null != en ? en : ""), eE = (null == (t = z.gifs) ? true : t.allowSending) && !c.tq && null != V, eb = (null == (n = z.stickers) ? true : n.allowSending) && null != Y, ey = !(null == (a = z.expressionPicker) ? true : a.onlyEmojis) && (eE || eb), eO = (0, v.qt)({
     location: "expression_picker",
@@ -218,18 +218,18 @@ function J(e) {
     }(0, L._Q)();
     let r = null == (t = (0, x.uB)(e)) ? true : t.activeElement;
     (null == r || "BODY" === r.tagName) && D.S.dispatchToLastSubscribed(M.CkL.TEXTAREA_FOCUS)
-  }, [et, eg, em, eh]), eS = i.useCallback(() => {
+  }, [et, eg, em, eh]), eT = i.useCallback(() => {
     (0, L._Q)()
   }, []);
   i.useLayoutEffect(() => {
     let e = () => {
       ec === j.X1.GIF && (0, L._Q)()
     };
-    return ed.addEventListener("mousedown", eI), ed.addEventListener("contextmenu", eI), ef.subscribe(M.CkL.POPOUT_CLOSE, eS), D.S.subscribe(M.CkL.CLOSE_GIF_PICKER, e), () => {
-      ed.removeEventListener("mousedown", eI), ed.removeEventListener("contextmenu", eI), ef.unsubscribe(M.CkL.POPOUT_CLOSE, eS), D.S.unsubscribe(M.CkL.CLOSE_GIF_PICKER, e)
+    return ed.addEventListener("mousedown", eI), ed.addEventListener("contextmenu", eI), ef.subscribe(M.CkL.POPOUT_CLOSE, eT), D.S.subscribe(M.CkL.CLOSE_GIF_PICKER, e), () => {
+      ed.removeEventListener("mousedown", eI), ed.removeEventListener("contextmenu", eI), ef.unsubscribe(M.CkL.POPOUT_CLOSE, eT), D.S.unsubscribe(M.CkL.CLOSE_GIF_PICKER, e)
     }
-  }, [ec, eS, eI, ed, ef]), (0, p.Tbt)(er);
-  let [eT, eA] = (0, y.US)(ep ? [f.z.SOUNDMOJI_BADGE] : [], true, false), [eC, eN] = i.useState(false);
+  }, [ec, eT, eI, ed, ef]), (0, p.Tbt)(er);
+  let [eS, eA] = (0, y.US)(ep ? [f.z.SOUNDMOJI_BADGE] : [], true, false), [eC, eN] = i.useState(false);
   i.useEffect(() => {
     ec === j.X1.SOUNDBOARD && eN(true)
   }, [ec]), i.useEffect(() => () => {
@@ -255,7 +255,7 @@ function J(e) {
     ex = null != ee ? ee : "left" === $ ? F.positionLayerDefaultAlignLeft : F.positionLayerDefaultAlignRight;
   return (0, r.jsx)(m.Z, {
     section: M.jXE.EXPRESSION_PICKER,
-    children: (0, r.jsx)(S.W5, {
+    children: (0, r.jsx)(T.W5, {
       className: o()(F.positionLayer, ex),
       targetRef: l,
       position: J,
@@ -329,7 +329,7 @@ function J(e) {
                     viewType: j.X1.SOUNDBOARD,
                     children: (0, r.jsxs)("div", {
                       className: F.soundmojiLabelContainer,
-                      children: [Z.intl.string(Z.t.EHlAMT), null != eT && (0, r.jsx)(p.IGR, {
+                      children: [Z.intl.string(Z.t.EHlAMT), null != eS && (0, r.jsx)(p.IGR, {
                         text: Z.intl.string(Z.t.y2b7CA)
                       })]
                     })
@@ -340,7 +340,7 @@ function J(e) {
                 channel: K,
                 containerWidth: es,
                 onSelectSticker: Y,
-                closePopout: eS,
+                closePopout: eT,
                 ref: e => {
                   ea.current = e
                 }
@@ -357,7 +357,7 @@ function J(e) {
                 includeCreateEmojiButton: P,
                 emojiSize: null != es && es < q ? U.Su.MEDIUM : U.Su.LARGE,
                 pickerIntention: G.Hz.CHAT,
-                closePopout: eS,
+                closePopout: eT,
                 onSelectEmoji: H,
                 onSelectSoundmoji: eR,
                 ref: e => {
@@ -371,7 +371,7 @@ function J(e) {
                   guildId: K.guild_id,
                   channel: K,
                   containerWidth: es,
-                  onClose: eS,
+                  onClose: eT,
                   onSelect: eP,
                   analyticsSource: "expression-picker",
                   renderHeader: e => (0, r.jsx)("div", {

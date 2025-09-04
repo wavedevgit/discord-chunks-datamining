@@ -17,7 +17,7 @@ require.d(exports, {
   h9: () => es,
   iw: () => en,
   jC: () => V,
-  jQ: () => B,
+  jQ: () => G,
   lT: () => X,
   rd: () => ed,
   t4: () => ec,
@@ -118,11 +118,11 @@ let z = {
     XYZ_D50: Chunk341901.Z,
     XYZ_D65: Chunk856308.Z
   },
-  B = Object.fromEntries(Object.keys(z).map(e => [e, e]));
-Object.values(z).forEach(e => I.Z.register(e));
+  G = Object.fromEntries(Object.keys(z).map(e => [e, e]));
+Object.values(z).forEach(e => k.Z.register(e));
 let {
-  SemanticColors: G
-} = Chunk521904.V, V = G, H = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
+  SemanticColors: B
+} = Chunk521904.V, V = B, H = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
 
 function W(e, t) {
   let [n, a] = l.useState(() => {

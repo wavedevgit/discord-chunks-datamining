@@ -19,12 +19,12 @@ var r, i, a, Chunk848120 = require("./848120.js"),
   Chunk744569 = require("./744569.js"),
   Chunk199838 = require("./199838.js"),
   I = Chunk199838.enforce,
-  S = Chunk199838.get,
-  T = Chunk127849.Int8Array,
-  A = T && T.prototype,
+  T = Chunk199838.get,
+  S = Chunk127849.Int8Array,
+  A = S && S.prototype,
   C = Chunk127849.Uint8ClampedArray,
   N = C && C.prototype,
-  R = T && Chunk961050(T),
+  R = S && Chunk961050(S),
   P = A && Chunk961050(A),
   w = Object.prototype,
   D = Chunk127849.TypeError,
@@ -56,7 +56,7 @@ var r, i, a, Chunk848120 = require("./848120.js"),
   Z = function(e) {
     var t = E(e);
     if (u(t)) {
-      var n = S(t);
+      var n = T(t);
       return n && d(n, j) ? n[j] : Z(t)
     }
   },

@@ -31,10 +31,10 @@ function s(e) {
   let {
     games: s,
     onAddGame: u
-  } = (0, o.K)(t), {
+  } = (0, a.K)(t), {
     trackUserProfileEditAction: d
   } = (0, l.KZ)(), f = i.useCallback((e, r, n) => {
-    u(e), (0, a.ES)(t, {
+    u(e), (0, o.ES)(t, {
       applicationId: e,
       gameName: r,
       imageSrc: n

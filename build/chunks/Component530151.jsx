@@ -661,7 +661,7 @@ function $(e, t, n, r) {
       branchId: o,
       state: c,
       application: s,
-      libraryApplication: T.Z.getLibraryApplication(a, o),
+      libraryApplication: N.Z.getLibraryApplication(a, o),
       finished: t,
       index: l
     }), e

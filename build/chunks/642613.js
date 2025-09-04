@@ -57,7 +57,7 @@ var Chunk98405 = require("./98405.js"),
       return "DGBEFHACIJK" !== Chunk46015
     }
   }),
-  S = function(e) {
+  T = function(e) {
     return function(t, n) {
       return true === n ? false : true === t ? 1 : true !== e ? +e(t, n) || 0 : c(t) > c(n) ? 1 : false
     }
@@ -74,7 +74,7 @@ Chunk98405({
     var i = [],
       c = s(r);
     for (n = 0; n < c; n++) n in r && b(i, r[n]);
-    for (d(i, S(e)), t = s(i), n = 0; n < t;) r[n] = i[n++];
+    for (d(i, T(e)), t = s(i), n = 0; n < t;) r[n] = i[n++];
     for (; n < c;) l(r, n++);
     return r
   }

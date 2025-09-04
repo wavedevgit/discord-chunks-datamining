@@ -40,7 +40,7 @@ function m(e) {
       return u.Z.can(_.Plq.SEND_MESSAGES, e)
     });
 
-  function S() {
+  function T() {
     let {
       id: e
     } = g, t = "@".concat(f.ZP.getUserTag(g, {
@@ -54,7 +54,7 @@ function m(e) {
   return v ? (t = p.intl.string(p.t["F/OLvL"]), m = p.intl.string(p.t.C89OLC)) : (m = p.intl.string(p.t["YVub5+"]), E ? t = p.intl.string(p.t["57nBt7"]) : null != O && I ? (t = p.intl.formatToPlainString(p.t["9Akp1t"], {
     username: O
   }), n = (0, r.jsx)(o.Z.Button, {
-    onClick: S,
+    onClick: T,
     children: p.intl.string(p.t.P8tvKC)
   })) : t = p.intl.string(p.t["SMJr+f"])), (0, r.jsxs)(o.Z, {
     children: [(0, r.jsx)(o.Z.Header, {

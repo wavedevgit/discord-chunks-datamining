@@ -87,10 +87,10 @@ function M(e) {
       isGift: eO,
       giftMessage: ev,
       giftRecipient: eI,
-      claimableRewards: eS
+      claimableRewards: eT
     } = (0, g.wD)(),
     {
-      paymentModalBanner: eT
+      paymentModalBanner: eS
     } = (0, y.zb)();
   o()(null != eu, "Step should be set");
   let eA = i.useRef(null),
@@ -127,7 +127,7 @@ function M(e) {
     eF = !eO && null != eD && null != eZ && null != ei && eZ.includes(ei.id),
     eV = eO && (0, m.pO)(eI),
     eH = null == Y && null == W && ep === D.GZ.SUBSCRIPTION,
-    eY = (0, T.Kp)({
+    eY = (0, S.Kp)({
       isTrial: eB,
       isGift: eO,
       selectedSkuId: ea,
@@ -135,7 +135,7 @@ function M(e) {
     }),
     eW = eO && ep === D.GZ.ONE_TIME,
     eK = eW || (eY ? eH && ef : ef),
-    ez = (0, u.id)(ei, eO, eS),
+    ez = (0, u.id)(ei, eO, eT),
     eq = i.useCallback(() => eY ? void M(b.h8.SKU_SELECT) : ez ? void M(b.h8.SELECT_FREE_SKU) : eW ? M(b.h8.GIFT_CUSTOMIZATION) : M(b.h8.PLAN_SELECT), [M, eY, eW, ez]),
     eX = false,
     eQ = () => {
@@ -193,10 +193,10 @@ function M(e) {
     }), (0, r.jsxs)(P.C3, {
       children: [ey && eY && (0, r.jsx)("div", {
         className: L.bodyGradientPadding
-      }), null != eT && eT, (0, r.jsxs)(s.Kqy, {
+      }), null != eS && eS, (0, r.jsxs)(s.Kqy, {
         direction: "vertical",
         gap: 8,
-        children: [(0, r.jsx)(I.Z, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(S.Z, {})]
+        children: [(0, r.jsx)(I.Z, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(T.Z, {})]
       }), a]
     }), (0, r.jsx)(P.O3, {
       children: (0, r.jsx)(R.Z, {

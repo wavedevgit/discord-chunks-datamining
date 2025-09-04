@@ -36,7 +36,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,7 +49,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -61,7 +61,7 @@ function T(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -100,8 +100,8 @@ function P(e) {
     guildId: g,
     innerClassname: E,
     transparent: I = false,
-    hidden: S = false,
-    toolbar: T,
+    hidden: T = false,
+    toolbar: S,
     mobileToolbar: A,
     "aria-label": C,
     "aria-labelledby": N,
@@ -124,10 +124,10 @@ function P(e) {
   });
 
   function F() {
-    if (null == T) return null;
+    if (null == S) return null;
     let e = null != s && !D && !Z;
     return i.tq ? A : (0, r.jsxs)(r.Fragment, {
-      children: [T, e && !(0, O.AB)(s) ? (0, r.jsx)(p.Z, {
+      children: [S, e && !(0, O.AB)(s) ? (0, r.jsx)(p.Z, {
         guildId: g,
         channelId: s,
         className: v.search
@@ -144,7 +144,7 @@ function P(e) {
     innerClassName: E,
     toolbar: F(),
     transparent: I,
-    hidden: S,
+    hidden: T,
     onDoubleClick: () => R(L),
     "aria-label": C,
     "aria-labelledby": N,
@@ -182,9 +182,9 @@ function D(e) {
   } = (0, l.ZP)(s.Z.HEADER_BAR);
   return (0, r.jsx)(l.Gt, {
     value: i,
-    children: t ? (0, r.jsx)(P, A(S({}, n), {
+    children: t ? (0, r.jsx)(P, A(T({}, n), {
       className: n.className
-    })) : (0, r.jsx)(w, A(S({}, n), {
+    })) : (0, r.jsx)(w, A(T({}, n), {
       className: n.className
     }))
   })

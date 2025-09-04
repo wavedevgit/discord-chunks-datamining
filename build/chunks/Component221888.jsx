@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk238377 = require("./238377.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,14 +35,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -155,7 +155,7 @@ function x(e) {
     className: h,
     compact: b = false,
     disableInteraction: v = false,
-    maxVisibleUsers: S = 3
+    maxVisibleUsers: T = 3
   } = e, A = i.useRef(null), R = (0, p.Z)(), [x, L] = i.useState(false), j = i.useRef(new u.sW(N, () => L(false))), M = (0, c.Wu)([m.Z, g.default], () => {
     if (s.type === y.fO.STREAM) {
       let e = m.Z.getViewerIds(s.id);
@@ -177,7 +177,7 @@ function x(e) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
-        return n => (0, r.jsx)(e, C(T({}, n), {
+        return n => (0, r.jsx)(e, C(S({}, n), {
           user: t
         }))
       }, {
@@ -186,22 +186,22 @@ function x(e) {
     }, [U, k]);
   if (0 === M.length) return null;
   if (b) return (0, r.jsx)(w, {
-    maxVisibleUsers: S,
+    maxVisibleUsers: T,
     users: M,
     guildId: a,
     channelId: t,
     className: h,
     participantType: s.type
   });
-  let B = l()(M).take(S).map(e => (0, r.jsx)(d.qEK, {
+  let B = l()(M).take(T).map(e => (0, r.jsx)(d.qEK, {
     src: e.getAvatarURL(a, 24),
     "aria-label": e.username,
     size: d.EFr.SIZE_24,
     className: I.viewer
   }, e.id)).value();
-  return M.length > S && (B[B.length - 1] = (0, r.jsxs)("div", {
+  return M.length > T && (B[B.length - 1] = (0, r.jsxs)("div", {
     className: I.overflow,
-    children: ["+", M.length - S + 1]
+    children: ["+", M.length - T + 1]
   }, "overflow")), (0, r.jsx)(_.Z, {
     section: O.jXE.STREAM_VIEWER_POPOUT,
     children: (0, r.jsx)("div", {

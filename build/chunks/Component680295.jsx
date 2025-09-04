@@ -2,7 +2,7 @@
 /** chunk id: 680295, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S,
+  Z: () => T,
   n: () => v
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -57,9 +57,9 @@ let v = e => {
       profileEffectConfig: g,
       noBorderRadius: y = false,
       introDelay: O = d.lG
-    } = e, v = i.useRef(null), [I, S] = i.useState([]);
+    } = e, v = i.useRef(null), [I, T] = i.useState([]);
     (0, E.Z)(g);
-    let [T, A] = i.useState(0), [C, N] = i.useState(0), {
+    let [S, A] = i.useState(0), [C, N] = i.useState(0), {
       accessibilityLabel: R
     } = g, [P, w] = i.useState(-O), {
       stop: D,
@@ -71,7 +71,7 @@ let v = e => {
     i.useEffect(() => {
       j.current = O
     }), i.useEffect(() => {
-      w(-j.current), S((0, h.H)(g.effects))
+      w(-j.current), T((0, h.H)(g.effects))
     }, [g]), i.useEffect(() => {
       let e = 0,
         t = 1 / 0;
@@ -82,8 +82,8 @@ let v = e => {
     }, [N, I]);
     let [M, k] = i.useState(false);
     return i.useEffect(() => {
-      true === c || s || (D(), w(0)), !s && M && L.current && (D(), w(0)), a && s && !L.current && (x(), g.animationType === f.Q.PERSISTENT ? w(u === f.j.FromStart ? 0 : T) : w(0))
-    }, [s, M, T, a, D, x, L, g.animationType, c, u]), (0, r.jsx)("div", {
+      true === c || s || (D(), w(0)), !s && M && L.current && (D(), w(0)), a && s && !L.current && (x(), g.animationType === f.Q.PERSISTENT ? w(u === f.j.FromStart ? 0 : S) : w(0))
+    }, [s, M, S, a, D, x, L, g.animationType, c, u]), (0, r.jsx)("div", {
       ref: v,
       className: o()(b.profileEffects, {
         [b.hovered]: s && l
@@ -158,7 +158,7 @@ let v = e => {
       })
     })
   },
-  S = e => {
+  T = e => {
     let t = (0, s.e7)([u.Z], () => u.Z.isFocused()),
       n = (0, s.e7)([l.Z], () => l.Z.useReducedMotion),
       [a, o] = i.useState(false),

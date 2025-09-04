@@ -84,8 +84,8 @@ let g = 20,
       redGlow: O,
       orangeGlow: v,
       tooltipClassName: I,
-      onMouseEnter: S,
-      onMouseLeave: T,
+      onMouseEnter: T,
+      onMouseLeave: S,
       "aria-label": A,
       "aria-checked": C,
       role: N,
@@ -136,10 +136,10 @@ let g = 20,
             null != n && n(), null != d && d(e)
           },
           onMouseEnter: () => {
-            null == l || l(), null == S || S()
+            null == l || l(), null == T || T()
           },
           onMouseLeave: () => {
-            null == m || m(), null == T || T()
+            null == m || m(), null == S || S()
           },
           onContextMenu: a,
           role: N,

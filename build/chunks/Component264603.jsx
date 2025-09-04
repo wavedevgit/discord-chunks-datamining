@@ -1,19 +1,26 @@
 /** Chunk was on 93886 **/
 /** chunk id: 264603, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
-});
+  Z: () => _
+}), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
+  Chunk442837 = require("./442837.js"),
   Chunk524437 = require("./524437.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk20471 = require("./20471.js"),
+  Chunk812206 = require("./812206.js"),
+  Chunk835473 = require("./835473.js"),
+  Chunk594190 = require("./594190.js"),
+  Chunk989941 = require("./989941.js"),
   Chunk695346 = require("./695346.js"),
+  Chunk449224 = require("./449224.js"),
   Chunk246992 = require("./246992.js"),
   Chunk451429 = require("./451429.js"),
   Chunk441900 = require("./441900.js");
-let x = [{
+let g = [{
   label: "Unset",
   value: Chunk524437.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET
 }, {
@@ -27,21 +34,62 @@ let x = [{
   value: Chunk524437.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_NONE
 }];
 
-function h() {
+function _() {
   let e = Chunk647438.useRef(null),
-    t = Chunk695346.JG.useSetting();
+    t = Chunk695346.JG.useSetting(),
+    [n, l] = Chunk647438.useState(""),
+    o = (0, Chunk442837.e7)([Chunk594190.ZP, Chunk449224.Z], () => (0, Chunk989941.Z)(Chunk594190.ZP, Chunk449224.Z)),
+    _ = (0, Chunk835473.q)(require),
+    y = (0, Chunk442837.Wu)([Chunk812206.Z], () => {
+      var e, t;
+      return null != (t = null == _ || null == (e = _.linkedGames) ? true : module.map(e => u.Z.getApplication(e.id)).filter(e => null != e)) ? exports : []
+    }),
+    {
+      canStartAuthorization: C,
+      startAuthorization: N
+    } = (0, Chunk20471.F)(_);
   return (0, Chunk951288.jsxs)("div", {
     ref: module,
     className: i()(Chunk451429.panel, Chunk441900.panel),
-    children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
-      variant: "text-md/normal",
-      children: "Receive DMs In Game"
-    }), (0, Chunk951288.jsx)(Chunk481060.PhF, {
-      options: x,
-      isSelected: e => e === t,
-      select: Chunk695346.JG.updateSetting,
-      popoutLayerContext: Chunk246992.O$,
-      serialize: e => e.toString()
+    children: [(0, Chunk951288.jsxs)("div", {
+      className: Chunk441900.container,
+      children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+        variant: "text-md/normal",
+        children: "Receive DMs In Game"
+      }), (0, Chunk951288.jsx)(Chunk481060.PhF, {
+        options: g,
+        isSelected: e => e === t,
+        select: Chunk695346.JG.updateSetting,
+        popoutLayerContext: Chunk246992.O$,
+        serialize: e => e.toString()
+      })]
+    }), (0, Chunk951288.jsxs)("div", {
+      className: Chunk441900.container,
+      children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+        variant: "text-md/normal",
+        children: "In-App Authorization"
+      }), (0, Chunk951288.jsx)(Chunk481060.oil, {
+        value: require,
+        onChange: Chunk120356
+      }), null != Chunk524437 && null != Chunk524437.id ? (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        onClick: () => Chunk120356(Chunk524437.id),
+        variant: "primary",
+        text: "Use detected game: ".concat(Chunk524437.name, " (").concat(Chunk524437.id, ")")
+      }) : null, (0, Chunk951288.jsxs)(Chunk481060.Text, {
+        variant: "text-md/normal",
+        children: ["Application: ", null != _ ? _.name : "N/A"]
+      }), null != y ? (0, Chunk951288.jsxs)(Chunk481060.Text, {
+        variant: "text-md/normal",
+        children: ["Linked Games:", " ", y.map(e => {
+          var t;
+          return (null == (t = (0, d.j)(_)) ? true : t.id) === e.id ? "".concat(e.name, "*") : e.name
+        }).join(", ")]
+      }) : null, (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        disabled: !C,
+        onClick: N,
+        variant: "primary",
+        text: "Start Authorization"
+      })]
     })]
   })
 }

@@ -2,9 +2,9 @@
 /** chunk id: 268350, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $p: () => S,
+  $p: () => T,
   FQ: () => I,
-  Il: () => T,
+  Il: () => S,
   Jf: () => R,
   SA: () => x,
   Um: () => C,
@@ -82,7 +82,7 @@ let I = async (e, t) => {
     pack: n,
     ingestStickers: t
   }), n
-}, S = async function() {
+}, T = async function() {
   let {
     locale: e = Chunk706454.default.locale
   } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
@@ -107,7 +107,7 @@ let I = async (e, t) => {
     type: "STICKER_PACKS_FETCH_SUCCESS",
     packs: exports
   })
-}, T = async e => {
+}, S = async e => {
   let {
     body: t
   } = await a.tn.get({

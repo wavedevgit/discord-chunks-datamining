@@ -60,7 +60,7 @@ function P(e) {
   })
 }
 
-function w(e) {
+function I(e) {
   let {
     name: t,
     children: n,
@@ -92,8 +92,8 @@ function w(e) {
     })]
   })
 }
-let k = new Set(["client_performance_cpu", "client_performance_memory"]),
-  I = [{
+let w = new Set(["client_performance_cpu", "client_performance_memory"]),
+  k = [{
     id: "details",
     name: "Details",
     group: Chunk621060.v0.NONE,
@@ -184,7 +184,7 @@ let k = new Set(["client_performance_cpu", "client_performance_memory"]),
           })]
         }), (0, a.jsx)(P, {
           children: Object.entries(n).map(e => {
-            let [n, r] = e, l = k.has(n) ? ((e, t, n) => {
+            let [n, r] = e, l = w.has(n) ? ((e, t, n) => {
               let a = e.filter(e => e.event === t);
               if (0 === a.length) return {
                 average: null,
@@ -202,7 +202,7 @@ let k = new Set(["client_performance_cpu", "client_performance_memory"]),
               }
             })(c, t, n) : null;
             return (0, a.jsxs)("div", {
-              children: [(0, a.jsx)(w, {
+              children: [(0, a.jsx)(I, {
                 name: "".concat(n, ":"),
                 copyValue: {
                   [n]: r || null
@@ -213,7 +213,7 @@ let k = new Set(["client_performance_cpu", "client_performance_memory"]),
                   className: O.emptyProperty,
                   children: "null"
                 })
-              }, n), null !== l && null !== l.average && (0, a.jsx)(w, {
+              }, n), null !== l && null !== l.average && (0, a.jsx)(I, {
                 name: "".concat(n, "_avg:"),
                 copyValue: {
                   [n]: r || null
@@ -285,9 +285,9 @@ function A() {
     _ = Chunk594174.find(e => e.key === v),
     {
       TabBar: P,
-      renderSelectedTab: w
+      renderSelectedTab: I
     } = (0, Chunk621060.ZP)({
-      tabs: I
+      tabs: k
     }, []);
   return (0, Chunk951288.jsxs)("div", {
     ref: module,
@@ -341,7 +341,7 @@ function A() {
       className: Chunk599832.subPanel,
       minHeight: 100,
       initialHeight: null != module.current ? module.current.clientHeight / 2 : 300,
-      children: [(0, Chunk951288.jsx)(P, {}), w({
+      children: [(0, Chunk951288.jsx)(P, {}), I({
         loggedEvent: Chunk257785,
         onClose: () => Chunk55935(true),
         filteredEvents: Chunk594174

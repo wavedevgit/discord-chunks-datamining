@@ -126,7 +126,7 @@ function B(e) {
     user: a,
     guildId: null == t ? true : t.id
   });
-  i.useEffect(() => () => c.Z.wait(T.W3), []), i.useEffect(() => {
+  i.useEffect(() => () => c.Z.wait(S.W3), []), i.useEffect(() => {
     null != B && f.ZP.trackWithMetadata(P.rMx.SETTINGS_PANE_VIEWED, {
       settings_type: "guild",
       destination_pane: P.jXE.SETTINGS_CUSTOMIZE_PROFILE,
@@ -149,7 +149,7 @@ function B(e) {
       children: [(0, r.jsx)(R.Z, {
         guildId: t.id,
         onChange: e => {
-          null != e && (0, T.HP)(e)
+          null != e && (0, S.HP)(e)
         }
       }), (0, r.jsx)(g.Z, {
         profilePreviewTitle: (0, r.jsx)(l.X6q, {
@@ -163,7 +163,7 @@ function B(e) {
           pendingAvatar: H,
           user: a,
           guild: t,
-          canUsePremiumCustomization: S.ZP.canUsePremiumProfileCustomization(a),
+          canUsePremiumCustomization: T.ZP.canUsePremiumProfileCustomization(a),
           onUpsellClick: G
         })),
         nameplatePreview: W ? (0, r.jsx)(p.Z, {

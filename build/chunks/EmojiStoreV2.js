@@ -170,7 +170,7 @@ function ef(e) {
   let {
     emojis: t
   } = e;
-  for (let [e, n] of t) !Object.hasOwn(ei, e) && S.Z.isMember(e) && ey(e, n);
+  for (let [e, n] of t) !Object.hasOwn(ei, e) && T.Z.isMember(e) && ey(e, n);
   eb()
 }
 
@@ -403,11 +403,11 @@ function eI() {
   X.pendingUsages = [], X.emojiReactionPendingUsages = []
 }
 
-function eS() {
+function eT() {
   eg()
 }
 
-function eT(e) {
+function eS(e) {
   1 === en && "update" === e.guild.emojis.op && null == e.guild.emojis.items && (en = 0), ey(e.guild.id, e.guild.emojis.items), eb()
 }
 
@@ -545,7 +545,7 @@ function eU(e) {
     role: {
       id: n
     }
-  } = e, r = T.Z.getRole(t, n);
+  } = e, r = S.Z.getRole(t, n);
   if (!(null != r && (0, g.Z)(r))) returnfalse;
   {
     let e = ei[t];
@@ -581,7 +581,7 @@ function eZ(e) {
 }
 class eF extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(f.Z, S.Z, I.ZP, A.Z, O.default, b.Z, U.Z, N.default, m.Z, T.Z), null != e && (null != e.pendingUsages && (X.pendingUsages = e.pendingUsages), null != e.emojiReactionPendingUsages && (X.emojiReactionPendingUsages = e.emojiReactionPendingUsages), null != e.expandedSectionsByGuildIds && (X.expandedSectionsByGuildIds = new Set(e.expandedSectionsByGuildIds))), this.syncWith([v.Z], eD), this.syncWith([m.Z], eL)
+    this.waitFor(f.Z, T.Z, I.ZP, A.Z, O.default, b.Z, U.Z, N.default, m.Z, S.Z), null != e && (null != e.pendingUsages && (X.pendingUsages = e.pendingUsages), null != e.emojiReactionPendingUsages && (X.emojiReactionPendingUsages = e.emojiReactionPendingUsages), null != e.expandedSectionsByGuildIds && (X.expandedSectionsByGuildIds = new Set(e.expandedSectionsByGuildIds))), this.syncWith([v.Z], eD), this.syncWith([m.Z], eL)
   }
   getState() {
     return X
@@ -735,12 +735,12 @@ class eF extends(r = Chunk442837.ZP.PersistedStore) {
 H(eF, "displayName", "EmojiStore"), H(eF, "persistKey", "EmojiStoreV2"), H(eF, "migrations", [e => Y({}, e)]);
 let eV = new eF(Chunk570140.Z, {
   LOGOUT: eI,
-  BACKGROUND_SYNC: eS,
+  BACKGROUND_SYNC: eT,
   CONNECTION_OPEN: eO,
   OVERLAY_INITIALIZE: ev,
   CACHED_EMOJIS_LOADED: ef,
   GUILD_MEMBER_UPDATE: eR,
-  GUILD_CREATE: eT,
+  GUILD_CREATE: eS,
   GUILD_UPDATE: eA,
   GUILD_EMOJIS_UPDATE: eC,
   GUILD_DELETE: eN,

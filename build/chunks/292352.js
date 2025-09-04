@@ -8,7 +8,7 @@ require.d(exports, {
   Of: () => s,
   QH: () => y,
   TX: () => C,
-  U: () => T,
+  U: () => S,
   Wz: () => N,
   YC: () => I,
   _6: () => v,
@@ -20,7 +20,7 @@ require.d(exports, {
   ip: () => d,
   ix: () => m,
   ne: () => g,
-  tx: () => S,
+  tx: () => T,
   vH: () => h,
   zE: () => u
 }), require("./388685.js");
@@ -62,7 +62,7 @@ var g = function(e) {
   I = function(e) {
     return e[e.TabChange = 0] = "TabChange", e[e.ShowQRCodeModal = 1] = "ShowQRCodeModal", e[e.RevealQRCode = 2] = "RevealQRCode", e[e.ScanQRCodeButton = 3] = "ScanQRCodeButton", e[e.ScanQRCode = 4] = "ScanQRCode", e[e.LoadMore = 5] = "LoadMore", e[e.SelectTeen = 6] = "SelectTeen", e[e.HideQRCode = 7] = "HideQRCode", e
   }({});
-let S = new Map([
+let T = new Map([
     [3, {
       priority: 100,
       tooltipHeader: () => Chunk388032.intl.string(Chunk345909.default.kvTgWF),
@@ -124,7 +124,7 @@ let S = new Map([
       sectionDescription: A
     }]
   ]),
-  T = new Map([
+  S = new Map([
     [6, {
       priority: 175,
       tooltipHeader: () => Chunk388032.intl.string(Chunk345909.default.eo4Fxs),

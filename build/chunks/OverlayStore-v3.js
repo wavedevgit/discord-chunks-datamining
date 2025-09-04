@@ -324,7 +324,7 @@ async function eh(e) {
       n = {
         mounting_started_at: t
       };
-    en(e, n), H = null, j(e, "renderer_window_mounting_started", n), await (0, S.f)(q);
+    en(e, n), H = null, j(e, "renderer_window_mounting_started", n), await (0, T.f)(q);
     let r = {
       renderer_started: true,
       fullscreen_type: await (0, I.hj)(e, 0),
@@ -441,11 +441,11 @@ function eI() {
   ey(null, true), eX.emitChange()
 }
 
-function eS(e) {
+function eT(e) {
   return F = e.pid, true
 }
 
-function eT(e) {
+function eS(e) {
   j(e, "_successfullyShownCallback"), o.Z.successfullyShown(e), o.Z.updateOverlayState(e, y.mM.OVERLAY_RENDERING);
   let t = et(e).mounting_started_at;
   en(e, {
@@ -462,7 +462,7 @@ let eA = (() => {
       var e, t, n;
       await Chunk998502.ZP.ensureModule("discord_desktop_overlay");
       let r = Chunk998502.ZP.requireModule("discord_desktop_overlay");
-      null == r || null == (e = r.init) || module.call(r), r.setCaptureZoneCallback(eb), r.setHostWindowCallbacks(eh, em, eE), r.setFocusCallback(eO), null == (t = r.setFocusLostCallback) || exports.call(r, ev), null == (n = r.setSuccessfullyShownCallback) || require.call(r, eT), B = r, (0, Chunk145597.setOutOfProcessSupport)(true), ed(), L.info("OverlayV3 Module Loaded"), j((0, Chunk145597.getPID)(), "overlay_v3_module_loaded")
+      null == r || null == (e = r.init) || module.call(r), r.setCaptureZoneCallback(eb), r.setHostWindowCallbacks(eh, em, eE), r.setFocusCallback(eO), null == (t = r.setFocusLostCallback) || exports.call(r, ev), null == (n = r.setSuccessfullyShownCallback) || require.call(r, eS), B = r, (0, Chunk145597.setOutOfProcessSupport)(true), ed(), L.info("OverlayV3 Module Loaded"), j((0, Chunk145597.getPID)(), "overlay_v3_module_loaded")
     } catch (e) {
       throw L.error("failed loading overlay module", module), (0, Chunk145597.setOutOfProcessSupport)(false), (0, Chunk41534.V6)(module, Chunk837268.gl.OutOfProcess, {
         extra: ei(null != V ? V : Chunk145597.UNSET_PID, "module_load")
@@ -479,7 +479,7 @@ function eC(e) {
 }
 
 function eN(e) {
-  if (T.iP && (Z = e, null == B && eu())) return void eA()
+  if (S.iP && (Z = e, null == B && eu())) return void eA()
 }
 
 function eR(e) {}
@@ -685,7 +685,7 @@ let eX = new eq(Chunk570140.Z, __OVERLAY__ ? {} : {
     OVERLAY_UPDATE_OVERLAY_STATE: eG,
     OVERLAY_SET_GPU_BOOST_REQUESTED: ej,
     OVERLAY_CRASHED: eL,
-    OVERLAY_FOCUSED: eS,
+    OVERLAY_FOCUSED: eT,
     OVERLAY_SET_MODULE_LOGGING: ez
   }),
   eQ = eX

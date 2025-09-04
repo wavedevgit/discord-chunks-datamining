@@ -60,8 +60,8 @@ let b = [],
   O = false,
   v = false,
   I = false,
-  S = 11,
-  T = 125,
+  T = 11,
+  S = 125,
   A = 20,
   C = 12,
   N = 48,
@@ -186,8 +186,8 @@ function k(e) {
     if ("confetti" === a) {
       if (null == _.current) return;
       let e = _.current.getBoundingClientRect(),
-        t = e.left - S,
-        r = e.top + T,
+        t = e.left - T,
+        r = e.top + S,
         i = n.current[g.current];
       null == i || i.fireConfetti(t, r)
     }

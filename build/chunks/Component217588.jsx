@@ -156,8 +156,8 @@ let Q = e => {
       sticker: n,
       stickerPack: l
     });
-    (0, T.Pq)(n.pack_id);
-    let p = (0, T.Sd)(a),
+    (0, S.Pq)(n.pack_id);
+    let p = (0, S.Sd)(a),
       h = {
         refreshPositionKey: o,
         channel: a
@@ -222,10 +222,10 @@ let Q = e => {
         closePopout: p,
         refreshPositionKey: b
       } = e,
-      [T, A] = i.useState(null),
+      [S, A] = i.useState(null),
       [C, R] = i.useState(false),
       j = v.default.getCurrentUser(),
-      k = S.ZP.canUseCustomStickersEverywhere(j),
+      k = T.ZP.canUseCustomStickersEverywhere(j),
       B = (0, s.e7)([O.Z], () => O.Z.getGuild(n.guild_id)),
       Z = null != B,
       [F, Y] = i.useState(false),
@@ -255,7 +255,7 @@ let Q = e => {
       })()
     }, [n.id, Z]);
     let et = n.guild_id === a.getGuildId(),
-      en = null != T,
+      en = null != S,
       er = false,
       ei = "Custom Sticker Popout";
     k ? t = Z ? et ? D.intl.string(D.t.fZ0DiI) : D.intl.string(D.t["1f6D9v"]) : en ? D.intl.string(D.t.yHmoR0) : D.intl.string(D.t.vZaScH) : Z ? (t = et ? D.intl.string(D.t.jNphpq) : D.intl.string(D.t.lyD5ZW), er = true, ei = "Custom Sticker Popout (Upsell)") : en ? (t = D.intl.string(D.t.IuXYcn), er = true, ei = "Custom Sticker Popout (Upsell)") : (t = D.intl.format(D.t.hGWuxc, {
@@ -269,7 +269,7 @@ let Q = e => {
           refreshPositionKey: e
         } = ee.current;
         e()
-      }, [C, T]), (0, d.ZP)(() => {
+      }, [C, S]), (0, d.ZP)(() => {
         I.default.track(P.rMx.OPEN_POPOUT, M({
           type: ei
         }, J))
@@ -279,9 +279,9 @@ let Q = e => {
     {
       let e = () => {
           let e = async () => {
-            if (null == T || Z) return;
+            if (null == S || Z) return;
             p();
-            let e = T.id;
+            let e = S.id;
             try {
               await u.Z.joinGuild(e), u.Z.transitionToGuildSync(e)
             } catch (e) {}
@@ -300,7 +300,7 @@ let Q = e => {
                 textOverride: D.intl.string(D.t["gl/XHB"])
               },
               onSubscribeModalClose: t => t ? e() : p(),
-              postSuccessGuild: Z || null == T ? true : T,
+              postSuccessGuild: Z || null == S ? true : S,
               premiumModalAnalyticsLocation: Q
             }), ea && (0, r.jsx)("div", {
               "data-button-hoisted-classname-wrapper": true,
@@ -318,11 +318,11 @@ let Q = e => {
         i = () => {
           var e;
           if (!en && !Z) return;
-          let t = (null != (e = null == T ? true : T.stickers) ? e : []).slice(0, W + 1).filter(e => e.id !== n.id).slice(0, W),
+          let t = (null != (e = null == S ? true : S.stickers) ? e : []).slice(0, W + 1).filter(e => e.id !== n.id).slice(0, W),
             i = () => {
               b(), Y(!F)
             },
-            a = null != T ? h.JO.createFromDiscoverableGuild(T) : h.JO.createFromGuildRecord(B);
+            a = null != S ? h.JO.createFromDiscoverableGuild(S) : h.JO.createFromGuildRecord(B);
           return (0, r.jsxs)("div", {
             className: L.guildSection,
             children: [(0, r.jsx)(c.vwX, {
@@ -391,7 +391,7 @@ let Q = e => {
         };
       return (0, r.jsxs)(E.W_, {
         className: L.popoutContent,
-        children: [e(), (null != B || null != T) && i()]
+        children: [e(), (null != B || null != S) && i()]
       })
     }
   };
@@ -420,7 +420,7 @@ let ee = e => {
     channel: n,
     closePopout: i,
     refreshPositionKey: a
-  } = e, [o, s] = (0, T.XW)(t, true);
+  } = e, [o, s] = (0, S.XW)(t, true);
   return null != o && (0, C.jl)(o) ? (0, r.jsx)(Q, {
     sticker: o,
     closePopout: i,

@@ -56,13 +56,13 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -92,11 +92,11 @@ function P(e) {
   } = e, l = (0, f.Dt)(), {
     channelId: c,
     messageId: u
-  } = (0, E.pE)(), [m, g] = i.useState(""), [b, O] = i.useState(false), I = "" !== m && b, T = i.useCallback(() => {
+  } = (0, E.pE)(), [m, g] = i.useState(""), [b, O] = i.useState(false), I = "" !== m && b, S = i.useCallback(() => {
     g((0, h.e1)(u, c, o))
   }, [u, c, o]), A = i.useCallback(() => {
-    T(), O(true)
-  }, [T]), C = i.useCallback(() => {
+    S(), O(true)
+  }, [S]), C = i.useCallback(() => {
     O(false)
   }, []), N = i.useCallback(() => {
     (0, p.n)({
@@ -106,10 +106,10 @@ function P(e) {
     })
   }, [c, u, o]);
   return i.useEffect(() => {
-    if (b) return _.Z.addReactChangeListener(T), () => {
-      _.Z.removeReactChangeListener(T)
+    if (b) return _.Z.addReactChangeListener(S), () => {
+      _.Z.removeReactChangeListener(S)
     }
-  }, [b, T]), (0, r.jsxs)("div", {
+  }, [b, S]), (0, r.jsxs)("div", {
     className: y.votesData,
     children: [a ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(d.ua7, {
@@ -121,7 +121,7 @@ function P(e) {
         }),
         forceOpen: I,
         "aria-label": false,
-        children: e => (0, r.jsx)(d.Avr, S(v({}, e), {
+        children: e => (0, r.jsx)(d.Avr, T(v({}, e), {
           onMouseEnter: A,
           onMouseLeave: C,
           onFocus: A,
@@ -257,7 +257,7 @@ function L(e) {
     answersInteraction: n,
     canShowVoteCounts: i,
     canTapAnswers: a
-  } = e, o = T(e, ["isExpired", "answersInteraction", "canShowVoteCounts", "canTapAnswers"]);
+  } = e, o = S(e, ["isExpired", "answersInteraction", "canShowVoteCounts", "canTapAnswers"]);
   return (0, r.jsx)(g.$e, v({
     className: y.answersContainer,
     answerClassName: y.answer,

@@ -29,8 +29,8 @@ async function p(e) {
     onSubscribeComplete: O,
     onSubscriptionConfirmation: v,
     inPopout: I,
-    applicationId: S,
-    intent: T
+    applicationId: T,
+    intent: S
   } = e, A = I ? i.u1M : i.z1l, C = l.Z.getPremiumTypeSubscription();
   if (null != C && C.isPurchasedExternally && null != C.paymentGateway) {
     null != g && g(), a.Z.show({
@@ -74,8 +74,8 @@ async function p(e) {
         disablePremiumUpsell: y,
         onSubscriptionConfirmation: v,
         onSubscribeComplete: O,
-        applicationId: S,
-        intent: T
+        applicationId: T,
+        intent: S
       })
     }
   }, {

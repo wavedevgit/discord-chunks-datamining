@@ -45,7 +45,7 @@ var Chunk912370 = require("./912370.js"),
   Chunk959517 = require("./959517.js"),
   Chunk388032 = require("./388032.jsx");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -54,14 +54,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -207,7 +207,7 @@ function Z(e) {
     } = t,
     r = N(t, ["fakeAppIconURL"]);
   return w(e) ? {
-    iconURL: h.ZP.getApplicationIconURL(C(T({}, r), {
+    iconURL: h.ZP.getApplicationIconURL(C(S({}, r), {
       id: e.id,
       icon: e.icon
     })),
@@ -241,7 +241,7 @@ function W(e) {
   let t = [];
   for (let n of e) {
     let e = n.application_directory_collection_items.filter(e => e.type === r.C.APPLICATION && L(e.application));
-    0 !== e.length && t.push(C(T({}, n), {
+    0 !== e.length && t.push(C(S({}, n), {
       application_directory_collection_items: e
     }))
   }

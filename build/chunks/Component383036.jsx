@@ -65,20 +65,20 @@ let E = e => {
       y = m ? exports : b,
       O = m || !g && y.size > 0,
       [v, I] = Chunk647438.useState(""),
-      [S, T] = Chunk647438.useState(null),
+      [T, S] = Chunk647438.useState(null),
       [A, C] = Chunk647438.useState(null);
     Chunk647438.useEffect(() => {
       if ("" === v.trim() || !O) {
-        T(null), C(null);
+        S(null), C(null);
         return
       }
       let e = Chunk597688.Z.getProduct(v),
         t = Chunk597688.Z.getCategoryForProduct(v);
-      null != module && null != exports ? (T(module), C(exports)) : (T(null), C(null))
+      null != module && null != exports ? (S(module), C(exports)) : (S(null), C(null))
     }, [v, O]);
     let N = () => {
-      null != S && null != module && (0, Chunk832149.Z)({
-        product: S,
+      null != T && null != module && (0, Chunk832149.Z)({
+        product: T,
         analyticsLocations: [Chunk100527.Z.COLLECTIBLES_SHOP_CARD]
       })
     };
@@ -110,14 +110,14 @@ let E = e => {
             variant: "text-sm/normal",
             className: Chunk277790.loadingText,
             children: "Loading products..."
-          }), O && "" !== v.trim() && null == S && (0, Chunk951288.jsx)(Chunk481060.Text, {
+          }), O && "" !== v.trim() && null == T && (0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-sm/normal",
             className: Chunk277790.errorText,
             children: "Product not found"
-          }), null != S && (0, Chunk951288.jsxs)(Chunk481060.Text, {
+          }), null != T && (0, Chunk951288.jsxs)(Chunk481060.Text, {
             variant: "text-sm/normal",
             className: Chunk277790.successText,
-            children: ["Found: ", S.name]
+            children: ["Found: ", T.name]
           })]
         })]
       }), (0, Chunk951288.jsxs)("div", {
@@ -126,11 +126,11 @@ let E = e => {
           variant: "heading-lg/semibold",
           className: Chunk277790.section,
           children: "Product Preview"
-        }), null != S && null != A ? (0, Chunk951288.jsxs)("div", {
+        }), null != T && null != A ? (0, Chunk951288.jsxs)("div", {
           children: [(0, Chunk951288.jsx)("div", {
             className: Chunk277790.previewContainer,
             children: (0, Chunk951288.jsx)(E, {
-              product: S,
+              product: T,
               user: module,
               category: A,
               tab: Chunk215023.AW.HOME

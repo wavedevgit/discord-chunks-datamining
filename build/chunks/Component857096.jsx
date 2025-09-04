@@ -2,7 +2,7 @@
 /** chunk id: 857096, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -27,10 +27,10 @@ var Chunk120356 = require("./120356.js"),
   Chunk186880 = require("./186880.js"),
   Chunk315091 = require("./315091.js");
 
-function S(e) {
+function T(e) {
   let {
     isLoading: t
-  } = e, n = (0, o.e7)([g.Z], () => g.Z.getConnectedFrame()), i = (0, o.e7)([g.Z], () => g.Z.getFrameLayoutMode()), u = (0, f.q)(null == n ? true : n.applicationId), d = (0, o.e7)([h.Z], () => h.Z.isFrameHidden()), S = i === b.U.PIP && !d, T = S && null != h.Z.pipVideoWindow && null != h.Z.pipFrameWindow;
+  } = e, n = (0, o.e7)([g.Z], () => g.Z.getConnectedFrame()), i = (0, o.e7)([g.Z], () => g.Z.getFrameLayoutMode()), u = (0, f.q)(null == n ? true : n.applicationId), d = (0, o.e7)([h.Z], () => h.Z.isFrameHidden()), T = i === b.U.PIP && !d, S = T && null != h.Z.pipVideoWindow && null != h.Z.pipFrameWindow;
   if (null == n || null == u) return null;
   let A = {
     instance_id: "example-cl-instance",
@@ -43,7 +43,7 @@ function S(e) {
       onForceIdle: i,
       idle: a
     } = e;
-    return S && null != n ? (0, r.jsxs)(r.Fragment, {
+    return T && null != n ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         onMouseMove: t,
         onMouseDown: t,
@@ -74,14 +74,14 @@ function S(e) {
       } = e;
       return (0, r.jsxs)(_.Z, {
         className: a()(O.root, {
-          [O.pipMode]: S,
-          [I.elevationHigh]: S,
+          [O.pipMode]: T,
+          [I.elevationHigh]: T,
           [v.idle]: i,
-          [O.pipModeShort]: S,
+          [O.pipModeShort]: T,
           [O.hidden]: d,
-          [O.multiPIPMode]: T
+          [O.multiPIPMode]: S
         }),
-        noBorder: !S,
+        noBorder: !T,
         children: [(0, r.jsx)("div", {
           className: "theme-dark",
           children: C({
@@ -91,7 +91,7 @@ function S(e) {
           })
         }), t ? (0, r.jsx)(s.$jN, {
           className: a()(O.iframe, {
-            [O.pipModeShort]: S
+            [O.pipModeShort]: T
           })
         }) : (0, r.jsx)(c.J, {
           allowPopups: (0, l.h)(u),
@@ -99,22 +99,22 @@ function S(e) {
           url: n.url,
           queryParams: A,
           className: a()(O.iframe, {
-            [O.pipModeShort]: S,
-            [O.pipNonInteractive]: S
+            [O.pipModeShort]: T,
+            [O.pipNonInteractive]: T
           }),
-          shouldRefocus: !S
+          shouldRefocus: !T
         })]
       })
     }
   })
 }
-let T = () => {
+let S = () => {
   let {
     analyticsLocations: e
   } = (0, Chunk906732.ZP)(Chunk100527.Z.FRAME_PIP), t = (0, Chunk442837.e7)([Chunk591472.Z], () => Chunk591472.Z.isFrameActive());
   return (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: module,
-    children: (0, Chunk951288.jsx)(S, {
+    children: (0, Chunk951288.jsx)(T, {
       isLoading: !exports
     })
   })

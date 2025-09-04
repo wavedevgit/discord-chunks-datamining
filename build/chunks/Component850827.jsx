@@ -89,7 +89,7 @@ let D = (0, Chunk730749.Z)(e => {
     }
     if ((0, _.dS)(t)) {
       let e = (0, _.rq)(t);
-      return null == e ? null : (0, r.jsx)(S.Z, {
+      return null == e ? null : (0, r.jsx)(T.Z, {
         guildId: e.guildId,
         channelId: e.channelId,
         variant: j,
@@ -115,7 +115,7 @@ let D = (0, Chunk730749.Z)(e => {
         user: i,
         variant: j,
         onAction: k
-      }), (0, r.jsx)(T.Z, {
+      }), (0, r.jsx)(S.Z, {
         activity: t,
         user: i,
         variant: j,

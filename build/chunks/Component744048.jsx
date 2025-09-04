@@ -28,7 +28,7 @@ var Chunk442837 = require("./442837.js"),
 let I = function(e) {
   let {
     mobile: t
-  } = e, n = (0, i.e7)([m.Z], () => m.Z.getLayers().includes(y.S9g.USER_SETTINGS)), I = (0, i.e7)([g.default], () => E.ZP.canUseClientThemes(g.default.getCurrentUser())), S = (0, i.e7)([s.Z], () => s.Z.isCoachmark), T = (0, c.g)(), {
+  } = e, n = (0, i.e7)([m.Z], () => m.Z.getLayers().includes(y.S9g.USER_SETTINGS)), I = (0, i.e7)([g.default], () => E.ZP.canUseClientThemes(g.default.getCurrentUser())), T = (0, i.e7)([s.Z], () => s.Z.isCoachmark), S = (0, c.g)(), {
     v2EditorEnabled: A
   } = l.Mc.useExperiment({
     location: "AppRightSidePanel"
@@ -36,9 +36,9 @@ let I = function(e) {
     activePanel: C,
     metadata: N
   } = (0, b.oq)(), R = [];
-  !n && null == C && (S && !I && R.push(a.z.CLIENT_THEMES_COACHMARK), T && R.push(a.z.CUSTOM_THEME_COACHMARK));
+  !n && null == C && (T && !I && R.push(a.z.CLIENT_THEMES_COACHMARK), S && R.push(a.z.CUSTOM_THEME_COACHMARK));
   let [P, w] = (0, h.US)(R, O.R.SIDEBAR, true), D = P === a.z.CLIENT_THEMES_COACHMARK, x = P === a.z.CUSTOM_THEME_COACHMARK;
-  if ((0, d.HA)(T, P), n) return null;
+  if ((0, d.HA)(S, P), n) return null;
   let L = A ? _.Z : f.Z,
     j = C === b.wh.CLIENT_THEMES || D,
     M = C === b.wh.APP_ICON,

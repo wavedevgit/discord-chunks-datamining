@@ -15,11 +15,11 @@ function c(e) {
     widgetType: t
   } = e;
   return (0, n.jsx)("div", {
-    className: o.container,
+    className: a.container,
     children: (0, n.jsx)(i.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      children: a.intl.format(a.t.W8K2GB, {
+      children: o.intl.format(o.t.W8K2GB, {
         maxGames: (0, l.Gv)(t)
       })
     })

@@ -72,16 +72,16 @@ function N(e) {
   });
   let D = P.length > 0 ? new Date(Math.min(...P.map(e => Date.parse(e.published_at)))) : true;
   return A || !R ? (0, r.jsx)("div", {
-    className: o()(T.guildShopEmbed, T.spinnerContainer),
+    className: o()(S.guildShopEmbed, S.spinnerContainer),
     children: (0, r.jsx)(d.$jN, {})
   }) : null == a || null == N ? null : (0, r.jsxs)("div", {
-    className: T.guildShopEmbed,
+    className: S.guildShopEmbed,
     children: [(0, r.jsx)(O.Z, {
       coverImageAsset: null != (t = N.cover_image_asset) ? t : null
     }), (0, r.jsx)(d.LZC, {
       size: 16
     }), (0, r.jsxs)("div", {
-      className: T.serverShopLabel,
+      className: S.serverShopLabel,
       children: [(0, r.jsx)(v.Z, {
         height: "16px",
         width: "16px",
@@ -89,15 +89,15 @@ function N(e) {
       }), (0, r.jsx)(d.X6q, {
         variant: "heading-sm/semibold",
         color: "interactive-normal",
-        className: T.serverShopLabelText,
-        children: S.intl.string(S.t.al5EXF)
+        className: S.serverShopLabelText,
+        children: T.intl.string(T.t.al5EXF)
       })]
     }), (0, r.jsx)(d.LZC, {
       size: 16
     }), (0, r.jsx)(d.X6q, {
       variant: "heading-md/semibold",
       color: "text-default",
-      children: S.intl.format(S.t.NZeik5, {
+      children: T.intl.format(T.t.NZeik5, {
         guildName: a.name
       })
     }), (0, r.jsx)(d.LZC, {
@@ -112,16 +112,16 @@ function N(e) {
     }), (0, r.jsx)(g.Z, {}), (0, r.jsx)(d.LZC, {
       size: 16
     }), (0, r.jsxs)("div", {
-      className: T.guildShopEmbedFooter,
+      className: S.guildShopEmbedFooter,
       children: [(0, r.jsx)(p.Z, {
         guild: a
       }), (0, r.jsxs)("ul", {
-        className: T.guildShopSummary,
+        className: S.guildShopSummary,
         children: [(0, r.jsx)("li", {
           children: (0, r.jsx)(d.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: S.intl.format(S.t.tKZNlZ, {
+            children: T.intl.format(T.t.tKZNlZ, {
               listingCount: P.length
             })
           })
@@ -129,17 +129,17 @@ function N(e) {
           children: (0, r.jsx)(d.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: S.intl.format(S.t["kXr8+f"], {
+            children: T.intl.format(T.t["kXr8+f"], {
               createdYear: D.getFullYear()
             })
           })
         })]
       }), (0, r.jsx)("div", {
-        className: T.guildShopEmbedCta,
+        className: S.guildShopEmbedCta,
         children: (0, r.jsx)(u.zx, {
           onClick: w,
           icon: v.P,
-          text: S.intl.string(S.t.jXx1CA)
+          text: T.intl.string(T.t.jXx1CA)
         })
       })]
     })]

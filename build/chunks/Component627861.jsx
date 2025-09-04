@@ -131,9 +131,9 @@ function eh(e) {
       })
     }
     return e
-  }, [E, b]), S = i.useMemo(() => {
+  }, [E, b]), T = i.useMemo(() => {
     if (null != g) return () => (0, N.aG)(g)
-  }, [g]), T = (0, W.dQ)(l.name, null == (t = f.activity) ? true : t.type);
+  }, [g]), S = (0, W.dQ)(l.name, null == (t = f.activity) ? true : t.type);
   if (O) {
     let e = (0, r.jsx)(c.Text, {
       variant: "text-xs/medium",
@@ -143,12 +143,12 @@ function eh(e) {
       children: ec.intl.string(ec.t["84qx9v"])
     });
     return (0, r.jsx)(h.W, {
-      header: T,
+      header: S,
       title: l.name,
       iconSrc: P.r9.getWhiteIconURL(),
       info: e,
       actions: v,
-      onClickContent: S,
+      onClickContent: T,
       trackingConfig: {
         id: l.id,
         linkType: m.Un.RICH_PRESENCE_INVITE,
@@ -188,12 +188,12 @@ function eh(e) {
         }), d ? null : p]
       });
     return (0, r.jsx)(h.W, {
-      header: T,
+      header: S,
       title: e,
       iconSrc: null != (s = (0, q.Z)(g, l.id)) ? s : true,
       info: u,
       actions: I,
-      onClickContent: S,
+      onClickContent: T,
       trackingConfig: {
         id: l.id,
         linkType: m.Un.RICH_PRESENCE_INVITE,
@@ -206,7 +206,7 @@ function eh(e) {
 
 function em(e, t) {
   return {
-    openGameProfileModal: (0, T.Z)({
+    openGameProfileModal: (0, S.Z)({
       location: "Rich Presence Activity Invite Embed",
       applicationId: e,
       source: I.m1.Embed,
@@ -285,7 +285,7 @@ function eE(e) {
   var t, n, s, g;
   let {
     analyticsLocations: I,
-    application: T,
+    application: S,
     channel: A,
     currentUserId: C,
     currentUserPresenceActivity: N,
@@ -294,24 +294,24 @@ function eE(e) {
     onView: w,
     partyStatusElement: D,
     presenceActivity: x
-  } = e, j = (0, v.A)(T), M = (0, p.ye)(T), {
+  } = e, j = (0, v.A)(S), M = (0, p.ye)(S), {
     bot: k
-  } = T, U = F.ZP.getApplicationIconURL({
-    id: T.id,
-    icon: T.icon,
+  } = S, U = F.ZP.getApplicationIconURL({
+    id: S.id,
+    icon: S.icon,
     bot: k
   }), {
     staticBannerSrc: G,
     videoBannerSrc: Z,
     bannerAspectRatio: V
-  } = (0, E.E)(T), H = !(0, et.Z)(x, P, T.id), Y = (0, X.H)(P), q = (0, l.e7)([L.Z], () => L.Z.getGameByName(T.name), [T.name]), {
+  } = (0, E.E)(S), H = !(0, et.Z)(x, P, S.id), Y = (0, X.H)(P), q = (0, l.e7)([L.Z], () => L.Z.getGameByName(S.name), [S.name]), {
     openGameProfileModal: J,
     isGameLaunchable: $
-  } = em(T.id, P.author.id), {
+  } = em(S.id, P.author.id), {
     openGameProfileModal: er,
     isGameLaunchable: ea
   } = em(null == q ? true : q.id, P.author.id), eo = (0, ei.Z)({
-    application: T,
+    application: S,
     analyticsLocations: I
   }), el = i.useMemo(() => null == eo ? null : {
     label: ec.intl.string(ec.t["jaYS/v"]),
@@ -329,11 +329,11 @@ function eE(e) {
     currentUserPresenceActivity: N,
     currentUserId: C,
     message: P,
-    application: T,
+    application: S,
     isEmbeddedApplication: M,
     isFrameApplication: j,
     isGameLaunchable: $
-  }), e_ = ep(x, N, P, T), eh = (0, Q.g)(N, x), eE = (0, z.L)(x, P, T, C), eb = (0, l.e7)([B.Z], () => null != x && null != x.application_id && B.Z.getState(x.application_id, es.mFx.JOIN) === es.OcF.LOADING), ey = i.useMemo(() => ed ? {
+  }), e_ = ep(x, N, P, S), eh = (0, Q.g)(N, x), eE = (0, z.L)(x, P, S, C), eb = (0, l.e7)([B.Z], () => null != x && null != x.application_id && B.Z.getState(x.application_id, es.mFx.JOIN) === es.OcF.LOADING), ey = i.useMemo(() => ed ? {
     label: ec.intl.string(ec.t.VJlc0d),
     trackingArea: m.j_.JOIN,
     submitting: eb,
@@ -390,7 +390,7 @@ function eE(e) {
     trackingArea: m.j_.PLAY,
     onClick: () => {
       d.Z.launch({
-        applicationId: T.id
+        applicationId: S.id
       })
     }
   } : ea && (null == q ? true : q.id) != null ? {
@@ -401,10 +401,10 @@ function eE(e) {
         applicationId: q.id
       })
     }
-  } : null != el ? el : true, [T.id, $, ea, null == q ? true : q.id, el]), ev = (0, b.G)(T), eI = i.useMemo(() => null != J ? J : null != er ? er : null != ev && M ? ev : true, [M, J, er, ev]), eS = i.useMemo(() => {
+  } : null != el ? el : true, [S.id, $, ea, null == q ? true : q.id, el]), ev = (0, b.G)(S), eI = i.useMemo(() => null != J ? J : null != er ? er : null != ev && M ? ev : true, [M, J, er, ev]), eT = i.useMemo(() => {
     let e = [];
     return H || null == ey ? H && null != eO && e.push(eO) : e.push(ey), e
-  }, [eO, H, ey]), eT = i.useMemo(() => eS.some(e => e.trackingArea === m.j_.CLOUD_PLAY), [eS]);
+  }, [eO, H, ey]), eS = i.useMemo(() => eT.some(e => e.trackingArea === m.j_.CLOUD_PLAY), [eT]);
   (0, _.Z)({
     name: a.ImpressionNames.CLOUD_PLAY_CTA,
     type: a.ImpressionTypes.VIEW,
@@ -412,10 +412,10 @@ function eE(e) {
       location_stack: I
     }
   }, {
-    disableTrack: !eT
+    disableTrack: !eS
   });
-  let eA = (0, W.dQ)(T.name, null == (t = P.activity) ? true : t.type),
-    eC = (0, S.N)(T.id).some(e => (0, O.ig)(e) === o.o.GLOBAL) ? (0, r.jsxs)(r.Fragment, {
+  let eA = (0, W.dQ)(S.name, null == (t = P.activity) ? true : t.type),
+    eC = (0, T.N)(S.id).some(e => (0, O.ig)(e) === o.o.GLOBAL) ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(c.YqE, {
         size: "xxs",
         color: "currentColor"
@@ -431,21 +431,21 @@ function eE(e) {
       className: eu.description,
       color: "none",
       lineClamp: 3,
-      children: (0, W.wR)(P, T, A, C)
+      children: (0, W.wR)(P, S, A, C)
     });
     return (0, r.jsx)(h.W, {
       header: eA,
-      title: T.name,
+      title: S.name,
       staticBannerSrc: G,
       videoBannerSrc: Z,
       onClickBanner: eI,
       bannerAspectRatio: V,
       iconSrc: null != U ? U : true,
       info: e,
-      actions: eS,
+      actions: eT,
       onClickContent: eI,
       trackingConfig: {
-        id: T.id,
+        id: S.id,
         linkType: m.Un.RICH_PRESENCE_INVITE,
         onView: w,
         referrerId: P.author.id
@@ -473,7 +473,7 @@ function eE(e) {
       className: eu.tagline,
       color: "none",
       lineClamp: 2,
-      children: [Y ? (0, W.$v)(P, T, A, C, H) : eP, Y ? null : eC]
+      children: [Y ? (0, W.$v)(P, S, A, C, H) : eP, Y ? null : eC]
     }),
     eD = (0, r.jsxs)("div", {
       className: eu.info,
@@ -481,17 +481,17 @@ function eE(e) {
     });
   return (0, r.jsx)(h.W, {
     header: eA,
-    title: T.name,
+    title: S.name,
     staticBannerSrc: G,
     videoBannerSrc: Z,
     onClickBanner: eI,
     bannerAspectRatio: V,
     iconSrc: null != U ? U : true,
     info: eD,
-    actions: eS,
+    actions: eT,
     onClickContent: eI,
     trackingConfig: {
-      id: T.id,
+      id: S.id,
       linkType: m.Un.RICH_PRESENCE_INVITE,
       onView: w,
       referrerId: P.author.id

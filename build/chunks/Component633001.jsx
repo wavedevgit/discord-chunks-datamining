@@ -129,10 +129,10 @@ function q(e) {
     color: u.zx.Colors.LINK,
     size: u.zx.Sizes.MIN,
     onClick: function() {
-      (0, k.JG)(t, () => l(true))
+      (0, w.JG)(t, () => l(true))
     },
     className: V.copyId,
-    children: ["Application Id: ", t, " ", n ? G.intl.string(G.t["t5VZ8/"]) : null]
+    children: ["Application Id: ", t, " ", n ? B.intl.string(B.t["t5VZ8/"]) : null]
   })
 }
 let J = Chunk647438.memo(function(e) {
@@ -239,7 +239,7 @@ let J = Chunk647438.memo(function(e) {
   $ = Chunk647438.memo(function(e) {
     let {
       pid: t
-    } = e, n = (0, d.cj)([w.default], () => w.default.getOverlayPIDStatuses()), r = (0, d.cj)([_.default], () => _.default.getTrackedGames()), l = (0, d.e7)([w.default], () => w.default.isInputLocked(t), [t]), i = (0, d.e7)([w.default], () => w.default.DEV_isInputLockedV3(t), [t]), s = (0, d.e7)([w.default], () => w.default.DEV_isInputLocked(t), [t]), o = (0, d.e7)([w.default], () => w.default.isReady(t), [t]);
+    } = e, n = (0, d.cj)([I.default], () => I.default.getOverlayPIDStatuses()), r = (0, d.cj)([_.default], () => _.default.getTrackedGames()), l = (0, d.e7)([I.default], () => I.default.isInputLocked(t), [t]), i = (0, d.e7)([I.default], () => I.default.DEV_isInputLockedV3(t), [t]), s = (0, d.e7)([I.default], () => I.default.DEV_isInputLocked(t), [t]), o = (0, d.e7)([I.default], () => I.default.isReady(t), [t]);
     return (0, a.jsxs)("div", {
       className: V.panelGroup,
       children: [(0, a.jsx)(m.Text, {
@@ -301,13 +301,13 @@ let J = Chunk647438.memo(function(e) {
   });
 
 function Q(e) {
-  let t, n = (t = Object.values((0, d.Wu)([S.Z], () => S.Z.getWidgetsForLayout(B.$S))), t.find(t => t.type === e));
+  let t, n = (t = Object.values((0, d.Wu)([S.Z], () => S.Z.getWidgetsForLayout(G.$S))), t.find(t => t.type === e));
   return [n, () => {
     if (null != n)(0, x.E9)(n.id);
     else {
       let t = X[e];
       if (null == t) return;
-      let n = t(B.$S);
+      let n = t(G.$S);
       (0, x.A4)(n)
     }
   }]
@@ -829,7 +829,7 @@ let eu = [{
     let {
       timestamp: t
     } = e;
-    return (0, I.vc)(o()(t), "h:mm:ss.SSS")
+    return (0, k.vc)(o()(t), "h:mm:ss.SSS")
   }
 }];
 
@@ -891,7 +891,7 @@ let eh = ["__webpack_require__", "fn"],
             children: [s, " (", c, ")", (0, a.jsx)(m.P3F, {
               tag: "span",
               className: V.copyEventButton,
-              onClick: () => (0, k.JG)(s),
+              onClick: () => (0, w.JG)(s),
               children: (0, a.jsx)(m.TIy, {
                 color: "currentColor",
                 size: "sm"
@@ -901,7 +901,7 @@ let eh = ["__webpack_require__", "fn"],
             icon: m.TIy,
             tooltip: "Copy all properties",
             onClick: () => {
-              (0, k.JG)(ex(r))
+              (0, w.JG)(ex(r))
             }
           }), (0, a.jsx)(b.Z.Icon, {
             icon: m.k$p,
@@ -915,8 +915,8 @@ let eh = ["__webpack_require__", "fn"],
             copyValue: f.toISOString(),
             children: (0, a.jsx)("time", {
               dateTime: f.toISOString(),
-              title: (0, I.vc)(f, "LLLL"),
-              children: (0, I.vc)(f, "L h:mm:ss.SSS")
+              title: (0, k.vc)(f, "LLLL"),
+              children: (0, k.vc)(f, "L h:mm:ss.SSS")
             })
           }), (0, a.jsx)(L.Z9, {
             name: "Log Type",
@@ -1013,7 +1013,7 @@ function eb() {
       clearTimeout(module)
     }
   }, []);
-  let [w, I] = Chunk647438.useState(false), R = Chunk647438.useRef(null), A = Chunk647438.useCallback(() => {
+  let [I, k] = Chunk647438.useState(false), R = Chunk647438.useRef(null), A = Chunk647438.useCallback(() => {
     (0, Chunk572004.JG)(JSON.stringify(module)), Chunk55935(true)
   }, [module]);
   return Chunk647438.useEffect(() => {

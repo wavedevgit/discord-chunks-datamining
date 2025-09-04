@@ -91,8 +91,8 @@ function b(e) {
     {
       id: I
     } = (0, o.f$)(),
-    S = i.useRef(null),
-    [T, A] = i.useState(false),
+    T = i.useRef(null),
+    [S, A] = i.useState(false),
     C = null != E;
   i.useLayoutEffect(() => {
     if (C) return (0, a.N)(I, e => {
@@ -100,7 +100,7 @@ function b(e) {
     })
   }, [t, I, C]);
   let N = e => (0, r.jsxs)(d.kF, m(p({}, e, v, b), {
-    ref: S,
+    ref: T,
     role: "button",
     look: l.zx.Looks.BLANK,
     size: l.zx.Sizes.NONE,
@@ -129,10 +129,10 @@ function b(e) {
     })]
   }));
   return C ? (0, r.jsx)(c.yRy, {
-    targetElementRef: S,
+    targetElementRef: T,
     spacing: 0,
     renderPopout: E,
-    shouldShow: T,
+    shouldShow: S,
     onRequestClose: () => A(true),
     children: N
   }) : N()

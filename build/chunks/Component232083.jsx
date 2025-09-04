@@ -1,18 +1,18 @@
 /** Chunk was on 74449 **/
 /** chunk id: 232083, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk623132 = require("./623132.jsx"),
   Chunk112794 = require("./112794.js");
 
-function a(e) {
+function o(e) {
   var {
     games: t,
     widgetType: r
-  } = e, a = function(e, t) {
+  } = e, o = function(e, t) {
     if (null == e) return {};
     var r, n, i = function(e, t) {
       if (null == e) return {};
@@ -50,7 +50,7 @@ function a(e) {
       }({
         game: e,
         widgetType: r
-      }, a))
+      }, o))
     }, "".concat(e.applicationId, "-").concat(t)))
   })
 }

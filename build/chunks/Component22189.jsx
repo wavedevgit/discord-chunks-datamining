@@ -84,12 +84,12 @@ let e_ = () => {
   }).v2EditorEnabled, eI = (0, Chunk300284.Z)({
     scrollPosition: Chunk526761.Y_.TRY_IT_OUT,
     analyticsLocations: module
-  }), eS = () => {
+  }), eT = () => {
     Chunk230711.Z.open(Chunk981631.oAB.APPEARANCE, null, {
       openWithoutBackstack: true,
       analyticsLocations: module
     })
-  }, eT = () => {
+  }, eS = () => {
     Chunk230711.Z.open(Chunk981631.oAB.GUILD_BOOSTING, null, {
       openWithoutBackstack: true,
       analyticsLocations: module
@@ -123,7 +123,7 @@ let e_ = () => {
       subtitle: Chunk388032.intl.string(Chunk388032.t.CjRASE),
       description: Chunk388032.intl.string(Chunk388032.t.jBTTws),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
-      onCtaClick: eS,
+      onCtaClick: eT,
       perkImage: Chunk567396
     },
     clips: em ? {
@@ -233,7 +233,7 @@ let e_ = () => {
         link: "https://discord.com"
       }) : Chunk388032.intl.string(Chunk388032.t.jsyNHh),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
-      onCtaClick: eb ? true : eT,
+      onCtaClick: eb ? true : eS,
       perkImage: Chunk46245,
       hideOnNarrowScreen: !eb,
       imageOverlayText: eb ? Chunk388032.intl.string(Chunk388032.t.lcYttb) : true

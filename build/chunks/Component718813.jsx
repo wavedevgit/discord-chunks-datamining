@@ -61,11 +61,11 @@ let S = (0, Chunk663993.Un)({
     webpackId: 989804,
     name: "UserSettings"
   }),
-  N = (0, Chunk663993.Un)({
+  T = (0, Chunk663993.Un)({
     createPromise: () => require.e("79835").then(require.bind(require, 72493)),
     webpackId: 72493
   }),
-  T = (0, Chunk663993.Un)({
+  N = (0, Chunk663993.Un)({
     createPromise: () => Promise.all([require.e("36599"), require.e("58175"), require.e("7654"), require.e("47463"), require.e("86915")]).then(require.bind(require, 869779)),
     webpackId: 869779,
     name: "ChannelSettings"
@@ -82,10 +82,10 @@ let S = (0, Chunk663993.Un)({
   }),
   x = {
     [Chunk981631.S9g.USER_SETTINGS]: () => (0, Chunk951288.jsx)(S, {}),
-    [Chunk981631.S9g.CHANNEL_SETTINGS]: () => (0, Chunk951288.jsx)(T, {}),
+    [Chunk981631.S9g.CHANNEL_SETTINGS]: () => (0, Chunk951288.jsx)(N, {}),
     [Chunk981631.S9g.GUILD_SETTINGS]: () => (0, Chunk951288.jsx)(P, {}),
     [Chunk981631.S9g.COLLECTIBLES_SHOP]: () => (0, Chunk951288.jsx)(j, {}),
-    [Chunk981631.S9g.MANA_PLAYGROUND]: () => (0, Chunk951288.jsx)(N, {})
+    [Chunk981631.S9g.MANA_PLAYGROUND]: () => (0, Chunk951288.jsx)(T, {})
   },
   A = "SHOWN",
   Z = "HIDDEN",

@@ -8,7 +8,7 @@ require.d(exports, {
   XQ: () => I,
   _U: () => w,
   dM: () => R,
-  k$: () => S
+  k$: () => T
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
   Chunk524437 = require("./524437.js"),
@@ -100,7 +100,7 @@ function I(e, t, n, r) {
   }))
 }
 
-function S(e, t, n, r) {
+function T(e, t, n, r) {
   if (null == e) return;
   if (c.Z.isFullServerPreview(e)) {
     (0, l.zS)(e, n ? [t] : [], n ? [] : [t]), (0, l.aq)(e, {
@@ -142,7 +142,7 @@ function S(e, t, n, r) {
     location: r
   }))
 }
-async function T(e, t) {
+async function S(e, t) {
   if (null == e || c.Z.isFullServerPreview(e)) return;
   let n = {
     channel_overrides: t
@@ -155,7 +155,7 @@ async function T(e, t) {
     updates: t
   })
 }
-let A = (0, Chunk392711.debounce)((e, t) => T(e, t), 1e3);
+let A = (0, Chunk392711.debounce)((e, t) => S(e, t), 1e3);
 
 function C(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],

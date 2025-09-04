@@ -58,8 +58,8 @@ function Y(e) {
       fromStandaloneBillingPage: s = true,
       className: c
     } = e,
-    u = (0, d.e7)([S.default], () => {
-      let e = S.default.getCurrentUser();
+    u = (0, d.e7)([T.default], () => {
+      let e = T.default.getCurrentUser();
       return l()(null != e, "GuildBoostingHeader: currentUser cannot be undefined"), e
     });
   if (0 === (0, C.uV)(n.additionalPlans)) return null;
@@ -167,7 +167,7 @@ function z(e) {
     analyticsLocations: o
   } = (0, g.ZP)(m.Z.PAST_DUE_ONE_TIME_PAYMENT_METHOD_BANNER);
   return i.useEffect(() => {
-    T.default.track(B.rMx.TOOLTIP_VIEWED, {
+    S.default.track(B.rMx.TOOLTIP_VIEWED, {
       type: "subscription_settings_invalid_payment_method"
     })
   }, []), (0, r.jsxs)("div", {
@@ -274,13 +274,13 @@ function Q(e) {
   O = null != d ? d : O;
   let v = (0, b.Z)(),
     I = (0, D.$)("subscription_details"),
-    S = (0, P.lr)(),
-    T = C.ZP.isBaseSubscriptionCanceled(t),
+    T = (0, P.lr)(),
+    S = C.ZP.isBaseSubscriptionCanceled(t),
     A = (0, x.P)(t, i);
   if (null == E || null == O) return (0, r.jsx)(p.$jN, {});
   let w = A ? (0, P.Yi)(O) : null,
-    j = null != w || null != S && (S.discountId === G.dT || S.discountId === G.dB),
-    U = A && (T && null != I || !T && j);
+    j = null != w || null != T && (T.discountId === G.dT || T.discountId === G.dB),
+    U = A && (S && null != I || !S && j);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: V.subscriptionRows,
@@ -290,7 +290,7 @@ function Q(e) {
         paymentSource: i,
         discountOffer: I,
         renewalChurnDiscountInfo: w,
-        discountInfo: S,
+        discountInfo: T,
         isLoading: a,
         analyticsLocation: n
       }) : (0, r.jsx)(M.Z, {
@@ -393,10 +393,10 @@ function ee(e) {
     analyticsLocations: f,
     analyticsLocation: c,
     userDiscountOfferId: null == _ ? true : _.id
-  }), y = null == o ? true : o.invalid, O = (0, d.e7)([S.default], () => {
+  }), y = null == o ? true : o.invalid, O = (0, d.e7)([T.default], () => {
     var e;
-    return null == (e = S.default.getCurrentUser()) ? true : e.hasFreePremium()
-  }), v = u()(i.currentPeriodEnd), T = null != i.paymentSourceId, A = null != (t = null == b ? true : b.total) ? t : 0, C = !T && A > 0 && (7 >= v.diff(u()(), "days") || i.status === B.O0b.PAST_DUE) && !O && !i.isPurchasedExternally, N = y && i.status === B.O0b.PAST_DUE && !O && !i.isPurchasedExternally, P = (0, w.U)(), x = !O && P, L = (null == i ? true : i.status) === B.O0b.PAST_DUE, j = L ? u()().diff(u()(i.currentPeriodStart), "days") : 0, [M] = (0, R.Ox)({
+    return null == (e = T.default.getCurrentUser()) ? true : e.hasFreePremium()
+  }), v = u()(i.currentPeriodEnd), S = null != i.paymentSourceId, A = null != (t = null == b ? true : b.total) ? t : 0, C = !S && A > 0 && (7 >= v.diff(u()(), "days") || i.status === B.O0b.PAST_DUE) && !O && !i.isPurchasedExternally, N = y && i.status === B.O0b.PAST_DUE && !O && !i.isPurchasedExternally, P = (0, w.U)(), x = !O && P, L = (null == i ? true : i.status) === B.O0b.PAST_DUE, j = L ? u()().diff(u()(i.currentPeriodStart), "days") : 0, [M] = (0, R.Ox)({
     subscriptionId: i.id,
     preventFetch: !(x || L)
   });

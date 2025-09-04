@@ -76,10 +76,10 @@ function v(e, t) {
   return i
 }
 let I = 3,
-  S = 80,
-  T = 12,
+  T = 80,
+  S = 12,
   A = 16,
-  C = () => S,
+  C = () => T,
   N = e => {
     var {
       children: t,
@@ -110,7 +110,7 @@ let I = 3,
       } = (0, p.Z)({
         user: t,
         avatarDecorationOverride: n,
-        size: S,
+        size: T,
         onlyAnimateOnHover: !h
       });
     return (0, r.jsxs)(N, y(E({
@@ -207,8 +207,8 @@ let I = 3,
         return t.length
       }),
       sectionGutter: A,
-      itemGutter: T,
-      paddingHorizontal: T,
+      itemGutter: S,
+      paddingHorizontal: S,
       paddingVertical: 0,
       removeEdgeItemGutters: true,
       renderItem: g,

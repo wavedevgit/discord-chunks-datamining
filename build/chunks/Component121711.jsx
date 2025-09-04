@@ -1,15 +1,18 @@
 /** Chunk was on 1272 **/
 /** chunk id: 121711, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => K
+  Z: () => es
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
+  Chunk843611 = require("./843611.js"),
+  Chunk772848 = require("./772848.js"),
   Chunk990547 = require("./990547.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk150063 = require("./150063.js"),
   Chunk607070 = require("./607070.js"),
   Chunk100527 = require("./100527.js"),
   Chunk213609 = require("./213609.js"),
@@ -27,10 +30,16 @@ var Chunk951288 = require("./951288.js"),
   Chunk822857 = require("./822857.js"),
   Chunk775451 = require("./775451.jsx"),
   Chunk451478 = require("./451478.js"),
+  Chunk626135 = require("./626135.js"),
   Chunk526167 = require("./526167.js"),
   Chunk63063 = require("./63063.js"),
+  Chunk617136 = require("./617136.js"),
   Chunk113434 = require("./113434.js"),
   Chunk833435 = require("./833435.js"),
+  Chunk497505 = require("./497505.js"),
+  Chunk220068 = require("./220068.js"),
+  Chunk937797 = require("./937797.js"),
+  Chunk110560 = require("./110560.jsx"),
   Chunk150560 = require("./150560.js"),
   Chunk672188 = require("./672188.js"),
   Chunk558652 = require("./558652.jsx"),
@@ -46,91 +55,206 @@ var Chunk951288 = require("./951288.js"),
   Chunk728963 = require("./728963.js"),
   Chunk13299 = require("./13299.js"),
   Chunk606199 = require("./606199.js"),
-  Chunk164792 = require("./164792.js");
+  Chunk164792 = require("./164792.js"),
+  Chunk524777 = require("./524777.js"),
+  Chunk913713 = require("./913713.js"),
+  Chunk431115 = require("./431115.js");
 
-function Y(e) {
+function el(e) {
   let {
     onLoadComplete: t
   } = e, {
     enabled: n
-  } = (0, C.WX)({
-    location: U.dr.QUEST_HOME_DESKTOP
-  }), l = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), o = (0, s.e7)([N.Z], () => N.Z.isFocused()), {
-    ref: c,
-    inViewport: d
-  } = (0, Z.a)(), p = i.useRef(null);
+  } = (0, N.WX)({
+    location: K.dr.QUEST_HOME_DESKTOP
+  }), l = (0, u.e7)([f.Z], () => f.Z.useReducedMotion), o = (0, u.e7)([P.Z], () => P.Z.isFocused()), {
+    ref: s,
+    inViewport: c
+  } = (0, B.a)(), d = i.useRef(null);
   if (i.useEffect(() => {
-      (null == p ? true : p.current) != null && (p.current.paused || o && d && !l ? p.current.paused && !l && d && o && p.current.play() : p.current.pause())
-    }, [l, d, o]), n) {
-    let e = (0, T.rO)();
-    return (0, r.jsx)(g.Z, {
+      (null == d ? true : d.current) != null && (d.current.paused || o && c && !l ? d.current.paused && !l && c && o && d.current.play() : d.current.pause())
+    }, [l, c, o]), n) {
+    let e = (0, A.rO)();
+    return (0, r.jsx)(_.Z, {
       ref: e => {
-        p.current = e, c.current = e
+        d.current = e, s.current = e
       },
       loop: true,
       muted: true,
       playsInline: true,
-      className: a()(H.bannerAsset, H.orbsBannerAsset),
+      className: a()(J.bannerAsset, J.orbsBannerAsset),
       onProgress: t,
       "data-mtctest-ignore": "true",
       controls: false,
       children: (0, r.jsx)("source", {
-        src: e ? z.Z : W.Z,
+        src: e ? ee.Z : et.Z,
         type: e ? "video/mp4" : "video/webm"
       })
     })
   }
   return (0, r.jsx)("img", {
-    src: F.ZP,
-    className: a()(H.bannerAsset, H.oversizedImg),
+    src: $.ZP,
+    className: a()(J.bannerAsset, J.oversizedImg),
     alt: "",
     onLoad: t
   })
 }
-let K = function() {
+
+function ea(e) {
   let {
-    selectedTab: e,
-    onSelectTab: t,
-    tabs: n
-  } = (0, Chunk452081.z)(), {
-    onScroll: l,
-    scrollPosition: s
-  } = (0, Chunk979233.M)(), u = Chunk150560.Z.getState().getUtmCurrentContext(), g = (0, Chunk833435._)({
+    onLoadComplete: t
+  } = e;
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)("img", {
+      src: en.ZP,
+      className: a()(J.bannerAsset, J.redirectNoticeBannerAsset),
+      alt: ""
+    }), (0, r.jsx)("img", {
+      src: ei.ZP,
+      className: a()(J.bannerAsset, J.redirectNoticeBannerAsset),
+      alt: "",
+      onLoad: t
+    }), (0, r.jsx)("img", {
+      src: er.ZP,
+      className: a()(J.bannerAsset, J.redirectNoticeBannerAsset),
+      alt: ""
+    })]
+  })
+}
+
+function eo(e) {
+  let {
+    onLoadComplete: t,
+    onScroll: n,
+    onSelectTab: l,
+    selectedTabId: a,
+    scrollerRef: o,
+    tabs: c
+  } = e, u = i.useCallback(() => {
+    (0, U.navigateToQuestHome)({
+      fromContent: D.jn.QUEST_HOME_MOVE_CALLOUT_DISCOVER
+    }), x.default.track(q.rMx.QUEST_CONTENT_CLICKED, function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
+            enumerable: true,
+            configurable: true,
+            writable: true
+          }) : e[t] = r
+        })
+      }
+      return e
+    }({
+      cta_name: w.jZ.VIEW_QUESTS,
+      click_id: (0, s.Z)(),
+      is_targeted: false
+    }, (0, w.mH)(D.jn.QUEST_HOME_MOVE_CALLOUT_DISCOVER)))
+  }, []);
+  return (0, r.jsx)(W.t.Provider, {
+    value: o,
+    children: (0, r.jsxs)(S.Z, {
+      onScroll: n,
+      ref: o,
+      children: [(0, r.jsx)(C.a, {
+        selectedTabId: a,
+        handleTransition: l,
+        tabs: c,
+        icon: d.qDn
+      }), (0, r.jsx)(E.Z, {
+        title: X.intl.string(X.t.z8YP2N),
+        button: (0, r.jsx)(d.zxk, {
+          variant: "overlay-primary",
+          text: X.intl.string(X.t.GURBQk),
+          onClick: u
+        }),
+        className: J.redirectNoticeBannerContainer,
+        children: (0, r.jsx)(ea, {
+          onLoadComplete: t
+        })
+      }), (0, r.jsx)(y.Z, {
+        children: (0, r.jsxs)("div", {
+          className: J.redirectNoticeContainer,
+          children: [(0, r.jsx)(d.X6q, {
+            variant: "heading-xl/semibold",
+            children: X.intl.string(X.t.z8YP2N)
+          }), (0, r.jsx)(d.Text, {
+            color: "text-secondary",
+            variant: "text-md/normal",
+            children: X.intl.string(X.t["HdKh6+"])
+          }), (0, r.jsx)(d.Avr, {
+            text: X.intl.string(X.t["1CdL8f"]),
+            onClick: u,
+            textVariant: "text-md/normal",
+            variant: "primary"
+          })]
+        })
+      })]
+    })
+  })
+}
+let es = function() {
+  var e;
+  let {
+    enabled: t
+  } = Chunk937797.m8.useConfig({
     location: Chunk46140.dr.QUEST_HOME_DESKTOP
-  }) ? Chunk736683.Z : Chunk736683.j, N = (0, Chunk879438.z)(e => e.registerAssetLoad), T = Chunk647438.useRef(Chunk607070);
+  }), n = (0, Chunk843611.TH)(), l = (null == (e = (0, Chunk843611.LX)(require.pathname, Chunk981631.Z5c.QUEST_HOME)) ? true : module.isExact) === true, s = exports && Chunk120356, {
+    selectedTab: u,
+    onSelectTab: f,
+    tabs: _
+  } = (0, Chunk452081.z)({
+    withClaimedQuestsTab: !Chunk772848
+  });
+  Chunk647438.useLayoutEffect(() => {
+    Chunk772848 && Chunk442837 === Chunk113434.e5.CLAIMED && Chunk220068.Z.setState({
+      tab: Chunk113434.e5.ALL
+    })
+  }, [Chunk772848, Chunk442837]);
+  let {
+    onScroll: P,
+    scrollPosition: x
+  } = (0, Chunk979233.M)(), A = Chunk150560.Z.getState().getUtmCurrentContext(), w = (0, Chunk833435._)({
+    location: Chunk46140.dr.QUEST_HOME_DESKTOP
+  }) ? Chunk736683.Z : Chunk736683.j, D = (0, Chunk879438.z)(e => e.registerAssetLoad), U = Chunk647438.useRef(Chunk526167);
   Chunk647438.useEffect(() => {
-    Chunk526167.current = Chunk607070
+    Chunk110560.current = Chunk526167
   }), Chunk647438.useEffect(() => {
     let {
-      current: t
-    } = Chunk526167;
+      current: e
+    } = Chunk110560;
     (0, Chunk213609.h)({
       name: Chunk990547.ImpressionNames.QUEST_HOME,
       type: Chunk990547.ImpressionTypes.VIEW,
       properties: {
-        utm_source_current: exports.utmSourceCurrent,
-        utm_medium_current: exports.utmMediumCurrent,
-        utm_campaign_current: exports.utmCampaignCurrent,
-        utm_content_current: exports.utmContentCurrent,
-        tab: module
+        utm_source_current: module.utmSourceCurrent,
+        utm_medium_current: module.utmMediumCurrent,
+        utm_campaign_current: module.utmCampaignCurrent,
+        utm_content_current: module.utmContentCurrent,
+        tab: Chunk442837
       }
     })
-  }, [module]);
+  }, [Chunk442837]);
   let {
-    enabled: Z
+    enabled: B
   } = (0, Chunk822857.WX)({
     location: Chunk46140.dr.QUEST_HOME_DESKTOP
-  }), F = Chunk647438.useCallback(() => {
+  }), $ = Chunk647438.useCallback(() => {
     if (Chunk672188) return void window.open(Chunk981631.EYA.PAID_TERMS_ORBS);
     window.open(Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUESTS_LEARN_MORE))
   }, [Chunk672188]);
   (0, Chunk252618.Tt)({
     location: Chunk388032.intl.string(Chunk388032.t.JALI2N)
   });
-  let z = Chunk672188 ? Chunk388032.intl.format(Chunk388032.t.BCBIlp, {}) : Chunk388032.intl.format(Chunk388032.t.lmMBf3, {}),
-    W = Chunk672188 ? Chunk388032.intl.format(Chunk388032.t.U9FY0N, {}) : Chunk388032.intl.string(Chunk388032.t.oWCrBg),
-    K = Chunk647438.useRef(null),
-    q = Chunk647438.useCallback(() => {
+  let ee = Chunk672188 ? Chunk388032.intl.format(Chunk388032.t.BCBIlp, {}) : Chunk388032.intl.format(Chunk388032.t.lmMBf3, {}),
+    et = Chunk672188 ? Chunk388032.intl.format(Chunk388032.t.U9FY0N, {}) : Chunk388032.intl.string(Chunk388032.t.oWCrBg),
+    en = Chunk647438.useRef(null),
+    er = Chunk647438.useCallback(() => {
       (0, Chunk507808.Y)({
         pageType: Chunk981631.ZY5.GLOBAL_DISCOVERY_QUESTS,
         sectionType: Chunk981631.jXE.ORBS_BALANCE_MENU,
@@ -142,27 +266,36 @@ let K = function() {
         analyticsSource: Chunk100527.Z.ORBS_BALANCE_MENU
       })
     }, []);
-  return (0, Chunk951288.jsx)(Chunk251360.k.Provider, {
+  return Chunk647438.useEffect(() => {
+    exports && (0, Chunk150063.Y)(Chunk981631.Z5c.QUEST_HOME_V2)
+  }, [exports]), (0, Chunk951288.jsx)(Chunk251360.k.Provider, {
     value: {
-      onAssetLoadComplete: Chunk451478
+      onAssetLoadComplete: Chunk497505
     },
     children: (0, Chunk951288.jsx)("div", {
       className: Chunk728963.container,
-      children: Chunk672188 ? (0, Chunk951288.jsx)(Chunk466962.t.Provider, {
-        value: K,
+      children: Chunk772848 ? (0, Chunk951288.jsx)(eo, {
+        onSelectTab: Chunk607070,
+        onScroll: Chunk451478,
+        onLoadComplete: Chunk497505,
+        scrollerRef: Chunk524777,
+        selectedTabId: Chunk442837,
+        tabs: Chunk70097
+      }) : Chunk672188 ? (0, Chunk951288.jsx)(Chunk466962.t.Provider, {
+        value: Chunk524777,
         children: (0, Chunk951288.jsxs)(Chunk283293.Z, {
-          onScroll: Chunk120356,
-          ref: K,
+          onScroll: Chunk451478,
+          ref: Chunk524777,
           children: [(0, Chunk951288.jsx)(Chunk763433.a, {
-            selectedTabId: module,
-            handleTransition: exports,
-            tabs: require,
+            selectedTabId: Chunk442837,
+            handleTransition: Chunk607070,
+            tabs: Chunk70097,
             icon: Chunk481060.qDn,
             children: (0, Chunk951288.jsx)(Chunk775451.V9, {
               analyticsPage: Chunk981631.ZY5.GLOBAL_DISCOVERY_QUESTS,
               cardAlignment: Chunk775451.ek.END,
               ctaText: Chunk388032.intl.string(Chunk388032.t["J+vlIS"]),
-              ctaOnClick: q
+              ctaOnClick: Chunk913713
             })
           }), (0, Chunk951288.jsxs)(Chunk17845.Z, {
             title: Chunk606199,
@@ -196,12 +329,12 @@ let K = function() {
               className: a()(Chunk728963.bannerGradient, {
                 [Chunk728963.orbsGradient]: Chunk672188
               })
-            }), (0, Chunk951288.jsx)(Y, {
-              onLoadComplete: Chunk451478
+            }), (0, Chunk951288.jsx)(el, {
+              onLoadComplete: Chunk497505
             })]
           }), (0, Chunk951288.jsx)(Chunk374939.Z, {
-            children: module === Chunk113434.e5.CLAIMED ? (0, Chunk951288.jsx)(Chunk70097, {
-              onSelectTab: exports
+            children: Chunk442837 === Chunk113434.e5.CLAIMED ? (0, Chunk951288.jsx)(Chunk617136, {
+              onSelectTab: Chunk607070
             }) : (0, Chunk951288.jsx)(Chunk558652.Z, {})
           })]
         })
@@ -211,15 +344,15 @@ let K = function() {
           children: [(0, Chunk951288.jsx)("div", {
             className: Chunk728963.dragRegion
           }), (0, Chunk951288.jsx)(Chunk611928.z6, {
-            scrollPosition: Chunk442837
+            scrollPosition: Chunk626135
           }), (0, Chunk951288.jsx)(Chunk611928.aV, {
             icon: Chunk481060.qDn
           })]
         }), (0, Chunk951288.jsx)(Chunk466962.t.Provider, {
-          value: K,
+          value: Chunk524777,
           children: (0, Chunk951288.jsxs)(Chunk283293.Z, {
-            onScroll: Chunk120356,
-            ref: K,
+            onScroll: Chunk451478,
+            ref: Chunk524777,
             children: [(0, Chunk951288.jsxs)(Chunk17845.Z, {
               title: Chunk606199,
               description: Chunk164792,
@@ -237,19 +370,19 @@ let K = function() {
                 className: a()(Chunk728963.bannerGradient, {
                   [Chunk728963.orbsGradient]: Chunk672188
                 })
-              }), (0, Chunk951288.jsx)(Y, {
-                onLoadComplete: Chunk451478
+              }), (0, Chunk951288.jsx)(el, {
+                onLoadComplete: Chunk497505
               })]
             }), (0, Chunk951288.jsxs)(Chunk374939.Z, {
               children: [(0, Chunk951288.jsx)("div", {
                 className: Chunk728963.tabs,
                 children: (0, Chunk951288.jsx)(Chunk233374.Z, {
-                  tabs: require,
-                  selectedTab: module,
-                  onTabSelect: exports
+                  tabs: Chunk70097,
+                  selectedTab: Chunk442837,
+                  onTabSelect: Chunk607070
                 })
-              }), module === Chunk113434.e5.CLAIMED ? (0, Chunk951288.jsx)(Chunk70097, {
-                onSelectTab: exports
+              }), Chunk442837 === Chunk113434.e5.CLAIMED ? (0, Chunk951288.jsx)(Chunk617136, {
+                onSelectTab: Chunk607070
               }) : (0, Chunk951288.jsx)(Chunk558652.Z, {})]
             })]
           })

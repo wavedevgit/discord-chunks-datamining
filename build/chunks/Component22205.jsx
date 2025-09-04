@@ -60,12 +60,12 @@ function L(e) {
     onDisable: c,
     onCrashDisabled: u
   } = e, _ = i.useMemo(() => new s.SpringValue(1), []), m = i.useRef(null), [g, y] = i.useState(false), [O, v] = i.useState(false), I = (0, d.e7)([E.default], () => E.default.getCurrentUser());
-  (0, h.ZP)(() => (m.current = setTimeout(S, x), p.Z.track(N.rMx.NOTIFICATION_VIEWED, {
+  (0, h.ZP)(() => (m.current = setTimeout(T, x), p.Z.track(N.rMx.NOTIFICATION_VIEWED, {
     notif_type: C.n0.OverlayCrashed
   }), () => {
     null != m.current && clearTimeout(m.current)
   }));
-  let S = i.useCallback(() => {
+  let T = i.useCallback(() => {
       _.set(0), null != m.current && clearTimeout(m.current), m.current = null, null == o || o(), null == u || u()
     }, [_, o, u]),
     w = i.useCallback(e => {
@@ -80,7 +80,7 @@ function L(e) {
     L = i.useCallback(e => {
       e.stopPropagation(), null == o || o(), null == c || c()
     }, [c, o]),
-    j = (0, d.e7)([T.ZP], () => T.ZP.getFocusedRunningGame()),
+    j = (0, d.e7)([S.ZP], () => S.ZP.getFocusedRunningGame()),
     M = g ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(f.Text, {
         variant: "text-md/semibold",

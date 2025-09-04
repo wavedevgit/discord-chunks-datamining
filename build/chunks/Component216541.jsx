@@ -32,7 +32,7 @@ let E = e => {
     firstProfileEffect: O,
     firstAvatarDecoration: v,
     firstNameplate: I
-  } = (0, u.Rj)(t), S = (0, f.O1)(v), T = (0, l.ZP)(), A = (0, o.ap)(T), C = (0, d.L)(t);
+  } = (0, u.Rj)(t), T = (0, f.O1)(v), S = (0, l.ZP)(), A = (0, o.ap)(S), C = (0, d.L)(t);
   return (0, r.jsxs)("div", {
     className: a()(h.container, C ? h.threeItemBundle : null, y),
     children: [(0, r.jsx)("div", {
@@ -47,7 +47,7 @@ let E = e => {
     }), (0, r.jsx)("div", {
       className: a()(h.avatarDecorationPreview, b ? h.avatarDecorationPreviewCollectedModal : null, C ? h.avatarDecorationDropShadow : null),
       children: (0, r.jsx)(_.R, {
-        item: S,
+        item: T,
         user: E,
         avatarSize: null != I ? s.EFr.SIZE_96 : s.EFr.SIZE_120,
         isPurchased: n,
@@ -63,7 +63,7 @@ let E = e => {
         isPurchased: n,
         nameplatePreviewSize: "default",
         showPlaceholderUser: !i,
-        avatarDecorationOverride: null != S ? S : true
+        avatarDecorationOverride: null != T ? T : true
       })
     })]
   })

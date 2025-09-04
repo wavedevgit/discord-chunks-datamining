@@ -64,11 +64,11 @@ function I(e) {
   f = false, null !== u && (d = null, u = null)
 }
 
-function S(e) {
+function T(e) {
   f = false
 }
 
-function T(e) {
+function S(e) {
   let {
     applicationId: t
   } = e;
@@ -122,10 +122,10 @@ let C = new A(Chunk570140.Z, {
   WIDGET_PENDING_SET: g,
   WIDGET_PENDING_SAVE_START: v,
   WIDGET_PENDING_SAVE_SUCCESS: I,
-  WIDGET_PENDING_SAVE_FAILURE: S,
+  WIDGET_PENDING_SAVE_FAILURE: T,
   WIDGET_SUGGESTED_FETCH_SUCCESS: b,
   WIDGET_SUGGESTED_FETCH_FAILURE: y,
   WIDGET_SUGGESTED_FETCH_START: O,
   WIDGET_PENDING_CLEAR: E,
-  WIDGET_SUGGESTED_REMOVE_GAME: T
+  WIDGET_SUGGESTED_REMOVE_GAME: S
 })

@@ -51,8 +51,8 @@ let b = Chunk647438.forwardRef(function(e, t) {
     disabled: O = false,
     hideDivider: v = false,
     showBorder: I = false,
-    borderType: S,
-    hasBackground: T = false,
+    borderType: T,
+    hasBackground: S = false,
     forcedDivider: A = false,
     showPremiumIcon: C = false,
     showViewFullProfileButton: N = false
@@ -74,8 +74,8 @@ let b = Chunk647438.forwardRef(function(e, t) {
       className: m.customizationSectionBorder,
       backgroundClassName: m.customizationSectionBackground,
       isShown: I,
-      type: S,
-      hasBackground: T,
+      type: T,
+      hasBackground: S,
       children: [(0, r.jsxs)(c.vwX, {
         className: m.title,
         id: a,

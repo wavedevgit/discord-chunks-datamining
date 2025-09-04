@@ -58,17 +58,17 @@ module.exports = function(e) {
           direction: _ || E.get(v),
           tree: d.getBlockTree(v)
         },
-        S = (t.get(O.getType()) || t.get("unstyled")).wrapper;
+        T = (t.get(O.getType()) || t.get("unstyled")).wrapper;
       y.push({
         block: l.createElement(o, i({
           key: v
         }, I)),
-        wrapperTemplate: S,
+        wrapperTemplate: T,
         key: v,
         offsetKey: s.encode(v, 0, 0)
       });
-      var T = O.getNextSiblingKey();
-      O = T ? p.getBlockForKey(T) : null
+      var S = O.getNextSiblingKey();
+      O = S ? p.getBlockForKey(S) : null
     }
     for (var A = [], C = 0; C < y.length;) {
       var N = y[C];

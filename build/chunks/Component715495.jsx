@@ -182,7 +182,7 @@ function I() {
             let {
               url: t
             } = e;
-            return (0, r.jsx)(S, {
+            return (0, r.jsx)(T, {
               src: t,
               onSetStatic: j,
               removeAsset: k
@@ -195,7 +195,7 @@ function I() {
             darkBackground: e,
             lightBackground: e
           })
-        }), (0, Chunk951288.jsx)(T, {
+        }), (0, Chunk951288.jsx)(S, {
           label: "set",
           onClick: () => {}
         })]
@@ -204,7 +204,7 @@ function I() {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     src: t,
     onSetStatic: n,
@@ -237,7 +237,7 @@ function S(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     label: t,
     onClick: n

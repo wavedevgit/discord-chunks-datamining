@@ -29,14 +29,14 @@ let m = Chunk647438.forwardRef(function(e, t) {
     useReducedMotion: O,
     onCtxMenuOpen: v,
     onCtxMenuClose: I,
-    onCtxMenuSelect: S,
-    overlayRef: T,
+    onCtxMenuSelect: T,
+    overlayRef: S,
     shouldShowRewardsCTAWhenCollapsed: A
   } = e, C = (0, l.Jf)(b), N = i.useRef(null), R = (null == (n = b.userStatus) ? true : n.enrolledAt) != null, P = null != C ? C.percentComplete : y.percentComplete, [w, D] = i.useState(false);
   return (0, r.jsxs)(r.Fragment, {
     children: [A && (0, r.jsx)(d.Z, {
       expansionSpring: m,
-      overlayRef: T,
+      overlayRef: S,
       progressBarRef: N,
       quest: b,
       isExpanded: g,
@@ -65,7 +65,7 @@ let m = Chunk647438.forwardRef(function(e, t) {
             quest: b,
             onCtxMenuOpen: v,
             onCtxMenuClose: I,
-            onCtxMenuSelect: S
+            onCtxMenuSelect: T
           }), (0, r.jsx)("div", {
             className: h.divider
           })]

@@ -16,43 +16,43 @@ let d = Chunk647438.memo(function(e) {
     currentTags: t,
     onTagSelect: r,
     onNoneSelect: i,
-    onClose: a
+    onClose: o
   } = e;
   return (0, n.jsx)(l.v2r, {
     navId: "widget-game-tags",
     "aria-label": s.intl.string(s.t.r6EJOj),
-    onClose: a,
+    onClose: o,
     onSelect: () => {},
     className: u.gameTagsMenu,
     children: Object.entries(c.aE).map(e => {
-      let [a, o] = e, u = ((e, a) => {
-        let o = [];
-        return a.type === c.kd.RADIO && o.push((0, n.jsx)(l.k5B, {
+      let [o, a] = e, u = ((e, o) => {
+        let a = [];
+        return o.type === c.kd.RADIO && a.push((0, n.jsx)(l.k5B, {
           id: "".concat(e, "-none"),
           group: e,
           label: s.intl.string(s.t.PoWNfX),
-          checked: !a.tags.some(e => t.includes(e)),
-          action: () => i(a.tags)
-        }, "none")), a.tags.forEach(i => {
+          checked: !o.tags.some(e => t.includes(e)),
+          action: () => i(o.tags)
+        }, "none")), o.tags.forEach(i => {
           let s = c.XV[i];
-          null != s && (a.type === c.kd.RADIO ? o.push((0, n.jsx)(l.k5B, {
+          null != s && (o.type === c.kd.RADIO ? a.push((0, n.jsx)(l.k5B, {
             id: i,
             group: e,
             label: s.getText(),
             checked: t.includes(i),
             action: () => r(i, true)
-          }, i)) : o.push((0, n.jsx)(l.S89, {
+          }, i)) : a.push((0, n.jsx)(l.S89, {
             id: i,
             label: s.getText(),
             checked: t.includes(i),
             action: () => r(i, false)
           }, i)))
-        }), o
-      })(a, o);
+        }), a
+      })(o, a);
       return (0, n.jsx)(l.kSQ, {
-        label: o.getLabel(),
+        label: a.getLabel(),
         children: u
-      }, a)
+      }, o)
     })
   })
 });
@@ -62,47 +62,47 @@ function f(e) {
     tags: t,
     widgetType: r,
     applicationId: f,
-    ref: g
-  } = e, b = (0, i.useRef)(null), {
-    trackUserProfileEditAction: p
-  } = (0, a.KZ)(), m = (0, i.useMemo)(() => null != t ? t : [], [t]), O = (0, i.useCallback)(function(e) {
+    ref: b
+  } = e, p = (0, i.useRef)(null), {
+    trackUserProfileEditAction: g
+  } = (0, o.KZ)(), O = (0, i.useMemo)(() => null != t ? t : [], [t]), y = (0, i.useCallback)(function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-      n = new Set(m);
+      n = new Set(O);
     if (t) {
       let t = Object.values(c.aE).find(t => t.tags.includes(e));
       null != t && (t.tags.forEach(e => {
         n.delete(e)
-      }), n.add(e), p({
+      }), n.add(e), g({
         action: "TAG_ADDED",
         widgetEdited: r,
         gameId: f
       }))
-    } else n.has(e) ? (n.delete(e), p({
+    } else n.has(e) ? (n.delete(e), g({
       action: "TAG_REMOVED",
       widgetEdited: r,
       gameId: f
-    })) : (n.add(e), p({
+    })) : (n.add(e), g({
       action: "TAG_ADDED",
       widgetEdited: r,
       gameId: f
     }));
-    (0, o.n$)(r, f, Array.from(n))
-  }, [m, p, r, f]), y = (0, i.useCallback)(e => {
-    let t = new Set(m);
+    (0, a.n$)(r, f, Array.from(n))
+  }, [O, g, r, f]), j = (0, i.useCallback)(e => {
+    let t = new Set(O);
     e.forEach(e => {
       t.delete(e)
-    }), p({
+    }), g({
       action: "TAG_REMOVED",
       widgetEdited: r,
       gameId: f
-    }), (0, o.n$)(r, f, Array.from(t))
-  }, [m, p, r, f]);
+    }), (0, a.n$)(r, f, Array.from(t))
+  }, [O, g, r, f]);
   return (0, n.jsx)(l.yRy, {
-    targetElementRef: b,
+    targetElementRef: p,
     position: "right",
     align: "top",
     onRequestOpen: () => {
-      p({
+      g({
         action: "PRESS_ADD_TAG",
         widgetEdited: r
       })
@@ -112,17 +112,17 @@ function f(e) {
         closePopout: t
       } = e;
       return (0, n.jsx)(d, {
-        currentTags: m,
-        onTagSelect: O,
-        onNoneSelect: y,
+        currentTags: O,
+        onTagSelect: y,
+        onNoneSelect: j,
         onClose: t
       })
     },
     children: e => {
       var t, r;
       return (0, n.jsx)("div", {
-        ref: e => (null != e && (b.current = e, g.current = e), () => {
-          b.current = null, g.current = null
+        ref: e => (null != e && (p.current = e, b.current = e), () => {
+          p.current = null, b.current = null
         }),
         children: (0, n.jsx)(l.P3F, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {

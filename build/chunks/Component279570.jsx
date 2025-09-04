@@ -85,9 +85,9 @@ function g(e) {
     disabled: O,
     className: v,
     style: I
-  } = e, S = h(e, ["role", "type", "size", "variant", "icon", "iconOpticalOffsetMargin", "focusProps", "pressed", "aria-label", "buttonRef", "disabled", "className", "style"]);
-  let T = i.useRef(null),
-    A = null != y ? y : T,
+  } = e, T = h(e, ["role", "type", "size", "variant", "icon", "iconOpticalOffsetMargin", "focusProps", "pressed", "aria-label", "buttonRef", "disabled", "className", "style"]);
+  let S = i.useRef(null),
+    A = null != y ? y : S,
     C = (0, r.jsx)(l.E, {
       icon: _,
       iconOpticalOffsetMargin: m,
@@ -107,7 +107,7 @@ function g(e) {
       "aria-label": b,
       disabled: O,
       ref: A
-    }, S), {
+    }, T), {
       children: (0, r.jsx)("div", {
         className: c.buttonChildrenWrapper,
         children: C

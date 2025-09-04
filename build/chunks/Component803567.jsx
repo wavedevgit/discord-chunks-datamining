@@ -26,8 +26,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk197571 = require("./197571.js");
 let Chunk775322 = require("./775322.js"),
   Chunk853453 = require("./853453.js"),
-  S = (0, Chunk313201.hQ)(),
-  T = {
+  T = (0, Chunk313201.hQ)(),
+  S = {
     page: Chunk981631.ZY5.USER_SETTINGS,
     section: Chunk981631.jXE.SETTINGS_VOICE_AND_VIDEO
   };
@@ -72,7 +72,7 @@ function C() {
     value: 0
   }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
     children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-      id: S,
+      id: T,
       tag: Chunk481060.RB0.H3,
       className: Chunk197571.marginBottom8,
       children: Chunk388032.intl.string(Chunk388032.t.t8QhiY)
@@ -85,7 +85,7 @@ function C() {
       children: [(0, Chunk951288.jsx)(Chunk755721.Gu, {
         options: Chunk738486,
         onChange: e => {
-          l.Z.setNoiseCancellation(2 === e.value, T), l.Z.setNoiseSuppression(1 === e.value, T)
+          l.Z.setNoiseCancellation(2 === e.value, S), l.Z.setNoiseSuppression(1 === e.value, S)
         },
         value: Chunk626135
       }), Chunk921801 && (0, Chunk951288.jsx)(Chunk481060.ToO, {

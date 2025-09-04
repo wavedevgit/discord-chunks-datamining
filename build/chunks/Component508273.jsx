@@ -25,8 +25,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk492681 = require("./492681.js");
 let I = 292,
-  S = 36,
-  T = 48;
+  T = 36,
+  S = 48;
 
 function A(e) {
   let {
@@ -50,7 +50,7 @@ function A(e) {
     L = i.useMemo(() => {
       var e;
       return A && (null == (e = f.current) ? true : e.clientHeight) != null ? {
-        height: p ? I : f.current.clientHeight + S + T,
+        height: p ? I : f.current.clientHeight + T + S,
         transition: P ? true : "height 0.2s ease"
       } : {}
     }, [p, A, P]);

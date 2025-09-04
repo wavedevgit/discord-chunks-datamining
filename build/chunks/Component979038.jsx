@@ -54,12 +54,12 @@ function R(e) {
     icon: () => (0, r.jsx)(p.Z, {}),
     onAction: R
   });
-  if ((0, l.Z)(n)) return (0, r.jsx)(S.Z, {
+  if ((0, l.Z)(n)) return (0, r.jsx)(T.Z, {
     activity: n,
     onAction: R
   });
   let M = D === C.l.MODAL || D === C.l.MODAL_V2;
-  if (!L && x && null != w && !M) return (0, r.jsx)(T.Z, {
+  if (!L && x && null != w && !M) return (0, r.jsx)(S.Z, {
     application: w,
     onAction: R,
     onClose: P,

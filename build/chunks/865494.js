@@ -20,10 +20,10 @@ module.exports = function(e) {
     v = true !== O;
   v && (O = r(O, y > 2 ? arguments[2] : true));
   var I = f(E),
-    S = 0;
+    T = 0;
   if (I && !(this === _ && s(I)))
-    for (n = b ? new this : [], m = (h = d(E, I)).next; !(p = i(m, h)).done; S++) g = v ? o(h, O, [p.value, S], true) : p.value, u(n, S, g);
+    for (n = b ? new this : [], m = (h = d(E, I)).next; !(p = i(m, h)).done; T++) g = v ? o(h, O, [p.value, T], true) : p.value, u(n, T, g);
   else
-    for (t = c(E), n = b ? new this(t) : _(t); t > S; S++) g = v ? O(E[S], S) : E[S], u(n, S, g);
-  return n.length = S, n
+    for (t = c(E), n = b ? new this(t) : _(t); t > T; T++) g = v ? O(E[T], T) : E[T], u(n, T, g);
+  return n.length = T, n
 }

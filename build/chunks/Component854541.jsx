@@ -65,7 +65,7 @@ function v(e, t) {
 
 function I(e, t) {
   if (null == e) return {};
-  var n, r, i = S(e, t);
+  var n, r, i = T(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -73,14 +73,14 @@ function I(e, t) {
   return i
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let T = Chunk647438.lazy(() => Promise.all([require.e("3115"), require.e("28102")]).then(require.bind(require, 534828))),
+let S = Chunk647438.lazy(() => Promise.all([require.e("3115"), require.e("28102")]).then(require.bind(require, 534828))),
   A = 7,
   C = () => Promise.resolve();
 
@@ -102,14 +102,14 @@ function R(e) {
     gradientStart: b,
     gradientEnd: O,
     gradientDegrees: I = 180
-  } = e, S = (0, s.JA)("color-".concat(t)), T = {};
+  } = e, T = (0, s.JA)("color-".concat(t)), S = {};
   if (p && null != b && null != O) {
     let e = (0, c.Rf)(b),
       t = (0, c.Rf)(O);
-    T = {
+    S = {
       background: "linear-gradient(".concat(I, "deg, ").concat(e, ", ").concat(t, ")")
     }
-  } else T = {
+  } else S = {
     backgroundColor: null != t ? (0, c.Rf)(t) : u.backgroundColor
   };
   let A = p ? b : t,
@@ -141,9 +141,9 @@ function R(e) {
         start: b,
         end: O
       } : t),
-      style: y({}, u, T),
-      "aria-label": null != g ? g : p ? "Gradient ".concat(b, "-").concat(O) : T.backgroundColor
-    }, S), {
+      style: y({}, u, S),
+      "aria-label": null != g ? g : p ? "Gradient ".concat(b, "-").concat(O) : S.backgroundColor
+    }, T), {
       children: [i ? (0, r.jsx)(_.vdY, {
         size: "custom",
         className: E.colorPickerDropper,
@@ -203,7 +203,7 @@ function D(e) {
     showEyeDropper: m,
     wrapperComponentType: b,
     className: O
-  } = e, I = (0, p.Z)(), S = N(t), C = null != S ? S : 0, R = (0, c.Rf)(C), P = (0, c.O)(C), [w, D] = i.useState({
+  } = e, I = (0, p.Z)(), T = N(t), C = null != T ? T : 0, R = (0, c.Rf)(C), P = (0, c.O)(C), [w, D] = i.useState({
     current: C,
     pending: {
       hex: R,
@@ -212,18 +212,18 @@ function D(e) {
     input: R
   });
   i.useEffect(() => {
-    if (null == S || S === w.current) return;
-    let e = (0, c.Rf)(S),
-      t = (0, c.O)(S);
+    if (null == T || T === w.current) return;
+    let e = (0, c.Rf)(T),
+      t = (0, c.O)(T);
     D({
-      current: S,
+      current: T,
       pending: {
         hex: e,
         hsl: t
       },
       input: e
     })
-  }, [S, w]), i.useEffect(() => s, [s]);
+  }, [T, w]), i.useEffect(() => s, [s]);
   let x = e => {
       let t = "#" === e[0] ? e : "#".concat(e);
       if (!(0, c.FX)(t)) return void D(e => v(y({}, e), {
@@ -257,7 +257,7 @@ function D(e) {
     }, k = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(i.Suspense, {
         fallback: null,
-        children: (0, r.jsx)(T, {
+        children: (0, r.jsx)(S, {
           onChange: j,
           onChangeComplete: e => {
             let {
@@ -314,7 +314,7 @@ function L(e) {
     renderGradientCustomButton: g,
     gradientDegrees: b,
     allowBlackCustomColor: O
-  } = e, S = e => (0, r.jsx)("div", {
+  } = e, T = e => (0, r.jsx)("div", {
     className: E.colorPickerRow,
     children: m ? e.map(e => (0, r.jsx)(R, {
       gradientStart: e.start,
@@ -333,7 +333,7 @@ function L(e) {
       disabled: d,
       isGradient: false
     }, e))
-  }), T = a.slice(0, a.length / 2), A = a.slice(a.length / 2, a.length), N = (0, l.ZP)({
+  }), S = a.slice(0, a.length / 2), A = a.slice(a.length / 2, a.length), N = (0, l.ZP)({
     id: "color-picker",
     isEnabled: true,
     scrollToStart: C,
@@ -379,7 +379,7 @@ function L(e) {
               disabled: d
             })
           }), (0, r.jsxs)("div", {
-            children: [S(T), S(A)]
+            children: [T(S), T(A)]
           })]
         }))
       }

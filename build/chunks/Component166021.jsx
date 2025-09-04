@@ -76,13 +76,13 @@ let h = 910,
       I = () => {
         g(e => e >= y - E ? 0 : e + 1)
       },
-      S = i.useCallback(e => ({
+      T = i.useCallback(e => ({
         x: (e - _) * 100
       }), [_]),
-      [T, A] = (0, l.bYB)(t.length, S);
+      [S, A] = (0, l.bYB)(t.length, T);
     return i.useEffect(() => {
-      A(S)
-    }, [A, S]), (0, r.jsx)("div", {
+      A(T)
+    }, [A, T]), (0, r.jsx)("div", {
       className: n,
       children: (0, r.jsxs)("div", {
         className: u.cardContainer,
@@ -98,7 +98,7 @@ let h = 910,
           })
         }), (0, r.jsx)("div", {
           className: u.cardInnerContainer,
-          children: T.map((e, n) => {
+          children: S.map((e, n) => {
             let {
               x: i
             } = e;

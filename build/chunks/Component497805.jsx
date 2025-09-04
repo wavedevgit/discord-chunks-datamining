@@ -73,16 +73,16 @@ async function E(e) {
       disableActionsForPreview: v = false
     } = e,
     I = p(e, ["userId", "section", "subsection", "guildId", "channelId", "showGuildProfile", "appContext", "customStatusPrompt", "disableActionsForPreview"]);
-  let S = l.default.getUser(a);
-  if (null == S) return;
-  let T = l.default.getCurrentUser();
+  let T = l.default.getUser(a);
   if (null == T) return;
+  let S = l.default.getCurrentUser();
+  if (null == S) return;
   let A = g(a, b ? h : true);
   m.add(await (0, i.ZDy)(async () => {
     let e = (await Promise.all([n.e("96253"), n.e("74449"), n.e("62880"), n.e("72164"), n.e("30355"), n.e("49979")]).then(n.bind(n, 866035))).default;
     return t => (0, r.jsx)(e, _({
-      user: S,
-      currentUser: T,
+      user: T,
+      currentUser: S,
       guildId: h,
       initialSection: o,
       initialSubsection: f,

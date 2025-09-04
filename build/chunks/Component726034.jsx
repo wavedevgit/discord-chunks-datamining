@@ -139,7 +139,7 @@ function K(e) {
 function z(e) {
   let {
     markAsDismissed: t
-  } = e, n = (0, S.m)(M.p9.TIER_2);
+  } = e, n = (0, T.m)(M.p9.TIER_2);
   return (0, r.jsxs)("div", {
     className: G.coachmarkHeaderContainer,
     children: [(0, r.jsxs)("div", {
@@ -274,7 +274,7 @@ function $(e) {
   let {
     onSaveTheme: t,
     canApply: n
-  } = e, i = (0, S.m)(M.p9.TIER_2);
+  } = e, i = (0, T.m)(M.p9.TIER_2);
   return (0, w.hf)(i, E.Z.CUSTOM_THEMES_EDITOR_COACHMARK), (0, r.jsxs)("div", {
     className: G.coachmarkFooterContainer,
     children: [(0, r.jsx)(Q, {
@@ -303,7 +303,7 @@ function ee(e) {
     onSaveTheme: t,
     canApply: n,
     metadata: i
-  } = e, a = (0, S.m)(M.p9.TIER_2);
+  } = e, a = (0, T.m)(M.p9.TIER_2);
   (0, w.hf)(a, E.Z.CUSTOM_THEMES_EDITOR);
   let o = () => {
     (0, w.Vb)(), (0, O.Q3)(l.z.CUSTOM_THEME_COACHMARK), (null == i ? true : i.from) === y.tE.SETTING ? (m.Z.open(), (0, y.Ll)()) : (null == i ? true : i.from) === y.tE.CLIENT_THEMES_EDITOR ? (0, y.XO)(y.wh.CLIENT_THEMES) : (0, y.Ll)()
@@ -347,7 +347,7 @@ function et(e) {
   }).enabled, _ = (0, R.jJ)(), m = i.useRef(false), {
     colors: v,
     chassisMixAmount: I,
-    gradientAngle: S,
+    gradientAngle: T,
     setColors: N,
     setChassisMixAmount: L,
     setGradientAngle: M
@@ -359,10 +359,10 @@ function et(e) {
       customUserThemeSettings: {
         colors: v,
         gradientColorStops: [],
-        gradientAngle: S,
+        gradientAngle: T,
         baseMix: I
       }
-    }), (0, w.u7)(v, I, S, Z, V), null == a || a(j.L.TAKE_ACTION), F || (0, O.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, y.Ll)(), (0, T.UD)()
+    }), (0, w.u7)(v, I, T, Z, V), null == a || a(j.L.TAKE_ACTION), F || (0, O.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, y.Ll)(), (0, S.UD)()
   }, Y = () => {
     _(R._m.RESET_BUTTON), (0, w.uf)()
   }, W = v.length > 0;
@@ -393,7 +393,7 @@ function et(e) {
             colors: v,
             setColors: N
           }), v.length > 1 && (0, r.jsx)(q, {
-            gradientAngle: S,
+            gradientAngle: T,
             setGradientAngle: M
           }), (0, r.jsx)(X, {
             chassisMixAmount: I,

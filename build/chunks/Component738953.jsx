@@ -196,12 +196,12 @@ function Z(e) {
               })]
             }), (0, r.jsxs)("div", {
               className: M.header,
-              children: [(0, r.jsx)(S.Z, {
+              children: [(0, r.jsx)(T.Z, {
                 user: n,
                 displayProfile: en,
                 guildId: G,
                 themeType: L.l.POPOUT
-              }), (0, r.jsx)(T.Z, {
+              }), (0, r.jsx)(S.Z, {
                 userId: n.id,
                 className: M.toast,
                 onClose: Y

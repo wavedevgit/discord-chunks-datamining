@@ -111,7 +111,7 @@ function es(e) {
     n = y.Z.useConfig({
       location: "UserSettingsAccessibility"
     }).enableShopTakeOver,
-    i = S.f.useExperiment({
+    i = T.f.useExperiment({
       location: "UserSettingsAccessibility"
     }).enabled,
     a = (0, D.Z)();

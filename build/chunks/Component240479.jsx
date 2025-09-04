@@ -49,12 +49,12 @@ function A(e) {
     color: l.zx.Colors.CUSTOM,
     onClick: n,
     textOptions: {
-      textOverride: S.intl.string(S.t.pj0XBA)
+      textOverride: T.intl.string(T.t.pj0XBA)
     }
   }) : a === y.y.JOIN_GUILD ? (0, r.jsx)(c.zxk, {
     variant: "primary",
     size: "sm",
-    text: S.intl.string(S.t.riu2R0),
+    text: T.intl.string(T.t.riu2R0),
     fullWidth: true,
     onClick: o
   }) : null
@@ -81,10 +81,10 @@ function C(e) {
     description: L
   } = (0, y.Z)(t, n, v, C), j = x === y.y.JOIN_GUILD, M = !E && w, k = i.useMemo(() => v ? d.JO.createFromGuildRecord(O) : null != C ? d.JO.createFromDiscoverableGuild(C) : true, [O, v, C]);
   return M ? (0, r.jsx)(_.SE, {}) : (0, r.jsxs)("div", {
-    className: T.infoContainer,
+    className: S.infoContainer,
     children: [(0, r.jsxs)(_.W_, {
       children: [(0, r.jsxs)("div", {
-        className: T.infoExpandedSoundContainer,
+        className: S.infoExpandedSoundContainer,
         children: [(0, r.jsx)(m.ZP, {
           buttonOverlay: h.Pb.NONE,
           sound: t,
@@ -96,14 +96,14 @@ function C(e) {
           children: L
         })]
       }), null != k && (0, r.jsxs)("div", {
-        className: T.infoExpandedGuildContainer,
+        className: S.infoExpandedGuildContainer,
         children: [(0, r.jsx)(o.xv, {
           variant: "eyebrow",
           color: "header-muted",
-          className: T.infoExpandedGuildTitle,
-          children: v ? S.intl.string(S.t.tGDabm) : S.intl.string(S.t.rnOmOT)
+          className: S.infoExpandedGuildTitle,
+          children: v ? T.intl.string(T.t.tGDabm) : T.intl.string(T.t.rnOmOT)
         }), (0, r.jsx)("div", {
-          className: T.infoExpandedGuildInfo,
+          className: S.infoExpandedGuildInfo,
           children: (0, r.jsx)(f.Oe, {
             expressionSourceGuild: k,
             hasJoinedExpressionSourceGuild: v,
@@ -118,7 +118,7 @@ function C(e) {
     }), (0, r.jsx)(c.IGR, {
       text: "BETA",
       color: a.Z.BG_BRAND,
-      className: T.betaBadge
+      className: S.betaBadge
     })]
   })
 }

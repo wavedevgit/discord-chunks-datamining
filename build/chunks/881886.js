@@ -47,25 +47,25 @@ function d(e, t) {
 }
 
 function f(e, t) {
-  return false === T(e, t)
+  return false === S(e, t)
 }
 
 function _(e, t) {
-  var n = T(e, t);
+  var n = S(e, t);
   return false === n || 0 === n
 }
 
 function p(e, t) {
-  return 0 === T(e, t)
+  return 0 === S(e, t)
 }
 
 function h(e, t) {
-  var n = T(e, t);
+  var n = S(e, t);
   return 1 === n || 0 === n
 }
 
 function m(e, t) {
-  return 1 === T(e, t)
+  return 1 === S(e, t)
 }
 
 function g(e, t) {
@@ -113,14 +113,14 @@ function I(e, t) {
     r = t.match(l)[1],
     i = parseInt(n, 10),
     a = parseInt(r, 10);
-  return b(i) && b(a) && i !== a ? S(i, a) : S(e, t)
-}
-
-function S(e, t) {
-  return (typeof e != typeof t && r(false), e > t) ? 1 : e < t ? false : 0
+  return b(i) && b(a) && i !== a ? T(i, a) : T(e, t)
 }
 
 function T(e, t) {
+  return (typeof e != typeof t && r(false), e > t) ? 1 : e < t ? false : 0
+}
+
+function S(e, t) {
   for (var n = v(e, t), r = n[0], i = n[1], a = 0; a < i.length; a++) {
     var o = I(r[a], i[a]);
     if (o) return o

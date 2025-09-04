@@ -100,7 +100,7 @@ function W(e) {
     if (null == t || n) return null;
     let e = t.items.find(e => e.type === l.Z.AVATAR_DECORATION);
     return null == e ? null : e
-  }, [t, n]), a = () => null == r ? (T.Z.addBreadcrumb({
+  }, [t, n]), a = () => null == r ? (S.Z.addBreadcrumb({
     message: "Error saving avatar decoration; it is null"
   }), Promise.reject()) : ((0, d.cV)(r), H());
   return [r, a]
@@ -117,17 +117,17 @@ function K(e) {
     decoration: p,
     onUseNow: h,
     preview: m
-  } = e, g = i.useRef(null), [b, y] = i.useState(null), O = i.useRef(new s.qA), v = (0, c.e7)([_.Z], () => _.Z.useReducedMotion), I = (0, c.e7)([S.default], () => S.default.getCurrentUser()), T = (null == (t = l.userStatus) ? true : t.claimedAt) != null, [A, N] = i.useState(true === m || T ? "claimed" : "loading");
+  } = e, g = i.useRef(null), [b, y] = i.useState(null), O = i.useRef(new s.qA), v = (0, c.e7)([_.Z], () => _.Z.useReducedMotion), I = (0, c.e7)([T.default], () => T.default.getCurrentUser()), S = (null == (t = l.userStatus) ? true : t.claimedAt) != null, [A, N] = i.useState(true === m || S ? "claimed" : "loading");
   i.useEffect(() => {
-    T || true === m || (0, C.QB)(l.id, R.y$.CROSS_PLATFORM, d).then(() => N("claimed")).catch(() => N("error"))
-  }, [l, d, T, m]);
+    S || true === m || (0, C.QB)(l.id, R.y$.CROSS_PLATFORM, d).then(() => N("claimed")).catch(() => N("error"))
+  }, [l, d, S, m]);
   let P = () => {
       N("applying"), h().finally(a)
     },
     w = true === m && null === p && (null == f ? true : f.skuId) !== "",
     D = null == p && true !== m,
     L = null == I || D || w || "loading" === A,
-    j = !v && !T && "claimed" === A;
+    j = !v && !S && "claimed" === A;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.O_, {
       ref: y,

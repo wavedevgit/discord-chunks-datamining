@@ -119,7 +119,7 @@ function Y(e) {
   } = (0, s.cj)([h.Z], () => ({
     isCurrentUserStreamingQuestApplication: null != A && null != z && H(Q, A, z, h.Z),
     isQuestInQuestBar: (null == J ? true : J.id) === (null == A ? true : A.id)
-  }), [z, A, Q, J]), et = null != A ? T.r.build(A.config) : null, en = null == et ? true : et.application.id, er = (0, s.e7)([d.ZP, h.Z], () => {
+  }), [z, A, Q, J]), et = null != A ? S.r.build(A.config) : null, en = null == et ? true : et.application.id, er = (0, s.e7)([d.ZP, h.Z], () => {
     let e = d.ZP.getRunningGames().map(e => e.id);
     if ((0, E.$H)(A) && e.includes(en)) returntrue;
     let t = null != z ? h.Z.findActivity(z.id, e => e.type !== j.IIU.CUSTOM_STATUS) : null;
@@ -196,7 +196,7 @@ function Y(e) {
         children: [eh && ei ? ev : (0, r.jsx)("img", {
           className: U.gameTile,
           alt: A.config.messages.gameTitle,
-          src: (0, S.fh)(A, S.eC.GAME_TILE, X).url
+          src: (0, T.fh)(A, T.eC.GAME_TILE, X).url
         }), (0, r.jsxs)("div", {
           children: [(0, r.jsxs)("div", {
             className: U.headingWithSubmenu,

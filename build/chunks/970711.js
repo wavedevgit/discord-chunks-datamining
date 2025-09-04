@@ -50,7 +50,7 @@ require.d(exports, {
   Z5: () => e2,
   Zk: () => K,
   Zs: () => X,
-  a9: () => eT,
+  a9: () => eS,
   aQ: () => ej,
   am: () => eW,
   d$: () => Q,
@@ -58,13 +58,13 @@ require.d(exports, {
   dJ: () => j,
   dN: () => eb,
   eD: () => eR,
-  eW: () => T,
+  eW: () => S,
   ej: () => eZ,
   ex: () => eP,
   fY: () => tl,
   fw: () => tr,
   h4: () => tm,
-  ht: () => eS,
+  ht: () => eT,
   iF: () => ep,
   iR: () => G,
   jm: () => eU,
@@ -89,7 +89,7 @@ require.d(exports, {
   qb: () => eg,
   qt: () => th,
   r3: () => eD,
-  rs: () => S,
+  rs: () => T,
   sB: () => e5,
   uX: () => ec,
   up: () => eH,
@@ -256,11 +256,11 @@ function I(e, t, n, i, a) {
   r.installLogCallback(e, t, n, i, a)
 }
 
-function S(e, t) {
+function T(e, t) {
   return r.rustMultiply(e, t)
 }
 
-function T() {
+function S() {
   return r.initLibdiscore()
 }
 
@@ -626,11 +626,11 @@ function eI(e, t) {
   }
 }
 
-function eS() {
+function eT() {
   return {}
 }
 
-function eT() {
+function eS() {
   return []
 }
 

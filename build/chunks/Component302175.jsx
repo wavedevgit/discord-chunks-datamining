@@ -82,7 +82,7 @@ function U(e) {
     onClose: a
   } = e, {
     analyticsLocations: u
-  } = (0, h.ZP)(), b = (0, v.g1)(t, "GuildPowerupMarketingPowerupCard"), y = n.skuId === c.A$, O = (0, A.ZP)(t, n).type !== N.A3.INACTIVE, T = (0, S.Z)(t), [L, M] = i.useState(false), [U, G] = i.useState(false), B = U, Z = i.useCallback(() => {
+  } = (0, h.ZP)(), b = (0, v.g1)(t, "GuildPowerupMarketingPowerupCard"), y = n.skuId === c.A$, O = (0, A.ZP)(t, n).type !== N.A3.INACTIVE, S = (0, T.Z)(t), [L, M] = i.useState(false), [U, G] = i.useState(false), B = U, Z = i.useCallback(() => {
     let e = E.Z.getGuild(t);
     null != e && (0, m.u)({
       analyticsLocation: {
@@ -151,7 +151,7 @@ function U(e) {
           color: d.zx.Colors.BRAND,
           className: x.button,
           children: w.intl.string(w.t["oPAx7+"])
-        }), T && (0, r.jsx)(d.zx, {
+        }), S && (0, r.jsx)(d.zx, {
           grow: true,
           onClick: F,
           color: d.zx.Colors.PRIMARY,
@@ -180,7 +180,7 @@ let G = 3,
     i.useEffect(() => {
       O.Z.shouldFetchCatalogForGuild(n.id) && (0, y.Sn)(n.id), O.Z.shouldFetchPowerupsForGuild(n.id) && (0, y.Fm)(n.id)
     }, [n.id]);
-    let o = (0, T.Z)(n.id),
+    let o = (0, S.Z)(n.id),
       s = (null != o ? o : []).slice(0, G);
     return 0 === s.length ? null : (0, r.jsxs)("div", {
       ref: t,

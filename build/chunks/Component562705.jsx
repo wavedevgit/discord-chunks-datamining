@@ -66,10 +66,10 @@ function v(e) {
     a(E.L.USER_DISMISS)
   }, [a]), v = m.vK[n], I = b.intl.formatToPlainString(b.t.ewkaVV, {
     timeMilestone: null == (t = (0, _.q)(v.id, v.tenureReqNumMonths)) ? true : t.toLocaleLowerCase()
-  }), S = {
+  }), T = {
     position: "bottom",
     align: "center"
-  }, T = [{
+  }, S = [{
     text: b.intl.string(b.t.RzWDqa),
     variant: "primary",
     onClick: y
@@ -78,7 +78,7 @@ function v(e) {
     targetElementRef: o,
     onRequestClose: O,
     shouldShow: l,
-    caretConfig: S,
+    caretConfig: T,
     graphic: null != p ? {
       type: "image",
       src: p,
@@ -87,6 +87,6 @@ function v(e) {
     size: "lg",
     title: b.intl.string(b.t.VoDxsb),
     body: I,
-    actions: T
+    actions: S
   })
 }

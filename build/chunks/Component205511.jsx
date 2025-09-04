@@ -34,7 +34,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,7 +59,7 @@ function T(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -82,8 +82,8 @@ function R(e) {
     useReducedMotion: n
   }), b = (0, f.O5)(), y = (0, _.aM)(), {
     errorHints: I,
-    startingConsoleQuest: S,
-    startConsoleQuest: T
+    startingConsoleQuest: T,
+    startConsoleQuest: S
   } = (0, m.GI)({
     questId: t.id,
     beforeRequest: () => {
@@ -166,14 +166,14 @@ function R(e) {
         children: A
       }), (0, r.jsx)(c.P3F, {
         className: o()(v.microphoneUnitRefreshIconWrapper, {
-          [v.disabled]: S
+          [v.disabled]: T
         }),
-        onClick: () => T(),
+        onClick: () => S(),
         children: u.render()
       })]
     }), (0, r.jsxs)("div", {
       className: o()({
-        [v.opacity_50]: S
+        [v.opacity_50]: T
       }),
       children: [R(), P()]
     })]
@@ -196,7 +196,7 @@ let P = function(e) {
       c = (null == (e = t.userStatus) ? true : e.completedAt) != null;
     return {
       steps: [{
-        renderContent: () => (0, r.jsx)(b.Q, A(S({}, o), {
+        renderContent: () => (0, r.jsx)(b.Q, A(T({}, o), {
           quest: t,
           sourceQuestContent: g.jn.QUEST_BAR_V2
         })),

@@ -72,15 +72,15 @@ function O(e) {
     returnRef: O,
     role: v = "dialog",
     "aria-label": I,
-    onClose: S,
-    contentOutsideContainer: T,
+    onClose: T,
+    contentOutsideContainer: S,
     trackingProps: A,
     children: C
   } = e, N = i.useId(), R = i.useMemo(() => ({
     id: N,
     headingId: "heading-".concat(N),
-    onClose: S
-  }), [N, S]), P = 0 === n || 1 === n, {
+    onClose: T
+  }), [N, T]), P = 0 === n || 1 === n, {
     reducedMotion: w
   } = i.useContext(d.S), D = P || w.enabled || "subtle" === a ? "scale(1)" : "scale(0.9)", x = (0, u.q)({
     opacity: +!!P,
@@ -104,7 +104,7 @@ function O(e) {
           className: o()(h.outerContainer, {
             [h.fullScreenOnMobile]: y
           }),
-          children: [T, (0, r.jsx)(s.animated.div, {
+          children: [S, (0, r.jsx)(s.animated.div, {
             "data-mana-component": "modal",
             className: o()(h.container, h["size-".concat(m)], h["padding-size-".concat(E)]),
             style: x,

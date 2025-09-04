@@ -124,7 +124,7 @@ function F(e) {
     }), true;
     {
       let t = b.default.getSessionId();
-      return n === b.default.getId() && a !== t && null != S.Z.getChannelId() ? e : U(n, r) || e
+      return n === b.default.getId() && a !== t && null != T.Z.getChannelId() ? e : U(n, r) || e
     }
   }, false)
 }

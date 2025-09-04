@@ -73,8 +73,8 @@ let b = {
       children: E,
       reverse: O = false,
       shape: v = b.BOX,
-      checkboxColor: S
-    } = e, T = i.useCallback(e => {
+      checkboxColor: T
+    } = e, S = i.useCallback(e => {
       null == d || d(e, e.currentTarget.checked)
     }, [d]), A = null != E ? (0, r.jsx)("div", {
       className: o()(p.label, t ? p.labelDisabled : p.labelClickable, O ? p.labelReversed : p.labelForward),
@@ -94,7 +94,7 @@ let b = {
           className: o()(g, N),
           type: "checkbox",
           onClick: h,
-          onChange: t || n ? _.dG4 : T,
+          onChange: t || n ? _.dG4 : S,
           checked: s,
           style: {
             width: l,
@@ -105,7 +105,7 @@ let b = {
         value: s,
         size: l,
         shape: v,
-        checkboxColor: S,
+        checkboxColor: T,
         disabled: t
       }), O ? null : A]
     })

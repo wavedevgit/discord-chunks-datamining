@@ -139,7 +139,7 @@ let O = 200,
     }
   };
 
-function S(e) {
+function T(e) {
   var t, n;
   if (__OVERLAY__) returnfalse;
   let {
@@ -149,7 +149,7 @@ function S(e) {
   });
   if (r) returntrue;
   let i = null != (t = f.Z.getFeedbackConfig(e)) ? t : I[e],
-    a = [A, T],
+    a = [A, S],
     {
       doGroupEligibilityCheck: o
     } = (0, h.T)({
@@ -160,7 +160,7 @@ function S(e) {
   return a.every(e => e(i)) && s.every(e => e(i))
 }
 
-function T(e) {
+function S(e) {
   let {
     persistToBackend: t
   } = (0, _.O)({
@@ -251,7 +251,7 @@ function w(e) {
 }
 class D extends Chunk147913.Z {
   possiblyShowFeedbackModal(e, t, n) {
-    if (!S(e) || null != this.feedbackTypeToShow && m.b5[this.feedbackTypeToShow] < m.b5[e]) {
+    if (!T(e) || null != this.feedbackTypeToShow && m.b5[this.feedbackTypeToShow] < m.b5[e]) {
       null == n || n();
       return
     }

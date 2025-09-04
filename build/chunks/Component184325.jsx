@@ -103,7 +103,7 @@ function U(e) {
   } = (0, c.ZP)(l.Z.BADGE), {
     context: B,
     trackUserProfileAction: Z
-  } = (0, v.KZ)(), F = E.default.getCurrentUser(), V = (0, y.yd)(null == F ? true : F.premiumType, R.p9.TIER_2), H = (0, T.Of)(null != (t = null == F ? true : F.id) ? t : null), Y = (0, S.Z)(H).some(e => e.id === m.l.ORB_PROFILE_BADGE);
+  } = (0, v.KZ)(), F = E.default.getCurrentUser(), V = (0, y.yd)(null == F ? true : F.premiumType, R.p9.TIER_2), H = (0, S.Of)(null != (t = null == F ? true : F.id) ? t : null), Y = (0, T.Z)(H).some(e => e.id === m.l.ORB_PROFILE_BADGE);
   return (0, r.jsx)("div", {
     className: a()(D.container, i),
     "aria-label": w.intl.string(w.t.VWV0y8),
@@ -155,7 +155,7 @@ function U(e) {
           if (null != n) return null == x || x(), n(t)
         },
         v = () => {
-          e.id === S.i && b.default.track(C.rMx.QUEST_CONTENT_VIEWED, M(L({}, (0, _.mH)(p.jn.QUEST_BADGE)), {
+          e.id === T.i && b.default.track(C.rMx.QUEST_CONTENT_VIEWED, M(L({}, (0, _.mH)(p.jn.QUEST_BADGE)), {
             is_targeted: false
           })), Z({
             action: "HOVER_BADGE"
@@ -164,13 +164,13 @@ function U(e) {
             analyticsLocations: G
           }, B))
         },
-        T = k({
+        S = k({
           badge: e,
           tieredTenureBadge: E && e.id !== P.a ? c : true,
           currentUserOwnsOrbBadge: Y
         });
       return (0, r.jsx)(o.DY3, {
-        text: T,
+        text: S,
         "aria-label": e.description,
         forceOpen: null != j && j(e.id),
         delay: A.vB,

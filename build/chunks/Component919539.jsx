@@ -27,11 +27,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function T(e) {
+function S(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, T = (0, h.c_)(), A = (0, _.q)(), C = p.h2.useSetting().includes(n), N = p.mX.useSetting(), R = p.zA.useSetting().includes(n), P = i.useCallback(e => {
+  } = e, S = (0, h.c_)(), A = (0, _.q)(), C = p.h2.useSetting().includes(n), N = p.mX.useSetting(), R = p.zA.useSetting().includes(n), P = i.useCallback(e => {
     let r = (0, d.gl)();
     e ? r.delete(n) : r.add(n), p.zA.updateSetting(Array.from(r)), c.default.track(I.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: b.Y.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
@@ -62,10 +62,10 @@ function T(e) {
         p.mX.updateSetting(e), w(e, false)
       };
     (0, E.V)({
-      header: S.intl.string(S.t.yAfu1t),
-      body: S.intl.string(S.t["Ry2z7+"]),
-      confirmText: S.intl.string(S.t.gm1Ven),
-      cancelText: S.intl.string(S.t.p89ACg),
+      header: T.intl.string(T.t.yAfu1t),
+      body: T.intl.string(T.t["Ry2z7+"]),
+      confirmText: T.intl.string(T.t.gm1Ven),
+      cancelText: T.intl.string(T.t.p89ACg),
       confirmButtonColor: a.zx.Colors.BRAND,
       onConfirm: n,
       onCancel: t
@@ -75,21 +75,21 @@ function T(e) {
     setting: O.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_MESSAGE_REQUESTS_V2,
     scrollPosition: y.FY.MESSAGE_REQUESTS_V2,
     children: n === v.T ? (0, r.jsx)(g.Z, {
-      title: S.intl.string(S.t["3o2ojo"]),
+      title: T.intl.string(T.t["3o2ojo"]),
       value: !A && !N,
       onChange: e => D(e, false),
       disabled: A,
-      note: S.intl.format(S.t.wkm9a2, {
+      note: T.intl.format(T.t.wkm9a2, {
         helpdeskArticle: u.Z.getArticleURL(I.BhN.MESSAGE_REQUESTS)
       })
     }) : (0, r.jsx)(g.Z, {
-      title: S.intl.string(S.t["3o2ojo"]),
+      title: T.intl.string(T.t["3o2ojo"]),
       value: !R,
       onChange: e => D(e, true),
       disabled: C,
-      note: T ? S.intl.format(S.t.WpnWLS, {
+      note: S ? T.intl.format(T.t.WpnWLS, {
         helpdeskArticle: u.Z.getArticleURL(I.BhN.MESSAGE_REQUESTS)
-      }) : S.intl.format(S.t.wkm9a2, {
+      }) : T.intl.format(T.t.wkm9a2, {
         helpdeskArticle: u.Z.getArticleURL(I.BhN.MESSAGE_REQUESTS)
       })
     })
@@ -101,7 +101,7 @@ function A(e) {
     ingress: t = y.f4.USER_SETTINGS_PRIVACY_SAFETY,
     guildId: n
   } = e, i = (0, h.is)();
-  return (0, r.jsx)(T, {
+  return (0, r.jsx)(S, {
     ingress: t,
     guildId: null != n ? n : i
   })

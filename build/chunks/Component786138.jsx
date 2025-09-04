@@ -39,7 +39,7 @@ function b(e) {
     return {
       desktopSourceId: null == t ? true : t.id
     }
-  }), S = (0, a.e7)([u.Z], () => u.Z.getState().soundshareEnabled), T = d.Z.supports(g.AN.DESKTOP_CAPTURE_APPLICATIONS), A = (0, a.e7)([d.Z], () => d.Z.supports(g.AN.SOUNDSHARE)), C = (0, a.e7)([d.Z], () => d.Z.supportsScreenSoundshare()), N = (0, p.Z)(t, v), R = (0, _.Z)(t, v, m.Vq), P = null != I && A && (!I.startsWith("screen") || C), w = (0, a.e7)([d.Z], () => d.Z.getUseSystemScreensharePicker() && (0, f.isLinux)()), D = i.useCallback(() => {
+  }), T = (0, a.e7)([u.Z], () => u.Z.getState().soundshareEnabled), S = d.Z.supports(g.AN.DESKTOP_CAPTURE_APPLICATIONS), A = (0, a.e7)([d.Z], () => d.Z.supports(g.AN.SOUNDSHARE)), C = (0, a.e7)([d.Z], () => d.Z.supportsScreenSoundshare()), N = (0, p.Z)(t, v), R = (0, _.Z)(t, v, m.Vq), P = null != I && A && (!I.startsWith("screen") || C), w = (0, a.e7)([d.Z], () => d.Z.getUseSystemScreensharePicker() && (0, f.isLinux)()), D = i.useCallback(() => {
     (null == I ? true : I.startsWith("prepicked:")) ? d.Z.getMediaEngine().eachConnection(e => {
       e.context === g.Yn.STREAM && e.presentDesktopSourcePicker("window")
     }): n()
@@ -58,14 +58,14 @@ function b(e) {
     };
     null != I && (r.desktopSettings = {
       sourceId: I,
-      sound: !S
+      sound: !T
     }), (0, l.Rc)({
       preset: e,
       resolution: t,
       frameRate: n,
-      soundshareEnabled: !S
+      soundshareEnabled: !T
     }), s.Z.setGoLiveSource(r)
-  }, [I, S]);
+  }, [I, T]);
   if (null == t) return (0, r.jsx)(o.sNh, {
     id: "share-your-screen",
     label: E.intl.string(E.t.fjBNo6),
@@ -80,10 +80,10 @@ function b(e) {
     j = P ? (0, r.jsx)(o.S89, {
       id: "stream-settings-audio-enable",
       label: O ? E.intl.string(E.t.af2Tw8) : E.intl.string(E.t.ZJEHt7),
-      checked: S,
+      checked: T,
       action: x
     }) : null,
-    M = !T || y || w ? null : (0, r.jsx)(o.sNh, {
+    M = !S || y || w ? null : (0, r.jsx)(o.sNh, {
       id: "change-windows",
       label: O ? E.intl.string(E.t.eAktHh) : E.intl.string(E.t.qntSam),
       icon: o.hGI,

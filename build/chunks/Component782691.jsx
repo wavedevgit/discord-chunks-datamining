@@ -56,12 +56,12 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = {
+let S = {
     [Chunk489495.cq.THUMBNAIL]: null,
     [Chunk489495.cq.STATIC]: null,
     [Chunk489495.cq.REDUCED_MOTION]: null
@@ -72,7 +72,7 @@ let T = {
       effect: t
     } = e, {
       upsertConfig: n
-    } = (0, h.n6)(), a = (0, s.e7)([_.default], () => _.default.getCurrentUser()), [O, I] = i.useState(true), C = i.useRef(null), [N, R] = i.useState(false), [P, w] = i.useState(false), [D, x] = i.useState([]), [L, j] = i.useState(T), M = i.useRef([]), [k, U] = i.useState(t.name), G = k.toLowerCase().replace(/\s+/g, "_"), B = i.useMemo(() => ({
+    } = (0, h.n6)(), a = (0, s.e7)([_.default], () => _.default.getCurrentUser()), [O, I] = i.useState(true), C = i.useRef(null), [N, R] = i.useState(false), [P, w] = i.useState(false), [D, x] = i.useState([]), [L, j] = i.useState(S), M = i.useRef([]), [k, U] = i.useState(t.name), G = k.toLowerCase().replace(/\s+/g, "_"), B = i.useMemo(() => ({
       id: A,
       skuId: A,
       title: A,
@@ -88,7 +88,7 @@ let T = {
     }, F = (e, t) => {
       let n = Z(t);
       null != n && (0, m.i0)(n, t => {
-        j(r => S(v({}, r), {
+        j(r => T(v({}, r), {
           [e]: (0, m.z)(t, n)
         }))
       })
@@ -113,14 +113,14 @@ let T = {
         })
       })
     }, Y = () => {
-      x([]), j(T)
+      x([]), j(S)
     }, W = e => {
-      j(t => S(v({}, t), {
+      j(t => T(v({}, t), {
         [e]: null
       }))
-    }, K = () => JSON.stringify(S(v({}, t), {
+    }, K = () => JSON.stringify(T(v({}, t), {
       name: k,
-      config: S(v({}, t.config), {
+      config: T(v({}, t.config), {
         effects: D,
         stillFrames: L
       })
@@ -140,7 +140,7 @@ let T = {
         let [t, n] = e;
         if (null != n) {
           let e = (0, m.$j)(n.base64);
-          n.src = e, M.current.push(e), j(e => S(v({}, e), {
+          n.src = e, M.current.push(e), j(e => T(v({}, e), {
             [t]: n
           }))
         }

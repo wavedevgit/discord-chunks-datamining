@@ -125,8 +125,8 @@ let eE = new Chunk710845.Z("AutocompleteUtils"),
   eO = 5,
   ev = 3,
   eI = 1,
-  eS = 1,
-  eT = 3,
+  eT = 1,
+  eS = 3,
   eA = 5,
   eC = 3,
   eN = 11,
@@ -234,7 +234,7 @@ function eq(e) {
     boosters: s
   } = e, l = q.default.getUsers(), c = z.Z.getGuildId(), u = t.toLocaleLowerCase(), d = (0, ea.Fv)(u), _ = [], p = [], h = n.length, m = 0, g = 0;
   for (; m < h;) {
-    var E, b, y, O, v, I, S, T, A;
+    var E, b, y, O, v, I, T, S, A;
     let e, r, f = n[m];
     f instanceof j.Z ? (r = f, e = null == (b = B.ZP.getNick(c, r.id)) ? true : b.toLocaleLowerCase()) : (e = null == (y = f.nick) ? true : y.toLocaleLowerCase(), r = l[f.userId]);
     let h = null == (E = eo.ZP.getGlobalName(r)) ? true : E.toLocaleLowerCase();
@@ -257,12 +257,12 @@ function eq(e) {
         record: r,
         score: eV(eI, null == s ? true : s[r.id]),
         comparator: null != (I = null != h ? h : e) ? I : n,
-        sortable: null != (S = null != m ? m : c) ? S : i
+        sortable: null != (T = null != m ? m : c) ? T : i
       }) : g < ej && (a()(u, i) || a()(d, l) || null != c && a()(u, c) || null != f && a()(d, f) || null != m && a()(u, m) || null != E && a()(d, E)) && (p.push({
         type: el.h8.USER,
         record: r,
         score: eV(eI, null == s ? true : s[r.id]),
-        comparator: null != (T = null != h ? h : e) ? T : n,
+        comparator: null != (S = null != h ? h : e) ? S : n,
         sortable: null != (A = null != m ? m : c) ? A : i
       }), g += 1)
     }
@@ -558,7 +558,7 @@ let e8 = (0, Chunk251625.oH)((e, t, n) => {
             }
             c = Math.min(ey - eI, c)
           }
-          0 !== c && !(t.length > 1) && (1 !== t.length || t[0].isFullMatch || s) && (e$(l, e.type) && (c = Math.max(c - eS, eI / 2)), e.isThread() && (e.isActiveThread() || (c -= eT), w.Z.hasJoined(e.id) || (c -= eA)), c = Math.min(c + Math.min(null != (O = k.Z.getScoreWithoutFetchingLatest(e.id)) ? O : 0 / y, 1) * eC, c >= ey ? eb : ey), b.push({
+          0 !== c && !(t.length > 1) && (1 !== t.length || t[0].isFullMatch || s) && (e$(l, e.type) && (c = Math.max(c - eT, eI / 2)), e.isThread() && (e.isActiveThread() || (c -= eS), w.Z.hasJoined(e.id) || (c -= eA)), c = Math.min(c + Math.min(null != (O = k.Z.getScoreWithoutFetchingLatest(e.id)) ? O : 0 / y, 1) * eC, c >= ey ? eb : ey), b.push({
             type: (0, x.bw)(e.type) ? el.h8.VOICE_CHANNEL : el.h8.TEXT_CHANNEL,
             record: e,
             score: eV(c, d[e.id]),
@@ -1019,11 +1019,11 @@ let e8 = (0, Chunk251625.oH)((e, t, n) => {
     },
     querySoundmoji(e, t) {
       let n = q.default.getCurrentUser();
-      S.Z.isFetching() || S.Z.hasFetchedAllSounds() || (0, I.w)(), D.DZ.loadIfNecessary();
-      let r = Array.from(S.Z.getSounds().values()).reduce((e, n) => (n.forEach(n => {
+      T.Z.isFetching() || T.Z.hasFetchedAllSounds() || (0, I.w)(), D.DZ.loadIfNecessary();
+      let r = Array.from(T.Z.getSounds().values()).reduce((e, n) => (n.forEach(n => {
         (0, v.Z)(n, null == t ? true : t.guild_id, null == t ? true : t.id) && e.push(n)
       }), e), []);
-      return (0, T.cK)(e, r, n, t)
+      return (0, S.cK)(e, r, n, t)
     },
     queryGames(e) {
       let t = g.ZP.getRunningVerifiedApplicationIds();

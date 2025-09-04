@@ -2,19 +2,19 @@
 /** chunk id: 110560, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  enrollAndStartVideoQuestWithErrorHandling: () => $,
-  loadVideoQuestModal: () => z,
-  maybeShowSurveyForQuest: () => K,
-  navigateToQuestHome: () => Y,
-  openAppWithQuest: () => Q,
-  openDisclosureModal: () => H,
-  openPushToPhoneModal: () => J,
-  openQuestInGameRewardModal: () => Z,
-  openQuestMinorEnrollmentBlockModal: () => V,
-  openQuestOrbsRewardModal: () => F,
-  openQuestsNitroRewardModal: () => B,
-  openQuestsRewardCodeModal: () => G,
-  openVideoQuestModal: () => q
+  enrollAndStartVideoQuestWithErrorHandling: () => ee,
+  loadVideoQuestModal: () => q,
+  maybeShowSurveyForQuest: () => z,
+  navigateToQuestHome: () => W,
+  openAppWithQuest: () => J,
+  openDisclosureModal: () => Y,
+  openPushToPhoneModal: () => $,
+  openQuestInGameRewardModal: () => F,
+  openQuestMinorEnrollmentBlockModal: () => H,
+  openQuestOrbsRewardModal: () => V,
+  openQuestsNitroRewardModal: () => Z,
+  openQuestsRewardCodeModal: () => B,
+  openVideoQuestModal: () => X
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -36,6 +36,7 @@ var Chunk772848 = require("./772848.js"),
   Chunk569984 = require("./569984.js"),
   Chunk497505 = require("./497505.js"),
   Chunk184299 = require("./184299.js"),
+  Chunk937797 = require("./937797.js"),
   Chunk530691 = require("./530691.js"),
   Chunk66340 = require("./66340.js"),
   Chunk862847 = require("./862847.js"),
@@ -48,7 +49,7 @@ var Chunk772848 = require("./772848.js"),
   Chunk49898 = require("./49898.js"),
   Chunk388032 = require("./388032.jsx");
 
-function x(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -57,20 +58,20 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      L(e, t, n[t])
     })
   }
   return e
 }
 
-function j(e, t) {
+function M(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -81,15 +82,15 @@ function j(e, t) {
   return n
 }
 
-function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
+function k(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = "in-app",
-  U = "Discord Widget";
+let U = "in-app",
+  G = "Discord Widget";
 
-function G(e) {
+function B(e) {
   let {
     questId: t,
     questContent: i,
@@ -102,7 +103,7 @@ function G(e) {
     let {
       default: e
     } = await n.e("61624").then(n.bind(n, 985866));
-    return n => (0, r.jsx)(e, M(L({}, n), {
+    return n => (0, r.jsx)(e, k(j({}, n), {
       questId: t,
       questContentPosition: a,
       questContent: i,
@@ -113,25 +114,25 @@ function G(e) {
   })
 }
 
-function B(e, t) {
+function Z(e, t) {
   var i;
   (null == (i = e.userStatus) ? true : i.claimedAt) == null ? (0, s.ZDy)(async () => {
     let {
       default: i
     } = await n.e("838").then(n.bind(n, 824393));
-    return n => (0, r.jsx)(i, M(L({}, n), {
+    return n => (0, r.jsx)(i, k(j({}, n), {
       quest: e,
       location: t
     }))
   }) : (0, d.$)()
 }
 
-function Z(e, t, i) {
+function F(e, t, i) {
   (0, s.ZDy)(async () => {
     let {
       default: a
     } = await n.e("88938").then(n.bind(n, 390238));
-    return n => (0, r.jsx)(a, M(L({}, n), {
+    return n => (0, r.jsx)(a, k(j({}, n), {
       quest: e,
       location: t,
       sourceQuestContent: i
@@ -139,24 +140,24 @@ function Z(e, t, i) {
   })
 }
 
-function F(e, t) {
+function V(e, t) {
   (0, s.ZDy)(async () => {
     let {
       default: i
     } = await n.e("20565").then(n.bind(n, 383294));
-    return n => (0, r.jsx)(i, M(L({}, n), {
+    return n => (0, r.jsx)(i, k(j({}, n), {
       quest: e,
       location: t
     }))
   })
 }
 
-function V(e, t, i) {
+function H(e, t, i) {
   (0, s.ZDy)(async () => {
     let {
       default: a
     } = await n.e("58641").then(n.bind(n, 828664));
-    return n => (0, r.jsx)(a, M(L({}, n), {
+    return n => (0, r.jsx)(a, k(j({}, n), {
       quest: e,
       location: t,
       sourceQuestContent: i
@@ -164,7 +165,7 @@ function V(e, t, i) {
   })
 }
 
-function H(e, t) {
+function Y(e, t) {
   (0, m._3)({
     questId: e.id,
     questContent: t.content,
@@ -176,51 +177,58 @@ function H(e, t) {
     let {
       default: i
     } = await n.e("4266").then(n.bind(n, 316210));
-    return n => (0, r.jsx)(i, M(L({}, n), {
+    return n => (0, r.jsx)(i, k(j({}, n), {
       questContent: t.content,
       quest: e
     }))
   })
 }
 
-function Y() {
+function W() {
   let {
     fromContent: e,
-    questId: t
+    questId: t,
+    forceDiscoveryQuestHomeRoute: n = false
   } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
   (0, Chunk150560.Z.getState().setUtmCurrentContext)({
-    utmSourceCurrent: U,
-    utmMediumCurrent: k,
+    utmSourceCurrent: G,
+    utmMediumCurrent: U,
     utmCampaignCurrent: exports,
     utmContentCurrent: Object.keys(Chunk497505.jn).find(t => y.jn[t] === e)
   });
-  let n = null != exports ? "#".concat(exports) : "";
-  Chunk836768.Z.setState({
+  let r = null != exports ? "#".concat(exports) : "",
+    {
+      enabled: i
+    } = Chunk937797.m8.getConfig({
+      location: Chunk46140.dr.NAVIGATE_TO_QUEST_HOME_UTIL
+    }),
+    a = Chunk772848 && !require;
+  Chunk271579 || Chunk836768.Z.setState({
     selectedTab: Chunk49898.GlobalDiscoveryTab.QUESTS
-  }), (0, Chunk37234.xf)(), (0, Chunk703656.uL)(Chunk981631.Z5c.QUEST_HOME + require)
+  }), (0, Chunk37234.xf)(), (0, Chunk703656.uL)((Chunk271579 ? Chunk981631.Z5c.QUEST_HOME_V2 : Chunk981631.Z5c.QUEST_HOME) + Chunk951288)
 }
-let W = .2;
+let K = .2;
 
-function K(e) {
-  let t = (0, T.T)({
+function z(e) {
+  let t = (0, A.T)({
       quest: e
     }),
     n = {
-      location: R.dr.QUESTS_BAR
+      location: P.dr.QUESTS_BAR
     };
-  if (!(0, S.j)(n) || Math.random() > W) return;
-  let r = (0, A.Z)(e);
-  t.log("Showing survey ".concat(r.id)), (0, C.C)({
+  if (!(0, S.j)(n) || Math.random() > K) return;
+  let r = (0, C.Z)(e);
+  t.log("Showing survey ".concat(r.id)), (0, N.C)({
     questId: e.id,
     survey: r
   })
 }
 
-function z() {
+function q() {
   return Promise.all([require.e("66816"), require.e("32249")]).then(require.bind(require, 536687))
 }
 
-function q(e) {
+function X(e) {
   var t;
   let {
     quest: n,
@@ -231,25 +239,25 @@ function q(e) {
     skipEnrollmentCheck: u = false
   } = e;
   if ((0, g.HJ)(n)) {
-    let e = n.config.features.includes(R.S7.MOBILE_ONLY_QUEST_PUSH_TO_MOBILE),
+    let e = n.config.features.includes(P.S7.MOBILE_ONLY_QUEST_PUSH_TO_MOBILE),
       {
         enabled: t
-      } = v.S.getCurrentConfig({
-        location: R.dr.VIDEO_MODAL
+      } = I.S.getCurrentConfig({
+        location: P.dr.VIDEO_MODAL
       }, {
         autoTrackExposure: e
       });
-    if (t && e) return void J(n)
+    if (t && e) return void $(n)
   }
   let d = (0, i.Z)();
-  if ((0, I.D)(R.dr.VIDEO_MODAL) && !u && (null == (t = n.userStatus) ? true : t.enrolledAt) == null && !(0, g.zi)(n)) {
+  if ((0, T.D)(P.dr.VIDEO_MODAL) && !u && (null == (t = n.userStatus) ? true : t.enrolledAt) == null && !(0, g.zi)(n)) {
     b.Z.isEnrolling(n.id) || (0, E.AH)(n.id, {
       questContent: a,
       questContentCTA: m.jZ.ACCEPT_QUEST,
       sourceQuestContent: o
     });
     let e = O.ZP.getState().getVideoProgress(n.id);
-    null != e && e.timestampSec > 1 && ((0, E.lx)(n.id), p.default.track(P.rMx.QUEST_VIDEO_ENROLLMENT_RETRY_ATTEMPTED, {
+    null != e && e.timestampSec > 1 && ((0, E.lx)(n.id), p.default.track(w.rMx.QUEST_VIDEO_ENROLLMENT_RETRY_ATTEMPTED, {
       quest_id: n.id,
       source_quest_content: (0, m._b)(o),
       source_quest_content_cta: l,
@@ -258,8 +266,8 @@ function q(e) {
   }(0, s.ZDy)(async () => {
     let {
       default: e
-    } = await z();
-    return t => (0, r.jsx)(e, M(L({}, t), {
+    } = await q();
+    return t => (0, r.jsx)(e, k(j({}, t), {
       openStartClockTime: performance.now(),
       questId: n.id,
       autoplay: c,
@@ -277,7 +285,7 @@ function q(e) {
   })
 }
 
-function X(e) {
+function Q(e) {
   var t;
   let n = null == (t = platform.os) ? true : t.family,
     r = "quest";
@@ -294,33 +302,40 @@ function X(e) {
   return "discord://"
 }
 
-function Q(e) {
-  let t = X(e),
+function J(e) {
+  let t = Q(e),
     n = (0, a.zS)(t);
-  null != n && p.default.track(P.rMx.DEEP_LINK_CLICKED, {
+  null != n && p.default.track(w.rMx.DEEP_LINK_CLICKED, {
     fingerprint: (0, o.K)(n.fingerprint),
     attempt_id: n.attemptId,
     source: n.utmSource
   }), h.Z.launch(t, t => {
-    t || (0, f.dL)({
-      pathname: P.Z5c.QUEST_HOME,
-      hash: e
-    })
+    if (!t) {
+      let {
+        enabled: t
+      } = v.m8.getConfig({
+        location: P.dr.QUEST_DEEP_LINK_UTIL
+      });
+      (0, f.dL)({
+        pathname: t ? w.Z5c.QUEST_HOME_V2 : w.Z5c.QUEST_HOME,
+        hash: e
+      })
+    }
   })
 }
 
-function J(e) {
+function $(e) {
   (0, s.ZDy)(async () => {
     let {
       default: t
     } = await Promise.all([n.e("25520"), n.e("33628")]).then(n.bind(n, 570387));
-    return n => (0, r.jsx)(t, M(L({}, n), {
+    return n => (0, r.jsx)(t, k(j({}, n), {
       questId: e.id,
       questName: e.config.messages.questName
     }))
   })
 }
-async function $(e, t) {
+async function ee(e, t) {
   let {
     type: n
   } = await (0, E.AH)(e.id, {
@@ -332,7 +347,7 @@ async function $(e, t) {
   });
   switch (n) {
     case E.wF.SUCCESS:
-      q({
+      X({
         quest: e,
         questContent: t.questContent,
         sourceQuestContent: t.sourceQuestContent,
@@ -341,14 +356,14 @@ async function $(e, t) {
       break;
     case E.wF.CAPTCHA_FAILED:
       l.Z.show({
-        title: D.intl.string(D.t["/CidxM"]),
-        body: D.intl.string(D.t.HQdHg4)
+        title: x.intl.string(x.t["/CidxM"]),
+        body: x.intl.string(x.t.HQdHg4)
       });
       break;
     case E.wF.UNKNOWN_ERROR:
       l.Z.show({
-        title: D.intl.string(D.t.R0RpRU),
-        body: D.intl.string(D.t.OXD41N)
+        title: x.intl.string(x.t.R0RpRU),
+        body: x.intl.string(x.t.OXD41N)
       });
     case E.wF.PREVIOUS_IN_FLIGHT_REQUEST:
   }

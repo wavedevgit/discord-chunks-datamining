@@ -36,7 +36,7 @@ let O = e => {
     _.default.track(g.rMx.OUTBOUND_PROMOTION_NOTICE_CLICKED), l.Z.open(g.oAB.INVENTORY), d.ZP.dismissOutboundPromotionNotice()
   }, []);
   if (null == n) return null;
-  let S = e => (0, r.jsxs)(s.qXd, {
+  let T = e => (0, r.jsxs)(s.qXd, {
     color: s.DM8.PREMIUM_TIER_2,
     children: [(0, r.jsx)(s.RyX, {
       noticeType: g.kVF.OUTBOUND_PROMOTION,
@@ -68,7 +68,7 @@ let O = e => {
         visibleContent: t,
         markAsDismissed: n
       } = e;
-      if (t === o.z.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR) return S(n)
+      if (t === o.z.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR) return T(n)
     }
   })
 }

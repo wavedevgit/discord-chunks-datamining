@@ -2,8 +2,8 @@
 /** chunk id: 627845, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T,
-  b: () => S
+  Z: () => S,
+  b: () => T
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -52,10 +52,10 @@ function I() {
   return null == module || Date.now() - module.createdAt < 864e5
 }
 
-function S() {
+function T() {
   return "windows" === (0, Chunk358085.getOS)()
 }
-let T = {
+let S = {
   initBasic() {
     m.addListener(this.handleSystemPrefersReducedMotionChanged), this.handleSystemPrefersReducedMotionChanged(m), b.addListener(this.handleSystemColorPreferencesChanged), y.addListener(this.handleSystemColorPreferencesChanged), O.addListener(this.handleSystemColorPreferencesChanged), this.handleSystemColorPreferencesChanged(), g.addListener(this.handleSystemPrefersContrastChanged), E.addListener(this.handleSystemPrefersContrastChanged), this.handleSystemPrefersContrastChanged()
   },
@@ -86,7 +86,7 @@ let T = {
   handleSystemColorPreferencesChanged() {
     let e = Chunk874893.zd.NO_PREFERENCE;
     b.matches ? e = Chunk874893.zd.DARK : y.matches && (e = Chunk874893.zd.LIGHT);
-    let t = (!Chunk358085.isPlatformEmbedded || S()) && O.matches ? "active" : "none";
+    let t = (!Chunk358085.isPlatformEmbedded || T()) && O.matches ? "active" : "none";
     Chunk570140.Z.wait(() => {
       Chunk781391.Q_(module), Chunk857595.Ej(exports)
     })

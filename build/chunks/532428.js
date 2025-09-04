@@ -175,7 +175,7 @@ function J(e) {
   let n = y.Z.getSelectedSearchContext();
   if (null == n) returnfalse;
   if ((0, v.b7)(n)) return X(e, t, n.guildId);
-  let r = (0, T.ad)({
+  let r = (0, S.ad)({
     location: "channelValidator"
   }) || false;
   return n.type === C.aib.DMS && !h.Z.hidePersonalInformation && !!r && Q(e, t)
@@ -445,7 +445,7 @@ function eu(e) {
     maxResults: r
   } = e;
   if ((t = t.trim()).startsWith('"') && t.endsWith('"') ? t = t.substring(1, t.length - 1).replaceAll(/\\(.)/g, (e, t) => t) : t.startsWith('"') && (t = t.substring(1).replaceAll(/\\(.)/g, (e, t) => t)), "#" === t[0] && (t = t.substring(1)), (0, v.b7)(n)) return ec(t, n.guildId, r);
-  let i = (0, T.ad)({
+  let i = (0, S.ad)({
     location: "getInFilterAutocompletions"
   }) || false;
   return n.type === C.aib.DMS && !h.Z.hidePersonalInformation && i ? el(t, r, true) : []

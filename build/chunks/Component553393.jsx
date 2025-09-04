@@ -83,9 +83,9 @@ function F(e) {
     return null != (e = b.Z.getChannel(null == M ? true : M.channelId)) ? e : null
   }), z = (0, P.hf)({
     quest: v,
-    questContent: T.jn.MEMBERS_LIST,
-    sourceQuestContent: T.jn.MEMBERS_LIST
-  }), q = (0, S.tP)(v), X = (null == v || null == (t = v.userStatus) ? true : t.claimedAt) != null, Q = (null == v || null == (m = v.userStatus) ? true : m.enrolledAt) != null, J = (null == v || null == (g = v.userStatus) ? true : g.completedAt) != null, $ = (0, s.e7)([E.Z], () => E.Z.getState().theme), ee = (0, l.wj)($) ? x.BR.DARK : x.BR.LIGHT, et = (0, s.e7)([h.Z], () => h.Z.useReducedMotion), {
+    questContent: S.jn.MEMBERS_LIST,
+    sourceQuestContent: S.jn.MEMBERS_LIST
+  }), q = (0, T.tP)(v), X = (null == v || null == (t = v.userStatus) ? true : t.claimedAt) != null, Q = (null == v || null == (m = v.userStatus) ? true : m.enrolledAt) != null, J = (null == v || null == (g = v.userStatus) ? true : g.completedAt) != null, $ = (0, s.e7)([E.Z], () => E.Z.getState().theme), ee = (0, l.wj)($) ? x.BR.DARK : x.BR.LIGHT, et = (0, s.e7)([h.Z], () => h.Z.useReducedMotion), {
     ref: en,
     height: er
   } = (0, _.ZP)(), [ei, ea] = i.useState(et), eo = (0, p.Aq)(), es = (0, o.eg)();
@@ -135,25 +135,25 @@ function F(e) {
   let ef = () => {
       (0, I._3)({
         questId: v.id,
-        questContent: T.jn.MEMBERS_LIST,
+        questContent: S.jn.MEMBERS_LIST,
         questContentCTA: I.jZ.OPEN_DISCLOSURE,
         trackGuildAndChannelMetadata: true,
-        sourceQuestContent: T.jn.MEMBERS_LIST
+        sourceQuestContent: S.jn.MEMBERS_LIST
       }), (0, R.openDisclosureModal)(v, {
-        content: T.jn.MEMBERS_LIST,
+        content: S.jn.MEMBERS_LIST,
         ctaContent: I.jZ.OPEN_DISCLOSURE,
-        sourceQuestContent: T.jn.MEMBERS_LIST
+        sourceQuestContent: S.jn.MEMBERS_LIST
       })
     },
     e_ = () => {
       (0, I._3)({
         questId: v.id,
-        questContent: T.jn.MEMBERS_LIST,
+        questContent: S.jn.MEMBERS_LIST,
         questContentCTA: I.jZ.LEARN_MORE,
         trackGuildAndChannelMetadata: true,
-        sourceQuestContent: T.jn.MEMBERS_LIST
+        sourceQuestContent: S.jn.MEMBERS_LIST
       }), (0, R.navigateToQuestHome)({
-        fromContent: T.jn.MEMBERS_LIST,
+        fromContent: S.jn.MEMBERS_LIST,
         questId: v.id
       })
     },
@@ -163,10 +163,10 @@ function F(e) {
     eh = () => {
       Z(M, K) && null != K ? ((0, I._3)({
         questId: v.id,
-        questContent: T.jn.MEMBERS_LIST,
+        questContent: S.jn.MEMBERS_LIST,
         questContentCTA: I.jZ.WATCH_STREAM,
         trackGuildAndChannelMetadata: true,
-        sourceQuestContent: T.jn.MEMBERS_LIST
+        sourceQuestContent: S.jn.MEMBERS_LIST
       }), (0, u.ZDy)(async () => {
         let {
           default: e
@@ -175,10 +175,10 @@ function F(e) {
           username: null != W ? W : "",
           onConfirm: () => ((0, I._3)({
             questId: v.id,
-            questContent: T.jn.MEMBERS_LIST,
+            questContent: S.jn.MEMBERS_LIST,
             questContentCTA: I.jZ.WATCH_STREAM_CONFIRM,
             trackGuildAndChannelMetadata: true,
-            sourceQuestContent: T.jn.MEMBERS_LIST
+            sourceQuestContent: S.jn.MEMBERS_LIST
           }), d.default.selectVoiceChannel(K.id), (0, f.iV)(M))
         }, t))
       })) : e_()
@@ -268,11 +268,11 @@ function F(e) {
             }), "reward" === em.tileAssetType && (0, r.jsx)(N.Z, {
               className: j.assetTile,
               quest: v,
-              questContent: T.jn.MEMBERS_LIST,
+              questContent: S.jn.MEMBERS_LIST,
               learnMoreStyle: "icon",
               location: w.dr.MEMBERS_LIST,
               onClick: eu,
-              sourceQuestContent: T.jn.MEMBERS_LIST
+              sourceQuestContent: S.jn.MEMBERS_LIST
             })]
           })
         })]
@@ -291,9 +291,9 @@ function F(e) {
 function V(e) {
   return null == e.quest || e.isQuestEnrollmentBlocked ? null : (0, r.jsx)(C.A, {
     questOrQuests: e.quest,
-    questContent: T.jn.MEMBERS_LIST,
+    questContent: S.jn.MEMBERS_LIST,
     trackGuildAndChannelMetadata: true,
-    sourceQuestContent: T.jn.MEMBERS_LIST,
+    sourceQuestContent: S.jn.MEMBERS_LIST,
     children: t => (0, r.jsx)(F, k({
       impressionRef: t
     }, e))

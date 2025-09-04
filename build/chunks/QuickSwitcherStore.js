@@ -137,7 +137,7 @@ function z() {
   if (null != require) {
     let e = Chunk984933.ZP.getSelectableChannelIds(require).filter(e => {
       let t = m.Z.getChannel(e);
-      return !(null == t || e === r || V.includes(e) || a.has(e) || T.ZP.isChannelMuted(t.guild_id, e) || null != t.parent_id && T.ZP.isChannelMuted(t.guild_id, t.parent_id)) && (0, f.d)(t)
+      return !(null == t || e === r || V.includes(e) || a.has(e) || S.ZP.isChannelMuted(t.guild_id, e) || null != t.parent_id && S.ZP.isChannelMuted(t.guild_id, t.parent_id)) && (0, f.d)(t)
     }).map(e => K(e)).filter(e => e);
     Object.values(Chunk601070.Z.getActiveJoinedUnreadThreadsForGuild(require)).forEach(t => {
       for (let n in t) {
@@ -152,7 +152,7 @@ function z() {
 function q(e, t) {
   switch (U) {
     case u.h8.USER: {
-      let t = y.Z.getGuild(S.Z.getGuildId());
+      let t = y.Z.getGuild(T.Z.getGuildId());
       e.unshift((0, u.o6)(null != t ? R.intl.formatToPlainString(R.t.FREzQk, {
         name: t.name
       }) : R.intl.string(R.t.XFYW1t))), G = e;
@@ -186,7 +186,7 @@ function X(e) {
   let {
     query: n,
     queryMode: i
-  } = e, a = null != (t = S.Z.getGuildId()) ? t : true, o = new Set(["user:".concat(h.default.getId())]);
+  } = e, a = null != (t = T.Z.getGuildId()) ? t : true, o = new Set(["user:".concat(h.default.getId())]);
   null != a && o.add("guild:".concat(a)), H = Date.now(), r = null != r ? r : new u.ZP($, L, null != i ? x : D, {
     frecencyBoosters: true,
     blacklist: o,
@@ -229,7 +229,7 @@ function et(e) {
   if (null == r) returnfalse;
   if (U !== a) {
     r.setResultTypes(null != a ? [a] : L), r.setLimit(null != a ? x : D);
-    let e = null != (t = S.Z.getGuildId()) ? t : true;
+    let e = null != (t = T.Z.getGuildId()) ? t : true;
     a === u.h8.USER && null != e ? r.setOptions({
       userFilters: {
         guild: e,
@@ -243,7 +243,7 @@ function et(e) {
     }, true)
   }
   if ((U = a) === u.h8.USER) {
-    let e = null != (n = S.Z.getGuildId()) ? n : null;
+    let e = null != (n = T.Z.getGuildId()) ? n : null;
     r.search(i, e)
   } else r.search(i, true)
 }

@@ -69,14 +69,14 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     guildId: t
   } = e;
   d[t] = 2
 }
 
-function T(e) {
+function S(e) {
   let {
     productId: t
   } = e;
@@ -146,11 +146,11 @@ let D = new w(Chunk570140.Z, {
   CONNECTION_OPEN: O,
   GUILD_PRODUCTS_FETCH: v,
   GUILD_PRODUCTS_FETCH_SUCCESS: I,
-  GUILD_PRODUCTS_FETCH_FAILURE: S,
+  GUILD_PRODUCTS_FETCH_FAILURE: T,
   GUILD_PRODUCT_CREATE: N,
   GUILD_PRODUCT_UPDATE: R,
   GUILD_PRODUCT_DELETE: P,
-  GUILD_PRODUCT_FETCH: T,
+  GUILD_PRODUCT_FETCH: S,
   GUILD_PRODUCT_FETCH_SUCCESS: A,
   GUILD_PRODUCT_FETCH_FAILURE: C
 })

@@ -31,8 +31,8 @@ function y(e) {
     forcedDivider: O = false,
     withTutorial: v = false,
     showBorder: I = false,
-    isTryItOutFlow: S = false,
-    initialSelectedEffectId: T
+    isTryItOutFlow: T = false,
+    initialSelectedEffectId: S
   } = e, A = (0, _.Kg)(t, n), C = f.ZP.canUsePremiumProfileCustomization(t), {
     analyticsLocations: N
   } = (0, c.ZP)(), {
@@ -40,9 +40,9 @@ function y(e) {
     errors: P
   } = (0, _.bd)(n), w = i.useCallback(() => (0, u.H)({
     analyticsLocations: N,
-    initialSelectedEffectId: T,
+    initialSelectedEffectId: S,
     guild: n
-  }), [N, T, n]);
+  }), [N, S, n]);
   i.useEffect(() => {
     C && d.default.track(m.rMx.PREMIUM_UPSELL_VIEWED, {
       type: g.cd.PROFILE_EFFECTS_INLINE_SETTINGS,
@@ -50,7 +50,7 @@ function y(e) {
     })
   }, [C, N]);
   let D = null != n,
-    x = S || true !== R ? null != R : null != A;
+    x = T || true !== R ? null != R : null != A;
 
   function L() {
     (0, _.s6)(null, A, null == n ? true : n.id)

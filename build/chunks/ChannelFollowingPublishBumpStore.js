@@ -2,7 +2,7 @@
 /** chunk id: 212342, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js"), require("./997841.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
@@ -74,7 +74,7 @@ class I extends(r = Chunk442837.ZP.Store) {
   }
 }
 p(I, "displayName", "ChannelFollowingPublishBumpStore");
-let S = new I(Chunk570140.Z, {
+let T = new I(Chunk570140.Z, {
   MESSAGE_CREATE: E,
   MESSAGE_UPDATE: b,
   CHANNEL_SELECT: v,

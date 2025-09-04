@@ -237,7 +237,7 @@ function ef(e) {
     analyticsSource: eg
   } = e, {
     audioRef: eE
-  } = i.useContext(T.Z), {
+  } = i.useContext(S.Z), {
     analyticsLocations: eb
   } = (0, p.ZP)(), {
     analyticsLocations: ey
@@ -245,20 +245,20 @@ function ef(e) {
     location: eO
   } = (0, f.O)(), ev = i.useMemo(() => $(Q({}, eO), {
     section: Y.jXE.SOUNDBOARD_SOUND_PICKER
-  }), [eO]), [eI, eS] = i.useState(null), eT = (0, l.e7)([N.default], () => N.default.getCurrentUser()), eA = (0, D.I5)(eT, K.p9.TIER_2), eC = (0, l.e7)([R.Z], () => {
+  }), [eO]), [eI, eT] = i.useState(null), eS = (0, l.e7)([N.default], () => N.default.getCurrentUser()), eA = (0, D.I5)(eS, K.p9.TIER_2), eC = (0, l.e7)([R.Z], () => {
     var e;
-    return R.Z.getVoiceState(t, null != (e = null == eT ? true : eT.id) ? e : Y.lds)
+    return R.Z.getVoiceState(t, null != (e = null == eS ? true : eS.id) ? e : Y.lds)
   }), eN = (null == eC ? true : eC.selfDeaf) || (null == eC ? true : eC.mute) || (null == eC ? true : eC.suppress), eR = (0, b.Iu)(e => e.searchQuery), eP = null != eR && "" !== eR, ew = (0, m.Dt)(), eD = x.t.useConfig({
     location: "SoundboardSoundGrid"
   }).upsellPinningMode, {
     categories: ex,
     allSounds: eL,
     soundCounts: ej
-  } = (0, B.ZP)(a, {}, eh), [eM, ek] = i.useState([]), eU = (0, B.FS)(ex, eM, eR), eG = (0, b.Iu)(e => e.isNitroLockedSectionVisible), [eB, eZ] = i.useState(false), eF = eU.filter(e => e.items.length > 0), eV = eF.findLastIndex(e => !!(0, D._O)(e.categoryInfo) && e.categoryInfo.isNitroLocked), eH = !eA && J && false !== eV, eY = A.T4.useSetting(), eW = i.useMemo(() => new Set(eY), [eY]), eK = null == a, ez = D.ZP.canUseCustomCallSounds(eT), eq = i.useCallback(e => {
+  } = (0, B.ZP)(a, {}, eh), [eM, ek] = i.useState([]), eU = (0, B.FS)(ex, eM, eR), eG = (0, b.Iu)(e => e.isNitroLockedSectionVisible), [eB, eZ] = i.useState(false), eF = eU.filter(e => e.items.length > 0), eV = eF.findLastIndex(e => !!(0, D._O)(e.categoryInfo) && e.categoryInfo.isNitroLocked), eH = !eA && J && false !== eV, eY = A.T4.useSetting(), eW = i.useMemo(() => new Set(eY), [eY]), eK = null == a, ez = D.ZP.canUseCustomCallSounds(eS), eq = i.useCallback(e => {
     eW.has(e) ? eW.delete(e) : eW.add(e), A.T4.updateSetting(Array.from(eW))
   }, [eW]), eX = i.useCallback((e, t, n) => {
     if (null != I && !P) return I(e, n);
-    let r = (0, M.Nq)(eT, e, a, false);
+    let r = (0, M.Nq)(eS, e, a, false);
     if (null != I && P && r) I(e, n);
     else if (!X && r && (0, M.C0)(a)) {
       var i;
@@ -269,10 +269,10 @@ function ef(e) {
         location_stack: t
       })
     } else {
-      if ((0, M.Nq)(eT, e, a)) return;
-      J && eS(e)
+      if ((0, M.Nq)(eS, e, a)) return;
+      J && eT(e)
     }
-  }, [X, eT, a, J, eP, eR, I, P]), eQ = i.useCallback((e, t) => {
+  }, [X, eS, a, J, eP, eR, I, P]), eQ = i.useCallback((e, t) => {
     switch (e.item.type) {
       case j.vB.SOUND:
         var n;
@@ -320,7 +320,7 @@ function ef(e) {
     return i && !a
   }, [eF, J, eA]), e0 = i.useCallback(() => {
     let e = L.Z.getSoundById(es);
-    null != e && eS(e)
+    null != e && eT(e)
   }, []), e1 = i.useCallback(() => {
     let e = (0, D.Px)(K.p9.TIER_2);
     return z.intl.format(z.t["tw/SSk"], {
@@ -365,7 +365,7 @@ function ef(e) {
     }) : eH && t === eV ? (0, r.jsx)("div", {
       className: o()(q.smallPaddingFooter, q.nitroLocked)
     }) : null
-  }, [eV, eH, eF.length]), e6 = i.useCallback(e => ek((0, G.cK)(e, Array.from(eL.values()).flat(), eT, a, eb)), [a, eT, eL, eb]), e5 = i.useCallback(e => {
+  }, [eV, eH, eF.length]), e6 = i.useCallback(e => ek((0, G.cK)(e, Array.from(eL.values()).flat(), eS, a, eb)), [a, eS, eL, eb]), e5 = i.useCallback(e => {
     (0, u.jW)(e, async () => {
       let {
         default: e
@@ -450,8 +450,8 @@ function ef(e) {
       favorite_sounds_count: ej.favoriteSoundCount
     }
   }), (0, r.jsxs)(r.Fragment, {
-    children: [null != eI ? (0, r.jsx)(S.Z, {
-      containerContext: em ? S.p.TAB_PARENT_CONTAINER : S.p.NONE,
+    children: [null != eI ? (0, r.jsx)(T.Z, {
+      containerContext: em ? T.p.TAB_PARENT_CONTAINER : T.p.NONE,
       image: {
         url: tr,
         width: 220,
@@ -470,7 +470,7 @@ function ef(e) {
         location_stack: ey,
         sku_id: D.ZP.getSkuIdForPremiumType(K.p9.TIER_2)
       },
-      onClose: () => eS(null),
+      onClose: () => eT(null),
       onLearnMore: g,
       onDisplay: ti
     }) : true, (0, r.jsx)(y.Z, {

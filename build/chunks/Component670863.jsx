@@ -2,7 +2,7 @@
 /** chunk id: 670863, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  j: () => S
+  j: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -93,7 +93,7 @@ function I(e) {
   })[e]
 }
 
-function S(e) {
+function T(e) {
   var t, {
       deviceType: n,
       location: s,
@@ -102,9 +102,9 @@ function S(e) {
       onSelectDevice: E,
       hideDeviceTypeIcon: O = false
     } = e,
-    S = y(e, ["deviceType", "location", "showAllDevices", "selectedDeviceId", "onSelectDevice", "hideDeviceTypeIcon"]);
+    T = y(e, ["deviceType", "location", "showAllDevices", "selectedDeviceId", "onSelectDevice", "hideDeviceTypeIcon"]);
   let {
-    setDevice: T,
+    setDevice: S,
     Icon: A,
     getCanSetDevice: C,
     getWarningMessage: N,
@@ -129,12 +129,12 @@ function S(e) {
     });
     else {
       var t;
-      (null == (t = null == E ? true : E(e)) || t) && T(e, {
+      (null == (t = null == E ? true : E(e)) || t) && S(e, {
         location: x,
         analyticsLocations: P
       })
     }
-  }, [n, x, L.length, j.length, P, E, T]);
+  }, [n, x, L.length, j.length, P, E, S]);
 
   function Z(e) {
     let {
@@ -155,7 +155,7 @@ function S(e) {
       })]
     })
   }
-  let F = null != (t = S.renderOptionLabel) ? t : Z;
+  let F = null != (t = T.renderOptionLabel) ? t : Z;
 
   function V() {
     let e = e => {
@@ -193,6 +193,6 @@ function S(e) {
         let [t] = e;
         return F(t)
       }
-    }, S)), !U && G]
+    }, T)), !U && G]
   })
 }

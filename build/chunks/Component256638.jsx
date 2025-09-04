@@ -89,7 +89,7 @@ function eI(e, t, n) {
   }) : e[t] = n, e
 }
 
-function eS(e) {
+function eT(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -102,7 +102,7 @@ function eS(e) {
   return e
 }
 
-function eT(e, t) {
+function eS(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -114,7 +114,7 @@ function eT(e, t) {
 }
 
 function eA(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : eT(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : eS(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -203,7 +203,7 @@ let eL = Chunk647438.memo(function() {
   var e, t;
   let a = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
     h = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
-    T = (0, Chunk442837.e7)([Chunk933429.ZP], () => Chunk933429.ZP.getNotice()),
+    S = (0, Chunk442837.e7)([Chunk933429.ZP], () => Chunk933429.ZP.getNotice()),
     {
       analyticsLocations: j
     } = (0, Chunk906732.ZP)(),
@@ -223,7 +223,7 @@ let eL = Chunk647438.memo(function() {
     }
   }, [Chunk100527]);
   let eI = null != Chunk626135 ? Chunk933429.zD[Chunk626135] : null,
-    eT = null != Chunk626135 ? Chunk933429.o[Chunk626135] : null,
+    eS = null != Chunk626135 ? Chunk933429.o[Chunk626135] : null,
     eC = null != Chunk626135 ? Chunk933429.nA[Chunk626135] : null,
     eL = ex(Chunk626135);
   if (null == Chunk100527) return null;
@@ -236,8 +236,8 @@ let eL = Chunk647438.memo(function() {
     dismissibleContent: eI,
     noticeType: Chunk100527.type
   });
-  if (null != eT) return (0, Chunk951288.jsx)(Chunk131130.q, {
-    dismissibleContent: eT,
+  if (null != eS) return (0, Chunk951288.jsx)(Chunk131130.q, {
+    dismissibleContent: eS,
     noticeType: Chunk100527.type
   });
   if (null != eC) return (0, Chunk951288.jsx)(Chunk196068.c, {
@@ -593,7 +593,7 @@ let eL = Chunk647438.memo(function() {
               let {
                 default: e
               } = await Promise.all([require.e("32996"), require.e("74023")]).then(require.bind(require, 431583));
-              return t => (0, r.jsx)(e, eS({
+              return t => (0, r.jsx)(e, eT({
                 source: "Video unsupported browser"
               }, t))
             })
@@ -617,7 +617,7 @@ let eL = Chunk647438.memo(function() {
             let {
               default: e
             } = await require.e("20212").then(require.bind(require, 915194));
-            return t => (0, r.jsx)(e, eS({}, t))
+            return t => (0, r.jsx)(e, eT({}, t))
           }),
           children: Chunk388032.intl.string(Chunk388032.t.hvVgAQ)
         })]
@@ -723,11 +723,11 @@ let eL = Chunk647438.memo(function() {
               let {
                 default: e
               } = await Promise.all([require.e("84992"), require.e("56158")]).then(require.bind(require, 561623));
-              return t => (0, r.jsx)(e, eA(eS({}, t), {
-                daysLeft: T.metadata.daysLeft,
+              return t => (0, r.jsx)(e, eA(eT({}, t), {
+                daysLeft: S.metadata.daysLeft,
                 premiumType: eM,
                 analyticsSource: "Nag Bar",
-                premiumSubscription: T.metadata.premiumSubscription
+                premiumSubscription: S.metadata.premiumSubscription
               }))
             })
           },
@@ -895,7 +895,7 @@ let eL = Chunk647438.memo(function() {
               let {
                 default: e
               } = await Promise.all([require.e("26860"), require.e("52432")]).then(require.bind(require, 349994));
-              return t => (0, r.jsx)(e, eS({}, t))
+              return t => (0, r.jsx)(e, eT({}, t))
             }), Chunk523255.hZ(), eD()
           },
           children: Chunk388032.intl.string(Chunk388032.t.l5xYnJ)

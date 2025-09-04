@@ -30,8 +30,8 @@ let b = () => {
     applyOffer: O,
     churnUserDiscountOffer: v,
     discountedPrice: I,
-    fullPrice: S
-  } = (0, Chunk594135.a)(), [T, A] = (0, Chunk647438.useState)(false), [C, N] = (0, Chunk647438.useState)(false), R = async () => {
+    fullPrice: T
+  } = (0, Chunk594135.a)(), [S, A] = (0, Chunk647438.useState)(false), [C, N] = (0, Chunk647438.useState)(false), R = async () => {
     if (null === v) return void N(true);
     A(true), N(false);
     try {
@@ -46,14 +46,14 @@ let b = () => {
       text: Chunk388032.intl.string(Chunk388032.t.zl7LZm),
       onClick: () => exports(),
       variant: "secondary",
-      disabled: T
+      disabled: S
     }, {
       text: Chunk388032.intl.string(Chunk388032.t.CKSuZG),
       onClick: () => R(),
       variant: "primary",
       icon: Chunk481060.SrA,
-      loading: T,
-      disabled: T
+      loading: S,
+      disabled: S
     }];
   return (0, Chunk951288.jsxs)(Chunk667202.I, {
     graphic: {
@@ -82,13 +82,13 @@ let b = () => {
           discountedPrice: I,
           billingPeriod: (0, Chunk74538.JP)(v.discount.user_usage_limit_interval),
           numMonths: v.discount.user_usage_limit,
-          fullPrice: S,
+          fullPrice: T,
           paidURL: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PAID_TERMS)
         }) : Chunk388032.intl.format(Chunk388032.t.hrGTjI, {
           discountedPrice: I,
           billingPeriod: (0, Chunk74538.JP)(v.discount.user_usage_limit_interval),
           numMonths: v.discount.user_usage_limit,
-          fullPrice: S,
+          fullPrice: T,
           helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PAID_TERMS)
         })
       })

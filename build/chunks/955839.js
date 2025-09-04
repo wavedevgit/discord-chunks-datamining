@@ -51,15 +51,15 @@ let u = e => {
           e.set(n.id, n)
         } O(e), h(Array.from(e.values()))
     }
-  }, S = r.useRef(I);
+  }, T = r.useRef(I);
   return r.useEffect(() => {
-    S.current = I
+    T.current = I
   }), r.useEffect(() => {
     let {
       getNextRows: e,
       limit: t,
       getLocalReferrals: n
-    } = S.current;
+    } = T.current;
     d > 0 ? e(0, t) : n()
   }, [t, d]), {
     eligibleUsers: p,

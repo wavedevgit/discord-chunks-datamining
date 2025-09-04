@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk892902 = require("./892902.js"),
   Chunk359232 = require("./359232.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -46,7 +46,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -108,7 +108,7 @@ function D(e, t) {
   let a = i.useContext(j),
     o = i.useCallback(t => {
       var n;
-      let r = (0, S.Z)(e, t, null != a.modal ? "modal" : "message");
+      let r = (0, T.Z)(e, t, null != a.modal ? "modal" : "message");
       return null == (n = a.setValidationErrors) || n.call(a, t => N(A({}, t), {
         [e.id]: r
       })), null == r

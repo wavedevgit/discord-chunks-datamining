@@ -301,17 +301,29 @@ class Y extends Chunk647438.PureComponent {
     }).separateKeybind && (Chunk951288[Chunk981631.kg4.VAD_PRIORITY] = Chunk388032.intl.string(Chunk388032.t.rSe8IS)), (0, Chunk365023.l)() && (Chunk951288[Chunk981631.kg4.TOGGLE_CAMERA] = Chunk388032.intl.string(Chunk388032.t.v1JBtL)), module && (Chunk951288[Chunk981631.kg4.TOGGLE_OVERLAY_INPUT_LOCK] = Chunk388032.intl.string(Chunk388032.t.IoP5vb)), exports && (0, Chunk358085.isWindows)() && (Chunk951288[Chunk981631.kg4.TOGGLE_GO_LIVE_STREAMING] = Chunk388032.intl.string(Chunk388032.t.s4C239)), (0, Chunk358085.isDesktop)() && (Chunk951288[Chunk981631.kg4.NAVIGATE_BACK] = Chunk388032.intl.string(Chunk388032.t.nKDlEh), Chunk951288[Chunk981631.kg4.NAVIGATE_FORWARD] = Chunk388032.intl.string(Chunk388032.t.DK0FFh), Chunk951288[Chunk981631.kg4.SOUNDBOARD] = (0, Chunk358085.isWindows)() ? Chunk388032.intl.string(Chunk388032.t["5wJefH"]) : Chunk388032.intl.string(Chunk388032.t.gzjsSE), Chunk951288[Chunk981631.kg4.SOUNDBOARD_HOLD] = (0, Chunk358085.isWindows)() ? Chunk388032.intl.string(Chunk388032.t.RRkZc3) : Chunk388032.intl.string(Chunk388032.t.laNlTk), require && (Chunk951288[Chunk981631.kg4.SAVE_CLIP] = Chunk388032.intl.string(Chunk388032.t.z3Wbam))), Chunk951288
   }
   renderKeybinds(e) {
-    return e.map(e => (0, r.jsx)("div", {
-      className: j.row,
-      children: (0, r.jsx)(H, {
-        keybind: e,
+    return e.map((t, n) => (0, r.jsxs)(i.Fragment, {
+      children: [(0, r.jsx)(H, {
+        keybind: t,
         keybindDescriptions: this.keybindDescriptions,
         keybindActionTypes: this.keybindActionTypes
-      }, e.id)
-    }, e.id))
+      }, t.id), n !== e.length - 1 ? (0, r.jsx)(f.$i$, {}) : null]
+    }, t.id))
   }
   renderEmpty(e) {
     if (0 === e.length) return null
+  }
+  renderKeybindWarning() {
+    return (0, Chunk951288.jsxs)("div", {
+      className: Chunk894462.warning,
+      children: [(0, Chunk951288.jsx)(Chunk481060.d3s, {
+        size: "xs",
+        color: Chunk692547.Z.colors.ICON_SECONDARY
+      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+        variant: "text-sm/medium",
+        color: "text-secondary",
+        children: Chunk388032.intl.string(Chunk388032.t.NoKjWF)
+      })]
+    })
   }
   render() {
     let e = this.props.enableClips,
@@ -321,30 +333,21 @@ class Y extends Chunk647438.PureComponent {
         tag: Chunk481060.RB0.H1,
         title: Chunk388032.intl.string(Chunk388032.t.T9DA2N),
         children: Chunk358085.isPlatformEmbedded ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-          children: [(0, Chunk951288.jsxs)(Chunk600164.Z, {
-            justify: Chunk600164.Z.Justify.BETWEEN,
-            className: Chunk197571.marginBottom20,
-            children: [(0, Chunk951288.jsx)(Chunk600164.Z.Child, {
-              grow: 0,
-              children: (0, Chunk951288.jsx)(Chunk481060.Wn, {
-                messageType: Chunk481060.QYI.WARNING,
-                children: Chunk388032.intl.string(Chunk388032.t.NoKjWF)
-              })
-            }), (0, Chunk951288.jsx)(Chunk600164.Z.Child, {
-              wrap: true,
-              grow: 0,
-              children: (0, Chunk951288.jsx)(Chunk755721.zx, {
-                size: Chunk755721.Ph.LARGE,
+          children: [(0, Chunk951288.jsxs)("div", {
+            className: Chunk894462.ctaContainer,
+            children: [this.renderKeybindWarning(), (0, Chunk951288.jsx)("div", {
+              className: Chunk894462.addButton,
+              children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+                size: "md",
                 onClick: this.handleAddKeybind,
-                children: Chunk388032.intl.string(Chunk388032.t.zk6Xbm)
+                text: Chunk388032.intl.string(Chunk388032.t.zk6Xbm),
+                variant: "primary"
               })
             })]
           }), (0, Chunk951288.jsx)(Chunk825655.Z, {
             className: Chunk894462.systemServiceUpsell,
             sourcePage: "keybinds"
-          }), (0, Chunk951288.jsx)(Chunk481060.$i$, {}), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-            children: [this.renderKeybinds(exports), this.renderEmpty(exports)]
-          })]
+          }), (0, Chunk951288.jsx)(Chunk481060.$i$, {}), this.renderKeybinds(exports), this.renderEmpty(exports)]
         }) : (0, Chunk951288.jsx)(Chunk481060.Wn, {
           messageType: Chunk481060.QYI.INFO,
           className: Chunk894462.browserNotice,
@@ -364,8 +367,7 @@ class Y extends Chunk647438.PureComponent {
           }), (0, Chunk951288.jsx)("div", {
             className: Chunk894462.defaultKeybindShortcutGroup,
             children: (0, Chunk951288.jsx)(Chunk481060.M2$, {
-              shortcut: Chunk721383._.binds["0"],
-              className: Chunk894462.__invalid_defaultKeybindShortcut
+              shortcut: Chunk721383._.binds["0"]
             })
           })]
         }), (0, Chunk951288.jsx)(Chunk481060.$i$, {}), (0, Chunk951288.jsx)(F, {

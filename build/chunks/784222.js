@@ -140,7 +140,7 @@ let G = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
             let p = new Map,
               h = n.has(_.sectionId),
               [g, E] = a().partition(o, e => {
-                let n = S.ZP.isEmojiDisabled({
+                let n = T.ZP.isEmojiDisabled({
                   emoji: e,
                   channel: t,
                   intention: l
@@ -151,9 +151,9 @@ let G = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
               y = _.guild,
               v = O.Z.getGuildId(),
               I = _.sectionId === w.En.TOP_GUILD_EMOJI,
-              A = !I && null != y && v === y.id && b.length < (0, T.y4)(y),
+              A = !I && null != y && v === y.id && b.length < (0, S.y4)(y),
               R = I && b.length < f && !el,
-              P = null != y && I && el && ec === C.B.WITH_TOP_LIST && es[y.id].length < (0, T.y4)(y),
+              P = null != y && I && el && ec === C.B.WITH_TOP_LIST && es[y.id].length < (0, S.y4)(y),
               D = i && et && null != y && (A || R || P);
             D && P && b.length === f && b.shift();
             let L = b.length > m && null != y && _.isNitroLocked,
@@ -262,14 +262,14 @@ let G = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
               let n = n => {
                 let r = es[n];
                 if (null == r) return;
-                let i = r.filter(e => !G.includes(S.ZP.getEmojiUnavailableReason({
+                let i = r.filter(e => !G.includes(T.ZP.getEmojiUnavailableReason({
                   emoji: e,
                   channel: null != t ? t : b.ZP.getDefaultChannel(n),
                   intention: l
                 })));
                 if (0 === i.length) return;
                 let a = y.Z.getGuild(n),
-                  s = ei || !er && S.ZP.isEmojiCategoryNitroLocked({
+                  s = ei || !er && T.ZP.isEmojiCategoryNitroLocked({
                     categoryEmojis: i,
                     channel: t,
                     intention: l
@@ -303,7 +303,7 @@ let G = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
               })
             }
           } else if (e === w.UX.RECENT) {
-            let n = (l === D.Hz.REACTION && (q || X) ? z : K).filter(e => !S.ZP.isEmojiFiltered({
+            let n = (l === D.Hz.REACTION && (q || X) ? z : K).filter(e => !T.ZP.isEmojiFiltered({
               emoji: e,
               channel: t,
               intention: l
@@ -316,7 +316,7 @@ let G = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
               isNitroLocked: false
             })
           } else if (e === w.UX.FAVORITES) {
-            let n = W.filter(e => !S.ZP.isEmojiFiltered({
+            let n = W.filter(e => !T.ZP.isEmojiFiltered({
               emoji: e,
               channel: t,
               intention: l
@@ -373,7 +373,7 @@ let F = e => {
             emoji: s
           } = e;
           if (null == s) return;
-          let c = S.ZP.getEmojiUnavailableReason({
+          let c = T.ZP.getEmojiUnavailableReason({
             emoji: s,
             channel: n,
             intention: t

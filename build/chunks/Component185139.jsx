@@ -32,8 +32,8 @@ function O(e) {
     overrideKey: O,
     paymentError: v,
     header: I,
-    footer: S,
-    isGift: T = false,
+    footer: T,
+    isGift: S = false,
     giftMessage: A = E.intl.string(E.t.DrgnS0),
     hideBreadcrumbs: C = false,
     isLoading: N = false,
@@ -67,7 +67,7 @@ function O(e) {
     stripe: k,
     children: [I, (0, r.jsxs)("div", {
       className: s()("paymentModalContent", b.content),
-      children: [T && n !== p.h8.CONFIRM ? (0, r.jsx)(u.Z, {
+      children: [S && n !== p.h8.CONFIRM ? (0, r.jsx)(u.Z, {
         className: b.paymentNote,
         iconSize: u.Z.Sizes.SMALL,
         icon: c.OgN,
@@ -108,6 +108,6 @@ function O(e) {
           })
         })]
       })]
-    }), S]
+    }), T]
   })
 }

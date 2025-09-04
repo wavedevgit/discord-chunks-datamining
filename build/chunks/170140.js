@@ -69,8 +69,8 @@ function v(e, t) {
     v = (0, i.e7)([a.Z], () => null != E && (null == E ? true : E.channelId) != null && a.Z.isChannelGated(E.guildId, E.channelId), [E]),
     I = t.hasFlag(g.iLy.IS_CROSSPOST),
     {
-      rawMediaPostEmbedData: S,
-      guild: T,
+      rawMediaPostEmbedData: T,
+      guild: S,
       parentChannel: A,
       user: C,
       selectedGuildId: N,
@@ -94,8 +94,8 @@ function v(e, t) {
     }, [E]),
     P = r.useMemo(() => {
       let e = (0, m.ku)({
-        mediaPostEmbedData: S,
-        guild: T,
+        mediaPostEmbedData: T,
+        guild: S,
         parentChannel: A,
         user: C,
         selectedGuildId: N,
@@ -104,7 +104,7 @@ function v(e, t) {
       return null == e ? null : O(b({}, e), {
         user: C
       })
-    }, [S, T, A, C, N, R]);
+    }, [T, S, A, C, N, R]);
   return r.useEffect(() => {
     if ((null == E ? true : E.threadId) != null) {
       let e = h.Z.getEmbedFetchState(E.threadId);

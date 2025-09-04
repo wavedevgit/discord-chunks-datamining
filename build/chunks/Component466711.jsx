@@ -72,7 +72,7 @@ function w(e, t) {
 function D(e) {
   return (0, r.jsx)(v.Z, {
     className: C.button,
-    "aria-label": T.intl.string(T.t.Z1RnTk),
+    "aria-label": S.intl.string(S.t.Z1RnTk),
     isActive: false,
     noHover: true,
     onClick: e.onClick,
@@ -97,7 +97,7 @@ function x(e) {
   };
   return (0, r.jsx)(v.Z, w(R({
     className: C.button,
-    "aria-label": T.intl.string(T.t.Z1RnTk),
+    "aria-label": S.intl.string(S.t.Z1RnTk),
     isActive: false,
     noHover: true,
     onClick: a
@@ -129,7 +129,7 @@ function j(e) {
     channel: l
   } = e, {
     analyticsLocations: E
-  } = (0, u.ZP)(c.Z.GIFT_BUTTON), [v, T] = i.useState(false), C = (0, a.e7)([m.Z], () => !(null === m.Z || true === m.Z ? true : m.Z.hasLayers())), N = (0, a.e7)([g.default], () => g.default.getCurrentUser()), R = null != N ? b.default.age(N.id) : 0, {
+  } = (0, u.ZP)(c.Z.GIFT_BUTTON), [v, S] = i.useState(false), C = (0, a.e7)([m.Z], () => !(null === m.Z || true === m.Z ? true : m.Z.hasLayers())), N = (0, a.e7)([g.default], () => g.default.getCurrentUser()), R = null != N ? b.default.age(N.id) : 0, {
     giftBoxAnimation: P,
     trinketsAnimation: w
   } = null != (t = null == n ? true : n.chatGiftIcon) ? t : {}, j = null != n.firstTimeNotice && !s && C && R >= L, [M, k] = (0, f.XR)(j ? o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, d.t)(o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), U = null != M, G = v || U, B = (0, y.Ft)(l), Z = (0, p.IH)();
@@ -149,7 +149,7 @@ function j(e) {
       })
     },
     V = () => {
-      T(false), k(S.L.TAKE_ACTION), F()
+      S(false), k(T.L.TAKE_ACTION), F()
     },
     H = true !== P ? (0, r.jsx)(D, {
       config: P,
@@ -166,13 +166,13 @@ function j(e) {
   return (0, r.jsx)("div", {
     className: A.container,
     onMouseEnter: () => {
-      v || T(true)
+      v || S(true)
     },
     onMouseLeave: () => {
-      T(false)
+      S(false)
     },
     children: true !== n.firstTimeNotice && U ? (0, r.jsx)(h.Z, {
-      onComplete: () => T(false),
+      onComplete: () => S(false),
       onCheckItOutClick: F,
       markAsDismissed: k,
       config: n.firstTimeNotice,

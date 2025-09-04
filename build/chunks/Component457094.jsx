@@ -261,7 +261,7 @@ let to = [{
     } = t.params;
     return (0, X.h)(() => (0, eL.openUserProfileModal)({
       userId: n,
-      sourceAnalyticsLocations: [N.Z.URI_SCHEME]
+      sourceAnalyticsLocations: [T.Z.URI_SCHEME]
     })), (0, r.jsx)(a.l_, {
       to: ez.Z.defaultRoute
     })
@@ -439,7 +439,7 @@ let to = [{
 }, {
   path: [Chunk981631.Z5c.CHANNEL_THREAD_VIEW(Chunk893607.Hw.guildId(), Chunk893607.Hw.channelId(), ":threadId", ":messageId?"), Chunk981631.Z5c.CHANNEL(Chunk893607.Hw.guildId(), Chunk893607.Hw.channelId({
     optional: true
-  }), ":messageId?"), Chunk981631.Z5c.ACTIVITY, Chunk981631.Z5c.ACTIVITIES, Chunk981631.Z5c.ACTIVITIES_HAPPENING_NOW, Chunk981631.Z5c.ACTIVITY_DETAILS(":applicationId"), Chunk981631.Z5c.APPLICATION_LIBRARY, Chunk981631.Z5c.APPLICATION_STORE, Chunk981631.Z5c.MESSAGE_REQUESTS, Chunk981631.Z5c.COLLECTIBLES_SHOP, Chunk981631.Z5c.COLLECTIBLES_SHOP_FULLSCREEN, Chunk981631.Z5c.COLLECTIBLES_SHOP_PRODUCT_DETAIL(":skuId"), Chunk981631.Z5c.GUILD_DISCOVERY, Chunk981631.Z5c.QUEST_HOME, Chunk981631.Z5c.GLOBAL_DISCOVERY, Chunk981631.Z5c.GUILD_MEMBER_VERIFICATION(Chunk893607.Hw.guildId()), Chunk981631.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB(Chunk893607.Hw.guildId(), ":inviteCode?"), Chunk981631.Z5c.GUILD_BOOSTING_MARKETING(Chunk893607.Hw.guildId()), Chunk981631.Z5c.GUILD_FEATURE(":feature", Chunk893607.Hw.guildId()), Chunk981631.Z5c.FEATURE(":feature"), Chunk981631.Z5c.FAMILY_CENTER],
+  }), ":messageId?"), Chunk981631.Z5c.ACTIVITY, Chunk981631.Z5c.ACTIVITIES, Chunk981631.Z5c.ACTIVITIES_HAPPENING_NOW, Chunk981631.Z5c.ACTIVITY_DETAILS(":applicationId"), Chunk981631.Z5c.APPLICATION_LIBRARY, Chunk981631.Z5c.APPLICATION_STORE, Chunk981631.Z5c.MESSAGE_REQUESTS, Chunk981631.Z5c.COLLECTIBLES_SHOP, Chunk981631.Z5c.COLLECTIBLES_SHOP_FULLSCREEN, Chunk981631.Z5c.COLLECTIBLES_SHOP_PRODUCT_DETAIL(":skuId"), Chunk981631.Z5c.GUILD_DISCOVERY, Chunk981631.Z5c.QUEST_HOME, Chunk981631.Z5c.QUEST_HOME_V2, Chunk981631.Z5c.GLOBAL_DISCOVERY, Chunk981631.Z5c.GUILD_MEMBER_VERIFICATION(Chunk893607.Hw.guildId()), Chunk981631.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB(Chunk893607.Hw.guildId(), ":inviteCode?"), Chunk981631.Z5c.GUILD_BOOSTING_MARKETING(Chunk893607.Hw.guildId()), Chunk981631.Z5c.GUILD_FEATURE(":feature", Chunk893607.Hw.guildId()), Chunk981631.Z5c.FEATURE(":feature"), Chunk981631.Z5c.FAMILY_CENTER],
   render: tr,
   isSessionRequired: true,
   isChatRoute: true
@@ -545,16 +545,16 @@ class tu extends Chunk647438.PureComponent {
             if (t)(0, eI.dL)(e3.Z5c.CHANNEL(r, s, o));
             else {
               let e = {
-                type: eT.Ff.THREAD
+                type: eN.Ff.THREAD
               };
-              null != o && (e.initialMessageId = o), eN.Z.openThreadAsSidebar({
+              null != o && (e.initialMessageId = o), eT.Z.openThreadAsSidebar({
                 guildId: r,
                 baseChannelId: i,
                 channelId: s,
                 details: e
               })
             }
-        } else null == i || a || eN.Z.closeChannelSidebar(i);
+        } else null == i || a || eT.Z.closeChannelSidebar(i);
         let c = ec.Z.getIsOpen();
         if (i === e5.oC.ROLE_SUBSCRIPTIONS) es.Z.closeSidebar();
         else if (g && c) {
@@ -598,7 +598,7 @@ class tu extends Chunk647438.PureComponent {
           guildId: r,
           pathname: t
         }));
-        else if ((null == n ? true : n.parent_id) !== i) return eN.Z.closeChannelSidebar(i), {
+        else if ((null == n ? true : n.parent_id) !== i) return eT.Z.closeChannelSidebar(i), {
           path: e3.Z5c.CHANNEL(r, i),
           state: e.state
         }

@@ -119,14 +119,14 @@ function I(e) {
   }) : e)
 }
 
-function S(e) {
+function T(e) {
   let {
     channelId: t
   } = e;
   h.add(t)
 }
 
-function T() {
+function S() {
   p = {}, Object.values(Chunk592125.Z.getMutablePrivateChannels()).forEach(e => {
     g(e)
   })
@@ -155,10 +155,10 @@ let N = new C(Chunk570140.Z, {
   CHANNEL_CREATE: E,
   CHANNEL_DELETE: y,
   CHANNEL_UPDATES: b,
-  CONNECTION_OPEN: T,
-  CONNECTION_OPEN_SUPPLEMENTAL: T,
+  CONNECTION_OPEN: S,
+  CONNECTION_OPEN_SUPPLEMENTAL: S,
   CHANNEL_SAFETY_WARNING_FEEDBACK: O,
   CLEAR_CHANNEL_SAFETY_WARNINGS: v,
   DISMISS_CHANNEL_SAFETY_WARNINGS: I,
-  ACKNOWLEDGE_CHANNEL_SAFETY_WARNING_TOOLTIP: S
+  ACKNOWLEDGE_CHANNEL_SAFETY_WARNING_TOOLTIP: T
 })

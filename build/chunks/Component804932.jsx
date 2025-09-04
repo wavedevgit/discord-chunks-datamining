@@ -8,7 +8,7 @@ require.d(exports, {
   RZ: () => O,
   fJ: () => m,
   s_: () => b,
-  vU: () => S
+  vU: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -141,7 +141,7 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     notificationCenterVariant: t,
     entrypoint: n,
@@ -154,7 +154,7 @@ function S(e) {
     return null != (e = u.Z.currentRequestAnalyticsPayload) ? e : null
   }), {
     unreadRecentMentionsCount: O,
-    unreadChannelIds: S
+    unreadChannelIds: T
   } = (0, d.O4)();
   (0, s.ZP)(() => {
     g({
@@ -170,13 +170,13 @@ function S(e) {
         unreadsCount: a.length,
         totalMessagesCount: r.length,
         unreadsBadgeMentionCount: O,
-        unreadsBadgeChannelCount: S.length,
+        unreadsBadgeChannelCount: T.length,
         unreadMessageItemsCount: _.UNREAD.length,
         unreadMentionsCount: _.UNREAD.filter(e => e.every(e => e.kind === f.fL.MENTION)).length,
         viewId: c
       })
     }
-  }, [r, a, c, S, O, _]), i.useEffect(() => {
+  }, [r, a, c, T, O, _]), i.useEffect(() => {
     let e = (null == y ? true : y.loadingTrigger) === f.X.AUTO_LOAD;
     if (null != y && true === b && false === m && !e) {
       var t;

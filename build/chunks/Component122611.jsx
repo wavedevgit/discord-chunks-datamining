@@ -26,9 +26,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk785203 = require("./785203.js"),
   Chunk652785 = require("./652785.js"),
   Chunk921944 = require("./921944.js");
-let N = new Set([Chunk704215.z.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION, Chunk704215.z.CHANNEL_NOTICE_GUILD_BANNER]);
+let T = new Set([Chunk704215.z.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION, Chunk704215.z.CHANNEL_NOTICE_GUILD_BANNER]);
 
-function T(e) {
+function N(e) {
   e.stopPropagation()
 }
 
@@ -41,7 +41,7 @@ function j(e) {
       dismissibleContentType: t,
       store: r
     } = e;
-    returntrue === (null == r ? true : r.channelNoticePredicate(n, p)) && !N.has(t)
+    returntrue === (null == r ? true : r.channelNoticePredicate(n, p)) && !T.has(t)
   }).map(e => e.dismissibleContentType), [n, p]);
   return (0, r.jsx)(c.ZP, {
     contentTypes: g,
@@ -90,7 +90,7 @@ function j(e) {
         }
       })();
       return null == c ? null : (0, r.jsx)("div", {
-        onContextMenu: T,
+        onContextMenu: N,
         children: c
       })
     }

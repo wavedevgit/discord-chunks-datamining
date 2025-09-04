@@ -592,7 +592,7 @@ let e2 = () => {
         badgeCount: C,
         newIndicator: (0, r.jsx)(s.IGR, {
           text: ez.intl.string(ez.t.y2b7CA),
-          color: S.Z.BG_BRAND
+          color: T.Z.BG_BRAND
         }),
         newIndicatorDismissibleContentTypes: [a.z.FAMILY_CENTER_NEW_BADGE],
         url: eY.Z5c.SETTINGS("family-center")
@@ -795,7 +795,7 @@ let e2 = () => {
         parent: eV.s6.APPEARANCE,
         newIndicator: (0, r.jsx)(s.IGR, {
           text: ez.intl.string(ez.t.y2b7CA),
-          color: S.Z.BG_BRAND
+          color: T.Z.BG_BRAND
         })
       },
       [eV.s6.APPEARANCE_SCALING_SPACING]: {
@@ -1340,7 +1340,7 @@ let e2 = () => {
         searchableTitles: [ez.intl.string(ez.t.HcoRu7)],
         label: ez.intl.string(ez.t.HcoRu7),
         ariaLabel: ez.intl.string(ez.t.HcoRu7),
-        element: eS.Z,
+        element: eT.Z,
         url: eY.Z5c.SETTINGS("notifications")
       },
       [eV.s6.NOTIFICATIONS_ENABLE_DESKTOP]: {
@@ -1635,7 +1635,7 @@ let e2 = () => {
         section: eY.oAB.OVERLAY,
         searchableTitles: [ez.intl.string(ez.t["9cb1U1"]), ez.intl.string(ez.t.HcoRu7)],
         label: ez.intl.string(ez.t["9cb1U1"]),
-        element: eT.Z,
+        element: eS.Z,
         predicate: () => !e0 && Z
       },
       [eV.s6.CHANGELOG]: {
@@ -1907,7 +1907,7 @@ let e2 = () => {
         section: eY.oAB.DISMISSIBLE_CONTENT_OPTIONS,
         searchableTitles: ["Dismissible Contents"],
         label: "Dismissible Contents",
-        element: T.Z,
+        element: S.Z,
         predicate: () => V.Z.isDeveloper
       },
       [eV.s6.PAYMENT_FLOW_MODALS]: {

@@ -121,7 +121,7 @@ function I(e) {
   return n
 }
 
-function S(e) {
+function T(e) {
   let {
     updates: t
   } = e;
@@ -136,7 +136,7 @@ function S(e) {
   }).some(e => e)
 }
 
-function T(e) {
+function S(e) {
   let {
     guildId: t,
     members: n
@@ -208,8 +208,8 @@ let D = new w(Chunk570140.Z, {
   OVERLAY_INITIALIZE: O,
   GUILD_CREATE: v,
   PRESENCES_REPLACE: I,
-  PRESENCE_UPDATES: S,
-  THREAD_MEMBER_LIST_UPDATE: T,
+  PRESENCE_UPDATES: T,
+  THREAD_MEMBER_LIST_UPDATE: S,
   THREAD_MEMBERS_UPDATE: A,
   RELATIONSHIP_ADD: R,
   RELATIONSHIP_UPDATE: R,

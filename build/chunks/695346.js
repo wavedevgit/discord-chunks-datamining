@@ -57,7 +57,7 @@ require.d(exports, {
   ev: () => $,
   fq: () => O,
   fv: () => N,
-  fz: () => T,
+  fz: () => S,
   gR: () => q,
   gw: () => eq,
   h2: () => X,
@@ -75,11 +75,11 @@ require.d(exports, {
   nh: () => eH,
   no: () => ek,
   qF: () => j,
-  rN: () => eS,
+  rN: () => eT,
   tU: () => eb,
   uL: () => U,
   uh: () => eK,
-  vF: () => S,
+  vF: () => T,
   x4: () => ey,
   xM: () => el,
   xq: () => Q,
@@ -132,7 +132,7 @@ let b = (0, Chunk560997.Zc)("textAndImages", "useLegacyChatInput", e => {
   }, e => o.Gm.create({
     value: e
   })),
-  S = (0, Chunk560997.Zc)("textAndImages", "useThreadSidebar", e => {
+  T = (0, Chunk560997.Zc)("textAndImages", "useThreadSidebar", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
@@ -144,7 +144,7 @@ let b = (0, Chunk560997.Zc)("textAndImages", "useLegacyChatInput", e => {
 }, e => o.D5.create({
   value: e
 }));
-let T = (0, Chunk560997.Zc)("notifications", "reactionNotifications", e => null != e ? e : a.Ns.NOTIFICATIONS_ENABLED, e => e);
+let S = (0, Chunk560997.Zc)("notifications", "reactionNotifications", e => null != e ? e : a.Ns.NOTIFICATIONS_ENABLED, e => e);
 (0, Chunk560997.Zc)("notifications", "customStatusPushNotifications", e => null != e ? e : a.Oi.STATUS_PUSH_UNSET, e => e);
 let A = (0, Chunk560997.Zc)("notifications", "enableVoiceActivityNotifications", e => {
     var t;
@@ -441,14 +441,14 @@ let ep = new Set(Object.values(Chunk981631.Skl)),
     })
   }
 }), "text", "defaultReactionEmoji");
-let eS = (0, Chunk560997.Zc)("localization", "timezoneOffset", e => {
+let eT = (0, Chunk560997.Zc)("localization", "timezoneOffset", e => {
     var t;
     return null != (t = null == e ? true : e.value) ? t : null
   }, e => o.T4.create({
     value: null != e ? e : 0
   })),
-  eT = new Set([Chunk969943.fx.AUTO, Chunk85746.l.COZY, Chunk85746.l.COMPACT]);
-(0, Chunk560997.Zc)("appearance", "channelListLayout", e => null != e && eT.has(e.value) ? e.value : s.l.COZY, e => o.Gm.create({
+  eS = new Set([Chunk969943.fx.AUTO, Chunk85746.l.COZY, Chunk85746.l.COMPACT]);
+(0, Chunk560997.Zc)("appearance", "channelListLayout", e => null != e && eS.has(e.value) ? e.value : s.l.COZY, e => o.Gm.create({
   value: e
 }));
 let eA = new Set([Chunk85746.Z.ALL, Chunk85746.Z.UNREADS, Chunk85746.Z.NONE]);

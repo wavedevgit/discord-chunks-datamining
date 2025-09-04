@@ -118,7 +118,7 @@ let E = e => {
       }) : (0, r.jsx)(E, m(p({}, e), {
         onPrimary: O
       }))
-    }, S = () => null == t ? null : (0, r.jsx)(a.A, {
+    }, T = () => null == t ? null : (0, r.jsx)(a.A, {
       text: null != n ? n : d.intl.string(d.t["13/7kZ"]),
       onClick: t,
       variant: "secondary"
@@ -134,7 +134,7 @@ let E = e => {
         gap: 0,
         padding: 0,
         children: [I(), (0, r.jsx)(u.Z, {})]
-      }), S()]
+      }), T()]
     })
   };
 b.CTAType = g;

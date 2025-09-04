@@ -101,7 +101,7 @@ let w = (0, Chunk261616.animated)(Chunk481060.CJ0),
       gameTileSize: g.fF.MEDIUM,
       quest: a,
       separatorSpacing: g.US.MEDIUM,
-      theme: S.BR.DARK,
+      theme: T.BR.DARK,
       withGameTile: !K || null == a.config.cosponsorMetadata
     });
     return (0, r.jsxs)("div", {
@@ -110,7 +110,7 @@ let w = (0, Chunk261616.animated)(Chunk481060.CJ0),
         [A.outerContainerEmbed]: K,
         [A.outerContainerXs]: "xs" === R
       }),
-      "aria-label": T.intl.string(T.t.dcl9MT),
+      "aria-label": S.intl.string(S.t.dcl9MT),
       style: {
         height: W ? G : true
       },
@@ -145,7 +145,7 @@ let w = (0, Chunk261616.animated)(Chunk481060.CJ0),
             },
             "aria-hidden": !x && L,
             children: (0, r.jsxs)(c.kL8, {
-              "aria-label": T.intl.string(T.t.dcl9MT),
+              "aria-label": S.intl.string(S.t.dcl9MT),
               onClick: ee,
               className: A.headerCollapsedClickableContainer,
               children: [(0, r.jsx)("div", {
@@ -204,18 +204,18 @@ let w = (0, Chunk261616.animated)(Chunk481060.CJ0),
                     className: A.heading,
                     color: "always-white"
                   }, e), {
-                    children: T.intl.format(T.t.EAYZAg, {
+                    children: S.intl.format(S.t.EAYZAg, {
                       questName: a.config.messages.questName
                     })
                   }))
                 }), (0, r.jsx)(c.Text, {
                   variant: "text-xs/normal",
                   color: "always-white",
-                  children: q ? T.intl.formatToPlainString(T.t.APddvL, {
+                  children: q ? S.intl.formatToPlainString(S.t.APddvL, {
                     expirationDate: J
-                  }) : n ? T.intl.formatToPlainString(T.t.v7xMw8, {
+                  }) : n ? S.intl.formatToPlainString(S.t.v7xMw8, {
                     expirationDate: Q
-                  }) : T.intl.formatToPlainString(T.t["pX+fmp"], {
+                  }) : S.intl.formatToPlainString(S.t["pX+fmp"], {
                     expirationDate: Q
                   })
                 })]
@@ -246,7 +246,7 @@ let w = (0, Chunk261616.animated)(Chunk481060.CJ0),
               "aria-hidden": !x && !L,
               children: (0, r.jsx)(c.P3F, P(N({}, e), {
                 className: A.iconWrapper,
-                "aria-label": T.intl.string(T.t.DEoVWV),
+                "aria-label": S.intl.string(S.t.DEoVWV),
                 children: (0, r.jsx)(c.xhG, {
                   size: "md",
                   color: l.Z.WHITE
@@ -256,7 +256,7 @@ let w = (0, Chunk261616.animated)(Chunk481060.CJ0),
           }), !(0, v.W_)(C) && (0, r.jsx)(c.P3F, {
             onClick: ee,
             className: A.iconWrapper,
-            "aria-label": L ? T.intl.string(T.t.iTcumZ) : T.intl.string(T.t.dcl9MT),
+            "aria-label": L ? S.intl.string(S.t.iTcumZ) : S.intl.string(S.t.dcl9MT),
             children: (0, r.jsx)(w, {
               style: {
                 rotate: D.to({

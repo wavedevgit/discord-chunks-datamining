@@ -47,7 +47,7 @@ function I(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,8 +58,8 @@ function S(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -87,10 +87,10 @@ let A = {},
     mute_config: null
   },
   L = {
-    [Chunk981631.bL.ALL_MESSAGES]: T(I({}, x), {
+    [Chunk981631.bL.ALL_MESSAGES]: S(I({}, x), {
       message_notifications: Chunk981631.bL.ALL_MESSAGES
     }),
-    [Chunk981631.bL.ONLY_MENTIONS]: T(I({}, x), {
+    [Chunk981631.bL.ONLY_MENTIONS]: S(I({}, x), {
       message_notifications: Chunk981631.bL.ONLY_MENTIONS
     })
   },
@@ -107,7 +107,7 @@ function F(e, t) {
   let r = A[e],
     i = null != (n = null == r ? true : r.channel_overrides) ? n : {},
     o = Q(t.channel_overrides),
-    s = T(I({}, X(e), r, t), {
+    s = S(I({}, X(e), r, t), {
       channel_overrides: o
     });
   w.clearTimer(e), a().forEach(i, e => {
@@ -297,7 +297,7 @@ function es(e) {
     channelId: n,
     settings: r
   } = e;
-  null != t && null != r.flags && (B[t] = T(I({}, B[t]), {
+  null != t && null != r.flags && (B[t] = S(I({}, B[t]), {
     [n]: {
       flags: r.flags
     }
@@ -335,7 +335,7 @@ function ed(e) {
   let {
     guildId: t
   } = e, n = null == A[t] ? X(t) : A[t];
-  A[t] = T(I({}, n), {
+  A[t] = S(I({}, n), {
     guild_id: t,
     hide_muted_channels: true !== n.hide_muted_channels
   })

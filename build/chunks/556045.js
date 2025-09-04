@@ -10,13 +10,13 @@ var Chunk647438 = require("./647438.js"),
   Chunk86419 = require("./86419.js");
 
 function c(e) {
-  let [t, r] = n.useState(false), c = e.type, s = (0, i.e7)([l.default, a.Z], () => {
+  let [t, r] = n.useState(false), c = e.type, s = (0, i.e7)([l.default, o.Z], () => {
     var e;
     let t = l.default.getId();
     if (null == t) returnfalse;
-    let r = a.Z.getUserProfile(t);
+    let r = o.Z.getUserProfile(t);
     return (null != (e = null == r ? true : r.widgets) ? e : []).some(e => e.type === c)
-  }), u = (0, o.kQ)(e);
+  }), u = (0, a.kQ)(e);
   return {
     shouldShowSuggestions: !s && !t && !u,
     handleDismissSuggestions: n.useCallback(() => {

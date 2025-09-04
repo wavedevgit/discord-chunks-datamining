@@ -71,7 +71,7 @@ function y(e) {
   let {
     subscription: E,
     onUpdated: O
-  } = e, [T, S] = r.useState(false), [P, w] = r.useState(false), [k, I] = r.useState(false), [R, Z] = r.useState(false), [A, D] = r.useState(null), L = e => (null == e && (e = E.status), e in j) ? j[e] : "Unknown status ".concat(e), M = e => {
+  } = e, [T, S] = r.useState(false), [P, I] = r.useState(false), [w, k] = r.useState(false), [R, Z] = r.useState(false), [A, D] = r.useState(null), L = e => (null == e && (e = E.status), e in j) ? j[e] : "Unknown status ".concat(e), M = e => {
     let t = new Date(e);
     return u.default.fromTimestamp(t.getTime())
   }, F = async e => {
@@ -124,7 +124,7 @@ function y(e) {
       D(e.body.message)
     }
     O()
-  }, z = (null == (t = f.GP[E.planIdFromItems]) ? true : t.premiumType) === f.p9.TIER_0, B = null == (n = E.metadata) ? true : n.ended_at, G = null != B ? new Date(B).toISOString().substring(0, 10) : "", V = E.hasActiveTrial, H = (null == (l = E.metadata) ? true : l.active_discount_id) != null;
+  }, z = (null == (t = f.GP[E.planIdFromItems]) ? true : t.premiumType) === f.p9.TIER_0, G = null == (n = E.metadata) ? true : n.ended_at, B = null != G ? new Date(G).toISOString().substring(0, 10) : "", V = E.hasActiveTrial, H = (null == (l = E.metadata) ? true : l.active_discount_id) != null;
   return (0, a.jsxs)("div", {
     className: i()(v.card, z ? v.gradientWrapperTier0 : v.gradientWrapperTier2),
     children: [V && (0, a.jsx)(o.P3F, {
@@ -171,7 +171,7 @@ function y(e) {
       className: b.collapsablePane,
       children: [(0, a.jsxs)(o.P3F, {
         onClick: () => {
-          I(!k)
+          k(!w)
         },
         className: b.collapsablePaneHeader,
         children: [(0, a.jsx)("div", {
@@ -180,9 +180,9 @@ function y(e) {
             children: "Trial Info"
           })
         }), (0, a.jsx)(c.Z, {
-          direction: k ? c.Z.Directions.UP : c.Z.Directions.DOWN
+          direction: w ? c.Z.Directions.UP : c.Z.Directions.DOWN
         })]
-      }), k && (0, a.jsxs)("ul", {
+      }), w && (0, a.jsxs)("ul", {
         className: b.collapsiblePaneList,
         children: [(0, a.jsxs)("li", {
           children: [(0, a.jsx)(o.Text, {
@@ -271,7 +271,7 @@ function y(e) {
       className: b.collapsablePane,
       children: [(0, a.jsxs)(o.P3F, {
         onClick: () => {
-          w(!P)
+          I(!P)
         },
         className: b.collapsablePaneHeader,
         children: [(0, a.jsx)("div", {
@@ -330,7 +330,7 @@ function y(e) {
           className: b.formSection,
           children: (0, a.jsx)("input", {
             type: "date",
-            value: G,
+            value: B,
             onChange: e => F({
               endedAt: e.target.value
             })

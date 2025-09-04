@@ -86,7 +86,7 @@ function I(e) {
     })
   }
   let h = (0, o.e7)([_.Z], () => _.Z.getCount(t.id)),
-    y = S(t),
+    y = T(t),
     v = null != h && h > 0;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
@@ -128,7 +128,7 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   var t;
   let n = (0, o.e7)([_.Z], () => _.Z.getMostRecentMessage(e.id)),
     i = (0, o.e7)([_.Z], () => _.Z.getCount(e.id)),

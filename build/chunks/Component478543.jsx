@@ -61,7 +61,7 @@ function I() {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     subHead: t,
     buildDetails: n,
@@ -94,7 +94,7 @@ function S(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   let t, n, r, {
       currentOverrides: i,
       linkMeta: a,
@@ -122,7 +122,7 @@ function T(e) {
       confirmVariant: "critical-primary"
     }) : t()
   };
-  return S({
+  return T({
     subHead: b.intl.string(b.t.RCYGoq),
     buildDetails: y.id,
     buttonClick: v,
@@ -133,7 +133,7 @@ function T(e) {
 }
 
 function A(e) {
-  return S({
+  return T({
     subHead: b.intl.string(b.t.ODXApK),
     buttonColor: c.zx.Colors.TRANSPARENT,
     buttonText: "Invalid",
@@ -184,7 +184,7 @@ let N = e => {
       className: y.content,
       children: [(0, r.jsx)(_.Z, {
         className: y.icon
-      }), t ? I() : T({
+      }), t ? I() : S({
         currentOverrides: n,
         linkMeta: a,
         applyBuildOverride: d,

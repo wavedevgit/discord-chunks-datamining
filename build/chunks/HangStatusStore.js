@@ -63,11 +63,11 @@ function I() {
   }
 }
 
-function S() {
+function T() {
   v = I()
 }
 
-function T(e) {
+function S(e) {
   let {
     status: t,
     saveAsDefault: n
@@ -194,8 +194,8 @@ m(w, "displayName", "HangStatusStore"), m(w, "persistKey", "HangStatusStore"), m
   return e
 }]);
 let D = new w(Chunk570140.Z, {
-  LOGOUT: S,
-  UPDATE_HANG_STATUS: T,
+  LOGOUT: T,
+  UPDATE_HANG_STATUS: S,
   UPDATE_HANG_STATUS_CUSTOM: A,
   UPDATE_HANG_STATUS_GAME_ACTIVITY: C,
   DELETE_INVALID_HANG_STATUSES: P,

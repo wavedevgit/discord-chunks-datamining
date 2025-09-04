@@ -57,11 +57,11 @@ class m {
         messageSnapshot: v
       } = this,
       I = (0, Chunk55935.Xf)(v.message.timestamp),
-      S = _.getChannel(this.parentMessage.channel_id);
-    if (null != S && S.guild_id === (null == (e = O.messageReference) ? true : module.guild_id)) {
+      T = _.getChannel(this.parentMessage.channel_id);
+    if (null != T && T.guild_id === (null == (e = O.messageReference) ? true : module.guild_id)) {
       let e = _.getChannel(null == (n = O.messageReference) ? true : require.channel_id);
       if (null == module) {
-        let e = E.getGuild(S.guild_id);
+        let e = E.getGuild(T.guild_id);
         return null == module ? {
           snapshotIndex: y
         } : {
@@ -85,11 +85,11 @@ class m {
         }
       }
     }
-    let T = null == (t = O.messageReference) ? true : exports.guild_id;
-    if (null == T) return {
+    let S = null == (t = O.messageReference) ? true : exports.guild_id;
+    if (null == S) return {
       snapshotIndex: y
     };
-    let A = null != (u = E.getGuild(T)) ? Chunk768581 : b.getGuild(T);
+    let A = null != (u = E.getGuild(S)) ? Chunk768581 : b.getGuild(S);
     return null == A ? {
       snapshotIndex: y
     } : {

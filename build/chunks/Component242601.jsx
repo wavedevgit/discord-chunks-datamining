@@ -241,7 +241,7 @@ class e_ extends Chunk647438.PureComponent {
         animation: f.yRy.Animation.SCALE,
         shouldShow: n,
         onRequestClose: () => {
-          (0, N.l)(false)
+          (0, T.l)(false)
         },
         spacing: 4,
         children: i => {
@@ -355,7 +355,7 @@ class e_ extends Chunk647438.PureComponent {
       let {
         isHeaderPopoutOpen: t
       } = this.props;
-      e.stopPropagation(), (0, N.l)(!t), this.closeAllHeaderNotices()
+      e.stopPropagation(), (0, T.l)(!t), this.closeAllHeaderNotices()
     }), ep(this, "handleContextMenu", e => {
       let {
         guild: t
@@ -498,12 +498,12 @@ function eO(e) {
   }, [n, z, L]);
   let [et, en] = (0, I.ZP)(e => [eo.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(es.R.GUILD_HEADER_TOOLTIPS)], s.X), er = (0, v.Z)(o), ei = (0, f.s9z)(f.JQI), el = (0, c.e7)([Y.Z], () => Y.Z.hasLayers()), ec = (0, c.e7)([B.Z], () => B.Z.shouldShow(em)), eu = (0, D.cT)(n, "GuildSidebar") && g && (null == o ? true : o.premiumProgressBarEnabled) === false && !$.s.isDisallowPopupsSet(), ed = (0, P.Z)(n), ep = (null == o ? true : o.features.has(ea.oNc.HUB)) === true, ef = g && (null == o ? true : o.features.has(ea.oNc.DISCOVERABLE)) === true, eh = (0, y.Q)(), eg = (g || (null == o ? true : o.premiumTier) === ea.Eu4.NONE) && !$.s.isDisallowPopupsSet() && !eh, eb = (0, c.e7)([A.Z, Y.Z], () => null != o && null != x && g && !Y.Z.hasLayers() && A.Z.shouldShowGuildTemplateDirtyTooltip(n)), eO = (0, c.e7)([V.Z], () => V.Z.getChannel(a)), {
     isPopoutOpen: eE
-  } = (0, N.y)(), ey = null != (t = null == o ? true : o.features.has(ea.oNc.COMMUNITY)) && t, ev = J.ZP.isNewUser(x), eI = U && !ev;
-  (0, T.Z)(o);
+  } = (0, T.y)(), ey = null != (t = null == o ? true : o.features.has(ea.oNc.COMMUNITY)) && t, ev = J.ZP.isNewUser(x), eI = U && !ev;
+  (0, N.Z)(o);
   let eC = (0, C.Nj)(u.z.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
     eS = (0, R.Z)(n),
-    eN = (0, j.Z)(n),
-    eT = (0, c.e7)([Q.Z], () => Q.Z.getChannelId()),
+    eT = (0, j.Z)(n),
+    eN = (0, c.e7)([Q.Z], () => Q.Z.getChannelId()),
     ej = (0, c.e7)([q.Z], () => q.Z.desyncedVoiceStatesCount),
     eP = M.Y.useExperiment({
       location: "GuildSidebar"
@@ -520,7 +520,7 @@ function eO(e) {
     selectedChannel: eO,
     selectedVoiceChannelId: h,
     voiceStates: d,
-    rtcConnectedChannelId: eT,
+    rtcConnectedChannelId: eN,
     rtcDesyncedVoiceStatesCount: ej,
     isUnavailable: m,
     user: x,
@@ -535,7 +535,7 @@ function eO(e) {
     showHubPrivacySettingsTooltip: ep,
     showNewUnreadsBar: ey,
     showMediaChannelUpsell: eS,
-    showTierTemplatesUpsell: eN,
+    showTierTemplatesUpsell: eT,
     isHeaderPopoutOpen: eE,
     enableStudyGroup: w,
     isGuildHeaderDismissibleTooltipShown: en,

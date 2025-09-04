@@ -32,12 +32,12 @@ function E(e) {
     pronouns: O,
     className: v,
     tagClassName: I,
-    isTryItOut: S,
-    onOpenProfile: T,
+    isTryItOut: T,
+    onOpenProfile: S,
     onClose: A,
     nicknameVariant: C = "heading-lg/bold"
-  } = e, N = e => null == T ? e : (0, r.jsx)(s.kL8, {
-    onClick: T,
+  } = e, N = e => null == S ? e : (0, r.jsx)(s.kL8, {
+    onClick: S,
     className: g.clickableUsername,
     "aria-label": m.intl.string(m.t["+Xp3ho"]),
     children: e
@@ -60,7 +60,7 @@ function E(e) {
           shouldWrap: true,
           loop: true,
           inProfile: true,
-          shouldUnderlineOnHover: null != T
+          shouldUnderlineOnHover: null != S
         })
       }) : (0, r.jsx)(s.Text, {
         className: g.nickname,
@@ -82,7 +82,7 @@ function E(e) {
         user: t,
         usernameIcon: n,
         forceUsername: true,
-        forcePomelo: S,
+        forcePomelo: T,
         className: a()(g.userTag, I),
         usernameClass: g.userTagUsername,
         discriminatorClass: g.userTagDiscriminator,

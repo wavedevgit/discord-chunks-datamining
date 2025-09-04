@@ -22,8 +22,8 @@ var Chunk46015 = require("./46015.js"),
   O = Chunk46015("".charCodeAt),
   v = Chunk46015([].join),
   I = Chunk46015([].push),
-  S = Chunk46015("".replace),
-  T = Chunk46015("".split),
+  T = Chunk46015("".replace),
+  S = Chunk46015("".split),
   A = Chunk46015("".toLowerCase),
   C = function(e) {
     for (var t = [], n = 0, r = e.length; n < r;) {
@@ -55,19 +55,19 @@ var Chunk46015 = require("./46015.js"),
     for (m && I(r, f); E < l;) {
       var O = i;
       for (t = 0; t < e.length; t++)(n = e[t]) >= c && n < O && (O = n);
-      var S = E + 1;
-      if (O - c > b((i - _) / S)) throw new g(h);
-      for (_ += (O - c) * S, c = O, t = 0; t < e.length; t++) {
+      var T = E + 1;
+      if (O - c > b((i - _) / T)) throw new g(h);
+      for (_ += (O - c) * T, c = O, t = 0; t < e.length; t++) {
         if ((n = e[t]) < c && ++_ > i) throw new g(h);
         if (n === c) {
-          for (var T = _, A = a;;) {
+          for (var S = _, A = a;;) {
             var P = A <= p ? o : A >= p + s ? s : A - p;
-            if (T < P) break;
-            var w = T - P,
+            if (S < P) break;
+            var w = S - P,
               D = a - P;
-            I(r, y(N(P + w % D))), T = b(w / D), A += a
+            I(r, y(N(P + w % D))), S = b(w / D), A += a
           }
-          I(r, y(N(T))), p = R(_, S, E === m), _ = 0, E++
+          I(r, y(N(S))), p = R(_, T, E === m), _ = 0, E++
         }
       }
       _++, c++
@@ -76,7 +76,7 @@ var Chunk46015 = require("./46015.js"),
   };
 module.exports = function(e) {
   var t, n, r = [],
-    i = T(S(A(e), p, "."), ".");
+    i = S(T(A(e), p, "."), ".");
   for (t = 0; t < i.length; t++) I(r, E(_, n = i[t]) ? "xn--" + P(n) : n);
   return v(r, ".")
 }

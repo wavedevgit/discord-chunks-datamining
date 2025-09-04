@@ -33,8 +33,8 @@ async function O(e) {
       analyticsLocations: O,
       componentId: v,
       sectionName: I,
-      source: S,
-      inviterUserId: T,
+      source: T,
+      inviterUserId: S,
       customId: A,
       referrerId: C
     } = e,
@@ -75,8 +75,8 @@ async function O(e) {
     locationObject: y,
     componentId: v,
     sectionName: I,
-    source: S,
-    inviterUserId: T,
+    source: T,
+    inviterUserId: S,
     customId: A,
     referrerId: C
   })

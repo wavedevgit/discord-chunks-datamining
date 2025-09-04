@@ -68,12 +68,12 @@ function I(e) {
   } = e, b = O(e, ["onClose", "handleLearnMore"]);
   let v = (0, a.e7)([c.default], () => c.default.getCurrentUser()),
     I = (0, a.e7)([s.Z], () => s.Z.theme),
-    S = (0, a.e7)([l.Z], () => l.Z.getGuildId()),
-    T = I === m.BRd.LIGHT ? "light" : "dark",
+    T = (0, a.e7)([l.Z], () => l.Z.getGuildId()),
+    S = I === m.BRd.LIGHT ? "light" : "dark",
     A = (0, r.jsx)("img", {
       className: E.art,
       alt: "File Upload Nitro Perk",
-      src: "https://cdn.discordapp.com/assets/premium/roadblocks/file_upload_".concat(T, "_v2.png")
+      src: "https://cdn.discordapp.com/assets/premium/roadblocks/file_upload_".concat(S, "_v2.png")
     }),
     C = i.useMemo(() => {
       let e = _.ZP.getUserMaxFileSize(v);
@@ -82,7 +82,7 @@ function I(e) {
       })
     }, [v]),
     N = (0, d.iL)({
-      guildId: S,
+      guildId: T,
       onClick: () => {
         window.open(f.Z.getArticleURL(m.BhN.NITRO_FAQ), "_blank")
       }

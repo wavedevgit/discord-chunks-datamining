@@ -324,8 +324,8 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       voiceActivityStatusEnabled: eI
     } = (0, d.U)({
       location: "MemberListItem"
-    }), eS = eI ? ev : true, {
-      avatarDecorationSrc: eT,
+    }), eT = eI ? ev : true, {
+      avatarDecorationSrc: eS,
       avatarSrc: eA,
       eventHandlers: eC
     } = (0, N.Z)({
@@ -335,11 +335,11 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       guildId: G
     }), eN = null != ec ? ec : {}, {
       onFocus: eR
-    } = eN, eP = Z(eN, ["onFocus"]), ew = (0, S.X7)(G, ed, null != l ? l : null), eD = (0, s.e7)([A.Z], () => null != A.Z.questEnrollmentBlockedUntil, []), [ex, eL] = i.useState(false);
+    } = eN, eP = Z(eN, ["onFocus"]), ew = (0, T.X7)(G, ed, null != l ? l : null), eD = (0, s.e7)([A.Z], () => null != A.Z.questEnrollmentBlockedUntil, []), [ex, eL] = i.useState(false);
     i.useEffect(() => {
       n && eL(false)
     }, [n]);
-    let ej = (0, T.fN)(v),
+    let ej = (0, S.fN)(v),
       eM = null != ej && !e_ && n && !ex,
       ek = i.useCallback(() => {
         eg(true)
@@ -430,7 +430,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
           avatarSrc: eA,
           isMobile: L,
           isTyping: E,
-          avatarDecorationSrc: eT,
+          avatarDecorationSrc: eS,
           handleSetTypingRef: eZ,
           typingRef: ey,
           currentUser: O
@@ -441,7 +441,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
           activities: v,
           status: P,
           applicationStream: I,
-          voiceStatusChannel: eS,
+          voiceStatusChannel: eT,
           user: y,
           channel: k,
           isHoveringOrFocusing: em || eE,

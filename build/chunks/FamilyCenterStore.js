@@ -60,8 +60,8 @@ let h = null,
   O = C(),
   v = false,
   I = false,
-  S = null,
   T = null,
+  S = null,
   A = {};
 
 function C() {
@@ -138,7 +138,7 @@ function j(e) {
     teenId: o,
     rangeStartId: l
   } = n;
-  h = o, m = l, D(r), w(a), x(i), P(t), I = false, S = s.default.fromTimestamp(Date.now()), v = true
+  h = o, m = l, D(r), w(a), x(i), P(t), I = false, T = s.default.fromTimestamp(Date.now()), v = true
 }
 
 function M(e) {
@@ -167,7 +167,7 @@ function U(e) {
     teenId: a,
     rangeStartId: o
   } = t;
-  h = a, m = o, D(n), w(r), x(i), I = false, S = s.default.fromTimestamp(Date.now())
+  h = a, m = o, D(n), w(r), x(i), I = false, T = s.default.fromTimestamp(Date.now())
 }
 
 function G(e) {
@@ -227,7 +227,7 @@ function Y(e) {
   let {
     countryCode: n
   } = e;
-  null != n && (T = null != (t = (0, r.Zz)(n)) ? t : null)
+  null != n && (S = null != (t = (0, r.Zz)(n)) ? t : null)
 }
 
 function W() {
@@ -255,7 +255,7 @@ function z(e) {
 }
 
 function q() {
-  h = null, m = null, g = {}, E = N(), b = R(), A = {}, I = false, S = null, O = C()
+  h = null, m = null, g = {}, E = N(), b = R(), A = {}, I = false, T = null, O = C()
 }
 class X extends Chunk750041.Z {
   initialize() {
@@ -312,13 +312,13 @@ class X extends Chunk750041.Z {
     return v
   }
   getUserCountry() {
-    return T
+    return S
   }
   isLoading() {
     return I
   }
   canRefetch() {
-    return null === S || Chunk709054.default.age(S) > Chunk292352.Of
+    return null === T || Chunk709054.default.age(T) > Chunk292352.Of
   }
   constructor() {
     super({

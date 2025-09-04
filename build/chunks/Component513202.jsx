@@ -2,7 +2,7 @@
 /** chunk id: 513202, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -46,7 +46,7 @@ function O(e) {
 }
 let v = false,
   I = false;
-class S extends Chunk287545.Z {
+class T extends Chunk287545.Z {
   _initialize() {
     super._initialize(), Chunk522474.Z.addChangeListener(this.handlePopoutWindowUpdate), Chunk570140.Z.subscribe("POPOUT_WINDOW_OPEN", this.handlePopoutWindowOpen)
   }
@@ -143,4 +143,4 @@ class S extends Chunk287545.Z {
     })
   }
 }
-let T = new S
+let S = new T

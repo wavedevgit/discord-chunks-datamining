@@ -59,8 +59,8 @@ function y(e, t) {
 let O = 2,
   v = new Map,
   I = new Map,
-  S = null,
-  T = [],
+  T = null,
+  S = [],
   A = null,
   C = false,
   N = new Map,
@@ -98,7 +98,7 @@ let x = function(e) {
   },
   L = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null;
-    if (null == S) return;
+    if (null == T) return;
     let {
       tags: n
     } = e, r = {
@@ -106,7 +106,7 @@ let x = function(e) {
       value: e.name.trim().toLocaleLowerCase()
     };
     if ((0, m.jl)(e)) {
-      let t = T.find(t => t.id === e.pack_id),
+      let t = S.find(t => t.id === e.pack_id),
         i = [r, ...(null != n ? n : "").split(",").map(e => ({
           type: h.MO.TAG,
           value: e.trim().toLocaleLowerCase()
@@ -114,7 +114,7 @@ let x = function(e) {
       null != t && i.push({
         type: h.MO.PACK_NAME,
         value: t.name
-      }), S.set(e.id, i)
+      }), T.set(e.id, i)
     } else if ((0, m.J8)(e) && null != n) {
       let i = u.ZP.getByName(n),
         a = [r, {
@@ -128,29 +128,29 @@ let x = function(e) {
           value: e
         })
       }
-      if (null == i) return void S.set(e.id, a);
+      if (null == i) return void T.set(e.id, a);
       a.push({
         type: h.MO.CORRELATED_EMOJI,
         value: i.surrogates
       }), i.forEachDiversity(e => a.push({
         type: h.MO.CORRELATED_EMOJI,
         value: e.surrogates
-      })), S.set(e.id, a)
+      })), T.set(e.id, a)
     }
   },
   j = (e, t, n) => {
     v.set(e.id, e);
-    let r = [...T];
+    let r = [...S];
     if (t) {
       let t = r.findIndex(t => t.id === e.id);
-      false !== t ? r[t] = e : r.push(e), T = r
+      false !== t ? r[t] = e : r.push(e), S = r
     }(t || n) && e.stickers.forEach(e => x(e))
   },
   M = () => {
     N.forEach((e, t) => {
       let n = _.Z.getGuild(t);
       null != n && e.forEach(e => L(e, n))
-    }), T.forEach(e => {
+    }), S.forEach(e => {
       e.stickers.forEach(e => L(e))
     })
   },
@@ -158,10 +158,10 @@ let x = function(e) {
     let {
       guilds: t
     } = e;
-    S = null, I = new Map, N = new Map, t.forEach(G), O = +!!t.every(e => null != e.stickers.items)
+    T = null, I = new Map, N = new Map, t.forEach(G), O = +!!t.every(e => null != e.stickers.items)
   },
   U = () => {
-    S = null, I = new Map, N = new Map, O = 0
+    T = null, I = new Map, N = new Map, O = 0
   };
 
 function G(e) {
@@ -182,11 +182,11 @@ function Z(e) {
     guild: n
   } = e;
   (null != (t = N.get(n.id)) ? t : []).forEach(e => {
-    null != S && S.delete(e.id), I.delete(e.id)
+    null != T && T.delete(e.id), I.delete(e.id)
   }), N.delete(n.id), N = new Map(N)
 }
 let F = () => {
-    O = 0, T = [], I.clear(), v.clear(), S = null, N.clear(), N = new Map(N), C = false, A = null
+    O = 0, S = [], I.clear(), v.clear(), T = null, N.clear(), N = new Map(N), C = false, A = null
   },
   V = () => {
     C = true
@@ -237,7 +237,7 @@ let F = () => {
       })
     };
     (null != (t = N.get(n)) ? t : []).filter(e => null == r.find(t => t.id === e.id)).forEach(e => {
-      I.delete(e.id), null != S && S.delete(e.id)
+      I.delete(e.id), null != T && T.delete(e.id)
     });
     let a = r.map(e => i(e));
     a.forEach(e => x(e)), R(n, a)
@@ -253,7 +253,7 @@ class X extends(r = Chunk442837.ZP.Store) {
     return O
   }
   get stickerMetadata() {
-    return w(), null == S && (S = new Map, M()), S
+    return w(), null == T && (T = new Map, M()), T
   }
   get hasLoadedStickerPacks() {
     return null != A && A + P > Date.now()
@@ -268,10 +268,10 @@ class X extends(r = Chunk442837.ZP.Store) {
     return v.get(e)
   }
   getPremiumPacks() {
-    return T
+    return S
   }
   isPremiumPack(e) {
-    return T.some(t => t.id === e)
+    return S.some(t => t.id === e)
   }
   getRawStickersByGuild() {
     return N

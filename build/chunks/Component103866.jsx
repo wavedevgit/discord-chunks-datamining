@@ -84,15 +84,15 @@ function y(e) {
     controls: a,
     children: d,
     listProps: p
-  } = e, [m, E] = i.useState(false), [b, y] = i.useState(null != p), O = i.useRef(null), v = (0, f.Z)(O, null == p ? true : p.ref), I = i.useRef(null), S = (0, s.throttle)(() => {
+  } = e, [m, E] = i.useState(false), [b, y] = i.useState(null != p), O = i.useRef(null), v = (0, f.Z)(O, null == p ? true : p.ref), I = i.useRef(null), T = (0, s.throttle)(() => {
     var e;
     (null == O ? true : O.current) != null && null != a && E((null == (e = O.current) ? true : e.getDistanceFromTop()) > 12)
-  }, 200), T = null != p;
+  }, 200), S = null != p;
   return i.useLayoutEffect(() => {
     var e, t;
     let n = new ResizeObserver(() => {
         var e, t;
-        if (T) return void y(true);
+        if (S) return void y(true);
         let n = null != (t = null == O || null == (e = O.current) ? true : e.getScrollerNode()) ? t : null;
         if (null == n || (null == I ? true : I.current) == null) return;
         let r = n.getBoundingClientRect();
@@ -100,7 +100,7 @@ function y(e) {
       }),
       r = null != (t = null == O || null == (e = O.current) ? true : e.getScrollerNode()) ? t : null;
     return null != r && n.observe(r), (null == I ? true : I.current) != null && n.observe(I.current), () => n.disconnect()
-  }, [T]), (0, r.jsxs)(l.y5, {
+  }, [S]), (0, r.jsxs)(l.y5, {
     children: [(0, r.jsx)("div", {
       className: o()(_.bodySpacerTop, {
         [_.bodySpacerTopBorder]: b && null == a
@@ -117,12 +117,12 @@ function y(e) {
       ref: v,
       onScroll: e => {
         var t;
-        S(), null == (t = p.onScroll) || t.call(p, e)
+        T(), null == (t = p.onScroll) || t.call(p, e)
       }
     })) : (0, r.jsx)(u.yW, {
       ref: O,
       className: _.body,
-      onScroll: S,
+      onScroll: T,
       children: (0, r.jsx)("main", {
         ref: I,
         className: o()(_.bodyInner, {

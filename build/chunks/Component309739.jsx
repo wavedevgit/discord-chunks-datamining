@@ -290,7 +290,7 @@ function V(e) {
     showHeader: n = true
   } = e, {
     showRedesign: i
-  } = T.b.useExperiment({
+  } = S.b.useExperiment({
     location: "activity privacy tab"
   }), {
     showUpdatedSettingsPage: a

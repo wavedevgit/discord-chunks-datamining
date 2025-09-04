@@ -2,7 +2,7 @@
 /** chunk id: 574755, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,12 +26,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk749799 = require("./749799.js"),
   Chunk197571 = require("./197571.js");
 
-function S(e) {
+function T(e) {
   let {
     className: t,
     showHeader: n = true
-  } = e, S = d.tU.useSetting(), {
-    enableViewerClipping: T
+  } = e, T = d.tU.useSetting(), {
+    enableViewerClipping: S
   } = u.Z.useExperiment({
     location: "Clips Settings"
   }, {
@@ -61,13 +61,13 @@ function S(e) {
       children: [(0, r.jsx)(s.j7V, {
         hideBorder: true,
         className: v.formItem,
-        value: S,
+        value: T,
         note: y.intl.string(y.t["wW9/zc"]),
         onChange: e => m.yg({
           allowVoiceRecording: e
         }),
         children: y.intl.string(y.t.AGDDkJ)
-      }), T && R && (0, r.jsx)(s.j7V, {
+      }), S && R && (0, r.jsx)(s.j7V, {
         hideBorder: true,
         className: v.formItem,
         value: N,

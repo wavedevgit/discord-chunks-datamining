@@ -127,14 +127,14 @@ function x(e) {
         start: t,
         end: n
       } = e;
-      return null == t || null == n ? null : (0, r.jsx)(S.Z, {
+      return null == t || null == n ? null : (0, r.jsx)(T.Z, {
         start: t,
         end: n
       })
     },
     Y = () => t.id === n.id ? null : (0, r.jsx)("div", {
       className: N.actions,
-      children: (0, r.jsx)(T.Z, {
+      children: (0, r.jsx)(S.Z, {
         user: t,
         activity: a,
         onAction: Z

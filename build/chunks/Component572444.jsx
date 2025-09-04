@@ -105,9 +105,9 @@ function _() {
     krispModels: T,
     krispModelOverride: S,
     inputMode: P,
-    echoCancellation: w,
-    autoThreshold: k,
-    vadUseKrisp: I,
+    echoCancellation: I,
+    autoThreshold: w,
+    vadUseKrisp: k,
     vadKrispActivationThreshold: R,
     noiseCancellation: Z,
     noiseSuppression: A,
@@ -132,12 +132,12 @@ function _() {
     null == (e = C.current) || module.stop(), C.current = null, y(null)
   }, []);
 
-  function B() {
+  function G() {
     Chunk131951.Z.getMediaEngine().stopRecordingRawSamples()
   }
 
-  function G(e) {
-    if (t && B(), z(), null == U) return;
+  function B(e) {
+    if (t && G(), z(), null == U) return;
     let n = U.createBufferSource();
     n.buffer = e.audioBuffer, N.current = U.createGain(), N.current.gain.value = E, n.connect(N.current), N.current.connect(U.destination), n.loop = true, n.start(), C.current = n, y(e)
   }
@@ -223,25 +223,25 @@ function _() {
           tag: Chunk481060.RB0.H3,
           children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
             hideBorder: true,
-            value: k,
+            value: w,
             onChange: e => d.Z.setMode(f.pM.VOICE_ACTIVITY, {
               autoThreshold: e
             }),
             children: "Auto Threshold"
           })
-        }), k && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+        }), w && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
           children: [(0, Chunk951288.jsx)(Chunk481060.hjN, {
             title: "VAD Krisp Auto Threshold",
             tag: Chunk481060.RB0.H3,
             children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
               hideBorder: true,
-              value: I,
+              value: k,
               onChange: e => d.Z.setMode(f.pM.VOICE_ACTIVITY, {
                 vadUseKrisp: e
               }),
               children: "Use Krisp VAD"
             })
-          }), I && (0, Chunk951288.jsx)(Chunk481060.hjN, {
+          }), k && (0, Chunk951288.jsx)(Chunk481060.hjN, {
             title: "Krisp VAD Activation Threshold",
             tag: Chunk481060.RB0.H3,
             children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
@@ -258,7 +258,7 @@ function _() {
         tag: Chunk481060.RB0.H3,
         children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
           hideBorder: true,
-          value: w,
+          value: I,
           onChange: e => d.Z.setEchoCancellation(e),
           children: "Echo Cancellation"
         })
@@ -267,7 +267,7 @@ function _() {
         tag: Chunk481060.RB0.H3,
         children: (0, Chunk951288.jsx)(Chunk755721.zx, {
           color: exports ? Chunk755721.zx.Colors.RED : Chunk755721.zx.Colors.BRAND,
-          onClick: exports ? B : function() {
+          onClick: exports ? G : function() {
             z(), require(true), Chunk846027.Z.setLoopback("krisp_test", true), Chunk131951.Z.getMediaEngine().startRecordingRawSamples((t, a, r) => {
               n(false), d.Z.setLoopback("krisp_test", false);
               let l = new AudioBuffer({
@@ -285,7 +285,7 @@ function _() {
                 audioBuffer: l,
                 createdAt: Date.now(),
                 suppression: F,
-                echoCancellation: w,
+                echoCancellation: I,
                 krispSuppressionLevel: j
               }])
             })
@@ -309,7 +309,7 @@ function _() {
         children: Chunk345959.map((e, t) => (0, a.jsx)(g, {
           recording: e,
           playing: e === _,
-          onPlay: G,
+          onPlay: B,
           onStop: z
         }, t))
       })]

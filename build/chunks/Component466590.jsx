@@ -83,8 +83,8 @@ function v(e) {
         align: "center"
       },
       size: I = "md",
-      onStepChange: S,
-      onRequestClose: T,
+      onStepChange: T,
+      onRequestClose: S,
       popoverRef: A,
       shouldShow: C
     } = e,
@@ -93,20 +93,20 @@ function v(e) {
   i.useEffect(() => {
     C && P(0)
   }, [C]), i.useEffect(() => {
-    null == S || S(R)
-  }, [R, S]);
+    null == T || T(R)
+  }, [R, T]);
   let w = O[R],
     D = R + 1 === O.length,
     x = i.useCallback(() => {
       var e;
-      null == w || null == (e = w.onCta) || e.call(w), D ? null == T || T() : P(e => e + 1)
-    }, [w, D, T]),
+      null == w || null == (e = w.onCta) || e.call(w), D ? null == S || S() : P(e => e + 1)
+    }, [w, D, S]),
     L = i.useCallback(() => {
-      null == T || T()
-    }, [T]),
+      null == S || S()
+    }, [S]),
     j = i.useCallback(() => {
-      null == T || T()
-    }, [T]);
+      null == S || S()
+    }, [S]);
   if (!C || null == w) return null;
   let M = g({
     text: null != (a = null == (t = w.action) ? true : t.text) ? a : D ? p.intl.string(p.t.i4jeWV) : p.intl.string(p.t.PDTjLC),

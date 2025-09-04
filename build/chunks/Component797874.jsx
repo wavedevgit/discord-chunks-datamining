@@ -2,7 +2,7 @@
 /** chunk id: 797874, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -56,21 +56,21 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = function(e) {
+let S = function(e) {
   let {
     gameId: t,
     channelId: a
-  } = e, O = i.useRef(null), I = (0, s.e7)([h.Z], () => h.Z.getDetectableGame(t)), T = (0, s.e7)([p.Z], () => p.Z.getChannel(a)), A = null != T ? T.getGuildId() : null, C = null != I ? e => {
+  } = e, O = i.useRef(null), I = (0, s.e7)([h.Z], () => h.Z.getDetectableGame(t)), S = (0, s.e7)([p.Z], () => p.Z.getChannel(a)), A = null != S ? S.getGuildId() : null, C = null != I ? e => {
     (0, u.jW)(e, async () => {
       let {
         default: e
       } = await n.e("51064").then(n.bind(n, 631861));
-      return t => (0, r.jsx)(e, S(v({}, t), {
+      return t => (0, r.jsx)(e, T(v({}, t), {
         game: I,
         guildId: A
       }))
@@ -109,7 +109,7 @@ let T = function(e) {
         text: w,
         "aria-label": w,
         delay: 750,
-        children: (0, r.jsxs)(g.Z, S(v({
+        children: (0, r.jsxs)(g.Z, T(v({
           onContextMenu: C,
           ref: O
         }, e), {

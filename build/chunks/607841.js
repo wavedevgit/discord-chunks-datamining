@@ -126,7 +126,7 @@ function I(e) {
   }
 }
 
-function S(e) {
+function T(e) {
   if (!b()) return;
   let t = null != e ? o.Z.getChannel(e) : true;
   if (null == t) return void _.Z.resignActivity();
@@ -145,7 +145,7 @@ function S(e) {
   _.Z.setActivity(l)
 }
 
-function T() {
+function S() {
   if (!g()) return;
   let e = Chunk430824.Z.getGuildsArray().map(e => I(e)),
     t = [],
@@ -192,7 +192,7 @@ function C(e) {
 }
 class N extends Chunk147913.Z {
   handleInit() {
-    S(Chunk944486.Z.getCurrentlySelectedChannelId()), E() && Chunk495527.Z.clearSearchIndex(), g() && T()
+    T(Chunk944486.Z.getCurrentlySelectedChannelId()), E() && Chunk495527.Z.clearSearchIndex(), g() && S()
   }
   handleLogout() {
     E() && Chunk495527.Z.clearSearchIndex()
@@ -201,7 +201,7 @@ class N extends Chunk147913.Z {
     let {
       channelId: t
     } = e;
-    S(t)
+    T(t)
   }
   handleChannelCreate(e) {
     var t;

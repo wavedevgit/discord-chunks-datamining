@@ -33,14 +33,14 @@ function b() {
     })),
     O = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT),
     v = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_OUTPUT),
-    [I, S] = (0, Chunk72897.Ls)(Chunk65154.h7.AUDIO_INPUT, {
+    [I, T] = (0, Chunk72897.Ls)(Chunk65154.h7.AUDIO_INPUT, {
       location: "UserSettingsDevices"
     }),
-    [T, A] = (0, Chunk72897.Ls)(Chunk65154.h7.AUDIO_OUTPUT, {
+    [S, A] = (0, Chunk72897.Ls)(Chunk65154.h7.AUDIO_OUTPUT, {
       location: "UserSettingsDevices"
     }),
-    C = I.concat(S),
-    N = T.concat(A),
+    C = I.concat(T),
+    N = S.concat(A),
     R = Chunk647438.useMemo(() => {
       let e = E.some(e => {
           var t;

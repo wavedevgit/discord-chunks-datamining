@@ -145,10 +145,10 @@ function v(e) {
     upperBadge: m,
     lowerBadge: O,
     rounded: v = false
-  } = e, [I, S] = i.useState(false), T = () => {
-    S(true)
+  } = e, [I, T] = i.useState(false), S = () => {
+    T(true)
   }, A = () => {
-    S(false)
+    T(false)
   }, C = null != m, N = null != O, R = i.useId(), P = "".concat(R, "-upper_badge_masks"), w = "".concat(R, "-lower_badge_masks"), D = "".concat(R, "-blob_mask"), x = "".concat(R, "-stroke_mask"), L = "".concat(R, "-highlight_mask"), j = (null == f ? true : f.width) != null ? f.width : g, M = (null == f ? true : f.height) != null ? f.height : g, k = {
     width: d ? n : n + 8,
     height: d ? n : n + 8,
@@ -158,7 +158,7 @@ function v(e) {
   return (0, r.jsxs)("div", {
     className: o()(a, u.wrapper),
     style: l,
-    onFocus: T,
+    onFocus: S,
     onBlur: A,
     children: [(0, r.jsxs)("svg", {
       width: k.width,

@@ -34,14 +34,14 @@ let N = e => {
     let {
       onClose: t,
       onShare: n
-    } = e, a = (0, s.e7)([O.Z], () => O.Z.getReferralsRemaining()), d = (0, s.e7)([O.Z], () => O.Z.getHasEligibleFriends()), [h, m] = i.useState(new Map), [g, y] = i.useState(""), S = (0, _.Z)(g, 400), {
+    } = e, a = (0, s.e7)([O.Z], () => O.Z.getReferralsRemaining()), d = (0, s.e7)([O.Z], () => O.Z.getHasEligibleFriends()), [h, m] = i.useState(new Map), [g, y] = i.useState(""), T = (0, _.Z)(g, 400), {
       eligibleUsers: N,
       fetchUsers: R,
       hasError: P,
       isFetching: w,
       resendUsers: D
     } = (0, v.q)({
-      searchQuery: S,
+      searchQuery: T,
       selectedUsers: h
     }), [x, L] = i.useState(false), j = (0, p.O)(e => {
       e && !w && R()
@@ -64,7 +64,7 @@ let N = e => {
       let i, {
           eligibleRecipients: a
         } = e,
-        s = S.length > 0 && 0 === a.size;
+        s = T.length > 0 && 0 === a.size;
       return i = true === s ? A.intl.string(A.t.wpSqAQ) : h.size <= 1 ? A.intl.string(A.t.ItpQxs) : A.intl.format(A.t.iW2str, {
         nTrials: h.size
       }), (0, r.jsx)("div", {
@@ -85,7 +85,7 @@ let N = e => {
       let {
         eligibleRecipients: t
       } = e;
-      returntrue == (S.length > 0 && 0 === t.size) ? (0, r.jsxs)("div", {
+      returntrue == (T.length > 0 && 0 === t.size) ? (0, r.jsxs)("div", {
         className: C.emptySearchResultsContainer,
         children: [(0, r.jsx)(u.X6q, {
           variant: "heading-md/semibold",
@@ -125,7 +125,7 @@ let N = e => {
       size: "sm",
       title: A.intl.string(A.t["2YigPj"]),
       subtitle: A.intl.format(A.t.OOCbz8, {
-        helpdeskArticle: E.Z.getArticleURL(T.BhN.REFERRAL_PROGRAM)
+        helpdeskArticle: E.Z.getArticleURL(S.BhN.REFERRAL_PROGRAM)
       }),
       onClose: t,
       actions: []
@@ -212,7 +212,7 @@ let w = e => {
   } = e, a = (0, s.e7)([O.Z], () => O.Z.getReferralsRemaining()), [o, l] = i.useState(n), [c, d] = i.useState([]), {
     analyticsLocations: f
   } = (0, m.ZP)([h.Z.PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL]), _ = async e => {
-    g.default.track(T.rMx.REFERRAL_PROGRAM_SHARE_CTA_CLICKED, {
+    g.default.track(S.rMx.REFERRAL_PROGRAM_SHARE_CTA_CLICKED, {
       location_stack: f
     });
     let t = await (0, y.jy)(Object.values(e).map(e => e.id));
@@ -224,7 +224,7 @@ let w = e => {
   if (null === a) return (0, r.jsx)(u.$jN, {});
   if (2 === o) {
     let e = 3 === n;
-    return (0, r.jsx)(S.m, {
+    return (0, r.jsx)(T.m, {
       isReminderConfirmation: e,
       results: c,
       onClose: t

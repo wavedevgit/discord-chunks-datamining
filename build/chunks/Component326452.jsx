@@ -99,8 +99,8 @@ class b extends(r = Chunk647438.PureComponent) {
         onBlur: O,
         onFocus: v,
         autoComplete: I,
-        inputProps: S,
-        "aria-label": T = Chunk388032.intl.string(Chunk388032.t["5h0QOD"])
+        inputProps: T,
+        "aria-label": S = Chunk388032.intl.string(Chunk388032.t["5h0QOD"])
       } = module,
       A = g(module, ["query", "autoFocus", "onClear", "className", "placeholder", "onKeyDown", "isLoading", "size", "disabled", "onChange", "onBlur", "onFocus", "autoComplete", "inputProps", "aria-label"]),
       C = (0, Chunk951288.jsx)(Chunk532425.B, {
@@ -109,7 +109,7 @@ class b extends(r = Chunk647438.PureComponent) {
         onClear: r,
         isLoading: h
       });
-    return null == Chunk647438 ? (0, Chunk951288.jsx)(Chunk481060.oil, m(p({}, S), {
+    return null == Chunk647438 ? (0, Chunk951288.jsx)(Chunk481060.oil, m(p({}, T), {
       onFocus: v,
       onBlur: O,
       value: exports,
@@ -119,7 +119,7 @@ class b extends(r = Chunk647438.PureComponent) {
       disabled: b,
       autoFocus: require,
       autoComplete: I,
-      "aria-label": T,
+      "aria-label": S,
       inputRef: this.inputRef,
       leading: Chunk481060._Ve,
       clearable: null != r,
@@ -136,7 +136,7 @@ class b extends(r = Chunk647438.PureComponent) {
       }, A), {
         children: (0, Chunk951288.jsxs)("div", {
           className: Chunk196909.inner,
-          children: [(0, Chunk951288.jsx)("input", m(p({}, S), {
+          children: [(0, Chunk951288.jsx)("input", m(p({}, T), {
             onFocus: v,
             onBlur: O,
             className: Chunk196909.input,
@@ -147,7 +147,7 @@ class b extends(r = Chunk647438.PureComponent) {
             disabled: b,
             autoFocus: require,
             autoComplete: I,
-            "aria-label": T,
+            "aria-label": S,
             ref: this.inputRef
           })), C]
         })

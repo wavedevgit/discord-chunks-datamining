@@ -22,13 +22,13 @@ var Chunk98405 = require("./98405.js"),
   O = /[\uD800-\uDFFF]/g,
   v = /^[\uD800-\uDBFF]$/,
   I = /^[\uDC00-\uDFFF]$/,
-  S = !Chunk504290 || Chunk621523(function() {
+  T = !Chunk504290 || Chunk621523(function() {
     var e = Chunk154028("Symbol")("stringify detection");
     return "[null]" !== h([module]) || "{}" !== h({
       a: module
     }) || "{}" !== h(Object(module))
   }),
-  T = Chunk621523(function() {
+  S = Chunk621523(function() {
     return '"\udf06\ud834"' !== h("\uDF06\uD834") || '"\udead"' !== h("\uDEAD")
   }),
   A = function(e, t) {
@@ -47,11 +47,11 @@ h && Chunk98405({
   target: "JSON",
   stat: true,
   arity: 3,
-  forced: S || T
+  forced: T || S
 }, {
   stringify: function(e, t, n) {
     var r = d(arguments),
-      i = a(S ? A : h, null, r);
-    return T && "string" == typeof i ? b(i, O, C) : i
+      i = a(T ? A : h, null, r);
+    return S && "string" == typeof i ? b(i, O, C) : i
   }
 })

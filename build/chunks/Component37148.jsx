@@ -154,9 +154,9 @@ function O(e) {
     trailing: O
   } = e, {
     headingId: I
-  } = (0, _.v)(), S = null != t, T = (0, f.MW)(n), A = h ? T ? b : y : E, C = null != n && (0, r.jsx)("div", {
+  } = (0, _.v)(), T = null != t, S = (0, f.MW)(n), A = h ? S ? b : y : E, C = null != n && (0, r.jsx)("div", {
     className: o()(p.headerGraphic, {
-      [p.headerGraphicAnimated]: T
+      [p.headerGraphicAnimated]: S
     }),
     children: (0, r.jsx)("div", {
       className: p.headerGraphicContainer,
@@ -184,7 +184,7 @@ function O(e) {
         children: (0, r.jsx)(A, {
           leading: g,
           trailing: O,
-          hasGradient: S,
+          hasGradient: T,
           children: (0, r.jsx)("div", {
             className: p.headerMain,
             children: P
@@ -195,7 +195,7 @@ function O(e) {
       }), null != n && null != a && N, null != c && R]
     })
   });
-  return S ? (0, r.jsx)(u.$, {
+  return T ? (0, r.jsx)(u.$, {
     color: t,
     className: p.headerGradient,
     children: w

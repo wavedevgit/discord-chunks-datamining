@@ -56,13 +56,13 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -234,8 +234,8 @@ let C = e => {
       onClick: n,
       className: i,
       isDisabled: a
-    } = e, l = T(e, ["children", "onClick", "className", "isDisabled"]);
-    return (0, r.jsx)(s.zx, S(v({}, l), {
+    } = e, l = S(e, ["children", "onClick", "className", "isDisabled"]);
+    return (0, r.jsx)(s.zx, T(v({}, l), {
       disabled: a,
       onClick: n,
       size: y.buttonSize,

@@ -94,7 +94,7 @@ function I() {
   })), g.pendingUsages)
 }
 
-function S(e) {
+function T(e) {
   let {
     settings: {
       type: t
@@ -104,7 +104,7 @@ function S(e) {
   if (t !== f.yP.FRECENCY_AND_FAVORITES_SETTINGS || !n) returnfalse;
   g.pendingUsages = []
 }
-class T extends(r = Chunk442837.ZP.PersistedStore) {
+class S extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     this.waitFor(d.Z), null != e && (g = e), this.syncWith([d.Z], v), this.syncWith([c.Z], I)
   }
@@ -118,8 +118,8 @@ class T extends(r = Chunk442837.ZP.PersistedStore) {
     return b
   }
 }
-_(T, "displayName", "StickersPersistedStore"), _(T, "persistKey", "StickersPersistedStoreV2");
-let A = new T(Chunk570140.Z, {
+_(S, "displayName", "StickersPersistedStore"), _(S, "persistKey", "StickersPersistedStoreV2");
+let A = new S(Chunk570140.Z, {
   STICKER_TRACK_USAGE: O,
-  USER_SETTINGS_PROTO_UPDATE: S
+  USER_SETTINGS_PROTO_UPDATE: T
 })

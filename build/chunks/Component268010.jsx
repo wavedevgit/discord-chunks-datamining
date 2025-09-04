@@ -2,7 +2,7 @@
 /** chunk id: 268010, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 }), require("./804061.js"), require("./704826.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -34,16 +34,16 @@ let I = (e, t, n) => {
       episodeDescription: e.extra.media_subtitle
     }).replaceAll("*", "")
   },
-  S = (e, t) => v.intl.formatToPlainString(v.t.kCbfbG, {
+  T = (e, t) => v.intl.formatToPlainString(v.t.kCbfbG, {
     username: t.username,
     activity: e.extra.media_title
   }),
-  T = e => {
+  S = e => {
     let {
       channel: t,
       entry: n,
       onReaction: u,
-      onVoiceChannelPreview: T
+      onVoiceChannelPreview: S
     } = e, A = (0, a.e7)([l.default], () => l.default.getUser(n.author_id)), {
       largeImage: C
     } = (0, f.rv)({
@@ -93,11 +93,11 @@ let I = (e, t, n) => {
       }), (0, r.jsx)(b.St, {
         children: (0, r.jsx)(b.WT, {
           onReaction: u,
-          onVoiceChannelPreview: T,
+          onVoiceChannelPreview: S,
           user: A,
           channel: t,
           generateReactionImage: x,
-          reactionImageAltText: S(n, A),
+          reactionImageAltText: T(n, A),
           entry: n
         })
       })]

@@ -173,7 +173,7 @@ function I(e) {
   })
 }
 
-function S(e, t, n, r, i) {
+function T(e, t, n, r, i) {
   return [{
     variant: "secondary",
     text: g.intl.string(g.t["ETE/oK"]),
@@ -187,7 +187,7 @@ function S(e, t, n, r, i) {
     "aria-label": t
   }]
 }
-let T = e => {
+let S = e => {
   let {
     transitionState: t,
     onClose: n,
@@ -205,10 +205,10 @@ let T = e => {
     confirmationLabel: b,
     isModifyingSubscription: y,
     onConfirm: I,
-    onCancel: T,
+    onCancel: S,
     error: A,
     onDismissError: C
-  } = e, N = S(E, b, y, I, T), R = () => h && null != g ? (0, r.jsx)(v, {
+  } = e, N = T(E, b, y, I, S), R = () => h && null != g ? (0, r.jsx)(v, {
     imageClass: null != o ? o : "",
     blurb: a,
     fromGuilds: m,
@@ -241,5 +241,5 @@ let T = e => {
     })]
   })
 };
-T.ApplyBody = O, T.TransferBody = v, T.Footer = I;
-let A = T
+S.ApplyBody = O, S.TransferBody = v, S.Footer = I;
+let A = S

@@ -61,9 +61,9 @@ function I(e, t) {
   }), e
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
-  var n, r, i = T(e, t);
+  var n, r, i = S(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -71,7 +71,7 @@ function S(e, t) {
   return i
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -107,7 +107,7 @@ function C(e) {
   if ("icon" in t) {
     let {
       tooltip: e
-    } = t, a = S(t, ["tooltip"]), o = "md" === n ? "sm" : "xs", s = (0, r.jsx)(c.H, I(O({}, a), {
+    } = t, a = T(t, ["tooltip"]), o = "md" === n ? "sm" : "xs", s = (0, r.jsx)(c.H, I(O({}, a), {
       size: o,
       variant: "input-accessory"
     }));
@@ -125,7 +125,7 @@ function C(e) {
   if ("type" in t && "tags" === t.type) {
     let {
       type: e
-    } = t, n = S(t, ["type"]);
+    } = t, n = T(t, ["type"]);
     return (0, r.jsx)(f.Q, I(O({}, n), {
       layout: "inline"
     }))
@@ -177,7 +177,7 @@ function R(e) {
     value: E,
     defaultValue: y,
     minLength: v,
-    error: T,
+    error: S,
     defaultDirty: R = false,
     leading: w,
     trailing: D,
@@ -193,9 +193,9 @@ function R(e) {
     hideLabel: F,
     required: V,
     id: H
-  } = e, Y = S(e, ["disabled", "editable", "inputRef", "focusProps", "name", "type", "placeholder", "maxLength", "value", "defaultValue", "minLength", "error", "defaultDirty", "leading", "trailing", "validateOn", "size", "fullWidth", "clearable", "helperText", "showCharacterCount", "successMessage", "label", "description", "hideLabel", "required", "id"]), W = (0, g.m)({
+  } = e, Y = T(e, ["disabled", "editable", "inputRef", "focusProps", "name", "type", "placeholder", "maxLength", "value", "defaultValue", "minLength", "error", "defaultDirty", "leading", "trailing", "validateOn", "size", "fullWidth", "clearable", "helperText", "showCharacterCount", "successMessage", "label", "description", "hideLabel", "required", "id"]), W = (0, g.m)({
     validateOn: x,
-    error: T,
+    error: S,
     value: E,
     minLength: v,
     maxLength: p,
@@ -289,7 +289,7 @@ function P(e) {
     value: t,
     defaultValue: n,
     "aria-labelledby": a
-  } = e, o = S(e, ["value", "defaultValue", "aria-labelledby"]);
+  } = e, o = T(e, ["value", "defaultValue", "aria-labelledby"]);
   let s = A(t, n),
     l = i.useContext(d.U);
   return (0, r.jsx)("input", I(O({}, o), {

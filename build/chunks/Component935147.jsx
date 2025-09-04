@@ -96,17 +96,17 @@ function Y(e) {
     tryItOutBanner: Q,
     tryItOutProfileEffectId: J,
     tryItOutAvatarDecoration: $
-  } = (0, a.cj)([T.Z], () => {
-    let e = T.Z.getAllPending(),
-      t = T.Z.getErrors();
-    return H(F({}, e, T.Z.getAllTryItOut()), {
+  } = (0, a.cj)([S.Z], () => {
+    let e = S.Z.getAllPending(),
+      t = S.Z.getErrors();
+    return H(F({}, e, S.Z.getAllTryItOut()), {
       errors: t
     })
   }), ee = (0, p.Z)(J), {
     preset: et,
     onShuffle: en
   } = (0, g.Z)(), er = i.useRef(null);
-  (0, S.Z)(er, U.Y_.TRY_IT_OUT);
+  (0, T.Z)(er, U.Y_.TRY_IT_OUT);
   let {
     analyticsLocations: ei,
     newestAnalyticsLocation: ea,

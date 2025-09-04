@@ -2,7 +2,7 @@
 /** chunk id: 258833, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 }), require("./388685.js");
 var Chunk147913 = require("./147913.js"),
   Chunk460181 = require("./460181.js"),
@@ -61,7 +61,7 @@ function O(e, t, n) {
 }
 let v = (0, Chunk460181.uk)("call_calling", Chunk474873.Z.getSoundpack());
 var I = new WeakMap;
-class S extends Chunk147913.Z {
+class T extends Chunk147913.Z {
   _initialize() {
     this.stores = new Map().set(Chunk523746.Z, this.handleRingUpdate).set(Chunk292959.Z, this.handleRingUpdate).set(Chunk246946.Z, this.handleRingUpdate).set(Chunk979651.Z, this.handleRingUpdate).set(Chunk358221.Z, this.handleChannelRTCStoreChange).set(Chunk474873.Z, this.handleSoundpackUpdate)
   }
@@ -117,4 +117,4 @@ class S extends Chunk147913.Z {
     })
   }
 }
-let T = new S
+let S = new T

@@ -22,8 +22,8 @@
     O = "wearable",
     v = "embedded",
     I = 500,
-    S = "Amazon",
-    T = "Apple",
+    T = "Amazon",
+    S = "Apple",
     A = "ASUS",
     C = "BlackBerry",
     N = "Browser",
@@ -272,15 +272,15 @@
           [_, E]
         ],
         [/(?:\/|\()(ip(?:hone|od)[\w, ]*)(?:\/|;)/i],
-        [d, [p, T],
+        [d, [p, S],
           [_, E]
         ],
         [/\((ipad);[-\w\),; ]+apple/i, /applecoremedia\/[\w\.]+ \((ipad)/i, /\b(ipad)\d\d?,\d\d?[;\]].+ios/i],
-        [d, [p, T],
+        [d, [p, S],
           [_, b]
         ],
         [/(macintosh);/i],
-        [d, [p, T]],
+        [d, [p, S]],
         [/\b(sh-?[altvz]?\d\d[a-ekm]?)/i],
         [d, [p, U],
           [_, E]
@@ -374,13 +374,13 @@
           [_, E]
         ],
         [/(alexa)webm/i, /(kf[a-z]{2}wi|aeo(?!bc)\w\w)( bui|\))/i, /(kf[a-z]+)( bui|\)).+silk\//i],
-        [d, [p, S],
+        [d, [p, T],
           [_, b]
         ],
         [/((?:sd|kf)[0349hijorstuw]+)( bui|\)).+silk\//i],
         [
           [d, /(.+)/g, "Fire Phone $1"],
-          [p, S],
+          [p, T],
           [_, E]
         ],
         [/(playbook);[-\w\),; ]+(rim)/i],
@@ -574,7 +574,7 @@
           [_, y]
         ],
         [/(apple) ?tv/i],
-        [p, [d, T + " TV"],
+        [p, [d, S + " TV"],
           [_, y]
         ],
         [/crkey/i],
@@ -584,7 +584,7 @@
           [_, y]
         ],
         [/droid.+aft(\w+)( bui|\))/i],
-        [d, [p, S],
+        [d, [p, T],
           [_, y]
         ],
         [/\(dtv[\);].+(aquos)/i, /(aquos-tv[\w ]+)\)/i],
@@ -632,7 +632,7 @@
         [/((pebble))app/i],
         [p, d, [_, O]],
         [/(watch)(?: ?os[,\/]|\d,\d\/)[\d\.]+/i],
-        [d, [p, T],
+        [d, [p, S],
           [_, O]
         ],
         [/droid.+; (glass) \d/i],
@@ -656,7 +656,7 @@
         [/(tesla)(?: qtcarbrowser|\/[-\w\.]+)/i],
         [p, [_, v]],
         [/(aeobc)\b/i],
-        [d, [p, S],
+        [d, [p, T],
           [_, v]
         ],
         [/droid .+?; ([^;]+?)(?: bui|; wv\)|\) applew).+? mobile safari/i],

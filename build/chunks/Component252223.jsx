@@ -201,7 +201,7 @@ function G(e) {
         hideTooltip: t
       });
       let n = null == F ? true : F[0];
-      return null != n ? (0, r.jsx)(S.Z, {
+      return null != n ? (0, r.jsx)(T.Z, {
         activity: n,
         textVariant: "text-".concat(b, "/medium"),
         textClassName: _,
@@ -209,7 +209,7 @@ function G(e) {
         hideText: Q,
         hideIcon: H,
         hideTooltip: t
-      }) : null != l ? (0, r.jsx)(T.Z, {
+      }) : null != l ? (0, r.jsx)(S.Z, {
         channel: l,
         textVariant: "text-".concat(b, "/medium"),
         textClassName: _,
@@ -233,10 +233,10 @@ function G(e) {
       }, t), {
         showChannelName: true
       }), "stream")), F.forEach((n, i) => {
-        e.push((0, r.jsx)(S.Z, w({
+        e.push((0, r.jsx)(T.Z, w({
           activity: n
         }, t), "activity-".concat(i)))
-      }), z && e.push((0, r.jsx)(T.Z, x(w({
+      }), z && e.push((0, r.jsx)(S.Z, x(w({
         channel: l
       }, t), {
         showChannelName: true

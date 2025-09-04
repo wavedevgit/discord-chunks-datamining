@@ -222,7 +222,7 @@ function H(e) {
     listName: R
   } = e, w = i.useRef(null), L = (0, p.Z)(R, w), B = (0, u.e7)([v.ZP], () => v.ZP.hasNotice()), Z = (0, u.e7)([I.Z], () => I.Z.windowSize());
   i.useEffect(() => {
-    S.default.track(A.rMx.OPEN_POPOUT, {
+    T.default.track(A.rMx.OPEN_POPOUT, {
       type: t
     })
   }, [t]), i.useEffect(() => {
@@ -239,8 +239,8 @@ function H(e) {
         animate: true
       })
     }
-    return T.S.subscribe(A.CkL.SCROLL_PAGE_DOWN, t), T.S.subscribe(A.CkL.SCROLL_PAGE_UP, e), () => {
-      T.S.unsubscribe(A.CkL.SCROLL_PAGE_DOWN, t), T.S.unsubscribe(A.CkL.SCROLL_PAGE_UP, e)
+    return S.S.subscribe(A.CkL.SCROLL_PAGE_DOWN, t), S.S.subscribe(A.CkL.SCROLL_PAGE_UP, e), () => {
+      S.S.unsubscribe(A.CkL.SCROLL_PAGE_DOWN, t), S.S.unsubscribe(A.CkL.SCROLL_PAGE_UP, e)
     }
   }, []);
   let F = i.useCallback(() => {
@@ -340,8 +340,8 @@ function Y(e) {
     renderMessage: O,
     getProTip: v,
     scrollerClassName: I,
-    className: S,
-    onCloseMessage: T,
+    className: T,
+    onCloseMessage: S,
     listName: C
   } = e, R = (0, u.e7)([y.Z], () => {
     let e = null != a ? y.Z.getMessages(a.id) : null;
@@ -378,7 +378,7 @@ function Y(e) {
         jumping: R,
         canCloseAllMessages: f,
         jumpTo: P,
-        onCloseMessage: T
+        onCloseMessage: S
       })]
     }, t.id)), i)
   }
@@ -390,7 +390,7 @@ function Y(e) {
     channel: a
   })), [o, a]);
   return (0, r.jsx)(H, {
-    className: S,
+    className: T,
     scrollerClassName: I,
     items: D,
     loading: l,

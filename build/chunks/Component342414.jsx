@@ -132,9 +132,9 @@ let ee = (e, t, i) => {
     }) : f ? G = (0, r.jsx)(Z.Z, {}) : p && (G = P.cohort === I.S$.Control ? (0, r.jsx)(F.Z, {}) : (0, r.jsx)(N._, {}));
     let z = (0, o.e7)([h.Z], () => h.Z.getPremiumTypeSubscription()),
       q = null != z && z.status === H.O0b.CANCELED && null != y && x,
-      X = (0, T.N)(),
-      Q = (0, S.Ng)(),
-      J = (0, S.Wp)(Q, V.Si.TIER_2) ? V.Si.TIER_2 : true,
+      X = (0, S.N)(),
+      Q = (0, T.Ng)(),
+      J = (0, T.Wp)(Q, V.Si.TIER_2) ? V.Si.TIER_2 : true,
       $ = null != z && z.status !== H.O0b.ACCOUNT_HOLD && z.hasAnyPremiumNitro,
       et = (0, _.Z)().isFractionalPremiumActive && !$ && null == G && !q,
       en = (0, o.e7)([c.Z], () => c.Z.useReducedMotion),
@@ -207,7 +207,7 @@ let ee = (e, t, i) => {
       showCountdown: O
     } = v.b.useConfig({
       location: "Hero Heading"
-    }), I = (0, o.e7)([h.Z], () => h.Z.getPremiumTypeSubscription()), A = null != I && I.status === H.O0b.CANCELED && null != p && y, C = (0, T.N)(), N = (0, S.Ng)(), D = (0, S.Wp)(N, V.Si.TIER_2) ? V.Si.TIER_2 : true, x = null != I && I.status !== H.O0b.ACCOUNT_HOLD && I.hasAnyPremiumNitro, j = (0, _.Z)().isFractionalPremiumActive && !x && !A;
+    }), I = (0, o.e7)([h.Z], () => h.Z.getPremiumTypeSubscription()), A = null != I && I.status === H.O0b.CANCELED && null != p && y, C = (0, S.N)(), N = (0, T.Ng)(), D = (0, T.Wp)(N, V.Si.TIER_2) ? V.Si.TIER_2 : true, x = null != I && I.status !== H.O0b.ACCOUNT_HOLD && I.hasAnyPremiumNitro, j = (0, _.Z)().isFractionalPremiumActive && !x && !A;
     return (0, r.jsxs)("div", {
       className: a()(W.container, i),
       "data-testid": "subscriber-nitro-home-hero-header",
@@ -374,15 +374,15 @@ let ee = (e, t, i) => {
       discountedPrice: s
     } = e, {
       analyticsLocations: c
-    } = (0, d.ZP)(u.Z.PREMIUM_MARKETING_HERO_CTA), h = (0, O.W)(), m = (0, b.Vi)(), E = (0, y._O)(), v = Y.intl.string(Y.t.qYKftb), I = (0, C.b)(), S = (0, r.jsx)(en, {
+    } = (0, d.ZP)(u.Z.PREMIUM_MARKETING_HERO_CTA), h = (0, O.W)(), m = (0, b.Vi)(), E = (0, y._O)(), v = Y.intl.string(Y.t.qYKftb), I = (0, C.b)(), T = (0, r.jsx)(en, {
       className: t
-    }), T = Y.intl.string(Y.t.ifwQZW), {
+    }), S = Y.intl.string(Y.t.ifwQZW), {
       fractionalState: A,
       endsAt: N
     } = (0, _.Z)(), R = (0, f.ZP)(N, f.aj.CREDITS_ENDS_IN);
-    h || m ? S = (0, r.jsx)(ei, {
+    h || m ? T = (0, r.jsx)(ei, {
       isEligibleForBogoPromotion: m
-    }) : I && (v = Y.intl.string(Y.t.qYKftb), S = (0, r.jsx)(er, {}));
+    }) : I && (v = Y.intl.string(Y.t.qYKftb), T = (0, r.jsx)(er, {}));
     let P = null;
     if (A === V.a$.NONE || h) P = n ? (0, r.jsx)(G.Z, {
       enablePremiumBrandRefresh: true,
@@ -435,7 +435,7 @@ let ee = (e, t, i) => {
       value: c,
       children: (0, r.jsx)(ea.Provider, {
         value: {
-          headingText: T,
+          headingText: S,
           headingTop: P,
           showPill: E,
           userDiscountOffer: o,
@@ -447,7 +447,7 @@ let ee = (e, t, i) => {
           isEligibleForBogoPromotion: m,
           isInReverseTrial: h,
           shouldShowReferralProgressBar: I
-        }) : S
+        }) : T
       })
     })
   }

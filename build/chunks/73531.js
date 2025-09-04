@@ -31,11 +31,11 @@ function u(e) {
     O = b[1],
     v = r.useState(null),
     I = v[0],
-    S = v[1];
+    T = v[1];
   r.useEffect(function() {
     (0, a.k$)(m, y)
   }, [m, y]);
-  var T = r.useMemo(function() {
+  var S = r.useMemo(function() {
       return {
         placement: n,
         strategy: d,
@@ -49,7 +49,7 @@ function u(e) {
         }])
       }
     }, [n, d, h, _, I]),
-    A = (0, o.D)(p || E, y, T),
+    A = (0, o.D)(p || E, y, S),
     C = A.state,
     N = A.styles,
     R = A.forceUpdate,
@@ -63,11 +63,11 @@ function u(e) {
         isReferenceHidden: C && C.modifiersData.hide ? C.modifiersData.hide.isReferenceHidden : null,
         arrowProps: {
           style: N.arrow,
-          ref: S
+          ref: T
         },
         forceUpdate: R || s,
         update: P || l
       }
-    }, [O, S, n, C, N, P, R]);
+    }, [O, T, n, C, N, P, R]);
   return (0, a.$p)(g)(w)
 }

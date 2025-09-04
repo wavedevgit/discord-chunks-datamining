@@ -134,7 +134,7 @@ function O(e) {
   }, [t]);
   let {
     loadState: I
-  } = (0, l.qz)(), S = I !== l.jd.LOADED;
+  } = (0, l.qz)(), T = I !== l.jd.LOADED;
   switch (h) {
     case u.j.HOME:
       return (0, r.jsx)(r.Fragment, {
@@ -145,14 +145,14 @@ function O(e) {
             children: (0, r.jsx)(c.Z, {
               subscription: e,
               navigateToSwitchPlan: b,
-              loadingState: S ? c.G.LOADING : null != (t = O[e.id]) ? t : c.G.LOADING
+              loadingState: T ? c.G.LOADING : null != (t = O[e.id]) ? t : c.G.LOADING
             })
           }, e.id)
         })
       });
     case u.j.SWITCH_APP_PLANS:
       let {
-        route: T
+        route: S
       } = a, A = g(a, ["route"]);
       return (0, r.jsx)(d.Z, m(p({}, A), {
         navigateToHome: E

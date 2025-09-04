@@ -96,8 +96,8 @@ let O = [Chunk341691.Cm.User],
     guild: {}
   },
   I = {},
-  S = {},
   T = {},
+  S = {},
   A = {},
   C = "apexTrackedExposures",
   N = 1,
@@ -111,9 +111,9 @@ function D(e) {
 }
 class x extends(r = Chunk442837.ZP.PersistedStore) {
   loadStoredState(e, t) {
-    for (let n in null != e && 1 === e.version && (S = e.clientOverrides, v = e.evaluatedExperiments), T = {}, t) {
+    for (let n in null != e && 1 === e.version && (T = e.clientOverrides, v = e.evaluatedExperiments), S = {}, t) {
       let e = D(n);
-      T[n] = {
+      S[n] = {
         hashedName: e,
         variantId: t[n],
         isOverride: true
@@ -125,7 +125,7 @@ class x extends(r = Chunk442837.ZP.PersistedStore) {
     return {
       version: 1,
       evaluatedExperiments: v,
-      clientOverrides: S
+      clientOverrides: T
     }
   }
   setExperimentAssignments(e) {
@@ -154,7 +154,7 @@ class x extends(r = Chunk442837.ZP.PersistedStore) {
     returntrue
   }
   createOverride(e, t) {
-    S = p(f({}, S), {
+    T = p(f({}, T), {
       [e]: {
         hashedName: D(e),
         variantId: t,
@@ -165,8 +165,8 @@ class x extends(r = Chunk442837.ZP.PersistedStore) {
   deleteOverride(e) {
     let {
       [e]: t
-    } = S;
-    S = h(S, [e].map(E))
+    } = T;
+    T = h(T, [e].map(E))
   }
   setExperimentsMetadata(e) {
     A = f({}, A, Object.fromEntries(e.map(e => [e.name, e])))
@@ -175,23 +175,23 @@ class x extends(r = Chunk442837.ZP.PersistedStore) {
     return A
   }
   getClientOverrides() {
-    return S
+    return T
   }
   getExperimentClientOverride(e) {
-    return S[e]
+    return T[e]
   }
   handleLogout(e) {
     e || this.clearAllServerAssignments(), l.K.remove(C), this.clearAllTrackedExposures()
   }
   registerExperiment(e) {
-    I[e.name] = e, null != T[e.name] && this.trackExposureSuppression(e.name, "cookie_override")
+    I[e.name] = e, null != S[e.name] && this.trackExposureSuppression(e.name, "cookie_override")
   }
   getRegisteredExperiments() {
     return I
   }
   getAssignment(e, t, n) {
     var r;
-    let i = null != (r = S[n]) ? r : T[n];
+    let i = null != (r = T[n]) ? r : S[n];
     return null != i ? i : this.getServerAssignment(e, t, n)
   }
   getServerAssignment(e, t, n) {
@@ -205,7 +205,7 @@ class x extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getEvaluationAndAssignment(e, t, n) {
     var r;
-    let i = null != (r = S[n]) ? r : T[n];
+    let i = null != (r = T[n]) ? r : S[n];
     if (null != i) return [true, i];
     let a = v[e][t];
     return null == a ? [true, true] : [a.evaluationId, a.assignments[D(n)]]
@@ -281,7 +281,7 @@ class x extends(r = Chunk442837.ZP.PersistedStore) {
     }
   }
   clearAllOverrides() {
-    S = {}, T = {}
+    T = {}, S = {}
   }
   clearAllTrackedExposures() {
     P = {}

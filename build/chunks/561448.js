@@ -56,7 +56,7 @@ function u(e, t) {
 let d = e => {
     if ("card" === e || "link_card_brand" === e) return a.He.CARD;
     if ("ideal" === e) return a.He.IDEAL;
-    let t = S[(0, r.rI)()];
+    let t = T[(0, r.rI)()];
     return e in t ? t[e] : null
   },
   f = new Set([Chunk231338.He.CARD, Chunk231338.He.PAYPAL]),
@@ -138,7 +138,7 @@ function I(e) {
   }
   return t
 }
-let S = {
+let T = {
   unknown: I("test"),
   test: I("test"),
   live: I("live")

@@ -90,7 +90,7 @@ function j(e) {
     pendingThemeColors: F,
     errors: V,
     guild: H
-  } = (0, o.cj)([T.Z], () => {
+  } = (0, o.cj)([S.Z], () => {
     let {
       pendingAvatar: e,
       pendingNickname: t,
@@ -98,7 +98,7 @@ function j(e) {
       pendingPronouns: r,
       pendingBanner: i,
       pendingThemeColors: a
-    } = T.Z.getAllPending();
+    } = S.Z.getAllPending();
     return {
       pendingAvatar: e,
       pendingNickname: t,
@@ -106,8 +106,8 @@ function j(e) {
       pendingBio: n,
       pendingPronouns: r,
       pendingThemeColors: a,
-      errors: T.Z.getErrors(),
-      guild: T.Z.getGuild()
+      errors: S.Z.getErrors(),
+      guild: S.Z.getGuild()
     }
   }), Y = (0, E.SD)({
     userId: M.id,
@@ -127,8 +127,8 @@ function j(e) {
       let r = null != t ? null : true;
       n(null != e ? e : r)
     },
-    er = e => en(e, null == q ? true : q.banner, S.g_),
-    ei = e => en(e, null == z ? true : z.avatar, S.I5);
+    er = e => en(e, null == q ? true : q.banner, T.g_),
+    ei = e => en(e, null == z ? true : z.avatar, T.I5);
   return (0, r.jsxs)("div", {
     className: P.sectionsContainer,
     children: [(0, r.jsx)(C.Z, {

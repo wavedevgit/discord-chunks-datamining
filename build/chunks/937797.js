@@ -4,7 +4,8 @@
 require.d(exports, {
   $d: () => s,
   CD: () => o,
-  DL: () => i
+  DL: () => i,
+  m8: () => l
 });
 var Chunk427164 = require("./427164.js");
 let i = (0, Chunk427164.le)({
@@ -53,6 +54,21 @@ let i = (0, Chunk427164.le)({
     },
     variations: {
       1: {
+        enabled: true
+      }
+    }
+  }),
+  l = (0, Chunk427164.le)({
+    name: "2025-08-quest-home-v2-entrypoint-relocation",
+    kind: "user",
+    defaultConfig: {
+      enabled: false
+    },
+    variations: {
+      1: {
+        enabled: false
+      },
+      2: {
         enabled: true
       }
     }

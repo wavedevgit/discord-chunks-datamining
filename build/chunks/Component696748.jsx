@@ -2,7 +2,7 @@
 /** chunk id: 696748, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  a: () => S
+  a: () => T
 }), require("./953529.js"), require("./415506.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -174,7 +174,7 @@ class v extends Chunk647438.PureComponent {
           libraryApplication: r,
           analyticsParams: i
         } = t.props;
-      t.onClose(), S(r.id, r, {
+      t.onClose(), T(r.id, r, {
         analyticsParams: i,
         cloudSync: e,
         cloudSyncForceHash: n
@@ -202,7 +202,7 @@ let I = Chunk442837.ZP.connectStores([Chunk293245.Z, Chunk812206.Z], e => {
     application: f.Z.getApplication(t.id)
   }
 })(v);
-async function S(e, t, n) {
+async function T(e, t, n) {
   let i = f.Z.getApplication(e);
   if (null == i) return;
   let {

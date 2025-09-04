@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk430355 = require("./430355.js");
 
-function N(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,7 +36,7 @@ function N(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let T = (0, Chunk663993.Un)({
+let N = (0, Chunk663993.Un)({
   createPromise: () => Promise.all([require.e("68264"), require.e("87626")]).then(require.bind(require, 496691)),
   webpackId: 496691
 });
@@ -70,7 +70,7 @@ class P extends Chunk647438.PureComponent {
     } = this.props, n = module ? (0, Chunk951288.jsx)("div", {
       className: Chunk430355.applicationStore,
       children: this.renderContent()
-    }) : (0, Chunk951288.jsx)(T, {
+    }) : (0, Chunk951288.jsx)(N, {
       className: Chunk430355.applicationStore,
       location: exports,
       render: this.renderContent
@@ -81,7 +81,7 @@ class P extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), N(this, "stopListeningToHistory", true), N(this, "renderStoreListing", e => {
+    super(...e), T(this, "stopListeningToHistory", true), T(this, "renderStoreListing", e => {
       let {
         match: {
           params: {
@@ -106,7 +106,7 @@ class P extends Chunk647438.PureComponent {
           pageSize: j(o)
         })
       })
-    }), N(this, "renderContent", () => (0, r.jsxs)(a.rs, {
+    }), T(this, "renderContent", () => (0, r.jsxs)(a.rs, {
       children: [(0, r.jsx)(a.AW, {
         path: I.Z5c.APPLICATION_STORE,
         exact: true,

@@ -73,17 +73,17 @@ let _ = e => {
     onRest: () => v(e => false * e)
   } : {
     blur: 0
-  }), S = (0, i.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * p), [p]), T = 5, [A, C] = (0, i.useState)(0), [N, R] = (0, i.useState)(1), P = (0, o.q_F)({
+  }), T = (0, i.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * p), [p]), S = 5, [A, C] = (0, i.useState)(0), [N, R] = (0, i.useState)(1), P = (0, o.q_F)({
     xOffset: A,
     config: {
       tension: 10,
       friction: 10,
-      duration: S
+      duration: T
     }
   });
   return ((0, s.Z)(() => {
-    C(N * (.5 * Math.random() * T + T / 2)), R(e => false * e)
-  }, S), _) ? h : (0, r.jsx)(a.animated.div, {
+    C(N * (.5 * Math.random() * S + S / 2)), R(e => false * e)
+  }, T), _) ? h : (0, r.jsx)(a.animated.div, {
     style: {
       transform: null == (t = m.y) ? true : t.to(e => {
         if (null == u) return "translateY(0px)";

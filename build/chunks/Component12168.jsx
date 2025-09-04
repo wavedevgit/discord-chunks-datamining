@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk420212 = require("./420212.js"),
   Chunk339051 = require("./339051.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,14 +36,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -148,7 +148,7 @@ function D(e) {
     onExpandedToggle: p,
     emojiSearchProps: m,
     recentlyUsedEmojis: b,
-    analyticsOverride: S,
+    analyticsOverride: T,
     ref: A
   } = e, D = (0, f.Dt)(), [x, L] = i.useState(false), j = (0, _.wC)(t.guild_id), M = (0, s.uniqBy)([...j, ...R], "name").filter(e => !E.ZP.isEmojiFilteredOrLocked({
     emoji: e,
@@ -184,7 +184,7 @@ function D(e) {
     }), (0, r.jsxs)("div", {
       className: I.container,
       children: [(0, r.jsx)(h.Z, {
-        analyticsOverride: S,
+        analyticsOverride: T,
         channel: t,
         className: o()(I.animatedPicker, {
           [I.animatedPickerTall]: x
@@ -197,7 +197,7 @@ function D(e) {
         shouldHidePickerActions: !x,
         wrapper: "div",
         pickerIntention: N,
-        searchProps: C(T({}, m), {
+        searchProps: C(S({}, m), {
           accessory: (0, r.jsx)(w, {
             otherAccessories: null == m ? true : m.accessory,
             isEmojiPickerExpanded: x,

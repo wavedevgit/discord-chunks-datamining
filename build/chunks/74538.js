@@ -49,7 +49,7 @@ require.d(exports, {
   jP: () => ei,
   jp: () => eC,
   k5: () => e5,
-  lY: () => eS,
+  lY: () => eT,
   m3: () => eN,
   nd: () => eR,
   qV: () => eu,
@@ -544,7 +544,7 @@ function ec(e) {
     activeDiscountInfo: b,
     renewalInvoicePreview: y,
     hasFractionalPremiumWithSub: v
-  } = e, I = P.GP[p], S = tN(H(I.id), I.interval), T = eG(_) || null == _.paymentSourceId && !_.isPurchasedExternally && !(null == (t = h.default.getCurrentUser()) ? true : t.hasFreePremium()), A = null != m && null == _.paymentGateway, C = _.status === N.O0b.UNPAID && null !== _.latestInvoice && (null == (n = _.latestInvoice) ? true : n.status) === N.hUK.OPEN, R = T ? N.O0b.CANCELED : C ? N.O0b.UNPAID : _.status, w = null == (a = null != (i = null == y ? true : y.taxInclusive) ? i : null == (r = _.latestInvoice) ? true : r.taxInclusive) || a, x = P.cb + (g ? eE(_.additionalPlans) : 0), L = A ? w ? D.intl.format(D.t["cd+hqK"], {
+  } = e, I = P.GP[p], T = tN(H(I.id), I.interval), S = eG(_) || null == _.paymentSourceId && !_.isPurchasedExternally && !(null == (t = h.default.getCurrentUser()) ? true : t.hasFreePremium()), A = null != m && null == _.paymentGateway, C = _.status === N.O0b.UNPAID && null !== _.latestInvoice && (null == (n = _.latestInvoice) ? true : n.status) === N.hUK.OPEN, R = S ? N.O0b.CANCELED : C ? N.O0b.UNPAID : _.status, w = null == (a = null != (i = null == y ? true : y.taxInclusive) ? i : null == (r = _.latestInvoice) ? true : r.taxInclusive) || a, x = P.cb + (g ? eE(_.additionalPlans) : 0), L = A ? w ? D.intl.format(D.t["cd+hqK"], {
     price: m
   }) : D.intl.format(D.t.NUkcpK, {
     price: m
@@ -594,7 +594,7 @@ function ec(e) {
           });
         case N.O0b.PAST_DUE:
           return D.intl.format(D.t["d+0vws"], {
-            endDate: (0, O.vc)(eS(_).expiresDate, "LL"),
+            endDate: (0, O.vc)(eT(_).expiresDate, "LL"),
             onClick: () => {
               (0, l.Z)("https://support.discord.com/hc/articles/23082866222871")
             }
@@ -634,7 +634,7 @@ function ec(e) {
           });
         case N.O0b.PAST_DUE:
           return D.intl.format(D.t["d+0vws"], {
-            endDate: (0, O.vc)(eS(_).expiresDate, "LL"),
+            endDate: (0, O.vc)(eT(_).expiresDate, "LL"),
             onClick: () => {
               (0, l.Z)("https://support.discord.com/hc/articles/23082866222871")
             }
@@ -690,7 +690,7 @@ function ec(e) {
           });
         case N.O0b.PAST_DUE:
           return D.intl.format(D.t["d+0vws"], {
-            endDate: (0, O.vc)(eS(_).expiresDate, "LL"),
+            endDate: (0, O.vc)(eT(_).expiresDate, "LL"),
             onClick: () => {
               (0, l.Z)("https://support.discord.com/hc/articles/23082866222871")
             }
@@ -698,14 +698,14 @@ function ec(e) {
         default:
           return E ? p === P.Xh.PREMIUM_YEAR_TIER_2 ? D.intl.format(D.t["+qqh6u"], {
             percent: null != (s = null == b ? true : b.percentage) ? s : P.Bo,
-            regularPrice: S
+            regularPrice: T
           }) : w ? D.intl.formatToPlainString(D.t["3Ziutb"], {
             percent: null != (c = null == b ? true : b.percentage) ? c : P.M_,
-            regularPrice: S,
+            regularPrice: T,
             numMonths: null != (u = null == b ? true : b.duration) ? u : P.rt
           }) : D.intl.formatToPlainString(D.t["G6+XOT"], {
             percent: null != (d = null == b ? true : b.percentage) ? d : P.M_,
-            regularPrice: S,
+            regularPrice: T,
             numMonths: null != (f = null == b ? true : b.duration) ? f : P.rt
           }) : M
       }
@@ -876,7 +876,7 @@ function eI(e) {
   return en(e) === P.p9.TIER_2 ? P.cb : 0
 }
 
-function eS(e) {
+function eT(e) {
   var t, n, r, i, a;
   if (e.isPurchasedViaApple && (null == (t = e.metadata) ? true : t.apple_grace_period_expires_date) != null) {
     let t = o()(e.metadata.apple_grace_period_expires_date);
@@ -913,7 +913,7 @@ function eS(e) {
   }
 }
 
-function eT(e, t) {
+function eS(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : null,
     r = arguments.length > 3 && true !== arguments[3] && arguments[3],
     i = arguments.length > 4 && true !== arguments[4] ? arguments[4] : {
@@ -952,7 +952,7 @@ function eT(e, t) {
   });
   if (e.status === N.O0b.PAST_DUE) {
     var l, c;
-    let t = eS(e).expiresDate;
+    let t = eT(e).expiresDate;
     return (e.isPurchasedViaGoogle && (null == (l = e.metadata) ? true : l.google_grace_period_expires_date) != null && (t = o()(e.metadata.google_grace_period_expires_date)), e.isPurchasedViaApple && (null == (c = e.metadata) ? true : c.apple_grace_period_expires_date) != null && (t = o()(e.metadata.apple_grace_period_expires_date)), e.isPurchasedExternally) ? D.intl.format(D.t.U2hb3d, {
       endDate: t.toDate(),
       paymentGatewayName: w.Vz[e.paymentGateway],
@@ -966,7 +966,7 @@ function eT(e, t) {
       endDate: o()(e.currentPeriodStart).add(P.A5, "days").toDate(),
       price: s
     });
-    if (e.status === N.O0b.ACCOUNT_HOLD) return e.isPurchasedViaGoogle && !(0, S.isAndroid)() ? D.intl.format(D.t.dtcxw8, {
+    if (e.status === N.O0b.ACCOUNT_HOLD) return e.isPurchasedViaGoogle && !(0, T.isAndroid)() ? D.intl.format(D.t.dtcxw8, {
       endDate: o()(e.currentPeriodStart).add(P.gh, "days").toDate(),
       paymentGatewayName: w.Vz[e.paymentGateway],
       paymentSourceLink: eX(e.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT")
@@ -1662,11 +1662,11 @@ function tI(e) {
   return (0, f.ks)(f.AN, e)
 }
 
-function tS(e) {
+function tT(e) {
   return (0, f.ks)(f._O, e)
 }
 
-function tT(e) {
+function tS(e) {
   return (0, f.ks)(f.qH, e)
 }
 
@@ -1785,7 +1785,7 @@ let tV = Object.freeze({
   getSkuIdForPlan: ep,
   getSkuIdForPremiumType: eh,
   getNumIncludedPremiumGuildSubscriptionSlots: eI,
-  getBillingInformationString: eT,
+  getBillingInformationString: eS,
   extendDateWithUnconsumedFractionalPremium: eA,
   getUnactivatedFractionalPremiumDurationString: eC,
   isSwitchingPlansDisabled: eN,
@@ -1831,8 +1831,8 @@ let tV = Object.freeze({
   hasFreeBoosts: tO,
   canUseCustomStickersEverywhere: tv,
   canUseCustomBackgrounds: tI,
-  canUseCollectibles: tS,
-  canUseCustomNotificationSounds: tT,
+  canUseCollectibles: tT,
+  canUseCustomNotificationSounds: tS,
   canUsePremiumVoiceFilters: tA,
   canUseChatWallpapers: tC,
   formatPriceString: tN,

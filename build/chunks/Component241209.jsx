@@ -61,7 +61,7 @@ let v = new RegExp("https?://".concat(null != (r = window.GLOBAL_ENV.CDN_HOST) ?
 function I(e) {
   return "string" == typeof e.content ? e.content : A(e.content)
 }
-let S = O(b({}, u().defaultRules), {
+let T = O(b({}, u().defaultRules), {
     heading: O(b({}, u().defaultRules.heading), {
       react(e, t, n) {
         let r = "h".concat(e.level);
@@ -150,8 +150,8 @@ let S = O(b({}, u().defaultRules), {
       }
     })
   }),
-  T = u().parserFor(S),
-  A = u().reactFor(u().ruleOutput(S, "react"));
+  S = u().parserFor(T),
+  A = u().reactFor(u().ruleOutput(T, "react"));
 class C extends(i = Chunk647438.PureComponent) {
   render() {
     let {
@@ -169,8 +169,8 @@ class C extends(i = Chunk647438.PureComponent) {
     })
   }
 }
-E(C, "rules", S), E(C, "defaultProps", {
-  parser: T,
+E(C, "rules", T), E(C, "defaultProps", {
+  parser: S,
   output: A
 });
 let N = C

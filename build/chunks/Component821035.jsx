@@ -31,13 +31,13 @@ function y(e) {
     explicitContentGuilds: O,
     explicitContentFriendDm: v,
     explicitContentNonFriendDm: I
-  } = (0, u.B)(), S = e => {
+  } = (0, u.B)(), T = e => {
     let t = Object.values(e);
     if ((0, l.Ks)() && t.includes(i.Q4.SHOW)) return void o.Z.showAgeVerificationGetStartedModal({
       entryPoint: s.cU.SENSITIVE_MEDIA_FILTER_SETTINGS
     });
     (0, c.zj)(e)
-  }, T = [{
+  }, S = [{
     value: i.Q4.BLUR,
     label: E.intl.string(E.t.S49UaW)
   }, {
@@ -50,7 +50,7 @@ function y(e) {
     value: i.Q4.SHOW,
     label: E.intl.string(E.t["5k5OFh"])
   };
-  return y && (T.unshift(C), A.unshift(C)), (0, r.jsx)(p.U, {
+  return y && (S.unshift(C), A.unshift(C)), (0, r.jsx)(p.U, {
     setting: m.s6.PRIVACY_SENSITIVE_MEDIA_V2,
     scrollPosition: h.FY.EXPLICIT_MEDIA_REDACTION_V2,
     children: n ? (0, r.jsxs)(r.Fragment, {
@@ -62,9 +62,9 @@ function y(e) {
         }), (0, r.jsx)(a.q4e, {
           variant: "text-only",
           className: b.select,
-          options: T,
+          options: S,
           value: v,
-          onChange: e => S({
+          onChange: e => T({
             explicitContentFriendDm: e
           }),
           renderOptionValue: e => {
@@ -85,9 +85,9 @@ function y(e) {
         }), (0, r.jsx)(a.q4e, {
           variant: "text-only",
           className: b.select,
-          options: T,
+          options: S,
           value: I,
-          onChange: e => S({
+          onChange: e => T({
             explicitContentNonFriendDm: e
           }),
           renderOptionValue: e => {
@@ -111,7 +111,7 @@ function y(e) {
           className: b.select,
           options: A,
           value: O,
-          onChange: e => S({
+          onChange: e => T({
             explicitContentGuilds: e
           }),
           isDisabled: !y,
@@ -143,9 +143,9 @@ function y(e) {
         children: (0, r.jsx)(a.q4e, {
           variant: "text-only",
           className: b.select,
-          options: T,
+          options: S,
           value: v,
-          onChange: e => S({
+          onChange: e => T({
             explicitContentFriendDm: e
           })
         })
@@ -156,9 +156,9 @@ function y(e) {
         children: (0, r.jsx)(a.q4e, {
           variant: "text-only",
           className: b.select,
-          options: T,
+          options: S,
           value: I,
-          onChange: e => S({
+          onChange: e => T({
             explicitContentNonFriendDm: e
           })
         })
@@ -171,7 +171,7 @@ function y(e) {
           className: b.select,
           options: A,
           value: O,
-          onChange: e => S({
+          onChange: e => T({
             explicitContentGuilds: e
           }),
           isDisabled: !y

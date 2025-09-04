@@ -86,8 +86,8 @@ class m extends Chunk647438.Component {
         autoPlay: O,
         autoMute: v,
         responsive: I,
-        mediaLayoutType: S,
-        mimeType: T,
+        mediaLayoutType: T,
+        mimeType: S,
         renderOverlayContent: A,
         renderLinkComponent: C,
         onClick: N,
@@ -111,7 +111,7 @@ class m extends Chunk647438.Component {
       minHeight: Chunk640108.ZP.minHeight,
       shouldLink: false,
       shouldAnimate: false,
-      mediaLayoutType: S,
+      mediaLayoutType: T,
       responsive: I,
       children: e => {
         let {
@@ -134,7 +134,7 @@ class m extends Chunk647438.Component {
           autoPlay: null != O && O,
           autoMute: null != v && v,
           type: s.ZP.Types.VIDEO,
-          mediaLayoutType: S,
+          mediaLayoutType: T,
           fileName: h,
           fileSize: null == n ? true : (0, a.Ng)(n),
           fileSizeBytes: null == n ? true : n,
@@ -149,7 +149,7 @@ class m extends Chunk647438.Component {
           onMute: j,
           onControlsShow: D,
           onControlsHide: x,
-          mimeType: T,
+          mimeType: S,
           downloadable: b,
           disableArrowKeySeek: M
         })

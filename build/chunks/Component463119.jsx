@@ -127,7 +127,7 @@ let w = e => {
           analyticsLocations: E
         })
       }, [_, E, o, v, c]),
-      C = N.Z5c.COLLECTIBLES_SHOP;
+      C = T.Z5c.COLLECTIBLES_SHOP;
     return (0, r.jsxs)(r.Fragment, {
       children: [y && (0, r.jsx)(L, {}), (0, r.jsx)(u.Qj, A(x({
         selected: t,
@@ -184,13 +184,13 @@ let w = e => {
       } = e,
       C = Z(e, ["displayOptions"]);
     let S = (0, a.e7)([p.Z], () => p.Z.useReducedMotion),
-      [N, T] = i.useState(0),
+      [T, N] = i.useState(0),
       [L, D] = i.useState(false),
       M = (0, d.ZP)(),
       U = (0, o.wj)(M);
     L ? U ? (t = null == (l = I.entryPointBackgroundAssets) ? true : l.srcDarkHovered, n = null == (u = I.entrypointBackgroundStyle) || null == (c = u.hovered) ? true : c.dark) : (t = null == (f = I.entryPointBackgroundAssets) ? true : f.srcLightHovered, n = null == (g = I.entrypointBackgroundStyle) || null == (h = g.hovered) ? true : h.light) : U ? (t = null == (m = I.entryPointBackgroundAssets) ? true : m.srcDark, n = null == (O = I.entrypointBackgroundStyle) || null == (b = O.resting) ? true : b.dark) : (t = null == (E = I.entryPointBackgroundAssets) ? true : E.srcLight, n = null == (v = I.entrypointBackgroundStyle) || null == (y = v.resting) ? true : y.light);
     let G = i.useCallback(e => {
-        I.assetIds.length > 0 && T(e => (e + 1) % I.assetIds.length), D(true), null == e || e()
+        I.assetIds.length > 0 && N(e => (e + 1) % I.assetIds.length), D(true), null == e || e()
       }, [I.assetIds.length]),
       B = i.useCallback(e => {
         D(false), null == e || e()
@@ -199,7 +199,7 @@ let w = e => {
     return (0, r.jsx)(s.ua7, {
       text: (0, r.jsx)(k, {
         displayOptions: I,
-        assetId: I.assetIds[N],
+        assetId: I.assetIds[T],
         reducedMotion: S
       }),
       tooltipClassName: P.marketingBadgeTooltip,
@@ -276,7 +276,7 @@ let w = e => {
       m = p ? null == h || null == (t = h.hovered) ? true : t.dark : null == h || null == (n = h.hovered) ? true : n.light;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(R, A(x({}, s), {
-        onClick: () => a(T.L.TAKE_ACTION),
+        onClick: () => a(N.L.TAKE_ACTION),
         listItemRef: c,
         children: [(0, r.jsx)("div", {
           className: P.marketingButtonBackground,
@@ -293,8 +293,8 @@ let w = e => {
       })), (0, r.jsx)(y.Z, {
         displayOptions: l,
         targetElementRef: c,
-        onClick: () => a(T.L.TAKE_ACTION),
-        onRequestClose: () => a(T.L.USER_DISMISS)
+        onClick: () => a(N.L.TAKE_ACTION),
+        onRequestClose: () => a(N.L.USER_DISMISS)
       })]
     })
   },

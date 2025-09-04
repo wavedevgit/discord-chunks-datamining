@@ -91,8 +91,8 @@ function v(e) {
     className: E,
     size: v = c.EFr.SIZE_24,
     overflowCountVariant: I,
-    overflowCountColor: S = "interactive-normal",
-    overflowCountClassName: T,
+    overflowCountColor: T = "interactive-normal",
+    overflowCountClassName: S,
     hideOverflowCount: A = false,
     disableUsernameTooltip: C = false,
     disableUserPopout: N = false,
@@ -178,7 +178,7 @@ function v(e) {
       onRequestClose: () => k(false),
       children: t => (0, r.jsx)(c.P3F, b(g({}, t), {
         innerRef: G,
-        className: o()(h.overflow, U, T),
+        className: o()(h.overflow, U, S),
         onFocus: P,
         onClick: e => {
           null == R || R(e), k(true)
@@ -188,7 +188,7 @@ function v(e) {
         }),
         children: (0, r.jsx)(c.Text, {
           variant: e,
-          color: S,
+          color: T,
           children: Z > 99 ? ">99" : "+".concat(Z)
         })
       }))

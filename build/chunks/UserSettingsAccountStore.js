@@ -35,15 +35,15 @@ function w() {
 
 function D(e) {
   var t;
-  if (C !== T.QZA.SUBMITTING) returnfalse;
-  C = T.QZA.OPEN, N = null != (t = e.errors) ? t : {}
+  if (C !== S.QZA.SUBMITTING) returnfalse;
+  C = S.QZA.OPEN, N = null != (t = e.errors) ? t : {}
 }
 
 function x(e) {
   let {
     section: t
   } = e;
-  return t === T.oAB.ACCOUNT && R()
+  return t === S.oAB.ACCOUNT && R()
 }
 
 function L(e) {

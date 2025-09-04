@@ -86,8 +86,8 @@ let b = Chunk647438.forwardRef(function(e, t) {
     onTooltipHide: O,
     disabled: v,
     dangerous: I,
-    separator: S,
-    sparkle: T,
+    separator: T,
+    sparkle: S,
     showNewBadge: A,
     buttonClassName: C,
     children: N
@@ -142,12 +142,12 @@ let b = Chunk647438.forwardRef(function(e, t) {
           }, E)) : null, null != N ? (0, r.jsx)("div", {
             className: o()(f.icon, f.buttonContent),
             children: N
-          }) : null, T && (0, r.jsx)(s.K1N, {}), A && (0, r.jsx)(s.IGR, {
+          }) : null, S && (0, r.jsx)(s.K1N, {}), A && (0, r.jsx)(s.IGR, {
             text: d.intl.string(d.t.y2b7CA),
             color: l.Z.BG_BRAND,
             className: f.newBadge
           })]
-        })), S && (0, r.jsx)(c.Z0, {})]
+        })), T && (0, r.jsx)(c.Z0, {})]
       })
     }
   })

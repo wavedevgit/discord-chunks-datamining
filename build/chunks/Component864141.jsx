@@ -97,7 +97,7 @@ function w(e) {
     location: "UserProfileVoiceActivityCard"
   }), G = () => {
     if (t.id !== n.id) return null;
-    let e = i.isDM() || i.isGroupDM() ? T.intl.string(T.t["+DsWbW"]) : T.intl.string(T.t.xOVEjY);
+    let e = i.isDM() || i.isGroupDM() ? S.intl.string(S.t["+DsWbW"]) : S.intl.string(S.t.xOVEjY);
     return (0, r.jsx)(s.ua7, {
       text: e,
       children: e => (0, r.jsx)(s.d3s, P(N({}, e), {
@@ -111,7 +111,7 @@ function w(e) {
       onAction: x,
       onClose: R
     })
-  }), Z = i.isDM() || i.isGroupDM() ? T.intl.string(T.t["9FaEzs"]) : i.isGuildStageVoice() ? T.intl.string(T.t.QygGCA) : T.intl.string(T.t.msxteH);
+  }), Z = i.isDM() || i.isGroupDM() ? S.intl.string(S.t["9FaEzs"]) : i.isGuildStageVoice() ? S.intl.string(S.t.QygGCA) : S.intl.string(S.t.msxteH);
   return (0, r.jsx)(c.Gt, {
     value: D,
     children: (0, r.jsxs)(g.Z, {
@@ -146,10 +146,10 @@ function w(e) {
               voiceChannel: i,
               onAction: x,
               onClose: R
-            }), w === S.l.MODAL_V2 && B()]
-          }), w === S.l.MODAL && B()]
+            }), w === T.l.MODAL_V2 && B()]
+          }), w === T.l.MODAL && B()]
         })
-      }), w !== S.l.MODAL && w !== S.l.MODAL_V2 && B()]
+      }), w !== T.l.MODAL && w !== T.l.MODAL_V2 && B()]
     })
   })
 }

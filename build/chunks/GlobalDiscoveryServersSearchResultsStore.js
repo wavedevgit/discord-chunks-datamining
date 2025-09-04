@@ -2,7 +2,7 @@
 /** chunk id: 356164, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -168,7 +168,7 @@ function I(e) {
     presenceCount: null != (n = i.onlineCount) ? n : a.presenceCount
   }))
 }
-class S extends(r = Chunk442837.ZP.Store) {
+class T extends(r = Chunk442837.ZP.Store) {
   getGuild(e) {
     return _.get(e)
   }
@@ -200,8 +200,8 @@ class S extends(r = Chunk442837.ZP.Store) {
     })
   }
 }
-l(S, "displayName", "GlobalDiscoveryServersSearchResultsStore");
-let T = new S(Chunk570140.Z, {
+l(T, "displayName", "GlobalDiscoveryServersSearchResultsStore");
+let S = new T(Chunk570140.Z, {
   CONNECTION_OPEN: E,
   GLOBAL_DISCOVERY_SERVERS_SEARCH_START: b,
   GLOBAL_DISCOVERY_SERVERS_SEARCH_SUCCESS: y,

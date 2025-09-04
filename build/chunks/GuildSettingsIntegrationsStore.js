@@ -43,8 +43,8 @@ let g = [],
   O = null,
   v = false,
   I = false,
-  S = Chunk981631.QZA.CLOSED,
-  T = {},
+  T = Chunk981631.QZA.CLOSED,
+  S = {},
   A = false,
   C = null;
 
@@ -80,11 +80,11 @@ function P(e) {
     let e = z(O.id);
     null != e && (O = e)
   }
-  b = null, S = p.QZA.OPEN, T = {}, A = false
+  b = null, T = p.QZA.OPEN, S = {}, A = false
 }
 
 function w() {
-  r = null, g = [], E = [], b = null, y = null, O = null, S = Chunk981631.QZA.CLOSED, A = false
+  r = null, g = [], E = [], b = null, y = null, O = null, T = Chunk981631.QZA.CLOSED, A = false
 }
 let D = s().debounce(() => {
   A && (null != y ? s().isEqual(y, K(y.id)) && (A = false) : null != O && s().isEqual(O, z(O.id)) && (A = false), A || X.emitChange())
@@ -107,13 +107,13 @@ function L(e) {
 }
 
 function j() {
-  S = Chunk981631.QZA.SUBMITTING, T = {}
+  T = Chunk981631.QZA.SUBMITTING, S = {}
 }
 
 function M(e) {
   var t;
-  if (S !== p.QZA.SUBMITTING) returnfalse;
-  S = p.QZA.OPEN, T = null != (t = e.errors) ? t : {}
+  if (T !== p.QZA.SUBMITTING) returnfalse;
+  T = p.QZA.OPEN, S = null != (t = e.errors) ? t : {}
 }
 
 function k(e) {
@@ -121,7 +121,7 @@ function k(e) {
     guildId: t,
     integrations: n
   } = e;
-  if (null == r || t !== r.id || S === p.QZA.SUBMITTING) returnfalse;
+  if (null == r || t !== r.id || T === p.QZA.SUBMITTING) returnfalse;
   for (let e of (I = false, n))
     if (null == g.find(t => {
         let {
@@ -153,7 +153,7 @@ function U(e) {
     channelId: n,
     webhooks: i
   } = e;
-  if (v = false, null != r && t === r.id && null != i && S !== p.QZA.SUBMITTING) {
+  if (v = false, null != r && t === r.id && null != i && T !== p.QZA.SUBMITTING) {
     for (let e = E.length - 1; e >= 0; e--) {
       let t = E[e];
       if (null != n && (null == t ? true : t.channel_id) !== n) continue;
@@ -182,7 +182,7 @@ function G(e) {
   let {
     commandId: t
   } = e;
-  b = t, y = null, O = null, T = {}, A = true
+  b = t, y = null, O = null, S = {}, A = true
 }
 
 function B(e) {
@@ -190,7 +190,7 @@ function B(e) {
     commandId: t
   } = e;
   if (null == b || b !== t) returnfalse;
-  b = null, T = {}, A = false
+  b = null, S = {}, A = false
 }
 
 function Z(e) {
@@ -198,11 +198,11 @@ function Z(e) {
     integrationId: t
   } = e, n = K(t);
   if (null == n) returnfalse;
-  y = n, b = null, O = null, T = {}, A = false
+  y = n, b = null, O = null, S = {}, A = false
 }
 
 function F() {
-  y = null, T = {}, A = false
+  y = null, S = {}, A = false
 }
 
 function V(e) {
@@ -210,11 +210,11 @@ function V(e) {
     webhookId: t
   } = e, n = z(t);
   if (null == n) returnfalse;
-  O = n, b = null, y = null, T = {}, A = false
+  O = n, b = null, y = null, S = {}, A = false
 }
 
 function H() {
-  O = null, T = {}, A = false
+  O = null, S = {}, A = false
 }
 
 function Y() {
@@ -268,10 +268,10 @@ class q extends(a = Chunk442837.ZP.Store) {
     return O
   }
   get formState() {
-    return S
+    return T
   }
   getErrors() {
-    return T
+    return S
   }
   getSection() {
     return null != i ? i : Chunk981631.b4C.OVERVIEW

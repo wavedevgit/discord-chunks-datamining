@@ -2,7 +2,7 @@
 /** chunk id: 889695, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk124650 = require("./124650.js");
 
-function S(e) {
+function T(e) {
   var t;
   return (0, r.jsx)("span", {
     style: {
@@ -36,10 +36,10 @@ function S(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     guildId: t
-  } = e, n = (0, l.e7)([h.default], () => h.default.getCurrentUser()), a = (0, l.e7)([p.Z], () => p.Z.getGuild(t)), T = (0, l.e7)([_.Z], () => _.Z.getRolesSnapshot(t)), A = (0, l.e7)([_.Z], () => _.Z.getSortedRoles(t)), {
+  } = e, n = (0, l.e7)([h.default], () => h.default.getCurrentUser()), a = (0, l.e7)([p.Z], () => p.Z.getGuild(t)), S = (0, l.e7)([_.Z], () => _.Z.getRolesSnapshot(t)), A = (0, l.e7)([_.Z], () => _.Z.getSortedRoles(t)), {
     impersonateType: C,
     viewingRoles: N
   } = (0, l.cj)([b.Z], () => ({
@@ -51,14 +51,14 @@ function T(e) {
       t = x.current;
     if (null != t && null != C) {
       for (let t of w) {
-        let n = T[t];
+        let n = S[t];
         null != n && (e[t] = n)
       }(0, E.Zm)(t.id, {
         type: C,
         roles: e
       })
     }
-  }, [w, C, T]);
+  }, [w, C, S]);
   let L = null != a && null != n && null != P ? A.find(e => P.roles.includes(e.id)) : true,
     j = i.useMemo(() => null != a && null != n ? A.filter(e => !(0, d.fI)(e)).filter(e => {
       var t;
@@ -67,7 +67,7 @@ function T(e) {
   if (null == n || null == a || null == P) return null;
   let M = {};
   return (P.roles.forEach(e => {
-    let t = T[e];
+    let t = S[e];
     null != t && (M[t.id] = t)
   }), s.e$(m.I0({
     forceRoles: M,
@@ -83,15 +83,15 @@ function T(e) {
         let t = j.reduce((t, n) => (o()(e.toLowerCase(), n.name.toLowerCase()) && t.push((0, r.jsxs)(c.lo1, {
             value: n.id,
             children: [(0, r.jsx)(c.lo1.Label, {
-              children: S(n)
+              children: T(n)
             }), (0, r.jsx)(c.lo1.Checkbox, {})]
           }, n.id)), t), []),
-          n = T[(0, u.lV)(a)];
+          n = S[(0, u.lV)(a)];
         return null != n && t.push((0, r.jsxs)(c.lo1, {
           value: n.id,
           disabled: true,
           children: [(0, r.jsx)(c.lo1.Label, {
-            children: S(n)
+            children: T(n)
           }), (0, r.jsx)(c.lo1.Checkbox, {
             checked: true
           })]

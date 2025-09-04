@@ -127,7 +127,7 @@ function eE(e) {
     location: d
   } = e, _ = R.Z.getGuild(n);
   if (null == _) return eb();
-  let p = S.Z.getProfile(n);
+  let p = T.Z.getProfile(n);
   o = s = _, l = c = p, ee = $, en = et, q = k.QZA.OPEN, X = {}, Q = null, u = D.default.castGuildIdAsEveryoneGuildRoleId(n), ea = s.mfaLevel, eu = ec, f = null, eo = d, eO({
     section: null != (t = null != i ? i : r) ? t : (0, M.r)(),
     subsection: null != a ? a : null
@@ -187,11 +187,11 @@ function eI(e) {
   null != n && (o = s = n)
 }
 
-function eS() {
+function eT() {
   q = Chunk981631.QZA.SUBMITTING, X = {}
 }
 
-function eT() {
+function eS() {
   q = Chunk981631.QZA.OPEN
 }
 
@@ -238,7 +238,7 @@ function eP(e) {
     temporary: e.temporary,
     revoked: e.revoked,
     inviter: null != e.inviter ? new N.Z(e.inviter) : null,
-    channel: (0, T.jD)(e.channel),
+    channel: (0, S.jD)(e.channel),
     guild: null != e.guild ? (0, w.Qs)(e.guild) : null,
     uses: e.uses,
     maxUses: e.max_uses,
@@ -300,7 +300,7 @@ function eU(e) {
   {
     let e = R.Z.getGuild(s.id);
     if (null == e) returnfalse;
-    if (l = S.Z.getProfile(s.id), r !== k.pNK.PROFILE && r !== k.pNK.TAG && (c = l), r === k.pNK.PROFILE) {
+    if (l = T.Z.getProfile(s.id), r !== k.pNK.PROFILE && r !== k.pNK.TAG && (c = l), r === k.pNK.PROFILE) {
       o = e, s = e;
       return
     }
@@ -532,7 +532,7 @@ function te(e) {
     guildId: t
   } = e;
   if ((null == c ? true : c.id) == null || !em(c.id)) returnfalse;
-  t === (null == s ? true : s.id) && (l = c = S.Z.getProfile(t), Q = null)
+  t === (null == s ? true : s.id) && (l = c = T.Z.getProfile(t), Q = null)
 }
 class tt extends(_ = Chunk442837.ZP.Store) {
   initialize() {
@@ -640,8 +640,8 @@ let tn = new tt(Chunk570140.Z, __OVERLAY__ ? {} : {
   GUILD_SETTINGS_PROFILE_UPDATE: eR,
   GUILD_SETTINGS_CANCEL_CHANGES: eI,
   GUILD_SETTINGS_SAVE_ROUTE_STACK: ey,
-  GUILD_SETTINGS_SUBMIT: eS,
-  GUILD_SETTINGS_SUBMIT_SUCCESS: eT,
+  GUILD_SETTINGS_SUBMIT: eT,
+  GUILD_SETTINGS_SUBMIT_SUCCESS: eS,
   GUILD_SETTINGS_SUBMIT_FAILURE: eA,
   GUILD_SETTINGS_SET_SECTION: eO,
   GUILD_SETTINGS_SET_SEARCH_QUERY: ev,

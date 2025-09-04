@@ -51,8 +51,8 @@ function g(e, t) {
     initialAnimation: O,
     initialFrame: v,
     markers: I,
-    onBeforeDismount: S
-  } = e, [T, A] = i.useState(null), C = i.useRef(null), N = i.useRef(null), R = i.useRef(null), P = "custom" === g ? {
+    onBeforeDismount: T
+  } = e, [S, A] = i.useState(null), C = i.useRef(null), N = i.useRef(null), R = i.useRef(null), P = "custom" === g ? {
     width: E,
     height: b
   } : (0, u.m)(g), w = !(0, _.Z)("lottie_hover_multiple_loop"), D = i.useContext(c.S).reducedMotion.enabled, {
@@ -62,7 +62,7 @@ function g(e, t) {
   }), L = D || !x, j = i.useRef(O);
   return (0, f.zq)(() => {
     var e, t;
-    null == S || S({
+    null == T || T({
       finalFrame: null != (t = null == (e = R.current) ? true : e.currentFrame) ? t : null
     })
   }), i.useImperativeHandle(t, () => ({
@@ -87,8 +87,8 @@ function g(e, t) {
     getDuration: e => null == R.current ? null : R.current.getDuration(e),
     getCurrentFrame: () => null == R.current ? null : R.current.currentFrame
   }), [L, w, I, v]), i.useEffect(() => {
-    null == T && h().then(e => A(e.default))
-  }, [T, h]), i.useEffect(() => (Promise.resolve().then(n.t.bind(n, 500923, 23)).then(e => {
+    null == S && h().then(e => A(e.default))
+  }, [S, h]), i.useEffect(() => (Promise.resolve().then(n.t.bind(n, 500923, 23)).then(e => {
     var t, n;
     let r, {
         default: i
@@ -104,13 +104,13 @@ function g(e, t) {
       renderer: "svg",
       loop: false,
       autoplay: false,
-      animationData: l()(T),
+      animationData: l()(S),
       initialSegment: r
     }))
   }), () => {
     var e;
     null == (e = R.current) || e.destroy()
-  }), [T, I, v, L]), (0, r.jsx)("div", {
+  }), [S, I, v, L]), (0, r.jsx)("div", {
     style: m({
       "--__lottieIconColor": null != a && "string" == typeof a ? a : null == a ? true : a.css,
       display: "flex"

@@ -12,7 +12,7 @@ var Chunk442837 = require("./442837.js"),
 function c(e) {
   let {
     userId: t
-  } = (0, o.z)(), r = (0, i.N)(e);
+  } = (0, a.z)(), r = (0, i.N)(e);
   return (0, n.Wu)([l.default], () => {
     let e = l.default.getCurrentUser(),
       n = new Set;
@@ -20,6 +20,6 @@ function c(e) {
       n.add(e.author_id), e.participants.forEach(e => {
         n.add(e)
       })
-    }), Array.from(n).filter(r => r !== (null == e ? true : e.id) && r !== t).map(e => l.default.getUser(e)).filter(a.lm)
+    }), Array.from(n).filter(r => r !== (null == e ? true : e.id) && r !== t).map(e => l.default.getUser(e)).filter(o.lm)
   }, [r, t])
 }

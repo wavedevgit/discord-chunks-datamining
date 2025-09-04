@@ -141,11 +141,11 @@ function I(e) {
   v(e, true)
 }
 
-function S(e) {
+function T(e) {
   v(e, false)
 }
 
-function T() {
+function S() {
   h = {}
 }
 class A extends(r = Chunk442837.ZP.PersistedStore) {
@@ -190,10 +190,10 @@ c(A, "displayName", "GuildPowerupsStore"), c(A, "persistKey", "GuildPowerupsStor
   })]
 }))]);
 let C = new A(Chunk570140.Z, {
-  LOGOUT: T,
+  LOGOUT: S,
   GUILD_POWERUP_CATALOG_FETCH_SUCCESS: y,
   GUILD_UNLOCKED_POWERUPS_FETCH_SUCCESS: O,
   GUILD_POWERUP_ENTITLEMENTS_CREATE: I,
-  GUILD_POWERUP_ENTITLEMENTS_DELETE: S,
+  GUILD_POWERUP_ENTITLEMENTS_DELETE: T,
   GUILD_UPDATE: g
 })

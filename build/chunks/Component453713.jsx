@@ -76,7 +76,7 @@ function I(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let S = l()(e => {
+let T = l()(e => {
     let t = false;
     if (null != e && (0, d.FX)(e)) {
       let n = (0, d._i)(e);
@@ -84,7 +84,7 @@ let S = l()(e => {
     }
     return t ? f.TVs.unsafe_rawColors.PRIMARY_700.css : f.TVs.unsafe_rawColors.PRIMARY_200.css
   }),
-  T = e => {
+  S = e => {
     let {
       variantGroupProduct: t,
       variant: n,
@@ -97,10 +97,10 @@ let S = l()(e => {
     } = e, {
       isPurchased: y
     } = (0, h.L)(n), I = (0, c.JA)("shop-variants-group-".concat(t.storeListingId, "-").concat(a)), {
-      onFocus: T
+      onFocus: S
     } = I, A = v(I, ["onFocus"]), C = i.useCallback(e => {
-      e.preventDefault(), e.stopPropagation(), (0, p.$)(t, a), T()
-    }, [T, t, a]);
+      e.preventDefault(), e.stopPropagation(), (0, p.$)(t, a), S()
+    }, [S, t, a]);
     return (0, r.jsx)(f.ua7, {
       text: m.intl.string(m.t["6cfuDg"]),
       "aria-label": false,
@@ -139,7 +139,7 @@ let S = l()(e => {
           },
           children: y ? (0, r.jsx)(f.kSu, {
             className: g.purchasedIndicator,
-            color: S(n.variantValue)
+            color: T(n.variantValue)
           }) : null
         })
       }))
@@ -155,11 +155,11 @@ let S = l()(e => {
       minimal: d,
       selectedVariantIndex: p,
       alternativeBackgroundColor: h
-    } = e, E = s.previewingVariantIndex, y = null == (t = i.variants) ? true : t[p], I = null !== E ? null == (n = i.variants) ? true : n[E] : true, S = (0, _.Z)("shop-variants-group-".concat(i.storeListingId), u.hy.HORIZONTAL);
+    } = e, E = s.previewingVariantIndex, y = null == (t = i.variants) ? true : t[p], I = null !== E ? null == (n = i.variants) ? true : n[E] : true, T = (0, _.Z)("shop-variants-group-".concat(i.storeListingId), u.hy.HORIZONTAL);
     if (null == y) return null;
     let A = null != I ? I.variantLabel : null == y ? true : y.variantLabel;
     return (0, r.jsx)(c.bG, {
-      navigator: S,
+      navigator: T,
       children: (0, r.jsx)(c.SJ, {
         children: e => {
           var t, {
@@ -179,7 +179,7 @@ let S = l()(e => {
               className: g.variantsList,
               children: null == (t = i.variants) ? true : t.map((e, t) => {
                 var n, a;
-                return (0, r.jsx)(T, {
+                return (0, r.jsx)(S, {
                   variantGroupProduct: i,
                   variant: e,
                   variantIndex: t,

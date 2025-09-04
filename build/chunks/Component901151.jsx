@@ -56,12 +56,12 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = 3,
+let S = 3,
   A = 3;
 
 function C(e) {
@@ -69,13 +69,13 @@ function C(e) {
     applications: t
   } = e, n = i.useMemo(() => t.sort((e, t) => d.default.compare(t.id, e.id)), [t]), a = i.useMemo(() => {
     let e = [];
-    for (let t = 0; t < T; t++) {
+    for (let t = 0; t < S; t++) {
       let r = n[t];
       if (null == r) break;
       e.push(r.name)
     }
     let t = e.join(", "),
-      i = n.length - T;
+      i = n.length - S;
     return i > 0 ? b.intl.format(b.t.sHFdTk, {
       gameList: t,
       plusMoreHook: (e, t) => (0, r.jsx)(s.Text, {
@@ -102,7 +102,7 @@ function C(e) {
       });
       e.push((0, r.jsx)(s.ua7, {
         text: o,
-        children: e => (0, r.jsx)("img", S(v({}, e), {
+        children: e => (0, r.jsx)("img", T(v({}, e), {
           src: u,
           "aria-label": o,
           className: y.icon

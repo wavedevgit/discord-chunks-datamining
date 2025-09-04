@@ -67,14 +67,14 @@ let v = e => {
     onSuccess: v,
     tooltipDelay: I
   } = e, {
-    analyticsLocations: S
-  } = (0, l.ZP)(), T = i.useRef(null), A = (0, d.sp)(), C = (0, _.Z)();
+    analyticsLocations: T
+  } = (0, l.ZP)(), S = i.useRef(null), A = (0, d.sp)(), C = (0, _.Z)();
   return (0, f.x6)(t) ? null : (0, r.jsx)(s.ua7, {
     text: g.intl.string(g.t["JCFN//"]),
     delay: I,
     children: e => (0, r.jsx)(s.hU, O(b({}, e), {
       "aria-label": g.intl.string(g.t["JCFN//"]),
-      buttonRef: T,
+      buttonRef: S,
       variant: n ? "primary" : "secondary",
       icon: s.OgN,
       size: "md",
@@ -95,7 +95,7 @@ let v = e => {
           }),
           isGift: true,
           giftingOrigin: m.Wt.SHOP_PAGE,
-          analyticsLocations: S,
+          analyticsLocations: T,
           returnRef: y,
           variantsReturnStyle: o.v.VARIANTS_GROUP,
           onClose: null != v ? e => {

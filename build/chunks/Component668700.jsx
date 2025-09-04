@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   W: () => I,
-  Z: () => S
+  Z: () => T
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -28,26 +28,26 @@ var Chunk442837 = require("./442837.js"),
   Chunk704543 = require("./704543.js");
 let I = 3;
 
-function S(e) {
+function T(e) {
   let {
     user: t,
     guild: n,
-    channel: S,
-    onAction: T,
+    channel: T,
+    onAction: S,
     onClose: A
   } = e, {
     themeType: C
-  } = (0, g.z)(), N = (0, h.Z)(S), R = (0, l.ZP)(S), {
+  } = (0, g.z)(), N = (0, h.Z)(T), R = (0, l.ZP)(T), {
     canViewChannel: P,
     canConnect: w
   } = (0, i.cj)([p.Z], () => ({
-    canViewChannel: p.Z.can(b.Plq.VIEW_CHANNEL, S),
-    canConnect: S.isPrivate() || p.Z.can(b.Plq.CONNECT, S)
+    canViewChannel: p.Z.can(b.Plq.VIEW_CHANNEL, T),
+    canConnect: T.isPrivate() || p.Z.can(b.Plq.CONNECT, T)
   }));
   if (!P) return null;
   let D = () => {
       let e = e => {
-        e.stopPropagation(), (0, _.X)(n.id), null == T || T({
+        e.stopPropagation(), (0, _.X)(n.id), null == S || S({
           action: "OPEN_VOICE_GUILD"
         }), null == A || A()
       };
@@ -73,7 +73,7 @@ function S(e) {
         })
       });
       let e = e => {
-        e.stopPropagation(), s.default.selectVoiceChannel(S.id), (0, f.Kh)(S.id), null == T || T({
+        e.stopPropagation(), s.default.selectVoiceChannel(T.id), (0, f.Kh)(T.id), null == S || S({
           action: "OPEN_VOICE_CHANNEL"
         }), null == A || A()
       };
@@ -102,7 +102,7 @@ function S(e) {
       }), (0, r.jsxs)("div", {
         className: v.voiceChannelText,
         children: [(0, r.jsx)(E.Z, {
-          channel: S,
+          channel: T,
           size: "xxs",
           color: o.TVs.colors.TEXT_SECONDARY,
           className: v.voiceIcon
@@ -110,13 +110,13 @@ function S(e) {
       }), (0, r.jsx)(u.Z, {
         users: N,
         guildId: n.id,
-        channelId: S.id,
+        channelId: T.id,
         maxUsers: I,
         size: o.EFr.SIZE_16,
         overflowCountColor: "text-secondary",
         overflowCountClassName: v.voiceChannelOverflowCount,
         onClickOverflow: e => {
-          e.stopPropagation(), null == T || T({
+          e.stopPropagation(), null == S || S({
             action: "PRESS_VOICE_CHANNEL_AVATARS"
           })
         },

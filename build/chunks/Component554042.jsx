@@ -51,7 +51,7 @@ function O() {
   } = (0, Chunk442837.cj)([Chunk210887.Z, Chunk607070.Z], () => ({
     theme: Chunk210887.Z.theme,
     platformZoom: Chunk607070.Z.zoom
-  })), [O, v] = Chunk647438.useState("upright"), I = ["normal", "medium", "semibold", "bold", "extrabold"], S = [10, 12, 14, 15, 16, 18, 20, 24], T = new Map([
+  })), [O, v] = Chunk647438.useState("upright"), I = ["normal", "medium", "semibold", "bold", "extrabold"], T = [10, 12, 14, 15, 16, 18, 20, 24], S = new Map([
     ["normal", 400],
     ["medium", 500],
     ["semibold", 600],
@@ -173,7 +173,7 @@ function O() {
             variant: "eyebrow",
             children: e
           })
-        }, e)), S.map(e => (0, r.jsxs)(i.Fragment, {
+        }, e)), T.map(e => (0, r.jsxs)(i.Fragment, {
           children: [(0, r.jsxs)("div", {
             className: b.fontSize,
             children: [(0, r.jsxs)(c.X6q, {
@@ -196,7 +196,7 @@ function O() {
                 }),
                 style: {
                   fontSize: e,
-                  fontWeight: T.get(t)
+                  fontWeight: S.get(t)
                 },
                 children: [(0, r.jsx)("p", {
                   children: i

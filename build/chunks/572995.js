@@ -120,11 +120,11 @@ let es = (e, t) => ei({
     },
     emojis: {
       thumbnail: I.Z,
-      assetUrl: e ? v.Z : S.Z
+      assetUrl: e ? v.Z : T.Z
     },
     noLimits: {
       thumbnail: A.Z,
-      assetUrl: e ? T.Z : C.Z
+      assetUrl: e ? S.Z : C.Z
     }
   } : {
     referralProgram: {
@@ -181,7 +181,7 @@ let es = (e, t) => ei({
       previewImage: Chunk872532.permadecos.thumbnail,
       onClick: exports,
       videoUrl: Chunk872532.permadecos.assetUrl
-    }, S = {
+    }, T = {
       name: "serverProfiles",
       title: Chunk388032.intl.string(Chunk388032.t.I9TYMj),
       description: Chunk388032.intl.string(Chunk388032.t.HMSHeH),
@@ -189,7 +189,7 @@ let es = (e, t) => ei({
       onClick: exports,
       previewImage: Chunk872532.serverProfiles.thumbnail,
       videoUrl: Chunk872532.serverProfiles.assetUrl
-    }, T = {
+    }, S = {
       name: "referralProgram",
       title: Chunk388032.intl.string(Chunk388032.t.tPY4o6),
       description: Chunk388032.intl.format(Chunk388032.t.jRPQUF, {

@@ -29,16 +29,16 @@ let y = "premiumRetentionEmojiPickerNotice",
       channel: n
     } = e, [a, v] = i.useState(false), {
       subscription: I,
-      hasFetchedSubscriptions: S
+      hasFetchedSubscriptions: T
     } = (0, s.cj)([_.Z], () => ({
       subscription: _.Z.getPremiumSubscription(),
       hasFetchedSubscriptions: _.Z.hasFetchedSubscriptions()
     }));
     if (i.useEffect(() => {
-        S || (0, u.jg)()
-      }, [S]), null == I || !(0, p.zV)(I.status) || a) return null;
-    let T = I.status === m.O0b.PAST_DUE ? (0, p.lY)(I).expiresDate : o()(I.currentPeriodStart).add(g.gh),
-      A = "".concat(I.id, ":").concat(T.toISOString());
+        T || (0, u.jg)()
+      }, [T]), null == I || !(0, p.zV)(I.status) || a) return null;
+    let S = I.status === m.O0b.PAST_DUE ? (0, p.lY)(I).expiresDate : o()(I.currentPeriodStart).add(g.gh),
+      A = "".concat(I.id, ":").concat(S.toISOString());
     if (O === A) return null;
     let C = p.ZP.getPremiumType(I.planId) === g.p9.TIER_0 ? f.JX.PREMIUM_TIER_0 : p.ZP.getPremiumType(I.planId) === g.p9.TIER_1 ? f.JX.PREMIUM_TIER_1 : f.JX.PREMIUM_TIER_2;
     return (0, r.jsxs)("div", {
@@ -53,7 +53,7 @@ let y = "premiumRetentionEmojiPickerNotice",
           variant: "text-xs/normal",
           children: E.intl.format(E.t.bTMjiI, {
             planName: p.ZP.getDisplayPremiumType(I.planId),
-            endsAt: T.toDate()
+            endsAt: S.toDate()
           })
         }), (0, r.jsx)("div", {
           children: (0, r.jsx)(c.eee, {

@@ -51,7 +51,7 @@ function I(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -62,8 +62,8 @@ function S(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -83,7 +83,7 @@ function N(e) {
 
 function R(e) {
   var t;
-  return new d.pi(T(I({}, e), {
+  return new d.pi(S(I({}, e), {
     timestamp: new Date(e.timestamp),
     editedTimestamp: null != e.edited_timestamp ? new Date(e.edited_timestamp) : null,
     attachments: x(e),
@@ -101,7 +101,7 @@ function P(e) {
       reactions: y,
       interactionData: v
     } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
-    S = R(e),
+    T = R(e),
     A = null != (i = null == (t = e.mentions) ? true : t.map(e => e.id)) ? i : [],
     P = null != (o = e.mention_roles) ? o : [],
     w = null != (s = e.mention_channels) ? s : [],
@@ -114,14 +114,14 @@ function P(e) {
     Z = null != e.interaction ? u.Z.createFromServer(e.interaction) : null,
     F = e.type === O.uaV.THREAD_STARTER_MESSAGE ? null == (r = e.referenced_message) || null == (n = r.author) ? true : n.id : true,
     V = e.content;
-  return new d.ZP((e.type === O.uaV.PREMIUM_REFERRAL ? (h = E.default.isProbablyAValidSnowflake(e.content) ? e.content : true, V = "") : e.type === O.uaV.CHAT_WALLPAPER_SET && (m = (0, a.Z)(e.content), V = ""), N(e)) ? T(I({}, U), {
+  return new d.ZP((e.type === O.uaV.PREMIUM_REFERRAL ? (h = E.default.isProbablyAValidSnowflake(e.content) ? e.content : true, V = "") : e.type === O.uaV.CHAT_WALLPAPER_SET && (m = (0, a.Z)(e.content), V = ""), N(e)) ? S(I({}, U), {
     id: e.id,
     channel_id: e.channel_id,
     type: O.uaV.DEFAULT,
     author: j,
-    timestamp: S.timestamp,
+    timestamp: T.timestamp,
     isUnsupported: true
-  }) : T(I({}, e, U, S.toJS()), {
+  }) : S(I({}, e, U, T.toJS()), {
     author: j,
     webhookId: e.webhook_id,
     blocked: p.Z.isBlockedForMessage(e) || null != F && p.Z.isBlocked(F),
@@ -143,7 +143,7 @@ function P(e) {
     giftCodes: (0, g.Fp)(e) ? (0, g.Q_)(null == e ? true : e.embeds[0].url) : (0, g.Q_)(e.content),
     content: V,
     referralTrialOfferId: h,
-    call: L(e.call, S.timestamp),
+    call: L(e.call, T.timestamp),
     messageSnapshots: k(e),
     reactions: M(null != y ? y : e.reactions, e.poll),
     interaction: Z,
@@ -161,7 +161,7 @@ function P(e) {
 }
 
 function w(e, t) {
-  return null != t.edited_timestamp ? T(I({}, t), {
+  return null != t.edited_timestamp ? S(I({}, t), {
     reactions: e.reactions,
     interaction_data: e.interaction_data
   }) : I({}, e, t)
@@ -187,7 +187,7 @@ function D(e, t) {
 }
 
 function x(e) {
-  return null == e.attachments ? [] : e.attachments.map(e => T(I({}, e), {
+  return null == e.attachments ? [] : e.attachments.map(e => S(I({}, e), {
     spoiler: e.filename.startsWith(y._j)
   }))
 }

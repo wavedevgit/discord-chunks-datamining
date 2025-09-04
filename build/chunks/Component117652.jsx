@@ -73,7 +73,7 @@ function L(e) {
     loading: s = false
   } = e, {
     hasPaymentSources: l
-  } = (0, I.JL)(), c = l ? S.h8.REVIEW : S.h8.ADD_PAYMENT_STEPS;
+  } = (0, I.JL)(), c = l ? T.h8.REVIEW : T.h8.ADD_PAYMENT_STEPS;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.zxk, {
       onClick: () => t(c),
@@ -94,7 +94,7 @@ function j(e) {
     customGiftMessage: s = "",
     setCustomGiftMessage: l,
     giftRecipientError: m,
-    setGiftRecipientError: S,
+    setGiftRecipientError: T,
     validatingGiftRecipient: w,
     giftRecipient: D,
     recommendedGiftSkuIds: x,
@@ -114,7 +114,7 @@ function j(e) {
   }, {
     autoTrackExposure: false
   }), W = H && j === C.Wt.DM_CHANNEL, K = Y === _.u.POPULAR ? N.intl.string(N.t.Kwgrrq) : N.intl.string(N.t.r1huYW), z = async (e, t) => {
-    k(true), null != m && S(), await (0, c.B1)(e.id, t) || S(N.intl.string(N.t["4kgVqa"])), k(false)
+    k(true), null != m && T(), await (0, c.B1)(e.id, t) || T(N.intl.string(N.t["4kgVqa"])), k(false)
   };
   (0, o.ZP)(() => {
     null != U && null != D && (y.default.track(A.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
@@ -196,12 +196,12 @@ function j(e) {
       })
     };
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(T.C3, {
+    children: [(0, r.jsx)(S.C3, {
       children: (0, r.jsxs)("div", {
         className: R.stepBody,
         children: [J(), $()]
       })
-    }), (0, r.jsx)(T.O3, {
+    }), (0, r.jsx)(S.O3, {
       children: (0, r.jsx)(a.mzw, {
         justify: f.Z.Justify.BETWEEN,
         align: f.Z.Align.CENTER,

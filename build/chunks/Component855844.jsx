@@ -57,12 +57,12 @@ function C(e) {
   });
   let G = (0, O.Z)(t),
     B = (0, _.M)({
-      deviceType: S.h7.AUDIO_INPUT,
+      deviceType: T.h7.AUDIO_INPUT,
       analyticsLocations: U,
       asSubmenu: true
     }),
     Z = (0, _.M)({
-      deviceType: S.h7.AUDIO_OUTPUT,
+      deviceType: T.h7.AUDIO_OUTPUT,
       analyticsLocations: U,
       asSubmenu: true
     }),
@@ -90,7 +90,7 @@ function C(e) {
       onClose: N,
       navId: "audio-device-context",
       variant: "fixed",
-      "aria-label": T.intl.string(T.t.ZR1Ss7),
+      "aria-label": S.intl.string(S.t.ZR1Ss7),
       className: A.menu,
       children: [(0, r.jsxs)(s.kSQ, {
         children: [L && B, w && V, D && Z]
@@ -110,14 +110,14 @@ function C(e) {
         children: [R && y.isPlatformEmbedded && X ? (0, r.jsx)(s.S89, {
           checked: z === v.pM4.PUSH_TO_TALK,
           id: "input-mode",
-          label: T.intl.string(T.t.Q8gkVF),
+          label: S.intl.string(S.t.Q8gkVF),
           action: () => l.Z.setMode(q, true, true, {
             analyticsLocations: U
           }),
           disabled: F === I._.STUDIO
         }) : null, P && (0, r.jsx)(s.S89, {
           id: "deafen",
-          label: T.intl.string(T.t.wjcRFR),
+          label: S.intl.string(S.t.wjcRFR),
           action: () => l.Z.toggleSelfDeaf({
             context: W,
             location: "AudioDeviceMenu"

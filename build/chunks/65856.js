@@ -141,6 +141,14 @@ class b {
       message: i
     })
   }
+  listenIsSubscribed(e) {
+    return this.isSubscribedListeners.add(e), () => {
+      this.isSubscribedListeners.delete(e)
+    }
+  }
+  dispatchIsSubscribedUpdate() {
+    this.isSubscribedListeners.forEach(e => e())
+  }
   isSubscribed(e, t) {
     return true !== this.subscriptions.find(n => n.socket.application.id === e && n.evt === t)
   }
@@ -150,7 +158,7 @@ class b {
   addSubscription(e, t, n) {
     let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : null,
       i = this.dispatch.bind(this, e, null, _.Etm.DISPATCH, t);
-    null == this.getSubscription(e, t, n) && this.subscriptions.push({
+    null == this.getSubscription(e, t, n) && (this.subscriptions.push({
       update: r,
       dispatch: i,
       prevState: r ? r({
@@ -160,13 +168,13 @@ class b {
       socket: e,
       evt: t,
       args: n
-    })
+    }), this.dispatchIsSubscribedUpdate())
   }
   removeSubscription(e, t, n) {
-    o().remove(this.subscriptions, r => r.socket === e && r.evt === t && o().isEqual(r.args, n))
+    o().remove(this.subscriptions, r => r.socket === e && r.evt === t && o().isEqual(r.args, n)), this.dispatchIsSubscribedUpdate()
   }
   removeSubscriptions(e) {
-    o().remove(this.subscriptions, t => t.socket === e)
+    o().remove(this.subscriptions, t => t.socket === e), this.dispatchIsSubscribedUpdate()
   }
   dispatchToSubscriptions(e, t, n, r) {
     null != r && "" !== r && E(r) || this.subscriptions.forEach(r => {
@@ -199,6 +207,6 @@ class b {
     }).then(e => (a(), e))
   }
   constructor(e) {
-    p(this, "getCurrentUser", () => null), p(this, "onConnect", () => {}), p(this, "onDisconnect", () => {}), p(this, "getJoi", true), p(this, "events", {}), p(this, "commands", {}), p(this, "sockets", new Set), p(this, "subscriptions", []), this.getJoi = e
+    p(this, "getCurrentUser", () => null), p(this, "onConnect", () => {}), p(this, "onDisconnect", () => {}), p(this, "getJoi", true), p(this, "events", {}), p(this, "commands", {}), p(this, "sockets", new Set), p(this, "subscriptions", []), p(this, "isSubscribedListeners", new Set), this.getJoi = e
   }
 }

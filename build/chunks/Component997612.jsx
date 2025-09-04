@@ -151,12 +151,12 @@ function j(e) {
     D.setState({
       selectedStory: e
     })
-  }, T = null != (t = null == d ? true : d.name) ? t : "Design System", A = null == E ? true : E.name, N = () => {
+  }, S = null != (t = null == d ? true : d.name) ? t : "Design System", A = null == E ? true : E.name, N = () => {
     let e = "dev://mana/".concat(null == E ? true : E.id);
     (0, O.JG)(e, () => (0, _.CF)({
       id: "playground-link-copied",
       message: "Copied playground link",
-      type: S.pC.SUCCESS
+      type: T.pC.SUCCESS
     }))
   };
   return (0, r.jsxs)("div", {
@@ -181,10 +181,10 @@ function j(e) {
       className: C.content,
       children: [(0, r.jsxs)(g.ZP, {
         className: C.header,
-        children: [null != T ? (0, r.jsx)(g.ZP.Title, {
-          children: T
+        children: [null != S ? (0, r.jsx)(g.ZP.Title, {
+          children: S
         }) : null, null != A ? (0, r.jsxs)(r.Fragment, {
-          children: [null != T ? (0, r.jsx)(g.ZP.Caret, {
+          children: [null != S ? (0, r.jsx)(g.ZP.Caret, {
             className: C.headerDivider
           }) : null, (0, r.jsx)(g.ZP.Title, {
             children: A

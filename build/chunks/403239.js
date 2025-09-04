@@ -18,13 +18,13 @@ function s(e) {
     widget: u,
     index: d,
     disableInteraction: f = false
-  } = e, g = (0, c.Z)(s), b = (0, n.useCallback)((e, t) => {
-    let r = g.slice(),
+  } = e, b = (0, c.Z)(s), p = (0, n.useCallback)((e, t) => {
+    let r = b.slice(),
       [n] = r.splice(e, 1);
-    r.splice(t, 0, n), o.Z.setPendingWidgets(r)
-  }, [g]), [{
-    isDragging: p
-  }, m, O] = (0, i.c)({
+    r.splice(t, 0, n), a.Z.setPendingWidgets(r)
+  }, [b]), [{
+    isDragging: g
+  }, O, y] = (0, i.c)({
     type: "WIDGET",
     item: {
       widgetId: u.id,
@@ -38,11 +38,11 @@ function s(e) {
     })
   });
   (0, n.useEffect)(() => {
-    O((0, a.r)(), {
+    y((0, o.r)(), {
       captureDraggingState: true
     })
-  }, [O]);
-  let [y, j] = (0, l.L)({
+  }, [y]);
+  let [j, m] = (0, l.L)({
     accept: "WIDGET",
     canDrop: () => !f,
     collect: e => ({
@@ -56,17 +56,17 @@ function s(e) {
       let i = e.index,
         l = null != d ? d : 0;
       if (i === l) return;
-      let a = null == (n = t.current) ? true : n.getBoundingClientRect(),
-        o = (a.bottom - a.top) / 2,
+      let o = null == (n = t.current) ? true : n.getBoundingClientRect(),
+        a = (o.bottom - o.top) / 2,
         c = r.getClientOffset();
       if (null == c) return;
-      let s = c.y - a.top;
-      (!(i < l) || !(s < o)) && (i > l && s > o || (b(i, l), e.index = l))
+      let s = c.y - o.top;
+      (!(i < l) || !(s < a)) && (i > l && s > a || (p(i, l), e.index = l))
     }
   });
   return null == d || f ? {
     isDragging: false
-  } : (m(r), j(t), {
-    isDragging: p
+  } : (O(r), m(t), {
+    isDragging: g
   })
 }

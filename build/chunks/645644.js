@@ -180,9 +180,9 @@ class M {
   }
   getByWidget(e) {
     switch (e) {
-      case T.Odu.VOICE:
+      case S.Odu.VOICE:
         return this.getByType(0);
-      case T.Odu.TEXT:
+      case S.Odu.TEXT:
         return this.getByType(1);
       default:
         return null
@@ -360,7 +360,7 @@ class G {
     if (null != n) {
       n.screenAnalytics.destroy();
       let t = await n.getAnalytics();
-      for (let e of (b.default.track(T.rMx.OVERLAY_USAGE_STATS, t.usage), t.notifications)) b.default.track(T.rMx.OVERLAY_USAGE_NOTIFICATION_STATS, e);
+      for (let e of (b.default.track(S.rMx.OVERLAY_USAGE_STATS, t.usage), t.notifications)) b.default.track(S.rMx.OVERLAY_USAGE_NOTIFICATION_STATS, e);
       x.verbose("OVERLAY_USAGE_STATS: ".concat(e.name), t), delete G.gamesByPid[e.pid]
     }
     delete G.gamesByName[t]
@@ -541,7 +541,7 @@ function K(e) {
 }
 
 function z(e) {
-  e.message.state === T.yb.SENDING && G.desktopMessageEvent("created")
+  e.message.state === S.yb.SENDING && G.desktopMessageEvent("created")
 }
 
 function q(e) {
@@ -580,10 +580,10 @@ class $ {
     var t;
     let n = (null != (t = e.channelId) ? t : "unknown") + e.context;
     switch (e.state) {
-      case T.hes.RTC_CONNECTED:
+      case S.hes.RTC_CONNECTED:
         $.connections.add(n);
         break;
-      case T.hes.DISCONNECTED:
+      case S.hes.DISCONNECTED:
         $.connections.delete(n)
     }
     let r = $.hasConnection();
@@ -604,7 +604,7 @@ class ee {
     })
   }
   static handleMessageCreate(e) {
-    if (e.message.state !== T.yb.SENDING) return;
+    if (e.message.state !== S.yb.SENDING) return;
     x.verbose("MESSAGE_CREATE", e, Error().stack);
     let t = m.Z.getGame();
     if (null == t) return void x.error("Game not found.");

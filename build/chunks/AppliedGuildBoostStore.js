@@ -2,7 +2,7 @@
 /** chunk id: 899667, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
@@ -113,7 +113,7 @@ class I extends(r = Chunk442837.ZP.Store) {
   }
 }
 o(I, "displayName", "AppliedGuildBoostStore");
-let S = new I(Chunk570140.Z, {
+let T = new I(Chunk570140.Z, {
   GUILD_APPLIED_BOOSTS_FETCH_SUCCESS: p,
   USER_APPLIED_BOOSTS_FETCH_SUCCESS: h,
   APPLIED_BOOSTS_COOLDOWN_FETCH_SUCCESS: m,

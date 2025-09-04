@@ -48,10 +48,10 @@ function I() {
         skuId: require,
         applicationId: r
       }, e = true);
-  return module && S(), module
+  return module && T(), module
 }
 
-function S() {
+function T() {
   let e = false;
   for (let {
       skuId: t,
@@ -77,7 +77,7 @@ function S() {
   return module
 }
 
-function T(e) {
+function S(e) {
   let {
     skuId: t
   } = e;
@@ -100,10 +100,10 @@ class C extends(r = Chunk442837.ZP.Store) {
 E(C, "displayName", "DetectedOffPlatformPremiumPerksStore");
 let N = new C(Chunk570140.Z, {
   LOGOUT: A,
-  SKU_FETCH_SUCCESS: S,
-  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: S,
-  ENTITLEMENT_CREATE: S,
-  APPLICATION_FETCH_SUCCESS: S,
-  DETECTED_OFF_PLATFORM_PREMIUM_PERKS_DISMISS: T,
+  SKU_FETCH_SUCCESS: T,
+  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: T,
+  ENTITLEMENT_CREATE: T,
+  APPLICATION_FETCH_SUCCESS: T,
+  DETECTED_OFF_PLATFORM_PREMIUM_PERKS_DISMISS: S,
   RUNNING_GAMES_CHANGE: I
 })

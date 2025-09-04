@@ -25,7 +25,7 @@ var a, Chunk442837 = require("./442837.js"),
   Chunk469115 = require("./469115.js"),
   Chunk874893 = require("./874893.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -124,7 +124,7 @@ class M extends(a = Chunk442837.ZP.PersistedStore) {
     return i
   }
   constructor(...e) {
-    super(...e), T(this, "migrations", [e => {
+    super(...e), S(this, "migrations", [e => {
       var t;
       return {
         gradientPresetId: null == e || null == (t = e.gradientPreset) ? true : t.id
@@ -132,7 +132,7 @@ class M extends(a = Chunk442837.ZP.PersistedStore) {
     }])
   }
 }
-T(M, "displayName", "ClientThemesBackgroundStore"), T(M, "persistKey", "ClientThemesBackgroundStore");
+S(M, "displayName", "ClientThemesBackgroundStore"), S(M, "persistKey", "ClientThemesBackgroundStore");
 let k = new M(Chunk570140.Z, {
   UPDATE_BACKGROUND_GRADIENT_PRESET: N,
   UPDATE_MOBILE_PENDING_THEME_INDEX: R,

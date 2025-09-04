@@ -271,7 +271,7 @@ function er(e) {
     renderAdjacentContent: t
   } = e, n = K(e, ["renderAdjacentContent"]);
   return (0, r.jsxs)(i.Fragment, {
-    children: [(0, r.jsx)(S.Z, H({}, n)), null != t && t()]
+    children: [(0, r.jsx)(T.Z, H({}, n)), null != t && t()]
   })
 }
 
@@ -433,7 +433,7 @@ function ed(e) {
     scrollManager: h
   } = e, {
     disableInteractions: E
-  } = i.useContext(b.G), [y, v] = i.useState(null), I = i.useRef(null), [S, N] = i.useState(null), R = i.useRef(null), j = (0, u.Wu)([A.Z], () => {
+  } = i.useContext(b.G), [y, v] = i.useState(null), I = i.useRef(null), [T, N] = i.useState(null), R = i.useRef(null), j = (0, u.Wu)([A.Z], () => {
     var e;
     return null != (e = A.Z.summaries(s.id)) ? e : []
   }, [s]), k = (0, g.Z)(j);
@@ -467,7 +467,7 @@ function ed(e) {
       v(null != (t = null == e ? true : e.id) ? t : null)
     }, 64), [v]),
     W = i.useMemo(() => l().throttle(() => {
-      (0, T.yK)(null)
+      (0, S.yK)(null)
     }, 1200, {
       trailing: false
     }), []),
@@ -492,7 +492,7 @@ function ed(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : B.DZ.PILL_DROPDOWN,
         n = j[e];
       if (null == n) return;
-      (0, T.wv)(s.id, n.id), (0, T.yK)(s.id, n.id);
+      (0, S.wv)(s.id, n.id), (0, S.yK)(s.id, n.id);
       let r = () => {
         h.removeScrollCompleteCallback(r), setTimeout(() => {
           h.addAutomaticAnchorCallback(K, false)
@@ -520,13 +520,13 @@ function ed(e) {
       null != n && N(n)
     }, []);
   i.useEffect(() => {
-    if (null != S && z) {
+    if (null != T && z) {
       var e;
       null == (e = R.current) || e.scrollTo({
-        top: S
+        top: T
       })
     }
-  }, [S, z]);
+  }, [T, z]);
   let $ = i.useCallback(e => {
     var t;
     (0, c.k)(e.target) && (null == (t = I.current) ? true : t.contains(e.target)) || (z && x.default.track(U.rMx.SUMMARIES_TOPICS_PILL_TOGGLED, {
@@ -544,7 +544,7 @@ function ed(e) {
   i.useEffect(() => (h.addAutomaticAnchorCallback(K), () => {
     h.removeAutomaticAnchorCallback(K)
   }), [h, K]), i.useEffect(() => {
-    (0, T.G1)(s.id)
+    (0, S.G1)(s.id)
   }, [s.id]), i.useEffect(() => (document.addEventListener("mousedown", $), () => {
     document.removeEventListener("mousedown", $)
   }), [$]);
@@ -676,7 +676,7 @@ function ep(e) {
     scrollManager: _
   } = e, {
     disableInteractions: p
-  } = i.useContext(b.G), [h, E] = i.useState(null), y = i.useRef(null), [v, I] = i.useState(null), S = i.useRef(null), N = (0, u.Wu)([A.Z], () => {
+  } = i.useContext(b.G), [h, E] = i.useState(null), y = i.useRef(null), [v, I] = i.useState(null), T = i.useRef(null), N = (0, u.Wu)([A.Z], () => {
     var e;
     return null != (e = A.Z.summaries(s.id)) ? e : []
   }, [s]), R = (0, g.Z)(N);
@@ -712,7 +712,7 @@ function ep(e) {
       E(null != (t = null == e ? true : e.id) ? t : null)
     }, 64), [E]),
     H = i.useMemo(() => l().throttle(() => {
-      (0, T.yK)(null)
+      (0, S.yK)(null)
     }, 1200, {
       trailing: false
     }), []),
@@ -737,7 +737,7 @@ function ep(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : B.DZ.PILL_DROPDOWN,
         n = N[e];
       if (null == n) return;
-      (0, T.wv)(s.id, n.id), (0, T.yK)(s.id, n.id);
+      (0, S.wv)(s.id, n.id), (0, S.yK)(s.id, n.id);
       let r = () => {
         _.removeScrollCompleteCallback(r), setTimeout(() => {
           _.addAutomaticAnchorCallback(Y, false)
@@ -767,13 +767,13 @@ function ep(e) {
     J = i.useCallback(e => {
       var t;
       K(e);
-      let n = null == (t = S.current) ? true : t.scrollTop;
+      let n = null == (t = T.current) ? true : t.scrollTop;
       null != n && I(n)
     }, []);
   i.useEffect(() => {
     if (null != v && W) {
       var e;
-      null == (e = S.current) || e.scrollTo({
+      null == (e = T.current) || e.scrollTo({
         top: v
       })
     }
@@ -795,7 +795,7 @@ function ep(e) {
   i.useEffect(() => (_.addAutomaticAnchorCallback(Y), () => {
     _.removeAutomaticAnchorCallback(Y)
   }), [_, Y]), i.useEffect(() => {
-    (0, T.G1)(s.id)
+    (0, S.G1)(s.id)
   }, [s.id]), i.useEffect(() => (document.addEventListener("mousedown", $), () => {
     document.removeEventListener("mousedown", $)
   }), [$]);
@@ -893,7 +893,7 @@ function ep(e) {
           })
         })]
       }), (0, r.jsx)(d.Ttm, {
-        ref: S,
+        ref: T,
         className: F.topicsScroller,
         fade: true,
         children: ee

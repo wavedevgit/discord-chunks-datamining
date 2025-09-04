@@ -57,7 +57,7 @@ function k(e) {
     source: o,
     locationObject: s,
     analyticsLocations: c
-  }).then(e => 0 === e ? null : T.Z.waitConnected(t).then(() => Promise.race([T.Z.waitSubscribed(t, w.zMe.ACTIVITY_JOIN)]))).then(() => {
+  }).then(e => 0 === e ? null : S.Z.waitConnected(t).then(() => Promise.race([S.Z.waitSubscribed(t, w.zMe.ACTIVITY_JOIN)]))).then(() => {
     l.Z.dispatch({
       type: "ACTIVITY_JOIN",
       applicationId: t,
@@ -140,10 +140,10 @@ async function B(e) {
     if (null == e) throw Error("Missing dispatch game when launching");
     let i = O.Z.getLibraryApplication(t, n);
     if (null == i) throw Error("Missing library application when launching");
-    d = G(t).then(t => T.Z.launchDispatchApplication(e, t, E.default.locale, i.getBranchName(), r))
+    d = G(t).then(t => S.Z.launchDispatchApplication(e, t, E.default.locale, i.getBranchName(), r))
   } else {
     let e = u.Z.getApplication(t);
-    d = null != e ? T.Z.launch(e) : T.Z.launchGame(t)
+    d = null != e ? S.Z.launch(e) : S.Z.launchGame(t)
   }
   let f = Error("game not found");
   return null != d ? (l.Z.dispatch({
@@ -187,10 +187,10 @@ let Z = {
       let e = O.Z.getActiveLibraryApplication(i.id);
       if (null != e) {
         let r = e.getFlags(),
-          i = S.yE(r, w.eHb.OVERLAY_DISABLED);
-        t && i !== t && (r = S.x9(r, w.eHb.OVERLAY_DISABLED));
-        let a = S.yE(r, w.eHb.OVERLAY_V3_DISABLED);
-        null != n && n !== a && (r = S.x9(r, w.eHb.OVERLAY_V3_DISABLED)), R.h(e.id, e.branchId, r);
+          i = T.yE(r, w.eHb.OVERLAY_DISABLED);
+        t && i !== t && (r = T.x9(r, w.eHb.OVERLAY_DISABLED));
+        let a = T.yE(r, w.eHb.OVERLAY_V3_DISABLED);
+        null != n && n !== a && (r = T.x9(r, w.eHb.OVERLAY_V3_DISABLED)), R.h(e.id, e.branchId, r);
         return
       }
     }

@@ -50,12 +50,12 @@ function v(e) {
         sourceLocationStack: v
       })
     },
-    S = (0, a.e7)([p.Z], () => p.Z.getGuild(n)),
-    T = (0, a.e7)([h.Z], () => null != n && h.Z.getUserSubscriptionRoles(n).size > 0),
-    A = T ? b.intl.string(b.t["GoLM9/"]) : b.intl.formatToPlainString(b.t["h0u/Hh"], {
-      serverName: null == S ? true : S.name
+    T = (0, a.e7)([p.Z], () => p.Z.getGuild(n)),
+    S = (0, a.e7)([h.Z], () => null != n && h.Z.getUserSubscriptionRoles(n).size > 0),
+    A = S ? b.intl.string(b.t["GoLM9/"]) : b.intl.formatToPlainString(b.t["h0u/Hh"], {
+      serverName: null == T ? true : T.name
     }),
-    C = T ? b.intl.string(b.t.PjZ7DQ) : b.intl.string(b.t.p8FG1N);
+    C = S ? b.intl.string(b.t.PjZ7DQ) : b.intl.string(b.t.p8FG1N);
   return (0, r.jsxs)("div", {
     className: y.container,
     children: [(0, r.jsx)("div", {

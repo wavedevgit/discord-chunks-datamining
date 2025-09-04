@@ -28,12 +28,12 @@ let v = (0, Chunk313201.hQ)();
 function I() {
   let [e, t] = Chunk647438.useState(false), [n, a] = Chunk647438.useState(false), {
     threshold: I,
-    autoThreshold: S
+    autoThreshold: T
   } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
     threshold: Chunk131951.Z.getModeOptions().threshold,
     autoThreshold: Chunk131951.Z.getModeOptions().autoThreshold
   })), {
-    inputMode: T,
+    inputMode: S,
     automaticVADSupported: A,
     isEnabled: C
   } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
@@ -47,7 +47,7 @@ function I() {
   }
 
   function R(e, t) {
-    _.Z.setMode(T, {
+    _.Z.setMode(S, {
       threshold: e,
       autoThreshold: t
     })
@@ -65,7 +65,7 @@ function I() {
     children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
       initialValue: I + 100,
       onValueRender: e => "".concat((-((100 - e) * 1)).toFixed(0), "dB"),
-      onValueChange: e => R(-((100 - e) * 1), S),
+      onValueChange: e => R(-((100 - e) * 1), T),
       barStyles: {
         background: Chunk692547.Z.unsafe_rawColors.GREEN_360.css
       },
@@ -86,7 +86,7 @@ function I() {
       })
     })
   });
-  return S && (P = (0, Chunk951288.jsxs)("section", {
+  return T && (P = (0, Chunk951288.jsxs)("section", {
     className: Chunk192294.inputSensitivityToggle,
     children: [(0, Chunk951288.jsx)("div", {
       className: Chunk192294.inputSensitivitySlider,
@@ -116,7 +116,7 @@ function I() {
           })
         }), (0, r.jsx)(d.T2, {
           id: e,
-          checked: S,
+          checked: T,
           onChange: e => R(I, e)
         })]
       })

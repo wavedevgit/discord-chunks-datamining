@@ -26,7 +26,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk70722 = require("./70722.js"),
   Chunk981631 = require("./981631.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,14 +35,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -95,7 +95,7 @@ function k(e, t) {
 }
 class U extends Chunk147913.Z {
   constructor(...e) {
-    super(...e), S(this, "handleStreamWatch", e => {
+    super(...e), T(this, "handleStreamWatch", e => {
       let {
         streamKey: t,
         allowMultiple: n
@@ -106,7 +106,7 @@ class U extends Chunk147913.Z {
         let n = (0, O.V9)(e);
         e.ownerId !== f.default.getId() && n !== t && (0, o.g)(n, false)
       })
-    }), S(this, "handleStreamStart", e => {
+    }), T(this, "handleStreamStart", e => {
       let {
         channelId: t,
         streamType: n,
@@ -118,7 +118,7 @@ class U extends Chunk147913.Z {
         channelId: t,
         ownerId: f.default.getId()
       }), null == i ? true : i.isGuildStageVoice()), this.platformHandleStreamStart(e)
-    }), S(this, "handleStreamCreate", e => {
+    }), T(this, "handleStreamCreate", e => {
       var t;
       let {
         streamKey: n
@@ -134,25 +134,25 @@ class U extends Chunk147913.Z {
         }) || r !== (null == (t = E.default.getCurrentUser()) ? true : t.id)) return;
       let a = p.Z.getMemberCount(i);
       null == a || a < 2 || a > v.tB || u.eo.getSetting() && A(n)
-    }), S(this, "handleStreamUpdate", e => {
+    }), T(this, "handleStreamUpdate", e => {
       let {
         streamKey: t
       } = e;
       L(t)
-    }), S(this, "handleStreamDelete", e => {
+    }), T(this, "handleStreamDelete", e => {
       let {
         reason: t,
         streamKey: n
       } = e;
-      L(n), t === I.si2.STREAM_FULL && ((0, l.kr)(T({
+      L(n), t === I.si2.STREAM_FULL && ((0, l.kr)(S({
         type: l.u.STREAM_FULL
       }, (0, c.rT)(n))), (0, o.aP)(n, false), this.platformShowStreamFull())
-    }), S(this, "handleStreamClose", e => {
+    }), T(this, "handleStreamClose", e => {
       let {
         streamKey: t
       } = e;
       x(t), L(t)
-    }), S(this, "handleVoiceChannelSelect", e => {
+    }), T(this, "handleVoiceChannelSelect", e => {
       let {
         channelId: t
       } = e;
@@ -165,7 +165,7 @@ class U extends Chunk147913.Z {
         return t !== f.default.getId()
       })[0];
       null != n && j(t, n.ownerId)
-    }), S(this, "handleVoiceStateUpdates", e => {
+    }), T(this, "handleVoiceStateUpdates", e => {
       let {
         voiceStates: t
       } = e;
@@ -195,19 +195,19 @@ class U extends Chunk147913.Z {
           }
         }
       })
-    }), S(this, "handleCallUpdate", e => {
+    }), T(this, "handleCallUpdate", e => {
       let {
         channelId: t,
         region: n
       } = e, r = d.Z.getCurrentUserActiveStream();
       (null == r ? true : r.channelId) === t && M((0, O.V9)(r), n)
-    }), S(this, "handleChannelUpdates", e => {
+    }), T(this, "handleChannelUpdates", e => {
       let {
         channels: t
       } = e, n = d.Z.getCurrentUserActiveStream();
       if (null != n)
         for (let e of t) n.channelId === e.id && M((0, O.V9)(n), e.rtcRegion)
-    }), S(this, "actions", {
+    }), T(this, "actions", {
       STREAM_WATCH: this.handleStreamWatch,
       STREAM_START: this.handleStreamStart,
       STREAM_CREATE: this.handleStreamCreate,

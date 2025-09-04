@@ -157,7 +157,7 @@ function q() {
       forceTrack: true
     })
   });
-  let S = {
+  let T = {
       isConsideredAdult: module,
       numOfAcceptedRequests: exports,
       selectedTab: Chunk873546,

@@ -144,10 +144,10 @@ function O(e) {
     }, [f, c]),
     I = null != f ? null == g ? true : g[f] : null;
   s = null != I && (null == (t = I.lastValidationResult) ? true : t.success) === false ? null != (n = I.lastValidationResult.error) ? n : "" : null;
-  let S = m && null != b ? (0, u.ky)(b) : null;
+  let T = m && null != b ? (0, u.ky)(b) : null;
   return (0, r.jsxs)("div", {
     className: o()(_.wrapper, O ? null : _.disabled),
-    children: [null != S ? (0, r.jsx)(S, {
+    children: [null != T ? (0, r.jsx)(T, {
       className: _.image,
       channel: p,
       section: b,

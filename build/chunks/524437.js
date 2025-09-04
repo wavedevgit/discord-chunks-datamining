@@ -25,8 +25,8 @@ require.d(exports, {
   c$: () => tn,
   dp: () => te,
   f9: () => L,
-  hg: () => S,
-  l1: () => T,
+  hg: () => T,
+  l1: () => S,
   n9: () => A,
   nI: () => d,
   o8: () => D,
@@ -86,10 +86,10 @@ var Chunk230367 = require("./230367.js"),
   I = function(e) {
     return e[e.MINT_APPLE = 0] = "MINT_APPLE", e[e.CITRUS_SHERBERT = 1] = "CITRUS_SHERBERT", e[e.RETRO_RAINCLOUD = 2] = "RETRO_RAINCLOUD", e[e.HANAMI = 3] = "HANAMI", e[e.SUNRISE = 4] = "SUNRISE", e[e.COTTON_CANDY = 5] = "COTTON_CANDY", e[e.LOFI_VIBES = 6] = "LOFI_VIBES", e[e.DESERT_KHAKI = 7] = "DESERT_KHAKI", e[e.SUNSET = 8] = "SUNSET", e[e.CHROMA_GLOW = 9] = "CHROMA_GLOW", e[e.FOREST = 10] = "FOREST", e[e.CRIMSON_MOON = 11] = "CRIMSON_MOON", e[e.MIDNIGHT_BLURPLE = 12] = "MIDNIGHT_BLURPLE", e[e.MARS = 13] = "MARS", e[e.DUSK = 14] = "DUSK", e[e.UNDER_THE_SEA = 15] = "UNDER_THE_SEA", e[e.EASTER_EGG = 16] = "EASTER_EGG", e[e.RETRO_STORM = 17] = "RETRO_STORM", e[e.NEON_NIGHTS = 18] = "NEON_NIGHTS", e[e.SEPIA = 19] = "SEPIA", e[e.STRAWBERRY_LEMONADE = 20] = "STRAWBERRY_LEMONADE", e[e.AURORA = 21] = "AURORA", e[e.BLURPLE_TWILIGHT = 22] = "BLURPLE_TWILIGHT", e
   }({}),
-  S = function(e) {
+  T = function(e) {
     return e[e.AUTO = 0] = "AUTO", e[e.H12 = 1] = "H12", e[e.H23 = 2] = "H23", e
   }({}),
-  T = function(e) {
+  S = function(e) {
     return e[e.LAUNCH_PAD_DISABLED = 0] = "LAUNCH_PAD_DISABLED", e[e.LAUNCH_PAD_GESTURE_FULL_SCREEN = 1] = "LAUNCH_PAD_GESTURE_FULL_SCREEN", e[e.LAUNCH_PAD_GESTURE_RIGHT_EDGE = 2] = "LAUNCH_PAD_GESTURE_RIGHT_EDGE", e[e.LAUNCH_PAD_PULL_TAB = 3] = "LAUNCH_PAD_PULL_TAB", e
   }({}),
   A = function(e) {
@@ -155,7 +155,7 @@ class w extends Chunk495852.C {
           a.status = ey.internalBinaryRead(e, e.uint32(), n, a.status);
           break;
         case 12:
-          a.localization = eS.internalBinaryRead(e, e.uint32(), n, a.localization);
+          a.localization = eT.internalBinaryRead(e, e.uint32(), n, a.localization);
           break;
         case 13:
           a.appearance = eN.internalBinaryRead(e, e.uint32(), n, a.appearance);
@@ -206,7 +206,7 @@ class w extends Chunk495852.C {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    e.versions && c.L.internalBinaryWrite(e.versions, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), e.inbox && L.internalBinaryWrite(e.inbox, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), e.guilds && M.internalBinaryWrite(e.guilds, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), e.userContent && X.internalBinaryWrite(e.userContent, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), e.voiceAndVideo && en.internalBinaryWrite(e.voiceAndVideo, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), e.textAndImages && eu.internalBinaryWrite(e.textAndImages, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), e.notifications && ef.internalBinaryWrite(e.notifications, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), e.privacy && ep.internalBinaryWrite(e.privacy, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), e.debug && em.internalBinaryWrite(e.debug, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), e.gameLibrary && eE.internalBinaryWrite(e.gameLibrary, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), e.status && ey.internalBinaryWrite(e.status, t.tag(11, r.TD.LengthDelimited).fork(), n).join(), e.localization && eS.internalBinaryWrite(e.localization, t.tag(12, r.TD.LengthDelimited).fork(), n).join(), e.appearance && eN.internalBinaryWrite(e.appearance, t.tag(13, r.TD.LengthDelimited).fork(), n).join(), e.guildFolders && eL.internalBinaryWrite(e.guildFolders, t.tag(14, r.TD.LengthDelimited).fork(), n).join(), e.favorites && eU.internalBinaryWrite(e.favorites, t.tag(15, r.TD.LengthDelimited).fork(), n).join(), e.audioContextSettings && eH.internalBinaryWrite(e.audioContextSettings, t.tag(16, r.TD.LengthDelimited).fork(), n).join(), e.communities && eW.internalBinaryWrite(e.communities, t.tag(17, r.TD.LengthDelimited).fork(), n).join(), e.broadcast && eJ.internalBinaryWrite(e.broadcast, t.tag(18, r.TD.LengthDelimited).fork(), n).join(), e.clips && e0.internalBinaryWrite(e.clips, t.tag(19, r.TD.LengthDelimited).fork(), n).join(), e.forLater && e4.internalBinaryWrite(e.forLater, t.tag(20, r.TD.LengthDelimited).fork(), n).join(), e.safetySettings && e2.internalBinaryWrite(e.safetySettings, t.tag(21, r.TD.LengthDelimited).fork(), n).join(), e.icymiSettings && e6.internalBinaryWrite(e.icymiSettings, t.tag(22, r.TD.LengthDelimited).fork(), n).join(), e.applications && e7.internalBinaryWrite(e.applications, t.tag(23, r.TD.LengthDelimited).fork(), n).join(), e.ads && to.internalBinaryWrite(e.ads, t.tag(24, r.TD.LengthDelimited).fork(), n).join(), e.inAppFeedbackSettings && tf.internalBinaryWrite(e.inAppFeedbackSettings, t.tag(25, r.TD.LengthDelimited).fork(), n).join();
+    e.versions && c.L.internalBinaryWrite(e.versions, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), e.inbox && L.internalBinaryWrite(e.inbox, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), e.guilds && M.internalBinaryWrite(e.guilds, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), e.userContent && X.internalBinaryWrite(e.userContent, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), e.voiceAndVideo && en.internalBinaryWrite(e.voiceAndVideo, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), e.textAndImages && eu.internalBinaryWrite(e.textAndImages, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), e.notifications && ef.internalBinaryWrite(e.notifications, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), e.privacy && ep.internalBinaryWrite(e.privacy, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), e.debug && em.internalBinaryWrite(e.debug, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), e.gameLibrary && eE.internalBinaryWrite(e.gameLibrary, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), e.status && ey.internalBinaryWrite(e.status, t.tag(11, r.TD.LengthDelimited).fork(), n).join(), e.localization && eT.internalBinaryWrite(e.localization, t.tag(12, r.TD.LengthDelimited).fork(), n).join(), e.appearance && eN.internalBinaryWrite(e.appearance, t.tag(13, r.TD.LengthDelimited).fork(), n).join(), e.guildFolders && eL.internalBinaryWrite(e.guildFolders, t.tag(14, r.TD.LengthDelimited).fork(), n).join(), e.favorites && eU.internalBinaryWrite(e.favorites, t.tag(15, r.TD.LengthDelimited).fork(), n).join(), e.audioContextSettings && eH.internalBinaryWrite(e.audioContextSettings, t.tag(16, r.TD.LengthDelimited).fork(), n).join(), e.communities && eW.internalBinaryWrite(e.communities, t.tag(17, r.TD.LengthDelimited).fork(), n).join(), e.broadcast && eJ.internalBinaryWrite(e.broadcast, t.tag(18, r.TD.LengthDelimited).fork(), n).join(), e.clips && e0.internalBinaryWrite(e.clips, t.tag(19, r.TD.LengthDelimited).fork(), n).join(), e.forLater && e4.internalBinaryWrite(e.forLater, t.tag(20, r.TD.LengthDelimited).fork(), n).join(), e.safetySettings && e2.internalBinaryWrite(e.safetySettings, t.tag(21, r.TD.LengthDelimited).fork(), n).join(), e.icymiSettings && e6.internalBinaryWrite(e.icymiSettings, t.tag(22, r.TD.LengthDelimited).fork(), n).join(), e.applications && e7.internalBinaryWrite(e.applications, t.tag(23, r.TD.LengthDelimited).fork(), n).join(), e.ads && to.internalBinaryWrite(e.ads, t.tag(24, r.TD.LengthDelimited).fork(), n).join(), e.inAppFeedbackSettings && tf.internalBinaryWrite(e.inAppFeedbackSettings, t.tag(25, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -270,7 +270,7 @@ class w extends Chunk495852.C {
       no: 12,
       name: "localization",
       kind: "message",
-      T: () => eS
+      T: () => eT
     }, {
       no: 13,
       name: "appearance",
@@ -2476,8 +2476,8 @@ class eI extends Chunk495852.C {
     }])
   }
 }
-let eS = new eI;
-class eT extends Chunk495852.C {
+let eT = new eI;
+class eS extends Chunk495852.C {
   create(e) {
     let t = {};
     return globalThis.Object.defineProperty(t, a.C, {
@@ -2525,7 +2525,7 @@ class eT extends Chunk495852.C {
     }])
   }
 }
-let eA = new eT;
+let eA = new eS;
 class eC extends Chunk495852.C {
   create(e) {
     let t = {
@@ -2638,7 +2638,7 @@ class eC extends Chunk495852.C {
       no: 9,
       name: "timestamp_hour_cycle",
       kind: "enum",
-      T: () => ["discord_protos.discord_users.v1.TimestampHourCycle", S]
+      T: () => ["discord_protos.discord_users.v1.TimestampHourCycle", T]
     }, {
       no: 10,
       name: "happening_now_cards_disabled",
@@ -2648,7 +2648,7 @@ class eC extends Chunk495852.C {
       no: 11,
       name: "launch_pad_mode",
       kind: "enum",
-      T: () => ["discord_protos.discord_users.v1.LaunchPadMode", T]
+      T: () => ["discord_protos.discord_users.v1.LaunchPadMode", S]
     }, {
       no: 12,
       name: "ui_density",

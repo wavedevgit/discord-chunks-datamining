@@ -29,8 +29,8 @@ let I = function(e) {
       className: n,
       quest: a,
       autoplay: I = true,
-      learnMoreStyle: S = null,
-      sourceQuestContent: T,
+      learnMoreStyle: T = null,
+      sourceQuestContent: S,
       lazyLoad: A = false
     } = e,
     C = (0, _.O5)(),
@@ -45,12 +45,12 @@ let I = function(e) {
         questContent: e.questContent,
         questContentPosition: e.questContentPosition,
         questContentCTA: _.jZ.REWARD_LEARN_MORE,
-        sourceQuestContent: T
+        sourceQuestContent: S
       }), (0, b.navigateToQuestHome)({
         fromContent: e.questContent,
         questId: a.id
       }), null == (n = e.onClick) || n.call(e, t)
-    }, [C, a.id, e, T]),
+    }, [C, a.id, e, S]),
     x = i.useRef(null),
     L = i.useRef(I),
     j = (0, p.Bg)(a.config);
@@ -112,7 +112,7 @@ let I = function(e) {
       src: P.url,
       onLoad: e.onLoadComplete
     })
-  }), null == S ? (0, r.jsx)("div", {
+  }), null == T ? (0, r.jsx)("div", {
     className: o()(v.questRewardTile, n),
     children: t
   }) : (0, r.jsxs)(c.P3F, {
@@ -122,12 +122,12 @@ let I = function(e) {
       className: v.shine,
       shineSize: c.rHe.SMALL,
       shinePaused: !N || R
-    }), "text" === S && (0, r.jsx)(c.Text, {
+    }), "text" === T && (0, r.jsx)(c.Text, {
       color: "always-white",
       variant: "text-xs/normal",
       className: v.questRewardTileDetailsLearnMore,
       children: O.intl.format(O.t.DYAleX, {})
-    }), "icon" === S && (0, r.jsx)("div", {
+    }), "icon" === T && (0, r.jsx)("div", {
       className: v.questRewardTileDetailsLearnMore,
       children: (0, r.jsx)(c.d3s, {
         size: "xxs",

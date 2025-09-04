@@ -258,12 +258,12 @@ function Q(e) {
         type: "text",
         value: s,
         onChange: e => c(e.target.value),
-        placeholder: "".concat(T.BH, "%"),
+        placeholder: "".concat(S.BH, "%"),
         className: U.controlLabelInput
       })]
     }), (0, r.jsx)(f.iRW, {
       initialValue: t,
-      defaultValue: T.BH,
+      defaultValue: S.BH,
       minValue: 0,
       maxValue: 100,
       onValueChange: e => {
@@ -283,9 +283,9 @@ function J(e) {
     var e;
     (0, R.Om)();
     let t = (0, A.C)();
-    T.Ig.getState().setAll({
+    S.Ig.getState().setAll({
       colors: t.colors,
-      gradientAngle: null != (e = t.angle) ? e : T.Ig.getState().gradientAngle,
+      gradientAngle: null != (e = t.angle) ? e : S.Ig.getState().gradientAngle,
       chassisMixAmount: t.intensity
     })
   }, []);
@@ -404,7 +404,7 @@ function et(e) {
       }), (0, r.jsx)($, {
         disabled: !i,
         onApply: () => {
-          u && S.default.track(x.rMx.CUSTOM_THEME_SHARE_APPLIED, {}), n()
+          u && T.default.track(x.rMx.CUSTOM_THEME_SHARE_APPLIED, {}), n()
         }
       })]
     }) : (0, r.jsxs)(r.Fragment, {
@@ -436,31 +436,31 @@ function en(e) {
   } = e, d = N.Mc.useExperiment({
     location: "ClientThemeColorPickerTools"
   }).enabled, p = (0, C.jJ)(), y = (0, C.SK)(), O = i.useRef(false), {
-    colors: S,
+    colors: T,
     chassisMixAmount: A,
     gradientAngle: w,
     setColors: x,
     setChassisMixAmount: j,
     setGradientAngle: G
-  } = (0, T.Ig)(), [B, Z] = i.useState(null != (t = S[0]) ? t : T.Dp), F = (0, s.e7)([I.Z], () => I.Z.theme), V = (0, b.Nj)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
+  } = (0, S.Ig)(), [B, Z] = i.useState(null != (t = T[0]) ? t : S.Dp), F = (0, s.e7)([I.Z], () => I.Z.theme), V = (0, b.Nj)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
     analyticsLocations: H
   } = (0, g.ZP)(m.Z.CUSTOM_THEMES_EDITOR), Y = async () => {
     O.current = true, await (0, _.ZI)({
       theme: F,
       customUserThemeSettings: {
-        colors: S,
+        colors: T,
         gradientColorStops: [],
         gradientAngle: w,
         baseMix: A
       }
-    }), (0, R.u7)(S, A, w, F, H), null == a || a(L.L.TAKE_ACTION), V || (0, b.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, E.Ll)(), (0, v.UD)()
+    }), (0, R.u7)(T, A, w, F, H), null == a || a(L.L.TAKE_ACTION), V || (0, b.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, E.Ll)(), (0, v.UD)()
   }, W = () => {
     p(C._m.RESET_BUTTON), (0, R.uf)()
-  }, K = S.length > 0;
+  }, K = T.length > 0;
   return (i.useEffect(() => () => {
     O.current || p(C._m.EDITOR_CLOSE)
   }, [p]), (0, h.ZP)(() => {
-    o || (0, C.lT)(S, B, x)
+    o || (0, C.lT)(T, B, x)
   }), d) ? (0, r.jsxs)("div", {
     className: u ? U.mobileContainer : U.container,
     "data-app-right-panel": !u,
@@ -485,10 +485,10 @@ function en(e) {
             children: k.intl.string(M.default.uSL2Gx)
           }), (0, r.jsx)(P.U, {
             onChange: e => {
-              Z(e), 0 === S.length && (0, C.lT)(S, e, x)
+              Z(e), 0 === T.length && (0, C.lT)(T, e, x)
             },
             value: B,
-            colors: S,
+            colors: T,
             setColors: x
           })]
         }), (0, r.jsxs)("div", {
@@ -497,13 +497,13 @@ function en(e) {
             variant: "text-sm/semibold",
             color: "text-secondary",
             children: k.intl.string(M.default.F1t0c3)
-          }), S.length > 1 && (0, r.jsx)(X, {
+          }), T.length > 1 && (0, r.jsx)(X, {
             gradientAngle: w,
             setGradientAngle: G
           }), (0, r.jsx)(Q, {
             chassisMixAmount: A,
             setChassisMixAmount: e => {
-              j(e), 0 === S.length && (0, C.lT)(S, B, x)
+              j(e), 0 === T.length && (0, C.lT)(T, B, x)
             }
           })]
         }), (0, r.jsxs)("div", {

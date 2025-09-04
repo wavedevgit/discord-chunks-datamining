@@ -170,7 +170,7 @@ function H(e, t, n, i, a, o) {
       userId: t.id,
       guildId: null != (l = null == _ ? true : _.guild_id) ? l : ""
     })) ? c : true,
-    S = () => V({
+    T = () => V({
       user: t,
       guildId: _.guild_id,
       guildAvatar: I,
@@ -178,15 +178,15 @@ function H(e, t, n, i, a, o) {
       onContextMenu: 1 === n ? O : b,
       ref: o
     }),
-    T = 1 === n ? g : m;
-  return null != a && null != T && null != o ? (0, r.jsx)(f.yRy, {
+    S = 1 === n ? g : m;
+  return null != a && null != S && null != o ? (0, r.jsx)(f.yRy, {
     targetElementRef: o,
     renderPopout: a,
-    shouldShow: T,
+    shouldShow: S,
     position: "right",
     onRequestClose: v,
-    children: S
-  }) : S()
+    children: T
+  }) : T()
 }
 
 function Y(e, t, n, i, a) {
@@ -309,7 +309,7 @@ function q(e) {
       analyticsLocations: c,
       newestAnalyticsLocation: p
     } = (0, E.ZP)(g.Z.EXECUTED_COMMAND),
-    b = (0, d.e7)([T.default], () => T.default.getCurrentUser()),
+    b = (0, d.e7)([S.default], () => S.default.getCurrentUser()),
     A = i.useRef(null),
     C = i.useRef(null),
     P = i.useMemo(() => (e, t, n) => (l()(null != t, "ExecutedCommand: user cannot be undefined"), l()(null != b, "ExecutedCommand: currentUser cannot be undefined"), l()(null != s, "ExecutedCommand: channel cannot be undefined"), (0, r.jsx)(I.Z, G(k({}, e), {
@@ -326,7 +326,7 @@ function q(e) {
       interactionData: a.interactionData
     }))), [s, a.id, a.interactionData]),
     M = (0, O.t0)(a),
-    U = (null == M ? true : M.type) === _.B8.APPLICATION_COMMAND && null != M.target_user ? new S.Z(M.target_user) : null,
+    U = (null == M ? true : M.type) === _.B8.APPLICATION_COMMAND && null != M.target_user ? new T.Z(M.target_user) : null,
     B = (null == M ? true : M.type) === _.B8.APPLICATION_COMMAND && null != a.messageReference && null != e.renderTargetMessage,
     Z = (0, R.Sw)(null == (t = a.interaction) ? true : t.user, s),
     F = (0, R.Sw)(U, s),

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   A: () => I,
-  openUploadError: () => S
+  openUploadError: () => T
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -55,11 +55,11 @@ function v(e) {
     icons: y,
     fileSize: O,
     onClose: v
-  } = e, I = (0, l.Dt)(), S = null != y ? y : g.J6, T = (0, u.ZP)({
+  } = e, I = (0, l.Dt)(), T = null != y ? y : g.J6, S = (0, u.ZP)({
     location: "UploadError"
   }), A = (0, d.Z)({
     location: "UploadError"
-  }), C = T || A, N = () => {
+  }), C = S || A, N = () => {
     (0, c.Z)(), v(), h.default.track(E.rMx.PREMIUM_PROMOTION_OPENED, {
       location_section: E.jXE.FILE_UPLOAD_UPSELL_MODAL,
       location_object: E.qAy.NAVIGATION_LINK
@@ -84,7 +84,7 @@ function v(e) {
       children: (0, r.jsxs)("div", {
         className: b.inner,
         children: [(0, r.jsx)(m.Z, {
-          icons: S
+          icons: T
         }), (0, r.jsx)("div", {
           id: I,
           className: b.title,
@@ -99,7 +99,7 @@ function v(e) {
 }
 let I = "UPLOAD_ERROR_MODAL_KEY";
 
-function S(e) {
+function T(e) {
   (0, o.h7)(t => (0, r.jsx)(v, O({}, t, e)), {
     modalKey: I
   })

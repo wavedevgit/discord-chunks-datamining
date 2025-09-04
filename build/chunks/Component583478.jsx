@@ -2,7 +2,7 @@
 /** chunk id: 583478, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -69,7 +69,7 @@ let b = new Chunk710845.Z("BalanceCounter"),
     }
   },
   I = (e, t, n) => null === n ? Math.max(e, t) : Math.max(t, n),
-  S = e => {
+  T = e => {
     var t, n;
     let {
       value: a,
@@ -97,7 +97,7 @@ let b = new Chunk710845.Z("BalanceCounter"),
         delay: I
       } = v(m - g, d),
       {
-        number: S
+        number: T
       } = (0, l.q_F)({
         from: {
           number: null != (n = p.current) ? n : m
@@ -124,15 +124,15 @@ let b = new Chunk710845.Z("BalanceCounter"),
           o(O(m)), p.current = m
         }
       }),
-      T = O(Math.max(null != a ? a : 0, S.get()));
+      S = O(Math.max(null != a ? a : 0, T.get()));
     return (0, r.jsx)(s.animated.div, {
       style: {
-        width: "calc(".concat(T, "ch)")
+        width: "calc(".concat(S, "ch)")
       },
-      children: S.to(e => "".concat(e.toFixed(0)))
+      children: T.to(e => "".concat(e.toFixed(0)))
     })
   },
-  T = e => {
+  S = e => {
     var t, {
         value: n,
         className: a
@@ -151,7 +151,7 @@ let b = new Chunk710845.Z("BalanceCounter"),
         width: b,
         opacity: u ? "0" : 1
       },
-      children: u ? null : (0, r.jsx)(S, m({
+      children: u ? null : (0, r.jsx)(T, m({
         onSetDigitCount: e => {
           e !== d && f(e)
         },

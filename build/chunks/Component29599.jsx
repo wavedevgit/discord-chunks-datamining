@@ -89,21 +89,21 @@ function G(e) {
     E = (0, m.ZP)(),
     O = (0, y.Pz)(n.id, E),
     I = null != a,
-    S = (0, b.Z)(n, I);
+    T = (0, b.Z)(n, I);
   I && c ? t = x.intl.format(x.t.pkxVx8, {
-    endDate: S,
+    endDate: T,
     onClickDetails: h
   }) : I && !c ? t = x.intl.format(x.t["4sFeoa"], {
-    endDate: S,
+    endDate: T,
     onClickDetails: h
   }) : !I && c ? t = x.intl.format(x.t["RBnE+v"], {
-    endDate: S,
+    endDate: T,
     onClickDetails: h
   }) : I || c || (t = x.intl.format(x.t["57+7Qk"], {
-    endDate: S,
+    endDate: T,
     onClickDetails: h
   }));
-  let T = I ? x.intl.string(x.t["2cHUtr"]) : x.intl.string(x.t.O13yh4),
+  let S = I ? x.intl.string(x.t["2cHUtr"]) : x.intl.string(x.t.O13yh4),
     A = i.useCallback(() => p(false), []),
     {
       outboundTitle: C,
@@ -140,7 +140,7 @@ function G(e) {
           size: u.zx.Sizes.SMALL,
           onClick: () => p(true),
           disabled: l,
-          children: T
+          children: S
         })]
       }), c && (0, r.jsx)(d.Text, {
         className: L.promotionLegalese,
