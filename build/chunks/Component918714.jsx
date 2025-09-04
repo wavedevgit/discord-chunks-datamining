@@ -22,13 +22,13 @@ function h(e) {
     task: t,
     handleSubmit: n,
     disabled: l
-  } = e, [c, s] = i.useState(t), f = i.useMemo(() => ({
-    task: c,
+  } = e, [o, s] = i.useState(t), f = i.useMemo(() => ({
+    task: o,
     setTask: s
-  }), [c, s]);
+  }), [o, s]);
   return i.useEffect(() => {
     s(t)
-  }, [t]), (0, r.jsx)(o.y.Provider, {
+  }, [t]), (0, r.jsx)(c.y.Provider, {
     value: f,
     children: (0, r.jsxs)(a.Kqy, {
       direction: "horizontal",
@@ -44,13 +44,13 @@ function h(e) {
 let g = function(e) {
   let {
     onClose: t
-  } = e, [n, o] = i.useState(null), [u, d] = i.useState(true), [g, b] = i.useState(null), [v, j] = i.useState(false), x = i.useCallback(async () => {
-    d(true), b(null);
+  } = e, [n, c] = i.useState(null), [u, d] = i.useState(true), [g, v] = i.useState(null), [b, j] = i.useState(false), x = i.useCallback(async () => {
+    d(true), v(null);
     try {
       var e;
-      let n = await (0, c.PA)();
+      let n = await (0, o.PA)();
       if (null == n) return void t();
-      !(0, l.Ew)(null == (e = n.ui_component) ? true : e.component.type) && s.VZ.has(n.ui_component.component.type) ? o(n) : o({
+      !(0, l.Ew)(null == (e = n.ui_component) ? true : e.component.type) && s.VZ.has(n.ui_component.component.type) ? c(n) : c({
         task_id: n.task_id,
         task_type: s.UA.REFRESH_APP,
         assignment_id: n.assignment_id,
@@ -66,7 +66,7 @@ let g = function(e) {
         }
       })
     } catch (e) {
-      b(p.intl.string(f.default["/f++3t"]))
+      v(p.intl.string(f.default["/f++3t"]))
     } finally {
       d(false)
     }
@@ -79,9 +79,9 @@ let g = function(e) {
           flow_id: n.flow_context.flow_id,
           data: e
         };
-        await (0, c.Wl)(t), x()
+        await (0, o.Wl)(t), x()
       } catch (e) {
-        b(p.intl.string(f.default["+QRSxc"]))
+        v(p.intl.string(f.default["+QRSxc"]))
       } finally {
         j(false)
       }
@@ -111,7 +111,7 @@ let g = function(e) {
         }), !u && null === g && null != n && (0, r.jsx)(h, {
           task: n,
           handleSubmit: E,
-          disabled: v
+          disabled: b
         })]
       })
     })]

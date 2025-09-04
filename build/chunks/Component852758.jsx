@@ -65,7 +65,7 @@ function P() {
   } = (0, Chunk442837.cj)([Chunk23434.Z, Chunk210887.Z], () => ({
     action: Chunk23434.Z.getAction(),
     theme: Chunk210887.Z.theme
-  })), P = Chunk1964.Z.getVerificationTypes(module), [I, N] = Chunk647438.useState(0), S = (0, Chunk110924.Z)(P);
+  })), P = Chunk1964.Z.getVerificationTypes(module), [I, N] = Chunk647438.useState(0), R = (0, Chunk110924.Z)(P);
   (0, Chunk213609.Z)({
     type: Chunk990547.ImpressionTypes.MODAL,
     name: Chunk990547.ImpressionNames.USER_ACTION_REQUIRED,
@@ -74,7 +74,7 @@ function P() {
       verification_types: P
     }
   }, {}, [P.toString()]);
-  let k = () => {
+  let S = () => {
     (0, Chunk809206.FD)(), (0, Chunk481060.ZDy)(async () => {
       let {
         default: e
@@ -88,7 +88,7 @@ function P() {
   return Chunk647438.useEffect(() => (Chunk714338.Z.disable(), () => {
     Chunk714338.Z.enable()
   }), []), Chunk647438.useEffect(() => {
-    (null == S ? true : S[0]) === Chunk981631.PUi.PHONE && (null == P ? true : P[0]) === Chunk981631.PUi.EMAIL && (0, Chunk481060.ZDy)(async () => {
+    (null == R ? true : R[0]) === Chunk981631.PUi.PHONE && (null == P ? true : P[0]) === Chunk981631.PUi.EMAIL && (0, Chunk481060.ZDy)(async () => {
       let {
         default: e
       } = await Promise.resolve().then(require.bind(require, 468026));
@@ -100,13 +100,13 @@ function P() {
     }, {
       modalKey: Chunk308569.HR,
       Layer: Chunk429142.ZP,
-      onCloseCallback: k
+      onCloseCallback: S
     })
-  }, [P, S]), (0, Chunk951288.jsx)(Chunk762756.Z, {
+  }, [P, R]), (0, Chunk951288.jsx)(Chunk762756.Z, {
     types: P,
     captchaKey: I,
     onCaptchaVerify: e => {
-      c.tn.post({
+      o.tn.post({
         url: E.ANM.CAPTCHA,
         body: {
           captcha_key: e
@@ -119,7 +119,7 @@ function P() {
     },
     theme: exports,
     onClick: e => {
-      e === E.PUi.EMAIL_OR_PHONE || e === E.PUi.EMAIL || e === E.PUi.REVERIFY_EMAIL ? k() : (0, o.ZDy)(async () => {
+      e === E.PUi.EMAIL_OR_PHONE || e === E.PUi.EMAIL || e === E.PUi.REVERIFY_EMAIL ? S() : (0, c.ZDy)(async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 607018));

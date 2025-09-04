@@ -20,16 +20,16 @@ let s = e => {
   return (0, r.jsxs)(a.Kqy, {
     direction: "vertical",
     justify: "start",
-    padding: c.h,
-    className: o.container,
+    padding: o.h,
+    className: c.container,
     children: [(0, r.jsx)(a.X6q, {
       variant: "heading-lg/semibold",
-      className: o.heading,
+      className: c.heading,
       children: u
     }), (0, r.jsx)(i.f, {
       children: t
     }), (0, r.jsx)("div", {
-      className: o.footerSpacer
+      className: c.footerSpacer
     }), (0, r.jsx)(l.A, {
       actions: n,
       footerInput: s

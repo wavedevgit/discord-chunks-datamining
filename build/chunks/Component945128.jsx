@@ -24,18 +24,18 @@ let u = e => {
     children: [(0, r.jsx)(a.X6q, {
       variant: "heading-lg/bold",
       className: s.title,
-      children: o.intl.string(c.default.v52itr)
+      children: c.intl.string(o.default.v52itr)
     }), (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       color: "text-muted",
       className: s.description,
-      children: o.intl.string(c.default["5am8Dw"])
+      children: c.intl.string(o.default["5am8Dw"])
     }), (0, r.jsx)(a.Kqy, {
       direction: "horizontal",
       justify: "end",
       children: (0, r.jsx)(a.zxk, {
         variant: "primary",
-        text: o.intl.string(c.default.GDsHl5),
+        text: c.intl.string(o.default.GDsHl5),
         onClick: u,
         disabled: n
       })

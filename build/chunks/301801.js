@@ -62,8 +62,8 @@ function u(e, t, n, i) {
         var i;
         let a = null != (i = r.promiseUuid) ? i : (0, l.uniqueId)(),
           {
-            searchType: u = o.S.FUZZY,
-            sortType: d = o.E.NONE,
+            searchType: u = c.S.FUZZY,
+            sortType: d = c.E.NONE,
             jaroWinklerSearchThreshold: f = .85
           } = r;
         return new Promise(r => {
@@ -74,7 +74,7 @@ function u(e, t, n, i) {
                 foundItemIndexes: l
               }
             } = t;
-            a === n && (r(l.map(t => e[t]).filter(c.lm)), null == s || s.removeEventListener("message", i))
+            a === n && (r(l.map(t => e[t]).filter(o.lm)), null == s || s.removeEventListener("message", i))
           };
           null == s || s.addEventListener("message", i), null == s || s.postMessage({
             id: a,
