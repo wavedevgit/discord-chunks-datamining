@@ -99,7 +99,7 @@ function j(e, t) {
   }, [n, r])
 }
 
-function k(e, t, n) {
+function M(e, t, n) {
   let [r, a] = i.useState(e), [o, s] = i.useState(e), l = i.useRef(o);
   return i.useLayoutEffect(() => {
     l.current = o
@@ -108,16 +108,16 @@ function k(e, t, n) {
   }, [e, t, n]), [r, o]
 }
 
-function M(e, t) {
+function k(e, t) {
   let n = (0, l.dQu)(s.Z.colors.INTERACTIVE_MUTED).hex(),
     r = (0, l.dQu)(s.Z.colors.INTERACTIVE_NORMAL).hex(),
     i = (0, l.dQu)(s.Z.colors.INTERACTIVE_ACTIVE).hex(),
     a = (0, l.dQu)(s.Z.unsafe_rawColors.BRAND_430).hex(),
     o = (0, l.dQu)(s.Z.unsafe_rawColors.WHITE_500).hex(),
     c = t ? a : n,
-    [u, d] = k(c, t, e),
-    [f, _] = k(t ? o : e ? i : r, t, e),
-    [p, h] = k(e ? c : r, t, e);
+    [u, d] = M(c, t, e),
+    [f, _] = M(t ? o : e ? i : r, t, e),
+    [p, h] = M(e ? c : r, t, e);
   return {
     lastBackgroundFillColor: u,
     backgroundFillColor: d,
@@ -152,10 +152,10 @@ function G(e) {
     lastBackgroundFillColor: R,
     backgroundFillColor: w,
     lastActiveFillColor: D,
-    activeFillColor: k,
+    activeFillColor: M,
     lastInactiveFillColor: G,
     inactiveFillColor: B
-  } = M(l, d), Z = {
+  } = k(l, d), Z = {
     currentTime: a,
     duration: s,
     played: l
@@ -216,7 +216,7 @@ function G(e) {
       i.fill();
       let [f, _] = U(G, B, n, A.current);
       o = o || _;
-      let [p, h] = U(D, k, n, A.current);
+      let [p, h] = U(D, M, n, A.current);
       o = o || h;
       for (let e = 0; e < a.length; e++) {
         let t = a[e],
@@ -235,7 +235,7 @@ function G(e) {
     return e = requestAnimationFrame(t), () => {
       null != e && cancelAnimationFrame(e)
     }
-  }, [g, N, O, E, a, s, l, d, R, w, D, k, G, B]);
+  }, [g, N, O, E, a, s, l, d, R, w, D, M, G, B]);
   let [, V] = (0, u.Z)({
     ref: g,
     onDrag: f,

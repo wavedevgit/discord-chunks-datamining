@@ -163,8 +163,8 @@ function K(e) {
     }), j && (0, r.jsx)(E.Z, {
       confettiTarget: g.current,
       confettiCanvas: b,
-      sprites: k.CA,
-      colors: k.Br
+      sprites: M.CA,
+      colors: M.Br
     })]
   })
 }
@@ -199,7 +199,7 @@ function q(e) {
     onConfirm: s
   } = e, l = (0, P.fh)(t, P.eC.REWARD).url, c = (0, A.f$)(t.config), {
     fractionalState: d
-  } = (0, m.Z)(), f = d === M.a$.FP_ONLY, _ = (0, N.Qy)(t.config), p = c && !f;
+  } = (0, m.Z)(), f = d === k.a$.FP_ONLY, _ = (0, N.Qy)(t.config), p = c && !f;
   return (0, r.jsxs)("div", {
     className: G.claimedRootContainer,
     children: [(0, r.jsxs)("div", {

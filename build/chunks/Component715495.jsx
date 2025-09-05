@@ -81,12 +81,12 @@ function I() {
       src: e,
       preview: true
     }))
-  }, [w]), k = (0, Chunk647438.useCallback)(e => {
+  }, [w]), M = (0, Chunk647438.useCallback)(e => {
     p(t => null == t ? null : v(y({}, t), {
       palette: e,
       preview: true
     }))
-  }, []), M = (0, Chunk647438.useCallback)(e => {
+  }, []), k = (0, Chunk647438.useCallback)(e => {
     x(e)
   }, [x]), U = (0, Chunk647438.useCallback)(e => {
     if (null != O.current) {
@@ -130,7 +130,7 @@ function I() {
         children: [exports && (0, Chunk951288.jsx)(Chunk329013.i, {}), Chunk442837 && (0, Chunk951288.jsx)(Chunk711325.Z, {
           selected: null == Chunk594174 || null == (e = Chunk594174.palette) ? true : module.name,
           onSelect: e => {
-            (null == u ? true : u.src) != null && D(u.src, u.src, e), k(e)
+            (null == u ? true : u.src) != null && D(u.src, u.src, e), M(e)
           }
         })]
       })]
@@ -185,12 +185,12 @@ function I() {
             return (0, r.jsx)(T, {
               src: t,
               onSetStatic: j,
-              removeAsset: M
+              removeAsset: k
             }, t)
           })
         }), (0, Chunk951288.jsx)(A, {
           label: "gradient override",
-          onChange: e => k({
+          onChange: e => M({
             name: f._j,
             darkBackground: e,
             lightBackground: e

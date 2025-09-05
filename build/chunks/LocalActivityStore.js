@@ -127,7 +127,7 @@ function j() {
   x = {}, L()
 }
 
-function k(e) {
+function M(e) {
   let {
     socketId: t,
     pid: n,
@@ -138,7 +138,7 @@ function k(e) {
   null != r ? x[t] = [n, r, i] : delete x[t], L()
 }
 
-function M(e) {
+function k(e) {
   let {
     socketId: t
   } = e;
@@ -203,8 +203,8 @@ let F = new Z(Chunk570140.Z, {
   ROBLOX_SUBGAME_APPLICATION_FETCH_SUCCESS: L,
   OVERLAY_INITIALIZE: U,
   START_SESSION: j,
-  LOCAL_ACTIVITY_UPDATE: k,
-  RPC_APP_DISCONNECTED: M,
+  LOCAL_ACTIVITY_UPDATE: M,
+  RPC_APP_DISCONNECTED: k,
   RUNNING_GAMES_CHANGE: L,
   LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: L,
   SPOTIFY_PLAYER_STATE: L,

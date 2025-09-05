@@ -38,7 +38,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk419953 = require("./419953.js");
 
-function k(e, t, n) {
+function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -47,14 +47,14 @@ function k(e, t, n) {
   }) : e[t] = n, e
 }
 
-function M(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      k(e, t, n[t])
+      M(e, t, n[t])
     })
   }
   return e
@@ -72,7 +72,7 @@ function F(e) {
   let {
     quest: v,
     memberListItemRef: C,
-    applicationStream: k,
+    applicationStream: M,
     position: F,
     closePopout: V,
     updatePosition: H,
@@ -80,7 +80,7 @@ function F(e) {
     name: W
   } = e, K = (0, s.e7)([b.Z], () => {
     var e;
-    return null != (e = b.Z.getChannel(null == k ? true : k.channelId)) ? e : null
+    return null != (e = b.Z.getChannel(null == M ? true : M.channelId)) ? e : null
   }), z = (0, P.hf)({
     quest: v,
     questContent: S.jn.MEMBERS_LIST,
@@ -131,7 +131,7 @@ function F(e) {
       eo.dispatch(D.CkL.POPOUT_CLOSE)
     },
     ed = "top" === F ? "".concat(U, " ").concat(U, " 0 0") : "0 0 ".concat(U, " ").concat(U);
-  if (null == v || q || X && !Z(k, K)) return null;
+  if (null == v || q || X && !Z(M, K)) return null;
   let ef = () => {
       (0, I._3)({
         questId: v.id,
@@ -161,7 +161,7 @@ function F(e) {
       e.stopPropagation(), ef()
     },
     eh = () => {
-      Z(k, K) && null != K ? ((0, I._3)({
+      Z(M, K) && null != K ? ((0, I._3)({
         questId: v.id,
         questContent: S.jn.MEMBERS_LIST,
         questContentCTA: I.jZ.WATCH_STREAM,
@@ -171,7 +171,7 @@ function F(e) {
         let {
           default: e
         } = await n.e("85045").then(n.bind(n, 748862));
-        return t => (0, r.jsx)(e, M({
+        return t => (0, r.jsx)(e, k({
           username: null != W ? W : "",
           onConfirm: () => ((0, I._3)({
             questId: v.id,
@@ -179,7 +179,7 @@ function F(e) {
             questContentCTA: I.jZ.WATCH_STREAM_CONFIRM,
             trackGuildAndChannelMetadata: true,
             sourceQuestContent: S.jn.MEMBERS_LIST
-          }), d.default.selectVoiceChannel(K.id), (0, f.iV)(k))
+          }), d.default.selectVoiceChannel(K.id), (0, f.iV)(M))
         }, t))
       })) : e_()
     },
@@ -193,7 +193,7 @@ function F(e) {
       ctaText: L.intl.string(L.t.VN1Ajo),
       handleClickCta: e_,
       tileAssetType: "reward"
-    } : Z(k, K) ? {
+    } : Z(M, K) ? {
       headerText: L.intl.string(L.t.Bz6SkJ),
       ctaText: L.intl.string(L.t.BXFP39),
       handleClickCta: eh,
@@ -294,7 +294,7 @@ function V(e) {
     questContent: S.jn.MEMBERS_LIST,
     trackGuildAndChannelMetadata: true,
     sourceQuestContent: S.jn.MEMBERS_LIST,
-    children: t => (0, r.jsx)(F, M({
+    children: t => (0, r.jsx)(F, k({
       impressionRef: t
     }, e))
   })

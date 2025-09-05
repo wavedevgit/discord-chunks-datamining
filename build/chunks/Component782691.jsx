@@ -8,6 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
+  Chunk480210 = require("./480210.js"),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -15,7 +16,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk53281 = require("./53281.jsx"),
   Chunk678135 = require("./678135.jsx"),
   Chunk594174 = require("./594174.js"),
-  Chunk802433 = require("./802433.js"),
   Chunk373071 = require("./373071.js"),
   Chunk489495 = require("./489495.js"),
   Chunk189 = require("./189.jsx"),
@@ -72,7 +72,7 @@ let S = {
       effect: t
     } = e, {
       upsertConfig: n
-    } = (0, h.n6)(), a = (0, s.e7)([_.default], () => _.default.getCurrentUser()), [O, I] = i.useState(true), C = i.useRef(null), [N, R] = i.useState(false), [P, w] = i.useState(false), [D, x] = i.useState([]), [L, j] = i.useState(S), k = i.useRef([]), [M, U] = i.useState(t.name), G = M.toLowerCase().replace(/\s+/g, "_"), B = i.useMemo(() => ({
+    } = (0, h.n6)(), a = (0, l.e7)([p.default], () => p.default.getCurrentUser()), [O, I] = i.useState(true), C = i.useRef(null), [N, R] = i.useState(false), [P, w] = i.useState(false), [D, x] = i.useState([]), [L, j] = i.useState(S), M = i.useRef([]), [k, U] = i.useState(t.name), G = k.toLowerCase().replace(/\s+/g, "_"), B = i.useMemo(() => ({
       id: A,
       skuId: A,
       title: A,
@@ -81,7 +81,7 @@ let S = {
       reducedMotionSrc: "",
       thumbnailPreviewSrc: "",
       effects: D,
-      animationType: p.Q.UNSPECIFIED
+      animationType: s.y.ANIMATION_TYPE_UNSPECIFIED
     }), [D]), Z = e => {
       let t = e.currentTarget.files;
       return null == t ? null : t[0]
@@ -119,7 +119,7 @@ let S = {
         [e]: null
       }))
     }, K = () => JSON.stringify(T(v({}, t), {
-      name: M,
+      name: k,
       config: T(v({}, t.config), {
         effects: D,
         stillFrames: L
@@ -130,7 +130,7 @@ let S = {
       e.length > 0 && x([...e].map(e => {
         if (null != e.base64) {
           let t = (0, m.$j)(e.base64);
-          e.src = t, k.current.push(t)
+          e.src = t, M.current.push(t)
         }
         return e
       }))
@@ -140,7 +140,7 @@ let S = {
         let [t, n] = e;
         if (null != n) {
           let e = (0, m.$j)(n.base64);
-          n.src = e, k.current.push(e), j(e => T(v({}, e), {
+          n.src = e, M.current.push(e), j(e => T(v({}, e), {
             [t]: n
           }))
         }
@@ -160,16 +160,16 @@ let S = {
       } = q.current;
       e.readonly || t({
         id: e.id,
-        name: M,
+        name: k,
         config: {
           effects: D,
           stillFrames: L
         }
       })
-    }, [D, L, M]), i.useEffect(() => () => {
-      k.current.forEach(e => {
+    }, [D, L, k]), i.useEffect(() => () => {
+      M.current.forEach(e => {
         URL.revokeObjectURL(e)
-      }), k.current = []
+      }), M.current = []
     }, []), null == a) ? (0, r.jsx)("div", {}) : (0, r.jsx)("div", {
       className: E.root,
       children: (0, r.jsxs)("div", {
@@ -187,12 +187,12 @@ let S = {
           className: E.col,
           children: [(0, r.jsxs)("div", {
             className: o()(E.col, E.section),
-            children: [(0, r.jsx)(c.Text, {
+            children: [(0, r.jsx)(u.Text, {
               variant: "text-md/normal",
               children: "Profile Effect Name"
             }), (0, r.jsx)("input", {
               type: "text",
-              value: M,
+              value: k,
               className: E.input,
               onChange: e => {
                 U(e.target.value)
@@ -202,7 +202,7 @@ let S = {
             className: E.grid,
             children: [(0, r.jsxs)("div", {
               className: E.row,
-              children: [(0, r.jsx)(c.Text, {
+              children: [(0, r.jsx)(u.Text, {
                 variant: "text-md/normal",
                 children: "Dark Theme"
               }), (0, r.jsx)("input", {
@@ -215,7 +215,7 @@ let S = {
               })]
             }), (0, r.jsxs)("div", {
               className: E.row,
-              children: [(0, r.jsx)(c.Text, {
+              children: [(0, r.jsx)(u.Text, {
                 variant: "text-md/normal",
                 children: "Show User Profile"
               }), (0, r.jsx)("input", {
@@ -229,36 +229,36 @@ let S = {
             })]
           }), (0, r.jsxs)("div", {
             className: E.row,
-            children: [(0, r.jsxs)(l.zx, {
-              color: l.Tt.GREEN,
-              children: ["Upload Animated Layer", (0, r.jsx)(d.Z, {
+            children: [(0, r.jsxs)(c.zx, {
+              color: c.Tt.GREEN,
+              children: ["Upload Animated Layer", (0, r.jsx)(f.Z, {
                 ref: C,
                 onChange: V,
                 multiple: false
               })]
-            }), (0, r.jsx)(c.Text, {
+            }), (0, r.jsx)(u.Text, {
               variant: "text-sm/semibold",
               children: "Make sure to upload the bottommost layer first!"
             })]
           }), (0, r.jsxs)("div", {
             className: E.row,
-            children: [(0, r.jsxs)(l.zx, {
-              color: l.Tt.GREEN,
-              children: ["Upload thumbnail.png", (0, r.jsx)(d.Z, {
+            children: [(0, r.jsxs)(c.zx, {
+              color: c.Tt.GREEN,
+              children: ["Upload thumbnail.png", (0, r.jsx)(f.Z, {
                 ref: C,
                 onChange: e => F(m.cq.THUMBNAIL, e),
                 multiple: false
               })]
-            }), (0, r.jsxs)(l.zx, {
-              color: l.Tt.GREEN,
-              children: ["Upload static.png", (0, r.jsx)(d.Z, {
+            }), (0, r.jsxs)(c.zx, {
+              color: c.Tt.GREEN,
+              children: ["Upload static.png", (0, r.jsx)(f.Z, {
                 ref: C,
                 onChange: e => F(m.cq.STATIC, e),
                 multiple: false
               })]
-            }), (0, r.jsxs)(l.zx, {
-              color: l.Tt.GREEN,
-              children: ["Upload reduced_motion.png", (0, r.jsx)(d.Z, {
+            }), (0, r.jsxs)(c.zx, {
+              color: c.Tt.GREEN,
+              children: ["Upload reduced_motion.png", (0, r.jsx)(f.Z, {
                 ref: C,
                 onChange: e => F(m.cq.REDUCED_MOTION, e),
                 multiple: false
@@ -268,7 +268,7 @@ let S = {
             className: E.bottomControls,
             children: (0, r.jsx)("div", {
               className: E.row,
-              children: (0, r.jsx)(c.zxk, {
+              children: (0, r.jsx)(u.zxk, {
                 variant: "primary",
                 text: "Replay Animation",
                 onClick: () => {
@@ -278,29 +278,29 @@ let S = {
             })
           }), (0, r.jsxs)("div", {
             className: o()(E.bottomControls, E.shareSection),
-            children: [(0, r.jsx)(c.Text, {
+            children: [(0, r.jsx)(u.Text, {
               variant: "text-sm/semibold",
               children: "Please download both configs for the drop package!"
-            }), (0, r.jsx)(c.Text, {
+            }), (0, r.jsx)(u.Text, {
               variant: "text-sm/bold",
               color: "text-danger",
               children: "WARNING: The full config is really big :0"
             }), (0, r.jsxs)("div", {
               className: E.row,
-              children: [(0, r.jsx)(u.Z, {
+              children: [(0, r.jsx)(d.Z, {
                 fileContents: () => (0, m.yR)(D),
                 contentType: "text/plain",
                 fileName: "".concat(G, "_timing_config.txt"),
-                children: (0, r.jsx)(c.zxk, {
+                children: (0, r.jsx)(u.zxk, {
                   variant: "primary",
                   size: "sm",
                   text: "Download Timing Config"
                 })
-              }), (0, r.jsx)(u.Z, {
+              }), (0, r.jsx)(d.Z, {
                 fileContents: K,
                 contentType: "text/plain",
                 fileName: "".concat(G, "_config.txt"),
-                children: (0, r.jsx)(c.zxk, {
+                children: (0, r.jsx)(u.zxk, {
                   variant: "primary",
                   size: "sm",
                   text: "Download Full Config"
@@ -309,7 +309,7 @@ let S = {
             })]
           }), (0, r.jsxs)("div", {
             className: E.section,
-            children: [(0, r.jsx)(c.X6q, {
+            children: [(0, r.jsx)(u.X6q, {
               variant: "heading-lg/bold",
               children: "Still Frames"
             }), (0, r.jsx)("div", {
@@ -318,17 +318,17 @@ let S = {
                 let [t, n] = e;
                 return (0, r.jsxs)("div", {
                   className: E.stillFramePreviewContainer,
-                  children: [(0, r.jsx)(c.X6q, {
+                  children: [(0, r.jsx)(u.X6q, {
                     variant: "heading-sm/bold",
                     children: t
                   }), (0, r.jsx)("img", {
                     src: null == n ? true : n.src,
                     className: E.stillFramePreview,
                     alt: ""
-                  }), null != n && (0, r.jsx)(l.zx, {
-                    size: l.Ph.TINY,
-                    color: l.Tt.RED,
-                    look: l.iL.OUTLINED,
+                  }), null != n && (0, r.jsx)(c.zx, {
+                    size: c.Ph.TINY,
+                    color: c.Tt.RED,
+                    look: c.iL.OUTLINED,
                     onClick: () => W(t),
                     children: "Clear"
                   })]
@@ -340,7 +340,7 @@ let S = {
             return (null != (t = e.randomizedSources) ? t : []).length > 0
           }) && (0, r.jsxs)("div", {
             className: o()(E.section, E.randomizedRules),
-            children: [(0, r.jsx)(c.Text, {
+            children: [(0, r.jsx)(u.Text, {
               variant: "text-md/bold",
               children: "Rules of Randomized Effects"
             }), (0, r.jsxs)("ol", {
@@ -357,7 +357,7 @@ let S = {
           }), (0, r.jsx)("div", {
             children: P && (0, r.jsxs)("div", {
               className: o()(E.userProfilePreview, E.preview),
-              children: [(0, r.jsx)(f.Z, {
+              children: [(0, r.jsx)(_.Z, {
                 user: a,
                 pendingAvatar: true,
                 pendingProfileEffectId: null,
@@ -372,7 +372,7 @@ let S = {
           className: o()(E.grid, E.layers),
           children: [(0, r.jsx)("div", {
             className: E.dangerControls,
-            children: (0, r.jsx)(c.zxk, {
+            children: (0, r.jsx)(u.zxk, {
               variant: "critical-secondary",
               text: "Clear Assets",
               onClick: Y
@@ -381,7 +381,7 @@ let S = {
             className: E.layerForm,
             children: [(0, r.jsxs)("div", {
               className: E.layerPreviewContainer,
-              children: [(0, r.jsx)(c.X6q, {
+              children: [(0, r.jsx)(u.X6q, {
                 variant: "heading-md/bold",
                 children: e.name
               }), (0, r.jsx)("img", {
@@ -389,13 +389,13 @@ let S = {
                 className: E.layerPreview,
                 alt: ""
               }), null != e.randomizedSources && (0, r.jsxs)(r.Fragment, {
-                children: [(0, r.jsx)(c.X6q, {
+                children: [(0, r.jsx)(u.X6q, {
                   variant: "heading-md/bold",
                   children: "Alternatives"
                 }), e.randomizedSources.map((e, t) => {
                   var n;
                   return (0, r.jsxs)("div", {
-                    children: [null != e.filename && (0, r.jsx)(c.X6q, {
+                    children: [null != e.filename && (0, r.jsx)(u.X6q, {
                       variant: "heading-sm/semibold",
                       children: e.filename
                     }), (0, r.jsx)("img", {
@@ -410,7 +410,7 @@ let S = {
               className: o()(E.grid, E.section),
               children: [(0, r.jsxs)("div", {
                 className: E.col,
-                children: [(0, r.jsx)(c.Text, {
+                children: [(0, r.jsx)(u.Text, {
                   variant: "text-md/bold",
                   children: "Start"
                 }), (0, r.jsx)("input", {
@@ -428,7 +428,7 @@ let S = {
                 })]
               }), (0, r.jsxs)("div", {
                 className: E.col,
-                children: [(0, r.jsx)(c.Text, {
+                children: [(0, r.jsx)(u.Text, {
                   variant: "text-md/bold",
                   children: "Duration"
                 }), (0, r.jsx)("input", {
@@ -449,7 +449,7 @@ let S = {
               className: o()(E.grid, E.section),
               children: [(0, r.jsxs)("div", {
                 className: E.col,
-                children: [(0, r.jsx)(c.Text, {
+                children: [(0, r.jsx)(u.Text, {
                   variant: "text-md/bold",
                   children: "Loop"
                 }), (0, r.jsx)("input", {
@@ -467,7 +467,7 @@ let S = {
               }), (0, r.jsx)("div", {
                 className: E.col,
                 children: e.loop && (0, r.jsxs)(r.Fragment, {
-                  children: [(0, r.jsx)(c.Text, {
+                  children: [(0, r.jsx)(u.Text, {
                     variant: "text-md/bold",
                     children: "Loop Delay"
                   }), (0, r.jsx)("input", {
@@ -489,16 +489,16 @@ let S = {
               className: o()(E.row, E.end),
               children: [(0, r.jsxs)("div", {
                 className: E.uploadButton,
-                children: [(0, r.jsx)(c.Text, {
+                children: [(0, r.jsx)(u.Text, {
                   variant: "text-sm/normal",
                   color: "always-white",
                   children: "Add Alternative"
-                }), (0, r.jsx)(d.Z, {
+                }), (0, r.jsx)(f.Z, {
                   ref: C,
                   onChange: e => H(e, t),
                   multiple: false
                 })]
-              }), (0, r.jsx)(c.zxk, {
+              }), (0, r.jsx)(u.zxk, {
                 variant: "critical-secondary",
                 text: "Remove Layer",
                 onClick: () => {

@@ -6,8 +6,8 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk119837 = require("./119837.js"),
-  Chunk802433 = require("./802433.js"),
+var Chunk480210 = require("./480210.js"),
+  Chunk119837 = require("./119837.js"),
   Chunk341225 = require("./341225.js");
 let s = e => {
   var t, n, s, l;
@@ -23,10 +23,10 @@ let s = e => {
     loopEnd: g,
     bannerAdjustment: E
   } = e, b = true;
-  if (d || (b = false), f < c.start && (b = false), !c.loop && f > c.duration + c.start && (b = false), u === a.Q.PERSISTENT && !_ && null != m && f >= g && p(true), c.loop && true !== c.loopDelay && c.loopDelay > 0) {
+  if (d || (b = false), f < c.start && (b = false), !c.loop && f > c.duration + c.start && (b = false), u === i.y.ANIMATION_TYPE_PERSISTENT && !_ && null != m && f >= g && p(true), c.loop && true !== c.loopDelay && c.loopDelay > 0) {
     let e = c.duration + c.loopDelay,
       t = Math.floor((f - c.start) / e);
-    f - c.start - t * e > c.duration && (u === a.Q.INTERMITTENT && !_ && null != m && t >= m && p(true), b = false)
+    f - c.start - t * e > c.duration && (u === i.y.ANIMATION_TYPE_INTERMITTENT && !_ && null != m && t >= m && p(true), b = false)
   }
   return b ? (0, r.jsx)("img", {
     src: null != h ? "".concat(c.src, "?query=").concat(h) : c.src,
@@ -38,7 +38,7 @@ let s = e => {
     alt: "",
     "aria-hidden": true
   }) : (0, r.jsx)("img", {
-    src: i.td,
+    src: a.td,
     alt: "",
     "aria-hidden": true
   })

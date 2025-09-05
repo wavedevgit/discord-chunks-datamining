@@ -58,7 +58,7 @@ function j(e) {
   return e
 }
 
-function k(e, t) {
+function M(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -69,8 +69,8 @@ function k(e, t) {
   return n
 }
 
-function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+function k(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -108,10 +108,10 @@ let H = e => {
   W = {
     newline: o().defaultRules.newline,
     paragraph: o().defaultRules.paragraph,
-    escape: M(j({}, o().defaultRules.escape), {
+    escape: k(j({}, o().defaultRules.escape), {
       match: (e, t, n) => false === t.allowEscape ? null : o().defaultRules.escape.match(e, t, n)
     }),
-    blockQuote: M(j({}, o().defaultRules.blockQuote), {
+    blockQuote: k(j({}, o().defaultRules.blockQuote), {
       requiredFirstCharacters: [" ", ">"],
       match(e, t) {
         let {
@@ -143,14 +143,14 @@ let H = e => {
       }
     }),
     link: Chunk772096.ZP,
-    autolink: M(j({}, o().defaultRules.autolink), {
+    autolink: k(j({}, o().defaultRules.autolink), {
       parse: V
     }),
-    mailto: M(j({}, o().defaultRules.mailto), {
+    mailto: k(j({}, o().defaultRules.mailto), {
       match: o().inlineRegex(/^<([^\s<>@]+@[^\s<>@]+\.[^\s<>@]+)>/),
       requiredFirstCharacters: ["<"]
     }),
-    tel: M(j({}, o().defaultRules.mailto), {
+    tel: k(j({}, o().defaultRules.mailto), {
       requiredFirstCharacters: ["<"],
       match: o().inlineRegex(/^<((?:(?:tel|sms):\+?|\+)(?:(?:[0-9]|\([0-9]+\)))(?:[- .\/]?(?:[0-9]|\([0-9]+\)))+)>/),
       parse(e) {
@@ -166,7 +166,7 @@ let H = e => {
         }
       }
     }),
-    url: M(j({}, o().defaultRules.url), {
+    url: k(j({}, o().defaultRules.url), {
       requiredFirstCharacters: ["h", "s"],
       match(e, t) {
         if (!t.inline) return null;
@@ -193,10 +193,10 @@ let H = e => {
     u: o().defaultRules.u,
     br: o().defaultRules.br,
     text: Chunk594199.ZP,
-    inlineCode: M(j({}, o().defaultRules.inlineCode), {
+    inlineCode: k(j({}, o().defaultRules.inlineCode), {
       parse(e, t, n) {
         let r = o().defaultRules.inlineCode.parse(e, t, n);
-        returntrue === n.parseInlineCodeChildContent ? M(j({}, r), {
+        returntrue === n.parseInlineCodeChildContent ? k(j({}, r), {
           validationChildContent: t(r.content, n)
         }) : r
       }
@@ -500,7 +500,7 @@ let er = 10,
       parse(e, t, n) {
         var r;
         let i = null != (r = n.parseDepth) ? r : 0,
-          a = M(j({}, n), {
+          a = k(j({}, n), {
             parseDepth: i + 1
           }),
           o = t(e[2], a),

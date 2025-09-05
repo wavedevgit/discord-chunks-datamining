@@ -92,8 +92,8 @@ function C(e) {
       let n = h.Z.getGameByName(S.application.name);
       return null != n && t === n.id
     }) : null),
-    k = (0, i.e7)([p.Z], () => p.Z.getCurrentUserActiveStream()),
-    M = (0, i.e7)([m.Z], () => m.Z.getChannelId()),
+    M = (0, i.e7)([p.Z], () => p.Z.getCurrentUserActiveStream()),
+    k = (0, i.e7)([m.Z], () => m.Z.getChannelId()),
     U = b.default.extractTimestamp(S.id) + y.O < Date.now(),
     G = (0, r.jsx)(r.Fragment, {
       children: (0, o._0)(S, N, I)
@@ -101,7 +101,7 @@ function C(e) {
     {
       newestAnalyticsLocation: B
     } = (0, l.ZP)(R, s.Z.REQUEST_TO_STREAM_INVITE_EMBED);
-  return U ? t = v.intl.string(O.default.u4QmWl) : null != k ? t = v.intl.string(O.default.P0wwmJ) : M !== N.id ? t = v.intl.string(O.default.qRXatr) : null == j && (t = v.intl.string(O.default["43zohI"])), (0, r.jsx)(c.W, {
+  return U ? t = v.intl.string(O.default.u4QmWl) : null != M ? t = v.intl.string(O.default.P0wwmJ) : k !== N.id ? t = v.intl.string(O.default.qRXatr) : null == j && (t = v.intl.string(O.default["43zohI"])), (0, r.jsx)(c.W, {
     header: v.intl.string(O.default.nAyuPj),
     title: C.name,
     staticBannerSrc: w,

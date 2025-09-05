@@ -72,8 +72,8 @@ let I = Symbol("NO GUILD ID"),
   x = new Map,
   L = new Map,
   j = new Map,
-  k = [],
-  M = [];
+  M = [],
+  k = [];
 
 function U(e) {
   let t = e.data.type;
@@ -168,7 +168,7 @@ function K(e) {
 }
 
 function z(e) {
-  var t, n, r, i, a, l, c, u, f, _, g, b, O, N, M, G, V, H, Y, K, z;
+  var t, n, r, i, a, l, c, u, f, _, g, b, O, N, k, G, V, H, Y, K, z;
   let {
     userProfile: X,
     fetchStartedAt: Q
@@ -191,7 +191,7 @@ function z(e) {
   }
   if (null != X.mutual_friends_count) {
     let e = X.mutual_friends_count;
-    L.set(X.user.id, e), 0 === e && x.set(X.user.id, k)
+    L.set(X.user.id, e), 0 === e && x.set(X.user.id, M)
   }
   null != X.mutual_friends && (x.set(X.user.id, W(X.mutual_friends)), L.set(X.user.id, X.mutual_friends.length));
   let $ = null != X.premium_since ? new Date(X.premium_since) : null,
@@ -228,7 +228,7 @@ function z(e) {
         skuId: en.sku_id,
         expiresAt: en.expires_at
       } : true,
-      pronouns: null != (M = null == (f = X.user_profile) ? true : f.pronouns) ? M : "",
+      pronouns: null != (k = null == (f = X.user_profile) ? true : f.pronouns) ? k : "",
       connectedAccounts: null != (G = X.connected_accounts.filter(e => s.Z.isSupported(e.type))) ? G : [],
       applicationRoleConnections: null != (V = X.application_role_connections) ? V : [],
       premiumSince: $,
@@ -338,7 +338,7 @@ function Q(e) {
     fetchEndedAt: 0,
     fetchError: true
   };
-  s.fetchStartedAt = o, s.fetchEndedAt = Date.now(), s.fetchError = a, R.set(r, s), (null == a ? true : a.status) === 404 && (L.set(r, 0), x.set(r, k), j.set(r, M))
+  s.fetchStartedAt = o, s.fetchEndedAt = Date.now(), s.fetchError = a, R.set(r, s), (null == a ? true : a.status) === 404 && (L.set(r, 0), x.set(r, M), j.set(r, k))
 }
 
 function J(e) {

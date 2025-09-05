@@ -128,7 +128,7 @@ function er(e) {
     href: D,
     placeholder: x,
     placeholderVersion: j,
-    sourceMetadata: M
+    sourceMetadata: k
   } = e, [U, B] = a.useState(b), Z = null != d && null == d.proxyURL, V = a.useCallback(() => B(false), [B]), H = e => {
     e.preventDefault(), e.stopPropagation(), null == I || I(false), B(true), Z && (w.S.dispatch(G.CkL.VIDEO_EMBED_PLAYBACK_STARTED), w.S.subscribeOnce(G.CkL.VIDEO_EMBED_PLAYBACK_STARTED, V))
   };
@@ -171,7 +171,7 @@ function er(e) {
       onMute: P,
       onControlsHide: A,
       onControlsShow: C,
-      sourceMetadata: M
+      sourceMetadata: k
     })
   });
   if (U && null != d) {
@@ -208,7 +208,7 @@ function er(e) {
       children: (0, i.jsx)("div", {
         className: s()(F.embedVideo, o),
         style: a,
-        children: (0, i.jsx)(k.ZP, {
+        children: (0, i.jsx)(M.ZP, {
           provider: f,
           src: d.url,
           style: e,
@@ -240,7 +240,7 @@ function er(e) {
       placeholder: x,
       placeholderVersion: j,
       onClick: E && null != d ? H : null,
-      sourceMetadata: M,
+      sourceMetadata: k,
       analyticsSource: "EmbedVideo"
     }), (0, i.jsx)("div", {
       className: F.embedVideoActions,
@@ -250,8 +250,8 @@ function er(e) {
           onPlay: null != d ? H : null,
           externalURL: D,
           renderLinkComponent: g,
-          messageId: null == M || null == (t = M.message) ? true : t.id,
-          channelId: null == M || null == (n = M.message) ? true : n.channel_id
+          messageId: null == k || null == (t = k.message) ? true : t.id,
+          channelId: null == k || null == (n = k.message) ? true : n.channel_id
         }) : null
       })
     })]

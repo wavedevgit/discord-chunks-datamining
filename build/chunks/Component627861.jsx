@@ -294,12 +294,12 @@ function eE(e) {
     onView: w,
     partyStatusElement: D,
     presenceActivity: x
-  } = e, j = (0, v.A)(S), k = (0, p.ye)(S), {
-    bot: M
+  } = e, j = (0, v.A)(S), M = (0, p.ye)(S), {
+    bot: k
   } = S, U = F.ZP.getApplicationIconURL({
     id: S.id,
     icon: S.icon,
-    bot: M
+    bot: k
   }), {
     staticBannerSrc: G,
     videoBannerSrc: Z,
@@ -330,7 +330,7 @@ function eE(e) {
     currentUserId: C,
     message: P,
     application: S,
-    isEmbeddedApplication: k,
+    isEmbeddedApplication: M,
     isFrameApplication: j,
     isGameLaunchable: $
   }), e_ = ep(x, N, P, S), eh = (0, Q.g)(N, x), eE = (0, z.L)(x, P, S, C), eb = (0, l.e7)([B.Z], () => null != x && null != x.application_id && B.Z.getState(x.application_id, es.mFx.JOIN) === es.OcF.LOADING), ey = i.useMemo(() => ed ? {
@@ -401,7 +401,7 @@ function eE(e) {
         applicationId: q.id
       })
     }
-  } : null != el ? el : true, [S.id, $, ea, null == q ? true : q.id, el]), ev = (0, b.G)(S), eI = i.useMemo(() => null != J ? J : null != er ? er : null != ev && k ? ev : true, [k, J, er, ev]), eT = i.useMemo(() => {
+  } : null != el ? el : true, [S.id, $, ea, null == q ? true : q.id, el]), ev = (0, b.G)(S), eI = i.useMemo(() => null != J ? J : null != er ? er : null != ev && M ? ev : true, [M, J, er, ev]), eT = i.useMemo(() => {
     let e = [];
     return H || null == ey ? H && null != eO && e.push(eO) : e.push(ey), e
   }, [eO, H, ey]), eS = i.useMemo(() => eT.some(e => e.trackingArea === m.j_.CLOUD_PLAY), [eT]);
@@ -509,15 +509,15 @@ function eb(e) {
     message: c,
     hideParty: u,
     onView: d
-  } = e, f = (0, g.O)(o), _ = (0, l.e7)([w.default], () => w.default.getId()), p = (0, l.e7)([M.Z], () => {
-    if (null == c.application) return M.Z.findActivity(c.author.id, e => e.type === es.IIU.LISTENING);
+  } = e, f = (0, g.O)(o), _ = (0, l.e7)([w.default], () => w.default.getId()), p = (0, l.e7)([k.Z], () => {
+    if (null == c.application) return k.Z.findActivity(c.author.id, e => e.type === es.IIU.LISTENING);
     {
       let e = c.author.id;
-      return (0, X.H)(c) && (e = e === _ && s.isPrivate() ? s.getRecipientId() : _), M.Z.getApplicationActivity(e, c.application.id)
+      return (0, X.H)(c) && (e = e === _ && s.isPrivate() ? s.getRecipientId() : _), k.Z.getApplicationActivity(e, c.application.id)
     }
-  }, [c, s, _]), h = (0, l.e7)([k.Z, U.Z], () => {
+  }, [c, s, _]), h = (0, l.e7)([M.Z, U.Z], () => {
     var e;
-    return null != (e = k.Z.getApplicationActivity(f.id)) ? e : U.Z.getApplicationActivity(f.id, true)
+    return null != (e = M.Z.getApplicationActivity(f.id)) ? e : U.Z.getApplicationActivity(f.id, true)
   }, [f.id]), m = (0, l.Wu)([x.Z], () => {
     var e;
     return null == p || null == p.party ? [] : Array.from(null != (e = x.Z.getParty(p.party.id)) ? e : [])

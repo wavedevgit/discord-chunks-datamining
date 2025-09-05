@@ -83,7 +83,7 @@ function b(e) {
   }
   i.useEffect(() => () => l.Z.wait(() => c.q$()), []);
   let j = null != u && u === O,
-    k = j ? P : R;
+    M = j ? P : R;
   return (0, r.jsxs)(s.Y0X, {
     "aria-labelledby": C,
     transitionState: n,
@@ -107,7 +107,7 @@ function b(e) {
         children: p.intl.string(p.t.a6Vilp)
       }), x(), (0, r.jsx)("form", {
         onSubmit: e => {
-          e.preventDefault(), k()
+          e.preventDefault(), M()
         },
         children: (0, r.jsxs)(d.Z, {
           direction: d.Z.Direction.VERTICAL,

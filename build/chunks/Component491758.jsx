@@ -82,8 +82,8 @@ function L() {
     } = (0, Chunk442837.cj)([Chunk435064.Z], () => Chunk435064.Z.getSettings()),
     L = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getHardwareClassification()),
     j = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP, true)),
-    k = Chunk435064.Z.isDecoupledGameClippingEnabled(),
-    M = (0, Chunk779618.Z)(Chunk131951.Z),
+    M = Chunk435064.Z.isDecoupledGameClippingEnabled(),
+    k = (0, Chunk779618.Z)(Chunk131951.Z),
     {
       showClipsHeaderEntrypoint: U
     } = Chunk924557.NV.useExperiment({
@@ -184,7 +184,7 @@ function L() {
         className: Chunk622025.formItem,
         children: Chunk388032.intl.string(Chunk388032.t["Z+Mfqa"])
       })]
-    }), k && M && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    }), M && k && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk481060.$i$, {}), (0, Chunk951288.jsx)(Chunk481060.hjN, {
         className: Chunk10198.marginTop20,
         disabled: !module,

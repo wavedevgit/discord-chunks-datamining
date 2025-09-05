@@ -88,18 +88,18 @@ function j(e) {
   return e === u.EO.VIDEO
 }
 
-function k(e) {
+function M(e) {
   return ((0, E._M)(e) || (0, E.MO)(e)) && (e.pathname.toLowerCase().endsWith(".webp") || e.pathname.toLowerCase().endsWith(".avif"))
 }
 
-function M(e) {
+function k(e) {
   return ((0, E._M)(e) || (0, E.MO)(e)) && e.pathname.toLowerCase().endsWith(".gif")
 }
 
 function U(e) {
   let t = y.Z.toURLSafe(e),
-    n = null != t && M(t);
-  return null != t && (k(t) || n) ? (n && t.searchParams.set("format", "webp"), t.searchParams.set("animated", "true"), t.toString()) : e
+    n = null != t && k(t);
+  return null != t && (M(t) || n) ? (n && t.searchParams.set("format", "webp"), t.searchParams.set("animated", "true"), t.toString()) : e
 }
 class G extends Chunk647438.PureComponent {
   componentDidMount() {

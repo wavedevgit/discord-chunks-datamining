@@ -61,8 +61,8 @@ function C(e) {
   }), {
     product: x,
     purchase: L
-  } = (0, d.Z)(null == w ? true : w.skuId), j = y.ZP.canUseCollectibles(t), k = i.useRef(null), M = (0, _.Z)(l), U = true === N ? (null == w ? true : w.skuId) === (null == P ? true : P.skuId) : (null == w ? true : w.skuId) === (null == N ? true : N.skuId), G = e => {
-    D(e), null != e && M(e)
+  } = (0, d.Z)(null == w ? true : w.skuId), j = y.ZP.canUseCollectibles(t), M = i.useRef(null), k = (0, _.Z)(l), U = true === N ? (null == w ? true : w.skuId) === (null == P ? true : P.skuId) : (null == w ? true : w.skuId) === (null == N ? true : N.skuId), G = e => {
+    D(e), null != e && k(e)
   }, B = () => {
     R(w), f()
   }, Z = i.useCallback(e => {
@@ -108,7 +108,7 @@ function C(e) {
         user: t,
         guild: C,
         pendingAvatarDecoration: w,
-        selectedAvatarDecorationRef: k,
+        selectedAvatarDecorationRef: M,
         onSelect: G,
         onOpenShop: Z
       }), (0, r.jsx)(O.Z, {

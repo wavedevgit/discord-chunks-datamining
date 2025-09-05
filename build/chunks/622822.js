@@ -16,7 +16,7 @@ require.d(exports, {
   hO: () => S,
   kH: () => x,
   qF: () => Z,
-  zd: () => M
+  zd: () => k
 });
 var Chunk442837 = require("./442837.js"),
   Chunk480916 = require("./480916.js"),
@@ -172,7 +172,7 @@ let j = () => {
     let t = w();
     returntrue !== module.nsfwAllowed || exports
   },
-  k = e => {
+  M = e => {
     if (!j() || null == e) returnfalse;
     let t = f.Z.getGuild(e);
     return null != t && (0, c.Y2)(t) && (0, l.Tz)({
@@ -180,20 +180,20 @@ let j = () => {
       location: "age-gate-utils"
     })
   },
-  M = e => !!j() && null != e && H(u.Z.getChannel(e)),
-  U = e => w() && M(e),
+  k = e => !!j() && null != e && H(u.Z.getChannel(e)),
+  U = e => w() && k(e),
   G = e => !!U(e) && ((0, m.mN)(g.L0.NSFW_VOICE_CHANNEL), true);
 
 function B(e, t, n) {
   if (S(e)) return void(0, m.mN)(g.L0.ACCESS_LARGE_GUILD_UNDERAGE);
   if (W()) {
-    if (k(e)) {
+    if (M(e)) {
       let e = null != n && v.includes(n) ? n : g.L0.NSFW_SERVER;
       (0, m.mN)(e);
       return
     }
     if (N(e)) return void(0, m.mN)(g.L0.LARGE_GUILD);
-    if (M(t)) return void(0, m.mN)(null != n ? n : g.L0.NSFW_CHANNEL)
+    if (k(t)) return void(0, m.mN)(null != n ? n : g.L0.NSFW_CHANNEL)
   }
 }
 let Z = e => null != e && (e.isNSFW() || (0, c.Y2)(f.Z.getGuild(e.guild_id))),
