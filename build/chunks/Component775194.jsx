@@ -11,8 +11,8 @@ var Chunk392711 = require("./392711.js"),
   Chunk481250 = require("./481250.jsx"),
   Chunk513547 = require("./513547.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk966117 = require("./966117.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk593235 = require("./593235.js"),
+  Chunk10198 = require("./10198.js");
 let m = {
   userId: 1,
   dataType: 2,

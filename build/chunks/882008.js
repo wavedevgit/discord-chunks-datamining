@@ -1,3 +1,6 @@
-/** Chunk was on 32561 **/
-/** chunk id: 882008, original params: e (module,exports,require) **/
-module.exports = "/assets/025eea446d3b4403.svg"
+/** Chunk was on 70127 **/
+/** chunk id: 882008, original params: e,t,n (module,exports,require) **/
+module.exports = {
+  streamInfoContainer: "streamInfoContainer__0f85c",
+  infoRow: "infoRow__0f85c"
+}

@@ -1,5 +1,5 @@
-/** Chunk was on 72891 **/
-/** chunk id: 488499, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 96033 **/
+/** chunk id: 488499, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => l
 });
@@ -9,21 +9,21 @@ var Chunk180781 = require("./180781.jsx"),
   Chunk321867 = require("./321867.jsx"),
   Chunk486324 = require("./486324.js");
 
-function l(e) {
+function l(t) {
   let {
-    type: t,
+    type: e,
     analyticsPage: n,
     analyticsSection: l,
-    isGIF: c,
-    banner: s
-  } = e;
-  return [r.pC.BANNER, r.pC.AVATAR].includes(t) && c ? (0, i.jsx)(o.Z, {
+    isGIF: s,
+    banner: d
+  } = t;
+  return [r.pC.BANNER, r.pC.AVATAR].includes(e) && s ? (0, i.jsx)(a.Z, {
     analyticsSection: l,
-    type: t
-  }) : t === r.pC.GUILD_BANNER ? (0, i.jsx)(a.Z, {
+    type: e
+  }) : e === r.pC.GUILD_BANNER ? (0, i.jsx)(o.Z, {
     analyticsSection: l,
     analyticsPage: n,
-    isGIF: c,
-    banner: s
+    isGIF: s,
+    banner: d
   }) : null
 }

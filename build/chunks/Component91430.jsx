@@ -47,7 +47,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk362786 = require("./362786.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk903163 = require("./903163.js");
+  Chunk336763 = require("./336763.js");
 let H = "app";
 
 function Y(e) {
@@ -122,15 +122,15 @@ function W() {
       type: "subscription_settings_missing_payment_method"
     })
   }, []), (0, Chunk951288.jsxs)("div", {
-    className: Chunk903163.paymentBanner,
+    className: Chunk336763.paymentBanner,
     children: [(0, Chunk951288.jsx)(Chunk481060.Mgn, {
       size: "custom",
       width: 20,
       height: 20,
-      className: Chunk903163.paymentBannerIcon,
+      className: Chunk336763.paymentBannerIcon,
       color: Chunk692547.Z.unsafe_rawColors.YELLOW_260.css
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-      className: Chunk903163.paymentBannerText,
+      className: Chunk336763.paymentBannerText,
       variant: "text-sm/normal",
       children: Chunk388032.intl.string(Chunk388032.t.xFHEMT)
     })]
@@ -143,15 +143,15 @@ function K() {
       type: "subscription_settings_invalid_payment_method"
     })
   }, []), (0, Chunk951288.jsxs)("div", {
-    className: Chunk903163.paymentBanner,
+    className: Chunk336763.paymentBanner,
     children: [(0, Chunk951288.jsx)(Chunk481060.Mgn, {
       size: "custom",
       width: 20,
       height: 20,
-      className: Chunk903163.paymentBannerIcon,
+      className: Chunk336763.paymentBannerIcon,
       color: Chunk692547.Z.unsafe_rawColors.RED_360.css
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-      className: Chunk903163.paymentBannerText,
+      className: Chunk336763.paymentBannerText,
       variant: "text-sm/normal",
       children: Chunk388032.intl.string(Chunk388032.t["j+nuQU"])
     })]
@@ -218,23 +218,23 @@ function q(e) {
 function X() {
   return (0, Chunk951288.jsxs)("div", {
     children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-      className: Chunk903163.sectionTitle,
+      className: Chunk336763.sectionTitle,
       tag: "h1",
       children: Chunk388032.intl.string(Chunk388032.t["/gs+Pz"])
     }), (0, Chunk951288.jsx)("p", {
-      className: Chunk903163.sectionDescription,
+      className: Chunk336763.sectionDescription,
       children: Chunk388032.intl.string(Chunk388032.t.D8UpUl)
     }), (0, Chunk951288.jsx)(Chunk481060.Zbd, {
-      className: Chunk903163.noItemsCard,
+      className: Chunk336763.noItemsCard,
       type: Chunk481060.Zbd.Types.CUSTOM,
       children: (0, Chunk951288.jsxs)(Chunk600164.Z, {
         align: Chunk600164.Z.Align.CENTER,
         children: [(0, Chunk951288.jsx)(Chunk925329.Z, {
           game: null,
           size: Chunk925329.A.SMALL,
-          className: Chunk903163.noItemsIcon
+          className: Chunk336763.noItemsIcon
         }), (0, Chunk951288.jsx)("span", {
-          className: Chunk903163.cardText,
+          className: Chunk336763.cardText,
           children: Chunk388032.intl.string(Chunk388032.t.xCRgr6)
         })]
       })
@@ -352,14 +352,14 @@ function $() {
       type: "subscription_settings_duplicate_subscriptions"
     })
   }, []), (0, Chunk951288.jsxs)("div", {
-    className: Chunk903163.duplicateSubscriptionsBanner,
+    className: Chunk336763.duplicateSubscriptionsBanner,
     children: [(0, Chunk951288.jsx)(Chunk481060.Mgn, {
       size: "custom",
       width: 20,
       height: 20,
       color: Chunk692547.Z.unsafe_rawColors.RED_360.css
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-      className: Chunk903163.duplicateSubscriptionsBannerText,
+      className: Chunk336763.duplicateSubscriptionsBannerText,
       variant: "text-sm/normal",
       children: Chunk388032.intl.format(Chunk388032.t["6eXiiI"], {
         helpCenterLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.NITRO)

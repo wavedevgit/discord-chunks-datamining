@@ -1,0 +1,69 @@
+/** Chunk was on 46746 **/
+/** chunk id: 51708, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => _
+});
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
+var Chunk755721 = require("./755721.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk100527 = require("./100527.js"),
+  Chunk906732 = require("./906732.jsx"),
+  Chunk436774 = require("./436774.jsx"),
+  Chunk104494 = require("./104494.js"),
+  Chunk639119 = require("./639119.js"),
+  Chunk767714 = require("./767714.jsx"),
+  Chunk74538 = require("./74538.js"),
+  Chunk156582 = require("./156582.jsx"),
+  Chunk474936 = require("./474936.js"),
+  Chunk137349 = require("./137349.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk46546 = require("./46546.js");
+
+function _(e) {
+  var t, n, _;
+  let {
+    onClose: v
+  } = e, {
+    analyticsLocations: j
+  } = (0, o.ZP)(s.Z.GO_LIVE_MODAL_V2), b = (0, d.N)(), y = (0, c.Ng)(), C = (null == b || null == (t = b.subscription_trial) ? true : t.sku_id) === h.Si.TIER_2 || (0, c.Wp)(y, h.Si.TIER_2), S = x.intl.string(p.default["+f+cqq"]);
+  return C && (null != b ? S = (0, f.Rt)({
+    intervalType: null == b || null == (n = b.subscription_trial) ? true : n.interval,
+    intervalCount: null == b || null == (_ = b.subscription_trial) ? true : _.interval_count
+  }) : null != y && (S = x.intl.formatToPlainString(x.t.bkQ4bG, {
+    percent: y.discount.amount
+  }))), (0, r.jsxs)("div", {
+    className: g.root,
+    children: [(0, r.jsxs)(l.Text, {
+      className: g.infoText,
+      variant: "text-xs/normal",
+      color: "always-white",
+      children: [(0, r.jsx)(l.mBM, {
+        size: "xxs",
+        color: "currentColor"
+      }), x.intl.format(x.t.sLJ3ER, {
+        onNitroClick: function() {
+          (0, m.E)({
+            analyticsLocation: j[0],
+            onClose: v
+          })
+        }
+      })]
+    }), (0, r.jsx)(u.Z, {
+      className: g.ctaButton,
+      iconClassName: g.premiumIcon,
+      size: i.zx.Sizes.TINY,
+      color: i.zx.Colors.BRAND_INVERTED,
+      subscriptionTier: h.Si.TIER_2,
+      buttonShineClassName: g.premiumShine,
+      iconColor: a.JX.PREMIUM_TIER_2,
+      onClick: () => {
+        v()
+      },
+      textOptions: {
+        subscribeText: S,
+        textClassName: g.ctaButtonText
+      }
+    })]
+  })
+}

@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk580309 = require("./580309.js");
+  Chunk813720 = require("./813720.js");
 let c = e => {
   switch (e) {
     case "new":

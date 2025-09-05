@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk81272 = require("./81272.js");
+  Chunk512588 = require("./512588.js");
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -108,7 +108,7 @@ class C extends Chunk647438.PureComponent {
       isDetectingInput: i
     } = this.state;
     return (0, Chunk951288.jsx)(Chunk481060.R94, {
-      className: Chunk81272.micTestCaption,
+      className: Chunk512588.micTestCaption,
       type: Chunk481060.R94.Types.DESCRIPTION,
       children: require ? Chunk647438 ? module : exports : null
     })
@@ -135,22 +135,22 @@ class C extends Chunk647438.PureComponent {
     Chunk19780 && module && !Chunk46973 && this._micTestStop();
     let I = Chunk392711.length >= Chunk120356.length ? Chunk392711 : Chunk120356;
     return (0, Chunk951288.jsxs)("div", {
-      className: o()(Chunk81272.container, Chunk131951),
+      className: o()(Chunk512588.container, Chunk131951),
       children: [!Chunk393238 && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           tag: Chunk481060.RB0.H5,
-          className: Chunk81272.title,
+          className: Chunk512588.title,
           children: exports
         }), null != require && (0, Chunk951288.jsx)(Chunk481060.R94, {
           type: Chunk481060.R94.Types.DESCRIPTION,
-          className: Chunk81272.description,
+          className: Chunk512588.description,
           children: require
         })]
       }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk81272.micTest,
+        className: Chunk512588.micTest,
         children: [!Chunk393238 && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
           children: [(0, Chunk951288.jsxs)("div", {
-            className: Chunk81272.buttonSizer,
+            className: Chunk512588.buttonSizer,
             "aria-hidden": true,
             children: [(0, Chunk951288.jsx)(Chunk755721.zx, {
               buttonRef: Chunk846027,
@@ -160,7 +160,7 @@ class C extends Chunk647438.PureComponent {
               color: Chunk442837,
               children: I
             }), (0, Chunk951288.jsx)("div", {
-              className: Chunk81272.buttonSizerSpacer
+              className: Chunk512588.buttonSizerSpacer
             })]
           }), (0, Chunk951288.jsx)(Chunk481060.ua7, {
             text: Chunk981631,

@@ -19,37 +19,37 @@ var Chunk399606 = require("./399606.js"),
   Chunk946690 = require("./946690.jsx"),
   Chunk369954 = require("./369954.jsx"),
   Chunk292352 = require("./292352.js"),
-  Chunk345909 = require("./345909.js"),
+  Chunk412297 = require("./412297.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk862964 = require("./862964.js");
+  Chunk251214 = require("./251214.js");
 let y = () => {
   let e = (0, Chunk631885.mq)(Chunk292352.ne.ACTIVE),
     t = module.length > 0,
     n = (0, Chunk277537.PO)("family_center_activity_page"),
     y = (0, Chunk780985.cz)(),
     O = (0, Chunk399606.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
-    v = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk345909.default["5RZ8Tk"]), Chunk388032.intl.string(Chunk345909.default.bmhCnJ)),
-    I = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk345909.default.XKnFFh), Chunk388032.intl.string(Chunk345909.default["68zfxM"])),
-    T = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk345909.default["Rm/6a2"]), Chunk388032.intl.string(Chunk345909.default["1xPTwM"]));
+    v = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk412297.default["5RZ8Tk"]), Chunk388032.intl.string(Chunk412297.default.bmhCnJ)),
+    I = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk412297.default.XKnFFh), Chunk388032.intl.string(Chunk412297.default["68zfxM"])),
+    T = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk412297.default["Rm/6a2"]), Chunk388032.intl.string(Chunk412297.default["1xPTwM"]));
   return true === O ? null : (0, Chunk951288.jsxs)("div", {
-    className: Chunk862964.container,
+    className: Chunk251214.container,
     children: [require && exports ? null : (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)("div", {
-        className: Chunk862964.banner,
+        className: Chunk251214.banner,
         children: (0, Chunk951288.jsx)(Chunk552045.Z, {})
       }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk862964.featureCards,
+        className: Chunk251214.featureCards,
         children: [(0, Chunk951288.jsx)(Chunk946690.Z, {
           icon: Chunk481060.eQA,
-          header: Chunk388032.intl.string(Chunk345909.default["001l3t"]),
+          header: Chunk388032.intl.string(Chunk412297.default["001l3t"]),
           description: v
         }), (0, Chunk951288.jsx)(Chunk946690.Z, {
           icon: Chunk481060.tEF,
-          header: Chunk388032.intl.string(Chunk345909.default.yipAeH),
+          header: Chunk388032.intl.string(Chunk412297.default.yipAeH),
           description: I
         }), (0, Chunk951288.jsx)(Chunk946690.Z, {
           icon: Chunk481060.IkH,
-          header: Chunk388032.intl.string(Chunk345909.default.hhOuMT),
+          header: Chunk388032.intl.string(Chunk412297.default.hhOuMT),
           description: T
         })]
       })]

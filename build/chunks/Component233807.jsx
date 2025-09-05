@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk823385 = require("./823385.js"),
   Chunk620481 = require("./620481.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk727081 = require("./727081.js");
+  Chunk590075 = require("./590075.js");
 let x = (0, Chunk972959.H)(() => ({
   includeFrecency: true,
   includeFriends: true,
@@ -154,18 +154,18 @@ function v() {
   return Chunk647438.useEffect(() => {
     if (module) return Chunk823385.Z.addChangeListener(v), () => Chunk823385.Z.removeChangeListener(v)
   }, [v, module]), (0, Chunk951288.jsxs)(Chunk481060.zJl, {
-    className: Chunk727081.panel,
+    className: Chunk590075.panel,
     children: [(0, Chunk951288.jsxs)(Chunk481060.hjN, {
       title: "Debug Logs Session",
       tag: Chunk481060.RB0.H3,
-      className: Chunk727081.panelGroup,
+      className: Chunk590075.panelGroup,
       children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.geA.DESCRIPTION,
-        className: Chunk727081.subtitle,
+        className: Chunk590075.subtitle,
         children: "Click to emit debug logs as you search in the Quick Switcher. Includes your search term and all results. For each result, includes the record id, associated names, and frecency scores."
       }), (0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.geA.DESCRIPTION,
-        className: Chunk727081.subtitle,
+        className: Chunk590075.subtitle,
         children: "When you are done, please remember to upload the logs."
       }), (0, Chunk951288.jsxs)(Chunk481060.hE2, {
         children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
@@ -179,10 +179,10 @@ function v() {
     }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
       title: "Debug Logs Snapshot",
       tag: Chunk481060.RB0.H3,
-      className: Chunk727081.panelGroup,
+      className: Chunk590075.panelGroup,
       children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.geA.DESCRIPTION,
-        className: Chunk727081.subtitle,
+        className: Chunk590075.subtitle,
         children: "Uploading a snapshot of the client state can help us figure out what exactly is wrong with your search. You can opt out of uploading certain logs, but it may make it more difficult to debug your issue."
       }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
         value: exports,

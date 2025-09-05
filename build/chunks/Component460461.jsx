@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 54052 **/
 /** chunk id: 460461, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   J: () => P,
@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk465520 = require("./465520.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk539981 = require("./539981.js");
+  Chunk390474 = require("./390474.js");
 let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
   P = () => {
     let {
@@ -176,28 +176,28 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
         n[e] = t, B(n)
       };
     return (0, Chunk951288.jsx)("div", {
-      className: Chunk539981.settingsColumn,
+      className: Chunk390474.settingsColumn,
       children: (0, Chunk951288.jsx)("div", {
-        className: Chunk539981.settingsContainer,
+        className: Chunk390474.settingsContainer,
         children: (0, Chunk951288.jsx)(Chunk481060.w0Z, {
-          className: Chunk539981.settingsScroller,
+          className: Chunk390474.settingsScroller,
           children: (0, Chunk951288.jsx)("main", {
             ref: exports,
-            className: Chunk539981.settingsContent,
+            className: Chunk390474.settingsContent,
             children: (0, Chunk951288.jsx)(Chunk481060.JcV, {
               containerRef: exports,
               children: (0, Chunk951288.jsxs)("div", {
-                className: Chunk539981.container,
+                className: Chunk390474.container,
                 children: [(0, Chunk951288.jsxs)(Chunk481060.hjN, {
-                  className: Chunk539981.mainContent,
+                  className: Chunk390474.mainContent,
                   title: (0, Chunk951288.jsxs)("div", {
                     children: [Chunk388032.intl.string(Chunk388032.t.kGlQGB), " ", (0, Chunk951288.jsx)(Chunk688465.Z, {
-                      className: Chunk539981.betaTag
+                      className: Chunk390474.betaTag
                     })]
                   }),
                   tag: Chunk481060.RB0.H1,
                   children: [(0, Chunk951288.jsxs)(Chunk481060.R94, {
-                    className: Chunk539981.tabMainDescription,
+                    className: Chunk390474.tabMainDescription,
                     type: Chunk481060.geA.DESCRIPTION,
                     children: [Chunk388032.intl.format(Chunk388032.t["+ScrMT"], {
                       discordURL: window.GLOBAL_ENV.MARKETING_ENDPOINT
@@ -208,15 +208,15 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                     if (!D.isPublished || null == A) return;
                     let e = T + A;
                     return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-                      className: Chunk539981.noDividerFormSection,
+                      className: Chunk390474.noDividerFormSection,
                       children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-                        className: Chunk539981.formTitle,
+                        className: Chunk390474.formTitle,
                         children: Chunk388032.intl.string(Chunk388032.t.safBZ2)
                       }), (0, Chunk951288.jsx)(Chunk484614.Z, {
                         value: module
                       }), (0, Chunk951288.jsx)("div", {
                         "data-button-hoisted-classname-wrapper": true,
-                        className: Chunk539981.viewPageButton,
+                        className: Chunk390474.viewPageButton,
                         children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
                           variant: "primary",
                           size: "sm",
@@ -226,16 +226,16 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       })]
                     })
                   })(), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-                    className: Chunk539981.divider
+                    className: Chunk390474.divider
                   }), (() => {
                     if (null != Chunk852860) return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
                       children: [(0, Chunk951288.jsxs)(Chunk481060.hjN, {
                         children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-                          className: Chunk539981.formTitle,
+                          className: Chunk390474.formTitle,
                           children: Chunk388032.intl.string(Chunk388032.t.GjPpSk)
                         }), (0, Chunk951288.jsx)(Chunk481060.R94, {
                           type: Chunk481060.geA.DESCRIPTION,
-                          className: Chunk539981.description,
+                          className: Chunk390474.description,
                           children: Chunk388032.intl.string(Chunk388032.t.MVXonJ)
                         })]
                       }), (0, Chunk951288.jsx)(Chunk718157.E, {
@@ -243,9 +243,9 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         guildMetadata: D,
                         isDisabled: !R
                       }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-                        className: Chunk539981.noDividerFormSection,
+                        className: Chunk390474.noDividerFormSection,
                         children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-                          className: Chunk539981.formTitle,
+                          className: Chunk390474.formTitle,
                           children: Chunk388032.intl.string(Chunk388032.t.oOPlPD)
                         }), (0, Chunk951288.jsx)(Chunk450474.Z, {
                           guild: Chunk852860,
@@ -254,24 +254,24 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         })]
                       }), (null == z ? true : z.category) != null ? (0, Chunk951288.jsx)(Chunk481060.Text, {
                         color: "text-danger",
-                        className: Chunk539981.error,
+                        className: Chunk390474.error,
                         variant: "text-sm/normal",
                         children: z.category
                       }) : null]
                     })
                   })(), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-                    className: Chunk539981.divider
+                    className: Chunk390474.divider
                   }), (() => {
                     if (null != Chunk852860) return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
                       children: [(0, Chunk951288.jsxs)(Chunk481060.hjN, {
-                        className: Chunk539981.twoColumnFormSection,
+                        className: Chunk390474.twoColumnFormSection,
                         children: [(0, Chunk951288.jsxs)("div", {
                           children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-                            className: Chunk539981.formTitle,
+                            className: Chunk390474.formTitle,
                             children: Chunk388032.intl.string(Chunk388032.t["8bT/Cg"])
                           }), (0, Chunk951288.jsx)(Chunk481060.R94, {
                             type: Chunk481060.geA.DESCRIPTION,
-                            className: Chunk539981.formDescription,
+                            className: Chunk390474.formDescription,
                             children: Chunk388032.intl.string(Chunk388032.t.WCWT7O)
                           }), (0, Chunk951288.jsxs)(Chunk755721.zx, {
                             size: Chunk755721.zx.Sizes.SMALL,
@@ -291,7 +291,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                           disabled: !R,
                           onChange: W,
                           hint: Chunk388032.intl.string(Chunk388032.t.uPvxqK),
-                          imageClassName: Chunk539981.imageUploaderInnerSquare,
+                          imageClassName: Chunk390474.imageUploaderInnerSquare,
                           hideSize: true
                         })]
                       }), (null == z ? true : z.discovery_splash) != null ? (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -301,13 +301,13 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       }) : null]
                     })
                   })(), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-                    className: Chunk539981.divider
+                    className: Chunk390474.divider
                   }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
                     children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-                      className: Chunk539981.formTitle,
+                      className: Chunk390474.formTitle,
                       children: Chunk388032.intl.string(Chunk388032.t["RSfm+v"])
                     }), (0, Chunk951288.jsx)(Chunk481060.R94, {
-                      className: Chunk539981.description,
+                      className: Chunk390474.description,
                       type: Chunk481060.geA.DESCRIPTION,
                       children: Chunk388032.intl.string(Chunk388032.t.IBi6h4)
                     }), (0, Chunk951288.jsx)(Chunk481060.Kx8, {
@@ -323,7 +323,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       disabled: !R
                     })]
                   }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-                    className: Chunk539981.divider
+                    className: Chunk390474.divider
                   }), (() => {
                     if (null == D) return null;
                     let e = 0 === D.reasonsToJoin.length ? [, , , , ].fill({
@@ -332,14 +332,14 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                     }) : D.reasonsToJoin;
                     return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
                       children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-                        className: Chunk539981.formTitle,
+                        className: Chunk390474.formTitle,
                         children: Chunk388032.intl.string(Chunk388032.t.vUmXsb)
                       }), (0, Chunk951288.jsx)(Chunk481060.R94, {
                         type: Chunk481060.geA.DESCRIPTION,
-                        className: Chunk539981.description,
+                        className: Chunk390474.description,
                         children: Chunk388032.intl.string(Chunk388032.t.esnBnZ)
                       }), (0, Chunk951288.jsx)("div", {
-                        className: Chunk539981.reasonToJoin,
+                        className: Chunk390474.reasonToJoin,
                         children: (0, Chunk951288.jsx)(Chunk190287.Z, {
                           reasonMinLength: 10,
                           reasonMaxLength: 128,
@@ -353,14 +353,14 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       }) : null]
                     })
                   })(), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-                    className: Chunk539981.divider
+                    className: Chunk390474.divider
                   }), (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
                     children: [(0, Chunk951288.jsxs)(Chunk481060.hjN, {
                       children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-                        className: Chunk539981.formTitle,
+                        className: Chunk390474.formTitle,
                         children: Chunk388032.intl.string(Chunk388032.t["lu+BmJ"])
                       }), (0, Chunk951288.jsx)(Chunk481060.R94, {
-                        className: Chunk539981.description,
+                        className: Chunk390474.description,
                         type: Chunk481060.geA.DESCRIPTION,
                         children: Chunk388032.intl.string(Chunk388032.t.ozSi8v)
                       }), (0, Chunk951288.jsx)(Chunk481060.Kx8, {
@@ -382,13 +382,13 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       children: z.about
                     }) : null]
                   }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-                    className: Chunk539981.divider
+                    className: Chunk390474.divider
                   }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
                     children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-                      className: Chunk539981.formTitle,
+                      className: Chunk390474.formTitle,
                       children: Chunk388032.intl.string(Chunk388032.t.V5mNyc)
                     }), (0, Chunk951288.jsx)(Chunk481060.R94, {
-                      className: Chunk539981.description,
+                      className: Chunk390474.description,
                       type: Chunk481060.geA.DESCRIPTION,
                       children: Chunk388032.intl.string(Chunk388032.t.d3kA9f)
                     }), D.socialLinks.map((e, t) => {
@@ -469,13 +469,13 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                     })]
                   }), D.isPublished && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
                     children: [(0, Chunk951288.jsx)(Chunk481060.$i$, {
-                      className: Chunk539981.divider
+                      className: Chunk390474.divider
                     }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
                       children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-                        className: Chunk539981.formTitle,
+                        className: Chunk390474.formTitle,
                         children: Chunk388032.intl.string(Chunk388032.t["5yF7e3"])
                       }), (0, Chunk951288.jsx)(Chunk481060.R94, {
-                        className: Chunk539981.description,
+                        className: Chunk390474.description,
                         type: Chunk481060.geA.DESCRIPTION,
                         children: Chunk388032.intl.string(Chunk388032.t.eOFvqa)
                       }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
@@ -492,7 +492,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                     children: z.is_published
                   }) : null]
                 }), !D.isPublished && (0, Chunk951288.jsx)("div", {
-                  className: Chunk539981.checklist,
+                  className: Chunk390474.checklist,
                   children: (0, Chunk951288.jsx)(Chunk970061.Z, {
                     title: Chunk388032.intl.string(Chunk388032.t["2kCyn5"]),
                     children: Y,

@@ -1,3 +1,0 @@
-/** Chunk was on 92940 **/
-/** chunk id: 864390, original params: e (module,exports,require) **/
-module.exports = JSON.parse('{"klSpfn":"Be\xe1ll\xedt\xe1sok szerkeszt\xe9se","NzUuLC":["+",[1,"count"]," ",[6,"count",{"one":["\xfczenet"],"other":["\xfczenet"]},0,"cardinal"]],"O+racX":"Nincsenek \xe9rtes\xedt\xe9sek.","5H2Jd3":"Az \xf6sszes megjelen\xedt\xe9se","Ko8NGh":"K\xf6nyvjelzők megjelen\xedt\xe9se","dcpdhI":"V\xe1lassz egy \xfczenetet, hogy oda tudj navig\xe1lni.","VAK+h4":"\xdcdv az \xc9rtes\xedt\xe9si k\xf6zpontban!"}')

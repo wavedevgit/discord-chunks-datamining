@@ -47,7 +47,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk217702 = require("./217702.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk430799 = require("./430799.js");
+  Chunk946232 = require("./946232.js");
 let W = new Set([Chunk981631.IyS.FIVE_G, Chunk981631.IyS.FOUR_G, Chunk981631.IyS.UNKNOWN]),
   z = {
     tension: 250,
@@ -58,7 +58,7 @@ let W = new Set([Chunk981631.IyS.FIVE_G, Chunk981631.IyS.FOUR_G, Chunk981631.IyS
 function K() {
   let e = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.getState().theme);
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk430799.pauseText,
+    className: Chunk946232.pauseText,
     style: {
       background: (0, Chunk780384.wj)(module) ? "rgba(0, 0, 0, 0.65)" : "rgba(255, 255, 255, 0.65)"
     },
@@ -162,7 +162,7 @@ function J(e) {
       timestampSec: 0,
       duration: 10
     }
-  }, c.X), eX = (0, T.km)(e => e.setVideoProgress), e$ = (0, T.km)(e => e.muted), eJ = (0, T.km)(e => e.volume), e0 = (0, f.e7)([C.Z], () => C.Z.useReducedMotion), e1 = (0, o.useRef)(null), e2 = (0, o.useRef)(null), e8 = o.useRef(true), e4 = (null == (t = J.userStatus) ? true : t.completedAt) != null, [e6, e7] = o.useState(null), [e3, e9] = o.useState(false), [e5, te] = o.useState(false), [tt, tn] = o.useState(null), tr = e4 ? null != (_ = null == (n = e1.current) ? true : n.duration) ? _ : 0 : Math.max(eK.maxTimestampSec, eT.progressSeconds), to = o.useMemo(() => (0, P.T)({
+  }, c.X), eX = (0, T.km)(e => e.setVideoProgress), e$ = (0, T.km)(e => e.muted), eJ = (0, T.km)(e => e.volume), e0 = (0, f.e7)([C.Z], () => C.Z.useReducedMotion), e1 = (0, o.useRef)(null), e2 = (0, o.useRef)(null), e8 = o.useRef(true), e6 = (null == (t = J.userStatus) ? true : t.completedAt) != null, [e4, e7] = o.useState(null), [e3, e9] = o.useState(false), [e5, te] = o.useState(false), [tt, tn] = o.useState(null), tr = e6 ? null != (_ = null == (n = e1.current) ? true : n.duration) ? _ : 0 : Math.max(eK.maxTimestampSec, eT.progressSeconds), to = o.useMemo(() => (0, P.T)({
     quest: J,
     location: q.dr.VIDEO_MODAL
   }), [J]), {
@@ -180,9 +180,9 @@ function J(e) {
       title: f ? s : l,
       subtitle: f ? c : i
     }
-  }(J), ti = e4 ? eK.timestampSec >= eK.duration ? 0 : eK.timestampSec : Math.max(eK.timestampSec, eT.progressSeconds);
+  }(J), ti = e6 ? eK.timestampSec >= eK.duration ? 0 : eK.timestampSec : Math.max(eK.timestampSec, eT.progressSeconds);
   (0, v.Ng)(() => {
-    e8.current && (e8.current = false, eB(g.Z.getEffectiveConnectionSpeed()), e4 && eK.timestampSec >= eK.duration && eX(J.id, 0, eK.duration))
+    e8.current && (e8.current = false, eB(g.Z.getEffectiveConnectionSpeed()), e6 && eK.timestampSec >= eK.duration && eX(J.id, 0, eK.duration))
   });
   let {
     videoVariant: ts,
@@ -256,7 +256,7 @@ function J(e) {
   }), tP = o.useCallback(e => {
     if (to.info("[QV] | updatePlayerState | playerState: ".concat(e)), eO(e), null != e1.current) switch (e) {
       case B.rq.PLAYING:
-        e1.current.paused && tv(e6), e7(null), e1.current.play();
+        e1.current.paused && tv(e4), e7(null), e1.current.play();
         break;
       case B.rq.PAUSED:
         e1.current.paused || tx(), e1.current.pause(), eY.current = false;
@@ -264,19 +264,19 @@ function J(e) {
       case B.rq.ENDED:
         tx(), eu(false)
     }
-  }, [tv, e6, tx, eu, to]);
+  }, [tv, e4, tx, eu, to]);
   o.useEffect(() => {
-    tC(e6)
-  }, [e6, tC]), o.useEffect(() => {
+    tC(e4)
+  }, [e4, tC]), o.useEffect(() => {
     eC && tE(ev, eS)
   }, [ev, eC, eS, tE]);
   let tD = o.useCallback(e => {
     var t;
-    e4 || (null == (t = J.userStatus) ? true : t.enrolledAt) == null || (to.info("[QV] sendServerProgressUpdate: ".concat(e)), (0, h.FI)(J, e)), tm()
-  }, [e4, J, to, tm]);
+    e6 || (null == (t = J.userStatus) ? true : t.enrolledAt) == null || (to.info("[QV] sendServerProgressUpdate: ".concat(e)), (0, h.FI)(J, e)), tm()
+  }, [e6, J, to, tm]);
   o.useEffect(() => {
-    eo !== m.Dvm.HIDDEN && eo !== m.Dvm.EXITING && eo !== m.Dvm.EXITED && (null == eo || !e_ || eE || e4) && (!eC || ev || e4) || null == e1.current || eS !== B.rq.PLAYING || (to.info("[QV] | Pausing video | playerState: ".concat(eS, ", parentTransitionState: ").concat(eo, ", visible: ").concat(eE, ", focused: ").concat(ev, ", isQuestCompleted: ").concat(e4)), tP(B.rq.PAUSED), e4 || e7(j.yE.LOST_FOCUS))
-  }, [eo, ev, eC, eE, e_, eS, e4, tP, tD, to]);
+    eo !== m.Dvm.HIDDEN && eo !== m.Dvm.EXITING && eo !== m.Dvm.EXITED && (null == eo || !e_ || eE || e6) && (!eC || ev || e6) || null == e1.current || eS !== B.rq.PLAYING || (to.info("[QV] | Pausing video | playerState: ".concat(eS, ", parentTransitionState: ").concat(eo, ", visible: ").concat(eE, ", focused: ").concat(ev, ", isQuestCompleted: ").concat(e6)), tP(B.rq.PAUSED), e6 || e7(j.yE.LOST_FOCUS))
+  }, [eo, ev, eC, eE, e_, eS, e6, tP, tD, to]);
   let [tR, tI] = o.useState(false), tN = o.useRef(null), tk = o.useRef(performance.now()), tA = o.useCallback(() => {
     null != tN.current && clearTimeout(tN.current), eS === B.rq.PLAYING && (tN.current = setTimeout(() => {
       eS === B.rq.PLAYING && tI(true)
@@ -422,7 +422,7 @@ function J(e) {
     }, [t_, J, el, ep, e1, tM, em, th, ei]),
     t0 = o.useMemo(() => (0, I.z0)(J, u.X.WATCH_VIDEO, I.n1.VIDEO, I.O.THUMBNAIL), [J]),
     t1 = o.useMemo(() => (0, I.z0)(J, u.X.WATCH_VIDEO, I.n1.VIDEO, I.O.CAPTION), [J]),
-    t2 = e4 || eK.maxTimestampSec >= (null != (k = null == (a = e1.current) ? true : a.currentTime) ? k : 0) + 1,
+    t2 = e6 || eK.maxTimestampSec >= (null != (k = null == (a = e1.current) ? true : a.currentTime) ? k : 0) + 1,
     t8 = o.useMemo(() => null === (0, I.z0)(J, u.X.WATCH_VIDEO, I.n1.VIDEO, I.O.TRANSCRIPT), [J]);
   return (0, r.jsx)(m.P3F, {
     className: Y.videoCont,
@@ -550,7 +550,7 @@ function J(e) {
       }), (eI || ek) && eS === B.rq.PLAYING && (0, r.jsx)(m.$jN, {
         type: m.$jN.Type.WANDERING_CUBES,
         className: Y.loadingSpinner
-      }), eS === B.rq.PAUSED && e6 === j.yE.LOST_FOCUS && (0, r.jsx)(K, {}), ec && eS !== B.rq.ENDED && (0, r.jsxs)(r.Fragment, {
+      }), eS === B.rq.PAUSED && e4 === j.yE.LOST_FOCUS && (0, r.jsx)(K, {}), ec && eS !== B.rq.ENDED && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(m.P3F, {
           onClick: () => eu(false),
           tabIndex: false,
@@ -623,7 +623,7 @@ function J(e) {
         children: [(0, r.jsx)(L.Z, {
           percent: ex,
           animate: true !== e8.current && !eD,
-          interactionEnabled: e4 && eG,
+          interactionEnabled: e6 && eG,
           backgroundColor: tL ? true : "rgba(0, 0, 0, 0.0)",
           preloadedBuffers: tL ? ew : true,
           duration: null != (F = null == (p = e1.current) ? true : p.duration) ? F : 1,

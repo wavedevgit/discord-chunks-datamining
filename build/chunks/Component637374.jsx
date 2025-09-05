@@ -40,7 +40,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk494452 = require("./494452.js");
+  Chunk584645 = require("./584645.js");
 
 function B(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -326,7 +326,7 @@ class W extends Chunk647438.Component {
         isHorizontal: require >= Chunk568836.aL
       });
     return (0, Chunk884697.mO)(module) ? (0, Chunk951288.jsx)("div", {
-      className: Chunk494452.collectiblesEmbedWrapper,
+      className: Chunk584645.collectiblesEmbedWrapper,
       children: this.renderEmbed()
     }) : this.renderEmbed()
   }

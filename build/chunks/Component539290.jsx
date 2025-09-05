@@ -15,10 +15,10 @@ var Chunk120356 = require("./120356.js"),
   Chunk410030 = require("./410030.js"),
   Chunk696936 = require("./696936.jsx"),
   Chunk903773 = require("./903773.jsx"),
-  Chunk672628 = require("./672628.js");
+  Chunk71025 = require("./71025.js");
 let _ = {
-  RIGHT: Chunk672628.horizontalStatusWarningBlock,
-  BOTTOM: Chunk672628.verticalStatusWarningBlock
+  RIGHT: Chunk71025.horizontalStatusWarningBlock,
+  BOTTOM: Chunk71025.verticalStatusWarningBlock
 };
 
 function p(e) {

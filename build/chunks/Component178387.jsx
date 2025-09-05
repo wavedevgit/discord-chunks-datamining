@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 54052 **/
 /** chunk id: 178387, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   I: () => x
@@ -18,7 +18,7 @@ var Chunk793030 = require("./793030.js"),
   Chunk888125 = require("./888125.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk884329 = require("./884329.js");
+  Chunk606335 = require("./606335.js");
 
 function x() {
   let {
@@ -33,7 +33,7 @@ function x() {
   return null == exports ? null : (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: module,
     children: (0, Chunk951288.jsxs)("main", {
-      className: Chunk884329.container,
+      className: Chunk606335.container,
       children: [(0, Chunk951288.jsx)(Chunk793030.X6, {
         variant: "heading-lg/semibold",
         color: "header-primary",
@@ -42,18 +42,18 @@ function x() {
         canManageGuild: x,
         premiumProgressBarEnabled: exports.premiumProgressBarEnabled
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk884329.divider
+        className: Chunk606335.divider
       }), (0, Chunk951288.jsx)(Chunk92533.A, {
         guild: exports,
         canManageGuild: x
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk884329.divider
+        className: Chunk606335.divider
       }), j ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [require && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
           children: [(0, Chunk951288.jsx)(Chunk464865.V, {
             guild: exports
           }), (0, Chunk951288.jsx)("div", {
-            className: Chunk884329.divider
+            className: Chunk606335.divider
           })]
         }), (0, Chunk951288.jsx)(Chunk249363.A, {
           guild: exports,
@@ -65,7 +65,7 @@ function x() {
           canManageGuild: x
         }), require && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
           children: [(0, Chunk951288.jsx)("div", {
-            className: Chunk884329.divider
+            className: Chunk606335.divider
           }), (0, Chunk951288.jsx)(Chunk464865.V, {
             guild: exports
           })]

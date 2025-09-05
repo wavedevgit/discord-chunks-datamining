@@ -8,7 +8,7 @@ require("./647438.js");
 var Chunk882037 = require("./882037.js"),
   Chunk853268 = require("./853268.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk197571 = require("./197571.js");
+  Chunk10198 = require("./10198.js");
 
 function a() {
   let {
@@ -19,7 +19,7 @@ function a() {
     value: exports,
     subText: Chunk388032.intl.string(Chunk388032.t["0p3R09"]),
     onChange: Chunk882037.ZJ,
-    marginTopStyle: Chunk197571.marginTop8,
+    marginTopStyle: Chunk10198.marginTop8,
     muted: true
   }) : null
 }

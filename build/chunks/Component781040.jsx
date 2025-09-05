@@ -14,7 +14,7 @@ var Chunk323946 = require("./323946.js"),
   Chunk872269 = require("./872269.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk176870 = require("./176870.js");
+  Chunk640962 = require("./640962.js");
 
 function p(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -64,7 +64,7 @@ let O = e => {
     })
   },
   y = () => (0, Chunk951288.jsxs)("div", {
-    className: Chunk176870.dragClickTooltipText,
+    className: Chunk640962.dragClickTooltipText,
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       children: Chunk388032.intl.format(Chunk388032.t["7cdwho"], {

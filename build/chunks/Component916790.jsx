@@ -25,15 +25,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk681619 = require("./681619.jsx"),
   Chunk621060 = require("./621060.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk687278 = require("./687278.js"),
-  Chunk451429 = require("./451429.js");
+  Chunk578970 = require("./578970.js"),
+  Chunk866403 = require("./866403.js");
 
 function O(e) {
   return parseFloat(e.toFixed(3))
 }
 let S = [{
   key: "store",
-  cellClassName: Chunk687278.actionColumn,
+  cellClassName: Chunk578970.actionColumn,
   render(e) {
     let {
       trace: t
@@ -42,7 +42,7 @@ let S = [{
   }
 }, {
   key: "time",
-  cellClassName: Chunk687278.totalTimeColumn,
+  cellClassName: Chunk578970.totalTimeColumn,
   render(e) {
     let {
       trace: t
@@ -188,7 +188,7 @@ function k(e) {
 }
 let R = [{
     key: "action",
-    cellClassName: Chunk687278.actionColumn,
+    cellClassName: Chunk578970.actionColumn,
     render(e) {
       let {
         actionLog: t
@@ -201,7 +201,7 @@ let R = [{
     }
   }, {
     key: "total time",
-    cellClassName: Chunk687278.totalTimeColumn,
+    cellClassName: Chunk578970.totalTimeColumn,
     render(e) {
       let {
         actionLog: t
@@ -210,7 +210,7 @@ let R = [{
     }
   }, {
     key: "timestamp",
-    cellClassName: Chunk687278.totalTimeColumn,
+    cellClassName: Chunk578970.totalTimeColumn,
     render(e) {
       let {
         actionLog: t
@@ -261,19 +261,19 @@ function Z() {
     O = Chunk647438.useMemo(() => Chunk981631 ? Chunk886118 : Chunk572004 ? c : Chunk913527, [Chunk913527, Chunk886118, Chunk981631, Chunk572004, c]);
   return (0, Chunk951288.jsxs)("div", {
     ref: module,
-    className: i()(Chunk451429.panel, Chunk687278.panel),
+    className: i()(Chunk866403.panel, Chunk578970.panel),
     children: [(0, Chunk951288.jsxs)("div", {
-      className: Chunk687278.toolbar,
+      className: Chunk578970.toolbar,
       children: [(0, Chunk951288.jsx)("div", {
         title: "Toggles the flow of Actions",
-        className: Chunk687278.pausedEvents,
+        className: Chunk578970.pausedEvents,
         children: (0, Chunk951288.jsx)(Chunk755721.T2, {
           checked: !Chunk572004,
           onChange: e => C(!e)
         })
       }), (0, Chunk951288.jsx)(Chunk481060.E1j, {
         size: "sm",
-        className: Chunk687278.searchBar,
+        className: Chunk578970.searchBar,
         query: exports,
         onChange: require,
         onClear: () => require(""),

@@ -45,8 +45,8 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk260539 = require("./260539.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk132825 = require("./132825.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk977150 = require("./977150.js"),
+  Chunk10198 = require("./10198.js");
 
 function W(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -193,7 +193,7 @@ class X extends(r = Chunk647438.PureComponent) {
     return (0, Chunk951288.jsxs)(Chunk388905.ZP, {
       className: module,
       children: [(0, Chunk951288.jsx)(Chunk388905.Hh, {}), (0, Chunk951288.jsx)(Chunk388905.Dx, {
-        className: Chunk197571.marginBottom8,
+        className: Chunk10198.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.S6RMND)
       }), (0, Chunk951288.jsx)(Chunk388905.DK, {
         children: Chunk388032.intl.string(Chunk388032.t.YZiJbm)
@@ -211,19 +211,19 @@ class X extends(r = Chunk647438.PureComponent) {
       children: [(0, Chunk951288.jsx)(Chunk388905.qE, {
         src: module.getAvatarURL(true, 100),
         size: Chunk481060.EFr.DEPRECATED_SIZE_100,
-        className: Chunk197571.marginBottom20
+        className: Chunk10198.marginBottom20
       }), (0, Chunk951288.jsx)(Chunk388905.Dx, {
-        className: Chunk197571.marginBottom8,
+        className: Chunk10198.marginBottom8,
         children: Chunk388032.intl.format(Chunk388032.t.ot19ho, {
           name: module.toString()
         })
       }), (0, Chunk951288.jsx)(Chunk388905.DK, {
-        className: Chunk197571.marginBottom40,
+        className: Chunk10198.marginBottom40,
         children: Chunk388032.intl.string(Chunk388032.t["2xkqzc"])
       }), (0, Chunk951288.jsxs)(Chunk388905.gO, {
         children: [(0, Chunk951288.jsx)(Chunk388905.zx, {
           onClick: () => exports(Chunk981631.Z5c.APP),
-          className: Chunk197571.marginBottom8,
+          className: Chunk10198.marginBottom8,
           children: Chunk388032.intl.format(Chunk388032.t.fohtv7, {
             name: module.toString()
           })
@@ -246,11 +246,11 @@ class X extends(r = Chunk647438.PureComponent) {
       className: module,
       children: (0, Chunk951288.jsxs)(Chunk481060.y5t, {
         component: (0, Chunk951288.jsx)(Chunk388905.Dx, {
-          className: Chunk197571.marginBottom8,
+          className: Chunk10198.marginBottom8,
           children: require
         }),
         children: [(0, Chunk951288.jsx)(Chunk388905.DK, {
-          className: Chunk197571.marginBottom20,
+          className: Chunk10198.marginBottom20,
           children: r
         }), (0, Chunk951288.jsxs)(Chunk388905.gO, {
           children: [(0, Chunk951288.jsx)(Chunk388905.zx, {
@@ -258,7 +258,7 @@ class X extends(r = Chunk647438.PureComponent) {
             type: "submit",
             children: Chunk388032.intl.string(Chunk388032.t.JhDw5u)
           }), (0, Chunk951288.jsx)("div", {
-            className: o()(Chunk197571.marginTop8, Chunk132825.needAccount),
+            className: o()(Chunk10198.marginTop8, Chunk977150.needAccount),
             children: Chunk388032.intl.format(Chunk388032.t.js2rr6, {
               onClick: this.handleCancelAccountDeletion
             })
@@ -275,9 +275,9 @@ class X extends(r = Chunk647438.PureComponent) {
     return (0, Chunk951288.jsxs)(Chunk388905.ZP, {
       className: module,
       children: [(0, Chunk951288.jsx)(Chunk588705.R, {}), (0, Chunk951288.jsxs)(Chunk388905.gO, {
-        className: Chunk197571.marginTop20,
+        className: Chunk10198.marginTop20,
         children: [(0, Chunk951288.jsx)(Chunk952802.Z, {
-          className: Chunk197571.marginBottom20,
+          className: Chunk10198.marginBottom20,
           alpha2: exports.alpha2,
           countryCode: exports.code.split(" ")[0],
           label: Chunk388032.intl.string(Chunk388032.t.tUjnxs),
@@ -294,7 +294,7 @@ class X extends(r = Chunk647438.PureComponent) {
           autoFocus: true,
           required: true
         }), (0, Chunk951288.jsx)(Chunk388905.II, {
-          className: Chunk197571.marginBottom20,
+          className: Chunk10198.marginBottom20,
           label: Chunk388032.intl.string(Chunk388032.t["CIGa+/"]),
           onChange: e => this.setState({
             password: e
@@ -306,7 +306,7 @@ class X extends(r = Chunk647438.PureComponent) {
           value: this.state.password,
           required: true
         }), (0, Chunk951288.jsx)(Chunk388905.zx, {
-          className: Chunk197571.marginBottom8,
+          className: Chunk10198.marginBottom8,
           type: "submit",
           disabled: true,
           children: Chunk388032.intl.string(Chunk388032.t.dKhVQE)
@@ -317,7 +317,7 @@ class X extends(r = Chunk647438.PureComponent) {
           children: Chunk388032.intl.string(Chunk388032.t.wWIufn)
         }), (0, Chunk951288.jsx)(Chunk388905.zx, {
           disabled: true,
-          className: Chunk197571.marginTop4,
+          className: Chunk10198.marginTop4,
           look: Chunk388905.zx.Looks.LINK,
           color: Chunk388905.zx.Colors.LINK,
           children: Chunk388032.intl.string(Chunk388032.t.tmE73t)
@@ -449,7 +449,7 @@ class X extends(r = Chunk647438.PureComponent) {
       showMobileWebHandoff: t
     } = this.props;
     return (0, Chunk951288.jsxs)("div", {
-      className: Chunk132825.__invalid_pageContainer,
+      className: Chunk977150.__invalid_pageContainer,
       children: [(0, Chunk951288.jsx)(Chunk388905.ZP, {
         onSubmit: this.handleLogin,
         tag: "form",

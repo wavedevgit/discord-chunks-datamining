@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk618541 = require("./618541.js"),
   Chunk975060 = require("./975060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk632236 = require("./632236.js");
+  Chunk81623 = require("./81623.js");
 class _ extends Chunk647438.PureComponent {
   componentDidMount() {
     null != this.props.paypalClient && Chunk873115.f6()
@@ -31,7 +31,7 @@ class _ extends Chunk647438.PureComponent {
       className: exports,
       title: Chunk388032.intl.string(Chunk388032.t.QQBAoq),
       children: (0, Chunk951288.jsx)("div", {
-        className: Chunk632236.inputWrapper,
+        className: Chunk81623.inputWrapper,
         children: (0, Chunk951288.jsx)(Chunk481060.oil, {
           leading: {
             type: "image",

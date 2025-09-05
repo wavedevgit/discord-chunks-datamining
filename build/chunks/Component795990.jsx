@@ -10,16 +10,16 @@ var Chunk481060 = require("./481060.js"),
   Chunk299560 = require("./299560.jsx"),
   Chunk286957 = require("./286957.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk958461 = require("./958461.js");
+  Chunk739854 = require("./739854.js");
 
 function u() {
   let {
     trackUserProfileEditAction: e
   } = (0, Chunk785717.KZ)();
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk958461.empty,
+    className: Chunk739854.empty,
     children: [(0, Chunk951288.jsxs)("div", {
-      className: Chunk958461.textContainer,
+      className: Chunk739854.textContainer,
       children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-md/medium",
         color: "header-primary",
@@ -30,7 +30,7 @@ function u() {
         children: Chunk388032.intl.string(Chunk388032.t.O9SQ1d)
       })]
     }), (0, Chunk951288.jsx)("ul", {
-      className: Chunk958461.widgetGrid,
+      className: Chunk739854.widgetGrid,
       "aria-label": Chunk388032.intl.string(Chunk388032.t["+EIBSE"]),
       children: Chunk286957.rR.map(t => (0, n.jsx)("li", {
         children: (0, n.jsx)(a.Z, {

@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk259580 = require("./259580.jsx"),
   Chunk991346 = require("./991346.js"),
-  Chunk321523 = require("./321523.js");
+  Chunk822214 = require("./822214.js");
 
 function u(e) {
   let {
@@ -98,12 +98,12 @@ function f() {
     module.children = exports, Chunk647438.push(...exports)
   }
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk321523.root,
+    className: Chunk822214.root,
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-lg/bold",
       children: "Settings Tree"
     }), (0, Chunk951288.jsx)("div", {
-      className: Chunk321523.tree,
+      className: Chunk822214.tree,
       children: exports.sort((e, t) => e.setting.localeCompare(t.setting)).map(e => (0, r.jsx)(d, {
         setting: e.setting,
         children: e.children,

@@ -1,4 +1,4 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 71832 **/
 /** chunk id: 153209, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Gp: () => _,
@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk709054 = require("./709054.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk407067 = require("./407067.js");
+  Chunk629775 = require("./629775.js");
 
 function O() {
   let {
@@ -57,7 +57,7 @@ function _() {
       size: "xs",
       color: "currentColor"
     }),
-    className: Chunk407067.controlButton,
+    className: Chunk629775.controlButton,
     onClick: () => {
       null != exports && (Chunk695346.d$.updateSetting(exports.id), Chunk626135.default.track(Chunk981631.rMx.NOTIFICATION_CENTER_ACTION, {
         action_type: Chunk497089.ud.MARK_ALL_READ

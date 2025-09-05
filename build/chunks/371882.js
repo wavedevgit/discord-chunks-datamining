@@ -1,15 +1,7 @@
-/** Chunk was on 88479 **/
-/** chunk id: 371882, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 371882, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
-  container: "container_c66e86",
-  action: "action_c66e86",
-  clickableAction: "clickableAction_c66e86",
-  actionInfo: "actionInfo_c66e86",
-  channelIcon: "channelIcon_c66e86",
-  channelIconContainer: "channelIconContainer_c66e86",
-  rulesIconContainer: "rulesIconContainer_c66e86",
-  rulesIcon: "rulesIcon_c66e86",
-  checkCircle: "checkCircle_c66e86",
-  checkCircleCompleted: "checkCircleCompleted_c66e86",
-  icon: "icon_c66e86"
+  menu: "menu__43313",
+  customMenuItem: "customMenuItem__43313"
 }

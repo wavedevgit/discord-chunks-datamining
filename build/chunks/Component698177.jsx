@@ -16,8 +16,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk388905 = require("./388905.jsx"),
   Chunk815660 = require("./815660.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk149715 = require("./149715.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk465106 = require("./465106.js"),
+  Chunk10198 = require("./10198.js");
 let x = () => {
   let [e, t] = Chunk647438.useState(""), [l, x] = Chunk647438.useState(""), [E, v] = Chunk647438.useState(false), [j, b] = Chunk647438.useState(false), [I, N] = Chunk647438.useState(null), [O, S] = Chunk647438.useState(null), y = (0, Chunk442837.e7)([Chunk541692.Z], () => Chunk541692.Z.getCountryCode()), C = y.code.split(" ")[0], A = async () => {
     try {
@@ -41,11 +41,11 @@ let x = () => {
     children: [(0, Chunk951288.jsx)(Chunk388905.Ee, {
       src: require("./292824.js")
     }), (0, Chunk951288.jsxs)(Chunk388905.Dx, {
-      className: s()(Chunk197571.marginTop20, Chunk149715.flex, Chunk149715.justifyCenter, Chunk149715.alignCenter),
+      className: s()(Chunk10198.marginTop20, Chunk465106.flex, Chunk465106.justifyCenter, Chunk465106.alignCenter),
       children: [Chunk388032.intl.string(Chunk388032.t.WWzQtb), (0, Chunk951288.jsx)(Chunk481060.owK, {
         size: "md",
         color: "currentColor",
-        className: Chunk197571.marginLeft8
+        className: Chunk10198.marginLeft8
       })]
     })]
   });
@@ -53,10 +53,10 @@ let x = () => {
     children: [(0, Chunk951288.jsx)(Chunk388905.Dx, {
       children: Chunk388032.intl.string(Chunk388032.t.o4JNrK)
     }), (0, Chunk951288.jsx)(Chunk388905.DK, {
-      className: Chunk197571.marginTop8,
+      className: Chunk10198.marginTop8,
       children: Chunk388032.intl.string(Chunk388032.t.y0tVbm)
     }), (0, Chunk951288.jsxs)(Chunk388905.gO, {
-      className: Chunk197571.marginTop20,
+      className: Chunk10198.marginTop20,
       children: [(0, Chunk951288.jsx)(Chunk952802.Z, {
         label: Chunk388032.intl.string(Chunk388032.t.eJnn09),
         alpha2: y.alpha2,
@@ -68,7 +68,7 @@ let x = () => {
         forceMode: Chunk742458.Nz.PHONE,
         error: I
       }), (0, Chunk951288.jsx)(Chunk388905.II, {
-        className: Chunk197571.marginTop20,
+        className: Chunk10198.marginTop20,
         label: Chunk388032.intl.string(Chunk388032.t.OdzNbm),
         value: Chunk120356,
         onChange: x,
@@ -80,7 +80,7 @@ let x = () => {
         onClick: A,
         children: Chunk388032.intl.string(Chunk388032.t["5b60go"])
       }), (0, Chunk951288.jsx)(Chunk388905.zx, {
-        className: Chunk197571.marginTop20,
+        className: Chunk10198.marginTop20,
         onClick: T,
         submitting: E,
         children: Chunk388032.intl.string(Chunk388032.t.i4jeWV)

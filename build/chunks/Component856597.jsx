@@ -11,13 +11,13 @@ var Chunk481060 = require("./481060.js"),
   Chunk132392 = require("./132392.js"),
   Chunk118589 = require("./118589.js"),
   Chunk345262 = require("./345262.js"),
-  Chunk241945 = require("./241945.js"),
+  Chunk753160 = require("./753160.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk133023 = require("./133023.js");
+  Chunk567666 = require("./567666.js");
 let p = {
-    [Chunk118589.UA.EMAIL_VERIFICATION]: Chunk388032.intl.string(Chunk241945.default.HC4IiY),
-    [Chunk118589.UA.REFRESH_APP]: Chunk388032.intl.string(Chunk241945.default.SzfxQ0),
-    [Chunk118589.UA.AGE_VERIFICATION]: Chunk388032.intl.string(Chunk241945.default["dSkE/P"])
+    [Chunk118589.UA.EMAIL_VERIFICATION]: Chunk388032.intl.string(Chunk753160.default.HC4IiY),
+    [Chunk118589.UA.REFRESH_APP]: Chunk388032.intl.string(Chunk753160.default.SzfxQ0),
+    [Chunk118589.UA.AGE_VERIFICATION]: Chunk388032.intl.string(Chunk753160.default["dSkE/P"])
   },
   m = function() {
     let {
@@ -27,14 +27,14 @@ let p = {
       direction: "vertical",
       justify: "space-between",
       padding: Chunk345262.h,
-      className: Chunk133023.container,
+      className: Chunk567666.container,
       children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         direction: "vertical",
         justify: "space-between",
         children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "display-md",
-          className: Chunk133023.title,
-          children: Chunk388032.intl.string(Chunk241945.default["/OpRAA"])
+          className: Chunk567666.title,
+          children: Chunk388032.intl.string(Chunk753160.default["/OpRAA"])
         }), (0, Chunk951288.jsx)(Chunk481060.Kqy, {
           direction: "vertical",
           justify: "space-between",
@@ -53,7 +53,7 @@ let p = {
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "text-secondary",
-        children: Chunk388032.intl.format(Chunk241945.default["0DHxys"], {
+        children: Chunk388032.intl.format(Chunk753160.default["0DHxys"], {
           handleLogOut: () => Chunk893776.Z.logout("safety_flows_sidebar")
         })
       })]

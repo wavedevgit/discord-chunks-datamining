@@ -14,7 +14,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk131951 = require("./131951.js"),
   Chunk36703 = require("./36703.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk505433 = require("./505433.js");
+  Chunk221529 = require("./221529.js");
 let _ = (0, Chunk313201.hQ)(),
   p = (0, Chunk313201.hQ)();
 
@@ -29,9 +29,9 @@ function h() {
     outputVolume: Chunk131951.Z.getOutputVolume()
   }));
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk505433.volumes,
+    className: Chunk221529.volumes,
     children: [(0, Chunk951288.jsx)("div", {
-      className: Chunk505433.column,
+      className: Chunk221529.column,
       children: (0, Chunk951288.jsx)(Chunk481060.xJW, {
         title: Chunk388032.intl.string(Chunk388032.t.OX2Bnp),
         titleId: _,
@@ -44,7 +44,7 @@ function h() {
         })
       })
     }), (0, Chunk951288.jsx)("div", {
-      className: Chunk505433.column,
+      className: Chunk221529.column,
       children: (0, Chunk951288.jsx)(Chunk481060.xJW, {
         title: Chunk388032.intl.string(Chunk388032.t.eATD2N),
         titleId: p,

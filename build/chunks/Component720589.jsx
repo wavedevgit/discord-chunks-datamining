@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk709054 = require("./709054.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk360242 = require("./360242.js");
+  Chunk558638 = require("./558638.js");
 
 function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -108,7 +108,7 @@ class O extends Chunk647438.PureComponent {
     }), c = 0 === Chunk442837.length, g = Chunk528963 ? Chunk388032.intl.string(Chunk388032.t["6b6QoK"]) : Chunk388032.intl.string(Chunk388032.t.Z0quyM);
     return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk481060.xJW, {
-        className: Chunk360242.bottomMargin,
+        className: Chunk558638.bottomMargin,
         title: Chunk388032.intl.string(Chunk388032.t.xFn72t),
         children: (0, Chunk951288.jsx)(Chunk481060.VcW, {
           value: require,
@@ -127,7 +127,7 @@ class O extends Chunk647438.PureComponent {
           })(e)
         })
       }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
-        className: Chunk360242.bottomMargin,
+        className: Chunk558638.bottomMargin,
         title: Chunk388032.intl.string(Chunk388032.t.PDn2fX),
         children: (0, Chunk951288.jsx)(Chunk481060.VcW, {
           value: Chunk120356,
@@ -149,7 +149,7 @@ class O extends Chunk647438.PureComponent {
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         color: Chunk528963 || null != i ? "text-danger" : "text-muted",
-        className: Chunk360242.bottomMargin,
+        className: Chunk558638.bottomMargin,
         children: null != i ? i : Chunk313201
       })]
     })
@@ -161,20 +161,20 @@ class O extends Chunk647438.PureComponent {
       }
     } = this.props;
     return (0, Chunk951288.jsxs)("div", {
-      className: Chunk360242.body,
+      className: Chunk558638.body,
       children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-lg/semibold",
         id: this.state.headerId,
         children: Chunk388032.intl.string(Chunk388032.t.mvPFbG)
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         color: "text-muted",
-        className: i()(Chunk360242.topMargin, {
-          [Chunk360242.formMargin]: !module
+        className: i()(Chunk558638.topMargin, {
+          [Chunk558638.formMargin]: !module
         }),
         variant: "text-sm/normal",
         children: Chunk388032.intl.string(Chunk388032.t.kbpkxM)
       }), module ? (0, Chunk951288.jsx)(Chunk481060.Text, {
-        className: i()(Chunk360242.formMargin, Chunk360242.topMargin),
+        className: i()(Chunk558638.formMargin, Chunk558638.topMargin),
         color: "text-danger",
         variant: "text-sm/normal",
         children: Chunk388032.intl.string(Chunk388032.t["DrNm//"])
@@ -189,23 +189,23 @@ class O extends Chunk647438.PureComponent {
       channel: r
     } = this.props, a = null != (e = (0, Chunk471445.KS)(Chunk647438)) ? module : Chunk481060.MqZ;
     return (0, Chunk951288.jsxs)(Chunk481060.xBx, {
-      className: Chunk360242.header,
+      className: Chunk558638.header,
       children: [(0, Chunk951288.jsx)(Chunk565138.Z, {
         guild: exports,
         size: Chunk565138.Z.Sizes.LARGE
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk360242.channelContainer,
+        className: Chunk558638.channelContainer,
         children: (0, Chunk951288.jsxs)("div", {
-          className: Chunk360242.channel,
+          className: Chunk558638.channel,
           children: [(0, Chunk951288.jsx)(Chunk120356, {
             size: "custom",
             color: "currentColor",
             width: 20,
             height: 20,
-            className: Chunk360242.channelIcon
+            className: Chunk558638.channelIcon
           }), (0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-md/medium",
-            className: Chunk360242.channelName,
+            className: Chunk558638.channelName,
             children: require
           })]
         })
@@ -221,7 +221,7 @@ class O extends Chunk647438.PureComponent {
       "aria-labelledby": this.state.headerId,
       parentComponent: "FollowModal",
       children: [this.renderHeader(), (0, Chunk951288.jsxs)(Chunk481060.hzk, {
-        className: Chunk360242.content,
+        className: Chunk558638.content,
         children: [this.renderBody(), this.renderForm()]
       }), (0, Chunk951288.jsx)(Chunk481060.mzw, {
         children: this.renderFooter()
