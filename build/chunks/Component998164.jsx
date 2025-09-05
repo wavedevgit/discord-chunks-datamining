@@ -117,15 +117,15 @@ let j = function(e) {
     var t;
     let r = null == (t = n[e]) ? true : t.channelId;
     null != r && (0, c.Hr)(r)
-  }, [n]), _ = n.map(e => f(p({}, e), {
+  }, [n]), v = n.map(e => f(p({}, e), {
     id: e.channelId
-  })), v = i.useCallback(e => {
+  })), _ = i.useCallback(e => {
     (0, c.hS)(e)
   }, []), {
     handleDragStart: O,
     handleDragReset: y,
     handleDragComplete: C
-  } = (0, s.Z)(_, v);
+  } = (0, s.Z)(v, _);
   return (0, r.jsxs)("div", {
     className: g.section,
     children: [n.map((e, n) => (0, r.jsx)(u.Z, {

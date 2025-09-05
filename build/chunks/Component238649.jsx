@@ -82,7 +82,6 @@ let N = (e, t) => {
                   enablePremiumBrandRefresh: true
                 })
               }), U && (0, r.jsx)(E.A, {
-                subscriptionTier: i,
                 cohort: G
               }), !U && (0, r.jsxs)("div", {
                 className: R ? C.singleButtonContainer : C.twoButtonContainer,

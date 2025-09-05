@@ -49,23 +49,23 @@ function h(e, t) {
 }
 
 function b(e) {
-  var t, n, b, x, j, _;
+  var t, n, b, x, j, v;
   let {
-    rule: v,
+    rule: _,
     onChangeRule: O
   } = e, y = i.useCallback(e => {
-    O(h(f({}, v), {
-      triggerMetadata: h(f({}, v.triggerMetadata), {
+    O(h(f({}, _), {
+      triggerMetadata: h(f({}, _.triggerMetadata), {
         keywordFilter: e
       })
     }))
-  }, [O, v]), C = i.useCallback(e => {
-    O(h(f({}, v), {
-      triggerMetadata: h(f({}, v.triggerMetadata), {
+  }, [O, _]), C = i.useCallback(e => {
+    O(h(f({}, _), {
+      triggerMetadata: h(f({}, _.triggerMetadata), {
         allowList: e
       })
     }))
-  }, [O, v]);
+  }, [O, _]);
   return (0, r.jsxs)("div", {
     className: p.cardContentsContainer,
     children: [(0, r.jsxs)(d.Z, {
@@ -74,16 +74,16 @@ function b(e) {
       children: [(0, r.jsx)(o.Z, {
         onChangeText: y,
         maxWordCount: m.RH,
-        initialValue: null == (t = v.triggerMetadata) ? true : t.keywordFilter
+        initialValue: null == (t = _.triggerMetadata) ? true : t.keywordFilter
       }), (0, r.jsx)(s.Z, {
-        rule: v,
+        rule: _,
         onChangeRule: O,
-        collapsed: (null == v || null == (n = v.triggerMetadata) ? true : n.regexPatterns) == null || (null == v || null == (b = v.triggerMetadata) ? true : b.regexPatterns.length) === 0
+        collapsed: (null == _ || null == (n = _.triggerMetadata) ? true : n.regexPatterns) == null || (null == _ || null == (b = _.triggerMetadata) ? true : b.regexPatterns.length) === 0
       }), (0, r.jsx)(l.Z, {
         onChange: C,
-        initialValue: null == (x = v.triggerMetadata) ? true : x.allowList,
+        initialValue: null == (x = _.triggerMetadata) ? true : x.allowList,
         maxWordCount: m.n4,
-        collapsed: (null == (j = v.triggerMetadata) ? true : j.allowList) == null || (null == (_ = v.triggerMetadata) ? true : _.allowList.length) === 0
+        collapsed: (null == (j = _.triggerMetadata) ? true : j.allowList) == null || (null == (v = _.triggerMetadata) ? true : v.allowList.length) === 0
       })]
     }), (0, r.jsx)(u.Z, {
       type: u.Z.Type.ARROW_DOWN
@@ -91,7 +91,7 @@ function b(e) {
       step: 2,
       header: g.intl.string(g.t["18TOiY"]),
       children: (0, r.jsx)(a.Z, {
-        rule: v,
+        rule: _,
         onChangeRule: O
       })
     }), (0, r.jsx)(u.Z, {
@@ -100,7 +100,7 @@ function b(e) {
       step: 3,
       header: g.intl.string(g.t.u5xPPT),
       children: (0, r.jsx)(c.Z, {
-        rule: v,
+        rule: _,
         onChangeRule: O,
         onlyRoles: true
       })

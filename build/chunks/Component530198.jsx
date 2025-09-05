@@ -39,7 +39,7 @@ function j(e) {
   return e
 }
 
-function _(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,7 +52,7 @@ function _(e, t) {
   }), e
 }
 
-function v(e) {
+function _(e) {
   var t, n;
   let i, {
     theme: l,
@@ -86,7 +86,7 @@ function v(e) {
       })
     }), (0, r.jsx)(u.ua7, {
       text: b.intl.string(b.t.N86XcH),
-      children: e => (0, r.jsx)("div", _(j({}, e), {
+      children: e => (0, r.jsx)("div", v(j({}, e), {
         children: (0, r.jsx)(u.hU, {
           "aria-label": b.intl.string(b.t.N86XcH),
           variant: "icon-only",
@@ -168,7 +168,7 @@ function y(e) {
     onConfigurationChange: p,
     locked: f,
     operator: j
-  } = e, _ = (null == c ? true : c.configuration) != null, v = null != (n = null == c ? true : c.index) ? n : false, [O, y] = function(e, t) {
+  } = e, v = (null == c ? true : c.configuration) != null, _ = null != (n = null == c ? true : c.index) ? n : false, [O, y] = function(e, t) {
     let n = null != t ? t : h.iO.GREATER_THAN,
       r = Math.round(Number(null != e ? e : 0));
     return n === h.iO.GREATER_THAN ? r = Math.max(1, r + 1) : n === h.iO.LESS_THAN && (r = Math.max(0, r - 1)), [r.toString(), n]
@@ -224,16 +224,16 @@ function y(e) {
                 connectionMetadataField: o,
                 operator: n,
                 value: t
-              }, v)
+              }, _)
             }
           },
-          disabled: f || !_
+          disabled: f || !v
         })
       })
     }), (0, r.jsx)("td", {
       children: (0, r.jsx)(d.T2, {
         id: I,
-        checked: _,
+        checked: v,
         onChange: e => {
           var t, n;
           let r = null;
@@ -691,13 +691,13 @@ function Z(e) {
       h = (0, r.jsx)(w, j({}, m));
       break;
     default:
-      h = (0, r.jsx)(R, _(j({}, m), {
+      h = (0, r.jsx)(R, v(j({}, m), {
         integration: c
       }))
   }
   return (0, r.jsxs)("div", {
     className: x.container,
-    children: [(0, r.jsx)(v, {
+    children: [(0, r.jsx)(_, {
       theme: s,
       platform: d,
       integration: c,

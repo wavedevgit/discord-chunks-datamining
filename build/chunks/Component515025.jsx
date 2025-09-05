@@ -24,11 +24,11 @@ function b(e) {
     canManageGuild: n
   } = e, b = t.features.has(m.oNc.INVITE_SPLASH), x = n && b, {
     analyticsLocations: j
-  } = (0, a.ZP)(), _ = i.useCallback(e => {
+  } = (0, a.ZP)(), v = i.useCallback(e => {
     d.Z.updateGuild({
       splash: e
     })
-  }, []), v = i.useCallback(e => {
+  }, []), _ = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, u.E6)({
       guild: t,
       analyticsLocations: j,
@@ -43,7 +43,7 @@ function b(e) {
       splash: e
     }) : null,
     disabled: !x,
-    onChange: _,
+    onChange: v,
     hint: f.intl.string(f.t.uPvxqK),
     enabled: x,
     maxFileSizeBytes: p.B,
@@ -53,7 +53,7 @@ function b(e) {
     "aria-hidden": true,
     tabIndex: false,
     className: h.upsell,
-    onClick: v,
+    onClick: _,
     children: O
   })
 }

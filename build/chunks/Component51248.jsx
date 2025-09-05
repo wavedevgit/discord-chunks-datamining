@@ -27,9 +27,9 @@ function m(e) {
     saveEditingRule: b
   } = (0, c.w)(), {
     updateRule: x
-  } = (0, o.pH)(t), j = null != f, _ = j && !(0, s.Vb)(f), v = j || p || _, O = async () => {
-    if (!p && !_) return m();
-    null == f || _ || x(f);
+  } = (0, o.pH)(t), j = null != f, v = j && !(0, s.Vb)(f), _ = j || p || v, O = async () => {
+    if (!p && !v) return m();
+    null == f || v || x(f);
     let e = n.find(e => {
       let {
         id: t
@@ -53,7 +53,7 @@ function m(e) {
   })), (0, r.jsx)(i.W, {
     component: "div",
     className: u.saveNoticeContainer,
-    children: v && (0, r.jsx)(l.oXn, {
+    children: _ && (0, r.jsx)(l.oXn, {
       children: (0, r.jsx)(a.Z, {
         submitting: g,
         disabled: g,

@@ -197,14 +197,14 @@ let W = e => {
 function K(e) {
   let {
     guild: t
-  } = e, [l, a] = (0, c.Wu)([v.Z], () => {
+  } = e, [l, a] = (0, c.Wu)([_.Z], () => {
     var e;
-    return [null != (e = v.Z.getSoundsForGuild(t.id)) ? e : L.Hy, v.Z.isFetchingSounds() || v.Z.isFetchingDefaultSounds()]
+    return [null != (e = _.Z.getSoundsForGuild(t.id)) ? e : L.Hy, _.Z.isFetchingSounds() || _.Z.isFetchingDefaultSounds()]
   }), {
     canCreateExpressions: s
   } = (0, j.XJ)(t), o = i.useRef(null), d = (0, f.ZP)(), u = t.premiumTier, g = (0, P.yw)(t, l, u);
   i.useEffect(() => {
-    (0, _.w)()
+    (0, v.w)()
   }, []);
   let p = i.useMemo(() => l.reduce((e, t) => (e[t.soundId] = new Audio((0, O.Z)(t.soundId)), e), {}), [l]),
     h = 0 === l.length && !a;
@@ -308,17 +308,17 @@ function Y(e) {
     user: f,
     userId: h,
     emojiId: x,
-    emojiName: v
+    emojiName: _
   } = t, {
     analyticsLocations: O
   } = (0, b.ZP)(), y = (0, c.e7)([I.default], () => null != f ? f : I.default.getUser(h), [h, f]), {
     canManageGuildExpression: E
-  } = (0, j.XJ)(o), S = i.useMemo(() => E(t), [t, E]), P = null != x || null != v, [w, Z] = i.useState(false), D = (0, C.z)(t, o.id);
+  } = (0, j.XJ)(o), S = i.useMemo(() => E(t), [t, E]), P = null != x || null != _, [w, Z] = i.useState(false), D = (0, C.z)(t, o.id);
   async function A() {
     if (!w) {
       Z(true);
       try {
-        await (0, _.AA)(o.id, d)
+        await (0, v.AA)(o.id, d)
       } catch (e) {
         Z(false)
       }
@@ -344,7 +344,7 @@ function Y(e) {
     }),
     children: [P ? (0, r.jsx)(p.Z, {
       emojiId: x,
-      emojiName: v,
+      emojiName: _,
       className: M.emoji
     }) : (0, r.jsx)(m.XBm, {
       size: "md",

@@ -77,14 +77,14 @@ function E(e) {
     setEditRoleId: C,
     selectedSection: N,
     setSelectedSection: E
-  }) : f ? (0, r.jsx)(v.Z, {
+  }) : f ? (0, r.jsx)(_.Z, {
     setEditRoleId: C,
     guild: n,
     everyoneRole: c,
     otherRoles: g,
     setSelectedSection: E,
     refToScroller: t
-  }) : (0, r.jsx)(_.Z, {
+  }) : (0, r.jsx)(v.Z, {
     guild: n,
     everyoneRole: c,
     setEditRoleId: C

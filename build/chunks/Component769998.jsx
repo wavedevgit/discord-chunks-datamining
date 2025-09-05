@@ -25,13 +25,13 @@ function f(e) {
     guildId: h,
     toggled: b,
     onToggleAction: x
-  } = e, j = e => () => x(e), _ = (0, c.c)(n.type, n, f), v = null == (t = n.metadata) ? true : t.durationSeconds, O = null != v ? (0, m.L9)(v) : null, y = (0, i.e7)([o.Z, s.Z], () => o.Z.can(u.Plq.MODERATE_MEMBERS, s.Z.getGuild(h)), [h]);
-  if (null == _) return null;
+  } = e, j = e => () => x(e), v = (0, c.c)(n.type, n, f), _ = null == (t = n.metadata) ? true : t.durationSeconds, O = null != _ ? (0, m.L9)(_) : null, y = (0, i.e7)([o.Z, s.Z], () => o.Z.can(u.Plq.MODERATE_MEMBERS, s.Z.getGuild(h)), [h]);
+  if (null == v) return null;
   let {
     headerText: C,
     descriptionText: N,
     icon: E
-  } = _;
+  } = v;
   return (0, r.jsxs)("div", {
     className: p.actionContainer,
     children: [(0, r.jsx)("div", {

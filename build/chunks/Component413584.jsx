@@ -75,8 +75,8 @@ let k = "WELCOME_CHANNEL",
         welcomeChannel: o,
         onEdit: f,
         onChannelReorder: h,
-        isDropHovered: _,
-        index: v
+        isDropHovered: v,
+        index: _
       } = e,
       O = i.useRef(null),
       y = (0, u.e7)([N.Z], () => N.Z.getChannel(o.channel_id)),
@@ -103,7 +103,7 @@ let k = "WELCOME_CHANNEL",
         type: k,
         item: {
           channel: o,
-          index: v
+          index: _
         },
         end: (e, t) => {
           null == e || t.didDrop() || h(e.channel, null, true)
@@ -112,10 +112,10 @@ let k = "WELCOME_CHANNEL",
       [, U] = (0, d.L)({
         accept: k,
         hover: e => {
-          h(e.channel, v, false)
+          h(e.channel, _, false)
         },
         drop: e => {
-          h(e.channel, v, true)
+          h(e.channel, _, true)
         }
       });
     return i.useLayoutEffect(() => (G(U(O)), () => {
@@ -134,7 +134,7 @@ let k = "WELCOME_CHANNEL",
       className: D.warningIcon
     }), (0, r.jsxs)("div", {
       className: a()(D.welcomeChannel, {
-        [D.dragging]: _
+        [D.dragging]: v
       }),
       ref: O,
       "data-dnd-name": o.description,
@@ -148,7 +148,7 @@ let k = "WELCOME_CHANNEL",
             welcomeChannel: o,
             onChannelReorder: h,
             onShowDeleteModal: M,
-            index: v
+            index: _
           }))
         })
       },
@@ -268,8 +268,8 @@ let k = "WELCOME_CHANNEL",
         className: D.previewContainer,
         children: [(0, r.jsxs)("div", {
           className: D.welcomeHeader,
-          children: [(0, r.jsx)(_.Z, {
-            size: _.Z.Sizes.LARGER,
+          children: [(0, r.jsx)(v.Z, {
+            size: v.Z.Sizes.LARGER,
             className: D.icon,
             guild: t,
             animate: true,
@@ -280,7 +280,7 @@ let k = "WELCOME_CHANNEL",
             children: Z.intl.format(Z.t["0aydCA"], {
               guildName: t.name,
               guildNameHook: (e, n) => (0, r.jsxs)("span", {
-                children: [(0, r.jsx)(v.Z, {
+                children: [(0, r.jsx)(_.Z, {
                   guild: t,
                   className: D.headerGuildBadge,
                   flowerStarClassName: D.flowerStar

@@ -57,8 +57,8 @@ let h = [],
       id: e.channelId
     })), [b]), {
       handleDragStart: j,
-      handleDragReset: _,
-      handleDragComplete: v
+      handleDragReset: v,
+      handleDragComplete: _
     } = (0, s.Z)(x, c.lq), O = i.useCallback((e, n) => {
       let r = d.Z.getSettings();
       null != r && ((0, c.r2)(e), (0, c.oo)(t, r).then(() => {
@@ -83,8 +83,8 @@ let h = [],
         resourceChannel: e,
         index: n,
         onDragStart: j,
-        onDragReset: _,
-        onDragComplete: v
+        onDragReset: v,
+        onDragComplete: _
       }, e.channelId)), b.length < o.x3 && (0, r.jsxs)(a.P3F, {
         className: g.addActionItem,
         onClick: y,

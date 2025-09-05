@@ -183,7 +183,7 @@ function c(e, t) {
         }
       }), null != e && (e.preventDefault(), e.stopPropagation()), null == (t = i.current) || t.focus()
     }, [i, u]),
-    _ = r.useCallback(e => {
+    v = r.useCallback(e => {
       u(t => {
         let {
           tags: n
@@ -196,7 +196,7 @@ function c(e, t) {
         }
       })
     }, [u]),
-    v = r.useCallback(function(e) {
+    _ = r.useCallback(function(e) {
       let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
         r = !(arguments.length > 2) || true === arguments[2] || arguments[2];
       !(o.trim().length <= 0) && ((0, a.flushSync)(() => {
@@ -280,15 +280,15 @@ function c(e, t) {
       }), e.preventDefault(), e.stopPropagation())
     }, [l, i, u, c.length, o]),
     N = r.useCallback(e => {
-      e.relatedTarget !== e.currentTarget && v(e, false, false)
-    }, [v]);
+      e.relatedTarget !== e.currentTarget && _(e, false, false)
+    }, [_]);
   return {
     handlePasteEvent: p,
-    handleInputChange: _,
+    handleInputChange: v,
     handleKeyDown: r.useCallback(e => {
       let t = e.metaKey || e.ctrlKey;
-      "Meta" !== e.key && (s.ye.has(e.key) ? v(e) : "Backspace" === e.key ? O(e) : "Escape" === e.key ? j(e) : "a" === e.key && t ? C(e) : s.Bd.has(e.key) && t && y(e))
-    }, [v, O, j, C, y]),
+      "Meta" !== e.key && (s.ye.has(e.key) ? _(e) : "Backspace" === e.key ? O(e) : "Escape" === e.key ? j(e) : "a" === e.key && t ? C(e) : s.Bd.has(e.key) && t && y(e))
+    }, [_, O, j, C, y]),
     handleContainerKeyUp: r.useCallback(e => {
       if (document.activeElement !== l.current) return;
       let t = e.metaKey || e.ctrlKey;

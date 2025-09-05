@@ -75,9 +75,9 @@ function R(e) {
               }, "header"), (0, r.jsx)(o.hjN, {
                 children: (0, r.jsxs)("div", {
                   className: P.tableContainer,
-                  children: [(0, r.jsx)(v.Z, {
+                  children: [(0, r.jsx)(_.Z, {
                     guild: n
-                  }), (0, r.jsx)(_.Z, {
+                  }), (0, r.jsx)(v.Z, {
                     guild: n
                   }), A ? (0, r.jsxs)("div", {
                     className: P.mainTableContainer,

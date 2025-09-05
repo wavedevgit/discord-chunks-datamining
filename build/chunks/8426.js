@@ -6,7 +6,7 @@ require.d(exports, {
   To: () => I,
   XG: () => O,
   _N: () => f,
-  ad: () => _,
+  ad: () => v,
   bj: () => P,
   el: () => b,
   hS: () => j,
@@ -14,7 +14,7 @@ require.d(exports, {
   mM: () => N,
   oo: () => E,
   q6: () => T,
-  r2: () => v,
+  r2: () => _,
   vR: () => h
 }), require("./361932.js"), require("./187205.js");
 var Chunk392711 = require("./392711.js"),
@@ -65,7 +65,7 @@ function j(e) {
     actions: e
   })
 }
-async function _(e, t, n, r) {
+async function v(e, t, n, r) {
   if (!r) return Promise.resolve();
   try {
     let r = await l.tn.patch({
@@ -96,7 +96,7 @@ async function _(e, t, n, r) {
   }
 }
 
-function v(e) {
+function _(e) {
   a.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_ADD_RESOURCE_CHANNEL",
     resourceChannel: e

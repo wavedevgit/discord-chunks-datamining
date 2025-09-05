@@ -62,31 +62,31 @@ function C(e) {
   switch (n) {
     case j.x_.OPEN:
       return (0, l.jsxs)(l.Fragment, {
-        children: [null != o ? _.intl.formatToPlainString(_.t.I6YOjY, {
+        children: [null != o ? v.intl.formatToPlainString(v.t.I6YOjY, {
           payoutDate: o
-        }) : _.intl.string(_.t.G5ATX1), (0, l.jsx)(p.Z, {
-          className: v.statusScheduledIcon
+        }) : v.intl.string(v.t.G5ATX1), (0, l.jsx)(p.Z, {
+          className: _.statusScheduledIcon
         })]
       });
     case j.x_.CANCELED:
       return (0, l.jsxs)(l.Fragment, {
-        children: [_.intl.string(_.t["0SrNPz"]), (0, l.jsx)(u.k$p, {
+        children: [v.intl.string(v.t["0SrNPz"]), (0, l.jsx)(u.k$p, {
           size: "md",
           color: "currentColor",
-          className: v.statusErrorIcon
+          className: _.statusErrorIcon
         })]
       });
     case j.x_.PAYOUT_DEFERRED:
       if ((null == i ? true : i.includes(j.XL.PAYOUT_SEIZED)) === true) return (0, l.jsxs)(l.Fragment, {
-        children: [_.intl.string(_.t["0SrNPz"]), (0, l.jsx)(u.k$p, {
+        children: [v.intl.string(v.t["0SrNPz"]), (0, l.jsx)(u.k$p, {
           size: "md",
           color: "currentColor",
-          className: v.statusErrorIcon
+          className: _.statusErrorIcon
         })]
       });
       return (0, l.jsxs)(l.Fragment, {
-        children: [_.intl.string(_.t.OtZ5k5), (0, l.jsx)(f.Z, {
-          className: v.statusDeferredIcon
+        children: [v.intl.string(v.t.OtZ5k5), (0, l.jsx)(f.Z, {
+          className: _.statusDeferredIcon
         })]
       })
   }
@@ -100,18 +100,18 @@ function C(e) {
     case j.jw.CANCELED:
     case j.jw.ERROR:
       return (0, l.jsxs)(l.Fragment, {
-        children: [null != o ? _.intl.formatToPlainString(_.t.I6YOjY, {
+        children: [null != o ? v.intl.formatToPlainString(v.t.I6YOjY, {
           payoutDate: o
-        }) : _.intl.string(_.t.ubdQTk), (0, l.jsx)(p.Z, {
-          className: v.statusScheduledIcon
+        }) : v.intl.string(v.t.ubdQTk), (0, l.jsx)(p.Z, {
+          className: _.statusScheduledIcon
         })]
       });
     case j.jw.PAID:
       return (0, l.jsxs)(l.Fragment, {
-        children: [_.intl.string(_.t.eoSslJ), (0, l.jsx)(u.owK, {
+        children: [v.intl.string(v.t.eoSslJ), (0, l.jsx)(u.owK, {
           size: "md",
           color: "currentColor",
-          className: v.statusPaidIcon
+          className: _.statusPaidIcon
         })]
       });
     case j.jw.DEFERRED:
@@ -122,7 +122,7 @@ function C(e) {
         children: [g.Z.getStatusErrorText(r), (0, l.jsx)(u.k$p, {
           size: "md",
           color: "currentColor",
-          className: v.statusErrorIcon
+          className: _.statusErrorIcon
         })]
       })
   }
@@ -137,7 +137,7 @@ let N = (0, Chunk755930.i$)({
         children: e => (0, l.jsx)(u.d3s, O({
           size: "xs",
           color: "currentColor",
-          className: v.amountDisclaimer
+          className: _.amountDisclaimer
         }, e))
       });
       return (0, Chunk951288.jsxs)(Chunk755930.qN, {
@@ -185,7 +185,7 @@ let N = (0, Chunk755930.i$)({
         children: e => (0, l.jsx)(u.d3s, O({
           size: "xs",
           color: "currentColor",
-          className: v.statusDisclaimer
+          className: _.statusDisclaimer
         }, e))
       });
       return (0, Chunk951288.jsxs)(Chunk755930.qN, {
@@ -193,7 +193,7 @@ let N = (0, Chunk755930.i$)({
       })
     },
     renderContent: e => (0, l.jsx)(b.bL, {
-      className: v.statusCell,
+      className: _.statusCell,
       children: (0, l.jsx)(C, {
         item: e
       })

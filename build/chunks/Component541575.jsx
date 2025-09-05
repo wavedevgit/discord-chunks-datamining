@@ -54,17 +54,17 @@ let x = function(e) {
     guild: t,
     disabled: x,
     role: j
-  } = e, _ = (0, c.oC)(t.id, j), {
-    analyticsLocations: v
+  } = e, v = (0, c.oC)(t.id, j), {
+    analyticsLocations: _
   } = (0, a.ZP)(), O = t.features.has(m.oNc.ROLE_ICONS), y = e => {
     O || ((0, l.yw)(m.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
       location: b(h({}, e), {
         section: m.jXE.CUSTOM_ROLE_ICONS_TOOLTIP
       }),
       guild_id: null == t ? true : t.id,
-      location_stack: v
+      location_stack: _
     }), (0, d.Z)({
-      analyticsLocations: v,
+      analyticsLocations: _,
       analyticsSourceLocation: {
         page: m.ZY5.GUILD_SETTINGS,
         section: m.jXE.GUILD_ROLE_EDIT_UPSELL_MODAL,
@@ -98,7 +98,7 @@ let x = function(e) {
       className: f.rolePreviewArea,
       children: [(0, r.jsx)("div", {
         className: f.previewContainer,
-        children: null != _ ? (0, r.jsx)(s.Z, b(h({}, _), {
+        children: null != v ? (0, r.jsx)(s.Z, b(h({}, v), {
           className: f.roleIconPreview,
           enableTooltip: false
         })) : (0, r.jsx)(i.FmF, {
@@ -124,7 +124,7 @@ let x = function(e) {
         variant: "primary",
         disabled: x,
         text: p.intl.string(p.t.mD1oGB)
-      }), null != _ ? (0, r.jsx)(i.zxk, {
+      }), null != v ? (0, r.jsx)(i.zxk, {
         onClick: () => {
           (0, u._l)(j.id, null, null)
         },

@@ -26,13 +26,13 @@ function f(e) {
     canManageRoles: b,
     canManageBans: x,
     canAccessMembersPage: j,
-    canViewGuildAnalytics: _,
-    isOwner: v,
+    canViewGuildAnalytics: v,
+    isOwner: _,
     isGuildAdmin: O,
     canManageGuildExpressions: y
   } = e, C = () => (0, s.X$)({
     guild: c,
-    isOwner: v,
+    isOwner: _,
     canManageGuildRoleSubscriptions: (0, s.H2)(c),
     isMonetizationWaitlistEnabledForGuild: (0, r.mG)(c.id),
     isGuildEligibleForRoleSubscriptions: (0, a.kT)(c.id),
@@ -94,7 +94,7 @@ function f(e) {
     section: g,
     label: u.intl.string(u.t["5tbTdX"])
   }), E.push(m(d.pNK.SAFETY, N)), E.push(m(d.pNK.MODERATION, N)), E.push(m(d.pNK.AUDIT_LOG, N)), E.push(m(d.pNK.BANS, N)), E.push(m(d.pNK.GUILD_AUTOMOD, N)));
-  let S = c.features.has(d.oNc.COMMUNITY) && _,
+  let S = c.features.has(d.oNc.COMMUNITY) && v,
     T = C();
   return (f || S || T) && (E.push({
     section: p

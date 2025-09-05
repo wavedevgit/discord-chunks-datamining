@@ -23,13 +23,13 @@ function p(e) {
     triggerType: p,
     toggled: f,
     onToggleAction: h
-  } = e, b = e => () => h(e), x = (0, u.c)(n.type, n, p), j = null == (t = n.metadata) ? true : t.channelId, _ = (0, i.e7)([d.default, c.Z, o.Z], () => {
+  } = e, b = e => () => h(e), x = (0, u.c)(n.type, n, p), j = null == (t = n.metadata) ? true : t.channelId, v = (0, i.e7)([d.default, c.Z, o.Z], () => {
     let e = o.Z.getChannel(j);
     return null == e ? null : (0, s.F6)(e, d.default, c.Z)
   }, [j]);
   if (null == x) return null;
   let {
-    headerText: v,
+    headerText: _,
     descriptionText: O,
     icon: y
   } = x;
@@ -46,7 +46,7 @@ function p(e) {
       className: g.actionTextContainer,
       children: [(0, r.jsx)(a.X6q, {
         variant: "heading-sm/semibold",
-        children: v
+        children: _
       }), (0, r.jsx)(a.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
@@ -54,8 +54,8 @@ function p(e) {
       }), f && (0, r.jsxs)(a.Text, {
         color: "text-muted",
         variant: "text-xs/medium",
-        children: [null != _ && m.intl.format(m.t["8Sr/am"], {
-          channelName: _
+        children: [null != v && m.intl.format(m.t["8Sr/am"], {
+          channelName: v
         }), (0, r.jsx)(a.P3F, {
           onClick: b(true),
           className: g.editChannel,

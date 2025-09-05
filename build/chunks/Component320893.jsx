@@ -25,7 +25,7 @@ function j(e) {
   return (0, i.wj)(e) ? c.revenueSharePercentageDark : c.revenueSharePercentageLight
 }
 
-function _() {
+function v() {
   let e = (0, Chunk410030.ZP)(),
     t = {
       backgroundColor: (0, Chunk780384.wj)(module) ? "#2e3638" : "var(--background-base-low)"
@@ -53,7 +53,7 @@ function _() {
   })
 }
 
-function v() {
+function _() {
   let e = (0, Chunk410030.ZP)();
 
   function t(e) {
@@ -157,9 +157,9 @@ function O() {
       children: Chunk388032.intl.string(Chunk388032.t["9CdmS0"])
     }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
       size: 32
-    }), (0, Chunk951288.jsx)(_, {}), (0, Chunk951288.jsx)(Chunk481060.LZC, {
+    }), (0, Chunk951288.jsx)(v, {}), (0, Chunk951288.jsx)(Chunk481060.LZC, {
       size: 24
-    }), (0, Chunk951288.jsx)(v, {})]
+    }), (0, Chunk951288.jsx)(_, {})]
   })
 }
 

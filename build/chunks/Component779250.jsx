@@ -54,10 +54,10 @@ function G(e) {
   return e
 }
 let {
-  INVITE_OPTIONS_7_DAYS: L,
-  INVITE_OPTIONS_UNLIMITED: _
+  INVITE_OPTIONS_7_DAYS: _,
+  INVITE_OPTIONS_UNLIMITED: k
 } = Chunk971130.ZP;
-var k = ((l = k || {})[l.ENTITY = 0] = "ENTITY", l[l.SETTINGS = 1] = "SETTINGS", l[l.PREVIEW = 2] = "PREVIEW", l[l.SUCCESS = 3] = "SUCCESS", l);
+var L = ((l = L || {})[l.ENTITY = 0] = "ENTITY", l[l.SETTINGS = 1] = "SETTINGS", l[l.PREVIEW = 2] = "PREVIEW", l[l.SUCCESS = 3] = "SUCCESS", l);
 
 function M(e) {
   let {
@@ -135,24 +135,24 @@ function X(e) {
     createdEvent: b
   } = e, E = (0, m.Dt)(), N = i.useRef(n), O = !(0, a.isEqual)(N.current, n), P = i.useMemo(() => [{
     slideId: 0,
-    label: A.intl.string(A.t["56QlKS"]),
+    label: R.intl.string(R.t["56QlKS"]),
     valid: null == d.entity,
     userErrorMessage: d.entity
   }, {
     slideId: 1,
-    label: A.intl.string(A.t["w5/ntb"]),
+    label: R.intl.string(R.t["w5/ntb"]),
     valid: null == d.schedule && null == d.topic && (!c || O),
     userErrorMessage: d.schedule
   }, {
     slideId: 2,
-    label: A.intl.string(A.t["8aJzT0"]),
+    label: R.intl.string(R.t["8aJzT0"]),
     valid: true
-  }], [d, c, O]), w = Object.keys(k).length, D = (0, f.xt)(n), G = e => Math.max(0, Math.min(e, w - 1)), [L, _] = i.useState(+!!D), [X, W] = i.useState(false), z = i.useMemo(() => P.slice(0, L + 1).map(e => e.valid).every(Boolean), [P, L]), V = L >= P.length ? 3 : P[G(L)].slideId, U = 3 === V;
+  }], [d, c, O]), w = Object.keys(L).length, D = (0, f.xt)(n), G = e => Math.max(0, Math.min(e, w - 1)), [_, k] = i.useState(+!!D), [X, W] = i.useState(false), V = i.useMemo(() => P.slice(0, _ + 1).map(e => e.valid).every(Boolean), [P, _]), z = _ >= P.length ? 3 : P[G(_)].slideId, U = 3 === z;
   (0, C.l)(e => e.onUpdateCanCloseModal)(U);
   let F = (0, s.e7)([u.Z], () => u.Z.useReducedMotion),
     q = i.useRef(null),
     B = e => {
-      W(false), _(G(e))
+      W(false), k(G(e))
     },
     H = i.useRef(B);
   i.useEffect(() => {
@@ -161,13 +161,13 @@ function X(e) {
     (null == b ? true : b.id) != null && H.current(3)
   }, [null == b ? true : b.id]);
   let Y = () => {
-      z && (2 === V ? j() : U ? y() : B(L + 1))
+      V && (2 === z ? j() : U ? y() : B(_ + 1))
     },
     J = () => {
-      B(L - 1)
+      B(_ - 1)
     },
-    K = A.intl.string(A.t.PDTjLC);
-  return 2 === V && (K = c ? A.intl.string(A.t.e5VEcH) : A.intl.string(A.t["60lJ0N"])), (0, r.jsxs)(o.Y0X, {
+    K = R.intl.string(R.t.PDTjLC);
+  return 2 === z && (K = c ? R.intl.string(R.t.e5VEcH) : R.intl.string(R.t["60lJ0N"])), (0, r.jsxs)(o.Y0X, {
     transitionState: g,
     "aria-labelledby": E,
     size: o.CgR.DYNAMIC,
@@ -176,20 +176,20 @@ function X(e) {
     children: [!F && U ? (0, r.jsx)(M, {
       modal: q.current
     }) : null, (0, r.jsxs)(o.hzk, {
-      className: R.content,
+      className: A.content,
       scrollerRef: q,
       "data-migration-pending": true,
       children: [!U && (0, r.jsx)(x.Z, {
         steps: P.map(e => e.label),
-        stepIndex: L,
+        stepIndex: _,
         onClick: e => {
-          e < L ? J() : e > L && Y()
+          e < _ ? J() : e > _ && Y()
         }
       }), (0, r.jsxs)(o.MyZ, {
-        activeSlide: V,
+        activeSlide: z,
         width: 440,
         onSlideReady: e => {
-          W(e === V)
+          W(e === z)
         },
         children: [(0, r.jsx)(o.Mi4, {
           id: 0,
@@ -228,32 +228,32 @@ function X(e) {
         })]
       })]
     }), !U && (0, r.jsxs)(o.mzw, {
-      className: R.footer,
+      className: A.footer,
       "data-migration-pending": true,
       children: [(0, r.jsxs)("div", {
-        className: R.inline,
+        className: A.inline,
         children: [(0, r.jsx)(o.zxk, {
           variant: "secondary",
-          text: A.intl.string(A.t["ETE/oK"]),
+          text: R.intl.string(R.t["ETE/oK"]),
           onClick: y
         }), (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
-          className: R.button,
+          className: A.button,
           children: (0, r.jsx)(o.zxk, {
             variant: "primary",
             text: K,
             onClick: Y,
-            disabled: !z,
+            disabled: !V,
             loading: v
           })
         })]
-      }), 0 !== V && (0, r.jsx)("div", {
-        className: R.textButtonWrapper,
+      }), 0 !== z && (0, r.jsx)("div", {
+        className: A.textButtonWrapper,
         children: (0, r.jsx)(o.Avr, {
           variant: "secondary",
           size: "sm",
           onClick: J,
-          text: A.intl.string(A.t["13/7kZ"])
+          text: R.intl.string(R.t["13/7kZ"])
         })
       })]
     })]
@@ -275,8 +275,8 @@ function W(e) {
     [S] = i.useState((0, E.Ql)(d)),
     [T, Z] = i.useState(null),
     [I, {
-      loading: R,
-      error: k
+      loading: A,
+      error: L
     }] = (0, p.Z)(async () => {
       if (null != T) return;
       if (S && null != l) return await j.Z.saveEvent(l, h, t), u();
@@ -286,8 +286,8 @@ function W(e) {
         let n = (0, y.so)(e),
           l = null != (t = e.channel_id) ? t : null == x ? true : x.id;
         null != l && c.ZP.createInvite(l, {
-          max_age: L.value,
-          max_uses: _.value
+          max_age: _.value,
+          max_uses: k.value
         }, D.t4x.GUILD_EVENTS), n ? Z(e) : u()
       })(e.body), e
     }),
@@ -299,8 +299,8 @@ function W(e) {
     isEdit: S,
     formErrors: M,
     transitionState: a,
-    loading: R,
-    error: k,
+    loading: A,
+    error: L,
     onChange: e => {
       if (null != e.entityType) {
         var n;
@@ -318,16 +318,16 @@ function W(e) {
         return t => {
           var n, l;
           return (0, r.jsxs)(e, (n = G({}, t), l = l = {
-            header: A.intl.string(A.t.BW1Qoq),
-            confirmText: A.intl.string(A.t.e5VEcH),
-            cancelText: A.intl.string(A.t.oEAioK),
+            header: R.intl.string(R.t.BW1Qoq),
+            confirmText: R.intl.string(R.t.e5VEcH),
+            cancelText: R.intl.string(R.t.oEAioK),
             onConfirm: I,
             children: [(0, r.jsx)(o.Text, {
               variant: "text-md/normal",
-              children: A.intl.string(A.t.aNCYam)
+              children: R.intl.string(R.t.aNCYam)
             }), (0, r.jsx)("br", {}), (0, r.jsx)(o.Text, {
               variant: "text-md/normal",
-              children: A.intl.format(A.t.RWBa5e, {})
+              children: R.intl.format(R.t.RWBa5e, {})
             })]
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);

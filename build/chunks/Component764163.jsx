@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk693324 = require("./693324.js");
 
-function v(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -85,7 +85,7 @@ function y(e) {
     })
   }, [l, u]), j = i.useMemo(() => null == o && null == n.name ? null : function() {
     return (0, r.jsx)(d.Z, {
-      className: _.emoji,
+      className: v.emoji,
       emojiId: n.id,
       emojiName: n.name,
       animated: null == o ? true : o.animated
@@ -100,18 +100,18 @@ function y(e) {
       let {
         isShown: n
       } = t;
-      return (0, r.jsxs)("div", O(v({
+      return (0, r.jsxs)("div", O(_({
         ref: a,
-        className: _.emojiInputContainer
+        className: v.emojiInputContainer
       }, e), {
         children: [(0, r.jsx)(m.Z, {
-          className: _.emojiButton,
+          className: v.emojiButton,
           active: n,
           tabIndex: 0,
           renderButtonContents: j
         }), (0, r.jsx)(c.Text, {
           variant: "text-md/normal",
-          className: _.emojiText,
+          className: v.emojiText,
           children: y
         })]
       }))
@@ -131,16 +131,16 @@ function C(e) {
     onDelete: g,
     transitionState: p,
     onClose: f
-  } = e, h = (0, u.Dt)(), [b, x] = i.useState(null != (t = null == l ? true : l.description) ? t : ""), [_, v] = i.useState(() => ({
+  } = e, h = (0, u.Dt)(), [b, x] = i.useState(null != (t = null == l ? true : l.description) ? t : ""), [v, _] = i.useState(() => ({
     id: null == l ? true : l.emoji_id,
     name: null == l ? true : l.emoji_name
-  })), O = d && "" !== b && (null != _.id || null != _.name);
+  })), O = d && "" !== b && (null != v.id || null != v.name);
 
   function C(e) {
     e.preventDefault(), O && (m({
       description: b,
-      emojiId: _.id,
-      emojiName: _.name
+      emojiId: v.id,
+      emojiName: v.name
     }), f())
   }
   let N = [{
@@ -184,8 +184,8 @@ function C(e) {
           title: j.intl.string(j.t.sMOuub),
           children: (0, r.jsx)(y, {
             guildId: n,
-            emojiData: _,
-            onSelectEmoji: v
+            emojiData: v,
+            onSelectEmoji: _
           })
         })]
       })
@@ -230,7 +230,7 @@ function N(e) {
     descriptionPlaceholder: j.intl.string(j.t.J8O1Li),
     canSubmit: null != g,
     onSave: function(e) {
-      a()(null != g, "Cannot submit null channel"), s(O(v({}, e), {
+      a()(null != g, "Cannot submit null channel"), s(O(_({}, e), {
         channelId: g
       }))
     },
@@ -269,7 +269,7 @@ function E(e) {
     descriptionPlaceholder: j.intl.string(j.t.ucP4Tk),
     canSubmit: "" !== g,
     onSave: function(e) {
-      a()("" !== g, "Cannot submit empty name"), l(O(v({}, e), {
+      a()("" !== g, "Cannot submit empty name"), l(O(_({}, e), {
         name: g
       }))
     },

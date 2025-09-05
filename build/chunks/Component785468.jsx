@@ -1,7 +1,7 @@
 /** Chunk was on 61 **/
 /** chunk id: 785468, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => A
+  Z: () => R
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -206,7 +206,7 @@ function D(e) {
   })
 }
 
-function A(e) {
+function R(e) {
   let {
     guildId: t,
     guildEvent: r,

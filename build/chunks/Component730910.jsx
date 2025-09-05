@@ -121,12 +121,12 @@ function A(e) {
   }
   let Y = D === y.xh[y.xh.length - 1],
     q = async () => {
-      let e = v.Z.advancedMode;
+      let e = _.Z.advancedMode;
       if (L) try {
-        if (D === y.PG.DEFAULT_CHANNELS) await (0, h.DO)(t).then(() => e ? (0, _.rS)(t, {
+        if (D === y.PG.DEFAULT_CHANNELS) await (0, h.DO)(t).then(() => e ? (0, v.rS)(t, {
           ignoreDefaultPrompt: true
         }) : Promise.resolve());
-        else if (D === y.PG.CUSTOMIZATION_QUESTIONS) await (0, _.rS)(t, {
+        else if (D === y.PG.CUSTOMIZATION_QUESTIONS) await (0, v.rS)(t, {
           ignoreDefaultPrompt: true
         });
         else if (D === y.PG.HOME_SETTINGS) {

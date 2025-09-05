@@ -55,7 +55,7 @@ function C(e) {
   }), k = (0, s.cj)([x.Z], () => {
     var e;
     return null != (e = x.Z.errors[j]) ? e : y
-  }), [M, G] = i.useState(false), [U, B] = i.useState(false), F = null != (t = k.options) ? t : k.optionErrors.filter(f.lm)[0], H = k.config, z = l.options.length >= _.fY, W = (0, g.kl)(n.id, Array.from(R), [l]).length - R.size, V = i.useRef(null), K = i.useRef(j);
+  }), [M, G] = i.useState(false), [U, B] = i.useState(false), F = null != (t = k.options) ? t : k.optionErrors.filter(f.lm)[0], H = k.config, z = l.options.length >= v.fY, W = (0, g.kl)(n.id, Array.from(R), [l]).length - R.size, V = i.useRef(null), K = i.useRef(j);
   return (i.useEffect(() => {
     K.current = j
   }), i.useLayoutEffect(() => {
@@ -91,7 +91,7 @@ function C(e) {
       }), (0, r.jsx)(d.Text, {
         variant: "text-xs/semibold",
         color: "text-muted",
-        children: v.intl.format(v.t.yjS3zs, {
+        children: _.intl.format(_.t.yjS3zs, {
           index: j + 1
         })
       }), (0, r.jsx)(d.Text, {
@@ -108,7 +108,7 @@ function C(e) {
         })
       }), (0, r.jsx)(o.u, {
         asContainer: true,
-        text: v.intl.string(v.t["Ku+86e"]),
+        text: _.intl.string(_.t["Ku+86e"]),
         children: (0, r.jsx)("div", {
           className: O.closeIcon,
           children: (0, r.jsx)(d.hU, {
@@ -116,7 +116,7 @@ function C(e) {
             icon: d.XHJ,
             variant: "icon-only",
             onClick: () => (0, b.fi)(n, l.id),
-            "aria-label": v.intl.string(v.t["Ku+86e"])
+            "aria-label": _.intl.string(_.t["Ku+86e"])
           })
         })
       })]
@@ -146,7 +146,7 @@ function C(e) {
       }), (0, r.jsxs)(d.Kqy, {
         gap: 16,
         children: [(0, r.jsx)(d.xJW, {
-          title: v.intl.format(v.t.yjS3zs, {
+          title: _.intl.format(_.t.yjS3zs, {
             index: j + 1
           }),
           children: (0, r.jsx)(d.oil, {
@@ -155,20 +155,20 @@ function C(e) {
             onChange: e => (0, b.Kk)(n, l.id, {
               title: e
             }),
-            placeholder: v.intl.string(v.t.QMCuCg),
-            maxLength: _.iU,
+            placeholder: _.intl.string(_.t.QMCuCg),
+            maxLength: v.iU,
             error: k.title
           })
         }), (0, r.jsx)(N, {
           prompt: l,
           guild: n
         }), (0, r.jsxs)(d.xJW, {
-          title: z ? v.intl.formatToPlainString(v.t.AbvhZG, {
+          title: z ? _.intl.formatToPlainString(_.t.AbvhZG, {
             count: l.options.length,
-            total: _.qm
-          }) : v.intl.formatToPlainString(v.t.b7VxYW, {
+            total: v.qm
+          }) : _.intl.formatToPlainString(_.t.b7VxYW, {
             count: l.options.length,
-            total: _.qm
+            total: v.qm
           }),
           children: [(0, r.jsx)(E, {
             guild: n,
@@ -194,7 +194,7 @@ function C(e) {
             children: (0, r.jsx)(d.Text, {
               variant: "text-sm/normal",
               color: "interactive-normal",
-              children: v.intl.string(v.t.uCebZW)
+              children: _.intl.string(_.t.uCebZW)
             })
           }), l.inOnboarding ? (0, r.jsx)(c.$q, {
             size: 20,
@@ -207,9 +207,9 @@ function C(e) {
             children: (0, r.jsx)(d.Text, {
               variant: "text-sm/normal",
               color: "interactive-normal",
-              children: I ? v.intl.formatToPlainString(v.t["0re8T0"], {
+              children: I ? _.intl.formatToPlainString(_.t["0re8T0"], {
                 count: W
-              }) : v.intl.string(v.t.Ur8Vrq)
+              }) : _.intl.string(_.t.Ur8Vrq)
             })
           }) : null]
         }), (0, r.jsx)(d.P3F, {
@@ -222,7 +222,7 @@ function C(e) {
           })
         }), (0, r.jsx)(o.u, {
           asContainer: true,
-          text: v.intl.string(v.t["Ku+86e"]),
+          text: _.intl.string(_.t["Ku+86e"]),
           children: (0, r.jsx)("div", {
             className: O.closeIcon,
             children: (0, r.jsx)(d.hU, {
@@ -230,7 +230,7 @@ function C(e) {
               icon: d.XHJ,
               variant: "icon-only",
               onClick: () => (0, b.fi)(n, l.id),
-              "aria-label": v.intl.string(v.t["Ku+86e"])
+              "aria-label": _.intl.string(_.t["Ku+86e"])
             })
           })
         })]
@@ -267,10 +267,10 @@ function N(e) {
     children: [(0, r.jsx)(d.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
-      children: v.intl.string(v.t.ECnSLi)
+      children: _.intl.string(_.t.ECnSLi)
     }), (0, r.jsxs)("div", {
       className: O.examples,
-      children: [s(v.intl.string(v.t["7GZMJS"])), s(v.intl.string(v.t.nItydn)), s(v.intl.string(v.t.evuYbm)), s(v.intl.string(v.t.XWRuOj))]
+      children: [s(_.intl.string(_.t["7GZMJS"])), s(_.intl.string(_.t.nItydn)), s(_.intl.string(_.t.evuYbm)), s(_.intl.string(_.t.XWRuOj))]
     })]
   })
 }
@@ -301,7 +301,7 @@ function E(e) {
       onDragComplete: c,
       onDragReset: o,
       hasError: null != a.optionErrors[d]
-    }, e.id)), n.options.length < _.qm ? (0, r.jsx)(j.B, {
+    }, e.id)), n.options.length < v.qm ? (0, r.jsx)(j.B, {
       guild: t,
       prompt: n,
       promptIndex: i,

@@ -136,7 +136,7 @@ function k(e) {
     format: a
   } = (0, E.Z)(n.id), s = (0, y.YB)(n.id), c = i.useCallback(() => {
     var e;
-    return (null == s || null == (e = s.cover_image_asset) ? true : e.application_id) == null ? null : (0, v._W)(s.cover_image_asset.application_id, s.cover_image_asset, D)
+    return (null == s || null == (e = s.cover_image_asset) ? true : e.application_id) == null ? null : (0, _._W)(s.cover_image_asset.application_id, s.cover_image_asset, D)
   }, [s]), [m, h] = i.useState(a), [b, O] = i.useState(null != (t = null == s ? true : s.description) ? t : ""), [A, k] = i.useState(c), [M, G] = i.useState(null == s ? true : s.store_page_guild_products_default_sort), [U, B] = i.useState(null == s ? true : s.server_shop_tab_order), {
     loading: F,
     error: H,
@@ -157,7 +157,7 @@ function k(e) {
     $ = null != b && "" !== b && null != A;
   i.useEffect(() => {
     var e;
-    (null == s || null == (e = s.cover_image_asset) ? true : e.application_id) != null && k((0, v._W)(s.cover_image_asset.application_id, s.cover_image_asset, D))
+    (null == s || null == (e = s.cover_image_asset) ? true : e.application_id) != null && k((0, _._W)(s.cover_image_asset.application_id, s.cover_image_asset, D))
   }, [null == s ? true : s.cover_image_asset]);
   let ee = (0, C.mY)(),
     et = i.useMemo(() => T.kL.map(e => ({
@@ -231,7 +231,7 @@ function k(e) {
         className: w.formDescription,
         disabled: ee,
         children: P.intl.string(P.t.i2rCwc)
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(v.Z, {
         image: A,
         hint: W,
         showIcon: true,
@@ -248,11 +248,11 @@ function k(e) {
         size: 16
       }), (0, r.jsx)(j.Z, {
         onChange: Q,
-        buttonCTA: W,
         "aria-label": V,
         disabled: ee,
-        look: g.zx.Looks.OUTLINED,
-        color: g.zx.Colors.PRIMARY
+        text: W,
+        variant: "secondary",
+        size: "md"
       })]
     }), l ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(p.$i$, {

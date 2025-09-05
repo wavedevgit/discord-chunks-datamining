@@ -1,8 +1,8 @@
 /** Chunk was on 54052 **/
 /** chunk id: 975464, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  C: () => _,
-  Z: () => v
+  C: () => v,
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk581050 = require("./581050.js"),
   Chunk322001 = require("./322001.js");
 
-function _(e) {
+function v(e) {
   let {
     onboardingMarketing: t,
     onboardingMarketingError: n
@@ -60,7 +60,7 @@ function _(e) {
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     guild: t
   } = e, n = (0, u.Z)(t), {
@@ -68,7 +68,7 @@ function v(e) {
     eligibilityError: f,
     eligibility: h
   } = n, x = (0, c.j)(h), {
-    isLoading: v,
+    isLoading: _,
     error: O,
     creatorMonetizationOnboardingMarketing: y
   } = (0, d.Z)(t.id);
@@ -85,7 +85,7 @@ function v(e) {
     }
   }, {
     disableTrack: null == t.id || null == h
-  }), p || null == h || v) ? (0, r.jsx)(a.$jN, {}) : h.actionRequired ? (0, r.jsx)(b.Z, {
+  }), p || null == h || _) ? (0, r.jsx)(a.$jN, {}) : h.actionRequired ? (0, r.jsx)(b.Z, {
     guild: t
   }) : null != f ? (0, r.jsx)(m.Z, {
     children: f.message
@@ -94,7 +94,7 @@ function v(e) {
     children: [(0, r.jsx)(g.Z, {
       guild: t,
       monetizationEligibility: n
-    }), (0, r.jsx)(_, {
+    }), (0, r.jsx)(v, {
       onboardingMarketing: y,
       onboardingMarketingError: O
     })]

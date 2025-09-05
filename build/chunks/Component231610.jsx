@@ -70,7 +70,7 @@ function f() {
       }
     })
   }
-  let _ = (0, Chunk723047.mY)();
+  let v = (0, Chunk723047.mY)();
   return (0, Chunk951288.jsx)(Chunk783454.Z, {
     title: Chunk388032.intl.string(Chunk388032.t["Ah+sQ0"]),
     description: Chunk388032.intl.string(Chunk388032.t.ixbWiI),
@@ -79,19 +79,19 @@ function f() {
       gap: 24,
       children: [(0, Chunk951288.jsx)(Chunk481060.hjN, {
         title: Chunk388032.intl.string(Chunk388032.t["6OUqDQ"]),
-        disabled: _,
+        disabled: v,
         children: (0, Chunk951288.jsx)(Chunk619326.Z, {
           value: h,
           onChange: b,
-          disabled: _
+          disabled: v
         })
       }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
         title: Chunk388032.intl.string(Chunk388032.t["zn8/AQ"]),
-        disabled: _,
+        disabled: v,
         children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
           type: Chunk481060.R94.Types.DESCRIPTION,
           className: Chunk851016.formDescription,
-          disabled: _,
+          disabled: v,
           children: Chunk388032.intl.string(Chunk388032.t.AqHUra)
         }), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
           direction: "horizontal",
@@ -100,11 +100,11 @@ function f() {
             role: x,
             "aria-label": Chunk388032.intl.string(Chunk388032.t.mD1oGB),
             onClick: j,
-            disabled: _
+            disabled: v
           }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
             variant: "secondary",
             onClick: j,
-            disabled: _,
+            disabled: v,
             text: Chunk388032.intl.string(Chunk388032.t.mD1oGB)
           })]
         })]

@@ -219,7 +219,7 @@ class A extends Chunk647438.PureComponent {
     Chunk434404.Z.setSection(Chunk981631.pNK.SAFETY), (0, Chunk84613.K)(Chunk740903.u.DM_AND_SPAM_PROTECTION)
   }
   handleQueryChange(e) {
-    _.Z.setSearchQuery(e)
+    v.Z.setSearchQuery(e)
   }
   handleQueryClear() {
     Chunk434404.Z.setSearchQuery("")

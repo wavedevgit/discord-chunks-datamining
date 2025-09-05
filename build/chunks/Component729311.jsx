@@ -36,10 +36,10 @@ var Chunk951288 = require("./951288.js"),
 function w(e) {
   let {
     guild: t
-  } = e, s = (0, l.e7)([d.Z], () => d.Z.getEnabled(t.id)), f = (0, l.e7)([p.Z], () => p.Z.hasFetched(t.id)), h = (0, y.Z)(t), b = (0, l.e7)([_.Z], () => _.Z.editedDefaultChannelIds), x = h.filter(e => !b.has(e.id)), [v, O] = i.useState(false);
+  } = e, s = (0, l.e7)([d.Z], () => d.Z.getEnabled(t.id)), f = (0, l.e7)([p.Z], () => p.Z.hasFetched(t.id)), h = (0, y.Z)(t), b = (0, l.e7)([v.Z], () => v.Z.editedDefaultChannelIds), x = h.filter(e => !b.has(e.id)), [_, O] = i.useState(false);
   return (i.useEffect(() => {
     f || s || (0, g.S)(t.id)
-  }, [t.id, f, s]), v || 0 === x.length) ? null : (0, r.jsxs)("div", {
+  }, [t.id, f, s]), _ || 0 === x.length) ? null : (0, r.jsxs)("div", {
     className: T.recommendations,
     children: [(0, r.jsx)(a.Text, {
       variant: "text-md/medium",
@@ -163,17 +163,17 @@ function w(e) {
 function R(e) {
   let {
     saveOnClose: t = false
-  } = e, n = (0, l.e7)([x.Z], () => x.Z.getGuild()), s = (0, l.e7)([d.Z], () => d.Z.isLoading()), o = (0, l.e7)([h.ZP], () => h.ZP.getChannels(null == n ? true : n.id)), c = (0, l.e7)([f.Z], () => f.Z.getCategories(null == n ? true : n.id)), u = (0, l.e7)([O.Z], () => O.Z.advancedMode), m = i.useRef(null), [g, p] = i.useState(false), _ = i.useRef(n);
+  } = e, n = (0, l.e7)([x.Z], () => x.Z.getGuild()), s = (0, l.e7)([d.Z], () => d.Z.isLoading()), o = (0, l.e7)([h.ZP], () => h.ZP.getChannels(null == n ? true : n.id)), c = (0, l.e7)([f.Z], () => f.Z.getCategories(null == n ? true : n.id)), u = (0, l.e7)([O.Z], () => O.Z.advancedMode), m = i.useRef(null), [g, p] = i.useState(false), v = i.useRef(n);
   return (i.useEffect(() => {
-    _.current = n
+    v.current = n
   }), i.useEffect(() => {
     if (t) {
       let {
         current: e
-      } = _;
+      } = v;
       return () => {
         null != e && (0, j.DO)(e).then(() => {
-          u && (0, v.rS)(e, {
+          u && (0, _.rS)(e, {
             ignoreDefaultPrompt: true
           }).catch(() => {})
         }).catch(() => {})

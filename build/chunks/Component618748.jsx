@@ -112,7 +112,7 @@ function M(e) {
   return (0, s.P)(n), t = o ? a === w.KsC.ROLE_SUBSCRIPTION_EMOJI ? T.ue.EMOJIS : T.ue.TIERS : T.ue.PAYMENT, (0, r.jsx)(x.l, {
     guildId: n.id,
     refetchOnMount: true,
-    children: (0, r.jsx)(_.in, {
+    children: (0, r.jsx)(v.in, {
       guildId: n.id,
       children: (0, r.jsx)(T.M7, {
         initialTab: t,
@@ -135,7 +135,7 @@ function G(e) {
       currentTab: g,
       setCurrentTab: j
     } = (0, T.dw)(),
-    _ = (0, x.f)(),
+    v = (0, x.f)(),
     C = (0, i.e7)([h.default], () => h.default.getCurrentUser()),
     I = (0, O.Z)(n.id),
     Z = null != n && (0, p.eM)(n, C),
@@ -150,9 +150,9 @@ function G(e) {
         roles: t,
         initialTab: "role_subscriptions",
         returnToSection: w.pNK.ROLE_SUBSCRIPTIONS
-      }), (0, v.be)(n.id), (0, m.uL)(w.Z5c.CHANNEL(n.id, R.oC.ROLE_SUBSCRIPTIONS))
+      }), (0, _.be)(n.id), (0, m.uL)(w.Z5c.CHANNEL(n.id, R.oC.ROLE_SUBSCRIPTIONS))
     };
-  if (!_) return (0, r.jsx)(l.$jN, {});
+  if (!v) return (0, r.jsx)(l.$jN, {});
   switch (g) {
     case T.ue.BASIC_INFO:
       t = (0, r.jsx)(E.Z, {

@@ -72,8 +72,8 @@ function R(e) {
       selectedItem: p,
       onClick: h,
       currentPosition: j,
-      onDragStart: _,
-      onDragReset: v,
+      onDragStart: v,
+      onDragReset: _,
       onDragComplete: y,
       roleStyle: C
     } = e,
@@ -84,14 +84,14 @@ function R(e) {
     D = (0, b._f)(c.id, m, m.colorStrings),
     [, A] = (0, s.c)({
       type: w,
-      item: () => (_(m.id), {
+      item: () => (v(m.id), {
         id: m.id,
         position: j
       }),
       canDrag: () => R,
       end: (e, t) => {
         let n = t.getDropResult();
-        if (null == n) return void v();
+        if (null == n) return void _();
         y(n.roleId)
       }
     }),
@@ -168,7 +168,7 @@ function Z(e) {
     currentRoleId: n,
     setCurrentRoleId: l,
     setSelectedSection: s
-  } = e, o = (0, c.e7)([v.Z], () => v.Z.roles), u = (0, c.e7)([j.Z], () => j.Z.getHighestRole(t)), f = (0, c.e7)([p.Z], () => p.Z.roleStyle), [b, x] = i.useState(o.length), {
+  } = e, o = (0, c.e7)([_.Z], () => _.Z.roles), u = (0, c.e7)([j.Z], () => j.Z.getHighestRole(t)), f = (0, c.e7)([p.Z], () => p.Z.roleStyle), [b, x] = i.useState(o.length), {
     scrolledToTop: O,
     handleScroll: E
   } = (0, C.V)(), {
@@ -201,8 +201,8 @@ function Z(e) {
         children: [(0, r.jsxs)(d.P3F, {
           className: S.title,
           onClick: () => l(null),
-          children: [(0, r.jsx)(_.Z, {
-            direction: _.Z.Directions.LEFT
+          children: [(0, r.jsx)(v.Z, {
+            direction: v.Z.Directions.LEFT
           }), (0, r.jsx)(d.Text, {
             className: S.titleText,
             variant: "text-md/semibold",

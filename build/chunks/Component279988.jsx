@@ -26,8 +26,8 @@ let g = function(e) {
     onRemove: b,
     canRemove: x,
     title: j,
-    actionsLocation: _,
-    fieldStyle: v
+    actionsLocation: v,
+    fieldStyle: _
   } = e, O = n.values, y = O.slice(0, 1), C = O.length - y.length;
   return (0, r.jsxs)(d.Z, {
     field: n,
@@ -39,8 +39,8 @@ let g = function(e) {
     onRemove: b,
     title: j,
     canRemove: x,
-    actionsLocation: _,
-    fieldStyle: v,
+    actionsLocation: v,
+    fieldStyle: _,
     children: [(0, r.jsx)(c.EK, {
       terms: y,
       channelId: t

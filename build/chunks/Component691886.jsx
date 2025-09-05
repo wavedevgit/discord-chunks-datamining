@@ -24,7 +24,7 @@ function j(e) {
   return String(e)
 }
 
-function _(e) {
+function v(e) {
   let {
     icon: t,
     title: n,
@@ -50,8 +50,8 @@ function _(e) {
   })
 }
 
-function v() {
-  return (0, Chunk951288.jsx)(_, {
+function _() {
+  return (0, Chunk951288.jsx)(v, {
     icon: (0, Chunk951288.jsx)(Chunk481060.qJs, {
       size: "md",
       color: "currentColor",
@@ -71,7 +71,7 @@ function O(e) {
   let a = (0, d.KS)(i),
     s = (0, c.F6)(i, p.default, g.Z),
     o = null != l ? (0, c.F6)(l, p.default, g.Z) : true;
-  return (0, r.jsx)(_, {
+  return (0, r.jsx)(v, {
     icon: null != a && (0, r.jsx)(a, {
       className: x.labelIcon
     }),
@@ -86,7 +86,7 @@ function y(e) {
   } = e;
   return null != t ? (0, r.jsx)(O, {
     channelId: t
-  }) : (0, r.jsx)(v, {})
+  }) : (0, r.jsx)(_, {})
 }
 
 function C(e) {
@@ -96,11 +96,11 @@ function C(e) {
     initialChannelId: a,
     omitChannelIds: d,
     "aria-labelledby": x,
-    onChange: _
-  } = e, v = b.intl.string(b.t.d7YJMD), O = (0, s.e7)([m.Z], () => m.Z.getCategories(t), [t]), C = (0, f.m7)(null != l ? l : h.lds), N = i.useMemo(() => {
+    onChange: v
+  } = e, _ = b.intl.string(b.t.d7YJMD), O = (0, s.e7)([m.Z], () => m.Z.getCategories(t), [t]), C = (0, f.m7)(null != l ? l : h.lds), N = i.useMemo(() => {
     let e = [{
         value: null,
-        label: v
+        label: _
       }],
       t = false;
     for (let n of O._categories)
@@ -115,7 +115,7 @@ function C(e) {
       value: l,
       label: C.name
     }), e
-  }, [v, l, C, O, d, a]);
+  }, [_, l, C, O, d, a]);
   return (0, r.jsx)(o.PhF, {
     placeholder: b.intl.string(b.t.r2pts7),
     options: N,
@@ -145,7 +145,7 @@ function C(e) {
             return e
           }({}, n), l = l = {
             guildId: t,
-            onSubmit: _
+            onSubmit: v
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -157,7 +157,7 @@ function C(e) {
             Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
           }), i))
         }
-      }) : _(e)
+      }) : v(e)
     },
     isSelected: e => null != l && j(e) === j(l),
     serialize: j,

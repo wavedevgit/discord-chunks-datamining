@@ -70,7 +70,7 @@ function I(e) {
     isDropHovered: b,
     focused: x,
     onFocus: j,
-    previewEnabled: v,
+    previewEnabled: _,
     isDragEnabled: C,
     disabled: N
   } = e, I = i.useRef(null), S = i.useRef(null), [{
@@ -127,15 +127,15 @@ function I(e) {
           focused: x,
           onChange: (e, n, r) => {
             let i = N ? t.value : n;
-            i.length > _.fn && (i = i.slice(0, _.fn)), n !== i && (n = i, r = (0, p.JM)(i)), s(n), w({
+            i.length > v.fn && (i = i.slice(0, v.fn)), n !== i && (n = i, r = (0, p.JM)(i)), s(n), w({
               textValue: n,
               richValue: r
             })
           },
           onKeyDown: o,
-          canMentionChannels: v,
-          canMentionRoles: v,
-          maxCharacterCount: _.fn,
+          canMentionChannels: _,
+          canMentionRoles: _,
+          maxCharacterCount: v.fn,
           onSubmit: () => Promise.resolve({
             shouldClear: false,
             shouldRefocus: true
@@ -170,8 +170,8 @@ function S(e) {
     setRules: n,
     guild: l,
     disabled: a
-  } = e, s = l.rulesChannelId, c = l.features.has(v.oNc.PREVIEW_ENABLED), d = (0, u.e7)([h.Z], () => null != s ? h.Z.getChannel(s) : null), g = (0, u.e7)([b.ZP], () => b.ZP.getDefaultChannel(l.id)), [p, f] = i.useState(null), [E, S] = i.useState(null), T = i.useCallback(e => {
-    if (!a && t.length !== _.X2)
+  } = e, s = l.rulesChannelId, c = l.features.has(_.oNc.PREVIEW_ENABLED), d = (0, u.e7)([h.Z], () => null != s ? h.Z.getChannel(s) : null), g = (0, u.e7)([b.ZP], () => b.ZP.getDefaultChannel(l.id)), [p, f] = i.useState(null), [E, S] = i.useState(null), T = i.useCallback(e => {
+    if (!a && t.length !== v.X2)
       if (null != e && "" === t[t.length - 1].value) {
         let r = [...t];
         r[t.length - 1] = N(C({}, r[t.length - 1]), {
@@ -197,9 +197,9 @@ function S(e) {
       i.splice(l, 1), i.splice(r, 0, e), n(i)
     }
     i ? null !== p && f(null) : r !== p && f(r)
-  }, [a, p, t, n]), Z = t.length === _.X2, D = i.useMemo(() => {
+  }, [a, p, t, n]), Z = t.length === v.X2, D = i.useMemo(() => {
     let e = Z ? O.intl.formatToPlainString(O.t.tU718P, {
-      number: _.X2
+      number: v.X2
     }) : true;
     return [{
       text: O.intl.string(O.t.DXq2oa),

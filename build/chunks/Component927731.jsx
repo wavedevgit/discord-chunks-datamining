@@ -93,7 +93,7 @@ function E(e) {
       modalKey: N
     }) : S()
   }, [t, T, S, l, A, D]), k = x.Lo(Z), M = i.useCallback(() => Z.forEach(x.GM), [Z]), G = (0, b.mY)(), U = (0, o.e7)([m.Z], () => m.Z.getProps().subsection);
-  return i.useEffect(() => (U === _.KsC.ROLE_SUBSCRIPTION_TIER_TEMPLATE && L(), () => {
+  return i.useEffect(() => (U === v.KsC.ROLE_SUBSCRIPTION_TIER_TEMPLATE && L(), () => {
     (0, d.Mr3)(N)
   }), [U, L]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -125,7 +125,7 @@ function E(e) {
         }), (0, r.jsx)(d.Text, {
           variant: "text-md/normal",
           color: "interactive-active",
-          children: v.intl.string(v.t.PiFnn5)
+          children: _.intl.string(_.t.PiFnn5)
         })]
       })]
     }), (0, r.jsx)(c.W, {
@@ -159,11 +159,11 @@ function I(e) {
     maxTiers: a
   } = (0, p.s1)(t), s = l.map(e => e.id);
   return (0, r.jsxs)(d.hjN, {
-    title: v.intl.string(v.t["72+Soq"]),
+    title: _.intl.string(_.t["72+Soq"]),
     className: O.container,
     children: [(0, r.jsx)(d.R94, {
       type: d.R94.Types.DESCRIPTION,
-      children: v.intl.format(v.t.nHRSvL, {
+      children: _.intl.format(_.t.nHRSvL, {
         maxTiers: a
       })
     }), (0, r.jsx)(d.LZC, {

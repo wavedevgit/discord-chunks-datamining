@@ -52,8 +52,8 @@ function b(e) {
     valueError: b,
     errors: x,
     validatePatternsChanged: j,
-    validateEditingValueChanged: _
-  } = (0, d.Z)(l, s), [v] = i.useState(() => ({
+    validateEditingValueChanged: v
+  } = (0, d.Z)(l, s), [_] = i.useState(() => ({
     tags: m,
     value: "",
     selections: [],
@@ -75,13 +75,13 @@ function b(e) {
   }, {}), [x, m]), y = i.useCallback(e => {
     j(e, m)
   }, [j, m]), C = i.useCallback(e => {
-    _(e)
-  }, [_]);
+    v(e)
+  }, [v]);
   return (0, r.jsxs)("div", {
     className: a()(p.keywordsContainer, o),
     children: [(0, r.jsx)(c.Z, {
       placeholder: "^b(a|@)d$\nw(o|0)rd(s|$)",
-      initialValue: v,
+      initialValue: _,
       onChangeTags: y,
       onChangeNewTagValue: C,
       tagErrors: O,

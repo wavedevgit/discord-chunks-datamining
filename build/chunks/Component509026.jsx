@@ -75,9 +75,11 @@ function f(e) {
           }))
         })
       },
-      buttonCTA: m.intl.string(m.t.AuPtoq),
-      submitting: f,
-      disabled: x || f || 0 === b
+      disabled: x || f || 0 === b,
+      size: "md",
+      variant: "primary",
+      text: m.intl.string(m.t.AuPtoq),
+      loading: f
     }), (0, r.jsx)(l.LZC, {
       size: 24
     }), (0, r.jsx)(s.L3, {

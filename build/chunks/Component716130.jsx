@@ -39,7 +39,7 @@ function j(e) {
   return e
 }
 
-function _(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,7 +52,7 @@ function _(e, t) {
   }), e
 }
 
-function v(e) {
+function _(e) {
   let {
     guild: t,
     prejoinOnly: n,
@@ -60,8 +60,8 @@ function v(e) {
   } = e, c = (0, s.e7)([p.Z], () => p.Z.editedOnboardingPrompts), u = c.filter(e => e.inOnboarding), m = u.length, {
     drag: f,
     drop: j,
-    dragSourcePosition: _,
-    setIsDraggable: v
+    dragSourcePosition: v,
+    setIsDraggable: _
   } = (0, d.Z)({
     type: "ONBOARDING_PROMPT_CARD",
     index: m,
@@ -71,14 +71,14 @@ function v(e) {
     onDragReset: () => {}
   }), O = i.useRef(null);
   return i.useEffect(() => {
-    v(false)
-  }, [v]), i.useEffect(() => {
+    _(false)
+  }, [_]), i.useEffect(() => {
     f(j(O))
   }, [f, j, O]), (0, r.jsxs)("div", {
     ref: O,
     className: a()(x.separatorSection, {
-      [x.dropIndicatorBefore]: null != _ && m < _,
-      [x.dropIndicatorAfter]: null != _ && m > _
+      [x.dropIndicatorBefore]: null != v && m < v,
+      [x.dropIndicatorAfter]: null != v && m > v
     }),
     children: [!l && u.length < h.b3 ? (0, r.jsxs)(o.P3F, {
       className: x.addPrompt,
@@ -132,10 +132,10 @@ function O(e) {
     handleDragComplete: S
   } = (0, u.Z)(N, e => {
     let t = e.findIndex(e => "separator" === e.id),
-      n = e.slice(0, t).map(e => _(j({}, e.data), {
+      n = e.slice(0, t).map(e => v(j({}, e.data), {
         inOnboarding: true
       })),
-      r = e.slice(t + 1).map(e => _(j({}, e.data), {
+      r = e.slice(t + 1).map(e => v(j({}, e.data), {
         inOnboarding: false,
         required: false
       }));
@@ -171,7 +171,7 @@ function O(e) {
         onPromptDragReset: I,
         onPromptDragComplete: S
       }, e.id))]
-    }), (0, r.jsx)(v, {
+    }), (0, r.jsx)(_, {
       guild: d,
       prejoinOnly: n,
       postjoinOnly: i

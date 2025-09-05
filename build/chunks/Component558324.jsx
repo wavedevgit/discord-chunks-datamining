@@ -36,14 +36,14 @@ let o = e => {
       }
       return i
     }(e, ["tags", "tagsLabel", "value", "onRemoveTag", "onAddTag", "onAddTagError", "maxTaxLength", "maxTags", "disabled", "placeholder"]);
-  let [j, _] = i.useState(null != d ? d : ""), v = i.useCallback(() => {
+  let [j, v] = i.useState(null != d ? d : ""), _ = i.useCallback(() => {
     let e = j.trim();
     if (0 !== e.length) {
       if (null != f && o.length >= f) {
         null == g || g(s.intl.string(s.t.Xx7XeH));
         return
       }
-      m(e), _("")
+      m(e), v("")
     }
   }, [j, f, m, g, o.length]), O = i.useCallback(e => {
     switch (e.keyCode) {
@@ -53,9 +53,9 @@ let o = e => {
       case a.yXg.ENTER:
       case a.yXg.TAB:
       case a.yXg.COMMA:
-        e.preventDefault(), e.stopPropagation(), v()
+        e.preventDefault(), e.stopPropagation(), _()
     }
-  }, [v, j.length, u, o]);
+  }, [_, j.length, u, o]);
   return (0, r.jsx)(l.oil, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -83,10 +83,10 @@ let o = e => {
   }, x), n = n = {
     value: j,
     onKeyDown: O,
-    onChange: _,
+    onChange: v,
     maxLength: p,
     disabled: h,
-    onBlur: v,
+    onBlur: _,
     placeholder: b
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

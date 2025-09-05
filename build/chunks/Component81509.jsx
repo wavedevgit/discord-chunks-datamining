@@ -98,7 +98,7 @@ function j(e) {
   })
 }
 
-function _(e) {
+function v(e) {
   let {
     emojisToShow: t,
     notShownEmojiCount: n,
@@ -155,7 +155,7 @@ function _(e) {
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     highlightedCreatorGuild: t
   } = e, {
@@ -178,7 +178,7 @@ function v(e) {
     guildAvatarUrl: p,
     subscriberCount: f,
     emojisToShow: b,
-    notShownEmojiCount: v,
+    notShownEmojiCount: _,
     storePageUrl: O
   } = o.details;
   return (0, r.jsxs)("div", {
@@ -192,9 +192,9 @@ function v(e) {
       quote: i,
       quoteAttribution: l,
       quoteAttributionTitle: s
-    }), (0, r.jsx)(_, {
+    }), (0, r.jsx)(v, {
       emojisToShow: b,
-      notShownEmojiCount: v,
+      notShownEmojiCount: _,
       storePageUrl: O
     })]
   })
@@ -214,7 +214,7 @@ function O(e) {
     }), (0, r.jsx)(g.Z, {
       carouselClassName: h.creatorGuildCarousel,
       items: t,
-      renderItem: e => (0, r.jsx)(v, {
+      renderItem: e => (0, r.jsx)(_, {
         highlightedCreatorGuild: e
       }),
       intervalBetweenAutomaticItemRotations: 7e3

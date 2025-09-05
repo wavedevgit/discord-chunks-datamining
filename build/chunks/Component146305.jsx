@@ -1,7 +1,7 @@
 /** Chunk was on 54052 **/
 /** chunk id: 146305, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => ev
+  Z: () => e_
 });
 var Chunk951288 = require("./951288.js"),
   Chunk990547 = require("./990547.js"),
@@ -93,7 +93,7 @@ function ej(e) {
   return e
 }
 
-function e_(e, t) {
+function ev(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -105,12 +105,12 @@ function e_(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let ev = {
+let e_ = {
   getSectionDefinition: function(e, t) {
-    let ev = (0, h.p)(t.guild.id, "guild_settings"),
+    let e_ = (0, h.p)(t.guild.id, "guild_settings"),
       eO = (0, d.Vm)(t.guild.id),
       ey = false === t.guild.features.has(ef.oNc.CREATOR_MONETIZABLE) && false === t.guild.features.has(ef.oNc.CREATOR_MONETIZABLE_PROVISIONAL),
-      eC = ev && ey ? {
+      eC = e_ && ey ? {
         label: (0, r.jsx)("div", {
           className: ex.roleSubLabel,
           children: eb.intl.string(eb.t.Tn7Koq)
@@ -288,9 +288,9 @@ let ev = {
           }, predicate: () => t.canManageGuild && t.guild.features.has(ef.oNc.COMMUNITY) && !t.welcomeScreenEmpty && !t.guild.features.has(ef.oNc.GUILD_SERVER_GUIDE)
         };
       case ef.pNK.ROLE_SUBSCRIPTIONS:
-        return e_(ej({}, eC), {
+        return ev(ej({}, eC), {
           section: ef.pNK.ROLE_SUBSCRIPTIONS,
-          element: _.Z,
+          element: v.Z,
           type: o.bT.CUSTOM,
           predicate: () => eO ? t.monetizationPredicate() && ((0, x.sy)(t.guild) || c.Z.hasSeenCreatorOnboardingForGuild(t.guild.id)) : t.monetizationPredicate(),
           newIndicatorDismissibleContentTypes: (0, j.sO)(t.guild) ? [l.z.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE] : null
@@ -301,7 +301,7 @@ let ev = {
         };
       case ef.pNK.ROLE_SUBSCRIPTIONS_STORE_PAGE:
         return {
-          section: ef.pNK.ROLE_SUBSCRIPTIONS_STORE_PAGE, impressionName: i.ImpressionNames.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_GUILD_SETTINGS, newIndicator: 2022 === new Date().getFullYear(), label: eb.intl.string(eb.t.ipTYsr), ariaLabel: eb.intl.string(eb.t.ipTYsr), element: v.Z, predicate: () => t.monetizationPredicate() && (0, x.sy)(t.guild)
+          section: ef.pNK.ROLE_SUBSCRIPTIONS_STORE_PAGE, impressionName: i.ImpressionNames.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_GUILD_SETTINGS, newIndicator: 2022 === new Date().getFullYear(), label: eb.intl.string(eb.t.ipTYsr), ariaLabel: eb.intl.string(eb.t.ipTYsr), element: _.Z, predicate: () => t.monetizationPredicate() && (0, x.sy)(t.guild)
         };
       case ef.pNK.GUILD_PREMIUM:
         return {
@@ -336,7 +336,7 @@ let ev = {
                 }), (0, s.xf)()
               }
             };
-            e.mfaEnabled ? (0, a.h7j)(e => (0, r.jsx)(a.ConfirmModal, e_(ej({}, e, l), {
+            e.mfaEnabled ? (0, a.h7j)(e => (0, r.jsx)(a.ConfirmModal, ev(ej({}, e, l), {
               children: (0, r.jsx)(a.Text, {
                 variant: "text-md/normal",
                 children: eb.intl.format(eb.t["Zuo+VV"], {
@@ -347,7 +347,7 @@ let ev = {
               let {
                 default: e
               } = await n.e("18259").then(n.bind(n, 1493));
-              return t => (0, r.jsx)(e, e_(ej({}, t, l), {
+              return t => (0, r.jsx)(e, ev(ej({}, t, l), {
                 validationText: i,
                 instructionText: eb.intl.string(eb.t.abprOD),
                 errorText: eb.intl.string(eb.t["c2/DS0"]),

@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk365722 = require("./365722.js");
 
-function v(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -76,7 +76,7 @@ function y(e) {
     }, i)), e
   }, []), [t, n]);
   return 0 === l.length ? null : (0, r.jsx)("div", {
-    className: _.actionRuleListContainer,
+    className: v.actionRuleListContainer,
     children: l
   })
 }
@@ -102,7 +102,7 @@ let C = e => {
       }
       return i
     }(e, ["className", "children"]);
-    return (0, r.jsx)(s.P3F, O(v({
+    return (0, r.jsx)(s.P3F, O(_({
       className: t,
       onClick: C,
       onMouseDown: C,
@@ -118,35 +118,35 @@ function E(e) {
     rule: n,
     onChangeRule: i,
     onContextMenu: l
-  } = e, o = () => i(O(v({}, n), {
+  } = e, o = () => i(O(_({}, n), {
     enabled: !n.enabled
   })), c = e => {
     C(e), l(e)
   };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: _.ruleTextContainer,
+      className: v.ruleTextContainer,
       children: (0, r.jsx)(b.Z, {
         rule: n,
         onChangeRule: i
       })
     }), (0, r.jsxs)(N, {
-      className: _.actionContainer,
+      className: v.actionContainer,
       children: [(0, r.jsx)(a.T2, {
-        className: _.toggle,
+        className: v.toggle,
         onChange: o,
         checked: null != (t = null == n ? true : n.enabled) && t
       }), (0, r.jsx)(s.ua7, {
         text: j.intl.string(j.t.UKOtz8),
         position: "top",
         "aria-label": j.intl.string(j.t.PdRCRk),
-        children: e => (0, r.jsx)(s.P3F, O(v({}, e), {
+        children: e => (0, r.jsx)(s.P3F, O(_({}, e), {
           onClick: c,
-          className: _.menuIconButton,
+          className: v.menuIconButton,
           children: (0, r.jsx)(s.Huf, {
             size: "md",
             color: "currentColor",
-            className: _.menuIcon
+            className: v.menuIcon
           })
         }))
       })]
@@ -156,9 +156,9 @@ function E(e) {
 
 function I(e) {
   return (0, g.r5)(e, g.vT.ALPHA) ? (0, r.jsx)(c.Z, {
-    className: _.alphaBetaTag
+    className: v.alphaBetaTag
   }) : (0, g.r5)(e, g.vT.BETA) ? (0, r.jsx)(d.Z, {
-    className: _.alphaBetaTag
+    className: v.alphaBetaTag
   }) : null
 }
 
@@ -174,7 +174,7 @@ function S(e) {
     updateRule: h
   } = (0, m.pH)(t.guildId), [b, x] = i.useState(t.enabled), E = (0, l.throttle)(async (e, n) => {
     if (n.preventDefault(), n.stopPropagation(), !d) {
-      let e = O(v({}, t), {
+      let e = O(_({}, t), {
         enabled: !b
       });
       x(!b);
@@ -193,28 +193,28 @@ function S(e) {
   } = c, Z = !(0, u.Vb)(t);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: _.ruleIconContainer,
+      className: v.ruleIconContainer,
       children: (0, r.jsx)(R, {
         size: "md",
         color: "currentColor",
-        className: _.ruleIcon
+        className: v.ruleIcon
       })
     }), (0, r.jsxs)("div", {
-      className: _.ruleTextContainer,
+      className: v.ruleTextContainer,
       children: [(0, r.jsxs)(s.X6q, {
         variant: "text-md/semibold",
         color: "header-primary",
-        className: _.ruleTextHeaderContainer,
+        className: v.ruleTextHeaderContainer,
         children: [(0, r.jsxs)("div", {
-          className: _.ruleTextHeader,
+          className: v.ruleTextHeader,
           children: [T, I(t.triggerType)]
         }), (0, r.jsx)(s.Text, {
-          className: _.ruleSubtextHeader,
+          className: v.ruleSubtextHeader,
           variant: "text-sm/normal",
           children: P
         })]
       }), Z && (0, r.jsx)(s.Text, {
-        className: _.ruleTextDescription,
+        className: v.ruleTextDescription,
         variant: "text-sm/normal",
         children: w
       }), (0, r.jsx)(y, {
@@ -222,22 +222,22 @@ function S(e) {
         triggerType: t.triggerType
       })]
     }), (0, r.jsxs)(N, {
-      className: _.actionContainer,
+      className: v.actionContainer,
       children: [(0, r.jsx)(a.T2, {
-        className: _.toggle,
+        className: v.toggle,
         onChange: E,
         checked: null != b && b
       }), !n && (0, r.jsx)(s.ua7, {
         text: j.intl.string(j.t.UKOtz8),
         position: "top",
         "aria-label": j.intl.string(j.t.PdRCRk),
-        children: e => (0, r.jsx)(s.P3F, O(v({}, e), {
+        children: e => (0, r.jsx)(s.P3F, O(_({}, e), {
           onClick: S,
-          className: _.menuIconButton,
+          className: v.menuIconButton,
           children: (0, r.jsx)(s.Huf, {
             size: "md",
             color: "currentColor",
-            className: _.menuIcon
+            className: v.menuIcon
           })
         }))
       })]
@@ -258,31 +258,31 @@ function T(e) {
   } = l;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: _.ruleIconContainer,
+      className: v.ruleIconContainer,
       children: (0, r.jsx)(c, {
         color: "currentColor",
         size: "md",
-        className: _.ruleIcon
+        className: v.ruleIcon
       })
     }), (0, r.jsxs)("div", {
-      className: _.ruleTextContainer,
+      className: v.ruleTextContainer,
       children: [(0, r.jsx)(s.X6q, {
-        className: _.ruleTextHeader,
+        className: v.ruleTextHeader,
         variant: "text-md/semibold",
         color: "header-primary",
         children: (0, r.jsxs)("div", {
-          className: _.ruleTextHeader,
+          className: v.ruleTextHeader,
           children: [a, I(t)]
         })
       }), (0, r.jsx)(s.Text, {
-        className: _.ruleTextDescription,
+        className: v.ruleTextDescription,
         variant: "text-sm/normal",
         children: o
       }), (0, r.jsx)(y, {
         triggerType: t
       })]
     }), (0, r.jsx)(N, {
-      className: _.actionContainer,
+      className: v.actionContainer,
       children: (0, r.jsx)(s.zxk, {
         variant: "primary",
         size: "sm",
@@ -307,7 +307,7 @@ function P(e) {
       let {
         default: e
       } = await n.e("25443").then(n.bind(n, 46577));
-      return n => (0, r.jsx)(e, v({
+      return n => (0, r.jsx)(e, _({
         rule: t
       }, n))
     }))
@@ -324,7 +324,7 @@ function P(e) {
     isDefaultRule: a,
     onContextMenu: m
   })), (0, r.jsx)(s.P3F, {
-    className: _.mainContainer,
+    className: v.mainContainer,
     onContextMenu: m,
     children: g
   })

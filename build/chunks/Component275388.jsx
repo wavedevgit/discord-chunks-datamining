@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk772848 = require("./772848.js");
 require("./952265.js");
 var Chunk481060 = require("./481060.js"),
-  Chunk396639 = require("./396639.jsx"),
+  Chunk922987 = require("./922987.jsx"),
   Chunk981631 = require("./981631.js");
 
 function l(e, t, n) {
@@ -84,7 +84,7 @@ let p = "orb-checkout-payment-modal-key",
     return (0, a.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.resolve().then(n.bind(n, 396639));
+      } = await Promise.resolve().then(n.bind(n, 922987));
       return n => (0, r.jsx)(e, d(c({
         skuId: t,
         analyticsLocations: l,

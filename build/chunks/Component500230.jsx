@@ -51,7 +51,7 @@ function j(e, t) {
   }), e
 }
 
-function _(e) {
+function v(e) {
   let {
     palette: t,
     badge: n,
@@ -76,7 +76,7 @@ function _(e) {
   }))
 }
 
-function v(e) {
+function _(e) {
   let {
     badge: t,
     primary: n,
@@ -86,7 +86,7 @@ function v(e) {
     setShowColorPopout: m,
     palettePopoutTargetRef: g,
     handleChange: f
-  } = e, _ = (0, o.jm)({
+  } = e, v = (0, o.jm)({
     isSelected: l,
     label: h.intl.formatToPlainString(h.t.hr4D2d, {
       primaryColor: n,
@@ -112,7 +112,7 @@ function v(e) {
     },
     shouldShow: d,
     onRequestClose: () => m(false),
-    children: e => (0, r.jsx)(c.P3F, j(x({}, e, _), {
+    children: e => (0, r.jsx)(c.P3F, j(x({}, e, v), {
       innerRef: g,
       onClick: () => {
         m(e => !e)
@@ -157,12 +157,12 @@ let O = function(e) {
     }), (0, r.jsxs)("div", j(x({}, N), {
       "aria-describedby": y,
       className: b.pickerGrid,
-      children: [p.Ek.map(e => (0, r.jsx)(_, {
+      children: [p.Ek.map(e => (0, r.jsx)(v, {
         palette: e,
         badge: l,
         isSelected: e.primary === a && e.secondary === s,
         onClick: () => E(e)
-      }, "".concat(e.primary).concat(e.secondary))), (0, r.jsx)(v, {
+      }, "".concat(e.primary).concat(e.secondary))), (0, r.jsx)(_, {
         badge: l,
         primary: a,
         secondary: s,

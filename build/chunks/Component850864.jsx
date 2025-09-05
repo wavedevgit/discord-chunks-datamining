@@ -41,59 +41,59 @@ function N(e) {
     let e = m.Z.getSettings();
     (0, u.oo)(t.id, e)
   }, [n, t.id]);
-  let I = i.useMemo(() => (0, a.ap)(E) ? "existing" === c ? O : C : "existing" === c ? v : y, [c, E]);
+  let I = i.useMemo(() => (0, a.ap)(E) ? "existing" === c ? O : C : "existing" === c ? _ : y, [c, E]);
   return (0, r.jsxs)("div", {
-    className: _.page,
+    className: v.page,
     children: [(0, r.jsxs)("div", {
-      className: _.leftColumn,
+      className: v.leftColumn,
       children: [(0, r.jsx)(s.X6q, {
-        className: _.header,
+        className: v.header,
         variant: "heading-lg/extrabold",
         children: j.intl.string(j.t.tbUZVl)
       }), (0, r.jsx)("div", {
-        className: _.descriptionSection,
+        className: v.descriptionSection,
         children: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "header-secondary",
           children: j.intl.string(j.t.DvHCq6)
         })
       }), (0, r.jsx)("div", {
-        className: _.section,
+        className: v.section,
         children: (0, r.jsx)(x.Z, {
           guildId: t.id
         })
       }), (0, r.jsx)("div", {
-        className: _.sectionSeparator
+        className: v.sectionSeparator
       }), (0, r.jsx)(s.X6q, {
-        className: _.header,
+        className: v.header,
         variant: "heading-lg/extrabold",
         children: j.intl.string(j.t["roY/ws"])
       }), (0, r.jsx)("div", {
-        className: _.descriptionSection,
+        className: v.descriptionSection,
         children: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "header-secondary",
           children: j.intl.format(j.t["/lWYYW"], {})
         })
       }), (0, r.jsx)("div", {
-        className: _.section,
+        className: v.section,
         children: (0, r.jsx)(p.Z, {})
       }), (0, r.jsx)(g.Z, {
         guildId: t.id
       }), (0, r.jsx)("div", {
-        className: _.sectionSeparator
+        className: v.sectionSeparator
       }), (0, r.jsx)(s.X6q, {
-        className: _.header,
+        className: v.header,
         variant: "heading-lg/extrabold",
         children: j.intl.string(j.t.hEjHyM)
       }), (0, r.jsxs)("div", {
-        className: _.descriptionSection,
+        className: v.descriptionSection,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "header-secondary",
           children: j.intl.string(j.t.YnvKVF)
         }), (0, r.jsxs)("ul", {
-          className: _.bulletList,
+          className: v.bulletList,
           children: [(0, r.jsx)("li", {
             children: (0, r.jsx)(s.Text, {
               tag: "span",
@@ -118,28 +118,28 @@ function N(e) {
           })]
         })]
       }), (0, r.jsxs)("div", {
-        className: _.section,
+        className: v.section,
         children: [(0, r.jsx)(b.Z, {
           guildId: t.id
         }), (0, r.jsx)(h.Z, {
           guildId: t.id
         })]
       }), (0, r.jsx)("div", {
-        className: _.sectionSeparator
+        className: v.sectionSeparator
       }), (0, r.jsx)(f.Z, {
         guild: t
       })]
     }), (0, r.jsxs)("div", {
-      className: _.rightColumn,
+      className: v.rightColumn,
       children: [(0, r.jsx)("div", {
-        className: _.centeredSection,
+        className: v.centeredSection,
         children: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "header-secondary",
           children: j.intl.string(j.t.EVV6ub)
         })
       }), (0, r.jsx)("img", {
-        className: _.previewImage,
+        className: v.previewImage,
         src: I,
         alt: j.intl.string(j.t.ST4UOz)
       }), (0, r.jsx)(s.sY7, {

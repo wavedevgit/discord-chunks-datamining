@@ -22,7 +22,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk440701 = require("./440701.js");
 
-function _(e) {
+function v(e) {
   let {
     payoutsByPeriod: t,
     team: n
@@ -44,7 +44,7 @@ function _(e) {
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     guildId: t,
     totalPayoutsForPeriod: n
@@ -106,14 +106,14 @@ let O = e => {
             value: C.subscriberChange
           })
         })]
-      }), (0, r.jsx)(v, {
+      }), (0, r.jsx)(_, {
         guildId: s,
         totalPayoutsForPeriod: O
       })]
     }), (0, r.jsx)(i.hjN, {
       title: x.intl.string(x.t["+5Rmho"]),
       className: j.formSection,
-      children: (0, r.jsx)(_, {
+      children: (0, r.jsx)(v, {
         payoutsByPeriod: y,
         team: g
       })

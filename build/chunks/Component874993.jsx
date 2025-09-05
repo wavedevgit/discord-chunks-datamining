@@ -36,7 +36,7 @@ function C(e) {
   } = (0, h.V)(), {
     guild: S,
     subsection: T
-  } = (0, l.cj)([o.Z], () => o.Z.getProps()), P = null != (n = null != (t = null == S ? true : S.id) ? t : C) ? n : v.lds, w = null != E, [R] = (0, g.RD)(P), {
+  } = (0, l.cj)([o.Z], () => o.Z.getProps()), P = null != (n = null != (t = null == S ? true : S.id) ? t : C) ? n : _.lds, w = null != E, [R] = (0, g.RD)(P), {
     rulesByTriggerType: Z
   } = (0, g.pH)(P), D = {
     [p.vh.MEMBERS]: O.intl.string(O.t.sx4E5u),
@@ -91,7 +91,7 @@ function C(e) {
           variant: "text-sm/medium",
           className: y.helpUrl,
           children: O.intl.format(O.t["B+sgGh"], {
-            helpUrl: u.Z.getArticleURL(v.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
+            helpUrl: u.Z.getArticleURL(_.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
           })
         })]
       }), (0, r.jsxs)("div", {
@@ -138,7 +138,7 @@ function C(e) {
               guildId: P,
               triggerType: e,
               rules: null != (t = Z[e]) ? t : [],
-              initWithEdit: T === v.KsC.AUTOMOD_MENTION_SPAM && e === _.fX.MENTION_SPAM
+              initWithEdit: T === _.KsC.AUTOMOD_MENTION_SPAM && e === v.fX.MENTION_SPAM
             }, e)
           })
         })]

@@ -77,7 +77,7 @@ function L(e) {
     renderHeader: o,
     headerHeight: d,
     query: u
-  } = e, m = (0, c.e7)([C.Z], () => C.Z.getRoleMemberCount(n.id), [n.id]), p = (0, c.e7)([v.Z], () => v.Z.getHighestRole(n), [n]), f = u.trim();
+  } = e, m = (0, c.e7)([C.Z], () => C.Z.getRoleMemberCount(n.id), [n.id]), p = (0, c.e7)([_.Z], () => _.Z.getHighestRole(n), [n]), f = u.trim();
   i.useEffect(() => {
     (0, y.E)(n.id)
   }, [n.id]);
@@ -91,7 +91,7 @@ function L(e) {
     x = i.useMemo(() => [...a, l], [a, l]),
     {
       draggingId: j,
-      handleDragStart: _,
+      handleDragStart: v,
       handleDragReset: E,
       handleDragComplete: S
     } = (0, I.Z)(x),
@@ -108,7 +108,7 @@ function L(e) {
         highestRole: p,
         currentPosition: l,
         memberCount: null != (i = null == m ? true : m[o.id]) ? i : 0,
-        onDragStart: _,
+        onDragStart: v,
         onDragReset: E,
         onDragComplete: S,
         disableHover: null != j,
@@ -116,7 +116,7 @@ function L(e) {
         setEditRoleId: t,
         setSelectedSection: s
       }, o.id)
-    }, [b, n, p, m, _, E, S, j, a, t, s]);
+    }, [b, n, p, m, v, E, S, j, a, t, s]);
   return (0, r.jsx)(g.Xi, {
     sections: [Math.max(b.length, 1)],
     sectionHeight: d,
@@ -150,8 +150,8 @@ function M(e) {
     guild: g,
     highestRole: f,
     currentPosition: x,
-    memberCount: _,
-    onDragStart: v,
+    memberCount: v,
+    onDragStart: _,
     onDragReset: O,
     onDragComplete: y,
     disableHover: C,
@@ -160,7 +160,7 @@ function M(e) {
     setSelectedSection: T
   } = e, L = (0, E.T)(g, f, d), k = null != L, [M, U] = i.useState(false), B = i.useMemo(() => ({
     type: A,
-    item: () => (v(d.id), {
+    item: () => (_(d.id), {
       id: d.id,
       position: x
     }),
@@ -173,7 +173,7 @@ function M(e) {
       if (null == n) return void O();
       y(n.roleId)
     }
-  }), [d, v, O, y, k, M, x]), [{
+  }), [d, _, O, y, k, M, x]), [{
     isDragging: F
   }, H] = (0, s.c)(B), z = i.useMemo(() => ({
     accept: A,
@@ -230,7 +230,7 @@ function M(e) {
     "data-dnd-name": d.name,
     "aria-label": P.intl.formatToPlainString(P.t.Vu0AcX, {
       name: d.name,
-      count: "".concat(_)
+      count: "".concat(v)
     }),
     children: [(0, r.jsx)("div", {
       className: a()(w.dragIcon, R.dragSpacing, {
@@ -269,7 +269,7 @@ function M(e) {
     }), (0, r.jsx)(u.ua7, {
       text: P.intl.string(P.t.CW75t7),
       "aria-label": P.intl.formatToPlainString(P.t.Fgs8fH, {
-        count: "".concat(_)
+        count: "".concat(v)
       }),
       position: "right",
       children: e => (0, r.jsxs)(u.P3F, D(Z({}, e), {
@@ -278,7 +278,7 @@ function M(e) {
         children: [(0, r.jsx)(u.Text, {
           variant: "text-md/normal",
           color: "none",
-          children: _
+          children: v
         }), (0, r.jsx)(u.tBG, {
           size: "custom",
           color: "currentColor",
@@ -325,7 +325,7 @@ function G(e) {
     hasGradient: h,
     stops: b,
     gradientId: j
-  } = (0, d.De)(null == (t = o.colorStrings) ? true : t.primaryColor, null == (n = o.colorStrings) ? true : n.secondaryColor, null == (i = o.colorStrings) ? true : i.tertiaryColor), v = (0, _.yH)(s, o), O = (0, x.p9)({
+  } = (0, d.De)(null == (t = o.colorStrings) ? true : t.primaryColor, null == (n = o.colorStrings) ? true : n.secondaryColor, null == (i = o.colorStrings) ? true : i.tertiaryColor), _ = (0, v.yH)(s, o), O = (0, x.p9)({
     guildId: s,
     roleId: o.id,
     size: c
@@ -335,8 +335,8 @@ function G(e) {
     enableTooltip: m
   }));
   let y = null != (l = o.colorString) ? l : T.Pbq;
-  return v && h && (y = "url(#".concat(j, ")")), (0, r.jsxs)(r.Fragment, {
-    children: [v && h && (0, r.jsx)("svg", {
+  return _ && h && (y = "url(#".concat(j, ")")), (0, r.jsxs)(r.Fragment, {
+    children: [_ && h && (0, r.jsx)("svg", {
       width: "0",
       height: "0",
       style: {

@@ -232,7 +232,7 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         roles: t
       } = e;
       if (null != R && t.length !== R.length) returnfalse;
-      R = t.map(e => W(e)).filter(_.lm), w = true, H()
+      R = t.map(e => W(e)).filter(v.lm), w = true, H()
     },
     GUILD_SETTINGS_ROLES_UPDATE_PERMISSIONS: function(e) {
       let {
@@ -262,7 +262,7 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         id: t
       } = e, n = W(t);
       return null != n && z(n, {
-        permissions: v.Hn
+        permissions: _.Hn
       })
     },
     GUILD_SETTINGS_ROLES_UPDATE_NAME: function(e) {

@@ -1,11 +1,10 @@
 /** Chunk was on 54052 **/
 /** chunk id: 507317, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk367907 = require("./367907.js"),
   Chunk807582 = require("./807582.jsx"),
@@ -20,14 +19,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk200299 = require("./200299.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk359449 = require("./359449.js");
-let _ = function(e) {
+let j = function(e) {
   let {
     guild: t
-  } = e, _ = t.features.has(p.oNc.BANNER), v = i.useCallback((e, i) => {
-    if (null == e || true === i) return void g.Z.saveGuild(t.id, {
+  } = e, j = t.features.has(g.oNc.BANNER), v = i.useCallback((e, i) => {
+    if (null == e || true === i) return void m.Z.saveGuild(t.id, {
       homeHeader: null
     });
-    (0, a.ZDy)(async () => {
+    (0, l.ZDy)(async () => {
       let {
         default: l
       } = await Promise.all([n.e("91689"), n.e("59732"), n.e("63188")]).then(n.bind(n, 712451));
@@ -55,109 +54,112 @@ let _ = function(e) {
           let {
             imageUri: n
           } = e;
-          return g.Z.saveGuild(t.id, {
+          return m.Z.saveGuild(t.id, {
             homeHeader: n
           })
         },
-        uploadType: h.pC.HOME_HEADER
+        uploadType: f.pC.HOME_HEADER
       }, n))
     })
-  }, [t.id]), O = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), (0, s.yw)(p.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
+  }, [t.id]), _ = i.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), (0, a.yw)(g.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
       location: {
-        section: p.jXE.GUILD_SETTINGS_ONBOARDING,
-        object: p.qAy.LEARN_MORE
+        section: g.jXE.GUILD_SETTINGS_ONBOARDING,
+        object: g.qAy.LEARN_MORE
       },
       guild_id: null == t ? true : t.id,
       location_stack: []
-    }), (0, c.Z)({
+    }), (0, o.Z)({
       analyticsLocations: [],
       analyticsSourceLocation: {
-        section: p.jXE.GUILD_SETTINGS_ONBOARDING,
-        object: p.qAy.ONBOARDING_EDIT,
-        page: p.ZY5.GUILD_SETTINGS
+        section: g.jXE.GUILD_SETTINGS_ONBOARDING,
+        object: g.qAy.ONBOARDING_EDIT,
+        page: g.ZY5.GUILD_SETTINGS
       },
       guild: t,
-      perks: (0, f.XO)()
+      perks: (0, p.XO)()
     })
-  }, [t]), y = (0, r.jsx)(d.Z, {
+  }, [t]), O = (0, r.jsx)(c.Z, {
     image: t.homeHeader,
-    makeURL: e => null != e ? m.ZP.getGuildHomeHeaderURL({
+    makeURL: e => null != e ? u.ZP.getGuildHomeHeaderURL({
       id: t.id,
       homeHeader: e
     }) : null,
-    disabled: !_,
+    disabled: !j,
     onChange: v,
-    hint: x.intl.string(x.t.NyXznp),
-    enabled: _,
-    maxFileSizeBytes: b.B
+    hint: b.intl.string(b.t.NyXznp),
+    enabled: j,
+    maxFileSizeBytes: h.B
   });
-  return _ ? (0, r.jsxs)(r.Fragment, {
+  return j ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: j.sectionHeader,
-      children: [(0, r.jsx)(a.X6q, {
-        className: j.header,
+      className: x.sectionHeader,
+      children: [(0, r.jsx)(l.X6q, {
+        className: x.header,
         variant: "heading-lg/extrabold",
-        children: x.intl.string(x.t.BBj1nZ)
-      }), (0, r.jsx)(o.Z, {
-        className: j.boostIndicator,
+        children: b.intl.string(b.t.BBj1nZ)
+      }), (0, r.jsx)(s.Z, {
+        className: x.boostIndicator,
         guild: t,
-        guildFeature: p.oNc.BANNER,
-        onClick: O
+        guildFeature: g.oNc.BANNER,
+        onClick: _
       })]
     }), (0, r.jsxs)("div", {
-      className: j.section,
+      className: x.section,
       children: [(0, r.jsxs)("div", {
-        className: j.homeBannerExplainer,
-        children: [(0, r.jsx)(a.Text, {
+        className: x.homeBannerExplainer,
+        children: [(0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: x.intl.string(x.t.Vwintr)
-        }), (0, r.jsx)(u.Z, {
-          color: l.Tt.BRAND,
-          className: j.uploadButton,
-          buttonCTA: x.intl.string(x.t.yG2pUl),
-          onChange: v,
-          maxFileSizeBytes: b.B
+          children: b.intl.string(b.t.Vwintr)
+        }), (0, r.jsx)("div", {
+          className: x.uploadButton,
+          children: (0, r.jsx)(d.Z, {
+            onChange: v,
+            maxFileSizeBytes: h.B,
+            text: b.intl.string(b.t.yG2pUl),
+            size: "md",
+            variant: "primary"
+          })
         })]
       }), (0, r.jsx)("div", {
-        children: y
+        children: O
       })]
     })]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: j.sectionHeader,
-      children: [(0, r.jsx)(a.X6q, {
-        className: j.header,
+      className: x.sectionHeader,
+      children: [(0, r.jsx)(l.X6q, {
+        className: x.header,
         variant: "heading-lg/extrabold",
-        children: x.intl.string(x.t.BBj1nZ)
-      }), (0, r.jsx)(o.Z, {
-        className: j.boostIndicator,
+        children: b.intl.string(b.t.BBj1nZ)
+      }), (0, r.jsx)(s.Z, {
+        className: x.boostIndicator,
         guild: t,
-        guildFeature: p.oNc.BANNER,
-        onClick: O
+        guildFeature: g.oNc.BANNER,
+        onClick: _
       })]
     }), (0, r.jsxs)("div", {
-      className: j.section,
+      className: x.section,
       children: [(0, r.jsxs)("div", {
-        className: j.homeBannerExplainer,
-        children: [(0, r.jsx)(a.Text, {
+        className: x.homeBannerExplainer,
+        children: [(0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          className: j.bannerDescription,
-          children: x.intl.string(x.t.Vwintr)
-        }), (0, r.jsx)(a.zxk, {
+          className: x.bannerDescription,
+          children: b.intl.string(b.t.Vwintr)
+        }), (0, r.jsx)(l.zxk, {
           variant: "expressive",
-          icon: a.$Eu,
-          text: x.intl.string(x.t["+7XY39"]),
-          onClick: O
+          icon: l.$Eu,
+          text: b.intl.string(b.t["+7XY39"]),
+          onClick: _
         })]
       }), (0, r.jsx)("div", {
-        children: (0, r.jsx)(a.P3F, {
+        children: (0, r.jsx)(l.P3F, {
           "aria-hidden": true,
           tabIndex: false,
-          onClick: O,
-          children: y
+          onClick: _,
+          children: O
         })
       })]
     })]

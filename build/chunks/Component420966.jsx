@@ -38,10 +38,10 @@ function h(e) {
   }, [b]), j = (0, l.e7)([d.Z], () => {
     var e;
     return null == (e = d.Z.getRoleMemberCount(t.id)) ? true : e[f.id]
-  }, [f.id, t.id]), _ = (0, c.fI)(f), v = (0, u.Z)(t.id, f);
+  }, [f.id, t.id]), v = (0, c.fI)(f), _ = (0, u.Z)(t.id, f);
   i.useEffect(() => {
-    _ && b(m.ZI.PERMISSIONS)
-  }, [_, b]);
+    v && b(m.ZI.PERMISSIONS)
+  }, [v, b]);
   let O = (0, o.e)(t, f);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -101,9 +101,9 @@ function h(e) {
           color: "currentColor"
         })
       }) : null]
-    }), null != v ? (0, r.jsx)(a.Wn, {
+    }), null != _ ? (0, r.jsx)(a.Wn, {
       messageType: a.QYI.WARNING,
-      children: v
+      children: _
     }) : null, (0, r.jsxs)(a.njP, {
       className: p.tabBar,
       "aria-label": g.intl.string(g.t["+1H47u"]),
@@ -114,7 +114,7 @@ function h(e) {
       children: [(0, r.jsx)(a.njP.Item, {
         className: p.tabBarItem,
         id: m.ZI.DISPLAY,
-        disabled: _,
+        disabled: v,
         children: g.intl.string(g.t.hmdom5)
       }), (0, r.jsx)(a.njP.Item, {
         className: p.tabBarItem,
@@ -123,13 +123,13 @@ function h(e) {
       }), (0, r.jsx)(a.njP.Item, {
         className: p.tabBarItem,
         id: m.ZI.VERIFICATIONS,
-        disabled: _,
+        disabled: v,
         children: g.intl.string(g.t["5//Mur"])
       }), (0, r.jsx)(a.njP.Item, {
         className: p.tabBarItem,
         id: m.ZI.MEMBERS,
-        disabled: _,
-        children: _ ? g.intl.string(g.t["kg//+/"]) : g.intl.formatToPlainString(g.t.bHnZWV, {
+        disabled: v,
+        children: v ? g.intl.string(g.t["kg//+/"]) : g.intl.formatToPlainString(g.t.bHnZWV, {
           numMembers: String(j)
         })
       })]

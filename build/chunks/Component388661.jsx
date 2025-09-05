@@ -25,8 +25,8 @@ let x = function(e) {
     tag: i,
     badge: x,
     primaryColor: j,
-    secondaryColor: _,
-    isDisabled: v = false
+    secondaryColor: v,
+    isDisabled: _ = false
   } = e, O = (0, a.e7)([g.Z], () => g.Z.getProps().originalProfile), y = null != O && O.tag !== i;
   return (0, r.jsxs)("div", {
     className: t,
@@ -48,9 +48,9 @@ let x = function(e) {
             width: 40,
             height: 40,
             primaryTintColor: j,
-            secondaryTintColor: _
+            secondaryTintColor: v
           }),
-          disabled: v,
+          disabled: _,
           value: null != i ? i : "",
           onChange: function(e) {
             m.Z.updateGuildProfile(n, {

@@ -1,12 +1,12 @@
 /** Chunk was on 54052 **/
 /** chunk id: 755930, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  GW: () => v,
+  GW: () => _,
   Qg: () => h,
   Yn: () => O,
   ZP: () => I,
   bL: () => C,
-  i$: () => _,
+  i$: () => v,
   nn: () => j,
   qN: () => y,
   wy: () => b
@@ -125,7 +125,7 @@ function j(e) {
   }, l))
 }
 
-function _(e) {
+function v(e) {
   var {
     cellClassName: t,
     getAmount: n,
@@ -145,7 +145,7 @@ function _(e) {
   }, a))
 }
 
-function v(e) {
+function _(e) {
   var {
     cellClassName: t,
     getCount: n,

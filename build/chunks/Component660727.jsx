@@ -1,5 +1,5 @@
 /** Chunk was on 22942 **/
-/** chunk id: 660727, original params: n,e,o (module,exports,require) **/
+/** chunk id: 660727, original params: n,e,a (module,exports,require) **/
 require.d(exports, {
   default: () => C
 }), require("./388685.js");
@@ -32,23 +32,23 @@ async function j(n) {
       size: 48,
       forcePNG: true
     }),
-    o = await fetch(e),
-    t = await o.blob();
+    a = await fetch(e),
+    t = await a.blob();
   return await (0, m.fD)(t)
 }
 let C = function(n) {
   let {
     guildId: e,
-    onUploadIcon: o,
+    onUploadIcon: a,
     onSelectUnicodeEmoji: p,
     onClose: m,
     transitionState: C
-  } = n, b = (0, d.Dt)(), v = u.ZP.getDefaultChannel(e), [N, _] = a.useState("tab-id-role-icon-file-upload"), [y, k] = a.useState(false), E = (0, i.Z)(h);
-  return a.useEffect(() => {
+  } = n, v = (0, d.Dt)(), b = u.ZP.getDefaultChannel(e), [N, y] = o.useState("tab-id-role-icon-file-upload"), [_, k] = o.useState(false), E = (0, i.Z)(h);
+  return o.useEffect(() => {
     k(false)
   }, [N]), (0, t.jsx)(l.Y0X, {
     transitionState: C,
-    "aria-labelledby": b,
+    "aria-labelledby": v,
     size: l.CgR.MEDIUM,
     className: I.modalRoot,
     parentComponent: "CustomRoleIconUploadModal",
@@ -57,17 +57,17 @@ let C = function(n) {
       className: I.contentWrapper,
       children: [(0, t.jsxs)(l.njP, {
         selectedItem: N,
-        onItemSelect: _,
+        onItemSelect: y,
         type: "top",
         look: "grey",
         "aria-label": "Expression Picker",
         className: I.nav,
         children: [(0, t.jsx)(l.njP.Item, {
           id: "tab-id-role-icon-file-upload",
-          children: x.intl.string(x.t.royWSE)
+          children: g.intl.string(g.t.royWSE)
         }), (0, t.jsx)(l.njP.Item, {
           id: "tab-id-role-icon-emoji",
-          children: x.intl.string(x.t["/Ny2wc"])
+          children: g.intl.string(g.t["/Ny2wc"])
         })]
       }), "tab-id-role-icon-file-upload" === N ? (0, t.jsx)(l.hzk, {
         "data-migration-pending": true,
@@ -88,22 +88,24 @@ let C = function(n) {
             })]
           }), (0, t.jsx)("div", {
             className: I.uploadInfo,
-            children: x.intl.string(x.t["mz++Qk"])
+            children: g.intl.string(g.t["mz++Qk"])
           }), (0, t.jsx)(c.Z, {
-            buttonCTA: x.intl.string(x.t.sdCQY2),
             onChange: n => {
-              k(false), o(n), m()
+              k(false), a(n), m()
             },
             onFileSizeError: () => {
               k(true)
             },
             maxFileSizeBytes: 256e3,
-            filters: E
-          }), y ? (0, t.jsx)(l.Text, {
+            filters: E,
+            text: g.intl.string(g.t.sdCQY2),
+            size: "md",
+            variant: "primary"
+          }), _ ? (0, t.jsx)(l.Text, {
             className: I.uploadError,
             color: "text-danger",
             variant: "text-sm/normal",
-            children: x.intl.string(x.t.HFyKsb)
+            children: g.intl.string(g.t.HFyKsb)
           }) : null]
         })
       }) : null, "tab-id-role-icon-emoji" === N ? (0, t.jsx)(r.Z, {
@@ -113,15 +115,15 @@ let C = function(n) {
           let {
             emoji: e
           } = n;
-          if ((null == e ? true : e.id) != null)(null == e ? true : e.type) === s.B.GUILD && o(await j(e));
+          if ((null == e ? true : e.id) != null)(null == e ? true : e.type) === s.B.GUILD && a(await j(e));
           else if ((null == e ? true : e.surrogates) != null) {
-            var t, a;
-            p(null != (a = null == (t = e.defaultDiversityChild) ? true : t.surrogates) ? a : e.surrogates)
+            var t, o;
+            p(null != (o = null == (t = e.defaultDiversityChild) ? true : t.surrogates) ? o : e.surrogates)
           }
           m()
         },
-        pickerIntention: g.Hz.COMMUNITY_CONTENT,
-        channel: v
+        pickerIntention: x.Hz.COMMUNITY_CONTENT,
+        channel: b
       }) : null]
     })
   })

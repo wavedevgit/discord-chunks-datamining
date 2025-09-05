@@ -93,7 +93,9 @@ let b = "PALUE000000001",
             skuID: b
           })
         },
-        buttonCTA: "Upload Override"
+        size: "sm",
+        variant: "primary",
+        text: m.intl.string(m.t.a9F1Qk)
       })]
     })
   }

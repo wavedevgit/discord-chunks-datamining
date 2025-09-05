@@ -96,7 +96,7 @@ function R(e) {
   } = (0, j.Z)(0), {
     scrolledToTop: Z,
     handleScroll: D
-  } = (0, v.V)(), A = (0, c.e7)([h.Z], () => {
+  } = (0, _.V)(), A = (0, c.e7)([h.Z], () => {
     var e;
     return null == (e = h.Z.getRoleMemberCount(t.id)) ? true : e[n.id]
   }, [n.id, t.id]), L = (0, c.Wu)([x.Z], () => {
@@ -236,7 +236,7 @@ function R(e) {
         }
         return (0, r.jsx)("div", {
           className: E.configurationsContainer,
-          children: Array.from(s.values()).map(e => (0, r.jsx)(_.Z, {
+          children: Array.from(s.values()).map(e => (0, r.jsx)(v.Z, {
             configurationItems: e,
             onConfigurationChange: a,
             locked: n,
@@ -259,7 +259,7 @@ function R(e) {
           [I.stickyHeaderElevated]: !Z
         }),
         ref: R,
-        children: (0, r.jsx)(v.Z, {
+        children: (0, r.jsx)(_.Z, {
           guild: t,
           role: n,
           selectedSection: O.ZI.VERIFICATIONS,

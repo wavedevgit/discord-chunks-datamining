@@ -61,17 +61,17 @@ function C(e) {
     channel: i
   } = e, l = (0, b.Mf)(i.id);
   return "null" === i.id ? (0, r.jsx)("div", {
-    className: a()(v.categoryRow, v.uncategorized),
+    className: a()(_.categoryRow, _.uncategorized),
     children: (0, r.jsx)(c.Text, {
-      className: v.categoryText,
+      className: _.categoryText,
       color: "text-muted",
       variant: "text-xs/semibold",
       lineClamp: 1,
       children: i.name
     })
   }) : (0, r.jsxs)(c.P3F, {
-    className: a()(v.categoryRow, {
-      [v.uncategorized]: "null" === i.id
+    className: a()(_.categoryRow, {
+      [_.uncategorized]: "null" === i.id
     }),
     onContextMenu: e => {
       (0, d.jW)(e, async () => {
@@ -94,7 +94,7 @@ function C(e) {
       }))
     }), true),
     children: [(0, r.jsx)(c.Text, {
-      className: v.categoryText,
+      className: _.categoryText,
       color: "text-muted",
       variant: "text-xs/semibold",
       lineClamp: 1,
@@ -103,7 +103,7 @@ function C(e) {
       "aria-checked": l,
       value: l,
       type: o.M0.INVERTED,
-      className: v.checkbox,
+      className: _.checkbox,
       displayOnly: true
     })]
   })
@@ -119,7 +119,7 @@ let N = Chunk647438.memo(function() {
     } = e;
     return (0, r.jsx)(c.Text, {
       variant: "text-xs/normal",
-      className: v.subtitleSeparator,
+      className: _.subtitleSeparator,
       children: "\xb7"
     }, "separator-".concat(t))
   }),
@@ -166,25 +166,25 @@ let N = Chunk647438.memo(function() {
         delay: 500,
         position: I,
         children: e => (0, r.jsxs)(c.P3F, y(O({
-          className: a()(v.channelRow, {
-            [v.firstChannel]: f,
-            [v.lastChannel]: C,
-            [v.disabled]: T
+          className: a()(_.channelRow, {
+            [_.firstChannel]: f,
+            [_.lastChannel]: C,
+            [_.disabled]: T
           })
         }, e), {
           onClick: D,
           onContextMenu: A,
           children: [(0, r.jsx)("div", {
-            className: v.channelInfo,
+            className: _.channelInfo,
             children: (0, r.jsxs)("div", {
-              className: v.channelName,
+              className: _.channelName,
               children: [(0, r.jsx)(p._W, {
                 channel: t,
                 guild: l
               }), (0, r.jsx)(u.Z, {
-                className: v.__invalid_name,
+                className: _.__invalid_name,
                 children: (0, r.jsx)(c.Text, {
-                  className: v.channelText,
+                  className: _.channelText,
                   variant: "text-md/medium",
                   lineClamp: 1,
                   color: T ? "text-muted" : "text-default",
@@ -195,26 +195,26 @@ let N = Chunk647438.memo(function() {
                   index: 0
                 }), (0, r.jsx)(c.Text, {
                   variant: "text-xs/medium",
-                  className: v.channelSubtitle,
+                  className: _.channelSubtitle,
                   color: "text-brand",
-                  children: _.intl.string(_.t.mPxmeH)
+                  children: v.intl.string(v.t.mPxmeH)
                 })]
               }) : null]
             })
           }), (0, r.jsx)("div", {
-            className: v.channelActions,
+            className: _.channelActions,
             children: (0, m.s)(t.guild_id, t.id) ? (0, r.jsx)(o.$q, {
               "aria-checked": S,
               value: S,
               type: o.M0.INVERTED,
               disabled: T,
               color: Z ? s.Z.colors.BG_BRAND.css : s.Z.colors.BUTTON_SECONDARY_BACKGROUND.css,
-              innerClassName: v.checkboxInner,
+              innerClassName: _.checkboxInner,
               displayOnly: true
             }) : (0, r.jsx)(c.zxk, {
               size: "sm",
               variant: "secondary",
-              text: _.intl.string(_.t.zA9d1N),
+              text: v.intl.string(v.t.zA9d1N),
               icon: c.mBM,
               onClick: j.dG4
             })

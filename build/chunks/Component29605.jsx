@@ -115,7 +115,7 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
         duration: 200,
         clamp: true
       }
-    }), o ? "respect-motion-settings" : "animate-never"), _ = L.ZP.useUserTag(n.user);
+    }), o ? "respect-motion-settings" : "animate-never"), v = L.ZP.useUserTag(n.user);
     return (0, r.jsxs)("div", {
       className: a()(z.emojiRow, W.card),
       children: [(0, r.jsx)("div", {
@@ -163,11 +163,11 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
         className: z.column,
         children: [(0, r.jsx)(f.qEK, {
           src: n.user.getAvatarURL(t, 20),
-          "aria-label": _,
+          "aria-label": v,
           size: f.EFr.SIZE_20
         }), (0, r.jsx)(f.R94, {
           className: z.emojiRowText,
-          children: _
+          children: v
         })]
       }), null != l && !s && (0, r.jsx)(f.P3F, {
         "aria-label": H.intl.string(H.t.bt75u7),

@@ -72,15 +72,15 @@ function C(e) {
         }), (0, r.jsxs)("div", {
           className: y.headerDescriptionContainer,
           children: [G && (0, r.jsx)(d.IGR, {
-            color: (0, u.Lq)(v.Ilk.YELLOW_300),
+            color: (0, u.Lq)(_.Ilk.YELLOW_300),
             text: O.intl.string(O.t.vosPk5),
             className: y.draftBadge
           }), M && (0, r.jsx)(d.IGR, {
-            color: (0, u.Lq)(v.Ilk.PRIMARY_500),
+            color: (0, u.Lq)(_.Ilk.PRIMARY_500),
             text: O.intl.string(O.t.nhbtEh),
             className: y.archivedBadge
           }), U && (0, r.jsx)(d.IGR, {
-            color: (0, u.Lq)(v.Ilk.PRIMARY_500),
+            color: (0, u.Lq)(_.Ilk.PRIMARY_500),
             text: O.intl.string(O.t.aiwXen),
             className: y.unsavedBadge
           }), null != L && (0, r.jsxs)(d.Text, {
@@ -125,7 +125,7 @@ function C(e) {
       editStateId: P,
       guildId: l,
       groupListingId: I,
-      children: (0, r.jsx)(_.Z, {
+      children: (0, r.jsx)(v.Z, {
         allSubscriptionListings: C,
         priceTiers: N,
         loading: et,

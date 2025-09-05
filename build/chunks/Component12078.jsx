@@ -39,7 +39,7 @@ function j(e) {
   return e
 }
 
-function _(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,7 +52,7 @@ function _(e, t) {
   }), e
 }
 
-function v(e) {
+function _(e) {
   let {
     profile: t,
     canManageGuild: n,
@@ -65,7 +65,7 @@ function v(e) {
   });
   return (0, r.jsx)(o.ua7, {
     text: b.intl.string(b.t.W4Nd7e),
-    children: e => (0, r.jsx)(o.P3F, _(j({}, e), {
+    children: e => (0, r.jsx)(o.P3F, v(j({}, e), {
       "aria-disabled": !n,
       tabIndex: n ? 0 : false,
       "aria-label": b.intl.string(b.t.W4Nd7e),
@@ -157,7 +157,7 @@ function y(e) {
     title: b.intl.string(b.t.BSVog4),
     children: (0, r.jsxs)("div", {
       className: x.grid,
-      children: [(0, r.jsx)(v, {
+      children: [(0, r.jsx)(_, {
         profile: n,
         canManageGuild: d,
         handleClick: C(null),
@@ -169,7 +169,7 @@ function y(e) {
         } = e;
         return (0, r.jsx)(o.ua7, {
           text: t,
-          children: e => (0, r.jsx)(o.P3F, _(j({}, e), {
+          children: e => (0, r.jsx)(o.P3F, v(j({}, e), {
             "aria-disabled": !d,
             tabIndex: d ? 0 : false,
             "aria-label": t,

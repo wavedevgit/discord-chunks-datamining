@@ -42,22 +42,22 @@ function S(e) {
   var t;
   let {
     guild: n,
-    requireDescription: c
-  } = e, d = i.useCallback(e => {
+    requireDescription: s
+  } = e, c = i.useCallback(e => {
     p.Z.updateGuild({
       discoverySplash: e
     })
-  }, []), u = i.useCallback(() => {
+  }, []), d = i.useCallback(() => {
     p.Z.updateGuild({
       discoverySplash: null
     })
-  }, []), f = i.useCallback(e => {
+  }, []), u = i.useCallback(e => {
     p.Z.updateGuild({
       description: e
     })
   }, []), {
-    memberCount: h,
-    onlineCount: b
+    memberCount: f,
+    onlineCount: h
   } = (0, a.cj)([g.Z], () => ({
     memberCount: g.Z.getMemberCount(n.id),
     onlineCount: g.Z.getOnlineCount(n.id)
@@ -89,12 +89,14 @@ function S(e) {
           children: N.intl.string(N.t.VJMq8f)
         }), (0, r.jsxs)("div", {
           className: E.buttonList,
-          children: [(0, r.jsx)(m.Z, {
-            size: s.zx.Sizes.SMALL,
-            color: s.zx.Colors.PRIMARY,
+          children: [(0, r.jsx)("div", {
             className: E.editableSection,
-            buttonCTA: N.intl.string(N.t["3UB9aW"]),
-            onChange: d
+            children: (0, r.jsx)(m.Z, {
+              onChange: c,
+              text: N.intl.string(N.t["3UB9aW"]),
+              size: "sm",
+              variant: "secondary"
+            })
           }), null != n.discoverySplash ? (0, r.jsx)("div", {
             "data-button-hoisted-classname-wrapper": true,
             className: E.editableSection,
@@ -102,7 +104,7 @@ function S(e) {
               variant: "critical-secondary",
               size: "sm",
               text: N.intl.string(N.t.N86XcH),
-              onClick: u
+              onClick: d
             })
           }) : null]
         })]
@@ -111,7 +113,7 @@ function S(e) {
           variant: "text-xs/bold",
           color: "text-muted",
           className: E.subHeader,
-          children: [N.intl.string(N.t["1Ts7QE"]), c ? (0, r.jsx)(I, {}) : null]
+          children: [N.intl.string(N.t["1Ts7QE"]), s ? (0, r.jsx)(I, {}) : null]
         }), (0, r.jsx)(o.Text, {
           variant: "text-sm/medium",
           color: "text-secondary",
@@ -121,7 +123,7 @@ function S(e) {
           children: (0, r.jsx)(o.Kx8, {
             value: null != (t = n.description) ? t : "",
             placeholder: N.intl.string(N.t.Nvfows),
-            onChange: f,
+            onChange: u,
             maxLength: l.Us
           })
         })]
@@ -129,8 +131,8 @@ function S(e) {
     }), (0, r.jsx)(x.Z, {
       className: E.preview,
       guild: n,
-      memberCount: h,
-      presenceCount: b
+      memberCount: f,
+      presenceCount: h
     })]
   })
 }
@@ -213,7 +215,7 @@ function P(e) {
       keywords: r
     } = n;
     !(r.length >= y.G7) && (r.includes(e) || (m(null), (0, d.zH)(t, [...r, e])))
-  }, [t, n]), f = i.useMemo(() => (0, _.P5)(n.primaryCategoryId).filter(e => !n.keywords.includes(e)).map(e => {
+  }, [t, n]), f = i.useMemo(() => (0, v.P5)(n.primaryCategoryId).filter(e => !n.keywords.includes(e)).map(e => {
     let t = n.keywords.length >= y.G7;
     return {
       text: e,
@@ -381,7 +383,7 @@ function D(e) {
     }), (0, r.jsx)(Z, {}), (0, r.jsx)(R, {
       preferredLocale: o.preferredLocale
     }), (0, r.jsx)(Z, {}), (0, r.jsx)("div", {
-      children: (0, r.jsx)(v.A, {
+      children: (0, r.jsx)(_.A, {
         requireTerms: t,
         rules: n
       })

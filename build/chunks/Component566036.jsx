@@ -74,7 +74,7 @@ function j(e) {
     c.Z.updateGuildProfile(o, {
       gameApplicationIds: t
     })
-  }, [o, d]), _ = i.useRef(d), v = i.useMemo(() => (a().isEqual(new Set(d), new Set(_.current)) || (_.current = [...d]), _.current), [d]);
+  }, [o, d]), v = i.useRef(d), _ = i.useMemo(() => (a().isEqual(new Set(d), new Set(v.current)) || (v.current = [...d]), v.current), [d]);
   return (0, r.jsxs)(s.hjN, {
     className: p.section,
     children: [(0, r.jsxs)("div", {
@@ -92,7 +92,7 @@ function j(e) {
         handleChange: f,
         disabled: !l
       }), (0, r.jsx)(b, {
-        gameApplicationIds: v,
+        gameApplicationIds: _,
         onRemoveGame: j,
         disabled: !l
       }), (0, r.jsx)(u.Z, {

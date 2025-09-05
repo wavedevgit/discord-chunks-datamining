@@ -23,9 +23,9 @@ function h(e) {
     canManageGuild: n
   } = e, h = t.features.has(d.oNc.BANNER), b = t.features.has(d.oNc.ANIMATED_BANNER), x = h && n, {
     analyticsLocations: j
-  } = (0, a.ZP)(), _ = i.useCallback((e, n) => {
+  } = (0, a.ZP)(), v = i.useCallback((e, n) => {
     (0, c.f4)(t, j, e, n)
-  }, [j, t]), v = i.useCallback(e => {
+  }, [j, t]), _ = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, c.E6)({
       guild: t,
       analyticsLocations: j,
@@ -40,7 +40,7 @@ function h(e) {
       banner: e
     }, b) : null,
     disabled: !x,
-    onChange: _,
+    onChange: v,
     hint: p.intl.string(p.t.uPvxqK),
     onOpenImageSelectModal: () => (0, c.mw)({
       uploadType: m.pC.GUILD_BANNER,
@@ -50,7 +50,7 @@ function h(e) {
           imageUri: t,
           file: n
         } = e;
-        return _(t, n)
+        return v(t, n)
       },
       analyticsLocation: {
         page: d.ZY5.GUILD_SETTINGS,
@@ -64,7 +64,7 @@ function h(e) {
     "aria-hidden": true,
     tabIndex: false,
     className: f.upsell,
-    onClick: v,
+    onClick: _,
     children: O
   })
 }
