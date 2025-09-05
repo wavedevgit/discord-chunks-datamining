@@ -241,21 +241,19 @@ function Q(e) {
           shouldClear: false,
           shouldRefocus: true
         };
-        if (null == n) {
-          let {
-            valid: n
-          } = await (0, M.v)({
-            content: e,
-            stickers: i,
-            uploads: l,
-            type: Y,
-            channel: t
-          });
-          if (!n) return f(false), {
-            shouldClear: false,
-            shouldRefocus: true
-          }
-        }
+        let {
+          valid: _
+        } = await (0, M.v)({
+          content: e,
+          stickers: i,
+          uploads: l,
+          type: Y,
+          channel: null == n ? t : null
+        });
+        if (!_) return f(false), {
+          shouldClear: false,
+          shouldRefocus: true
+        };
         try {
           await m(e, i, l)
         } catch (e) {
