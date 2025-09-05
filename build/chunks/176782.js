@@ -42,6 +42,15 @@ let s = {
             className: t ? o.nitroGradientBorderHover : true
           }
         },
+        [a.zW.PROMOTION_REDEMPTION]: {
+          cardContainer: {
+            className: o.nitroGradientBorderHover
+          },
+          perkImage: {
+            disableHoverAnimation: true,
+            className: o.promotionRedemptionImage
+          }
+        },
         [a.zW.NITRO_GRADIENT_HOVER_BORDER]: {
           cardContainer: {
             className: o.nitroGradientBorderHover

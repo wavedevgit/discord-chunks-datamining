@@ -1,4 +1,4 @@
-/** Chunk was on 59289 **/
+/** Chunk was on 72853 **/
 /** chunk id: 535188, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => l
@@ -13,14 +13,14 @@ let l = e => {
     onSubmit: n,
     disabled: l
   } = e, {
-    task: o
-  } = (0, i.T)(), c = a.o[o.ui_component.component.type];
-  return null == c ? null : (0, r.jsx)(c, {
-    configData: o.ui_component.component.data,
+    task: c
+  } = (0, i.T)(), o = a.o[c.ui_component.component.type];
+  return null == o ? null : (0, r.jsx)(o, {
+    configData: c.ui_component.component.data,
     onSubmit: n,
-    taskId: o.task_id,
-    flowId: null == (t = o.flow_context) ? true : t.flow_id,
-    assignmentId: o.assignment_id,
+    taskId: c.task_id,
+    flowId: null == (t = c.flow_context) ? true : t.flow_id,
+    assignmentId: c.assignment_id,
     disabled: l
   })
 }

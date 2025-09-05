@@ -1,8 +1,8 @@
-/** Chunk was on 59289 **/
+/** Chunk was on 72853 **/
 /** chunk id: 845077, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   PA: () => l,
-  Wl: () => o
+  Wl: () => c
 });
 var Chunk990547 = require("./990547.js");
 require("./479531.js");
@@ -18,7 +18,7 @@ async function l() {
   });
   return 204 === module.status ? null : module.body
 }
-async function o(e) {
+async function c(e) {
   return (await i.Z.post({
     url: a.ANM.SAFETY_FLOWS_TASK,
     body: e,

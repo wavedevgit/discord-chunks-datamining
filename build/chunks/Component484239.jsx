@@ -14,59 +14,70 @@ var Chunk120356 = require("./120356.js"),
   Chunk743612 = require("./743612.jsx"),
   Chunk759291 = require("./759291.js");
 let d = e => {
-  var t;
+  var t, n, i, d;
   let {
-    title: n,
-    titleClassName: i,
-    buttonClassName: d,
-    perkImage: f,
-    isCarousel: _,
-    onCtaClick: p,
-    perkComponent: h,
-    subtitle: m = "",
-    descriptionCta: g = "",
-    cardVariant: E,
-    subtitleClassName: b,
-    imageOverlayText: y
-  } = e, O = e => (null == e ? true : e.onlyShowOnHover) !== true, v = (0, l._)(E), I = null != y;
+    title: f,
+    titleClassName: _,
+    buttonClassName: p,
+    perkImage: h,
+    isCarousel: m,
+    onCtaClick: g,
+    perkComponent: E,
+    subtitle: b = "",
+    descriptionCta: y = "",
+    cta: O = "",
+    cardVariant: v,
+    subtitleClassName: I,
+    imageOverlayText: T
+  } = e, S = e => (null == e ? true : e.onlyShowOnHover) !== true, A = (0, l._)(v), C = null != T;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: a()(u.cover, u.below)
     }), (0, r.jsx)(c.Z, {
-      title: n,
-      shouldShowElement: O,
-      cardVariantStyleInfo: v,
-      titleClassName: i,
-      subtitle: m,
-      subtitleClassName: b
-    }), null != f && (0, r.jsxs)("div", {
+      title: f,
+      shouldShowElement: S,
+      cardVariantStyleInfo: A,
+      titleClassName: _,
+      subtitle: b,
+      subtitleClassName: I
+    }), null != h && (0, r.jsxs)("div", {
       className: a()(u.relative, {
-        [u.cardImage]: !_
-      }),
+        [u.cardImage]: !m,
+        [u.hoverCardImage]: !m && !(null == A || null == (t = A.perkImage) ? true : t.disableHoverAnimation)
+      }, null == A || null == (n = A.perkImage) ? true : n.className),
       children: [(0, r.jsx)("img", {
-        src: f,
+        src: h,
         alt: "",
-        className: _ ? I ? u.carouselCardImageGrayscale : u.carouselCardImage : ""
-      }), I ? (0, r.jsx)("div", {
+        className: m ? C ? u.carouselCardImageGrayscale : u.carouselCardImage : ""
+      }), C ? (0, r.jsx)("div", {
         className: u.imageOverlayTextContainer,
         children: (0, r.jsx)(s.Text, {
           className: u.imageOverlayText,
           variant: "text-md/bold",
-          children: y
+          children: T
         })
       }) : null]
-    }), null != h && (0, r.jsxs)("div", {
+    }), null != E && (0, r.jsxs)("div", {
       className: u.cardIllustrationNoHover,
-      children: [h, 0 !== g.length && null != p && (0, r.jsx)(o.zx, {
+      children: [E, 0 !== y.length && null != g && (0, r.jsx)(o.zx, {
         "data-migration-pending": true,
-        className: d,
+        className: p,
         fullWidth: true,
-        onClick: p,
+        onClick: g,
         children: (0, r.jsx)("div", {
-          className: null == v || null == (t = v.descriptionCta) ? true : t.className,
-          children: g
+          className: null == A || null == (i = A.descriptionCta) ? true : i.className,
+          children: y
         })
       })]
+    }), "" !== O && null != g && (0, r.jsx)(o.zx, {
+      "data-migration-pending": true,
+      className: p,
+      fullWidth: true,
+      onClick: g,
+      children: (0, r.jsx)("div", {
+        className: null == A || null == (d = A.cta) ? true : d.className,
+        children: O
+      })
     })]
   })
 }

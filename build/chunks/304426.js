@@ -1,8 +1,11 @@
-/** Chunk was on 59289 **/
-/** chunk id: 304426, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 304426, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  C: () => a,
-  m: () => i
+  C: () => i,
+  m: () => r
 });
-var r, i = ((r = {}).NITRO_DROP = "NITRO_DROP", r);
-let a = "NITRO_DROP"
+var r = function(e) {
+  return e.NITRO_DROP = "NITRO_DROP", e
+}({});
+let i = "NITRO_DROP"

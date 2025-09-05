@@ -1,4 +1,4 @@
-/** Chunk was on 59289 **/
+/** Chunk was on 72853 **/
 /** chunk id: 62272, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Q: () => s
@@ -20,16 +20,16 @@ let s = e => {
   return (0, r.jsxs)(a.Kqy, {
     direction: "vertical",
     justify: "start",
-    padding: o.h,
-    className: c.container,
+    padding: c.h,
+    className: o.container,
     children: [(0, r.jsx)(a.X6q, {
       variant: "heading-lg/semibold",
-      className: c.heading,
+      className: o.heading,
       children: u
     }), (0, r.jsx)(i.f, {
       children: t
     }), (0, r.jsx)("div", {
-      className: c.footerSpacer
+      className: o.footerSpacer
     }), (0, r.jsx)(l.A, {
       actions: n,
       footerInput: s

@@ -32,7 +32,8 @@ function d(e) {
       return o
     }(e, ["modalConfig", "markAsDismissed"]);
   let b = o.useCallback(e => {
-    d.onPrimaryClick(e), p(i.L.TAKE_ACTION)
+    var t;
+    null == (t = d.onPrimaryClick) || t.call(d, e), p(i.L.TAKE_ACTION)
   }, [d, p]);
   return (0, r.jsxs)(a.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -94,7 +95,7 @@ function d(e) {
                 text: c.intl.string(c.t["ETE/oK"]),
                 onClick: u.onClose
               })
-            }), (0, r.jsx)("div", {
+            }), null != d.primaryButtonText && (0, r.jsx)("div", {
               "data-button-hoisted-classname-wrapper": true,
               className: l.button,
               children: (0, r.jsx)(a.zxk, {

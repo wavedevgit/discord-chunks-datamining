@@ -1,4 +1,4 @@
-/** Chunk was on 59289 **/
+/** Chunk was on 72853 **/
 /** chunk id: 918714, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -22,13 +22,13 @@ function h(e) {
     task: t,
     handleSubmit: n,
     disabled: l
-  } = e, [o, s] = i.useState(t), f = i.useMemo(() => ({
-    task: o,
+  } = e, [c, s] = i.useState(t), f = i.useMemo(() => ({
+    task: c,
     setTask: s
-  }), [o, s]);
+  }), [c, s]);
   return i.useEffect(() => {
     s(t)
-  }, [t]), (0, r.jsx)(c.y.Provider, {
+  }, [t]), (0, r.jsx)(o.y.Provider, {
     value: f,
     children: (0, r.jsxs)(a.Kqy, {
       direction: "horizontal",
@@ -44,13 +44,13 @@ function h(e) {
 let g = function(e) {
   let {
     onClose: t
-  } = e, [n, c] = i.useState(null), [u, d] = i.useState(true), [g, v] = i.useState(null), [b, j] = i.useState(false), x = i.useCallback(async () => {
+  } = e, [n, o] = i.useState(null), [u, d] = i.useState(true), [g, v] = i.useState(null), [b, j] = i.useState(false), x = i.useCallback(async () => {
     d(true), v(null);
     try {
       var e;
-      let n = await (0, o.PA)();
+      let n = await (0, c.PA)();
       if (null == n) return void t();
-      !(0, l.Ew)(null == (e = n.ui_component) ? true : e.component.type) && s.VZ.has(n.ui_component.component.type) ? c(n) : c({
+      !(0, l.Ew)(null == (e = n.ui_component) ? true : e.component.type) && s.VZ.has(n.ui_component.component.type) ? o(n) : o({
         task_id: n.task_id,
         task_type: s.UA.REFRESH_APP,
         assignment_id: n.assignment_id,
@@ -79,7 +79,7 @@ let g = function(e) {
           flow_id: n.flow_context.flow_id,
           data: e
         };
-        await (0, o.Wl)(t), x()
+        await (0, c.Wl)(t), x()
       } catch (e) {
         v(p.intl.string(f.default["+QRSxc"]))
       } finally {

@@ -202,61 +202,63 @@ let P = Chunk647438.forwardRef((e, t) => {
     subtitle: s = "",
     description: l = "",
     descriptionCta: c = "",
-    isPremiumGetCta: d,
-    onCtaClick: f,
-    onMouseEnter: _,
-    className: p,
-    perkComponent: m,
-    cardVariant: g,
-    cardType: O,
-    onClick: v,
-    backgroundImage: I,
-    pillText: S,
-    perkImage: A,
-    imageOverlayText: C,
-    hasNitroGradientBackground: N
-  } = e, R = O === E.gM.CARD_CAROUSEL_FIRST_ROW || O === E.gM.CARD_CAROUSEL_SECOND_ROW || O === E.gM.CARD_CAROUSEL_THIRD_ROW, P = "" !== l || "" !== c || "" !== s && g === E.zW.REWARD, w = (0, h._)(g);
+    cta: d,
+    isPremiumGetCta: f,
+    onCtaClick: _,
+    onMouseEnter: p,
+    className: m,
+    perkComponent: g,
+    cardVariant: O,
+    cardType: v,
+    onClick: I,
+    backgroundImage: S,
+    pillText: A,
+    perkImage: C,
+    imageOverlayText: N,
+    hasNitroGradientBackground: R
+  } = e, P = v === E.gM.CARD_CAROUSEL_FIRST_ROW || v === E.gM.CARD_CAROUSEL_SECOND_ROW || v === E.gM.CARD_CAROUSEL_THIRD_ROW, w = "" !== l || "" !== c || "" !== s && O === E.zW.REWARD, D = (0, h._)(O);
   return (0, r.jsxs)(u.P3F, {
-    className: o()(T.card, p, null == (n = w.cardContainer) ? true : n.className, {
-      [T.clickable]: null != v,
-      [T.hideOverflow]: R,
-      [T.nitroGradientBackground]: N
+    className: o()(T.card, m, null == (n = D.cardContainer) ? true : n.className, {
+      [T.clickable]: null != I,
+      [T.hideOverflow]: P,
+      [T.nitroGradientBackground]: R
     }),
-    onMouseEnter: _,
+    onMouseEnter: p,
     style: {
-      backgroundImage: null != I ? "url(".concat(I, ")") : true,
-      backgroundPosition: null != I ? "bottom right" : true,
-      backgroundRepeat: null != I ? "no-repeat" : true
+      backgroundImage: null != S ? "url(".concat(S, ")") : true,
+      backgroundPosition: null != S ? "bottom right" : true,
+      backgroundRepeat: null != S ? "no-repeat" : true
     },
-    onClick: v,
-    children: [null != S && (0, r.jsx)(u.Text, {
+    onClick: I,
+    children: [null != A && (0, r.jsx)(u.Text, {
       variant: "text-xs/semibold",
       className: T.pill,
-      children: S
+      children: A
     }), (0, r.jsx)("div", {
       ref: t
     }), (0, r.jsx)(b.Z, {
       title: i,
       titleClassName: a,
       subtitle: s,
-      perkImage: A,
-      isCarousel: R,
+      perkImage: C,
+      isCarousel: P,
       descriptionCta: c,
-      onCtaClick: f,
-      perkComponent: m,
+      cta: d,
+      onCtaClick: _,
+      perkComponent: g,
       subtitleClassName: T.cardSubtitle,
-      cardVariant: g,
-      imageOverlayText: C
-    }), P && (0, r.jsx)(y.Z, {
+      cardVariant: O,
+      imageOverlayText: N
+    }), w && (0, r.jsx)(y.Z, {
       title: i,
       titleClassName: a,
       subtitle: s,
       description: l,
       descriptionCta: c,
-      isPremiumGetCta: d,
-      onCtaClick: f,
-      cardVariant: g,
-      perkComponent: m
+      isPremiumGetCta: f,
+      onCtaClick: _,
+      cardVariant: O,
+      perkComponent: g
     }), (0, r.jsx)("div", {
       className: o()(T.cover, T.above),
       ref: t

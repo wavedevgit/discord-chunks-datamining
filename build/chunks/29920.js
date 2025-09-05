@@ -1,14 +1,13 @@
-/** Chunk was on 59289 **/
-/** chunk id: 29920, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 29920, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   He: () => s,
-  Ul: () => u
+  Ul: () => l
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk960048 = require("./960048.js"),
-  Chunk219333 = require("./219333.js"),
-  Chunk304426 = require("./304426.js"),
   Chunk981631 = require("./981631.js");
 async function s(e) {
   let {
@@ -18,7 +17,7 @@ async function s(e) {
   } = e;
   try {
     let e = await r.tn.post({
-      url: c.ANM.PREMIUM_MARKETING,
+      url: o.ANM.PREMIUM_MARKETING,
       body: {
         user_trial_offer: t,
         user_discount: n,
@@ -32,22 +31,20 @@ async function s(e) {
     return []
   }
 }
-async function u(e) {
+async function l(e) {
   let {
     subscriptionId: t
   } = e;
   try {
     let e = await r.tn.post({
-      url: c.ANM.BILLING_SUBSCRIPTION_PROMOTION_REWARD(t),
+      url: o.ANM.BILLING_SUBSCRIPTION_PROMOTION_REWARD(t),
       rejectWithError: true
     });
     return i.Z.dispatch({
       type: "ENTITLEMENT_CREATE",
       entitlement: e.body
-    }), (0, l.j)({
-      campaignID: o.C
-    }), e.ok
+    }), e.body
   } catch (e) {
-    returnfalse
+    return null
   }
 }
