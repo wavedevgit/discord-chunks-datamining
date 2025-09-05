@@ -56,7 +56,8 @@ let c = "collectibles shop product details modal",
       analyticsSource: u,
       analyticsLocations: d,
       returnRef: f,
-      tab: _
+      tab: _,
+      variantType: p
     } = e;
     (0, i.ZDy)(async () => {
       let {
@@ -69,7 +70,8 @@ let c = "collectibles shop product details modal",
         analyticsSource: u,
         analyticsLocations: d,
         returnRef: f,
-        tab: _
+        tab: _,
+        variantType: p
       }))
     }, {
       modalKey: c
