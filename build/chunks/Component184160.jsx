@@ -25,33 +25,33 @@ function f(e) {
     handleClose: n
   } = e, i = (0, o.ZP)(), {
     activeSubscription: f,
-    selectedSkuId: j,
-    setSelectedPlanId: m,
+    selectedSkuId: m,
+    setSelectedPlanId: j,
     startedPaymentFlowWithPaymentSourcesRef: L
-  } = (0, p.JL)(), {
+  } = (0, u.JL)(), {
     isGift: g
-  } = (0, c.wD)(), b = null != f ? (0, d.Af)(f) : null, S = null != b ? (0, d.gq)(b.planId) : null, y = null != b ? (0, d.Rd)(b.planId) : null, v = (0, x.Kp)({
+  } = (0, c.wD)(), b = null != f ? (0, d.Af)(f) : null, y = null != b ? (0, d.gq)(b.planId) : null, S = null != b ? (0, d.Rd)(b.planId) : null, v = (0, x.Kp)({
     isTrial: false,
     isGift: g,
-    selectedSkuId: j,
+    selectedSkuId: m,
     startedPaymentFlowWithPaymentSources: L.current
   });
-  return l()(null != y, "Expected premium type"), (0, r.jsx)(C.Z, {
-    premiumType: y,
+  return l()(null != S, "Expected premium type"), (0, r.jsx)(C.Z, {
+    premiumType: S,
     titleText: _.intl.string(_.t["7VcWW1"]),
     subtitleText: _.intl.format(_.t.Qk34Ii, {
-      subscriptionName: S
+      subscriptionName: y
     }),
     footer: (0, r.jsxs)("div", {
       className: h.whatYouLoseButtonContainer,
-      children: [(0, r.jsx)(a.zx, {
+      children: [(0, r.jsx)(s.zx, {
         onClick: () => {
-          v ? (m((0, x.nA)(j, f)), t(u.h8.REVIEW)) : t(u.h8.PLAN_SELECT)
+          v ? (j((0, x.nA)(m, f)), t(p.h8.REVIEW)) : t(p.h8.PLAN_SELECT)
         },
         children: _.intl.string(_.t["3PatS0"])
-      }), (0, r.jsx)(a.zx, {
-        look: a.zx.Looks.LINK,
-        color: (0, s.wj)(i) ? a.zx.Colors.WHITE : a.zx.Colors.PRIMARY,
+      }), (0, r.jsx)(s.zx, {
+        look: s.zx.Looks.LINK,
+        color: (0, a.wj)(i) ? s.zx.Colors.WHITE : s.zx.Colors.PRIMARY,
         onClick: n,
         children: _.intl.string(_.t.h9tkAA)
       })]

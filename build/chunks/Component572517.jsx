@@ -23,11 +23,11 @@ function x() {
     h = (0, Chunk347896.Z)(),
     f = null == h ? true : h.planSelectionBanner,
     {
-      claimableRewards: j
+      claimableRewards: m
     } = (0, Chunk987209.wD)();
-  if (null == f || null == j) return null;
-  let m = null == (e = f.getBackgroundImageUrl) ? true : module.call(f, _),
-    L = (0, Chunk717401.Yr)(m),
+  if (null == f || null == m) return null;
+  let j = null == (e = f.getBackgroundImageUrl) ? true : module.call(f, _),
+    L = (0, Chunk717401.Yr)(j),
     g = null == (t = f.gradientConfig) ? true : exports.call(f, {
       isDarkMode: _,
       isAndroid: false
@@ -39,7 +39,7 @@ function x() {
     children: [(0, Chunk951288.jsx)("div", {
       className: Chunk432483.avatar,
       children: (0, Chunk951288.jsx)(Chunk897942.Z, {
-        claimableRewards: j,
+        claimableRewards: m,
         maxRewardImageSrc: f.getImageUrl(_, require),
         size: Chunk481060.EFr.SIZE_40,
         imageScaling: 2
@@ -48,7 +48,7 @@ function x() {
       variant: "text-md/medium",
       className: Chunk432483.bannerText,
       color: "always-white",
-      children: f.desktopBannerText(j.length)
+      children: f.desktopBannerText(m.length)
     })]
   })
 }

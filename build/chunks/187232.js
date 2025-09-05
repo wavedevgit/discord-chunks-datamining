@@ -85,6 +85,24 @@ let m = {
         })
       }
     },
+    segmentedControlAnimations: {
+      trick: {
+        getAnimationData: () => require.e("44538").then(require.bind(require, 285517)).then(e => {
+          let {
+            default: t
+          } = e;
+          return fetch(t).then(e => e.json())
+        })
+      },
+      treat: {
+        getAnimationData: () => require.e("35244").then(require.bind(require, 220628)).then(e => {
+          let {
+            default: t
+          } = e;
+          return fetch(t).then(e => e.json())
+        })
+      }
+    },
     dismissibleContentVersion: 4,
     firstTimeNotice: {
       getImageUrl: (e, t) => t ? _.Z : f.Z,

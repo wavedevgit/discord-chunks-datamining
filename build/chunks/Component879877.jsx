@@ -29,7 +29,7 @@ function y(e) {
     disableInteraction: y = false
   } = e, x = null != (t = null == r ? true : r.filter(e => null != (0, p.zK)(e))) ? t : [], w = x.length > 0, P = Object.values(a._).length, S = l && !y && (0, f.M8)(c) && x.length < P, {
     trackUserProfileAction: E
-  } = (0, d.KZ)(), I = (0, i.useRef)(new Map), D = (0, i.useRef)(null), k = (0, i.useRef)(null), [N, Z] = (0, i.useState)(0), [T, C] = (0, i.useState)(false), R = h(D, k, x, I, Z);
+  } = (0, d.KZ)(), D = (0, i.useRef)(new Map), I = (0, i.useRef)(null), k = (0, i.useRef)(null), [N, Z] = (0, i.useState)(0), [T, C] = (0, i.useState)(false), R = h(I, k, x, D, Z);
   if ((0, i.useEffect)(() => (R(), window.addEventListener("resize", R), () => {
       window.removeEventListener("resize", R)
     }), [R, null == x ? true : x.join("")]), !w && !S) return null;
@@ -46,7 +46,7 @@ function y(e) {
           applicationId: s,
           widgetType: c,
           ref: t => {
-            null != t && I.current.set(e, t)
+            null != t && D.current.set(e, t)
           },
           disableInteraction: y
         }, e))
@@ -63,7 +63,7 @@ function y(e) {
             action: "EXPAND_GAME_TAGS"
           })
         },
-        ref: D,
+        ref: I,
         disableInteraction: y
       }))]
     }), S && (0, n.jsx)(b.Z, {

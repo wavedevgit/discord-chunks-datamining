@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk932366 = require("./932366.js"),
   Chunk776385 = require("./776385.js");
 
-function I(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -47,7 +47,7 @@ function I(e) {
   return e
 }
 
-function D(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -87,9 +87,9 @@ function k(e) {
     sourceUserId: r,
     trackEntryPointImpression: true
   });
-  return null == o ? (0, n.jsx)(s.X6q, D(I({}, l), {
+  return null == o ? (0, n.jsx)(s.X6q, I(D({}, l), {
     children: i
-  })) : (0, n.jsx)(s.X6q, D(I({}, l), {
+  })) : (0, n.jsx)(s.X6q, I(D({}, l), {
     children: (0, n.jsx)(s.P3F, {
       onClick: o,
       className: E.clickableText,
@@ -161,7 +161,7 @@ function C(e) {
     applicationId: f
   } = e, b = (0, u.Dt)(), p = (0, u.Dt)(), {
     trackUserProfileEditAction: y
-  } = (0, g.KZ)(), [j, m] = i.useState("idle"), [v, h] = i.useState(null != t ? t : ""), x = i.useRef(null), w = i.useRef(null), S = P.intl.string(P.t.xKSfBQ), I = null != t && "" !== t.trim(), D = i.useCallback(() => {
+  } = (0, g.KZ)(), [j, m] = i.useState("idle"), [v, h] = i.useState(null != t ? t : ""), x = i.useRef(null), w = i.useRef(null), S = P.intl.string(P.t.xKSfBQ), D = null != t && "" !== t.trim(), I = i.useCallback(() => {
     y({
       action: "PRESS_ADD_COMMENTARY",
       widgetEdited: d
@@ -207,7 +207,7 @@ function C(e) {
     ref: w,
     role: "group",
     "aria-labelledby": p,
-    onClick: D,
+    onClick: I,
     className: E.editableCommentContainer,
     children: [(0, n.jsx)(s.vdY, {
       size: "xxs",
@@ -220,12 +220,12 @@ function C(e) {
       id: p
     }), (0, n.jsx)(Z, {
       text: null != t ? t : S,
-      className: o()(E.editableCommentText, !I && E.placeholder)
+      className: o()(E.editableCommentText, !D && E.placeholder)
     }), (0, n.jsx)(s.P3F, {
       innerRef: x,
       "aria-label": P.intl.string(P.t.ppb9MD),
       onClick: e => {
-        e.stopPropagation(), D()
+        e.stopPropagation(), I()
       },
       focusProps: {
         ringTarget: w
@@ -282,9 +282,9 @@ function A(e) {
       hideTooltip: true
     }), (0, n.jsxs)("div", {
       className: E.details,
-      children: [a ? (0, n.jsx)(s.X6q, D(I({}, O), {
+      children: [a ? (0, n.jsx)(s.X6q, I(D({}, O), {
         children: u
-      })) : (0, n.jsx)(k, I({
+      })) : (0, n.jsx)(k, D({
         applicationId: f,
         userId: t.id,
         gameName: u

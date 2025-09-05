@@ -28,31 +28,31 @@ function g(e) {
     headerTitle: v,
     headerSubtitle: h,
     headerActionButtons: x
-  } = e, w = (0, s.Dt)(), P = (0, c.e7)([u.default], () => u.default.getId() === t), S = i.useRef(null), E = i.useRef(null), I = P && null != j && !g, {
-    isDragging: D
+  } = e, w = (0, s.Dt)(), P = (0, c.e7)([u.default], () => u.default.getId() === t), S = i.useRef(null), E = i.useRef(null), D = P && null != j && !g, {
+    isDragging: I
   } = (0, d.q)({
     dropRef: S,
     dragRef: E,
     userId: t,
     widget: r,
     index: j,
-    disableInteraction: !I
+    disableInteraction: !D
   }), [k, N] = i.useState(false);
   return (0, n.jsx)(O, {
     ref: S,
-    disableInteraction: !I,
+    disableInteraction: !D,
     onMouseEnter: () => N(true),
     onMouseLeave: () => N(false),
     children: (0, n.jsxs)("section", {
       className: o()(p.container, y, {
-        [p.isDragging]: D
+        [p.isDragging]: I
       }),
       "aria-labelledby": w,
-      children: [I && (0, n.jsx)(f.Z, {
+      children: [D && (0, n.jsx)(f.Z, {
         buttonRef: E,
         widget: r,
         className: o()(p.dragHandleButton, {
-          [p.opacity]: k || D
+          [p.opacity]: k || I
         })
       }), (0, n.jsx)(b.Z, {
         userId: t,

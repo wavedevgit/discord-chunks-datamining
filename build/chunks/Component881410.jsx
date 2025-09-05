@@ -42,7 +42,7 @@ function b(e) {
   } = (0, c.KZ)(), h = i.useCallback(e => {
     (0, s.ES)(r, {
       applicationId: e
-    }), v({
+    }), o.uvj.announce(u.intl.string(u.t.q0U3DA)), v({
       action: "GAME_ADDED",
       gameId: e,
       widgetEdited: r

@@ -29,15 +29,15 @@ function L(e) {
     referralTrialOfferId: i
   } = e, {
     setSelectedSkuId: l,
-    activeSubscription: s,
+    activeSubscription: a,
     startedPaymentFlowWithPaymentSourcesRef: d,
-    setSelectedPlanId: j,
-    priceOptions: m,
+    setSelectedPlanId: m,
+    priceOptions: j,
     defaultPlanId: L
-  } = (0, u.JL)(), {
+  } = (0, p.JL)(), {
     isGift: b,
-    claimableRewards: S
-  } = (0, p.wD)(), y = b && null != S && S.length > 0, v = (0, C.N)(i), E = (0, a.Nx)(), O = (0, o.ZP)({
+    claimableRewards: y
+  } = (0, u.wD)(), S = b && null != y && y.length > 0, v = (0, C.N)(i), E = (0, s.Nx)(), O = (0, o.ZP)({
     location: "PremiumPaymentSelect"
   });
   return (0, r.jsx)(g, {
@@ -48,47 +48,47 @@ function L(e) {
         setSelectedSkuId: r,
         handleStepChange: i,
         isGift: l,
-        userTrialOffer: s,
-        setSelectedPlanId: a,
+        userTrialOffer: a,
+        setSelectedPlanId: s,
         startedPaymentFlowWithPaymentSources: o,
         defaultPlanId: C
       } = e;
       r(n);
       let d = x.h8.PLAN_SELECT,
-        p = (0, c.k5)(t);
-      p !== f.Si.TIER_1 && p !== f.Si.TIER_2 || n !== f.Si.TIER_0 || l || (d = x.h8.WHAT_YOU_LOSE);
-      let u = (0, h.T)({
-          userTrialOffer: s,
+        u = (0, c.k5)(t);
+      u !== f.Si.TIER_1 && u !== f.Si.TIER_2 || n !== f.Si.TIER_0 || l || (d = x.h8.WHAT_YOU_LOSE);
+      let p = (0, h.T)({
+          userTrialOffer: a,
           isGift: l,
           skuId: n
         }),
-        j = (0, _.Kp)({
-          isTrial: u,
+        m = (0, _.Kp)({
+          isTrial: p,
           isGift: l,
           selectedSkuId: n,
           startedPaymentFlowWithPaymentSources: o
         });
-      d !== x.h8.WHAT_YOU_LOSE && j && (d = x.h8.REVIEW, a((0, _.nA)(n, t, C))), i(d, {
+      d !== x.h8.WHAT_YOU_LOSE && m && (d = x.h8.REVIEW, s((0, _.nA)(n, t, C))), i(d, {
         analyticsDataOverride: {
           sku_id: n
         }
       })
     })({
-      activeSubscription: s,
+      activeSubscription: a,
       newSkuId: e,
       setSelectedSkuId: l,
       handleStepChange: t,
       isGift: b,
       userTrialOffer: v,
       startedPaymentFlowWithPaymentSources: d.current,
-      setSelectedPlanId: j,
+      setSelectedPlanId: m,
       defaultPlanId: L
     }),
     onClose: n,
     isGift: b,
     inOfferExperience: E,
-    priceOptions: m,
-    showPromotionalGiftBanner: y,
+    priceOptions: j,
+    showPromotionalGiftBanner: S,
     enablePremiumBrandRefresh: O
   })
 }
@@ -98,42 +98,42 @@ function g(e) {
     selectSku: t,
     onClose: n,
     isGift: i,
-    inOfferExperience: a,
+    inOfferExperience: s,
     priceOptions: o,
     showPromotionalGiftBanner: C,
-    enablePremiumBrandRefresh: p
-  } = e, u = p ? (0, r.jsx)(s.X6q, {
+    enablePremiumBrandRefresh: u
+  } = e, p = u ? (0, r.jsx)(a.X6q, {
     variant: "heading-lg/bold",
-    children: j.intl.string(j.t["r+SebW"])
-  }) : (0, r.jsx)(s.vwX, {
-    tag: s.RB0.H4,
-    children: j.intl.string(j.t["r+SebW"])
+    children: m.intl.string(m.t["r+SebW"])
+  }) : (0, r.jsx)(a.vwX, {
+    tag: a.RB0.H4,
+    children: m.intl.string(m.t["r+SebW"])
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(s.xBx, {
+    children: [(0, r.jsxs)(a.xBx, {
       "data-migration-pending": true,
-      className: l()(m.skuSelectModalHeader, {
-        [m.premiumBrandRefreshHeader]: p
+      className: l()(j.skuSelectModalHeader, {
+        [j.premiumBrandRefreshHeader]: u
       }),
       separator: false,
-      children: [u, (0, r.jsx)(s.olH, {
-        className: m.close,
-        innerClassName: m.closeInner,
+      children: [p, (0, r.jsx)(a.olH, {
+        className: j.close,
+        innerClassName: j.closeInner,
         onClick: n
       })]
-    }), (0, r.jsx)(s.hzk, {
+    }), (0, r.jsx)(a.hzk, {
       "data-migration-pending": true,
-      className: l()(m.skuSelectModalContent, {
-        [m.modalSize]: !p,
-        [m.modalPadding]: a && !p,
-        [m.premiumBrandRefreshContent]: p
+      className: l()(j.skuSelectModalContent, {
+        [j.modalSize]: !u,
+        [j.modalPadding]: s && !u,
+        [j.premiumBrandRefreshContent]: u
       }),
       children: (0, r.jsx)(d.Z, {
         onSelectSku: e => t((0, c.Wz)(e)),
         isGift: i,
         priceOptions: o,
         showPromotionalGiftBanner: C,
-        enablePremiumBrandRefresh: p
+        enablePremiumBrandRefresh: u
       })
     })]
   })

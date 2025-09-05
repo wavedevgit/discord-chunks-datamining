@@ -22,7 +22,7 @@ function d(e) {
   } = e, {
     trackUserProfileEditAction: f
   } = (0, a.KZ)(), b = () => {
-    (0, c.$b)(r, t.applicationId), f({
+    (0, c.$b)(r, t.applicationId), o.uvj.announce(s.intl.string(s.t["08HmMj"])), f({
       action: "GAME_REMOVED",
       gameId: t.applicationId,
       widgetEdited: r
