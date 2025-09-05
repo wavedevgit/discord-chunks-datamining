@@ -33,11 +33,11 @@ let f = 20,
       sectionFooterHeight: S,
       renderUpsell: A,
       onScroll: C
-    } = e, N = i.useRef(false), R = i.useRef(null), P = (0, l.Iu)(e => e.searchQuery), w = a.useStore(e => e.activeCategoryIndex), D = n.map(e => (0, s._O)(e.categoryInfo) ? {
+    } = e, N = i.useRef(false), R = i.useRef(null), P = (0, l.Iu)(e => e.searchQuery), w = a.useStore(e => e.activeCategoryIndex), D = i.useMemo(() => n.map(e => (0, s._O)(e.categoryInfo) ? {
       isNitroLocked: e.categoryInfo.isNitroLocked
     } : {
       isNitroLocked: false
-    }), x = (0, u.Qs)({
+    }), [n]), x = (0, u.Qs)({
       activeCategoryIndex: w,
       isScrolling: N,
       listRef: R,
@@ -52,7 +52,9 @@ let f = 20,
         scrollTop: e
       }), null == C || C(e)
     }, [x, P, D, C]);
-    return (0, u.Xs)({
+    return i.useEffect(() => {
+      null != R.current && L(0)
+    }, [L, R]), (0, u.Xs)({
       searchQuery: P,
       activeCategoryIndex: w,
       listRef: R

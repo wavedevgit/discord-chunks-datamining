@@ -254,7 +254,7 @@ function ef(e) {
     categories: ex,
     allSounds: eL,
     soundCounts: ej
-  } = (0, B.ZP)(a, {}, eh), [ek, eM] = i.useState([]), eU = (0, B.FS)(ex, ek, eR), eG = (0, b.Iu)(e => e.isNitroLockedSectionVisible), [eB, eZ] = i.useState(false), eF = eU.filter(e => e.items.length > 0), eV = eF.findLastIndex(e => !!(0, D._O)(e.categoryInfo) && e.categoryInfo.isNitroLocked), eH = !eA && J && false !== eV, eY = A.T4.useSetting(), eW = i.useMemo(() => new Set(eY), [eY]), eK = null == a, ez = D.ZP.canUseCustomCallSounds(eS), eq = i.useCallback(e => {
+  } = (0, B.ZP)(a, {}, eh), [ek, eM] = i.useState([]), eU = (0, B.FS)(ex, ek, eR), eG = (0, b.Iu)(e => e.isNitroLockedSectionVisible), [eB, eZ] = i.useState(false), eF = i.useMemo(() => eU.filter(e => e.items.length > 0), [eU]), eV = i.useMemo(() => eF.findLastIndex(e => !!(0, D._O)(e.categoryInfo) && e.categoryInfo.isNitroLocked), [eF]), eH = !eA && J && false !== eV, eY = A.T4.useSetting(), eW = i.useMemo(() => new Set(eY), [eY]), eK = null == a, ez = D.ZP.canUseCustomCallSounds(eS), eq = i.useCallback(e => {
     eW.has(e) ? eW.delete(e) : eW.add(e), A.T4.updateSetting(Array.from(eW))
   }, [eW]), eX = i.useCallback((e, t, n) => {
     if (null != I && !P) return I(e, n);
