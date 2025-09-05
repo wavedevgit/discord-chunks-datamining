@@ -74,11 +74,11 @@ function j(e) {
   }), n
 }
 
-function k(e) {
+function M(e) {
   return w.nonPositionalChannelIdUpdate(e.id)
 }
 
-function M(e) {
+function k(e) {
   return w.clearGuildId(e.guildId)
 }
 
@@ -320,7 +320,7 @@ let eu = new ec(Chunk570140.Z, {
   CHANNEL_MUTE_EXPIRED: B,
   CHANNEL_RTC_UPDATE_CHAT_OPEN: Y,
   CHANNEL_SELECT: J,
-  CHANNEL_STATUSES: M,
+  CHANNEL_STATUSES: k,
   CHANNEL_UPDATES: j,
   CONNECTION_OPEN_SUPPLEMENTAL: ei,
   CONNECTION_OPEN: D,
@@ -384,7 +384,7 @@ let eu = new ec(Chunk570140.Z, {
   VOICE_CATEGORY_COLLAPSE: et,
   VOICE_CATEGORY_EXPAND: et,
   VOICE_CHANNEL_SELECT: J,
-  VOICE_CHANNEL_STATUS_UPDATE: k,
+  VOICE_CHANNEL_STATUS_UPDATE: M,
   VOICE_STATE_UPDATES: $,
   WINDOW_FOCUS: W
 })

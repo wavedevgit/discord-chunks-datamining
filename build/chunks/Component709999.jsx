@@ -237,7 +237,7 @@ let eg = 250,
       children: a
     } = e, {
       handleCardVisibilityChange: o
-    } = (0, M.E)(n.skuId, t === eo.AW.CATALOG ? "full" : t);
+    } = (0, k.E)(n.skuId, t === eo.AW.CATALOG ? "full" : t);
     return (0, r.jsx)(p.$, {
       innerRef: i,
       onChange: o,
@@ -298,7 +298,7 @@ function eT(e) {
     isPartiallyOwnedBundle: g,
     isDisabled: b,
     discount: v
-  } = e, I = (0, P.sp)(), N = (0, x.rN)(t), [D, j] = (0, _.Wu)([w.Z], () => [w.Z.isClaiming === t.skuId, null != w.Z.isClaiming && w.Z.isClaiming !== t.skuId]), k = (0, x.XM)(i, d, false), M = (0, x.ne)({
+  } = e, I = (0, P.sp)(), N = (0, x.rN)(t), [D, j] = (0, _.Wu)([w.Z], () => [w.Z.isClaiming === t.skuId, null != w.Z.isClaiming && w.Z.isClaiming !== t.skuId]), M = (0, x.XM)(i, d, false), k = (0, x.ne)({
     product: i,
     isPartiallyOwnedBundle: g,
     isPurchased: m
@@ -366,7 +366,7 @@ function eT(e) {
       nitroIconSize: "md",
       discountOfferAmount: W
     }),
-    ea = () => p || l.tq || Q || !M || n === eo.AW.ORBS ? null : N ? (0, r.jsx)(h.hU, {
+    ea = () => p || l.tq || Q || !k || n === eo.AW.ORBS ? null : N ? (0, r.jsx)(h.hU, {
       variant: "primary",
       "aria-label": ec.intl.string(ec.t.SKNnqq),
       icon: h.tEF,
@@ -419,7 +419,7 @@ function eT(e) {
         i = K ? ec.intl.formatToPlainString(ec.t["5U5RBw"], {
           discountOfferAmount: W
         }) : ec.intl.formatToPlainString(ec.t["cNSL/v"], {
-          price: k
+          price: M
         });
       return (0, r.jsx)(h.zxk, {
         variant: "primary",
@@ -533,7 +533,7 @@ function eT(e) {
     }),
     eE = () => {
       if (p && !d && !N) return et();
-      if (!M || b) return ed();
+      if (!k || b) return ed();
       if (m) return eh();
       if (p) return ep();
       if ($)
@@ -573,10 +573,10 @@ let eS = Chunk647438.memo(function(e) {
       shopBlockType: R
     } = e, {
       analyticsLocations: w
-    } = (0, b.ZP)([E.Z.COLLECTIBLES_SHOP_CARD]), D = (0, P.sp)(), L = (0, ea.G)("CollectiblesShopTallCard"), M = null != R && R === d.z.HERO && L ? eo.Ch.THUMBNAIL : eo.Ch.DEFAULT, U = (0, m.Z)(f), B = (0, $.m)(f), Z = U || B, H = (0, en.To)(t), K = (0, _.e7)([g.Z], () => g.Z.useReducedMotion), q = N.ZP.canUseCollectibles(n), X = i.useMemo(() => (0, x.BH)(t, q), [t, q]), Q = (0, x.G1)(t), J = (0, _.e7)([I.Z], () => (0, h.wjy)(I.Z.theme)), ee = (0, x.Yq)(t.skuId), et = a.skuId === c.T.ANIME_V3 && (0, x.WW)(t.skuId), {
+    } = (0, b.ZP)([E.Z.COLLECTIBLES_SHOP_CARD]), D = (0, P.sp)(), L = (0, ea.G)("CollectiblesShopTallCard"), k = null != R && R === d.z.HERO && L ? eo.Ch.THUMBNAIL : eo.Ch.DEFAULT, U = (0, m.Z)(f), B = (0, $.m)(f), Z = U || B, H = (0, en.To)(t), K = (0, _.e7)([g.Z], () => g.Z.useReducedMotion), q = N.ZP.canUseCollectibles(n), X = i.useMemo(() => (0, x.BH)(t, q), [t, q]), Q = (0, x.G1)(t), J = (0, _.e7)([I.Z], () => (0, h.wjy)(I.Z.theme)), ee = (0, x.Yq)(t.skuId), et = a.skuId === c.T.ANIME_V3 && (0, x.WW)(t.skuId), {
       isPurchased: ei,
       isPartiallyOwnedBundle: el
-    } = (0, k.L)(p), {
+    } = (0, M.L)(p), {
       isDisabled: ed
     } = (0, j.G)(p.skuId), e_ = null !== S ? S : O, [eh, em] = i.useState(false), eg = Z, ey = i.useCallback(function(e, t, i) {
       let a = arguments.length > 3 && true !== arguments[3] && arguments[3];
@@ -625,9 +625,9 @@ let eS = Chunk647438.memo(function(e) {
         analyticsSource: e,
         returnRef: ev,
         tab: l,
-        variantType: M
+        variantType: k
       })
-    }, [t, a, l, w, D, M]), eC = eA(E.Z.COLLECTIBLES_SHOP_CARD);
+    }, [t, a, l, w, D, k]), eC = eA(E.Z.COLLECTIBLES_SHOP_CARD);
     if (0 === eI.length) return null;
     let eN = () => {
         let e = ei ? h.sV5 : ed ? h.mBM : null;
@@ -746,7 +746,7 @@ let eS = Chunk647438.memo(function(e) {
             animationState: eg ? "on" : "off",
             className: ed || ei && !eg ? eu.externalProductDimmed : true
           })).otherwise(() => null)
-        }), eN(), eR(M)]
+        }), eN(), eR(k)]
       })
     })
   }),

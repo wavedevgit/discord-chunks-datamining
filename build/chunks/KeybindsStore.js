@@ -4,7 +4,7 @@
 let r;
 require.d(exports, {
   Ek: () => w,
-  I1: () => k,
+  I1: () => M,
   ZP: () => ey
 }), require("./415506.js"), require("./388685.js"), require("./539854.js"), require("./704826.js"), require("./35282.js");
 var i, Chunk348327 = require("./348327.js"),
@@ -95,11 +95,11 @@ let x = "1001",
       params: {}
     }
   },
-  k = e => {
+  M = e => {
     let t = (0, y.UR)("shift");
     return null != t && (1 !== e.length || e[0][1] !== t)
   },
-  M = (e, t, n, r) => {
+  k = (e, t, n, r) => {
     var i, a;
     let o = (0, b.pz)(false).get("Backquote"),
       s = (0, b.pz)(true).get("Backquote");
@@ -128,23 +128,23 @@ function U(e) {
   let n = (0, y.Kd)(e),
     r = (0, b.T_)("`"),
     i = null != (t = null == r ? true : r.keyCode) ? t : (0, y.UR)("`");
-  return k(n) ? n : null == i ? (M(Error("Unable to get backtick code for overlay default keybind"), e, n, {
+  return M(n) ? n : null == i ? (k(Error("Unable to get backtick code for overlay default keybind"), e, n, {
     rawBacktickShape: r
-  }), null) : (M(Error("Default overlay keybind is unsupported"), e, n, {
+  }), null) : (k(Error("Default overlay keybind is unsupported"), e, n, {
     rawBacktickCode: i
   }), [...n, [v.MoX.KEYBOARD_KEY, i, (0, y.dU)()]])
 }
 let G = () => {
     let e = D();
-    "shift" === module && (M(Error("Default overlay keybind is only shift"), module, null), e = "shift+`");
+    "shift" === module && (k(Error("Default overlay keybind is only shift"), module, null), e = "shift+`");
     let t = U(module);
     if (null == exports) return j([], false);
-    if (k(exports)) return j(exports, true);
+    if (M(exports)) return j(exports, true);
     let n = (0, Chunk13140.UR)("shift"),
       r = (0, Chunk378799.T_)("`");
-    return 0 === exports.length ? M(Error("Default overlay keybind combo is empty"), module, exports) : null == require ? M(Error("Unable to get shift code"), module, exports, {
+    return 0 === exports.length ? k(Error("Default overlay keybind combo is empty"), module, exports) : null == require ? k(Error("Unable to get shift code"), module, exports, {
       shiftCode: require
-    }) : null == r && M(Error("Unable to get backtick code"), module, exports), j(exports, false)
+    }) : null == r && k(Error("Unable to get backtick code"), module, exports), j(exports, false)
   },
   B = {},
   Z = {},

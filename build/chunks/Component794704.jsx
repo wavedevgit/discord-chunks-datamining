@@ -281,12 +281,12 @@ let eL = new Set([Chunk837268.mM.INITIALIZING, Chunk837268.mM.WAITING_FOR_SCREEN
     e.preventDefault(), e.stopPropagation()
   };
 
-function ek(e) {
+function eM(e) {
   var t, n, a;
   let {
     runningGame: o,
     runningGameApplication: s
-  } = e, c = null == o ? true : o.pid, u = (0, _.e7)([M.default], () => null == o || null == c ? null : M.default.getTrackedGameByPid(c), [o, c], l()), {
+  } = e, c = null == o ? true : o.pid, u = (0, _.e7)([k.default], () => null == o || null == c ? null : k.default.getTrackedGameByPid(c), [o, c], l()), {
     enabledLegacy: d,
     enabledOOP: f
   } = (0, _.cj)([X.Z, J.Z], () => {
@@ -311,8 +311,8 @@ function ek(e) {
     {
       legacyEnabled: x,
       oopEnabled: j
-    } = (0, _.cj)([M.default], () => M.default.getGlobalEnabledStatus()),
-    k = (e, t, n) => {
+    } = (0, _.cj)([k.default], () => k.default.getGlobalEnabledStatus()),
+    M = (e, t, n) => {
       var r, i, a;
       if (ej(n), null == o) return;
       let s = false,
@@ -526,7 +526,7 @@ function ek(e) {
           checked: E && j,
           disabled: R,
           onChange: (e, t) => {
-            e && !j ? k(e, D.AE.OOP, t) : k(e, D.AE.OOP_GAME, t)
+            e && !j ? M(e, D.AE.OOP, t) : M(e, D.AE.OOP_GAME, t)
           }
         }), (0, r.jsx)("div", {
           className: e_.emptySpacer
@@ -542,7 +542,7 @@ function ek(e) {
           checked: O && x,
           disabled: N,
           onChange: (e, t) => {
-            e && !x ? k(e, D.AE.LEGACY, t) : k(e, D.AE.LEGACY_GAME, t)
+            e && !x ? M(e, D.AE.LEGACY, t) : M(e, D.AE.LEGACY_GAME, t)
           }
         }), (0, r.jsx)("div", {
           className: e_.emptySpacer
@@ -552,7 +552,7 @@ function ek(e) {
   })
 }
 
-function eM(e) {
+function ek(e) {
   let {
     game: t,
     gameApplication: n
@@ -586,7 +586,7 @@ function eU(e) {
   };
   return (0, r.jsx)(eD, {
     title: t.name,
-    icon: (0, r.jsx)(eM, {
+    icon: (0, r.jsx)(ek, {
       game: u,
       gameApplication: n
     }),
@@ -1095,7 +1095,7 @@ function eq(e) {
   let {
     runningGame: t,
     runningGameApplication: n
-  } = e, a = null == n ? true : n.id, o = (0, _.e7)([G.Z], () => G.Z.isLimitedInteractionOverrideEnabled(a), [a]), s = i.useMemo(() => null != t && (0, U.H8)(t.pid), [t]), l = (0, k.Z)({
+  } = e, a = null == n ? true : n.id, o = (0, _.e7)([G.Z], () => G.Z.isLimitedInteractionOverrideEnabled(a), [a]), s = i.useMemo(() => null != t && (0, U.H8)(t.pid), [t]), l = (0, M.Z)({
     location: "overlay_user_settings"
   }), {
     disableClickableRegions: c,
@@ -1176,7 +1176,7 @@ function eX(e) {
       title: ef.intl.string(ef.t["9cb1U1"]),
       children: [o ? (0, r.jsx)(ez, {}) : null, (0, r.jsxs)("div", {
         className: e_.overlayEnabledSettingsContainer,
-        children: [(0, r.jsx)(ek, {
+        children: [(0, r.jsx)(eM, {
           runningGame: i,
           runningGameApplication: a
         }), (0, r.jsx)(eB, {}), (0, r.jsx)(eG, {})]

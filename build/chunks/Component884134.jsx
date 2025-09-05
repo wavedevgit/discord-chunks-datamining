@@ -146,7 +146,7 @@ function q(e) {
     children: [(0, r.jsxs)("div", {
       className: U.badgeAndCloseRow,
       children: [(0, r.jsx)(f.lBU, {
-        text: M.intl.string(M.t.oW0eUV)
+        text: k.intl.string(k.t.oW0eUV)
       }), (0, r.jsx)(W, {
         markAsDismissed: t
       })]
@@ -154,12 +154,12 @@ function q(e) {
       className: U.coachmarkHeaderTextContainer,
       children: [(0, r.jsx)(f.X6q, {
         variant: "heading-lg/extrabold",
-        children: M.intl.string(k.default["23QUzs"])
+        children: k.intl.string(M.default["23QUzs"])
       }), (0, r.jsx)(f.Text, {
         className: U.subtitle,
         variant: "text-sm/medium",
         color: "text-muted",
-        children: M.intl.string(n ? k.default.TRCE4u : k.default["UV/Vtr"])
+        children: k.intl.string(n ? M.default.TRCE4u : M.default["UV/Vtr"])
       })]
     })]
   })
@@ -190,7 +190,7 @@ function X(e) {
       className: U.controlLabelContainer,
       children: [(0, r.jsx)(f.Text, {
         variant: "text-md/medium",
-        children: M.intl.string(k.default.dZkwg4)
+        children: k.intl.string(M.default.dZkwg4)
       }), (0, r.jsx)("input", {
         type: "text",
         value: l,
@@ -253,7 +253,7 @@ function Q(e) {
       className: U.controlLabelContainer,
       children: [(0, r.jsx)(f.Text, {
         variant: "text-md/medium",
-        children: M.intl.string(k.default.xlXkaG)
+        children: k.intl.string(M.default.xlXkaG)
       }), (0, r.jsx)("input", {
         type: "text",
         value: s,
@@ -322,12 +322,12 @@ function J(e) {
           eventTargetRef: p
         }
       },
-      text: M.intl.string(k.default.c9MBEB),
+      text: k.intl.string(M.default.c9MBEB),
       fullWidth: true
     });
   return n ? b() : (0, r.jsx)(d.i_, {
-    title: M.intl.string(k.default.NJ9m8f),
-    body: M.intl.string(k.default["6pabtb"]),
+    title: k.intl.string(M.default.NJ9m8f),
+    body: k.intl.string(M.default["6pabtb"]),
     position: "left",
     asset: E ? (0, r.jsx)(f.$2U, {}) : true,
     forceOpen: a,
@@ -345,13 +345,13 @@ function $(e) {
     fullWidth: i
   } = e;
   return (0, r.jsx)(f.ua7, {
-    text: M.intl.string(k.default.SFyHIC),
+    text: k.intl.string(M.default.SFyHIC),
     shouldShow: n,
     children: e => (0, r.jsx)(c.z, F(B({}, e), {
       variant: "primary",
       onClick: t,
       disabled: n,
-      text: M.intl.string(M.t["1Qm829"]),
+      text: k.intl.string(k.t["1Qm829"]),
       fullWidth: i
     }))
   })
@@ -370,7 +370,7 @@ function ee(e) {
       fullWidth: true
     }) : (0, r.jsx)(y.Z, {
       subscriptionTier: j.Si.TIER_2,
-      buttonTextOverride: M.intl.string(M.t.JST6jo),
+      buttonTextOverride: k.intl.string(k.t.JST6jo),
       premiumModalAnalyticsLocation: {
         page: x.ZY5.PREMIUM_UPSELL_CUSTOM_THEMES,
         section: x.jXE.CUSTOM_THEMES_COACHMARK_FOOTER
@@ -400,7 +400,7 @@ function et(e) {
       children: [(0, r.jsx)(w.q, {}), (0, r.jsx)(c.z, {
         variant: "secondary",
         onClick: d,
-        text: M.intl.string(M.t["13/7kZ"])
+        text: k.intl.string(k.t["13/7kZ"])
       }), (0, r.jsx)($, {
         disabled: !i,
         onApply: () => {
@@ -410,7 +410,7 @@ function et(e) {
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(y.Z, {
         subscriptionTier: j.Si.TIER_2,
-        defaultTextOverride: M.intl.string(M.t.pj0XBA),
+        defaultTextOverride: k.intl.string(k.t.pj0XBA),
         premiumModalAnalyticsLocation: {
           page: x.ZY5.PREMIUM_UPSELL_CUSTOM_THEMES,
           section: x.jXE.CUSTOM_THEMES_FOOTER
@@ -419,7 +419,7 @@ function et(e) {
       }), (0, r.jsx)(c.z, {
         variant: "secondary",
         onClick: d,
-        text: u ? M.intl.string(M.t["13/7kZ"]) : M.intl.string(M.t.Olc2Ky),
+        text: u ? k.intl.string(k.t["13/7kZ"]) : k.intl.string(k.t.Olc2Ky),
         fullWidth: true
       })]
     })
@@ -475,14 +475,14 @@ function en(e) {
           children: [(0, r.jsx)(f.Text, {
             variant: "text-sm/semibold",
             color: "text-secondary",
-            children: M.intl.string(k.default.o2NfLC)
+            children: k.intl.string(M.default.o2NfLC)
           }), (0, r.jsx)(D.o, {})]
         }), (0, r.jsxs)("div", {
           className: U.section,
           children: [(0, r.jsx)(f.Text, {
             variant: "text-sm/semibold",
             color: "text-secondary",
-            children: M.intl.string(k.default.uSL2Gx)
+            children: k.intl.string(M.default.uSL2Gx)
           }), (0, r.jsx)(P.U, {
             onChange: e => {
               Z(e), 0 === T.length && (0, C.lT)(T, e, x)
@@ -496,7 +496,7 @@ function en(e) {
           children: [(0, r.jsx)(f.Text, {
             variant: "text-sm/semibold",
             color: "text-secondary",
-            children: M.intl.string(k.default.F1t0c3)
+            children: k.intl.string(M.default.F1t0c3)
           }), T.length > 1 && (0, r.jsx)(X, {
             gradientAngle: w,
             setGradientAngle: G
@@ -515,7 +515,7 @@ function en(e) {
             variant: "secondary",
             onClick: W,
             disabled: y,
-            text: M.intl.string(M.t.yBZMsb),
+            text: k.intl.string(k.t.yBZMsb),
             fullWidth: true
           })]
         })]

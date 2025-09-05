@@ -82,8 +82,8 @@ function y(e) {
     setPurchaseState: L,
     paymentElementsEnabled: j
   } = (0, d.JL)(), {
-    isGift: k
-  } = (0, u.wD)(), M = b(g({}, (0, s.fL)()), {
+    isGift: M
+  } = (0, u.wD)(), k = b(g({}, (0, s.fL)()), {
     paymentSources: T,
     paymentSourceId: S,
     setPaymentSourceId: A,
@@ -92,8 +92,8 @@ function y(e) {
     purchaseErrorBlockRef: R,
     paymentAuthenticationState: P,
     selectedSkuId: w,
-    isGift: k
-  }), U = (0, o.N)(m), G = !k && null != U && null != w && h.nG[U.trial_id].skus.includes(w), B = () => {
+    isGift: M
+  }), U = (0, o.N)(m), G = !M && null != U && null != w && h.nG[U.trial_id].skus.includes(w), B = () => {
     c(Object.values(T).length < 1 && null == n ? f.h8.PLAN_SELECT : f.h8.REVIEW, {
       trackedFromStep: f.h8.PAYMENT_TYPE
     })
@@ -102,7 +102,7 @@ function y(e) {
   let F = (0, a.Z)(() => Date.now(), [I]),
     V = (0, a.Z)(() => null != y && null == x.current ? j && y === f.h8.CREDIT_CARD_INFORMATION ? f.h8.PAYMENT_ELEMENT : y : f.h8.PAYMENT_TYPE, [y, x.current, j]);
   return (0, s.vP)({
-    paymentModalArgs: M,
+    paymentModalArgs: k,
     initialStep: V,
     prependSteps: [f.h8.PROMOTION_INFO],
     appendSteps: [f.h8.REVIEW, f.h8.CONFIRM],
@@ -131,7 +131,7 @@ function y(e) {
       }))
     },
     isEligibleForTrial: G,
-    allowDesktopRedirectPurchase: O(w, k, D),
+    allowDesktopRedirectPurchase: O(w, M, D),
     continueSessionToInitialStep: y
   })
 }

@@ -207,7 +207,7 @@ function eu(e) {
       planName: K.ZP.getDisplayPremiumType(p.planId)
     }) : $.intl.format(eh ? $.t["ba1L7+"] : $.t.fkffDQ, {
       onPremiumSubscriptionClick: m,
-      discountPercentage: (0, W.T3)(M.default.locale, Q.Rr / 100),
+      discountPercentage: (0, W.T3)(k.default.locale, Q.Rr / 100),
       freeSubscriptionCount: Q.cb
     }),
     ev = g.filter(e => (0, H.tl)(e)).length,
@@ -303,7 +303,7 @@ function eu(e) {
       message: $.intl.format($.t.Om31w8, {
         documentationLink: Y.Z.getArticleURL(X.BhN.LOCALIZED_PRICING)
       })
-    }), ey ? (0, r.jsx)(k.e, {}) : (0, r.jsx)(k.Z, {
+    }), ey ? (0, r.jsx)(M.e, {}) : (0, r.jsx)(M.Z, {
       text: eO,
       color: O.JX.PREMIUM_TIER_2
     })]
@@ -418,7 +418,7 @@ function ef(e) {
   n = null != l ? (0, K.Zx)(l, y[0].quantity, y[0].planId) : y;
   let {
     analyticsLocations: j
-  } = (0, b.ZP)(), [k] = (0, T.ED)({
+  } = (0, b.ZP)(), [M] = (0, T.ED)({
     subscriptionId: null == l ? true : l.id,
     items: n,
     renewal: false,
@@ -427,7 +427,7 @@ function ef(e) {
     currency: s.currency,
     analyticsLocations: j,
     analyticsLocation: E.Z.GUILD_BOOSTING_REVIEW_PRORATED
-  }), [M] = (0, T.ED)({
+  }), [k] = (0, T.ED)({
     subscriptionId: null == l ? true : l.id,
     items: n,
     renewal: true,
@@ -435,7 +435,7 @@ function ef(e) {
     currency: s.currency,
     analyticsLocations: j,
     analyticsLocation: E.Z.GUILD_BOOSTING_REVIEW_RENEWAL
-  }), G = M;
+  }), G = k;
   null != G && (a = {
     amount: G.subtotal,
     currency: G.currency,
@@ -444,13 +444,13 @@ function ef(e) {
   });
   let F = c.M.EEA_COUNTRIES.has(B.Z.ipCountryCodeWithFallback);
   return i.useEffect(() => {
-    R(k)
-  }, [R, k]), (0, r.jsxs)("div", {
-    children: [null != k && null != M ? (0, r.jsx)(ed, {
+    R(M)
+  }, [R, M]), (0, r.jsxs)("div", {
+    children: [null != M && null != k ? (0, r.jsx)(ed, {
       premiumSubscription: l,
       premiumSubscriptionPlan: h,
-      proratedInvoicePreview: k,
-      renewalInvoicePreview: M,
+      proratedInvoicePreview: M,
+      renewalInvoicePreview: k,
       priceOptions: s
     }) : null, (0, r.jsxs)("div", {
       className: ee.paymentSourceWrapper,
@@ -484,11 +484,11 @@ function ef(e) {
         finePrint: (0, r.jsx)(p.Z, {
           subscriptionPlan: h,
           paymentSourceType: w,
-          proratedAmount: null != k ? k.total : true,
+          proratedAmount: null != M ? M.total : true,
           basePrice: a,
           productLine: X.POd.BOOST
         }),
-        showPricingLink: (null != (t = null == k ? true : k.currency) ? t : J.pK.USD) !== J.pK.USD,
+        showPricingLink: (null != (t = null == M ? true : M.currency) ? t : J.pK.USD) !== J.pK.USD,
         showWithdrawalWaiver: F,
         subscriptionPlan: h
       })

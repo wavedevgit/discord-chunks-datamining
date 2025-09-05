@@ -50,7 +50,7 @@ function m(e) {
     highContrastMode: N,
     isPopoutWindow: R,
     children: P
-  } = e, w = window.CSS.supports("selector(::-webkit-scrollbar)"), D = "font-size: ".concat(g, "%; --saturation-factor: ").concat(O, ";"), x = (0, d.Z)("highlight_mana_buttons"), L = (0, d.Z)("highlight_mana_components"), j = (0, d.Z)("highlight_void_toggleables"), k = (0, d.Z)("highlight_void_buttons"), M = o()((0, c.Z)(), (0, l.QeD)(a), "density-".concat(h), E, {
+  } = e, w = window.CSS.supports("selector(::-webkit-scrollbar)"), D = "font-size: ".concat(g, "%; --saturation-factor: ").concat(O, ";"), x = (0, d.Z)("highlight_mana_buttons"), L = (0, d.Z)("highlight_mana_components"), j = (0, d.Z)("highlight_void_toggleables"), M = (0, d.Z)("highlight_void_buttons"), k = o()((0, c.Z)(), (0, l.QeD)(a), "density-".concat(h), E, {
     "low-saturation": O <= l.AEw,
     "keyboard-mode": y,
     "decorate-links": A,
@@ -71,14 +71,14 @@ function m(e) {
     "highlight-mana-buttons": x,
     "highlight-mana-components": L,
     "highlight-void-toggleables": j,
-    "highlight-void-buttons": k,
+    "highlight-void-buttons": M,
     "high-contrast-mode": N
   }, t), U = i.useMemo(() => ({
     lang: n,
     style: D,
-    className: M,
+    className: k,
     focused: m
-  }), [n, D, M, m]), G = (0, f.$)({
+  }), [n, D, k, m]), G = (0, f.$)({
     location: "RootElementContextProvider"
   });
   return i.useLayoutEffect(() => {

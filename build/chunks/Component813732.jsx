@@ -98,7 +98,7 @@ function z(e, t) {
       children: H.intl.format(H.t["7Zi06e"], {
         helpCenterLink: x.Z.getArticleURL(Z.BhN.FRACTIONAL_PREMIUM_ABOUT)
       })
-    }), (0, r.jsx)(k.Z, {
+    }), (0, r.jsx)(M.Z, {
       className: Y.accountCredit,
       fractionalPremiumInfo: e,
       activationDate: t
@@ -130,10 +130,10 @@ let X = function() {
       var e;
       return Object.values(null != (e = Chunk78839.Z.getSubscriptions()) ? module : {}).filter(e => e.type === Z.NYc.GUILD).filter(e => e.status !== Z.O0b.ENDED).length
     }),
-    k = (0, Chunk975298.Z)({
+    M = (0, Chunk975298.Z)({
       forceFetch: true
     }),
-    M = (0, Chunk695349.W)(),
+    k = (0, Chunk695349.W)(),
     H = null !== module ? module.currentPeriodEnd : true,
     W = !(Chunk639056 && !(Chunk391077.unactivatedUnits.length > 0)) && (Chunk391077.fractionalState !== Chunk474936.a$.NONE || Chunk391077.unactivatedUnits.length > 0);
   return (Chunk647438.useEffect(() => (Chunk570140.Z.wait(() => {

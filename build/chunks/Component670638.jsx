@@ -111,7 +111,7 @@ function P(e) {
         sourceQuestContent: e.sourceQuestContent
       })
     }, [A, e.quest, e.questContent, e.sourceQuestContent]),
-    k = i.useCallback(() => {
+    M = i.useCallback(() => {
       N && ((0, p.f2)(e.quest.id, {
         content: e.questContent,
         position: e.questContentPosition,
@@ -120,7 +120,7 @@ function P(e) {
         sourceQuestContent: e.sourceQuestContent
       }), (0, o.showToast)((0, o.createToast)(I.intl.string(I.t["+5kSoa"]), o.ToastType.SUCCESS)))
     }, [A, e.quest.id, e.questContent, e.questContentPosition, e.sourceQuestContent, N]),
-    M = () => {
+    k = () => {
       (0, b.openDisclosureModal)(e.quest, {
         content: e.questContent,
         position: e.questContentPosition,
@@ -182,7 +182,7 @@ function P(e) {
       }), N && (0, r.jsx)(o.sNh, {
         id: "share-link",
         label: I.intl.string(I.t.RDE0SU),
-        action: k,
+        action: M,
         icon: o.TIy
       }), Y && W]
     }, "major-actions"), (0, r.jsxs)(o.kSQ, {
@@ -194,7 +194,7 @@ function P(e) {
       }), K && (0, r.jsx)(o.sNh, {
         id: "display-disclosure",
         label: I.intl.string(I.t.GcsZKC),
-        action: M
+        action: k
       }), c && (0, r.jsx)(o.sNh, {
         id: "hide-entrypoint",
         label: I.intl.string(I.t.NN79Ex),

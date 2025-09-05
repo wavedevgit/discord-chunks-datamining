@@ -39,7 +39,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk116649 = require("./116649.js");
 
-function M(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -55,7 +55,7 @@ function U(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      M(e, t, n[t])
+      k(e, t, n[t])
     })
   }
   return e
@@ -82,7 +82,7 @@ function Z(e) {
   var t;
   let {
     user: n,
-    currentUser: M,
+    currentUser: k,
     guildId: G,
     channelId: Z,
     messageId: F,
@@ -121,7 +121,7 @@ function Z(e) {
     null == W || W(null == et ? true : et.current)
   }, [et, W]);
   let eo = i.useRef(null),
-    es = n.id === M.id,
+    es = n.id === k.id,
     el = (0, _.p)({
       location: "UserProfilePopout"
     }),
@@ -174,7 +174,7 @@ function Z(e) {
             themeType: L.l.POPOUT,
             children: [null != ei.interactionType && (0, r.jsx)(a.animated.div, {
               style: ea,
-              className: k.backdrop
+              className: M.backdrop
             }), (0, r.jsxs)(C.Z, {
               children: [(0, r.jsx)(R.Z, {
                 shouldShowTooltip: null === ei.interactionType,
@@ -195,7 +195,7 @@ function Z(e) {
                 appContext: q
               })]
             }), (0, r.jsxs)("div", {
-              className: k.header,
+              className: M.header,
               children: [(0, r.jsx)(T.Z, {
                 user: n,
                 displayProfile: en,
@@ -203,7 +203,7 @@ function Z(e) {
                 themeType: L.l.POPOUT
               }), (0, r.jsx)(S.Z, {
                 userId: n.id,
-                className: k.toast,
+                className: M.toast,
                 onClose: Y
               }), (0, r.jsx)(I.Z, {
                 user: n,
@@ -223,7 +223,7 @@ function Z(e) {
               })]
             }), (0, r.jsx)(D.Z, {
               user: n,
-              currentUser: M,
+              currentUser: k,
               displayProfile: en,
               guild: $,
               isHovering: null == ei.interactionType && er,

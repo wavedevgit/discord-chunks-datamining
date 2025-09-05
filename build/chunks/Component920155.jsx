@@ -91,20 +91,20 @@ function S(e) {
     hasVideo: S = false,
     gradientColor: C,
     onPositionChange: N
-  } = e, [R, P] = i.useState(p), [w, D] = i.useState(E), x = i.useRef(E), L = (0, l.e7)([f.Z], () => f.Z.getLayers()), j = null != (t = L[L.length - 1]) ? t : "base", k = i.useMemo(() => {
+  } = e, [R, P] = i.useState(p), [w, D] = i.useState(E), x = i.useRef(E), L = (0, l.e7)([f.Z], () => f.Z.getLayers()), j = null != (t = L[L.length - 1]) ? t : "base", M = i.useMemo(() => {
     var e;
     return null == a.current || (null == (e = a.current.closest("[data-layer]")) ? true : e.getAttribute("data-layer")) === j
   }, [a, j]);
   i.useEffect(() => {
-    k && p ? P(true) : k || P(false)
-  }, [k, p]);
-  let M = () => {
+    M && p ? P(true) : M || P(false)
+  }, [M, p]);
+  let k = () => {
       P(false)
     },
     U = (0, _.i)({
       shouldShow: p,
       caretPosition: A(w),
-      onExitComplete: M
+      onExitComplete: k
     }),
     G = e => {
       var {

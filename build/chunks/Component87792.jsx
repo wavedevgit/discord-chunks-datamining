@@ -59,7 +59,7 @@ function L(e) {
 }
 let j = 65;
 
-function k() {
+function M() {
   let e = Chunk647438.useCallback(() => {
     (0, Chunk481060.ZDy)(async () => {
       let {
@@ -81,7 +81,7 @@ function k() {
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     displayType: t
   } = e, n = (0, _.PO)("family_center_activity_card"), a = i.useCallback(() => {
@@ -248,7 +248,7 @@ let U = () => {
       className: n ? w.containerV2 : w.container,
       children: [(0, r.jsxs)("div", {
         className: w.connectedCounter,
-        children: [(0, r.jsx)(U, {}), (0, r.jsx)(k, {})]
+        children: [(0, r.jsx)(U, {}), (0, r.jsx)(M, {})]
       }), (0, r.jsxs)("div", {
         className: D.box,
         children: [(0, r.jsx)("div", {
@@ -271,7 +271,7 @@ let U = () => {
             className: w.activityOverview,
             children: a ? i.map(e => {
               let [t] = e;
-              return (0, r.jsx)(M, {
+              return (0, r.jsx)(k, {
                 displayType: t
               }, "".concat(t, "-list"))
             }) : (0, r.jsx)(A.Z, {

@@ -129,9 +129,9 @@ function P(e) {
     emptyStateText: w,
     emptyStateHeader: D,
     onQueryChange: x
-  } = e, [L, j] = i.useState(""), k = i.useCallback(e => {
+  } = e, [L, j] = i.useState(""), M = i.useCallback(e => {
     j(e), null == x || x(e)
-  }, [x]), [M] = i.useState(true), [U, G] = i.useState(null), B = i.useId(), Z = i.useRef(null);
+  }, [x]), [k] = i.useState(true), [U, G] = i.useState(null), B = i.useId(), Z = i.useRef(null);
   i.useLayoutEffect(() => {
     let e = document.querySelector("[".concat(I, '="').concat(U, '"]')),
       t = Z.current;
@@ -187,8 +187,8 @@ function P(e) {
           ref: n,
           role: "combobox",
           "aria-label": b,
-          "aria-expanded": M,
-          "aria-controls": M ? B : true,
+          "aria-expanded": k,
+          "aria-controls": k ? B : true,
           "aria-owns": B,
           "aria-haspopup": "listbox",
           className: o()(m.combobox, _),
@@ -196,10 +196,10 @@ function P(e) {
             autoFocus: S,
             placeholder: t,
             query: L,
-            onChange: k,
+            onChange: M,
             onKeyDown: i,
             onBlur: () => G(null),
-            onClear: () => k(""),
+            onClear: () => M(""),
             className: o()({
               [m.searchWithScrollbar]: P
             }),
@@ -208,7 +208,7 @@ function P(e) {
               "aria-activedescendant": null != U ? U : true
             }
           }), (0, r.jsx)("div", {
-            children: M && (V ? (0, r.jsxs)("div", {
+            children: k && (V ? (0, r.jsxs)("div", {
               className: m.empty,
               children: [(0, r.jsx)(p.X6q, {
                 variant: "heading-md/semibold",

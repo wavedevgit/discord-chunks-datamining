@@ -114,8 +114,8 @@ function T(e) {
   } = (0, l.ZP)(), [w, D] = i.useState(c), x = R(s), [L, j] = (0, f.Ls)(n, {
     location: x
   }), {
-    id: k
-  } = (0, f.p6)(n), M = null != p ? p : k, U = (0, a.e7)([u.Z], () => C(u.Z)), G = (0, r.jsx)(o.R94, {
+    id: M
+  } = (0, f.p6)(n), k = null != p ? p : M, U = (0, a.e7)([u.Z], () => C(u.Z)), G = (0, r.jsx)(o.R94, {
     type: o.R94.Types.DESCRIPTION,
     className: g.marginTop8,
     children: N()
@@ -183,7 +183,7 @@ function T(e) {
   }
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.q4e, b({
-      value: M,
+      value: k,
       onChange: B,
       options: V(),
       isDisabled: !U,

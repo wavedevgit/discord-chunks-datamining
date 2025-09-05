@@ -18,7 +18,7 @@ require.r(exports), require.d(exports, {
   extendSuperProperties: () => z,
   getCampaignParams: () => x,
   getDevice: () => U,
-  getOS: () => M,
+  getOS: () => k,
   getSuperProperties: () => X,
   getSuperPropertiesBase64: () => Q,
   isThrottled: () => K,
@@ -157,7 +157,7 @@ function j() {
   return module
 }
 
-function k() {
+function M() {
   let {
     userAgent: e,
     vendor: t = ""
@@ -179,7 +179,7 @@ function k() {
   else return ""
 }
 
-function M() {
+function k() {
   let {
     userAgent: e
   } = window.navigator;
@@ -211,7 +211,7 @@ function G() {
 
 function B() {
   let e = {};
-  return module.os = M(), module.browser = k(), module.device = U(), module.system_locale = (0, Chunk627420.qf)(), module.has_client_mods = (0, Chunk903772.e)(), module
+  return module.os = k(), module.browser = M(), module.device = U(), module.system_locale = (0, Chunk627420.qf)(), module.has_client_mods = (0, Chunk903772.e)(), module
 }
 
 function Z() {
@@ -255,7 +255,7 @@ function W() {
   let n = {},
     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
   r && (null == require.release_channel || "" === require.release_channel) && (require.release_channel = r.split("-")[0]);
-  let i = parseInt("441209", 10);
+  let i = parseInt("441235", 10);
   isNaN(i) || (require.client_build_number = i);
   let a = null == P || null == (e = (t = P.remoteApp).getBuildNumber) ? true : module.call(exports);
   return isNaN(a) || (require.native_build_number = a), require.client_event_source = Y(), require.has_client_mods = (0, Chunk903772.e)(), require.client_launch_id = Chunk923452.s, require

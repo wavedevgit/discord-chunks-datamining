@@ -17,7 +17,7 @@ require.d(exports, {
   pK: () => b,
   pU: () => en,
   rI: () => K,
-  tp: () => k,
+  tp: () => M,
   xR: () => X
 }), require("./35282.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js");
 var Chunk654861 = require("./654861.js"),
@@ -228,7 +228,7 @@ function j(e) {
   return u.searchParams.set("size", "".concat((0, l.oO)(n * (0, l.x_)()))), u.searchParams.set("passthrough", "".concat(r && (0, s.ae)(i))), u.toString()
 }
 
-function k(e) {
+function M(e) {
   let t, {
     id: n,
     guildId: r,
@@ -247,7 +247,7 @@ function k(e) {
   return "webp" === u && a && X(i) && (_.animated = true), t += "?".concat(o.stringify(_))
 }
 
-function M(e) {
+function k(e) {
   let t, {
     id: n,
     splash: r,
@@ -260,7 +260,7 @@ function M(e) {
 }
 
 function U(e) {
-  return ee(M(e))
+  return ee(k(e))
 }
 
 function G(e) {
@@ -474,7 +474,7 @@ let et = {
   getGuildMemberAvatarURL: D,
   getGuildMemberAvatarURLSimple: w,
   getGuildMemberAvatarSource: x,
-  getGuildMemberBannerURL: k,
+  getGuildMemberBannerURL: M,
   getUserBannerURL: L,
   getAvatarDecorationURL: j,
   hasAnimatedGuildIcon: function e(e) {
@@ -483,7 +483,7 @@ let et = {
   isAnimatedIconHash: X,
   getUserAvatarSource: (e, t, n) => ee(P(e, t, n)),
   getGuildIconURL: V,
-  getGuildSplashURL: M,
+  getGuildSplashURL: k,
   getGuildSplashSource: U,
   getGuildDiscoverySplashURL: Z,
   getGuildDiscoverySplashSource: F,

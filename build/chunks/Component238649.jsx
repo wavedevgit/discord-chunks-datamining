@@ -39,7 +39,7 @@ let N = (e, t) => {
     } = (0, d.ZP)(u.Z.PREMIUM_MARKETING_HERO_CTA), R = (0, _.Nx)(), P = (0, y.$)(), w = (0, p.Z)(), D = null != w, x = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), {
       visibilityPercentageRef: L,
       visibilityPercentage: j
-    } = (0, v.E)(!x), k = (0, s.e7)([f.Z], () => f.Z.affinities), M = !D && k.length > 0, {
+    } = (0, v.E)(!x), M = (0, s.e7)([f.Z], () => f.Z.affinities), k = !D && M.length > 0, {
       isEligible: U,
       cohort: G
     } = (0, g.Q1)();
@@ -73,7 +73,7 @@ let N = (e, t) => {
                   referrer: w,
                   enablePremiumBrandRefresh: true
                 })
-              }), M && (0, r.jsx)("div", {
+              }), k && (0, r.jsx)("div", {
                 className: C.affinitiesContainer,
                 children: (0, r.jsx)(b.Z, {
                   textColor: "text-primary",

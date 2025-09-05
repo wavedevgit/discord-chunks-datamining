@@ -101,9 +101,9 @@ let O = function(e) {
     author: x,
     onMouseEnter: L,
     onMouseLeave: j
-  } = e, k = b(e, ["className", "compact", "contentOnly", "zalgo", "preview", "disableInteraction", "childrenRepliedMessage", "childrenExecutedCommand", "childrenHeader", "childrenSystemMessage", "childrenButtons", "childrenMessageContent", "childrenAccessories", "messageRef", "focusProps", "hasThread", "isSystemMessage", "hasReply", "author", "onMouseEnter", "onMouseLeave"]);
-  let M = (0, s.e7)([_.Z], () => (null == x ? true : x.guildId) == null || (null == x ? true : x.colorRoleId) == null ? null : _.Z.getRole(x.guildId, x.colorRoleId)),
-    U = (0, f.yH)(null == x ? true : x.guildId, M) && (0, d.S2)(x),
+  } = e, M = b(e, ["className", "compact", "contentOnly", "zalgo", "preview", "disableInteraction", "childrenRepliedMessage", "childrenExecutedCommand", "childrenHeader", "childrenSystemMessage", "childrenButtons", "childrenMessageContent", "childrenAccessories", "messageRef", "focusProps", "hasThread", "isSystemMessage", "hasReply", "author", "onMouseEnter", "onMouseLeave"]);
+  let k = (0, s.e7)([_.Z], () => (null == x ? true : x.guildId) == null || (null == x ? true : x.colorRoleId) == null ? null : _.Z.getRole(x.guildId, x.colorRoleId)),
+    U = (0, f.yH)(null == x ? true : x.guildId, k) && (0, d.S2)(x),
     [G, B] = i.useState(false),
     Z = i.useCallback(e => {
       B(true), null == L || L(e)
@@ -135,7 +135,7 @@ let O = function(e) {
             [p.hasReply]: D
           }),
           ref: N
-        }, k), {
+        }, M), {
           role: "article",
           onMouseEnter: Z,
           onMouseLeave: F,

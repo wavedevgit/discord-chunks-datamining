@@ -97,8 +97,8 @@ function L(e) {
     onClick: x,
     hideSimpleEmbedContent: L = true,
     channel: j,
-    isGroupStart: k,
-    animateAvatar: M,
+    isGroupStart: M,
+    animateAvatar: k,
     subscribeToComponentDispatch: U,
     renderThreadAccessory: G,
     trackAnnouncementViews: B = false

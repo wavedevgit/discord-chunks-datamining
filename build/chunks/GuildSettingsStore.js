@@ -128,8 +128,8 @@ function eE(e) {
   } = e, _ = R.Z.getGuild(n);
   if (null == _) return eb();
   let p = T.Z.getProfile(n);
-  o = s = _, l = c = p, ee = $, en = et, q = M.QZA.OPEN, X = {}, Q = null, u = D.default.castGuildIdAsEveryoneGuildRoleId(n), ea = s.mfaLevel, eu = ec, f = null, eo = d, eO({
-    section: null != (t = null != i ? i : r) ? t : (0, k.r)(),
+  o = s = _, l = c = p, ee = $, en = et, q = k.QZA.OPEN, X = {}, Q = null, u = D.default.castGuildIdAsEveryoneGuildRoleId(n), ea = s.mfaLevel, eu = ec, f = null, eo = d, eO({
+    section: null != (t = null != i ? i : r) ? t : (0, M.r)(),
     subsection: null != a ? a : null
   })
 }
@@ -148,7 +148,7 @@ function ey(e) {
 function eO(e) {
   if (null == s) returnfalse;
   let t = r;
-  if (r = e.section, i = e.subsection, r === M.pNK.BANS) {
+  if (r = e.section, i = e.subsection, r === k.pNK.BANS) {
     let {
       enabled: e
     } = x.T.getCurrentConfig({
@@ -156,8 +156,8 @@ function eO(e) {
       location: "7f0c91_1"
     });
     e || v.Z.fetchGuildBans(s.id)
-  } else if (r === M.pNK.INSTANT_INVITES || r === M.pNK.INVITES) b.tn.get({
-    url: M.ANM.GUILD_INSTANT_INVITES(s.id),
+  } else if (r === k.pNK.INSTANT_INVITES || r === k.pNK.INVITES) b.tn.get({
+    url: k.ANM.GUILD_INSTANT_INVITES(s.id),
     oldFormErrors: true,
     rejectWithError: true
   }).then(e => {
@@ -166,11 +166,11 @@ function eO(e) {
       invites: e.body
     })
   });
-  else if (r === M.pNK.INTEGRATIONS || r === M.pNK.ROLES) {
+  else if (r === k.pNK.INTEGRATIONS || r === k.pNK.ROLES) {
     if (u = null, t !== e.section) return eq(e)
-  } else r === M.pNK.MEMBERS ? u = (0, A.lV)(s) : r === M.pNK.VANITY_URL ? (0, j.U5)(s.id) : r === M.pNK.SAFETY && O.Z.dispatch({
+  } else r === k.pNK.MEMBERS ? u = (0, A.lV)(s) : r === k.pNK.VANITY_URL ? (0, j.U5)(s.id) : r === k.pNK.SAFETY && O.Z.dispatch({
     type: "GUILD_SETTINGS_SAFETY_SET_SUBSECTION",
-    subsection: null == i ? M.KsC.SAFETY_OVERVIEW : i
+    subsection: null == i ? k.KsC.SAFETY_OVERVIEW : i
   })
 }
 
@@ -197,7 +197,7 @@ function eS() {
 
 function eA(e) {
   var t;
-  q = M.QZA.OPEN, r = null != r ? r : (0, k.r)(), i = null, X = null != (t = e.errors) ? t : {}
+  q = k.QZA.OPEN, r = null != r ? r : (0, M.r)(), i = null, X = null != (t = e.errors) ? t : {}
 }
 
 function eC() {
@@ -274,7 +274,7 @@ function ej(e) {
   (e_ !== n || null == ed) && (e_ = n, ed = new Map), ed = t.reduce((e, t) => (null != t.user && null != t.user.id && e.set(t.user.id, t), e), ed), ef++
 }
 
-function ek(e) {
+function eM(e) {
   let {
     user: t,
     guildId: n
@@ -286,7 +286,7 @@ function ek(e) {
   }), ef++
 }
 
-function eM(e) {
+function ek(e) {
   let {
     user: t,
     guildId: n
@@ -300,7 +300,7 @@ function eU(e) {
   {
     let e = R.Z.getGuild(s.id);
     if (null == e) returnfalse;
-    if (l = T.Z.getProfile(s.id), r !== M.pNK.PROFILE && r !== M.pNK.TAG && (c = l), r === M.pNK.PROFILE) {
+    if (l = T.Z.getProfile(s.id), r !== k.pNK.PROFILE && r !== k.pNK.TAG && (c = l), r === k.pNK.PROFILE) {
       o = e, s = e;
       return
     }
@@ -384,7 +384,7 @@ function ez(e) {
 }
 
 function eq(e) {
-  if (null == s || q !== M.QZA.OPEN || "GUILD_INTEGRATIONS_UPDATE" === e.type && e.guildId !== s.id) returnfalse;
+  if (null == s || q !== k.QZA.OPEN || "GUILD_INTEGRATIONS_UPDATE" === e.type && e.guildId !== s.id) returnfalse;
   (0, L.i)(s.id)
 }
 
@@ -392,7 +392,7 @@ function eX(e) {
   let {
     guildId: t
   } = e;
-  null != s && t === s.id && (s = (0, I.t8)(s, "features", s.features.union(new Set([M.oNc.PIN_PERMISSION_MIGRATION_COMPLETE]))))
+  null != s && t === s.id && (s = (0, I.t8)(s, "features", s.features.union(new Set([k.oNc.PIN_PERMISSION_MIGRATION_COMPLETE]))))
 }
 
 function eQ(e) {
@@ -654,8 +654,8 @@ let tn = new tt(Chunk570140.Z, __OVERLAY__ ? {} : {
   GUILD_SETTINGS_ROLE_SELECT: eB,
   GUILD_SETTINGS_LOADED_INTEGRATIONS: ez,
   GUILD_SETTINGS_PIN_PERMISSION_MIGRATED: eX,
-  GUILD_BAN_ADD: ek,
-  GUILD_BAN_REMOVE: eM,
+  GUILD_BAN_ADD: eM,
+  GUILD_BAN_REMOVE: ek,
   GUILD_ROLE_CREATE: eZ,
   GUILD_ROLE_UPDATE: eF,
   GUILD_ROLE_DELETE: eV,

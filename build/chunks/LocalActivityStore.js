@@ -91,31 +91,28 @@ function L() {
     u = null != Chunk199902.Z.getCurrentUserActiveStream(),
     d = Chunk442837 || Chunk570140 && !Chunk317381;
   if (null != Chunk392711 && null != Chunk392711.name && !Chunk212517) {
-    var f, O;
+    var f;
     let t = Chunk77498.Z.getGameByName(Chunk392711.name);
     module.push(R({
       type: Chunk981631.IIU.PLAYING,
       name: Chunk392711.name,
       application_id: null != (f = Chunk392711.id) ? Chunk812206 : null == exports ? true : exports.id,
-      metadata: {
-        distributor: null != (O = Chunk392711.distributor) ? Chunk581883 : true
-      },
       timestamps: {
         start: Chunk392711.start
       }
     }, (0, Chunk509003.LK)(Chunk392711)))
   }
-  let v = Chunk768419.Z.getActivity();
-  null != Chunk630388 && module.push(R({
+  let O = Chunk768419.Z.getActivity();
+  null != Chunk581883 && module.push(R({
     type: Chunk981631.IIU.LISTENING
-  }, Chunk630388));
-  let N = Chunk106301.Z.getCurrentHangStatus();
-  if (null != N) {
+  }, Chunk581883));
+  let v = Chunk106301.Z.getCurrentHangStatus();
+  if (null != Chunk630388) {
     let t = Chunk106301.Z.getCustomHangStatus();
     module.push({
       type: Chunk981631.IIU.HANG_STATUS,
       name: "Hang Status",
-      state: N,
+      state: Chunk630388,
       details: null == exports ? true : exports.status,
       emoji: null == exports ? true : exports.emoji
     })
@@ -127,7 +124,7 @@ function j() {
   x = {}, L()
 }
 
-function k(e) {
+function M(e) {
   let {
     socketId: t,
     pid: n,
@@ -138,7 +135,7 @@ function k(e) {
   null != r ? x[t] = [n, r, i] : delete x[t], L()
 }
 
-function M(e) {
+function k(e) {
   let {
     socketId: t
   } = e;
@@ -203,8 +200,8 @@ let F = new Z(Chunk570140.Z, {
   ROBLOX_SUBGAME_APPLICATION_FETCH_SUCCESS: L,
   OVERLAY_INITIALIZE: U,
   START_SESSION: j,
-  LOCAL_ACTIVITY_UPDATE: k,
-  RPC_APP_DISCONNECTED: M,
+  LOCAL_ACTIVITY_UPDATE: M,
+  RPC_APP_DISCONNECTED: k,
   RUNNING_GAMES_CHANGE: L,
   LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: L,
   SPOTIFY_PLAYER_STATE: L,

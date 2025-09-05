@@ -156,16 +156,18 @@ let v = e => {
       channelId: n,
       messageId: i,
       roleId: a,
-      analyticsLocations: o,
-      action: s,
-      section: l
+      widgetType: o,
+      analyticsLocations: s,
+      action: l,
+      section: c
     } = e;
     u.default.track(m.rMx.USER_PROFILE_ACTION, O(b({}, (0, r.hH)(t), (0, r.JS)(n), S(e), A(e)), {
-      location_stack: o,
-      profile_action: s,
-      profile_section: l,
+      location_stack: s,
+      profile_action: l,
+      profile_section: c,
       source_message_id: i,
-      source_role_id: a
+      source_role_id: a,
+      widget_type: o
     }))
   },
   N = e => {

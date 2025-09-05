@@ -5,12 +5,12 @@ require.d(exports, {
   FZ: () => D,
   Hl: () => G,
   NJ: () => j,
-  R8: () => M,
+  R8: () => k,
   Sq: () => N,
   Wg: () => U,
   Zn: () => C,
   c2: () => x,
-  eE: () => k,
+  eE: () => M,
   iE: () => B,
   iK: () => L,
   l8: () => w,
@@ -171,11 +171,11 @@ function j(e) {
   return L(e.getCurrentContent().getFirstBlock().getText().length, e)
 }
 
-function k(e) {
+function M(e) {
   return L(0, e)
 }
 
-function M(e) {
+function k(e) {
   let t = e.getSelection();
   return t = (t = t.set("focusOffset", 0)).set("isBackward", true), r.EditorState.forceSelection(e, t)
 }

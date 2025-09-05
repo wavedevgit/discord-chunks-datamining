@@ -106,8 +106,8 @@ let A = {
   x = 9e5,
   L = 36e5,
   j = 864e5,
-  k = .001,
-  M = performance.now(),
+  M = .001,
+  k = performance.now(),
   U = (0, Chunk668757.X6)() ? (0, Chunk668757.Ub)((0, Chunk548345.R)()) : null;
 Chunk990547.extendSuperProperties({
   launch_signature: U
@@ -225,12 +225,12 @@ let Z = {
   [Chunk981631.rMx.RPC_COMMAND_SENT]: {
     throttlePeriod: j,
     throttleKeys: e => [e.application_id, e.command],
-    throttlePercent: k
+    throttlePercent: M
   },
   [Chunk981631.rMx.RPC_SUBSCRIPTION_REQUESTED]: {
     throttlePeriod: j,
     throttleKeys: e => [e.application_id, e.event],
-    throttlePercent: k
+    throttlePercent: M
   },
   [Chunk981631.rMx.ACTIVITY_HANDSHAKE]: {
     throttlePeriod: j,
@@ -401,7 +401,7 @@ function z(e) {
     } = a;
     a = O({}, T(a, ["source"]), V(e))
   }
-  a.client_performance_cpu = p.Z.getCurrentCPUUsagePercent(), a.client_performance_memory = p.Z.getCurrentMemoryUsageKB(), a.cpu_core_count = p.Z.getCPUCoreCount(), a.accessibility_features = H(), a.rendered_locale = b.intl.currentLocale, a.uptime_app = Math.floor((performance.now() - M) / 1e3);
+  a.client_performance_cpu = p.Z.getCurrentCPUUsagePercent(), a.client_performance_memory = p.Z.getCurrentMemoryUsageKB(), a.cpu_core_count = p.Z.getCPUCoreCount(), a.accessibility_features = H(), a.rendered_locale = b.intl.currentLocale, a.uptime_app = Math.floor((performance.now() - k) / 1e3);
   let o = p.Z.getProcessUptime();
   null != o && (a.uptime_process_renderer = Math.floor(o));
   let {
