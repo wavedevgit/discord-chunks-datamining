@@ -67,7 +67,7 @@ let _ = (e, t, n, r) => {
         priceOptions: a,
         discountAmountOff: o
       } = _(e, t, n, null == i);
-    if (null == i) return null;
+    if (null == i || null == o) return null;
     let u = (0, l.aS)(e, false, false, a);
     return (0, c.T4)(u.amount - (null != o ? o : 0), u.currency)
   }

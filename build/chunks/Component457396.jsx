@@ -140,8 +140,8 @@ let W = e => {
     eO && eP.push(o.z.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK);
     let [eZ, ew] = (0, g.US)(eP, true, true);
     if (i.useEffect(() => {
-        true === q && null != ex && eA(F.L.AUTO_DISMISS)
-      }, [eA, q, ex]), !W({
+        true === q && null != ex && eA(F.L.AUTO_DISMISS), true === q && null != eZ && ew(F.L.AUTO_DISMISS)
+      }, [eA, q, ex, ew, eZ]), !W({
         selected: q
       })) return null;
     let eL = () => {

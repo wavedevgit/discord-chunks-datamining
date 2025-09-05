@@ -1,11 +1,11 @@
 /** Chunk was on 1272 **/
 /** chunk id: 484605, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
-}), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
-  Chunk264418 = require("./264418.jsx"),
+  Z: () => g
+});
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
+var Chunk264418 = require("./264418.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -15,17 +15,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk22767 = require("./22767.js");
-let m = e => {
+  Chunk288541 = require("./288541.js");
+let g = e => {
   let {
     targetElementRef: t,
-    discountOffer: m,
-    premiumSubscription: b,
-    dismissCoachmark: _,
-    children: O
+    discountOffer: g,
+    premiumSubscription: m,
+    dismissCoachmark: b,
+    children: _
   } = e, {
-    analyticsLocations: E
-  } = (0, s.ZP)(o.Z.CHURN_DISCOUNT_POPOVER), [y, v] = i.useState(false), I = (0, u.W7)(p.Xh.PREMIUM_MONTH_TIER_2, m, b), C = (0, r.jsx)(l.Z, {
+    analyticsLocations: O
+  } = (0, o.ZP)(a.Z.CHURN_DISCOUNT_POPOVER), E = (0, c.W7)(d.Xh.PREMIUM_MONTH_TIER_2, g, m), y = (0, r.jsx)(i.Z, {
     targetElementRef: t,
     position: "right",
     align: "top",
@@ -34,23 +34,24 @@ let m = e => {
       position: "left",
       align: "start"
     },
-    title: h.intl.format(h.t["3yZP0N"], {
-      percent: m.discount.amount
+    title: f.intl.format(f.t["3yZP0N"], {
+      percent: g.discount.amount
     }).toString(),
-    body: h.intl.format(h.t["3Q4wCw"], {
-      discountedPrice: I,
-      billingPeriod: (0, c.JP)(m.discount.user_usage_limit_interval),
-      numMonths: m.discount.user_usage_limit
+    body: f.intl.format(f.t["3Q4wCw"], {
+      discountedPrice: E,
+      billingPeriod: (0, s.JP)(g.discount.user_usage_limit_interval),
+      numMonths: g.discount.user_usage_limit
     }),
     graphic: {
       type: "image",
-      src: g
+      src: h.Z
     },
+    gradientColor: "nitro-pink",
     actions: [{
-      text: h.intl.string(h.t.zrCzVF),
+      text: f.intl.string(f.t.zrCzVF),
       variant: "expressive",
       onClick: () => {
-        (0, a.ZDy)(async () => {
+        b(p.L.TAKE_ACTION), (0, l.ZDy)(async () => {
           let {
             PremiumBrandRefreshSubscriptionCancellationModal: e
           } = await n.e("26526").then(n.bind(n, 48813));
@@ -74,9 +75,9 @@ let m = e => {
               }
               return e
             }({}, t), i = i = {
-              premiumSubscription: b,
-              analyticsLocations: E,
-              initialStep: d.R.CONFIRM_DISCOUNT
+              premiumSubscription: m,
+              analyticsLocations: O,
+              initialStep: u.R.CONFIRM_DISCOUNT
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
@@ -90,16 +91,15 @@ let m = e => {
           }
         })
       },
-      icon: a.SrA
+      icon: l.SrA
     }],
     onRequestClose: () => {
-      _(f.L.USER_DISMISS)
+      b(p.L.USER_DISMISS)
     }
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      onMouseEnter: () => v(true),
-      children: O
-    }), y && C]
+      children: _
+    }), y]
   })
 }

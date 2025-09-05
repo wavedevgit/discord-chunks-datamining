@@ -162,7 +162,7 @@ let ee = (e, t, i) => {
           }), q && null != O && (0, r.jsx)(l.Text, {
             className: W.churnEntrypointDescriptionBrandRefresh,
             variant: "text-sm/medium",
-            color: "text-default",
+            color: "text-primary",
             children: Y.intl.format(Y.t["3Q4wCw"], {
               discountedPrice: O,
               billingPeriod: (0, E.JP)(y.discount.user_usage_limit_interval),
@@ -230,7 +230,7 @@ let ee = (e, t, i) => {
         }), A && null != m && (0, r.jsx)(l.Text, {
           className: W.churnEntrypointDescription,
           variant: "text-sm/medium",
-          color: "text-default",
+          color: "always-white",
           children: Y.intl.format(Y.t["3Q4wCw"], {
             discountedPrice: m,
             billingPeriod: (0, E.JP)(p.discount.user_usage_limit_interval),
