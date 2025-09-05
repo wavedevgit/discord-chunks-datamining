@@ -31,74 +31,74 @@ let C = e => {
   let x = null != (n = null != b ? b : null == E ? true : E.skuId) ? n : "",
     {
       handleCardVisibilityChange: y
-    } = (0, p.E)(x, "home", "marketing featured block"),
-    T = (0, f.YG)(E, S),
+    } = (0, f.E)(x, "home", "marketing featured block"),
+    T = (0, p.YG)(E, S),
     L = l.useRef(null),
-    j = x === i.T.NAMEPLATES_V3,
+    j = x === o.T.NAMEPLATES_V3,
     k = j ? "NAMEPLATES VOL.3" : null,
-    I = null == S ? true : S.bodyText,
-    N = (0, d.sp)();
-  return (0, r.jsx)(o.$, {
+    B = null == S ? true : S.bodyText,
+    I = (0, d.sp)();
+  return (0, r.jsx)(i.$, {
     innerRef: L,
     onChange: y,
     threshold: 0,
     children: (0, r.jsxs)(c.P3F, {
-      className: h.featuredBlock,
+      className: _.featuredBlock,
       innerRef: L,
       style: {
         backgroundImage: "url(".concat(T, ")")
       },
       onClick: () => {
         v("shop marketing tile", x), u.default.track(m.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-          collectibles_shop_session_id: null == N ? true : N.sessionId,
+          collectibles_shop_session_id: null == I ? true : I.sessionId,
           sku_id: x,
           page_type: "home",
-          page_section: null == N ? true : N.pageSection,
-          page_category: null == N ? true : N.pageCategory,
+          page_section: null == I ? true : I.pageSection,
+          page_category: null == I ? true : I.pageCategory,
           tile_type: "FEATURED_BLOCK",
-          tile_position: String(null == N ? true : N.tilePosition),
+          tile_position: String(null == I ? true : I.tilePosition),
           cta_name: null
         })
       },
       children: [null != O && (0, r.jsx)(c.IGR, {
         disableColor: true,
         text: O,
-        className: h.featuredBlockBadge
+        className: _.featuredBlockBadge
       }), (0, r.jsxs)("div", {
-        className: h.featuredBlockTextContainer,
+        className: _.featuredBlockTextContainer,
         children: [null != k && (0, r.jsx)(c.X6q, {
           lineClamp: 2,
-          className: s()(h.featuredBlockTitleText, {
-            [h.featuredBlockTitleTextNameplate]: j
+          className: s()(_.featuredBlockTitleText, {
+            [_.featuredBlockTitleTextNameplate]: j
           }),
           style: {
             color: null != (a = null == S ? true : S.bannerTextColor) ? a : "white"
           },
           variant: "heading-xl/semibold",
           children: k
-        }), null != I && (0, r.jsx)(c.X6q, {
+        }), null != B && (0, r.jsx)(c.X6q, {
           lineClamp: null != k ? 2 : 4,
-          className: h.featuredBlockBodyText,
+          className: _.featuredBlockBodyText,
           style: {
             color: null != (C = null == S ? true : S.bannerTextColor) ? C : "white"
           },
           variant: "heading-md/medium",
-          children: I
+          children: B
         })]
       }), (0, r.jsx)("div", {
-        className: h.featuredBlockButtonContainer,
+        className: _.featuredBlockButtonContainer,
         children: (0, r.jsx)(c.zxk, {
           variant: "overlay-primary",
-          text: _.intl.string(_.t.jVcuVV),
+          text: h.intl.string(h.t.jVcuVV),
           onClick: e => {
             v("shop marketing take me there button", x), e.stopPropagation(), u.default.track(m.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-              collectibles_shop_session_id: null == N ? true : N.sessionId,
+              collectibles_shop_session_id: null == I ? true : I.sessionId,
               sku_id: x,
               page_type: "home",
-              page_section: null == N ? true : N.pageSection,
-              page_category: null == N ? true : N.pageCategory,
+              page_section: null == I ? true : I.pageSection,
+              page_category: null == I ? true : I.pageCategory,
               tile_type: "FEATURED_BLOCK",
-              tile_position: String(null == N ? true : N.tilePosition),
+              tile_position: String(null == I ? true : I.tilePosition),
               cta_name: "Take me there button"
             })
           }

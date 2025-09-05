@@ -21,16 +21,16 @@ function f(e) {
   } = e, {
     trackUserProfileAction: f
   } = (0, c.KZ)(), {
-    mutualGuilds: p,
-    isFetching: m
+    mutualGuilds: m,
+    isFetching: p
   } = (0, a.Z)(n);
   return (0, o.jsx)(l.zJl, {
     className: u.listScroller,
     fade: true,
-    children: null == p && m ? (0, o.jsx)("div", {
+    children: null == m && p ? (0, o.jsx)("div", {
       className: u.empty,
       children: (0, o.jsx)(l.$jN, {})
-    }) : (null != p || m) && (null == p ? true : p.length) !== 0 ? null == p ? true : p.map(e => {
+    }) : (null != m || p) && (null == m ? true : m.length) !== 0 ? null == m ? true : m.map(e => {
       let {
         guild: l,
         nick: c

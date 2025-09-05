@@ -2,7 +2,7 @@
 /** chunk id: 309956, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  B: () => p
+  B: () => f
 }), require("./388685.js"), require("./539854.js");
 var Chunk647438 = require("./647438.js"),
   Chunk843611 = require("./843611.js"),
@@ -19,30 +19,30 @@ let g = {
     [Chunk215023.AW.NAMEPLATES]: Chunk335818.G.NAMEPLATE,
     [Chunk215023.AW.BUNDLES]: Chunk335818.G.BUNDLE
   },
-  p = (e, t) => {
+  f = (e, t) => {
     let {
       enabled: n
     } = (0, s.WX)({
       location: "useShopViewTransition"
-    }), a = (0, i.FF)("CollectiblesBrowse"), {
-      setItemTypeFilter: p,
-      reset: f,
+    }), a = (0, o.FF)("CollectiblesBrowse"), {
+      setItemTypeFilter: f,
+      reset: p,
       setCurrentTab: m
-    } = (0, o.S)(), _ = r.useMemo(() => e !== u.AW.ORBS || n ? (0, u.RE)(e) && a ? u.AW.CATALOG : e : u.AW.HOME, [e, n, a]), [h, C] = r.useState(_), [b, E] = r.useState(u.f7.VISIBLE);
+    } = (0, i.S)(), h = r.useMemo(() => e !== u.AW.ORBS || n ? (0, u.RE)(e) && a ? u.AW.CATALOG : e : u.AW.HOME, [e, n, a]), [_, C] = r.useState(h), [b, E] = r.useState(u.f7.VISIBLE);
     r.useEffect(() => {
-      m(h)
-    }, [h, m]), r.useEffect(() => {
-      C(_)
-    }, [_]);
+      m(_)
+    }, [_, m]), r.useEffect(() => {
+      C(h)
+    }, [h]);
     let {
       clearError: S
     } = (0, c.a)(), O = (0, l.k6)(), v = r.useCallback(async (e, n) => {
-      if (S(), e === u.AW.CATALOG) f();
-      else if ((0, u.RE)(e) && e !== h) {
+      if (S(), e === u.AW.CATALOG) p();
+      else if ((0, u.RE)(e) && e !== _) {
         let t = g[e];
-        null != t ? p(t) : f()
+        null != t ? f(t) : p()
       }
-      if (h === e) return;
+      if (_ === e) return;
       if (n) {
         let e;
         E(u.f7.OUT), await (e = 1.1 * u.lb, new Promise(t => setTimeout(t, e)))
@@ -51,9 +51,9 @@ let g = {
       C(r), n && E(u.f7.IN), t || O.push(d.Z5c.COLLECTIBLES_SHOP_WITH_TAB(r), {
         shallow: true
       }), E(u.f7.VISIBLE)
-    }, [O, t, a, p, f, h, S]);
+    }, [O, t, a, f, p, _, S]);
     return {
-      selectedTab: h,
+      selectedTab: _,
       transitionState: b,
       transitionToTab: v
     }

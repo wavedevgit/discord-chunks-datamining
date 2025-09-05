@@ -11,4 +11,4 @@ let r = {
     want_to_play_games: 8,
     played_games: 8
   },
-  i = 100
+  i = 200

@@ -88,13 +88,13 @@ function E(e) {
             displayProfile: G,
             themeType: N.l.MODAL,
             children: [(0, o.jsx)(y.Z, {
-              children: (0, o.jsx)(g.Z, {
+              children: (0, o.jsx)(j.Z, {
                 user: n,
                 guildId: F,
                 onCloseProfile: k
               })
             }), (0, o.jsxs)("div", {
-              children: [(0, o.jsx)(m.Z, {
+              children: [(0, o.jsx)(p.Z, {
                 user: n,
                 displayProfile: G,
                 themeType: N.l.MODAL
@@ -127,7 +127,7 @@ function E(e) {
                   }), (0, o.jsx)(v.Z, {
                     user: n,
                     guildId: F
-                  }), (0, o.jsx)(j.Z, {
+                  }), (0, o.jsx)(g.Z, {
                     user: n
                   })]
                 })]
@@ -144,7 +144,7 @@ function E(e) {
                   size: "sm",
                   userId: n.id
                 }),
-                tags: (0, o.jsx)(p.Z, {
+                tags: (0, o.jsx)(m.Z, {
                   displayProfile: G,
                   themeType: N.l.MODAL,
                   onClose: k

@@ -39,13 +39,13 @@ let d = e => {
     null == n || n(e)
   }, .33, null != n), g = null != t.textColor ? {
     color: t.textColor
-  } : true, p = null != t.body && "" !== t.body, f = null != t.helpCenterUrl && "" !== t.helpCenterUrl;
+  } : true, f = null != t.body && "" !== t.body, p = null != t.helpCenterUrl && "" !== t.helpCenterUrl;
   return (0, r.jsxs)("div", {
     ref: d,
     className: c.immersiveBannerBlock,
     children: [(0, r.jsx)("div", {
       className: c.banner,
-      children: (0, r.jsx)(i.Z, {
+      children: (0, r.jsx)(o.Z, {
         bannerStatic: t.bannerAsset.static,
         bannerAnimated: t.bannerAsset.animated
       })
@@ -62,14 +62,14 @@ let d = e => {
           color: "header-primary",
           style: u({}, g),
           children: t.title
-        }), p || f ? (0, r.jsxs)(l.Text, {
+        }), f || p ? (0, r.jsxs)(l.Text, {
           variant: "text-md/medium",
           style: u({}, g),
-          children: [p && t.body, p && f && " ", f && (0, r.jsx)(l.eee, {
+          children: [f && t.body, f && p && " ", p && (0, r.jsx)(l.eee, {
             href: t.helpCenterUrl,
             className: c.learnMoreLink,
             style: u({}, g),
-            children: o.intl.string(o.t.O7ADgo)
+            children: i.intl.string(i.t.O7ADgo)
           })]
         }) : null]
       })

@@ -45,7 +45,7 @@ function E(e) {
     openedAt: R,
     onClose: M,
     sourceAnalyticsLocations: U = []
-  } = e, k = E === Z.ME ? true : E, V = (0, p.ZP)(t.id, k), F = u.ZP.getName(k, S, t), G = (0, s.Dt)(), {
+  } = e, k = E === Z.ME ? true : E, V = (0, m.ZP)(t.id, k), F = u.ZP.getName(k, S, t), G = (0, s.Dt)(), {
     analyticsLocations: z
   } = (0, a.ZP)([...U, c.Z.USER_PROFILE_MODAL]), K = (0, f.ZB)({
     layout: "MODAL",
@@ -96,7 +96,7 @@ function E(e) {
                 themeType: P.l.MODAL
               }), (0, o.jsx)("div", {
                 className: N.headerInner,
-                children: (0, o.jsx)(m.Z, {
+                children: (0, o.jsx)(p.Z, {
                   user: t,
                   displayProfile: V,
                   guildId: k,
@@ -140,9 +140,9 @@ function E(e) {
                     userId: t.id,
                     userBio: null == V ? true : V.bio,
                     setLineClamp: false
-                  }), (0, o.jsx)(g.Z, {
+                  }), (0, o.jsx)(j.Z, {
                     heading: T.intl.string(T.t["A//N4u"]),
-                    children: (0, o.jsx)(j.Z, {
+                    children: (0, o.jsx)(g.Z, {
                       userId: t.id,
                       guildId: k,
                       tooltipDelay: O.vB

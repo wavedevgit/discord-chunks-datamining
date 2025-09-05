@@ -18,8 +18,8 @@ let d = e => {
     bannerStatic: t,
     bannerAnimated: n,
     isResponsive: l = false
-  } = e, d = (0, s.e7)([i.Z], () => i.Z.useReducedMotion), g = (0, s.e7)([c.Z], () => c.Z.isFocused());
-  return null != n && !d && g ? (0, r.jsx)(o.Z, {
+  } = e, d = (0, s.e7)([o.Z], () => o.Z.useReducedMotion), g = (0, s.e7)([c.Z], () => c.Z.isFocused());
+  return null != n && !d && g ? (0, r.jsx)(i.Z, {
     className: a()({
       [u.responsive]: l
     }, u.bannerAsset, u.bannerVideoBackground),

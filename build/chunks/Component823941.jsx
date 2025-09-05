@@ -2,7 +2,7 @@
 /** chunk id: 823941, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => I,
+  Z: () => B,
   n: () => L
 }), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
@@ -35,13 +35,13 @@ let L = (0, Chunk884697.IC)(90),
       category: t
     } = e, {
       analyticsLocations: n
-    } = (0, d.ZP)(), a = l.useRef(null), s = (0, o.e7)([f.default], () => f.default.getCurrentUser());
-    return h.ZP.canUseCollectibles(s) ? t.summary : y.intl.format(y.t["9hafRk"], {
+    } = (0, d.ZP)(), a = l.useRef(null), s = (0, i.e7)([p.default], () => p.default.getCurrentUser());
+    return _.ZP.canUseCollectibles(s) ? t.summary : y.intl.format(y.t["9hafRk"], {
       getPremium: e => (0, r.jsx)(c.P3F, {
         innerRef: a,
         className: T.getPremiumHook,
         onClick: () => {
-          (0, p.Z)({
+          (0, f.Z)({
             subscriptionTier: x.Si.TIER_2,
             analyticsLocations: n,
             returnRef: a
@@ -73,28 +73,28 @@ let L = (0, Chunk884697.IC)(90),
     })
   };
 
-function I(e) {
+function B(e) {
   let {
     category: t,
     className: n,
     hideLimitedTimeBadge: l = false
   } = e, {
     backgroundColors: a
-  } = (0, b.Z)(t.styles), d = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), g = (0, o.e7)([m.Z], () => m.Z.isFocused()), {
-    bannerOverrides: p,
-    shopAllBannerStatic: f,
-    shopAllBannerAnimated: h
-  } = (0, v.t0)(t), x = !!(null == p ? true : p.showDarkBannerText);
+  } = (0, b.Z)(t.styles), d = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), g = (0, i.e7)([m.Z], () => m.Z.isFocused()), {
+    bannerOverrides: f,
+    shopAllBannerStatic: p,
+    shopAllBannerAnimated: _
+  } = (0, v.t0)(t), x = !!(null == f ? true : f.showDarkBannerText);
   return (0, r.jsxs)(E.Z, {
-    asset: f,
+    asset: p,
     className: s()(T.shopBanner, n),
     style: null != a ? {
       background: "".concat((0, O.nH)(a), " border-box border-box"),
       outlineColor: a.border.toHslString()
     } : true,
-    children: [!d && null != h && g && (0, r.jsx)(k, {
-      src: h
-    }), (null == p ? true : p.addAttributionLogo) ? (0, r.jsxs)("div", {
+    children: [!d && null != _ && g && (0, r.jsx)(k, {
+      src: _
+    }), (null == f ? true : f.addAttributionLogo) ? (0, r.jsxs)("div", {
       className: T.discordLogo,
       children: [(0, r.jsx)(c.gw7, {
         size: "custom",
@@ -102,19 +102,19 @@ function I(e) {
         height: 28,
         color: "currentColor",
         className: T.discordIcon
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(h.Z, {
         className: T.discordWordmark
       })]
     }) : (0, r.jsx)(c.LZC, {
       size: 28
-    }), (null == p ? true : p.addLogo) ? (0, r.jsx)("img", {
+    }), (null == f ? true : f.addLogo) ? (0, r.jsx)("img", {
       className: T.categoryLogo,
       src: (0, C.uV)(t.logo, {
         size: L
       }),
       alt: t.name,
       style: {
-        maxWidth: null == p ? true : p.logoMaxWidth
+        maxWidth: null == f ? true : f.logoMaxWidth
       }
     }) : (0, r.jsx)(c.LZC, {
       size: 90
@@ -126,7 +126,7 @@ function I(e) {
         color: t.bannerTextColor
       } : true,
       variant: "text-md/normal",
-      children: t.skuId === i.T.DISXCORE ? (0, r.jsx)(j, {
+      children: t.skuId === o.T.DISXCORE ? (0, r.jsx)(j, {
         category: t
       }) : t.summary
     }), !l && (0, r.jsx)(S.Z, {

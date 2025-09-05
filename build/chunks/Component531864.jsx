@@ -14,81 +14,81 @@ var Chunk951288 = require("./951288.js"),
   Chunk616066 = require("./616066.jsx"),
   Chunk215023 = require("./215023.js"),
   Chunk980800 = require("./980800.js");
-let p = {
+let f = {
     x: 160,
     y: 160
   },
-  f = [{
+  p = [{
     left: 0,
     top: 20,
     rotation: false,
-    size: p,
+    size: f,
     skuId: "1212569433839636530"
   }, {
     left: 110,
     top: 48,
     rotation: false,
-    size: p,
+    size: f,
     skuId: "1144308439720394944"
   }, {
     left: 230,
     top: 12,
     rotation: 8,
-    size: p,
+    size: f,
     skuId: "1228251144065777765"
   }, {
     left: 354,
     top: 44,
     rotation: false,
-    size: p,
+    size: f,
     skuId: "1343751620965564426"
   }, {
     left: 470,
     top: 52,
     rotation: 12,
-    size: p,
+    size: f,
     skuId: "1157407831348228141"
   }, {
     left: 600,
     top: 28,
     rotation: false,
-    size: p,
+    size: f,
     skuId: "1197344326133502032"
   }, {
     left: 740,
     top: 12,
     rotation: false,
-    size: p,
+    size: f,
     skuId: "1232071712695386162"
   }, {
     left: 870,
     top: 40,
     rotation: false,
-    size: p,
+    size: f,
     skuId: "1220513977683935373"
   }, {
     left: 1010,
     top: 30,
     rotation: 15,
-    size: p,
+    size: f,
     skuId: "1144046002110738634"
   }, {
     left: 1140,
     top: 52,
     rotation: false,
-    size: p,
+    size: f,
     skuId: "1271174324375519273"
   }, {
     left: 1270,
     top: 32,
     rotation: 25,
-    size: p,
+    size: f,
     skuId: "1237653964582031400"
   }, {
     left: 1400,
     top: 33,
     rotation: false,
-    size: p,
+    size: f,
     skuId: "1217625794382401577"
   }],
   m = e => {
@@ -96,7 +96,7 @@ let p = {
       peaking: t,
       transitioning: n,
       style: a
-    } = e, p = window.innerHeight, [m, _] = l.useState(false), h = f.map(e => {
+    } = e, f = window.innerHeight, [m, h] = l.useState(false), _ = p.map(e => {
       let {
         skuId: t
       } = e;
@@ -104,7 +104,7 @@ let p = {
     });
     return l.useEffect(() => {
       n && setTimeout(() => {
-        _(true)
+        h(true)
       }, d.lb)
     }, [n]), (0, r.jsx)("div", {
       style: a,
@@ -112,34 +112,34 @@ let p = {
         [g.peaking]: t,
         [g.transitioned]: m
       }),
-      children: f.map((e, t) => {
+      children: p.map((e, t) => {
         var l, a;
         let {
           top: s,
           left: c,
-          rotation: f,
+          rotation: p,
           size: m,
-          skuId: _
-        } = e, C = null == (l = h[t]) ? true : l.items[0], b = null == (a = h[t]) ? true : a.type, E = b === i.Z.AVATAR_DECORATION ? 384 : 512;
+          skuId: h
+        } = e, C = null == (l = _[t]) ? true : l.items[0], b = null == (a = _[t]) ? true : a.type, E = b === o.Z.AVATAR_DECORATION ? 384 : 512;
         return (0, r.jsxs)("div", {
           className: g.asset,
           style: {
-            top: n ? -p - E : s,
+            top: n ? -f - E : s,
             left: n ? "".concat(c - 75 - 350 * Math.random()) : c,
-            transform: "rotate(".concat(f, "deg)"),
+            transform: "rotate(".concat(p, "deg)"),
             height: m.y,
             width: m.x,
             transitionDelay: "".concat(Math.random() / 3, "s"),
             transitionDuration: "".concat(d.lb - 200 * Math.random(), "ms")
           },
-          children: [null != C && b === i.Z.AVATAR_DECORATION && (0, r.jsx)(u.R, {
+          children: [null != C && b === o.Z.AVATAR_DECORATION && (0, r.jsx)(u.R, {
             item: C
-          }), null != C && b === i.Z.PROFILE_EFFECT && (0, r.jsx)(o.Z, {
+          }), null != C && b === o.Z.PROFILE_EFFECT && (0, r.jsx)(i.Z, {
             profileEffectId: C.id,
             isPurchased: false,
             isHovering: true
           })]
-        }, _ + t)
+        }, h + t)
       })
     })
   }

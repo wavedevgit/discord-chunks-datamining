@@ -18,9 +18,9 @@ var Chunk399606 = require("./399606.js"),
 function g(e) {
   let {
     category: t
-  } = e, n = (0, l.e7)([a.Z], () => a.Z.useReducedMotion), o = (0, l.e7)([i.Z], () => i.Z.isFocused()), {
+  } = e, n = (0, l.e7)([a.Z], () => a.Z.useReducedMotion), i = (0, l.e7)([o.Z], () => o.Z.isFocused()), {
     catalogBannerStatic: g,
-    catalogBannerAnimated: p
+    catalogBannerAnimated: f
   } = (0, u.Oi)(t);
   return (0, r.jsxs)("div", {
     className: d.catalogBanner,
@@ -28,8 +28,8 @@ function g(e) {
       className: d.catalogBannerImage,
       src: g,
       alt: t.name
-    }), null != p && !n && o && (0, r.jsx)(s.Z, {
-      src: p,
+    }), null != f && !n && i && (0, r.jsx)(s.Z, {
+      src: f,
       className: d.animationAsset,
       autoPlay: true,
       loop: true

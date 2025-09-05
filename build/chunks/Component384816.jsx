@@ -37,7 +37,7 @@ function O(e) {
     trackUserProfileAction: T
   } = (0, f.KZ)(), N = (0, l.e7)([d.Z], () => d.Z.getGuildId()), A = (0, c.Y)({
     userId: n.id
-  }), C = (0, l.e7)([u.Z], () => u.Z.hidePersonalInformation), E = (0, l.e7)([s.default], () => s.default.locale), S = (0, m.Z)(n.id), w = (0, p.Z)(n.id);
+  }), C = (0, l.e7)([u.Z], () => u.Z.hidePersonalInformation), E = (0, l.e7)([s.default], () => s.default.locale), S = (0, p.Z)(n.id), w = (0, m.Z)(n.id);
   return (0, o.jsxs)(r.zJl, {
     fade: true,
     className: I.scroller,
@@ -49,7 +49,7 @@ function O(e) {
       currentUser: t,
       guildId: O.guildId,
       scrollIntoView: Z === y.Tb.ROLES
-    }), n.isProvisional && (0, o.jsx)(g.Z, {
+    }), n.isProvisional && (0, o.jsx)(j.Z, {
       heading: _.intl.string(_.t.Iyka0d),
       headingIcon: (0, o.jsx)(r.Mgn, {
         size: "xxs",
@@ -59,19 +59,19 @@ function O(e) {
       children: (0, o.jsx)(a.n, {
         userId: n.id
       })
-    }), A.length > 0 && (0, o.jsx)(g.Z, {
+    }), A.length > 0 && (0, o.jsx)(j.Z, {
       heading: _.intl.string(_.t["Uv/eT0"]),
       children: (0, o.jsx)(h.Z, {
         applicationIds: A
       })
-    }), (0, o.jsx)(g.Z, {
+    }), (0, o.jsx)(j.Z, {
       heading: _.intl.string(_.t.a6XYDw),
-      children: (0, o.jsx)(j.Z, {
+      children: (0, o.jsx)(g.Z, {
         userId: n.id,
         guildId: null == O ? true : O.guildId,
         tooltipDelay: y.vB
       })
-    }), S.length > 0 && (0, o.jsx)(g.Z, {
+    }), S.length > 0 && (0, o.jsx)(j.Z, {
       heading: _.intl.string(_.t["3fe7U1"]),
       scrollIntoView: Z === y.Tb.CONNECTIONS,
       children: (0, o.jsx)(b.ZP, {
@@ -80,7 +80,7 @@ function O(e) {
         userId: n.id,
         locale: E
       })
-    }), w.length > 0 && (0, o.jsx)(g.Z, {
+    }), w.length > 0 && (0, o.jsx)(j.Z, {
       heading: _.intl.string(_.t.PHjkRE),
       children: w.map(e => (0, o.jsx)(b.tH, {
         className: I.appsConnections,
@@ -93,7 +93,7 @@ function O(e) {
         },
         selectedGuildId: null != N ? N : true
       }, e.application.id))
-    }), (0, o.jsx)(g.Z, {
+    }), (0, o.jsx)(j.Z, {
       heading: _.intl.string(_.t["mQKv+v"]),
       scrollIntoView: Z === y.Tb.NOTE,
       children: (0, o.jsx)(i.Z, {

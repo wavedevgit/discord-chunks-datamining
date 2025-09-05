@@ -19,27 +19,27 @@ function f(e) {
     currentUser: t
   } = e, {
     mutualFriendsCount: f,
-    mutualGuilds: p
-  } = (0, i.Z)(n), m = null == p ? true : p.length, x = (0, r.Z)(n), b = (0, o.k)({
+    mutualGuilds: m
+  } = (0, i.Z)(n), p = null == m ? true : m.length, x = (0, r.Z)(n), b = (0, o.k)({
     location: "useUserProfileModalV2TabBarItems"
   }), h = (0, l.P)({
     location: "useUserProfileModalV2TabBarItems"
-  }), j = (0, c.Z)(n.id), g = [], v = n.id === (null == t ? true : t.id), y = j.length > 0;
-  return (v && b || y && h) && g.push({
+  }), g = (0, c.Z)(n.id), j = [], v = n.id === (null == t ? true : t.id), y = g.length > 0;
+  return (v && b || y && h) && j.push({
     text: u.intl.string(u.t.laViw8),
     section: d.oh.WIDGETS,
     subsection: true
-  }), g.push({
+  }), j.push({
     text: u.intl.string(u.t.chq59f),
     section: d.oh.ACTIVITY,
     subsection: true
-  }), n.id !== (null == t ? true : t.id) && x && (g.push({
+  }), n.id !== (null == t ? true : t.id) && x && (j.push({
     text: (0, a.Z)(f),
     section: d.oh.MUTUAL_FRIENDS,
     subsection: true
-  }), g.push({
-    text: (0, s.Z)(m),
+  }), j.push({
+    text: (0, s.Z)(p),
     section: d.oh.MUTUAL_GUILDS,
     subsection: true
-  })), g
+  })), j
 }

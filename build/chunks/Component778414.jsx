@@ -1,11 +1,13 @@
 /** Chunk was on 30355 **/
-/** chunk id: 778414, original params: e,t,r (module,exports,require) **/
+/** chunk id: 778414, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  C: () => E,
-  Z: () => S
+  C: () => k,
+  Z: () => Z
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
   Chunk296009 = require("./296009.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -22,66 +24,69 @@ var Chunk951288 = require("./951288.js"),
   Chunk430790 = require("./430790.jsx"),
   Chunk640078 = require("./640078.jsx"),
   Chunk190862 = require("./190862.jsx"),
+  Chunk996921 = require("./996921.jsx"),
   Chunk661462 = require("./661462.jsx"),
   Chunk795990 = require("./795990.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk830202 = require("./830202.js");
 
-function I(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = n
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function S(e) {
+function E(e, t) {
+  if (null == e) return {};
+  var n, r, l = function(e, t) {
+    if (null == e) return {};
+    var n, r, l = {},
+      i = Object.keys(e);
+    for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+    return l
+  }(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var i = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+  }
+  return l
+}
+
+function Z(e) {
   var {
     widget: t
-  } = e, r = function(e, t) {
-    if (null == e) return {};
-    var r, n, l = function(e, t) {
-      if (null == e) return {};
-      var r, n, l = {},
-        i = Object.keys(e);
-      for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (l[r] = e[r]);
-      return l
-    }(e, t);
-    if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r])
-    }
-    return l
-  }(e, ["widget"]);
+  } = e, n = E(e, ["widget"]);
   switch (t.type) {
-    case i.l.FAVORITE_GAMES:
-    case i.l.CURRENT_GAMES:
-    case i.l.WANT_TO_PLAY_GAMES:
-    case i.l.PLAYED_GAMES:
-      return (0, n.jsx)(y.Z, I({
+    case s.l.FAVORITE_GAMES:
+    case s.l.CURRENT_GAMES:
+    case s.l.WANT_TO_PLAY_GAMES:
+    case s.l.PLAYED_GAMES:
+      return (0, r.jsx)(v.Z, w({
         widget: t
-      }, r));
-    case i.l.APPLICATION:
-      return (0, n.jsx)(j.Z, I({
+      }, n));
+    case s.l.APPLICATION:
+      return (0, r.jsx)(y.Z, w({
         widget: t
-      }, r));
+      }, n));
     default:
       return null
   }
 }
 
-function w() {
+function T() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk830202.ukTeenDisclaimer,
     children: [(0, Chunk951288.jsx)(Chunk481060.d3s, {
@@ -95,39 +100,48 @@ function w() {
   })
 }
 
-function N(e) {
+function C(e) {
   let {
     user: t,
-    guildId: r,
+    guildId: n,
     channelId: i
-  } = e, s = (0, b.Z)(t.id), p = (0, a.e7)([u.default], () => u.default.getId() === t.id), j = (() => {
-    let [e, t] = (0, a.Wu)([d.Z], () => [d.Z.ipCountryCode, d.Z.ipCountryCodeRequest]), r = (0, c.U)();
+  } = e, a = (0, x.Z)(t.id), s = (0, o.e7)([f.default], () => f.default.getId() === t.id), c = (() => {
+    let [e, t] = (0, o.Wu)([m.Z], () => [m.Z.ipCountryCode, m.Z.ipCountryCodeRequest]), n = (0, d.U)();
     return l.useEffect(() => {
-      null == e && null == t && r && (0, o.GE)()
-    }, [e, t, r]), "GB" === e && r
-  })(), x = 0 === s.length && p;
-  return ((0, g.ZP)(s.filter(f.W)), (0, m.J)(p, s), x) ? (0, n.jsx)(v.Z, {}) : (0, n.jsxs)(n.Fragment, {
-    children: [p && j && (0, n.jsx)(w, {}), s.map((e, l) => (0, n.jsx)(S, {
+      null == e && null == t && n && (0, u.GE)()
+    }, [e, t, n]), "GB" === e && n
+  })(), b = 0 === a.length && s;
+  return ((0, j.ZP)(a.filter(g.W)), (0, p.J)(s, a), b) ? (0, r.jsx)(S.Z, {}) : (0, r.jsxs)(r.Fragment, {
+    children: [s && c && (0, r.jsx)(T, {}), a.map((e, l) => (0, r.jsx)(Z, {
       widget: e,
       user: t,
-      guildId: r,
+      guildId: n,
       channelId: i,
       index: l
-    }, e.id)), p && (0, n.jsx)(O.Z, {})]
+    }, e.id)), s && (0, r.jsx)(h.Z, {})]
   })
 }
 
-function E(e) {
-  let t = l.useRef(null);
-  return (0, p.r)({
-    container: t.current
-  }), (0, n.jsxs)(h.F, {
+function k(e) {
+  var {
+    user: t
+  } = e, n = E(e, ["user"]);
+  let i = l.useRef(null);
+  (0, b.r)({
+    container: i.current
+  });
+  let s = (0, P.h)(t.id);
+  return (0, r.jsxs)(A.F, {
     "data-scroller": true,
-    scrollerRef: t,
-    className: A.scroller,
+    scrollerRef: i,
+    className: a()(N.scroller, {
+      [N.hasToolbar]: s
+    }),
     fade: true,
-    children: [(0, n.jsx)(x.Z, {
-      scrollerRef: t
-    }), (0, n.jsx)(N, I({}, e)), (0, n.jsx)(s.c43, {})]
+    children: [(0, r.jsx)(O.Z, {
+      scrollerRef: i
+    }), (0, r.jsx)(C, w({
+      user: t
+    }, n))]
   })
 }

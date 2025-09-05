@@ -33,14 +33,14 @@ function T(e) {
     products: t,
     header: n,
     category: l
-  } = e, a = (0, i.e7)([u.default], () => u.default.getCurrentUser()), s = (0, v.St)(t);
+  } = e, a = (0, o.e7)([u.default], () => u.default.getCurrentUser()), s = (0, v.St)(t);
   return null == a || 0 === t.length ? null : (0, r.jsxs)("div", {
-    children: [null != n ? (0, r.jsx)(o.Text, {
+    children: [null != n ? (0, r.jsx)(i.Text, {
       className: y.itemTypeTitle,
       color: "header-secondary",
       variant: "text-sm/bold",
       children: n
-    }) : (0, r.jsx)(o.LZC, {
+    }) : (0, r.jsx)(i.LZC, {
       size: 24
     }), (0, r.jsx)("div", {
       className: y.cardsContainer,
@@ -62,7 +62,7 @@ function T(e) {
 function L(e) {
   let {
     category: t
-  } = e, n = (0, m.l)(t.products), l = (0, f.a)()(n);
+  } = e, n = (0, m.l)(t.products), l = (0, p.a)()(n);
   return (0, r.jsx)(T, {
     products: l,
     category: t
@@ -73,13 +73,13 @@ function j(e) {
   let {
     category: t,
     isFullScreen: n
-  } = e, [a, s] = l.useState(false), i = (0, c.O)(e => {
+  } = e, [a, s] = l.useState(false), o = (0, c.O)(e => {
     s(e)
-  }, n ? .13 : .15), o = (0, p.B)("CollectiblesCatalogContent");
+  }, n ? .13 : .15), i = (0, f.B)("CollectiblesCatalogContent");
   return (0, r.jsxs)("div", {
     className: y.categoryWrapper,
-    ref: i,
-    children: [o && null != t.catalogBannerAsset ? (0, r.jsx)(h.Z, {
+    ref: o,
+    children: [i && null != t.catalogBannerAsset ? (0, r.jsx)(_.Z, {
       category: t
     }) : (0, r.jsx)(C.Z, {
       category: t,
@@ -95,11 +95,11 @@ function k(e) {
   let {
     sortedCategories: n,
     setCategoryRef: a,
-    isFullScreen: i,
+    isFullScreen: o,
     currentPage: c,
     handlePageChange: u
-  } = e, p = (0, d.sp)(), f = (0, S.R)(), m = null != (t = null == p ? true : p.sessionId) ? t : "", {
-    noCache: h,
+  } = e, f = (0, d.sp)(), p = (0, S.R)(), m = null != (t = null == f ? true : f.sessionId) ? t : "", {
+    noCache: _,
     includeUnpublished: C
   } = (0, O.Z)(), E = l.useMemo(() => n.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
     let {
@@ -111,26 +111,26 @@ function k(e) {
     return E.slice(e, e + x.kN)
   }, [E, c]);
   l.useEffect(() => {
-    (0, _.n)({
+    (0, h.n)({
       sessionId: m,
-      checkpoint: _.a.SHOP_MOUNTED,
+      checkpoint: h.a.SHOP_MOUNTED,
       tab: x.AW.CATALOG,
-      isFullScreen: i,
+      isFullScreen: o,
       unpublishedCategoriesShown: C,
-      cacheDisabled: h
+      cacheDisabled: _
     })
   }, []), l.useEffect(() => {
-    f || 0 === v.length || (0, _.n)({
+    p || 0 === v.length || (0, h.n)({
       sessionId: m,
-      checkpoint: _.a.SHOP_RENDERED,
+      checkpoint: h.a.SHOP_RENDERED,
       tab: x.AW.CATALOG,
-      isFullScreen: i,
+      isFullScreen: o,
       unpublishedCategoriesShown: C,
-      cacheDisabled: h
+      cacheDisabled: _
     })
-  }, [m, i, C, h, f, v.length]);
+  }, [m, o, C, _, p, v.length]);
   let T = (0, g.FF)("CollectiblesBrowse");
-  return f ? (0, r.jsx)(b.Z, {}) : (0, r.jsxs)("div", {
+  return p ? (0, r.jsx)(b.Z, {}) : (0, r.jsxs)("div", {
     className: s()(y.categories, {
       [y.categoriesNoFilter]: !T
     }),
@@ -142,12 +142,12 @@ function k(e) {
         },
         children: (0, r.jsx)(j, {
           category: e,
-          isFullScreen: i
+          isFullScreen: o
         })
       })
     }, e.skuId)), (0, r.jsx)("div", {
       className: y.paginationContainer,
-      children: (0, r.jsx)(o.DsT, {
+      children: (0, r.jsx)(i.DsT, {
         currentPage: c,
         totalCount: E.length,
         pageSize: x.kN,

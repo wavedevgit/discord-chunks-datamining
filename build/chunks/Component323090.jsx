@@ -1,7 +1,7 @@
 /** Chunk was on 72164 **/
 /** chunk id: 323090, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -21,11 +21,11 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk54966 = require("./54966.js");
 
-function g(e) {
+function j(e) {
   let {
     user: n,
     currentUser: t,
-    displayProfile: g,
+    displayProfile: j,
     guildId: v,
     subsection: y,
     onClose: _
@@ -37,9 +37,9 @@ function g(e) {
   }), Z = (0, l.e7)([c.Z, a.Z], () => c.Z.getChannel(a.Z.getChannelId()));
   return (0, o.jsxs)(r.zJl, {
     fade: true,
-    className: j.scroller,
-    children: [(null == g ? true : g.bio) != null && (null == g ? true : g.bio) !== "" && (0, o.jsx)(f.Z, {
-      userBio: g.bio,
+    className: g.scroller,
+    children: [(null == j ? true : j.bio) != null && (null == j ? true : j.bio) !== "" && (0, o.jsx)(f.Z, {
+      userBio: j.bio,
       setLineClamp: false
     }), (null == O ? true : O.popularApplicationCommandIds) != null && null != Z && (0, o.jsx)(u.Z, {
       applicationId: O.id,
@@ -47,24 +47,24 @@ function g(e) {
       channel: Z,
       guildId: v,
       onClick: _
-    }), (null == g ? true : g.guildId) != null && (0, o.jsx)(x.Z, {
+    }), (null == j ? true : j.guildId) != null && (0, o.jsx)(x.Z, {
       user: n,
       currentUser: t,
-      guildId: g.guildId,
+      guildId: j.guildId,
       scrollIntoView: y === b.Tb.ROLES
-    }), (0, o.jsx)(m.Z, {
+    }), (0, o.jsx)(p.Z, {
       heading: h.intl.string(h.t["A//N4u"]),
-      children: (0, o.jsx)(p.Z, {
+      children: (0, o.jsx)(m.Z, {
         userId: n.id,
         guildId: v,
         tooltipDelay: b.vB
       })
-    }), (0, o.jsx)(m.Z, {
+    }), (0, o.jsx)(p.Z, {
       heading: h.intl.string(h.t["mQKv+v"]),
       scrollIntoView: y === b.Tb.NOTE,
       children: (0, o.jsx)(i.Z, {
         userId: n.id,
-        className: j.note,
+        className: g.note,
         autoFocus: y === b.Tb.NOTE,
         onUpdate: () => I({
           action: "SET_NOTE"

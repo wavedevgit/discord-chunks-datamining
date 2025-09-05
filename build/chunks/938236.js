@@ -1,5 +1,5 @@
 /** Chunk was on 30355 **/
-/** chunk id: 938236, original params: e,t,r (module,exports,require) **/
+/** chunk id: 938236, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   b: () => u
 }), require("./388685.js");
@@ -10,18 +10,18 @@ var Chunk392711 = require("./392711.js"),
 
 function s(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = n
+      }) : e[t] = r
     })
   }
   return e
@@ -29,14 +29,14 @@ function s(e) {
 
 function o(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var r = Object.keys(e);
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      r.push.apply(r, n)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
-    return r
-  })(Object(t)).forEach(function(r) {
-    Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 let c = (0, Chunk392711.sampleSize)(Chunk570911.J6, Chunk570911.J6.length),
@@ -45,66 +45,66 @@ let c = (0, Chunk392711.sampleSize)(Chunk570911.J6, Chunk570911.J6.length),
     wishlistStack: [],
     gameIds: {},
     peekedGameIds: {},
-    onLoad: (r, n, l) => {
+    onLoad: (n, r, l) => {
       let a = new Set(l.map(e => e.applicationId));
       for (let l of (e({
-          stack: [...r.filter(e => !a.has(e)), ...c],
-          wishlistStack: [...n.filter(e => !a.has(e)), ...c]
+          stack: [...n.filter(e => !a.has(e)), ...c],
+          wishlistStack: [...r.filter(e => !a.has(e)), ...c]
         }), Object.values(i.l))) t().setNext(6, l)
     },
-    setNext: (e, r) => {
-      let n = t().getNext(e, r);
-      t()._setGameIds(r, n);
-      let l = t().peekNext(7, r);
-      t()._setPeekedGameIds(r, l)
+    setNext: (e, n) => {
+      let r = t().getNext(e, n);
+      t()._setGameIds(n, r);
+      let l = t().peekNext(7, n);
+      t()._setPeekedGameIds(n, l)
     },
-    getNext: (e, r) => {
-      let n = r === i.l.WANT_TO_PLAY_GAMES ? t().wishlistStack : t().stack,
-        l = n.slice(0, e),
-        a = n.slice(e);
-      return t()._setStack(r, a), l
+    getNext: (e, n) => {
+      let r = n === i.l.WANT_TO_PLAY_GAMES ? t().wishlistStack : t().stack,
+        l = r.slice(0, e),
+        a = r.slice(e);
+      return t()._setStack(n, a), l
     },
-    peekNext: (e, r) => (r === i.l.WANT_TO_PLAY_GAMES ? t().wishlistStack : t().stack).slice(0, e),
-    bump: (e, r) => {
-      var n;
-      let l = null != (n = t().gameIds[r]) ? n : [],
+    peekNext: (e, n) => (n === i.l.WANT_TO_PLAY_GAMES ? t().wishlistStack : t().stack).slice(0, e),
+    bump: (e, n) => {
+      var r;
+      let l = null != (r = t().gameIds[n]) ? r : [],
         i = l.indexOf(e);
       if (false === i) return;
       let a = [...l];
       a.splice(i, 1);
-      let s = t().getNext(1, r),
-        o = t().peekNext(7, r);
-      t()._setGameIds(r, [...a, ...s]), t()._setPeekedGameIds(r, [...o, ...s])
+      let s = t().getNext(1, n),
+        o = t().peekNext(7, n);
+      t()._setGameIds(n, [...a, ...s]), t()._setPeekedGameIds(n, [...o, ...s])
     },
-    bumpMultiple: (e, r) => {
-      var n;
-      let l = (null != (n = t().gameIds[r]) ? n : []).filter(t => !e.includes(t)),
-        i = t().getNext(6 - l.length, r),
-        a = t().peekNext(7, r);
-      t()._setGameIds(r, [...l, ...i]), t()._setPeekedGameIds(r, [...a, ...i])
+    bumpMultiple: (e, n) => {
+      var r;
+      let l = (null != (r = t().gameIds[n]) ? r : []).filter(t => !e.includes(t)),
+        i = t().getNext(6 - l.length, n),
+        a = t().peekNext(7, n);
+      t()._setGameIds(n, [...l, ...i]), t()._setPeekedGameIds(n, [...a, ...i])
     },
-    remove: (e, r) => {
-      let n = (r === i.l.WANT_TO_PLAY_GAMES ? t().wishlistStack : t().stack).filter(t => t !== e);
-      t()._setStack(r, n), t()._setPeekedGameIds(r, t().peekNext(7, r))
+    remove: (e, n) => {
+      let r = (n === i.l.WANT_TO_PLAY_GAMES ? t().wishlistStack : t().stack).filter(t => t !== e);
+      t()._setStack(n, r), t()._setPeekedGameIds(n, t().peekNext(7, n))
     },
-    _setGameIds: (t, r) => {
+    _setGameIds: (t, n) => {
       e(e => ({
         gameIds: o(s({}, e.gameIds), {
-          [t]: r
+          [t]: n
         })
       }))
     },
-    _setStack: (t, r) => {
+    _setStack: (t, n) => {
       t === i.l.WANT_TO_PLAY_GAMES ? e({
-        wishlistStack: r
+        wishlistStack: n
       }) : e({
-        stack: r
+        stack: n
       })
     },
-    _setPeekedGameIds: (t, r) => {
+    _setPeekedGameIds: (t, n) => {
       e(e => ({
         peekedGameIds: o(s({}, e.peekedGameIds), {
-          [t]: r
+          [t]: n
         })
       }))
     }

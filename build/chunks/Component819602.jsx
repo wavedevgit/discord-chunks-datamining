@@ -67,7 +67,7 @@ function A(e) {
   var n, t;
   let l, s, b, {
     connectedAccount: h,
-    theme: j,
+    theme: g,
     locale: y,
     userId: O,
     className: A,
@@ -76,29 +76,29 @@ function A(e) {
   } = e;
   null == C && (C = true);
   let S = null != (t = h.metadata) ? t : {},
-    w = C ? (0, p.FI)(S[I.PC.CREATED_AT], y) : null,
+    w = C ? (0, m.FI)(S[I.PC.CREATED_AT], y) : null,
     D = (0, a.dQu)(i.Z.unsafe_rawColors.TWITTER).hex(),
     B = Z.intl.string(Z.t["6H6h1t"]);
   if (C) switch (h.type) {
     case _.ABu.REDDIT:
-      l = (0, m.oP)(S);
+      l = (0, p.oP)(S);
       break;
     case _.ABu.STEAM:
-      l = (0, m.Dq)(S);
+      l = (0, p.Dq)(S);
       break;
     case _.ABu.BLUESKY:
     case _.ABu.MASTODON:
     case _.ABu.TWITTER:
-      l = (0, m.rJ)(S), "1" === S[I.PC.TWITTER_VERIFIED] && (s = D, B = Z.intl.string(Z.t.Jebrw8));
+      l = (0, p.rJ)(S), "1" === S[I.PC.TWITTER_VERIFIED] && (s = D, B = Z.intl.string(Z.t.Jebrw8));
       break;
     case _.ABu.PAYPAL:
-      l = (0, m.li)(S);
+      l = (0, p.li)(S);
       break;
     case _.ABu.EBAY:
-      l = (0, m.ul)(S);
+      l = (0, p.ul)(S);
       break;
     case _.ABu.TIKTOK:
-      l = (0, m.hf)(S)
+      l = (0, p.hf)(S)
   }
   let L = d.Z.get((0, f.rR)(h.type)),
     R = null == L || null == (n = L.getPlatformUserUrl) ? true : n.call(L, h);
@@ -119,9 +119,9 @@ function A(e) {
         trusted: (null == L ? true : L.type) !== _.ABu.DOMAIN
       }, e)
     },
-    children: (0, o.jsx)(g.Z, {
+    children: (0, o.jsx)(j.Z, {
       className: P.connectedAccountOpenIcon,
-      direction: g.Z.Directions.RIGHT
+      direction: j.Z.Directions.RIGHT
     })
   }));
   let M = (0, a.dQu)(i.Z.colors.INTERACTIVE_MUTED).hex(),
@@ -144,7 +144,7 @@ function A(e) {
             name: null == L ? true : L.name
           }),
           className: P.connectedAccountIcon,
-          src: (0, c.wj)(j) ? null == L ? true : L.icon.darkSVG : null == L ? true : L.icon.lightSVG
+          src: (0, c.wj)(g) ? null == L ? true : L.icon.darkSVG : null == L ? true : L.icon.lightSVG
         }))
       }), (0, o.jsxs)("div", {
         className: P.connectedAccountNameContainer,
@@ -185,7 +185,7 @@ function C(e) {
     locale: l,
     onApplicationClicked: i,
     selectedGuildId: c
-  } = e, d = (0, m.rm)(n, true, l), u = () => {
+  } = e, d = (0, p.rm)(n, true, l), u = () => {
     null == i || i(), (0, b.transitionToGlobalDiscovery)({
       tab: O.GlobalDiscoveryTab.APPS,
       applicationId: n.application.id,
@@ -235,7 +235,7 @@ function C(e) {
             applicationHook: () => (0, o.jsxs)("div", {
               className: P.connectedAccountPoweredByText,
               children: [null != n.application.bot ? (0, o.jsx)(s.Z, {
-                user: new j.Z(n.application.bot),
+                user: new g.Z(n.application.bot),
                 size: a.EFr.SIZE_16
               }) : null, (0, o.jsx)(a.Text, {
                 variant: "text-xs/normal",

@@ -60,23 +60,23 @@ function _(e) {
     account: t,
     locale: l,
     userId: r
-  } = e, i = null != (n = t.metadata) ? n : {}, m = (0, u.FI)(i[h.PC.CREATED_AT], l), _ = a.Z.get((0, d.rR)(t.type));
+  } = e, i = null != (n = t.metadata) ? n : {}, p = (0, u.FI)(i[h.PC.CREATED_AT], l), _ = a.Z.get((0, d.rR)(t.type));
   return (0, o.jsxs)("li", {
-    className: g.connection,
+    className: j.connection,
     children: [(0, o.jsx)(c.ua7, {
       text: null == _ ? true : _.name,
       children: e => (0, o.jsx)("div", y(v({}, e), {
-        className: g.platformIconContainer,
+        className: j.platformIconContainer,
         children: (0, o.jsx)("img", {
-          alt: j.intl.formatToPlainString(j.t.rtm15O, {
+          alt: g.intl.formatToPlainString(g.t.rtm15O, {
             name: null == _ ? true : _.name
           }),
-          className: g.platformIcon,
+          className: j.platformIcon,
           src: null == _ ? true : _.icon.lightPNG
         })
       }))
     }), (0, o.jsxs)("div", {
-      className: g.connectionInfo,
+      className: j.connectionInfo,
       children: [(0, o.jsxs)("div", {
         children: [(() => {
           var e;
@@ -86,14 +86,14 @@ function _(e) {
             text: t.name,
             children: e => (0, o.jsx)(c.Text, y(v({}, e), {
               variant: "text-sm/normal",
-              className: g.accountNameText,
+              className: j.accountNameText,
               children: t.name
             }))
           }) : (0, o.jsx)(c.eee, {
             href: n,
-            className: g.platformUrlAnchor,
+            className: j.platformUrlAnchor,
             useDefaultUnderlineStyles: false,
-            "aria-label": (null == _ ? true : _.name) != null ? "".concat(_.name, ", ").concat(t.name, ", ").concat(j.intl.string(j.t.q5jLJC)) : "".concat(t.name, ", ").concat(j.intl.string(j.t.q5jLJC)),
+            "aria-label": (null == _ ? true : _.name) != null ? "".concat(_.name, ", ").concat(t.name, ", ").concat(g.intl.string(g.t.q5jLJC)) : "".concat(t.name, ", ").concat(g.intl.string(g.t.q5jLJC)),
             onClick: e => {
               (0, s.yw)(b.rMx.CONNECTED_ACCOUNT_VIEWED, {
                 platform_type: t.type,
@@ -104,29 +104,29 @@ function _(e) {
               }, e)
             },
             children: (0, o.jsxs)("div", {
-              className: g.accountName,
+              className: j.accountName,
               children: [(0, o.jsx)(c.ua7, {
                 overflowOnly: true,
                 text: t.name,
                 children: e => (0, o.jsx)(c.Text, y(v({}, e), {
                   variant: "text-sm/normal",
-                  className: g.accountNameText,
+                  className: j.accountNameText,
                   children: t.name
                 }))
-              }), (0, o.jsx)(p.Z, {
-                className: g.platformUrlIcon,
-                direction: p.Z.Directions.RIGHT
+              }), (0, o.jsx)(m.Z, {
+                className: j.platformUrlIcon,
+                direction: m.Z.Directions.RIGHT
               })]
             })
           })
-        })(), null != m && (0, o.jsx)(c.Text, {
+        })(), null != p && (0, o.jsx)(c.Text, {
           variant: "text-xs/normal",
-          children: j.intl.format(j.t["9rfonp"], {
-            date: m
+          children: g.intl.format(g.t["9rfonp"], {
+            date: p
           })
         })]
       }), (0, o.jsx)("div", {
-        className: g.metadata,
+        className: j.metadata,
         children: t.type === b.ABu.REDDIT ? (0, f.oP)(i) : t.type === b.ABu.STEAM ? (0, f.Dq)(i) : t.type === b.ABu.BLUESKY || t.type === b.ABu.MASTODON || t.type === b.ABu.TWITTER ? (0, f.rJ)(i) : t.type === b.ABu.PAYPAL ? (0, f.li)(i) : t.type === b.ABu.EBAY ? (0, f.ul)(i) : t.type === b.ABu.TIKTOK ? (0, f.hf)(i) : null
       })]
     })]
@@ -138,9 +138,9 @@ function I(e) {
     connections: n,
     userId: t,
     className: l
-  } = e, c = (0, i.e7)([m.default], () => m.default.locale);
+  } = e, c = (0, i.e7)([p.default], () => p.default.locale);
   return 0 === n.length ? null : (0, o.jsx)("ul", {
-    className: r()(g.container, l),
+    className: r()(j.container, l),
     children: n.map(e => (0, o.jsx)(_, {
       account: e,
       userId: t,

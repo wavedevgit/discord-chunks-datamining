@@ -1,4 +1,4 @@
-/** Chunk was on 61168 **/
+/** Chunk was on 55777 **/
 /** chunk id: 255514, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => K
@@ -47,7 +47,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk764295 = require("./764295.js"),
   Chunk520310 = require("./520310.js");
 
-function V(e) {
+function q(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -65,7 +65,7 @@ function V(e) {
   }
   return e
 }
-let H = ["user_urf", "message_urf", "guild_urf"];
+let V = ["user_urf", "message_urf", "guild_urf"];
 
 function X(e, t) {
   let {
@@ -112,7 +112,7 @@ let K = e => {
     } : true
   }), [t, eo, es, ei, eb, eh]), eO = i.useMemo(() => (0, c.VP)(eo, es, ei, eh, eb), [eo, es, ei, eh, eb]), eC = function(e, t) {
     let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
-      r = V({}, eh);
+      r = q({}, eh);
     r[e] = {
       value: t,
       isValid: n
@@ -137,7 +137,7 @@ let K = e => {
           })(Object(t)).forEach(function(n) {
             Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
           }), e
-        })(V({}, e), {
+        })(q({}, e), {
           [t]: n
         }))
     }
@@ -147,13 +147,13 @@ let K = e => {
   let eZ = (0, s.fW)(K),
     eS = null != X(t, "ignore_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name);
   return (0, r.jsxs)("div", {
-    className: q.container,
+    className: H.container,
     children: [(0, r.jsxs)(l.xBx, {
       "data-migration-pending": true,
       separator: false,
       direction: o.Z.Direction.VERTICAL,
-      className: q.header,
-      children: [(0, r.jsx)(B.Z, {
+      className: H.header,
+      children: [(0, r.jsx)(R.Z, {
         element: X(t, "success")
       }), (0, r.jsx)(I.Z, {
         node: t,
@@ -163,7 +163,7 @@ let K = e => {
       })]
     }), (0, r.jsxs)(l.hzk, {
       "data-migration-pending": true,
-      className: q.body,
+      className: H.body,
       children: [null != ea && (0, r.jsx)(A.Z, {
         element: ea
       }), null != ec && (0, r.jsx)(M.Z, {
@@ -217,14 +217,14 @@ let K = e => {
           application: n.record,
           reportId: en
         })]
-      }), null != X(t, "settings_upsells") && ("message" === n.name || "report_to_mod_message" === n.name) && null != eZ && (0, r.jsx)(D.Z, {
+      }), null != X(t, "settings_upsells") && ("message" === n.name || "report_to_mod_message" === n.name) && null != eZ && (0, r.jsx)(B.Z, {
         settingsUpsells: eZ,
         channelId: n.record.channel_id,
         onModalClose: $,
         reportId: en,
         reportType: n,
         reportSubType: K
-      }), null != X(t, "channel_preview") && "stage_channel" === n.name && (0, r.jsx)(R.Z, {
+      }), null != X(t, "channel_preview") && "stage_channel" === n.name && (0, r.jsx)(D.Z, {
         stageInstance: n.record
       }), null != X(t, "guild_scheduled_event_preview") && "guild_scheduled_event" === n.name && (0, r.jsx)(C.Z, {
         event: n.record
@@ -237,20 +237,20 @@ let K = e => {
       }), null != ei && (0, r.jsx)(P.Z, {
         element: ei,
         onChange: (e, t) => {
-          let n = V({}, eb);
+          let n = q({}, eb);
           e in eb ? delete n[e] : n[e] = t, ex(n)
         },
         state: eb
-      }), H.includes(n.name) && null != es && es.length > 0 && (0, r.jsx)(b.Z, {
+      }), V.includes(n.name) && null != es && es.length > 0 && (0, r.jsx)(b.Z, {
         elements: es,
         onChange: eC,
         state: eh
-      }), H.includes(n.name) && null != eo && eo.length > 0 && (0, r.jsx)(v.Z, {
+      }), V.includes(n.name) && null != eo && eo.length > 0 && (0, r.jsx)(v.Z, {
         elements: eo,
         onChange: eC,
         state: eh
       }), (0, r.jsxs)("div", {
-        className: q.listContainer,
+        className: H.listContainer,
         children: [(0, r.jsx)(p.Z, {
           node: t,
           onSelectChild: eI
@@ -284,7 +284,7 @@ let K = e => {
               eg(""), eI(n)
             }).catch(e => {
               var t;
-              (null == (t = e.body) ? true : t.code) === W.evJ.INVALID_FORM_BODY ? eg(F.intl.string(F.t.VjAAuL)) : ed ? eg(F.intl.string(z.default.psKFdH)) : eg(F.intl.string(F.t.h6D8V1))
+              (null == (t = e.body) ? true : t.code) === W.evJ.INVALID_FORM_BODY ? eg(z.intl.string(z.t.VjAAuL)) : ed ? eg(z.intl.string(F.default.psKFdH)) : eg(z.intl.string(z.t.h6D8V1))
             }).finally(() => {
               e_(false)
             })
@@ -294,7 +294,7 @@ let K = e => {
       canNavigateBack: J.length > 0
     }), (0, r.jsx)(l.olH, {
       "data-migration-pending": true,
-      className: q.closeButton,
+      className: H.closeButton,
       onClick: $
     })]
   })

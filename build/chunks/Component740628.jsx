@@ -37,7 +37,7 @@ function v(e) {
     currentUser: r,
     guildId: c,
     onClose: s
-  }) : n === b.oh.MUTUAL_FRIENDS ? (0, o.jsx)(m.Z, {
+  }) : n === b.oh.MUTUAL_FRIENDS ? (0, o.jsx)(p.Z, {
     user: l,
     guildId: c,
     channelId: a,
@@ -54,7 +54,7 @@ function v(e) {
     guildId: c,
     subsection: t,
     onClose: s
-  }) : (0, o.jsx)(p.Z, {
+  }) : (0, o.jsx)(m.Z, {
     user: l,
     currentUser: r,
     displayProfile: i,
@@ -68,8 +68,8 @@ function y(e) {
   let {
     user: u,
     currentUser: f,
-    displayProfile: p,
-    guildId: m,
+    displayProfile: m,
+    guildId: p,
     items: x,
     initialSection: y = b.oh.USER_INFO,
     initialSubsection: _,
@@ -104,20 +104,20 @@ function y(e) {
     })
   }, [O, N]);
   return Z ? (0, o.jsx)("div", {
-    className: g.container,
+    className: j.container,
     children: (0, o.jsxs)("div", {
-      className: j.empty,
+      className: g.empty,
       children: [(0, o.jsx)("div", {
-        className: j.emptyIconStreamerMode
+        className: g.emptyIconStreamerMode
       }), (0, o.jsx)("div", {
-        className: j.emptyText,
+        className: g.emptyText,
         children: h.intl.string(h.t.Br1ls7)
       })]
     })
   }) : (0, o.jsxs)("div", {
-    className: g.container,
+    className: j.container,
     children: [(0, o.jsx)(i.n, {
-      className: g.tabBar,
+      className: j.tabBar,
       type: "top",
       selectedItem: P,
       onItemSelect: A,
@@ -127,7 +127,7 @@ function y(e) {
           text: t
         } = e;
         return (0, o.jsx)(i.n.Item, {
-          className: g.tabBarItem,
+          className: j.tabBarItem,
           id: n,
           "aria-label": t,
           children: (0, o.jsx)(c.Text, {
@@ -142,8 +142,8 @@ function y(e) {
       subsection: T,
       user: u,
       currentUser: f,
-      displayProfile: p,
-      guildId: m,
+      displayProfile: m,
+      guildId: p,
       onClose: I
     })]
   })

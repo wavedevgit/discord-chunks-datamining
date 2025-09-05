@@ -1,7 +1,7 @@
 /** Chunk was on 72164 **/
 /** chunk id: 76076, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -50,10 +50,10 @@ let b = {
       type: l
     } = e;
     return (0, o.jsxs)("div", {
-      className: i()(x.toast, m.toast),
+      className: i()(x.toast, p.toast),
       "data-type": l,
       children: [(0, o.jsx)("div", {
-        className: m.toastIcon,
+        className: p.toastIcon,
         children: t
       }), (0, o.jsx)(s.Text, {
         color: "header-primary",
@@ -62,15 +62,15 @@ let b = {
       })]
     })
   },
-  j = e => {
+  g = e => {
     let {
       className: n,
       onAutoHide: t
-    } = e, r = (0, u.be)(), f = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), [p, x] = l.useState(false), [j, g] = l.useState(null);
+    } = e, r = (0, u.be)(), f = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), [m, x] = l.useState(false), [g, j] = l.useState(null);
     l.useEffect(() => {
-      null !== r ? (x(true), g(b[r]), s.uvj.announce(b[r].message)) : x(false)
+      null !== r ? (x(true), j(b[r]), s.uvj.announce(b[r].message)) : x(false)
     }, [r]);
-    let v = (0, s.Yzy)(p, {
+    let v = (0, s.Yzy)(m, {
       from: {
         transform: f ? "translateY(0)" : "translateY(-12px)",
         opacity: 0
@@ -91,15 +91,15 @@ let b = {
       }
     }, "animate-always");
     return l.useEffect(() => {
-      if (p) {
+      if (m) {
         let e = setTimeout(() => {
           null == t || t()
         }, 2e3);
         return () => clearTimeout(e)
       }
-    }, [p, t]), (0, o.jsx)(o.Fragment, {
-      children: v((e, t) => t && null !== j && (0, o.jsx)(c.animated.div, {
-        className: i()(n, m.toastContainer),
+    }, [m, t]), (0, o.jsx)(o.Fragment, {
+      children: v((e, t) => t && null !== g && (0, o.jsx)(c.animated.div, {
+        className: i()(n, p.toastContainer),
         style: e,
         children: (0, o.jsx)(h, function(e) {
           for (var n = 1; n < arguments.length; n++) {
@@ -118,7 +118,7 @@ let b = {
             })
           }
           return e
-        }({}, j))
+        }({}, g))
       }))
     })
   }

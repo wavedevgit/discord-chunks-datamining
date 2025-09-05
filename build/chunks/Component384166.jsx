@@ -1,15 +1,16 @@
-/** Chunk was on web.js **/
-/** chunk id: 384166, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 30355 **/
+/** chunk id: 384166, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => y
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
+  Chunk261616 = require("./261616.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk607070 = require("./607070.js"),
   Chunk585483 = require("./585483.js"),
   Chunk592183 = require("./592183.js"),
   Chunk224724 = require("./224724.js"),
@@ -19,63 +20,78 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk461671 = require("./461671.js");
 
-function g() {
-  let [e, t] = Chunk647438.useState(false), n = (0, Chunk442837.Wu)([Chunk224724.Z], () => {
+function y(e) {
+  let {
+    className: t
+  } = e, [n, i] = l.useState(false), y = (0, o.Wu)([m.Z], () => {
     var e;
-    return null != (e = Chunk224724.Z.getSaveablePendingWidgets()) ? module : []
-  }), a = (0, Chunk442837.e7)([Chunk224724.Z], () => Chunk224724.Z.hasSaveablePendingChanges()), g = (0, Chunk442837.e7)([Chunk224724.Z], () => Chunk224724.Z.isSubmitting);
-  Chunk647438.useEffect(() => {
+    return null != (e = m.Z.getSaveablePendingWidgets()) ? e : []
+  }), h = (0, o.e7)([m.Z], () => m.Z.hasSaveablePendingChanges()), O = (0, o.e7)([m.Z], () => m.Z.isSubmitting), v = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), P = (0, c.Yzy)(h, {
+    from: {
+      opacity: 0,
+      y: 80 * !v
+    },
+    enter: {
+      opacity: 1,
+      y: 0
+    },
+    leave: {
+      opacity: 0,
+      y: 80 * !v
+    }
+  });
+  l.useEffect(() => {
     let e = null;
 
-    function n() {
-      exports(true), e = setTimeout(() => exports(false), 500)
+    function t() {
+      i(true), e = setTimeout(() => i(false), 500)
     }
-    return Chunk585483.S.subscribe(Chunk981631.CkL.EMPHASIZE_NOTICE, require), () => {
-      Chunk585483.S.unsubscribe(Chunk981631.CkL.EMPHASIZE_NOTICE, require), null !== module && clearTimeout(module)
+    return d.S.subscribe(b.CkL.EMPHASIZE_NOTICE, t), () => {
+      d.S.unsubscribe(b.CkL.EMPHASIZE_NOTICE, t), null !== e && clearTimeout(e)
     }
-  }, []);
-  let E = Chunk647438.useCallback(async () => {
-      if (Chunk120356) try {
-        await Chunk592183.Z.savePendingWidgets(require)
+  }, []), l.useEffect(() => {
+    h && c.uvj.announce(j.intl.string(j.t["0Y/qkJ"]))
+  }, [h]);
+  let A = l.useCallback(async () => {
+      try {
+        await f.Z.savePendingWidgets(y)
       } catch (e) {
-        (0, Chunk872269.L$)(Chunk228168.qb.WIDGET_SAVE_FAILURE)
+        (0, g.L$)(p.qb.WIDGET_SAVE_FAILURE)
       }
-    }, [Chunk120356, require]),
-    b = Chunk647438.useCallback(() => {
-      Chunk592183.Z.clearPendingWidgets()
+    }, [y]),
+    S = l.useCallback(() => {
+      f.Z.clearPendingWidgets()
     }, []);
-  return Chunk120356 ? (0, Chunk951288.jsx)("div", {
-    className: o()(Chunk461671.container, {
-      [Chunk461671.visible]: Chunk120356
-    }),
-    role: "status",
-    children: (0, Chunk951288.jsxs)("div", {
-      className: o()(Chunk461671.content, {
-        [Chunk461671.emphasized]: module
+  return P((e, l) => l ? (0, r.jsx)(s.animated.div, {
+    className: t,
+    style: e,
+    children: (0, r.jsxs)("section", {
+      className: a()(x.content, {
+        [x.emphasized]: n
       }),
-      children: [(0, Chunk951288.jsx)("div", {
-        className: Chunk461671.message,
-        children: (0, Chunk951288.jsx)(Chunk481060.Text, {
-          variant: "text-md/medium",
-          color: "text-primary",
-          children: Chunk388032.intl.string(Chunk388032.t["/lQiX1"])
-        })
-      }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk461671.actions,
-        children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
+      "aria-label": j.intl.string(j.t["odDw+/"]),
+      children: [(0, r.jsx)(c.Text, {
+        variant: "text-md/medium",
+        color: "text-primary",
+        className: x.message,
+        children: j.intl.string(j.t["/lQiX1"])
+      }), (0, r.jsxs)("div", {
+        className: x.actions,
+        children: [(0, r.jsx)(c.zxk, {
           size: "sm",
           variant: "secondary",
-          text: Chunk388032.intl.string(Chunk388032.t.yBZMsb),
-          onClick: b
-        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+          text: j.intl.string(j.t.yBZMsb),
+          onClick: S,
+          disabled: !h || O
+        }), (0, r.jsx)(c.zxk, {
           size: "sm",
           variant: "primary",
-          text: Chunk388032.intl.string(Chunk388032.t.R3BPHx),
-          onClick: E,
-          loading: g,
-          disabled: g
+          text: j.intl.string(j.t.R3BPHx),
+          onClick: A,
+          loading: O,
+          disabled: !h || O
         })]
       })]
     })
-  }) : null
+  }) : null)
 }

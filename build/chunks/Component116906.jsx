@@ -46,7 +46,7 @@ function O(e) {
   } = (0, f.Z)(n.id), {
     voiceChannel: S,
     voiceActivity: w
-  } = (0, p.Z)({
+  } = (0, m.Z)({
     userId: n.id,
     guildId: O
   }), D = (0, l.e7)([c.Z], () => c.Z.isFetchingUserOutbox(n.id)), B = n.id === t.id, L = (0, l.e7)([s.Z, a.Z], () => {
@@ -56,12 +56,12 @@ function O(e) {
   return U || k || !D ? (0, o.jsxs)(r.zJl, {
     className: _.scroller,
     fade: true,
-    children: [U ? (0, o.jsx)(m.Z, {
+    children: [U ? (0, o.jsx)(p.Z, {
       "aria-label": y.intl.string(y.t.J6STd3),
       children: (0, o.jsxs)("ul", {
         className: _.activityList,
         children: [!N && M && (0, o.jsx)("li", {
-          children: (0, o.jsx)(j.Z, {
+          children: (0, o.jsx)(g.Z, {
             user: n,
             currentUser: t,
             voiceChannel: S,
@@ -83,7 +83,7 @@ function O(e) {
           })
         }, "live-".concat(l)))]
       })
-    }) : null, k ? (0, o.jsx)(m.Z, {
+    }) : null, k ? (0, o.jsx)(p.Z, {
       heading: y.intl.string(y.t.M0zgnZ),
       introText: B ? y.intl.format(y.t["4bk9Ag"], {
         learnMoreHook: (e, n) => (0, o.jsx)(r.eee, {
@@ -91,7 +91,7 @@ function O(e) {
           children: e
         }, n)
       }) : true,
-      scrollIntoView: Z === g.Tb.RECENT_ACTIVITY,
+      scrollIntoView: Z === j.Tb.RECENT_ACTIVITY,
       children: (0, o.jsx)("ul", {
         className: _.activityList,
         children: C.map(e => (0, o.jsx)("li", {

@@ -1,5 +1,5 @@
 /** Chunk was on 30355 **/
-/** chunk id: 517157, original params: e,t,r (module,exports,require) **/
+/** chunk id: 517157, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 }), require("./388685.js");
@@ -15,17 +15,17 @@ function c(e) {
       let t = a.default.getId();
       return null != e && t === e
     }, [e]),
-    r = (0, l.e7)([o.Z], () => o.Z.getPendingWidgets()),
+    n = (0, l.e7)([o.Z], () => o.Z.getPendingWidgets()),
     c = (0, l.Wu)([s.Z], () => {
       var t;
       if (null == e) return [];
-      let r = s.Z.getUserProfile(e);
-      return null != (t = null == r ? true : r.widgets) ? t : []
+      let n = s.Z.getUserProfile(e);
+      return null != (t = null == n ? true : n.widgets) ? t : []
     }, [e]);
   return ((0, i.Z)(function(e) {
     let t = new Set;
     return e.forEach(e => {
-      e.type === n.l.APPLICATION && t.add(e.applicationId)
+      e.type === r.l.APPLICATION && t.add(e.applicationId)
     }), [...t]
-  }([...c, ...null != r ? r : []])), t && null !== r) ? r : c
+  }([...c, ...null != n ? n : []])), t && null !== n) ? n : c
 }
