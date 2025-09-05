@@ -9,5 +9,6 @@ module.exports = {
   badge: "badge__133bf",
   item: "item__133bf",
   addFriend: "addFriend__133bf",
-  tabBody: "tabBody__133bf"
+  tabBody: "tabBody__133bf",
+  nowPlayingFullWidth: "nowPlayingFullWidth__133bf"
 }

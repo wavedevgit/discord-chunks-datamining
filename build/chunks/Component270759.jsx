@@ -117,14 +117,31 @@ let Z = function(e) {
       }),
       ariaLabel: P.intl.string(P.t.j0wbEx),
       className: a()(x.item, x.addFriend)
-    }];
-  return v.o.useConfig({
-    location: "friendstore"
-  }).landOnProfilePage && G.unshift({
+    }],
+    B = v.o.useConfig({
+      location: "friendstore"
+    }).landOnProfilePage;
+  B && G.unshift({
     id: N.pJs.YOU,
     show: true,
     content: P.intl.string(P.t.LuZzxs),
     className: x.item
+  });
+  let V = null,
+    H = (0, r.jsx)("div", {
+      className: x.nowPlayingColumn,
+      children: (0, r.jsx)(_.Z, {})
+    });
+  return w === N.pJs.ADD_FRIEND ? V = (0, r.jsx)(C.Z, {}) : w === N.pJs.YOU ? B ? V = (0, r.jsx)(T.Z, {}) : (V = (0, r.jsx)(c.Ttm, {
+    className: x.nowPlayingFullWidth,
+    children: (0, r.jsx)("div", {
+      style: {
+        maxWidth: 600
+      },
+      children: (0, r.jsx)(_.Z, {})
+    })
+  }), H = null) : V = (0, r.jsx)(S.Z, {
+    titleId: U
   }), (0, r.jsxs)("main", {
     className: x.container,
     "aria-label": P.intl.string(P.t.TdEu5e),
@@ -164,13 +181,8 @@ let Z = function(e) {
         id: w,
         className: x.peopleColumn,
         "aria-labelledby": U,
-        children: w === N.pJs.ADD_FRIEND ? (0, r.jsx)(C.Z, {}) : w === N.pJs.YOU ? (0, r.jsx)(T.Z, {}) : (0, r.jsx)(S.Z, {
-          titleId: U
-        })
-      }), (0, r.jsx)("div", {
-        className: x.nowPlayingColumn,
-        children: (0, r.jsx)(_.Z, {})
-      })]
+        children: V
+      }), H]
     })]
   })
 }

@@ -44,6 +44,7 @@ function c(e) {
     voiceChannel: null,
     voiceActivityStatusEnabled: false,
     isQuestBarEmpty: true,
+    hasLoadedQuestBar: true,
     isListenAlongVisible: false,
     isDisplayNameStylesEnabled: c
   })

@@ -214,7 +214,7 @@ function U() {
   let e = R.getRelationshipCounts();
   0 === module[Chunk981631.OGo.FRIEND] ? L = 0 !== module[Chunk981631.OGo.PENDING_INCOMING] ? Chunk981631.pJs.PENDING : Chunk981631.pJs.ADD_FRIEND : (L = Chunk981631.pJs.ONLINE, Chunk365113.o.getConfig({
     location: "friendstore"
-  }).landOnProfilePage && (L = Chunk981631.pJs.YOU))
+  }).removeFriends && (L = Chunk981631.pJs.YOU))
 }
 
 function G() {

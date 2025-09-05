@@ -418,7 +418,7 @@ class tT extends Chunk647438.PureComponent {
       markRecurringAvatarDcAsDismissed: a
     } = this.props;
     if (null == t) return null;
-    if (!(null != this.avatarWithPopoutRef.current && this.props.isQuestBarEmpty)) return this.renderAvatarWithPopout({
+    if (!(null != this.avatarWithPopoutRef.current && this.props.isQuestBarEmpty && this.props.hasLoadedQuestBar)) return this.renderAvatarWithPopout({
       focusSectionProps: e
     });
     if (i === d.z.GUILD_TAG_AVAILABLE_COACHMARK) {
@@ -876,10 +876,13 @@ function tC() {
     H = (0, Chunk850020.K)({
       user: exports
     }),
-    Y = (0, Chunk667105.Ws)({
+    {
+      isQuestBarEmpty: Y,
+      hasLoadedQuestBar: W
+    } = (0, Chunk667105.Ws)({
       location: Chunk46140.dr.CONFLICT_CHECKS
     }),
-    W = (0, Chunk442837.e7)([Chunk768419.Z, Chunk594174.default, Chunk831506.Z], () => {
+    q = (0, Chunk442837.e7)([Chunk768419.Z, Chunk594174.default, Chunk831506.Z], () => {
       let e, t = Chunk768419.Z.getSyncingWith(),
         n = Chunk768419.Z.getActivity(),
         r = [];
@@ -889,24 +892,24 @@ function tC() {
       }
       return Chunk951288.length > 1
     }),
-    q = (0, Chunk447448.k)({
+    X = (0, Chunk447448.k)({
       location: "AccountConnected"
     }),
-    X = {
+    Q = {
       avatar: [],
       settings: []
     };
-  !Chunk676742 && (Chunk659580 && Chunk287647.settings.push(Chunk704215.z.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK), Chunk855844 && Chunk287647.avatar.push(Chunk704215.z.PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP), Chunk795318 && Chunk287647.avatar.push(Chunk704215.z.DISPLAY_NAME_STYLES_COACHMARK), Chunk821795 && Chunk287647.avatar.push(Chunk704215.z.WIDGETS_RTC_UPSELL_COACHMARK));
-  let Q = (0, Chunk181430.Y)({
+  !Chunk676742 && (Chunk659580 && Chunk892567.settings.push(Chunk704215.z.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK), Chunk855844 && Chunk892567.avatar.push(Chunk704215.z.PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP), Chunk795318 && Chunk892567.avatar.push(Chunk704215.z.DISPLAY_NAME_STYLES_COACHMARK), Chunk287647 && Chunk892567.avatar.push(Chunk704215.z.WIDGETS_RTC_UPSELL_COACHMARK));
+  let $ = (0, Chunk181430.Y)({
       location: "AccountConnected"
     }),
     {
-      shouldShowTooltip: $,
-      dismissTooltip: et
+      shouldShowTooltip: et,
+      dismissTooltip: en
     } = tA(Chunk65154.h7.AUDIO_INPUT),
     {
-      shouldShowTooltip: en,
-      dismissTooltip: er
+      shouldShowTooltip: er,
+      dismissTooltip: ea
     } = tA(Chunk65154.h7.AUDIO_OUTPUT);
   return (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: Chunk338390,
@@ -915,7 +918,7 @@ function tC() {
       activities: Chunk647438,
       applicationStream: Chunk392711,
       voiceChannel: Chunk789639,
-      dismissibleContents: Chunk287647,
+      dismissibleContents: Chunk892567,
       visibleRecurringAvatarDc: Chunk575175,
       markRecurringAvatarDcAsDismissed: Chunk522651,
       userTag: Chunk846519,
@@ -938,12 +941,13 @@ function tC() {
       nameplate: Chunk64220,
       selectedGuildId: Chunk628581,
       isQuestBarEmpty: Chunk427217,
-      isListenAlongVisible: Chunk243778,
-      isDisplayNameStylesEnabled: Chunk892567,
-      shouldShowInputDeviceChangedTooltip: Chunk53891,
-      shouldShowOutputDeviceChangedTooltip: Chunk72897,
-      dismissInputDeviceChangedTooltip: Chunk427347,
-      dismissOutputDeviceChangedTooltip: Chunk78933
+      hasLoadedQuestBar: Chunk243778,
+      isListenAlongVisible: Chunk821795,
+      isDisplayNameStylesEnabled: Chunk53891,
+      shouldShowInputDeviceChangedTooltip: Chunk427347,
+      shouldShowOutputDeviceChangedTooltip: Chunk78933,
+      dismissInputDeviceChangedTooltip: Chunk72897,
+      dismissOutputDeviceChangedTooltip: Chunk379839
     })
   })
 }

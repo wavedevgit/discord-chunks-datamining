@@ -7,13 +7,16 @@ let r = (0, require("./722733.js").Z)({
   name: "2025-09-desktop-crash-landing-on-you",
   kind: "user",
   defaultConfig: {
+    removeFriends: false,
     landOnProfilePage: false
   },
   variations: {
-    0: {
+    1: {
+      removeFriends: true,
       landOnProfilePage: false
     },
-    1: {
+    2: {
+      removeFriends: true,
       landOnProfilePage: true
     }
   }

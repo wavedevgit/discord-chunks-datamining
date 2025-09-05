@@ -32,16 +32,19 @@ let v = e => {
     } = e, {
       isEnabled: n,
       showActivitySharingIndicatorWhenSharing: r
-    } = (0, m.D)("SharingPrivacyPopout"), i = (0, d.Ws)({
+    } = (0, m.D)("SharingPrivacyPopout"), {
+      isQuestBarEmpty: i,
+      hasLoadedQuestBar: o
+    } = (0, d.Ws)({
       location: _.dr.CONFLICT_CHECKS
-    }), o = p.G6.useSetting(), a = (0, l.e7)([f.Z], () => f.Z.getLayers().includes(O.S9g.USER_SETTINGS)), s = (0, l.e7)([h.Z], () => h.Z.getStatus()), {
-      isOpen: c
+    }), a = p.G6.useSetting(), s = (0, l.e7)([f.Z], () => f.Z.getLayers().includes(O.S9g.USER_SETTINGS)), c = (0, l.e7)([h.Z], () => h.Z.getStatus()), {
+      isOpen: g
     } = (0, u.Z)();
-    if ((i || !i && t) && !a && !c && !__OVERLAY__ && n) {
-      if (r && o && s !== O.Skl.INVISIBLE) return t ? b.N.Activity : null;
-      if (!o && s === O.Skl.INVISIBLE) return t ? b.N.ActivityAndStatus : b.N.ActivityAndStatusNux;
-      if (!o) return t ? b.N.Activity : b.N.ActivityNux;
-      if (s === O.Skl.INVISIBLE) return t ? b.N.Status : b.N.StatusNux
+    if ((i && o || t) && !s && !g && !__OVERLAY__ && n) {
+      if (r && a && c !== O.Skl.INVISIBLE) return t ? b.N.Activity : null;
+      if (!a && c === O.Skl.INVISIBLE) return t ? b.N.ActivityAndStatus : b.N.ActivityAndStatusNux;
+      if (!a) return t ? b.N.Activity : b.N.ActivityNux;
+      if (c === O.Skl.INVISIBLE) return t ? b.N.Status : b.N.StatusNux
     }
     return null
   }({

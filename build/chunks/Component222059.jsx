@@ -1,7 +1,7 @@
 /** Chunk was on 71832 **/
 /** chunk id: 222059, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  u: () => D
+  u: () => M
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -11,6 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk339149 = require("./339149.jsx"),
   Chunk864682 = require("./864682.jsx"),
+  Chunk975298 = require("./975298.js"),
   Chunk550385 = require("./550385.js"),
   Chunk899740 = require("./899740.js"),
   Chunk849862 = require("./849862.js"),
@@ -33,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk871465 = require("./871465.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk688825 = require("./688825.js");
-let A = {
+let R = {
   origin: {
     x: false,
     y: 0
@@ -46,29 +47,29 @@ let A = {
   }
 };
 
-function R(e) {
+function D(e) {
   var t, n;
   let {
     selected: o,
-    user: p,
+    user: d,
     badge: f,
-    link: m,
+    link: h,
     showProgressBadge: b
-  } = e, [O, y] = i.useState(false), [_, v] = i.useState(false), [j, x] = i.useState(null), [N, R] = i.useState(0), D = (0, l.Ie)("home"), M = (0, d.oq)().activePanel === d.wh.APP_ICON, L = () => {
-    x(null), R(0), clearTimeout(j)
+  } = e, [O, y] = i.useState(false), [_, v] = i.useState(false), [j, x] = i.useState(null), [C, Z] = i.useState(0), D = (0, l.Ie)("home"), M = (0, p.oq)().activePanel === p.wh.APP_ICON, L = () => {
+    x(null), Z(0), clearTimeout(j)
   };
-  if (null == p) return null;
-  let k = w.intl.string(w.t.YUU0RE);
-  _ && (k = a.K.get(I.wli) ? w.intl.string(w.t.nkq1l5) : w.intl.string(w.t.Be8Q5O));
+  if (null == d) return null;
+  let k = T.intl.string(T.t.YUU0RE);
+  _ && (k = a.K.get(N.wli) ? T.intl.string(T.t.nkq1l5) : T.intl.string(T.t.Be8Q5O));
   let U = null;
   !o && b && (U = (0, r.jsx)(c.Z, {
-    className: T.downloadProgress,
+    className: A.downloadProgress,
     determineOwnVisibility: false
   }));
   let G = o || O || M,
     B = (0, r.jsx)(s.aRk, {
       selected: true,
-      lowerBadge: f > 0 ? (0, P.Ne)(f) : null,
+      lowerBadge: f > 0 ? (0, I.Ne)(f) : null,
       upperBadge: U,
       lowerBadgeSize: {
         width: (0, s.OVM)(f)
@@ -94,26 +95,26 @@ function R(e) {
         onMouseEnter: () => y(true),
         onMouseLeave: () => y(false),
         onClick: () => {
-          if (!__OVERLAY__ && (null != j && clearTimeout(j), x(setTimeout(L, 500)), R(N + 1), 15 === N)) {
+          if (!__OVERLAY__ && (null != j && clearTimeout(j), x(setTimeout(L, 500)), Z(C + 1), 15 === C)) {
             L();
-            let e = !a.K.get(I.wli);
-            a.K.set(I.wli, e), e && a.K.set(Z.O, true), e ? (0, h.GN)("discodo") : (0, h.GN)("user_leave"), v(true), setTimeout(() => {
+            let e = !a.K.get(N.wli);
+            a.K.set(N.wli, e), e && a.K.set(w.O, true), e ? (0, g.GN)("discodo") : (0, g.GN)("user_leave"), v(true), setTimeout(() => {
               v(false)
             }, 1e3)
           }
         },
         selected: G,
-        ariaLabel: w.intl.string(w.t.YUU0RE),
+        ariaLabel: T.intl.string(T.t.YUU0RE),
         "aria-owns": "guild-list-unread-dms",
         "aria-selected": o
       }, D), n = n = {
         to: {
-          pathname: m,
+          pathname: h,
           state: {
             analyticsSource: {
-              page: I.ZY5.GUILD_CHANNEL,
-              section: I.jXE.NAVIGATION,
-              object: I.qAy.BUTTON_HOME
+              page: N.ZY5.GUILD_CHANNEL,
+              section: N.jXE.NAVIGATION,
+              object: N.qAy.BUTTON_HOME
             }
           }
         },
@@ -130,17 +131,17 @@ function R(e) {
       }), t))
     });
   return (0, r.jsx)("div", {
-    className: T.tutorialContainer,
-    children: (0, r.jsx)(g.Z, {
-      inlineSpecs: A,
+    className: A.tutorialContainer,
+    children: (0, r.jsx)(m.Z, {
+      inlineSpecs: R,
       tutorialId: "friends-list",
       position: "right",
-      children: (0, r.jsxs)(E.H, {
-        children: [(0, r.jsx)(C.Z, {
+      children: (0, r.jsxs)(S.H, {
+        children: [(0, r.jsx)(E.Z, {
           selected: o,
           hovered: O,
-          className: T.pill
-        }), (0, r.jsx)(S.Z, {
+          className: A.pill
+        }), (0, r.jsx)(P.Z, {
           color: s.ua7.Colors.PRIMARY,
           hideOnClick: true,
           text: k,
@@ -152,7 +153,7 @@ function R(e) {
   })
 }
 
-function D() {
+function M() {
   let e = (0, Chunk278464.n)(),
     t = (0, Chunk442837.e7)([Chunk941128.Z, Chunk417363.Z], () => {
       let e = (0, Chunk339149.E)(Chunk941128.Z.activeItems, Chunk417363.Z),
@@ -165,25 +166,26 @@ function D() {
     }),
     n = (0, Chunk849862.If)(),
     i = Object.keys(Chunk474936.nG),
+    l = (0, Chunk975298.Z)(),
     {
-      unviewedTrialCount: l,
-      unviewedDiscountCount: a
+      unviewedTrialCount: a,
+      unviewedDiscountCount: s
     } = (0, Chunk442837.cj)([Chunk431.Z], () => ({
       unviewedTrialCount: Chunk431.Z.getUnacknowledgedOffers(Chunk647438).length,
       unviewedDiscountCount: Chunk431.Z.getUnacknowledgedDiscountOffers().length
     })),
-    s = Chunk91192 + Chunk433517,
-    u = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
-    d = (0, Chunk899740.q)(),
-    h = require + Chunk481060 + Chunk550385,
-    g = Chunk460181 === Chunk481060 && Chunk481060 > 0 && require + Chunk550385 === 0,
-    C = Chunk774343.Z.getHomeLink();
-  return Chunk155409 && (C = Chunk981631.Z5c.APPLICATION_STORE), (0, Chunk951288.jsx)(R, {
+    u = Chunk91192.fractionalState === Chunk474936.a$.NONE ? Chunk433517 + Chunk481060 : 0,
+    p = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
+    g = (0, Chunk899740.q)(),
+    m = require + Chunk864682 + Chunk460181,
+    E = Chunk155409 === Chunk864682 && Chunk864682 > 0 && require + Chunk460181 === 0,
+    S = Chunk774343.Z.getHomeLink();
+  return Chunk276952 && (S = Chunk981631.Z5c.APPLICATION_STORE), (0, Chunk951288.jsx)(D, {
     selected: module,
-    user: Chunk864682,
+    user: Chunk550385,
     selectedChannelId: Chunk944486.Z.getChannelId(Chunk981631.ME),
-    badge: Chunk460181,
-    link: Chunk276952,
+    badge: Chunk155409,
+    link: Chunk682662,
     showProgressBadge: exports
   })
 }

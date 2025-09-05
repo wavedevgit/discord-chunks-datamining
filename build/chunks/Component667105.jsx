@@ -424,5 +424,8 @@ function V(e) {
     lastFetchedCurrentQuests: b.Z.lastFetchedCurrentQuests,
     lastFetchedQuestToDeliver: b.Z.lastFetchedQuestToDeliver
   }));
-  return 0 !== r && 0 !== i && !n
+  return {
+    isQuestBarEmpty: !n,
+    hasLoadedQuestBar: 0 !== r && 0 !== i
+  }
 }
