@@ -36,8 +36,8 @@ function x(e) {
       authorizedAppsFetchState: c.Z.getFetchState()
     }));
   a.useEffect(() => {
-    d === c.M.NOT_FETCHED && l.Z.fetch()
-  }, [d]);
+    d === c.M.NOT_FETCHED && n && l.Z.fetch()
+  }, [d, n]);
   let u = a.useCallback(() => {
     null != t && n && s.Z.dispatchToSubscriptions("AUTHORIZE_REQUEST", e => e.socket.application.id === t.id, {})
   }, [n, t]);
