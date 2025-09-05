@@ -329,7 +329,8 @@ class tr extends(r = Chunk647438.Component) {
           message: e
         }, r)
       } else if (n === S.g.APP_OAUTH2_LINK) return (0, i.jsx)(O.Z, {
-        applicationId: r
+        applicationId: r,
+        message: e
       }, r);
       else if (n === S.g.COLLECTIBLES_SHOP) return null;
       else throw Error("Unknown coded link type: ".concat(n))
@@ -650,7 +651,8 @@ class tr extends(r = Chunk647438.Component) {
     return null == t || null == n ? null : (0, i.jsx)(eL.Z, {
       application: t,
       channelId: this.props.channel.id,
-      guildId: this.props.channel.guild_id
+      guildId: this.props.channel.guild_id,
+      message: e
     })
   }
   renderMediaPostEmbeds(e) {

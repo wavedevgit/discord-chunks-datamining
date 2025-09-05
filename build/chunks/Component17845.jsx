@@ -16,12 +16,13 @@ var Chunk951288 = require("./951288.js"),
 function p(e) {
   let {
     title: t,
-    betaTag: n
+    betaTag: n,
+    color: a = "header-primary"
   } = e;
   return (0, r.jsxs)(o.X6q, {
     className: l()(u.title, u.uppercase),
     variant: "display-lg",
-    color: "header-primary",
+    color: a,
     children: [t, n && (0, r.jsx)(d.Z, {
       className: u.betaTag
     })]
@@ -31,34 +32,37 @@ function p(e) {
 function m(e) {
   let {
     title: t,
-    description: n,
-    button: i,
-    className: d,
-    children: m,
-    betaTag: h = false
-  } = e, g = (0, c.ZP)(), f = (0, s.wj)(g), _ = a.useMemo(() => Array.isArray(t) ? t.map((e, t) => (0, r.jsx)(p, {
+    titleColor: n,
+    description: i,
+    button: d,
+    className: m,
+    children: h,
+    betaTag: g = false
+  } = e, f = (0, c.ZP)(), _ = (0, s.wj)(f), b = a.useMemo(() => Array.isArray(t) ? t.map((e, t) => (0, r.jsx)(p, {
     title: e,
-    betaTag: h
+    betaTag: g,
+    color: n
   }, t)) : (0, r.jsx)(p, {
     title: t,
-    betaTag: h
-  }), [t, h]);
+    betaTag: g,
+    color: n
+  }), [t, g, n]);
   return (0, r.jsxs)("div", {
-    className: l()(u.container, d),
+    className: l()(u.container, m),
     children: [(0, r.jsx)("div", {
       className: u.content,
       children: (0, r.jsxs)("div", {
         className: u.textContainer,
-        children: [_, null != n && (0, r.jsx)(o.Text, {
+        children: [b, null != i && (0, r.jsx)(o.Text, {
           className: u.description,
           variant: "text-md/medium",
-          color: f ? "text-muted" : "header-primary",
-          children: n
-        }), null != i && (0, r.jsx)("div", {
-          className: u.buttonContainer,
+          color: _ ? "text-muted" : "header-primary",
           children: i
+        }), null != d && (0, r.jsx)("div", {
+          className: u.buttonContainer,
+          children: d
         })]
       })
-    }), m]
+    }), h]
   })
 }

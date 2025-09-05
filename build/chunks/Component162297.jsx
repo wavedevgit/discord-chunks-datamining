@@ -18,23 +18,26 @@ var Chunk951288 = require("./951288.js"),
 
 function p(e) {
   let {
-    applicationId: t
-  } = e, [n, a, s] = (0, o.Wu)([d.Z], () => [d.Z.getApplication(t), d.Z.isFetchingApplication(t), d.Z.didFetchingApplicationFail(t)], [t]);
+    applicationId: t,
+    message: n
+  } = e, [a, s, l] = (0, o.Wu)([d.Z], () => [d.Z.getApplication(t), d.Z.isFetchingApplication(t), d.Z.didFetchingApplicationFail(t)], [t]);
   return (i.useEffect(() => {
-    null != n || a || s || u.ZP.fetchApplication(t)
-  }, [n, a, s, t]), null != n && (0, _.Eb)({
-    customInstallUrl: n.customInstallUrl,
-    installParams: n.installParams,
-    integrationTypesConfig: n.integrationTypesConfig
+    null != a || s || l || u.ZP.fetchApplication(t)
+  }, [a, s, l, t]), null != a && (0, _.Eb)({
+    customInstallUrl: a.customInstallUrl,
+    installParams: a.installParams,
+    integrationTypesConfig: a.integrationTypesConfig
   })) ? (0, r.jsx)(h, {
-    application: n
+    application: a,
+    message: n
   }) : null
 }
 
 function h(e) {
   let {
-    application: t
-  } = e, n = i.useCallback(() => {
+    application: t,
+    message: n
+  } = e, o = i.useCallback(() => {
     (0, c.h)({
       type: a.ImpressionTypes.VIEW,
       name: a.ImpressionNames.APP_OAUTH2_LINK_EMBED,
@@ -43,14 +46,15 @@ function h(e) {
       }
     })
   }, [t.id]), {
-    analyticsLocations: o
+    analyticsLocations: u
   } = (0, l.ZP)(s.Z.APP_OAUTH2_LINK_EMBED);
   return (0, r.jsx)(l.Gt, {
-    value: o,
+    value: u,
     children: (0, r.jsx)(f.O, {
       app: t,
       linkType: f.U.OAUTH,
-      onView: n
+      onView: o,
+      message: n
     })
   })
 }

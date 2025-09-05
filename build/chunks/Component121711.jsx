@@ -168,6 +168,7 @@ function eo(e) {
         icon: d.qDn
       }), (0, r.jsx)(E.Z, {
         title: X.intl.string(X.t.z8YP2N),
+        titleColor: "always-white",
         button: (0, r.jsx)(d.zxk, {
           variant: "overlay-primary",
           text: X.intl.string(X.t.GURBQk),

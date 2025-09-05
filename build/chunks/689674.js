@@ -10,7 +10,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk434650 = require("./434650.js"),
   Chunk430824 = require("./430824.js"),
   Chunk63205 = require("./63205.js"),
-  Chunk529726 = require("./529726.js"),
+  Chunk765383 = require("./765383.js"),
   Chunk981631 = require("./981631.js");
 let d = 0;
 
@@ -26,12 +26,13 @@ function f(e) {
     return null != (e = null == t ? true : t.features.has(u.oNc.COMMUNITY)) && e
   }, [_.guild_id]), m = (null == (t = f.messageReference) ? true : t.guild_id) != null && null != f.webhookId && f.hasFlag(u.iLy.IS_CROSSPOST) && null != _.guild_id, g = _.type === i.d.GUILD_ANNOUNCEMENT && h, E = !f.hasFlag(u.iLy.EPHEMERAL) && (m || g), b = m && null != f.messageReference ? f.messageReference.message_id : f.id, y = m && null != f.messageReference ? f.messageReference.channel_id : _.id, O = m && (null == (n = f.messageReference) ? true : n.guild_id) != null ? f.messageReference.guild_id : _.guild_id, v = r.useCallback(e => {
     e ? c.Z.handleMessageBecameVisible({
+      type: c.k.ANNOUNCEMENT,
       messageId: b,
       channelId: _.id,
       guildId: _.guild_id,
       sourceChannelId: y,
       sourceGuildId: O
-    }) : c.Z.handleMessageLostVisibility(b)
+    }) : c.Z.handleMessageLostVisibility(b, c.k.ANNOUNCEMENT)
   }, [b, _.id, _.guild_id, y, O]), I = l.Z.useExperiment({
     location: "836a4b_1"
   }, {
@@ -39,6 +40,6 @@ function f(e) {
     autoTrackExposure: true
   }).enabled, T = (0, o.O)(v, d, I);
   return r.useEffect(() => () => {
-    c.Z.handleMessageLostVisibility(b)
+    c.Z.handleMessageLostVisibility(b, c.k.ANNOUNCEMENT)
   }, [b]), T
 }

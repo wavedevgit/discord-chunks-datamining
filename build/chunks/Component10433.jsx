@@ -75,6 +75,7 @@ function E(e) {
   }) : (0, r.jsx)(l.O, {
     app: u.ZP.createFromServer(E),
     linkType: l.U.APP_DISCOVERY,
-    onView: A
+    onView: A,
+    message: n
   })
 }
