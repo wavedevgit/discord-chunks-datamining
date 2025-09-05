@@ -1,12 +1,12 @@
 /** Chunk was on 6850 **/
 /** chunk id: 66747, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => eo
+  Z: () => ei
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   Chunk498607 = require("./498607.js"),
   c = require.n(Chunk498607),
@@ -83,7 +83,7 @@ function K(e, t) {
 let Q = Chunk647438.memo(function(e) {
     let {
       member: t
-    } = e, n = l.useMemo(() => (0, g.J)(t.communicationDisabledUntil), [t.communicationDisabledUntil]), o = l.useMemo(() => null == t.communicationDisabledUntil ? new Date : new Date(t.communicationDisabledUntil), [t.communicationDisabledUntil]);
+    } = e, n = l.useMemo(() => (0, g.J)(t.communicationDisabledUntil), [t.communicationDisabledUntil]), i = l.useMemo(() => null == t.communicationDisabledUntil ? new Date : new Date(t.communicationDisabledUntil), [t.communicationDisabledUntil]);
     return (0, r.jsxs)("div", {
       className: Y.flagContainer,
       children: [t.hasUnusualDmActivity && (0, r.jsx)(m.ua7, {
@@ -110,7 +110,7 @@ let Q = Chunk647438.memo(function(e) {
           children: [(0, r.jsx)("div", {
             children: G.intl.string(G.t["xfJP+v"])
           }), (0, r.jsx)(h.Z, {
-            deadline: o,
+            deadline: i,
             showUnits: true,
             stopAtOneSec: true
           })]
@@ -136,7 +136,7 @@ let Q = Chunk647438.memo(function(e) {
             onMouseEnter: t,
             onMouseLeave: n
           } = e;
-          return (0, r.jsx)(D.Z, {
+          return (0, r.jsx)(Z.Z, {
             width: 20,
             height: 20,
             onMouseEnter: t,
@@ -167,11 +167,11 @@ let Q = Chunk647438.memo(function(e) {
     let {
       member: t,
       highestRole: n
-    } = e, o = (0, u.e7)([w.Z], () => w.Z.getGuild(t.guildId), [t.guildId]), a = t.roles.length - 1, s = l.useMemo(() => new Intl.NumberFormat(G.intl.currentLocale).format(a), [a]), c = (0, B.vN)(t), d = (0, B.vN)(t, true), C = (0, u.e7)([N.Z], () => N.Z.can(F.Plq.MANAGE_ROLES, o), [o]);
-    return null == o ? null : (0, r.jsxs)("div", {
+    } = e, i = (0, u.e7)([w.Z], () => w.Z.getGuild(t.guildId), [t.guildId]), a = t.roles.length - 1, s = l.useMemo(() => new Intl.NumberFormat(G.intl.currentLocale).format(a), [a]), c = (0, U.vN)(t), d = (0, U.vN)(t, true), C = (0, u.e7)([S.Z], () => S.Z.can(B.Plq.MANAGE_ROLES, i), [i]);
+    return null == i ? null : (0, r.jsxs)("div", {
       className: Y.roleContainer,
-      children: [null != n && (0, r.jsx)(U.Z, {
-        className: i()(Y.roleTooltipItem, Y.highestRole),
+      children: [null != n && (0, r.jsx)(F.Z, {
+        className: o()(Y.roleTooltipItem, Y.highestRole),
         role: n,
         guildId: t.guildId
       }), a > 0 && (0, r.jsx)(m.P3F, {
@@ -194,7 +194,7 @@ let Q = Chunk647438.memo(function(e) {
             onMouseLeave: n
           } = e;
           return (0, r.jsx)(m.P3F, {
-            className: i()(Y.otherRoles, Y.addRoleContainer),
+            className: o()(Y.otherRoles, Y.addRoleContainer),
             onClick: c,
             onMouseEnter: t,
             onMouseLeave: n,
@@ -214,14 +214,14 @@ let Q = Chunk647438.memo(function(e) {
     var t, n;
     let {
       member: l,
-      user: o
-    } = e, i = (0, _.X7)(null == l ? true : l.guildId, null == l ? true : l.userId, null != (t = null == l ? true : l.colorStrings) ? t : null);
-    return null == o || null == l ? null : (0, r.jsxs)("div", {
+      user: i
+    } = e, o = (0, H.X7)(null == l ? true : l.guildId, null == l ? true : l.userId, null != (t = null == l ? true : l.colorStrings) ? t : null);
+    return null == i || null == l ? null : (0, r.jsxs)("div", {
       className: Y.memberNameContainer,
       children: [(0, r.jsx)("div", {
         className: Y.memberAvatar,
         children: (0, r.jsx)(b.Z, {
-          user: o
+          user: i
         })
       }), (0, r.jsx)("div", {
         className: Y.memberName,
@@ -230,13 +230,13 @@ let Q = Chunk647438.memo(function(e) {
           children: (0, r.jsxs)("div", {
             className: Y.nameContainer,
             children: [(0, r.jsx)(m.PUh, {
-              name: R.ZP.getName(l.guildId, null, o),
+              name: L.ZP.getName(l.guildId, null, i),
               colorString: null != (n = l.colorString) ? n : null,
-              colorStrings: i,
+              colorStrings: o,
               className: Y.memberNameText
             }), (0, r.jsx)(y.ZP, {
-              primaryGuild: null == o ? true : o.primaryGuild,
-              userId: null == o ? true : o.id,
+              primaryGuild: null == i ? true : i.primaryGuild,
+              userId: null == i ? true : i.id,
               contextGuildId: l.guildId,
               containerClassName: Y.memberClanTag
             })]
@@ -248,7 +248,7 @@ let Q = Chunk647438.memo(function(e) {
           variant: "text-xs/normal",
           color: "header-secondary",
           tag: "span",
-          children: I.ZP.getUserTag(o)
+          children: P.ZP.getUserTag(i)
         })
       })]
     })
@@ -256,8 +256,8 @@ let Q = Chunk647438.memo(function(e) {
 
 function $(e) {
   return {
-    short: null == e ? null : (0, P.fv)(e, P.jq.JOINED_AT),
-    long: new Date(null != e ? e : 0).toLocaleDateString(G.intl.currentLocale, P.UG)
+    short: null == e ? null : (0, I.fv)(e, I.jq.JOINED_AT),
+    long: new Date(null != e ? e : 0).toLocaleDateString(G.intl.currentLocale, I.UG)
   }
 }
 
@@ -265,30 +265,30 @@ function ee(e) {
   let {
     member: t,
     showLongDate: n,
-    isSortedBy: o
-  } = e, [i, a] = l.useState(null);
+    isSortedBy: i
+  } = e, [o, a] = l.useState(null);
   l.useEffect(() => {
     a($(t.joinedAtTimestamp))
   }, [t.joinedAtTimestamp]), (0, p.Z)(() => {
     a($(t.joinedAtTimestamp))
   }, 1e4);
-  let s = o ? "text-brand" : "text-default";
-  return (null == i ? true : i.short) == null ? null : n ? (0, r.jsx)("div", {
+  let s = i ? "text-brand" : "text-default";
+  return (null == o ? true : o.short) == null ? null : n ? (0, r.jsx)("div", {
     className: Y.__invalid_joinedAtContainer,
     children: (0, r.jsx)(m.Text, {
       variant: "text-sm/medium",
       color: s,
-      children: i.long
+      children: o.long
     })
   }) : (0, r.jsx)("div", {
     className: Y.__invalid_joinedAtContainer,
     children: (0, r.jsx)(m.ua7, {
       align: "left",
-      text: i.long,
+      text: o.long,
       children: e => (0, r.jsx)(m.Text, K(W({}, e), {
         variant: "text-sm/medium",
         color: s,
-        children: i.short
+        children: o.short
       }))
     })
   })
@@ -297,17 +297,17 @@ let et = Chunk647438.memo(function(e) {
     let {
       member: t,
       showLongDate: n,
-      isSortedBy: o
+      isSortedBy: i
     } = e, {
-      accountCreationDateShort: i,
+      accountCreationDateShort: o,
       accountCreationDateLong: a
     } = l.useMemo(() => {
-      let e = L.default.extractTimestamp(t.userId);
+      let e = R.default.extractTimestamp(t.userId);
       return {
-        accountCreationDateShort: (0, P.fv)(e, P.jq.ACCOUNT_AGE),
-        accountCreationDateLong: new Date(e).toLocaleDateString(G.intl.currentLocale, P.I)
+        accountCreationDateShort: (0, I.fv)(e, I.jq.ACCOUNT_AGE),
+        accountCreationDateLong: new Date(e).toLocaleDateString(G.intl.currentLocale, I.I)
       }
-    }, [t.userId]), s = o ? "text-brand" : "text-default";
+    }, [t.userId]), s = i ? "text-brand" : "text-default";
     return n ? (0, r.jsx)(m.Text, {
       variant: "text-sm/medium",
       color: s,
@@ -318,7 +318,7 @@ let et = Chunk647438.memo(function(e) {
       children: e => (0, r.jsx)(m.Text, K(W({}, e), {
         variant: "text-sm/medium",
         color: s,
-        children: i
+        children: o
       }))
     })
   }),
@@ -326,13 +326,13 @@ let et = Chunk647438.memo(function(e) {
     let {
       member: t,
       user: n,
-      highestRole: o,
+      highestRole: i,
       isHoldingAdvancedInfoKey: a,
       onOpenModerationMenu: s,
       onOpenMemberView: d,
       compact: b,
       hasModViewPanelAccess: p
-    } = e, f = (0, u.e7)([N.Z, w.Z], () => N.Z.can(F.Plq.MANAGE_GUILD, w.Z.getGuild(t.guildId)), [t.guildId]), {
+    } = e, f = (0, u.e7)([S.Z, w.Z], () => S.Z.can(B.Plq.MANAGE_GUILD, w.Z.getGuild(t.guildId)), [t.guildId]), {
       selectedUserIds: h,
       addUsers: j,
       removeUser: g
@@ -341,7 +341,7 @@ let et = Chunk647438.memo(function(e) {
       return null != (e = E.Z.getSearchStateByGuildId(t.guildId).selectedSort) ? e : M.d$.ORDER_BY_UNSPECIFIED
     }, [t.guildId], c()), O = l.useCallback(e => {
       e.stopPropagation(), e.preventDefault(), null != t && v && (h.has(t.userId) ? g(t.userId) : j([t.userId]))
-    }, [j, v, t, g, h]), _ = y === M.d$.ORDER_BY_GUILD_JOINED_AT_ASC, H = y === M.d$.ORDER_BY_USER_ID_ASC || y === M.d$.ORDER_BY_USER_ID_DESC;
+    }, [j, v, t, g, h]), H = y === M.d$.ORDER_BY_GUILD_JOINED_AT_ASC, _ = y === M.d$.ORDER_BY_USER_ID_ASC || y === M.d$.ORDER_BY_USER_ID_DESC;
     return (0, r.jsxs)(r.Fragment, {
       children: [x && (0, r.jsx)(m.ua7, {
         tooltipClassName: Y.disabledActionTooltip,
@@ -349,7 +349,7 @@ let et = Chunk647438.memo(function(e) {
         text: G.intl.string(G.t["Se4c7+"]),
         children: e => (0, r.jsx)("td", K(W({}, e), {
           children: (0, r.jsx)("div", {
-            className: i()(Y.__invalid_checkbox, Y.xsmallCol),
+            className: o()(Y.__invalid_checkbox, Y.xsmallCol),
             children: (0, r.jsx)(m.P3F, {
               onClick: O,
               children: (0, r.jsx)(C.$q, {
@@ -361,7 +361,7 @@ let et = Chunk647438.memo(function(e) {
           })
         }))
       }), (0, r.jsx)("td", {
-        className: i()({
+        className: o()({
           [Y.compact]: b
         }),
         children: (0, r.jsx)(X, {
@@ -369,25 +369,25 @@ let et = Chunk647438.memo(function(e) {
           user: n
         })
       }), (0, r.jsx)("td", {
-        className: i()(Y.smallCol, {
+        className: o()(Y.smallCol, {
           [Y.compact]: b
         }),
         children: (0, r.jsx)(ee, {
           showLongDate: a,
           member: t,
-          isSortedBy: _
+          isSortedBy: H
         })
       }), (0, r.jsx)("td", {
-        className: i()(Y.smallCol, {
+        className: o()(Y.smallCol, {
           [Y.compact]: b
         }),
         children: (0, r.jsx)(et, {
           showLongDate: a,
           member: t,
-          isSortedBy: H
+          isSortedBy: _
         })
       }), f && (0, r.jsx)("td", {
-        className: i()(Y.smallCol, {
+        className: o()(Y.smallCol, {
           [Y.compact]: b
         }),
         children: (0, r.jsx)(k.ZP, {
@@ -395,22 +395,22 @@ let et = Chunk647438.memo(function(e) {
           guildId: t.guildId
         })
       }), (0, r.jsx)("td", {
-        className: i()(Y.mediumCol, {
+        className: o()(Y.mediumCol, {
           [Y.compact]: b
         }),
         children: (0, r.jsx)(J, {
           member: t,
-          highestRole: o
+          highestRole: i
         })
       }), (0, r.jsx)("td", {
-        className: i()(Y.smallCol, {
+        className: o()(Y.smallCol, {
           [Y.compact]: b
         }),
         children: (0, r.jsx)(Q, {
           member: t
         })
       }), (0, r.jsx)("td", {
-        className: i()(Y.smallCol, {
+        className: o()(Y.smallCol, {
           [Y.compact]: b
         }),
         children: (0, r.jsxs)("div", {
@@ -427,7 +427,7 @@ let et = Chunk647438.memo(function(e) {
                 onMouseLeave: n,
                 onClick: d,
                 className: Y.button,
-                children: p ? (0, r.jsx)(Z.Z, {
+                children: p ? (0, r.jsx)(D.Z, {
                   width: er,
                   height: er
                 }) : (0, r.jsx)(m.tBG, {
@@ -465,33 +465,33 @@ let et = Chunk647438.memo(function(e) {
   }),
   er = 18,
   el = ["sourceInviteCode", "joinSourceType", "inviterId", "integrationType", "joinedAt", "joinedAtTimestamp"],
-  eo = Chunk647438.memo(function(e) {
+  ei = Chunk647438.memo(function(e) {
     let {
       userId: t,
       guildId: n,
-      style: o,
+      style: i,
       rowSelected: s,
       isLoading: d = false,
       isHoldingAdvancedInfoKey: C = false,
       compact: m = false
     } = e, {
       analyticsLocations: b
-    } = (0, f.ZP)(), p = (0, u.e7)([H.ZP], () => H.ZP.getGuildSidebarState(n), [n]), h = (null == p ? true : p.details.userId) === t, j = (0, u.e7)([E.Z], () => E.Z.getEnhancedMember(n, t), [n, t]), g = (0, B.zq)(j), y = (0, u.e7)([S.default], () => S.default.getUser(t), [t]), O = (0, v.m)(n), _ = (0, B.RN)(null != j ? j : true), w = l.useCallback(e => {
-      e.stopPropagation(), e.preventDefault(), _(e)
-    }, [_]), N = l.useCallback(e => {
-      e.stopPropagation(), e.preventDefault(), null != j && (0, B.RE)(j, b)
-    }, [j, b]), D = l.useCallback(e => {
+    } = (0, f.ZP)(), p = (0, u.e7)([_.ZP], () => _.ZP.getGuildSidebarState(n), [n]), h = (null == p ? true : p.details.userId) === t, j = (0, u.e7)([E.Z], () => E.Z.getEnhancedMember(n, t), [n, t]), g = (0, U.zq)(j), y = (0, u.e7)([N.default], () => N.default.getUser(t), [t]), O = (0, v.m)(n), H = (0, U.RN)(null != j ? j : true), w = l.useCallback(e => {
+      e.stopPropagation(), e.preventDefault(), H(e)
+    }, [H]), S = l.useCallback(e => {
+      e.stopPropagation(), e.preventDefault(), null != j && (0, U.RE)(j, b)
+    }, [j, b]), Z = l.useCallback(e => {
       e.stopPropagation(), e.preventDefault(), null != j && (O ? (0, x.r)(j.guildId, j.userId, q.oC.MEMBER_SAFETY, {
         modViewPanel: z.k.INFO
-      }) : (0, B.RE)(j, b))
-    }, [j, b, O]), Z = l.useCallback((e, t) => c()((0, a.omit)(e, el), (0, a.omit)(t, el)), []);
+      }) : (0, U.RE)(j, b))
+    }, [j, b, O]), D = l.useCallback((e, t) => c()((0, a.omit)(e, el), (0, a.omit)(t, el)), []);
     return null == j ? null : (0, r.jsx)(T.Z, {
       role: "row",
       value: j,
-      style: o,
-      className: i()(Y.roundedRow, Y.memberRowContainer, s && Y.selected, h && Y.memberSelected, d && Y.loading),
-      equalityFn: Z,
-      onClick: N,
+      style: i,
+      className: o()(Y.roundedRow, Y.memberRowContainer, s && Y.selected, h && Y.memberSelected, d && Y.loading),
+      equalityFn: D,
+      onClick: S,
       onContextMenu: w,
       children: (0, r.jsx)(en, {
         member: j,
@@ -499,7 +499,7 @@ let et = Chunk647438.memo(function(e) {
         highestRole: g,
         isHoldingAdvancedInfoKey: C,
         onOpenModerationMenu: w,
-        onOpenMemberView: D,
+        onOpenMemberView: Z,
         compact: m,
         hasModViewPanelAccess: O
       })

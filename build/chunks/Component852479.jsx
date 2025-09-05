@@ -1,14 +1,13 @@
 /** Chunk was on 6850 **/
 /** chunk id: 852479, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk913527 = require("./913527.js"),
-  i = require.n(Chunk913527),
+  o = require.n(Chunk913527),
   Chunk399606 = require("./399606.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk740900 = require("./740900.js"),
   Chunk241559 = require("./241559.js"),
@@ -18,17 +17,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk266631 = require("./266631.js"),
   Chunk51237 = require("./51237.js");
 
-function h(e) {
+function f(e) {
   let {
     guild: t,
-    onSubmit: o
-  } = e, h = (0, a.e7)([C.Z], () => C.Z.getMembersCountByGuildId(t.id, u.R_.NEW_GUILD_MEMBER), [t.id]), j = (0, a.e7)([C.Z], () => {
-    let e = C.Z.getNewMemberTimestamp(t.id);
-    return i()(e).format("h:mm A")
-  }, [t.id]), g = (0, a.e7)([C.Z], () => C.Z.hasDefaultSearchStateByGuildId(t.id), [t.id]), x = l.useCallback(() => {
-    (0, m.YO)(t.id), null == o || o()
-  }, [t.id, o]), v = l.useCallback(() => {
-    g ? x() : (0, c.ZDy)(async () => {
+    onSubmit: i
+  } = e, f = (0, a.e7)([d.Z], () => d.Z.getMembersCountByGuildId(t.id, c.R_.NEW_GUILD_MEMBER), [t.id]), h = (0, a.e7)([d.Z], () => {
+    let e = d.Z.getNewMemberTimestamp(t.id);
+    return o()(e).format("h:mm A")
+  }, [t.id]), j = (0, a.e7)([d.Z], () => d.Z.hasDefaultSearchStateByGuildId(t.id), [t.id]), g = l.useCallback(() => {
+    (0, C.YO)(t.id), null == i || i()
+  }, [t.id, i]), x = l.useCallback(() => {
+    j ? g() : (0, s.ZDy)(async () => {
       let {
         default: e
       } = await n.e("24478").then(n.bind(n, 319481));
@@ -52,7 +51,7 @@ function h(e) {
           }
           return e
         }({}, t), l = l = {
-          onConfirm: x
+          onConfirm: g
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -65,18 +64,18 @@ function h(e) {
         }), n))
       }
     })
-  }, [x, g]), y = new Intl.NumberFormat(b.intl.currentLocale).format(h), O = (0, d.nX)(t.id), _ = (0, d.xC)(t.id), H = l.useMemo(() => 1 + +!!O + +!!_, [O, _]);
-  return 0 === h ? null : (0, r.jsxs)("tr", {
-    className: f.newMembersNotice,
-    onClick: v,
+  }, [g, j]), v = new Intl.NumberFormat(m.intl.currentLocale).format(f), y = (0, u.nX)(t.id), O = (0, u.xC)(t.id), H = l.useMemo(() => 1 + +!!y + +!!O, [y, O]);
+  return 0 === f ? null : (0, r.jsxs)("tr", {
+    className: p.newMembersNotice,
+    onClick: x,
     children: [(0, r.jsx)("td", {
       colSpan: 3,
-      children: (0, r.jsx)(c.Text, {
+      children: (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "always-white",
-        children: b.intl.format(b.t["/i5uJy"], {
-          count: y,
-          date: j
+        children: m.intl.format(m.t["/i5uJy"], {
+          count: v,
+          date: h
         })
       })
     }), (0, r.jsx)("td", {
@@ -84,24 +83,22 @@ function h(e) {
     }), (0, r.jsx)("td", {
       colSpan: 2,
       children: (0, r.jsx)("div", {
-        className: p.actionCell,
-        children: (0, r.jsx)(s.zx, {
-          size: s.zx.Sizes.SMALL,
-          color: s.zx.Colors.TRANSPARENT,
-          look: s.zx.Looks.LINK,
-          className: f.memberNoticeActionButton,
-          children: (0, r.jsxs)(c.Text, {
+        className: b.actionCell,
+        children: (0, r.jsx)(s.P3F, {
+          onClick: x,
+          className: p.memberNoticeActionButton,
+          children: (0, r.jsxs)(s.Text, {
             variant: "text-sm/normal",
             color: "always-white",
-            className: f.memberNoticeAction,
+            className: p.memberNoticeAction,
             children: [(0, r.jsx)("div", {
-              children: b.intl.string(b.t.rkyOzM)
-            }), (0, r.jsx)(c.tBG, {
+              children: m.intl.string(m.t.rkyOzM)
+            }), (0, r.jsx)(s.tBG, {
               size: "custom",
               color: "currentColor",
-              width: 20,
-              height: 20,
-              className: f.memberNoticeActionIcon
+              width: 16,
+              height: 16,
+              className: p.memberNoticeActionIcon
             })]
           })
         })

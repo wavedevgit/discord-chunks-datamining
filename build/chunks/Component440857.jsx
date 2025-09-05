@@ -58,14 +58,14 @@ function O(e) {
   let {
     guildId: t
   } = e, O = (0, f.xC)(t), {
-    selectedUserIds: _,
-    clearSelection: H
-  } = (0, h.Z)(t), w = _.size > 0, N = async (e, t, n, r) => {
+    selectedUserIds: H,
+    clearSelection: _
+  } = (0, h.Z)(t), w = H.size > 0, S = async (e, t, n, r) => {
     try {
       let l = await u.Z.banMultipleUsers(e, t, n, r);
       (0, c.showToast)((0, c.createToast)(g.intl.string(g.t.AsCe5O), c.ToastType.SUCCESS)), b.default.track(j.rMx.BULK_MODERATION_ACTION_COMPLETED, y(v({}, (0, C.hH)(e)), {
         action_type: p.jQ.BAN,
-        target_user_ids: [..._],
+        target_user_ids: [...H],
         mod_user_id: m.default.getId(),
         successful_user_ids: l.body.banned_users,
         location
@@ -73,27 +73,27 @@ function O(e) {
     } catch (e) {
       (0, c.showToast)((0, c.createToast)(g.intl.string(g.t.mICAWV), c.ToastType.FAILURE))
     }
-    H()
-  }, S = l.useCallback(() => {
-    H()
-  }, [H]), D = (0, r.jsxs)("span", {
+    _()
+  }, N = l.useCallback(() => {
+    _()
+  }, [_]), Z = (0, r.jsxs)("span", {
     className: x.messageContainer,
     children: [(0, r.jsx)(c.tBG, {
       size: "custom",
       width: 24,
       height: 24,
-      color: (0, a.d)(o.Z.unsafe_rawColors.PRIMARY_500).hex()
+      color: (0, a.d)(i.Z.unsafe_rawColors.PRIMARY_500).hex()
     }), (0, r.jsx)(c.Text, {
       variant: "heading-md/bold",
       color: "text-default",
       children: g.intl.format(g.t.TstoSU, {
-        count: _.size
+        count: H.size
       })
     }), (0, r.jsx)(c.Avr, {
       text: g.intl.string(g.t.yW6ZdH),
-      onClick: S
+      onClick: N
     })]
-  }), Z = (0, r.jsxs)("span", {
+  }), D = (0, r.jsxs)("span", {
     className: x.buttonContainer,
     children: [(0, r.jsx)(c.pgN, {
       size: "custom",
@@ -106,7 +106,7 @@ function O(e) {
       children: g.intl.string(g.t["2a50fH"])
     })]
   });
-  return O ? (0, r.jsx)(i.W, {
+  return O ? (0, r.jsx)(o.W, {
     component: "div",
     className: x.saveNoticeContainer,
     children: w && (0, r.jsx)(c.oXn, {
@@ -114,7 +114,7 @@ function O(e) {
         onSave: () => {
           b.default.track(j.rMx.BULK_MODERATION_ACTION_STARTED, y(v({}, (0, C.hH)(t)), {
             action_type: p.jQ.BAN,
-            target_user_ids: [..._],
+            target_user_ids: [...H],
             mod_user_id: m.default.getId(),
             location
           })), (0, c.ZDy)(async () => {
@@ -124,14 +124,14 @@ function O(e) {
             return n => (0, r.jsx)(e, y(v({}, n), {
               guildId: t,
               canBulkBan: O,
-              userIds: _,
-              onBanMultiple: N
+              userIds: H,
+              onBanMultiple: S
             }))
           })
         },
-        onSaveText: Z,
+        onSaveText: D,
         onSaveButtonColor: s.Tt.RED,
-        message: D
+        message: Z
       })
     })
   }) : null

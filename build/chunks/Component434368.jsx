@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk498607 = require("./498607.js"),
-  i = require.n(Chunk498607),
+  o = require.n(Chunk498607),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk203893 = require("./203893.jsx"),
@@ -53,23 +53,23 @@ function j(e) {
   let {
     guildId: t,
     onClose: n
-  } = e, o = (0, a.e7)([d.Z], () => d.Z.getSearchStateByGuildId(t), [t], i()), j = (0, u.dW)(t), g = l.useCallback(() => {
-    o.requireUnusualDmActivity || j(u.aY.UNUSUAL_DM_ACTIVITY), (0, C.Dr)(t, h(f({}, o), {
-      requireUnusualDmActivity: !o.requireUnusualDmActivity
+  } = e, i = (0, a.e7)([d.Z], () => d.Z.getSearchStateByGuildId(t), [t], o()), j = (0, u.dW)(t), g = l.useCallback(() => {
+    i.requireUnusualDmActivity || j(u.aY.UNUSUAL_DM_ACTIVITY), (0, C.Dr)(t, h(f({}, i), {
+      requireUnusualDmActivity: !i.requireUnusualDmActivity
     }))
-  }, [t, o, j]), x = l.useCallback(() => {
-    o.requireCommunicationDisabled || j(u.aY.COMMUNICATION_DISABLED), (0, C.Dr)(t, h(f({}, o), {
-      requireCommunicationDisabled: !o.requireCommunicationDisabled
+  }, [t, i, j]), x = l.useCallback(() => {
+    i.requireCommunicationDisabled || j(u.aY.COMMUNICATION_DISABLED), (0, C.Dr)(t, h(f({}, i), {
+      requireCommunicationDisabled: !i.requireCommunicationDisabled
     }))
-  }, [t, o, j]), v = l.useCallback(() => {
-    o.requireUnusualAccountActivity || j(u.aY.UNUSUAL_ACCOUNT_ACTIVITY), (0, C.Dr)(t, h(f({}, o), {
-      requireUnusualAccountActivity: !o.requireUnusualAccountActivity
+  }, [t, i, j]), v = l.useCallback(() => {
+    i.requireUnusualAccountActivity || j(u.aY.UNUSUAL_ACCOUNT_ACTIVITY), (0, C.Dr)(t, h(f({}, i), {
+      requireUnusualAccountActivity: !i.requireUnusualAccountActivity
     }))
-  }, [t, o, j]), y = l.useCallback(() => {
-    o.requireUsernameQuarantined || j(u.aY.USERNAME_QUARANTINED), (0, C.Dr)(t, h(f({}, o), {
-      requireUsernameQuarantined: !o.requireUsernameQuarantined
+  }, [t, i, j]), y = l.useCallback(() => {
+    i.requireUsernameQuarantined || j(u.aY.USERNAME_QUARANTINED), (0, C.Dr)(t, h(f({}, i), {
+      requireUsernameQuarantined: !i.requireUsernameQuarantined
     }))
-  }, [t, o, j]);
+  }, [t, i, j]);
   return (0, r.jsx)(s.v2r, {
     navId: "member-safety-flags",
     onClose: n,
@@ -89,7 +89,7 @@ function j(e) {
           }), b.intl.string(b.t.ZRnONz)]
         }),
         action: g,
-        checked: o.requireUnusualDmActivity
+        checked: i.requireUnusualDmActivity
       }), (0, r.jsx)(s.S89, {
         id: "toggle-require-communication-disabled",
         label: (0, r.jsxs)("div", {
@@ -103,7 +103,7 @@ function j(e) {
           }), b.intl.string(b.t.z3wbj4)]
         }),
         action: x,
-        checked: o.requireCommunicationDisabled
+        checked: i.requireCommunicationDisabled
       }), (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(s.S89, {
           id: "toggle-require-unusual-account-activity",
@@ -116,7 +116,7 @@ function j(e) {
             }), b.intl.string(b.t.DIQsDw)]
           }),
           action: v,
-          checked: o.requireUnusualAccountActivity
+          checked: i.requireUnusualAccountActivity
         }), (0, r.jsx)(s.S89, {
           id: "toggle-require-username-quarantined",
           label: (0, r.jsxs)("div", {
@@ -130,7 +130,7 @@ function j(e) {
             }), b.intl.string(b.t.Jloklp)]
           }),
           action: y,
-          checked: o.requireUsernameQuarantined
+          checked: i.requireUsernameQuarantined
         })]
       })]
     })

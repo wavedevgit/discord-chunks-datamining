@@ -17,7 +17,7 @@ function a(e) {
     incidentData: a,
     isUnderLockdown: s
   } = (0, l.mI)(t.id), c = false;
-  return (null != a && (c = (0, o.i9)(a) && n), c || s) ? (0, r.jsx)(i.Z, {
+  return (null != a && (c = (0, i.i9)(a) && n), c || s) ? (0, r.jsx)(o.Z, {
     guild: t,
     incidentData: a,
     isUnderLockdown: s,

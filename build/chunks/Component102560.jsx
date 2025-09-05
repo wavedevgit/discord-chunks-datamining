@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
-  i = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -20,7 +20,7 @@ let f = e => {
   let {
     guild: t,
     transitionState: n,
-    onClose: o
+    onClose: i
   } = e, [f, h] = l.useState(7), [j, g] = l.useState(null), [x, v] = l.useState([]), y = l.useCallback(async () => {
     g(null), g(await u.Z.updateEstimate(t.id, f, x))
   }, [f, t.id, x]);
@@ -29,7 +29,7 @@ let f = e => {
   }, [y]);
   let O = (0, a.Wu)([m.Z, C.Z], () => {
     let e = m.Z.getHighestRole(t);
-    return i()(C.Z.getSortedRoles(t.id)).filter(n => !(0, d.fI)(n) && m.Z.isRoleHigher(t, e, n)).map(e => {
+    return o()(C.Z.getSortedRoles(t.id)).filter(n => !(0, d.fI)(n) && m.Z.isRoleHigher(t, e, n)).map(e => {
       let {
         id: t,
         name: n
@@ -104,12 +104,12 @@ let f = e => {
           variant: "primary",
           text: b.intl.string(b.t["2mIlKS"]),
           onClick: () => {
-            u.Z.prune(t.id, f, x), o()
+            u.Z.prune(t.id, f, x), i()
           }
         }), (0, r.jsx)(c.zxk, {
           variant: "secondary",
           text: b.intl.string(b.t["ETE/oK"]),
-          onClick: o
+          onClick: i
         })]
       })
     })]

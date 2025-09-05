@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk954955 = require("./954955.js"),
-  i = require.n(Chunk954955),
+  o = require.n(Chunk954955),
   Chunk498607 = require("./498607.js"),
   s = require.n(Chunk498607),
   Chunk149765 = require("./149765.js"),
@@ -56,23 +56,23 @@ function y(e, t) {
 let O = Chunk647438.forwardRef(function(e, t) {
   let {
     guild: n
-  } = e, o = l.useRef(null), a = (0, u.e7)([p.Z], () => p.Z.hasDefaultSearchStateByGuildId(n.id), [n.id]), O = (0, u.e7)([m.Z], () => m.Z.can(c.$e(j.Pl.MANAGE_GUILD, j.Pl.KICK_MEMBERS), n)), _ = l.useCallback(() => {
+  } = e, i = l.useRef(null), a = (0, u.e7)([p.Z], () => p.Z.hasDefaultSearchStateByGuildId(n.id), [n.id]), O = (0, u.e7)([m.Z], () => m.Z.can(c.$e(j.Pl.MANAGE_GUILD, j.Pl.KICK_MEMBERS), n)), H = l.useCallback(() => {
     null != n && O && (0, d.ZDy)(async () => e => (0, r.jsx)(C.Z, y(v({}, e), {
       guild: n
     })))
-  }, [n, O]), H = (0, u.e7)([p.Z], () => p.Z.getSearchStateByGuildId(n.id), [n.id], s()), w = (0, b.gm)(n.id), [N, S] = l.useState(H.query), D = l.useCallback(e => {
+  }, [n, O]), _ = (0, u.e7)([p.Z], () => p.Z.getSearchStateByGuildId(n.id), [n.id], s()), w = (0, b.gm)(n.id), [S, N] = l.useState(_.query), Z = l.useCallback(e => {
     let t = e.trim();
     t.length > 0 && w(), (0, f.Dr)(n.id, {
       query: t
     })
-  }, [n.id, w]), Z = l.useMemo(() => i()(D, 300), [D]), R = l.useCallback(e => {
-    S(e), Z(e)
-  }, [Z]), L = l.useCallback(() => {
-    S(""), D("")
-  }, [D]);
+  }, [n.id, w]), D = l.useMemo(() => o()(Z, 300), [Z]), L = l.useCallback(e => {
+    N(e), D(e)
+  }, [D]), R = l.useCallback(() => {
+    N(""), Z("")
+  }, [Z]);
   return l.useImperativeHandle(t, () => ({
     resetSearchText() {
-      S("")
+      N("")
     }
   })), (0, r.jsxs)("div", {
     className: x.searchHeaderContainer,
@@ -92,10 +92,10 @@ let O = Chunk647438.forwardRef(function(e, t) {
         children: (0, r.jsx)(d.E1j, {
           size: "sm",
           className: x.searchBar,
-          query: N,
+          query: S,
           placeholder: g.intl.string(g.t.NVoAMz),
-          onChange: R,
-          onClear: L,
+          onChange: L,
+          onClear: R,
           autoComplete: "off",
           inputProps: {
             autoCapitalize: "none",
@@ -106,7 +106,7 @@ let O = Chunk647438.forwardRef(function(e, t) {
       })
     }), (0, r.jsx)("div", {
       children: (0, r.jsx)(d.yRy, {
-        targetElementRef: o,
+        targetElementRef: i,
         animation: d.yRy.Animation.FADE,
         position: "bottom",
         spacing: 4,
@@ -123,18 +123,18 @@ let O = Chunk647438.forwardRef(function(e, t) {
             var n, r, l = function(e, t) {
               if (null == e) return {};
               var n, r, l = {},
-                o = Object.keys(e);
-              for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+                i = Object.keys(e);
+              for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
               return l
             }(e, t);
             if (Object.getOwnPropertySymbols) {
-              var o = Object.getOwnPropertySymbols(e);
-              for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+              var i = Object.getOwnPropertySymbols(e);
+              for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
             }
             return l
           }(e, ["onClick"]);
           return (0, r.jsx)(d.zxk, y(v({}, n), {
-            buttonRef: o,
+            buttonRef: i,
             text: g.intl.string(g.t.XvNMNj),
             onClick: t,
             size: "sm",
@@ -152,7 +152,7 @@ let O = Chunk647438.forwardRef(function(e, t) {
           variant: "critical-secondary",
           size: "sm",
           text: g.intl.string(g.t["2mIlKS"]),
-          onClick: _,
+          onClick: H,
           "aria-label": g.intl.string(g.t.zbyz7u)
         })
       })

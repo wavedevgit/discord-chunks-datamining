@@ -39,8 +39,8 @@ function h(e) {
   let {
     onHandleEnableLockdown: n,
     onHandleReportFalseAlarm: l,
-    incidentData: s
-  } = e, c = null != (t = s.raidDetectedAt) ? t : s.dmSpamDetectedAt;
+    incidentData: o
+  } = e, s = null != (t = o.raidDetectedAt) ? t : o.dmSpamDetectedAt;
   return (0, r.jsxs)("div", {
     className: p.subheaderContainer,
     children: [(0, r.jsxs)("div", {
@@ -48,48 +48,34 @@ function h(e) {
       children: [(0, r.jsx)(a.b7C, {
         size: "md",
         className: p.shieldIcon,
-        color: o.Z.RED_345
+        color: i.Z.RED_345
       }), (0, r.jsxs)("div", {
         className: p.subHeaderText,
         children: [(0, r.jsx)(a.X6q, {
           className: p.heading,
           variant: "heading-lg/semibold",
           color: "text-danger",
-          children: (0, u.kk)(s) ? b.intl.string(b.t.raRxxc) : b.intl.string(b.t["4nbAtb"])
+          children: (0, u.kk)(o) ? b.intl.string(b.t.raRxxc) : b.intl.string(b.t["4nbAtb"])
         }), (0, r.jsx)(a.Text, {
           className: p.tagLine,
           variant: "text-sm/medium",
           children: b.intl.format(b.t["4QIIZm"], {
-            dateTime: new Date(null != c ? c : "").toLocaleString(b.intl.currentLocale, u.pQ)
+            dateTime: new Date(null != s ? s : "").toLocaleString(b.intl.currentLocale, u.pQ)
           })
         })]
       })]
     }), (0, r.jsxs)("div", {
       className: p.buttonContainer,
-      children: [(0, r.jsx)(i.zx, {
-        className: p.reportButton,
-        color: i.zx.Colors.TRANSPARENT,
+      children: [(0, r.jsx)(a.zxk, {
+        variant: "secondary",
         onClick: l,
-        children: (0, r.jsx)(a.Text, {
-          variant: "text-sm/semibold",
-          children: b.intl.string(b.t.ISiXbW)
-        })
-      }), (0, r.jsx)(a.gtL, {
-        className: p.__invalid_lockdownButton,
-        color: i.zx.Colors.RED,
+        text: b.intl.string(b.t.ISiXbW),
+        size: "sm"
+      }), (0, r.jsx)(a.zxk, {
+        variant: "critical-primary",
         onClick: n,
-        children: (0, r.jsxs)("div", {
-          className: p.lockdownButtonInnerRaidDetected,
-          children: [(0, r.jsx)(a.mBM, {
-            size: "xs",
-            color: "currentColor",
-            className: p.lockIcon
-          }), (0, r.jsx)(a.Text, {
-            className: p.lockdownButtonText,
-            variant: "text-sm/semibold",
-            children: b.intl.string(b.t.UgXhdn)
-          })]
-        })
+        size: "sm",
+        text: b.intl.string(b.t.UgXhdn)
       })]
     })]
   })
@@ -108,7 +94,7 @@ function j(e) {
       children: [(0, r.jsx)(a.b7C, {
         size: "md",
         className: p.shieldIcon,
-        color: o.Z.BRAND_360
+        color: i.Z.BRAND_360
       }), (0, r.jsxs)("div", {
         className: p.subHeaderText,
         children: [(0, r.jsx)(a.X6q, {
@@ -122,22 +108,11 @@ function j(e) {
           children: (0, u.OY)(n, l)
         })]
       })]
-    }), (0, r.jsx)(i.zx, {
-      className: p.lockdownNoticeButton,
-      color: i.zx.Colors.BRAND,
+    }), (0, r.jsx)(a.zxk, {
+      color: o.zx.Colors.BRAND,
       onClick: t,
-      children: (0, r.jsxs)("div", {
-        className: p.lockdownButtonInner,
-        children: [(0, r.jsx)(a.mBM, {
-          size: "xs",
-          color: "currentColor",
-          className: p.lockIcon
-        }), (0, r.jsx)(a.Text, {
-          className: p.lockdownButtonText,
-          variant: "text-sm/semibold",
-          children: b.intl.string(b.t.e1bMNT)
-        })]
-      })
+      text: b.intl.string(b.t.e1bMNT),
+      size: "sm"
     })]
   })
 }
@@ -147,7 +122,7 @@ function g(e) {
     onHandleEnableLockdown: t,
     onHandleReportFalseAlarm: n,
     incidentData: l,
-    guildName: s
+    guildName: o
   } = e;
   return (0, r.jsxs)("div", {
     className: p.subheaderContainer,
@@ -156,7 +131,7 @@ function g(e) {
       children: [(0, r.jsx)(a.b7C, {
         size: "md",
         className: p.shieldIcon,
-        color: o.Z.BRAND_360
+        color: i.Z.BRAND_360
       }), (0, r.jsxs)("div", {
         className: p.subHeaderText,
         children: [(0, r.jsx)(a.X6q, {
@@ -167,35 +142,20 @@ function g(e) {
         }), (0, r.jsx)(a.Text, {
           className: p.tagLine,
           variant: "text-sm/medium",
-          children: (0, u.OY)(l, s)
+          children: (0, u.OY)(l, o)
         })]
       })]
     }), (0, r.jsxs)("div", {
       className: p.buttonContainer,
-      children: [(0, r.jsx)(i.zx, {
-        className: p.reportButton,
-        color: i.zx.Colors.TRANSPARENT,
+      children: [(0, r.jsx)(a.zxk, {
         onClick: n,
-        children: (0, r.jsx)(a.Text, {
-          variant: "text-sm/semibold",
-          children: b.intl.string(b.t.ISiXbW)
-        })
-      }), (0, r.jsx)(i.zx, {
-        className: p.__invalid_lockdownButton,
-        color: i.zx.Colors.BRAND,
+        text: b.intl.string(b.t.ISiXbW),
+        variant: "secondary",
+        size: "sm"
+      }), (0, r.jsx)(a.zxk, {
         onClick: t,
-        children: (0, r.jsxs)("div", {
-          className: p.lockdownButtonInnerRaidDetected,
-          children: [(0, r.jsx)(a.mBM, {
-            size: "xs",
-            color: "currentColor",
-            className: p.lockIcon
-          }), (0, r.jsx)(a.Text, {
-            className: p.lockdownButtonText,
-            variant: "text-sm/semibold",
-            children: b.intl.string(b.t.e1bMNT)
-          })]
-        })
+        text: b.intl.string(b.t.e1bMNT),
+        size: "sm"
       })]
     })]
   })
@@ -205,8 +165,8 @@ function x(e) {
   let {
     guild: t,
     incidentData: n,
-    isUnderLockdown: o,
-    isRaidDetected: i
+    isUnderLockdown: i,
+    isRaidDetected: o
   } = e, b = l.useCallback(() => {
     (0, a.ZDy)(async () => {
       let e = {
@@ -215,7 +175,7 @@ function x(e) {
         alertType: (0, u.T1)(n)
       };
       return n => {
-        var l, o;
+        var l, i;
         return (0, r.jsx)(d.default, (l = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -233,18 +193,18 @@ function x(e) {
             })
           }
           return e
-        }({}, n), o = o = {
+        }({}, n), i = i = {
           guildId: t.id,
           analyticsData: e
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(o)).forEach(function(e) {
-          Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(o, e))
+        })(Object(i)).forEach(function(e) {
+          Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(i, e))
         }), l))
       }
     })
@@ -253,11 +213,11 @@ function x(e) {
     (0, C.kW)(e, t.id)
   }, [t.id]), f = (() => {
     switch (true) {
-      case i && o:
+      case o && i:
         return 3;
-      case i:
-        return 1;
       case o:
+        return 1;
+      case i:
         return 2;
       default:
         return 0

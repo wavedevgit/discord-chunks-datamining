@@ -18,7 +18,7 @@ function d(e) {
   } = e, n = l.useMemo(() => ({
     [a.po.LOADING]: null,
     [a.po.SUCCESS_STILL_INDEXING]: {
-      icon: (0, r.jsx)(i.Z, {}),
+      icon: (0, r.jsx)(o.Z, {}),
       message: c.intl.string(c.t.AXPbZm)
     },
     [a.po.SUCCESS_EMPTY]: {
@@ -32,7 +32,7 @@ function d(e) {
     children: [(0, r.jsx)("div", {
       className: u.__invalid_noResultsIconContainer,
       children: n.icon
-    }), (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(i.Text, {
       variant: "text-md/normal",
       color: "text-muted",
       children: n.message

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk498607 = require("./498607.js"),
-  i = require.n(Chunk498607),
+  o = require.n(Chunk498607),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk588215 = require("./588215.js"),
@@ -20,7 +20,7 @@ function p(e) {
   let {
     guildId: t,
     onClose: n
-  } = e, o = (0, a.e7)([u.Z], () => u.Z.getSearchStateByGuildId(t), [t], i()), p = l.useCallback(e => {
+  } = e, i = (0, a.e7)([u.Z], () => u.Z.getSearchStateByGuildId(t), [t], o()), p = l.useCallback(e => {
     var n, r;
     (0, d.Dr)(t, (n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -39,7 +39,7 @@ function p(e) {
         })
       }
       return e
-    }({}, o), r = r = {
+    }({}, i), r = r = {
       selectedSort: e
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var n = Object.keys(e);
@@ -51,7 +51,7 @@ function p(e) {
     })(Object(r)).forEach(function(e) {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
     }), n))
-  }, [t, o]);
+  }, [t, i]);
   return (0, r.jsx)(s.v2r, {
     navId: "members-table-sort-menu",
     onClose: () => {
@@ -78,7 +78,7 @@ function p(e) {
                 return null
             }
           }(e),
-          checked: (t = o.selectedSort) === c.d$.ORDER_BY_UNSPECIFIED || null == t ? e === c.d$.ORDER_BY_GUILD_JOINED_AT_DESC : e === t,
+          checked: (t = i.selectedSort) === c.d$.ORDER_BY_UNSPECIFIED || null == t ? e === c.d$.ORDER_BY_GUILD_JOINED_AT_DESC : e === t,
           disabled: false,
           action: () => p(e),
           group: "members-table-sort"
