@@ -8,7 +8,7 @@ require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk785717 = require("./785717.jsx"),
   Chunk299560 = require("./299560.jsx"),
-  Chunk286957 = require("./286957.js"),
+  Chunk247397 = require("./247397.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk739854 = require("./739854.js");
 
@@ -32,7 +32,7 @@ function u() {
     }), (0, Chunk951288.jsx)("ul", {
       className: Chunk739854.widgetGrid,
       "aria-label": Chunk388032.intl.string(Chunk388032.t["+EIBSE"]),
-      children: Chunk286957.rR.map(t => (0, n.jsx)("li", {
+      children: Chunk247397.rR.map(t => (0, n.jsx)("li", {
         children: (0, n.jsx)(a.Z, {
           widgetType: t,
           size: "small",

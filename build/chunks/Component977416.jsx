@@ -1,4 +1,4 @@
-/** Chunk was on 74449 **/
+/** Chunk was on 1267 **/
 /** chunk id: 977416, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -69,27 +69,27 @@ function j(e) {
     }
     return i
   }(e, ["gameName", "onClick"]);
-  let l = null != t ? t : b.intl.string(b.t.GIWFlJ),
-    c = b.intl.formatToPlainString(b.t["3mb1s7"], {
+  let l = null != t ? t : g.intl.string(g.t.GIWFlJ),
+    c = g.intl.formatToPlainString(g.t["3mb1s7"], {
       game: l
     }),
     f = (0, o.e7)([s.Z], () => s.Z.suggestedFetchIsLoading);
   return (0, u.kO)(i.applicationId) || f ? (0, n.jsx)("div", {
-    className: p.loadingCover
+    className: b.loadingCover
   }) : (0, n.jsx)(a.ua7, {
     text: c,
     children: e => (0, n.jsxs)(a.P3F, y(O({
-      className: g.addButton
+      className: p.addButton
     }, e), {
       onClick: r,
       children: [(0, n.jsx)(d.Z, y(O({
-        className: g.cover,
+        className: p.cover,
         gameName: t
       }, i), {
         disableInteraction: true
       })), (0, n.jsx)(a.svS, {
         size: "md",
-        className: g.addIcon,
+        className: p.addIcon,
         color: a.TVs.colors.WHITE
       })]
     }))
@@ -105,13 +105,13 @@ function m(e) {
     className: s
   } = e, u = (0, c.Dt)();
   return (0, n.jsxs)("aside", {
-    className: l()(g.container, s),
+    className: l()(p.container, s),
     "aria-labelledby": u,
     children: [(0, n.jsxs)("div", {
-      className: g.header,
+      className: p.header,
       children: [(0, n.jsx)(a.P3F, {
-        className: g.dismissButton,
-        "aria-label": b.intl.string(b.t["pUR+3t"]),
+        className: p.dismissButton,
+        "aria-label": g.intl.string(g.t["pUR+3t"]),
         onClick: i,
         children: (0, n.jsx)(a.Dio, {
           size: "sm",
@@ -121,7 +121,7 @@ function m(e) {
         id: u,
         variant: "text-xs/medium",
         color: "text-secondary",
-        children: b.intl.string(b.t.zMUr6e)
+        children: g.intl.string(g.t.zMUr6e)
       })]
     }), (0, n.jsx)(f.Z, {
       games: r,

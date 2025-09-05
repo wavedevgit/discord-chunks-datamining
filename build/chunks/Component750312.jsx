@@ -1,7 +1,7 @@
-/** Chunk was on 74449 **/
+/** Chunk was on 1267 **/
 /** chunk id: 750312, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,52 +16,52 @@ var Chunk951288 = require("./951288.js"),
   Chunk840367 = require("./840367.jsx"),
   Chunk546178 = require("./546178.js");
 
-function g(e) {
+function p(e) {
   let {
     userId: t,
     widget: r,
     children: l,
-    disableInteraction: g,
+    disableInteraction: p,
     className: y,
     index: j,
     trailingContent: m,
     headerTitle: v,
-    headerSubtitle: h,
-    headerActionButtons: x
-  } = e, w = (0, s.Dt)(), P = (0, c.e7)([u.default], () => u.default.getId() === t), S = i.useRef(null), E = i.useRef(null), D = P && null != j && !g, {
-    isDragging: I
+    headerSubtitle: x,
+    headerActionButtons: h
+  } = e, w = (0, s.Dt)(), P = (0, c.e7)([u.default], () => u.default.getId() === t), E = i.useRef(null), S = i.useRef(null), I = P && null != j && !p, {
+    isDragging: T
   } = (0, d.q)({
-    dropRef: S,
-    dragRef: E,
+    dropRef: E,
+    dragRef: S,
     userId: t,
     widget: r,
     index: j,
-    disableInteraction: !D
-  }), [k, N] = i.useState(false);
+    disableInteraction: !I
+  }), [D, _] = i.useState(false);
   return (0, n.jsx)(O, {
-    ref: S,
-    disableInteraction: !D,
-    onMouseEnter: () => N(true),
-    onMouseLeave: () => N(false),
+    ref: E,
+    disableInteraction: !I,
+    onMouseEnter: () => _(true),
+    onMouseLeave: () => _(false),
     children: (0, n.jsxs)("section", {
-      className: o()(p.container, y, {
-        [p.isDragging]: I
+      className: o()(b.container, y, {
+        [b.isDragging]: T
       }),
       "aria-labelledby": w,
-      children: [D && (0, n.jsx)(f.Z, {
-        buttonRef: E,
+      children: [I && (0, n.jsx)(f.Z, {
+        buttonRef: S,
         widget: r,
-        className: o()(p.dragHandleButton, {
-          [p.opacity]: k || I
+        className: o()(b.dragHandleButton, {
+          [b.opacity]: D || T
         })
-      }), (0, n.jsx)(b.Z, {
+      }), (0, n.jsx)(g.Z, {
         userId: t,
         headingId: w,
         title: v,
-        subtitle: h,
-        actionButtons: x,
+        subtitle: x,
+        actionButtons: h,
         widget: r,
-        disableInteraction: g
+        disableInteraction: p
       }), (0, n.jsxs)(a.y5, {
         children: [l, m]
       })]
@@ -78,7 +78,7 @@ let O = e => {
   } = e;
   return i ? r : (0, n.jsx)("div", {
     ref: t,
-    className: p.dragAndDropHitbox,
+    className: b.dragAndDropHitbox,
     onMouseEnter: l,
     onMouseLeave: o,
     children: r

@@ -1,4 +1,4 @@
-/** Chunk was on 74449 **/
+/** Chunk was on 1267 **/
 /** chunk id: 978369, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -62,9 +62,9 @@ function f(e) {
     tags: t,
     widgetType: r,
     applicationId: f,
-    ref: b
-  } = e, p = (0, i.useRef)(null), {
-    trackUserProfileEditAction: g
+    ref: g
+  } = e, b = (0, i.useRef)(null), {
+    trackUserProfileEditAction: p
   } = (0, o.KZ)(), O = (0, i.useMemo)(() => null != t ? t : [], [t]), y = (0, i.useCallback)(function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
       n = new Set(O);
@@ -72,37 +72,37 @@ function f(e) {
       let t = Object.values(c.aE).find(t => t.tags.includes(e));
       null != t && (t.tags.forEach(e => {
         n.delete(e)
-      }), n.add(e), g({
+      }), n.add(e), p({
         action: "TAG_ADDED",
         widgetEdited: r,
         gameId: f
       }))
-    } else n.has(e) ? (n.delete(e), g({
+    } else n.has(e) ? (n.delete(e), p({
       action: "TAG_REMOVED",
       widgetEdited: r,
       gameId: f
-    })) : (n.add(e), g({
+    })) : (n.add(e), p({
       action: "TAG_ADDED",
       widgetEdited: r,
       gameId: f
     }));
     (0, a.n$)(r, f, Array.from(n))
-  }, [O, g, r, f]), j = (0, i.useCallback)(e => {
+  }, [O, p, r, f]), j = (0, i.useCallback)(e => {
     let t = new Set(O);
     e.forEach(e => {
       t.delete(e)
-    }), g({
+    }), p({
       action: "TAG_REMOVED",
       widgetEdited: r,
       gameId: f
     }), (0, a.n$)(r, f, Array.from(t))
-  }, [O, g, r, f]);
+  }, [O, p, r, f]);
   return (0, n.jsx)(l.yRy, {
-    targetElementRef: p,
+    targetElementRef: b,
     position: "right",
     align: "top",
     onRequestOpen: () => {
-      g({
+      p({
         action: "PRESS_ADD_TAG",
         widgetEdited: r
       })
@@ -121,8 +121,8 @@ function f(e) {
     children: e => {
       var t, r;
       return (0, n.jsx)("div", {
-        ref: e => (null != e && (p.current = e, b.current = e), () => {
-          p.current = null, b.current = null
+        ref: e => (null != e && (b.current = e, g.current = e), () => {
+          b.current = null, g.current = null
         }),
         children: (0, n.jsx)(l.P3F, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {

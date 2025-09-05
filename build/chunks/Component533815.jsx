@@ -1,4 +1,4 @@
-/** Chunk was on 74449 **/
+/** Chunk was on 1267 **/
 /** chunk id: 533815, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -21,7 +21,7 @@ function d(e) {
     className: d
   } = e, {
     trackUserProfileEditAction: f
-  } = (0, a.KZ)(), b = () => {
+  } = (0, a.KZ)(), g = () => {
     (0, c.$b)(r, t.applicationId), o.uvj.announce(s.intl.string(s.t["08HmMj"])), f({
       action: "GAME_REMOVED",
       gameId: t.applicationId,
@@ -50,7 +50,7 @@ function d(e) {
         }
         return e
       }({}, e), r = r = {
-        onClick: b,
+        onClick: g,
         "aria-label": s.intl.string(s.t.HUvyDQ),
         className: l()(d, u.clickable),
         children: (0, n.jsx)(o.XHJ, {

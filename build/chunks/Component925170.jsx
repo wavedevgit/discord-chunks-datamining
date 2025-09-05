@@ -1,7 +1,7 @@
 /** Chunk was on 38576 **/
 /** chunk id: 925170, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => d
+  default: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -11,44 +11,44 @@ var Chunk951288 = require("./951288.js"),
   Chunk594174 = require("./594174.js"),
   Chunk810473 = require("./810473.js"),
   Chunk299560 = require("./299560.jsx"),
-  Chunk286957 = require("./286957.js"),
+  Chunk247397 = require("./247397.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk279994 = require("./279994.js");
 
-function d(e) {
+function b(e) {
   var t, r, {
-      onClose: d,
+      onClose: b,
       trackUserProfileEditAction: O
     } = e,
-    y = function(e, t) {
+    g = function(e, t) {
       if (null == e) return {};
-      var r, n, o = function(e, t) {
+      var r, n, i = function(e, t) {
         if (null == e) return {};
-        var r, n, o = {},
-          i = Object.keys(e);
-        for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
-        return o
+        var r, n, i = {},
+          o = Object.keys(e);
+        for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+        return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
+        var o = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
       }
-      return o
+      return i
     }(e, ["onClose", "trackUserProfileEditAction"]);
-  let g = (0, i.e7)([s.default], () => s.default.getCurrentUser()),
-    j = (0, u.Z)(),
-    m = o.useRef(new Set(j)),
-    h = p.rR.filter(e => m.current.has(e)),
-    w = h.length > 0,
-    [v, P] = o.useState(false),
+  let y = (0, o.e7)([a.default], () => a.default.getCurrentUser()),
+    j = (0, s.Z)(),
+    m = i.useRef(new Set(j)),
+    h = f.rR.filter(e => m.current.has(e)),
+    v = h.length > 0,
+    [w, P] = i.useState(false),
     k = {
-      onClick: () => d(),
-      text: f.intl.string(f.t.cpT0Cg)
+      onClick: () => b(),
+      text: p.intl.string(p.t.cpT0Cg)
     },
-    x = o.useCallback(() => {
-      P(true), d()
-    }, [d]);
-  return null == g ? null : (0, n.jsx)(l.Modal, (t = function(e) {
+    C = i.useCallback(() => {
+      P(true), b()
+    }, [b]);
+  return null == y ? null : (0, n.jsx)(l.Modal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);
@@ -66,24 +66,24 @@ function d(e) {
     }
     return e
   }({
-    title: f.intl.string(f.t.grUgR0),
-    actions: w ? [] : [k],
-    size: w ? "md" : "sm",
-    onClose: d
-  }, y), r = r = {
-    children: w ? (0, n.jsx)("ul", {
-      "aria-label": f.intl.string(f.t["+EIBSE"]),
-      className: b.options,
-      children: h.map(e => (0, n.jsx)(a.Z, {
+    title: p.intl.string(p.t.grUgR0),
+    actions: v ? [] : [k],
+    size: v ? "md" : "sm",
+    onClose: b
+  }, g), r = r = {
+    children: v ? (0, n.jsx)("ul", {
+      "aria-label": p.intl.string(p.t["+EIBSE"]),
+      className: d.options,
+      children: h.map(e => (0, n.jsx)(u.Z, {
         widgetType: e,
-        onAddWidget: x,
-        loading: v,
+        onAddWidget: C,
+        loading: w,
         trackUserProfileEditAction: O
       }, e))
     }) : (0, n.jsx)(c.Text, {
       variant: "text-md/medium",
       color: "text-secondary",
-      children: f.intl.string(f.t["1nkDOj"])
+      children: p.intl.string(p.t["1nkDOj"])
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);

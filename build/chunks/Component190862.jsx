@@ -1,4 +1,4 @@
-/** Chunk was on 74449 **/
+/** Chunk was on 1267 **/
 /** chunk id: 190862, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -66,11 +66,11 @@ let m = e => {
           widget: t
         }, r));
       case i.l.WANT_TO_PLAY_GAMES:
-        return (0, n.jsx)(p.Z, y({
+        return (0, n.jsx)(b.Z, y({
           widget: t
         }, r));
       case i.l.PLAYED_GAMES:
-        return (0, n.jsx)(b.Z, y({
+        return (0, n.jsx)(g.Z, y({
           widget: t
         }, r));
       default:
@@ -85,12 +85,12 @@ let m = e => {
     } = e, d = j(e, ["widget", "user", "disableInteraction"]);
     let f = (0, c.FX)(t),
       {
-        shouldShowSuggestions: b,
-        handleDismissSuggestions: p
+        shouldShowSuggestions: g,
+        handleDismissSuggestions: b
       } = (0, s.h)(f),
       v = (0, l.e7)([o.default], () => o.default.getId() === r.id),
-      h = v && !i && b,
-      x = (0, a.A5)(f.type),
+      x = v && !i && g,
+      h = (0, a.mR)(f),
       w = (0, a.Hy)(f, {
         isCurrentUser: v
       }),
@@ -99,17 +99,17 @@ let m = e => {
       widget: f,
       user: r,
       disableInteraction: i,
-      headerTitle: x,
+      headerTitle: h,
       headerSubtitle: w,
       headerActionButtons: v ? [(0, n.jsx)(u.Z, {
         disabled: P,
         widgetType: f.type,
         widget: f
       }, "".concat(f.type, "-browse-games-popout"))] : true,
-      trailingContent: h && (0, n.jsx)(g.Z, {
+      trailingContent: x && (0, n.jsx)(p.Z, {
         userId: r.id,
         widgetType: f.type,
-        onDismiss: p,
+        onDismiss: b,
         className: O.suggestedGames
       })
     }, d))

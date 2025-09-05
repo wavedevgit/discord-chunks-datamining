@@ -1,4 +1,4 @@
-/** Chunk was on 74449 **/
+/** Chunk was on 1267 **/
 /** chunk id: 781040, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -16,7 +16,7 @@ var Chunk323946 = require("./323946.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk640962 = require("./640962.js");
 
-function p(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -35,7 +35,7 @@ function p(e) {
   return e
 }
 
-function g(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -85,7 +85,7 @@ let O = e => {
     let {
       children: t,
       widget: i,
-      targetRef: b
+      targetRef: g
     } = e, {
       trackUserProfileEditAction: O
     } = (0, c.KZ)(), y = e => {
@@ -99,7 +99,7 @@ let O = e => {
         let {
           default: e
         } = await r.e("70887").then(r.bind(r, 37668));
-        return t => (0, n.jsx)(e, g(p({}, t), {
+        return t => (0, n.jsx)(e, p(b({}, t), {
           userId: a.default.getId(),
           widget: i,
           trackUserProfileEditAction: O
@@ -109,7 +109,7 @@ let O = e => {
       })
     };
     return (0, n.jsx)(l.yRy, {
-      targetElementRef: b,
+      targetElementRef: g,
       align: "top",
       position: "right",
       disablePointerEvents: false,
@@ -148,7 +148,7 @@ let O = e => {
       children: e => (0, n.jsx)(j, {
         targetRef: i,
         widget: t,
-        children: t => (0, n.jsx)(l.P3F, g(p({
+        children: t => (0, n.jsx)(l.P3F, p(b({
           innerRef: i,
           className: r
         }, e, t), {

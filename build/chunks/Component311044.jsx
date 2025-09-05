@@ -1,7 +1,7 @@
 /** Chunk was on 30355 **/
 /** chunk id: 311044, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,29 +17,29 @@ var Chunk951288 = require("./951288.js"),
   Chunk661462 = require("./661462.jsx"),
   Chunk527639 = require("./527639.js");
 
-function p(e) {
+function b(e) {
   let {
     user: t,
     guildId: r,
-    channelId: p,
+    channelId: b,
     onClose: j
   } = e, {
     analyticsLocations: O
   } = (0, a.ZP)(), {
     context: x,
-    trackUserProfileAction: h
+    trackUserProfileAction: y
   } = (0, o.KZ)(), {
-    mutualFriends: y,
+    mutualFriends: h,
     mutualFriendsCount: v
   } = (0, c.Z)(t), P = (0, i.Z)();
   return l.useEffect(() => {
     (0, u.Z)(t.id, P)
-  }, [t.id, P]), (0, n.jsx)(g.F, {
-    className: b.scroller,
-    children: null == y ? Array.from({
+  }, [t.id, P]), (0, n.jsx)(p.F, {
+    className: g.scroller,
+    children: null == h ? Array.from({
       length: null != v ? v : 10
     }).map((e, t) => (0, n.jsxs)("div", {
-      className: b.friendsLoadingItem,
+      className: g.friendsLoadingItem,
       children: [(0, n.jsx)(s.ZT, {
         width: 40,
         opacity: .08
@@ -47,7 +47,7 @@ function p(e) {
         width: 135,
         opacity: .08
       })]
-    }, t)) : 0 === y.length ? (0, n.jsx)(m.s_, {}) : y.map(e => {
+    }, t)) : 0 === h.length ? (0, n.jsx)(m.s_, {}) : h.map(e => {
       let {
         key: t,
         user: l,
@@ -57,10 +57,10 @@ function p(e) {
         user: l,
         status: i,
         guildId: r,
-        channelId: p,
+        channelId: b,
         onSelect: () => {
           var e, t;
-          null == j || j(), h({
+          null == j || j(), y({
             action: "PRESS_MUTUAL_FRIEND"
           }), (0, d.openUserProfileModal)((e = function(e) {
             for (var t = 1; t < arguments.length; t++) {

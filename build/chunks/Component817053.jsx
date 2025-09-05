@@ -1,8 +1,8 @@
 /** Chunk was on 30355 **/
 /** chunk id: 817053, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => p,
-  o: () => g
+  Z: () => b,
+  o: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -46,7 +46,7 @@ function m(e, t) {
   }), e
 }
 
-function g(e) {
+function p(e) {
   let {
     imageSrc: t,
     gameName: r
@@ -70,14 +70,14 @@ function g(e) {
   })
 }
 
-function b(e) {
+function g(e) {
   let {
     imageSrc: t,
     gameName: r,
     applicationId: l,
     userId: i,
-    className: b,
-    hideTooltip: p = false
+    className: g,
+    hideTooltip: b = false
   } = e, j = (0, c.Z)({
     location: "GameCover",
     applicationId: l,
@@ -86,29 +86,29 @@ function b(e) {
     trackEntryPointImpression: true
   }), O = null != r ? r : u.intl.string(u.t.GIWFlJ), x = u.intl.formatToPlainString(u.t["8QLQBw"], {
     gameName: O
-  }), h = e => p ? e() : (0, n.jsx)(s.ua7, {
+  }), y = e => b ? e() : (0, n.jsx)(s.ua7, {
     text: O,
     children: t => e(t)
   });
-  return h(null == j ? e => (0, n.jsx)("div", m(f({
-    className: b
+  return y(null == j ? e => (0, n.jsx)("div", m(f({
+    className: g
   }, e), {
-    children: (0, n.jsx)(g, {
+    children: (0, n.jsx)(p, {
       imageSrc: t,
       gameName: r
     })
   })) : e => (0, n.jsx)(s.P3F, m(f({}, e), {
     onClick: j,
     "aria-label": x,
-    className: a()(d.clickable, b),
-    children: (0, n.jsx)(g, {
+    className: a()(d.clickable, g),
+    children: (0, n.jsx)(p, {
       imageSrc: t,
       gameName: r
     })
   })))
 }
 
-function p(e) {
+function b(e) {
   var {
     applicationId: t,
     userId: r,
@@ -133,8 +133,8 @@ function p(e) {
   let c = a()(d.coverContainer, l);
   return i ? (0, n.jsx)("div", {
     className: c,
-    children: (0, n.jsx)(g, f({}, o))
-  }) : (0, n.jsx)(b, f({
+    children: (0, n.jsx)(p, f({}, o))
+  }) : (0, n.jsx)(g, f({
     className: c,
     applicationId: t,
     userId: r,

@@ -1,30 +1,15 @@
-/** Chunk was on web.js **/
-/** chunk id: 286957, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 1267 **/
+/** chunk id: 286957, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  S5: () => c,
-  Wk: () => l,
-  XV: () => d,
-  aE: () => p,
-  kd: () => _,
-  rR: () => s,
-  uX: () => u,
-  zK: () => f
+  XV: () => a,
+  aE: () => u,
+  kd: () => s,
+  zK: () => c
 });
-var Chunk379405 = require("./379405.js"),
-  Chunk296009 = require("./296009.js"),
+var n, Chunk379405 = require("./379405.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
-let s = [Chunk296009.l.FAVORITE_GAMES, Chunk296009.l.CURRENT_GAMES, Chunk296009.l.WANT_TO_PLAY_GAMES, Chunk296009.l.PLAYED_GAMES],
-  l = {
-    [Chunk296009.l.FAVORITE_GAMES]: () => Chunk388032.intl.string(Chunk388032.t.sUQar6),
-    [Chunk296009.l.CURRENT_GAMES]: () => Chunk388032.intl.string(Chunk388032.t.SqNnur),
-    [Chunk296009.l.WANT_TO_PLAY_GAMES]: () => Chunk388032.intl.string(Chunk388032.t.bWSQwc),
-    [Chunk296009.l.PLAYED_GAMES]: () => Chunk388032.intl.string(Chunk388032.t.scOKER)
-  },
-  c = [Chunk296009.l.FAVORITE_GAMES],
-  u = [Chunk296009.l.CURRENT_GAMES],
-  d = {
+let a = {
     [Chunk379405._.BETTER_THAN_YOU]: {
       getText: () => Chunk388032.intl.string(Chunk388032.t.jbIRBA),
       icon: Chunk481060.jrt
@@ -102,14 +87,12 @@ let s = [Chunk296009.l.FAVORITE_GAMES, Chunk296009.l.CURRENT_GAMES, Chunk296009.
       icon: Chunk481060.iFz
     }
   },
-  f = e => {
-    let t = d[e];
+  c = e => {
+    let t = a[e];
     return null != t ? t : null
   };
-var _ = function(e) {
-  return e.RADIO = "radio", e.CHECKBOX = "checkbox", e
-}({});
-let p = {
+var s = ((n = {}).RADIO = "radio", n.CHECKBOX = "checkbox", n);
+let u = {
   skill_level: {
     getLabel: () => Chunk388032.intl.string(Chunk388032.t.MKqADA),
     type: "radio",

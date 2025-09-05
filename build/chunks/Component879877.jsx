@@ -1,4 +1,4 @@
-/** Chunk was on 74449 **/
+/** Chunk was on 1267 **/
 /** chunk id: 879877, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -27,50 +27,50 @@ function y(e) {
     applicationId: s,
     className: u,
     disableInteraction: y = false
-  } = e, x = null != (t = null == r ? true : r.filter(e => null != (0, p.zK)(e))) ? t : [], w = x.length > 0, P = Object.values(a._).length, S = l && !y && (0, f.M8)(c) && x.length < P, {
-    trackUserProfileAction: E
-  } = (0, d.KZ)(), D = (0, i.useRef)(new Map), I = (0, i.useRef)(null), k = (0, i.useRef)(null), [N, Z] = (0, i.useState)(0), [T, C] = (0, i.useState)(false), R = h(I, k, x, D, Z);
-  if ((0, i.useEffect)(() => (R(), window.addEventListener("resize", R), () => {
-      window.removeEventListener("resize", R)
-    }), [R, null == x ? true : x.join("")]), !w && !S) return null;
-  let A = T ? x : x.slice(0, x.length - N);
+  } = e, h = null != (t = null == r ? true : r.filter(e => null != (0, b.zK)(e))) ? t : [], w = h.length > 0, P = Object.values(a._).length, E = l && !y && (0, f.M8)(c) && h.length < P, {
+    trackUserProfileAction: S
+  } = (0, d.KZ)(), I = (0, i.useRef)(new Map), T = (0, i.useRef)(null), D = (0, i.useRef)(null), [_, N] = (0, i.useState)(0), [k, Z] = (0, i.useState)(false), A = x(T, D, h, I, N);
+  if ((0, i.useEffect)(() => (A(), window.addEventListener("resize", A), () => {
+      window.removeEventListener("resize", A)
+    }), [A, null == h ? true : h.join("")]), !w && !E) return null;
+  let R = k ? h : h.slice(0, h.length - _);
   return (0, n.jsxs)("div", {
     className: o()(O.tagListContainer, u),
     children: [w && (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsx)("ul", {
         className: O.tagList,
-        "aria-label": g.intl.string(g.t.EfjTi4),
-        children: A.map(e => (0, n.jsx)(j, {
+        "aria-label": p.intl.string(p.t.EfjTi4),
+        children: R.map(e => (0, n.jsx)(j, {
           tag: e,
           isCurrentUser: l,
           applicationId: s,
           widgetType: c,
           ref: t => {
-            null != t && D.current.set(e, t)
+            null != t && I.current.set(e, t)
           },
           disableInteraction: y
         }, e))
-      }), N > 0 && (T ? (0, n.jsx)(v, {
+      }), _ > 0 && (k ? (0, n.jsx)(v, {
         onClick: () => {
-          C(false), E({
+          Z(false), S({
             action: "COLLAPSE_GAME_TAGS"
           })
         }
       }) : (0, n.jsx)(m, {
-        numHidden: N,
+        numHidden: _,
         onClick: () => {
-          C(true), E({
+          Z(true), S({
             action: "EXPAND_GAME_TAGS"
           })
         },
-        ref: I,
+        ref: T,
         disableInteraction: y
       }))]
-    }), S && (0, n.jsx)(b.Z, {
+    }), E && (0, n.jsx)(g.Z, {
       tags: r,
       widgetType: c,
       applicationId: s,
-      ref: k
+      ref: D
     })]
   })
 }
@@ -84,10 +84,10 @@ let j = e => {
       ref: a
     } = e, {
       trackUserProfileEditAction: c
-    } = (0, d.KZ)(), u = (0, p.zK)(t);
+    } = (0, d.KZ)(), u = (0, b.zK)(t);
     if (null == u) return null;
     let {
-      getText: b,
+      getText: g,
       icon: y
     } = u, j = () => {
       (0, f.RZ)(l, i, t), c({
@@ -104,9 +104,9 @@ let j = e => {
       }), (0, n.jsx)(s.Text, {
         variant: "text-xxs/medium",
         color: "text-secondary",
-        children: b()
+        children: g()
       }), r && !o && (0, n.jsx)(s.ua7, {
-        text: g.intl.string(g.t.Otv9fH),
+        text: p.intl.string(p.t.Otv9fH),
         children: e => {
           var t, r;
           return (0, n.jsx)(s.P3F, (t = function(e) {
@@ -129,8 +129,8 @@ let j = e => {
           }({}, e), r = r = {
             onClick: j,
             className: O.removeButton,
-            "aria-label": g.intl.formatToPlainString(g.t.GCn1nZ, {
-              tag: b()
+            "aria-label": p.intl.formatToPlainString(p.t.GCn1nZ, {
+              tag: g()
             }),
             children: (0, n.jsx)(s.Dio, {
               size: "xxs",
@@ -166,12 +166,12 @@ let j = e => {
       })
     }) : (0, n.jsx)(c.u, {
       asContainer: true,
-      text: g.intl.string(g.t.mriLXF),
+      text: p.intl.string(p.t.mriLXF),
       children: (0, n.jsx)(s.P3F, {
         onClick: r,
         className: O.expandButton,
         innerRef: l,
-        "aria-label": g.intl.string(g.t.mriLXF),
+        "aria-label": p.intl.string(p.t.mriLXF),
         children: (0, n.jsx)(s.Text, {
           variant: "text-xxs/medium",
           color: "none",
@@ -186,11 +186,11 @@ let j = e => {
     } = e;
     return (0, n.jsx)(c.u, {
       asContainer: true,
-      text: g.intl.string(g.t.z9VPra),
+      text: p.intl.string(p.t.z9VPra),
       children: (0, n.jsx)(s.P3F, {
         onClick: t,
         className: O.collapseButton,
-        "aria-label": g.intl.string(g.t.z9VPra),
+        "aria-label": p.intl.string(p.t.z9VPra),
         children: (0, n.jsx)(u.Z, {
           direction: u.Z.Directions.LEFT,
           width: 12,
@@ -200,27 +200,27 @@ let j = e => {
       })
     })
   },
-  h = (e, t, r, n, l) => (0, i.useCallback)(() => {
+  x = (e, t, r, n, l) => (0, i.useCallback)(() => {
     var i, o, a, c;
     if (null == r) return void l(0);
     let s = null != (a = null == (i = e.current) ? true : i.getBoundingClientRect().width) ? a : 0,
       u = null != (c = null == (o = t.current) ? true : o.getBoundingClientRect().width) ? c : 0,
       d = u > 0 ? 8 : 4,
       f = 0,
-      b = 0,
-      p = n.current;
+      g = 0,
+      b = n.current;
     for (let e = 0; e < r.length; e++) {
-      let t = p.get(r[e]);
+      let t = b.get(r[e]);
       if (null != t) {
-        if ((b += t.offsetWidth + 4) > 296) break;
+        if ((g += t.offsetWidth + 4) > 296) break;
         f++
       }
     }
-    b = 0;
+    g = 0;
     for (let e = f; e < r.length; e++) {
-      let t = p.get(r[e]);
+      let t = b.get(r[e]);
       if (null != t) {
-        if ((b += t.offsetWidth + 4) > 296 - s - u - d) break;
+        if ((g += t.offsetWidth + 4) > 296 - s - u - d) break;
         f++
       }
     }

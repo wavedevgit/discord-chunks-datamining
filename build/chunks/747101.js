@@ -1,12 +1,12 @@
-/** Chunk was on 74449 **/
+/** Chunk was on 1267 **/
 /** chunk id: 747101, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  FX: () => p,
+  FX: () => b,
   ZP: () => f,
-  kN: () => b,
+  kN: () => g,
   kO: () => u,
   qU: () => d
-}), require("./539854.js"), require("./388685.js");
+}), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk224706 = require("./224706.js"),
@@ -60,16 +60,16 @@ function d(e) {
 
 function f(e) {
   d(n.useMemo(() => (function(e) {
-    let t = [];
+    let t = new Set;
     return e.forEach(e => {
       e.games.forEach(e => {
-        t.push(e.applicationId)
+        t.add(e.applicationId)
       })
-    }), [...new Set(t)]
+    }), [...t]
   })(e), [e]))
 }
 
-function b(e) {
+function g(e) {
   let [t, r] = (0, i.Wu)([o.Z], () => [o.Z.numNoDataAvailable(), o.Z.numSupplementalGames()]);
   return n.useMemo(() => {
     let t = {};
@@ -79,8 +79,8 @@ function b(e) {
   }, [e, t, r])
 }
 
-function p(e) {
-  let t = b(e.games.map(e => e.applicationId));
+function b(e) {
+  let t = g(e.games.map(e => e.applicationId));
   return n.useMemo(() => s(c({}, e), {
     games: e.games.map(e => {
       let r = t[e.applicationId];
