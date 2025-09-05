@@ -1,12 +1,11 @@
 /** Chunk was on 18831 **/
-/** chunk id: 586449, original params: e,t,i (module,exports,require) **/
+/** chunk id: 586449, original params: e,t,n (module,exports,require) **/
 module.exports = {
   classificationContainer: "classificationContainer_a48d6b",
-  classificationHeader: "classificationHeader_a48d6b",
-  classificationActionsTakenContainer: "classificationActionsTakenContainer_a48d6b",
+  section: "section_a48d6b",
+  body: "body_a48d6b",
   classificationActionsTakenRow: "classificationActionsTakenRow_a48d6b",
   classificationActionsTakenList: "classificationActionsTakenList_a48d6b",
-  classificationActionExplanationContainer: "classificationActionExplanationContainer_a48d6b",
   guidelinesExplanation: "guidelinesExplanation_a48d6b",
   classificationLetUsKnowContainer: "classificationLetUsKnowContainer_a48d6b",
   classificationPolicyCard: "classificationPolicyCard_a48d6b",

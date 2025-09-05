@@ -26,7 +26,8 @@ async function c(e) {
   try {
     if (n = o.x.create(t), null == n) throw Error("DiscordImage.create returned null");
     if (n.hasTransparency()) return s.verbose("[webp] png uses actual transparency - skipping conversion"), "has_transparency";
-    if (n.isAnimated()) return s.verbose("[webp] png is animated (apng) - skipping conversion"), "animated_image"
+    if (n.isAnimated()) return s.verbose("[webp] png is animated (apng) - skipping conversion"), "animated_image";
+    if (n.isPng8()) return s.verbose("[webp] png is PNG8 format (indexed color) - skipping conversion"), "png8_format"
   } catch (e) {
     return s.warn("[WebP] PNG analysis failed:", e), "corrupted_file"
   }
