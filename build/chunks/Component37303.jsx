@@ -42,21 +42,21 @@ function m(e) {
     initiallyExpanded: p,
     contentPosition: h,
     sourceQuestContent: m
-  } = e, [g, E] = i.useState(false), b = i.useCallback(() => E(true), []), y = i.useCallback(() => E(false), []), O = (0, o.tP)(t), {
-    containerRef: v,
-    size: I,
-    height: T
+  } = e, g = (0, o.tP)(t), {
+    containerRef: E,
+    size: b,
+    height: y
   } = (0, f.h)(), {
-    expansionSpring: S,
-    isAnimating: A,
-    isExpanded: C,
-    toggleExpanded: N
+    expansionSpring: O,
+    isAnimating: v,
+    isExpanded: I,
+    toggleExpanded: T
   } = (0, f.O)({
     initiallyExpanded: p || (0, c.iM)({
       location: n,
       quest: t
     })
-  }), R = null != T ? T : c.U0;
+  }), [S, A] = i.useState(false), C = () => A(true), N = () => A(false), R = null != y ? y : c.U0;
   return (0, r.jsx)(l.A, {
     questOrQuests: t,
     questContent: n,
@@ -65,39 +65,40 @@ function m(e) {
     sourceQuestContent: m,
     children: e => (0, r.jsx)(a.animated.div, {
       style: {
-        maxHeight: n === s.jn.QUESTS_EMBED ? true : S.to({
+        maxHeight: n === s.jn.QUESTS_EMBED ? true : O.to({
           range: [0, 1],
           output: [c.DJ, R]
         })
       },
       className: _.questsCard,
-      onFocus: b,
-      onMouseEnter: b,
-      onBlur: y,
-      onMouseLeave: y,
+      onMouseEnter: C,
+      onMouseLeave: N,
+      onFocus: C,
+      onBlur: N,
       children: (0, r.jsxs)("div", {
         ref: t => {
-          e.current = t, v.current = t
+          e.current = t, E.current = t
         },
         children: [(0, r.jsx)(d.Z, {
-          isQuestExpired: O,
+          isQuestExpired: g,
           location: n,
           quest: t,
-          size: I,
-          expansionSpring: S,
-          isAnimating: A,
-          isExpanded: C,
+          size: b,
+          expansionSpring: O,
+          isInteracting: S,
+          isAnimating: v,
+          isExpanded: I,
           contentPosition: h,
-          toggleExpanded: N,
+          toggleExpanded: T,
           sourceQuestContent: m
         }), (0, r.jsx)(u.Z, {
           quest: t,
-          isQuestExpired: O,
+          isQuestExpired: g,
           location: n,
-          size: I,
-          isFocused: g,
-          isExpanded: C,
-          isAnimating: A,
+          size: b,
+          isFocused: S,
+          isExpanded: I,
+          isAnimating: v,
           contentPosition: h,
           sourceQuestContent: m
         })]
