@@ -1,7 +1,7 @@
 /** Chunk was on 30355 **/
 /** chunk id: 778414, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  C: () => w,
+  C: () => I,
   Z: () => A
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -89,39 +89,39 @@ function S() {
   })
 }
 
-function I(e) {
+function w(e) {
   let {
     user: t,
     guildId: r,
     channelId: i
-  } = e, s = (0, p.Z)(t.id), m = (0, a.e7)([u.default], () => u.default.getId() === t.id), j = (() => {
+  } = e, s = (0, b.Z)(t.id), m = (0, a.e7)([u.default], () => u.default.getId() === t.id), j = (() => {
     let [e, t] = (0, a.Wu)([d.Z], () => [d.Z.ipCountryCode, d.Z.ipCountryCodeRequest]), r = (0, c.U)();
     return l.useEffect(() => {
       null == e && null == t && r && (0, o.GE)()
     }, [e, t, r]), "GB" === e && r
   })(), O = 0 === s.length && m;
-  return ((0, g.ZP)(s), (0, f.J)(m, s), O) ? (0, n.jsx)(x.Z, {}) : (0, n.jsxs)(n.Fragment, {
+  return ((0, g.ZP)(s), (0, f.J)(m, s), O) ? (0, n.jsx)(h.Z, {}) : (0, n.jsxs)(n.Fragment, {
     children: [m && j && (0, n.jsx)(S, {}), s.map((e, l) => (0, n.jsx)(A, {
       widget: e,
       user: t,
       guildId: r,
       channelId: i,
       index: l
-    }, e.id)), m && (0, n.jsx)(b.Z, {})]
+    }, e.id)), m && (0, n.jsx)(p.Z, {})]
   })
 }
 
-function w(e) {
+function I(e) {
   let t = l.useRef(null);
   return (0, m.r)({
     container: t.current
-  }), (0, n.jsxs)(h.F, {
+  }), (0, n.jsxs)(x.F, {
     "data-scroller": true,
     scrollerRef: t,
-    className: y.scroller,
+    className: v.scroller,
     fade: true,
     children: [(0, n.jsx)(j.Z, {
       scrollerRef: t
-    }), (0, n.jsx)(I, P({}, e)), (0, n.jsx)(s.c43, {})]
+    }), (0, n.jsx)(w, P({}, e)), (0, n.jsx)(s.c43, {})]
   })
 }

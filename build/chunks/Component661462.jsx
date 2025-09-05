@@ -2,7 +2,7 @@
 /** chunk id: 661462, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   F: () => j,
-  Z: () => h
+  Z: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk228168 = require("./228168.js"),
   Chunk883101 = require("./883101.js");
 
-function p(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -36,7 +36,7 @@ function p(e) {
   return e
 }
 
-function b(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -69,7 +69,7 @@ function j(e) {
     }
     return l
   }(e, ["children", "className", "scrollerRef"]);
-  return (0, n.jsx)(s.Ttm, b(p({
+  return (0, n.jsx)(s.Ttm, p(b({
     ref: l,
     className: a()(g.tabPanelScroller, r),
     fade: true
@@ -112,7 +112,7 @@ function O(e) {
   }) : null
 }
 
-function h(e) {
+function x(e) {
   var t;
   let {
     user: r,
@@ -125,12 +125,12 @@ function h(e) {
     initialSubsection: m,
     onClose: j
   } = e, {
-    trackUserProfileAction: h
+    trackUserProfileAction: x
   } = (0, o.KZ)(), [{
-    section: x,
-    subsection: v,
-    text: y
-  }, P] = l.useState(b(p({}, null != (t = d.find(e => {
+    section: h,
+    subsection: y,
+    text: v
+  }, P] = l.useState(p(b({}, null != (t = d.find(e => {
     let {
       section: t
     } = e;
@@ -148,9 +148,9 @@ function h(e) {
       children: (0, n.jsx)(s.njP, {
         type: "top",
         look: "custom",
-        selectedItem: x,
+        selectedItem: h,
         onItemSelect: e => {
-          h({
+          x({
             action: "PRESS_SECTION",
             section: e
           }), P(t => {
@@ -166,8 +166,8 @@ function h(e) {
         }, e.section))
       })
     }), (0, n.jsx)(s.njP.Panel, {
-      id: x,
-      "aria-label": y,
+      id: h,
+      "aria-label": v,
       className: g.tabBarPanel,
       children: (0, n.jsx)(O, {
         user: r,
@@ -175,8 +175,8 @@ function h(e) {
         displayProfile: a,
         guildId: c,
         channelId: u,
-        section: x,
-        subsection: v,
+        section: h,
+        subsection: y,
         onClose: j
       })
     })]

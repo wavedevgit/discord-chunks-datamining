@@ -1,7 +1,7 @@
 /** Chunk was on 30355 **/
 /** chunk id: 311044, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,29 +17,29 @@ var Chunk951288 = require("./951288.js"),
   Chunk661462 = require("./661462.jsx"),
   Chunk443680 = require("./443680.js");
 
-function b(e) {
+function p(e) {
   let {
     user: t,
     guildId: r,
-    channelId: b,
+    channelId: p,
     onClose: j
   } = e, {
     analyticsLocations: O
   } = (0, a.ZP)(), {
-    context: h,
-    trackUserProfileAction: x
+    context: x,
+    trackUserProfileAction: h
   } = (0, o.KZ)(), {
-    mutualFriends: v,
-    mutualFriendsCount: y
+    mutualFriends: y,
+    mutualFriendsCount: v
   } = (0, c.Z)(t), P = (0, i.Z)();
   return l.useEffect(() => {
     (0, u.Z)(t.id, P)
   }, [t.id, P]), (0, n.jsx)(g.F, {
-    className: p.scroller,
-    children: null == v ? Array.from({
-      length: null != y ? y : 10
+    className: b.scroller,
+    children: null == y ? Array.from({
+      length: null != v ? v : 10
     }).map((e, t) => (0, n.jsxs)("div", {
-      className: p.friendsLoadingItem,
+      className: b.friendsLoadingItem,
       children: [(0, n.jsx)(s.ZT, {
         width: 40,
         opacity: .08
@@ -47,7 +47,7 @@ function b(e) {
         width: 135,
         opacity: .08
       })]
-    }, t)) : 0 === v.length ? (0, n.jsx)(m.s_, {}) : v.map(e => {
+    }, t)) : 0 === y.length ? (0, n.jsx)(m.s_, {}) : y.map(e => {
       let {
         key: t,
         user: l,
@@ -57,10 +57,10 @@ function b(e) {
         user: l,
         status: i,
         guildId: r,
-        channelId: b,
+        channelId: p,
         onSelect: () => {
           var e, t;
-          null == j || j(), x({
+          null == j || j(), h({
             action: "PRESS_MUTUAL_FRIEND"
           }), (0, d.openUserProfileModal)((e = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -79,7 +79,7 @@ function b(e) {
               })
             }
             return e
-          }({}, h), t = t = {
+          }({}, x), t = t = {
             userId: l.id,
             sourceAnalyticsLocations: O
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {

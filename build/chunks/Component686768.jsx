@@ -1,11 +1,12 @@
 /** Chunk was on 22447 **/
-/** chunk id: 686768, original params: n,t,e (module,exports,require) **/
+/** chunk id: 686768, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => b
+  default: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk772848 = require("./772848.js"),
+  Chunk667202 = require("./667202.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk138201 = require("./138201.jsx"),
   Chunk63063 = require("./63063.js"),
@@ -15,83 +16,81 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk800530 = require("./800530.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk740076 = require("./740076.js");
-let b = function(n) {
+  Chunk740076 = require("./740076.js"),
+  Chunk736056 = require("./736056.js");
+let h = function(e) {
   let {
     transitionState: t,
-    entryPoint: e,
-    onClose: b
-  } = n, {
-    loading: h,
-    initiateAgeVerification: p
-  } = (0, u.WD)(b, true), R = r.useMemo(() => (0, i.Z)(), []);
-  r.useEffect(() => {
-    (0, d.lA)(R, d.d_.RETRY, e)
-  }, [R, e]);
-  let j = r.useMemo(() => [{
-    title: _.intl.string(_.t.FYkioq),
-    description: _.intl.string(_.t.xMfbR0),
-    buttonText: _.intl.string(_.t.RtOE1t),
-    buttonVariant: "primary",
-    buttonIcon: a.Gr1,
-    buttonLoading: h,
+    entryPoint: n,
+    onClose: h
+  } = e, {
+    loading: g,
+    initiateAgeVerification: v
+  } = (0, b.WD)(h, true), y = o.useMemo(() => (0, i.Z)(), []);
+  o.useEffect(() => {
+    (0, u.lA)(y, u.d_.RETRY, n)
+  }, [y, n]);
+  let _ = o.useMemo(() => [{
+    title: f.intl.string(f.t.FYkioq),
+    description: f.intl.string(f.t.xMfbR0),
+    buttonText: f.intl.string(f.t.RtOE1t),
+    buttonLoading: g,
     onButtonPress: () => {
-      p(d.cU.RETRY_MODAL), (0, d.x3)(R, d.d_.RETRY, d.sU.GET_STARTED)
+      v(u.cU.RETRY_MODAL), (0, u.x3)(y, u.d_.RETRY, u.sU.GET_STARTED)
     }
   }, {
-    title: _.intl.string(_.t["LZO+HR"]),
-    description: _.intl.string(_.t.N2mHaG),
-    buttonText: _.intl.string(_.t["LZO+HR"]),
-    buttonIcon: a.Gr1,
+    title: f.intl.string(f.t["LZO+HR"]),
+    description: f.intl.string(f.t.N2mHaG),
+    buttonText: f.intl.string(f.t["LZO+HR"]),
+    buttonLoading: g,
     onButtonPress: () => {
-      c.Z.openUrl(m.sQ.APPEALS_LINK), (0, d.x3)(R, d.d_.RETRY, d.sU.MANUAL_REVIEW_REQUEST)
+      d.Z.openUrl(m.sQ.APPEALS_LINK), (0, u.x3)(y, u.d_.RETRY, u.sU.MANUAL_REVIEW_REQUEST)
     }
-  }], [p, R, h]);
-  return (0, o.jsx)(a.Y0X, {
+  }], [v, y, g]);
+  return (0, r.jsx)(l.I, {
     transitionState: t,
-    className: f.root,
-    parentComponent: "AgeVerificationRetryModal",
-    children: (0, o.jsxs)(a.hzk, {
-      className: f.content,
-      children: [(0, o.jsxs)("div", {
-        className: f.headersContainer,
-        children: [(0, o.jsx)(a.X6q, {
-          variant: "heading-xl/bold",
-          children: _.intl.string(_.t["5l3R/v"])
-        }), (0, o.jsx)(a.X6q, {
-          variant: "heading-md/medium",
-          color: "text-default",
-          children: _.intl.string(_.t.O7SO0N)
-        }), (0, o.jsx)(a.olH, {
-          className: f.modalClose,
-          onClick: b
-        })]
-      }), j.map((n, t) => (0, o.jsx)(l.JZ, function(n) {
+    onClose: h,
+    gradientColor: "blue",
+    graphic: {
+      src: j.Z,
+      type: "image"
+    },
+    title: f.intl.string(f.t["5l3R/v"]),
+    subtitle: f.intl.string(f.t.O7SO0N),
+    children: (0, r.jsxs)(c.Kqy, {
+      direction: "vertical",
+      gap: 16,
+      children: [(0, r.jsx)(c.Wn, {
+        messageType: c.QYI.INFO,
+        className: p.infoBox,
+        textColor: "text-feedback-info",
+        textVariant: "text-sm/medium",
+        children: f.intl.string(f.t.El4aXl)
+      }), _.map((e, t) => (0, r.jsx)(a.JZ, function(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var e = null != arguments[t] ? arguments[t] : {},
-            o = Object.keys(e);
-          "function" == typeof Object.getOwnPropertySymbols && (o = o.concat(Object.getOwnPropertySymbols(e).filter(function(n) {
-            return Object.getOwnPropertyDescriptor(e, n).enumerable
-          }))), o.forEach(function(t) {
-            var o;
-            o = e[t], t in n ? Object.defineProperty(n, t, {
-              value: o,
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : n[t] = o
+            }) : e[t] = r
           })
         }
-        return n
+        return e
       }({
-        buttonIconPosition: "end"
-      }, n), t)), (0, o.jsx)(a.Text, {
+        variant: "clickable"
+      }, e), t)), (0, r.jsx)(c.Text, {
         variant: "text-xs/medium",
         color: "text-muted",
-        className: f.learnMore,
-        children: _.intl.format(_.t["L+FgkZ"], {
+        children: f.intl.format(f.t["L+FgkZ"], {
           handleOnHelpUrlHook: () => {
-            c.Z.openUrl(s.Z.getArticleURL(x.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, d.x3)(R, d.d_.RETRY, d.sU.LEARN_MORE)
+            d.Z.openUrl(s.Z.getArticleURL(x.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, u.x3)(y, u.d_.RETRY, u.sU.LEARN_MORE)
           }
         })
       })]

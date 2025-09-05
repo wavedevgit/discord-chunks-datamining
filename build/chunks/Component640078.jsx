@@ -26,11 +26,11 @@ let c = function(e) {
   let m = null == r || null == (t = r.current) ? true : t.getBoundingClientRect();
   if (null == m || null == f) return null;
   let g = d.x - m.left,
-    p = d.y - m.top;
+    b = d.y - m.top;
   return (0, n.jsx)("div", {
     className: o.container,
     style: {
-      transform: "translate(".concat(g, "px, ").concat(p, "px)")
+      transform: "translate(".concat(g, "px, ").concat(b, "px)")
     },
     children: (0, n.jsx)(s.Z, {
       widget: u.widget,

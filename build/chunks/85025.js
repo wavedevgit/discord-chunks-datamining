@@ -1,12 +1,12 @@
 /** Chunk was on 49979 **/
 /** chunk id: 85025, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  O: () => o
+  O: () => i
 });
 var Chunk630388 = require("./630388.js"),
   Chunk981631 = require("./981631.js");
 
-function o(e) {
+function i(e) {
   if (null != e) return {
     guildPresences: (0, a.yE)(e, r.udG.GATEWAY_PRESENCE),
     guildMembers: (0, a.yE)(e, r.udG.GATEWAY_GUILD_MEMBERS),

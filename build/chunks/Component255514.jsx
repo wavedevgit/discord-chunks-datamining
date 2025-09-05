@@ -190,7 +190,7 @@ let K = e => {
           } = e;
           return U.O.includes(t)
         })
-      }(t) && (0, r.jsxs)(k.Z, {
+      }(t) && (0, r.jsxs)(E.Z, {
         children: [eS && (0, r.jsx)(Z.Z, {
           user: "user" === n.name ? n.record : n.record.author,
           channelId: ej,
@@ -200,7 +200,7 @@ let K = e => {
           channelId: ej,
           reportId: en,
           reportType: n
-        }), !eS && null != X(t, "mute_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name || "report_to_mod_message" === n.name) && (0, r.jsx)(E.Z, {
+        }), !eS && null != X(t, "mute_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name || "report_to_mod_message" === n.name) && (0, r.jsx)(k.Z, {
           user: "user" === n.name ? n.record : n.record.author,
           channelId: ej,
           reportId: en

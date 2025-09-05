@@ -1,7 +1,7 @@
 /** Chunk was on 80144 **/
 /** chunk id: 634997, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => C
+  default: () => R
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,68 +22,68 @@ var Chunk951288 = require("./951288.js"),
   Chunk800530 = require("./800530.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk678189 = require("./678189.js");
-let C = function(e) {
+let R = function(e) {
   let {
     transitionState: n,
     entryPoint: t,
-    onClose: C
-  } = e, [T, v] = o.useState(a.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), j = o.useRef(T), [I, M] = (0, c.US)([T], true, true), {
-    loading: N,
-    initiateAgeVerification: g
-  } = (0, R.WD)(C), G = o.useMemo(() => (0, i.Z)(), []), U = o.useRef(false);
+    onClose: R
+  } = e, [y, A] = o.useState(l.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), C = o.useRef(y), [O, g] = (0, s.US)([y], true, true), {
+    loading: T,
+    initiateAgeVerification: I
+  } = (0, _.WD)(R), N = o.useMemo(() => (0, i.Z)(), []), k = o.useRef(false);
   return o.useEffect(() => {
-    j.current = I
-  }, [I]), o.useLayoutEffect(() => () => {
-    if (U.current) return;
-    let e = j.current;
-    null != e && (U.current = true, x.Z.maybeOpenAgeVerificationUserFeedback({
+    C.current = O
+  }, [O]), o.useLayoutEffect(() => () => {
+    if (k.current) return;
+    let e = C.current;
+    null != e && (k.current = true, x.Z.maybeOpenAgeVerificationUserFeedback({
       location: "age_verification_get_started_modal",
       visibleContent: e
     }))
   }, []), o.useEffect(() => {
-    (0, f.lA)(G, f.d_.PRIMARY, t)
-  }, [G, t]), (0, r.jsxs)(s.Modal, {
+    (0, f.lA)(N, f.d_.PRIMARY, t)
+  }, [N, t]), (0, r.jsxs)(a.Modal, {
     transitionState: n,
-    onClose: C,
-    title: b.intl.string(b.t.JHNunp),
-    subtitle: b.intl.string(b.t["+BLIGh"]),
+    onClose: R,
+    title: v.intl.string(v.t.JHNunp),
+    subtitle: v.intl.string(v.t["+BLIGh"]),
     actions: [{
-      text: b.intl.string(b.t.SJMnkZ),
-      loading: N,
-      icon: l.Gr1,
+      text: v.intl.string(v.t.SJMnkZ),
+      loading: T,
+      icon: c.Gr1,
       iconPosition: "end",
       onClick: async () => {
-        (0, f.x3)(G, f.d_.PRIMARY, f.sU.GET_STARTED), v(a.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE), await g(f.cU.GET_STARTED_MODAL)
+        (0, f.x3)(N, f.d_.PRIMARY, f.sU.GET_STARTED), A(l.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE), await I(f.cU.GET_STARTED_MODAL)
       }
     }],
-    actionBarInput: (0, r.jsxs)(d.Z, {
+    actionBarInput: (0, r.jsxs)(u.Z, {
       onClick: () => {
-        m.Z.openUrl(_.Z.getArticleURL(h.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, f.x3)(G, f.d_.PRIMARY, f.sU.LEARN_MORE)
+        b.Z.openUrl(m.Z.getArticleURL(j.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, f.x3)(N, f.d_.PRIMARY, f.sU.LEARN_MORE)
       },
-      className: p.learnMoreButton,
-      children: [b.intl.string(b.t["aA6q//"]), (0, r.jsx)(l.Gr1, {
+      className: E.learnMoreButton,
+      children: [v.intl.string(v.t["aA6q//"]), (0, r.jsx)(c.Gr1, {
         size: "xs",
         color: "currentColor"
       })]
     }),
-    children: [(0, E.uH)(G).map((e, n) => {
+    children: [(0, h.uH)(N).map((e, n) => {
       let {
         title: t,
         description: o
       } = e;
-      return (0, r.jsx)(u.JZ, {
+      return (0, r.jsx)(d.JZ, {
         title: t,
         description: o,
         listType: "numbered",
         index: n
       }, n)
-    }), (0, r.jsx)(l.Text, {
+    }), (0, r.jsx)(c.Text, {
       variant: "text-xs/medium",
       color: "text-muted",
-      className: p.requestContainer,
-      children: b.intl.format(b.t.pJAxgY, {
+      className: E.requestContainer,
+      children: v.intl.format(v.t.pJAxgY, {
         handleOnRequestHook: () => {
-          m.Z.openUrl(A.sQ.APPEALS_LINK), (0, f.x3)(G, f.d_.PRIMARY, f.sU.MANUAL_REVIEW_REQUEST)
+          b.Z.openUrl(p.sQ.APPEALS_LINK), (0, f.x3)(N, f.d_.PRIMARY, f.sU.MANUAL_REVIEW_REQUEST)
         }
       })
     })]

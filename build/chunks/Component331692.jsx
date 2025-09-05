@@ -1,7 +1,7 @@
 /** Chunk was on 75435 **/
 /** chunk id: 331692, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => a
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -9,10 +9,10 @@ var Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
   Chunk103879 = require("./103879.js"),
   Chunk800530 = require("./800530.js");
-let s = {
+let a = {
   open(t, e) {
     (0, r.ZDy)(async () => {
-      o.Z.dispatch({
+      l.Z.dispatch({
         type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_OPEN"
       });
       let {
