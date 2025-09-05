@@ -2,49 +2,54 @@
 /** chunk id: 526167, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  G6: () => y,
-  hY: () => m,
-  og: () => b,
-  rO: () => O,
-  vu: () => f
+  G6: () => I,
+  hY: () => g,
+  og: () => v,
+  rO: () => T,
+  vu: () => _
 });
-var r, i, a, o, s, Chunk525654 = require("./525654.js"),
-  c = require.n(Chunk525654);
-let u = (null != (r = c().name) ? r : "unknown").toLowerCase(),
-  d = "chrome" === u.toLowerCase() ? parseInt(null != (i = c().version) ? i : "", 10) : false;
+var r, i, a, o, s, l, Chunk525654 = require("./525654.js"),
+  u = require.n(Chunk525654);
+let d = (null != (r = u().name) ? r : "unknown").toLowerCase(),
+  f = "chrome" === d.toLowerCase() ? parseInt(null != (i = u().version) ? i : "", 10) : false;
 
-function f() {
-  return d
+function _() {
+  return f
 }
-let _ = "electron" === u.toLowerCase() ? parseInt(null != (a = c().version) ? a : "", 10) : false;
+let p = "electron" === d.toLowerCase() ? parseInt(null != (a = u().version) ? a : "", 10) : false;
 
-function p() {
-  return _
+function h() {
+  return p
 }
-let h = "firefox" === u.toLowerCase() ? parseInt(null != (o = c().version) ? o : "", 10) : false;
+let m = "firefox" === d.toLowerCase() ? parseInt(null != (o = u().version) ? o : "", 10) : false;
 
-function m() {
-  return h
+function g() {
+  return m
 }
-let g = "edge" === u.toLowerCase() ? parseInt(null != (s = c().version) ? s : "", 10) : false;
-
-function E() {
-  return g
-}
+let E = "edge" === d.toLowerCase() ? parseInt(null != (s = u().version) ? s : "", 10) : false;
 
 function b() {
-  return false !== f() || false !== p() || false !== m() || false !== E()
+  return E
+}
+let y = "safari" === d.toLowerCase() ? parseInt(null != (l = u().version) ? l : "", 10) : false;
+
+function O() {
+  return y
 }
 
-function y() {
+function v() {
+  return false !== _() || false !== h() || false !== g() || false !== b() || O() >= 14
+}
+
+function I() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : navigator.userAgent,
     t = module.toLowerCase();
   return false !== exports.indexOf("safari") && false === exports.indexOf("chrome") && false !== exports.indexOf("version/")
 }
 
-function O() {
+function T() {
   var e;
   let t = window.navigator,
     n = (null == (e = exports.mediaCapabilities) ? true : module.decodingInfo) != null;
-  return y(exports.userAgent) && require
+  return I(exports.userAgent) && require
 }

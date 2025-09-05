@@ -8,7 +8,9 @@ var Chunk451467 = require("./451467.js"),
   Chunk37113 = require("./37113.js");
 
 function a(e, t, n) {
-  for (let a of i.no[e])
-    if ((0, r.Z)(e, a.resolution, a.fps, t, n)) return [a.resolution, a.fps];
+  let a = i.no[e];
+  if (null == a) return null;
+  for (let i of a)
+    if ((0, r.Z)(e, i.resolution, i.fps, t, n)) return [i.resolution, i.fps];
   return null
 }

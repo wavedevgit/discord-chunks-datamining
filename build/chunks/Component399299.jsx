@@ -228,7 +228,7 @@ function q(e) {
     onChangeGuild: M,
     onChangeSound: L,
     onChangePreviewDisabled: B
-  } = e, F = (0, o.e7)([C.Z, v.Z], () => v.Z.getChannel(C.Z.getVoiceChannelId())), q = (0, o.e7)([P.Z], () => P.Z.GPUDriversOutdated), Q = (0, o.e7)([P.Z], () => P.Z.problematicGPUDriver), $ = (0, o.e7)([S.default], () => S.default.getCurrentUser()), ee = (0, E.Z)();
+  } = e, F = (0, o.e7)([S.Z, v.Z], () => v.Z.getChannel(S.Z.getVoiceChannelId())), q = (0, o.e7)([P.Z], () => P.Z.GPUDriversOutdated), Q = (0, o.e7)([P.Z], () => P.Z.problematicGPUDriver), $ = (0, o.e7)([C.default], () => C.default.getCurrentUser()), ee = (0, E.Z)();
   null != t && t.id.startsWith("screen") && !y.Z.supportsScreenSoundshare() && (ee = W.intl.string(W.t["1b0Gm5"]));
   let et = !!(null == t ? true : t.id.startsWith("camera")),
     en = null != $ && $.verified && !$.bot,

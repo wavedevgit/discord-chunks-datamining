@@ -67,7 +67,7 @@ function W(e) {
 }
 
 function z(e, t, n, r) {
-  let i = (0, O.isWindows)() ? (0, T.Z)(g.ZP, S.Z) : null,
+  let i = (0, O.isWindows)() ? (0, T.Z)(g.ZP, C.Z) : null,
     l = g.ZP.getRunningGames(),
     s = null == n ? true : n.split(":")[1],
     o = e.id.split(":")[1];
@@ -107,7 +107,7 @@ function H(e) {
     enableGoLiveCaptureCard: l
   } = w.Z.useExperiment({
     location: "GoLive_Source_Select"
-  }), o = C.Z.supports(B.AN.GO_LIVE_HARDWARE), [a, f] = i.useState(null), [h, v] = i.useState(null), [b, S] = i.useState(null), O = null != b && b.length > 0, [Z, I] = i.useState(c.vA.WINDOW), [N, T] = i.useState(false), E = i.useRef(null), A = i.useRef(new u.Xp), M = (0, d.e7)([g.ZP], () => g.ZP.getRunningGames()), L = F((0, d.e7)([j.Z], () => j.Z.quests), M, h), W = i.useMemo(() => null == h ? null : [...h].sort((e, t) => z(t, null == L ? true : L.source.id) - z(e, null == L ? true : L.source.id)), [L, h]);
+  }), o = S.Z.supports(B.AN.GO_LIVE_HARDWARE), [a, f] = i.useState(null), [h, v] = i.useState(null), [b, C] = i.useState(null), O = null != b && b.length > 0, [Z, I] = i.useState(c.vA.WINDOW), [N, T] = i.useState(false), E = i.useRef(null), A = i.useRef(new u.Xp), M = (0, d.e7)([g.ZP], () => g.ZP.getRunningGames()), L = F((0, d.e7)([j.Z], () => j.Z.quests), M, h), W = i.useMemo(() => null == h ? null : [...h].sort((e, t) => z(t, null == L ? true : L.source.id) - z(e, null == L ? true : L.source.id)), [L, h]);
   i.useEffect(() => {
     let e = A.current;
     return (0, P.t)({
@@ -119,7 +119,7 @@ function H(e) {
         windowSources: n,
         cameraSources: r
       } = e;
-      f(t), v(n), S(r)
+      f(t), v(n), C(r)
     }), e.start(1e3, async () => {
       let {
         screenSources: e,
@@ -129,7 +129,7 @@ function H(e) {
         width: 176,
         height: 99
       });
-      f(e), v(t), S(n)
+      f(e), v(t), C(n)
     }), () => {
       e.stop()
     }
@@ -296,7 +296,7 @@ function J(e) {
   i.useEffect(() => {
     let e = d.current,
       t = () => {
-        let e = Object.entries(C.Z.getVideoDevices()).filter(e => {
+        let e = Object.entries(S.Z.getVideoDevices()).filter(e => {
           let [t, n] = e;
           return !n.disabled
         });

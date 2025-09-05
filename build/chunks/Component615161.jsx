@@ -1,7 +1,7 @@
 /** Chunk was on 46746 **/
 /** chunk id: 615161, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  E_: () => C,
+  E_: () => S,
   Ti: () => y,
   Yw: () => b
 }), require("./415506.js"), require("./388685.js");
@@ -169,21 +169,21 @@ function y(e, t, n) {
       preset: v,
       resolution: b,
       fps: y,
-      soundshareEnabled: C
+      soundshareEnabled: S
     } = (0, s.cj)([d.Z], () => d.Z.getState()),
-    S = (0, s.e7)([u.Z], () => u.Z.getInputDeviceId()),
+    C = (0, s.e7)([u.Z], () => u.Z.getInputDeviceId()),
     O = null != (r = c.I0.useSetting()) && r,
     w = null != (l = c.eo.useSetting()) && l;
-  (0, f.Z)(m.tI.PRESET_CUSTOM, b, y, t, n) || (b = m.LY.RESOLUTION_720, y = m.ws.FPS_30);
+  v in m.tI || (v = m.tI.PRESET_VIDEO), (0, f.Z)(m.tI.PRESET_CUSTOM, b, y, t, n) || (b = m.LY.RESOLUTION_720, y = m.ws.FPS_30);
   let [Z, I] = i.useReducer(j, x(p({}, g), {
-    muteStreamAudio: !C,
+    muteStreamAudio: !S,
     preset: v,
     resolution: b,
     fps: y,
     hidePreview: O,
     notifyFriends: w,
     selectedSource: e,
-    audioSourceId: S,
+    audioSourceId: C,
     modalStep: _
   }));
   return i.useEffect(() => {
@@ -205,6 +205,6 @@ function y(e, t, n) {
   }
 }
 
-function C() {
+function S() {
   return [Chunk647438.useContext(_), Chunk647438.useContext(v)]
 }

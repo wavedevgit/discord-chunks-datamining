@@ -163,40 +163,40 @@ function k(e) {
     location: G
   } = (0, m.O)(), U = (0, h.Zq)({
     autoTrackExposure: false
-  }), W = (0, g.B4)(), z = !B && !U, [F, H] = i.useState(false), V = M ? S.z8 : S.WC, Y = T(P({}, G), {
+  }), W = (0, g.B4)(), z = !B && !U, [F, H] = i.useState(false), V = M ? C.z8 : C.WC, Y = T(P({}, G), {
     section: O.jXE.STREAM_SETTINGS
   }), J = (0, r.jsx)(d.hE, {
     buttons: V.map(e => A({
       type: e,
       selected: e.value === l,
       needsPremium: !(0, y.Z)(n, e.value, s, D, k, L),
-      needsDemo: W && e.value !== S.LY.RESOLUTION_720,
+      needsDemo: W && e.value !== C.LY.RESOLUTION_720,
       analyticsLocation: Y,
       onClick: () => o(e.value),
       onClose: t,
       setIsHovering: H
     }))
   }), X = (0, r.jsx)(d.hE, {
-    buttons: S.k0.map(e => A({
+    buttons: C.k0.map(e => A({
       type: e,
       selected: e.value === s,
       needsPremium: !(0, y.Z)(n, l, e.value, D, k, L),
-      needsDemo: W && e.value === S.ws.FPS_60,
+      needsDemo: W && e.value === C.ws.FPS_60,
       analyticsLocation: Y,
       onClick: () => x(e.value),
       onClose: t,
       setIsHovering: H
     }))
   }), K = [{
-    value: S.tI.PRESET_VIDEO,
+    value: C.tI.PRESET_VIDEO,
     label: w.intl.string(w.t.HcwHc3)
   }, ...M ? [] : [{
-    value: S.tI.PRESET_DOCUMENTS,
+    value: C.tI.PRESET_DOCUMENTS,
     label: w.intl.string(w.t["/RfohI"])
   }], {
-    value: S.tI.PRESET_CUSTOM,
+    value: C.tI.PRESET_CUSTOM,
     label: w.intl.string(w.t["+eOtrK"])
-  }], q = n === S.tI.PRESET_DOCUMENTS ? (0, r.jsxs)(r.Fragment, {
+  }], q = n === C.tI.PRESET_DOCUMENTS ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(p.Z, {
       children: (0, r.jsx)(u.xJW, {
         title: w.intl.string(w.t.rHyPXl),
@@ -209,11 +209,11 @@ function k(e) {
           })
         })
       })
-    }), z ? (0, r.jsx)(C.Z, {
+    }), z ? (0, r.jsx)(S.Z, {
       message: w.intl.string(w.t.deDogI),
       onClose: t,
       openStreamUpsellModal: E
-    }) : null, W && (0, r.jsx)(C.c, {})]
+    }) : null, W && (0, r.jsx)(S.c, {})]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(p.Z, {
       children: [(0, r.jsx)(u.xJW, {
@@ -227,11 +227,11 @@ function k(e) {
         titleClassName: Z.formItemTitleSlim,
         children: X
       })]
-    }), z ? (0, r.jsx)(C.Z, {
+    }), z ? (0, r.jsx)(S.Z, {
       onClose: t,
       openStreamUpsellModal: E,
       glow: F
-    }) : null, W && (0, r.jsx)(C.c, {})]
+    }) : null, W && (0, r.jsx)(S.c, {})]
   });
   return (0, r.jsx)(f.Z, T(P({}, Y), {
     children: (0, r.jsx)(u.xJW, {

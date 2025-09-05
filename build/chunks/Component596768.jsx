@@ -156,8 +156,7 @@ function S() {
         className: Chunk529554.triggersEnable,
         children: (0, Chunk951288.jsx)(Chunk755721.T2, {
           checked: S,
-          onChange: P,
-          className: Chunk529554.__invalid_toolbarSwitch
+          onChange: P
         })
       }), (0, Chunk951288.jsx)(Chunk755721.zx, {
         className: Chunk529554.toolbarButton,

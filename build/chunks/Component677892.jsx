@@ -196,11 +196,13 @@ function O(e) {
   let y = f.intl.string(f.t.GMOwOD);
   x ? _ || (y = f.intl.string(f.t.wHOoyM)) : y = f.intl.string(f.t.wXFbgY);
   let C = null;
-  return _ && p && (C = (0, r.jsx)(a.T2, {
+  return _ && p && (C = (0, r.jsx)("div", {
     className: h.inlineSwitch,
-    checked: j,
-    onChange: v,
-    disabled: !x
+    children: (0, r.jsx)(a.T2, {
+      checked: j,
+      onChange: v,
+      disabled: !x
+    })
   })), (0, r.jsx)(b, {
     title: f.intl.string(f.t.mRHqsr),
     description: y,

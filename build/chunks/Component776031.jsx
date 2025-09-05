@@ -78,15 +78,16 @@ function S(e, t) {
   let {
     preset: n,
     resolution: y,
-    fps: v
-  } = (0, a.cj)([u.Z], () => u.Z.getState()), S = (0, a.e7)([_.Z], () => _.Z.getGoLiveSource()), A = (0, a.e7)([h.default], () => h.default.getCurrentUser()), C = (0, a.e7)([f.Z], () => {
+    fps: v,
+    soundshareEnabled: S
+  } = (0, a.cj)([u.Z], () => u.Z.getState()), A = (0, a.e7)([_.Z], () => _.Z.getGoLiveSource()), C = (0, a.e7)([h.default], () => h.default.getCurrentUser()), N = (0, a.e7)([f.Z], () => {
     var t;
     return null == (t = f.Z.getGuild(null == e ? true : e.guildId)) ? true : t.premiumTier
   }), {
-    location: N
-  } = (0, l.O)(), R = (0, a.e7)([p.Z, d.Z], () => d.Z.getChannel(p.Z.getVoiceChannelId())), P = i.useCallback((e, n, r, i) => {
+    location: R
+  } = (0, l.O)(), P = (0, a.e7)([p.Z, d.Z], () => d.Z.getChannel(p.Z.getVoiceChannelId())), w = i.useCallback((e, n, r, i) => {
     if (e) {
-      if (null != S) {
+      if (null != A) {
         let e = {
           qualityOptions: {
             preset: g.tI.PRESET_CUSTOM,
@@ -95,54 +96,54 @@ function S(e, t) {
           },
           context: E.Yn.STREAM
         };
-        null != S.desktopSource ? e.desktopSettings = {
-          sourceId: S.desktopSource.id,
-          sound: true
-        } : null != S.cameraSource && (e.cameraSettings = {
-          videoDeviceGuid: S.cameraSource.videoDeviceGuid,
-          audioDeviceGuid: S.cameraSource.audioDeviceGuid
+        null != A.desktopSource ? e.desktopSettings = {
+          sourceId: A.desktopSource.id,
+          sound: S
+        } : null != A.cameraSource && (e.cameraSettings = {
+          videoDeviceGuid: A.cameraSource.videoDeviceGuid,
+          audioDeviceGuid: A.cameraSource.audioDeviceGuid
         }), s.Z.setGoLiveSource(e)
       }
-    } else T(t, I(O({}, N), {
+    } else T(t, I(O({}, R), {
       object: m.qAy.RADIO_ITEM,
       objectType: i
     }))
-  }, [t, N, S]);
+  }, [t, R, S, A]);
   if (null == e) return null;
-  let w = n === g.tI.PRESET_DOCUMENTS ? g.ws.FPS_30 : v,
-    D = g.af.map(e => {
+  let D = n === g.tI.PRESET_DOCUMENTS ? g.ws.FPS_30 : v,
+    x = g.af.map(e => {
       let {
         value: t,
         label: n
-      } = e, i = (0, c.Z)(g.tI.PRESET_CUSTOM, y, t, A, C, R);
+      } = e, i = (0, c.Z)(g.tI.PRESET_CUSTOM, y, t, C, N, P);
       return (0, r.jsx)(o.k5B, {
         group: "stream-settings-fps",
         id: "stream-settings-fps-".concat(t),
         label: n,
         checked: t === v,
-        action: () => P(i, y, t, m.Qqv.RESOLUTION)
+        action: () => w(i, y, t, m.Qqv.RESOLUTION)
       }, "stream-settings-fps-".concat(t))
     }),
-    x = g.km.map(e => {
+    L = g.km.map(e => {
       let {
         value: t,
         label: n
-      } = e, i = (0, c.Z)(g.tI.PRESET_CUSTOM, t, w, A, C, R);
+      } = e, i = (0, c.Z)(g.tI.PRESET_CUSTOM, t, D, C, N, P);
       return (0, r.jsx)(o.k5B, {
         group: "stream-settings-resolution",
         id: "stream-settings-resolution-".concat(t),
         label: n,
         checked: t === y,
-        action: () => P(i, t, w, m.Qqv.RESOLUTION)
+        action: () => w(i, t, D, m.Qqv.RESOLUTION)
       }, "stream-settings-resolution-".concat(t))
     });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.kSQ, {
       label: b.intl.string(b.t.SkkeIi),
-      children: D
+      children: x
     }), (0, r.jsx)(o.kSQ, {
       label: b.intl.string(b.t.rHyPXl),
-      children: x
+      children: L
     })]
   })
 }

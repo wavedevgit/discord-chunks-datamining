@@ -33,7 +33,7 @@ let y = [{
     value: Chunk37113.tI.PRESET_CUSTOM,
     canUse: e => true
   }],
-  C = [{
+  S = [{
     value: Chunk37113.LY.RESOLUTION_720,
     canUse: e => true
   }, {
@@ -46,7 +46,7 @@ let y = [{
     value: Chunk37113.LY.RESOLUTION_SOURCE,
     canUse: e => e !== i.vA.CAMERA
   }],
-  S = [Chunk37113.ws.FPS_15, Chunk37113.ws.FPS_30, Chunk37113.ws.FPS_60];
+  C = [Chunk37113.ws.FPS_15, Chunk37113.ws.FPS_30, Chunk37113.ws.FPS_60];
 
 function O(e) {
   let {
@@ -144,7 +144,7 @@ function w(e) {
       children: [(0, r.jsx)(l.Clw, {}), (0, r.jsx)(l.sNh, {
         id: "resolution",
         label: j.intl.string(v.default.IG5n0d),
-        children: C.filter(e => {
+        children: S.filter(e => {
           let {
             canUse: t
           } = e;
@@ -174,7 +174,7 @@ function w(e) {
       }), (0, r.jsx)(l.sNh, {
         id: "frame-rate",
         label: j.intl.string(j.t.SkkeIi),
-        children: S.map(e => (0, r.jsx)(l.k5B, {
+        children: C.map(e => (0, r.jsx)(l.k5B, {
           group: "frame-rate",
           id: "stream-option-frame-rate-".concat(e),
           checked: R === e,

@@ -2,7 +2,7 @@
 /** chunk id: 667829, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => U
+  Z: () => G
 }), require("./388685.js"), require("./539854.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,6 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk873546 = require("./873546.js"),
   Chunk430742 = require("./430742.js"),
   Chunk166459 = require("./166459.js"),
+  Chunk531643 = require("./531643.jsx"),
   Chunk911969 = require("./911969.js"),
   Chunk476326 = require("./476326.js"),
   Chunk998698 = require("./998698.js"),
@@ -34,7 +35,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk744114 = require("./744114.js");
 
-function D(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,20 +44,20 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      D(e, t, n[t])
+      x(e, t, n[t])
     })
   }
   return e
 }
 
-function L(e, t) {
+function j(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -67,17 +68,17 @@ function L(e, t) {
   return n
 }
 
-function j(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
+function k(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 new Chunk710845.Z("ChannelEditor.tsx");
-let k = function() {
+let M = function() {
     for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require]
   },
-  M = 1e3;
-class U extends Chunk647438.Component {
+  U = 1e3;
+class G extends Chunk647438.Component {
   _getEditorWindow() {
     var e, t, n, r, i;
     let a = null == (i = this.ref) || null == (r = Chunk647438.current) || null == (n = Chunk951288.getSlateEditor) || null == (t = require.call(Chunk951288)) || null == (e = exports.windowContext) ? true : module.renderWindow;
@@ -88,15 +89,15 @@ class U extends Chunk647438.Component {
     return this._cachedEditorWindow
   }
   componentDidMount() {
-    this.props.focused && requestAnimationFrame(() => this.focus()), document.addEventListener("selectionchange", this.handleSelectionChange), window.addEventListener("beforeunload", this.handleBeforeUnload), this._initTimeoutId = setTimeout(() => void this._getEditorWindow(), M)
+    this.props.focused && requestAnimationFrame(() => this.focus()), document.addEventListener("selectionchange", this.handleSelectionChange), window.addEventListener("beforeunload", this.handleBeforeUnload), this._initTimeoutId = setTimeout(() => void this._getEditorWindow(), U)
   }
   componentDidUpdate(e) {
     if (this.fixFocus(e), this.props.useSlate !== e.useSlate) {
       var t, n;
       let e;
-      e = this.props.useSlate ? this.props.textValue : (0, N.sk)(this.props.richValue, {
+      e = this.props.useSlate ? this.props.textValue : (0, R.sk)(this.props.richValue, {
         mode: "plain"
-      }), null == (t = (n = this.props).onChange) || t.call(n, null, e, (0, I.JM)(e))
+      }), null == (t = (n = this.props).onChange) || t.call(n, null, e, (0, T.JM)(e))
     } else this.props.textValue !== e.textValue && this.saveCurrentTextThrottled()
   }
   componentWillUnmount() {
@@ -221,32 +222,32 @@ class U extends Chunk647438.Component {
       type: g,
       useSlate: E,
       spellcheckEnabled: b,
-      useNewSlashCommands: O,
-      canOnlyUseTextCommands: T,
+      useNewSlashCommands: y,
+      canOnlyUseTextCommands: v,
       className: S,
-      id: N,
-      required: P,
-      maxCharacterCount: D,
-      allowNewLines: L,
-      "aria-describedby": k,
+      id: A,
+      required: R,
+      maxCharacterCount: w,
+      allowNewLines: x,
+      "aria-describedby": j,
       "aria-labelledby": M,
       accessibilityLabel: U
     } = this.props, {
       submitting: G,
       popup: B
     } = this.state, Z = {
-      channel: Chunk476326,
-      className: o()(Chunk330122, Chunk744114.textArea, {
-        [Chunk744114.textAreaSlate]: Chunk710845,
+      channel: Chunk911969,
+      className: o()(Chunk30465, Chunk744114.textArea, {
+        [Chunk744114.textAreaSlate]: Chunk998698,
         [Chunk744114.textAreaDisabled]: u || G
       }),
-      id: Chunk925994,
+      id: Chunk330122,
       placeholder: this.getPlaceholder(),
-      required: Chunk388032,
+      required: Chunk925994,
       accessibilityLabel: U,
       disabled: u || false,
       submitting: G,
-      isEdit: Chunk998698 === Chunk541716.Ie.EDIT,
+      isEdit: Chunk476326 === Chunk541716.Ie.EDIT,
       onFocus: this.handleFocus,
       onBlur: this.handleBlur,
       onPaste: this.handlePaste,
@@ -255,37 +256,37 @@ class U extends Chunk647438.Component {
       moveSelection: this.handleMoveSelection,
       maybeShowAutocomplete: this.maybeShowAutocomplete,
       hideAutocomplete: this.hideAutocomplete,
-      allowNewLines: L,
+      allowNewLines: x,
       onChange: Chunk729594,
       onResize: Chunk166459,
       onKeyDown: Chunk430742,
-      onSubmit: Chunk911969,
+      onSubmit: Chunk531643,
       textAreaPaddingClassName: o()({
-        [Chunk744114.textAreaForPostCreation]: Chunk998698 === Chunk541716.Ie.CREATE_FORUM_POST,
-        [Chunk744114.textAreaCustomGift]: Chunk998698 === Chunk541716.Ie.CUSTOM_GIFT,
-        [Chunk744114.textAreaForUserProfile]: Chunk998698 === Chunk541716.Ie.USER_PROFILE,
-        [Chunk744114.textAreaForOverlayInlineReply]: Chunk998698 === Chunk541716.Ie.OVERLAY_INLINE_REPLY
+        [Chunk744114.textAreaForPostCreation]: Chunk476326 === Chunk541716.Ie.CREATE_FORUM_POST,
+        [Chunk744114.textAreaCustomGift]: Chunk476326 === Chunk541716.Ie.CUSTOM_GIFT,
+        [Chunk744114.textAreaForUserProfile]: Chunk476326 === Chunk541716.Ie.USER_PROFILE,
+        [Chunk744114.textAreaForOverlayInlineReply]: Chunk476326 === Chunk541716.Ie.OVERLAY_INLINE_REPLY
       }),
-      spellcheckEnabled: Chunk117530,
-      useNewSlashCommands: Chunk403182,
-      disableAutoFocus: Chunk873546.tq || null != (n = Chunk998698.disableAutoFocus) && require,
-      disableEnterToSubmit: null != (i = null == (e = Chunk998698.submit) ? true : module.disableEnterToSubmit) && Chunk647438,
+      spellcheckEnabled: Chunk710845,
+      useNewSlashCommands: Chunk117530,
+      disableAutoFocus: Chunk873546.tq || null != (n = Chunk476326.disableAutoFocus) && require,
+      disableEnterToSubmit: null != (i = null == (e = Chunk476326.submit) ? true : module.disableEnterToSubmit) && Chunk647438,
       "aria-controls": null != (a = B.id) ? Chunk120356 : true,
       "aria-haspopup": "listbox",
       "aria-expanded": null !== B.id || true,
       "aria-activedescendant": null != (s = B.activeDescendant) ? Chunk392711 : true,
-      "aria-invalid": l.length > D,
-      "aria-describedby": k,
+      "aria-invalid": l.length > Chunk388032,
+      "aria-describedby": j,
       "aria-labelledby": M,
       "aria-autocomplete": "list"
-    }, F = Chunk710845 ? (0, Chunk951288.jsx)(Chunk4484.Z, j(x({
+    }, F = Chunk998698 ? (0, Chunk951288.jsx)(Chunk4484.Z, k(L({
       ref: this.ref
     }, Z), {
-      type: Chunk998698,
+      type: Chunk476326,
       value: u ? (0, Chunk752305.JM)("") : Chunk218887,
-      canUseCommands: null == (t = Chunk998698.commands) ? true : exports.enabled,
-      canOnlyUseTextCommands: Chunk30465
-    })) : (0, Chunk951288.jsx)(Chunk140963.Z, j(x({
+      canUseCommands: null == (t = Chunk476326.commands) ? true : exports.enabled,
+      canOnlyUseTextCommands: Chunk403182
+    })) : (0, Chunk951288.jsx)(Chunk140963.Z, k(L({
       ref: this.ref
     }, Z), {
       value: u ? "" : l
@@ -302,12 +303,12 @@ class U extends Chunk647438.Component {
   }
   constructor(e) {
     var t;
-    super(e), t = this, D(this, "ref", i.createRef()), D(this, "_focusBlurQueue", Promise.resolve()), D(this, "_unsubscribe", true), D(this, "_initTimeoutId", null), D(this, "_cachedEditorWindow", null), D(this, "handleSelectionChange", () => {
+    super(e), t = this, x(this, "ref", i.createRef()), x(this, "_focusBlurQueue", Promise.resolve()), x(this, "_unsubscribe", true), x(this, "_initTimeoutId", null), x(this, "_cachedEditorWindow", null), x(this, "handleSelectionChange", () => {
       if (this.props.focused) {
         var e, t, n;
         this.props.onSelectionChanged(null == (t = (n = document).getSelection) || null == (e = t.call(n)) ? true : e.toString())
       }
-    }), D(this, "focus", () => {
+    }), x(this, "focus", () => {
       var e;
       null == (e = this._focusBlurQueue) || e.then(() => {
         this.setState({
@@ -317,41 +318,41 @@ class U extends Chunk647438.Component {
           null != e && e.focus()
         })
       })
-    }), D(this, "saveCurrentText", function() {
+    }), x(this, "saveCurrentText", function() {
       let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
         {
           type: n,
           channel: r
         } = t.props;
       n.drafts.autoSave && (e && t.saveCurrentTextThrottled.cancel(), t.handleSaveCurrentText(r.id))
-    }), D(this, "handleBeforeUnload", () => this.saveCurrentText()), D(this, "saveCurrentTextThrottled", l().throttle(this.saveCurrentText.bind(this, false), 500)), D(this, "handleEnter", e => {
+    }), x(this, "handleBeforeUnload", () => this.saveCurrentText()), x(this, "saveCurrentTextThrottled", l().throttle(this.saveCurrentText.bind(this, false), 500)), x(this, "handleEnter", e => {
       var t, n;
       return null == (t = (n = this.props).onEnter) ? true : t.call(n, e)
-    }), D(this, "handleTab", () => {
+    }), x(this, "handleTab", () => {
       var e, t;
       return null == (e = (t = this.props).onTab) ? true : e.call(t)
-    }), D(this, "handleMoveSelection", e => {
+    }), x(this, "handleMoveSelection", e => {
       var t, n;
       return null == (t = (n = this.props).onMoveSelection) ? true : t.call(n, e)
-    }), D(this, "maybeShowAutocomplete", () => {
+    }), x(this, "maybeShowAutocomplete", () => {
       var e, t;
       return null == (e = (t = this.props).onMaybeShowAutocomplete) ? true : e.call(t)
-    }), D(this, "hideAutocomplete", () => {
+    }), x(this, "hideAutocomplete", () => {
       var e, t;
       return null == (e = (t = this.props).onHideAutocomplete) ? true : e.call(t)
-    }), D(this, "handleSaveCurrentText", e => {
+    }), x(this, "handleSaveCurrentText", e => {
       _.Z.saveDraft(e, this.props.textValue, this.props.type.drafts.type)
-    }), D(this, "handleClearText", () => {
+    }), x(this, "handleClearText", () => {
       var e, t;
-      null == (e = (t = this.props).onChange) || e.call(t, null, "", (0, I.JM)(""))
-    }), D(this, "handleInsertText", e => {
+      null == (e = (t = this.props).onChange) || e.call(t, null, "", (0, T.JM)(""))
+    }), x(this, "handleInsertText", e => {
       let {
         plainText: t,
         rawText: n,
         addSpace: r = false
       } = e;
       this.props.disabled || (this.appendText(t, n, r), this.focus())
-    }), D(this, "handleFocus", e => {
+    }), x(this, "handleFocus", e => {
       let {
         onFocus: t
       } = this.props, {
@@ -360,7 +361,7 @@ class U extends Chunk647438.Component {
       null == t || t(e), n || this.setState({
         focused: true
       })
-    }), D(this, "handleBlur", e => {
+    }), x(this, "handleBlur", e => {
       let {
         onBlur: t
       } = this.props, {
@@ -369,7 +370,7 @@ class U extends Chunk647438.Component {
       null == t || t(e), n && this.setState({
         focused: false
       })
-    }), D(this, "handlePaste", e => {
+    }), x(this, "handlePaste", e => {
       var t, n, r;
       let i = null == (n = e.target) || null == (t = n.ownerDocument) ? true : t.defaultView,
         {
@@ -380,38 +381,39 @@ class U extends Chunk647438.Component {
           maxCharacterCount: c,
           type: u
         } = this.props,
-        d = null != i ? (0, S.im)(i) : null,
-        f = (0, S.Mo)(),
+        d = null != i ? (0, A.im)(i) : null,
+        f = (0, A.Mo)(),
         _ = null != (r = null != d ? d : f) ? r : a,
-        E = (0, S._K)(i, this._getEditorWindow()) ? a : _;
-      if (null == l || !E.isPrivate() && !o || E.isPrivate() && E.isManaged()) returnfalse;
-      let y = async (e, t) => {
+        b = (0, A._K)(i, this._getEditorWindow()) ? a : _;
+      if (null == l || !b.isPrivate() && !o || b.isPrivate() && b.isManaged()) returnfalse;
+      let O = async (e, t) => {
         var n, r;
-        let i = g.Z.getActiveCommand(E.id);
-        if (null == i) return await l(e, E, u.drafts.type, {
+        let i = E.Z.getActiveCommand(b.id);
+        if (null == i) return await l(e, b, u.drafts.type, {
           requireConfirm: true,
           showLargeMessageDialog: t,
           origin: "clipboard"
         });
         let a = null != (n = u.drafts.commandType) ? n : u.drafts.type,
           o = null,
-          s = g.Z.getActiveOption(E.id);
-        null != (o = (null == s ? true : s.type) === h.jw.ATTACHMENT ? s : null == (r = i.options) ? true : r.find(e => {
-          if (e.type === h.jw.ATTACHMENT) return null == b.Z.getUpload(E.id, e.name, a)
+          s = E.Z.getActiveOption(b.id);
+        null != (o = (null == s ? true : s.type) === m.jw.ATTACHMENT ? s : null == (r = i.options) ? true : r.find(e => {
+          if (e.type === m.jw.ATTACHMENT) return null == y.Z.getUpload(b.id, e.name, a)
         })) && p.Z.setFile({
-          channelId: E.id,
+          channelId: b.id,
           id: o.name,
           draftType: a,
           file: {
             id: o.name,
-            platform: m.ow.WEB,
+            platform: g.ow.WEB,
             file: e[0]
           }
         })
-      }, O = null != s ? s : c, {
-        files: v
-      } = G(e.clipboardData, u.uploadLongMessages ? O : null);
-      return k("onPaste", [...e.clipboardData.items].map(e => {
+      }, v = null != s ? s : c, {
+        files: I,
+        errors: T
+      } = B(e.clipboardData, u.uploadLongMessages ? v : null);
+      return (M("onPaste", [...e.clipboardData.items].map(e => {
         if ("file" !== e.kind) return {
           kind: e.kind,
           type: e.type
@@ -425,8 +427,16 @@ class U extends Chunk647438.Component {
             path: null == t ? true : t.path
           }
         }
-      })), 0 !== v.length && (e.preventDefault(), e.stopPropagation(), this.saveCurrentText(), y(v), this.focus(), true)
-    }), this._unsubscribe = T.p8.subscribe(e => {
+      })), 0 === I.length) ? ((null == T ? true : T.some(e => {
+        let {
+          error: t
+        } = e;
+        return "is_directory" === t
+      })) && (0, h.openUploadError)({
+        title: w.intl.string(w.t.azO1PT),
+        help: w.intl.string(w.t.Koklr6)
+      }), false) : (e.preventDefault(), e.stopPropagation(), this.saveCurrentText(), O(I), this.focus(), true)
+    }), this._unsubscribe = S.p8.subscribe(e => {
       requestAnimationFrame(() => {
         this.setState({
           popup: e
@@ -435,56 +445,70 @@ class U extends Chunk647438.Component {
     }), this.state = {
       focused: false,
       submitting: false,
-      popup: T.p8.getState()
+      popup: S.p8.getState()
     }
   }
 }
 
-function G(e, t) {
-  let n = [],
-    r = [],
-    i = null,
-    a = null;
+function B(e, t) {
+  var n, r, i, a, o;
+  let s = [],
+    l = [],
+    c = null,
+    u = null,
+    d = [];
   for (let t of e.items)
     if ("file" === t.kind) {
-      let e = t.getAsFile();
-      if (null == e) continue;
-      null != e.path && e.path.length > 0 ? n.push(e) : r.push(e)
-    } else "string" === t.kind && ("text/plain" === t.type && null == i ? i = t : "text/html" === t.type && null == a && (a = t));
-  if (n.length > 0) return {
-    files: n
+      let e = null != (a = null != (i = null == (n = t.webkitGetAsEntry) ? true : n.call(t)) ? i : null == (r = t.getAsEntry) ? true : r.call(t)) ? a : null;
+      if (null != e && false === e.isFile) {
+        d.push({
+          item: t,
+          error: "is_directory"
+        });
+        continue
+      }
+      let o = t.getAsFile();
+      if (null == o) continue;
+      null != o.path && o.path.length > 0 ? s.push(o) : l.push(o)
+    } else "string" === t.kind && ("text/plain" === t.type && null == c ? c = t : "text/html" === t.type && null == u && (u = t));
+  if (s.length > 0) return {
+    files: s,
+    errors: d
   };
-  if (r.length > 0) {
-    if (1 === r.length && "image/png" === r[0].type && null != a) {
-      var o;
-      let t = r[0],
-        n = null != (o = B(e.getData(a.type))) ? o : t.name;
+  if (l.length > 0) {
+    if (1 === l.length && "image/png" === l[0].type && null != u) {
+      let t = l[0],
+        n = null != (o = Z(e.getData(u.type))) ? o : t.name;
       return {
-        files: [(0, O.dp)(t, n, t.type)]
+        files: [(0, v.dp)(t, n, t.type)],
+        errors: d
       }
     }
     return {
-      files: r
+      files: l,
+      errors: d
     }
   }
-  if (null != i && null != t) {
-    let n = e.getData(i.type);
+  if (null != c && null != t) {
+    let n = e.getData(c.type);
     if (n.length > t) {
       let e = new Blob([n], {
         type: "text/plain"
       });
       return {
-        files: [(0, O.dp)(e, "message.txt", "text/plain")],
-        convertedStringToFile: true
+        files: [(0, v.dp)(e, "message.txt", "text/plain")],
+        convertedStringToFile: true,
+        errors: d
       }
     }
   }
   return {
-    files: []
+    files: [],
+    errors: d
   }
 }
 
-function B(e) {
+function Z(e) {
   let t = new DOMParser().parseFromString(e, "text/html").querySelector("img");
   if (null != t) {
     let e;

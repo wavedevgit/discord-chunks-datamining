@@ -27,16 +27,16 @@ function r(e) {
       j = (e[5] >> 4) / 15,
       b = p ? 6 : 5,
       y = 0,
-      C = (t, n, r) => {
+      S = (t, n, r) => {
         let i = [];
         for (let l = 0; l < n; l++)
           for (let s = +!l; s * n < t * (n - l); s++) i.push(((e[b + (y >> 1)] >> ((1 & y++) << 2) & 15) / 7.5 - 1) * r);
         return i
       },
-      S = C(g, _, (d >> 18 & 31) / 31),
-      O = C(3, 3, (u >> 3 & 63) / 63 * 1.25),
-      w = C(3, 3, (u >> 9 & 63) / 63 * 1.25),
-      Z = p && C(5, 5, j),
+      C = S(g, _, (d >> 18 & 31) / 31),
+      O = S(3, 3, (u >> 3 & 63) / 63 * 1.25),
+      w = S(3, 3, (u >> 9 & 63) / 63 * 1.25),
+      Z = p && S(5, 5, j),
       I = (n = (t = e)[3], r = 128 & t[2], ((i = 128 & t[4]) ? r ? 5 : 7 : 7 & n) / (i ? 7 & n : r ? 5 : 7)),
       N = c(I > 1 ? 32 : 32 * I),
       P = c(I > 1 ? 32 / I : 32),
@@ -52,7 +52,7 @@ function r(e) {
         for (let e = 0, t = o(g, p ? 5 : 3); e < t; e++) E[e] = a(l / N * (n + .5) * e);
         for (let t = 0, n = o(_, p ? 5 : 3); t < n; t++) R[t] = a(l / P * (e + .5) * t);
         for (let e = 0, t = 0; e < _; e++)
-          for (let n = +!e, i = 2 * R[e]; n * _ < g * (_ - e); n++, t++) r += S[t] * E[n] * i;
+          for (let n = +!e, i = 2 * R[e]; n * _ < g * (_ - e); n++, t++) r += C[t] * E[n] * i;
         for (let e = 0, t = 0; e < 3; e++)
           for (let n = +!e, r = 2 * R[e]; n < 3 - e; n++, t++) {
             let e = E[n] * r;

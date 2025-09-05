@@ -2,12 +2,14 @@
 /** chunk id: 931981, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  V: () => O,
-  e: () => b
+  V: () => I,
+  e: () => O
 }), require("./388685.js");
 var r, Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk442837 = require("./442837.js"),
+var Chunk120356 = require("./120356.js"),
+  o = require.n(Chunk120356),
+  Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
   Chunk962293 = require("./962293.jsx"),
@@ -16,9 +18,9 @@ var Chunk442837 = require("./442837.js"),
   Chunk944486 = require("./944486.js"),
   Chunk594174 = require("./594174.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk822711 = require("./822711.js");
+  Chunk774185 = require("./774185.js");
 
-function h(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,40 +28,44 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let m = new Set;
-class g extends(r = Chunk442837.ZP.PersistedStore) {
+let E = new Set;
+class b extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (m = new Set(e))
+    null != e && (E = new Set(e))
   }
   hasId(e) {
-    return m.has(e)
+    return E.has(e)
   }
   getState() {
-    return [...m]
+    return [...E]
   }
 }
-h(g, "displayName", "PTOStore"), h(g, "persistKey", "PTOStore");
-let E = new g(Chunk570140.Z, {}),
-  b = e => (0, a.e7)([u.ZP, f.default, E], () => {
-    let t = f.default.getCurrentUser();
+g(b, "displayName", "PTOStore"), g(b, "persistKey", "PTOStore");
+let y = new b(Chunk570140.Z, {}),
+  O = e => (0, s.e7)([f.ZP, p.default, y], () => {
+    let t = p.default.getCurrentUser();
     if (null == t || !t.isStaff() || !e.isDM()) returnfalse;
-    let n = f.default.getUser(e.getRecipientId());
+    let n = p.default.getUser(e.getRecipientId());
     if (!(null == n ? true : n.isStaff())) returnfalse;
-    let r = u.ZP.getNicknames(n.id).some(e => e.endsWith("[PTO]") || e.endsWith("[OOO]"));
-    return r ? !E.hasId(n.id) && r : (m.delete(n.id) && E.emitChange(), false)
+    let r = f.ZP.getNicknames(n.id).some(e => e.endsWith("[PTO]") || e.endsWith("[OOO]"));
+    return r ? !y.hasId(n.id) && r : (E.delete(n.id) && y.emitChange(), false)
   }),
-  y = () => {
+  v = () => {
     let e = Chunk944486.Z.getChannelId();
     if (null == module) return;
     let t = Chunk592125.Z.getChannel(module);
-    null != exports && exports.isPrivate() && (m.has(exports.getRecipientId()) || (m.add(exports.getRecipientId()), E.emitChange()))
+    null != exports && exports.isPrivate() && (E.has(exports.getRecipientId()) || (E.add(exports.getRecipientId()), y.emitChange()))
   },
-  O = () => (0, Chunk951288.jsxs)("div", {
-    className: Chunk822711.bar,
+  I = () => (0, Chunk951288.jsxs)("div", {
+    className: Chunk774185.replyBar,
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/medium",
+      className: o()(Chunk774185.text, Chunk774185.replyLabel),
       children: Chunk388032.intl.string(Chunk388032.t["2UvR1N"])
-    }), (0, Chunk951288.jsx)(Chunk962293.B, {
-      onClick: y
+    }), (0, Chunk951288.jsx)("div", {
+      className: Chunk774185.actions,
+      children: (0, Chunk951288.jsx)(Chunk962293.B, {
+        onClick: v
+      })
     })]
   })

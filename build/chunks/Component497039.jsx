@@ -96,48 +96,47 @@ function A(e) {
     onChange: n,
     checked: a,
     disabled: p,
-    className: m,
-    focusProps: b,
-    innerRef: y
+    focusProps: m,
+    innerRef: b
   } = e, {
-    reducedMotion: O
-  } = i.useContext(u.S), v = i.useRef(null), [I, T] = i.useState(false), A = (0, f.d)(l.Z.colors.INTERACTIVE_MUTED).spring(), C = (0, f.d)(l.Z.colors.BG_BRAND).spring(), {
-    state: N,
-    opacity: R
+    reducedMotion: y
+  } = i.useContext(u.S), O = i.useRef(null), [v, I] = i.useState(false), T = (0, f.d)(l.Z.colors.INTERACTIVE_MUTED).spring(), A = (0, f.d)(l.Z.colors.BG_BRAND).spring(), {
+    state: C,
+    opacity: N
   } = (0, c.q)({
     config: E,
     opacity: p ? .5 : 1,
-    state: I ? a ? .7 : .3 : +!!a
+    state: v ? a ? .7 : .3 : +!!a
   }, "animate-always");
 
+  function R(e) {
+    I(false), null == n || n(e.currentTarget.checked, e)
+  }
+
   function P(e) {
-    T(false), null == n || n(e.currentTarget.checked, e)
+    p || e.repeat || (" " === e.key || "Enter" === e.key) && I(true)
   }
 
   function w(e) {
-    p || e.repeat || (" " === e.key || "Enter" === e.key) && T(true)
-  }
-
-  function D(e) {
     var t;
-    p || !I || e.repeat || (T(false), "Enter" === e.key && (null == (t = v.current) || t.click()))
+    p || !v || e.repeat || (I(false), "Enter" === e.key && (null == (t = O.current) || t.click()))
   }
-  return (0, r.jsx)(d.t, g(h({}, b), {
+  return (0, r.jsx)(d.t, g(h({}, m), {
     within: true,
     offset: false,
     children: (0, r.jsxs)(s.animated.div, {
       "data-toggleable-component": "switch",
-      className: o()(_.container, m, {
+      className: o()(_.container, {
         [_.checked]: a,
         [_.disabled]: p
       }),
-      onMouseDown: () => !p && T(true),
-      onMouseUp: () => T(false),
-      onMouseLeave: () => T(false),
+      onMouseDown: () => !p && I(true),
+      onMouseUp: () => I(false),
+      onMouseLeave: () => I(false),
       style: {
-        opacity: R,
-        backgroundColor: N.to({
-          output: [A, C]
+        opacity: N,
+        backgroundColor: C.to({
+          output: [T, A]
         })
       },
       children: [(0, r.jsxs)(s.animated.svg, {
@@ -145,7 +144,7 @@ function A(e) {
         viewBox: "0 0 28 20",
         preserveAspectRatio: "xMinYMid meet",
         style: {
-          left: N.to({
+          left: C.to({
             range: [0, .3, .7, 1],
             output: [false, 1, 8, 12]
           })
@@ -153,35 +152,35 @@ function A(e) {
         "aria-hidden": true,
         children: [(0, r.jsx)(s.animated.rect, {
           fill: "white",
-          x: N.to({
+          x: C.to({
             range: [0, .3, .7, 1],
             output: [4, 0, 0, 4]
           }),
-          y: N.to({
+          y: C.to({
             range: [0, .3, .7, 1],
             output: [0, 1, 1, 0]
           }),
-          height: N.to({
+          height: C.to({
             range: [0, .3, .7, 1],
             output: [20, 18, 18, 20]
           }),
-          width: N.to({
+          width: C.to({
             range: [0, .3, .7, 1],
             output: [20, 28, 28, 20]
           }),
           rx: "10"
-        }), S(N, A, C, O.enabled)]
+        }), S(C, T, A, y.enabled)]
       }), (0, r.jsx)("input", {
         id: t,
         type: "checkbox",
         ref: e => {
-          v.current = e, null != y && (y.current = e)
+          O.current = e, null != b && (b.current = e)
         },
         className: _.input,
         tabIndex: p ? false : 0,
-        onKeyDown: w,
-        onKeyUp: D,
-        onChange: P,
+        onKeyDown: P,
+        onKeyUp: w,
+        onChange: R,
         checked: a,
         disabled: p
       })]

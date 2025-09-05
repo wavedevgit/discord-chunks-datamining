@@ -35,7 +35,7 @@ function P(e) {
   let {
     result: t,
     onSelectChannel: n
-  } = e, i = (0, o.e7)([v.Z], () => v.Z.getGuild(t.record.guild_id)), l = (0, o.Wu)([C.ZP, y.default], () => C.ZP.getVoiceStatesForChannel(t.record).map(e => y.default.getUser(e.user.id)).filter(S.lm));
+  } = e, i = (0, o.e7)([v.Z], () => v.Z.getGuild(t.record.guild_id)), l = (0, o.Wu)([S.ZP, y.default], () => S.ZP.getVoiceStatesForChannel(t.record).map(e => y.default.getUser(e.user.id)).filter(C.lm));
   return (0, r.jsxs)(a.P3F, {
     className: N.channelResult,
     onClick: () => n(t.record.id),
@@ -89,7 +89,7 @@ function T(e) {
       null != t && (0, O.JL)(t, v.Z, j.Z) && e.push(t)
     }
     return e
-  }), C = (0, o.Wu)([f.Z, x.Z, g.Z, v.Z, j.Z], () => {
+  }), S = (0, o.Wu)([f.Z, x.Z, g.Z, v.Z, j.Z], () => {
     let e = [],
       t = new Set;
     for (let n of f.Z.getChannelHistory()) {
@@ -99,10 +99,10 @@ function T(e) {
     for (let n of g.Z.getFrequentlyWithoutFetchingLatest()) n instanceof h.Sf && n.type === w.d4z.GUILD_VOICE && !t.has(n.id) && (0, O.JL)(n, v.Z, j.Z) && (t.add(n.id), e.push(n));
     return e
   }), T = i.useMemo(() => {
-    let e = new Set(C.map(e => e.id)),
+    let e = new Set(S.map(e => e.id)),
       t = new Set(y.map(e => e.id));
-    return [...y.toSorted((t, n) => e.has(t.id) && !e.has(n.id) ? false : e.has(n.id) && !e.has(t.id) ? 1 : 0).map(e => (0, d.Z)(e.id)).filter(S.lm), ...C.filter(e => !t.has(e.id)).map(e => (0, d.Z)(e.id)).filter(S.lm)]
-  }, [C, y]), R = "" !== u ? p : T;
+    return [...y.toSorted((t, n) => e.has(t.id) && !e.has(n.id) ? false : e.has(n.id) && !e.has(t.id) ? 1 : 0).map(e => (0, d.Z)(e.id)).filter(C.lm), ...S.filter(e => !t.has(e.id)).map(e => (0, d.Z)(e.id)).filter(C.lm)]
+  }, [S, y]), R = "" !== u ? p : T;
   return (0, r.jsxs)("div", {
     className: s()(N.root, n),
     children: [(0, r.jsx)(a.E1j, {

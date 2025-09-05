@@ -21,7 +21,7 @@ function g(t) {
     guildId: e,
     transitionState: n,
     onClose: l
-  } = t, [g, f] = i.useState([]), [_, h] = i.useState(), y = [{
+  } = t, [g, f] = i.useState([]), [h, _] = i.useState(), j = [{
     text: b.intl.string(b.t["//3pvr"]),
     value: u.C2.DM_SPAM
   }, {
@@ -41,7 +41,7 @@ function g(t) {
     value: u.C2.OTHER
   }];
 
-  function j(t) {
+  function x(t) {
     g.includes(t) ? f(e => e.filter(e => e !== t)) : f(e => [...e, t])
   }
   return null == e ? (l(), null) : (0, r.jsx)(s.Modal, {
@@ -56,7 +56,7 @@ function g(t) {
       onClick: function() {
         (0, d.yw)(p.rMx.GUILD_RAID_LOCKDOWN_FEEDBACK, {
           raid_lockdown_feedback_type: g,
-          raid_lockdown_feedback_other_reason: _,
+          raid_lockdown_feedback_other_reason: h,
           guild_id: e
         }), l()
       },
@@ -65,7 +65,7 @@ function g(t) {
     onClose: l,
     children: (0, r.jsx)(c.Kqy, {
       gap: 8,
-      children: y.map(t => {
+      children: j.map(t => {
         let {
           text: e,
           value: n
@@ -76,13 +76,13 @@ function g(t) {
           }),
           children: [(0, r.jsxs)(c.P3F, {
             className: O.optionText,
-            onClick: () => j(n),
+            onClick: () => x(n),
             children: [(0, r.jsx)("div", {
               children: (0, r.jsx)(o.$q, {
                 type: o.M0.INVERTED,
                 size: 20,
                 value: g.includes(n),
-                onChange: () => j(n)
+                onChange: () => x(n)
               })
             }), (0, r.jsx)(c.Text, {
               variant: "text-md/medium",
@@ -93,8 +93,8 @@ function g(t) {
             className: O.textboxContainer,
             children: (0, r.jsx)(c.Kx8, {
               placeholder: b.intl.string(b.t["PAM+JS"]),
-              onChange: h,
-              value: _,
+              onChange: _,
+              value: h,
               autoFocus: true
             })
           })]

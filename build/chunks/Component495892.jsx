@@ -133,7 +133,6 @@ function E(e) {
     }), (0, r.jsxs)(N, {
       className: v.actionContainer,
       children: [(0, r.jsx)(a.T2, {
-        className: v.toggle,
         onChange: o,
         checked: null != (t = null == n ? true : n.enabled) && t
       }), (0, r.jsx)(s.ua7, {
@@ -224,7 +223,6 @@ function S(e) {
     }), (0, r.jsxs)(N, {
       className: v.actionContainer,
       children: [(0, r.jsx)(a.T2, {
-        className: v.toggle,
         onChange: E,
         checked: null != b && b
       }), !n && (0, r.jsx)(s.ua7, {

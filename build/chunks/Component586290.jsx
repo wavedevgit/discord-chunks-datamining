@@ -33,15 +33,15 @@ function b(e) {
     [b, y] = (0, m.Ls)(x.h7.AUDIO_INPUT, {
       location: "CaptureDeviceConfig"
     }),
-    C = b.concat(y),
-    [S, O] = i.useState(function(e, t, n) {
+    S = b.concat(y),
+    [C, O] = i.useState(function(e, t, n) {
       var r;
       let i = t.find(t => t.id === e);
       if (null == i) return null;
       let l = a().reduce(n, (e, t) => (0, c.stringSimilarity)(i.name, t.name) > (0, c.stringSimilarity)(i.name, e.name) ? t : e);
       return null != (r = null == l ? true : l.id) ? r : null
-    }(t.id, o, C));
-  return null != S && l(S), (0, r.jsxs)(u.xJW, {
+    }(t.id, o, S));
+  return null != C && l(C), (0, r.jsxs)(u.xJW, {
     title: "Capture Device",
     className: v.modalContent,
     children: [(0, r.jsx)(u.xJW, {
@@ -65,7 +65,7 @@ function b(e) {
         deviceType: x.h7.AUDIO_INPUT,
         location: "CaptureDeviceConfig",
         className: j.__invalid_marginaTop8,
-        selectedDeviceId: S,
+        selectedDeviceId: C,
         onSelectDevice: e => (O(e), l(e), false)
       })
     })]
