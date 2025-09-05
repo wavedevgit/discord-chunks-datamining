@@ -323,9 +323,6 @@ class K extends(r = Chunk442837.ZP.PersistedStore) {
   _getAllApplications() {
     return Array.from(f.values())
   }
-  getApplications() {
-    return f
-  }
   getGuildApplication(e, t) {
     if (null != e) {
       for (let n of f.values())

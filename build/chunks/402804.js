@@ -23,14 +23,12 @@ class u extends Chunk147913.Z {
   handleConnectionOpen() {
     let e = Chunk594174.default.getCurrentUser();
     null != module && Chunk55937.x("user_opened_desktop_app", {
-      user_id: module.id,
       age_minutes: Chunk709054.default.age(module.id) / Chunk70956.Z.Millis.MINUTE
     })
   }
   handleWindowChange() {
     let e = Chunk594174.default.getCurrentUser();
     null != module && Chunk451478.Z.isAppFocused() && Chunk55937.x("user_focussed_desktop_app", {
-      user_id: module.id,
       age_minutes: Chunk709054.default.age(module.id) / Chunk70956.Z.Millis.MINUTE
     })
   }
