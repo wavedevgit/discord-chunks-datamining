@@ -41,9 +41,9 @@ let I = function(e) {
   if ((0, d.HA)(S, P), n) return null;
   let L = A ? _.Z : f.Z,
     j = C === b.wh.CLIENT_THEMES || D,
-    M = C === b.wh.APP_ICON,
-    k = C === b.wh.CUSTOM_THEME || x;
-  if (!(j || M || k)) return null;
+    k = C === b.wh.APP_ICON,
+    M = C === b.wh.CUSTOM_THEME || x;
+  if (!(j || k || M)) return null;
   let U = () => (0, r.jsxs)(r.Fragment, {
     children: [j && (0, r.jsx)(u.Z, {
       markAsDismissed: D ? w : () => {
@@ -53,10 +53,10 @@ let I = function(e) {
         })
       },
       showClientThemesCoachmark: D
-    }), M && (0, r.jsx)(o.Z, {
+    }), k && (0, r.jsx)(o.Z, {
       isCoachmark: false,
       markAsDismissed: w
-    }), k && (0, r.jsx)(L, {
+    }), M && (0, r.jsx)(L, {
       metadata: null != N ? N : {},
       markAsDismissed: w,
       isCoachmark: x,

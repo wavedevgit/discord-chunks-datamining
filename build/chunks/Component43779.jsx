@@ -77,8 +77,8 @@ function D(e) {
     isHovering: D,
     contentPosition: L,
     rowIndex: j,
-    isVisibleInViewport: M,
-    onReceiveErrorHints: k,
+    isVisibleInViewport: k,
+    onReceiveErrorHints: M,
     sourceQuestContent: U
   } = e, G = i.useMemo(() => h.r.build(S.config), [S.config]), B = G.defaultRewardName, Z = G.defaultRewardNameWithArticle, F = (null == (t = S.userStatus) ? true : t.enrolledAt) != null, {
     ref: V,
@@ -135,7 +135,7 @@ function D(e) {
       },
       className: T.rewardDescriptionContainer,
       children: [(0, r.jsx)(b.E, {
-        showPlaceholder: !M,
+        showPlaceholder: !k,
         width: 80,
         height: 80,
         children: (0, r.jsxs)("div", {
@@ -209,7 +209,7 @@ function D(e) {
       questContent: C,
       contentPosition: L,
       rowIndex: j,
-      onReceiveErrorHints: k,
+      onReceiveErrorHints: M,
       sourceQuestContent: U
     })]
   })

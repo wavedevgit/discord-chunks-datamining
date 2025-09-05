@@ -68,13 +68,13 @@ function j(e, t) {
   return n
 }
 
-function M(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function k(e) {
+function M(e) {
   let {
     code: {
       code: t,
@@ -202,7 +202,7 @@ class U extends Chunk647438.PureComponent {
           text: Chunk388032.intl.string(Chunk388032.t.qZZUy8)
         })
       });
-      let i = e => e.map(e => (0, r.jsx)(k, {
+      let i = e => e.map(e => (0, r.jsx)(M, {
         code: e
       }, e.code));
       e = (0, Chunk951288.jsxs)(Chunk481060.hjN, {
@@ -329,7 +329,7 @@ class U extends Chunk647438.PureComponent {
       let e = O.Z.getVerificationKey();
       await u.Z.confirmViewBackupCodes(e, true)
     }), x(this, "sendMFABackupCodesVerificationKeyEmail", () => {
-      (0, c.h7j)(e => (0, r.jsx)(p.Z, M(L({}, e), {
+      (0, c.h7j)(e => (0, r.jsx)(p.Z, k(L({}, e), {
         handleSubmit: e => u.Z.sendMFABackupCodesVerificationKeyEmail(e).then(() => {
           this.viewBackupCodes(e)
         }),
@@ -337,7 +337,7 @@ class U extends Chunk647438.PureComponent {
         actionText: P.intl.string(P.t.ajkYcH)
       })))
     }), x(this, "viewBackupCodes", e => {
-      (0, c.h7j)(t => (0, r.jsx)(_.Z, M(L({}, t), {
+      (0, c.h7j)(t => (0, r.jsx)(_.Z, k(L({}, t), {
         handleSubmit: e => u.Z.confirmViewBackupCodes(e, false).then(() => t.onClose()),
         maxLength: 8,
         title: P.intl.string(P.t.mGppp6),
@@ -371,7 +371,7 @@ class U extends Chunk647438.PureComponent {
         onAddedPhone: u.Z.enableSMS
       }) : u.Z.enableSMS()
     }), x(this, "handleDisableSMS", () => {
-      (0, c.h7j)(e => (0, r.jsx)(p.Z, M(L({}, e), {
+      (0, c.h7j)(e => (0, r.jsx)(p.Z, k(L({}, e), {
         handleSubmit: u.Z.disableSMS,
         title: P.intl.string(P.t.KLWnio),
         children: P.intl.string(P.t["W0/Dub"])

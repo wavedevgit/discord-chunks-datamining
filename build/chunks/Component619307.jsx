@@ -6,7 +6,7 @@ require.d(exports, {
   UN: () => P,
   cY: () => C,
   gz: () => N,
-  q4: () => M,
+  q4: () => k,
   s6: () => R
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -178,8 +178,8 @@ function x(e) {
     popoutPosition: P = "bottom",
     popoutLayerContext: x,
     optionClassName: j,
-    closeOnSelect: M,
-    select: k,
+    closeOnSelect: k,
+    select: M,
     isSelected: U,
     serialize: G,
     clear: B,
@@ -203,11 +203,11 @@ function x(e) {
     }, [X, Y]),
     J = (0, m.O)(Q),
     $ = i.useCallback(e => {
-      if (k(e), M) {
+      if (M(e), k) {
         var t;
         null == (t = K.current) || t.focus()
       }
-    }, [k, M, K]),
+    }, [M, k, K]),
     ee = i.useCallback(e => {
       e.stopPropagation(), null == B || B()
     }, [B]),
@@ -236,7 +236,7 @@ function x(e) {
       } = e;
       return (0, r.jsx)(L, {
         className: R,
-        closeOnSelect: M,
+        closeOnSelect: k,
         maxVisibleItems: l,
         width: "auto" === f ? true : null != f ? f : z,
         isSelected: U,
@@ -371,7 +371,7 @@ function L(e) {
         serialize: E
       }, null != (n = e.key) ? n : t)
     }), [x, d, y, _, m, E]),
-    M = _.length <= h ? f.xV : f.h2;
+    k = _.length <= h ? f.xV : f.h2;
   return (0, r.jsx)(l.bG, {
     navigator: w,
     children: (0, r.jsx)(l.SJ, {
@@ -380,7 +380,7 @@ function L(e) {
           ref: n
         } = e, i = T(e, ["ref"]);
         return (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(M, I(O({
+          children: [(0, r.jsx)(k, I(O({
             className: o()(b.popout, t, {
               [b.popoutPositionTop]: "top" === A
             }),
@@ -442,7 +442,7 @@ function j(e) {
   }))
 }
 
-function M(e) {
+function k(e) {
   var {
     value: t,
     onChange: n

@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   CJ: () => U,
-  Ee: () => k,
-  Il: () => M,
+  Ee: () => M,
+  Il: () => k,
   h4: () => G
 }), require("./388685.js"), require("./997841.js");
 var Chunk951288 = require("./951288.js"),
@@ -183,7 +183,7 @@ function L(e, t, n) {
 }
 let j = Chunk647438.createContext(null);
 
-function M(e) {
+function k(e) {
   let {
     children: t,
     message: n,
@@ -195,12 +195,14 @@ function M(e) {
   } = e, d = i.useMemo(() => null != n ? {
     useComponentState: x.bind(null, n, u),
     channelId: n.channel_id,
+    containerId: n.id,
     message: n,
     validators: s,
     getParents: e => (0, v.cd)(n.components, e)
   } : (o()(null != a, "modal is present if message is not"), {
     useComponentState: L.bind(null, a),
     channelId: a.channelId,
+    containerId: a.customId,
     modal: a,
     validators: s,
     validationErrors: l,
@@ -213,7 +215,7 @@ function M(e) {
   })
 }
 
-function k(e, t) {
+function M(e, t) {
   return i.useContext(j).useComponentState(e, t)
 }
 

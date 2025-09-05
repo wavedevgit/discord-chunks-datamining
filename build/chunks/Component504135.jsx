@@ -81,15 +81,15 @@ function b(e) {
     iconProps: L,
     sparkle: j
   } = e, {
-    onSelect: M,
-    onInteraction: k
+    onSelect: k,
+    onInteraction: M
   } = i.useContext(c.p), U = i.useRef(null), G = i.useCallback(e => {
     var t;
-    if (null == k || k({
+    if (null == M || M({
         type: c.U.DEFAULT
       }), null == A) returnfalse;
-    e.shiftKey && D || x || C(), e.persist(), null == M || M(), (null != (t = e.nativeEvent.view) ? t : window).requestAnimationFrame(() => A(e))
-  }, [A, C, M, D, x, k]);
+    e.shiftKey && D || x || C(), e.persist(), null == k || k(), (null != (t = e.nativeEvent.view) ? t : window).requestAnimationFrame(() => A(e))
+  }, [A, C, k, D, x, M]);
   return i.useEffect(() => {
     T && ((0, u.F)(U), null == N || N())
   }, [T, N]), (0, r.jsxs)(s.P, E(m({

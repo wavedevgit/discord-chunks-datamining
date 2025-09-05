@@ -184,8 +184,8 @@ function R(e) {
     validateOn: x = "change",
     size: L = "md",
     fullWidth: j = false,
-    clearable: M = false,
-    helperText: k,
+    clearable: k = false,
+    helperText: M,
     showCharacterCount: U = false,
     successMessage: G,
     label: B,
@@ -221,7 +221,7 @@ function R(e) {
   }, ee = i.useRef(null), et = Y.readOnly;
   null == et && false === a && (et = true);
   let en = null;
-  ("boolean" == typeof M ? M && null != E && "" !== E && !et : M.show) ? en = (0, r.jsx)(N, {
+  ("boolean" == typeof k ? k && null != E && "" !== E && !et : k.show) ? en = (0, r.jsx)(N, {
     inputSize: L,
     onClick: $
   }): null != D && (en = (0, r.jsx)(C, {
@@ -243,7 +243,7 @@ function R(e) {
     required: V,
     description: Z,
     hideLabel: F,
-    helperText: k,
+    helperText: M,
     errorMessage: W.hasError && null != (t = W.errorMessage) ? t : true,
     successMessage: G,
     trailingContent: ei,

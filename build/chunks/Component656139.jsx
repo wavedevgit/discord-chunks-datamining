@@ -45,7 +45,7 @@ let N = e => {
       selectedUsers: h
     }), [x, L] = i.useState(false), j = (0, p.O)(e => {
       e && !w && R()
-    }), M = N.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map), k = () => (0, r.jsx)(f.Z, {
+    }), k = N.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map), M = () => (0, r.jsx)(f.Z, {
       className: C.searchbar,
       size: f.Z.Sizes.MEDIUM,
       tags: [...h.values()].map(e => b.ZP.getName(e)),
@@ -135,13 +135,13 @@ let N = e => {
       title: A.intl.string(A.t["2dVCLi"]),
       subtitle: A.intl.string(A.t.DXgoi4),
       onClose: t,
-      input: k(),
+      input: M(),
       actions: [],
       actionBarInput: U({
-        eligibleRecipients: M
+        eligibleRecipients: k
       }),
       children: G({
-        eligibleRecipients: M
+        eligibleRecipients: k
       })
     })
   },

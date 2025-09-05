@@ -46,8 +46,8 @@ let C = {
       showPlaceholderUser: x,
       pendingGlobalName: L,
       pendingDisplayNameStyles: j,
-      avatarDecorationOverride: M,
-      nameplatePreviewSize: k = "default",
+      avatarDecorationOverride: k,
+      nameplatePreviewSize: M = "default",
       isPurchased: U = false,
       skipEffectDisplayName: G = false
     } = e, B = (0, s.e7)([b.Z], () => (0, l.wj)(b.Z.theme)), Z = null != a ? (0, v.EU)(a) : N, F = (0, s.e7)([O.Z], () => null != t ? O.Z.getStatus(t.id) : c.Skl.ONLINE), V = B ? "#706F74" : "#aaaab2", H = i.useRef(null), Y = (0, s.e7)([y.ZP], () => null != n && null != t ? y.ZP.getMember(n, t.id) : null), W = null != t ? (0, E.Ly)({
@@ -55,7 +55,7 @@ let C = {
       pendingGlobalName: L,
       user: t,
       guildMember: Y
-    }) : true, K = C[k], z = (0, f.Y)({
+    }) : true, K = C[M], z = (0, f.Y)({
       location: "NameplatePreview"
     }), q = true !== j ? j : null == t ? true : t.displayNameStyles;
     return (0, r.jsx)("div", {
@@ -68,8 +68,8 @@ let C = {
       children: (0, r.jsxs)(c.Rny, {
         className: o()(R, T.nameplatePreview, {
           [T.nameplatePurchased]: U && !w,
-          [T.large]: "large" === k,
-          [T.xlarge]: "xlarge" === k
+          [T.large]: "large" === M,
+          [T.xlarge]: "xlarge" === M
         }),
         children: [null != Z && (0, r.jsx)(g.Z, {
           nameplate: Z,
@@ -88,8 +88,8 @@ let C = {
                 avatarSize: K,
                 status: D ? F : true,
                 "aria-hidden": true,
-                avatarDecorationOverride: null != M ? {
-                  asset: M.asset
+                avatarDecorationOverride: null != k ? {
+                  asset: k.asset
                 } : true
               }),
               decorators: (0, r.jsx)(h.ZP, {

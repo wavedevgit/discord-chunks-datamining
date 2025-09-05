@@ -121,7 +121,7 @@ let em = () => {
     eT || (0, Chunk266454.Q3)(Chunk704215.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE, {
       dismissAction: Chunk921944.L.TAKE_ACTION
     }), eC()
-  }, eM = {
+  }, ek = {
     clientThemes: {
       name: "clientThemes",
       title: Chunk388032.intl.string(Chunk388032.t.kWM48P),
@@ -464,7 +464,7 @@ let em = () => {
       perkImage: Chunk117771.Z
     }
   };
-  return eb && eI && (eM.tenureBadge = {
+  return eb && eI && (ek.tenureBadge = {
     name: "tenureBadge",
     title: Chunk388032.intl.string(Chunk388032.t.rnsqpa),
     pillText: Chunk388032.intl.string(Chunk388032.t.jyYgZ2).toLocaleUpperCase(),
@@ -473,5 +473,5 @@ let em = () => {
     onClick: () => (0, Chunk768865.k)({
       analyticsLocations: module
     })
-  }), eM
+  }), ek
 }

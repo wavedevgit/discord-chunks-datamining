@@ -223,15 +223,15 @@ let ec = e => {
       return null == (r = q.Z.settings.applications) || null == (n = r.appSettings) || null == (t = n[b]) || null == (e = t.appDmSettings) ? true : e.allowMobilePush
     }, [b]), A = N.w.useExperiment({
       location: "oauth2_authorize"
-    }), P = a.bot, M = (0, _.e7)([k.Z], () => k.Z.getDMFromUserId(null == P ? true : P.id)), {
+    }), P = a.bot, k = (0, _.e7)([M.Z], () => M.Z.getDMFromUserId(null == P ? true : P.id)), {
       appDMChannelMuteConfig: U,
       dmChannelMuted: G
-    } = (0, _.cj)([B.ZP], () => null == M ? {
+    } = (0, _.cj)([B.ZP], () => null == k ? {
       appDMChannelMuteConfig: null,
       dmChannelMuted: false
     } : {
-      appDMChannelMuteConfig: B.ZP.getChannelMuteConfig(null, M),
-      dmChannelMuted: B.ZP.isChannelMuted(null, M)
+      appDMChannelMuteConfig: B.ZP.getChannelMuteConfig(null, k),
+      dmChannelMuted: B.ZP.isChannelMuted(null, k)
     }), [V, W] = i.useState(false), [K, Q] = i.useState(false), ea = () => {
       let e = [];
       for (let n of t) e.push(...(0, L.CI)(n, t)), n === f.x.APPLICATIONS_COMMANDS && e.push(et.intl.string(et.t.Ls2XRk));
@@ -385,7 +385,7 @@ let ec = e => {
       })
     }, eh = i.useCallback(async () => {
       u()(null != P, "dm channel mute setting requires having a bot user");
-      let e = M;
+      let e = k;
       null == e && (e = await y.Z.ensurePrivateChannel(P.id)), G ? O.Z.updateAppDMOverrideSettings(null, e, a.id, {
         muted: false
       }, H.ZB.Unmuted) : (0, E.ZDy)(async () => {
@@ -397,7 +397,7 @@ let ec = e => {
           applicationId: a.id
         }, n))
       })
-    }, [M, P, G, a.id]), em = () => A.enabled ? (0, r.jsxs)("div", {
+    }, [k, P, G, a.id]), em = () => A.enabled ? (0, r.jsxs)("div", {
       className: en.directMessagesSection,
       children: [(0, r.jsx)(E.X6q, {
         variant: "heading-sm/medium",

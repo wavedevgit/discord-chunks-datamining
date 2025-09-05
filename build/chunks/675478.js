@@ -296,19 +296,19 @@ function L(e, t, n, r) {
 }
 
 function j(e) {
-  return M(e), P.updateAsync("userContent", t => {
+  return k(e), P.updateAsync("userContent", t => {
     if ((0, m.jl)(t.dismissedContents, e)) returnfalse;
     t.dismissedContents = (0, m.GV)(t.dismissedContents, e)
   }, O.fy.INFREQUENT_USER_ACTION)
 }
 
-function M(e) {
-  !E.Z.hasLoaded(O.yP.PRELOADED_USER_SETTINGS) && (k(e) || p.default.track(v.rMx.DISMISSIBLE_CONTENT_DISMISSED_BEFORE_CONNECTION_OPEN, {
+function k(e) {
+  !E.Z.hasLoaded(O.yP.PRELOADED_USER_SETTINGS) && (M(e) || p.default.track(v.rMx.DISMISSIBLE_CONTENT_DISMISSED_BEFORE_CONNECTION_OPEN, {
     content_type: o.z[e]
   }))
 }
 
-function k(e) {
+function M(e) {
   var t;
   let n = null == (t = E.Z.settings.userContent) ? true : t.dismissedContents;
   return null != n && (0, m.jl)(n, e)

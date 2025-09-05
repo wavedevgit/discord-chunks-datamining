@@ -58,16 +58,16 @@ function R(e) {
     activity: n,
     onAction: R
   });
-  let M = D === C.l.MODAL || D === C.l.MODAL_V2;
-  if (!L && x && null != w && !M) return (0, r.jsx)(S.Z, {
+  let k = D === C.l.MODAL || D === C.l.MODAL_V2;
+  if (!L && x && null != w && !k) return (0, r.jsx)(S.Z, {
     application: w,
     onAction: R,
     onClose: P,
     analyticsLocations: j
   });
-  let k = (0, i.Z)(n, A.xjy.JOIN) || (0, a.Z)(n),
+  let M = (0, i.Z)(n, A.xjy.JOIN) || (0, a.Z)(n),
     U = (null == n ? true : n.application_id) != null;
-  return k && U ? (0, r.jsxs)("div", {
+  return M && U ? (0, r.jsxs)("div", {
     className: N.buttonContainer,
     children: [(0, r.jsx)(b.Z, {
       user: t,
@@ -78,7 +78,7 @@ function R(e) {
       activity: n,
       onAction: R
     })]
-  }) : k ? (0, r.jsx)(b.Z, {
+  }) : M ? (0, r.jsx)(b.Z, {
     user: t,
     activity: n,
     onAction: R,

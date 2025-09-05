@@ -9,8 +9,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk261616 = require("./261616.js"),
   Chunk91192 = require("./91192.jsx"),
   Chunk442837 = require("./442837.js"),
+  Chunk159691 = require("./159691.js"),
   Chunk780384 = require("./780384.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk287734 = require("./287734.js"),
   Chunk872810 = require("./872810.js"),
@@ -38,7 +38,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk419953 = require("./419953.js");
 
-function M(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -47,14 +47,14 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      M(e, t, n[t])
+      k(e, t, n[t])
     })
   }
   return e
@@ -72,7 +72,7 @@ function F(e) {
   let {
     quest: v,
     memberListItemRef: C,
-    applicationStream: M,
+    applicationStream: k,
     position: F,
     closePopout: V,
     updatePosition: H,
@@ -80,12 +80,12 @@ function F(e) {
     name: W
   } = e, K = (0, s.e7)([b.Z], () => {
     var e;
-    return null != (e = b.Z.getChannel(null == M ? true : M.channelId)) ? e : null
+    return null != (e = b.Z.getChannel(null == k ? true : k.channelId)) ? e : null
   }), z = (0, P.hf)({
     quest: v,
     questContent: S.jn.MEMBERS_LIST,
     sourceQuestContent: S.jn.MEMBERS_LIST
-  }), q = (0, T.tP)(v), X = (null == v || null == (t = v.userStatus) ? true : t.claimedAt) != null, Q = (null == v || null == (m = v.userStatus) ? true : m.enrolledAt) != null, J = (null == v || null == (g = v.userStatus) ? true : g.completedAt) != null, $ = (0, s.e7)([E.Z], () => E.Z.getState().theme), ee = (0, l.wj)($) ? x.BR.DARK : x.BR.LIGHT, et = (0, s.e7)([h.Z], () => h.Z.useReducedMotion), {
+  }), q = (0, T.tP)(v), X = (null == v || null == (t = v.userStatus) ? true : t.claimedAt) != null, Q = (null == v || null == (m = v.userStatus) ? true : m.enrolledAt) != null, J = (null == v || null == (g = v.userStatus) ? true : g.completedAt) != null, $ = (0, s.e7)([E.Z], () => E.Z.getState().theme), ee = (0, c.wj)($) ? x.BR.DARK : x.BR.LIGHT, et = (0, s.e7)([h.Z], () => h.Z.useReducedMotion), {
     ref: en,
     height: er
   } = (0, _.ZP)(), [ei, ea] = i.useState(et), eo = (0, p.Aq)(), es = (0, o.eg)();
@@ -131,7 +131,7 @@ function F(e) {
       eo.dispatch(D.CkL.POPOUT_CLOSE)
     },
     ed = "top" === F ? "".concat(U, " ").concat(U, " 0 0") : "0 0 ".concat(U, " ").concat(U);
-  if (null == v || q || X && !Z(M, K)) return null;
+  if (null == v || q || X && !Z(k, K)) return null;
   let ef = () => {
       (0, I._3)({
         questId: v.id,
@@ -161,7 +161,7 @@ function F(e) {
       e.stopPropagation(), ef()
     },
     eh = () => {
-      Z(M, K) && null != K ? ((0, I._3)({
+      Z(k, K) && null != K ? ((0, I._3)({
         questId: v.id,
         questContent: S.jn.MEMBERS_LIST,
         questContentCTA: I.jZ.WATCH_STREAM,
@@ -171,7 +171,7 @@ function F(e) {
         let {
           default: e
         } = await n.e("85045").then(n.bind(n, 748862));
-        return t => (0, r.jsx)(e, k({
+        return t => (0, r.jsx)(e, M({
           username: null != W ? W : "",
           onConfirm: () => ((0, I._3)({
             questId: v.id,
@@ -179,7 +179,7 @@ function F(e) {
             questContentCTA: I.jZ.WATCH_STREAM_CONFIRM,
             trackGuildAndChannelMetadata: true,
             sourceQuestContent: S.jn.MEMBERS_LIST
-          }), d.default.selectVoiceChannel(K.id), (0, f.iV)(M))
+          }), d.default.selectVoiceChannel(K.id), (0, f.iV)(k))
         }, t))
       })) : e_()
     },
@@ -193,7 +193,7 @@ function F(e) {
       ctaText: L.intl.string(L.t.VN1Ajo),
       handleClickCta: e_,
       tileAssetType: "reward"
-    } : Z(M, K) ? {
+    } : Z(k, K) ? {
       headerText: L.intl.string(L.t.Bz6SkJ),
       ctaText: L.intl.string(L.t.BXFP39),
       handleClickCta: eh,
@@ -276,13 +276,13 @@ function F(e) {
             })]
           })
         })]
-      }), (0, r.jsx)(c.zx, {
+      }), (0, r.jsx)(l.zx, {
+        variant: "secondary",
+        text: em.ctaText,
         onClick: () => {
           eu(), em.handleClickCta()
         },
-        color: c.zx.Colors.CUSTOM,
-        className: j.ctaButton,
-        children: em.ctaText
+        fullWidth: true
       })]
     })
   })
@@ -294,7 +294,7 @@ function V(e) {
     questContent: S.jn.MEMBERS_LIST,
     trackGuildAndChannelMetadata: true,
     sourceQuestContent: S.jn.MEMBERS_LIST,
-    children: t => (0, r.jsx)(F, k({
+    children: t => (0, r.jsx)(F, M({
       impressionRef: t
     }, e))
   })

@@ -69,12 +69,12 @@ function I(e) {
     maxCharacterCount: T,
     showRemainingCharsAfterCount: S,
     className: A
-  } = e, C = (0, o.e7)([f.default], () => _.ZP.canUseIncreasedMessageLength(f.default.getCurrentUser())), N = (0, u.Z)(), R = null != T ? T : N, P = null != (b = null != S ? S : T) ? b : N / 10, w = I.length, D = null != O.upsellLongMessages && (null != w ? w : 0) > h.J6R && C, x = null != O.upsellLongMessages && !C, L = (null == (n = (0, d.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === m.Si.TIER_2, j = R - w, M = j > P, k = j < 0 && L, U = 0 === j ? g.intl.string(g.t.tU6YQ0) : j > 0 ? g.intl.formatToPlainString(g.t.qH8uFR, {
+  } = e, C = (0, o.e7)([f.default], () => _.ZP.canUseIncreasedMessageLength(f.default.getCurrentUser())), N = (0, u.Z)(), R = null != T ? T : N, P = null != (b = null != S ? S : T) ? b : N / 10, w = I.length, D = null != O.upsellLongMessages && (null != w ? w : 0) > h.J6R && C, x = null != O.upsellLongMessages && !C, L = (null == (n = (0, d.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === m.Si.TIER_2, j = R - w, k = j > P, M = j < 0 && L, U = 0 === j ? g.intl.string(g.t.tU6YQ0) : j > 0 ? g.intl.formatToPlainString(g.t.qH8uFR, {
     count: j
   }) : g.intl.string(g.t.YSRIqa), {
     analyticsLocations: G
   } = (0, c.ZP)(l.Z.CHARACTER_COUNT);
-  if (!(D && j >= 0 || !M || x && !M)) return null;
+  if (!(D && j >= 0 || !k || x && !k)) return null;
   let B = j >= 0;
   return (0, r.jsx)(c.Gt, {
     value: G,
@@ -92,7 +92,7 @@ function I(e) {
             color: "currentColor",
             className: E.premiumFlair
           }, e))
-        }) : null, M || k ? null : (0, r.jsx)(s.ua7, {
+        }) : null, k || M ? null : (0, r.jsx)(s.ua7, {
           text: U,
           position: "top",
           children: e => (0, r.jsx)(s.Text, v(y({
@@ -108,7 +108,7 @@ function I(e) {
         children: g.intl.format(g.t.qH8uFR, {
           count: j
         })
-      }), x && !M ? (0, r.jsx)(p.Z, {
+      }), x && !k ? (0, r.jsx)(p.Z, {
         className: E.upsell,
         iconOnly: (null == (i = O.upsellLongMessages) ? true : i.iconOnly) || false,
         remaining: j

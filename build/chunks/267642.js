@@ -17,7 +17,7 @@ require.d(exports, {
   cP: () => R,
   e9: () => w,
   ee: () => q,
-  f2: () => M,
+  f2: () => k,
   gZ: () => F,
   ge: () => x,
   ig: () => A,
@@ -25,7 +25,7 @@ require.d(exports, {
   nW: () => P,
   tb: () => j,
   tl: () => z,
-  vx: () => k,
+  vx: () => M,
   y4: () => W,
   yw: () => H
 }), require("./583741.js"), require("./415506.js"), require("./388685.js"), require("./642613.js");
@@ -283,11 +283,11 @@ function j(e, t) {
   return null == t || null != e && e >= t
 }
 
-function M(e, t) {
+function k(e, t) {
   return j(e.premiumTier, t)
 }
 
-function k(e) {
+function M(e) {
   return i().values(e).filter(e => e.isAvailable())
 }
 
@@ -296,7 +296,7 @@ function U(e) {
     fractionalState: t
   } = e, n = d.Z.getPremiumTypeSubscription();
   u.Z.hasFetched || u.Z.isFetching || (0, o.X8)();
-  let r = k(u.Z.boostSlots),
+  let r = M(u.Z.boostSlots),
     i = null == n ? true : n.isPausedOrPausePending,
     a = r.length > 0;
   if (i && t === b.a$.NONE && !a) return y.intl.string(y.t.mOWsFx);

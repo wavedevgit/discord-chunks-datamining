@@ -48,8 +48,8 @@ let P = e => {
         className: x,
         emojiGrid: L,
         guildId: j,
-        pickerIntention: M,
-        channel: k
+        pickerIntention: k,
+        channel: M
       } = e,
       {
         enabled: U
@@ -97,7 +97,7 @@ let P = e => {
       W = (0, a.e7)([c.ZP], () => c.ZP.expandedSectionsByGuildIds),
       {
         newlyAddedEmojis: K
-      } = (0, v.Z)(j, M),
+      } = (0, v.Z)(j, k),
       z = (null == B ? true : B.type) === T.ld.EMOJI ? B.subCategory : S.t0.NONE;
     if (i.useEffect(() => {
         let e = Date.now();
@@ -156,9 +156,9 @@ let P = e => {
     D = U && "CREATE_EMOJI" === t.type ? A.intl.string(A.t.XCmLfH) : "EXPAND_OR_COLLAPSE_EMOJI" === t.type ? W.has(t.guildId) ? A.intl.string(A.t["/K2RDA"]) : A.intl.string(A.t.NZI2Zm) : t.allNamesString;
     let J = U && "CREATE_EMOJI" === t.type ? A.intl.string(A.t["Z/r7IS"]) : P({
       inspectedEmoji: t,
-      channel: k,
+      channel: M,
       guildId: j,
-      intention: M,
+      intention: k,
       guild: Z
     });
     return (0, r.jsx)(p.Z, {

@@ -45,13 +45,13 @@ let C = e => {
       analyticsLocations: x
     } = (0, _.ZP)(f.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
     [L, j] = i.useState(false),
-    M = (0, s.e7)([d.Z], () => d.Z.useReducedMotion),
-    k = (0, v.mN)(),
+    k = (0, s.e7)([d.Z], () => d.Z.useReducedMotion),
+    M = (0, v.mN)(),
     {
       fractionalState: U
     } = (0, p.Z)(),
     G = (0, m.W)();
-  k ? (t = T.intl.string(T.t["+vt7w8"]), n = T.intl.string(T.t.LgHbnJ)) : (t = T.intl.string(T.t.LgHbnJ), n = T.intl.string(T.t["+vt7w8"]));
+  M ? (t = T.intl.string(T.t["+vt7w8"]), n = T.intl.string(T.t.LgHbnJ)) : (t = T.intl.string(T.t.LgHbnJ), n = T.intl.string(T.t["+vt7w8"]));
   let B = () => {
     C(false), h.default.track(I.rMx.NITRO_HOME_NAVIGATION, {
       current_component: O.MQ.SEE_ALL,
@@ -62,7 +62,7 @@ let C = e => {
   return (0, r.jsx)(u.yWw, {
     className: o()(S.allPerksScroller, {
       [S.open]: a,
-      [S.openCloseReduceMotion]: M
+      [S.openCloseReduceMotion]: k
     }),
     ref: P,
     children: (0, r.jsx)(c.$, {
@@ -91,7 +91,7 @@ let C = e => {
             cards: (0, v.ZM)({
               perksCards: D,
               variant: O.gM.CARD_CAROUSEL_FIRST_ROW,
-              isPremiumSubscriber: k,
+              isPremiumSubscriber: M,
               hideCardsOnNarrowScreen: true,
               fractionalState: U,
               isInReverseTrial: G
@@ -107,7 +107,7 @@ let C = e => {
             cards: (0, v.ZM)({
               perksCards: D,
               variant: O.gM.CARD_CAROUSEL_SECOND_ROW,
-              isPremiumSubscriber: k,
+              isPremiumSubscriber: M,
               hideCardsOnNarrowScreen: true,
               fractionalState: U,
               isInReverseTrial: G
@@ -123,7 +123,7 @@ let C = e => {
             cards: (0, v.ZM)({
               perksCards: D,
               variant: O.gM.CARD_CAROUSEL_THIRD_ROW,
-              isPremiumSubscriber: k,
+              isPremiumSubscriber: M,
               hideCardsOnNarrowScreen: true,
               fractionalState: U,
               isInReverseTrial: G

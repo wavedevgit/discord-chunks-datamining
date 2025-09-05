@@ -133,7 +133,7 @@ let y = () => {
         status: Chunk981631.hUK.PAID
       })), require !== Chunk45474.R.PREVIEW && null !== N && R(null)
     }, [require, E, A, v, N]);
-    let M = Chunk647438.useCallback(async () => {
+    let k = Chunk647438.useCallback(async () => {
       j(true), await (0, Chunk481060.ZDy)(async () => t => (0, r.jsx)(d.x, b(g({}, t), {
         onClose: () => {
           t.onClose(), j(false)
@@ -177,8 +177,8 @@ let y = () => {
       })))
     }, [module, E, v, N, P, D, require, A]);
     return (0, Chunk647438.useEffect)(() => {
-      L && M()
-    }, [require, L, M]), (0, Chunk951288.jsxs)(Chunk450272.$0, {
+      L && k()
+    }, [require, L, k]), (0, Chunk951288.jsxs)(Chunk450272.$0, {
       children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-xl/semibold",
         children: "Cancellation Flow"

@@ -104,8 +104,8 @@ function L(e) {
       channel: R,
       entry: L,
       closePopout: j,
-      onReaction: M,
-      onVoiceChannelPreview: k
+      onReaction: k,
+      onVoiceChannelPreview: M
     } = e,
     {
       largeImage: U
@@ -202,8 +202,8 @@ function L(e) {
   return (0, r.jsxs)(I.yR, {
     children: [Q, (0, r.jsx)(I.St, {
       children: (0, r.jsx)(I.WT, {
-        onReaction: M,
-        onVoiceChannelPreview: k,
+        onReaction: k,
+        onVoiceChannelPreview: M,
         user: V,
         channel: R,
         generateReactionImage: z,

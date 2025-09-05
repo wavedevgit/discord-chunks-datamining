@@ -268,7 +268,7 @@ function x(e) {
         S >= x - 1 ? P(0) : P(S + 1)
     }
   }
-  let M = (() => {
+  let k = (() => {
     if (null != v) {
       var e;
       return null == (e = v[S]) ? true : e.id
@@ -294,7 +294,7 @@ function x(e) {
           role: "combobox",
           "aria-controls": s,
           "aria-expanded": x > 0,
-          "aria-activedescendant": x > 0 && null != M ? M : true,
+          "aria-activedescendant": x > 0 && null != k ? k : true,
           "aria-autocomplete": "list",
           spellCheck: false
         })

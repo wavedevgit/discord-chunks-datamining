@@ -148,7 +148,7 @@ function j(e, t, n, r, o) {
   return l
 }
 
-function M(e, t, n) {
+function k(e, t, n) {
   if (null == e) return e;
   var r = [],
     i = 0;
@@ -157,7 +157,7 @@ function M(e, t, n) {
   }), r
 }
 
-function k(e) {
+function M(e) {
   if (false === e._status) {
     var t = e._result;
     (t = t()).then(function(t) {
@@ -184,20 +184,20 @@ var U = "function" == typeof reportError ? reportError : function(e) {
 
 function G() {}
 exports.Children = {
-  map: M,
+  map: k,
   forEach: function(e, t, n) {
-    M(e, function() {
+    k(e, function() {
       t.apply(this, arguments)
     }, n)
   },
   count: function(e) {
     var t = 0;
-    return M(e, function() {
+    return k(e, function() {
       t++
     }), t
   },
   toArray: function(e) {
-    return M(e, function(e) {
+    return k(e, function(e) {
       return e
     }) || []
   },
@@ -267,7 +267,7 @@ exports.Children = {
       _status: false,
       _result: e
     },
-    _init: k
+    _init: M
   }
 }, exports.memo = function(e, t) {
   return {

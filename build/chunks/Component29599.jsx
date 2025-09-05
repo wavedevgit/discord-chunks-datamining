@@ -46,7 +46,7 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function M(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -59,7 +59,7 @@ function M(e) {
   return e
 }
 
-function k(e, t) {
+function M(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -71,7 +71,7 @@ function k(e, t) {
 }
 
 function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -151,7 +151,7 @@ function G(e) {
         })
       })]
     }), _ && (0, r.jsx)(d.u_l, {
-      renderModal: e => (0, r.jsx)(v.Z, U(M({}, e), {
+      renderModal: e => (0, r.jsx)(v.Z, U(k({}, e), {
         onClose: A,
         onClaim: s,
         code: a,
@@ -183,12 +183,12 @@ let B = function() {
     claimedEndedOutboundPromotions: y,
     claimedOutboundPromotionCodeMap: v,
     addClaimedOutboundPromotionCode: j
-  } = (0, Chunk725727.lG)(), M = Chunk178100.length + Chunk518638.length > 0, k = Chunk163684.g.useExperiment({
+  } = (0, Chunk725727.lG)(), k = Chunk178100.length + Chunk518638.length > 0, M = Chunk163684.g.useExperiment({
     location: "EntitlementGifts"
   }, {
     autoTrackExposure: false,
     disable: Chunk120356
-  }).enabled && M;
+  }).enabled && k;
 
   function U() {
     Chunk230711.Z.open(Chunk981631.oAB.PREMIUM)
@@ -206,9 +206,9 @@ let B = function() {
       }),
       u = (0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-md/semibold",
-        children: M ? Chunk388032.intl.string(Chunk388032.t.wFsj3N) : true
+        children: k ? Chunk388032.intl.string(Chunk388032.t.wFsj3N) : true
       }),
-      f = k ? (0, Chunk951288.jsxs)("div", {
+      f = M ? (0, Chunk951288.jsxs)("div", {
         className: Chunk670787.promoHeaderContainer,
         children: [(0, Chunk951288.jsx)(Chunk481060.SrA, {
           size: "md",
@@ -233,16 +233,16 @@ let B = function() {
       }) : null;
     return (0, Chunk951288.jsxs)("div", {
       className: Chunk670787.marginContainer,
-      children: [Chunk755721, M ? (0, Chunk951288.jsx)(Chunk481060.$i$, {
+      children: [Chunk755721, k ? (0, Chunk951288.jsx)(Chunk481060.$i$, {
         className: Chunk670787.divider
       }) : null, (0, Chunk951288.jsx)(Chunk504983.Z, {
         className: Chunk670787.gradientContainer,
-        isShown: k,
+        isShown: M,
         type: Chunk504983.Y.PREMIUM,
         hasBackground: true,
         children: (0, Chunk951288.jsxs)(Chunk481060.hjN, {
           className: o()({
-            [Chunk670787.marginContainer]: !k
+            [Chunk670787.marginContainer]: !M
           }),
           children: [Chunk570140, Chunk518638.map(e => {
             let {

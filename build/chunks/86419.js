@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   $b: () => U,
-  Bu: () => M,
-  ES: () => k,
+  Bu: () => k,
+  ES: () => M,
   Gv: () => T,
   Hy: () => O,
   M8: () => I,
@@ -181,7 +181,7 @@ function j(e, t, n) {
   L(r.type, t, a.length > 0 ? a : [])
 }
 
-function M(e, t, n) {
+function k(e, t, n) {
   let r = R(),
     i = r.find(t => t.type === e);
   if (null == i || !(0, l.W)(i)) return;
@@ -197,7 +197,7 @@ function M(e, t, n) {
   u.Z.setPendingWidgets(c)
 }
 
-function k(e, t) {
+function M(e, t) {
   var n, r, i;
   let a, s = R(),
     c = s.find(t => t.type === e),

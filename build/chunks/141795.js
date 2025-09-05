@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   mw: () => j,
-  nH: () => k
+  nH: () => M
 }), require("./415506.js"), require("./388685.js"), require("./35282.js"), require("./704826.js"), require("./49124.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -109,19 +109,19 @@ let L = "Content-MD5";
 var j = function(e) {
   return e.NOT_STARTED = "NOT_STARTED", e.STARTED = "STARTED", e.UPLOADING = "UPLOADING", e.ERROR = "ERROR", e.COMPLETED = "COMPLETED", e.CANCELED = "CANCELED", e.REMOVED_FROM_MSG_DRAFT = "REMOVED_FROM_MSG_DRAFT", e
 }({});
-class M {
+class k {
   constructor() {
     C(this, "numUploadAttempts", true), C(this, "timing", {}), C(this, "compressAndExtractDisabled", true), C(this, "fileAlreadyPrepped", true), C(this, "imageCompressionQuality", true), C(this, "videoCompressionQuality", true), C(this, "convertedMimeType", true), C(this, "sourceMediaWidth", true), C(this, "sourceMediaHeight", true), C(this, "sourceMediaFormat", true), C(this, "sourceVideoBitrate", true), C(this, "sourceVideoFramerate", true), C(this, "videoDurationMs", true), C(this, "sourceVideoProfile", true), C(this, "sourceVideoLevel", true), C(this, "targetVideoWidth", true), C(this, "targetVideoHeight", true), C(this, "targetVideoBitrate", true), C(this, "targetVideoCodec", true), C(this, "targetVideoFramerate", true), C(this, "targetVideoIsHdr", true), C(this, "hevcIsSupported", true), C(this, "progressUpdateGranularity", true), C(this, "validUploadHash", true), C(this, "psnr", true), C(this, "ssim", true), C(this, "origin", true), C(this, "psnrMeasurementLatencyMs", true), C(this, "ssimMeasurementLatencyMs", true), C(this, "uploadResumptionCount", 0), C(this, "uploadResumptionPosition", 0), C(this, "uploadResumptionReason", true), C(this, "conversionFailureReason", true)
   }
 }
-class k extends Chunk476326.ZP {
+class M extends Chunk476326.ZP {
   static fromJson(e) {
     let {
       item: t,
       channelId: n,
       showLargeMessageDialog: r,
       reactNativeFileIndex: i
-    } = e, a = new k(t, n, r, i);
+    } = e, a = new M(t, n, r, i);
     return Object.entries(e).forEach(e => {
       let [t, n] = e;
       t.startsWith("_") || (a[t] = n)
@@ -426,7 +426,7 @@ class k extends Chunk476326.ZP {
     return "CANCELED" === this.status || "REMOVED_FROM_MSG_DRAFT" === this.status
   }
   resetState() {
-    return this.status = "NOT_STARTED", this.uploadedFilename = true, this.responseUrl = true, this.error = true, this.startTime = true, this.uploadAnalytics = new M, this.uploadAttempts = 0, this._aborted = false, this._abortController = new AbortController, super.resetState()
+    return this.status = "NOT_STARTED", this.uploadedFilename = true, this.responseUrl = true, this.error = true, this.startTime = true, this.uploadAnalytics = new k, this.uploadAttempts = 0, this._aborted = false, this._abortController = new AbortController, super.resetState()
   }
   async delete() {
     if (null == this.uploadedFilename) return;
@@ -523,7 +523,7 @@ class k extends Chunk476326.ZP {
   }
   constructor(e, t, n, r) {
     var i, a, o, s;
-    super(e, n), C(this, "status", "NOT_STARTED"), C(this, "channelId", true), C(this, "responseUrl", true), C(this, "currentSize", true), C(this, "preCompressionSize", true), C(this, "postCompressionSize", true), C(this, "loaded", 0), C(this, "reactNativeFileIndex", true), C(this, "error", true), C(this, "reactNativeFilePrepped", false), C(this, "startTime", true), C(this, "uploadAnalytics", new M), C(this, "contentHash", true), C(this, "etag", true), C(this, "uploadAttempts", 0), C(this, "_abortController", true), C(this, "_xhr", true), C(this, "_aborted", false), C(this, "_uploadHttpClient", true), C(this, "_libdiscoreEnabled", true), C(this, "_resumptionEnabled", true), C(this, "createResumeAwareProgressFn", e => t => {
+    super(e, n), C(this, "status", "NOT_STARTED"), C(this, "channelId", true), C(this, "responseUrl", true), C(this, "currentSize", true), C(this, "preCompressionSize", true), C(this, "postCompressionSize", true), C(this, "loaded", 0), C(this, "reactNativeFileIndex", true), C(this, "error", true), C(this, "reactNativeFilePrepped", false), C(this, "startTime", true), C(this, "uploadAnalytics", new k), C(this, "contentHash", true), C(this, "etag", true), C(this, "uploadAttempts", 0), C(this, "_abortController", true), C(this, "_xhr", true), C(this, "_aborted", false), C(this, "_uploadHttpClient", true), C(this, "_libdiscoreEnabled", true), C(this, "_resumptionEnabled", true), C(this, "createResumeAwareProgressFn", e => t => {
       let n = t.loaded + e,
         r = t.total + e,
         i = n - this.loaded;

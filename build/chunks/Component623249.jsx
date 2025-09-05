@@ -77,7 +77,7 @@ function N(e) {
   } = e, [N, P] = (0, i.useState)(a), w = (0, m.KX)(), D = (0, _.O5)(), x = null == (t = (0, p.WD)()) ? true : t.getId(), L = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), j = (0, y.g2)({
     useReducedMotion: L,
     className: I.colorTransition
-  }), M = N.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), k = (0, h.Bz)(n), U = (0, s.e7)([f.Z], () => f.Z.getState().theme), G = (0, c.wj)(U) ? O.BRd.DARK : O.BRd.LIGHT, {
+  }), k = N.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), M = (0, h.Bz)(n), U = (0, s.e7)([f.Z], () => f.Z.getState().theme), G = (0, c.wj)(U) ? O.BRd.DARK : O.BRd.LIGHT, {
     startConsoleQuest: B,
     startingConsoleQuest: Z
   } = (0, m.GI)({
@@ -102,7 +102,7 @@ function N(e) {
       impressionId: x,
       sourceQuestContent: A
     })
-  }, V = () => k ? (0, r.jsx)(u.ua7, {
+  }, V = () => M ? (0, r.jsx)(u.ua7, {
     "aria-label": n.config.messages.gameTitle,
     text: () => (0, r.jsxs)("div", {
       className: I.tooltip,
@@ -166,7 +166,7 @@ function N(e) {
             size: "sm"
           }),
           text: v.intl.string(v.t.XF4wuL),
-          errors: k ? true : M.map(e => e.message),
+          errors: M ? true : k.map(e => e.message),
           gameTile: V()
         })]
       })]

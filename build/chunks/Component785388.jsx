@@ -96,7 +96,7 @@ function ee(e) {
 }
 
 function et(e, t, n, i) {
-  let a = null == e.id ? U.ZP.getURL(e.name) : k.ZP.getEmojiURL({
+  let a = null == e.id ? U.ZP.getURL(e.name) : M.ZP.getEmojiURL({
     id: e.id,
     animated: e.animated,
     size: t
@@ -227,7 +227,7 @@ function ei(e) {
     reactionType: s,
     onRemoveReactor: l,
     disableManage: c = false
-  } = e, d = (0, u.e7)([R.default], () => R.default.getId()), _ = (0, u.e7)([M.default], () => M.default.getUser(n.id), [n]), m = (0, C.$R)(a), E = (0, u.e7)([L.Z], () => L.Z.can(F.Plq.MANAGE_MESSAGES, a) && m) || d === n.id, b = (0, u.e7)([w.ZP, P.Z, j.Z], () => G.ZP.getName(o, a.id, n));
+  } = e, d = (0, u.e7)([R.default], () => R.default.getId()), _ = (0, u.e7)([k.default], () => k.default.getUser(n.id), [n]), m = (0, C.$R)(a), E = (0, u.e7)([L.Z], () => L.Z.can(F.Plq.MANAGE_MESSAGES, a) && m) || d === n.id, b = (0, u.e7)([w.ZP, P.Z, j.Z], () => G.ZP.getName(o, a.id, n));
 
   function y() {
     S.WO({

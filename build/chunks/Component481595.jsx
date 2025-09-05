@@ -39,19 +39,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk138475 = require("./138475.js");
 
-function k(e) {
+function M(e) {
   let {
     application: t,
     sku: n,
     isEmbeddedIAP: i
   } = e;
   returntrue !== i ? null : (0, r.jsxs)("div", {
-    className: M.skuHeading,
+    className: k.skuHeading,
     children: [(0, r.jsx)(m.Z, {
       game: t
     }), (0, r.jsx)(c.X6q, {
       variant: "heading-lg/bold",
-      className: M.skuHeadingText,
+      className: k.skuHeadingText,
       children: n.name
     })]
   })
@@ -112,22 +112,22 @@ function U(e) {
   }, [et, en, Z, er.applicationId, er.id, es, X, J]);
   let ep = null != ei && ei.length > 0 && (Z === I.c || null === e_) && Q ? E.w.SELECT_PAYMENT_METHOD : true;
   return (0, r.jsxs)("div", {
-    className: M.stepBody,
+    className: k.stepBody,
     children: [(0, r.jsx)(E.Y, {
       paymentRestrictionBannerType: ep
     }), el ? (0, r.jsx)(f.Z, {
       icon: (0, c.GSL)(S.Z),
       iconSize: f.Z.Sizes.SMALL,
       color: f.Z.Colors.WARNING,
-      className: M.errorBlock,
+      className: k.errorBlock,
       children: j.intl.string(j.t.OvMyMT)
     }, "TEST_MODE") : null, (0, A.yE)(U.flags, L.udG.EMBEDDED) && q === h.O.ERROR ? (0, r.jsx)(f.Z, {
       icon: (0, c.GSL)(S.Z),
       iconSize: f.Z.Sizes.SMALL,
       color: f.Z.Colors.ERROR,
-      className: M.errorBlock,
+      className: k.errorBlock,
       children: j.intl.string(j.t.tAmECg)
-    }, "DEV_SHELF_ERROR") : null, (0, r.jsx)(k, {
+    }, "DEV_SHELF_ERROR") : null, (0, r.jsx)(M, {
       application: U,
       sku: er,
       isEmbeddedIAP: W
@@ -143,12 +143,12 @@ function U(e) {
       skuPricePreview: es
     }) : null == z ? (0, r.jsx)(c.$jN, {
       type: c.$jN.Type.WANDERING_CUBES,
-      className: M.invoiceSpinner
+      className: k.invoiceSpinner
     }) : (0, r.jsx)(x.E, {
       sku: er,
       value: ""
     }), (0, r.jsxs)("div", {
-      className: M.paymentSourceWrapper,
+      className: k.paymentSourceWrapper,
       children: [(0, r.jsx)(c.vwX, {
         tag: c.RB0.H5,
         children: j.intl.string(j.t.mmDvV1)
@@ -169,7 +169,7 @@ function U(e) {
         showWithdrawalWaiver: eu,
         disabled: ed,
         subscriptionPlan: null,
-        finePrintClassname: M.fineprint,
+        finePrintClassname: k.fineprint,
         purchaseType: K,
         isGift: J,
         checkboxLabel: er.productLine === L.POd.COLLECTIBLES ? j.intl.format(j.t["1EdAlZ"], {

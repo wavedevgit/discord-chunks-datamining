@@ -2,7 +2,7 @@
 /** chunk id: 272053, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => M
 }), require("./388685.js"), require("./35282.js"), require("./415506.js"), require("./539854.js"), require("./993155.js");
 var r, Chunk348327 = require("./348327.js"),
   a = require.n(Chunk348327),
@@ -193,7 +193,7 @@ function j(e) {
   if (a()(e.stream, T)) returnfalse;
   T = null != (t = e.stream) ? t : null
 }
-class M extends(r = Chunk442837.ZP.Store) {
+class k extends(r = Chunk442837.ZP.Store) {
   initialize() {
     L(), this.waitFor(Chunk553795.Z), this.syncWith([Chunk246946.Z], L)
   }
@@ -201,8 +201,8 @@ class M extends(r = Chunk442837.ZP.Store) {
     return T
   }
 }
-m(M, "displayName", "ExternalStreamingStore");
-let k = new M(Chunk570140.Z, {
+m(k, "displayName", "ExternalStreamingStore");
+let M = new k(Chunk570140.Z, {
   STREAMING_UPDATE: j,
   USER_CONNECTIONS_UPDATE: () => x._check()
 })

@@ -41,8 +41,8 @@ let x = Chunk647438.forwardRef(function(e, t) {
     channel: x,
     className: L,
     id: j,
-    disabled: M,
-    submitting: k,
+    disabled: k,
+    submitting: M,
     placeholder: U,
     required: G,
     textAreaPaddingClassName: B,
@@ -74,7 +74,7 @@ let x = Chunk647438.forwardRef(function(e, t) {
     "aria-describedby": ef,
     "aria-labelledby": e_,
     "aria-autocomplete": ep
-  } = e, eh = i.useRef(null), em = i.useRef(null), eg = i.useRef(true), eE = i.useRef(true), eb = M || k, ey = i.useCallback((e, t, n) => {
+  } = e, eh = i.useRef(null), em = i.useRef(null), eg = i.useRef(true), eE = i.useRef(true), eb = k || M, ey = i.useCallback((e, t, n) => {
     var r;
     let {
       value: i,
@@ -231,7 +231,7 @@ let x = Chunk647438.forwardRef(function(e, t) {
         readOnly: eb,
         spellCheck: ee,
         autoFocus: !er,
-        canFocus: !M,
+        canFocus: !k,
         onChange: ew,
         onFocus: H,
         onBlur: Y,

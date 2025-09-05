@@ -73,8 +73,8 @@ let D = new Set(["discord_erlpack", "discord_game_utils", "discord_rpc", "discor
   x = false,
   L = "lastImageSaveDirectory",
   j = /[<>:"/\\|?*@]/g,
-  M = /(\.[a-zA-Z0-9]+):[^.]*$/,
-  k = /(\.[a-zA-Z0-9]+)%3A.+$/,
+  k = /(\.[a-zA-Z0-9]+):[^.]*$/,
+  M = /(\.[a-zA-Z0-9]+)%3A.+$/,
   U = /[^a-zA-Z0-9]/g,
   G = /\.[^.]*$/;
 var B = function(e) {
@@ -84,9 +84,9 @@ var B = function(e) {
 function Z(e) {
   try {
     let t = decodeURIComponent(e);
-    return (t = (t = t.replace(M, "$1")).replace(/(.+)@([a-zA-Z0-9]+)$/, "$1.$2")).replace(j, "_")
+    return (t = (t = t.replace(k, "$1")).replace(/(.+)@([a-zA-Z0-9]+)$/, "$1.$2")).replace(j, "_")
   } catch (t) {
-    return e.replace(k, "$1").replace(/(.+)%40([a-zA-Z0-9]+)$/, "$1.$2").replace(j, "_")
+    return e.replace(M, "$1").replace(/(.+)%40([a-zA-Z0-9]+)$/, "$1.$2").replace(j, "_")
   }
 }
 async function F(e) {

@@ -48,17 +48,17 @@ module.exports = function(e, t) {
       return
     }
     var j = O.getSelection(),
-      M = j.merge({
+      k = j.merge({
         anchorOffset: N,
         focusOffset: R,
         isBackward: false
       }),
-      k = w.getEntityAt(N),
-      U = s(k) ? P.getEntity(k) : null,
+      M = w.getEntityAt(N),
+      U = s(M) ? P.getEntity(M) : null,
       G = null != U ? U.getMutability() : null,
       B = "MUTABLE" === G,
       Z = B ? "spellcheck-change" : "apply-entity",
-      F = r.replaceText(P, M, y, w.getInlineStyleAt(N), B ? w.getEntityAt(N) : null);
+      F = r.replaceText(P, k, y, w.getInlineStyleAt(N), B ? w.getEntityAt(N) : null);
     if (d) n = h.anchorOffset, p = (c = N + Math.min(n, o = h.focusOffset)) + Math.abs(n - o), n = c, o = p;
     else {
       var V = y.length - D.length;

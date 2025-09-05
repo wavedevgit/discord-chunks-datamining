@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   EK: () => G,
-  Io: () => M,
+  Io: () => k,
   N1: () => B,
-  NY: () => k,
+  NY: () => M,
   Ox: () => x,
   Vq: () => j,
   Wf: () => U,
@@ -185,7 +185,7 @@ function j(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     id: t
   } = e, n = (0, i.e7)([h.Z], () => h.Z.getChannel(t)), a = T.intl.string(T.t.zLZPmp).toLowerCase(), o = "text", s = true;
@@ -201,7 +201,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   let {
     id: t,
     itemId: n,
