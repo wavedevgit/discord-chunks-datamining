@@ -114,7 +114,7 @@ function b(e) {
     a || N(false), null == j || j(false)
   }, [a, j]), T = o || null == u ? null : (0, p.Or)(u), A = !o && d > 0 ? (0, p.Ne)(d, g ? c.Z.BACKGROUND_ACCENT : c.Z.STATUS_DANGER) : null;
   return (0, r.jsx)(s.tEY, {
-    children: (0, r.jsx)(s.P3F, (t = function(e) {
+    children: (0, r.jsxs)(s.P3F, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -148,19 +148,20 @@ function b(e) {
       "aria-posinset": S,
       "aria-expanded": o,
       "aria-owns": O,
-      children: (0, r.jsxs)(s.aRk, {
+      children: [(0, r.jsx)(s.nn4, {
+        children: f.intl.formatToPlainString(f.t["90/DwM"], {
+          folderName: b,
+          mentions: d
+        })
+      }), (0, r.jsx)(s.aRk, {
+        "aria-hidden": true,
         isFolder: true,
         upperBadge: T,
         lowerBadge: A,
         lowerBadgeSize: {
           width: (0, s.OVM)(d)
         },
-        children: [(0, r.jsx)(s.nn4, {
-          children: f.intl.formatToPlainString(f.t["90/DwM"], {
-            folderName: b,
-            mentions: d
-          })
-        }), (0, r.jsx)("div", {
+        children: (0, r.jsx)("div", {
           className: h.folderButtonInner,
           children: null != y ? (0, r.jsx)("div", {
             className: h.folderIconWrapper,
@@ -170,8 +171,8 @@ function b(e) {
             hovered: I,
             sorting: a
           })
-        })]
-      })
+        })
+      })]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
