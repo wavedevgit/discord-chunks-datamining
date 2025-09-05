@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk998502 = require("./998502.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk311795 = require("./311795.js");
+  Chunk995751 = require("./995751.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -116,8 +116,8 @@ class N extends Chunk647438.Component {
     return this.props.upload.item.platform !== Chunk476326.ow.WEB ? null : this.props.upload.isImage ? (0, Chunk951288.jsx)(C, {
       file: this.props.upload.item.file
     }) : (0, Chunk951288.jsx)("div", {
-      className: o()(Chunk311795.icon, {
-        [Chunk311795[null != (e = this.props.upload.classification) ? module : ""]]: true
+      className: o()(Chunk995751.icon, {
+        [Chunk995751[null != (e = this.props.upload.classification) ? module : ""]]: true
       })
     })
   }
@@ -152,30 +152,30 @@ class R extends Chunk647438.Component {
       "aria-label": Chunk388032.intl.string(Chunk388032.t["3AS4UF"]),
       size: Chunk481060.CgR.DYNAMIC,
       transitionState: exports,
-      className: Chunk311795.uploadModal,
+      className: Chunk995751.uploadModal,
       parentComponent: "UploadAttachment",
       children: [(0, Chunk951288.jsxs)("div", {
-        className: Chunk311795.inner,
+        className: Chunk995751.inner,
         children: [(0, Chunk951288.jsxs)("div", {
-          className: o()(Chunk311795.file, {
-            [Chunk311795.expandable]: module.isImage
+          className: o()(Chunk995751.file, {
+            [Chunk995751.expandable]: module.isImage
           }),
           children: [(0, Chunk951288.jsx)(N, {
             upload: module
           }), (0, Chunk951288.jsxs)("div", {
-            className: Chunk311795.description,
+            className: Chunk995751.description,
             children: [(0, Chunk951288.jsx)("div", {
-              className: Chunk311795.filename,
+              className: Chunk995751.filename,
               children: module.showLargeMessageDialog ? Chunk388032.intl.formatToPlainString(Chunk388032.t.QWQxtL, {
                 maxLength: require
               }) : module.filename
             }), module.showLargeMessageDialog ? (0, Chunk951288.jsx)("div", {
-              className: Chunk311795.subtitle,
+              className: Chunk995751.subtitle,
               children: Chunk388032.intl.string(Chunk388032.t.Plcu09)
             }) : null]
           })]
         }), (0, Chunk951288.jsx)("div", {
-          className: Chunk311795.form,
+          className: Chunk995751.form,
           children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
             gap: 24,
             children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
@@ -217,9 +217,9 @@ class R extends Chunk647438.Component {
           })
         })]
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk311795.footer,
+        className: Chunk995751.footer,
         children: (0, Chunk951288.jsxs)("div", {
-          className: o()(Chunk311795.hasSpoilers, Chunk311795.footerRightAlign),
+          className: o()(Chunk995751.hasSpoilers, Chunk995751.footerRightAlign),
           children: [(0, Chunk951288.jsx)(Chunk755721.zx, {
             type: "button",
             look: Chunk755721.zx.Looks.LINK,

@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk261616 = require("./261616.js"),
   Chunk481060 = require("./481060.js"),
   Chunk393238 = require("./393238.js"),
-  Chunk639156 = require("./639156.js");
+  Chunk484201 = require("./484201.js");
 let d = 100;
 
 function f(e) {
@@ -55,9 +55,13 @@ function f(e) {
         children: t({
           onClick: S
         })
-      }), (0, r.jsx)("div", {
-        ref: y,
-        children: a
+      }), (0, r.jsx)(l.Rny, {
+        enabled: !b,
+        children: (0, r.jsx)("div", {
+          ref: y,
+          "aria-hidden": !b,
+          children: a
+        })
       })]
     })
   })

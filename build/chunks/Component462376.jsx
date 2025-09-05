@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk624138 = require("./624138.js"),
   Chunk51144 = require("./51144.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk869306 = require("./869306.js");
+  Chunk451964 = require("./451964.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -53,7 +53,7 @@ class E extends Chunk647438.Component {
     if (null == exports || null == require)
       if (null != module) return (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
-        className: Chunk869306.acronym,
+        className: Chunk451964.acronym,
         "aria-hidden": true,
         children: module
       });
@@ -62,7 +62,7 @@ class E extends Chunk647438.Component {
       src: exports,
       "aria-label": require,
       size: Chunk481060.EFr.SIZE_32,
-      className: Chunk869306.inviteRowAvatar
+      className: Chunk451964.inviteRowAvatar
     })
   }
   render() {
@@ -84,19 +84,19 @@ class E extends Chunk647438.Component {
     }) : (0, Chunk951288.jsx)(Chunk755721.zx, {
       color: Chunk755721.zx.Colors.GREEN,
       look: Chunk630810 ? Chunk755721.zx.Looks.FILLED : Chunk755721.zx.Looks.OUTLINED,
-      className: Chunk869306.inviteRowButton,
+      className: Chunk451964.inviteRowButton,
       size: Chunk755721.zx.Sizes.SMALL,
       submitting: Chunk647438,
       onClick: this.handleClickInvite,
       children: Chunk388032.intl.string(Chunk388032.t.jYnGPD)
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk869306.inviteRow,
+      className: Chunk451964.inviteRow,
       onMouseEnter: this.handleMouseEnter,
       onMouseLeave: this.handleMouseLeave,
       children: [(0, Chunk951288.jsxs)("div", {
-        className: Chunk869306.inviteRowInfo,
+        className: Chunk451964.inviteRowInfo,
         children: [this.renderUserOrChannel(), (0, Chunk951288.jsxs)("div", {
-          className: Chunk869306.inviteRowName,
+          className: Chunk451964.inviteRowName,
           children: [Chunk51144.ZP.getName(exports), null != require ? (0, Chunk933557.F6)(require, Chunk594174.default, Chunk699516.Z, true) : null]
         })]
       }), module]

@@ -1,13 +1,13 @@
-/** Chunk was on 77756 **/
+/** Chunk was on 10576 **/
 /** chunk id: 479099, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => w,
-  f: () => C
+  Z: () => O,
+  f: () => p
 }), require("./388685.js");
-var a, Chunk951288 = require("./951288.js"),
+var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -18,144 +18,144 @@ var a, Chunk951288 = require("./951288.js"),
   Chunk695346 = require("./695346.js"),
   Chunk572004 = require("./572004.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk308571 = require("./308571.js");
+  Chunk716754 = require("./716754.js");
 
-function y(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      a = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), a.forEach(function(t) {
-      var a;
-      a = n[t], t in e ? Object.defineProperty(e, t, {
-        value: a,
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = a
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function x(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, a)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
     return n
   })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var v = ((a = v || {})[a.SMALL = 0] = "SMALL", a[a.MEDIUM = 1] = "MEDIUM", a);
+var N = ((r = N || {})[r.SMALL = 0] = "SMALL", r[r.MEDIUM = 1] = "MEDIUM", r);
 
-function w(e) {
+function O(e) {
   let {
     tag: t,
-    size: a = 1,
-    disabled: l,
-    className: v,
-    onClick: w,
-    onRemove: C,
-    selected: j,
-    ariaLabel: T
+    size: r = 1,
+    disabled: a,
+    className: N,
+    onClick: O,
+    onRemove: p,
+    selected: R,
+    ariaLabel: S
   } = e, {
-    name: I,
-    emojiId: O,
-    emojiName: M
-  } = t, E = null != C, [P, S] = i.useState(false), k = (0, c.e7)([g.ZP], () => null != O ? g.ZP.getUsableCustomEmojiById(O) : null), Z = E || null != w, B = (!E || !P) && (null != O || null != M), A = 0 === a, F = i.useRef(null), L = (0, c.e7)([f.Z], () => f.Z.keyboardModeEnabled), D = (0, o.jsxs)(o.Fragment, {
-    children: [B ? (0, o.jsx)(b.Z, {
-      className: r()(m.emoji, {
-        [m.small]: A
+    name: C,
+    emojiId: D,
+    emojiName: L
+  } = t, b = null != p, [U, v] = i.useState(false), M = (0, u.e7)([A.ZP], () => null != D ? A.ZP.getUsableCustomEmojiById(D) : null), x = b || null != O, P = (!b || !U) && (null != D || null != L), j = 0 === r, y = i.useRef(null), w = (0, u.e7)([_.Z], () => _.Z.keyboardModeEnabled), G = (0, l.jsxs)(l.Fragment, {
+    children: [P ? (0, l.jsx)(E.Z, {
+      className: s()(g.emoji, {
+        [g.small]: j
       }),
-      emojiId: O,
-      emojiName: M,
-      animated: !!(null == k ? true : k.animated),
+      emojiId: D,
+      emojiName: L,
+      animated: !!(null == M ? true : M.animated),
       size: "reaction"
-    }) : null, P && E && (0, o.jsx)("div", {
-      className: m.closeCircle,
-      children: (0, o.jsx)(u.Dio, {
+    }) : null, U && b && (0, l.jsx)("div", {
+      className: g.closeCircle,
+      children: (0, l.jsx)(c.Dio, {
         size: "md",
         color: "currentColor",
-        className: m.close
+        className: g.close
       })
-    }), (0, o.jsx)(u.Text, {
-      variant: A ? "text-xs/semibold" : "text-sm/semibold",
+    }), (0, l.jsx)(c.Text, {
+      variant: j ? "text-xs/semibold" : "text-sm/semibold",
       lineClamp: 1,
       color: "currentColor",
-      children: I
+      children: C
     })]
-  }), N = {
+  }), k = {
     key: t.id,
-    className: r()(m.pill, {
-      [m.disabled]: l,
-      [m.clickable]: Z,
-      [m.small]: A,
-      [m.selected]: j,
-      [m[t.color]]: null != t.color && !Z
-    }, v),
+    className: s()(g.pill, {
+      [g.disabled]: a,
+      [g.clickable]: x,
+      [g.small]: j,
+      [g.selected]: R,
+      [g[t.color]]: null != t.color && !x
+    }, N),
     onClick: e => {
-      null == w || w(e), null == C || C(t), L || null == F.current || F.current.blur()
+      null == O || O(e), null == p || p(t), w || null == y.current || y.current.blur()
     },
     onContextMenu: e => (e => {
-      let a = p.Sb.getSetting();
-      _.wS && a && (0, d.jW)(e, async () => {
+      let r = m.Sb.getSetting();
+      T.wS && r && (0, d.jW)(e, async () => {
         let {
           default: e
         } = await n.e("29646").then(n.bind(n, 955116));
-        return n => (0, o.jsx)(e, x(y({}, n), {
+        return n => (0, l.jsx)(e, h(f({}, n), {
           tag: t
         }))
       })
     })(e),
-    onMouseEnter: () => E && S(true),
-    onMouseLeave: () => E && S(false)
-  }, U = (0, s.JA)("forum-tag-".concat(t.id));
-  return Z ? (0, o.jsx)(u.P3F, x(y(x(y({}, U), {
-    innerRef: F,
+    onMouseEnter: () => b && v(true),
+    onMouseLeave: () => b && v(false)
+  }, F = (0, o.JA)("forum-tag-".concat(t.id));
+  return x ? (0, l.jsx)(c.P3F, h(f(h(f({}, F), {
+    innerRef: y,
     focusProps: {
-      ringTarget: F
+      ringTarget: y
     },
-    "aria-label": null != T ? T : h.intl.formatToPlainString(h.t.iyRTLi, {
-      tagName: I
+    "aria-label": null != S ? S : I.intl.formatToPlainString(I.t.iyRTLi, {
+      tagName: C
     }),
     role: "button",
-    "aria-pressed": j
-  }), N), {
-    children: D
-  })) : (0, o.jsx)("div", x(y({}, N), {
-    children: D
+    "aria-pressed": R
+  }), k), {
+    children: G
+  })) : (0, l.jsx)("div", h(f({}, k), {
+    children: G
   }))
 }
 
-function C(e) {
+function p(e) {
   let {
     tags: t,
     count: n,
-    size: a = 1
-  } = e, i = 0 === a;
-  return (0, o.jsx)(u.ua7, {
-    "aria-label": h.intl.string(h.t["P/y+sr"]),
-    text: (0, o.jsx)(o.Fragment, {
-      children: t.map(e => (0, o.jsx)(w, {
+    size: r = 1
+  } = e, i = 0 === r;
+  return (0, l.jsx)(c.ua7, {
+    "aria-label": I.intl.string(I.t["P/y+sr"]),
+    text: (0, l.jsx)(l.Fragment, {
+      children: t.map(e => (0, l.jsx)(O, {
         tag: e,
-        className: m.tooltipPill,
-        size: w.Sizes.SMALL
+        className: g.tooltipPill,
+        size: O.Sizes.SMALL
       }, e.id))
     }),
-    children: e => (0, o.jsx)("div", x(y({}, e), {
-      className: r()(m.pill, {
-        [m.small]: i
+    children: e => (0, l.jsx)("div", h(f({}, e), {
+      className: s()(g.pill, {
+        [g.small]: i
       }),
-      children: (0, o.jsxs)(u.Text, {
+      children: (0, l.jsxs)(c.Text, {
         variant: i ? "text-xs/semibold" : "text-sm/semibold",
         children: ["+", n]
       })
     }))
   })
 }
-w.Sizes = v
+O.Sizes = N

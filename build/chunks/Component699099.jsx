@@ -24,8 +24,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk51144 = require("./51144.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk899721 = require("./899721.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk446136 = require("./446136.js"),
+  Chunk197571 = require("./197571.js");
 
 function b(e, s, t) {
   return s in e ? Object.defineProperty(e, s, {
@@ -147,7 +147,7 @@ class A extends Chunk647438.Component {
       }
     }
     return s = require.sent ? (0, Chunk951288.jsx)(Chunk755721.zx, {
-      className: Chunk899721.inviteButton,
+      className: Chunk446136.inviteButton,
       look: Chunk755721.zx.Looks.LINK,
       size: Chunk755721.zx.Sizes.SMALL,
       disabled: true,
@@ -156,13 +156,13 @@ class A extends Chunk647438.Component {
     }) : (0, Chunk951288.jsx)(Chunk755721.zx, {
       color: Chunk755721.zx.Colors.GREEN,
       look: Chunk647438 ? Chunk755721.zx.Looks.FILLED : Chunk755721.zx.Looks.OUTLINED,
-      className: Chunk899721.inviteButton,
+      className: Chunk446136.inviteButton,
       size: Chunk755721.zx.Sizes.SMALL,
       submitting: Chunk120356,
       children: Chunk388032.intl.string(Chunk388032.t["6F9ivr"])
     }), (0, Chunk951288.jsxs)(Chunk481060.P3F, {
-      className: n()(Chunk899721.resultWrapper, {
-        [Chunk899721.resultWrapperSelected]: Chunk647438
+      className: n()(Chunk446136.resultWrapper, {
+        [Chunk446136.resultWrapperSelected]: Chunk647438
       }),
       onMouseEnter: this.handleMouseEnter,
       onClick: this.handleClick,

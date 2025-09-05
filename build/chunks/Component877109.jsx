@@ -7,19 +7,19 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
-  Chunk674455 = require("./674455.js");
+  Chunk818923 = require("./818923.js");
 let o = function() {
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk674455.errorBoundary,
+    className: Chunk818923.errorBoundary,
     children: [(0, Chunk951288.jsx)(Chunk481060.Mgn, {
-      className: Chunk674455.errorBoundaryIcon
+      className: Chunk818923.errorBoundaryIcon
     }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-lg/semibold",
       children: "Welcome to the Quest preview tool 2"
     }), (0, Chunk951288.jsx)(Chunk481060.Zbd, {
-      className: Chunk674455.errorMessageWrapper,
+      className: Chunk818923.errorMessageWrapper,
       children: (0, Chunk951288.jsx)("code", {
-        className: Chunk674455.errorMessage,
+        className: Chunk818923.errorMessage,
         children: "Hello, world!"
       })
     })]

@@ -168,7 +168,7 @@ function Z(e, t, o, s) {
     }), (0, a.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79381"), n.e("76676"), n.e("37220"), n.e("93077"), n.e("71533")]).then(n.bind(n, 225138));
+      } = await Promise.all([n.e("79381"), n.e("76676"), n.e("37220"), n.e("93077"), n.e("3719")]).then(n.bind(n, 225138));
       return n => (0, r.jsx)(e, P(N({}, n), {
         message: l,
         channel: i,

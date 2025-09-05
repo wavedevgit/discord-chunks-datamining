@@ -7,7 +7,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk748780 = require("./748780.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk298241 = require("./298241.js");
+  Chunk703301 = require("./703301.js");
 class l extends Chunk647438.Component {
   componentWillEnter(e) {
     let {
@@ -37,7 +37,7 @@ class l extends Chunk647438.Component {
       offset: t
     } = this.state;
     return (0, Chunk951288.jsx)(Chunk748780.Z.div, {
-      className: Chunk298241.wrapper,
+      className: Chunk703301.wrapper,
       style: {
         left: 0,
         position: module ? "absolute" : "relative",
@@ -50,7 +50,7 @@ class l extends Chunk647438.Component {
         }]
       },
       children: (0, Chunk951288.jsx)(Chunk481060.hzk, {
-        className: Chunk298241.contentWrapper,
+        className: Chunk703301.contentWrapper,
         children: this.props.children
       })
     })

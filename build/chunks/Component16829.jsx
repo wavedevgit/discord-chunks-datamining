@@ -1,4 +1,4 @@
-/** Chunk was on 20303 **/
+/** Chunk was on 10576 **/
 /** chunk id: 16829, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => w
@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk527379 = require("./527379.js"),
   Chunk327999 = require("./327999.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk260523 = require("./260523.js");
+  Chunk303572 = require("./303572.js");
 
 function D(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -94,7 +94,7 @@ let b = Chunk647438.memo(function() {
       icon: (0, Chunk951288.jsx)(Chunk481060.wGt, {
         size: "custom",
         color: "currentColor",
-        className: Chunk260523.robot,
+        className: Chunk303572.robot,
         height: 12,
         width: 12
       }),

@@ -1,4 +1,4 @@
-/** Chunk was on 40450 **/
+/** Chunk was on 32561 **/
 /** chunk id: 44488, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Pz: () => f,
@@ -12,7 +12,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk768762 = require("./768762.jsx"),
-  Chunk661458 = require("./661458.js");
+  Chunk584917 = require("./584917.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -23,8 +23,8 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let m = {
-  CENTER: Chunk661458.alignCenter,
-  LEFT: Chunk661458.alignLeft
+  CENTER: Chunk584917.alignCenter,
+  LEFT: Chunk584917.alignLeft
 };
 class h extends(r = Chunk647438.PureComponent) {
   componentDidUpdate(e) {
@@ -40,7 +40,7 @@ class h extends(r = Chunk647438.PureComponent) {
       vertical: n,
       paginationContainerClass: r,
       align: l
-    } = this.props, o = require ? Chunk661458.verticalPaginationItemContainer : Chunk661458.horizontalPaginationItemContainer;
+    } = this.props, o = require ? Chunk584917.verticalPaginationItemContainer : Chunk584917.horizontalPaginationItemContainer;
     return (0, Chunk951288.jsx)(Chunk481060.yWw, {
       orientation: require ? "vertical" : "horizontal",
       className: s()(Chunk755721, r, Chunk120356),
@@ -91,10 +91,10 @@ class g extends Chunk647438.PureComponent {
     return (0, Chunk951288.jsx)(Chunk755721.zx, {
       look: Chunk755721.zx.Looks.BLANK,
       size: Chunk755721.zx.Sizes.NONE,
-      className: s()(Chunk661458.prevButtonContainer, module),
+      className: s()(Chunk584917.prevButtonContainer, module),
       onClick: this.handlePrevClick,
       children: (0, Chunk951288.jsx)(Chunk768762.Z, {
-        className: Chunk661458.arrow,
+        className: Chunk584917.arrow,
         direction: Chunk768762.Z.Directions.LEFT
       })
     })
@@ -117,10 +117,10 @@ class f extends Chunk647438.PureComponent {
     return (0, Chunk951288.jsx)(Chunk755721.zx, {
       look: Chunk755721.zx.Looks.BLANK,
       size: Chunk755721.zx.Sizes.NONE,
-      className: s()(Chunk661458.nextButtonContainer, module),
+      className: s()(Chunk584917.nextButtonContainer, module),
       onClick: this.handleNextClick,
       children: (0, Chunk951288.jsx)(Chunk768762.Z, {
-        className: Chunk661458.arrow,
+        className: Chunk584917.arrow,
         direction: Chunk768762.Z.Directions.RIGHT
       })
     })

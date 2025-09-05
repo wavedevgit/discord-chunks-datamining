@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk228168 = require("./228168.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk973301 = require("./973301.js");
+  Chunk461671 = require("./461671.js");
 
 function g() {
   let [e, t] = Chunk647438.useState(false), n = (0, Chunk442837.Wu)([Chunk224724.Z], () => {
@@ -45,23 +45,23 @@ function g() {
       Chunk592183.Z.clearPendingWidgets()
     }, []);
   return Chunk120356 ? (0, Chunk951288.jsx)("div", {
-    className: o()(Chunk973301.container, {
-      [Chunk973301.visible]: Chunk120356
+    className: o()(Chunk461671.container, {
+      [Chunk461671.visible]: Chunk120356
     }),
     role: "status",
     children: (0, Chunk951288.jsxs)("div", {
-      className: o()(Chunk973301.content, {
-        [Chunk973301.emphasized]: module
+      className: o()(Chunk461671.content, {
+        [Chunk461671.emphasized]: module
       }),
       children: [(0, Chunk951288.jsx)("div", {
-        className: Chunk973301.message,
+        className: Chunk461671.message,
         children: (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/medium",
           color: "text-primary",
           children: Chunk388032.intl.string(Chunk388032.t["/lQiX1"])
         })
       }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk973301.actions,
+        className: Chunk461671.actions,
         children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
           size: "sm",
           variant: "secondary",

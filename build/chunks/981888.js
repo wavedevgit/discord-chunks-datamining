@@ -1,24 +1,24 @@
-/** Chunk was on 40655 **/
+/** Chunk was on 69467 **/
 /** chunk id: 981888, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => i
+  Z: () => a
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk881052 = require("./881052.js");
 
-function i(e, n) {
-  let [t, i] = a.useState(false), [o, l] = a.useState(null);
+function a(e, n) {
+  let [t, a] = i.useState(false), [l, o] = i.useState(null);
   return [async () => {
-    i(true), l(null);
+    a(true), o(null);
     try {
       let n = await e();
-      return i(false), l(null), n
+      return a(false), o(null), n
     } catch (t) {
       let e = new r.Hx(t);
-      return null == n || n(e), l(e), i(false), null
+      return null == n || n(e), o(e), a(false), null
     }
   }, {
     loading: t,
-    error: o
+    error: l
   }]
 }

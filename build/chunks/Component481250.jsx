@@ -17,8 +17,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk226961 = require("./226961.js"),
   Chunk513547 = require("./513547.jsx"),
   Chunk65154 = require("./65154.js"),
-  Chunk593235 = require("./593235.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk966117 = require("./966117.js"),
+  Chunk197571 = require("./197571.js");
 let g = {
   [Chunk65154.Z.NO_OVERRIDE]: "None",
   [Chunk65154.Z.LOW]: "Low Quality Stream",

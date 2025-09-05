@@ -18,7 +18,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk594174 = require("./594174.js"),
   Chunk176038 = require("./176038.js"),
   Chunk469115 = require("./469115.js"),
-  Chunk535548 = require("./535548.js");
+  Chunk685960 = require("./685960.js");
 
 function b() {
   var e, t, n, b, g, j, _, y;
@@ -40,7 +40,7 @@ function b() {
     L = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.messageGroupSpacing),
     M = Chunk695346.YC.useSetting();
   return (0, Chunk176038.ub)(), (0, Chunk951288.jsxs)("div", {
-    className: Chunk535548.container,
+    className: Chunk685960.container,
     children: [(0, Chunk951288.jsxs)("div", {
       children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-lg/semibold",

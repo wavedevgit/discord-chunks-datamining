@@ -27,9 +27,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk240793 = require("./240793.js"),
-  Chunk504401 = require("./504401.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk525717 = require("./525717.js"),
+  Chunk620842 = require("./620842.js"),
+  Chunk197571 = require("./197571.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -73,28 +73,28 @@ class R extends Chunk647438.PureComponent {
       hideInviteCode: n
     } = this.props, s = new Chunk598077.Z(module.inviter);
     return (0, Chunk951288.jsxs)(Chunk600164.Z, {
-      className: a()(Chunk240793.row, Chunk504401.card),
+      className: a()(Chunk525717.row, Chunk620842.card),
       children: [(0, Chunk951288.jsxs)(Chunk600164.Z, {
         align: Chunk600164.Z.Align.CENTER,
-        className: Chunk240793.userColumn,
+        className: Chunk525717.userColumn,
         children: [(0, Chunk951288.jsx)(Chunk700582.Z, {
           user: Chunk647438,
           size: Chunk481060.EFr.SIZE_24,
-          className: Chunk240793.avatar
+          className: Chunk525717.avatar
         }), (0, Chunk951288.jsx)(Chunk129861.Z, {
           user: Chunk647438,
           hideDiscriminator: exports,
-          usernameClass: Chunk240793.username,
-          discriminatorClass: Chunk240793.discrimClass
+          usernameClass: Chunk525717.username,
+          discriminatorClass: Chunk525717.discrimClass
         })]
       }), (0, Chunk951288.jsx)(Chunk600164.Z, {
         align: Chunk600164.Z.Align.CENTER,
         grow: 0,
         shrink: 0,
         basis: 100,
-        className: Chunk240793.boostZIndex,
+        className: Chunk525717.boostZIndex,
         children: (0, Chunk951288.jsx)(Chunk481060.Text, {
-          className: Chunk240793.code,
+          className: Chunk525717.code,
           variant: "text-sm/normal",
           children: require ? "..." : module.code
         })
@@ -104,16 +104,16 @@ class R extends Chunk647438.PureComponent {
         shrink: 0,
         align: Chunk600164.Z.Align.CENTER,
         justify: Chunk600164.Z.Justify.END,
-        className: Chunk240793.boostZIndex,
+        className: Chunk525717.boostZIndex,
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
-          className: Chunk240793.countdown,
+          className: Chunk525717.countdown,
           variant: "text-sm/normal",
           children: (0, Chunk951288.jsx)(Chunk346486.Z, {
             deadline: module.getExpiresAt(),
             showDays: false
           })
         }), (0, Chunk951288.jsx)(Chunk225433.Z, {
-          className: Chunk240793.revokeInvite,
+          className: Chunk525717.revokeInvite,
           onClick: this.handleRevokeInvite
         })]
       })]
@@ -160,10 +160,10 @@ class S extends Chunk647438.PureComponent {
       invites: t
     } = this.state;
     return module || null == exports ? (0, Chunk951288.jsx)(Chunk481060.$jN, {
-      className: Chunk10198.marginTop20,
+      className: Chunk197571.marginTop20,
       type: Chunk481060.$jN.Type.SPINNING_CIRCLE
     }) : o().isEmpty(exports) ? this.renderEmpty() : (0, Chunk951288.jsxs)("div", {
-      className: Chunk240793.container,
+      className: Chunk525717.container,
       children: [this.renderHeader(), this.renderInvites()]
     })
   }
@@ -179,7 +179,7 @@ class S extends Chunk647438.PureComponent {
           marginBottom: 0
         }
       }), (0, Chunk951288.jsx)(Chunk481060.OZU, {
-        className: Chunk10198.marginTop20,
+        className: Chunk197571.marginTop20,
         children: Chunk388032.intl.string(Chunk388032.t["03/rlZ"])
       })]
     })
@@ -205,7 +205,7 @@ class S extends Chunk647438.PureComponent {
         shrink: 0,
         basis: 100,
         children: (0, Chunk951288.jsx)(Chunk481060.vwX, {
-          className: Chunk240793.alignRight,
+          className: Chunk525717.alignRight,
           children: Chunk388032.intl.string(Chunk388032.t["1aM27e"])
         })
       })]

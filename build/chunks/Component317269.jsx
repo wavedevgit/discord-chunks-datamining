@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk694760 = require("./694760.js");
+  Chunk24921 = require("./24921.js");
 
 function E(t) {
   let e, {
@@ -232,12 +232,12 @@ function v(t) {
 
 function j() {
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk694760.redirectConfirmation,
+    className: Chunk24921.redirectConfirmation,
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-xl/bold",
       children: Chunk388032.intl.string(Chunk388032.t.Xtf9wM)
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk694760.redirectBody,
+      className: Chunk24921.redirectBody,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: Chunk388032.intl.string(Chunk388032.t.bIVRSU)

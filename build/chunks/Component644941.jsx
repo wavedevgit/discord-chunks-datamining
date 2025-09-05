@@ -46,9 +46,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk978313 = require("./978313.jsx"),
   Chunk206583 = require("./206583.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk456486 = require("./456486.js");
+  Chunk226788 = require("./226788.js");
 let B = () => (0, Chunk951288.jsxs)("div", {
-  className: Chunk456486.gameBadge,
+  className: Chunk226788.gameBadge,
   children: [(0, Chunk951288.jsx)(Chunk481060.YqE, {
     size: "xxs"
   }), (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -235,29 +235,30 @@ function V(e) {
     setOfficialGuildInvite: r,
     trackAction: l,
     onClose: s,
-    applicationId: o
-  } = e, c = (0, w.u)(o, j.Z.GAME_PROFILE), u = i.useCallback(e => {
+    applicationId: o,
+    source: c
+  } = e, u = (0, w.u)(o, j.Z.GAME_PROFILE, c), d = i.useCallback(e => {
     r(e)
-  }, [r]), d = (0, O.q)(o), {
-    analyticsLocations: p
-  } = (0, x.ZP)(j.Z.GAME_PROFILE), f = (0, g.Z)({
-    application: d,
-    analyticsLocations: p
-  }), v = null != c, h = null != f, b = v || h;
+  }, [r]), p = (0, O.q)(o), {
+    analyticsLocations: f
+  } = (0, x.ZP)(j.Z.GAME_PROFILE), v = (0, g.Z)({
+    application: p,
+    analyticsLocations: f
+  }), h = null != u, b = null != v, y = h || b;
   return (0, n.jsxs)("div", {
     className: a()(X.sidebar, X.column, X.gapLg),
-    children: [b && (0, n.jsxs)("div", {
+    children: [y && (0, n.jsxs)("div", {
       className: X.buttonsContainer,
-      children: [v && (0, n.jsx)(m.zxk, {
-        icon: c.icon,
-        text: Y.intl.string(c.labelKey),
+      children: [h && (0, n.jsx)(m.zxk, {
+        icon: u.icon,
+        text: Y.intl.string(u.labelKey),
         variant: "overlay-secondary",
-        onClick: c.openLink,
+        onClick: u.openLink,
         fullWidth: true
-      }), h && (0, n.jsx)(J, {
+      }), b && (0, n.jsx)(J, {
         onClose: s,
-        onCloudPlayClick: f,
-        analyticsLocations: p
+        onCloudPlayClick: v,
+        analyticsLocations: f
       })]
     }), (0, n.jsx)(m.X6q, {
       variant: "heading-md/bold",
@@ -270,7 +271,7 @@ function V(e) {
       }), (0, n.jsx)(z.Z, {
         detectedGame: t,
         trackClick: l,
-        onInviteResolved: u,
+        onInviteResolved: d,
         closeModal: s
       }), (0, n.jsx)(M.Z, {
         detectedGame: t,
@@ -387,7 +388,8 @@ let $ = e => {
             trackAction: R,
             onClose: c,
             appContext: u,
-            applicationId: r
+            applicationId: r,
+            source: l
           })]
         })
       })]

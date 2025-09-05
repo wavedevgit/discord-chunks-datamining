@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk586502 = require("./586502.js"),
   Chunk787528 = require("./787528.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk58858 = require("./58858.js");
+  Chunk854826 = require("./854826.js");
 let _ = e => {
   let {
     profileBadge: t,

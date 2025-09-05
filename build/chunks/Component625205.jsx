@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk494620 = require("./494620.jsx"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk282086 = require("./282086.js");
+  Chunk28025 = require("./28025.js");
 let E = Chunk358085.isWindows() ? ["BTHENUM", "BTHHFENUM"] : [];
 
 function b() {
@@ -79,11 +79,11 @@ function b() {
     }, a)
   }
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk282086.devices,
+    className: Chunk28025.devices,
     children: [(0, Chunk951288.jsxs)("div", {
-      className: Chunk282086.deviceColumns,
+      className: Chunk28025.deviceColumns,
       children: [(0, Chunk951288.jsx)("div", {
-        className: Chunk282086.column,
+        className: Chunk28025.column,
         children: (0, Chunk951288.jsx)(Chunk481060.xJW, {
           title: Chunk388032.intl.string(Chunk388032.t.hHMYbW),
           children: (0, Chunk951288.jsx)(Chunk670863.j, {
@@ -95,7 +95,7 @@ function b() {
           })
         })
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk282086.column,
+        className: Chunk28025.column,
         children: (0, Chunk951288.jsx)(Chunk481060.xJW, {
           title: Chunk388032.intl.string(Chunk388032.t.dl18zc),
           children: (0, Chunk951288.jsx)(Chunk670863.j, {

@@ -13,9 +13,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk183369 = require("./183369.jsx"),
   Chunk422663 = require("./422663.jsx"),
   Chunk473682 = require("./473682.js"),
-  Chunk440589 = require("./440589.js"),
+  Chunk401561 = require("./401561.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk557787 = require("./557787.js");
+  Chunk149671 = require("./149671.js");
 
 function v(e) {
   let {
@@ -70,45 +70,45 @@ function j() {
   }, [module]), _ = true === Chunk120356 || "" === Chunk120356 || true === exports || "" === exports || true === j;
   return null == module ? null : (0, Chunk951288.jsxs)("div", {
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
-      className: Chunk557787.title,
+      className: Chunk149671.title,
       variant: "heading-lg/semibold",
-      children: Chunk388032.intl.string(Chunk440589.default.Eonh9P)
+      children: Chunk388032.intl.string(Chunk401561.default.Eonh9P)
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk557787.contentContainer,
+      className: Chunk149671.contentContainer,
       children: [(0, Chunk951288.jsxs)("div", {
-        className: Chunk557787.settingsContainer,
+        className: Chunk149671.settingsContainer,
         children: [(0, Chunk951288.jsxs)("div", {
-          className: Chunk557787.sectionContainer,
+          className: Chunk149671.sectionContainer,
           children: [(0, Chunk951288.jsxs)("div", {
-            className: Chunk557787.sectionHeader,
+            className: Chunk149671.sectionHeader,
             children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
               variant: "heading-sm/semibold",
-              children: Chunk388032.intl.string(Chunk440589.default["78avu7"])
+              children: Chunk388032.intl.string(Chunk401561.default["78avu7"])
             }), (0, Chunk951288.jsx)(Chunk681715.u, {
               position: "top",
-              text: Chunk388032.intl.string(Chunk440589.default.hmt2ra),
+              text: Chunk388032.intl.string(Chunk401561.default.hmt2ra),
               children: (0, Chunk951288.jsx)(Chunk481060.idN, {
-                className: Chunk557787.sectionHeaderIcon,
+                className: Chunk149671.sectionHeaderIcon,
                 size: "xs"
               })
             })]
           }), (0, Chunk951288.jsx)(Chunk481060.oil, {
             value: Chunk120356,
             onChange: l,
-            placeholder: Chunk388032.intl.string(Chunk440589.default.Kg0Zio)
+            placeholder: Chunk388032.intl.string(Chunk401561.default.Kg0Zio)
           })]
         }), (0, Chunk951288.jsxs)("div", {
-          className: Chunk557787.sectionContainer,
+          className: Chunk149671.sectionContainer,
           children: [(0, Chunk951288.jsxs)("div", {
-            className: Chunk557787.sectionHeader,
+            className: Chunk149671.sectionHeader,
             children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
               variant: "heading-sm/semibold",
-              children: Chunk388032.intl.string(Chunk440589.default.iccpNT)
+              children: Chunk388032.intl.string(Chunk401561.default.iccpNT)
             }), (0, Chunk951288.jsx)(Chunk681715.u, {
               position: "top",
-              text: Chunk388032.intl.string(Chunk440589.default.wKyl39),
+              text: Chunk388032.intl.string(Chunk401561.default.wKyl39),
               children: (0, Chunk951288.jsx)(Chunk481060.idN, {
-                className: Chunk557787.sectionHeaderIcon,
+                className: Chunk149671.sectionHeaderIcon,
                 size: "xs"
               })
             })]
@@ -117,23 +117,23 @@ function j() {
             isSelected: e => e === n,
             options: f,
             select: e => t(e),
-            placeholder: Chunk388032.intl.string(Chunk440589.default["op6/kZ"])
+            placeholder: Chunk388032.intl.string(Chunk401561.default["op6/kZ"])
           })]
         }), (0, Chunk951288.jsxs)("div", {
-          className: Chunk557787.sectionContainer,
+          className: Chunk149671.sectionContainer,
           children: [(0, Chunk951288.jsx)("div", {
-            className: Chunk557787.sectionHeader,
+            className: Chunk149671.sectionHeader,
             children: (0, Chunk951288.jsx)(Chunk481060.X6q, {
               variant: "heading-sm/semibold",
-              children: Chunk388032.intl.string(Chunk440589.default["3QONen"])
+              children: Chunk388032.intl.string(Chunk401561.default["3QONen"])
             })
           }), (0, Chunk951288.jsx)(Chunk481060.PhF, {
             serialize: e => e.toString(),
             isSelected: e => e === j,
             options: h,
-            optionClassName: Chunk557787.planOption,
+            optionClassName: Chunk149671.planOption,
             select: e => b(e),
-            placeholder: Chunk388032.intl.string(Chunk440589.default["4QOSPj"]),
+            placeholder: Chunk388032.intl.string(Chunk401561.default["4QOSPj"]),
             renderOptionValue: n => {
               let t = null == e ? true : e.plans.find(e => {
                 var t;
@@ -155,12 +155,12 @@ function j() {
           })]
         })]
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk557787.gameDetailsContainer,
+        className: Chunk149671.gameDetailsContainer,
         children: (0, Chunk951288.jsx)(Chunk642633.Z, {})
       })]
     }), (0, Chunk951288.jsxs)(Chunk422663.ok, {
       step: Chunk473682.Vb.SERVER_SETTINGS,
-      className: Chunk557787.footerContainer,
+      className: Chunk149671.footerContainer,
       children: [(0, Chunk951288.jsx)(Chunk422663.VS, {}), (0, Chunk951288.jsx)(Chunk422663.oh, {
         disabled: _
       })]

@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk170671 = require("./170671.jsx"),
   Chunk921944 = require("./921944.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk494723 = require("./494723.js");
+  Chunk563042 = require("./563042.js");
 
 function E() {
   let e, t = arguments.length > 0 && true !== arguments[0] && arguments[0],
@@ -28,8 +28,8 @@ function E() {
     o = (0, Chunk367074.Vi)(),
     p = (null == require ? true : require.trial_id) === Chunk474936.a7,
     g = [];
-  o && Chunk494723.push(Chunk704215.z.BOGO_2025_NITRO_TAB_BADGE);
-  let [E, b] = (0, Chunk243778.US)(Chunk494723, true, true);
+  o && Chunk563042.push(Chunk704215.z.BOGO_2025_NITRO_TAB_BADGE);
+  let [E, b] = (0, Chunk243778.US)(Chunk563042, true, true);
   return Chunk647438.useEffect(() => {
     true === exports && E === Chunk704215.z.BOGO_2025_NITRO_TAB_BADGE && b(Chunk921944.L.AUTO_DISMISS)
   }, [b, exports, E]), o ? e = (0, Chunk951288.jsx)(Chunk655525.Z, {}) : null != Chunk120356 ? e = (0, Chunk951288.jsx)(Chunk924540.GN, {
