@@ -53,7 +53,7 @@ function G(e) {
     let e = x.Z.getGuildId(),
       n = j.Z.getChannel(t);
     return null != e ? e : null == n ? true : n.guild_id
-  }), a = (0, N.H)({
+  }), a = (0, T.H)({
     guildId: l,
     channelId: t
   });
@@ -115,7 +115,7 @@ let V = Chunk647438.memo(function() {
     location: "HeaderBar"
   }, {
     autoTrackExposure: false
-  }), S = null !== module && exports === Chunk821020.u3.TITLE_BAR_LEFT, N = null === module;
+  }), S = null !== module && exports === Chunk821020.u3.TITLE_BAR_LEFT, T = null === module;
   Chunk647438.useLayoutEffect(() => {
     Chunk998502.ZP.setMinimumSize(Chunk741764.J, Chunk741764.N)
   }, []);
@@ -164,7 +164,7 @@ let V = Chunk647438.memo(function() {
             }), (0, r.jsx)(d.Z, {
               canShowReminder: true,
               className: L
-            }), N && (0, r.jsx)(I.Z, (i = function(e) {
+            }), T && (0, r.jsx)(I.Z, (i = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                   r = Object.keys(n);

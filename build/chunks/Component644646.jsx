@@ -69,6 +69,7 @@ let I = function(e) {
       className: v.questRewardTileAsset
     })
   }) : A ? (0, r.jsx)(g.K, {
+    showVideo: I,
     imageAsset: null != w ? {
       asset: w,
       assetId: "QuestRewardTile_rewardTileStatic",
@@ -80,7 +81,6 @@ let I = function(e) {
       assetId: "QuestRewardTile_rewardTileAnimated",
       className: o()(v.questRewardTileAsset, v.questRewardTileAssetLazyVideo)
     },
-    videoActive: I,
     onLoadComplete: e.onLoadComplete
   }) : P.isAnimated ? (0, r.jsx)(y.Fl, {
     id: "QuestRewardTile_rewardTileAnimated",

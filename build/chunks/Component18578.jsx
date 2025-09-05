@@ -18,10 +18,10 @@ var Chunk951288 = require("./951288.js"),
 function _(e) {
   var t, n, a;
   let {
-    videoActive: _,
+    showVideo: _,
     imageAsset: p,
     videoAsset: h,
-    imageDimensions: m,
+    imageSize: m,
     onLoadComplete: g
   } = e, E = (0, s.e7)([l.Z], () => l.Z.useReducedMotion), b = null == p || p.asset.isAnimated ? null : p.asset.url, y = null != h && h.asset.isAnimated ? h.asset.url : null, O = null == m ? true : m.width, v = null == m ? true : m.height, I = i.useMemo(() => {
     let e = null != O && null != v ? (0, u.nK)(O, v) : null;

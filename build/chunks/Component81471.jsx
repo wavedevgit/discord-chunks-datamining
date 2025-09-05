@@ -32,11 +32,11 @@ let I = Chunk647438.memo(function(e) {
     message: I
   } = (0, b.a)(t), C = (0, u.p)(), {
     isBlocked: S,
-    isIgnored: N
+    isIgnored: T
   } = (0, o.cj)([m.Z], () => ({
     isBlocked: null != I && m.Z.isBlockedForMessage(I),
     isIgnored: null != I && m.Z.isIgnoredForMessage(I)
-  }), [I]), T = (0, o.e7)([g.Z], () => g.Z.can(_.Plq.MANAGE_MESSAGES, t)), j = h.cC.useSetting(), {
+  }), [I]), N = (0, o.e7)([g.Z], () => g.Z.can(_.Plq.MANAGE_MESSAGES, t)), j = h.cC.useSetting(), {
     content: P
   } = i.useMemo(() => (null == I ? true : I.content) != null && "" !== I.content ? (0, p.ZP)(I, {
     formatInline: true,
@@ -58,7 +58,7 @@ let I = Chunk647438.memo(function(e) {
       color: "text-muted",
       children: E.intl.string(E.t["WPe+xM"])
     });
-    else if (null != I && N) x = (0, r.jsx)(s.Text, {
+    else if (null != I && T) x = (0, r.jsx)(s.Text, {
     className: y.messageReplacement,
     variant: "text-sm/normal",
     color: "text-muted",
@@ -68,7 +68,7 @@ let I = Chunk647438.memo(function(e) {
     let {
       contentPlaceholder: e,
       renderedContent: t
-    } = (0, f.f)(I, P, S, N, a()(y.messageContent, v.inlineFormat), {
+    } = (0, f.f)(I, P, S, T, a()(y.messageContent, v.inlineFormat), {
       leadingIconClass: y.messageContentIcon,
       trailingIconClass: y.messageContentIcon,
       iconSize: O.WW
@@ -93,7 +93,7 @@ let I = Chunk647438.memo(function(e) {
   });
   else x = null;
   return (0, r.jsx)(c.aQ.Provider, {
-    value: (0, d.Z)(j, T),
+    value: (0, d.Z)(j, N),
     children: (0, r.jsx)(s.Rny, {
       className: y.messageFocusBlock,
       children: x

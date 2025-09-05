@@ -45,7 +45,7 @@ function S(e) {
   return e
 }
 
-function N(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -57,7 +57,7 @@ function N(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = Chunk726542.Z.get(Chunk981631.ABu.XBOX).name;
+let N = Chunk726542.Z.get(Chunk981631.ABu.XBOX).name;
 
 function j(e) {
   let {
@@ -75,7 +75,7 @@ function j(e) {
       id: "xbox-connect",
       action: () => c.Z.open(I.oAB.CONNECTIONS),
       label: C.intl.formatToPlainString(C.t.XWSHTU, {
-        platform: T
+        platform: N
       })
     })
   }(e), P = function(e) {
@@ -87,7 +87,7 @@ function j(e) {
         activity: t,
         game: r
       } = e, i = _.Z.getActiveLibraryApplication(r.id);
-      return N(S({}, e), {
+      return T(S({}, e), {
         libraryApplication: i,
         canJoin: null != t && (0, d.Z)(t, I.xjy.JOIN) && t.type === I.IIU.PLAYING,
         canPlay: (0, y.t)({
@@ -153,7 +153,7 @@ function j(e) {
         action: function() {
           (0, v.playApplication)(i.id, l, {
             analyticsParams: {
-              location: N(S({}, o), {
+              location: T(S({}, o), {
                 object: I.qAy.LIST_ITEM
               })
             }

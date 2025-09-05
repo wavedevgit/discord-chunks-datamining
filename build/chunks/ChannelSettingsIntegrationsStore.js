@@ -44,14 +44,14 @@ let O = [],
   C = false,
   S = null;
 
-function N() {
+function T() {
   if (r = null != (i = Chunk388610.Z.getChannel()) ? Chunk430824.Z.getGuild(i.guild_id) : null, O = null != i && null != r && Chunk496675.Z.can(Chunk981631.Plq.MANAGE_WEBHOOKS, i) ? Chunk855674.Z.getWebhooksForChannel(r.id, i.id) : [], null != E) {
     let e = j(E.id);
     null != module && (E = module)
   }
   v = Chunk981631.QZA.OPEN, I = {}, C = false
 }
-let T = s().debounce(() => {
+let N = s().debounce(() => {
   C && ((null == E || s().isEqual(E, j(E.id))) && (C = false), C || x.emitChange())
 }, 500);
 
@@ -100,8 +100,8 @@ class P extends(a = Chunk442837.ZP.Store) {
 }
 b(P, "displayName", "ChannelSettingsIntegrationsStore");
 let x = new P(Chunk570140.Z, __OVERLAY__ ? {} : {
-    INTEGRATION_SETTINGS_INIT: N,
-    INTEGRATION_SETTINGS_SAVE_SUCCESS: N,
+    INTEGRATION_SETTINGS_INIT: T,
+    INTEGRATION_SETTINGS_SAVE_SUCCESS: T,
     CHANNEL_SETTINGS_SET_SECTION: function(e) {
       let {
         section: t
@@ -110,7 +110,7 @@ let x = new P(Chunk570140.Z, __OVERLAY__ ? {} : {
       if (l = m.b4C.OVERVIEW, null == r) {
         let e = p.Z.getChannel(),
           t = null == e ? true : e.getGuildId();
-        null != e && null != t && (d.Z.fetchForChannel(t, e.id), y = true), N()
+        null != e && null != t && (d.Z.fetchForChannel(t, e.id), y = true), T()
       }
     },
     INTEGRATION_SETTINGS_SET_SECTION: function(e) {
@@ -135,7 +135,7 @@ let x = new P(Chunk570140.Z, __OVERLAY__ ? {} : {
         settings: t
       } = e;
       if (null == E) returnfalse;
-      E = _({}, E), null != t.name && E.name !== t.name && (E.name = t.name, C = true), true !== t.avatar && E.avatar !== t.avatar && (E.avatar = t.avatar, C = true), null != t.channelId && E.channel_id !== t.channelId && (E.channel_id = t.channelId, C = true), C && T()
+      E = _({}, E), null != t.name && E.name !== t.name && (E.name = t.name, C = true), true !== t.avatar && E.avatar !== t.avatar && (E.avatar = t.avatar, C = true), null != t.channelId && E.channel_id !== t.channelId && (E.channel_id = t.channelId, C = true), C && N()
     },
     CHANNEL_SETTINGS_CLOSE: function() {
       i = null, r = null, O = [], E = null, v = Chunk981631.QZA.CLOSED
@@ -167,7 +167,7 @@ let x = new P(Chunk570140.Z, __OVERLAY__ ? {} : {
           } = t;
           if (n === e.id) returntrue
         }) && O.push(e);
-        O = [...O], T()
+        O = [...O], N()
       }
     },
     INTEGRATION_SETTINGS_SUBMITTING: function() {

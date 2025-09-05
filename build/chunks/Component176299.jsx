@@ -184,63 +184,63 @@ let ew = (0, Chunk608787.Un)({
           return
       }
     });
-    (0, er.WF)(a) && (0, er.WF)(c) || (null != u && (0, es.uL)(eN.Z5c.CHANNEL(u.id, (0, ei.Z)(u))), (0, W.V)());
+    (0, er.WF)(a) && (0, er.WF)(c) || (null != u && (0, es.uL)(eT.Z5c.CHANNEL(u.id, (0, ei.Z)(u))), (0, W.V)());
     let h = (0, P.C4)(l, "channel_renderer");
-    if (null != l && null != a && (0, eT.AB)(a)) switch (a) {
-      case eT.oC.ROLE_SUBSCRIPTIONS:
+    if (null != l && null != a && (0, eN.AB)(a)) switch (a) {
+      case eN.oC.ROLE_SUBSCRIPTIONS:
         return h ? (0, r.jsx)(eR, {
           guildId: l,
           initialTab: x.y.GUILD_ROLE_SUBSCRIPTIONS
         }) : (0, r.jsx)(G.Z, {
           guildId: l
         });
-      case eT.oC.SERVER_MONETIZATION_ONBOARDING:
+      case eN.oC.SERVER_MONETIZATION_ONBOARDING:
         return (0, r.jsx)(eD, {
           guildId: l
         });
-      case eT.oC.GUILD_SHOP:
+      case eN.oC.GUILD_SHOP:
         return (0, r.jsx)(eR, {
           guildId: l,
           productId: o,
           initialTab: f
         });
-      case eT.oC.MEMBER_APPLICATIONS:
+      case eN.oC.MEMBER_APPLICATIONS:
         return (0, r.jsx)(s.l_, {
-          to: eN.Z5c.CHANNEL(l, eT.oC.MEMBER_SAFETY)
+          to: eT.Z5c.CHANNEL(l, eN.oC.MEMBER_SAFETY)
         });
-      case eT.oC.GUILD_HOME:
+      case eN.oC.GUILD_HOME:
         return (0, r.jsx)(ek, {
           guildId: l
         });
-      case eT.oC.CHANNEL_BROWSER:
+      case eN.oC.CHANNEL_BROWSER:
         return (0, r.jsx)(eU, {
           guildId: l,
           selectedSection: eP.l7.BROWSE
         });
-      case eT.oC.GUILD_ONBOARDING:
+      case eN.oC.GUILD_ONBOARDING:
         return (0, r.jsx)(eG, {
           guildId: l
         });
-      case eT.oC.CUSTOMIZE_COMMUNITY:
+      case eN.oC.CUSTOMIZE_COMMUNITY:
         return (0, r.jsx)(eU, {
           guildId: l,
           selectedSection: eP.l7.CUSTOMIZE
         });
-      case eT.oC.MEMBER_SAFETY:
+      case eN.oC.MEMBER_SAFETY:
         return (0, r.jsx)(eM, {
           guildId: l
         });
-      case eT.oC.GUILD_BOOSTS:
+      case eN.oC.GUILD_BOOSTS:
         var g;
         return (0, r.jsx)(eB, {
           guildId: l,
           powerupListingId: null != (g = n.get("powerupId")) ? g : n.get("powerupSkuId")
         });
-      case eT.oC.PORTKEY:
+      case eN.oC.PORTKEY:
         return (0, r.jsx)(eV, {
           guildId: l
         });
-      case eT.oC.REPORT_TO_MOD:
+      case eN.oC.REPORT_TO_MOD:
         return (0, r.jsx)(S.Z, {});
       default:
         (0, eb.vE)(a)
@@ -249,7 +249,7 @@ let ew = (0, Chunk608787.Un)({
       guildId: l,
       channelId: a
     });
-    if ((null == i ? true : i.type) === eN.d4z.GUILD_STORE) {
+    if ((null == i ? true : i.type) === eT.d4z.GUILD_STORE) {
       let e = e_.default.cast(t.params.messageId);
       return (0, r.jsx)(eE.Z, {
         channel: i,
@@ -316,10 +316,10 @@ let ew = (0, Chunk608787.Un)({
       let {
         tab: n
       } = (0, o.parse)(t.location.search);
-      return Object.values(ej.AW).includes(n) ? (0, r.jsx)(T.Z, eZ({
+      return Object.values(ej.AW).includes(n) ? (0, r.jsx)(N.Z, eZ({
         isFullScreen: e,
         tab: n
-      }, t)) : (0, r.jsx)(T.Z, eZ({
+      }, t)) : (0, r.jsx)(N.Z, eZ({
         isFullScreen: e
       }, t))
     }
@@ -344,72 +344,72 @@ let e1 = e => (0, r.jsx)(v.Z, eZ({}, e)),
         switch (t.params.feature) {
           case "friends":
             return (0, r.jsx)(ee.Z, {
-              initialSection: eN.pJs.ONLINE
+              initialSection: eT.pJs.ONLINE
             });
           case "addFriends":
             return (0, r.jsx)(ee.Z, {
-              initialSection: eN.pJs.ADD_FRIEND
+              initialSection: eT.pJs.ADD_FRIEND
             });
           case "pendingFriends":
             return (0, r.jsx)(ee.Z, {
-              initialSection: eN.pJs.PENDING
+              initialSection: eT.pJs.PENDING
             });
           case "sessionManagement":
             return (0, r.jsx)(s.l_, {
-              to: eN.Z5c.SETTINGS("sessions")
+              to: eT.Z5c.SETTINGS("sessions")
             });
           case "connections":
             return (0, r.jsx)(s.l_, {
               to: {
-                pathname: eN.Z5c.SETTINGS("connections"),
+                pathname: eT.Z5c.SETTINGS("connections"),
                 search: e.location.search
               }
             });
           case "family-center":
             return (0, r.jsx)(s.l_, {
-              to: eN.Z5c.FAMILY_CENTER
+              to: eT.Z5c.FAMILY_CENTER
             });
           case "account-standing":
             return (0, r.jsx)(s.l_, {
-              to: eN.Z5c.SETTINGS("account", "account-standing")
+              to: eT.Z5c.SETTINGS("account", "account-standing")
             });
           case "authorized-apps":
             return (0, r.jsx)(s.l_, {
-              to: eN.Z5c.SETTINGS("authorized-apps")
+              to: eT.Z5c.SETTINGS("authorized-apps")
             });
           case "open-shop":
             return (0, r.jsx)(s.l_, {
-              to: eN.Z5c.COLLECTIBLES_SHOP_FULLSCREEN
+              to: eT.Z5c.COLLECTIBLES_SHOP_FULLSCREEN
             });
           case "editProfile":
             return (0, r.jsx)(s.l_, {
               to: {
-                pathname: eN.Z5c.SETTINGS("profile-customization")
+                pathname: eT.Z5c.SETTINGS("profile-customization")
               }
             });
           case "gift":
           case "store":
             return (0, r.jsx)(s.l_, {
               to: {
-                pathname: eN.Z5c.NITRO_HOME
+                pathname: eT.Z5c.NITRO_HOME
               }
             });
           case "connected-games":
             return (0, r.jsx)(s.l_, {
-              to: eN.Z5c.SETTINGS("content-and-social", "connected-games")
+              to: eT.Z5c.SETTINGS("content-and-social", "connected-games")
             });
           case "boost":
             let n = t.params.guildId;
             return (0, r.jsx)(s.l_, {
-              to: eN.Z5c.POWERUP_STORE(n)
+              to: eT.Z5c.POWERUP_STORE(n)
             });
           case "boost-settings":
             return (0, r.jsx)(s.l_, {
-              to: eN.Z5c.SETTINGS("guild-boosting")
+              to: eT.Z5c.SETTINGS("guild-boosting")
             });
           default:
             return (0, r.jsx)(s.l_, {
-              to: eN.Z5c.ME
+              to: eT.Z5c.ME
             })
         }
       })(e)
@@ -479,11 +479,11 @@ function e6(e) {
     }, []),
     S = i.useCallback(e => {
       var t;
-      document.body.classList.remove(eA.dragging), document.body.classList.remove(eA.draggingMin), document.body.classList.remove(eA.draggingMax), document.body.classList.remove(eA.collapsing), null == (t = y.current) || t.style.setProperty("--custom-overdrag", "0px"), f.K.set(eI.nT, e), em.default.track(eN.rMx.CHANNEL_SIDEBAR_RESIZED, {
+      document.body.classList.remove(eA.dragging), document.body.classList.remove(eA.draggingMin), document.body.classList.remove(eA.draggingMax), document.body.classList.remove(eA.collapsing), null == (t = y.current) || t.style.setProperty("--custom-overdrag", "0px"), f.K.set(eI.nT, e), em.default.track(eT.rMx.CHANNEL_SIDEBAR_RESIZED, {
         width: e
       })
     }, []),
-    N = (0, O.Z)({
+    T = (0, O.Z)({
       minDimension: eI.li,
       maxDimension: eI.zx,
       resizableDomNodeRef: y,
@@ -493,7 +493,7 @@ function e6(e) {
       orientation: O.y.HORIZONTAL_RIGHT,
       throttleDuration: 0
     }),
-    T = i.useCallback(() => {
+    N = i.useCallback(() => {
       j.useAppSidebarState.setState(e => ({
         isOpen: !e.isOpen
       }))
@@ -534,10 +534,10 @@ function e6(e) {
           })(Object(i)).forEach(function(e) {
             Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
           }), t)), (0, r.jsx)(h.P3F, {
-            onClick: T,
+            onClick: N,
             "aria-label": "Resize Sidebar",
             className: eA.sidebarResizeHandle,
-            onMouseDown: N
+            onMouseDown: T
           }), (0, r.jsx)(eO.b, {})]
         })]
       })
@@ -552,13 +552,13 @@ function e7() {
     l = function() {
       let [e, t] = Chunk647438.useState(() => window.location.pathname.startsWith(Chunk981631.Z5c.GUILD_MEMBER_VERIFICATION("")));
       return Chunk647438.useEffect(() => Chunk304445.Z.addRouteChangeListener(e => {
-        t(e.pathname.startsWith(eN.Z5c.GUILD_MEMBER_VERIFICATION("")))
+        t(e.pathname.startsWith(eT.Z5c.GUILD_MEMBER_VERIFICATION("")))
       }), []), module
     }(),
     a = function() {
       let [e, t] = Chunk647438.useState(() => window.location.pathname.startsWith(Chunk981631.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB("")));
       return Chunk647438.useEffect(() => Chunk304445.Z.addRouteChangeListener(e => {
-        t(e.pathname.startsWith(eN.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB("")))
+        t(e.pathname.startsWith(eT.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB("")))
       }), []), module
     }(),
     o = function() {

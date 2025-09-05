@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk295265 = require("./295265.js");
 
-function N(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,7 +35,7 @@ function N(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class T extends Chunk647438.PureComponent {
+class N extends Chunk647438.PureComponent {
   renderMemberInfo() {
     let {
       approximateMemberCount: e,
@@ -119,7 +119,7 @@ class T extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), N(this, "handleJoinOrView", async () => {
+    super(...e), T(this, "handleJoinOrView", async () => {
       let {
         guild: e,
         skuId: t,
@@ -134,7 +134,7 @@ class T extends Chunk647438.PureComponent {
           source: I.vtS.APPLICATION_STORE
         }), i()
       } catch (e) {}
-    }), N(this, "handleLogin", () => {
+    }), T(this, "handleLogin", () => {
       let e = {
         redirect_to: I.Z5c.APPLICATION_STORE_LISTING_SKU(this.props.skuId)
       };
@@ -153,4 +153,4 @@ let j = (0, Chunk666743.Z)(Chunk442837.ZP.connectStores([Chunk430824.Z, Chunk417
     isInGuild: null != E.Z.getGuild(t.id) && !n,
     isLurking: n
   }
-})(T))
+})(N))

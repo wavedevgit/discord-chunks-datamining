@@ -226,7 +226,7 @@ let ef = e => {
       selected: t
     } = e, n = (0, c.JA)("messageRequests"), {
       channelId: i
-    } = (0, N._)();
+    } = (0, T._)();
     if (!(0, j.a)()) return null;
     let l = null == i ? true : () => m.Z.preload(er.ME, i);
     return (0, r.jsx)(ee.Qj, ed(eu({

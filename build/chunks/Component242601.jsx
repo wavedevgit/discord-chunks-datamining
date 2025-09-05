@@ -240,7 +240,7 @@ class eb extends Chunk647438.PureComponent {
         animation: f.yRy.Animation.SCALE,
         shouldShow: n,
         onRequestClose: () => {
-          (0, N.l)(false)
+          (0, T.l)(false)
         },
         spacing: 4,
         children: i => {
@@ -354,7 +354,7 @@ class eb extends Chunk647438.PureComponent {
       let {
         isHeaderPopoutOpen: t
       } = this.props;
-      e.stopPropagation(), (0, N.l)(!t), this.closeAllHeaderNotices()
+      e.stopPropagation(), (0, T.l)(!t), this.closeAllHeaderNotices()
     }), ed(this, "handleContextMenu", e => {
       let {
         guild: t
@@ -496,13 +496,13 @@ function e_(e) {
   }, [n, F, L]);
   let [ee, et] = (0, I.ZP)(e => [ea.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(eo.R.GUILD_HEADER_TOOLTIPS)], s.X), en = (0, v.Z)(o), er = (0, f.s9z)(f.JQI), ei = (0, c.e7)([W.Z], () => W.Z.hasLayers()), es = (0, c.e7)([G.Z], () => G.Z.shouldShow(eg)), ec = (0, D.cT)(n, "GuildSidebar") && g && (null == o ? true : o.premiumProgressBarEnabled) === false && !J.s.isDisallowPopupsSet(), eu = (0, P.Z)(n), ed = (null == o ? true : o.features.has(el.oNc.HUB)) === true, ep = g && (null == o ? true : o.features.has(el.oNc.DISCOVERABLE)) === true, ef = (0, y.Q)(), eh = (g || (null == o ? true : o.premiumTier) === el.Eu4.NONE) && !J.s.isDisallowPopupsSet() && !ef, em = (0, c.e7)([A.Z, W.Z], () => null != o && null != x && g && !W.Z.hasLayers() && A.Z.shouldShowGuildTemplateDirtyTooltip(n)), e_ = (0, c.e7)([B.Z], () => B.Z.getChannel(a)), {
     isPopoutOpen: eO
-  } = (0, N.y)(), eE = null != (t = null == o ? true : o.features.has(el.oNc.COMMUNITY)) && t, ey = X.ZP.isNewUser(x), ev = M && !ey;
-  (0, T.Z)(o);
+  } = (0, T.y)(), eE = null != (t = null == o ? true : o.features.has(el.oNc.COMMUNITY)) && t, ey = X.ZP.isNewUser(x), ev = M && !ey;
+  (0, N.Z)(o);
   let eI = (0, C.Nj)(u.z.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
     eC = (0, R.Z)(n),
     eS = (0, j.Z)(n),
-    eN = (0, c.e7)([q.Z], () => q.Z.getChannelId()),
-    eT = (0, c.e7)([K.Z], () => K.Z.desyncedVoiceStatesCount),
+    eT = (0, c.e7)([q.Z], () => q.Z.getChannelId()),
+    eN = (0, c.e7)([K.Z], () => K.Z.desyncedVoiceStatesCount),
     ej = (0, k.Z)(n);
   return (0, r.jsx)(eb, {
     guildId: n,
@@ -513,8 +513,8 @@ function e_(e) {
     selectedChannel: e_,
     selectedVoiceChannelId: h,
     voiceStates: d,
-    rtcConnectedChannelId: eN,
-    rtcDesyncedVoiceStatesCount: eT,
+    rtcConnectedChannelId: eT,
+    rtcDesyncedVoiceStatesCount: eN,
     isUnavailable: m,
     user: x,
     hasChannelNotice: null != en || ee,

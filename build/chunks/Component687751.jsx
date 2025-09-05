@@ -47,12 +47,12 @@ class m extends Chunk317770.Z {
       guildId: t,
       channelId: n
     } = e;
-    (0, u.T5)() && (0, u.I8)(t, n, p.L0.NSFW_CHANNEL)
+    (0, u.I8)(t, n)
   }
   handleConnectionOpen() {
     let e = Chunk914010.Z.getGuildId(),
       t = Chunk944486.Z.getChannelId();
-    (0, Chunk622822.T5)() && (0, Chunk622822.I8)(module, exports)
+    (0, Chunk622822.I8)(module, exports)
   }
   handleAgeGateModalOpen(e) {
     let {

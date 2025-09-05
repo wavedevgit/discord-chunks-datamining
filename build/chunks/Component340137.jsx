@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 340137, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => N
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -39,29 +39,29 @@ let I = {
     compact: 72
   };
 
-function N(e) {
+function T(e) {
   let {
     onClick: t,
     selectedOverride: n = false,
     popoutProps: l,
     ref: o,
     focusSectionProps: s
-  } = e, [h, m] = i.useState(false), O = (0, b.D)(), E = n || O, N = n || E, {
-    backForwardButtons: T,
+  } = e, [h, m] = i.useState(false), O = (0, b.D)(), E = n || O, T = n || E, {
+    backForwardButtons: N,
     titlebarIconSize: j,
     titlebarHoverHighlight: P
   } = (0, p.T)({
     location: "NotificationsInboxTitleBarButton"
   }), x = (0, r.jsx)(u.Dkj, {
     className: v.icon,
-    color: h || N ? u.TVs.colors.ICON_PRIMARY : u.TVs.colors.ICON_TERTIARY,
+    color: h || T ? u.TVs.colors.ICON_PRIMARY : u.TVs.colors.ICON_TERTIARY,
     size: j
   }), {
     badge: A,
     badgeType: Z
   } = (0, _.h6)({
     isSelected: E
-  }), w = (0, g.isDesktop)() && T, L = (0, f.A)(), R = (0, g.isMac)() ? I[L] : w ? C[L] : S[L];
+  }), w = (0, g.isDesktop)() && N, L = (0, f.A)(), R = (0, g.isMac)() ? I[L] : w ? C[L] : S[L];
   return (0, r.jsxs)(u.Kqy, {
     gap: 0,
     direction: "horizontal",
@@ -69,7 +69,7 @@ function N(e) {
       size: R,
       horizontal: true
     }), (0, r.jsx)(u.ua7, {
-      shouldShow: !N,
+      shouldShow: !T,
       text: y.intl.string(y.t.HcoRu7),
       children: e => {
         var n, i;
@@ -136,7 +136,7 @@ function N(e) {
   })
 }
 
-function T() {
+function N() {
   let {
     focusSectionProps: e
   } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, t = Chunk647438.useRef(null), {
@@ -144,7 +144,7 @@ function T() {
   } = (0, Chunk821020.pN)({
     location: "NotificationsInboxButton"
   }), l = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getChannelId()), a = Chunk647438.useMemo(() => Chunk981631.Z5c.CHANNEL(Chunk981631.STv, null != Chunk120356 ? Chunk120356 : true), [Chunk120356]), c = (0, Chunk128008.mv)();
-  return require === Chunk821020.jP.SIDEBAR ? (0, Chunk951288.jsx)(N, {
+  return require === Chunk821020.jP.SIDEBAR ? (0, Chunk951288.jsx)(T, {
     onClick: () => {
       Chunk212605(), (0, Chunk948789.uL)(a)
     },
@@ -154,7 +154,7 @@ function T() {
     popoutPosition: "bottom",
     popoutAlign: "left",
     spacing: 2,
-    children: (n, i, l) => (0, r.jsx)(N, {
+    children: (n, i, l) => (0, r.jsx)(T, {
       ref: t,
       selectedOverride: i,
       onClick: () => {

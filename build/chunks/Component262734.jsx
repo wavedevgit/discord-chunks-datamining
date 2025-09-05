@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk918559 = require("./918559.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk909357 = require("./909357.js");
-let T = {
+let N = {
   [Chunk918559.MI.NO_CHAT]: Chunk909357.noChat,
   [Chunk918559.MI.RESIZABLE]: Chunk909357.resizable
 };
@@ -85,15 +85,15 @@ function j(e) {
   return (0, r.jsx)(u.f6W, {
     theme: I.BRd.DARK,
     children: e => (0, r.jsxs)("div", {
-      className: a()(N.wrapper, T[V], e),
+      className: a()(T.wrapper, N[V], e),
       ref: Z,
       style: {
         right: P && !Number.isNaN(H) ? H : 0
       },
       children: [(0, r.jsx)("div", {
-        className: N.contextlessHeader,
+        className: T.contextlessHeader,
         children: (0, r.jsxs)("div", {
-          className: N.buttonSection,
+          className: T.buttonSection,
           children: [(0, r.jsx)(m.d, {
             isTrayButton: true,
             label: S.intl.string(S.t.brPQ5e),
@@ -104,7 +104,7 @@ function j(e) {
             appContext: I.IlC.APP,
             applicationId: n.id,
             shouldPrioritizeGroupPlusIcon: true,
-            iconClassName: N.contextlessInviteButtonIcon,
+            iconClassName: T.contextlessInviteButtonIcon,
             isRichPresenceInvite: true,
             size: c.zx.Sizes.SMALL,
             look: c.zx.Looks.FILLED,
@@ -119,10 +119,10 @@ function j(e) {
           })]
         })
       }), (0, r.jsx)("div", {
-        className: N.activityPanelContainer,
+        className: T.activityPanelContainer,
         children: (0, r.jsx)("div", {
-          className: a()(N.activityContainer, {
-            [N.activityContainerNoMargin]: B
+          className: a()(T.activityContainer, {
+            [T.activityContainerNoMargin]: B
           }),
           style: {
             paddingLeft: U,
@@ -132,7 +132,7 @@ function j(e) {
           },
           ref: w,
           children: (0, r.jsx)(E.Z, {
-            className: N.iframe,
+            className: T.iframe,
             embedId: F
           })
         })

@@ -31,7 +31,7 @@ var Chunk626135 = require("./626135.js"),
     return e.RETRY = "retry", e
   }({}),
   c = function(e) {
-    return e.NSFW_CHANNEL_AGE_VERIFY = "nsfw_channel_age_verify", e.NSFW_CHANNEL_UNDERAGE = "nsfw_channel_underage", e.NSFW_CHANNEL_VERIFIED = "nsfw_channel_verified", e.GUILD_LARGE_SERVER = "guild_large_server", e.NSFW_EMBEDDED_ACTIVITY = "nsfw_embedded_activity", e.NSFW_APP_LISTING = "nsfw_app_listing", e
+    return e.NSFW_CHANNEL_AGE_VERIFY = "nsfw_channel_age_verify", e.NSFW_CHANNEL_UNDERAGE = "nsfw_channel_underage", e.NSFW_CHANNEL_VERIFIED = "nsfw_channel_verified", e.GUILD_LARGE_SERVER = "guild_large_server", e.GUILD_LARGE_SERVER_UNDERAGE = "guild_large_server_underage", e.NSFW_EMBEDDED_ACTIVITY = "nsfw_embedded_activity", e.NSFW_APP_LISTING = "nsfw_app_listing", e
   }({}),
   u = function(e) {
     return e.NSFW_CHANNEL_AGREE_CTA = "nsfw_channel_agree_cta", e.NSFW_CHANNEL_DISAGREE_CTA = "nsfw_channel_disagree_cta", e

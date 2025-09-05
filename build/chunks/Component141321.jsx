@@ -31,7 +31,7 @@ function _(e) {
     location: "RecentsButton"
   }, {
     autoTrackExposure: false
-  }), S = (0, l.e7)([o.Z], () => C && o.Z.getUnseenInviteCount() > 0), N = (0, a.dQu)(a.TVs.modules.chat.INPUT_ICON_SIZE);
+  }), S = (0, l.e7)([o.Z], () => C && o.Z.getUnseenInviteCount() > 0), T = (0, a.dQu)(a.TVs.modules.chat.INPUT_ICON_SIZE);
   return (0, r.jsx)(f.k, {
     targetElementRef: v,
     onOpen: t,
@@ -74,7 +74,7 @@ function _(e) {
             className: _,
             onClick: e,
             icon: a.xx7,
-            iconSize: N,
+            iconSize: T,
             "aria-label": m.intl.string(m.t.GSmTKC),
             tooltip: t ? null : m.intl.string(m.t.GSmTKC),
             selected: t,

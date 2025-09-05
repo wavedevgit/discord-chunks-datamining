@@ -58,7 +58,7 @@ function C(e) {
     otherUser: c,
     active: f
   } = e, m = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), _ = (0, i.e7)([h.Z], () => null == c ? null : h.Z.getNickname(c.id)), C = !m && f, S = (0, b.c)(n), {
-    avatarDecorationSrc: N
+    avatarDecorationSrc: T
   } = (0, d.Z)({
     user: c,
     size: (0, u.y9)(l.EFr.SIZE_40),
@@ -68,7 +68,7 @@ function C(e) {
     children: [(0, r.jsx)(I, {
       className: y.avatar,
       src: (0, p.x)(n, 40, C),
-      avatarDecoration: N,
+      avatarDecoration: T,
       size: l.EFr.SIZE_40,
       "aria-label": null != (t = null == c ? true : c.username) ? t : E.intl.string(E.t["30mdIy"])
     }), (0, r.jsxs)("div", {

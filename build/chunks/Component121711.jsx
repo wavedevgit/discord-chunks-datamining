@@ -65,7 +65,7 @@ function el(e) {
     onLoadComplete: t
   } = e, {
     enabled: n
-  } = (0, T.WX)({
+  } = (0, N.WX)({
     location: K.dr.QUEST_HOME_DESKTOP
   }), l = (0, u.e7)([f.Z], () => f.Z.useReducedMotion), o = (0, u.e7)([P.Z], () => P.Z.isFocused()), {
     ref: s,

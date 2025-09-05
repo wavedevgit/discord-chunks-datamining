@@ -64,8 +64,8 @@ let O = (0, Chunk703912.Z)(e => {
     state: I,
     guildId: C,
     channelId: S,
-    prompt: N,
-    disableGuildSelect: T,
+    prompt: T,
+    disableGuildSelect: N,
     disclosures: j,
     integrationType: P,
     pid: x,
@@ -138,8 +138,8 @@ let O = (0, Chunk703912.Z)(e => {
       permissions: f,
       guildId: C,
       channelId: S,
-      prompt: N,
-      disableGuildSelect: "boolean" == typeof T ? T : "true" === T,
+      prompt: T,
+      disableGuildSelect: "boolean" == typeof N ? N : "true" === N,
       integrationType: P,
       cancelCompletesFlow: true
     })), {
