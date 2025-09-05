@@ -189,6 +189,7 @@ class C extends Chunk647438.PureComponent {
         }), (0, Chunk951288.jsx)(Chunk794347.Z, {
           progress: Chunk19780 || Chunk393238 ? Chunk626135 + 100 : 0,
           notchBackground: Chunk647438,
+          notchClassName: this.props.notchClassName,
           children: this.renderCaption()
         })]
       })]

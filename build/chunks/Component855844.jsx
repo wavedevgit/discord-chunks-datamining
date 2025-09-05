@@ -103,7 +103,8 @@ function C(e) {
               section: v.jXE.CONTEXT_MENU
             },
             meterOnly: true,
-            containerClassName: A.customMenuItem
+            containerClassName: A.customMenuItem,
+            notchClassName: A.customNotches
           })
         }), x && Y]
       }), (0, r.jsxs)(s.kSQ, {
