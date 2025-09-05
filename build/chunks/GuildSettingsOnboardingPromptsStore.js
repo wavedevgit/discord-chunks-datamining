@@ -12,32 +12,40 @@ var l, i, Chunk392711 = require("./392711.js"),
   Chunk981631 = require("./981631.js"),
   Chunk290511 = require("./290511.js");
 let h = false,
-  I = null,
-  g = [],
+  g = null,
+  I = [],
   N = false,
-  S = [];
+  f = [];
 
-function f() {
-  h = false, I = null, S = [], N = false, null != (I = Chunk999382.Z.getGuildId()) && Chunk999382.Z.getSection() === Chunk981631.pNK.ONBOARDING && (g = Chunk45966.Z.getOnboardingPrompts(I), N = Chunk45966.Z.isAdvancedMode(I))
+function S() {
+  h = false, g = null, f = [], N = false, null != (g = Chunk999382.Z.getGuildId()) && Chunk999382.Z.getSection() === Chunk981631.pNK.ONBOARDING && (I = Chunk45966.Z.getOnboardingPrompts(g), N = Chunk45966.Z.isAdvancedMode(g))
 }
 class p extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk999382.Z, Chunk45966.Z)
   }
   hasChanges() {
-    return null != I && !s().isEqual(Chunk45966.Z.getOnboardingPrompts(I), g)
+    return null != g && !s().isEqual(Chunk45966.Z.getOnboardingPrompts(g), I)
+  }
+  getChangedPrompts() {
+    if (null == g) return [];
+    let e = Chunk45966.Z.getOnboardingPrompts(g);
+    return I.filter(t => {
+      let n = e.find(e => e.id === t.id);
+      return null == n || !s().isEqual(t, n)
+    })
   }
   get guildId() {
-    return I
+    return g
   }
   get submitting() {
     return h
   }
   get errors() {
-    return S
+    return f
   }
   get editedOnboardingPrompts() {
-    return g
+    return I
   }
   get advancedMode() {
     return N
@@ -49,28 +57,28 @@ class p extends(i = Chunk442837.ZP.Store) {
   writable: true
 }) : p[l] = "GuildSettingsOnboardingPromptsStore";
 let E = new p(Chunk570140.Z, {
-  GUILD_SETTINGS_INIT: f,
-  GUILD_SETTINGS_SET_SECTION: f,
-  GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS: f,
-  GUILD_SETTINGS_ONBOARDING_PROMPTS_RESET: f,
-  GUILD_SETTINGS_DEFAULT_CHANNELS_RESET: f,
-  GUILD_SETTINGS_ONBOARDING_PROMPTS_SAVE_SUCCESS: f,
+  GUILD_SETTINGS_INIT: S,
+  GUILD_SETTINGS_SET_SECTION: S,
+  GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS: S,
+  GUILD_SETTINGS_ONBOARDING_PROMPTS_RESET: S,
+  GUILD_SETTINGS_DEFAULT_CHANNELS_RESET: S,
+  GUILD_SETTINGS_ONBOARDING_PROMPTS_SAVE_SUCCESS: S,
   GUILD_SETTINGS_ONBOARDING_PROMPTS_SAVE_FAILED: function(e) {
     var t;
-    S = null != (t = e.errors) ? t : [], h = false
+    f = null != (t = e.errors) ? t : [], h = false
   },
   GUILD_SETTINGS_ONBOARDING_PROMPTS_EDIT: function(e) {
     let {
       prompts: t
     } = e;
-    g = t
+    I = t
   },
   GUILD_SETTINGS_ONBOARDING_PROMPTS_SUBMIT: function() {
-    h = true, S = []
+    h = true, f = []
   },
   GUILD_SETTINGS_ONBOARDING_PROMPTS_ERRORS: function(e) {
     var t;
-    S = null != (t = e.errors) ? t : []
+    f = null != (t = e.errors) ? t : []
   },
   GUILD_SETTINGS_ONBOARDING_SET_MODE: function(e) {
     let {

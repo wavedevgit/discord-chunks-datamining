@@ -64,7 +64,7 @@ function d(e) {
       let [n] = e;
       return [(n + 1) % t.length, "right"]
     })
-  }, [c, t.length]), h = t[n], I = i.useCallback((e, t, n, i) => (0, l.jsx)(u, {
+  }, [c, t.length]), h = t[n], g = i.useCallback((e, t, n, i) => (0, l.jsx)(u, {
     item: t,
     state: n,
     cleanup: i,
@@ -76,7 +76,7 @@ function d(e) {
       className: o.animatedContainer,
       children: (0, l.jsx)(s.W3x, {
         items: [h],
-        renderItem: I,
+        renderItem: g,
         getItemKey: e => e.adminTitle
       })
     }), (0, l.jsx)(s.Text, {

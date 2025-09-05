@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk204794 = require("./204794.js");
+  Chunk427760 = require("./427760.js");
 let y = (0, Chunk879690.U)(e => ({
     activeEntryId: null,
     setActiveEntryId: t => e({
@@ -63,7 +63,7 @@ let y = (0, Chunk879690.U)(e => ({
     };
     return (0, r.jsx)(l.J2, {
       title: E.intl.string(E.t["+WNDtb"]),
-      body: "",
+      body: E.intl.string(E.t["5QKxGB"]),
       targetElementRef: a,
       shouldShow: D,
       position: "left",

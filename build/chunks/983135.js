@@ -44,14 +44,14 @@ function _(e) {
 }
 async function j(e, t) {
   let n = a.Z.getEnabled(e),
-    s = Array.from(S.Z.editedDefaultChannelIds).filter(e => null != h.Z.getChannel(e)),
+    s = Array.from(f.Z.editedDefaultChannelIds).filter(e => null != h.Z.getChannel(e)),
     [o, d] = (0, c.d9)(e, [...s]);
   if (n && t === T.Un.ONBOARDING_DEFAULT && (d.length < T.md || o.length < T.X)) return void i.Z.show({
     title: O.intl.string(O.t.iLdiqa),
     body: O.intl.string(O.t.JOT74e)
   });
   try {
-    await (0, f.n_)(e, {
+    await (0, S.n_)(e, {
       mode: t
     })
   } catch (n) {
@@ -62,7 +62,7 @@ async function j(e, t) {
     } = null != (u = new r.Z(n).getAnyErrorMessageAndField()) ? u : {};
     i.Z.show({
       title: O.intl.string(O.t.iLdiqa),
-      body: [e, t].filter(g.lm).join(": ")
+      body: [e, t].filter(I.lm).join(": ")
     })
   }
   l.Z.dispatch({
@@ -82,7 +82,7 @@ function D(e, t) {
   false !== n && 0 !== n && x(p.xh[n - 1])
 }
 async function b(e) {
-  let t = I.Z.getGuild(e);
+  let t = g.Z.getGuild(e);
   null != t && (N.Z.close(), (0, u.iD)(t.id, {
     type: m.z.NEW_MEMBER,
     roles: {},

@@ -50,7 +50,7 @@ class N extends Chunk147913.Z {
     for (let n of ("VOICE_STATE_UPDATES" !== t && "PASSIVE_UPDATE_V2" !== t && S.log("~ syncHeartbeats -> syncing heartbeats for taskTypes: ".concat(e.join(", "), " (triggered by: ").concat(t, ")")), e)) {
       let e = this.heartbeats[n],
         t = this.getActivelyProgressingQuestIds(n);
-      for (let r of new Set(Object.keys(e))) t.has(r) || this.terminateHeartbeat(r, n);
+      for (let r of new Set(e.keys())) t.has(r) || this.terminateHeartbeat(r, n);
       for (let r of t) e.has(r) || this.initiateHeartbeat(r, n)
     }
   }

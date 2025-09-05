@@ -472,6 +472,7 @@ class M extends Chunk476326.ZP {
       pre_compression_file_size: this.preCompressionSize,
       final_state: e,
       mime_type: null != (r = this.mimeType) ? r : "unknown",
+      filename: this.filename,
       num_upload_attempts: null != (i = this.uploadAnalytics.numUploadAttempts) ? i : 1,
       error_code: this.error,
       video_upload_quality: p.ZP.videoUploadQuality,
