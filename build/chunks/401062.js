@@ -50,24 +50,24 @@ function m(e, t, n) {
 }
 
 function g(e, t, n, r) {
-  var a, c;
-  let u = o.ZP.getCustomEmojiById(null != (a = t.emojiId) ? a : ""),
+  var a;
+  let c = null != t.emojiId ? o.ZP.getCustomEmojiById(t.emojiId) : null,
     {
-      abortController: d,
-      onRequestProgress: f
+      abortController: u,
+      onRequestProgress: d
     } = h(e),
-    m = {
+    f = {
       sound_id: t.soundId,
       emoji_id: t.emojiId,
-      emoji_name: null != (c = t.emojiName) ? c : null == u ? true : u.name
+      emoji_name: null != (a = t.emojiName) ? a : null == c ? true : c.name
     };
-  t.guildId !== p.X8 && (m.source_guild_id = t.guildId), i.tn.post({
+  t.guildId !== p.X8 && (f.source_guild_id = t.guildId), i.tn.post({
     url: _.ANM.SEND_SOUNDBOARD_SOUND(e),
-    body: m,
-    signal: d.signal,
-    onRequestProgress: f,
+    body: f,
+    signal: u.signal,
+    onRequestProgress: d,
     rejectWithError: true
   }).then(_.VqG, () => {
-    if (d.signal.aborted) return
+    if (u.signal.aborted) return
   }), (0, l.Z)(null != r ? r : [], n, t, s.jy.DEFAULT)
 }
