@@ -23,7 +23,7 @@ class s extends Chunk147913.Z {
     } = Chunk765504.Z.getConfig({
       location: "can-install"
     });
-    module && (0, Chunk865066.Yz)()
+    module && (0, Chunk865066.Yz)("startup")
   }
   handleLogout() {
     (0, Chunk865066.wt)()

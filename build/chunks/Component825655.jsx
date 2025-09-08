@@ -59,7 +59,7 @@ function g(e) {
   if (null == c || c.elevated || (c = true, g = true), !(0, d.hi)() || "voice" === n && (null == c || i !== f.pM4.PUSH_TO_TALK)) return null;
 
   function E() {
-    (0, d.sU)()
+    (0, d.sU)(n + (null != c ? "-with-game" : "-no-game"))
   }
   return (0, r.jsxs)("div", {
     className: a()(p.container, t),

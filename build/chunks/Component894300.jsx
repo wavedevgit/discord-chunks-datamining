@@ -2,14 +2,18 @@
 /** chunk id: 894300, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => l
 });
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk865066 = require("./865066.js"),
   Chunk388032 = require("./388032.jsx");
 
-function s(e) {
+function s() {
+  (0, Chunk865066.sU)("overlay-settings")
+}
+
+function l(e) {
   let {
     className: t,
     game: n
@@ -22,7 +26,7 @@ function s(e) {
         variant: "secondary",
         size: "sm",
         text: o.intl.string(o.t["1iI46O"]),
-        onClick: a.sU
+        onClick: s
       }),
       children: o.intl.string(o.t.NP1FHx)
     })

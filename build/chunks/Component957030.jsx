@@ -2,7 +2,7 @@
 /** chunk id: 957030, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
@@ -14,6 +14,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx");
 
 function d() {
+  (0, Chunk865066.sU)("nagbar")
+}
+
+function f() {
   let e = (0, Chunk442837.e7)([Chunk594190.ZP], () => Chunk594190.ZP.getVisibleGame());
   return null == module ? null : (0, Chunk951288.jsxs)(Chunk481060.qXd, {
     color: Chunk481060.DM8.DANGER,
@@ -23,7 +27,7 @@ function d() {
     }), Chunk388032.intl.format(Chunk388032.t.kxePRk, {
       gameName: module.name
     }), (0, Chunk951288.jsx)(Chunk481060.NoS, {
-      onClick: Chunk865066.sU,
+      onClick: d,
       noticeType: Chunk981631.kVF.SYSTEM_SERVICE_WARNING,
       children: Chunk388032.intl.string(Chunk388032.t["1iI46O"])
     })]
