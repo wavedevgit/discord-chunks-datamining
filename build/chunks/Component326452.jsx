@@ -110,6 +110,7 @@ class b extends(r = Chunk647438.PureComponent) {
         isLoading: h
       });
     return null == Chunk647438 ? (0, Chunk951288.jsx)(Chunk481060.oil, m(p({}, T), {
+      role: "searchbox",
       onFocus: v,
       onBlur: O,
       value: exports,

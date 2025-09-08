@@ -1,1 +1,0 @@
-{"id":"96320","type":"experiment","data":{"kind":"user","id":"2025-08_offer_notice_recurrence","commonTriggerPoint":"Chunk987338.$P.CONNECTION_OPEN","label":"Offer Notice Recurrence","defaultConfig":{"useRecurringNotices":false},"treatments":[{"id":1,"label":"Recurring Notices","config":{"useRecurringNotices":true}}]},"fromModule":{"id":"web.js"}}
