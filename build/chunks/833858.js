@@ -2,27 +2,30 @@
 /** chunk id: 833858, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Fe: () => p,
-  O8: () => b,
-  V: () => g,
-  tV: () => E
+  Fe: () => g,
+  O8: () => T,
+  V: () => v,
+  tV: () => I
 }), require("./35282.js");
 var Chunk970683 = require("./970683.js"),
+  Chunk481060 = require("./481060.js"),
   Chunk505905 = require("./505905.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
+  Chunk324349 = require("./324349.js"),
+  Chunk829290 = require("./829290.js"),
+  Chunk136779 = require("./136779.js"),
   Chunk33346 = require("./33346.js"),
   Chunk857042 = require("./857042.js"),
   Chunk558532 = require("./558532.js"),
   Chunk105196 = require("./105196.js"),
   Chunk346554 = require("./346554.js"),
-  Chunk933045 = require("./933045.js"),
   Chunk444305 = require("./444305.js");
 
-function p(e) {
+function g(e) {
   return null == e ? [null, null] : e.split(":")
 }
-let h = () => ({
+let E = () => ({
     [Chunk505905.tN.CHILLING]: {
       title: Chunk388032.intl.string(Chunk388032.t["vkpn7+"]),
       icon: Chunk857042
@@ -43,41 +46,116 @@ let h = () => ({
       title: Chunk388032.intl.string(Chunk388032.t.UVSEhY),
       icon: Chunk105196
     },
-    [Chunk505905.tN.IN_TRANSIT]: {
-      title: Chunk388032.intl.string(Chunk388032.t["l0q9/f"]),
-      icon: Chunk933045
-    },
     [Chunk505905.tN.WATCHING]: {
       title: Chunk388032.intl.string(Chunk388032.t.di6IFx),
       icon: Chunk444305
     }
   }),
-  m = () => ({
-    [Chunk505905.tN.IN_TRANSIT]: {
-      title: "Here",
+  b = () => ({
+    [Chunk505905.tN.BRB]: {
+      title: Chunk388032.intl.string(Chunk388032.t.fFTJTE),
+      icon: Chunk136779
+    },
+    [Chunk505905.tN.CHILLING]: {
+      title: Chunk388032.intl.string(Chunk388032.t.vybY9f),
       icon: Chunk970683.s_
+    },
+    [Chunk505905.tN.GAMING]: {
+      title: Chunk388032.intl.string(Chunk388032.t.wvWdTU),
+      icon: Chunk970683.mB
+    },
+    [Chunk505905.tN.WATCHING]: {
+      title: Chunk388032.intl.string(Chunk388032.t.s8xFaG),
+      icon: Chunk829290
+    },
+    [Chunk505905.tN.FOCUSING]: {
+      title: Chunk388032.intl.string(Chunk388032.t.D5eCT0),
+      icon: Chunk970683.FG
     }
   }),
-  g = e => {
+  y = () => ({
+    [Chunk505905.tN.BRB]: {
+      title: Chunk388032.intl.string(Chunk388032.t.fFTJTE),
+      icon: Chunk481060.GsA
+    },
+    [Chunk505905.tN.CHILLING]: {
+      title: Chunk388032.intl.string(Chunk388032.t.vybY9f),
+      icon: Chunk324349
+    },
+    [Chunk505905.tN.GAMING]: {
+      title: Chunk388032.intl.string(Chunk388032.t.wvWdTU),
+      icon: Chunk481060.iWm
+    },
+    [Chunk505905.tN.WATCHING]: {
+      title: Chunk388032.intl.string(Chunk388032.t.s8xFaG),
+      icon: Chunk481060.FLu
+    },
+    [Chunk505905.tN.FOCUSING]: {
+      title: Chunk388032.intl.string(Chunk388032.t.D5eCT0),
+      icon: Chunk481060.Xbz
+    }
+  }),
+  O = () => ({
+    [Chunk505905.tN.BRB]: {
+      title: Chunk388032.intl.string(Chunk388032.t.fFTJTE),
+      emoji: {
+        id: true,
+        name: "\uD83D\uDCA8"
+      }
+    },
+    [Chunk505905.tN.CHILLING]: {
+      title: Chunk388032.intl.string(Chunk388032.t.vybY9f),
+      emoji: {
+        id: true,
+        name: "\uD83C\uDF68"
+      }
+    },
+    [Chunk505905.tN.GAMING]: {
+      title: Chunk388032.intl.string(Chunk388032.t.wvWdTU),
+      emoji: {
+        id: true,
+        name: "⚔️"
+      }
+    },
+    [Chunk505905.tN.WATCHING]: {
+      title: Chunk388032.intl.string(Chunk388032.t.s8xFaG),
+      emoji: {
+        id: true,
+        name: "\uD83C\uDF7F"
+      }
+    },
+    [Chunk505905.tN.FOCUSING]: {
+      title: Chunk388032.intl.string(Chunk388032.t.D5eCT0),
+      emoji: {
+        id: true,
+        name: "\uD83E\uDDE0"
+      }
+    }
+  }),
+  v = e => {
     switch (e) {
       case "original":
       default:
-        return h();
+        return E();
       case "illocons":
-        return m()
+        return b();
+      case "icons":
+        return y();
+      case "twemoji":
+        return O()
     }
   },
-  E = function(e) {
+  I = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "original";
-    if ((null == e ? true : e.type) !== a.IIU.HANG_STATUS || (null == e ? true : e.state) == null) return null;
-    let n = p(e.state),
+    if ((null == e ? true : e.type) !== o.IIU.HANG_STATUS || (null == e ? true : e.state) == null) return null;
+    let n = g(e.state),
       r = n[0];
-    if (r === i.tN.CUSTOM) return null;
-    let o = g(n.length > 1 ? n[1] : t);
-    return r in o ? o[r] : null
+    if (r === a.tN.CUSTOM) return null;
+    let i = v(n.length > 1 ? n[1] : t);
+    return r in i ? i[r] : null
   },
-  b = function(e) {
+  T = function(e) {
     var t;
     let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "original";
-    return (null == e ? true : e.type) !== a.IIU.HANG_STATUS || (null == e ? true : e.state) == null ? null : p(e.state)[0] === i.tN.CUSTOM ? null == e ? true : e.details : null == (t = E(e, n)) ? true : t.title
+    return (null == e ? true : e.type) !== o.IIU.HANG_STATUS || (null == e ? true : e.state) == null ? null : g(e.state)[0] === a.tN.CUSTOM ? null == e ? true : e.details : null == (t = I(e, n)) ? true : t.title
   }

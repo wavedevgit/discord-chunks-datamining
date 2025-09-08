@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk755721 = require("./755721.js"),
+var Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk17894 = require("./17894.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -15,35 +15,35 @@ let c = e => {
   let {
     onConfirm: t,
     onCancel: n,
-    title: r,
-    subtitle: c,
-    confirmCta: u,
-    showOpenDiscord: d = true
+    title: c,
+    subtitle: u,
+    confirmCta: d,
+    showOpenDiscord: m = true
   } = e;
-  return (0, i.jsxs)("div", {
+  return (0, r.jsxs)("div", {
     className: s.confirmationContainer,
-    children: [(0, i.jsx)(l.X6q, {
+    children: [(0, r.jsx)(l.X6q, {
       className: s.confirmationHeader,
       variant: "heading-lg/extrabold",
-      children: r
-    }), null != c ? (0, i.jsx)(l.Text, {
+      children: c
+    }), null != u ? (0, r.jsx)(l.Text, {
       className: s.confirmationSubtitle,
       variant: "text-sm/normal",
       color: "header-secondary",
-      children: c
-    }) : null, (0, i.jsxs)("div", {
+      children: u
+    }) : null, (0, r.jsxs)("div", {
       className: s.buttonContainer,
-      children: [d && (0, i.jsx)(l.zxk, {
+      children: [m && (0, r.jsx)(i.zx, {
         variant: "primary",
         text: o.intl.string(o.t["8L5bZG"]),
         fullWidth: true,
         onClick: () => (0, a.Z)("application_sub_mweb_success_modal")
-      }), (0, i.jsx)(l.zxk, {
+      }), (0, r.jsx)(i.zx, {
         variant: "secondary",
-        text: u,
+        text: d,
         fullWidth: true,
         onClick: t
-      }), null != n && (0, i.jsx)(l.zxk, {
+      }), null != n && (0, r.jsx)(i.zx, {
         variant: "secondary",
         text: o.intl.string(o.t.iAfxo6),
         fullWidth: true,
@@ -59,36 +59,35 @@ function u(e) {
     tierName: n,
     subscription: c
   } = e;
-  return (0, i.jsxs)("div", {
+  return (0, r.jsxs)("div", {
     className: s.confirmationContainer,
-    children: [(0, i.jsx)(l.X6q, {
+    children: [(0, r.jsx)(l.X6q, {
       className: s.confirmationHeader,
       variant: "heading-lg/extrabold",
       children: o.intl.format(o.t["wLFT6+"], {
         tier: n
       })
-    }), (0, i.jsx)(l.Text, {
+    }), (0, r.jsx)(l.Text, {
       className: s.confirmationSubtitle,
       variant: "text-sm/normal",
       color: "header-secondary",
       children: o.intl.format(o.t.OsAK9v, {
         timestamp: null == c ? true : c.currentPeriodEnd
       })
-    }), (0, i.jsxs)("div", {
+    }), (0, r.jsxs)("div", {
       className: s.buttonContainer,
-      children: [(0, i.jsx)("div", {
+      children: [(0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: s.__invalid_openDiscordButton,
-        children: (0, i.jsx)(l.zxk, {
+        children: (0, r.jsx)(i.zx, {
           variant: "primary",
           text: o.intl.string(o.t["8L5bZG"]),
           onClick: () => (0, a.Z)("application_sub_mweb_success_modal")
         })
-      }), (0, i.jsx)(r.zx, {
-        className: s.__invalid_doneButton,
-        look: r.zx.Looks.BLANK,
-        onClick: t,
-        children: o.intl.string(o.t.nlkyw8)
+      }), (0, r.jsx)(i.zx, {
+        variant: "secondary",
+        text: o.intl.string(o.t.nlkyw8),
+        onClick: t
       })]
     })]
   })
