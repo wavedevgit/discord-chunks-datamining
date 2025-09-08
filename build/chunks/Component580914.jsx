@@ -93,12 +93,12 @@ let R = {
         rankedSkuIds: null != (e = w.heroRanking) ? e : [],
         name: w.name,
         unpublishedAt: w.unpublishedAt,
-        logoUrl: (0, b.uV)(null != (t = w.heroLogo) ? t : w.logo, {
+        logoUrl: (0, C.uV)(null != (t = w.heroLogo) ? t : w.logo, {
           size: x.n
         }),
         categorySkuId: w.skuId,
         bannerAsset: w.heroBannerAsset,
-        fallbackBannerUrl: (0, b.uV)(w.heroBanner, {
+        fallbackBannerUrl: (0, C.uV)(w.heroBanner, {
           size: I.pv,
           format: "jpg"
         }),
@@ -202,7 +202,7 @@ let R = {
             children: [true, true, true, true].map((e, t) => (0, r.jsx)(y.K, {}, t))
           }) : (0, r.jsx)(r.Fragment, {
             children: es.map((e, t) => {
-              let n = C.Z.getCategoryForProduct(e.skuId);
+              let n = b.Z.getCategoryForProduct(e.skuId);
               return null == e || null == n ? null : (0, r.jsx)(_.k0, {
                 newValue: {
                   tilePosition: t,

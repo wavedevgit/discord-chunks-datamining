@@ -54,31 +54,31 @@ let h = e => {
     className: a,
     style: h,
     children: _,
-    categoryBannerOverride: C
-  } = e, b = (0, o.e7)([c.Z], () => c.Z.saturation), E = l.useMemo(() => {
+    categoryBannerOverride: b
+  } = e, C = (0, o.e7)([c.Z], () => c.Z.saturation), E = l.useMemo(() => {
     if (null == t) return h;
     let e = null != t && /^http/i.test(t) || null != t && /^blob:https?:\/\/[^\/]+\//i.test(t) ? t : (0, d.uV)(t, {
         size: n,
         format: "jpg"
       }),
-      r = (null == C ? true : C.blur) ? {
+      r = (null == b ? true : b.blur) ? {
         filter: "blur(2px)",
         transform: "scale(1.02)"
       } : {};
-    if (1 === b) return p(m(p({}, h), {
-      backgroundImage: (null == C ? true : C.addGradient) ? "url(".concat(e, "), linear-gradient(180deg, rgba(0, 71, 94, 0.6) 5%, rgba(9, 33, 65, 0.6) 95%)") : "url(".concat(e, ")"),
+    if (1 === C) return p(m(p({}, h), {
+      backgroundImage: (null == b ? true : b.addGradient) ? "url(".concat(e, "), linear-gradient(180deg, rgba(0, 71, 94, 0.6) 5%, rgba(9, 33, 65, 0.6) 95%)") : "url(".concat(e, ")"),
       backgroundBlendMode: "multiply",
       backgroundSize: "cover",
       backgroundPosition: "center"
     }), r);
-    let l = (0, u.aD)(i.Z.unsafe_rawColors.BLACK_500.resolve().hex(), 1 - b);
+    let l = (0, u.aD)(i.Z.unsafe_rawColors.BLACK_500.resolve().hex(), 1 - C);
     return p(m(p({}, h), {
       backgroundImage: "linear-gradient(".concat(l, ", ").concat(l, "), url(").concat(e, ")"),
       backgroundBlendMode: "saturation",
       backgroundSize: "cover",
       backgroundPosition: "center"
     }), r)
-  }, [t, n, b, h, null == C ? true : C.blur, null == C ? true : C.addGradient]);
+  }, [t, n, C, h, null == b ? true : b.blur, null == b ? true : b.addGradient]);
   return (0, r.jsx)("div", {
     className: s()(f.banner, a),
     style: E,

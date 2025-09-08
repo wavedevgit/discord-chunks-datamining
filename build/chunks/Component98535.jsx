@@ -39,14 +39,14 @@ function S(e) {
     L = l.useCallback(async (e, t, r) => {
       d(e, t);
       let l = r && !n && !x,
-        s = t === a.T.ORB ? b.AW.ORBS : b.AW.CATALOG;
+        s = t === a.T.ORB ? C.AW.ORBS : C.AW.CATALOG;
       T(t), await c(s, l)
     }, [n, x, c, d]),
     j = (0, g.FF)("CollectiblesContent"),
     {
       searchError: k
     } = (0, f.a)();
-  return j && null != k ? (0, r.jsx)(C.Z, {}) : null != S ? (0, r.jsx)(m.Z, {
+  return j && null != k ? (0, r.jsx)(b.Z, {}) : null != S ? (0, r.jsx)(m.Z, {
     onRetry: h,
     errorMessage: S,
     errorOrigin: m.i.SHOP_PAGE

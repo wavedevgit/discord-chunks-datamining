@@ -3,7 +3,9 @@
 "use strict";
 require.d(exports, {
   aX: () => u,
+  jn: () => d,
   pE: () => f,
+  vl: () => p,
   xc: () => _,
   zt: () => c
 });
@@ -104,4 +106,11 @@ function _(e = true) {
   return (0, o.b)(() => {
     r.current || n(false)
   }, []), [i, t]
+}
+
+function p(e) {
+  let t = /^(data-.*)$/,
+    n = {};
+  for (let r in e) t.test(r) || (n[r] = e[r]);
+  return n
 }

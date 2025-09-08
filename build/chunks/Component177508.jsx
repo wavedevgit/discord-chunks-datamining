@@ -1809,17 +1809,19 @@ function eO() {
       children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-xl/semibold",
         children: "Checkboxes"
-      }), (0, Chunk951288.jsx)(Chunk755721.$q, {
+      }), (0, Chunk951288.jsx)(Chunk481060.XZJ, {
         value: module,
         onChange: (e, n) => t(n),
+        label: "Checkbox input",
         children: (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/medium",
           children: "Checkbox input"
         })
-      }), (0, Chunk951288.jsx)(Chunk755721.$q, {
+      }), (0, Chunk951288.jsx)(Chunk481060.XZJ, {
         value: module,
         onChange: (e, n) => t(n),
         disabled: true,
+        label: "Disabled checkbox",
         children: (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/medium",
           children: "Disabled checkbox"

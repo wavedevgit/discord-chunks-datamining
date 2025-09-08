@@ -35,7 +35,7 @@ function v(e) {
   } = e, y = (0, d.sp)(), T = null != (t = null == y ? true : y.sessionId) ? t : "", {
     noCache: L,
     includeUnpublished: j
-  } = (0, b.Z)(), k = (0, o.e7)([c.default], () => c.default.getCurrentUser()), {
+  } = (0, C.Z)(), k = (0, o.e7)([c.default], () => c.default.getCurrentUser()), {
     skus: B,
     currentPage: I,
     totalCount: N,
@@ -107,7 +107,7 @@ function v(e) {
             newValue: {
               tilePosition: t
             },
-            children: (0, r.jsx)(C.Z, {
+            children: (0, r.jsx)(b.Z, {
               product: e,
               user: k,
               category: n,

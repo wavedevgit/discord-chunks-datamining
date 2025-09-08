@@ -120,7 +120,7 @@ let f = {
           rotation: p,
           size: m,
           skuId: h
-        } = e, C = null == (l = _[t]) ? true : l.items[0], b = null == (a = _[t]) ? true : a.type, E = b === o.Z.AVATAR_DECORATION ? 384 : 512;
+        } = e, b = null == (l = _[t]) ? true : l.items[0], C = null == (a = _[t]) ? true : a.type, E = C === o.Z.AVATAR_DECORATION ? 384 : 512;
         return (0, r.jsxs)("div", {
           className: g.asset,
           style: {
@@ -132,10 +132,10 @@ let f = {
             transitionDelay: "".concat(Math.random() / 3, "s"),
             transitionDuration: "".concat(d.lb - 200 * Math.random(), "ms")
           },
-          children: [null != C && b === o.Z.AVATAR_DECORATION && (0, r.jsx)(u.R, {
-            item: C
-          }), null != C && b === o.Z.PROFILE_EFFECT && (0, r.jsx)(i.Z, {
-            profileEffectId: C.id,
+          children: [null != b && C === o.Z.AVATAR_DECORATION && (0, r.jsx)(u.R, {
+            item: b
+          }), null != b && C === o.Z.PROFILE_EFFECT && (0, r.jsx)(i.Z, {
+            profileEffectId: b.id,
             isPurchased: false,
             isHovering: true
           })]

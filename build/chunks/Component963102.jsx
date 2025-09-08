@@ -55,26 +55,26 @@ function I(e) {
     selected: n,
     displayText: a,
     handleTransition: o
-  } = e, [i, u] = l.useState(false), d = l.useRef(null), [g, h] = l.useState(0), _ = l.useRef(false), C = e => {
+  } = e, [i, u] = l.useState(false), d = l.useRef(null), [g, h] = l.useState(0), _ = l.useRef(false), b = e => {
     clearTimeout(g), h(setTimeout(() => {
       u(e)
     }, 100)), e && (_.current = p.Z.keyboardModeEnabled)
-  }, b = e => {
-    ("Enter" === e.key || " " === e.key) && (e.preventDefault(), C(true))
+  }, C = e => {
+    ("Enter" === e.key || " " === e.key) && (e.preventDefault(), b(true))
   };
   return (0, r.jsx)("div", {
     className: k.tabWithMenuContainer,
-    onMouseEnter: () => C(true),
-    onMouseLeave: () => C(false),
+    onMouseEnter: () => b(true),
+    onMouseLeave: () => b(false),
     children: (0, r.jsx)(c.yRy, {
       targetElementRef: d,
       shouldShow: i,
       position: "bottom",
       align: "left",
-      onRequestOpen: () => C(true),
+      onRequestOpen: () => b(true),
       onRequestClose: () => {
         var e;
-        _.current && !p.Z.keyboardModeEnabled && (0, f.Qj)(), C(false), null == (e = d.current) || e.focus()
+        _.current && !p.Z.keyboardModeEnabled && (0, f.Qj)(), b(false), null == (e = d.current) || e.focus()
       },
       renderPopout: e => {
         let {
@@ -110,7 +110,7 @@ function I(e) {
         }({}, e), u = u = {
           ref: d,
           onClick: () => o(t),
-          onKeyDown: b,
+          onKeyDown: C,
           wrapperClassName: k.tabWrapper,
           className: s()(k.tab, {
             [k.selected]: n
@@ -149,7 +149,7 @@ function N(e) {
     handleTransition: p
   } = e, x = (0, g.ZP)(), N = (0, i.e7)([E.default], () => E.default.getCurrentUser()), A = (null == N ? true : N.isStaff()) || (null == N ? true : N.isStaffPersonal()) || false, {
     enabled: P
-  } = (0, C.WX)({
+  } = (0, b.WX)({
     location: "collectibles_shop_header_bar"
   }), R = [{
     tab: T.AW.HOME,
@@ -216,10 +216,10 @@ function N(e) {
         children: [H && (0, r.jsx)(y.Z, {
           handleTransition: p,
           selectedTab: f
-        }), P && (0, r.jsx)(b.V9, {
+        }), P && (0, r.jsx)(C.V9, {
           anchorPillType: t ? "SHOP_FULLSCREEN" : "SHOP",
           analyticsPage: w,
-          cardAlignment: b.V9.CardAlignment.END,
+          cardAlignment: C.V9.CardAlignment.END,
           ctaText: j.intl.string(j.t.VC4Mq6),
           ctaOnClick: F,
           className: k.balanceWidgetMenu

@@ -22,8 +22,8 @@ let h = e => {
   let {
     wideBannerBlock: h,
     handleTransition: _,
-    tab: C
-  } = e, b = null == (t = u.Z.getCategoryByStoreListingId(h.categoryStoreListingId)) ? true : t.skuId, E = l.useRef(null), S = l.useRef(null), [O, v] = l.useState();
+    tab: b
+  } = e, C = null == (t = u.Z.getCategoryByStoreListingId(h.categoryStoreListingId)) ? true : t.skuId, E = l.useRef(null), S = l.useRef(null), [O, v] = l.useState();
   l.useEffect(() => {
     let e = S.current;
     if (null == e) return;
@@ -34,13 +34,13 @@ let h = e => {
       e.onload = null
     }
   }, []);
-  let x = null != b ? b : "",
+  let x = null != C ? C : "",
     {
       handleCardVisibilityChange: y
     } = (0, d.E)(x, "home", "marketing wide banner"),
     T = h.bannerUrl;
   if (null == T) return null;
-  let L = C === g.AW.ORBS;
+  let L = b === g.AW.ORBS;
   return (0, r.jsx)(o.$, {
     innerRef: E,
     onChange: y,

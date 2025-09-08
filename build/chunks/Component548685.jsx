@@ -150,7 +150,7 @@ let j = e => {
     }), (0, r.jsx)("div", {
       className: L.feed,
       children: n ? (0, r.jsx)(r.Fragment, {
-        children: [...Array(12)].map((e, t) => (0, r.jsx)(C.K, {}, t + 1))
+        children: [...Array(12)].map((e, t) => (0, r.jsx)(b.K, {}, t + 1))
       }) : U.slice(0, k).map((e, t) => {
         let n, l = _.Z.getCategoryForProduct(e.skuId);
         if (null == e || null == l) return null;
@@ -165,7 +165,7 @@ let j = e => {
             pageSection: "popular picks",
             categoryPosition: 2
           },
-          children: (0, r.jsx)(b.Z, {
+          children: (0, r.jsx)(C.Z, {
             product: e,
             category: l,
             user: P,

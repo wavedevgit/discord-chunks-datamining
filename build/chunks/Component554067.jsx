@@ -24,24 +24,24 @@ function m(e) {
   } = e, {
     searchQuery: m,
     onSetSearchQuery: h
-  } = (0, u.S)(), [_, C] = l.useState(""), b = (0, c.sp)(), E = (0, a.e7)([o.default], () => o.default.locale);
+  } = (0, u.S)(), [_, b] = l.useState(""), C = (0, c.sp)(), E = (0, a.e7)([o.default], () => o.default.locale);
   return l.useEffect(() => {
     let e = setTimeout(() => {
       h(_)
     }, 250);
     return () => clearTimeout(e)
   }, [_, h]), l.useEffect(() => {
-    C(m)
+    b(m)
   }, [m]), (0, r.jsx)(s.P3F, {
     ignoreKeyPress: true,
     className: p.searchBar,
     onClick: () => {
       n !== d.AW.CATALOG && t(d.AW.CATALOG), i.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-        collectibles_shop_session_id: null == b ? true : b.sessionId,
-        page_section: null == b ? true : b.pageSection,
-        page_category: null == b ? true : b.pageCategory,
-        page_index: null == b ? true : b.pageIndex,
-        page_size: null == b ? true : b.pageSize,
+        collectibles_shop_session_id: null == C ? true : C.sessionId,
+        page_section: null == C ? true : C.pageSection,
+        page_category: null == C ? true : C.pageCategory,
+        page_index: null == C ? true : C.pageIndex,
+        page_size: null == C ? true : C.pageSize,
         cta_name: "search bar",
         page_type: n
       })
@@ -52,14 +52,14 @@ function m(e) {
         "Enter" === e.key && h(_)
       },
       query: _,
-      onChange: C,
+      onChange: b,
       onClear: () => {
-        C(""), i.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-          collectibles_shop_session_id: null == b ? true : b.sessionId,
-          page_section: null == b ? true : b.pageSection,
-          page_category: null == b ? true : b.pageCategory,
-          page_index: null == b ? true : b.pageIndex,
-          page_size: null == b ? true : b.pageSize,
+        b(""), i.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+          collectibles_shop_session_id: null == C ? true : C.sessionId,
+          page_section: null == C ? true : C.pageSection,
+          page_category: null == C ? true : C.pageCategory,
+          page_index: null == C ? true : C.pageIndex,
+          page_size: null == C ? true : C.pageSize,
           cta_name: "search bar clear",
           page_type: n
         })

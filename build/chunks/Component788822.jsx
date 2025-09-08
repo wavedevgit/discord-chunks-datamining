@@ -2,7 +2,7 @@
 /** chunk id: 788822, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  q: () => C
+  q: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,16 +19,16 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk310582 = require("./310582.js");
-let C = e => {
-  var t, n, a, C;
-  let b, {
+let b = e => {
+  var t, n, a, b;
+  let C, {
     category: E,
     subblock: S,
     badgeText: O,
     handleTransition: v
   } = e;
-  null != S && (b = null == (t = g.Z.getCategoryByStoreListingId(null == S ? true : S.categoryStoreListingId)) ? true : t.skuId);
-  let x = null != (n = null != b ? b : null == E ? true : E.skuId) ? n : "",
+  null != S && (C = null == (t = g.Z.getCategoryByStoreListingId(null == S ? true : S.categoryStoreListingId)) ? true : t.skuId);
+  let x = null != (n = null != C ? C : null == E ? true : E.skuId) ? n : "",
     {
       handleCardVisibilityChange: y
     } = (0, f.E)(x, "home", "marketing featured block"),
@@ -80,7 +80,7 @@ let C = e => {
           lineClamp: null != k ? 2 : 4,
           className: _.featuredBlockBodyText,
           style: {
-            color: null != (C = null == S ? true : S.bannerTextColor) ? C : "white"
+            color: null != (b = null == S ? true : S.bannerTextColor) ? b : "white"
           },
           variant: "heading-md/medium",
           children: B

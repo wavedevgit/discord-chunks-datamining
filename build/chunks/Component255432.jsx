@@ -11,7 +11,7 @@ var Chunk793030 = require("./793030.js"),
   Chunk619307 = require("./619307.jsx"),
   Chunk993365 = require("./993365.js"),
   Chunk463208 = require("./463208.jsx"),
-  Chunk755721 = require("./755721.js"),
+  Chunk481060 = require("./481060.js"),
   Chunk624315 = require("./624315.js");
 
 function d(e, t, n) {
@@ -76,9 +76,10 @@ function h(e) {
             value: d,
             onChange: e => _(i, e),
             options: u.options
-          }), "boolean" === u.type && (0, r.jsx)(c.$q, {
+          }), "boolean" === u.type && (0, r.jsx)(c.XZJ, {
             value: d,
             onChange: (e, t) => _(i, t),
+            label: u.label,
             children: (0, r.jsx)(s.x, {
               variant: "text-md/medium",
               children: u.label

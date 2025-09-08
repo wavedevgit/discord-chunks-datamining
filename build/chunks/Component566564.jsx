@@ -88,11 +88,11 @@ let k = e => {
         isLoading: N,
         handleTransition: n,
         tab: c
-      }), (0, r.jsx)(C.Z, {
+      }), (0, r.jsx)(b.Z, {
         isLoading: N,
         handleTransition: n,
         categories: []
-      }), (0, r.jsx)(b.Z, {
+      }), (0, r.jsx)(C.Z, {
         isLoading: N,
         title: c === y.AW.ORBS ? L.intl.string(L.t.dFgeub) : L.intl.string(L.t.NSv5KS),
         numVisibleItems: a,
@@ -114,7 +114,7 @@ let k = e => {
             }, l);
             break;
           case o.z.FEATURED:
-            d = (0, r.jsx)(C.Z, {
+            d = (0, r.jsx)(b.Z, {
               isLoading: N,
               handleTransition: n,
               featuredBlockRecord: e
@@ -122,7 +122,7 @@ let k = e => {
             break;
           case o.z.FEED:
             let f = e.sortedSkuIds;
-            d = (0, r.jsx)(b.Z, {
+            d = (0, r.jsx)(C.Z, {
               title: c === y.AW.ORBS ? L.intl.string(L.t.dFgeub) : L.intl.string(L.t.NSv5KS),
               isLoading: N || i,
               numVisibleItems: a,
@@ -180,20 +180,20 @@ let k = e => {
       transitionState: s
     } = e, o = l.useRef(null), {
       handleScroll: g
-    } = (0, c.z)(o, a), f = (0, m.R)(), p = (0, d.sp)(), [h, _] = l.useState(y.IV), [C, b] = l.useState(false);
+    } = (0, c.z)(o, a), f = (0, m.R)(), p = (0, d.sp)(), [h, _] = l.useState(y.IV), [b, C] = l.useState(false);
     return l.useEffect(() => {
       if (null != o.current) {
         let e = () => {
             if (null == o.current) return;
             let e = o.current.getDistanceFromBottom();
-            h >= 36 ? b(e < 20) : e <= 200 && _(e => e + y.IV)
+            h >= 36 ? C(e < 20) : e <= 200 && _(e => e + y.IV)
           },
           t = o.current.getScrollerNode();
         return null == t || t.addEventListener("scroll", e), () => {
           null == t || t.removeEventListener("scroll", e)
         }
       }
-    }, [o, h, _, b]), (0, r.jsx)(i.Den, {
+    }, [o, h, _, C]), (0, r.jsx)(i.Den, {
       className: j.shopScroll,
       ref: o,
       onScroll: g,
@@ -228,13 +228,13 @@ let k = e => {
           })]
         }), !t && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(v.Z, {
-            peaking: C,
+            peaking: b,
             transitioning: s === y.f7.OUT
           }), (0, r.jsx)(v.Z, {
             style: {
               left: 1850
             },
-            peaking: C,
+            peaking: b,
             transitioning: s === y.f7.OUT
           })]
         })]

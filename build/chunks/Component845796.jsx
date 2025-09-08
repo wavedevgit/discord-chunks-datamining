@@ -2,7 +2,7 @@
 /** chunk id: 845796, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => C
 }), require("./642613.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,12 +20,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk182668 = require("./182668.js"),
   Chunk345213 = require("./345213.js");
-let b = () => {
+let C = () => {
   let {
     sort: e,
     onSetSort: t,
     hasRelevanceFilters: n
-  } = (0, Chunk501431.S)(), a = (0, Chunk381585.sp)(), b = (0, Chunk642909.G)("CollectiblesSortSelect"), E = require(), S = Chunk647438.useMemo(() => Chunk215023.aP.filter(e => e.sortType !== i.E.RELEVANCE || E), [E]), O = Chunk647438.useCallback(e => {
+  } = (0, Chunk501431.S)(), a = (0, Chunk381585.sp)(), C = (0, Chunk642909.G)("CollectiblesSortSelect"), E = require(), S = Chunk647438.useMemo(() => Chunk215023.aP.filter(e => e.sortType !== i.E.RELEVANCE || E), [E]), O = Chunk647438.useCallback(e => {
     let {
       sortType: t,
       sortDirection: n
@@ -81,7 +81,7 @@ let b = () => {
   }, [Chunk120356, O, v, exports]), y = O(module);
   return (0, Chunk951288.jsx)("div", {
     className: s()(Chunk182668.container, {
-      [Chunk345213.shopTakeOver]: b
+      [Chunk345213.shopTakeOver]: C
     }),
     children: (0, Chunk951288.jsx)(Chunk481060.PhF, {
       options: S.map(O),
@@ -90,7 +90,7 @@ let b = () => {
       serialize: e => e,
       popoutWidth: 224,
       popoutClassName: s()({
-        [Chunk345213.shopTakeOver]: b
+        [Chunk345213.shopTakeOver]: C
       })
     })
   })

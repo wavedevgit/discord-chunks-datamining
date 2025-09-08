@@ -44,7 +44,7 @@ function N(e) {
   } = e, R = (0, g.sp)(), Z = null != (t = null == R ? true : R.sessionId) ? t : "", {
     noCache: w,
     includeUnpublished: F
-  } = (0, b.Z)(), H = (0, s.e7)([u.default], () => u.default.getCurrentUser()), D = (0, s.e7)([f.Z], () => f.Z.productsWithVariantsAsGroup), [M, W] = l.useState(1), U = (0, c.Fg)(), V = (0, o.ap)(U), [z, G, q] = l.useMemo(() => {
+  } = (0, C.Z)(), H = (0, s.e7)([u.default], () => u.default.getCurrentUser()), D = (0, s.e7)([f.Z], () => f.Z.productsWithVariantsAsGroup), [M, W] = l.useState(1), U = (0, c.Fg)(), V = (0, o.ap)(U), [z, G, q] = l.useMemo(() => {
     switch (P) {
       case E.AW.AVATAR_DECORATIONS:
         return [O.intl.string(O.t.dRZYND), V ? L.Z : T.Z, a.Z.AVATAR_DECORATION];
@@ -95,7 +95,7 @@ function N(e) {
           newValue: {
             tilePosition: t
           },
-          children: (0, r.jsx)(C.Z, {
+          children: (0, r.jsx)(b.Z, {
             product: e,
             user: H,
             category: n,

@@ -21,14 +21,14 @@ var Chunk647438 = require("./647438.js"),
   Chunk258939 = require("./258939.js"),
   Chunk956472 = require("./956472.js"),
   Chunk981631 = require("./981631.js");
-let C = "".concat("#").concat("itemSkuId", "="),
-  b = new RegExp("^".concat(C, "(\\d+)$")),
+let b = "".concat("#").concat("itemSkuId", "="),
+  C = new RegExp("^".concat(b, "(\\d+)$")),
   E = [Chunk981631.Z5c.COLLECTIBLES_SHOP, Chunk981631.Z5c.COLLECTIBLES_SHOP_FULLSCREEN],
   S = e => {
     let t = (0, l.TH)();
     r.useEffect(() => {
       if (null != e && E.includes(t.pathname)) return () => {
-        window.location.hash.startsWith(C) && window.location.replace("#")
+        window.location.hash.startsWith(b) && window.location.replace("#")
       }
     }, [e, t.pathname])
   },
@@ -37,14 +37,14 @@ let C = "".concat("#").concat("itemSkuId", "="),
       t = (0, Chunk258939.R)(),
       n = Chunk647438.useRef(null),
       s = (0, Chunk843611.TH)(),
-      C = Chunk607070.pathname === Chunk981631.Z5c.COLLECTIBLES_SHOP ? Chunk100527.Z.HOME_PAGE_SHOP_TAB : Chunk607070.pathname === Chunk981631.Z5c.COLLECTIBLES_SHOP_FULLSCREEN ? Chunk100527.Z.COLLECTIBLES_SHOP_FULLSCREEN : Chunk100527.Z.COLLECTIBLES_SHOP,
+      b = Chunk607070.pathname === Chunk981631.Z5c.COLLECTIBLES_SHOP ? Chunk100527.Z.HOME_PAGE_SHOP_TAB : Chunk607070.pathname === Chunk981631.Z5c.COLLECTIBLES_SHOP_FULLSCREEN ? Chunk100527.Z.COLLECTIBLES_SHOP_FULLSCREEN : Chunk100527.Z.COLLECTIBLES_SHOP,
       {
         analyticsLocations: E
-      } = (0, Chunk906732.ZP)(C),
+      } = (0, Chunk906732.ZP)(b),
       S = (0, Chunk410127.Z)();
     Chunk647438.useEffect(() => {
       if (module) return;
-      let t = b.exec(Chunk607070.hash);
+      let t = C.exec(Chunk607070.hash);
       null != exports ? require.current = exports[1] : require.current = null
     }, [S, module, Chunk607070.hash]);
     let O = (0, Chunk442837.e7)([Chunk328347.Z], () => Chunk328347.Z.initialProductSkuId);
@@ -86,13 +86,13 @@ let C = "".concat("#").concat("itemSkuId", "="),
           })({
             productSkuId: Chunk647438,
             analyticsLocations: E,
-            analyticsSource: C,
+            analyticsSource: b,
             tab: S
           })
         }, 250);
         return () => clearTimeout(module)
       }
-    }, [module, E, C, exports, O, S])
+    }, [module, E, b, exports, O, S])
   },
   v = e => {
     let t = r.useRef({}),

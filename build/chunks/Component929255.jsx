@@ -42,14 +42,14 @@ function y(e) {
       handleScroll: h
     } = (0, i.z)(p, n),
     {
-      setCategoryRef: C,
-      handleScrollToCategory: b
+      setCategoryRef: b,
+      handleScrollToCategory: C
     } = (0, m.xV)(p.current),
     [E, S] = l.useState(f),
     [O, v] = l.useState(false);
   return l.useEffect(() => {
-    null != c && b(c)
-  }, [c, b]), l.useEffect(() => () => {
+    null != c && C(c)
+  }, [c, C]), l.useEffect(() => () => {
     null != u && u()
   }, []), l.useEffect(() => {
     let e = () => {
@@ -78,7 +78,7 @@ function y(e) {
           tab: n,
           scrollerRef: p,
           sortedCategories: a,
-          setCategoryRef: C
+          setCategoryRef: b
         })
       }), E && !O && (0, r.jsx)("div", {
         className: x.divider
@@ -102,7 +102,7 @@ let T = e => {
   } = e, j = (0, d.FF)("CollectiblesBrowse"), k = l.useRef(null), B = (0, g.S)(e => e.hasDefaultFilters()), I = (0, u.sp)(), {
     handlePageChange: N,
     currentPage: A
-  } = (0, C.h)({
+  } = (0, b.h)({
     scrollerRef: y,
     sortedCategories: T
   }), P = l.useCallback(e => {
@@ -182,7 +182,7 @@ let T = e => {
             children: (0, r.jsx)(_.Z, {})
           })
         })]
-      }), j && !B ? (0, r.jsx)(b.Z, {
+      }), j && !B ? (0, r.jsx)(C.Z, {
         isFullScreen: t,
         scrollerRef: y,
         tab: m
