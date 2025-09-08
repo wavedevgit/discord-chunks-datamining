@@ -15,15 +15,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk869235 = require("./869235.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk649926 = require("./649926.js");
-let O = Chunk647438.createContext(true);
+let v = Chunk647438.createContext(true);
 
-function v(e) {
+function O(e) {
   let {
     sound: t
   } = e, {
     handlePreviewSound: n
   } = function() {
-    let e = i.useContext(O);
+    let e = i.useContext(v);
     if (null == e) throw Error("useSoundPlayback must be used within a SoundPlaybackProvider");
     return e
   }();
@@ -121,7 +121,7 @@ let E = [{
           className: y.soundRow,
           children: [(0, r.jsx)("span", {
             children: t
-          }), (0, r.jsx)(v, {
+          }), (0, r.jsx)(O, {
             sound: e.sound
           })]
         })
@@ -176,7 +176,7 @@ let E = [{
       let o = i.useMemo(() => ({
         handlePreviewSound: l
       }), [l]);
-      return (0, r.jsx)(O.Provider, {
+      return (0, r.jsx)(v.Provider, {
         value: o,
         children: t
       })

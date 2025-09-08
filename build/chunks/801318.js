@@ -50,16 +50,17 @@ function u(e, t, n) {
             u = arguments.length > 2 && true !== arguments[2] && arguments[2],
             c = (null == (s = e.usePredicate) ? true : s.call(e)) === false || a,
             d = function(e, t, n, r) {
-              var l, o;
+              var l, s;
               if (null != e.legacySearchKey) return t.length < 2 || r.has(e.legacySearchKey);
-              let s = "useTitle" in e ? null == (l = e.useTitle) ? true : l.call(e, false) : true,
-                a = "useSearchTerms" in e ? null == (o = e.useSearchTerms) ? true : o.call(e) : true;
-              if (n || null == s && null == a) returnfalse;
+              if (e.type === o.J.SECTION && e.hoisted) returntrue;
+              let a = "useTitle" in e ? null == (l = e.useTitle) ? true : l.call(e, false) : true,
+                u = "useSearchTerms" in e ? null == (s = e.useSearchTerms) ? true : s.call(e) : true;
+              if (n || null == a && null == u) returnfalse;
               if ("" === t) returntrue;
-              let u = t.toLowerCase();
-              for (let e of null != a ? a : [])
-                if (i()(u, e.toLowerCase())) returntrue;
-              return "string" == typeof s && i()(u, s.toLowerCase())
+              let c = t.toLowerCase();
+              for (let e of null != u ? u : [])
+                if (i()(c, e.toLowerCase())) returntrue;
+              return "string" == typeof a && i()(c, a.toLowerCase())
             }(e, t, c, n) || u,
             g = false;
           if ((0, o.L)(e))

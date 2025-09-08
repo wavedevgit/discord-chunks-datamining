@@ -18,7 +18,7 @@ var Chunk28682 = require("./28682.js"),
   Chunk670304 = require("./670304.jsx"),
   Chunk357660 = require("./357660.jsx");
 
-function v(e) {
+function O(e) {
   let {
     node: t
   } = e;
@@ -28,7 +28,7 @@ function v(e) {
     case i.J.SIDEBAR_ITEM:
       throw Error("".concat(t.type, " nodes should never be rendered directly"));
     case i.J.PANEL:
-      return (0, r.jsx)(O.T, {
+      return (0, r.jsx)(v.T, {
         node: t
       });
     case i.J.PANE:
@@ -75,11 +75,11 @@ function E(e) {
   let {
     node: t
   } = e;
-  return t.type === i.J.PANEL || t.type === i.J.PANE ? (0, r.jsx)(v, {
+  return t.type === i.J.PANEL || t.type === i.J.PANE ? (0, r.jsx)(O, {
     node: t
   }) : (0, r.jsx)(l.Z, {
     node: t,
-    children: (0, r.jsx)(v, {
+    children: (0, r.jsx)(O, {
       node: t
     })
   })

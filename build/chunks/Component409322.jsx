@@ -20,16 +20,16 @@ function u(e) {
       layout: g,
       collapseAfter: f,
       ContextProvider: y,
-      useCollapsibleTitle: O
+      useCollapsibleTitle: v
     } = u,
-    v = g.filter(e => {
+    O = g.filter(e => {
       var t, n;
       return null == (n = null == (t = e.usePredicate) ? true : t.call(e)) || n
     }),
-    E = null != f ? v.slice(0, f) : v,
-    b = null != f ? v.slice(f) : [],
+    E = null != f ? O.slice(0, f) : O,
+    b = null != f ? O.slice(f) : [],
     N = null != y ? y : i.Fragment,
-    p = null != (t = null == O ? true : O(c, b.length)) ? t : (n = b.length, c ? a.intl.formatToPlainString(a.t["3SHL+f"], {
+    p = null != (t = null == v ? true : v(c, b.length)) ? t : (n = b.length, c ? a.intl.formatToPlainString(a.t["3SHL+f"], {
       count: n
     }) : a.intl.formatToPlainString(a.t["8JRFyc"], {
       count: n

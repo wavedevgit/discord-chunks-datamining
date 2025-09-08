@@ -13,10 +13,9 @@ var Chunk509613 = require("./509613.js"),
   Chunk202841 = require("./202841.jsx"),
   Chunk603569 = require("./603569.jsx"),
   Chunk674574 = require("./674574.js"),
-  Chunk985092 = require("./985092.jsx"),
   Chunk798922 = require("./798922.jsx"),
   Chunk388032 = require("./388032.jsx");
 let v = (0, Chunk509613.vB)(Chunk869235.t.USER_SECTION, {
   useLabel: () => Chunk388032.intl.string(Chunk388032.t.cduTBA),
-  getLayout: () => [Chunk985092.Z, Chunk217123.Z, Chunk202841.Z, Chunk603569.Z, Chunk798922.Z, Chunk912400.Z, Chunk51435.Z, Chunk674574.Z, Chunk837061.Z, Chunk212473.Z]
+  getLayout: () => [Chunk837061.Z, Chunk217123.Z, Chunk202841.Z, Chunk603569.Z, Chunk798922.Z, Chunk912400.Z, Chunk51435.Z, Chunk674574.Z, Chunk212473.Z]
 })

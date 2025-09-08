@@ -20,34 +20,38 @@ function f(e) {
     node: g,
     visibleContent: f
   } = e, {
-    currentPanel: O,
-    navigateTo: v,
+    currentPanel: v,
+    navigateTo: O,
     setShowNavigationMobile: E
   } = (0, u.t)(), {
     useTitle: b,
-    trailing: N
-  } = g, p = b(), T = null != (o = null == N || null == (t = N.useDecoration) ? true : t.call(N)) ? o : null, _ = null != (s = null == N || null == (n = N.useBadgeCount) ? true : n.call(N)) ? s : null, j = i.useMemo(() => g.layout.flatMap(e => e.layout), [g]), I = null != f && (null == N || null == (l = N.newIndicatorDismissibleContentTypes) ? true : l.includes(f)), m = (null == O ? true : O.key) === g.key;
-  return (0, r.jsxs)(r.Fragment, {
+    trailing: N,
+    stronglyDiscouragedCustomTab: p
+  } = g, T = b(), _ = null != (o = null == N || null == (t = N.useDecoration) ? true : t.call(N)) ? o : null, m = null != (s = null == N || null == (n = N.useBadgeCount) ? true : n.call(N)) ? s : null, x = i.useMemo(() => g.layout.flatMap(e => e.layout), [g]), j = null != f && (null == N || null == (l = N.newIndicatorDismissibleContentTypes) ? true : l.includes(f)), I = (null == v ? true : v.key) === g.key, C = () => {
+    O(g), E(false)
+  };
+  return null != p ? (0, r.jsx)(p, {
+    active: I,
+    onClick: C
+  }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.Z, {
       icon: g.icon,
-      title: p,
-      active: m,
+      title: T,
+      active: I,
       trailing: (0, r.jsx)(() => {
-        if (I) {
+        if (j) {
           var e;
           return null != (e = null == N ? true : N.newIndicatorBadgeOverride) ? e : (0, r.jsx)(a.IGR, {
             text: d.intl.string(d.t.y2b7CA)
           })
         }
-        return null != _ && _ > 0 ? (0, r.jsx)(a.mAB, {
-          count: _
-        }) : null != T ? T : null
+        return null != m && m > 0 ? (0, r.jsx)(a.mAB, {
+          count: m
+        }) : null != _ ? _ : null
       }, {}),
-      onClick: () => {
-        v(g), E(false)
-      }
-    }), m && j.length > 1 && (0, r.jsx)(y, {
-      categories: j
+      onClick: C
+    }), I && x.length > 1 && (0, r.jsx)(y, {
+      categories: x
     })]
   })
 }
@@ -65,7 +69,7 @@ function y(e) {
       friction: 20,
       tension: 300
     }
-  })), O = i.useMemo(() => t.map(e => {
+  })), v = i.useMemo(() => t.map(e => {
     var t;
     return {
       title: null == (t = e.useTitle) ? true : t.call(e),
@@ -87,7 +91,7 @@ function y(e) {
         style: f
       })
     }), (0, r.jsx)("ul", {
-      children: O.map((e, t) => {
+      children: v.map((e, t) => {
         let {
           title: i,
           key: s,

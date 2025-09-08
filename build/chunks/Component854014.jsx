@@ -1,7 +1,8 @@
 /** Chunk was on 47129 **/
 /** chunk id: 854014, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  C: () => a,
+  Z: () => u
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
@@ -11,15 +12,30 @@ var Chunk951288 = require("./951288.js"),
 
 function a(e) {
   let {
+    onClick: t,
+    active: n,
+    children: i
+  } = e;
+  return (0, r.jsx)(o.P3F, {
+    className: l()(s.item, {
+      [s.active]: n
+    }),
+    onClick: t,
+    children: i
+  })
+}
+
+function u(e) {
+  let {
     icon: t,
     title: n,
     onClick: i,
-    active: a,
-    trailing: u
+    active: l,
+    trailing: o
   } = e;
-  return (0, r.jsxs)(o.P3F, {
-    className: l()(s.item, a && s.active),
+  return (0, r.jsxs)(a, {
     onClick: i,
+    active: l,
     children: [(0, r.jsxs)("div", {
       className: s.itemContent,
       children: [(0, r.jsx)(t, {
@@ -28,7 +44,7 @@ function a(e) {
       }), n]
     }), (0, r.jsx)("div", {
       className: s.itemContent,
-      children: u
+      children: o
     })]
   })
 }

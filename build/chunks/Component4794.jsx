@@ -24,12 +24,12 @@ let u = Chunk647438.memo(function(e) {
     (null == f || null == (e = f.targetAccordion) ? true : e.key) === t.key && g(true)
   }, [null == f ? true : f.targetAccordion, t.key]);
   let y = null == n ? true : n(d),
-    O = null == c ? true : c();
+    v = null == c ? true : c();
   return (0, r.jsx)("div", {
     className: a.accordion,
     children: (0, r.jsx)(s.I, {
       title: y,
-      subtitle: O,
+      subtitle: v,
       isOpen: d,
       setIsOpen: g,
       children: u.map(e => (0, r.jsx)(o.Z, {

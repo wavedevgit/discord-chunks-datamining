@@ -25,26 +25,29 @@ function y(e) {
   } = (0, u.t)(), g = t.layout.flatMap(e => e.layout).flatMap(e => {
     var t;
     return e.type === c.J.PANEL && (null == (t = e.trailing) ? true : t.newIndicatorDismissibleContentTypes) != null ? e.trailing.newIndicatorDismissibleContentTypes : []
-  }).filter(e => null != e);
+  }).filter(e => null != e), y = t.layout.filter(e => e.hoisted), O = t.layout.filter(e => !e.hoisted);
   return (0, r.jsx)(a.ZP, {
     contentTypes: g,
     children: e => {
       let {
-        visibleContent: a
+        visibleContent: t
       } = e;
       return (0, r.jsxs)("div", {
         className: l()(f.sidebar, {
           [f.mobile]: o.tq,
           [f.mobileNavigationOpen]: d
         }),
-        children: [null != n && (0, r.jsx)(n, {}), (0, r.jsx)(s.zJl, {
+        children: [y.map(e => (0, r.jsx)(v, {
+          section: e,
+          visibleContent: t
+        }, e.key)), null != n && (0, r.jsx)(n, {}), (0, r.jsx)(s.zJl, {
           className: f.navScroller,
           fade: true,
           children: (0, r.jsx)("nav", {
             className: f.nav,
-            children: t.layout.map(e => (0, r.jsx)(O, {
+            children: O.map(e => (0, r.jsx)(v, {
               section: e,
-              visibleContent: a
+              visibleContent: t
             }, e.key))
           })
         }), null != i && (0, r.jsx)("footer", {
@@ -56,7 +59,7 @@ function y(e) {
   })
 }
 
-function O(e) {
+function v(e) {
   var t;
   let {
     section: n,
