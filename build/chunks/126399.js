@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 /** chunk id: 126399, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => g
 }), require("./388685.js");
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -19,7 +19,7 @@ function h(e, t) {
     handoff_source: t
   })
 }
-class f extends Chunk317770.Z {
+class p extends Chunk317770.Z {
   _initialize() {
     Chunk570140.Z.subscribe("BROWSER_HANDOFF_END", this.handleEnd), Chunk570140.Z.subscribe("BROWSER_HANDOFF_FROM_APP", this.handleHandoff)
   }
@@ -31,7 +31,7 @@ class f extends Chunk317770.Z {
       handoffKey: t,
       handoffToken: n,
       fingerprint: i,
-      handoffSource: a
+      handoffSource: o
     } = e;
     null != n ? r.tn.post({
       url: d.ANM.HANDOFF_EXCHANGE,
@@ -44,16 +44,16 @@ class f extends Chunk317770.Z {
       let {
         body: t
       } = e;
-      (0, s.Vb)(t.user), l.Z.loginToken(t.token, false), h(true, a)
+      (0, s.Vb)(t.user), l.Z.loginToken(t.token, false), h(true, o)
     }, e => {
-      if (null != i && h(false, a), l.Z.setFingerprint(i), (0, s.lx)(), a === o.F.ROLE_SUBSCRIPTION) {
+      if (null != i && h(false, o), l.Z.setFingerprint(i), (0, s.lx)(), o === a.F.ROLE_SUBSCRIPTION) {
         var t;
         c.default.track(d.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
           reason: null != (t = e.message) ? t : e.text,
-          handoff_source: a
+          handoff_source: o
         })
       }
-    }) : null != i ? (l.Z.setFingerprint(i), h(false, a), (0, s.lx)()) : (l.Z.setFingerprint(i), (0, s.by)())
+    }) : null != i ? (l.Z.setFingerprint(i), h(false, o), (0, s.lx)()) : (l.Z.setFingerprint(i), (0, s.by)())
   }
   constructor(...e) {
     super(...e),
@@ -68,8 +68,8 @@ class f extends Chunk317770.Z {
         let {
           handoffToken: t,
           fingerprint: n
-        } = e, r = a.Z.key;
-        null != r && a.Z.isHandoffAvailable() ? this.handleHandoff({
+        } = e, r = o.Z.key;
+        null != r && o.Z.isHandoffAvailable() ? this.handleHandoff({
           handoffKey: r,
           handoffToken: t,
           fingerprint: n,
@@ -78,4 +78,4 @@ class f extends Chunk317770.Z {
       })
   }
 }
-let p = new f
+let g = new p

@@ -2,7 +2,7 @@
 /** chunk id: 481230, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   R$: () => _,
-  ZP: () => m
+  ZP: () => f
 });
 var Chunk913527 = require("./913527.js"),
   i = require.n(Chunk913527),
@@ -18,7 +18,7 @@ var Chunk913527 = require("./913527.js"),
   Chunk981631 = require("./981631.js"),
   Chunk723359 = require("./723359.js");
 
-function m(e) {
+function f(e) {
   var t, n, {
     invite: r = null,
     giftCodeSKUId: i = null
@@ -74,7 +74,7 @@ function _(e) {
     email: t,
     phoneToken: n,
     username: r,
-    globalName: m,
+    globalName: f,
     consent: _,
     password: x,
     guildTemplateCode: E,
@@ -87,22 +87,22 @@ function _(e) {
   if (s.Z.dispatch({
       type: "REGISTER"
     }), null != v) {
-    (0, f.Z)(v, p.jXE.REGISTER), d.default.track(p.rMx.AGE_GATE_ACTION, {
-      source: g.L0.REGISTER,
-      action: g.Al.AGE_GATE_SUBMITTED
+    (0, p.Z)(v, g.jXE.REGISTER), d.default.track(g.rMx.AGE_GATE_ACTION, {
+      source: m.L0.REGISTER,
+      action: m.Al.AGE_GATE_SUBMITTED
     });
     let e = i()().diff(v, "years");
-    e < 13 || d.default.track(p.rMx.USER_AGE_SUBMITTED, {
+    e < 13 || d.default.track(g.rMx.USER_AGE_SUBMITTED, {
       age_bucket: e >= 13 && e <= 17 ? "13-17" : e >= 18 && e <= 22 ? "18-22" : "23+"
     })
   }
   return h.Z.post({
-    url: p.ANM.REGISTER,
+    url: g.ANM.REGISTER,
     body: {
       fingerprint: u.default.getFingerprint(),
       email: t,
       username: r,
-      global_name: m,
+      global_name: f,
       password: x,
       invite: j,
       consent: _,
@@ -127,14 +127,14 @@ function _(e) {
     s.Z.dispatch({
       type: "REGISTER_SUCCESS",
       token: e.body.token
-    }), d.default.track(p.rMx.AGE_GATE_ACTION, {
-      source: g.L0.REGISTER,
-      action: g.Al.AGE_GATE_SUCCESS
+    }), d.default.track(g.rMx.AGE_GATE_ACTION, {
+      source: m.L0.REGISTER,
+      action: m.Al.AGE_GATE_SUCCESS
     })
   }, e => {
     if (e instanceof c.CaptchaCancelError) throw e;
-    let t = new o.Z(e);
-    throw null != t.getFieldErrors("date_of_birth") && a.wE(g.L0.REGISTER), d.default.track(p.rMx.REGISTER_SUBMIT_ERRORED, {
+    let t = new a.Z(e);
+    throw null != t.getFieldErrors("date_of_birth") && o.wE(m.L0.REGISTER), d.default.track(g.rMx.REGISTER_SUBMIT_ERRORED, {
       is_unique_username_registration: true,
       email_error_reason: t.getFirstFieldErrorMessage("email"),
       phone_error_reason: t.getFirstFieldErrorMessage("phone_token"),

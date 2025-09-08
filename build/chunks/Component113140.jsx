@@ -1,7 +1,7 @@
 /** Chunk was on 13878 **/
 /** chunk id: 113140, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  default: () => d
+  default: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -12,40 +12,40 @@ var Chunk667202 = require("./667202.jsx"),
   Chunk981038 = require("./981038.js"),
   Chunk768982 = require("./768982.js");
 
-function d(t) {
+function h(t) {
   let {
     transitionState: n,
     onClose: e,
-    channel: d
-  } = t, h = t => {
-    (0, i.RK)(d, t), e()
+    channel: h
+  } = t, u = t => {
+    (0, c.RK)(h, t), e()
   };
-  return (0, c.jsx)(a.I, {
+  return (0, i.jsx)(s.I, {
     transitionState: n,
     graphic: {
       type: "image",
       src: l.Z
     },
-    title: o.intl.string(o.t.Ul1RJS),
-    subtitle: o.intl.format(o.t["Z+3bW1"], {
-      stageChannelHook: () => (0, c.jsxs)(c.Fragment, {
-        children: [(0, c.jsx)(s.ewx, {
+    title: r.intl.string(r.t.Ul1RJS),
+    subtitle: r.intl.format(r.t["Z+3bW1"], {
+      stageChannelHook: () => (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(a.ewx, {
           size: "custom",
           color: "currentColor",
           height: 14,
           width: 14,
-          className: r.channelIcon
-        }), d.name]
+          className: o.channelIcon
+        }), h.name]
       })
     }),
-    onClose: () => (h(true), Promise.resolve()),
+    onClose: () => (u(true), Promise.resolve()),
     actions: [{
-      text: o.intl.string(o.t.L5eIZ2),
+      text: r.intl.string(r.t.L5eIZ2),
       onClick: () => e(),
       variant: "secondary"
     }, {
-      text: o.intl.string(o.t.MMlhsr),
-      onClick: () => h(false),
+      text: r.intl.string(r.t.MMlhsr),
+      onClick: () => u(false),
       variant: "active"
     }]
   })

@@ -10,19 +10,19 @@ var Chunk481060 = require("./481060.js"),
   Chunk742593 = require("./742593.jsx"),
   Chunk83908 = require("./83908.js");
 
-function a(e) {
+function o(e) {
   let {
     channel: t
   } = e, n = (0, l.Th)(t.type);
   return (0, r.jsxs)("div", {
-    className: o.channelInfoContainer,
+    className: a.channelInfoContainer,
     children: [null != n ? (0, r.jsx)(n, {
       color: "currentColor",
       size: "custom",
       width: 20,
       height: 20
     }) : null, (0, r.jsx)(i.Text, {
-      className: o.channelInfoText,
+      className: a.channelInfoText,
       color: "none",
       variant: "text-sm/semibold",
       children: t.name
@@ -36,9 +36,9 @@ function c(e) {
     guildScheduledEvent: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: o.container,
+    className: a.container,
     children: [(0, r.jsx)(s.HZ, {
-      className: o.statusContainer,
+      className: a.statusContainer,
       guildId: n.guild_id,
       guildEvent: n,
       eventPreview: n
@@ -46,7 +46,7 @@ function c(e) {
       name: n.name,
       description: n.description,
       guildId: n.guild_id
-    }), null != t && n.channel_id === t.id ? (0, r.jsx)(a, {
+    }), null != t && n.channel_id === t.id ? (0, r.jsx)(o, {
       channel: t
     }) : null]
   })

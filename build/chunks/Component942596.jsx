@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
-/** chunk id: 387903, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 942596, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Y: () => K,
-  Z: () => ee
+  Y: () => z,
+  Z: () => et
 }), require("./997841.js"), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -83,15 +83,16 @@ function W(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var K = function(e) {
+let K = 40;
+var z = function(e) {
   return e.ACTIVITY_FEED = "ActivityFeed", e.STREAM_PREVIEW = "StreamPreview", e.VOICE_CHANNEL = "VoiceChannel", e
 }({});
-let z = {
+let q = {
     StreamPreview: [108, 60],
     VoiceChannel: [108, 60],
     ActivityFeed: [900, 500]
   },
-  q = (0, Chunk438139.Z)(class extends Chunk647438.PureComponent {
+  X = (0, Chunk438139.Z)(class extends Chunk647438.PureComponent {
     render() {
       return (0, Chunk951288.jsx)("div", {
         className: Chunk206733.timestamp,
@@ -100,17 +101,17 @@ let z = {
     }
   });
 
-function X(e) {
+function Q(e) {
   let {
     activity: t
   } = e, n = null;
   return (0, j.Z)(t) && (n = B.ABu.SPOTIFY), null != t.platform && [B.M7m.PS4, B.M7m.PS5].includes(t.platform) && (n = B.ABu.PLAYSTATION), n
 }
 
-function Q(e) {
+function J(e) {
   let {
     activity: t
-  } = e, n = (0, _.ZP)(), r = X({
+  } = e, n = (0, _.ZP)(), r = Q({
     activity: t
   });
   if (null == r) return null;
@@ -121,7 +122,7 @@ function Q(e) {
     className: F.platformIcon
   })
 }
-class J extends(r = Chunk647438.PureComponent) {
+class $ extends(r = Chunk647438.PureComponent) {
   get activity() {
     let {
       activity: e,
@@ -212,6 +213,7 @@ class J extends(r = Chunk647438.PureComponent) {
       className: F.assets,
       children: (0, i.jsx)(I.Z, {
         hangStatusActivity: e,
+        size: K,
         className: s()(F.assetsHangStatus, this.getTypeClass("assetsSmallImage", "WithoutLargeImage"))
       })
     });
@@ -222,7 +224,7 @@ class J extends(r = Chunk647438.PureComponent) {
       application_id: f
     } = e;
     if (null == u || null == u.large_image && null == u.small_image) return null;
-    (0, k.Z)(e) && (o = z[c]);
+    (0, k.Z)(e) && (o = q[c]);
     let _ = (0, j.Z)(e),
       p = null != u.large_image ? (0, i.jsx)("img", {
         alt: null != (t = u.large_text) ? t : "",
@@ -433,7 +435,7 @@ class J extends(r = Chunk647438.PureComponent) {
     let {
       timestamps: n
     } = e;
-    return null == n ? null : (0, x.Z)(e) ? (0, i.jsx)(q, {
+    return null == n ? null : (0, x.Z)(e) ? (0, i.jsx)(X, {
       timestamps: n
     }) : (0, i.jsx)(T.ZP, {
       start: n.start,
@@ -540,7 +542,7 @@ class J extends(r = Chunk647438.PureComponent) {
             }), Chunk810568, Chunk438139 ? null : Chunk565138, Chunk780384 ? Chunk168524 : null]
           })]
         })
-      }), Chunk438139 ? Chunk168524 : null, (0, Chunk951288.jsx)(Q, {
+      }), Chunk438139 ? Chunk168524 : null, (0, Chunk951288.jsx)(J, {
         activity: c
       })]
     })
@@ -569,8 +571,8 @@ class J extends(r = Chunk647438.PureComponent) {
     })
   }
 }
-V(J, "Types", K);
-let $ = e => {
+V($, "Types", z);
+let ee = e => {
   var t, n, r;
   let a = (0, y.Z)({
     location: "UserActivity",
@@ -579,9 +581,9 @@ let $ = e => {
     sourceUserId: e.user.id,
     trackEntryPointImpression: true
   });
-  return (0, i.jsx)(J, W(H({}, e), {
+  return (0, i.jsx)($, W(H({}, e), {
     onOpenGameProfileModal: a
   }))
 };
-$.Types = K;
-let ee = $
+ee.Types = z;
+let et = ee

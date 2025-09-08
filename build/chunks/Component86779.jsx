@@ -35,7 +35,7 @@ let j = "mweb_handoff_nonce",
         fingerprint: t,
         handoff_token: n
       } = (0, Chunk593473.parse)(window.location.search),
-      m = Array.isArray(exports) ? exports.length > 1 ? exports[0] : null : exports,
+      f = Array.isArray(exports) ? exports.length > 1 ? exports[0] : null : exports,
       y = null != Chunk70956 ? Chunk70956 : null !== module ? module : true;
     Chunk647438.useEffect(() => {
       null !== Chunk70956 && module !== Chunk70956 && Chunk570140.Z.dispatch({
@@ -44,7 +44,7 @@ let j = "mweb_handoff_nonce",
       })
     }, [Chunk70956, module]);
     let [C, A] = Chunk647438.useState(null), T = Chunk647438.useCallback(e => {
-      A(e), g.default.track(x.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
+      A(e), m.default.track(x.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
         reason: e,
         fingerprint: (0, s.K)(y)
       }, {
@@ -64,7 +64,7 @@ let j = "mweb_handoff_nonce",
             handoff_token: require
           },
           rejectWithError: true
-        }).then(e => f.Z.loginToken(e.body.token, false)).then(() => {
+        }).then(e => p.Z.loginToken(e.body.token, false)).then(() => {
           Chunk626135.default.track(Chunk981631.rMx.LOGIN_SUCCESSFUL, {
             source: Chunk981631.uRl.MOBILE_WEB_HANDOFF,
             is_new_user: false,

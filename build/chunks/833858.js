@@ -2,62 +2,82 @@
 /** chunk id: 833858, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  O8: () => p,
-  V: () => f,
-  tV: () => _
-});
-var Chunk981631 = require("./981631.js"),
+  Fe: () => p,
+  O8: () => b,
+  V: () => g,
+  tV: () => E
+}), require("./35282.js");
+var Chunk970683 = require("./970683.js"),
+  Chunk505905 = require("./505905.js"),
+  Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk337258 = require("./337258.js"),
-  Chunk705196 = require("./705196.js"),
-  Chunk190878 = require("./190878.js"),
-  Chunk991254 = require("./991254.js"),
-  Chunk485686 = require("./485686.js"),
-  Chunk400976 = require("./400976.js"),
-  Chunk443909 = require("./443909.js");
-let f = () => ({
-    [Chunk981631.tNA.CHILLING]: {
+  Chunk33346 = require("./33346.js"),
+  Chunk857042 = require("./857042.js"),
+  Chunk558532 = require("./558532.js"),
+  Chunk105196 = require("./105196.js"),
+  Chunk346554 = require("./346554.js"),
+  Chunk933045 = require("./933045.js"),
+  Chunk444305 = require("./444305.js");
+
+function p(e) {
+  return null == e ? [null, null] : e.split(":")
+}
+let h = () => ({
+    [Chunk505905.tN.CHILLING]: {
       title: Chunk388032.intl.string(Chunk388032.t["vkpn7+"]),
-      icon: Chunk705196,
-      color: "#567C7E"
+      icon: Chunk857042
     },
-    [Chunk981631.tNA.GAMING]: {
+    [Chunk505905.tN.GAMING]: {
       title: Chunk388032.intl.string(Chunk388032.t.lZslwM),
-      icon: Chunk190878,
-      color: "#685F8C"
+      icon: Chunk558532
     },
-    [Chunk981631.tNA.FOCUSING]: {
+    [Chunk505905.tN.FOCUSING]: {
       title: Chunk388032.intl.string(Chunk388032.t.b6AscH),
-      icon: Chunk485686,
-      color: "#7F6956"
+      icon: Chunk346554
     },
-    [Chunk981631.tNA.BRB]: {
+    [Chunk505905.tN.BRB]: {
       title: Chunk388032.intl.string(Chunk388032.t["30yqZW"]),
-      icon: Chunk337258,
-      color: "#76567E"
+      icon: Chunk33346
     },
-    [Chunk981631.tNA.EATING]: {
+    [Chunk505905.tN.EATING]: {
       title: Chunk388032.intl.string(Chunk388032.t.UVSEhY),
-      icon: Chunk991254,
-      color: "#717B54"
+      icon: Chunk105196
     },
-    [Chunk981631.tNA.IN_TRANSIT]: {
+    [Chunk505905.tN.IN_TRANSIT]: {
       title: Chunk388032.intl.string(Chunk388032.t["l0q9/f"]),
-      icon: Chunk400976,
-      color: "#56697F"
+      icon: Chunk933045
     },
-    [Chunk981631.tNA.WATCHING]: {
+    [Chunk505905.tN.WATCHING]: {
       title: Chunk388032.intl.string(Chunk388032.t.di6IFx),
-      icon: Chunk443909,
-      color: "#7C5571"
+      icon: Chunk444305
     }
   }),
-  _ = e => {
-    if ((null == e ? true : e.type) !== r.IIU.HANG_STATUS || (null == e ? true : e.state) == null) return null;
-    let t = e.state;
-    return t === r.tNA.CUSTOM ? null : f()[t]
+  m = () => ({
+    [Chunk505905.tN.IN_TRANSIT]: {
+      title: "Here",
+      icon: Chunk970683.s_
+    }
+  }),
+  g = e => {
+    switch (e) {
+      case "original":
+      default:
+        return h();
+      case "illocons":
+        return m()
+    }
   },
-  p = e => {
+  E = function(e) {
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "original";
+    if ((null == e ? true : e.type) !== a.IIU.HANG_STATUS || (null == e ? true : e.state) == null) return null;
+    let n = p(e.state),
+      r = n[0];
+    if (r === i.tN.CUSTOM) return null;
+    let o = g(n.length > 1 ? n[1] : t);
+    return r in o ? o[r] : null
+  },
+  b = function(e) {
     var t;
-    return ((null == e ? true : e.state) != null ? e.state : null) === r.tNA.CUSTOM ? null == e ? true : e.details : null == (t = _(e)) ? true : t.title
+    let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "original";
+    return (null == e ? true : e.type) !== a.IIU.HANG_STATUS || (null == e ? true : e.state) == null ? null : p(e.state)[0] === i.tN.CUSTOM ? null == e ? true : e.details : null == (t = E(e, n)) ? true : t.title
   }

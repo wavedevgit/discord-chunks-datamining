@@ -20,8 +20,8 @@ function c(e) {
     onButtonClick: d,
     loading: h
   } = e;
-  return (0, r.jsx)(o.ZP, {
-    className: a.container,
+  return (0, r.jsx)(a.ZP, {
+    className: o.container,
     children: (0, r.jsxs)(i.Kq, {
       align: "center",
       justify: "center",
@@ -35,7 +35,7 @@ function c(e) {
           children: [null != u && (0, r.jsx)(i.Kq, {
             align: "center",
             justify: "center",
-            className: a.image,
+            className: o.image,
             children: u
           }), h && (0, r.jsx)(s.$jN, {
             type: s.$jN.Type.SPINNING_CIRCLE
@@ -47,7 +47,7 @@ function c(e) {
         }), null != n && "" !== n && (0, r.jsx)(i.xv, {
           variant: "text-md/normal",
           color: "header-secondary",
-          className: a.subtitle,
+          className: o.subtitle,
           children: n
         })]
       }), !h && (0, r.jsx)(l.zx, {

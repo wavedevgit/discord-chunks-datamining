@@ -26,11 +26,11 @@ let h = function(e) {
   } = e, {
     loading: g,
     initiateAgeVerification: v
-  } = (0, b.WD)(h, true), y = o.useMemo(() => (0, i.Z)(), []);
-  o.useEffect(() => {
+  } = (0, x.WD)(h, true), y = i.useMemo(() => (0, o.Z)(), []);
+  i.useEffect(() => {
     (0, u.lA)(y, u.d_.RETRY, n)
   }, [y, n]);
-  let _ = o.useMemo(() => [{
+  let _ = i.useMemo(() => [{
     title: f.intl.string(f.t.FYkioq),
     description: f.intl.string(f.t.xMfbR0),
     buttonText: f.intl.string(f.t.RtOE1t),
@@ -52,21 +52,21 @@ let h = function(e) {
     onClose: h,
     gradientColor: "blue",
     graphic: {
-      src: j.Z,
+      src: p.Z,
       type: "image"
     },
     title: f.intl.string(f.t["5l3R/v"]),
     subtitle: f.intl.string(f.t.O7SO0N),
-    children: (0, r.jsxs)(c.Kqy, {
+    children: (0, r.jsxs)(a.Kqy, {
       direction: "vertical",
       gap: 16,
-      children: [(0, r.jsx)(c.Wn, {
-        messageType: c.QYI.INFO,
-        className: p.infoBox,
+      children: [(0, r.jsx)(a.Wn, {
+        messageType: a.QYI.INFO,
+        className: j.infoBox,
         textColor: "text-feedback-info",
         textVariant: "text-sm/medium",
         children: f.intl.string(f.t.El4aXl)
-      }), _.map((e, t) => (0, r.jsx)(a.JZ, function(e) {
+      }), _.map((e, t) => (0, r.jsx)(c.JZ, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -85,12 +85,12 @@ let h = function(e) {
         return e
       }({
         variant: "clickable"
-      }, e), t)), (0, r.jsx)(c.Text, {
+      }, e), t)), (0, r.jsx)(a.Text, {
         variant: "text-xs/medium",
         color: "text-muted",
         children: f.intl.format(f.t["L+FgkZ"], {
           handleOnHelpUrlHook: () => {
-            d.Z.openUrl(s.Z.getArticleURL(x.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, u.x3)(y, u.d_.RETRY, u.sU.LEARN_MORE)
+            d.Z.openUrl(s.Z.getArticleURL(b.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, u.x3)(y, u.d_.RETRY, u.sU.LEARN_MORE)
           }
         })
       })]

@@ -81,22 +81,22 @@ let y = new S(Chunk570140.Z, {
       } = t;
       if (null == e) returnfalse;
       if ((0, c.bc)(e.type)) {
-        if (null != u.Z.getChannel(e.id)) return (0, a.XU)(_.ME, e.id), m.ZP.focus(), false
+        if (null != u.Z.getChannel(e.id)) return (0, o.XU)(_.ME, e.id), f.ZP.focus(), false
       } else {
         if (null == n) returnfalse;
-        if (null != d.Z.getGuild(n.id) && !(0, o.TY)(t)) {
+        if (null != d.Z.getGuild(n.id) && !(0, a.TY)(t)) {
           let e = function(e) {
-            if ((0, o.W6)(e)) return x.oC.ROLE_SUBSCRIPTIONS;
+            if ((0, a.W6)(e)) return x.oC.ROLE_SUBSCRIPTIONS;
             let {
               channel: t
             } = e;
             if (null != t) {
               let e = u.Z.getChannel(t.id);
-              if (f.Z.can(_.Plq.VIEW_CHANNEL, e)) return t.id
+              if (p.Z.can(_.Plq.VIEW_CHANNEL, e)) return t.id
             }
             return null
           }(t);
-          return (0, a.XU)(n.id, e), m.ZP.focus(), false
+          return (0, o.XU)(n.id, e), f.ZP.focus(), false
         }
       }
     }
@@ -113,8 +113,8 @@ let y = new S(Chunk570140.Z, {
         state: i,
         target_type: l,
         target_user: s,
-        target_application: o,
-        type: a,
+        target_application: a,
+        type: o,
         channel: c,
         guild: u,
         is_nickname_changeable: d
@@ -125,11 +125,11 @@ let y = new S(Chunk570140.Z, {
         approximate_presence_count: n,
         target_type: l,
         target_user: s,
-        target_application: o,
-        type: a,
+        target_application: a,
+        type: o,
         is_nickname_changeable: d
       };
-      return null != c && (h.channel = v({}, c)), null != u && (h.guild = (0, g.Qs)(u)), null != e.inviter && (h.inviter = v({}, e.inviter)), h
+      return null != c && (h.channel = v({}, c)), null != u && (h.guild = (0, m.Qs)(u)), null != e.inviter && (h.inviter = v({}, e.inviter)), h
     }(t);
     N.push([n, e.resolve])
   },

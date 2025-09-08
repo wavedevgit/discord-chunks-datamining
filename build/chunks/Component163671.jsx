@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 /** chunk id: 163671, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,10 +10,10 @@ var Chunk120356 = require("./120356.js"),
   Chunk388905 = require("./388905.jsx"),
   Chunk646956 = require("./646956.js");
 
-function a(e) {
+function o(e) {
   var t, n, {
       children: i,
-      className: a
+      className: o
     } = e,
     c = function(e, t) {
       if (null == e) return {};
@@ -49,10 +49,10 @@ function a(e) {
     }
     return e
   }({}, c), n = n = {
-    className: l()(a, o.container),
-    contentClassName: o.content,
+    className: l()(o, a.container),
+    contentClassName: a.content,
     children: u.map((e, t) => (0, r.jsx)("div", {
-      className: o.column,
+      className: a.column,
       style: {
         flexBasis: "".concat(100 / u.length, "%")
       },

@@ -11,7 +11,8 @@ let r = (0, require("./818083.js").B)({
   defaultConfig: {
     enableHangStatus: false,
     setDefaultStatus: false,
-    allowChannelTopic: false
+    allowChannelTopic: false,
+    defaultStatusVariant: "original"
   },
   treatments: [{
     id: 1,
@@ -19,7 +20,8 @@ let r = (0, require("./818083.js").B)({
     config: {
       enableHangStatus: true,
       setDefaultStatus: false,
-      allowChannelTopic: false
+      allowChannelTopic: false,
+      defaultStatusVariant: "original"
     }
   }, {
     id: 2,
@@ -27,7 +29,8 @@ let r = (0, require("./818083.js").B)({
     config: {
       enableHangStatus: true,
       setDefaultStatus: true,
-      allowChannelTopic: false
+      allowChannelTopic: false,
+      defaultStatusVariant: "original"
     }
   }, {
     id: 3,
@@ -35,7 +38,35 @@ let r = (0, require("./818083.js").B)({
     config: {
       enableHangStatus: true,
       setDefaultStatus: false,
-      allowChannelTopic: true
+      allowChannelTopic: true,
+      defaultStatusVariant: "original"
+    }
+  }, {
+    id: 4,
+    label: "illocon hang statuses with channel topic",
+    config: {
+      enableHangStatus: true,
+      setDefaultStatus: true,
+      allowChannelTopic: true,
+      defaultStatusVariant: "illocons"
+    }
+  }, {
+    id: 5,
+    label: "grey icon hang statuses with channel topic",
+    config: {
+      enableHangStatus: true,
+      setDefaultStatus: true,
+      allowChannelTopic: true,
+      defaultStatusVariant: "icons"
+    }
+  }, {
+    id: 6,
+    label: "twemoji hang statuses with channel topic",
+    config: {
+      enableHangStatus: true,
+      setDefaultStatus: true,
+      allowChannelTopic: true,
+      defaultStatusVariant: "twemoji"
     }
   }]
 })

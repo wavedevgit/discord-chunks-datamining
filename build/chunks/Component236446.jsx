@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk388905 = require("./388905.jsx"),
   Chunk362762 = require("./362762.js"),
@@ -49,7 +49,7 @@ class L extends Chunk647438.PureComponent {
     (0, Chunk108427.e)("guildTemplate"), Chunk436620.KO || Chunk954824.Z.launch("discord://" + Chunk981631.Z5c.GUILD_TEMPLATE(this.props.code), () => true)
   }
   componentDidUpdate(e) {
-    this.props.code !== e.code && p.Z.resolveGuildTemplate(this.props.code)
+    this.props.code !== e.code && g.Z.resolveGuildTemplate(this.props.code)
   }
   renderButton(e, t) {
     return T.KO ? (0, r.jsx)(u.zx, {
@@ -94,7 +94,7 @@ class L extends Chunk647438.PureComponent {
     let {
       guildTemplate: e
     } = this.props;
-    return (a()(null != module, "guild template must not be null"), module.state === Chunk260539.Rj.RESOLVING) ? (0, Chunk951288.jsx)(Chunk388905.ZP, {
+    return (o()(null != module, "guild template must not be null"), module.state === Chunk260539.Rj.RESOLVING) ? (0, Chunk951288.jsx)(Chunk388905.ZP, {
       className: Chunk160033.authBox,
       children: (0, Chunk951288.jsx)(Chunk306453.Z, {
         guildTemplate: module
@@ -183,7 +183,7 @@ function k(e) {
   } = e, {
     form: n,
     handleSubmit: i
-  } = (0, f.Z)(t, false);
+  } = (0, p.Z)(t, false);
   E.Z.flowStep(A.MK.ORGANIC_GUILD_TEMPLATES, A.X2.GUILD_CREATE);
   let l = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.Dx, {
@@ -197,7 +197,7 @@ function k(e) {
   });
   return (0, r.jsx)(N.Z, {
     className: P.authBox,
-    children: () => [(0, r.jsx)(g.Z, {
+    children: () => [(0, r.jsx)(m.Z, {
       guildTemplate: t
     }, "template"), (0, r.jsx)("div", {
       className: P.formContainer,

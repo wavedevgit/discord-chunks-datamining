@@ -47,7 +47,7 @@ class v extends(r = Chunk647438.PureComponent) {
         body: {
           user: n
         }
-      } = e, r = new f.Z(n);
+      } = e, r = new p.Z(n);
       this.setState({
         success: true,
         busy: false,
@@ -85,7 +85,7 @@ class v extends(r = Chunk647438.PureComponent) {
         className: x.marginTop8,
         color: d.zx.Colors.LINK,
         look: d.zx.Looks.LINK,
-        onClick: () => r(g.Z5c.SETTINGS("notifications", m.vG)),
+        onClick: () => r(m.Z5c.SETTINGS("notifications", f.vG)),
         children: _.intl.string(_.t.YYTira)
       })]
     })

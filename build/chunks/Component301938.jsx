@@ -36,8 +36,8 @@ function x(e) {
       src: null == N ? n(26230) : n(935227),
       className: s()(_.marginBottom20, _.marginTop8)
     }), (0, r.jsx)(u.Dx, {
-      children: g.intl.string(g.t["IfBQ5+"])
-    }), null != N && "" !== N ? (0, r.jsx)(a.Text, {
+      children: m.intl.string(m.t["IfBQ5+"])
+    }), null != N && "" !== N ? (0, r.jsx)(o.Text, {
       variant: "text-sm/normal",
       color: "text-danger",
       children: N
@@ -46,7 +46,7 @@ function x(e) {
       children: [(0, r.jsx)(u.II, {
         name: "password",
         type: "password",
-        label: g.intl.string(g.t["8dM4FB"]),
+        label: m.intl.string(m.t["8dM4FB"]),
         setRef: C,
         className: _.marginBottom20,
         value: S,
@@ -54,23 +54,23 @@ function x(e) {
         error: b,
         autoComplete: "new-password",
         maxLength: 72,
-        placeholder: g.intl.string(g.t["yY/PXV"])
+        placeholder: m.intl.string(m.t["yY/PXV"])
       }), (0, r.jsx)(u.zx, {
         className: _.marginTop8,
         onClick: () => {
           if (!v) {
             if (0 === S.length) {
-              I(g.intl.string(g.t.R98xDw)), d.S.dispatch(p.CkL.WAVE_EMPHASIZE);
+              I(m.intl.string(m.t.R98xDw)), d.S.dispatch(g.CkL.WAVE_EMPHASIZE);
               return
             }
             return null != N && O(null), null != b && I(null), t(""), j(true), h.Z.post({
-              url: p.ANM.ACCOUNT_REVERT,
+              url: g.ANM.ACCOUNT_REVERT,
               body: {
                 token: E,
                 password: S
               },
               trackedActionData: {
-                event: o.NetworkActionNames.ACCOUNT_REVERT
+                event: a.NetworkActionNames.ACCOUNT_REVERT
               },
               rejectWithError: false
             }).then(e => {
@@ -79,29 +79,29 @@ function x(e) {
                   email: n
                 }
               } = e;
-              y(""), t(n), l(f.n.SUCCESS)
+              y(""), t(n), l(p.n.SUCCESS)
             }).catch(e => {
-              if (e instanceof Error) O(g.intl.formatToPlainString(g.t.aTVNen, {
-                statusPageURL: p.yXt.STATUS
+              if (e instanceof Error) O(m.intl.formatToPlainString(m.t.aTVNen, {
+                statusPageURL: g.yXt.STATUS
               }));
               else {
                 let t = new c.Z(e);
                 t.hasFieldErrors() ? I(t.getAnyErrorMessage()) : O((function(e) {
                   switch (e) {
-                    case p.evJ.ACCOUNT_REVERT_INVALID_TOKEN:
-                      return g.intl.string(g.t["11zzGR"]);
-                    case p.evJ.ACCOUNT_REVERT_EMAIL_ALREADY_TAKEN:
-                      return g.intl.string(g.t["6qmgaG"]);
-                    case p.evJ.ACCOUNT_REVERT_ACCOUNT_NOT_FOUND:
-                      return g.intl.string(g.t.bChnKi);
+                    case g.evJ.ACCOUNT_REVERT_INVALID_TOKEN:
+                      return m.intl.string(m.t["11zzGR"]);
+                    case g.evJ.ACCOUNT_REVERT_EMAIL_ALREADY_TAKEN:
+                      return m.intl.string(m.t["6qmgaG"]);
+                    case g.evJ.ACCOUNT_REVERT_ACCOUNT_NOT_FOUND:
+                      return m.intl.string(m.t.bChnKi);
                     default:
-                      return g.intl.format(g.t.aTVNen, {
-                        statusPageURL: p.yXt.STATUS
+                      return m.intl.format(m.t.aTVNen, {
+                        statusPageURL: g.yXt.STATUS
                       })
                   }
                 })(t.code).toString())
               }
-              d.S.dispatch(p.CkL.WAVE_EMPHASIZE)
+              d.S.dispatch(g.CkL.WAVE_EMPHASIZE)
             }).finally(() => {
               j(false)
             })
@@ -109,16 +109,16 @@ function x(e) {
         },
         submitting: v,
         disabled: v,
-        children: g.intl.string(g.t.ezv91d)
+        children: m.intl.string(m.t.ezv91d)
       })]
     }), (0, r.jsx)("div", {
-      className: m.buttonContainer,
+      className: f.buttonContainer,
       children: (0, r.jsx)(u.zx, {
         color: u.zx.Colors.PRIMARY,
         onClick: () => {
-          y(""), l(f.n.START)
+          y(""), l(p.n.START)
         },
-        children: g.intl.string(g.t.rzxnQ0)
+        children: m.intl.string(m.t.rzxnQ0)
       })
     })]
   })

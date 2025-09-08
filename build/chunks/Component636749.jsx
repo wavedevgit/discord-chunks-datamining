@@ -1,12 +1,12 @@
 /** Chunk was on 59385 **/
-/** chunk id: 636749, original params: t,n,e (module,exports,require) **/
+/** chunk id: 636749, original params: n,t,e (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  c = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk446183 = require("./446183.jsx"),
   Chunk677281 = require("./677281.jsx"),
@@ -17,9 +17,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk332287 = require("./332287.js"),
   Chunk583140 = require("./583140.js");
 
-function p() {
+function v() {
   return (0, Chunk951288.jsxs)("div", {
-    className: i()(Chunk583140.toast, Chunk332287.toast),
+    className: c()(Chunk583140.toast, Chunk332287.toast),
     children: [(0, Chunk951288.jsx)(Chunk481060.b7C, {
       color: Chunk481060.TVs.colors.TEXT_BRAND
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -31,23 +31,23 @@ function p() {
   })
 }
 
-function v(t) {
+function h(n) {
   let {
-    channelId: n,
+    channelId: t,
     warningId: e,
-    senderId: c,
-    safetyWarning: f
-  } = t, v = s.useMemo(() => (null == f ? true : f.feedback_type) === u.ny.UPVOTE, [f]), x = s.useMemo(() => (null == f ? true : f.feedback_type) === u.ny.DOWNVOTE, [f]), h = s.useCallback((t, s) => {
-    (null == f ? true : f.feedback_type) !== t && ((0, d.Ms)(n, e, t), (0, o.showToast)((0, o.createToast)(_.intl.string(_.t["gd/Yqq"]), o.ToastType.CUSTOM, {
-      component: (0, a.jsx)(p, {})
+    senderId: i,
+    safetyWarning: x
+  } = n, h = s.useMemo(() => (null == x ? true : x.feedback_type) === u.ny.UPVOTE, [x]), k = s.useMemo(() => (null == x ? true : x.feedback_type) === u.ny.DOWNVOTE, [x]), p = s.useCallback((n, s) => {
+    (null == x ? true : x.feedback_type) !== n && ((0, d.Ms)(t, e, n), (0, o.showToast)((0, o.createToast)(_.intl.string(_.t["gd/Yqq"]), o.ToastType.CUSTOM, {
+      component: (0, a.jsx)(v, {})
     })), (0, b.qc)({
-      channelId: n,
+      channelId: t,
       warningId: e,
-      senderId: c,
-      warningType: null == f ? true : f.type,
+      senderId: i,
+      warningType: null == x ? true : x.type,
       cta: s
     }))
-  }, [f, n, e, c]);
+  }, [x, t, e, i]);
   return (0, a.jsxs)("div", {
     className: g.feedback,
     children: [(0, a.jsx)(o.Text, {
@@ -57,20 +57,20 @@ function v(t) {
     }), (0, a.jsxs)("div", {
       className: g.buttonsContainer,
       children: [(0, a.jsx)(o.P3F, {
-        className: i()([g.buttonsBackground, v ? g.buttonsBackgroundActive : g.buttonsBackgroundInactive, {
-          [g.disabled]: v
+        className: c()([g.buttonsBackground, h ? g.buttonsBackgroundActive : g.buttonsBackgroundInactive, {
+          [g.disabled]: h
         }]),
-        onClick: () => h(u.ny.UPVOTE, b.NM.FEEDBACK_UPVOTE),
+        onClick: () => p(u.ny.UPVOTE, b.NM.FEEDBACK_UPVOTE),
         "aria-label": _.intl.string(_.t["2GrOCA"]),
         children: (0, a.jsx)(l.Z, {
           className: g.__invalid_buttonIcon,
           color: "interactive-normal"
         })
       }), (0, a.jsx)(o.P3F, {
-        className: i()([g.buttonsBackground, x ? g.buttonsBackgroundActive : g.buttonsBackgroundInactive, {
-          [g.disabled]: x
+        className: c()([g.buttonsBackground, k ? g.buttonsBackgroundActive : g.buttonsBackgroundInactive, {
+          [g.disabled]: k
         }]),
-        onClick: () => h(u.ny.DOWNVOTE, b.NM.FEEDBACK_DOWNVOTE),
+        onClick: () => p(u.ny.DOWNVOTE, b.NM.FEEDBACK_DOWNVOTE),
         "aria-label": _.intl.string(_.t.COp9BA),
         children: (0, a.jsx)(r.Z, {
           className: g.__invalid_buttonIcon,

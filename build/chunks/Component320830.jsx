@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk624138 = require("./624138.js"),
   Chunk955393 = require("./955393.js");
 
-function f(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,27 +23,27 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
-let g = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
-  m = {
+let m = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
+  f = {
     friction: 10,
     tension: 130
   },
   _ = function(e) {
     return class extends i.Component {
       componentDidMount() {
-        a.tq || (window.addEventListener("resize", this.handleResizeDebounced), this.handleResize())
+        o.tq || (window.addEventListener("resize", this.handleResizeDebounced), this.handleResize())
       }
       componentWillUnmount() {
         clearTimeout(this.timeout), window.removeEventListener("resize", this.handleResizeDebounced)
@@ -58,9 +58,9 @@ let g = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
         this.state.shouldAnimate ? this.animateTo(0, e) : e()
       }
       animateTo(e, t) {
-        o.Z.spring(this.anim, p({
+        a.Z.spring(this.anim, g({
           toValue: e
-        }, m)).start(t)
+        }, f)).start(t)
       }
       getAnimatedStyle(e) {
         return this.state.shouldAnimate ? {
@@ -88,23 +88,23 @@ let g = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
               let {
                 reducedMotion: n
               } = t;
-              return (0, r.jsx)(o.Z.div, {
+              return (0, r.jsx)(a.Z.div, {
                 style: this.getAnimatedStyle(n.enabled),
-                children: (0, r.jsx)(e, p({}, this.props))
+                children: (0, r.jsx)(e, g({}, this.props))
               })
             }
           })
         })
       }
       constructor(...e) {
-        super(...e), f(this, "timeout", true), f(this, "anim", new o.Z.Value(0)), f(this, "state", {
-          shouldAnimate: !a.tq
-        }), f(this, "handleResize", () => {
-          let e = window.innerWidth > g;
+        super(...e), p(this, "timeout", true), p(this, "anim", new a.Z.Value(0)), p(this, "state", {
+          shouldAnimate: !o.tq
+        }), p(this, "handleResize", () => {
+          let e = window.innerWidth > m;
           !this.state.shouldAnimate && e && this.anim.setValue(1), this.setState({
             shouldAnimate: e
           })
-        }), f(this, "handleResizeDebounced", s()(this.handleResize, 60))
+        }), p(this, "handleResizeDebounced", s()(this.handleResize, 60))
       }
     }
   }

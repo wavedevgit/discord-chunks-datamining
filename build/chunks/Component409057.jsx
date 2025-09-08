@@ -125,6 +125,7 @@ function W(e) {
     let e = (0, s.Z)(i) ? "crunchyroll" : "default",
       t = $ === G.l.MODAL_V2 ? h.J.SIZE_100 : h.J.SIZE_60;
     return i.type === k.IIU.HANG_STATUS ? (0, r.jsx)(b.Z, {
+      size: $ !== G.l.MODAL_V2 ? 60 : 100,
       hangStatusActivity: i,
       className: a()(Z.hangStatusIcon, Z.image, {
         [Z.small]: $ !== G.l.MODAL_V2

@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 /** chunk id: 806701, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,7 +16,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk710509 = require("./710509.js"),
   Chunk197571 = require("./197571.js");
 
-function p(e) {
+function g(e) {
   let {
     children: t
   } = e;
@@ -30,46 +30,46 @@ function p(e) {
   })
 }
 
-function g(e) {
+function m(e) {
   let {
     setSlide: t,
     transitionTo: i
   } = e;
   return (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(o.Ee, {
+    children: [(0, r.jsx)(a.Ee, {
       src: n(26230),
-      className: l()(f.marginBottom20, f.marginTop8)
-    }), (0, r.jsx)(o.Dx, {
-      className: f.marginBottom8,
+      className: l()(p.marginBottom20, p.marginTop8)
+    }), (0, r.jsx)(a.Dx, {
+      className: p.marginBottom8,
       children: d.intl.string(d.t["8UcxIy"])
     }), (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       children: d.intl.string(d.t.O37hMj)
-    }), (0, r.jsxs)(o.gO, {
-      className: l()(f.marginBottom20, f.marginTop20),
+    }), (0, r.jsxs)(a.gO, {
+      className: l()(p.marginBottom20, p.marginTop20),
       children: [(0, r.jsx)(s.Text, {
         variant: "text-sm/normal"
       }), (0, r.jsxs)("ul", {
         className: h.listContainer,
-        children: [(0, r.jsx)(p, {
+        children: [(0, r.jsx)(g, {
           children: d.intl.string(d.t.Gj1Zr6)
-        }), (0, r.jsx)(a.Z, {}), (0, r.jsx)(p, {
+        }), (0, r.jsx)(o.Z, {}), (0, r.jsx)(g, {
           children: d.intl.string(d.t["8C6t3N"])
-        }), (0, r.jsx)(a.Z, {}), (0, r.jsx)(p, {
+        }), (0, r.jsx)(o.Z, {}), (0, r.jsx)(g, {
           children: d.intl.string(d.t.mToZMD)
-        }), (0, r.jsx)(a.Z, {}), (0, r.jsx)(p, {
+        }), (0, r.jsx)(o.Z, {}), (0, r.jsx)(g, {
           children: d.intl.string(d.t.TPEvkZ)
-        }), (0, r.jsx)(a.Z, {}), (0, r.jsx)(p, {
+        }), (0, r.jsx)(o.Z, {}), (0, r.jsx)(g, {
           children: d.intl.string(d.t.H8Y1Li)
         })]
       })]
     }), (0, r.jsxs)("div", {
       className: h.buttonContainer,
-      children: [(0, r.jsx)(o.zx, {
+      children: [(0, r.jsx)(a.zx, {
         onClick: () => t(c.n.PASSWORD),
         children: d.intl.string(d.t.GgCRqa)
-      }), (0, r.jsx)(o.zx, {
-        color: o.zx.Colors.PRIMARY,
+      }), (0, r.jsx)(a.zx, {
+        color: a.zx.Colors.PRIMARY,
         onClick: () => i(u.Z5c.LOGIN, {
           source: "account_revert"
         }),

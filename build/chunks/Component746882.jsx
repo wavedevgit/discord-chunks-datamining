@@ -53,9 +53,9 @@ function S(t) {
   let {
     transitionState: e,
     source: n
-  } = t, a = (0, u.e7)([_.default], () => _.default.getCurrentUser()), i = (0, u.e7)([y.Z, A.Z], () => A.Z.getChannel(y.Z.getChannelId())), [S, k] = r.useState(null), [j, w] = r.useState(null), [I, D] = r.useState(false), [P, M] = r.useState(0), U = r.useRef(null), L = r.useRef(null), F = (0, v.Kt)() && n !== O.L0.FAMILY_CENTER, {
-    verifyAgreementButtonText: Z,
-    verifyGateDescription: V,
+  } = t, a = (0, c.e7)([h.default], () => h.default.getCurrentUser()), i = (0, c.e7)([_.Z, y.Z], () => y.Z.getChannel(_.Z.getChannelId())), [S, k] = r.useState(null), [j, w] = r.useState(null), [I, D] = r.useState(false), [P, M] = r.useState(0), U = r.useRef(null), L = r.useRef(null), F = (0, v.Kt)() && n !== O.L0.FAMILY_CENTER, {
+    verifyAgreementButtonText: V,
+    verifyGateDescription: Z,
     verifyTitle: Y
   } = (0, v.a1)(n), W = null != S ? s()().diff(S, "years") : null;
 
@@ -89,7 +89,7 @@ function S(t) {
   r.useEffect(() => {
     null == a || null == a.nsfwAllowed || F || (0, T.qq)(n)
   }), r.useEffect(() => {
-    h.default.track(C.rMx.AGE_GATE_ACTION, {
+    b.default.track(C.rMx.AGE_GATE_ACTION, {
       source: n,
       action: O.Al.AGE_GATE_OPEN
     })
@@ -103,7 +103,7 @@ function S(t) {
     }, [L]),
     H = r.useCallback(() => {
       p.Z.showAgeVerificationGetStartedModal({
-        entryPoint: b.cU.NSFW_AGE_GATE
+        entryPoint: A.cU.NSFW_AGE_GATE
       })
     }, []),
     $ = {
@@ -115,22 +115,22 @@ function S(t) {
       },
       gradientColor: "blue"
     };
-  return F ? (0, l.jsx)(d.I, x({
+  return F ? (0, l.jsx)(f.I, x({
     title: Y,
-    subtitle: V,
+    subtitle: Z,
     actions: [{
       text: R.intl.string(R.t.f3Pet7),
       onClick: q,
       variant: "secondary"
     }, {
-      text: Z,
+      text: V,
       onClick: H
     }],
     trackingProps: {
       impression: {
-        impressionName: c.ImpressionNames.USER_AGE_GATE_VERIFY
+        impressionName: u.ImpressionNames.USER_AGE_GATE_VERIFY
       },
-      impressionType: c.ImpressionTypes.MODAL
+      impressionType: u.ImpressionTypes.MODAL
     }
   }, $)) : 0 === P ? function() {
     var t, e;
@@ -162,7 +162,7 @@ function S(t) {
       })();
     return (0, l.jsx)("form", {
       onSubmit: J,
-      children: (0, l.jsx)(d.I, (t = x({
+      children: (0, l.jsx)(f.I, (t = x({
         title: r,
         subtitle: a,
         actions: [{
@@ -197,7 +197,7 @@ function S(t) {
         Object.defineProperty(t, n, Object.getOwnPropertyDescriptor(e, n))
       }), t))
     })
-  }() : (0, l.jsx)(f.Modal, {
+  }() : (0, l.jsx)(d.Modal, {
     transitionState: e,
     onClose: q,
     title: R.intl.formatToPlainString(R.t.wumolZ, {

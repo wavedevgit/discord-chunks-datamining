@@ -6,14 +6,14 @@ require.d(exports, {
 });
 var Chunk657707 = require("./657707.js"),
   Chunk509613 = require("./509613.js"),
-  Chunk393681 = require("./393681.jsx"),
+  Chunk736752 = require("./736752.jsx"),
   Chunk869235 = require("./869235.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
 let c = (0, Chunk509613.x1)(Chunk869235.t.ACCOUNT_PANE, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["JAIM/v"]),
     getLayout: () => [],
-    render: Chunk393681.Z
+    render: Chunk736752.Z
   }),
   u = (0, Chunk509613.wf)(Chunk869235.t.ACCOUNT_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["JAIM/v"]),

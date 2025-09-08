@@ -53,7 +53,7 @@ class Z extends Chunk647438.PureComponent {
       authenticated: t,
       isResolved: n
     } = this.props;
-    n || a.Z.wait(() => {
+    n || o.Z.wait(() => {
       this.resolveGiftCode()
     }), t && !e.authenticated && this.handleAuthenticated(), !t && e.authenticated && this.setState({
       currentUser: null
@@ -91,10 +91,10 @@ class Z extends Chunk647438.PureComponent {
     }) : e.isClaimed || i === y.evJ.INVALID_GIFT_REDEMPTION_EXHAUSTED ? C.intl.string(C.t.ilcBeX) : i === y.evJ.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED ? C.intl.string(C.t.ypuSd3) : true
   }
   renderSpinner(e) {
-    return (0, r.jsxs)(f.ZP, {
-      children: [(0, r.jsx)(f.Dx, {
+    return (0, r.jsxs)(p.ZP, {
+      children: [(0, r.jsx)(p.Dx, {
         children: e
-      }), (0, r.jsx)(f.Hh, {})]
+      }), (0, r.jsx)(p.Hh, {})]
     })
   }
   renderExpiredInvite() {
@@ -143,25 +143,25 @@ class Z extends Chunk647438.PureComponent {
     let {
       sentVerification: t
     } = this.state;
-    return (0, r.jsxs)(f.ZP, {
-      children: [(0, r.jsx)(f.Ee, {
+    return (0, r.jsxs)(p.ZP, {
+      children: [(0, r.jsx)(p.Ee, {
         src: n(892235),
         className: A.marginBottom8
-      }), (0, r.jsx)(f.Dx, {
+      }), (0, r.jsx)(p.Dx, {
         children: C.intl.format(C.t.ivLUf3, {
           username: e.username
         })
-      }), (0, r.jsx)(f.DK, {
+      }), (0, r.jsx)(p.DK, {
         className: A.marginTop20,
         children: C.intl.string(C.t["8Su18/"])
-      }), (0, r.jsx)(f.zx, {
+      }), (0, r.jsx)(p.zx, {
         disabled: t,
         className: A.marginTop40,
         onClick: this.handleResendVerification,
         children: t ? C.intl.string(C.t.CMa9Rk) : C.intl.string(C.t.lm1UKi)
-      }), (0, r.jsx)(f.zx, {
-        look: f.zx.Looks.LINK,
-        color: f.zx.Colors.LINK,
+      }), (0, r.jsx)(p.zx, {
+        look: p.zx.Looks.LINK,
+        color: p.zx.Colors.LINK,
         onClick: this.refreshUser,
         className: A.marginTop8,
         children: C.intl.string(C.t.Po9eBQ)
@@ -170,18 +170,18 @@ class Z extends Chunk647438.PureComponent {
   }
   renderAuthenticated(e, t) {
     let n = this.getErrorMessage(e);
-    return (0, r.jsxs)(f.ZP, {
+    return (0, r.jsxs)(p.ZP, {
       children: [(0, r.jsx)(N.Z, {
         giftCode: e
-      }), (0, r.jsx)(f.zx, {
+      }), (0, r.jsx)(p.zx, {
         disabled: null != n,
         className: A.marginTop40,
         onClick: this.handleAccept,
         children: C.intl.string(C.t.n6I6k5)
-      }), null != n ? (0, r.jsx)(f.DK, {
+      }), null != n ? (0, r.jsx)(p.DK, {
         className: A.marginTop20,
         children: n
-      }) : (0, r.jsx)(f.i_, {
+      }) : (0, r.jsx)(p.i_, {
         className: A.marginTop20,
         children: C.intl.format(C.t.NYM08v, {
           userTag: I.ZP.getUserTag(t),
@@ -198,8 +198,8 @@ class Z extends Chunk647438.PureComponent {
       giftCode: i,
       isResolved: l,
       isAccepting: s,
-      transitionTo: o,
-      location: a
+      transitionTo: a,
+      location: o
     } = this.props, {
       fetchingUser: c,
       continueOnWeb: u
@@ -288,11 +288,11 @@ let P = Chunk442837.ZP.connectStores([Chunk82142.Z, Chunk283595.Z, Chunk314897.d
     giftCode: n,
     sku: r,
     libraryApplication: null != r && (null == n ? true : n.entitlementBranches) != null ? j.z2(n.entitlementBranches, r, E.Z) : null,
-    authenticated: m.default.isAuthenticated(),
+    authenticated: f.default.isAuthenticated(),
     defaultRoute: _.Z.defaultRoute,
     isResolved: x.Z.getIsResolved(t),
     isAccepting: x.Z.getIsAccepting(t),
     libraryApplicationsFetched: E.Z.fetched,
-    nativeAppState: p.Z.getState(t)
+    nativeAppState: g.Z.getState(t)
   }
 })(Z)

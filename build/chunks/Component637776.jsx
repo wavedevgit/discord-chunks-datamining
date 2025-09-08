@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 /** chunk id: 637776, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,41 +17,41 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function f(e) {
   let {
     location: t
-  } = e, [n, m] = i.useState(false), {
+  } = e, [n, f] = i.useState(false), {
     verifySuccess: _,
     verifyErrors: x,
     redirectGuildId: E
   } = (0, l.e7)([h.Z], () => h.Z.getState());
   i.useEffect(() => {
-    let e = (0, a.Z)(t);
-    o.Z.verify(e), (0, d.e)("verify_hub_email")
+    let e = (0, o.Z)(t);
+    a.Z.verify(e), (0, d.e)("verify_hub_email")
   }, [t]);
   let v = () => {
-    (0, f.Z)(E), m(true)
+    (0, p.Z)(E), f(true)
   };
   return n ? (0, r.jsx)(c.Z, {
-    title: g.intl.string(g.t.csrAMD),
-    subtitle: g.intl.string(g.t["m1+IBg"]),
-    buttonText: g.intl.string(g.t.fIv16O),
-    onButtonClick: () => (0, u.uL)(p.Z5c.CHANNEL(E))
+    title: m.intl.string(m.t.csrAMD),
+    subtitle: m.intl.string(m.t["m1+IBg"]),
+    buttonText: m.intl.string(m.t.fIv16O),
+    onButtonClick: () => (0, u.uL)(g.Z5c.CHANNEL(E))
   }) : _ ? (0, r.jsx)(c.Z, {
-    title: g.intl.string(g.t.dAfGb2),
-    buttonText: g.intl.string(g.t.uJWIj4),
+    title: m.intl.string(m.t.dAfGb2),
+    buttonText: m.intl.string(m.t.uJWIj4),
     onButtonClick: v,
     image: (0, r.jsx)(s.Om, {
-      alt: g.intl.string(g.t.dAfGb2)
+      alt: m.intl.string(m.t.dAfGb2)
     })
   }) : null != x ? (0, r.jsx)(c.Z, {
-    title: g.intl.string(g.t.PCgG39),
-    subtitle: g.intl.string(g.t.tQpeAw),
-    buttonText: g.intl.string(g.t.uJWIj4),
+    title: m.intl.string(m.t.PCgG39),
+    subtitle: m.intl.string(m.t.tQpeAw),
+    buttonText: m.intl.string(m.t.uJWIj4),
     onButtonClick: v
   }) : (0, r.jsx)(c.Z, {
-    title: g.intl.string(g.t["0c8+5u"]),
-    subtitle: g.intl.string(g.t.ULTCBA),
+    title: m.intl.string(m.t["0c8+5u"]),
+    subtitle: m.intl.string(m.t.ULTCBA),
     loading: true
   })
 }
