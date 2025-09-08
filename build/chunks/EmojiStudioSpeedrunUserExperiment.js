@@ -69,7 +69,7 @@ let a = (0, Chunk818083.B)({
   }),
   l = (0, Chunk818083.B)({
     kind: "user",
-    id: "2025-08-emoji_studio_speedrun",
+    id: "2025-08_emoji_studio_speedrun",
     label: "Emoji Studio V2 Speedrun",
     defaultConfig: {
       isEmojiEditingExperimentEnabled: false,

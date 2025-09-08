@@ -72,7 +72,7 @@ let g = {
     rewardAssetIdMap: (0, Chunk717401.YV)([g, E, b, y, O, v, I, T]),
     chatGiftIcon: {
       trinketsAnimation: {
-        getAnimationData: () => require.e("2561").then(require.bind(require, 969666)).then(e => {
+        getAnimationData: () => require.e("21723").then(require.bind(require, 421344)).then(e => {
           let {
             default: t
           } = e;

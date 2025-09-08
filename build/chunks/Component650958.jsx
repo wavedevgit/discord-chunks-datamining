@@ -94,24 +94,30 @@ function g(e) {
     id: R,
     name: P
   } = (0, l.p6)(t), w = null != p ? p : R, D = N.map(e => {
-    let {
-      id: i,
-      disabled: o,
-      name: s
-    } = e;
-    return (0, r.jsx)(a.k5B, _({
-      id: "".concat(t, "-").concat(i),
+    let i, {
+        id: o,
+        disabled: s,
+        name: c
+      } = e,
+      d = c,
+      f = (0, l.rX)(c);
+    return null != f && (d = f.prefix, i = f.subName), (0, r.jsx)(a.k5B, _({
+      id: "".concat(t, "-").concat(o),
       group: "".concat(t, "-devices"),
-      disabled: o,
-      label: s,
-      checked: i === w,
+      disabled: s,
+      label: d,
+      subtext: null != i && (0, r.jsx)(a.Text, {
+        variant: "text-xs/normal",
+        children: i
+      }),
+      checked: o === w,
       action: () => {
         var e;
-        (null == (e = null == u ? true : u(i)) || e) && y(i, {
+        (null == (e = null == u ? true : u(o)) || e) && y(o, {
           analyticsLocations: n
         })
       }
-    }, null == b ? true : b(i)), "".concat(t, "-").concat(i))
+    }, null == b ? true : b(o)), "".concat(t, "-").concat(o))
   }), x = (0, r.jsx)(a.sNh, {
     id: "SHOW_MORE",
     label: d.intl.string(d.t.E99UMj),
