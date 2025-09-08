@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 405545, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -21,7 +21,7 @@ let s = function(e) {
     actionsLocation: g,
     fieldStyle: p
   } = e, {
-    label: f
+    label: h
   } = t;
   return (0, r.jsx)(l.Z, {
     field: t,
@@ -31,7 +31,7 @@ let s = function(e) {
     onDrop: c,
     onEdit: d,
     onRemove: u,
-    title: f,
+    title: h,
     canRemove: m,
     actionsLocation: g,
     fieldStyle: p,

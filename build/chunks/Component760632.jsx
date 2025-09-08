@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 760632, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   M: () => g
@@ -44,7 +44,7 @@ function g(e) {
     label: s.intl.formatToPlainString(s.t.xCjYxM, {
       hours: 1
     })
-  }], []), f = i.useCallback(e => {
+  }], []), h = i.useCallback(e => {
     a.Z.updateGuild({
       afkTimeout: parseInt(e, 10)
     })
@@ -53,6 +53,6 @@ function g(e) {
     value: null == n ? null : "".concat(n),
     options: p,
     isDisabled: null == g || !t,
-    onChange: f
+    onChange: h
   })
 }

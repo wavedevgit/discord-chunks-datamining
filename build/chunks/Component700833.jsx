@@ -1,7 +1,7 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 700833, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Md: () => f,
+  Md: () => h,
   a0: () => p
 });
 var Chunk951288 = require("./951288.js");
@@ -51,7 +51,7 @@ function p(e) {
   let {
     dropHoveredIndex: t,
     formField: p,
-    guild: f,
+    guild: h,
     index: b,
     isDragEnabled: x,
     submittedGuildJoinRequestsCount: j,
@@ -73,14 +73,14 @@ function p(e) {
     isDragEnabled: x,
     isDropHovered: P,
     onEdit: () => {
-      0 === j ? h(p, I, f) : (0, l.ZDy)(async () => {
+      0 === j ? f(p, I, h) : (0, l.ZDy)(async () => {
         let {
           default: e
         } = await n.e("74673").then(n.bind(n, 394045));
         return t => (0, r.jsx)(e, g(m({}, t), {
-          guildId: f.id,
+          guildId: h.id,
           submittedGuildJoinRequestsCount: j,
-          onConfirm: () => h(p, I, f)
+          onConfirm: () => f(p, I, h)
         }))
       })
     },
@@ -93,7 +93,7 @@ function p(e) {
   switch (p.field_type) {
     case a.QJ.TERMS:
       return (0, r.jsx)(c.Z, m({
-        channelId: f.rulesChannelId,
+        channelId: h.rulesChannelId,
         title: N === a.it.COMPACT ? u.intl.string(u.t["55+giY"]) : u.intl.string(u.t["53vNcH"]),
         formField: p
       }, w));
@@ -114,7 +114,7 @@ function p(e) {
   }
 }
 
-function f(e, t, i) {
+function h(e, t, i) {
   switch (e) {
     case a.QJ.TERMS:
       return (0, l.ZDy)(async () => {
@@ -160,7 +160,7 @@ function f(e, t, i) {
   }
 }
 
-function h(e, t, i) {
+function f(e, t, i) {
   switch (e.field_type) {
     case a.QJ.TERMS:
       return (0, l.ZDy)(async () => {

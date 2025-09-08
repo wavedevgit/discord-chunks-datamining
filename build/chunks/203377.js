@@ -2,11 +2,11 @@
 /** chunk id: 203377, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   G7: () => l,
-  LG: () => u,
+  LG: () => o,
   Pg: () => s,
   ZI: () => c,
   _0: () => a,
-  mf: () => o
+  mf: () => u
 });
 var r, Chunk388032 = require("./388032.jsx");
 let s = 5,
@@ -20,11 +20,11 @@ let d = {
   system_channel_id: () => Chunk388032.intl.string(Chunk388032.t.NASFnp)
 };
 
-function u(e) {
+function o(e) {
   var t;
   if (0 === Object.keys(e).length) return null;
   let n = Object.keys(e)[0],
     r = null == (t = d[n]) ? true : t.call(d);
   return null != r ? "(".concat(r, ") ").concat(e[n]) : e[n]
 }
-let o = "https://discord.gg"
+let u = "https://discord.gg"

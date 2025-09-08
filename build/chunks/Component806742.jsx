@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 806742, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -68,10 +68,10 @@ let j = function(e) {
   return (0, c.pw)(l) ? (0, r.jsx)(o.zxk, {
     variant: "primary",
     size: "sm",
-    text: f.intl.string(f.t["9Z+aEB"]),
+    text: h.intl.string(h.t["9Z+aEB"]),
     onClick: j
   }) : (0, r.jsxs)(o.P3F, {
-    className: h.editWelcomeSection,
+    className: f.editWelcomeSection,
     onClick: j,
     children: [(0, r.jsx)(d.Z, {
       guildId: t,
@@ -80,14 +80,14 @@ let j = function(e) {
         message: l.message
       }
     }), (0, r.jsx)(o.ua7, {
-      text: f.intl.string(f.t.bt75u7),
+      text: h.intl.string(h.t.bt75u7),
       children: e => (0, r.jsxs)("div", x(b({}, e), {
-        className: a()(h.actionItemEditButton, h.editWelcomeButton),
+        className: a()(f.actionItemEditButton, f.editWelcomeButton),
         children: [(0, r.jsx)(o.vdY, {
           size: "md",
           color: "currentColor"
         }), (0, r.jsx)(o.nn4, {
-          children: f.intl.string(f.t.bt75u7)
+          children: h.intl.string(h.t.bt75u7)
         })]
       }))
     })]

@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 279988, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -21,8 +21,8 @@ let g = function(e) {
     index: i,
     isDragEnabled: g,
     isDropHovered: p,
-    onDrop: f,
-    onEdit: h,
+    onDrop: h,
+    onEdit: f,
     onRemove: b,
     canRemove: x,
     title: j,
@@ -34,8 +34,8 @@ let g = function(e) {
     index: i,
     isDragEnabled: g,
     isDropHovered: p,
-    onDrop: f,
-    onEdit: h,
+    onDrop: h,
+    onEdit: f,
     onRemove: b,
     title: j,
     canRemove: x,
@@ -46,7 +46,7 @@ let g = function(e) {
       channelId: t
     }), 0 !== C && (0, r.jsxs)(s.P3F, {
       className: l()(m.fieldFooterContainer, m.clickable),
-      onClick: h,
+      onClick: f,
       children: [(0, r.jsx)(s.R94, {
         className: m.clickable,
         children: u.intl.format(u.t.jnhD0d, {

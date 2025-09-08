@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 387960, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -25,7 +25,7 @@ let x = [],
     } = e, n = (0, a.e7)([d.Z], () => d.Z.getGuild(t)), j = (0, a.Wu)([g.Z], () => {
       var e, t;
       return null != (t = null == (e = g.Z.getSettings().resourceChannels) ? true : e.map(e => e.channelId)) ? t : x
-    }), v = (0, a.Wu)([g.Z], () => g.Z.getDismissedSuggestedChannelIds(t)), _ = (0, a.e7)([c.ZP], () => c.ZP.getSelectableChannels(t)), O = i.useMemo(() => (0, l.chain)(_).filter(e => e.channel.type === f.d4z.GUILD_TEXT && e.channel.id !== (null == n ? true : n.rulesChannelId) && !v.includes(e.channel.id) && !j.includes(e.channel.id) && u.Uu(f.Plq.VIEW_CHANNEL, e.channel) && !u.Uu(f.Plq.SEND_MESSAGES, e.channel)).take(5).value(), [_, v, null == n ? true : n.rulesChannelId, j]), y = i.useCallback(() => {
+    }), v = (0, a.Wu)([g.Z], () => g.Z.getDismissedSuggestedChannelIds(t)), _ = (0, a.e7)([c.ZP], () => c.ZP.getSelectableChannels(t)), O = i.useMemo(() => (0, l.chain)(_).filter(e => e.channel.type === h.d4z.GUILD_TEXT && e.channel.id !== (null == n ? true : n.rulesChannelId) && !v.includes(e.channel.id) && !j.includes(e.channel.id) && u.Uu(h.Plq.VIEW_CHANNEL, e.channel) && !u.Uu(h.Plq.SEND_MESSAGES, e.channel)).take(5).value(), [_, v, null == n ? true : n.rulesChannelId, j]), y = i.useCallback(() => {
       let e = O.map(e => e.channel.id);
       (0, m.q6)(t, e)
     }, [t, O]);
@@ -34,13 +34,13 @@ let x = [],
         className: b.suggestedChannelsSection,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-md/semibold",
-          children: h.intl.string(h.t.WThgAQ)
+          children: f.intl.string(f.t.WThgAQ)
         }), (0, r.jsxs)("div", {
           className: b.suggestedChannelsHeader,
           children: [(0, r.jsx)(s.Text, {
             variant: "text-xs/medium",
             color: "text-muted",
-            children: h.intl.string(h.t.YtNI8P)
+            children: f.intl.string(f.t.YtNI8P)
           }), (0, r.jsxs)(s.P3F, {
             className: b.suggestedChannelsDismiss,
             onClick: y,
@@ -51,7 +51,7 @@ let x = [],
             }), (0, r.jsx)(s.Text, {
               variant: "text-xs/semibold",
               color: "text-brand",
-              children: h.intl.string(h.t.aLqZTk)
+              children: f.intl.string(f.t.aLqZTk)
             })]
           })]
         }), (0, r.jsx)("div", {

@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 34112, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => L
@@ -77,17 +77,17 @@ function L(e) {
     renderHeader: o,
     headerHeight: d,
     query: u
-  } = e, m = (0, c.e7)([C.Z], () => C.Z.getRoleMemberCount(n.id), [n.id]), p = (0, c.e7)([_.Z], () => _.Z.getHighestRole(n), [n]), f = u.trim();
+  } = e, m = (0, c.e7)([C.Z], () => C.Z.getRoleMemberCount(n.id), [n.id]), p = (0, c.e7)([_.Z], () => _.Z.getHighestRole(n), [n]), h = u.trim();
   i.useEffect(() => {
     (0, y.E)(n.id)
   }, [n.id]);
-  let h = i.useRef(false);
+  let f = i.useRef(false);
   i.useEffect(() => {
-    h.current || "" === u.trimStart() || (O.default.track(T.rMx.SEARCH_STARTED, {
+    f.current || "" === u.trimStart() || (O.default.track(T.rMx.SEARCH_STARTED, {
       search_type: "Roles"
-    }), h.current = true)
+    }), f.current = true)
   }, [u]);
-  let b = i.useMemo(() => a.filter(e => (0, N.uo)(e, f)), [a, f]),
+  let b = i.useMemo(() => a.filter(e => (0, N.uo)(e, h)), [a, h]),
     x = i.useMemo(() => [...a, l], [a, l]),
     {
       draggingId: j,
@@ -148,7 +148,7 @@ function M(e) {
   let {
     role: d,
     guild: g,
-    highestRole: f,
+    highestRole: h,
     currentPosition: x,
     memberCount: v,
     onDragStart: _,
@@ -158,7 +158,7 @@ function M(e) {
     disableDrag: N,
     setEditRoleId: I,
     setSelectedSection: T
-  } = e, L = (0, E.T)(g, f, d), k = null != L, [M, U] = i.useState(false), B = i.useMemo(() => ({
+  } = e, L = (0, E.T)(g, h, d), k = null != L, [M, U] = i.useState(false), B = i.useMemo(() => ({
     type: A,
     item: () => (_(d.id), {
       id: d.id,
@@ -265,7 +265,7 @@ function M(e) {
       }), (null == (l = d.tags) ? true : l.subscription_listing_id) != null && (0, r.jsx)(j.Z, {
         className: w.subscriptionRoleIcon,
         "aria-label": P.intl.string(P.t.a2Ak8f)
-      }), (null == (c = d.tags) ? true : c.is_guild_product_role) === true && (0, r.jsx)(h.Z, {})]
+      }), (null == (c = d.tags) ? true : c.is_guild_product_role) === true && (0, r.jsx)(f.Z, {})]
     }), (0, r.jsx)(u.ua7, {
       text: P.intl.string(P.t.CW75t7),
       "aria-label": P.intl.formatToPlainString(P.t.Fgs8fH, {
@@ -322,7 +322,7 @@ function G(e) {
     className: g,
     defaultIconClassName: p
   } = e, {
-    hasGradient: h,
+    hasGradient: f,
     stops: b,
     gradientId: j
   } = (0, d.De)(null == (t = o.colorStrings) ? true : t.primaryColor, null == (n = o.colorStrings) ? true : n.secondaryColor, null == (i = o.colorStrings) ? true : i.tertiaryColor), _ = (0, v.yH)(s, o), O = (0, x.p9)({
@@ -330,13 +330,13 @@ function G(e) {
     roleId: o.id,
     size: c
   });
-  if (null != O) return (0, r.jsx)(f.Z, D(Z({}, O), {
+  if (null != O) return (0, r.jsx)(h.Z, D(Z({}, O), {
     className: g,
     enableTooltip: m
   }));
   let y = null != (l = o.colorString) ? l : T.Pbq;
-  return _ && h && (y = "url(#".concat(j, ")")), (0, r.jsxs)(r.Fragment, {
-    children: [_ && h && (0, r.jsx)("svg", {
+  return _ && f && (y = "url(#".concat(j, ")")), (0, r.jsxs)(r.Fragment, {
+    children: [_ && f && (0, r.jsx)("svg", {
       width: "0",
       height: "0",
       style: {

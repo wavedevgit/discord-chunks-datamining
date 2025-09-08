@@ -1,7 +1,7 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 489776, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -34,7 +34,7 @@ function p(e) {
   return e
 }
 
-function f(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,11 +47,11 @@ function f(e, t) {
   }), e
 }
 
-function h(e) {
+function f(e) {
   let {
     guildId: t,
     triggerType: n
-  } = e, h = i.useMemo(() => () => (0, o.ep)(t, n), [t, n]), [b] = i.useState(h), [x, j] = i.useState(false), {
+  } = e, f = i.useMemo(() => () => (0, o.ep)(t, n), [t, n]), [b] = i.useState(f), [x, j] = i.useState(false), {
     editingRule: v,
     createNewEditingRule: _
   } = (0, d.V)(), {
@@ -59,13 +59,13 @@ function h(e) {
   } = c.I6[n], y = !(0, o.Vb)(v) && (null == v ? true : v.triggerType) === n, [C, N] = i.useState(y ? v : b), E = (0, s.q_F)({
     opacity: +!y,
     pointerEvents: y ? "none" : "all",
-    config: f(p({}, l.config.stiff), {
+    config: h(p({}, l.config.stiff), {
       clamp: true
     })
   }), I = (0, s.q_F)({
     opacity: +!!y,
     pointerEvents: y ? "all" : "none",
-    config: f(p({}, l.config.stiff), {
+    config: h(p({}, l.config.stiff), {
       clamp: true
     }),
     onStart: () => {

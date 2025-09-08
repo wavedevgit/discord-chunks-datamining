@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 546221, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -121,14 +121,14 @@ let O = e => {
       title: x.intl.string(x.t.O8cDAA),
       disabled: E,
       className: j.formSection,
-      children: (0, r.jsx)(f.Z, {
+      children: (0, r.jsx)(h.Z, {
         guildId: s,
         application: o
       })
     }), (0, r.jsx)(i.hjN, {
       title: x.intl.string(x.t["0n7R2d"]),
       className: j.formSection,
-      children: (0, r.jsx)(h.Z, {
+      children: (0, r.jsx)(f.Z, {
         guildId: s,
         allPeriods: y
       })

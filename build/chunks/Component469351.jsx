@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 469351, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   t: () => w
@@ -49,8 +49,8 @@ function w(e) {
     let t = {
       [e.id]: e
     };
-    (0, f.iD)(R.id, {
-      type: h.z.SERVER_SHOP,
+    (0, h.iD)(R.id, {
+      type: f.z.SERVER_SHOP,
       roles: t,
       initialTab: "guild_products",
       returnToSection: I.pNK.GUILD_PRODUCTS

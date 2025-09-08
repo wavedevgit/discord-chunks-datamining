@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 718157, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => u
@@ -20,7 +20,7 @@ function u(e) {
     clearable: m = true
   } = e, g = (0, l.Wu)([o.Z], () => o.Z.getPrimaryCategories()), p = i.useCallback(e => {
     (0, s.TA)(t, null != e ? e : c.o3)
-  }, [t]), f = i.useMemo(() => g.map(e => {
+  }, [t]), h = i.useMemo(() => g.map(e => {
     let {
       categoryId: t,
       name: n
@@ -33,9 +33,9 @@ function u(e) {
   return 0 === g.length ? (0, r.jsx)(a.$jN, {}) : (0, r.jsx)(a.VcW, {
     value: n.primaryCategoryId === c.o3 ? null : n.primaryCategoryId,
     placeholder: d.intl.string(d.t.XqMe3N),
-    options: f,
+    options: h,
     onChange: p,
     isDisabled: u,
     clearable: m
-  }, f.length)
+  }, h.length)
 }

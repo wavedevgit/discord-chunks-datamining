@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 651711, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -23,7 +23,7 @@ function u(e) {
   } = (0, o.N)(), p = r.useCallback(async () => {
     var e, r;
     m ? g || await (null == n || null == (r = n.onRequireModeratorMFAClick) ? true : r.call(n)) : await (null == n || null == (e = n.onEnableMFAClick) ? true : e.call(n)), null == t || t()
-  }, [m, g, t, n]), f = (0, s.R)({
+  }, [m, g, t, n]), h = (0, s.R)({
     onEnableMFAClick: p
   });
   return r.useMemo(() => {
@@ -93,7 +93,7 @@ function u(e) {
         checkedLabel: d.intl.string(d.t.NqVyFh),
         uncheckedLabel: d.intl.string(d.t.VcDNIS),
         description: d.intl.format(d.t["7NzkfX"], {
-          enableMFAHook: f
+          enableMFAHook: h
         }),
         checked: e.hasEnabled2FA,
         actionLabel: i ? d.intl.string(d.t.BU4Dio) : true,
@@ -101,5 +101,5 @@ function u(e) {
       })
     }
     returntrue === u && o.sort(e => e.checked ? 0 : false), o
-  }, [e, u, m, n, g, f, p])
+  }, [e, u, m, n, g, h, p])
 }

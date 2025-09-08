@@ -1,7 +1,7 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 403170, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  z: () => h
+  z: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,23 +15,23 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk764295 = require("./764295.js"),
   Chunk759071 = require("./759071.js");
-async function f(e, t) {
+async function h(e, t) {
   return await d.Z.saveGuild(e.id, {
     moderatorReportingEnabled: t
   })
 }
 
-function h(e) {
+function f(e) {
   let {
     guild: t
-  } = e, n = (0, l.e7)([c.Z], () => null != t && c.Z.can(u.Plq.MANAGE_GUILD, t), [t]), d = t.features.has(u.oNc.REPORT_TO_MOD_PILOT), [h, b] = i.useState((0, o.Z)(t) && d), x = i.useCallback(async e => {
-    b(e), await f(t, e)
+  } = e, n = (0, l.e7)([c.Z], () => null != t && c.Z.can(u.Plq.MANAGE_GUILD, t), [t]), d = t.features.has(u.oNc.REPORT_TO_MOD_PILOT), [f, b] = i.useState((0, o.Z)(t) && d), x = i.useCallback(async e => {
+    b(e), await h(t, e)
   }, [t]);
   return d && n ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: p.setupContainer,
       children: (0, r.jsx)(a.j7V, {
-        value: h,
+        value: f,
         onChange: x,
         className: p.switchItem,
         disabled: !n,

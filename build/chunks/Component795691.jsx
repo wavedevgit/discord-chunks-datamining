@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 795691, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -20,17 +20,17 @@ function d(e) {
   } = e, {
     topGames: m,
     tryFetchTopGames: g
-  } = (0, a.I)(), p = m.get(t), [f, h] = i.useState(false);
+  } = (0, a.I)(), p = m.get(t), [h, f] = i.useState(false);
   i.useEffect(() => {
-    h(true), g(t).finally(() => {
-      h(false)
+    f(true), g(t).finally(() => {
+      f(false)
     })
   }, [t, g]);
   let b = i.useMemo(() => null == p ? [] : Object.keys(p).filter(e => !n.includes(e)).sort((e, t) => p[t].score - p[e].score), [p, n]),
     x = i.useCallback(e => {
       n.includes(e) ? d(n.filter(t => t !== e)) : d([...n, e])
     }, [d, n]);
-  return f && null == p ? (0, r.jsx)(l.$jN, {}) : null == b || 0 === b.length ? null : (0, r.jsxs)(r.Fragment, {
+  return h && null == p ? (0, r.jsx)(l.$jN, {}) : null == b || 0 === b.length ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: c.separator
     }), (0, r.jsxs)("div", {

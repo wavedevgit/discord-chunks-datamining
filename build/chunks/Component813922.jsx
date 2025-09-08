@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 813922, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk145468 = require("./145468.js");
 
-function f(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function f(e) {
   return e
 }
 
-function h(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -54,14 +54,14 @@ function b(e) {
     rule: _,
     onChangeRule: O
   } = e, y = i.useCallback(e => {
-    O(h(f({}, _), {
-      triggerMetadata: h(f({}, _.triggerMetadata), {
+    O(f(h({}, _), {
+      triggerMetadata: f(h({}, _.triggerMetadata), {
         keywordFilter: e
       })
     }))
   }, [O, _]), C = i.useCallback(e => {
-    O(h(f({}, _), {
-      triggerMetadata: h(f({}, _.triggerMetadata), {
+    O(f(h({}, _), {
+      triggerMetadata: f(h({}, _.triggerMetadata), {
         allowList: e
       })
     }))

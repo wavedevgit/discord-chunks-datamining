@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 463939, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => I
@@ -58,7 +58,7 @@ function C(e) {
     payoutStatus: r,
     ppgDeferralReasons: i,
     periodEndDate: a
-  } = (0, h.j0)(t), s = null != a ? d()(a).add(15, "days").toISOString() : true, o = (0, m.Zo)(s, "MMM D");
+  } = (0, f.j0)(t), s = null != a ? d()(a).add(15, "days").toISOString() : true, o = (0, m.Zo)(s, "MMM D");
   switch (n) {
     case j.x_.OPEN:
       return (0, l.jsxs)(l.Fragment, {
@@ -85,7 +85,7 @@ function C(e) {
         })]
       });
       return (0, l.jsxs)(l.Fragment, {
-        children: [v.intl.string(v.t.OtZ5k5), (0, l.jsx)(f.Z, {
+        children: [v.intl.string(v.t.OtZ5k5), (0, l.jsx)(h.Z, {
           className: _.statusDeferredIcon
         })]
       })

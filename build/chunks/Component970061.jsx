@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 970061, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -43,8 +43,8 @@ function g(e) {
     buttonLabel: l,
     buttonCallback: a,
     disabled: o
-  } = e, [g, p] = i.useState(false), f = n.flatMap(e => e.items.map(e => e.completed)), h = f.filter(e => e).length / f.length, b = (0, c.q_F)({
-    width: "".concat(100 * h, "%")
+  } = e, [g, p] = i.useState(false), h = n.flatMap(e => e.items.map(e => e.completed)), f = h.filter(e => e).length / h.length, b = (0, c.q_F)({
+    width: "".concat(100 * f, "%")
   });
   return (0, r.jsxs)("div", {
     className: u.container,
@@ -92,7 +92,7 @@ function g(e) {
           size: "sm",
           text: l,
           onClick: a,
-          disabled: 1 !== h || o
+          disabled: 1 !== f || o
         })
       })]
     })]

@@ -4,7 +4,7 @@ require.d(exports, {
   Z: () => l
 }), require("./704826.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
-  Chunk263145 = require("./263145.jsx"),
+  Chunk481060 = require("./481060.js"),
   Chunk203377 = require("./203377.js");
 
 function l(e) {
@@ -13,11 +13,10 @@ function l(e) {
     onChange: n,
     error: l,
     disabled: a,
-    className: c,
-    autoFocus: d = false
+    autoFocus: c = false
   } = e;
-  return (0, r.jsx)(i.Z, {
-    prefix: "".concat(s.mf, "/"),
+  return (0, r.jsx)(i.oil, {
+    leading: "".concat(s.mf, "/"),
     value: t,
     onChange: e => {
       n(e.replace(/ /g, "-"))
@@ -25,7 +24,6 @@ function l(e) {
     maxLength: 25,
     error: l,
     disabled: a,
-    className: c,
-    autoFocus: d
+    autoFocus: c
   })
 }

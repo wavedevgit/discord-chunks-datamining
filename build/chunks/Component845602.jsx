@@ -1,8 +1,8 @@
-/** Chunk was on 99982 **/
+/** Chunk was on 67455 **/
 /** chunk id: 845602, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => k,
-  Z: () => v
+  Z: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk583931 = require("./583931.js"),
   Chunk842926 = require("./842926.js");
 
-function v() {
+function x() {
   var e;
   let [t, n] = Chunk647438.useState(() => {
     let e = Math.floor(Math.random() * Chunk141006.tl.length);
@@ -103,21 +103,21 @@ function v() {
 function k(e) {
   let {
     guildId: t
-  } = e, [n, a] = o.useState(x.x_.HEART), s = (0, _.Z)(), l = o.useMemo(() => ({
+  } = e, [n, a] = o.useState(C.x_.HEART), s = (0, g.Z)(), l = o.useMemo(() => ({
     unlockedBadges: s.unlockedBadges.slice(0, 10),
     lockedBadges: []
   }), [s]);
   return (0, r.jsxs)("div", {
-    className: h.container,
+    className: j.container,
     children: [(0, r.jsx)("div", {
-      className: h.messageContainer,
+      className: j.messageContainer,
       children: (0, r.jsx)(p.l, {
         avatar: c.Z,
         username: "Roka",
         usernameStyle: {
           color: "var(--brand-400)"
         },
-        message: C.intl.string(C.t["6OSasb"]),
+        message: h.intl.string(h.t["6OSasb"]),
         decorations: (0, r.jsx)(m.S, {
           guildId: t,
           tag: "GGEZ",

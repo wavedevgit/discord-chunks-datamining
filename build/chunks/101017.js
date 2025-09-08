@@ -27,11 +27,11 @@ function d() {
         l = c.AC[n],
         a = null == t ? true : t[l],
         d = null == a ? true : a.title,
-        u = s.map(e => ({
+        o = s.map(e => ({
           kind: e,
           packName: d
         }));
-      e.features.has(n) ? r.push(...u) : i.push(...u)
+      e.features.has(n) ? r.push(...o) : i.push(...o)
     }), {
       unlockedBadges: Chunk647438,
       lockedBadges: Chunk442837

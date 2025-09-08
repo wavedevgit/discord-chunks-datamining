@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 922112, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197530 = require("./197530.js");
 
-function h(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -93,7 +93,7 @@ let x = function(e) {
       let {
         default: e
       } = await n.e("84725").then(n.bind(n, 462499));
-      return n => (0, r.jsx)(e, b(h({}, n), {
+      return n => (0, r.jsx)(e, b(f({}, n), {
         guildId: t,
         resourceChannel: l,
         onSave: Z,
@@ -102,44 +102,44 @@ let x = function(e) {
       }))
     }), [t, l, Z, D]);
   return null == N ? null : (0, r.jsxs)("div", {
-    className: f.resourceChannelContainer,
+    className: h.resourceChannelContainer,
     children: [(0, r.jsxs)("div", {
-      className: a()(f.resourceChannel, {
-        [f.dropIndicatorBefore]: null != P && x < P,
-        [f.dropIndicatorAfter]: null != P && x > P,
-        [f.resourceChannelError]: null != E
+      className: a()(h.resourceChannel, {
+        [h.dropIndicatorBefore]: null != P && x < P,
+        [h.dropIndicatorAfter]: null != P && x > P,
+        [h.resourceChannelError]: null != E
       }),
       ref: e => {
         T(w(e))
       },
       children: [(0, r.jsx)("div", {
-        className: f.dragContainer,
+        className: h.dragContainer,
         onMouseEnter: () => R(true),
         onMouseLeave: () => R(false),
         children: (0, r.jsx)(s.Vni, {
           size: "xs",
           color: "currentColor",
-          className: f.dragIcon
+          className: h.dragIcon
         })
       }), null != S && (0, r.jsx)("div", {
-        className: f.iconWrapper,
+        className: h.iconWrapper,
         children: (0, r.jsx)("img", {
           src: S,
-          className: f.icon,
+          className: h.icon,
           width: 32,
           height: 32,
           alt: "",
           "aria-hidden": true
         })
       }), (0, r.jsxs)("div", {
-        className: f.resourceChannelContent,
+        className: h.resourceChannelContent,
         children: [(0, r.jsx)(s.Text, {
-          className: f.resourceChannelTitle,
+          className: h.resourceChannelTitle,
           variant: "text-md/semibold",
           color: "header-primary",
           children: O
         }), !I && (0, r.jsx)(s.Text, {
-          className: f.resourceChannelDescription,
+          className: h.resourceChannelDescription,
           variant: "text-xs/medium",
           color: "text-muted",
           lineClamp: 1,
@@ -147,7 +147,7 @@ let x = function(e) {
         })]
       }), (0, r.jsx)(s.ua7, {
         text: p.intl.string(p.t.bt75u7),
-        children: e => (0, r.jsx)(s.hU, b(h({}, e), {
+        children: e => (0, r.jsx)(s.hU, b(f({}, e), {
           icon: s.vdY,
           size: "sm",
           variant: "primary",

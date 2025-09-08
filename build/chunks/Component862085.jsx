@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 862085, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -22,13 +22,13 @@ function c(e) {
   let {
     headerText: g,
     descriptionText: p,
-    icon: f
+    icon: h
   } = m;
   return (0, r.jsxs)("div", {
     className: o.actionContainer,
     children: [(0, r.jsx)("div", {
       className: o.actionIconContainer,
-      children: (0, r.jsx)(f, {
+      children: (0, r.jsx)(h, {
         size: "custom",
         color: "currentColor",
         className: o.actionIcon

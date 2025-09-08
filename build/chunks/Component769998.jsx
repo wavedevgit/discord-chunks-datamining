@@ -1,7 +1,7 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 769998, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -17,15 +17,15 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk464992 = require("./464992.js");
 
-function f(e) {
+function h(e) {
   var t;
   let {
     action: n,
-    triggerType: f,
-    guildId: h,
+    triggerType: h,
+    guildId: f,
     toggled: b,
     onToggleAction: x
-  } = e, j = e => () => x(e), v = (0, c.c)(n.type, n, f), _ = null == (t = n.metadata) ? true : t.durationSeconds, O = null != _ ? (0, m.L9)(_) : null, y = (0, i.e7)([o.Z, s.Z], () => o.Z.can(u.Plq.MODERATE_MEMBERS, s.Z.getGuild(h)), [h]);
+  } = e, j = e => () => x(e), v = (0, c.c)(n.type, n, h), _ = null == (t = n.metadata) ? true : t.durationSeconds, O = null != _ ? (0, m.L9)(_) : null, y = (0, i.e7)([o.Z, s.Z], () => o.Z.can(u.Plq.MODERATE_MEMBERS, s.Z.getGuild(f)), [f]);
   if (null == v) return null;
   let {
     headerText: C,
@@ -53,7 +53,7 @@ function f(e) {
       }), b && (0, r.jsxs)(a.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
-        children: [null === O ? null : f === d.fX.MENTION_SPAM ? g.intl.format(g.t.i3lsKC, {
+        children: [null === O ? null : h === d.fX.MENTION_SPAM ? g.intl.format(g.t.i3lsKC, {
           friendlyDurationString: O
         }) : g.intl.format(g.t.mvHxzc, {
           friendlyDurationString: O

@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 372444, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -45,8 +45,8 @@ function p(e) {
     guild: d,
     className: u,
     textColor: p,
-    headerColor: f,
-    buttonProps: h
+    headerColor: h,
+    buttonProps: f
   } = e, {
     analyticsLocations: b
   } = (0, c.ZP)(o.Z.GUILD_BOOSTING_UPSELL_BANNER);
@@ -62,7 +62,7 @@ function p(e) {
         className: m.content,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-lg/semibold",
-          color: null != f ? f : "always-white",
+          color: null != h ? h : "always-white",
           className: m.header,
           children: t
         }), (0, r.jsx)(s.Text, {
@@ -76,7 +76,7 @@ function p(e) {
           guild: d,
           analyticsLocation: a,
           className: m.button,
-          buttonProps: h
+          buttonProps: f
         })
       })]
     })

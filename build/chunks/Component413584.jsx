@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 413584, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => G
@@ -73,8 +73,8 @@ let k = "WELCOME_CHANNEL",
     let l, {
         guildId: s,
         welcomeChannel: o,
-        onEdit: f,
-        onChannelReorder: h,
+        onEdit: h,
+        onChannelReorder: f,
         isDropHovered: v,
         index: _
       } = e,
@@ -91,7 +91,7 @@ let k = "WELCOME_CHANNEL",
           } = await n.e("73196").then(n.bind(n, 514698));
           return t => (0, r.jsx)(e, L(A({}, t), {
             onConfirm: () => {
-              f(), t.onClose()
+              h(), t.onClose()
             },
             channelId: o.channel_id
           }))
@@ -106,16 +106,16 @@ let k = "WELCOME_CHANNEL",
           index: _
         },
         end: (e, t) => {
-          null == e || t.didDrop() || h(e.channel, null, true)
+          null == e || t.didDrop() || f(e.channel, null, true)
         }
       }),
       [, U] = (0, d.L)({
         accept: k,
         hover: e => {
-          h(e.channel, _, false)
+          f(e.channel, _, false)
         },
         drop: e => {
-          h(e.channel, _, true)
+          f(e.channel, _, true)
         }
       });
     return i.useLayoutEffect(() => (G(U(O)), () => {
@@ -146,7 +146,7 @@ let k = "WELCOME_CHANNEL",
           return t => (0, r.jsx)(e, L(A({}, t), {
             guildId: s,
             welcomeChannel: o,
-            onChannelReorder: h,
+            onChannelReorder: f,
             onShowDeleteModal: M,
             index: _
           }))
@@ -184,7 +184,7 @@ let k = "WELCOME_CHANNEL",
     } = e, {
       welcomeSettings: l,
       originalWelcomeSettings: a
-    } = (0, u.e7)([C.Z], () => C.Z.getSettingsProps()), s = (0, u.e7)([h.Z], () => h.Z.useReducedMotion), [c, d] = i.useState(null), [g, p] = i.useState(false), [b, x] = i.useState(false), {
+    } = (0, u.e7)([C.Z], () => C.Z.getSettingsProps()), s = (0, u.e7)([f.Z], () => f.Z.useReducedMotion), [c, d] = i.useState(null), [g, p] = i.useState(false), [b, x] = i.useState(false), {
       description: j,
       channels: N,
       enabled: S
@@ -204,7 +204,7 @@ let k = "WELCOME_CHANNEL",
         channels: i
       })), n ? (R(i), d(null)) : d(t)
     }, U = i.useRef(false);
-    (0, f.ZP)(() => () => {
+    (0, h.ZP)(() => () => {
       U.current = true
     }), i.useEffect(() => () => {
       if (U.current && g) {

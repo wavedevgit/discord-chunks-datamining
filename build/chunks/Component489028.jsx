@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 489028, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => R
@@ -59,7 +59,7 @@ function w(e) {
     error: g
   } = (0, d.Z)(), {
     fetchSubscriptionsSettings: p
-  } = (0, j.JH)(), f = (0, v.mY)(), h = i.useMemo(() => n.map(e => ({
+  } = (0, j.JH)(), h = (0, v.mY)(), f = i.useMemo(() => n.map(e => ({
     label: e.name,
     value: e.id
   })), [n]), b = async () => {
@@ -74,17 +74,17 @@ function w(e) {
       className: T.selectTeamContainer,
       children: [(0, r.jsx)(s.q4e, {
         className: T.teamSelect,
-        options: h,
+        options: f,
         placeholder: S.intl.string(S.t.QXf93N),
         value: o,
-        isDisabled: 0 === h.length || f || !l,
+        isDisabled: 0 === f.length || h || !l,
         onChange: e => c(e),
         "aria-label": S.intl.string(S.t.QXf93N)
       }), (0, r.jsx)(a.zx, {
         onClick: b,
         className: T.enableTicketingButton,
         submitting: m,
-        disabled: null == o || f || !l,
+        disabled: null == o || h || !l,
         children: S.intl.string(S.t["9HU3ZW"])
       })]
     }), null != g && (0, r.jsx)(s.Text, {
@@ -97,7 +97,7 @@ function w(e) {
 let R = e => {
   let {
     guild: t
-  } = e, n = (0, l.e7)([h.default], () => h.default.getCurrentUser()), a = (0, f.eM)(t, n), d = (0, c.Ob)(t), j = (0, l.e7)([b.Z], () => b.Z.isFocused()), {
+  } = e, n = (0, l.e7)([f.default], () => f.default.getCurrentUser()), a = (0, h.eM)(t, n), d = (0, c.Ob)(t), j = (0, l.e7)([b.Z], () => b.Z.isFocused()), {
     teams: v,
     loading: _
   } = (0, p.Z)({

@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 388661, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -32,7 +32,7 @@ let x = function(e) {
     className: t,
     children: [(0, r.jsx)(o.vwX, {
       className: b.sectionTitle,
-      children: h.intl.string(f.default["tN+8pK"])
+      children: f.intl.string(h.default["tN+8pK"])
     }), (0, r.jsxs)("div", {
       className: b.tagContainer,
       children: [(0, r.jsx)("div", {
@@ -63,14 +63,14 @@ let x = function(e) {
         children: (0, r.jsx)(o.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
-          children: h.intl.string(f.default.CrHXHh)
+          children: f.intl.string(h.default.CrHXHh)
         })
       })]
     }), y && (0, r.jsx)(d.Z, {
       className: b.tagChangeInfoBox,
       children: (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",
-        children: h.intl.format(f.default["4ZKDXl"], {
+        children: f.intl.format(h.default["4ZKDXl"], {
           articleUrl: u.Z.getArticleURL(p.BhN.SERVER_TAGS)
         })
       })

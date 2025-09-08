@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 500230, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -85,10 +85,10 @@ function _(e) {
     showColorPopout: d,
     setShowColorPopout: m,
     palettePopoutTargetRef: g,
-    handleChange: f
+    handleChange: h
   } = e, v = (0, o.jm)({
     isSelected: l,
-    label: h.intl.formatToPlainString(h.t.hr4D2d, {
+    label: f.intl.formatToPlainString(f.t.hr4D2d, {
       primaryColor: n,
       secondaryColor: i
     })
@@ -101,12 +101,12 @@ function _(e) {
       secondary: i
     },
     onPrimaryColorChange: e => {
-      f({
+      h({
         primary: (0, s.Rf)(e)
       })
     },
     onSecondaryColorChange: e => {
-      f({
+      h({
         secondary: (0, s.Rf)(e)
       })
     },
@@ -150,10 +150,10 @@ let O = function(e) {
     children: [(0, r.jsx)(c.vwX, {
       id: O,
       className: b.sectionTitle,
-      children: h.intl.string(f.default.zSbMdX)
+      children: f.intl.string(h.default.zSbMdX)
     }), (0, r.jsx)(c.nn4, {
       id: y,
-      children: h.intl.string(h.t.ovbW0d)
+      children: f.intl.string(f.t.ovbW0d)
     }), (0, r.jsxs)("div", j(x({}, N), {
       "aria-describedby": y,
       className: b.pickerGrid,

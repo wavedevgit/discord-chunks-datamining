@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 277369, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -18,21 +18,21 @@ function m(e) {
   let {
     guildId: t,
     application: m
-  } = e, g = (0, i.e7)([o.Z], () => o.Z.getGuild(t)), p = (0, i.e7)([c.default], () => c.default.getCurrentUser()), f = (0, d.mY)();
+  } = e, g = (0, i.e7)([o.Z], () => o.Z.getGuild(t)), p = (0, i.e7)([c.default], () => c.default.getCurrentUser()), h = (0, d.mY)();
   if (null == g || !(0, s.eM)(g, p)) return null;
-  let h = m.team;
+  let f = m.team;
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(a.R94, {
       type: a.R94.Types.DESCRIPTION,
-      disabled: f,
-      children: null != h ? u.intl.format(u.t.erxwWF, {
-        teamName: h.name
+      disabled: h,
+      children: null != f ? u.intl.format(u.t.erxwWF, {
+        teamName: f.name
       }) : u.intl.string(u.t.FGzLkJ)
     }), (0, r.jsx)(a.LZC, {
       size: 16
     }), (0, r.jsx)(l.zx, {
       look: l.zx.Looks.FILLED,
-      color: null != h ? l.zx.Colors.PRIMARY : l.zx.Colors.BRAND,
+      color: null != f ? l.zx.Colors.PRIMARY : l.zx.Colors.BRAND,
       onClick: () => {
         (0, a.ZDy)(async () => {
           let {
@@ -72,8 +72,8 @@ function m(e) {
           }
         })
       },
-      disabled: f,
-      children: null != h ? u.intl.string(u.t["/Fjq5O"]) : u.intl.string(u.t["6ih+b2"])
+      disabled: h,
+      children: null != f ? u.intl.string(u.t["/Fjq5O"]) : u.intl.string(u.t["6ih+b2"])
     })]
   })
 }

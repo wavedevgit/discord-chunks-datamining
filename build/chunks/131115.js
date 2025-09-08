@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 72891 **/
 /** chunk id: 131115, original params: e,t,n (module,exports,require) **/
 module.exports = {
   guildBanner: "guildBanner__6e6ad",

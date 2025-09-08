@@ -1,4 +1,4 @@
-/** Chunk was on 99982 **/
+/** Chunk was on 67455 **/
 /** chunk id: 606876, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -73,8 +73,7 @@ function u() {
       }), (0, Chunk951288.jsx)(Chunk927160.Z, {
         autoFocus: true,
         value: module,
-        onChange: exports,
-        className: Chunk421405.vanityUrlInput
+        onChange: exports
       })]
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-xs/normal",

@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 383124, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -22,25 +22,25 @@ function g(e) {
     disabled: g
   } = e, {
     isFetching: p,
-    coverImageUrl: f
+    coverImageUrl: h
   } = (0, d.$)(t, {
     coverImageHeight: 336,
     coverImageWidth: 252
-  }), h = (0, c.e7)([u.Z], () => {
+  }), f = (0, c.e7)([u.Z], () => {
     var e, n;
     return null != (n = null == (e = u.Z.getDetectableGame(t)) ? true : e.name) ? n : ""
   }), b = i.useCallback(() => {
     null == l || l(t)
-  }, [t, l]), x = i.useMemo(() => p ? null : null == f ? (0, r.jsx)("div", {
+  }, [t, l]), x = i.useMemo(() => p ? null : null == h ? (0, r.jsx)("div", {
     className: m.gameUnknownImage,
     children: (0, r.jsx)(o.IMN, {
       size: "lg"
     })
   }) : (0, r.jsx)("img", {
     className: m.gameImage,
-    alt: h,
-    src: f
-  }), [f, p, h]);
+    alt: f,
+    src: h
+  }), [h, p, f]);
   return (0, r.jsxs)("div", {
     className: a()(m.selectedGame, {
       [m.dimmed]: !n,
@@ -65,7 +65,7 @@ function g(e) {
       className: m.gameName,
       variant: "text-xs/medium",
       color: "header-primary",
-      children: h
+      children: f
     })]
   })
 }

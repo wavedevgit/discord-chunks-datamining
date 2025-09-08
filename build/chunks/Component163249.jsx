@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 163249, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk203552 = require("./203552.js");
 
-function f(e) {
+function h(e) {
   let {
     color: t,
     children: n
@@ -34,7 +34,7 @@ function f(e) {
   })
 }
 
-function h(e) {
+function f(e) {
   let {
     guild: t,
     display: n
@@ -47,7 +47,7 @@ function h(e) {
       className: p.roles,
       children: t.roles.map((e, t) => (0, r.jsx)("div", {
         className: p.rolesRow,
-        children: e.map(e => (0, r.jsx)(f, {
+        children: e.map(e => (0, r.jsx)(h, {
           color: e.color,
           children: e.name
         }, e.name))
@@ -163,7 +163,7 @@ function b() {
   }, [exports]), (0, Chunk951288.jsx)("div", {
     className: Chunk203552.bannerContainer,
     "aria-hidden": true,
-    children: module.map((e, n) => (0, r.jsx)(h, {
+    children: module.map((e, n) => (0, r.jsx)(f, {
       guild: e,
       display: n === t
     }, n))
@@ -177,7 +177,7 @@ function x(e) {
     setEditRoleId: l
   } = e, [a, d] = i.useState(false), m = async () => {
     d(true), await o.Z.createRole(t.id), d(false)
-  }, f = i.useCallback(() => {
+  }, h = i.useCallback(() => {
     l(n.id)
   }, [l, n.id]);
   return (0, r.jsx)(c.NM, {
@@ -209,7 +209,7 @@ function x(e) {
         className: p.divider
       }), (0, r.jsx)(u.Z, {
         role: n,
-        onClick: f
+        onClick: h
       })]
     })
   })

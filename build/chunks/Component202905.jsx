@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 202905, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   r: () => _
@@ -79,11 +79,11 @@ function _(e) {
       color: "text-secondary",
       className: j.applicationBody,
       children: x.intl.string(x.t.Z7TCtb)
-    }), (0, r.jsx)(h.c, {
+    }), (0, r.jsx)(f.c, {
       guildId: n.id
     }), (0, r.jsx)("div", {
       className: j.form,
-      children: null != P ? (0, r.jsx)(f.y, {
+      children: null != P ? (0, r.jsx)(h.y, {
         guild: n,
         formFields: P
       }) : (0, r.jsx)(c.$jN, {})

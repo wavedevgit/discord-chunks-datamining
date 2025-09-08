@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 730910, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -75,7 +75,7 @@ function D() {
 function A(e) {
   let {
     guild: t
-  } = e, f = t.id, D = (0, a.e7)([O.Z], () => O.Z.getCurrentPage()), A = (0, C.Z)(f), {
+  } = e, h = t.id, D = (0, a.e7)([O.Z], () => O.Z.getCurrentPage()), A = (0, C.Z)(h), {
     hasChanges: L,
     hasConfiguredAnythingForCurrentStep: k,
     hasErrors: M
@@ -123,7 +123,7 @@ function A(e) {
     q = async () => {
       let e = _.Z.advancedMode;
       if (L) try {
-        if (D === y.PG.DEFAULT_CHANNELS) await (0, h.DO)(t).then(() => e ? (0, v.rS)(t, {
+        if (D === y.PG.DEFAULT_CHANNELS) await (0, f.DO)(t).then(() => e ? (0, v.rS)(t, {
           ignoreDefaultPrompt: true
         }) : Promise.resolve());
         else if (D === y.PG.CUSTOMIZATION_QUESTIONS) await (0, v.rS)(t, {
@@ -138,17 +138,17 @@ function A(e) {
       }
       returntrue
     }, X = async () => {
-      g.default.track(T.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, Z(R({}, (0, m.hH)(f)), {
+      g.default.track(T.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, Z(R({}, (0, m.hH)(h)), {
         step: y.PG[D],
         back: false,
         skip: !L
-      })), (0, b.Nb)((0, y.lg)(D)), await q() && (0, b.IG)(f, D)
+      })), (0, b.Nb)((0, y.lg)(D)), await q() && (0, b.IG)(h, D)
     }, Q = async () => {
-      g.default.track(T.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, Z(R({}, (0, m.hH)(f)), {
+      g.default.track(T.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, Z(R({}, (0, m.hH)(h)), {
         step: y.PG[D],
         back: true,
         skip: false
-      })), await q() && (0, b.Wy)(f, D)
+      })), await q() && (0, b.Wy)(h, D)
     }, J = null;
   G && (D === y.PG.SAFETY_CHECK ? J = (0, r.jsx)(N.j7, {}) : D === y.PG.DEFAULT_CHANNELS ? J = (0, r.jsx)(N.Io, {}) : D === y.PG.CUSTOMIZATION_QUESTIONS ? J = (0, r.jsx)(N.cZ, {}) : D === y.PG.HOME_SETTINGS && (J = (0, r.jsx)(N.g6, {})));
   let $ = (0, r.jsx)("div", {

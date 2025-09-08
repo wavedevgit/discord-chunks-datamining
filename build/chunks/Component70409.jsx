@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 70409, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -20,7 +20,7 @@ function u(e) {
     isOutOfSlots: u
   } = e, m = t.premiumTier, g = (0, a.FZ)(m), p = o._k[m] - 2;
   if (null == g || m === s.Eu4.TIER_3 || n < p) return null;
-  let f = u ? {
+  let h = u ? {
     color: i.Tt.GREEN,
     look: i.iL.FILLED,
     text: c.intl.string(c.t.cYzxGh)
@@ -33,7 +33,7 @@ function u(e) {
     }),
     headerColor: "header-primary",
     textColor: "text-default",
-    buttonProps: f,
+    buttonProps: h,
     guild: t,
     analyticsLocation: {
       page: s.ZY5.GUILD_SETTINGS,

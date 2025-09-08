@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 574085, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -52,7 +52,7 @@ function p() {
     guildId: t
   } = (0, Chunk727843.N)(), [n, p] = Chunk290348.R7(module);
 
-  function f(e, t) {
+  function h(e, t) {
     let {
       name: r,
       description: i,
@@ -68,7 +68,7 @@ function p() {
     };
     null != t ? s[t] = o : s.push(o), p(s)
   }
-  let h = (0, Chunk723047.mY)();
+  let f = (0, Chunk723047.mY)();
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)(Chunk861345.p, {
       benefits: require,
@@ -76,7 +76,7 @@ function p() {
         (0, i.h7j)(i => (0, r.jsx)(o.DI, g(m({}, i), {
           guildId: t,
           initialData: n[e],
-          onSave: t => f(t, e),
+          onSave: t => h(t, e),
           onDelete: () => (function(e) {
             let t = [...n];
             t.splice(e, 1), p(t)
@@ -95,10 +95,10 @@ function p() {
       onClick: function() {
         (0, Chunk481060.h7j)(e => (0, r.jsx)(o.DI, g(m({}, e), {
           guildId: t,
-          onSave: e => f(e)
+          onSave: e => h(e)
         })))
       },
-      disabled: h,
+      disabled: f,
       children: Chunk388032.intl.string(Chunk388032.t["6dwqo6"])
     })]
   })

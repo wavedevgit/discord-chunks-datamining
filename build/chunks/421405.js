@@ -1,11 +1,10 @@
-/** Chunk was on 99982 **/
+/** Chunk was on 67455 **/
 /** chunk id: 421405, original params: e,t,n (module,exports,require) **/
 module.exports = {
   container: "container__89401",
   demo: "demo__89401",
   baseUrl: "baseUrl__89401",
   vanityCode: "vanityCode__89401",
-  vanityUrlInput: "vanityUrlInput__89401",
   previewCard: "previewCard__89401",
   avatar: "avatar__89401",
   previewCardMessage: "previewCardMessage__89401",

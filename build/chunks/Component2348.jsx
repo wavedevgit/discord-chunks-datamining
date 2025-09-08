@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 2348, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -84,7 +84,7 @@ function C(e) {
         }))
       })
     },
-    onClick: e => (e.stopPropagation(), (0, m.s)(t.id, i.id) ? (0, h.pt)(i.id) : (0, c.ZDy)(async () => {
+    onClick: e => (e.stopPropagation(), (0, m.s)(t.id, i.id) ? (0, f.pt)(i.id) : (0, c.ZDy)(async () => {
       let {
         default: e
       } = await n.e("35641").then(n.bind(n, 89216));
@@ -128,11 +128,11 @@ let N = Chunk647438.memo(function() {
       channel: t,
       category: i,
       guild: l,
-      isFirstChannel: f,
+      isFirstChannel: h,
       isLastChannel: C,
       tooltipDirection: I = "right"
     } = e, S = (0, b.Mf)(t.id, i.id), T = (0, b.t4)(t.id, i.id), P = (0, b.EH)(t.id, i.id), w = (0, b.lL)(l.id, i.id), R = null != (0, x.Z)(l).find(e => e.id === t.id), Z = (0, g.mn)(t.id), D = e => {
-      if (!T) return e.stopPropagation(), (0, m.s)(l.id, t.id) ? (0, h.pt)(t.id) : (0, c.ZDy)(async () => {
+      if (!T) return e.stopPropagation(), (0, m.s)(l.id, t.id) ? (0, f.pt)(t.id) : (0, c.ZDy)(async () => {
         let {
           default: e
         } = await n.e("35641").then(n.bind(n, 89216));
@@ -167,7 +167,7 @@ let N = Chunk647438.memo(function() {
         position: I,
         children: e => (0, r.jsxs)(c.P3F, y(O({
           className: a()(_.channelRow, {
-            [_.firstChannel]: f,
+            [_.firstChannel]: h,
             [_.lastChannel]: C,
             [_.disabled]: T
           })
@@ -247,7 +247,7 @@ function S(e) {
       isLastChannel: t[l.channel.id].length - 1 === i,
       tooltipDirection: a ? "right" : "top"
     }, s.channel.id)
-  }, [t, n, a]), c = (0, f.tn)(n.id, t, 64);
+  }, [t, n, a]), c = (0, h.tn)(n.id, t, 64);
   return (0, r.jsx)("div", {
     className: l,
     children: c.map((e, t) => {

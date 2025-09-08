@@ -1,7 +1,7 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 210591, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 }), require("./388685.js"), require("./361932.js"), require("./187205.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -38,10 +38,10 @@ function p(e) {
   })
 }
 
-function f(e) {
+function h(e) {
   let {
     children: t
-  } = e, [n, l] = i.useState(false), a = t.flatMap(e => e.items.map(e => e.completed)), o = a.filter(e => e).length / a.length, f = 1 === o, h = (0, c.q_F)({
+  } = e, [n, l] = i.useState(false), a = t.flatMap(e => e.items.map(e => e.completed)), o = a.filter(e => e).length / a.length, h = 1 === o, f = (0, c.q_F)({
     width: "".concat(100 * o, "%")
   }), b = [m.intl.format(m.t.wtQtXl, {
     promoPageGuideUrl: u.iv.PROMO_PAGE_GUIDE
@@ -52,7 +52,7 @@ function f(e) {
   }), m.intl.format(m.t.zkXN6O, {
     tierStructureGuideUrl: u.iv.TIER_STRUCTURE_GUIDE
   })], x = n ? null : (0, r.jsxs)(r.Fragment, {
-    children: [!f && t.map((e, t) => {
+    children: [!h && t.map((e, t) => {
       let {
         title: n,
         items: l
@@ -96,11 +96,11 @@ function f(e) {
           direction: n ? d.Z.Directions.DOWN : d.Z.Directions.UP,
           className: g.headerCaret
         })]
-      }), !f && (0, r.jsx)("div", {
+      }), !h && (0, r.jsx)("div", {
         className: g.progressBarOuter,
         children: (0, r.jsx)(s.animated.div, {
           className: g.progressBarInner,
-          style: h
+          style: f
         })
       }), x]
     })

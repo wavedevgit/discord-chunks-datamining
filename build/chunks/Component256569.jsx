@@ -1,7 +1,7 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 256569, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 }), require("./388685.js"), require("./358797.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -33,7 +33,7 @@ function p(e) {
     className: g.resizeHandle
   })
 }
-let f = Chunk647438.forwardRef(function(e, t) {
+let h = Chunk647438.forwardRef(function(e, t) {
   let {
     children: n,
     onFocus: l,
@@ -67,7 +67,7 @@ let f = Chunk647438.forwardRef(function(e, t) {
   })
 });
 
-function h(e) {
+function f(e) {
   var t;
   let {
     initialValue: n,
@@ -75,7 +75,7 @@ function h(e) {
     onChangeNewTagValue: c,
     tagErrors: u = {},
     placeholder: p,
-    className: h,
+    className: f,
     maxTags: b
   } = e, x = i.useRef(null), j = i.useRef(null), v = i.useRef(null), _ = (0, m.V)(n), {
     handlePasteEvent: O,
@@ -128,11 +128,11 @@ function h(e) {
       } else T(e, true), M(true)
     }, [S, T, D, Z]);
   return (0, r.jsxs)("div", {
-    className: a()(g.mainContainer, h),
+    className: a()(g.mainContainer, f),
     ref: j,
     tabIndex: 0,
     onKeyUp: N,
-    children: [(0, r.jsxs)(f, {
+    children: [(0, r.jsxs)(h, {
       ref: v,
       onClick: G,
       children: [Z.map((e, t) => (0, r.jsx)(d.Z, {

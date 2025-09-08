@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 365307, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g,
@@ -27,7 +27,7 @@ function g(e) {
     webhooks: m,
     editedWebhook: g,
     isFetching: p,
-    errors: f
+    errors: h
   } = (0, i.cj)([c.default], () => ({
     editedIntegration: c.default.editedIntegration,
     editedWebhook: c.default.editedWebhook,
@@ -48,7 +48,7 @@ function g(e) {
     editedWebhook: g,
     isFetchingWebhooks: p,
     hasChanges: c.default.hasChanges,
-    errors: f,
+    errors: h,
     refToScroller: t
   })
 }

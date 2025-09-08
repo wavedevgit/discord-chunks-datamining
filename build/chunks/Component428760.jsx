@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 428760, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -21,8 +21,8 @@ function u(e) {
     subtitleText: m,
     initialValue: g
   } = e, p = i.useMemo(() => null != g ? g : [], [g]), {
-    value: f,
-    onChange: h,
+    value: h,
+    onChange: f,
     errorMessage: b
   } = (0, o.Z)(t, g, n);
   return (0, r.jsxs)(r.Fragment, {
@@ -30,8 +30,8 @@ function u(e) {
       className: a()(d.keywordsContainer, l),
       children: [(0, r.jsx)(s.lcI, {
         className: a()(d.keywordsTextArea, u),
-        value: f,
-        onChange: h,
+        value: h,
+        onChange: f,
         placeholder: c.intl.string(c.t.UyaxJy)
       }), (0, r.jsx)(s.Text, {
         className: d.keywordsCounter,

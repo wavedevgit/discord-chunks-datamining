@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 271267, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Q: () => p,
@@ -35,7 +35,7 @@ function g(e) {
 }
 let p = "role_subscriptions_eligibility_modal";
 
-function f(e) {
+function h(e) {
   let {
     guild: t,
     eligibility: i,
@@ -79,7 +79,7 @@ function f(e) {
   })
 }
 
-function h(e) {
+function f(e) {
   let {
     guild: t,
     checkboxText: n
@@ -88,11 +88,11 @@ function h(e) {
     error: u,
     loading: m,
     submitAcceptTermsRequest: g
-  } = (0, s.Z)(t.id), [p, f] = i.useState(false);
+  } = (0, s.Z)(t.id), [p, h] = i.useState(false);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.$q, {
       onChange: function() {
-        f(e => !e)
+        h(e => !e)
       },
       size: 20,
       type: l.M0.INVERTED,
@@ -133,10 +133,10 @@ function b(e) {
     acceptTermsCheckboxText: d,
     wasRejectedInV1: u
   } = n;
-  return o ? u ? (0, r.jsx)(c.Z, g({}, n)) : (0, r.jsx)(h, {
+  return o ? u ? (0, r.jsx)(c.Z, g({}, n)) : (0, r.jsx)(f, {
     guild: t,
     checkboxText: d
-  }) : (0, r.jsx)(f, {
+  }) : (0, r.jsx)(h, {
     guild: t,
     eligibility: s,
     eligibilityLoading: i,

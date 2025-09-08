@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 623691, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => I
@@ -88,7 +88,7 @@ function S(e) {
       children: N.intl.format(N.t.Vg2oTE, {
         breakingChangeDate: n
       })
-    }) : h.Z.can(C.Pl.ADMINISTRATOR, t) ? (0, r.jsx)(d.Text, {
+    }) : f.Z.can(C.Pl.ADMINISTRATOR, t) ? (0, r.jsx)(d.Text, {
       variant: "text-sm/normal",
       children: N.intl.format(N.t.HYM8OD, {
         onClickMigrate: () => {
@@ -112,8 +112,8 @@ function S(e) {
         breakingChangeDate: n
       })
     });
-  return (0, r.jsx)(f.Z, {
-    look: f.z.WARNING,
+  return (0, r.jsx)(h.Z, {
+    look: h.z.WARNING,
     className: E.migrationInfoBox,
     children: l
   })

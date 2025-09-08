@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 733683, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N,
@@ -118,14 +118,14 @@ class C extends(r = Chunk647438.Component) {
     let n = Math.min(t, e.numRequired);
     return (0, i.jsx)("div", {
       children: this.getTierDisabled(e) ? (0, i.jsx)("div", {
-        children: h.intl.formatToPlainString(f.default["9CtPjo"], {
+        children: f.intl.formatToPlainString(h.default["9CtPjo"], {
           perk: e.name
         })
       }) : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
           children: e.name
         }), (0, i.jsx)("div", {
-          children: h.intl.format(h.t.AkLa6u, {
+          children: f.intl.format(f.t.AkLa6u, {
             subscribers: n,
             numRequired: e.numRequired
           })
@@ -145,9 +145,9 @@ class C extends(r = Chunk647438.Component) {
       g = e.key === s[0].key,
       p = this.getTierDisabled(e);
     l = g ? b.tierFirst : p ? b.tierInProgress : u ? b.tierCurrent : d ? b.tierAccomplished : b.tierInProgress;
-    let f = e.y - (g ? 0 : _ / 2),
-      h = this.state.tierMarkerActive >= t,
-      j = !g && u && h;
+    let h = e.y - (g ? 0 : _ / 2),
+      f = this.state.tierMarkerActive >= t,
+      j = !g && u && f;
     return (0, i.jsx)(m.ua7, {
       text: this.renderTierMarkerTooltip(e),
       position: "right",
@@ -176,7 +176,7 @@ class C extends(r = Chunk647438.Component) {
           }({}, e), r = r = {
             className: l,
             style: {
-              top: f,
+              top: h,
               transform: t.scale.interpolate(e => "scale(".concat(e, ")"))
             },
             children: j && (0, i.jsx)(m.dz2, {

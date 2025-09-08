@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 874993, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -33,7 +33,7 @@ function C(e) {
   } = e, {
     editingRule: E,
     setEditingRule: I
-  } = (0, h.V)(), {
+  } = (0, f.V)(), {
     guild: S,
     subsection: T
   } = (0, l.cj)([o.Z], () => o.Z.getProps()), P = null != (n = null != (t = null == S ? true : S.id) ? t : C) ? n : _.lds, w = null != E, [R] = (0, g.RD)(P), {
@@ -117,7 +117,7 @@ function C(e) {
           className: y.textBadge
         })]
       })]
-    }), R ? (0, r.jsx)(f.Z, {}) : Object.entries(U).map(e => {
+    }), R ? (0, r.jsx)(h.Z, {}) : Object.entries(U).map(e => {
       let [t, n] = e;
       if (0 === n.length) return (0, r.jsx)(i.Fragment, {}, t);
       let l = null != D[t] ? (0, r.jsx)(s.hjN, {

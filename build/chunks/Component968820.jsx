@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 968820, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -21,8 +21,8 @@ function m(e) {
     revenueTrend: m,
     summaryMetricLabel: g,
     summaryMetricValue: p,
-    summaryMetricTrend: f,
-    summaryMetricTrendIsPercent: h
+    summaryMetricTrend: h,
+    summaryMetricTrendIsPercent: f
   } = e;
   return (0, r.jsx)(i.hjN, {
     title: d.intl.string(d.t.ofmOzc),
@@ -40,8 +40,8 @@ function m(e) {
           label: g,
           value: p,
           additionalContent: (0, r.jsx)(l.H, {
-            value: f,
-            isPercent: h
+            value: h,
+            isPercent: f
           })
         })]
       }), t]

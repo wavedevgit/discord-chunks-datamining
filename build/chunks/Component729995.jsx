@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 729995, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -71,7 +71,7 @@ function E(e) {
     l ? (await (0, b.$y)(t, false), g.default.track(_.rMx.GUILD_SETTINGS_ONBOARDING_EDIT_PAGE_CLICKED, N(C({}, (0, o.hH)(t)), {
       action_taken: x.W$[x.W$.TOGGLE_DISABLED],
       location: a
-    }))) : (await (0, b.$y)(t, true), e && (0, f.To)(t, true), n ? g.default.track(_.rMx.GUILD_SETTINGS_ONBOARDING_EDIT_PAGE_CLICKED, N(C({}, (0, o.hH)(t)), {
+    }))) : (await (0, b.$y)(t, true), e && (0, h.To)(t, true), n ? g.default.track(_.rMx.GUILD_SETTINGS_ONBOARDING_EDIT_PAGE_CLICKED, N(C({}, (0, o.hH)(t)), {
       action_taken: x.W$[x.W$.TOGGLE_ENABLED],
       location: a
     })) : g.default.track(_.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, N(C({}, (0, o.hH)(t)), {
@@ -85,7 +85,7 @@ function E(e) {
       action_taken: x.W$[x.W$.PREVIEW],
       location: a
     })), (0, p.di)(t)
-  }, h = (0, r.jsxs)(r.Fragment, {
+  }, f = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(v.ku, {
       guildId: t,
       onEdit: () => {
@@ -128,7 +128,7 @@ function E(e) {
       children: [(0, r.jsx)(T, {
         guildId: t,
         handleOnboardingToggle: d
-      }), h]
+      }), f]
     })]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -137,7 +137,7 @@ function E(e) {
         guildId: t,
         handleOnboardingToggle: d,
         handlePreview: m
-      }), h]
+      }), f]
     }), (0, r.jsx)(w, {
       guildId: t
     })]
@@ -245,7 +245,7 @@ function P(e) {
     guildId: t,
     handleOnboardingToggle: n,
     handlePreview: l
-  } = e, s = (0, v.$$)(t), o = (0, i.e7)([h.Z], () => h.Z.getSettings()), c = (0, d.uo)(o);
+  } = e, s = (0, v.$$)(t), o = (0, i.e7)([f.Z], () => f.Z.getSettings()), c = (0, d.uo)(o);
   return (0, r.jsxs)("div", {
     className: y.reviewHeader,
     children: [(0, r.jsxs)("div", {

@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 495892, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -58,7 +58,7 @@ function y(e) {
   let {
     rule: t,
     triggerType: n
-  } = e, l = i.useMemo(() => null == t ? (0, g.V9)(n).map(e => (0, r.jsx)(h.Z, {
+  } = e, l = i.useMemo(() => null == t ? (0, g.V9)(n).map(e => (0, r.jsx)(f.Z, {
     actionType: e,
     triggerType: n
   }, e)) : (0, g.V9)(n).reduce((e, i) => {
@@ -69,7 +69,7 @@ function y(e) {
       } = e;
       return i === t
     });
-    return null == a || e.push((0, r.jsx)(h.Z, {
+    return null == a || e.push((0, r.jsx)(f.Z, {
       actionType: i,
       action: a,
       triggerType: null != (l = null == t ? true : t.triggerType) ? l : n
@@ -166,11 +166,11 @@ function S(e) {
     rule: t,
     isDefaultRule: n,
     onContextMenu: o
-  } = e, c = (0, f.w)(t.triggerType, t), {
+  } = e, c = (0, h.w)(t.triggerType, t), {
     isLoading: d,
     saveRule: g
   } = (0, p.w)(), {
-    updateRule: h
+    updateRule: f
   } = (0, m.pH)(t.guildId), [b, x] = i.useState(t.enabled), E = (0, l.throttle)(async (e, n) => {
     if (n.preventDefault(), n.stopPropagation(), !d) {
       let e = O(_({}, t), {
@@ -178,7 +178,7 @@ function S(e) {
       });
       x(!b);
       let n = await g(e, []);
-      null != n && (h(n), x(n.enabled))
+      null != n && (f(n), x(n.enabled))
     }
   }, 300), S = e => {
     C(e), o(e)
@@ -247,7 +247,7 @@ function T(e) {
   let {
     triggerType: t,
     onSetupRule: n
-  } = e, l = i.useMemo(() => (0, f.w)(t), [t]);
+  } = e, l = i.useMemo(() => (0, h.w)(t), [t]);
   if (null == l) return null;
   let {
     headerText: a,

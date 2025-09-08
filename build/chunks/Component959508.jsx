@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 959508, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -40,7 +40,7 @@ function C(e) {
     onPromptDragComplete: T,
     onPromptDragStart: P,
     onPromptDragReset: w
-  } = e, R = (0, s.e7)([h.Z], () => h.Z.editedDefaultChannelIds), {
+  } = e, R = (0, s.e7)([f.Z], () => f.Z.editedDefaultChannelIds), {
     drag: Z,
     dragSourcePosition: D,
     drop: A,
@@ -55,7 +55,7 @@ function C(e) {
   }), k = (0, s.cj)([x.Z], () => {
     var e;
     return null != (e = x.Z.errors[j]) ? e : y
-  }), [M, G] = i.useState(false), [U, B] = i.useState(false), F = null != (t = k.options) ? t : k.optionErrors.filter(f.lm)[0], H = k.config, z = l.options.length >= v.fY, W = (0, g.kl)(n.id, Array.from(R), [l]).length - R.size, V = i.useRef(null), K = i.useRef(j);
+  }), [M, G] = i.useState(false), [U, B] = i.useState(false), F = null != (t = k.options) ? t : k.optionErrors.filter(h.lm)[0], H = k.config, z = l.options.length >= v.fY, W = (0, g.kl)(n.id, Array.from(R), [l]).length - R.size, V = i.useRef(null), K = i.useRef(j);
   return (i.useEffect(() => {
     K.current = j
   }), i.useLayoutEffect(() => {

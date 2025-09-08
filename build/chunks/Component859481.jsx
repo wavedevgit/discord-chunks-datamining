@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 859481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   z: () => N
@@ -26,17 +26,10 @@ var Chunk951288 = require("./951288.js"),
 
 function y(e) {
   let {
-    errorDetails: t,
-    originalVanityURLCode: n
+    originalVanityURLCode: t
   } = e;
-  if (null != t) return (0, r.jsx)(s.Text, {
-    variant: "text-md/normal",
-    color: "text-danger",
-    className: O.vanityInfo,
-    children: (0, f.i)(null == t ? true : t.code)
-  });
-  if (null != n && n.length > 0) {
-    let e = (0, d.Z)(n);
+  if (null != t && t.length > 0) {
+    let e = (0, d.Z)(t);
     return (0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
@@ -56,13 +49,15 @@ function C(e) {
     vanityURLCode: n,
     vanityURLUses: l,
     originalVanityURLCode: o,
-    hasError: c
+    errorDetails: c
   } = e, d = (null == t ? true : t.features.has(j.oNc.VANITY_URL)) === true, u = i.useCallback(() => {
     (0, p.Gy)("")
   }, []), m = i.useCallback(e => {
     (0, p.Gy)(e)
   }, []);
-  return null == n ? (0, r.jsx)(s.$jN, {}) : (0, r.jsxs)(s.Zbd, {
+  if (null == n) return (0, r.jsx)(s.$jN, {});
+  let g = null != c ? (0, h.i)(c.code) : null;
+  return (0, r.jsxs)(s.Zbd, {
     editable: true,
     className: O.editVanityUrlCard,
     children: [(0, r.jsxs)("div", {
@@ -81,7 +76,7 @@ function C(e) {
     }), (0, r.jsx)(x.Z, {
       value: n,
       onChange: m,
-      error: c,
+      error: g,
       disabled: !d
     }), null != o && o.length > 0 ? (0, r.jsx)(a.zx, {
       className: O.removeVanityUrlButton,
@@ -114,17 +109,16 @@ function N(e) {
     })
   }, [p, t, x]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, f.p)(t) ? (0, r.jsx)(C, {
+    children: [(0, h.p)(t) ? (0, r.jsx)(C, {
       guild: t,
       vanityURLCode: n,
       vanityURLUses: a,
       originalVanityURLCode: s,
-      hasError: null != d
-    }) : (0, r.jsx)(h.P, {
+      errorDetails: d
+    }) : (0, r.jsx)(f.P, {
       onClick: _,
       className: O.upsellButton
     }), (0, r.jsx)(y, {
-      errorDetails: d,
       originalVanityURLCode: s
     })]
   })

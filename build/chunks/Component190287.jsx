@@ -1,7 +1,7 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 190287, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,8 +21,8 @@ let p = e => {
       emoji_name: d,
       onSetReason: g,
       onSelectEmoji: p,
-      onClearPressed: f,
-      reasonMinLength: h,
+      onClearPressed: h,
+      reasonMinLength: f,
       reasonMaxLength: b,
       placeholder: x,
       position: j
@@ -67,7 +67,7 @@ let p = e => {
     return (0, r.jsx)(a.oil, {
       placeholder: x,
       value: n,
-      minLength: h,
+      minLength: f,
       maxLength: b,
       defaultDirty: (null == n ? true : n.length) > 0,
       leading: {
@@ -80,10 +80,10 @@ let p = e => {
       clearable: {
         show: (null != (t = null == n ? true : n.length) ? t : 0) > 0 || null != d
       },
-      onClear: f
+      onClear: h
     }, "text-input-".concat(j, "-").concat(y))
   },
-  f = e => {
+  h = e => {
     let {
       reasonMinLength: t,
       reasonMaxLength: n,

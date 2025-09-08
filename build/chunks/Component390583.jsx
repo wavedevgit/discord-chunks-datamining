@@ -1,7 +1,7 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 390583, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 }), require("./388685.js"), require("./953529.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -47,11 +47,11 @@ function p(e, t) {
   }), e
 }
 
-function f() {
+function h() {
   let {
     editStateId: e,
     guildId: t
-  } = (0, Chunk727843.N)(), [n, f] = Chunk290348.UE(module), h = Chunk647438.useMemo(() => new Set(require.map(e => e.ref_id)), [require]);
+  } = (0, Chunk727843.N)(), [n, h] = Chunk290348.UE(module), f = Chunk647438.useMemo(() => new Set(require.map(e => e.ref_id)), [require]);
 
   function b(e, t) {
     let {
@@ -67,7 +67,7 @@ function f() {
       ref_type: u.Qs.CHANNEL,
       ref_id: r
     };
-    null != t ? s[t] = o : s.push(o), f(s)
+    null != t ? s[t] = o : s.push(o), h(s)
   }
   let x = (0, Chunk723047.mY)();
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
@@ -76,19 +76,19 @@ function f() {
       onEdit: function(e) {
         (0, l.h7j)(i => (0, r.jsx)(c.x3, p(g({}, i), {
           guildId: t,
-          omitChannelIds: h,
+          omitChannelIds: f,
           initialData: n[e],
           onSave: t => b(t, e),
           onDelete: () => (function(e) {
             let t = [...n];
-            t.splice(e, 1), f(t)
+            t.splice(e, 1), h(t)
           })(e)
         })))
       },
       onMove: function(e, t) {
         let r = [...n],
           [i] = r.splice(e, 1);
-        r.splice(t, 0, i), f(r)
+        r.splice(t, 0, i), h(r)
       },
       guildId: exports
     }), require.length > 0 && (0, Chunk951288.jsx)(Chunk481060.LZC, {
@@ -97,7 +97,7 @@ function f() {
       onClick: function() {
         (0, Chunk481060.h7j)(e => (0, r.jsx)(c.x3, p(g({}, e), {
           guildId: t,
-          omitChannelIds: h,
+          omitChannelIds: f,
           onSave: e => b(e)
         })))
       },

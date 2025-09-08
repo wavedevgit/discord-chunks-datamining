@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 976288, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   d: () => D
@@ -56,8 +56,8 @@ function S(e) {
       description: e
     })
   }, []), {
-    memberCount: f,
-    onlineCount: h
+    memberCount: h,
+    onlineCount: f
   } = (0, a.cj)([g.Z], () => ({
     memberCount: g.Z.getMemberCount(n.id),
     onlineCount: g.Z.getOnlineCount(n.id)
@@ -131,8 +131,8 @@ function S(e) {
     }), (0, r.jsx)(x.Z, {
       className: E.preview,
       guild: n,
-      memberCount: f,
-      presenceCount: h
+      memberCount: h,
+      presenceCount: f
     })]
   })
 }
@@ -169,7 +169,7 @@ function T(e) {
         children: N.intl.string(N.t.CE5Gyc)
       }), (0, r.jsx)("div", {
         className: E.editableSection,
-        children: (0, r.jsx)(h.E, {
+        children: (0, r.jsx)(f.E, {
           guildId: t.id,
           guildMetadata: n
         })
@@ -215,7 +215,7 @@ function P(e) {
       keywords: r
     } = n;
     !(r.length >= y.G7) && (r.includes(e) || (m(null), (0, d.zH)(t, [...r, e])))
-  }, [t, n]), f = i.useMemo(() => (0, v.P5)(n.primaryCategoryId).filter(e => !n.keywords.includes(e)).map(e => {
+  }, [t, n]), h = i.useMemo(() => (0, v.P5)(n.primaryCategoryId).filter(e => !n.keywords.includes(e)).map(e => {
     let t = n.keywords.length >= y.G7;
     return {
       text: e,
@@ -223,7 +223,7 @@ function P(e) {
       disabled: t,
       tooltipText: t ? N.intl.string(N.t.Xx7XeH) : true
     }
-  }), [n.keywords, n.primaryCategoryId, p]), h = null != a ? a : s, b = i.useMemo(() => n.keywords.map(e => ({
+  }), [n.keywords, n.primaryCategoryId, p]), f = null != a ? a : s, b = i.useMemo(() => n.keywords.map(e => ({
     id: e,
     label: e
   })), [n.keywords]);
@@ -242,13 +242,13 @@ function P(e) {
         maxTags: y.G7,
         maxTaxLength: y._0,
         placeholder: n.keywords.length < 1 ? N.intl.string(N.t.EL4Lho) : true
-      }), null != h ? (0, r.jsx)(o.Text, {
+      }), null != f ? (0, r.jsx)(o.Text, {
         color: "text-danger",
         variant: "text-sm/normal",
         className: E.error,
-        children: h
+        children: f
       }) : null]
-    }), f.length > 0 ? (0, r.jsxs)("div", {
+    }), h.length > 0 ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(o.X6q, {
         variant: "text-xs/bold",
         color: "text-muted",
@@ -257,7 +257,7 @@ function P(e) {
       }), (0, r.jsx)("div", {
         className: E.editableSection,
         children: (0, r.jsx)(u.j, {
-          pills: f
+          pills: h
         })
       })]
     }) : null]
@@ -348,12 +348,12 @@ function D(e) {
     errors: l,
     guildMetadata: s,
     guild: o
-  } = (0, a.cj)([f.Z], () => {
+  } = (0, a.cj)([h.Z], () => {
     let {
       errors: e,
       guildMetadata: t,
       guild: n
-    } = f.Z.getProps();
+    } = h.Z.getProps();
     return {
       errors: e,
       guildMetadata: t,

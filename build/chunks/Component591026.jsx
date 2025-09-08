@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 591026, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk290135 = require("./290135.js");
 
-function f(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function f(e) {
   return e
 }
 
-function h(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -84,8 +84,8 @@ function b(e) {
           children: (0, r.jsx)(a.FiK, {
             value: j,
             onChange: e => {
-              v(e), x(h(f({}, b), {
-                triggerMetadata: h(f({}, b.triggerMetadata), {
+              v(e), x(f(h({}, b), {
+                triggerMetadata: f(h({}, b.triggerMetadata), {
                   mentionTotalLimit: e
                 })
               }))
@@ -120,8 +120,8 @@ function b(e) {
             type: l.M0.INVERTED,
             value: null == (n = b.triggerMetadata) ? true : n.mentionRaidProtectionEnabled,
             onChange: (e, t) => {
-              x(h(f({}, b), {
-                triggerMetadata: h(f({}, b.triggerMetadata), {
+              x(f(h({}, b), {
+                triggerMetadata: f(h({}, b.triggerMetadata), {
                   mentionRaidProtectionEnabled: t
                 })
               }))

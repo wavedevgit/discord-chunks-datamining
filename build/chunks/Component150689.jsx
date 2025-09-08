@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 150689, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -17,14 +17,14 @@ function c(e) {
     everyoneRole: c,
     otherRoles: d,
     setSelectedSection: u
-  } = e, [m, g] = i.useState(""), [p, f] = i.useState(o.Cl), h = m.trim(), b = i.useMemo(() => d.filter(e => (0, l.uo)(e, h)), [d, h]), x = i.useCallback(() => (0, r.jsx)(s.Z, {
+  } = e, [m, g] = i.useState(""), [p, h] = i.useState(o.Cl), f = m.trim(), b = i.useMemo(() => d.filter(e => (0, l.uo)(e, f)), [d, f]), x = i.useCallback(() => (0, r.jsx)(s.Z, {
     guild: n,
     everyoneRole: c,
     filteredRoles: b,
     setEditRoleId: t,
     query: m,
     setQuery: g,
-    setHeaderHeight: f
+    setHeaderHeight: h
   }, "header"), [n, c, b, t, m]);
   return (0, r.jsx)(a.Z, {
     setEditRoleId: t,

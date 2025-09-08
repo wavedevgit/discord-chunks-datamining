@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 618748, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => M
@@ -42,7 +42,7 @@ function L(e) {
   let {
     application: t,
     guild: n
-  } = e, l = (0, j.YB)(n.id), a = (0, j.qi)(n.id), s = a.some(e => null != e.name && null != e.subscription_plans[0] && null != e.description && null != e.image_asset), o = (0, i.Wu)([f.Z], () => a.map(e => f.Z.getRole(n.id, e.role_id)), [n.id, a]).some(e => null != e && 0 !== e.color), c = a.some(e => e.role_benefits.benefits.length > 0), d = null != t && n.features.has(w.oNc.ROLE_SUBSCRIPTIONS_ENABLED), u = [{
+  } = e, l = (0, j.YB)(n.id), a = (0, j.qi)(n.id), s = a.some(e => null != e.name && null != e.subscription_plans[0] && null != e.description && null != e.image_asset), o = (0, i.Wu)([h.Z], () => a.map(e => h.Z.getRole(n.id, e.role_id)), [n.id, a]).some(e => null != e && 0 !== e.color), c = a.some(e => e.role_benefits.benefits.length > 0), d = null != t && n.features.has(w.oNc.ROLE_SUBSCRIPTIONS_ENABLED), u = [{
     title: D.intl.string(D.t.p2Rsdn),
     items: [{
       description: D.intl.string(D.t.zbO7fX),
@@ -136,11 +136,11 @@ function G(e) {
       setCurrentTab: j
     } = (0, T.dw)(),
     v = (0, x.f)(),
-    C = (0, i.e7)([h.default], () => h.default.getCurrentUser()),
+    C = (0, i.e7)([f.default], () => f.default.getCurrentUser()),
     I = (0, O.Z)(n.id),
     Z = null != n && (0, p.eM)(n, C),
     M = () => {
-      let e = f.Z.getEveryoneRole(n);
+      let e = h.Z.getEveryoneRole(n);
       o.Z.close();
       let t = {
         [e.id]: e

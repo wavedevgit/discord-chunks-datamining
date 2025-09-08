@@ -1,9 +1,9 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 743475, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  BG: () => f,
+  BG: () => h,
   DO: () => b,
-  pt: () => h
+  pt: () => f
 }), require("./388685.js");
 var Chunk570140 = require("./570140.js"),
   Chunk668781 = require("./668781.js"),
@@ -18,13 +18,13 @@ var Chunk570140 = require("./570140.js"),
   Chunk290511 = require("./290511.js"),
   Chunk388032 = require("./388032.jsx");
 
-function f() {
+function h() {
   Chunk570140.Z.dispatch({
     type: "GUILD_SETTINGS_DEFAULT_CHANNELS_RESET"
   })
 }
 
-function h(e) {
+function f(e) {
   r.Z.dispatch({
     type: "GUILD_SETTINGS_DEFAULT_CHANNELS_TOGGLE",
     channelId: e
@@ -33,10 +33,10 @@ function h(e) {
 async function b(e) {
   let t = Array.from(d.Z.editedDefaultChannelIds).filter(e => null != o.Z.getChannel(e)),
     n = m.Z.advancedMode,
-    [f, h] = (0, s.d9)(e.id, [...t]),
+    [h, f] = (0, s.d9)(e.id, [...t]),
     b = (0, s.kl)(e.id, t, m.Z.editedOnboardingPrompts),
     x = (0, s.kl)(e.id, t, m.Z.editedOnboardingPrompts, s.V7);
-  if (a.Z.getEnabled(e.id) && (!n && (h.length < g.md || f.length < g.X) || n && (b.length < g.md || x.length < g.X))) return void i.Z.show({
+  if (a.Z.getEnabled(e.id) && (!n && (f.length < g.md || h.length < g.X) || n && (b.length < g.md || x.length < g.X))) return void i.Z.show({
     title: p.intl.string(p.t.iLdiqa),
     body: p.intl.string(p.t.JOT74e)
   });

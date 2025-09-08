@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 558324, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -17,8 +17,8 @@ let o = e => {
       onAddTag: m,
       onAddTagError: g,
       maxTaxLength: p,
-      maxTags: f,
-      disabled: h,
+      maxTags: h,
+      disabled: f,
       placeholder: b
     } = e,
     x = function(e, t) {
@@ -39,13 +39,13 @@ let o = e => {
   let [j, v] = i.useState(null != d ? d : ""), _ = i.useCallback(() => {
     let e = j.trim();
     if (0 !== e.length) {
-      if (null != f && o.length >= f) {
+      if (null != h && o.length >= h) {
         null == g || g(s.intl.string(s.t.Xx7XeH));
         return
       }
       m(e), v("")
     }
-  }, [j, f, m, g, o.length]), O = i.useCallback(e => {
+  }, [j, h, m, g, o.length]), O = i.useCallback(e => {
     switch (e.keyCode) {
       case a.yXg.BACKSPACE:
         0 === j.length && o.length > 0 && (e.preventDefault(), e.stopPropagation(), null == u || u(new Set([o[o.length - 1].id])));
@@ -85,7 +85,7 @@ let o = e => {
     onKeyDown: O,
     onChange: v,
     maxLength: p,
-    disabled: h,
+    disabled: f,
     onBlur: _,
     placeholder: b
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

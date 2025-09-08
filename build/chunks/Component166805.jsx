@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 166805, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P: () => O
@@ -33,12 +33,12 @@ function _(e) {
     fetchedEmbed: y,
     embedEnabled: C,
     embedChannelId: N
-  } = (0, s.cj)([f.Z], () => {
+  } = (0, s.cj)([h.Z], () => {
     let {
       fetchedEmbed: e,
       embedEnabled: t,
       embedChannelId: n
-    } = f.Z.getProps();
+    } = h.Z.getProps();
     return {
       fetchedEmbed: e,
       embedEnabled: t,
@@ -51,7 +51,7 @@ function _(e) {
     g()
   }, [t, g]);
   let R = i.useCallback(async e => {
-    T(true), await (0, h.c)(t, e, N), T(false)
+    T(true), await (0, f.c)(t, e, N), T(false)
   }, [N, t]);
   return y ? (0, r.jsxs)("div", {
     children: [(0, r.jsx)(o.j7V, {

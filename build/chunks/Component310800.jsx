@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 310800, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -31,11 +31,11 @@ function x(e) {
   } = (0, s.gX)(t), j = m.length > 0;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.vwX, {
-      className: h.productListingsHeader,
+      className: f.productListingsHeader,
       id: b,
-      children: j ? f.intl.string(f.t.RwuStb) : f.intl.string(f.t.WKMcMT)
+      children: j ? h.intl.string(h.t.RwuStb) : h.intl.string(h.t.WKMcMT)
     }), j ? (0, r.jsx)("ul", {
-      className: h.productListings,
+      className: f.productListings,
       "aria-labelledby": b,
       children: m.map(e => (0, r.jsx)("li", {
         children: (0, r.jsx)(p.Z, {
@@ -108,7 +108,7 @@ function j(e) {
   };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.zx, {
-      text: f.intl.string(f.t.riG6DQ),
+      text: h.intl.string(h.t.riG6DQ),
       icon: l.qJs,
       onClick: () => a(null),
       disabled: n

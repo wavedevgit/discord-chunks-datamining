@@ -61,7 +61,7 @@ function y(e, t) {
       case g.Us.PERK: {
         let {
           default: i
-        } = await Promise.all([n.e("55616"), n.e("90746"), n.e("99982")]).then(n.bind(n, 326055));
+        } = await Promise.all([n.e("55616"), n.e("90746"), n.e("67455")]).then(n.bind(n, 326055));
         return n => (0, r.jsx)(i, b({
           guildId: e,
           powerup: t

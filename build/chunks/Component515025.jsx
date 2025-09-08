@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 515025, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   h: () => b
@@ -44,7 +44,7 @@ function b(e) {
     }) : null,
     disabled: !x,
     onChange: v,
-    hint: f.intl.string(f.t.uPvxqK),
+    hint: h.intl.string(h.t.uPvxqK),
     enabled: x,
     maxFileSizeBytes: p.B,
     onFileSizeError: () => (0, s.Z)(p.B)
@@ -52,7 +52,7 @@ function b(e) {
   return b ? O : (0, r.jsx)(l.P3F, {
     "aria-hidden": true,
     tabIndex: false,
-    className: h.upsell,
+    className: f.upsell,
     onClick: _,
     children: O
   })

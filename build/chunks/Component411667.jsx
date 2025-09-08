@@ -1,4 +1,4 @@
-/** Chunk was on 88479 **/
+/** Chunk was on 8106 **/
 /** chunk id: 411667, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -22,16 +22,16 @@ function d(e) {
       createEnableRequest: m,
       resubmittedRequest: g,
       requestRejectedNoticeText: p,
-      reapplyNoticeText: f
+      reapplyNoticeText: h
     } = (0, i.Z)(n),
-    h = n.features.has(s.oNc.CREATOR_MONETIZABLE_RESTRICTED),
+    f = n.features.has(s.oNc.CREATOR_MONETIZABLE_RESTRICTED),
     b = n.features.has(s.oNc.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING);
   if (null != u) return (0, r.jsx)(l.Z, {
     className: c.noticeContainer,
     children: u.getAnyErrorMessage()
   });
   let x = null;
-  return null != p ? x = p : g ? x = o.intl.string(o.t.MyJpJS) : null != f ? (x = f, t = o.intl.string(o.t["YKw/NT"])) : b ? x = o.intl.string(o.t.e2g9sb) : h && (x = o.intl.string(o.t.rxI9sr)), null != x ? (0, r.jsx)(a.Z, {
+  return null != p ? x = p : g ? x = o.intl.string(o.t.MyJpJS) : null != h ? (x = h, t = o.intl.string(o.t["YKw/NT"])) : b ? x = o.intl.string(o.t.e2g9sb) : f && (x = o.intl.string(o.t.rxI9sr)), null != x ? (0, r.jsx)(a.Z, {
     className: c.noticeContainer,
     notice: x,
     ctaLabel: t,
