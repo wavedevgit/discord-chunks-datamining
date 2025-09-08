@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk410030 = require("./410030.js"),
-  Chunk822857 = require("./822857.js"),
+  Chunk825102 = require("./825102.js"),
   Chunk626135 = require("./626135.js"),
   Chunk381585 = require("./381585.jsx"),
   Chunk501431 = require("./501431.js"),
@@ -32,7 +32,7 @@ function O() {
     hasFilters: a
   } = (0, Chunk501431.S)(), o = Chunk120356(), {
     enabled: i
-  } = (0, Chunk822857.WX)({
+  } = (0, Chunk825102.WX)({
     location: "Shop"
   }), c = (0, Chunk381585.sp)(), g = Chunk647438.useCallback(e => {
     p.default.track(C.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {

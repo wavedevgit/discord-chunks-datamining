@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk763433 = require("./763433.jsx"),
   Chunk283293 = require("./283293.jsx"),
   Chunk507808 = require("./507808.js"),
-  Chunk822857 = require("./822857.js"),
+  Chunk825102 = require("./825102.js"),
   Chunk775451 = require("./775451.jsx"),
   Chunk451478 = require("./451478.js"),
   Chunk626135 = require("./626135.js"),
@@ -243,7 +243,7 @@ let es = function() {
   }, [Chunk442837]);
   let {
     enabled: B
-  } = (0, Chunk822857.WX)({
+  } = (0, Chunk825102.WX)({
     location: Chunk46140.dr.QUEST_HOME_DESKTOP
   }), $ = Chunk647438.useCallback(() => {
     if (Chunk672188) return void window.open(Chunk981631.EYA.PAID_TERMS_ORBS);

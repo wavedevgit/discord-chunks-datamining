@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk680018 = require("./680018.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk52647 = require("./52647.js"),
-  Chunk822857 = require("./822857.js"),
+  Chunk825102 = require("./825102.js"),
   Chunk317257 = require("./317257.js"),
   Chunk120786 = require("./120786.jsx"),
   Chunk775451 = require("./775451.jsx"),
@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
 function E() {
   let {
     enabled: e
-  } = (0, Chunk822857.WX)({
+  } = (0, Chunk825102.WX)({
     location: "revenue_storybook"
   });
   return (0, Chunk951288.jsxs)("div", {
@@ -105,13 +105,13 @@ function y() {
         children: "Enter a number (loading time in milliseconds) and click Simulate Loading State to see the balance widget pill update:"
       }), (0, Chunk951288.jsx)(Chunk481060.FiK, {
         className: Chunk905164.numberInput,
-        value: Chunk822857,
+        value: Chunk825102,
         onChange: e => _(e)
       }), (0, Chunk951288.jsx)(Chunk680018.z, {
         onClick: () => {
           Chunk52647(null), setTimeout(() => {
             Chunk52647(module)
-          }, Chunk822857)
+          }, Chunk825102)
         },
         text: "Simulate Loading State"
       }), (0, Chunk951288.jsx)("div", {

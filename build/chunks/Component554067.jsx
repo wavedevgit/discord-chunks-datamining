@@ -2,11 +2,13 @@
 /** chunk id: 554067, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk706454 = require("./706454.js"),
   Chunk626135 = require("./626135.js"),
   Chunk381585 = require("./381585.jsx"),
   Chunk501431 = require("./501431.js"),
@@ -15,54 +17,54 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk535333 = require("./535333.js");
 
-function f(e) {
+function m(e) {
   let {
     handleTransition: t,
     selectedTab: n
   } = e, {
-    searchQuery: f,
-    onSetSearchQuery: p
-  } = (0, i.S)(), [m, h] = l.useState(""), _ = (0, o.sp)();
+    searchQuery: m,
+    onSetSearchQuery: h
+  } = (0, u.S)(), [_, C] = l.useState(""), b = (0, c.sp)(), E = (0, a.e7)([o.default], () => o.default.locale);
   return l.useEffect(() => {
     let e = setTimeout(() => {
-      p(m)
+      h(_)
     }, 250);
     return () => clearTimeout(e)
-  }, [m, p]), l.useEffect(() => {
-    h(f)
-  }, [f]), (0, r.jsx)(a.P3F, {
+  }, [_, h]), l.useEffect(() => {
+    C(m)
+  }, [m]), (0, r.jsx)(s.P3F, {
     ignoreKeyPress: true,
     onClick: () => {
-      n !== c.AW.CATALOG && t(c.AW.CATALOG), s.default.track(u.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-        collectibles_shop_session_id: null == _ ? true : _.sessionId,
-        page_section: null == _ ? true : _.pageSection,
-        page_category: null == _ ? true : _.pageCategory,
-        page_index: null == _ ? true : _.pageIndex,
-        page_size: null == _ ? true : _.pageSize,
+      n !== d.AW.CATALOG && t(d.AW.CATALOG), i.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        collectibles_shop_session_id: null == b ? true : b.sessionId,
+        page_section: null == b ? true : b.pageSection,
+        page_category: null == b ? true : b.pageCategory,
+        page_index: null == b ? true : b.pageIndex,
+        page_size: null == b ? true : b.pageSize,
         cta_name: "search bar",
         page_type: n
       })
     },
-    children: (0, r.jsx)(a.E1j, {
+    children: (0, r.jsx)(s.E1j, {
       size: "sm",
-      className: g.searchBar,
+      className: p.searchBar,
       onKeyDown: e => {
-        "Enter" === e.key && p(m)
+        "Enter" === e.key && h(_)
       },
-      query: m,
-      onChange: h,
+      query: _,
+      onChange: C,
       onClear: () => {
-        h(""), s.default.track(u.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-          collectibles_shop_session_id: null == _ ? true : _.sessionId,
-          page_section: null == _ ? true : _.pageSection,
-          page_category: null == _ ? true : _.pageCategory,
-          page_index: null == _ ? true : _.pageIndex,
-          page_size: null == _ ? true : _.pageSize,
+        C(""), i.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+          collectibles_shop_session_id: null == b ? true : b.sessionId,
+          page_section: null == b ? true : b.pageSection,
+          page_category: null == b ? true : b.pageCategory,
+          page_index: null == b ? true : b.pageIndex,
+          page_size: null == b ? true : b.pageSize,
           cta_name: "search bar clear",
           page_type: n
         })
       },
-      placeholder: d.intl.string(d.t["hIt/Nj"])
+      placeholder: "en-US" === E ? f.intl.string(f.t.arz34O) : f.intl.string(f.t["hIt/Nj"])
     })
   })
 }

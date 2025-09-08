@@ -24,8 +24,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk780475 = require("./780475.js"),
   Chunk223143 = require("./223143.js"),
   Chunk298228 = require("./298228.js"),
-  Chunk309956 = require("./309956.js"),
   Chunk908430 = require("./908430.js"),
+  Chunk99767 = require("./99767.js"),
   Chunk501431 = require("./501431.js"),
   Chunk98535 = require("./98535.jsx"),
   Chunk426171 = require("./426171.js"),
@@ -57,7 +57,7 @@ let w = e => {
       isFullScreen: t = true,
       tab: n = N.AW.HOME
     } = e;
-    (0, m.z)(p.f), (0, x.f)();
+    (0, m.z)(p.f), (0, v.f)();
     let a = (0, g.Z)((0, o.Z)()),
       c = (0, i.e7)([_.default], () => _.default.getCurrentUser()),
       P = (0, I.G)("CollectiblesShop"),
@@ -94,7 +94,7 @@ let w = e => {
         selectedTab: Q,
         transitionState: J,
         transitionToTab: $
-      } = (0, v.B)(M, t);
+      } = (0, x.B)(M, t);
     (0, E.q3)(a, Q, q, J, K), (0, E.EB)(Q, c);
     let {
       dismissShopButtonDC: ee
