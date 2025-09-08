@@ -78,7 +78,7 @@ function Z(e) {
         widget: t
       }, n));
     case s.l.APPLICATION:
-      return (0, r.jsx)(y.Z, w({
+      return (0, r.jsx)(x.Z, w({
         widget: t
       }, n));
     default:
@@ -86,7 +86,7 @@ function Z(e) {
   }
 }
 
-function T() {
+function C() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk830202.ukTeenDisclaimer,
     children: [(0, Chunk951288.jsx)(Chunk481060.d3s, {
@@ -100,19 +100,19 @@ function T() {
   })
 }
 
-function C(e) {
+function T(e) {
   let {
     user: t,
     guildId: n,
     channelId: i
-  } = e, a = (0, x.Z)(t.id), s = (0, o.e7)([f.default], () => f.default.getId() === t.id), c = (() => {
+  } = e, a = (0, y.Z)(t.id), s = (0, o.e7)([f.default], () => f.default.getId() === t.id), c = (() => {
     let [e, t] = (0, o.Wu)([m.Z], () => [m.Z.ipCountryCode, m.Z.ipCountryCodeRequest]), n = (0, d.U)();
     return l.useEffect(() => {
       null == e && null == t && n && (0, u.GE)()
     }, [e, t, n]), "GB" === e && n
   })(), b = 0 === a.length && s;
   return ((0, j.ZP)(a.filter(g.W)), (0, p.J)(s, a), b) ? (0, r.jsx)(S.Z, {}) : (0, r.jsxs)(r.Fragment, {
-    children: [s && c && (0, r.jsx)(T, {}), a.map((e, l) => (0, r.jsx)(Z, {
+    children: [s && c && (0, r.jsx)(C, {}), a.map((e, l) => (0, r.jsx)(Z, {
       widget: e,
       user: t,
       guildId: n,
@@ -140,7 +140,7 @@ function k(e) {
     fade: true,
     children: [(0, r.jsx)(O.Z, {
       scrollerRef: i
-    }), (0, r.jsx)(C, w({
+    }), (0, r.jsx)(T, w({
       user: t
     }, n))]
   })

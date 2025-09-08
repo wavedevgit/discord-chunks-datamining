@@ -40,7 +40,8 @@ function u(e) {
       className: s.itemContent,
       children: [(0, r.jsx)(t, {
         color: "currentColor",
-        size: "refresh_sm"
+        size: "refresh_sm",
+        className: s.icon
       }), n]
     }), (0, r.jsx)("div", {
       className: s.itemContent,

@@ -1,7 +1,7 @@
 /** Chunk was on 30355 **/
 /** chunk id: 384166, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,10 +20,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk461671 = require("./461671.js");
 
-function y(e) {
+function x(e) {
   let {
     className: t
-  } = e, [n, i] = l.useState(false), y = (0, o.Wu)([m.Z], () => {
+  } = e, [n, i] = l.useState(false), x = (0, o.Wu)([m.Z], () => {
     var e;
     return null != (e = m.Z.getSaveablePendingWidgets()) ? e : []
   }), h = (0, o.e7)([m.Z], () => m.Z.hasSaveablePendingChanges()), O = (0, o.e7)([m.Z], () => m.Z.isSubmitting), v = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), P = (0, c.Yzy)(h, {
@@ -54,11 +54,11 @@ function y(e) {
   }, [h]);
   let A = l.useCallback(async () => {
       try {
-        await f.Z.savePendingWidgets(y)
+        await f.Z.savePendingWidgets(x)
       } catch (e) {
         (0, g.L$)(p.qb.WIDGET_SAVE_FAILURE)
       }
-    }, [y]),
+    }, [x]),
     S = l.useCallback(() => {
       f.Z.clearPendingWidgets()
     }, []);
@@ -66,17 +66,17 @@ function y(e) {
     className: t,
     style: e,
     children: (0, r.jsxs)("section", {
-      className: a()(x.content, {
-        [x.emphasized]: n
+      className: a()(y.content, {
+        [y.emphasized]: n
       }),
       "aria-label": j.intl.string(j.t["odDw+/"]),
       children: [(0, r.jsx)(c.Text, {
         variant: "text-md/medium",
         color: "text-primary",
-        className: x.message,
+        className: y.message,
         children: j.intl.string(j.t["/lQiX1"])
       }), (0, r.jsxs)("div", {
-        className: x.actions,
+        className: y.actions,
         children: [(0, r.jsx)(c.zxk, {
           size: "sm",
           variant: "secondary",

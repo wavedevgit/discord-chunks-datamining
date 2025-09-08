@@ -37,22 +37,22 @@ function y(e) {
           [f.mobile]: o.tq,
           [f.mobileNavigationOpen]: d
         }),
-        children: [y.map(e => (0, r.jsx)(v, {
-          section: e,
-          visibleContent: t
-        }, e.key)), null != n && (0, r.jsx)(n, {}), (0, r.jsx)(s.zJl, {
+        children: [(0, r.jsxs)("div", {
+          className: f.fixedContent,
+          children: [y.map(e => (0, r.jsx)(v, {
+            section: e,
+            visibleContent: t
+          }, e.key)), null != n && (0, r.jsx)(n, {})]
+        }), (0, r.jsxs)(s.zJl, {
           className: f.navScroller,
           fade: true,
-          children: (0, r.jsx)("nav", {
+          children: [(0, r.jsx)("nav", {
             className: f.nav,
             children: O.map(e => (0, r.jsx)(v, {
               section: e,
               visibleContent: t
             }, e.key))
-          })
-        }), null != i && (0, r.jsx)("footer", {
-          className: f.footer,
-          children: (0, r.jsx)(i, {})
+          }), null != i && (0, r.jsx)(i, {})]
         })]
       })
     }

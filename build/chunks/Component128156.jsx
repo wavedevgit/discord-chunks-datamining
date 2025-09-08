@@ -38,10 +38,10 @@ function I(e) {
     subsection: E,
     onClose: Z
   } = e, {
-    voiceActivityStatusEnabled: T
+    voiceActivityStatusEnabled: C
   } = (0, a.U)({
     location: "UserProfileModalV2Activity"
-  }), C = (0, f.b)({
+  }), T = (0, f.b)({
     location: "UserProfileModalV2Activity"
   }), {
     live: k,
@@ -56,7 +56,7 @@ function I(e) {
   }), R = (0, l.e7)([s.Z], () => s.Z.isFetchingUserOutbox(t.id)), B = t.id === n.id, M = (0, l.e7)([u.Z, c.Z], () => {
     let e = B ? u.Z.getStatus() : c.Z.getStatus(t.id);
     return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
-  }), U = k.length > 0 || null != L, F = T && null == L && null == G && null != D, W = !M && (U || F), z = _.length > 0;
+  }), U = k.length > 0 || null != L, F = C && null == L && null == G && null != D, W = !M && (U || F), z = _.length > 0;
   if (!W && !z && R) return (0, r.jsx)("div", {
     className: S.cards,
     children: Array.from({
@@ -74,9 +74,9 @@ function I(e) {
   });
   if (!W && !z && !R) {
     var Y;
-    return B ? (0, r.jsx)(y.Uf, {
+    return B ? (0, r.jsx)(x.Uf, {
       onClose: Z
-    }) : (0, r.jsx)(y.P9, {
+    }) : (0, r.jsx)(x.P9, {
       user: t,
       guildId: null != (Y = null == I ? true : I.guildId) ? Y : N,
       channelId: w,
@@ -90,8 +90,8 @@ function I(e) {
       heading: A.intl.string(A.t.J6STd3),
       children: (0, r.jsxs)("ul", {
         className: S.cards,
-        children: [!C && F && (0, r.jsx)("li", {
-          children: (0, r.jsx)(x.Z, {
+        children: [!T && F && (0, r.jsx)("li", {
+          children: (0, r.jsx)(y.Z, {
             user: t,
             currentUser: n,
             voiceChannel: D,
@@ -111,8 +111,8 @@ function I(e) {
             activity: e,
             onClose: Z
           })
-        }, "live-".concat(l))), C && F && (0, r.jsx)("li", {
-          children: (0, r.jsx)(x.Z, {
+        }, "live-".concat(l))), T && F && (0, r.jsx)("li", {
+          children: (0, r.jsx)(y.Z, {
             user: t,
             currentUser: n,
             voiceChannel: D,

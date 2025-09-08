@@ -74,15 +74,15 @@ function y(e) {
   var t, n, i, o, s;
   let {
     compact: f = false
-  } = e, h = window.GLOBAL_ENV.RELEASE_CHANNEL, g = "441764", y = "6a41688897be8f1cca9d04e7b8324dd38f614adf".substring(0, 7), O = null === c.Z || true === c.Z ? true : c.Z.remoteApp.getVersion(), v = null === c.Z || true === c.Z || null == (t = (n = c.Z.remoteApp).getBuildNumber) ? true : t.call(n), I = null === c.Z || true === c.Z || null == (i = (o = c.Z.remoteApp).getAppArch) ? true : i.call(o), T = null == (s = u.C.getCurrentBuildOverride().overrides) ? true : s.discord_web, S = b(), A = [h, g, "(".concat(y, ")")];
+  } = e, h = window.GLOBAL_ENV.RELEASE_CHANNEL, g = "441782", y = "35d9bc093690c5e4502f1289b3d1336160fb2a4a".substring(0, 7), O = null === c.Z || true === c.Z ? true : c.Z.remoteApp.getVersion(), v = null === c.Z || true === c.Z || null == (t = (n = c.Z.remoteApp).getBuildNumber) ? true : t.call(n), I = null === c.Z || true === c.Z || null == (i = (o = c.Z.remoteApp).getAppArch) ? true : i.call(o), T = null == (s = u.C.getCurrentBuildOverride().overrides) ? true : s.discord_web, S = b(), A = [h, g, "(".concat(y, ")")];
   return (null != O && (A.push("Host ".concat(O)), null != I && A.push(I.toLowerCase()), null != v && A.push("(".concat(v, ")"))), A.push("Build Override: ".concat(null != T ? T.id : "N/A")), null != S && A.push(S), f) ? (0, r.jsx)(d.Z, {
     copyValue: A.join(" "),
     text: _.intl.string(_.t["9Al4QU"]),
     "aria-label": false,
-    children: e => (0, r.jsx)(l.P3F, E(m({}, e), {
+    children: e => (0, r.jsxs)(l.P3F, E(m({}, e), {
       "aria-label": _.intl.string(_.t["9Al4QU"]),
-      className: p.clickable,
-      children: (0, r.jsxs)("div", {
+      className: a()(p.clickable, p.compact),
+      children: [(0, r.jsxs)("div", {
         className: p.compactInfo,
         "data-mtctest-ignore": "true",
         children: [(0, r.jsxs)(l.Text, {
@@ -93,14 +93,6 @@ function y(e) {
             className: p.versionHash,
             children: ["(", y, ")"]
           })]
-        }), null != T && (0, r.jsx)(l.Text, {
-          tag: "span",
-          variant: "text-xxs/normal",
-          color: "text-muted",
-          children: (0, r.jsxs)("span", {
-            className: p.versionHash,
-            children: ["Build Override: ", T.id]
-          })
         }), null != O && (0, r.jsxs)(l.Text, {
           tag: "span",
           variant: "text-xxs/normal",
@@ -111,14 +103,16 @@ function y(e) {
           }), null != v && (0, r.jsxs)("span", {
             children: [" (", v, ")"]
           })]
-        }), null != S && (0, r.jsx)(l.Text, {
-          tag: "span",
-          variant: "text-xxs/normal",
-          color: "text-muted",
-          className: p.os,
-          children: S
         })]
-      })
+      }), null != T && (0, r.jsx)(l.Text, {
+        tag: "span",
+        variant: "text-xxs/normal",
+        color: "text-muted",
+        children: (0, r.jsxs)("span", {
+          className: p.versionHash,
+          children: ["Build Override: ", T.id]
+        })
+      })]
     }))
   }) : (0, r.jsx)(d.Z, {
     copyValue: A.join(" "),
@@ -126,7 +120,7 @@ function y(e) {
     "aria-label": false,
     children: e => (0, r.jsx)(l.P3F, E(m({}, e), {
       "aria-label": _.intl.string(_.t["9Al4QU"]),
-      className: p.clickable,
+      className: a()(p.clickable, p.compact),
       children: (0, r.jsxs)("div", {
         className: p.info,
         "data-mtctest-ignore": "true",

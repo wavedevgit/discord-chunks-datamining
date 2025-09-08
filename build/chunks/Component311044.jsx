@@ -24,9 +24,9 @@ function b(e) {
     channelId: b,
     onClose: j
   } = e, {
-    analyticsLocations: x
+    analyticsLocations: y
   } = (0, a.ZP)(), {
-    context: y,
+    context: x,
     trackUserProfileAction: h
   } = (0, o.KZ)(), {
     mutualFriends: O,
@@ -79,9 +79,9 @@ function b(e) {
               })
             }
             return e
-          }({}, y), t = t = {
+          }({}, x), t = t = {
             userId: l.id,
-            sourceAnalyticsLocations: x
+            sourceAnalyticsLocations: y
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

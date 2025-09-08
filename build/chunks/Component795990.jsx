@@ -1,21 +1,25 @@
 /** Chunk was on 30355 **/
 /** chunk id: 795990, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
-});
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk481060 = require("./481060.js"),
+  Z: () => f
+}), require("./388685.js");
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
+  Chunk481060 = require("./481060.js"),
   Chunk785717 = require("./785717.jsx"),
+  Chunk810473 = require("./810473.js"),
   Chunk299560 = require("./299560.jsx"),
   Chunk247397 = require("./247397.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk958461 = require("./958461.js");
 
-function u() {
+function f() {
   let {
     trackUserProfileEditAction: e
-  } = (0, Chunk785717.KZ)();
+  } = (0, Chunk785717.KZ)(), t = (0, Chunk810473.Z)(), n = Chunk647438.useMemo(() => {
+    let e = new Set(exports);
+    return Chunk247397.rR.filter(t => e.has(t))
+  }, [exports]);
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk958461.empty,
     children: [(0, Chunk951288.jsxs)("div", {
@@ -32,8 +36,8 @@ function u() {
     }), (0, Chunk951288.jsx)("ul", {
       className: Chunk958461.widgetGrid,
       "aria-label": Chunk388032.intl.string(Chunk388032.t["+EIBSE"]),
-      children: Chunk247397.rR.map(t => (0, r.jsx)("li", {
-        children: (0, r.jsx)(a.Z, {
+      children: require.map(t => (0, r.jsx)("li", {
+        children: (0, r.jsx)(o.Z, {
           widgetType: t,
           size: "small",
           trackUserProfileEditAction: e

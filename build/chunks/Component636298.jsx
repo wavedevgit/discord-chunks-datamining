@@ -46,7 +46,7 @@ function v(e) {
         onClick: () => i(true),
         label: g.intl.string(g.t["13/7kZ"])
       }), (0, r.jsx)(u.X6q, {
-        variant: "heading-md/normal",
+        variant: "heading-md/medium",
         color: "header-secondary",
         children: t
       })]

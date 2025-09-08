@@ -2,7 +2,7 @@
 /** chunk id: 661462, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   F: () => j,
-  Z: () => y
+  Z: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -78,7 +78,7 @@ function j(e) {
   }))
 }
 
-function x(e) {
+function y(e) {
   let {
     user: t,
     currentUser: n,
@@ -112,7 +112,7 @@ function x(e) {
   }) : null
 }
 
-function y(e) {
+function x(e) {
   var t;
   let {
     user: n,
@@ -125,7 +125,7 @@ function y(e) {
     initialSubsection: m,
     onClose: j
   } = e, {
-    trackUserProfileAction: y
+    trackUserProfileAction: x
   } = (0, o.KZ)(), [{
     section: h,
     subsection: O,
@@ -150,7 +150,7 @@ function y(e) {
         look: "custom",
         selectedItem: h,
         onItemSelect: e => {
-          y({
+          x({
             action: "PRESS_SECTION",
             section: e
           }), P(t => {
@@ -169,7 +169,7 @@ function y(e) {
       id: h,
       "aria-label": v,
       className: g.tabBarPanel,
-      children: (0, r.jsx)(x, {
+      children: (0, r.jsx)(y, {
         user: n,
         currentUser: i,
         displayProfile: a,
