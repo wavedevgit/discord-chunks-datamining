@@ -1,7 +1,7 @@
 /** Chunk was on 25761 **/
-/** chunk id: 379760, original params: e,t,n (module,exports,require) **/
+/** chunk id: 379760, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -14,32 +14,32 @@ var Chunk755721 = require("./755721.js"),
   Chunk158017 = require("./158017.js"),
   Chunk197571 = require("./197571.js");
 
-function p(e) {
+function h(e) {
   let {
     title: t,
-    subtitle: n,
-    error: p,
-    onSubmit: h,
+    subtitle: r,
+    error: h,
+    onSubmit: p,
     onCancel: f
   } = e;
-  return (0, r.jsxs)(a.Z, {
+  return (0, n.jsxs)(a.Z, {
     direction: a.Z.Direction.VERTICAL,
-    children: [(0, r.jsx)(o.Dx, {
+    children: [(0, n.jsx)(l.Dx, {
       className: d.marginBottom8,
       children: t
-    }), (0, r.jsx)(o.DK, {
+    }), (0, n.jsx)(l.DK, {
       className: u.subTitle,
-      children: n
-    }), (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(l.Z, {
+      children: r
+    }), (0, n.jsxs)("div", {
+      children: [(0, n.jsx)(o.Z, {
         inputClassName: u.codeInput,
-        onSubmit: h
-      }), null != p ? (0, r.jsx)(i.Text, {
+        onSubmit: p
+      }), null != h ? (0, n.jsx)(i.Text, {
         className: u.error,
         variant: "text-sm/normal",
-        children: p
+        children: h
       }) : null]
-    }), null != f && (0, r.jsx)(s.zx, {
+    }), null != f && (0, n.jsx)(s.zx, {
       className: u.button,
       onClick: f,
       color: s.zx.Colors.PRIMARY,

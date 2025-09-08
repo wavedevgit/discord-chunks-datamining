@@ -1,19 +1,19 @@
 /** Chunk was on 25761 **/
-/** chunk id: 533126, original params: e,t,n (module,exports,require) **/
-function r(e) {
+/** chunk id: 533126, original params: e,t,r (module,exports,require) **/
+function n(e) {
   let t = "==".slice(0, (4 - e.length % 4) % 4),
-    n = atob(e.replace(/-/g, "+").replace(/_/g, "/") + t),
-    r = new ArrayBuffer(n.length),
-    s = new Uint8Array(r);
-  for (let e = 0; e < n.length; e++) s[e] = n.charCodeAt(e);
-  return r
+    r = atob(e.replace(/-/g, "+").replace(/_/g, "/") + t),
+    n = new ArrayBuffer(r.length),
+    s = new Uint8Array(n);
+  for (let e = 0; e < r.length; e++) s[e] = r.charCodeAt(e);
+  return n
 }
 
 function s(e) {
   let t = new Uint8Array(e),
-    n = "";
-  for (let e of t) n += String.fromCharCode(e);
-  return btoa(n).replace(/\+/g, "-").replace(/\//g, "_").replace(/=/g, "")
+    r = "";
+  for (let e of t) r += String.fromCharCode(e);
+  return btoa(r).replace(/\+/g, "-").replace(/\//g, "_").replace(/=/g, "")
 }
 require.d(exports, {
   U2: () => y,
@@ -22,32 +22,32 @@ require.d(exports, {
 var i = "copy",
   a = "convert";
 
-function l(e, t, n) {
-  if (t === i) return n;
-  if (t === a) return e(n);
-  if (t instanceof Array) return n.map(n => l(e, t[0], n));
+function o(e, t, r) {
+  if (t === i) return r;
+  if (t === a) return e(r);
+  if (t instanceof Array) return r.map(r => o(e, t[0], r));
   if (t instanceof Object) {
-    let r = {};
+    let n = {};
     for (let [s, i] of Object.entries(t)) {
       if (i.derive) {
-        let e = i.derive(n);
-        true !== e && (n[s] = e)
+        let e = i.derive(r);
+        true !== e && (r[s] = e)
       }
-      if (!(s in n)) {
+      if (!(s in r)) {
         if (i.required) throw Error(`Missing key: ${s}`);
         continue
       }
-      if (null == n[s]) {
-        r[s] = null;
+      if (null == r[s]) {
+        n[s] = null;
         continue
       }
-      r[s] = l(e, i.schema, n[s])
+      n[s] = o(e, i.schema, r[s])
     }
-    return r
+    return n
   }
 }
 
-function o(e, t) {
+function l(e, t) {
   return {
     required: true,
     schema: e,
@@ -73,12 +73,12 @@ var d = {
     id: c(a),
     transports: u(i)
   },
-  p = {
+  h = {
     appid: u(i),
     appidExclude: u(i),
     credProps: u(i)
   },
-  h = {
+  p = {
     appid: u(i),
     appidExclude: u(i),
     credProps: u(i)
@@ -96,15 +96,15 @@ c({
   excludeCredentials: u([d]),
   authenticatorSelection: u(i),
   attestation: u(i),
-  extensions: u(p)
+  extensions: u(h)
 }), u(i), c(i), c(i), c(a), u(i), c({
   clientDataJSON: c(a),
   attestationObject: c(a),
-  transports: o(i, e => {
+  transports: l(i, e => {
     var t;
     return (null == (t = e.getTransports) ? true : t.call(e)) || []
   })
-}), o(h, e => e.getClientExtensionResults());
+}), l(p, e => e.getClientExtensionResults());
 var f = {
     mediation: u(i),
     publicKey: c({
@@ -113,7 +113,7 @@ var f = {
       rpId: u(i),
       allowCredentials: u([d]),
       userVerification: u(i),
-      extensions: u(p)
+      extensions: u(h)
     }),
     signal: u(i)
   },
@@ -128,13 +128,13 @@ var f = {
       signature: c(a),
       userHandle: c(a)
     }),
-    clientExtensionResults: o(h, e => e.getClientExtensionResults())
+    clientExtensionResults: l(p, e => e.getClientExtensionResults())
   };
 
 function g(e) {
-  return l(r, f, e)
+  return o(n, f, e)
 }
 async function y(e) {
   let t = await navigator.credentials.get(e);
-  return t.toJSON = () => l(s, m, t), t
+  return t.toJSON = () => o(s, m, t), t
 }

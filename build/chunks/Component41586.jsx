@@ -91,7 +91,6 @@ let O = Chunk647438.forwardRef(function(e, t) {
         className: x.searchHeader,
         children: (0, r.jsx)(d.E1j, {
           size: "sm",
-          className: x.searchBar,
           query: S,
           placeholder: g.intl.string(g.t.NVoAMz),
           onChange: L,

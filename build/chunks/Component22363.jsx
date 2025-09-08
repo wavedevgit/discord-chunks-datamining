@@ -37,9 +37,7 @@ let p = e => {
       emojiListRef: h,
       gridNavigatorId: d.Vr,
       onKeyDown: m,
-      className: _.searchBar,
       ref: b,
-      isFullRow: false,
       onFocus: g,
       autoFocus: E,
       defaultSearchPlaceholder: (0, s.nV)(i, O)

@@ -63,7 +63,7 @@ function N(e) {
     channelId: t,
     onClose: a,
     transitionState: o
-  } = e, [N, E] = r.useState(""), [S, I] = r.useState("descending"), [T, k] = r.useState(true), [D, Z] = r.useState(null), L = r.useDeferredValue(N), M = (0, u.e7)([h.Z], () => h.Z.getClips()), R = (0, u.e7)([h.Z], () => h.Z.getPendingClips()), B = (0, u.e7)([h.Z], () => h.Z.getSettings().storageLocation), A = (0, u.Wu)([h.Z], () => h.Z.getNewClipIds()), {
+  } = e, [N, E] = r.useState(""), [S, T] = r.useState("descending"), [k, I] = r.useState(true), [D, Z] = r.useState(null), L = r.useDeferredValue(N), M = (0, u.e7)([h.Z], () => h.Z.getClips()), R = (0, u.e7)([h.Z], () => h.Z.getPendingClips()), B = (0, u.e7)([h.Z], () => h.Z.getSettings().storageLocation), A = (0, u.Wu)([h.Z], () => h.Z.getNewClipIds()), {
     analyticsLocations: H
   } = (0, f.ZP)(m.Z.CLIPS_GALLERY), z = r.useMemo(() => [...R, ...M], [M, R]);
   (0, b.Z)({
@@ -73,8 +73,8 @@ function N(e) {
       number_of_clips_loaded: z.length
     }
   }, {
-    disableTrack: T
-  }, [z.length, T]), r.useEffect(() => ((0, y.eL)(), () => {
+    disableTrack: k
+  }, [z.length, k]), r.useEffect(() => ((0, y.eL)(), () => {
     (0, y.eL)(), (0, y.zq)()
   }), []);
   let V = r.useMemo(() => c()(z).filter(e => {
@@ -84,11 +84,11 @@ function N(e) {
   }).sort((e, t) => "ascending" === S ? g.default.compare(e.id, t.id) : "descending" === S ? g.default.compare(t.id, e.id) : 0).chunk(3).value(), [z, L, S]);
   r.useEffect(() => {
     !async function() {
-      k(true);
+      I(true);
       try {
         await y.jv(B)
       } finally {
-        k(false)
+        I(false)
       }
     }()
   }, [B]);
@@ -147,7 +147,7 @@ function N(e) {
         })
       }, "clips-gallery-".concat(t))
     }, [V, A, D, G, K, F]),
-    U = T || 0 !== V.length ? T ? (0, l.jsx)("div", {
+    U = k || 0 !== V.length ? k ? (0, l.jsx)("div", {
       className: C.spinnerContainer,
       children: (0, l.jsx)(p.$jN, {})
     }) : (0, l.jsx)(p.aVo, {
@@ -172,7 +172,7 @@ function N(e) {
         filterQuery: N,
         setFilterQuery: E,
         sortOrder: S,
-        setSortOrder: I
+        setSortOrder: T
       }), U]
     })
   })

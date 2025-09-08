@@ -132,6 +132,16 @@ let b = {
     return t => (0, a.jsx)(e, v(f({}, t), {
       guildId: "123"
     }))
+  },
+  PhoneVerificationModal: async () => {
+    let {
+      default: e
+    } = await Promise.resolve().then(require.bind(require, 145454));
+    return t => (0, a.jsx)(e, f({
+      error: null,
+      working: false,
+      validPhone: false
+    }, t))
   }
 };
 

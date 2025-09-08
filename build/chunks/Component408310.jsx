@@ -90,8 +90,7 @@ let d = e => {
           placeholder: o.intl.string(o.t.nL2wKC),
           onChange: d,
           onClear: h,
-          onKeyDown: f,
-          isLoading: b
+          onKeyDown: f
         })]
       }), t]
     })

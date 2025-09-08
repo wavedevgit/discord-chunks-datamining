@@ -173,9 +173,9 @@ function H(e) {
     editMetadata: n,
     transitionState: a,
     onClose: o
-  } = e, [h, g] = l.useState(""), [_, f] = l.useState(false), [j, p] = l.useState(null), Z = (0, r.Wu)([C.Z], () => C.Z.getFriendIDs()), y = (0, r.Wu)([v.Z, w.default], () => Z.map(e => w.default.getUser(e)).filter(I.lm).sort((e, t) => {
+  } = e, [h, g] = l.useState(""), [_, f] = l.useState(false), [j, p] = l.useState(null), Z = (0, r.Wu)([C.Z], () => C.Z.getFriendIDs()), y = (0, r.Wu)([b.Z, w.default], () => Z.map(e => w.default.getUser(e)).filter(I.lm).sort((e, t) => {
     var n, i, l, a;
-    return (null != (l = null == (n = v.Z.getUserAffinity(t.id)) ? true : n.communicationProbability) ? l : 0) - (null != (a = null == (i = v.Z.getUserAffinity(e.id)) ? true : i.communicationProbability) ? a : 0)
+    return (null != (l = null == (n = b.Z.getUserAffinity(t.id)) ? true : n.communicationProbability) ? l : 0) - (null != (a = null == (i = b.Z.getUserAffinity(e.id)) ? true : i.communicationProbability) ? a : 0)
   }), [Z]), N = (0, r.e7)([S.Z], () => S.Z.getGuildId()), {
     analyticsLocations: L
   } = (0, x.ZP)(m.Z.CLIPS_SHARE_MODAL);
@@ -188,7 +188,7 @@ function H(e) {
           channelId: i,
           editMetadata: n,
           analyticsLocations: L
-        }), null == e && (0, b.Kh)(i), d.pT()
+        }), null == e && (0, v.Kh)(i), d.pT()
       } catch (e) {} finally {
         f(false)
       }
@@ -214,14 +214,16 @@ function H(e) {
       color: "text-default",
       className: s()(R.subtitle, R.contentPadding),
       children: k.intl.string(k.t.Ey7mOT)
-    }), (0, i.jsx)(c.E1j, {
+    }), (0, i.jsx)("div", {
       className: R.searchBar,
-      query: h,
-      onChange: g,
-      onClear: function() {
-        g("")
-      },
-      placeholder: k.intl.string(k.t.CmSHY2)
+      children: (0, i.jsx)(c.E1j, {
+        query: h,
+        onChange: g,
+        onClear: function() {
+          g("")
+        },
+        placeholder: k.intl.string(k.t.CmSHY2)
+      })
     }), (0, i.jsx)("div", {
       className: s()(R.divider, R.topDivider)
     }), (0, i.jsx)(E, {

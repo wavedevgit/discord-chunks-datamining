@@ -314,7 +314,6 @@ class A extends Chunk647438.PureComponent {
             })
           }), null == t && (0, r.jsx)(c.E1j, {
             size: "sm",
-            className: S.searchBar,
             query: null != a ? a : "",
             placeholder: I.intl.string(I.t.rTL1RE),
             "aria-label": I.intl.string(I.t.rTL1RE),

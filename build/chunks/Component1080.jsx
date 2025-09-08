@@ -276,20 +276,17 @@ function L(e) {
     }), (0, r.jsxs)("div", {
       className: T.bansSearchContainer,
       children: [(0, r.jsx)(o.E1j, {
-        className: T.searchBar,
         query: null != l ? l : "",
         placeholder: S.intl.string(S.t.MiqUmZ),
         "aria-label": S.intl.string(S.t.MiqUmZ),
         onChange: m,
         onKeyDown: h,
-        onClear: g,
-        isLoading: s
+        onClear: g
       }), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: T.searchButton,
         children: (0, r.jsx)(o.zxk, {
           variant: "primary",
-          size: "sm",
           text: S.intl.string(S.t["5h0QOD"]),
           onClick: p,
           disabled: s,
@@ -375,7 +372,6 @@ function k() {
         })]
       })]
     }), (0, Chunk951288.jsx)("div", {
-      className: Chunk26682.__invalid_paginationContainer,
       children: (0, Chunk951288.jsx)(Chunk481060.DsT, {
         className: Chunk26682.paginationInput,
         totalCount: Z.length + (k ? G.pageSize : 0),

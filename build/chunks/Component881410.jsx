@@ -105,7 +105,6 @@ function g(e) {
           x(e), t()
         },
         multiSelect: false,
-        showScrollbar: true,
         maxVisibleItems: 7,
         emptyStateText: S,
         emptyStateHeader: "",

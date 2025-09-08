@@ -326,7 +326,6 @@ function A() {
       className: Chunk599832.toolbar,
       children: (0, Chunk951288.jsx)(Chunk481060.E1j, {
         size: "sm",
-        className: Chunk599832.searchBar,
         query: exports,
         onChange: require,
         onClear: () => require(""),

@@ -108,7 +108,7 @@ function T(e) {
     children: t,
     cardChildren: n,
     startAnimHeightPx: s,
-    innerStyle: o
+    innerStyle: a
   } = e;
   let {
     invite: c
@@ -129,7 +129,7 @@ function T(e) {
   }(e, ["children", "cardChildren", "startAnimHeightPx", "innerStyle"]), [d, h] = i.useState(C(c)), {
     ref: p,
     height: g
-  } = (0, u.ZP)(), m = (0, a.q_F)({
+  } = (0, u.ZP)(), m = (0, o.q_F)({
     height: null != g && 0 !== g ? "".concat(g, "px") : "".concat(s, "px"),
     config: l.config.stiff
   });
@@ -144,7 +144,7 @@ function T(e) {
       style: m,
       children: (0, r.jsx)("section", {
         ref: p,
-        className: null == o ? true : o(d),
+        className: null == a ? true : a(d),
         children: t(d)
       })
     }), n]
@@ -246,10 +246,10 @@ function w(e) {
           inviter_id: null == n || null == (l = n.inviter) ? true : l.id
         });
         let s = null != n && n.state !== b.r2o.EXPIRED && n.state !== b.r2o.BANNED ? t : true,
-          a = p.default.getFingerprint(),
-          c = null != a ? a : p.default.getId(),
+          o = p.default.getFingerprint(),
+          c = null != o ? o : p.default.getId(),
           u = null != n && (null == n ? true : n.type) != null ? Number(null == n ? true : n.type) : true;
-        o.ZP.openApp(s, true, c, true, u)
+        a.ZP.openApp(s, true, c, true, u)
       }(e, t, l)
     },
     transitionTo: n

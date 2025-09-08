@@ -76,31 +76,27 @@ function m(e) {
     value: a,
     onChange: u,
     onClose: f,
-    showScrollbar: h,
-    className: m,
-    multiSelect: g,
-    emptyStateText: E,
-    emptyStateHeader: b,
-    onQueryChange: y
-  } = e, O = p(e, ["children", "placeholder", "value", "onChange", "onClose", "showScrollbar", "className", "multiSelect", "emptyStateText", "emptyStateHeader", "onQueryChange"]);
-  let v = i.useCallback(e => {
-    u(e), g || null == f || f()
-  }, [u, f, g]);
+    className: h,
+    multiSelect: m,
+    emptyStateText: g,
+    emptyStateHeader: E,
+    onQueryChange: b
+  } = e, y = p(e, ["children", "placeholder", "value", "onChange", "onClose", "className", "multiSelect", "emptyStateText", "emptyStateHeader", "onQueryChange"]);
+  let O = i.useCallback(e => {
+    u(e), m || null == f || f()
+  }, [u, f, m]);
   return (0, r.jsx)(s.V, {
-    className: o()(c.container, m, {
-      [c.scroller]: h
-    }),
-    children: (0, r.jsx)(l.hQ, _(d({}, O), {
-      showScrollbar: h,
+    className: o()(c.container, c.scroller, h),
+    children: (0, r.jsx)(l.hQ, _(d({}, y), {
       value: a,
-      multiSelect: g,
-      onChange: v,
+      multiSelect: m,
+      onChange: O,
       placeholder: n,
       children: t,
       listClassName: c.list,
-      emptyStateText: E,
-      emptyStateHeader: b,
-      onQueryChange: y
+      emptyStateText: g,
+      emptyStateHeader: E,
+      onQueryChange: b
     }))
   })
 }

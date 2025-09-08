@@ -1,8 +1,8 @@
 /** Chunk was on 53682 **/
 /** chunk id: 683958, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ApplicationCommandShareModal: () => _
-}), require("./388685.js"), require("./35282.js");
+  ApplicationCommandShareModal: () => O
+}), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk82659 = require("./82659.jsx"),
@@ -27,13 +27,13 @@ let S = [Chunk911969.yU.CHAT],
     (0, Chunk481060.Mr3)(Chunk333861.s)
   };
 
-function _(e) {
+function O(e) {
   var t, {
       applicationId: n,
       channel: s,
       command: y,
-      onClose: _,
-      requireLaunchChannel: O,
+      onClose: O,
+      requireLaunchChannel: _,
       onShareResult: E,
       previewMessage: P
     } = e,
@@ -70,7 +70,7 @@ function _(e) {
       allowApplicationState: true
     })),
     D = r.useRef(0),
-    [A, k] = r.useState(O && null != Z ? [Z] : []),
+    [A, k] = r.useState(_ && null != Z ? [Z] : []),
     I = A.length,
     R = I >= 5,
     [F, q] = r.useState(""),
@@ -85,7 +85,7 @@ function _(e) {
     z = r.useCallback(e => {
       q(e), H(e)
     }, [H]),
-    G = r.useCallback(() => (E(false), _()), [E, _]),
+    G = r.useCallback(() => (E(false), O()), [E, O]),
     [W] = (0, o.Z)([n]),
     V = r.useCallback(() => {
       q("")
@@ -151,7 +151,7 @@ function _(e) {
     title: v.intl.string(v.t.fuFvw8),
     "aria-label": v.intl.string(v.t.fuFvw8),
     transitionState: w.transitionState,
-    onClose: _,
+    onClose: O,
     actions: [],
     children: (0, l.jsx)(a.$jN, {
       className: x.spinnerContainer
@@ -161,10 +161,10 @@ function _(e) {
     title: v.intl.string(v.t.fuFvw8),
     "aria-label": v.intl.string(v.t.fuFvw8),
     transitionState: w.transitionState,
-    onClose: _,
+    onClose: O,
     actions: [{
       text: v.intl.string(v.t.cpT0Cg),
-      onClick: _,
+      onClick: O,
       variant: "primary"
     }],
     children: v.intl.string(v.t.yAk8ZW)
@@ -218,7 +218,6 @@ function _(e) {
       previewMessage: P
     }) : null,
     input: (0, l.jsx)(a.E1j, {
-      className: x.search,
       ref: X,
       query: F,
       onChange: z,

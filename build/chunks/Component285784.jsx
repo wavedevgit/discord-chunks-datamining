@@ -22,8 +22,8 @@ function d(e) {
     entityType: _,
     onJoinClick: b,
     onRsvpClick: p,
-    onStartClick: h,
-    onInviteClick: f,
+    onStartClick: f,
+    onInviteClick: h,
     onEndClick: g,
     onJoinGuildClick: m,
     isJoined: v = false
@@ -52,7 +52,7 @@ function d(e) {
       "aria-label": s.intl.string(s.t.Ej3B3d)
     }
   }({
-    onInviteClick: f,
+    onInviteClick: h,
     canInvite: d,
     isChannelPublic: u
   }), j = [];
@@ -89,10 +89,10 @@ function d(e) {
       disabled: t
     })
   }
-  return n || null == h || j.push({
+  return n || null == f || j.push({
     variant: "primary",
     size: "sm",
-    onClick: h,
+    onClick: f,
     text: s.intl.string(s.t.I0v0Qk)
   }), n && null != g && j.push({
     variant: "secondary",

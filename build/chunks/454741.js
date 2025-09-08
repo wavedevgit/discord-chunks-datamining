@@ -7,7 +7,6 @@ module.exports = {
   subPanel: "subPanel_b6e84c",
   toolbar: "toolbar_b6e84c",
   filtersToolbar: "filtersToolbar_b6e84c",
-  searchBar: "searchBar_b6e84c",
   paneOption: "paneOption_b6e84c",
   activePaneOption: "activePaneOption_b6e84c",
   copyAll: "copyAll_b6e84c",

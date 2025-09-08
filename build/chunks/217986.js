@@ -343,11 +343,6 @@ let r = [{
   phoneCountryCode: "+1 809",
   phoneCountryCodes: ["+1 809", "+1 829", "+1 849"]
 }, {
-  name: "East Timor",
-  alpha2: "TP",
-  phoneCountryCode: "+670",
-  phoneCountryCodes: ["+670"]
-}, {
   name: "Ecuador",
   alpha2: "EC",
   phoneCountryCode: "+593",

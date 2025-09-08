@@ -173,10 +173,7 @@ function el(e) {
   }, [s, p]), (0, l.jsx)("div", {
     className: Q.searchBarContainer,
     children: (0, l.jsx)(f.E1j, {
-      ref: e => {
-        var t;
-        o.current = null != (t = null == e ? true : e.containerRef.current) ? t : null
-      },
+      ref: o,
       placeholder: r,
       query: t,
       onChange: h,

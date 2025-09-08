@@ -3,22 +3,19 @@
 "use strict";
 require.d(exports, {
   Z: () => E
-}), require("./388685.js"), require("./35282.js");
+}), require("./388685.js"), require("./361932.js"), require("./187205.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk217986 = require("./217986.js"),
-  Chunk755721 = require("./755721.js"),
-  Chunk600164 = require("./600164.jsx"),
-  Chunk259580 = require("./259580.jsx"),
-  Chunk317175 = require("./317175.jsx"),
+  Chunk886025 = require("./886025.jsx"),
+  Chunk481060 = require("./481060.js"),
+  Chunk133080 = require("./133080.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk984392 = require("./984392.js"),
-  Chunk315091 = require("./315091.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk984392 = require("./984392.js");
 
-function m(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,97 +23,100 @@ function m(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
+let p = new Map(Chunk217986.Z.flatMap(e => {
+    let {
+      alpha2: t,
+      phoneCountryCodes: n
+    } = e, r = (0, u.q9)(t);
+    return n.map(e => ["".concat(t, "-").concat(e), {
+      code: e,
+      alpha2: t,
+      name: r
+    }])
+  })),
+  h = Array.from(p.entries()).map(e => {
+    let [t, {
+      name: n
+    }] = e;
+    return {
+      value: t,
+      label: n
+    }
+  });
+
+function m(e) {
+  return String.fromCodePoint(...e.toUpperCase().split("").map(e => 127397 + e.charCodeAt(0)))
+}
 class g extends Chunk647438.PureComponent {
   render() {
     let {
-      countryCode: e,
-      phone: t,
-      open: n
+      countryCodeId: e,
+      phone: t
     } = this.state, {
-      className: i,
-      submitting: a
-    } = this.props, [, s] = module.split("+");
-    return (0, Chunk951288.jsxs)(Chunk600164.Z, {
-      className: o()(Chunk984392.phoneField, Chunk315091.elevationLow, Chunk647438),
-      align: Chunk600164.Z.Align.CENTER,
-      grow: 0,
-      children: [(0, Chunk951288.jsxs)(Chunk755721.zx, {
-        size: Chunk755721.Ph.SMALL,
-        className: Chunk984392.countryButton,
-        color: Chunk755721.Tt.PRIMARY,
-        innerClassName: Chunk984392.countryButtonInner,
-        onClick: this.handleTogglePopout,
-        children: [(0, Chunk951288.jsxs)(Chunk600164.Z, {
-          className: o()(Chunk984392.countryCodeContainer, Chunk197571.marginReset),
-          justify: Chunk600164.Z.Justify.CENTER,
-          children: [(0, Chunk951288.jsx)("div", {
-            className: Chunk984392.plusSign,
-            children: "+"
-          }), (0, Chunk951288.jsx)("div", {
-            className: Chunk984392.countryCode,
-            children: Chunk217986
-          })]
-        }), (0, Chunk951288.jsx)(Chunk259580.Z, {
-          expanded: require,
-          width: 16,
-          height: 16
+      className: n,
+      submitting: i,
+      errorMessage: a
+    } = this.props, s = p.get(module);
+    return (0, Chunk951288.jsx)("fieldset", {
+      children: (0, Chunk951288.jsxs)("div", {
+        className: o()(Chunk984392.phoneField, require),
+        children: [(0, Chunk951288.jsx)(Chunk886025.N, {
+          label: Chunk388032.intl.string(Chunk388032.t["k+bvrK"]),
+          children: (0, Chunk951288.jsx)(Chunk481060.VcW, {
+            value: module,
+            onChange: this.handleCountryChange,
+            renderOptionPrefix: this.renderOptionPrefix,
+            options: h,
+            popoutWidth: 280,
+            isDisabled: Chunk647438
+          })
+        }), (0, Chunk951288.jsx)(Chunk481060.oil, {
+          label: Chunk388032.intl.string(Chunk388032.t["64bX0N"]),
+          error: Chunk120356,
+          leading: null == Chunk217986 ? true : Chunk217986.code,
+          type: "tel",
+          onChange: this.handlePhoneChange,
+          autoFocus: true,
+          inputRef: this.inputRef,
+          disabled: Chunk647438,
+          value: exports
         })]
-      }), (0, Chunk951288.jsx)("input", {
-        "aria-label": Chunk388032.intl.string(Chunk388032.t["64bX0N"]),
-        className: Chunk984392.inputField,
-        value: exports,
-        onChange: this.handleChange,
-        onKeyPress: this.handleKeyPress,
-        autoFocus: true
-      }), (0, Chunk951288.jsx)(Chunk755721.zx, {
-        className: Chunk984392.sendButton,
-        size: Chunk755721.Ph.SMALL,
-        submitting: Chunk120356,
-        onClick: this.handleSubmit,
-        children: Chunk388032.intl.string(Chunk388032.t.TXNS7e)
-      }), require ? (0, Chunk951288.jsx)(Chunk317175.Z, {
-        onClick: this.handleClick
-      }) : null]
-    })
-  }
-  closePopout() {
-    this.state.open && this.setState({
-      open: false
+      })
     })
   }
   constructor(e) {
-    super(e), m(this, "handleChange", e => {
-      this.closePopout(), this.setState({
-        phone: e.currentTarget.value
-      })
-    }), m(this, "handleKeyPress", e => {
-      this.closePopout(), 13 === e.which && (e.preventDefault(), this.handleSubmit())
-    }), m(this, "handleSubmit", () => {
+    super(e), _(this, "inputRef", i.createRef()), _(this, "renderOptionLabel", e => {
       let {
-        onSubmit: e,
-        submitting: t
-      } = this.props, {
-        countryCode: n,
-        phone: r
+        name: t
+      } = p.get(e.value);
+      return t
+    }), _(this, "renderOptionPrefix", e => {
+      var t, n;
+      if (null != e) return m(null != (n = null == (t = p.get(e.value)) ? true : t.alpha2) ? n : "")
+    }), _(this, "handleCountryChange", e => {
+      var t;
+      this.setState({
+        countryCodeId: e
+      }), null == (t = this.inputRef.current) || t.focus(), this.handleChange(e, this.state.phone)
+    }), _(this, "handlePhoneChange", e => {
+      this.setState({
+        phone: e
+      });
+      let {
+        countryCodeId: t
       } = this.state;
-      t || null == e || e("".concat(n).concat(r))
-    }), m(this, "handleTogglePopout", () => {
-      this.setState({
-        open: !this.state.open
-      })
-    }), m(this, "handleClick", e => {
-      let [t, n] = e.code.split(" ");
-      this.setState({
-        open: false,
-        countryCode: t,
-        phone: null != n ? n : ""
-      })
+      this.handleChange(t, e)
+    }), _(this, "handleChange", (e, t) => {
+      var n, r, i;
+      let a = null == (n = p.get(e)) ? true : n.code;
+      null == (r = (i = this.props).onChange) || r.call(i, "".concat(a).concat(t))
     });
-    let [t, n] = s.Z.find(e => "United States" === e.name).phoneCountryCode.split(" ");
+    let t = s.Z.find(e => "United States" === e.name),
+      [n, r] = t.phoneCountryCode.split(" "),
+      a = "".concat(t.alpha2, "-").concat(t.phoneCountryCode);
     this.state = {
-      countryCode: t,
-      phone: null != n ? n : "",
-      open: false
+      countryCodeId: a,
+      phone: null != r ? r : ""
     }
   }
 }

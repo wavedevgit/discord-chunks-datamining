@@ -53,7 +53,6 @@ let p = Chunk647438.forwardRef(function(e, t) {
       onClear: I,
       onKeyDown: n,
       onChange: v,
-      className: _.__invalid_searchBar,
       inputProps: {
         "aria-haspopup": "grid",
         "aria-controls": d.Vr,

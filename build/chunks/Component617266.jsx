@@ -191,7 +191,7 @@ function z(e) {
     channel: t,
     subLabel: n
   } = e, r = F(e, ["channel", "subLabel"]);
-  let i = (0, c.e7)([_.Z], () => _.Z.getGuild(null == t ? true : t.guild_id)),
+  let i = (0, c.e7)([O.Z], () => O.Z.getGuild(null == t ? true : t.guild_id)),
     a = (0, g.ZP)(t),
     s = (0, c.e7)([C.Z, Z.default, w.Z], () => {
       let e = C.Z.getChannel(t.parent_id);
@@ -271,10 +271,10 @@ function G(e) {
         d = (0, j.hC)(c),
         f = null != s ? function(e, t) {
           if (t instanceof S.Sf && (0, S.Km)(t.type)) {
-            if (null != t.rateLimitPerUser && t.rateLimitPerUser > 0 && !(O.Z.can(T.Plq.MANAGE_CHANNELS, t) || O.Z.can(T.Plq.MANAGE_MESSAGES, t))) return {
+            if (null != t.rateLimitPerUser && t.rateLimitPerUser > 0 && !(_.Z.can(T.Plq.MANAGE_CHANNELS, t) || _.Z.can(T.Plq.MANAGE_MESSAGES, t))) return {
               label: A.intl.string(A.t.Icu3bW)
             };
-            if (t.isThread() || t.isForumPost() || !O.Z.can(T.Plq.USE_APPLICATION_COMMANDS, t)) return {
+            if (t.isThread() || t.isForumPost() || !_.Z.can(T.Plq.USE_APPLICATION_COMMANDS, t)) return {
               label: A.intl.string(A.t.v8MLq6)
             };
             let n = (0, j.dL)(t.id);

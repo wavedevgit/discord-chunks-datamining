@@ -62,13 +62,13 @@ let x = 100,
       className: _.appIcon,
       game: i,
       size: _.appIconSize
-    }) : null != n ? (0, r.jsx)(o.qE, {
+    }) : null != n ? (0, r.jsx)(a.qE, {
       src: n.getAvatarURL(true, 100),
-      size: a.EFr.DEPRECATED_SIZE_100,
+      size: o.EFr.DEPRECATED_SIZE_100,
       className: _.avatar
-    }) : null != t ? (0, r.jsx)(o.Vj, {
+    }) : null != t ? (0, r.jsx)(a.Vj, {
       guild: t,
-      size: o.Vj.Sizes.LARGER,
+      size: a.Vj.Sizes.LARGER,
       className: _.guildIcon,
       animate: true
     }) : null
@@ -80,11 +80,11 @@ function y(e) {
     invite: n,
     textClassName: i,
     className: l
-  } = e, a = E(n);
-  return null == a || O(n) || (null == n || null == (t = n.guild) ? true : t.id) === m.fQ ? null : (0, r.jsx)(o.EJ, {
+  } = e, o = E(n);
+  return null == o || O(n) || (null == n || null == (t = n.guild) ? true : t.id) === m.fQ ? null : (0, r.jsx)(a.EJ, {
     className: s()(_.activityCount, l),
-    online: a.onlineCount,
-    total: a.memberCount,
+    online: o.onlineCount,
+    total: o.memberCount,
     textClassName: i,
     flat: true
   })
@@ -109,11 +109,11 @@ function C(e) {
     className: _.inviteJoinContainer,
     children: [null != l && (0, r.jsx)("div", {
       className: _.inviterIconWrapper,
-      children: (0, r.jsx)(o.qE, {
+      children: (0, r.jsx)(a.qE, {
         src: l,
-        size: a.EFr.SIZE_24
+        size: o.EFr.SIZE_24
       })
-    }), (0, r.jsx)(o.DK, {
+    }), (0, r.jsx)(a.DK, {
       className: _.__invalid_inviteJoinSubTitle,
       children: s
     })]
@@ -128,20 +128,20 @@ function A(e) {
     application: d,
     showBigUserIcon: p
   } = e;
-  if (null != s) p && null == d && (t = (0, r.jsx)(o.Vj, {
+  if (null != s) p && null == d && (t = (0, r.jsx)(a.Vj, {
     guild: s,
-    size: o.Vj.Sizes.SMALL
+    size: a.Vj.Sizes.SMALL
   })), n = s.name, null != d && (n = d.name, i = (0, r.jsxs)("div", {
     className: _.inviteJoinContainer,
-    children: [(0, r.jsx)(o.DK, {
+    children: [(0, r.jsx)(a.DK, {
       className: _.appIn,
       children: f.intl.string(f.t["3gg9fH"])
     }), (0, r.jsxs)("div", {
       className: _.guildContainer,
-      children: [(0, r.jsx)(o.Vj, {
+      children: [(0, r.jsx)(a.Vj, {
         guild: s,
-        size: o.Vj.Sizes.SMALL
-      }), (0, r.jsx)(a.X6q, {
+        size: a.Vj.Sizes.SMALL
+      }), (0, r.jsx)(o.X6q, {
         color: "header-primary",
         variant: "heading-xl/semibold",
         children: s.name
@@ -151,15 +151,15 @@ function A(e) {
   else if (null != c) {
     if (null == l) throw Error("no inviter in group DM invite");
     let e = h.ZP.getFormattedName(l);
-    null != c.name && "" !== c.name ? (n = c.name, null != c.icon && (t = (0, r.jsx)(o.MC, {
+    null != c.name && "" !== c.name ? (n = c.name, null != c.icon && (t = (0, r.jsx)(a.MC, {
       channel: c,
-      size: a.EFr.SIZE_32
+      size: o.EFr.SIZE_32
     }))) : n = e
   } else if (null != l) {
     let e = h.ZP.getFormattedName(l);
     n = f.intl.formatToPlainString(f.t["4aF92d"], {
       username: e
-    }), i = (0, r.jsx)(o.DK, {
+    }), i = (0, r.jsx)(a.DK, {
       className: _.directInviteSubTitle,
       children: f.intl.format(f.t.Quj7HR, {
         username: e
@@ -167,7 +167,7 @@ function A(e) {
     })
   }
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(o.Dx, {
+    children: [(0, r.jsxs)(a.Dx, {
       className: _.title,
       children: [null != s ? (0, r.jsx)(u.Z, {
         guild: s,

@@ -50,7 +50,7 @@ let p = Chunk647438.forwardRef(function(e, t) {
     transitionState: h,
     title: _.intl.string(_.t.ZtCDc3),
     handleSubmit: R
-  }) : (0, r.jsx)(c.Z, {
+  }) : (0, r.jsx)(c.default, {
     onClose: p,
     transitionState: h,
     error: null == I ? true : I.getAnyErrorMessage(),

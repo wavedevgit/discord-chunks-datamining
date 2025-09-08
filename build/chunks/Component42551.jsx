@@ -73,7 +73,6 @@ function H(e) {
       n()
     },
     multiSelect: true,
-    showScrollbar: true,
     autoFocus: true,
     children: e => H.reduce((t, n) => {
       let {

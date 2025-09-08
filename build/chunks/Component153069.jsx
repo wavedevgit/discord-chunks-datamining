@@ -1,4 +1,4 @@
-/** Chunk was on 83560 **/
+/** Chunk was on 24374 **/
 /** chunk id: 153069, original params: t,e,r (module,exports,require) **/
 require.d(exports, {
   default: () => W
@@ -85,9 +85,9 @@ class z extends(n = Chunk647438.PureComponent) {
       authenticated: r,
       transitionTo: n
     } = this.props;
-    if (r && !t.authenticated && (n(D.Z5c.APP), this.state.conditionalMediationAbortController.abort()), e.errors !== this.state.errors) {
-      var s, o, i;
-      this.hasError("password") ? null == (s = this.passwordRef) || s.focus() : this.hasError("email") || this.hasError("login") ? null == (o = this.loginRef) || o.focus() : this.hasError("code") && (null == (i = this.codeRef) || i.focus())
+    if (r && !t.authenticated && (n(F.Z5c.APP), this.state.conditionalMediationAbortController.abort()), e.errors !== this.state.errors) {
+      var o, s, i;
+      this.hasError("password") ? null == (o = this.passwordRef) || o.focus() : this.hasError("email") || this.hasError("login") ? null == (s = this.loginRef) || s.focus() : this.hasError("code") && (null == (i = this.codeRef) || i.focus())
     }
   }
   componentWillUnmount() {
@@ -146,11 +146,11 @@ class z extends(n = Chunk647438.PureComponent) {
             children: Chunk388032.intl.string(Chunk388032.t.wWIufn)
           }), (0, Chunk951288.jsx)(Chunk388905.zx, {
             onClick: () => (function(t) {
-              let e = T.isPlatformEmbedded && L.ZP.supportsFeature(D.eRX.WEBAUTHN) ? L.ZP.webAuthnAuthenticate : t => {
+              let e = T.isPlatformEmbedded && L.ZP.supportsFeature(F.eRX.WEBAUTHN) ? L.ZP.webAuthnAuthenticate : t => {
                 let e = (0, i.wz)(JSON.parse(t));
                 return (0, i.U2)(e).then(t => JSON.stringify(t))
               };
-              b.Z.authenticatePasswordless({
+              _.Z.authenticatePasswordless({
                 authenticateFunc: e,
                 conditionalMediationAbortController: t
               }).catch(() => {})
@@ -240,7 +240,7 @@ class z extends(n = Chunk647438.PureComponent) {
       onLoginSuccess: t => {
         this.setState({
           errors: {}
-        }), b.Z.switchAccountToken(t)
+        }), _.Z.switchAccountToken(t)
       },
       width: "100%"
     }, this.props))
@@ -287,7 +287,7 @@ class z extends(n = Chunk647438.PureComponent) {
     super(t), Z(this, "loginRef", true), Z(this, "passwordRef", true), Z(this, "codeRef", true), Z(this, "handleAuthToken", async t => {
       this.setState({
         errors: {}
-      }), await b.Z.loginToken(t, false)
+      }), await _.Z.loginToken(t, false)
     }), Z(this, "handleTabOrEnter", t => {
       if ("Tab" === t.key && !t.shiftKey && t.target === this.loginRef) {
         var e;
@@ -323,21 +323,21 @@ class z extends(n = Chunk647438.PureComponent) {
         errors: {}
       });
       try {
-        if (I.S.dispatch(D.CkL.WAVE_EMPHASIZE), !await b.Z.forgotPassword(r)) return;
-        (0, m.h7j)(t => (0, s.jsx)(m.ConfirmModal, B(G({
-          header: F.intl.string(F.t.f5Pi7O),
-          confirmText: F.intl.string(F.t.BddRzc),
+        if (I.S.dispatch(F.CkL.WAVE_EMPHASIZE), !await _.Z.forgotPassword(r)) return;
+        (0, m.h7j)(t => (0, o.jsx)(m.ConfirmModal, B(G({
+          header: N.intl.string(N.t.f5Pi7O),
+          confirmText: N.intl.string(N.t.BddRzc),
           confirmButtonColor: g.zx.Colors.BRAND
         }, t), {
-          children: (0, s.jsx)(m.Text, {
+          children: (0, o.jsx)(m.Text, {
             variant: "text-md/normal",
-            children: F.intl.format(F.t["6u5hQ0"], {
+            children: N.intl.format(N.t["6u5hQ0"], {
               email: r
             })
           })
         })))
       } catch (e) {
-        let t = (0, w.p)(e);
+        let t = (0, y.p)(e);
         this.setState({
           errors: t
         })
@@ -351,14 +351,14 @@ class z extends(n = Chunk647438.PureComponent) {
         errors: {}
       });
       try {
-        await b.Z.login({
+        await _.Z.login({
           login: this.getFullLogin(),
           password: e,
           undelete: r,
           isMultiAccount: true
         })
       } catch (e) {
-        let t = (0, w.p)(e);
+        let t = (0, y.p)(e);
         this.setState({
           errors: t
         })
@@ -386,7 +386,7 @@ class z extends(n = Chunk647438.PureComponent) {
         data: r,
         ticket: n
       } = t;
-      return b.Z.loginMFAv2({
+      return _.Z.loginMFAv2({
         code: r,
         ticket: n,
         mfaType: e,
@@ -395,7 +395,7 @@ class z extends(n = Chunk647438.PureComponent) {
     }), Z(this, "handleResendCode", () => {
       O.Z.resendCode(this.getFullLogin())
     }), Z(this, "handleReset", t => {
-      null == t || t.preventDefault(), b.Z.loginReset(true), this.setState({
+      null == t || t.preventDefault(), _.Z.loginReset(true), this.setState({
         password: "",
         loginPrefix: "",
         login: "",
@@ -434,18 +434,18 @@ let W = function(t) {
     onBackPressed: n
   } = t, i = function(t, e) {
     if (null == t) return {};
-    var r, n, s = function(t, e) {
+    var r, n, o = function(t, e) {
       if (null == t) return {};
-      var r, n, s = {},
-        o = Object.keys(t);
-      for (n = 0; n < o.length; n++) r = o[n], e.indexOf(r) >= 0 || (s[r] = t[r]);
-      return s
+      var r, n, o = {},
+        s = Object.keys(t);
+      for (n = 0; n < s.length; n++) r = s[n], e.indexOf(r) >= 0 || (o[r] = t[r]);
+      return o
     }(t, e);
     if (Object.getOwnPropertySymbols) {
-      var o = Object.getOwnPropertySymbols(t);
-      for (n = 0; n < o.length; n++) r = o[n], !(e.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(t, r) && (s[r] = t[r])
+      var s = Object.getOwnPropertySymbols(t);
+      for (n = 0; n < s.length; n++) r = s[n], !(e.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(t, r) && (o[r] = t[r])
     }
-    return s
+    return o
   }(t, ["onClose", "transitionState", "onBackPressed"]);
   let a = (0, d.cj)([v.Z, E.default, A.Z, k.Z], () => ({
     authenticated: E.default.isAuthenticated(),
@@ -457,22 +457,22 @@ let W = function(t) {
     country: A.Z.getCountryCode(),
     theme: k.Z.theme
   }));
-  (0, _.Z)({
+  (0, C.Z)({
     type: u.ImpressionTypes.MODAL,
     name: u.ImpressionNames.USER_LOGIN
   });
-  let l = o.useCallback(() => {
+  let l = s.useCallback(() => {
     e(), n()
   }, [e, n]);
-  return (0, s.jsx)(h.I, {
+  return (0, o.jsx)(c.I, {
     size: "md",
     onClose: e,
     transitionState: r,
-    children: (0, s.jsx)(z, B(G({}, i, a), {
-      transitionTo: S.uL,
-      replaceWith: S.dL,
+    children: (0, o.jsx)(z, B(G({}, i, a), {
+      transitionTo: j.uL,
+      replaceWith: j.dL,
       onBackPressed: l,
-      authBoxClassName: N.card
+      authBoxClassName: D.card
     }))
   })
 }

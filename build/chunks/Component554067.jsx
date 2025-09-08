@@ -34,6 +34,7 @@ function m(e) {
     C(m)
   }, [m]), (0, r.jsx)(s.P3F, {
     ignoreKeyPress: true,
+    className: p.searchBar,
     onClick: () => {
       n !== d.AW.CATALOG && t(d.AW.CATALOG), i.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == b ? true : b.sessionId,
@@ -47,7 +48,6 @@ function m(e) {
     },
     children: (0, r.jsx)(s.E1j, {
       size: "sm",
-      className: p.searchBar,
       onKeyDown: e => {
         "Enter" === e.key && h(_)
       },

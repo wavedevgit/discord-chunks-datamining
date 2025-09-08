@@ -105,19 +105,21 @@ function T(e) {
   }, [S, y]), R = "" !== u ? p : T;
   return (0, r.jsxs)("div", {
     className: s()(N.root, n),
-    children: [(0, r.jsx)(a.E1j, {
+    children: [(0, r.jsx)("div", {
       className: N.searchBar,
-      placeholder: I.intl.string(I.t["3jvv+/"]),
-      query: u,
-      onChange: e => l({
-        query: e,
-        resultTypes: [c.h8.VOICE_CHANNEL]
-      }),
-      onClear: () => l({
-        query: "",
-        resultTypes: [c.h8.VOICE_CHANNEL]
-      }),
-      autoFocus: true
+      children: (0, r.jsx)(a.E1j, {
+        placeholder: I.intl.string(I.t["3jvv+/"]),
+        query: u,
+        onChange: e => l({
+          query: e,
+          resultTypes: [c.h8.VOICE_CHANNEL]
+        }),
+        onClear: () => l({
+          query: "",
+          resultTypes: [c.h8.VOICE_CHANNEL]
+        }),
+        autoFocus: true
+      })
     }), R.length > 0 ? (0, r.jsx)(a.aVo, {
       renderListHeader: function() {
         return (0, r.jsx)(a.Text, {

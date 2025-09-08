@@ -26,8 +26,8 @@ function f(e) {
     redirectGuildId: E
   } = (0, l.e7)([h.Z], () => h.Z.getState());
   i.useEffect(() => {
-    let e = (0, o.Z)(t);
-    a.Z.verify(e), (0, d.e)("verify_hub_email")
+    let e = (0, a.Z)(t);
+    o.Z.verify(e), (0, d.e)("verify_hub_email")
   }, [t]);
   let v = () => {
     (0, p.Z)(E), f(true)

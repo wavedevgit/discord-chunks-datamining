@@ -1,7 +1,7 @@
 /** Chunk was on 69467 **/
 /** chunk id: 951539, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  ZP: () => h,
+  ZP: () => f,
   so: () => p
 }), require("./388685.js");
 var Chunk442837 = require("./442837.js"),
@@ -20,9 +20,9 @@ function p(e) {
   let [n, t, i, p] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [o.ZP, l.Z, c.Z, a.Z];
   if ((0, u.Z2)(e)) returnfalse;
   let {
-    guild_id: h,
-    channel_id: f
-  } = e, g = e.entity_type === _.WX.EXTERNAL ? n.getDefaultChannel(e.guild_id) : t.getChannel(f), m = i.getGuild(h), v = p.getStageInstanceByChannel(f);
+    guild_id: f,
+    channel_id: h
+  } = e, g = e.entity_type === _.WX.EXTERNAL ? n.getDefaultChannel(e.guild_id) : t.getChannel(h), m = i.getGuild(f), v = p.getStageInstanceByChannel(h);
   return !!(0, r.b)(s.Z, m, g, v) && null != g && function(e) {
     let [n] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [l.Z], {
       entityType: t,
@@ -37,6 +37,6 @@ function p(e) {
   }(e, [t])
 }
 
-function h(e) {
+function f(e) {
   return (0, i.e7)([o.ZP, l.Z, c.Z, a.Z], () => p(e, [o.ZP, l.Z, c.Z, a.Z]), [e])
 }

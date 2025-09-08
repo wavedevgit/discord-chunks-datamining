@@ -130,7 +130,6 @@ function _() {
     children: [(0, Chunk951288.jsx)("div", {
       className: Chunk104444.toolbar,
       children: (0, Chunk951288.jsx)(Chunk481060.E1j, {
-        className: Chunk104444.searchBar,
         size: "sm",
         query: exports,
         onChange: require,

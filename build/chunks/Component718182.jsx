@@ -22,7 +22,7 @@ function _(e) {
   let {
     location: t,
     transitionTo: l = h.uL
-  } = e, [a, _] = i.useState("submitting");
+  } = e, [o, _] = i.useState("submitting");
 
   function x() {
     return "Android" === s().os.family || "iOS" === s().os.family ? null : (0, r.jsx)(d.zx, {
@@ -38,12 +38,12 @@ function _(e) {
     if (null == e) return void _("failed");
     (async () => {
       try {
-        await o.Z.authorizeIPAddress(e), _("succeeded")
+        await a.Z.authorizeIPAddress(e), _("succeeded")
       } catch (e) {
         _("failed")
       }
     })()
-  }), "failed" === a) ? (0, r.jsxs)(d.ZP, {
+  }), "failed" === o) ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)("img", {
       alt: "",
       src: n(262467),
@@ -55,7 +55,7 @@ function _(e) {
       className: f.marginBottom40,
       children: m.intl.string(m.t.i3ehMj)
     }), x()]
-  }) : "succeeded" === a ? (0, r.jsxs)(d.ZP, {
+  }) : "succeeded" === o ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)("img", {
       alt: "",
       src: n(640356),

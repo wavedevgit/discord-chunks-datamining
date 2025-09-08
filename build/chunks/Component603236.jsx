@@ -30,13 +30,13 @@ let w = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
     let {
       value: n,
       autoFocus: t,
-      hideValue: o,
+      hideValue: i,
       onCopy: a,
       disabled: r
     } = e;
-    return (0, i.jsx)(s.Z, {
+    return (0, o.jsx)(s.Z, {
       value: n,
-      hideMessage: o ? I.intl.string(I.t["6HzNgY"]) : null,
+      hideMessage: i ? I.intl.string(I.t["6HzNgY"]) : null,
       buttonColor: c.zx.Colors.BRAND,
       onCopy: a,
       autoFocus: t,
@@ -64,9 +64,9 @@ let w = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
       maxAge: P,
       maxUses: k,
       networkError: R,
-      showVanityURL: B,
-      flags: E
-    } = c, M = o.useCallback(() => {
+      showVanityURL: E,
+      flags: B
+    } = c, M = i.useCallback(() => {
       g.default.track(p.rMx.COPY_INSTANT_INVITE, {
         server: b.Z.getGuildId(),
         channel: null == j ? true : j.id,
@@ -77,42 +77,42 @@ let w = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
         application_id: null == A ? true : A.id
       })
     }, [null == A ? true : A.id, j, N, y, L]);
-    return (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(w, {
+    return (0, o.jsxs)(o.Fragment, {
+      children: [(0, o.jsx)(w, {
         value: T,
         autoFocus: a,
         onCopy: M,
         disabled: O
-      }), s && (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)("div", {
+      }), s && (0, o.jsxs)(o.Fragment, {
+        children: [(0, o.jsx)("div", {
           className: f.divider
-        }), (0, i.jsx)(d.j7V, {
+        }), (0, o.jsx)(d.j7V, {
           className: f.toggle,
-          value: (0, h.yE)(E, l.$.IS_APPLICATION_BYPASS),
-          onChange: e => u((0, h.mB)(E, l.$.IS_APPLICATION_BYPASS, e)),
+          value: (0, h.yE)(B, l.$.IS_APPLICATION_BYPASS),
+          onChange: e => u((0, h.mB)(B, l.$.IS_APPLICATION_BYPASS, e)),
           disabled: O,
           hideBorder: true,
-          children: (0, i.jsxs)("div", {
+          children: (0, o.jsxs)("div", {
             className: f.formText,
-            children: [(0, i.jsx)(d.Text, {
+            children: [(0, o.jsx)(d.Text, {
               variant: "text-md/semibold",
               children: I.intl.string(I.t["1i1bUl"])
-            }), (0, i.jsx)(d.ua7, {
+            }), (0, o.jsx)(d.ua7, {
               text: I.intl.string(I.t["jvd/LC"]),
-              children: e => (0, i.jsx)(d.d3s, function(e) {
+              children: e => (0, o.jsx)(d.d3s, function(e) {
                 for (var n = 1; n < arguments.length; n++) {
                   var t = null != arguments[n] ? arguments[n] : {},
-                    i = Object.keys(t);
-                  "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+                    o = Object.keys(t);
+                  "function" == typeof Object.getOwnPropertySymbols && (o = o.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
                     return Object.getOwnPropertyDescriptor(t, e).enumerable
-                  }))), i.forEach(function(n) {
-                    var i;
-                    i = t[n], n in e ? Object.defineProperty(e, n, {
-                      value: i,
+                  }))), o.forEach(function(n) {
+                    var o;
+                    o = t[n], n in e ? Object.defineProperty(e, n, {
+                      value: o,
                       enumerable: true,
                       configurable: true,
                       writable: true
-                    }) : e[n] = i
+                    }) : e[n] = o
                   })
                 }
                 return e
@@ -123,18 +123,18 @@ let w = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
             })]
           })
         })]
-      }), t || B ? null : (0, i.jsxs)(d.Text, {
+      }), t || E ? null : (0, o.jsxs)(d.Text, {
         variant: "text-xs/normal",
         className: r()(C.marginTop8, f.footerText),
-        children: [(0, x.Vg)(P, k), " ", a ? (0, i.jsx)(d.eee, {
+        children: [(0, x.Vg)(P, k), " ", a ? (0, o.jsx)(d.eee, {
           onClick: () => S(v.RV.SETTINGS),
           children: I.intl.string(I.t.VNe8Pz)
         }) : null]
-      }), !t && a && B ? (0, i.jsxs)(d.Text, {
+      }), !t && a && E ? (0, o.jsxs)(d.Text, {
         variant: "text-xs/normal",
         className: r()(C.marginTop8, f.footerText),
         children: [I.intl.string(I.t["0M2U9/"]), " "]
-      }) : null, null != R ? (0, i.jsx)(m.W, {
+      }) : null, null != R ? (0, o.jsx)(m.W, {
         guild: n,
         error: R,
         onClose: _

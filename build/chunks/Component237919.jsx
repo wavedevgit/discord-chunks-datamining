@@ -39,10 +39,11 @@ class E extends Chunk647438.Component {
     Chunk287259.wX(null), Chunk287259.JZ("")
   }
   focusInput() {
+    var e;
     let {
-      searchBarRef: e
+      searchBarRef: t
     } = this;
-    null != module && module.focus()
+    null != exports && (null == (e = exports.current) || module.focus())
   }
   updateActiveRow(e) {
     let {
@@ -65,8 +66,7 @@ class E extends Chunk647438.Component {
         [Chunk108201.focused]: exports
       }),
       children: (0, Chunk951288.jsx)(Chunk481060.E1j, {
-        className: Chunk108201.searchBar,
-        ref: this.setRef,
+        ref: this.searchBarRef,
         onChange: Chunk287259.JZ,
         onFocus: () => this.setState({
           focused: true
@@ -74,43 +74,39 @@ class E extends Chunk647438.Component {
         onBlur: () => this.setState({
           focused: false
         }),
-        name: "filter",
         onClear: () => {
           this.reset(), this.focusInput()
         },
-        maxLength: 100,
         query: module,
         placeholder: Chunk388032.intl.string(Chunk388032.t.aSxWSk)
       })
     })
   }
   constructor(...e) {
-    super(...e), O(this, "searchBarRef", null), O(this, "state", {
+    super(...e), O(this, "searchBarRef", i.createRef()), O(this, "state", {
       focused: false
-    }), O(this, "setRef", e => {
-      this.searchBarRef = e
     }), O(this, "handleKeyDown", e => {
-      var t;
+      var t, n, r;
       let {
-        activeRowKey: n,
-        hasModalOpen: r,
-        applicationViewItems: i
+        activeRowKey: i,
+        hasModalOpen: l,
+        applicationViewItems: a
       } = this.props, {
-        searchBarRef: l
+        searchBarRef: o
       } = this;
-      if (r || e.ctrlKey || e.altKey || e.metaKey || null == l) return;
-      let a = null == (t = (0, h.uB)(e)) ? true : t.activeElement;
-      if (!(a !== l.inputRef.current && (0, h.VG)(a))) switch (e.which) {
+      if (l || e.ctrlKey || e.altKey || e.metaKey || null == o) return;
+      let s = null == (t = (0, h.uB)(e)) ? true : t.activeElement;
+      if (!(s !== o.current && (0, h.VG)(s))) switch (e.which) {
         case m.yXg.ESCAPE:
-          e.target !== l.inputRef.current ? this.reset() : null != l.inputRef.current && l.blur();
+          e.target !== o.current ? this.reset() : null != o.current && (null == (n = o.current) || n.blur());
           break;
         case m.yXg.ENTER:
-          if (null != n) {
+          if (null != i) {
             e.preventDefault();
-            let t = i.find(e => e.key === n);
+            let t = a.find(e => e.key === i);
             if (null == t) return;
-            let r = t.libraryApplication;
-            g.performDefaultLibraryApplicationAction(r, {
+            let n = t.libraryApplication;
+            g.performDefaultLibraryApplicationAction(n, {
               analyticsParams: {
                 source: m.Sbl.APPLICATION_LIBRARY,
                 location: {
@@ -127,7 +123,7 @@ class E extends Chunk647438.Component {
           e.preventDefault(), e.stopPropagation(), this.updateActiveRow(e.which === m.yXg.ARROW_DOWN ? 1 : false);
           break;
         default:
-          null != l.inputRef.current && e.target !== l.inputRef.current && l.focus()
+          null != o.current && e.target !== o.current && (null == (r = o.current) || r.focus())
       }
     })
   }

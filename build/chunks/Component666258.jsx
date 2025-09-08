@@ -256,7 +256,7 @@ function B(e) {
     isTemporaryInviteAllowed: k,
     setError: B,
     analyticsLocation: F
-  } = e, [z, G] = i.useState(false), [H, q] = i.useState(false), W = i.useRef(null), [Y] = (0, d.Wu)([_.Z], () => [_.Z.hideInstantInvites]), K = (0, I.Dt)(), X = (0, I.Dt)(), Q = (0, I.Dt)(), J = i.useMemo(() => f && null != r.vanityURLCode ? (0, T.Z)(r.vanityURLCode, false) : null, [r, f]), $ = i.useCallback(async () => {
+  } = e, [z, G] = i.useState(false), [q, H] = i.useState(false), W = i.useRef(null), [K] = (0, d.Wu)([_.Z], () => [_.Z.hideInstantInvites]), Y = (0, I.Dt)(), X = (0, I.Dt)(), Q = (0, I.Dt)(), J = i.useMemo(() => f && null != r.vanityURLCode ? (0, T.Z)(r.vanityURLCode, false) : null, [r, f]), $ = i.useCallback(async () => {
     var e, t;
     if (j) return;
     null !== W.current && clearTimeout(W.current);
@@ -345,12 +345,12 @@ function B(e) {
         text: P.intl.string(P.t["4QuV7O"]),
         children: e => (0, l.jsx)(h.P3F, A(w({
           className: s()(Z.settingsButton, {
-            [Z.settingsOpen]: H
+            [Z.settingsOpen]: q
           })
         }, e), {
           onClick: () => {
             var t;
-            null == e || null == (t = e.onClick) || t.call(e), q(e => !e)
+            null == e || null == (t = e.onClick) || t.call(e), H(e => !e)
           },
           children: (0, l.jsx)(h.ewm, {
             size: "refresh_sm",
@@ -358,7 +358,7 @@ function B(e) {
           })
         }))
       })]
-    }), H && (0, l.jsxs)(U, {
+    }), q && (0, l.jsxs)(U, {
       children: [(0, l.jsxs)(V, {
         onClick: ei,
         children: [(0, l.jsxs)("div", {
@@ -386,7 +386,7 @@ function B(e) {
           })]
         })]
       }), R && (0, l.jsxs)(V, {
-        htmlFor: K,
+        htmlFor: Y,
         children: [(0, l.jsxs)("div", {
           className: Z.advancedOptionContent,
           children: [(0, l.jsx)(h.X6q, {
@@ -401,7 +401,7 @@ function B(e) {
             }))
           })]
         }), (0, l.jsx)(g.T2, {
-          id: K,
+          id: Y,
           checked: S.flags === u.$.IS_APPLICATION_BYPASS,
           onChange: () => en(u.$.IS_APPLICATION_BYPASS)
         })]
@@ -451,7 +451,7 @@ function B(e) {
       children: [(0, l.jsx)(h.ua7, {
         position: "top",
         text: J,
-        shouldShow: null !== J && !Y,
+        shouldShow: null !== J && !K,
         children: e => (0, l.jsx)(g.zx, A(w({
           className: Z.button,
           innerClassName: Z.buttonInner,

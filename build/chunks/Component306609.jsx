@@ -183,7 +183,6 @@ function Q(e) {
         })
       }), F && (0, r.jsx)(c.E1j, {
         placeholder: B.intl.string(B.t.hHCZJS),
-        className: Z.voiceFiltersHeader,
         autoFocus: true,
         onChange: Q,
         query: H,

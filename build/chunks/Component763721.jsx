@@ -291,11 +291,6 @@ let h = [{
           type: "boolean",
           defaultValue: false
         },
-        isLoading: {
-          label: "Is Loading",
-          type: "boolean",
-          defaultValue: false
-        },
         disabled: {
           label: "Disabled",
           type: "boolean",

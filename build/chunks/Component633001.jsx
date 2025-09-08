@@ -1071,7 +1071,6 @@ function eb() {
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk454741.toolbar,
         children: (0, Chunk951288.jsx)(Chunk481060.E1j, {
-          className: Chunk454741.searchBar,
           query: Chunk594190,
           onChange: Chunk984370,
           onClear: () => Chunk984370(""),

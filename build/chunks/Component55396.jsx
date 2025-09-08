@@ -30,13 +30,13 @@ function b(e) {
     showOutdatedInfoOption: t,
     onChoice: a
   } = e, i = [{
-    name: I.intl.string(I.t["o/xUFh"]),
+    name: _.intl.string(_.t["o/xUFh"]),
     value: 1
   }, ...t ? [{
-    name: I.intl.string(I.t["ry3/tL"]),
+    name: _.intl.string(_.t["ry3/tL"]),
     value: 2
   }] : [], {
-    name: I.intl.string(I.t.JyZlTk),
+    name: _.intl.string(_.t.JyZlTk),
     value: 3
   }];
   return (0, n.jsxs)(d.hzk, {
@@ -44,11 +44,11 @@ function b(e) {
     children: [(0, n.jsx)(d.X6q, {
       variant: "heading-xl/bold",
       className: k.header,
-      children: I.intl.string(I.t["8itBsL"])
+      children: _.intl.string(_.t["8itBsL"])
     }), (0, n.jsx)(d.Text, {
       className: k.tip,
       variant: "text-md/normal",
-      children: I.intl.string(I.t.X7ab09)
+      children: _.intl.string(_.t.X7ab09)
     }), (0, n.jsx)(c.Gu, {
       className: k.radioGroup,
       options: i,
@@ -74,17 +74,17 @@ function C(e) {
       children: [(0, n.jsx)(d.X6q, {
         variant: "heading-xl/bold",
         className: k.header,
-        children: I.intl.string(I.t.lWk2u7)
+        children: _.intl.string(_.t.lWk2u7)
       }), (0, n.jsx)(d.Text, {
         className: k.tip,
         variant: "text-md/normal",
-        children: I.intl.string(I.t.ZQfxS0)
+        children: _.intl.string(_.t.ZQfxS0)
       })]
     }), (0, n.jsx)(d.mzw, {
       className: k.footer,
       children: (0, n.jsx)(d.zxk, {
         variant: "primary",
-        text: I.intl.string(I.t.RSATCA),
+        text: _.intl.string(_.t.RSATCA),
         fullWidth: true,
         onClick: () => {
           (0, j.q)({
@@ -124,23 +124,23 @@ function S(e) {
     applicationId: p,
     onSubmitted: j,
     viewId: b
-  } = e, [C, S] = i.useState(""), G = (0, o.e7)([u.Z], () => u.Z.getApplication(p)), [z, L] = i.useState(""), y = (0, o.e7)([x.Z], () => x.Z.getGame(p)), Z = null != (a = null != (t = null == y ? true : y.name) ? t : null == G ? true : G.name) ? a : "", q = null == G ? true : G.getIconURL(_.Si.LARGE), {
-    primaryColor: B,
-    secondaryColor: R
+  } = e, [C, S] = i.useState(""), G = (0, o.e7)([u.Z], () => u.Z.getApplication(p)), [z, L] = i.useState(""), y = (0, o.e7)([x.Z], () => x.Z.getGame(p)), Z = null != (a = null != (t = null == y ? true : y.name) ? t : null == G ? true : G.name) ? a : "", q = null == G ? true : G.getIconURL(I.Si.LARGE), {
+    primaryColor: R,
+    secondaryColor: T
   } = (0, h.Z)(q);
   i.useEffect(() => {
     m.Z.getDetectableGames()
   }, []);
-  let T = (0, o.Wu)([f.Z], () => {
+  let F = (0, o.Wu)([f.Z], () => {
       let e = ((null == C ? true : C.length) > 0 ? C : Z).toLowerCase(),
         t = null != z ? f.Z.getDetectableGame(z) : true;
       return (0, r.chain)(f.Z.games).filter(t => s()(e, t.name.toLowerCase())).filter(e => e.id !== p).take(4).concat(null != t ? [t] : []).compact().uniqBy("id").value()
     }, [p, z, Z, C]),
-    F = (0, g.Z)(T.map(e => e.id)),
-    X = (0, r.chain)(F).compact().keyBy("id").value(),
-    A = C.length > 0 && !T.map(e => e.name.toLowerCase()).includes(C.toLowerCase()),
+    X = (0, g.Z)(F.map(e => e.id)),
+    A = (0, r.chain)(X).compact().keyBy("id").value(),
+    B = C.length > 0 && !F.map(e => e.name.toLowerCase()).includes(C.toLowerCase()),
     W = z === p || null === z && 0 === C.length,
-    O = T.map(e => {
+    O = F.map(e => {
       let {
         name: t,
         id: a
@@ -149,12 +149,12 @@ function S(e) {
         name: (0, n.jsx)(w, {
           name: t,
           id: a,
-          applicationRecord: X[a]
+          applicationRecord: A[a]
         }),
         value: a
       }
     });
-  return A && O.push({
+  return B && O.push({
     name: (0, n.jsx)(w, {
       name: C
     }),
@@ -165,15 +165,15 @@ function S(e) {
       children: [(0, n.jsx)(d.X6q, {
         variant: "heading-xl/bold",
         className: k.header,
-        children: I.intl.string(I.t.tJzB6O)
+        children: _.intl.string(_.t.tJzB6O)
       }), (0, n.jsx)(d.Text, {
         className: k.tip,
         variant: "text-md/normal",
-        children: I.intl.string(I.t["44R0Iy"])
+        children: _.intl.string(_.t["44R0Iy"])
       }), (0, n.jsxs)("div", {
         className: k.gameInfoBox,
         style: {
-          background: "linear-gradient(45deg, ".concat(B, ", ").concat(R, ")")
+          background: "linear-gradient(45deg, ".concat(R, ", ").concat(T, ")")
         },
         children: [null != q && (0, n.jsx)("img", {
           className: k.gameIcon,
@@ -187,13 +187,12 @@ function S(e) {
       }), (0, n.jsxs)("div", {
         className: k.applicationSearch,
         children: [(0, n.jsx)(d.E1j, {
-          className: k.searchBar,
           query: C,
           onChange: e => {
             if (0 === e.length) null === z && L(p);
             else {
               var t;
-              let a = T.find(t => t.name.toLowerCase() === e.toLowerCase());
+              let a = F.find(t => t.name.toLowerCase() === e.toLowerCase());
               L(null != (t = null == a ? true : a.id) ? t : "")
             }
             S(e)
@@ -201,7 +200,7 @@ function S(e) {
           onClear: () => {
             null === z && L(p), S("")
           },
-          placeholder: I.intl.string(I.t.UedRLy)
+          placeholder: _.intl.string(_.t.UedRLy)
         }), (0, n.jsx)(c.Gu, {
           size: c.l7.NONE,
           radioPosition: "right",
@@ -221,7 +220,7 @@ function S(e) {
       className: k.footer,
       children: (0, n.jsx)(d.zxk, {
         variant: "primary",
-        text: I.intl.string(I.t.geKm7u),
+        text: _.intl.string(_.t.geKm7u),
         fullWidth: true,
         onClick: () => {
           let e = null != z && z.length > 0;
@@ -251,17 +250,17 @@ function G(e) {
       children: [(0, n.jsx)(d.X6q, {
         variant: "heading-xl/bold",
         className: k.header,
-        children: I.intl.string(I.t["/nALeX"])
+        children: _.intl.string(_.t["/nALeX"])
       }), (0, n.jsx)(d.Text, {
         className: k.tip,
         variant: "text-md/normal",
-        children: I.intl.string(I.t.WOuJ8v)
+        children: _.intl.string(_.t.WOuJ8v)
       }), (0, n.jsx)("div", {
         className: k.otherFeedbackInput,
         children: (0, n.jsx)(d.Kx8, {
           value: s,
           onChange: e => r(e),
-          placeholder: I.intl.string(I.t.AHCr5e),
+          placeholder: _.intl.string(_.t.AHCr5e),
           maxLength: 300
         })
       })]
@@ -269,7 +268,7 @@ function G(e) {
       className: k.footer,
       children: (0, n.jsx)(d.zxk, {
         variant: "primary",
-        text: I.intl.string(I.t.geKm7u),
+        text: _.intl.string(_.t.geKm7u),
         fullWidth: true,
         onClick: () => {
           (0, N.MH)({
@@ -295,17 +294,17 @@ function z(e) {
       children: [(0, n.jsx)(d.X6q, {
         variant: "heading-xl/bold",
         className: k.header,
-        children: I.intl.string(I.t["pelg/f"])
+        children: _.intl.string(_.t["pelg/f"])
       }), (0, n.jsx)(d.Text, {
         className: k.tip,
         variant: "text-md/normal",
-        children: I.intl.string(I.t["55S/OD"])
+        children: _.intl.string(_.t["55S/OD"])
       })]
     }), (0, n.jsx)(d.mzw, {
       className: k.footer,
       children: (0, n.jsx)(d.zxk, {
         variant: "primary",
-        text: I.intl.string(I.t.i4jeWV),
+        text: _.intl.string(_.t.i4jeWV),
         fullWidth: true,
         onClick: t
       })

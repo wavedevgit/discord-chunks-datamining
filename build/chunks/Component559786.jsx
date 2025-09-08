@@ -32,7 +32,7 @@ function d(e) {
         id: u.n.START,
         impressionProperties: x,
         impressionName: l.ImpressionNames.ACCOUNT_REVERT_EXPLAINER,
-        children: (0, r.jsx)(o.Z, {
+        children: (0, r.jsx)(a.Z, {
           setSlide: p,
           transitionTo: t
         })
@@ -40,7 +40,7 @@ function d(e) {
         id: u.n.PASSWORD,
         impressionProperties: x,
         impressionName: l.ImpressionNames.ACCOUNT_REVERT_CHANGE_PASSWORD,
-        children: (0, r.jsx)(a.Z, {
+        children: (0, r.jsx)(o.Z, {
           setOriginalEmail: _,
           setSlide: p,
           transitionTo: t,

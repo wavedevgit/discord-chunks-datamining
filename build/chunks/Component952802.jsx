@@ -1,5 +1,5 @@
 /** Chunk was on 25761 **/
-/** chunk id: 952802, original params: e,t,n (module,exports,require) **/
+/** chunk id: 952802, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => f
 }), require("./388685.js");
@@ -18,63 +18,63 @@ var Chunk951288 = require("./951288.js"),
 function f(e) {
   let {
     alpha2: t,
-    countryCode: n,
+    countryCode: r,
     forceMode: i,
     label: f,
     error: m,
     className: g,
     required: y,
     value: b,
-    setRef: w,
-    placeholder: S,
-    autoFocus: O,
-    maxLength: C,
-    spellCheck: x,
-    autoComplete: j,
-    autoCapitalize: v,
+    setRef: C,
+    placeholder: O,
+    autoFocus: j,
+    maxLength: w,
+    spellCheck: S,
+    autoComplete: v,
+    autoCapitalize: x,
     autoCorrect: P,
     onChange: E,
     inputClassName: N
-  } = e, A = (0, c.Dt)(), [k, T] = s.useState(false), Z = (0, u.o9)(i, b);
-  return (0, r.jsx)(o.xJW, {
+  } = e, k = (0, c.Dt)(), [Z, A] = s.useState(false), T = (0, u.o9)(i, b);
+  return (0, n.jsx)(l.xJW, {
     title: f,
     error: m,
     className: g,
     required: y,
     tag: "label",
-    htmlFor: A,
-    children: (0, r.jsxs)("div", {
-      className: a()(h.input, p.input, N, {
-        [h.error]: null != m,
-        [h.focused]: k
+    htmlFor: k,
+    children: (0, n.jsxs)("div", {
+      className: a()(p.input, h.input, N, {
+        [p.error]: null != m,
+        [p.focused]: Z
       }),
-      children: [(0, r.jsx)(d.Z, {
-        show: Z,
+      children: [(0, n.jsx)(d.Z, {
+        show: T,
         alpha2: t,
-        countryCode: n
-      }), (0, r.jsx)(l.Is, {
-        id: A,
+        countryCode: r
+      }), (0, n.jsx)(o.Is, {
+        id: k,
         name: "email",
         type: i === u.Nz.EMAIL ? "email" : "text",
         value: b,
-        inputRef: w,
-        placeholder: S,
+        inputRef: C,
+        placeholder: O,
         "aria-label": f,
         required: y,
         onChange: function(e) {
-          let t = (0, u.o9)(i, e) ? n : "";
+          let t = (0, u.o9)(i, e) ? r : "";
           E(e, t)
         },
-        autoComplete: j,
-        autoCapitalize: v,
+        autoComplete: v,
+        autoCapitalize: x,
         autoCorrect: P,
-        autoFocus: O,
-        maxLength: C,
-        spellCheck: x,
-        className: p.inputWrapper,
-        inputClassName: p.inputField,
-        onFocus: () => T(true),
-        onBlur: () => T(false)
+        autoFocus: j,
+        maxLength: w,
+        spellCheck: S,
+        className: h.inputWrapper,
+        inputClassName: h.inputField,
+        onFocus: () => A(true),
+        onBlur: () => A(false)
       })]
     })
   })

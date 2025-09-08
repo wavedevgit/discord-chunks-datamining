@@ -10,7 +10,6 @@ module.exports = {
   gameSuggestion: "gameSuggestion__50a6f",
   gameSuggestionRadioItem: "gameSuggestionRadioItem__50a6f",
   otherFeedbackInput: "otherFeedbackInput__50a6f",
-  searchBar: "searchBar__50a6f",
   gameInfoBox: "gameInfoBox__50a6f",
   gameIcon: "gameIcon__50a6f",
   smolGameIcon: "smolGameIcon__50a6f",

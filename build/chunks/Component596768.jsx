@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk913527 = require("./913527.js"),
   d = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
   Chunk665149 = require("./665149.jsx"),
@@ -145,39 +145,33 @@ function S() {
       type: "SET_TRACK_TRIGGERS",
       enabled: e
     })
-  }, []);
+  }, []), I = S ? "Stop Tracking" : "Start Tracking";
   return (0, Chunk951288.jsxs)("div", {
     ref: require,
     className: i()(Chunk451429.panel, Chunk599832.panel),
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk599832.toolbar,
-      children: [(0, Chunk951288.jsx)("div", {
-        title: "Enables tracking of all triggers",
-        className: Chunk599832.triggersEnable,
-        children: (0, Chunk951288.jsx)(Chunk755721.T2, {
-          checked: S,
-          onChange: P
-        })
-      }), (0, Chunk951288.jsx)(Chunk755721.zx, {
-        className: Chunk599832.toolbarButton,
-        look: Chunk755721.zx.Looks.BLANK,
-        size: Chunk755721.zx.Sizes.ICON,
-        onClick: Chunk31336.Zw,
-        children: (0, Chunk951288.jsx)("span", {
-          title: Chunk388032.intl.string(Chunk388032.t.VkKicX),
-          children: (0, Chunk951288.jsx)(Chunk481060.XHJ, {
-            size: "md",
-            color: "currentColor",
-            "aria-label": Chunk388032.intl.string(Chunk388032.t.VkKicX)
-          })
+      children: [(0, Chunk951288.jsx)(Chunk681715.u, {
+        text: I,
+        children: (0, Chunk951288.jsx)(Chunk481060.hU, {
+          size: "sm",
+          variant: S ? "active" : "primary",
+          icon: S ? Chunk481060.fpf : Chunk481060.o1U,
+          "aria-label": I,
+          onClick: () => P(!S)
         })
       }), (0, Chunk951288.jsx)(Chunk481060.E1j, {
         size: "sm",
-        className: Chunk599832.searchBar,
         query: module,
         onChange: exports,
         onClear: () => exports(""),
         placeholder: "Search by experiment id"
+      }), (0, Chunk951288.jsx)(Chunk481060.hU, {
+        size: "sm",
+        variant: "icon-only",
+        "aria-label": Chunk388032.intl.string(Chunk388032.t.VkKicX),
+        icon: Chunk481060.XHJ,
+        onClick: Chunk31336.Zw
       })]
     }), (0, Chunk951288.jsx)(Chunk681619.Z, {
       columns: T,

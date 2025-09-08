@@ -96,7 +96,6 @@ class _ extends Chunk647438.PureComponent {
         value: new Set([o.value]),
         onChange: a,
         onClose: t,
-        showScrollbar: true,
         children: e => this.renderItems(e)
       })
     })

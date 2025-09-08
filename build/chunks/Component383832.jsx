@@ -71,7 +71,7 @@ function f() {
   (0, Chunk481060.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([require.e("52030"), require.e("25761"), require.e("83560")]).then(require.bind(require, 153069));
+    } = await Promise.all([require.e("52030"), require.e("25761"), require.e("24374")]).then(require.bind(require, 153069));
     return t => (0, r.jsx)(e, u(l({}, t), {
       onBackPressed: d
     }))

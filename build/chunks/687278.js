@@ -3,8 +3,6 @@
 module.exports = {
   panel: "panel_a81334",
   toolbar: "toolbar_a81334",
-  searchBar: "searchBar_a81334",
-  pausedEvents: "pausedEvents_a81334",
   actionColumn: "actionColumn_a81334",
   totalTimeColumn: "totalTimeColumn_a81334",
   subPanel: "subPanel_a81334",

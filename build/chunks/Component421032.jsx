@@ -50,7 +50,7 @@ function v(e) {
   if (null == j) return null;
   let {
     is_canceled: P = false
-  } = null != I ? I : {}, k = (null == I ? true : I.scheduled_start_time) != null ? new Date(null == I ? true : I.scheduled_start_time) : r, Z = (0, b.DK)(j), E = P ? h.p1.CANCELED : h.p1.SCHEDULED;
+  } = null != I ? I : {}, k = (null == I ? true : I.scheduled_start_time) != null ? new Date(null == I ? true : I.scheduled_start_time) : r, Z = (0, b.DK)(j), E = P ? f.p1.CANCELED : f.p1.SCHEDULED;
   Z === n && (E = j.status);
   let N = (null == j ? true : j.scheduled_start_time) != null ? (0, b.lh)(I, k, new Date(null == j ? true : j.scheduled_start_time)) : null,
     S = e => {
@@ -89,11 +89,11 @@ function v(e) {
       variant: "text-sm/semibold",
       color: "text-danger",
       className: g.canceledStatus,
-      children: f.intl.string(f.t.fyBVRk)
+      children: h.intl.string(h.t.fyBVRk)
     }), (0, i.jsx)(o.ua7, {
-      text: f.intl.string(f.t.UKOtz8),
+      text: h.intl.string(h.t.UKOtz8),
       position: "top",
-      "aria-label": f.intl.string(f.t.bt75u7),
+      "aria-label": h.intl.string(h.t.bt75u7),
       children: e => {
         var n, t;
         return (0, i.jsx)(o.P3F, (n = m({}, e), t = t = {

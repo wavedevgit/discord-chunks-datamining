@@ -57,7 +57,6 @@ function g(e) {
     onClose: o
   } = e, c = (0, d.Vm)(t);
   return (0, r.jsx)(s.DBG, {
-    showScrollbar: true,
     value: n,
     onChange: e => {
       (!i || n.has(e)) && (l(e), o())

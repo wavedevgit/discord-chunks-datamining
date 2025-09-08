@@ -247,7 +247,7 @@ class ev extends(l = Chunk647438.PureComponent) {
     return h = exports.features.has(Chunk981631.oNc.HUB) ? (0, Chunk951288.jsxs)("div", {
       className: Chunk451964.hubHeader,
       children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
-        className: a()(Chunk451964.hubInviteTitle, Chunk451964.headerCloseButtonSpacing),
+        className: Chunk451964.headerCloseButtonSpacing,
         id: this._headerId,
         variant: "heading-xl/semibold",
         color: "header-primary",
@@ -259,27 +259,25 @@ class ev extends(l = Chunk647438.PureComponent) {
       }), require && (0, Chunk951288.jsx)(Chunk481060.E1j, {
         size: "sm",
         query: Chunk990547,
-        className: Chunk451964.hubFriendSearch,
         onChange: this.handleQueryChange,
         placeholder: Chunk388032.intl.string(Chunk388032.t.CmSHY2),
         "aria-label": Chunk388032.intl.string(Chunk388032.t.CmSHY2),
         autoFocus: true,
         onClear: this.handleClearSearch
       })]
-    }) : require ? (0, Chunk951288.jsxs)("div", {
-      className: Chunk451964.header,
-      children: [(0, Chunk951288.jsx)("div", {
-        className: Chunk451964.__invalid_headerTopRow,
-        children: (0, Chunk951288.jsx)(Chunk481060.vwX, {
+    }) : require ? (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+      gap: 4,
+      children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+        gap: 0,
+        children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           id: this._headerId,
           tag: "h2",
-          className: a()(Chunk197571.marginBottom4, Chunk451964.headerCloseButtonSpacing, Chunk451964.headerText),
+          className: Chunk451964.headerCloseButtonSpacing,
           children: module
-        })
-      }), Chunk442837, (0, Chunk951288.jsx)(Chunk481060.E1j, {
+        }), Chunk442837]
+      }), (0, Chunk951288.jsx)(Chunk481060.E1j, {
         size: "sm",
         query: Chunk990547,
-        className: Chunk451964.searchBar,
         onChange: this.handleQueryChange,
         placeholder: Chunk388032.intl.string(Chunk388032.t.CmSHY2),
         autoFocus: true,
@@ -558,10 +556,10 @@ class ev extends(l = Chunk647438.PureComponent) {
     }), ed(this, "getRowHeight", (e, t) => {
       if (e > 0) return 0;
       switch (this.props.rows[t].type) {
-        case q.bm.CHANNEL:
-        case q.bm.GROUP_DM:
-        case q.bm.DM:
-        case q.bm.FRIEND:
+        case H.bm.CHANNEL:
+        case H.bm.GROUP_DM:
+        case H.bm.DM:
+        case H.bm.FRIEND:
           return et.k;
         default:
           return 0
@@ -576,16 +574,16 @@ class ev extends(l = Chunk647438.PureComponent) {
         analyticsLocation: l
       } = this.props, r = this.getInviteKey(), s = this.props.rows[n], a = "".concat(s.type, "-").concat(s.item.id);
       switch (s.type) {
-        case q.bm.GROUP_DM:
-        case q.bm.CHANNEL:
+        case H.bm.GROUP_DM:
+        case H.bm.CHANNEL:
           return (0, i.jsx)(et.d, {
             row: s,
             channel: s.item,
             inviteKey: r,
             location: l
           }, a);
-        case q.bm.DM:
-        case q.bm.FRIEND:
+        case H.bm.DM:
+        case H.bm.FRIEND:
           return (0, i.jsx)(et.d, {
             row: s,
             user: s.item,
@@ -642,7 +640,7 @@ let ex = Chunk647438.forwardRef(function(e, t) {
         targetApplicationId: c
       })
     }, [y, C, d, c]),
-    [G, q, Y, K] = (0, m.Wu)([L.Z, z.ZP], () => [L.Z.getInviteSuggestionRows(), L.Z.getTotalSuggestionsCount() >= 1, L.Z.getInitialCounts(), null != s && null != y ? z.ZP.getVoiceStatesForChannel(y) : null], [y, s]),
+    [G, H, K, Y] = (0, m.Wu)([L.Z, z.ZP], () => [L.Z.getInviteSuggestionRows(), L.Z.getTotalSuggestionsCount() >= 1, L.Z.getInitialCounts(), null != s && null != y ? z.ZP.getVoiceStatesForChannel(y) : null], [y, s]),
     X = (0, m.e7)([M.ZP], () => {
       let e = null != y ? y.id : null;
       return null != w ? M.ZP.getProps(w, e) : true
@@ -651,7 +649,7 @@ let ex = Chunk647438.forwardRef(function(e, t) {
     $ = null === F || !J,
     [ee] = r.useState(() => {
       let e = new Set;
-      return null != d && null != K ? K.forEach(t => {
+      return null != d && null != Y ? Y.forEach(t => {
         let {
           user: n
         } = t;
@@ -733,7 +731,7 @@ let ex = Chunk647438.forwardRef(function(e, t) {
     }))), ey !== eh.value && eZ !== eh.value && eS({
       savedMaxAge: eh.value
     })
-  }, [eI, J, y, o, null == es ? true : es.id, C, d, ey, eC, eP, eS, eZ, ew]), eR = (0, N.Z)(y), eD = (0, N.Z)((0, H.yE)(ew, h.$.IS_APPLICATION_BYPASS)), ek = null != eR && eR !== y, eL = null != eD && eD !== (0, H.yE)(ew, h.$.IS_APPLICATION_BYPASS);
+  }, [eI, J, y, o, null == es ? true : es.id, C, d, ey, eC, eP, eS, eZ, ew]), eR = (0, N.Z)(y), eD = (0, N.Z)((0, q.yE)(ew, h.$.IS_APPLICATION_BYPASS)), ek = null != eR && eR !== y, eL = null != eD && eD !== (0, q.yE)(ew, h.$.IS_APPLICATION_BYPASS);
   r.useEffect(() => {
     !eI && (ek || eL) && eM()
   }, [eM, ek, eL, eI]);
@@ -756,8 +754,8 @@ let ex = Chunk647438.forwardRef(function(e, t) {
       targetUserId: d,
       application: es,
       rows: G,
-      showFriends: q,
-      initialCounts: Y,
+      showFriends: H,
+      initialCounts: K,
       code: ea,
       source: o,
       welcomeToServer: x,
@@ -781,7 +779,7 @@ let ex = Chunk647438.forwardRef(function(e, t) {
 function eI(e) {
   let {
     modal: t
-  } = (0, K._k)({
+  } = (0, Y._k)({
     location: "instant_invite_modal"
   }), n = t ? J.H : ex;
   return (0, i.jsx)(n, ec({}, e))

@@ -2,12 +2,10 @@
 /** chunk id: 533432, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
   Chunk524825 = require("./524825.js"),
   Chunk260866 = require("./260866.js"),
   Chunk481060 = require("./481060.js"),
@@ -15,57 +13,51 @@ var Chunk951288 = require("./951288.js"),
   Chunk28546 = require("./28546.js"),
   Chunk149203 = require("./149203.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk359175 = require("./359175.js");
-let m = Chunk647438.forwardRef(function(e, t) {
+  Chunk388032 = require("./388032.jsx");
+let _ = Chunk647438.forwardRef(function(e, t) {
     let {
       emojiListRef: n,
-      gridNavigatorId: a,
-      isFullRow: m,
-      onKeyDown: g,
-      onFocus: E,
-      autoFocus: b,
-      className: y,
-      defaultSearchPlaceholder: O
-    } = e, v = i.useRef(null), I = (0, d.Iu)(e => e.searchQuery), [T, S] = u.kJ.useStore(e => [e.inspectedExpressionPosition, e.searchPlaceholder], s.X), A = i.useCallback(e => {
+      gridNavigatorId: _,
+      onKeyDown: p,
+      onFocus: h,
+      autoFocus: m,
+      defaultSearchPlaceholder: g
+    } = e, E = i.useRef(null), b = (0, c.Iu)(e => e.searchQuery), [y, O] = l.kJ.useStore(e => [e.inspectedExpressionPosition, e.searchPlaceholder], a.X), v = i.useCallback(e => {
       var t;
-      u.kJ.setActiveCategoryIndex("" === e ? 0 : f.c), u.kJ.setInspectedExpressionPosition(0, 0), u.kJ.setSearchPlaceholder(null), (0, d.ql)(e), null == (t = n.current) || t.scrollTo(0)
-    }, [n]), C = i.useCallback(() => {
-      (0, d.ql)("")
-    }, []), N = e => {
+      l.kJ.setActiveCategoryIndex("" === e ? 0 : u.c), l.kJ.setInspectedExpressionPosition(0, 0), l.kJ.setSearchPlaceholder(null), (0, c.ql)(e), null == (t = n.current) || t.scrollTo(0)
+    }, [n]), I = i.useCallback(() => {
+      (0, c.ql)("")
+    }, []), T = e => {
       switch (e.keyCode) {
-        case _.yXg.ARROW_LEFT:
-        case _.yXg.ARROW_RIGHT:
-        case _.yXg.ARROW_UP:
-        case _.yXg.ARROW_DOWN:
+        case d.yXg.ARROW_LEFT:
+        case d.yXg.ARROW_RIGHT:
+        case d.yXg.ARROW_UP:
+        case d.yXg.ARROW_DOWN:
           document.activeElement !== e.target && e.preventDefault()
       }
-      g(e)
+      p(e)
     };
     return i.useImperativeHandle(t, () => ({
       focus: () => {
         var e;
-        return null == (e = v.current) ? true : e.focus()
+        return null == (e = E.current) ? true : e.focus()
       }
-    })), (0, r.jsx)(c.E1j, {
-      autoFocus: b,
-      query: I,
-      ref: v,
-      placeholder: null != S ? S : O,
-      onClear: C,
-      onKeyDown: N,
-      onFocus: E,
-      onChange: A,
-      className: o()(y, {
-        [h.searchBarFullRow]: m
-      }),
+    })), (0, r.jsx)(s.E1j, {
+      autoFocus: m,
+      query: b,
+      ref: E,
+      placeholder: null != O ? O : g,
+      onClear: I,
+      onKeyDown: T,
+      onFocus: h,
+      onChange: v,
       inputProps: {
-        "aria-label": p.intl.string(p.t.tCauZW),
+        "aria-label": f.intl.string(f.t.tCauZW),
         "aria-haspopup": "grid",
-        "aria-controls": a,
+        "aria-controls": _,
         "aria-expanded": true,
-        "aria-activedescendant": (0, l.NE)(a, T.columnIndex, T.rowIndex)
+        "aria-activedescendant": (0, o.NE)(_, y.columnIndex, y.rowIndex)
       }
     })
   }),
-  g = Chunk647438.memo(m)
+  p = Chunk647438.memo(_)

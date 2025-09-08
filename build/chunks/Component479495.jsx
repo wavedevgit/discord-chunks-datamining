@@ -1,12 +1,12 @@
 /** Chunk was on 25761 **/
-/** chunk id: 479495, original params: e,t,n (module,exports,require) **/
+/** chunk id: 479495, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => E
 }), require("./35282.js");
-var r, Chunk951288 = require("./951288.js"),
+var n, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk593473 = require("./593473.js"),
   Chunk873546 = require("./873546.js"),
   Chunk442837 = require("./442837.js"),
@@ -25,16 +25,16 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197571 = require("./197571.js");
 
-function v(e, t, n) {
+function x(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
-    value: n,
+    value: r,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : e[t] = n, e
+  }) : e[t] = r, e
 }
 Chunk442837.ZP.initialize();
-class P extends(r = Chunk647438.PureComponent) {
+class P extends(n = Chunk647438.PureComponent) {
   componentDidMount() {
     (0, Chunk108427.e)("reset_password")
   }
@@ -42,17 +42,17 @@ class P extends(r = Chunk647438.PureComponent) {
     let {
       password: e,
       error: t,
-      hasCancel: r,
+      hasCancel: n,
       working: i
     } = this.state, {
       theme: a,
-      authBoxClassName: l
-    } = this.props, o = null != exports ? exports : this.renderError("password");
+      authBoxClassName: o
+    } = this.props, l = null != exports ? exports : this.renderError("password");
     return (0, Chunk951288.jsxs)(Chunk388905.ZP, {
       onSubmit: this.handleSubmit,
       tag: "form",
       theme: Chunk120356,
-      className: l,
+      className: o,
       children: [(0, Chunk951288.jsx)("img", {
         alt: "",
         src: null == Chunk593473 ? require("./26230.js") : require("./935227.js"),
@@ -77,7 +77,7 @@ class P extends(r = Chunk647438.PureComponent) {
           type: "submit",
           submitting: Chunk647438,
           children: Chunk388032.intl.string(Chunk388032.t["FRep5+"])
-        }), r ? (0, Chunk951288.jsx)(Chunk388905.zx, {
+        }), n ? (0, Chunk951288.jsx)(Chunk388905.zx, {
           className: Chunk197571.marginTop8,
           onClick: this.handleGoToLogin,
           submitting: Chunk647438,
@@ -91,22 +91,22 @@ class P extends(r = Chunk647438.PureComponent) {
     let {
       mfaTicket: e,
       mfaMethods: t,
-      theme: n,
-      authBoxClassName: r,
+      theme: r,
+      authBoxClassName: n,
       width: i
     } = this.props, a = e => {
       let {
         mfaType: t,
-        data: n
+        data: r
       } = e;
-      return this.handleTokenSubmitMFAv2(t, n)
+      return this.handleTokenSubmitMFAv2(t, r)
     };
     return (0, Chunk951288.jsx)(Chunk388905.ZP, {
       style: {
         padding: 0
       },
       theme: require,
-      className: r,
+      className: n,
       children: (0, Chunk951288.jsx)(Chunk124860.Cd, {
         mfaFinish: Chunk120356,
         mfaChallenge: {
@@ -133,7 +133,7 @@ class P extends(r = Chunk647438.PureComponent) {
       children: [(0, Chunk951288.jsx)("img", {
         alt: "",
         src: require("./26230.js"),
-        className: l()(Chunk197571.marginBottom20, Chunk873546.tq ? Chunk197571.marginTop20 : "")
+        className: o()(Chunk197571.marginBottom20, Chunk873546.tq ? Chunk197571.marginTop20 : "")
       }), (0, Chunk951288.jsx)(Chunk388905.Dx, {
         className: Chunk197571.marginBottom40,
         children: Chunk388032.intl.string(Chunk388032.t.WAUOoK)
@@ -148,11 +148,11 @@ class P extends(r = Chunk647438.PureComponent) {
   }
   constructor(e) {
     var t;
-    super(e), v(this, "handleSubmit", async e => {
+    super(e), x(this, "handleSubmit", async e => {
       let {
         location: t,
-        onLoginSuccess: n,
-        source: r,
+        onLoginSuccess: r,
+        source: n,
         resetToken: s
       } = this.props, {
         password: i,
@@ -160,15 +160,15 @@ class P extends(r = Chunk647438.PureComponent) {
       } = this.state;
       if (e.preventDefault(), 0 === i.length) {
         this.setState({
-          error: x.intl.string(x.t.R98xDw)
-        }), O.S.dispatch(C.CkL.WAVE_EMPHASIZE);
+          error: S.intl.string(S.t.R98xDw)
+        }), j.S.dispatch(w.CkL.WAVE_EMPHASIZE);
         return
       }
       null != a && this.setState({
         error: null
       });
-      let l = s;
-      if (null != t && (l = (0, h.Z)(t)), null != l) {
+      let o = s;
+      if (null != t && (o = (0, p.Z)(t)), null != o) {
         this.setState({
           working: true
         });
@@ -178,20 +178,20 @@ class P extends(r = Chunk647438.PureComponent) {
             sms: t,
             webauthn: s,
             ticket: a,
-            token: o,
+            token: l,
             totp: c,
             backup: u
-          } = await p.Z.resetPassword(l, i, r);
-          e === p.c.MFA ? d.Z.dispatch({
+          } = await h.Z.resetPassword(o, i, n);
+          e === h.c.MFA ? d.Z.dispatch({
             type: "LOGIN_MFA_STEP",
             ticket: a,
             sms: t,
             webauthn: s,
             totp: c,
             backup: u
-          }) : null != n ? n(o) : (d.Z.dispatch({
+          }) : null != r ? r(l) : (d.Z.dispatch({
             type: "LOGIN_SUCCESS",
-            token: o
+            token: l
           }), this.handlePasswordChangeSuccess())
         } catch (e) {
           this.setState({
@@ -202,102 +202,102 @@ class P extends(r = Chunk647438.PureComponent) {
           working: false
         })
       }
-    }), v(this, "handleTokenSubmitMFAv2", async (e, t) => {
+    }), x(this, "handleTokenSubmitMFAv2", async (e, t) => {
       let {
-        location: n,
-        mfaTicket: r,
+        location: r,
+        mfaTicket: n,
         onLoginSuccess: s,
         resetToken: i,
         source: a
       } = this.props, {
-        password: l
+        password: o
       } = this.state;
-      if (0 === l.length) return d.Z.dispatch({
+      if (0 === o.length) return d.Z.dispatch({
         type: "LOGIN_RESET"
       }), Promise.reject();
-      let o = i;
-      if (null != n && (o = (0, h.Z)(n)), null == o) return d.Z.dispatch({
+      let l = i;
+      if (null != r && (l = (0, p.Z)(r)), null == l) return d.Z.dispatch({
         type: "LOGIN_RESET"
       }), Promise.reject();
       this.setState({
         working: true
       });
       try {
-        let n = await p.Z.resetPasswordMFAv2({
+        let r = await h.Z.resetPasswordMFAv2({
           method: e,
           code: t,
-          ticket: r,
-          password: l,
-          token: o,
+          ticket: n,
+          password: o,
+          token: l,
           source: a
         });
-        if (null != s) return void s(n);
+        if (null != s) return void s(r);
         d.Z.dispatch({
           type: "LOGIN_SUCCESS",
-          token: n
+          token: r
         }), this.handlePasswordChangeSuccess()
       } finally {
         this.setState({
           working: false
         })
       }
-    }), v(this, "handlePasswordChangeSuccess", () => {
+    }), x(this, "handlePasswordChangeSuccess", () => {
       let {
         replaceWith: e
       } = this.props;
       if (c.Em || c.tq) return void this.setState({
         success: true
       });
-      e(C.Z5c.APP)
-    }), v(this, "handleGoToLogin", () => {
+      e(w.Z5c.APP)
+    }), x(this, "handleGoToLogin", () => {
       let {
         transitionTo: e
       } = this.props;
-      p.Z.loginReset(), e(C.Z5c.LOGIN, {
+      h.Z.loginReset(), e(w.Z5c.LOGIN, {
         source: "reset_password"
       })
-    }), v(this, "handleOpenApp", () => {
+    }), x(this, "handleOpenApp", () => {
       (0, g.Z)("password_reset")
-    }), v(this, "hasError", e => null != this.state.apiErrors[e] || null != this.state.error), v(this, "renderError", e => {
+    }), x(this, "hasError", e => null != this.state.apiErrors[e] || null != this.state.error), x(this, "renderError", e => {
       let {
         apiErrors: t
       } = this.state;
       if (this.hasError(e)) {
-        let n = t[e];
-        return Array.isArray(n) ? n[0] : n
+        let r = t[e];
+        return Array.isArray(r) ? r[0] : r
       }
       return null
     });
-    let n = (null == (t = this.props.location) ? true : t.search) != null && "" !== this.props.location.search ? (0, o.parse)(this.props.location.search) : null;
+    let r = (null == (t = this.props.location) ? true : t.search) != null && "" !== this.props.location.search ? (0, l.parse)(this.props.location.search) : null;
     this.state = {
       method: "",
       password: "",
       code: "",
       apiErrors: {},
       error: null,
-      hasCancel: null != n && null != n.from_login,
+      hasCancel: null != r && null != r.from_login,
       working: false,
       success: false
     }
   }
 }
-v(P, "defaultProps", {
+x(P, "defaultProps", {
   transitionTo: Chunk703656.uL,
   replaceWith: Chunk703656.dL
 });
 let E = function(e) {
-  let t = (0, u.cj)([S.default], () => ({
-    mfaTicket: S.default.getMFATicket(),
-    mfaMethods: S.default.getMFAMethods()
+  let t = (0, u.cj)([O.default], () => ({
+    mfaTicket: O.default.getMFATicket(),
+    mfaMethods: O.default.getMFAMethods()
   }));
   return (0, s.jsx)(P, function(e) {
     for (var t = 1; t < arguments.length; t++) {
-      var n = null != arguments[t] ? arguments[t] : {},
-        r = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), r.forEach(function(t) {
-        v(e, t, n[t])
+      var r = null != arguments[t] ? arguments[t] : {},
+        n = Object.keys(r);
+      "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(r, e).enumerable
+      }))), n.forEach(function(t) {
+        x(e, t, r[t])
       })
     }
     return e

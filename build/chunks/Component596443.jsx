@@ -237,7 +237,6 @@ function U(e) {
           className: D.permissionsItemContainer,
           children: [(0, r.jsx)(c.E1j, {
             size: "sm",
-            className: D.searchBar,
             query: M,
             placeholder: S.intl.string(S.t["yD9+dH"]),
             onChange: w,

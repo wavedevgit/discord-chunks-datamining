@@ -1,7 +1,7 @@
 /** Chunk was on 57478 **/
 /** chunk id: 10217, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => k
+  Z: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -31,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk134351 = require("./134351.js");
 
-function I(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       l = Object.keys(n);
@@ -50,7 +50,7 @@ function I(e) {
   return e
 }
 
-function T(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,7 +62,7 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = function(e) {
+let I = function(e) {
   var t, n, a;
   let {
     clip: o,
@@ -74,20 +74,20 @@ let k = function(e) {
     onShare: v
   } = e, P = (0, u.Wu)([j.default], () => o.users.map(e => j.default.getUser(e)).filter(_.lm)), {
     analyticsLocations: w
-  } = (0, g.ZP)(b.Z.CLIPS_GALLERY_ITEM), [I, T] = r.useState(false), k = r.useRef(null), L = (0, y.Z)(null != (a = null == (t = o.editMetadata) ? true : t.start) ? a : 0), R = r.useRef(new d.sW(500, () => {
+  } = (0, g.ZP)(b.Z.CLIPS_GALLERY_ITEM), [T, k] = r.useState(false), I = r.useRef(null), L = (0, y.Z)(null != (a = null == (t = o.editMetadata) ? true : t.start) ? a : 0), R = r.useRef(new d.sW(500, () => {
     var e;
-    let t = k.current;
-    null != t && t.paused && (t.currentTime = L.current, null == (e = k.current) || e.play())
+    let t = I.current;
+    null != t && t.paused && (t.currentTime = L.current, null == (e = I.current) || e.play())
   })), B = r.useCallback(() => {
-    let e = k.current;
+    let e = I.current;
     null != e && (e.pause(), e.src = "")
   }, []), A = r.useCallback(() => {
     var e;
-    T(true), null == (e = R.current) || e.delay()
+    k(true), null == (e = R.current) || e.delay()
   }, []), H = r.useCallback(() => {
     var e, t, n;
-    T(false);
-    let l = k.current;
+    k(false);
+    let l = I.current;
     null == (e = R.current) || e.cancel(), null != l && (l.pause(), l.currentTime = null != (n = null == (t = o.editMetadata) ? true : t.start) ? n : 0)
   }, [null == (n = o.editMetadata) ? true : n.start]), z = r.useCallback(e => {
     var t, n;
@@ -114,12 +114,12 @@ let k = function(e) {
       children: [(0, l.jsx)(D, {
         clip: o,
         isNew: p,
-        videoRef: k
+        videoRef: I
       }), (0, l.jsxs)("div", {
         className: S.clipFooter,
         children: [(0, l.jsx)(Z, {
           clip: o,
-          focused: I,
+          focused: T,
           onFocus: A
         }), (0, l.jsx)(f.Text, {
           className: S.clipMetadata,
@@ -143,7 +143,7 @@ let k = function(e) {
               (null == a ? true : a.parentElement) !== i && (null == a || null == (r = a.parentElement) || null == (l = r.parentElement) ? true : l.parentElement) !== i && A()
             },
             "aria-label": E.intl.string(E.t.WTozwc)
-          }), I && (0, l.jsx)(M, {
+          }), T && (0, l.jsx)(M, {
             clip: o,
             actionsDisabled: s,
             exporting: c,
@@ -313,7 +313,7 @@ function M(e) {
     className: S.buttonContainer,
     children: [null != o && (0, l.jsx)(f.ua7, {
       text: E.intl.string(E.t.oyYWHB),
-      children: e => (0, l.jsx)(m.zx, T(I({}, e), {
+      children: e => (0, l.jsx)(m.zx, k(T({}, e), {
         disabled: a,
         color: p ? m.zx.Colors.RED : m.zx.Colors.PRIMARY,
         onClick: b,
@@ -328,7 +328,7 @@ function M(e) {
       }))
     }), (0, l.jsx)(f.ua7, {
       text: E.intl.string(E.t.bt75u7),
-      children: e => (0, l.jsx)(m.zx, T(I({}, e), {
+      children: e => (0, l.jsx)(m.zx, k(T({}, e), {
         disabled: a,
         color: m.zx.Colors.PRIMARY,
         onClick: g,
@@ -359,7 +359,7 @@ function M(e) {
           }
           return r
         }(e, ["onBlur"]);
-        return (0, l.jsx)(m.zx, T(I({}, r), {
+        return (0, l.jsx)(m.zx, k(T({}, r), {
           disabled: a && !n,
           submitting: n,
           color: m.zx.Colors.BRAND,

@@ -101,7 +101,6 @@ class C extends Chunk647438.PureComponent {
         });
       default:
         return (0, Chunk951288.jsx)(Chunk481060.E1j, {
-          className: Chunk577021.searchBar,
           query: module,
           onChange: this.handleChangeQuery,
           onClear: this.handleClearQuery,

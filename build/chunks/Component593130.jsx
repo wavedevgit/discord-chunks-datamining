@@ -129,14 +129,12 @@ function w(e) {
   let {
     query: t,
     setQuery: n,
-    submit: l,
-    isLoading: a
+    submit: l
   } = e;
   return (0, r.jsx)(c.E1j, {
     size: "sm",
     autoFocus: true,
     query: t,
-    isLoading: a,
     onChange: e => n(e),
     onClear: () => n(""),
     onKeyDown: e => "Enter" === e.key && l(),

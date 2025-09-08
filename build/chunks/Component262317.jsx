@@ -149,17 +149,17 @@ let G = (0, Chunk888651.$)(function(e) {
     hangStatusActivity: em,
     requestToStreamActivity: eg,
     showHangStatus: eb
-  } = e, ey = i.useRef(null), [e_, eC] = i.useState(false), [ev, ex] = i.useState(false), eO = (null == eg ? true : eg.session_id) != null, ej = () => {
+  } = e, ey = i.useRef(null), [e_, eC] = i.useState(false), [ev, ex] = i.useState(false), [eO, ej] = i.useState(false), eE = ev || eO, eS = (null == eg ? true : eg.session_id) != null, eI = () => {
     eC(!e_)
-  }, eE = () => {
-    (ee || eb || eO) && (null == el || el(h.id))
-  }, eS = i.useMemo(() => new o.sW(500, () => {
+  }, eP = () => {
+    (ee || eb || eS) && (null == el || el(h.id))
+  }, eZ = i.useMemo(() => new o.sW(500, () => {
     ex(true)
-  }), []), eI = e => {
-    e && eo ? eS.delay() : !e && eS.isDelayed() && eS.cancel()
-  }, eP = e => {
-    e && (eS.cancel(), ex(false))
-  }, eZ = () => {
+  }), []), eT = e => {
+    e && eo ? eZ.delay() : !e && eZ.isDelayed() && eZ.cancel()
+  }, eN = e => {
+    e && (eZ.cancel(), ex(false))
+  }, eA = () => {
     if (!(ee && (0, C.p9)(U, A.Z, Z.Z, T.Z, b.Z)[0])) return;
     let e = {
       streamType: R.lo.GUILD,
@@ -168,7 +168,7 @@ let G = (0, Chunk888651.$)(function(e) {
       guildId: U.guild_id
     };
     P.default.getId() !== h.id && d.default.selectVoiceChannel(U.id), et ? ((0, v.Z)(e), c.Z.selectParticipant(e.channelId, (0, _.V9)(e))) : (0, p.iV)(e), null == el || el(h.id)
-  }, eT = e => {
+  }, ew = e => {
     (0, u.jW)(e, async () => {
       let {
         default: e
@@ -184,27 +184,28 @@ let G = (0, Chunk888651.$)(function(e) {
         })
       }))
     })
-  }, eN = e => eh ? (0, r.jsx)(O.$, k(L({}, e), {
-    channel: U
+  }, eR = e => eh ? (0, r.jsx)(O.$, k(L({}, e), {
+    channel: U,
+    onEditStatus: ej
   })) : null != em ? (0, r.jsx)(j.I, k(L({}, e), {
     hangStatusActivity: em,
     channel: U
-  })) : null, eA = () => (0, r.jsx)(E.Z, {
+  })) : null, eM = () => (0, r.jsx)(E.Z, {
     userId: h.id,
     channel: U
-  }), ew = () => (0, f.dl)() && (0, f.zd)(U.id) ? null : (0, r.jsx)(x.Z, {
+  }), eD = () => (0, f.dl)() && (0, f.zd)(U.id) ? null : (0, r.jsx)(x.Z, {
     user: h,
     channel: U,
-    onWatch: eZ,
+    onWatch: eA,
     previewIsOpen: eo,
     location: ep
-  }), eR = (0, r.jsx)("div", {
+  }), eL = (0, r.jsx)("div", {
     className: D.draggable,
     "data-dnd-name": U.name,
     onMouseEnter: eu ? true : () => {
-      (ee || eb || eO) && !e_ && (null == ei || ei(h.id))
+      (ee || eb || eS) && !e_ && (null == ei || ei(h.id))
     },
-    onMouseLeave: eu ? true : eE,
+    onMouseLeave: eu ? true : eP,
     children: (0, r.jsx)(S.Z, {
       clickTrap: (null == h ? true : h.id) === (null == (t = N.default.getCurrentUser()) ? true : t.id) && e_,
       targetElementRef: ey,
@@ -243,9 +244,9 @@ let G = (0, Chunk888651.$)(function(e) {
             }),
             disabled: eu && !t,
             selected: e_,
-            onClick: t ? true : ej,
-            onDoubleClick: eZ,
-            onContextMenu: eT,
+            onClick: t ? true : eI,
+            onDoubleClick: eA,
+            onContextMenu: ew,
             guildId: U.guild_id,
             isSelf: eh,
             application: ef,
@@ -283,24 +284,24 @@ let G = (0, Chunk888651.$)(function(e) {
           })
         }
         let o = () => null;
-        return eb && ev ? o = eN : ee ? o = ew : eO && h.id !== P.default.getId() && (o = eA), (0, r.jsx)(s.yRy, {
+        return eb && eE ? o = eR : ee ? o = eD : eS && h.id !== P.default.getId() && (o = eM), (0, r.jsx)(s.yRy, {
           targetElementRef: ey,
           position: "right",
           renderPopout: o,
-          shouldShow: ea && !e_,
-          onRequestClose: eE,
-          align: eb && ev && !eh ? "center" : true,
-          spacing: eb && ev ? 8 : 0,
+          shouldShow: (ea || eb && eO) && !e_,
+          onRequestClose: eP,
+          align: eb && eE && !eh ? "center" : true,
+          spacing: eb && eE ? 8 : 0,
           children: () => (0, r.jsx)(I.ZP, k(L({}, n), {
             ref: ey,
             onMouseDown: e.onMouseDown,
             onKeyDown: e.onKeyDown,
-            handleHoverHangStatus: eI,
-            handleHoverIcons: eP
+            handleHoverHangStatus: eT,
+            handleHoverIcons: eN
           }))
         })
       })(e)
     })
   });
-  return $ ? J(eR) : eR
+  return $ ? J(eL) : eL
 })

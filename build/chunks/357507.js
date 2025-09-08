@@ -1,5 +1,5 @@
-/** Chunk was on 83560 **/
-/** chunk id: 357507, original params: t,e,r (module,exports,require) **/
+/** Chunk was on 27978 **/
+/** chunk id: 357507, original params: e,t,n (module,exports,require) **/
 module.exports = {
   header: "header__7c901",
   subtitle: "subtitle__7c901",
