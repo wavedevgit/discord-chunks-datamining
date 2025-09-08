@@ -50,7 +50,8 @@ function E(e) {
 function b() {
   Chunk358085.isPlatformEmbedded && (Chunk998502.ZP.InputEventServiceSetAllowed(true), Chunk570140.Z.dispatch({
     type: "SYSTEM_SERVICE_INITIALIZE",
-    initialized: true
+    initialized: true,
+    modules: ["input-service"]
   }), _.info("System service initialized."))
 }
 async function y() {
@@ -68,7 +69,8 @@ async function y() {
 function O() {
   Chunk358085.isPlatformEmbedded && (Chunk998502.ZP.InputEventServiceSetAllowed(false), Chunk570140.Z.dispatch({
     type: "SYSTEM_SERVICE_INITIALIZE",
-    initialized: false
+    initialized: false,
+    modules: ["input-service"]
   }), _.info("System service terminated."))
 }
 

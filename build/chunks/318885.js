@@ -68,7 +68,9 @@ function m(e, t) {
       overlay_game_name: null != m ? m.name : "Unknown Game",
       overlay_app_id: null != m ? m.id : null,
       overlay_render_method: null != y ? i.gl[y] : null,
-      media_session_id: l.Z.getMediaSessionId()
+      media_session_id: l.Z.getMediaSessionId(),
+      overlay_game_elevated: null == g ? true : g.elevated,
+      input_service_initialized: r.ZP.isInputServiceInitialized()
     }, t), e) {
     case f.rMx.VOICE_CHANNEL_SELECTED:
     case f.rMx.SETTINGS_PANE_VIEWED:

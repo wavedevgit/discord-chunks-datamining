@@ -603,8 +603,10 @@ function e4() {
 
 function e8(e) {
   let {
-    initialized: t
+    initialized: t,
+    modules: n
   } = e;
+  if (!n.includes("input-service")) returnfalse;
   Q = t
 }!__OVERLAY__ && ((0, Chunk358085.isDesktop)() || Chunk987650.iP) && (es = function() {
   let e = [],
@@ -824,6 +826,9 @@ class e6 extends(i = Chunk442837.ZP.Store) {
   addExecutableTrackedByAnalytics(e) {
     var t;
     ep.add(null != (t = (0, p.F)(e)) ? t : e)
+  }
+  isInputServiceInitialized() {
+    return Q
   }
 }
 G(e6, "displayName", "RunningGameStore");
