@@ -19,10 +19,10 @@ function f(e) {
     currentUser: t
   } = e, {
     mutualFriendsCount: f,
-    mutualGuilds: m
-  } = (0, i.Z)(n), p = null == m ? true : m.length, x = (0, r.Z)(n), b = (0, o.k)({
+    mutualGuilds: p
+  } = (0, i.Z)(n), m = null == p ? true : p.length, x = (0, l.Z)(n), b = (0, o.k)({
     location: "useUserProfileModalV2TabBarItems"
-  }), h = (0, l.P)({
+  }), h = (0, r.P)({
     location: "useUserProfileModalV2TabBarItems"
   }), g = (0, c.Z)(n.id), j = [], v = n.id === (null == t ? true : t.id), y = g.length > 0;
   return (v && b || y && h) && j.push({
@@ -38,7 +38,7 @@ function f(e) {
     section: d.oh.MUTUAL_FRIENDS,
     subsection: true
   }), j.push({
-    text: (0, s.Z)(p),
+    text: (0, s.Z)(m),
     section: d.oh.MUTUAL_GUILDS,
     subsection: true
   })), j

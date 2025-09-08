@@ -34,9 +34,9 @@ function T(e) {
       focusSectionProps: T
     } = e,
     N = (0, o.TH)(),
-    j = (0, s.e7)([O.Z], () => O.Z.getGuildId()),
-    P = (0, s.e7)([b.Z], () => b.Z.getChannel(n), [n]),
-    x = null != j ? j : null == P ? true : P.guild_id,
+    P = (0, s.e7)([O.Z], () => O.Z.getGuildId()),
+    j = (0, s.e7)([b.Z], () => b.Z.getChannel(n), [n]),
+    x = null != P ? P : null == j ? true : j.guild_id,
     A = (0, s.e7)([_.Z], () => _.Z.getGuild(x), [x]),
     Z = (0, p.Z)(),
     w = (0, g.D)(),
@@ -77,7 +77,7 @@ function T(e) {
     size: R,
     active: true,
     className: S.guildIcon
-  }), t = A.name) : null != P && (P.isDM() || P.isGroupDM()) ? (t = I.intl.string(I.t.YUU0RE), U = (0, r.jsx)(c.gw7, {
+  }), t = A.name) : null != j && (j.isDM() || j.isGroupDM()) ? (t = I.intl.string(I.t.YUU0RE), U = (0, r.jsx)(c.gw7, {
     size: L
   })) : N.pathname.startsWith(y.Z5c.GLOBAL_DISCOVERY) ? (t = I.intl.string(I.t["4nEZLi"]), U = (0, r.jsx)(c.Jmo, {
     size: L

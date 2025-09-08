@@ -27,7 +27,7 @@ function p(e) {
     disableInteraction: y = false
   } = e, j = (0, d.Z)(t.applicationId), m = j.length > 0, v = o.default.getCurrentUser(), x = (null == v ? true : v.id) === r;
   return (0, a.kO)(t.applicationId) ? (0, n.jsx)("div", {
-    className: g.loadingCover
+    className: f.loadingCover
   }) : (0, n.jsxs)("div", {
     className: b.container,
     children: [(0, n.jsx)(s.Z, {
@@ -36,14 +36,14 @@ function p(e) {
       applicationId: t.applicationId,
       userId: r,
       disableInteraction: y,
-      className: l()(m ? b.socialProofBackdrop : true, (null == t ? true : t.imageSrc) == null || y ? true : g.hoverActiveEffect)
+      className: l()(m ? b.socialProofBackdrop : true, (null == t ? true : t.imageSrc) == null || y ? true : f.hoverActiveEffect)
     }), !y && x && (0, n.jsx)(u.Z, {
       game: t,
       widgetType: i,
       className: b.removeGameButton,
       iconSize: "xs"
     }), !y && m && (0, n.jsx)(c.Z, {
-      label: f.intl.formatToPlainString(f.t.ujhJdH, {
+      label: g.intl.formatToPlainString(g.t.ujhJdH, {
         numFriends: j.length
       }),
       className: b.socialProof,

@@ -50,7 +50,7 @@ var Chunk951288 = require("./951288.js"),
 let W = e => {
     let {
       selected: t
-    } = e, n = (0, a.e7)([m.default], () => m.default.getCurrentUser()), r = (0, a.e7)([b.Z], () => b.Z.getPremiumTypeSubscription()), i = (0, x.N)(), l = (0, P.Ng)(), o = (0, y.Vi)(), s = (0, U.V)(), c = (0, O.Qo)(n, r), u = (0, a.e7)([E.Z], () => E.Z.getCreatedAtOverride()), d = t || null != i || null != l || o || null != s || c, p = null != u ? u : null == n ? true : n.createdAt;
+    } = e, n = (0, a.e7)([m.default], () => m.default.getCurrentUser()), r = (0, a.e7)([b.Z], () => b.Z.getPremiumTypeSubscription()), i = (0, x.N)(), l = (0, j.Ng)(), o = (0, y.Vi)(), s = (0, U.V)(), c = (0, O.Qo)(n, r), u = (0, a.e7)([E.Z], () => E.Z.getCreatedAtOverride()), d = t || null != i || null != l || o || null != s || c, p = null != u ? u : null == n ? true : n.createdAt;
     return d || null != n && null != p && Date.now() - p.getTime() > 12096e5
   },
   Y = e => {
@@ -103,8 +103,8 @@ let W = e => {
     });
     let es = (0, l.JA)("nitro"),
       ec = (0, x.N)(),
-      eu = (0, P.Ng)(),
-      ed = (0, j.$)("nitro tab"),
+      eu = (0, j.Ng)(),
+      ed = (0, P.$)("nitro tab"),
       ep = (0, v.W)(),
       ef = (0, y.Vi)(),
       eh = (0, Z.HI)({
@@ -133,12 +133,12 @@ let W = e => {
       }),
       eT = (null == ec ? true : ec.trial_id) === V.a7,
       eN = (0, p.YZ)("NitroTabButton"),
-      ej = [],
-      eP = [];
-    (0, f.Kl)() && (ef && ej.push(o.z.BOGO_2025_NITRO_TAB_BADGE), eS && ej.push(o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE), ep && ej.push(o.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2), eN && ej.push(o.z.CUSTOM_THEMES_PREMIUM_TAB_BADGE));
-    let [ex, eA] = (0, g.US)(ej, true, true);
-    eO && eP.push(o.z.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK);
-    let [eZ, ew] = (0, g.US)(eP, true, true);
+      eP = [],
+      ej = [];
+    (0, f.Kl)() && (ef && eP.push(o.z.BOGO_2025_NITRO_TAB_BADGE), eS && eP.push(o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE), ep && eP.push(o.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2), eN && eP.push(o.z.CUSTOM_THEMES_PREMIUM_TAB_BADGE));
+    let [ex, eA] = (0, g.US)(eP, true, true);
+    eO && ej.push(o.z.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK);
+    let [eZ, ew] = (0, g.US)(ej, true, true);
     if (i.useEffect(() => {
         true === q && null != ex && eA(F.L.AUTO_DISMISS), true === q && null != eZ && ew(F.L.AUTO_DISMISS)
       }, [eA, q, ex, ew, eZ]), !W({

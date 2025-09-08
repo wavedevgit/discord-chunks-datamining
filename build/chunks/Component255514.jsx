@@ -164,9 +164,9 @@ let K = e => {
     }), (0, r.jsxs)(l.hzk, {
       "data-migration-pending": true,
       className: H.body,
-      children: [null != ea && (0, r.jsx)(A.Z, {
+      children: [null != ea && (0, r.jsx)(M.Z, {
         element: ea
-      }), null != ec && (0, r.jsx)(M.Z, {
+      }), null != ec && (0, r.jsx)(A.Z, {
         element: ec
       }), null != X(t, "message_preview") && ("message" === n.name || "first_dm" === n.name || "report_to_mod_message" === n.name) && (0, r.jsx)(N.Z, {
         message: n.record

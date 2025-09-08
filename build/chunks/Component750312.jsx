@@ -1,7 +1,7 @@
 /** Chunk was on 1267 **/
 /** chunk id: 750312, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -9,6 +9,7 @@ var Chunk951288 = require("./951288.js"),
   o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
   Chunk314897 = require("./314897.js"),
   Chunk785717 = require("./785717.jsx"),
@@ -16,79 +17,91 @@ var Chunk951288 = require("./951288.js"),
   Chunk982072 = require("./982072.js"),
   Chunk781040 = require("./781040.jsx"),
   Chunk840367 = require("./840367.jsx"),
+  Chunk388032 = require("./388032.jsx"),
   Chunk415734 = require("./415734.js");
 
-function y(e) {
+function m(e) {
   let {
     userId: t,
     widget: r,
     children: l,
-    disableInteraction: y,
-    className: m,
-    index: v,
+    disableInteraction: s,
+    className: y,
+    index: m,
     trailingContent: x,
     headerTitle: h,
     headerSubtitle: w,
     headerActionButtons: P
-  } = e, E = (0, s.Dt)(), S = (0, c.e7)([u.default], () => u.default.getId() === t), I = i.useRef(null), T = i.useRef(null), {
+  } = e, E = (0, u.Dt)(), S = (0, c.e7)([d.default], () => d.default.getId() === t), I = i.useRef(null), T = i.useRef(null), {
     trackUserProfileAction: D
-  } = (0, d.KZ)(), _ = (0, g.Z)({
+  } = (0, g.KZ)(), _ = (0, b.Z)({
     widgetType: r.type,
     onAction: D
-  }), N = S && null != v && !y, {
-    isDragging: k
+  }), N = S && null != m && !s, {
+    isDragging: k,
+    dragSourcePosition: Z
   } = (0, f.q)({
     dropRef: I,
     dragRef: T,
     userId: t,
     widget: r,
-    index: v,
+    index: m,
     disableInteraction: !N
-  }), [Z, A] = i.useState(false);
-  return (0, n.jsx)(j, {
+  }), [A, R] = i.useState(false);
+  return (0, n.jsx)(v, {
     ref: I,
     disableInteraction: !N,
-    onMouseEnter: () => A(true),
-    onMouseLeave: () => A(false),
+    onMouseEnter: () => R(true),
+    onMouseLeave: () => R(false),
+    dragSourcePosition: Z,
+    index: null != m ? m : 0,
     children: (0, n.jsxs)("section", {
       ref: _,
-      className: o()(O.container, m, {
-        [O.isDragging]: k
+      className: o()(j.container, y, {
+        [j.isDragging]: k
       }),
       "aria-labelledby": E,
-      children: [N && (0, n.jsx)(b.Z, {
+      children: [N && (0, n.jsx)(p.Z, {
         buttonRef: T,
         widget: r,
-        className: o()(O.dragHandleButton, {
-          [O.opacity]: Z || k
+        className: o()(j.dragHandleButton, {
+          [j.opacity]: A || k
         })
-      }), (0, n.jsx)(p.Z, {
+      }), (0, n.jsx)(O.Z, {
         userId: t,
         headingId: E,
         title: h,
         subtitle: w,
         actionButtons: P,
         widget: r,
-        disableInteraction: y
+        disableInteraction: s
       }), (0, n.jsxs)(a.y5, {
         children: [l, x]
       })]
     })
   })
 }
-let j = e => {
+let v = e => {
   let {
     ref: t,
     children: r,
     disableInteraction: i,
     onMouseEnter: l,
-    onMouseLeave: o
-  } = e;
+    onMouseLeave: a,
+    dragSourcePosition: c,
+    index: u
+  } = e, d = (0, s.zPA)() && null != c, g = d && u < c, f = d && u > c;
   return i ? r : (0, n.jsx)("div", {
     ref: t,
-    className: O.dragAndDropHitbox,
+    className: o()(j.dragAndDropHitbox, {
+      [j.dropIndicatorBefore]: g,
+      [j.dropIndicatorAfter]: f
+    }),
     onMouseEnter: l,
-    onMouseLeave: o,
+    onMouseLeave: a,
+    "aria-label": y.intl.formatToPlainString(y.t.YLczh4, {
+      positionNumber: u + 1
+    }),
     children: r
   })
 }

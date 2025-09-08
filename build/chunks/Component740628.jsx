@@ -25,38 +25,38 @@ function v(e) {
   let {
     section: n,
     subsection: t,
-    user: l,
-    currentUser: r,
+    user: r,
+    currentUser: l,
     displayProfile: i,
     guildId: c,
     channelId: a,
     onClose: s
   } = e;
   return n === b.oh.ACTIVITY ? (0, o.jsx)(f.Z, {
-    user: l,
-    currentUser: r,
+    user: r,
+    currentUser: l,
     guildId: c,
     onClose: s
-  }) : n === b.oh.MUTUAL_FRIENDS ? (0, o.jsx)(p.Z, {
-    user: l,
+  }) : n === b.oh.MUTUAL_FRIENDS ? (0, o.jsx)(m.Z, {
+    user: r,
     guildId: c,
     channelId: a,
     onClose: s
   }) : n === b.oh.MUTUAL_GUILDS ? (0, o.jsx)(x.Z, {
-    user: l,
+    user: r,
     onClose: s
   }) : n === b.oh.BOT_DATA_ACCESS ? (0, o.jsx)(d.Z, {
-    user: l
+    user: r
   }) : n === b.oh.BOT_INFO ? (0, o.jsx)(u.Z, {
-    user: l,
-    currentUser: r,
+    user: r,
+    currentUser: l,
     displayProfile: i,
     guildId: c,
     subsection: t,
     onClose: s
-  }) : (0, o.jsx)(m.Z, {
-    user: l,
-    currentUser: r,
+  }) : (0, o.jsx)(p.Z, {
+    user: r,
+    currentUser: l,
     displayProfile: i,
     subsection: t,
     onClose: s
@@ -68,18 +68,18 @@ function y(e) {
   let {
     user: u,
     currentUser: f,
-    displayProfile: m,
-    guildId: p,
+    displayProfile: p,
+    guildId: m,
     items: x,
     initialSection: y = b.oh.USER_INFO,
     initialSubsection: _,
     onClose: I
   } = e, {
     trackUserProfileAction: O
-  } = (0, s.KZ)(), Z = (0, r.e7)([a.Z], () => a.Z.hidePersonalInformation), [{
+  } = (0, s.KZ)(), Z = (0, l.e7)([a.Z], () => a.Z.hidePersonalInformation), [{
     section: P,
     subsection: T
-  }, N] = l.useState({
+  }, N] = r.useState({
     section: null != (d = null == (n = x.find(e => {
       let {
         section: n
@@ -88,13 +88,13 @@ function y(e) {
     })) ? true : n.section) ? d : null == (t = x[0]) ? true : t.section,
     subsection: _
   });
-  l.useEffect(() => {
+  r.useEffect(() => {
     null == x.find(e => e.section === P) && N({
       section: x[0].section,
       subsection: true
     })
   }, [x, P]);
-  let A = l.useCallback(e => {
+  let A = r.useCallback(e => {
     O({
       action: "PRESS_SECTION",
       section: e
@@ -142,8 +142,8 @@ function y(e) {
       subsection: T,
       user: u,
       currentUser: f,
-      displayProfile: m,
-      guildId: p,
+      displayProfile: p,
+      guildId: m,
       onClose: I
     })]
   })

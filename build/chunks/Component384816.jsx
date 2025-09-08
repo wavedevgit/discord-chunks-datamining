@@ -35,10 +35,10 @@ function O(e) {
     onClose: P
   } = e, {
     trackUserProfileAction: T
-  } = (0, f.KZ)(), N = (0, l.e7)([d.Z], () => d.Z.getGuildId()), A = (0, c.Y)({
+  } = (0, f.KZ)(), N = (0, r.e7)([d.Z], () => d.Z.getGuildId()), A = (0, c.Y)({
     userId: n.id
-  }), C = (0, l.e7)([u.Z], () => u.Z.hidePersonalInformation), E = (0, l.e7)([s.default], () => s.default.locale), S = (0, p.Z)(n.id), w = (0, m.Z)(n.id);
-  return (0, o.jsxs)(r.zJl, {
+  }), C = (0, r.e7)([u.Z], () => u.Z.hidePersonalInformation), E = (0, r.e7)([s.default], () => s.default.locale), S = (0, m.Z)(n.id), w = (0, p.Z)(n.id);
+  return (0, o.jsxs)(l.zJl, {
     fade: true,
     className: I.scroller,
     children: [(null == O ? true : O.bio) != null && (null == O ? true : O.bio) !== "" && !C && (0, o.jsx)(x.Z, {
@@ -51,9 +51,9 @@ function O(e) {
       scrollIntoView: Z === y.Tb.ROLES
     }), n.isProvisional && (0, o.jsx)(j.Z, {
       heading: _.intl.string(_.t.Iyka0d),
-      headingIcon: (0, o.jsx)(r.Mgn, {
+      headingIcon: (0, o.jsx)(l.Mgn, {
         size: "xxs",
-        color: r.TVs.colors.HEADER_PRIMARY
+        color: l.TVs.colors.HEADER_PRIMARY
       }),
       headingColor: "header-secondary",
       children: (0, o.jsx)(a.n, {

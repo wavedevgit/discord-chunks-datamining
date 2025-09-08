@@ -38,10 +38,10 @@ function x(e) {
     gameFriends: _,
     hasOutgoingPendingGameFriends: I,
     hasIncomingPendingGameFriends: O
-  } = (0, m.H)({
+  } = (0, p.H)({
     userId: n.id
   }), Z = _.length > 0 || I || O;
-  return g === p.OGo.BLOCKED ? null : n.id === t.id ? (0, o.jsxs)(o.Fragment, {
+  return g === m.OGo.BLOCKED ? null : n.id === t.id ? (0, o.jsxs)(o.Fragment, {
     children: [(0, o.jsx)(a.Z, {
       user: n,
       guildId: x,
@@ -59,7 +59,7 @@ function x(e) {
     children: [(0, o.jsx)(s.Z, {
       type: "text",
       userId: n.id,
-      onClose: r.Z.popAll,
+      onClose: l.Z.popAll,
       autoFocus: true
     }), (0, o.jsx)(d.Z, {
       type: "icon",
@@ -68,12 +68,12 @@ function x(e) {
       viewProfileItem: y,
       themeColor: "secondary"
     })]
-  }) : g === p.OGo.PENDING_INCOMING ? (0, o.jsxs)(o.Fragment, {
+  }) : g === m.OGo.PENDING_INCOMING ? (0, o.jsxs)(o.Fragment, {
     children: [(0, o.jsx)(s.Z, {
       type: "text",
       userId: n.id,
-      color: l.zx.Colors.BRAND,
-      onClose: r.Z.popAll,
+      color: r.zx.Colors.BRAND,
+      onClose: l.Z.popAll,
       autoFocus: true
     }), (0, o.jsx)(d.Z, {
       type: "icon",
@@ -81,12 +81,12 @@ function x(e) {
       guildId: x,
       themeColor: "secondary"
     })]
-  }) : g === p.OGo.FRIEND || g === p.OGo.PENDING_OUTGOING ? (0, o.jsxs)(o.Fragment, {
+  }) : g === m.OGo.FRIEND || g === m.OGo.PENDING_OUTGOING ? (0, o.jsxs)(o.Fragment, {
     children: [(0, o.jsx)(s.Z, {
       type: "text",
       userId: n.id,
-      color: l.zx.Colors.BRAND,
-      onClose: r.Z.popAll,
+      color: r.zx.Colors.BRAND,
+      onClose: l.Z.popAll,
       autoFocus: true
     }), (0, o.jsx)(f.g, {
       type: "icon",
@@ -102,11 +102,11 @@ function x(e) {
       viewProfileItem: y,
       themeColor: "secondary"
     })]
-  }) : g === p.OGo.NONE && Z ? (0, o.jsxs)(o.Fragment, {
+  }) : g === m.OGo.NONE && Z ? (0, o.jsxs)(o.Fragment, {
     children: [(0, o.jsx)(s.Z, {
       type: "text",
       userId: n.id,
-      onClose: r.Z.popAll,
+      onClose: l.Z.popAll,
       autoFocus: true
     }), (0, o.jsx)(f.k9, {
       type: "icon",
@@ -131,12 +131,12 @@ function x(e) {
       type: "text",
       userId: n.id,
       analyticsLocation: v,
-      color: l.zx.Colors.BRAND,
+      color: r.zx.Colors.BRAND,
       autoFocus: true
     }), (0, o.jsx)(s.Z, {
       type: "icon",
       userId: n.id,
-      onClose: r.Z.popAll,
+      onClose: l.Z.popAll,
       themeColor: "secondary"
     }), (0, o.jsx)(d.Z, {
       type: "icon",

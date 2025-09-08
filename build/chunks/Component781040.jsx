@@ -1,13 +1,16 @@
 /** Chunk was on 1267 **/
 /** chunk id: 781040, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk323946 = require("./323946.js"),
+var Chunk120356 = require("./120356.js"),
+  l = require.n(Chunk120356),
+  Chunk323946 = require("./323946.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
+  Chunk313201 = require("./313201.js"),
   Chunk314897 = require("./314897.js"),
   Chunk785717 = require("./785717.jsx"),
   Chunk86419 = require("./86419.js"),
@@ -16,7 +19,7 @@ var Chunk323946 = require("./323946.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk176870 = require("./176870.js");
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -35,7 +38,7 @@ function b(e) {
   return e
 }
 
-function p(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,23 +50,26 @@ function p(e, t) {
     Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
   }), e
 }
-let O = e => {
+let m = e => {
     let {
-      children: t
+      widgetTitle: t,
+      children: r
     } = e, {
-      isDragging: r
-    } = (0, i.f)(e => ({
+      isDragging: i
+    } = (0, o.f)(e => ({
       isDragging: e.isDragging()
     }));
-    return (0, n.jsx)(l.ua7, {
-      "aria-label": f.intl.string(f.t.HWNJJC),
-      text: (0, n.jsx)(y, {}),
+    return (0, n.jsx)(a.ua7, {
+      "aria-label": p.intl.formatToPlainString(p.t.HWNJJC, {
+        widgetTitle: t
+      }),
+      text: (0, n.jsx)(v, {}),
       position: "top",
-      shouldShow: true !== r,
-      children: t
+      shouldShow: true !== i,
+      children: r
     })
   },
-  y = () => (0, Chunk951288.jsxs)("div", {
+  v = () => (0, Chunk951288.jsxs)("div", {
     className: Chunk176870.dragClickTooltipText,
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
@@ -81,35 +87,35 @@ let O = e => {
       })
     })]
   }),
-  j = e => {
+  x = e => {
     let {
       children: t,
       widget: i,
-      targetRef: g
+      targetRef: l
     } = e, {
-      trackUserProfileEditAction: O
-    } = (0, c.KZ)(), y = e => {
+      trackUserProfileEditAction: o
+    } = (0, d.KZ)(), s = e => {
       if (e.shiftKey) {
-        (0, s.y8)(i.type), O({
+        (0, g.y8)(i.type), o({
           action: "WIDGET_REMOVED",
           widgetEdited: i.type
-        }), (0, u.L$)(d.qb.WIDGET_REMOVED);
+        }), (0, f.L$)(b.qb.WIDGET_REMOVED);
         return
-      }(0, l.ZDy)(async () => {
+      }(0, a.ZDy)(async () => {
         let {
           default: e
         } = await r.e("70887").then(r.bind(r, 37668));
-        return t => (0, n.jsx)(e, p(b({}, t), {
-          userId: a.default.getId(),
+        return t => (0, n.jsx)(e, j(y({}, t), {
+          userId: u.default.getId(),
           widget: i,
-          trackUserProfileEditAction: O
+          trackUserProfileEditAction: o
         }))
       }, {
         stackingBehavior: "stack"
       })
     };
-    return (0, n.jsx)(l.yRy, {
-      targetElementRef: g,
+    return (0, n.jsx)(a.yRy, {
+      targetElementRef: l,
       align: "top",
       position: "right",
       disablePointerEvents: false,
@@ -117,20 +123,20 @@ let O = e => {
         let {
           closePopout: t
         } = e;
-        return (0, n.jsx)(l.v2r, {
+        return (0, n.jsx)(a.v2r, {
           navId: "user-profile-widget-context-menu",
           onClose: () => {
-            (0, o.Zy)(), t()
+            (0, c.Zy)(), t()
           },
           onSelect: () => {},
-          "aria-label": f.intl.string(f.t.xpSHSk),
-          children: (0, n.jsx)(l.kSQ, {
-            children: (0, n.jsx)(l.sNh, {
+          "aria-label": p.intl.string(p.t.xpSHSk),
+          children: (0, n.jsx)(a.kSQ, {
+            children: (0, n.jsx)(a.sNh, {
               id: "remove-widget",
-              label: f.intl.string(f.t.Mm07YW),
-              action: y,
+              label: p.intl.string(p.t.Mm07YW),
+              action: s,
               color: "danger",
-              icon: l.XHJ
+              icon: a.XHJ
             })
           })
         })
@@ -138,23 +144,32 @@ let O = e => {
       children: t
     })
   },
-  m = e => {
+  h = e => {
     let {
       widget: t,
       className: r,
       buttonRef: i
-    } = e;
-    return (0, n.jsx)(O, {
-      children: e => (0, n.jsx)(j, {
+    } = e, o = (0, g.mR)(t), c = (0, s.Dt)();
+    return (0, n.jsx)(m, {
+      widgetTitle: o,
+      children: e => (0, n.jsx)(x, {
         targetRef: i,
         widget: t,
-        children: t => (0, n.jsx)(l.P3F, p(b({
+        children: t => (0, n.jsxs)(a.P3F, j(y({
           innerRef: i,
-          className: r
+          className: l()(O.dragHandleButton, r),
+          "data-dnd-name": o,
+          "aria-label": p.intl.formatToPlainString(p.t.HWNJJC, {
+            widgetTitle: o
+          }),
+          "aria-describedby": c
         }, e, t), {
-          children: (0, n.jsx)(l.Vni, {
+          children: [(0, n.jsx)(a.Vni, {
             size: "sm"
-          })
+          }), (0, n.jsx)(a.nn4, {
+            id: c,
+            children: p.intl.string(p.t.bsuqFh)
+          })]
         }))
       })
     })

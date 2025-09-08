@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk823379 = require("./823379.js"),
   Chunk981631 = require("./981631.js");
 
-function P(e, t, n, r) {
+function j(e, t, n, r) {
   i.useEffect(() => {
     let i = t(),
       l = new a.Fh(e, () => {
@@ -43,7 +43,7 @@ function P(e, t, n, r) {
 }
 
 function x() {
-  return P([Chunk131951.Z, Chunk944486.Z], () => ({
+  return j([Chunk131951.Z, Chunk944486.Z], () => ({
     inVoiceChannel: null != Chunk944486.Z.getVoiceChannelId(),
     selfMute: Chunk131951.Z.isSelfMute(),
     selfDeaf: Chunk131951.Z.isSelfDeaf(),
@@ -63,7 +63,7 @@ function x() {
 }
 
 function A() {
-  return P([Chunk131951.Z, Chunk944486.Z], () => ({
+  return j([Chunk131951.Z, Chunk944486.Z], () => ({
     videoEnabled: Chunk131951.Z.isVideoEnabled(),
     inVoiceChannel: null != Chunk944486.Z.getVoiceChannelId()
   }), (e, t) => {
@@ -81,7 +81,7 @@ function A() {
 }
 
 function Z() {
-  return P([Chunk592125.Z, Chunk19780.Z, Chunk944486.Z, Chunk258609.Z], () => {
+  return j([Chunk592125.Z, Chunk19780.Z, Chunk944486.Z, Chunk258609.Z], () => {
     let e = Chunk592125.Z.getChannel(Chunk944486.Z.getVoiceChannelId()),
       t = null == module ? true : module.type,
       n = null == module ? true : module.getGuildId(),
@@ -115,16 +115,16 @@ function Z() {
 }
 
 function w() {
-  return P([Chunk606304.Z], () => Chunk606304.Z.isCurrentUserSpeaking(), (e, t) => {
+  return j([Chunk606304.Z], () => Chunk606304.Z.isCurrentUserSpeaking(), (e, t) => {
     if (e !== t) {
       let e = E.Z.isSelfMute();
-      if (E.Z.getMode() === j.pM4.PUSH_TO_TALK && !e) return t ? "ptt_start" : "ptt_stop"
+      if (E.Z.getMode() === P.pM4.PUSH_TO_TALK && !e) return t ? "ptt_start" : "ptt_stop"
     }
   }), null
 }
 
 function L() {
-  return P([Chunk131951.Z], () => Chunk131951.Z.getActiveVoiceFilter(), (e, t) => {
+  return j([Chunk131951.Z], () => Chunk131951.Z.getActiveVoiceFilter(), (e, t) => {
     if (e !== t)
       if (null != t) return null != e ? "voice_filter_swap" : "voice_filter_on";
       else return "voice_filter_off"
@@ -132,31 +132,31 @@ function L() {
 }
 
 function R() {
-  return P([Chunk131951.Z], () => Chunk131951.Z.isSelfMutedTemporarily(), (e, t) => {
+  return j([Chunk131951.Z], () => Chunk131951.Z.isSelfMutedTemporarily(), (e, t) => {
     if (e !== t) {
       let e = E.Z.isSelfMute();
-      if (E.Z.getMode() === j.pM4.VOICE_ACTIVITY && !e) return t ? "ptt_stop" : "ptt_start"
+      if (E.Z.getMode() === P.pM4.VOICE_ACTIVITY && !e) return t ? "ptt_stop" : "ptt_start"
     }
   }), null
 }
 
 function D() {
-  return P([Chunk606304.Z], () => Chunk606304.Z.isCurrentUserPrioritySpeaker(), (e, t) => {
+  return j([Chunk606304.Z], () => Chunk606304.Z.isCurrentUserPrioritySpeaker(), (e, t) => {
     if (e !== t) {
       let e = E.Z.isSelfMute();
-      if (E.Z.getMode() === j.pM4.VOICE_ACTIVITY && !e) return t ? "ptt_start" : "ptt_stop"
+      if (E.Z.getMode() === P.pM4.VOICE_ACTIVITY && !e) return t ? "ptt_start" : "ptt_stop"
     }
   }), null
 }
 
 function k() {
-  return P([Chunk979651.Z], () => Chunk979651.Z.userHasBeenMovedVersion, (e, t) => {
+  return j([Chunk979651.Z], () => Chunk979651.Z.userHasBeenMovedVersion, (e, t) => {
     if (e !== t) return "user_moved"
   }), null
 }
 
 function M() {
-  return P([Chunk944486.Z, Chunk979651.Z], () => {
+  return j([Chunk944486.Z, Chunk979651.Z], () => {
     let e = Chunk944486.Z.getVoiceChannelId();
     if (null == module) return Chunk590415.xO.NONE;
     let t = Chunk979651.Z.getVoiceStateForChannel(module);
@@ -167,7 +167,7 @@ function M() {
 }
 
 function U() {
-  return P([Chunk944486.Z, Chunk199902.Z, Chunk314897.default, Chunk979651.Z, Chunk592125.Z], () => {
+  return j([Chunk944486.Z, Chunk199902.Z, Chunk314897.default, Chunk979651.Z, Chunk592125.Z], () => {
     let e, t, n = Chunk944486.Z.getVoiceChannelId(),
       r = Chunk314897.default.getId(),
       i = [],
@@ -221,7 +221,7 @@ function U() {
 }
 
 function G() {
-  return P([Chunk944486.Z, Chunk317381.ZP, Chunk314897.default], () => {
+  return j([Chunk944486.Z, Chunk317381.ZP, Chunk314897.default], () => {
     let e = Chunk944486.Z.getVoiceChannelId(),
       t = Chunk944486.Z.getChannelId(),
       n = Chunk317381.ZP.getConnectedActivityLocation(),
@@ -266,7 +266,7 @@ function G() {
 }
 
 function B() {
-  return P([Chunk106301.Z, Chunk944486.Z], () => ({
+  return j([Chunk106301.Z, Chunk944486.Z], () => ({
     hangStatus: Chunk106301.Z.getCurrentHangStatus(),
     customHangStatus: Chunk106301.Z.getCustomHangStatus(),
     gameActivityHangStatus: Chunk106301.Z.getGameActivityHangStatus(),

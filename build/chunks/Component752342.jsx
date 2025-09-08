@@ -48,8 +48,8 @@ function E(e) {
     openedAt: U,
     onClose: k,
     sourceAnalyticsLocations: V = []
-  } = e, F = E === T.ME ? true : E, G = (0, u.ZP)(n.id, F), z = s.ZP.getName(F, S, n), K = (0, a.Dt)(), {
-    analyticsLocations: H
+  } = e, F = E === T.ME ? true : E, G = (0, u.ZP)(n.id, F), z = s.ZP.getName(F, S, n), H = (0, a.Dt)(), {
+    analyticsLocations: K
   } = (0, c.ZP)([...V, i.Z.USER_PROFILE_MODAL]), W = (0, d.ZB)({
     layout: "MODAL",
     userId: n.id,
@@ -60,24 +60,24 @@ function E(e) {
     roleId: D
   }), Y = (0, Z.Z)(n);
   return (0, o.jsx)(c.Gt, {
-    value: H,
+    value: K,
     children: (0, o.jsx)(d.Mt, {
       value: W,
       openedAt: U,
       fetchStartedAt: null == G ? true : G.fetchStartedAt,
       fetchEndedAt: null == G ? true : G.fetchEndedAt,
       isLoaded: null == G ? true : G.isLoaded,
-      children: (0, o.jsx)(l.Y0X, {
+      children: (0, o.jsx)(r.Y0X, {
         "data-migration-pending": true,
         transitionState: M,
         className: C.root,
         hideShadow: true,
-        "aria-labelledby": K,
+        "aria-labelledby": H,
         parentComponent: "BotUserProfileModal",
-        children: (0, o.jsx)(l.y5t, {
-          component: (0, o.jsx)(l.nn4, {
-            children: (0, o.jsx)(l.H, {
-              id: K,
+        children: (0, o.jsx)(r.y5t, {
+          component: (0, o.jsx)(r.nn4, {
+            children: (0, o.jsx)(r.H, {
+              id: H,
               children: A.intl.format(A.t.KRe1Fh, {
                 name: z
               })
@@ -94,7 +94,7 @@ function E(e) {
                 onCloseProfile: k
               })
             }), (0, o.jsxs)("div", {
-              children: [(0, o.jsx)(p.Z, {
+              children: [(0, o.jsx)(m.Z, {
                 user: n,
                 displayProfile: G,
                 themeType: N.l.MODAL
@@ -109,7 +109,7 @@ function E(e) {
                 }), (0, o.jsx)(I.Z, {
                   user: n,
                   themeType: N.l.MODAL,
-                  hasEntered: M === l.Dvm.ENTERED,
+                  hasEntered: M === r.Dvm.ENTERED,
                   onCloseProfile: k,
                   disableToolbar: true
                 }), (0, o.jsxs)("div", {
@@ -117,12 +117,12 @@ function E(e) {
                   children: [(0, o.jsx)(_.Z, {
                     type: "text",
                     userId: n.id,
-                    onClose: r.Z.popAll,
+                    onClose: l.Z.popAll,
                     className: C.messageTextButton
                   }), (0, o.jsx)(_.Z, {
                     type: "icon",
                     userId: n.id,
-                    onClose: r.Z.popAll,
+                    onClose: l.Z.popAll,
                     tooltipContainerClassName: C.messageIconButton
                   }), (0, o.jsx)(v.Z, {
                     user: n,
@@ -144,7 +144,7 @@ function E(e) {
                   size: "sm",
                   userId: n.id
                 }),
-                tags: (0, o.jsx)(m.Z, {
+                tags: (0, o.jsx)(p.Z, {
                   displayProfile: G,
                   themeType: N.l.MODAL,
                   onClose: k

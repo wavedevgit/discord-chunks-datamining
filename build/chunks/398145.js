@@ -13,13 +13,13 @@ function c(e) {
     mutualGuilds: n
   } = (0, o.Z)(e), t = null == n ? true : n.length;
   return [{
-    section: r.oh.BOT_INFO,
+    section: l.oh.BOT_INFO,
     text: i.intl.string(i.t.jGoPJS)
   }, {
-    section: r.oh.MUTUAL_GUILDS,
-    text: (0, l.Z)(t)
+    section: l.oh.MUTUAL_GUILDS,
+    text: (0, r.Z)(t)
   }, {
-    section: r.oh.BOT_DATA_ACCESS,
+    section: l.oh.BOT_DATA_ACCESS,
     text: i.intl.string(i.t.WstFb2)
   }]
 }

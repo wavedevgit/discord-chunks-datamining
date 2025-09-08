@@ -181,28 +181,28 @@ class ep extends Chunk647438.PureComponent {
       channel: n,
       isAuthenticated: l
     } = this.props;
-    return (0, r.jsx)(j.Z, {
+    return (0, r.jsx)(P.Z, {
       isAuthenticated: l,
       toolbar: this.renderHeaderToolbar(e, t),
       children: null != n ? (0, r.jsxs)(i.Fragment, {
-        children: [(0, r.jsx)(j.Z.Icon, {
+        children: [(0, r.jsx)(P.Z.Icon, {
           icon: d.lO_,
           "aria-label": eo.intl.string(eo.t["P1/Erq"])
-        }), (0, r.jsx)(j.Z.Title, {
+        }), (0, r.jsx)(P.Z.Title, {
           children: n.name
         })]
       }) : null != t && t.premium ? (0, r.jsxs)(i.Fragment, {
-        children: [(0, r.jsx)(j.Z.Icon, {
+        children: [(0, r.jsx)(P.Z.Icon, {
           icon: d.SrA,
           "aria-label": eo.intl.string(eo.t.Ipxkoq)
         }), (0, r.jsx)(ee.Z, {
           sku: t
         })]
       }) : null != t ? (0, r.jsxs)(i.Fragment, {
-        children: [(0, r.jsx)(j.Z.Icon, {
+        children: [(0, r.jsx)(P.Z.Icon, {
           icon: d.lO_,
           "aria-label": eo.intl.string(eo.t["P1/Erq"])
-        }), (0, r.jsx)(j.Z.Title, {
+        }), (0, r.jsx)(P.Z.Title, {
           children: t.name
         })]
       }) : null
@@ -634,7 +634,7 @@ let ef = (0, Chunk730749.Z)((0, Chunk666743.Z)(Chunk442837.ZP.connectStores([Chu
     isInTestMode: null != l && c,
     matureAgree: L.Z.didMatureAgree,
     theme: x.Z.theme,
-    locale: P.default.locale,
+    locale: j.default.locale,
     guild: null != s ? A.Z.getGuild(s.getGuildId()) : null
   }
 })(ep)))

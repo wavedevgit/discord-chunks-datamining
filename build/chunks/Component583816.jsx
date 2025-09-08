@@ -54,7 +54,7 @@ function O(e) {
     openedAt: N,
     onHide: A,
     sourceAnalyticsLocations: C = []
-  } = e, E = t === j.ME ? true : t, S = (0, l.e7)([d.Z], () => d.Z.isBlocked(n.id)), {
+  } = e, E = t === j.ME ? true : t, S = (0, r.e7)([d.Z], () => d.Z.isBlocked(n.id)), {
     analyticsLocations: w
   } = (0, a.ZP)([...C, S ? c.Z.BLOCKED_PROFILE_MODAL : c.Z.IGNORED_PROFILE_MODAL]), D = (0, f.ZB)({
     layout: "MODAL_V2",
@@ -70,7 +70,7 @@ function O(e) {
   }, {
     icon: i.owK,
     description: y.intl.string(S ? y.t.QxrDY2 : y.t.W6fjkZ)
-  }], L = (0, p.ZP)(n.id, E), R = u.ZP.getName(null == L ? true : L.guildId, O, n), M = y.intl.formatToPlainString(y.t.KRe1Fh, {
+  }], L = (0, m.ZP)(n.id, E), R = u.ZP.getName(null == L ? true : L.guildId, O, n), M = y.intl.formatToPlainString(y.t.KRe1Fh, {
     name: R
   });
   return (0, o.jsx)(a.Gt, {
@@ -117,11 +117,11 @@ function O(e) {
               children: B.map((e, n) => {
                 let {
                   icon: t,
-                  description: l
+                  description: r
                 } = e;
                 return (0, o.jsx)(s.JZ, {
                   icon: t,
-                  title: l,
+                  title: r,
                   titleVariant: "text-md/normal",
                   color: i.TVs.colors.TEXT_DEFAULT.css
                 }, n)
@@ -129,10 +129,10 @@ function O(e) {
             }), (0, o.jsxs)(i.Kqy, {
               align: "center",
               children: [(0, o.jsx)(g.Z, {
-                size: r.Ph.MEDIUM,
+                size: l.Ph.MEDIUM,
                 isBlocked: S,
                 onClick: () => {
-                  A(), (0, m.pQ)(I({
+                  A(), (0, p.pQ)(I({
                     action: S ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                     analyticsLocations: w
                   }, D))
@@ -140,7 +140,7 @@ function O(e) {
               }), (0, o.jsx)(h.Z, {
                 userId: n.id,
                 onClick: () => {
-                  A(), (0, m.pQ)(I({
+                  A(), (0, p.pQ)(I({
                     action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                     analyticsLocations: w
                   }, D))

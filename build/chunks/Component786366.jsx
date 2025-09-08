@@ -17,7 +17,7 @@ function u(e) {
   let {
     icon: n,
     title: t,
-    description: l
+    description: r
   } = e;
   return (0, o.jsxs)("div", {
     className: d.row,
@@ -36,7 +36,7 @@ function u(e) {
         children: t
       }), (0, o.jsx)(i.Text, {
         variant: "text-sm/normal",
-        children: l
+        children: r
       })]
     })]
   })
@@ -45,28 +45,28 @@ function u(e) {
 function f(e) {
   let {
     user: n
-  } = e, t = (0, r.e7)([a.Z], () => {
+  } = e, t = (0, l.e7)([a.Z], () => {
     var e;
     return null == (e = a.Z.getUserProfile(n.id)) ? true : e.application
   }), {
     hasMessageContent: f,
-    hasGuildPresences: m,
-    hasGuildMembers: p
+    hasGuildPresences: p,
+    hasGuildMembers: m
   } = (0, c.w)({
     flags: null == t ? true : t.flags
   });
-  return (0, o.jsxs)(l.zJ, {
+  return (0, o.jsxs)(r.zJ, {
     fade: true,
     className: d.scroller,
     children: [f && (0, o.jsx)(u, {
       icon: i.kBi,
       title: s.intl.string(s.t["7Tmhfn"]),
       description: s.intl.string(s.t["eu5x7+"])
-    }), m && (0, o.jsx)(u, {
+    }), p && (0, o.jsx)(u, {
       icon: i.iWm,
       title: s.intl.string(s.t.awYSsL),
       description: s.intl.string(s.t.TpsXoK)
-    }), p && (0, o.jsx)(u, {
+    }), m && (0, o.jsx)(u, {
       icon: i.BFJ,
       title: s.intl.string(s.t.WuKeSE),
       description: s.intl.string(s.t.wOBmtb)

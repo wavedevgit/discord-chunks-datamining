@@ -45,9 +45,9 @@ function E(e) {
     openedAt: R,
     onClose: M,
     sourceAnalyticsLocations: U = []
-  } = e, k = E === Z.ME ? true : E, V = (0, m.ZP)(t.id, k), F = u.ZP.getName(k, S, t), G = (0, s.Dt)(), {
+  } = e, k = E === Z.ME ? true : E, V = (0, p.ZP)(t.id, k), F = u.ZP.getName(k, S, t), G = (0, s.Dt)(), {
     analyticsLocations: z
-  } = (0, a.ZP)([...U, c.Z.USER_PROFILE_MODAL]), K = (0, f.ZB)({
+  } = (0, a.ZP)([...U, c.Z.USER_PROFILE_MODAL]), H = (0, f.ZB)({
     layout: "MODAL",
     userId: t.id,
     sourceSessionId: B,
@@ -55,25 +55,25 @@ function E(e) {
     channelId: S,
     messageId: w,
     roleId: D
-  }), H = l.useRef(null), W = (0, i.Z)(H);
+  }), K = r.useRef(null), W = (0, i.Z)(K);
   return (0, o.jsx)(a.Gt, {
     value: z,
     children: (0, o.jsx)(f.Mt, {
-      value: K,
+      value: H,
       openedAt: R,
       fetchStartedAt: null == V ? true : V.fetchStartedAt,
       fetchEndedAt: null == V ? true : V.fetchEndedAt,
       isLoaded: null == V ? true : V.isLoaded,
-      children: (0, o.jsxs)(r.Y0X, {
+      children: (0, o.jsxs)(l.Y0X, {
         "data-migration-pending": true,
         transitionState: L,
         className: N.root,
         hideShadow: true,
         "aria-labelledby": G,
         parentComponent: "NonUserBotProfileModal",
-        children: [(0, o.jsx)(r.y5t, {
-          component: (0, o.jsx)(r.nn4, {
-            children: (0, o.jsx)(r.H, {
+        children: [(0, o.jsx)(l.y5t, {
+          component: (0, o.jsx)(l.nn4, {
+            children: (0, o.jsx)(l.H, {
               id: G,
               children: T.intl.format(T.t.KRe1Fh, {
                 name: F
@@ -84,7 +84,7 @@ function E(e) {
             user: t,
             displayProfile: V,
             themeType: P.l.MODAL,
-            ref: (null == V ? true : V.profileEffect) != null ? H : true,
+            ref: (null == V ? true : V.profileEffect) != null ? K : true,
             children: [(0, o.jsx)(I.Z, {
               children: (0, o.jsx)(_.Z, {
                 user: t
@@ -96,7 +96,7 @@ function E(e) {
                 themeType: P.l.MODAL
               }), (0, o.jsx)("div", {
                 className: N.headerInner,
-                children: (0, o.jsx)(p.Z, {
+                children: (0, o.jsx)(m.Z, {
                   user: t,
                   displayProfile: V,
                   guildId: k,
@@ -119,21 +119,21 @@ function E(e) {
                 })
               }), (0, o.jsxs)("div", {
                 className: C.container,
-                children: [(0, o.jsx)(r.njP, {
+                children: [(0, o.jsx)(l.njP, {
                   className: C.tabBar,
                   type: "top",
                   selectedItem: O.oh.BOT_INFO,
                   onItemSelect: Z.dG4,
-                  children: (0, o.jsx)(r.njP.Item, {
+                  children: (0, o.jsx)(l.njP.Item, {
                     className: C.tabBarItem,
                     id: O.oh.BOT_INFO,
                     "aria-label": T.intl.string(T.t.jGoPJS),
-                    children: (0, o.jsx)(r.Text, {
+                    children: (0, o.jsx)(l.Text, {
                       variant: "text-sm/normal",
                       children: T.intl.string(T.t.jGoPJS)
                     })
                   }, O.oh.BOT_INFO)
-                }), (0, o.jsxs)(r.zJl, {
+                }), (0, o.jsxs)(l.zJl, {
                   fade: true,
                   className: A.scroller,
                   children: [(0, o.jsx)(h.Z, {

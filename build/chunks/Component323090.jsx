@@ -31,11 +31,11 @@ function j(e) {
     onClose: _
   } = e, {
     trackUserProfileAction: I
-  } = (0, s.KZ)(), O = (0, l.e7)([d.Z], () => {
+  } = (0, s.KZ)(), O = (0, r.e7)([d.Z], () => {
     var e;
     return null == (e = d.Z.getUserProfile(n.id)) ? true : e.application
-  }), Z = (0, l.e7)([c.Z, a.Z], () => c.Z.getChannel(a.Z.getChannelId()));
-  return (0, o.jsxs)(r.zJl, {
+  }), Z = (0, r.e7)([c.Z, a.Z], () => c.Z.getChannel(a.Z.getChannelId()));
+  return (0, o.jsxs)(l.zJl, {
     fade: true,
     className: g.scroller,
     children: [(null == j ? true : j.bio) != null && (null == j ? true : j.bio) !== "" && (0, o.jsx)(f.Z, {
@@ -52,14 +52,14 @@ function j(e) {
       currentUser: t,
       guildId: j.guildId,
       scrollIntoView: y === b.Tb.ROLES
-    }), (0, o.jsx)(p.Z, {
+    }), (0, o.jsx)(m.Z, {
       heading: h.intl.string(h.t["A//N4u"]),
-      children: (0, o.jsx)(m.Z, {
+      children: (0, o.jsx)(p.Z, {
         userId: n.id,
         guildId: v,
         tooltipDelay: b.vB
       })
-    }), (0, o.jsx)(p.Z, {
+    }), (0, o.jsx)(m.Z, {
       heading: h.intl.string(h.t["mQKv+v"]),
       scrollIntoView: y === b.Tb.NOTE,
       children: (0, o.jsx)(i.Z, {

@@ -1,7 +1,7 @@
 /** Chunk was on 1267 **/
 /** chunk id: 881410, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => f
 }), require("./388685.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk302627 = require("./302627.js");
 
-function f(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -32,12 +32,12 @@ function f(e) {
   return e
 }
 
-function g(e) {
+function f(e) {
   let {
     disabled: t,
     widgetType: r,
-    widget: g
-  } = e, [b] = (0, o.ynZ)(), [p, O] = i.useState(""), y = i.useRef(null), j = i.useRef(""), m = i.useMemo(() => new Set(g.games.map(e => e.applicationId)), [g.games]), {
+    widget: f
+  } = e, [b] = (0, o.ynZ)(), [p, O] = i.useState(""), y = i.useRef(null), j = i.useRef(""), m = i.useMemo(() => new Set(f.games.map(e => e.applicationId)), [f.games]), {
     trackUserProfileEditAction: v
   } = (0, c.KZ)(), x = i.useCallback(e => {
     (0, s.ES)(r, {
@@ -52,7 +52,7 @@ function g(e) {
     matchSorterOptions: w
   } = (0, a.h)(), P = i.useCallback(e => {
     var t, r;
-    return "" === e.trim() ? h : (0, l.Lu)(h, e, (t = f({}, w), r = r = {
+    return "" === e.trim() ? h : (0, l.Lu)(h, e, (t = g({}, w), r = r = {
       threshold: l.Lu.rankings.CONTAINS
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var r = Object.keys(e);
@@ -125,7 +125,7 @@ function g(e) {
     },
     children: e => (0, n.jsx)("div", {
       ref: y,
-      children: (0, n.jsx)(o.zxk, f({
+      children: (0, n.jsx)(o.zxk, g({
         variant: "secondary",
         size: "sm",
         icon: o.qJs,

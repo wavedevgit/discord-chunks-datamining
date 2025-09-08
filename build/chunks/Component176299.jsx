@@ -185,7 +185,7 @@ let ew = (0, Chunk608787.Un)({
       }
     });
     (0, er.WF)(a) && (0, er.WF)(c) || (null != u && (0, es.uL)(eT.Z5c.CHANNEL(u.id, (0, ei.Z)(u))), (0, W.V)());
-    let h = (0, P.C4)(l, "channel_renderer");
+    let h = (0, j.C4)(l, "channel_renderer");
     if (null != l && null != a && (0, eN.AB)(a)) switch (a) {
       case eN.oC.ROLE_SUBSCRIPTIONS:
         return h ? (0, r.jsx)(eR, {
@@ -215,7 +215,7 @@ let ew = (0, Chunk608787.Un)({
       case eN.oC.CHANNEL_BROWSER:
         return (0, r.jsx)(eU, {
           guildId: l,
-          selectedSection: eP.l7.BROWSE
+          selectedSection: ej.l7.BROWSE
         });
       case eN.oC.GUILD_ONBOARDING:
         return (0, r.jsx)(eG, {
@@ -224,7 +224,7 @@ let ew = (0, Chunk608787.Un)({
       case eN.oC.CUSTOMIZE_COMMUNITY:
         return (0, r.jsx)(eU, {
           guildId: l,
-          selectedSection: eP.l7.CUSTOMIZE
+          selectedSection: ej.l7.CUSTOMIZE
         });
       case eN.oC.MEMBER_SAFETY:
         return (0, r.jsx)(eM, {
@@ -316,7 +316,7 @@ let ew = (0, Chunk608787.Un)({
       let {
         tab: n
       } = (0, o.parse)(t.location.search);
-      return Object.values(ej.AW).includes(n) ? (0, r.jsx)(N.Z, eZ({
+      return Object.values(eP.AW).includes(n) ? (0, r.jsx)(N.Z, eZ({
         isFullScreen: e,
         tab: n
       }, t)) : (0, r.jsx)(N.Z, eZ({
@@ -440,14 +440,14 @@ function e6(e) {
   });
   let g = (0, p.e7)([C.Z], () => C.Z.isFullscreenInContext()),
     m = (0, A.T)("ChannelSidebar"),
-    E = (0, j.useAppSidebarState)(e => !e.isOpen) && m;
+    E = (0, P.useAppSidebarState)(e => !e.isOpen) && m;
   i.useLayoutEffect(() => {
     if (m) {
       var e;
       let t = parseInt(null != (e = f.K.get(eI.nT)) ? e : "");
       Number.isNaN(t) && (t = eI.qO), t = Math.min(Math.max(t, eI.li), eI.zx), !m && t <= eI.p8 && (t = eI.qO), e2(t);
       let n = e => {
-        e.metaKey && "b" === e.key && j.useAppSidebarState.setState(e => ({
+        e.metaKey && "b" === e.key && P.useAppSidebarState.setState(e => ({
           isOpen: !e.isOpen
         }))
       };
@@ -470,7 +470,7 @@ function e6(e) {
       let r = t < eI.li / 3;
       t <= eI.li ? document.body.classList.add(eA.draggingMin) : document.body.classList.remove(eA.draggingMin), t >= eI.zx ? document.body.classList.add(eA.draggingMax) : document.body.classList.remove(eA.draggingMax);
       let i = t - e;
-      null == (n = y.current) || n.style.setProperty("--custom-overdrag", "".concat(1 + Math.min(Math.abs(i / eI.p8), .25))), m && (j.useAppSidebarState.setState({
+      null == (n = y.current) || n.style.setProperty("--custom-overdrag", "".concat(1 + Math.min(Math.abs(i / eI.p8), .25))), m && (P.useAppSidebarState.setState({
         isOpen: !r
       }), r && e2(eI.p8))
     }, [m]),
@@ -494,14 +494,14 @@ function e6(e) {
       throttleDuration: 0
     }),
     N = i.useCallback(() => {
-      j.useAppSidebarState.setState(e => ({
+      P.useAppSidebarState.setState(e => ({
         isOpen: !e.isOpen
       }))
     }, []);
   if (i.useLayoutEffect(() => {
       E && e2(eI.p8)
     }, [E]), l) return null;
-  let P = {
+  let j = {
     className: a()(eA.sidebarList, {
       [eA.sidebarListRounded]: !t
     })
@@ -522,7 +522,7 @@ function e6(e) {
           className: eA.guilds,
           themeOverride: n
         }), !o && (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)("div", (t = eZ({}, P), i = i = {
+          children: [(0, r.jsx)("div", (t = eZ({}, j), i = i = {
             children: (0, r.jsx)(eF, {})
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);

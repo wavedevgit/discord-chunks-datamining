@@ -14,11 +14,11 @@ function s(e) {
   let n = (0, i.Xj)({
       forUserProfile: true
     }),
-    t = (0, l.e7)([c.Z], () => c.Z.getUserProfile(e));
+    t = (0, r.e7)([c.Z], () => c.Z.getUserProfile(e));
   return (0, o.useMemo)(() => (null == t ? true : t.connectedAccounts) == null ? a : t.connectedAccounts.filter(e => {
     let {
       type: t
-    } = e, o = r.Z.get(t);
-    return null != o && r.Z.isSupported(t) && n(o)
+    } = e, o = l.Z.get(t);
+    return null != o && l.Z.isSupported(t) && n(o)
   }), [null == t ? true : t.connectedAccounts, n])
 }

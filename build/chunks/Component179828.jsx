@@ -59,18 +59,18 @@ function Z(e, n) {
 
 function P(e, n) {
   if (null == e) return {};
-  var t, o, l = function(e, n) {
+  var t, o, r = function(e, n) {
     if (null == e) return {};
-    var t, o, l = {},
-      r = Object.keys(e);
-    for (o = 0; o < r.length; o++) t = r[o], n.indexOf(t) >= 0 || (l[t] = e[t]);
-    return l
+    var t, o, r = {},
+      l = Object.keys(e);
+    for (o = 0; o < l.length; o++) t = l[o], n.indexOf(t) >= 0 || (r[t] = e[t]);
+    return r
   }(e, n);
   if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    for (o = 0; o < r.length; o++) t = r[o], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (l[t] = e[t])
+    var l = Object.getOwnPropertySymbols(e);
+    for (o = 0; o < l.length; o++) t = l[o], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (r[t] = e[t])
   }
-  return l
+  return r
 }
 
 function T(e) {
@@ -82,9 +82,9 @@ function T(e) {
     roles: d,
     highestRole: u,
     canManageRoles: f,
-    onAddRole: m,
-    onRemoveRole: p
-  } = e, b = f && null != s, h = l.useRef(null), j = l.useMemo(() => "roles-".concat((0, r.Z)()), []), T = (0, i.ZP)({
+    onAddRole: p,
+    onRemoveRole: m
+  } = e, b = f && null != s, h = r.useRef(null), j = r.useMemo(() => "roles-".concat((0, l.Z)()), []), T = (0, i.ZP)({
     id: j,
     isEnabled: true,
     scrollToStart: y.Cyb,
@@ -93,13 +93,13 @@ function T(e) {
   }), N = d.length, A = 0 === N ? _.intl.string(_.t["vR7M+/"]) : _.intl.formatToPlainString(_.t.PCs0oq, {
     numRoles: N
   }), C = d.map(e => {
-    var l;
+    var r;
     return (0, o.jsx)(g.Z, {
       role: e,
       guildId: a.id,
       disableBorderColor: true,
-      onRemove: () => p(e),
-      canRemove: (null == (l = e.tags) ? true : l.guild_connections) === null ? n.id === t.id : f && x.r6(a, t.id, u, e)
+      onRemove: () => m(e),
+      canRemove: (null == (r = e.tags) ? true : r.guild_connections) === null ? n.id === t.id : f && x.r6(a, t.id, u, e)
     }, e.id)
   });
   return (0, o.jsx)(c.bG, {
@@ -120,7 +120,7 @@ function T(e) {
             guildMember: s,
             numRoles: N,
             highestRole: u,
-            onAddRole: m
+            onAddRole: p
           })]
         }))
       }
@@ -132,24 +132,24 @@ function N(e) {
   var {
     user: n,
     currentUser: t,
-    guildId: r
+    guildId: l
   } = e, i = P(e, ["user", "currentUser", "guildId"]);
   let {
     trackUserProfileAction: c
-  } = (0, b.KZ)(), g = (0, a.e7)([m.Z], () => m.Z.getGuild(r)), v = (0, a.e7)([u.ZP], () => u.ZP.getMember(r, n.id)), I = null == v ? true : v.roles, N = (0, a.Wu)([f.Z], () => f.Z.getManyRoles(r, null != I ? I : []).sort(h.Z), [I, r]), [A] = (0, a.Wu)([p.Z], () => [p.Z.can(y.Plq.MANAGE_ROLES, g), p.Z.getGuildVersion(r)]), C = l.useCallback(e => {
+  } = (0, b.KZ)(), g = (0, a.e7)([p.Z], () => p.Z.getGuild(l)), v = (0, a.e7)([u.ZP], () => u.ZP.getMember(l, n.id)), I = null == v ? true : v.roles, N = (0, a.Wu)([f.Z], () => f.Z.getManyRoles(l, null != I ? I : []).sort(h.Z), [I, l]), [A] = (0, a.Wu)([m.Z], () => [m.Z.can(y.Plq.MANAGE_ROLES, g), m.Z.getGuildVersion(l)]), C = r.useCallback(e => {
     var t, o;
     c({
       action: "REMOVE_ROLE"
     });
-    let l = null != (o = null == I ? true : I.filter(n => n !== e.id)) ? o : [];
-    (null == (t = e.tags) ? true : t.guild_connections) === null ? s.Z.unassignGuildRoleConnection(r, e.id) : d.Z.updateMemberRoles(r, n.id, l, [], [e.id])
-  }, [I, r, n.id, c]), E = l.useCallback(e => {
+    let r = null != (o = null == I ? true : I.filter(n => n !== e.id)) ? o : [];
+    (null == (t = e.tags) ? true : t.guild_connections) === null ? s.Z.unassignGuildRoleConnection(l, e.id) : d.Z.updateMemberRoles(l, n.id, r, [], [e.id])
+  }, [I, l, n.id, c]), E = r.useCallback(e => {
     c({
       action: "ADD_ROLE"
     });
     let t = null != I ? I : [];
-    t.includes(e) || (t = [...t, e]), d.Z.updateMemberRoles(r, n.id, t, [e], [])
-  }, [I, r, n.id, c]);
+    t.includes(e) || (t = [...t, e]), d.Z.updateMemberRoles(l, n.id, t, [e], [])
+  }, [I, l, n.id, c]);
   if (null == g) return null;
   let S = A && null != v;
   return 0 !== N.length || S ? (0, o.jsx)(j.Z, Z(O({

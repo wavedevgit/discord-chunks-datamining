@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk726542 = require("./726542.js"),
@@ -58,9 +58,9 @@ function _(e) {
   var n;
   let {
     account: t,
-    locale: l,
-    userId: r
-  } = e, i = null != (n = t.metadata) ? n : {}, p = (0, u.FI)(i[h.PC.CREATED_AT], l), _ = a.Z.get((0, d.rR)(t.type));
+    locale: r,
+    userId: l
+  } = e, i = null != (n = t.metadata) ? n : {}, m = (0, u.FI)(i[h.PC.CREATED_AT], r), _ = a.Z.get((0, d.rR)(t.type));
   return (0, o.jsxs)("li", {
     className: j.connection,
     children: [(0, o.jsx)(c.ua7, {
@@ -97,7 +97,7 @@ function _(e) {
             onClick: e => {
               (0, s.yw)(b.rMx.CONNECTED_ACCOUNT_VIEWED, {
                 platform_type: t.type,
-                other_user_id: r
+                other_user_id: l
               }), (0, x.q)({
                 href: n,
                 trusted: (null == _ ? true : _.type) !== b.ABu.DOMAIN
@@ -113,16 +113,16 @@ function _(e) {
                   className: j.accountNameText,
                   children: t.name
                 }))
-              }), (0, o.jsx)(m.Z, {
+              }), (0, o.jsx)(p.Z, {
                 className: j.platformUrlIcon,
-                direction: m.Z.Directions.RIGHT
+                direction: p.Z.Directions.RIGHT
               })]
             })
           })
-        })(), null != p && (0, o.jsx)(c.Text, {
+        })(), null != m && (0, o.jsx)(c.Text, {
           variant: "text-xs/normal",
           children: g.intl.format(g.t["9rfonp"], {
-            date: p
+            date: m
           })
         })]
       }), (0, o.jsx)("div", {
@@ -137,10 +137,10 @@ function I(e) {
   let {
     connections: n,
     userId: t,
-    className: l
-  } = e, c = (0, i.e7)([p.default], () => p.default.locale);
+    className: r
+  } = e, c = (0, i.e7)([m.default], () => m.default.locale);
   return 0 === n.length ? null : (0, o.jsx)("ul", {
-    className: r()(j.container, l),
+    className: l()(j.container, r),
     children: n.map(e => (0, o.jsx)(_, {
       account: e,
       userId: t,

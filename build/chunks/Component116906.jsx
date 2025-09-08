@@ -46,17 +46,17 @@ function O(e) {
   } = (0, f.Z)(n.id), {
     voiceChannel: S,
     voiceActivity: w
-  } = (0, m.Z)({
+  } = (0, p.Z)({
     userId: n.id,
     guildId: O
-  }), D = (0, l.e7)([c.Z], () => c.Z.isFetchingUserOutbox(n.id)), B = n.id === t.id, L = (0, l.e7)([s.Z, a.Z], () => {
+  }), D = (0, r.e7)([c.Z], () => c.Z.isFetchingUserOutbox(n.id)), B = n.id === t.id, L = (0, r.e7)([s.Z, a.Z], () => {
     let e = B ? s.Z.getStatus() : a.Z.getStatus(n.id);
-    return e === r.Skl.OFFLINE || e === r.Skl.INVISIBLE
+    return e === l.Skl.OFFLINE || e === l.Skl.INVISIBLE
   }), R = A.length > 0 || null != E, M = T && null == E && null == w && null != S, U = !L && (R || M), k = C.length > 0;
-  return U || k || !D ? (0, o.jsxs)(r.zJl, {
+  return U || k || !D ? (0, o.jsxs)(l.zJl, {
     className: _.scroller,
     fade: true,
-    children: [U ? (0, o.jsx)(p.Z, {
+    children: [U ? (0, o.jsx)(m.Z, {
       "aria-label": y.intl.string(y.t.J6STd3),
       children: (0, o.jsxs)("ul", {
         className: _.activityList,
@@ -74,19 +74,19 @@ function O(e) {
             stream: E,
             onClose: P
           })
-        }), A.map((e, l) => (0, o.jsx)("li", {
+        }), A.map((e, r) => (0, o.jsx)("li", {
           children: (0, o.jsx)(x.Z, {
             user: n,
             currentUser: t,
             activity: e,
             onClose: P
           })
-        }, "live-".concat(l)))]
+        }, "live-".concat(r)))]
       })
-    }) : null, k ? (0, o.jsx)(p.Z, {
+    }) : null, k ? (0, o.jsx)(m.Z, {
       heading: y.intl.string(y.t.M0zgnZ),
       introText: B ? y.intl.format(y.t["4bk9Ag"], {
-        learnMoreHook: (e, n) => (0, o.jsx)(r.eee, {
+        learnMoreHook: (e, n) => (0, o.jsx)(l.eee, {
           href: d.Z.getArticleURL(v.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, n)
@@ -105,6 +105,6 @@ function O(e) {
     }) : null]
   }) : (0, o.jsx)("div", {
     className: I.empty,
-    children: (0, o.jsx)(r.$jN, {})
+    children: (0, o.jsx)(l.$jN, {})
   })
 }

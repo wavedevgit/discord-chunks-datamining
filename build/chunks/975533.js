@@ -82,7 +82,7 @@ let R = {
     },
     [Chunk981631.kg4.PUSH_TO_TALK_PRIORITY]: {
       onTrigger(e, t) {
-        (v.Z.getMode() === x.pM4.PUSH_TO_TALK || P.Z.getCurrentConfig({
+        (v.Z.getMode() === x.pM4.PUSH_TO_TALK || j.Z.getCurrentConfig({
           location: "keybinds"
         }).onPTTKeybind) && (R[x.kg4.PUSH_TO_TALK_PRIORITY].isPressed = e, L(e, true, t))
       },
@@ -94,7 +94,7 @@ let R = {
     },
     [Chunk981631.kg4.VAD_PRIORITY]: {
       onTrigger(e, t) {
-        v.Z.getMode() === x.pM4.VOICE_ACTIVITY && P.Z.getCurrentConfig({
+        v.Z.getMode() === x.pM4.VOICE_ACTIVITY && j.Z.getCurrentConfig({
           location: "keybinds"
         }).separateKeybind && (R[x.kg4.VAD_PRIORITY].isPressed = e, L(e, true, t))
       },
@@ -161,7 +161,7 @@ let R = {
     [Chunk981631.kg4.TOGGLE_OVERLAY_INPUT_LOCK]: {
       onTrigger(e, t) {
         if (!(0, C.I1)(t.shortcut)) return;
-        let n = (0, j.Z)();
+        let n = (0, P.Z)();
         null != n && l.Z.setInputLocked(!T.default.isLocked(n), n)
       },
       keyEvents: {
@@ -235,7 +235,7 @@ let R = {
     },
     [Chunk981631.kg4.SOUNDBOARD_HOLD]: {
       onTrigger: e => {
-        let t = (0, j.Z)();
+        let t = (0, P.Z)();
         if (null != t) {
           if (e) {
             if (!(0, _.D)()) return;
