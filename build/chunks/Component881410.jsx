@@ -71,8 +71,9 @@ function g(e) {
       numCharacters: e.trim().length,
       numResults: P(e).length
     }), O(e), j.current = e
-  }, [p, v, r, P]), S = i.useMemo(() => "" !== p.trim() ? u.intl.formatToPlainString(u.t.ZoearK, {
-    searchTerm: p.trim()
+  }, [p, v, r, P]), S = i.useMemo(() => "" !== p.trim() ? u.intl.format(u.t.ZoearK, {
+    searchTerm: p.trim(),
+    surveyUrl: "https://discord.sjc1.qualtrics.com/jfe/form/SV_0TIqLrxbsfJYS4C"
   }) : u.intl.string(u.t.QwSXv7), [p]);
   return (0, n.jsx)(o.yRy, {
     targetElementRef: y,

@@ -33,14 +33,14 @@ function y(e) {
   if ((0, i.useEffect)(() => (A(), window.addEventListener("resize", A), () => {
       window.removeEventListener("resize", A)
     }), [A, null == h ? true : h.join("")]), !w && !E) return null;
-  let R = _ ? h : h.slice(0, h.length - N);
+  let C = _ ? h : h.slice(0, h.length - N);
   return (0, n.jsxs)("div", {
     className: o()(O.tagListContainer, u),
     children: [w && (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsx)("ul", {
         className: O.tagList,
         "aria-label": p.intl.string(p.t.EfjTi4),
-        children: R.map(e => (0, n.jsx)(j, {
+        children: C.map(e => (0, n.jsx)(j, {
           tag: e,
           isCurrentUser: l,
           applicationId: s,

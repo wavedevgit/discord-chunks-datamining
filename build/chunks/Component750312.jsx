@@ -47,12 +47,12 @@ function m(e) {
     widget: r,
     index: m,
     disableInteraction: !k
-  }), [A, R] = i.useState(false);
+  }), [A, C] = i.useState(false);
   return (0, n.jsx)(v, {
     ref: I,
     disableInteraction: !k,
-    onMouseEnter: () => R(true),
-    onMouseLeave: () => R(false),
+    onMouseEnter: () => C(true),
+    onMouseLeave: () => C(false),
     dragSourcePosition: Z,
     index: null != m ? m : 0,
     children: (0, n.jsxs)("section", {
