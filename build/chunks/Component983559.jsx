@@ -144,7 +144,7 @@ function D(e) {
             }), Y && K && (0, r.jsx)("div", {
               className: R.widgetBreadcrumb,
               children: (0, r.jsx)(P.Z, {
-                widgets: k.widgets,
+                widgets: k.gameWidgets,
                 onClick: () => {
                   null == q || q({
                     section: N.oh.WIDGETS

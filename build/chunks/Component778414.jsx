@@ -8,13 +8,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk296009 = require("./296009.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk355467 = require("./355467.js"),
   Chunk981312 = require("./981312.js"),
   Chunk314897 = require("./314897.js"),
   Chunk351402 = require("./351402.js"),
+  Chunk931847 = require("./931847.js"),
   Chunk836197 = require("./836197.js"),
   Chunk206599 = require("./206599.js"),
   Chunk5136 = require("./5136.js"),
@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk830202 = require("./830202.js");
 
-function w(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -69,21 +69,11 @@ function Z(e) {
   var {
     widget: t
   } = e, n = E(e, ["widget"]);
-  switch (t.type) {
-    case s.l.FAVORITE_GAMES:
-    case s.l.CURRENT_GAMES:
-    case s.l.WANT_TO_PLAY_GAMES:
-    case s.l.PLAYED_GAMES:
-      return (0, r.jsx)(v.Z, w({
-        widget: t
-      }, n));
-    case s.l.APPLICATION:
-      return (0, r.jsx)(x.Z, w({
-        widget: t
-      }, n));
-    default:
-      return null
-  }
+  return t instanceof m.q ? (0, r.jsx)(x.Z, N({
+    widget: t
+  }, n)) : t instanceof g.zy ? (0, r.jsx)(O.Z, N({
+    widget: t
+  }, n)) : null
 }
 
 function C() {
@@ -105,20 +95,20 @@ function T(e) {
     user: t,
     guildId: n,
     channelId: i
-  } = e, a = (0, y.Z)(t.id), s = (0, o.e7)([f.default], () => f.default.getId() === t.id), c = (() => {
-    let [e, t] = (0, o.Wu)([m.Z], () => [m.Z.ipCountryCode, m.Z.ipCountryCodeRequest]), n = (0, d.U)();
+  } = e, a = (0, y.Z)(t.id), o = (0, s.e7)([d.default], () => d.default.getId() === t.id), m = (() => {
+    let [e, t] = (0, s.Wu)([f.Z], () => [f.Z.ipCountryCode, f.Z.ipCountryCodeRequest]), n = (0, u.U)();
     return l.useEffect(() => {
-      null == e && null == t && n && (0, u.GE)()
+      null == e && null == t && n && (0, c.GE)()
     }, [e, t, n]), "GB" === e && n
-  })(), b = 0 === a.length && s;
-  return ((0, j.ZP)(a.filter(g.W)), (0, p.J)(s, a), b) ? (0, r.jsx)(S.Z, {}) : (0, r.jsxs)(r.Fragment, {
-    children: [s && c && (0, r.jsx)(C, {}), a.map((e, l) => (0, r.jsx)(Z, {
+  })(), b = 0 === a.length && o, x = a.filter(g.Wc);
+  return ((0, j.ZP)(x), (0, p.J)(o, x), b) ? (0, r.jsx)(S.Z, {}) : (0, r.jsxs)(r.Fragment, {
+    children: [o && m && (0, r.jsx)(C, {}), a.map((e, l) => (0, r.jsx)(Z, {
       widget: e,
       user: t,
       guildId: n,
       channelId: i,
       index: l
-    }, e.id)), s && (0, r.jsx)(h.Z, {})]
+    }, e.id)), o && (0, r.jsx)(h.Z, {})]
   })
 }
 
@@ -134,13 +124,13 @@ function k(e) {
   return (0, r.jsxs)(A.F, {
     "data-scroller": true,
     scrollerRef: i,
-    className: a()(N.scroller, {
-      [N.hasToolbar]: s
+    className: a()(w.scroller, {
+      [w.hasToolbar]: s
     }),
     fade: true,
-    children: [(0, r.jsx)(O.Z, {
+    children: [(0, r.jsx)(v.Z, {
       scrollerRef: i
-    }), (0, r.jsx)(T, w({
+    }), (0, r.jsx)(T, N({
       user: t
     }, n))]
   })

@@ -2,11 +2,11 @@
 /** chunk id: 706140, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  EM: () => O,
-  Tt: () => v,
+  EM: () => I,
+  Tt: () => T,
   cv: () => y,
-  sx: () => I,
-  zH: () => T
+  sx: () => S,
+  zH: () => A
 });
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -71,14 +71,20 @@ function y(e, t) {
     })
   }, [c, t, a])]
 }
+let O = {};
 
-function O(e, t, n) {
-  let a = (0, i.e7)([s.Z], () => {
-      var t, n, r;
-      return null !== e ? null == (r = s.Z.settings.userContent) || null == (n = r.recurringDismissibleContentStates) || null == (t = n[e]) ? true : t.lastDismissedVersion : true
-    }),
-    o = (0, i.e7)([l.Z], () => l.Z.getGuildId()),
-    c = null;
+function v(e) {
+  return (0, i.e7)([s.Z], () => {
+    var t, n;
+    let r = null !== e ? null == (n = s.Z.settings.userContent) || null == (t = n.recurringDismissibleContentStates) ? true : t[e] : null;
+    return null != r ? r : O
+  })
+}
+
+function I(e, t, n) {
+  let {
+    lastDismissedVersion: a
+  } = v(e), o = (0, i.e7)([l.Z], () => l.Z.getGuildId()), c = null;
   if (null != e) {
     let n = !(0, h.Bh)(e);
     s.Z.hasLoaded(g.yP.PRELOADED_USER_SETTINGS) ? c = n && (null == a || a < t) ? e : null : null != a && (c = n && a < t ? e : null)
@@ -94,24 +100,22 @@ function O(e, t, n) {
   }, [c, n, o, t])]
 }
 
-function v(e, t, n) {
-  let a = (0, i.e7)([s.Z], () => {
-      var t, n, r;
-      return null !== e ? null == (r = s.Z.settings.userContent) || null == (n = r.recurringDismissibleContentStates) || null == (t = n[e]) ? true : t.lastDismissedAtMs : true
-    }),
-    o = (0, i.e7)([l.Z], () => l.Z.getGuildId()),
-    c = null;
-  return null != e && (c = S(!(0, h.Bh)(e), a, t) ? e : null), [b(c, o, n), r.useCallback((e, t) => {
+function T(e, t, n) {
+  let {
+    lastDismissedAtMs: a,
+    numTimesDismissed: o
+  } = v(e), s = (0, i.e7)([l.Z], () => l.Z.getGuildId()), c = null;
+  return null != e && (c = C(!(0, h.Bh)(e), a, o, t) ? e : null), [b(c, s, n), r.useCallback((e, t) => {
     null != c && (0, p.Ow)(c, {
       dismissAction: e,
       groupName: n,
-      guildId: o,
+      guildId: s,
       forceTrack: t
     })
-  }, [c, n, o])]
+  }, [c, n, s])]
 }
 
-function I(e, t, n, a) {
+function S(e, t, n, a) {
   let o = (0, i.e7)([l.Z], () => l.Z.getGuildId()),
     s = null;
   return null == e || (0, p.UJ)(e, n, t) || (s = e), [b(s, o, a), r.useCallback((e, t) => {
@@ -124,7 +128,7 @@ function I(e, t, n, a) {
   }, [s, a, o, n])]
 }
 
-function T(e, t, n) {
+function A(e, t, n) {
   let a = (0, i.e7)([s.Z], () => s.Z.getGuildDismissedContentState(t)),
     o = (0, h.ig)(e),
     l = null;
@@ -138,10 +142,12 @@ function T(e, t, n) {
   }, [l, n, t])]
 }
 
-function S(e, t, n) {
-  let r = null != t ? Number.isNaN(Number(t)) ? true : Number(t) : true,
-    i = true === r ? 0 : r + n.cooldownDurationMs,
-    a = Date.now(),
-    o = null == n.showAfterTimestamp || a >= n.showAfterTimestamp && (null != r ? r : 0) <= n.showAfterTimestamp;
-  return s.Z.hasLoaded(g.yP.PRELOADED_USER_SETTINGS) ? e && o && (null == r || a >= i) : null != r && e && o && a >= i
+function C(e, t, n, r) {
+  let i = null != t ? Number.isNaN(Number(t)) ? true : Number(t) : true,
+    a = true === i ? 0 : i + r.cooldownDurationMs,
+    o = Date.now(),
+    l = null == r.showAfterTimestamp || o >= r.showAfterTimestamp && (null != i ? i : 0) <= r.showAfterTimestamp,
+    c = null == i || o >= a,
+    u = null == r.numTimesToRecur || 0 === r.numTimesToRecur || null == n || n < r.numTimesToRecur;
+  return (s.Z.hasLoaded(g.yP.PRELOADED_USER_SETTINGS) || null != i && null != n) && e && l && c && u
 }

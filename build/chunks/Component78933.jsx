@@ -249,7 +249,7 @@ function ec(e) {
               hidePersonalInformation: eb,
               onClose: n
             }), eM && (0, r.jsx)(M.Z, {
-              widgets: eu.widgets,
+              widgets: eu.gameWidgets,
               onClick: () => {
                 n(), ex({
                   section: J.oh.WIDGETS

@@ -5,11 +5,11 @@ require.d(exports, {
 });
 var Chunk509613 = require("./509613.js"),
   Chunk906467 = require("./906467.js"),
-  Chunk869235 = require("./869235.js"),
+  Chunk313789 = require("./313789.js"),
   Chunk713602 = require("./713602.js"),
   Chunk965557 = require("./965557.js"),
   Chunk388032 = require("./388032.jsx");
-let u = (0, Chunk509613.vB)(Chunk869235.t.DEVELOPER_SECTION, {
+let u = (0, Chunk509613.vB)(Chunk313789.n.DEVELOPER_SECTION, {
   useLabel: () => Chunk388032.intl.string(Chunk388032.t.CbItOD),
   getLayout: () => [Chunk965557.Z, Chunk713602.Z],
   usePredicate: () => Chunk906467.Z.isDeveloper

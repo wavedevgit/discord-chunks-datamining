@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 206942, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => p
+  ZP: () => N
 }), require("./415506.js"), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,18 +12,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk509613 = require("./509613.js"),
   Chunk460181 = require("./460181.js"),
   Chunk292959 = require("./292959.js"),
-  Chunk869235 = require("./869235.js"),
+  Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk649926 = require("./649926.js");
-let v = Chunk647438.createContext(true);
+let O = Chunk647438.createContext(true);
 
-function O(e) {
+function E(e) {
   let {
     sound: t
   } = e, {
     handlePreviewSound: n
   } = function() {
-    let e = i.useContext(v);
+    let e = i.useContext(O);
     if (null == e) throw Error("useSoundPlayback must be used within a SoundPlaybackProvider");
     return e
   }();
@@ -39,7 +39,7 @@ function O(e) {
     })
   })
 }
-let E = [{
+let v = [{
     useLabel: () => Chunk388032.intl.string(Chunk388032.t.jD1qzM),
     sound: "message1",
     useDisabled: Chunk734934.p,
@@ -114,14 +114,14 @@ let E = [{
     useLabel: () => Chunk388032.intl.string(Chunk388032.t.CP3DCw),
     sound: "reconnect"
   }].map(e => ({
-    node: (0, u.qs)("".concat(g.t.SOUNDS_LIST_ITEM_PREFIX).concat(e.sound), {
+    node: (0, u.qs)("".concat(g.n.SOUNDS_LIST_ITEM_PREFIX).concat(e.sound), {
       useTitle: () => {
         let t = e.useLabel();
         return (0, r.jsxs)("div", {
           className: y.soundRow,
           children: [(0, r.jsx)("span", {
             children: t
-          }), (0, r.jsx)(O, {
+          }), (0, r.jsx)(E, {
             sound: e.sound
           })]
         })
@@ -134,7 +134,7 @@ let E = [{
       },
       setValue: t => {
         let n = d.Z.getDisabledSounds().filter(t => t !== e.sound);
-        t || n.push(e.sound), s.default.setDisabledSounds(n)
+        t || n.push(e.sound), a.default.setDisabledSounds(n)
       },
       useDisabled: () => {
         var t;
@@ -145,18 +145,18 @@ let E = [{
       useTooltip: e.useTooltip
     })
   })),
-  b = (0, Chunk509613.qs)(Chunk869235.t.SELECTED_CHANNEL_NOTIFICATIONS, {
+  b = (0, Chunk509613.qs)(Chunk313789.n.SELECTED_CHANNEL_NOTIFICATIONS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.TzjwV1),
     useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getNotifyMessagesInSelectedChannel()),
-    setValue: e => s.default.setNotifyMessagesInSelectedChannel(e)
+    setValue: e => a.default.setNotifyMessagesInSelectedChannel(e)
   }),
-  N = (0, Chunk509613.qs)(Chunk869235.t.DISABLE_ALL_NOTIFICATION_SOUNDS, {
+  T = (0, Chunk509613.qs)(Chunk313789.n.DISABLE_ALL_NOTIFICATION_SOUNDS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["2ZhCOT"]),
     useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["+B0XLC"]),
     useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getDisableAllSounds()),
-    setValue: e => s.default.toggleDisableAllSounds(e)
+    setValue: e => a.default.toggleDisableAllSounds(e)
   }),
-  p = (0, Chunk509613.$l)(Chunk869235.t.NOTIFICATION_SOUNDS_LIST, {
+  N = (0, Chunk509613.$l)(Chunk313789.n.NOTIFICATION_SOUNDS_LIST, {
     collapseAfter: 4,
     useCollapsibleTitle: (e, t) => e ? f.intl.formatToPlainString(f.t["0JYT9/"], {
       count: t
@@ -176,10 +176,10 @@ let E = [{
       let o = i.useMemo(() => ({
         handlePreviewSound: l
       }), [l]);
-      return (0, r.jsx)(v.Provider, {
+      return (0, r.jsx)(O.Provider, {
         value: o,
         children: t
       })
     },
-    getLayout: () => [E[0].node, b, E[1].node, N, ...E.slice(2).map(e => e.node)]
+    getLayout: () => [v[0].node, b, v[1].node, T, ...v.slice(2).map(e => e.node)]
   })

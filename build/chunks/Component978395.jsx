@@ -125,7 +125,7 @@ function j(e) {
       hidePersonalInformation: Y,
       onClose: B
     }), X && (0, r.jsx)(S.Z, {
-      widgets: null == j ? true : j.widgets,
+      widgets: null == j ? true : j.gameWidgets,
       onClick: () => {
         null == U || U({
           section: P.oh.WIDGETS

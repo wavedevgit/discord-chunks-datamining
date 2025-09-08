@@ -9,10 +9,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk893776 = require("./893776.js"),
   Chunk509613 = require("./509613.js"),
+  Chunk313789 = require("./313789.js"),
   Chunk518596 = require("./518596.jsx"),
-  Chunk869235 = require("./869235.js"),
   Chunk388032 = require("./388032.jsx");
-let g = (0, Chunk509613.m7)(Chunk869235.t.LOGOUT_SIDEBAR_ITEM, {
+let g = (0, Chunk509613.m7)(Chunk313789.n.LOGOUT_SIDEBAR_ITEM, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t["2jxGen"]),
   icon: Chunk657707.PBZ,
   onClick: () => {
@@ -42,8 +42,8 @@ let g = (0, Chunk509613.m7)(Chunk869235.t.LOGOUT_SIDEBAR_ITEM, {
         onCancel: e.onClose,
         onConfirm: () => {
           i.flushSync(() => {
-            (0, o.Mr3)(u.I)
-          }), s.Z.logout("settings")
+            (0, o.Mr3)(c.I)
+          }), a.Z.logout("settings")
         }
       }, e), n = n = {
         children: (0, r.jsx)(o.Text, {

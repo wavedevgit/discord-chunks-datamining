@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 36361, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => v
 }), require("./415506.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -18,7 +18,7 @@ var Chunk28682 = require("./28682.js"),
   Chunk670304 = require("./670304.jsx"),
   Chunk357660 = require("./357660.jsx");
 
-function O(e) {
+function E(e) {
   let {
     node: t
   } = e;
@@ -28,7 +28,7 @@ function O(e) {
     case i.J.SIDEBAR_ITEM:
       throw Error("".concat(t.type, " nodes should never be rendered directly"));
     case i.J.PANEL:
-      return (0, r.jsx)(v.T, {
+      return (0, r.jsx)(O.T, {
         node: t
       });
     case i.J.PANE:
@@ -60,26 +60,26 @@ function O(e) {
         node: t
       });
     case i.J.RADIO:
-      return (0, r.jsx)(a.Z, {
+      return (0, r.jsx)(s.Z, {
         node: t
       });
     case i.J.CUSTOM:
     default:
-      return (0, r.jsx)(s.W, {
+      return (0, r.jsx)(a.W, {
         node: t
       })
   }
 }
 
-function E(e) {
+function v(e) {
   let {
     node: t
   } = e;
-  return t.type === i.J.PANEL || t.type === i.J.PANE ? (0, r.jsx)(O, {
+  return t.type === i.J.PANEL || t.type === i.J.PANE ? (0, r.jsx)(E, {
     node: t
   }) : (0, r.jsx)(l.Z, {
     node: t,
-    children: (0, r.jsx)(O, {
+    children: (0, r.jsx)(E, {
       node: t
     })
   })

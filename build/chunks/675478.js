@@ -2,20 +2,20 @@
 /** chunk id: 675478, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  BU: () => L,
-  Cd: () => U,
-  DZ: () => w,
-  PS: () => x,
-  T6: () => N,
-  Z1: () => Z,
-  aj: () => D,
-  bE: () => V,
+  BU: () => j,
+  Cd: () => G,
+  DZ: () => D,
+  PS: () => L,
+  T6: () => R,
+  Z1: () => F,
+  aj: () => x,
+  bE: () => H,
   fy: () => Chunk526761.fy,
-  hW: () => P,
-  m9: () => G,
-  nm: () => j,
-  sr: () => F,
-  w9: () => B
+  hW: () => w,
+  m9: () => B,
+  nm: () => M,
+  sr: () => V,
+  w9: () => Z
 }), require("./415506.js"), require("./388685.js"), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -59,21 +59,32 @@ function T(e) {
   }
   return e
 }
-let S = 5e3,
-  A = "UserSettingsProtoLastWriteTimes",
-  C = Date.now();
 
-function N() {}
+function S(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+let A = 5e3,
+  C = "UserSettingsProtoLastWriteTimes",
+  N = Date.now();
+
+function R() {}
 Chunk570140.Z.subscribe("CONNECTION_OPEN", () => {
-  C = Date.now()
+  N = Date.now()
 }), Chunk570140.Z.subscribe("CONNECTION_CLOSED", () => {
-  C = Date.now()
+  N = Date.now()
 }), "undefined" != typeof document && (document.addEventListener("mousedown", () => {
-  C = 0
+  N = 0
 }), document.addEventListener("keydown", () => {
-  C = 0
+  N = 0
 }));
-class R {
+class P {
   getEditInfo() {
     return Chunk581883.Z.getFullState()[this.type]
   }
@@ -137,8 +148,8 @@ class R {
   }
   saveLastSendTime() {
     var e;
-    let t = null != (e = Chunk433517.K.get(A)) ? module : {};
-    exports[this.type] = Date.now(), Chunk433517.K.set(A, exports)
+    let t = null != (e = Chunk433517.K.get(C)) ? module : {};
+    exports[this.type] = Date.now(), Chunk433517.K.set(C, exports)
   }
   loadIfUncached(e, t) {
     E.Z.hasLoaded(e) && true !== t || this.loadIfNecessary(t)
@@ -216,7 +227,7 @@ class R {
       editInfo: e
     } = this.getEditInfo();
     i()(null != module.protoToSave, "protoToSave cannot be null"), i()(null != module.offlineEditDataVersion, "offlineEditDataVersion cannot be null"), i()(null == module.timeout, "timeout must not be set already");
-    let t = S + Math.floor(Math.random() * S),
+    let t = A + Math.floor(Math.random() * A),
       n = setTimeout(this.persistChanges, exports);
     this.dispatchChanges({
       timeout: require,
@@ -280,73 +291,74 @@ class R {
     }, this.logger = new d.Z(this.ProtoClass.typeName)
   }
 }
-let P = new R(Chunk524437.o8, Chunk526761.yP.PRELOADED_USER_SETTINGS),
-  w = new R(Chunk377108.ji, Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS),
-  D = {
-    [Chunk526761.yP.PRELOADED_USER_SETTINGS]: P,
-    [Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS]: w
+let w = new P(Chunk524437.o8, Chunk526761.yP.PRELOADED_USER_SETTINGS),
+  D = new P(Chunk377108.ji, Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS),
+  x = {
+    [Chunk526761.yP.PRELOADED_USER_SETTINGS]: w,
+    [Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS]: D
   };
 
-function x(e, t, n) {
-  return P.updateAsync("guilds", n => (0, y.u0)(n, e, t), n)
+function L(e, t, n) {
+  return w.updateAsync("guilds", n => (0, y.u0)(n, e, t), n)
 }
 
-function L(e, t, n, r) {
-  return x(e, e => (0, y.uL)(e, t, n), r)
+function j(e, t, n, r) {
+  return L(e, e => (0, y.uL)(e, t, n), r)
 }
 
-function j(e) {
-  return M(e), P.updateAsync("userContent", t => {
+function M(e) {
+  return k(e), w.updateAsync("userContent", t => {
     if ((0, m.jl)(t.dismissedContents, e)) returnfalse;
     t.dismissedContents = (0, m.GV)(t.dismissedContents, e)
   }, O.fy.INFREQUENT_USER_ACTION)
 }
 
-function M(e) {
-  !E.Z.hasLoaded(O.yP.PRELOADED_USER_SETTINGS) && (k(e) || p.default.track(v.rMx.DISMISSIBLE_CONTENT_DISMISSED_BEFORE_CONNECTION_OPEN, {
+function k(e) {
+  !E.Z.hasLoaded(O.yP.PRELOADED_USER_SETTINGS) && (U(e) || p.default.track(v.rMx.DISMISSIBLE_CONTENT_DISMISSED_BEFORE_CONNECTION_OPEN, {
     content_type: o.z[e]
   }))
 }
 
-function k(e) {
+function U(e) {
   var t;
   let n = null == (t = E.Z.settings.userContent) ? true : t.dismissedContents;
   return null != n && (0, m.jl)(n, e)
 }
-async function U(e, t) {
-  return await P.updateAsync("userContent", n => {
+async function G(e, t) {
+  return await w.updateAsync("userContent", n => {
     n.recurringDismissibleContentStates[e] = T({}, n.recurringDismissibleContentStates[e], t)
   }, O.fy.INFREQUENT_USER_ACTION)
 }
-async function G(e, t, n) {
-  return await x(t, t => {
+async function B(e, t, n) {
+  return await L(t, t => {
     t.guildDismissibleContentStates[e] = T({}, t.guildDismissibleContentStates[e], n)
   }, O.fy.INFREQUENT_USER_ACTION)
 }
 
-function B(e) {
-  return P.updateAsync("userContent", t => {
+function Z(e) {
+  return w.updateAsync("userContent", t => {
     if (!(0, m.jl)(t.dismissedContents, e)) returnfalse;
     t.dismissedContents = (0, m.jx)(t.dismissedContents, e)
   }, O.fy.INFREQUENT_USER_ACTION)
 }
 
-function Z(e) {
-  return U(e, {
+function F(e) {
+  return G(e, {
     lastDismissedVersion: 0,
     lastDismissedAtMs: "0",
-    lastDismissedObjectId: "0"
+    lastDismissedObjectId: "0",
+    numTimesDismissed: 0
   })
 }
 
-function F() {
-  return P.updateAsync("userContent", e => {
+function V() {
+  return w.updateAsync("userContent", e => {
     e.dismissedContents = new Uint8Array, e.recurringDismissibleContentStates = {}
   }, Chunk526761.fy.INFREQUENT_USER_ACTION)
 }
 
-function V() {
-  return P.updateAsync("userContent", e => {
+function H() {
+  return w.updateAsync("userContent", e => {
     let t = new Uint8Array;
     for (let n of f.V_)(0, f.O2)(n) ? t = (0, m.GV)(t, n) : e.recurringDismissibleContentStates[n] = (0, _.F8)(n);
     e.dismissedContents = t

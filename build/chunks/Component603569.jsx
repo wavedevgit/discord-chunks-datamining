@@ -8,17 +8,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk704215 = require("./704215.js"),
   Chunk631885 = require("./631885.js"),
   Chunk509613 = require("./509613.js"),
+  Chunk313789 = require("./313789.js"),
   Chunk54942 = require("./54942.jsx"),
-  Chunk869235 = require("./869235.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk345909 = require("./345909.js");
-let f = (0, Chunk509613.x1)(Chunk869235.t.FAMILY_CENTER_PANE, {
+let f = (0, Chunk509613.x1)(Chunk313789.n.FAMILY_CENTER_PANE, {
     useTitle: () => Chunk388032.intl.string(Chunk345909.default.RZqaJi),
     getLayout: () => [],
     render: () => (0, Chunk951288.jsx)(Chunk54942.Z, {})
   }),
-  y = (0, Chunk509613.wf)(Chunk869235.t.FAMILY_CENTER_PANEL, {
+  y = (0, Chunk509613.wf)(Chunk313789.n.FAMILY_CENTER_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk345909.default.RZqaJi),
     icon: Chunk657707.BFJ,
     getLayout: () => [f],

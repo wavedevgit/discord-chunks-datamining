@@ -3,8 +3,8 @@
 require.d(exports, {
   P9: () => P,
   Uf: () => S,
-  b0: () => v,
-  s_: () => O
+  b0: () => O,
+  s_: () => v
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -49,7 +49,7 @@ function h(e) {
   })
 }
 
-function O() {
+function v() {
   let e = Chunk388032.intl.string(Chunk388032.t.RnD2yc),
     [t] = Chunk647438.useState(() => {
       var e;
@@ -61,7 +61,7 @@ function O() {
   })
 }
 
-function v() {
+function O() {
   let e = Chunk388032.intl.string(Chunk388032.t.bFgqYG),
     [t] = Chunk647438.useState(() => {
       var e;

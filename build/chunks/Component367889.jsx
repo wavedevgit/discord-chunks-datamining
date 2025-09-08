@@ -9,14 +9,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk160913 = require("./160913.js"),
   Chunk813732 = require("./813732.jsx"),
   Chunk509613 = require("./509613.js"),
-  Chunk869235 = require("./869235.js"),
+  Chunk313789 = require("./313789.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
-let g = (0, Chunk509613.x1)(Chunk869235.t.SUBSCRIPTIONS_PANE, {
+let g = (0, Chunk509613.x1)(Chunk313789.n.SUBSCRIPTIONS_PANE, {
     getLayout: () => [],
     render: Chunk813732.Z
   }),
-  f = (0, Chunk509613.wf)(Chunk869235.t.SUBSCRIPTIONS_PANEL, {
+  f = (0, Chunk509613.wf)(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
     icon: Chunk657707.SrA,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.trSpHR),
     getLayout: () => [g],

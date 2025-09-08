@@ -4,8 +4,8 @@ require.d(exports, {
   Z: () => o
 });
 var Chunk509613 = require("./509613.js"),
-  Chunk869235 = require("./869235.js"),
+  Chunk313789 = require("./313789.js"),
   Chunk462718 = require("./462718.jsx");
-let o = (0, Chunk509613.vB)(Chunk869235.t.LOGOUT_SECTION, {
+let o = (0, Chunk509613.vB)(Chunk313789.n.LOGOUT_SECTION, {
   getLayout: () => [Chunk462718.Z]
 })

@@ -461,7 +461,8 @@ class k extends Chunk495852.C {
       dismissed: false,
       lastDismissedVersion: 0,
       lastDismissedAtMs: "0",
-      lastDismissedObjectId: "0"
+      lastDismissedObjectId: "0",
+      numTimesDismissed: 0
     };
     return globalThis.Object.defineProperty(t, a.C, {
       enumerable: false,
@@ -486,6 +487,9 @@ class k extends Chunk495852.C {
         case 4:
           a.lastDismissedObjectId = e.uint64().toString();
           break;
+        case 5:
+          a.numTimesDismissed = e.uint32();
+          break;
         default:
           let o = n.readUnknownField;
           if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
@@ -496,7 +500,7 @@ class k extends Chunk495852.C {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    false !== e.dismissed && t.tag(1, r.TD.Varint).bool(e.dismissed), 0 !== e.lastDismissedVersion && t.tag(2, r.TD.Varint).uint32(e.lastDismissedVersion), "0" !== e.lastDismissedAtMs && t.tag(3, r.TD.Varint).uint64(e.lastDismissedAtMs), "0" !== e.lastDismissedObjectId && t.tag(4, r.TD.Varint).uint64(e.lastDismissedObjectId);
+    false !== e.dismissed && t.tag(1, r.TD.Varint).bool(e.dismissed), 0 !== e.lastDismissedVersion && t.tag(2, r.TD.Varint).uint32(e.lastDismissedVersion), "0" !== e.lastDismissedAtMs && t.tag(3, r.TD.Varint).uint64(e.lastDismissedAtMs), "0" !== e.lastDismissedObjectId && t.tag(4, r.TD.Varint).uint64(e.lastDismissedObjectId), 0 !== e.numTimesDismissed && t.tag(5, r.TD.Varint).uint32(e.numTimesDismissed);
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -521,6 +525,11 @@ class k extends Chunk495852.C {
       name: "last_dismissed_object_id",
       kind: "scalar",
       T: 4
+    }, {
+      no: 5,
+      name: "num_times_dismissed",
+      kind: "scalar",
+      T: 13
     }])
   }
 }
@@ -869,7 +878,8 @@ class K extends Chunk495852.C {
     let t = {
       lastDismissedVersion: 0,
       lastDismissedAtMs: "0",
-      lastDismissedObjectId: "0"
+      lastDismissedObjectId: "0",
+      numTimesDismissed: 0
     };
     return globalThis.Object.defineProperty(t, a.C, {
       enumerable: false,
@@ -891,6 +901,9 @@ class K extends Chunk495852.C {
         case 3:
           a.lastDismissedObjectId = e.uint64().toString();
           break;
+        case 4:
+          a.numTimesDismissed = e.uint32();
+          break;
         default:
           let o = n.readUnknownField;
           if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
@@ -901,7 +914,7 @@ class K extends Chunk495852.C {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    0 !== e.lastDismissedVersion && t.tag(1, r.TD.Varint).uint32(e.lastDismissedVersion), "0" !== e.lastDismissedAtMs && t.tag(2, r.TD.Varint).uint64(e.lastDismissedAtMs), "0" !== e.lastDismissedObjectId && t.tag(3, r.TD.Varint).uint64(e.lastDismissedObjectId);
+    0 !== e.lastDismissedVersion && t.tag(1, r.TD.Varint).uint32(e.lastDismissedVersion), "0" !== e.lastDismissedAtMs && t.tag(2, r.TD.Varint).uint64(e.lastDismissedAtMs), "0" !== e.lastDismissedObjectId && t.tag(3, r.TD.Varint).uint64(e.lastDismissedObjectId), 0 !== e.numTimesDismissed && t.tag(4, r.TD.Varint).uint32(e.numTimesDismissed);
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -921,6 +934,11 @@ class K extends Chunk495852.C {
       name: "last_dismissed_object_id",
       kind: "scalar",
       T: 4
+    }, {
+      no: 4,
+      name: "num_times_dismissed",
+      kind: "scalar",
+      T: 13
     }])
   }
 }

@@ -49,64 +49,64 @@ function g(e) {
     root: g,
     directory: f,
     target: y,
-    onClose: v,
-    sidebarHeader: O,
-    sidebarFooter: E
-  } = e, [b, N] = i.useState(true), [p, T] = i.useState(null == (t = f.entry(y)) ? true : t.parentPanel), [_, m] = i.useState({
+    onClose: O,
+    sidebarHeader: E,
+    sidebarFooter: v
+  } = e, [b, T] = i.useState(true), [N, p] = i.useState(null == (t = f.entry(y)) ? true : t.parentPanel), [I, C] = i.useState({
     target: y,
     targetAccordion: null == (n = f.entry(y)) ? true : n.parentAccordion,
     animateScroll: false,
-    complete: x
+    complete: j
   });
 
-  function x() {
-    m(true)
+  function j() {
+    C(true)
   }
   let {
-    navigateWithValidation: j
-  } = (0, s.Cu)(), I = {
-    currentPanel: f.get(p),
+    navigateWithValidation: m
+  } = (0, a.Cu)(), _ = {
+    currentPanel: f.typedGet(N),
     navigateTo: e => {
       let t = f.entry(e);
       if ((null == t ? true : t.parentPanel) == null) return;
       let n = {
         target: e,
         targetAccordion: t.parentAccordion,
-        complete: x
+        complete: j
       };
-      if (t.parentPanel.key !== (null == p ? true : p.key)) {
+      if (t.parentPanel.key !== (null == N ? true : N.key)) {
         let e = t.parentPanel;
-        j(() => {
-          m(d(c({}, n), {
+        m(() => {
+          C(d(c({}, n), {
             animateScroll: false
-          })), T(e)
+          })), p(e)
         })
-      } else m(d(c({}, n), {
+      } else C(d(c({}, n), {
         animateScroll: true
       }))
     },
-    navTransition: _,
+    navTransition: I,
     showNavigationMobile: b,
-    setShowNavigationMobile: N
+    setShowNavigationMobile: T
   };
-  return (0, r.jsx)(a.j.Provider, {
-    value: I,
+  return (0, r.jsx)(s.j.Provider, {
+    value: _,
     children: (0, r.jsxs)("div", {
       className: u.container,
       children: [(0, r.jsx)(o.P, {
         root: g,
-        header: O,
-        footer: E
+        header: E,
+        footer: v
       }), (0, r.jsx)(l.Z, {
-        onClose: () => j(v),
-        setting: I.currentPanel
+        onClose: () => m(O),
+        setting: _.currentPanel
       })]
     })
   })
 }
 
 function f(e) {
-  return (0, r.jsx)(s.Ri, {
+  return (0, r.jsx)(a.Ri, {
     children: (0, r.jsx)(g, c({}, e))
   })
 }

@@ -6,15 +6,15 @@ require.d(exports, {
 var Chunk657707 = require("./657707.js"),
   Chunk509613 = require("./509613.js"),
   Chunk131951 = require("./131951.js"),
+  Chunk313789 = require("./313789.js"),
   Chunk604224 = require("./604224.jsx"),
-  Chunk869235 = require("./869235.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
-let c = (0, Chunk509613.x1)(Chunk869235.t.VOICE_AND_VIDEO_PANE, {
+let c = (0, Chunk509613.x1)(Chunk313789.n.VOICE_AND_VIDEO_PANE, {
     getLayout: () => [],
     render: Chunk604224.Z
   }),
-  d = (0, Chunk509613.wf)(Chunk869235.t.VOICE_AND_VIDEO_PANEL, {
+  d = (0, Chunk509613.wf)(Chunk313789.n.VOICE_AND_VIDEO_PANEL, {
     icon: Chunk657707.S6n,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.B1fFpa),
     getLayout: () => [c],

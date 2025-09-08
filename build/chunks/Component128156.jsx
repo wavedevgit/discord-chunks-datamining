@@ -33,8 +33,8 @@ function I(e) {
     user: t,
     currentUser: n,
     displayProfile: I,
-    guildId: N,
-    channelId: w,
+    guildId: w,
+    channelId: N,
     subsection: E,
     onClose: Z
   } = e, {
@@ -52,12 +52,12 @@ function I(e) {
     voiceActivity: G
   } = (0, g.Z)({
     userId: t.id,
-    guildId: N
-  }), R = (0, l.e7)([s.Z], () => s.Z.isFetchingUserOutbox(t.id)), B = t.id === n.id, M = (0, l.e7)([u.Z, c.Z], () => {
-    let e = B ? u.Z.getStatus() : c.Z.getStatus(t.id);
+    guildId: w
+  }), B = (0, l.e7)([s.Z], () => s.Z.isFetchingUserOutbox(t.id)), R = t.id === n.id, U = (0, l.e7)([u.Z, c.Z], () => {
+    let e = R ? u.Z.getStatus() : c.Z.getStatus(t.id);
     return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
-  }), U = k.length > 0 || null != L, F = C && null == L && null == G && null != D, W = !M && (U || F), z = _.length > 0;
-  if (!W && !z && R) return (0, r.jsx)("div", {
+  }), F = k.length > 0 || null != L, M = C && null == L && null == G && null != D, W = !U && (F || M), z = _.length > 0;
+  if (!W && !z && B) return (0, r.jsx)("div", {
     className: S.cards,
     children: Array.from({
       length: 8
@@ -72,25 +72,25 @@ function I(e) {
       })]
     }, t))
   });
-  if (!W && !z && !R) {
-    var Y;
-    return B ? (0, r.jsx)(x.Uf, {
+  if (!W && !z && !B) {
+    var q;
+    return R ? (0, r.jsx)(x.Uf, {
       onClose: Z
     }) : (0, r.jsx)(x.P9, {
       user: t,
-      guildId: null != (Y = null == I ? true : I.guildId) ? Y : N,
-      channelId: w,
+      guildId: null != (q = null == I ? true : I.guildId) ? q : w,
+      channelId: N,
       onClose: Z
     })
   }
-  return (0, r.jsxs)(O.F, {
+  return (0, r.jsxs)(v.F, {
     className: S.scroller,
     fade: true,
     children: [W ? (0, r.jsx)(h.Z, {
       heading: A.intl.string(A.t.J6STd3),
       children: (0, r.jsxs)("ul", {
         className: S.cards,
-        children: [!T && F && (0, r.jsx)("li", {
+        children: [!T && M && (0, r.jsx)("li", {
           children: (0, r.jsx)(y.Z, {
             user: t,
             currentUser: n,
@@ -111,7 +111,7 @@ function I(e) {
             activity: e,
             onClose: Z
           })
-        }, "live-".concat(l))), T && F && (0, r.jsx)("li", {
+        }, "live-".concat(l))), T && M && (0, r.jsx)("li", {
           children: (0, r.jsx)(y.Z, {
             user: t,
             currentUser: n,
@@ -122,13 +122,13 @@ function I(e) {
       })
     }) : null, z ? (0, r.jsx)(h.Z, {
       heading: A.intl.string(A.t.jzgEoK),
-      introText: B ? A.intl.format(A.t["4bk9Ag"], {
+      introText: R ? A.intl.format(A.t["4bk9Ag"], {
         learnMoreHook: (e, t) => (0, r.jsx)(i.eee, {
           href: d.Z.getArticleURL(P.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, t)
       }) : true,
-      scrollIntoView: E === v.Tb.RECENT_ACTIVITY,
+      scrollIntoView: E === O.Tb.RECENT_ACTIVITY,
       children: (0, r.jsx)("ul", {
         className: S.cards,
         children: _.map(e => (0, r.jsx)("li", {

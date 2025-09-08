@@ -2,131 +2,129 @@
 /** chunk id: 224724, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => N
+  Z: () => A
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk594174 = require("./594174.js"),
-  Chunk836197 = require("./836197.js"),
-  Chunk621853 = require("./621853.js"),
-  Chunk86419 = require("./86419.js");
-let d = null,
-  f = null,
-  _ = false,
-  p = {
+  Chunk621853 = require("./621853.js");
+let c = null,
+  u = null,
+  d = false,
+  f = {
     suggestedGamesIds: [],
     suggestedWishlistGamesIds: []
   },
-  h = false,
-  m = false,
-  g = false;
+  _ = false,
+  p = false,
+  h = false;
 
-function E(e) {
+function m(e) {
   let {
     widgets: t
   } = e;
-  if (d = t, null === f) {
+  if (c = t, null === u) {
     let e = s.default.getCurrentUser();
     if (null != e) {
       var n;
-      let t = c.Z.getUserProfile(e.id);
-      f = null != (n = null == t ? true : t.widgets) ? n : []
+      let t = l.Z.getUserProfile(e.id);
+      u = null != (n = null == t ? true : t.widgets) ? n : []
     }
   }
 }
 
-function b() {
-  d = null, f = null
+function g() {
+  c = null, u = null
 }
 
-function y(e) {
+function E(e) {
   let {
     suggestedGamesIds: t,
     suggestedWishlistGamesIds: n
   } = e;
-  p.suggestedGamesIds = t, p.suggestedWishlistGamesIds = n, m = false, h = false
+  f.suggestedGamesIds = t, f.suggestedWishlistGamesIds = n, p = false, _ = false
 }
 
-function O() {
-  h = true, m = false
+function b() {
+  _ = true, p = false
 }
 
-function v() {
-  m = true, h = false, g = true
+function y() {
+  p = true, _ = false, h = true
+}
+
+function O(e) {
+  d = true
+}
+
+function v(e) {
+  d = false, null !== c && (u = null, c = null)
 }
 
 function I(e) {
-  _ = true
+  d = false
 }
 
 function T(e) {
-  _ = false, null !== d && (f = null, d = null)
-}
-
-function S(e) {
-  _ = false
-}
-
-function A(e) {
   let {
     applicationId: t
   } = e;
-  p.suggestedGamesIds = p.suggestedGamesIds.filter(e => e !== t), p.suggestedWishlistGamesIds = p.suggestedWishlistGamesIds.filter(e => e !== t)
+  f.suggestedGamesIds = f.suggestedGamesIds.filter(e => e !== t), f.suggestedWishlistGamesIds = f.suggestedWishlistGamesIds.filter(e => e !== t)
 }
-class C extends Chunk442837.ZP.Store {
+class S extends Chunk442837.ZP.Store {
   getPendingWidgets() {
-    return d
+    return c
   }
   getSaveablePendingWidgets() {
-    return null == d ? null : d.filter(e => !(0, l.W)(e) || e.games.length > 0)
+    return null == c ? null : c.filter(e => e.isSaveable())
   }
   hasPendingChanges() {
-    return null !== d && (null === f || !i().isEqual(d, f))
+    return null !== c && (null === u || !i().isEqual(c, u))
   }
   hasSaveablePendingChanges() {
     let e = this.getSaveablePendingWidgets();
     if (null == module) returnfalse;
-    if (null == f) returntrue;
-    let t = new Map(f.map(e => [e.id, e])),
+    if (null == u) returntrue;
+    let t = new Map(u.map(e => [e.id, e])),
       n = new Map(module.map(e => [e.id, e]));
     for (let [e, r] of require) {
       let n = exports.get(module);
-      if (null == require || (0, Chunk836197.W)(Chunk392711) && (0, Chunk836197.W)(require) && !(0, Chunk86419.ou)(Chunk392711.games, require.games, Chunk392711.type)) returntrue
+      if (null == require || !Chunk392711.isEqual(require)) returntrue
     }
     for (let [e] of exports)
       if (!require.has(module)) returntrue;
     for (let t = 0; exports < module.length; exports++) {
       var r, i;
-      if ((null == (r = module[exports]) ? true : Chunk392711.id) !== (null == (i = f[exports]) ? true : i.id)) returntrue
+      if ((null == (r = module[exports]) ? true : Chunk392711.id) !== (null == (i = u[exports]) ? true : i.id)) returntrue
     }
     returnfalse
   }
   get isSubmitting() {
-    return _
+    return d
   }
   get suggestedFetchError() {
-    return h
+    return _
   }
   get suggestedFetchIsLoading() {
-    return m
-  }
-  get suggestedFetchAttempted() {
-    return g
-  }
-  get suggestedGameIds() {
     return p
   }
+  get suggestedFetchAttempted() {
+    return h
+  }
+  get suggestedGameIds() {
+    return f
+  }
 }
-let N = new C(Chunk570140.Z, {
-  WIDGET_PENDING_SET: E,
-  WIDGET_PENDING_SAVE_START: I,
-  WIDGET_PENDING_SAVE_SUCCESS: T,
-  WIDGET_PENDING_SAVE_FAILURE: S,
-  WIDGET_SUGGESTED_FETCH_SUCCESS: y,
-  WIDGET_SUGGESTED_FETCH_FAILURE: O,
-  WIDGET_SUGGESTED_FETCH_START: v,
-  WIDGET_PENDING_CLEAR: b,
-  WIDGET_SUGGESTED_REMOVE_GAME: A
+let A = new S(Chunk570140.Z, {
+  WIDGET_PENDING_SET: m,
+  WIDGET_PENDING_SAVE_START: O,
+  WIDGET_PENDING_SAVE_SUCCESS: v,
+  WIDGET_PENDING_SAVE_FAILURE: I,
+  WIDGET_SUGGESTED_FETCH_SUCCESS: E,
+  WIDGET_SUGGESTED_FETCH_FAILURE: b,
+  WIDGET_SUGGESTED_FETCH_START: y,
+  WIDGET_PENDING_CLEAR: g,
+  WIDGET_SUGGESTED_REMOVE_GAME: T
 })

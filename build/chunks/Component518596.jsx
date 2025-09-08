@@ -9,8 +9,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
   Chunk37234 = require("./37234.js"),
+  Chunk313789 = require("./313789.js"),
   Chunk526665 = require("./526665.js"),
-  Chunk837061 = require("./837061.js"),
   Chunk981631 = require("./981631.js");
 
 function u(e, t, n) {
@@ -55,7 +55,7 @@ let p = "USER_SETTINGS_MODAL_MODAL_KEY";
 
 function h() {
   var e;
-  let t = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk837061.Z,
+  let t = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk313789.n.ACCOUNT_PANEL,
     u = arguments.length > 1 ? arguments[1] : true;
   Chunk570140.Z.dispatch({
     type: "USER_SETTINGS_MODAL_OPEN",

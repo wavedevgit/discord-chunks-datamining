@@ -13,15 +13,17 @@ function o(e) {
     children: n
   } = e, {
     navTransition: o
-  } = (0, l.t)(), s = i.useRef(null);
+  } = (0, l.t)(), a = i.useRef(null);
   return i.useEffect(() => {
-    var e, n;
-    (null == o || null == (e = o.target) ? true : e.key) === t.key && (null == (n = s.current) || n.scrollIntoView({
-      behavior: o.animateScroll ? "smooth" : "auto",
-      block: "center"
-    }), o.complete())
+    if ((null == o ? true : o.target) === t.key) {
+      var e;
+      null == (e = a.current) || e.scrollIntoView({
+        behavior: o.animateScroll ? "smooth" : "auto",
+        block: "center"
+      }), o.complete()
+    }
   }, [o, t.key]), (0, r.jsx)("div", {
-    ref: s,
+    ref: a,
     "data-debug-key": t.key,
     children: n
   })

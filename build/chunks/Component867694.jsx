@@ -13,19 +13,19 @@ function o(e) {
     node: n
   } = e, {
     useValue: o,
-    setValue: s,
-    useTitle: a,
+    setValue: a,
+    useTitle: s,
     useSubtitle: u,
     useDisabled: c,
     useTooltip: d
-  } = n, g = a(), f = null == u ? true : u(), y = o(), v = null != (t = null == c ? true : c()) && t, O = null == d ? true : d();
+  } = n, g = s(), f = null == u ? true : u(), y = o(), O = null != (t = null == c ? true : c()) && t, E = null == d ? true : d();
   return (0, r.jsx)(i.j, {
     value: y,
-    onChange: e => s(e),
+    onChange: e => a(e),
     className: l.toggle,
     note: f,
-    disabled: v,
-    tooltipNote: O,
+    disabled: O,
+    tooltipNote: E,
     hideBorder: true,
     children: g
   })

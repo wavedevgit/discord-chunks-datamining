@@ -6,15 +6,15 @@ require.d(exports, {
 var Chunk657707 = require("./657707.js"),
   Chunk509613 = require("./509613.js"),
   Chunk906467 = require("./906467.js"),
-  Chunk287490 = require("./287490.jsx"),
-  Chunk869235 = require("./869235.js");
-let a = (0, Chunk509613.x1)(Chunk869235.t.EXPERIMENTS_PANE, {
+  Chunk313789 = require("./313789.js"),
+  Chunk287490 = require("./287490.jsx");
+let s = (0, Chunk509613.x1)(Chunk313789.n.EXPERIMENTS_PANE, {
     getLayout: () => [],
     render: Chunk287490.Z
   }),
-  u = (0, Chunk509613.wf)(Chunk869235.t.EXPERIMENTS_PANEL, {
+  u = (0, Chunk509613.wf)(Chunk313789.n.EXPERIMENTS_PANEL, {
     icon: Chunk657707.uOV,
     useTitle: () => "Experiments",
     usePredicate: () => Chunk906467.Z.isDeveloper,
-    getLayout: () => [a]
+    getLayout: () => [s]
   })

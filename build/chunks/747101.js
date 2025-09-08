@@ -1,19 +1,20 @@
 /** Chunk was on 1267 **/
 /** chunk id: 747101, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  FX: () => b,
-  ZP: () => f,
-  kN: () => g,
-  kO: () => u,
-  qU: () => d
+  FX: () => p,
+  ZP: () => g,
+  kN: () => b,
+  kO: () => d,
+  qU: () => f
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk224706 = require("./224706.js"),
   Chunk669764 = require("./669764.js"),
-  Chunk77498 = require("./77498.js");
+  Chunk77498 = require("./77498.js"),
+  Chunk836197 = require("./836197.js");
 
-function c(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -32,7 +33,7 @@ function c(e) {
   return e
 }
 
-function s(e, t) {
+function u(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -45,11 +46,11 @@ function s(e, t) {
   }), e
 }
 
-function u(e) {
+function d(e) {
   return (0, i.e7)([o.Z], () => o.Z.isFetching(e))
 }
 
-function d(e) {
+function f(e) {
   n.useEffect(() => {
     if (e.length > 0) {
       let t = e.filter(e => o.Z.canFetch(e));
@@ -58,8 +59,8 @@ function d(e) {
   }, [e])
 }
 
-function f(e) {
-  d(n.useMemo(() => (function(e) {
+function g(e) {
+  f(n.useMemo(() => (function(e) {
     let t = new Set;
     return e.forEach(e => {
       e.games.forEach(e => {
@@ -69,7 +70,7 @@ function f(e) {
   })(e), [e]))
 }
 
-function g(e) {
+function b(e) {
   let [t, r] = (0, i.Wu)([o.Z], () => [o.Z.numNoDataAvailable(), o.Z.numSupplementalGames()]);
   return n.useMemo(() => {
     let t = {};
@@ -79,19 +80,19 @@ function g(e) {
   }, [e, t, r])
 }
 
-function b(e) {
-  let t = g(e.games.map(e => e.applicationId));
-  return n.useMemo(() => s(c({}, e), {
+function p(e) {
+  let t = b(e.games.map(e => e.applicationId));
+  return n.useMemo(() => new c.zy(u(s({}, e), {
     games: e.games.map(e => {
       let r = t[e.applicationId];
-      if (null != r) return s(c({}, e), {
+      if (null != r) return u(s({}, e), {
         gameName: r.name,
         imageSrc: r.coverImageUrl
       });
       let n = a.Z.getDetectableGame(e.applicationId);
-      return s(c({}, e), {
+      return u(s({}, e), {
         gameName: null == n ? true : n.name
       })
     })
-  }), [e, t])
+  })), [e, t])
 }

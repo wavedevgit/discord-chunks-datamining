@@ -26,10 +26,10 @@ function x(e) {
   } = e, [n, i] = l.useState(false), x = (0, o.Wu)([m.Z], () => {
     var e;
     return null != (e = m.Z.getSaveablePendingWidgets()) ? e : []
-  }), h = (0, o.e7)([m.Z], () => m.Z.hasSaveablePendingChanges()), O = (0, o.e7)([m.Z], () => m.Z.isSubmitting), v = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), P = (0, c.Yzy)(h, {
+  }), h = (0, o.e7)([m.Z], () => m.Z.hasSaveablePendingChanges()), v = (0, o.e7)([m.Z], () => m.Z.isSubmitting), O = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), P = (0, c.Yzy)(h, {
     from: {
       opacity: 0,
-      y: 80 * !v
+      y: 80 * !O
     },
     enter: {
       opacity: 1,
@@ -37,7 +37,7 @@ function x(e) {
     },
     leave: {
       opacity: 0,
-      y: 80 * !v
+      y: 80 * !O
     }
   });
   l.useEffect(() => {
@@ -82,14 +82,14 @@ function x(e) {
           variant: "secondary",
           text: j.intl.string(j.t.yBZMsb),
           onClick: S,
-          disabled: !h || O
+          disabled: !h || v
         }), (0, r.jsx)(c.zxk, {
           size: "sm",
           variant: "primary",
           text: j.intl.string(j.t.R3BPHx),
           onClick: A,
-          loading: O,
-          disabled: !h || O
+          loading: v,
+          disabled: !h || v
         })]
       })]
     })

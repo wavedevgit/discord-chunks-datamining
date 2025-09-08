@@ -15,43 +15,43 @@ var Chunk951288 = require("./951288.js"),
   Chunk643153 = require("./643153.js");
 
 function f(e) {
-  var t, n, l, o, s;
+  var t, n, l, o, a;
   let {
     node: g,
     visibleContent: f
   } = e, {
-    currentPanel: v,
-    navigateTo: O,
-    setShowNavigationMobile: E
+    currentPanel: O,
+    navigateTo: E,
+    setShowNavigationMobile: v
   } = (0, u.t)(), {
     useTitle: b,
-    trailing: N,
-    stronglyDiscouragedCustomTab: p
-  } = g, T = b(), _ = null != (o = null == N || null == (t = N.useDecoration) ? true : t.call(N)) ? o : null, m = null != (s = null == N || null == (n = N.useBadgeCount) ? true : n.call(N)) ? s : null, x = i.useMemo(() => g.layout.flatMap(e => e.layout), [g]), j = null != f && (null == N || null == (l = N.newIndicatorDismissibleContentTypes) ? true : l.includes(f)), I = (null == v ? true : v.key) === g.key, C = () => {
-    O(g), E(false)
+    trailing: T,
+    stronglyDiscouragedCustomTab: N
+  } = g, p = b(), I = null != (o = null == T || null == (t = T.useDecoration) ? true : t.call(T)) ? o : null, C = null != (a = null == T || null == (n = T.useBadgeCount) ? true : n.call(T)) ? a : null, j = i.useMemo(() => g.layout.flatMap(e => e.layout), [g]), m = null != f && (null == T || null == (l = T.newIndicatorDismissibleContentTypes) ? true : l.includes(f)), _ = (null == O ? true : O.key) === g.key, S = () => {
+    E(g.key), v(false)
   };
-  return null != p ? (0, r.jsx)(p, {
-    active: I,
-    onClick: C
+  return null != N ? (0, r.jsx)(N, {
+    active: _,
+    onClick: S
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.Z, {
       icon: g.icon,
-      title: T,
-      active: I,
+      title: p,
+      active: _,
       trailing: (0, r.jsx)(() => {
-        if (j) {
+        if (m) {
           var e;
-          return null != (e = null == N ? true : N.newIndicatorBadgeOverride) ? e : (0, r.jsx)(a.IGR, {
+          return null != (e = null == T ? true : T.newIndicatorBadgeOverride) ? e : (0, r.jsx)(s.IGR, {
             text: d.intl.string(d.t.y2b7CA)
           })
         }
-        return null != m && m > 0 ? (0, r.jsx)(a.mAB, {
-          count: m
-        }) : null != _ ? _ : null
+        return null != C && C > 0 ? (0, r.jsx)(s.mAB, {
+          count: C
+        }) : null != I ? I : null
       }, {}),
-      onClick: C
-    }), I && x.length > 1 && (0, r.jsx)(y, {
-      categories: x
+      onClick: S
+    }), _ && j.length > 1 && (0, r.jsx)(y, {
+      categories: j
     })]
   })
 }
@@ -62,19 +62,18 @@ function y(e) {
   } = e, [n, l] = i.useState(0), {
     setShowNavigationMobile: c,
     navigateTo: d
-  } = (0, u.t)(), [f, y] = (0, a.q_F)(() => ({
+  } = (0, u.t)(), [f, y] = (0, s.q_F)(() => ({
     y: 0,
     config: {
       mass: .1,
       friction: 20,
       tension: 300
     }
-  })), v = i.useMemo(() => t.map(e => {
+  })), O = i.useMemo(() => t.map(e => {
     var t;
     return {
       title: null == (t = e.useTitle) ? true : t.call(e),
-      key: e.key,
-      type: e.type
+      key: e.key
     }
   }).filter(e => {
     let {
@@ -86,33 +85,28 @@ function y(e) {
     className: g.subnav,
     children: [(0, r.jsx)("div", {
       className: g.track,
-      children: (0, r.jsx)(s.animated.div, {
+      children: (0, r.jsx)(a.animated.div, {
         className: g.thumb,
         style: f
       })
     }), (0, r.jsx)("ul", {
-      children: v.map((e, t) => {
+      children: O.map((e, t) => {
         let {
           title: i,
-          key: s,
-          type: u
+          key: a
         } = e;
-        return (0, r.jsx)(a.P3F, {
+        return (0, r.jsx)(s.P3F, {
           onClick: () => {
-            var e;
-            return e = {
-              key: s,
-              type: u
-            }, void(l(t), y({
+            l(t), y({
               y: 36 * t
-            }), c(false), d(e))
+            }), c(false), d(a)
           },
           tag: "li",
           className: o()({
             [g.active]: t === n
           }),
           children: i
-        }, s)
+        }, a)
       })
     })]
   })

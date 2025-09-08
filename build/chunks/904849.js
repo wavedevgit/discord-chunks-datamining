@@ -13,11 +13,18 @@ class r {
     })
   }
   entry(e) {
-    if (null != e) return this.map.get(e.key)
+    return this.map.get(e)
   }
   get(e) {
     var t;
     return null == (t = this.entry(e)) ? true : t.node
+  }
+  typedEntry(e) {
+    if (null != e) return this.map.get(e.key)
+  }
+  typedGet(e) {
+    var t;
+    return null == (t = this.typedEntry(e)) ? true : t.node
   }
   constructor() {
     ! function(e, t, n) {

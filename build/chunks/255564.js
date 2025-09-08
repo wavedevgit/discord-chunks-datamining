@@ -2,14 +2,15 @@
 /** chunk id: 255564, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => c
+  Z: () => u
 }), require("./388685.js");
 var Chunk150039 = require("./150039.js"),
   Chunk768581 = require("./768581.js"),
   Chunk74538 = require("./74538.js"),
+  Chunk836197 = require("./836197.js"),
   Chunk474936 = require("./474936.js");
 
-function s(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,10 +19,10 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function l(e, t) {
+function c(e, t) {
   return null == t || "" === t ? e : t
 }
-class c {
+class u {
   get premiumSince() {
     return this._userProfile.premiumSince
   }
@@ -33,6 +34,10 @@ class c {
   }
   get widgets() {
     return this._userProfile.widgets
+  }
+  get gameWidgets() {
+    var e;
+    return null == (e = this._userProfile.widgets) ? true : module.filter(Chunk836197.Wc)
   }
   get primaryColor() {
     var e, t;
@@ -115,6 +120,6 @@ class c {
   }
   constructor(e, t) {
     var n, r, i, a;
-    s(this, "userId", true), s(this, "guildId", true), s(this, "banner", true), s(this, "bio", true), s(this, "pronouns", true), s(this, "accentColor", true), s(this, "themeColors", true), s(this, "profileEffect", true), s(this, "popoutAnimationParticleType", true), s(this, "fetchStartedAt", true), s(this, "fetchEndedAt", true), s(this, "_userProfile", true), s(this, "_guildMemberProfile", true), this.userId = e.userId, this.guildId = null == t ? true : t.guildId, this.banner = null != (n = null == t ? true : t.banner) ? n : e.banner, this.bio = l(e.bio, null == t ? true : t.bio), this.pronouns = l(e.pronouns, null == t ? true : t.pronouns), this.accentColor = e.accentColor, this.themeColors = null != (r = null == t ? true : t.themeColors) ? r : e.themeColors, this.profileEffect = null != (i = null == t ? true : t.profileEffect) ? i : e.profileEffect, this.popoutAnimationParticleType = null != (a = null == t ? true : t.popoutAnimationParticleType) ? a : e.popoutAnimationParticleType, this.fetchStartedAt = e.fetchStartedAt, this.fetchEndedAt = e.fetchEndedAt, this._userProfile = e, this._guildMemberProfile = t
+    l(this, "userId", true), l(this, "guildId", true), l(this, "banner", true), l(this, "bio", true), l(this, "pronouns", true), l(this, "accentColor", true), l(this, "themeColors", true), l(this, "profileEffect", true), l(this, "popoutAnimationParticleType", true), l(this, "fetchStartedAt", true), l(this, "fetchEndedAt", true), l(this, "_userProfile", true), l(this, "_guildMemberProfile", true), this.userId = e.userId, this.guildId = null == t ? true : t.guildId, this.banner = null != (n = null == t ? true : t.banner) ? n : e.banner, this.bio = c(e.bio, null == t ? true : t.bio), this.pronouns = c(e.pronouns, null == t ? true : t.pronouns), this.accentColor = e.accentColor, this.themeColors = null != (r = null == t ? true : t.themeColors) ? r : e.themeColors, this.profileEffect = null != (i = null == t ? true : t.profileEffect) ? i : e.profileEffect, this.popoutAnimationParticleType = null != (a = null == t ? true : t.popoutAnimationParticleType) ? a : e.popoutAnimationParticleType, this.fetchStartedAt = e.fetchStartedAt, this.fetchEndedAt = e.fetchEndedAt, this._userProfile = e, this._guildMemberProfile = t
   }
 }

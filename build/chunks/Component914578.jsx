@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 914578, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,34 +16,34 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk989281 = require("./989281.js");
 
-function v(e) {
+function O(e) {
   let {
     onClose: t
   } = e;
-  return (0, r.jsx)(s.v2r, {
+  return (0, r.jsx)(a.v2r, {
     navId: "settings-footer-more-menu",
     onClose: t,
     onSelect: () => {},
     "aria-label": "More options",
-    children: (0, r.jsxs)(s.kSQ, {
-      children: [(0, r.jsx)(s.sNh, {
+    children: (0, r.jsxs)(a.kSQ, {
+      children: [(0, r.jsx)(a.sNh, {
         id: "changelog",
         label: f.intl.string(f.t.LRmNAg),
         action: () => (0, u.Z)(true)
-      }), (0, r.jsx)(s.sNh, {
+      }), (0, r.jsx)(a.sNh, {
         id: "acknowledgements",
         label: f.intl.string(f.t["0nUKy8"]),
-        action: () => (0, a.Z)(g.EYA.ACKNOWLEDGEMENTS)
-      }), (0, r.jsx)(s.sNh, {
+        action: () => (0, s.Z)(g.EYA.ACKNOWLEDGEMENTS)
+      }), (0, r.jsx)(a.sNh, {
         id: "support",
         label: f.intl.string(f.t["Yl/Rio"]),
-        action: () => (0, a.Z)(c.w)
+        action: () => (0, s.Z)(c.w)
       })]
     })
   })
 }
 
-function O() {
+function E() {
   let e = Chunk647438.useRef(null);
   return (0, Chunk951288.jsxs)("div", {
     children: [(0, Chunk951288.jsx)(Chunk604227.Z, {
@@ -84,13 +84,13 @@ function O() {
           let {
             closePopout: t
           } = e;
-          return (0, r.jsx)(v, {
+          return (0, r.jsx)(O, {
             onClose: t
           })
         },
         children: (t, n) => {
           var i, l;
-          return (0, r.jsx)(s.eee, (i = function(e) {
+          return (0, r.jsx)(a.eee, (i = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);
@@ -113,7 +113,7 @@ function O() {
             className: o()(y.moreButton, {
               [y.active]: n.isShown
             }),
-            children: (0, r.jsx)(s.Text, {
+            children: (0, r.jsx)(a.Text, {
               tag: "span",
               variant: "text-xxs/normal",
               color: "currentColor",

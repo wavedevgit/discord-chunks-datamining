@@ -1,23 +1,23 @@
 /** Chunk was on 47129 **/
 /** chunk id: 976713, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => a
 });
 var Chunk951288 = require("./951288.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk465919 = require("./465919.js");
 
-function s(e) {
+function a(e) {
   let {
     node: t
   } = e, {
     useValue: n,
-    setValue: s,
-    useTitle: a,
+    setValue: a,
+    useTitle: s,
     useSubtitle: u,
     useOptions: c
-  } = t, d = a(), g = null == u ? true : u(), f = n(), y = c();
+  } = t, d = s(), g = null == u ? true : u(), f = n(), y = c();
   return (0, r.jsx)(l.xJW, {
     title: d,
     className: o.radioContainer,
@@ -29,7 +29,7 @@ function s(e) {
       }), (0, r.jsx)(i.Gu, {
         options: y,
         value: f,
-        onChange: e => s(e.value)
+        onChange: e => a(e.value)
       })]
     })
   })

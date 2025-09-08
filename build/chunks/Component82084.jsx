@@ -10,8 +10,8 @@ var Chunk951288 = require("./951288.js"),
 function o(e) {
   var t, n, {
       root: o,
-      directory: s,
-      target: a,
+      directory: a,
+      target: s,
       sidebarHeader: u,
       sidebarFooter: c
     } = e,
@@ -54,8 +54,8 @@ function o(e) {
     children: (0, r.jsx)(l.Z, {
       onClose: d.onClose,
       root: o,
-      directory: s,
-      target: a,
+      directory: a,
+      target: s,
       sidebarHeader: u,
       sidebarFooter: c
     })
