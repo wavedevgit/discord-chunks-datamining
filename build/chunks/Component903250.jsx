@@ -2,7 +2,7 @@
 /** chunk id: 903250, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => w
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,7 +19,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk357355 = require("./357355.js"),
   Chunk140465 = require("./140465.js"),
   Chunk775412 = require("./775412.js"),
-  Chunk47280 = require("./47280.js"),
   Chunk105759 = require("./105759.js"),
   Chunk736519 = require("./736519.jsx"),
   Chunk422034 = require("./422034.jsx"),
@@ -32,84 +31,82 @@ var Chunk951288 = require("./951288.js"),
   Chunk181960 = require("./181960.js"),
   Chunk313199 = require("./313199.js"),
   Chunk821969 = require("./821969.js");
-let w = (e, t) => {
+let P = (e, t) => {
     let {
       className: n,
       buttonClassName: i,
       subscriptionTier: a,
-      isDarkMode: w,
-      isEligibleForBogoPromotion: D,
-      videoRef: x
+      isDarkMode: P,
+      isEligibleForBogoPromotion: w,
+      videoRef: D
     } = e, {
-      analyticsLocations: L
-    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), j = (0, g._O)(), M = (0, m.Nx)(), k = (0, s.e7)([h.Z], () => h.Z.affinities), U = (0, b.Z)(), G = null != U, B = w ? l.Tt.WHITE : l.Tt.BRAND, Z = k.length > 0, F = (0, E.ZP)({
-      location: "HeroHeading"
-    }) ? A.intl.string(A.t["EW+VIS"]) : A.intl.string(A.t.YCZldH), V = (0, p.rO)(), H = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
+      analyticsLocations: x
+    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), L = (0, g._O)(), j = (0, m.Nx)(), M = (0, s.e7)([h.Z], () => h.Z.affinities), k = (0, E.Z)(), U = null != k, G = P ? l.Tt.WHITE : l.Tt.BRAND, B = M.length > 0, Z = S.intl.string(S.t.YCZldH), F = (0, p.rO)(), V = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
     return (0, r.jsx)(f.Gt, {
-      value: L,
+      value: x,
       children: (0, r.jsxs)("div", {
-        className: o()(C.container, C.heroHeadingContainer, n),
+        className: o()(A.container, A.heroHeadingContainer, n),
         ref: t,
         "data-testid": "marketing-page-hero-header",
         children: [(0, r.jsx)("div", {
-          className: C.container,
+          className: A.container,
           children: (0, r.jsxs)("div", {
-            className: C.marketingPageTextContainer,
-            children: [M && (0, r.jsx)(T.Z, {}), (0, r.jsx)(c.X6q, {
-              className: C.marketingPageHeading,
+            className: A.marketingPageTextContainer,
+            children: [j && (0, r.jsx)(I.Z, {}), (0, r.jsx)(c.X6q, {
+              className: A.marketingPageHeading,
               variant: "display-sm",
               color: "header-primary",
-              children: F
-            }), G ? (0, r.jsx)(v.Z, {
-              referrer: U
-            }) : Z && (0, r.jsx)("div", {
-              className: C.affinityDescriptionContainer,
-              children: (0, r.jsx)(O.Z, {
+              children: Z
+            }), U ? (0, r.jsx)(O.Z, {
+              referrer: k
+            }) : B && (0, r.jsx)("div", {
+              className: A.affinityDescriptionContainer,
+              children: (0, r.jsx)(y.Z, {
                 textColor: "text-default",
                 smallerText: false,
                 isApplicationHome: true
               })
-            }), j ? (0, r.jsx)("div", {
-              className: o()(C.buttonContainer, C.marketingPageCTAContainer, {
-                [C.marketingPageCTAMargin]: !(Z || G)
+            }), L ? (0, r.jsx)("div", {
+              className: o()(A.buttonContainer, A.marketingPageCTAContainer, {
+                [A.marketingPageCTAMargin]: !(B || U)
               }),
-              children: (0, r.jsx)(y.Z, {
-                className: o()(C.button, i),
-                color: B
+              children: (0, r.jsx)(b.Z, {
+                className: o()(A.button, i),
+                color: G
               })
-            }) : (0, r.jsx)(I.PK, {
+            }) : (0, r.jsx)(v.PK, {
               subscriptionTier: a,
-              inOfferExperience: M,
-              containerClassName: o()(C.marketingPageCTAContainer, {
-                [C.marketingPageCTAMargin]: !(Z || G)
+              inOfferExperience: j,
+              containerClassName: o()(A.marketingPageCTAContainer, {
+                [A.marketingPageCTAMargin]: !(B || U)
               }),
               buttonClassName: i,
               isApplicationHome: true,
-              isDarkMode: w,
-              isEligibleForBogoPromotion: D
-            }), (0, r.jsx)(I._O, {
+              isDarkMode: P,
+              isEligibleForBogoPromotion: w
+            }), (0, r.jsx)(v._O, {
               variant: "text-sm/normal",
               withBottomMargin: false,
               isApplicationHome: true
             })]
           })
         }), (0, r.jsx)("div", {
-          className: C.heroHeadingV2ArtContainer,
+          className: A.heroHeadingV2ArtContainer,
           children: (0, r.jsx)(_.Z, {
-            autoPlay: !H,
+            autoPlay: !V,
             playsInline: true,
-            preload: H ? "none" : "auto",
-            poster: R.Z,
+            preload: V ? "none" : "auto",
+            poster: N.Z,
             loop: true,
-            className: C.heroHeadingV2Art,
-            ref: x,
+            className: A.heroHeadingV2Art,
+            ref: D,
             children: (0, r.jsx)("source", {
-              src: V ? N.Z : P.Z,
-              type: V ? S.m.MP4 : S.m.WEBM
+              src: F ? C.Z : R.Z,
+              type: F ? T.m.MP4 : T.m.WEBM
             })
           })
         })]
       })
     })
   },
-  D = Chunk647438.forwardRef(w)
+  w = Chunk647438.forwardRef(P)
