@@ -57,9 +57,8 @@ let E = [Chunk911969.yU.CHAT, Chunk911969.yU.PRIMARY_ENTRY_POINT],
   b = {
     pendingUsages: []
   },
-  y = new Chunk704907.ZP({
+  y = new Chunk704907.Z({
     computeBonus: () => 100,
-    computeWeight: e => e <= 3 ? 100 : e <= 15 ? 70 : e <= 30 ? 50 : e <= 45 ? 30 : e <= 80 ? 10 : 1,
     lookupKey: e => e,
     afterCompute: () => {},
     numFrequentlyItems: Chunk674563.yP

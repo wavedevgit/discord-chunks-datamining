@@ -59,7 +59,7 @@ function b(e, t) {
 let y = 10,
   O = 100,
   v = 100,
-  I = new Chunk704907.ZP({
+  I = new Chunk704907.Z({
     computeBonus: () => O,
     computeWeight: e => {
       let t = 1;

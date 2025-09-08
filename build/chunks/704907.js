@@ -2,9 +2,7 @@
 /** chunk id: 704907, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  KX: () => m,
-  M$: () => h,
-  ZP: () => E
+  Z: () => m
 }), require("./825670.js"), require("./539854.js"), require("./642613.js"), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -50,29 +48,13 @@ function u(e, t) {
   }), e
 }
 let d = 10,
-  f = 1e3,
-  _ = 32,
-  p = (e, t, n) => Math.ceil(e * (t / n.numOfRecentUses)),
-  h = {
-    original: e => {
-      let t = 1;
-      return e <= 3 ? t = 100 : e <= 15 ? t = 70 : e <= 30 ? t = 50 : e <= 45 ? t = 30 : e <= 80 && (t = 10), t
-    },
-    safe: e => {
-      let t = 1;
-      return e <= 3 ? t = 100 : e <= 15 ? t = 70 : e <= 30 ? t = 50 : e <= 45 ? t = 30 : e <= 80 && (t = 10), t
-    },
-    day_recency: e => {
-      let t = 1;
-      return e <= 1 ? t = 100 : e <= 2 ? t = 70 : e <= 3 ? t = 50 : e <= 7 ? t = 20 : e <= 15 ? t = 15 : e <= 30 ? t = 10 : e <= 45 ? t = 5 : e <= 80 && (t = 2), t
-    }
-  },
-  m = {
-    original: p,
-    safe: (e, t, n) => null == n.maxTotalUse ? 0 : Math.trunc(1e3 * (e / n.maxTotalUse * .2 + t / f * .8)),
-    day_recency: (e, t, n) => null == n.maxTotalUse ? 0 : Math.trunc(1e3 * (e / n.maxTotalUse * .05 + t / f * .95))
+  f = 32,
+  _ = (e, t, n) => Math.ceil(e * (t / n.numOfRecentUses)),
+  p = e => {
+    let t = 1;
+    return e <= 3 ? t = 100 : e <= 15 ? t = 70 : e <= 30 ? t = 50 : e <= 45 ? t = 30 : e <= 80 && (t = 10), t
   };
-class g {
+class h {
   overwriteHistory(e, t) {
     this.usageHistory = i().mapValues(null != e ? e : {}, e => u(l({}, e), {
       frecency: false
@@ -114,11 +96,6 @@ class g {
     let t = this.getEntry(e);
     return null != t ? t.frecency : null
   }
-  replaceEntryComputeFunctions(e, t, n) {
-    this.computeWeight = e, this.computeFrecency = t, this.calculateMaxTotalUse = n, this.usageHistory = i().mapValues(this.usageHistory, e => u(l({}, e), {
-      frecency: false
-    })), this.markDirty()
-  }
   compute() {
     let e = o()(),
       t = this.calculateMaxTotalUse ? i().maxBy(Object.values(this.usageHistory), e => e.totalUses) : null;
@@ -157,14 +134,15 @@ class g {
   }
   constructor({
     computeBonus: e,
-    computeWeight: t,
-    computeFrecency: n = p,
-    lookupKey: r,
-    afterCompute: i,
-    numFrequentlyItems: a = _,
-    maxSamples: o = d
+    computeWeight: t = p,
+    computeFrecency: n = _,
+    calculateMaxTotalUse: r = false,
+    lookupKey: i,
+    afterCompute: a,
+    numFrequentlyItems: o = f,
+    maxSamples: l = d
   }) {
-    s(this, "dirty", true), s(this, "_frequently", true), s(this, "numFrequentlyItems", true), s(this, "maxSamples", true), s(this, "computeBonus", true), s(this, "computeWeight", true), s(this, "computeFrecency", true), s(this, "lookupKey", true), s(this, "usageHistory", true), s(this, "afterCompute", true), s(this, "calculateMaxTotalUse", true), this.computeBonus = e, this.computeWeight = t, this.computeFrecency = n, this.afterCompute = i, this.lookupKey = r, this.usageHistory = {}, this.frequently = [], this.maxSamples = o, this.numFrequentlyItems = a, this.calculateMaxTotalUse = false, this.dirty = false
+    s(this, "dirty", true), s(this, "_frequently", true), s(this, "numFrequentlyItems", true), s(this, "maxSamples", true), s(this, "computeBonus", true), s(this, "computeWeight", true), s(this, "computeFrecency", true), s(this, "calculateMaxTotalUse", true), s(this, "lookupKey", true), s(this, "usageHistory", true), s(this, "afterCompute", true), this.computeBonus = e, this.computeWeight = t, this.computeFrecency = n, this.calculateMaxTotalUse = r, this.afterCompute = a, this.lookupKey = i, this.usageHistory = {}, this.frequently = [], this.maxSamples = l, this.numFrequentlyItems = o, this.dirty = false
   }
 }
-let E = g
+let m = h

@@ -61,12 +61,8 @@ let v = [],
   I = new(s())({
     max: Chunk710111.zb
   }),
-  T = new Chunk704907.ZP({
+  T = new Chunk704907.Z({
     computeBonus: () => 100,
-    computeWeight: e => {
-      let t = 1;
-      return e <= 3 ? t = 100 : e <= 15 ? t = 70 : e <= 30 ? t = 50 : e <= 45 ? t = 30 : e <= 80 && (t = 10), t
-    },
     lookupKey: e => p.Z.getSoundById(e),
     afterCompute: () => {},
     numFrequentlyItems: Chunk710111.O6

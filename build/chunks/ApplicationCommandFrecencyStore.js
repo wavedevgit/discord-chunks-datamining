@@ -56,9 +56,8 @@ function h(e, t) {
 let m = {
     pendingUsages: []
   },
-  g = new Chunk704907.ZP({
+  g = new Chunk704907.Z({
     computeBonus: () => 1,
-    computeWeight: e => e <= 3 ? 100 : e <= 15 ? 70 : e <= 30 ? 50 : e <= 45 ? 30 : e <= 80 ? 10 : 1,
     lookupKey: e => e,
     afterCompute: () => {},
     numFrequentlyItems: Chunk674563.yP

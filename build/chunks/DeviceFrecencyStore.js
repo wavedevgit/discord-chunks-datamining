@@ -20,15 +20,13 @@ function l(e, t, n) {
 let c = {
     afterCompute: () => {},
     computeBonus: () => 100,
-    computeFrecency: Chunk704907.KX.original,
-    computeWeight: Chunk704907.M$.original,
     lookupKey: e => e,
     maxSamples: 256,
     numFrequentlyItems: 1 / 0
   },
-  u = new Chunk704907.ZP(c),
-  d = new Chunk704907.ZP(c),
-  f = new Chunk704907.ZP(c);
+  u = new Chunk704907.Z(c),
+  d = new Chunk704907.Z(c),
+  f = new Chunk704907.Z(c);
 
 function _(e) {
   let {
