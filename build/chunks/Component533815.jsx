@@ -20,9 +20,9 @@ function d(e) {
     iconSize: i = "refresh_sm",
     className: d
   } = e, {
-    trackUserProfileEditAction: g
-  } = (0, a.KZ)(), f = () => {
-    (0, c.$b)(r, t.applicationId), o.uvj.announce(s.intl.string(s.t["08HmMj"])), g({
+    trackUserProfileEditAction: f
+  } = (0, a.KZ)(), g = () => {
+    (0, c.$b)(r, t.applicationId), o.uvj.announce(s.intl.string(s.t["08HmMj"])), f({
       action: "GAME_REMOVED",
       gameId: t.applicationId,
       widgetEdited: r
@@ -50,7 +50,7 @@ function d(e) {
         }
         return e
       }({}, e), r = r = {
-        onClick: f,
+        onClick: g,
         "aria-label": s.intl.string(s.t.HUvyDQ),
         className: l()(d, u.clickable),
         children: (0, n.jsx)(o.XHJ, {

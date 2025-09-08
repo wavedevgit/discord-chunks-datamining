@@ -14,33 +14,17 @@ let a = {
       getText: () => Chunk388032.intl.string(Chunk388032.t.jbIRBA),
       icon: Chunk481060.jrt
     },
-    [Chunk379405._.NOOB]: {
-      getText: () => Chunk388032.intl.string(Chunk388032.t.JCbfAw),
+    [Chunk379405._.CASUAL]: {
+      getText: () => Chunk388032.intl.string(Chunk388032.t.xcFFv7),
       icon: Chunk481060.jrt
     },
-    [Chunk379405._.LEARNING_THE_ROPES]: {
-      getText: () => Chunk388032.intl.string(Chunk388032.t.S1X0kp),
-      icon: Chunk481060.jrt
-    },
-    [Chunk379405._.GETTING_GOOD]: {
-      getText: () => Chunk388032.intl.string(Chunk388032.t.i4LREx),
-      icon: Chunk481060.jrt
-    },
-    [Chunk379405._.SKILLED]: {
-      getText: () => Chunk388032.intl.string(Chunk388032.t["BQmP7+"]),
+    [Chunk379405._.INTERMEDIATE]: {
+      getText: () => Chunk388032.intl.string(Chunk388032.t["A/mIs7"]),
       icon: Chunk481060.jrt
     },
     [Chunk379405._.EXPERT]: {
       getText: () => Chunk388032.intl.string(Chunk388032.t.RIOFc3),
       icon: Chunk481060.jrt
-    },
-    [Chunk379405._.MASTER]: {
-      getText: () => Chunk388032.intl.string(Chunk388032.t.E755U1),
-      icon: Chunk481060.jrt
-    },
-    [Chunk379405._.LIKE_IT]: {
-      getText: () => Chunk388032.intl.string(Chunk388032.t["AXQ+hY"]),
-      icon: Chunk481060.lbB
     },
     [Chunk379405._.LOVE_IT]: {
       getText: () => Chunk388032.intl.string(Chunk388032.t["1rN7BA"]),
@@ -54,32 +38,20 @@ let a = {
       getText: () => Chunk388032.intl.string(Chunk388032.t["/WcmcH"]),
       icon: Chunk481060.kZ9
     },
-    [Chunk379405._.FRUSTRATED]: {
-      getText: () => Chunk388032.intl.string(Chunk388032.t.R98Ol5),
-      icon: Chunk481060.kZ9
-    },
     [Chunk379405._.RAGE_QUITTING]: {
       getText: () => Chunk388032.intl.string(Chunk388032.t["NXZ/MT"]),
       icon: Chunk481060.kZ9
-    },
-    [Chunk379405._.TOO_EASY]: {
-      getText: () => Chunk388032.intl.string(Chunk388032.t["8105aG"]),
-      icon: Chunk481060.kZ9
-    },
-    [Chunk379405._.LFG]: {
-      getText: () => Chunk388032.intl.string(Chunk388032.t.DWWAAQ),
-      icon: Chunk481060.iFz
     },
     [Chunk379405._.OPEN_TO_PLAY]: {
       getText: () => Chunk388032.intl.string(Chunk388032.t.q30PoK),
       icon: Chunk481060.iFz
     },
-    [Chunk379405._.LOOKING_FOR_TIPS]: {
-      getText: () => Chunk388032.intl.string(Chunk388032.t.KQDVvL),
+    [Chunk379405._.LOOKING_FOR_GROUP]: {
+      getText: () => Chunk388032.intl.string(Chunk388032.t["8o9MNT"]),
       icon: Chunk481060.iFz
     },
-    [Chunk379405._.LOOKING_TO_LEARN]: {
-      getText: () => Chunk388032.intl.string(Chunk388032.t.zG3Hzc),
+    [Chunk379405._.LOOKING_FOR_TIPS]: {
+      getText: () => Chunk388032.intl.string(Chunk388032.t.KQDVvL),
       icon: Chunk481060.iFz
     },
     [Chunk379405._.OPEN_TO_TEACH]: {
@@ -96,16 +68,16 @@ let u = {
   skill_level: {
     getLabel: () => Chunk388032.intl.string(Chunk388032.t.MKqADA),
     type: "radio",
-    tags: [Chunk379405._.NOOB, Chunk379405._.LEARNING_THE_ROPES, Chunk379405._.GETTING_GOOD, Chunk379405._.SKILLED, Chunk379405._.EXPERT, Chunk379405._.MASTER, Chunk379405._.BETTER_THAN_YOU]
+    tags: [Chunk379405._.CASUAL, Chunk379405._.INTERMEDIATE, Chunk379405._.EXPERT, Chunk379405._.BETTER_THAN_YOU]
   },
   rating: {
     getLabel: () => Chunk388032.intl.string(Chunk388032.t["7/umur"]),
     type: "checkbox",
-    tags: [Chunk379405._.LIKE_IT, Chunk379405._.LOVE_IT, Chunk379405._.KIND_OF_LOVE_IT, Chunk379405._.KIND_OF_HATE_IT, Chunk379405._.FRUSTRATED, Chunk379405._.RAGE_QUITTING, Chunk379405._.TOO_EASY]
+    tags: [Chunk379405._.LOVE_IT, Chunk379405._.KIND_OF_LOVE_IT, Chunk379405._.KIND_OF_HATE_IT, Chunk379405._.RAGE_QUITTING]
   },
   looking_for: {
     getLabel: () => Chunk388032.intl.string(Chunk388032.t["5Dez19"]),
     type: "checkbox",
-    tags: [Chunk379405._.LFG, Chunk379405._.OPEN_TO_PLAY, Chunk379405._.LOOKING_FOR_TIPS, Chunk379405._.LOOKING_TO_LEARN, Chunk379405._.OPEN_TO_TEACH]
+    tags: [Chunk379405._.LOOKING_FOR_GROUP, Chunk379405._.OPEN_TO_PLAY, Chunk379405._.LOOKING_FOR_TIPS, Chunk379405._.OPEN_TO_TEACH]
   }
 }

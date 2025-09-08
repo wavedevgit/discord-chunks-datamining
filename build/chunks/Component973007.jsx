@@ -1,36 +1,40 @@
 /** Chunk was on 54400 **/
 /** chunk id: 973007, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => u
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk744129 = require("./744129.jsx"),
   Chunk823188 = require("./823188.jsx"),
+  Chunk951570 = require("./951570.js"),
   Chunk474936 = require("./474936.js"),
   Chunk402450 = require("./402450.js");
 
-function C(e) {
+function d(e) {
   let {
     onClick: t,
     isGift: n,
-    priceOptions: s,
-    showPromotionalGiftBanner: C,
-    enablePremiumBrandRefresh: d
-  } = e;
-  return d ? (0, r.jsx)(i.P3F, {
+    priceOptions: o,
+    showPromotionalGiftBanner: d,
+    enablePremiumBrandRefresh: c
+  } = e, {
+    isEligible: u
+  } = (0, s.Q1)();
+  return c ? (0, r.jsx)(i.P3F, {
     onClick: t,
     style: {
       cursor: "pointer"
     },
     children: (0, r.jsx)(l.IL, {
       ctaButton: null,
-      showPromotionalGiftBanner: C,
+      showPromotionalGiftBanner: d,
+      showSeptemberMarketingMomentBanner: u,
       showYearlyPrice: true,
       isGift: n,
       isModal: true,
-      priceOptions: s
+      priceOptions: o
     })
   }) : (0, r.jsx)(i.P3F, {
     onClick: t,
@@ -38,32 +42,32 @@ function C(e) {
       cursor: "pointer"
     },
     children: (0, r.jsx)(a.wp, {
-      className: o.tier2MarketingCard,
+      className: C.tier2MarketingCard,
       ctaButton: null,
-      showWumpus: !C,
-      showPromotionalGiftBanner: C,
+      showWumpus: !d,
+      showPromotionalGiftBanner: d,
       showYearlyPrice: true,
       isGift: n,
       isModal: true,
-      priceOptions: s
+      priceOptions: o
     })
   })
 }
 
-function d(e) {
+function c(e) {
   let {
     onClick: t,
     isGift: n,
     priceOptions: s,
-    enablePremiumBrandRefresh: C
+    enablePremiumBrandRefresh: o
   } = e;
-  return C ? (0, r.jsx)(i.P3F, {
+  return o ? (0, r.jsx)(i.P3F, {
     onClick: t,
     style: {
       cursor: "pointer"
     },
     children: (0, r.jsx)(l.UQ, {
-      className: o.premiumBrandRefreshTier0Card,
+      className: C.premiumBrandRefreshTier0Card,
       ctaButton: null,
       showYearlyPrice: true,
       isGift: n,
@@ -75,7 +79,7 @@ function d(e) {
       cursor: "pointer"
     },
     children: (0, r.jsx)(a.Gq, {
-      className: o.tier0MarketingCard,
+      className: C.tier0MarketingCard,
       ctaButton: null,
       showWumpus: true,
       showYearlyPrice: true,
@@ -84,7 +88,7 @@ function d(e) {
     })
   })
 }
-let c = function(e) {
+let u = function(e) {
   let {
     onSelectSku: t,
     isGift: n,
@@ -93,14 +97,14 @@ let c = function(e) {
     enablePremiumBrandRefresh: a
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(C, {
-      onClick: () => t(s.Si.TIER_2),
+    children: [(0, r.jsx)(d, {
+      onClick: () => t(o.Si.TIER_2),
       isGift: n,
       priceOptions: i,
       showPromotionalGiftBanner: l,
       enablePremiumBrandRefresh: a
-    }), (0, r.jsx)(d, {
-      onClick: () => t(s.Si.TIER_0),
+    }), (0, r.jsx)(c, {
+      onClick: () => t(o.Si.TIER_0),
       isGift: n,
       priceOptions: i,
       enablePremiumBrandRefresh: a

@@ -55,8 +55,8 @@ function F(e) {
   } = e, {
     activeSubscription: q,
     hasFetchedSubscriptions: J,
-    paymentSourceId: X,
-    paymentSources: Q,
+    paymentSourceId: Q,
+    paymentSources: X,
     selectedSkuId: $,
     selectedPlan: ee,
     step: et,
@@ -71,7 +71,7 @@ function F(e) {
     claimableRewards: eC
   } = (0, E.wD)(), {
     paymentModalBanner: ed
-  } = (0, w.zb)(), ec = (0, x.a5)(ee), eu = (null == (t = (0, p.Z)()) ? true : t.planSelectionBanner) != null, ep = ea && ec && null != eC && eC.length > 0 && eu, ex = (0, T.m)(Q, X), {
+  } = (0, w.zb)(), ec = (0, x.a5)(ee), eu = (null == (t = (0, p.Z)()) ? true : t.planSelectionBanner) != null, ep = ea && ec && null != eC && eC.length > 0 && eu, ex = (0, T.m)(X, Q), {
     newPlans: e_
   } = c.ZP.useExperiment({
     location: "d17fd6_3"

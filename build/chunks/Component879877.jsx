@@ -7,7 +7,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk379405 = require("./379405.js"),
+  Chunk624238 = require("./624238.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk259580 = require("./259580.jsx"),
@@ -27,13 +27,13 @@ function y(e) {
     applicationId: s,
     className: u,
     disableInteraction: y = false
-  } = e, h = null != (t = null == r ? true : r.filter(e => null != (0, b.zK)(e))) ? t : [], w = h.length > 0, P = Object.values(a._).length, E = l && !y && (0, g.M8)(c) && h.length < P, {
+  } = e, h = null != (t = null == r ? true : r.filter(e => null != (0, b.zK)(e))) ? t : [], w = h.length > 0, P = a.qH, E = l && !y && (0, f.M8)(c) && h.length < P, {
     trackUserProfileAction: S
-  } = (0, d.KZ)(), I = (0, i.useRef)(new Map), T = (0, i.useRef)(null), D = (0, i.useRef)(null), [_, N] = (0, i.useState)(0), [k, Z] = (0, i.useState)(false), A = x(T, D, h, I, N);
+  } = (0, d.KZ)(), I = (0, i.useRef)(new Map), D = (0, i.useRef)(null), T = (0, i.useRef)(null), [N, k] = (0, i.useState)(0), [_, Z] = (0, i.useState)(false), A = x(D, T, h, I, k);
   if ((0, i.useEffect)(() => (A(), window.addEventListener("resize", A), () => {
       window.removeEventListener("resize", A)
     }), [A, null == h ? true : h.join("")]), !w && !E) return null;
-  let R = k ? h : h.slice(0, h.length - _);
+  let R = _ ? h : h.slice(0, h.length - N);
   return (0, n.jsxs)("div", {
     className: o()(O.tagListContainer, u),
     children: [w && (0, n.jsxs)(n.Fragment, {
@@ -50,27 +50,27 @@ function y(e) {
           },
           disableInteraction: y
         }, e))
-      }), _ > 0 && (k ? (0, n.jsx)(v, {
+      }), N > 0 && (_ ? (0, n.jsx)(v, {
         onClick: () => {
           Z(false), S({
             action: "COLLAPSE_GAME_TAGS"
           })
         }
       }) : (0, n.jsx)(m, {
-        numHidden: _,
+        numHidden: N,
         onClick: () => {
           Z(true), S({
             action: "EXPAND_GAME_TAGS"
           })
         },
-        ref: T,
+        ref: D,
         disableInteraction: y
       }))]
-    }), E && (0, n.jsx)(f.Z, {
+    }), E && (0, n.jsx)(g.Z, {
       tags: r,
       widgetType: c,
       applicationId: s,
-      ref: D
+      ref: T
     })]
   })
 }
@@ -87,10 +87,10 @@ let j = e => {
     } = (0, d.KZ)(), u = (0, b.zK)(t);
     if (null == u) return null;
     let {
-      getText: f,
+      getText: g,
       icon: y
     } = u, j = () => {
-      (0, g.RZ)(l, i, t), c({
+      (0, f.RZ)(l, i, t), c({
         action: "TAG_REMOVED",
         widgetEdited: l,
         gameId: i
@@ -104,7 +104,7 @@ let j = e => {
       }), (0, n.jsx)(s.Text, {
         variant: "text-xxs/medium",
         color: "text-secondary",
-        children: f()
+        children: g()
       }), r && !o && (0, n.jsx)(s.ua7, {
         text: p.intl.string(p.t.Otv9fH),
         children: e => {
@@ -130,7 +130,7 @@ let j = e => {
             onClick: j,
             className: O.removeButton,
             "aria-label": p.intl.formatToPlainString(p.t.GCn1nZ, {
-              tag: f()
+              tag: g()
             }),
             children: (0, n.jsx)(s.Dio, {
               size: "xxs",
@@ -206,23 +206,23 @@ let j = e => {
     let s = null != (a = null == (i = e.current) ? true : i.getBoundingClientRect().width) ? a : 0,
       u = null != (c = null == (o = t.current) ? true : o.getBoundingClientRect().width) ? c : 0,
       d = u > 0 ? 8 : 4,
-      g = 0,
       f = 0,
+      g = 0,
       b = n.current;
     for (let e = 0; e < r.length; e++) {
       let t = b.get(r[e]);
       if (null != t) {
-        if ((f += t.offsetWidth + 4) > 296) break;
-        g++
+        if ((g += t.offsetWidth + 4) > 296) break;
+        f++
       }
     }
-    f = 0;
-    for (let e = g; e < r.length; e++) {
+    g = 0;
+    for (let e = f; e < r.length; e++) {
       let t = b.get(r[e]);
       if (null != t) {
-        if ((f += t.offsetWidth + 4) > 296 - s - u - d) break;
-        g++
+        if ((g += t.offsetWidth + 4) > 296 - s - u - d) break;
+        f++
       }
     }
-    l(r.length - g)
+    l(r.length - f)
   }, [e, t, null == r ? true : r.join(""), n, l])

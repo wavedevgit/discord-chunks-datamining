@@ -58,7 +58,7 @@ let m = e => {
     } = e, r = j(e, ["widget"]);
     switch (t.type) {
       case i.l.FAVORITE_GAMES:
-        return (0, n.jsx)(g.Z, y({
+        return (0, n.jsx)(f.Z, y({
           widget: t
         }, r));
       case i.l.CURRENT_GAMES:
@@ -70,7 +70,7 @@ let m = e => {
           widget: t
         }, r));
       case i.l.PLAYED_GAMES:
-        return (0, n.jsx)(f.Z, y({
+        return (0, n.jsx)(g.Z, y({
           widget: t
         }, r));
       default:
@@ -83,32 +83,32 @@ let m = e => {
       user: r,
       disableInteraction: i
     } = e, d = j(e, ["widget", "user", "disableInteraction"]);
-    let g = (0, c.FX)(t),
+    let f = (0, c.FX)(t),
       {
-        shouldShowSuggestions: f,
+        shouldShowSuggestions: g,
         handleDismissSuggestions: b
-      } = (0, s.h)(g),
+      } = (0, s.h)(f),
       v = (0, l.e7)([o.default], () => o.default.getId() === r.id),
-      x = v && !i && f,
-      h = (0, a.mR)(g),
-      w = (0, a.Hy)(g, {
+      x = v && !i && g,
+      h = (0, a.mR)(f),
+      w = (0, a.Hy)(f, {
         isCurrentUser: v
       }),
-      P = (0, a.kQ)(g);
+      P = (0, a.kQ)(f);
     return (0, n.jsx)(m, y({
-      widget: g,
+      widget: f,
       user: r,
       disableInteraction: i,
       headerTitle: h,
       headerSubtitle: w,
       headerActionButtons: v ? [(0, n.jsx)(u.Z, {
         disabled: P,
-        widgetType: g.type,
-        widget: g
-      }, "".concat(g.type, "-browse-games-popout"))] : true,
+        widgetType: f.type,
+        widget: f
+      }, "".concat(f.type, "-browse-games-popout"))] : true,
       trailingContent: x && (0, n.jsx)(p.Z, {
         userId: r.id,
-        widgetType: g.type,
+        widgetType: f.type,
         onDismiss: b,
         className: O.suggestedGames
       })

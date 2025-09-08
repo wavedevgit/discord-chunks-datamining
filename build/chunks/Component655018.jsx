@@ -32,8 +32,13 @@ function S(e) {
   let {
     channel: l,
     setPopoutRef: o
-  } = e, S = i.useRef(null), I = (0, u.e7)([m.Z], () => m.Z.getCustomHangStatus()), P = i.useRef(m.Z.getRecentCustomStatuses()), Z = (0, g.V)(), T = i.useRef(null), [N, A] = i.useState(null != (t = null == I ? true : I.status) ? t : ""), [w, R] = i.useState(null != (n = null == I ? true : I.emoji) ? n : null), M = (0, u.e7)([m.Z], () => m.Z.getCurrentHangStatus()), D = (0, u.e7)([h.ZP], () => h.ZP.emojiFrecencyWithoutFetchingLatest.frequently), L = i.useMemo(() => D.filter(e => (0, b.K)(e, l)), [D, l]);
+  } = e, S = i.useRef(null), I = (0, u.e7)([m.Z], () => m.Z.getCustomHangStatus()), P = i.useRef(m.Z.getRecentCustomStatuses()), Z = (0, g.V)(), T = i.useRef(null), [N, A] = i.useState(null != (t = null == I ? true : I.status) ? t : ""), [w, R] = i.useState(null != (n = null == I ? true : I.emoji) ? n : null), M = (0, u.e7)([m.Z], () => m.Z.getCurrentHangStatus()), D = (0, u.e7)([h.ZP], () => h.ZP.emojiFrecencyWithoutFetchingLatest.frequently), L = null == N || null == w || "" === N.trim(), k = i.useMemo(() => D.filter(e => (0, b.K)(e, l)), [D, l]);
   i.useEffect(() => {
+    if (null != w) {
+      var e;
+      null == (e = S.current) || e.focus()
+    }
+  }, [w]), i.useEffect(() => {
     var e;
     (null == M || M === x.tN.CUSTOM) && (null == (e = S.current) || e.focus())
   }, [M]), i.useEffect(() => {
@@ -41,28 +46,29 @@ function S(e) {
   }, [T, o]), i.useEffect(() => {
     (null == I ? true : I.emoji) != null && null != I.status ? (A(I.status), R(I.emoji)) : (A(""), R(null))
   }, [I]);
-  let k = i.useCallback(e => {
+  let U = i.useCallback(e => {
       e !== M && (0, f.Zx)(e, true)
     }, [M]),
-    U = i.useCallback(e => {
+    B = i.useCallback(e => {
       let {
         emoji: t,
         status: n
       } = e;
       s()(t, null == I ? true : I.emoji) && n === (null == I ? true : I.status) || (0, f._s)(e.status, e.emoji, true)
     }, [null == I ? true : I.emoji, null == I ? true : I.status]),
-    B = i.useCallback(e => {
-      e.preventDefault(), null != N && null != w && "" !== N.trim() && U({
+    G = i.useCallback(e => {
+      var t;
+      null == (t = e.preventDefault) || t.call(e), L || B({
         status: N,
         emoji: w
       })
-    }, [N, w, U]),
-    G = i.useCallback(() => {
+    }, [N, w, B, L]),
+    H = i.useCallback(() => {
       let e = null,
         t = null;
       do {
         var n;
-        if (0 === L.length || (t = (null == (e = (0, c.sample)(L)) ? true : e.id) != null ? {
+        if (0 === k.length || (t = (null == (e = (0, c.sample)(k)) ? true : e.id) != null ? {
             id: e.id,
             name: e.name,
             animated: e.animated
@@ -70,13 +76,10 @@ function S(e) {
             id: null,
             name: null != (n = null == e ? true : e.optionallyDiverseSequence) ? n : "",
             animated: false
-          }, 1 === L.length)) break
+          }, 1 === k.length)) break
       } while (null == e || (null == e ? true : e.name) == null || s()(null == I ? true : I.emoji, t));
-      null != t && (null == e ? true : e.name) != null && U({
-        status: e.name,
-        emoji: t
-      })
-    }, [L, U, null == I ? true : I.emoji]);
+      null != t && (null == e ? true : e.name) != null && (R(t), A(e.name))
+    }, [k, null == I ? true : I.emoji]);
   return (0, r.jsxs)("div", {
     ref: T,
     role: "menu",
@@ -86,10 +89,10 @@ function S(e) {
     children: [(0, r.jsxs)("div", {
       role: "group",
       className: a()(E.groupLabel, j.group),
-      children: [(0, r.jsx)("form", {
-        onSubmit: B,
-        className: E.item,
-        children: (0, r.jsx)(d.oil, {
+      children: [(0, r.jsxs)("form", {
+        onSubmit: G,
+        className: a()(E.item, j.input),
+        children: [(0, r.jsx)(d.oil, {
           inputRef: S,
           value: N,
           onChange: e => A(e.substring(0, v.s)),
@@ -103,10 +106,15 @@ function S(e) {
           },
           trailing: {
             icon: d.$2U,
-            onClick: G,
+            onClick: H,
             "aria-label": O.intl.string(O.t["5UAi5+"])
           }
-        })
+        }), N.trim().length > 0 && (0, r.jsx)(d.hU, {
+          onClick: G,
+          disabled: L,
+          icon: d.dz2,
+          "aria-label": O.intl.string(O.t.UDg0qK)
+        })]
       }), Object.entries(Z).map(e => {
         let [t, n] = e;
         return (0, r.jsx)(C.L, {
@@ -116,7 +124,7 @@ function S(e) {
             src: n.icon,
             alt: ""
           }),
-          setStatus: () => k(t),
+          setStatus: () => U(t),
           clearStatus: () => (0, f.Sc)(false)
         }, n.title)
       })]
@@ -135,7 +143,7 @@ function S(e) {
             hideTooltip: true,
             className: j.icon
           }),
-          setStatus: () => U(e),
+          setStatus: () => B(e),
           clearStatus: () => (0, f.Sc)(false)
         }, t))
       })]

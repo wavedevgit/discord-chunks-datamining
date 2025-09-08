@@ -2,9 +2,8 @@
 /** chunk id: 621628, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S,
-  u: () => I
-}), require("./388685.js"), require("./539854.js"), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./290780.js"), require("./642613.js");
+  Z: () => O
+}), require("./388685.js"), require("./290780.js"), require("./642613.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
@@ -15,16 +14,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk675478 = require("./675478.js"),
-  Chunk581883 = require("./581883.js"),
   Chunk883904 = require("./883904.js"),
   Chunk68985 = require("./68985.js"),
   Chunk211644 = require("./211644.js"),
-  Chunk428967 = require("./428967.js"),
-  Chunk972118 = require("./972118.js"),
+  Chunk87454 = require("./87454.jsx"),
   Chunk471345 = require("./471345.js"),
   Chunk197571 = require("./197571.js");
 
-function O(e, t) {
+function b(e, t) {
   let [n, r] = i.useState(() => {
     let n = c.K.get(e);
     return null != n ? n : t
@@ -34,102 +31,43 @@ function O(e, t) {
   }, [e, n]), [n, r]
 }
 
-function v(e) {
-  let {
-    content: t
-  } = e, n = (0, s.e7)([_.Z], () => {
-    var e, n;
-    return null == (n = _.Z.settings.userContent) || null == (e = n.recurringDismissibleContentStates) ? true : e[t]
-  });
-  if (null == n) return null;
-  let i = [],
-    {
-      lastDismissedVersion: a,
-      lastDismissedAtMs: o,
-      lastDismissedObjectId: l
-    } = n;
-  if (true !== a && 0 !== a && i.push("last_dismissed_version: ".concat(a)), true !== o) {
-    let e = Number(o),
-      t = Number.isNaN(e) ? "n/a" : new Date(e).toLocaleString();
-    i.push("last_dismissed_at: ".concat(t))
-  }
-  return (true !== l && "0" !== l && i.push("last_dismissed_object_id: ".concat(l)), 0 === i.length) ? null : (0, r.jsx)(u.Text, {
-    variant: "text-xs/normal",
-    className: y.marginTop4,
-    children: i.join(", ")
-  })
-}
-
-function I(e) {
-  let {
-    className: t,
-    contents: n,
-    content: i,
-    onChange: a
-  } = e, o = l.z[i], {
-    isDismissed: s,
-    handleToggleDismissState: c
-  } = (0, E.Z)(o, n), d = () => {
-    a(i), c()
-  };
-  return (0, r.jsxs)(u.j7V, {
-    value: s,
-    onChange: d,
-    className: t,
-    children: [(0, r.jsx)(u.Text, {
-      variant: "text-md/normal",
-      className: y.marginTop4,
-      children: "".concat(i.toLowerCase(), " (").concat(l.z[i], ")")
-    }), (0, g.qh)(o) && (0, r.jsx)(v, {
-      content: o
-    })]
-  })
-}
-
-function T(e) {
+function y(e) {
   let {
     items: t,
-    dismissedContents: n,
-    handleChange: i
+    handleChange: n
   } = e;
   return (0, r.jsx)(r.Fragment, {
-    children: t.filter(e => isNaN(Number(e))).map(e => (0, r.jsx)(I, {
-      contents: n,
+    children: t.filter(e => isNaN(Number(e))).map(e => (0, r.jsx)(m.Z, {
       content: e,
-      onChange: i
+      onChange: n
     }, e))
   })
 }
 
-function S() {
-  var e;
-  let t = (0, Chunk211644.ZP)(e => e.recentlyShown),
+function O() {
+  let e = (0, Chunk211644.ZP)(e => e.recentlyShown),
     {
-      dailyCapReached: n,
-      dailyCapOverridden: a,
-      newUserMinAgeRequiredOverridden: c
+      dailyCapReached: t,
+      dailyCapOverridden: n,
+      newUserMinAgeRequiredOverridden: a
     } = (0, Chunk442837.cj)([Chunk68985.Z], () => ({
       dailyCapReached: Chunk68985.Z.hasUserHitDCCap(),
       dailyCapOverridden: Chunk68985.Z.dailyCapOverridden,
       newUserMinAgeRequiredOverridden: Chunk68985.Z.newUserMinAgeRequiredOverridden
     })),
-    [g, E] = Chunk647438.useState(""),
-    v = null != (e = (0, Chunk442837.e7)([Chunk581883.Z], () => {
-      var e;
-      return null == (e = Chunk581883.Z.settings.userContent) ? true : module.dismissedContents
-    })) ? module : new Uint8Array,
-    [I, S] = O("RecentDismissibleOverrides", []),
-    A = e => {
-      S(t => {
+    [c, m] = Chunk647438.useState(""),
+    [O, v] = b("RecentDismissibleOverrides", []),
+    I = Chunk647438.useCallback(e => {
+      v(t => {
         let n = new Set(t);
         n.delete(e);
         let r = Array.from(n).slice(0, 4);
         return r.unshift(e), r
       })
-    },
-    C = exports.map(e => l.z[e]),
-    N = I.filter(e => e.toLowerCase().includes(g.toLowerCase())).filter(e => !C.includes(e)),
-    R = Object.keys(Chunk704215.z).filter(e => !C.includes(e)).filter(e => !I.includes(e)).filter(e => e.toLowerCase().includes(g.toLowerCase())).sort((e, t) => e.localeCompare(t));
+    }, [v]),
+    T = module.map(e => l.z[e]),
+    S = O.filter(e => e.toLowerCase().includes(c.toLowerCase())).filter(e => !T.includes(e)),
+    A = Object.keys(Chunk704215.z).filter(e => !T.includes(e)).filter(e => !O.includes(e)).filter(e => e.toLowerCase().includes(c.toLowerCase())).sort((e, t) => e.localeCompare(t));
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsxs)(Chunk481060.hjN, {
       title: "Dismissible Content Fatigue",
@@ -138,14 +76,14 @@ function S() {
       children: [(0, Chunk951288.jsx)(Chunk481060.xJW, {
         children: (0, Chunk951288.jsxs)(Chunk481060.R94, {
           className: Chunk197571.marginBottom4,
-          children: ["Daily Cap Reached: ", require ? "Yes" : "No"]
+          children: ["Daily Cap Reached: ", exports ? "Yes" : "No"]
         })
       }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
-        value: Chunk120356,
+        value: require,
         onChange: Chunk883904.Nj,
         children: "Override Dismissible Content Daily Cap"
       }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
-        value: Chunk433517,
+        value: Chunk120356,
         onChange: Chunk883904.KC,
         children: "Override Minimum User Account Age Requirement"
       }), (0, Chunk951288.jsxs)(Chunk481060.xJW, {
@@ -163,9 +101,9 @@ function S() {
       tag: Chunk481060.RB0.H1,
       children: [(0, Chunk951288.jsx)(Chunk481060.E1j, {
         className: Chunk197571.marginBottom20,
-        query: Chunk428967,
-        onChange: Chunk972118,
-        onClear: () => Chunk972118("")
+        query: Chunk433517,
+        onChange: Chunk87454,
+        onClear: () => Chunk87454("")
       }), (0, Chunk951288.jsxs)(Chunk481060.xJW, {
         className: Chunk471345.buttonsContainer,
         children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
@@ -177,38 +115,35 @@ function S() {
           text: "Check All Dismissed Contents",
           onClick: Chunk675478.bE
         })]
-      }), exports.length > 0 ? (0, Chunk951288.jsxs)("div", {
+      }), module.length > 0 ? (0, Chunk951288.jsxs)("div", {
         className: Chunk197571.marginBottom20,
         children: [(0, Chunk951288.jsx)("div", {
           className: Chunk197571.marginBottom20,
           children: (0, Chunk951288.jsx)(Chunk481060.vwX, {
             children: "Recently Shown"
           })
-        }), (0, Chunk951288.jsx)(T, {
-          items: C,
-          dismissedContents: v,
-          handleChange: A
+        }), (0, Chunk951288.jsx)(y, {
+          items: T,
+          handleChange: I
         })]
-      }) : null, N.length > 0 ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      }) : null, S.length > 0 ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)("div", {
           className: Chunk197571.marginBottom20,
           children: (0, Chunk951288.jsx)(Chunk481060.vwX, {
             children: "Recent Overrides"
           })
-        }), (0, Chunk951288.jsx)(T, {
-          items: N,
-          dismissedContents: v,
-          handleChange: A
+        }), (0, Chunk951288.jsx)(y, {
+          items: S,
+          handleChange: I
         })]
       }) : null, (0, Chunk951288.jsx)(Chunk600164.Z, {
         className: o()(Chunk197571.marginBottom20, Chunk197571.marginTop20),
         children: (0, Chunk951288.jsx)(Chunk481060.vwX, {
           children: "Available Dismissible Contents"
         })
-      }), (0, Chunk951288.jsx)(T, {
-        items: R,
-        dismissedContents: v,
-        handleChange: A
+      }), (0, Chunk951288.jsx)(y, {
+        items: A,
+        handleChange: I
       })]
     })]
   })

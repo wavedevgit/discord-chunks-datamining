@@ -2,7 +2,7 @@
 /** chunk id: 685560, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => I
-}), require("./388685.js"), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js");
+}), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk913527 = require("./913527.js"),
   l = require.n(Chunk913527),
@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk704215 = require("./704215.js"),
   Chunk481060 = require("./481060.js"),
   Chunk179360 = require("./179360.js"),
-  Chunk621628 = require("./621628.jsx"),
+  Chunk87454 = require("./87454.jsx"),
   Chunk667815 = require("./667815.js"),
   Chunk645041 = require("./645041.js"),
   Chunk744993 = require("./744993.js"),
@@ -61,28 +61,23 @@ async function P(e) {
 }
 
 function I() {
-  var e;
-  let t = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
-    n = (0, Chunk442837.e7)([Chunk430824.Z], () => {
-      var e;
-      return null == (e = Chunk430824.Z.getGuild(exports)) ? true : module.name
+  let e = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
+    t = (0, Chunk442837.e7)([Chunk430824.Z], () => {
+      var t;
+      return null == (t = Chunk430824.Z.getGuild(module)) ? true : exports.name
     }),
-    r = (0, Chunk442837.Wu)([Chunk581883.Z], () => [...N, ...E].filter(e => null != t && (0, x.OY)(e, t))),
-    l = null != (e = (0, Chunk442837.e7)([Chunk581883.Z], () => {
-      var e;
-      return null == (e = Chunk581883.Z.settings.userContent) ? true : module.dismissedContents
-    })) ? module : new Uint8Array,
-    s = (0, Chunk442837.Wu)([Chunk899667.Z], () => {
-      var e;
-      return null != exports && null != (e = Chunk899667.Z.getAppliedGuildBoostsForGuild(exports)) ? module : []
+    n = (0, Chunk442837.Wu)([Chunk581883.Z], () => [...N, ...E].filter(t => null != e && (0, x.OY)(t, e))),
+    r = (0, Chunk442837.Wu)([Chunk899667.Z], () => {
+      var t;
+      return null != module && null != (t = Chunk899667.Z.getAppliedGuildBoostsForGuild(module)) ? exports : []
     });
-  if (null != exports) return (0, Chunk951288.jsxs)(Chunk481060.zJl, {
+  if (null != module) return (0, Chunk951288.jsxs)(Chunk481060.zJl, {
     className: Chunk617659.container,
     children: [(0, Chunk951288.jsx)("div", {
       className: Chunk617659.section,
       children: (0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-md/normal",
-        children: "Current guild: ".concat(require)
+        children: "Current guild: ".concat(exports)
       })
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk617659.section,
@@ -118,13 +113,13 @@ function I() {
           variant: "primary",
           text: "Set Half Boosts expiring in 1 day",
           onClick: () => {
-            S(exports, Chunk544891.slice(Math.floor(Chunk544891.length / 2)), false)
+            S(module, Chunk913527.slice(Math.floor(Chunk913527.length / 2)), false)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Reset End Date",
           onClick: () => {
-            S(exports, Chunk544891, true)
+            S(module, Chunk913527, true)
           }
         })]
       })]
@@ -134,11 +129,9 @@ function I() {
         variant: "eyebrow",
         className: Chunk617659.header,
         children: "Reset User Level DCs"
-      }), C.map(e => (0, a.jsx)(u.u, {
+      }), C.map(e => (0, a.jsx)(u.Z, {
         className: y.formSwitch,
-        contents: l,
-        content: o.z[e],
-        onChange: () => {}
+        content: o.z[e]
       }, o.z[e]))]
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk617659.section,
@@ -146,44 +139,42 @@ function I() {
         variant: "eyebrow",
         className: Chunk617659.header,
         children: "Reset Guild Level DCs"
-      }), N.map(e => (0, a.jsx)(c.j7V, {
+      }), N.map(t => (0, a.jsx)(c.j7V, {
         className: y.formSwitch,
         onChange: n => {
-          n ? (0, x.Qd)(e, t, false) : ((0, f.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, x.c7)(e, t))
+          n ? (0, x.Qd)(t, e, false) : ((0, f.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, x.c7)(t, e))
         },
-        value: r.includes(e),
+        value: n.includes(t),
         children: (0, a.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: O(e)
+          children: O(t)
         })
-      }, e))]
+      }, t))]
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk617659.section,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "eyebrow",
         children: "Reset Server Tag Guild Level DCs"
-      }), E.map(e => (0, a.jsx)(c.j7V, {
+      }), E.map(t => (0, a.jsx)(c.j7V, {
         className: y.formSwitch,
         onChange: n => {
-          n ? (0, x.Qd)(e, t, false) : ((0, f.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, x.c7)(e, t))
+          n ? (0, x.Qd)(t, e, false) : ((0, f.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, x.c7)(t, e))
         },
-        value: r.includes(e),
+        value: n.includes(t),
         children: (0, a.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: O(e)
+          children: O(t)
         })
-      }, e))]
+      }, t))]
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk617659.section,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "eyebrow",
         className: Chunk617659.header,
         children: "Reset Powerup Rollback DCs"
-      }), T.map(e => (0, a.jsx)(u.u, {
+      }), T.map(e => (0, a.jsx)(u.Z, {
         className: y.formSwitch,
-        contents: l,
-        content: o.z[e],
-        onChange: () => {}
+        content: o.z[e]
       }, o.z[e]))]
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk617659.section,
@@ -195,7 +186,7 @@ function I() {
         variant: "primary",
         text: "Send System Message",
         onClick: () => {
-          P(exports)
+          P(module)
         }
       })]
     }), (0, Chunk951288.jsx)(Chunk481060.zxk, {

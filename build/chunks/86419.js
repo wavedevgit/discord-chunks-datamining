@@ -78,8 +78,8 @@ function O(e, t) {
   let {
     isCurrentUser: n
   } = t, i = e.games.length > 0;
-  if (n && i) return 1 === r.k[e.type] ? h.intl.string(h.t.wiXdER) : h.intl.format(h.t["zR1+09"], {
-    numGames: r.k[e.type]
+  if (n && i) return 1 === r.kp[e.type] ? h.intl.string(h.t.wiXdER) : h.intl.format(h.t["zR1+09"], {
+    numGames: r.kp[e.type]
   })
 }
 
@@ -92,7 +92,7 @@ function I(e) {
 }
 
 function T(e) {
-  return e in r.k ? r.k[e] : 0
+  return e in r.kp ? r.kp[e] : 0
 }
 
 function S(e) {

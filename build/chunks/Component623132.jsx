@@ -47,7 +47,7 @@ function I(e) {
   return e
 }
 
-function T(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,7 +60,7 @@ function T(e, t) {
   }), e
 }
 
-function D(e) {
+function T(e) {
   var {
     applicationId: t,
     userId: r,
@@ -80,16 +80,16 @@ function D(e) {
     }
     return i
   }(e, ["applicationId", "userId", "gameName"]);
-  let o = (0, g.Z)({
+  let o = (0, f.Z)({
     location: "UserProfileWidgetGameDetailsCard",
     applicationId: t,
     source: d.m1.UserProfile,
     sourceUserId: r,
     trackEntryPointImpression: true
   });
-  return null == o ? (0, n.jsx)(s.X6q, T(I({}, l), {
+  return null == o ? (0, n.jsx)(s.X6q, D(I({}, l), {
     children: i
-  })) : (0, n.jsx)(s.X6q, T(I({}, l), {
+  })) : (0, n.jsx)(s.X6q, D(I({}, l), {
     children: (0, n.jsx)(s.P3F, {
       onClick: o,
       className: S.clickableText,
@@ -98,7 +98,7 @@ function D(e) {
   }))
 }
 
-function _(e) {
+function N(e) {
   let {
     user: t,
     guildId: r,
@@ -113,7 +113,7 @@ function _(e) {
   })
 }
 
-function N(e) {
+function k(e) {
   let {
     text: t,
     className: r
@@ -126,7 +126,7 @@ function N(e) {
   })
 }
 
-function k(e) {
+function _(e) {
   let {
     text: t,
     user: r,
@@ -140,12 +140,12 @@ function k(e) {
       size: "xxs",
       color: s.TVs.colors.ICON_TERTIARY,
       className: S.commentIcon
-    }), (0, n.jsx)(_, {
+    }), (0, n.jsx)(N, {
       user: r,
       guildId: i,
       channelId: l,
       id: o
-    }), (0, n.jsx)(N, {
+    }), (0, n.jsx)(k, {
       text: t
     })]
   })
@@ -158,23 +158,23 @@ function Z(e) {
     guildId: l,
     channelId: c,
     widgetType: d,
-    applicationId: g
-  } = e, f = (0, u.Dt)(), b = (0, u.Dt)(), {
+    applicationId: f
+  } = e, g = (0, u.Dt)(), b = (0, u.Dt)(), {
     trackUserProfileEditAction: y
-  } = (0, p.KZ)(), [j, m] = i.useState("idle"), [v, x] = i.useState(null != t ? t : ""), h = i.useRef(null), w = i.useRef(null), E = P.intl.string(P.t.xKSfBQ), I = null != t && "" !== t.trim(), T = i.useCallback(() => {
+  } = (0, p.KZ)(), [j, m] = i.useState("idle"), [v, x] = i.useState(null != t ? t : ""), h = i.useRef(null), w = i.useRef(null), E = P.intl.string(P.t.xKSfBQ), I = null != t && "" !== t.trim(), D = i.useCallback(() => {
     y({
       action: "PRESS_ADD_COMMENTARY",
       widgetEdited: d
     }), m("editing")
-  }, [d, y]), D = i.useCallback(() => {
+  }, [d, y]), T = i.useCallback(() => {
     let e = v.trim(),
       r = e !== (null != t ? t : "").trim();
-    (0, O.Bu)(d, g, "" !== e ? e : true), m("completed"), r && y({
+    (0, O.Bu)(d, f, "" !== e ? e : true), m("completed"), r && y({
       action: "COMMENTARY_EDITED",
       widgetEdited: d,
-      gameId: g
+      gameId: f
     })
-  }, [d, g, v, t, y]), k = i.useCallback(e => {
+  }, [d, f, v, t, y]), _ = i.useCallback(e => {
     x(e)
   }, []);
   return i.useEffect(() => {
@@ -188,44 +188,44 @@ function Z(e) {
     className: S.textAreaContainer,
     children: [(0, n.jsx)(s.nn4, {
       tag: "label",
-      htmlFor: f,
+      htmlFor: g,
       children: P.intl.string(P.t.JxKXeX)
     }), (0, n.jsx)(s.Kx8, {
-      id: f,
+      id: g,
       value: v,
       placeholder: E,
-      onChange: k,
-      onBlur: D,
+      onChange: _,
+      onBlur: T,
       rows: 3,
       autoFocus: "editing" === j,
       onKeyDown: e => {
-        "Enter" !== e.key || e.shiftKey || (e.preventDefault(), D())
+        "Enter" !== e.key || e.shiftKey || (e.preventDefault(), T())
       },
-      maxLength: a.r
+      maxLength: a.rN
     })]
   }) : (0, n.jsxs)("div", {
     ref: w,
     role: "group",
     "aria-labelledby": b,
-    onClick: T,
+    onClick: D,
     className: S.editableCommentContainer,
     children: [(0, n.jsx)(s.vdY, {
       size: "xxs",
       color: s.TVs.colors.ICON_TERTIARY,
       className: S.commentIcon
-    }), (0, n.jsx)(_, {
+    }), (0, n.jsx)(N, {
       user: r,
       guildId: l,
       channelId: c,
       id: b
-    }), (0, n.jsx)(N, {
+    }), (0, n.jsx)(k, {
       text: null != t ? t : E,
       className: o()(S.editableCommentText, !I && S.placeholder)
     }), (0, n.jsx)(s.P3F, {
       innerRef: h,
       "aria-label": P.intl.string(P.t.ppb9MD),
       onClick: e => {
-        e.stopPropagation(), T()
+        e.stopPropagation(), D()
       },
       focusProps: {
         ringTarget: w
@@ -263,39 +263,39 @@ function R(e) {
   } = e, {
     gameName: u = P.intl.string(P.t.GIWFlJ),
     imageSrc: d,
-    applicationId: g,
+    applicationId: f,
     comment: b,
     tags: p
   } = l, O = {
     variant: "heading-sm/medium",
     color: "text-default"
-  }, j = f.default.getCurrentUser(), w = (null == j ? true : j.id) === t.id, _ = !a && w && o === c.l.FAVORITE_GAMES;
-  return (0, y.kO)(g) ? (0, n.jsx)(v.i, {}) : (0, n.jsxs)("div", {
+  }, j = g.default.getCurrentUser(), w = (null == j ? true : j.id) === t.id, N = !a && w && o === c.l.FAVORITE_GAMES;
+  return (0, y.kO)(f) ? (0, n.jsx)(v.i, {}) : (0, n.jsxs)("div", {
     className: S.card,
     children: [(0, n.jsx)(m.Z, {
       className: null == d || a ? true : E.hoverActiveEffect,
       imageSrc: d,
       gameName: u,
-      applicationId: g,
+      applicationId: f,
       userId: t.id,
       disableInteraction: a,
       hideTooltip: true
     }), (0, n.jsxs)("div", {
       className: S.details,
-      children: [a ? (0, n.jsx)(s.X6q, T(I({}, O), {
+      children: [a ? (0, n.jsx)(s.X6q, D(I({}, O), {
         children: u
-      })) : (0, n.jsx)(D, I({
-        applicationId: g,
+      })) : (0, n.jsx)(T, I({
+        applicationId: f,
         userId: t.id,
         gameName: u
-      }, O)), _ ? (0, n.jsx)(Z, {
+      }, O)), N ? (0, n.jsx)(Z, {
         text: b,
         user: t,
         guildId: r,
         channelId: i,
         widgetType: o,
-        applicationId: g
-      }) : (0, n.jsx)(k, {
+        applicationId: f
+      }) : (0, n.jsx)(_, {
         text: b,
         user: t,
         guildId: r,
@@ -304,12 +304,12 @@ function R(e) {
         tags: p,
         isCurrentUser: w,
         widgetType: o,
-        applicationId: g,
+        applicationId: f,
         disableInteraction: a,
         className: S.tags
       }), !a && (0, n.jsx)(A, {
         className: S.socialProof,
-        applicationId: g,
+        applicationId: f,
         guildId: r,
         channelId: i
       })]

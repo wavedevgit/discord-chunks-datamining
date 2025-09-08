@@ -32,40 +32,40 @@ function m(e) {
     headerTitle: h,
     headerSubtitle: w,
     headerActionButtons: P
-  } = e, E = (0, u.Dt)(), S = (0, c.e7)([d.default], () => d.default.getId() === t), I = i.useRef(null), T = i.useRef(null), {
-    trackUserProfileAction: D
-  } = (0, g.KZ)(), _ = (0, b.Z)({
+  } = e, E = (0, u.Dt)(), S = (0, c.e7)([d.default], () => d.default.getId() === t), I = i.useRef(null), D = i.useRef(null), {
+    trackUserProfileAction: T
+  } = (0, f.KZ)(), N = (0, b.Z)({
     widgetType: r.type,
-    onAction: D
-  }), N = S && null != m && !s, {
-    isDragging: k,
+    onAction: T
+  }), k = S && null != m && !s, {
+    isDragging: _,
     dragSourcePosition: Z
-  } = (0, f.q)({
+  } = (0, g.q)({
     dropRef: I,
-    dragRef: T,
+    dragRef: D,
     userId: t,
     widget: r,
     index: m,
-    disableInteraction: !N
+    disableInteraction: !k
   }), [A, R] = i.useState(false);
   return (0, n.jsx)(v, {
     ref: I,
-    disableInteraction: !N,
+    disableInteraction: !k,
     onMouseEnter: () => R(true),
     onMouseLeave: () => R(false),
     dragSourcePosition: Z,
     index: null != m ? m : 0,
     children: (0, n.jsxs)("section", {
-      ref: _,
+      ref: N,
       className: o()(j.container, y, {
-        [j.isDragging]: k
+        [j.isDragging]: _
       }),
       "aria-labelledby": E,
-      children: [N && (0, n.jsx)(p.Z, {
-        buttonRef: T,
+      children: [k && (0, n.jsx)(p.Z, {
+        buttonRef: D,
         widget: r,
         className: o()(j.dragHandleButton, {
-          [j.opacity]: A || k
+          [j.opacity]: A || _
         })
       }), (0, n.jsx)(O.Z, {
         userId: t,
@@ -90,12 +90,12 @@ let v = e => {
     onMouseLeave: a,
     dragSourcePosition: c,
     index: u
-  } = e, d = (0, s.zPA)() && null != c, g = d && u < c, f = d && u > c;
+  } = e, d = (0, s.zPA)() && null != c, f = d && u < c, g = d && u > c;
   return i ? r : (0, n.jsx)("div", {
     ref: t,
     className: o()(j.dragAndDropHitbox, {
-      [j.dropIndicatorBefore]: g,
-      [j.dropIndicatorAfter]: f
+      [j.dropIndicatorBefore]: f,
+      [j.dropIndicatorAfter]: g
     }),
     onMouseEnter: l,
     onMouseLeave: a,

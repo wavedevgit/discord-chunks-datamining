@@ -179,7 +179,7 @@ let x = {
   isProtocolRegistered: e => C().then(t => {
     var n, r;
     return null != (r = null == (n = t.isProtocolSchemeRegistered) ? true : n.call(t, e)) && r
-  }),
+  }).catch(() => false),
   setRecentGames(e) {
     C().then(t => {
       var n;

@@ -2,8 +2,8 @@
 /** chunk id: 747101, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   FX: () => b,
-  ZP: () => g,
-  kN: () => f,
+  ZP: () => f,
+  kN: () => g,
   kO: () => u,
   qU: () => d
 }), require("./388685.js");
@@ -58,7 +58,7 @@ function d(e) {
   }, [e])
 }
 
-function g(e) {
+function f(e) {
   d(n.useMemo(() => (function(e) {
     let t = new Set;
     return e.forEach(e => {
@@ -69,7 +69,7 @@ function g(e) {
   })(e), [e]))
 }
 
-function f(e) {
+function g(e) {
   let [t, r] = (0, i.Wu)([o.Z], () => [o.Z.numNoDataAvailable(), o.Z.numSupplementalGames()]);
   return n.useMemo(() => {
     let t = {};
@@ -80,7 +80,7 @@ function f(e) {
 }
 
 function b(e) {
-  let t = f(e.games.map(e => e.applicationId));
+  let t = g(e.games.map(e => e.applicationId));
   return n.useMemo(() => s(c({}, e), {
     games: e.games.map(e => {
       let r = t[e.applicationId];

@@ -17,8 +17,8 @@ function d(e) {
     dropRef: t,
     dragRef: r,
     userId: d,
-    widget: g,
-    index: f,
+    widget: f,
+    index: g,
     disableInteraction: b = false
   } = e, p = (0, u.Z)(d), O = (0, c.zPA)(), {
     isDragging: y,
@@ -33,10 +33,10 @@ function d(e) {
   }, [p]), [, v, x] = (0, l.c)({
     type: "WIDGET",
     item: {
-      widgetId: g.id,
-      index: f,
-      widget: g,
-      originalIndex: null != f ? f : 0
+      widgetId: f.id,
+      index: g,
+      widget: f,
+      originalIndex: null != g ? g : 0
     },
     canDrag: () => !b,
     collect: e => ({
@@ -57,13 +57,13 @@ function d(e) {
     collect: e => {
       let t = null,
         r = e.getItem();
-      return null != r && e.isOver() && e.canDrop() && r.widgetId !== g.id && (t = r.originalIndex), {
+      return null != r && e.isOver() && e.canDrop() && r.widgetId !== f.id && (t = r.originalIndex), {
         handlerId: e.getHandlerId(),
         dragSourcePosition: t
       }
     },
     drop: e => {
-      let t = null != f ? f : 0;
+      let t = null != g ? g : 0;
       m(e.index, t), e.index = t
     },
     hover: (e, r) => {
@@ -72,7 +72,7 @@ function d(e) {
           shallow: true
         })) return;
       let i = e.index,
-        l = null != f ? f : 0;
+        l = null != g ? g : 0;
       if (i === l) return;
       let o = null == (n = t.current) ? true : n.getBoundingClientRect(),
         a = (o.bottom - o.top) / 2,
@@ -82,11 +82,11 @@ function d(e) {
       (!(i < l) || !(s < a)) && (i > l && s > a || (m(i, l), e.index = l))
     }
   });
-  return null == f || b ? {
+  return null == g || b ? {
     isDragging: false,
     dragSourcePosition: null
   } : (v(r), w(t), {
-    isDragging: y && (null == j ? true : j.widgetId) === g.id,
+    isDragging: y && (null == j ? true : j.widgetId) === f.id,
     dragSourcePosition: h
   })
 }

@@ -96,10 +96,10 @@ let m = e => {
       trackUserProfileEditAction: o
     } = (0, d.KZ)(), s = e => {
       if (e.shiftKey) {
-        (0, g.y8)(i.type), o({
+        (0, f.y8)(i.type), o({
           action: "WIDGET_REMOVED",
           widgetEdited: i.type
-        }), (0, f.L$)(b.qb.WIDGET_REMOVED);
+        }), (0, g.L$)(b.qb.WIDGET_REMOVED);
         return
       }(0, a.ZDy)(async () => {
         let {
@@ -149,7 +149,7 @@ let m = e => {
       widget: t,
       className: r,
       buttonRef: i
-    } = e, o = (0, g.mR)(t), c = (0, s.Dt)();
+    } = e, o = (0, f.mR)(t), c = (0, s.Dt)();
     return (0, n.jsx)(m, {
       widgetTitle: o,
       children: e => (0, n.jsx)(x, {

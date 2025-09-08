@@ -49,15 +49,15 @@ function c(e) {
       }
       return i
     }(e, ["user", "widget", "containerClassName"]);
-  let g = s.games[0];
+  let f = s.games[0];
   return (0, n.jsx)(i.Z, (t = a({
     userId: c.id,
     widget: s,
     className: u
   }, d), r = r = {
-    children: null != g ? (0, n.jsx)(o.Z, a({
+    children: null != f ? (0, n.jsx)(o.Z, a({
       user: c,
-      game: g,
+      game: f,
       widgetType: s.type,
       disableInteraction: d.disableInteraction
     }, d)) : (0, n.jsx)(l.Z, {
