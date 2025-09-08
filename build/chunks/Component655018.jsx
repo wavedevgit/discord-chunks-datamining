@@ -137,7 +137,8 @@ function P(e) {
           icon: (0, r.jsx)(C.Z, {
             size: 24,
             hangStatusActivity: i,
-            fallbackVariant: A
+            fallbackVariant: A,
+            className: S.icon
           }),
           setStatus: () => F(t),
           clearStatus: () => (0, f.Sc)(false)
