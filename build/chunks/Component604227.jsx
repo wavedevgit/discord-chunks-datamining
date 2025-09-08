@@ -74,7 +74,7 @@ function y(e) {
   var t, n, i, o, s;
   let {
     compact: f = false
-  } = e, h = window.GLOBAL_ENV.RELEASE_CHANNEL, g = "441400", y = "2160d8ad8c3e750c559fd4184400707769334fb6".substring(0, 7), O = null === c.Z || true === c.Z ? true : c.Z.remoteApp.getVersion(), v = null === c.Z || true === c.Z || null == (t = (n = c.Z.remoteApp).getBuildNumber) ? true : t.call(n), I = null === c.Z || true === c.Z || null == (i = (o = c.Z.remoteApp).getAppArch) ? true : i.call(o), T = null == (s = u.C.getCurrentBuildOverride().overrides) ? true : s.discord_web, S = b(), A = [h, g, "(".concat(y, ")")];
+  } = e, h = window.GLOBAL_ENV.RELEASE_CHANNEL, g = "441426", y = "7e0add0aa86aa6eb25a1323b10723fd0bdcaf0a3".substring(0, 7), O = null === c.Z || true === c.Z ? true : c.Z.remoteApp.getVersion(), v = null === c.Z || true === c.Z || null == (t = (n = c.Z.remoteApp).getBuildNumber) ? true : t.call(n), I = null === c.Z || true === c.Z || null == (i = (o = c.Z.remoteApp).getAppArch) ? true : i.call(o), T = null == (s = u.C.getCurrentBuildOverride().overrides) ? true : s.discord_web, S = b(), A = [h, g, "(".concat(y, ")")];
   return (null != O && (A.push("Host ".concat(O)), null != I && A.push(I.toLowerCase()), null != v && A.push("(".concat(v, ")"))), A.push("Build Override: ".concat(null != T ? T.id : "N/A")), null != S && A.push(S), f) ? (0, r.jsx)(d.Z, {
     copyValue: A.join(" "),
     text: _.intl.string(_.t["9Al4QU"]),

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 703912, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => j
 }), require("./35282.js"), require("./997841.js"), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
 var Chunk664751 = require("./664751.js"),
   Chunk373793 = require("./373793.js"),
@@ -65,8 +65,8 @@ async function T(e, t, n) {
     code_challenge_method: S,
     state: T,
     nonce: N,
-    scope: P,
-    permissions: j,
+    scope: j,
+    permissions: P,
     guild_id: x,
     channel_id: A,
     prompt: Z,
@@ -86,7 +86,7 @@ async function T(e, t, n) {
     errorCode: v.lTL.OAUTH2_ERROR
   }, "Redirect URI cannot be used in the RPC OAuth2 Authorization flow");
   let M = [];
-  if ("string" == typeof P ? M = P.split(" ").filter(e => e.length > 0) : Array.isArray(P) && (M = P), null == b.default.getCurrentUser()) throw new E.Z({
+  if ("string" == typeof j ? M = j.split(" ").filter(e => e.length > 0) : Array.isArray(j) && (M = j), null == b.default.getCurrentUser()) throw new E.Z({
     errorCode: v.lTL.OAUTH2_ERROR
   }, "Client is not logged in");
   if (null != L) l = Number(L);
@@ -145,7 +145,7 @@ async function T(e, t, n) {
   null == n || n(o.application, A, R);
   let U = O.Hn;
   try {
-    U = a.vB(null != j ? j : 0)
+    U = a.vB(null != P ? P : 0)
   } catch (e) {}
   return null != o.integration_type && Object.values(i.Y).includes(o.integration_type) && (r = new Map).set(o.integration_type, o), t({
     clientId: u,
@@ -213,7 +213,7 @@ function N(e, t) {
   })
 }
 
-function P(e, t) {
+function j(e, t) {
   return {
     [v.Etm.AUTHENTICATE]: (0, s.S)(v.Etm.AUTHENTICATE, {
       handler(n) {

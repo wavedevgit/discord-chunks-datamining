@@ -98,8 +98,8 @@ let _ = ["1402418171662569542"],
         let N = (0, s.S)(O, S, I, null != C && (0, u.g)(C) && I, T);
         N > 0 && (O.flags = N);
         let {
-          assets: P,
-          party: j,
+          assets: j,
+          party: P,
           secrets: x,
           timestamps: A,
           buttons: Z,
@@ -107,7 +107,7 @@ let _ = ["1402418171662569542"],
         } = O;
         if (null == w && (O.type = b.IIU.PLAYING), null != x) {
           let e = i().values(x).filter(e => !!e);
-          if (null != j && i().intersection(e, [j.id]).length > 0 && !_.includes(a.application.id)) throw new h.Z({
+          if (null != P && i().intersection(e, [P.id]).length > 0 && !_.includes(a.application.id)) throw new h.Z({
             errorCode: b.lTL.INVALID_ACTIVITY_SECRET
           }, "secrets cannot match the party id");
           if (i().uniq(e).length < e.length) throw new h.Z({
@@ -119,15 +119,15 @@ let _ = ["1402418171662569542"],
         }
         if (null != Z && (y.button_urls = Z.map(e => e.url), O.buttons = Z.map(e => e.label)), O.metadata = y, null != A)
           for (let e of Object.keys(A)) Date.now().toString().length - A[e].toString().length > 2 && (A[e] = Math.floor(A[e] * f.Z.Millis.SECOND));
-        if (null == P) l = Promise.resolve([]);
+        if (null == j) l = Promise.resolve([]);
         else {
           if (null == a.application || null == a.application.id) throw Error();
-          l = (0, p.hR)(a.application.id, [P.large_image, P.small_image])
+          l = (0, p.hR)(a.application.id, [j.large_image, j.small_image])
         }
         return l.then(e => {
           var t, n, r, i;
           let [l, s] = e;
-          if (null != P && (null != l ? P.large_image = l : delete P.large_image, null != s ? P.small_image = s : delete P.small_image), !E()) return;
+          if (null != j && (null != l ? j.large_image = l : delete j.large_image, null != s ? j.small_image = s : delete j.small_image), !E()) return;
           o.Z.dispatch({
             type: "LOCAL_ACTIVITY_UPDATE",
             socketId: a.id,
@@ -147,7 +147,7 @@ let _ = ["1402418171662569542"],
             state: null != (i = O.state) ? i : "",
             has_urls: null != O.state_url || null != O.details_url || (null == (t = O.assets) ? true : t.large_url) != null || (null == (n = O.assets) ? true : n.small_url) != null
           };
-          return null != c && (p.has_match_secret = !!c.match, p.has_join_secret = !!c.join), null != P && (p.has_images = !!(P.large_image || P.small_image)), null != u && (p.party_max = null != u.size && u.size[1] > 0 ? u.size[1] : true, p.party_id = u.id), d.default.track(b.rMx.ACTIVITY_UPDATED, p), O
+          return null != c && (p.has_match_secret = !!c.match, p.has_join_secret = !!c.join), null != j && (p.has_images = !!(j.large_image || j.small_image)), null != u && (p.party_max = null != u.size && u.size[1] > 0 ? u.size[1] : true, p.party_id = u.id), d.default.track(b.rMx.ACTIVITY_UPDATED, p), O
         })
       }
     }

@@ -58,7 +58,7 @@ function T(e, t) {
   }), e
 }
 let N = [],
-  P = e => {
+  j = e => {
     let {
       tagText: t,
       className: n
@@ -68,7 +68,7 @@ let N = [],
       text: t
     })
   },
-  j = e => {
+  P = e => {
     let {
       header: t,
       subHeader: n,
@@ -80,7 +80,7 @@ let N = [],
       className: a()(C.featureCard, {
         [C.wideStyle]: o
       }),
-      children: [null != l ? (0, r.jsx)(P, {
+      children: [null != l ? (0, r.jsx)(j, {
         tagText: l,
         className: C.featureCardTag
       }) : null, (0, r.jsx)("img", {
@@ -109,7 +109,7 @@ function x(e) {
     className: t,
     renderModalProps: n,
     heroArt: l,
-    heroArtClassName: P,
+    heroArtClassName: j,
     modalDismissibleContent: x,
     modalTopExtra: A,
     header: Z,
@@ -207,7 +207,7 @@ function x(e) {
           className: a()(C.headerText, w),
           children: Z
         }), "video" === l.type ? (0, r.jsx)(g.Z, {
-          className: a()(C.video, P),
+          className: a()(C.video, j),
           autoPlay: !F,
           loop: true,
           muted: true,
@@ -241,7 +241,7 @@ function x(e) {
             }, e.locale)
           })
         }) : "embed" === l.type ? (0, r.jsx)(p.BC, {
-          className: a()(C.video, P),
+          className: a()(C.video, j),
           allowFullScreen: false,
           href: l.href,
           thumbnail: l.thumbnail,
@@ -259,7 +259,7 @@ function x(e) {
           }
         }) : "image" === l.type ? (0, r.jsx)("img", {
           alt: "",
-          className: a()(C.video, P),
+          className: a()(C.video, j),
           src: l.src
         }) : null, (0, r.jsxs)(u.Text, {
           variant: "text-md/normal",
@@ -274,7 +274,7 @@ function x(e) {
           className: a()(C.featureCardGroup, {
             [C.wideStyle]: H
           }),
-          children: D.map((e, t) => (0, r.jsx)(j, T(S({}, e), {
+          children: D.map((e, t) => (0, r.jsx)(P, T(S({}, e), {
             wideStyle: H
           }), "".concat(e.header, "_").concat(t)))
         }), (0, r.jsx)("div", {

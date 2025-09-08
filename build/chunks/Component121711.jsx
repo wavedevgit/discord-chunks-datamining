@@ -67,7 +67,7 @@ function el(e) {
     enabled: n
   } = (0, N.WX)({
     location: K.dr.QUEST_HOME_DESKTOP
-  }), l = (0, u.e7)([f.Z], () => f.Z.useReducedMotion), o = (0, u.e7)([j.Z], () => j.Z.isFocused()), {
+  }), l = (0, u.e7)([f.Z], () => f.Z.useReducedMotion), o = (0, u.e7)([P.Z], () => P.Z.isFocused()), {
     ref: s,
     inViewport: c
   } = (0, B.a)(), d = i.useRef(null);
@@ -218,7 +218,7 @@ let es = function() {
     })
   }, [Chunk772848, Chunk442837]);
   let {
-    onScroll: j,
+    onScroll: P,
     scrollPosition: x
   } = (0, Chunk979233.M)(), A = Chunk150560.Z.getState().getUtmCurrentContext(), w = (0, Chunk833435._)({
     location: Chunk46140.dr.QUEST_HOME_DESKTOP

@@ -312,7 +312,7 @@ function eb(e) {
     staticBannerSrc: G,
     videoBannerSrc: Z,
     bannerAspectRatio: V
-  } = (0, E.E)(S), H = !(0, et.Z)(x, P, S.id), Y = (0, X.H)(P), q = (0, l.e7)([L.Z], () => L.Z.getGameByName(S.name), [S.name]), {
+  } = (0, E.E)(S), H = !(0, et.Z)(x, P, S.id), Y = (0, X.H)(P), q = (0, l.e7)([L.Z], () => L.Z.getGameByApplication(S), [S]), {
     openGameProfileModal: J,
     isGameLaunchable: $
   } = eg(S.id, P.author.id), {

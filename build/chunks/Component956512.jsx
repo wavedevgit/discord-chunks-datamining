@@ -84,15 +84,14 @@ function N(e) {
       id: N.id,
       icon: N.icon
     }),
-    M = (0, i.e7)([f.ZP, h.Z], () => null != A.application ? f.ZP.getVisibleRunningGames().find(e => {
+    M = (0, i.e7)([f.ZP, h.Z], () => f.ZP.getVisibleRunningGames().find(e => {
       let {
         id: t
       } = e;
-      if (null == A.application) returnfalse;
-      if (t === A.application.id) returntrue;
-      let n = h.Z.getGameByName(A.application.name);
+      if (t === N.id) returntrue;
+      let n = h.Z.getGameByApplication(N);
       return null != n && t === n.id
-    }) : null),
+    })),
     k = (0, i.e7)([p.Z], () => p.Z.getCurrentUserActiveStream()),
     U = (0, i.e7)([m.Z], () => m.Z.getChannelId()),
     G = b.default.extractTimestamp(A.id) + y.O < Date.now(),

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 269675, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => P
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -29,10 +29,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk183261 = require("./183261.js");
 
-function P(e) {
+function j(e) {
   let {
     guildId: t
-  } = e, n = (0, a.e7)([m.Z], () => m.Z.getGuild(t), [t]), P = (0, a.e7)([h.Z], () => h.Z.isConnected()), j = (0, p.Z)(t), x = (0, O.Z)(t), A = (0, a.e7)([b.Z], () => b.Z.isSubscriptionFetching), Z = (0, _.f)(), {
+  } = e, n = (0, a.e7)([m.Z], () => m.Z.getGuild(t), [t]), j = (0, a.e7)([h.Z], () => h.Z.isConnected()), P = (0, p.Z)(t), x = (0, O.Z)(t), A = (0, a.e7)([b.Z], () => b.Z.isSubscriptionFetching), Z = (0, _.f)(), {
     shouldHideGuildPurchaseEntryPoints: w,
     restrictionsLoading: L
   } = (0, f.uP)(t), R = null == n || !Z || A || L;
@@ -40,7 +40,7 @@ function P(e) {
     subsection: T.intl.string(T.t["KzCF//"]),
     location: null == n ? true : n.name
   }), (0, c.Z)(l.tq ? "role-subscriptions-overview" : true);
-  let D = P && (null == n || !(j || x) || w && !L);
+  let D = j && (null == n || !(P || x) || w && !L);
   if (i.useEffect(() => {
       s.jg()
     }, []), i.useEffect(() => {
@@ -66,7 +66,7 @@ function P(e) {
       id: C.v
     }), (0, r.jsx)("div", {
       className: N.content,
-      children: j ? (0, r.jsx)(o.u2D, {
+      children: P ? (0, r.jsx)(o.u2D, {
         className: N.scroller,
         children: (0, r.jsx)("div", {
           className: N.scrollerContent,
@@ -79,14 +79,14 @@ function P(e) {
   })
 }
 
-function j(e) {
+function P(e) {
   let {
     guildId: t
   } = e;
   return (0, r.jsx)(_.l, {
     guildId: t,
     refetchOnMount: true,
-    children: (0, r.jsx)(P, {
+    children: (0, r.jsx)(j, {
       guildId: t
     })
   })

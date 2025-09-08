@@ -198,7 +198,7 @@ function ei(e) {
     pageWidth: t,
     onSidebarResize: n
   } = e, i = (0, c.e7)([Z.ZP], () => Z.ZP.getSidebarState(Z.uZ)), l = (0, c.e7)([w.Z], () => w.Z.getChannel(null == i ? true : i.channelId));
-  if (null == i || i.type !== j.tI.VIEW_MESSAGE_REQUEST || null == l || !l.isPrivate()) return null;
+  if (null == i || i.type !== P.tI.VIEW_MESSAGE_REQUEST || null == l || !l.isPrivate()) return null;
   let a = t - q.R7I;
   return (0, r.jsx)(O.Z, {
     sidebarType: O.y.MessageRequestSidebar,
@@ -281,7 +281,7 @@ let eo = (0, Chunk112724.Z)(function(e) {
     [u, d] = i.useState(false),
     h = (0, c.e7)([Z.ZP], () => {
       let e = Z.ZP.getSidebarState(Z.uZ);
-      return null != e && e.type === j.tI.VIEW_MESSAGE_REQUEST ? e : null
+      return null != e && e.type === P.tI.VIEW_MESSAGE_REQUEST ? e : null
     }),
     g = null == h ? true : h.channelId,
     m = null != h,
@@ -289,7 +289,7 @@ let eo = (0, Chunk112724.Z)(function(e) {
     O = (0, D.J)(g),
     E = i.useRef(null);
   i.useEffect(() => {
-    null != g && !_ && O && m && ((0, N.Kh)(g), P.Z.closeChannelSidebar(Z.uZ))
+    null != g && !_ && O && m && ((0, N.Kh)(g), j.Z.closeChannelSidebar(Z.uZ))
   }, [g, O, m, _]);
   let [y, I] = i.useState(K.pS.REQUESTS), C = e => {
     I(e)

@@ -137,7 +137,7 @@ function H(e) {
   let {
     guildEvent: t,
     noticeType: n
-  } = e, r = (0, R.DK)(t), l = (0, s.e7)([T.ZP], () => T.ZP.isInterestedInEventRecurrence(t.id, r), [t.id, r]), a = (0, s.e7)([j.Z], () => j.Z.getUpcomingNoticeSeenTime(t.id), [t.id]);
+  } = e, r = (0, R.DK)(t), l = (0, s.e7)([T.ZP], () => T.ZP.isInterestedInEventRecurrence(t.id, r), [t.id, r]), a = (0, s.e7)([P.Z], () => P.Z.getUpcomingNoticeSeenTime(t.id), [t.id]);
   return l || null != a || (0, N._6)(t.id), (0, i.jsx)(c.zxk, {
     onClick: function() {
       (0, D.Z)(t.id, null, t.guild_id, () => setTimeout(() => (0, N.L_)(t.id), 1e3)), I.default.track(M.rMx.CHANNEL_NOTICE_CTA_CLICKED, {
@@ -393,11 +393,11 @@ let X = Chunk647438.memo(function(e) {
   } = (0, p.o)(true), r = (0, A.y)(t.id), l = (0, w.k5)(t.id), a = (0, w.Vm)(t.id), o = (0, s.e7)([O.Z], () => O.Z.getStageInstanceByChannel(null == r ? true : r.id), [r]), {
     isStageNoticeHidden: c,
     isEventNoticeHidden: u
-  } = (0, s.cj)([P.Z], () => ({
-    isStageNoticeHidden: P.Z.isLiveChannelNoticeHidden({
+  } = (0, s.cj)([j.Z], () => ({
+    isStageNoticeHidden: j.Z.isLiveChannelNoticeHidden({
       stageId: null == o ? true : o.id
     }),
-    isEventNoticeHidden: P.Z.isLiveChannelNoticeHidden({
+    isEventNoticeHidden: j.Z.isLiveChannelNoticeHidden({
       eventId: null == l ? true : l.id
     })
   }), [o, l]), d = null, h = null != o && null != r && !c;

@@ -125,6 +125,15 @@ class x extends(a = Chunk442837.ZP.PersistedStore) {
     let t = e.toLowerCase();
     return Object.prototype.hasOwnProperty.call(O, t) ? O[t] : null
   }
+  getGameByApplication(e) {
+    let t = this.getDetectableGame(e.id);
+    if (null != t) return t;
+    if (null != e.linkedGames) {
+      for (let n of e.linkedGames)
+        if (null != (t = this.getDetectableGame(n.id))) return t
+    }
+    return this.getGameByName(e.name)
+  }
   isGameInDatabase(e) {
     return null != this.getGameByName(e.name) || true !== e.nativeProcessObserverId && (e.nativeProcessObserverId & E) == 0
   }

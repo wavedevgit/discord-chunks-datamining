@@ -158,7 +158,7 @@ let eW = {
 
 function eY(e) {
   let t = e.currentTarget;
-  eP.default.track(eR.rMx.NOISE_CANCELLATION_LINK_CLICKED, {
+  ej.default.track(eR.rMx.NOISE_CANCELLATION_LINK_CLICKED, {
     text: t.text,
     href: t.href,
     location: {
@@ -256,7 +256,7 @@ function eQ(e) {
   }, [t, y, s]), S = p || n || h, {
     Component: T,
     play: N,
-    events: P
+    events: j
   } = (0, f.o)(c.enabled ? "disable" : "enable");
   return i.useEffect(() => () => N(), [c.enabled, N]), (0, r.jsx)(eg.Z, eF(eH({
     onChange: v,
@@ -314,11 +314,11 @@ function eQ(e) {
               },
               onMouseEnter: () => {
                 var t, n;
-                null == (t = e.onMouseEnter) || t.call(e), null == (n = c.onMouseEnter) || n.call(c), P.onMouseEnter()
+                null == (t = e.onMouseEnter) || t.call(e), null == (n = c.onMouseEnter) || n.call(c), j.onMouseEnter()
               },
               onMouseLeave: () => {
                 var t;
-                null == (t = e.onMouseLeave) || t.call(e), P.onMouseLeave()
+                null == (t = e.onMouseLeave) || t.call(e), j.onMouseLeave()
               },
               onContextMenu: t => {
                 var n;
@@ -410,7 +410,7 @@ function eX(e) {
           innerClassName: eG.buttonContents,
           wrapperClassName: eG.button,
           focusProps: eW,
-          children: [i === d.z.ACTIVITIES_VOICE_LAUNCHER_BADGE && (0, r.jsx)(j.r, {
+          children: [i === d.z.ACTIVITIES_VOICE_LAUNCHER_BADGE && (0, r.jsx)(P.r, {
             top: false,
             right: false
           }), (0, r.jsx)(_, {
@@ -450,19 +450,19 @@ function eJ(e) {
   t = null == I ? l ? v : ep.Z : () => (0, z.Z)(I);
   let T = null != I || S.length > 0,
     N = _ ? eU.intl.string(eU.t.fjBNo6) : eU.intl.string(eU.t.uQn9Bw),
-    P = E || o || y,
-    j = null != I,
+    j = E || o || y,
+    P = null != I,
     {
       Component: x,
       events: Z,
       play: w
-    } = (0, p.P)(j ? "disable" : "enable");
-  i.useEffect(() => () => w(), [w, j]);
+    } = (0, p.P)(P ? "disable" : "enable");
+  i.useEffect(() => () => w(), [w, P]);
   let L = (0, r.jsx)(x, {
     size: "md",
     color: "currentColor",
     className: a()(eG.buttonIcon, {
-      [eG.withText]: !P
+      [eG.withText]: !j
     })
   });
   return (0, r.jsx)(m.yRy, {
@@ -518,7 +518,7 @@ function eJ(e) {
           innerClassName: eG.buttonContents,
           wrapperClassName: eG.button,
           focusProps: eW,
-          children: P ? L : (0, r.jsxs)(U.Z, {
+          children: j ? L : (0, r.jsxs)(U.Z, {
             align: U.Z.Align.CENTER,
             children: [L, eU.intl.string(eU.t["r0/+v7"])]
           })
@@ -827,14 +827,14 @@ let e1 = (0, Chunk730749.Z)(function(e) {
         }
       })) ? e : T) ? t : []
     }, [I, C, T]),
-    [j, Z] = i.useState(false),
+    [P, Z] = i.useState(false),
     w = (0, M.Z)("RTCConnection");
   i.useEffect(() => {
     (E || y) && Z(false)
   }, [E, y, Z]);
   let {
     analyticsLocations: L
-  } = (0, A.ZP)(x.Z.RTC_PANEL), R = (0, S.Z)(null != d ? d : eR.lds, null == c ? true : c.id), D = (0, P.Z)(null == c ? true : c.id);
+  } = (0, A.ZP)(x.Z.RTC_PANEL), R = (0, S.Z)(null != d ? d : eR.lds, null == c ? true : c.id), D = (0, j.Z)(null == c ? true : c.id);
   return (0, r.jsx)(A.Gt, {
     value: L,
     children: (0, r.jsxs)("div", {
@@ -856,7 +856,7 @@ let e1 = (0, Chunk730749.Z)(function(e) {
         isPrivateChannelWithEnabledActivities: D,
         analyticsLocations: L,
         matchAccountText: w
-      })), !j && E && null != d ? (0, r.jsxs)("div", {
+      })), !P && E && null != d ? (0, r.jsxs)("div", {
         className: eG.viewAsRolesWarning,
         children: [(0, r.jsx)(m.Text, {
           variant: "text-sm/normal",

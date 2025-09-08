@@ -547,7 +547,7 @@ class tp extends Chunk647438.PureComponent {
             if (t)(0, eC.dL)(e2.Z5c.CHANNEL(r, s, o));
             else {
               let e = {
-                type: eP.Ff.THREAD
+                type: ej.Ff.THREAD
               };
               null != o && (e.initialMessageId = o), eN.Z.openThreadAsSidebar({
                 guildId: r,
