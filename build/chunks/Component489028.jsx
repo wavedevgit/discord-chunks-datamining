@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk782568 = require("./782568.js"),
   Chunk223892 = require("./223892.js"),
@@ -39,11 +39,10 @@ function P(e) {
   return (0, r.jsx)("div", {
     className: T.selectTeamContainer,
     children: (0, r.jsx)(a.zx, {
+      text: S.intl.string(S.t["5k6FfX"]),
       disabled: !n,
       onClick: t,
-      className: T.enableTicketingButton,
-      fullWidth: true,
-      children: S.intl.string(S.t["5k6FfX"])
+      fullWidth: true
     })
   })
 }
@@ -81,11 +80,10 @@ function w(e) {
         onChange: e => c(e),
         "aria-label": S.intl.string(S.t.QXf93N)
       }), (0, r.jsx)(a.zx, {
+        text: S.intl.string(S.t["9HU3ZW"]),
         onClick: b,
-        className: T.enableTicketingButton,
-        submitting: m,
-        disabled: null == o || h || !l,
-        children: S.intl.string(S.t["9HU3ZW"])
+        loading: m,
+        disabled: null == o || h || !l
       })]
     }), null != g && (0, r.jsx)(s.Text, {
       className: T.error,

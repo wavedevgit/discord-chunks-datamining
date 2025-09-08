@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk873546 = require("./873546.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk270237 = require("./270237.js"),
   Chunk584825 = require("./584825.js"),
@@ -22,16 +22,11 @@ let _ = e => {
     loading: _
   } = (0, l.sp)(n);
   return ((0, s.Z)(i.tq ? "role-subscriptions-user-setting" : true), _) ? (0, r.jsx)(o.$jN, {}) : 0 === n.length ? null : (0, r.jsxs)("div", {
-    className: f.__invalid_container,
-    children: [(0, r.jsxs)(a.zx, {
-      look: a.zx.Looks.BLANK,
-      innerClassName: f.backButtonContents,
-      onClick: t,
-      children: [(0, r.jsx)(o.ZSh, {
-        size: "md",
-        color: "currentColor",
-        className: f.arrowIcon
-      }), d.intl.string(d.t.hqyhKS)]
+    children: [(0, r.jsx)(a.zx, {
+      text: d.intl.string(d.t.hqyhKS),
+      icon: o.wj7,
+      variant: "secondary",
+      onClick: t
     }), (0, r.jsx)(o.LZC, {
       size: 10
     }), (0, r.jsx)(o.vwX, {

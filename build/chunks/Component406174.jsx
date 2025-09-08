@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk755721 = require("./755721.js"),
+  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk699533 = require("./699533.js"),
@@ -52,11 +52,10 @@ function f(e) {
           })
         })]
       }), (0, r.jsx)(o.zx, {
-        color: o.zx.Colors.CUSTOM,
-        size: o.zx.Sizes.SMALL,
-        className: c.manageSubscriptionsButton,
-        onClick: t,
-        children: l.intl.string(l.t["3a8Xxs"])
+        size: "sm",
+        variant: "overlay-primary",
+        text: l.intl.string(l.t["3a8Xxs"]),
+        onClick: t
       })]
     })]
   })

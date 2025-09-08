@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk399606 = require("./399606.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk601964 = require("./601964.js"),
   Chunk430824 = require("./430824.js"),
@@ -31,8 +31,8 @@ function m(e) {
     }), (0, r.jsx)(a.LZC, {
       size: 16
     }), (0, r.jsx)(l.zx, {
-      look: l.zx.Looks.FILLED,
-      color: null != f ? l.zx.Colors.PRIMARY : l.zx.Colors.BRAND,
+      text: null != f ? u.intl.string(u.t["/Fjq5O"]) : u.intl.string(u.t["6ih+b2"]),
+      variant: null != f ? "secondary" : "primary",
       onClick: () => {
         (0, a.ZDy)(async () => {
           let {
@@ -72,8 +72,7 @@ function m(e) {
           }
         })
       },
-      disabled: h,
-      children: null != f ? u.intl.string(u.t["/Fjq5O"]) : u.intl.string(u.t["6ih+b2"])
+      disabled: h
     })]
   })
 }
