@@ -45,7 +45,7 @@ function P(e) {
         return "Linux"
     }
     return ""
-  }((0, j.getOS)())), [$, ee] = i.useState(""), [et, en] = i.useState(""), [er, ei] = i.useState(""), [el, ea] = i.useState(""), [eo, es] = i.useState(false), [eu, ec] = i.useState(false), [ed, em] = i.useState(false), [ef, eh] = i.useState(null);
+  }((0, j.getOS)())), [$, ee] = i.useState(""), [et, en] = i.useState(""), [er, ei] = i.useState(""), [el, ea] = i.useState(""), [eo, es] = i.useState(false), [eu, ec] = i.useState(false), [ed, em] = i.useState(false), [eh, ef] = i.useState(null);
   i.useEffect(() => {
     let e = Math.random().toString(16).slice(2);
     o.tn.get({
@@ -55,11 +55,11 @@ function P(e) {
       },
       rejectWithError: true
     }).then(e => {
-      if (null != e.body && "4cb8ef4aa208dc08417ac465c098f4246529f83f" !== e.body.hash) {
-        let e = new Date("1757452729400"),
+      if (null != e.body && "503208bf1d40f1b1273c248df77c96d8903727e5" !== e.body.hash) {
+        let e = new Date("1757453399435"),
           t = new Date,
           n = (0, y.TD)(t, e);
-        n.hours > 6 && eh(n.hours)
+        n.hours > 6 && ef(n.hours)
       }
     })
   }, []);
@@ -191,10 +191,10 @@ function P(e) {
             })
           }),
           title: S.intl.string(S.t["ZP/hEx"])
-        }), null == ev && null != ef && (0, r.jsx)(u.ToO, {
+        }), null == ev && null != eh && (0, r.jsx)(u.ToO, {
           type: u.ToO.Types.DANGER,
           title: S.intl.formatToPlainString(S.t["ql2Q/f"], {
-            hours: ef
+            hours: eh
           }),
           body: S.intl.string(S.t.x18RUl)
         }), (0, r.jsxs)(u.Kqy, {
@@ -350,12 +350,12 @@ function P(e) {
                 className: _.attachment,
                 children: [(0, r.jsxs)("div", {
                   children: [(0, r.jsx)(p.r, {
-                    size: h.q.SMALL,
+                    size: f.q.SMALL,
                     upload: e
                   }), (0, r.jsx)("div", {
                     className: _.removeAttachment,
                     children: (0, r.jsx)(v.ZP, {
-                      children: (0, r.jsx)(f.Z, {
+                      children: (0, r.jsx)(h.Z, {
                         tooltip: S.intl.string(S.t.vN7REx),
                         onClick: () => {
                           var t;
