@@ -2,37 +2,33 @@
 /** chunk id: 890876, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => c
+  Z: () => l
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk892001 = require("./892001.js"),
-  Chunk732380 = require("./732380.jsx"),
+var Chunk732380 = require("./732380.jsx"),
   Chunk955418 = require("./955418.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk116649 = require("./116649.js");
 
-function c(e) {
+function l(e) {
   let {
     user: t,
     hideMessageInput: n,
-    hideViewFullProfileButton: c
+    hideExampleButton: l
   } = e;
-  return n ? c ? null : (0, r.jsx)("div", {
-    className: l.footer,
-    children: (0, r.jsx)(a.O1, {
+  return n ? l ? null : (0, r.jsx)("div", {
+    className: s.footer,
+    children: (0, r.jsx)(i.O1, {
       variant: "primary",
-      text: s.intl.string(s.t["+Xp3ho"]),
-      onClick: () => (0, i.openUserProfileModal)({
-        userId: t.id,
-        disableActionsForPreview: true
-      }),
+      text: o.intl.string(o.t.hZkfwc),
+      onClick: () => {},
       fullWidth: true
     })
   }) : (0, r.jsx)("div", {
-    className: l.footer,
+    className: s.footer,
     inert: true,
-    children: (0, r.jsx)(o.Z, {
+    children: (0, r.jsx)(a.Z, {
       user: t
     })
   })

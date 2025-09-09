@@ -73,6 +73,6 @@ function p(e) {
     canUsePremiumCustomization: true,
     isTryItOutFlow: true,
     disabledInputs: p,
-    hideViewFullProfileButton: true
+    hideExampleButton: true
   })
 }

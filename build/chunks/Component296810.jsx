@@ -26,7 +26,6 @@ function u(e) {
       title: null != d ? d : l.intl.string(l.t.Zb06yM),
       hideDivider: true,
       className: c.preview,
-      showViewFullProfileButton: true,
       children: u
     }), null != f ? (0, r.jsx)(s.Z, {
       title: l.intl.string(l.t["7KRt6e"]),
@@ -38,7 +37,6 @@ function u(e) {
     title: null != d ? d : l.intl.string(l.t.Zb06yM),
     hideDivider: true,
     className: c.preview,
-    showViewFullProfileButton: true,
     children: u
   });
   return (0, r.jsx)("div", {

@@ -55,8 +55,8 @@ function Z(e) {
       uploadType: t,
       analyticsSource: o,
       analyticsLocation: {
-        section: l.jXE.USER_PROFILE,
-        object: l.qAy.BUTTON_CTA
+        section: b.jXE.USER_PROFILE,
+        object: b.qAy.BUTTON_CTA
       },
       onSecondaryClick: a.pTH
     }, n))
@@ -69,7 +69,7 @@ function g(e) {
     uploadType: n,
     imageSrc: a,
     onClose: r,
-    analyticsSource: l,
+    analyticsSource: b,
     analyticsLocation: Z,
     onSecondaryClick: g
   } = e, E = function(e, t) {
@@ -87,34 +87,34 @@ function g(e) {
     }
     return a
   }(e, ["user", "uploadType", "imageSrc", "onClose", "analyticsSource", "analyticsLocation", "onSecondaryClick"]);
-  let _ = (0, o.ZP)(t.id),
+  let m = (0, o.ZP)(t.id),
     {
-      primaryColor: m,
+      primaryColor: _,
       secondaryColor: C
     } = (0, s.Z)({
       user: t,
-      displayProfile: _,
-      pendingAvatarSrc: n === b.pC.AVATAR ? a : true,
+      displayProfile: m,
+      pendingAvatarSrc: n === l.pC.AVATAR ? a : true,
       isPreview: true
     }),
-    O = n === b.pC.AVATAR || n === b.pC.BANNER,
+    O = n === l.pC.AVATAR || n === l.pC.BANNER,
     h = null != a,
-    T = (0, f.Z)(n === b.pC.AVATAR ? A.cd.ANIMATED_AVATAR_MODAL_UPSELL : A.cd.ANIMATED_BANNER_MODAL_UPSELL);
+    T = (0, f.Z)(n === l.pC.AVATAR ? A.cd.ANIMATED_AVATAR_MODAL_UPSELL : A.cd.ANIMATED_BANNER_MODAL_UPSELL);
   return O ? (0, c.jsx)(p.Z, L({
     artURL: h ? true : T,
     modalClassName: h ? R.modal : true,
     modalContentClassName: h ? R.modalContent : true,
-    type: n === b.pC.AVATAR ? A.cd.ANIMATED_AVATAR_MODAL_UPSELL : A.cd.ANIMATED_BANNER_MODAL_UPSELL,
-    title: n === b.pC.AVATAR ? u.intl.string(u.t["X7tO6+"]) : u.intl.string(u.t.zXPa2N),
-    body: n === b.pC.AVATAR ? u.intl.string(u.t.ifCRdH) : u.intl.string(u.t.yQAnf3),
-    glowUp: n === b.pC.AVATAR ? u.intl.string(u.t.ifCRdH) : u.intl.string(u.t.yQAnf3),
+    type: n === l.pC.AVATAR ? A.cd.ANIMATED_AVATAR_MODAL_UPSELL : A.cd.ANIMATED_BANNER_MODAL_UPSELL,
+    title: n === l.pC.AVATAR ? u.intl.string(u.t["X7tO6+"]) : u.intl.string(u.t.zXPa2N),
+    body: n === l.pC.AVATAR ? u.intl.string(u.t.ifCRdH) : u.intl.string(u.t.yQAnf3),
+    glowUp: n === l.pC.AVATAR ? u.intl.string(u.t.ifCRdH) : u.intl.string(u.t.yQAnf3),
     onSecondaryClick: () => {
       null == g || g(), (0, i.$)(r)
     },
     secondaryCTA: u.intl.string(u.t.PcTCBw),
     onClose: r,
     enableArtBoxShadow: false,
-    analyticsSource: l,
+    analyticsSource: b,
     analyticsLocation: Z,
     hideBackButton: true,
     showEnhancedUpsell: true,
@@ -125,10 +125,10 @@ function g(e) {
         user: t,
         canUsePremiumCustomization: true,
         disabledInputs: true,
-        pendingAvatar: n === b.pC.AVATAR ? a : true,
-        pendingBanner: n === b.pC.BANNER ? a : true,
-        pendingThemeColors: [m, C],
-        hideViewFullProfileButton: true
+        pendingAvatar: n === l.pC.AVATAR ? a : true,
+        pendingBanner: n === l.pC.BANNER ? a : true,
+        pendingThemeColors: [_, C],
+        hideExampleButton: true
       })
     }) : true
   }, E)) : null

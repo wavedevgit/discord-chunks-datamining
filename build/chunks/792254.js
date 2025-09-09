@@ -33,22 +33,22 @@ function O(e) {
       case o.cd.ANIMATED_AVATAR_MODAL_UPSELL:
         return t === s.BR.DARK ? R.Z : E.Z;
       case o.cd.ANIMATED_BANNER_MODAL_UPSELL:
-        return t === s.BR.DARK ? L.Z : _.Z;
+        return t === s.BR.DARK ? L.Z : m.Z;
       case o.cd.PROFILE_EFFECT_MODAL_UPSELL:
         return t === s.BR.DARK ? g.Z : C.Z;
       case o.cd.AVATAR_DECORATION_MODAL_UPSELL:
-        return t === s.BR.DARK ? Z.Z : m.Z
+        return t === s.BR.DARK ? Z.Z : _.Z
     }
   }(e, n) : function(e, t) {
     switch (e) {
       case o.cd.ANIMATED_AVATAR_MODAL_UPSELL:
         return t === s.BR.DARK ? r.Z : A.Z;
       case o.cd.ANIMATED_BANNER_MODAL_UPSELL:
-        return t === s.BR.DARK ? i.Z : l.Z;
+        return t === s.BR.DARK ? i.Z : b.Z;
       case o.cd.PROFILE_EFFECT_MODAL_UPSELL:
         return t === s.BR.DARK ? p.Z : u.Z;
       case o.cd.AVATAR_DECORATION_MODAL_UPSELL:
-        return t === s.BR.DARK ? f.Z : b.Z
+        return t === s.BR.DARK ? f.Z : l.Z
     }
   }(e, n)
 }

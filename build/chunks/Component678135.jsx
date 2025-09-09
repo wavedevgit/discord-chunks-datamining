@@ -52,7 +52,7 @@ function v(e) {
     hideMessageInput: Z = true,
     pendingBadges: F,
     shouldOpenBadgeTooltip: V,
-    hideViewFullProfileButton: H = false,
+    hideExampleButton: H = false,
     interactive: Y = true
   } = e, W = (0, l.ZP)(t.id, null == n ? true : n.id), {
     avatarSrc: K,
@@ -134,7 +134,7 @@ function v(e) {
     }), (0, r.jsx)(g.Z, {
       user: t,
       hideMessageInput: Z,
-      hideViewFullProfileButton: H
+      hideExampleButton: H
     }), null != q && (0, r.jsx)(s.Z, {
       profileEffectId: q
     })]
