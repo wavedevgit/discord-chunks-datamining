@@ -2,7 +2,7 @@
 /** chunk id: 264481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P9: () => P,
-  Uf: () => S,
+  Uf: () => A,
   b0: () => O,
   s_: () => v
 }), require("./388685.js");
@@ -24,9 +24,9 @@ let b = [() => Chunk388032.intl.string(Chunk388032.t.madJdH), () => Chunk388032.
   y = [() => Chunk388032.intl.string(Chunk388032.t.AyMGXF), () => Chunk388032.intl.string(Chunk388032.t.aAFW7e), e => g.intl.formatToPlainString(g.t.h2g0cH, {
     name: e
   }), () => Chunk388032.intl.string(Chunk388032.t["rrYh5+"]), () => Chunk388032.intl.string(Chunk388032.t["HX3K+P"]), () => Chunk388032.intl.string(Chunk388032.t["/yW3aW"]), () => Chunk388032.intl.string(Chunk388032.t["PmL/v7"]), () => Chunk388032.intl.string(Chunk388032.t.IALa3t), () => Chunk388032.intl.string(Chunk388032.t.HRcTFB), () => Chunk388032.intl.string(Chunk388032.t.NuCqPj), () => Chunk388032.intl.string(Chunk388032.t["M1tw+/"]), () => Chunk388032.intl.string(Chunk388032.t.UBm1y8), () => Chunk388032.intl.string(Chunk388032.t.Cu95PT), () => Chunk388032.intl.string(Chunk388032.t["R/wFur"]), () => Chunk388032.intl.string(Chunk388032.t.HQPAVV), () => Chunk388032.intl.string(Chunk388032.t.YolGh4)],
-  x = [Chunk981631.ABu.STEAM, Chunk981631.ABu.PLAYSTATION, Chunk981631.ABu.XBOX, Chunk981631.ABu.TWITCH, Chunk981631.ABu.BATTLENET, Chunk981631.ABu.LEAGUE_OF_LEGENDS, Chunk981631.ABu.EPIC_GAMES, Chunk981631.ABu.RIOT_GAMES, Chunk981631.ABu.ROBLOX, Chunk981631.ABu.SPOTIFY, Chunk981631.ABu.YOUTUBE, Chunk981631.ABu.CRUNCHYROLL, Chunk981631.ABu.BUNGIE];
+  h = [Chunk981631.ABu.STEAM, Chunk981631.ABu.PLAYSTATION, Chunk981631.ABu.XBOX, Chunk981631.ABu.TWITCH, Chunk981631.ABu.BATTLENET, Chunk981631.ABu.LEAGUE_OF_LEGENDS, Chunk981631.ABu.EPIC_GAMES, Chunk981631.ABu.RIOT_GAMES, Chunk981631.ABu.ROBLOX, Chunk981631.ABu.SPOTIFY, Chunk981631.ABu.YOUTUBE, Chunk981631.ABu.CRUNCHYROLL, Chunk981631.ABu.BUNGIE];
 
-function h(e) {
+function x(e) {
   let {
     heading: t,
     bodyText: n,
@@ -55,7 +55,7 @@ function v() {
       var e;
       return (null != (e = (0, Chunk392711.sample)(b)) ? module : b[0])()
     });
-  return (0, Chunk951288.jsx)(h, {
+  return (0, Chunk951288.jsx)(x, {
     heading: module,
     bodyText: exports
   })
@@ -67,7 +67,7 @@ function O() {
       var e;
       return (null != (e = (0, Chunk392711.sample)(j)) ? module : j[0])()
     });
-  return (0, Chunk951288.jsx)(h, {
+  return (0, Chunk951288.jsx)(x, {
     heading: module,
     bodyText: exports
   })
@@ -89,7 +89,7 @@ function P(e) {
       recipientIds: t.id
     }), null == c || c()
   }, [t.id, c]);
-  return (0, r.jsx)(h, {
+  return (0, r.jsx)(x, {
     heading: m,
     bodyText: b,
     children: (0, r.jsx)("div", {
@@ -104,11 +104,11 @@ function P(e) {
   })
 }
 
-function A() {
+function S() {
   let e = (0, Chunk410030.ZP)();
   return (0, Chunk951288.jsx)("div", {
     className: Chunk839468.connectionPlatforms,
-    children: x.map((t, n) => {
+    children: h.map((t, n) => {
       let l = u.Z.get(t);
       if (null == l) return null;
       let i = (0, a.wjy)(e) ? l.icon.darkPNG : l.icon.lightPNG;
@@ -121,7 +121,7 @@ function A() {
   })
 }
 
-function S(e) {
+function A(e) {
   let {
     onClose: t
   } = e, n = l.useCallback(() => {
@@ -129,10 +129,10 @@ function S(e) {
   }, [t]), i = l.useCallback(() => {
     null == t || t(), o.Z.open(m.oAB.CONTENT_AND_SOCIAL, "CONNECTED_GAMES")
   }, [t]);
-  return (0, r.jsxs)(h, {
+  return (0, r.jsxs)(x, {
     heading: g.intl.string(g.t.VB6LWV),
     bodyText: g.intl.string(g.t.KpjsU1),
-    children: [(0, r.jsx)(A, {}), (0, r.jsxs)("div", {
+    children: [(0, r.jsx)(S, {}), (0, r.jsxs)("div", {
       className: p.buttonRow,
       children: [(0, r.jsx)(f.tG, {
         text: g.intl.string(g.t["/Hl24e"]),

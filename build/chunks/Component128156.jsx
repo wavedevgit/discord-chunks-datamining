@@ -53,16 +53,16 @@ function I(e) {
   } = (0, g.Z)({
     userId: t.id,
     guildId: w
-  }), B = (0, l.e7)([s.Z], () => s.Z.isFetchingUserOutbox(t.id)), R = t.id === n.id, U = (0, l.e7)([u.Z, c.Z], () => {
-    let e = R ? u.Z.getStatus() : c.Z.getStatus(t.id);
+  }), R = (0, l.e7)([s.Z], () => s.Z.isFetchingUserOutbox(t.id)), B = t.id === n.id, U = (0, l.e7)([u.Z, c.Z], () => {
+    let e = B ? u.Z.getStatus() : c.Z.getStatus(t.id);
     return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
-  }), F = k.length > 0 || null != L, M = C && null == L && null == G && null != D, W = !U && (F || M), z = _.length > 0;
-  if (!W && !z && B) return (0, r.jsx)("div", {
-    className: S.cards,
+  }), M = k.length > 0 || null != L, F = C && null == L && null == G && null != D, W = !U && (M || F), z = _.length > 0;
+  if (!W && !z && R) return (0, r.jsx)("div", {
+    className: A.cards,
     children: Array.from({
       length: 8
     }).map((e, t) => (0, r.jsxs)("div", {
-      className: S.loadingItem,
+      className: A.loadingItem,
       children: [(0, r.jsx)(o.ZT, {
         width: 60,
         opacity: .08
@@ -72,11 +72,11 @@ function I(e) {
       })]
     }, t))
   });
-  if (!W && !z && !B) {
+  if (!W && !z && !R) {
     var q;
-    return R ? (0, r.jsx)(x.Uf, {
+    return B ? (0, r.jsx)(h.Uf, {
       onClose: Z
-    }) : (0, r.jsx)(x.P9, {
+    }) : (0, r.jsx)(h.P9, {
       user: t,
       guildId: null != (q = null == I ? true : I.guildId) ? q : w,
       channelId: N,
@@ -84,13 +84,13 @@ function I(e) {
     })
   }
   return (0, r.jsxs)(v.F, {
-    className: S.scroller,
+    className: A.scroller,
     fade: true,
-    children: [W ? (0, r.jsx)(h.Z, {
-      heading: A.intl.string(A.t.J6STd3),
+    children: [W ? (0, r.jsx)(x.Z, {
+      heading: S.intl.string(S.t.J6STd3),
       children: (0, r.jsxs)("ul", {
-        className: S.cards,
-        children: [!T && M && (0, r.jsx)("li", {
+        className: A.cards,
+        children: [!T && F && (0, r.jsx)("li", {
           children: (0, r.jsx)(y.Z, {
             user: t,
             currentUser: n,
@@ -111,7 +111,7 @@ function I(e) {
             activity: e,
             onClose: Z
           })
-        }, "live-".concat(l))), T && M && (0, r.jsx)("li", {
+        }, "live-".concat(l))), T && F && (0, r.jsx)("li", {
           children: (0, r.jsx)(y.Z, {
             user: t,
             currentUser: n,
@@ -120,9 +120,9 @@ function I(e) {
           })
         })]
       })
-    }) : null, z ? (0, r.jsx)(h.Z, {
-      heading: A.intl.string(A.t.jzgEoK),
-      introText: R ? A.intl.format(A.t["4bk9Ag"], {
+    }) : null, z ? (0, r.jsx)(x.Z, {
+      heading: S.intl.string(S.t.jzgEoK),
+      introText: B ? S.intl.format(S.t["4bk9Ag"], {
         learnMoreHook: (e, t) => (0, r.jsx)(i.eee, {
           href: d.Z.getArticleURL(P.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
@@ -130,7 +130,7 @@ function I(e) {
       }) : true,
       scrollIntoView: E === O.Tb.RECENT_ACTIVITY,
       children: (0, r.jsx)("ul", {
-        className: S.cards,
+        className: A.cards,
         children: _.map(e => (0, r.jsx)("li", {
           children: (0, r.jsx)(b.Z, {
             user: t,

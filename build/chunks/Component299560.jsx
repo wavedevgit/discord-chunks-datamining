@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk229870 = require("./229870.js");
-let h = {
+let x = {
   [Chunk296009.l.FAVORITE_GAMES]: {
     placeholder: {
       variant: "details",
@@ -72,7 +72,7 @@ function v(e) {
   } = e, {
     placeholder: y,
     getAriaLabel: v
-  } = h[t], O = "small" === i, P = l.useMemo(() => {
+  } = x[t], O = "small" === i, P = l.useMemo(() => {
     switch (t) {
       case s.l.CURRENT_GAMES:
       case s.l.FAVORITE_GAMES:
@@ -90,15 +90,15 @@ function v(e) {
     }
   }, [t]);
   (0, u.q)(P.type === s.l.APPLICATION ? P.applicationId : null);
-  let A = l.useCallback(() => {
+  let S = l.useCallback(() => {
     c || ((0, g.qH)(t, P), d({
       action: "WIDGET_ADDED",
       widgetEdited: t
     }), (0, p.L$)(j.qb.WIDGET_ADDED), null == n || n())
   }, [c, t, P, d, n]);
   return (0, r.jsxs)(o.P3F, {
-    className: a()(x.addButtonContainer, O && x.sizeSmall, c && x.loading),
-    onClick: A,
+    className: a()(h.addButtonContainer, O && h.sizeSmall, c && h.loading),
+    onClick: S,
     "aria-label": v(P),
     "aria-busy": c,
     children: ["details" === y.variant ? (0, r.jsx)(b.i, {
@@ -108,11 +108,11 @@ function v(e) {
       applicationIds: y.applicationIds,
       size: i
     }), (0, r.jsxs)("div", {
-      className: x.overlay,
+      className: h.overlay,
       children: [(0, r.jsx)(o.oFk, {
         size: "md",
         color: "currentColor",
-        className: x.addButton
+        className: h.addButton
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "header-primary",

@@ -69,7 +69,7 @@ function Z(e) {
   var {
     widget: t
   } = e, n = E(e, ["widget"]);
-  return t instanceof m.q ? (0, r.jsx)(x.Z, N({
+  return t instanceof m.q ? (0, r.jsx)(h.Z, N({
     widget: t
   }, n)) : t instanceof g.zy ? (0, r.jsx)(O.Z, N({
     widget: t
@@ -100,15 +100,15 @@ function T(e) {
     return l.useEffect(() => {
       null == e && null == t && n && (0, c.GE)()
     }, [e, t, n]), "GB" === e && n
-  })(), b = 0 === a.length && o, x = a.filter(g.Wc);
-  return ((0, j.ZP)(x), (0, p.J)(o, x), b) ? (0, r.jsx)(S.Z, {}) : (0, r.jsxs)(r.Fragment, {
+  })(), b = 0 === a.length && o, h = a.filter(g.Wc);
+  return ((0, j.ZP)(h), (0, p.J)(o, h), b) ? (0, r.jsx)(A.Z, {}) : (0, r.jsxs)(r.Fragment, {
     children: [o && m && (0, r.jsx)(C, {}), a.map((e, l) => (0, r.jsx)(Z, {
       widget: e,
       user: t,
       guildId: n,
       channelId: i,
       index: l
-    }, e.id)), o && (0, r.jsx)(h.Z, {})]
+    }, e.id)), o && (0, r.jsx)(x.Z, {})]
   })
 }
 
@@ -121,7 +121,7 @@ function k(e) {
     container: i.current
   });
   let s = (0, P.h)(t.id);
-  return (0, r.jsxs)(A.F, {
+  return (0, r.jsxs)(S.F, {
     "data-scroller": true,
     scrollerRef: i,
     className: a()(w.scroller, {

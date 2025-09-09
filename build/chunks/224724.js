@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => A
-}), require("./388685.js");
+}), require("./388685.js"), require("./539854.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -83,23 +83,55 @@ class S extends Chunk442837.ZP.Store {
   hasPendingChanges() {
     return null !== c && (null === u || !i().isEqual(c, u))
   }
-  hasSaveablePendingChanges() {
+  getWidgetUpdates() {
     let e = this.getSaveablePendingWidgets();
-    if (null == module) returnfalse;
-    if (null == u) returntrue;
+    if (null == module || null == u) return {
+      changedWidgets: null != module ? module : [],
+      removedWidgets: [],
+      hasOrderChanges: false
+    };
     let t = new Map(u.map(e => [e.id, e])),
-      n = new Map(module.map(e => [e.id, e]));
-    for (let [e, r] of require) {
+      n = new Map(module.map(e => [e.id, e])),
+      r = [],
+      i = [];
+    for (let [e, i] of require) {
       let n = exports.get(module);
-      if (null == require || !Chunk392711.isEqual(require)) returntrue
+      null != require && i.isEqual(require) || Chunk392711.push(i)
     }
-    for (let [e] of exports)
-      if (!require.has(module)) returntrue;
+    for (let [e, r] of exports) require.has(module) || i.push(Chunk392711);
+    let a = false;
     for (let t = 0; exports < module.length; exports++) {
-      var r, i;
-      if ((null == (r = module[exports]) ? true : Chunk392711.id) !== (null == (i = u[exports]) ? true : i.id)) returntrue
+      var o, s;
+      if ((null == (o = module[exports]) ? true : Chunk570140.id) !== (null == (s = u[exports]) ? true : Chunk594174.id)) {
+        a = true;
+        break
+      }
     }
-    returnfalse
+    return {
+      changedWidgets: Chunk392711,
+      removedWidgets: i,
+      hasOrderChanges: Chunk442837
+    }
+  }
+  getChangedWidgets() {
+    let {
+      changedWidgets: e
+    } = this.getWidgetUpdates();
+    return module
+  }
+  getRemovedWidgets() {
+    let {
+      removedWidgets: e
+    } = this.getWidgetUpdates();
+    return module
+  }
+  hasSaveablePendingChanges() {
+    let {
+      changedWidgets: e,
+      removedWidgets: t,
+      hasOrderChanges: n
+    } = this.getWidgetUpdates();
+    return module.length > 0 || exports.length > 0 || require
   }
   get isSubmitting() {
     return d

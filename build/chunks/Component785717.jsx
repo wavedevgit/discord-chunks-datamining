@@ -114,6 +114,11 @@ let u = Chunk647438.createContext(null),
         null != e && (0, s.Of)(c({
           analyticsLocations: t
         }, e, n))
+      }, [module, exports]),
+      trackUserProfileEditSaved: Chunk647438.useCallback(n => {
+        null != e && (0, s.V1)(c({
+          analyticsLocations: t
+        }, e, n))
       }, [module, exports])
     }
   }

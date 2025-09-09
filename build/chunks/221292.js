@@ -8,6 +8,7 @@ require.d(exports, {
   Qf: () => w,
   RV: () => N,
   TY: () => D,
+  V1: () => L,
   pQ: () => C,
   te: () => T,
   z7: () => R
@@ -299,5 +300,25 @@ let v = e => {
       game_id: s,
       num_results: l,
       num_characters: c
+    }))
+  },
+  L = e => {
+    let {
+      guildId: t,
+      channelId: n,
+      analyticsLocations: i,
+      widgetEdited: a,
+      gameIds: o,
+      tags: s,
+      numCharactersCommentary: l
+    } = e;
+    C(O(b({}, e), {
+      action: "EDIT_SAVED"
+    })), u.default.track(m.rMx.USER_PROFILE_EDIT_SAVED, O(b({}, (0, r.hH)(t), (0, r.JS)(n), S(e)), {
+      location_stack: i,
+      widget_edited: a,
+      game_ids: o,
+      tags: s,
+      num_characters_commentary: l
     }))
   }

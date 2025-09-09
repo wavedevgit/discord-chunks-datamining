@@ -1,8 +1,8 @@
 /** Chunk was on 30355 **/
 /** chunk id: 384166, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
-}), require("./388685.js");
+  Z: () => v
+}), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
@@ -12,6 +12,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
   Chunk585483 = require("./585483.js"),
+  Chunk785717 = require("./785717.jsx"),
+  Chunk836197 = require("./836197.js"),
   Chunk592183 = require("./592183.js"),
   Chunk224724 = require("./224724.js"),
   Chunk872269 = require("./872269.js"),
@@ -20,16 +22,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk461671 = require("./461671.js");
 
-function x(e) {
+function v(e) {
   let {
     className: t
-  } = e, [n, i] = l.useState(false), x = (0, o.Wu)([m.Z], () => {
+  } = e, {
+    trackUserProfileEditSaved: n
+  } = (0, f.KZ)(), [i, v] = l.useState(false), O = (0, o.Wu)([p.Z], () => {
     var e;
-    return null != (e = m.Z.getSaveablePendingWidgets()) ? e : []
-  }), h = (0, o.e7)([m.Z], () => m.Z.hasSaveablePendingChanges()), v = (0, o.e7)([m.Z], () => m.Z.isSubmitting), O = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), P = (0, c.Yzy)(h, {
+    return null != (e = p.Z.getSaveablePendingWidgets()) ? e : []
+  }), P = (0, o.Wu)([p.Z], () => p.Z.getChangedWidgets()), S = (0, o.Wu)([p.Z], () => p.Z.getRemovedWidgets()), A = (0, o.e7)([p.Z], () => p.Z.hasSaveablePendingChanges()), I = (0, o.e7)([p.Z], () => p.Z.isSubmitting), w = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), N = (0, c.Yzy)(A, {
     from: {
       opacity: 0,
-      y: 80 * !O
+      y: 80 * !w
     },
     enter: {
       opacity: 1,
@@ -37,59 +41,75 @@ function x(e) {
     },
     leave: {
       opacity: 0,
-      y: 80 * !O
+      y: 80 * !w
     }
   });
   l.useEffect(() => {
     let e = null;
 
     function t() {
-      i(true), e = setTimeout(() => i(false), 500)
+      v(true), e = setTimeout(() => v(false), 500)
     }
-    return d.S.subscribe(b.CkL.EMPHASIZE_NOTICE, t), () => {
-      d.S.unsubscribe(b.CkL.EMPHASIZE_NOTICE, t), null !== e && clearTimeout(e)
+    return d.S.subscribe(y.CkL.EMPHASIZE_NOTICE, t), () => {
+      d.S.unsubscribe(y.CkL.EMPHASIZE_NOTICE, t), null !== e && clearTimeout(e)
     }
   }, []), l.useEffect(() => {
-    h && c.uvj.announce(j.intl.string(j.t["0Y/qkJ"]))
-  }, [h]);
-  let A = l.useCallback(async () => {
+    A && c.uvj.announce(h.intl.string(h.t["0Y/qkJ"]))
+  }, [A]);
+  let E = l.useCallback(async () => {
       try {
-        await f.Z.savePendingWidgets(x)
+        await g.Z.savePendingWidgets(O)
       } catch (e) {
-        (0, g.L$)(p.qb.WIDGET_SAVE_FAILURE)
+        (0, b.L$)(j.qb.WIDGET_SAVE_FAILURE);
+        return
       }
-    }, [x]),
-    S = l.useCallback(() => {
-      f.Z.clearPendingWidgets()
+      for (let e of P) {
+        let t = {
+          widgetEdited: e.type
+        };
+        (0, m.Wc)(e) && (t.gameIds = e.games.map(e => e.applicationId), t.tags = e.games.flatMap(e => {
+          var t;
+          return null != (t = e.tags) ? t : []
+        }).map(e => e.toString()), t.numCharactersCommentary = e.games.reduce((e, t) => {
+          var n, r;
+          return e + (null != (r = null == (n = t.comment) ? true : n.length) ? r : 0)
+        }, 0)), n(t)
+      }
+      for (let e of S) n({
+        widgetEdited: e.type
+      })
+    }, [O, P, S, n]),
+    Z = l.useCallback(() => {
+      g.Z.clearPendingWidgets()
     }, []);
-  return P((e, l) => l ? (0, r.jsx)(s.animated.div, {
+  return N((e, n) => n ? (0, r.jsx)(s.animated.div, {
     className: t,
     style: e,
     children: (0, r.jsxs)("section", {
-      className: a()(y.content, {
-        [y.emphasized]: n
+      className: a()(x.content, {
+        [x.emphasized]: i
       }),
-      "aria-label": j.intl.string(j.t["odDw+/"]),
+      "aria-label": h.intl.string(h.t["odDw+/"]),
       children: [(0, r.jsx)(c.Text, {
         variant: "text-md/medium",
         color: "text-primary",
-        className: y.message,
-        children: j.intl.string(j.t["/lQiX1"])
+        className: x.message,
+        children: h.intl.string(h.t["/lQiX1"])
       }), (0, r.jsxs)("div", {
-        className: y.actions,
+        className: x.actions,
         children: [(0, r.jsx)(c.zxk, {
           size: "sm",
           variant: "secondary",
-          text: j.intl.string(j.t.yBZMsb),
-          onClick: S,
-          disabled: !h || v
+          text: h.intl.string(h.t.yBZMsb),
+          onClick: Z,
+          disabled: !A || I
         }), (0, r.jsx)(c.zxk, {
           size: "sm",
           variant: "primary",
-          text: j.intl.string(j.t.R3BPHx),
-          onClick: A,
-          loading: v,
-          disabled: !h || v
+          text: h.intl.string(h.t.R3BPHx),
+          onClick: E,
+          loading: I,
+          disabled: !A || I
         })]
       })]
     })
