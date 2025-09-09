@@ -302,18 +302,18 @@ function eu(e) {
         accountScopes: n
       }
     }, [null == e2 ? true : e2.scopes, eu, e$]),
-    e6 = i.useMemo(() => {
+    e5 = i.useMemo(() => {
       var e;
       let t = e$ ? d.vB(null != (e = null == e2 ? true : e2.permissions) ? e : 0) : ed;
       return null != t ? t : j.Hn
     }, [null == e2 ? true : e2.permissions, ed, e$]),
-    e5 = i.useRef(false),
+    e6 = i.useRef(false),
     [e7, e9] = i.useState(null != eI ? eI : []),
     [te, tt] = i.useState(null != eI && eI.length > 0);
   i.useEffect(() => {
-    if (e5.current) return;
+    if (e6.current) return;
     let e = async () => {
-      e5.current = true;
+      e6.current = true;
       try {
         let {
           disclosures: e,
@@ -328,7 +328,7 @@ function eu(e) {
         if (401 === e) return void(0, U.c$)(eC, "oauth2_error_failed_disclosures");
         eL(Error(null != t.message ? t.message : "".concat(Object.keys(t)[0], ": ").concat(Object.values(t)[0])))
       } finally {
-        e5.current = false
+        e6.current = false
       }
     };
     if (null == eI) {
@@ -362,7 +362,7 @@ function eu(e) {
           state: ea,
           nonce: eo,
           integrationType: eQ,
-          permissions: d.Od(e6, eH),
+          permissions: d.Od(e5, eH),
           guildId: eQ === c.Y.GUILD_INSTALL && null != eB ? eB : true,
           channelId: eQ === c.Y.GUILD_INSTALL && null != eF ? eF : true,
           dmSettings: {
@@ -388,11 +388,11 @@ function eu(e) {
         let e = t.body;
         (null == e ? true : e.message) != null && "" !== e.message ? eL(Error(e.message)) : eL(e), eD("AUTHORIZE_SCOPES"), eM(false)
       }
-    }, [eO, eg, ey, null == eR ? true : eR.application, eX, ev, R, e4, X, ee, er, ei, ea, eo, e6, eH, eB, eQ, eF, e7, eW]),
+    }, [eO, eg, ey, null == eR ? true : eR.application, eX, ev, R, e4, X, ee, er, ei, ea, eo, e5, eH, eB, eQ, eF, e7, eW]),
     tr = i.useRef(false),
     ti = i.useCallback(async () => {
       if (!x.default.isAuthenticated()) return void(0, U.c$)(eC, "oauth2_error_not_authenticated");
-      if (!e5.current && !tr.current) {
+      if (!e6.current && !tr.current) {
         tr.current = true;
         try {
           let e = null != eA ? eA : await (0, U.Ww)({
@@ -439,10 +439,10 @@ function eu(e) {
       application_id: R,
       integration_type: eQ,
       scopes: e4,
-      permissions: e6.toString(),
+      permissions: e5.toString(),
       mobile_push_notification_default_setting: false
     }))
-  }, [R, eQ, e6, e4, ew]), i.useEffect(() => {
+  }, [R, eQ, e5, e4, ew]), i.useEffect(() => {
     if (null == ew && (!e$ || null != e0) && eN)
       if (null != eA) {
         var e;
@@ -452,8 +452,8 @@ function eu(e) {
     if (null == eQ || null != eR || null != ex) return;
     eQ === c.Y.USER_INSTALL && (eZ(null), eV(null));
     let e = e4.filter(e => !Z.ak.includes(e));
-    0 === e4.length ? eL(Error("No scopes were provided.")) : e.length > 0 ? eL(Error("Invalid scope: ".concat(e[0]))) : (0, B._$)(e6) ? eL(Error("Invalid permission(s) provided.")) : ti()
-  }, [te, ti, e4, e6, eQ, eR, ex]);
+    0 === e4.length ? eL(Error("No scopes were provided.")) : e.length > 0 ? eL(Error("Invalid scope: ".concat(e[0]))) : (0, B._$)(e5) ? eL(Error("Invalid permission(s) provided.")) : ti()
+  }, [te, ti, e4, e5, eQ, eR, ex]);
   let ts = i.useCallback(e => {
       e && eU(true)
     }, []),
@@ -561,7 +561,7 @@ function eu(e) {
           selectedGuildId: eB,
           onChannelChange: eV
         }) : null]
-      }), e4.includes(u.x.BOT) && !d.fS(e6, j.Hn) && (O = "AUTHORIZE_BOT_PERMISSIONS"), ta.length > 1 && (m = "SELECT_INSTALL_TYPE"), tf = ty && null == eX || tb && null == eF, td = true;
+      }), e4.includes(u.x.BOT) && !d.fS(e5, j.Hn) && (O = "AUTHORIZE_BOT_PERMISSIONS"), ta.length > 1 && (m = "SELECT_INSTALL_TYPE"), tf = ty && null == eX || tb && null == eF, td = true;
       break;
     case "AUTHORIZE_BOT_PERMISSIONS":
       if (null == eR) return {
@@ -570,7 +570,7 @@ function eu(e) {
       };
       h = (0, r.jsx)(W.Z, {
         application: eR.application,
-        permissions: e6,
+        permissions: e5,
         deniedPermissions: eH,
         onPermissionsChange: tu,
         guild: eX
