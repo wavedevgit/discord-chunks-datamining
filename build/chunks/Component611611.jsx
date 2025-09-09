@@ -1,7 +1,7 @@
 /** Chunk was on 68784 **/
 /** chunk id: 611611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => k
+  default: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,33 +27,30 @@ var Chunk951288 = require("./951288.js"),
   Chunk520317 = require("./520317.js");
 let C = (0, Chunk313201.hQ)();
 
-function _(e) {
+function k(e) {
   let {
     question: t,
     onChange: n,
     error: l,
-    inputRef: i
-  } = e, [o, s] = a.useState(false);
+    inputRef: a
+  } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.vwX, {
       tag: d.RB0.LABEL,
       htmlFor: C,
-      children: y.intl.string(y.t.WBiKnJ)
+      children: w.intl.string(w.t.WBiKnJ)
     }), (0, r.jsx)(d.Kx8, {
-      inputRef: i,
+      inputRef: a,
       id: C,
-      placeholder: y.intl.string(y.t["/uQqJS"]),
+      placeholder: w.intl.string(w.t["/uQqJS"]),
       value: t,
       onChange: n,
-      maxLength: x.Az,
+      maxLength: v.Az,
       error: l,
-      onFocus: () => s(true),
-      onBlur: () => s(false),
-      showCharacterCount: o,
-      showRemainingCharacterCount: o,
       rows: 1,
       autosize: true,
-      autoFocus: true
+      autoFocus: true,
+      showCharacterCount: true
     })]
   })
 }
@@ -62,21 +59,21 @@ function R(e) {
   let {
     selectedDuration: t,
     onSelect: n
-  } = e, a = (0, j.Z)(), l = a[t];
+  } = e, l = (0, O.Z)(), a = l[t];
   return (0, r.jsxs)("div", {
-    className: P.duration,
+    className: x.duration,
     children: [(0, r.jsx)(d.Text, {
       variant: "text-md/medium",
       color: "header-secondary",
       tag: "label",
       "aria-hidden": true,
-      children: y.intl.string(y.t.bGHzxc)
+      children: w.intl.string(w.t.bGHzxc)
     }), (0, r.jsx)(d.PhF, {
-      "aria-label": y.intl.formatToPlainString(y.t.nXNHND, {
-        duration: l
+      "aria-label": w.intl.formatToPlainString(w.t.nXNHND, {
+        duration: a
       }),
-      className: P.durationSelect,
-      options: Object.entries(a).map(e => {
+      className: x.durationSelect,
+      options: Object.entries(l).map(e => {
         let [t, n] = e;
         return {
           label: n,
@@ -95,83 +92,81 @@ function R(e) {
   })
 }
 
-function k(e) {
+function E(e) {
   let {
     channel: t,
     transitionState: n,
-    onClose: l,
+    onClose: a,
     initialQuestion: p,
-    initialAnswers: j,
+    initialAnswers: O,
     initialDuration: C
   } = e;
   (0, m.Z)({
-    type: O.n.MODAL,
+    type: P.n.MODAL,
     name: o.z.POLL_EDITOR_VIEWED
   });
-  let A = a.useRef(null),
-    E = a.useRef([]),
-    D = a.useRef([]),
-    S = a.useRef(null),
-    I = a.useRef([]),
-    N = a.useCallback(e => {
-      var t, n, r, a;
+  let _ = l.useRef(null),
+    S = l.useRef([]),
+    D = l.useRef(null),
+    A = l.useCallback(e => {
+      var t, n;
       let {
-        indexToRemove: l,
-        numberOfAnswers: i
+        indexToRemove: r,
+        numberOfAnswers: l
       } = e;
-      i === x.gY + 1 ? null == (n = S.current) || null == (t = n.ref) || t.focus() : null == (a = I.current[l === i - 1 ? l - 1 : l + 1]) || null == (r = a.ref) || r.focus()
+      l === v.gY + 1 ? null == (t = D.current) || t.focus() : null == (n = S.current[r === l - 1 ? r - 1 : r + 1]) || n.focusDeleteButton()
     }, []),
     {
-      answers: T,
-      question: L,
-      allowMultiSelect: B,
-      setAllowMultiSelect: U,
-      duration: Z,
-      setDuration: Y,
-      handleQuestionChange: K,
-      handleAnswerTextChange: z,
-      handleEmojiSelect: M,
-      canAddMoreAnswers: W,
-      handleRemoveAnswerImage: F,
-      canRemoveMoreAnswers: q,
-      handleAddAnswer: H,
-      handleRemoveAnswer: G,
-      createPollError: X,
-      handleSubmitPoll: V,
-      fieldErrors: Q,
-      submitting: J,
-      shouldFocusOnInvalidField: $,
-      setShouldFocusOnInvalidField: ee
-    } = (0, h.Z)(t, l, N, {
+      answers: I,
+      question: N,
+      allowMultiSelect: L,
+      setAllowMultiSelect: T,
+      duration: U,
+      setDuration: Z,
+      handleQuestionChange: B,
+      handleAnswerTextChange: Y,
+      handleEmojiSelect: K,
+      canAddMoreAnswers: z,
+      handleRemoveAnswerImage: M,
+      canRemoveMoreAnswers: H,
+      handleAddAnswer: q,
+      handleRemoveAnswer: F,
+      createPollError: W,
+      handleSubmitPoll: G,
+      fieldErrors: X,
+      submitting: V,
+      shouldFocusOnInvalidField: Q,
+      setShouldFocusOnInvalidField: J
+    } = (0, j.Z)(t, a, A, {
       initialQuestion: p,
-      initialAnswers: j,
+      initialAnswers: O,
       initialDuration: C
     }),
     {
-      trackPollCreationCancelled: et
-    } = (0, v.l)(T, B),
-    en = a.useRef(T.length),
-    er = a.useCallback(() => {
-      et(), l()
-    }, [l, et]),
-    ea = a.useCallback(() => {
-      if (!(0, g.D$)(L, T)) return void f.Z.show({
-        title: y.intl.string(y.t.HMrgcn),
-        body: y.intl.string(y.t["Wxa/j4"]),
-        confirmColor: s.Tt.RED,
-        confirmText: y.intl.string(y.t.TzJA4u),
+      trackPollCreationCancelled: $
+    } = (0, h.l)(I, L),
+    ee = l.useRef(I.length),
+    et = l.useCallback(() => {
+      $(), a()
+    }, [a, $]),
+    en = l.useCallback(() => {
+      if (!(0, g.D$)(N, I)) return void f.Z.show({
+        title: w.intl.string(w.t.HMrgcn),
+        body: w.intl.string(w.t["Wxa/j4"]),
+        confirmColor: c.Tt.RED,
+        confirmText: w.intl.string(w.t.TzJA4u),
         confirmVariant: "critical-primary",
-        cancelText: y.intl.string(y.t["2BR5R0"]),
+        cancelText: w.intl.string(w.t["2BR5R0"]),
         onConfirm: () => {
-          er()
+          et()
         }
       });
-      er()
-    }, [er, T, L]);
-  a.useEffect(() => {
-    (0, d.oav)(x.$z, e => {
-      var n, a;
-      return (0, r.jsx)(k, (n = function(e) {
+      et()
+    }, [et, I, N]);
+  l.useEffect(() => {
+    (0, d.oav)(v.$z, e => {
+      var n, l;
+      return (0, r.jsx)(E, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -188,129 +183,116 @@ function k(e) {
           })
         }
         return e
-      }({}, e), a = a = {
+      }({}, e), l = l = {
         channel: t
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(a)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(a, e))
+      })(Object(l)).forEach(function(e) {
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
       }), n))
-    }, ea)
-  }, [ea, t]), a.useEffect(() => {
-    if (T.length > en.current) {
+    }, en)
+  }, [en, t]), l.useEffect(() => {
+    if (I.length > ee.current) {
       var e;
-      null == (e = D.current[T.length - 1]) || e.focus()
+      null == (e = S.current[I.length - 1]) || e.focusInput()
     }
-    en.current = T.length
-  }, [T.length]), a.useEffect(() => {
-    if ($) {
+    ee.current = I.length
+  }, [I.length]), l.useEffect(() => {
+    if (Q) {
       var e, t;
-      if ((null == Q ? true : Q.question) != null) null == (e = A.current) || e.focus();
+      if ((null == X ? true : X.question) != null) null == (e = _.current) || e.focus();
       else {
-        let e = T.findIndex(e => Q["answer-".concat(e.localCreationAnswerId)]);
-        false !== e && (null == (t = D.current[e]) || t.focus())
+        let e = I.findIndex(e => X["answer-".concat(e.localCreationAnswerId)]);
+        false !== e && (null == (t = S.current[e]) || t.focusInput())
       }
-      ee(false)
+      J(false)
     }
-  }, [Q, T, $, ee, D, E]);
-  let el = a.useCallback(() => {
-      n === d.Dvm.ENTERED && V()
-    }, [V, n]),
-    ei = (0, b.Z)({
-      disabled: J,
-      onSubmit: el
+  }, [X, I, Q, J, S]);
+  let er = l.useCallback(() => {
+      n === d.Dvm.ENTERED && G()
+    }, [G, n]),
+    el = (0, b.Z)({
+      disabled: V,
+      onSubmit: er
     }),
-    eo = a.useMemo(() => [{
+    ea = l.useMemo(() => [{
       variant: "primary",
-      onClick: el,
-      submitting: J,
-      text: y.intl.string(y.t.JOj8Zm)
-    }], [el, J]);
-  return (0, r.jsx)(c.Modal, {
+      onClick: er,
+      submitting: V,
+      text: w.intl.string(w.t.JOj8Zm)
+    }], [er, V]);
+  return (0, r.jsx)(s.Modal, {
     transitionState: n,
-    onClose: l,
-    title: y.intl.string(y.t["GD/8X1"]),
-    actions: eo,
+    onClose: a,
+    title: w.intl.string(w.t["GD/8X1"]),
+    actions: ea,
     actionBarInput: (0, r.jsx)(u.$q, {
-      className: P.checkbox,
+      className: x.checkbox,
       size: 24,
-      value: B,
-      onChange: (e, t) => U(t),
+      value: L,
+      onChange: (e, t) => T(t),
       children: (0, r.jsx)(d.Text, {
         variant: "text-md/medium",
         color: "interactive-active",
-        children: y.intl.string(y.t["Ux+iQU"])
+        children: w.intl.string(w.t["Ux+iQU"])
       })
     }),
     children: (0, r.jsxs)("div", {
-      className: P.content,
-      onKeyDown: ei,
-      children: [null != X && (0, r.jsx)(d.kzN, {
-        className: P.apiErrorBlock,
-        children: X.getAnyErrorMessage()
-      }), (0, r.jsx)(_, {
-        question: L,
-        onChange: K,
-        error: null == Q ? true : Q.question,
-        inputRef: A
+      className: x.content,
+      onKeyDown: el,
+      children: [null != W && (0, r.jsx)(d.kzN, {
+        className: x.apiErrorBlock,
+        children: W.getAnyErrorMessage()
+      }), (0, r.jsx)(k, {
+        question: N,
+        onChange: B,
+        error: null == X ? true : X.question,
+        inputRef: _
       }), (0, r.jsx)(d.LZC, {
         size: 26
       }), (0, r.jsxs)("fieldset", {
-        className: i()(P.answerInputsContainer, P.defaultContainer),
+        className: i()(x.answerInputsContainer, x.defaultContainer),
         children: [(0, r.jsx)(d.vwX, {
           tag: d.RB0.LEGEND,
-          children: y.intl.string(y.t.oMBfeX)
-        }), T.map((e, n) => (0, r.jsx)(w.Z, {
+          children: w.intl.string(w.t.oMBfeX)
+        }), I.map((e, n) => (0, r.jsx)(y.Z, {
           answer: e,
           channelId: t.id,
           index: n,
-          isLastAnswer: n === T.length - 1,
-          onEmojiSelect: M,
-          onEmojiRemove: F,
-          onAnswerTextChange: z,
-          onRemoveAnswer: G,
-          addAnswer: H,
-          submitPoll: el,
-          answerTextInputRefs: D,
-          error: null == Q ? true : Q["answer-".concat(e.localCreationAnswerId)],
-          canRemoveAnswer: q,
+          isLastAnswer: n === I.length - 1,
+          onEmojiSelect: K,
+          onEmojiRemove: M,
+          onAnswerTextChange: Y,
+          onRemoveAnswer: F,
+          addAnswer: q,
+          submitPoll: er,
+          answerRowRefs: S,
+          error: null == X ? true : X["answer-".concat(e.localCreationAnswerId)],
+          canRemoveAnswer: H,
           ref: e => {
-            E.current[n] = e
-          },
-          inputRef: e => {
-            D.current[n] = e
-          },
-          deleteButtonRef: e => {
-            I.current[n] = e
+            S.current[n] = e
           }
-        }, e.localCreationAnswerId)), W && (0, r.jsxs)(d.P3F, {
-          className: i()(P.addAnswerButtonDefault, {
-            [P.canRemoveMoreAnswers]: q
-          }),
-          onClick: W ? H : true,
-          "aria-label": y.intl.string(y.t.B2UvmZ),
-          ref: S,
-          children: [(0, r.jsx)(d.qJs, {
-            size: "md",
-            color: "currentColor",
-            className: P.addAnswerIconDefault
-          }), (0, r.jsx)(d.Text, {
-            variant: "text-md/normal",
-            color: "text-muted",
-            className: P.addAnswerButtonLabel,
-            children: y.intl.string(y.t.B2UvmZ)
-          })]
+        }, e.localCreationAnswerId)), z && (0, r.jsx)("div", {
+          className: x.addAnswerButton,
+          children: (0, r.jsx)(d.zxk, {
+            icon: d.qJs,
+            variant: "secondary",
+            onClick: q,
+            "aria-label": w.intl.string(w.t.B2UvmZ),
+            buttonRef: D,
+            text: w.intl.string(w.t.B2UvmZ)
+          })
         })]
       }), (0, r.jsx)(d.LZC, {
         size: 18
       }), (0, r.jsx)(R, {
-        selectedDuration: Z,
-        onSelect: Y
+        selectedDuration: U,
+        onSelect: Z
       })]
     })
   })

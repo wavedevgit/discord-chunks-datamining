@@ -1,12 +1,6 @@
 /** Chunk was on 68784 **/
 /** chunk id: 514271, original params: e,t,n (module,exports,require) **/
 module.exports = {
-  answerRow: "answerRow__7b848",
-  hasDeleteButton: "hasDeleteButton__7b848",
-  defaultTextInputWrapper: "defaultTextInputWrapper__7b848",
-  characterCount: "characterCount__7b848",
-  hasError: "hasError__7b848",
-  defaultTextInput: "defaultTextInput__7b848",
   expressionPickerButton: "expressionPickerButton__7b848",
   media: "media__7b848",
   editIcon: "editIcon__7b848",
@@ -18,7 +12,5 @@ module.exports = {
   gifDefault: "gifDefault__7b848",
   spinnerWrapper: "spinnerWrapper__7b848",
   spinnerWrapperDefault: "spinnerWrapperDefault__7b848 spinnerWrapper__7b848",
-  menuContainer: "menuContainer__7b848",
-  removeAnswerButtonDefault: "removeAnswerButtonDefault__7b848",
-  trashIcon: "trashIcon__7b848"
+  menuContainer: "menuContainer__7b848"
 }

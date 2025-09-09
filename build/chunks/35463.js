@@ -1,7 +1,7 @@
 /** Chunk was on 68784 **/
 /** chunk id: 35463, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => c
 }), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -9,18 +9,18 @@ var Chunk647438 = require("./647438.js"),
   Chunk117530 = require("./117530.js"),
   Chunk524100 = require("./524100.js");
 
-function s(e) {
+function c(e) {
   var t, n;
   let {
-    channelId: s,
-    localCreationAnswerId: c,
+    channelId: c,
+    localCreationAnswerId: s,
     image: u
-  } = e, d = null == u ? true : u.emoji, f = (null == u || null == (t = u.mediaAttachmentState) ? true : t.status) === o._.PREPARING, m = (0, a.e7)([i.Z], () => i.Z.getUpload(s, c, l.d.Poll)), [p, b] = r.useState(), [g, h] = r.useState("");
+  } = e, d = null == u ? true : u.emoji, f = (null == u || null == (t = u.mediaAttachmentState) ? true : t.status) === o._.PREPARING, m = (0, l.e7)([i.Z], () => i.Z.getUpload(c, s, a.d.Poll)), [p, b] = r.useState(), [g, j] = r.useState("");
   return r.useEffect(() => {
     var e;
     if ((null == m || null == (e = m.item) ? true : e.file) == null) return;
     let t = URL.createObjectURL(m.item.file);
-    return b(t), h(m.item.file.name), () => {
+    return b(t), j(m.item.file.name), () => {
       URL.revokeObjectURL(t)
     }
   }, [null == m || null == (n = m.item) ? true : n.file]), {

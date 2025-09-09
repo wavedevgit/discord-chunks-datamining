@@ -2,8 +2,8 @@
 /** chunk id: 316758, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   IV: () => o,
-  P: () => c,
-  fH: () => s,
+  P: () => s,
+  fH: () => c,
   xt: () => u
 });
 var Chunk166459 = require("./166459.js"),
@@ -12,29 +12,29 @@ var Chunk166459 = require("./166459.js"),
   Chunk398805 = require("./398805.js");
 async function o(e, t, n) {
   let r = (0, i.Yk)(t, n),
-    a = await fetch(n);
-  return s(e, t, new File([await a.blob()], r, {
+    l = await fetch(n);
+  return c(e, t, new File([await l.blob()], r, {
     type: "image/gif"
   })), n
 }
 
-function s(e, t, n) {
+function c(e, t, n) {
   let i = {
     id: t,
     channelId: e,
     file: n,
-    platform: a.ow.WEB,
+    platform: l.ow.WEB,
     origin: "unknown:poll_attachment"
   };
   r.Z.addFile({
     file: i,
     channelId: e,
-    draftType: l.d.Poll
+    draftType: a.d.Poll
   })
 }
-async function c(e, t, n) {
-  r.Z.remove(e, t, l.d.Poll)
+async function s(e, t, n) {
+  r.Z.remove(e, t, a.d.Poll)
 }
 async function u(e) {
-  r.Z.clearAll(e, l.d.Poll)
+  r.Z.clearAll(e, a.d.Poll)
 }

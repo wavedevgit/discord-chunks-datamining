@@ -108,7 +108,7 @@ function T(e) {
       guildId: n,
       channelId: i,
       index: l
-    }, e.id)), o && (0, r.jsx)(x.Z, {})]
+    }, e.type)), o && (0, r.jsx)(x.Z, {})]
   })
 }
 
