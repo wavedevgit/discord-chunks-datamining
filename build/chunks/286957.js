@@ -47,7 +47,7 @@ let a = {
       icon: Chunk481060.iFz
     },
     [Chunk379405._.LOOKING_FOR_GROUP]: {
-      getText: () => Chunk388032.intl.string(Chunk388032.t["8o9MNT"]),
+      getText: () => Chunk388032.intl.string(Chunk388032.t.DWWAAQ),
       icon: Chunk481060.iFz
     },
     [Chunk379405._.LOOKING_FOR_TIPS]: {
