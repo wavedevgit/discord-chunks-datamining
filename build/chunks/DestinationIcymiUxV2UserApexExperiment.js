@@ -2,12 +2,13 @@
 /** chunk id: 518929, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ji: () => o
+  Ji: () => s
 });
-var Chunk818083 = require("./818083.js");
+var Chunk818083 = require("./818083.js"),
+  Chunk427164 = require("./427164.js");
 require("./638395.js"), require("./171393.js");
 var Chunk987338 = require("./987338.js");
-let a = (0, Chunk818083.B)({
+let o = (0, Chunk818083.B)({
   kind: "user",
   id: "2024-07_icymi",
   label: "In-case-you-missed-it tab",
@@ -52,9 +53,9 @@ let a = (0, Chunk818083.B)({
   }]
 });
 
-function o(e) {
+function s(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-  return a.getCurrentConfig({
+  return o.getCurrentConfig({
     location: e
   }, {
     disable: true,
@@ -88,32 +89,45 @@ function o(e) {
       contentGenerationEnabled: true
     }
   }]
-}), (0, Chunk818083.B)({
+}), (0, Chunk427164.le)({
+  name: "2025-09-destination-icymi-ux-v2",
   kind: "user",
-  id: "2025-08_icymi_conversations",
-  label: "New conversations experience in ICYMI",
   defaultConfig: {
-    newConversationsEnabled: false
+    isNewHeaderAndInteractions: false,
+    shouldTruncateMessages: false,
+    isNewCardDesign: false,
+    isBottomSheetInteractions: false
   },
-  treatments: [{
-    id: 1,
-    label: "New conversations experience in ICYMI",
-    config: {
-      newConversationsEnabled: true
+  variations: {
+    1: {
+      isNewHeaderAndInteractions: true,
+      shouldTruncateMessages: false,
+      isNewCardDesign: false,
+      isBottomSheetInteractions: false
+    },
+    2: {
+      isNewHeaderAndInteractions: true,
+      shouldTruncateMessages: true,
+      isNewCardDesign: false,
+      isBottomSheetInteractions: false
+    },
+    3: {
+      isNewHeaderAndInteractions: true,
+      shouldTruncateMessages: true,
+      isNewCardDesign: true,
+      isBottomSheetInteractions: false
+    },
+    4: {
+      isNewHeaderAndInteractions: true,
+      shouldTruncateMessages: true,
+      isNewCardDesign: false,
+      isBottomSheetInteractions: true
+    },
+    5: {
+      isNewHeaderAndInteractions: true,
+      shouldTruncateMessages: true,
+      isNewCardDesign: true,
+      isBottomSheetInteractions: true
     }
-  }]
-}), (0, Chunk818083.B)({
-  kind: "user",
-  id: "2025-08_icymi_ux_refresh",
-  label: "UX refresh in ICYMI",
-  defaultConfig: {
-    newUXEnabled: false
-  },
-  treatments: [{
-    id: 1,
-    label: "UX refresh in ICYMI",
-    config: {
-      newUXEnabled: true
-    }
-  }]
+  }
 })

@@ -9,16 +9,16 @@ let r = (0, require("./427164.js").le)({
   kind: "user",
   defaultConfig: {
     enabled: false,
-    force: false
+    installStartup: false
   },
   variations: {
     1: {
       enabled: true,
-      force: false
+      installStartup: false
     },
     2: {
       enabled: true,
-      force: true
+      installStartup: true
     }
   }
 })
