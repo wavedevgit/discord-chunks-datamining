@@ -52,7 +52,7 @@ let P = [{
   }
 }];
 
-function I(e) {
+function R(e) {
   let {
     actionLog: t
   } = e, n = r.useMemo(() => t.traces.map(e => ({
@@ -105,13 +105,13 @@ let k = [{
     let {
       actionLog: t
     } = e;
-    return (0, a.jsx)(I, {
+    return (0, a.jsx)(R, {
       actionLog: t
     })
   }
 }];
 
-function R(e) {
+function I(e) {
   let {
     actionLog: t,
     initialHeight: n
@@ -287,7 +287,7 @@ function A() {
       data: Chunk981631,
       selectedRowKey: null == Chunk55935 ? true : Chunk55935.id.toString(),
       onClickRow: e => j(e.actionLog)
-    }), null != Chunk55935 && (0, Chunk951288.jsx)(R, {
+    }), null != Chunk55935 && (0, Chunk951288.jsx)(I, {
       actionLog: Chunk55935,
       initialHeight: null != module.current ? module.current.clientHeight / 2 : 300
     })]

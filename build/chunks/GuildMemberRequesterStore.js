@@ -104,6 +104,9 @@ class b extends(r = Chunk442837.ZP.Store) {
   requestMember(e, t) {
     p(e, t)
   }
+  getDebugState(e) {
+    return u.getDebugState(e)
+  }
 }
 c(b, "displayName", "GuildMemberRequesterStore");
 let y = new b(Chunk570140.Z, {

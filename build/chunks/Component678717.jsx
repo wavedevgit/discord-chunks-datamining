@@ -119,7 +119,7 @@ function eu(e) {
       id: "quick_actions",
       name: "Quick Actions",
       group: el.v0.DEVELOPMENT,
-      render: () => (0, a.jsx)(X.Z, {})
+      render: () => (0, a.jsx)(q.Z, {})
     }), e.push({
       id: "end_to_end_encryption",
       name: "E2EE",
@@ -139,7 +139,7 @@ function eu(e) {
       id: "overlay",
       name: "Overlay v3",
       group: el.v0.GAMES,
-      render: () => (0, a.jsx)(G.Z, {})
+      render: () => (0, a.jsx)(z.Z, {})
     }), e.push({
       id: "slayer_sdk",
       name: "Slayer SDK",
@@ -149,7 +149,7 @@ function eu(e) {
       id: "quick_switcher",
       name: "Quick Switcher",
       group: el.v0.USERS,
-      render: () => (0, a.jsx)(q.Z, {})
+      render: () => (0, a.jsx)(X.Z, {})
     })), e.push({
       id: "rive",
       name: "Rive",
@@ -186,7 +186,7 @@ function eu(e) {
       id: "messaging",
       name: "Messaging",
       group: el.v0.USERS,
-      render: () => (0, a.jsx)(F.Z, {})
+      render: () => (0, a.jsx)(U.Z, {})
     }), e.push({
       id: "reporting",
       name: "Reporting",
@@ -203,7 +203,7 @@ function eu(e) {
       id: "modals",
       name: "Modals",
       group: el.v0.UI,
-      render: () => (0, a.jsx)(U.Z, {})
+      render: () => (0, a.jsx)(F.Z, {})
     }), e.push({
       id: "layers",
       name: "Layers",
@@ -248,7 +248,7 @@ function eu(e) {
       id: "offers",
       name: "Offers",
       group: el.v0.PREMIUM,
-      render: () => (0, a.jsx)(z.Z, {})
+      render: () => (0, a.jsx)(G.Z, {})
     }), e.push({
       id: "payments",
       name: "Payments",
@@ -263,12 +263,12 @@ function eu(e) {
       id: "fractional_nitro",
       name: "Fractional Nitro",
       group: el.v0.PREMIUM,
-      render: () => (0, a.jsx)(I.Z, {})
+      render: () => (0, a.jsx)(R.Z, {})
     })), e.push({
       id: "gifting_intent",
       name: "Gifting Intent",
       group: el.v0.PREMIUM,
-      render: () => (0, a.jsx)(R.Z, {})
+      render: () => (0, a.jsx)(I.Z, {})
     }), e.push({
       id: "voice_filters",
       name: "Voice Filters",

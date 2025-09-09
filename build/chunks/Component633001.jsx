@@ -80,7 +80,7 @@ function K(e, t) {
 }
 let Y = {
     [Chunk981631.Odu.CLICK_ZONE_DEBUG]: e => K(W({
-      type: z.Odu.CLICK_ZONE_DEBUG,
+      type: G.Odu.CLICK_ZONE_DEBUG,
       id: (0, c.Z)(),
       layoutId: e,
       anchor: {
@@ -91,11 +91,11 @@ let Y = {
         width: 100,
         height: 100
       }
-    }, S.Z.getWidgetDefaultSettings(z.Odu.CLICK_ZONE_DEBUG)), {
+    }, S.Z.getWidgetDefaultSettings(G.Odu.CLICK_ZONE_DEBUG)), {
       pinned: true
     }),
     [Chunk981631.Odu.PERFORMANCE_DEBUG]: e => K(W({
-      type: z.Odu.PERFORMANCE_DEBUG,
+      type: G.Odu.PERFORMANCE_DEBUG,
       id: (0, c.Z)(),
       layoutId: e,
       anchor: {
@@ -107,13 +107,13 @@ let Y = {
         width: "auto",
         height: "auto"
       }
-    }, S.Z.getWidgetDefaultSettings(z.Odu.PERFORMANCE_DEBUG)), {
+    }, S.Z.getWidgetDefaultSettings(G.Odu.PERFORMANCE_DEBUG)), {
       pinned: true
     })
   },
-  X = {};
+  q = {};
 
-function q(e) {
+function X(e) {
   let {
     id: t
   } = e, [n, l] = r.useState(false);
@@ -160,7 +160,7 @@ let J = Chunk647438.memo(function(e) {
       }), null != t.applicationId && (0, a.jsx)(m.Text, {
         variant: "text-md/bold",
         color: "text-primary",
-        children: (0, a.jsx)(q, {
+        children: (0, a.jsx)(X, {
           id: t.applicationId
         })
       }), (0, a.jsxs)(m.Text, {
@@ -239,7 +239,7 @@ let J = Chunk647438.memo(function(e) {
   $ = Chunk647438.memo(function(e) {
     let {
       pid: t
-    } = e, n = (0, d.cj)([I.default], () => I.default.getOverlayPIDStatuses()), r = (0, d.cj)([_.default], () => _.default.getTrackedGames()), l = (0, d.e7)([I.default], () => I.default.isInputLocked(t), [t]), i = (0, d.e7)([I.default], () => I.default.DEV_isInputLockedV3(t), [t]), s = (0, d.e7)([I.default], () => I.default.DEV_isInputLocked(t), [t]), o = (0, d.e7)([I.default], () => I.default.isReady(t), [t]);
+    } = e, n = (0, d.cj)([R.default], () => R.default.getOverlayPIDStatuses()), r = (0, d.cj)([_.default], () => _.default.getTrackedGames()), l = (0, d.e7)([R.default], () => R.default.isInputLocked(t), [t]), i = (0, d.e7)([R.default], () => R.default.DEV_isInputLockedV3(t), [t]), s = (0, d.e7)([R.default], () => R.default.DEV_isInputLocked(t), [t]), o = (0, d.e7)([R.default], () => R.default.isReady(t), [t]);
     return (0, a.jsxs)("div", {
       className: V.panelGroup,
       children: [(0, a.jsx)(m.Text, {
@@ -301,13 +301,13 @@ let J = Chunk647438.memo(function(e) {
   });
 
 function Q(e) {
-  let t, n = (t = Object.values((0, d.Wu)([S.Z], () => S.Z.getWidgetsForLayout(G.$S))), t.find(t => t.type === e));
+  let t, n = (t = Object.values((0, d.Wu)([S.Z], () => S.Z.getWidgetsForLayout(z.$S))), t.find(t => t.type === e));
   return [n, () => {
     if (null != n)(0, x.E9)(n.id);
     else {
       let t = Y[e];
       if (null == t) return;
-      let n = t(G.$S);
+      let n = t(z.$S);
       (0, x.A4)(n)
     }
   }]
@@ -339,7 +339,7 @@ let et = Chunk647438.memo(function(e) {
     var e, n;
     if (null == t) return "Unknown";
     let a = null == (e = _.default.getTrackedGameByPid(t)) ? true : e.gameName;
-    return null != a ? (X[t] = a, a) : null != (n = X[t]) ? n : "Unknown"
+    return null != a ? (q[t] = a, a) : null != (n = q[t]) ? n : "Unknown"
   }, [t]);
   return (0, a.jsx)(m.Text, K(W({}, n), {
     variant: "text-md/semibold",
@@ -829,7 +829,7 @@ let eu = [{
     let {
       timestamp: t
     } = e;
-    return (0, R.vc)(o()(t), "h:mm:ss.SSS")
+    return (0, I.vc)(o()(t), "h:mm:ss.SSS")
   }
 }];
 
@@ -915,8 +915,8 @@ let eh = ["__webpack_require__", "fn"],
             copyValue: f.toISOString(),
             children: (0, a.jsx)("time", {
               dateTime: f.toISOString(),
-              title: (0, R.vc)(f, "LLLL"),
-              children: (0, R.vc)(f, "L h:mm:ss.SSS")
+              title: (0, I.vc)(f, "LLLL"),
+              children: (0, I.vc)(f, "L h:mm:ss.SSS")
             })
           }), (0, a.jsx)(L.Z9, {
             name: "Log Type",
@@ -1013,7 +1013,7 @@ function eb() {
       clearTimeout(module)
     }
   }, []);
-  let [I, R] = Chunk647438.useState(false), w = Chunk647438.useRef(null), A = Chunk647438.useCallback(() => {
+  let [R, I] = Chunk647438.useState(false), w = Chunk647438.useRef(null), A = Chunk647438.useCallback(() => {
     (0, Chunk572004.JG)(JSON.stringify(module)), Chunk55935(true)
   }, [module]);
   return Chunk647438.useEffect(() => {

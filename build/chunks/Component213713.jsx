@@ -130,8 +130,8 @@ function A() {
       let [t] = e;
       return t
     }),
-    F = (0, Chunk835473.Z)(M).filter(Chunk823379.lm),
-    U = (0, Chunk442837.e7)([Chunk550532.Z], () => Chunk550532.Z.getFakeGameToShow());
+    U = (0, Chunk835473.Z)(M).filter(Chunk823379.lm),
+    F = (0, Chunk442837.e7)([Chunk550532.Z], () => Chunk550532.Z.getFakeGameToShow());
   return (0, Chunk951288.jsx)("div", {
     className: Chunk451429.panel,
     children: (0, Chunk951288.jsxs)(Chunk481060.zJl, {
@@ -215,7 +215,7 @@ function A() {
           error: Chunk755721.length > 0 && null == L ? "No game profile for ".concat(null != A ? A : Chunk755721 + " - try by id", ".") : true,
           successMessage: null != L ? "Game profile found" : true
         }), (0, Chunk951288.jsx)("ul", {
-          children: F.map(e => (0, a.jsx)("li", {
+          children: U.map(e => (0, a.jsx)("li", {
             children: (0, a.jsx)(D, {
               application: e
             })
@@ -232,7 +232,7 @@ function A() {
             label: e,
             value: e
           })),
-          isSelected: e => e === U,
+          isSelected: e => e === F,
           select: function(e) {
             p.Z.dispatch({
               type: "CONTENT_INVENTORY_FORCE_SHOW_GAME_SHARING",

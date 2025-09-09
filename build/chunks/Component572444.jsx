@@ -105,9 +105,9 @@ function _() {
     krispModels: O,
     krispModelOverride: S,
     inputMode: P,
-    echoCancellation: I,
+    echoCancellation: R,
     autoThreshold: k,
-    vadUseKrisp: R,
+    vadUseKrisp: I,
     vadKrispActivationThreshold: w,
     noiseCancellation: Z,
     noiseSuppression: A,
@@ -127,23 +127,23 @@ function _() {
     noiseSuppressionSupported: Chunk131951.Z.isNoiseSuppressionSupported(),
     noiseCancellationSupported: Chunk131951.Z.isNoiseCancellationSupported(),
     noiseCancellationEnableStats: Chunk131951.Z.getKrispEnableStats()
-  })), F = Z ? "KRISP" : A ? "STANDARD" : "NONE", U = (0, Chunk304809.N)(), z = Chunk647438.useCallback(() => {
+  })), U = Z ? "KRISP" : A ? "STANDARD" : "NONE", F = (0, Chunk304809.N)(), G = Chunk647438.useCallback(() => {
     var e;
     null == (e = C.current) || module.stop(), C.current = null, y(null)
   }, []);
 
-  function G() {
+  function z() {
     Chunk131951.Z.getMediaEngine().stopRecordingRawSamples()
   }
 
   function B(e) {
-    if (t && G(), z(), null == U) return;
-    let n = U.createBufferSource();
-    n.buffer = e.audioBuffer, N.current = U.createGain(), N.current.gain.value = E, n.connect(N.current), N.current.connect(U.destination), n.loop = true, n.start(), C.current = n, y(e)
+    if (t && z(), G(), null == F) return;
+    let n = F.createBufferSource();
+    n.buffer = e.audioBuffer, N.current = F.createGain(), N.current.gain.value = E, n.connect(N.current), N.current.connect(F.destination), n.loop = true, n.start(), C.current = n, y(e)
   }
   Chunk647438.useEffect(() => {
-    z()
-  }, [z]);
+    G()
+  }, [G]);
   let V = [];
   return L && V.push({
     label: "Krisp",
@@ -172,14 +172,14 @@ function _() {
         title: "Noise Cancellation",
         tag: Chunk481060.RB0.H3,
         children: (0, Chunk951288.jsx)(Chunk481060.q4e, {
-          value: F,
+          value: U,
           onChange: e => {
             d.Z.setNoiseCancellation("KRISP" === e), d.Z.setNoiseSuppression("STANDARD" === e)
           },
           options: V,
           popoutLayerContext: Chunk246992.O$
         })
-      }), "KRISP" === F && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      }), "KRISP" === U && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk481060.hjN, {
           title: "Krisp Suppression Level",
           tag: Chunk481060.RB0.H3,
@@ -235,13 +235,13 @@ function _() {
             tag: Chunk481060.RB0.H3,
             children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
               hideBorder: true,
-              value: R,
+              value: I,
               onChange: e => d.Z.setMode(f.pM.VOICE_ACTIVITY, {
                 vadUseKrisp: e
               }),
               children: "Use Krisp VAD"
             })
-          }), R && (0, Chunk951288.jsx)(Chunk481060.hjN, {
+          }), I && (0, Chunk951288.jsx)(Chunk481060.hjN, {
             title: "Krisp VAD Activation Threshold",
             tag: Chunk481060.RB0.H3,
             children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
@@ -258,7 +258,7 @@ function _() {
         tag: Chunk481060.RB0.H3,
         children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
           hideBorder: true,
-          value: I,
+          value: R,
           onChange: e => d.Z.setEchoCancellation(e),
           children: "Echo Cancellation"
         })
@@ -267,8 +267,8 @@ function _() {
         tag: Chunk481060.RB0.H3,
         children: (0, Chunk951288.jsx)(Chunk755721.zx, {
           color: exports ? Chunk755721.zx.Colors.RED : Chunk755721.zx.Colors.BRAND,
-          onClick: exports ? G : function() {
-            z(), require(true), Chunk846027.Z.setLoopback("krisp_test", true), Chunk131951.Z.getMediaEngine().startRecordingRawSamples((t, a, r) => {
+          onClick: exports ? z : function() {
+            G(), require(true), Chunk846027.Z.setLoopback("krisp_test", true), Chunk131951.Z.getMediaEngine().startRecordingRawSamples((t, a, r) => {
               n(false), d.Z.setLoopback("krisp_test", false);
               let l = new AudioBuffer({
                 length: t.length,
@@ -284,8 +284,8 @@ function _() {
                 inputName: e,
                 audioBuffer: l,
                 createdAt: Date.now(),
-                suppression: F,
-                echoCancellation: I,
+                suppression: U,
+                echoCancellation: R,
                 krispSuppressionLevel: g
               }])
             })
@@ -310,7 +310,7 @@ function _() {
           recording: e,
           playing: e === _,
           onPlay: B,
-          onStop: z
+          onStop: G
         }, t))
       })]
     })

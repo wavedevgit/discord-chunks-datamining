@@ -2,13 +2,14 @@
 /** chunk id: 305347, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ft: () => _,
-  R$: () => f
+  Ft: () => p,
+  R$: () => _,
+  ZP: () => h
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
+  Chunk120356 = require("./120356.js"),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk686546 = require("./686546.jsx"),
   Chunk451478 = require("./451478.js"),
@@ -16,61 +17,77 @@ var Chunk120356 = require("./120356.js"),
   Chunk624138 = require("./624138.js"),
   Chunk272714 = require("./272714.js");
 
-function f(e) {
+function _(e) {
   let {
     guildName: t,
     iconSize: n,
     className: i
-  } = e, o = (0, u.Zg)(t);
-  return (0, r.jsx)(s.ZP, {
-    mask: s.ZP.Masks.CLAN_ICON,
+  } = e, a = (0, d.Zg)(t);
+  return (0, r.jsx)(l.ZP, {
+    mask: l.ZP.Masks.CLAN_ICON,
     width: n,
     height: n,
     className: i,
     children: (0, r.jsx)("div", {
-      className: a()(d.guildIconImage, d.acronym),
-      children: o
+      className: o()(f.guildIconImage, f.acronym),
+      children: a
     })
   })
 }
 
-function _(e) {
+function p(e) {
   let {
     guildId: t,
     guildName: n,
     guildIcon: i,
-    iconSize: f,
+    iconSize: a,
     className: _,
     acronymClassName: p,
     animate: h
-  } = e, m = (0, o.e7)([l.Z], () => l.Z.isFocused()), g = (0, c.pU)(i) ? i : c.ZP.getGuildIconURL({
+  } = e, m = (0, s.e7)([c.Z], () => c.Z.isFocused()), g = (0, u.pU)(i) ? i : u.ZP.getGuildIconURL({
     id: t,
     icon: i,
-    size: f,
+    size: a,
     canAnimate: h && m
   });
   if (null == g) {
-    let e = (0, u.Zg)(n);
-    return (0, r.jsx)(s.ZP, {
-      mask: s.ZP.Masks.CLAN_ICON,
-      width: f,
-      height: f,
+    let e = (0, d.Zg)(n);
+    return (0, r.jsx)(l.ZP, {
+      mask: l.ZP.Masks.CLAN_ICON,
+      width: a,
+      height: a,
       className: _,
       children: (0, r.jsx)("div", {
-        className: a()(d.guildIconImage, d.acronym, p),
+        className: o()(f.guildIconImage, f.acronym, p),
         children: e
       })
     })
   }
-  return (0, r.jsx)(s.ZP, {
-    mask: s.ZP.Masks.CLAN_ICON,
-    width: f,
-    height: f,
+  return (0, r.jsx)(l.ZP, {
+    mask: l.ZP.Masks.CLAN_ICON,
+    width: a,
+    height: a,
     className: _,
     children: (0, r.jsx)("img", {
       src: g,
       alt: n,
-      className: d.guildIconImage
+      className: f.guildIconImage
     })
   })
 }
+let h = Chunk647438.memo(function(e) {
+  let {
+    guild: t,
+    iconSize: n,
+    className: i,
+    animate: a
+  } = e;
+  return (0, r.jsx)(p, {
+    guildName: t.name,
+    guildId: t.id,
+    guildIcon: t.icon,
+    iconSize: n,
+    className: i,
+    animate: a
+  })
+})

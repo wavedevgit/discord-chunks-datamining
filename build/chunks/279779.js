@@ -162,6 +162,27 @@ class A extends Chunk147913.Z {
     if (null == n) throw Error("SearchContextManager: No webworker initialized");
     return new S(n, e, t)
   }
+  requestDebugState() {
+    this.initialize();
+    let {
+      _worker: e
+    } = this;
+    return null == module ? Promise.resolve(null) : new Promise(t => {
+      let n = (0, a.Z)(),
+        r = i => {
+          let a = i.data;
+          if (null != a && "DEBUG_STATE" === a.type && a.uuid === n) try {
+            t(a.payload)
+          } finally {
+            e.removeEventListener("message", r, false)
+          }
+        };
+      e.addEventListener("message", r, false), e.postMessage({
+        type: "REQUEST_DEBUG_STATE",
+        uuid: n
+      })
+    })
+  }
   constructor(...e) {
     super(...e), b(this, "_worker", true), b(this, "actions", {
       LOGOUT: () => this._handleLogout(),
