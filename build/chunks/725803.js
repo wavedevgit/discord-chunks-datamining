@@ -13,25 +13,25 @@ function o(A, e) {
   let t = (0, r.e7)([i.Z], () => i.Z.getGuildApplication(A, e)),
     [o, s] = n.useState(null == t),
     [d, c] = n.useState(),
-    [u, g] = n.useState(false),
-    f = n.useCallback(async () => {
+    [u, f] = n.useState(false),
+    g = n.useCallback(async () => {
       if (null == t && null != A) {
-        g(true), s(true);
+        f(true), s(true);
         try {
-          await a.ZP.getApplicationsForGuild(A, {
+          await l.ZP.getApplicationsForGuild(A, {
             type: e,
             includeTeam: true
           })
         } catch (A) {
-          c(new l.Hx(A))
+          c(new a.Hx(A))
         } finally {
           s(false)
         }
       }
     }, [t, e, A]);
   return n.useEffect(() => {
-    u || f()
-  }, [u, f]), {
+    u || g()
+  }, [u, g]), {
     application: t,
     error: d,
     loading: o

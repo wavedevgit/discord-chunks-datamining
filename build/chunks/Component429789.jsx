@@ -31,7 +31,6 @@ function p() {
     setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_ATTENUATION,
     children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
       id: _,
-      tag: Chunk481060.RB0.H5,
       className: Chunk197571.marginBottom8,
       children: Chunk388032.intl.string(Chunk388032.t.oSdBvb)
     }), (0, Chunk951288.jsx)(Chunk481060.iRW, {

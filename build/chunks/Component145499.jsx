@@ -85,7 +85,7 @@ let w = e => {
       location: i
     } = (0, u.O)(), {
       canCreateExpressions: l
-    } = (0, h.XJ)(t);
+    } = (0, f.XJ)(t);
     return (0, r.jsx)(c.zxk, {
       variant: "primary",
       size: "sm",
@@ -174,7 +174,7 @@ let w = e => {
           {
             canCreateExpressions: C,
             canManageGuildExpression: w
-          } = (0, h.Gw)(t),
+          } = (0, f.Gw)(t),
           M = _[O - 1],
           G = null != M ? (0, v.A3)(M.tier) : 0,
           U = (0, v.A3)(x.tier, t),
@@ -182,13 +182,13 @@ let w = e => {
           F = u.slice(G, U),
           H = F.length > 0,
           z = A < x.tier,
-          W = (i = u.length, i < (0, v.A3)(E.Eu4.NONE) ? E.Eu4.NONE : i < (0, v.A3)(E.Eu4.TIER_1) ? E.Eu4.TIER_1 : i < (0, v.A3)(E.Eu4.TIER_2) ? E.Eu4.TIER_2 : i < (0, v.A3)(E.Eu4.TIER_3) || null != t && t.features.has(E.oNc.MORE_STICKERS) && i < d.D.MAX_STICKER_SLOTS ? E.Eu4.TIER_3 : E.Eu4.NONE),
-          V = C && !z && W === x.tier && U !== F.length,
-          K = V || F.length > 0,
+          V = (i = u.length, i < (0, v.A3)(E.Eu4.NONE) ? E.Eu4.NONE : i < (0, v.A3)(E.Eu4.TIER_1) ? E.Eu4.TIER_1 : i < (0, v.A3)(E.Eu4.TIER_2) ? E.Eu4.TIER_2 : i < (0, v.A3)(E.Eu4.TIER_3) || null != t && t.features.has(E.oNc.MORE_STICKERS) && i < d.D.MAX_STICKER_SLOTS ? E.Eu4.TIER_3 : E.Eu4.NONE),
+          W = C && !z && V === x.tier && U !== F.length,
+          K = W || F.length > 0,
           Y = U - G,
           q = n(872732),
           X = B - F.length,
-          Q = V ? Math.min(5 - (F.length + 0) % 5, X) : 0,
+          Q = W ? Math.min(5 - (F.length + 0) % 5, X) : 0,
           J = [];
         for (let e = 0; e < Q; e++) J.push((0, r.jsx)(R, {}, "placeholder-".concat(e)));
         let $ = t.premiumTier < x.tier && D >= E.oCV[x.tier],
@@ -211,10 +211,10 @@ let w = e => {
           en = false;
         $ && (k ? (et = () => {
           let e = I.Cp[x.tier];
-          null != e && (0, f.H6)(t.id, e)
+          null != e && (0, h.H6)(t.id, e)
         }, ee = S.intl.string(S.t.g7lkra), t.premiumTier + 1 !== x.tier && (en = true, l = S.intl.string(S.t.mTMkY2))) : (en = true, l = S.intl.string(S.t.hwPEJS)));
-        let er = W === O + 1 && W > A,
-          ei = V || er || O > A;
+        let er = V === O + 1 && V > A,
+          ei = W || er || O > A;
         return er ? s = (0, r.jsx)(g.Z, {
           guild: t,
           size: o.zx.Sizes.SMALL,
@@ -227,7 +227,7 @@ let w = e => {
             object: E.qAy.BOOST_UPSELL_NEXT_LEVEL_HEADER,
             objectType: (0, v.ge)(x.tier)
           }
-        }) : V && (s = (0, r.jsx)(Z, {
+        }) : W && (s = (0, r.jsx)(Z, {
           guild: t
         })), (0, r.jsxs)(N.Z, {
           subscriptionCount: L,
@@ -246,7 +246,7 @@ let w = e => {
               sticker: e,
               canManageSticker: w(e)
             }, e.id)), J]
-          }), !z && !V && 0 === F.length && (0, r.jsx)("div", {
+          }), !z && !W && 0 === F.length && (0, r.jsx)("div", {
             className: a()(T.emptyTierWrapper, T.unusedTierWrapper),
             children: (0, r.jsx)(c.Text, {
               variant: "text-md/normal",

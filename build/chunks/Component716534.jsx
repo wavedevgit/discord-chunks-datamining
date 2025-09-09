@@ -330,7 +330,6 @@ function Q(e) {
         trialEnd: null == ey ? true : ey.currentPeriodEnd
       })
     }), !em && "" !== tc && (0, r.jsx)(f.vwX, {
-      tag: f.RB0.H5,
       children: tc
     }), eJ && null != eL && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(G.Z, {
@@ -344,11 +343,9 @@ function Q(e) {
     }), Q, (0, r.jsxs)("div", {
       className: q.paymentSourceWrapper,
       children: [em ? (0, r.jsx)(f.vwX, {
-        tag: f.RB0.H5,
         className: q.formTitle,
         children: z.intl.string(z.t["YH7B+P"])
       }) : (0, r.jsx)(f.vwX, {
-        tag: f.RB0.H5,
         children: z.intl.string(z.t.mmDvV1)
       }), (0, r.jsx)(h.ZP, {
         paymentSources: Object.values(ee),
@@ -374,7 +371,6 @@ function Q(e) {
         currencies: en,
         className: q.currencyWrapper,
         children: [(0, r.jsx)(f.vwX, {
-          tag: f.RB0.H5,
           children: z.intl.string(z.t["/AAR09"])
         }), (0, r.jsx)(_.Z, {
           selectedCurrency: et.currency,

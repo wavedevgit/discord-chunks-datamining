@@ -1,5 +1,5 @@
 /** Chunk was on 94566 **/
-/** chunk id: 965072, original params: t,e,n (module,exports,require) **/
+/** chunk id: 965072, original params: t,e,a (module,exports,require) **/
 require.d(exports, {
   default: () => p
 }), require("./388685.js");
@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
 function p(t) {
   let {
     transitionState: e,
-    onFormSubmit: n,
+    onFormSubmit: a,
     onResend: p,
     onSuccess: y,
     onClose: d,
@@ -23,32 +23,32 @@ function p(t) {
     confirmButtonText: g,
     confirmButtonVariant: T = "primary",
     impression: f
-  } = t, [m, x] = a.useState(false), [S, w] = a.useState(""), [k, C] = a.useState(false), [b, j] = a.useState(null), v = a.useRef(null), E = async t => {
-    t.preventDefault(), j(null), x(true);
+  } = t, [m, S] = s.useState(false), [w, x] = s.useState(""), [b, k] = s.useState(false), [C, v] = s.useState(null), E = s.useRef(null), j = async t => {
+    t.preventDefault(), v(null), S(true);
     try {
-      let t = await n(S);
+      let t = await a(w);
       null != y && y(t), d()
     } catch (t) {
-      j(new o.Z(t).getAnyErrorMessage())
+      v(new o.Z(t).getAnyErrorMessage())
     } finally {
-      x(false)
+      S(false)
     }
   }, A = async () => {
-    if (!k) {
-      C(true);
+    if (!b) {
+      k(true);
       try {
         await p(), (0, l.showToast)((0, l.createToast)(c.intl.string(c.t["84yeo6"]), l.ToastType.SUCCESS))
       } catch (e) {
         let t = new o.Z(e).getAnyErrorMessage();
         null != t && (0, l.showToast)((0, l.createToast)(t, l.ToastType.FAILURE))
       } finally {
-        C(false)
+        k(false)
       }
     }
-  }, R = m || k;
-  return (0, s.jsx)("form", {
-    onSubmit: E,
-    children: (0, s.jsx)(r.I, {
+  }, R = m || b;
+  return (0, n.jsx)("form", {
+    onSubmit: j,
+    children: (0, n.jsx)(r.I, {
       transitionState: e,
       trackingProps: {
         impression: f,
@@ -72,17 +72,15 @@ function p(t) {
         type: "submit"
       }],
       onClose: d,
-      children: (0, s.jsxs)(l.Kqy, {
+      children: (0, n.jsxs)(l.Kqy, {
         gap: 8,
-        children: [(0, s.jsx)(l.xJW, {
-          title: c.intl.string(c.t["8mZX6O"]),
-          error: b,
-          children: (0, s.jsx)(l.oil, {
-            value: S,
-            onChange: w,
-            inputRef: v
-          })
-        }), (0, s.jsx)(l.Text, {
+        children: [(0, n.jsx)(l.oil, {
+          label: c.intl.string(c.t["8mZX6O"]),
+          error: C,
+          value: w,
+          onChange: x,
+          inputRef: E
+        }), (0, n.jsx)(l.Text, {
           variant: "text-sm/normal",
           children: c.intl.format(c.t.P0sak5, {
             onResend: A

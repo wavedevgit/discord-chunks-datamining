@@ -31,7 +31,6 @@ class y extends Chunk647438.PureComponent {
       className: Chunk264815.container,
       children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
         id: m,
-        tag: Chunk481060.RB0.H5,
         className: Chunk264815.title,
         children: Chunk388032.intl.string(Chunk388032.t.OVovCQ)
       }), (0, Chunk951288.jsx)("div", {

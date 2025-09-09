@@ -44,7 +44,7 @@ function g(e) {
     label: s.intl.formatToPlainString(s.t.xCjYxM, {
       hours: 1
     })
-  }], []), h = i.useCallback(e => {
+  }], []), f = i.useCallback(e => {
     a.Z.updateGuild({
       afkTimeout: parseInt(e, 10)
     })
@@ -53,6 +53,6 @@ function g(e) {
     value: null == n ? null : "".concat(n),
     options: p,
     isDisabled: null == g || !t,
-    onChange: h
+    onChange: f
   })
 }

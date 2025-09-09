@@ -44,7 +44,7 @@ function b(e) {
     }) : null,
     disabled: !x,
     onChange: v,
-    hint: h.intl.string(h.t.uPvxqK),
+    hint: f.intl.string(f.t.uPvxqK),
     enabled: x,
     maxFileSizeBytes: p.B,
     onFileSizeError: () => (0, s.Z)(p.B)
@@ -52,7 +52,7 @@ function b(e) {
   return b ? O : (0, r.jsx)(l.P3F, {
     "aria-hidden": true,
     tabIndex: false,
-    className: f.upsell,
+    className: h.upsell,
     onClick: _,
     children: O
   })

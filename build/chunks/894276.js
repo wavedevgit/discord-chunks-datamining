@@ -41,8 +41,7 @@ class u {
     })
   }
   constructor(e, t) {
-    var n;
-    s(this, "id", true), s(this, "inner", true), s(this, "cachedConfig", true), s(this, "legacyExperiment", true), this.id = e, this.inner = null, this.cachedConfig = c, l.push(this), this.legacyExperiment = null != (n = null == t ? true : t.legacyExperiment) && n
+    s(this, "id", true), s(this, "inner", true), s(this, "cachedConfig", true), this.id = e, this.inner = null, this.cachedConfig = c, l.push(this)
   }
 }
 class d extends u {
@@ -70,14 +69,11 @@ class d extends u {
   }
   getTreatments() {
     return [{
-      treatmentId: 0,
-      label: "Use typescript as the source of truth"
+      treatmentId: 0
     }, {
-      treatmentId: 1,
-      label: "Typescript <-> libdiscore Dual Read, Typescript is the source of truth"
+      treatmentId: 1
     }, {
-      treatmentId: 2,
-      label: "Use libdiscore as the source of truth"
+      treatmentId: 2
     }]
   }
   constructor(e, t, n, r) {
@@ -90,17 +86,13 @@ class f extends u {
   }
   getTreatments() {
     return [{
-      treatmentId: 0,
-      label: "Disabled"
+      treatmentId: 0
     }, {
-      treatmentId: 1,
-      label: "Enabled (1% sample rate)"
+      treatmentId: 1
     }, {
-      treatmentId: 2,
-      label: "Enabled (5% sample rate)"
+      treatmentId: 2
     }, {
-      treatmentId: 3,
-      label: "Enabled (100% sample rate)"
+      treatmentId: 3
     }]
   }
   getMetricsSampleRate() {
@@ -127,11 +119,7 @@ class f extends u {
     super(...e), s(this, "MAX_EMISSIONS_PER_APP_LAUNCH", 5), s(this, "emissionsCount", 0)
   }
 }
-let _ = new d("2025-05_libdiscore_notestore_v2", "NoteStore", "Kv", {
-    legacyExperiment: true
-  }),
-  p = new d("2025-07_libdiscore_guildstore_v2", "GuildStore", "Kv", {
-    legacyExperiment: true
-  }),
+let _ = new d("2025-09-libdiscore-migrate-notestore", "NoteStore", "Kv"),
+  p = new d("2025-09-libdiscore-migrate-guildstore", "GuildStore", "Kv"),
   h = new d("2025-09-libdiscore-guildrolestore", "GuildRoleStore", "Kkv");
 new f("2025-09-libdiscore-telemetry")

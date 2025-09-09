@@ -11,9 +11,9 @@ var Chunk481060 = require("./481060.js"),
 
 function i(A, e) {
   let t = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
-  (0, l.Z)({
+  (0, a.Z)({
     title: A,
-    body: "string" == typeof e ? e : a.intl.format(e, function(A) {
+    body: "string" == typeof e ? e : l.intl.format(e, function(A) {
       for (var e = 1; e < arguments.length; e++) {
         var t = null != arguments[e] ? arguments[e] : {},
           n = Object.keys(t);
@@ -40,7 +40,7 @@ function i(A, e) {
         children: A
       })
     }, t)),
-    cta: a.intl.string(a.t["NX+WJC"]),
+    cta: l.intl.string(l.t["NX+WJC"]),
     onConfirm: () => {}
   })
 }

@@ -1,14 +1,14 @@
 /** Chunk was on 49078 **/
 /** chunk id: 115849, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => w
+  Z: () => E
 }), require("./388685.js"), require("./781311.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
-  l = require.n(Chunk512722),
+  u = require.n(Chunk512722),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk194359 = require("./194359.js"),
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk470840 = require("./470840.js"),
   Chunk197571 = require("./197571.js");
 
-function x(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function x(e) {
   return e
 }
 
-function R(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,51 +52,51 @@ function R(e, t) {
   }), e
 }
 let Chunk349181 = require("./349181.js"),
-  v = {
+  R = {
     canSend: false,
     hint: null,
     success: null,
     error: null
   },
-  O = (0, Chunk313201.hQ)(),
-  _ = "".concat(O, "-decription"),
-  S = "".concat(O, "-error");
+  _ = (0, Chunk313201.hQ)(),
+  O = "".concat(_, "-decription"),
+  w = "".concat(_, "-error");
 
-function E(e, t) {
+function T(e, t) {
   switch (t.type) {
     case "RESET":
-      return v;
+      return R;
     case "SUCCESS":
-      return R(x({}, v), {
+      return j(y({}, R), {
         success: t.text
       });
     case "HINT":
-      return R(x({}, v), {
+      return j(y({}, R), {
         canSend: true,
         hint: t.text
       });
     case "ERROR":
-      return R(x({}, e), {
+      return j(y({}, e), {
         canSend: true,
         error: t.text
       })
   }
 }
 
-function w(e) {
+function E(e) {
   let {
-    placeholder: t = m.intl.string(m.t["Rn/sLi"])
-  } = e, n = i.useRef(null), s = i.useRef(null), [u, p] = i.useReducer(E, v), {
-    canSend: x,
-    hint: R,
-    success: w,
-    error: T
-  } = u;
+    placeholder: t = b.intl.string(b.t["Rn/sLi"])
+  } = e, n = i.useRef(null), a = i.useRef(null), [l, p] = i.useReducer(T, R), {
+    canSend: y,
+    hint: j,
+    error: E,
+    success: S
+  } = l;
   return i.useEffect(() => {
-    null != w && (l()(null != n.current, "Input is submitting when not mounted"), n.current.value = "", n.current.focus())
-  }, [w, n]), (0, r.jsxs)("form", {
+    null != S && (u()(null != n.current, "Input is submitting when not mounted"), n.current.value = "", n.current.focus())
+  }, [S, n]), (0, r.jsxs)("form", {
     onSubmit: e => {
-      e.preventDefault(), l()(null != n.current, "Input is submitted when not mounted");
+      e.preventDefault(), u()(null != n.current, "Input is submitted when not mounted");
       let t = n.current.value.trim();
       !t.includes("#") && t.startsWith("@") && (t = t.substring(1));
       let r = (0, f.Zy)(t);
@@ -111,7 +111,7 @@ function w(e) {
         }
       }).then(() => p({
         type: "SUCCESS",
-        text: m.intl.format(m.t.Rtl1Eh, {
+        text: b.intl.format(b.t.Rtl1Eh, {
           discordTag: t
         })
       }), e => {
@@ -124,43 +124,43 @@ function w(e) {
     },
     autoComplete: "off",
     children: [(0, r.jsxs)("div", {
-      className: g.addFriendWumpusWrapper,
+      className: x.addFriendWumpusWrapper,
       children: [(0, r.jsx)(d.R94, {
-        id: _,
+        id: O,
         type: d.R94.Types.DESCRIPTION,
         children: (0, r.jsx)(d.Text, {
           tag: "div",
           variant: "heading-md/normal",
-          children: m.intl.string(m.t["Rn/sLi"])
+          children: b.intl.string(b.t["Rn/sLi"])
         })
       }), (0, r.jsx)("img", {
-        src: j,
+        src: v,
         alt: "Wumpus Waving"
       })]
     }), (0, r.jsx)(d.tEY, {
       focusTarget: n,
-      ringTarget: s,
-      ringClassName: g.ring,
+      ringTarget: a,
+      ringClassName: x.ring,
       children: (0, r.jsxs)("div", {
-        ref: s,
-        className: a()(g.addFriendInputWrapper, {
-          [g.success]: w,
-          [g.error]: T
+        ref: a,
+        className: s()(x.addFriendInputWrapper, {
+          [x.success]: S,
+          [x.error]: E
         }),
         children: [(0, r.jsx)(c.Is, {
-          id: O,
+          id: _,
           inputRef: n,
-          className: g.addFriendInput,
-          inputClassName: g.input,
+          className: x.addFriendInput,
+          inputClassName: x.input,
           onKeyPress: e => {
             let t = e.currentTarget.value;
-            if (e.key !== b.mR.Enter && t.includes("#")) {
-              l()(null != n.current, "Input is handling keypress when not mounted");
+            if (e.key !== m.mR.Enter && t.includes("#")) {
+              u()(null != n.current, "Input is handling keypress when not mounted");
               let r = t.indexOf("#"),
                 i = n.current.selectionStart,
-                s = e.key === b.mR.Backspace || e.key === b.mR.ArrowRight || e.key === b.mR.ArrowLeft,
-                a = e.which >= 48 && e.which <= 57;
-              null != i && i > r && /^(.+?#\d{4})$/.test(t) && !s ? e.preventDefault() : null == i || !(i > r) || a || s || e.preventDefault()
+                a = e.key === m.mR.Backspace || e.key === m.mR.ArrowRight || e.key === m.mR.ArrowLeft,
+                s = e.which >= 48 && e.which <= 57;
+              null != i && i > r && /^(.+?#\d{4})$/.test(t) && !a ? e.preventDefault() : null == i || !(i > r) || s || a || e.preventDefault()
             }
           },
           onChange: e => {
@@ -183,31 +183,37 @@ function w(e) {
           "data-1p-ignore": true,
           placeholder: t,
           "aria-label": t,
-          "aria-invalid": null != T || true,
-          "aria-describedby": null != T ? S : _
-        }), null != R && (0, r.jsx)("div", {
-          className: g.addFriendHint,
+          "aria-invalid": null != E || true,
+          "aria-describedby": null != E ? w : O
+        }), null != j && (0, r.jsx)("div", {
+          className: x.addFriendHint,
           "aria-hidden": true,
-          children: R
+          children: j
         }), (0, r.jsx)(d.zxk, {
           variant: "primary",
           size: "sm",
-          text: m.intl.string(m.t["PMsq/f"]),
-          disabled: !x,
+          text: b.intl.string(b.t["PMsq/f"]),
+          disabled: !y,
           type: "submit"
         })]
       })
-    }), null != T && (0, r.jsx)(d.R94, {
+    }), null != E && (0, r.jsx)("div", {
       role: "alert",
-      id: S,
-      type: d.R94.Types.ERROR,
-      className: y.marginTop8,
-      children: T
-    }), null != w && (0, r.jsx)(d.R94, {
+      children: (0, r.jsx)(d.Text, {
+        id: w,
+        variant: "text-sm/normal",
+        className: g.marginTop8,
+        color: "text-feedback-critical",
+        children: E
+      })
+    }), null != S && (0, r.jsx)("div", {
       role: "status",
-      type: d.R94.Types.SUCCESS,
-      className: y.marginTop8,
-      children: w
+      children: (0, r.jsx)(d.Text, {
+        variant: "text-sm/normal",
+        className: g.marginTop8,
+        color: "text-feedback-positive",
+        children: S
+      })
     })]
   })
 }

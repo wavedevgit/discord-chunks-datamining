@@ -21,15 +21,15 @@ function x(e) {
     onClose: _,
     onBack: E,
     onNext: N
-  } = e, [h, p] = s.useState(""), [A, C] = s.useState(""), [j, f] = s.useState(false), g = (0, r.e7)([o.Z], () => o.Z.getErrors()), S = s.useRef(null);
+  } = e, [p, h] = s.useState(""), [A, C] = s.useState(""), [f, j] = s.useState(false), g = (0, r.e7)([o.Z], () => o.Z.getErrors()), S = s.useRef(null);
   async function v(e) {
-    e.preventDefault(), f(true);
+    e.preventDefault(), j(true);
     let t = await (0, l.Mn)({
-      email: h,
+      email: p,
       emailToken: x,
       password: A
     });
-    if (f(false), null == t ? true : t.ok) N(h);
+    if (j(false), null == t ? true : t.ok) N(p);
     else {
       var n, a;
       (null == t || null == (n = t.body) ? true : n.username) != null ? (0, c.P)() : (null == t || null == (a = t.body) ? true : a.email_token) != null && (null == E || E())
@@ -60,15 +60,13 @@ function x(e) {
       })]
     }), (0, a.jsxs)(i.hzk, {
       className: m.content,
-      children: [(0, a.jsx)(i.xJW, {
-        title: d.intl.string(d.t["w/qqKC"]),
+      children: [(0, a.jsx)(i.oil, {
+        label: d.intl.string(d.t["w/qqKC"]),
         error: null == g || null == (t = g.email) ? true : t[0],
-        children: (0, a.jsx)(i.oil, {
-          type: "email",
-          value: h,
-          onChange: p,
-          inputRef: S
-        })
+        type: "email",
+        value: p,
+        onChange: h,
+        inputRef: S
       }), (0, a.jsx)(i.xJW, {
         className: m.password,
         title: d.intl.string(d.t.TmdnJy),
@@ -84,7 +82,7 @@ function x(e) {
         variant: "primary",
         text: d.intl.string(d.t.i4jeWV),
         type: "submit",
-        loading: j
+        loading: f
       }), null != E ? (0, a.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: m.__invalid_cancel,

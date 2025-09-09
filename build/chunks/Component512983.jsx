@@ -69,7 +69,7 @@ function _(e, t) {
   return i
 }
 var p = function(e) {
-  return e.H1 = "h1", e.H2 = "h2", e.H3 = "h3", e.H4 = "h4", e.H5 = "h5", e.LABEL = "label", e.LEGEND = "legend", e
+  return e.H1 = "h1", e.H2 = "h2", e.H3 = "h3", e.H4 = "h4", e.H5 = "h5", e.LEGEND = "legend", e
 }({});
 
 function h(e) {
@@ -78,38 +78,28 @@ function h(e) {
     tag: n = "h5",
     children: i,
     className: l,
-    faded: u,
-    disabled: _,
-    required: p = false,
-    error: h,
-    errorId: m
-  } = e, g = f(e, ["tag", "children", "className", "faded", "disabled", "required", "error", "errorId"]);
-  switch (n) {
-    case "legend":
-    case "label":
-      t = n;
-      break;
-    default:
-      t = o.H
-  }
-  return (0, r.jsxs)(t, d(c({
+    disabled: u,
+    required: _ = false,
+    error: p,
+    errorId: h
+  } = e, m = f(e, ["tag", "children", "className", "disabled", "required", "error", "errorId"]);
+  return t = "legend" === n ? n : o.H, (0, r.jsxs)(t, d(c({
     className: a()(s[n], "h5" !== n ? s.defaultColor : null, l, {
       [s["defaultMargin".concat(n)]]: null == l,
-      [s.faded]: u,
-      [s.disabled]: _,
-      [s.error]: null != h
+      [s.disabled]: u,
+      [s.error]: null != p
     })
-  }, g), {
-    children: [i, p && null == h ? (0, r.jsx)("span", {
+  }, m), {
+    children: [i, _ && null == p ? (0, r.jsx)("span", {
       className: s.required,
       children: "*"
-    }) : null, null != h ? (0, r.jsxs)("span", {
-      id: m,
+    }) : null, null != p ? (0, r.jsxs)("span", {
+      id: h,
       className: s.errorMessage,
       children: [null != i ? (0, r.jsx)("span", {
         className: s.errorSeparator,
         children: "-"
-      }) : null, h]
+      }) : null, p]
     }) : null]
   }))
 }

@@ -89,7 +89,7 @@ function L(e) {
   } = e, {
     ref: o,
     width: c
-  } = (0, f.ZP)(), d = (0, b.Z)(A), u = i.useMemo(() => d.map(e => Z(R({}, e), {
+  } = (0, h.ZP)(), d = (0, b.Z)(A), u = i.useMemo(() => d.map(e => Z(R({}, e), {
     icon: function() {
       let {
         icon: t
@@ -137,13 +137,13 @@ function k(e) {
   } = (0, E.Z)(n.id), s = (0, y.YB)(n.id), c = i.useCallback(() => {
     var e;
     return (null == s || null == (e = s.cover_image_asset) ? true : e.application_id) == null ? null : (0, _._W)(s.cover_image_asset.application_id, s.cover_image_asset, D)
-  }, [s]), [m, f] = i.useState(a), [b, O] = i.useState(null != (t = null == s ? true : s.description) ? t : ""), [A, k] = i.useState(c), [M, G] = i.useState(null == s ? true : s.store_page_guild_products_default_sort), [U, B] = i.useState(null == s ? true : s.server_shop_tab_order), {
+  }, [s]), [m, h] = i.useState(a), [b, O] = i.useState(null != (t = null == s ? true : s.description) ? t : ""), [A, k] = i.useState(c), [M, G] = i.useState(null == s ? true : s.store_page_guild_products_default_sort), [U, B] = i.useState(null == s ? true : s.server_shop_tab_order), {
     loading: F,
     error: H,
     updateSubscriptionsSettings: z
   } = (0, y.QV)(), {
-    imageCTA: W,
-    imageAriaLabel: V,
+    imageCTA: V,
+    imageAriaLabel: W,
     setFilename: K
   } = (0, N.Z)(null == s ? true : s.cover_image_asset), Y = (0, x.Dt)(), q = (0, x.Dt)(), X = (0, x.Dt)();
 
@@ -200,7 +200,7 @@ function k(e) {
                 variant: "text-md/normal",
                 children: P.intl.string(P.t.mtwzdH)
               })
-            }))), f(e)
+            }))), h(e)
           },
           "aria-labelledby": Y,
           disabled: ee
@@ -233,7 +233,7 @@ function k(e) {
         children: P.intl.string(P.t.i2rCwc)
       }), (0, r.jsx)(v.Z, {
         image: A,
-        hint: W,
+        hint: V,
         showIcon: true,
         showRemoveButton: false,
         hideSize: true,
@@ -242,15 +242,15 @@ function k(e) {
         imageClassName: w.coverImageUploaderInner,
         iconClassName: w.coverImageUploaderIcon,
         onChange: Q,
-        "aria-label": V,
+        "aria-label": W,
         disabled: ee
       }), (0, r.jsx)(p.LZC, {
         size: 16
       }), (0, r.jsx)(j.Z, {
         onChange: Q,
-        "aria-label": V,
+        "aria-label": W,
         disabled: ee,
-        text: W,
+        text: V,
         variant: "secondary",
         size: "md"
       })]
@@ -296,12 +296,12 @@ function k(e) {
       component: "div",
       className: w.contentRegion,
       children: J && (0, r.jsx)(p.oXn, {
-        children: (0, r.jsx)(h.Z, {
+        children: (0, r.jsx)(f.Z, {
           submitting: F,
           disabled: !$,
           onReset: () => {
             var e;
-            f(a), O(null != (e = null == s ? true : s.description) ? e : ""), k(c), G(null == s ? true : s.store_page_guild_products_default_sort), B(null == s ? true : s.server_shop_tab_order)
+            h(a), O(null != (e = null == s ? true : s.description) ? e : ""), k(c), G(null == s ? true : s.store_page_guild_products_default_sort), B(null == s ? true : s.server_shop_tab_order)
           },
           onSave: () => {
             o()(null != s, "Settings must be defined");

@@ -114,8 +114,7 @@ class R extends Chunk647438.Component {
     return (0, Chunk951288.jsxs)("div", {
       className: Chunk744834.tierDefaultUnlocked,
       ref: this.defaultTierRef,
-      children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
-        type: Chunk481060.R94.Types.LABEL_BOLD,
+      children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
         children: Chunk388032.intl.string(Chunk388032.t["76OoX1"])
       }), (0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.R94.Types.DESCRIPTION,

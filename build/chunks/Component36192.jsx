@@ -59,7 +59,6 @@ function A() {
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk844642.sessions,
       children: [(0, Chunk951288.jsx)(Chunk481060.hjN, {
-        tag: Chunk481060.RB0.H5,
         title: Chunk388032.intl.string(Chunk388032.t.LLS19v),
         titleClassName: Chunk844642.groupTitle,
         children: null != exports ? (0, Chunk951288.jsx)(C, {
@@ -67,7 +66,6 @@ function A() {
           current: true
         }) : null
       }), !(require.length > 0) && (null == o ? true : o.mfaEnabled) ? null : (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-        tag: Chunk481060.RB0.H5,
         title: Chunk388032.intl.string(Chunk388032.t.xx1MWV),
         titleClassName: Chunk844642.groupTitle,
         className: Chunk844642.otherSessions,
@@ -82,7 +80,6 @@ function A() {
         }, e.id_hash)), (null == o ? true : o.mfaEnabled) ? null : (0, Chunk951288.jsx)(N, {})]
       })]
     }), require.length > 0 ? (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-      tag: Chunk481060.RB0.H5,
       title: Chunk460562.size > 0 ? Chunk388032.intl.string(Chunk388032.t.mMEmRE) : Chunk388032.intl.string(Chunk388032.t.Vij32N),
       children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.geA.DESCRIPTION,

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk261616 = require("./261616.js"),
   Chunk481060 = require("./481060.js"),
   Chunk144114 = require("./144114.js"),
@@ -47,11 +47,11 @@ function h(e) {
     children: e => {
       var s, c;
       return (0, n.jsx)("div", {
-        className: a()(d.outerContainer, {
+        className: o()(d.outerContainer, {
           [d.hidden]: !(t || g)
         }),
         ref: h,
-        children: (0, n.jsx)(o.animated.div, {
+        children: (0, n.jsx)(a.animated.div, {
           className: d.container,
           style: b,
           children: (0, n.jsxs)("div", {

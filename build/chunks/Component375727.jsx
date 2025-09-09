@@ -224,7 +224,6 @@ let D = e => {
         }), (0, r.jsx)(c.xJW, {
           title: T.intl.string(T.t.m0YV7O),
           required: true,
-          tag: "label",
           children: (0, r.jsx)(E.y, {
             name: K,
             onNameChange: X
@@ -232,7 +231,6 @@ let D = e => {
         }), D ? null : (0, r.jsx)(c.xJW, {
           title: T.intl.string(T.t["9uKafX"]),
           required: true,
-          tag: "label",
           titleId: "guild-selector-label",
           children: (0, r.jsxs)("div", {
             className: A.guildSelectorContainer,

@@ -38,14 +38,12 @@ function m(e) {
         variant: "text-md/semibold",
         children: d.intl.string(d.t["3TSGuL"])
       })
-    }), m ? (0, l.jsx)(s.xJW, {
-      title: d.intl.string(d.t["9rnmen"]),
-      children: (0, l.jsx)(s.oil, {
-        disabled: !m,
-        value: null != i ? i : true,
-        onChange: c.jS,
-        placeholder: "https://localhost:3000"
-      })
+    }), m ? (0, l.jsx)(s.oil, {
+      label: d.intl.string(d.t["9rnmen"]),
+      disabled: !m,
+      value: null != i ? i : true,
+      onChange: c.jS,
+      placeholder: "https://localhost:3000"
     }) : null, true === t ? null : (0, l.jsx)("div", {
       children: (0, l.jsx)(s.E1j, {
         size: "sm",

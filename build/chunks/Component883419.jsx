@@ -43,8 +43,8 @@ function S(e) {
     application: A,
     setUpdatedSubscription: I,
     contextMetadata: F,
-    currencies: B,
-    paymentSources: L,
+    currencies: L,
+    paymentSources: B,
     priceOptions: R,
     purchaseError: H,
     purchaseTokenAuthState: M,
@@ -98,7 +98,6 @@ function S(e) {
       }), !ei && (0, r.jsxs)("div", {
         className: C.guildPickerContainer,
         children: [(0, r.jsx)(s.vwX, {
-          tag: s.RB0.H5,
           children: O.intl.string(O.t["5qyruL"])
         }), (0, r.jsxs)("div", {
           className: C.guildNameContainer,
@@ -114,10 +113,10 @@ function S(e) {
       }), null == D ? (0, r.jsx)(u.Z, {
         selectedPlanId: W.id,
         planGroup: E,
-        paymentSources: L,
+        paymentSources: B,
         onPaymentSourceChange: e => V(null != e ? e.id : null),
         priceOptions: R,
-        currencies: B,
+        currencies: L,
         onCurrencyChange: e => z(e),
         handlePaymentSourceAdd: () => P(b.h8.ADD_PAYMENT_STEPS),
         setHasAcceptedTerms: K,
@@ -131,7 +130,7 @@ function S(e) {
         handleClose: Z
       }) : (0, r.jsx)(d.Z, {
         premiumSubscription: D,
-        paymentSources: L,
+        paymentSources: B,
         priceOptions: R,
         onPaymentSourceChange: e => V(null != e ? e.id : null),
         onPaymentSourceAdd: eo,
@@ -143,7 +142,7 @@ function S(e) {
           er(e)
         },
         planGroup: E,
-        currencies: B,
+        currencies: L,
         onCurrencyChange: e => z(e),
         hasOpenInvoice: null != _,
         purchaseState: Y,

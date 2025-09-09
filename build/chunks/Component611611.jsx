@@ -1,20 +1,18 @@
 /** Chunk was on 68784 **/
 /** chunk id: 611611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => E
+  default: () => k
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
   Chunk525769 = require("./525769.js"),
   Chunk693789 = require("./693789.jsx"),
+  Chunk19217 = require("./19217.jsx"),
   Chunk82659 = require("./82659.jsx"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk240872 = require("./240872.jsx"),
   Chunk213609 = require("./213609.js"),
-  Chunk313201 = require("./313201.js"),
   Chunk542383 = require("./542383.js"),
   Chunk79390 = require("./79390.js"),
   Chunk728076 = require("./728076.js"),
@@ -25,54 +23,47 @@ var Chunk951288 = require("./951288.js"),
   Chunk20281 = require("./20281.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk520317 = require("./520317.js");
-let C = (0, Chunk313201.hQ)();
 
-function k(e) {
+function w(e) {
   let {
     question: t,
     onChange: n,
     error: l,
     inputRef: a
   } = e;
-  return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(d.vwX, {
-      tag: d.RB0.LABEL,
-      htmlFor: C,
-      children: w.intl.string(w.t.WBiKnJ)
-    }), (0, r.jsx)(d.Kx8, {
-      inputRef: a,
-      id: C,
-      placeholder: w.intl.string(w.t["/uQqJS"]),
-      value: t,
-      onChange: n,
-      maxLength: v.Az,
-      error: l,
-      rows: 1,
-      autosize: true,
-      autoFocus: true,
-      showCharacterCount: true
-    })]
+  return (0, r.jsx)(u.Kx8, {
+    label: v.intl.string(v.t.WBiKnJ),
+    inputRef: a,
+    placeholder: v.intl.string(v.t["/uQqJS"]),
+    value: t,
+    onChange: n,
+    maxLength: y.Az,
+    error: l,
+    rows: 1,
+    autosize: true,
+    autoFocus: true,
+    showCharacterCount: true
   })
 }
 
-function R(e) {
+function x(e) {
   let {
     selectedDuration: t,
     onSelect: n
-  } = e, l = (0, O.Z)(), a = l[t];
+  } = e, l = (0, g.Z)(), a = l[t];
   return (0, r.jsxs)("div", {
-    className: x.duration,
-    children: [(0, r.jsx)(d.Text, {
+    className: P.duration,
+    children: [(0, r.jsx)(u.Text, {
       variant: "text-md/medium",
       color: "header-secondary",
       tag: "label",
       "aria-hidden": true,
-      children: w.intl.string(w.t.bGHzxc)
-    }), (0, r.jsx)(d.PhF, {
-      "aria-label": w.intl.formatToPlainString(w.t.nXNHND, {
+      children: v.intl.string(v.t.bGHzxc)
+    }), (0, r.jsx)(u.PhF, {
+      "aria-label": v.intl.formatToPlainString(v.t.nXNHND, {
         duration: a
       }),
-      className: x.durationSelect,
+      className: P.durationSelect,
       options: Object.entries(l).map(e => {
         let [t, n] = e;
         return {
@@ -83,7 +74,7 @@ function R(e) {
       isSelected: e => e === t,
       select: n,
       serialize: e => "".concat(e),
-      renderOptionLabel: e => (0, r.jsx)(d.Text, {
+      renderOptionLabel: e => (0, r.jsx)(u.Text, {
         variant: "text-sm/normal",
         children: e.label
       }),
@@ -92,18 +83,18 @@ function R(e) {
   })
 }
 
-function E(e) {
+function k(e) {
   let {
     channel: t,
     transitionState: n,
-    onClose: a,
-    initialQuestion: p,
-    initialAnswers: O,
-    initialDuration: C
+    onClose: g,
+    initialQuestion: C,
+    initialAnswers: R,
+    initialDuration: E
   } = e;
-  (0, m.Z)({
-    type: P.n.MODAL,
-    name: o.z.POLL_EDITOR_VIEWED
+  (0, f.Z)({
+    type: h.n.MODAL,
+    name: a.z.POLL_EDITOR_VIEWED
   });
   let _ = l.useRef(null),
     S = l.useRef([]),
@@ -114,14 +105,14 @@ function E(e) {
         indexToRemove: r,
         numberOfAnswers: l
       } = e;
-      l === v.gY + 1 ? null == (t = D.current) || t.focus() : null == (n = S.current[r === l - 1 ? r - 1 : r + 1]) || n.focusDeleteButton()
+      l === y.gY + 1 ? null == (t = D.current) || t.focus() : null == (n = S.current[r === l - 1 ? r - 1 : r + 1]) || n.focusDeleteButton()
     }, []),
     {
       answers: I,
       question: N,
-      allowMultiSelect: L,
-      setAllowMultiSelect: T,
-      duration: U,
+      allowMultiSelect: T,
+      setAllowMultiSelect: U,
+      duration: L,
       setDuration: Z,
       handleQuestionChange: B,
       handleAnswerTextChange: Y,
@@ -130,33 +121,33 @@ function E(e) {
       handleRemoveAnswerImage: M,
       canRemoveMoreAnswers: H,
       handleAddAnswer: q,
-      handleRemoveAnswer: F,
-      createPollError: W,
+      handleRemoveAnswer: W,
+      createPollError: F,
       handleSubmitPoll: G,
-      fieldErrors: X,
-      submitting: V,
-      shouldFocusOnInvalidField: Q,
-      setShouldFocusOnInvalidField: J
-    } = (0, j.Z)(t, a, A, {
-      initialQuestion: p,
-      initialAnswers: O,
-      initialDuration: C
+      fieldErrors: V,
+      submitting: X,
+      shouldFocusOnInvalidField: J,
+      setShouldFocusOnInvalidField: Q
+    } = (0, b.Z)(t, g, A, {
+      initialQuestion: C,
+      initialAnswers: R,
+      initialDuration: E
     }),
     {
       trackPollCreationCancelled: $
-    } = (0, h.l)(I, L),
+    } = (0, j.l)(I, T),
     ee = l.useRef(I.length),
     et = l.useCallback(() => {
-      $(), a()
-    }, [a, $]),
+      $(), g()
+    }, [g, $]),
     en = l.useCallback(() => {
-      if (!(0, g.D$)(N, I)) return void f.Z.show({
-        title: w.intl.string(w.t.HMrgcn),
-        body: w.intl.string(w.t["Wxa/j4"]),
-        confirmColor: c.Tt.RED,
-        confirmText: w.intl.string(w.t.TzJA4u),
+      if (!(0, p.D$)(N, I)) return void d.Z.show({
+        title: v.intl.string(v.t.HMrgcn),
+        body: v.intl.string(v.t["Wxa/j4"]),
+        confirmColor: i.Tt.RED,
+        confirmText: v.intl.string(v.t.TzJA4u),
         confirmVariant: "critical-primary",
-        cancelText: w.intl.string(w.t["2BR5R0"]),
+        cancelText: v.intl.string(v.t["2BR5R0"]),
         onConfirm: () => {
           et()
         }
@@ -164,9 +155,9 @@ function E(e) {
       et()
     }, [et, I, N]);
   l.useEffect(() => {
-    (0, d.oav)(v.$z, e => {
+    (0, u.oav)(y.$z, e => {
       var n, l;
-      return (0, r.jsx)(E, (n = function(e) {
+      return (0, r.jsx)(k, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -203,64 +194,61 @@ function E(e) {
     }
     ee.current = I.length
   }, [I.length]), l.useEffect(() => {
-    if (Q) {
+    if (J) {
       var e, t;
-      if ((null == X ? true : X.question) != null) null == (e = _.current) || e.focus();
+      if ((null == V ? true : V.question) != null) null == (e = _.current) || e.focus();
       else {
-        let e = I.findIndex(e => X["answer-".concat(e.localCreationAnswerId)]);
+        let e = I.findIndex(e => V["answer-".concat(e.localCreationAnswerId)]);
         false !== e && (null == (t = S.current[e]) || t.focusInput())
       }
-      J(false)
+      Q(false)
     }
-  }, [X, I, Q, J, S]);
+  }, [V, I, J, Q, S]);
   let er = l.useCallback(() => {
-      n === d.Dvm.ENTERED && G()
+      n === u.Dvm.ENTERED && G()
     }, [G, n]),
-    el = (0, b.Z)({
-      disabled: V,
+    el = (0, m.Z)({
+      disabled: X,
       onSubmit: er
     }),
     ea = l.useMemo(() => [{
       variant: "primary",
       onClick: er,
-      submitting: V,
-      text: w.intl.string(w.t.JOj8Zm)
-    }], [er, V]);
-  return (0, r.jsx)(s.Modal, {
+      submitting: X,
+      text: v.intl.string(v.t.JOj8Zm)
+    }], [er, X]);
+  return (0, r.jsx)(c.Modal, {
     transitionState: n,
-    onClose: a,
-    title: w.intl.string(w.t["GD/8X1"]),
+    onClose: g,
+    title: v.intl.string(v.t["GD/8X1"]),
     actions: ea,
-    actionBarInput: (0, r.jsx)(u.$q, {
-      className: x.checkbox,
+    actionBarInput: (0, r.jsx)(s.$q, {
+      className: P.checkbox,
       size: 24,
-      value: L,
-      onChange: (e, t) => T(t),
-      children: (0, r.jsx)(d.Text, {
+      value: T,
+      onChange: (e, t) => U(t),
+      children: (0, r.jsx)(u.Text, {
         variant: "text-md/medium",
         color: "interactive-active",
-        children: w.intl.string(w.t["Ux+iQU"])
+        children: v.intl.string(v.t["Ux+iQU"])
       })
     }),
     children: (0, r.jsxs)("div", {
-      className: x.content,
+      className: P.content,
       onKeyDown: el,
-      children: [null != W && (0, r.jsx)(d.kzN, {
-        className: x.apiErrorBlock,
-        children: W.getAnyErrorMessage()
-      }), (0, r.jsx)(k, {
+      children: [null != F && (0, r.jsx)(u.kzN, {
+        className: P.apiErrorBlock,
+        children: F.getAnyErrorMessage()
+      }), (0, r.jsx)(w, {
         question: N,
         onChange: B,
-        error: null == X ? true : X.question,
+        error: null == V ? true : V.question,
         inputRef: _
-      }), (0, r.jsx)(d.LZC, {
+      }), (0, r.jsx)(u.LZC, {
         size: 26
-      }), (0, r.jsxs)("fieldset", {
-        className: i()(x.answerInputsContainer, x.defaultContainer),
-        children: [(0, r.jsx)(d.vwX, {
-          tag: d.RB0.LEGEND,
-          children: w.intl.string(w.t.oMBfeX)
-        }), I.map((e, n) => (0, r.jsx)(y.Z, {
+      }), (0, r.jsxs)(o.C, {
+        label: v.intl.string(v.t.oMBfeX),
+        children: [I.map((e, n) => (0, r.jsx)(O.Z, {
           answer: e,
           channelId: t.id,
           index: n,
@@ -268,30 +256,30 @@ function E(e) {
           onEmojiSelect: K,
           onEmojiRemove: M,
           onAnswerTextChange: Y,
-          onRemoveAnswer: F,
+          onRemoveAnswer: W,
           addAnswer: q,
           submitPoll: er,
           answerRowRefs: S,
-          error: null == X ? true : X["answer-".concat(e.localCreationAnswerId)],
+          error: null == V ? true : V["answer-".concat(e.localCreationAnswerId)],
           canRemoveAnswer: H,
           ref: e => {
             S.current[n] = e
           }
         }, e.localCreationAnswerId)), z && (0, r.jsx)("div", {
-          className: x.addAnswerButton,
-          children: (0, r.jsx)(d.zxk, {
-            icon: d.qJs,
+          className: P.addAnswerButton,
+          children: (0, r.jsx)(u.zxk, {
+            icon: u.qJs,
             variant: "secondary",
             onClick: q,
-            "aria-label": w.intl.string(w.t.B2UvmZ),
+            "aria-label": v.intl.string(v.t.B2UvmZ),
             buttonRef: D,
-            text: w.intl.string(w.t.B2UvmZ)
+            text: v.intl.string(v.t.B2UvmZ)
           })
         })]
-      }), (0, r.jsx)(d.LZC, {
+      }), (0, r.jsx)(u.LZC, {
         size: 18
-      }), (0, r.jsx)(R, {
-        selectedDuration: U,
+      }), (0, r.jsx)(x, {
+        selectedDuration: L,
         onSelect: Z
       })]
     })

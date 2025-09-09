@@ -1,7 +1,7 @@
 /** Chunk was on 33356 **/
 /** chunk id: 477782, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => d
+  default: () => c
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -11,32 +11,32 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk662971 = require("./662971.js");
 
-function d(e) {
+function c(e) {
   let {
     onClose: t,
     transitionState: n
-  } = e, d = (0, r.Dt)(), [h, u] = a.useState("");
+  } = e, c = (0, r.Dt)(), [h, u] = a.useState("");
   return (0, i.jsx)("form", {
     onSubmit: function(e) {
       e.preventDefault(), (0, l.CM)(h), t()
     },
     children: (0, i.jsxs)(s.Y0X, {
       transitionState: n,
-      "aria-labelledby": d,
+      "aria-labelledby": c,
       parentComponent: "AddFavoriteCategoryModal",
       children: [(0, i.jsxs)(s.hzk, {
         children: [(0, i.jsx)(s.X6q, {
-          id: d,
-          className: c.header,
+          id: c,
+          className: d.header,
           variant: "heading-xl/semibold",
           children: o.intl.string(o.t["ISN+ND"])
         }), (0, i.jsx)(s.olH, {
           onClick: t,
-          className: c.closeButton
-        }), (0, i.jsx)(s.xJW, {
-          title: o.intl.string(o.t.OCAkGB),
-          className: c.name,
+          className: d.closeButton
+        }), (0, i.jsx)("div", {
+          className: d.name,
           children: (0, i.jsx)(s.oil, {
+            label: o.intl.string(o.t.OCAkGB),
             value: h,
             onChange: u,
             maxLength: 100,

@@ -132,7 +132,7 @@ let U = function() {
         className: Chunk137067.formBlock,
         children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           children: "Gift"
-        }), (0, Chunk951288.jsxs)(Chunk481060.xJW, {
+        }), (0, Chunk951288.jsxs)("div", {
           className: Chunk137067.formItem,
           children: [(0, Chunk951288.jsx)(Chunk481060.q4e, {
             value: module,
@@ -163,7 +163,7 @@ let U = function() {
         className: Chunk137067.formBlock,
         children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           children: "Premium Select Plan"
-        }), (0, Chunk951288.jsxs)(Chunk481060.xJW, {
+        }), (0, Chunk951288.jsxs)("div", {
           className: Chunk137067.formItem,
           children: [(0, Chunk951288.jsx)(Chunk481060.q4e, {
             value: require,
@@ -196,7 +196,7 @@ let U = function() {
         className: Chunk137067.formBlock,
         children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           children: "Boost"
-        }), (0, Chunk951288.jsxs)(Chunk481060.xJW, {
+        }), (0, Chunk951288.jsxs)("div", {
           className: Chunk137067.formItem,
           children: [(0, Chunk951288.jsx)(Chunk481060.q4e, {
             value: U,
@@ -220,7 +220,7 @@ let U = function() {
             href: "https://i.dis.gd/createPromo",
             children: "How to create promotion"
           })]
-        }), (0, Chunk951288.jsxs)(Chunk481060.xJW, {
+        }), (0, Chunk951288.jsxs)("div", {
           className: Chunk137067.formItem,
           children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
             placeholder: "Promotion Code",
@@ -253,7 +253,7 @@ let U = function() {
         className: Chunk137067.formBlock,
         children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           children: "Standalone: Gift/Subscription Purchase"
-        }), (0, Chunk951288.jsxs)(Chunk481060.xJW, {
+        }), (0, Chunk951288.jsxs)("div", {
           className: Chunk137067.formItem,
           children: [(0, Chunk951288.jsx)(Chunk481060.q4e, {
             value: F.plan_id,
@@ -309,7 +309,7 @@ let U = function() {
         className: Chunk137067.formBlock,
         children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           children: "Redeem Virtual Currency for SKU"
-        }), (0, Chunk951288.jsxs)(Chunk481060.xJW, {
+        }), (0, Chunk951288.jsxs)("div", {
           className: Chunk137067.formItem,
           children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-sm/normal",
@@ -329,14 +329,14 @@ let U = function() {
               balanceWidgetMode: Chunk970815.b6.SELECTED
             })]
           })]
-        }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
+        }), (0, Chunk951288.jsx)("div", {
           className: Chunk137067.formItem,
           children: (0, Chunk951288.jsx)(Chunk481060.oil, {
             placeholder: "SKU ID",
             value: ei,
             onChange: e => ea(e)
           })
-        }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
+        }), (0, Chunk951288.jsx)("div", {
           className: Chunk137067.formItem,
           children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
             variant: "primary",
@@ -344,7 +344,7 @@ let U = function() {
             loading: et,
             onClick: () => er(ei, (0, Chunk772848.Z)())
           })
-        }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
+        }), (0, Chunk951288.jsx)("div", {
           className: Chunk137067.formItem,
           children: (0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-sm/normal",
@@ -357,7 +357,7 @@ let U = function() {
         className: Chunk137067.formBlock,
         children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           children: "Creator Revenue"
-        }), (0, Chunk951288.jsxs)(Chunk481060.xJW, {
+        }), (0, Chunk951288.jsxs)("div", {
           className: Chunk137067.formItem,
           children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
             className: Chunk137067.guildServerDescription,
@@ -380,7 +380,7 @@ let U = function() {
         className: Chunk137067.formBlock,
         children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           children: "Activities & Application Payment Modals"
-        }), (0, Chunk951288.jsxs)(Chunk481060.xJW, {
+        }), (0, Chunk951288.jsxs)("div", {
           className: Chunk137067.formItem,
           children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
             placeholder: "Application Id",
@@ -411,7 +411,7 @@ let U = function() {
         className: Chunk137067.formBlock,
         children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           children: "Standard Payment Modal Test"
-        }), (0, Chunk951288.jsxs)(Chunk481060.xJW, {
+        }), (0, Chunk951288.jsxs)("div", {
           className: Chunk137067.formItem,
           children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
             placeholder: "Application Id",
@@ -437,7 +437,7 @@ let U = function() {
         className: Chunk137067.formBlock,
         children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           children: "Collectibles Payment Modal Test"
-        }), (0, Chunk951288.jsxs)(Chunk481060.xJW, {
+        }), (0, Chunk951288.jsxs)("div", {
           className: Chunk137067.formItem,
           children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
             placeholder: "SKU ID",
@@ -459,7 +459,7 @@ let U = function() {
         className: Chunk137067.formBlock,
         children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           children: "Helpers"
-        }), (0, Chunk951288.jsxs)(Chunk481060.xJW, {
+        }), (0, Chunk951288.jsxs)("div", {
           className: Chunk137067.formItem,
           children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
             variant: "primary",
@@ -477,7 +477,7 @@ let U = function() {
         className: Chunk137067.formBlock,
         children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           children: "Dismissible Content Framework"
-        }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
+        }), (0, Chunk951288.jsx)("div", {
           className: Chunk137067.formItem,
           children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
             variant: "primary",

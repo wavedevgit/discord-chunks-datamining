@@ -60,7 +60,7 @@ function y(e) {
     guildId: t,
     emojiData: n,
     onSelectEmoji: l
-  } = e, a = i.useRef(null), o = (0, s.e7)([p.ZP], () => null != n.id ? p.ZP.getCustomEmojiById(n.id) : true), u = (0, s.e7)([f.ZP], () => f.ZP.getDefaultChannel(t)), b = i.useCallback(e => {
+  } = e, a = i.useRef(null), o = (0, s.e7)([p.ZP], () => null != n.id ? p.ZP.getCustomEmojiById(n.id) : true), u = (0, s.e7)([h.ZP], () => h.ZP.getDefaultChannel(t)), b = i.useCallback(e => {
     let {
       closePopout: t
     } = e;
@@ -91,7 +91,7 @@ function y(e) {
       animated: null == o ? true : o.animated
     })
   }, [n, o]), y = "";
-  return null != o ? y = ":".concat(o.name, ":") : null != n.name && (y = h.ZP.convertSurrogateToName(n.name)), (0, r.jsx)(c.yRy, {
+  return null != o ? y = ":".concat(o.name, ":") : null != n.name && (y = f.ZP.convertSurrogateToName(n.name)), (0, r.jsx)(c.yRy, {
     targetElementRef: a,
     animation: c.yRy.Animation.NONE,
     position: "top",
@@ -130,8 +130,8 @@ function C(e) {
     onSave: m,
     onDelete: g,
     transitionState: p,
-    onClose: h
-  } = e, f = (0, u.Dt)(), [b, x] = i.useState(null != (t = null == l ? true : l.description) ? t : ""), [v, _] = i.useState(() => ({
+    onClose: f
+  } = e, h = (0, u.Dt)(), [b, x] = i.useState(null != (t = null == l ? true : l.description) ? t : ""), [v, _] = i.useState(() => ({
     id: null == l ? true : l.emoji_id,
     name: null == l ? true : l.emoji_name
   })), O = d && "" !== b && (null != v.id || null != v.name);
@@ -141,18 +141,18 @@ function C(e) {
       description: b,
       emojiId: v.id,
       emojiName: v.name
-    }), h())
+    }), f())
   }
   let N = [{
     text: j.intl.string(j.t["ETE/oK"]),
     variant: "secondary",
-    onClick: h
+    onClick: f
   }];
   return null != g && N.push({
     text: j.intl.string(j.t.oyYWHB),
     variant: "critical-secondary",
     onClick: () => {
-      g(), h()
+      g(), f()
     },
     icon: c.XHJ
   }), N.push({
@@ -164,21 +164,21 @@ function C(e) {
     onSubmit: C,
     children: (0, r.jsx)(o.Modal, {
       transitionState: p,
-      onClose: h,
+      onClose: f,
       title: j.intl.string(j.t["2qf9EB"]),
       actions: N,
       children: (0, r.jsxs)(c.Kqy, {
         gap: "md",
         children: [a, (0, r.jsx)(c.hjN, {
           title: j.intl.string(j.t["1Ts7QE"]),
-          titleId: f,
+          titleId: h,
           children: (0, r.jsx)(c.Kx8, {
             placeholder: s,
             value: b,
             rows: 1,
             autosize: true,
             onChange: x,
-            "aria-labelledby": f
+            "aria-labelledby": h
           })
         }), (0, r.jsx)(c.hjN, {
           title: j.intl.string(j.t.sMOuub),
@@ -202,7 +202,7 @@ function N(e) {
     onDelete: o,
     transitionState: d,
     onClose: m
-  } = e, [g, p] = i.useState(null == l ? true : l.ref_id), h = (0, u.Dt)(), f = (0, r.jsxs)(r.Fragment, {
+  } = e, [g, p] = i.useState(null == l ? true : l.ref_id), f = (0, u.Dt)(), h = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.Wn, {
       messageType: c.QYI.WARNING,
       children: j.intl.string(j.t.xunxCg)
@@ -210,7 +210,7 @@ function N(e) {
       size: 24
     }), (0, r.jsx)(c.hjN, {
       title: j.intl.string(j.t.GK18KC),
-      titleId: h,
+      titleId: f,
       children: (0, r.jsx)(b.Z, {
         guildId: t,
         value: g,
@@ -219,14 +219,14 @@ function N(e) {
         onChange: function(e) {
           p(e)
         },
-        "aria-labelledby": h
+        "aria-labelledby": f
       })
     })]
   });
   return (0, r.jsx)(C, {
     guildId: t,
     initialData: l,
-    benefitTypeInput: f,
+    benefitTypeInput: h,
     descriptionPlaceholder: j.intl.string(j.t.J8O1Li),
     canSubmit: null != g,
     onSave: function(e) {
@@ -249,9 +249,9 @@ function E(e) {
     onClose: o,
     onDelete: d,
     guildId: m
-  } = e, [g, p] = i.useState(null != (t = null == n ? true : n.name) ? t : ""), h = (0, u.Dt)(), f = (0, r.jsx)(c.hjN, {
+  } = e, [g, p] = i.useState(null != (t = null == n ? true : n.name) ? t : ""), f = (0, u.Dt)(), h = (0, r.jsx)(c.hjN, {
     title: j.intl.string(j.t.NPOJra),
-    titleId: h,
+    titleId: f,
     children: (0, r.jsx)(c.Kx8, {
       placeholder: j.intl.string(j.t.NPOJra),
       value: g,
@@ -259,13 +259,13 @@ function E(e) {
       onChange: function(e) {
         p(e)
       },
-      "aria-labelledby": h
+      "aria-labelledby": f
     })
   });
   return (0, r.jsx)(C, {
     guildId: m,
     initialData: n,
-    benefitTypeInput: f,
+    benefitTypeInput: h,
     descriptionPlaceholder: j.intl.string(j.t.ucP4Tk),
     canSubmit: "" !== g,
     onSave: function(e) {

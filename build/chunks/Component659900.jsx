@@ -1,7 +1,7 @@
 /** Chunk was on 10778 **/
 /** chunk id: 659900, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => S
 }), require("./388685.js"), require("./583741.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -31,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk868568 = require("./868568.js");
 
-function b(e) {
+function S(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     [n, s] = r.useState(""),
     [l, a] = r.useState(null),
@@ -54,24 +54,22 @@ function b(e) {
       children: [t ? (0, i.jsx)(T.Z, {
         guildTemplate: e
       }) : null, (0, i.jsx)("div", {
-        className: S.icon,
+        className: b.icon,
         children: (0, i.jsx)(h.Z, {
           icon: l,
           onChange: a
         })
-      }), (0, i.jsx)(o.xJW, {
-        title: u.nameLabel,
-        children: (0, i.jsx)(o.oil, {
-          type: "text",
-          value: n,
-          maxLength: 100,
-          onChange: s,
-          error: null == c ? true : c.name
-        })
+      }), (0, i.jsx)(o.oil, {
+        label: u.nameLabel,
+        type: "text",
+        value: n,
+        maxLength: 100,
+        onChange: s,
+        error: null == c ? true : c.name
       }), (0, i.jsx)(o.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        className: S.guidelines,
+        className: b.guidelines,
         children: M.intl.format(u.terms, {
           guidelinesURL: _.EYA.GUIDELINES
         })
@@ -82,23 +80,23 @@ function b(e) {
     form: x,
     preview: (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)("div", {
-        className: S.divider
+        className: b.divider
       }), (0, i.jsxs)(o.xJW, {
-        className: S.previewSection,
+        className: b.previewSection,
         title: M.intl.string(M.t.Zxk1OD),
         children: [(0, i.jsx)(G, {
           channels: e.serializedSourceGuild.channels
         }), (0, i.jsxs)(o.Text, {
           variant: "text-xs/normal",
           color: "header-secondary",
-          className: S.protip,
+          className: b.protip,
           children: [(0, i.jsxs)("span", {
-            className: S.protipText,
+            className: b.protipText,
             children: [M.intl.string(M.t["8tvIiI"]), ":"]
           }), " ", M.intl.string(M.t.de7DpK)]
         })]
       }), f.length > 0 ? (0, i.jsx)(o.xJW, {
-        className: S.previewSection,
+        className: b.previewSection,
         title: M.intl.string(M.t["RJ1e/v"]),
         children: (0, i.jsx)(I, {
           guildId: e.serializedSourceGuild.id,
@@ -121,20 +119,20 @@ function G(e) {
     var t;
     let n = (t = e).type === _.d4z.GUILD_CATEGORY ? j.Z : (0, x.KS)((0, g.q_)(t));
     return (0, i.jsxs)("div", {
-      className: l()(S.channel, {
-        [S.category]: e.type === _.d4z.GUILD_CATEGORY
+      className: l()(b.channel, {
+        [b.category]: e.type === _.d4z.GUILD_CATEGORY
       }),
       children: [null != n ? (0, i.jsx)(n, {
-        className: S.channelIcon
+        className: b.channelIcon
       }) : null, (0, i.jsx)(o.Text, {
-        className: S.channelText,
+        className: b.channelText,
         variant: "text-sm/normal",
         children: e.name
       })]
     }, e.id)
   }).value();
   return (0, i.jsx)("div", {
-    className: S.channelsWrapper,
+    className: b.channelsWrapper,
     children: n
   })
 }
@@ -148,7 +146,7 @@ function I(e) {
     role: e
   }, e.id));
   return (0, i.jsx)("ul", {
-    className: S.rolesWrapper,
+    className: b.rolesWrapper,
     children: r
   })
 }
@@ -160,13 +158,13 @@ function R(e) {
     role: s
   } = e, l = (0, o.dQu)(u.Z.colors.BORDER_SUBTLE).hex(), a = null == s.color ? l : (0, d.Rf)(s.color), c = (0, f._f)(r, s, s.colorStrings);
   return (0, i.jsxs)("li", {
-    className: S.role,
+    className: b.role,
     style: {
       borderColor: null != (t = (0, d.wK)(a, .6)) ? t : true,
       backgroundColor: null != (n = (0, d.wK)(a, .075)) ? n : true
     },
     children: [(0, i.jsx)(o.xko, {
-      className: S.roleCircle,
+      className: b.roleCircle,
       color: a,
       colors: c
     }), (0, i.jsx)(o.Text, {

@@ -83,17 +83,15 @@ function u(t) {
               color: "header-secondary",
               className: h.description,
               children: x.intl.string(x.t.NxPUqa)
-            }), (0, s.jsx)(l.xJW, {
-              title: x.intl.string(x.t["4jIAa2"]),
+            }), (0, s.jsx)(l.oil, {
+              label: x.intl.string(x.t["4jIAa2"]),
               error: v,
-              children: (0, s.jsx)(l.oil, {
-                onChange: u,
-                placeholder: c.pL,
-                maxLength: 253,
-                value: o,
-                disabled: N,
-                autoFocus: true
-              })
+              onChange: u,
+              placeholder: c.pL,
+              maxLength: 253,
+              value: o,
+              disabled: N,
+              autoFocus: true
             })]
           }), (0, s.jsx)(l.mzw, {
             className: h.footer,

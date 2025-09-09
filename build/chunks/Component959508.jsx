@@ -40,7 +40,7 @@ function C(e) {
     onPromptDragComplete: T,
     onPromptDragStart: P,
     onPromptDragReset: w
-  } = e, R = (0, s.e7)([f.Z], () => f.Z.editedDefaultChannelIds), {
+  } = e, R = (0, s.e7)([h.Z], () => h.Z.editedDefaultChannelIds), {
     drag: Z,
     dragSourcePosition: D,
     drop: A,
@@ -55,14 +55,14 @@ function C(e) {
   }), k = (0, s.cj)([x.Z], () => {
     var e;
     return null != (e = x.Z.errors[j]) ? e : y
-  }), [M, G] = i.useState(false), [U, B] = i.useState(false), F = null != (t = k.options) ? t : k.optionErrors.filter(h.lm)[0], H = k.config, z = l.options.length >= v.fY, W = (0, g.kl)(n.id, Array.from(R), [l]).length - R.size, V = i.useRef(null), K = i.useRef(j);
+  }), [M, G] = i.useState(false), [U, B] = i.useState(false), F = null != (t = k.options) ? t : k.optionErrors.filter(f.lm)[0], H = k.config, z = l.options.length >= v.fY, V = (0, g.kl)(n.id, Array.from(R), [l]).length - R.size, W = i.useRef(null), K = i.useRef(j);
   return (i.useEffect(() => {
     K.current = j
   }), i.useLayoutEffect(() => {
     setTimeout(() => {
       if (0 === K.current && !m) {
         var e;
-        null == (e = V.current) || e.focus()
+        null == (e = W.current) || e.focus()
       }
     }, 0)
   }, [m]), M) ? (0, r.jsx)(d.tEY, {
@@ -145,20 +145,18 @@ function C(e) {
         })
       }), (0, r.jsxs)(d.Kqy, {
         gap: 16,
-        children: [(0, r.jsx)(d.xJW, {
-          title: _.intl.format(_.t.yjS3zs, {
+        children: [(0, r.jsx)(d.oil, {
+          label: _.intl.formatToPlainString(_.t.yjS3zs, {
             index: j + 1
           }),
-          children: (0, r.jsx)(d.oil, {
-            inputRef: V,
-            value: l.title,
-            onChange: e => (0, b.Kk)(n, l.id, {
-              title: e
-            }),
-            placeholder: _.intl.string(_.t.QMCuCg),
-            maxLength: v.iU,
-            error: k.title
-          })
+          inputRef: W,
+          value: l.title,
+          onChange: e => (0, b.Kk)(n, l.id, {
+            title: e
+          }),
+          placeholder: _.intl.string(_.t.QMCuCg),
+          maxLength: v.iU,
+          error: k.title
         }), (0, r.jsx)(N, {
           prompt: l,
           guild: n
@@ -208,7 +206,7 @@ function C(e) {
               variant: "text-sm/normal",
               color: "interactive-normal",
               children: I ? _.intl.formatToPlainString(_.t["0re8T0"], {
-                count: W
+                count: V
               }) : _.intl.string(_.t.Ur8Vrq)
             })
           }) : null]

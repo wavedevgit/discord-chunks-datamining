@@ -28,10 +28,10 @@ function j(e) {
     channelId: P,
     transitionState: S,
     onClose: N
-  } = e, [E, R] = a.useState(true), [L, T] = a.useState(null), [F, D] = a.useState(null), {
-    analyticsLocations: I
+  } = e, [E, R] = r.useState(true), [L, T] = r.useState(null), [D, F] = r.useState(null), {
+    analyticsLocations: A
   } = (0, c.ZP)(u.Z.CLIPS_EDITOR);
-  a.useEffect(() => {
+  r.useEffect(() => {
     !async function() {
       let e;
       try {
@@ -47,25 +47,25 @@ function j(e) {
         n = URL.createObjectURL(new Blob([t], {
           type: "audio/mp4"
         })),
-        r = URL.createObjectURL(new Blob([e.data], {
+        a = URL.createObjectURL(new Blob([e.data], {
           type: "video/mp4"
         }));
-      D(n), T(r)
+      F(n), T(a)
     }()
-  }, [O.filepath, N]), a.useEffect(() => () => {
+  }, [O.filepath, N]), r.useEffect(() => () => {
     null != L && URL.revokeObjectURL(L)
-  }, [L]), a.useEffect(() => () => {
-    null != F && URL.revokeObjectURL(F)
-  }, [F]);
-  let [A, Z] = a.useState(null == (_ = null == (t = O.editMetadata) ? true : t.voiceAudio) || _), [B, M] = a.useState(null == (w = null == (n = O.editMetadata) ? true : n.applicationAudio) || w), [z, H] = a.useState({
+  }, [L]), r.useEffect(() => () => {
+    null != D && URL.revokeObjectURL(D)
+  }, [D]);
+  let [I, Z] = r.useState(null == (_ = null == (t = O.editMetadata) ? true : t.voiceAudio) || _), [B, M] = r.useState(null == (w = null == (n = O.editMetadata) ? true : n.applicationAudio) || w), [z, H] = r.useState({
     start: null != (C = null == (j = O.editMetadata) ? true : j.start) ? C : 0,
     end: null != (k = null == (y = O.editMetadata) ? true : y.end) ? k : 0
-  }), [W, U] = a.useState(O.name), V = a.useRef({
+  }), [W, U] = r.useState(O.name), V = r.useRef({
     name: W,
     editMetadata: {
       start: z.start,
       end: z.end,
-      voiceAudio: A,
+      voiceAudio: I,
       applicationAudio: B
     }
   });
@@ -74,12 +74,12 @@ function j(e) {
     editMetadata: {
       start: z.start,
       end: z.end,
-      voiceAudio: A,
+      voiceAudio: I,
       applicationAudio: B
     }
   };
   let X = (0, f.l)(O);
-  a.useEffect(() => {
+  r.useEffect(() => {
     async function e() {
       let e = {};
       null != X && (e = {
@@ -87,17 +87,17 @@ function j(e) {
       }), (0, d.Tm)(O.id, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            a = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
+          }))), a.forEach(function(t) {
+            var a;
+            a = n[t], t in e ? Object.defineProperty(e, t, {
+              value: a,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = r
+            }) : e[t] = a
           })
         }
         return e
@@ -107,17 +107,17 @@ function j(e) {
       e()
     }
   }, [O.id, X]);
-  let G = a.useRef(null),
-    K = a.useMemo(() => ({
+  let G = r.useRef(null),
+    K = r.useMemo(() => ({
       videoPlayerRef: G,
       applicationAudioEnabled: B,
       setApplicationAudioEnabled: M,
-      voiceAudioEnabled: A,
+      voiceAudioEnabled: I,
       setVoiceAudioEnabled: Z,
       cropData: z,
       setCropData: H
-    }), [B, A, z]);
-  return (0, r.jsx)(i.Y0X, {
+    }), [B, I, z]);
+  return (0, a.jsx)(i.Y0X, {
     impression: {
       impressionName: l.ImpressionNames.CLIP_EDITOR_VIEWED
     },
@@ -125,23 +125,23 @@ function j(e) {
     className: b.modalRoot,
     transitionState: S,
     parentComponent: "ClipsEditModal",
-    children: (0, r.jsx)(c.Gt, {
-      value: I,
-      children: (0, r.jsx)(i.hzk, {
+    children: (0, a.jsx)(c.Gt, {
+      value: A,
+      children: (0, a.jsx)(i.hzk, {
         className: b.modalContent,
-        children: (0, r.jsx)(g.Q.Provider, {
+        children: (0, a.jsx)(g.Q.Provider, {
           value: K,
-          children: null == L || null == F ? (0, r.jsx)("div", {
+          children: null == L || null == D ? (0, a.jsx)("div", {
             className: b.spinnerContainer,
-            children: (0, r.jsx)(i.$jN, {})
-          }) : (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(v.Z, {
+            children: (0, a.jsx)(i.$jN, {})
+          }) : (0, a.jsxs)(a.Fragment, {
+            children: [(0, a.jsx)(v.Z, {
               videoURL: L,
               isLoading: E,
               onDoneLoading: () => R(false),
-              audioURL: F,
+              audioURL: D,
               transitionState: S
-            }), !E && (0, r.jsx)(h.Z, {
+            }), !E && (0, a.jsx)(h.Z, {
               channelId: P,
               onSetClipName: U,
               clipName: W,

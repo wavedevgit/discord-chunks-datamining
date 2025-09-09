@@ -54,12 +54,14 @@ function j(e) {
       loading: t,
       disabled: t,
       text: t ? "Uploading…" : s
-    }), null != r && (0, a.jsx)(l.R94, {
-      type: l.geA.ERROR,
+    }), null != r && (0, a.jsx)(l.Text, {
+      variant: "text-sm/normal",
+      color: "text-feedback-critical",
       className: b.statusText,
       children: r
-    }), n && (0, a.jsx)(l.R94, {
-      type: l.geA.SUCCESS,
+    }), n && (0, a.jsx)(l.Text, {
+      variant: "text-sm/normal",
+      color: "text-feedback-positive",
       className: b.statusText,
       children: "Logs uploaded successfully"
     })]
@@ -367,8 +369,9 @@ function E() {
         loading: require,
         disabled: require
       })]
-    }), null != Chunk933557 && (0, Chunk951288.jsx)(Chunk481060.R94, {
-      type: Chunk481060.geA.ERROR,
+    }), null != Chunk933557 && (0, Chunk951288.jsx)(Chunk481060.Text, {
+      variant: "text-sm/normal",
+      color: "text-feedback-critical",
       className: Chunk727081.statusText,
       children: Chunk933557
     }), null != Chunk972959 && (0, Chunk951288.jsx)(N, {

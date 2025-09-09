@@ -152,7 +152,7 @@ class H extends Chunk647438.PureComponent {
         }), (0, Chunk951288.jsx)(Chunk600164.Z.Child, {
           grow: 0,
           shrink: 0,
-          children: (0, Chunk951288.jsx)(Chunk481060.xJW, {
+          children: (0, Chunk951288.jsx)("div", {
             className: Chunk894462.switch,
             children: (0, Chunk951288.jsx)(Chunk481060.ua7, {
               text: Chunk388032.intl.string(Chunk388032.t.uCD7qK),

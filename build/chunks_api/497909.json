@@ -1,1 +1,1 @@
-{"id":"497909","type":"experiment","data":{"kind":"user","name":"e.id","defaultConfig":{"treatmentId":false},"variations":"Object.fromEntries(e.getTreatments().map(e => {\n    let {treatmentId: t} = e;\n    return [\n        t,\n        { treatmentId: t }\n    ];\n}))"},"fromModule":{"id":"web.js"}}
+{"id":"497909","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

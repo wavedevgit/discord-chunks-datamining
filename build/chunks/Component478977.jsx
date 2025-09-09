@@ -57,7 +57,6 @@ let f = function(e) {
   } = e, f = i.useRef(null);
   return (0, r.jsxs)(o.xJW, {
     children: [(0, r.jsx)(o.vwX, {
-      tag: o.RB0.H5,
       children: u
     }), (0, r.jsx)(o.yRy, {
       targetElementRef: f,

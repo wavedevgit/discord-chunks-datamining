@@ -364,7 +364,6 @@ class eo extends Chunk647438.PureComponent {
     return (0, Chunk951288.jsx)(Chunk313201.FG, {
       children: t => (0, r.jsxs)(x.xJW, {
         title: o,
-        tag: "label",
         htmlFor: t,
         titleClassName: et.sectionTitle,
         className: et.name,

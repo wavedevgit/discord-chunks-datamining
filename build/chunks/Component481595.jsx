@@ -136,7 +136,6 @@ function U(e) {
     }), null != $ ? (0, r.jsx)(b.s, {
       giftRecipient: $
     }) : null, (0, r.jsx)(c.vwX, {
-      tag: c.RB0.H5,
       children: J ? j.intl.string(j.t.PEjaCw) : j.intl.string(j.t.sail9P)
     }), null != es ? (0, r.jsx)(x.B, {
       sku: er,
@@ -150,7 +149,6 @@ function U(e) {
     }), (0, r.jsxs)("div", {
       className: M.paymentSourceWrapper,
       children: [(0, r.jsx)(c.vwX, {
-        tag: c.RB0.H5,
         children: j.intl.string(j.t.mmDvV1)
       }), (0, r.jsx)(_.ZP, {
         paymentSources: Object.values(B),

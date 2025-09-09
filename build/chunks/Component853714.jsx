@@ -186,13 +186,13 @@ function G(e) {
     setLastExpandedRef: u,
     onHeaderClick: m,
     onContentClick: g
-  } = e, h = i.useRef(c);
+  } = e, f = i.useRef(c);
   i.useEffect(() => {
-    h.current = c
+    f.current = c
   }, [c]);
-  let f = (0, p.Z)("audit-log", h);
+  let h = (0, p.Z)("audit-log", f);
   return (0, r.jsx)(s.bG, {
-    navigator: f,
+    navigator: h,
     children: (0, r.jsx)(s.SJ, {
       children: e => {
         var {
@@ -377,7 +377,7 @@ class U extends Chunk647438.PureComponent {
       var n;
       let {
         actionFilter: i
-      } = this.props, l = (0, f.Pw)(e.value), a = (0, f.p5)(e.value), s = e.value === i;
+      } = this.props, l = (0, h.Pw)(e.value), a = (0, h.p5)(e.value), s = e.value === i;
       return (0, r.jsxs)(d.lo1, {
         value: e.value,
         selectedColor: d.lo1.Colors.BRAND,

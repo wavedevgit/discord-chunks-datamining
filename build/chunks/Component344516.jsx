@@ -133,7 +133,7 @@ function N(e) {
           shortcut: e
         }, n)
       })
-    }), (0, i.jsxs)(r.xJW, {
+    }), (0, i.jsxs)("div", {
       className: T.marginBottom8,
       children: [(0, i.jsx)(r.vwX, {
         id: Z,
@@ -165,7 +165,7 @@ function N(e) {
         deviceType: j.h7.AUDIO_INPUT,
         location: "VoiceSettingsModal"
       })
-    }), (0, i.jsxs)(r.xJW, {
+    }), (0, i.jsxs)("div", {
       className: T.marginBottom20,
       children: [(0, i.jsx)(r.vwX, {
         id: M,
@@ -182,7 +182,7 @@ function N(e) {
         deviceType: j.h7.AUDIO_OUTPUT,
         location: "VoiceSettingsModal"
       })
-    }), (0, i.jsxs)(r.xJW, {
+    }), (0, i.jsxs)("div", {
       className: T.marginBottom20,
       children: [(0, i.jsx)(r.vwX, {
         id: b,

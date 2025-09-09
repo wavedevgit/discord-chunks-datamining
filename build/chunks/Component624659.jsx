@@ -46,11 +46,11 @@ function I(e) {
     feedbackProblems: L = {},
     otherKey: D,
     hasCloseButton: T,
-    onSubmit: x,
-    onClose: y,
+    onSubmit: y,
+    onClose: x,
     canDismissForever: M = true,
     showHelpdeskLink: R = true
-  } = e, k = (0, c.Z)(h), [j, A] = a.useState(false), [P, B] = a.useState(null), [$, U] = a.useState(u().shuffle(h)), [F, Z] = a.useState(""), [w, H] = a.useState(false), G = (0, O.Dt)(), J = (0, f.Z)(j), z = (0, f.Z)(P), K = (0, f.Z)(x), Y = (0, f.Z)(F), Q = (0, f.Z)(w), V = null != P ? L[P] : null, X = null != V;
+  } = e, k = (0, c.Z)(h), [j, A] = a.useState(false), [P, B] = a.useState(null), [$, U] = a.useState(u().shuffle(h)), [F, Z] = a.useState(""), [w, H] = a.useState(false), G = (0, O.Dt)(), J = (0, f.Z)(j), z = (0, f.Z)(P), K = (0, f.Z)(y), Y = (0, f.Z)(F), Q = (0, f.Z)(w), V = null != P ? L[P] : null, X = null != V;
   return a.useEffect(() => {
     u().isEqual(k, h) || U((0, g.Bi)(h, D))
   }, [h, k, D]), (0, b.ZP)(() => () => {
@@ -81,12 +81,12 @@ function I(e) {
       }), T ? (0, l.jsx)(s.olH, {
         className: m.modalCloseButton,
         onClick: function() {
-          H(true), y()
+          H(true), x()
         }
       }) : null]
     }), (0, l.jsxs)(s.hzk, {
       className: p.modalContent,
-      children: [X ? null : (0, l.jsx)(s.xJW, {
+      children: [X ? null : (0, l.jsx)("div", {
         className: m.problemInfo,
         children: (0, l.jsx)(v.Z, {
           options: $,
@@ -94,10 +94,10 @@ function I(e) {
             let {
               value: t
             } = e;
-            B(t), Object.keys(L).includes(t) || y()
+            B(t), Object.keys(L).includes(t) || x()
           }
         })
-      }), X ? (0, l.jsxs)(s.xJW, {
+      }), X ? (0, l.jsxs)("div", {
         className: m.problemInfo,
         children: [(0, l.jsx)(s.Kx8, {
           value: F,
@@ -123,7 +123,7 @@ function I(e) {
           variant: "primary",
           size: "sm",
           text: N.intl.string(N.t.geKm7u),
-          onClick: y
+          onClick: x
         })]
       }) : M ? (0, l.jsx)(d.$q, {
         size: 24,

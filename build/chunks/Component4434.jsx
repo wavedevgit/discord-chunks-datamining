@@ -455,7 +455,6 @@ function ef(e) {
     }) : null, (0, r.jsxs)("div", {
       className: ee.paymentSourceWrapper,
       children: [(0, r.jsx)(_.vwX, {
-        tag: _.RB0.H5,
         children: $.intl.string($.t.mmDvV1)
       }), null != d ? null != D ? (0, r.jsx)(f.u, {
         asContainer: true,

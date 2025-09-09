@@ -22,7 +22,7 @@ function x(e) {
     setError: _,
     onNext: E,
     onClose: N
-  } = e, [h, p] = s.useState(false), [A, C] = s.useState(""), [j, f] = s.useState(false), g = (0, r.e7)([c.Z], () => c.Z.getErrors()), S = s.useRef(null);
+  } = e, [p, h] = s.useState(false), [A, C] = s.useState(""), [f, j] = s.useState(false), g = (0, r.e7)([c.Z], () => c.Z.getErrors()), S = s.useRef(null);
   s.useEffect(() => {
     if (n) {
       var e;
@@ -30,7 +30,7 @@ function x(e) {
     }
   }, [n]);
   let v = async e => {
-    e.preventDefault(), _(null), p(true);
+    e.preventDefault(), _(null), h(true);
     try {
       let {
         token: e
@@ -39,18 +39,18 @@ function x(e) {
     } catch (e) {
       _(new l.Z(e).getAnyErrorMessage())
     } finally {
-      p(false)
+      h(false)
     }
   }, O = async () => {
-    if (!j) {
-      f(true);
+    if (!f) {
+      j(true);
       try {
         await (0, o.i)(true), (0, i.showToast)((0, i.createToast)(d.intl.string(d.t["84yeo6"]), i.ToastType.SUCCESS))
       } catch (t) {
         let e = new l.Z(t).getAnyErrorMessage();
         null != e && (0, i.showToast)((0, i.createToast)(e, i.ToastType.FAILURE))
       } finally {
-        f(false)
+        j(false)
       }
     }
   };
@@ -74,14 +74,12 @@ function x(e) {
       })]
     }), (0, a.jsxs)(i.hzk, {
       className: m.content,
-      children: [(0, a.jsx)(i.xJW, {
-        title: d.intl.string(d.t["8mZX6O"]),
+      children: [(0, a.jsx)(i.oil, {
+        label: d.intl.string(d.t["8mZX6O"]),
         error: null != x ? x : null == g || null == (t = g.email_token) ? true : t[0],
-        children: (0, a.jsx)(i.oil, {
-          value: A,
-          onChange: C,
-          inputRef: S
-        })
+        value: A,
+        onChange: C,
+        inputRef: S
       }), (0, a.jsx)(i.Text, {
         className: m.help,
         variant: "text-sm/normal",
@@ -94,7 +92,7 @@ function x(e) {
         variant: "primary",
         text: d.intl.string(d.t.PDTjLC),
         type: "submit",
-        loading: h
+        loading: p
       })
     })]
   })

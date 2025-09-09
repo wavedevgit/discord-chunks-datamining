@@ -118,9 +118,9 @@ function L(e) {
     selectedUserIds: V,
     addUsers: E,
     clearSelection: T
-  } = (0, h.Z)(t), k = I.requireUnusualDmActivity || I.requireCommunicationDisabled || I.requireUnusualAccountActivity || I.requireUsernameQuarantined, A = I.selectedRoleIds.size > 0, U = null != I.selectedJoinDateOption.afterDate, F = I.selectedSort === b.d$.ORDER_BY_GUILD_JOINED_AT_ASC, B = null != I.selectedAccountAgeOption.afterDate, q = I.selectedSort === b.d$.ORDER_BY_USER_ID_ASC || I.selectedSort === b.d$.ORDER_BY_USER_ID_DESC, z = null != I.selectedSourceInviteCode && "" !== I.selectedSourceInviteCode, G = null != I.selectedJoinSourceType, Y = z || G, W = (0, p.xC)(t), K = l.useMemo(() => n.filter(e => (0, p.rX)(t, W, e)), [W, n, t]), Q = K.length > 0, J = 0 === K.filter(e => !V.has(e)).length, X = l.useCallback(() => {
-    Q && (J ? T() : E(K))
-  }, [Q, J, T, E, K]);
+  } = (0, h.Z)(t), k = I.requireUnusualDmActivity || I.requireCommunicationDisabled || I.requireUnusualAccountActivity || I.requireUsernameQuarantined, A = I.selectedRoleIds.size > 0, U = null != I.selectedJoinDateOption.afterDate, F = I.selectedSort === b.d$.ORDER_BY_GUILD_JOINED_AT_ASC, B = null != I.selectedAccountAgeOption.afterDate, q = I.selectedSort === b.d$.ORDER_BY_USER_ID_ASC || I.selectedSort === b.d$.ORDER_BY_USER_ID_DESC, z = null != I.selectedSourceInviteCode && "" !== I.selectedSourceInviteCode, G = null != I.selectedJoinSourceType, Y = z || G, W = (0, p.xC)(t), K = l.useMemo(() => n.filter(e => (0, p.rX)(t, W, e)), [W, n, t]), Q = K.length > 0, X = 0 === K.filter(e => !V.has(e)).length, J = l.useCallback(() => {
+    Q && (X ? T() : E(K))
+  }, [Q, X, T, E, K]);
   return (0, r.jsx)("thead", {
     children: (0, r.jsxs)("tr", {
       className: _.tableHeaderRow,
@@ -130,11 +130,11 @@ function L(e) {
           shouldShow: !Q,
           text: H.intl.string(H.t.tJEY0N),
           children: e => (0, r.jsx)(d.P3F, N(S({}, e), {
-            onClick: X,
+            onClick: J,
             className: _.tableHeaderCell,
             children: (0, r.jsx)(u.$q, {
               type: u.M0.INVERTED,
-              value: J,
+              value: X,
               disabled: !Q
             })
           }))

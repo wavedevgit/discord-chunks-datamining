@@ -197,7 +197,6 @@ let P = e => {
       error: n,
       className: o,
       required: b,
-      tag: "label",
       htmlFor: v,
       children: [(0, r.jsx)(s.oil, {
         name: m,

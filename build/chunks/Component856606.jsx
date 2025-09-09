@@ -99,7 +99,7 @@ let q = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk388610.Z], () => {
   }
 })(Chunk852860.Z);
 
-function J(e) {
+function $(e) {
   let {
     overwrite: t
   } = e, n = (0, o.e7)([T.Z], () => T.Z.channel), l = (0, o.e7)([_.Z], () => null != n ? _.Z.getGuild(n.getGuildId()) : null), r = (0, o.e7)([I.Z], () => null != l && null != t && t.type === j.BN.ROLE ? I.Z.getRole(l.id, t.id) : true), s = S.D.useExperiment({
@@ -191,7 +191,7 @@ function J(e) {
   })
 }
 
-function $(e) {
+function J(e) {
   let {
     guildId: t,
     channelId: n,
@@ -255,7 +255,7 @@ function K(e) {
           children: e.name
         })
       }
-      if (e instanceof w.Z) return (0, i.jsx)($, {
+      if (e instanceof w.Z) return (0, i.jsx)(J, {
         guildId: t.id,
         channelId: n.id,
         user: e
@@ -450,7 +450,7 @@ function et() {
   let l = exports[require];
   return (0, Chunk951288.jsxs)(Chunk325476.ZP, {
     className: Chunk198750.container,
-    children: [(0, Chunk951288.jsx)(ee, {}), (0, Chunk951288.jsx)(J, {
+    children: [(0, Chunk951288.jsx)(ee, {}), (0, Chunk951288.jsx)($, {
       overwrite: Chunk647438
     })]
   })

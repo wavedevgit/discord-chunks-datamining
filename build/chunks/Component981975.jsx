@@ -71,7 +71,7 @@ function w(e) {
       color: "header-secondary",
       className: E.headerNoConfigSubtitle,
       children: N.intl.format(N.t.q5f7tL, {
-        helpdeskArticleUrl: h.Z.getArticleURL(y.BhN.CONNECTION_DETAILS_ADMIN)
+        helpdeskArticleUrl: f.Z.getArticleURL(y.BhN.CONNECTION_DETAILS_ADMIN)
       })
     }), (0, r.jsx)(u.zxk, {
       disabled: n,
@@ -96,9 +96,9 @@ function R(e) {
   } = (0, j.Z)(0), {
     scrolledToTop: Z,
     handleScroll: D
-  } = (0, _.V)(), A = (0, c.e7)([f.Z], () => {
+  } = (0, _.V)(), A = (0, c.e7)([h.Z], () => {
     var e;
-    return null == (e = f.Z.getRoleMemberCount(t.id)) ? true : e[n.id]
+    return null == (e = h.Z.getRoleMemberCount(t.id)) ? true : e[n.id]
   }, [n.id, t.id]), L = (0, c.Wu)([x.Z], () => {
     var e;
     return null != (e = x.Z.getEditedRoleConnectionConfigurationsMap().get(n.id)) ? e : []
@@ -160,7 +160,7 @@ function R(e) {
         }), (0, r.jsx)(u.Text, {
           variant: "text-sm/normal",
           children: N.intl.format(N.t.q5f7tL, {
-            helpdeskArticleUrl: h.Z.getArticleURL(y.BhN.CONNECTION_DETAILS_ADMIN)
+            helpdeskArticleUrl: f.Z.getArticleURL(y.BhN.CONNECTION_DETAILS_ADMIN)
           })
         })]
       })), function(e, t, n, i, l) {

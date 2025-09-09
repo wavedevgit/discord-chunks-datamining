@@ -79,7 +79,6 @@ function b(e, t, r, a, b) {
         children: (0, n.jsxs)(c.Z.Child, {
           basis: "100%",
           children: [(0, n.jsx)(l.vwX, {
-            tag: l.RB0.H5,
             className: y.marginBottom8,
             children: "Simulcast Override"
           }), (0, n.jsx)(l.q4e, {

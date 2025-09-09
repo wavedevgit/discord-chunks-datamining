@@ -52,7 +52,6 @@ let u = function(e) {
     null != m.current && URL.revokeObjectURL(m.current)
   }, []), (0, r.jsxs)(a.xJW, {
     children: [(0, r.jsx)(a.vwX, {
-      tag: a.RB0.H5,
       children: (0, r.jsxs)("div", {
         className: s.headingWithTooltip,
         children: [_, (0, r.jsx)(a.ua7, {

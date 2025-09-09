@@ -120,7 +120,7 @@ class x extends Chunk839548.Z {
   }
   initialize(e) {
     let t;
-    this.logger.info("Creating connection to ".concat(e.address, ":").concat(e.port, " with audio ssrc: ").concat(e.ssrc)), this.audioSSRC = e.ssrc, this.streamUserId = e.streamUserId, this.initializeStreamParameters(e.streamParameters), e.streamParameters = [{
+    this.logger.info("Creating connection to ".concat(e.address, ":").concat(e.port, " with audio ssrc: ").concat(e.ssrc)), this.beginInitializeAt = performance.now(), this.audioSSRC = e.ssrc, this.streamUserId = e.streamUserId, this.initializeStreamParameters(e.streamParameters), e.streamParameters = [{
       type: O.Tr.AUDIO,
       ssrc: this.audioSSRC,
       rid: "",
@@ -142,8 +142,8 @@ class x extends Chunk839548.Z {
           address: s,
           port: l
         } = a;
-        this.logger.info("Connected with local address ".concat(s, ":").concat(l, " and protocol: ").concat(o)), this.onConnectStarted = performance.now(), r(r => {
-          this.logger.info("Available codecs: ".concat(JSON.stringify(r)));
+        this.logger.info("Connected with local address ".concat(s, ":").concat(l, " and protocol: ").concat(o)), this.onConnectCallbackAt = performance.now(), r(r => {
+          this.onVideoCodecsCallbackAt = performance.now(), this.logger.info("Available codecs: ".concat(JSON.stringify(r)));
           let i = (0, g.DY)(this.experimentFlags);
           this.logger.info("Experimental codecs: ".concat(JSON.stringify(i))), this.codecs = [{
             type: "audio",
@@ -164,7 +164,7 @@ class x extends Chunk839548.Z {
             }
           })], this.logger.info("Audio codecs: ".concat(this.codecs.filter(e => "audio" === e.type).map(e => e.name))), this.logger.info("Video codecs: ".concat(this.codecs.filter(e => "video" === e.type).map(e => e.name + "[encode: " + e.encode + ", decode: " + e.decode + "]"))), t.getEncryptionModes(r => {
             var i, a, c, u, d, f, _, p, h, g, E, b, y, O;
-            this.logger.info("Encryption modes: ".concat(r));
+            this.onEncryptionModesCallbackAt = performance.now(), this.logger.info("Encryption modes: ".concat(r));
             let I = A(T({}, this.getConnectionTransportOptions()), {
               callMinBitRate: e.callMinBitrate
             });
@@ -839,7 +839,7 @@ class x extends Chunk839548.Z {
   constructor(e, t, n) {
     super(e, t), I(this, "mediaEngineConnectionId", "Native-".concat(P++)), I(this, "goLiveSourceIdentifier", true), I(this, "selfVideo", false), I(this, "forceAudioNormal", false), I(this, "forceAudioPriority", false), I(this, "codecs", []), I(this, "videoEncoderFallbackPending", false), I(this, "desktopDegradationPreference", (0, b.zS)().DegradationPreference.MAINTAIN_FRAMERATE), I(this, "sourceDesktopDegradationPreference", (0, b.zS)().DegradationPreference.DISABLED), I(this, "videoDegradationPreference", (0, b.zS)().DegradationPreference.BALANCED), I(this, "localPans", {}), I(this, "remoteAudioSSRCs", {}), I(this, "remoteVideoSSRCs", {}), I(this, "inputMode", v.pM.VOICE_ACTIVITY), I(this, "vadThreshold", false), I(this, "vadAutoThreshold", true), I(this, "vadKrispActivationThreshold", .5), I(this, "vadUseKrisp", true), I(this, "vadLeading", 5), I(this, "vadTrailing", 25), I(this, "pttReleaseDelay", 20), I(this, "soundshareActive", false), I(this, "soundshareId", null), I(this, "soundshareSentSpeakingEvent", false), I(this, "echoCancellation", true), I(this, "noiseSuppression", true), I(this, "automaticGainControl", {
       enabled: true
-    }), I(this, "noiseCancellation", false), I(this, "noiseCancellationDuringProcessing", false), I(this, "voiceFilterId", null), I(this, "experimentalEncoders", false), I(this, "hardwareH264", true), I(this, "softwareH264", true), I(this, "attenuationFactor", .5), I(this, "attenuateWhileSpeakingSelf", false), I(this, "attenuateWhileSpeakingOthers", true), I(this, "qos", true), I(this, "conn", true), I(this, "minimumJitterBufferLevel", 0), I(this, "postponeDecodeLevel", 100), I(this, "reconnectInterval", 6e4), I(this, "keyframeInterval", 0), I(this, "clipsKeyFrameInterval", 0), I(this, "videoQualityMeasurement", ""), I(this, "videoEncoderExperiments", ""), I(this, "numFastUdpReconnects", 0), I(this, "simulcastLQDisabledSsrc", true), I(this, "lastPreparedTransitionId", false), I(this, "lastExecutedTransitionId", false), I(this, "logger", true), I(this, "transportInfo", true), I(this, "onConnectStarted", true), I(this, "handleSpeakingNative", (e, t) => {
+    }), I(this, "noiseCancellation", false), I(this, "noiseCancellationDuringProcessing", false), I(this, "voiceFilterId", null), I(this, "experimentalEncoders", false), I(this, "hardwareH264", true), I(this, "softwareH264", true), I(this, "attenuationFactor", .5), I(this, "attenuateWhileSpeakingSelf", false), I(this, "attenuateWhileSpeakingOthers", true), I(this, "qos", true), I(this, "conn", true), I(this, "minimumJitterBufferLevel", 0), I(this, "postponeDecodeLevel", 100), I(this, "reconnectInterval", 6e4), I(this, "keyframeInterval", 0), I(this, "clipsKeyFrameInterval", 0), I(this, "videoQualityMeasurement", ""), I(this, "videoEncoderExperiments", ""), I(this, "numFastUdpReconnects", 0), I(this, "simulcastLQDisabledSsrc", true), I(this, "lastPreparedTransitionId", false), I(this, "lastExecutedTransitionId", false), I(this, "logger", true), I(this, "transportInfo", true), I(this, "beginInitializeAt", true), I(this, "onConnectCallbackAt", true), I(this, "onVideoCodecsCallbackAt", true), I(this, "onEncryptionModesCallbackAt", true), I(this, "handleSpeakingNative", (e, t) => {
       let n = v.Dg.NONE;
       n = "boolean" == typeof t ? t ? v.Dg.VOICE : v.Dg.NONE : t, this.handleSpeakingFlags(e, n)
     }), I(this, "handleNativeMuteToggled", () => {

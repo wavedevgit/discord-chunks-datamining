@@ -82,7 +82,7 @@ function P(e) {
       commandLevelPermissions: A,
       defaultMemberPermissions: null == R ? true : R.defaultMemberPermissions
     })
-  }, [j, R, k, A]), B = null != l ? l : t, [W, U] = r.useMemo(() => {
+  }, [j, R, k, A]), B = null != l ? l : t, [U, W] = r.useMemo(() => {
     let e = {},
       t = {};
     for (let [n, i] of Object.entries(P)) i.type === d.Kw.CHANNEL ? e[n] = i : t[n] = i;
@@ -134,7 +134,7 @@ function P(e) {
     if (i = Object.assign(i, e), n.length > 0 && (i = a().omit(i, n)), !H(i)) return void G(e, n);
     h.W4(t, B, i)
   }, [t, P, B, H, G]), F = r.useCallback(() => {
-    let e = Object.keys(W);
+    let e = Object.keys(U);
     return (0, c.ZDy)(async () => {
       let {
         default: t
@@ -150,8 +150,8 @@ function P(e) {
         selectedPermissionCount: D
       }, n))
     })
-  }, [z, W, j, D]), K = r.useCallback(() => {
-    let e = Object.keys(U);
+  }, [z, U, j, D]), K = r.useCallback(() => {
+    let e = Object.keys(W);
     return (0, c.ZDy)(async () => {
       let {
         default: t
@@ -167,7 +167,7 @@ function P(e) {
         selectedPermissionCount: D
       }, n))
     })
-  }, [z, j, U, D]), q = r.useCallback(() => (0, c.ZDy)(async () => {
+  }, [z, j, W, D]), q = r.useCallback(() => (0, c.ZDy)(async () => {
     let {
       default: e
     } = await n.e("21897").then(n.bind(n, 303313)), t = R.defaultMemberPermissions;
@@ -178,13 +178,13 @@ function P(e) {
     buttonClick: K,
     buttonText: S.intl.string(S.t["56jRn5"]),
     noneSelectedText: S.intl.string(S.t.C0rYfn),
-    overwrites: U,
+    overwrites: W,
     title: null == l ? S.intl.string(S.t["vPWe+/"]) : S.intl.string(S.t["1jLVGB"])
   }, {
     buttonClick: F,
     buttonText: S.intl.string(S.t["i1c+kZ"]),
     noneSelectedText: S.intl.string(S.t.UBJhCw),
-    overwrites: W,
+    overwrites: U,
     title: null == l ? S.intl.string(S.t.OGiMXF) : S.intl.string(S.t.Ujbaqq)
   }];
   return (0, i.jsxs)(r.Fragment, {

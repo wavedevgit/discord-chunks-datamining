@@ -32,7 +32,7 @@ function E(e) {
     pendingState: t
   } = e, n = i.useRef(false), l = i.useCallback(async e => {
     if (!n.current) try {
-      await (0, p.k)(e), (0, h.V)(e), (0, s.le)(), (0, s.aC)(e)
+      await (0, p.k)(e), (0, f.V)(e), (0, s.le)(), (0, s.aC)(e)
     } finally {
       n.current = true
     }
@@ -73,7 +73,7 @@ function I(e) {
     var e;
     return null == (e = v.Z.pendingState) ? true : e.isAgeRestricted
   }), c = i.useCallback(e => {
-    f.Z.setIsAgeRestricted(t, e)
+    h.Z.setIsAgeRestricted(t, e)
   }, [t]), m = n === y.V_K.AGE_RESTRICTED && s !== y.V_K.AGE_RESTRICTED;
   return (0, r.jsx)(a.hjN, {
     children: (0, r.jsx)(a.j7V, {
@@ -112,7 +112,7 @@ function T() {
     (null == module ? true : module.id) != null && Chunk863249.ZP.fetchVerificationForm(module.id)
   }, [null == module ? true : module.id]);
   let n = Chunk647438.useCallback(t => {
-    (null == e ? true : e.id) != null && f.Z.setSelectedJoinType(e.id, t)
+    (null == e ? true : e.id) != null && h.Z.setSelectedJoinType(e.id, t)
   }, [null == module ? true : module.id]);
   if (null == module || null == exports) return null;
   let {

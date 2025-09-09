@@ -179,7 +179,7 @@ function eu(e) {
       id: "overlays",
       name: "Dev Overlays",
       group: el.v0.DEVELOPMENT,
-      render: () => (0, a.jsx)(k.Z, {
+      render: () => (0, a.jsx)(I.Z, {
         devSettingsCategory: _.zU.OVERLAYS
       })
     }), e.push({
@@ -191,7 +191,7 @@ function eu(e) {
       id: "reporting",
       name: "Reporting",
       group: el.v0.EXPERIMENTS,
-      render: () => (0, a.jsx)(k.Z, {
+      render: () => (0, a.jsx)(I.Z, {
         devSettingsCategory: _.zU.REPORTING
       })
     }), e.push({
@@ -263,12 +263,12 @@ function eu(e) {
       id: "fractional_nitro",
       name: "Fractional Nitro",
       group: el.v0.PREMIUM,
-      render: () => (0, a.jsx)(R.Z, {})
+      render: () => (0, a.jsx)(k.Z, {})
     })), e.push({
       id: "gifting_intent",
       name: "Gifting Intent",
       group: el.v0.PREMIUM,
-      render: () => (0, a.jsx)(I.Z, {})
+      render: () => (0, a.jsx)(R.Z, {})
     }), e.push({
       id: "voice_filters",
       name: "Voice Filters",

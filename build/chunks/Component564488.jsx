@@ -20,23 +20,23 @@ let m = Chunk647438.memo(function(e) {
   } = e, {
     hasChanges: g,
     editingRule: p,
-    createNewEditingRule: h,
-    setEditingRule: f
+    createNewEditingRule: f,
+    setEditingRule: h
   } = (0, s.V)(), {
     isLoading: b
   } = (0, s.w)(), [x] = i.useState(() => !(0, l.Vb)(t)), j = (null == p ? true : p.id) === t.id || n, v = (0, a.U)(null == t ? true : t.id), _ = j && null != p ? p : t, O = i.useMemo(() => (0, o.af)(t.name), [null == t ? true : t.name]), y = i.useCallback(() => {
-    h(t.guildId, t.triggerType)
-  }, [t.guildId, t.triggerType, h]), C = i.useCallback(e => {
-    b || f(e, true)
-  }, [b, f]);
+    f(t.guildId, t.triggerType)
+  }, [t.guildId, t.triggerType, f]), C = i.useCallback(e => {
+    b || h(e, true)
+  }, [b, h]);
   i.useEffect(() => {
-    m && f(t, true)
-  }, [m, t, f]);
+    m && h(t, true)
+  }, [m, t, h]);
   let N = i.useCallback(() => {
-    j ? g || f(null) : g ? O(() => {
-      f(t)
-    }) : f(t)
-  }, [j, g, O, t, f]);
+    j ? g || h(null) : g ? O(() => {
+      h(t)
+    }) : h(t)
+  }, [j, g, O, t, h]);
   return (0, r.jsx)(d.Z, {
     renderHeader: (0, r.jsx)(u.Z, {
       rule: _,

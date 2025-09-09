@@ -19,13 +19,13 @@ function x(e) {
     guildTemplate: t,
     onClick: n,
     autoFocus: l
-  } = e, a = s.useCallback(() => {
+  } = e, r = s.useCallback(() => {
     n(t)
   }, [t, n]);
   return (0, i.jsx)(o.Z, {
     icon: c.M[t.id],
     message: t.label,
-    onClick: a,
+    onClick: r,
     autoFocus: l
   })
 }
@@ -39,26 +39,26 @@ function C(e) {
     directoryGuildName: C
   } = e, h = (0, d.Pp)();
   return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsxs)(a.xBx, {
-      direction: r.Z.Direction.VERTICAL,
+    children: [(0, i.jsxs)(r.xBx, {
+      direction: a.Z.Direction.VERTICAL,
       className: m.header,
       separator: false,
-      children: [(0, i.jsx)(a.X6q, {
+      children: [(0, i.jsx)(r.X6q, {
         className: m.title,
         variant: "heading-xl/semibold",
         children: u.intl.format(u.t.T7aLYW, {
           guildName: C
         })
-      }), (0, i.jsx)(a.Text, {
+      }), (0, i.jsx)(r.Text, {
         className: m.subtitle,
         color: "header-secondary",
         variant: "text-md/normal",
         children: u.intl.string(u.t["RA+St7"])
-      }), null != s && (0, i.jsx)(a.olH, {
+      }), null != s && (0, i.jsx)(r.olH, {
         className: m.closeButton,
         onClick: s
       })]
-    }), (0, i.jsxs)(a.hzk, {
+    }), (0, i.jsxs)(r.hzk, {
       className: m.templatesList,
       paddingFix: false,
       children: [(0, i.jsx)(x, {
@@ -92,7 +92,7 @@ function C(e) {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
         }), t),
         onClick: c
-      }), (0, i.jsx)(a.Text, {
+      }), (0, i.jsx)(r.Text, {
         className: m.optionHeader,
         color: "header-secondary",
         variant: "text-xs/bold",
@@ -116,7 +116,7 @@ function C(e) {
         guildTemplate: h[d.sE.HUB_DORM],
         onClick: c
       })]
-    }), (0, i.jsx)(a.mzw, {
+    }), (0, i.jsx)(r.mzw, {
       className: m.footer,
       children: (0, i.jsx)(l.zx, {
         className: m.backButton,

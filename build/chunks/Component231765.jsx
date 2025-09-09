@@ -360,7 +360,7 @@ function Z(e) {
   return (0, r.jsx)(l.hjN, {
     tag: l.RB0.H1,
     title: v.intl.string(v.t.EuXv2t),
-    children: (0, r.jsxs)(l.xJW, {
+    children: (0, r.jsxs)("div", {
       className: I.formItem,
       children: [(0, r.jsx)(l.R94, {
         className: I.formItem,

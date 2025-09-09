@@ -126,7 +126,7 @@ function Z(e) {
   }
 
   function x(e) {
-    let i = f.default.getUser(t.id);
+    let i = h.default.getUser(t.id);
     null != i && (0, d.jW)(e, async () => {
       let {
         default: e
@@ -140,7 +140,7 @@ function Z(e) {
   }
   return (0, m.$)(p, "GuildSettingsRolesEditMembers"), (0, r.jsx)("div", {
     className: T.contentWidth,
-    children: (0, r.jsx)(h.Z, {
+    children: (0, r.jsx)(f.Z, {
       targetElementRef: g,
       userId: t.id,
       guildId: l,
@@ -220,15 +220,15 @@ function A(e) {
     handleAddClick: u
   } = e, {
     analyticsLocations: m
-  } = (0, p.ZP)(g.Z.MEMBER_LIST), h = i.useMemo(() => l.trim().toLowerCase(), [l]);
-  (0, _.rY)(t, h);
-  let f = i.useMemo(() => d.filter(e => (0, _.eg)(h, e)), [d, h]),
-    b = i.useMemo(() => f.sort((e, t) => e.name.localeCompare(t.name)), [f]);
+  } = (0, p.ZP)(g.Z.MEMBER_LIST), f = i.useMemo(() => l.trim().toLowerCase(), [l]);
+  (0, _.rY)(t, f);
+  let h = i.useMemo(() => d.filter(e => (0, _.eg)(f, e)), [d, f]),
+    b = i.useMemo(() => h.sort((e, t) => e.name.localeCompare(t.name)), [h]);
   return (0, r.jsx)(p.Gt, {
     value: m,
     children: (0, r.jsx)(c._2F, {
       className: S.list,
-      sections: [Math.max(f.length, 1)],
+      sections: [Math.max(h.length, 1)],
       sectionHeight: a,
       renderSection: () => (0, r.jsx)("div", {
         style: {
@@ -295,8 +295,8 @@ function k(e) {
     headerHeight: g,
     headerRef: p
   } = (0, O.Z)(0), {
-    scrolledToTop: h,
-    handleScroll: f
+    scrolledToTop: f,
+    handleScroll: h
   } = (0, y.V)(), j = l.managed || o, v = (0, _.e)(t.id, l.id), C = (0, s.e7)([x.Z], () => {
     var e, n;
     return null != (n = null == (e = x.Z.getRoleMemberCount(t.id)) ? true : e[l.id]) ? n : 0
@@ -324,7 +324,7 @@ function k(e) {
         className: T.contentWidth,
         children: (0, r.jsxs)("div", {
           className: a()(T.header, {
-            [T.stickyHeaderElevated]: !h
+            [T.stickyHeaderElevated]: !f
           }),
           children: [(0, r.jsx)(y.Z, {
             guild: t,
@@ -349,7 +349,7 @@ function k(e) {
       guildId: t.id,
       roleId: l.id,
       locked: j,
-      onScroll: f,
+      onScroll: h,
       roleMembers: v,
       handleAddClick: R
     })]

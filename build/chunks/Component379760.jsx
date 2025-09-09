@@ -22,8 +22,8 @@ function h(e) {
     onSubmit: p,
     onCancel: f
   } = e;
-  return (0, n.jsxs)(a.Z, {
-    direction: a.Z.Direction.VERTICAL,
+  return (0, n.jsxs)(o.Z, {
+    direction: o.Z.Direction.VERTICAL,
     children: [(0, n.jsx)(l.Dx, {
       className: d.marginBottom8,
       children: t
@@ -31,7 +31,7 @@ function h(e) {
       className: u.subTitle,
       children: r
     }), (0, n.jsxs)("div", {
-      children: [(0, n.jsx)(o.Z, {
+      children: [(0, n.jsx)(a.Z, {
         inputClassName: u.codeInput,
         onSubmit: p
       }), null != h ? (0, n.jsx)(i.Text, {

@@ -58,7 +58,7 @@ let j = function(e) {
             homeHeader: n
           })
         },
-        uploadType: h.pC.HOME_HEADER
+        uploadType: f.pC.HOME_HEADER
       }, n))
     })
   }, [t.id]), _ = i.useCallback(e => {
@@ -89,7 +89,7 @@ let j = function(e) {
     onChange: v,
     hint: b.intl.string(b.t.NyXznp),
     enabled: j,
-    maxFileSizeBytes: f.B
+    maxFileSizeBytes: h.B
   });
   return j ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -116,7 +116,7 @@ let j = function(e) {
           className: x.uploadButton,
           children: (0, r.jsx)(d.Z, {
             onChange: v,
-            maxFileSizeBytes: f.B,
+            maxFileSizeBytes: h.B,
             text: b.intl.string(b.t.yG2pUl),
             size: "md",
             variant: "primary"

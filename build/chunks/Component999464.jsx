@@ -52,7 +52,7 @@ let p = (0, Chunk313201.hQ)(),
           color: "header-secondary",
           children: f.intl.string(f.t["/4y6o6"])
         })
-      }), (0, r.jsxs)(o.xJW, {
+      }), (0, r.jsxs)("div", {
         className: g.formItem,
         children: [(0, r.jsx)(o.vwX, {
           id: p,

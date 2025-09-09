@@ -1,7 +1,7 @@
 /** Chunk was on 8106 **/
 /** chunk id: 193544, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,23 +16,23 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk201720 = require("./201720.js");
 
-function h(e) {
+function f(e) {
   var t, n, l;
   let {
-    changeTitle: h,
-    value: f,
+    changeTitle: f,
+    value: h,
     options: b,
     className: x,
     onChange: j
-  } = e, [v, _] = i.useState(f), [O, y] = i.useState(false), [C, N] = i.useState(false), E = i.useRef(null);
+  } = e, [v, _] = i.useState(h), [O, y] = i.useState(false), [C, N] = i.useState(false), E = i.useRef(null);
   i.useEffect(() => {
-    _(f)
-  }, [f]), i.useEffect(() => () => {
+    _(h)
+  }, [h]), i.useEffect(() => () => {
     clearTimeout(E.current)
   }, []);
   let I = b.find(e => e.value === v);
   return (0, r.jsx)(u.Z, {
-    title: O ? h : null != (t = null == I ? true : I.title) ? t : h,
+    title: O ? f : null != (t = null == I ? true : I.title) ? t : f,
     description: O ? "(".concat(null != (n = null == I ? true : I.title) ? n : g.intl.string(g.t.PoWNfX), ")") : null != (l = null == I ? true : I.description) ? l : "",
     highlightColor: O ? d.q.NONE : null == I ? true : I.highlightColor,
     action: (0, r.jsx)(s.zx, {

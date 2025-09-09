@@ -23,22 +23,22 @@ function x(e) {
     onClose: x
   } = e;
   return l()(null != n, "Missing guild in Hub add guild confirmation"), (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsxs)(r.xBx, {
+    children: [(0, i.jsxs)(a.xBx, {
       direction: o.Z.Direction.VERTICAL,
       className: m.header,
       separator: false,
-      children: [null != x && (0, i.jsx)(r.olH, {
+      children: [null != x && (0, i.jsx)(a.olH, {
         className: m.closeButton,
         onClick: x
       }), (0, i.jsx)(c.Z, {
         guild: n,
         size: c.Z.Sizes.XLARGE,
         active: true
-      }), (0, i.jsx)(r.X6q, {
+      }), (0, i.jsx)(a.X6q, {
         className: m.title,
         variant: "heading-xl/semibold",
         children: u.intl.string(u.t.CueiPT)
-      }), (0, i.jsx)(r.Text, {
+      }), (0, i.jsx)(a.Text, {
         className: m.__invalid_subtitle,
         color: "header-secondary",
         variant: "text-md/normal",
@@ -48,22 +48,22 @@ function x(e) {
           guildName: t
         })
       })]
-    }), (0, i.jsx)(r.mzw, {
+    }), (0, i.jsx)(a.mzw, {
       className: m.buttonRow,
-      children: s ? (0, i.jsx)(a.zx, {
+      children: s ? (0, i.jsx)(r.zx, {
         className: m.addConfirmButton,
-        color: a.zx.Colors.BRAND,
+        color: r.zx.Colors.BRAND,
         onClick: x,
         children: u.intl.string(u.t["X0WK+/"])
       }) : (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(a.zx, {
+        children: [(0, i.jsx)(r.zx, {
           className: m.createSecondaryButton,
-          color: a.zx.Colors.PRIMARY,
+          color: r.zx.Colors.PRIMARY,
           onClick: x,
           children: u.intl.string(u.t["X/VABg"])
-        }), (0, i.jsx)(a.zx, {
+        }), (0, i.jsx)(r.zx, {
           className: m.createConfirmButton,
-          color: a.zx.Colors.BRAND,
+          color: r.zx.Colors.BRAND,
           onClick: () => {
             (0, d.XU)(n.id), null == x || x()
           },

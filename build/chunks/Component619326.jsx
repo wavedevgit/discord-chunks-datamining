@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk267877 = require("./267877.js");
 
-function f(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -114,29 +114,29 @@ function v(e) {
         colorHex: (0, s.Rf)(t)
       })
     });
-  return (0, r.jsxs)("div", b(f({
-    className: h.buttonsContainer,
+  return (0, r.jsxs)("div", b(h({
+    className: f.buttonsContainer,
     "aria-label": p.intl.string(p.t.FJjrIy),
     ref: N
   }, E), {
     children: [(0, r.jsx)("div", {
-      className: a()(h.colorSwatch, {
-        [h.disabled]: l
+      className: a()(f.colorSwatch, {
+        [f.disabled]: l
       }),
-      children: (0, r.jsxs)(c.P3F, b(f({
+      children: (0, r.jsxs)(c.P3F, b(h({
         onClick: l ? true : function() {
           n(g.p6O)
         },
         "aria-disabled": l
       }, I), {
         children: [(0, r.jsx)("div", {
-          className: h.swatch,
+          className: f.swatch,
           style: {
             backgroundColor: g.Pbq
           },
           children: _ ? y : null
         }), (0, r.jsx)(c.Text, {
-          className: h.swatchDescription,
+          className: f.swatchDescription,
           color: "header-secondary",
           variant: "text-xs/normal",
           "aria-hidden": true,
@@ -144,23 +144,23 @@ function v(e) {
         })]
       }))
     }), (0, r.jsxs)("div", {
-      className: a()(h.colorSwatch, {
-        [h.disabled]: l
+      className: a()(f.colorSwatch, {
+        [f.disabled]: l
       }),
-      children: [(0, r.jsxs)(c.P3F, b(f({
+      children: [(0, r.jsxs)(c.P3F, b(h({
         onClick: l ? true : x,
         "aria-disabled": l
       }, S), {
         children: [(0, r.jsx)("div", {
-          className: a()(h.customSwatch, {
-            [h.defaultSwatch]: O === g.p6O
+          className: a()(f.customSwatch, {
+            [f.defaultSwatch]: O === g.p6O
           }),
           style: {
             "--custom-color": (0, s.Rf)(O)
           },
           children: _ ? null : y
         }), (0, r.jsx)(c.Text, {
-          className: h.swatchDescription,
+          className: f.swatchDescription,
           color: "header-secondary",
           variant: "text-xs/normal",
           "aria-hidden": true,
@@ -169,17 +169,17 @@ function v(e) {
       })), !l && (0, r.jsx)(c.yRy, {
         targetElementRef: d,
         onRequestOpen: x,
-        renderPopout: e => (0, r.jsx)(c.Z$W, b(f({}, e), {
+        renderPopout: e => (0, r.jsx)(c.Z$W, b(h({}, e), {
           value: t,
           onChange: v
         })),
-        children: e => (0, r.jsx)(c.P3F, b(f({}, e), {
+        children: e => (0, r.jsx)(c.P3F, b(h({}, e), {
           innerRef: d,
-          className: h.dropperIconButton,
+          className: f.dropperIconButton,
           "aria-label": p.intl.string(p.t.Qp04hI),
           children: (0, r.jsx)(c.ilE, {
             size: "custom",
-            className: h.dropperIcon,
+            className: f.dropperIcon,
             width: 14,
             height: 14,
             color: j(O)

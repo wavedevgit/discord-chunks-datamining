@@ -18,10 +18,10 @@ function o(e) {
   return (0, i.jsx)(s.tEY, {
     within: true,
     children: (0, i.jsxs)("div", {
-      className: r.iconContainer,
+      className: a.iconContainer,
       children: [null != t ? (0, i.jsx)("img", {
         alt: "Your icon",
-        className: r.filledIcon,
+        className: a.filledIcon,
         src: t
       }) : (0, i.jsxs)("svg", {
         width: "80",
@@ -55,7 +55,7 @@ function o(e) {
         onChange: n,
         multiple: false,
         tabIndex: 0,
-        "aria-label": a.intl.string(a.t.DWB2YW)
+        "aria-label": r.intl.string(r.t.DWB2YW)
       })]
     })
   })

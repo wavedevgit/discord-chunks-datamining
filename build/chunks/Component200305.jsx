@@ -65,19 +65,19 @@ let w = e => {
         children: P.intl.string(P.t.SPlaR0)
       }), (0, r.jsx)("hr", {
         className: E.divider
-      }), (0, r.jsx)(a.xJW, {
-        title: P.intl.string(P.t.dI4d4e),
+      }), (0, r.jsx)("div", {
         className: E.formItem,
         children: (0, r.jsx)(a.oil, {
+          label: P.intl.string(P.t.dI4d4e),
           value: n,
           error: o,
           onChange: i,
           autoFocus: true
         })
-      }), (0, r.jsx)(a.xJW, {
-        title: P.intl.string(P.t["CIGa+/"]),
+      }), (0, r.jsx)("div", {
         className: E.formItem,
         children: (0, r.jsx)(a.oil, {
+          label: P.intl.string(P.t["CIGa+/"]),
           type: "password",
           value: l,
           error: c,
@@ -181,13 +181,13 @@ let w = e => {
     } = e, D = (0, y.N0)(q, null == R ? true : R.guild, L), {
       guildProfile: B,
       fetchGuildProfile: U
-    } = (0, m.u)(q), G = (0, i.e7)([g.ZP, x.default], () => g.ZP.isMember(q, x.default.getId())), [J, K] = l.useState(false);
+    } = (0, m.u)(q), G = (0, i.e7)([g.ZP, x.default], () => g.ZP.isMember(q, x.default.getId())), [K, J] = l.useState(false);
     l.useEffect(() => {
-      G && !J && null == B && U().finally(() => K(true))
-    }, [U, B, J, G]);
+      G && !K && null == B && U().finally(() => J(true))
+    }, [U, B, K, G]);
     let z = null == R ? true : R.formFields.some(e => e.field_type !== _.QJ.TERMS),
       [V, H] = l.useState(null != (o = null == R ? true : R.formFields) ? o : []),
-      [W, Q] = l.useState(false),
+      [Q, W] = l.useState(false),
       [X, Y] = l.useState(null),
       [$, ee] = l.useState(""),
       [et, en] = l.useState(""),
@@ -260,21 +260,21 @@ let w = e => {
       }(null != (N = null == B ? true : B.brandColorPrimary) ? N : "");
     if (null == D) return (0, r.jsx)(a.$jN, {});
     let ey = async () => {
-      Q(true), el(null), es(null);
+      W(true), el(null), es(null);
       try {
         await (0, c.S2)({
           email: $,
           password: et
-        }), Q(false), eh(y.KJ.EMAIL_CONFIRMATION)
+        }), W(false), eh(y.KJ.EMAIL_CONFIRMATION)
       } catch (n) {
         var e, t;
         el(null == n || null == (e = n.body) ? true : e.email), es(null == n || null == (t = n.body) ? true : t.password)
       } finally {
-        Q(false)
+        W(false)
       }
     }, eO = async () => {
       var e, t, n, r;
-      Q(true), Y(null);
+      W(true), Y(null);
       let l = null != em ? g.ZP.getMember(q, em.id) : null;
       if (null != l && !l.isPending) {
         null == k || k(true);
@@ -314,7 +314,7 @@ let w = e => {
         let e = null == t ? true : t.body;
         (null == e || null == (n = e.errors) ? true : n.version) != null || (null == e || null == (r = e.errors) ? true : r.form_fields) != null ? Y(P.intl.string(P.t.PD09Sk)) : Y(null == e ? true : e.message)
       } finally {
-        Q(false)
+        W(false)
       }
     }, eN = null != B;
     return (0, r.jsxs)(r.Fragment, {
@@ -396,7 +396,7 @@ let w = e => {
                       variant: "primary",
                       text: P.intl.string(P.t.PDTjLC),
                       type: "submit",
-                      loading: W,
+                      loading: Q,
                       onClick: ey,
                       disabled: 0 === $.length || 0 === et.length
                     })
@@ -422,7 +422,7 @@ let w = e => {
                         variant: "active",
                         text: P.intl.string(P.t.geKm7u),
                         type: "submit",
-                        loading: W,
+                        loading: Q,
                         onClick: eO,
                         disabled: eb
                       })

@@ -59,8 +59,8 @@ function j(e) {
   let n, i, {
       onMount: a,
       onSubmit: j,
-      onClose: x,
-      ratingHeader: S,
+      onClose: S,
+      ratingHeader: x,
       ratingBody: w,
       ratingOptions: E,
       ratingEmojiKind: k,
@@ -95,14 +95,14 @@ function j(e) {
   let G = true,
     q = false;
   return null == H ? (n = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(u.xJW, {
+    children: [(0, r.jsx)("div", {
       className: o()(h.problemInfo, h.ratingSelectorContainer),
       children: (0, r.jsx)(O.Z, {
         ratingOptions: E,
         emojiKind: k,
         selectedRating: H,
         onChangeRating: function(e) {
-          A(e), e === g.aZ.GOOD && x()
+          A(e), e === g.aZ.GOOD && S()
         }
       })
     }), !T && (0, r.jsx)(u.mzw, {
@@ -145,7 +145,7 @@ function j(e) {
         options: V.problemOptions,
         onClick: function(e) {
           var t;
-          Y(e), null != V && null != e && (null == (t = V.freeformConfig) ? true : t.value) !== e.value && x()
+          Y(e), null != V && null != e && (null == (t = V.freeformConfig) ? true : t.value) !== e.value && S()
         },
         hideCaret: e => {
           var t;
@@ -190,7 +190,7 @@ function j(e) {
         id: B,
         variant: "heading-xl/extrabold",
         color: "none",
-        children: S
+        children: x
       }), (0, r.jsx)(u.Text, {
         variant: "text-md/normal",
         color: "none",
@@ -209,7 +209,7 @@ function j(e) {
         variant: "primary",
         size: "sm",
         text: y.intl.string(y.t.geKm7u),
-        onClick: x
+        onClick: S
       })]
     })]
   })

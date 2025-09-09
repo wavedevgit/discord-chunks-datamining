@@ -52,7 +52,7 @@ let P = [{
   }
 }];
 
-function R(e) {
+function k(e) {
   let {
     actionLog: t
   } = e, n = r.useMemo(() => t.traces.map(e => ({
@@ -66,7 +66,7 @@ function R(e) {
     })
   })
 }
-let k = [{
+let I = [{
   id: "action",
   name: "Action",
   group: Chunk621060.v0.NONE,
@@ -105,17 +105,17 @@ let k = [{
     let {
       actionLog: t
     } = e;
-    return (0, a.jsx)(R, {
+    return (0, a.jsx)(k, {
       actionLog: t
     })
   }
 }];
 
-function I(e) {
+function R(e) {
   let {
     actionLog: t,
     initialHeight: n
-  } = e, l = r.useMemo(() => t.error ? [...k, {
+  } = e, l = r.useMemo(() => t.error ? [...I, {
     id: "error",
     name: (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(v.Z, {
@@ -147,7 +147,7 @@ function I(e) {
         })]
       })
     }
-  }] : k, [t]), {
+  }] : I, [t]), {
     TabBar: s,
     renderSelectedTab: o
   } = (0, N.ZP)({
@@ -287,7 +287,7 @@ function A() {
       data: Chunk981631,
       selectedRowKey: null == Chunk55935 ? true : Chunk55935.id.toString(),
       onClickRow: e => j(e.actionLog)
-    }), null != Chunk55935 && (0, Chunk951288.jsx)(I, {
+    }), null != Chunk55935 && (0, Chunk951288.jsx)(R, {
       actionLog: Chunk55935,
       initialHeight: null != module.current ? module.current.clientHeight / 2 : 300
     })]

@@ -26,12 +26,12 @@ function g(t) {
     onClose: g,
     onChannelPromptCompleted: x,
     isSlideReady: T
-  } = t, [E, h] = l.useState(""), [I, G] = l.useState(null), [y, D] = l.useState(false), z = (0, m.Dt)(), U = (0, a.e7)([u.Z], () => u.Z.getGuild(n), [n]), j = l.useRef(null);
+  } = t, [E, h] = l.useState(""), [I, G] = l.useState(null), [y, D] = l.useState(false), z = (0, m.Dt)(), U = (0, a.e7)([u.Z], () => u.Z.getGuild(n), [n]), N = l.useRef(null);
   l.useEffect(() => {
     var t;
-    T && (null == (t = j.current) || t.focus())
+    T && (null == (t = N.current) || t.focus())
   }, [T]);
-  let N = l.useCallback(async t => {
+  let j = l.useCallback(async t => {
       if (t.preventDefault(), null == U) return;
       D(true), G(null);
       let n = p.ZP.getDefaultChannel(U.id);
@@ -49,7 +49,7 @@ function g(t) {
       children: [(0, i.jsx)(r.zxk, {
         variant: "primary",
         text: _.intl.string(_.t.i4jeWV),
-        onClick: N,
+        onClick: j,
         disabled: 0 === E.length,
         loading: y
       }), (0, i.jsx)(s.zx, {
@@ -89,20 +89,16 @@ function g(t) {
       }), (0, i.jsxs)(r.hzk, {
         className: L.channelPrompt,
         children: [(0, i.jsx)("form", {
-          onSubmit: N,
-          children: (0, i.jsx)(r.xJW, {
-            title: _.intl.string(_.t.bY20tb),
-            tag: "label",
-            htmlFor: z,
+          onSubmit: j,
+          children: (0, i.jsx)(r.oil, {
+            label: _.intl.string(_.t.bY20tb),
             error: null == I ? true : I.getFieldMessage("name"),
-            children: (0, i.jsx)(r.oil, {
-              type: "text",
-              value: E,
-              id: z,
-              onChange: h,
-              placeholder: _.intl.string(_.t.xGOYAw),
-              inputRef: j
-            })
+            type: "text",
+            value: E,
+            id: z,
+            onChange: h,
+            placeholder: _.intl.string(_.t.xGOYAw),
+            inputRef: N
           })
         }), null != I && 0 === Object.keys(I.fields).length && (0, i.jsx)(r.Text, {
           variant: "text-xs/normal",

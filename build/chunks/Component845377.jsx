@@ -118,10 +118,10 @@ let I = e => {
     failedItemsOnly: c = false
   } = e, [m, I] = (0, u.Wu)([j.ZP], () => [j.ZP.getDiscoveryChecklist(l), j.ZP.isLoading()], [l]), {
     nsfwProperties: S
-  } = null != m ? m : {}, T = null == t ? true : t.features.has(v.oNc.PARTNERED), P = null == S ? true : S.channels_banned_keywords, w = (0, u.e7)([h.ZP], () => {
+  } = null != m ? m : {}, T = null == t ? true : t.features.has(v.oNc.PARTNERED), P = null == S ? true : S.channels_banned_keywords, w = (0, u.e7)([f.ZP], () => {
     var e, n, r;
     if (null == P) return [];
-    let i = null != (n = (null != (e = h.ZP.getChannels(t.id)) ? e : {})[h.sH]) ? n : [],
+    let i = null != (n = (null != (e = f.ZP.getChannels(t.id)) ? e : {})[f.sH]) ? n : [],
       l = null != (r = null == i ? true : i.map(e => e.channel).reduce((e, t) => C(y({}, e), {
         [t.id]: t
       }), {})) ? r : {};
@@ -148,7 +148,7 @@ let I = e => {
       description: _.intl.string(_.t.hSLSMz),
       failingDescription: _.intl.format(_.t.odsGg4, {
         termsURL: v.EYA.TERMS,
-        guidelinesURL: f.Z.getArticleURL(v.BhN.PUBLIC_GUILD_GUILDLINES)
+        guidelinesURL: h.Z.getArticleURL(v.BhN.PUBLIC_GUILD_GUILDLINES)
       }),
       checked: null == m ? true : m.safeEnvironment
     }, {

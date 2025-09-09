@@ -27,8 +27,8 @@ function j(e) {
   let {
     isStreamer: t,
     stream: j,
-    streamApplication: x,
-    onClose: S,
+    streamApplication: S,
+    onClose: x,
     transitionState: w,
     analyticsData: E
   } = e;
@@ -36,12 +36,12 @@ function j(e) {
     p.default.track(_.rMx.OPEN_MODAL, {
       type: "Stream Problem Report",
       other_user_id: j.ownerId,
-      application_id: null != x ? x.id : null,
-      application_name: null != x ? x.name : null,
-      game_id: null != x ? x.id : null,
+      application_id: null != S ? S.id : null,
+      application_name: null != S ? S.name : null,
+      game_id: null != S ? S.id : null,
       source: "Stream End"
     })
-  }, [j.ownerId, x]);
+  }, [j.ownerId, S]);
   let {
     showRefreshedStreamTaxonomy: k
   } = (0, s.u)({
@@ -74,7 +74,7 @@ function j(e) {
           variant: null != (l = null == r ? true : r.variant) ? l : null,
           stream: j,
           feedback: u,
-          streamApplication: x,
+          streamApplication: S,
           analyticsData: E,
           location: "Stream End",
           rating: c
@@ -87,7 +87,7 @@ function j(e) {
           problem: null != (i = null == t ? true : t.value) ? i : null,
           stream: j,
           feedback: u,
-          streamApplication: x,
+          streamApplication: S,
           analyticsData: E,
           location: "Stream End",
           rating: c
@@ -189,7 +189,7 @@ function j(e) {
       };
     return (0, r.jsx)(b.Z, {
       onSubmit: P,
-      onClose: S,
+      onClose: x,
       ratingHeader: T,
       ratingEmojiKind: C,
       ratingBody: t ? N : L,
@@ -213,7 +213,7 @@ function j(e) {
     }),
     freeformNeededProblems: v,
     onSubmit: P,
-    onClose: S,
+    onClose: x,
     transitionState: w,
     otherKey: g.kr.OTHER
   })

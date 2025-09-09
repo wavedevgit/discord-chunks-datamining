@@ -85,10 +85,10 @@ function _(e) {
     showColorPopout: d,
     setShowColorPopout: m,
     palettePopoutTargetRef: g,
-    handleChange: h
+    handleChange: f
   } = e, v = (0, o.jm)({
     isSelected: l,
-    label: f.intl.formatToPlainString(f.t.hr4D2d, {
+    label: h.intl.formatToPlainString(h.t.hr4D2d, {
       primaryColor: n,
       secondaryColor: i
     })
@@ -101,12 +101,12 @@ function _(e) {
       secondary: i
     },
     onPrimaryColorChange: e => {
-      h({
+      f({
         primary: (0, s.Rf)(e)
       })
     },
     onSecondaryColorChange: e => {
-      h({
+      f({
         secondary: (0, s.Rf)(e)
       })
     },
@@ -150,10 +150,10 @@ let O = function(e) {
     children: [(0, r.jsx)(c.vwX, {
       id: O,
       className: b.sectionTitle,
-      children: f.intl.string(h.default.zSbMdX)
+      children: h.intl.string(f.default.zSbMdX)
     }), (0, r.jsx)(c.nn4, {
       id: y,
-      children: f.intl.string(f.t.ovbW0d)
+      children: h.intl.string(h.t.ovbW0d)
     }), (0, r.jsxs)("div", j(x({}, N), {
       "aria-describedby": y,
       className: b.pickerGrid,

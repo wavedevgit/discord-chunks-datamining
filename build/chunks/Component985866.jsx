@@ -1,7 +1,7 @@
 /** Chunk was on 61624 **/
 /** chunk id: 985866, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => W
+  default: () => z
 }), require("./388685.js"), require("./704826.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -77,8 +77,8 @@ function Q(e) {
     rewardCode: a,
     hasTieredRewardCodes: o
   }), {
-    hasError: x,
-    isLoading: y
+    hasError: y,
+    isLoading: j
   } = (0, k.d7)();
   return (0, r.jsxs)("div", {
     style: b,
@@ -88,14 +88,14 @@ function Q(e) {
       style: {
         "--custom-reward-tile-border-color": u ? m : n.config.colors.primary
       },
-      children: [y && !x && (0, r.jsx)(p.$jN, {
+      children: [j && !y && (0, r.jsx)(p.$jN, {
         className: B.rewardTileAssetStatusIcon,
         type: p.RAz.SPINNING_CIRCLE
-      }), x && (0, r.jsx)(p.fFY, {
+      }), y && (0, r.jsx)(p.fFY, {
         className: B.rewardTileAssetStatusIcon
       }), (0, r.jsx)(Z.Z, {
         className: l()(B.rewardTileAsset, {
-          [B.rewardTileAssetLoading]: y || x
+          [B.rewardTileAssetLoading]: j || y
         }),
         quest: n,
         questContent: N.jn.QUEST_BAR_V2,
@@ -123,7 +123,7 @@ function Q(e) {
   })
 }
 
-function W(e) {
+function z(e) {
   let t = (0, i.e7)([T.Z], () => T.Z.getQuest(e.questId));
   return (null == t && null != e.previewQuest && (t = e.previewQuest), null != t) ? (0, r.jsx)(D.A, {
     questOrQuests: t,
@@ -131,7 +131,7 @@ function W(e) {
     sourceQuestContent: e.sourceQuestContent,
     children: n => {
       var a, o;
-      return (0, r.jsx)(z, (a = function(e) {
+      return (0, r.jsx)(W, (a = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -166,7 +166,7 @@ function W(e) {
   }) : null
 }
 
-function z(e) {
+function W(e) {
   var t;
   let {
     transitionState: n,
@@ -180,8 +180,8 @@ function z(e) {
   } = e, D = (0, f.Z)(() => {
     var e;
     return (null == (e = l.userStatus) ? true : e.claimedAt) != null
-  }), Z = E.r.build(l.config).rewardPlatforms, W = Z.length > 1, [z, U] = a.useState(W ? null : Z[0]), H = a.useRef(new s.qA), F = a.useRef(null), [Y, J] = a.useState(null), X = (0, i.e7)([C.Z], () => C.Z.useReducedMotion), $ = (0, i.e7)([j.Z], () => j.Z.hidePersonalInformation), {
-    questStoreRewardCode: G,
+  }), Z = E.r.build(l.config).rewardPlatforms, z = Z.length > 1, [W, U] = a.useState(z ? null : Z[0]), H = a.useRef(new s.qA), F = a.useRef(null), [Y, X] = a.useState(null), $ = (0, i.e7)([C.Z], () => C.Z.useReducedMotion), G = (0, i.e7)([x.Z], () => x.Z.hidePersonalInformation), {
+    questStoreRewardCode: J,
     isFetchingRewardCode: V,
     isClaimingReward: K
   } = (0, i.cj)([T.Z], () => ({
@@ -190,7 +190,7 @@ function z(e) {
     isClaimingReward: T.Z.isClaimingReward(l.id)
   })), ee = (0, S.O5)(), et = (0, A.oo)({
     quest: l
-  }), en = true === O ? (0, P.b)(l) : G, er = W && (null == (t = l.userStatus) ? true : t.claimedAt) == null && null == en, {
+  }), en = true === O ? (0, P.b)(l) : J, er = z && (null == (t = l.userStatus) ? true : t.claimedAt) == null && null == en, {
     claimCode: ea,
     fetchCode: eo,
     hasError: el,
@@ -202,7 +202,7 @@ function z(e) {
     questContent: c,
     requiresPlatformSelection: er,
     rewardCode: en,
-    selectedPlatformType: z,
+    selectedPlatformType: W,
     preview: O
   }), ei = el && !K && !V;
   ! function(e) {
@@ -250,13 +250,13 @@ function z(e) {
         variant: "text-sm/normal",
         color: "text-default",
         className: B.bodyCopy,
-        children: y.Z.parse(i, false, {
+        children: j.Z.parse(i, false, {
           allowLinks: true
         })
       }) : null
     }({
       quest: l,
-      selectedPlatform: z,
+      selectedPlatform: W,
       requiresPlatformSelection: er,
       rewardCode: en,
       hasTieredRewardCodes: et
@@ -274,7 +274,7 @@ function z(e) {
       select: e => {
         es(false), U(e)
       },
-      isSelected: e => e === z,
+      isSelected: e => e === W,
       serialize: e => (0, A.t2)(e),
       className: ei ? B.errorInput : "",
       isDisabled: K,
@@ -318,11 +318,11 @@ function z(e) {
   null != en ? eg = (0, r.jsx)(p.xJW, {
     title: M.intl.string(M.t.srzsU1),
     children: (0, r.jsx)(m.Z, {
-      value: $ ? M.intl.string(M.t["0n2u0t"]) : en.code,
+      value: G ? M.intl.string(M.t["0n2u0t"]) : en.code,
       delay: 1e3,
       buttonColor: u.zx.Colors.BRAND,
       onCopy: () => {
-        $ && (0, v.JG)(en.code), ee({
+        G && (0, v.JG)(en.code), ee({
           questId: l.id,
           questContent: c,
           questContentPosition: d,
@@ -331,12 +331,10 @@ function z(e) {
         })
       }
     })
-  }) : ei && !er && (eg = (0, r.jsx)(p.xJW, {
-    title: M.intl.string(M.t.srzsU1),
-    children: (0, r.jsx)(p.oil, {
-      disabled: true,
-      error: M.intl.string(M.t.rbZBMT)
-    })
+  }) : ei && !er && (eg = (0, r.jsx)(p.oil, {
+    label: M.intl.string(M.t.srzsU1),
+    disabled: true,
+    error: M.intl.string(M.t.rbZBMT)
   }));
   let eh = a.useMemo(() => et ? (0, A.o9)({
       quest: l,
@@ -355,21 +353,21 @@ function z(e) {
       questContent: c,
       questContentPosition: d,
       requiresPlatformSelection: er,
-      selectedPlatformType: z,
+      selectedPlatformType: W,
       redemptionLink: eC,
       sourceQuestContent: R
     }),
-    ex = er && K,
-    ey = !ex && (er && null == z || ef),
-    ej = null != eC && "" !== eC,
+    ey = er && K,
+    ej = !ey && (er && null == W || ef),
+    ex = null != eC && "" !== eC,
     ev = M.intl.string(M.t["23SS+/"]);
-  er ? ev = M.intl.string(M.t.SLZMi4) : !er && ei ? ev = M.intl.string(M.t.gNJHHh) : ej && (ev = M.intl.string(M.t["+zx47e"]));
-  let eO = !X && null != en && !D && !ei,
+  er ? ev = M.intl.string(M.t.SLZMi4) : !er && ei ? ev = M.intl.string(M.t.gNJHHh) : ex && (ev = M.intl.string(M.t["+zx47e"]));
+  let eO = !$ && null != en && !D && !ei,
     eS = null != eb && et,
     eA = (0, _.Gd)(l.id);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.O_, {
-      ref: J,
+      ref: X,
       className: B.confettiCanvas,
       environment: H.current
     }), (0, r.jsx)("div", {
@@ -415,7 +413,7 @@ function z(e) {
                 variant: "text-md/normal",
                 color: "text-default",
                 className: B.cosponsorRedemptionInstructions,
-                children: y.Z.parse(l.config.cosponsorMetadata.redemptionInstructions, false, {
+                children: j.Z.parse(l.config.cosponsorMetadata.redemptionInstructions, false, {
                   allowLinks: true
                 })
               })]
@@ -427,12 +425,12 @@ function z(e) {
             variant: "primary",
             text: ev,
             onClick: ew,
-            loading: ex,
-            disabled: ey
+            loading: ey,
+            disabled: ej
           })
         })]
       })
-    }), eO && (0, r.jsx)(x.Z, {
+    }), eO && (0, r.jsx)(y.Z, {
       confettiTarget: F.current,
       confettiCanvas: Y,
       sprites: q.CA,

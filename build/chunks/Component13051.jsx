@@ -92,11 +92,11 @@ function P(e) {
     B = r.useCallback(() => {
       h.Z.syncIntegration(n.id, l.id)
     }, [n.id, l.id]),
-    W = r.useCallback(() => {
+    U = r.useCallback(() => {
       null != l.role_id && (h.Z.setSection(N.pNK.ROLES), h.Z.selectRole(l.role_id))
     }, [l.role_id]),
     {
-      serviceName: U,
+      serviceName: W,
       channelURL: H,
       expireBehaviorLabel: G,
       syncLabel: z,
@@ -130,7 +130,7 @@ function P(e) {
     } = r.useMemo(() => {
       let e;
       e = null != K ? (0, i.jsx)(p.eee, {
-        onClick: W,
+        onClick: U,
         children: K.name
       }) : S.intl.string(S.t.PoWNfX);
       let t = b.Z.get(l.type);
@@ -143,7 +143,7 @@ function P(e) {
           datetime: s()(l.synced_at).calendar()
         })
       }
-    }, [K, W, l.revoked, l.synced_at, l.type, l.user]),
+    }, [K, U, l.revoked, l.synced_at, l.type, l.user]),
     Y = (0, d.e7)([j.Z], () => j.Z.getSortedRoles(n.id)),
     $ = r.useMemo(() => {
       let e = f.ZP.getGuildEmoji(n.id),
@@ -165,7 +165,7 @@ function P(e) {
     let e = new URL(H);
     t = [{
       text: S.intl.format(S.t.BegylZ, {
-        serviceName: U,
+        serviceName: W,
         accountUrl: H,
         accountUrlText: e.hostname + e.pathname
       })

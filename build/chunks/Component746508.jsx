@@ -198,7 +198,6 @@ function eK() {
         section: Chunk981631.jXE.NOISE_CANCELLATION_POPOUT
       }
     }), (0, Chunk951288.jsx)(Chunk481060.vwX, {
-      tag: Chunk481060.RB0.H5,
       className: a()(Chunk197571.marginBottom8, Chunk197571.marginTop20),
       children: Chunk388032.intl.string(Chunk388032.t.k6h1Fx)
     }), (0, Chunk951288.jsxs)(Chunk600164.Z, {

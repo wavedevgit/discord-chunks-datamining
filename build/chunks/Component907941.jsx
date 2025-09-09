@@ -91,7 +91,7 @@ function V(e) {
     guild: l,
     handleCheckboxChange: r
   } = e, a = null != (t = null == n ? true : n.selected_time_window) ? t : G.Oe.ALWAYS;
-  return null == l ? null : (0, i.jsxs)(g.xJW, {
+  return null == l ? null : (0, i.jsxs)("div", {
     className: I.largeSpacing,
     children: [(0, i.jsx)(g.j7V, {
       hideBorder: true,
@@ -174,7 +174,7 @@ function Y(e) {
     muted: o,
     guildId: d
   } = e;
-  return (0, i.jsxs)(g.xJW, {
+  return (0, i.jsxs)("div", {
     className: I.largeSpacing,
     children: [(0, i.jsx)(g.j7V, {
       onChange: e => s("suppress_everyone", e, w.UE.suppressEveryone(e)),

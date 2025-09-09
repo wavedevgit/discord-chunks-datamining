@@ -103,12 +103,12 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
     }, [D]);
     let z = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 ? Chunk999382.Z.getErrors() : null);
     if (null == Chunk852860 || null == D) return null;
-    let W = e => {
+    let V = e => {
         v.Z.updateGuild({
           discoverySplash: e
         })
       },
-      V = e => {
+      W = e => {
         let t = () => {
           (0, g.W1)(d.id, e), e ? (0, g.Vv)({
             guildId: d.id,
@@ -278,7 +278,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                             color: Chunk755721.zx.Colors.PRIMARY,
                             children: [Chunk388032.intl.string(Chunk388032.t.yG2pUl), (0, Chunk951288.jsx)(Chunk813197.ZP, {
                               disabled: !R,
-                              onChange: W
+                              onChange: V
                             })]
                           })]
                         }), (0, Chunk951288.jsx)(Chunk208567.Z, {
@@ -289,7 +289,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                             size: 512 * (0, p.x_)()
                           }),
                           disabled: !R,
-                          onChange: W,
+                          onChange: V,
                           hint: Chunk388032.intl.string(Chunk388032.t.uPvxqK),
                           imageClassName: Chunk539981.imageUploaderInnerSquare,
                           hideSize: true
@@ -482,7 +482,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         variant: "critical-primary",
                         size: "sm",
                         text: Chunk388032.intl.string(Chunk388032.t["DCHd/P"]),
-                        onClick: () => V(false),
+                        onClick: () => W(false),
                         disabled: !R
                       })]
                     })]
@@ -497,7 +497,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                     title: Chunk388032.intl.string(Chunk388032.t["2kCyn5"]),
                     children: Y,
                     buttonLabel: Chunk388032.intl.string(Chunk388032.t.tVK6S0),
-                    buttonCallback: () => V(true),
+                    buttonCallback: () => W(true),
                     disabled: !R || !M
                   })
                 })]

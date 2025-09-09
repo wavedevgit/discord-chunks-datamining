@@ -21,10 +21,10 @@ function s(e) {
     includeStageVoiceChannels: m = false,
     helperText: g,
     className: p
-  } = e, h = (0, l.r)(t, n, u, m), f = (0, a.h)(t, s, d);
+  } = e, f = (0, l.r)(t, n, u, m), h = (0, a.h)(t, s, d);
   return (0, r.jsx)(i.ZP, {
-    channelRows: h,
-    roleRows: f,
+    channelRows: f,
+    roleRows: h,
     guildId: t,
     selectedChannelIds: n,
     selectedRoleIds: s,

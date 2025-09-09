@@ -70,7 +70,7 @@ function R(e) {
       role: m,
       highestRole: g,
       selectedItem: p,
-      onClick: f,
+      onClick: h,
       currentPosition: j,
       onDragStart: v,
       onDragReset: _,
@@ -113,7 +113,7 @@ function R(e) {
       })
     }),
     M = null != (i = m.colorString) ? i : E.Pbq;
-  return l = Z ? (0, r.jsx)(h.Z, {
+  return l = Z ? (0, r.jsx)(f.Z, {
     size: 12,
     color: m.colorString,
     className: S.verifiedRoleIcon
@@ -133,7 +133,7 @@ function R(e) {
     id: m.id,
     selectedItem: p,
     itemType: "side",
-    onClick: f,
+    onClick: h,
     onContextMenu: function(e) {
       (0, u.jW)(e, async () => {
         let {
@@ -168,7 +168,7 @@ function Z(e) {
     currentRoleId: n,
     setCurrentRoleId: l,
     setSelectedSection: s
-  } = e, o = (0, c.e7)([_.Z], () => _.Z.roles), u = (0, c.e7)([j.Z], () => j.Z.getHighestRole(t)), h = (0, c.e7)([p.Z], () => p.Z.roleStyle), [b, x] = i.useState(o.length), {
+  } = e, o = (0, c.e7)([_.Z], () => _.Z.roles), u = (0, c.e7)([j.Z], () => j.Z.getHighestRole(t)), f = (0, c.e7)([p.Z], () => p.Z.roleStyle), [b, x] = i.useState(o.length), {
     scrolledToTop: O,
     handleScroll: E
   } = (0, C.V)(), {
@@ -190,7 +190,7 @@ function Z(e) {
   let k = () => {
     m.Z.createRole(t.id), s(N.ZI.DISPLAY)
   };
-  return (0, r.jsx)(f.ZP.Sidebar, {
+  return (0, r.jsx)(h.ZP.Sidebar, {
     className: S.sidebar,
     children: (0, r.jsxs)("div", {
       className: S.container,
@@ -247,7 +247,7 @@ function Z(e) {
             onDragStart: w,
             onDragReset: Z,
             onDragComplete: D,
-            roleStyle: h
+            roleStyle: f
           }, e.id))
         })
       })]

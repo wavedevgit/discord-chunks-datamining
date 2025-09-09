@@ -79,11 +79,11 @@ function _(e) {
       color: "text-secondary",
       className: j.applicationBody,
       children: x.intl.string(x.t.Z7TCtb)
-    }), (0, r.jsx)(f.c, {
+    }), (0, r.jsx)(h.c, {
       guildId: n.id
     }), (0, r.jsx)("div", {
       className: j.form,
-      children: null != P ? (0, r.jsx)(h.y, {
+      children: null != P ? (0, r.jsx)(f.y, {
         guild: n,
         formFields: P
       }) : (0, r.jsx)(c.$jN, {})

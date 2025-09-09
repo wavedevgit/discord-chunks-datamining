@@ -67,18 +67,15 @@ function _(e) {
       onSubmit: x,
       children: [(0, r.jsxs)(o.hzk, {
         className: f.content,
-        children: [(0, r.jsx)(o.xJW, {
-          title: d.intl.string(d.t.WBqMRU),
+        children: [(0, r.jsx)(o.oil, {
+          label: d.intl.string(d.t.WBqMRU),
           error: null == P || null == (t = P.password) ? true : t[0],
-          required: true,
-          children: (0, r.jsx)(o.oil, {
-            type: "password",
-            value: y,
-            onChange: O,
-            inputRef: D,
-            autoComplete: "current-password",
-            required: true
-          })
+          type: "password",
+          value: y,
+          onChange: O,
+          inputRef: D,
+          autoComplete: "current-password",
+          required: true
         }), (0, r.jsx)(o.xJW, {
           className: f.newPassword,
           title: d.intl.string(d.t["8dM4FB"]),

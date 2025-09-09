@@ -17,18 +17,18 @@ function c(t) {
     nickname: i,
     transitionState: c,
     onClose: d
-  } = t, [p, h] = l.useState(false), [x, g] = l.useState(i), m = l.useRef(null), f = async t => {
+  } = t, [p, h] = l.useState(false), [x, g] = l.useState(i), m = l.useRef(null), b = async t => {
     t.preventDefault(), h(true);
     try {
       await r.Z.updateRelationship(n.id, x), d()
     } catch (t) {} finally {
       h(false)
     }
-  }, b = null == i ? o.intl.string(o.t.BGYkaG) : o.intl.string(o.t["8pOYUF"]);
+  }, f = null == i ? o.intl.string(o.t.BGYkaG) : o.intl.string(o.t["8pOYUF"]);
   return (0, e.jsx)("form", {
-    onSubmit: f,
+    onSubmit: b,
     children: (0, e.jsx)(a.Modal, {
-      title: b,
+      title: f,
       transitionState: c,
       subtitle: o.intl.string(o.t["NdQ+lJ"]),
       onClose: d,
@@ -38,23 +38,21 @@ function c(t) {
         variant: "secondary"
       }, {
         text: o.intl.string(o.t.R3BPHx),
-        onSubmit: f,
+        onSubmit: b,
         variant: "primary",
         disabled: p,
         type: "submit"
       }],
       children: (0, e.jsxs)(s.Kqy, {
         gap: 8,
-        children: [(0, e.jsx)(s.xJW, {
-          title: o.intl.string(o.t.pqG6GR),
-          children: (0, e.jsx)(s.oil, {
-            inputRef: m,
-            value: null != x ? x : "",
-            placeholder: u.ZP.getName(n),
-            onChange: g,
-            maxLength: 32,
-            autoFocus: true
-          })
+        children: [(0, e.jsx)(s.oil, {
+          label: o.intl.string(o.t.pqG6GR),
+          inputRef: m,
+          value: null != x ? x : "",
+          placeholder: u.ZP.getName(n),
+          onChange: g,
+          maxLength: 32,
+          autoFocus: true
         }), (0, e.jsx)(s.Avr, {
           onClick: () => {
             var t;

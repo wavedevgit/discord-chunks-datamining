@@ -15,7 +15,7 @@ let o = {
     component: function(e) {
       return (0, r.jsx)("div", {
         children: (0, r.jsxs)(a.C, {
-          title: "Billing Address",
+          label: "Billing Address",
           children: [(0, r.jsx)(i.oil, {
             placeholder: "Enter text here..."
           }), (0, r.jsx)(i.oil, {

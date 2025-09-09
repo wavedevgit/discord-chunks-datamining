@@ -2,8 +2,6 @@
 /** chunk id: 520317, original params: e,t,n (module,exports,require) **/
 module.exports = {
   content: "content_d97f89",
-  answerInputsContainer: "answerInputsContainer_d97f89",
-  defaultContainer: "defaultContainer_d97f89",
   addAnswerButton: "addAnswerButton_d97f89",
   duration: "duration_d97f89",
   durationSelect: "durationSelect_d97f89",

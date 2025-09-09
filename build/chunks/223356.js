@@ -50,7 +50,7 @@ function m() {
   }]
 }
 async function h(e, t, n) {
-  var r, u;
+  var i, u;
   let c = [{
     name: "name",
     value: e.name
@@ -74,7 +74,7 @@ async function h(e, t, n) {
     name: "build_override",
     value: e.buildOverride
   });
-  let d = null == (r = e.feature) ? true : r.asana_inbox_id;
+  let d = null == (i = e.feature) ? true : i.asana_inbox_id;
   null != d && "" !== d && c.push({
     name: "asana_inbox_id",
     value: "".concat(d)
@@ -111,7 +111,7 @@ async function h(e, t, n) {
       attachments: n,
       fields: c,
       trackedActionData: {
-        event: i.NetworkActionNames.BUG_REPORT_SUBMIT,
+        event: r.NetworkActionNames.BUG_REPORT_SUBMIT,
         properties: {
           priority: e.priority,
           asana_inbox_id: d

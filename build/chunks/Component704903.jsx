@@ -1,12 +1,12 @@
 /** Chunk was on 35401 **/
 /** chunk id: 704903, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => y
 }), require("./388685.js");
 var n, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk772848 = require("./772848.js"),
   Chunk846519 = require("./846519.js"),
   Chunk755721 = require("./755721.js"),
@@ -50,36 +50,36 @@ class v extends(n = Chunk647438.PureComponent) {
       email: n,
       password: a
     } = this.state;
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk951288.jsx)("div", {
       className: Chunk831319.container,
-      children: [(0, Chunk951288.jsx)(Chunk481060.xJW, {
-        title: Chunk388032.intl.string(Chunk388032.t.dI4d4e),
-        className: Chunk197571.marginBottom20,
-        children: (0, Chunk951288.jsx)(Chunk481060.oil, {
-          value: n,
-          error: module,
-          onChange: this.handleEmailChange,
-          onKeyPress: this.handleKeyPress,
-          autoFocus: true
-        })
-      }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
-        title: Chunk388032.intl.string(Chunk388032.t["CIGa+/"]),
-        className: Chunk197571.marginBottom40,
-        children: (0, Chunk951288.jsx)(Chunk481060.oil, {
-          type: "password",
-          value: Chunk647438,
-          error: exports,
-          onChange: this.handlePasswordChange,
-          onKeyPress: this.handleKeyPress
-        })
-      }), (0, Chunk951288.jsx)(Chunk755721.zx, {
-        fullWidth: true,
-        size: Chunk755721.zx.Sizes.LARGE,
-        onClick: this.handleVerify,
-        submitting: require,
-        disabled: 0 === n.length || 0 === Chunk647438.length,
-        children: Chunk388032.intl.string(Chunk388032.t.v740sr)
-      })]
+      children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+        gap: 40,
+        children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+          gap: 20,
+          children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
+            label: Chunk388032.intl.string(Chunk388032.t.dI4d4e),
+            value: n,
+            error: module,
+            onChange: this.handleEmailChange,
+            onKeyPress: this.handleKeyPress,
+            autoFocus: true
+          }), (0, Chunk951288.jsx)(Chunk481060.oil, {
+            label: Chunk388032.intl.string(Chunk388032.t["CIGa+/"]),
+            type: "password",
+            value: Chunk647438,
+            error: exports,
+            onChange: this.handlePasswordChange,
+            onKeyPress: this.handleKeyPress
+          })]
+        }), (0, Chunk951288.jsx)(Chunk755721.zx, {
+          fullWidth: true,
+          size: Chunk755721.zx.Sizes.LARGE,
+          onClick: this.handleVerify,
+          submitting: require,
+          disabled: 0 === n.length || 0 === Chunk647438.length,
+          children: Chunk388032.intl.string(Chunk388032.t.v740sr)
+        })]
+      })
     })
   }
   renderActions() {
@@ -120,23 +120,23 @@ class v extends(n = Chunk647438.PureComponent) {
     }) : n ? Chunk388032.intl.string(Chunk388032.t.tSXg8P) : Chunk388032.intl.string(Chunk388032.t.KW5DEh), (0, Chunk951288.jsxs)(Chunk481060.Y0X, {
       transitionState: Chunk647438,
       "aria-labelledby": this._headerId,
-      className: o()(Chunk831319.emailVerificationModal, Chunk149715.vertical, Chunk149715.alignCenter, Chunk149715.justifyCenter, Chunk197571.marginTop60),
+      className: r()(Chunk831319.emailVerificationModal, Chunk149715.vertical, Chunk149715.alignCenter, Chunk149715.justifyCenter, Chunk197571.marginTop60),
       parentComponent: "EmailVerificationModal",
       children: [(0, Chunk951288.jsx)("div", {
         className: Chunk831319.animationContainer,
         ref: this.setLottieRef
       }), (0, Chunk951288.jsx)("div", {
         id: this._headerId,
-        className: o()(Chunk831319.title, Chunk197571.marginBottom8),
+        className: r()(Chunk831319.title, Chunk197571.marginBottom8),
         children: Chunk388032.intl.string(Chunk388032.t["1MPz29"])
       }), (0, Chunk951288.jsx)("div", {
-        className: o()(Chunk831319.body, Chunk197571.marginBottom20),
+        className: r()(Chunk831319.body, Chunk197571.marginBottom20),
         children: module
       }), n ? this.renderActions() : this.renderInputs()]
     })
   }
   constructor(...e) {
-    super(...e), C(this, "_lottieRef", true), C(this, "_animItem", null), C(this, "_timeout", new h.V7), C(this, "_headerId", (0, r.Z)()), C(this, "state", {
+    super(...e), C(this, "_lottieRef", true), C(this, "_animItem", null), C(this, "_timeout", new h.V7), C(this, "_headerId", (0, o.Z)()), C(this, "state", {
       resent: false,
       shouldClose: false,
       email: "",
@@ -192,4 +192,4 @@ C(v, "defaultProps", {
   onResend: Chunk981631.dG4,
   onClose: Chunk981631.dG4
 });
-let x = v
+let y = v

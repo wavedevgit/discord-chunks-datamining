@@ -346,7 +346,7 @@ function q(e) {
   }
 
   function et() {
-    return n.revoked ? (0, r.jsx)(f.xJW, {
+    return n.revoked ? (0, r.jsx)("div", {
       className: F.integrationsWrapper,
       children: (0, r.jsx)(f.R94, {
         className: F.integrationRevoked,
@@ -354,10 +354,9 @@ function q(e) {
           onReconnect: er
         })
       })
-    }) : n.integrations.length > 0 ? (0, r.jsxs)(f.xJW, {
+    }) : n.integrations.length > 0 ? (0, r.jsxs)("div", {
       className: F.integrationsWrapper,
       children: [(0, r.jsx)(f.vwX, {
-        tag: f.RB0.H5,
         children: (0, r.jsx)(f.Text, {
           variant: "text-xs/semibold",
           children: Z.intl.string(Z.t.fOe3fX)
@@ -563,7 +562,7 @@ function $(e) {
     account: e,
     locale: o,
     onDisconnect: () => s(e)
-  }, t)), (0, r.jsx)(f.xJW, {
+  }, t)), (0, r.jsx)("div", {
     className: F.connectionList,
     children: t
   })

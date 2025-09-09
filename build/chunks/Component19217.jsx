@@ -71,13 +71,13 @@ function _(e, t) {
 function p(e) {
   var {
     children: t,
-    title: n
-  } = e, i = f(e, ["children", "title"]);
+    label: n
+  } = e, i = f(e, ["children", "label"]);
   return (0, r.jsxs)("fieldset", d(c({}, i), {
     className: a()(s.fieldset, i.className),
     children: [(0, r.jsx)(o.Text, {
       tag: "legend",
-      variant: "heading-md/semibold",
+      variant: "text-md/medium",
       className: s.legend,
       children: n
     }), t]

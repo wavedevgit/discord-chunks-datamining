@@ -31,19 +31,19 @@ function b(e) {
   }, [b, t]);
   return null == l ? null : null == n ? (0, r.jsx)(d.$jN, {}) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: f.headerContainer,
+      className: h.headerContainer,
       children: [(0, r.jsxs)("div", {
-        className: f.headerText,
+        className: h.headerText,
         children: [(0, r.jsx)(s.X6, {
           variant: "heading-md/semibold",
           color: "header-primary",
-          children: h.intl.string(h.t.d21uOj)
+          children: f.intl.string(f.t.d21uOj)
         }), (0, r.jsx)(s.xv, {
           tag: "p",
           variant: "text-sm/medium",
           color: "text-secondary",
-          className: f.bodyText,
-          children: h.intl.string(h.t.SzpUBA)
+          className: h.bodyText,
+          children: f.intl.string(f.t.SzpUBA)
         })]
       }), (0, r.jsx)(c.T2, {
         onChange: x,
@@ -52,16 +52,16 @@ function b(e) {
     }), t && (0, r.jsx)(p.c, {
       guildId: l.id
     }), (0, r.jsx)("div", {
-      className: a()(f.rules, {
-        [f.disabled]: !t
+      className: a()(h.rules, {
+        [h.disabled]: !t
       }),
       children: (0, r.jsxs)("div", {
         inert: t ? true : "",
         children: [(0, r.jsx)(s.X6, {
           variant: "text-xs/bold",
           color: "text-muted",
-          className: f.rulesHeader,
-          children: h.intl.string(h.t.XcAzbm)
+          className: h.rulesHeader,
+          children: f.intl.string(f.t.XcAzbm)
         }), (0, r.jsx)(u.k, {
           guild: l,
           rules: n,

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
@@ -41,10 +41,9 @@ function f(e) {
     error: m,
     className: g,
     required: y,
-    tag: "label",
     htmlFor: k,
     children: (0, n.jsxs)("div", {
-      className: a()(p.input, h.input, N, {
+      className: o()(p.input, h.input, N, {
         [p.error]: null != m,
         [p.focused]: Z
       }),
@@ -52,7 +51,7 @@ function f(e) {
         show: T,
         alpha2: t,
         countryCode: r
-      }), (0, n.jsx)(o.Is, {
+      }), (0, n.jsx)(a.Is, {
         id: k,
         name: "email",
         type: i === u.Nz.EMAIL ? "email" : "text",

@@ -32,7 +32,7 @@ let x = function(e) {
     className: t,
     children: [(0, r.jsx)(o.vwX, {
       className: b.sectionTitle,
-      children: f.intl.string(h.default["tN+8pK"])
+      children: h.intl.string(f.default["tN+8pK"])
     }), (0, r.jsxs)("div", {
       className: b.tagContainer,
       children: [(0, r.jsx)("div", {
@@ -63,14 +63,14 @@ let x = function(e) {
         children: (0, r.jsx)(o.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
-          children: f.intl.string(h.default.CrHXHh)
+          children: h.intl.string(f.default.CrHXHh)
         })
       })]
     }), y && (0, r.jsx)(d.Z, {
       className: b.tagChangeInfoBox,
       children: (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",
-        children: f.intl.format(h.default["4ZKDXl"], {
+        children: h.intl.format(f.default["4ZKDXl"], {
           articleUrl: u.Z.getArticleURL(p.BhN.SERVER_TAGS)
         })
       })

@@ -21,7 +21,7 @@ let s = function(e) {
     actionsLocation: g,
     fieldStyle: p
   } = e, {
-    label: h
+    label: f
   } = t;
   return (0, r.jsx)(l.Z, {
     field: t,
@@ -31,7 +31,7 @@ let s = function(e) {
     onDrop: c,
     onEdit: d,
     onRemove: u,
-    title: h,
+    title: f,
     canRemove: m,
     actionsLocation: g,
     fieldStyle: p,

@@ -97,11 +97,9 @@ function g(e) {
       align: O,
       children: [t, (0, r.jsxs)(s.Z.Child, {
         children: [null != E && "" !== E ? (0, r.jsx)(c.v, {
-          tag: c.R.H5,
           className: a()(u.formNoticeTitle, {
             [u.whiteText]: I
           }),
-          faded: true,
           children: E
         }) : null, (0, r.jsx)(l.R, {
           className: a()(u.formNoticeBody, {

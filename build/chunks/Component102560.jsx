@@ -51,29 +51,27 @@ let f = e => {
       })
     }), (0, r.jsxs)("div", {
       className: p.content,
-      children: [(0, r.jsx)(c.xJW, {
-        title: b.intl.string(b.t.YccTvL),
-        children: (0, r.jsx)(s.Gu, {
-          value: f,
-          options: [{
-            name: b.intl.formatToPlainString(b.t.FM1dHR, {
-              days: 7
-            }),
-            value: 7
-          }, {
-            name: b.intl.formatToPlainString(b.t.FM1dHR, {
-              days: 30
-            }),
-            value: 30
-          }],
-          onChange: e => {
-            let {
-              value: t
-            } = e;
-            h(t)
-          },
-          className: p.spacing
-        })
+      children: [(0, r.jsx)(s.Gu, {
+        label: b.intl.string(b.t.YccTvL),
+        value: f,
+        options: [{
+          name: b.intl.formatToPlainString(b.t.FM1dHR, {
+            days: 7
+          }),
+          value: 7
+        }, {
+          name: b.intl.formatToPlainString(b.t.FM1dHR, {
+            days: 30
+          }),
+          value: 30
+        }],
+        onChange: e => {
+          let {
+            value: t
+          } = e;
+          h(t)
+        },
+        className: p.spacing
       }), (0, r.jsx)(c.xJW, {
         title: b.intl.string(b.t.buoe19),
         children: (0, r.jsx)(c.zJl, {

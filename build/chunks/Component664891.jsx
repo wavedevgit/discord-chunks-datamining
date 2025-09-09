@@ -185,12 +185,10 @@ function K(e) {
         handleClose: $
       }), (0, r.jsx)(D.UN, {})]
     }), (0, r.jsx)(d.vwX, {
-      tag: d.RB0.H5,
       children: t
     }), eg, (0, r.jsxs)("div", {
       className: F.paymentSourceWrapper,
       children: [(0, r.jsx)(d.vwX, {
-        tag: d.RB0.H5,
         children: B.intl.string(B.t.mmDvV1)
       }), (0, r.jsx)(p.ZP, {
         paymentSources: Object.values(a),
@@ -208,7 +206,6 @@ function K(e) {
       currencies: H,
       className: F.currencyWrapper,
       children: [(0, r.jsx)(d.vwX, {
-        tag: d.RB0.H5,
         children: B.intl.string(B.t["/AAR09"])
       }), (0, r.jsx)(f.Z, {
         selectedCurrency: s.currency,

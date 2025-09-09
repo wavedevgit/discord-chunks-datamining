@@ -62,8 +62,8 @@ function O(e) {
     n(2)
   }, g = 2 === t, p = 1 === t;
   if (!(!(r >= i) && r / i >= .8) || g) return null;
-  let h = p || g ? j.hidden : null,
-    f = p ? m.Z.Stages.FLYING : m.Z.Stages.HOVERING;
+  let f = p || g ? j.hidden : null,
+    h = p ? m.Z.Stages.FLYING : m.Z.Stages.HOVERING;
   return (0, l.jsx)(u.AMe, {
     from: {
       opacity: 0
@@ -78,16 +78,16 @@ function O(e) {
       style: e,
       children: [(0, l.jsx)(m.Z, {
         className: j.tierCloseMechaWumpus,
-        stage: f,
+        stage: h,
         onFlyingComplete: d
       }), (0, l.jsx)("div", {
-        className: o()(j.tierCloseHint, h),
+        className: o()(j.tierCloseHint, f),
         children: x.intl.format(x.t.qV3Erq, {
           numLeft: i - r
         })
       }), (0, l.jsx)(u.P3F, {
         onClick: s,
-        className: o()(j.tierCloseClose, h),
+        className: o()(j.tierCloseClose, f),
         children: (0, l.jsx)(u.k$p, {
           size: "md",
           color: "currentColor",
@@ -110,7 +110,7 @@ function y(e) {
     subscriptionsRequired: m,
     subscriptionCount: g,
     className: p
-  } = e, h = e => {
+  } = e, f = e => {
     null == i || i(e)
   }, [b, x] = a.useState(0);
   return a.useLayoutEffect(() => {
@@ -129,10 +129,10 @@ function y(e) {
         [j.tierHeaderUnlocked]: r,
         [j.tierHeaderLocked]: !r
       }, p),
-      ref: h,
+      ref: f,
       children: (0, l.jsxs)("div", {
         className: j.tierHeaderContent,
-        children: [(0, l.jsx)(f.Z, {
+        children: [(0, l.jsx)(h.Z, {
           tier: s.tier,
           color: "currentColor",
           className: o()(j.tierIcon, {
@@ -167,11 +167,11 @@ function C(e) {
     hasBottomMargin: s,
     headerButton: c = null,
     withCardBody: m = true,
-    guildId: f,
+    guildId: h,
     showHeaderLockStatus: v = true
-  } = e, _ = (0, d.e7)([h.Z], () => {
+  } = e, _ = (0, d.e7)([f.Z], () => {
     var e, t;
-    return null != (t = null == (e = h.Z.getGuild(f)) ? true : e.premiumTier) ? t : b.Eu4.NONE
+    return null != (t = null == (e = f.Z.getGuild(h)) ? true : e.premiumTier) ? t : b.Eu4.NONE
   }), O = b.oCV[i.tier], C = a && i.tier <= _, N = i.tier !== b.Eu4.NONE && i.tier !== b.Eu4.TIER_1;
   return (0, l.jsxs)("div", {
     className: o()(j.tier, {
@@ -186,7 +186,7 @@ function C(e) {
         null != r && r(e, i)
       },
       withCardBody: m,
-      guildId: f,
+      guildId: h,
       hasBottomMargin: s,
       subscriptionsRequired: O,
       hasAnimatedUnlocked: C,

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk600164 = require("./600164.jsx"),
@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk36705 = require("./36705.js"),
   Chunk216019 = require("./216019.js");
 
-function g(e) {
+function f(e) {
   let {
     guild: t,
     onClick: n
@@ -41,11 +41,11 @@ function g(e) {
   })
 }
 
-function f(e) {
+function g(e) {
   let {
     directoryChannelId: t,
     guild: n
-  } = e, l = (0, r.e7)([u.Z], () => u.Z.getDirectoryEntry(t, n.id)), a = s.useRef(null);
+  } = e, l = (0, a.e7)([u.Z], () => u.Z.getDirectoryEntry(t, n.id)), r = s.useRef(null);
   return (0, i.jsxs)("div", {
     className: C.guildRow,
     children: [(0, i.jsx)(d.Z, {
@@ -58,7 +58,7 @@ function f(e) {
       children: n.name
     }), (0, i.jsx)(m.Z, {
       entry: l,
-      targetElementRef: a,
+      targetElementRef: r,
       children: e => {
         var t, n;
         return (0, i.jsx)(o.xhG, (t = function(e) {
@@ -79,7 +79,7 @@ function f(e) {
           }
           return e
         }({
-          ref: a,
+          ref: r,
           size: "md",
           color: "currentColor"
         }, e), n = n = {
@@ -103,7 +103,7 @@ function j(e) {
   let t, {
       directoryChannelId: n,
       onClose: l,
-      onGuildChosen: r,
+      onGuildChosen: a,
       handleChooseCreate: d,
       directoryGuildName: u,
       availableGuilds: m,
@@ -126,9 +126,9 @@ function j(e) {
       variant: "text-md/normal",
       children: x.intl.string(x.t.liuEhY)
     })]
-  }) : m.map(e => (0, i.jsx)(g, {
+  }) : m.map(e => (0, i.jsx)(f, {
     guild: e,
-    onClick: () => r(e)
+    onClick: () => a(e)
   }, e.id)) : 0 === p.length ? (0, i.jsxs)("div", {
     className: C.emptyContainer,
     children: [(0, i.jsx)("img", {
@@ -141,7 +141,7 @@ function j(e) {
       variant: "text-md/normal",
       children: x.intl.string(x.t.WJLuKC)
     })]
-  }) : p.map(e => (0, i.jsx)(f, {
+  }) : p.map(e => (0, i.jsx)(g, {
     directoryChannelId: n,
     guild: e
   }, e.id)), (0, i.jsxs)(i.Fragment, {
@@ -170,13 +170,13 @@ function j(e) {
         type: "top",
         look: "brand",
         children: [(0, i.jsx)(o.njP.Item, {
-          className: a()(C.tabBarItem, {
+          className: r()(C.tabBarItem, {
             [C.selectedTab]: 0 === _
           }),
           id: 0,
           children: x.intl.string(x.t.FTe8HR)
         }), (0, i.jsx)(o.njP.Item, {
-          className: a()(C.tabBarItem, {
+          className: r()(C.tabBarItem, {
             [C.selectedTab]: 1 === _
           }),
           id: 1,

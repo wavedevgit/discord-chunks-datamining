@@ -1,16 +1,16 @@
 /** Chunk was on 61526 **/
 /** chunk id: 212039, original params: e,t,n (module,exports,require) **/
-async function r(e) {
+async function a(e) {
   let {
     default: t
-  } = await n.e("32990").then(n.t.bind(n, 735630, 19)), r = t.createFile(), a = t.createFile(), l = {};
-  e.fileStart = 0, r.onReady = e => {
-    for (let t of (a.init({
+  } = await n.e("32990").then(n.t.bind(n, 735630, 19)), a = t.createFile(), r = t.createFile(), l = {};
+  e.fileStart = 0, a.onReady = e => {
+    for (let t of (r.init({
         duration: e.duration,
         timescale: e.timescale
-      }), e.audioTracks)) l[t.id] = t, r.setExtractionOptions(t.id, null, {
+      }), e.audioTracks)) l[t.id] = t, a.setExtractionOptions(t.id, null, {
       nbSamples: 1 / 0
-    }), a.addTrack({
+    }), r.addTrack({
       id: t.id,
       timescale: t.timescale,
       hdlr: "soun",
@@ -22,14 +22,14 @@ async function r(e) {
       samplesize: t.audio.sample_size,
       name: t.name
     });
-    r.start()
+    a.start()
   };
   let i = new Promise(e => {
-    r.onSamples = (t, n, i) => {
-      for (let e of i) a.addSample(t, e.data, e);
-      r.releaseUsedSamples(t, i.length), delete l[t];
-      let o = a.getTrackById(t),
-        s = r.getTrackById(t);
+    a.onSamples = (t, n, i) => {
+      for (let e of i) r.addSample(t, e.data, e);
+      a.releaseUsedSamples(t, i.length), delete l[t];
+      let o = r.getTrackById(t),
+        s = a.getTrackById(t);
       if (null != s.edts) {
         let e = s.edts.elst;
         o.add("edts").boxes.push(e)
@@ -37,8 +37,8 @@ async function r(e) {
       0 === Object.keys(l).length && e()
     }
   });
-  return r.appendBuffer(e), r.flush(), await i, a.getBuffer()
+  return a.appendBuffer(e), a.flush(), await i, r.getBuffer()
 }
 require.d(exports, {
-  w: () => r
+  w: () => a
 }), require("./388685.js"), require("./539854.js")

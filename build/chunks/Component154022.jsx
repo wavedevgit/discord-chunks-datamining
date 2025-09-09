@@ -302,7 +302,7 @@ function eu() {
   function t() {
     (0, Chunk857595.gs)(!module)
   }
-  return (0, Chunk951288.jsx)(Chunk481060.xJW, {
+  return (0, Chunk951288.jsx)("div", {
     className: Chunk197571.marginTop20,
     children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
       note: Chunk388032.intl.string(Chunk388032.t["72i5GB"]),
@@ -318,7 +318,7 @@ function ed() {
     var e;
     return null == (e = Chunk607070.Z.enableCustomCursor) || module
   });
-  return (0, Chunk951288.jsx)(Chunk481060.xJW, {
+  return (0, Chunk951288.jsx)("div", {
     className: Chunk197571.marginTop20,
     children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
       note: Chunk388032.intl.string(Chunk388032.t.nNZ1T0),
@@ -374,7 +374,7 @@ function e_() {
       enabled: e
     })
   }
-  return (0, Chunk951288.jsx)(Chunk481060.xJW, {
+  return (0, Chunk951288.jsx)("div", {
     className: Chunk197571.marginTop20,
     children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
       value: module,
@@ -602,7 +602,7 @@ function eb() {
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.ACCESSIBILITY_TEXT_TO_SPEECH,
-      children: (0, Chunk951288.jsxs)(Chunk481060.xJW, {
+      children: (0, Chunk951288.jsxs)("div", {
         className: Chunk197571.marginTop20,
         children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           className: Chunk197571.marginBottom8,
@@ -619,7 +619,7 @@ function eb() {
       })
     }), (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.ACCESSIBILITY_TEXT_TO_SPEECH_RATE,
-      children: (0, Chunk951288.jsxs)(Chunk481060.xJW, {
+      children: (0, Chunk951288.jsxs)("div", {
         className: Chunk197571.marginTop20,
         children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           id: er,

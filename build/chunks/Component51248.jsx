@@ -22,19 +22,19 @@ function m(e) {
     cancelEditingRule: m,
     isLoading: g,
     hasChanges: p,
-    editingRule: h,
-    errorMessage: f,
+    editingRule: f,
+    errorMessage: h,
     saveEditingRule: b
   } = (0, c.w)(), {
     updateRule: x
-  } = (0, o.pH)(t), j = null != h, v = j && !(0, s.Vb)(h), _ = j || p || v, O = async () => {
+  } = (0, o.pH)(t), j = null != f, v = j && !(0, s.Vb)(f), _ = j || p || v, O = async () => {
     if (!p && !v) return m();
-    null == h || v || x(h);
+    null == f || v || x(f);
     let e = n.find(e => {
       let {
         id: t
       } = e;
-      return t === (null == h ? true : h.id)
+      return t === (null == f ? true : f.id)
     });
     try {
       let e = await b(n);
@@ -43,13 +43,13 @@ function m(e) {
       null != e && x(e)
     }
   }, y = d.intl.string(d.t["ETE/oK"]), C = !p && j ? d.intl.formatToPlainString(d.t.nula39, {
-    ruleName: null == h ? true : h.name
+    ruleName: null == f ? true : f.name
   }) : true;
-  return null != f && (C = (0, r.jsx)(l.Text, {
+  return null != h && (C = (0, r.jsx)(l.Text, {
     variant: "text-md/normal",
     color: "text-danger",
     className: u.message,
-    children: f
+    children: h
   })), (0, r.jsx)(i.W, {
     component: "div",
     className: u.saveNoticeContainer,

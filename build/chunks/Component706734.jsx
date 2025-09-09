@@ -23,8 +23,8 @@ function _(e) {
     reason: _,
     onReasonChange: E,
     freeTextResponse: N,
-    setFreeTextResponse: h
-  } = e, p = d.zf.map(e => ({
+    setFreeTextResponse: p
+  } = e, h = d.zf.map(e => ({
     value: e,
     name: (0, i.S)(e)
   })), A = (0, l.u)("change_email_collect_reasons_slide");
@@ -47,14 +47,14 @@ function _(e) {
         radioItemClassName: x.radioItem,
         size: s.l7.NOT_SET,
         value: _,
-        options: p,
+        options: h,
         onChange: e => {
           let {
             value: t
           } = e;
           o.default.track(c.rMx.USER_ACCOUNT_EMAIL_CHANGE_REASON_SELECTED, {
             change_email_reason_enum: t
-          }), E(t), h(""), t === d.pw.SOMETHING_ELSE && l.Z.trackExposure({
+          }), E(t), p(""), t === d.pw.SOMETHING_ELSE && l.Z.trackExposure({
             location: "change_email_collect_reasons_slide"
           })
         }
@@ -62,7 +62,7 @@ function _(e) {
         children: (0, a.jsx)(r.Kx8, {
           value: N,
           maxLength: d.mF,
-          onChange: h,
+          onChange: p,
           placeholder: m.intl.string(m.t.Q8Rk7O)
         })
       })]

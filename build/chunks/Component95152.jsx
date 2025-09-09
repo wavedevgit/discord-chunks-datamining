@@ -181,29 +181,25 @@ class R extends Chunk647438.Component {
             gap: 24,
             children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
               gap: 16,
-              children: [(0, Chunk951288.jsx)(Chunk481060.xJW, {
-                title: Chunk388032.intl.string(Chunk388032.t.ILJuBg),
-                children: (0, Chunk951288.jsx)(Chunk481060.oil, {
-                  value: this.state.filename,
-                  onChange: e => this.setState({
-                    filename: e
-                  }),
-                  onKeyDown: e => {
-                    if (e.which === E.yXg.ENTER) return this.handleSubmit()
-                  }
-                })
-              }), module.isImage ? (0, Chunk951288.jsx)(Chunk481060.xJW, {
-                title: Chunk388032.intl.string(Chunk388032.t.eOB2eX),
-                children: (0, Chunk951288.jsx)(Chunk481060.oil, {
-                  placeholder: Chunk388032.intl.string(Chunk388032.t.RNH1jo),
-                  value: this.state.description,
-                  onChange: e => this.setState({
-                    description: e
-                  }),
-                  onKeyDown: e => {
-                    if (e.which === E.yXg.ENTER) return this.handleSubmit()
-                  }
-                })
+              children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
+                label: Chunk388032.intl.string(Chunk388032.t.ILJuBg),
+                value: this.state.filename,
+                onChange: e => this.setState({
+                  filename: e
+                }),
+                onKeyDown: e => {
+                  if (e.which === E.yXg.ENTER) return this.handleSubmit()
+                }
+              }), module.isImage ? (0, Chunk951288.jsx)(Chunk481060.oil, {
+                label: Chunk388032.intl.string(Chunk388032.t.eOB2eX),
+                placeholder: Chunk388032.intl.string(Chunk388032.t.RNH1jo),
+                value: this.state.description,
+                onChange: e => this.setState({
+                  description: e
+                }),
+                onKeyDown: e => {
+                  if (e.which === E.yXg.ENTER) return this.handleSubmit()
+                }
               }) : null]
             }), true !== Chunk647438 && (0, Chunk951288.jsx)(Chunk755721.$q, {
               value: Chunk120356,

@@ -34,7 +34,7 @@ function _(e) {
     imageCTA: P,
     imageAriaLabel: w,
     setFilename: R
-  } = (0, h.Z)(_), Z = i.useMemo(() => {
+  } = (0, f.Z)(_), Z = i.useMemo(() => {
     var e;
     return null != (e = null == t ? true : t.map(e => ({
       value: e,
@@ -49,7 +49,7 @@ function _(e) {
     L = (0, s.Dt)(),
     k = (0, s.Dt)(),
     M = (0, s.Dt)();
-  return (0, r.jsxs)(f.Z, {
+  return (0, r.jsxs)(h.Z, {
     title: x.intl.string(x.t.iHU439),
     intiallyExpanded: true,
     children: [(0, r.jsxs)("div", {

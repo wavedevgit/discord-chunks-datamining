@@ -21,9 +21,9 @@ function p(e) {
   let {
     action: n,
     triggerType: p,
-    toggled: h,
-    onToggleAction: f
-  } = e, b = e => () => f(e), x = (0, u.c)(n.type, n, p), j = null == (t = n.metadata) ? true : t.channelId, v = (0, i.e7)([d.default, c.Z, o.Z], () => {
+    toggled: f,
+    onToggleAction: h
+  } = e, b = e => () => h(e), x = (0, u.c)(n.type, n, p), j = null == (t = n.metadata) ? true : t.channelId, v = (0, i.e7)([d.default, c.Z, o.Z], () => {
     let e = o.Z.getChannel(j);
     return null == e ? null : (0, s.F6)(e, d.default, c.Z)
   }, [j]);
@@ -51,7 +51,7 @@ function p(e) {
         color: "interactive-normal",
         variant: "text-xs/medium",
         children: O
-      }), h && (0, r.jsxs)(a.Text, {
+      }), f && (0, r.jsxs)(a.Text, {
         color: "text-muted",
         variant: "text-xs/medium",
         children: [null != v && m.intl.format(m.t["8Sr/am"], {
@@ -67,7 +67,7 @@ function p(e) {
     }), (0, r.jsx)("div", {
       children: (0, r.jsx)(l.$q, {
         type: l.M0.INVERTED,
-        value: h,
+        value: f,
         onChange: b(false),
         className: g.__invalid_actionCheckbox
       })

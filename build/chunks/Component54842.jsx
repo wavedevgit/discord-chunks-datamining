@@ -140,7 +140,7 @@ let C = [{
     i.useEffect(() => {
       null != S && l(S / 2), null != T && v(T / 2)
     }, [S, T, l, v]), i.useEffect(() => {
-      (0, d.Kw)(h.v.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL)
+      (0, d.Kw)(f.v.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL)
     }, []);
     let P = () => {
       u.Z.open()
@@ -176,23 +176,23 @@ let C = [{
         })]
       }), (0, r.jsx)(c.X6q, {
         variant: "heading-xl/semibold",
-        children: f.intl.string(f.t["M/gBcH"])
+        children: h.intl.string(h.t["M/gBcH"])
       }), (0, r.jsx)(c.Text, {
         color: "header-secondary",
         variant: "text-md/normal",
         className: b.body,
-        children: f.intl.format(f.t["52EgsL"], {
+        children: h.intl.format(h.t["52EgsL"], {
           helpdeskArticle: g.Z.getArticleURL(p.BhN.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES)
         })
       }), (0, r.jsx)(c.ua7, {
-        text: I ? null : f.intl.string(f.t["pjG+T0"]),
-        "aria-label": I ? true : f.intl.string(f.t["pjG+T0"]),
+        text: I ? null : h.intl.string(h.t["pjG+T0"]),
+        "aria-label": I ? true : h.intl.string(h.t["pjG+T0"]),
         children: e => (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: b.button,
           children: (0, r.jsx)(c.zxk, y({
             variant: "primary",
-            text: f.intl.string(f.t.LhlgY2),
+            text: h.intl.string(h.t.LhlgY2),
             onClick: P,
             disabled: !I
           }, e))
@@ -202,12 +202,12 @@ let C = [{
       }), (0, r.jsx)(c.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: f.intl.string(f.t.OzLWLC)
+        children: h.intl.string(h.t.OzLWLC)
       }), (0, r.jsx)(c.Text, {
         color: "header-secondary",
         className: b.body,
         variant: "text-sm/normal",
-        children: f.intl.format(f.t.rjhrqK, {
+        children: h.intl.format(h.t.rjhrqK, {
           helpdeskArticle: g.Z.getArticleURL(p.BhN.GUILD_COMMUNITY_FEATURE)
         })
       }), (0, r.jsx)("div", {
@@ -215,8 +215,8 @@ let C = [{
         children: [{
           icon: c.IeX,
           color: o.Z.unsafe_rawColors.GREEN_360.css,
-          header: f.intl.string(f.t.oVQF29),
-          body: f.intl.format(f.t.A6G7am, {
+          header: h.intl.string(h.t.oVQF29),
+          body: h.intl.format(h.t.A6G7am, {
             featureHook: (e, t) => (0, r.jsx)("strong", {
               className: b.featuredText,
               children: e
@@ -225,11 +225,11 @@ let C = [{
         }, {
           icon: c.IeX,
           color: o.Z.unsafe_rawColors.PARTNER.css,
-          header: f.intl.string(f.t["0rJl9/"]),
-          body: f.intl.format(f.t.XsCNk5, {
+          header: h.intl.string(h.t["0rJl9/"]),
+          body: h.intl.format(h.t.XsCNk5, {
             infoHook: () => (0, r.jsx)(c.ua7, {
-              text: f.intl.string(f.t.kPJlTk),
-              "aria-label": f.intl.string(f.t.kPJlTk),
+              text: h.intl.string(h.t.kPJlTk),
+              "aria-label": h.intl.string(h.t.kPJlTk),
               children: e => (0, r.jsx)(c.d3s, y({
                 size: "xs",
                 color: "currentColor",
@@ -244,8 +244,8 @@ let C = [{
         }, {
           icon: c.d3s,
           color: o.Z.unsafe_rawColors.RED_360.css,
-          header: f.intl.string(f.t.W2kLJC),
-          body: f.intl.string(f.t.hyNkHx)
+          header: h.intl.string(h.t.W2kLJC),
+          body: h.intl.string(h.t.hyNkHx)
         }].map((e, t) => (0, r.jsx)(N, y({}, e), t))
       })]
     })

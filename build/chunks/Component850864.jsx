@@ -121,12 +121,12 @@ function N(e) {
         className: v.section,
         children: [(0, r.jsx)(b.Z, {
           guildId: t.id
-        }), (0, r.jsx)(f.Z, {
+        }), (0, r.jsx)(h.Z, {
           guildId: t.id
         })]
       }), (0, r.jsx)("div", {
         className: v.sectionSeparator
-      }), (0, r.jsx)(h.Z, {
+      }), (0, r.jsx)(f.Z, {
         guild: t
       })]
     }), (0, r.jsxs)("div", {

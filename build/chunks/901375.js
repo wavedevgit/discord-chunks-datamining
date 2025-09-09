@@ -17,23 +17,23 @@ async function u(e) {
     giftCodeSKUId: u
   } = e;
   try {
-    if (null == a.Z && null != window.PublicKeyCredential && null != PublicKeyCredential.isConditionalMediationAvailable) {
+    if (null == o.Z && null != window.PublicKeyCredential && null != PublicKeyCredential.isConditionalMediationAvailable) {
       if (!await PublicKeyCredential.isConditionalMediationAvailable()) return;
       let {
         challenge: e,
-        ticket: a
+        ticket: o
       } = await (0, l.us)(), d = (0, n.wz)(JSON.parse(e));
       d.signal = t.signal;
       let h = await (0, n.U2)(d);
       s.Z.dispatch({
         type: "PASSWORDLESS_START"
-      }), o.default.track(c.rMx.LOGIN_ATTEMPTED, {
+      }), a.default.track(c.rMx.LOGIN_ATTEMPTED, {
         source: c.uRl.PASSWORDLESS_CONDITIONAL_UI,
         login_method: "passwordless",
         login_source: r,
         gift_code_sku_id: u
       }), await i.Z.loginWebAuthn({
-        ticket: a,
+        ticket: o,
         credential: JSON.stringify(h),
         source: r,
         giftCodeSKUId: u

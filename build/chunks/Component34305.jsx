@@ -100,17 +100,15 @@ class E extends Chunk647438.PureComponent {
       className: Chunk499126.installationPathEditing,
       children: (0, Chunk951288.jsxs)(Chunk600164.Z, {
         children: [this.renderDiskUsageCircle(), (0, Chunk951288.jsxs)(Chunk600164.Z.Child, {
-          children: [(0, Chunk951288.jsx)(Chunk481060.xJW, {
-            title: Chunk388032.intl.string(Chunk388032.t.AJkKCA),
-            children: (0, Chunk951288.jsx)(Chunk481060.oil, {
-              value: require,
-              placeholder: Chunk391690.Z.getLabelFromPath(module),
-              onChange: this.handleLabelChange
-            })
-          }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
-            title: Chunk388032.intl.string(Chunk388032.t.lnUCwc),
+          children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
+            label: Chunk388032.intl.string(Chunk388032.t.AJkKCA),
+            value: require,
+            placeholder: Chunk391690.Z.getLabelFromPath(module),
+            onChange: this.handleLabelChange
+          }), (0, Chunk951288.jsx)("div", {
             className: Chunk197571.marginTop20,
             children: (0, Chunk951288.jsx)(Chunk481060.oil, {
+              label: Chunk388032.intl.string(Chunk388032.t.lnUCwc),
               disabled: true,
               value: module
             })

@@ -368,7 +368,7 @@ class eR extends Chunk647438.PureComponent {
       W = e.isForumLikeChannel() ? (0, i.jsxs)("div", {
         children: [(0, i.jsxs)("div", {
           className: eo.twoColumnSettings,
-          children: [(0, i.jsxs)(m.xJW, {
+          children: [(0, i.jsxs)("div", {
             className: s()(eo.settingsLeft, eo.settingsDefaultReaction),
             children: [(0, i.jsx)(m.vwX, {
               id: ep,
@@ -415,7 +415,7 @@ class eR extends Chunk647438.PureComponent {
       F = e.isForumChannel() ? (0, i.jsxs)("div", {
         children: [(0, i.jsxs)("div", {
           className: eo.twoColumnSettings,
-          children: [(0, i.jsxs)(m.xJW, {
+          children: [(0, i.jsxs)("div", {
             className: s()(eo.settingsLeft, eo.settingsDefaultView),
             children: [(0, i.jsx)(m.hjN, {
               title: ea.intl.string(ea.t.kQvoCw),
@@ -493,7 +493,7 @@ class eR extends Chunk647438.PureComponent {
         })]
       }) : null,
       q = R ? C : b,
-      J = V.X_.has(e.type) ? (0, i.jsxs)("div", {
+      $ = V.X_.has(e.type) ? (0, i.jsxs)("div", {
         children: [(0, i.jsxs)(m.xJW, {
           children: [(0, i.jsx)(m.vwX, {
             id: ef,
@@ -587,7 +587,7 @@ class eR extends Chunk647438.PureComponent {
           note: (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
               children: ea.intl.format(ea.t.tI7KNT, {
-                documentationLink: $.Z.getArticleURL(en.BhN.ANNOUNCEMENT_CHANNELS)
+                documentationLink: J.Z.getArticleURL(en.BhN.ANNOUNCEMENT_CHANNELS)
               })
             }), (0, i.jsx)("div", {
               className: ec.marginTop8,
@@ -619,7 +619,7 @@ class eR extends Chunk647438.PureComponent {
       }) : null,
       ey = this.props.showChannelSummariesSettings ? (0, i.jsx)(m.j7V, {
         note: ea.intl.format(ea.t.feJW19, {
-          helpdeskArticle: $.Z.getArticleURL(en.BhN.CONVERSATION_SUMMARIES)
+          helpdeskArticle: J.Z.getArticleURL(en.BhN.CONVERSATION_SUMMARIES)
         }),
         onChange: this.handleChannelSummariesToggled,
         value: !e.hasFlag(ei.zZ.SUMMARIES_DISABLED) && (null == E ? true : E.features.has(en.oNc.SUMMARIES_ENABLED_BY_USER)),
@@ -646,31 +646,29 @@ class eR extends Chunk647438.PureComponent {
         })]
       }) : null;
     return e.type === en.d4z.GUILD_CATEGORY ? (j = ea.intl.string(ea.t.OCAkGB), f = "category-name") : e.isForumPost() ? (j = ea.intl.string(ea.t.uyVrTE), f = "post-title") : R ? (j = ea.intl.string(ea.t.j3XWjI), f = "thread-name") : (j = ea.intl.string(ea.t.PVbHDg), f = "channel-name"), (0, i.jsxs)("div", {
-      children: [(0, i.jsx)(m.xJW, {
-        title: j,
-        children: (0, i.jsx)(m.oil, {
-          fullWidth: true,
-          inputRef: this.nameInputRef,
-          value: t,
-          onChange: this.handleChangeName,
-          onBlur: this.handleBlurName,
-          error: this.getError("name"),
-          name: f,
-          autoFocus: true,
-          disabled: T ? !v : !b,
-          maxLength: en.HN8,
-          trailing: {
-            type: "emoji",
-            button: (0, i.jsx)(eZ, {
-              onEmojiPicked: this.insertEmojiAtPosition,
-              channel: e,
-              guildId: null == e ? true : e.guild_id
-            })
-          }
-        })
+      children: [(0, i.jsx)(m.oil, {
+        label: j,
+        fullWidth: true,
+        inputRef: this.nameInputRef,
+        value: t,
+        onChange: this.handleChangeName,
+        onBlur: this.handleBlurName,
+        error: this.getError("name"),
+        name: f,
+        autoFocus: true,
+        disabled: T ? !v : !b,
+        maxLength: en.HN8,
+        trailing: {
+          type: "emoji",
+          button: (0, i.jsx)(eZ, {
+            onEmojiPicked: this.insertEmojiAtPosition,
+            channel: e,
+            guildId: null == e ? true : e.guild_id
+          })
+        }
       }), (0, i.jsx)(m.$i$, {
         className: s()(ec.marginTop40, ec.marginBottom40)
-      }), B, H, G, W, J, Q, F, z, Y, el, ej, eb, ey, ev, eC]
+      }), B, H, G, W, $, Q, F, z, Y, el, ej, eb, ey, ev, eC]
     })
   }
   renderBitrate(e) {
@@ -743,19 +741,17 @@ class eR extends Chunk647438.PureComponent {
     return (0, i.jsxs)(E.Z, {
       direction: E.Z.Direction.VERTICAL,
       className: ec.marginBottom40,
-      children: [(0, i.jsx)(m.xJW, {
-        title: ea.intl.string(ea.t.jhJEJi),
-        children: (0, i.jsx)(g.Gu, {
-          onChange: e => {
-            let {
-              value: t
-            } = e;
-            return this.handleVideoQualityModeChange(t)
-          },
-          options: l,
-          value: null != (t = e.videoQualityMode) ? t : en.Ucd.AUTO,
-          disabled: !n
-        })
+      children: [(0, i.jsx)(m.FXm, {
+        label: ea.intl.string(ea.t.jhJEJi),
+        onChange: e => {
+          let {
+            value: t
+          } = e;
+          return this.handleVideoQualityModeChange(t)
+        },
+        options: l,
+        value: null != (t = e.videoQualityMode) ? t : en.Ucd.AUTO,
+        disabled: !n
       }), (0, i.jsx)(m.R94, {
         type: m.geA.DESCRIPTION,
         children: ea.intl.format(ea.t.c5W7Sk, {})
@@ -903,7 +899,7 @@ class eR extends Chunk647438.PureComponent {
         channel: t
       } = this.props;
       if (null == t) return null;
-      let n = (0, J.mB)(t.flags, ei.zZ.REQUIRE_TAG, e);
+      let n = (0, $.mB)(t.flags, ei.zZ.REQUIRE_TAG, e);
       (0, p.pW)({
         flags: n
       })
@@ -1010,7 +1006,7 @@ class eR extends Chunk647438.PureComponent {
         channel: t
       } = this.props;
       if (null == t) return null;
-      let n = (0, J.mB)(t.flags, ei.zZ.ACTIVE_CHANNELS_REMOVED, !e);
+      let n = (0, $.mB)(t.flags, ei.zZ.ACTIVE_CHANNELS_REMOVED, !e);
       (0, p.pW)({
         flags: n
       })
@@ -1051,7 +1047,7 @@ class eR extends Chunk647438.PureComponent {
         channel: t
       } = this.props;
       if (null == t) return null;
-      let n = (0, J.mB)(t.flags, ei.zZ.SUMMARIES_DISABLED, !e);
+      let n = (0, $.mB)(t.flags, ei.zZ.SUMMARIES_DISABLED, !e);
       (0, p.pW)({
         flags: n
       })
@@ -1060,7 +1056,7 @@ class eR extends Chunk647438.PureComponent {
         channel: t
       } = this.props;
       if (null == t) return null;
-      let n = (0, J.mB)(t.flags, ei.zZ.HIDE_MEDIA_DOWNLOAD_OPTIONS, !e);
+      let n = (0, $.mB)(t.flags, ei.zZ.HIDE_MEDIA_DOWNLOAD_OPTIONS, !e);
       (0, p.pW)({
         flags: n
       })

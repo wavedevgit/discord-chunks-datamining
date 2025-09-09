@@ -56,7 +56,7 @@ function C(e) {
     (0, p.Gy)(e)
   }, []);
   if (null == n) return (0, r.jsx)(s.$jN, {});
-  let g = null != c ? (0, h.i)(c.code) : null;
+  let g = null != c ? (0, f.i)(c.code) : null;
   return (0, r.jsxs)(s.Zbd, {
     editable: true,
     className: O.editVanityUrlCard,
@@ -109,13 +109,13 @@ function N(e) {
     })
   }, [p, t, x]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, h.p)(t) ? (0, r.jsx)(C, {
+    children: [(0, f.p)(t) ? (0, r.jsx)(C, {
       guild: t,
       vanityURLCode: n,
       vanityURLUses: a,
       originalVanityURLCode: s,
       errorDetails: d
-    }) : (0, r.jsx)(f.P, {
+    }) : (0, r.jsx)(h.P, {
       onClick: _,
       className: O.upsellButton
     }), (0, r.jsx)(y, {

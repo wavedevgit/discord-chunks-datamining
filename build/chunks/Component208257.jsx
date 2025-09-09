@@ -96,6 +96,16 @@ let o = {
         type: "boolean",
         label: "With Transparent Background",
         defaultValue: false
+      },
+      label: {
+        type: "text",
+        label: "Label",
+        defaultValue: "Radio Group"
+      },
+      description: {
+        type: "text",
+        label: "Description",
+        defaultValue: "This is a description for the radio group"
       }
     }
   }]

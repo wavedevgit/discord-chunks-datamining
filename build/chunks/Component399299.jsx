@@ -147,7 +147,7 @@ function J(e) {
       value: t
     })
   }, []);
-  return n >= 2 && n <= B.tB ? (0, r.jsx)(c.xJW, {
+  return n >= 2 && n <= B.tB ? (0, r.jsx)("div", {
     className: s()(F.modalContent, z.checkboxRow),
     children: (0, r.jsx)(a.$q, {
       value: !!l,
@@ -169,7 +169,7 @@ function X(e) {
   } = e, d = i.useCallback((e, t) => {
     n(t)
   }, [n]), u = (0, o.e7)([y.Z], () => y.Z.getUseSystemScreensharePicker() && (0, N.isLinux)());
-  return (0, r.jsx)(c.xJW, {
+  return (0, r.jsx)("div", {
     className: s()(F.modalContent, z.checkboxRow),
     children: (0, r.jsx)(a.$q, {
       value: t,
@@ -190,7 +190,7 @@ function K(e) {
   } = e, l = i.useCallback((e, t) => {
     n(t)
   }, [n]);
-  return (0, r.jsx)(c.xJW, {
+  return (0, r.jsx)("div", {
     className: s()(F.modalContent, z.checkboxRow),
     children: (0, r.jsx)(a.$q, {
       value: t,

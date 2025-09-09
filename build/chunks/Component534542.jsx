@@ -70,13 +70,7 @@ function _(e, t) {
 }
 let p = {
     DEFAULT: "default",
-    INPUT_PLACEHOLDER: "placeholder",
-    DESCRIPTION: "description",
-    LABEL_BOLD: "labelBold",
-    LABEL_SELECTED: "labelSelected",
-    LABEL_DESCRIPTOR: "labelDescriptor",
-    ERROR: "error",
-    SUCCESS: "success"
+    DESCRIPTION: "description"
   },
   h = "modeDefault",
   m = "modeDisabled";

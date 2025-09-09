@@ -134,7 +134,6 @@ class h extends Chunk647438.PureComponent {
       className: exports,
       children: (0, Chunk951288.jsxs)(Chunk481060.y5t, {
         component: (0, Chunk951288.jsx)(Chunk481060.vwX, {
-          tag: Chunk481060.RB0.H5,
           className: null != module.description ? Chunk197571.marginBottom8 : Chunk197571.marginBottom20,
           children: module.title
         }),

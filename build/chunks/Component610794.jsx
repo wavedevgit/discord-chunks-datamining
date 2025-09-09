@@ -185,7 +185,6 @@ function T() {
   return 0 === exports.length ? null : (0, Chunk951288.jsxs)(Chunk481060.hjN, {
     className: Chunk673449.container,
     children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-      tag: Chunk481060.RB0.H5,
       className: Chunk673449.title,
       children: Chunk388032.intl.string(Chunk388032.t.aw0GVV)
     }), exports.map(e => (0, r.jsx)(I, {

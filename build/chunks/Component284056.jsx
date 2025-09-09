@@ -138,7 +138,6 @@ class C extends Chunk647438.PureComponent {
       className: o()(Chunk81272.container, Chunk131951),
       children: [!Chunk393238 && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-          tag: Chunk481060.RB0.H5,
           className: Chunk81272.title,
           children: exports
         }), null != require && (0, Chunk951288.jsx)(Chunk481060.R94, {

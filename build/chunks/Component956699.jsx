@@ -176,14 +176,11 @@ class el extends Chunk647438.Component {
           })
         }), (0, Chunk951288.jsx)(Chunk600164.Z.Child, {
           basis: "50%",
-          children: (0, Chunk951288.jsx)(Chunk481060.xJW, {
-            title: Chunk392711,
-            className: Chunk674336.item,
-            children: (0, Chunk951288.jsx)(Chunk481060.oil, {
-              value: require,
-              onChange: this.handleOverrideIdChanged,
-              disabled: Chunk647438
-            })
+          children: (0, Chunk951288.jsx)(Chunk481060.oil, {
+            label: Chunk392711,
+            value: require,
+            onChange: this.handleOverrideIdChanged,
+            disabled: Chunk647438
           })
         })]
       }), (0, Chunk951288.jsxs)(Chunk600164.Z.Child, {

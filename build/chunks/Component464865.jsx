@@ -24,7 +24,7 @@ function j(e) {
   let {
     guild: t
   } = e, n = i.useRef(null), j = (0, o.g1)(t.id, "GuildSettingsBoostPerks"), v = (0, l.e7)([c.Z], () => c.Z.hideInstantInvites);
-  (0, g.Z)(n, f.KsC.BOOST_PERKS_VANITY_URL);
+  (0, g.Z)(n, h.KsC.BOOST_PERKS_VANITY_URL);
   let {
     vanityURLCode: _,
     vanityURLUses: O,
@@ -52,11 +52,11 @@ function j(e) {
       color: "text-secondary",
       className: x.description,
       children: j ? b.intl.format(b.t["J/v84O"], {
-        helpCenterArticle: d.Z.getArticleURL(f.BhN.GUILD_VANITY_URL)
+        helpCenterArticle: d.Z.getArticleURL(h.BhN.GUILD_VANITY_URL)
       }) : b.intl.format(b.t.koklFB, {
-        helpCenterArticle: d.Z.getArticleURL(f.BhN.GUILD_VANITY_URL)
+        helpCenterArticle: d.Z.getArticleURL(h.BhN.GUILD_VANITY_URL)
       })
-    }), (0, r.jsx)(h.z, {
+    }), (0, r.jsx)(f.z, {
       guild: t,
       vanityURLCode: _,
       vanityURLUses: O,

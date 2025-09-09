@@ -16,14 +16,14 @@ function u(e) {
     audioTrackLabel: n,
     src: l,
     muted: i
-  } = e, o = a.useCallback(e => {
+  } = e, o = r.useCallback(e => {
     t(e, n)
-  }, [t, n]), u = a.useCallback(e => {
+  }, [t, n]), u = r.useCallback(e => {
     Object.values(e.currentTarget.audioTracks).forEach(e => {
       e.enabled = n === e.label
     })
   }, [n]);
-  return (0, r.jsx)("audio", {
+  return (0, a.jsx)("audio", {
     id: "ClipsPlayerAudioTrack:".concat(n),
     className: s.hidden,
     ref: o,
@@ -43,7 +43,7 @@ let c = Chunk647438.forwardRef(function(e, t) {
     onDoneLoading: f,
     startTime: v = 0,
     endTime: h
-  } = e, g = a.useRef({}), [x, b] = a.useState([]), j = a.useRef(false), y = a.useCallback(() => {
+  } = e, g = r.useRef({}), [x, b] = r.useState([]), j = r.useRef(false), y = r.useCallback(() => {
     let e = g.current.main;
     if (null == e) return;
     let t = (0, l.round)(e.currentTime, 3),
@@ -56,38 +56,38 @@ let c = Chunk647438.forwardRef(function(e, t) {
   (0, i.Z)(() => {
     j.current && y() && _()
   });
-  let _ = a.useCallback(() => {
+  let _ = r.useCallback(() => {
       for (let e of (j.current = true, y(), Object.values(g.current))) null != e && e.play()
     }, [y]),
-    w = a.useCallback(() => {
+    w = r.useCallback(() => {
       for (let e of Object.values(g.current)) null != e && e.pause()
     }, []),
-    C = a.useCallback(e => {
+    C = r.useCallback(e => {
       var t;
       for (let n of ((null == (t = g.current.main) ? true : t.paused) && (j.current = false), Object.values(g.current))) null != n && (n.currentTime = e)
     }, []),
-    k = a.useCallback(() => {
+    k = r.useCallback(() => {
       var e;
       (null == (e = g.current.main) ? true : e.paused) ? _(): w()
     }, [_, w]),
-    O = a.useCallback(e => {
+    O = r.useCallback(e => {
       g.current.main = e
     }, []),
-    P = a.useCallback(e => {
+    P = r.useCallback(e => {
       let t = [];
       for (let n of Object.values(e.currentTarget.audioTracks)) n.label.includes(":application") ? n.enabled = true : n.label.includes(":voice") ? (n.enabled = false, t.includes(n.label) || t.push(n.label)) : n.enabled = false;
       b(t)
     }, []),
-    S = a.useCallback((e, t) => {
+    S = r.useCallback((e, t) => {
       g.current[t] = e
     }, []);
-  return (a.useImperativeHandle(t, () => ({
+  return (r.useImperativeHandle(t, () => ({
     play: _,
     seek: C,
     pause: w,
     videoElement: g.current.main
-  })), null == n) ? null : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(o.Z, {
+  })), null == n) ? null : (0, a.jsxs)(a.Fragment, {
+    children: [(0, a.jsx)(o.Z, {
       onClick: k,
       className: p ? s.hidden : s.displayVideo,
       ref: O,
@@ -95,7 +95,7 @@ let c = Chunk647438.forwardRef(function(e, t) {
       muted: true,
       onLoadedData: f,
       preload: "auto"
-    }), (0, r.jsx)("audio", {
+    }), (0, a.jsx)("audio", {
       id: "ClipsPlayerAudioTrack:application",
       src: c,
       muted: !d,
@@ -103,7 +103,7 @@ let c = Chunk647438.forwardRef(function(e, t) {
       className: s.hidden,
       ref: e => S(e, "application"),
       onLoadedMetadata: P
-    }), x.map(e => (0, r.jsx)(u, {
+    }), x.map(e => (0, a.jsx)(u, {
       audioTrackLabel: e,
       setRef: S,
       src: c,

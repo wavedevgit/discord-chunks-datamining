@@ -162,18 +162,16 @@ function w(e) {
         children: [(0, i.jsxs)(m.Z, {
           children: [(0, i.jsx)(m.Z.Child, {
             basis: "50%",
-            children: (0, i.jsx)(c.xJW, {
-              title: _.intl.string(_.t.ukdxur),
-              children: (0, i.jsx)(c.oil, {
-                value: l.name,
-                onChange: e => {
-                  u.Z.updateWebhook({
-                    name: e
-                  })
-                },
-                maxLength: 80,
-                error: P.name
-              })
+            children: (0, i.jsx)(c.oil, {
+              label: _.intl.string(_.t.ukdxur),
+              value: l.name,
+              onChange: e => {
+                u.Z.updateWebhook({
+                  name: e
+                })
+              },
+              maxLength: 80,
+              error: P.name
             })
           }), (0, i.jsx)(m.Z.Child, {
             basis: "50%",

@@ -21,8 +21,8 @@ let s = function(e) {
     actionsLocation: g,
     fieldStyle: p
   } = e, {
-    label: h,
-    placeholder: f
+    label: f,
+    placeholder: h
   } = t;
   return (0, r.jsx)(l.Z, {
     field: t,
@@ -32,12 +32,12 @@ let s = function(e) {
     onDrop: c,
     onEdit: d,
     onRemove: u,
-    title: h,
+    title: f,
     canRemove: m,
     actionsLocation: g,
     fieldStyle: p,
     children: (0, r.jsx)(i.Gi, {
-      placeholder: null != f ? f : a.intl.string(a.t["Sqn+Wl"]),
+      placeholder: null != h ? h : a.intl.string(a.t["Sqn+Wl"]),
       disabled: true
     })
   })

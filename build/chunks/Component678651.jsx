@@ -18,26 +18,26 @@ function p(e) {
   var t, n;
   let {
     clip: p
-  } = e, [f] = (0, o.Z)([null != (t = p.applicationId) ? t : ""]), v = (0, l.e7)([u.default], () => u.default.locale), h = a.useMemo(() => new Date(c.default.extractTimestamp(p.id)), [p.id]);
-  return (0, r.jsxs)("div", {
+  } = e, [f] = (0, o.Z)([null != (t = p.applicationId) ? t : ""]), v = (0, l.e7)([u.default], () => u.default.locale), h = r.useMemo(() => new Date(c.default.extractTimestamp(p.id)), [p.id]);
+  return (0, a.jsxs)("div", {
     className: m.root,
-    children: [(0, r.jsxs)("div", {
+    children: [(0, a.jsxs)("div", {
       className: m.nameSection,
-      children: [(0, r.jsx)(s.Z, {
+      children: [(0, a.jsx)(s.Z, {
         game: f
-      }), (0, r.jsx)(i.Text, {
+      }), (0, a.jsx)(i.Text, {
         className: m.name,
         variant: "text-md/medium",
         color: "interactive-active",
         children: null != (n = null == f ? true : f.name) ? n : p.applicationName
       })]
-    }), (0, r.jsxs)("div", {
+    }), (0, a.jsxs)("div", {
       className: m.timeContainer,
-      children: [(0, r.jsxs)("div", {
-        children: [(0, r.jsx)(i.vwX, {
+      children: [(0, a.jsxs)("div", {
+        children: [(0, a.jsx)(i.vwX, {
           className: m.timeTitle,
           children: d.intl.string(d.t.g8pDeX)
-        }), (0, r.jsx)(i.Text, {
+        }), (0, a.jsx)(i.Text, {
           variant: "text-sm/normal",
           color: "interactive-active",
           children: h.toLocaleDateString(v, {
@@ -46,11 +46,11 @@ function p(e) {
             day: "2-digit"
           })
         })]
-      }), (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(i.vwX, {
+      }), (0, a.jsxs)("div", {
+        children: [(0, a.jsx)(i.vwX, {
           className: m.timeTitle,
           children: d.intl.string(d.t.v6XAgo)
-        }), (0, r.jsx)(i.Text, {
+        }), (0, a.jsx)(i.Text, {
           variant: "text-sm/normal",
           color: "interactive-active",
           children: h.toLocaleTimeString(v, {

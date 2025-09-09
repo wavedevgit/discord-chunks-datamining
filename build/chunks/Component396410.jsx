@@ -18,29 +18,29 @@ function c(t) {
     onFormSubmit: n,
     onSuccess: c,
     onClose: d,
-    headerText: h,
-    confirmButtonText: m,
+    headerText: m,
+    confirmButtonText: h,
     confirmButtonVariant: f = "primary"
-  } = t, [x, y] = s.useState(false), [A, g] = s.useState(""), [v, E] = s.useState(null), Z = s.useRef(null), k = async t => {
-    if (t.preventDefault(), E(null), y(true), false === p.test(A)) {
-      E(u.intl.string(u.t.hML7Gx)), y(false);
+  } = t, [y, A] = s.useState(false), [g, v] = s.useState(""), [x, E] = s.useState(null), Z = s.useRef(null), b = async t => {
+    if (t.preventDefault(), E(null), A(true), false === p.test(g)) {
+      E(u.intl.string(u.t.hML7Gx)), A(false);
       return
     }
     try {
-      let t = null != n ? await n(A) : true;
+      let t = null != n ? await n(g) : true;
       null != c && (null != t ? c({
         response: t,
-        email: A
-      }) : c(A)), d()
+        email: g
+      }) : c(g)), d()
     } catch (t) {
       E(new o.Z(t).getAnyErrorMessage())
     } finally {
-      y(false)
+      A(false)
     }
   };
   return (0, i.jsx)("form", {
-    onSubmit: k,
-    children: (0, i.jsx)(l.Modal, {
+    onSubmit: b,
+    children: (0, i.jsx)(a.Modal, {
       transitionState: e,
       trackingProps: {
         impression: {
@@ -48,27 +48,25 @@ function c(t) {
         },
         impressionType: r.ImpressionTypes.MODAL
       },
-      title: h,
+      title: m,
       actions: [{
         text: u.intl.string(u.t["ETE/oK"]),
         onClick: d,
         variant: "secondary",
-        disabled: x
+        disabled: y
       }, {
-        text: m,
+        text: h,
         variant: f,
-        loading: x,
+        loading: y,
         type: "submit"
       }],
       onClose: d,
-      children: (0, i.jsx)(a.xJW, {
-        title: u.intl.string(u.t.hvOfmJ),
-        error: v,
-        children: (0, i.jsx)(a.oil, {
-          value: A,
-          onChange: g,
-          inputRef: Z
-        })
+      children: (0, i.jsx)(l.oil, {
+        label: u.intl.string(u.t.hvOfmJ),
+        error: x,
+        value: g,
+        onChange: v,
+        inputRef: Z
       })
     })
   })

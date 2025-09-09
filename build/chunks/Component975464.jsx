@@ -36,7 +36,7 @@ function v(e) {
       }), t]
     })
   }, l = (0, r.jsx)(i, {
-    children: (0, r.jsx)(f.Z, {})
+    children: (0, r.jsx)(h.Z, {})
   }, x.q.HOW_IT_WORKS), s = (0, r.jsx)(i, {
     children: (0, r.jsx)(p.Z, {})
   }, x.q.BENEFITS);
@@ -51,7 +51,7 @@ function v(e) {
           return s;
         case x.q.OTHER_CREATORS:
           return (0, r.jsx)(i, {
-            children: (0, r.jsx)(h.Z, {
+            children: (0, r.jsx)(f.Z, {
               highlightedCreators: e.creators
             })
           }, x.q.OTHER_CREATORS)
@@ -65,9 +65,9 @@ function _(e) {
     guild: t
   } = e, n = (0, u.Z)(t), {
     eligibilityLoading: p,
-    eligibilityError: h,
-    eligibility: f
-  } = n, x = (0, c.j)(f), {
+    eligibilityError: f,
+    eligibility: h
+  } = n, x = (0, c.j)(h), {
     isLoading: _,
     error: O,
     creatorMonetizationOnboardingMarketing: y
@@ -84,11 +84,11 @@ function _(e) {
       ineligible_reasons: x
     }
   }, {
-    disableTrack: null == t.id || null == f
-  }), p || null == f || _) ? (0, r.jsx)(a.$jN, {}) : f.actionRequired ? (0, r.jsx)(b.Z, {
+    disableTrack: null == t.id || null == h
+  }), p || null == h || _) ? (0, r.jsx)(a.$jN, {}) : h.actionRequired ? (0, r.jsx)(b.Z, {
     guild: t
-  }) : null != h ? (0, r.jsx)(m.Z, {
-    children: h.message
+  }) : null != f ? (0, r.jsx)(m.Z, {
+    children: f.message
   }) : (0, r.jsxs)("div", {
     className: j.container,
     children: [(0, r.jsx)(g.Z, {

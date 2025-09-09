@@ -26,7 +26,6 @@ let o = function(e) {
   }))];
   return (0, r.jsxs)(i.xJW, {
     children: [(0, r.jsx)(i.vwX, {
-      tag: i.RB0.H5,
       children: "Prefill with Quest"
     }), (0, r.jsx)(i.R94, {
       children: (0, r.jsx)(i.PhF, {

@@ -34,7 +34,7 @@ function p(e) {
   return e
 }
 
-function h(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,7 +46,7 @@ function h(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let f = [];
+let h = [];
 
 function b() {
   return (0, Chunk951288.jsx)("div", {
@@ -82,7 +82,7 @@ function x(e) {
       let {
         default: e
       } = await n.e("7590").then(n.bind(n, 380716));
-      return n => (0, r.jsx)(e, h(p({}, n), {
+      return n => (0, r.jsx)(e, f(p({}, n), {
         guildId: t,
         onSave: l
       }))
@@ -106,7 +106,7 @@ let j = function(e) {
     guildId: t
   } = e, n = (0, l.Wu)([d.Z], () => {
     var e;
-    return null != (e = d.Z.getSettings().newMemberActions) ? e : f
+    return null != (e = d.Z.getSettings().newMemberActions) ? e : h
   }), a = i.useCallback((e, n) => {
     (0, c.vR)(e), (0, c.ad)(t, e.channelId, n, true)
   }, [t]), m = i.useCallback((e, r, i, l) => {
@@ -117,7 +117,7 @@ let j = function(e) {
     var t;
     let r = null == (t = n[e]) ? true : t.channelId;
     null != r && (0, c.Hr)(r)
-  }, [n]), v = n.map(e => h(p({}, e), {
+  }, [n]), v = n.map(e => f(p({}, e), {
     id: e.channelId
   })), _ = i.useCallback(e => {
     (0, c.hS)(e)

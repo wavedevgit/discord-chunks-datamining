@@ -80,12 +80,12 @@ function j(e) {
     customEmoji: D,
     unicodeEmoji: A
   } = (0, u.Z)(null == (t = y.emoji) ? true : t.id, null == (i = y.emoji) ? true : i.name);
-  return (0, p.Oq)(y.emoji) || null != D || null != A || (S = h.intl.string(h.t["61wfmp"])), (0, r.jsxs)(o.P3F, {
-    className: l()(f.optionCard, {
-      [f.hasError]: C || null != S,
-      [f.dropIndicatorBefore]: null != w && T < w,
-      [f.dropIndicatorAfter]: null != w && T > w,
-      [f.singleColumn]: _
+  return (0, p.Oq)(y.emoji) || null != D || null != A || (S = f.intl.string(f.t["61wfmp"])), (0, r.jsxs)(o.P3F, {
+    className: l()(h.optionCard, {
+      [h.hasError]: C || null != S,
+      [h.dropIndicatorBefore]: null != w && T < w,
+      [h.dropIndicatorAfter]: null != w && T > w,
+      [h.singleColumn]: _
     }),
     onClick: () => (0, o.ZDy)(async () => {
       let {
@@ -114,30 +114,30 @@ function j(e) {
       P(R(e))
     },
     children: [(0, r.jsx)("div", {
-      className: f.dragContainer,
+      className: h.dragContainer,
       children: (0, r.jsx)(o.Vni, {
         size: "xs",
         color: "currentColor",
-        className: f.__invalid_dragIcon
+        className: h.__invalid_dragIcon
       })
     }), (0, r.jsxs)("div", {
-      className: f.optionCardRow,
+      className: h.optionCardRow,
       children: [(0, r.jsx)("div", {
-        className: f.emoji,
+        className: h.emoji,
         children: (0, r.jsx)(m.Z, {
           emojiId: null == (a = y.emoji) ? true : a.id,
           emojiName: null == (c = y.emoji) ? true : c.name,
           defaultComponent: null
         })
       }), (0, r.jsxs)("div", {
-        className: f.text,
+        className: h.text,
         children: [(0, r.jsx)(o.Text, {
           variant: "text-md/medium",
           color: "header-primary",
           lineClamp: 1,
           children: y.title
         }), "" !== y.description && (0, r.jsx)(o.Text, {
-          className: f.description,
+          className: h.description,
           variant: "text-xs/normal",
           color: "header-secondary",
           children: y.description
@@ -174,31 +174,31 @@ function v(e) {
     })
   };
   return (0, r.jsx)(o.P3F, {
-    className: l()(f.optionCard, f.addOptionCard, {
-      [f.addFirstOptionCard]: 0 === i.options.length,
-      [f.singleColumn]: s
+    className: l()(h.optionCard, h.addOptionCard, {
+      [h.addFirstOptionCard]: 0 === i.options.length,
+      [h.singleColumn]: s
     }),
     onClick: () => {
       i.options.length + 1 === p.fY ? c.Z.show({
-        title: h.intl.string(h.t.TggC7u),
-        body: h.intl.formatToPlainString(h.t.kPQKam, {
+        title: f.intl.string(f.t.TggC7u),
+        body: f.intl.formatToPlainString(f.t.kPQKam, {
           thresholdCount: p.fY
         }),
-        confirmText: h.intl.string(h.t.BddRzc),
-        cancelText: h.intl.string(h.t["ETE/oK"]),
+        confirmText: f.intl.string(f.t.BddRzc),
+        cancelText: f.intl.string(f.t["ETE/oK"]),
         onConfirm: d
       }) : d()
     },
     children: (0, r.jsxs)("div", {
-      className: f.optionCardRow,
+      className: h.optionCardRow,
       children: [(0, r.jsx)(o.oFk, {
         size: "md",
         color: "currentColor",
-        className: f.plusIcon
+        className: h.plusIcon
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        children: h.intl.string(h.t.Ty3lgo)
+        children: f.intl.string(f.t.Ty3lgo)
       })]
     })
   })

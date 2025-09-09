@@ -20,15 +20,15 @@ function g(e) {
     settingsView: n,
     requireTerms: g,
     rules: p
-  } = e, h = (0, l.e7)([s.Z], () => s.Z.getProps().guild);
+  } = e, f = (0, l.e7)([s.Z], () => s.Z.getProps().guild);
   if (i.useEffect(() => {
-      null != h && t(h.id)
-    }, [t, h]), null == h) return null;
+      null != f && t(f.id)
+    }, [t, f]), null == f) return null;
   switch (n) {
     case d.U.DISQUALIFIED:
       return (0, r.jsx)(o.Z, {
-        guild: h,
-        guildId: h.id,
+        guild: f,
+        guildId: f.id,
         headerContent: (0, r.jsxs)("div", {
           children: [(0, r.jsx)(a.X6q, {
             variant: "text-md/semibold",
@@ -56,8 +56,8 @@ function g(e) {
       });
     case d.U.INELIGIBLE:
       return (0, r.jsx)(o.Z, {
-        guild: h,
-        guildId: h.id,
+        guild: f,
+        guildId: f.id,
         headerContent: (0, r.jsx)(a.X6q, {
           variant: "heading-md/semibold",
           children: u.intl.format(u.t["+6Hylp"], {

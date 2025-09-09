@@ -75,7 +75,7 @@ function D() {
 function A(e) {
   let {
     guild: t
-  } = e, h = t.id, D = (0, a.e7)([O.Z], () => O.Z.getCurrentPage()), A = (0, C.Z)(h), {
+  } = e, f = t.id, D = (0, a.e7)([O.Z], () => O.Z.getCurrentPage()), A = (0, C.Z)(f), {
     hasChanges: L,
     hasConfiguredAnythingForCurrentStep: k,
     hasErrors: M
@@ -107,11 +107,11 @@ function A(e) {
     }
   }, [H]);
   let z = (0, d.dQu)(s.Z.colors.BACKGROUND_SURFACE_HIGH).hex(),
-    W = (0, d.dQu)(s.Z.unsafe_rawColors.PRIMARY_160).hex(),
-    V = (0, c.wj)(U) ? z : W,
+    V = (0, d.dQu)(s.Z.unsafe_rawColors.PRIMARY_160).hex(),
+    W = (0, c.wj)(U) ? z : V,
     K = F.to({
       range: [0, 1],
-      output: [V, (0, d.dQu)(s.Z.colors.STATUS_DANGER).hex()]
+      output: [W, (0, d.dQu)(s.Z.colors.STATUS_DANGER).hex()]
     });
   if (A) {
     if (D === y.PG.DEFAULT_CHANNELS) return (0, r.jsx)(E.j, {});
@@ -123,7 +123,7 @@ function A(e) {
     q = async () => {
       let e = _.Z.advancedMode;
       if (L) try {
-        if (D === y.PG.DEFAULT_CHANNELS) await (0, f.DO)(t).then(() => e ? (0, v.rS)(t, {
+        if (D === y.PG.DEFAULT_CHANNELS) await (0, h.DO)(t).then(() => e ? (0, v.rS)(t, {
           ignoreDefaultPrompt: true
         }) : Promise.resolve());
         else if (D === y.PG.CUSTOMIZATION_QUESTIONS) await (0, v.rS)(t, {
@@ -138,17 +138,17 @@ function A(e) {
       }
       returntrue
     }, X = async () => {
-      g.default.track(T.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, Z(R({}, (0, m.hH)(h)), {
+      g.default.track(T.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, Z(R({}, (0, m.hH)(f)), {
         step: y.PG[D],
         back: false,
         skip: !L
-      })), (0, b.Nb)((0, y.lg)(D)), await q() && (0, b.IG)(h, D)
+      })), (0, b.Nb)((0, y.lg)(D)), await q() && (0, b.IG)(f, D)
     }, Q = async () => {
-      g.default.track(T.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, Z(R({}, (0, m.hH)(h)), {
+      g.default.track(T.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, Z(R({}, (0, m.hH)(f)), {
         step: y.PG[D],
         back: true,
         skip: false
-      })), await q() && (0, b.Wy)(h, D)
+      })), await q() && (0, b.Wy)(f, D)
     }, J = null;
   G && (D === y.PG.SAFETY_CHECK ? J = (0, r.jsx)(N.j7, {}) : D === y.PG.DEFAULT_CHANNELS ? J = (0, r.jsx)(N.Io, {}) : D === y.PG.CUSTOMIZATION_QUESTIONS ? J = (0, r.jsx)(N.cZ, {}) : D === y.PG.HOME_SETTINGS && (J = (0, r.jsx)(N.g6, {})));
   let $ = (0, r.jsx)("div", {

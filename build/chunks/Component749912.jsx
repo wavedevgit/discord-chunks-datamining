@@ -164,7 +164,6 @@ let h = function(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(a.xJW, {
       children: [(0, r.jsx)(a.vwX, {
-        tag: a.RB0.H5,
         children: "Task Type(s)"
       }), (0, r.jsx)(a.R94, {
         children: (0, r.jsx)(a.PhF, {
@@ -188,7 +187,6 @@ let h = function(e) {
       })]
     }), (0, r.jsxs)(a.xJW, {
       children: [(0, r.jsx)(a.vwX, {
-        tag: a.RB0.H5,
         children: "Task Duration"
       }), (0, r.jsx)(a.R94, {
         children: (0, r.jsx)(a.oil, {

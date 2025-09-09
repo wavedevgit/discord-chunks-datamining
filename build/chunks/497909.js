@@ -2,17 +2,16 @@
 /** chunk id: 497909, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => h
 }), require("./388685.js"), require("./49124.js"), require("./467055.js");
 var Chunk668757 = require("./668757.js"),
   Chunk902704 = require("./902704.js"),
   Chunk147913 = require("./147913.js"),
-  Chunk818083 = require("./818083.js"),
   Chunk353926 = require("./353926.js"),
   Chunk427164 = require("./427164.js"),
   Chunk894276 = require("./894276.js");
 
-function u(e, t, n) {
+function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -20,41 +19,17 @@ function u(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let d = null;
+let u = null;
 
-function f() {
+function d() {
   if (!(0, Chunk668757.X6)()) return;
   let e = {};
   for (let t of Chunk894276.Re) module[exports.id] = exports.getCurrentConfig();
-  null != d && (0, Chunk902704.Z)(d, module) || ((0, Chunk668757.Md)().flushToCache(JSON.stringify(module)), d = module)
+  null != u && (0, Chunk902704.Z)(u, module) || ((0, Chunk668757.Md)().flushToCache(JSON.stringify(module)), u = module)
 }
 
-function _(e) {
-  return (0, o.B)({
-    kind: "user",
-    id: e.id,
-    label: e.getLabel(),
-    defaultConfig: {
-      treatmentId: false
-    },
-    treatments: e.getTreatments().map(e => {
-      let {
-        treatmentId: t,
-        label: n
-      } = e;
-      return {
-        id: t,
-        label: n,
-        config: {
-          treatmentId: t
-        }
-      }
-    })
-  })
-}
-
-function p(e) {
-  return (0, l.le)({
+function f(e) {
+  return (0, s.le)({
     kind: "user",
     name: e.id,
     defaultConfig: {
@@ -71,18 +46,18 @@ function p(e) {
   })
 }
 
-function h() {
+function _() {
   Chunk894276.Re.forEach(e => {
-    e.setExperiment(e.legacyExperiment ? _(e) : p(e))
+    e.setExperiment(f(e))
   })
 }
-class m extends Chunk147913.Z {
+class p extends Chunk147913.Z {
   _initialize() {
-    h()
+    _()
   }
   _terminate() {}
   constructor(...e) {
-    super(...e), u(this, "actions", {}), u(this, "stores", new Map().set(s.Z, f))
+    super(...e), c(this, "actions", {}), c(this, "stores", new Map().set(o.Z, d))
   }
 }
-let g = new m
+let h = new p

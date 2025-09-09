@@ -95,13 +95,11 @@ function g() {
     tag: Chunk481060.RB0.H1,
     title: Chunk388032.intl.string(Chunk388032.t.IHMsPj),
     children: (0, Chunk951288.jsx)(Chunk481060.hjN, {
-      children: (0, Chunk951288.jsx)(Chunk481060.xJW, {
-        title: Chunk388032.intl.string(Chunk388032.t["mx+sp6"]),
-        children: (0, Chunk951288.jsx)(Chunk755721.Gu, {
-          onChange: g,
-          options: h,
-          value: exports
-        })
+      children: (0, Chunk951288.jsx)(Chunk755721.Gu, {
+        label: Chunk388032.intl.string(Chunk388032.t["mx+sp6"]),
+        onChange: g,
+        options: h,
+        value: exports
       })
     })
   })

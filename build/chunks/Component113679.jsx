@@ -18,10 +18,10 @@ var Chunk951288 = require("./951288.js"),
 function p(e) {
   let {
     guild: t
-  } = e, n = i.useId(), p = (0, l.e7)([c.Z], () => null != t && c.Z.can(u.Plq.MANAGE_GUILD, t), [t]), h = t.features.has(u.oNc.COMMUNITY), [f, b] = i.useState(t.features.has(u.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), x = i.useCallback(async e => {
+  } = e, n = i.useId(), p = (0, l.e7)([c.Z], () => null != t && c.Z.can(u.Plq.MANAGE_GUILD, t), [t]), f = t.features.has(u.oNc.COMMUNITY), [h, b] = i.useState(t.features.has(u.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), x = i.useCallback(async e => {
     b(e), await (0, o.fp)(t, e)
   }, [t]);
-  return h ? null : (0, r.jsxs)("div", {
+  return f ? null : (0, r.jsxs)("div", {
     className: g.bannerContainer,
     children: [(0, r.jsx)(d.Z, {
       width: 64,
@@ -41,7 +41,7 @@ function p(e) {
       className: g.buttonContainer,
       children: (0, r.jsx)(a.T2, {
         id: n,
-        checked: f,
+        checked: h,
         onChange: x,
         disabled: !p
       })

@@ -15,7 +15,6 @@ let c = function() {
   let e = (0, Chunk410030.ZP)();
   return (0, Chunk951288.jsxs)(Chunk481060.xJW, {
     children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-      tag: Chunk481060.RB0.H5,
       children: "Theme"
     }), (0, Chunk951288.jsxs)("div", {
       style: {

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => ef
-}), require("./704826.js"), require("./35282.js"), require("./388685.js"), require("./361932.js"), require("./187205.js");
+}), require("./704826.js"), require("./35282.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
@@ -386,63 +386,57 @@ function ep() {
       children: "Buttons"
     }), (0, Chunk951288.jsxs)(em, {
       title: "Button Options",
-      children: [(0, Chunk951288.jsx)(Chunk481060.xJW, {
-        title: "Button size",
-        children: (0, Chunk951288.jsx)(Chunk755721.Gu, {
-          onChange: e => {
-            let {
-              value: n
-            } = e;
-            return t(n)
-          },
-          options: [{
-            value: "sm",
-            name: "Small"
-          }, {
-            value: "md",
-            name: "Medium"
-          }],
-          value: module
-        })
-      }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
-        title: "Icon position",
-        children: (0, Chunk951288.jsx)(Chunk755721.Gu, {
-          onChange: e => {
-            let {
-              value: t
-            } = e;
-            return a(t)
-          },
-          options: [{
-            value: "none",
-            name: "None"
-          }, {
-            value: "start",
-            name: "Start"
-          }, {
-            value: "end",
-            name: "End"
-          }],
-          value: require
-        })
-      }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
-        title: "Loading animation",
-        children: (0, Chunk951288.jsx)(Chunk755721.Gu, {
-          onChange: e => {
-            let {
-              value: t
-            } = e;
-            return l("on" === t)
-          },
-          options: [{
-            value: "off",
-            name: "Off"
-          }, {
-            value: "on",
-            name: "On"
-          }],
-          value: o ? "on" : "off"
-        })
+      children: [(0, Chunk951288.jsx)(Chunk755721.Gu, {
+        label: "Button size",
+        onChange: e => {
+          let {
+            value: n
+          } = e;
+          return t(n)
+        },
+        options: [{
+          value: "sm",
+          name: "Small"
+        }, {
+          value: "md",
+          name: "Medium"
+        }],
+        value: module
+      }), (0, Chunk951288.jsx)(Chunk755721.Gu, {
+        label: "Icon position",
+        onChange: e => {
+          let {
+            value: t
+          } = e;
+          return a(t)
+        },
+        options: [{
+          value: "none",
+          name: "None"
+        }, {
+          value: "start",
+          name: "Start"
+        }, {
+          value: "end",
+          name: "End"
+        }],
+        value: require
+      }), (0, Chunk951288.jsx)(Chunk755721.Gu, {
+        label: "Loading animation",
+        onChange: e => {
+          let {
+            value: t
+          } = e;
+          return l("on" === t)
+        },
+        options: [{
+          value: "off",
+          name: "Off"
+        }, {
+          value: "on",
+          name: "On"
+        }],
+        value: o ? "on" : "off"
       })]
     }), (0, Chunk951288.jsxs)("div", {
       style: {
@@ -2050,39 +2044,29 @@ function eI() {
         placeholder: "Disabled",
         disabled: true
       })
-    }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
-      title: "Error",
-      children: (0, Chunk951288.jsx)(Chunk481060.oil, {
-        required: true,
-        error: "This must have a value"
-      })
-    }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
-      title: "Error",
-      children: (0, Chunk951288.jsx)(Chunk481060.oil, {
-        defaultValue: "Not a valid value",
-        error: "This has an error."
-      })
-    }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
-      title: "minLength",
-      children: (0, Chunk951288.jsx)(Chunk481060.oil, {
-        minLength: 6,
-        value: module,
-        onChange: exports,
-        placeholder: "Enter at least 6 characters"
-      })
-    }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
-      title: "Read only",
-      children: (0, Chunk951288.jsx)(Chunk481060.oil, {
-        value: "Read-only, not-editable field",
-        editable: false
-      })
-    }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
-      title: "Input with a label",
-      children: (0, Chunk951288.jsx)(Chunk481060.oil, {
-        placeholder: "Real placeholder",
-        value: module,
-        onChange: exports
-      })
+    }), (0, Chunk951288.jsx)(Chunk481060.oil, {
+      label: "Error",
+      required: true,
+      error: "This must have a value"
+    }), (0, Chunk951288.jsx)(Chunk481060.oil, {
+      label: "Error",
+      defaultValue: "Not a valid value",
+      error: "This has an error."
+    }), (0, Chunk951288.jsx)(Chunk481060.oil, {
+      label: "minLength",
+      minLength: 6,
+      value: module,
+      onChange: exports,
+      placeholder: "Enter at least 6 characters"
+    }), (0, Chunk951288.jsx)(Chunk481060.oil, {
+      label: "Read only",
+      value: "Read-only, not-editable field",
+      editable: false
+    }), (0, Chunk951288.jsx)(Chunk481060.oil, {
+      label: "Input with a label",
+      placeholder: "Real placeholder",
+      value: module,
+      onChange: exports
     }), Chunk971809 && (0, Chunk951288.jsx)(Chunk481060.xJW, {
       title: "Leading and Trailing",
       children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
@@ -2379,18 +2363,14 @@ function eC(e) {
               value: "xl"
             }]
           })
-        }), (0, r.jsx)(N.xJW, {
-          title: "Header Title",
-          children: (0, r.jsx)(N.oil, {
-            onChange: l,
-            defaultValue: s
-          })
-        }), (0, r.jsx)(N.xJW, {
-          title: "Header body",
-          children: (0, r.jsx)(N.oil, {
-            onChange: u,
-            defaultValue: c
-          })
+        }), (0, r.jsx)(N.oil, {
+          label: "Header Title",
+          onChange: l,
+          defaultValue: s
+        }), (0, r.jsx)(N.oil, {
+          label: "Header body",
+          onChange: u,
+          defaultValue: c
         }), (0, r.jsx)(N.xJW, {
           title: "Optional Content",
           children: (0, r.jsxs)(N.Kqy, {

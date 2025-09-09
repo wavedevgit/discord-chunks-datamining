@@ -15,9 +15,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk140876 = require("./140876.js");
-let h = Chunk63063.Z.getArticleURL(Chunk981631.BhN.GUILD_AUTOMOD_REGEX);
+let f = Chunk63063.Z.getArticleURL(Chunk981631.BhN.GUILD_AUTOMOD_REGEX);
 
-function f(e) {
+function h(e) {
   let {
     hasErrors: t,
     text: n,
@@ -30,7 +30,7 @@ function f(e) {
       variant: "text-xs/medium",
       color: "text-danger",
       children: null != i ? i : g.intl.format(g.t.jKYAPj, {
-        helpArticle: h
+        helpArticle: f
       })
     })
   }) : (0, r.jsx)(s.Text, {
@@ -86,9 +86,9 @@ function b(e) {
       onChangeNewTagValue: C,
       tagErrors: O,
       maxTags: u.VW
-    }), (0, r.jsx)(f, {
+    }), (0, r.jsx)(h, {
       text: g.intl.format(g.t["PGC/AA"], {
-        helpArticle: h
+        helpArticle: f
       }),
       hasErrors: x.length > 0 || null != b,
       errorText: null != (n = null == (t = x.find(e => {

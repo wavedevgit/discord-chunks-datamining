@@ -44,7 +44,7 @@ function b(e) {
   return null != C && l(C), (0, r.jsxs)(u.xJW, {
     title: "Capture Device",
     className: v.modalContent,
-    children: [(0, r.jsx)(u.xJW, {
+    children: [(0, r.jsx)("div", {
       className: j.marginTop8,
       children: (0, r.jsxs)(h.Z, {
         children: [(0, r.jsx)("span", {

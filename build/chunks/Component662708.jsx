@@ -48,28 +48,28 @@ class m extends Chunk647438.PureComponent {
           onClick: this.close
         })]
       }), (0, Chunk951288.jsx)(Chunk481060.hzk, {
-        children: (0, Chunk951288.jsxs)("form", {
+        children: (0, Chunk951288.jsx)("form", {
           onSubmit: this.handleSubmit,
-          children: [(0, Chunk951288.jsx)(Chunk481060.xJW, {
-            title: Chunk388032.intl.string(Chunk388032.t.tGRbjI),
-            className: Chunk713970.formItem,
-            children: (0, Chunk951288.jsx)(Chunk481060.oil, {
+          children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+            gap: 16,
+            children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
+              label: Chunk388032.intl.string(Chunk388032.t.tGRbjI),
               maxLength: Chunk981631.dYL,
               value: exports,
               onChange: this.handleNameChange,
               placeholder: Chunk388032.intl.string(Chunk388032.t.xV9hVl),
               autoFocus: true
-            })
-          }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
-            title: Chunk388032.intl.string(Chunk388032.t.xpurRE),
-            className: Chunk713970.formItem,
-            children: (0, Chunk951288.jsx)(d, {
-              defaultColor: Chunk981631.Wyy,
-              colors: Chunk981631.pmI,
-              value: null != require ? require : Chunk981631.Wyy,
-              onChange: this.handleColorChange
-            })
-          })]
+            }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
+              title: Chunk388032.intl.string(Chunk388032.t.xpurRE),
+              className: Chunk713970.formItem,
+              children: (0, Chunk951288.jsx)(d, {
+                defaultColor: Chunk981631.Wyy,
+                colors: Chunk981631.pmI,
+                value: null != require ? require : Chunk981631.Wyy,
+                onChange: this.handleColorChange
+              })
+            })]
+          })
         })
       }), (0, Chunk951288.jsx)(Chunk481060.mzw, {
         children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
