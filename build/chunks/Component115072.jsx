@@ -45,7 +45,7 @@ function P(e) {
         return "Linux"
     }
     return ""
-  }((0, b.getOS)())), [$, ee] = i.useState(""), [et, en] = i.useState(""), [er, ei] = i.useState(""), [el, ea] = i.useState(""), [eo, es] = i.useState(false), [eu, ec] = i.useState(false), [ed, em] = i.useState(false), [eh, ep] = i.useState(null);
+  }((0, b.getOS)())), [$, ee] = i.useState(""), [et, en] = i.useState(""), [er, ei] = i.useState(""), [el, ea] = i.useState(""), [eo, es] = i.useState(false), [eu, ec] = i.useState(false), [ed, em] = i.useState(false), [ef, eh] = i.useState(null);
   i.useEffect(() => {
     let e = Math.random().toString(16).slice(2);
     o.tn.get({
@@ -55,15 +55,15 @@ function P(e) {
       },
       rejectWithError: true
     }).then(e => {
-      if (null != e.body && "b11972ef01d24bba6ca0be94cd4ae24be9d650e7" !== e.body.hash) {
-        let e = new Date("1757459568136"),
+      if (null != e.body && "f26e3646decb542ad93fbe53c552a15af2f9b3ff" !== e.body.hash) {
+        let e = new Date("1757460716028"),
           t = new Date,
           n = (0, y.TD)(t, e);
-        n.hours > 6 && ep(n.hours)
+        n.hours > 6 && eh(n.hours)
       }
     })
   }, []);
-  let ef = (0, a.e7)([x.default], () => {
+  let ep = (0, a.e7)([x.default], () => {
       let e = x.default.getCurrentUser();
       return (null == e ? true : e.isStaff()) || (null == e ? true : e.isStaffPersonal())
     }),
@@ -103,7 +103,7 @@ function P(e) {
       } : {
         overridePlatformInformation: X
       }, l).catch(() => em(true));
-    ec(false), null != a && a.ok ? (ef && window.open(a.body.permalink_url, "_blank"), ex(), (0, u.ZDy)(async () => {
+    ec(false), null != a && a.ok ? (ep && window.open(a.body.permalink_url, "_blank"), ex(), (0, u.ZDy)(async () => {
       let {
         default: e
       } = await n.e("64648").then(n.bind(n, 81155));
@@ -145,8 +145,8 @@ function P(e) {
     async function e() {
       G(await (0, j.WG)())
     }
-    ef && e()
-  }, [ef]), i.useEffect(() => {
+    ep && e()
+  }, [ep]), i.useEffect(() => {
     if (M.length > 0) {
       var e;
       null == (e = N.current) || e.scrollIntoView({
@@ -191,10 +191,10 @@ function P(e) {
             })
           }),
           title: S.intl.string(S.t["ZP/hEx"])
-        }), null == ev && null != eh && (0, r.jsx)(u.ToO, {
+        }), null == ev && null != ef && (0, r.jsx)(u.ToO, {
           type: u.ToO.Types.DANGER,
           title: S.intl.formatToPlainString(S.t["ql2Q/f"], {
-            hours: eh
+            hours: ef
           }),
           body: S.intl.string(S.t.x18RUl)
         }), (0, r.jsxs)(u.Kqy, {
@@ -218,7 +218,7 @@ function P(e) {
               placeholder: "What did you expect to see?",
               value: L,
               onChange: I
-            }), ef && (0, r.jsx)(u.R94, {
+            }), ep && (0, r.jsx)(u.R94, {
               type: u.geA.DESCRIPTION,
               children: "You can add additional information/media on the ticket after submitting"
             })]
@@ -264,7 +264,7 @@ function P(e) {
               maxVisibleItems: 3,
               closeOnSelect: true
             })
-          }), ef && (0, r.jsx)(u.xJW, {
+          }), ep && (0, r.jsx)(u.xJW, {
             title: S.intl.string(S.t["77VVd3"]),
             children: (0, r.jsx)(u.VcW, {
               value: H,
@@ -349,13 +349,13 @@ function P(e) {
               children: M.length > 0 && M.map(e => (0, r.jsxs)("div", {
                 className: _.attachment,
                 children: [(0, r.jsxs)("div", {
-                  children: [(0, r.jsx)(f.r, {
-                    size: p.q.SMALL,
+                  children: [(0, r.jsx)(p.r, {
+                    size: h.q.SMALL,
                     upload: e
                   }), (0, r.jsx)("div", {
                     className: _.removeAttachment,
                     children: (0, r.jsx)(v.ZP, {
-                      children: (0, r.jsx)(h.Z, {
+                      children: (0, r.jsx)(f.Z, {
                         tooltip: S.intl.string(S.t.vN7REx),
                         onClick: () => {
                           var t;
@@ -390,7 +390,7 @@ function P(e) {
         justify: "end",
         children: [(0, r.jsx)(u.zxk, {
           variant: "primary",
-          text: ef ? "Submit and Open Report" : "Submit Report",
+          text: ep ? "Submit and Open Report" : "Submit Report",
           loading: eu,
           onClick: eg
         }), (0, r.jsx)(u.zxk, {
