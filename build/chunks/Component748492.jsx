@@ -2,10 +2,10 @@
 /** chunk id: 748492, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ds: () => k,
-  YB: () => j,
-  of: () => U,
-  q5: () => M
+  Ds: () => G,
+  YB: () => k,
+  of: () => B,
+  q5: () => U
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -32,6 +32,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk25827 = require("./25827.jsx"),
   Chunk131951 = require("./131951.js"),
   Chunk636449 = require("./636449.js"),
+  Chunk566620 = require("./566620.js"),
+  Chunk729200 = require("./729200.js"),
   Chunk884338 = require("./884338.jsx"),
   Chunk617552 = require("./617552.jsx"),
   Chunk981631 = require("./981631.js"),
@@ -40,77 +42,79 @@ var Chunk120356 = require("./120356.js"),
   Chunk702952 = require("./702952.js"),
   Chunk186880 = require("./186880.js");
 
-function L(e) {
+function M(e) {
   let {
     onClick: t,
     isExpanded: n
   } = e;
   return (0, r.jsx)(y.Z, {
-    iconClassName: a()(D.arrowIcon, {
-      [D.arrowIconExpanded]: n
+    iconClassName: a()(L.arrowIcon, {
+      [L.arrowIconExpanded]: n
     }),
     onClick: t,
     iconComponent: s.CJ0,
-    label: n ? w.intl.string(w.t["2TiKgY"]) : w.intl.string(w.t.oN8bqa)
+    label: n ? x.intl.string(x.t["2TiKgY"]) : x.intl.string(x.t.oN8bqa)
   })
 }
 
-function j(e) {
+function k(e) {
   var t, n, i;
   let {
     channel: a,
     applicationId: s,
     onMouseDown: y,
     onMouseMove: I,
-    onMouseLeave: C,
-    onJumpToChannel: w,
-    idle: L,
-    selectedParticipant: j,
-    embeddedActivity: M
-  } = e, k = (0, c.bp)() === R.IlC.POPOUT, U = (0, o.e7)([S.Z], () => S.Z.isVideoEnabled()), G = (0, o.e7)([S.Z], () => Object.values(S.Z.getVideoDevices())[0]), B = false === (null == (t = null == G ? true : G.disabled) || t), Z = (0, d.Z)([s])[0], F = (0, m.Z)(a), {
-    parentAnalyticsLocation: V
-  } = (0, u.ZP)(), H = e => {
-    (0, _.v)(V, _.d.CAMERA, e), l.Z.setVideoEnabled(e)
-  }, Y = () => {
-    B ? H(true) : (0, g.Z)()
-  }, W = () => {
-    (0, _.v)(V, _.d.POPOUT, true), null != a && (0, N.Z)({
-      onConfirm: () => h.hP(a)
+    onMouseLeave: R,
+    onJumpToChannel: x,
+    idle: M,
+    selectedParticipant: k,
+    embeddedActivity: U
+  } = e, G = (0, c.bp)() === w.IlC.POPOUT, B = (0, o.e7)([S.Z], () => S.Z.isVideoEnabled()), Z = (0, o.e7)([S.Z], () => Object.values(S.Z.getVideoDevices())[0]), F = false === (null == (t = null == Z ? true : Z.disabled) || t), V = (0, d.Z)([s])[0], H = (0, m.Z)(a), {
+    parentAnalyticsLocation: Y
+  } = (0, u.ZP)(), W = e => {
+    (0, _.v)(Y, _.d.CAMERA, e), l.Z.setVideoEnabled(e)
+  }, K = () => {
+    F ? W(true) : (0, g.Z)()
+  }, z = () => {
+    (0, _.v)(Y, _.d.POPOUT, true), null != a && (0, P.Z)({
+      onConfirm: async () => {
+        (0, N.g)() && await (0, C.nJ)(s, a.id), h.hP(a)
+      }
     })
   };
   return (0, r.jsxs)("div", {
-    className: x.videoControls,
+    className: j.videoControls,
     onMouseMove: I,
     onMouseDown: y,
-    onMouseLeave: C,
+    onMouseLeave: R,
     children: [(0, r.jsx)("div", {
-      className: x.topControls,
+      className: j.topControls,
       children: (0, r.jsx)(b.r, {
-        idle: L,
-        title: null != (i = null != (n = null == Z ? true : Z.name) ? n : null == a ? true : a.name) ? i : "",
-        onJumpToChannel: w,
+        idle: M,
+        title: null != (i = null != (n = null == V ? true : V.name) ? n : null == a ? true : a.name) ? i : "",
+        onJumpToChannel: x,
         preventIdleComponent: E.Z
       })
     }), (0, r.jsxs)("div", {
-      className: x.bottomControls,
+      className: j.bottomControls,
       children: [(0, r.jsxs)(p.Z, {
         grow: 0,
         shrink: 1,
         basis: "50%",
         align: p.Z.Align.CENTER,
         children: [(0, r.jsx)(T.C, {
-          className: D.leftPipIcon,
-          enabled: U,
-          cameraUnavailable: !B,
-          hasPermission: F,
-          onChange: H,
-          onCameraUnavailable: Y
+          className: L.leftPipIcon,
+          enabled: B,
+          cameraUnavailable: !F,
+          hasPermission: H,
+          onChange: W,
+          onCameraUnavailable: K
         }), null != a && (0, r.jsx)(E.Z, {
           children: (0, r.jsx)(f.Z, {
             channelId: a.id,
             guildId: a.getGuildId(),
-            className: x.__invalid_leftTrayIcon,
-            participant: j,
+            className: j.__invalid_leftTrayIcon,
+            participant: k,
             compact: true
           })
         })]
@@ -120,22 +124,22 @@ function j(e) {
         justify: p.Z.Justify.END,
         basis: "50%",
         align: p.Z.Align.CENTER,
-        children: [k || (0, A.R)() ? null : (0, r.jsx)(v.Z, {
-          className: D.rightPipIcon,
+        children: [G || (0, A.R)() ? null : (0, r.jsx)(v.Z, {
+          className: L.rightPipIcon,
           popoutOpen: false,
-          onOpenPopout: W,
-          onClosePopout: P.Vq
+          onOpenPopout: z,
+          onClosePopout: D.Vq
         }), (0, r.jsx)(O.Z, {
           applicationId: s,
-          location: M.location,
-          className: D.rightPipIcon
+          location: U.location,
+          className: L.rightPipIcon
         })]
       })]
     })]
   })
 }
 
-function M(e) {
+function U(e) {
   var t, n;
   let {
     channel: i,
@@ -149,13 +153,13 @@ function M(e) {
     embeddedActivity: h
   } = e, m = (0, d.Z)([o])[0];
   return (0, r.jsxs)(s.P3F, {
-    className: a()(x.videoControls, x.videoControlsTextActivity),
+    className: a()(j.videoControls, j.videoControlsTextActivity),
     onMouseMove: c,
     onMouseDown: l,
     onMouseLeave: u,
     onDoubleClick: f,
     children: [(0, r.jsx)("div", {
-      className: x.topControls,
+      className: j.topControls,
       children: (0, r.jsx)(b.r, {
         idle: _,
         title: null != (n = null != (t = null == m ? true : m.name) ? t : null == i ? true : i.name) ? n : "",
@@ -163,24 +167,24 @@ function M(e) {
         preventIdleComponent: E.Z
       })
     }), (0, r.jsxs)("div", {
-      className: x.bottomControls,
-      children: [(0, r.jsx)(C.ZP, {
+      className: j.bottomControls,
+      children: [(0, r.jsx)(R.ZP, {
         renderIcon: false,
         users: p,
         size: 24,
         max: 3,
-        className: D.__invalid_userSummaryContainer
+        className: L.__invalid_userSummaryContainer
       }), (0, r.jsx)(O.Z, {
         applicationId: o,
         location: h.location,
-        iconClassName: D.leaveActivityIcon,
+        iconClassName: L.leaveActivityIcon,
         isActive: true
       })]
     })]
   })
 }
 
-function k(e) {
+function G(e) {
   let {
     channelId: t,
     participantsOpen: n,
@@ -189,11 +193,11 @@ function k(e) {
   return i ? (0, r.jsx)(I.Z, {
     channelId: t,
     isParticipantsOpen: n,
-    className: D.participantsButton
+    className: L.participantsButton
   }) : null
 }
 
-function U(e) {
+function B(e) {
   var t, n;
   let {
     onMouseDown: i,
@@ -209,18 +213,18 @@ function U(e) {
     embeddedActivity: g
   } = e, y = (0, d.Z)([u])[0];
   return (0, r.jsx)("div", {
-    className: D.pipHeader,
+    className: L.pipHeader,
     onMouseMove: o,
     onMouseDown: i,
     onMouseLeave: l,
     children: (0, r.jsxs)("div", {
-      className: a()(x.topControls, D.pipHeaderContent, {
-        [D.pipHeaderContentOpen]: c
+      className: a()(j.topControls, L.pipHeaderContent, {
+        [L.pipHeaderContentOpen]: c
       }),
       children: [!c && (0, r.jsx)(s.xhG, {
         size: "xxs",
         color: "currentColor",
-        className: D.menuIcon
+        className: L.menuIcon
       }), c && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(b.r, {
           idle: !c,
@@ -228,14 +232,14 @@ function U(e) {
           onJumpToChannel: _,
           preventIdleComponent: E.Z
         }), (0, r.jsxs)("div", {
-          className: D.pipHeaderButtonsRight,
-          children: [m ? null : (0, r.jsx)(L, {
+          className: L.pipHeaderButtonsRight,
+          children: [m ? null : (0, r.jsx)(M, {
             isExpanded: h,
             onClick: p
           }), (0, r.jsx)(O.Z, {
             applicationId: u,
             location: g.location,
-            iconClassName: D.leaveActivityIcon
+            iconClassName: L.leaveActivityIcon
           })]
         })]
       })]

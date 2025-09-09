@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  ZP: () => eC,
+  ZP: () => eP,
   i6: () => R
 }), require("./388685.js"), require("./539854.js");
 var i, Chunk442837 = require("./442837.js"),
@@ -84,23 +84,24 @@ function k(e, t) {
   return "".concat(t, ":").concat(e)
 }
 let U = new Map,
-  G = new Map,
+  G = new Set,
   B = new Map,
   Z = new Map,
   F = new Map,
   V = new Map,
   H = new Map,
-  Y = 216e5,
-  W = new Map,
-  K = Chunk918559.Ez.DISCONNECTED,
-  z = Chunk918559.MI.RESIZABLE,
-  q = Chunk701488.GM.NORMAL;
+  Y = new Map,
+  W = 216e5,
+  K = new Map,
+  z = Chunk918559.Ez.DISCONNECTED,
+  q = Chunk918559.MI.RESIZABLE,
+  X = Chunk701488.GM.NORMAL;
 
-function X(e) {
+function Q(e) {
   return null != e ? e : w
 }
 
-function Q(e) {
+function J(e) {
   var t, n, r, i, a, o, s, l;
   let {
     location: u,
@@ -140,7 +141,7 @@ function Q(e) {
     proxyTicket: null != (o = F.proxyTicket) ? o : G.proxyTicket
   }));
   let V = !j;
-  null != G && u.id === G.location.id && d === G.applicationId && (!P && Array.from(G.userIds).some(e => e === N) || V) ? $(G) : P && (null == G || G.applicationId !== d || G.location.id !== u.id) && (w === c.default.getSessionId() && ei({
+  null != G && u.id === G.location.id && d === G.applicationId && (!P && Array.from(G.userIds).some(e => e === N) || V) ? ee(G) : P && (null == G || G.applicationId !== d || G.location.id !== u.id) && (w === c.default.getSessionId() && ea({
     applicationId: d,
     launchId: f,
     compositeInstanceId: _,
@@ -152,20 +153,20 @@ function Q(e) {
     customId: F.customId,
     inviterUserId: null == B ? true : B.inviterUserId,
     proxyTicket: F.proxyTicket
-  }), eg({
+  }), ey({
     channelId: null != y ? y : null,
     applicationId: d
   }));
   let H = I.filter(e => e.applicationId !== d);
   if (A.length > 0 && H.push(F), M.set(u.id, H), null != y) {
     let e = (null != (s = L.get(y)) ? s : []).filter(e => e.applicationId !== d),
-      t = X((0, E.j)(u)),
+      t = Q((0, E.j)(u)),
       n = (null != (l = x.get(t)) ? l : []).filter(e => e.applicationId !== d || e.location.id !== u.id);
     A.length > 0 && (e.push(F), n.push(F)), L.set(y, e), x.set(t, n)
   }
 }
 
-function J(e) {
+function $(e) {
   let t = e.activity_instances;
   null == t || t.forEach(e => {
     let {
@@ -175,7 +176,7 @@ function J(e) {
       composite_instance_id: i,
       participants: a
     } = e;
-    Q({
+    J({
       location: t,
       applicationId: n,
       launchId: r,
@@ -189,40 +190,40 @@ function J(e) {
   })
 }
 
-function $(e) {
-  D.delete(e.applicationId), _.S.dispatch(I.CkL.RELEASE_ACTIVITY_WEB_VIEW)
-}
-
 function ee(e) {
-  let {
-    guilds: t
-  } = e;
-  L.clear(), x.clear(), M.clear(), j.clear(), t.forEach(e => J(e));
-  let n = c.default.getId();
-  for (let e of Array.from(D.values())) eA.getEmbeddedActivitiesForLocation(e.location).some(t => t.applicationId === e.applicationId && t.launchId === e.launchId && t.userIds.has(n)) || $(e)
+  D.delete(e.applicationId), _.S.dispatch(I.CkL.RELEASE_ACTIVITY_WEB_VIEW)
 }
 
 function et(e) {
   let {
-    guild: t
+    guilds: t
   } = e;
-  J(t)
+  L.clear(), x.clear(), M.clear(), j.clear(), t.forEach(e => $(e));
+  let n = c.default.getId();
+  for (let e of Array.from(D.values())) eR.getEmbeddedActivitiesForLocation(e.location).some(t => t.applicationId === e.applicationId && t.launchId === e.launchId && t.userIds.has(n)) || ee(e)
 }
 
 function en(e) {
+  let {
+    guild: t
+  } = e;
+  $(t)
+}
+
+function er(e) {
   var t, n;
   let {
     channel: r
   } = e, i = null != (t = L.get(r.id)) ? t : [];
   L.set(r.id, []);
-  let a = X(r.guild_id),
+  let a = Q(r.guild_id),
     o = (null != (n = x.get(a)) ? n : []).filter(e => (0, E.p)(e.location) !== r.id);
   x.set(a, o), i.forEach(e => {
     M.delete(e.location.id)
   }), j.set(r.id, [])
 }
 
-function er(e) {
+function ei(e) {
   let {
     applicationId: t,
     launchId: n,
@@ -230,7 +231,7 @@ function er(e) {
     location: i,
     participants: a
   } = e, o = (0, E.p)(i), s = U.get(k(null != o ? o : null, t));
-  Q({
+  J({
     location: i,
     applicationId: t,
     launchId: n,
@@ -244,7 +245,7 @@ function er(e) {
   })
 }
 
-function ei(e) {
+function ea(e) {
   var t, n;
   let {
     applicationId: i,
@@ -286,28 +287,28 @@ function ei(e) {
     participants: p,
     embeddedActivity: x,
     inviterUserId: S
-  }), (0, h.R)() ? (K = v.Ez.ACTIVITY_POPOUT_WINDOW, o.Z.wait(() => {
+  }), (0, h.R)() ? (z = v.Ez.ACTIVITY_POPOUT_WINDOW, o.Z.wait(() => {
     o.Z.dispatch({
       type: "ACTIVITY_POPOUT_WINDOW_OPEN"
     })
-  })) : K = R !== d.Z.getChannelId() || (0, y.Z)(R) ? v.Ez.PIP : v.Ez.PANEL, W.set(eI(l.id, i), Date.now())
+  })) : z = R !== d.Z.getChannelId() || (0, y.Z)(R) ? v.Ez.PIP : v.Ez.PANEL, K.set(eA(l.id, i), Date.now())
 }
 
-function ea(e) {
+function eo(e) {
   let {
     applicationId: t
   } = e, n = D.get(t);
   D.delete(t), (null == n ? true : n.location.id) === (null == r ? true : r.id) && (r = true)
 }
 
-function eo(e) {
+function es(e) {
   let {
     layout: t
   } = e;
-  q = t
+  X = t
 }
 
-function es(e) {
+function el(e) {
   var t;
   let {
     activity: n
@@ -318,7 +319,7 @@ function es(e) {
   D.set(r.applicationId, S({}, r))
 }
 
-function el(e) {
+function ec(e) {
   let {
     applicationId: t,
     config: n
@@ -328,27 +329,27 @@ function el(e) {
   }))
 }
 
-function ec(e) {
+function eu(e) {
   let {
     guildId: t
-  } = e, n = X(t), r = B.get(n);
-  B.set(n, {
+  } = e, n = Q(t), r = Z.get(n);
+  Z.set(n, {
     isFetching: true,
     lastFetchTimestampMs: null == r ? true : r.lastFetchTimestampMs
   }), N.lastCheckedForBadgeableActivities = new Date(Date.now()).toISOString()
 }
 
-function eu(e) {
+function ed(e) {
   let {
     guildId: t
-  } = e, n = X(t), r = B.get(n);
-  B.set(n, {
+  } = e, n = Q(t), r = Z.get(n);
+  Z.set(n, {
     isFetching: false,
     lastFetchTimestampMs: null == r ? true : r.lastFetchTimestampMs
   })
 }
 
-function ed(e) {
+function ef(e) {
   let {
     activities: t,
     now: n
@@ -369,23 +370,23 @@ function ed(e) {
   N.dateRangesForSurfaces = i
 }
 
-function ef(e) {
+function e_(e) {
   let {
     guildId: t,
     activities: n
-  } = e, r = X(t);
-  G.set(r, n);
+  } = e, r = Q(t);
+  B.set(r, n);
   let i = Date.now();
-  ed({
+  ef({
     activities: n,
     now: i
-  }), B.set(r, {
+  }), Z.set(r, {
     isFetching: false,
     lastFetchTimestampMs: i
   })
 }
 
-function e_(e) {
+function ep(e) {
   let {
     applicationId: t,
     componentId: n,
@@ -399,10 +400,10 @@ function e_(e) {
     componentId: n,
     inviterUserId: o,
     launchParams: i
-  }), z = r === l.bB.APP_DMS_ENTRY_POINT_COMMAND_BUTTON ? v.MI.NO_CHAT : v.MI.RESIZABLE
+  }), q = r === l.bB.APP_DMS_ENTRY_POINT_COMMAND_BUTTON ? v.MI.NO_CHAT : v.MI.RESIZABLE
 }
 
-function ep(e) {
+function eh(e) {
   let {
     applicationId: t,
     channelId: n,
@@ -413,25 +414,44 @@ function ep(e) {
   }))
 }
 
-function eh(e) {
+function em(e) {
+  let {
+    applicationId: t,
+    proxyTicket: n
+  } = e, r = D.get(t);
+  if (null == r) returnfalse;
+  D.set(t, C(S({}, r), {
+    proxyTicket: n
+  }))
+}
+
+function eg(e) {
+  let {
+    applicationId: t,
+    refreshing: n
+  } = e;
+  n ? G.add(t) : G.delete(t)
+}
+
+function eE(e) {
   let {
     applicationId: t
   } = e;
   N.everLaunchedActivities.add(t)
 }
 
-function em(e) {
+function eb(e) {
   let {
     applicationId: t,
     channelId: n
   } = e;
-  eg({
+  ey({
     applicationId: t,
     channelId: n
-  })
+  }), G.delete(t)
 }
 
-function eg(e) {
+function ey(e) {
   let {
     applicationId: t,
     channelId: n
@@ -439,58 +459,58 @@ function eg(e) {
   U.delete(k(n, t))
 }
 
-function eE(e) {
+function eO(e) {
   let {
     applicationId: t,
     lockState: n,
     pictureInPictureLockState: r,
     gridLockState: i
   } = e;
-  null == n ? Z.delete(t) : Z.set(t, n), null === r ? F.delete(t) : true !== r && F.set(t, r), null === i ? V.delete(t) : true !== i && V.set(t, i)
+  null == n ? F.delete(t) : F.set(t, n), null === r ? V.delete(t) : true !== r && V.set(t, r), null === i ? H.delete(t) : true !== i && H.set(t, i)
 }
 
-function eb(e) {
+function ev(e) {
   let {
     activityPanelMode: t
-  } = e;
-  K = t
-}
-
-function ey(e) {
-  let {
-    focusedActivityLayout: t
   } = e;
   z = t
 }
 
-function eO(e) {
+function eI(e) {
+  let {
+    focusedActivityLayout: t
+  } = e;
+  q = t
+}
+
+function eT(e) {
   let {
     applicationId: t,
     layoutMode: n
   } = e;
-  H.set(t, n)
+  Y.set(t, n)
 }
 
-function ev(e) {
+function eS(e) {
   let {
     channelId: t
   } = e;
   if (null == r) return;
   let n = (0, E.p)(r);
-  null != n && n !== t && K === v.Ez.PANEL && (K = v.Ez.PIP)
+  null != n && n !== t && z === v.Ez.PANEL && (z = v.Ez.PIP)
 }
 
-function eI(e, t) {
+function eA(e, t) {
   return "".concat(e, ":").concat(t)
 }
 
-function eT(e) {
+function eC(e) {
   let {
     key: t
   } = e;
-  t === I.KJ3.ACTIVITY_POPOUT && (K = v.Ez.PIP)
+  t === I.KJ3.ACTIVITY_POPOUT && (z = v.Ez.PIP)
 }
-class eS extends(i = Chunk442837.ZP.PersistedStore) {
+class eN extends(i = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t;
     let n = new Set(null != (t = null == e ? true : e.everLaunchedActivities) ? t : []);
@@ -532,7 +552,7 @@ class eS extends(i = Chunk442837.ZP.PersistedStore) {
     return L
   }
   getEmbeddedActivityDurationMs(e, t) {
-    let n = W.get(eI(e, t));
+    let n = K.get(eA(e, t));
     return null == n ? null : Date.now() - n
   }
   isLaunchingActivity() {
@@ -540,35 +560,35 @@ class eS extends(i = Chunk442837.ZP.PersistedStore) {
   }
   getShelfActivities(e) {
     var t;
-    let n = X(e);
-    return null != (t = G.get(n)) ? t : P
+    let n = Q(e);
+    return null != (t = B.get(n)) ? t : P
   }
   getShelfFetchStatus(e) {
-    let t = X(e);
-    return B.get(t)
+    let t = Q(e);
+    return Z.get(t)
   }
   shouldFetchShelf(e) {
     var t, n;
-    let r = X(e),
-      i = null != (t = B.get(r)) ? t : {
+    let r = Q(e),
+      i = null != (t = Z.get(r)) ? t : {
         isFetching: false
       },
-      a = Date.now() - (null != (n = null == i ? true : i.lastFetchTimestampMs) ? n : 0) > Y;
+      a = Date.now() - (null != (n = null == i ? true : i.lastFetchTimestampMs) ? n : 0) > W;
     return !(null == i ? true : i.isFetching) && a
   }
   getOrientationLockStateForApp(e) {
-    return Z.get(e)
+    return F.get(e)
   }
   getPipOrientationLockStateForApp(e) {
     var t;
-    return null != (t = F.get(e)) ? t : this.getOrientationLockStateForApp(e)
+    return null != (t = V.get(e)) ? t : this.getOrientationLockStateForApp(e)
   }
   getGridOrientationLockStateForApp(e) {
     var t, n;
-    return null != (n = null != (t = V.get(e)) ? t : F.get(e)) ? n : this.getOrientationLockStateForApp(e)
+    return null != (n = null != (t = H.get(e)) ? t : V.get(e)) ? n : this.getOrientationLockStateForApp(e)
   }
   getLayoutModeForApp(e) {
-    return H.get(e)
+    return Y.get(e)
   }
   getConnectedActivityChannelId() {
     if (null != r) return (0, Chunk16609.p)(r)
@@ -577,15 +597,18 @@ class eS extends(i = Chunk442837.ZP.PersistedStore) {
     return r
   }
   getActivityPanelMode() {
-    return K
+    return z
   }
   getFocusedLayout() {
-    return z
+    return q
   }
   getCurrentEmbeddedActivity() {
     var e;
     let t = this.getConnectedActivityLocation();
     return null != (e = this.getSelfEmbeddedActivityForLocation(exports)) ? module : true
+  }
+  isProxyTicketRefreshing(e) {
+    return G.has(e)
   }
   getEmbeddedActivityForUserId(e, t) {
     let n;
@@ -608,10 +631,10 @@ class eS extends(i = Chunk442837.ZP.PersistedStore) {
     return U
   }
   getActivityPopoutWindowLayout() {
-    return q
+    return X
   }
 }
-T(eS, "displayName", "EmbeddedActivitiesStore"), T(eS, "persistKey", "EmbeddedActivities"), T(eS, "migrations", [e => C(S({}, e), {
+T(eN, "displayName", "EmbeddedActivitiesStore"), T(eN, "persistKey", "EmbeddedActivities"), T(eN, "migrations", [e => C(S({}, e), {
   seenFeaturedActivities: [],
   shouldShowNewActivityIndicator: false
 }), e => (delete e.seenFeaturedActivities, S({}, e)), e => (delete e.seenActivities, S({}, e)), e => (delete e.currentFreeActivity, delete e.lastFreeActivityRotationTimestampMs, delete e.freePeriodActivities, delete e.shouldShowFreeActivityIndicator, S({}, e)), e => C(S({}, e), {
@@ -628,27 +651,29 @@ T(eS, "displayName", "EmbeddedActivitiesStore"), T(eS, "persistKey", "EmbeddedAc
 }), e => (delete e.surfacesToShowNewActivityIndicator, C(S({}, e), {
   dateRangesForSurfaces: {}
 }))]);
-let eA = new eS(Chunk570140.Z, {
-    ACTIVITY_LAYOUT_MODE_UPDATE: eO,
-    CONNECTION_OPEN_SUPPLEMENTAL: ee,
-    GUILD_CREATE: et,
-    CHANNEL_DELETE: en,
-    EMBEDDED_ACTIVITY_LAUNCH_START: e_,
-    EMBEDDED_ACTIVITY_LAUNCH_SET_PROXY_TICKET: ep,
-    EMBEDDED_ACTIVITY_LAUNCH_SUCCESS: eh,
-    EMBEDDED_ACTIVITY_LAUNCH_FAIL: em,
-    EMBEDDED_ACTIVITY_CLOSE: ea,
-    EMBEDDED_ACTIVITY_UPDATE_POPOUT_WINDOW_LAYOUT: eo,
-    EMBEDDED_ACTIVITY_UPDATE_V2: er,
-    LOCAL_ACTIVITY_UPDATE: es,
-    EMBEDDED_ACTIVITY_SET_CONFIG: el,
-    EMBEDDED_ACTIVITY_FETCH_SHELF: ec,
-    EMBEDDED_ACTIVITY_FETCH_SHELF_SUCCESS: ef,
-    EMBEDDED_ACTIVITY_FETCH_SHELF_FAIL: eu,
-    EMBEDDED_ACTIVITY_SET_ORIENTATION_LOCK_STATE: eE,
-    EMBEDDED_ACTIVITY_SET_PANEL_MODE: eb,
-    EMBEDDED_ACTIVITY_SET_FOCUSED_LAYOUT: ey,
-    CHANNEL_SELECT: ev,
-    POPOUT_WINDOW_CLOSE: eT
+let eR = new eN(Chunk570140.Z, {
+    ACTIVITY_LAYOUT_MODE_UPDATE: eT,
+    CONNECTION_OPEN_SUPPLEMENTAL: et,
+    GUILD_CREATE: en,
+    CHANNEL_DELETE: er,
+    EMBEDDED_ACTIVITY_LAUNCH_START: ep,
+    EMBEDDED_ACTIVITY_LAUNCH_SET_PROXY_TICKET: eh,
+    EMBEDDED_ACTIVITY_UPDATE_CONNECTED_PROXY_TICKET: em,
+    EMBEDDED_ACTIVITY_SET_PROXY_TICKET_REFRESHING: eg,
+    EMBEDDED_ACTIVITY_LAUNCH_SUCCESS: eE,
+    EMBEDDED_ACTIVITY_LAUNCH_FAIL: eb,
+    EMBEDDED_ACTIVITY_CLOSE: eo,
+    EMBEDDED_ACTIVITY_UPDATE_POPOUT_WINDOW_LAYOUT: es,
+    EMBEDDED_ACTIVITY_UPDATE_V2: ei,
+    LOCAL_ACTIVITY_UPDATE: el,
+    EMBEDDED_ACTIVITY_SET_CONFIG: ec,
+    EMBEDDED_ACTIVITY_FETCH_SHELF: eu,
+    EMBEDDED_ACTIVITY_FETCH_SHELF_SUCCESS: e_,
+    EMBEDDED_ACTIVITY_FETCH_SHELF_FAIL: ed,
+    EMBEDDED_ACTIVITY_SET_ORIENTATION_LOCK_STATE: eO,
+    EMBEDDED_ACTIVITY_SET_PANEL_MODE: ev,
+    EMBEDDED_ACTIVITY_SET_FOCUSED_LAYOUT: eI,
+    CHANNEL_SELECT: eS,
+    POPOUT_WINDOW_CLOSE: eC
   }),
-  eC = eA
+  eP = eR

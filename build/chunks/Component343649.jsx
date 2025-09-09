@@ -469,7 +469,8 @@ function ed(e) {
           withAnimation: false,
           paymentSourceType: d,
           fallbackGuildName: u,
-          didPurchaseOnFractionalPremium: _
+          didPurchaseOnFractionalPremium: _,
+          customCheckoutFlow: eI
         })
     }
     let S = null != eG && null == (0, j.ly)(eG) ? eG : ez;

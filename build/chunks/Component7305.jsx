@@ -248,8 +248,7 @@ function F(e) {
       loadId: L,
       paymentModalBanner: g,
       referralCode: b,
-      subscriptionTier: y,
-      customCheckoutFlow: S
+      subscriptionTier: y
     } = e;
   if (null != y && !Object.values(T.Si).includes(y)) throw Error("subscriptionTier must be a premium subscription");
   return (0, r.jsx)(C.Gt, {
@@ -263,7 +262,6 @@ function F(e) {
       defaultPlanId: null != n ? n : s,
       referralCode: b,
       wasTier2PremiumBeforePurchase: e.wasTier2PremiumBeforePurchase,
-      customCheckoutFlow: S,
       children: (0, r.jsx)(m.c1, {
         confirmationFooter: a,
         paymentModalBanner: g,

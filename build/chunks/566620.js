@@ -11,6 +11,7 @@ require.d(exports, {
   gC: () => eO,
   kv: () => e_,
   mW: () => ed,
+  nJ: () => eT,
   pu: () => eg,
   sN: () => em,
   tg: () => ey,
@@ -661,4 +662,45 @@ async function eI(e, t) {
     body: n,
     rejectWithError: true
   })).body.ticket
+}
+async function eT(e, t) {
+  s.Z.dispatch({
+    type: "EMBEDDED_ACTIVITY_SET_PROXY_TICKET_REFRESHING",
+    applicationId: e,
+    refreshing: true
+  });
+  try {
+    let n = await eI(e, null != t ? t : true);
+    s.Z.dispatch({
+      type: "EMBEDDED_ACTIVITY_LAUNCH_SET_PROXY_TICKET",
+      applicationId: e,
+      channelId: t,
+      proxyTicket: n
+    }), s.Z.dispatch({
+      type: "EMBEDDED_ACTIVITY_UPDATE_CONNECTED_PROXY_TICKET",
+      applicationId: e,
+      proxyTicket: n
+    })
+  } catch (l) {
+    var n;
+    let r = D.Z.getChannel(t),
+      a = null != (n = null == r ? true : r.guild_id) ? n : null,
+      o = null != a ? i.E.GUILD_CHANNEL : i.E.PRIVATE_CHANNEL;
+    return s.Z.dispatch({
+      type: "EMBEDDED_ACTIVITY_LAUNCH_FAIL",
+      nonce: (0, N.r)(),
+      applicationId: e,
+      channelId: t,
+      guildId: a,
+      locationKind: o,
+      error: l instanceof I.Z || l instanceof _.Z || l instanceof T.Z ? l : new _.Z(l)
+    }), false
+  } finally {
+    s.Z.dispatch({
+      type: "EMBEDDED_ACTIVITY_SET_PROXY_TICKET_REFRESHING",
+      applicationId: e,
+      refreshing: false
+    })
+  }
+  returntrue
 }

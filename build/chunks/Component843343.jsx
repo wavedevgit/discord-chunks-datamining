@@ -1,26 +1,25 @@
 /** Chunk was on 11160 **/
 /** chunk id: 843343, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk91192 = require("./91192.jsx"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk299379 = require("./299379.js"),
   Chunk486472 = require("./486472.js"),
   Chunk430824 = require("./430824.js"),
   Chunk682662 = require("./682662.jsx"),
   Chunk662146 = require("./662146.jsx"),
-  Chunk981631 = require("./981631.js"),
+  Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk419619 = require("./419619.js");
 
-function g() {
+function h() {
   var e, t;
-  let n = (0, Chunk442837.e7)([Chunk486472.Z, Chunk430824.Z], () => Chunk486472.Z.unavailableGuilds.filter(e => null == c.Z.getGuild(e)).length),
-    g = (0, Chunk91192.Ie)("unavailable-guilds-button");
+  let n = (0, Chunk442837.e7)([Chunk486472.Z, Chunk430824.Z], () => Chunk486472.Z.unavailableGuilds.filter(e => null == s.Z.getGuild(e)).length),
+    h = (0, Chunk91192.Ie)("unavailable-guilds-button");
   return require <= 0 ? null : (0, Chunk951288.jsx)(Chunk682662.H, {
     children: (0, Chunk951288.jsx)(Chunk662146.Z, {
       text: Chunk388032.intl.format(Chunk388032.t["TnH05+"], {
@@ -45,13 +44,13 @@ function g() {
         }
         return e
       }({
-        href: (0, Chunk299379.Z)(Chunk981631.RK.TWITTER),
+        href: Chunk231338.yX.STATUS,
         target: "_blank",
         className: Chunk419619.guildsError,
         "aria-label": Chunk388032.intl.formatToPlainString(Chunk388032.t["MEpX+/"], {
           count: require
         })
-      }, g), t = t = {
+      }, h), t = t = {
         children: (0, Chunk951288.jsx)(Chunk481060.Mgn, {
           color: "currentColor",
           "aria-hidden": true

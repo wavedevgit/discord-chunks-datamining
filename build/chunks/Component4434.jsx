@@ -506,42 +506,43 @@ function e_(e) {
       withAnimation: c = true,
       paymentSourceType: u,
       didPurchaseOnFractionalPremium: d = false,
-      fallbackGuildName: f
+      fallbackGuildName: f,
+      customCheckoutFlow: p
     } = e,
     {
-      theme: p
+      theme: h
     } = (0, _.TCT)(),
-    [h, m] = i.useState(P.fe.Scenes.ENTRY),
-    [g, E] = i.useState(false),
-    b = null != (t = null == o ? true : o.name) ? t : f;
-  return n = l ? null == b ? $.intl.format($.t.P52e1t, {}) : $.intl.format($.t["4UnIk5"], {
-    guildName: b
+    [m, g] = i.useState(P.fe.Scenes.ENTRY),
+    [E, b] = i.useState(false),
+    y = null != (t = null == o ? true : o.name) ? t : f;
+  return n = l ? null == y ? $.intl.format($.t.P52e1t, {}) : $.intl.format($.t["4UnIk5"], {
+    guildName: y
   }) : d ? $.intl.format($.t.gFaKd3, {
     helpCenterLink: Y.Z.getArticleURL(X.BhN.FRACTIONAL_PREMIUM_ABOUT)
-  }) : null == b ? $.intl.format($.t.SZ5ohY, {
+  }) : null == y ? $.intl.format($.t.SZ5ohY, {
     guildSubscriptionQuantity: s
   }) : $.intl.format($.t.GxK3Mj, {
-    guildName: b,
+    guildName: y,
     guildSubscriptionQuantity: s
   }), (0, r.jsxs)("div", {
     className: ee.confirmationContainer,
     children: [c ? (0, r.jsx)(P.fe, {
       className: ee.confirmationAnimation,
-      nextScene: h,
+      nextScene: m,
       onScenePlay: e => {
-        if (!g) switch (e) {
+        if (!E) switch (e) {
           case P.fe.Scenes.ENTRY:
-            return m(P.fe.Scenes.IDLE);
+            return g(P.fe.Scenes.IDLE);
           case P.fe.Scenes.IDLE:
-            return m(P.fe.Scenes.SUCCESS);
+            return g(P.fe.Scenes.SUCCESS);
           case P.fe.Scenes.SUCCESS:
-            return E(true), m(P.fe.Scenes.IDLE)
+            return b(true), g(P.fe.Scenes.IDLE)
         }
       },
       pauseWhileUnfocused: false
     }) : null, (0, r.jsx)(D.ZP, {
       className: ee.confirmationUpgradedBanner,
-      theme: p,
+      theme: h,
       premiumType: Q.p9.TIER_2,
       type: J.X7.has(null != u ? u : J.He.UNKNOWN) ? D.ZP.Types.PREMIUM_PAYMENT_STARTED : D.ZP.Types.GUILD_BOOST_APPLIED
     }), (0, r.jsx)("div", {
@@ -549,7 +550,7 @@ function e_(e) {
       children: n
     }), (0, r.jsx)(_.zxk, {
       variant: "primary",
-      text: $.intl.string($.t["/iTxg4"]),
+      text: "apple_payment_link" === p ? $.intl.string($.t.qXV2XV) : $.intl.string($.t["/iTxg4"]),
       onClick: a
     })]
   })
