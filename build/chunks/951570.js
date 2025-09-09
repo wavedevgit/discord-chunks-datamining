@@ -2,6 +2,7 @@
 /** chunk id: 951570, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  G2: () => g,
   Q1: () => h,
   TO: () => _,
   h3: () => m,
@@ -43,4 +44,8 @@ function h() {
 
 function m() {
   return Math.max(0, Math.ceil(i()(f).endOf("day").diff(i()(), "days", true)))
+}
+
+function g() {
+  return "production" !== window.GLOBAL_ENV.PROJECT_ENV || 3 >= m()
 }
