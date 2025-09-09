@@ -2,38 +2,39 @@
 /** chunk id: 510231, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  N: () => d,
-  h: () => f
+  N: () => f,
+  h: () => _
 }), require("./583741.js");
 var Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
+  Chunk624238 = require("./624238.js"),
   Chunk442837 = require("./442837.js"),
   Chunk189451 = require("./189451.js"),
   Chunk77498 = require("./77498.js"),
   Chunk570911 = require("./570911.js");
 
-function u(e) {
-  var t;
-  return null != (t = c.gQ.get(e)) ? t : 0
-}
-
 function d(e) {
-  return (null == e ? true : e.themes) != null && e.themes.includes(s.J8.EROTIC)
+  var t;
+  return null != (t = u.gQ.get(e)) ? t : 0
 }
 
-function f() {
+function f(e) {
+  return (null == e ? true : e.themes) != null && e.themes.includes(l.J8.EROTIC)
+}
+
+function _() {
   let e = (0, Chunk442837.e7)([Chunk77498.Z], () => Chunk77498.Z.games),
-    t = Chunk647438.useMemo(() => a()(module).filter(e => !d(e)).map(e => ({
+    t = Chunk647438.useMemo(() => a()(module).filter(e => !f(e) && !o.Fb.has(e.id)).map(e => ({
       value: e.id,
       label: e.name
     })).sortBy(e => {
       let {
         value: t
       } = e;
-      return u(t)
+      return d(t)
     }).reverse().value(), [module]),
-    n = Chunk647438.useCallback((e, t) => u(t.item.value) - u(e.item.value), []);
+    n = Chunk647438.useCallback((e, t) => d(t.item.value) - d(e.item.value), []);
   return {
     options: exports,
     matchSorterOptions: Chunk647438.useMemo(() => ({
