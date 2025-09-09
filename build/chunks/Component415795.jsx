@@ -295,14 +295,16 @@ T(C, "defaultProps", {
 class N extends Chunk647438.Component {
   renderIcon() {
     let {
-      channel: e
+      channel: e,
+      status: t
     } = this.props;
     return (0, Chunk951288.jsx)("div", {
       className: Chunk297762.dmIconContainer,
       children: (0, Chunk951288.jsx)(Chunk481060.qEK, {
         src: (0, Chunk43267.x)(module),
         size: Chunk481060.EFr.SIZE_20,
-        "aria-hidden": true
+        "aria-hidden": true,
+        status: exports
       })
     })
   }
@@ -373,14 +375,18 @@ class N extends Chunk647438.Component {
 class R extends Chunk647438.Component {
   renderIcon() {
     let {
-      user: e
+      user: e,
+      status: t,
+      isMobile: n
     } = this.props;
     return (0, Chunk951288.jsx)("div", {
       className: Chunk297762.iconContainer,
       children: (0, Chunk951288.jsx)(Chunk481060.qEK, {
         src: module.getAvatarURL(true, 20),
         "aria-hidden": true,
-        size: Chunk481060.EFr.SIZE_20
+        size: Chunk481060.EFr.SIZE_20,
+        status: exports,
+        isMobile: require
       })
     })
   }
