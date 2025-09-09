@@ -391,7 +391,7 @@ function eE(e, t, n, r) {
     quest: e,
     questContent: n,
     sourceQuestContent: r
-  });
+  }), s = (0, S.Pb)(e);
   if ((0, S.$J)(e) && !(0, S.Nj)({
       quest: e
     })) return k.intl.format(k.t["l4S+cX"], {
@@ -399,10 +399,16 @@ function eE(e, t, n, r) {
     onClick: o,
     gameTitle: x.r.build(e.config).application.name
   });
-  if ((0, S.$J)(e)) return k.intl.format(k.t.Ajlcd3, {
+  if ((0, S.$J)(e)) return s ? k.intl.format(k.t.gbtCpa, {
+    onClick: o,
+    minutes: i
+  }) : k.intl.format(k.t.Ajlcd3, {
     minutes: i,
     onClick: o,
     gameTitle: x.r.build(e.config).application.name
+  });
+  if (s) return k.intl.format(k.t.Hu8SKS, {
+    targetMinutes: i
   });
   if ((0, S.q8)(e)) {
     let t = x.r.build(e.config).defaultWatchVideoTask,
@@ -415,10 +421,10 @@ function eE(e, t, n, r) {
   if ((0, S.pO)(e) && (0, S.KM)(e)) return k.intl.format(k.t["1NaRSk"], {
     minutes: i
   });
-  let s = k.t["6zWtV1"];
+  let l = k.t["6zWtV1"];
   return (0, S.Nj)({
     quest: e
-  }) && (s = k.t["wmOh/v"]), k.intl.format(s, {
+  }) && (l = k.t["wmOh/v"]), k.intl.format(l, {
     minutes: i,
     gameTitle: e.config.messages.gameTitle
   })

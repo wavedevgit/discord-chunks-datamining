@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 169010, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  S: () => a,
+  S: () => l,
   z: () => i
 }), require("./388685.js"), require("./539854.js");
 var Chunk494497 = require("./494497.js"),
@@ -9,17 +9,17 @@ var Chunk494497 = require("./494497.js"),
 let i = {
     guildTagsBadgePacks: [Chunk494497.MB, Chunk494497.Vk]
   },
-  l = Object.entries(i).reduce((e, t) => {
+  s = Object.entries(i).reduce((e, t) => {
     let [n, r] = t;
     for (let t of r) e[t] = n;
     return e
   }, {});
 
-function a(e, t, n) {
+function l(e, t, n) {
   let i = [],
-    a = t.reduce((e, t) => {
+    l = t.reduce((e, t) => {
       if (t.type !== o.Us.PERK) return e;
-      let n = l[t.skuId];
+      let n = s[t.skuId];
       return null == n || (null != e[n] || (e[n] = []), e[n].push(t)), e
     }, {});
   for (let e of t) {
@@ -30,14 +30,14 @@ function a(e, t, n) {
       });
       continue
     }
-    let t = l[e.skuId];
+    let t = s[e.skuId];
     if (null != t) {
-      let e = a[t];
+      let e = l[t];
       true !== e && (i.push({
         type: "multiPerk",
         group: t,
         powerups: e
-      }), a[t] = true);
+      }), l[t] = true);
       continue
     }
     i.push({

@@ -71,10 +71,10 @@ function y(e) {
   let {
     subscription: E,
     onUpdated: T
-  } = e, [O, S] = r.useState(false), [P, k] = r.useState(false), [I, R] = r.useState(false), [w, Z] = r.useState(false), [A, D] = r.useState(null), L = e => (null == e && (e = E.status), e in g) ? g[e] : "Unknown status ".concat(e), M = e => {
+  } = e, [O, S] = r.useState(false), [P, k] = r.useState(false), [I, R] = r.useState(false), [w, Z] = r.useState(false), [A, D] = r.useState(null), L = e => (null == e && (e = E.status), e in g) ? g[e] : "Unknown status ".concat(e), U = e => {
     let t = new Date(e);
     return u.default.fromTimestamp(t.getTime())
-  }, U = async e => {
+  }, M = async e => {
     let {
       status: t = E.status,
       premiumStreakStart: n,
@@ -99,9 +99,9 @@ function y(e) {
     }({
       subscription_status: t
     }, null != n ? {
-      premium_streak_started_at: M(n)
+      premium_streak_started_at: U(n)
     } : null, null != a ? {
-      ended_at: M(a)
+      ended_at: U(a)
     } : null);
     await s.tn.patch({
       url: "/debug/subscriptions/".concat(E.id),
@@ -291,7 +291,7 @@ function y(e) {
             serialize: e => L(e),
             isSelected: e => e === E.status,
             options: _,
-            select: e => U({
+            select: e => M({
               status: e
             }),
             popoutLayerContext: m.O$
@@ -317,7 +317,7 @@ function y(e) {
           children: [(0, a.jsx)("input", {
             type: "date",
             value: null == (N = E.premiumSince) ? true : N.toISOString().substring(0, 10),
-            onChange: e => U({
+            onChange: e => M({
               premiumStreakStart: e.target.value
             }),
             style: {
@@ -331,7 +331,7 @@ function y(e) {
           children: (0, a.jsx)("input", {
             type: "date",
             value: B,
-            onChange: e => U({
+            onChange: e => M({
               endedAt: e.target.value
             })
           })

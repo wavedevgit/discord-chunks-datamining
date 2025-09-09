@@ -23,7 +23,7 @@ function g(e) {
   } = e, n = new Date(u.default.extractTimestamp(t.id)), {
     username: g,
     roleColor: v,
-    roleColorStrings: x
+    roleColorStrings: _
   } = (0, i.cj)([c.ZP], () => {
     var e, n, r, o;
     let i = c.ZP.getMember(t.guildId, t.userId);
@@ -32,11 +32,11 @@ function g(e) {
       roleColor: null != (r = null == i ? true : i.colorString) ? r : null,
       roleColorStrings: null != (o = null == i ? true : i.colorStrings) ? o : null
     }
-  }, [t]), _ = (0, d.X7)(t.guildId, t.userId, null != x ? x : null);
-  return (0, r.jsx)(s.Z, {
+  }, [t]), x = (0, d.X7)(t.guildId, t.userId, null != _ ? _ : null);
+  return (0, r.jsx)(a.Z, {
     className: f.systemMessageContainer,
     contentClassName: f.systemMessageContent,
-    iconNode: (0, r.jsx)(l.$Eu, {
+    iconNode: (0, r.jsx)(s.$Eu, {
       className: f.icon,
       color: "currentColor",
       size: "sm"
@@ -48,16 +48,16 @@ function g(e) {
     compact: true,
     children: (0, r.jsxs)("span", {
       className: f.boostMessage,
-      children: [(0, r.jsx)(l.PUh, {
+      children: [(0, r.jsx)(s.PUh, {
         className: f.boostMessageUser,
         variant: "text-md/semibold",
         name: g,
         colorString: null != v ? v : null,
-        colorStrings: _
+        colorStrings: x
       }), (0, r.jsx)(o.xv, {
         variant: "text-md/medium",
         lineClamp: 1,
-        children: (0, r.jsx)(a.Z, {
+        children: (0, r.jsx)(l.Z, {
           children: m.intl.string(p.default.plwH8f)
         })
       })]

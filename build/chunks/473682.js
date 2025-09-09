@@ -3,13 +3,13 @@
 require.d(exports, {
   M4: () => o,
   Ne: () => c,
-  T9: () => s,
-  Vb: () => a,
+  T9: () => a,
+  Vb: () => s,
   hK: () => i,
   zI: () => l
 });
-var r, a = ((r = {}).SELECT_GAME = "select-game", r.SERVER_SETTINGS = "server-settings", r);
-let s = {
+var r, s = ((r = {}).SELECT_GAME = "select-game", r.SERVER_SETTINGS = "server-settings", r);
+let a = {
     steps: {
       "select-game": {
         onBack: {

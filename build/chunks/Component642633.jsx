@@ -43,19 +43,19 @@ function d() {
         className: Chunk20426.statsGrid,
         children: require.specifications.map((e, n) => {
           var l;
-          return (0, a.jsxs)(i.Fragment, {
-            children: [(0, a.jsxs)("div", {
+          return (0, r.jsxs)(i.Fragment, {
+            children: [(0, r.jsxs)("div", {
               className: c.statItem,
-              children: [(0, a.jsx)(r.X6, {
+              children: [(0, r.jsx)(a.X6, {
                 variant: "heading-sm/semibold",
                 color: "text-primary",
                 children: e.amount
-              }), (0, a.jsx)(r.xv, {
+              }), (0, r.jsx)(a.xv, {
                 variant: "text-sm/medium",
                 color: "text-tertiary",
                 children: e.unit
               })]
-            }), n !== (null != (l = null == t ? true : t.specifications.length) ? l : 0) - 1 && (0, a.jsx)("div", {
+            }), n !== (null != (l = null == t ? true : t.specifications.length) ? l : 0) - 1 && (0, r.jsx)("div", {
               className: c.divider
             })]
           }, n)

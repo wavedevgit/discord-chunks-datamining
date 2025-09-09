@@ -113,7 +113,7 @@ function _() {
     noiseSuppression: A,
     noiseSuppressionSupported: D,
     noiseCancellationSupported: L,
-    noiseCancellationEnableStats: M
+    noiseCancellationEnableStats: U
   } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
     krispModels: Chunk131951.Z.getKrispModels(),
     krispModelOverride: Chunk131951.Z.getKrispModelOverride(),
@@ -127,7 +127,7 @@ function _() {
     noiseSuppressionSupported: Chunk131951.Z.isNoiseSuppressionSupported(),
     noiseCancellationSupported: Chunk131951.Z.isNoiseCancellationSupported(),
     noiseCancellationEnableStats: Chunk131951.Z.getKrispEnableStats()
-  })), U = Z ? "KRISP" : A ? "STANDARD" : "NONE", F = (0, Chunk304809.N)(), G = Chunk647438.useCallback(() => {
+  })), M = Z ? "KRISP" : A ? "STANDARD" : "NONE", F = (0, Chunk304809.N)(), G = Chunk647438.useCallback(() => {
     var e;
     null == (e = C.current) || module.stop(), C.current = null, y(null)
   }, []);
@@ -172,14 +172,14 @@ function _() {
         title: "Noise Cancellation",
         tag: Chunk481060.RB0.H3,
         children: (0, Chunk951288.jsx)(Chunk481060.q4e, {
-          value: U,
+          value: M,
           onChange: e => {
             d.Z.setNoiseCancellation("KRISP" === e), d.Z.setNoiseSuppression("STANDARD" === e)
           },
           options: V,
           popoutLayerContext: Chunk246992.O$
         })
-      }), "KRISP" === U && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      }), "KRISP" === M && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk481060.hjN, {
           title: "Krisp Suppression Level",
           tag: Chunk481060.RB0.H3,
@@ -212,7 +212,7 @@ function _() {
           title: "Noise Cancellation Stats",
           tag: Chunk481060.RB0.H3,
           children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-            value: M,
+            value: U,
             onChange: e => d.Z.setNoiseCancellationEnableStats(e),
             children: "Enable Stats"
           })
@@ -284,7 +284,7 @@ function _() {
                 inputName: e,
                 audioBuffer: l,
                 createdAt: Date.now(),
-                suppression: U,
+                suppression: M,
                 echoCancellation: k,
                 krispSuppressionLevel: g
               }])

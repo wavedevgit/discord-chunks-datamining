@@ -59,7 +59,7 @@ var a, r, Chunk647438 = require("./647438.js"),
   Chunk521904 = require("./521904.js"),
   Chunk231338 = require("./231338.js");
 
-function U(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -138,7 +138,7 @@ function K(e) {
   let t = V[e];
   return {
     name: e,
-    colors: Object.fromEntries(Object.values(M.BR).map(e => [e, {
+    colors: Object.fromEntries(Object.values(U.BR).map(e => [e, {
       color: t[e].raw,
       opacity: t[e].opacity
     }])),
@@ -149,7 +149,7 @@ function K(e) {
 function Y(e, t, n, a, r) {
   return {
     name: t,
-    colors: F(U({}, e.colors), {
+    colors: F(M({}, e.colors), {
       [r]: {
         color: n,
         opacity: a
@@ -160,7 +160,7 @@ function Y(e, t, n, a, r) {
 }
 
 function q(e) {
-  return F(U({}, e), {
+  return F(M({}, e), {
     highlight: !e.highlight
   })
 }
@@ -247,55 +247,55 @@ function er(e) {
 }
 
 function el(e, t, n) {
-  n(n => null == n.scales.find(t => t.name === e) ? n : F(U({}, n), {
+  n(n => null == n.scales.find(t => t.name === e) ? n : F(M({}, n), {
     scales: n.scales.map(n => n.name === e ? t(n) : n)
   }))
 }
 
 function ei(e, t, n) {
-  el(e, e => F(U({}, e), {
+  el(e, e => F(M({}, e), {
     darkness: t
   }), n)
 }
 
 function es(e, t, n) {
-  el(e, e => F(U({}, e), {
+  el(e, e => F(M({}, e), {
     lightness: t
   }), n)
 }
 
 function eo(e, t, n) {
-  el(e, e => F(U({}, e), {
+  el(e, e => F(M({}, e), {
     base: t
   }), n)
 }
 
 function ec(e, t, n) {
-  el(e, e => F(U({}, e), {
+  el(e, e => F(M({}, e), {
     colorSpace: t
   }), n)
 }
 
 function ed(e, t, n) {
-  el(e, e => F(U({}, e), {
+  el(e, e => F(M({}, e), {
     easingStrength: t
   }), n)
 }
 
 function eu(e, t, n) {
-  el(e, e => F(U({}, e), {
+  el(e, e => F(M({}, e), {
     showColumnarPalettePreview: t
   }), n)
 }
 
 function em(e, t, n) {
-  el(e, e => F(U({}, e), {
+  el(e, e => F(M({}, e), {
     useP3ColorSpace: t
   }), n)
 }
 
 function ex(e, t, n) {
-  el(e, e => F(U({}, e), {
+  el(e, e => F(M({}, e), {
     steps: t
   }), n)
 }

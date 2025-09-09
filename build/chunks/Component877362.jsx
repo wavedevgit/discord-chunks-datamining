@@ -35,20 +35,20 @@ function S(e) {
   var t, n;
   let {
     guildId: o
-  } = e, d = (0, a.e7)([h.Z], () => h.Z.getGuild(o)), P = (0, a.e7)([b.Z], () => b.Z.getSortedRoles(o).find(e => {
+  } = e, d = (0, l.e7)([b.Z], () => b.Z.getGuild(o)), P = (0, l.e7)([h.Z], () => h.Z.getSortedRoles(o).find(e => {
     var t;
     return (null == (t = e.tags) ? true : t.premium_subscriber) === null
-  })), S = (0, a.e7)([C.default], () => C.default.getCurrentUser()), N = null == S ? true : S.id, k = (0, a.e7)([_.ZP], () => null != N ? _.ZP.getMember(o, N) : true, [N, o]), O = (null == k ? true : k.premiumSince) != null, A = (0, a.e7)([p.Z], () => p.Z.useReducedMotion), {
-    avatarDecorationSrc: R,
-    avatarSrc: U,
+  })), S = (0, l.e7)([C.default], () => C.default.getCurrentUser()), N = null == S ? true : S.id, k = (0, l.e7)([x.ZP], () => null != N ? x.ZP.getMember(o, N) : true, [N, o]), O = (null == k ? true : k.premiumSince) != null, A = (0, l.e7)([p.Z], () => p.Z.useReducedMotion), {
+    avatarDecorationSrc: U,
+    avatarSrc: R,
     eventHandlers: L
-  } = (0, x.Z)({
+  } = (0, _.Z)({
     userId: null == S ? true : S.id,
     guildId: o,
     size: u.EFr.SIZE_40,
     animateOnHover: !A
   });
-  return null == d || null == k || null == S ? null : (0, r.jsxs)(s.$, {
+  return null == d || null == k || null == S ? null : (0, r.jsxs)(a.$, {
     className: y.container,
     children: [(0, r.jsx)("img", {
       alt: "",
@@ -56,10 +56,10 @@ function S(e) {
       src: w
     }), (0, r.jsxs)("div", {
       className: y.textContainer,
-      children: [(0, r.jsx)(l.xv, {
+      children: [(0, r.jsx)(s.xv, {
         variant: "text-md/semibold",
         children: T.intl.string(O ? I.default.KSWK1d : I.default.XXXX5u)
-      }), (0, r.jsx)(l.xv, {
+      }), (0, r.jsx)(s.xv, {
         variant: "text-sm/medium",
         children: T.intl.format(O ? I.default["7fWTg4"] : I.default["7PXeeX"], {
           onClick: () => {
@@ -93,8 +93,8 @@ function S(e) {
         return e
       }({}, L), n = n = {
         user: S,
-        src: U,
-        avatarDecoration: R,
+        src: R,
+        avatarDecoration: U,
         size: u.EFr.SIZE_40,
         "aria-hidden": true,
         animate: true

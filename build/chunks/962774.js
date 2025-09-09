@@ -53,7 +53,19 @@ let a = [{
       unit: "GB"
     }]
   }],
-  r = ["Test #1", "Test #2", "Test #3", "Test #4"];
+  r = [{
+    region: "Test #1",
+    pingUrl: "wss://bhs1.shockbyte.host/ping"
+  }, {
+    region: "Test #2",
+    pingUrl: "wss://bhs1.shockbyte.host/ping"
+  }, {
+    region: "Test #3",
+    pingUrl: "wss://bhs1.shockbyte.host/ping"
+  }, {
+    region: "Test #4",
+    pingUrl: "wss://bhs1.shockbyte.host/ping"
+  }];
 
 function l(e, t) {
   return {

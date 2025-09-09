@@ -1,12 +1,12 @@
 /** Chunk was on 44799 **/
 /** chunk id: 504392, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => U
+  Z: () => R
 }), require("./539854.js"), require("./388685.js"), require("./361932.js"), require("./187205.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./35282.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk481060 = require("./481060.js"),
@@ -35,20 +35,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk989308 = require("./989308.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk823441 = require("./823441.js");
-let R = [Chunk535396.Us.LEVEL, Chunk535396.Us.PERK];
+let U = [Chunk535396.Us.LEVEL, Chunk535396.Us.PERK];
 
-function U(e) {
+function R(e) {
   let {
     guildId: t,
     powerupListingId: i
-  } = e, U = (0, f.A0)(t, "GuildPowerupsOverview");
+  } = e, R = (0, f.A0)(t, "GuildPowerupsOverview");
   o.useEffect(() => {
-    U && ((0, m.EC)(t), (0, m.po)(t))
-  }, [t, U]), o.useEffect(() => {
+    R && ((0, m.EC)(t), (0, m.po)(t))
+  }, [t, R]), o.useEffect(() => {
     (0, v.Sn)(t), (0, v.Fm)(t)
   }, [t]), (0, w.Wj)(t);
-  let L = (0, a.e7)([x.Z], () => x.Z.getStateForGuild(t)),
-    M = (0, _.Z)(t),
+  let L = (0, l.e7)([_.Z], () => _.Z.getStateForGuild(t)),
+    M = (0, x.Z)(t),
     D = o.useRef(false),
     {
       shouldShow: G,
@@ -56,16 +56,16 @@ function U(e) {
     } = (0, y.K)(t, "GuildPowerupsOverview"),
     B = null == i && null != V,
     W = [];
-  G && B && W.push(s.z.VANITY_URL_POWERUP_ROLLBACK_MODAL);
-  let [z, F] = (0, u.US)(W), K = o.useMemo(() => R.reduce((e, t) => {
+  G && B && W.push(a.z.VANITY_URL_POWERUP_ROLLBACK_MODAL);
+  let [z, F] = (0, u.US)(W), K = o.useMemo(() => U.reduce((e, t) => {
     let n = null == L ? true : L.powerupCatalog[t];
     if (null == n) return e;
-    let r = (0, b.S)(t, n, U);
+    let r = (0, h.S)(t, n, R);
     return e.push({
       type: t,
       listings: r
     }), e
-  }, []), [null == L ? true : L.powerupCatalog, U]), X = K.flatMap(e => e.listings).filter(e => "multiPerk" === e.type).map(e => e.group), H = (0, Z.f)(X, t);
+  }, []), [null == L ? true : L.powerupCatalog, R]), X = K.flatMap(e => e.listings).filter(e => "multiPerk" === e.type).map(e => e.group), H = (0, Z.f)(X, t);
   return (o.useEffect(() => {
     if (null != i && !D.current)
       for (let e of K)
@@ -143,7 +143,7 @@ function U(e) {
             listings: o
           } = e, {
             title: i,
-            description: a
+            description: l
           } = function(e) {
             switch (e) {
               case S.Us.LEVEL:
@@ -155,7 +155,7 @@ function U(e) {
                   title: O.intl.string(k.default.TV3Vm5), description: O.intl.string(k.default.STx9ho)
                 }
             }
-          }(n), s = n === S.Us.LEVEL ? c.zJl : "div";
+          }(n), a = n === S.Us.LEVEL ? c.zJl : "div";
           return (0, r.jsxs)("div", {
             className: A.powerupsSection,
             children: [(0, r.jsxs)("div", {
@@ -167,11 +167,11 @@ function U(e) {
               }), (0, r.jsx)(c.Text, {
                 color: "text-muted",
                 variant: "text-sm/medium",
-                children: a
+                children: l
               })]
-            }), (0, r.jsx)(s, {
+            }), (0, r.jsx)(a, {
               orientation: "horizontal",
-              className: l()(A.powerupContainer, A.powerupHorizontalPadding, {
+              className: s()(A.powerupContainer, A.powerupHorizontalPadding, {
                 [A.powerupsLevelContainer]: n === S.Us.LEVEL
               }),
               fade: true,
@@ -179,7 +179,7 @@ function U(e) {
                 switch (e.type) {
                   case "singleLevel":
                     var i;
-                    return (0, r.jsx)(h.ZP, {
+                    return (0, r.jsx)(b.ZP, {
                       guildId: t,
                       index: n,
                       powerup: e.powerup,

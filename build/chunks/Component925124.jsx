@@ -119,8 +119,8 @@ function P(e) {
   null != Z && (A = "".concat(A, " from @").concat(Z.username));
   let D = null != k,
     L = null != k && new Date(k).getTime() < Date.now(),
-    M = (null == w ? true : w.sku_id) === j.Si.TIER_0,
-    U = async () => {
+    U = (null == w ? true : w.sku_id) === j.Si.TIER_0,
+    M = async () => {
       T(true), D ? await F({
         expiresAt: null
       }) : await (0, d.ab)(m), f(), T(false)
@@ -177,7 +177,7 @@ function P(e) {
   }, [v, y]);
   let G = "Active";
   return D && (G = "Acked"), L && (G = "Expired"), (0, a.jsxs)("div", {
-    className: i()(_.card, M ? _.gradientWrapperTier0 : _.gradientWrapperTier2),
+    className: i()(_.card, U ? _.gradientWrapperTier0 : _.gradientWrapperTier2),
     children: [(0, a.jsx)("div", {
       className: i()(_.row, _.nameRow),
       children: (0, a.jsx)(c.X6q, {
@@ -261,7 +261,7 @@ function P(e) {
     }), (0, a.jsxs)("div", {
       className: _.badgeContainer,
       children: [(0, a.jsx)(c.P3F, {
-        onClick: U,
+        onClick: M,
         className: i()(_.badge, _.clickable, {
           [_.acked]: D,
           [_.expired]: L
@@ -468,16 +468,16 @@ function k(e) {
 }
 
 function I() {
-  let [e, t] = Chunk647438.useState([]), [n, l] = Chunk647438.useState([]), [i, s] = Chunk647438.useState(), [h, p] = Chunk647438.useState(), [j, E] = Chunk647438.useState([]), [I, R] = Chunk647438.useState([]), [w, Z] = Chunk647438.useState(true), [A, D] = Chunk647438.useState(10080), [L, M] = Chunk647438.useState([]), {
-    entitlements: U,
+  let [e, t] = Chunk647438.useState([]), [n, l] = Chunk647438.useState([]), [i, s] = Chunk647438.useState(), [h, p] = Chunk647438.useState(), [j, E] = Chunk647438.useState([]), [I, R] = Chunk647438.useState([]), [w, Z] = Chunk647438.useState(true), [A, D] = Chunk647438.useState(10080), [L, U] = Chunk647438.useState([]), {
+    entitlements: M,
     deleteFractionalPremium: F,
     refreshEntitlementList: G
   } = (0, Chunk232867.m)();
   Chunk647438.useEffect(() => {
     G()
   }, [G]), Chunk647438.useEffect(() => {
-    M(U.filter(e => e.sourceType === g.kNB.REVERSE_TRIAL && null != e.endsAt && e.endsAt > new Date))
-  }, [U]), Chunk647438.useEffect(() => {
+    U(M.filter(e => e.sourceType === g.kNB.REVERSE_TRIAL && null != e.endsAt && e.endsAt > new Date))
+  }, [M]), Chunk647438.useEffect(() => {
     (0 === module.length || 0 === require.length || w) && C().then(e => {
       let n = Object.keys(e.trial).map(t => ({
           label: t,

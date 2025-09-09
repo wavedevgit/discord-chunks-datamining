@@ -1,7 +1,7 @@
 /** Chunk was on 39159 **/
 /** chunk id: 630746, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => x
+  default: () => p
 });
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
@@ -15,17 +15,17 @@ var Chunk951288 = require("./951288.js"),
 function u(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
-      a = Object.keys(t);
-    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+      r = Object.keys(t);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
       return Object.getOwnPropertyDescriptor(t, e).enumerable
-    }))), a.forEach(function(n) {
-      var a;
-      a = t[n], n in e ? Object.defineProperty(e, n, {
-        value: a,
+    }))), r.forEach(function(n) {
+      var r;
+      r = t[n], n in e ? Object.defineProperty(e, n, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[n] = a
+      }) : e[n] = r
     })
   }
   return e
@@ -35,8 +35,8 @@ function m(e, n) {
   return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      t.push.apply(t, a)
+      var r = Object.getOwnPropertySymbols(e);
+      t.push.apply(t, r)
     }
     return t
   })(Object(n)).forEach(function(t) {
@@ -44,55 +44,55 @@ function m(e, n) {
   }), e
 }
 
-function p(e) {
+function g(e) {
   let {
     step: n,
     setFooterNode: t
-  } = (0, o.aj)();
-  return (0, a.jsxs)(i.Y0X, m(u({
+  } = (0, s.aj)();
+  return (0, r.jsxs)(i.Y0X, m(u({
     className: d.modal
   }, e), {
     size: i.CgR.DYNAMIC,
     parentComponent: "PortkeySetupModal",
-    children: [(0, a.jsx)(i.hzk, {
+    children: [(0, r.jsx)(i.hzk, {
       className: d.modalContent,
       style: {
         width: c.M4
       },
       scrollbarType: "none",
-      children: (0, a.jsx)("div", {
+      children: (0, r.jsx)("div", {
         style: {
           padding: c.hK
         },
-        children: (0, a.jsxs)(i.MyZ, {
+        children: (0, r.jsxs)(i.MyZ, {
           width: c.Ne,
           activeSlide: n,
-          children: [(0, a.jsx)(i.Mi4, {
+          children: [(0, r.jsx)(i.Mi4, {
             id: c.Vb.SELECT_GAME,
-            children: (0, a.jsx)(l.Z, {})
-          }, c.Vb.SELECT_GAME), (0, a.jsx)(i.Mi4, {
+            children: (0, r.jsx)(l.Z, {})
+          }, c.Vb.SELECT_GAME), (0, r.jsx)(i.Mi4, {
             id: c.Vb.SERVER_SETTINGS,
-            children: (0, a.jsx)(s.Z, {})
+            children: (0, r.jsx)(o.Z, {})
           }, c.Vb.SERVER_SETTINGS)]
         })
       })
-    }), (0, a.jsx)("div", {
+    }), (0, r.jsx)("div", {
       ref: e => t(e)
-    }), (0, a.jsx)(i.olH, {
+    }), (0, r.jsx)(i.olH, {
       onClick: e.onClose,
       className: d.closeButton
     })]
   }))
 }
 
-function x(e) {
+function p(e) {
   let {
     analyticsLocations: n
-  } = (0, r.ZP)();
-  return (0, a.jsx)(r.Gt, {
+  } = (0, a.ZP)();
+  return (0, r.jsx)(a.Gt, {
     value: n,
-    children: (0, a.jsx)(o.KO, m(u({}, e), {
-      children: (0, a.jsx)(p, u({}, e))
+    children: (0, r.jsx)(s.KO, m(u({}, e), {
+      children: (0, r.jsx)(g, u({}, e))
     }))
   })
 }

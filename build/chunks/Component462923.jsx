@@ -23,13 +23,13 @@ function y(e) {
   let {
     guildId: t,
     instance: n
-  } = e, y = (0, s.e7)([d.Z], () => d.Z.getState()), j = a.useCallback(() => {
+  } = e, y = (0, a.e7)([d.Z], () => d.Z.getState()), j = s.useCallback(() => {
     y ? (0, p.Z)(n) : (0, b.Z)({
       onAccept: () => {
         (0, p.Z)(n)
       }
     })
-  }, [n, y]), x = a.useCallback(() => {
+  }, [n, y]), x = s.useCallback(() => {
     (0, c.JG)(n.serverIP), (0, i.showToast)((0, i.createToast)(f.intl.string(f.t["+5kSoa"]), i.ToastType.SUCCESS))
   }, [n.serverIP]), P = (0, u.Z)(t);
   return (0, r.jsxs)("div", {

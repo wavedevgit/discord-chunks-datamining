@@ -38,7 +38,7 @@ function b() {
     A = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == w ? true : w.skuId)),
     D = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.fontSize),
     L = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.messageGroupSpacing),
-    M = Chunk695346.YC.useSetting();
+    U = Chunk695346.YC.useSetting();
   return (0, Chunk176038.ub)(), (0, Chunk951288.jsxs)("div", {
     className: Chunk685960.container,
     children: [(0, Chunk951288.jsxs)("div", {
@@ -88,7 +88,7 @@ function b() {
         children: ["Message Spacing: ", L]
       }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
-        children: ["UI Density: ", M, " (", function(e) {
+        children: ["UI Density: ", U, " (", function(e) {
           switch (e) {
             case l.Pi.COMPACT:
               return "Compact";
@@ -101,7 +101,7 @@ function b() {
             default:
               return "Unknown"
           }
-        }(M), ")"]
+        }(U), ")"]
       })]
     })]
   })

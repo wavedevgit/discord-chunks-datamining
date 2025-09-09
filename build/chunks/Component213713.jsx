@@ -123,14 +123,14 @@ function A() {
       location: "DevToolsContentInventory",
       source: Chunk810568.m1.DevTools
     }),
-    M = Object.entries(null != (t = Chunk433517.K.get("GameProfileModal")) ? exports : {}).filter(e => {
+    U = Object.entries(null != (t = Chunk433517.K.get("GameProfileModal")) ? exports : {}).filter(e => {
       let [t, n] = e;
       return n
     }).map(e => {
       let [t] = e;
       return t
     }),
-    U = (0, Chunk835473.Z)(M).filter(Chunk823379.lm),
+    M = (0, Chunk835473.Z)(U).filter(Chunk823379.lm),
     F = (0, Chunk442837.e7)([Chunk550532.Z], () => Chunk550532.Z.getFakeGameToShow());
   return (0, Chunk951288.jsx)("div", {
     className: Chunk451429.panel,
@@ -215,7 +215,7 @@ function A() {
           error: Chunk755721.length > 0 && null == L ? "No game profile for ".concat(null != A ? A : Chunk755721 + " - try by id", ".") : true,
           successMessage: null != L ? "Game profile found" : true
         }), (0, Chunk951288.jsx)("ul", {
-          children: U.map(e => (0, a.jsx)("li", {
+          children: M.map(e => (0, a.jsx)("li", {
             children: (0, a.jsx)(D, {
               application: e
             })

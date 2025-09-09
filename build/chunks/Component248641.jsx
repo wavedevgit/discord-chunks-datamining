@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -26,10 +26,10 @@ var Chunk951288 = require("./951288.js"),
 function j(e) {
   let {
     guildId: t
-  } = e, n = (0, s.e7)([m.Z], () => m.Z.getStateForGuild(t)), i = o.useMemo(() => {
+  } = e, n = (0, a.e7)([m.Z], () => m.Z.getStateForGuild(t)), i = o.useMemo(() => {
     if ((null == n ? true : n.instances) != null && 0 !== Object.keys(n.instances).length) return {
       type: "active",
-      statusText: x.intl.string(g.default.FFLkm5)
+      statusText: _.intl.string(g.default.FFLkm5)
     }
   }, [null == n ? true : n.instances]), j = (0, p.d)((null == i ? true : i.type) === "active"), P = o.useMemo(() => {
     if ((null == n ? true : n.catalog) == null) return 0;
@@ -37,7 +37,7 @@ function j(e) {
     return 0 === e.length ? 0 : Math.min(...e.map(e => e.baseCost))
   }, [null == n ? true : n.catalog]);
   return null == n ? null : (0, r.jsxs)(d.aB, {
-    label: x.intl.string(v.default["fjt/vr"]),
+    label: _.intl.string(v.default["fjt/vr"]),
     badge: "new",
     isActive: (null == i ? true : i.type) === "active",
     onClick: () => (0, f.Z)({
@@ -45,33 +45,33 @@ function j(e) {
       analyticsLocation: u.Z.GUILD_POWERUPS_OVERVIEW
     }),
     children: [(0, r.jsxs)("div", {
-      className: h.imageContainer,
+      className: b.imageContainer,
       children: [(0, r.jsx)("img", {
-        className: l()(b.background, _.image, h.image),
+        className: s()(h.background, x.image, b.image),
         src: C.Z,
         alt: ""
       }), (0, r.jsx)("div", {
-        className: l()(_.image, h.gradient)
+        className: s()(x.image, b.gradient)
       })]
     }), (0, r.jsx)(d.Q9, {
-      title: x.intl.string(v.default["fjt/vr"]),
+      title: _.intl.string(v.default["fjt/vr"]),
       textColor: j,
       footer: (0, r.jsx)(d.uf, {
         cost: P,
         costDecorator: "+",
         status: i
       }),
-      children: (0, r.jsx)(a.xv, {
-        className: _.description,
+      children: (0, r.jsx)(l.xv, {
+        className: x.description,
         color: j,
         variant: "text-sm/medium",
-        children: x.intl.string(v.default.P7VSCg)
+        children: _.intl.string(v.default.P7VSCg)
       })
     }), (0, r.jsx)(d.N4, {
       children: (0, r.jsx)(c.zxk, {
         variant: "primary",
         fullWidth: true,
-        text: x.intl.string(v.default.MbdLuL),
+        text: _.intl.string(v.default.MbdLuL),
         onClick: e => {
           e.stopPropagation(), (0, f.Z)({
             guildId: t,

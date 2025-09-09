@@ -30,32 +30,32 @@ function b(e) {
   let {
     guildId: t,
     instance: n
-  } = e, l = a.useRef(null);
-  return (0, r.jsx)(s.yRy, {
+  } = e, l = s.useRef(null);
+  return (0, r.jsx)(a.yRy, {
     targetElementRef: l,
     align: "top",
     position: "right",
     disablePointerEvents: false,
     renderPopout: e => {
       let {
-        closePopout: a
+        closePopout: s
       } = e;
-      return (0, r.jsx)(s.v2r, {
+      return (0, r.jsx)(a.v2r, {
         navId: "portkey-popout-context-menu",
         onClose: () => {
-          (0, i.Zy)(), a()
+          (0, i.Zy)(), s()
         },
         "aria-label": d.intl.string(u.default.xCq1DA),
         onSelect: true,
-        children: (0, r.jsxs)(s.kSQ, {
-          children: [(0, r.jsx)(s.sNh, {
+        children: (0, r.jsxs)(a.kSQ, {
+          children: [(0, r.jsx)(a.sNh, {
             id: "get-support",
-            icon: s.kBi,
+            icon: a.kBi,
             label: d.intl.string(u.default["TciV8/"]),
             action: () => {}
-          }), (0, r.jsx)(s.sNh, {
+          }), (0, r.jsx)(a.sNh, {
             id: "settings",
-            icon: s.ewm,
+            icon: a.ewm,
             label: d.intl.string(u.default.NUTl4u),
             action: () => {
               (0, c.Z)({
@@ -71,7 +71,7 @@ function b(e) {
     },
     children: e => {
       var t, n;
-      return (0, r.jsx)(s.P3F, (t = function(e) {
+      return (0, r.jsx)(a.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -93,7 +93,7 @@ function b(e) {
         className: m.clickable
       }, e), n = n = {
         innerRef: l,
-        children: (0, r.jsx)(s.xhG, {
+        children: (0, r.jsx)(a.xhG, {
           color: "currentColor",
           size: "sm"
         })

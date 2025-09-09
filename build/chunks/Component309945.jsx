@@ -20,30 +20,30 @@ function g(e) {
   let {
     guildId: t,
     powerups: n
-  } = e, g = (0, s.e7)([d.Z], () => {
+  } = e, g = (0, a.e7)([d.Z], () => {
     var e, n;
     return null != (n = null == (e = d.Z.getStateForGuild(t)) ? true : e.appliedBoosts) ? n : 0
-  }), v = (0, s.e7)([u.Z], () => u.Z.getAppliedGuildBoostsForGuild(t), [t]), x = g - o.useMemo(() => {
+  }), v = (0, a.e7)([u.Z], () => u.Z.getAppliedGuildBoostsForGuild(t), [t]), _ = g - o.useMemo(() => {
     var e, t, n;
     return null != (n = null == v || null == (t = v.filter) || null == (e = t.call(v, e => !e.ended && null == e.endsAt)) ? true : e.length) ? n : 0
   }, [v]);
-  if (x <= 0) return null;
-  let _ = n.some(e => e.skuId === i.A$);
+  if (_ <= 0) return null;
+  let x = n.some(e => e.skuId === i.A$);
   return (0, r.jsxs)("div", {
     className: f.container,
-    children: [(0, r.jsx)(l.Mgn, {
+    children: [(0, r.jsx)(s.Mgn, {
       color: c.Z.colors.TEXT_FEEDBACK_WARNING,
       className: f.icon
-    }), (0, r.jsx)(a.xv, {
+    }), (0, r.jsx)(l.xv, {
       variant: "text-md/semibold",
       color: "text-feedback-warning",
       children: m.intl.string(p.default.n5hQhY)
-    }), (0, r.jsxs)(a.xv, {
+    }), (0, r.jsxs)(l.xv, {
       variant: "text-sm/medium",
       children: [m.intl.formatToPlainString(p.default.iAaAiI, {
-        boostCount: x,
+        boostCount: _,
         perksString: n.map(e => e.title).join(", ")
-      }), _ && (0, r.jsx)(a.xv, {
+      }), x && (0, r.jsx)(l.xv, {
         variant: "text-sm/medium",
         color: "text-feedback-warning",
         children: m.intl.string(p.default.Sfr0Jy)

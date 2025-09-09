@@ -67,7 +67,7 @@ function S() {
 
 function A() {
   let e = S();
-  return module === I || (I = module, (0, Chunk49214.Z)(I), true)
+  return module !== I && (I = module, (0, Chunk49214.Z)(I), true)
 }
 class C extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
@@ -81,7 +81,7 @@ class C extends(r = Chunk442837.ZP.PersistedStore) {
     }
   }
   get theme() {
-    return S()
+    return I
   }
   get systemTheme() {
     return v

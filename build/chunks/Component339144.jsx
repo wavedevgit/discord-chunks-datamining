@@ -30,7 +30,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk258628 = require("./258628.js");
 
 function P(e, t, n) {
-  return null != e && (null != n ? n.applicationId === e.id : null != t && t.application_id === e.id && t.type === C.IIU.PLAYING && (0, d.Z)(t, C.xjy.JOIN))
+  if (null == e) returnfalse;
+  if (null != n) return n.applicationId === e.id;
+  if (null != t) {
+    var r;
+    return (t.application_id === e.id || (null == (r = e.linkedGames) ? true : r.some(e => e.id === t.application_id))) && t.type === C.IIU.PLAYING && (0, d.Z)(t, C.xjy.JOIN)
+  }
+  returnfalse
 }
 let I = Chunk647438.memo(function(e) {
   let t, l, d, I, {

@@ -186,7 +186,7 @@ function eu(e) {
       id: "messaging",
       name: "Messaging",
       group: el.v0.USERS,
-      render: () => (0, a.jsx)(U.Z, {})
+      render: () => (0, a.jsx)(M.Z, {})
     }), e.push({
       id: "reporting",
       name: "Reporting",
@@ -208,7 +208,7 @@ function eu(e) {
       id: "layers",
       name: "Layers",
       group: el.v0.UI,
-      render: () => (0, a.jsx)(M.Z, {})
+      render: () => (0, a.jsx)(U.Z, {})
     }), e.push({
       id: "affinity",
       name: "Affinity",

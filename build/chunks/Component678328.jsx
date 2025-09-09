@@ -1,7 +1,7 @@
 /** Chunk was on 39159 **/
 /** chunk id: 678328, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,18 +18,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk782991 = require("./782991.js");
 
-function j() {
+function b() {
   let {
     portkeyGames: e,
     instances: n,
     setPortkeyInstance: t,
-    setCurrentGame: r,
-    onNext: j
-  } = (0, Chunk183369.aj)(), b = Chunk647438.useCallback(e => {
-    r(e), j()
-  }, [Chunk120356, j]), f = Chunk647438.useCallback(e => {
-    t(e), j()
-  }, [require, j]), h = exports.length >= Chunk473682.zI, _ = exports.length > 0;
+    setCurrentGame: a,
+    onNext: b
+  } = (0, Chunk183369.aj)(), x = Chunk647438.useCallback(e => {
+    a(e), b()
+  }, [Chunk120356, b]), j = Chunk647438.useCallback(e => {
+    t(e), b()
+  }, [require, b]), h = exports.length >= Chunk473682.zI, _ = exports.length > 0;
   return 0 === Object.values(module).length ? (0, Chunk951288.jsx)("div", {
     className: Chunk782991.loadingContainer,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {
@@ -52,9 +52,9 @@ function j() {
         children: Chunk388032.intl.string(Chunk401561.default.wzC4ws)
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk782991.gameInstanceContainer,
-        children: exports.map((e, n) => (0, a.jsx)(c.Z, {
+        children: exports.map((e, n) => (0, r.jsx)(c.Z, {
           gameInstance: e,
-          onClick: f
+          onClick: j
         }, "instance-".concat(e.id, "-").concat(n)))
       }), h && (0, Chunk951288.jsx)(Chunk494620.Z, {
         className: Chunk782991.maxInstancesWarning,
@@ -74,10 +74,10 @@ function j() {
         children: Chunk388032.intl.string(Chunk401561.default.l4UdiY)
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk782991.gameContainer,
-        children: Object.values(module).map((e, n) => (0, a.jsx)(d.Z, {
+        children: Object.values(module).map((e, n) => (0, r.jsx)(d.Z, {
           game: e,
           disabled: h,
-          onClick: b
+          onClick: x
         }, "game-".concat(e.id, "-").concat(n)))
       })]
     }), (0, Chunk951288.jsxs)(Chunk422663.ok, {
