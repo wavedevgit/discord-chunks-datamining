@@ -72,7 +72,7 @@ class E extends Chunk647438.Component {
       } = this.props,
       {
         sending: i,
-        invited: a,
+        invited: s,
         hovered: o
       } = this.state;
     return e = Chunk481060 ? (0, Chunk951288.jsx)(Chunk755721.zx, {
@@ -115,12 +115,15 @@ class E extends Chunk647438.Component {
       this.setState({
         hovered: false
       })
-    }), N(this, "getSuggestedProps", () => {
-      var e;
+    }), N(this, "getInviteAnalyticsMetadata", () => {
       let {
-        row: t
+        row: e,
+        source: t
       } = this.props;
-      return null != (e = null != t ? h.Z.getSelectedInviteMetadata(t) : null) ? e : null
+      if (null != e) return {
+        suggestionData: h.Z.getSelectedInviteMetadata(e),
+        source: t
+      }
     }), N(this, "handleClickInvite", () => {
       let {
         user: e,
@@ -135,7 +138,7 @@ class E extends Chunk647438.Component {
         channel: t,
         inviteKey: n,
         location: l,
-        suggested: this.getSuggestedProps()
+        inviteAnalyticsMetadata: this.getInviteAnalyticsMetadata()
       }, e => {
         this.setState({
           sending: false,
@@ -148,7 +151,7 @@ class E extends Chunk647438.Component {
         user: e,
         inviteKey: n,
         location: l,
-        suggested: this.getSuggestedProps()
+        inviteAnalyticsMetadata: this.getInviteAnalyticsMetadata()
       }, e => {
         this.setState({
           sending: false,

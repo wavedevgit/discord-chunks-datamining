@@ -19,7 +19,7 @@ class g extends Chunk651655.Z {
   drain(e, t) {
     let {
       location: n,
-      suggested: l
+      inviteAnalyticsMetadata: l
     } = e;
     switch (e.type) {
       case 0:
@@ -28,7 +28,7 @@ class g extends Chunk651655.Z {
         break;
       case 1:
         i.Z.ensurePrivateChannel(e.user.id).then(i => {
-          let r = a.Z.getChannel(i);
+          let r = s.Z.getChannel(i);
           null != r && this._sendInvite(r, e.inviteKey, n, l, t)
         }, () => t(null, false))
     }

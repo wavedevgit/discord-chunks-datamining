@@ -592,12 +592,13 @@ async function em(e) {
     activityChannelId: t,
     invitedChannelId: n,
     applicationId: r,
-    location: i
-  } = e, a = await d.ZP.createInvite(t, {
+    location: i,
+    inviteAnalyticsMetadata: a
+  } = e, o = await d.ZP.createInvite(t, {
     target_type: en.Iq.EMBEDDED_APPLICATION,
     target_application_id: r
   }, i);
-  null != D.Z.getChannel(n) && f.Z.sendInvite(n, a.code, i, null)
+  null != D.Z.getChannel(n) && f.Z.sendInvite(n, o.code, i, a)
 }
 async function eg(e) {
   let {
@@ -605,15 +606,16 @@ async function eg(e) {
     applicationId: n,
     userId: r,
     location: i,
-    prefixedContent: a
-  } = e, o = await d.ZP.createInvite(t, {
+    inviteAnalyticsMetadata: a,
+    prefixedContent: o
+  } = e, s = await d.ZP.createInvite(t, {
     target_type: en.Iq.EMBEDDED_APPLICATION,
     target_application_id: n
   }, i);
   await c.Z.ensurePrivateChannel(r).then(e => {
     let t, n = D.Z.getChannel(e);
     if (null == n) throw Error("Private channel not found");
-    null != a && (t = C.ZP.parse(n, a).content), f.Z.sendInvite(e, o.code, i, null, t)
+    null != o && (t = C.ZP.parse(n, o).content), f.Z.sendInvite(e, s.code, i, a, t)
   })
 }
 

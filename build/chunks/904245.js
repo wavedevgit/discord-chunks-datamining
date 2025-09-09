@@ -142,7 +142,7 @@ function ej(e) {
     channelId: n,
     messageId: r,
     location: a,
-    suggested: o = null,
+    inviteAnalyticsMetadata: o,
     overrideProperties: s = {}
   } = e, l = ei.default.getId();
   (0, y.ZP)(t).forEach(e => {
@@ -156,7 +156,7 @@ function ej(e) {
       channelId: n,
       messageId: r,
       location: a,
-      suggested: o,
+      inviteAnalyticsMetadata: o,
       overrideProperties: s
     });
     else if (t === b.g.TEMPLATE) {
@@ -206,7 +206,7 @@ function eM(e) {
     channelId: i,
     messageId: a,
     location: o,
-    suggested: s = null,
+    inviteAnalyticsMetadata: s,
     overrideProperties: l = {}
   } = e, c = ei.default.getId(), u = eo.Z.getInvite(r), f = (0, P.fU)(r), _ = null != u && (0, w.P1)(u), p = null == u || null == (t = u.target_application) ? true : t.id;
   null != p && _ && (0, g.z$)(p, ev.U.ACTIVITY_INVITE, c);
@@ -225,7 +225,7 @@ function eM(e) {
         t.application_id = null != n ? n.id : null
       }
     }
-    null != s && (t.is_suggested = s.isAffinitySuggestion, t.row_num = s.rowNum, t.num_total = s.numTotal, t.num_affinity_connections = s.numAffinityConnections, t.is_filtered = s.isFiltered), t = eC(eR(eC({}, t), {
+    null != s && (null != s.suggestionData && (t.is_suggested = s.suggestionData.isAffinitySuggestion, t.row_num = s.suggestionData.rowNum, t.num_total = s.suggestionData.numTotal, t.num_affinity_connections = s.suggestionData.numAffinityConnections, t.is_filtered = s.suggestionData.isFiltered), t.source = s.source), t = eC(eR(eC({}, t), {
       location: o,
       invite_type: e,
       invite_code: f.baseCode,
@@ -784,7 +784,7 @@ let eB = {
         invalidEmojis: []
       }, {
         location: n,
-        suggestedInvite: null != r ? r : true
+        inviteAnalyticsMetadata: r
       })
     },
     sendActivityBookmark: (e, t, n, r) => eZ._sendMessage(e, {
@@ -794,7 +794,7 @@ let eB = {
       invalidEmojis: []
     }, {
       location: n,
-      suggestedInvite: null != r ? r : true
+      inviteAnalyticsMetadata: r
     }),
     sendStickers(e, t) {
       let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "",
@@ -874,7 +874,7 @@ let eB = {
         {
           activityAction: h,
           location: m,
-          suggestedInvite: g,
+          inviteAnalyticsMetadata: g,
           stickerIds: E,
           confettiPotionData: b,
           messageReference: y,
@@ -1028,7 +1028,7 @@ let eB = {
               channelId: e,
               messageId: o.body.id,
               location: null != m ? m : "chat_input",
-              suggested: g
+              inviteAnalyticsMetadata: g
             }), ek(d, e, o.body.id, null != m ? m : "chat_input", !!n.isGiftLinkSentOnBehalfOfUser), null != l && s.Z.dispatch({
               type: "UPLOAD_COMPLETE",
               channelId: e,

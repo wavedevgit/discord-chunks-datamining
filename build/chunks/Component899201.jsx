@@ -96,12 +96,12 @@ function B(e) {
   }, [l, Y]);
   let ee = (0, d.Wu)([C.Z, j.Z], () => C.Z.getInviteSuggestionRows().filter(e => e.type === U.bm.FRIEND || e.type === U.bm.DM || j.Z.can(G.Plq.ATTACH_FILES, e.item)));
   a.useEffect(() => {
-    (0, f.x)({
+    (0, g.x)({
       omitUserIds: new Set,
       applicationId: r,
       inviteTargetType: q.Iq.EMBEDDED_APPLICATION
     })
-  }, [r]), a.useEffect(() => (0, f.C)(D), [D]), a.useEffect(() => {
+  }, [r]), a.useEffect(() => (0, g.C)(D), [D]), a.useEffect(() => {
     let e;
     return $ && (e = setTimeout(() => {
       J(false)
@@ -128,7 +128,7 @@ function B(e) {
         switch (i.type) {
           case U.bm.DM:
           case U.bm.FRIEND:
-            a = await g.Z.ensurePrivateChannel(i.id), e++;
+            a = await f.Z.ensurePrivateChannel(i.id), e++;
             break;
           case U.bm.GROUP_DM:
             a = i.id, t++;

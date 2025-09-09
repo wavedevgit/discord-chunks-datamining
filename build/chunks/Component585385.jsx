@@ -23,10 +23,10 @@ let h = e => {
     onGenerateNewLink: m,
     onToggleTemporary: p,
     onSelectMaxAge: v,
-    onSelectMaxUses: x,
-    isGuestInviteCreationToggleEnabled: I,
+    onSelectMaxUses: I,
+    isGuestInviteCreationToggleEnabled: x,
     onSetInviteFlags: f
-  } = e, j = (0, a.ZP)(), {
+  } = e, j = (0, s.ZP)(), {
     maxAgeOptions: N,
     maxAge: _,
     maxUses: E,
@@ -34,15 +34,15 @@ let h = e => {
     flags: b
   } = i;
   return (0, l.jsxs)(l.Fragment, {
-    children: [(0, l.jsxs)(s.xBx, {
+    children: [(0, l.jsxs)(a.xBx, {
       children: [(0, l.jsx)("div", {
         className: c.closeButton,
-        children: (0, l.jsx)(s.olH, {
+        children: (0, l.jsx)(a.olH, {
           onClick: t
         })
       }), (0, l.jsx)("div", {
         className: c.headerContainer,
-        children: (0, l.jsx)(s.vwX, {
+        children: (0, l.jsx)(a.vwX, {
           id: n,
           tag: "h2",
           className: r()(g.marginReset, c.headerCloseButtonSpacing, c.headerText),
@@ -57,12 +57,12 @@ let h = e => {
       temporary: S,
       onToggleTemporary: p,
       onSelectMaxAge: v,
-      onSelectMaxUses: x,
+      onSelectMaxUses: I,
       onGenerateNewLink: m,
-      isGuestInviteCreationToggleEnabled: I,
+      isGuestInviteCreationToggleEnabled: x,
       onSetInviteFlags: f,
       inviteFlags: b
-    }), (0, l.jsx)(s.mzw, {
+    }), (0, l.jsx)(a.mzw, {
       className: c.settingsFooter,
       children: (0, l.jsx)(u.Z, {
         theme: j,

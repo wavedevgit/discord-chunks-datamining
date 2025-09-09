@@ -1,6 +1,6 @@
 /** Chunk was on 7654 **/
 /** chunk id: 751771, original params: e,t,n (module,exports,require) **/
-let l, i, r, s, a, o;
+let l, i, r, a, s, o;
 require.d(exports, {
   Z: () => C
 }), require("./388685.js"), require("./642613.js");
@@ -31,7 +31,7 @@ function O(e) {
     l = (0, v.rh)(_, n);
   for (let e of (null == l || f.Z.isBlockedOrIgnored(l.id) || t.add(l.id), m.Z.getUserAffinities())) t.add(e.otherUserId);
   let i = new Set;
-  return o === N.Iq.EMBEDDED_APPLICATION && h.Z.getChannelHistory().map(e => x.Z.getChannel(e)).filter(p.lm).filter(e => e.type === j.d4z.GUILD_TEXT).filter(e => I.Z.can(j.Plq.SEND_MESSAGES, e)).slice(0, 3).forEach(e => i.add(e.id)), (0, v.an)({
+  return o === N.Iq.EMBEDDED_APPLICATION && h.Z.getChannelHistory().map(e => I.Z.getChannel(e)).filter(p.lm).filter(e => e.type === j.d4z.GUILD_TEXT).filter(e => x.Z.can(j.Plq.SEND_MESSAGES, e)).slice(0, 3).forEach(e => i.add(e.id)), (0, v.an)({
     query: e,
     omitUserIds: _,
     suggestedUserIds: t,
@@ -42,14 +42,14 @@ function O(e) {
   })
 }
 
-function T(e) {
+function y(e) {
   E = e, S = new Map, e.forEach((e, t) => {
     S.set(e, {
       index: t
     })
   })
 }
-class y extends(u = Chunk442837.ZP.Store) {
+class T extends(u = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk699516.Z, Chunk752048.Z)
   }
@@ -65,21 +65,21 @@ class y extends(u = Chunk442837.ZP.Store) {
   getSelectedInviteMetadata(e) {
     let t = S.get(e),
       n = m.Z.getUserAffinities().map(e => e.otherUserId);
-    return null != t ? {
+    if (null != t) return {
       rowNum: t.index,
       isAffinitySuggestion: e.isSuggested,
       numTotal: E.length,
       numAffinityConnections: n.length,
       isFiltered: i
-    } : null
+    }
   }
-}(d = "displayName") in y ? Object.defineProperty(y, d, {
+}(d = "displayName") in T ? Object.defineProperty(T, d, {
   value: "InviteSuggestionsStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : y[d] = "InviteSuggestionsStore";
-let C = new y(Chunk570140.Z, {
+}) : T[d] = "InviteSuggestionsStore";
+let C = new T(Chunk570140.Z, {
   LOAD_INVITE_SUGGESTIONS: function(e) {
     let {
       omitUserIds: t,
@@ -88,16 +88,16 @@ let C = new y(Chunk570140.Z, {
       applicationId: d,
       inviteTargetType: c
     } = e;
-    r = null != u ? n : null, s = u, a = d, o = c, _ = new Set([...t, ...f.Z.getBlockedOrIgnoredIDs(), ...(0, v.Sz)({
-      channel: s,
-      applicationId: a,
+    r = null != u ? n : null, a = u, s = d, o = c, _ = new Set([...t, ...f.Z.getBlockedOrIgnoredIDs(), ...(0, v.Sz)({
+      channel: a,
+      applicationId: s,
       inviteTargetType: c
     })]), i = false;
     let {
       rows: g,
       counts: h
     } = O("");
-    T(g), b = h, l = E.length
+    y(g), b = h, l = E.length
   },
   INVITE_SUGGESTIONS_SEARCH: function(e) {
     let {
@@ -107,6 +107,6 @@ let C = new y(Chunk570140.Z, {
     let {
       rows: n
     } = O(t);
-    n.sort((e, t) => null != e.score && null != t.score ? e.score - t.score : 0), T(n)
+    n.sort((e, t) => null != e.score && null != t.score ? e.score - t.score : 0), y(n)
   }
 })

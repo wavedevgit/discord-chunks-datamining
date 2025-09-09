@@ -33,10 +33,10 @@ function i(e, t) {
 }
 
 function r(e, t) {
-  var n, r, s, a, o, u, d;
+  var n, r, a, s, o, u, d;
   let c = i(l(i(l({
-    max_uses: null != (s = e.maxUses) ? s : null,
-    max_age: null != (a = e.maxAge) ? a : null,
+    max_uses: null != (a = e.maxUses) ? a : null,
+    max_age: null != (s = e.maxAge) ? s : null,
     temporary: null != (o = e.temporary) ? o : null
   }, (null == (n = e.targetUser) ? true : n.id) == null ? {} : {
     target_user_id: e.targetUser.id

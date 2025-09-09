@@ -1,7 +1,7 @@
 /** Chunk was on 7654 **/
 /** chunk id: 247272, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  C: () => s,
+  C: () => a,
   x: () => r
 }), require("./388685.js");
 var Chunk570140 = require("./570140.js"),
@@ -12,8 +12,8 @@ function r(e) {
     omitUserIds: t,
     guild: n,
     channel: r,
-    applicationId: s,
-    inviteTargetType: a
+    applicationId: a,
+    inviteTargetType: s
   } = e;
   return (0, i._)().then(() => {
     l.Z.dispatch({
@@ -21,13 +21,13 @@ function r(e) {
       omitUserIds: null != t ? t : new Set,
       guild: n,
       channel: r,
-      applicationId: s,
-      inviteTargetType: a
+      applicationId: a,
+      inviteTargetType: s
     })
   })
 }
 
-function s(e) {
+function a(e) {
   l.Z.dispatch({
     type: "INVITE_SUGGESTIONS_SEARCH",
     query: e

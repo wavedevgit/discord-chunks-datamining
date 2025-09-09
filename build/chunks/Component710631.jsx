@@ -66,7 +66,9 @@ let T = "max_uses",
 
 function C(e, t) {
   s.Z.ensurePrivateChannel(e).then(e => {
-    null != d.Z.getChannel(e) && c.Z.sendInvite(e, t, A, null)
+    null != d.Z.getChannel(e) && c.Z.sendInvite(e, t, A, {
+      source: E.t4x.GUILD_CONTEXT_MENU
+    })
   })
 }
 
