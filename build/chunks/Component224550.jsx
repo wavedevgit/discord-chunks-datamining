@@ -80,7 +80,7 @@ let g = (e, t, n, r) => {
         paidURL: f.EYA.PAID_TERMS
       });
       let e = "";
-      e = D === _.Vt.ORB_PROFILE_BADGE ? h.intl.string(h.t.APcKRk) : D === _.Vt.FRACTIONAL_PREMIUM ? h.intl.string(h.t.FhJ74u) : h.intl.string(h.t.jCRYDw), Array.isArray(U) ? U = [...U, " ".concat(e)] : U += " ".concat(e)
+      e = D === _.Vt.ORB_PROFILE_BADGE ? h.intl.string(h.t.APcKRk) : D === _.Vt.FRACTIONAL_PREMIUM ? h.intl.string(h.t.FhJ74u) : h.intl.string(h.t["Sxed/P"]), Array.isArray(U) ? U = [...U, " ".concat(e)] : U += " ".concat(e)
     } else if (I)
       if (null != s && (null == T ? true : T.subscriptionPeriodEnd) != null) U = h.intl.format(h.t["2VPTa2"], {
         subtotalRate: E
@@ -101,9 +101,9 @@ let g = (e, t, n, r) => {
           throw Error("Unexpected interval: ".concat(t))
       } else if (C === f.GZQ.ONE_TIME) switch (N) {
         case f.POd.COLLECTIBLES:
-          G = M, U = y ? h.intl.format(h.t.ofqyUl, {
+          G = M, U = y ? h.intl.format(h.t.Amdf8f, {
             paidURL: f.EYA.PAID_TERMS
-          }) : h.intl.format(h.t.G3l0s7, {
+          }) : h.intl.format(h.t["40vM4u"], {
             paidURL: f.EYA.PAID_TERMS
           });
           break;
