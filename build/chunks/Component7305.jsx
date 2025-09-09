@@ -69,17 +69,17 @@ function R(e) {
     subscriptionTier: p,
     onClose: m,
     trialId: L,
-    trialFooterMessageOverride: g,
-    reviewWarningMessage: b,
-    openInvoiceId: y,
+    trialFooterMessageOverride: b,
+    reviewWarningMessage: g,
+    openInvoiceId: S,
     onSubscriptionConfirmation: v,
     renderPurchaseConfirmation: E,
     postSuccessGuild: O,
     followupSKUInfo: P,
-    renderHeader: w,
-    applicationId: k,
-    guildId: M,
-    referralTrialOfferId: A,
+    renderHeader: M,
+    applicationId: w,
+    guildId: k,
+    referralTrialOfferId: T,
     skuId: Z,
     returnRef: N,
     skipConfirm: B = false,
@@ -97,7 +97,7 @@ function R(e) {
     giftMessage: G,
     giftRecipient: D
   } = (0, _.wD)(), K = F && (0, x.pO)(D) && H === f.h8.PLAN_SELECT;
-  return (0, r.jsx)(S.Z, {
+  return (0, r.jsx)(y.Z, {
     isConfirmationStep: H === f.h8.CONFIRM,
     children: (0, r.jsx)(j.PaymentModal, {
       analyticsLocations: U,
@@ -113,18 +113,18 @@ function R(e) {
       onClose: m,
       trialId: L,
       isGift: F,
-      trialFooterMessageOverride: g,
-      reviewWarningMessage: b,
-      planGroup: T.Y1,
-      openInvoiceId: y,
+      trialFooterMessageOverride: b,
+      reviewWarningMessage: g,
+      planGroup: A.Y1,
+      openInvoiceId: S,
       onSubscriptionConfirmation: v,
       renderPurchaseConfirmation: E,
       postSuccessGuild: O,
       followupSKUInfo: P,
-      renderHeader: w,
-      applicationId: k,
-      guildId: M,
-      referralTrialOfferId: A,
+      renderHeader: M,
+      applicationId: w,
+      guildId: k,
+      referralTrialOfferId: T,
       skuId: Z,
       shakeWhilePurchasing: true,
       isDynamicModal: K,
@@ -148,7 +148,7 @@ function U(e) {
   } = (0, h.JL)(), {
     isGift: d,
     claimableRewards: u
-  } = (0, _.wD)(), p = (0, M.Z)({
+  } = (0, _.wD)(), p = (0, k.Z)({
     isGift: d,
     skuId: o,
     referralTrialOfferId: a
@@ -178,7 +178,7 @@ let H = [{
   renderStep: e => (0, r.jsx)(j.I, N({}, e))
 }, {
   key: Chunk409813.h8.SKU_SELECT,
-  renderStep: e => (0, r.jsx)(w.q, N({}, e)),
+  renderStep: e => (0, r.jsx)(M.q, N({}, e)),
   options: {
     renderHeader: false,
     hideSlider: true,
@@ -186,7 +186,7 @@ let H = [{
   }
 }, {
   key: Chunk409813.h8.WHAT_YOU_LOSE,
-  renderStep: e => (0, r.jsx)(k.x, N({}, e)),
+  renderStep: e => (0, r.jsx)(w.x, N({}, e)),
   options: {
     renderHeader: false,
     hideSlider: true
@@ -196,7 +196,7 @@ let H = [{
   renderStep: e => (0, r.jsx)(P.x, N({}, e)),
   options: {
     renderHeader: true,
-    useBreadcrumbLabel: e => (0, O.Fv)(e) ? null : A.intl.string(A.t["r+SebW"]),
+    useBreadcrumbLabel: e => (0, O.Fv)(e) ? null : T.intl.string(T.t["r+SebW"]),
     sectionHeaderText: () => Chunk388032.intl.string(Chunk388032.t.UKbp1N)
   }
 }, {
@@ -204,7 +204,7 @@ let H = [{
   renderStep: e => (0, r.jsx)(U, N({}, e)),
   options: {
     renderHeader: true,
-    useBreadcrumbLabel: e => (0, O.Fv)(e) ? null : A.intl.string(A.t.Sb6wIy)
+    useBreadcrumbLabel: e => (0, O.Fv)(e) ? null : T.intl.string(T.t.Sb6wIy)
   }
 }, {
   key: Chunk409813.h8.AWAITING_PURCHASE_TOKEN_AUTH,
@@ -214,10 +214,10 @@ let H = [{
   renderStep: () => (0, Chunk951288.jsx)(Chunk793541.Z, {})
 }, {
   key: Chunk409813.h8.REVIEW,
-  renderStep: e => (0, r.jsx)(y.l, N({}, e)),
+  renderStep: e => (0, r.jsx)(S.l, N({}, e)),
   options: {
     renderHeader: true,
-    useBreadcrumbLabel: e => (0, O.Fv)(e) ? A.intl.string(A.t.UKbp1N) : A.intl.string(A.t.QBnNHh)
+    useBreadcrumbLabel: e => (0, O.Fv)(e) ? T.intl.string(T.t.UKbp1N) : T.intl.string(T.t.QBnNHh)
   }
 }, {
   key: Chunk409813.h8.CONFIRM,
@@ -233,7 +233,7 @@ let H = [{
 
 function F(e) {
   let t = (0, l.e7)([p.Z], () => p.Z.getPremiumTypeSubscription()),
-    n = (0, d.Vi)() ? T.Xh.PREMIUM_MONTH_TIER_2 : true,
+    n = (0, d.Vi)() ? A.Xh.PREMIUM_MONTH_TIER_2 : true,
     {
       analyticsLocations: i
     } = (0, C.ZP)(e.analyticsLocations, o.Z.PREMIUM_PAYMENT_MODAL),
@@ -246,25 +246,25 @@ function F(e) {
       giftStyle: f,
       isGift: j,
       loadId: L,
-      paymentModalBanner: g,
-      referralCode: b,
-      subscriptionTier: y
+      paymentModalBanner: b,
+      referralCode: g,
+      subscriptionTier: S
     } = e;
-  if (null != y && !Object.values(T.Si).includes(y)) throw Error("subscriptionTier must be a premium subscription");
+  if (null != S && !Object.values(A.Si).includes(S)) throw Error("subscriptionTier must be a premium subscription");
   return (0, r.jsx)(C.Gt, {
     value: i,
     children: (0, r.jsx)(h.PaymentContextProvider, {
       loadId: L,
       activeSubscription: null != e.subscription ? e.subscription : t,
       stepConfigs: H,
-      skuIDs: [...T.YQ],
+      skuIDs: [...A.YQ],
       isGift: j,
       defaultPlanId: null != n ? n : s,
-      referralCode: b,
+      referralCode: g,
       wasTier2PremiumBeforePurchase: e.wasTier2PremiumBeforePurchase,
       children: (0, r.jsx)(m.c1, {
         confirmationFooter: a,
-        paymentModalBanner: g,
+        paymentModalBanner: b,
         children: (0, r.jsx)(_.KB, {
           isGift: j,
           giftRecipient: null == x ? true : x,

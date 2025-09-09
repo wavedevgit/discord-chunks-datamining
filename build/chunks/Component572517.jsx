@@ -28,14 +28,14 @@ function x() {
   if (null == f || null == m) return null;
   let j = null == (e = f.getBackgroundImageUrl) ? true : module.call(f, _),
     L = (0, Chunk717401.Yr)(j),
-    g = null == (t = f.gradientConfig) ? true : exports.call(f, {
+    b = null == (t = f.gradientConfig) ? true : exports.call(f, {
       isDarkMode: _,
       isAndroid: false
     }),
-    b = (0, Chunk717401.Tl)(g);
+    g = (0, Chunk717401.Tl)(b);
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk432483.promotionalFooterBanner,
-    style: null != L ? L : b,
+    style: null != L ? L : g,
     children: [(0, Chunk951288.jsx)("div", {
       className: Chunk432483.avatar,
       children: (0, Chunk951288.jsx)(Chunk897942.Z, {

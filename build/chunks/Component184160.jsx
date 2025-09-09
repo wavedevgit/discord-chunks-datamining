@@ -29,18 +29,18 @@ function f(e) {
     setSelectedPlanId: j,
     startedPaymentFlowWithPaymentSourcesRef: L
   } = (0, u.JL)(), {
-    isGift: g
-  } = (0, c.wD)(), b = null != f ? (0, d.Af)(f) : null, y = null != b ? (0, d.gq)(b.planId) : null, S = null != b ? (0, d.Rd)(b.planId) : null, v = (0, x.Kp)({
+    isGift: b
+  } = (0, c.wD)(), g = null != f ? (0, d.Af)(f) : null, S = null != g ? (0, d.gq)(g.planId) : null, y = null != g ? (0, d.Rd)(g.planId) : null, v = (0, x.Kp)({
     isTrial: false,
-    isGift: g,
+    isGift: b,
     selectedSkuId: m,
     startedPaymentFlowWithPaymentSources: L.current
   });
-  return l()(null != S, "Expected premium type"), (0, r.jsx)(C.Z, {
-    premiumType: S,
+  return l()(null != y, "Expected premium type"), (0, r.jsx)(C.Z, {
+    premiumType: y,
     titleText: _.intl.string(_.t["7VcWW1"]),
     subtitleText: _.intl.format(_.t.Qk34Ii, {
-      subscriptionName: y
+      subscriptionName: S
     }),
     footer: (0, r.jsxs)("div", {
       className: h.whatYouLoseButtonContainer,
