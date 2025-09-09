@@ -6284,6 +6284,25 @@ let {
         opacity: 1
       }
     },
+    GRADIENT_PROGRESS_PILL_BACKGROUND: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "NEUTRAL_45",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "NEUTRAL_18",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "NEUTRAL_63",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "NEUTRAL_56",
+        opacity: 1
+      }
+    },
     HEADER_MUTED: {
       category: "text",
       [r.DARK]: {
