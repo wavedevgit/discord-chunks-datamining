@@ -52,11 +52,11 @@ let _ = Chunk647438.memo(function(e) {
     locked: t,
     pinned: n,
     showEmpty: p = true
-  } = e, y = (0, o.e7)([h.Z, c.Z], () => {
+  } = e, y = (0, o.e7)([f.Z, c.Z], () => {
     if (c.Z.isNotificationDisabled(a.OverlayNotificationDisabledSetting.TEXT_CHAT)) return O;
     let e = [],
       i = 0;
-    for (let r of h.Z.getNotifications()) {
+    for (let r of f.Z.getNotifications()) {
       if (i > 4) break;
       (!t || r.status !== m._1z.TIMED_OUT) && (e.push({
         index: i,
@@ -66,8 +66,8 @@ let _ = Chunk647438.memo(function(e) {
       }), i++)
     }
     return e
-  }, [t, n], u.E6), _ = r.useState(() => new f.AS(t))[0];
-  return (r.useLayoutEffect(() => _.updateState(y, t)), r.useLayoutEffect(() => (_.initialize((0, d.i)()), () => _.cleanUp()), [_]), 0 !== y.length || t) ? (0, i.jsx)(f.S4.Provider, {
+  }, [t, n], u.E6), _ = r.useState(() => new h.AS(t))[0];
+  return (r.useLayoutEffect(() => _.updateState(y, t)), r.useLayoutEffect(() => (_.initialize((0, d.i)()), () => _.cleanUp()), [_]), 0 !== y.length || t) ? (0, i.jsx)(h.S4.Provider, {
     value: _,
     children: (0, i.jsx)(l.W3x, {
       items: y,

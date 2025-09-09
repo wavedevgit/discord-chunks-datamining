@@ -1,7 +1,7 @@
 /** Chunk was on 46290 **/
 /** chunk id: 444982, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk239091 = require("./239091.js"),
@@ -11,6 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk926086 = require("./926086.jsx"),
   Chunk878939 = require("./878939.jsx"),
   Chunk761374 = require("./761374.jsx"),
+  Chunk68286 = require("./68286.js"),
   Chunk340101 = require("./340101.js"),
   Chunk273816 = require("./273816.jsx"),
   Chunk2923 = require("./2923.jsx"),
@@ -22,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function E(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -41,7 +42,7 @@ function E(e) {
   return e
 }
 
-function _(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,7 +54,7 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = {
+let x = {
   [Chunk981631.Odu.VIDEO]: {
     renderWidget(e) {
       let {
@@ -64,7 +65,7 @@ let I = {
         borderWidth: l,
         showEmpty: a
       } = e;
-      return (0, d.js)(t) ? (0, i.jsx)(h.Z, {
+      return (0, p.js)(t) ? (0, i.jsx)(m.Z, {
         id: t.id,
         locked: n,
         widget: t,
@@ -79,18 +80,18 @@ let I = {
       children: Chunk388032.intl.string(Chunk388032.t.UPvOiY)
     }),
     renderButtons: e => (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(g.ls, {
+      children: [(0, i.jsx)(y.ls, {
         onClick: t => {
-          (0, d.js)(e) && (0, r.jW)(t, async () => {
+          (0, p.js)(e) && (0, r.jW)(t, async () => {
             let {
               default: t
             } = await n.e("26775").then(n.bind(n, 740579));
-            return n => (0, i.jsx)(t, _(E({}, n), {
+            return n => (0, i.jsx)(t, S(_({}, n), {
               widget: e
             }))
           })
         }
-      }), (0, i.jsx)(g.RT, {
+      }), (0, i.jsx)(y.RT, {
         id: e.id,
         pinned: e.pinned
       })]
@@ -106,13 +107,13 @@ let I = {
         locked: o,
         showEmpty: l
       } = e;
-      return (0, d.Aw)(n) ? (0, i.jsx)(m.ZP, {
+      return (0, p.Aw)(n) ? (0, i.jsx)(g.ZP, {
         anchorLeft: r,
         id: n.id,
         locked: o,
         pinned: n.pinned,
-        widget: v.Odu.VOICE_V3,
-        maxDisplayedVoiceStates: null != (t = n.meta.voiceStatesMaxShown) ? t : O.At,
+        widget: b.Odu.VOICE_V3,
+        maxDisplayedVoiceStates: null != (t = n.meta.voiceStatesMaxShown) ? t : v.At,
         isPreviewingInGame: false,
         showEmpty: l
       }) : null
@@ -121,16 +122,16 @@ let I = {
       children: Chunk388032.intl.string(Chunk388032.t.nFv3GR)
     }),
     renderButtons: e => (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(g.ls, {
+      children: [(0, i.jsx)(y.ls, {
         onClick: e => {
           (0, r.jW)(e, async () => {
             let {
               default: e
             } = await n.e("32382").then(n.bind(n, 955280));
-            return t => (0, i.jsx)(e, E({}, t))
+            return t => (0, i.jsx)(e, _({}, t))
           })
         }
-      }), (0, i.jsx)(g.RT, {
+      }), (0, i.jsx)(y.RT, {
         id: e.id,
         pinned: e.pinned
       })]
@@ -152,16 +153,16 @@ let I = {
       children: "Click Zone Tester"
     }),
     renderButtons: e => (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(g.ls, {
+      children: [(0, i.jsx)(y.ls, {
         onClick: e => {
           (0, r.jW)(e, async () => {
             let {
               default: e
             } = await n.e("38813").then(n.bind(n, 541501));
-            return t => (0, i.jsx)(e, E({}, t))
+            return t => (0, i.jsx)(e, _({}, t))
           })
         }
-      }), (0, i.jsx)(g.RT, {
+      }), (0, i.jsx)(y.RT, {
         id: e.id,
         pinned: e.pinned
       })]
@@ -174,7 +175,7 @@ let I = {
         locked: n,
         anchorLeft: r
       } = e;
-      return (0, i.jsx)(p.Z, {
+      return (0, i.jsx)(h.Z, {
         id: t.id,
         anchorLeft: r,
         locked: n,
@@ -184,7 +185,7 @@ let I = {
     renderTitle: () => (0, Chunk951288.jsx)(Chunk430561.PI, {
       children: "Overlay Performance"
     }),
-    renderButtons: e => (0, i.jsx)(g.RT, {
+    renderButtons: e => (0, i.jsx)(y.RT, {
       id: e.id,
       pinned: e.pinned
     })
@@ -200,10 +201,10 @@ let I = {
         anchorTop: a,
         anchorLeft: s,
         showEmpty: c,
-        padding: p,
-        borderWidth: f
+        padding: d,
+        borderWidth: h
       } = e;
-      return (0, d.ZL)(n) ? (0, i.jsx)(u.Z, {
+      return (0, p.ZL)(n) ? (0, i.jsx)(u.Z, {
         id: n.id,
         locked: r,
         pinned: n.pinned,
@@ -215,8 +216,8 @@ let I = {
         isPreviewingInGame: false,
         dragStart: l,
         horizontal: null != (t = n.meta.horizontal) && t,
-        padding: p,
-        borderWidth: f,
+        padding: d,
+        borderWidth: h,
         showEmpty: c
       }) : null
     },
@@ -225,28 +226,28 @@ let I = {
     }),
     renderButtons(e) {
       var t;
-      return (0, d.ZL)(e) ? (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(g.ls, {
+      return (0, p.ZL)(e) ? (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(y.ls, {
           onClick: t => {
-            (0, d.ZL)(e) && (0, r.jW)(t, async () => {
+            (0, p.ZL)(e) && (0, r.jW)(t, async () => {
               let {
                 default: t
               } = await n.e("34684").then(n.bind(n, 68738));
-              return n => (0, i.jsx)(t, _(E({}, n), {
+              return n => (0, i.jsx)(t, S(_({}, n), {
                 widget: e
               }))
             })
           }
-        }), (0, i.jsx)(g.GY, {
+        }), (0, i.jsx)(y.GY, {
           widgetId: e.id,
           showAllStreams: null == (t = e.meta.showAllStreams) || t
-        }), (0, i.jsx)(g.RT, {
+        }), (0, i.jsx)(y.RT, {
           id: e.id,
           pinned: e.pinned
         })]
       }) : null
     },
-    resizeValidation: Chunk761374.w
+    resizeValidation: Chunk68286.wD
   },
   [Chunk981631.Odu.QUICK_ACTIONS]: {
     renderWidget(e) {
@@ -265,7 +266,7 @@ let I = {
         showEmpty: n,
         widget: r
       } = e;
-      return (0, i.jsx)(y.Z, {
+      return (0, i.jsx)(O.Z, {
         pinned: r.pinned,
         locked: t,
         showEmpty: n
@@ -275,16 +276,16 @@ let I = {
       children: Chunk388032.intl.string(Chunk388032.t.gnKWdX)
     }),
     renderButtons: e => (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(g.ls, {
+      children: [(0, i.jsx)(y.ls, {
         onClick: e => {
           (0, r.jW)(e, async () => {
             let {
               default: e
             } = await n.e("94706").then(n.bind(n, 168133));
-            return t => (0, i.jsx)(e, E({}, t))
+            return t => (0, i.jsx)(e, _({}, t))
           })
         }
-      }), (0, i.jsx)(g.RT, {
+      }), (0, i.jsx)(y.RT, {
         id: e.id,
         pinned: e.pinned
       })]

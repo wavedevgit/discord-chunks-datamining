@@ -88,7 +88,7 @@ class y extends(r = Chunk647438.PureComponent) {
             [g.splashContainerHorizontal]: l
           }),
           video: null != c.previewVideo ? (0, _._W)(o.applicationId, c.previewVideo) : true,
-          image: null != c.thumbnail ? (0, _._W)(o.applicationId, c.thumbnail, b) : null,
+          image: null != c.thumbnail ? (0, _._W)(o.applicationId, c.thumbnail, b) : null != c.headerBackground ? (0, _._W)(o.applicationId, c.headerBackground, b) : true,
           title: o.name,
           playing: e,
           muted: t,

@@ -32,8 +32,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk89524 = require("./89524.js");
-let T = e => [e.userId, ... function(e) {
-    let t = x.default.getUser(e.userId);
+let P = e => [e.userId, ... function(e) {
+    let t = I.default.getUser(e.userId);
     if (null == t) return [];
     let n = t.username,
       i = (0, m.e3)(t);
@@ -48,38 +48,38 @@ let T = e => [e.userId, ... function(e) {
         channel: i,
         voiceStates: r
       } = e;
-      return [i.name, i.id, i.guild_id, null != (n = null == (t = _.Z.getGuild(i.guild_id)) ? true : t.name) ? n : "", ...r.flatMap(e => T(e))].filter(C.lm)
+      return [i.name, i.id, i.guild_id, null != (n = null == (t = _.Z.getGuild(i.guild_id)) ? true : t.name) ? n : "", ...r.flatMap(e => P(e))].filter(C.lm)
     },
     throttleMs: 100
   },
   k = {
     searchType: Chunk886118.S.FUZZY,
     sortType: Chunk886118.E.JARO_WINKLER,
-    searchStringGenerator: T,
+    searchStringGenerator: P,
     throttleMs: 100
   },
   D = Chunk647438.memo(function(e) {
     let {
       channel: t,
       query: n
-    } = e, [o] = (0, a.e7)([j.Z], () => [j.Z.getVoiceStatesForChannel(t.id), j.Z.getVoiceStateVersion()], [t.id], N.Q), [l, c] = r.useState([]);
+    } = e, [o] = (0, a.e7)([j.Z], () => [j.Z.getVoiceStatesForChannel(t.id), j.Z.getVoiceStateVersion()], [t.id], w.Q), [l, c] = r.useState([]);
     (0, O.BO)(n, Object.values(o), c, k);
-    let u = (0, a.Wu)([j.Z, x.default, v.Z, S.Z], () => Object.values(j.Z.getVoiceStatesForChannel(t.id)).map(e => x.default.getUser(e.userId)).filter(C.lm).sort((e, t) => {
+    let u = (0, a.Wu)([j.Z, I.default, v.Z, x.Z], () => Object.values(j.Z.getVoiceStatesForChannel(t.id)).map(e => I.default.getUser(e.userId)).filter(C.lm).sort((e, t) => {
         var i, r, o, a;
         if (l.length > 0 && "" !== n.trim()) {
           if (l.some(t => t.userId === e.id)) return false;
           if (l.some(e => e.userId === t.id)) return 1
         }
-        return S.Z.isFriend(e.id) && !S.Z.isFriend(t.id) ? false : !S.Z.isFriend(e.id) && S.Z.isFriend(t.id) ? 1 : (null != (o = null == (i = v.Z.getUserAffinity(t.id)) ? true : i.vcProbability) ? o : 0) - (null != (a = null == (r = v.Z.getUserAffinity(e.id)) ? true : r.vcProbability) ? a : 0)
+        return x.Z.isFriend(e.id) && !x.Z.isFriend(t.id) ? false : !x.Z.isFriend(e.id) && x.Z.isFriend(t.id) ? 1 : (null != (o = null == (i = v.Z.getUserAffinity(t.id)) ? true : i.vcProbability) ? o : 0) - (null != (a = null == (r = v.Z.getUserAffinity(e.id)) ? true : r.vcProbability) ? a : 0)
       }), [t.id, l, n]),
       d = t.getGuildId(),
-      f = Math.max(l.length, 2);
+      h = Math.max(l.length, 2);
     return null == d ? null : (0, i.jsx)(p.Z, {
       users: u,
       guildId: d,
-      maxUsers: Math.min(f, 4),
+      maxUsers: Math.min(h, 4),
       size: s.EFr.SIZE_24,
-      overflowCountClassName: P.overflowCount,
+      overflowCountClassName: T.overflowCount,
       overflowCountVariant: "text-xs/semibold",
       disableUserPopout: true,
       "aria-label": Z.intl.string(Z.t.TxqPQU)
@@ -91,13 +91,13 @@ let T = e => [e.userId, ... function(e) {
       channel: n
     } = e, r = n.getGuildId(), o = (0, a.e7)([_.Z], () => _.Z.getGuild(r), [r]);
     if (null == o) switch (n.type) {
-      case w.d4z.DM:
-        return (0, i.jsx)(h.je, {
+      case N.d4z.DM:
+        return (0, i.jsx)(f.je, {
           channel: n,
           size: s.EFr.SIZE_32
         });
-      case w.d4z.GROUP_DM:
-        return (0, i.jsx)(h.ge, {
+      case N.d4z.GROUP_DM:
+        return (0, i.jsx)(f.ge, {
           channel: n,
           size: s.EFr.SIZE_32
         });
@@ -109,8 +109,8 @@ let T = e => [e.userId, ... function(e) {
       width: 32,
       height: 32,
       children: (0, i.jsx)("div", {
-        className: P.guildIconWrapper,
-        children: (0, i.jsx)(f.Ft, {
+        className: T.guildIconWrapper,
+        children: (0, i.jsx)(h.Ft, {
           guildId: o.id,
           guildName: null != (t = o.name) ? t : Z.intl.string(Z.t.DmIUGB),
           guildIcon: o.icon,
@@ -127,33 +127,33 @@ let T = e => [e.userId, ... function(e) {
       currentVoiceChannel: o,
       onClick: d,
       onMouseOver: p,
-      onMouseLeave: f,
-      query: h
-    } = e, m = (0, a.e7)([b.Z], () => b.Z.getChannel(n), [n]), g = null == m ? true : m.getGuildId(), y = (0, a.e7)([_.Z], () => _.Z.getGuild(g), [g]), O = (0, u.KS)(m, y), v = (null == o ? true : o.id) === n, E = v ? "text-feedback-positive" : r ? "interactive-active" : "text-muted", I = v ? s.TVs.colors.TEXT_FEEDBACK_POSITIVE : r ? s.TVs.colors.INTERACTIVE_ACTIVE : s.TVs.colors.ICON_MUTED;
+      onMouseLeave: h,
+      query: f
+    } = e, m = (0, a.e7)([b.Z], () => b.Z.getChannel(n), [n]), g = null == m ? true : m.getGuildId(), y = (0, a.e7)([_.Z], () => _.Z.getGuild(g), [g]), O = (0, u.KS)(m, y), v = (null == o ? true : o.id) === n, E = v ? "text-feedback-positive" : r ? "interactive-active" : "text-muted", S = v ? s.TVs.colors.TEXT_FEEDBACK_POSITIVE : r ? s.TVs.colors.INTERACTIVE_ACTIVE : s.TVs.colors.ICON_MUTED;
     return null == m ? null : (0, i.jsxs)(s.kL8, {
-      className: l()(P.channelItemContainer, r && P.channelItemHighlighted),
+      className: l()(T.channelItemContainer, r && T.channelItemHighlighted),
       "aria-label": m.name,
       onClick: () => d(n),
       onMouseOver: () => p(n),
-      onMouseLeave: () => f(n),
+      onMouseLeave: () => h(n),
       children: [(0, i.jsx)("div", {
-        className: P.channelItemIcon,
+        className: T.channelItemIcon,
         children: (0, i.jsx)(R, {
           channel: m
         })
       }), (0, i.jsxs)("div", {
-        className: P.channelItemNameContainer,
+        className: T.channelItemNameContainer,
         children: [(0, i.jsxs)("div", {
-          className: P.channelItemName,
+          className: T.channelItemName,
           children: [null != O ? (0, i.jsx)(O, {
-            color: I,
+            color: S,
             size: "xs",
-            className: P.channelIcon
+            className: T.channelIcon
           }) : true, (0, i.jsx)(s.Text, {
             variant: v ? "text-sm/semibold" : "text-sm/medium",
             color: E,
-            className: P.channelItemNameText,
-            children: (0, c.F6)(m, x.default, S.Z)
+            className: T.channelItemNameText,
+            children: (0, c.F6)(m, I.default, x.Z)
           })]
         }), (0, i.jsx)(s.Text, {
           variant: v ? "text-xs/semibold" : "text-xs/medium",
@@ -161,11 +161,11 @@ let T = e => [e.userId, ... function(e) {
           children: null != (t = null == y ? true : y.name) ? t : m.name
         })]
       }), (0, i.jsx)("div", {
-        className: P.channelItemAvatars,
+        className: T.channelItemAvatars,
         children: (0, i.jsx)(D, {
           channel: m,
           currentVoiceChannel: o,
-          query: h
+          query: f
         })
       })]
     })
@@ -175,7 +175,7 @@ let T = e => [e.userId, ... function(e) {
       emptyText: t
     } = e;
     return (0, i.jsx)("div", {
-      className: P.emptyChannelItem,
+      className: T.emptyChannelItem,
       children: (0, i.jsx)(s.Text, {
         variant: "text-md/normal",
         color: "text-primary",
@@ -192,21 +192,21 @@ let T = e => [e.userId, ... function(e) {
       hasQuery: a,
       query: c,
       scrollable: u = true
-    } = e, [d, p] = r.useState(null), f = e => {
+    } = e, [d, p] = r.useState(null), h = e => {
       p(e)
-    }, h = () => {
+    }, f = () => {
       p(null)
     }, m = u ? s.zJl : "div";
     return (0, i.jsxs)("div", {
       children: [(0, i.jsx)("div", {
-        className: P.recentChannelsMenuHeader,
+        className: T.recentChannelsMenuHeader,
         children: (0, i.jsx)(s.Text, {
           variant: "text-sm/semibold",
           color: "text-muted",
           children: t
         })
       }), (0, i.jsxs)(m, {
-        className: P.channelList,
+        className: T.channelList,
         children: [a && 0 === n.length && (0, i.jsx)(M, {
           emptyText: Z.intl.string(Z.t.nxSS09)
         }), n.map(e => (0, i.jsx)(L, {
@@ -216,8 +216,8 @@ let T = e => [e.userId, ... function(e) {
           onClick: () => {
             l(e)
           },
-          onMouseOver: f,
-          onMouseLeave: h,
+          onMouseOver: h,
+          onMouseLeave: f,
           query: c
         }, e))]
       })]
@@ -234,26 +234,26 @@ function U(e) {
     friendVoiceChannelIds: c
   } = function() {
     let e = function() {
-        let e = (0, a.Wu)([x.default, S.Z, v.Z], () => S.Z.getFriendIDs().sort((e, t) => {
+        let e = (0, a.Wu)([I.default, x.Z, v.Z], () => x.Z.getFriendIDs().sort((e, t) => {
           var n, i, r, o;
           return null == e && null == t ? 0 : null == e ? 1 : null == t ? false : (null != (r = null == (n = v.Z.getUserAffinity(t)) ? true : n.communicationProbability) ? r : 0) - (null != (o = null == (i = v.Z.getUserAffinity(e)) ? true : i.communicationProbability) ? o : 0)
         }).reduce((e, t) => {
-          let n = x.default.getUser(t);
+          let n = I.default.getUser(t);
           return null != n && e.push(n), e
         }, []), []);
-        return (0, a.Wu)([j.Z, b.Z, I.Z], () => Array.from(e.map(e => j.Z.getDiscoverableVoiceStateForUser(e.id)).reduce((e, t) => {
+        return (0, a.Wu)([j.Z, b.Z, S.Z], () => Array.from(e.map(e => j.Z.getDiscoverableVoiceStateForUser(e.id)).reduce((e, t) => {
           let n = null == t ? true : t.channelId;
           if (null == n) return e;
           let i = b.Z.getChannel(n);
-          return null != i && I.Z.can(w.Plq.CONNECT, i) && e.add(n), e
+          return null != i && S.Z.can(N.Plq.CONNECT, i) && e.add(n), e
         }, new Set)).filter(C.lm), [e])
       }(),
-      t = (0, a.Wu)([g.Z, b.Z, I.Z], () => {
+      t = (0, a.Wu)([g.Z, b.Z, S.Z], () => {
         let t = g.Z.getChannelHistory(),
           n = new Set(e);
         return Array.from(new Set(t.reduce((e, t) => {
           let i = b.Z.getChannel(t);
-          return null != i && I.Z.can(w.Plq.CONNECT, i) && !n.has(t) && e.push(t), e
+          return null != i && S.Z.can(N.Plq.CONNECT, i) && !n.has(t) && e.push(t), e
         }, [])))
       }, [e]);
     return {
@@ -262,7 +262,7 @@ function U(e) {
     }
   }();
   return o.length > 0 || c.length > 0 ? (0, i.jsxs)(s.zJl, {
-    className: l()(P.channelList, P.channelListWrapper),
+    className: l()(T.channelList, T.channelListWrapper),
     children: [o.length > 0 && (0, i.jsx)(z, {
       sectionHeader: Z.intl.string(Z.t.lnk2NT),
       channelIds: o.slice(0, 3),
@@ -295,16 +295,16 @@ function W(e) {
     currentVoiceChannel: o,
     onClose: l,
     onSelect: c
-  } = e, u = (0, a.Wu)([_.Z, E.ZP, j.Z, S.Z, I.Z], () => _.Z.getGuildsArray().reduce((e, t) => [...e, ...E.ZP.getChannels(t.id)[E.Zb].filter(e => I.Z.can(w.Plq.VIEW_CHANNEL, e.channel) && I.Z.can(w.Plq.CONNECT, e.channel)).map(e => {
+  } = e, u = (0, a.Wu)([_.Z, E.ZP, j.Z, x.Z, S.Z], () => _.Z.getGuildsArray().reduce((e, t) => [...e, ...E.ZP.getChannels(t.id)[E.Zb].filter(e => S.Z.can(N.Plq.VIEW_CHANNEL, e.channel) && S.Z.can(N.Plq.CONNECT, e.channel)).map(e => {
     let {
       channel: t
     } = e;
     return t
   })], []).map(e => ({
     channel: e,
-    voiceStates: Object.values(j.Z.getVoiceStatesForChannel(e.id)).filter(e => S.Z.isFriend(e.userId))
-  })), []), [d, p] = r.useState(""), [f, h] = r.useState([]);
-  (0, O.BO)(d, u, h, A);
+    voiceStates: Object.values(j.Z.getVoiceStatesForChannel(e.id)).filter(e => x.Z.isFriend(e.userId))
+  })), []), [d, p] = r.useState(""), [h, f] = r.useState([]);
+  (0, O.BO)(d, u, f, A);
   let m = r.useCallback(e => {
       "Escape" === e.key && l()
     }, [l]),
@@ -315,11 +315,11 @@ function W(e) {
     document.removeEventListener("keydown", m, true)
   }), [l, m]);
   let y = "" !== d.trim(),
-    v = f.length > 20,
+    v = h.length > 20,
     b = {
-      count: v ? 20 : f.length
+      count: v ? 20 : h.length
     },
-    x = r.useMemo(() => ({
+    I = r.useMemo(() => ({
       onMouseDown: V,
       onMouseMove: V,
       onMouseUp: V,
@@ -344,10 +344,10 @@ function W(e) {
     }
     return e
   }({
-    className: P.recentChannelsMenu
-  }, x), n = n = {
+    className: T.recentChannelsMenu
+  }, I), n = n = {
     children: [(0, i.jsx)("div", {
-      className: P.searchBarContainer,
+      className: T.searchBarContainer,
       children: (0, i.jsx)(s.E1j, {
         autoFocus: true,
         query: d,
@@ -365,7 +365,7 @@ function W(e) {
       })
     }), y ? (0, i.jsx)(z, {
       sectionHeader: v ? Z.intl.format(Z.t.qdXiQ0, b) : Z.intl.format(Z.t["Aq+8wM"], b),
-      channelIds: f.map(e => {
+      channelIds: h.map(e => {
         let {
           channel: t
         } = e;

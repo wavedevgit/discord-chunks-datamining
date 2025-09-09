@@ -26,15 +26,15 @@ function v(e) {
     replyToMessageId: n,
     channel: v,
     onSend: b
-  } = e, E = (0, h.Z)(), {
+  } = e, E = (0, f.Z)(), {
     placeholder: _,
-    accessibilityLabel: I
+    accessibilityLabel: S
   } = (0, c.Z)({
     channel: v
-  }), [S, x] = r.useState(() => (0, d.H2)()), {
+  }), [x, I] = r.useState(() => (0, d.H2)()), {
     textValue: j,
     richValue: C
-  } = S, [N, w] = r.useState(false), Z = r.useCallback(() => w(true), []), P = r.useCallback(() => w(false), []);
+  } = x, [w, N] = r.useState(false), Z = r.useCallback(() => N(true), []), T = r.useCallback(() => N(false), []);
   (0, s.ZP)(() => {
     (0, a.In)(v.id, {
       section: g.jXE.OVERLAY,
@@ -42,8 +42,8 @@ function v(e) {
       objectType: g.Qqv.ACK_SEMI_AUTOMATIC
     }, true, true, n)
   });
-  let T = r.useCallback((e, t, n) => {
-      x({
+  let P = r.useCallback((e, t, n) => {
+      I({
         textValue: t,
         richValue: n
       })
@@ -51,7 +51,7 @@ function v(e) {
     A = r.useCallback(e => {
       "Escape" === e.key && l.Z.updateNotificationStatus(t, g._1z.ACTIVE)
     }, [t]),
-    k = r.useCallback(() => (j.length > E || (o.Z.sendMessage(v.id, f.ZP.parse(v, j), false, {
+    k = r.useCallback(() => (j.length > E || (o.Z.sendMessage(v.id, h.ZP.parse(v, j), false, {
       location: y.dy.OVERLAY
     }), l.Z.setInputLocked(true, (0, m.getPID)()), l.Z.updateNotificationStatus(t, g._1z.DISMISSED), null == b || b(j)), Promise.resolve({
       shouldClear: false,
@@ -61,17 +61,17 @@ function v(e) {
     className: O.container,
     children: (0, i.jsx)(p.ZP, {
       innerClassName: O.textArea,
-      onChange: T,
+      onChange: P,
       placeholder: _,
-      accessibilityLabel: I,
+      accessibilityLabel: S,
       channel: v,
       textValue: j,
       richValue: C,
       type: u.Ie.OVERLAY_INLINE_REPLY,
       allowNewLines: false,
-      onBlur: P,
+      onBlur: T,
       onFocus: Z,
-      focused: N,
+      focused: w,
       onSubmit: k,
       onKeyDown: A,
       autoCompletePosition: "bottom",

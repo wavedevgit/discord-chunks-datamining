@@ -22,11 +22,11 @@ function d(e) {
     onPurchase: p,
     PurchaseButton: b,
     GiftButton: m,
-    availabilityLabel: f
+    availabilityLabel: j
   } = e;
   return (0, r.jsx)(o.tE, {
     children: (0, r.jsxs)("div", {
-      className: l()(u.wrapper, c.hoverCard),
+      className: l()(a.wrapper, c.hoverCard),
       tabIndex: 0,
       onClick: () => {
         null != d ? d() : null != p && p()
@@ -35,7 +35,7 @@ function d(e) {
         "Enter" === e.key && (e.stopPropagation(), e.preventDefault(), null != d ? d() : null != p && p())
       },
       children: [(0, r.jsx)("div", {
-        className: u.cardHeaderImg,
+        className: a.cardHeaderImg,
         style: null != i ? {
           backgroundImage: null != i ? "url(".concat(i.toString(), ")") : true
         } : true,
@@ -46,25 +46,25 @@ function d(e) {
           width: 80
         })
       }), (0, r.jsxs)("div", {
-        className: u.details,
-        children: [(0, r.jsx)(a.x, {
+        className: a.details,
+        children: [(0, r.jsx)(u.x, {
           color: "header-primary",
           variant: "text-md/semibold",
           children: t
-        }), null != n && (0, r.jsx)(a.x, {
-          className: u.description,
+        }), null != n && (0, r.jsx)(u.x, {
+          className: a.description,
           color: "text-muted",
           variant: "text-sm/normal",
           children: n
         })]
       }), (null != b || null != m) && (0, r.jsxs)("div", {
-        className: u.footer,
-        children: [null != b && (0, r.jsx)(a.x, {
+        className: a.footer,
+        children: [null != b && (0, r.jsx)(u.x, {
           color: "interactive-normal",
           variant: "text-sm/normal",
-          children: f
+          children: j
         }), (0, r.jsxs)("div", {
-          className: u.buttonGroup,
+          className: a.buttonGroup,
           children: [null != b && (0, r.jsx)(b, {
             onClick: e => {
               e.stopPropagation(), null == p || p()

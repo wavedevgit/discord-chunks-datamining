@@ -13,28 +13,34 @@ var Chunk100527 = require("./100527.js"),
   Chunk791785 = require("./791785.jsx"),
   Chunk961830 = require("./961830.jsx"),
   Chunk382263 = require("./382263.jsx"),
+  Chunk137440 = require("./137440.jsx"),
   Chunk231338 = require("./231338.js");
+let g = (e, t, n) => (0, i.jsx)(f.Z, {
+  step: n,
+  onClose: () => t(false)
+});
 
 function p(e) {
   let {
     onClose: t,
     onComplete: n,
-    transitionState: a,
-    applicationId: s,
+    transitionState: l,
+    applicationId: r,
     analyticsLocationObject: o,
     skuId: u
-  } = e, {} = (0, r.JL)(), {
+  } = e, {} = (0, s.JL)(), {
     analyticsLocations: d
-  } = (0, l.ZP)();
+  } = (0, a.ZP)();
   return (0, i.jsx)(c.PaymentModal, {
     onClose: t,
     onComplete: n,
-    applicationId: s,
+    applicationId: r,
     skuId: u,
+    renderHeader: g,
     initialPlanId: null,
     analyticsObject: o,
     analyticsLocations: d,
-    transitionState: a
+    transitionState: l
   })
 }
 
@@ -43,14 +49,14 @@ function m(e) {
     loadId: t,
     applicationId: n,
     skuId: c,
-    analyticsLocations: m,
+    analyticsLocations: f,
     isGift: g = false
   } = e, {
-    analyticsLocations: b
-  } = (0, l.ZP)(m, a.Z.PREMIUM_PAYMENT_MODAL);
-  return (0, i.jsx)(l.Gt, {
-    value: b,
-    children: (0, i.jsx)(r.PaymentContextProvider, {
+    analyticsLocations: m
+  } = (0, a.ZP)(f, l.Z.PREMIUM_PAYMENT_MODAL);
+  return (0, i.jsx)(a.Gt, {
+    value: m,
+    children: (0, i.jsx)(s.PaymentContextProvider, {
       loadId: t,
       stepConfigs: function() {
         let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
@@ -59,10 +65,10 @@ function m(e) {
       applicationId: n,
       skuIDs: [c],
       activeSubscription: null,
-      purchaseType: f.GZ.ONE_TIME,
+      purchaseType: h.GZ.ONE_TIME,
       isGift: g,
       children: (0, i.jsx)(o.c1, {
-        children: (0, i.jsx)(s.KB, {
+        children: (0, i.jsx)(r.KB, {
           isGift: g,
           children: (0, i.jsx)(p, function(e) {
             for (var t = 1; t < arguments.length; t++) {

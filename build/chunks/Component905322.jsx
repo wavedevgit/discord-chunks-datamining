@@ -13,21 +13,21 @@ function s(e) {
     title: t,
     subtitle: n,
     iconSrc: s,
-    backgroundSrc: a,
-    animatedBackgroundSrc: u,
+    backgroundSrc: u,
+    animatedBackgroundSrc: a,
     prefersReducedMotion: c = true
   } = e, d = i.useMemo(() => {
-    let e = null != a ? a : s;
+    let e = null != u ? u : s;
     if (null != e) return {
       "--custom-background-url": "url(".concat(e.toString(), ")")
     }
-  }, [a, s]), p = i.useMemo(() => {
-    if (null == a) return;
+  }, [u, s]), p = i.useMemo(() => {
+    if (null == u) return;
     let e = {
-      "--custom-background-static": "url(".concat(a.toString())
+      "--custom-background-static": "url(".concat(u.toString())
     };
-    return c || null == u || (e["--custom-background-animated"] = "url(".concat(u.toString(), ")")), e
-  }, [u, a, c]);
+    return c || null == a || (e["--custom-background-animated"] = "url(".concat(a.toString(), ")")), e
+  }, [a, u, c]);
   return (0, r.jsxs)("div", {
     className: o.wrapper,
     children: [(0, r.jsx)("div", {
@@ -51,7 +51,7 @@ function s(e) {
           children: ["“", n, "”"]
         })]
       })]
-    }), null != a ? (0, r.jsx)("div", {
+    }), null != u ? (0, r.jsx)("div", {
       className: o.image,
       style: p
     }) : null]

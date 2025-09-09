@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
 function m(e) {
   let {
     locked: t
-  } = e, n = (0, p.II)(), m = null == n ? true : n.id, g = null == n ? true : n.altId, y = (0, o.e7)([c.default], () => c.default.getCurrentUser()), O = null != g ? g : m, [v, b] = r.useState(new Set), [E, _] = r.useState(new Set), I = r.useCallback((e, t, n) => {
+  } = e, n = (0, p.II)(), m = null == n ? true : n.id, g = null == n ? true : n.altId, y = (0, o.e7)([c.default], () => c.default.getCurrentUser()), O = null != g ? g : m, [v, b] = r.useState(new Set), [E, _] = r.useState(new Set), S = r.useCallback((e, t, n) => {
     b(n => {
       if (t) {
         if (n.has(e)) return n;
@@ -39,17 +39,17 @@ function m(e) {
       }
       return new Set(i)
     })
-  }, []), S = (0, u.ee)(() => v, [v]), x = (0, u.ee)(() => E, [E]), j = (0, l.h)(u.zi, 3e3, []);
+  }, []), x = (0, u.ee)(() => v, [v]), I = (0, u.ee)(() => E, [E]), j = (0, l.h)(u.zi, 3e3, []);
   r.useEffect(() => {
-    0 === S.size || t || j(f.Odu.FRIENDS, {
+    0 === x.size || t || j(h.Odu.FRIENDS, {
       locked: t,
-      shownUserIds: Array.from(S),
-      liveUserIds: Array.from(x),
+      shownUserIds: Array.from(x),
+      liveUserIds: Array.from(I),
       contentInventoryIds: []
     })
-  }, [S, x, t, j]);
+  }, [x, I, t, j]);
   let C = (0, o.e7)([s.Z], () => null == O ? null : s.Z.getApplicationActivity(O), [O]),
-    N = (0, r.useCallback)((e, t) => {
+    w = (0, r.useCallback)((e, t) => {
       let n = function(e) {
         switch (e) {
           case a.sG.OPEN_DIRECT_MESSAGE:
@@ -102,7 +102,7 @@ function m(e) {
       }(e);
       if (null != n) {
         var i, r;
-        (0, u.Ws)(f.Odu.FRIENDS, (i = function(e) {
+        (0, u.Ws)(h.Odu.FRIENDS, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               i = Object.keys(n);
@@ -133,19 +133,19 @@ function m(e) {
         }), i))
       }
     }, []),
-    w = (0, r.useCallback)(() => {}, []),
+    N = (0, r.useCallback)(() => {}, []),
     Z = (0, r.useCallback)(() => (0, i.jsx)(d.lE, {
       activity: C,
       currentUser: y,
       showInviteButton: false
     }), [C, y]);
   return t ? null : (0, i.jsx)(a.r1, {
-    containerClassName: h.container,
-    listClassName: h.list,
-    closePopout: w,
+    containerClassName: f.container,
+    listClassName: f.list,
+    closePopout: N,
     renderHeader: Z,
-    appContext: f.IlC.OVERLAY,
-    onAction: N,
-    onFriendVisible: I
+    appContext: h.IlC.OVERLAY,
+    onAction: w,
+    onFriendVisible: S
   })
 }

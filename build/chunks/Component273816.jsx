@@ -58,28 +58,28 @@ function b(e) {
     anchorLeft: o
   } = e, b = (0, a.e7)([p.Z], () => p.Z.getSocket()), E = (0, a.e7)([m.ZP], () => m.ZP.isGPUBoosted());
   (0, d.nU)();
-  let _ = (0, a.e7)([f.Z], () => f.Z.getWindow(g.$J)),
-    [I, S] = (0, d.m8)(b),
+  let _ = (0, a.e7)([h.Z], () => h.Z.getWindow(g.$J)),
+    [S, x] = (0, d.m8)(b),
     {
-      currentFPS: x,
+      currentFPS: I,
       averageFrameTime: j,
       timeSinceLastDrop: C,
-      onResetFrameData: N,
-      droppedFramesRef: w,
+      onResetFrameData: w,
+      droppedFramesRef: N,
       renderedFrameCount: Z,
-      bufferFramecountRef: P,
-      frameCheckerEffect: T
-    } = (0, d.d6)(true, I, true),
+      bufferFramecountRef: T,
+      frameCheckerEffect: P
+    } = (0, d.d6)(true, S, true),
     [A, k, D] = (0, d.ZF)(b),
-    [R, L] = (0, d.Y5)(A, T, _),
-    M = performance.now() - S.current < d.MC,
-    z = k(j, P.current);
+    [R, L] = (0, d.Y5)(A, P, _),
+    M = performance.now() - x.current < d.MC,
+    z = k(j, T.current);
   (0, u.ZP)(() => (R(), () => {
     L()
   }));
   let U = r.useCallback(() => {
-      N(), D(), R()
-    }, [N, D, R]),
+      w(), D(), R()
+    }, [w, D, R]),
     [V, W] = r.useState(true),
     [G, F] = r.useState(true),
     [B, H] = r.useState(true),
@@ -103,8 +103,8 @@ function b(e) {
         children: ["FPS:", " ", (0, i.jsx)(c.Text, {
           tag: "span",
           variant: "code",
-          color: x < 30 ? "text-danger" : x < 45 ? "text-feedback-warning" : "text-primary",
-          children: x.toFixed(2)
+          color: I < 30 ? "text-danger" : I < 45 ? "text-feedback-warning" : "text-primary",
+          children: I.toFixed(2)
         })]
       })]
     }), (G || !t) && (0, i.jsxs)("div", {
@@ -144,13 +144,13 @@ function b(e) {
           tag: "span",
           variant: "code",
           color: C < 2 ? "text-danger" : C < 5 ? "text-feedback-warning" : "text-primary",
-          children: w.current
+          children: N.current
         }), (0, i.jsxs)(c.Text, {
           tag: "span",
           variant: "code",
           color: "text-secondary",
           className: y.secondaryInfoText,
-          children: ["(", (w.current / Z.current * 100).toFixed(3), "%)"]
+          children: ["(", (N.current / Z.current * 100).toFixed(3), "%)"]
         })]
       })]
     }), (Y || !t) && (0, i.jsxs)("div", {
@@ -217,7 +217,7 @@ function b(e) {
       children: "(Using GPU Priority - Realtime)"
     }), !t && (0, i.jsx)("div", {
       className: y.bottomPanelButton,
-      children: (0, i.jsx)(h.Z, {
+      children: (0, i.jsx)(f.Z, {
         children: (0, i.jsx)(c.zxk, {
           variant: "primary",
           text: "Reset Frame Data",

@@ -1,10 +1,7 @@
 /** Chunk was on 46290 **/
 /** chunk id: 350663, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  IV: () => E,
-  ZP: () => I,
-  bt: () => v,
-  fd: () => b
+  Z: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,11 +14,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk237997 = require("./237997.js"),
   Chunk444295 = require("./444295.js"),
   Chunk752802 = require("./752802.jsx"),
+  Chunk68286 = require("./68286.js"),
+  Chunk461393 = require("./461393.js"),
   Chunk340101 = require("./340101.js"),
   Chunk981631 = require("./981631.js"),
   Chunk339882 = require("./339882.js");
 
-function y(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -40,7 +39,7 @@ function y(e) {
   return e
 }
 
-function O(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,58 +51,43 @@ function O(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = 256,
-  b = 144;
-
-function E(e, t, n) {
-  if (e === h.C5.VERTICAL) {
-    let e = Math.max(t, v),
-      n = Math.max(9 / 16 * e, b);
-    return {
-      tileWidth: e,
-      tileHeight: n
-    }
-  }
-  let i = Math.max(n, b);
-  return {
-    tileWidth: Math.max(16 / 9 * i, v),
-    tileHeight: i
-  }
-}
-let _ = {
+let E = {
     mass: 1,
     tension: 250,
     friction: 18,
     clamp: true
   },
-  I = Chunk647438.memo(function(e) {
+  _ = Chunk647438.memo(function(e) {
     let {
       widgetId: t,
       tileWidth: n,
       tileHeight: o,
-      layout: v,
-      locked: b,
-      activeStreams: E,
+      layout: _,
+      locked: S,
+      activeStreams: x,
       streamParticipants: I,
-      participantsVersion: S,
-      pinned: x,
-      padding: j,
-      sizeOffset: C
+      participantsVersion: j,
+      pinned: C,
+      padding: w
     } = e, N = I.map(e => ({
       participant: e,
       key: e.user.id,
       width: n,
       height: o,
-      locked: b,
+      locked: S,
       widgetId: t,
-      pinned: x
-    })), w = (0, c.Z)(n), Z = (0, c.Z)(b), P = v === h.C5.VERTICAL, T = b || Z !== b || w !== n, A = 0, k = 0, D = (0, s.Yzy)(P ? N.map((e, t) => O(y({}, e), {
-      y: (A += e.height + (t > 0 ? j : 0)) - e.height,
-      x: 0
-    })) : N.map((e, t) => O(y({}, e), {
-      x: (k += e.width + (t > 0 ? j : 0)) - e.width,
-      y: 0
-    })), {
+      pinned: C
+    })), Z = (0, c.Z)(n), T = (0, c.Z)(S), P = _ === g.C5.VERTICAL, A = S || T !== S || Z !== n, k = r.useMemo(() => {
+      let e = 0,
+        t = 0;
+      return P ? N.map((t, n) => b(v({}, t), {
+        y: (e += t.height + (n > 0 ? w : 0)) - t.height,
+        x: 0
+      })) : N.map((e, n) => b(v({}, e), {
+        x: (t += e.width + (n > 0 ? w : 0)) - e.width,
+        y: 0
+      }))
+    }, [N, w, P]), D = r.useMemo(() => 0 === k.length ? (0, m.MH)(f.bt) : k.reduce((e, t) => e + t.height, 0) + (P ? w * (k.length - 1) : 0), [k, P, w]), R = r.useMemo(() => 0 === k.length ? f.bt : k.reduce((e, t) => e + t.width, 0) + (P ? 0 : w * (k.length - 1)), [k, P, w]), L = (0, s.Yzy)(k, {
       key: e => e.key,
       from: {
         height: 0,
@@ -142,29 +126,29 @@ let _ = {
           height: r
         }
       },
-      config: _,
-      trail: 100 * !T
-    }, T ? "animate-never" : "respect-motion-settings"), R = (0, p.ee)(() => new Set(I.map(e => e.user.id)), [I, S]), L = (0, p.ee)(() => new Set(I.filter(e => E.has((0, u.V9)(e.stream))).map(e => e.user.id)), [I, E, S]);
+      config: E,
+      trail: 100 * !A
+    }, A ? "animate-never" : "respect-motion-settings"), M = (0, p.ee)(() => new Set(I.map(e => e.user.id)), [I, j]), z = (0, p.ee)(() => new Set(I.filter(e => x.has((0, u.V9)(e.stream))).map(e => e.user.id)), [I, x, j]);
     return r.useEffect(() => {
-      0 !== R.size && (0, p.zi)(m.Odu.GO_LIVE, {
+      0 !== M.size && (0, p.zi)(y.Odu.GO_LIVE, {
         locked: d.default.isInstanceLocked(),
-        shownUserIds: Array.from(R),
-        liveUserIds: Array.from(L),
+        shownUserIds: Array.from(M),
+        liveUserIds: Array.from(z),
         contentInventoryIds: []
       })
-    }, [R, L]), (0, i.jsx)("div", {
+    }, [M, z]), (0, i.jsx)("div", {
       className: l()({
-        [g.gridContainer]: true,
-        [g.vertical]: P,
-        [g.horizontal]: !P
+        [O.gridContainer]: true,
+        [O.vertical]: P,
+        [O.horizontal]: !P
       }),
       style: P ? {
-        height: A
+        height: D
       } : {
-        width: k
+        width: R
       },
-      children: D((e, t, r, l) => (0, i.jsx)(a.animated.div, {
-        className: g.gridItem,
+      children: L((e, t, r, l) => (0, i.jsx)(a.animated.div, {
+        className: O.gridItem,
         style: Object.assign({}, e, {
           width: n,
           height: o,
@@ -179,8 +163,8 @@ let _ = {
             pinned: l
           } = e;
           return (0, i.jsx)("div", {
-            className: g.tileContainer,
-            children: (0, i.jsx)(f.Z, {
+            className: O.tileContainer,
+            children: (0, i.jsx)(h.Z, {
               participant: t,
               width: n,
               locked: r,

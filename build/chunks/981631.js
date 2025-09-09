@@ -2123,7 +2123,7 @@ var rn = function(e) {
     return e[e.FULL = 1] = "FULL", e[e.EARLY_ACCESS = 2] = "EARLY_ACCESS", e[e.VIP_ACCESS = 3] = "VIP_ACCESS", e
   }({}),
   rp = function(e) {
-    return e[e.PREMIUM = 1] = "PREMIUM", e[e.BOOST = 2] = "BOOST", e[e.GUILD_ROLE = 4] = "GUILD_ROLE", e[e.GUILD_PRODUCT = 5] = "GUILD_PRODUCT", e[e.APPLICATION = 6] = "APPLICATION", e[e.COLLECTIBLES = 7] = "COLLECTIBLES", e
+    return e[e.PREMIUM = 1] = "PREMIUM", e[e.BOOST = 2] = "BOOST", e[e.GUILD_ROLE = 4] = "GUILD_ROLE", e[e.GUILD_PRODUCT = 5] = "GUILD_PRODUCT", e[e.APPLICATION = 6] = "APPLICATION", e[e.COLLECTIBLES = 7] = "COLLECTIBLES", e[e.SOCIAL_LAYER_GAME_ITEM = 14] = "SOCIAL_LAYER_GAME_ITEM", e
   }({}),
   rh = function(e) {
     return e.WIN32 = "win32", e.WIN64 = "win64", e.MACOS = "macos", e.LINUX = "linux", e

@@ -1,7 +1,7 @@
 /** Chunk was on 38029 **/
-/** chunk id: 409858, original params: t,e,i (module,exports,require) **/
+/** chunk id: 409858, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => $
+  default: () => te
 }), require("./388685.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,6 +26,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk313201 = require("./313201.js"),
   Chunk925329 = require("./925329.jsx"),
   Chunk703656 = require("./703656.js"),
+  Chunk164670 = require("./164670.js"),
+  Chunk435883 = require("./435883.jsx"),
   Chunk146779 = require("./146779.js"),
   Chunk763296 = require("./763296.js"),
   Chunk82142 = require("./82142.js"),
@@ -49,43 +51,43 @@ var Chunk951288 = require("./951288.js"),
   Chunk167969 = require("./167969.js"),
   Chunk557256 = require("./557256.js");
 
-function q(t, e, i) {
+function Y(t, e, n) {
   return e in t ? Object.defineProperty(t, e, {
-    value: i,
+    value: n,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : t[e] = i, t
+  }) : t[e] = n, t
 }
-let X = t => {
+let J = t => {
     let {
       openedGift: e
     } = t, {
-      createMultipleConfettiAt: i
+      createMultipleConfettiAt: n
     } = r.useContext(j.h);
     return r.useEffect(() => {
-      e && i(window.innerWidth / 2, window.innerHeight / 4)
-    }, [i, e]), null
+      e && n(window.innerWidth / 2, window.innerHeight / 4)
+    }, [n, e]), null
   },
-  Y = t => {
+  Q = t => {
     let {
       step: e,
-      soundId: i
+      soundId: n
     } = t;
     return r.useEffect(() => {
       var t;
-      if (e !== F.wZ8.CONFIRM) return;
-      let n = _.Z.getSoundById(i);
-      (0, Z.playGiftSound)(i, null != (t = null == n ? true : n.volume) ? t : 1)
-    }, [e, i]), null
+      if (e !== z.wZ8.CONFIRM) return;
+      let i = A.Z.getSoundById(n);
+      (0, Z.playGiftSound)(n, null != (t = null == i ? true : i.volume) ? t : 1)
+    }, [e, n]), null
   };
-class J extends Chunk647438.Component {
+class $ extends Chunk647438.Component {
   componentDidMount() {
     let {
       application: t,
       sku: e,
-      customGiftMessage: i,
-      giftCode: n,
+      customGiftMessage: n,
+      giftCode: i,
       emojiName: r
     } = this.props;
     null == module && null != exports && Chunk728345.ZP.fetchApplication(exports.applicationId);
@@ -107,9 +109,9 @@ class J extends Chunk647438.Component {
     let {
       libraryApplication: t,
       accepting: e,
-      giftCode: i
+      giftCode: n
     } = this.props, {
-      error: n,
+      error: i,
       accepted: r,
       opened: l,
       isCustomGift: s,
@@ -134,8 +136,8 @@ class J extends Chunk647438.Component {
     let {
       isCustomGift: t,
       opened: e,
-      accepted: i,
-      isPremiumAppGift: n
+      accepted: n,
+      isPremiumAppGift: i
     } = this.state, {
       giftCode: r,
       subscriptionPlan: l,
@@ -199,8 +201,8 @@ class J extends Chunk647438.Component {
     let {
       sku: t,
       accepting: e,
-      libraryApplication: i,
-      subscriptionPlan: n,
+      libraryApplication: n,
+      subscriptionPlan: i,
       giftCode: r
     } = this.props;
     if (null == module) return null;
@@ -233,8 +235,8 @@ class J extends Chunk647438.Component {
       libraryApplication: t,
       accepting: e
     } = this.props, {
-      error: i,
-      accepted: n
+      error: n,
+      accepted: i
     } = this.state;
     return (0, Chunk669079.e$)(module, require, Chunk951288, exports, this.handleGoToLibrary)
   }
@@ -260,8 +262,8 @@ class J extends Chunk647438.Component {
     let {
       giftCode: t,
       customGiftMessage: e,
-      emojiName: i,
-      soundId: n,
+      emojiName: n,
+      soundId: i,
       sku: r,
       analyticsLocations: l
     } = this.props, {
@@ -281,126 +283,134 @@ class J extends Chunk647438.Component {
   }
   render() {
     let {
-      application: t,
-      accepting: e,
-      onClose: i,
-      giftCode: r,
-      headerId: l,
-      transitionState: a,
-      useReducedMotion: o,
-      onComplete: u,
-      customGiftMessage: d,
-      emojiName: f,
-      soundId: p,
-      isThemeDark: m
-    } = this.props, h = Chunk594174.default.getUser(Chunk647438.userId), {
-      isCustomGift: g,
-      isCollectiblesGift: y,
-      accepted: b,
-      opened: O,
-      emojiURL: v,
-      isPremiumAppGift: j
-    } = this.state, S = Chunk594174.default.getCurrentUser(), w = this.step === Chunk981631.wZ8.ERROR, Z = (null == Chunk647438 ? true : Chunk647438.userId) != null && null != Chunk313201 && (null == Chunk313201 ? true : Chunk313201.id) != null && Chunk647438.userId === Chunk313201.id;
+      sku: t,
+      application: e,
+      accepting: n,
+      onClose: r,
+      giftCode: l,
+      headerId: a,
+      transitionState: o,
+      useReducedMotion: u,
+      onComplete: d,
+      customGiftMessage: f,
+      emojiName: p,
+      soundId: m,
+      isThemeDark: g
+    } = this.props, h = Chunk594174.default.getUser(Chunk120356.userId), {
+      isCustomGift: y,
+      isCollectiblesGift: b,
+      accepted: O,
+      opened: P,
+      emojiURL: j,
+      isPremiumAppGift: S
+    } = this.state, w = Chunk594174.default.getCurrentUser(), Z = this.step === Chunk981631.wZ8.ERROR, A = (null == Chunk120356 ? true : Chunk120356.userId) != null && null != Chunk703656 && (null == Chunk703656 ? true : Chunk703656.id) != null && Chunk120356.userId === Chunk703656.id;
     switch (this.step) {
       case Chunk981631.wZ8.ERROR:
-        null == Chunk780384 || Chunk780384(Chunk647438, false);
+        null == Chunk533307 || Chunk533307(Chunk120356, false);
         break;
       case Chunk981631.wZ8.SUCCESS:
-        null == Chunk780384 || Chunk780384(Chunk647438, true)
+        null == Chunk533307 || Chunk533307(Chunk120356, true)
     }
+    let C = (0, Chunk164670.K)(module);
     return (0, Chunk951288.jsxs)("div", {
       ref: this.modalRef,
       children: [(0, Chunk951288.jsxs)(Chunk481060.Y0X, {
-        transitionState: Chunk979554,
+        transitionState: Chunk442837,
         size: Chunk481060.CgR.SMALL,
         className: Chunk269142.modal,
-        "aria-labelledby": Chunk120356,
+        "aria-labelledby": Chunk979554,
         parentComponent: "GiftCodeModal",
-        children: [null != Chunk647438.giftStyle && !Chunk728345 && !Chunk812206 && (0, Chunk951288.jsx)(Chunk981632.Z, {
+        children: [null != Chunk120356.giftStyle && !Chunk812206 && !Chunk884697 && (0, Chunk951288.jsx)(Chunk981632.Z, {
           defaultAnimationState: this.getDefaultAnimationStatus(),
           idleAnimationState: this.getIdleAnimationStatus(),
-          giftStyle: Chunk647438.giftStyle,
+          giftStyle: Chunk120356.giftStyle,
           className: Chunk269142.seasonalGiftIcon
-        }), !Chunk728345 && (0, Chunk951288.jsx)("div", {
+        }), !Chunk812206 && (0, Chunk951288.jsx)("div", {
           className: Chunk269142.backSplash
-        }), !Chunk812206 && (0, Chunk951288.jsx)(Chunk481060.olH, {
-          onClick: require,
+        }), !Chunk884697 && (0, Chunk951288.jsx)(Chunk481060.olH, {
+          onClick: Chunk647438,
           className: Chunk269142.closeButton
         }), (0, Chunk951288.jsxs)(Chunk481060.hzk, {
           className: s()({
-            [Chunk269142.content]: !Chunk728345,
-            [Chunk269142.contentCustomGift]: Chunk728345
+            [Chunk269142.content]: !Chunk812206,
+            [Chunk269142.contentCustomGift]: Chunk812206
           }),
-          children: [!Chunk812206 && !Chunk745510 && (null == Chunk647438.giftStyle || Chunk728345 && Chunk884697) && (0, Chunk951288.jsx)(Chunk925329.Z, {
+          children: [!Chunk884697 && !Chunk313201 && (null == Chunk120356.giftStyle || Chunk812206 && Chunk583434) || Chunk82142 ? (0, Chunk951288.jsx)(Chunk925329.Z, {
             size: Chunk925329.A.LARGE,
-            game: module,
-            skuId: Chunk647438.skuId
-          }), Chunk703656 && (0, Chunk951288.jsx)("img", {
+            game: exports,
+            skuId: Chunk120356.skuId
+          }) : null, Chunk146779 && (0, Chunk951288.jsx)("img", {
             alt: "",
-            src: Chunk100527 ? Chunk167969 : Chunk557256
+            src: Chunk906732 ? Chunk167969 : Chunk557256
           }), (0, Chunk951288.jsxs)(Chunk481060.X6q, {
-            id: Chunk120356,
+            id: Chunk979554,
             className: s()({
-              [Chunk269142.customGiftHeader]: Chunk728345 && !Chunk884697,
-              [Chunk269142.header]: !Chunk728345 || Chunk884697
+              [Chunk269142.customGiftHeader]: Chunk812206 && !Chunk583434,
+              [Chunk269142.header]: !Chunk812206 || Chunk583434
             }),
             variant: "heading-sm/semibold",
             children: [(0, Chunk951288.jsx)("div", {
               className: s()({
-                [Chunk269142.customGiftHeaderText]: Chunk728345
+                [Chunk269142.customGiftHeaderText]: Chunk812206
               }),
               children: this.firstHeaderText
             }), (0, Chunk951288.jsx)("div", {
               children: this.secondHeaderText
             })]
-          }), !(Chunk728345 && !Chunk884697) && (0, Chunk951288.jsx)(Chunk481060.Text, {
+          }), !(Chunk812206 && !Chunk583434) && (0, Chunk951288.jsx)(Chunk481060.Text, {
             className: Chunk269142.body,
             variant: "text-sm/normal",
             children: this.bodyText
-          }), Chunk728345 && !Chunk812206 && null != Chunk647438.giftStyle && !Chunk884697 && !Chunk703656 && (0, Chunk951288.jsx)(Chunk981632.Z, {
+          }), Chunk812206 && !Chunk884697 && null != Chunk120356.giftStyle && !Chunk583434 && !Chunk146779 && (0, Chunk951288.jsx)(Chunk981632.Z, {
             defaultAnimationState: this.getDefaultAnimationStatus(),
             idleAnimationState: this.getIdleAnimationStatus(),
             className: Chunk269142.giftAnimation,
-            giftStyle: Chunk647438.giftStyle
-          }), this.state.opened && !Chunk703656 && Chunk812206 && (0, Chunk951288.jsx)(Chunk551425.Z, {
-            giftCode: Chunk647438
-          }), Chunk703656 && (0, Chunk951288.jsx)(Chunk481060.Text, {
+            giftStyle: Chunk120356.giftStyle
+          }), this.state.opened && !Chunk146779 && Chunk884697 && (0, Chunk951288.jsx)(Chunk551425.Z, {
+            giftCode: Chunk120356
+          }), Chunk146779 && (0, Chunk951288.jsx)(Chunk481060.Text, {
             className: Chunk269142.body,
             variant: "text-md/normal",
             children: this.errorMessage
-          }), Chunk728345 && this.state.opened && !this.state.accepted && !Chunk703656 && null != Chunk533307 && "" !== Chunk533307 && !Chunk146779 && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+          }), Chunk812206 && this.state.opened && !this.state.accepted && !Chunk146779 && null != Chunk410030 && "" !== Chunk410030 && !Chunk763296 && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
             children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
               children: Chunk388032.intl.format(Chunk388032.t.DDO4W1, {
-                sender: Chunk51144.ZP.getName(Chunk906732)
+                sender: Chunk51144.ZP.getName(Chunk728345)
               })
             }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
-              id: Chunk120356,
+              id: Chunk979554,
               className: Chunk269142.customMessage,
               variant: "heading-sm/bold",
-              children: Chunk533307
+              children: Chunk410030
             })]
+          }), Chunk82142 && (0, Chunk951288.jsx)(Chunk435883.q, {
+            sku: module,
+            className: s()({
+              [Chunk269142.gameItemImageGiftUnopened]: !this.state.opened,
+              [Chunk269142.gameItemImageGiftOpened]: this.state.opened
+            })
           }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
             variant: "primary",
             text: this.buttonText,
-            loading: exports,
+            loading: require,
             onClick: () => {
               this.trackStepAnalytics(), this.handleClick()
             }
           })]
         })]
-      }), null != Chunk647438.giftStyle && !Chunk442837 && this.step !== Chunk981631.wZ8.ERROR && !Chunk884697 && !exports && Chunk583434 && (null == Chunk410030 || null == Chunk832149 ? (0, Chunk951288.jsx)(X, {
-        openedGift: Chunk583434 && !Chunk884697 && !exports
+      }), null != Chunk120356.giftStyle && !Chunk780384 && this.step !== Chunk981631.wZ8.ERROR && !Chunk583434 && !require && Chunk832149 && (null == Chunk607070 || null == Chunk745510 ? (0, Chunk951288.jsx)(J, {
+        openedGift: Chunk832149 && !Chunk583434 && !require
       }) : (0, Chunk951288.jsx)(Chunk715627.Z, {
         confettiTarget: this.modalRef.current,
-        emojiURL: Chunk832149
-      })), !Chunk884697 && !exports && Chunk583434 && null != Chunk607070 && (0, Chunk951288.jsx)(Y, {
-        soundId: Chunk607070,
+        emojiURL: Chunk745510
+      })), !Chunk583434 && !require && Chunk832149 && null != Chunk100527 && (0, Chunk951288.jsx)(Q, {
+        soundId: Chunk100527,
         step: this.step
       })]
     })
   }
   constructor(...t) {
-    super(...t), q(this, "state", {
+    super(...t), Y(this, "state", {
       error: null,
       accepted: false,
       opened: false,
@@ -409,15 +419,15 @@ class J extends Chunk647438.Component {
       step: true,
       emojiURL: true,
       isPremiumAppGift: false
-    }), q(this, "modalRef", r.createRef()), q(this, "handleOpen", () => {
+    }), Y(this, "modalRef", r.createRef()), Y(this, "handleOpen", () => {
       this.setState({
         opened: true
       })
-    }), q(this, "handleAccept", async () => {
+    }), Y(this, "handleAccept", async () => {
       let {
         giftCode: t,
         channelContext: e,
-        onAccept: i
+        onAccept: n
       } = this.props;
       if (null == t) throw Error("GiftCode is null at acceptance.");
       try {
@@ -428,42 +438,42 @@ class J extends Chunk647438.Component {
           }
         }), this.setState({
           accepted: true
-        }), null == i || i()
+        }), null == n || n()
       } catch (t) {
         this.setState({
           error: t
         })
       }
-    }), q(this, "handleGoToLibrary", () => {
+    }), Y(this, "handleGoToLibrary", () => {
       let {
         onClose: t,
         libraryApplication: e
       } = this.props;
-      (0, w.uL)(F.Z5c.APPLICATION_LIBRARY, {
+      (0, w.uL)(z.Z5c.APPLICATION_LIBRARY, {
         state: {
           applicationId: null != e ? e.id : true
         }
       }), t()
-    }), q(this, "getDefaultAnimationStatus", () => this.step === F.wZ8.OPEN ? L.SR.IDLE : L.SR.ACTION), q(this, "getIdleAnimationStatus", () => {
-      if (this.step !== F.wZ8.OPEN) return L.SR.LOOP
+    }), Y(this, "getDefaultAnimationStatus", () => this.step === z.wZ8.OPEN ? U.SR.IDLE : U.SR.ACTION), Y(this, "getIdleAnimationStatus", () => {
+      if (this.step !== z.wZ8.OPEN) return U.SR.LOOP
     })
   }
 }
-let Q = Chunk442837.ZP.connectStores([Chunk283595.Z, Chunk55563.Z, Chunk812206.Z, Chunk82142.Z, Chunk509545.Z, Chunk607070.Z], t => {
+let tt = Chunk442837.ZP.connectStores([Chunk283595.Z, Chunk55563.Z, Chunk812206.Z, Chunk82142.Z, Chunk509545.Z, Chunk607070.Z], t => {
     let {
       giftCode: e
-    } = t, i = E.Z.get(e.skuId), n = null != i ? y.Z.getApplication(i.applicationId) : null, r = p.Z.useReducedMotion;
+    } = t, n = N.Z.get(e.skuId), i = null != n ? y.Z.getApplication(n.applicationId) : null, r = p.Z.useReducedMotion;
     return {
-      sku: i,
-      libraryApplication: null != i && (null == e ? true : e.entitlementBranches) != null ? (0, k.z2)(e.entitlementBranches, i, C.Z) : null,
-      application: n,
-      subscriptionPlan: null != e.subscriptionPlanId ? (0, G.oE)(e.subscriptionPlanId) : null,
-      accepting: A.Z.getIsAccepting(e.code),
+      sku: n,
+      libraryApplication: null != n && (null == e ? true : e.entitlementBranches) != null ? (0, D.z2)(e.entitlementBranches, n, T.Z) : null,
+      application: i,
+      subscriptionPlan: null != e.subscriptionPlanId ? (0, L.oE)(e.subscriptionPlanId) : null,
+      accepting: C.Z.getIsAccepting(e.code),
       useReducedMotion: r
     }
-  })(J),
-  $ = t => {
-    var e, i, r, {
+  })($),
+  te = t => {
+    var e, n, r, {
         channelContext: l,
         code: s,
         customGiftMessage: a,
@@ -471,42 +481,42 @@ let Q = Chunk442837.ZP.connectStores([Chunk283595.Z, Chunk55563.Z, Chunk812206.Z
         soundId: d,
         onClose: p
       } = t,
-      g = function(t, e) {
+      h = function(t, e) {
         if (null == t) return {};
-        var i, n, r = function(t, e) {
+        var n, i, r = function(t, e) {
           if (null == t) return {};
-          var i, n, r = {},
+          var n, i, r = {},
             l = Object.keys(t);
-          for (n = 0; n < l.length; n++) i = l[n], e.indexOf(i) >= 0 || (r[i] = t[i]);
+          for (i = 0; i < l.length; i++) n = l[i], e.indexOf(n) >= 0 || (r[n] = t[n]);
           return r
         }(t, e);
         if (Object.getOwnPropertySymbols) {
           var l = Object.getOwnPropertySymbols(t);
-          for (n = 0; n < l.length; n++) i = l[n], !(e.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(t, i) && (r[i] = t[i])
+          for (i = 0; i < l.length; i++) n = l[i], !(e.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(t, n) && (r[n] = t[n])
         }
         return r
       }(t, ["channelContext", "code", "customGiftMessage", "emojiName", "soundId", "onClose"]);
     let y = (0, S.Dt)(),
-      b = (0, o.e7)([A.Z], () => A.Z.get(s)),
-      P = (0, f.ZP)(),
+      b = (0, o.e7)([C.Z], () => C.Z.get(s)),
+      v = (0, f.ZP)(),
       {
         analyticsLocations: j
-      } = (0, h.ZP)(m.Z.GIFT_CODE_MODAL),
+      } = (0, g.ZP)(m.Z.GIFT_CODE_MODAL),
       {
         product: x
       } = (0, O.T)(null == b ? true : b.skuId);
-    return null == b ? null : (0, n.jsx)(Q, (e = function(t) {
+    return null == b ? null : (0, i.jsx)(tt, (e = function(t) {
       for (var e = 1; e < arguments.length; e++) {
-        var i = null != arguments[e] ? arguments[e] : {},
-          n = Object.keys(i);
-        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(i).filter(function(t) {
-          return Object.getOwnPropertyDescriptor(i, t).enumerable
-        }))), n.forEach(function(e) {
-          q(t, e, i[e])
+        var n = null != arguments[e] ? arguments[e] : {},
+          i = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
+          return Object.getOwnPropertyDescriptor(n, t).enumerable
+        }))), i.forEach(function(e) {
+          Y(t, e, n[e])
         })
       }
       return t
-    }({}, g), i = i = {
+    }({}, h), n = n = {
       customGiftMessage: a,
       channelContext: l,
       giftCode: b,
@@ -514,24 +524,24 @@ let Q = Chunk442837.ZP.connectStores([Chunk283595.Z, Chunk55563.Z, Chunk812206.Z
       emojiName: c,
       soundId: d,
       analyticsLocations: j,
-      isThemeDark: (0, u.wj)(P),
+      isThemeDark: (0, u.wj)(v),
       onClose: p,
       collectiblesItemType: null == x || null == (r = x.items[0]) ? true : r.type,
       onAccept: null != x ? () => {
-        p(), (0, v.Z)({
+        p(), (0, P.Z)({
           product: x,
           analyticsLocations: j,
-          purchaseType: z.o8.GIFT
+          purchaseType: V.o8.GIFT
         })
       } : true
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(i)) : (function(t, e) {
-      var i = Object.keys(t);
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(t, e) {
+      var n = Object.keys(t);
       if (Object.getOwnPropertySymbols) {
-        var n = Object.getOwnPropertySymbols(t);
-        i.push.apply(i, n)
+        var i = Object.getOwnPropertySymbols(t);
+        n.push.apply(n, i)
       }
-      return i
-    })(Object(i)).forEach(function(t) {
-      Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(i, t))
+      return n
+    })(Object(n)).forEach(function(t) {
+      Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
     }), e))
   }

@@ -14,8 +14,8 @@ var Chunk278323 = require("./278323.js"),
   Chunk388032 = require("./388032.jsx");
 
 function p(e, t, n, p) {
-  let f = t.username,
-    h = d.intl.format(d.t.VDODnp, {
+  let h = t.username,
+    f = d.intl.format(d.t.VDODnp, {
       username: "",
       game: n.name
     }),
@@ -31,8 +31,8 @@ function p(e, t, n, p) {
     });
   return {
     icon: m,
-    title: f,
-    body: h,
+    title: h,
+    body: f,
     confirmText: d.intl.string(d.t["fgP/wc"]),
     cancelText: d.intl.string(d.t.tpXzJy),
     onNotificationShow: () => {

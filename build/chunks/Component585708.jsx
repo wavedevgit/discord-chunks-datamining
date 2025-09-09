@@ -26,9 +26,9 @@ var Chunk13245 = require("./13245.js"),
 function E(e, t, n, E) {
   var _;
   let {
-    icon: I,
-    title: S,
-    body: x
+    icon: S,
+    title: x,
+    body: I
   } = (0, a.Xi)(e, t, n), {
     trackView: j,
     trackClick: C
@@ -42,13 +42,13 @@ function E(e, t, n, E) {
     channel_type: e.type
   });
   return {
-    icon: I,
-    title: S,
+    icon: S,
+    title: x,
     body: t.content.length > 0 ? (0, l.ZP)(t, {
       noStyleAndInteraction: true,
       formatInline: true,
       hideSimpleEmbedContent: false
-    }).content : x,
+    }).content : I,
     hint: (e, t) => e && !t ? null : (0, g.Q)((0, y.P)(), b.t.ykjOAA, b.intl.string(b.t.jZkzVF)),
     maxBodyLines: 2,
     renderFooter: (n, r, o) => n && !o ? (0, i.jsx)(m.Z, {
@@ -61,12 +61,12 @@ function E(e, t, n, E) {
       E && (0, c.GN)(u.Ay, u.yk), j()
     },
     onNotificationClick: () => {
-      let n = (0, f.getPID)();
+      let n = (0, h.getPID)();
       (0, o.In)(e.id, {
         section: v.jXE.OVERLAY,
         object: v.qAy.ACK_TEXT_CHAT_NOTIFICATION,
         objectType: v.Qqv.ACK_SEMI_AUTOMATIC
-      }, true, true, t.id), h.ZP.isInputLocked(n) ? (C("unlock"), r.Z.setInputLocked(false, n)) : (C("jump"), (0, s.uL)(v.Z5c.CHANNEL(e.guild_id, e.id, t.id)), d.isPlatformEmbedded && p.ZP.focus())
+      }, true, true, t.id), f.ZP.isInputLocked(n) ? (C("unlock"), r.Z.setInputLocked(false, n)) : (C("jump"), (0, s.uL)(v.Z5c.CHANNEL(e.guild_id, e.id, t.id)), d.isPlatformEmbedded && p.ZP.focus())
     },
     onDismissClick: () => {
       C("dismiss")

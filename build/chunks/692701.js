@@ -1,7 +1,7 @@
 /** Chunk was on 46290 **/
 /** chunk id: 692701, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 }), require("./642613.js"), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk884439 = require("./884439.js"),
@@ -13,9 +13,9 @@ var Chunk647438 = require("./647438.js"),
   Chunk709054 = require("./709054.js"),
   Chunk26033 = require("./26033.js"),
   Chunk561308 = require("./561308.js");
-let f = Chunk70956.Z.Millis.WEEK;
+let h = Chunk70956.Z.Millis.WEEK;
 
-function h(e, t) {
+function f(e, t) {
   let n = (0, l.N)(e),
     r = (0, o.cj)([s.Z], () => s.Z.getUserAffinitiesMap()),
     {
@@ -23,7 +23,7 @@ function h(e, t) {
     } = (0, a.ZB)(t);
   return i.useMemo(() => {
     if (null == c || null == n) return [];
-    let t = n.filter(t => (0, d.dX)(t) && (0, d.m9)(t) && t.extra.application_id === e && u.default.age(t.id) < f);
+    let t = n.filter(t => (0, d.dX)(t) && (0, d.m9)(t) && t.extra.application_id === e && u.default.age(t.id) < h);
     return "recency" === c ? t.sort((e, t) => u.default.compare(t.id, e.id)) : "art" === c ? t.sort((e, t) => g(r, t) - g(r, e)) : t
   }, [n, e, c, r])
 }

@@ -18,7 +18,7 @@ var Chunk26151 = require("./26151.js"),
 
 function m(e) {
   let t = (0, a.F6)(e, c.default, s.Z),
-    n = h.intl.string(h.t.ssrVzM),
+    n = f.intl.string(f.t.ssrVzM),
     m = (0, l.x)(e),
     g = (0, u.Z)(e),
     {
@@ -35,18 +35,18 @@ function m(e) {
     icon: m,
     title: t,
     body: n,
-    confirmText: h.intl.string(h.t["0D/6R0"]),
-    cancelText: h.intl.string(h.t.BVN4pK),
+    confirmText: f.intl.string(f.t["0D/6R0"]),
+    cancelText: f.intl.string(f.t.BVN4pK),
     onNotificationShow: () => {
       y()
     },
     onConfirmClick: (t, n) => {
-      if (O("join"), f.TPd.CALLABLE.has(e.type)) i.Z.call(e.id, false, false);
+      if (O("join"), h.TPd.CALLABLE.has(e.type)) i.Z.call(e.id, false, false);
       else {
-        if (e.type !== f.d4z.GUILD_VOICE) return;
+        if (e.type !== h.d4z.GUILD_VOICE) return;
         o.default.selectVoiceChannel(e.id)
       }
-      r.Z.updateNotificationStatus(n), r.Z.track(f.rMx.VOICE_CHANNEL_SELECTED, {
+      r.Z.updateNotificationStatus(n), r.Z.track(h.rMx.VOICE_CHANNEL_SELECTED, {
         location: "Overlay Notificaiton",
         guild_id: e.guild_id,
         channel_id: e.id,

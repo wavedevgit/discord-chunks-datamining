@@ -1,5 +1,5 @@
 /** Chunk was on 38029 **/
-/** chunk id: 715627, original params: t,e,i (module,exports,require) **/
+/** chunk id: 715627, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 }), require("./388685.js");
@@ -14,27 +14,27 @@ let o = {
     yMin: false,
     yMax: false
   },
-  u = (t, e, i) => null == i ? e : t * i / 100,
+  u = (t, e, n) => null == n ? e : t * n / 100,
   c = Chunk647438.memo(function(t) {
     let {
       confettiTarget: e,
-      colors: i,
+      colors: n,
       emojiURL: c,
       numBursts: d,
       particlesPerBurst: f,
       offsetXPercentageMax: p,
       offsetXPercentageMin: m,
-      offsetYPercentageMax: h,
-      offsetYPercentageMin: g,
+      offsetYPercentageMax: g,
+      offsetYPercentageMin: h,
       customConfettiCanvas: y,
       speedValues: b = o,
       dragCoefficientValue: O = 1.66,
-      onAnimationEnd: P
-    } = t, [v, j] = r.useState(null), {
+      onAnimationEnd: v
+    } = t, [P, j] = r.useState(null), {
       confettiCanvas: S
-    } = r.useContext(s.h), x = (0, l.uR)(null != y ? y : S, v), [w, Z] = r.useState(false);
+    } = r.useContext(s.h), x = (0, l.uR)(null != y ? y : S, P), [w, I] = r.useState(false);
     r.useEffect(() => {
-      w && (null == P || P())
+      w && (null == v || v())
     });
     let _ = r.useMemo(() => {
       if (null != c) return [{
@@ -45,35 +45,35 @@ let o = {
     return r.useEffect(() => {
       if (null == e) return;
       let t = Array(null != d ? d : 4).fill(0);
-      return t = t.map((i, n) => setTimeout(() => {
-        x.createMultipleConfetti(function(t, e, i, n, r) {
+      return t = t.map((n, i) => setTimeout(() => {
+        x.createMultipleConfetti(function(t, e, n, i, r) {
           var l, s;
           let c = arguments.length > 5 && true !== arguments[5] ? arguments[5] : o,
             d = arguments.length > 6 && true !== arguments[6] ? arguments[6] : 1.66,
-            f = u(t.width, 100, i),
+            f = u(t.width, 100, n),
             p = u(t.height, 75, r),
             m = u(t.width, 350, e),
-            h = u(t.height, 75, n),
+            g = u(t.height, 75, i),
             {
-              xMin: g,
+              xMin: h,
               xMax: y,
               yMin: b,
               yMax: O
             } = c;
           return l = function(t) {
             for (var e = 1; e < arguments.length; e++) {
-              var i = null != arguments[e] ? arguments[e] : {},
-                n = Object.keys(i);
-              "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(i).filter(function(t) {
-                return Object.getOwnPropertyDescriptor(i, t).enumerable
-              }))), n.forEach(function(e) {
-                var n;
-                n = i[e], e in t ? Object.defineProperty(t, e, {
-                  value: n,
+              var n = null != arguments[e] ? arguments[e] : {},
+                i = Object.keys(n);
+              "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
+                return Object.getOwnPropertyDescriptor(n, t).enumerable
+              }))), i.forEach(function(e) {
+                var i;
+                i = n[e], e in t ? Object.defineProperty(t, e, {
+                  value: i,
                   enumerable: true,
                   configurable: true,
                   writable: true
-                }) : t[e] = n
+                }) : t[e] = i
               })
             }
             return t
@@ -86,13 +86,13 @@ let o = {
               },
               maxValue: {
                 x: t.left + m,
-                y: t.top + h
+                y: t.top + g
               }
             },
             velocity: {
               type: "static-random",
               minValue: {
-                x: g,
+                x: h,
                 y: b
               },
               maxValue: {
@@ -110,23 +110,23 @@ let o = {
               value: d
             }
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(s)) : (function(t, e) {
-            var i = Object.keys(t);
+            var n = Object.keys(t);
             if (Object.getOwnPropertySymbols) {
-              var n = Object.getOwnPropertySymbols(t);
-              i.push.apply(i, n)
+              var i = Object.getOwnPropertySymbols(t);
+              n.push.apply(n, i)
             }
-            return i
+            return n
           })(Object(s)).forEach(function(t) {
             Object.defineProperty(l, t, Object.getOwnPropertyDescriptor(s, t))
           }), l
-        }(e.getBoundingClientRect(), p, m, h, g, b, O), null != f ? f : 50), n === t.length - 1 && null != P && Z(true)
-      }, 60 * n)), () => {
+        }(e.getBoundingClientRect(), p, m, g, h, b, O), null != f ? f : 50), i === t.length - 1 && null != v && I(true)
+      }, 60 * i)), () => {
         for (let e of t) clearTimeout(e)
       }
-    }, [x, e, d, f, p, m, h, g, b, O, P]), (0, n.jsx)(l.Ji, {
+    }, [x, e, d, f, p, m, g, h, b, O, v]), (0, i.jsx)(l.Ji, {
       ref: j,
       sprites: null != _ ? _ : a.CA,
-      colors: null != i ? i : a.Br,
+      colors: null != n ? n : a.Br,
       spriteWidth: a.Ko,
       spriteHeight: a.Ko
     })

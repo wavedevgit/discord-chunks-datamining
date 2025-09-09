@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk667142 = require("./667142.js"),
   Chunk333031 = require("./333031.jsx"),
   Chunk388592 = require("./388592.js");
-let h = {
+let f = {
   mass: 1,
   tension: 600,
   friction: 60,
@@ -27,23 +27,23 @@ function m(e) {
     pinned: n
   } = e, [o, a] = r.useState(0), [m, g] = r.useState(0), [y, O] = r.useState(0), v = r.useRef(0), [b, E] = r.useState(0), {
     timeToLiveMs: _,
-    reappearTimeMs: I
+    reappearTimeMs: S
   } = d.ZP.useState(e => ({
     timeToLiveMs: e.timeToLiveMs,
     reappearTimeMs: e.reappearTimeMs
-  }), s()), S = {
+  }), s()), x = {
     timeToLiveMs: _,
-    reappearTimeMs: I
-  }, x = r.useRef(S);
+    reappearTimeMs: S
+  }, I = r.useRef(x);
   r.useEffect(() => {
-    x.current = S
+    I.current = x
   }), r.useEffect(() => (v.current = setInterval(() => {
     let e = Date.now();
     g(e), O(t => {
       if (0 === t) return e;
       let n = e - t,
-        i = x.current.timeToLiveMs,
-        r = i + x.current.reappearTimeMs;
+        i = I.current.timeToLiveMs,
+        r = i + I.current.reappearTimeMs;
       return n > i ? t + r : t
     })
   }, 100), () => {
@@ -53,7 +53,7 @@ function m(e) {
       a(Date.now()), E(e => e + 1)
     },
     C = o > 0 && m - o < 1e3,
-    N = (0, u.Yzy)(y > 0 && y < m && m - y < _, {
+    w = (0, u.Yzy)(y > 0 && y < m && m - y < _, {
       from: {
         opacity: 0
       },
@@ -63,21 +63,21 @@ function m(e) {
       leave: {
         opacity: 0
       },
-      config: h
+      config: f
     }),
-    [w, Z] = r.useState(false);
+    [N, Z] = r.useState(false);
   if (r.useEffect(() => {
       b > 10 && Z(true)
-    }, [b]), w) throw Error("ClickZoneDebugWidget crashed, too many clicks");
+    }, [b]), N) throw Error("ClickZoneDebugWidget crashed, too many clicks");
   return t && !n ? null : (0, i.jsx)(i.Fragment, {
-    children: N((e, t) => t && (0, i.jsx)(c.animated.div, {
+    children: w((e, t) => t && (0, i.jsx)(c.animated.div, {
       style: e,
-      className: f.clickZoneDebugContainer,
+      className: h.clickZoneDebugContainer,
       children: (0, i.jsx)(p.Z, {
-        className: l()(f.clickZone, C && f.clickBackground),
+        className: l()(h.clickZone, C && h.clickBackground),
         children: (0, i.jsx)(u.P3F, {
           onClick: j,
-          className: f.clickable,
+          className: h.clickable,
           children: (0, i.jsxs)(u.Text, {
             variant: "text-md/semibold",
             color: "always-white",
