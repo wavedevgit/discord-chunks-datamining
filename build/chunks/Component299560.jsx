@@ -1,7 +1,7 @@
 /** Chunk was on 30355 **/
 /** chunk id: 299560, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk229870 = require("./229870.js");
-let x = {
+let v = {
   [Chunk296009.l.FAVORITE_GAMES]: {
     placeholder: {
       variant: "details",
@@ -62,7 +62,7 @@ let x = {
   }
 };
 
-function v(e) {
+function x(e) {
   let {
     widgetType: t,
     onAddWidget: n,
@@ -71,8 +71,8 @@ function v(e) {
     trackUserProfileEditAction: d
   } = e, {
     placeholder: y,
-    getAriaLabel: v
-  } = x[t], O = "small" === i, P = l.useMemo(() => {
+    getAriaLabel: x
+  } = v[t], O = "small" === i, P = l.useMemo(() => {
     switch (t) {
       case s.l.CURRENT_GAMES:
       case s.l.FAVORITE_GAMES:
@@ -99,7 +99,7 @@ function v(e) {
   return (0, r.jsxs)(o.P3F, {
     className: a()(h.addButtonContainer, O && h.sizeSmall, c && h.loading),
     onClick: S,
-    "aria-label": v(P),
+    "aria-label": x(P),
     "aria-busy": c,
     children: ["details" === y.variant ? (0, r.jsx)(b.i, {
       applicationId: y.applicationId,

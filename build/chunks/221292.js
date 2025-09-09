@@ -310,7 +310,8 @@ let v = e => {
       widgetEdited: a,
       gameIds: o,
       tags: s,
-      numCharactersCommentary: l
+      numCharactersCommentary: l,
+      isWidgetRemoved: c
     } = e;
     C(O(b({}, e), {
       action: "EDIT_SAVED"
@@ -319,6 +320,7 @@ let v = e => {
       widget_edited: a,
       game_ids: o,
       tags: s,
-      num_characters_commentary: l
+      num_characters_commentary: l,
+      is_widget_removed: c
     }))
   }

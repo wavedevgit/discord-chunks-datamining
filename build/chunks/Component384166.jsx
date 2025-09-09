@@ -1,7 +1,7 @@
 /** Chunk was on 30355 **/
 /** chunk id: 384166, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => x
 }), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,12 +22,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk461671 = require("./461671.js");
 
-function v(e) {
+function x(e) {
   let {
     className: t
   } = e, {
     trackUserProfileEditSaved: n
-  } = (0, f.KZ)(), [i, v] = l.useState(false), O = (0, o.Wu)([p.Z], () => {
+  } = (0, f.KZ)(), [i, x] = l.useState(false), O = (0, o.Wu)([p.Z], () => {
     var e;
     return null != (e = p.Z.getSaveablePendingWidgets()) ? e : []
   }), P = (0, o.Wu)([p.Z], () => p.Z.getChangedWidgets()), S = (0, o.Wu)([p.Z], () => p.Z.getRemovedWidgets()), A = (0, o.e7)([p.Z], () => p.Z.hasSaveablePendingChanges()), I = (0, o.e7)([p.Z], () => p.Z.isSubmitting), w = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), N = (0, c.Yzy)(A, {
@@ -48,7 +48,7 @@ function v(e) {
     let e = null;
 
     function t() {
-      v(true), e = setTimeout(() => v(false), 500)
+      x(true), e = setTimeout(() => x(false), 500)
     }
     return d.S.subscribe(y.CkL.EMPHASIZE_NOTICE, t), () => {
       d.S.unsubscribe(y.CkL.EMPHASIZE_NOTICE, t), null !== e && clearTimeout(e)
@@ -65,7 +65,8 @@ function v(e) {
       }
       for (let e of P) {
         let t = {
-          widgetEdited: e.type
+          widgetEdited: e.type,
+          isWidgetRemoved: false
         };
         (0, m.Wc)(e) && (t.gameIds = e.games.map(e => e.applicationId), t.tags = e.games.flatMap(e => {
           var t;
@@ -76,7 +77,8 @@ function v(e) {
         }, 0)), n(t)
       }
       for (let e of S) n({
-        widgetEdited: e.type
+        widgetEdited: e.type,
+        isWidgetRemoved: true
       })
     }, [O, P, S, n]),
     Z = l.useCallback(() => {
@@ -86,17 +88,17 @@ function v(e) {
     className: t,
     style: e,
     children: (0, r.jsxs)("section", {
-      className: a()(x.content, {
-        [x.emphasized]: i
+      className: a()(v.content, {
+        [v.emphasized]: i
       }),
       "aria-label": h.intl.string(h.t["odDw+/"]),
       children: [(0, r.jsx)(c.Text, {
         variant: "text-md/medium",
         color: "text-primary",
-        className: x.message,
+        className: v.message,
         children: h.intl.string(h.t["/lQiX1"])
       }), (0, r.jsxs)("div", {
-        className: x.actions,
+        className: v.actions,
         children: [(0, r.jsx)(c.zxk, {
           size: "sm",
           variant: "secondary",

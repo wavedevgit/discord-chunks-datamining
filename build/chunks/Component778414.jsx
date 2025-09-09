@@ -108,7 +108,7 @@ function T(e) {
       guildId: n,
       channelId: i,
       index: l
-    }, e.type)), o && (0, r.jsx)(x.Z, {})]
+    }, e.type)), o && (0, r.jsx)(v.Z, {})]
   })
 }
 
@@ -128,7 +128,7 @@ function k(e) {
       [w.hasToolbar]: s
     }),
     fade: true,
-    children: [(0, r.jsx)(v.Z, {
+    children: [(0, r.jsx)(x.Z, {
       scrollerRef: i
     }), (0, r.jsx)(T, N({
       user: t

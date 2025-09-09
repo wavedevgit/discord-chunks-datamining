@@ -83,10 +83,10 @@ function I(e) {
       onClose: Z
     })
   }
-  return (0, r.jsxs)(v.F, {
+  return (0, r.jsxs)(x.F, {
     className: A.scroller,
     fade: true,
-    children: [W ? (0, r.jsx)(x.Z, {
+    children: [W ? (0, r.jsx)(v.Z, {
       heading: S.intl.string(S.t.J6STd3),
       children: (0, r.jsxs)("ul", {
         className: A.cards,
@@ -120,7 +120,7 @@ function I(e) {
           })
         })]
       })
-    }) : null, z ? (0, r.jsx)(x.Z, {
+    }) : null, z ? (0, r.jsx)(v.Z, {
       heading: S.intl.string(S.t.jzgEoK),
       introText: B ? S.intl.format(S.t["4bk9Ag"], {
         learnMoreHook: (e, t) => (0, r.jsx)(i.eee, {

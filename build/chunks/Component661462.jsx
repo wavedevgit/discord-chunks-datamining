@@ -127,8 +127,8 @@ function h(e) {
   } = e, {
     trackUserProfileAction: h
   } = (0, o.KZ)(), [{
-    section: x,
-    subsection: v,
+    section: v,
+    subsection: x,
     text: O
   }, P] = l.useState(b(p({}, null != (t = d.find(e => {
     let {
@@ -148,7 +148,7 @@ function h(e) {
       children: (0, r.jsx)(s.njP, {
         type: "top",
         look: "custom",
-        selectedItem: x,
+        selectedItem: v,
         onItemSelect: e => {
           h({
             action: "PRESS_SECTION",
@@ -166,7 +166,7 @@ function h(e) {
         }, e.section))
       })
     }), (0, r.jsx)(s.njP.Panel, {
-      id: x,
+      id: v,
       "aria-label": O,
       className: g.tabBarPanel,
       children: (0, r.jsx)(y, {
@@ -175,8 +175,8 @@ function h(e) {
         displayProfile: a,
         guildId: c,
         channelId: u,
-        section: x,
-        subsection: v,
+        section: v,
+        subsection: x,
         onClose: j
       })
     })]
