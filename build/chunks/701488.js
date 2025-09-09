@@ -87,7 +87,9 @@ let N = {
       [Chunk911969.C3.ANDROID]: N
     },
     has_csp_exception: false,
-    displays_advertisements: false
+    displays_advertisements: false,
+    blocked_locales: [],
+    supported_locales: []
   },
   P = [Chunk981631.d4z.GUILD_TEXT, Chunk981631.d4z.DM, Chunk981631.d4z.GROUP_DM],
   w = [...P, Chunk981631.d4z.GUILD_VOICE],
