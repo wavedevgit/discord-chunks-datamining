@@ -511,6 +511,7 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
             })]
           }) : (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
             children: [(0, Chunk951288.jsx)(ee, {}), (0, Chunk951288.jsxs)(Chunk755721.zx, {
+              "data-migration-pending": true,
               tabIndex: false,
               size: Chunk755721.zx.Sizes.MEDIUM,
               onClick: () => {

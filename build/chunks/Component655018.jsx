@@ -135,7 +135,7 @@ function P(e) {
           isSelected: U === t,
           label: n.title,
           icon: (0, r.jsx)(C.Z, {
-            size: 24,
+            size: 20,
             hangStatusActivity: i,
             fallbackVariant: A,
             className: S.icon

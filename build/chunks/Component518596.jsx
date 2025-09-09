@@ -70,6 +70,8 @@ function h() {
       target: t
     }))
   }, {
-    modalKey: p
+    modalKey: p,
+    stackingBehavior: "replaceAll",
+    stackNextByDefault: true
   }) : (0, Chunk37234.jN)(Chunk981631.S9g.USER_SETTINGS)
 }
