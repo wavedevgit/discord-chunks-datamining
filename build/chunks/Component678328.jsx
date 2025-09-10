@@ -1,7 +1,7 @@
 /** Chunk was on 39159 **/
 /** chunk id: 678328, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,18 +18,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk782991 = require("./782991.js");
 
-function b() {
+function x() {
   let {
     portkeyGames: e,
     instances: n,
     setPortkeyInstance: t,
     setCurrentGame: a,
-    onNext: b
-  } = (0, Chunk183369.aj)(), x = Chunk647438.useCallback(e => {
-    a(e), b()
-  }, [Chunk120356, b]), j = Chunk647438.useCallback(e => {
-    t(e), b()
-  }, [require, b]), h = exports.length >= Chunk473682.zI, _ = exports.length > 0;
+    onNext: x
+  } = (0, Chunk183369.aj)(), j = Chunk647438.useCallback(e => {
+    a(e), x()
+  }, [Chunk120356, x]), b = Chunk647438.useCallback(e => {
+    t(e), x()
+  }, [require, x]), h = exports.length >= Chunk473682.zI, _ = exports.length > 0;
   return 0 === Object.values(module).length ? (0, Chunk951288.jsx)("div", {
     className: Chunk782991.loadingContainer,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {
@@ -54,7 +54,7 @@ function b() {
         className: Chunk782991.gameInstanceContainer,
         children: exports.map((e, n) => (0, r.jsx)(c.Z, {
           gameInstance: e,
-          onClick: j
+          onClick: b
         }, "instance-".concat(e.id, "-").concat(n)))
       }), h && (0, Chunk951288.jsx)(Chunk494620.Z, {
         className: Chunk782991.maxInstancesWarning,
@@ -77,7 +77,7 @@ function b() {
         children: Object.values(module).map((e, n) => (0, r.jsx)(d.Z, {
           game: e,
           disabled: h,
-          onClick: x
+          onClick: j
         }, "game-".concat(e.id, "-").concat(n)))
       })]
     }), (0, Chunk951288.jsxs)(Chunk422663.ok, {

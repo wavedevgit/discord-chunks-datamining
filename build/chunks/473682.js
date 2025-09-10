@@ -26,7 +26,7 @@ let a = {
           step: "select-game"
         },
         onNext: {
-          type: "purchase"
+          type: "save"
         }
       }
     }

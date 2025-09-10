@@ -21,5 +21,6 @@ module.exports = {
   pulse: "pulse__8303d",
   option: "option__8303d",
   value: "value__8303d",
-  optionSpacer: "optionSpacer__8303d"
+  optionSpacer: "optionSpacer__8303d",
+  infoBox: "infoBox__8303d"
 }

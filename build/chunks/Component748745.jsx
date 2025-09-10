@@ -1,7 +1,7 @@
 /** Chunk was on 39159 **/
 /** chunk id: 748745, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -17,7 +17,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk362320 = require("./362320.js"),
   Chunk961820 = require("./961820.js");
 
-function v(e) {
+function f(e) {
   let {
     gameInstance: n
   } = e;
@@ -73,7 +73,7 @@ function v(e) {
   })
 }
 
-function f(e) {
+function v(e) {
   let {
     gameInstance: n,
     onClick: t
@@ -92,7 +92,7 @@ function f(e) {
       }), (0, r.jsx)(s.P2, {
         text: m.intl.string(u.default.FFLkm5)
       })]
-    }), (0, r.jsx)(v, {
+    }), (0, r.jsx)(f, {
       gameInstance: n
     })]
   })

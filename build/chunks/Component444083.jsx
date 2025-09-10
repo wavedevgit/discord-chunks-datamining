@@ -35,6 +35,7 @@ function b(e) {
     targetElementRef: l,
     align: "top",
     position: "right",
+    animationPosition: "bottom",
     disablePointerEvents: false,
     renderPopout: e => {
       let {

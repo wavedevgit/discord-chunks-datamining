@@ -1,7 +1,7 @@
 /** Chunk was on 39159 **/
 /** chunk id: 560467, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => C
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -9,16 +9,19 @@ var Chunk951288 = require("./951288.js"),
   l = require.n(Chunk120356),
   Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk494620 = require("./494620.jsx"),
   Chunk642633 = require("./642633.jsx"),
   Chunk183369 = require("./183369.jsx"),
   Chunk422663 = require("./422663.jsx"),
+  Chunk985862 = require("./985862.js"),
+  Chunk210682 = require("./210682.js"),
   Chunk555546 = require("./555546.js"),
   Chunk473682 = require("./473682.js"),
   Chunk401561 = require("./401561.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk149671 = require("./149671.js");
 
-function b(e) {
+function h(e) {
   let {
     currentGame: n,
     planId: t,
@@ -27,28 +30,28 @@ function b(e) {
   } = e, c = i.useMemo(() => null == n ? true : n.plans.find(e => e.id === t), [null == n ? true : n.plans, t]);
   return null == c ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: l()(f.optionContainer, o),
+      className: l()(b.optionContainer, o),
       children: [(0, r.jsx)("span", {
         children: c.name
       }), (0, r.jsxs)("div", {
-        className: f.labelContainer,
+        className: b.labelContainer,
         children: [(0, r.jsx)(s.$Eu, {
           size: "xs",
           color: s.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
         }), (0, r.jsx)(s.Text, {
           variant: "text-xs/medium",
-          children: v.intl.format(p.default.FrRqub, {
+          children: j.intl.format(x.default.FrRqub, {
             boostCount: c.cost
           })
         })]
       })]
     }), !a && (0, r.jsx)("div", {
-      className: f.optionSpacer
+      className: b.optionSpacer
     })]
   })
 }
 
-function x(e) {
+function _(e) {
   let {
     currentGame: n,
     locationString: t,
@@ -57,49 +60,50 @@ function x(e) {
   } = e, c = i.useMemo(() => null == n ? true : n.locations.find(e => e.region === t), [null == n ? true : n.locations, t]), {
     pingText: d,
     pingCircleStyle: u
-  } = (0, m.i)(null == c ? true : c.pingUrl);
+  } = (0, f.i)(null == c ? true : c.pingUrl);
   return null == c ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: l()(f.optionContainer, o),
+      className: l()(b.optionContainer, o),
       children: [(0, r.jsx)("span", {
         children: c.region
       }), (0, r.jsxs)("div", {
-        className: f.labelContainer,
+        className: b.labelContainer,
         children: [(0, r.jsx)("div", {
-          className: l()(f.pingCircle, u)
+          className: l()(b.pingCircle, u)
         }), (0, r.jsx)(s.Text, {
           variant: "text-xs/medium",
           children: d
         })]
       })]
     }), !a && (0, r.jsx)("div", {
-      className: f.optionSpacer
+      className: b.optionSpacer
     })]
   })
 }
 
-function j() {
+function C() {
   let {
     currentGame: e,
     location: n,
-    setLocation: t,
-    name: a,
-    setName: l,
-    planId: m,
-    setPlanId: j
-  } = (0, Chunk183369.aj)(), h = Chunk647438.useMemo(() => {
+    portkeyInstance: t,
+    setLocation: a,
+    name: l,
+    setName: f,
+    planId: C,
+    setPlanId: y
+  } = (0, Chunk183369.aj)(), O = (0, Chunk985862.Z)(), N = Chunk647438.useMemo(() => {
     var n;
     return null != (n = null == module ? true : module.locations.map(e => ({
       value: e.region,
       label: e.region
     }))) ? exports : []
-  }, [module]), _ = Chunk647438.useMemo(() => {
+  }, [module]), S = Chunk647438.useMemo(() => {
     var n;
     return null != (n = null == module ? true : module.plans.map(e => ({
       value: e.id,
       label: e.name
     }))) ? exports : []
-  }, [module]), C = true === Chunk120356 || "" === Chunk120356 || true === exports || "" === exports || true === Chunk555546;
+  }, [module]), P = (0, Chunk210682.Z)();
   return null == module ? null : (0, Chunk951288.jsxs)("div", {
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       className: Chunk149671.title,
@@ -125,8 +129,8 @@ function j() {
               })
             })]
           }), (0, Chunk951288.jsx)(Chunk481060.oil, {
-            value: Chunk120356,
-            onChange: l,
+            value: l,
+            onChange: Chunk555546,
             placeholder: Chunk388032.intl.string(Chunk401561.default.Kg0Zio)
           })]
         }), (0, Chunk951288.jsxs)("div", {
@@ -147,22 +151,22 @@ function j() {
           }), (0, Chunk951288.jsx)(Chunk481060.PhF, {
             serialize: e => e.toString(),
             isSelected: e => e === n,
-            options: h,
+            options: N,
             optionClassName: Chunk149671.option,
-            select: e => t(e),
+            select: e => a(e),
             placeholder: Chunk388032.intl.string(Chunk401561.default["op6/kZ"]),
-            renderOptionLabel: t => (0, r.jsx)(x, {
+            renderOptionLabel: t => (0, r.jsx)(_, {
               currentGame: e,
               locationString: t.value,
               selected: (null == t ? true : t.value) === n
             }),
             renderOptionValue: t => {
               var i, a;
-              return (0, r.jsx)(x, {
+              return (0, r.jsx)(_, {
                 currentGame: e,
                 locationString: null == (i = t[0]) ? true : i.value,
                 selected: (null == (a = t[0]) ? true : a.value) === n,
-                className: f.value
+                className: b.value
               })
             }
           })]
@@ -176,24 +180,24 @@ function j() {
             })
           }), (0, Chunk951288.jsx)(Chunk481060.PhF, {
             serialize: e => e.toString(),
-            isSelected: e => e === m,
-            options: _,
+            isSelected: e => e === C,
+            options: S,
             optionClassName: Chunk149671.option,
-            select: e => j(e),
+            select: e => y(e),
             placeholder: Chunk388032.intl.string(Chunk401561.default["4QOSPj"]),
             renderOptionValue: n => {
               var t, i;
-              return (0, r.jsx)(b, {
+              return (0, r.jsx)(h, {
                 currentGame: e,
                 planId: null == (t = n[0]) ? true : t.value,
-                selected: (null == (i = n[0]) ? true : i.value) === m,
-                className: f.value
+                selected: (null == (i = n[0]) ? true : i.value) === C,
+                className: b.value
               })
             },
-            renderOptionLabel: n => (0, r.jsx)(b, {
+            renderOptionLabel: n => (0, r.jsx)(h, {
               currentGame: e,
               planId: null == n ? true : n.value,
-              selected: (null == n ? true : n.value) === m
+              selected: (null == n ? true : n.value) === C
             })
           })]
         })]
@@ -201,11 +205,21 @@ function j() {
         className: Chunk149671.gameDetailsContainer,
         children: (0, Chunk951288.jsx)(Chunk642633.Z, {})
       })]
+    }), null != require && 0 !== O && (0, Chunk951288.jsx)(Chunk494620.Z, {
+      className: Chunk149671.infoBox,
+      children: (0, Chunk951288.jsx)(Chunk481060.Text, {
+        variant: "text-xs/medium",
+        children: O < 0 ? Chunk388032.intl.format(Chunk401561.default.H8rHQU, {
+          boostCount: Math.abs(O)
+        }) : Chunk388032.intl.format(Chunk401561.default.h4ZvmJ, {
+          boostCount: O
+        })
+      })
     }), (0, Chunk951288.jsxs)(Chunk422663.ok, {
       step: Chunk473682.Vb.SERVER_SETTINGS,
       className: Chunk149671.footerContainer,
       children: [(0, Chunk951288.jsx)(Chunk422663.VS, {}), (0, Chunk951288.jsx)(Chunk422663.oh, {
-        disabled: C
+        disabled: !P
       })]
     })]
   })
