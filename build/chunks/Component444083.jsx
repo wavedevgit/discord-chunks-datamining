@@ -30,8 +30,8 @@ function b(e) {
   let {
     guildId: t,
     instance: n
-  } = e, l = s.useRef(null);
-  return (0, r.jsx)(a.yRy, {
+  } = e, l = i.useRef(null);
+  return (0, r.jsx)(s.yRy, {
     targetElementRef: l,
     align: "top",
     position: "right",
@@ -39,25 +39,25 @@ function b(e) {
     disablePointerEvents: false,
     renderPopout: e => {
       let {
-        closePopout: s
+        closePopout: i
       } = e;
-      return (0, r.jsx)(a.v2r, {
+      return (0, r.jsx)(s.v2r, {
         navId: "portkey-popout-context-menu",
         onClose: () => {
-          (0, i.Zy)(), s()
+          (0, a.Zy)(), i()
         },
-        "aria-label": d.intl.string(u.default.xCq1DA),
+        "aria-label": u.intl.string(d.default.xCq1DA),
         onSelect: true,
-        children: (0, r.jsxs)(a.kSQ, {
-          children: [(0, r.jsx)(a.sNh, {
+        children: (0, r.jsxs)(s.kSQ, {
+          children: [(0, r.jsx)(s.sNh, {
             id: "get-support",
-            icon: a.kBi,
-            label: d.intl.string(u.default["TciV8/"]),
+            icon: s.kBi,
+            label: u.intl.string(d.default["TciV8/"]),
             action: () => {}
-          }), (0, r.jsx)(a.sNh, {
+          }), (0, r.jsx)(s.sNh, {
             id: "settings",
-            icon: a.ewm,
-            label: d.intl.string(u.default.NUTl4u),
+            icon: s.ewm,
+            label: u.intl.string(d.default.NUTl4u),
             action: () => {
               (0, c.Z)({
                 guildId: t,
@@ -72,7 +72,7 @@ function b(e) {
     },
     children: e => {
       var t, n;
-      return (0, r.jsx)(a.P3F, (t = function(e) {
+      return (0, r.jsx)(s.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -90,11 +90,11 @@ function b(e) {
         }
         return e
       }({
-        "aria-label": d.intl.string(d.t.UKOtz8),
+        "aria-label": u.intl.string(u.t.UKOtz8),
         className: m.clickable
       }, e), n = n = {
         innerRef: l,
-        children: (0, r.jsx)(a.xhG, {
+        children: (0, r.jsx)(s.xhG, {
           color: "currentColor",
           size: "sm"
         })

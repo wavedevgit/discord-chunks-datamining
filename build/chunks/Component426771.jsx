@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 426771, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => _
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,48 +18,48 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk639560 = require("./639560.js");
 
-function x(e) {
-  var t, n, x;
-  let _, {
+function _(e) {
+  var t, n, _;
+  let x, {
       guildId: h,
       group: b,
       powerups: C
     } = e,
-    [j, P] = i.useState(false),
-    E = (0, c.Gv)(h, C),
+    [j, E] = i.useState(false),
+    P = (0, c.Gv)(h, C),
     I = (0, o.e7)([a.Z], () => a.Z.useReducedMotion),
     T = (0, d.Z)(b, h);
   if (true === T || C.length <= 0) return null;
-  let y = E.some(e => e.type !== m.A3.INACTIVE),
+  let y = P.some(e => e.type !== m.A3.INACTIVE),
     w = (0, p.d)(y),
-    Z = E.reduce((e, t) => {
+    Z = P.reduce((e, t) => {
       let {
         sourceEntitlement: n
       } = t, r = null == n ? true : n.ends_at;
       return null == r ? e : null == e || r < e ? r : e
     }, true);
-  true !== Z ? _ = {
+  true !== Z ? x = {
     type: "expiring",
     expiringAt: Z
-  } : y && (_ = {
+  } : y && (x = {
     type: "active",
-    statusText: g.intl.string(f.default.FFLkm5)
+    statusText: f.intl.string(g.default.FFLkm5)
   });
-  let S = E.reduce((e, t) => {
+  let S = P.reduce((e, t) => {
       let {
         type: n,
         powerup: r
       } = t;
       return n === m.A3.POWERUP_ACTIVATED ? e + r.cost : e
     }, 0),
-    N = E.reduce((e, t) => {
+    N = P.reduce((e, t) => {
       var n, r;
       let {
         powerup: i
       } = t;
       return e < (null != (n = null == i ? true : i.cost) ? n : 0) ? e : null != (r = null == i ? true : i.cost) ? r : 0
-    }, null != (x = null == (n = E[0]) || null == (t = n.powerup) ? true : t.cost) ? x : 0),
-    k = E.reduce((e, t) => {
+    }, null != (_ = null == (n = P[0]) || null == (t = n.powerup) ? true : t.cost) ? _ : 0),
+    k = P.reduce((e, t) => {
       var n;
       let {
         powerup: r
@@ -69,15 +69,15 @@ function x(e) {
     O = y ? S : N,
     A = !y && k > O ? "+" : true,
     U = !I && j ? T.image.animatedUrl : T.image.staticUrl,
-    R = null != T.viewCta && "" !== T.viewCta ? T.viewCta : g.intl.string(f.default["27GkOj"]),
+    R = null != T.viewCta && "" !== T.viewCta ? T.viewCta : f.intl.string(g.default["27GkOj"]),
     L = null != T.viewCtaTooltip && "" !== T.viewCtaTooltip ? T.viewCtaTooltip : true;
   return (0, r.jsxs)(u.aB, {
     label: T.title,
     isActive: y,
     badge: T.badge,
     onClick: () => T.openModal(C),
-    onMouseOver: () => P(true),
-    onMouseLeave: () => P(false),
+    onMouseOver: () => E(true),
+    onMouseLeave: () => E(false),
     children: [(0, r.jsx)("img", {
       alt: "",
       src: U,
@@ -86,7 +86,7 @@ function x(e) {
       title: T.title,
       textColor: w,
       footer: (0, r.jsx)(u.uf, {
-        status: _,
+        status: x,
         cost: O,
         costDecorator: A
       }),

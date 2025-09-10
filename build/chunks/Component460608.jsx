@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 460608, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => x
 }), require("./642613.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,18 +19,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk240379 = require("./240379.js");
 
-function _(e) {
+function x(e) {
   let {
     guildId: t
   } = e, n = (0, l.Wu)([u.Z], () => {
     var e;
     return null != (e = u.Z.getAppliedGuildBoostsForGuild(t)) ? e : []
-  }, [t]), _ = i.useMemo(() => n.sort((e, t) => f.default.extractTimestamp(e.id) < f.default.extractTimestamp(t.id) ? 1 : false), [n]), h = (0, l.Wu)([p.ZP], () => {
+  }, [t]), x = i.useMemo(() => n.sort((e, t) => g.default.extractTimestamp(e.id) < g.default.extractTimestamp(t.id) ? 1 : false), [n]), h = (0, l.Wu)([p.ZP], () => {
     let e = new Set;
-    return _.forEach(n => {
+    return x.forEach(n => {
       null == p.ZP.getMember(t, n.userId) && e.add(n.userId)
     }), Array.from(e)
-  }, [t, _]);
+  }, [t, x]);
   i.useEffect(() => {
     h.length > 0 && h.forEach(e => d.Z.requestMember(t, e))
   }, [t, h]);
@@ -44,16 +44,16 @@ function _(e) {
   });
   return (i.useEffect(() => {
     C !== n.length && (0, a.C0)(t)
-  }, [t, C, n.length]), 0 === _.length) ? null : (0, r.jsxs)(r.Fragment, {
+  }, [t, C, n.length]), 0 === x.length) ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.X6, {
-      className: x.header,
+      className: _.header,
       variant: "eyebrow",
       color: "text-secondary",
       children: v.intl.string(v.t.yM9Krq)
     }), (0, r.jsx)(o.zJ, {
-      className: x.container,
+      className: _.container,
       fade: true,
-      children: _.map((e, t) => (0, r.jsx)(g.Z, {
+      children: x.map((e, t) => (0, r.jsx)(f.Z, {
         boost: e
       }, "boost-activity-".concat(t)))
     })]

@@ -22,19 +22,19 @@ function v(e) {
   let {
     guildId: t
   } = e;
-  s.useEffect(() => {
-    (0, u.EC)(t)
+  i.useEffect(() => {
+    (0, d.EC)(t)
   }, [t]);
   let n = (0, l.Z)(t),
-    v = (0, i.e7)([d.Z], () => d.Z.getStateForGuild(t)),
-    y = s.useMemo(() => (null == v ? true : v.instances) == null ? [] : Object.values(v.instances), [null == v ? true : v.instances]);
+    v = (0, a.e7)([u.Z], () => u.Z.getStateForGuild(t)),
+    y = i.useMemo(() => (null == v ? true : v.instances) == null ? [] : Object.values(v.instances), [null == v ? true : v.instances]);
   return (0, r.jsxs)("div", {
     className: f.container,
     children: [(0, r.jsxs)(c.ZP, {
       className: f.toolbar,
       toolbar: (0, r.jsx)("div", {}),
       children: [(0, r.jsx)(c.ZP.Icon, {
-        icon: a.$Eu,
+        icon: s.$Eu,
         "aria-label": ""
       }), (0, r.jsx)(c.ZP.Title, {
         children: g.intl.string(b.default.lH9Dio)

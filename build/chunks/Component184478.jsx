@@ -30,44 +30,44 @@ function h(e) {
     total: C
   } = (0, p.Z)(t);
   if (null != n) return (0, r.jsxs)("div", {
-    className: _.container,
+    className: x.container,
     children: [(0, r.jsxs)("div", {
-      className: _.headerContainer,
+      className: x.headerContainer,
       children: [(0, r.jsx)(i.xv, {
         variant: "eyebrow",
         color: "text-secondary",
-        children: x.intl.string(v.default.hjvcLC)
+        children: _.intl.string(v.default.hjvcLC)
       }), (0, r.jsx)(i.xv, {
-        className: _.learnMore,
+        className: x.learnMore,
         variant: "text-xs/semibold",
-        children: x.intl.format(v.default.fXE30d, {
-          helpDeskArticle: d.Z.getArticleURL(g.BhN.GUILD_BOOSTING_FAQ)
+        children: _.intl.format(v.default.fXE30d, {
+          helpDeskArticle: d.Z.getArticleURL(f.BhN.GUILD_BOOSTING_FAQ)
         })
       })]
     }), (0, r.jsxs)("div", {
-      className: _.contentContainer,
-      children: [(0, r.jsx)(f.Z, {
+      className: x.contentContainer,
+      children: [(0, r.jsx)(g.Z, {
         count: h,
-        type: f.b.AVAILABLE
-      }), (0, r.jsx)(f.Z, {
+        type: g.b.AVAILABLE
+      }), (0, r.jsx)(g.Z, {
         count: b,
-        type: f.b.SPENT
-      }), (0, r.jsx)(f.Z, {
+        type: g.b.SPENT
+      }), (0, r.jsx)(g.Z, {
         count: C,
-        type: f.b.TOTAL
+        type: g.b.TOTAL
       })]
     }), (0, r.jsx)(a.Z, {
-      className: _.boostButton,
+      className: x.boostButton,
       guild: n,
       analyticsLocation: {
-        page: g.ZY5.GUILD_POWERUPS_OVERVIEW,
-        section: g.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR
+        page: f.ZY5.GUILD_POWERUPS_OVERVIEW,
+        section: f.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR
       },
       color: s.Tt.CUSTOM,
       size: s.Ph.LARGE,
       intent: c.P.NONE,
       icon: (0, r.jsx)(l.$Eu, {
-        className: _.boostButtonIcon,
+        className: x.boostButtonIcon,
         size: "sm",
         color: l.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
       })

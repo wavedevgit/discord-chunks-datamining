@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => x
 });
-var r, s, Chunk951288 = require("./951288.js"),
+var r, i, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
@@ -34,51 +34,51 @@ let j = (r = function(e) {
     })
   }
   return e
-}({}, Chunk473682.T9), s = s = {
+}({}, Chunk473682.T9), i = i = {
   initialStep: Chunk473682.Vb.SERVER_SETTINGS
-}, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+}, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
     n.push.apply(n, r)
   }
   return n
-})(Object(s)).forEach(function(e) {
-  Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(s, e))
+})(Object(i)).forEach(function(e) {
+  Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
 }), r);
 
 function x(e) {
   let {
     guildId: t
   } = e;
-  i.useEffect(() => {
-    (0, d.po)(t)
+  a.useEffect(() => {
+    (0, u.po)(t)
   }, [t]);
   let n = (0, c.Wu)([m.Z], () => {
     let e = m.Z.getStateForGuild(t);
     return (null == e ? true : e.catalog) != null ? Object.values(e.catalog) : []
   });
-  return 0 === n.length ? (0, a.jsx)("div", {
+  return 0 === n.length ? (0, s.jsx)("div", {
     className: y.container,
-    children: (0, a.jsx)(l.$jN, {
+    children: (0, s.jsx)(l.$jN, {
       type: l.RAz.SPINNING_CIRCLE,
       className: y.spinner
     })
-  }) : (0, a.jsxs)("div", {
+  }) : (0, s.jsxs)("div", {
     className: y.container,
-    children: [(0, a.jsx)(o.X6, {
+    children: [(0, s.jsx)(o.X6, {
       variant: "heading-md/semibold",
       children: v.intl.string(f.default.jeYp1t)
-    }), (0, a.jsx)("div", {
+    }), (0, s.jsx)("div", {
       className: y.gameContainer,
-      children: n.map((e, n) => (0, a.jsx)(p.Z, {
+      children: n.map((e, n) => (0, s.jsx)(p.Z, {
         className: y.game,
         game: e,
         onClick: () => (0, b.Z)({
           guildId: t,
           stepConfig: j,
           initialPortkeyGame: e,
-          analyticsLocation: u.Z.PORTKEY_OVERVIEW
+          analyticsLocation: d.Z.PORTKEY_OVERVIEW
         }),
         imageClassName: y.image
       }, "sidebar-game-".concat(n, "-").concat(e.id)))

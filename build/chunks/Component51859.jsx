@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 51859, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => _
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,18 +18,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk535396 = require("./535396.js"),
   Chunk237522 = require("./237522.js");
 
-function x(e) {
+function _(e) {
   let {
     guildId: t,
     powerup: n
-  } = e, [x, _] = i.useState(true);
-  (0, m.KT)(x);
-  let [h, b] = i.useState(false), C = (0, a.ZP)(t, n).type !== g.A3.INACTIVE, j = (0, f.d)(C), P = (0, l.g1)(t, "GuildPowerupPerkCard"), E = n.skuId === o.A$;
+  } = e, [_, x] = i.useState(true);
+  (0, m.KT)(_);
+  let [h, b] = i.useState(false), C = (0, a.ZP)(t, n).type !== f.A3.INACTIVE, j = (0, g.d)(C), E = (0, l.g1)(t, "GuildPowerupPerkCard"), P = n.skuId === o.A$;
   return (0, r.jsxs)(p.Z, {
     onHover: e => b(e),
     guildId: t,
     powerup: n,
-    badge: E || P ? E && P ? "beta" : true : "new",
+    badge: P || E ? P && E ? "beta" : true : "new",
     children: [(0, r.jsx)(d.m, {
       className: v.image,
       powerup: n,
@@ -51,7 +51,7 @@ function x(e) {
       children: (0, r.jsx)(u.ZP, {
         guildId: t,
         powerup: n,
-        onError: _
+        onError: x
       })
     })]
   })

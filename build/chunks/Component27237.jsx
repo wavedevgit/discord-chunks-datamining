@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 27237, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => E
+  ZP: () => P
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -46,14 +46,14 @@ function j(e) {
   })
 }
 
-function P(e) {
+function E(e) {
   let {
     isActive: t,
     index: n
-  } = e, o = (0, g.d)(t), s = (0, g.u)(t), a = i.useMemo(() => {
+  } = e, o = (0, f.d)(t), s = (0, f.u)(t), a = i.useMemo(() => {
     let e = c.C[n];
     if (null == e) return [];
-    let t = e.tier === x.Eu4.TIER_3 ? e.perks.slice(0, false) : e.perks;
+    let t = e.tier === _.Eu4.TIER_3 ? e.perks.slice(0, false) : e.perks;
     return null == t ? true : t.map((e, t) => (0, r.jsxs)("div", {
       className: C.perkRow,
       children: [(0, r.jsx)(e.icon, {
@@ -74,21 +74,21 @@ function P(e) {
       children: (0, r.jsx)(l.xv, {
         color: o,
         variant: "text-sm/medium",
-        children: h.intl.string(_.default.nIj3LS)
+        children: h.intl.string(x.default.nIj3LS)
       })
     })]
   })
 }
 
-function E(e) {
+function P(e) {
   let {
     guildId: t,
     index: n,
     powerup: o,
     nextPowerup: s
-  } = e, l = (0, u.ZP)(t, o), a = (0, u.ZP)(t, s), c = l.type !== v.A3.INACTIVE, x = a.type !== v.A3.INACTIVE, _ = l.type === v.A3.TIER_OVERRIDE_ACTIVATED, [h, b] = i.useState(true);
-  (0, f.KT)(h);
-  let E = (0, g.d)(c);
+  } = e, l = (0, u.ZP)(t, o), a = (0, u.ZP)(t, s), c = l.type !== v.A3.INACTIVE, _ = a.type !== v.A3.INACTIVE, x = l.type === v.A3.TIER_OVERRIDE_ACTIVATED, [h, b] = i.useState(true);
+  (0, g.KT)(h);
+  let P = (0, f.d)(c);
   return (0, r.jsxs)(m.Z, {
     guildId: t,
     powerup: o,
@@ -96,20 +96,20 @@ function E(e) {
     children: [(0, r.jsx)(j, {
       position: 0 === n ? "start" : null == s ? "end" : "middle",
       active: c,
-      nextActive: null != s ? x : true
+      nextActive: null != s ? _ : true
     }), (0, r.jsx)(d.Q9, {
       title: o.title,
-      textColor: E,
-      footer: !_ && (0, r.jsx)(m.g, {
+      textColor: P,
+      footer: !x && (0, r.jsx)(m.g, {
         className: C.footer,
         guildId: t,
         powerup: o
       }),
-      children: (0, r.jsx)(P, {
+      children: (0, r.jsx)(E, {
         isActive: c,
         index: n
       })
-    }), !_ && (0, r.jsx)(d.N4, {
+    }), !x && (0, r.jsx)(d.N4, {
       children: (0, r.jsx)(p.ZP, {
         guildId: t,
         powerup: o,

@@ -2,7 +2,7 @@
 /** chunk id: 642633, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => d
-});
+}), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk793030 = require("./793030.js"),
@@ -36,7 +36,7 @@ function d() {
           }), (0, Chunk951288.jsx)(Chunk793030.xv, {
             variant: "text-md/medium",
             color: "text-secondary",
-            children: module.developer
+            children: null == require ? true : require.name
           })]
         })]
       }), null != require && (0, Chunk951288.jsx)("div", {
@@ -49,11 +49,11 @@ function d() {
               children: [(0, r.jsx)(a.X6, {
                 variant: "heading-sm/semibold",
                 color: "text-primary",
-                children: e.amount
+                children: e.title
               }), (0, r.jsx)(a.xv, {
                 variant: "text-sm/medium",
                 color: "text-tertiary",
-                children: e.unit
+                children: e.description
               })]
             }), n !== (null != (l = null == t ? true : t.specifications.length) ? l : 0) - 1 && (0, r.jsx)("div", {
               className: c.divider

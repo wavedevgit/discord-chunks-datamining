@@ -1,56 +1,51 @@
 /** Chunk was on 93886 **/
 /** chunk id: 962774, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
+  ai: () => r,
   kd: () => i,
   qE: () => o
 }), require("./388685.js");
 let a = [{
-    id: 1,
+    id: "1",
     name: "Portkey #1",
     cost: 3,
-    size: 2,
-    sizeUnit: "GB",
     specifications: [{
-      amount: 2,
-      unit: "GB"
+      title: "2",
+      description: "GB"
     }, {
-      amount: 1,
-      unit: "vCPU"
+      title: "1",
+      description: "vCPU"
     }, {
-      amount: 25,
-      unit: "GB"
+      title: "25",
+      description: "GB"
     }]
   }, {
-    id: 2,
+    id: "2",
     name: "Portkey #2",
     cost: 6,
-    size: 4,
-    sizeUnit: "GB",
     specifications: [{
-      amount: 2,
-      unit: "GB"
+      title: "2",
+      description: "GB"
     }, {
-      amount: 1,
-      unit: "vCPU"
+      title: "1",
+      description: "vCPU"
     }, {
-      amount: 25,
-      unit: "GB"
+      title: "25",
+      description: "GB"
     }]
   }, {
-    id: 3,
+    id: "3",
     name: "Portkey #3",
     cost: 12,
-    size: 8,
-    sizeUnit: "GB",
     specifications: [{
-      amount: 2,
-      unit: "GB"
+      title: "2",
+      description: "GB"
     }, {
-      amount: 1,
-      unit: "vCPU"
+      title: "1",
+      description: "vCPU"
     }, {
-      amount: 25,
-      unit: "GB"
+      title: "25",
+      description: "GB"
     }]
   }],
   r = [{

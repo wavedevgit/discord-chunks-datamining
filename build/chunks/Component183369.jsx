@@ -45,11 +45,11 @@ function b(e) {
     [L, R] = i.useState(null != (j = null == S ? true : S.id) ? j : null == N ? true : N.gameId),
     [V, z] = i.useState(N),
     [A, F] = i.useState(null != (b = null == S || null == (n = S.plans[0]) ? true : n.id) ? b : null == N || null == (t = N.plan) ? true : t.id),
-    K = i.useCallback((e, n) => {
+    W = i.useCallback((e, n) => {
       var t;
       R(null == e ? true : e.id), F(null != n ? n : null == e || null == (t = e.plans[0]) ? true : t.id)
     }, []),
-    W = i.useCallback(e => {
+    K = i.useCallback(e => {
       z(e), R(e.gameId), F(e.plan.id), Q(e.name), $(e.location)
     }, []),
     U = i.useMemo(() => {
@@ -105,9 +105,9 @@ function b(e) {
       portkeyGames: null != (C = null == E ? true : E.catalog) ? C : {},
       instances: Object.values(null != (y = null == E ? true : E.instances) ? y : {}),
       currentGame: U,
-      setCurrentGame: K,
+      setCurrentGame: W,
       portkeyInstance: V,
-      setPortkeyInstance: W,
+      setPortkeyInstance: K,
       name: q,
       setName: Q,
       location: Y,

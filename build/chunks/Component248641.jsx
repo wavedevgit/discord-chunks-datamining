@@ -29,51 +29,51 @@ function j(e) {
   } = e, n = (0, a.e7)([m.Z], () => m.Z.getStateForGuild(t)), o = i.useMemo(() => {
     if ((null == n ? true : n.instances) != null && 0 !== Object.keys(n.instances).length) return {
       type: "active",
-      statusText: x.intl.string(g.default.FFLkm5)
+      statusText: _.intl.string(f.default.FFLkm5)
     }
-  }, [null == n ? true : n.instances]), j = (0, p.d)((null == o ? true : o.type) === "active"), P = i.useMemo(() => {
+  }, [null == n ? true : n.instances]), j = (0, p.d)((null == o ? true : o.type) === "active"), E = i.useMemo(() => {
     if ((null == n ? true : n.catalog) == null) return 0;
     let e = Object.values(n.catalog);
     return 0 === e.length ? 0 : Math.min(...e.map(e => e.baseCost))
   }, [null == n ? true : n.catalog]);
   return null == n ? null : (0, r.jsxs)(d.aB, {
-    label: x.intl.string(v.default["fjt/vr"]),
+    label: _.intl.string(v.default["fjt/vr"]),
     badge: "new",
     isActive: (null == o ? true : o.type) === "active",
-    onClick: () => (0, f.Z)({
+    onClick: () => (0, g.Z)({
       guildId: t,
       analyticsLocation: u.Z.GUILD_POWERUPS_OVERVIEW
     }),
     children: [(0, r.jsxs)("div", {
       className: b.imageContainer,
       children: [(0, r.jsx)("img", {
-        className: s()(h.background, _.image, b.image),
+        className: s()(h.background, x.image, b.image),
         src: C.Z,
         alt: ""
       }), (0, r.jsx)("div", {
-        className: s()(_.image, b.gradient)
+        className: s()(x.image, b.gradient)
       })]
     }), (0, r.jsx)(d.Q9, {
-      title: x.intl.string(v.default["fjt/vr"]),
+      title: _.intl.string(v.default["fjt/vr"]),
       textColor: j,
       footer: (0, r.jsx)(d.uf, {
-        cost: P,
+        cost: E,
         costDecorator: "+",
         status: o
       }),
       children: (0, r.jsx)(l.xv, {
-        className: _.description,
+        className: x.description,
         color: j,
         variant: "text-sm/medium",
-        children: x.intl.string(v.default.P7VSCg)
+        children: _.intl.string(v.default.P7VSCg)
       })
     }), (0, r.jsx)(d.N4, {
       children: (0, r.jsx)(c.zxk, {
         variant: "primary",
         fullWidth: true,
-        text: x.intl.string(v.default.MbdLuL),
+        text: _.intl.string(v.default.MbdLuL),
         onClick: e => {
-          e.stopPropagation(), (0, f.Z)({
+          e.stopPropagation(), (0, g.Z)({
             guildId: t,
             analyticsLocation: u.Z.GUILD_POWERUPS_OVERVIEW
           })

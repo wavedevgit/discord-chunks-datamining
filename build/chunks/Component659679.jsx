@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 659679, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -17,13 +17,13 @@ var Chunk793030 = require("./793030.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk238937 = require("./238937.js");
 
-function g(e) {
+function f(e) {
   let {
     boost: t
   } = e, n = new Date(u.default.extractTimestamp(t.id)), {
-    username: g,
+    username: f,
     roleColor: v,
-    roleColorStrings: x
+    roleColorStrings: _
   } = (0, o.cj)([c.ZP], () => {
     var e, n, r, i;
     let o = c.ZP.getMember(t.guildId, t.userId);
@@ -32,28 +32,28 @@ function g(e) {
       roleColor: null != (r = null == o ? true : o.colorString) ? r : null,
       roleColorStrings: null != (i = null == o ? true : o.colorStrings) ? i : null
     }
-  }, [t]), _ = (0, d.X7)(t.guildId, t.userId, null != x ? x : null);
+  }, [t]), x = (0, d.X7)(t.guildId, t.userId, null != _ ? _ : null);
   return (0, r.jsx)(a.Z, {
-    className: f.systemMessageContainer,
-    contentClassName: f.systemMessageContent,
+    className: g.systemMessageContainer,
+    contentClassName: g.systemMessageContent,
     iconNode: (0, r.jsx)(s.$Eu, {
-      className: f.icon,
+      className: g.icon,
       color: "currentColor",
       size: "sm"
     }),
-    iconContainerClassName: f.iconContainer,
-    timestampClassName: f.timestamp,
+    iconContainerClassName: g.iconContainer,
+    timestampClassName: g.timestamp,
     timestamp: n,
     timestampFormat: "L",
     compact: true,
     children: (0, r.jsxs)("span", {
-      className: f.boostMessage,
+      className: g.boostMessage,
       children: [(0, r.jsx)(s.PUh, {
-        className: f.boostMessageUser,
+        className: g.boostMessageUser,
         variant: "text-md/semibold",
-        name: g,
+        name: f,
         colorString: null != v ? v : null,
-        colorStrings: _
+        colorStrings: x
       }), (0, r.jsx)(i.xv, {
         variant: "text-md/medium",
         lineClamp: 1,

@@ -41,14 +41,14 @@ function R(e) {
   let {
     guildId: t,
     powerupListingId: o
-  } = e, R = (0, f.A0)(t, "GuildPowerupsOverview");
+  } = e, R = (0, g.A0)(t, "GuildPowerupsOverview");
   i.useEffect(() => {
     R && ((0, m.EC)(t), (0, m.po)(t))
   }, [t, R]), i.useEffect(() => {
     (0, v.Sn)(t), (0, v.Fm)(t)
   }, [t]), (0, w.Wj)(t);
-  let L = (0, l.e7)([x.Z], () => x.Z.getStateForGuild(t)),
-    M = (0, _.Z)(t),
+  let L = (0, l.e7)([_.Z], () => _.Z.getStateForGuild(t)),
+    M = (0, x.Z)(t),
     D = i.useRef(false),
     {
       shouldShow: G,
@@ -197,7 +197,7 @@ function R(e) {
                       powerups: e.powerups
                     }, "powerup-group-".concat(e.group));
                   case "portkey":
-                    return (0, r.jsx)(g.Z, {
+                    return (0, r.jsx)(f.Z, {
                       guildId: t
                     }, "powerup-portkey")
                 }
@@ -207,9 +207,9 @@ function R(e) {
         })
       }), (0, r.jsxs)("div", {
         className: A.sidebarContainer,
-        children: [M ? (0, r.jsx)(P.Z, {
+        children: [M ? (0, r.jsx)(E.Z, {
           guildId: t
-        }) : (0, r.jsx)(E.Z, {
+        }) : (0, r.jsx)(P.Z, {
           guildId: t
         }), (0, r.jsx)(I.Z, {
           guildId: t

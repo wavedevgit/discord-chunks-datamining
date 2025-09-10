@@ -23,15 +23,15 @@ function y(e) {
   let {
     guildId: t,
     instance: n
-  } = e, y = (0, a.e7)([d.Z], () => d.Z.getState()), j = s.useCallback(() => {
+  } = e, y = (0, s.e7)([u.Z], () => u.Z.getState()), j = i.useCallback(() => {
     y ? (0, p.Z)(n) : (0, b.Z)({
       onAccept: () => {
         (0, p.Z)(n)
       }
     })
-  }, [n, y]), x = s.useCallback(() => {
-    (0, c.JG)(n.serverIP), (0, i.showToast)((0, i.createToast)(f.intl.string(f.t["+5kSoa"]), i.ToastType.SUCCESS))
-  }, [n.serverIP]), P = (0, u.Z)(t);
+  }, [n, y]), x = i.useCallback(() => {
+    (0, c.JG)(n.serverIP), (0, a.showToast)((0, a.createToast)(f.intl.string(f.t["+5kSoa"]), a.ToastType.SUCCESS))
+  }, [n.serverIP]), P = (0, d.Z)(t);
   return (0, r.jsxs)("div", {
     className: v.card,
     children: [(0, r.jsxs)("div", {
@@ -42,10 +42,10 @@ function y(e) {
         className: v.gameImage
       }), (0, r.jsxs)("div", {
         className: v.serverInfo,
-        children: [(0, r.jsx)(i.X6q, {
+        children: [(0, r.jsx)(a.X6q, {
           variant: "heading-sm/medium",
           children: n.name
-        }), (0, r.jsx)(i.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
           color: "text-tertiary",
           children: n.plan.name
@@ -57,29 +57,29 @@ function y(e) {
         className: v.detailsGrid,
         children: [(0, r.jsxs)("div", {
           className: v.detailItem,
-          children: [(0, r.jsx)(i.Text, {
+          children: [(0, r.jsx)(a.Text, {
             variant: "text-xs/semibold",
             children: f.intl.string(g.default.X0IaiI)
-          }), (0, r.jsx)(i.Text, {
+          }), (0, r.jsx)(a.Text, {
             variant: "text-sm/medium",
             children: "".concat(n.onlineConnectionsCount, " / ").concat(n.maxConnectionsCount)
           })]
         }), (0, r.jsxs)("div", {
           className: v.detailItem,
-          children: [(0, r.jsx)(i.Text, {
+          children: [(0, r.jsx)(a.Text, {
             variant: "text-xs/semibold",
             children: f.intl.string(g.default["9pw/yM"])
           }), (0, r.jsx)("div", {
             className: v.serverIpContainer,
             children: y ? (0, r.jsxs)(r.Fragment, {
-              children: [(0, r.jsx)(i.Text, {
+              children: [(0, r.jsx)(a.Text, {
                 variant: "text-sm/medium",
                 children: n.serverIP
-              }), (0, r.jsx)(i.P3F, {
+              }), (0, r.jsx)(a.P3F, {
                 className: v.copyButton,
                 "aria-label": f.intl.string(f.t.OpuAlJ),
                 onClick: x,
-                children: (0, r.jsx)(i.TIy, {
+                children: (0, r.jsx)(a.TIy, {
                   size: "sm"
                 })
               })]
@@ -92,24 +92,24 @@ function y(e) {
           })]
         }), (0, r.jsxs)("div", {
           className: v.detailItem,
-          children: [(0, r.jsx)(i.Text, {
+          children: [(0, r.jsx)(a.Text, {
             variant: "text-xs/semibold",
             children: f.intl.string(g.default.MQQIu7)
           }), (0, r.jsxs)("div", {
             className: v.statusContainer,
             children: [(0, r.jsx)("span", {
               className: v.statusIndicator
-            }), (0, r.jsx)(i.Text, {
+            }), (0, r.jsx)(a.Text, {
               variant: "text-sm/medium",
               children: n.status
             })]
           })]
         }), (0, r.jsxs)("div", {
           className: v.detailItem,
-          children: [(0, r.jsx)(i.Text, {
+          children: [(0, r.jsx)(a.Text, {
             variant: "text-xs/semibold",
             children: f.intl.string(g.default.v8iSgI)
-          }), (0, r.jsx)(i.Text, {
+          }), (0, r.jsx)(a.Text, {
             variant: "text-sm/medium",
             children: (0, l.Y4)(new Date(n.lastUpdated))
           })]
@@ -117,12 +117,12 @@ function y(e) {
       })
     }), (0, r.jsxs)("div", {
       className: v.serverActions,
-      children: [(0, r.jsx)(i.zxk, {
+      children: [(0, r.jsx)(a.zxk, {
         fullWidth: true,
         text: f.intl.string(g.default["0TMXHh"]),
         onClick: j,
         variant: "primary"
-      }), P && (0, r.jsx)(i.zxk, {
+      }), P && (0, r.jsx)(a.zxk, {
         fullWidth: true,
         text: f.intl.string(g.default["jO3u+/"]),
         onClick: () => {
