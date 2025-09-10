@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk574981 = require("./574981.js"),
-  Chunk261616 = require("./261616.js"),
+  Chunk938288 = require("./938288.js"),
   Chunk91192 = require("./91192.jsx"),
   Chunk866442 = require("./866442.js"),
   Chunk477690 = require("./477690.js"),
@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk106663 = require("./106663.js"),
   Chunk534175 = require("./534175.js");
 let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
-  N = (0, Chunk261616.animated)(Chunk481060.Kqy),
+  N = (0, Chunk938288.animated)(Chunk481060.Kqy),
   Z = Chunk647438.memo(function(e) {
     let {
       folderNode: t,
