@@ -63,9 +63,9 @@ let E = Chunk647438.memo(function(e) {
         let e = p.default.getFocusedPID();
         return !m.isPlatformEmbedded || null != e && e !== v.UNSET_PID
       }),
-      [h, b] = o.useState(d),
-      [I, w] = o.useState(false),
-      x = o.useCallback(() => {
+      [h, b] = o.useState(false),
+      I = o.useRef(false),
+      w = o.useCallback(() => {
         let e = (0, v.getPID)(),
           n = null != s.Z.getVoiceChannelId();
         i.Z.track(S.rMx.OVERLAY_INITIALIZED, {
@@ -88,7 +88,7 @@ let E = Chunk647438.memo(function(e) {
         window.removeEventListener("message", e)
       }
     });
-    let E = o.useCallback((e, t) => {
+    let x = o.useCallback((e, t) => {
       null == a.current && (_.current = () => {
         null != a.current && e.cancelAnimationFrame(a.current), null != l.current && e.clearTimeout(l.current)
       }, a.current = e.requestAnimationFrame(async () => {
@@ -99,17 +99,15 @@ let E = Chunk647438.memo(function(e) {
           return
         }
         l.current = e.setTimeout(() => {
-          b(true), w(true), x(), _.current = null
+          b(true), w(), _.current = null
         }, 100)
       }))
-    }, [x]);
+    }, [w]);
     return o.useEffect(() => {
-      (!h || null == n) && d && d && null != n && E(n, e)
-    }, [E, h, d, e, n]), (0, c.Ng)(() => {
-      h && null != n && E(n, e)
-    }), (0, c.zq)(() => {
+      d && null != n && (I.current || (I.current = true, x(n, e)))
+    }, [x, d, e, n]), (0, c.zq)(() => {
       null != _.current && _.current()
-    }), I
+    }), h
   }(n, w.$S), h = (0, v.getPID)(), b = (0, r.e7)([p.default], () => p.default.isInputLocked(h), [h]);
   return _ ? (0, a.jsxs)(d.Z, {
     themeOverride: S.BRd.MIDNIGHT,
