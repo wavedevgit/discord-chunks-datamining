@@ -184,7 +184,7 @@ let e2 = () => {
     let {
       unseenGiftCount: t,
       showPrepaidPaymentPastDueWarning: b,
-      impressionSource: A,
+      searchParams: A,
       numOfPendingFamilyRequests: C,
       isOverlaySupported: Z,
       isClipsBetaTagShowing: eJ = false,
@@ -618,7 +618,7 @@ let e2 = () => {
         newIndicatorDismissibleContentTypes: [a.z.AUTH_SESSIONS_NEW],
         impressionName: i.ImpressionNames.USER_SETTINGS_SESSIONS,
         impressionProperties: {
-          source: A
+          source: null == A ? true : A.source
         }
       },
       [eV.s6.CONNECTIONS]: {
@@ -629,7 +629,7 @@ let e2 = () => {
         element: e_.Z,
         impressionName: i.ImpressionNames.USER_SETTINGS_CONNECTIONS,
         impressionProperties: {
-          source: A
+          source: null == A ? true : A.source
         },
         newIndicatorDismissibleContentTypes: [a.z.NEW_CRUNCHYROLL_CONNECTION],
         url: eY.Z5c.SETTINGS("connections")
@@ -2022,7 +2022,9 @@ let e2 = () => {
         section: eY.oAB.QUEST_PREVIEW_TOOL_2,
         searchableTitles: ["Quest Preview Tool 2"],
         label: "Quest Preview Tool 2",
-        element: G.Z,
+        element: () => (0, r.jsx)(G.Z, {
+          questId: null == A ? true : A.quest_id
+        }),
         predicate: () => (0, M.T)({
           location: eW.dr.QUEST_PREVIEW_TOOL_2
         })

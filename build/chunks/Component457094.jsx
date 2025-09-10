@@ -163,7 +163,7 @@ let tr = (0, Chunk951752.l)(e => {
     } = e, n = (0, eU.default)(t.pathname);
     return null != n && (0, J.h)(() => g.Z.open(n.section, n.subsection, {
       openWithoutBackstack: false,
-      impressionSource: n.source
+      searchParams: n.params
     })), (0, r.jsx)(m.Z, {
       deepLinkType: e9.jE.USER_SETTINGS,
       path: t.pathname,

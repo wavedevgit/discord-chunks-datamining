@@ -67,7 +67,7 @@ function N(e) {
       newPassword: null,
       claimed: s.isClaimed()
     }
-  }), v = null != (r = e.onClose) ? r : null, I = null != (i = e.analyticsLocation) ? i : null, T = null != (a = e.analyticsLocations) ? a : [], A = null != (o = e.impressionSource) ? o : null
+  }), v = null != (r = e.onClose) ? r : null, I = null != (i = e.analyticsLocation) ? i : null, T = null != (a = e.analyticsLocations) ? a : [], A = null != (o = e.searchParams) ? o : null
 }
 
 function R() {
@@ -169,7 +169,7 @@ class U extends(r = Chunk442837.ZP.Store) {
       analyticsLocation: I,
       analyticsLocations: T,
       initialSection: S,
-      impressionSource: A
+      searchParams: A
     }
   }
   get onClose() {

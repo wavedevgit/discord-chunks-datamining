@@ -242,7 +242,7 @@ function B(e) {
     } = n(722589), t = e(B);
     if (null != t) return e => (null == e || e.preventDefault(), l.Z.open(t.section, t.subsection, {
       openWithoutBackstack: false,
-      impressionSource: t.source,
+      searchParams: t.params,
       analyticsLocations: s
     }), true)
   }

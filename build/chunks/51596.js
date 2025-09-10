@@ -248,7 +248,7 @@ function Z(e) {
         let t = (0, h.default)(e.record.path);
         null != t && c.Z.open(t.section, t.subsection, {
           openWithoutBackstack: false,
-          impressionSource: t.source
+          searchParams: t.params
         })
       } else(0, f.Z)(b.path, {
         navigationReplace: true

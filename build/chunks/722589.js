@@ -19,15 +19,9 @@ function u(e) {
 function d(e) {
   var t;
   let [, , n, a] = e.split("/"), o = u(n), s = null != (t = c[o]) ? t : o, l = u(a);
-  if (i.oAB.hasOwnProperty(s) && (null == l || "" === l || i.oAB.hasOwnProperty(l))) {
-    let {
-      source: e
-    } = (0, r.parse)(location.search);
-    return {
-      source: e,
-      section: i.oAB[s],
-      subsection: l
-    }
-  }
-  return null
+  return i.oAB.hasOwnProperty(s) && (null == l || "" === l || i.oAB.hasOwnProperty(l)) ? {
+    params: (0, r.parse)(location.search),
+    section: i.oAB[s],
+    subsection: l
+  } : null
 }

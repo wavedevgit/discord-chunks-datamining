@@ -148,7 +148,7 @@ function Y() {
   var e, t, n, o;
   let I = (0, Chunk725727.YO)().length,
     P = (0, Chunk160913.U)(),
-    j = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getProps().impressionSource),
+    j = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getProps().searchParams),
     M = (0, Chunk631885.gU)(),
     U = (0, Chunk168308.bC)(),
     G = (0, Chunk924557.Go)(),
@@ -204,7 +204,7 @@ function Y() {
   return Chunk647438.useMemo(() => (0, Chunk620163.iE)({
     unseenGiftCount: Chunk906467,
     showPrepaidPaymentPastDueWarning: Chunk413182,
-    impressionSource: Chunk839469,
+    searchParams: Chunk839469,
     numOfPendingFamilyRequests: Chunk726985,
     isOverlaySupported: Chunk388032,
     isClipsBetaTagShowing: B === Chunk704215.z.CLIPS_SETTINGS_BETA_TAG,
