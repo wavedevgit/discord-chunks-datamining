@@ -2,23 +2,23 @@
 /** chunk id: 524444, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A7: () => eo,
-  BO: () => eh,
-  DR: () => ec,
-  G5: () => ef,
-  LE: () => ed,
-  Rp: () => eu,
-  SE: () => eE,
-  W_: () => eg,
-  Y: () => em,
-  Yi: () => en,
+  A7: () => ea,
+  BO: () => ep,
+  DR: () => el,
+  G5: () => ed,
+  LE: () => eu,
+  Rp: () => ec,
+  SE: () => eg,
+  W_: () => em,
+  Y: () => eh,
+  Yi: () => et,
   b_: () => q,
-  hX: () => ee,
-  iT: () => er,
-  lV: () => $,
-  ur: () => ea,
-  wj: () => et,
-  xi: () => ei
+  hX: () => $,
+  iT: () => en,
+  lV: () => J,
+  ur: () => ei,
+  wj: () => ee,
+  xi: () => er
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -133,88 +133,27 @@ function J(e) {
     onVolumeChange: t,
     onMute: n,
     volume: a,
-    autoMute: s,
-    alt: l,
-    renderAdjacentContent: c,
-    renderOverlayContent: u,
-    disableAltTextDisplay: f = false,
-    hiddenSpoilers: _,
-    mosaicStyleAlt: p,
-    mediaLayoutType: h,
-    reducedSizeAltTextButton: m
-  } = e, g = K(e, ["onVolumeChange", "onMute", "volume", "autoMute", "alt", "renderAdjacentContent", "renderOverlayContent", "disableAltTextDisplay", "hiddenSpoilers", "mosaicStyleAlt", "mediaLayoutType", "reducedSizeAltTextButton"]);
-  let E = X(t),
-    b = Q(n);
-  a = null == a ? j.FC : a, s = null == s ? j.rs : s;
-  let [y, O] = i.useState(true), [v, T] = i.useState(false), S = h === k.hV.MOSAIC || true === p, A = (y || v) && !f && N.H1.getSetting() && null != l && "" !== l && true !== _, C = e => {
-    let {
-      altText: t
-    } = e;
-    return (0, r.jsxs)(d.VqE, {
-      "aria-label": Z.intl.string(Z.t.fSiQ3N),
-      className: F.mediaMosaicAltTextPopout,
-      onKeyDown: e => {
-        e.key === G.mR.Escape && setTimeout(() => {
-          var e;
-          return null == (e = R.current) ? true : e.focus()
-        }, 0)
-      },
-      children: [(0, r.jsx)("span", {
-        className: F.mediaMosaicAltTextPopoutTitle,
-        children: Z.intl.string(Z.t.fSiQ3N)
-      }), (0, r.jsx)("span", {
-        className: F.mediaMosaicAltTextPopoutDescription,
-        children: t
-      })]
-    })
-  }, R = i.useRef(null);
-  return (0, r.jsxs)(i.Fragment, {
-    children: [(0, r.jsx)(I.Z, W(H({}, g), {
-      alt: l,
+    autoMute: o,
+    alt: s,
+    renderAdjacentContent: l,
+    renderOverlayContent: c
+  } = e, u = K(e, ["onVolumeChange", "onMute", "volume", "autoMute", "alt", "renderAdjacentContent", "renderOverlayContent"]);
+  let d = X(t),
+    f = Q(n);
+  return a = null == a ? j.FC : a, o = null == o ? j.rs : o, (0, r.jsxs)(i.Fragment, {
+    children: [(0, r.jsx)(I.Z, W(H({}, u), {
+      alt: s,
       volume: a,
-      autoMute: s,
-      onVolumeChange: E,
-      onMute: b,
-      renderLinkComponent: er,
-      renderOverlayContent: u,
-      onControlsShow: () => O(true),
-      onControlsHide: () => O(false)
-    })), null != c && c(), S && A && (0, r.jsx)("div", {
-      className: F.mediaMosaicVideoAltTextContainer,
-      children: (0, r.jsx)(d.yRy, {
-        targetElementRef: R,
-        animation: d.yRy.Animation.FADE,
-        renderPopout: () => (0, r.jsx)(C, {
-          altText: l
-        }),
-        children: e => (0, r.jsx)(d.tEY, {
-          offset: 4,
-          children: (0, r.jsx)("button", W(H({}, e), {
-            type: "button",
-            ref: R,
-            "aria-label": Z.intl.string(Z.t.fSiQ3N),
-            onMouseEnter: () => T(true),
-            onMouseLeave: () => T(false),
-            className: o()(F.mediaMosaicAltText, {
-              [F.mediaMosaicVideoAltText]: true,
-              [F.reducedSize]: m
-            }),
-            children: Z.intl.string(Z.t.jCV1T0)
-          }))
-        })
-      })
-    }), !S && A && (0, r.jsx)("span", {
-      className: F.altText,
-      children: l
-    })]
+      autoMute: o,
+      onVolumeChange: d,
+      onMute: f,
+      renderLinkComponent: en,
+      renderOverlayContent: c
+    })), null != l && l()]
   })
 }
 
 function $(e) {
-  return (0, r.jsx)(J, H({}, e))
-}
-
-function ee(e) {
   var {
     onVolumeChange: t,
     volume: n,
@@ -235,12 +174,12 @@ function ee(e) {
       onVolumeHide: s,
       volume: n,
       autoMute: f,
-      renderLinkComponent: er
+      renderLinkComponent: en
     })), null != l && l()]
   })
 }
 
-function et(e) {
+function ee(e) {
   var {
     onVolumeChange: t,
     volume: n,
@@ -255,7 +194,7 @@ function et(e) {
   }))
 }
 
-function en(e) {
+function et(e) {
   let {
     alt: t,
     hiddenSpoilers: n,
@@ -323,11 +262,11 @@ function en(e) {
   })
 }
 
-function er(e) {
+function en(e) {
   return (0, r.jsx)(h.Z, H({}, e))
 }
 
-function ei(e) {
+function er(e) {
   var {
     renderAdjacentContent: t
   } = e, n = K(e, ["renderAdjacentContent"]);
@@ -336,14 +275,14 @@ function ei(e) {
   })
 }
 
-function ea(e) {
+function ei(e) {
   return (0, r.jsx)(E.Z, H({}, e))
 }
-var eo = function(e) {
+var ea = function(e) {
   return e[e.OLD_MESSAGES = 0] = "OLD_MESSAGES", e[e.REPLY = 1] = "REPLY", e
 }({});
 
-function es(e) {
+function eo(e) {
   switch (e) {
     case 0:
       return Z.intl.string(Z.t["4EvBb2"]);
@@ -354,7 +293,7 @@ function es(e) {
   }
 }
 
-function el(e) {
+function es(e) {
   switch (e) {
     case 0:
       return Z.intl.string(Z.t.gpoQsL);
@@ -364,7 +303,7 @@ function el(e) {
       return (0, L.vE)(e)
   }
 }
-let ec = e => {
+let el = e => {
     let {
       type: t = 0,
       onClick: n,
@@ -376,13 +315,13 @@ let ec = e => {
         className: o()(F.jumpToPresentBar, i),
         children: [(0, r.jsx)("div", {
           className: F.barButtonMain,
-          children: es(t)
+          children: eo(t)
         }), null != n ? (0, r.jsx)(d.tEY, {
           offset: false,
           children: (0, r.jsx)(d.zxk, {
             variant: "primary",
             size: "sm",
-            text: el(t),
+            text: es(t),
             onClick: n
           })
         }) : (0, r.jsx)(d.$jN, {
@@ -393,7 +332,7 @@ let ec = e => {
       })
     })
   },
-  eu = e => {
+  ec = e => {
     let {
       onClick: t,
       loading: n,
@@ -426,7 +365,7 @@ let ec = e => {
     })
   };
 
-function ed(e) {
+function eu(e) {
   let {
     content: t,
     channelId: n
@@ -486,7 +425,7 @@ function ed(e) {
   })
 }
 
-function ef(e) {
+function ed(e) {
   var t, n, a;
   let {
     channel: s,
@@ -519,7 +458,7 @@ function ef(e) {
           return null != (t = w.default.getUser(e)) ? t : null
         }).filter(L.lm)
       })) ? e : []
-    }, [j], ep),
+    }, [j], e_),
     V = null != (n = (0, u.e7)([A.Z], () => A.Z.visibleSummaryIndex())) ? n : false,
     H = null == j || null == (t = j[V]) ? true : t.topic;
   null == H && null == y && (null == j ? true : j.length) >= 1 && (H = null == (a = j[0]) ? true : a.topic);
@@ -722,15 +661,15 @@ function ef(e) {
   })
 }
 
-function e_(e, t) {
+function ef(e, t) {
   return null != t && e.length === t.length && !e.some((e, n) => t[n] !== e)
 }
 
-function ep(e, t) {
-  return null != t && e.length === t.length && !e.some((e, n) => !e_(e, t[n]))
+function e_(e, t) {
+  return null != t && e.length === t.length && !e.some((e, n) => !ef(e, t[n]))
 }
 
-function eh(e) {
+function ep(e) {
   var t, n, a;
   let {
     channel: s,
@@ -762,7 +701,7 @@ function eh(e) {
           return null != (t = w.default.getUser(e)) ? t : null
         }).filter(L.lm)
       })) ? e : []
-    }, [N], ep),
+    }, [N], e_),
     j = null != (n = (0, u.e7)([A.Z], () => A.Z.visibleSummaryIndex())) ? n : false,
     M = null == N || null == (t = N[j]) ? true : t.topic;
   null == M && null == h && (null == N ? true : N.length) >= 1 && (M = null == (a = N[0]) ? true : a.topic);
@@ -962,7 +901,7 @@ function eh(e) {
     })]
   })
 }
-let em = function(e) {
+let eh = function(e) {
     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
     return (0, r.jsxs)("div", {
       className: F.tooltip,
@@ -980,7 +919,7 @@ let em = function(e) {
       })]
     })
   },
-  eg = e => {
+  em = e => {
     let {
       children: t,
       className: n
@@ -990,11 +929,11 @@ let em = function(e) {
       children: t
     })
   },
-  eE = e => {
+  eg = e => {
     let {
       className: t
     } = e;
-    return (0, r.jsx)(eg, {
+    return (0, r.jsx)(em, {
       className: t,
       children: (0, r.jsx)("div", {
         className: F.popoutLoadingBackground,

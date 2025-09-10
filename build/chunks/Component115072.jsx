@@ -1,7 +1,7 @@
 /** Chunk was on 83051 **/
 /** chunk id: 115072, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => P
+  default: () => w
 }), require("./953529.js"), require("./642613.js"), require("./388685.js"), require("./784620.js"), require("./973216.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,13 +25,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk225452 = require("./225452.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk176059 = require("./176059.js");
-let w = ["Android", "iOS", "Windows Mobile", "Windows", "Linux", "Mac OS X"].map(e => ({
+let P = ["Android", "iOS", "Windows Mobile", "Windows", "Linux", "Mac OS X"].map(e => ({
   label: e,
   value: e
 }));
 
-function P(e) {
-  var t, P, C, E;
+function w(e) {
+  var t, w, C, E;
   let {
     transitionState: k,
     onClose: D
@@ -45,7 +45,7 @@ function P(e) {
         return "Linux"
     }
     return ""
-  }((0, b.getOS)())), [$, ee] = i.useState(""), [et, en] = i.useState(""), [er, ei] = i.useState(""), [el, ea] = i.useState(""), [eo, es] = i.useState(false), [eu, ec] = i.useState(false), [ed, em] = i.useState(false), [eh, ep] = i.useState(null);
+  }((0, j.getOS)())), [$, ee] = i.useState(""), [et, en] = i.useState(""), [er, ei] = i.useState(""), [el, ea] = i.useState(""), [eo, es] = i.useState(false), [eu, ec] = i.useState(false), [ed, em] = i.useState(false), [ep, ef] = i.useState(null);
   i.useEffect(() => {
     let e = Math.random().toString(16).slice(2);
     o.tn.get({
@@ -55,15 +55,15 @@ function P(e) {
       },
       rejectWithError: true
     }).then(e => {
-      if (null != e.body && "65541e020aa7f4a0b1096ac9eabb4a336581eeed" !== e.body.hash) {
-        let e = new Date("1757525889701"),
+      if (null != e.body && "9cef6c61ad0467d69a29ab3a7337650ebc17d50e" !== e.body.hash) {
+        let e = new Date("1757526572381"),
           t = new Date,
           n = (0, y.TD)(t, e);
-        n.hours > 6 && ep(n.hours)
+        n.hours > 6 && ef(n.hours)
       }
     })
   }, []);
-  let ef = (0, a.e7)([x.default], () => {
+  let eh = (0, a.e7)([x.default], () => {
       let e = x.default.getCurrentUser();
       return (null == e ? true : e.isStaff()) || (null == e ? true : e.isStaffPersonal())
     }),
@@ -77,7 +77,7 @@ function P(e) {
   async function eg() {
     var e, t;
     if (em(false), "" === A || "" === L || null == W) return void es(true);
-    let i = null == V || null == (e = V.features) ? true : e.find(e => (0, j.pD)(e) === H);
+    let i = null == V || null == (e = V.features) ? true : e.find(e => (0, b.pD)(e) === H);
     ec(true), es(false);
     let l = (0, O.D)(M.map(e => {
         let {
@@ -85,7 +85,7 @@ function P(e) {
         } = e;
         return t
       })),
-      a = await (0, j.ZD)({
+      a = await (0, b.ZD)({
         name: A,
         description: L,
         priority: W,
@@ -103,7 +103,7 @@ function P(e) {
       } : {
         overridePlatformInformation: X
       }, l).catch(() => em(true));
-    ec(false), null != a && a.ok ? (ef && window.open(a.body.permalink_url, "_blank"), ex(), (0, u.ZDy)(async () => {
+    ec(false), null != a && a.ok ? (eh && window.open(a.body.permalink_url, "_blank"), ex(), (0, u.ZDy)(async () => {
       let {
         default: e
       } = await n.e("64648").then(n.bind(n, 81155));
@@ -143,10 +143,10 @@ function P(e) {
   }
   i.useEffect(() => {
     async function e() {
-      G(await (0, j.WG)())
+      G(await (0, b.WG)())
     }
-    ef && e()
-  }, [ef]), i.useEffect(() => {
+    eh && e()
+  }, [eh]), i.useEffect(() => {
     if (M.length > 0) {
       var e;
       null == (e = N.current) || e.scrollIntoView({
@@ -169,14 +169,14 @@ function P(e) {
   }, [M]);
   return (0, r.jsxs)(u.Y0X, {
     transitionState: k,
-    "aria-label": S.intl.string(S.t.mCCdws),
+    "aria-label": _.intl.string(_.t.mCCdws),
     size: u.CgR.MEDIUM,
     parentComponent: "BugReporterModal",
     children: [(0, r.jsx)(u.xBx, {
       children: (0, r.jsx)(u.X6q, {
         variant: "heading-lg/semibold",
         children: (0, r.jsx)(u.H, {
-          children: S.intl.string(S.t["5Lqopa"])
+          children: _.intl.string(_.t["5Lqopa"])
         })
       })
     }), (0, r.jsx)(u.hzk, {
@@ -185,18 +185,18 @@ function P(e) {
         onSubmit: eg,
         children: [null != ev && (0, r.jsx)(u.ToO, {
           type: u.ToO.Types.DANGER,
-          body: S.intl.format(S.t["yY60+/"], {
+          body: _.intl.format(_.t["yY60+/"], {
             buildOverrideHook: () => (0, r.jsx)("b", {
               children: null == ev ? true : ev.id
             })
           }),
-          title: S.intl.string(S.t["ZP/hEx"])
-        }), null == ev && null != eh && (0, r.jsx)(u.ToO, {
+          title: _.intl.string(_.t["ZP/hEx"])
+        }), null == ev && null != ep && (0, r.jsx)(u.ToO, {
           type: u.ToO.Types.DANGER,
-          title: S.intl.formatToPlainString(S.t["ql2Q/f"], {
-            hours: eh
+          title: _.intl.formatToPlainString(_.t["ql2Q/f"], {
+            hours: ep
           }),
-          body: S.intl.string(S.t.x18RUl)
+          body: _.intl.string(_.t.x18RUl)
         }), (0, r.jsxs)(u.Kqy, {
           gap: 24,
           padding: {
@@ -204,37 +204,37 @@ function P(e) {
             bottom: 8
           },
           children: [(0, r.jsx)(u.oil, {
-            label: S.intl.string(S.t.OZRgj4),
-            error: eo && "" === A ? S.intl.string(S.t.EkokLy) : null,
+            label: _.intl.string(_.t.OZRgj4),
+            error: eo && "" === A ? _.intl.string(_.t.EkokLy) : null,
             placeholder: "Something is broken on this screen.",
             type: "text",
             value: A,
             maxLength: 100,
             onChange: R
           }), (0, r.jsxs)(u.xJW, {
-            error: eo && "" === L ? S.intl.string(S.t.EkokLy) : null,
-            title: S.intl.string(S.t["1SplHx"]),
+            error: eo && "" === L ? _.intl.string(_.t.EkokLy) : null,
+            title: _.intl.string(_.t["1SplHx"]),
             children: [(0, r.jsx)(u.Kx8, {
               placeholder: "What did you expect to see?",
               value: L,
               onChange: I
-            }), ef && (0, r.jsx)(u.R94, {
+            }), eh && (0, r.jsx)(u.R94, {
               type: u.geA.DESCRIPTION,
               children: "You can add additional information/media on the ticket after submitting"
             })]
           }), (0, r.jsx)(u.xJW, {
-            error: eo && true === W ? S.intl.string(S.t.EkokLy) : null,
-            title: S.intl.string(S.t.xMXLdX),
+            error: eo && true === W ? _.intl.string(_.t.EkokLy) : null,
+            title: _.intl.string(_.t.xMXLdX),
             children: (0, r.jsx)(u.q4e, {
               renderOptionLabel: e => (function(e) {
                 let t = e.priority;
                 return (0, r.jsxs)("div", {
-                  className: _.formPriorityImageContainer,
+                  className: S.formPriorityImageContainer,
                   children: [(0, r.jsxs)("div", {
-                    className: _.formPriorityTitleContainer,
+                    className: S.formPriorityTitleContainer,
                     children: [(0, r.jsx)("img", {
                       alt: "",
-                      className: _.formPriorityImage,
+                      className: S.formPriorityImage,
                       src: (0, g.gT)({
                         id: t.emoji,
                         animated: true,
@@ -243,44 +243,45 @@ function P(e) {
                     }), (0, r.jsx)(u.Text, {
                       color: "header-primary",
                       variant: "text-sm/semibold",
-                      className: _.formPriorityTitle,
+                      className: S.formPriorityTitle,
                       children: t.title
                     })]
                   }), (0, r.jsx)(u.Text, {
                     color: "header-secondary",
                     variant: "text-xs/normal",
-                    className: _.formPriorityDescription,
+                    className: S.formPriorityDescription,
                     children: t.description
                   })]
                 })
               })(e),
               onChange: Z,
-              options: (0, j.Tj)().map(e => ({
+              options: (0, b.Tj)().map(e => ({
                 priority: e,
                 value: e.value,
                 label: e.title
               })),
+              optionClassName: S.formPriorityOption,
               value: W,
-              maxVisibleItems: 3,
+              maxVisibleItems: 4,
               closeOnSelect: true
             })
-          }), ef && (0, r.jsx)(u.xJW, {
-            title: S.intl.string(S.t["77VVd3"]),
+          }), eh && (0, r.jsx)(u.xJW, {
+            title: _.intl.string(_.t["77VVd3"]),
             children: (0, r.jsx)(u.VcW, {
               value: H,
-              options: null != (E = null == V || null == (C = V.features) || null == (P = C.filter(e => "" !== (0, j.pD)(e))) || null == (t = P.map(e => {
+              options: null != (E = null == V || null == (C = V.features) || null == (w = C.filter(e => "" !== (0, b.pD)(e))) || null == (t = w.map(e => {
                 var t;
                 return {
                   label: null != (t = e.name) ? t : "",
-                  value: (0, j.pD)(e)
+                  value: (0, b.pD)(e)
                 }
               })) ? true : t.sort((e, t) => e.label.localeCompare(t.label))) ? E : [],
               isDisabled: null == V,
               onChange: e => U(e)
             })
           }), (0, r.jsx)(u.oil, {
-            label: S.intl.string(S.t["7p5pqq"]),
-            placeholder: S.intl.string(S.t.HewMzs),
+            label: _.intl.string(_.t["7p5pqq"]),
+            placeholder: _.intl.string(_.t.HewMzs),
             type: "text",
             value: q,
             maxLength: 5e3,
@@ -289,45 +290,45 @@ function P(e) {
             children: (0, r.jsx)(s.$q, {
               value: X,
               onChange: (e, t) => J(t),
-              children: S.intl.string(S.t.ayhqiI)
+              children: _.intl.string(_.t.ayhqiI)
             })
           }), X ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(u.oil, {
-              label: S.intl.string(S.t.rrI4Tk),
+              label: _.intl.string(_.t.rrI4Tk),
               placeholder: "Device",
               value: K,
               onChange: e => Y(e)
             }), (0, r.jsx)(u.xJW, {
-              title: S.intl.string(S.t.kcHxi4),
+              title: _.intl.string(_.t.kcHxi4),
               children: (0, r.jsx)(u.q4e, {
                 value: F,
-                options: w,
+                options: P,
                 onChange: e => Q(e)
               })
             }), (0, r.jsx)(u.oil, {
-              label: S.intl.string(S.t.rEtxdn),
+              label: _.intl.string(_.t.rEtxdn),
               placeholder: "Operating System Version",
               value: $,
               onChange: e => ee(e)
             }), (0, r.jsx)(u.oil, {
-              label: S.intl.string(S.t["wy1M/v"]),
+              label: _.intl.string(_.t["wy1M/v"]),
               placeholder: "Client Version",
               value: et,
               onChange: e => en(e)
             }), (0, r.jsx)(u.oil, {
-              label: S.intl.string(S.t.f7kbVl),
+              label: _.intl.string(_.t.f7kbVl),
               placeholder: "Client Build Number",
               value: er,
               onChange: e => ei(e)
             }), (0, r.jsx)(u.oil, {
-              label: S.intl.string(S.t["4Z5+zs"]),
+              label: _.intl.string(_.t["4Z5+zs"]),
               placeholder: "Locale",
               value: el,
               onChange: e => ea(e)
             })]
           }) : null, (0, r.jsxs)(s.zx, {
             color: s.zx.Colors.PRIMARY,
-            children: [S.intl.string(S.t.HVxmOD), (0, r.jsx)(c.Z, {
+            children: [_.intl.string(_.t.HVxmOD), (0, r.jsx)(c.Z, {
               ref: T,
               onChange: e => {
                 var t, n;
@@ -345,18 +346,18 @@ function P(e) {
               children: "Preview"
             }), (0, r.jsx)("div", {
               ref: N,
-              className: _.attachments,
+              className: S.attachments,
               children: M.length > 0 && M.map(e => (0, r.jsxs)("div", {
-                className: _.attachment,
+                className: S.attachment,
                 children: [(0, r.jsxs)("div", {
-                  children: [(0, r.jsx)(f.r, {
-                    size: p.q.SMALL,
+                  children: [(0, r.jsx)(h.r, {
+                    size: f.q.SMALL,
                     upload: e
                   }), (0, r.jsx)("div", {
-                    className: _.removeAttachment,
+                    className: S.removeAttachment,
                     children: (0, r.jsx)(v.ZP, {
-                      children: (0, r.jsx)(h.Z, {
-                        tooltip: S.intl.string(S.t.vN7REx),
+                      children: (0, r.jsx)(p.Z, {
+                        tooltip: _.intl.string(_.t.vN7REx),
                         onClick: () => {
                           var t;
                           return t = e.id, void B(M.filter(e => e.id !== t))
@@ -390,12 +391,12 @@ function P(e) {
         justify: "end",
         children: [(0, r.jsx)(u.zxk, {
           variant: "primary",
-          text: ef ? "Submit and Open Report" : "Submit Report",
+          text: eh ? "Submit and Open Report" : "Submit Report",
           loading: eu,
           onClick: eg
         }), (0, r.jsx)(u.zxk, {
           variant: "secondary",
-          text: S.intl.string(S.t["ETE/oK"]),
+          text: _.intl.string(_.t["ETE/oK"]),
           onClick: ex
         })]
       })
