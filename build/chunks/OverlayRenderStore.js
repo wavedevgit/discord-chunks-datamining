@@ -535,7 +535,7 @@ function eI(e) {
 }
 
 function eT(e) {
-  if (null != W(e.pid)) return Q(e.pid, "state", e.overlayState), R.verbose("Updating overlay state for pid ".concat(e.pid, " to ").concat(e.overlayState)), e.overlayState === g.mM.WAITING_FOR_OVERLAY_OPEN ? $(e.pid, g.zE.MODULE_TRACKING) : e.overlayState === g.mM.OVERLAY_RENDERING && $(e.pid, g.zE.OVERLAY_RENDERING), true
+  if (null != W(e.pid)) return Q(e.pid, "state", e.overlayState), R.verbose("Updating overlay state for pid ".concat(e.pid, " to ").concat(e.overlayState)), e.overlayState === g.mM.WAITING_FOR_POPOUT_OPEN || e.overlayState === g.mM.WAITING_FOR_OVERLAY_OPEN ? $(e.pid, g.zE.MODULE_TRACKING) : e.overlayState === g.mM.OVERLAY_RENDERING && $(e.pid, g.zE.OVERLAY_RENDERING), true
 }
 
 function eS() {

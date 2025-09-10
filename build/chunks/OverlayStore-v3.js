@@ -246,7 +246,7 @@ function es(e, t) {
     if (null != t && (K[e] = t), null == B || B.trackGame(e), er(e), M.has(e)) return;
     M.add(e), j(e, "game_tracked", {
       newOverlayMethod: null != t ? y.gl[t] : null
-    }), o.Z.updateOverlayState(e, y.mM.WAITING_FOR_OVERLAY_OPEN)
+    }), o.Z.updateOverlayState(e, y.mM.WAITING_FOR_POPOUT_OPEN)
   } catch (t) {
     L.error("Error tracking game:", t), ea(e, t)
   }
@@ -333,7 +333,7 @@ async function eh(e) {
     en(e, r), j(e, "renderer_window_mounted", r), s.Z.window.setBackgroundThrottling(false), h.ZP.IsHardwareAcceleratedGPUSchedulingEnabled() && G.toggleGPUBoost(y.zS.HARDWARE_ACCELERATED_GPU_SCHEDULING_ENABLED, true), G.toggleGPUBoost(y.zS.OVERLAY_RENDERING, true), e_(e), V = e, (0, m.setPID)(e), L.info("Getting Native Handle for pid", e);
     let i = await ep();
     if (null == i) return L.error("Failed to get native handle for pid", e), ea(e, Error("Failed to get native handle for pid")), "";
-    L.info("Native Handle for pid ".concat(e, ":"), i), o.Z.updateOverlayState(e, y.mM.OVERLAY_RENDERING);
+    L.info("Native Handle for pid ".concat(e, ":"), i), o.Z.updateOverlayState(e, y.mM.WAITING_FOR_REACT_INITIALIZATION);
     let a = {
       renderer_started_after: new Date().getTime() - t
     };
