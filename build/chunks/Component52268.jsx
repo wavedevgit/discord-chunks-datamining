@@ -1,12 +1,12 @@
 /** Chunk was on 55183 **/
 /** chunk id: 52268, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => P
 }), require("./314940.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk278074 = require("./278074.js"),
   Chunk481060 = require("./481060.js"),
   Chunk171019 = require("./171019.jsx"),
@@ -65,14 +65,14 @@ function b(e, t) {
   return i
 }
 let j = () => 80,
-  v = e => {
+  y = e => {
     var {
       children: t,
       className: n,
       isSelected: i = false
     } = e, l = b(e, ["children", "className", "isSelected"]);
     return (0, r.jsx)(c.P3F, x(h({
-      className: s()(m.effectGridItem, n, {
+      className: o()(m.effectGridItem, n, {
         [m.selected]: i
       })
     }, l), {
@@ -80,49 +80,49 @@ let j = () => 80,
       children: t
     }))
   },
-  P = e => {
+  v = e => {
     var t, {
         profileEffect: n,
         innerRef: l,
-        section: s,
-        isSelected: o,
+        section: o,
+        isSelected: s,
         canUsePremiumCollectibles: c
       } = e,
       u = b(e, ["profileEffect", "innerRef", "section", "isSelected", "canUsePremiumCollectibles"]);
     let p = (0, d.V)(n.id),
       j = i.useRef(null),
       {
-        accessibilityLabel: P,
-        thumbnailPreviewSrc: y,
+        accessibilityLabel: v,
+        thumbnailPreviewSrc: P,
         title: O
       } = null != (t = null == p ? true : p.config) ? t : {};
-    return (0, r.jsxs)(v, x(h({
+    return (0, r.jsxs)(y, x(h({
       innerRef: null != l ? l : j,
-      isSelected: o
+      isSelected: s
     }, u), {
       children: [(0, r.jsx)("img", {
         src: g,
-        alt: P,
+        alt: v,
         className: m.presetEffectBackground
       }), (0, r.jsx)("img", {
         className: m.presetEffectImg,
-        src: y,
+        src: P,
         alt: O
       }), (0, r.jsx)(a.Z, {
-        isPurchaseSection: s === f.$0.PURCHASE,
-        isPremiumSection: s === f.$0.PREMIUM_PURCHASE,
+        isPurchaseSection: o === f.$0.PURCHASE,
+        isPremiumSection: o === f.$0.PREMIUM_PURCHASE,
         canUsePremiumCollectibles: c,
         skuId: n.skuId
       })]
     }))
   },
-  y = e => {
+  P = e => {
     let {
       user: t,
       guild: n,
       pendingProfileEffect: i,
       selectedProfileEffectRef: l,
-      onSelect: s,
+      onSelect: o,
       onOpenShop: a
     } = e, d = (0, f.ZP)(), g = null != i, b = u.ZP.canUseCollectibles(t);
     return (0, r.jsx)("section", {
@@ -144,12 +144,12 @@ let j = () => 80,
         renderItem: (e, t, u, x) => {
           let {
             section: j,
-            items: y
+            items: P
           } = d[e];
-          return (0, o.EQ)(y[t]).with(f.Tm, () => (0, r.jsxs)(v, {
+          return (0, s.EQ)(P[t]).with(f.Tm, () => (0, r.jsxs)(y, {
             style: h({}, u),
             isSelected: !g,
-            onSelect: () => s(null),
+            onSelect: () => o(null),
             children: [(0, r.jsx)(c.t6m, {
               size: "md",
               color: "currentColor",
@@ -159,7 +159,7 @@ let j = () => 80,
               color: "header-primary",
               children: null != n ? p.intl.string(p.t.CHf9iI) : p.intl.string(p.t.PoWNfX)
             })]
-          }, x)).with(f.oT, () => (0, r.jsxs)(v, {
+          }, x)).with(f.oT, () => (0, r.jsxs)(y, {
             style: u,
             onSelect: a,
             children: [(0, r.jsx)(c.EOn, {
@@ -175,13 +175,13 @@ let j = () => 80,
             })]
           }, x)).otherwise(e => {
             let t = i === e.id;
-            return (0, r.jsx)(P, {
+            return (0, r.jsx)(v, {
               style: h({}, u),
               section: j,
               profileEffect: e,
               innerRef: t ? l : true,
               isSelected: t,
-              onSelect: () => s(e.id),
+              onSelect: () => o(e.id),
               canUsePremiumCollectibles: b
             }, x)
           })

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 269982, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 79589 **/
+/** chunk id: 269982, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,71 +13,66 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk178368 = require("./178368.js");
 
-function f(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function _(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      f(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function p(e) {
+function m(e) {
   let {
     product: t,
-    onSecondaryClick: f
+    onSecondaryClick: m
   } = e, {
-    newestAnalyticsLocation: p
-  } = (0, s.ZP)(), h = i.useCallback(() => {
-    null != t && (0, o.ZDy)(async () => {
+    newestAnalyticsLocation: h
+  } = (0, a.ZP)(), x = i.useCallback(() => {
+    null != t && (0, s.ZDy)(async () => {
       let {
         default: e
-      } = await n.e("43360").then(n.bind(n, 73415));
-      return n => (0, r.jsx)(e, _({
+      } = await r.e("43360").then(r.bind(r, 73415));
+      return r => (0, n.jsx)(e, function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var r = null != arguments[t] ? arguments[t] : {},
+            n = Object.keys(r);
+          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(r, e).enumerable
+          }))), n.forEach(function(t) {
+            var n;
+            n = r[t], t in e ? Object.defineProperty(e, t, {
+              value: n,
+              enumerable: true,
+              configurable: true,
+              writable: true
+            }) : e[t] = n
+          })
+        }
+        return e
+      }({
         collectableType: null == t ? true : t.type,
-        analyticsSource: p,
+        analyticsSource: h,
         analyticsLocation: {
           section: c.jXE.USER_PROFILE,
           object: c.qAy.BUTTON_CTA
         },
-        onSecondaryClick: f
-      }, n))
+        onSecondaryClick: m
+      }, r))
     })
-  }, [t, p, f]), m = i.useMemo(() => {
+  }, [t, h, m]), p = i.useMemo(() => {
     switch (null == t ? true : t.type) {
-      case a.Z.AVATAR_DECORATION:
+      case l.Z.AVATAR_DECORATION:
         return u.intl.format(u.t["aFR/EB"], {
-          onClick: h
+          onClick: x
         });
-      case a.Z.PROFILE_EFFECT:
+      case l.Z.PROFILE_EFFECT:
         return u.intl.format(u.t.eWNOND, {
-          onClick: h
+          onClick: x
         })
     }
-  }, [null == t ? true : t.type, h]);
-  return (0, r.jsxs)("div", {
+  }, [null == t ? true : t.type, x]);
+  return (0, n.jsxs)("div", {
     className: d.nitroUpsellContainer,
-    children: [(0, r.jsx)(o.SrA, {
+    children: [(0, n.jsx)(s.SrA, {
       className: d.nitroWheel,
       size: "md",
-      color: l.JX.PREMIUM_TIER_2
-    }), (0, r.jsx)(o.Text, {
+      color: o.JX.PREMIUM_TIER_2
+    }), (0, n.jsx)(s.Text, {
       className: d.nitroText,
       variant: "text-md/medium",
-      children: m
+      children: p
     })]
   })
 }

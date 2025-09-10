@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 114732, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 88938 **/
+/** chunk id: 114732, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -13,40 +12,40 @@ var Chunk780384 = require("./780384.js"),
   Chunk597412 = require("./597412.js"),
   Chunk167969 = require("./167969.js"),
   Chunk557256 = require("./557256.js");
-let d = function(e) {
+let u = function(e) {
   let {
     onClose: t
-  } = e, n = (0, o.ZP)(), d = (0, i.wj)(n);
-  return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(a.xBx, {
+  } = e, n = (0, i.ZP)(), u = (0, r.wj)(n);
+  return (0, a.jsxs)(a.Fragment, {
+    children: [(0, a.jsxs)(o.xBx, {
       "data-migration-pending": true,
       separator: false,
-      className: l.header,
-      children: [(0, r.jsx)("img", {
+      className: d.header,
+      children: [(0, a.jsx)("img", {
         alt: "",
-        className: l.headerImage,
-        src: d ? c : u
-      }), (0, r.jsx)(a.X6q, {
-        className: l.title,
+        className: d.headerImage,
+        src: u ? l : c
+      }), (0, a.jsx)(o.X6q, {
+        className: d.title,
         variant: "heading-xl/medium",
         children: s.intl.string(s.t.tWYWJy)
-      }), (0, r.jsx)(a.olH, {
+      }), (0, a.jsx)(o.olH, {
         "data-migration-pending": true,
         onClick: t,
-        className: l.modalCloseButton
+        className: d.modalCloseButton
       })]
-    }), (0, r.jsx)(a.hzk, {
+    }), (0, a.jsx)(o.hzk, {
       "data-migration-pending": true,
-      className: l.content,
+      className: d.content,
       scrollbarType: "none",
-      children: (0, r.jsx)(a.Text, {
+      children: (0, a.jsx)(o.Text, {
         variant: "text-md/normal",
         children: s.intl.string(s.t.JNQRU1)
       })
-    }), (0, r.jsx)(a.mzw, {
+    }), (0, a.jsx)(o.mzw, {
       "data-migration-pending": true,
-      className: l.modalFooter,
-      children: (0, r.jsx)(a.zxk, {
+      className: d.modalFooter,
+      children: (0, a.jsx)(o.zxk, {
         variant: "primary",
         text: s.intl.string(s.t.cpT0Cg),
         onClick: t

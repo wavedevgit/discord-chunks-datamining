@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 843347, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 87510 **/
+/** chunk id: 843347, original params: e,o,n (module,exports,require) **/
 module.exports = {
   modalPreview: "modalPreview__51743",
   smallDecorationPreview: "smallDecorationPreview__51743",

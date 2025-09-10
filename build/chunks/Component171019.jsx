@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 171019, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 79589 **/
+/** chunk id: 171019, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 });
@@ -15,29 +14,29 @@ var Chunk951288 = require("./951288.js"),
 let d = e => {
   let {
     isPurchaseSection: t,
-    isPremiumSection: n,
+    isPremiumSection: r,
     canUsePremiumCollectibles: d,
-    skuId: f
-  } = e, _ = (0, l.Yq)(f), p = (0, a.e7)([s.Z], () => {
-    let e = s.Z.getProduct(f);
-    return (0, l.G1)(e)
+    skuId: m
+  } = e, h = (0, o.Yq)(m), x = (0, l.e7)([a.Z], () => {
+    let e = a.Z.getProduct(m);
+    return (0, o.G1)(e)
   });
-  return t || n && d ? null : _ ? (0, r.jsx)(o.lBU, {
+  return t || r && d ? null : h ? (0, n.jsx)(s.lBU, {
     className: u.newBadge,
-    text: (0, r.jsxs)("div", {
+    text: (0, n.jsxs)("div", {
       className: u.newBadgeText,
-      children: [(0, r.jsx)(o.mBM, {
+      children: [(0, n.jsx)(s.mBM, {
         size: "xxs",
         color: "currentColor"
       }), c.intl.string(c.t.y2b7CA)]
     })
-  }) : (0, r.jsx)(o.G2e, {
-    icon: p ? () => (0, r.jsx)(o.SrA, {
+  }) : (0, n.jsx)(s.G2e, {
+    icon: x ? () => (0, n.jsx)(s.SrA, {
       size: "custom",
       color: "currentColor",
       width: 14,
       height: 14
-    }) : () => (0, r.jsx)(o.mBM, {
+    }) : () => (0, n.jsx)(s.mBM, {
       size: "xxs",
       color: "currentColor"
     }),

@@ -1,7 +1,7 @@
 /** Chunk was on 55183 **/
 /** chunk id: 191564, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => S
+  default: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -33,7 +33,7 @@ function E(e) {
     product: n,
     purchase: i,
     onApply: l,
-    onClose: o,
+    onClose: s,
     onOpenShop: c,
     disableApplyButton: a,
     canUseCollectibles: d,
@@ -41,15 +41,15 @@ function E(e) {
     selectedProfileEffectItem: h
   } = e, x = (0, p.M)(), b = x && (0, u.G1)(n);
   return (0, r.jsx)(r.Fragment, {
-    children: (0, r.jsxs)(s.mzw, {
+    children: (0, r.jsxs)(o.mzw, {
       "data-migration-pending": true,
       className: C.modalFooter,
-      children: [null != i && (!(0, u.qS)(i) || d) || null === f ? (0, r.jsx)(s.zxk, {
+      children: [null != i && (!(0, u.qS)(i) || d) || null === f ? (0, r.jsx)(o.zxk, {
         variant: "primary",
         text: _.intl.string(_.t.Jh8fJy),
         onClick: l,
         disabled: a
-      }) : d || !(0, u.G1)(n) ? (0, r.jsx)(s.zxk, {
+      }) : d || !(0, u.G1)(n) ? (0, r.jsx)(o.zxk, {
         variant: "primary",
         text: _.intl.string(_.t.fYfGgI),
         onClick: () => c(null == h ? true : h.skuId)
@@ -61,17 +61,17 @@ function E(e) {
         }
       }), b ? (0, r.jsx)(m.Z, {
         product: n,
-        onSecondaryClick: o
-      }) : (0, r.jsx)(s.zxk, {
+        onSecondaryClick: s
+      }) : (0, r.jsx)(o.zxk, {
         variant: "secondary",
         text: _.intl.string(_.t["ETE/oK"]),
-        onClick: o
+        onClick: s
       })]
     })
   })
 }
 
-function I(e) {
+function w(e) {
   let {
     user: t,
     guild: n,
@@ -83,55 +83,55 @@ function I(e) {
     analyticsLocations: g
   } = e, {
     pendingProfileEffectId: x
-  } = (0, h.bd)(n), [b, y] = i.useMemo(() => {
+  } = (0, h.bd)(n), [b, P] = i.useMemo(() => {
     let e = (0, u.bl)(l, c);
     return [e.purchased, e.shopPreviews]
-  }, [l, c]), [O, I] = i.useState(() => null != p ? p : true !== x ? x : null == m ? null : null != m ? m : null), [S, w] = i.useMemo(() => {
+  }, [l, c]), [O, w] = i.useState(() => null != p ? p : true !== x ? x : null == m ? null : null != m ? m : null), [I, S] = i.useMemo(() => {
     var e;
     let t = b.find(e => (null == e ? true : e.id) === O),
       n = null != t || null === O;
-    return [null != (e = null != t ? t : y.find(e => (null == e ? true : e.id) === O)) ? e : null, n]
-  }, [O, b, y]), {
-    product: N,
-    purchase: Z
-  } = (0, d.Z)(null == S ? true : S.skuId), k = i.useRef(null), D = j.ZP.canUseCollectibles(t), A = O === (true === x ? null != m ? m : null : x), G = i.useCallback(e => {
-    I(e)
-  }, [I]), T = i.useCallback(e => {
+    return [null != (e = null != t ? t : P.find(e => (null == e ? true : e.id) === O)) ? e : null, n]
+  }, [O, b, P]), {
+    product: Z,
+    purchase: N
+  } = (0, d.Z)(null == I ? true : I.skuId), A = i.useRef(null), k = j.ZP.canUseCollectibles(t), D = O === (true === x ? null != m ? m : null : x), T = i.useCallback(e => {
+    w(e)
+  }, [w]), B = i.useCallback(e => {
     f(), (0, a.mK)({
       analyticsLocations: g,
-      analyticsSource: o.Z.EDIT_PROFILE_EFFECT_MODAL,
+      analyticsSource: s.Z.EDIT_PROFILE_EFFECT_MODAL,
       initialProductSkuId: e
     })
   }, [g, f]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(s.xBx, {
+    children: [(0, r.jsxs)(o.xBx, {
       "data-migration-pending": true,
       separator: false,
       className: C.modalHeader,
-      children: [(0, r.jsx)(s.X6q, {
+      children: [(0, r.jsx)(o.X6q, {
         variant: "heading-lg/semibold",
         children: _.intl.string(_.t["/6nv6O"])
-      }), (0, r.jsx)(s.olH, {
+      }), (0, r.jsx)(o.olH, {
         "data-migration-pending": true,
         className: C.modalCloseButton,
         onClick: f
       })]
-    }), (0, r.jsxs)(s.hzk, {
+    }), (0, r.jsxs)(o.hzk, {
       "data-migration-pending": true,
       className: C.modalContent,
-      children: [(0, r.jsx)(P.Z, {
+      children: [(0, r.jsx)(v.Z, {
         user: t,
         guild: n,
         pendingProfileEffect: O,
-        selectedProfileEffectRef: k,
-        onSelect: G,
-        onOpenShop: T
-      }), (0, r.jsx)(v.Z, {
+        selectedProfileEffectRef: A,
+        onSelect: T,
+        onOpenShop: B
+      }), (0, r.jsx)(y.Z, {
         user: t,
-        canApplySelectedChange: w,
-        pendingProfileEffectRecord: S,
-        product: N,
-        purchase: Z,
+        canApplySelectedChange: S,
+        pendingProfileEffectRecord: I,
+        product: Z,
+        purchase: N,
         guild: n
       })]
     }), (0, r.jsx)(E, {
@@ -140,19 +140,19 @@ function I(e) {
         (0, h.s6)(O, m, null == n ? true : n.id), f()
       },
       onClose: f,
-      onOpenShop: T,
-      product: N,
-      purchase: Z,
-      canUseCollectibles: D,
+      onOpenShop: B,
+      product: Z,
+      purchase: N,
+      canUseCollectibles: k,
       selectedProfileEffectId: O,
-      selectedProfileEffectItem: S,
-      disableApplyButton: A,
+      selectedProfileEffectItem: I,
+      disableApplyButton: D,
       analyticsLocations: g
     })]
   })
 }
 
-function S(e) {
+function I(e) {
   let {
     transitionState: t,
     analyticsLocations: n,
@@ -164,33 +164,33 @@ function S(e) {
     categories: m,
     purchases: g
   } = (0, f.Z)(), j = (0, l.e7)([x.default], () => x.default.getCurrentUser()), {
-    analyticsLocations: v
-  } = (0, c.ZP)(n, o.Z.EDIT_PROFILE_EFFECT_MODAL), P = (0, h.Kg)(j, u);
+    analyticsLocations: y
+  } = (0, c.ZP)(n, s.Z.EDIT_PROFILE_EFFECT_MODAL), v = (0, h.Kg)(j, u);
   return i.useEffect(() => {
-    b.default.track(y.rMx.OPEN_MODAL, {
-      type: y.jXE.PROFILE_EFFECT_CUSTOMIZATION,
-      location_stack: v
+    b.default.track(P.rMx.OPEN_MODAL, {
+      type: P.jXE.PROFILE_EFFECT_CUSTOMIZATION,
+      location_stack: y
     })
-  }, [v]), (0, r.jsx)(c.Gt, {
-    value: v,
-    children: (0, r.jsx)(s.Y0X, {
+  }, [y]), (0, r.jsx)(c.Gt, {
+    value: y,
+    children: (0, r.jsx)(o.Y0X, {
       transitionState: t,
       className: C.modal,
-      size: p ? s.CgR.DYNAMIC : s.CgR.MEDIUM,
+      size: p ? o.CgR.DYNAMIC : o.CgR.MEDIUM,
       parentComponent: "ProfileEffectModal",
       "data-migration-pending": true,
-      children: p ? (0, r.jsx)(s.$jN, {
+      children: p ? (0, r.jsx)(o.$jN, {
         className: C.spinner,
-        type: s.$jN.Type.SPINNING_CIRCLE
-      }) : (0, r.jsx)(I, {
+        type: o.$jN.Type.SPINNING_CIRCLE
+      }) : (0, r.jsx)(w, {
         user: j,
         guild: u,
         categories: m,
         purchases: g,
         initialSelectedProfileEffectId: a,
-        currentSavedEffectId: P,
+        currentSavedEffectId: v,
         onClose: d,
-        analyticsLocations: v
+        analyticsLocations: y
       })
     })
   })

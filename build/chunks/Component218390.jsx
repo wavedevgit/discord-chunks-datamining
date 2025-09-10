@@ -48,7 +48,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk232076 = require("./232076.js"),
   Chunk736519 = require("./736519.jsx"),
   Chunk117791 = require("./117791.jsx"),
-  Chunk767714 = require("./767714.jsx"),
+  Chunk740594 = require("./740594.jsx"),
   Chunk382791 = require("./382791.jsx"),
   Chunk823188 = require("./823188.jsx"),
   Chunk504865 = require("./504865.jsx"),
@@ -125,9 +125,9 @@ function ed() {
     l = null !== Chunk647438 && null !== Chunk647438.planIdFromItems;
   if (!l && !Chunk120356.isFractionalPremiumActive) return null;
   let u = Chunk120356.isFractionalPremiumActive,
-    h = null !== Chunk647438 && Chunk647438.hasActiveTrial,
-    m = module || Chunk570140,
-    E = () => Chunk622535 && !Chunk913527 ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    _ = null !== Chunk647438 && Chunk647438.hasActiveTrial,
+    h = module || Chunk755721,
+    m = () => Chunk622535 && !Chunk913527 ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk382791.mn, {
         text: Chunk388032.intl.string(Chunk388032.t.uXF4c3),
         className: Chunk458622.fractionalPremiumTopRimPill,
@@ -159,17 +159,11 @@ function ed() {
         })
       })]
     }) : null,
-    y = () => Chunk622535 && !l ? (0, Chunk951288.jsxs)(Chunk159691.hE, {
+    E = () => Chunk622535 && !l ? (0, Chunk951288.jsxs)(Chunk159691.hE, {
       fullWidth: true,
       direction: "vertical",
-      children: [(0, Chunk951288.jsx)(Chunk767714.Z, {
-        textOptions: {
-          textOverride: Chunk913527 ? Chunk388032.intl.string(Chunk388032.t.YScQSE) : Chunk388032.intl.string(Chunk388032.t["0b3YRk"]),
-          textClassName: Chunk458622.tierCardButtonCTA
-        },
-        color: Chunk755721.zx.Colors.WHITE,
-        disableShine: true,
-        showIcon: false
+      children: [(0, Chunk951288.jsx)(Chunk740594.Z, {
+        defaultTextOverride: Chunk913527 ? Chunk388032.intl.string(Chunk388032.t.YScQSE) : Chunk388032.intl.string(Chunk388032.t["0b3YRk"])
       }), (0, Chunk951288.jsx)(Chunk159691.zx, {
         onClick: () => {
           Chunk626135.default.track(Chunk981631.rMx.PREMIUM_SETTINGS_INTERACTED, {
@@ -211,15 +205,15 @@ function ed() {
     });
   return (0, Chunk951288.jsxs)("div", {
     className: o()(Chunk458622.tierCard, {
-      [Chunk458622.withTier2Rim]: Chunk355467
+      [Chunk458622.withTier2Rim]: Chunk570140
     }),
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk458622.tierInfo,
       children: [(0, Chunk951288.jsx)(Chunk483444.Z, {
         className: Chunk458622.tierTitle
-      }), Chunk821849(), (0, Chunk951288.jsx)(Chunk823188.nT, {
+      }), Chunk355467(), (0, Chunk951288.jsx)(Chunk823188.nT, {
         featureSet: Chunk622535 ? Chunk823188.uZ.FRACTIONAL_PREMIUM : Chunk823188.uZ.DEFAULT
-      }), Chunk497321()]
+      }), Chunk821849()]
     }), (0, Chunk951288.jsx)("div", {
       className: Chunk458622.tierImage,
       children: (0, Chunk951288.jsx)("img", {

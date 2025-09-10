@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 88785, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 87510 **/
+/** chunk id: 88785, original params: e,o,n (module,exports,require) **/
 module.exports = {
   spinner: "spinner_ced2f2",
   modal: "modal_ced2f2",

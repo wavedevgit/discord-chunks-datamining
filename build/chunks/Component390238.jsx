@@ -1,5 +1,5 @@
 /** Chunk was on 88938 **/
-/** chunk id: 390238, original params: e,n,t (module,exports,require) **/
+/** chunk id: 390238, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => y
 }), require("./388685.js");
@@ -27,75 +27,75 @@ var Chunk951288 = require("./951288.js"),
   Chunk798144 = require("./798144.js");
 
 function A(e) {
-  var n;
+  var t;
   let {
-    transitionState: t,
+    transitionState: n,
     onClose: o,
-    quest: C,
-    location: m,
-    reward: f,
+    quest: m,
+    location: h,
+    reward: x,
     sourceQuestContent: j
-  } = e, p = r.useRef(null), [_, N] = r.useState(null), A = r.useRef(new s.qA), y = (0, d.e7)([c.Z], () => c.Z.useReducedMotion), S = (null == (n = C.userStatus) ? true : n.claimedAt) != null, [k, q] = r.useState(S ? "claimed" : "loading");
+  } = e, _ = r.useRef(null), [v, w] = r.useState(null), A = r.useRef(new s.qA), y = (0, d.e7)([c.Z], () => c.Z.useReducedMotion), M = (null == (t = m.userStatus) ? true : t.claimedAt) != null, [B, I] = r.useState(M ? "claimed" : "loading");
   r.useEffect(() => {
-    if (!S) {
-      let e = x.r.build(C.config),
-        n = e.rewardPlatforms.length > 0 ? e.rewardPlatforms[0] : g.y$.CROSS_PLATFORM;
-      (0, h.QB)(C.id, n, m).then(() => q("claimed")).catch(() => q("error"))
+    if (!M) {
+      let e = f.r.build(m.config),
+        t = e.rewardPlatforms.length > 0 ? e.rewardPlatforms[0] : C.y$.CROSS_PLATFORM;
+      (0, g.QB)(m.id, t, h).then(() => I("claimed")).catch(() => I("error"))
     }
-  }, [C, m, S]);
-  let I = "loading" === k;
+  }, [m, h, M]);
+  let S = "loading" === B;
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)(s.O_, {
-      ref: N,
+      ref: w,
       className: R.confettiCanvas,
       environment: A.current
     }), (0, a.jsx)("div", {
-      ref: p,
+      ref: _,
       children: (0, a.jsx)(l.Y0X, {
         "data-migration-pending": true,
-        transitionState: t,
+        transitionState: n,
         size: l.CgR.DYNAMIC,
         className: i()(R.rootContainer, {
-          [R.rootContainerLoading]: I
+          [R.rootContainerLoading]: S
         }),
         hideShadow: true,
         parentComponent: "QuestsRewardInGameModal",
-        children: I ? (0, a.jsx)(l.$jN, {
+        children: S ? (0, a.jsx)(l.$jN, {
           type: l.$jN.Type.SPINNING_CIRCLE
-        }) : "error" === k ? (0, a.jsx)(v.Z, {
+        }) : "error" === B ? (0, a.jsx)(p.Z, {
           onClose: o
-        }) : (0, a.jsx)(M, {
-          quest: C,
-          rewardName: f.messages.name,
-          location: m,
+        }) : (0, a.jsx)(k, {
+          quest: m,
+          rewardName: x.messages.name,
+          location: h,
           useReducedMotion: y,
           onClose: o,
           sourceQuestContent: j
         })
       })
-    }), !y && !S && "claimed" === k && (0, a.jsx)(u.Z, {
-      confettiTarget: p.current,
-      confettiCanvas: _,
-      sprites: w.CA,
-      colors: w.Br
+    }), !y && !M && "claimed" === B && (0, a.jsx)(u.Z, {
+      confettiTarget: _.current,
+      confettiCanvas: v,
+      sprites: N.CA,
+      colors: N.Br
     })]
   })
 }
 
-function M(e) {
+function k(e) {
   let {
-    quest: n,
-    rewardName: t,
+    quest: t,
+    rewardName: n,
     location: o,
     useReducedMotion: i,
     onClose: s,
     sourceQuestContent: d
-  } = e, c = r.useMemo(() => (0, f.fh)(n, f.eC.HERO), [n]), u = c.isAnimated && !i;
+  } = e, c = r.useMemo(() => (0, x.fh)(t, x.eC.HERO), [t]), u = c.isAnimated && !i;
   return (0, a.jsxs)("div", {
     className: R.claimedRootContainer,
     children: [(0, a.jsxs)("div", {
       className: R.headerContainer,
-      children: [(0, a.jsx)(C.Z, {
+      children: [(0, a.jsx)(m.Z, {
         className: R.headerBackground,
         autoPlay: u,
         loop: u,
@@ -108,13 +108,13 @@ function M(e) {
         className: R.headerForeground,
         children: [(0, a.jsx)("div", {
           className: R.previewContainer,
-          children: (0, a.jsx)(p.Z, {
+          children: (0, a.jsx)(_.Z, {
             autoplay: true,
             className: R.rewardTile,
             learnMoreStyle: null,
-            quest: n,
+            quest: t,
             questContent: o,
-            location: _.dr.INGAME_REWARD_MODAL,
+            location: v.dr.INGAME_REWARD_MODAL,
             sourceQuestContent: d
           })
         }), (0, a.jsx)(l.olH, {
@@ -134,13 +134,13 @@ function M(e) {
           variant: "heading-lg/bold",
           color: "always-white",
           className: R.heading,
-          children: N.intl.string(N.t["0/Yz+f"])
+          children: w.intl.string(w.t["0/Yz+f"])
         }), (0, a.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "always-white",
           className: R.text,
-          children: N.intl.format(N.t["v1u/zs"], {
-            rewardName: t
+          children: w.intl.format(w.t["v1u/zs"], {
+            rewardName: n
           })
         })]
       })
@@ -150,22 +150,22 @@ function M(e) {
 
 function y(e) {
   let {
-    quest: n,
-    location: t,
+    quest: t,
+    location: n,
     onClose: o,
     transitionState: i,
     sourceQuestContent: s
-  } = e, d = r.useMemo(() => (0, m.K)(n.config), [n]);
+  } = e, d = r.useMemo(() => (0, h.K)(t.config), [t]);
   return null == d ? null : (0, a.jsx)(j.A, {
-    questOrQuests: n,
-    questContent: g.jn.REWARD_MODAL,
+    questOrQuests: t,
+    questContent: C.jn.REWARD_MODAL,
     sourceQuestContent: s,
     overrideVisibility: true,
     children: () => (0, a.jsx)(A, {
       onClose: o,
       transitionState: i,
-      quest: n,
-      location: t,
+      quest: t,
+      location: n,
       reward: d,
       sourceQuestContent: s
     })
