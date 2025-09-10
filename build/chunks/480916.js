@@ -19,13 +19,13 @@ require.d(exports, {
 var Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   a = function(e) {
-    return e.GET_STARTED_MODAL = "get_started_modal", e.RETRY_MODAL = "retry_modal", e.NSFW_GUILD = "nsfw_guild", e.NSFW_AGE_GATE = "nsfw_age_gate", e.OBSCURED_MEDIA = "obscured_media", e.SYSTEM_DM_RETRY_BUTTON = "system_dm_retry_button", e.DEV_TOOLS_QUICK_ACTIONS = "dev_tools_quick_actions", e.SENSITIVE_MEDIA_FILTER_SETTINGS = "sensitive_media_filter_settings", e.SENSITIVE_MEDIA_LEARN_MORE = "sensitive_media_learn_more", e.MESSAGE_REQUESTS_SETTINGS = "message_requests_settings", e.ACCOUNT_AGE_GROUP = "account_age_group", e.FORUM_POST_MEDIA_PREVIEW = "forum_post_media_preview", e.SEARCH_MEDIA_PREVIEW = "search_media_preview", e.CONTENT_AND_SOCIAL_NOTICE = "content_and_social_notice", e.DEV_TOOLS_AGE_VERIFICATION_RETRY_MODAL = "dev_tools_age_verification_retry_modal", e.SAFETY_FLOWS = "safety_flows", e.AUTOMATED_UNDERAGE_APPEALS = "automated_underage_appeals", e
+    return e.GET_STARTED_MODAL = "get_started_modal", e.RETRY_MODAL = "retry_modal", e.NSFW_GUILD = "nsfw_guild", e.NSFW_AGE_GATE = "nsfw_age_gate", e.OBSCURED_MEDIA = "obscured_media", e.SYSTEM_DM_RETRY_BUTTON = "system_dm_retry_button", e.DEV_TOOLS_QUICK_ACTIONS = "dev_tools_quick_actions", e.SENSITIVE_MEDIA_FILTER_SETTINGS = "sensitive_media_filter_settings", e.SENSITIVE_MEDIA_LEARN_MORE = "sensitive_media_learn_more", e.MESSAGE_REQUESTS_SETTINGS = "message_requests_settings", e.ACCOUNT_AGE_GROUP = "account_age_group", e.FORUM_POST_MEDIA_PREVIEW = "forum_post_media_preview", e.SEARCH_MEDIA_PREVIEW = "search_media_preview", e.CONTENT_AND_SOCIAL_NOTICE = "content_and_social_notice", e.DEV_TOOLS_AGE_VERIFICATION_RETRY_MODAL = "dev_tools_age_verification_retry_modal", e.SAFETY_FLOWS = "safety_flows", e.AUTOMATED_UNDERAGE_APPEALS = "automated_underage_appeals", e.EXPRESSIVE_GET_STARTED = "expressive_get_started", e
   }({}),
   o = function(e) {
-    return e[e.PRIMARY = 1] = "PRIMARY", e[e.RETRY = 2] = "RETRY", e
+    return e[e.PRIMARY = 1] = "PRIMARY", e[e.RETRY = 2] = "RETRY", e[e.EXPRESSIVE_PRIMARY = 3] = "EXPRESSIVE_PRIMARY", e
   }({}),
   s = function(e) {
-    return e.MANUAL_REVIEW_REQUEST = "manual_review_request", e.LEARN_MORE = "learn_more", e.GET_STARTED = "get_started", e.SYSTEM_DMS_LEARN_MORE = "system_dms_learn_more", e
+    return e.MANUAL_REVIEW_REQUEST = "manual_review_request", e.LEARN_MORE = "learn_more", e.GET_STARTED = "get_started", e.SYSTEM_DMS_LEARN_MORE = "system_dms_learn_more", e.METHOD_SELECT = "method_select", e
   }({}),
   l = function(e) {
     return e.RETRY = "retry", e
@@ -45,11 +45,12 @@ function d(e, t, n) {
   })
 }
 
-function f(e, t, n) {
+function f(e, t, n, a) {
   r.default.track(i.rMx.AGE_VERIFICATION_MODAL_CLICKED, {
     modal_session_id: e,
     modal_version: t,
-    cta: n
+    cta: n,
+    method: a
   })
 }
 

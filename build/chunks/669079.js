@@ -319,5 +319,5 @@ function en(e) {
   let {
     productLine: t
   } = e;
-  return t === h.POd.APPLICATION
+  return t === h.POd.APPLICATION || t === h.POd.SOCIAL_LAYER_GAME_ITEM
 }

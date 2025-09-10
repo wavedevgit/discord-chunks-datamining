@@ -82,32 +82,30 @@ function C() {
 
 function N(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-    n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : null,
-    [o, s] = r.useState(false),
-    u = (0, i.e7)([f.default], () => f.default.getCurrentUser()),
-    {
-      current: d
-    } = r.useRef(null == u ? true : u.ageVerificationStatus),
-    h = r.useCallback(() => {
-      a.Z.dispatch({
-        type: "CLOSE_AGE_VERIFICATION_MODAL",
-        status: d
-      }), t || c.Z.maybeOpenAgeVerificationUserFeedback({
-        location: "age_verification_intro_screen",
-        visibleContent: n
-      })
-    }, [d, t, n]);
+    n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : null;
+  arguments.length > 3 && arguments[3];
+  let [o, s] = r.useState(false), u = (0, i.e7)([f.default], () => f.default.getCurrentUser()), {
+    current: d
+  } = r.useRef(null == u ? true : u.ageVerificationStatus), h = r.useCallback(() => {
+    a.Z.dispatch({
+      type: "CLOSE_AGE_VERIFICATION_MODAL",
+      status: d
+    }), t || c.Z.maybeOpenAgeVerificationUserFeedback({
+      location: "age_verification_intro_screen",
+      visibleContent: n
+    })
+  }, [d, t, n]);
   return {
     loading: o,
-    initiateAgeVerification: r.useCallback(async t => {
+    initiateAgeVerification: r.useCallback(async (t, n) => {
       s(true);
       try {
         a.Z.dispatch({
           type: "INITIATE_AGE_VERIFICATION"
         });
-        let n = await (0, p.K)();
+        let r = await (0, p.K)(n);
         _.Z.showAgeVerification({
-          webviewUrl: n.verification_webview_url,
+          webviewUrl: r.verification_webview_url,
           onComplete: e,
           onClose: h,
           onCancel: h,

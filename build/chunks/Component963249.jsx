@@ -2,7 +2,7 @@
 /** chunk id: 963249, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => N
+  Z: () => R
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -21,11 +21,12 @@ var Chunk97613 = require("./97613.js"),
   Chunk626135 = require("./626135.js"),
   Chunk585483 = require("./585483.js"),
   Chunk74538 = require("./74538.js"),
+  Chunk845220 = require("./845220.js"),
   Chunk518727 = require("./518727.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js");
 
-function v(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,20 +35,20 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,15 +59,15 @@ function T(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function A(e, t) {
+function C(e, t) {
   if (null == e) return {};
-  var n, r, i = C(e, t);
+  var n, r, i = N(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -74,7 +75,7 @@ function A(e, t) {
   return i
 }
 
-function C(e, t) {
+function N(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -82,108 +83,109 @@ function C(e, t) {
   return i
 }
 
-function N(e) {
+function R(e) {
+  var t;
   let {
-    initialPlanId: t,
-    followupSKUInfo: i,
-    onClose: v,
-    onComplete: T,
-    onSubscriptionConfirmation: C,
-    analyticsLocations: N,
-    analyticsObject: R,
-    analyticsLocation: P,
-    analyticsSourceLocation: w,
-    confirmationFooter: D,
-    paymentModalBanner: x,
-    isGift: L = false,
-    giftMessage: j,
-    giftStyle: M,
-    giftingOrigin: k,
-    subscriptionTier: U,
-    trialId: G,
-    postSuccessGuild: B,
-    openInvoiceId: Z,
-    applicationId: F,
-    referralTrialOfferId: V,
-    giftRecipient: H,
-    returnRef: Y,
-    subscription: W,
-    skipConfirm: K
-  } = null != e ? e : {}, z = false, q = (0, o.Z)(), X = h.default.getCurrentUser(), Q = (0, E.M5)(X, O.p9.TIER_2), J = a()("payment-modal"), $ = (0, E.Wz)(U), ee = false;
+    initialPlanId: i,
+    followupSKUInfo: I,
+    onClose: S,
+    onComplete: N,
+    onSubscriptionConfirmation: R,
+    analyticsLocations: P,
+    analyticsObject: w,
+    analyticsLocation: D,
+    analyticsSourceLocation: x,
+    confirmationFooter: L,
+    paymentModalBanner: j,
+    isGift: M = false,
+    giftMessage: k,
+    giftStyle: U,
+    giftingOrigin: G,
+    subscriptionTier: B,
+    trialId: Z,
+    postSuccessGuild: F,
+    openInvoiceId: V,
+    applicationId: H,
+    referralTrialOfferId: Y,
+    giftRecipient: W,
+    returnRef: K,
+    subscription: z,
+    skipConfirm: q
+  } = null != e ? e : {}, X = false, Q = null != (t = (0, b.b)()) ? t : (0, o.Z)(), J = h.default.getCurrentUser(), $ = (0, E.M5)(J, v.p9.TIER_2), ee = a()("payment-modal"), et = (0, E.Wz)(B), en = false;
   return (0, s.ZDy)(async () => {
     let {
       default: e
     } = await Promise.all([n.e("84992"), n.e("54400")]).then(n.bind(n, 7305));
-    return n => {
+    return t => {
       var {
-        onClose: a
-      } = n, o = A(n, ["onClose"]);
-      return (0, r.jsx)(e, S(I({}, o), {
-        loadId: q,
-        subscriptionTier: U,
-        skuId: $,
-        isGift: L,
-        giftMessage: j,
-        giftStyle: M,
-        giftingOrigin: k,
-        giftRecipient: H,
-        initialPlanId: t,
-        followupSKUInfo: i,
+        onClose: n
+      } = t, a = C(t, ["onClose"]);
+      return (0, r.jsx)(e, A(T({}, a), {
+        loadId: Q,
+        subscriptionTier: B,
+        skuId: et,
+        isGift: M,
+        giftMessage: k,
+        giftStyle: U,
+        giftingOrigin: G,
+        giftRecipient: W,
+        initialPlanId: i,
+        followupSKUInfo: I,
         onClose: (e, t) => {
-          if (ee) return;
-          ee = true, g.S.dispatch(y.CkL.PREMIUM_PAYMENT_MODAL_CLOSED);
-          let n = () => {
-            a(), null == v || v(e), e && (null == C || C(), (0, p.M)(L, Q, t) && g.S.dispatch(y.CkL.PREMIUM_SUBSCRIPTION_CREATED)), l.Z.dispatch({
+          if (en) return;
+          en = true, g.S.dispatch(O.CkL.PREMIUM_PAYMENT_MODAL_CLOSED);
+          let r = () => {
+            n(), null == S || S(e), e && (null == R || R(), (0, p.M)(M, $, t) && g.S.dispatch(O.CkL.PREMIUM_SUBSCRIPTION_CREATED)), l.Z.dispatch({
               type: "PREMIUM_PAYMENT_MODAL_CLOSE",
               didSucceed: e
             })
           };
           _.Z.isDisplayingWowMomentConfirmation && _.Z.isAnimated ? setTimeout(() => {
-            n()
-          }, b.P) : n()
+            r()
+          }, y.P) : r()
         },
         onComplete: e => {
-          z = true, null == T || T(), (0, p.M)(L, Q, (0, E.k5)(null == e ? true : e.subscription)) && (0, f.H)(true)
+          X = true, null == N || N(), (0, p.M)(M, $, (0, E.k5)(null == e ? true : e.subscription)) && (0, f.H)(true)
         },
-        onSubscriptionConfirmation: C,
-        analyticsLocations: N,
-        analyticsObject: R,
-        analyticsLocation: P,
-        analyticsSourceLocation: w,
-        confirmationFooter: D,
-        paymentModalBanner: x,
-        trialId: G,
-        postSuccessGuild: B,
-        planGroup: O.Y1,
-        openInvoiceId: Z,
-        applicationId: F,
-        referralTrialOfferId: V,
-        returnRef: Y,
-        subscription: W,
-        skipConfirm: !!K,
-        wasTier2PremiumBeforePurchase: Q
+        onSubscriptionConfirmation: R,
+        analyticsLocations: P,
+        analyticsObject: w,
+        analyticsLocation: D,
+        analyticsSourceLocation: x,
+        confirmationFooter: L,
+        paymentModalBanner: j,
+        trialId: Z,
+        postSuccessGuild: F,
+        planGroup: v.Y1,
+        openInvoiceId: V,
+        applicationId: H,
+        referralTrialOfferId: Y,
+        returnRef: K,
+        subscription: z,
+        skipConfirm: !!q,
+        wasTier2PremiumBeforePurchase: $
       }))
     }
   }, {
     onCloseRequest: () => {
-      ee || (ee = true, g.S.dispatch(y.CkL.PREMIUM_PAYMENT_MODAL_CLOSED), _.Z.isDisplayingWowMomentConfirmation && _.Z.isAnimated ? setTimeout(() => {
-        (0, s.Mr3)(J)
-      }, b.P) : (0, s.Mr3)(J))
+      en || (en = true, g.S.dispatch(O.CkL.PREMIUM_PAYMENT_MODAL_CLOSED), _.Z.isDisplayingWowMomentConfirmation && _.Z.isAnimated ? setTimeout(() => {
+        (0, s.Mr3)(ee)
+      }, y.P) : (0, s.Mr3)(ee))
     },
-    modalKey: J,
+    modalKey: ee,
     onCloseCallback: () => {
-      z || m.default.track(y.rMx.PAYMENT_FLOW_CANCELED, {
-        load_id: q,
-        payment_type: y.Zuq[y.GZQ.SUBSCRIPTION],
-        location: null != P ? P : R,
-        source: w,
-        subscription_type: y.NYc.PREMIUM,
-        is_gift: L,
-        sku_id: $,
-        eligible_for_trial: null != G,
-        application_id: F,
-        location_stack: N
-      }), (0, u.fw)(), (0, c.fw)(), (0, d.p)(), null == v || v(z), z && (null == C || C())
+      X || m.default.track(O.rMx.PAYMENT_FLOW_CANCELED, {
+        load_id: Q,
+        payment_type: O.Zuq[O.GZQ.SUBSCRIPTION],
+        location: null != D ? D : w,
+        source: x,
+        subscription_type: O.NYc.PREMIUM,
+        is_gift: M,
+        sku_id: et,
+        eligible_for_trial: null != Z,
+        application_id: H,
+        location_stack: P
+      }), (0, u.fw)(), (0, c.fw)(), (0, d.p)(), null == S || S(X), X && (null == R || R())
     }
   })
 }

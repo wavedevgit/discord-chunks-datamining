@@ -4,12 +4,15 @@
 require.d(exports, {
   K: () => a
 });
-var Chunk544891 = require("./544891.js"),
-  Chunk981631 = require("./981631.js");
-async function a() {
-  return (await Chunk544891.tn.post({
-    url: Chunk981631.ANM.VERIFY_AGE,
-    body: {},
+var Chunk544891 = require("./544891.js");
+require("./570140.js");
+var Chunk981631 = require("./981631.js");
+async function a(e) {
+  return (await r.tn.post({
+    url: i.ANM.VERIFY_AGE,
+    body: {
+      method: e
+    },
     rejectWithError: true
   })).body
 }

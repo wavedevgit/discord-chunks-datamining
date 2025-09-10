@@ -705,7 +705,7 @@ function eX(e) {
   var t, n, r, i;
   let a = R.r.build(e.config).defaultInGameTask;
   if (null == a) return null;
-  let o = null != (i = null == (r = e.userStatus) || null == (n = r.progress) || null == (t = n[a.eventName]) ? true : t.value) ? i : 0,
+  let o = null != (i = null == (r = e.userStatus) || null == (n = r.progress) || null == (t = n[a.type]) ? true : t.value) ? i : 0,
     s = eB(a.target, o);
   return {
     title: a.messages.taskTitle,

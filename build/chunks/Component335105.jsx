@@ -16,25 +16,25 @@ let d = t => {
     type: e,
     theme: n
   } = t;
-  return (0, l.jsx)("div", {
+  return (0, s.jsx)("div", {
     className: c.gradientOuterBorder,
-    children: (0, l.jsx)("div", {
+    children: (0, s.jsx)("div", {
       className: c.gradientInnerBorder,
       children: ((t, e) => {
         let n = (0, i.wj)(e) ? "white" : "black";
         switch (t) {
-          case s.Yk.PREMIUM_UPDATED:
-            return (0, l.jsx)(C.Z, {
+          case l.Yk.PREMIUM_UPDATED:
+            return (0, s.jsx)(C.Z, {
               color: n,
               className: c.svgCopy
             });
-          case s.Yk.PREMIUM_ACTIVATED:
-            return (0, l.jsx)(a.Z, {
+          case l.Yk.PREMIUM_ACTIVATED:
+            return (0, s.jsx)(a.Z, {
               color: n,
               className: c.svgCopy
             });
-          case s.Yk.PREMIUM_PAYMENT_STARTED:
-            return (0, l.jsx)(r.Z, {
+          case l.Yk.PREMIUM_PAYMENT_STARTED:
+            return (0, s.jsx)(r.Z, {
               color: n,
               className: c.svgCopy
             });

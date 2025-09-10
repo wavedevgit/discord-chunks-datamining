@@ -1,7 +1,7 @@
 /** Chunk was on 26526 **/
-/** chunk id: 48813, original params: e,t,n (module,exports,require) **/
+/** chunk id: 48813, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  PremiumBrandRefreshSubscriptionCancellationModal: () => j
+  PremiumBrandRefreshSubscriptionCancellationModal: () => A
 }), require("./388685.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,6 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk211242 = require("./211242.js"),
+  Chunk845220 = require("./845220.js"),
   Chunk626135 = require("./626135.js"),
   Chunk74538 = require("./74538.js"),
   Chunk937615 = require("./937615.js"),
@@ -30,123 +31,138 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk320150 = require("./320150.js");
-let T = [Chunk981631.O0b.PAST_DUE, Chunk981631.O0b.PAUSED, Chunk981631.O0b.BILLING_RETRY],
-  j = e => {
-    var t, n, o;
+
+function h(t) {
+  for (var e = 1; e < arguments.length; e++) {
+    var n = null != arguments[e] ? arguments[e] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
+      return Object.getOwnPropertyDescriptor(n, t).enumerable
+    }))), r.forEach(function(e) {
+      var r;
+      r = n[e], e in t ? Object.defineProperty(t, e, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : t[e] = r
+    })
+  }
+  return t
+}
+let M = [Chunk981631.O0b.PAST_DUE, Chunk981631.O0b.PAUSED, Chunk981631.O0b.BILLING_RETRY],
+  A = t => {
+    var e, n, u;
     let {
-      analyticsLocation: j,
-      analyticsLocations: L,
-      onClose: M,
+      analyticsLocation: A,
+      analyticsLocations: j,
+      onClose: k,
       transitionState: g,
-      premiumSubscription: A
-    } = e, {
-      initialStep: U
-    } = e, k = a.useRef(new u.qA), [x, F] = a.useState(null), W = null == (t = (0, O.Af)(A)) ? true : t.planId, G = null != W ? O.ZP.getPremiumType(W) : null;
-    i()(null != G, "Should not be cancelling Nitro without premiumType");
-    let H = G === h.p9.TIER_0 || G === h.p9.TIER_1 || G === h.p9.TIER_2;
-    null == U && (U = H ? C.R.WHAT_YOU_LOSE : C.R.CONFIRM);
-    let [V, q, X, Y] = (0, S.q)(U, A, L), Z = (0, p.Q)(), B = (0, y.UV)(), {
-      churnUserDiscountOffer: Q,
-      isFetchingChurnDiscountOffer: z
-    } = (0, y.WR)(!B || A.status === D.O0b.CANCELED && V !== C.R.CONFIRM_DISCOUNT), J = (0, E._n)(A, h.Xh.PREMIUM_MONTH_TIER_2, Q), [K] = (0, b.ED)({
-      subscriptionId: A.id,
-      items: (0, O.Ue)(null != (o = null == (n = A.renewalMutations) ? true : n.items) ? o : A.items),
+      premiumSubscription: U
+    } = t, {
+      initialStep: x
+    } = t, F = a.useRef(new o.qA), [W, G] = a.useState(null), H = null == (e = (0, p.Af)(U)) ? true : e.planId, V = null != H ? p.ZP.getPremiumType(H) : null;
+    i()(null != V, "Should not be cancelling Nitro without premiumType");
+    let q = V === N.p9.TIER_0 || V === N.p9.TIER_1 || V === N.p9.TIER_2;
+    null == x && (x = q ? R.R.WHAT_YOU_LOSE : R.R.CONFIRM);
+    let [X, Y, Z, B] = (0, L.q)(x, U, j), Q = (0, d.Q)(), z = (0, y.UV)(), {
+      churnUserDiscountOffer: J,
+      isFetchingChurnDiscountOffer: K
+    } = (0, y.WR)(!z || U.status === S.O0b.CANCELED && X !== R.R.CONFIRM_DISCOUNT), $ = (0, m._n)(U, N.Xh.PREMIUM_MONTH_TIER_2, J), [tt] = (0, E.ED)({
+      subscriptionId: U.id,
+      items: (0, p.Ue)(null != (u = null == (n = U.renewalMutations) ? true : n.items) ? u : U.items),
       renewal: true,
-      analyticsLocations: L,
-      analyticsLocation: l.Z.CANCEL_INVOICE_PREVIEW
-    }), $ = null !== K ? O.ZP.getIntervalForInvoice(K) : null, ee = (0, O.aS)(h.Xh.PREMIUM_MONTH_TIER_2, false, false, {
-      currency: A.currency,
-      paymentSourceId: A.paymentSourceId
-    }), et = (0, d.T4)(ee.amount, ee.currency), en = a.useCallback(() => {
-      switch (V) {
-        case C.R.CONFIRM:
-          return (0, r.jsx)(m.G, {});
-        case C.R.CONFIRM_DISCOUNT:
-          return (0, r.jsx)(w.U, {});
-        case C.R.DISCOUNT_APPLIED:
-          return (0, r.jsx)(I.i, {});
-        case C.R.PREVIEW:
-          return (0, r.jsx)(v.w, {});
-        case C.R.WHAT_YOU_LOSE:
-        default:
-          return (0, r.jsx)(P.n, {})
-      }
-    }, [V]), er = a.useCallback(async () => {
-      if (T.includes(A.status)) await (0, c.EO)(A.id, L, j);
-      else {
-        var e, t;
-        let n = null != (t = null == (e = A.renewalMutations) ? true : e.items) ? t : A.items,
-          r = (0, O.Ue)(n);
-        await (0, c.Mg)(A, {
-          items: r
-        }, {
-          amount: 0,
-          currency: A.currency
-        }, (0, O.UX)(r, A.currency, A.paymentSourceId), L, j)
-      }
-    }, [A, L, j]), ea = async () => {
-      if (null == Q) throw Error("Churn user discount offer is null");
-      A.status === D.O0b.CANCELED ? await (0, c.df)(A, Q) : await s.tn.post({
-        url: D.ANM.USER_OFFER_REDEEM,
-        body: {
-          user_discount_offer_id: Q.id
-        },
-        rejectWithError: true
-      })
-    };
+      analyticsLocations: j,
+      analyticsLocation: c.Z.CANCEL_INVOICE_PREVIEW
+    }), te = null !== tt ? p.ZP.getIntervalForInvoice(tt) : null, tn = (0, p.aS)(N.Xh.PREMIUM_MONTH_TIER_2, false, false, {
+      currency: U.currency,
+      paymentSourceId: U.paymentSourceId
+    }), tr = (0, b.T4)(tn.amount, tn.currency), ta = a.useMemo(() => (0, f.b)(), []);
+    a.useEffect(() => {
+      O.default.track(S.rMx.CANCELLATION_FLOW_STARTED, h({
+        location_stack: j,
+        load_id: ta
+      }, (0, L.b)(U)))
+    }, [j, U, ta]);
+    let to = a.useCallback(() => {
+        switch (X) {
+          case R.R.CONFIRM:
+            return (0, r.jsx)(C.G, {});
+          case R.R.CONFIRM_DISCOUNT:
+            return (0, r.jsx)(w.U, {});
+          case R.R.DISCOUNT_APPLIED:
+            return (0, r.jsx)(I.i, {});
+          case R.R.PREVIEW:
+            return (0, r.jsx)(P.w, {});
+          case R.R.WHAT_YOU_LOSE:
+          default:
+            return (0, r.jsx)(T.n, {})
+        }
+      }, [X]),
+      tu = a.useCallback(async () => {
+        if (O.default.track(S.rMx.CANCELLATION_FLOW_COMPLETED, h({
+            location_stack: j,
+            load_id: ta
+          }, (0, L.b)(U))), M.includes(U.status)) await (0, s.EO)(U.id, j, A);
+        else {
+          var t, e;
+          let n = null != (e = null == (t = U.renewalMutations) ? true : t.items) ? e : U.items,
+            r = (0, p.Ue)(n);
+          await (0, s.Mg)(U, {
+            items: r
+          }, {
+            amount: 0,
+            currency: U.currency
+          }, (0, p.UX)(r, U.currency, U.paymentSourceId), j, A)
+        }
+      }, [U, j, A, ta]),
+      ti = async () => {
+        if (null == J) throw Error("Churn user discount offer is null");
+        U.status === S.O0b.CANCELED ? await (0, s.df)(U, J) : await l.tn.post({
+          url: S.ANM.USER_OFFER_REDEEM,
+          body: {
+            user_discount_offer_id: J.id
+          },
+          rejectWithError: true
+        })
+      };
     return (0, r.jsx)(_.Gt, {
-      value: L,
-      children: (0, r.jsxs)(R.D.Provider, {
+      value: j,
+      children: (0, r.jsxs)(v.D.Provider, {
         value: {
-          setStep: q,
-          premiumType: G,
+          setStep: Y,
+          premiumType: V,
           onClose: () => {
-            M(), f.default.track(D.rMx.CANCELLATION_FLOW_STEP, function(e) {
-              for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                  r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                  return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), r.forEach(function(t) {
-                  var r;
-                  r = n[t], t in e ? Object.defineProperty(e, t, {
-                    value: r,
-                    enumerable: true,
-                    configurable: true,
-                    writable: true
-                  }) : e[t] = r
-                })
-              }
-              return e
-            }({
-              from_step: C.O[V],
+            k(), O.default.track(S.rMx.CANCELLATION_FLOW_STEP, h({
+              from_step: R.O[X],
               to_step: null,
-              step_duration_ms: Date.now() - X,
-              flow_duration_ms: Date.now() - Y,
-              location_stack: L
-            }, (0, S.b)(A)))
+              step_duration_ms: Date.now() - Z,
+              flow_duration_ms: Date.now() - B,
+              location_stack: j,
+              load_id: ta
+            }, (0, L.b)(U)))
           },
           transitionState: g,
-          premiumSubscription: A,
-          analyticsLocations: L,
-          analyticsLocation: j,
-          confettiCanvas: x,
-          churnUserDiscountOffer: Q,
-          isFetchingChurnDiscountOffer: B && z,
-          fullPrice: et,
-          discountedPrice: J,
-          planId: W,
-          paymentsBlocked: Z,
-          renewalInvoice: K,
-          renewalInvoiceDetails: $,
-          handleCancellation: er,
-          applyOffer: ea
+          premiumSubscription: U,
+          analyticsLocations: j,
+          analyticsLocation: A,
+          confettiCanvas: W,
+          churnUserDiscountOffer: J,
+          isFetchingChurnDiscountOffer: z && K,
+          fullPrice: tr,
+          discountedPrice: $,
+          planId: H,
+          paymentsBlocked: Q,
+          renewalInvoice: tt,
+          renewalInvoiceDetails: te,
+          handleCancellation: tu,
+          applyOffer: ti
         },
-        children: [(0, r.jsx)(u.O_, {
-          ref: F,
-          className: N.confettiCanvas,
-          environment: k.current
-        }), en()]
+        children: [(0, r.jsx)(o.O_, {
+          ref: G,
+          className: D.confettiCanvas,
+          environment: F.current
+        }), to()]
       })
     })
   }
