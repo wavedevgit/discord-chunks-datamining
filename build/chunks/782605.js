@@ -29,6 +29,10 @@ function l(e) {
       return {
         title: s.intl.string(s.t.kJwpBQ), description: s.intl.string(s.t.ZUEGFh)
       };
+    case o.evJ.USER_GUILD_JOIN_LARGE_GUILD_UNDERAGE_DISALLOWED:
+      return {
+        title: s.intl.string(s.t["u/xsKy"]), description: s.intl.string(s.t.SxY4IS)
+      };
     default:
       return null
   }

@@ -18,7 +18,9 @@ function u(e, t) {
     [d, f, _, p] = (0, i.Wu)([s.Z], () => [s.Z.isFetchingProduct(e), s.Z.getProduct(e), s.Z.getProductFetchError(e), s.Z.getProductFetchErrorTimestamp(e)]),
     h = null != _ && null != p && Date.now() - p < c;
   return (0, r.useEffect)(() => {
-    null == e || null != f || u || d || h || (0, o.jr)(e, t)
+    null == e || null != f || u || d || h || (0, o.jr)(e, {
+      includeBundles: t
+    })
   }, [e, f, u, d, h, t]), {
     product: f,
     isFetching: d
