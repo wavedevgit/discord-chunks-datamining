@@ -1,5 +1,6 @@
-/** Chunk was on 46290 **/
-/** chunk id: 618373, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 618373, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Q: () => u
 });
@@ -12,12 +13,12 @@ var Chunk442837 = require("./442837.js"),
   Chunk44359 = require("./44359.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function u(e, t, n, r) {
-  return (0, i.jsx)(d, {
+function u(e, t, n, i) {
+  return (0, r.jsx)(d, {
     keybind: e,
     message: t,
     messageWithoutKeybind: n,
-    highlightAdminWarningIfElevated: r
+    highlightAdminWarningIfElevated: i
   })
 }
 
@@ -27,18 +28,18 @@ function d(e) {
     message: n,
     messageWithoutKeybind: u,
     highlightAdminWarningIfElevated: d = false
-  } = e, p = (0, a.o)();
-  return (0, r.e7)([l.ZP], () => {
-    let e = l.ZP.getVisibleGame();
-    return null != e && e.elevated && l.ZP.canShowAdminWarning
-  }) ? (0, i.jsx)(o.Text, {
+  } = e, f = (0, s.o)();
+  return (0, i.e7)([o.ZP], () => {
+    let e = o.ZP.getVisibleGame();
+    return null != e && e.elevated && o.ZP.canShowAdminWarning
+  }) ? (0, r.jsx)(a.Text, {
     variant: "text-xxs/semibold",
     color: d ? "text-feedback-warning" : "text-muted",
     children: c.intl.string(c.t.PIeSHB)
-  }) : p ? (0, i.jsx)(i.Fragment, {
+  }) : f ? (0, r.jsx)(r.Fragment, {
     children: c.intl.format(n, {
       keybind: t,
-      keybindHook: e => (0, i.jsx)(s.Z, {
+      keybindHook: e => (0, r.jsx)(l.Z, {
         keybind: t
       }, t.join("+"))
     })

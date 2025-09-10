@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk348327 = require("./348327.js"),
   s = require.n(Chunk348327),
   Chunk261616 = require("./261616.js"),
@@ -25,18 +25,18 @@ function m(e) {
   let {
     locked: t,
     pinned: n
-  } = e, [o, a] = r.useState(0), [m, g] = r.useState(0), [y, O] = r.useState(0), v = r.useRef(0), [b, E] = r.useState(0), {
+  } = e, [l, a] = r.useState(0), [m, g] = r.useState(0), [y, O] = r.useState(0), v = r.useRef(0), [b, E] = r.useState(0), {
     timeToLiveMs: _,
-    reappearTimeMs: S
+    reappearTimeMs: x
   } = d.ZP.useState(e => ({
     timeToLiveMs: e.timeToLiveMs,
     reappearTimeMs: e.reappearTimeMs
-  }), s()), x = {
+  }), s()), S = {
     timeToLiveMs: _,
-    reappearTimeMs: S
-  }, I = r.useRef(x);
+    reappearTimeMs: x
+  }, I = r.useRef(S);
   r.useEffect(() => {
-    I.current = x
+    I.current = S
   }), r.useEffect(() => (v.current = setInterval(() => {
     let e = Date.now();
     g(e), O(t => {
@@ -49,10 +49,10 @@ function m(e) {
   }, 100), () => {
     clearInterval(v.current)
   }), []);
-  let j = () => {
+  let C = () => {
       a(Date.now()), E(e => e + 1)
     },
-    C = o > 0 && m - o < 1e3,
+    j = l > 0 && m - l < 1e3,
     w = (0, u.Yzy)(y > 0 && y < m && m - y < _, {
       from: {
         opacity: 0
@@ -74,9 +74,9 @@ function m(e) {
       style: e,
       className: h.clickZoneDebugContainer,
       children: (0, i.jsx)(p.Z, {
-        className: l()(h.clickZone, C && h.clickBackground),
+        className: o()(h.clickZone, j && h.clickBackground),
         children: (0, i.jsx)(u.P3F, {
-          onClick: j,
+          onClick: C,
           className: h.clickable,
           children: (0, i.jsxs)(u.Text, {
             variant: "text-md/semibold",

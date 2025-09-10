@@ -9,15 +9,15 @@ var Chunk271383 = require("./271383.js"),
   Chunk51144 = require("./51144.js");
 
 function a(e) {
-  return (0, o._I)(e.toLocaleLowerCase()).trim()
+  return (0, l._I)(e.toLocaleLowerCase()).trim()
 }
 
 function s(e) {
   let t = {},
     n = r.Z.getNickname(e.id);
   null != n && (t[n] = a(n).split(" "));
-  let o = l.ZP.getGlobalName(e);
-  return null != o && null == t[o] && (t[o] = a(o).split(" ")), t[e.username] = a(e.username).split(" "), i.ZP.getNicknames(e.id).forEach(e => {
+  let l = o.ZP.getGlobalName(e);
+  return null != l && null == t[l] && (t[l] = a(l).split(" ")), t[e.username] = a(e.username).split(" "), i.ZP.getNicknames(e.id).forEach(e => {
     null == t[e] && (t[e] = a(e).split(" "))
   }), {
     names: t,

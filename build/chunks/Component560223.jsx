@@ -12,8 +12,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk975298 = require("./975298.js"),
   Chunk893712 = require("./893712.js"),
   Chunk695349 = require("./695349.js"),
+  Chunk266198 = require("./266198.js"),
   Chunk963590 = require("./963590.js"),
-  Chunk951570 = require("./951570.jsx"),
   Chunk119850 = require("./119850.js"),
   Chunk22189 = require("./22189.jsx"),
   Chunk391110 = require("./391110.js"),
@@ -104,12 +104,12 @@ let I = e => {
         fractionalState: w
       } = (0, l.Z)(),
       D = (0, u.W)(),
-      x = (0, d.Z)({
+      x = (0, f.Z)({
         location: "WhatsNewSection"
       }),
       {
         isEligible: L
-      } = (0, f.Q1)(),
+      } = (0, d.Q1)(),
       j = c.L.useExperiment({
         location: "PremiumPerks"
       }).enabled,

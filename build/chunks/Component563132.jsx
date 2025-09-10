@@ -20,9 +20,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk211242 = require("./211242.js"),
   Chunk975298 = require("./975298.js"),
   Chunk892041 = require("./892041.js"),
+  Chunk266198 = require("./266198.js"),
   Chunk453227 = require("./453227.js"),
   Chunk47280 = require("./47280.js"),
-  Chunk951570 = require("./951570.jsx"),
   Chunk695346 = require("./695346.js"),
   Chunk882712 = require("./882712.js"),
   Chunk855775 = require("./855775.js"),
@@ -206,13 +206,13 @@ function et(e) {
     tA = (0, c.e7)([S.Z], () => null != eV ? S.Z.getForSKU(eV) : null, [eV]),
     [tC, tN] = i.useState(null),
     tR = null != (o = null == z ? true : z.inReverseTrial) && o && !et,
-    tP = (0, b.ZP)({
+    tP = (0, y.ZP)({
       location: "PaymentModal"
     }) && ts,
     {
       isDisplayingWowMomentConfirmation: tw
-    } = (0, c.cj)([E.Z], () => ({
-      isDisplayingWowMomentConfirmation: E.Z.isDisplayingWowMomentConfirmation
+    } = (0, c.cj)([b.Z], () => ({
+      isDisplayingWowMomentConfirmation: b.Z.isDisplayingWowMomentConfirmation
     })),
     tD = tP ? K.premiumBrandRefreshBackground : true,
     {
@@ -222,7 +222,7 @@ function et(e) {
     }),
     {
       isEligible: tL
-    } = (0, y.Q1)(),
+    } = (0, E.Q1)(),
     tj = tL && eV === W.Si.TIER_2,
     tM = (0, w.uH)({
       location: "PaymentModal"

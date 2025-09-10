@@ -24,17 +24,17 @@ function h(e) {
     userId: t,
     guildId: n,
     channelId: h,
-    location: E,
-    onAction: j,
-    appContext: v
+    location: v,
+    onAction: E,
+    appContext: j
   } = e, P = i.useContext(Z.AnalyticsContext), p = (0, a.Aq)(), y = (0, r.e7)([g.Z], () => null != h ? h : g.Z.getChannelId(n, true), [h, n]), S = (0, r.e7)([c.ZP], () => null == n ? null : c.ZP.getMember(n, t), [n, t]), C = (0, d.m)(n);
   return null != n && null != S && C ? (0, l.jsx)(o.sNh, {
     id: "mod-view",
     label: O.intl.string(O.t.kj3tz8),
     action: () => {
-      null == j || j(), (0, s.i)(v), (0, u.r)(n, t, null != y ? y : b.oC.MEMBER_SAFETY, {
+      null == E || E(), (0, s.i)(j), (0, u.r)(n, t, null != y ? y : b.oC.MEMBER_SAFETY, {
         modViewPanel: m.k.INFO,
-        sourceLocation: null != E ? E : P.location
+        sourceLocation: null != v ? v : P.location
       }), p.dispatch(f.CkL.POPOUT_CLOSE)
     }
   }) : null

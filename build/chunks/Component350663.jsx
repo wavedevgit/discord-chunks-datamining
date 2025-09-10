@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk261616 = require("./261616.js"),
   Chunk481060 = require("./481060.js"),
   Chunk110924 = require("./110924.js"),
@@ -61,23 +61,23 @@ let E = {
     let {
       widgetId: t,
       tileWidth: n,
-      tileHeight: o,
+      tileHeight: l,
       layout: _,
-      locked: S,
-      activeStreams: x,
+      locked: x,
+      activeStreams: S,
       streamParticipants: I,
-      participantsVersion: j,
-      pinned: C,
+      participantsVersion: C,
+      pinned: j,
       padding: w
     } = e, N = I.map(e => ({
       participant: e,
       key: e.user.id,
       width: n,
-      height: o,
-      locked: S,
+      height: l,
+      locked: x,
       widgetId: t,
-      pinned: C
-    })), Z = (0, c.Z)(n), T = (0, c.Z)(S), P = _ === g.C5.VERTICAL, A = S || T !== S || Z !== n, k = r.useMemo(() => {
+      pinned: j
+    })), Z = (0, c.Z)(n), T = (0, c.Z)(x), P = _ === g.C5.VERTICAL, A = x || T !== x || Z !== n, D = r.useMemo(() => {
       let e = 0,
         t = 0;
       return P ? N.map((t, n) => b(v({}, t), {
@@ -87,7 +87,7 @@ let E = {
         x: (t += e.width + (n > 0 ? w : 0)) - e.width,
         y: 0
       }))
-    }, [N, w, P]), D = r.useMemo(() => 0 === k.length ? (0, m.MH)(f.bt) : k.reduce((e, t) => e + t.height, 0) + (P ? w * (k.length - 1) : 0), [k, P, w]), R = r.useMemo(() => 0 === k.length ? f.bt : k.reduce((e, t) => e + t.width, 0) + (P ? 0 : w * (k.length - 1)), [k, P, w]), L = (0, s.Yzy)(k, {
+    }, [N, w, P]), k = r.useMemo(() => 0 === D.length ? (0, m.MH)(f.bt) : D.reduce((e, t) => e + t.height, 0) + (P ? w * (D.length - 1) : 0), [D, P, w]), R = r.useMemo(() => 0 === D.length ? f.bt : D.reduce((e, t) => e + t.width, 0) + (P ? 0 : w * (D.length - 1)), [D, P, w]), L = (0, s.Yzy)(D, {
       key: e => e.key,
       from: {
         height: 0,
@@ -128,39 +128,39 @@ let E = {
       },
       config: E,
       trail: 100 * !A
-    }, A ? "animate-never" : "respect-motion-settings"), M = (0, p.ee)(() => new Set(I.map(e => e.user.id)), [I, j]), z = (0, p.ee)(() => new Set(I.filter(e => x.has((0, u.V9)(e.stream))).map(e => e.user.id)), [I, x, j]);
+    }, A ? "animate-never" : "respect-motion-settings"), M = (0, p.ee)(() => new Set(I.map(e => e.user.id)), [I, C]), V = (0, p.ee)(() => new Set(I.filter(e => S.has((0, u.V9)(e.stream))).map(e => e.user.id)), [I, S, C]);
     return r.useEffect(() => {
       0 !== M.size && (0, p.zi)(y.Odu.GO_LIVE, {
         locked: d.default.isInstanceLocked(),
         shownUserIds: Array.from(M),
-        liveUserIds: Array.from(z),
+        liveUserIds: Array.from(V),
         contentInventoryIds: []
       })
-    }, [M, z]), (0, i.jsx)("div", {
-      className: l()({
+    }, [M, V]), (0, i.jsx)("div", {
+      className: o()({
         [O.gridContainer]: true,
         [O.vertical]: P,
         [O.horizontal]: !P
       }),
       style: P ? {
-        height: D
+        height: k
       } : {
         width: R
       },
-      children: L((e, t, r, l) => (0, i.jsx)(a.animated.div, {
+      children: L((e, t, r, o) => (0, i.jsx)(a.animated.div, {
         className: O.gridItem,
         style: Object.assign({}, e, {
           width: n,
-          height: o,
-          zIndex: N.length - l
+          height: l,
+          zIndex: N.length - o
         }),
         children: (e => {
           let {
             participant: t,
             width: n,
             locked: r,
-            widgetId: o,
-            pinned: l
+            widgetId: l,
+            pinned: o
           } = e;
           return (0, i.jsx)("div", {
             className: O.tileContainer,
@@ -168,8 +168,8 @@ let E = {
               participant: t,
               width: n,
               locked: r,
-              widgetId: o,
-              pinned: l
+              widgetId: l,
+              pinned: o
             }, t.user.id)
           })
         })(t)

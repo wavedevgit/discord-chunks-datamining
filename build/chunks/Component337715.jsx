@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk304789 = require("./304789.jsx"),
   Chunk481060 = require("./481060.js"),
+  Chunk266198 = require("./266198.js"),
   Chunk740594 = require("./740594.jsx"),
-  Chunk951570 = require("./951570.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk282490 = require("./282490.js"),
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
 let f = e => {
   let {
     cohort: t
-  } = e, n = t === s.TO.COHORT_1 ? c.intl.string(c.t.GVrMQE) : c.intl.string(c.t.JKWTSk);
+  } = e, n = t === o.TO.COHORT_1 ? c.intl.string(c.t.GVrMQE) : c.intl.string(c.t.JKWTSk);
   return (0, r.jsxs)(i.$, {
     className: u.container,
     color: "nitro-pink",
@@ -31,7 +31,7 @@ let f = e => {
         variant: "text-sm/medium",
         color: "text-secondary",
         children: c.intl.format(c.t["4mljX1"], {
-          days: (0, s.h3)()
+          days: (0, o.h3)()
         })
       })]
     }), (0, r.jsxs)("div", {
@@ -46,9 +46,9 @@ let f = e => {
           variant: "text-md/medium",
           color: "text-primary",
           children: c.intl.format(c.t.hZt7UV, {
-            helpCenterLink: s.lB
+            helpCenterLink: o.lB
           })
-        }), (0, r.jsx)(o.Z, {
+        }), (0, r.jsx)(s.Z, {
           subscriptionTier: l.Si.TIER_2,
           buttonTextOverride: c.intl.string(c.t.J61px8)
         })]

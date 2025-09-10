@@ -8,8 +8,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
+  Chunk266198 = require("./266198.js"),
   Chunk638212 = require("./638212.jsx"),
-  Chunk951570 = require("./951570.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk756246 = require("./756246.js"),
@@ -18,7 +18,7 @@ let _ = e => {
   let {
     className: t,
     cohort: n
-  } = e, i = n === l.TO.COHORT_1 ? u.intl.string(u.t.N4RqcX) : u.intl.string(u.t["1C7LQk"]);
+  } = e, i = n === s.TO.COHORT_1 ? u.intl.string(u.t.N4RqcX) : u.intl.string(u.t["1C7LQk"]);
   return (0, r.jsxs)("div", {
     className: a()(d.container, t),
     children: [(0, r.jsx)("img", {
@@ -35,10 +35,10 @@ let _ = e => {
         variant: "text-md/medium",
         color: "text-secondary",
         children: u.intl.format(u.t.WNDJPD, {
-          helpCenterLink: l.lB
+          helpCenterLink: s.lB
         })
       })]
-    }), (0, r.jsx)(s.Z, {
+    }), (0, r.jsx)(l.Z, {
       subscriptionTier: c.Si.TIER_2
     })]
   })

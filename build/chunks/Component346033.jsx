@@ -22,12 +22,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk74538 = require("./74538.js"),
   Chunk367074 = require("./367074.js"),
   Chunk140465 = require("./140465.js"),
+  Chunk266198 = require("./266198.js"),
   Chunk347896 = require("./347896.js"),
   Chunk639119 = require("./639119.js"),
   Chunk784238 = require("./784238.jsx"),
   Chunk218390 = require("./218390.jsx"),
   Chunk823188 = require("./823188.jsx"),
-  Chunk951570 = require("./951570.jsx"),
   Chunk337715 = require("./337715.jsx"),
   Chunk135785 = require("./135785.jsx"),
   Chunk498765 = require("./498765.jsx"),
@@ -75,7 +75,7 @@ let B = e => {
       {
         isEligible: el,
         cohort: ec
-      } = (0, Chunk951570.Q1)(),
+      } = (0, Chunk266198.Q1)(),
       {
         analyticsLocations: eu
       } = (0, Chunk906732.ZP)(Chunk100527.Z.PREMIUM_MARKETING);

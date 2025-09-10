@@ -18,12 +18,13 @@ var Chunk442837 = require("./442837.js"),
 function f(e) {
   var t;
   let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : c.Yn.DEFAULT,
-    f = (0, i.e7)([o.Z], () => o.Z.getLocalVolume(e, n), [e, n]),
-    b = e === (null == (t = s.default.getCurrentUser()) ? true : t.id),
-    Z = n === c.Yn.STREAM;
-  return b ? null : (0, l.jsx)(r.II_, {
+    f = arguments.length > 2 && true !== arguments[2] ? arguments[2] : true,
+    b = (0, i.e7)([o.Z], () => o.Z.getLocalVolume(e, n), [e, n]),
+    Z = e === (null == (t = s.default.getCurrentUser()) ? true : t.id),
+    m = n === c.Yn.STREAM;
+  return Z ? null : (0, l.jsx)(r.II_, {
     id: "user-volume",
-    label: Z ? g.intl.string(g.t.t4JBnJ) : g.intl.string(g.t.m7TNdH),
+    label: m ? g.intl.string(g.t.t4JBnJ) : g.intl.string(g.t.m7TNdH),
     control: (t, i) => {
       var o, s;
       return (0, l.jsx)(r._wy, (o = function(e) {
@@ -45,10 +46,12 @@ function f(e) {
         return e
       }({}, t), s = s = {
         ref: i,
-        value: (0, u.P)(f),
+        value: (0, u.P)(b),
         maxValue: d.isPlatformEmbedded ? 200 : 100,
-        onChange: t => a.Z.setLocalVolume(e, (0, u.A)(t), n),
-        "aria-label": Z ? g.intl.string(g.t.t4JBnJ) : g.intl.string(g.t.m7TNdH)
+        onChange: t => {
+          a.Z.setLocalVolume(e, (0, u.A)(t), n), null == f || f(t)
+        },
+        "aria-label": m ? g.intl.string(g.t.t4JBnJ) : g.intl.string(g.t.m7TNdH)
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

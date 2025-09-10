@@ -15,10 +15,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk357355 = require("./357355.js"),
   Chunk140465 = require("./140465.js"),
+  Chunk266198 = require("./266198.js"),
   Chunk105759 = require("./105759.js"),
   Chunk117791 = require("./117791.jsx"),
   Chunk638212 = require("./638212.jsx"),
-  Chunk951570 = require("./951570.jsx"),
   Chunk343287 = require("./343287.jsx"),
   Chunk422034 = require("./422034.jsx"),
   Chunk206127 = require("./206127.js"),
@@ -35,13 +35,13 @@ let C = (e, t) => {
       isEligibleForBogoPromotion: a
     } = e, {
       analyticsLocations: C
-    } = (0, d.ZP)(u.Z.PREMIUM_MARKETING_HERO_CTA), N = (0, _.Nx)(), R = (0, y.$)(), P = (0, p.Z)(), w = null != P, D = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), {
+    } = (0, d.ZP)(u.Z.PREMIUM_MARKETING_HERO_CTA), N = (0, _.Nx)(), R = (0, y.$)(), P = (0, h.Z)(), w = null != P, D = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), {
       visibilityPercentageRef: x,
       visibilityPercentage: L
     } = (0, v.E)(!D), j = (0, s.e7)([f.Z], () => f.Z.affinities), M = !w && j.length > 0, {
       isEligible: k,
       cohort: U
-    } = (0, g.Q1)();
+    } = (0, p.Q1)();
     return (0, r.jsx)(d.Gt, {
       value: C,
       children: (0, r.jsx)("div", {
@@ -87,12 +87,12 @@ let C = (e, t) => {
                 cohort: U
               }), !k && (0, r.jsxs)("div", {
                 className: N ? A.singleButtonContainer : A.twoButtonContainer,
-                children: [(0, r.jsx)(m.Z, {
+                children: [(0, r.jsx)(g.Z, {
                   size: "md",
                   fullWidth: N,
                   hasActivePromotion: !!a,
                   subscriptionTier: i
-                }), !N && (0, r.jsx)(h.Z, {
+                }), !N && (0, r.jsx)(m.Z, {
                   variant: "secondary",
                   size: "md"
                 })]

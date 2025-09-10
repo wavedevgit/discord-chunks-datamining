@@ -26,10 +26,10 @@ function v(e) {
     pid: t,
     analyticsLocation: n,
     allowOneClickGoLive: i = false,
-    onBeforeShowModal: l,
+    onBeforeShowModal: o,
     onOneClickGoLive: c,
     appContext: g
-  } = e, y = (0, o.e7)([f.Z], () => f.Z.getVoiceChannelId()), O = (0, o.e7)([u.Z], () => u.Z.getChannel(y), [y]), v = (0, o.e7)([m.default], () => m.default.getCurrentUser()), b = null == O ? true : O.getGuildId(), _ = (0, o.e7)([p.Z], () => (0, s.Z)(p.Z)), S = (0, o.e7)([d.Z, h.Z], () => null != O && (0, a.JL)(O, d.Z, h.Z));
+  } = e, y = (0, l.e7)([f.Z], () => f.Z.getVoiceChannelId()), O = (0, l.e7)([u.Z], () => u.Z.getChannel(y), [y]), v = (0, l.e7)([m.default], () => m.default.getCurrentUser()), b = null == O ? true : O.getGuildId(), _ = (0, l.e7)([p.Z], () => (0, s.Z)(p.Z)), x = (0, l.e7)([d.Z, h.Z], () => null != O && (0, a.JL)(O, d.Z, h.Z));
   return r.useCallback(async () => {
     await E({
       pid: t,
@@ -37,14 +37,14 @@ function v(e) {
       user: v,
       targetGuildId: b,
       canGoLive: _,
-      canStream: S,
+      canStream: x,
       analyticsLocation: n,
       allowOneClickGoLive: i,
-      onBeforeShowModal: l,
+      onBeforeShowModal: o,
       onOneClickGoLive: c,
       appContext: g
     })
-  }, [t, y, v, b, _, S, n, i, l, c, g])
+  }, [t, y, v, b, _, x, n, i, o, c, g])
 }
 async function b(e) {
   let {
@@ -52,8 +52,8 @@ async function b(e) {
     analyticsLocation: n,
     allowOneClickGoLive: i = false,
     onBeforeShowModal: r,
-    onOneClickGoLive: o,
-    appContext: l
+    onOneClickGoLive: l,
+    appContext: o
   } = e, c = f.Z.getVoiceChannelId(), g = u.Z.getChannel(c), y = m.default.getCurrentUser(), O = null == g ? true : g.getGuildId(), v = null != g && (0, a.JL)(g, d.Z, h.Z), b = (0, s.Z)(p.Z);
   await E({
     pid: t,
@@ -65,15 +65,15 @@ async function b(e) {
     analyticsLocation: n,
     allowOneClickGoLive: i,
     onBeforeShowModal: r,
-    onOneClickGoLive: o,
-    appContext: l
+    onOneClickGoLive: l,
+    appContext: o
   })
 }
 async function E(e) {
   let {
     pid: t,
     voiceChannelId: r,
-    user: o,
+    user: l,
     targetGuildId: a,
     canGoLive: s,
     canStream: u,
@@ -91,10 +91,10 @@ async function E(e) {
         return
       }
     }
-    if (null == o) return void(0, l.showToast)((0, l.createToast)(O.intl.string(O.t.OKnWyc), l.ToastType.FAILURE, {
+    if (null == l) return void(0, o.showToast)((0, o.createToast)(O.intl.string(O.t.OKnWyc), o.ToastType.FAILURE, {
       appContext: y.IlC.OVERLAY
     }));
-    null == h || h(), (0, l.ZDy)(async () => {
+    null == h || h(), (0, o.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("38697"), n.e("46746"), n.e("39173")]).then(n.bind(n, 60594));
@@ -135,7 +135,7 @@ async function E(e) {
         }), n))
       }
     }, {
-      contextKey: null != m ? (0, l.VnL)(m) : true
+      contextKey: null != m ? (0, o.VnL)(m) : true
     })
   }
 }

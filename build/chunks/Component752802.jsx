@@ -1,12 +1,12 @@
 /** Chunk was on 46290 **/
 /** chunk id: 752802, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => z
+  Z: () => V
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk46973 = require("./46973.js"),
   Chunk481060 = require("./481060.js"),
@@ -65,31 +65,31 @@ function A(e, t) {
   }), e
 }
 
-function k(e, t) {
+function D(e, t) {
   if (null == e) return {};
   var n, i, r = function(e, t) {
     if (null == e) return {};
     var n, i, r = {},
-      o = Object.keys(e);
-    for (i = 0; i < o.length; i++) n = o[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+      l = Object.keys(e);
+    for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
     return r
   }(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (i = 0; i < o.length; i++) n = o[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+    var l = Object.getOwnPropertySymbols(e);
+    for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
   }
   return r
 }
 
-function D(e) {
+function k(e) {
   let {
     participant: t
-  } = e, n = t.user.id, o = (0, a.e7)([x.Z], () => {
+  } = e, n = t.user.id, l = (0, a.e7)([S.Z], () => {
     let e = (0, m.Z)(t.type);
-    return x.Z.isLocalMute(t.user.id, e)
-  }, [t]), l = (0, a.e7)([S.default], () => S.default.getId()), {
+    return S.Z.isLocalMute(t.user.id, e)
+  }, [t]), o = (0, a.e7)([x.default], () => x.default.getId()), {
     hasVideo: d
-  } = (0, E.Z)(t, l), p = o && d, h = r.useCallback(() => {
+  } = (0, E.Z)(t, o), p = l && d, h = r.useCallback(() => {
     u.Z.toggleLocalMute(n, s.Yn.STREAM)
   }, [n]);
   return (0, i.jsx)(c.ua7, {
@@ -97,13 +97,13 @@ function D(e) {
     children: e => {
       var {
         onClick: n
-      } = e, r = k(e, ["onClick"]);
+      } = e, r = D(e, ["onClick"]);
       return (0, i.jsx)(c.P3F, A(P({}, r), {
         className: T.controlAction,
         onClick: e => {
-          e.stopPropagation(), (0, C.Ws)(N.Odu.GO_LIVE, {
-            type: C.Qu.AUDIO,
-            value: p ? C.bk.ENABLED : C.bk.DISABLED,
+          e.stopPropagation(), (0, j.Ws)(N.Odu.GO_LIVE, {
+            type: j.Qu.AUDIO,
+            value: p ? j.bk.ENABLED : j.bk.DISABLED,
             userId: t.user.id
           }), null == n || n(), h()
         },
@@ -120,12 +120,12 @@ function D(e) {
 }
 
 function R(e, t, r) {
-  return o => {
-    (0, C.Ws)(N.Odu.GO_LIVE, {
-      type: C.Qu.GO_LIVE,
-      value: C.bk.SETTINGS_OPENED,
+  return l => {
+    (0, j.Ws)(N.Odu.GO_LIVE, {
+      type: j.Qu.GO_LIVE,
+      value: j.bk.SETTINGS_OPENED,
       userId: e.user.id
-    }), o.stopPropagation(), null == r || r(), (0, d.jW)(o, async () => {
+    }), l.stopPropagation(), null == r || r(), (0, d.jW)(l, async () => {
       let {
         default: r
       } = await n.e("5704").then(n.bind(n, 360429));
@@ -143,13 +143,13 @@ function L(e) {
     hasActiveStream: t,
     participant: n,
     onEnablePin: r
-  } = e, o = (0, f.bp)(), s = n.user, u = (0, a.e7)([I.default], () => {
+  } = e, l = (0, f.bp)(), s = n.user, u = (0, a.e7)([I.default], () => {
     var e;
     return null != (e = I.default.getUser(s.id)) ? e : s
   }, [s]), d = t ? Z.intl.string(Z.t.tLxK4u) : Z.intl.string(Z.t.E5RDnJ);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)("div", {
-      className: l()(T.controlBackground, {
+      className: o()(T.controlBackground, {
         [T.controlsWithActiveStream]: t
       })
     }), !t && (0, i.jsx)("div", {
@@ -163,9 +163,9 @@ function L(e) {
             null == (t = e.onClick) || t.call(e), (0, h.rn)(n.stream, {
               forceMultiple: true,
               noFocus: true
-            }), r(), (0, C.Ws)(N.Odu.GO_LIVE, {
-              type: C.Qu.GO_LIVE,
-              value: C.bk.ENABLED,
+            }), r(), (0, j.Ws)(N.Odu.GO_LIVE, {
+              type: j.Qu.GO_LIVE,
+              value: j.bk.ENABLED,
               userId: n.user.id
             })
           },
@@ -192,16 +192,16 @@ function L(e) {
             variant: "text-md/medium",
             color: "always-white",
             className: T.controlUserName,
-            children: j.ZP.getName(n.stream.guildId, n.stream.channelId, s)
+            children: C.ZP.getName(n.stream.guildId, n.stream.channelId, s)
           }), (0, i.jsx)(O.ZP, {
             primaryGuild: u.primaryGuild,
             userId: u.id,
             containerClassName: T.guildTag,
             inline: false,
             onShowProfile: () => {
-              (0, C.Ws)(N.Odu.GO_LIVE, {
-                type: C.Qu.GO_LIVE,
-                value: C.bk.GUILD_PROFILE_OPENED,
+              (0, j.Ws)(N.Odu.GO_LIVE, {
+                type: j.Qu.GO_LIVE,
+                value: j.bk.GUILD_PROFILE_OPENED,
                 userId: n.user.id
               })
             }
@@ -210,17 +210,17 @@ function L(e) {
       }), (0, i.jsx)("div", {
         className: T.controlActions,
         children: t && (0, i.jsxs)(i.Fragment, {
-          children: [(0, i.jsx)(D, {
+          children: [(0, i.jsx)(k, {
             participant: n
           }), (0, i.jsx)(c.ua7, {
             text: Z.intl.string(Z.t["3D5yo6"]),
             children: e => {
               var {
                 onClick: t
-              } = e, r = k(e, ["onClick"]);
+              } = e, r = D(e, ["onClick"]);
               return (0, i.jsx)(c.P3F, A(P({}, r), {
                 className: T.controlAction,
-                onClick: R(n, o, t),
+                onClick: R(n, l, t),
                 children: (0, i.jsx)(c.xhG, {
                   size: "sm",
                   color: "currentColor"
@@ -234,13 +234,13 @@ function L(e) {
   })
 }
 let M = new Set([Chunk981631.jm8.ENDED, Chunk981631.jm8.FAILED, Chunk981631.jm8.PAUSED]),
-  z = Chunk647438.memo(function(e) {
+  V = Chunk647438.memo(function(e) {
     let {
       participant: t,
       width: n,
       locked: r,
-      widgetId: o,
-      pinned: l
+      widgetId: l,
+      pinned: o
     } = e, s = (0, a.e7)([_.Z], () => _.Z.getActiveStreamForUser(t.user.id, t.stream.guildId), [t.user.id, t.stream.guildId]), u = (0, f.bp)(), d = null != s && M.has(s.state), h = null != s, m = (0, w.yA)(t.stream), O = (0, w.xN)(t.stream);
     return !h && r || d ? null : (0, i.jsxs)("div", {
       className: T.tile,
@@ -281,7 +281,7 @@ let M = new Set([Chunk981631.jm8.ENDED, Chunk981631.jm8.FAILED, Chunk981631.jm8.
         participant: t,
         hasActiveStream: h,
         onEnablePin: () => {
-          l || (0, p.xh)(o)
+          o || (0, p.xh)(l)
         }
       })]
     })

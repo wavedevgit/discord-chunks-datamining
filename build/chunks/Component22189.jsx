@@ -28,9 +28,9 @@ var Chunk399606 = require("./399606.js"),
   Chunk424218 = require("./424218.js"),
   Chunk63063 = require("./63063.js"),
   Chunk74538 = require("./74538.js"),
+  Chunk266198 = require("./266198.js"),
   Chunk229555 = require("./229555.jsx"),
   Chunk768865 = require("./768865.jsx"),
-  Chunk951570 = require("./951570.jsx"),
   Chunk220331 = require("./220331.jsx"),
   Chunk391110 = require("./391110.js"),
   Chunk75077 = require("./75077.js"),
@@ -451,7 +451,7 @@ let em = () => {
       name: "september2025MarketingMoment",
       title: Chunk388032.intl.string(Chunk388032.t.CbHUrK),
       subtitle: Chunk388032.intl.format(Chunk388032.t.dA8CJi, {
-        helpCenterLink: Chunk951570.lB
+        helpCenterLink: Chunk266198.lB
       }),
       pillText: Chunk388032.intl.string(Chunk388032.t.OS9KPj).toLocaleUpperCase(),
       cardVariant: Chunk391110.zW.PROMOTION_REDEMPTION,

@@ -16,8 +16,8 @@ var Chunk647438 = require("./647438.js"),
 let h = Chunk70956.Z.Millis.WEEK;
 
 function f(e, t) {
-  let n = (0, l.N)(e),
-    r = (0, o.cj)([s.Z], () => s.Z.getUserAffinitiesMap()),
+  let n = (0, o.N)(e),
+    r = (0, l.cj)([s.Z], () => s.Z.getUserAffinitiesMap()),
     {
       treatmentType: c
     } = (0, a.ZB)(t);
@@ -37,8 +37,8 @@ function g(e, t) {
       let i = e.get(t);
       return (null != (n = null == i ? true : i.communicationProbability) ? n : 0) + 1e-4
     })),
-    o = Math.exp(-(u.default.age(t.id) / 1e3 / m * .01)),
-    l = t.traits.some(e => e.type !== r.N.DURATION_SECONDS),
+    l = Math.exp(-(u.default.age(t.id) / 1e3 / m * .01)),
+    o = t.traits.some(e => e.type !== r.N.DURATION_SECONDS),
     a = (0, p.n2)(t);
-  return i * o * (1 + .6 * (l && !a ? 1 : 0))
+  return i * l * (1 + .6 * (o && !a ? 1 : 0))
 }

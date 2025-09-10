@@ -19,6 +19,7 @@ module.exports = {
   resizeNWSECursor: "resizeNWSECursor__58ece",
   resizeNESWCursor: "resizeNESWCursor__58ece",
   extras: "extras__58ece",
+  forceShowExtras: "forceShowExtras__58ece",
   extrasBottomOriented: "extrasBottomOriented__58ece",
   extrasRightOriented: "extrasRightOriented__58ece"
 }

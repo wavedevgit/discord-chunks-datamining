@@ -19,10 +19,10 @@ function c(e, t, n, c, u) {
     icon: h,
     title: f,
     body: m
-  } = (0, o.Xi)(e, t, n), {
+  } = (0, l.Xi)(e, t, n), {
     trackView: g,
     trackClick: y
-  } = (0, l.R)(a.n0.ActivityInvite, {
+  } = (0, o.R)(a.n0.ActivityInvite, {
     notif_type: a.n0.ActivityInvite,
     notif_user_id: n.id,
     message_id: t.id,
@@ -41,7 +41,7 @@ function c(e, t, n, c, u) {
       g()
     },
     confirmText: s.intl.string(s.t.VJlc0d),
-    onConfirmClick: (o, l) => {
+    onConfirmClick: (l, o) => {
       var a;
       i.Z.join({
         userId: n.id,
@@ -49,7 +49,7 @@ function c(e, t, n, c, u) {
         applicationId: null != (a = c.altId) ? a : c.id,
         channelId: e.id,
         messageId: t.id
-      }), r.Z.updateNotificationStatus(l), y("join")
+      }), r.Z.updateNotificationStatus(o), y("join")
     },
     onDismissClick: () => {
       y("dismiss")

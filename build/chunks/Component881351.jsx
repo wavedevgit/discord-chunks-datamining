@@ -43,7 +43,7 @@ let _ = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     userId: t.id,
     guildId: n,
     channelId: o
-  }), A = (0, m.Z)(t.id, D), k = (0, v.Z)({
+  }), A = (0, h.Z)(t.id, D), k = (0, v.Z)({
     user: t
   }), w = (0, Z.Z)({
     user: t,
@@ -58,7 +58,7 @@ let _ = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     user: t
   }), F = (0, g.Z)({
     user: t
-  }), G = (0, h.Z)({
+  }), G = (0, m.Z)({
     user: t
   }), H = (0, O.Z)({
     user: t

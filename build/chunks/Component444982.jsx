@@ -1,7 +1,7 @@
 /** Chunk was on 46290 **/
 /** chunk id: 444982, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk239091 = require("./239091.js"),
@@ -42,7 +42,7 @@ function _(e) {
   return e
 }
 
-function S(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -54,26 +54,26 @@ function S(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = {
+let S = {
   [Chunk981631.Odu.VIDEO]: {
     renderWidget(e) {
       let {
         widget: t,
         locked: n,
         size: r,
-        padding: o,
-        borderWidth: l,
+        padding: l,
+        borderWidth: o,
         showEmpty: a
       } = e;
       return (0, p.js)(t) ? (0, i.jsx)(m.Z, {
         id: t.id,
         locked: n,
         widget: t,
-        height: "auto" === r.height ? 0 : r.height - 2 * o - 2 * l,
-        width: "auto" === r.width ? 0 : r.width - 2 * o - 2 * l,
+        height: "auto" === r.height ? 0 : r.height - 2 * l - 2 * o,
+        width: "auto" === r.width ? 0 : r.width - 2 * l - 2 * o,
         showEmpty: a,
-        padding: o,
-        borderWidth: l
+        padding: l,
+        borderWidth: o
       }) : null
     },
     renderTitle: () => (0, Chunk951288.jsx)(Chunk430561.PI, {
@@ -86,7 +86,7 @@ let x = {
             let {
               default: t
             } = await n.e("26775").then(n.bind(n, 740579));
-            return n => (0, i.jsx)(t, S(_({}, n), {
+            return n => (0, i.jsx)(t, x(_({}, n), {
               widget: e
             }))
           })
@@ -104,18 +104,18 @@ let x = {
       let {
         widget: n,
         anchorLeft: r,
-        locked: o,
-        showEmpty: l
+        locked: l,
+        showEmpty: o
       } = e;
       return (0, p.Aw)(n) ? (0, i.jsx)(g.ZP, {
         anchorLeft: r,
         id: n.id,
-        locked: o,
+        locked: l,
         pinned: n.pinned,
         widget: b.Odu.VOICE_V3,
         maxDisplayedVoiceStates: null != (t = n.meta.voiceStatesMaxShown) ? t : v.At,
         isPreviewingInGame: false,
-        showEmpty: l
+        showEmpty: o
       }) : null
     },
     renderTitle: () => (0, Chunk951288.jsx)(Chunk430561.PI, {
@@ -196,8 +196,8 @@ let x = {
       let {
         widget: n,
         locked: r,
-        size: o,
-        dragStart: l,
+        size: l,
+        dragStart: o,
         anchorTop: a,
         anchorLeft: s,
         showEmpty: c,
@@ -209,20 +209,21 @@ let x = {
         locked: r,
         pinned: n.pinned,
         opacity: n.opacity,
-        size: o,
+        size: l,
         anchorTop: a,
         anchorLeft: s,
         widget: n,
         isPreviewingInGame: false,
-        dragStart: l,
+        dragStart: o,
         horizontal: null != (t = n.meta.horizontal) && t,
         padding: d,
         borderWidth: h,
         showEmpty: c
       }) : null
     },
-    renderTitle: () => (0, Chunk951288.jsx)(Chunk430561.PI, {
-      children: Chunk388032.intl.string(Chunk388032.t["386XRk"])
+    renderTitle: e => (0, i.jsx)(y.XM, {
+      widgetId: e.id,
+      children: E.intl.string(E.t["386XRk"])
     }),
     renderButtons(e) {
       var t;
@@ -233,7 +234,7 @@ let x = {
               let {
                 default: t
               } = await n.e("34684").then(n.bind(n, 68738));
-              return n => (0, i.jsx)(t, S(_({}, n), {
+              return n => (0, i.jsx)(t, x(_({}, n), {
                 widget: e
               }))
             })

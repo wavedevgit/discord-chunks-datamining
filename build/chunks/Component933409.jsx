@@ -68,9 +68,9 @@ function N(e, t, N, A, _) {
     U = null != A ? [A] : [];
   (0, u.$)(T, "useAdminActionItems"), (0, r.e7)([h.Z], () => h.Z.getGuildVersion(t), [t]);
   let D = (0, r.e7)([O.Z], () => O.Z.getGuild(t), [t]),
-    L = (0, r.e7)([E.default], () => {
+    L = (0, r.e7)([v.default], () => {
       var t;
-      return (null == (t = E.default.getCurrentUser()) ? true : t.id) === e.id
+      return (null == (t = v.default.getCurrentUser()) ? true : t.id) === e.id
     }, [e.id]),
     w = (0, r.e7)([m.ZP], () => m.ZP.isGuestOrLurker(t, e.id), [t, e.id]),
     k = (0, r.e7)([b.Z], () => b.Z.getChannel(N), [N]),
@@ -81,9 +81,9 @@ function N(e, t, N, A, _) {
       deafened: V,
       suppressed: G,
       voiceChannelId: F
-    } = (0, r.cj)([j.Z], () => {
+    } = (0, r.cj)([E.Z], () => {
       var n, l, i;
-      let r = j.Z.getVoiceState(t, e.id);
+      let r = E.Z.getVoiceState(t, e.id);
       return {
         muted: null != (n = null == r ? true : r.mute) && n,
         deafened: null != (l = null == r ? true : r.deaf) && l,
@@ -144,19 +144,19 @@ function N(e, t, N, A, _) {
     }, X = null, z = null != D && h.Z.canManageUser(y.Plq.MODERATE_MEMBERS, e, D) && h.Z.canManageUser(y.Plq.KICK_MEMBERS, e, D) && h.Z.canManageUser(y.Plq.BAN_MEMBERS, e, D), $ = null != D && (h.Z.canManageUser(y.Plq.MANAGE_GUILD, e, D) || h.Z.canManageUser(y.Plq.MANAGE_ROLES, e, D));
   if (!L && null != D && null != Y && null != Y.joinedAt && (z || $) && D.features.has(y.oNc.GUILD_ONBOARDING_EVER_ENABLED)) {
     var ee;
-    X = (0, v.yE)(null != (ee = Y.flags) ? ee : 0, C.q.BYPASSES_VERIFICATION) ? (0, l.jsx)(o.sNh, {
+    X = (0, j.yE)(null != (ee = Y.flags) ? ee : 0, C.q.BYPASSES_VERIFICATION) ? (0, l.jsx)(o.sNh, {
       id: "verify",
       label: M.intl.string(M.t.NbhSIy),
       action: () => {
         var t;
-        return s.Z.setMemberFlags(D.id, e.id, (0, v.mB)(null != (t = Y.flags) ? t : 0, C.q.BYPASSES_VERIFICATION, false))
+        return s.Z.setMemberFlags(D.id, e.id, (0, j.mB)(null != (t = Y.flags) ? t : 0, C.q.BYPASSES_VERIFICATION, false))
       }
     }, "verify") : (0, l.jsx)(o.sNh, {
       id: "verify",
       label: M.intl.string(M.t["6QlTeH"]),
       action: () => {
         var t;
-        return s.Z.setMemberFlags(D.id, e.id, (0, v.mB)(null != (t = Y.flags) ? t : 0, C.q.BYPASSES_VERIFICATION, true))
+        return s.Z.setMemberFlags(D.id, e.id, (0, j.mB)(null != (t = Y.flags) ? t : 0, C.q.BYPASSES_VERIFICATION, true))
       }
     }, "verify")
   }

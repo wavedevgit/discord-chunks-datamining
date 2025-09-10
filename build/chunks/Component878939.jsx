@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
 function m(e) {
   let {
     locked: t
-  } = e, n = (0, p.II)(), m = null == n ? true : n.id, g = null == n ? true : n.altId, y = (0, o.e7)([c.default], () => c.default.getCurrentUser()), O = null != g ? g : m, [v, b] = r.useState(new Set), [E, _] = r.useState(new Set), S = r.useCallback((e, t, n) => {
+  } = e, n = (0, p.II)(), m = null == n ? true : n.id, g = null == n ? true : n.altId, y = (0, l.e7)([c.default], () => c.default.getCurrentUser()), O = null != g ? g : m, [v, b] = r.useState(new Set), [E, _] = r.useState(new Set), x = r.useCallback((e, t, n) => {
     b(n => {
       if (t) {
         if (n.has(e)) return n;
@@ -39,16 +39,16 @@ function m(e) {
       }
       return new Set(i)
     })
-  }, []), x = (0, u.ee)(() => v, [v]), I = (0, u.ee)(() => E, [E]), j = (0, l.h)(u.zi, 3e3, []);
+  }, []), S = (0, u.ee)(() => v, [v]), I = (0, u.ee)(() => E, [E]), C = (0, o.h)(u.zi, 3e3, []);
   r.useEffect(() => {
-    0 === x.size || t || j(h.Odu.FRIENDS, {
+    0 === S.size || t || C(h.Odu.FRIENDS, {
       locked: t,
-      shownUserIds: Array.from(x),
+      shownUserIds: Array.from(S),
       liveUserIds: Array.from(I),
       contentInventoryIds: []
     })
-  }, [x, I, t, j]);
-  let C = (0, o.e7)([s.Z], () => null == O ? null : s.Z.getApplicationActivity(O), [O]),
+  }, [S, I, t, C]);
+  let j = (0, l.e7)([s.Z], () => null == O ? null : s.Z.getApplicationActivity(O), [O]),
     w = (0, r.useCallback)((e, t) => {
       let n = function(e) {
         switch (e) {
@@ -135,10 +135,10 @@ function m(e) {
     }, []),
     N = (0, r.useCallback)(() => {}, []),
     Z = (0, r.useCallback)(() => (0, i.jsx)(d.lE, {
-      activity: C,
+      activity: j,
       currentUser: y,
       showInviteButton: false
-    }), [C, y]);
+    }), [j, y]);
   return t ? null : (0, i.jsx)(a.r1, {
     containerClassName: f.container,
     listClassName: f.list,
@@ -146,6 +146,6 @@ function m(e) {
     renderHeader: Z,
     appContext: h.IlC.OVERLAY,
     onAction: w,
-    onFriendVisible: S
+    onFriendVisible: x
   })
 }

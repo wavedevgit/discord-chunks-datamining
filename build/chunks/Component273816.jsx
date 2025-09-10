@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -55,45 +55,45 @@ function b(e) {
   let {
     locked: t,
     pinned: n,
-    anchorLeft: o
+    anchorLeft: l
   } = e, b = (0, a.e7)([p.Z], () => p.Z.getSocket()), E = (0, a.e7)([m.ZP], () => m.ZP.isGPUBoosted());
   (0, d.nU)();
   let _ = (0, a.e7)([h.Z], () => h.Z.getWindow(g.$J)),
-    [S, x] = (0, d.m8)(b),
+    [x, S] = (0, d.m8)(b),
     {
       currentFPS: I,
-      averageFrameTime: j,
-      timeSinceLastDrop: C,
+      averageFrameTime: C,
+      timeSinceLastDrop: j,
       onResetFrameData: w,
       droppedFramesRef: N,
       renderedFrameCount: Z,
       bufferFramecountRef: T,
       frameCheckerEffect: P
-    } = (0, d.d6)(true, S, true),
-    [A, k, D] = (0, d.ZF)(b),
+    } = (0, d.d6)(true, x, true),
+    [A, D, k] = (0, d.ZF)(b),
     [R, L] = (0, d.Y5)(A, P, _),
-    M = performance.now() - x.current < d.MC,
-    z = k(j, T.current);
+    M = performance.now() - S.current < d.MC,
+    V = D(C, T.current);
   (0, u.ZP)(() => (R(), () => {
     L()
   }));
-  let U = r.useCallback(() => {
-      w(), D(), R()
-    }, [w, D, R]),
-    [V, W] = r.useState(true),
-    [G, F] = r.useState(true),
-    [B, H] = r.useState(true),
+  let z = r.useCallback(() => {
+      w(), k(), R()
+    }, [w, k, R]),
+    [U, W] = r.useState(true),
+    [G, B] = r.useState(true),
+    [H, F] = r.useState(true),
     [Y, Q] = r.useState(true),
     [K, X] = r.useState(true);
   return t && !n ? null : (0, i.jsxs)("div", {
-    className: l()(y.panelGroup, !o && y.rightAligned),
-    children: [(V || !t) && (0, i.jsxs)("div", {
+    className: o()(y.panelGroup, !l && y.rightAligned),
+    children: [(U || !t) && (0, i.jsxs)("div", {
       className: y.measurement,
       children: [!t && (0, i.jsx)("div", {
         className: y.measurementCheckbox,
         children: (0, i.jsx)(s.$q, {
           size: 16,
-          value: V,
+          value: U,
           onChange: (e, t) => W(t)
         })
       }), (0, i.jsxs)(c.Text, {
@@ -114,7 +114,7 @@ function b(e) {
         children: (0, i.jsx)(s.$q, {
           size: 16,
           value: G,
-          onChange: (e, t) => F(t)
+          onChange: (e, t) => B(t)
         })
       }), (0, i.jsxs)(c.Text, {
         variant: "text-md/normal",
@@ -123,18 +123,18 @@ function b(e) {
         children: ["Frame Times:", " ", (0, i.jsxs)(c.Text, {
           tag: "span",
           variant: "code",
-          color: j > 1.1 * d.tO ? "text-feedback-warning" : "text-primary",
-          children: [j.toFixed(2), "ms"]
+          color: C > 1.1 * d.tO ? "text-feedback-warning" : "text-primary",
+          children: [C.toFixed(2), "ms"]
         })]
       })]
-    }), (B || !t) && (0, i.jsxs)("div", {
+    }), (H || !t) && (0, i.jsxs)("div", {
       className: y.measurement,
       children: [!t && (0, i.jsx)("div", {
         className: y.measurementCheckbox,
         children: (0, i.jsx)(s.$q, {
           size: 16,
-          value: B,
-          onChange: (e, t) => H(t)
+          value: H,
+          onChange: (e, t) => F(t)
         })
       }), (0, i.jsxs)(c.Text, {
         variant: "text-md/normal",
@@ -143,7 +143,7 @@ function b(e) {
         children: ["Dropped Frames:", " ", (0, i.jsx)(c.Text, {
           tag: "span",
           variant: "code",
-          color: C < 2 ? "text-danger" : C < 5 ? "text-feedback-warning" : "text-primary",
+          color: j < 2 ? "text-danger" : j < 5 ? "text-feedback-warning" : "text-primary",
           children: N.current
         }), (0, i.jsxs)(c.Text, {
           tag: "span",
@@ -193,8 +193,8 @@ function b(e) {
             children: ["Idle Frame Delta:", " ", (0, i.jsxs)(c.Text, {
               tag: "span",
               variant: "code",
-              color: z > 1 ? "text-danger" : "text-primary",
-              children: [z.toFixed(2), "ms"]
+              color: V > 1 ? "text-danger" : "text-primary",
+              children: [V.toFixed(2), "ms"]
             })]
           })
         }))
@@ -221,7 +221,7 @@ function b(e) {
         children: (0, i.jsx)(c.zxk, {
           variant: "primary",
           text: "Reset Frame Data",
-          onClick: U
+          onClick: z
         })
       })
     })]

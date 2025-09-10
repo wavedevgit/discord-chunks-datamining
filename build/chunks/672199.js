@@ -40,7 +40,7 @@ function h(e, t, n, h) {
       y()
     },
     onConfirmClick: (e, t) => {
-      (0, o.Z)((0, l.getPID)(), {
+      (0, l.Z)((0, o.getPID)(), {
         preset: u.tI.PRESET_VIDEO
       }), O("request-to-stream"), i.Z.updateNotificationStatus(t)
     },

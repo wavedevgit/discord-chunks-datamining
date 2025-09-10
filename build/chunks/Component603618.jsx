@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  l = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk661869 = require("./661869.js"),
   Chunk876215 = require("./876215.js"),
   Chunk884439 = require("./884439.js"),
@@ -87,7 +87,7 @@ function X(e) {
   let {
     entry: t,
     currentUserActivity: n,
-    idx: o
+    idx: l
   } = e, a = (0, u.e7)([R.default], () => R.default.getUser(t.author_id)), [s, c] = r.useState("unsent"), [f, y] = r.useState(false);
   r.useEffect(() => {
     if ("sent" === s) {
@@ -95,43 +95,43 @@ function X(e) {
       return () => clearTimeout(e)
     }
   }, [s]);
-  let O = null != n && (0, b.Z)(n, F.xjy.JOIN),
+  let O = null != n && (0, b.Z)(n, B.xjy.JOIN),
     E = async e => {
       if (null != a && "unsent" === s) {
         e.stopPropagation();
         try {
           if (c("sending"), O) await h.Z.sendActivityInviteUser({
-            type: F.mFx.JOIN,
+            type: B.mFx.JOIN,
             userId: a.id,
             activity: n,
-            location: F.Sbl.UNLOCKED_OVERLAY
+            location: B.Sbl.UNLOCKED_OVERLAY
           });
           else {
             var i;
             let e = await m.Z.getOrEnsurePrivateChannel(a.id),
               n = null != (i = P.Z.getChannel(e)) ? i : null;
-            l()(null != n, "Send channel must be defined"), (0, C.uL)(F.Z5c.CHANNEL(n.guild_id, n.id)), (0, v.i)(F.IlC.OVERLAY, true), true === t.extra.fake_inventory_item ? await (0, x.k)({
+            o()(null != n, "Send channel must be defined"), (0, j.uL)(B.Z5c.CHANNEL(n.guild_id, n.id)), (0, v.i)(B.IlC.OVERLAY, true), true === t.extra.fake_inventory_item ? await (0, S.k)({
               channel: n,
-              content: H.intl.formatToPlainString(H.t.UVBA9v, {
+              content: F.intl.formatToPlainString(F.t.UVBA9v, {
                 gameName: t.extra.game_name
               }),
               whenReady: true,
               doNotNotifyOnError: false,
-              location: B.dy.OVERLAY
-            }) : await (0, x.p)({
+              location: H.dy.OVERLAY
+            }) : await (0, S.p)({
               channel: n,
-              content: H.intl.string(H.t.DwAcMz),
+              content: F.intl.string(F.t.DwAcMz),
               entry: t,
               whenReady: true,
               doNotNotifyOnError: false,
-              location: B.dy.OVERLAY
+              location: H.dy.OVERLAY
             })
           }
-          g.Z.track(F.rMx.OVERLAY_GAME_INVITE_SENT, {
+          g.Z.track(B.rMx.OVERLAY_GAME_INVITE_SENT, {
             target_user_id: a.id,
             target_content_entry_id: t.id,
-            target_index: o
-          }), (0, W.Ws)(F.Odu.ACTIVITY, {
+            target_index: l
+          }), (0, W.Ws)(B.Odu.ACTIVITY, {
             type: W.Qu.INVITE,
             value: W.bk.INVITE_SENT,
             userId: a.id
@@ -145,12 +145,12 @@ function X(e) {
       if (null == a) return;
       let t = await m.Z.getOrEnsurePrivateChannel(a.id),
         n = null != (e = P.Z.getChannel(t)) ? e : null;
-      l()(null != n, "Send channel must be defined"), (0, C.uL)(F.Z5c.CHANNEL(n.guild_id, n.id)), (0, v.i)(F.IlC.OVERLAY, true), (0, W.Ws)(F.Odu.ACTIVITY, {
+      o()(null != n, "Send channel must be defined"), (0, j.uL)(B.Z5c.CHANNEL(n.guild_id, n.id)), (0, v.i)(B.IlC.OVERLAY, true), (0, W.Ws)(B.Odu.ACTIVITY, {
         type: W.Qu.REDIRECT,
         value: W.bk.CHAT,
         userId: a.id
       })
-    }, S = O ? H.intl.string(H.t["3fRyS0"]) : H.intl.string(H.t.XHxDIS), I = O ? (0, i.jsx)(p.ejJ, {
+    }, x = O ? F.intl.string(F.t["3fRyS0"]) : F.intl.string(F.t.XHxDIS), I = O ? (0, i.jsx)(p.ejJ, {
       color: "currentColor",
       size: "sm"
     }) : (0, i.jsx)(p.Uuj, {
@@ -158,8 +158,8 @@ function X(e) {
       size: "sm"
     });
   return (0, i.jsx)(p.ua7, {
-    text: S,
-    "aria-label": S,
+    text: x,
+    "aria-label": x,
     children: e => (0, i.jsx)(d.zx, K(Q({}, e), {
       submitting: "sending" === s,
       onClick: f ? _ : E,
@@ -185,28 +185,28 @@ function q(e) {
   var t;
   let {
     entry: n,
-    currentUserActivity: o
-  } = e, l = (0, u.e7)([R.default], () => R.default.getUser(n.author_id)), a = null != (t = null == o ? true : o.application_id) ? t : n.extra.application_id, s = (0, u.e7)([k.Z], () => null != l ? k.Z.getApplicationActivity(l.id, a) : null, [a, l]), [c, f] = r.useState("unsent");
-  if (!(null != s && (0, b.Z)(s, F.xjy.JOIN))) return null;
+    currentUserActivity: l
+  } = e, o = (0, u.e7)([R.default], () => R.default.getUser(n.author_id)), a = null != (t = null == l ? true : l.application_id) ? t : n.extra.application_id, s = (0, u.e7)([D.Z], () => null != o ? D.Z.getApplicationActivity(o.id, a) : null, [a, o]), [c, f] = r.useState("unsent");
+  if (!(null != s && (0, b.Z)(s, B.xjy.JOIN))) return null;
   let m = async e => {
-    if (null != l && "unsent" === c) {
+    if (null != o && "unsent" === c) {
       e.stopPropagation();
       try {
         f("sending"), await h.Z.sendActivityInviteUser({
-          type: F.mFx.JOIN_REQUEST,
-          userId: l.id,
+          type: B.mFx.JOIN_REQUEST,
+          userId: o.id,
           activity: s,
-          location: F.Sbl.UNLOCKED_OVERLAY
-        }), (0, W.Ws)(F.Odu.ACTIVITY, {
+          location: B.Sbl.UNLOCKED_OVERLAY
+        }), (0, W.Ws)(B.Odu.ACTIVITY, {
           type: W.Qu.INVITE,
           value: W.bk.JOIN_REQUEST_SENT,
-          userId: l.id
+          userId: o.id
         }), f("sent")
       } catch (e) {
         f("unsent")
       }
     }
-  }, g = H.intl.string(H.t.OKsSCQ);
+  }, g = F.intl.string(F.t.OKsSCQ);
   return (0, i.jsx)(p.ua7, {
     text: g,
     "aria-label": g,
@@ -236,21 +236,21 @@ function J(e) {
     entry: t,
     currentUserActivity: n,
     idx: r
-  } = e, o = (0, u.e7)([R.default], () => R.default.getUser(t.author_id)), l = (0, u.e7)([T.Z], () => null != o ? T.Z.getAnyStreamForUser(o.id) : null, [o]), {
+  } = e, l = (0, u.e7)([R.default], () => R.default.getUser(t.author_id)), o = (0, u.e7)([T.Z], () => null != l ? T.Z.getAnyStreamForUser(l.id) : null, [l]), {
     isMobileOnline: a,
     status: s
-  } = (0, u.cj)([k.Z], () => null == o ? {
+  } = (0, u.cj)([D.Z], () => null == l ? {
     isMobileOnline: true,
     status: true
   } : {
-    isMobileOnline: k.Z.isMobileOnline(o.id),
-    status: k.Z.getStatus(o.id)
-  }, [o]);
-  return null == o ? null : (0, i.jsxs)("div", {
+    isMobileOnline: D.Z.isMobileOnline(l.id),
+    status: D.Z.getStatus(l.id)
+  }, [l]);
+  return null == l ? null : (0, i.jsxs)("div", {
     className: Y.row,
     children: [(0, i.jsx)(y.Z, {
       className: Y.avatar,
-      user: o,
+      user: l,
       isMobile: a,
       status: s
     }), (0, i.jsxs)("div", {
@@ -261,14 +261,14 @@ function J(e) {
           className: Y.username,
           variant: "text-md/medium",
           color: "header-primary",
-          children: U.ZP.getName(true, true, o)
-        }), null != l && (0, i.jsx)(_.ZP, {
+          children: z.ZP.getName(true, true, l)
+        }), null != o && (0, i.jsx)(_.ZP, {
           className: Y.liveIndicator
         })]
-      }), (0, i.jsx)(S.Gk, {
-        location: S.Gt.OVERLAY,
+      }), (0, i.jsx)(x.Gk, {
+        location: x.Gt.OVERLAY,
         className: Y.badgesContainer,
-        children: [S.OV, S.wO, S.f, S.v1, S.pQ].map((e, n) => (0, i.jsx)(e, {
+        children: [x.OV, x.wO, x.f, x.v1, x.pQ].map((e, n) => (0, i.jsx)(e, {
           entry: t
         }, "entry-".concat(n)))
       })]
@@ -292,8 +292,8 @@ function ee(e) {
   let {
     entries: t,
     currentUserActivity: n,
-    className: o,
-    hideHeader: l = false
+    className: l,
+    hideHeader: o = false
   } = e, a = (0, W.ee)(() => $(t), [t]), s = (0, W.ee)(() => new Set(Array.from($(t)).filter(e => {
     let n = t.find(t => {
       let {
@@ -309,21 +309,21 @@ function ee(e) {
     })
   })), [t]), u = (0, W.ee)(() => new Set(t.map(e => e.id)), [t]);
   return (r.useEffect(() => {
-    (0, W.zi)(F.Odu.ACTIVITY, {
+    (0, W.zi)(B.Odu.ACTIVITY, {
       locked: M.default.isInstanceLocked(),
       shownUserIds: Array.from(a),
       liveUserIds: Array.from(s),
       contentInventoryIds: Array.from(u)
     })
   }, [a, s, u]), 0 === t.length) ? null : (0, i.jsxs)("div", {
-    className: o,
-    children: [!l && (0, i.jsx)("div", {
+    className: l,
+    children: [!o && (0, i.jsx)("div", {
       className: Y.contentInventoryHeader,
       children: (0, i.jsx)(p.Text, {
         variant: "text-xs/medium",
         color: "header-secondary",
         tag: "div",
-        children: H.intl.string(H.t.y9eo7e)
+        children: F.intl.string(F.t.y9eo7e)
       })
     }), t.map((e, t) => (0, i.jsx)(J, {
       idx: t,
@@ -338,26 +338,26 @@ function et(e) {
     gamingId: t,
     maxUserShowCount: n,
     userAffinityThresholdV2: i = .0029
-  } = e, o = (0, I.Z)(t, "useLiveActivityRows");
+  } = e, l = (0, I.Z)(t, "useLiveActivityRows");
   (0, O.ZP)(() => {
     (0, w._)()
   });
-  let l = (0, u.e7)([A.Z], () => null == t ? null : A.Z.getApplicationActivity(t), [t]),
-    d = (0, u.Wu)([L.Z, D.Z, N.Z], () => {
+  let o = (0, u.e7)([A.Z], () => null == t ? null : A.Z.getApplicationActivity(t), [t]),
+    d = (0, u.Wu)([L.Z, k.Z, N.Z], () => {
       if (null == t) return [];
       let e = L.Z.nowPlayingCards,
         n = {
           v2: i
         };
       return e.reduce((e, n) => {
-        if (n.type !== F.GOo.USER) return e;
+        if (n.type !== B.GOo.USER) return e;
         let i = n.party.currentActivities;
         if (0 === i.length) return e;
         for (let n of i) n.game.id === t && null != n.activity && e.push(n);
         return e
       }, []).filter(e => {
         let t = e.activityUser.id,
-          i = D.Z.isFriend(t);
+          i = k.Z.isFriend(t);
         return function(e, t, n) {
           let {
             v2: i
@@ -365,14 +365,14 @@ function et(e) {
           if (null == e) return t;
           let {
             communicationProbability: r,
-            dmProbability: o,
-            serverMessageProbability: l,
+            dmProbability: l,
+            serverMessageProbability: o,
             vcProbability: a
           } = e;
           switch (true) {
             case r > i:
-            case o > i:
             case l > i:
+            case o > i:
             case a > i:
               returntrue;
             default:
@@ -381,18 +381,18 @@ function et(e) {
         }(N.Z.getUserAffinity(t), i, n)
       })
     }, [t, i]);
-  return (0, O.ZP)(() => (j.L(), () => j.v())), {
+  return (0, O.ZP)(() => (C.L(), () => C.v())), {
     entries: r.useMemo(() => {
-      let e = o.filter(e => !d.some(t => t.activityUser.id === e.author_id)),
+      let e = l.filter(e => !d.some(t => t.activityUser.id === e.author_id)),
         t = [...d.map(e => (function(e) {
-          var t, n, i, r, o, l, u;
-          let d = null != (o = null == (n = e.activity) || null == (t = n.timestamps) ? true : t.start) ? o : Date.now();
+          var t, n, i, r, l, o, u;
+          let d = null != (l = null == (n = e.activity) || null == (t = n.timestamps) ? true : t.start) ? l : Date.now();
           return {
-            id: V.default.fromTimestamp(d),
+            id: U.default.fromTimestamp(d),
             author_id: e.activityUser.id,
             extra: {
               type: "played_game_extra",
-              game_name: null != (l = null == (i = e.activity) ? true : i.name) ? l : e.game.name,
+              game_name: null != (o = null == (i = e.activity) ? true : i.name) ? o : e.game.name,
               application_id: null != (u = null == (r = e.activity) ? true : r.application_id) ? u : e.game.id,
               fake_inventory_item: true
             },
@@ -406,8 +406,8 @@ function et(e) {
           }
         })(e)), ...e];
       return null != n ? t.slice(0, n) : t
-    }, [o, d, n]),
-    currentUserActivity: l
+    }, [l, d, n]),
+    currentUserActivity: o
   }
 }
 
@@ -423,25 +423,25 @@ function ei(e) {
     activity: t,
     currentUser: n,
     showInviteButton: r = true
-  } = e, o = null != t && (0, b.Z)(t, F.xjy.JOIN), l = (0, E.q)(null == t ? true : t.application_id), a = null != l && (0, z.yE)(l.flags, F.udG.EMBEDDED);
+  } = e, l = null != t && (0, b.Z)(t, B.xjy.JOIN), o = (0, E.q)(null == t ? true : t.application_id), a = null != o && (0, V.yE)(o.flags, B.udG.EMBEDDED);
   return null == t || null == n ? null : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(Z.Z, {
       className: Y.activityCard,
       activity: t,
       user: n,
       currentUser: n,
-      appContext: F.IlC.OVERLAY
-    }), o && !a && r ? (0, i.jsx)(d.zx, {
+      appContext: B.IlC.OVERLAY
+    }), l && !a && r ? (0, i.jsx)(d.zx, {
       className: Y.inviteFriendsButton,
       onClick: () => {
-        (0, f.h7)(t, false, F.IlC.POPOUT), (0, W.Ws)(F.Odu.ACTIVITY, {
+        (0, f.h7)(t, false, B.IlC.POPOUT), (0, W.Ws)(B.Odu.ACTIVITY, {
           type: W.Qu.INVITE,
           value: W.bk.PANEL_OPENED
         })
       },
       size: d.Ph.SMALL,
       color: d.Tt.PRIMARY,
-      children: H.intl.string(H.t["6Qgren"])
+      children: F.intl.string(F.t["6Qgren"])
     }) : null]
   })
 }
@@ -449,14 +449,14 @@ function ei(e) {
 function er(e) {
   let {
     locked: t
-  } = e, n = (0, G.II)(), r = null == n ? true : n.id, o = null == n ? true : n.altId, l = (0, I.Z)(r, "ActivityWidget"), a = (0, u.e7)([R.default], () => R.default.getCurrentUser()), s = null != o ? o : r, c = (0, u.e7)([A.Z], () => null == s ? null : A.Z.getApplicationActivity(s), [s]);
-  (0, O.ZP)(() => (j.L(), () => j.v()));
+  } = e, n = (0, G.II)(), r = null == n ? true : n.id, l = null == n ? true : n.altId, o = (0, I.Z)(r, "ActivityWidget"), a = (0, u.e7)([R.default], () => R.default.getCurrentUser()), s = null != l ? l : r, c = (0, u.e7)([A.Z], () => null == s ? null : A.Z.getApplicationActivity(s), [s]);
+  (0, O.ZP)(() => (C.L(), () => C.v()));
   let d = et({
     gamingId: s,
     userAffinityThresholdV2: .00145,
     maxUserShowCount: 12
   });
-  return t || 0 === l.length && null == c ? null : (0, i.jsxs)("div", {
+  return t || 0 === o.length && null == c ? null : (0, i.jsxs)("div", {
     className: Y.container,
     children: [(0, i.jsx)(ei, {
       activity: c,

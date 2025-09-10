@@ -2,7 +2,7 @@
 /** chunk id: 353038, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   B: () => O,
-  Z: () => j
+  Z: () => C
 }), require("./388685.js"), require("./415506.js");
 var i, r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -56,12 +56,12 @@ function b(e, t, n) {
   let {
     width: i,
     height: r,
-    fixed: o
+    fixed: l
   } = e;
   return {
     width: "auto" === i ? "auto" : Math.max(t, i),
     height: "auto" === r ? "auto" : Math.max(n, r),
-    fixed: o
+    fixed: l
   }
 }
 
@@ -84,7 +84,7 @@ function _(e) {
   return "auto" === e || null == e ? "auto" : "".concat(e, "px")
 }
 
-function S(e, t) {
+function x(e, t) {
   let n = 0;
   return {
     width: n = "auto" === t.width ? null != e ? e.clientWidth : 0 : t.width,
@@ -92,12 +92,12 @@ function S(e, t) {
   }
 }
 
-function x(e, t) {
+function S(e, t) {
   let {
     top: n,
     left: i,
     bottom: r,
-    right: o
+    right: l
   } = t;
   switch (e) {
     case "RESIZE_EAST":
@@ -109,7 +109,7 @@ function x(e, t) {
     case "RESIZE_WEST":
     case "RESIZE_NORTH_WEST":
       return {
-        bottom: r, right: o, left: true, top: true
+        bottom: r, right: l, left: true, top: true
       };
     case "RESIZE_SOUTH_EAST":
       return {
@@ -118,7 +118,7 @@ function x(e, t) {
     case "RESIZE_SOUTH":
     case "RESIZE_SOUTH_WEST":
       return {
-        top: n, right: o, bottom: true, left: true
+        top: n, right: l, bottom: true, left: true
       };
     default:
       throw Error("getOrientedCoords: Invalid orientation: ".concat(e))
@@ -131,7 +131,7 @@ function I(e) {
   } = e;
   return t
 }
-class j extends(i = Chunk647438.Component) {
+class C extends(i = Chunk647438.Component) {
   shouldComponentUpdate(e, t) {
     return !(0, u.Z)(t, this.state) || !(0, u.Z)(e, this.props, ["anchor", "size", "minSize", "container"]) || !(0, u.Z)(e.anchor, this.props.anchor) || !(0, u.Z)(e.size, this.props.size) || !(0, u.Z)(e.minSize, this.props.minSize) || !(0, u.Z)(e.container, this.props.container)
   }
@@ -160,8 +160,8 @@ class j extends(i = Chunk647438.Component) {
         id: i,
         container: {
           maxX: r,
-          maxY: o,
-          minX: l,
+          maxY: l,
+          minX: o,
           minY: a
         },
         onDragStart: s,
@@ -177,16 +177,16 @@ class j extends(i = Chunk647438.Component) {
       }
     } = this;
     if (null == n) return null;
-    e = Math.max(Math.min(r, e), l), t = Math.max(Math.min(o, t), a);
+    e = Math.max(Math.min(r, e), o), t = Math.max(Math.min(l, t), a);
     let {
       width: m,
       height: g
-    } = S(n, this.size), y = t - h, O = e - d, v = (0, p.ou)((0, p.PY)({
+    } = x(n, this.size), y = t - h, O = e - d, v = (0, p.ou)((0, p.PY)({
       top: y,
       left: O,
       bottom: true,
       right: true
-    }, r, o, m, g)), b = u ? (0, p.R)(v) : x("RESIZE_SOUTH_EAST", v);
+    }, r, l, m, g)), b = u ? (0, p.R)(v) : S("RESIZE_SOUTH_EAST", v);
     this.setDOMPositions(b), this.setState({
       operationStarted: true,
       anchorTopOverride: null != b.top,
@@ -202,8 +202,8 @@ class j extends(i = Chunk647438.Component) {
         minSize: i,
         container: {
           maxX: r,
-          maxY: o,
-          minX: l,
+          maxY: l,
+          minX: o,
           minY: a
         },
         onDragStart: s,
@@ -219,7 +219,7 @@ class j extends(i = Chunk647438.Component) {
       startY: O
     } = this.dragState, v = 0, b = 0;
     if (null == h) return;
-    switch (e = Math.max(Math.min(r, e), l), t = Math.max(Math.min(o, t), a), h) {
+    switch (e = Math.max(Math.min(r, e), o), t = Math.max(Math.min(l, t), a), h) {
       case "RESIZE_EAST":
       case "RESIZE_SOUTH_EAST":
       case "RESIZE_NORTH_EAST":
@@ -256,7 +256,7 @@ class j extends(i = Chunk647438.Component) {
         containerSpecs: this.props.container,
         orientedPosition: this.dragState.dragOrientedCoords
       }),
-      _ = (0, p.BL)((0, p.ou)((0, p.PY)(this.dragState.dragOrientedCoords, r, o, E.width, E.height)), this.dragState.dragOrientedCoords);
+      _ = (0, p.BL)((0, p.ou)((0, p.PY)(this.dragState.dragOrientedCoords, r, l, E.width, E.height)), this.dragState.dragOrientedCoords);
     this.setDOMSize(y(g({}, E), {
       fixed: this.size.fixed
     }), true), (0, u.Z)(_, this.dragState.dragOrientedCoords) || (this.dragState.dragOrientedCoords = _, this.setDOMPositions(this.dragState.dragOrientedCoords)), f || (null != s && s(), this.setState({
@@ -270,14 +270,14 @@ class j extends(i = Chunk647438.Component) {
       bottom: i,
       right: r
     } = e, {
-      current: o
+      current: l
     } = this.ref;
     this.anchor = {
       top: t,
       left: n,
       bottom: i,
       right: r
-    }, null != o && (o.style.top = _(t), o.style.bottom = _(i), o.style.left = _(n), o.style.right = _(r))
+    }, null != l && (l.style.top = _(t), l.style.bottom = _(i), l.style.left = _(n), l.style.right = _(r))
   }
   setDOMSize(e) {
     let {
@@ -285,13 +285,13 @@ class j extends(i = Chunk647438.Component) {
       height: n,
       fixed: i
     } = e, r = arguments.length > 1 && true !== arguments[1] && arguments[1], {
-      current: o
+      current: l
     } = this.ref;
     t = "auto" !== this.size.width || r ? t : "auto", n = "auto" !== this.size.height || r ? n : "auto", this.size = {
       width: t,
       height: n,
       fixed: i
-    }, null != o && (o.style.width = _(t), o.style.height = _(n))
+    }, null != l && (l.style.width = _(t), l.style.height = _(n))
   }
   renderResizeHandles() {
     let {
@@ -374,10 +374,10 @@ class j extends(i = Chunk647438.Component) {
         minSize: n,
         padding: i = 8,
         borderWidth: r = 2,
-        borderRadius: o = 12
+        borderRadius: l = 12
       },
       state: {
-        operation: l
+        operation: o
       }
     } = this;
     return g({}, exports, {
@@ -399,8 +399,8 @@ class j extends(i = Chunk647438.Component) {
         borderWidth: i = 2,
         locked: r
       },
-      size: o,
-      anchor: l,
+      size: l,
+      anchor: o,
       setLockExtras: a,
       state: {
         anchorTopOverride: s,
@@ -427,11 +427,12 @@ class j extends(i = Chunk647438.Component) {
         onClick: e,
         id: t,
         locked: n,
-        className: i
+        className: i,
+        forceShowExtras: r
       },
       state: {
-        operationStarted: r,
-        lockExtras: l
+        operationStarted: o,
+        lockExtras: a
       }
     } = this;
     return (0, Chunk951288.jsxs)(Chunk261616.animated.div, {
@@ -439,9 +440,10 @@ class j extends(i = Chunk647438.Component) {
       style: this.getInlineStyles(),
       className: s()({
         [Chunk417999.wrapper]: true,
-        [Chunk417999.operation]: r,
+        [Chunk417999.operation]: Chunk647438,
         [Chunk417999.unlocked]: !require,
-        [Chunk417999.lockExtras]: Chunk647438
+        [Chunk417999.forceShowExtras]: r && require,
+        [Chunk417999.lockExtras]: Chunk120356
       }, i),
       onMouseDown: this.handleMouseDown,
       onClick: null != module ? () => module(exports) : true,
@@ -449,7 +451,7 @@ class j extends(i = Chunk647438.Component) {
     })
   }
   constructor(e) {
-    super(e), m(this, "anchor", true), m(this, "size", true), m(this, "ref", l.createRef()), m(this, "dragState", {
+    super(e), m(this, "anchor", true), m(this, "size", true), m(this, "ref", o.createRef()), m(this, "dragState", {
       startX: 0,
       startY: 0,
       offsetX: 0,
@@ -490,11 +492,11 @@ class j extends(i = Chunk647438.Component) {
           startY: r
         },
         state: {
-          operation: o,
-          operationStarted: l
+          operation: l,
+          operationStarted: o
         }
       } = this;
-      !(null == o || !l && Math.pow(i - t, 2) + Math.pow(r - n, 2) < 3) && ("MOVE" === o ? this.handleDragMove(t, n) : v.has(o) && this.handleResizeMove(t, n))
+      !(null == l || !o && Math.pow(i - t, 2) + Math.pow(r - n, 2) < 3) && ("MOVE" === l ? this.handleDragMove(t, n) : v.has(l) && this.handleResizeMove(t, n))
     }), m(this, "handleOperationStart", (e, t, n) => {
       let {
         ref: {
@@ -502,18 +504,18 @@ class j extends(i = Chunk647438.Component) {
         },
         props: {
           targetWindow: r,
-          active: o,
+          active: l,
           container: {
-            maxX: l,
+            maxX: o,
             maxY: a
           }
         }
       } = this;
-      if (null == i || !o) return;
+      if (null == i || !l) return;
       let {
         width: s,
         height: c
-      } = S(i, this.size), u = (0, p.PY)(this.anchor, l, a, s, c);
+      } = x(i, this.size), u = (0, p.PY)(this.anchor, o, a, s, c);
       if ("MOVE" === e) {
         let {
           x: e,
@@ -535,7 +537,7 @@ class j extends(i = Chunk647438.Component) {
           offsetY: n - i
         })
       } else {
-        let i = x(e, u);
+        let i = S(e, u);
         this.setDOMPositions(i), this.dragState = y(g({}, this.dragState), {
           startX: t,
           startY: n,
@@ -564,7 +566,7 @@ class j extends(i = Chunk647438.Component) {
           onUpdate: t,
           id: n
         } = this.props;
-        t(e, n, this.anchor, this.size, S(this.ref.current, this.size))
+        t(e, n, this.anchor, this.size, x(this.ref.current, this.size))
       } : true;
       if (t) {
         let {
@@ -573,8 +575,8 @@ class j extends(i = Chunk647438.Component) {
         } = this.props.container, {
           width: n,
           height: r
-        } = S(this.ref.current, this.size), o = (0, p.PY)(this.anchor, e, t, n, r), l = (0, p.R)(o);
-        this.setDOMPositions(l), this.setDOMSize({
+        } = x(this.ref.current, this.size), l = (0, p.PY)(this.anchor, e, t, n, r), o = (0, p.R)(l);
+        this.setDOMPositions(o), this.setDOMSize({
           width: n,
           height: r,
           fixed: this.size.fixed
@@ -591,4 +593,4 @@ class j extends(i = Chunk647438.Component) {
     }), this.anchor = E(e.anchor), this.size = b(e.size, e.minSize.width, e.minSize.height)
   }
 }
-m(j, "Operations", O)
+m(C, "Operations", O)

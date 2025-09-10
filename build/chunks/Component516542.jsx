@@ -28,13 +28,13 @@ function v(e) {
     onSend: b
   } = e, E = (0, f.Z)(), {
     placeholder: _,
-    accessibilityLabel: S
+    accessibilityLabel: x
   } = (0, c.Z)({
     channel: v
-  }), [x, I] = r.useState(() => (0, d.H2)()), {
-    textValue: j,
-    richValue: C
-  } = x, [w, N] = r.useState(false), Z = r.useCallback(() => N(true), []), T = r.useCallback(() => N(false), []);
+  }), [S, I] = r.useState(() => (0, d.H2)()), {
+    textValue: C,
+    richValue: j
+  } = S, [w, N] = r.useState(false), Z = r.useCallback(() => N(true), []), T = r.useCallback(() => N(false), []);
   (0, s.ZP)(() => {
     (0, a.In)(v.id, {
       section: g.jXE.OVERLAY,
@@ -49,30 +49,30 @@ function v(e) {
       })
     }, []),
     A = r.useCallback(e => {
-      "Escape" === e.key && l.Z.updateNotificationStatus(t, g._1z.ACTIVE)
+      "Escape" === e.key && o.Z.updateNotificationStatus(t, g._1z.ACTIVE)
     }, [t]),
-    k = r.useCallback(() => (j.length > E || (o.Z.sendMessage(v.id, h.ZP.parse(v, j), false, {
+    D = r.useCallback(() => (C.length > E || (l.Z.sendMessage(v.id, h.ZP.parse(v, C), false, {
       location: y.dy.OVERLAY
-    }), l.Z.setInputLocked(true, (0, m.getPID)()), l.Z.updateNotificationStatus(t, g._1z.DISMISSED), null == b || b(j)), Promise.resolve({
+    }), o.Z.setInputLocked(true, (0, m.getPID)()), o.Z.updateNotificationStatus(t, g._1z.DISMISSED), null == b || b(C)), Promise.resolve({
       shouldClear: false,
       shouldRefocus: true
-    })), [j, E, v, t, b]);
+    })), [C, E, v, t, b]);
   return (0, i.jsx)("div", {
     className: O.container,
     children: (0, i.jsx)(p.ZP, {
       innerClassName: O.textArea,
       onChange: P,
       placeholder: _,
-      accessibilityLabel: S,
+      accessibilityLabel: x,
       channel: v,
-      textValue: j,
-      richValue: C,
+      textValue: C,
+      richValue: j,
       type: u.Ie.OVERLAY_INLINE_REPLY,
       allowNewLines: false,
       onBlur: T,
       onFocus: Z,
       focused: w,
-      onSubmit: k,
+      onSubmit: D,
       onKeyDown: A,
       autoCompletePosition: "bottom",
       disableThemedBackground: true

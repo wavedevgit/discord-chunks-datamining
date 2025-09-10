@@ -1,8 +1,8 @@
 /** Chunk was on 46290 **/
 /** chunk id: 461393, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  E5: () => o,
-  GB: () => l,
+  E5: () => l,
+  GB: () => o,
   MH: () => a,
   Se: () => d,
   bj: () => c,
@@ -12,10 +12,10 @@ require.d(exports, {
 });
 let i = 9 / 16,
   r = 16 / 9,
-  o = (e, t) => e * t,
   l = (e, t) => e * t,
-  a = e => o(e, i),
-  s = e => l(e, r);
+  o = (e, t) => e * t,
+  a = e => l(e, i),
+  s = e => o(e, r);
 
 function c(e, t) {
   return t * (Math.max(1, e) - 1)
@@ -27,9 +27,9 @@ function u(e) {
     height: n,
     containerOffset: i,
     gapSize: r,
-    tileCount: o,
-    isVertical: l
-  } = e, a = l ? t : t - c(o, r), s = l ? n - c(o, r) : n;
+    tileCount: l,
+    isVertical: o
+  } = e, a = o ? t : t - c(l, r), s = o ? n - c(l, r) : n;
   return {
     verticalRatio: (s - i) / (a - i),
     horizontalRatio: (a - i) / (s - i)
@@ -63,7 +63,7 @@ function d(e, t, n) {
     b = e.height - i,
     E = d - i,
     _ = p - i;
-  return s ? (_ -= g, b -= g) : (E -= g, v -= g), f && m && (e.width > e.height ? b = o(v = E, y) : v = l(b = _, O), f = v > E, m = b > _), f && (b = o(v = E, y)), m && (v = l(b = _, O)), s ? b += c(a, r) : v += c(a, r), {
+  return s ? (_ -= g, b -= g) : (E -= g, v -= g), f && m && (e.width > e.height ? b = l(v = E, y) : v = o(b = _, O), f = v > E, m = b > _), f && (b = l(v = E, y)), m && (v = o(b = _, O)), s ? b += c(a, r) : v += c(a, r), {
     width: v + i,
     height: b + i
   }

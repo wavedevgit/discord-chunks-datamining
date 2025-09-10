@@ -3,7 +3,7 @@
 "use strict";
 let r, i;
 require.d(exports, {
-  Z: () => Y
+  Z: () => K
 }), require("./539854.js"), require("./388685.js"), require("./642613.js"), require("./415506.js");
 var a, Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
@@ -438,12 +438,12 @@ function R(e) {
 }
 
 function P(e, t) {
-  let n = B(e);
+  let n = F(e);
   n.sort((e, t) => e.zIndex - t.zIndex);
   let r = n.findIndex(e => e.id === t);
   if (r === n.length - 1) returnfalse;
   n.push(n.splice(r, 1)[0]);
-  for (let e = 0; e < n.length; e++) U(n[e], e);
+  for (let e = 0; e < n.length; e++) B(n[e], e);
   returntrue
 }
 
@@ -471,7 +471,7 @@ function x(e) {
     widgetId: t
   } = e;
   return C(t, (e, t) => {
-    G(e)
+    Z(e)
   })
 }
 
@@ -487,6 +487,23 @@ function L(e, t, n, r, a) {
 }
 
 function j(e) {
+  i = y(E({}, i), {
+    [e.id]: e.merge({
+      showExtrasHintTimestamp: Date.now()
+    })
+  })
+}
+
+function M(e) {
+  let {
+    widgetId: t
+  } = e;
+  return C(t, (e, t) => {
+    j(e)
+  })
+}
+
+function k(e) {
   let {
     widgetId: t
   } = e;
@@ -502,7 +519,7 @@ function j(e) {
   })
 }
 
-function M(e) {
+function U(e) {
   let {
     layoutId: t
   } = e, n = r[t];
@@ -514,7 +531,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function G(e) {
   let {
     widgetConfigs: t
   } = e;
@@ -532,19 +549,19 @@ function k(e) {
   })
 }
 
-function U(e, t) {
+function B(e, t) {
   i = y(E({}, i), {
     [e.id]: e.set("zIndex", t)
   })
 }
 
-function G(e) {
+function Z(e) {
   i = y(E({}, i), {
     [e.id]: e.set("pinned", !e.pinned)
   })
 }
 
-function B(e) {
+function F(e) {
   let t = [];
   return e.widgets.forEach(e => {
     let n = i[e];
@@ -552,27 +569,27 @@ function B(e) {
   }), t
 }
 
-function Z(e) {
+function V(e) {
   let t = {};
   return s().forEach(e, (e, n) => {
     t[n] = new f.Z(e)
   }), t
 }
 
-function F(e) {
+function H(e) {
   let t = {};
   return s().forEach(e, (e, n) => {
     t[n] = new _.Z(e)
   }), t
 }
 
-function V(e) {
+function Y(e) {
   let t = T[e];
   if (null != t) return t.defaultSettings
 }
-class H extends(a = Chunk442837.ZP.PersistedStore) {
+class W extends(a = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    null != e && null != e.layouts && null != e.widgets ? (r = Z(e.layouts), i = F(e.widgets)) : (r = {}, i = {});
+    null != e && null != e.layouts && null != e.widgets ? (r = V(e.layouts), i = H(e.widgets)) : (r = {}, i = {});
     let t = false,
       n = [];
     s().forEach(T, (e, t) => {
@@ -585,7 +602,7 @@ class H extends(a = Chunk442837.ZP.PersistedStore) {
         if (null != n || T[r].version !== e.version) continue;
         s = t = true;
         let c = (0, l.Z)(),
-          u = V(r);
+          u = Y(r);
         if (null == u) return;
         n = new _.Z(y(E({}, u), {
           type: r,
@@ -650,11 +667,14 @@ class H extends(a = Chunk442837.ZP.PersistedStore) {
     return T[e]
   }
   getWidgetDefaultSettings(e) {
-    return V(e)
+    return Y(e)
   }
   getWidgetType(e) {
     let t = i[e];
     return null != t ? t.type : ""
+  }
+  getWidgetsByType(e) {
+    return Object.values(i).filter(t => t.type === e)
   }
   getRegisteredWidgets() {
     return T
@@ -668,7 +688,7 @@ class H extends(a = Chunk442837.ZP.PersistedStore) {
         case "OPTIONAL_DEFAULT":
           var a;
           if ((null != (a = r.version) ? a : 0) === t) {
-            let t = V(i);
+            let t = Y(i);
             if (null == t) return;
             n.push(y(E({}, t), {
               type: i,
@@ -680,7 +700,7 @@ class H extends(a = Chunk442837.ZP.PersistedStore) {
     }), n
   }
 }
-g(H, "displayName", "LayoutStore"), g(H, "persistKey", "LayoutStore"), g(H, "migrations", [() => {
+g(W, "displayName", "LayoutStore"), g(W, "persistKey", "LayoutStore"), g(W, "migrations", [() => {
   let {
     pinnedWidgets: e,
     positions: t,
@@ -749,7 +769,7 @@ g(H, "displayName", "LayoutStore"), g(H, "persistKey", "LayoutStore"), g(H, "mig
       }), r || null == a) return;
     let o = (0, l.Z)();
     n.widgets = [a, o];
-    let s = V(h.Odu.GUILDS_TEXT);
+    let s = Y(h.Odu.GUILDS_TEXT);
     null != s && i.push([o, y(E({}, s), {
       type: h.Odu.GUILDS_TEXT,
       id: o,
@@ -791,13 +811,14 @@ g(H, "displayName", "LayoutStore"), g(H, "persistKey", "LayoutStore"), g(H, "mig
     widgets: n
   }
 }]);
-let Y = new H(Chunk570140.Z, {
+let K = new W(Chunk570140.Z, {
   LAYOUT_CREATE: S,
   LAYOUT_SET_PINNED: x,
   LAYOUT_UPDATE_WIDGET: N,
   LAYOUT_SET_TOP_WIDGET: R,
-  LAYOUT_DELETE_WIDGET: j,
-  LAYOUT_DELETE_ALL_WIDGETS: M,
-  LAYOUT_CREATE_WIDGETS: k,
-  LAYOUT_SET_WIDGET_META: w
+  LAYOUT_DELETE_WIDGET: k,
+  LAYOUT_DELETE_ALL_WIDGETS: U,
+  LAYOUT_CREATE_WIDGETS: G,
+  LAYOUT_SET_WIDGET_META: w,
+  LAYOUT_SHOW_OVERLAY_EXTRAS_HINT: M
 })

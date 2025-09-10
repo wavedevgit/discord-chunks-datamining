@@ -9,8 +9,8 @@ var Chunk264418 = require("./264418.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk703656 = require("./703656.js"),
   Chunk526167 = require("./526167.js"),
+  Chunk266198 = require("./266198.js"),
   Chunk648613 = require("./648613.jsx"),
-  Chunk951570 = require("./951570.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
@@ -23,11 +23,11 @@ let m = e => {
     dismissCoachmark: n,
     children: m,
     cohort: b
-  } = e, _ = (0, r.jsx)(s.Z, {
+  } = e, _ = (0, r.jsx)(c.Z, {
     subscriptionTier: u.Si.TIER_2,
     children: e => {
       let {
-        onClick: s
+        onClick: c
       } = e;
       return (0, r.jsx)(i.Z, {
         targetElementRef: t,
@@ -40,7 +40,7 @@ let m = e => {
         },
         title: f.intl.string(f.t.qh6bEx),
         body: f.intl.format(f.t["70LoNT"], {
-          helpCenterLink: c.lB
+          helpCenterLink: s.lB
         }),
         graphic: {
           type: "video",
@@ -52,7 +52,7 @@ let m = e => {
           text: f.intl.string(f.t.J61px8),
           variant: "expressive",
           onClick: e => {
-            b === c.TO.COHORT_3 ? (0, a.uL)(d.Z5c.APPLICATION_STORE) : s(e), n(p.L.USER_DISMISS)
+            b === s.TO.COHORT_3 ? (0, a.uL)(d.Z5c.APPLICATION_STORE) : c(e), n(p.L.USER_DISMISS)
           },
           icon: l.SrA
         }],

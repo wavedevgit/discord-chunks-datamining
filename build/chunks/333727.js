@@ -43,11 +43,11 @@ function p(e, t, n, p) {
         channelId: e.id,
         type: u.mFx.JOIN,
         activity: p,
-        location: l.default.isLocked((0, a.getPID)()) ? u.Sbl.LOCKED_OVERLAY : u.Sbl.UNLOCKED_OVERLAY
+        location: o.default.isLocked((0, a.getPID)()) ? u.Sbl.LOCKED_OVERLAY : u.Sbl.UNLOCKED_OVERLAY
       }), y("join"), r.Z.updateNotificationStatus(n)
     },
     onCancelClick: (t, n) => {
-      (0, o.In)(e.id, {
+      (0, l.In)(e.id, {
         section: u.jXE.OVERLAY,
         object: u.qAy.ACK_DECLINE_REQUEST_TO_JOIN,
         objectType: u.Qqv.ACK_SEMI_AUTOMATIC

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => en
-}), require("./388685.js"), require("./642613.js"), require("./415506.js");
+}), require("./388685.js"), require("./415506.js"), require("./642613.js");
 var Chunk772848 = require("./772848.js"),
   Chunk379649 = require("./379649.js"),
   Chunk570140 = require("./570140.js"),
@@ -103,6 +103,13 @@ class j {
       [Chunk987650.Vk.Other]: 0
     }
   }
+  static makeCounters() {
+    let e = {},
+      t = Object.values(Chunk987650.n0);
+    for (let n of exports) module[require] = new L;
+    if (Object.keys(module).length !== exports.length) throw Error("NotificationAnalytics: Failed to make counters");
+    return module
+  }
   increment(e, t) {
     let n = this.groupCounters[t];
     if (null == n) return void x.error("NotificationCounter: Unknown notification action: ".concat(t));
@@ -146,24 +153,7 @@ class j {
     }), C(this, "groupCounters", {
       [Chunk987650.bv.Viewed]: j.makeEmptyGroupAnalytics(),
       [Chunk987650.bv.Clicked]: j.makeEmptyGroupAnalytics()
-    }), C(this, "counters", {
-      [Chunk987650.n0.NewsNudge]: new L,
-      [Chunk987650.n0.WelcomeNudge]: new L,
-      [Chunk987650.n0.OopWelcomeNudge]: new L,
-      [Chunk987650.n0.TextChat]: new L,
-      [Chunk987650.n0.ActivityUserJoin]: new L,
-      [Chunk987650.n0.ActivityInvite]: new L,
-      [Chunk987650.n0.IncomingCall]: new L,
-      [Chunk987650.n0.GoLiveNudge]: new L,
-      [Chunk987650.n0.GoLiveNonVoiceNudge]: new L,
-      [Chunk987650.n0.OverlayCrashed]: new L,
-      [Chunk987650.n0.ClipsReminderNotification]: new L,
-      [Chunk987650.n0.ClipsNotification]: new L,
-      [Chunk987650.n0.KeybindIndicatorsNotification]: new L,
-      [Chunk987650.n0.SendGameInvitesNotification]: new L,
-      [Chunk987650.n0.NowPlayingNotification]: new L,
-      [Chunk987650.n0.RequestToStream]: new L
-    })
+    }), C(this, "counters", j.makeCounters())
   }
 }
 class M {

@@ -28,7 +28,7 @@ var Chunk704215 = require("./704215.js"),
   Chunk968803 = require("./968803.js"),
   Chunk336501 = require("./336501.js");
 
-function j(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -47,7 +47,7 @@ function j(e) {
   return e
 }
 
-function C(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -81,8 +81,8 @@ function N(e, t) {
   for (let r of t) switch (r.type) {
     case v.nc.WELCOME: {
       let t = (null == e ? true : e.altId) != null ? p.Z.getApplicationActivity(e.altId) : (null == e ? true : e.id) != null ? p.Z.getApplicationActivity(e.id) : null;
-      null != t && (0, s.Z)(t, b.xjy.JOIN) && (_.cancelText = S.intl.string(S.t["6F9ivr"]), _.onCancelClick = (e, n) => {
-        u("unlock"), a.Z.updateNotificationStatus(n), a.Z.setInputLocked(false, (0, h.getPID)()), (0, l.h7)(t, false, b.IlC.POPOUT)
+      null != t && (0, s.Z)(t, b.xjy.JOIN) && (_.cancelText = x.intl.string(x.t["6F9ivr"]), _.onCancelClick = (e, n) => {
+        u("unlock"), a.Z.updateNotificationStatus(n), a.Z.setInputLocked(false, (0, h.getPID)()), (0, o.h7)(t, false, b.IlC.POPOUT)
       });
       break
     }
@@ -92,7 +92,7 @@ function N(e, t) {
         oneClickGoLiveEnabled: e,
         useStreamCtaCopy: t
       } = (0, f.tU)("welcomeNotification");
-      _.confirmText = S.intl.string(t ? S.t.pEuzio : S.t.U76Ft7), _.onConfirmClick = e ? (e, t) => {
+      _.confirmText = x.intl.string(t ? x.t.pEuzio : x.t.U76Ft7), _.onConfirmClick = e ? (e, t) => {
         a.Z.updateNotificationStatus(t);
         let n = () => {
             u("go-live-modal"), a.Z.setInputLocked(false, (0, h.getPID)())
@@ -109,11 +109,11 @@ function N(e, t) {
           appContext: b.IlC.POPOUT
         })
       } : (e, t) => {
-        u("go-live-modal"), a.Z.updateNotificationStatus(t), a.Z.setInputLocked(false, (0, h.getPID)()), (0, o.ZD)(async () => {
+        u("go-live-modal"), a.Z.updateNotificationStatus(t), a.Z.setInputLocked(false, (0, h.getPID)()), (0, l.ZD)(async () => {
           let {
             default: e
           } = await Promise.all([n.e("38697"), n.e("46746"), n.e("39173")]).then(n.bind(n, 60594));
-          return t => (0, i.jsx)(e, C(j({}, t), {
+          return t => (0, i.jsx)(e, j(C({}, t), {
             selectSource: false,
             sourcePID: (0, h.getPID)(),
             guildId: r.type === v.nc.GO_LIVE_VOICE ? r.voiceGuild.id : true,
@@ -139,21 +139,21 @@ function N(e, t) {
       })
   }
   let N = (0, d.zu)(r.z.OVERLAY_OOP_WELCOME_NUX),
-    Z = N ? S.intl.string(S.t.KWDIrq) : S.intl.string(S.t["prl+ra"]),
-    T = N ? true : S.intl.string(S.t.R3CpPT),
+    Z = N ? x.intl.string(x.t.KWDIrq) : x.intl.string(x.t["prl+ra"]),
+    T = N ? true : x.intl.string(x.t.R3CpPT),
     P = null != e ? (0, i.jsx)(w, {
       game: e
     }) : (0, i.jsx)("img", {
       src: n(328756),
-      className: x.icon,
+      className: S.icon,
       alt: ""
     });
-  return C(j({
+  return j(C({
     icon: P,
     title: Z,
     body: T,
-    hint: () => (0, y.Q)((0, O.P)(), S.t["z8/sgI"], S.intl.string(S.t.jZkzVF), true),
-    confirmText: N ? true : S.intl.string(S.t.TxyTbm),
+    hint: () => (0, y.Q)((0, O.P)(), x.t["z8/sgI"], x.intl.string(x.t.jZkzVF), true),
+    confirmText: N ? true : x.intl.string(x.t.TxyTbm),
     onConfirmClick: N ? true : () => {
       u("unlock"), a.Z.setInputLocked(false, (0, h.getPID)()), N || (0, d.Q3)(r.z.OVERLAY_OOP_WELCOME_NUX)
     }

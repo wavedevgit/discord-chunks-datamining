@@ -58,7 +58,7 @@ function U(e) {
     return (null == t ? true : t.ownerId) === (null == (e = k.default.getCurrentUser()) ? true : e.id)
   }), G = function(e) {
     let t = T(e),
-      n = (0, S.Z)(E.Z),
+      n = (0, v.Z)(E.Z),
       o = m.Z.getSettings().clipsEnabled,
       a = e.ownerId === C.default.getId(),
       {
@@ -75,14 +75,14 @@ function U(e) {
       id: "clip-stream",
       disabled: !o || !(a || d) || u,
       label: V.intl.string(V.t.U4URzM),
-      action: () => a ? (0, Z.C1)() : (0, Z.C1)((0, A.V9)(e))
+      action: () => a ? (0, S.C1)() : (0, S.C1)((0, A.V9)(e))
     }) : null
   }(t), J = T(t), Q = function(e) {
     let t = T(e),
       n = (0, y.Z)(e.ownerId, M.Yn.STREAM);
     return t ? n : null
   }(t), L = function(e, t) {
-    let n, o = (0, l.e7)([v.Z], () => null != v.Z.getRemoteSessionId()),
+    let n, o = (0, l.e7)([Z.Z], () => null != Z.Z.getRemoteSessionId()),
       a = (0, l.e7)([P.Z], () => P.Z.getChannel(e.channelId), [e.channelId]),
       u = T(e),
       d = k.default.getCurrentUser(),

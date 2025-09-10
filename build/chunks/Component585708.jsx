@@ -26,12 +26,12 @@ var Chunk13245 = require("./13245.js"),
 function E(e, t, n, E) {
   var _;
   let {
-    icon: S,
-    title: x,
+    icon: x,
+    title: S,
     body: I
   } = (0, a.Xi)(e, t, n), {
-    trackView: j,
-    trackClick: C
+    trackView: C,
+    trackClick: j
   } = (0, y.R)(O.n0.TextChat, {
     notif_type: O.n0.TextChat,
     notif_user_id: null == (_ = t.author) ? true : _.id,
@@ -42,34 +42,34 @@ function E(e, t, n, E) {
     channel_type: e.type
   });
   return {
-    icon: S,
-    title: x,
-    body: t.content.length > 0 ? (0, l.ZP)(t, {
+    icon: x,
+    title: S,
+    body: t.content.length > 0 ? (0, o.ZP)(t, {
       noStyleAndInteraction: true,
       formatInline: true,
       hideSimpleEmbedContent: false
     }).content : I,
     hint: (e, t) => e && !t ? null : (0, g.Q)((0, y.P)(), b.t.ykjOAA, b.intl.string(b.t.jZkzVF)),
     maxBodyLines: 2,
-    renderFooter: (n, r, o) => n && !o ? (0, i.jsx)(m.Z, {
+    renderFooter: (n, r, l) => n && !l ? (0, i.jsx)(m.Z, {
       id: r,
       replyToMessageId: t.id,
       channel: e,
-      onSend: () => C("send")
+      onSend: () => j("send")
     }) : null,
     onNotificationShow: () => {
-      E && (0, c.GN)(u.Ay, u.yk), j()
+      E && (0, c.GN)(u.Ay, u.yk), C()
     },
     onNotificationClick: () => {
       let n = (0, h.getPID)();
-      (0, o.In)(e.id, {
+      (0, l.In)(e.id, {
         section: v.jXE.OVERLAY,
         object: v.qAy.ACK_TEXT_CHAT_NOTIFICATION,
         objectType: v.Qqv.ACK_SEMI_AUTOMATIC
-      }, true, true, t.id), f.ZP.isInputLocked(n) ? (C("unlock"), r.Z.setInputLocked(false, n)) : (C("jump"), (0, s.uL)(v.Z5c.CHANNEL(e.guild_id, e.id, t.id)), d.isPlatformEmbedded && p.ZP.focus())
+      }, true, true, t.id), f.ZP.isInputLocked(n) ? (j("unlock"), r.Z.setInputLocked(false, n)) : (j("jump"), (0, s.uL)(v.Z5c.CHANNEL(e.guild_id, e.id, t.id)), d.isPlatformEmbedded && p.ZP.focus())
     },
     onDismissClick: () => {
-      C("dismiss")
+      j("dismiss")
     }
   }
 }

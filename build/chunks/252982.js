@@ -30,7 +30,7 @@ function a(e) {
 class o extends Chunk81825.Z {
   constructor(e) {
     var t, n;
-    super(), i(this, "id", true), i(this, "layoutId", true), i(this, "type", true), i(this, "anchor", true), i(this, "size", true), i(this, "minSize", true), i(this, "pinned", true), i(this, "zIndex", true), i(this, "opacity", true), i(this, "meta", true), this.id = e.id || "", this.layoutId = e.layoutId || "", this.type = e.type;
+    super(), i(this, "id", true), i(this, "layoutId", true), i(this, "type", true), i(this, "anchor", true), i(this, "size", true), i(this, "minSize", true), i(this, "pinned", true), i(this, "showExtrasHintTimestamp", true), i(this, "zIndex", true), i(this, "opacity", true), i(this, "meta", true), this.id = e.id || "", this.layoutId = e.layoutId || "", this.type = e.type;
     let {
       top: r,
       left: o,
@@ -51,6 +51,6 @@ class o extends Chunk81825.Z {
     }, e.size), this.minSize = a({
       width: true,
       height: true
-    }, e.minSize), this.pinned = !!e.pinned, this.zIndex = e.zIndex || 0, this.opacity = null != (n = e.opacity) ? n : 1, this.meta = a({}, e.meta)
+    }, e.minSize), this.pinned = !!e.pinned, this.zIndex = e.zIndex || 0, this.opacity = null != (n = e.opacity) ? n : 1, this.meta = a({}, e.meta), null != e.showExtrasHintTimestamp && (this.showExtrasHintTimestamp = e.showExtrasHintTimestamp)
   }
 }
