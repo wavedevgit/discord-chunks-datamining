@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk706053 = require("./706053.js");
 
-function g(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -50,7 +50,7 @@ function j(e, t) {
   }), e
 }
 
-function f(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var r, n, i = function(e, t) {
     if (null == e) return {};
@@ -65,22 +65,22 @@ function f(e, t) {
   }
   return i
 }
-let y = () => 80,
+let f = () => 80,
   O = e => {
     var {
       children: t,
       className: r,
       onSelect: i,
       isSelected: l = false
-    } = e, a = f(e, ["children", "className", "onSelect", "isSelected"]);
-    return (0, n.jsx)(o.P3F, j(g({
-      className: s()(v.decorationGridItem, l ? v.selected : true, r)
+    } = e, a = y(e, ["children", "className", "onSelect", "isSelected"]);
+    return (0, n.jsx)(o.P3F, j(v({
+      className: s()(g.decorationGridItem, l ? g.selected : true, r)
     }, a), {
       onClick: i,
       children: t
     }))
   },
-  b = e => {
+  P = e => {
     var {
       user: t,
       avatarDecoration: r,
@@ -88,28 +88,28 @@ let y = () => 80,
       section: s,
       isSelected: a = false,
       canUsePremiumCollectibles: o
-    } = e, d = f(e, ["user", "avatarDecoration", "innerRef", "section", "isSelected", "canUsePremiumCollectibles"]);
+    } = e, d = y(e, ["user", "avatarDecoration", "innerRef", "section", "isSelected", "canUsePremiumCollectibles"]);
     let m = i.useRef(null),
-      p = (0, c.Z)(null != l ? l : m),
+      x = (0, c.Z)(null != l ? l : m),
       {
-        avatarDecorationSrc: y
-      } = (0, x.Z)({
+        avatarDecorationSrc: f
+      } = (0, h.Z)({
         user: t,
         avatarDecorationOverride: r,
         size: 80,
-        onlyAnimateOnHover: !p
+        onlyAnimateOnHover: !x
       });
-    return (0, n.jsxs)(O, j(g({
+    return (0, n.jsxs)(O, j(v({
       innerRef: null != l ? l : m,
       isSelected: a
     }, d), {
       children: [(0, n.jsx)("img", {
-        className: v.presetDecorationImg,
-        src: y,
+        className: g.presetDecorationImg,
+        src: f,
         alt: r.label
       }), (0, n.jsx)(u.Z, {
-        isPurchaseSection: s === h.$0.PURCHASE,
-        isPremiumSection: s === h.$0.PREMIUM_PURCHASE,
+        isPurchaseSection: s === p.$0.PURCHASE,
+        isPremiumSection: s === p.$0.PREMIUM_PURCHASE,
         canUsePremiumCollectibles: o,
         skuId: r.skuId
       })]
@@ -123,10 +123,10 @@ let y = () => 80,
       selectedAvatarDecorationRef: l,
       onSelect: s,
       onOpenShop: c
-    } = e, u = (0, h.ZP)(), x = d.ZP.canUseCollectibles(t);
+    } = e, u = (0, p.ZP)(), h = d.ZP.canUseCollectibles(t);
     return (0, n.jsx)(o.GMG, {
       fade: true,
-      className: v.list,
+      className: g.list,
       columns: 3,
       sections: u.map(e => {
         let {
@@ -139,25 +139,25 @@ let y = () => 80,
       paddingHorizontal: 12,
       paddingVertical: 0,
       removeEdgeItemGutters: true,
-      renderItem: (e, d, j, f) => {
+      renderItem: (e, d, j, y) => {
         let {
-          section: y,
+          section: f,
           items: S
         } = u[e];
-        return (0, a.EQ)(S[d]).with(h.Tm, () => (0, n.jsxs)(O, {
-          style: g({}, j),
+        return (0, a.EQ)(S[d]).with(p.Tm, () => (0, n.jsxs)(O, {
+          style: v({}, j),
           isSelected: null === i,
           onSelect: () => s(null),
           children: [(0, n.jsx)(o.t6m, {
             size: "md",
             color: "currentColor",
-            className: v.icon
+            className: g.icon
           }), (0, n.jsx)(o.Text, {
             variant: "text-xs/normal",
             color: "header-primary",
-            children: (0, m.ad)(t, r) ? p.intl.string(p.t.CHf9iI) : p.intl.string(p.t.PoWNfX)
+            children: (0, m.ad)(t, r) ? x.intl.string(x.t.CHf9iI) : x.intl.string(x.t.PoWNfX)
           })]
-        }, f)).with(h.oT, () => (0, n.jsxs)(O, {
+        }, y)).with(p.oT, () => (0, n.jsxs)(O, {
           style: j,
           onSelect: c,
           children: [(0, n.jsx)(o.EOn, {
@@ -165,24 +165,24 @@ let y = () => 80,
             width: 23,
             height: 23,
             color: "currentColor",
-            className: v.shopIcon
+            className: g.shopIcon
           }), (0, n.jsx)(o.Text, {
             variant: "text-xs/normal",
             color: "header-primary",
-            children: p.intl.string(p.t.pWG4zc)
+            children: x.intl.string(x.t.pWG4zc)
           })]
-        }, f)).otherwise(e => {
+        }, y)).otherwise(e => {
           let r = (null == i ? true : i.id) === e.id;
-          return (0, n.jsx)(b, {
-            style: g({}, j),
+          return (0, n.jsx)(P, {
+            style: v({}, j),
             user: t,
             avatarDecoration: e,
-            section: y,
+            section: f,
             innerRef: r ? l : true,
             isSelected: r,
             onSelect: () => s(e),
-            canUsePremiumCollectibles: x
-          }, f)
+            canUsePremiumCollectibles: h
+          }, y)
         })
       },
       renderSection: (e, t) => {
@@ -190,8 +190,8 @@ let y = () => 80,
           header: r
         } = u[e];
         return (0, n.jsx)("div", {
-          className: v.headings,
-          style: j(g({}, t), {
+          className: g.headings,
+          style: j(v({}, t), {
             position: "absolute"
           }),
           children: (0, n.jsx)(o.vwX, {
@@ -201,6 +201,6 @@ let y = () => 80,
       },
       getSectionHeight: e => u[e].height,
       getItemKey: (e, t) => u[e].items[t].id,
-      getItemHeight: y
+      getItemHeight: f
     })
   }

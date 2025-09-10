@@ -17,11 +17,11 @@ let d = e => {
     isPremiumSection: r,
     canUsePremiumCollectibles: d,
     skuId: m
-  } = e, h = (0, o.Yq)(m), x = (0, l.e7)([a.Z], () => {
+  } = e, p = (0, o.Yq)(m), h = (0, l.e7)([a.Z], () => {
     let e = a.Z.getProduct(m);
     return (0, o.G1)(e)
   });
-  return t || r && d ? null : h ? (0, n.jsx)(s.lBU, {
+  return t || r && d ? null : p ? (0, n.jsx)(s.lBU, {
     className: u.newBadge,
     text: (0, n.jsxs)("div", {
       className: u.newBadgeText,
@@ -31,7 +31,7 @@ let d = e => {
       }), c.intl.string(c.t.y2b7CA)]
     })
   }) : (0, n.jsx)(s.G2e, {
-    icon: x ? () => (0, n.jsx)(s.SrA, {
+    icon: h ? () => (0, n.jsx)(s.SrA, {
       size: "custom",
       color: "currentColor",
       width: 14,

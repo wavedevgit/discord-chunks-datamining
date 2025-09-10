@@ -1,7 +1,7 @@
 /** Chunk was on 55183 **/
 /** chunk id: 52268, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => O
 }), require("./314940.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -64,8 +64,8 @@ function b(e, t) {
   }
   return i
 }
-let j = () => 80,
-  y = e => {
+let y = () => 80,
+  P = e => {
     var {
       children: t,
       className: n,
@@ -80,7 +80,7 @@ let j = () => 80,
       children: t
     }))
   },
-  v = e => {
+  j = e => {
     var t, {
         profileEffect: n,
         innerRef: l,
@@ -90,24 +90,24 @@ let j = () => 80,
       } = e,
       u = b(e, ["profileEffect", "innerRef", "section", "isSelected", "canUsePremiumCollectibles"]);
     let p = (0, d.V)(n.id),
-      j = i.useRef(null),
+      y = i.useRef(null),
       {
-        accessibilityLabel: v,
-        thumbnailPreviewSrc: P,
-        title: O
+        accessibilityLabel: j,
+        thumbnailPreviewSrc: O,
+        title: _
       } = null != (t = null == p ? true : p.config) ? t : {};
-    return (0, r.jsxs)(y, x(h({
-      innerRef: null != l ? l : j,
+    return (0, r.jsxs)(P, x(h({
+      innerRef: null != l ? l : y,
       isSelected: s
     }, u), {
       children: [(0, r.jsx)("img", {
         src: g,
-        alt: v,
+        alt: j,
         className: m.presetEffectBackground
       }), (0, r.jsx)("img", {
         className: m.presetEffectImg,
-        src: P,
-        alt: O
+        src: O,
+        alt: _
       }), (0, r.jsx)(a.Z, {
         isPurchaseSection: o === f.$0.PURCHASE,
         isPremiumSection: o === f.$0.PREMIUM_PURCHASE,
@@ -116,7 +116,7 @@ let j = () => 80,
       })]
     }))
   },
-  P = e => {
+  O = e => {
     let {
       user: t,
       guild: n,
@@ -143,10 +143,10 @@ let j = () => 80,
         }),
         renderItem: (e, t, u, x) => {
           let {
-            section: j,
-            items: P
+            section: y,
+            items: O
           } = d[e];
-          return (0, s.EQ)(P[t]).with(f.Tm, () => (0, r.jsxs)(y, {
+          return (0, s.EQ)(O[t]).with(f.Tm, () => (0, r.jsxs)(P, {
             style: h({}, u),
             isSelected: !g,
             onSelect: () => o(null),
@@ -159,7 +159,7 @@ let j = () => 80,
               color: "header-primary",
               children: null != n ? p.intl.string(p.t.CHf9iI) : p.intl.string(p.t.PoWNfX)
             })]
-          }, x)).with(f.oT, () => (0, r.jsxs)(y, {
+          }, x)).with(f.oT, () => (0, r.jsxs)(P, {
             style: u,
             onSelect: a,
             children: [(0, r.jsx)(c.EOn, {
@@ -175,9 +175,9 @@ let j = () => 80,
             })]
           }, x)).otherwise(e => {
             let t = i === e.id;
-            return (0, r.jsx)(v, {
+            return (0, r.jsx)(j, {
               style: h({}, u),
-              section: j,
+              section: y,
               profileEffect: e,
               innerRef: t ? l : true,
               isSelected: t,
@@ -205,7 +205,7 @@ let j = () => 80,
           var n, r;
           return null != (r = null == (n = d[e].items[t]) ? true : n.id) ? r : null
         },
-        getItemHeight: j,
+        getItemHeight: y,
         removeEdgeItemGutters: true
       })
     })

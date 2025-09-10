@@ -1,111 +1,102 @@
 /** Chunk was on 8895 **/
-/** chunk id: 576386, original params: e,l,n (module,exports,require) **/
+/** chunk id: 576386, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
-}), require("./388685.js");
+});
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
-  Chunk442837 = require("./442837.js"),
+  s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
+  Chunk727637 = require("./727637.js"),
+  Chunk135483 = require("./135483.js"),
+  Chunk171019 = require("./171019.jsx"),
   Chunk22267 = require("./22267.jsx"),
-  Chunk377171 = require("./377171.js"),
-  Chunk594174 = require("./594174.js"),
+  Chunk74538 = require("./74538.js"),
+  Chunk539530 = require("./539530.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk24391 = require("./24391.js");
-let m = e => {
-    var l;
+let g = e => {
+    var t;
     let {
-      nameplate: n,
-      isPurchased: s = false,
-      isSelected: m = false,
+      currentUser: n,
+      nameplate: r,
+      section: c,
+      canUsePremiumCollectibles: p,
+      isSelected: g,
       onClick: v
-    } = e, h = (0, r.e7)([u.default], () => u.default.getCurrentUser()), [j, g] = (0, i.useState)(false);
-    return null == h ? null : (0, t.jsxs)(o.P3F, {
-      "aria-label": null != (l = n.label) ? l : x.intl.string(x.t.x5CoXV),
-      className: p.nameplateItem,
+    } = e, _ = (0, i.useRef)(null), C = (0, o.Z)(_);
+    return (0, l.jsxs)(a.P3F, {
+      innerRef: _,
+      "aria-label": null != (t = r.label) ? t : x.intl.string(x.t.x5CoXV),
+      className: h.nameplateItem,
       onClick: v,
-      onMouseEnter: () => g(true),
-      onMouseLeave: () => g(false),
-      children: [(0, t.jsx)(d.Z, {
-        nameplate: n,
-        user: h,
+      children: [(0, l.jsx)(u.Z, {
+        nameplate: r,
+        user: n,
         showPlaceholderUser: true,
-        isHighlighted: j
-      }), (0, t.jsx)("div", {
-        className: a()(p.nameplateItemOverlay, {
-          [p.selected]: m
+        isHighlighted: C
+      }), (0, l.jsx)("div", {
+        className: s()(h.nameplateItemOverlay, {
+          [h.selected]: g
         })
-      }), !s && (0, t.jsx)(o.G2e, {
-        icon: () => (0, t.jsx)(o.mBM, {
-          size: "xxs",
-          color: "currentColor"
-        }),
-        color: c.Z.BACKGROUND_ACCENT,
-        className: p.iconBadge
+      }), (0, l.jsx)(d.Z, {
+        isPurchaseSection: c === m.$0.PURCHASE,
+        isPremiumSection: c === m.$0.PREMIUM_PURCHASE,
+        canUsePremiumCollectibles: p,
+        skuId: r.skuId
       })]
     })
   },
   v = e => {
     let {
-      selected: l,
-      onSelect: n,
-      onOpenShop: i,
-      available: s,
-      purchased: d,
-      isPerGuild: c
-    } = e;
-    return null == (0, r.e7)([u.default], () => u.default.getCurrentUser()) ? null : (0, t.jsxs)(o.u2D, {
-      className: p.inventory,
-      children: [(0, t.jsxs)("div", {
-        children: [(0, t.jsx)(o.vwX, {
-          children: x.intl.string(x.t["WfGV5+"])
-        }), (0, t.jsxs)("div", {
-          className: p.inventoryControls,
-          children: [(0, t.jsxs)(o.P3F, {
-            className: a()(p.inventoryControlsButton, {
-              [p.selected]: null == l
+      currentUser: t,
+      selectedNameplate: n,
+      guildId: i,
+      onSelect: r,
+      onOpenShop: o
+    } = e, d = p.ZP.canUseCollectibles(t), u = (0, m.ZP)();
+    return (0, l.jsx)(a.u2D, {
+      className: h.inventory,
+      children: u.map(e => (0, l.jsxs)("div", {
+        children: [(0, l.jsx)(a.vwX, {
+          children: e.header
+        }), e.section === m.$0.PURCHASE && (0, l.jsxs)("div", {
+          className: h.inventoryControls,
+          children: [(0, l.jsxs)(a.P3F, {
+            className: s()(h.inventoryControlsButton, {
+              [h.selected]: null == n
             }),
-            onClick: () => n(null),
-            children: [(0, t.jsx)(o.t6m, {
+            onClick: () => r(null),
+            children: [(0, l.jsx)(a.t6m, {
               size: "md",
               color: "currentColor"
-            }), (0, t.jsx)(o.Text, {
+            }), (0, l.jsx)(a.Text, {
               variant: "text-xs/normal",
-              children: c ? x.intl.string(x.t.CHf9iI) : x.intl.string(x.t.PoWNfX)
+              children: null != i ? x.intl.string(x.t.CHf9iI) : x.intl.string(x.t.PoWNfX)
             })]
-          }), (0, t.jsxs)(o.P3F, {
-            className: p.inventoryControlsButton,
-            onClick: i,
-            children: [(0, t.jsx)(o.EOn, {
+          }), (0, l.jsxs)(a.P3F, {
+            className: h.inventoryControlsButton,
+            onClick: o,
+            children: [(0, l.jsx)(a.EOn, {
               size: "md",
               color: "currentColor"
-            }), (0, t.jsx)(o.Text, {
+            }), (0, l.jsx)(a.Text, {
               variant: "text-xs/normal",
               children: x.intl.string(x.t.pWG4zc)
             })]
           })]
-        }), 0 !== d.length ? (0, t.jsx)("div", {
-          className: p.list,
-          children: d.map(e => (0, t.jsx)(m, {
-            nameplate: e,
-            isPurchased: true,
-            isSelected: (null == l ? true : l.id) === e.id,
-            onClick: () => n(e, true)
-          }, e.id))
-        }) : null]
-      }), 0 !== s.length ? (0, t.jsxs)("div", {
-        children: [(0, t.jsx)(o.vwX, {
-          children: x.intl.string(x.t["1vbbeX"])
-        }), (0, t.jsx)("div", {
-          className: p.list,
-          children: s.map(e => (0, t.jsx)(m, {
-            nameplate: e,
-            isSelected: (null == l ? true : l.id) === e.id,
-            onClick: () => n(e, false)
-          }, e.id))
+        }), (0, l.jsx)("div", {
+          className: h.list,
+          children: e.items.filter(c.k).map(i => (0, l.jsx)(g, {
+            currentUser: t,
+            nameplate: i,
+            section: e.section,
+            canUsePremiumCollectibles: d,
+            isSelected: (null == n ? true : n.skuId) === i.skuId,
+            onClick: () => r(i)
+          }, i.skuId))
         })]
-      }) : null]
+      }, e.section))
     })
   }
