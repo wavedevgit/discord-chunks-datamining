@@ -2,13 +2,13 @@
 /** chunk id: 830121, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  FO: () => ec,
-  Sq: () => er,
-  ZP: () => es,
-  el: () => el,
+  FO: () => es,
+  Sq: () => et,
+  ZP: () => ea,
+  el: () => eo,
   oO: () => G,
-  wT: () => eo,
-  zO: () => eu
+  wT: () => ei,
+  zO: () => el
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./804061.js"), require("./704826.js"), require("./388685.js"), require("./539854.js");
 var r, i, a, o, s, l, c, u, d, Chunk512722 = require("./512722.js"),
   _ = require.n(Chunk512722),
@@ -67,24 +67,19 @@ function q(e) {
     pathPrefix: null
   }
 }
-let X = e => {
-    let t = e;
-    return (t = (t = t.replaceAll($, "")).replaceAll(ee, "")).replaceAll(J, " $2 ")
-  },
+let X = e => e.replaceAll(J, " $2 "),
   Q = null == (a = h().defaultRules.link) || null == (i = a.match) || null == (r = i.regex) ? true : r.source;
 _()(Q, "SimpleMarkdown link regex is not set."), "^" === Q[0] && (Q = Q.substring(1));
-let J = RegExp(Q, "g"),
-  $ = RegExp("(?<!\\\\)((?:\\\\\\\\)*)```(([a-z0-9_+\\-.]+?)\\n)?\\n*([^\\n].*?)\\n*```", "gs"),
-  ee = RegExp("(?<!\\\\)((?:\\\\\\\\)*)(`+)([\\s\\S]*?[^`])\\2(?!`)", "gi");
+let J = RegExp(Q, "g");
 
-function et(e, t) {
+function $(e, t) {
   var n;
   return (null == (n = t.host) ? true : n.replace(/^www[.]/i, "")) === e.host
 }
 
-function en(e, t) {
+function ee(e, t) {
   var n, r;
-  if (!et(e, t)) return null;
+  if (!$(e, t)) return null;
   let i = null != (n = t.pathname) ? n : "",
     a = null != (r = e.pathPrefix) ? r : "";
   if (!i.startsWith(a)) return null;
@@ -92,12 +87,12 @@ function en(e, t) {
   return "" === o ? null : o
 }
 
-function er(e) {
+function et(e) {
   var t, n, r, i;
-  return null != (i = null != (r = null != (n = null != (t = en(F, e)) ? t : en(V, e)) ? n : en(H, e)) ? r : en(Y, e)) ? i : en(W, e)
+  return null != (i = null != (r = null != (n = null != (t = ee(F, e)) ? t : ee(V, e)) ? n : ee(H, e)) ? r : ee(Y, e)) ? i : ee(W, e)
 }
 
-function ei(e) {
+function en(e) {
   if (null == e) return null;
   let t = e.match(P);
   return null != t && t.length >= 4 ? {
@@ -107,18 +102,18 @@ function ei(e) {
   } : null
 }
 
-function ea(e) {
+function er(e) {
   var t, n, r, i;
-  let a = ec(e);
+  let a = es(e);
   if (null == a || null == a.pathname) return {
     url: null,
     inviteHostRemainingPath: null,
     templateHostRemainingPath: null,
     primaryHostRemainingPath: null
   };
-  let o = en(B, a),
-    s = en(Z, a),
-    l = null != (i = null != (r = null != (n = null != (t = en(F, a)) ? t : en(V, a)) ? n : en(H, a)) ? r : en(Y, a)) ? i : en(W, a);
+  let o = ee(B, a),
+    s = ee(Z, a),
+    l = null != (i = null != (r = null != (n = null != (t = ee(F, a)) ? t : ee(V, a)) ? n : ee(H, a)) ? r : ee(Y, a)) ? i : ee(W, a);
   return {
     url: a,
     inviteHostRemainingPath: o,
@@ -127,12 +122,12 @@ function ea(e) {
   }
 }
 
-function eo(e) {
+function ei(e) {
   if (e.includes("\\")) {
-    let r = ec(e);
+    let r = es(e);
     if (null == r) returnfalse;
-    if (et(B, r)) returntrue;
-    if ([F, V, H, Y, W].some(e => et(e, r))) {
+    if ($(B, r)) returntrue;
+    if ([F, V, H, Y, W].some(e => $(e, r))) {
       var t, n;
       return null != (n = null == (t = r.pathname) ? true : t.toUpperCase().includes(T.g.INVITE)) && n
     }
@@ -140,7 +135,7 @@ function eo(e) {
   returnfalse
 }
 
-function es(e) {
+function ea(e) {
   if (null == e) return [];
   let t = new Set,
     n = [],
@@ -155,7 +150,7 @@ function es(e) {
       inviteHostRemainingPath: i,
       templateHostRemainingPath: l,
       primaryHostRemainingPath: c
-    } = ea(e);
+    } = er(e);
     if (null == r || null == r.pathname) continue;
     let u = (r, i) => {
       t.has(i) || (t.add(i), n.push({
@@ -178,7 +173,7 @@ function es(e) {
         u(T.g.INVITE, t)
       } else u(t, d[2])
     }(null == c ? true : c.match(N)) != null && u(T.g.CHANNEL_LINK, c.replace("/channels/", ""));
-    let f = ei(r.pathname);
+    let f = en(r.pathname);
     if (null != f && u(T.g.EVENT, "".concat(f.guildId, "-").concat(f.guildEventId) + (null != f.recurrenceId ? "-".concat(f.recurrenceId) : "")), null != (null == c ? true : c.match(k)) && null != r.query) {
       let e = (0, y.y)(r.query),
         t = e.clientId;
@@ -207,7 +202,7 @@ function es(e) {
     null != m && u(T.g.GUILD_PRODUCT, "".concat(m[1], "-").concat(m[2]));
     let v = null == c ? true : c.match(j);
     null != v && u(T.g.SERVER_SHOP, v[1]);
-    let I = el(e);
+    let I = eo(e);
     if (null != I && u(T.g.QUESTS_EMBED, I), "/shop" === c) {
       let e = null == (o = r.hash) ? true : o.match(U);
       u(T.g.COLLECTIBLES_SHOP, null != (s = null == e ? true : e[1]) ? s : "")
@@ -216,14 +211,14 @@ function es(e) {
   return n
 }
 
-function el(e) {
+function eo(e) {
   var t, n;
-  let r = ea(e),
+  let r = er(e),
     i = null == r || null == (t = r.primaryHostRemainingPath) ? true : t.match(M);
   return null != (n = null == i ? true : i[1]) ? n : null
 }
 
-function ec(e) {
+function es(e) {
   try {
     return (0, m.parse)(e)
   } catch (e) {
@@ -231,6 +226,6 @@ function ec(e) {
   }
 }
 
-function eu(e) {
-  return es(e)[0]
+function el(e) {
+  return ea(e)[0]
 }

@@ -68,6 +68,7 @@ function E(e) {
     }), v(false)
   }, [t]);
   return (0, r.jsxs)(o.zx, {
+    "data-migration-pending": true,
     tabIndex: false,
     color: o.zx.Colors.PRIMARY,
     size: o.zx.Sizes.MEDIUM,
