@@ -1,7 +1,7 @@
 /** Chunk was on 8106 **/
 /** chunk id: 660962, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => ee
+  ZP: () => et
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -46,13 +46,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk21321 = require("./21321.js"),
   Chunk179517 = require("./179517.js"),
   Chunk79829 = require("./79829.js");
-let W = (0, Chunk663993.Un)({
+let W = Chunk981631.aIL,
+  K = (0, Chunk663993.Un)({
     createPromise: () => require.e("4848").then(require.bind(require, 797967)),
     webpackId: 797967
   }),
-  K = o().debounce((e, t) => (0, S.Uv)(e, t), 200);
+  Y = o().debounce((e, t) => (0, S.Uv)(e, t), 200);
 
-function Y(e) {
+function q(e) {
   let {
     role: t,
     disabled: n
@@ -66,13 +67,13 @@ function Y(e) {
     value: l,
     maxLength: M.VKK,
     onChange: function(e) {
-      a(e), K(t.id, e)
+      a(e), Y(t.id, e)
     },
     disabled: n
   })
 }
 
-function q(e) {
+function X(e) {
   let {
     role: t,
     guildId: n,
@@ -131,7 +132,7 @@ function q(e) {
                   guildId: n,
                   authorId: o.author.id,
                   colorRoleId: t.id,
-                  colorStrings: (0, O.DX)(p),
+                  colorStrings: (0, O.DX)(p, W),
                   colorString: (0, c.Rf)(p.primary_color)
                 },
                 message: o,
@@ -156,7 +157,7 @@ function q(e) {
           variant: "text-sm/semibold",
           color: "button-outline-primary-text",
           children: U.intl.format(B.default.VpEDJS, {
-            magical: (0, r.jsx)(X, {})
+            magical: (0, r.jsx)(Q, {})
           })
         }), (0, r.jsx)(g.Text, {
           variant: "text-xs/medium",
@@ -175,13 +176,13 @@ function q(e) {
   })
 }
 
-function X() {
+function Q() {
   let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
     {
       gradientStyle: t,
       gradientClassname: n
     } = (0, Chunk481060.JUn)({
-      colorStrings: (0, Chunk606318.DX)(Chunk141006.SK),
+      colorStrings: (0, Chunk606318.DX)(Chunk141006.SK, W),
       useReducedMotion: module,
       roleStyle: "username",
       includeConvenienceGlow: true,
@@ -212,7 +213,7 @@ function X() {
   })
 }
 
-function Q(e) {
+function J(e) {
   var t, n;
   let {
     role: i,
@@ -227,7 +228,7 @@ function Q(e) {
     children: [(0, r.jsx)(g.R94, {
       className: F.colorDescription,
       children: U.intl.string(U.t["9UCxlZ"])
-    }), (0, r.jsx)(W, {
+    }), (0, r.jsx)(K, {
       defaultColor: M.p6O,
       colors: a === T.g.GRADIENT && s ? G.tl : M.pmI,
       value: i.color,
@@ -250,7 +251,7 @@ function Q(e) {
   })
 }
 
-function J(e) {
+function $(e) {
   let {
     role: t,
     guildId: n,
@@ -302,7 +303,7 @@ function J(e) {
   })
 }
 
-function $(e) {
+function ee(e) {
   let {
     role: t,
     disabled: n
@@ -327,7 +328,7 @@ function $(e) {
   })
 }
 
-function ee(e) {
+function et(e) {
   let {
     guild: t,
     role: n,
@@ -359,7 +360,7 @@ function ee(e) {
           selectedSection: L.ZI.DISPLAY,
           setSelectedSection: l
         })
-      }), (0, r.jsx)(Y, {
+      }), (0, r.jsx)(q, {
         role: n,
         disabled: p
       }), (0, r.jsx)("div", {
@@ -369,13 +370,13 @@ function ee(e) {
         })
       }), (0, r.jsx)(g.$i$, {
         className: F.divider
-      }), (s || c) && null != u && (0, r.jsx)(q, {
+      }), (s || c) && null != u && (0, r.jsx)(X, {
         role: n,
         guildId: t.id,
         selectedStyle: u,
         disabled: p,
         shouldShowUpsell: c
-      }), u !== T.g.HOLOGRAPHIC && null != u && (0, r.jsx)(Q, {
+      }), u !== T.g.HOLOGRAPHIC && null != u && (0, r.jsx)(J, {
         role: n,
         disabled: p,
         currentStyle: u,
@@ -390,14 +391,14 @@ function ee(e) {
         guild: t,
         disabled: p,
         role: n
-      }), (0, r.jsx)(J, {
+      }), (0, r.jsx)($, {
         role: n,
         guildId: t.id,
         selectedStyle: u,
         disableInteraction: !s
       }), (0, r.jsx)(g.$i$, {
         className: F.divider
-      }), (0, r.jsx)($, {
+      }), (0, r.jsx)(ee, {
         role: n,
         disabled: p
       }), f ? (0, r.jsxs)(r.Fragment, {

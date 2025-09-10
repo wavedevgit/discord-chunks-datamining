@@ -29,9 +29,9 @@ function y(e) {
         (0, p.Z)(n)
       }
     })
-  }, [n, y]), x = i.useCallback(() => {
+  }, [n, y]), P = i.useCallback(() => {
     (0, c.JG)(n.serverIP), (0, a.showToast)((0, a.createToast)(f.intl.string(f.t["+5kSoa"]), a.ToastType.SUCCESS))
-  }, [n.serverIP]), P = (0, d.Z)(t);
+  }, [n.serverIP]), x = (0, d.Z)(t);
   return (0, r.jsxs)("div", {
     className: v.card,
     children: [(0, r.jsxs)("div", {
@@ -78,7 +78,7 @@ function y(e) {
               }), (0, r.jsx)(a.P3F, {
                 className: v.copyButton,
                 "aria-label": f.intl.string(f.t.OpuAlJ),
-                onClick: x,
+                onClick: P,
                 children: (0, r.jsx)(a.TIy, {
                   size: "sm"
                 })
@@ -122,7 +122,7 @@ function y(e) {
         text: f.intl.string(g.default["0TMXHh"]),
         onClick: j,
         variant: "primary"
-      }), P && (0, r.jsx)(a.zxk, {
+      }), x && (0, r.jsx)(a.zxk, {
         fullWidth: true,
         text: f.intl.string(g.default["jO3u+/"]),
         onClick: () => {

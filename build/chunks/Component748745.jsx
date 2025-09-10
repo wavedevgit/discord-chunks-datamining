@@ -21,31 +21,31 @@ function f(e) {
   let {
     gameInstance: n
   } = e;
-  return (0, r.jsx)(o.ua7, {
+  return (0, i.jsx)(o.ua7, {
     "aria-label": m.intl.string(u.default.TZsu1d),
-    text: (0, r.jsx)(c.Po, {
+    text: (0, i.jsx)(c.Po, {
       cost: n.plan.cost
     }),
     children: e => {
-      var t, i;
-      return (0, r.jsx)(l.zx, (t = function(e) {
+      var t, r;
+      return (0, i.jsx)(l.zx, (t = function(e) {
         for (var n = 1; n < arguments.length; n++) {
           var t = null != arguments[n] ? arguments[n] : {},
-            r = Object.keys(t);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+            i = Object.keys(t);
+          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
             return Object.getOwnPropertyDescriptor(t, e).enumerable
-          }))), r.forEach(function(n) {
-            var r;
-            r = t[n], n in e ? Object.defineProperty(e, n, {
-              value: r,
+          }))), i.forEach(function(n) {
+            var i;
+            i = t[n], n in e ? Object.defineProperty(e, n, {
+              value: i,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[n] = r
+            }) : e[n] = i
           })
         }
         return e
-      }({}, e), i = i = {
+      }({}, e), r = r = {
         className: a()(g.secondaryButton, p.disableButton),
         innerClassName: g.buttonInner,
         wrapperClassName: g.secondaryButton,
@@ -54,20 +54,20 @@ function f(e) {
         onClick: e => {
           e.stopPropagation(), (0, d.Q)(n)
         },
-        children: (0, r.jsx)(c.RD, {
+        children: (0, i.jsx)(c.RD, {
           cost: n.plan.cost,
           isActive: true,
           compact: true
         })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, n) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, n) {
         var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          t.push.apply(t, r)
+          var i = Object.getOwnPropertySymbols(e);
+          t.push.apply(t, i)
         }
         return t
-      })(Object(i)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
+      })(Object(r)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
       }), t))
     }
   })
@@ -78,21 +78,21 @@ function v(e) {
     gameInstance: n,
     onClick: t
   } = e;
-  return (0, r.jsxs)(o.P3F, {
+  return (0, i.jsxs)(o.P3F, {
     className: p.game,
     onClick: () => t(n),
-    children: [(0, r.jsx)("img", {
+    children: [(0, i.jsx)("img", {
       className: p.image,
       alt: ""
-    }), (0, r.jsxs)("div", {
+    }), (0, i.jsxs)("div", {
       className: p.textContainer,
-      children: [(0, r.jsx)(o.X6q, {
+      children: [(0, i.jsx)(o.X6q, {
         variant: "heading-sm/semibold",
         children: n.name
-      }), (0, r.jsx)(s.P2, {
+      }), (0, i.jsx)(s.P2, {
         text: m.intl.string(u.default.FFLkm5)
       })]
-    }), (0, r.jsx)(f, {
+    }), (0, i.jsx)(f, {
       gameInstance: n
     })]
   })

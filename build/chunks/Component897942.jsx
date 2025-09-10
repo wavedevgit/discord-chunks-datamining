@@ -26,7 +26,7 @@ function p(e) {
   } = e, m = (0, i.e7)([l.default], () => l.default.getCurrentUser()), g = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), E = (0, a.pxk)(p), b = {
     height: E * h
   };
-  return n.length > 2 ? (0, r.jsx)("img", {
+  return n.length > 0 ? (0, r.jsx)("img", {
     alt: "",
     src: t,
     style: b

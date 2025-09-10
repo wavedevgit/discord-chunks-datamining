@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => c
 });
-var r, Chunk442837 = require("./442837.js"),
+var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
 function l(e, n, t) {
@@ -15,7 +15,7 @@ function l(e, n, t) {
   }) : e[n] = t, e
 }
 let o = {};
-class s extends(r = Chunk442837.ZP.Store) {
+class s extends(i = Chunk442837.ZP.Store) {
   getLocationStateForPingUrl(e) {
     if (null != e) return o[e]
   }
@@ -28,27 +28,27 @@ let c = new s(Chunk570140.Z, {
   PORTKEY_LOCATION_PING_STATE_UPDATE: function(e) {
     var n, t;
     let {
-      pingUrl: r,
-      state: i
+      pingUrl: i,
+      state: r
     } = e;
     n = function(e) {
       for (var n = 1; n < arguments.length; n++) {
         var t = null != arguments[n] ? arguments[n] : {},
-          r = Object.keys(t);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+          i = Object.keys(t);
+        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
           return Object.getOwnPropertyDescriptor(t, e).enumerable
-        }))), r.forEach(function(n) {
+        }))), i.forEach(function(n) {
           l(e, n, t[n])
         })
       }
       return e
     }({}, o), t = t = {
-      [r]: i
+      [i]: r
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(t)) : (function(e, n) {
       var t = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t.push.apply(t, r)
+        var i = Object.getOwnPropertySymbols(e);
+        t.push.apply(t, i)
       }
       return t
     })(Object(t)).forEach(function(e) {

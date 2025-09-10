@@ -37,7 +37,7 @@ function x() {
     gradientStyle: a,
     gradientClassname: c
   } = (0, Chunk481060.Icv)({
-    colorStrings: (0, Chunk606318.DX)(exports),
+    colorStrings: (0, Chunk606318.DX)(exports, Chunk981631.aIL),
     roleStyle: "username",
     includeConvenienceGlow: true,
     animateGradient: true

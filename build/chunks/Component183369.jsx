@@ -31,7 +31,7 @@ function b(e) {
     onClose: k,
     analyticsLocation: T
   } = e;
-  i.useEffect(() => {
+  r.useEffect(() => {
     (0, m.po)(O), (0, m.EC)(O)
   }, [O]);
   let E = (0, a.e7)([g.Z], () => g.Z.getStateForGuild(O)),
@@ -39,30 +39,30 @@ function b(e) {
     {
       analyticsLocations: Z
     } = (0, l.ZP)(T),
-    [G, D] = i.useState(null != (d = P.initialStep) ? d : Object.keys(P.steps)[0]),
+    [G, D] = r.useState(null != (d = P.initialStep) ? d : Object.keys(P.steps)[0]),
     B = (0, u.Td)(O, true),
     M = P.steps[G],
-    [L, R] = i.useState(null != (j = null == S ? true : S.id) ? j : null == N ? true : N.gameId),
-    [V, z] = i.useState(N),
-    [A, F] = i.useState(null != (b = null == S || null == (n = S.plans[0]) ? true : n.id) ? b : null == N || null == (t = N.plan) ? true : t.id),
-    W = i.useCallback((e, n) => {
+    [L, R] = r.useState(null != (j = null == S ? true : S.id) ? j : null == N ? true : N.gameId),
+    [V, z] = r.useState(N),
+    [A, F] = r.useState(null != (b = null == S || null == (n = S.plans[0]) ? true : n.id) ? b : null == N || null == (t = N.plan) ? true : t.id),
+    W = r.useCallback((e, n) => {
       var t;
       R(null == e ? true : e.id), F(null != n ? n : null == e || null == (t = e.plans[0]) ? true : t.id)
     }, []),
-    K = i.useCallback(e => {
+    K = r.useCallback(e => {
       z(e), R(e.gameId), F(e.plan.id), Q(e.name), $(e.location)
     }, []),
-    U = i.useMemo(() => {
+    U = r.useMemo(() => {
       var e;
       if (null != L) return Object.values(null != (e = null == E ? true : E.catalog) ? e : {}).find(e => e.id === L)
     }, [null == E ? true : E.catalog, L]),
-    [H, X] = i.useState(),
-    [q, Q] = i.useState(null != (h = null == N ? true : N.name) ? h : ""),
-    [Y, $] = i.useState(null != (_ = null == N ? true : N.location) ? _ : ""),
-    [J, ee] = i.useState(false),
-    en = i.useCallback(() => {
+    [H, X] = r.useState(),
+    [q, Q] = r.useState(null != (h = null == N ? true : N.name) ? h : ""),
+    [Y, $] = r.useState(null != (_ = null == N ? true : N.location) ? _ : ""),
+    [J, ee] = r.useState(false),
+    en = r.useCallback(() => {
       let e = (0, p.K)(A, V, U);
-      0 !== e && null != I && null != U && (B < e ? (0, o.u)({
+      0 !== e && null != I && null != U && null != A && (B < e ? (0, o.u)({
         analyticsLocation: T,
         numberOfBoostsToAdd: e - B,
         analyticsLocations: Z,
@@ -72,11 +72,15 @@ function b(e) {
           ee(e)
         },
         onSubscribeComplete: () => {
-          (0, f.Z)(I.id, U)
+          (0, m.NE)(I.id, A, q, Y).then(() => {
+            k(), (0, f.Z)(I.id, U)
+          })
         }
-      }) : (0, f.Z)(I.id, U))
-    }, [Z, I, B, A, T, U, V]),
-    et = i.useCallback(e => {
+      }) : (0, m.NE)(I.id, A, q, Y).then(() => {
+        k(), (0, f.Z)(I.id, U)
+      }))
+    }, [Z, I, B, A, T, U, V, q, Y, k]),
+    et = r.useCallback(e => {
       switch (e.type) {
         case "close":
           k();
@@ -88,20 +92,20 @@ function b(e) {
           en()
       }
     }, [k, en]),
-    er = i.useCallback(() => {
+    ei = r.useCallback(() => {
       null != M && et(M.onBack)
     }, [M, et]),
-    ei = i.useCallback(() => {
+    er = r.useCallback(() => {
       null != M && et(M.onNext)
     }, [M, et]);
-  return (0, r.jsx)(x.Provider, {
+  return (0, i.jsx)(x.Provider, {
     value: {
       guildId: O,
       step: G,
       stepAction: M,
       stepLoading: J,
-      onBack: er,
-      onNext: ei,
+      onBack: ei,
+      onNext: er,
       portkeyGames: null != (C = null == E ? true : E.catalog) ? C : {},
       instances: Object.values(null != (y = null == E ? true : E.instances) ? y : {}),
       currentGame: U,

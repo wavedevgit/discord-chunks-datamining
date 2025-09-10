@@ -52,7 +52,7 @@ function x() {
         children: Chunk388032.intl.string(Chunk401561.default.wzC4ws)
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk782991.gameInstanceContainer,
-        children: exports.map((e, n) => (0, r.jsx)(c.Z, {
+        children: exports.map((e, n) => (0, i.jsx)(c.Z, {
           gameInstance: e,
           onClick: b
         }, "instance-".concat(e.id, "-").concat(n)))
@@ -74,7 +74,7 @@ function x() {
         children: Chunk388032.intl.string(Chunk401561.default.l4UdiY)
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk782991.gameContainer,
-        children: Object.values(module).map((e, n) => (0, r.jsx)(d.Z, {
+        children: Object.values(module).map((e, n) => (0, i.jsx)(d.Z, {
           game: e,
           disabled: h,
           onClick: j

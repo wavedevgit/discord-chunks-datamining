@@ -1,7 +1,7 @@
 /** Chunk was on 85683 **/
 /** chunk id: 331500, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => P
 });
 var r, i, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -47,7 +47,7 @@ let j = (r = function(e) {
   Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
 }), r);
 
-function x(e) {
+function P(e) {
   let {
     guildId: t
   } = e;

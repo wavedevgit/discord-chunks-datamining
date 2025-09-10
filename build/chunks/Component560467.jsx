@@ -27,25 +27,25 @@ function h(e) {
     planId: t,
     selected: a,
     className: o
-  } = e, c = i.useMemo(() => null == n ? true : n.plans.find(e => e.id === t), [null == n ? true : n.plans, t]);
-  return null == c ? null : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)("div", {
+  } = e, c = r.useMemo(() => null == n ? true : n.plans.find(e => e.id === t), [null == n ? true : n.plans, t]);
+  return null == c ? null : (0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsxs)("div", {
       className: l()(b.optionContainer, o),
-      children: [(0, r.jsx)("span", {
+      children: [(0, i.jsx)("span", {
         children: c.name
-      }), (0, r.jsxs)("div", {
+      }), (0, i.jsxs)("div", {
         className: b.labelContainer,
-        children: [(0, r.jsx)(s.$Eu, {
+        children: [(0, i.jsx)(s.$Eu, {
           size: "xs",
           color: s.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
-        }), (0, r.jsx)(s.Text, {
+        }), (0, i.jsx)(s.Text, {
           variant: "text-xs/medium",
           children: j.intl.format(x.default.FrRqub, {
             boostCount: c.cost
           })
         })]
       })]
-    }), !a && (0, r.jsx)("div", {
+    }), !a && (0, i.jsx)("div", {
       className: b.optionSpacer
     })]
   })
@@ -57,25 +57,25 @@ function _(e) {
     locationString: t,
     selected: a,
     className: o
-  } = e, c = i.useMemo(() => null == n ? true : n.locations.find(e => e.region === t), [null == n ? true : n.locations, t]), {
+  } = e, c = r.useMemo(() => null == n ? true : n.locations.find(e => e.region === t), [null == n ? true : n.locations, t]), {
     pingText: d,
     pingCircleStyle: u
   } = (0, f.i)(null == c ? true : c.pingUrl);
-  return null == c ? null : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)("div", {
+  return null == c ? null : (0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsxs)("div", {
       className: l()(b.optionContainer, o),
-      children: [(0, r.jsx)("span", {
+      children: [(0, i.jsx)("span", {
         children: c.region
-      }), (0, r.jsxs)("div", {
+      }), (0, i.jsxs)("div", {
         className: b.labelContainer,
-        children: [(0, r.jsx)("div", {
+        children: [(0, i.jsx)("div", {
           className: l()(b.pingCircle, u)
-        }), (0, r.jsx)(s.Text, {
+        }), (0, i.jsx)(s.Text, {
           variant: "text-xs/medium",
           children: d
         })]
       })]
-    }), !a && (0, r.jsx)("div", {
+    }), !a && (0, i.jsx)("div", {
       className: b.optionSpacer
     })]
   })
@@ -155,16 +155,16 @@ function C() {
             optionClassName: Chunk149671.option,
             select: e => a(e),
             placeholder: Chunk388032.intl.string(Chunk401561.default["op6/kZ"]),
-            renderOptionLabel: t => (0, r.jsx)(_, {
+            renderOptionLabel: t => (0, i.jsx)(_, {
               currentGame: e,
               locationString: t.value,
               selected: (null == t ? true : t.value) === n
             }),
             renderOptionValue: t => {
-              var i, a;
-              return (0, r.jsx)(_, {
+              var r, a;
+              return (0, i.jsx)(_, {
                 currentGame: e,
-                locationString: null == (i = t[0]) ? true : i.value,
+                locationString: null == (r = t[0]) ? true : r.value,
                 selected: (null == (a = t[0]) ? true : a.value) === n,
                 className: b.value
               })
@@ -186,15 +186,15 @@ function C() {
             select: e => y(e),
             placeholder: Chunk388032.intl.string(Chunk401561.default["4QOSPj"]),
             renderOptionValue: n => {
-              var t, i;
-              return (0, r.jsx)(h, {
+              var t, r;
+              return (0, i.jsx)(h, {
                 currentGame: e,
                 planId: null == (t = n[0]) ? true : t.value,
-                selected: (null == (i = n[0]) ? true : i.value) === C,
+                selected: (null == (r = n[0]) ? true : r.value) === C,
                 className: b.value
               })
             },
-            renderOptionLabel: n => (0, r.jsx)(h, {
+            renderOptionLabel: n => (0, i.jsx)(h, {
               currentGame: e,
               planId: null == n ? true : n.value,
               selected: (null == n ? true : n.value) === C
