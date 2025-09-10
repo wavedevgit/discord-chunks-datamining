@@ -45,7 +45,7 @@ function P(e) {
         return "Linux"
     }
     return ""
-  }((0, j.getOS)())), [$, ee] = i.useState(""), [et, en] = i.useState(""), [er, ei] = i.useState(""), [el, ea] = i.useState(""), [eo, es] = i.useState(false), [eu, ec] = i.useState(false), [ed, em] = i.useState(false), [eh, ep] = i.useState(null);
+  }((0, j.getOS)())), [$, ee] = i.useState(""), [et, en] = i.useState(""), [er, ei] = i.useState(""), [el, ea] = i.useState(""), [eo, es] = i.useState(false), [eu, ec] = i.useState(false), [ed, em] = i.useState(false), [eh, ef] = i.useState(null);
   i.useEffect(() => {
     let e = Math.random().toString(16).slice(2);
     o.tn.get({
@@ -55,15 +55,15 @@ function P(e) {
       },
       rejectWithError: true
     }).then(e => {
-      if (null != e.body && "6c2e415cd3e670957b9067a58e0052b62aa625c1" !== e.body.hash) {
-        let e = new Date("1757469864696"),
+      if (null != e.body && "701a4ceb5323f1f9412934e24b47482af878d500" !== e.body.hash) {
+        let e = new Date("1757475470596"),
           t = new Date,
           n = (0, y.TD)(t, e);
-        n.hours > 6 && ep(n.hours)
+        n.hours > 6 && ef(n.hours)
       }
     })
   }, []);
-  let ef = (0, a.e7)([x.default], () => {
+  let ep = (0, a.e7)([x.default], () => {
       let e = x.default.getCurrentUser();
       return (null == e ? true : e.isStaff()) || (null == e ? true : e.isStaffPersonal())
     }),
@@ -103,7 +103,7 @@ function P(e) {
       } : {
         overridePlatformInformation: X
       }, l).catch(() => em(true));
-    ec(false), null != a && a.ok ? (ef && window.open(a.body.permalink_url, "_blank"), ex(), (0, u.ZDy)(async () => {
+    ec(false), null != a && a.ok ? (ep && window.open(a.body.permalink_url, "_blank"), ex(), (0, u.ZDy)(async () => {
       let {
         default: e
       } = await n.e("64648").then(n.bind(n, 81155));
@@ -145,8 +145,8 @@ function P(e) {
     async function e() {
       G(await (0, b.WG)())
     }
-    ef && e()
-  }, [ef]), i.useEffect(() => {
+    ep && e()
+  }, [ep]), i.useEffect(() => {
     if (M.length > 0) {
       var e;
       null == (e = N.current) || e.scrollIntoView({
@@ -218,7 +218,7 @@ function P(e) {
               placeholder: "What did you expect to see?",
               value: L,
               onChange: I
-            }), ef && (0, r.jsx)(u.R94, {
+            }), ep && (0, r.jsx)(u.R94, {
               type: u.geA.DESCRIPTION,
               children: "You can add additional information/media on the ticket after submitting"
             })]
@@ -264,7 +264,7 @@ function P(e) {
               maxVisibleItems: 3,
               closeOnSelect: true
             })
-          }), ef && (0, r.jsx)(u.xJW, {
+          }), ep && (0, r.jsx)(u.xJW, {
             title: S.intl.string(S.t["77VVd3"]),
             children: (0, r.jsx)(u.VcW, {
               value: H,
@@ -349,8 +349,8 @@ function P(e) {
               children: M.length > 0 && M.map(e => (0, r.jsxs)("div", {
                 className: _.attachment,
                 children: [(0, r.jsxs)("div", {
-                  children: [(0, r.jsx)(f.r, {
-                    size: p.q.SMALL,
+                  children: [(0, r.jsx)(p.r, {
+                    size: f.q.SMALL,
                     upload: e
                   }), (0, r.jsx)("div", {
                     className: _.removeAttachment,
@@ -390,7 +390,7 @@ function P(e) {
         justify: "end",
         children: [(0, r.jsx)(u.zxk, {
           variant: "primary",
-          text: ef ? "Submit and Open Report" : "Submit Report",
+          text: ep ? "Submit and Open Report" : "Submit Report",
           loading: eu,
           onClick: eg
         }), (0, r.jsx)(u.zxk, {
