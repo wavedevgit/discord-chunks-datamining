@@ -227,7 +227,7 @@ function A(e) {
       } = await Promise.all([n.e("7654"), n.e("62292")]).then(n.bind(n, 560114));
       return t => (0, r.jsx)(e, E(C({}, t), {
         guild: o,
-        source: _.t4x.GUILD_HEADER
+        source: _.t4x.GUILD_HEADER_INVITE_BUTTON
       }))
     }) : (0, u.ZDy)(async () => {
       let {
