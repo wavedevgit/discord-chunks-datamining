@@ -150,7 +150,8 @@ let w = {
           backup: o,
           user_id: s,
           required_actions: c,
-          totp: d
+          totp: d,
+          login_instance_id: f
         }
       } = e;
       l.Z.dispatch({
@@ -163,7 +164,8 @@ let w = {
         sms: n,
         webauthn: r,
         totp: d,
-        backup: o
+        backup: o,
+        loginInstanceId: f
       }) : u ? this.switchAccountToken(a) : l.Z.dispatch({
         type: "LOGIN_SUCCESS",
         token: a
@@ -207,7 +209,8 @@ let w = {
       source: r,
       giftCodeSKUId: a,
       isMultiAccount: o,
-      mfaType: s
+      mfaType: s,
+      loginInstanceId: c
     } = e;
     return g.Z.post({
       url: b.ANM.LOGIN_MFA(s),
@@ -215,7 +218,8 @@ let w = {
         code: t,
         ticket: n,
         login_source: r,
-        gift_code_sku_id: a
+        gift_code_sku_id: a,
+        login_instance_id: null != c ? c : h.default.getLoginInstanceId()
       },
       retries: 2,
       oldFormErrors: true,
