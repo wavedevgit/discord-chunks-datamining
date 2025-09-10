@@ -9,9 +9,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk493683 = require("./493683.js"),
-  Chunk37234 = require("./37234.js"),
   Chunk511010 = require("./511010.jsx"),
   Chunk981312 = require("./981312.js"),
+  Chunk342386 = require("./342386.js"),
   Chunk260722 = require("./260722.js"),
   Chunk277537 = require("./277537.js"),
   Chunk841409 = require("./841409.js"),
@@ -75,7 +75,7 @@ let y = e => {
       t = (0, Chunk631885.mq)(Chunk292352.ne.ACTIVE);
     if (!(0, Chunk277537.PO)("settings-controls") || 0 === exports.length) return null;
     let n = () => {
-      (0, Chunk37234.xf)(), Chunk493683.Z.openPrivateChannel({
+      (0, Chunk342386.Z)(), Chunk493683.Z.openPrivateChannel({
         recipientIds: exports.map(e => e.id)
       })
     };

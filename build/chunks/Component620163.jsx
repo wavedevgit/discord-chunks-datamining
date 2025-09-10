@@ -16,7 +16,6 @@ var Chunk990547 = require("./990547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
   Chunk893776 = require("./893776.js"),
-  Chunk37234 = require("./37234.js"),
   Chunk809206 = require("./809206.js"),
   Chunk230711 = require("./230711.js"),
   Chunk493544 = require("./493544.jsx"),
@@ -94,6 +93,7 @@ var Chunk990547 = require("./990547.js"),
   Chunk554042 = require("./554042.jsx"),
   Chunk936982 = require("./936982.jsx"),
   Chunk200645 = require("./200645.jsx"),
+  Chunk342386 = require("./342386.js"),
   Chunk287490 = require("./287490.jsx"),
   Chunk706060 = require("./706060.jsx"),
   Chunk168308 = require("./168308.js"),
@@ -183,10 +183,10 @@ let e2 = () => {
   e5 = e => {
     let {
       unseenGiftCount: t,
-      showPrepaidPaymentPastDueWarning: b,
-      searchParams: A,
-      numOfPendingFamilyRequests: C,
-      isOverlaySupported: Z,
+      showPrepaidPaymentPastDueWarning: E,
+      searchParams: S,
+      numOfPendingFamilyRequests: A,
+      isOverlaySupported: B,
       isClipsBetaTagShowing: eJ = false,
       shouldMergeGameSettings: e0,
       isKeywordFilteringEnabled: e5,
@@ -212,8 +212,8 @@ let e2 = () => {
     } = e;
     return Object.freeze({
       [eV.s6.SEARCH_NO_RESULTS]: {
-        section: _.ID.CUSTOM,
-        element: eC.Z
+        section: f.ID.CUSTOM,
+        element: eA.Z
       },
       [eV.s6.ACCOUNT_SECURITY_TAB]: {
         section: eY.oAB.ACCOUNT,
@@ -225,7 +225,7 @@ let e2 = () => {
         searchableTitles: [ez.intl.string(ez.t["JAIM/v"])],
         label: ez.intl.string(ez.t["JAIM/v"]),
         ariaLabel: ez.intl.string(ez.t["JAIM/v"]),
-        element: es.Z,
+        element: eo.Z,
         url: eY.Z5c.SETTINGS("account")
       },
       [eV.s6.ACCOUNT_PROFILE]: {
@@ -351,20 +351,20 @@ let e2 = () => {
       },
       [eV.s6.PROFILE_CUSTOMIZATION]: {
         section: eY.oAB.PROFILE_CUSTOMIZATION,
-        type: _.bT.WIDE,
+        type: f.bT.WIDE,
         searchableTitles: [ez.intl.string(ez.t["vi7f+v"])],
         label: ez.intl.string(ez.t["vi7f+v"]),
         ariaLabel: ez.intl.string(ez.t["vi7f+v"]),
-        element: j.Z,
+        element: L.Z,
         newIndicator: (0, r.jsx)(e8, {}),
         newIndicatorDismissibleContentTypes: [...e4()],
         notice: {
-          stores: [W.Z, R.Z],
-          element: L.Z
+          stores: [Y.Z, N.Z],
+          element: x.Z
         },
         onSettingsClose: () => {
           l.Z.wait(() => {
-            (0, N.It)(), (0, d.P6)(), f.Z.clearSubsection(eY.oAB.PROFILE_CUSTOMIZATION)
+            (0, C.It)(), (0, u.P6)(), d.Z.clearSubsection(eY.oAB.PROFILE_CUSTOMIZATION)
           })
         },
         url: eY.Z5c.SETTINGS("profile-customization")
@@ -389,7 +389,7 @@ let e2 = () => {
         label: ez.intl.string(ez.t["+o1pDQ"]),
         searchableTitles: [ez.intl.string(ez.t["+o1pDQ"])],
         ariaLabel: ez.intl.string(ez.t["+o1pDQ"]),
-        element: ep.Z,
+        element: e_.Z,
         url: eY.Z5c.SETTINGS("content-and-social")
       },
       [eV.s6.CONTENT_SOCIAL_DISCORD_TAB]: {
@@ -420,7 +420,7 @@ let e2 = () => {
         label: ez.intl.string(ez.t.OAuOHB),
         searchableTitles: [ez.intl.string(ez.t.OAuOHB)],
         ariaLabel: ez.intl.string(ez.t.OAuOHB),
-        element: eh.Z,
+        element: ep.Z,
         url: eY.Z5c.SETTINGS("data-and-privacy")
       },
       [eV.s6.PRIVACY_AND_SAFETY_STANDING]: {
@@ -432,7 +432,7 @@ let e2 = () => {
         section: eY.oAB.DATA_AND_PRIVACY,
         searchableTitles: [ez.intl.string(ez.t.WWaFn5)],
         parent: eV.s6.DATA_PRIVACY,
-        predicate: () => (0, X.isDesktop)()
+        predicate: () => (0, q.isDesktop)()
       },
       [eV.s6.PRIVACY_AND_SAFETY_PERSISTENT_VERIFICATION_CODES]: {
         section: eY.oAB.DATA_AND_PRIVACY,
@@ -588,11 +588,11 @@ let e2 = () => {
         searchableTitles: [ez.intl.string(eX.default.gntCQU)],
         label: ez.intl.string(eX.default.gntCQU),
         ariaLabel: ez.intl.string(eX.default.gntCQU),
-        element: eE.Z,
-        badgeCount: C,
+        element: eg.Z,
+        badgeCount: A,
         newIndicator: (0, r.jsx)(s.IGR, {
           text: ez.intl.string(ez.t.y2b7CA),
-          color: T.Z.BG_BRAND
+          color: I.Z.BG_BRAND
         }),
         newIndicatorDismissibleContentTypes: [a.z.FAMILY_CENTER_NEW_BADGE],
         url: eY.Z5c.SETTINGS("family-center")
@@ -606,7 +606,7 @@ let e2 = () => {
         section: eY.oAB.AUTHORIZED_APPS,
         searchableTitles: [ez.intl.string(ez.t["f6kk+v"])],
         label: ez.intl.string(ez.t["f6kk+v"]),
-        element: ed.Z,
+        element: eu.Z,
         url: eY.Z5c.SETTINGS("authorized-apps")
       },
       [eV.s6.SESSIONS]: {
@@ -614,11 +614,11 @@ let e2 = () => {
         searchableTitles: [ez.intl.string(ez.t["+1h0k5"])],
         label: ez.intl.string(ez.t["+1h0k5"]),
         ariaLabel: ez.intl.string(ez.t["+1h0k5"]),
-        element: eN.Z,
+        element: eC.Z,
         newIndicatorDismissibleContentTypes: [a.z.AUTH_SESSIONS_NEW],
         impressionName: i.ImpressionNames.USER_SETTINGS_SESSIONS,
         impressionProperties: {
-          source: null == A ? true : A.source
+          source: null == S ? true : S.source
         }
       },
       [eV.s6.CONNECTIONS]: {
@@ -626,10 +626,10 @@ let e2 = () => {
         searchableTitles: [ez.intl.string(ez.t["3fe7U1"])],
         label: ez.intl.string(ez.t["3fe7U1"]),
         ariaLabel: ez.intl.string(ez.t["3fe7U1"]),
-        element: e_.Z,
+        element: ef.Z,
         impressionName: i.ImpressionNames.USER_SETTINGS_CONNECTIONS,
         impressionProperties: {
-          source: null == A ? true : A.source
+          source: null == S ? true : S.source
         },
         newIndicatorDismissibleContentTypes: [a.z.NEW_CRUNCHYROLL_CONNECTION],
         url: eY.Z5c.SETTINGS("connections")
@@ -639,21 +639,21 @@ let e2 = () => {
         searchableTitles: [ez.intl.string(ez.t["Ig/XFR"]), ez.intl.string(ez.t["3fe7U1"]), ez.intl.string(ez.t["f6kk+v"])],
         label: ez.intl.string(ez.t["Ig/XFR"]),
         parent: eV.s6.CONNECTIONS,
-        element: eD.Z
+        element: ew.Z
       },
       [eV.s6.CONNECTIONS_CONNECTED_ACCOUNTS]: {
         section: eY.oAB.CONNECTIONS,
         searchableTitles: [ez.intl.string(ez.t["+/hZMz"])],
         parent: eV.s6.CONNECTIONS,
-        element: e_.Z
+        element: ef.Z
       },
       [eV.s6.CLIPS]: {
         section: eY.oAB.CLIPS,
         searchableTitles: [ez.intl.string(ez.t.z2jK6e)],
         label: ez.intl.string(ez.t.z2jK6e),
         ariaLabel: ez.intl.string(ez.t.z2jK6e),
-        icon: eJ ? (0, r.jsx)(y.Z, {}) : true,
-        element: O.Z,
+        icon: eJ ? (0, r.jsx)(b.Z, {}) : true,
+        element: y.Z,
         predicate: () => !e0,
         url: eY.Z5c.SETTINGS("clips")
       },
@@ -685,22 +685,22 @@ let e2 = () => {
         ariaLabel: ez.intl.string(ez.t.Ipxkoq),
         searchableTitles: [ez.intl.string(ez.t.Ipxkoq)],
         label: ez.intl.string(ez.t.Ipxkoq),
-        element: er.Z,
+        element: en.Z,
         className: eQ.premiumTab
       },
       [eV.s6.GUILD_BOOSTING]: {
         section: eY.oAB.GUILD_BOOSTING,
         searchableTitles: [ez.intl.string(ez.t["+CbP2t"])],
         label: ez.intl.string(ez.t["+CbP2t"]),
-        element: eA.Z
+        element: eS.Z
       },
       [eV.s6.SUBSCRIPTIONS]: {
         section: eY.oAB.SUBSCRIPTIONS,
         ariaLabel: ez.intl.string(ez.t.trSpHR),
         searchableTitles: [ez.intl.string(ez.t.trSpHR)],
         label: ez.intl.string(ez.t.trSpHR),
-        element: x.Z,
-        icon: b ? (0, r.jsx)(s.Mgn, {
+        element: D.Z,
+        icon: E ? (0, r.jsx)(s.Mgn, {
           size: "xs",
           color: o.Z.unsafe_rawColors.YELLOW_300.css
         }) : null
@@ -714,7 +714,7 @@ let e2 = () => {
         section: eY.oAB.INVENTORY,
         searchableTitles: [ez.intl.string(ez.t["jcSP+v"])],
         label: ez.intl.string(ez.t["jcSP+v"]),
-        element: eO.Z,
+        element: ey.Z,
         ariaLabel: ez.intl.string(ez.t["jcSP+v"]),
         badgeCount: t
       },
@@ -747,7 +747,7 @@ let e2 = () => {
         searchableTitles: [ez.intl.string(ez.t.oeUm2t)],
         label: ez.intl.string(ez.t.oeUm2t),
         ariaLabel: ez.intl.string(ez.t.oeUm2t),
-        element: ef.Z
+        element: ed.Z
       },
       [eV.s6.BILLING_PAYMENT_METHODS]: {
         section: eY.oAB.BILLING,
@@ -764,7 +764,7 @@ let e2 = () => {
         searchableTitles: [ez.intl.string(ez.t["iHH+k5"])],
         label: ez.intl.string(ez.t["iHH+k5"]),
         ariaLabel: ez.intl.string(ez.t["iHH+k5"]),
-        element: eu.Z,
+        element: ec.Z,
         newIndicator: (0, r.jsx)(e3, {}),
         newIndicatorDismissibleContentTypes: e2(),
         url: eY.Z5c.SETTINGS("appearance")
@@ -795,7 +795,7 @@ let e2 = () => {
         parent: eV.s6.APPEARANCE,
         newIndicator: (0, r.jsx)(s.IGR, {
           text: ez.intl.string(ez.t.y2b7CA),
-          color: T.Z.BG_BRAND
+          color: I.Z.BG_BRAND
         })
       },
       [eV.s6.APPEARANCE_SCALING_SPACING]: {
@@ -807,7 +807,7 @@ let e2 = () => {
         section: eY.oAB.APPEARANCE,
         searchableTitles: [ez.intl.string(ez.t.dyamEB), ez.intl.string(ez.t.p8NOws), ez.intl.string(ez.t["+o/sOj"])],
         parent: eV.s6.APPEARANCE,
-        predicate: () => B.Z.getCurrentConfig({
+        predicate: () => G.Z.getCurrentConfig({
           location: "SettingsRendererConfig"
         }, {
           autoTrackExposure: false
@@ -818,7 +818,7 @@ let e2 = () => {
         searchableTitles: [ez.intl.string(ez.t.G0neg4)],
         label: ez.intl.string(ez.t.G0neg4),
         ariaLabel: ez.intl.string(ez.t.G0neg4),
-        element: eo.Z,
+        element: ea.Z,
         url: eY.Z5c.SETTINGS("accessibility")
       },
       [eV.s6.ACCESSIBILITY_HIGH_CONTRAST]: {
@@ -845,7 +845,7 @@ let e2 = () => {
         section: eY.oAB.ACCESSIBILITY,
         searchableTitles: [ez.intl.string(ez.t["+IsihY"])],
         parent: eV.s6.ACCESSIBILITY,
-        predicate: () => (0, v.l)("SettingsRendererConfig")
+        predicate: () => (0, O.l)("SettingsRendererConfig")
       },
       [eV.s6.ACCESSIBILITY_ROLE_STYLE]: {
         section: eY.oAB.ACCESSIBILITY,
@@ -943,7 +943,7 @@ let e2 = () => {
         label: ez.intl.string(ez.t.B1fFpa),
         ariaLabel: ez.intl.string(ez.t.B1fFpa),
         element: eG.Z,
-        predicate: () => Y.Z.isSupported(),
+        predicate: () => H.Z.isSupported(),
         url: eY.Z5c.SETTINGS("voice")
       },
       [eV.s6.VOICE_AND_VIDEO_VOICE_TAB]: {
@@ -998,7 +998,7 @@ let e2 = () => {
         predicate: () => {
           let {
             enabledInputProfiles: e
-          } = (0, et.R)({
+          } = (0, ee.R)({
             location: "SettingsRendererConfig",
             autoTrackExposure: false
           });
@@ -1046,7 +1046,7 @@ let e2 = () => {
         section: eY.oAB.VOICE,
         searchableTitles: [ez.intl.string(ez.t.F122Gx)],
         parent: eV.s6.VOICE_AND_VIDEO_VIDEO,
-        predicate: () => Y.Z.supports(eK.AN.VIDEO)
+        predicate: () => H.Z.supports(eK.AN.VIDEO)
       },
       [eV.s6.VOICE_AND_VIDEO_VIDEO_CAMERA_PREVIEW]: {
         section: eY.oAB.VOICE,
@@ -1057,7 +1057,7 @@ let e2 = () => {
         section: eY.oAB.VOICE,
         searchableTitles: [ez.intl.string(ez.t.lZTUPj)],
         parent: eV.s6.VOICE_AND_VIDEO_VIDEO,
-        predicate: () => Y.Z.supports(eK.AN.VIDEO)
+        predicate: () => H.Z.supports(eK.AN.VIDEO)
       },
       [eV.s6.VOICE_AND_VIDEO_ADVANCED]: {
         section: eY.oAB.VOICE,
@@ -1068,7 +1068,7 @@ let e2 = () => {
         section: eY.oAB.VOICE,
         searchableTitles: [ez.intl.string(ez.t["8/udY2"])],
         parent: eV.s6.VOICE_AND_VIDEO_VIDEO_TAB,
-        predicate: () => !(0, X.isWeb)()
+        predicate: () => !(0, q.isWeb)()
       },
       [eV.s6.VOICE_AND_VIDEO_VOICE_ADVANCED]: {
         section: eY.oAB.VOICE,
@@ -1084,7 +1084,7 @@ let e2 = () => {
         section: eY.oAB.VOICE,
         searchableTitles: [ez.intl.string(ez.t["71Ve19"])],
         parent: eV.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO,
-        predicate: () => Y.Z.supports(eK.AN.OPEN_H264)
+        predicate: () => H.Z.supports(eK.AN.OPEN_H264)
       },
       [eV.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO_HARDWARE_ACCELERATION]: {
         section: eY.oAB.VOICE,
@@ -1095,7 +1095,7 @@ let e2 = () => {
         section: eY.oAB.VOICE,
         searchableTitles: [ez.intl.string(ez.t.AxnPm5)],
         parent: eV.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO,
-        predicate: () => "stable" !== Q.ZP.releaseChannel && Y.Z.isExperimentalEncodersSupported()
+        predicate: () => "stable" !== X.ZP.releaseChannel && H.Z.isExperimentalEncodersSupported()
       },
       [eV.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING]: {
         section: eY.oAB.VOICE,
@@ -1122,73 +1122,73 @@ let e2 = () => {
         section: eY.oAB.VOICE,
         searchableTitles: [ez.intl.string(ez.t.t8QhiY), ez.intl.string(ez.t.hmfkCg)],
         parent: eV.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING,
-        predicate: () => Y.Z.isNoiseSuppressionSupported()
+        predicate: () => H.Z.isNoiseSuppressionSupported()
       },
       [eV.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_ADVANCED_VOICE_ACTIVITY]: {
         section: eY.oAB.VOICE,
         searchableTitles: [ez.intl.string(ez.t.BbESsr)],
         parent: eV.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING,
-        predicate: () => Y.Z.isAdvancedVoiceActivitySupported()
+        predicate: () => H.Z.isAdvancedVoiceActivitySupported()
       },
       [eV.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_AUTOMATIC_GAIN_CONTROL]: {
         section: eY.oAB.VOICE,
         searchableTitles: [ez.intl.string(ez.t.cUMdHx)],
         parent: eV.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING,
-        predicate: () => Y.Z.isAutomaticGainControlSupported()
+        predicate: () => H.Z.isAutomaticGainControlSupported()
       },
       [eV.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_BYPASS_SYSTEM_INPUT_PROCESSING]: {
         section: eY.oAB.VOICE,
         searchableTitles: [ez.intl.string(ez.t.DFPXIC)],
         parent: eV.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING,
-        predicate: () => Y.Z.showBypassSystemInputProcessing()
+        predicate: () => H.Z.showBypassSystemInputProcessing()
       },
       [eV.s6.VOICE_AND_VIDEO_ADVANCED_QOS]: {
         section: eY.oAB.VOICE,
         searchableTitles: [ez.intl.string(ez.t.uancuL)],
         parent: eV.s6.VOICE_AND_VIDEO_VOICE_ADVANCED,
-        predicate: () => Y.Z.supports(eK.AN.QOS)
+        predicate: () => H.Z.supports(eK.AN.QOS)
       },
       [eV.s6.VOICE_AND_VIDEO_ADVANCED_ATTENUATION]: {
         section: eY.oAB.VOICE,
         searchableTitles: [ez.intl.string(ez.t.oSdBvb)],
         parent: eV.s6.VOICE_AND_VIDEO_VOICE_ADVANCED,
-        predicate: () => Y.Z.supports(eK.AN.ATTENUATION)
+        predicate: () => H.Z.supports(eK.AN.ATTENUATION)
       },
       [eV.s6.VOICE_AND_VIDEO_ADVANCED_SUBSYSTEM]: {
         section: eY.oAB.VOICE,
         searchableTitles: [ez.intl.string(ez.t.wVBHr6)],
         parent: eV.s6.VOICE_AND_VIDEO_VOICE_ADVANCED,
-        predicate: () => Y.Z.shouldOfferManualSubsystemSelection()
+        predicate: () => H.Z.shouldOfferManualSubsystemSelection()
       },
       [eV.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE]: {
         section: eY.oAB.VOICE,
         searchableTitles: [ez.intl.string(ez.t.KDdjoq), ez.intl.string(ez.t.NMCIf3), ez.intl.string(ez.t.FeUKeH)],
         parent: eV.s6.VOICE_AND_VIDEO_VIDEO_STREAMING,
-        predicate: () => Y.Z.supportsVideoHook() || Y.Z.supportsExperimentalSoundshare() || Y.Z.supportsSystemScreensharePicker() && (0, X.isMac)()
+        predicate: () => H.Z.supportsVideoHook() || H.Z.supportsExperimentalSoundshare() || H.Z.supportsSystemScreensharePicker() && (0, q.isMac)()
       },
       [eV.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_VIDEO_HOOK]: {
         section: eY.oAB.VOICE,
         searchableTitles: [ez.intl.string(ez.t.GmWk2N), ez.intl.string(ez.t["Fj/xn5"])],
         parent: eV.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE,
-        predicate: () => Y.Z.supportsVideoHook()
+        predicate: () => H.Z.supportsVideoHook()
       },
       [eV.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_EXPERIMENTAL_SOUNDSHARE]: {
         section: eY.oAB.VOICE,
         searchableTitles: [ez.intl.string(ez.t["4I0qzc"])],
         parent: eV.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE,
-        predicate: () => Y.Z.supportsExperimentalSoundshare() && Y.Z.supportsHookSoundshare()
+        predicate: () => H.Z.supportsExperimentalSoundshare() && H.Z.supportsHookSoundshare()
       },
       [eV.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_SYSTEM_PICKER]: {
         section: eY.oAB.VOICE,
         searchableTitles: [ez.intl.string(ez.t.ie1mgY)],
         parent: eV.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE,
-        predicate: () => Y.Z.supportsSystemScreensharePicker() && (0, X.isMac)()
+        predicate: () => H.Z.supportsSystemScreensharePicker() && (0, q.isMac)()
       },
       [eV.s6.VOICE_AND_VIDEO_ADVANCED_SILENCE_WARNING]: {
         section: eY.oAB.VOICE,
         searchableTitles: [ez.intl.string(ez.t["aP1N/v"])],
         parent: eV.s6.VOICE_AND_VIDEO_VOICE_ADVANCED,
-        predicate: () => X.isPlatformEmbedded
+        predicate: () => q.isPlatformEmbedded
       },
       [eV.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING]: {
         section: eY.oAB.VOICE,
@@ -1199,25 +1199,25 @@ let e2 = () => {
         section: eY.oAB.VOICE,
         searchableTitles: [ez.intl.string(ez.t["0CEP6e"])],
         parent: eV.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING,
-        predicate: () => J.Sb.getSetting()
+        predicate: () => Q.Sb.getSetting()
       },
       [eV.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_AEC_DUMP]: {
         section: eY.oAB.VOICE,
         searchableTitles: [ez.intl.string(ez.t["r6K+TE"])],
         parent: eV.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING,
-        predicate: () => Y.Z.isAecDumpSupported()
+        predicate: () => H.Z.isAecDumpSupported()
       },
       [eV.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_CONNECTION_REPLAY]: {
         section: eY.oAB.VOICE,
         searchableTitles: [ez.intl.string(ez.t.U4FgFB)],
         parent: eV.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING,
-        predicate: () => ("canary" === Q.ZP.releaseChannel || "development" === Q.ZP.releaseChannel) && e7 && Y.Z.supports(eK.AN.CONNECTION_REPLAY)
+        predicate: () => ("canary" === X.ZP.releaseChannel || "development" === X.ZP.releaseChannel) && e7 && H.Z.supports(eK.AN.CONNECTION_REPLAY)
       },
       [eV.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_LOGGING]: {
         section: eY.oAB.VOICE,
         searchableTitles: [ez.intl.string(ez.t["726JHB"])],
         parent: eV.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING,
-        predicate: () => X.isPlatformEmbedded && Y.Z.supports(eK.AN.DEBUG_LOGGING) && null != p.Z.fileManager.readLogFiles
+        predicate: () => q.isPlatformEmbedded && H.Z.supports(eK.AN.DEBUG_LOGGING) && null != _.Z.fileManager.readLogFiles
       },
       [eV.s6.VOICE_AND_VIDEO_RESET_VOICE_SETTINGS]: {
         section: eY.oAB.VOICE,
@@ -1229,8 +1229,8 @@ let e2 = () => {
         searchableTitles: [ez.intl.string(ez.t.AtCukJ)],
         label: ez.intl.string(ez.t.AtCukJ),
         ariaLabel: ez.intl.string(ez.t.AtCukJ),
-        element: D.Z,
-        predicate: () => w.Z.settingsVisible,
+        element: w.Z,
+        predicate: () => P.Z.settingsVisible,
         icon: (0, r.jsx)("img", {
           alt: "",
           src: n(348621),
@@ -1242,7 +1242,7 @@ let e2 = () => {
         searchableTitles: [ez.intl.string(ez.t["/VQax8"])],
         label: ez.intl.string(ez.t["/VQax8"]),
         ariaLabel: ez.intl.string(ez.t["/VQax8"]),
-        element: eP.Z,
+        element: eR.Z,
         url: eY.Z5c.SETTINGS("chat")
       },
       [eV.s6.CHAT_INLINE_MEDIA]: {
@@ -1340,7 +1340,7 @@ let e2 = () => {
         searchableTitles: [ez.intl.string(ez.t.HcoRu7)],
         label: ez.intl.string(ez.t.HcoRu7),
         ariaLabel: ez.intl.string(ez.t.HcoRu7),
-        element: eT.Z,
+        element: eI.Z,
         url: eY.Z5c.SETTINGS("notifications")
       },
       [eV.s6.NOTIFICATIONS_ENABLE_DESKTOP]: {
@@ -1362,7 +1362,7 @@ let e2 = () => {
         section: eY.oAB.NOTIFICATIONS,
         searchableTitles: [ez.intl.string(ez.t.xSmFQE)],
         parent: eV.s6.NOTIFICATIONS,
-        predicate: () => (0, X.isWindows)()
+        predicate: () => (0, q.isWindows)()
       },
       [eV.s6.NOTIFICATIONS_UNREAD_SETTINGS]: {
         section: eY.oAB.NOTIFICATIONS,
@@ -1467,7 +1467,7 @@ let e2 = () => {
         section: eY.oAB.NOTIFICATIONS,
         searchableTitles: [ez.intl.string(ez.t.wtk08f)],
         parent: eV.s6.NOTIFICATIONS,
-        predicate: () => (0, F.JN)("SettingsRendererConfig")
+        predicate: () => (0, Z.JN)("SettingsRendererConfig")
       },
       [eV.s6.NOTIFICATIONS_GO_LIVE]: {
         section: eY.oAB.NOTIFICATIONS,
@@ -1478,36 +1478,36 @@ let e2 = () => {
         section: eY.oAB.KEYBINDS,
         searchableTitles: [ez.intl.string(ez.t.T9DA2N)],
         label: ez.intl.string(ez.t.T9DA2N),
-        element: ev.Z,
+        element: eO.Z,
         url: eY.Z5c.SETTINGS("keybinds")
       },
       [eV.s6.LANGUAGE]: {
         section: eY.oAB.LOCALE,
         searchableTitles: [ez.intl.string(ez.t.IHMsPj)],
         label: ez.intl.string(ez.t.IHMsPj),
-        element: eI.Z,
+        element: ev.Z,
         url: eY.Z5c.SETTINGS("language")
       },
       [eV.s6.WINDOW_SETTINGS]: {
         section: eY.oAB.WINDOWS,
         searchableTitles: [ez.intl.string(ez.t.ZkDZoq)],
         label: ez.intl.string(ez.t.ZkDZoq),
-        element: ex.Z,
-        predicate: () => X.isPlatformEmbedded && (0, X.isWindows)()
+        element: eD.Z,
+        predicate: () => q.isPlatformEmbedded && (0, q.isWindows)()
       },
       [eV.s6.LINUX_SETTINGS]: {
         section: eY.oAB.LINUX,
         searchableTitles: [ez.intl.string(ez.t["7pPjTU"])],
         label: ez.intl.string(ez.t["7pPjTU"]),
         element: e6,
-        predicate: () => X.isPlatformEmbedded && (0, X.isLinux)()
+        predicate: () => q.isPlatformEmbedded && (0, q.isLinux)()
       },
       [eV.s6.STREAMER_MODE]: {
         section: eY.oAB.STREAMER_MODE,
         searchableTitles: [ez.intl.string(ez.t.S5GfOT)],
         label: ez.intl.string(ez.t.S5GfOT),
         ariaLabel: ez.intl.string(ez.t.S5GfOT),
-        element: eR.Z,
+        element: eN.Z,
         url: eY.Z5c.SETTINGS("streamer-mode")
       },
       [eV.s6.STREAMER_MODE_INTEGRATIONS]: {
@@ -1546,7 +1546,7 @@ let e2 = () => {
         parent: eV.s6.STREAMER_MODE,
         predicate: () => {
           var e, t, n;
-          return null != (n = null === p.Z || true === p.Z || null == (t = p.Z.window) || null == (e = t.supportsContentProtection) ? true : e.call(t)) && n
+          return null != (n = null === _.Z || true === _.Z || null == (t = _.Z.window) || null == (e = t.supportsContentProtection) ? true : e.call(t)) && n
         }
       },
       [eV.s6.SETTINGS_ADVANCED]: {
@@ -1554,19 +1554,19 @@ let e2 = () => {
         searchableTitles: [ez.intl.string(ez.t["8/udY2"])],
         label: ez.intl.string(ez.t["8/udY2"]),
         ariaLabel: ez.intl.string(ez.t["8/udY2"]),
-        element: ec.ZP
+        element: el.ZP
       },
       [eV.s6.SETTINGS_ADVANCED_DEVELOPER_MODE]: {
         section: eY.oAB.ADVANCED,
         searchableTitles: [ez.intl.string(ez.t.ObIb1d)],
         parent: eV.s6.SETTINGS_ADVANCED,
-        predicate: () => z.wS
+        predicate: () => K.wS
       },
       [eV.s6.SETTINGS_ADVANCED_HARDWARE_ACCELERATION]: {
         section: eY.oAB.ADVANCED,
         searchableTitles: [ez.intl.string(ez.t["eOC/Fx"])],
         parent: eV.s6.SETTINGS_ADVANCED,
-        predicate: () => X.isPlatformEmbedded
+        predicate: () => q.isPlatformEmbedded
       },
       [eV.s6.SETTINGS_ADVANCED_SHOW_GAME_LIBRARY]: {
         section: eY.oAB.ADVANCED,
@@ -1589,7 +1589,7 @@ let e2 = () => {
         section: eY.oAB.ADVANCED,
         searchableTitles: ["CF WARP", "CloudFlare WARP"],
         parent: eV.s6.SETTINGS_ADVANCED,
-        predicate: () => g.Z.getCurrentConfig({
+        predicate: () => m.Z.getCurrentConfig({
           location: "SettingsRendererConfig"
         }, {
           autoTrackExposure: false
@@ -1600,7 +1600,7 @@ let e2 = () => {
         searchableTitles: [ez.intl.string(ez.t.Cq98yM)],
         label: ez.intl.string(ez.t.Cq98yM),
         ariaLabel: ez.intl.string(ez.t.Cq98yM),
-        element: el.Z,
+        element: es.Z,
         predicate: () => !e0,
         url: eY.Z5c.SETTINGS("activity-privacy")
       },
@@ -1628,19 +1628,19 @@ let e2 = () => {
         section: eY.oAB.REGISTERED_GAMES,
         searchableTitles: [ez.intl.string(ez.t.AVDyEh)],
         label: ez.intl.string(ez.t.AVDyEh),
-        element: eb.Z,
+        element: eE.Z,
         predicate: () => !e0 && (0, eM.Jw)()
       },
       [eV.s6.OVERLAY]: {
         section: eY.oAB.OVERLAY,
         searchableTitles: [ez.intl.string(ez.t["9cb1U1"]), ez.intl.string(ez.t.HcoRu7)],
         label: ez.intl.string(ez.t["9cb1U1"]),
-        element: eS.Z,
-        predicate: () => !e0 && Z
+        element: eT.Z,
+        predicate: () => !e0 && B
       },
       [eV.s6.CHANGELOG]: {
         section: "changelog",
-        onClick: () => (0, E.Z)(true),
+        onClick: () => (0, g.Z)(true),
         searchableTitles: [ez.intl.string(ez.t.LRmNAg)],
         label: ez.intl.string(ez.t.LRmNAg)
       },
@@ -1648,11 +1648,11 @@ let e2 = () => {
         section: "merchandise",
         onClick: () => {
           let e = "https://discordmerch.com/Dsktopprm";
-          K.default.track(eY.rMx.USER_SETTINGS_MERCH_LINK_CLICKED), (0, q.q)({
+          W.default.track(eY.rMx.USER_SETTINGS_MERCH_LINK_CLICKED), (0, z.q)({
             href: e,
             shouldConfirm: true,
             onConfirm: () => {
-              K.default.track(eY.rMx.USER_SETTINGS_MERCH_LINK_CONFIRMED), (0, h.Z)(e)
+              W.default.track(eY.rMx.USER_SETTINGS_MERCH_LINK_CONFIRMED), (0, p.Z)(e)
             }
           })
         },
@@ -1664,7 +1664,7 @@ let e2 = () => {
         section: eY.oAB.HYPESQUAD_ONLINE,
         searchableTitles: [ez.intl.string(ez.t["k0R+4e"])],
         label: ez.intl.string(ez.t["k0R+4e"]),
-        element: ey.Z,
+        element: eb.Z,
         predicate: () => !tc
       },
       [eV.s6.TOWNHALL]: {
@@ -1673,7 +1673,7 @@ let e2 = () => {
         label: ez.intl.string(ez.t.dnZNER),
         predicate: () => tc,
         onClick: () => {
-          (0, h.Z)("https://discord.gg/discord-townhall"), (0, u.xf)()
+          (0, p.Z)("https://discord.gg/discord-townhall"), (0, ex.Z)()
         }
       },
       [eV.s6.EXPERIMENTS]: {
@@ -1681,7 +1681,7 @@ let e2 = () => {
         searchableTitles: ["Experiments"],
         label: "Experiments",
         element: eL.Z,
-        predicate: () => V.Z.isDeveloper,
+        predicate: () => F.Z.isDeveloper,
         url: eY.Z5c.SETTINGS("experiments")
       },
       [eV.s6.DEVELOPER_OPTIONS]: {
@@ -1689,98 +1689,98 @@ let e2 = () => {
         searchableTitles: ["Developer Options"],
         label: "Developer Options",
         ariaLabel: "Developer Options",
-        element: eg.Z,
-        predicate: () => V.Z.isDeveloper
+        element: em.Z,
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.DEVELOPER_OPTIONS_OVERRIDES_TAB]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Overrides"],
         parent: eV.s6.DEVELOPER_OPTIONS,
-        predicate: () => V.Z.isDeveloper
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.DEVELOPER_OPTIONS_FLAGS_TAB]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Developer Options Flags"],
         parent: eV.s6.DEVELOPER_OPTIONS,
-        predicate: () => V.Z.isDeveloper
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.DEVELOPER_OPTIONS_LOGGING_TAB]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Logging"],
         parent: eV.s6.DEVELOPER_OPTIONS,
-        predicate: () => V.Z.isDeveloper
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.DEVELOPER_OPTIONS_MANUAL_TRIGGERS_TAB]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Manual Triggers"],
         parent: eV.s6.DEVELOPER_OPTIONS,
-        predicate: () => V.Z.isDeveloper
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Design Tools"],
         parent: eV.s6.DEVELOPER_OPTIONS,
-        predicate: () => V.Z.isDeveloper
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.DEVELOPER_OPTIONS_TRACING_REQUESTS]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Tracing Requests"],
         parent: eV.s6.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => V.Z.isDeveloper
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.DEVELOPER_OPTIONS_FORCED_CANARY]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Forced Canary"],
         parent: eV.s6.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => V.Z.isDeveloper
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.DEVELOPER_OPTIONS_LOG_KEYBOARD_MISMATCHES]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Log Keyboard Mismatches"],
         parent: eV.s6.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => V.Z.isDeveloper
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.DEVELOPER_OPTIONS_GATEWAY_EVENTS_TO_CONSOLE]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Gateway Events To Console"],
         parent: eV.s6.DEVELOPER_OPTIONS_LOGGING_TAB,
-        predicate: () => V.Z.isDeveloper
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.DEVELOPER_OPTIONS_OVERLAY_RPC_EVENTS_COMMANDS]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Rpc Events Commands"],
         parent: eV.s6.DEVELOPER_OPTIONS_LOGGING_TAB,
-        predicate: () => V.Z.isDeveloper
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.DEVELOPER_OPTIONS_ANALYTICS_EVENTS_LOGGING]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Analytics Events Logging"],
         parent: eV.s6.DEVELOPER_OPTIONS_LOGGING_TAB,
-        predicate: () => V.Z.isDeveloper
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.DEVELOPER_OPTIONS_ALWAYS_DELIVER]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Always deliver ads"],
         parent: eV.s6.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => e7 && V.Z.isDeveloper
+        predicate: () => e7 && F.Z.isDeveloper
       },
       [eV.s6.DEVELOPER_OPTIONS_SOURCE_MAPS]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Source Maps"],
         parent: eV.s6.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => V.Z.isDeveloper
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.DEVELOPER_OPTIONS_ANALYTICS_DEBUGGER_VIEW]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Analytics Debugger View"],
         parent: eV.s6.DEVELOPER_OPTIONS_LOGGING_TAB,
-        predicate: () => V.Z.isDeveloper
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.DEVELOPER_OPTIONS_IDLE_STATUS_INDICATOR]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Idle Status Indicator"],
         parent: eV.s6.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => e7 && V.Z.isDeveloper
+        predicate: () => e7 && F.Z.isDeveloper
       },
       [eV.s6.DEVELOPER_OPTIONS_ACCESSIBILITY_AUDITING]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
@@ -1792,229 +1792,229 @@ let e2 = () => {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["CSS Debugging"],
         parent: eV.s6.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB,
-        predicate: () => e7 && V.Z.isDeveloper
+        predicate: () => e7 && F.Z.isDeveloper
       },
       [eV.s6.DEVELOPER_OPTIONS_HIGHLIGHT_VOID_TOGGLEABLES]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Highlight Toggleable Components"],
         parent: eV.s6.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB,
-        predicate: () => e7 && V.Z.isDeveloper
+        predicate: () => e7 && F.Z.isDeveloper
       },
       [eV.s6.DEVELOPER_OPTIONS_LAYOUT_DEBUGGING]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Layout Debugging"],
         parent: eV.s6.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB,
-        predicate: () => e7 && V.Z.isDeveloper
+        predicate: () => e7 && F.Z.isDeveloper
       },
       [eV.s6.DEVELOPER_OPTIONS_LAYOUT_DEBUGGING_OPTIONS]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Layout Debugging"],
         parent: eV.s6.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB,
-        predicate: () => e7 && V.Z.isDeveloper && H.default.layoutDebuggingEnabled
+        predicate: () => e7 && F.Z.isDeveloper && V.default.layoutDebuggingEnabled
       },
       [eV.s6.DEVELOPER_OPTIONS_PREVIEW_UNPUBLISHED_COLLECTIONS]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Preview Unpublished Collections"],
         parent: eV.s6.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => e7 && V.Z.isDeveloper
+        predicate: () => e7 && F.Z.isDeveloper
       },
       [eV.s6.DEVELOPER_OPTIONS_DISABLE_APP_COLLECTIONS_CACHE]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Disable App Collections Cache"],
         parent: eV.s6.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => e7 && V.Z.isDeveloper
+        predicate: () => e7 && F.Z.isDeveloper
       },
       [eV.s6.DEVELOPER_OPTIONS_OVERRIDE_CLIENT_SIDE]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Override Client Side"],
         parent: eV.s6.DEVELOPER_OPTIONS_OVERRIDES_TAB,
-        predicate: () => V.Z.isDeveloper
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.DEVELOPER_OPTIONS_OVERRIDE_CLIENT_SIDE_PREMIUM_TYPE]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Override Client Side Premium Type"],
         parent: eV.s6.DEVELOPER_OPTIONS_OVERRIDE_CLIENT_SIDE,
-        predicate: () => V.Z.isDeveloper
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.DEVELOPER_OPTIONS_OVERRIDE_CLIENT_SIDE_ACCOUNT_CREATED_DATA]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Override Client Side Account Created Data"],
         parent: eV.s6.DEVELOPER_OPTIONS_OVERRIDE_CLIENT_SIDE,
-        predicate: () => V.Z.isDeveloper
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.DEVELOPER_OPTIONS_OVERRIDE_OPEN_OVERLAY]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Open Overlay"],
         parent: eV.s6.DEVELOPER_OPTIONS_MANUAL_TRIGGERS_TAB,
-        predicate: () => V.Z.isDeveloper
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.DEVELOPER_OPTIONS_RESET_SOCKET]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Reset Socket"],
         parent: eV.s6.DEVELOPER_OPTIONS_MANUAL_TRIGGERS_TAB,
-        predicate: () => V.Z.isDeveloper
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.DEVELOPER_OPTIONS_CLEAR_CACHES]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Clear Caches"],
         parent: eV.s6.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => m.q && V.Z.isDeveloper
+        predicate: () => h.q && F.Z.isDeveloper
       },
       [eV.s6.DEVELOPER_OPTIONS_CRASHES]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Crashes"],
         parent: eV.s6.DEVELOPER_OPTIONS_MANUAL_TRIGGERS_TAB,
-        predicate: () => V.Z.isDeveloper
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.DEVELOPER_OPTIONS_SURVEY_OVERRIDE]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Survey Override"],
         parent: eV.s6.DEVELOPER_OPTIONS_OVERRIDES_TAB,
-        predicate: () => V.Z.isDeveloper
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.DEVELOPER_OPTIONS_CHANGELOG_OVERRIDE]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Changelog Override"],
         parent: eV.s6.DEVELOPER_OPTIONS_OVERRIDES_TAB,
-        predicate: () => V.Z.isDeveloper
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.DEVELOPER_OPTIONS_BUILD_OVERRIDE]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Build Override"],
         parent: eV.s6.DEVELOPER_OPTIONS_OVERRIDES_TAB,
-        predicate: () => V.Z.isDeveloper
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.DEVELOPER_OPTIONS_PREVENT_POPOUT_CLOSE]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Prevent Popouts From Closing Automatically"],
         parent: eV.s6.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => V.Z.isDeveloper
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.DEVELOPER_OPTIONS_DISABLE_ALIGN_CHAT_INPUT]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Disable Align Chat Input"],
         parent: eV.s6.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => V.Z.isDeveloper
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.HOTSPOT_OPTIONS]: {
         section: eY.oAB.HOTSPOT_OPTIONS,
         searchableTitles: ["Hotspot Options"],
         label: "Hotspot Options",
-        element: ee.Z,
-        predicate: () => V.Z.isDeveloper
+        element: $.Z,
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.DISMISSIBLE_CONTENT_OPTIONS]: {
         section: eY.oAB.DISMISSIBLE_CONTENT_OPTIONS,
         searchableTitles: ["Dismissible Contents"],
         label: "Dismissible Contents",
-        element: S.Z,
-        predicate: () => V.Z.isDeveloper
+        element: T.Z,
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.PAYMENT_FLOW_MODALS]: {
         section: eY.oAB.PAYMENT_FLOW_MODAL_TEST_PAGE,
         searchableTitles: ["Payment Flow Modals"],
         label: "Payment Flow Modals",
-        element: en.Z,
-        predicate: () => V.Z.isDeveloper
+        element: et.Z,
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.REVENUE_STORYBOOK]: {
         section: eY.oAB.REVENUE_STORYBOOK_PAGE,
         searchableTitles: ["Revenue Storybook", "Payment Components", "Orb Components", "Virtual Currency", "Nitro Components"],
         label: "Revenue Storybook",
         element: eB.Z,
-        predicate: () => V.Z.isDeveloper
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.VIRTUAL_CURRENCY_CONFIGURATION]: {
         section: eY.oAB.VIRTUAL_CURRENCY_CONFIGURATION_PAGE,
         searchableTitles: ["Virtual Currency", "Orb", "Config"],
         label: "Virtual Currency Config",
         element: eZ.Z,
-        predicate: () => V.Z.isDeveloper
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.PAYMENT_COMPONENTS]: {
         section: eY.oAB.REVENUE_STORYBOOK_PAGE,
         searchableTitles: ["Payment Components"],
         label: "Payment Components",
         element: eB.Z,
-        predicate: () => V.Z.isDeveloper
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.ORB_COMPONENTS]: {
         section: eY.oAB.REVENUE_STORYBOOK_PAGE,
         searchableTitles: ["Orb Components"],
         label: "Orb Components",
         element: eB.Z,
-        predicate: () => V.Z.isDeveloper
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.NITRO_COMPONENTS]: {
         section: eY.oAB.REVENUE_STORYBOOK_PAGE,
         searchableTitles: ["Nitro Components"],
         label: "Nitro Components",
         element: eB.Z,
-        predicate: () => V.Z.isDeveloper
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.TEXT_PLAYGROUND]: {
         section: eY.oAB.TEXT_PLAYGROUND,
         searchableTitles: ["Text Playground"],
         label: "Text Playground",
-        element: ew.Z,
-        predicate: () => V.Z.isDeveloper
+        element: eP.Z,
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.DESIGN_SYSTEMS]: {
         section: eY.oAB.DESIGN_SYSTEMS,
         searchableTitles: ["Design Systems"],
         label: "Design Systems",
-        element: em.Z,
-        predicate: () => V.Z.isDeveloper,
+        element: eh.Z,
+        predicate: () => F.Z.isDeveloper,
         url: eY.Z5c.SETTINGS("design-systems")
       },
       [eV.s6.DESIGN_SYSTEMS_COLORS]: {
         section: eY.oAB.DESIGN_SYSTEMS,
         searchableTitles: ["Colors"],
         label: "Colors",
-        element: em.Z,
-        predicate: () => V.Z.isDeveloper
+        element: eh.Z,
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.ANIMATION_TESTING]: {
         section: eY.oAB.DESIGN_SYSTEMS,
         searchableTitles: ["Animation Testing"],
         label: "Animation Testing",
-        element: em.Z,
-        predicate: () => V.Z.isDeveloper
+        element: eh.Z,
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.DESIGN_SYSTEMS_COMPONENTS]: {
         section: eY.oAB.DESIGN_SYSTEMS,
         searchableTitles: ["Components"],
         label: "Components",
-        element: em.Z,
-        predicate: () => V.Z.isDeveloper
+        element: eh.Z,
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.TEXT_COMPONENTS]: {
         section: eY.oAB.TEXT_COMPONENT,
         searchableTitles: ["Text Components"],
         label: "Text Components",
-        element: ea.Z,
-        predicate: () => V.Z.isDeveloper
+        element: ei.Z,
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.INTL_TESTING]: {
         section: eY.oAB.INTL_TESTING,
         searchableTitles: ["Intl Testing", "i18n"],
         label: "Intl Testing",
-        element: P.Z,
-        predicate: () => e7 || V.Z.isDeveloper
+        element: R.Z,
+        predicate: () => e7 || F.Z.isDeveloper
       },
       [eV.s6.SHOP_KEEPER]: {
         section: eY.oAB.SHOP_KEEPER,
         searchableTitles: ["Shop Keeper"],
         label: "Shop Keeper",
-        element: I.Z,
-        predicate: () => V.Z.isDeveloper
+        element: v.Z,
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.QUEST_PREVIEW_TOOL]: {
         section: eY.oAB.QUEST_PREVIEW_TOOL,
         searchableTitles: ["Quest Preview Tool"],
         label: "Quest Preview Tool",
-        element: U.Z,
-        predicate: () => (0, M.X)({
+        element: k.Z,
+        predicate: () => (0, j.X)({
           location: eW.dr.QUEST_PREVIEW_TOOL
         })
       },
@@ -2022,10 +2022,10 @@ let e2 = () => {
         section: eY.oAB.QUEST_PREVIEW_TOOL_2,
         searchableTitles: ["Quest Preview Tool 2"],
         label: "Quest Preview Tool 2",
-        element: () => (0, r.jsx)(G.Z, {
-          questId: null == A ? true : A.quest_id
+        element: () => (0, r.jsx)(U.Z, {
+          questId: null == S ? true : S.quest_id
         }),
-        predicate: () => (0, M.T)({
+        predicate: () => (0, j.T)({
           location: eW.dr.QUEST_PREVIEW_TOOL_2
         })
       },
@@ -2033,7 +2033,7 @@ let e2 = () => {
         section: eY.oAB.QUEST_MINOR_REWARD_CAPPING_CONFIG,
         searchableTitles: ["Minor Reward Capping Config"],
         label: "Minor Reward Capping Config",
-        element: k.Z,
+        element: M.Z,
         predicate: () => e7
       },
       [eV.s6.WEB_SETTING_TREE_TOOL]: {
@@ -2041,7 +2041,7 @@ let e2 = () => {
         searchableTitles: ["Web Setting Tree Tool"],
         label: "Web Setting Tree Tool",
         element: ej.Z,
-        predicate: () => V.Z.isDeveloper
+        predicate: () => F.Z.isDeveloper
       },
       [eV.s6.LOGOUT]: {
         section: "logout",
@@ -2068,12 +2068,12 @@ let e2 = () => {
         variant: "destructive"
       },
       [eV.s6.SOCIAL_LINKS]: {
-        section: _.ID.CUSTOM,
-        element: ei.Z
+        section: f.ID.CUSTOM,
+        element: er.Z
       },
       [eV.s6.CLIENT_DEBUG_INFO]: {
-        section: _.ID.CUSTOM,
-        element: $.Z
+        section: f.ID.CUSTOM,
+        element: J.Z
       }
     })
   }

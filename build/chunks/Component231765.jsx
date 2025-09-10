@@ -10,10 +10,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk37234 = require("./37234.js"),
   Chunk607070 = require("./607070.js"),
   Chunk578361 = require("./578361.jsx"),
   Chunk460181 = require("./460181.js"),
+  Chunk342386 = require("./342386.js"),
   Chunk585483 = require("./585483.js"),
   Chunk57562 = require("./57562.jsx"),
   Chunk955204 = require("./955204.js"),
@@ -146,7 +146,7 @@ function k(e) {
       warningSeen: n
     },
     updateSettings: i
-  } = e, a = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), s = e => {
+  } = e, a = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), s = e => {
     e || (0, p.T)(h.hn.DISABLE_POGGERMODE), e && (!n || a) ? (0, l.h7j)(e => (0, r.jsx)(l.ConfirmModal, C(S({
       header: a ? v.intl.string(v.t["FxT+p6"]) : v.intl.string(v.t.TAZ4Fx),
       confirmText: v.intl.string(v.t.JFfinp),
@@ -303,16 +303,16 @@ function B(e) {
       screenshakeEnabledLocations: a
     },
     updateSettings: s
-  } = e, c = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), d = !t || !n || c, f = (e, t) => {
+  } = e, u = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), d = !t || !n || u, f = (e, t) => {
     null != e.shakeIntensity && e.shakeIntensity > i && (0, p.T)(h.hn.MORE), s(e, t)
   };
   return (0, r.jsxs)(l.hjN, {
     tag: l.RB0.H1,
     title: v.intl.string(v.t.wVS5SU),
     children: [(0, r.jsx)(l.j7V, {
-      disabled: !t || c,
-      tooltipNote: c ? v.intl.string(v.t.GckHGx) : null,
-      value: n && !c,
+      disabled: !t || u,
+      tooltipNote: u ? v.intl.string(v.t.GckHGx) : null,
+      value: n && !u,
       note: v.intl.string(v.t.Qq5W3t),
       onChange: e => s({
         screenshakeEnabled: e
@@ -355,7 +355,7 @@ function Z(e) {
     t({
       enabled: false,
       settingsVisible: false
-    }), (0, c.xf)()
+    }), (0, f.Z)()
   };
   return (0, r.jsx)(l.hjN, {
     tag: l.RB0.H1,
@@ -431,14 +431,14 @@ function H(e) {
     y: 0
   }), u = (0, b.Z)();
 
-  function d(e, t, n, r) {
+  function f(e, t, n, r) {
     let i = null != r ? r : n;
     return (null != t ? t : e) && i
   }
   let p = e => {
       if (e.enabled && false === a.enabled) {
         var t;
-        n(true), (0, f.GN)("poggermode_enabled"), _.S.dispatch(O.CkL.SHAKE_APP, {
+        n(true), (0, d.GN)("poggermode_enabled"), _.S.dispatch(O.CkL.SHAKE_APP, {
           duration: 2e3,
           intensity: null != (t = e.shakeIntensity) ? t : a.shakeIntensity
         })
@@ -447,12 +447,12 @@ function H(e) {
     h = (e, t) => {
       if (p(e), (0, m.AI)(e), null == t) return;
       let n = 0 === t,
-        r = d(a.confettiEnabled, e.confettiEnabled, a.enabled, e.enabled);
+        r = f(a.confettiEnabled, e.confettiEnabled, a.enabled, e.enabled);
       n && r && u.fire(s.x, s.y, {
         settings: e
       });
       let i = 1 === t,
-        o = d(a.screenshakeEnabled, e.screenshakeEnabled, a.enabled, e.enabled);
+        o = f(a.screenshakeEnabled, e.screenshakeEnabled, a.enabled, e.enabled);
       if (i && o) {
         var l;
         _.S.dispatch(O.CkL.SHAKE_APP, {
@@ -510,10 +510,10 @@ let Y = (e, t, n) => {
     }
   },
   W = 500,
-  K = e => 0 === e ? d.n.LEFT : d.n.RIGHT;
+  K = e => 0 === e ? u.n.LEFT : u.n.RIGHT;
 
 function z() {
-  let [e, t] = Chunk647438.useState(0), [n, a] = Chunk647438.useState(K(module)), [s, c] = Chunk647438.useState(false), f = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion), _ = Chunk692547 && !Chunk460181;
+  let [e, t] = Chunk647438.useState(0), [n, a] = Chunk647438.useState(K(module)), [s, d] = Chunk647438.useState(false), f = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion), _ = Chunk692547 && !Chunk342386;
   return Chunk647438.useEffect(() => {
     let t = setTimeout(() => {
       Chunk392711(K(module))
@@ -526,7 +526,7 @@ function z() {
       className: Chunk749714.slideAnimator,
       step: module,
       direction: require,
-      children: Y(module, exports, Chunk37234)
+      children: Y(module, exports, Chunk460181)
     }), (0, Chunk951288.jsx)("div", {
       className: Chunk585483 ? Chunk749714.enableAnimationOverlayVisible : Chunk749714.enableAnimationOverlayHidden,
       children: (0, Chunk951288.jsx)(Chunk481060.Fmz, {
@@ -536,7 +536,7 @@ function z() {
         autoplay: false,
         resetOnPlay: true,
         loop: false,
-        onComplete: () => Chunk37234(false)
+        onComplete: () => Chunk460181(false)
       })
     })]
   })

@@ -5,9 +5,9 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk667202 = require("./667202.jsx"),
-  Chunk37234 = require("./37234.js"),
   Chunk635552 = require("./635552.js"),
   Chunk300284 = require("./300284.js"),
+  Chunk342386 = require("./342386.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk117771 = require("./117771.js");
 let p = t => {
@@ -15,10 +15,10 @@ let p = t => {
     transitionState: i,
     onClose: n,
     product: p
-  } = t, u = (0, l.Z)(), {
+  } = t, u = (0, e.Z)(), {
     handleUseNow: d,
     isApplying: g
-  } = (0, e.W)({
+  } = (0, s.W)({
     product: p,
     onSuccess: n,
     onError: n
@@ -31,7 +31,7 @@ let p = t => {
       text: o.intl.string(o.t["2p2aY2"]),
       variant: "secondary",
       onClick: () => {
-        n(), (0, s.xf)(), null == u || u()
+        n(), (0, l.Z)(), null == u || u()
       }
     }, {
       text: o.intl.string(o.t.MAS7uL),

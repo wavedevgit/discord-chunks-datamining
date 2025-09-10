@@ -19,7 +19,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
   Chunk355467 = require("./355467.js"),
-  Chunk37234 = require("./37234.js"),
   Chunk821849 = require("./821849.js"),
   Chunk230711 = require("./230711.js"),
   Chunk497321 = require("./497321.jsx"),
@@ -33,6 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk89057 = require("./89057.jsx"),
   Chunk406128 = require("./406128.jsx"),
   Chunk703656 = require("./703656.js"),
+  Chunk342386 = require("./342386.js"),
   Chunk246946 = require("./246946.js"),
   Chunk78839 = require("./78839.js"),
   Chunk483444 = require("./483444.jsx"),
@@ -159,7 +159,7 @@ function ed() {
         })
       })]
     }) : null,
-    E = () => Chunk622535 && !l ? (0, Chunk951288.jsxs)(Chunk159691.hE, {
+    g = () => Chunk622535 && !l ? (0, Chunk951288.jsxs)(Chunk159691.hE, {
       fullWidth: true,
       direction: "vertical",
       children: [(0, Chunk951288.jsx)(Chunk740594.Z, {
@@ -169,7 +169,7 @@ function ed() {
           Chunk626135.default.track(Chunk981631.rMx.PREMIUM_SETTINGS_INTERACTED, {
             cta_type: eo,
             target: es
-          }), (0, Chunk37234.xf)(), (0, Chunk703656.uL)(Chunk981631.Z5c.APPLICATION_STORE)
+          }), (0, Chunk342386.Z)(), (0, Chunk703656.uL)(Chunk981631.Z5c.APPLICATION_STORE)
         },
         variant: "overlay-secondary",
         fullWidth: true,
@@ -186,7 +186,7 @@ function ed() {
           Chunk626135.default.track(Chunk981631.rMx.PREMIUM_SETTINGS_INTERACTED, {
             cta_type: eo,
             target: es
-          }), (0, Chunk37234.xf)(), (0, Chunk703656.uL)(Chunk981631.Z5c.APPLICATION_STORE)
+          }), (0, Chunk342386.Z)(), (0, Chunk703656.uL)(Chunk981631.Z5c.APPLICATION_STORE)
         },
         text: Chunk388032.intl.string(Chunk388032.t.VR2iVF),
         size: "md"
@@ -230,7 +230,7 @@ function ef(e) {
   let {
     className: a,
     config: s
-  } = e, l = (0, c.e7)([v.Z], () => v.Z.useReducedMotion) ? s.getStaticImageUrl() : s.getAnimatedImageUrl(), u = (0, Z.Yr)(null == (t = s.getBackgroundImageUrl) ? true : t.call(s)), d = (0, Z.Tl)(null != (n = s.gradientConfig) ? n : true), f = {
+  } = e, l = (0, c.e7)([O.Z], () => O.Z.useReducedMotion) ? s.getStaticImageUrl() : s.getAnimatedImageUrl(), u = (0, Z.Yr)(null == (t = s.getBackgroundImageUrl) ? true : t.call(s)), d = (0, Z.Tl)(null != (n = s.gradientConfig) ? n : true), f = {
     color: null != (i = s.textColor) ? i : "var(--always-white)"
   };
   return (0, r.jsxs)("div", {
@@ -321,17 +321,17 @@ let ep = function() {
       forceFetch: true
     }),
     _ = null == (e = (0, Chunk347896.Z)()) ? true : module.billingSettingsMarketingBanner,
-    g = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.enabled),
-    b = Chunk647438.useRef(null);
+    E = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.enabled),
+    y = Chunk647438.useRef(null);
   (0, Chunk232076.B)();
   let O = (0, Chunk533525.b)();
   Chunk647438.useEffect(() => {
     Chunk570140.Z.wait(async () => {
-      Chunk37234 || exports || await Promise.all([Chunk355467.jg(), Chunk355467.tZ(), (0, Chunk821849.Y2)(null, null, Chunk981631.JjL.DISCOVERY)]), Chunk159691(false)
+      Chunk230711 || exports || await Promise.all([Chunk355467.jg(), Chunk355467.tZ(), (0, Chunk821849.Y2)(null, null, Chunk981631.JjL.DISCOVERY)]), Chunk159691(false)
     })
-  }, [Chunk37234, exports]);
-  let [v, P] = Chunk647438.useState(false);
-  if (Chunk37234) return (0, Chunk951288.jsx)(Chunk497321.Z, {});
+  }, [Chunk230711, exports]);
+  let [R, P] = Chunk647438.useState(false);
+  if (Chunk230711) return (0, Chunk951288.jsx)(Chunk497321.Z, {});
   if (exports) return (0, Chunk951288.jsx)(Chunk89057.c8, {});
   let x = o && null !== Chunk120356 && Chunk913527,
     j = Chunk780384.fetched && Chunk780384.isFractionalPremiumActive;
@@ -347,7 +347,7 @@ let ep = function() {
       children: [(0, Chunk951288.jsxs)("div", {
         children: [null != Chunk755721 && (0, Chunk951288.jsx)(ef, {
           config: Chunk755721
-        }), (0, Chunk951288.jsx)(ed, {}), Chunk410030 && (0, Chunk951288.jsx)(Chunk386733.Z, {
+        }), (0, Chunk951288.jsx)(ed, {}), Chunk607070 && (0, Chunk951288.jsx)(Chunk386733.Z, {
           isInSettings: true
         }), null == Chunk755721 && (0, Chunk951288.jsx)(e_, {}), (0, Chunk951288.jsx)(Chunk179984.Z, {
           hideCTAs: true,
@@ -357,14 +357,14 @@ let ep = function() {
           selectedPlanTier: Chunk474936.p9.TIER_2
         })]
       }), (0, Chunk951288.jsx)(Chunk622535.$, {
-        innerRef: Chunk230711,
+        innerRef: Chunk410030,
         onChange: e => {
-          e && !v && (L.default.track($.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+          e && !R && (L.default.track($.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
             location_stack: n
           }), P(true))
         },
         children: (0, Chunk951288.jsx)("div", {
-          ref: Chunk230711,
+          ref: Chunk410030,
           className: Chunk458622.bottomOfPageVisibilitySensor
         })
       })]

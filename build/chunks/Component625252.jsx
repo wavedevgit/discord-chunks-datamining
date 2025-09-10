@@ -9,8 +9,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk772848 = require("./772848.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk37234 = require("./37234.js"),
   Chunk410030 = require("./410030.js"),
+  Chunk342386 = require("./342386.js"),
   Chunk626135 = require("./626135.js"),
   Chunk617136 = require("./617136.js"),
   Chunk497505 = require("./497505.js"),
@@ -51,7 +51,7 @@ function I() {
       backgroundImage: "url(".concat(v, ")")
     }), []),
     n = Chunk647438.useCallback(() => {
-      (0, Chunk37234.xf)(), (0, Chunk110560.navigateToQuestHome)({
+      (0, Chunk342386.Z)(), (0, Chunk110560.navigateToQuestHome)({
         fromContent: Chunk497505.jn.QUEST_HOME_MOVE_CALLOUT
       }), Chunk626135.default.track(Chunk981631.rMx.QUEST_CONTENT_CLICKED, O({
         cta_name: Chunk617136.jZ.VIEW_QUESTS,

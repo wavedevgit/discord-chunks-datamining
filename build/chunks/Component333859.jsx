@@ -9,7 +9,6 @@ require("./647438.js");
 var Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk37234 = require("./37234.js"),
   Chunk493773 = require("./493773.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -20,12 +19,13 @@ var Chunk442837 = require("./442837.js"),
   Chunk638212 = require("./638212.jsx"),
   Chunk767714 = require("./767714.jsx"),
   Chunk626135 = require("./626135.js"),
+  Chunk342386 = require("./342386.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk980676 = require("./980676.js");
 let v = () => {
-    (0, Chunk550385.XO)(Chunk550385.wh.APP_ICON), (0, Chunk37234.xf)()
+    (0, Chunk550385.XO)(Chunk550385.wh.APP_ICON), (0, Chunk342386.Z)()
   },
   I = () => {
     let {
@@ -41,7 +41,7 @@ let v = () => {
       v2EditorEnabled: n
     } = Chunk803038.Mc.useExperiment({
       location: "UserSettingsAppearanceInAppIcon"
-    }), s = () => {
+    }), _ = () => {
       let e = require ? Chunk980676.tryItOutButtonsV2 : Chunk980676.tryItOutButtons;
       return (0, Chunk951288.jsxs)("div", {
         className: module,
@@ -72,7 +72,7 @@ let v = () => {
       className: Chunk980676.selectionGroup,
       children: [(0, Chunk951288.jsx)(Chunk539873.Z, {
         disabled: exports,
-        renderCTAButtons: Chunk37234
+        renderCTAButtons: Chunk550385
       }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
         className: Chunk980676.divider
       })]

@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
-  Chunk37234 = require("./37234.js"),
   Chunk703656 = require("./703656.js"),
+  Chunk342386 = require("./342386.js"),
   Chunk272008 = require("./272008.js"),
   Chunk937797 = require("./937797.js"),
   Chunk46140 = require("./46140.js"),
@@ -35,7 +35,7 @@ let f = function() {
         children: "Click the button below to clear your Minor Reward Capping History."
       }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
         onClick: () => {
-          (0, Chunk272008.it)(), (0, Chunk37234.xf)(), (0, Chunk703656.uL)(module ? Chunk981631.Z5c.QUEST_HOME_V2 : Chunk981631.Z5c.QUEST_HOME)
+          (0, Chunk272008.it)(), (0, Chunk342386.Z)(), (0, Chunk703656.uL)(module ? Chunk981631.Z5c.QUEST_HOME_V2 : Chunk981631.Z5c.QUEST_HOME)
         },
         text: "Clear History"
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {

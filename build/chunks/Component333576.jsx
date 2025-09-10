@@ -8,9 +8,9 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk693789 = require("./693789.jsx"),
   Chunk481060 = require("./481060.js"),
-  Chunk37234 = require("./37234.js"),
   Chunk703656 = require("./703656.js"),
   Chunk52647 = require("./52647.js"),
+  Chunk342386 = require("./342386.js"),
   Chunk450272 = require("./450272.jsx"),
   Chunk981631 = require("./981631.js");
 let d = function() {
@@ -34,7 +34,7 @@ let d = function() {
         children: "Click the button below to reset your onboarding state for Virtual Currency."
       }), (0, Chunk951288.jsx)(Chunk693789.zx, {
         onClick: () => {
-          module(), exports(), (0, Chunk37234.xf)(), (0, Chunk703656.uL)(Chunk981631.Z5c.APP)
+          module(), exports(), (0, Chunk342386.Z)(), (0, Chunk703656.uL)(Chunk981631.Z5c.APP)
         },
         children: "Reset Onboarding State"
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {

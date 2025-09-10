@@ -24,10 +24,10 @@ var Chunk772848 = require("./772848.js"),
   Chunk756647 = require("./756647.js"),
   Chunk481060 = require("./481060.js"),
   Chunk668781 = require("./668781.js"),
-  Chunk37234 = require("./37234.js"),
   Chunk836768 = require("./836768.js"),
   Chunk98278 = require("./98278.js"),
   Chunk703656 = require("./703656.js"),
+  Chunk342386 = require("./342386.js"),
   Chunk314897 = require("./314897.js"),
   Chunk626135 = require("./626135.js"),
   Chunk954824 = require("./954824.js"),
@@ -134,7 +134,7 @@ function F(e, t) {
       quest: e,
       location: t
     }))
-  }) : (0, d.$)()
+  }) : (0, u.$)()
 }
 
 function V(e, t, i) {
@@ -252,7 +252,7 @@ function z() {
     a = Chunk772848 && !require;
   Chunk271579 || Chunk836768.Z.setState({
     selectedTab: Chunk49898.GlobalDiscoveryTab.QUESTS
-  }), (0, Chunk37234.xf)(), (0, Chunk703656.uL)((Chunk271579 ? Chunk981631.Z5c.QUEST_HOME_V2 : Chunk981631.Z5c.QUEST_HOME) + Chunk951288)
+  }), (0, Chunk342386.Z)(), (0, Chunk703656.uL)((Chunk271579 ? Chunk981631.Z5c.QUEST_HOME_V2 : Chunk981631.Z5c.QUEST_HOME) + Chunk951288)
 }
 let q = .2;
 
@@ -363,7 +363,7 @@ function ee(e) {
       } = v.m8.getConfig({
         location: w.dr.QUEST_DEEP_LINK_UTIL
       });
-      (0, f.dL)({
+      (0, d.dL)({
         pathname: t ? D.Z5c.QUEST_HOME_V2 : D.Z5c.QUEST_HOME,
         hash: e
       })

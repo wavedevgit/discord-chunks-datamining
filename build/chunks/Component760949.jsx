@@ -1,41 +1,41 @@
 /** Chunk was on 44153 **/
 /** chunk id: 760949, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
-  Chunk37234 = require("./37234.js"),
   Chunk479531 = require("./479531.js"),
   Chunk703656 = require("./703656.js"),
   Chunk695346 = require("./695346.js"),
+  Chunk342386 = require("./342386.js"),
   Chunk981631 = require("./981631.js"),
   Chunk345909 = require("./345909.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(t) {
+function p(t) {
   let {
     transitionState: n,
     onClose: e
-  } = t, [h, p] = a.useState(false), [S, g] = a.useState(null), k = async () => {
-    g(null), p(true);
+  } = t, [p, f] = a.useState(false), [S, g] = a.useState(null), k = async () => {
+    g(null), f(true);
     try {
-      await u.Ex.updateSetting(false), (0, o.uL)(d.Z5c.FRIENDS), (0, c.xf)(), e()
+      await o.Ex.updateSetting(false), (0, s.uL)(d.Z5c.FRIENDS), (0, u.Z)(), e()
     } catch (t) {
-      g(new s.Z(t).getAnyErrorMessage())
+      g(new c.Z(t).getAnyErrorMessage())
     } finally {
-      p(false)
+      f(false)
     }
   }, y = () => {
-    (0, o.uL)(d.Z5c.SETTINGS("family-center")), e()
+    (0, s.uL)(d.Z5c.SETTINGS("family-center")), e()
   };
   return (0, i.jsx)(l.Modal, {
     transitionState: n,
     onClose: e,
-    title: f.intl.string(x.default.VGB30N),
-    subtitle: f.intl.format(x.default["CrZZ+v"], {
+    title: h.intl.string(x.default.VGB30N),
+    subtitle: h.intl.format(x.default["CrZZ+v"], {
       openSettingsHook: (t, n) => (0, i.jsx)(r.eee, {
         onClick: y,
         children: t
@@ -43,12 +43,12 @@ function h(t) {
     }),
     actions: [{
       variant: "secondary",
-      text: f.intl.string(f.t["ETE/oK"]),
+      text: h.intl.string(h.t["ETE/oK"]),
       onClick: e
     }, {
-      text: f.intl.string(x.default.cSb7U1),
+      text: h.intl.string(x.default.cSb7U1),
       onClick: k,
-      loading: h,
+      loading: p,
       variant: "critical-primary"
     }],
     children: (0, i.jsx)("div", {
