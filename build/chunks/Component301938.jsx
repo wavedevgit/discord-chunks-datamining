@@ -37,7 +37,7 @@ function x(e) {
       className: s()(_.marginBottom20, _.marginTop8)
     }), (0, r.jsx)(u.Dx, {
       children: m.intl.string(m.t["IfBQ5+"])
-    }), null != N && "" !== N ? (0, r.jsx)(a.Text, {
+    }), null != N && "" !== N ? (0, r.jsx)(o.Text, {
       variant: "text-sm/normal",
       color: "text-danger",
       children: N
@@ -70,7 +70,7 @@ function x(e) {
                 password: S
               },
               trackedActionData: {
-                event: o.NetworkActionNames.ACCOUNT_REVERT
+                event: a.NetworkActionNames.ACCOUNT_REVERT
               },
               rejectWithError: false
             }).then(e => {

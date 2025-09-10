@@ -17,7 +17,7 @@ function d(e) {
     guildScheduledEvent: t,
     channel: n,
     onClose: d
-  } = e, h = t.entity_type === c.WX.EXTERNAL, p = i.useCallback(e => (0, o.Qt)(t, d)(e), [t, d]), g = (0, a.u)(t, n);
+  } = e, h = t.entity_type === c.WX.EXTERNAL, p = i.useCallback(e => (0, a.Qt)(t, d)(e), [t, d]), g = (0, o.u)(t, n);
   if (null == g) return null;
   let {
     IconComponent: m,

@@ -133,8 +133,8 @@ function _(e) {
     })
   }, e => {
     if (e instanceof c.CaptchaCancelError) throw e;
-    let t = new o.Z(e);
-    throw null != t.getFieldErrors("date_of_birth") && a.wE(m.L0.REGISTER), d.default.track(g.rMx.REGISTER_SUBMIT_ERRORED, {
+    let t = new a.Z(e);
+    throw null != t.getFieldErrors("date_of_birth") && o.wE(m.L0.REGISTER), d.default.track(g.rMx.REGISTER_SUBMIT_ERRORED, {
       is_unique_username_registration: true,
       email_error_reason: t.getFirstFieldErrorMessage("email"),
       phone_error_reason: t.getFirstFieldErrorMessage("phone_token"),

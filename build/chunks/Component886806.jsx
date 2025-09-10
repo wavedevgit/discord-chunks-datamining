@@ -26,13 +26,13 @@ function _(e) {
     location: t,
     transitionTo: n = f
   } = e, [l, _] = i.useState("submitting"), x = i.useRef(true);
-  (0, a.ZP)(() => {
+  (0, o.ZP)(() => {
     (0, h.e)("verify_email");
     let e = (0, c.Z)(t);
     if (null == e) return void _("failed");
     (async () => {
       try {
-        let t = await o.Z.verify(e);
+        let t = await a.Z.verify(e);
         _("succeeded"), x.current = t
       } catch (e) {
         _("failed")

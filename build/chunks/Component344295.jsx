@@ -95,7 +95,7 @@ class H extends Chunk647438.PureComponent {
     else if (this.getMode() === V && r !== e.authenticated && r) {
       let e = N.default.getFingerprint();
       if (null != e) {
-        let t = (0, a.s)(e);
+        let t = (0, o.s)(e);
         this.track(L.rMx.INVITE_LOGIN_SUCCESSFUL, true, {
           prev_user_id: t
         })
@@ -114,7 +114,7 @@ class H extends Chunk647438.PureComponent {
       if (null != e)
         if ((0, j.c)(k.M5.INVITE_UNCLAIMED), null != t.guild) {
           var s, c, u;
-          let e = (0, C.yE)(null != (u = t.flags) ? u : 0, o.$.IS_APPLICATION_BYPASS),
+          let e = (0, C.yE)(null != (u = t.flags) ? u : 0, a.$.IS_APPLICATION_BYPASS),
             n = (null == (s = t.guild.features) ? true : s.includes(L.oNc.MEMBER_VERIFICATION_GATE_ENABLED)) && (null == (c = t.guild.features) ? true : c.includes(L.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL));
           i(!e && n ? L.Z5c.GUILD_MEMBER_VERIFICATION(t.guild.id) : L.Z5c.APP_WITH_INVITE_AND_GUILD_ONBOARDING(t.code))
         } else d.ZP.transitionToInvite(t, i)
