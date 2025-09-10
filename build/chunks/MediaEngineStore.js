@@ -201,7 +201,7 @@ let eY = {
       noiseSuppression: false,
       automaticGainControl: true,
       noiseCancellation: true,
-      bypassSystemInputProcessing: false
+      bypassSystemInputProcessing: true
     },
     [Chunk345655._.STUDIO]: {
       mode: Chunk981631.pM4.VOICE_ACTIVITY,
@@ -1220,9 +1220,11 @@ function nv(e) {
 function nI(e) {
   let {
     inputProfile: t
-  } = e, n = tQ({
+  } = e;
+  tQ({
     activeInputProfile: t
   });
+  let n = tw();
   eW.eachConnection(e => {
     tD(e), tG(e, n.automaticGainControl), e.setEchoCancellation(n.echoCancellation), e.setExperimentalEncoders(n.experimentalEncoders), tB(e, n.noiseCancellation), e.setNoiseSuppression(n.noiseSuppression)
   }), eW.setAudioInputBypassSystemProcessing(n.bypassSystemInputProcessing), tq.update(), nL()

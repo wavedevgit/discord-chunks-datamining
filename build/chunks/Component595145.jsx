@@ -112,10 +112,10 @@ function er(e) {
       canAnimate: false,
       size: 1024
     }),
-    eD = (0, m.p)({
+    eB = (0, m.p)({
       location: "UserProfileModalV2"
     }),
-    eB = r.useMemo(() => null != ep ? ep : (0, x.Z)(), [ep]),
+    eD = r.useMemo(() => null != ep ? ep : (0, x.Z)(), [ep]),
     eL = (0, Q.Z)({
       user: t,
       currentUser: er
@@ -224,7 +224,7 @@ function er(e) {
                       channelId: ei,
                       themeType: en.l.MODAL_V2,
                       hasEntered: ef === c.Dvm.ENTERED,
-                      prompt: eD && t.id === er.id ? eB : null,
+                      prompt: eB && t.id === er.id ? eD : null,
                       disableToolbar: eg
                     })]
                   }), (0, o.jsxs)(c.Ttm, {
@@ -234,7 +234,7 @@ function er(e) {
                       user: t,
                       onClose: ex,
                       nickname: I.ZP.useName(null == eN ? true : eN.guildId, ei, t),
-                      nicknameIcons: (0, o.jsx)(B.Z, {
+                      nicknameIcons: (0, o.jsx)(D.Z, {
                         size: "sm",
                         userId: t.id
                       }),
@@ -285,7 +285,7 @@ function er(e) {
                           variant: "text-sm/normal"
                         })
                       })
-                    }), t.id === er.id && (0, o.jsx)(D.Z, {
+                    }), t.id === er.id && (0, o.jsx)(B.Z, {
                       isPremiumUser: (0, O.I5)(er),
                       onInteraction: ex
                     }), (0, o.jsx)(k.Z, {

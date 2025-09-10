@@ -49,11 +49,11 @@ function O(e) {
   } = (0, p.Z)({
     userId: n.id,
     guildId: O
-  }), D = (0, r.e7)([c.Z], () => c.Z.isFetchingUserOutbox(n.id)), B = n.id === t.id, L = (0, r.e7)([s.Z, a.Z], () => {
-    let e = B ? s.Z.getStatus() : a.Z.getStatus(n.id);
+  }), B = (0, r.e7)([c.Z], () => c.Z.isFetchingUserOutbox(n.id)), D = n.id === t.id, L = (0, r.e7)([s.Z, a.Z], () => {
+    let e = D ? s.Z.getStatus() : a.Z.getStatus(n.id);
     return e === l.Skl.OFFLINE || e === l.Skl.INVISIBLE
   }), R = A.length > 0 || null != E, M = T && null == E && null == w && null != S, U = !L && (R || M), k = C.length > 0;
-  return U || k || !D ? (0, o.jsxs)(l.zJl, {
+  return U || k || !B ? (0, o.jsxs)(l.zJl, {
     className: _.scroller,
     fade: true,
     children: [U ? (0, o.jsx)(m.Z, {
@@ -85,7 +85,7 @@ function O(e) {
       })
     }) : null, k ? (0, o.jsx)(m.Z, {
       heading: y.intl.string(y.t.M0zgnZ),
-      introText: B ? y.intl.format(y.t["4bk9Ag"], {
+      introText: D ? y.intl.format(y.t["4bk9Ag"], {
         learnMoreHook: (e, n) => (0, o.jsx)(l.eee, {
           href: d.Z.getArticleURL(v.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e

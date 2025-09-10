@@ -56,7 +56,7 @@ function O(e) {
     sourceAnalyticsLocations: C = []
   } = e, E = t === j.ME ? true : t, S = (0, r.e7)([d.Z], () => d.Z.isBlocked(n.id)), {
     analyticsLocations: w
-  } = (0, a.ZP)([...C, S ? c.Z.BLOCKED_PROFILE_MODAL : c.Z.IGNORED_PROFILE_MODAL]), D = (0, f.ZB)({
+  } = (0, a.ZP)([...C, S ? c.Z.BLOCKED_PROFILE_MODAL : c.Z.IGNORED_PROFILE_MODAL]), B = (0, f.ZB)({
     layout: "MODAL_V2",
     userId: n.id,
     showGuildProfile: true,
@@ -64,7 +64,7 @@ function O(e) {
     channelId: O,
     messageId: Z,
     roleId: P
-  }), B = [{
+  }), D = [{
     icon: i.owK,
     description: y.intl.string(y.t.kcuWvb)
   }, {
@@ -76,7 +76,7 @@ function O(e) {
   return (0, o.jsx)(a.Gt, {
     value: w,
     children: (0, o.jsx)(f.Mt, {
-      value: D,
+      value: B,
       openedAt: N,
       fetchStartedAt: null == L ? true : L.fetchStartedAt,
       fetchEndedAt: null == L ? true : L.fetchEndedAt,
@@ -114,7 +114,7 @@ function O(e) {
               })]
             }), (0, o.jsx)("div", {
               className: _.safetyTable,
-              children: B.map((e, n) => {
+              children: D.map((e, n) => {
                 let {
                   icon: t,
                   description: r
@@ -135,7 +135,7 @@ function O(e) {
                   A(), (0, p.pQ)(I({
                     action: S ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                     analyticsLocations: w
-                  }, D))
+                  }, B))
                 }
               }), (0, o.jsx)(h.Z, {
                 userId: n.id,
@@ -143,7 +143,7 @@ function O(e) {
                   A(), (0, p.pQ)(I({
                     action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                     analyticsLocations: w
-                  }, D))
+                  }, B))
                 }
               })]
             })]

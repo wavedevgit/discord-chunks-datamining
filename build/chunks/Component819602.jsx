@@ -77,8 +77,8 @@ function A(e) {
   null == C && (C = true);
   let S = null != (t = h.metadata) ? t : {},
     w = C ? (0, p.FI)(S[I.PC.CREATED_AT], y) : null,
-    D = (0, a.dQu)(i.Z.unsafe_rawColors.TWITTER).hex(),
-    B = Z.intl.string(Z.t["6H6h1t"]);
+    B = (0, a.dQu)(i.Z.unsafe_rawColors.TWITTER).hex(),
+    D = Z.intl.string(Z.t["6H6h1t"]);
   if (C) switch (h.type) {
     case _.ABu.REDDIT:
       r = (0, m.oP)(S);
@@ -89,7 +89,7 @@ function A(e) {
     case _.ABu.BLUESKY:
     case _.ABu.MASTODON:
     case _.ABu.TWITTER:
-      r = (0, m.rJ)(S), "1" === S[I.PC.TWITTER_VERIFIED] && (s = D, B = Z.intl.string(Z.t.Jebrw8));
+      r = (0, m.rJ)(S), "1" === S[I.PC.TWITTER_VERIFIED] && (s = B, D = Z.intl.string(Z.t.Jebrw8));
       break;
     case _.ABu.PAYPAL:
       r = (0, m.li)(S);
@@ -131,7 +131,7 @@ function A(e) {
       color: null != s ? s : M,
       forcedIconColor: U,
       size: 16,
-      tooltipText: B
+      tooltipText: D
     }) : null;
   return (0, o.jsxs)("li", {
     className: l()(P.connectedAccountContainer, null != r && r.length > 0 || null != w ? P.connectedAccountContainerWithMetadata : null, A),

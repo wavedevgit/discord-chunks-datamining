@@ -40,8 +40,8 @@ function E(e) {
     guildId: E,
     channelId: S,
     messageId: w,
-    roleId: D,
-    sessionId: B,
+    roleId: B,
+    sessionId: D,
     initialSection: L,
     initialSubsection: R,
     transitionState: M,
@@ -53,11 +53,11 @@ function E(e) {
   } = (0, c.ZP)([...V, i.Z.USER_PROFILE_MODAL]), W = (0, d.ZB)({
     layout: "MODAL",
     userId: n.id,
-    sourceSessionId: B,
+    sourceSessionId: D,
     guildId: F,
     channelId: S,
     messageId: w,
-    roleId: D
+    roleId: B
   }), Y = (0, Z.Z)(n);
   return (0, o.jsx)(c.Gt, {
     value: K,

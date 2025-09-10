@@ -39,8 +39,8 @@ function E(e) {
     guildId: E,
     channelId: S,
     messageId: w,
-    roleId: D,
-    sessionId: B,
+    roleId: B,
+    sessionId: D,
     transitionState: L,
     openedAt: R,
     onClose: M,
@@ -50,11 +50,11 @@ function E(e) {
   } = (0, a.ZP)([...U, c.Z.USER_PROFILE_MODAL]), H = (0, f.ZB)({
     layout: "MODAL",
     userId: t.id,
-    sourceSessionId: B,
+    sourceSessionId: D,
     guildId: k,
     channelId: S,
     messageId: w,
-    roleId: D
+    roleId: B
   }), K = r.useRef(null), W = (0, i.Z)(K);
   return (0, o.jsx)(a.Gt, {
     value: z,

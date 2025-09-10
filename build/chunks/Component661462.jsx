@@ -1,8 +1,8 @@
 /** Chunk was on 30355 **/
 /** chunk id: 661462, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  F: () => j,
-  Z: () => h
+  F: () => y,
+  Z: () => v
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,10 +14,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk311044 = require("./311044.jsx"),
   Chunk408986 = require("./408986.jsx"),
   Chunk778414 = require("./778414.jsx"),
+  Chunk414655 = require("./414655.jsx"),
   Chunk228168 = require("./228168.js"),
   Chunk883101 = require("./883101.js");
 
-function p(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +37,7 @@ function p(e) {
   return e
 }
 
-function b(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,7 +50,7 @@ function b(e, t) {
   }), e
 }
 
-function j(e) {
+function y(e) {
   var {
     children: t,
     className: n,
@@ -69,16 +70,16 @@ function j(e) {
     }
     return l
   }(e, ["children", "className", "scrollerRef"]);
-  return (0, r.jsx)(s.Ttm, b(p({
+  return (0, r.jsx)(s.Ttm, j(b({
     ref: l,
-    className: a()(g.tabPanelScroller, n),
+    className: a()(p.tabPanelScroller, n),
     fade: true
   }, i), {
     children: t
   }))
 }
 
-function y(e) {
+function h(e) {
   let {
     user: t,
     currentUser: n,
@@ -87,32 +88,32 @@ function y(e) {
     displayProfile: a,
     guildId: s,
     channelId: o,
-    onClose: g
+    onClose: p
   } = e;
-  return l === m.oh.ACTIVITY ? (0, r.jsx)(c.Z, {
+  return l === g.oh.ACTIVITY ? (0, r.jsx)(c.Z, {
     user: t,
     currentUser: n,
     displayProfile: a,
     guildId: s,
     channelId: o,
     subsection: i,
-    onClose: g
-  }) : l === m.oh.MUTUAL_FRIENDS ? (0, r.jsx)(u.Z, {
+    onClose: p
+  }) : l === g.oh.MUTUAL_FRIENDS ? (0, r.jsx)(u.Z, {
     user: t,
     guildId: s,
     channelId: o,
-    onClose: g
-  }) : l === m.oh.MUTUAL_GUILDS ? (0, r.jsx)(d.Z, {
+    onClose: p
+  }) : l === g.oh.MUTUAL_GUILDS ? (0, r.jsx)(d.Z, {
     user: t,
-    onClose: g
-  }) : l === m.oh.WIDGETS ? (0, r.jsx)(f.C, {
+    onClose: p
+  }) : l === g.oh.WIDGETS ? (0, r.jsx)(f.C, {
     user: t,
     guildId: s,
     channelId: o
-  }) : null
+  }) : l === g.oh.WISHLIST ? (0, r.jsx)(m.Z, {}) : null
 }
 
-function h(e) {
+function v(e) {
   var t;
   let {
     user: n,
@@ -123,14 +124,14 @@ function h(e) {
     items: d,
     initialSection: f,
     initialSubsection: m,
-    onClose: j
+    onClose: g
   } = e, {
-    trackUserProfileAction: h
+    trackUserProfileAction: y
   } = (0, o.KZ)(), [{
     section: v,
     subsection: x,
     text: O
-  }, P] = l.useState(b(p({}, null != (t = d.find(e => {
+  }, P] = l.useState(j(b({}, null != (t = d.find(e => {
     let {
       section: t
     } = e;
@@ -139,10 +140,10 @@ function h(e) {
     subsection: m
   }));
   return (0, r.jsxs)("div", {
-    className: g.container,
+    className: p.container,
     children: [(0, r.jsx)(s.Ttm, {
       orientation: "horizontal",
-      className: g.tabListScroller,
+      className: p.tabListScroller,
       fade: true,
       paddingFix: false,
       children: (0, r.jsx)(s.njP, {
@@ -150,7 +151,7 @@ function h(e) {
         look: "custom",
         selectedItem: v,
         onItemSelect: e => {
-          h({
+          y({
             action: "PRESS_SECTION",
             section: e
           }), P(t => {
@@ -159,7 +160,7 @@ function h(e) {
           })
         },
         children: d.map(e => (0, r.jsx)(s.njP.Item, {
-          className: g.tabBarItem,
+          className: p.tabBarItem,
           id: e.section,
           "aria-label": e.text,
           children: e.text
@@ -168,8 +169,8 @@ function h(e) {
     }), (0, r.jsx)(s.njP.Panel, {
       id: v,
       "aria-label": O,
-      className: g.tabBarPanel,
-      children: (0, r.jsx)(y, {
+      className: p.tabBarPanel,
+      children: (0, r.jsx)(h, {
         user: n,
         currentUser: i,
         displayProfile: a,
@@ -177,7 +178,7 @@ function h(e) {
         channelId: u,
         section: v,
         subsection: x,
-        onClose: j
+        onClose: g
       })
     })]
   })
