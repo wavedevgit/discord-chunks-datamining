@@ -2,14 +2,13 @@
 /** chunk id: 770812, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => O
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk990547 = require("./990547.js"),
   Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk410030 = require("./410030.js"),
   Chunk100527 = require("./100527.js"),
@@ -23,79 +22,78 @@ var Chunk990547 = require("./990547.js"),
   Chunk176505 = require("./176505.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk454615 = require("./454615.js");
-let O = () => {
+let y = () => {
   let e = (0, Chunk410030.ZP)();
   return (0, Chunk780384.ap)(module) ? require("./537381.js") : require("./341048.js")
 };
 
-function v(e) {
+function O(e) {
   let {
     onClose: t,
     guildId: n,
     emojiId: o
-  } = e, c = O(), {
-    analyticsLocations: v
-  } = (0, d.ZP)(u.Z.GUILD_ROLE_SUBSCRIPTION_EMOJI_PICKER_UPSELL);
-  (0, f.Z)({
+  } = e, l = y(), {
+    analyticsLocations: O
+  } = (0, u.ZP)(c.Z.GUILD_ROLE_SUBSCRIPTION_EMOJI_PICKER_UPSELL);
+  (0, d.Z)({
     type: i.ImpressionTypes.MODAL,
     name: i.ImpressionNames.ROLE_SUBSCRIPTION_EMOJI_UPSELL,
     properties: {
-      location_stack: v,
+      location_stack: O,
       emoji_guild_id: n,
       emoji_id: null != o ? o : null
     }
   });
-  let I = () => {
-      (0, _.uL)(g.Z5c.CHANNEL(n, E.oC.ROLE_SUBSCRIPTIONS), {
-        sourceLocationStack: v
+  let v = () => {
+      (0, f.uL)(m.Z5c.CHANNEL(n, g.oC.ROLE_SUBSCRIPTIONS), {
+        sourceLocationStack: O
       })
     },
-    T = (0, a.e7)([p.Z], () => p.Z.getGuild(n)),
-    S = (0, a.e7)([h.Z], () => null != n && h.Z.getUserSubscriptionRoles(n).size > 0),
-    A = S ? b.intl.string(b.t["GoLM9/"]) : b.intl.formatToPlainString(b.t["h0u/Hh"], {
-      serverName: null == T ? true : T.name
+    I = (0, a.e7)([_.Z], () => _.Z.getGuild(n)),
+    T = (0, a.e7)([p.Z], () => null != n && p.Z.getUserSubscriptionRoles(n).size > 0),
+    S = T ? E.intl.string(E.t["GoLM9/"]) : E.intl.formatToPlainString(E.t["h0u/Hh"], {
+      serverName: null == I ? true : I.name
     }),
-    C = S ? b.intl.string(b.t.PjZ7DQ) : b.intl.string(b.t.p8FG1N);
+    A = T ? E.intl.string(E.t.PjZ7DQ) : E.intl.string(E.t.p8FG1N);
   return (0, r.jsxs)("div", {
-    className: y.container,
+    className: b.container,
     children: [(0, r.jsx)("div", {
-      className: y.background
+      className: b.background
     }), (0, r.jsxs)("div", {
-      className: y.content,
-      children: [(0, r.jsx)(s.zx, {
-        look: s.zx.Looks.BLANK,
-        size: s.zx.Sizes.ICON,
-        className: y.closeButton,
+      className: b.content,
+      children: [(0, r.jsx)(s.P3F, {
+        className: b.closeButton,
+        "aria-label": E.intl.string(E.t.cpT0Cg),
         onClick: t,
-        children: (0, r.jsx)(l.Dio, {
+        children: (0, r.jsx)(s.Dio, {
           size: "xs",
           color: "currentColor",
-          "aria-label": b.intl.string(b.t.cpT0Cg),
-          className: y.closeButtonIcon
+          "aria-label": E.intl.string(E.t.cpT0Cg),
+          className: b.closeButtonIcon
         })
       }), (0, r.jsx)("img", {
         alt: "",
-        src: c,
-        className: y.upsellImage
-      }), (0, r.jsx)(l.LZC, {
+        src: l,
+        className: b.upsellImage
+      }), (0, r.jsx)(s.LZC, {
         size: 22
-      }), (0, r.jsx)(l.X6q, {
+      }), (0, r.jsx)(s.X6q, {
         color: "header-primary",
         variant: "heading-lg/extrabold",
-        className: y.header,
-        children: b.intl.string(b.t.cBjkc3)
-      }), (0, r.jsx)(l.LZC, {
+        className: b.header,
+        children: E.intl.string(E.t.cBjkc3)
+      }), (0, r.jsx)(s.LZC, {
         size: 4
-      }), (0, r.jsx)(l.Text, {
+      }), (0, r.jsx)(s.Text, {
         color: "header-secondary",
         variant: "text-md/normal",
-        className: y.description,
-        children: A
-      }), (0, r.jsx)(l.LZC, {
+        className: b.description,
+        children: S
+      }), (0, r.jsx)(s.LZC, {
         size: 24
-      }), (0, r.jsx)(m.Z, {
-        onClick: I,
-        children: C
+      }), (0, r.jsx)(h.Z, {
+        onClick: v,
+        children: A
       })]
     })]
   })
