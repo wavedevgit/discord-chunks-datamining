@@ -2,7 +2,7 @@
 /** chunk id: 638970, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => M
+  Z: () => U
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,6 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk468363 = require("./468363.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk313201 = require("./313201.js"),
+  Chunk220410 = require("./220410.js"),
   Chunk158776 = require("./158776.js"),
   Chunk885110 = require("./885110.js"),
   Chunk823379 = require("./823379.js"),
@@ -22,6 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk369566 = require("./369566.js"),
   Chunk29899 = require("./29899.js"),
   Chunk510659 = require("./510659.jsx"),
+  Chunk168463 = require("./168463.jsx"),
   Chunk151545 = require("./151545.jsx"),
   Chunk769140 = require("./769140.jsx"),
   Chunk864141 = require("./864141.jsx"),
@@ -30,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk31948 = require("./31948.js");
 
-function N(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -39,20 +41,20 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      N(e, t, n[t])
+      P(e, t, n[t])
     })
   }
   return e
 }
 
-function P(e, t) {
+function D(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -63,175 +65,175 @@ function P(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
+function x(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let D = 250,
-  x = 24;
+let L = 250,
+  j = 24;
 
-function L(e, t) {
+function M(e, t) {
   switch (t.type) {
     case "MEASUREMENT_COMPLETE":
-      return w(R({}, e), {
+      return x(w({}, e), {
         animationPhase: "ready",
         height: t.height
       });
     case "START_EXPAND_ANIMATION":
-      return w(R({}, e), {
+      return x(w({}, e), {
         animationPhase: "animating",
         height: t.height
       });
     case "ANIMATION_COMPLETE":
-      return w(R({}, e), {
+      return x(w({}, e), {
         animationPhase: "done",
         height: "auto"
       });
     default:
-      return (0, m.vE)(t)
+      return (0, g.vE)(t)
   }
 }
-let j = {
+let k = {
   animationPhase: "awaitingInput",
   height: "auto"
 };
 
-function M(e) {
+function U(e) {
   let {
     user: t,
     currentUser: n,
     guildId: a,
-    onOpenUserProfileModal: m,
-    onClose: N
-  } = e, P = (0, _.Dt)(), {
-    analyticsLocations: w
+    onOpenUserProfileModal: g,
+    onClose: P
+  } = e, D = (0, _.Dt)(), {
+    analyticsLocations: x
   } = (0, f.ZP)(), {
-    trackUserProfileAction: M
-  } = (0, g.KZ)(), {
-    live: k,
-    stream: U
-  } = (0, E.Z)(t.id), {
-    voiceChannel: G,
-    voiceActivity: B
-  } = (0, b.Z)({
+    trackUserProfileAction: U
+  } = (0, E.KZ)(), {
+    live: G,
+    stream: B
+  } = (0, b.Z)(t.id), {
+    voiceChannel: Z,
+    voiceActivity: F
+  } = (0, y.Z)({
     userId: t.id,
     guildId: a
-  }), Z = t.id === n.id, F = (0, s.e7)([h.Z, p.Z], () => {
-    let e = Z ? h.Z.getStatus() : p.Z.getStatus(t.id, a);
-    return e === S.Sk.OFFLINE || e === S.Sk.INVISIBLE
+  }), V = t.id === n.id, H = (0, s.e7)([m.Z, h.Z], () => {
+    let e = V ? m.Z.getStatus() : h.Z.getStatus(t.id, a);
+    return e === C.Sk.OFFLINE || e === C.Sk.INVISIBLE
   }), {
-    voiceActivityStatusEnabled: V
+    voiceActivityStatusEnabled: Y
   } = (0, d.U)({
     location: "UserProfileStackedActivity"
-  }), H = V && null == U && null == B && null != G, Y = (0, y.yi)(), W = (null == Y ? true : Y.interactionSource) === T.n_.ACTIVITY, K = i.useRef(null), z = i.useRef(null), q = i.useRef(null), X = i.useRef(null), [Q, J] = i.useReducer(L, j), {
-    height: $,
-    animationPhase: ee
-  } = Q, et = "awaitingInput" !== ee, en = "animating" === ee || "done" === ee, er = [], ei = {
+  }), W = Y && null == B && null == F && null != Z, K = (0, O.yi)(), z = (null == K ? true : K.interactionSource) === A.n_.ACTIVITY, q = i.useRef(null), X = i.useRef(null), Q = i.useRef(null), J = i.useRef(null), [$, ee] = i.useReducer(M, k), {
+    height: et,
+    animationPhase: en
+  } = $, er = "awaitingInput" !== en, ei = "animating" === en || "done" === en, ea = (0, p.P6)("UserProfileStackedActivity"), eo = [], es = {
     user: t,
     currentUser: n,
-    className: C.card,
-    onClose: N
+    className: R.card,
+    onClose: P
   };
-  null != U && er.push((0, r.jsx)(v.Z, R({
-    stream: U
-  }, ei), "stream")), k.forEach((e, t) => {
-    er.push((0, r.jsx)(O.Z, R({
+  null != B && eo.push((0, r.jsx)(T.Z, w({
+    stream: B
+  }, es), "stream")), G.forEach((e, t) => {
+    eo.push((0, r.jsx)(I.Z, w({
       activity: e
-    }, ei), "live-".concat(t)))
-  }), H && er.push((0, r.jsx)(I.Z, R({
-    voiceChannel: G
-  }, ei), "voice"));
-  let [ea, ...eo] = er, es = eo.length > 0, el = null != m && es ? (0, r.jsx)(l.zx, {
+    }, es), "live-".concat(t)))
+  }), W && eo.push((0, r.jsx)(S.Z, w({
+    voiceChannel: Z
+  }, es), "voice"));
+  let [el, ...ec] = eo, eu = ec.length > 0, ed = null != g && eu ? (0, r.jsx)(l.zx, {
     look: l.zx.Looks.BLANK,
     size: l.zx.Sizes.NONE,
     color: l.zx.Colors.TRANSPARENT,
-    className: o()(C.viewAllButton, en && C.isShown),
+    className: o()(R.viewAllButton, ei && R.isShown),
     onClick: () => {
-      M({
+      U({
         action: "PRESS_VIEW_PROFILE",
-        analyticsLocations: w
-      }), m({
-        section: T.oh.ACTIVITY
+        analyticsLocations: x
+      }), g({
+        section: A.oh.ACTIVITY
       })
     },
     children: (0, r.jsx)(c.Text, {
       variant: "text-xs/medium",
       color: "header-primary",
-      children: A.intl.string(A.t.pD1L1t)
+      children: N.intl.string(N.t.pD1L1t)
     })
-  }) : null, ec = i.useCallback(() => {
-    if (null == K.current || null == q.current) return;
-    M({
+  }) : null, ef = i.useCallback(() => {
+    if (null == q.current || null == Q.current) return;
+    U({
       action: "PRESS_SHOW_MORE_ACTIVITY",
-      analyticsLocations: w
+      analyticsLocations: x
     });
-    let e = K.current.getBoundingClientRect().height,
-      t = q.current.getBoundingClientRect().height;
-    J({
+    let e = q.current.getBoundingClientRect().height,
+      t = Q.current.getBoundingClientRect().height;
+    ee({
       type: "MEASUREMENT_COMPLETE",
       height: e
     }), requestAnimationFrame(() => {
-      J({
+      ee({
         type: "START_EXPAND_ANIMATION",
-        height: e + t - x
-      }), X.current = setTimeout(() => {
+        height: e + t - j
+      }), J.current = setTimeout(() => {
         var e;
-        J({
+        ee({
           type: "ANIMATION_COMPLETE",
           height: "auto"
-        }), null == (e = z.current) || e.focus()
-      }, D)
+        }), null == (e = X.current) || e.focus()
+      }, L)
     })
-  }, [w, M]);
+  }, [x, U]);
   return ((0, u.zq)(() => {
-    null != X.current && window.clearTimeout(X.current)
-  }), F || 0 === er.length) ? null : (0, r.jsxs)("section", {
-    "aria-labelledby": P,
+    null != J.current && window.clearTimeout(J.current)
+  }), H) ? null : 0 === eo.length ? V && ea ? (0, r.jsx)(v.Z, {}) : null : (0, r.jsxs)("section", {
+    "aria-labelledby": D,
     children: [(0, r.jsx)(c.nn4, {
       children: (0, r.jsx)(c.H, {
-        id: P,
-        children: A.intl.string(A.t.J6STd3)
+        id: D,
+        children: N.intl.string(N.t.J6STd3)
       })
     }), (0, r.jsxs)("div", {
-      ref: K,
-      className: C.activityContainer,
+      ref: q,
+      className: R.activityContainer,
       style: {
-        height: "auto" !== $ ? "".concat($, "px") : $
+        height: "auto" !== et ? "".concat(et, "px") : et
       },
       children: [(0, r.jsxs)("ul", {
-        ref: z,
-        className: C.cardsList,
-        "aria-labelledby": P,
+        ref: X,
+        className: R.cardsList,
+        "aria-labelledby": D,
         tabIndex: false,
         children: [(0, r.jsxs)("li", {
-          className: o()(C.firstCardContainer, !en && eo.length > 0 && C.hasShowMoreButton, W && C.isInteracting),
-          children: [ea, es && "done" !== ee && (0, r.jsx)("div", {
-            className: C.showMoreButtonContainer,
+          className: o()(R.firstCardContainer, !ei && ec.length > 0 && R.hasShowMoreButton, z && R.isInteracting),
+          children: [el, eu && "done" !== en && (0, r.jsx)("div", {
+            className: R.showMoreButtonContainer,
             children: (0, r.jsx)(l.zx, {
               look: l.zx.Looks.BLANK,
               size: l.zx.Sizes.NONE,
               color: l.zx.Colors.TRANSPARENT,
-              className: o()(C.showMoreButton, en && C.isHidden),
-              onClick: ec,
+              className: o()(R.showMoreButton, ei && R.isHidden),
+              onClick: ef,
               children: (0, r.jsx)(c.Text, {
                 variant: "text-xs/medium",
                 color: "none",
-                children: A.intl.format(A.t.wv8Q7u, {
-                  activitiesCount: eo.length
+                children: N.intl.format(N.t.wv8Q7u, {
+                  activitiesCount: ec.length
                 })
               })
             })
           })]
-        }), es && et && eo.map((e, t) => (0, r.jsx)("li", {
-          className: o()(C.remainingCardContainer, en && C.isShown),
+        }), eu && er && ec.map((e, t) => (0, r.jsx)("li", {
+          className: o()(R.remainingCardContainer, ei && R.isShown),
           children: e
         }, "activity-".concat(t)))]
-      }), es && et && el]
-    }), es && (0, r.jsxs)("div", {
-      ref: q,
-      className: o()(C.cardsList, C.remainingCardsCopyToMeasure),
-      children: [eo, el]
+      }), eu && er && ed]
+    }), eu && (0, r.jsxs)("div", {
+      ref: Q,
+      className: o()(R.cardsList, R.remainingCardsCopyToMeasure),
+      children: [ec, ed]
     })]
   })
 }

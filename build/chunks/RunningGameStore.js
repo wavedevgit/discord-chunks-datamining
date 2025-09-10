@@ -670,7 +670,7 @@ function e6(e) {
       })
     })
   }), e = module.filter(e => null != e.executables && e.executables.length > 0);
-  let u = Chunk220410.T.getConfig({
+  let u = Chunk220410.Tf.getConfig({
     location: "RunningGameStore.handleGamesDatabaseUpdate"
   }).useDetectionV2;
   Chunk998502.ZP.setObservedGamesCallback(module, Chunk433517, e => {
