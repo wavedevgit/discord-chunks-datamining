@@ -34,7 +34,7 @@ var Chunk220159 = require("./220159.js"),
   Chunk394370 = require("./394370.js"),
   Chunk984749 = require("./984749.js"),
   Chunk882674 = require("./882674.js"),
-  Chunk488066 = require("./488066.js"),
+  Chunk580394 = require("./580394.js"),
   Chunk770050 = require("./770050.js"),
   Chunk89416 = require("./89416.js"),
   z = require("./958288.js").forEach,
@@ -192,4 +192,4 @@ var Chunk220159 = require("./220159.js"),
   forced: !Chunk969493
 }, {
   getOwnPropertyNames: tv
-}), Chunk488066(), Chunk770050(K, U), Chunk270498[G] = true
+}), Chunk580394(), Chunk770050(K, U), Chunk270498[G] = true

@@ -15,7 +15,7 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let Chunk4667 = require("./4667.js");
+let Chunk6075 = require("./6075.js");
 class s {
   static create(e) {
     let t = null;
@@ -39,7 +39,7 @@ class s {
     return 3 === this.img.ctype && this.img.depth <= 8
   }
   async hasSrgbIccProfile() {
-    let e = await Chunk4667.load(this.originalBuffer, {
+    let e = await Chunk6075.load(this.originalBuffer, {
       async: true,
       expanded: true,
       includeUnknown: true
