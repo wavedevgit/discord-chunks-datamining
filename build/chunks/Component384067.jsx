@@ -2,7 +2,7 @@
 /** chunk id: 384067, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,82 +17,82 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk310582 = require("./310582.js");
-let h = e => {
+let m = e => {
   var t, n, a;
   let {
-    wideBannerBlock: h,
+    wideBannerBlock: m,
     handleTransition: _,
-    tab: b
-  } = e, C = null == (t = u.Z.getCategoryByStoreListingId(h.categoryStoreListingId)) ? true : t.skuId, E = l.useRef(null), S = l.useRef(null), [O, v] = l.useState();
+    tab: C
+  } = e, b = null == (t = u.Z.getCategoryByStoreListingId(m.categoryStoreListingId)) ? true : t.skuId, E = l.useRef(null), S = l.useRef(null), [v, O] = l.useState();
   l.useEffect(() => {
     let e = S.current;
     if (null == e) return;
     let t = () => {
-      e.naturalWidth > 0 && e.naturalHeight > 0 && v(1080 * (e.naturalHeight / e.naturalWidth))
+      e.naturalWidth > 0 && e.naturalHeight > 0 && O(1080 * (e.naturalHeight / e.naturalWidth))
     };
     return e.complete ? t() : e.onload = t, () => {
       e.onload = null
     }
   }, []);
-  let x = null != C ? C : "",
+  let x = null != b ? b : "",
     {
       handleCardVisibilityChange: y
     } = (0, d.E)(x, "home", "marketing wide banner"),
-    T = h.bannerUrl;
+    T = m.bannerUrl;
   if (null == T) return null;
-  let L = b === g.AW.ORBS;
-  return (0, r.jsx)(o.$, {
+  let L = C === g.AW.ORBS;
+  return (0, r.jsx)(i.$, {
     innerRef: E,
     onChange: y,
     threshold: 0,
     children: (0, r.jsxs)("div", {
       ref: E,
-      className: s()(m.row, m.between, m.bannerBlockContainer, m.centeredSection, {
-        [m.extraRounded]: L
+      className: s()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
+        [h.extraRounded]: L
       }),
       children: [(0, r.jsx)("div", {
-        className: s()(m.wideBannerBackgroundImg, {
-          [m.extraRounded]: L
+        className: s()(h.wideBannerBackgroundImg, {
+          [h.extraRounded]: L
         }),
         children: (0, r.jsx)("img", {
           ref: S,
           src: T,
-          alt: h.title,
-          className: s()(m.wideBannerArt, {
-            [m.wideBannerArtOrbs]: L
+          alt: m.title,
+          className: s()(h.wideBannerArt, {
+            [h.wideBannerArtOrbs]: L
           }),
           style: {
-            height: null != O ? "".concat(O, "px") : "auto"
+            height: null != v ? "".concat(v, "px") : "auto"
           }
         })
       }), (0, r.jsx)("div", {
-        className: m.wideBannerContentContainer,
+        className: h.wideBannerContentContainer,
         style: {
-          maxHeight: null != O ? "".concat(O, "px") : "auto"
+          maxHeight: null != v ? "".concat(v, "px") : "auto"
         },
         children: (0, r.jsxs)("div", {
-          className: m.wideBannerTextContainer,
-          children: [(0, r.jsx)(i.X6q, {
+          className: h.wideBannerTextContainer,
+          children: [(0, r.jsx)(o.X6q, {
             style: {
-              color: null != (n = h.bannerTextColor) ? n : "var(--header-primary)"
+              color: null != (n = m.bannerTextColor) ? n : "var(--header-primary)"
             },
-            className: L ? m.wideBannerOrbsHeading : true,
+            className: L ? h.wideBannerOrbsHeading : true,
             variant: L ? "heading-xl/bold" : "heading-lg/semibold",
-            children: h.title
-          }), (0, r.jsx)(i.Text, {
+            children: m.title
+          }), (0, r.jsx)(o.Text, {
             style: {
-              color: null != (a = h.bannerTextColor) ? a : "var(--text-muted)"
+              color: null != (a = m.bannerTextColor) ? a : "var(--text-muted)"
             },
             lineClamp: 2,
             variant: L ? "text-md/medium" : "text-sm/medium",
             children: L ? p.intl.format(p.t.SFFP7O, {
               helpdeskArticle: c.Z.getArticleURL(f.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
-            }) : h.body
+            }) : m.body
           })]
         })
-      }), true !== h.disableCta && (0, r.jsx)("div", {
-        className: m.wideBannerBlockButton,
-        children: (0, r.jsx)(i.zxk, {
+      }), true !== m.disableCta && (0, r.jsx)("div", {
+        className: h.wideBannerBlockButton,
+        children: (0, r.jsx)(o.zxk, {
           variant: "overlay-primary",
           onClick: () => _("shop wide banner", x),
           text: p.intl.string(p.t.jVcuVV)

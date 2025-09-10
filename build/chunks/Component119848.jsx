@@ -15,9 +15,9 @@ function c(e) {
   let {
     username: t,
     oneClickFlow: r = false
-  } = e, c = (0, s.M)((0, o.R_)(t), true, false, r);
+  } = e, c = (0, s.M)((0, a.R_)(t), true, false, r);
   if (null == c) return null;
-  let u = (0, i.EQ)(c.type).with(a.K.RATE_LIMIT, () => "info").with(a.K.ERROR, () => "error").with(a.K.AVAILABLE, () => "success").with(a.K.INTERNAL_ERROR, () => null).exhaustive();
+  let u = (0, i.EQ)(c.type).with(o.K.RATE_LIMIT, () => "info").with(o.K.ERROR, () => "error").with(o.K.AVAILABLE, () => "success").with(o.K.INTERNAL_ERROR, () => null).exhaustive();
   return null == u ? null : (0, n.jsx)(l.Z, {
     type: u,
     children: c.message

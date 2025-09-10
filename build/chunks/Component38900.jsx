@@ -35,9 +35,9 @@ let u = () => 4 * Math.random() + 8,
     children: d.map(e => (0, r.jsxs)("div", {
       className: s.cardsContainer,
       children: [(0, r.jsx)("div", {
-        className: a()(i.skeleton, o.shopBanner),
+        className: a()(o.skeleton, i.shopBanner),
         children: (0, r.jsx)("div", {
-          className: i.bannerBody
+          className: o.bannerBody
         })
       }), Array.from({
         length: e

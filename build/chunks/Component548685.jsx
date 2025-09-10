@@ -40,17 +40,17 @@ let j = e => {
     prioritizeUserDiscounts: I,
     tab: N,
     buttonContainerClassName: A
-  } = e, P = (0, o.e7)([d.default], () => d.default.getCurrentUser()), R = m.ZP.canUseCollectibles(P), Z = (0, v.G)("FeedBlock"), {
+  } = e, P = (0, i.e7)([d.default], () => d.default.getCurrentUser()), R = h.ZP.canUseCollectibles(P), Z = (0, O.G)("FeedBlock"), {
     sortType: w,
     setSortType: F,
     sortedItems: H,
     sortOptions: D,
     shuffleProducts: M,
     showRecommendationOption: W
-  } = (0, S.Z)(j, R, I), U = (0, O.St)(H), V = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), z = (0, o.e7)([g.Z], () => g.Z.isFocused()), G = !V && z, {
+  } = (0, S.Z)(j, R, I), U = (0, v.St)(H), V = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), z = (0, i.e7)([g.Z], () => g.Z.isFocused()), G = !V && z, {
     animationPhase: q,
     startAnimation: K
-  } = (0, E.y)(), Y = (0, h.sp)(), X = null != (t = null == Y ? true : Y.sessionId) ? t : "", Q = l.useRef(null), J = l.useCallback(e => {
+  } = (0, E.y)(), Y = (0, m.sp)(), X = null != (t = null == Y ? true : Y.sessionId) ? t : "", Q = l.useRef(null), J = l.useCallback(e => {
     K({
       isShuffling: false,
       onOutroComplete: () => F(e)
@@ -65,16 +65,16 @@ let j = e => {
       className: L.blockHeader,
       children: [(0, r.jsxs)("div", {
         className: L.headerLeft,
-        children: [(0, r.jsx)(i.X6q, {
+        children: [(0, r.jsx)(o.X6q, {
           variant: "heading-lg/semibold",
           children: a
-        }), W && (0, r.jsx)(i.ua7, {
+        }), W && (0, r.jsx)(o.ua7, {
           text: y.intl.string(y.t["3taPdn"]),
           position: "top",
           "aria-label": y.intl.string(y.t["3taPdn"]),
           children: e => {
             var t, n;
-            return (0, r.jsx)(i.P3F, (t = function(e) {
+            return (0, r.jsx)(o.P3F, (t = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                   r = Object.keys(n);
@@ -94,7 +94,7 @@ let j = e => {
             }({}, e), n = n = {
               onClick: () => (0, c.Z)(p.Z.getArticleURL(x.BhN.DATA_USED_FOR_RECOMMENDED)),
               className: L.informationIcon,
-              children: (0, r.jsx)(i.d3s, {
+              children: (0, r.jsx)(o.d3s, {
                 size: "sm"
               })
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -113,12 +113,12 @@ let j = e => {
         className: s()(L.headerRight, {
           [T.shopTakeOver]: Z
         }),
-        children: [(0, r.jsx)(i.Text, {
+        children: [(0, r.jsx)(o.Text, {
           variant: "text-md/medium",
           children: y.intl.string(y.t.uaX709)
         }), (0, r.jsx)("div", {
           className: A,
-          children: (0, r.jsx)(i.PhF, {
+          children: (0, r.jsx)(o.PhF, {
             options: D,
             select: J,
             className: L.sortSelect,
@@ -130,7 +130,7 @@ let j = e => {
           })
         }), (0, r.jsx)("div", {
           className: A,
-          children: (0, r.jsx)(i.zxk, {
+          children: (0, r.jsx)(o.zxk, {
             variant: "secondary",
             text: y.intl.string(y.t.X3tnc3),
             buttonRef: Q,
@@ -150,7 +150,7 @@ let j = e => {
     }), (0, r.jsx)("div", {
       className: L.feed,
       children: n ? (0, r.jsx)(r.Fragment, {
-        children: [...Array(12)].map((e, t) => (0, r.jsx)(b.K, {}, t + 1))
+        children: [...Array(12)].map((e, t) => (0, r.jsx)(C.K, {}, t + 1))
       }) : U.slice(0, k).map((e, t) => {
         let n, l = _.Z.getCategoryForProduct(e.skuId);
         if (null == e || null == l) return null;
@@ -159,13 +159,13 @@ let j = e => {
             className: L.shuffleOutro
           }, "".concat(e.skuId, "-").concat(t));
           else q === E.g.SORT_OUT ? n = L.sortChangedOutro : q === E.g.SHUFFLE_IN ? n = L.shuffleIntro : q === E.g.SORT_IN && (n = L.sortChangedIntro);
-        return (0, r.jsx)(h.k0, {
+        return (0, r.jsx)(m.k0, {
           newValue: {
             tilePosition: t,
             pageSection: "popular picks",
             categoryPosition: 2
           },
-          children: (0, r.jsx)(C.Z, {
+          children: (0, r.jsx)(b.Z, {
             product: e,
             category: l,
             user: P,

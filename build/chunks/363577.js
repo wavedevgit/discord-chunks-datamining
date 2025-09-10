@@ -14,11 +14,11 @@ let u = function(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     r = arguments.length > 2 && true !== arguments[2] && arguments[2],
     u = arguments.length > 3 && true !== arguments[3] && arguments[3],
-    d = (0, a.e7)([l.Z], () => l.Z.validate(e), [e]),
-    m = (0, a.e7)([l.Z], () => l.Z.isRateLimited()),
-    g = (0, s.c)(),
-    f = n.useMemo(() => (0, i.debounce)(e => o.Z.attemptPomelo(e, r ? "registration" : "modal", r, u), g), [g, r, u]);
+    d = (0, o.e7)([l.Z], () => l.Z.validate(e), [e]),
+    m = (0, o.e7)([l.Z], () => l.Z.isRateLimited()),
+    f = (0, s.c)(),
+    g = n.useMemo(() => (0, i.debounce)(e => a.Z.attemptPomelo(e, r ? "registration" : "modal", r, u), f), [f, r, u]);
   return n.useEffect(() => {
-    t && !m && null == d && "" !== e && f(e)
-  }, [t, m, d, e, f]), n.useMemo(() => null != d ? (0, c.ti)(d) : true, [d])
+    t && !m && null == d && "" !== e && g(e)
+  }, [t, m, d, e, g]), n.useMemo(() => null != d ? (0, c.ti)(d) : true, [d])
 }

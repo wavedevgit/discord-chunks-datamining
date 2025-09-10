@@ -2,7 +2,7 @@
 /** chunk id: 141011, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -35,7 +35,7 @@ function p(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,38 +47,38 @@ function m(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = e => {
+let m = e => {
   let {
     asset: t,
     size: n = g.yV,
     className: a,
-    style: h,
+    style: m,
     children: _,
-    categoryBannerOverride: b
-  } = e, C = (0, o.e7)([c.Z], () => c.Z.saturation), E = l.useMemo(() => {
-    if (null == t) return h;
+    categoryBannerOverride: C
+  } = e, b = (0, i.e7)([c.Z], () => c.Z.saturation), E = l.useMemo(() => {
+    if (null == t) return m;
     let e = null != t && /^http/i.test(t) || null != t && /^blob:https?:\/\/[^\/]+\//i.test(t) ? t : (0, d.uV)(t, {
         size: n,
         format: "jpg"
       }),
-      r = (null == b ? true : b.blur) ? {
+      r = (null == C ? true : C.blur) ? {
         filter: "blur(2px)",
         transform: "scale(1.02)"
       } : {};
-    if (1 === C) return p(m(p({}, h), {
-      backgroundImage: (null == b ? true : b.addGradient) ? "url(".concat(e, "), linear-gradient(180deg, rgba(0, 71, 94, 0.6) 5%, rgba(9, 33, 65, 0.6) 95%)") : "url(".concat(e, ")"),
+    if (1 === b) return p(h(p({}, m), {
+      backgroundImage: (null == C ? true : C.addGradient) ? "url(".concat(e, "), linear-gradient(180deg, rgba(0, 71, 94, 0.6) 5%, rgba(9, 33, 65, 0.6) 95%)") : "url(".concat(e, ")"),
       backgroundBlendMode: "multiply",
       backgroundSize: "cover",
       backgroundPosition: "center"
     }), r);
-    let l = (0, u.aD)(i.Z.unsafe_rawColors.BLACK_500.resolve().hex(), 1 - C);
-    return p(m(p({}, h), {
+    let l = (0, u.aD)(o.Z.unsafe_rawColors.BLACK_500.resolve().hex(), 1 - b);
+    return p(h(p({}, m), {
       backgroundImage: "linear-gradient(".concat(l, ", ").concat(l, "), url(").concat(e, ")"),
       backgroundBlendMode: "saturation",
       backgroundSize: "cover",
       backgroundPosition: "center"
     }), r)
-  }, [t, n, C, h, null == b ? true : b.blur, null == b ? true : b.addGradient]);
+  }, [t, n, b, m, null == C ? true : C.blur, null == C ? true : C.addGradient]);
   return (0, r.jsx)("div", {
     className: s()(f.banner, a),
     style: E,

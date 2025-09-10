@@ -35,7 +35,7 @@ let L = (0, Chunk884697.IC)(90),
       category: t
     } = e, {
       analyticsLocations: n
-    } = (0, d.ZP)(), a = l.useRef(null), s = (0, i.e7)([p.default], () => p.default.getCurrentUser());
+    } = (0, d.ZP)(), a = l.useRef(null), s = (0, o.e7)([p.default], () => p.default.getCurrentUser());
     return _.ZP.canUseCollectibles(s) ? t.summary : y.intl.format(y.t["9hafRk"], {
       getPremium: e => (0, r.jsx)(c.P3F, {
         innerRef: a,
@@ -80,16 +80,16 @@ function B(e) {
     hideLimitedTimeBadge: l = false
   } = e, {
     backgroundColors: a
-  } = (0, C.Z)(t.styles), d = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), g = (0, i.e7)([m.Z], () => m.Z.isFocused()), {
+  } = (0, b.Z)(t.styles), d = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), g = (0, o.e7)([h.Z], () => h.Z.isFocused()), {
     bannerOverrides: f,
     shopAllBannerStatic: p,
     shopAllBannerAnimated: _
-  } = (0, v.t0)(t), x = !!(null == f ? true : f.showDarkBannerText);
+  } = (0, O.t0)(t), x = !!(null == f ? true : f.showDarkBannerText);
   return (0, r.jsxs)(E.Z, {
     asset: p,
     className: s()(T.shopBanner, n),
     style: null != a ? {
-      background: "".concat((0, O.nH)(a), " border-box border-box"),
+      background: "".concat((0, v.nH)(a), " border-box border-box"),
       outlineColor: a.border.toHslString()
     } : true,
     children: [!d && null != _ && g && (0, r.jsx)(k, {
@@ -102,14 +102,14 @@ function B(e) {
         height: 28,
         color: "currentColor",
         className: T.discordIcon
-      }), (0, r.jsx)(h.Z, {
+      }), (0, r.jsx)(m.Z, {
         className: T.discordWordmark
       })]
     }) : (0, r.jsx)(c.LZC, {
       size: 28
     }), (null == f ? true : f.addLogo) ? (0, r.jsx)("img", {
       className: T.categoryLogo,
-      src: (0, b.uV)(t.logo, {
+      src: (0, C.uV)(t.logo, {
         size: L
       }),
       alt: t.name,
@@ -126,7 +126,7 @@ function B(e) {
         color: t.bannerTextColor
       } : true,
       variant: "text-md/normal",
-      children: t.skuId === o.T.DISXCORE ? (0, r.jsx)(j, {
+      children: t.skuId === i.T.DISXCORE ? (0, r.jsx)(j, {
         category: t
       }) : t.summary
     }), !l && (0, r.jsx)(S.Z, {

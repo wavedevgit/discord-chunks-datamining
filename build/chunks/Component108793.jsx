@@ -1,7 +1,7 @@
 /** Chunk was on 85342 **/
 /** chunk id: 108793, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,24 +17,24 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk631936 = require("./631936.js");
 
-function E(e) {
+function p(e) {
   var t, r, {
-      userRef: E,
-      usernameSuggestionLoading: h = false,
+      userRef: p,
+      usernameSuggestionLoading: O = false,
       oneClickFlow: y = false
     } = e,
-    O = function(e, t) {
+    h = function(e, t) {
       if (null == e) return {};
       var r, n, i = function(e, t) {
         if (null == e) return {};
         var r, n, i = {},
-          a = Object.keys(e);
-        for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+          o = Object.keys(e);
+        for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var a = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+        var o = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
       }
       return i
     }(e, ["userRef", "usernameSuggestionLoading", "oneClickFlow"]);
@@ -42,43 +42,43 @@ function E(e) {
     user: b,
     editState: S,
     onClose: _
-  } = O, x = (0, l.ZP)(b.id), v = function(e, t, r) {
+  } = h, v = (0, l.ZP)(b.id), j = function(e, t, r) {
     switch (e) {
       case m.Wq.EDIT_USERNAME:
         return {
-          header: f.intl.string(f.t["a/zCWl"]), subtitle: f.intl.string(f.t.gGz0sb)
+          header: g.intl.string(g.t["a/zCWl"]), subtitle: g.intl.string(g.t.gGz0sb)
         };
       case m.Wq.EDIT_DISPLAY_NAME:
         return {
-          header: f.intl.string(f.t.SRDNcH), subtitle: f.intl.string(f.t["940AS0"])
+          header: g.intl.string(g.t.SRDNcH), subtitle: g.intl.string(g.t["940AS0"])
         };
       case m.Wq.PREVIEW:
         return {
-          header: f.intl.formatToPlainString(f.t.XDHrcn, {
+          header: g.intl.formatToPlainString(g.t.XDHrcn, {
             displayName: t
-          }), subtitle: f.intl.format(f.t.bWE0ZG, {
+          }), subtitle: g.intl.format(g.t.bWE0ZG, {
             onClick: () => {
-              r(), s.Z.open(g.oAB.ACCOUNT)
+              r(), s.Z.open(f.oAB.ACCOUNT)
             }
           })
         };
       case m.Wq.SUGGESTION:
         return {
-          header: f.intl.string(f.t.F7T4dX), subtitle: f.intl.formatToPlainString(f.t.Z8F83d, {}), link: f.intl.format(f.t["i2vB8/"], {
-            helpdeskArticle: c.Z.getArticleURL(g.BhN.POMELO_FAQ)
+          header: g.intl.string(g.t.F7T4dX), subtitle: g.intl.formatToPlainString(g.t.Z8F83d, {}), link: g.intl.format(g.t["i2vB8/"], {
+            helpdeskArticle: c.Z.getArticleURL(f.BhN.POMELO_FAQ)
           })
         };
       default:
         return {
-          header: f.intl.string(f.t["a/zCWl"]), subtitle: f.intl.string(f.t.gGz0sb)
+          header: g.intl.string(g.t["a/zCWl"]), subtitle: g.intl.string(g.t.gGz0sb)
         }
     }
-  }(S, u.ZP.getName(b), _), [N, j] = (0, o.q_F)(() => ({
+  }(S, u.ZP.getName(b), _), [N, x] = (0, a.q_F)(() => ({
     opacity: 0,
     y: 10
   }));
   return i.useEffect(() => {
-    j({
+    x({
       y: 0,
       opacity: 1,
       from: {
@@ -86,29 +86,29 @@ function E(e) {
         opacity: 0
       }
     })
-  }, [j, S]), (0, n.jsxs)("div", {
-    className: p.displayNameContainer,
-    children: [(0, n.jsxs)(a.animated.div, {
+  }, [x, S]), (0, n.jsxs)("div", {
+    className: E.displayNameContainer,
+    children: [(0, n.jsxs)(o.animated.div, {
       style: {
         opacity: N.opacity,
         y: N.y
       },
-      children: [(0, n.jsx)(o.X6q, {
-        className: p.title,
+      children: [(0, n.jsx)(a.X6q, {
+        className: E.title,
         color: "header-primary",
         variant: "heading-xl/extrabold",
-        children: v.header
+        children: j.header
       }), (0, n.jsxs)("div", {
-        className: p.subtitle,
-        children: [(0, n.jsx)(o.X6q, {
+        className: E.subtitle,
+        children: [(0, n.jsx)(a.X6q, {
           color: "header-secondary",
           variant: "heading-sm/medium",
-          children: v.subtitle
-        }), null != v.link && (0, n.jsx)(o.Text, {
-          className: p.link,
+          children: j.subtitle
+        }), null != j.link && (0, n.jsx)(a.Text, {
+          className: E.link,
           color: "header-secondary",
           variant: "text-sm/medium",
-          children: v.link
+          children: j.link
         })]
       })]
     }), (0, n.jsx)(d.Z, (t = function(e) {
@@ -128,10 +128,10 @@ function E(e) {
         })
       }
       return e
-    }({}, O), r = r = {
-      displayProfile: x,
-      ref: E,
-      usernameSuggestionLoading: h,
+    }({}, h), r = r = {
+      displayProfile: v,
+      ref: p,
+      usernameSuggestionLoading: O,
       oneClickFlow: y
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var r = Object.keys(e);

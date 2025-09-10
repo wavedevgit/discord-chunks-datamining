@@ -27,29 +27,29 @@ function S(e) {
   let {
     tab: t,
     isFullScreen: n,
-    sortedCategories: i,
+    sortedCategories: o,
     transitionToTab: c,
     transitionState: u,
     updateAnalyticsState: d,
-    refreshCategories: h
-  } = e, S = O();
-  v(S);
-  let x = (0, s.e7)([o.Z], () => o.Z.useReducedMotion),
+    refreshCategories: m
+  } = e, S = v();
+  O(S);
+  let x = (0, s.e7)([i.Z], () => i.Z.useReducedMotion),
     [y, T] = l.useState(true),
     L = l.useCallback(async (e, t, r) => {
       d(e, t);
       let l = r && !n && !x,
-        s = t === a.T.ORB ? C.AW.ORBS : C.AW.CATALOG;
+        s = t === a.T.ORB ? b.AW.ORBS : b.AW.CATALOG;
       T(t), await c(s, l)
     }, [n, x, c, d]),
     j = (0, g.FF)("CollectiblesContent"),
     {
       searchError: k
     } = (0, f.a)();
-  return j && null != k ? (0, r.jsx)(b.Z, {}) : null != S ? (0, r.jsx)(m.Z, {
-    onRetry: h,
+  return j && null != k ? (0, r.jsx)(C.Z, {}) : null != S ? (0, r.jsx)(h.Z, {
+    onRetry: m,
     errorMessage: S,
-    errorOrigin: m.i.SHOP_PAGE
+    errorOrigin: h.i.SHOP_PAGE
   }) : E.includes(t) ? (0, r.jsx)(_.Z, {
     isFullScreen: n,
     handleTransition: L,
@@ -58,18 +58,18 @@ function S(e) {
   }) : (0, r.jsx)(p.Z, {
     isFullScreen: n,
     tab: t,
-    sortedCategories: i,
+    sortedCategories: o,
     initialCategoryId: y,
     onUnmount: () => T(true)
   })
 }
-let O = () => (0, Chunk442837.e7)([Chunk597688.Z, Chunk1870.Z], () => null != Chunk597688.Z.error ? "shop load fetch categories error: ".concat(Chunk597688.Z.error.message) : null != Chunk1870.Z.claimError ? "shop load claim error: ".concat(Chunk1870.Z.claimError.message) : null != Chunk1870.Z.fetchError ? "shop load fetch purchase error: ".concat(Chunk1870.Z.fetchError.message) : true),
-  v = e => {
-    let t = (0, s.e7)([i.default], () => i.default.getCurrentUser()),
+let v = () => (0, Chunk442837.e7)([Chunk597688.Z, Chunk1870.Z], () => null != Chunk597688.Z.error ? "shop load fetch categories error: ".concat(Chunk597688.Z.error.message) : null != Chunk1870.Z.claimError ? "shop load claim error: ".concat(Chunk1870.Z.claimError.message) : null != Chunk1870.Z.fetchError ? "shop load fetch purchase error: ".concat(Chunk1870.Z.fetchError.message) : true),
+  O = e => {
+    let t = (0, s.e7)([o.default], () => o.default.getCurrentUser()),
       {
         noCache: n,
         includeUnpublished: r
-      } = (0, h.Z)();
+      } = (0, m.Z)();
     l.useEffect(() => {
       var l, a;
       null != e && c.Z.captureMessage(e, {

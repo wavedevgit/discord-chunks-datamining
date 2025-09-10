@@ -10,16 +10,16 @@ var Chunk399606 = require("./399606.js"),
   Chunk135200 = require("./135200.js");
 let l = e => {
   let [t, r] = (0, n.Wu)([s.Z], () => [s.Z.usernameSuggestion(), s.Z.usernameSuggestionLoading()]);
-  return (0, a.ZP)(() => (s.Z.wasSuggestionsFetched() ? i.Z.dispatch({
+  return (0, o.ZP)(() => (s.Z.wasSuggestionsFetched() ? i.Z.dispatch({
     type: "POMELO_SUGGESTIONS_FETCH",
     usernameSuggestionLoading: false
-  }) : o.Z.fetchSuggestions(e).finally(() => {
+  }) : a.Z.fetchSuggestions(e).finally(() => {
     i.Z.dispatch({
       type: "POMELO_SUGGESTIONS_FETCH",
       usernameSuggestionLoading: false
     })
   }), () => {
-    o.Z.resetSuggestions()
+    a.Z.resetSuggestions()
   })), {
     usernameSuggestion: t,
     usernameSuggestionLoading: r

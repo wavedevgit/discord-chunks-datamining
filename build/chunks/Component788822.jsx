@@ -2,7 +2,7 @@
 /** chunk id: 788822, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  q: () => b
+  q: () => C
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,26 +19,26 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk310582 = require("./310582.js");
-let b = e => {
-  var t, n, a, b;
-  let C, {
+let C = e => {
+  var t, n, a, C;
+  let b, {
     category: E,
     subblock: S,
-    badgeText: O,
-    handleTransition: v
+    badgeText: v,
+    handleTransition: O
   } = e;
-  null != S && (C = null == (t = g.Z.getCategoryByStoreListingId(null == S ? true : S.categoryStoreListingId)) ? true : t.skuId);
-  let x = null != (n = null != C ? C : null == E ? true : E.skuId) ? n : "",
+  null != S && (b = null == (t = g.Z.getCategoryByStoreListingId(null == S ? true : S.categoryStoreListingId)) ? true : t.skuId);
+  let x = null != (n = null != b ? b : null == E ? true : E.skuId) ? n : "",
     {
       handleCardVisibilityChange: y
     } = (0, f.E)(x, "home", "marketing featured block"),
     T = (0, p.YG)(E, S),
     L = l.useRef(null),
-    j = x === o.T.NAMEPLATES_V3,
+    j = x === i.T.NAMEPLATES_V3,
     k = j ? "NAMEPLATES VOL.3" : null,
     B = null == S ? true : S.bodyText,
     I = (0, d.sp)();
-  return (0, r.jsx)(i.$, {
+  return (0, r.jsx)(o.$, {
     innerRef: L,
     onChange: y,
     threshold: 0,
@@ -49,7 +49,7 @@ let b = e => {
         backgroundImage: "url(".concat(T, ")")
       },
       onClick: () => {
-        v("shop marketing tile", x), u.default.track(m.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        O("shop marketing tile", x), u.default.track(h.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == I ? true : I.sessionId,
           sku_id: x,
           page_type: "home",
@@ -60,9 +60,9 @@ let b = e => {
           cta_name: null
         })
       },
-      children: [null != O && (0, r.jsx)(c.IGR, {
+      children: [null != v && (0, r.jsx)(c.IGR, {
         disableColor: true,
-        text: O,
+        text: v,
         className: _.featuredBlockBadge
       }), (0, r.jsxs)("div", {
         className: _.featuredBlockTextContainer,
@@ -80,7 +80,7 @@ let b = e => {
           lineClamp: null != k ? 2 : 4,
           className: _.featuredBlockBodyText,
           style: {
-            color: null != (b = null == S ? true : S.bannerTextColor) ? b : "white"
+            color: null != (C = null == S ? true : S.bannerTextColor) ? C : "white"
           },
           variant: "heading-md/medium",
           children: B
@@ -89,9 +89,9 @@ let b = e => {
         className: _.featuredBlockButtonContainer,
         children: (0, r.jsx)(c.zxk, {
           variant: "overlay-primary",
-          text: h.intl.string(h.t.jVcuVV),
+          text: m.intl.string(m.t.jVcuVV),
           onClick: e => {
-            v("shop marketing take me there button", x), e.stopPropagation(), u.default.track(m.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            O("shop marketing take me there button", x), e.stopPropagation(), u.default.track(h.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
               collectibles_shop_session_id: null == I ? true : I.sessionId,
               sku_id: x,
               page_type: "home",

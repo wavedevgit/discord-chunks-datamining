@@ -33,7 +33,7 @@ function c(e) {
       variant: "text-md/medium",
       children: s.intl.format(s.t.bWE0ZG, {
         onClick: () => {
-          t(), a.Z.open(o.oAB.ACCOUNT)
+          t(), o.Z.open(a.oAB.ACCOUNT)
         }
       })
     }), (0, n.jsx)("div", {

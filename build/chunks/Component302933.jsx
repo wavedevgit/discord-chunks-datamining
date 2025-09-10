@@ -27,8 +27,8 @@ let f = Chunk647438.memo(function(e) {
       friction: 12
     }
   });
-  return (0, r.jsxs)(o.animated.div, {
-    className: s()([g.countDownWrapper, l && g.fullScreenWrapper, i.tq && g.mobileWrapper]),
+  return (0, r.jsxs)(i.animated.div, {
+    className: s()([g.countDownWrapper, l && g.fullScreenWrapper, o.tq && g.mobileWrapper]),
     role: "status",
     style: function(e) {
       for (var t = 1; t < arguments.length; t++) {

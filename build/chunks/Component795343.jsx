@@ -2,7 +2,7 @@
 /** chunk id: 795343, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => O
 }), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,36 +25,36 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk891131 = require("./891131.js");
 
-function v(e) {
+function O(e) {
   var t;
   let {
     isFetchingCategories: n,
     isFullScreen: a,
-    scrollerRef: v,
+    scrollerRef: O,
     tab: x
   } = e, y = (0, d.sp)(), T = null != (t = null == y ? true : y.sessionId) ? t : "", {
     noCache: L,
     includeUnpublished: j
-  } = (0, C.Z)(), k = (0, o.e7)([c.default], () => c.default.getCurrentUser()), {
+  } = (0, b.Z)(), k = (0, i.e7)([c.default], () => c.default.getCurrentUser()), {
     skus: B,
     currentPage: I,
     totalCount: N,
     isFetchingResults: A
-  } = (0, m.a)(), P = (0, o.Wu)([g.Z], () => g.Z.getProductsBySkus(B)), R = l.useCallback(() => {
+  } = (0, h.a)(), P = (0, i.Wu)([g.Z], () => g.Z.getProductsBySkus(B)), R = l.useCallback(() => {
     var e;
-    null == v || null == (e = v.current) || e.scrollToTop({
+    null == O || null == (e = O.current) || e.scrollToTop({
       animate: true
     })
-  }, [v]), Z = null == B ? true : B.join("");
+  }, [O]), Z = null == B ? true : B.join("");
   l.useEffect(() => {
     R()
   }, [Z, R]);
   let w = (0, f.a)(),
     F = l.useMemo(() => w(P), [w, P]);
   l.useEffect(() => {
-    n || (0, h.n)({
+    n || (0, m.n)({
       sessionId: T,
-      checkpoint: h.a.SHOP_RENDERED,
+      checkpoint: m.a.SHOP_RENDERED,
       tab: x,
       isFullScreen: a,
       unpublishedCategoriesShown: j,
@@ -94,11 +94,11 @@ function v(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: s()({
-        [O.productsEmpty]: G
+        [v.productsEmpty]: G
       }),
       children: [G && (0, r.jsx)(E.Z, {}), (0, r.jsxs)("div", {
-        className: s()(O.products, {
-          [O.loadIn]: U
+        className: s()(v.products, {
+          [v.loadIn]: U
         }),
         ref: H,
         children: [z && [...Array(W)].map((e, t) => (0, r.jsx)(_.K, {}, t)), !z && F.map((e, t) => {
@@ -107,7 +107,7 @@ function v(e) {
             newValue: {
               tilePosition: t
             },
-            children: (0, r.jsx)(b.Z, {
+            children: (0, r.jsx)(C.Z, {
               product: e,
               user: k,
               category: n,
@@ -117,9 +117,9 @@ function v(e) {
         })]
       })]
     }), N > W && (0, r.jsx)("div", {
-      className: O.paginationContainer,
+      className: v.paginationContainer,
       children: (0, r.jsx)("div", {
-        children: (0, r.jsx)(i.DsT, {
+        children: (0, r.jsx)(o.DsT, {
           currentPage: I,
           totalCount: N,
           pageSize: W,

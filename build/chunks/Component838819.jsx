@@ -57,9 +57,9 @@ let w = e => {
       isFullScreen: t = true,
       tab: n = N.AW.HOME
     } = e;
-    (0, m.z)(p.f), (0, v.f)();
-    let a = (0, g.Z)((0, o.Z)()),
-      c = (0, i.e7)([_.default], () => _.default.getCurrentUser()),
+    (0, h.z)(p.f), (0, O.f)();
+    let a = (0, g.Z)((0, i.Z)()),
+      c = (0, o.e7)([_.default], () => _.default.getCurrentUser()),
       P = (0, I.G)("CollectiblesShop"),
       {
         onClose: F
@@ -79,11 +79,11 @@ let w = e => {
         tab: M,
         isFullScreen: t
       }),
-      V = (0, O.O)(W),
+      V = (0, v.O)(W),
       [z, G] = l.useState(),
-      q = (0, i.e7)([C.Z], () => {
+      q = (0, o.e7)([b.Z], () => {
         var e;
-        return null == (e = C.Z.getCategory(z)) ? true : e.name
+        return null == (e = b.Z.getCategory(z)) ? true : e.name
       }),
       [K, Y] = l.useState();
     (0, L.Kp)();
@@ -104,7 +104,7 @@ let w = e => {
     }, [ee]), l.useEffect(() => {
       t || (0, d.Y)(A.Z5c.COLLECTIBLES_SHOP)
     }, [t]);
-    let et = (0, i.e7)([h.Z], () => h.Z.getLayers().includes(A.S9g.COLLECTIBLES_SHOP)),
+    let et = (0, o.e7)([m.Z], () => m.Z.getLayers().includes(A.S9g.COLLECTIBLES_SHOP)),
       en = l.useRef(null),
       er = l.useRef(null);
     (0, u.Tbt)(en);
@@ -124,7 +124,7 @@ let w = e => {
     } = (0, E.MV)(Q);
     return ea && !t ? null : (0, r.jsx)(f.Gt, {
       value: es,
-      children: (0, r.jsx)(b.k0, {
+      children: (0, r.jsx)(C.k0, {
         newValue: {
           sessionId: a,
           pageCategory: q,

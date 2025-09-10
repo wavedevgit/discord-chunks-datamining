@@ -2,7 +2,7 @@
 /** chunk id: 554067, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,31 +17,31 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk535333 = require("./535333.js");
 
-function m(e) {
+function h(e) {
   let {
     handleTransition: t,
     selectedTab: n
   } = e, {
-    searchQuery: m,
-    onSetSearchQuery: h
-  } = (0, u.S)(), [_, b] = l.useState(""), C = (0, c.sp)(), E = (0, a.e7)([o.default], () => o.default.locale);
+    searchQuery: h,
+    onSetSearchQuery: m
+  } = (0, u.S)(), [_, C] = l.useState(""), b = (0, c.sp)(), E = (0, a.e7)([i.default], () => i.default.locale);
   return l.useEffect(() => {
     let e = setTimeout(() => {
-      h(_)
+      m(_)
     }, 250);
     return () => clearTimeout(e)
-  }, [_, h]), l.useEffect(() => {
-    b(m)
-  }, [m]), (0, r.jsx)(s.P3F, {
+  }, [_, m]), l.useEffect(() => {
+    C(h)
+  }, [h]), (0, r.jsx)(s.P3F, {
     ignoreKeyPress: true,
     className: p.searchBar,
     onClick: () => {
-      n !== d.AW.CATALOG && t(d.AW.CATALOG), i.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-        collectibles_shop_session_id: null == C ? true : C.sessionId,
-        page_section: null == C ? true : C.pageSection,
-        page_category: null == C ? true : C.pageCategory,
-        page_index: null == C ? true : C.pageIndex,
-        page_size: null == C ? true : C.pageSize,
+      n !== d.AW.CATALOG && t(d.AW.CATALOG), o.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        collectibles_shop_session_id: null == b ? true : b.sessionId,
+        page_section: null == b ? true : b.pageSection,
+        page_category: null == b ? true : b.pageCategory,
+        page_index: null == b ? true : b.pageIndex,
+        page_size: null == b ? true : b.pageSize,
         cta_name: "search bar",
         page_type: n
       })
@@ -49,17 +49,17 @@ function m(e) {
     children: (0, r.jsx)(s.E1j, {
       size: "sm",
       onKeyDown: e => {
-        "Enter" === e.key && h(_)
+        "Enter" === e.key && m(_)
       },
       query: _,
-      onChange: b,
+      onChange: C,
       onClear: () => {
-        b(""), i.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-          collectibles_shop_session_id: null == C ? true : C.sessionId,
-          page_section: null == C ? true : C.pageSection,
-          page_category: null == C ? true : C.pageCategory,
-          page_index: null == C ? true : C.pageIndex,
-          page_size: null == C ? true : C.pageSize,
+        C(""), o.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+          collectibles_shop_session_id: null == b ? true : b.sessionId,
+          page_section: null == b ? true : b.pageSection,
+          page_category: null == b ? true : b.pageCategory,
+          page_index: null == b ? true : b.pageIndex,
+          page_size: null == b ? true : b.pageSize,
           cta_name: "search bar clear",
           page_type: n
         })

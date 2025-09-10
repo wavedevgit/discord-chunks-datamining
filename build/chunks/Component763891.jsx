@@ -44,34 +44,34 @@ function N(e) {
   } = e, R = (0, g.sp)(), Z = null != (t = null == R ? true : R.sessionId) ? t : "", {
     noCache: w,
     includeUnpublished: F
-  } = (0, C.Z)(), H = (0, s.e7)([u.default], () => u.default.getCurrentUser()), D = (0, s.e7)([f.Z], () => f.Z.productsWithVariantsAsGroup), [M, W] = l.useState(1), U = (0, c.Fg)(), V = (0, o.ap)(U), [z, G, q] = l.useMemo(() => {
+  } = (0, b.Z)(), H = (0, s.e7)([u.default], () => u.default.getCurrentUser()), D = (0, s.e7)([f.Z], () => f.Z.productsWithVariantsAsGroup), [M, W] = l.useState(1), U = (0, c.Fg)(), V = (0, i.ap)(U), [z, G, q] = l.useMemo(() => {
     switch (P) {
       case E.AW.AVATAR_DECORATIONS:
-        return [O.intl.string(O.t.dRZYND), V ? L.Z : T.Z, a.Z.AVATAR_DECORATION];
+        return [v.intl.string(v.t.dRZYND), V ? L.Z : T.Z, a.Z.AVATAR_DECORATION];
       case E.AW.PROFILE_EFFECTS:
-        return [O.intl.string(O.t["1cNjt7"]), V ? I.Z : B.Z, a.Z.PROFILE_EFFECT];
+        return [v.intl.string(v.t["1cNjt7"]), V ? I.Z : B.Z, a.Z.PROFILE_EFFECT];
       case E.AW.NAMEPLATES:
-        return [O.intl.string(O.t.V68Fq6), V ? k.Z : j.Z, a.Z.NAMEPLATE];
+        return [v.intl.string(v.t.V68Fq6), V ? k.Z : j.Z, a.Z.NAMEPLATE];
       case E.AW.BUNDLES:
-        return [O.intl.string(O.t.FYFppq), V ? y.Z : x.Z, a.Z.BUNDLE]
+        return [v.intl.string(v.t.FYFppq), V ? y.Z : x.Z, a.Z.BUNDLE]
     }
   }, [P, V]), K = (0, p.a)(), Y = l.useMemo(() => K(D.filter(e => {
     var t;
     return e.type === q || e.type === a.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === q)) === true
-  })), [D, q, K]), X = (0, m.l)(Y);
+  })), [D, q, K]), X = (0, h.l)(Y);
   return (l.useEffect(() => {
-    (0, h.n)({
+    (0, m.n)({
       sessionId: Z,
-      checkpoint: h.a.SHOP_MOUNTED,
+      checkpoint: m.a.SHOP_MOUNTED,
       tab: P,
       isFullScreen: N,
       unpublishedCategoriesShown: F,
       cacheDisabled: w
     })
   }, []), l.useEffect(() => {
-    n || (0, h.n)({
+    n || (0, m.n)({
       sessionId: Z,
-      checkpoint: h.a.SHOP_RENDERED,
+      checkpoint: m.a.SHOP_RENDERED,
       tab: P,
       isFullScreen: N,
       unpublishedCategoriesShown: F,
@@ -82,20 +82,20 @@ function N(e) {
       style: {
         backgroundImage: "url(".concat(G, ")")
       },
-      className: v.bannerContainer,
-      children: (0, r.jsx)(i.X6q, {
+      className: O.bannerContainer,
+      children: (0, r.jsx)(o.X6q, {
         variant: "heading-xxl/extrabold",
         children: z
       })
     }), (0, r.jsx)("div", {
-      className: v.products,
+      className: O.products,
       children: X.slice(40 * (M - 1), 40 * M).map((e, t) => {
         let n = f.Z.getCategory(e.categorySkuId);
         return null == n ? null : (0, r.jsx)(g.k0, {
           newValue: {
             tilePosition: t
           },
-          children: (0, r.jsx)(b.Z, {
+          children: (0, r.jsx)(C.Z, {
             product: e,
             user: H,
             category: n,
@@ -104,9 +104,9 @@ function N(e) {
         }, e.skuId)
       })
     }), X.length > 40 && (0, r.jsx)("div", {
-      className: v.paginationContainer,
+      className: O.paginationContainer,
       children: (0, r.jsx)("div", {
-        children: (0, r.jsx)(i.DsT, {
+        children: (0, r.jsx)(o.DsT, {
           currentPage: M,
           totalCount: X.length,
           pageSize: 40,

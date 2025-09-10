@@ -1,12 +1,12 @@
 /** Chunk was on 85342 **/
 /** chunk id: 387955, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk63063 = require("./63063.js"),
   Chunk773446 = require("./773446.jsx"),
@@ -16,7 +16,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk631936 = require("./631936.js"),
   Chunk849399 = require("./849399.js");
 
-function f(e) {
+function g(e) {
   let {
     user: t
   } = e;
@@ -25,20 +25,20 @@ function f(e) {
     children: [(0, n.jsx)("img", {
       className: m.infoPicture,
       alt: "",
-      src: g
-    }), (0, n.jsx)(o.X6q, {
+      src: f
+    }), (0, n.jsx)(a.X6q, {
       className: m.title,
       color: "header-primary",
       variant: "heading-xl/bold",
       children: d.intl.format(d.t["au+lPj"], {
         n: t.tag
       })
-    }), (0, n.jsx)(o.Text, {
+    }), (0, n.jsx)(a.Text, {
       className: m.subtitleInfo,
       color: "header-secondary",
       variant: "text-md/medium",
       children: d.intl.format(d.t["5fwX5+"], {})
-    }), (0, n.jsx)(o.Text, {
+    }), (0, n.jsx)(a.Text, {
       className: m.prompt,
       color: "header-secondary",
       variant: "text-sm/medium",
@@ -46,29 +46,29 @@ function f(e) {
         helpdeskArticle: s.Z.getArticleURL(u.BhN.POMELO_FAQ)
       })
     }), (0, n.jsxs)("div", {
-      className: a()([m.infoItem, m.infoItemSpacing]),
+      className: o()([m.infoItem, m.infoItemSpacing]),
       children: [(0, n.jsx)("div", {
         className: m.infoIcon,
-        children: (0, n.jsx)(o.iFz, {
+        children: (0, n.jsx)(a.iFz, {
           size: "custom",
           color: "currentColor",
           width: 20,
           height: 20
         })
-      }), (0, n.jsx)(o.Text, {
+      }), (0, n.jsx)(a.Text, {
         color: "header-secondary",
         variant: "text-sm/medium",
         children: d.intl.format(d.t.SzUaZ2, {})
       })]
     }), (0, n.jsxs)("div", {
-      className: a()([m.infoItem, m.infoItemSpacing]),
+      className: o()([m.infoItem, m.infoItemSpacing]),
       children: [(0, n.jsx)("div", {
         className: m.infoIcon,
         children: (0, n.jsx)(l.Z, {
           width: 20,
           height: 20
         })
-      }), (0, n.jsx)(o.Text, {
+      }), (0, n.jsx)(a.Text, {
         color: "header-secondary",
         variant: "text-sm/medium",
         children: d.intl.format(d.t["UwPc+P"], {})
@@ -81,7 +81,7 @@ function f(e) {
           width: 20,
           height: 20
         })
-      }), (0, n.jsx)(o.Text, {
+      }), (0, n.jsx)(a.Text, {
         color: "header-secondary",
         variant: "text-sm/medium",
         children: d.intl.format(d.t.okLjjo, {

@@ -87,18 +87,18 @@ let R = {
       onVisibilityChange: D
     } = e, M = (0, g.O)(e => {
       null == D || D(e)
-    }, .1, null != D), W = (0, u.e7)([m.default], () => m.default.getCurrentUser()), U = (0, j.Z)(), V = (0, _.sp)(), z = (0, S.N)("HeroBlock") && H !== I.AW.ORBS, G = (0, S.E)("HeroBlock"), q = l.useMemo(() => {
+    }, .1, null != D), W = (0, u.e7)([h.default], () => h.default.getCurrentUser()), U = (0, j.Z)(), V = (0, _.sp)(), z = (0, S.N)("HeroBlock") && H !== I.AW.ORBS, G = (0, S.E)("HeroBlock"), q = l.useMemo(() => {
       var e, t;
       return null != F ? F : null == w ? R : {
         rankedSkuIds: null != (e = w.heroRanking) ? e : [],
         name: w.name,
         unpublishedAt: w.unpublishedAt,
-        logoUrl: (0, C.uV)(null != (t = w.heroLogo) ? t : w.logo, {
+        logoUrl: (0, b.uV)(null != (t = w.heroLogo) ? t : w.logo, {
           size: x.n
         }),
         categorySkuId: w.skuId,
         bannerAsset: w.heroBannerAsset,
-        fallbackBannerUrl: (0, C.uV)(w.heroBanner, {
+        fallbackBannerUrl: (0, b.uV)(w.heroBanner, {
           size: I.pv,
           format: "jpg"
         }),
@@ -115,28 +115,52 @@ let R = {
       heroLogo: Q,
       heroBannerStatic: J,
       heroBannerAnimated: $
-    } = (0, L.hr)(q), ee = null == K ? true : K.heroBanner, et = null != (t = null == Y ? true : Y.responsive) && t, en = null == Y ? true : Y.backgroundStyle, er = l.useMemo(() => U(q.rankedSkuIds), [n, U, q.rankedSkuIds]), el = (0, O.a)()(er), ea = (0, v.l)(el).slice(0, 4), es = (0, k.St)(ea), eo = H === I.AW.ORBS ? A.intl.string(A.t["1CdL8f"]) : G ? A.intl.string(A.t.xYKa1d) : A.intl.formatToPlainString(A.t.wvKYCg, {
+    } = (0, L.hr)(q), ee = null == K ? true : K.heroBanner, et = null != (t = null == Y ? true : Y.responsive) && t, en = null == $ ? true : $.endsWith(".riv"), er = null == Y ? true : Y.backgroundStyle, el = l.useMemo(() => U(q.rankedSkuIds), [n, U, q.rankedSkuIds]), ea = (0, v.a)()(el), es = (0, O.l)(ea).slice(0, 4), ei = (0, k.St)(es), eo = H === I.AW.ORBS ? A.intl.string(A.t["1CdL8f"]) : G ? A.intl.string(A.t.xYKa1d) : A.intl.formatToPlainString(A.t.wvKYCg, {
       category_name: q.name
-    }), ei = (0, E.FF)("CollectiblesContent");
+    }), ec = (0, E.FF)("CollectiblesContent"), eu = () => {
+      H === I.AW.ORBS ? ((0, p.Y)({
+        pageType: N.ZY5.SHOP_ORBS_TAB,
+        sectionType: N.jXE.ORBS_SHOP_HERO_BLOCK,
+        ctaObject: N.qAy.CTA_TO_QUEST_HOME
+      }), (0, f.navigateToQuestHome)({
+        fromContent: o.j.ORBS_SHOP_HERO_CTA
+      })) : (a("shop latest category hero", ec && q.categorySkuId !== i.T.ORB ? true : q.categorySkuId), m.default.track(N.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        collectibles_shop_session_id: null == V ? true : V.sessionId,
+        sku_id: q.categorySkuId,
+        page_type: H,
+        page_section: null == V ? true : V.pageSection,
+        page_category: null == V ? true : V.pageCategory,
+        cta_name: "shop latest category hero button"
+      }))
+    };
     return null != W && (n || q !== R) ? (0, r.jsxs)("div", {
       ref: M,
       className: P.heroBlock,
       children: [(0, r.jsxs)("div", {
-        className: P.banner,
-        style: null != en ? {
-          background: en
+        className: s()(P.banner, {
+          [P.rivBanner]: en
+        }),
+        style: null != er ? {
+          background: er
         } : true,
         children: [(0, r.jsx)(B.Z, {
           bannerStatic: J,
           bannerAnimated: $,
           isResponsive: et
-        }), (null == Y ? true : Y.hideSideShadow) === true ? null : (0, r.jsx)(Z, {
+        }), (null == Y ? true : Y.hideSideShadow) === true || en ? null : (0, r.jsx)(Z, {
           heroBannerOverrides: ee,
           isResponsive: et
         })]
       }), (0, r.jsxs)("div", {
         className: P.heroBlockContent,
-        children: [(0, r.jsxs)("div", {
+        children: [en ? (0, r.jsx)("div", {
+          className: P.rivBannerButtonContainer,
+          children: !n && (0, r.jsx)(d.zxk, {
+            variant: "overlay-primary",
+            onClick: eu,
+            text: eo
+          })
+        }) : (0, r.jsxs)("div", {
           className: s()(z ? P.heroHeaderContainerStacked : P.heroHeaderContainer, {
             [P.responsive]: et
           }),
@@ -163,8 +187,8 @@ let R = {
                 color: "header-primary",
                 children: q.title
               }), "" !== q.summary && (0, r.jsx)(d.Text, {
-                variant: q.categorySkuId === o.T.ORB ? "text-lg/medium" : "text-md/normal",
-                className: q.categorySkuId === o.T.ORB ? P.orbsSubHeaderText : (null == K ? true : K.showDarkBannerText) ? P.subHeaderTextDark : P.subHeaderText,
+                variant: q.categorySkuId === i.T.ORB ? "text-lg/medium" : "text-md/normal",
+                className: q.categorySkuId === i.T.ORB ? P.orbsSubHeaderText : (null == K ? true : K.showDarkBannerText) ? P.subHeaderTextDark : P.subHeaderText,
                 style: null != q.bannerTextColor ? {
                   color: q.bannerTextColor
                 } : true,
@@ -175,22 +199,7 @@ let R = {
             className: z ? P.heroHeaderButtonContainerStacked : P.heroHeaderButtonContainer,
             children: (0, r.jsx)(d.zxk, {
               variant: "overlay-primary",
-              onClick: () => {
-                H === I.AW.ORBS ? ((0, p.Y)({
-                  pageType: N.ZY5.SHOP_ORBS_TAB,
-                  sectionType: N.jXE.ORBS_SHOP_HERO_BLOCK,
-                  ctaObject: N.qAy.CTA_TO_QUEST_HOME
-                }), (0, f.navigateToQuestHome)({
-                  fromContent: i.j.ORBS_SHOP_HERO_CTA
-                })) : (a("shop latest category hero", ei && q.categorySkuId !== o.T.ORB ? true : q.categorySkuId), h.default.track(N.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-                  collectibles_shop_session_id: null == V ? true : V.sessionId,
-                  sku_id: q.categorySkuId,
-                  page_type: H,
-                  page_section: null == V ? true : V.pageSection,
-                  page_category: null == V ? true : V.pageCategory,
-                  cta_name: "shop latest category hero button"
-                }))
-              },
+              onClick: eu,
               text: eo
             })
           })]
@@ -201,8 +210,8 @@ let R = {
           children: n ? (0, r.jsx)(r.Fragment, {
             children: [true, true, true, true].map((e, t) => (0, r.jsx)(y.K, {}, t))
           }) : (0, r.jsx)(r.Fragment, {
-            children: es.map((e, t) => {
-              let n = b.Z.getCategoryForProduct(e.skuId);
+            children: ei.map((e, t) => {
+              let n = C.Z.getCategoryForProduct(e.skuId);
               return null == e || null == n ? null : (0, r.jsx)(_.k0, {
                 newValue: {
                   tilePosition: t,
