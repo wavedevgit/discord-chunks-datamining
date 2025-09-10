@@ -8,6 +8,7 @@ require.d(exports, {
   JO: () => P,
   Jl: () => w,
   Ks: () => N,
+  M0: () => D,
   OP: () => b,
   Pq: () => E,
   QN: () => v,
@@ -235,5 +236,13 @@ function w(e) {
   } = e;
   (0, i.M$)() && l.default.track(_.rMx.EXPLICIT_MEDIA_OBSCURITY_TOGGLE_V2, {
     toggle_direction: t ? "hide" : "show"
+  })
+}
+
+function D(e) {
+  var t;
+  return null == (t = e.message_snapshots) ? true : t.some(e => {
+    var t, n;
+    return (null == (t = e.message) ? true : t.attachments) != null && e.message.attachments.length > 0 || (null == (n = e.message) ? true : n.embeds) != null && e.message.embeds.length > 0
   })
 }
