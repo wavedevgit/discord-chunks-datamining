@@ -1,10 +1,11 @@
 /** Chunk was on 44799 **/
 /** chunk id: 800869, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js"),
   Chunk793030 = require("./793030.js"),
+  Chunk861066 = require("./861066.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk921944 = require("./921944.js"),
   Chunk989308 = require("./989308.js"),
@@ -12,30 +13,35 @@ var Chunk951288 = require("./951288.js"),
   Chunk176179 = require("./176179.js"),
   Chunk719119 = require("./719119.js");
 
-function d(e) {
+function p(e) {
   let {
     markAsDismissed: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: c.container,
+    className: u.container,
     children: [(0, r.jsx)("img", {
       alt: "",
-      className: c.image,
-      src: u
-    }), (0, r.jsx)(o.xv, {
+      className: u.image,
+      src: d
+    }), (0, r.jsx)(i.xv, {
       color: "always-white",
       variant: "text-md/semibold",
-      children: a.intl.string(l.default.diMhWV)
-    }), (0, r.jsx)(o.xv, {
+      children: c.intl.string(a.default.diMhWV)
+    }), (0, r.jsx)(i.xv, {
       color: "always-white",
       variant: "text-sm/medium",
-      children: a.intl.string(l.default.pycxTk)
-    }), (0, r.jsx)(i.olH, {
-      className: c.close,
-      innerClassName: c.innerClose,
-      onClick: () => {
-        t(s.L.USER_DISMISS)
-      }
+      children: c.intl.string(a.default.pycxTk)
+    }), (0, r.jsx)("div", {
+      className: u.close,
+      children: (0, r.jsx)(o.h, {
+        variant: "icon-only",
+        size: "md",
+        "aria-label": c.intl.string(c.t.cpT0Cg),
+        onClick: () => {
+          t(l.L.USER_DISMISS)
+        },
+        icon: s.Dio
+      })
     })]
   })
 }

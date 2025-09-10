@@ -22,13 +22,13 @@ function v(e) {
     powerup: t,
     targetRef: n,
     isCardVisible: v
-  } = e, _ = (0, s.e7)([d.Z], () => d.Z.hasLayers()), x = (0, a.f9)(), h = t.skuId === i.A$ ? {
+  } = e, x = (0, s.e7)([d.Z], () => d.Z.hasLayers()), _ = (0, a.f9)(), h = t.skuId === o.A$ ? {
     title: g.intl.string(f.default.YWo6VF),
     body: g.intl.string(f.default.gXVvKS),
     dismissibleContentType: l.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER
   } : null, b = [];
-  null == h || _ || !v || x || b.push(h.dismissibleContentType);
-  let [C, j] = (0, u.US)(b), P = o.useCallback(() => {
+  null == h || x || !v || _ || b.push(h.dismissibleContentType);
+  let [C, j] = (0, u.US)(b), P = i.useCallback(() => {
     j(m.L.INDIRECT_ACTION)
   }, [j]);
   return ((0, p.Z)({

@@ -26,20 +26,20 @@ var Chunk951288 = require("./951288.js"),
 function j(e) {
   let {
     guildId: t
-  } = e, n = (0, a.e7)([m.Z], () => m.Z.getStateForGuild(t)), i = o.useMemo(() => {
+  } = e, n = (0, a.e7)([m.Z], () => m.Z.getStateForGuild(t)), o = i.useMemo(() => {
     if ((null == n ? true : n.instances) != null && 0 !== Object.keys(n.instances).length) return {
       type: "active",
-      statusText: _.intl.string(g.default.FFLkm5)
+      statusText: x.intl.string(g.default.FFLkm5)
     }
-  }, [null == n ? true : n.instances]), j = (0, p.d)((null == i ? true : i.type) === "active"), P = o.useMemo(() => {
+  }, [null == n ? true : n.instances]), j = (0, p.d)((null == o ? true : o.type) === "active"), P = i.useMemo(() => {
     if ((null == n ? true : n.catalog) == null) return 0;
     let e = Object.values(n.catalog);
     return 0 === e.length ? 0 : Math.min(...e.map(e => e.baseCost))
   }, [null == n ? true : n.catalog]);
   return null == n ? null : (0, r.jsxs)(d.aB, {
-    label: _.intl.string(v.default["fjt/vr"]),
+    label: x.intl.string(v.default["fjt/vr"]),
     badge: "new",
-    isActive: (null == i ? true : i.type) === "active",
+    isActive: (null == o ? true : o.type) === "active",
     onClick: () => (0, f.Z)({
       guildId: t,
       analyticsLocation: u.Z.GUILD_POWERUPS_OVERVIEW
@@ -47,31 +47,31 @@ function j(e) {
     children: [(0, r.jsxs)("div", {
       className: b.imageContainer,
       children: [(0, r.jsx)("img", {
-        className: s()(h.background, x.image, b.image),
+        className: s()(h.background, _.image, b.image),
         src: C.Z,
         alt: ""
       }), (0, r.jsx)("div", {
-        className: s()(x.image, b.gradient)
+        className: s()(_.image, b.gradient)
       })]
     }), (0, r.jsx)(d.Q9, {
-      title: _.intl.string(v.default["fjt/vr"]),
+      title: x.intl.string(v.default["fjt/vr"]),
       textColor: j,
       footer: (0, r.jsx)(d.uf, {
         cost: P,
         costDecorator: "+",
-        status: i
+        status: o
       }),
       children: (0, r.jsx)(l.xv, {
-        className: x.description,
+        className: _.description,
         color: j,
         variant: "text-sm/medium",
-        children: _.intl.string(v.default.P7VSCg)
+        children: x.intl.string(v.default.P7VSCg)
       })
     }), (0, r.jsx)(d.N4, {
       children: (0, r.jsx)(c.zxk, {
         variant: "primary",
         fullWidth: true,
-        text: _.intl.string(v.default.MbdLuL),
+        text: x.intl.string(v.default.MbdLuL),
         onClick: e => {
           e.stopPropagation(), (0, f.Z)({
             guildId: t,

@@ -20,13 +20,13 @@ function f(e) {
   var t;
   let {
     guildId: n,
-    powerup: o,
-    className: i
-  } = e, l = (0, a.ZP)(n, o), u = l.type !== m.A3.LEVEL_ACTIVATED, d = (0, s.Z)(n, o, "GuildPowerupCardBodyFooter"), f = null != (t = (0, p._)(o, l, d)) ? t : true;
+    powerup: i,
+    className: o
+  } = e, l = (0, a.ZP)(n, i), u = l.type !== m.A3.LEVEL_ACTIVATED, d = (0, s.Z)(n, i, "GuildPowerupCardBodyFooter"), f = null != (t = (0, p._)(i, l, d)) ? t : true;
   return (0, r.jsx)(c.uf, {
     status: f,
-    cost: u ? o.cost : true,
-    className: i
+    cost: u ? i.cost : true,
+    className: o
   })
 }
 
@@ -38,10 +38,10 @@ function g(e) {
     badge: f,
     className: g,
     onHover: v,
-    children: _
-  } = e, x = (0, l.Z)(n), h = (0, a.ZP)(n, p), b = h.type !== m.A3.INACTIVE, C = (null == (t = h.sourceEntitlement) ? true : t.ends_at) != null, j = (0, s.Z)(n, p, "GuildPowerupCard"), P = o.useRef(null), {
+    children: x
+  } = e, _ = (0, l.Z)(n), h = (0, a.ZP)(n, p), b = h.type !== m.A3.INACTIVE, C = (null == (t = h.sourceEntitlement) ? true : t.ends_at) != null, j = (0, s.Z)(n, p, "GuildPowerupCard"), P = i.useRef(null), {
     onShowMore: E
-  } = (0, d.ZP)(n, p), [I, T] = o.useState(false), y = (0, i.O)(T, 1);
+  } = (0, d.ZP)(n, p), [I, T] = i.useState(false), y = (0, o.O)(T, 1);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.aB, {
       label: p.title,
@@ -56,8 +56,8 @@ function g(e) {
       ref: e => {
         P.current = e, y.current = e
       },
-      children: _
-    }), !j && x && (0, r.jsx)(u.Z, {
+      children: x
+    }), !j && _ && (0, r.jsx)(u.Z, {
       powerup: p,
       targetRef: P,
       isCardVisible: I

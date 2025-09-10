@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk304789 = require("./304789.jsx"),
@@ -34,17 +34,17 @@ let Z = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk
 function S(e) {
   var t, n;
   let {
-    guildId: o
-  } = e, d = (0, l.e7)([b.Z], () => b.Z.getGuild(o)), P = (0, l.e7)([h.Z], () => h.Z.getSortedRoles(o).find(e => {
+    guildId: i
+  } = e, d = (0, l.e7)([b.Z], () => b.Z.getGuild(i)), P = (0, l.e7)([h.Z], () => h.Z.getSortedRoles(i).find(e => {
     var t;
     return (null == (t = e.tags) ? true : t.premium_subscriber) === null
-  })), S = (0, l.e7)([C.default], () => C.default.getCurrentUser()), N = null == S ? true : S.id, k = (0, l.e7)([x.ZP], () => null != N ? x.ZP.getMember(o, N) : true, [N, o]), O = (null == k ? true : k.premiumSince) != null, A = (0, l.e7)([p.Z], () => p.Z.useReducedMotion), {
+  })), S = (0, l.e7)([C.default], () => C.default.getCurrentUser()), N = null == S ? true : S.id, k = (0, l.e7)([_.ZP], () => null != N ? _.ZP.getMember(i, N) : true, [N, i]), O = (null == k ? true : k.premiumSince) != null, A = (0, l.e7)([p.Z], () => p.Z.useReducedMotion), {
     avatarDecorationSrc: U,
     avatarSrc: R,
     eventHandlers: L
-  } = (0, _.Z)({
+  } = (0, x.Z)({
     userId: null == S ? true : S.id,
-    guildId: o,
+    guildId: i,
     size: u.EFr.SIZE_40,
     animateOnHover: !A
   });
@@ -64,7 +64,7 @@ function S(e) {
         children: T.intl.format(O ? I.default["7fWTg4"] : I.default["7PXeeX"], {
           onClick: () => {
             (0, m.f)({
-              guildId: o,
+              guildId: i,
               location: {
                 section: E.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR,
                 object: E.qAy.LEARN_MORE
@@ -110,11 +110,11 @@ function S(e) {
       }), t)),
       username: (0, r.jsx)(u.PUh, {
         variant: "text-md/semibold",
-        name: j.ZP.getName(o, null, S),
+        name: j.ZP.getName(i, null, S),
         colorString: P.colorString,
         colorStrings: P.colorStrings
       }),
-      className: i()(y.content, y.exampleMessage),
+      className: o()(y.content, y.exampleMessage),
       message: T.intl.string(T.t["6OSasb"]),
       decorations: (0, r.jsx)(u.$Eu, {
         color: u.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,

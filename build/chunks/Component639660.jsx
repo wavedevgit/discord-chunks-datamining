@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk547885 = require("./547885.js");
 
-function x() {
+function _() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk547885.staffContainer,
     children: (0, Chunk951288.jsx)(Chunk793030.xv, {
@@ -32,7 +32,7 @@ function x() {
 function h(e) {
   let {
     guildId: t
-  } = e, n = (0, i.e7)([a.Z], () => {
+  } = e, n = (0, o.e7)([a.Z], () => {
     var e;
     return (null == (e = a.Z.getGuild(t)) ? true : e.features.has(f.oNc.PREMIUM_TIER_3_OVERRIDE)) === true
   }), h = (0, c.Z)(t), b = h.length > 0, {
@@ -57,11 +57,11 @@ function h(e) {
     }, "info-card")), n
   })(w);
   return 0 !== S.length || n ? (0, r.jsxs)("div", {
-    className: _.container,
-    children: [(0, r.jsx)(o.xv, {
+    className: x.container,
+    children: [(0, r.jsx)(i.xv, {
       variant: "eyebrow",
       color: "text-secondary",
       children: v.intl.string(g.default["3FRira"])
-    }), n && (0, r.jsx)(x, {}), S.map(e => e)]
+    }), n && (0, r.jsx)(_, {}), S.map(e => e)]
   }) : null
 }

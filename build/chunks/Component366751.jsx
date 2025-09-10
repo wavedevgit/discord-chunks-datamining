@@ -25,14 +25,14 @@ function u(e) {
       onClick: () => {
         n(a.L.USER_DISMISS)
       }
-    }), (0, r.jsx)(o.Mgn, {
+    }), (0, r.jsx)(i.Mgn, {
       color: s.Z.colors.TEXT_FEEDBACK_WARNING,
       className: c.icon
-    }), (0, r.jsx)(i.xv, {
+    }), (0, r.jsx)(o.xv, {
       variant: "text-md/semibold",
       color: "text-feedback-warning",
       children: t.title
-    }), (0, r.jsx)(i.xv, {
+    }), (0, r.jsx)(o.xv, {
       variant: "text-sm/medium",
       children: t.description
     })]

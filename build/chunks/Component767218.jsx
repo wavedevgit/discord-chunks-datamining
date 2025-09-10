@@ -19,19 +19,19 @@ function p(e) {
     count: t,
     type: n
   } = e;
-  return (0, o.jsxs)("div", {
+  return (0, i.jsxs)("div", {
     className: u.container,
-    children: [(0, o.jsxs)("div", {
+    children: [(0, i.jsxs)("div", {
       className: u.headerContainer,
-      children: [(0, o.jsx)(i.$Eu, {
+      children: [(0, i.jsx)(o.$Eu, {
         size: "sm",
         color: 0 !== n ? l.Z.colors.HEADER_MUTED : l.Z.unsafe_rawColors.GUILD_BOOSTING_PINK
-      }), (0, o.jsx)(s.X6, {
+      }), (0, i.jsx)(s.X6, {
         color: 0 !== n ? "header-muted" : "header-primary",
         variant: "heading-lg/semibold",
         children: t
       })]
-    }), (0, o.jsx)(s.xv, {
+    }), (0, i.jsx)(s.xv, {
       color: "header-muted",
       variant: "text-sm/medium",
       children: (() => {

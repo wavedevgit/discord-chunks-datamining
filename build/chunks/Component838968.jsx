@@ -1,13 +1,13 @@
 /** Chunk was on 44799 **/
 /** chunk id: 838968, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  N4: () => x,
+  N4: () => _,
   P2: () => f,
   Q9: () => h,
   aB: () => b,
   c: () => v,
   rL: () => g,
-  uf: () => _
+  uf: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -76,15 +76,15 @@ function v(e) {
   })
 }
 
-function _(e) {
+function x(e) {
   let {
     cost: t,
     costDecorator: n,
-    status: o,
-    className: i
+    status: i,
+    className: o
   } = e, a = true !== t ? m.labelContainer : m.labelContainerEnd;
   return (0, r.jsxs)("div", {
-    className: s()(a, i),
+    className: s()(a, o),
     children: [true !== t && (0, r.jsxs)("div", {
       className: s()(m.inline, m.inlineBoost),
       children: [(0, r.jsx)(l.$Eu, {
@@ -100,17 +100,17 @@ function _(e) {
           decorator: null != n ? n : ""
         })
       })]
-    }), (null == o ? true : o.type) === "expiring" && (0, r.jsx)(g, {
-      dateString: o.expiringAt
-    }), (null == o ? true : o.type) === "removing" && (0, r.jsx)(v, {
-      removingAt: o.removingAt
-    }), (null == o ? true : o.type) === "active" && (0, r.jsx)(f, {
-      text: o.statusText
+    }), (null == i ? true : i.type) === "expiring" && (0, r.jsx)(g, {
+      dateString: i.expiringAt
+    }), (null == i ? true : i.type) === "removing" && (0, r.jsx)(v, {
+      removingAt: i.removingAt
+    }), (null == i ? true : i.type) === "active" && (0, r.jsx)(f, {
+      text: i.statusText
     })]
   })
 }
 
-function x(e) {
+function _(e) {
   let {
     children: t
   } = e;
@@ -124,8 +124,8 @@ function h(e) {
   let {
     title: t,
     textColor: n,
-    children: o,
-    footer: i
+    children: i,
+    footer: o
   } = e;
   return (0, r.jsxs)("div", {
     className: m.contentContainer,
@@ -137,38 +137,38 @@ function h(e) {
           variant: "heading-md/bold",
           children: t
         })
-      }), o]
-    }), i]
+      }), i]
+    }), o]
   })
 }
 let b = Chunk647438.forwardRef(function(e, t) {
   let {
     className: n,
-    label: o,
-    isActive: i,
+    label: i,
+    isActive: o,
     isWarning: c,
     badge: u,
     canRollback: d,
     onClick: f,
     onMouseOver: g,
     onMouseLeave: v,
-    children: _
+    children: x
   } = e;
   return (0, r.jsx)("div", {
     className: s()(m.parentContainer, {
-      [m.rollbackInactive]: d && !i
+      [m.rollbackInactive]: d && !o
     }),
     ref: t,
     children: (0, r.jsxs)(l.kL8, {
-      "aria-label": o,
+      "aria-label": i,
       onClick: f,
       onMouseOver: g,
       onMouseLeave: v,
       className: s()(m.container, {
-        [m.active]: i,
-        [m.warning]: c || d && i
+        [m.active]: o,
+        [m.warning]: c || d && o
       }, n),
-      children: [_, "new" === u && (0, r.jsx)(l.IGR, {
+      children: [x, "new" === u && (0, r.jsx)(l.IGR, {
         className: m.new,
         text: p.intl.string(p.t.y2b7CA)
       }), "beta" === u && (0, r.jsx)(l.IGR, {
