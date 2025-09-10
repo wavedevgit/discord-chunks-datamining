@@ -175,41 +175,41 @@ let P = e => {
     })
   },
   L = e => {
-    var t, {
-        quest: n,
-        useReducedMotion: a,
-        isExpanded: u,
-        className: d,
-        ctaLabel: _,
-        onClick: h,
-        questContent: m = p.jn.QUEST_BAR_V2,
-        sourceQuestContent: g,
-        shouldShowRewardsCTAWhenCollapsed: b = false
+    var t, n, {
+        quest: a,
+        useReducedMotion: u,
+        isExpanded: d,
+        className: _,
+        ctaLabel: h,
+        onClick: m,
+        questContent: g = p.jn.QUEST_BAR_V2,
+        sourceQuestContent: b
       } = e,
-      I = C(e, ["quest", "useReducedMotion", "isExpanded", "className", "ctaLabel", "onClick", "questContent", "sourceQuestContent", "shouldShowRewardsCTAWhenCollapsed"]);
-    let S = (0, E.hf)({
-        quest: n,
-        questContent: m,
-        sourceQuestContent: g
+      I = C(e, ["quest", "useReducedMotion", "isExpanded", "className", "ctaLabel", "onClick", "questContent", "sourceQuestContent"]);
+    let S = (null == (t = a.userStatus) ? true : t.completedAt) != null,
+      N = (0, E.hf)({
+        quest: a,
+        questContent: g,
+        sourceQuestContent: b
       }),
-      N = i.useCallback(e => {
+      R = i.useCallback(e => {
         var t;
-        null == h || h(e), (0, f.xN)(n.config) && (null == (t = n.userStatus) ? true : t.claimedAt) != null ? (0, c.mK)({
+        null == m || m(e), (0, f.xN)(a.config) && (null == (t = a.userStatus) ? true : t.claimedAt) != null ? (0, c.mK)({
           openInLayer: false,
           tab: y.AW.ORBS,
           analyticsLocations: [],
           analyticsSource: l.Z.QUEST_HOME_PAGE
-        }) : S()
-      }, [h, n.config, null == (t = n.userStatus) ? true : t.claimedAt, S]);
+        }) : N()
+      }, [m, a.config, null == (n = a.userStatus) ? true : n.claimedAt, N]);
     return (0, r.jsx)(s.gtL, A(T({
       fullWidth: true,
       size: o.zx.Sizes.SMALL,
-      onClick: N,
-      pauseAnimation: a || !u && !b,
-      className: d,
+      onClick: R,
+      pauseAnimation: u || !d && !S,
+      className: _,
       buttonShineClassName: v.shine
     }, I), {
-      children: null != _ ? _ : O.intl.string(O.t.cfY4PD)
+      children: null != h ? h : O.intl.string(O.t.cfY4PD)
     }))
   },
   j = e => {
@@ -223,32 +223,30 @@ let P = e => {
       hasMadeProgress: l,
       isProgressing: c,
       activeScreen: u,
-      taskDetails: d,
-      shouldShowRewardsCTAWhenCollapsed: _
-    } = e, h = (null == (t = n.userStatus) ? true : t.completedAt) != null, m = (0, f.q8)(n), g = (0, f.Vl)(n), E = u !== p.LI.SELECT && !l && !c, b = null;
-    return h ? b = (0, r.jsx)(L, {
+      taskDetails: d
+    } = e, _ = (null == (t = n.userStatus) ? true : t.completedAt) != null, h = (0, f.q8)(n), m = (0, f.Vl)(n), g = u !== p.LI.SELECT && !l && !c, E = null;
+    return _ ? E = (0, r.jsx)(L, {
       quest: n,
       sourceQuestContent: i,
       useReducedMotion: a,
-      isExpanded: o,
-      shouldShowRewardsCTAWhenCollapsed: _
-    }) : m ? b = (0, r.jsx)(R, {
+      isExpanded: o
+    }) : h ? E = (0, r.jsx)(R, {
       quest: n,
       sourceQuestContent: i,
       taskDetails: d
-    }) : g ? b = (0, r.jsx)(D, {
+    }) : m ? E = (0, r.jsx)(D, {
       quest: n
-    }) : u === p.LI.CONSOLE && s ? b = (0, r.jsx)(w, {
+    }) : u === p.LI.CONSOLE && s ? E = (0, r.jsx)(w, {
       quest: n,
       sourceQuestContent: i
-    }) : E && (0, f.Pb)(n) ? b = (0, r.jsx)(x, {
+    }) : g && (0, f.Pb)(n) ? E = (0, r.jsx)(x, {
       taskDetails: d
-    }) : E && (b = (0, r.jsx)(P, {
+    }) : g && (E = (0, r.jsx)(P, {
       quest: n,
       sourceQuestContent: i
-    })), null == b ? null : (0, r.jsx)("div", {
+    })), null == E ? null : (0, r.jsx)("div", {
       className: v.cta,
-      children: b
+      children: E
     })
   };
 

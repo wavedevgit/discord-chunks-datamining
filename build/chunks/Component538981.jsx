@@ -44,7 +44,9 @@ function d() {
     isMarketingCampaignApplicationModalViewed: Chunk176757.Z.isMarketingCampaignApplicationModalViewed
   })), {
     product: c
-  } = (0, Chunk583434.T)(Chunk176757.F);
+  } = (0, Chunk583434.T)(Chunk176757.F, {
+    includeBundles: true
+  });
   return i => {
     let s = (null == i ? true : i.sku_id) === l.F;
     (e || s) && !t && null != c && (o.Z.dispatch({

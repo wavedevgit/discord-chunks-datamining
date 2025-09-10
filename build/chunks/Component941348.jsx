@@ -14,69 +14,67 @@ var Chunk951288 = require("./951288.js"),
   Chunk321025 = require("./321025.jsx"),
   Chunk975888 = require("./975888.js");
 let f = function(e) {
-  var t;
+  var t, n;
   let {
-    expandedContentRef: n,
-    expansionSpring: f,
-    isExpanded: _,
-    isExpansionAnimationComplete: p,
-    onCtxMenuOpened: h,
-    onCtxMenuClosed: m,
-    onCtxMenuSelection: g,
-    quest: E,
-    useReducedMotion: b,
-    collapsedHeight: y,
-    shouldShowRewardsCTAWhenCollapsed: O
-  } = e, v = i.useRef(null), I = i.useRef(null), T = (null == (t = E.userStatus) ? true : t.enrolledAt) != null, S = (0, a.Rf)(E);
+    expandedContentRef: f,
+    expansionSpring: _,
+    isExpanded: p,
+    isExpansionAnimationComplete: h,
+    onCtxMenuOpened: m,
+    onCtxMenuClosed: g,
+    onCtxMenuSelection: E,
+    quest: b,
+    useReducedMotion: y,
+    collapsedHeight: O
+  } = e, v = (null == (t = b.userStatus) ? true : t.completedAt) != null, I = i.useRef(null), T = i.useRef(null), S = (null == (n = b.userStatus) ? true : n.enrolledAt) != null, A = (0, a.Rf)(b);
   return (0, r.jsxs)(s.p, {
-    expandedContentRef: n,
-    collapsedContentRef: v,
-    expansionSpring: f,
+    expandedContentRef: f,
+    collapsedContentRef: I,
+    expansionSpring: _,
     children: [(0, r.jsx)(l.Z, {
-      ref: v,
+      ref: I,
       className: d.content,
-      expansionSpring: f,
-      isExpanded: _,
-      isExpansionAnimationComplete: p,
-      quest: E,
-      useReducedMotion: b,
-      taskDetails: S,
-      onCtxMenuOpen: h,
-      onCtxMenuClose: m,
-      onCtxMenuSelect: g,
-      overlayRef: I,
-      shouldShowRewardsCTAWhenCollapsed: O
-    }, O ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, r.jsx)(c.Z, {
-      expansionSpring: f,
+      expansionSpring: _,
+      isExpanded: p,
+      isExpansionAnimationComplete: h,
+      quest: b,
+      useReducedMotion: y,
+      taskDetails: A,
+      onCtxMenuOpen: m,
+      onCtxMenuClose: g,
+      onCtxMenuSelect: E,
+      overlayRef: T
+    }, v ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, r.jsx)(c.Z, {
+      expansionSpring: _,
       className: d.content,
-      collapsedHeight: y,
-      onCtxMenuOpen: h,
-      onCtxMenuClose: m,
-      onCtxMenuSelect: g,
-      overlayRef: I,
-      isExpanded: _,
-      isExpansionAnimationComplete: p,
-      quest: E,
-      useReducedMotion: b,
-      ref: n,
-      taskDetails: S,
+      collapsedHeight: O,
+      onCtxMenuOpen: m,
+      onCtxMenuClose: g,
+      onCtxMenuSelect: E,
+      overlayRef: T,
+      isExpanded: p,
+      isExpansionAnimationComplete: h,
+      quest: b,
+      useReducedMotion: y,
+      ref: f,
+      taskDetails: A,
       children: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(u.Z, {
-          expansionSpring: f,
-          isExpanded: _
-        }), !T && (0, r.jsx)(o.Z, {
-          quest: E,
-          expansionSpring: f,
-          useReducedMotion: b,
-          isExpanded: _,
-          isExpansionAnimationComplete: p,
-          onCtxMenuOpen: h,
-          onCtxMenuClose: m,
-          onCtxMenuSelect: g
+          expansionSpring: _,
+          isExpanded: p
+        }), !S && (0, r.jsx)(o.Z, {
+          quest: b,
+          expansionSpring: _,
+          useReducedMotion: y,
+          isExpanded: p,
+          isExpansionAnimationComplete: h,
+          onCtxMenuOpen: m,
+          onCtxMenuClose: g,
+          onCtxMenuSelect: E
         })]
       })
     }), (0, r.jsx)("div", {
-      ref: I,
+      ref: T,
       className: d.overlay
     })]
   })

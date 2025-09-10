@@ -309,8 +309,7 @@ function z(e) {
         progressBarRef: C,
         quest: n,
         isExpanded: d,
-        isHovered: false,
-        shouldShowRewardsCTAWhenCollapsed: false
+        isHovered: false
       }), (0, r.jsx)(M.Z, {
         contentLocation: "expanded",
         quest: n,
@@ -345,8 +344,7 @@ function z(e) {
           showBackButton: T !== O.LI.SELECT && S.length > 1 && !v && !I,
           onBack: () => A(null),
           taskDetails: a,
-          sourceQuestContent: O.jn.QUEST_BAR_V2,
-          shouldShowRewardsCTAWhenCollapsed: false
+          sourceQuestContent: O.jn.QUEST_BAR_V2
         })]
       })]
     }), (0, r.jsx)("div", {
