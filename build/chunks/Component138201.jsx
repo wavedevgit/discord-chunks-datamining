@@ -164,33 +164,35 @@ function m(e) {
     description: a,
     descriptionVariant: d = "text-xs/medium",
     descriptionColor: u = "text-secondary",
-    iconClassName: x,
-    color: m,
-    buttonIcon: b,
-    onButtonPress: f,
-    listType: j = "icon",
-    index: h,
-    noInset: p = false
+    buttonDisabled: x,
+    iconClassName: m,
+    color: b,
+    buttonIcon: f,
+    onButtonPress: j,
+    listType: h = "icon",
+    index: p,
+    noInset: v = false
   } = e;
   return (0, i.jsxs)(o.P3F, {
-    onClick: f,
+    onClick: j,
     className: l()(c.row, c.clickable, {
-      [c.noInset]: p
+      [c.noInset]: v,
+      [c.disabled]: x
     }),
     children: [(0, i.jsxs)(o.Kqy, {
       direction: "horizontal",
       gap: 16,
       align: "center",
-      children: ["numbered" === j && null != h ? (0, i.jsx)(o.X6q, {
+      children: ["numbered" === h && null != p ? (0, i.jsx)(o.X6q, {
         variant: "heading-md/semibold",
         color: "text-brand",
         className: c.number,
-        children: h + 1
+        children: p + 1
       }) : null != n && (0, i.jsx)("div", {
         className: c.iconContainer,
         children: (0, i.jsx)(n, {
-          color: null != m ? m : "currentColor",
-          className: l()(c.icon, x)
+          color: null != b ? b : "currentColor",
+          className: l()(c.icon, m)
         })
       }), (0, i.jsxs)("div", {
         className: c.textContainer,
@@ -204,6 +206,6 @@ function m(e) {
           children: a
         })]
       })]
-    }), null != b ? (0, i.jsx)(b, {}) : (0, i.jsx)(o.Fbu, {})]
+    }), null != f ? (0, i.jsx)(f, {}) : (0, i.jsx)(o.Fbu, {})]
   })
 }

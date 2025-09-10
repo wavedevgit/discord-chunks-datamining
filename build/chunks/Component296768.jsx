@@ -54,7 +54,7 @@ let P = e => {
       return (0, n.jsx)(u.P3F, (a = y({}, e), s = s = {
         className: b.similarGameImageClickable,
         onClick: async () => {
-          i(f.as.ClickSimilarGame, t.applicationId), (0, u.ZDy)(() => Promise.resolve(e => (0, n.jsx)(v.default, y({
+          i(f.as.ClickSimilarGame, t.applicationId), (0, u.ZDy)(() => Promise.resolve(e => (0, n.jsx)(O.default, y({
             applicationId: t.applicationId,
             source: f.m1.SimilarGames
           }, e)))), await new Promise(e => setTimeout(e, 10)), r()
@@ -95,19 +95,19 @@ function w(e) {
     s.length > 0 && d.Z.getDetectableGamesSupplemental([t, ...s])
   }, [t, s]), f && null == m) ? (0, n.jsxs)("div", {
     children: [(0, n.jsx)("div", {
-      className: a()(b.loadingHeading, h.sectionHeader)
+      className: a()(b.loadingHeading, v.sectionHeader)
     }), (0, n.jsx)("div", {
-      className: a()(h.row, h.gapLg),
+      className: a()(v.row, v.gapLg),
       children: o().range(0, 5).map(e => (0, n.jsx)("div", {
         className: b.loadingArtwork
       }, e))
     })]
   }) : (f || 0 !== x.length) && null == m ? (0, n.jsxs)("div", {
     children: [(0, n.jsx)(u.X6q, {
-      className: h.sectionHeader,
+      className: v.sectionHeader,
       variant: "text-md/semibold",
       color: "header-primary",
-      children: O.intl.string(O.t["6rLyQE"])
+      children: h.intl.string(h.t["6rLyQE"])
     }), (0, n.jsx)("div", {
       className: b.similarGames,
       style: {},

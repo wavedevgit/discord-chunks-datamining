@@ -11,7 +11,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk111361 = require("./111361.js"),
   Chunk509212 = require("./509212.js"),
   Chunk113434 = require("./113434.js"),
-  Chunk990175 = require("./990175.jsx"),
+  Chunk302914 = require("./302914.jsx"),
   Chunk566078 = require("./566078.js"),
   Chunk46140 = require("./46140.js"),
   Chunk474936 = require("./474936.js"),
@@ -199,16 +199,29 @@ function A(e) {
   let {
     quest: t,
     taskDetails: n,
-    withoutMarkdown: r
-  } = e, i = u.r.build(t.config).defaultRewardNameWithArticle, {
-    targetMinutes: a,
-    applications: o
+    withoutMarkdown: r,
+    popoutTargetElementRef: i,
+    onGameSheetOpened: a,
+    onGameSheetClosed: o
+  } = e, s = u.r.build(t.config).defaultRewardNameWithArticle, {
+    targetMinutes: l,
+    applications: d
   } = n;
-  return E(_.t.BfgxRk, {
-    rewardNameWithArticle: i,
-    targetMinutes: a,
-    onClick: () => (0, c.v)(o)
-  }, r)
+  if (r) return _.intl.formatToPlainString(_.t["1votFx"], {
+    rewardNameWithArticle: s,
+    targetMinutes: l
+  });
+  let f = (0, c.C)({
+    applications: null != d ? d : [],
+    popoutTargetElementRef: i,
+    onGameSheetOpened: a,
+    onGameSheetClosed: o
+  });
+  return _.intl.format(_.t.CDeHur, {
+    rewardNameWithArticle: s,
+    targetMinutes: l,
+    gameSheetHook: f
+  })
 }
 
 function C(e) {
@@ -217,33 +230,39 @@ function C(e) {
     taskDetails: n,
     thirdPartyTaskDetails: r,
     withoutMarkdown: i,
-    currentUser: a
-  } = e, l = (0, o.I5)(a, f.p9.TIER_2), c = (0, s.Kr)(t.config), u = (0, s.$J)(t) && (0, s.$H)(t);
+    currentUser: a,
+    popoutTargetElementRef: l,
+    onGameSheetOpened: c,
+    onGameSheetClosed: u
+  } = e, d = (0, o.I5)(a, f.p9.TIER_2), _ = (0, s.Kr)(t.config), p = (0, s.$J)(t) && (0, s.$H)(t);
   if ((0, s.Pb)(t)) return A({
     quest: t,
     taskDetails: n,
-    withoutMarkdown: i
+    withoutMarkdown: i,
+    popoutTargetElementRef: l,
+    onGameSheetOpened: c,
+    onGameSheetClosed: u
   });
-  if (u) return b({
+  if (p) return b({
     quest: t,
     taskDetails: n,
     withoutMarkdown: i,
-    hasNitro: l,
-    collectibleRewardDuration: c
+    hasNitro: d,
+    collectibleRewardDuration: _
   });
   if ((0, s.$J)(t)) return y({
     quest: t,
     taskDetails: n,
     withoutMarkdown: i,
-    hasNitro: l,
-    collectibleRewardDuration: c
+    hasNitro: d,
+    collectibleRewardDuration: _
   });
   if ((0, s.$H)(t)) return O({
     quest: t,
     taskDetails: n,
     withoutMarkdown: i,
-    hasNitro: l,
-    collectibleRewardDuration: c
+    hasNitro: d,
+    collectibleRewardDuration: _
   });
   if ((0, s.oo)({
       quest: t
@@ -252,7 +271,7 @@ function C(e) {
     taskDetails: n,
     withoutMarkdown: i
   });
-  else if ((0, s.q8)(t)) return I(t, c, l, i);
+  else if ((0, s.q8)(t)) return I(t, _, d, i);
   else if ((0, s.pO)(t)) return T({
     quest: t,
     taskDetails: n,
@@ -262,15 +281,18 @@ function C(e) {
     quest: t,
     taskDetails: n,
     withoutMarkdown: i,
-    hasNitro: l,
-    collectibleRewardDuration: c
+    hasNitro: d,
+    collectibleRewardDuration: _
   })
 }
 
 function N(e) {
   var t;
   return C(g(h({}, e), {
-    currentUser: null != (t = e.currentUser) ? t : a.default.getCurrentUser()
+    currentUser: null != (t = e.currentUser) ? t : a.default.getCurrentUser(),
+    popoutTargetElementRef: e.popoutTargetElementRef,
+    onGameSheetOpened: e.onGameSheetOpened,
+    onGameSheetClosed: e.onGameSheetClosed
   }))
 }
 

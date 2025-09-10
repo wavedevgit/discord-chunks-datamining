@@ -3,6 +3,7 @@
 module.exports = {
   row: "row__19fd1",
   clickable: "clickable__19fd1",
+  disabled: "disabled__19fd1",
   noInset: "noInset__19fd1",
   iconContainer: "iconContainer__19fd1",
   icon: "icon__19fd1",

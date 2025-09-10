@@ -1,4 +1,4 @@
-/** Chunk was on 82052 **/
+/** Chunk was on 83123 **/
 /** chunk id: 5463, original params: e,a,r (module,exports,require) **/
 module.exports = {
   friends: "friends_b37a75",

@@ -71,28 +71,32 @@ function U(e) {
   }), F = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), V = (0, c.e7)([p.Z], () => p.Z.hasLayers()), H = i.useRef(null), Y = i.useMemo(() => (0, g.q8)(a), [a]), W = (null == (t = a.userStatus) ? true : t.enrolledAt) != null, K = (0, d.Z)(W), z = (null == (n = a.userStatus) ? true : n.completedAt) != null, {
     hasError: q,
     isLoading: X
-  } = (0, A.d7)(), Q = i.useContext(R.T) || U && B && !X && !G, J = i.useRef(Q), $ = i.useRef(false), ee = i.useRef(false), [et, en] = i.useState(false), [er, ei] = i.useState(false), [ea, eo] = i.useState(true), [es, el] = i.useState(true), ec = i.useRef(null), eu = i.useCallback(e => {
-    z || (eo(false), ei(e))
-  }, [z]), ed = i.useCallback(() => {
-    eu(true)
-  }, [eu]), ef = i.useCallback(() => {
+  } = (0, A.d7)(), Q = i.useContext(R.T) || U && B && !X && !G, J = i.useRef(Q), $ = i.useRef(false), ee = i.useRef(false), [et, en] = i.useState(false), [er, ei] = i.useState(false), [ea, eo] = i.useState(false), [es, el] = i.useState(true), [ec, eu] = i.useState(true), ed = i.useRef(null), ef = i.useCallback(e => {
+    z || (el(false), eo(e))
+  }, [z]), e_ = i.useCallback(() => {
+    ef(true)
+  }, [ef]), ep = i.useCallback(() => {
     en(true)
-  }, []), e_ = i.useCallback(() => {
-    en(false), ee.current || z || eu(false)
-  }, [z, eu]), ep = i.useCallback(() => {
-    en(false), z || eu(false), ee.current = false
-  }, [z, eu]), eh = i.useCallback(function() {
+  }, []), eh = i.useCallback(() => {
+    en(false), ee.current || z || ef(false)
+  }, [z, ef]), em = i.useCallback(() => {
+    en(false), z || ef(false), ee.current = false
+  }, [z, ef]), eg = i.useCallback(() => {
+    ei(true)
+  }, []), eE = i.useCallback(() => {
+    ei(false), ef(false)
+  }, [ef]), eb = i.useCallback(function() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
-    if (er) return;
+    if (ea) return;
     let {
       withDelay: t = false
     } = e;
-    t ? $.current = window.setTimeout(ed, j) : ed()
-  }, [ed, er]), em = i.useCallback(() => {
-    eh()
-  }, [eh]), eg = i.useCallback(() => {
-    window.clearTimeout($.current), !et && (ee.current || eu(false))
-  }, [et, eu]), eE = i.useCallback(() => {
+    t ? $.current = window.setTimeout(e_, j) : e_()
+  }, [e_, ea]), ey = i.useCallback(() => {
+    eb()
+  }, [eb]), eO = i.useCallback(() => {
+    window.clearTimeout($.current), et || er || ee.current || ef(false)
+  }, [et, er, ef]), ev = i.useCallback(() => {
     var e;
     (0, h.dA)({
       questId: a.id,
@@ -104,10 +108,10 @@ function U(e) {
       },
       shouldExtendSession: true,
       sourceQuestContent: y.jn.QUEST_BAR_V2
-    }), ee.current = true, eh({
+    }), ee.current = true, eb({
       withDelay: true
     })
-  }, [eh, a]), eb = i.useCallback(() => {
+  }, [eb, a]), eI = i.useCallback(() => {
     var e;
     (0, h.dA)({
       questId: a.id,
@@ -118,38 +122,38 @@ function U(e) {
         impression_id: null == (e = H.current) ? true : e.getId()
       },
       sourceQuestContent: y.jn.QUEST_BAR_V2
-    }), ee.current = false, eg()
-  }, [eg, a]);
+    }), ee.current = false, eO()
+  }, [eO, a]);
   i.useLayoutEffect(() => {
-    W && !K && ee.current && ed()
-  }, [ed, W, K]), i.useLayoutEffect(() => {
-    z || !W || K || ee.current || eu(false)
-  }, [W, z, K, eu]), i.useLayoutEffect(() => {
-    Q !== J.current && el(false), J.current = Q
+    W && !K && ee.current && e_()
+  }, [e_, W, K]), i.useLayoutEffect(() => {
+    z || !W || K || ee.current || ef(false)
+  }, [W, z, K, ef]), i.useLayoutEffect(() => {
+    Q !== J.current && eu(false), J.current = Q
   }, [Q]);
-  let ey = W ? w.XZ : w.R4,
+  let eT = W ? w.XZ : w.R4,
     [{
-      expansionSpring: eO
-    }, ev] = (0, u.q_F)(() => ({
+      expansionSpring: eS
+    }, eA] = (0, u.q_F)(() => ({
       from: {
         expansionSpring: 0
       },
-      config: ey,
+      config: eT,
       onRest: () => {
-        eo(true)
+        el(true)
       },
       onStart: () => {
-        eo(false)
+        el(false)
       }
     }));
   i.useEffect(() => {
-    ev({
-      expansionSpring: +!!er,
+    eA({
+      expansionSpring: +!!ea,
       immediate: F
     })
-  }, [er, ev, F]);
+  }, [ea, eA, F]);
   let {
-    visibilitySpring: eI
+    visibilitySpring: eC
   } = (0, u.q_F)({
     from: {
       visibilitySpring: 0
@@ -163,10 +167,10 @@ function U(e) {
       clamp: true
     },
     onRest: () => {
-      el(true)
+      eu(true)
     },
     onStart: () => {
-      el(false)
+      eu(false)
     }
   });
   i.useEffect(() => {
@@ -205,7 +209,7 @@ function U(e) {
       })
     }
   }, [U, a.id]), i.useEffect(() => {
-    if (!Q && es && !X) {
+    if (!Q && ec && !X) {
       var e;
       (0, h.dA)({
         questId: a.id,
@@ -219,15 +223,15 @@ function U(e) {
         sourceQuestContent: y.jn.QUEST_BAR_V2
       })
     }
-  }, [Q, es, X, a.id, Z]), i.useEffect(() => {
-    (!B || G) && m.Z.clearTracking(), Q && es && !X && !q && U && m.Z.stopTracking(a.id)
-  }, [B, G, Q, es, X, q, U, a.id]);
-  let eT = (0, O.h)({
+  }, [Q, ec, X, a.id, Z]), i.useEffect(() => {
+    (!B || G) && m.Z.clearTracking(), Q && ec && !X && !q && U && m.Z.stopTracking(a.id)
+  }, [B, G, Q, ec, X, q, U, a.id]);
+  let eN = (0, O.h)({
     location: w.dr.QUESTS_BAR,
     questConfig: a.config
   });
-  if (!U || !Q && es && !X || q) return q ? E.log("Not rendered due to asset error") : U || E.log("Not rendered due to ineligibility"), null;
-  let eS = M + 78 * !!z;
+  if (!U || !Q && ec && !X || q) return q ? E.log("Not rendered due to asset error") : U || E.log("Not rendered due to ineligibility"), null;
+  let eR = M + 78 * !!z;
   return (0, r.jsx)(T.A, {
     questOrQuests: a,
     questContent: y.jn.QUEST_BAR_V2,
@@ -237,48 +241,50 @@ function U(e) {
       className: L.mask,
       children: [Q && (0, r.jsx)(k, {
         questId: a.id,
-        isExpanded: er
+        isExpanded: ea
       }), (0, r.jsx)(s.animated.div, {
         "aria-hidden": !Q,
-        onMouseLeave: eb,
-        onMouseEnter: eE,
-        onFocus: em,
-        onBlur: eg,
+        onMouseLeave: eI,
+        onMouseEnter: ev,
+        onFocus: ey,
+        onBlur: eO,
         className: o()(L.wrapper, {
           [L.wrapperInvisible]: !Q,
-          [L.wrapperVisible]: Q && es
+          [L.wrapperVisible]: Q && ec
         }),
         style: {
-          color: eT ? true : a.config.colors.secondary,
-          height: eI.to({
+          color: eN ? true : a.config.colors.secondary,
+          height: eC.to({
             range: [0, 1],
-            output: [0, eS]
+            output: [0, eR]
           })
         },
         children: (0, r.jsx)(s.animated.div, {
           className: o()(L.contentWrapper, {
-            [L.contentWrapperExpanded]: er,
+            [L.contentWrapperExpanded]: ea,
             [L.contentWrapperAccepted]: W,
-            [L.contentWrapperBrandColorRemoval]: eT
+            [L.contentWrapperBrandColorRemoval]: eN
           }),
           style: {
-            backgroundColor: eT ? true : "var(--home-background)",
-            backgroundImage: W && !eT ? "linear-gradient(90deg, ".concat(D.aY, ", ").concat(D.v6, ")") : true
+            backgroundColor: eN ? true : "var(--home-background)",
+            backgroundImage: W && !eN ? "linear-gradient(90deg, ".concat(D.aY, ", ").concat(D.v6, ")") : true
           },
           children: (0, r.jsx)(N.t, {
-            springConfig: ey,
-            isExpanded: er,
+            springConfig: eT,
+            isExpanded: ea,
             children: (0, r.jsx)(P.Z, {
-              expandedContentRef: ec,
-              expansionSpring: eO,
-              isExpanded: er,
-              isExpansionAnimationComplete: ea,
-              onCtxMenuClosed: e_,
-              onCtxMenuOpened: ef,
-              onCtxMenuSelection: ep,
+              expandedContentRef: ed,
+              expansionSpring: eS,
+              isExpanded: ea,
+              isExpansionAnimationComplete: es,
+              onCtxMenuClosed: eh,
+              onCtxMenuOpened: ep,
+              onCtxMenuSelection: em,
+              onGameSheetOpened: eg,
+              onGameSheetClosed: eE,
               quest: a,
               useReducedMotion: F,
-              collapsedHeight: eS
+              collapsedHeight: eR
             })
           })
         })

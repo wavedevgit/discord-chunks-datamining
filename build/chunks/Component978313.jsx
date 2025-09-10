@@ -22,14 +22,14 @@ function x(e) {
   let {
     detectedGame: t,
     trackAction: r
-  } = e, [l, x] = i.useState((null == t ? true : t.summaryLocalized) != null), [v, O] = i.useState(true), [h, b] = i.useState(false), y = i.useRef(null), {
+  } = e, [l, x] = i.useState((null == t ? true : t.summaryLocalized) != null), [O, h] = i.useState(true), [v, b] = i.useState(false), y = i.useRef(null), {
     width: P,
     height: w
   } = (0, d.Z)();
   return (i.useEffect(() => {
     let e = y.current;
-    null != e && b(e.scrollHeight - e.clientHeight > 1 || !v)
-  }, [y, P, w, v]), null == t.summary) ? null : (0, n.jsxs)("div", {
+    null != e && b(e.scrollHeight - e.clientHeight > 1 || !O)
+  }, [y, P, w, O]), null == t.summary) ? null : (0, n.jsxs)("div", {
     className: a()(g.column, g.gapMd),
     children: [null != t.summaryLocalized && (0, n.jsxs)("div", {
       className: a()(g.row, g.gapSm),
@@ -47,17 +47,17 @@ function x(e) {
       })]
     }), (0, n.jsx)(o.xv, {
       ref: y,
-      lineClamp: v ? 8 : true,
+      lineClamp: O ? 8 : true,
       variant: "text-sm/normal",
       children: l ? t.summaryLocalized : t.summary
-    }), h && (0, n.jsx)(u.P3F, {
+    }), v && (0, n.jsx)(u.P3F, {
       className: g.clickable,
       onClick: () => {
-        r(v ? m.as.ShowMore : m.as.ShowLess), O(!v)
+        r(O ? m.as.ShowMore : m.as.ShowLess), h(!O)
       },
       children: (0, n.jsx)(o.xv, {
         variant: "text-sm/semibold",
-        children: v ? f.intl.string(f.t.lBeKY2) : f.intl.string(f.t["6MwJo6"])
+        children: O ? f.intl.string(f.t.lBeKY2) : f.intl.string(f.t["6MwJo6"])
       })
     }), (0, n.jsx)(p.Z, {
       className: j.platforms,

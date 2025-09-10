@@ -1,7 +1,7 @@
 /** Chunk was on 89311 **/
 /** chunk id: 499493, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,13 +19,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk192025 = require("./192025.js"),
   Chunk226788 = require("./226788.js");
-let O = e => {
+let h = e => {
   let {
     entry: t,
     onClose: r,
     onReaction: l,
-    onRequestOpen: O,
-    disableActivityProfileLinks: h,
+    onRequestOpen: h,
+    disableActivityProfileLinks: v,
     customCTA: b,
     popoutClassname: y,
     popoutPosition: P = "right"
@@ -58,13 +58,13 @@ let O = e => {
           },
           onUserPopoutClosed: () => i(),
           disableGameProfileLinks: true,
-          disableActivityProfileLinks: h
+          disableActivityProfileLinks: v
         })
       })
     },
     positionKey: "'content-entry-".concat(t.id),
     onRequestOpen: () => {
-      null == O || O()
+      null == h || h()
     },
     children: e => {
       var r, i;
@@ -106,7 +106,7 @@ let O = e => {
             }), (0, n.jsx)("div", {
               className: x.playerInfo,
               children: (0, n.jsxs)("div", {
-                className: a()(v.column, v.gapXs),
+                className: a()(O.column, O.gapXs),
                 children: [(0, n.jsx)(o.Text, {
                   variant: "text-md/medium",
                   color: "text-primary",

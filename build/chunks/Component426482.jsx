@@ -1,53 +1,56 @@
-/** Chunk was on 89311 **/
-/** chunk id: 426482, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 426482, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  C: () => m,
-  Z: () => d
+  C: () => d,
+  Z: () => u
 }), require("./388685.js");
-var n, Chunk951288 = require("./951288.js"),
+var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk451697 = require("./451697.js"),
-  d = ((n = {})[n.SMALL = 0] = "SMALL", n[n.LARGE = 1] = "LARGE", n);
+  u = function(e) {
+    return e[e.SMALL = 0] = "SMALL", e[e.LARGE = 1] = "LARGE", e
+  }({});
 
-function m(e) {
+function d(e) {
   var t;
   let {
-    game: r,
-    application: n,
-    size: a,
+    game: n,
+    application: a,
+    size: u,
     className: d
-  } = e, [m, p] = l.useState(false), f = null != (t = null == n ? true : n.name) ? t : r.name, g = null != r.firstReleaseDate ? new Date(r.firstReleaseDate) : null;
-  return null == r.coverImageUrl || m ? (0, i.jsxs)("div", {
-    className: s()(u.fallback, d),
-    children: [(0, i.jsx)("div", {
-      className: u.spacer
-    }), (0, i.jsx)(o.xv, {
-      variant: 1 === a ? "text-md/medium" : "text-xs/medium",
+  } = e, [f, _] = i.useState(false), p = null != (t = null == a ? true : a.name) ? t : n.name, h = null != n.firstReleaseDate ? new Date(n.firstReleaseDate) : null, m = () => {
+    _(true)
+  }, g = () => {
+    _(false)
+  };
+  return null == n.coverImageUrl || f ? (0, r.jsxs)("div", {
+    className: o()(c.fallback, d),
+    children: [(0, r.jsx)("div", {
+      className: c.spacer
+    }), (0, r.jsx)(s.xv, {
+      variant: 1 === u ? "text-md/medium" : "text-xs/medium",
       color: "always-white",
-      lineClamp: 1 === a ? 4 : 3,
-      children: f
-    }), (0, i.jsx)("div", {
-      className: u.spacer
-    }), (0, i.jsx)(o.xv, {
-      variant: 1 === a ? "text-sm/normal" : "text-xxs/normal",
+      lineClamp: 1 === u ? 4 : 3,
+      children: p
+    }), (0, r.jsx)("div", {
+      className: c.spacer
+    }), (0, r.jsx)(s.xv, {
+      variant: 1 === u ? "text-sm/normal" : "text-xxs/normal",
       color: "always-white",
-      children: null != g ? "(".concat(null == g ? true : g.getFullYear(), ")") : null
+      children: null != h ? "(".concat(null == h ? true : h.getFullYear(), ")") : null
     })]
-  }) : (0, i.jsx)("img", {
+  }) : (0, r.jsx)("img", {
     className: d,
-    src: r.coverImageUrl,
-    alt: c.intl.formatToPlainString(c.t["3ev90d"], {
-      game: f
+    src: n.coverImageUrl,
+    alt: l.intl.formatToPlainString(l.t["3ev90d"], {
+      game: p
     }),
-    onError: () => {
-      p(true)
-    },
-    onLoad: () => {
-      p(false)
-    }
+    onError: m,
+    onLoad: g
   })
 }

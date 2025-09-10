@@ -26,17 +26,17 @@ let h = function(e) {
   } = e, {
     loading: g,
     initiateAgeVerification: v
-  } = (0, x.WD)(h, true), y = i.useMemo(() => (0, o.Z)(), []);
+  } = (0, x.WD)(h, true), _ = i.useMemo(() => (0, o.Z)(), []);
   i.useEffect(() => {
-    (0, u.lA)(y, u.d_.RETRY, n)
-  }, [y, n]);
-  let _ = i.useMemo(() => [{
+    (0, u.lA)(_, u.d_.RETRY, n)
+  }, [_, n]);
+  let y = i.useMemo(() => [{
     title: f.intl.string(f.t.FYkioq),
     description: f.intl.string(f.t.xMfbR0),
     buttonText: f.intl.string(f.t.RtOE1t),
     buttonLoading: g,
     onButtonPress: () => {
-      v(u.cU.RETRY_MODAL), (0, u.x3)(y, u.d_.RETRY, u.sU.GET_STARTED)
+      v(u.cU.RETRY_MODAL), (0, u.x3)(_, u.d_.RETRY, u.sU.GET_STARTED)
     }
   }, {
     title: f.intl.string(f.t["LZO+HR"]),
@@ -44,9 +44,9 @@ let h = function(e) {
     buttonText: f.intl.string(f.t["LZO+HR"]),
     buttonLoading: g,
     onButtonPress: () => {
-      d.Z.openUrl(m.sQ.APPEALS_LINK), (0, u.x3)(y, u.d_.RETRY, u.sU.MANUAL_REVIEW_REQUEST)
+      d.Z.openUrl(m.sQ.APPEALS_LINK), (0, u.x3)(_, u.d_.RETRY, u.sU.MANUAL_REVIEW_REQUEST)
     }
-  }], [v, y, g]);
+  }], [v, _, g]);
   return (0, r.jsx)(l.I, {
     transitionState: t,
     onClose: h,
@@ -66,7 +66,7 @@ let h = function(e) {
         textColor: "text-feedback-info",
         textVariant: "text-sm/medium",
         children: f.intl.string(f.t.El4aXl)
-      }), _.map((e, t) => (0, r.jsx)(c.JZ, function(e) {
+      }), y.map((e, t) => (0, r.jsx)(c.JZ, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -90,7 +90,7 @@ let h = function(e) {
         color: "text-muted",
         children: f.intl.format(f.t["L+FgkZ"], {
           handleOnHelpUrlHook: () => {
-            d.Z.openUrl(s.Z.getArticleURL(b.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, u.x3)(y, u.d_.RETRY, u.sU.LEARN_MORE)
+            d.Z.openUrl(s.Z.getArticleURL(b.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, u.x3)(_, u.d_.RETRY, u.sU.LEARN_MORE)
           }
         })
       })]

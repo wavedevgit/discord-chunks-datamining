@@ -80,58 +80,59 @@ function D(e) {
     isVisibleInViewport: M,
     onReceiveErrorHints: k,
     sourceQuestContent: U
-  } = e, G = i.useMemo(() => h.r.build(S.config), [S.config]), B = G.defaultRewardName, Z = G.defaultRewardNameWithArticle, F = (null == (t = S.userStatus) ? true : t.enrolledAt) != null, {
-    ref: V,
-    scrollHeight: H
-  } = (0, u.kE)(), Y = (null != H ? H : 0) + P, W = H !== R, {
-    onAssetLoadComplete: K
+  } = e, G = i.useRef(null), B = i.useMemo(() => h.r.build(S.config), [S.config]), Z = B.defaultRewardName, F = B.defaultRewardNameWithArticle, V = (null == (t = S.userStatus) ? true : t.enrolledAt) != null, {
+    ref: H,
+    scrollHeight: Y
+  } = (0, u.kE)(), W = (null != Y ? Y : 0) + P, K = Y !== R, {
+    onAssetLoadComplete: z
   } = i.useContext(E.k), {
-    expansionSpring: z
+    expansionSpring: q
   } = (0, c.q_F)({
     expansionSpring: +!!D,
     config: N(A({}, v.Y), {
       clamp: true
     })
-  }), q = (null == (n = S.userStatus) ? true : n.completedAt) != null, X = (null == (a = S.userStatus) ? true : a.claimedAt) != null, Q = (0, _.xN)(S.config), J = (0, _.LM)(S.config), {
-    completedRatio: $,
-    completedRatioDisplay: ee
-  } = (0, p.I)(S), et = (0, p.Bd)(S, U), en = i.useMemo(() => X && Q ? I.intl.format(I.t["8Op4c3"], {
+  }), X = (null == (n = S.userStatus) ? true : n.completedAt) != null, Q = (null == (a = S.userStatus) ? true : a.claimedAt) != null, J = (0, _.xN)(S.config), $ = (0, _.LM)(S.config), {
+    completedRatio: ee,
+    completedRatioDisplay: et
+  } = (0, p.I)(S), en = (0, p.Bd)(S, U, G), er = i.useMemo(() => Q && J ? I.intl.format(I.t["8Op4c3"], {
     balanceHook: () => (0, r.jsxs)(x, {
       questId: S.id,
       children: [(0, r.jsx)(f.Z, {
         shouldUseThemeColor: true,
         className: T.orbsBalanceIcon
-      }), J]
+      }), $]
     })
-  }) : X ? (0, r.jsx)(x, {
+  }) : Q ? (0, r.jsx)(x, {
     questId: S.id,
-    children: B
-  }) : Q ? I.intl.format(I.t.ro1szc, {
+    children: Z
+  }) : J ? I.intl.format(I.t.ro1szc, {
     balanceHook: () => (0, r.jsxs)(x, {
       questId: S.id,
       children: [(0, r.jsx)(f.Z, {
         shouldUseThemeColor: true,
         className: T.orbsBalanceIcon
-      }), J]
+      }), $]
     })
   }) : I.intl.format(I.t["0IUT4e"], {
     rewardWithArticleHook: () => (0, r.jsx)(x, {
       questId: S.id,
-      children: Z
+      children: F
     })
-  }), [B, X, Z, S.id, J, Q]), er = i.useMemo(() => {
-    if (null != et) return (0, r.jsx)(c.Text, {
+  }), [Z, Q, F, S.id, $, J]), ei = i.useMemo(() => {
+    if (null != en) return (0, r.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
       className: T.description,
-      children: et
+      children: en
     })
-  }, [et]), ei = (0, l.e7)([d.Z], () => d.Z.useReducedMotion);
+  }, [en]), ea = (0, l.e7)([d.Z], () => d.Z.useReducedMotion);
   return (0, r.jsxs)("div", {
     className: T.container,
+    ref: G,
     children: [(0, r.jsxs)(s.animated.div, {
       style: {
-        maxHeight: z.to([0, 1], [R, Y])
+        maxHeight: q.to([0, 1], [R, W])
       },
       className: T.rewardDescriptionContainer,
       children: [(0, r.jsx)(b.E, {
@@ -140,21 +141,21 @@ function D(e) {
         height: 80,
         children: (0, r.jsxs)("div", {
           className: T.assetWrapper,
-          children: [!X && q && (0, r.jsx)("div", {
+          children: [!Q && X && (0, r.jsx)("div", {
             className: T.completionAnimation
-          }), F && !X ? (0, r.jsxs)("div", {
+          }), V && !Q ? (0, r.jsxs)("div", {
             className: T.progressWrapper,
-            children: [q && (0, r.jsx)(c.Fmz, {
+            children: [X && (0, r.jsx)(c.Fmz, {
               importData: w,
               className: T.confetti,
               loop: false,
               autoplay: false,
-              shouldAnimate: !ei
+              shouldAnimate: !ea
             }), (0, r.jsx)(m.Z, {
               quest: S,
               size: 76,
-              percentComplete: $,
-              percentCompleteText: D && !(0, _.zi)(S) ? ee : true,
+              percentComplete: ee,
+              percentCompleteText: D && !(0, _.zi)(S) ? et : true,
               children: (0, r.jsx)("div", {
                 className: T.circularRewardTileWrapper,
                 children: (0, r.jsx)(g.Z, {
@@ -163,7 +164,7 @@ function D(e) {
                   className: T.circularQuestRewardTileAsset,
                   location: O.dr.QUEST_HOME_DESKTOP,
                   autoplay: D,
-                  onLoadComplete: K,
+                  onLoadComplete: z,
                   lazyLoad: true,
                   sourceQuestContent: U
                 })
@@ -175,15 +176,15 @@ function D(e) {
             questContent: C,
             className: T.questRewardTileAsset,
             location: O.dr.QUEST_HOME_DESKTOP,
-            onLoadComplete: K,
+            onLoadComplete: z,
             lazyLoad: true,
             sourceQuestContent: U
           })]
         })
       }), (0, r.jsxs)("div", {
-        ref: V,
+        ref: H,
         className: o()(T.textContainer, {
-          [T.justifyCenter]: !W
+          [T.justifyCenter]: !K
         }),
         children: [(0, r.jsx)(c.X6q, {
           variant: "eyebrow",
@@ -196,11 +197,11 @@ function D(e) {
           variant: "text-md/semibold",
           color: "header-primary",
           className: T.header,
-          children: en
-        }), er]
-      }), W && (0, r.jsx)(s.animated.div, {
+          children: er
+        }), ei]
+      }), K && (0, r.jsx)(s.animated.div, {
         style: {
-          opacity: z.to([0, 1], [1, 0])
+          opacity: q.to([0, 1], [1, 0])
         },
         className: T.textOverflowBlur
       })]

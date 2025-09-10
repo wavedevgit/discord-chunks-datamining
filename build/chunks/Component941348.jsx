@@ -25,44 +25,48 @@ let f = function(e) {
     onCtxMenuSelection: E,
     quest: b,
     useReducedMotion: y,
-    collapsedHeight: O
-  } = e, v = (null == (t = b.userStatus) ? true : t.completedAt) != null, I = i.useRef(null), T = i.useRef(null), S = (null == (n = b.userStatus) ? true : n.enrolledAt) != null, A = (0, a.Rf)(b);
+    collapsedHeight: O,
+    onGameSheetOpened: v,
+    onGameSheetClosed: I
+  } = e, T = (null == (t = b.userStatus) ? true : t.completedAt) != null, S = i.useRef(null), A = i.useRef(null), C = (null == (n = b.userStatus) ? true : n.enrolledAt) != null, N = (0, a.Rf)(b);
   return (0, r.jsxs)(s.p, {
     expandedContentRef: f,
-    collapsedContentRef: I,
+    collapsedContentRef: S,
     expansionSpring: _,
     children: [(0, r.jsx)(l.Z, {
-      ref: I,
+      ref: S,
       className: d.content,
       expansionSpring: _,
       isExpanded: p,
       isExpansionAnimationComplete: h,
       quest: b,
       useReducedMotion: y,
-      taskDetails: A,
+      taskDetails: N,
       onCtxMenuOpen: m,
       onCtxMenuClose: g,
       onCtxMenuSelect: E,
-      overlayRef: T
-    }, v ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, r.jsx)(c.Z, {
+      overlayRef: A
+    }, T ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, r.jsx)(c.Z, {
       expansionSpring: _,
       className: d.content,
       collapsedHeight: O,
       onCtxMenuOpen: m,
       onCtxMenuClose: g,
       onCtxMenuSelect: E,
-      overlayRef: T,
+      onGameSheetOpened: v,
+      onGameSheetClosed: I,
+      overlayRef: A,
       isExpanded: p,
       isExpansionAnimationComplete: h,
       quest: b,
       useReducedMotion: y,
       ref: f,
-      taskDetails: A,
+      taskDetails: N,
       children: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(u.Z, {
           expansionSpring: _,
           isExpanded: p
-        }), !S && (0, r.jsx)(o.Z, {
+        }), !C && (0, r.jsx)(o.Z, {
           quest: b,
           expansionSpring: _,
           useReducedMotion: y,
@@ -74,7 +78,7 @@ let f = function(e) {
         })]
       })
     }), (0, r.jsx)("div", {
-      ref: T,
+      ref: A,
       className: d.overlay
     })]
   })

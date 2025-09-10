@@ -1,4 +1,4 @@
-/** Chunk was on 82052 **/
+/** Chunk was on 34134 **/
 /** chunk id: 429352, original params: e,a,r (module,exports,require) **/
 require.d(exports, {
   default: () => j
@@ -52,16 +52,16 @@ let h = e => {
       return (0, t.jsx)(_.P3F, (i = y({}, e), n = n = {
         className: v.gameClickable,
         onClick: () => {
-          (0, _.ZDy)(() => Promise.resolve(e => (0, t.jsx)(w.default, y({
+          (0, _.ZDy)(() => Promise.resolve(e => (0, t.jsx)(k.default, y({
             applicationId: a.applicationId,
             source: b.m1.QuestBar
           }, e))))
         },
-        children: (0, t.jsx)(k.C, {
+        children: (0, t.jsx)(w.C, {
           game: a,
           application: r,
           className: v.coverArt,
-          size: k.Z.SMALL
+          size: w.Z.SMALL
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(n)) : (function(e, a) {
         var r = Object.keys(e);

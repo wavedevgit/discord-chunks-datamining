@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx");
 let _ = "https://cdn.discordapp.com/assets/content/1b55390a202dcca3843b6c9205af0379cfa072f34d8b9217bce04aba4d373e5b.png",
-  p = "https://cdn.discordapp.com/assets/content/278f65638ac10ff28bad5822eedb285bbedc5188653d38fcfd19e8469bf1e384.png";
+  p = "https://cdn.discordapp.com/assets/content/fdb6d4e8a2f01f917d2025a8ca58ebd55e4eada92df1d5386f73d91d6acad1f9.png";
 
 function h(e) {
   let {
