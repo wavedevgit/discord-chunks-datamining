@@ -746,7 +746,7 @@ class eu extends Chunk647438.Component {
       try {
         let t = JSON.parse(e);
         for (let e in t) {
-          if (null == e.match(/^[0-9]{4}\-[0-9]{2}_[a-z0-9_]+$/)) return void this.setState({
+          if (null == e.match(/^[0-9]{4}\-[0-9]{2}(-|_)[a-z0-9_-]+$/)) return void this.setState({
             experimentsError: "".concat(e, " is an invalid experiment name")
           });
           if ("number" != typeof t[e]) return void this.setState({
