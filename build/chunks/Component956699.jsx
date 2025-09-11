@@ -175,6 +175,7 @@ class el extends Chunk647438.Component {
             })
           })
         }), (0, Chunk951288.jsx)(Chunk600164.Z.Child, {
+          wrap: true,
           basis: "50%",
           children: (0, Chunk951288.jsx)(Chunk481060.oil, {
             label: Chunk392711,
