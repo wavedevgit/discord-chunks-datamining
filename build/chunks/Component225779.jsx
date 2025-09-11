@@ -175,13 +175,15 @@ function S(e) {
     color: t = E.DEFAULT,
     className: n,
     style: i,
-    children: s
+    ref: s,
+    children: l
   } = e;
   return (0, r.jsx)("div", {
+    ref: s,
     className: a()(d.notice, {
       [d.isMobile]: o.tq
     }, n, t),
     style: null != i ? i : true,
-    children: s
+    children: l
   })
 }
