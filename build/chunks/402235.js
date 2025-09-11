@@ -2,37 +2,29 @@
 /** chunk id: 402235, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => l,
-  yH: () => c,
-  zI: () => u
+  ZP: () => o,
+  yH: () => s,
+  zI: () => l
 });
 var Chunk442837 = require("./442837.js"),
   Chunk430824 = require("./430824.js"),
-  Chunk232062 = require("./232062.js"),
-  Chunk944888 = require("./944888.js"),
   Chunk981631 = require("./981631.js");
 
+function o(e, t) {
+  return (0, r.e7)([i.Z], () => {
+    let t = i.Z.getGuild(e);
+    return null != t && t.features.has(a.oNc.ENHANCED_ROLE_COLORS)
+  })
+}
+
+function s(e, t) {
+  return (0, r.e7)([i.Z], () => {
+    let t = i.Z.getGuild(e);
+    return null != t && t.features.has(a.oNc.ENHANCED_ROLE_COLORS)
+  })
+}
+
 function l(e, t) {
-  let n = (0, r.e7)([i.Z], () => {
-      let t = i.Z.getGuild(e);
-      return null != t && t.features.has(s.oNc.ENHANCED_ROLE_COLORS)
-    }),
-    a = (0, o.ZP)(null != e ? e : true, null != t ? t : true);
-  return n || a
-}
-
-function c(e, t) {
-  let n = (0, r.e7)([i.Z], () => {
-      let t = i.Z.getGuild(e);
-      return null != t && t.features.has(s.oNc.ENHANCED_ROLE_COLORS)
-    }),
-    l = (0, a.W)(e, "useHasEnhancedRoleColorsForRole") && null != t && (0, o.YB)(t);
-  return n || l
-}
-
-function u(e, t) {
-  let n = i.Z.getGuild(e),
-    r = null != n && n.features.has(s.oNc.ENHANCED_ROLE_COLORS),
-    l = (0, a.Tq)(e, "getHasEnhancedRoleColorsForRole") && (0, o.YB)(t);
-  return r || l
+  let n = i.Z.getGuild(e);
+  return null != n && n.features.has(a.oNc.ENHANCED_ROLE_COLORS)
 }
