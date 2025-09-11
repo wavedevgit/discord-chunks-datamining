@@ -1,7 +1,7 @@
 /** Chunk was on 72853 **/
 /** chunk id: 918714, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk104940 = require("./104940.js");
 let Chunk575703 = require("./575703.js");
 
-function E(e) {
+function b(e) {
   let {
     task: t,
     handleSubmit: n,
@@ -35,7 +35,7 @@ function E(e) {
     children: (0, r.jsxs)(a.Kqy, {
       direction: "horizontal",
       justify: "start",
-      className: g.body,
+      className: y.body,
       children: [(0, r.jsx)(p.Z, {}), (0, r.jsx)(f.Z, {
         onSubmit: n,
         disabled: l
@@ -43,11 +43,11 @@ function E(e) {
     })
   })
 }
-let x = function(e) {
+let E = function(e) {
   let {
     onClose: t
-  } = e, [n, u] = i.useState(null), [f, p] = i.useState(true), [x, v] = i.useState(null), [b, j] = i.useState(false), _ = i.useCallback(async () => {
-    p(true), v(null);
+  } = e, [n, u] = i.useState(null), [f, p] = i.useState(true), [E, x] = i.useState(null), [v, j] = i.useState(false), _ = i.useCallback(async () => {
+    p(true), x(null);
     try {
       var e;
       let n = await (0, s.PA)();
@@ -68,7 +68,7 @@ let x = function(e) {
         }
       })
     } catch (e) {
-      v(y.intl.string(m.default["/f++3t"]))
+      x(h.intl.string(m.default["/f++3t"]))
     } finally {
       p(false)
     }
@@ -83,7 +83,7 @@ let x = function(e) {
         };
         await (0, s.Wl)(t), _()
       } catch (e) {
-        v(y.intl.string(m.default["+QRSxc"]))
+        x(h.intl.string(m.default["+QRSxc"]))
       } finally {
         j(false)
       }
@@ -94,10 +94,10 @@ let x = function(e) {
   }, [_]);
   let A = i.useMemo(() => (null == n ? true : n.task_type) === d.UA.AGE_VERIFICATION, [n]);
   return (0, r.jsxs)("div", {
-    className: g.background,
+    className: y.background,
     children: [(0, r.jsx)("img", {
-      className: g.artwork,
-      src: h,
+      className: y.artwork,
+      src: g,
       alt: ""
     }), A ? (0, r.jsx)(o.default, {
       transitionState: a.Dvm.ENTERED,
@@ -109,22 +109,22 @@ let x = function(e) {
         })
       }
     }) : (0, r.jsx)("div", {
-      className: g.safetyFlow,
+      className: y.safetyFlow,
       children: (0, r.jsxs)("div", {
-        className: g.container,
+        className: y.container,
         children: [f && (0, r.jsx)(a.Text, {
           variant: "text-md/normal",
           color: "text-muted",
-          children: y.intl.string(m.default.v0H5Tk)
-        }), null !== x && (0, r.jsx)(a.Text, {
+          children: h.intl.string(m.default.v0H5Tk)
+        }), null !== E && (0, r.jsx)(a.Text, {
           variant: "text-md/normal",
           color: "text-danger",
-          className: g.error,
-          children: x
-        }), !f && null === x && null != n && (0, r.jsx)(E, {
+          className: y.error,
+          children: E
+        }), !f && null === E && null != n && (0, r.jsx)(b, {
           task: n,
           handleSubmit: O,
-          disabled: b
+          disabled: v
         })]
       })
     })]

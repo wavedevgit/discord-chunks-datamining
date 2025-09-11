@@ -36,7 +36,7 @@ let _ = function(e) {
   let {
     loading: T,
     ageVerificationMethods: N
-  } = (0, h.Z)(() => {
+  } = (0, g.Z)(() => {
     null == O || O(), _()
   }, () => {
     S(l.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
@@ -49,7 +49,7 @@ let _ = function(e) {
       visibleContent: e
     }))
   }, []), i.useEffect(() => {
-    (0, y.lA)(P, y.d_.EXPRESSIVE_PRIMARY, n)
+    (0, h.lA)(P, h.d_.EXPRESSIVE_PRIMARY, n)
   }, [P, n]), (0, r.jsx)(o.I, {
     transitionState: t,
     onClose: _,
@@ -57,18 +57,18 @@ let _ = function(e) {
       type: "image",
       src: j.Z
     },
-    title: v.intl.string(v.t.JHNunp),
-    subtitle: v.intl.format(x.default.RpMIT0, {
+    title: x.intl.string(x.t.JHNunp),
+    subtitle: x.intl.format(E.default.RpMIT0, {
       handleOnHelpUrlHook: () => {
-        m.Z.openUrl(p.Z.getArticleURL(E.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, y.x3)(P, y.d_.EXPRESSIVE_PRIMARY, y.sU.LEARN_MORE)
+        m.Z.openUrl(p.Z.getArticleURL(b.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, h.x3)(P, h.d_.EXPRESSIVE_PRIMARY, h.sU.LEARN_MORE)
       }
     }),
     actionBarInput: (0, r.jsx)(c.Avr, {
       textVariant: "text-xs/medium",
       color: "text-tertiary",
-      text: v.intl.string(v.t["2jxGen"]),
+      text: x.intl.string(x.t["2jxGen"]),
       onClick: () => {
-        (0, y.x3)(P, y.d_.EXPRESSIVE_PRIMARY, y.sU.LOG_OUT), s.Z.logout("age_verification_get_started_modal")
+        (0, h.x3)(P, h.d_.EXPRESSIVE_PRIMARY, h.sU.LOG_OUT), s.Z.logout("age_verification_get_started_modal")
       }
     }),
     children: (0, r.jsxs)(c.Kqy, {
@@ -85,14 +85,14 @@ let _ = function(e) {
           right: 8
         },
         align: "center",
-        className: b.dataAssurance,
+        className: v.dataAssurance,
         children: [(0, r.jsx)(c.d3s, {
           size: "md",
           color: "currentColor"
         }), (0, r.jsx)(c.Text, {
           variant: "text-xs/medium",
           color: "text-feedback-info",
-          children: v.intl.string(x.default.ar3a3t)
+          children: x.intl.string(E.default.ar3a3t)
         })]
       }), null == N || 0 === N.length ? (0, r.jsxs)(c.Kqy, {
         direction: "vertical",
@@ -101,13 +101,13 @@ let _ = function(e) {
         children: [(0, r.jsx)(c.Text, {
           variant: "text-xs/medium",
           color: "text-secondary",
-          children: v.intl.string(x.default.cR6339)
+          children: x.intl.string(E.default.cR6339)
         }), (0, r.jsx)(c.zxk, {
           variant: "primary",
           size: "sm",
-          text: v.intl.string(x.default.hDvmYG),
+          text: x.intl.string(E.default.hDvmYG),
           onClick: () => {
-            (0, g.J)()
+            (0, y.J)()
           }
         })]
       }) : N.map(e => {

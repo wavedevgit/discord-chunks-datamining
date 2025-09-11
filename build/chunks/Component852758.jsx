@@ -124,11 +124,11 @@ function I() {
           default: e
         } = await Promise.resolve().then(n.bind(n, 607018));
         return t => (0, r.jsx)(e, A({
-          reason: g.L.USER_ACTION_REQUIRED
+          reason: y.L.USER_ACTION_REQUIRED
         }, t))
       }, {
         modalKey: _.M,
-        Layer: y.ZP
+        Layer: h.ZP
       })
     },
     onLogout: () => {
