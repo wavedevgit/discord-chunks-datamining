@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => f
-}), require("./388685.js"), require("./539854.js");
+}), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -21,12 +21,12 @@ let f = Chunk647438.memo(function(e) {
   } = e, l = o.z[n], {
     isDismissed: f,
     handleToggleDismissState: p
-  } = (0, u.Z)(l), [h, m] = i.useState(f), g = i.useCallback(() => {
-    null == a || a(n), m(p())
+  } = (0, u.Z)(l), h = i.useCallback(() => {
+    null == a || a(n), p()
   }, [a, p, n]);
   return (0, r.jsxs)(s.j7V, {
-    value: h,
-    onChange: g,
+    value: f,
+    onChange: h,
     className: t,
     children: [(0, r.jsx)(s.Text, {
       variant: "text-md/normal",

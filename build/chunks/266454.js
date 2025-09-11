@@ -2,49 +2,67 @@
 /** chunk id: 266454, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Nj: () => d,
-  Ob: () => _,
-  Q3: () => f,
-  wE: () => p,
-  zu: () => u
+  Nj: () => p,
+  Q3: () => h,
+  wE: () => g,
+  zu: () => _
 });
 var Chunk442837 = require("./442837.js"),
   Chunk675478 = require("./675478.js"),
   Chunk581883 = require("./581883.js"),
+  Chunk914010 = require("./914010.js"),
+  Chunk70956 = require("./70956.js"),
   Chunk709054 = require("./709054.js"),
   Chunk915486 = require("./915486.js"),
+  Chunk428967 = require("./428967.js"),
   Chunk605236 = require("./605236.js"),
   Chunk57207 = require("./57207.js");
 
-function u(e) {
-  var t;
-  let n = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  if (!n && (0, c.Bh)(e)) returntrue;
-  let r = null == (t = a.Z.settings.userContent) ? true : t.dismissedContents;
-  return null != r && (0, s.jl)(r, e)
+function _(e) {
+  let {
+    bypassNewUserCheck: t = false,
+    cooldownDurationMs: n = s.Z.Millis.WEEK,
+    guildId: r
+  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
+  if (!t && (0, f.Bh)(e)) returntrue;
+  if ((0, u.lg)(e)) return (0, d.H4)(e).isDismissed;
+  {
+    var i;
+    if ((0, u.I0)(e)) return m(e, l.default.fromTimestamp(Date.now())).isDismissed;
+    if ((0, u.OQ)(e)) return (0, d.Fo)(e, {
+      cooldownDurationMs: n
+    }).isDismissed;
+    if ((0, u.Vc)(e)) return (0, d.XY)(e, r);
+    if ((0, u.ms)(e)) return (0, d.oK)(e, r);
+    let t = null == (i = a.Z.settings.userContent) ? true : i.dismissedContents;
+    return null != t && (0, c.jl)(t, e)
+  }
 }
 
-function d(e) {
-  return (0, r.e7)([a.Z], () => u(e))
-}
-async function f(e) {
+function p(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-  u(e, true) || ((0, l.u9)(e, t), await (0, i.nm)(e), (0, l.ME)(e, t))
+  return (0, r.e7)([a.Z, o.Z], () => _(e, t))
+}
+async function h(e) {
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
+  _(e, {
+    bypassNewUserCheck: true
+  }) || ((0, d.u9)(e, t), await (0, i.nm)(e), (0, d.ME)(e, t))
 }
 
-function _(e, t) {
+function m(e, t) {
   var n, r;
-  if ((0, c.Bh)(e)) return {
+  if ((0, f.Bh)(e)) return {
     isDismissed: true,
     lastDismissedSnowflakeId: null
   };
   let i = null == (r = a.Z.settings.userContent) || null == (n = r.recurringDismissibleContentStates[e]) ? true : n.lastDismissedObjectId;
   return {
-    isDismissed: null != i && 1 !== o.default.compare(t, i),
+    isDismissed: null != i && 1 !== l.default.compare(t, i),
     lastDismissedSnowflakeId: i
   }
 }
-async function p(e, t) {
+async function g(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
-  (0, l.u9)(e, n), await (0, l.XM)(e, t, 1), (0, l.ME)(e, n)
+  (0, d.u9)(e, n), await (0, d.XM)(e, t, 1), (0, d.ME)(e, n)
 }
