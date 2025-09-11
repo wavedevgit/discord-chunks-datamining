@@ -1,49 +1,52 @@
 /** Chunk was on 75157 **/
-/** chunk id: 710658, original params: t,i,n (module,exports,require) **/
+/** chunk id: 710658, original params: t,n,a (module,exports,require) **/
 require.d(exports, {
-  default: () => p
+  default: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk667202 = require("./667202.jsx"),
   Chunk635552 = require("./635552.js"),
   Chunk300284 = require("./300284.js"),
   Chunk342386 = require("./342386.js"),
+  Chunk526167 = require("./526167.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk438132 = require("./438132.js");
-let p = t => {
+  Chunk461999 = require("./461999.js"),
+  Chunk793167 = require("./793167.js");
+let b = t => {
   let {
-    transitionState: i,
-    onClose: n,
-    product: p
-  } = t, u = (0, e.Z)(), {
-    handleUseNow: d,
-    isApplying: g
-  } = (0, s.W)({
-    product: p,
-    onSuccess: n,
-    onError: n
+    transitionState: n,
+    onClose: a,
+    product: b
+  } = t, u = (0, s.Z)(), {
+    handleUseNow: f,
+    isApplying: h
+  } = (0, c.W)({
+    product: b,
+    onSuccess: a,
+    onError: a
   });
-  return (0, r.jsx)(a.I, {
+  return (0, i.jsx)(e.I, {
     gradientColor: "nitro-pink",
-    title: o.intl.string(o.t.qYWlf3),
-    subtitle: o.intl.string(o.t.x01cl5),
+    title: d.intl.string(d.t.qYWlf3),
+    subtitle: d.intl.string(d.t.x01cl5),
     actions: [{
-      text: o.intl.string(o.t["2p2aY2"]),
+      text: d.intl.string(d.t["2p2aY2"]),
       variant: "secondary",
       onClick: () => {
-        n(), (0, l.Z)(), null == u || u()
+        a(), (0, o.Z)(), null == u || u()
       }
     }, {
-      text: o.intl.string(o.t.MAS7uL),
+      text: d.intl.string(d.t.MAS7uL),
       variant: "primary",
-      onClick: d,
-      loading: g
+      onClick: f,
+      loading: h
     }],
     graphic: {
-      type: "image",
-      src: c.Z
+      type: "video",
+      src: (0, r.rO)() ? l.Z : p.Z,
+      loop: true
     },
-    transitionState: i,
-    onClose: n
+    transitionState: n,
+    onClose: a
   })
 }

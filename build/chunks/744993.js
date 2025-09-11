@@ -26,7 +26,7 @@ function u(e) {
       catalog: s.kd.reduce((e, t) => (e[t.id] = t, e), {})
     })
   }, 5e3);
-  let u = null != (n = null == (t = l.default.getCurrentUser()) ? true : t.isStaff) && n;
+  let u = null != (n = null == (t = l.default.getCurrentUser()) ? true : t.isStaff()) && n;
   return (0, i.Kb)({
     url: d.ANM.COLLECTION_PUBLISHED_LISTINGS_SKU(c.IU),
     query: {

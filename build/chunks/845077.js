@@ -14,7 +14,7 @@ async function a() {
     trackedActionData: {
       event: Chunk990547.NetworkActionNames.USER_VERIFY
     },
-    rejectWithError: false
+    rejectWithError: true
   });
   return 204 === module.status ? null : module.body
 }
