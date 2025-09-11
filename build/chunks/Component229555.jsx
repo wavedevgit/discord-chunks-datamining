@@ -47,15 +47,15 @@ let _ = (e, t) => (null == e ? true : e.status) === c.Vq.EARNED ? d.intl.format(
         })
       }), (0, Chunk951288.jsxs)("div", {
         className: Chunk726185.textColumn,
-        children: [(0, Chunk951288.jsx)(Chunk793030.xv, {
+        children: [(0, Chunk951288.jsx)(Chunk793030.xvT, {
           variant: "text-lg/semibold",
           className: Chunk726185.badgeText,
           children: E
-        }), (0, Chunk951288.jsx)(Chunk793030.xv, {
+        }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
           variant: "text-md/normal",
           className: Chunk726185.badgeText,
           children: b
-        }), (0, Chunk951288.jsx)(Chunk793030.xv, {
+        }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
           variant: "text-xs/normal",
           children: _(exports, require)
         })]

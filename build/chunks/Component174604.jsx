@@ -60,7 +60,7 @@ function b(e) {
   let {
     powerup: t
   } = e;
-  return (0, r.jsx)(l.xv, {
+  return (0, r.jsx)(l.xvT, {
     tag: "span",
     variant: "text-md/semibold",
     className: p.highlight,
@@ -124,7 +124,7 @@ function y(e) {
     style: E(m({}, O), {
       opacity: +!!g
     }),
-    children: [(0, r.jsx)(l.xv, {
+    children: [(0, r.jsx)(l.xvT, {
       tag: "span",
       variant: "text-md/semibold",
       className: o()(p.description, {

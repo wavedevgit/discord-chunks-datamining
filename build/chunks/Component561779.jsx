@@ -12,8 +12,8 @@ var r, Chunk951288 = require("./951288.js"),
   c = require.n(Chunk392711),
   Chunk938288 = require("./938288.js"),
   Chunk374470 = require("./374470.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk143450 = require("./143450.js"),
-  Chunk84735 = require("./84735.js"),
   Chunk981729 = require("./981729.jsx"),
   Chunk607070 = require("./607070.js"),
   Chunk89079 = require("./89079.js");
@@ -141,7 +141,7 @@ class T extends(r = Chunk647438.PureComponent) {
       closestMarkerIndex: l,
       newClosestIndex: c,
       min: d,
-      max: f
+      max: _
     } = this.state, {
       disabled: g,
       stickToMarkers: b,
@@ -159,8 +159,8 @@ class T extends(r = Chunk647438.PureComponent) {
       barClassName: x,
       grabberClassName: L,
       grabberStyles: j = {},
-      markerPosition: M = 0,
-      "aria-hidden": k,
+      markerPosition: k = 0,
+      "aria-hidden": M,
       "aria-label": U,
       "aria-labelledby": G,
       "aria-describedby": B
@@ -174,8 +174,8 @@ class T extends(r = Chunk647438.PureComponent) {
         return (0, i.jsx)("div", {
           className: s()(m.mark, {
             [m.defaultValue]: r,
-            [m.markAbove]: 0 === M,
-            [m.markBelow]: 1 === M
+            [m.markAbove]: 0 === k,
+            [m.markBelow]: 1 === k
           }),
           style: {
             left: "".concat(e, "%")
@@ -197,7 +197,7 @@ class T extends(r = Chunk647438.PureComponent) {
       keyboardFocused: r && Chunk607070.Z.keyboardModeEnabled,
       children: e => {
         var a;
-        return (0, i.jsx)(_.t, {
+        return (0, i.jsx)(f.tEY, {
           focusTarget: this.containerRef,
           ringTarget: this.grabberRef,
           children: (0, i.jsxs)(u.animated.div, {
@@ -208,11 +208,11 @@ class T extends(r = Chunk647438.PureComponent) {
             }),
             style: null == e ? true : e.sliderStyles,
             "aria-valuemin": d,
-            "aria-valuemax": f,
+            "aria-valuemax": _,
             "aria-valuenow": t,
             "aria-disabled": g,
             "aria-orientation": R,
-            "aria-hidden": k,
+            "aria-hidden": M,
             "aria-label": U,
             "aria-labelledby": G,
             "aria-describedby": B,
@@ -466,7 +466,7 @@ function S(e) {
     children: r
   } = e, [i, o] = a.useState(false);
   return r({
-    sliderStyles: (0, f.q)({
+    sliderStyles: (0, _.q)({
       "--grabber-size": n || t || i ? "20px" : "16px",
       "--bar-size": n || t || i ? "6px" : "4px",
       config: y(E({}, u.config.stiff), {

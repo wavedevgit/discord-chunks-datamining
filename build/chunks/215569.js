@@ -92,7 +92,7 @@ class _ extends(r = Chunk647438.Component) {
     if (e.children !== this.props.children || e.transitionAppear !== this.props.transitionAppear || e.transitionLeave !== this.props.transitionLeave) {
       let e = (0, a.n)(this.props.children),
         n = t.children;
-      if (this.props.transitionEnter ? this._enqueueTransitions(e, n, this._keysToEnter) : this._keysToEnter.length && (this._keysToEnter = []), this.props.transitionLeave) this._enqueueTransitions(n, e, this._keysToLeave);
+      if (this.props.transitionEnter ? this._enqueueTransitions(e, n, this._keysToEnter) : this._keysToEnter.length > 0 && (this._keysToEnter = []), this.props.transitionLeave) this._enqueueTransitions(n, e, this._keysToLeave);
       else {
         let t = [];
         this._enqueueTransitions(n, e, t);
@@ -100,14 +100,14 @@ class _ extends(r = Chunk647438.Component) {
         for (let e = 0, n = t.length; e < n; e++) delete r[t[e]];
         this._isMounted && this.setState({
           children: r
-        }), this._keysToLeave.length && (this._keysToLeave = [])
+        }), this._keysToLeave.length > 0 && (this._keysToLeave = [])
       }
     }
-    if (this._keysToEnter.length) {
+    if (this._keysToEnter.length > 0) {
       let e = this._keysToEnter;
       this._keysToEnter = [], e.forEach(this.performEnter, this)
     }
-    if (this._keysToLeave.length) {
+    if (this._keysToLeave.length > 0) {
       let e = this._keysToLeave;
       this._keysToLeave = [], e.forEach(this.performLeave, this)
     }

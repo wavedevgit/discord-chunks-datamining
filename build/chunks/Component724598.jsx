@@ -64,7 +64,7 @@ function g(e) {
             variant: "text-lg/medium",
             color: "header-primary",
             children: f.intl.string(f.t["67arYG"])
-          }), r && (0, n.jsx)(l.zx, {
+          }), r && (0, n.jsx)(l.zxk, {
             text: f.intl.string(f.t.oyzLpK),
             icon: s.ZSh,
             iconPosition: "end",

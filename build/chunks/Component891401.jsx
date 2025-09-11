@@ -28,7 +28,7 @@ function m() {
     } = (0, Chunk605236.Fo)(Chunk704215.z.NITRO_TENURE_BADGE_LEVEL_UP),
     n = null != exports ? new Date(exports) : null;
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [(0, Chunk951288.jsx)(Chunk793030.X6, {
+    children: [(0, Chunk951288.jsx)(Chunk793030.X6q, {
       className: Chunk715639.header,
       variant: "heading-lg/semibold",
       children: "Tenure Badges"

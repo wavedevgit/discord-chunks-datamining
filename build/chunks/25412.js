@@ -35,12 +35,12 @@ function f(e, t, {
     A = 0 === C && 0 === y ? 0 : Math.atan2(y, C),
     _ = 0 === x && 0 === M ? 0 : Math.atan2(M, x);
   A < 0 && (A += 2 * i), _ < 0 && (_ += 2 * i), A *= c;
-  let B = Z - m,
-    N = R - j,
-    S = (_ *= c) - A,
+  let S = Z - m,
+    B = R - j,
+    N = (_ *= c) - A,
     I = A + _,
-    P = Math.abs(S);
-  j * R == 0 ? h = 0 : P <= 180 ? h = S : S > 180 ? h = S - 360 : S < false ? h = S + 360 : a.Z.warn("the unthinkable has happened");
+    P = Math.abs(N);
+  j * R == 0 ? h = 0 : P <= 180 ? h = N : N > 180 ? h = N - 360 : N < false ? h = N + 360 : a.Z.warn("the unthinkable has happened");
   let D = 2 * Math.sqrt(R * j) * Math.sin(h * l / 2),
     T = (m + Z) / 2,
     L = (j + R) / 2,
@@ -49,6 +49,6 @@ function f(e, t, {
     z = 1 + .015 * q / Math.sqrt(20 + q),
     $ = 1 + .045 * L,
     U = 1 + .015 * L * (1 - .17 * Math.cos(((p = j * R == 0 ? I : P <= 180 ? I / 2 : I < 360 ? (I + 360) / 2 : (I - 360) / 2) - 30) * l) + .24 * Math.cos(2 * p * l) + .32 * Math.cos((3 * p + 6) * l) - .2 * Math.cos((4 * p - 63) * l)),
-    W = (B / (r * z)) ** 2;
-  return Math.sqrt(W += (N / (b * $)) ** 2 + (D / (d * U)) ** 2 + N / (b * $) * (false * Math.sin(2 * (30 * Math.exp(false * ((p - 275) / 25) ** 2)) * l) * (2 * Math.sqrt(F / (F + 0x16bcc41e9)))) * (D / (d * U)))
+    W = (S / (r * z)) ** 2;
+  return Math.sqrt(W += (B / (b * $)) ** 2 + (D / (d * U)) ** 2 + B / (b * $) * (false * Math.sin(2 * (30 * Math.exp(false * ((p - 275) / 25) ** 2)) * l) * (2 * Math.sqrt(F / (F + 0x16bcc41e9)))) * (D / (d * U)))
 }

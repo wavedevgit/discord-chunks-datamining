@@ -1,13 +1,12 @@
 /** Chunk was on 62987 **/
 /** chunk id: 753898, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk680018 = require("./680018.jsx"),
-  Chunk374415 = require("./374415.jsx"),
+  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
   Chunk100527 = require("./100527.js"),
@@ -24,69 +23,69 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk963392 = require("./963392.js");
 
-function O(e) {
+function x(e) {
   var t;
   let {
     channel: n,
-    children: O,
-    user: j
-  } = e, E = (0, l.e7)([c.Z], () => c.Z.useReducedMotion), S = null != (t = (0, p.ZP)(n)) ? t : "", {
-    avatarDecorationSrc: I,
-    eventHandlers: P,
-    isAnimating: Z
-  } = (0, _.Z)({
-    userId: null == j ? true : j.id,
-    size: s.EFr.SIZE_80,
+    children: x,
+    user: O
+  } = e, j = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), E = null != (t = (0, d.ZP)(n)) ? t : "", {
+    avatarDecorationSrc: S,
+    eventHandlers: I,
+    isAnimating: P
+  } = (0, y.Z)({
+    userId: null == O ? true : O.id,
+    size: o.EFr.SIZE_80,
     animateOnHover: true
-  }), [T, N] = i.useState(false), A = i.useCallback(() => {
-    P.onMouseEnter(), N(true)
-  }, [P]), w = i.useCallback(() => {
-    P.onMouseLeave(), N(false)
-  }, [P]), R = !n.isMultiUserDM() && (null == j ? true : j.displayNameStyles) != null;
-  return (0, r.jsxs)(C.ZP, {
+  }), [Z, T] = i.useState(false), N = i.useCallback(() => {
+    I.onMouseEnter(), T(true)
+  }, [I]), A = i.useCallback(() => {
+    I.onMouseLeave(), T(false)
+  }, [I]), w = !n.isMultiUserDM() && (null == O ? true : O.displayNameStyles) != null;
+  return (0, r.jsxs)(_.ZP, {
     channelId: n.id,
-    onMouseEnter: A,
-    onMouseLeave: w,
+    onMouseEnter: N,
+    onMouseLeave: A,
     children: [(() => {
-      let e = !E && Z;
-      return n.isMultiUserDM() ? (0, r.jsx)(g.v, {
+      let e = !j && P;
+      return n.isMultiUserDM() ? (0, r.jsx)(m.v, {
         channel: n,
         editable: true,
-        location: u.Z.EMPTY_GROUP_DM,
-        children: (0, r.jsx)(m.Z, {
+        location: c.Z.EMPTY_GROUP_DM,
+        children: (0, r.jsx)(f.Z, {
           channel: n,
-          size: s.EFr.SIZE_80,
+          size: o.EFr.SIZE_80,
           experimentLocation: "empty_messages",
           animated: e,
-          "aria-label": S
+          "aria-label": E
         })
-      }) : (0, r.jsx)(s.qEK, {
-        "aria-label": S,
-        size: s.EFr.SIZE_80,
-        src: (0, d.x)(n, 80, e),
-        avatarDecoration: I
+      }) : (0, r.jsx)(o.qEK, {
+        "aria-label": E,
+        size: o.EFr.SIZE_80,
+        src: (0, u.x)(n, 80, e),
+        avatarDecoration: S
       })
-    })(), (0, r.jsx)(C.Ot, {
-      children: R ? (0, r.jsx)(f.Z, {
-        userName: S,
-        displayNameStyles: null == j ? true : j.displayNameStyles,
-        effectDisplayType: T ? h.F.ANIMATED : h.F.STATIC,
+    })(), (0, r.jsx)(_.Ot, {
+      children: w ? (0, r.jsx)(h.Z, {
+        userName: E,
+        displayNameStyles: null == O ? true : O.displayNameStyles,
+        effectDisplayType: Z ? p.F.ANIMATED : p.F.STATIC,
         loop: true
-      }) : S
-    }), (0, r.jsx)(C.jz, {
-      children: O
-    }), n.isMultiUserDM() && (0, r.jsxs)(o.h, {
-      className: x.buttonContainer,
-      children: [(0, r.jsx)(y.l, {
+      }) : E
+    }), (0, r.jsx)(_.jz, {
+      children: x
+    }), n.isMultiUserDM() && (0, r.jsxs)(a.hE2, {
+      className: v.buttonContainer,
+      children: [(0, r.jsx)(b.l, {
         channel: n,
-        text: v.intl.string(v.t["6Qgren"]),
-        icon: s.ejJ
-      }), (0, r.jsx)(a.z, {
-        icon: s.vdY,
+        text: C.intl.string(C.t["6Qgren"]),
+        icon: o.ejJ
+      }), (0, r.jsx)(a.zxk, {
+        icon: o.vdY,
         variant: "secondary",
-        text: v.intl.string(v.t["5Q9+/P"]),
-        "aria-label": v.intl.string(v.t["5Q9+/P"]),
-        onClick: () => (0, b.B)(n.id, u.Z.EMPTY_GROUP_DM)
+        text: C.intl.string(C.t["5Q9+/P"]),
+        "aria-label": C.intl.string(C.t["5Q9+/P"]),
+        onClick: () => (0, g.B)(n.id, c.Z.EMPTY_GROUP_DM)
       })]
     })]
   })

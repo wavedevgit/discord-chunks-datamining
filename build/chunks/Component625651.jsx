@@ -152,16 +152,16 @@ function N(e) {
     powerup: r
   } = e, N = O(e, ["guildId", "powerup"]);
   let {
-    onDeactivate: y,
-    error: E,
-    isLoading: T
+    onDeactivate: T,
+    error: y,
+    isLoading: E
   } = (0, g.ZP)(t, r), {
     onClose: S
   } = N, w = a.useCallback(e => {
-    y(e).then(() => {
+    T(e).then(() => {
       null == S || S()
     })
-  }, [S, y]), P = function(e, t) {
+  }, [S, T]), P = function(e, t) {
     let r = (0, i.e7)([c.Z], () => c.Z.getMemberCount(e)),
       m = (0, l.Z)(e),
       p = (0, i.e7)([d.Z], () => {
@@ -231,8 +231,8 @@ function N(e) {
       }
     })(),
     warningText: P,
-    error: E,
-    isLoading: T,
+    error: y,
+    isLoading: E,
     onDeactivate: w
   }, N))
 }

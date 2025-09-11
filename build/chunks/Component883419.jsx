@@ -33,10 +33,10 @@ function S(e) {
     handleStepChange: P,
     trialFooterMessageOverride: N,
     reviewWarningMessage: T,
-    planGroup: E,
-    openInvoiceId: _,
-    analyticsData: w,
-    analyticsLocation: k,
+    planGroup: k,
+    openInvoiceId: E,
+    analyticsData: _,
+    analyticsLocation: w,
     handleClose: Z
   } = e, {
     activeSubscription: D,
@@ -112,7 +112,7 @@ function S(e) {
         })]
       }), null == D ? (0, r.jsx)(u.Z, {
         selectedPlanId: W.id,
-        planGroup: E,
+        planGroup: k,
         paymentSources: B,
         onPaymentSourceChange: e => V(null != e ? e.id : null),
         priceOptions: R,
@@ -141,10 +141,10 @@ function S(e) {
         onInvoiceError: e => {
           er(e)
         },
-        planGroup: E,
+        planGroup: k,
         currencies: L,
         onCurrencyChange: e => z(e),
-        hasOpenInvoice: null != _,
+        hasOpenInvoice: null != E,
         purchaseState: Y,
         handleClose: Z
       })]
@@ -157,12 +157,12 @@ function S(e) {
         onPurchaseError: e => Q(e),
         legalTermsNodeRef: ea,
         flashLegalTerms: () => $(true),
-        analyticsLocation: k,
-        baseAnalyticsData: w,
+        analyticsLocation: w,
+        baseAnalyticsData: _,
         flowStartTime: F.startTime,
-        planGroup: E,
+        planGroup: k,
         purchaseTokenAuthState: M,
-        openInvoiceId: _,
+        openInvoiceId: E,
         metadata: ei ? true : J,
         backButtonEligible: l,
         invoiceError: en,

@@ -44,7 +44,7 @@ function g(e) {
           guildIconSize: s.x.SMALL,
           guildsClassName: h.guildsIconContainer,
           compact: true,
-          children: (0, r.jsx)(l.X6, {
+          children: (0, r.jsx)(l.X6q, {
             variant: "heading-sm/semibold",
             color: "header-primary",
             children: m.intl.string(m.t["3NxHCw"])

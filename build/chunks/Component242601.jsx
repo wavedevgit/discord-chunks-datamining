@@ -192,7 +192,6 @@ class eb extends Chunk647438.PureComponent {
         onRequestClose: this.handleCloseSubscribeTooltip,
         position: "bottom",
         caretConfig: {
-          position: "top",
           align: "center"
         }
       })]

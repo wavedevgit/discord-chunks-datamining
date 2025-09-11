@@ -49,8 +49,8 @@ let g = (0, Chunk647438.createContext)(null),
       isFocusVisible: x,
       focusProps: L
     } = (0, l.F)(), j = N || R, {
-      hoverProps: M,
-      isHovered: k
+      hoverProps: k,
+      isHovered: M
     } = (0, c.X)({
       ...e,
       isDisabled: j
@@ -61,7 +61,7 @@ let g = (0, Chunk647438.createContext)(null),
         isSelected: C,
         isIndeterminate: e.isIndeterminate || false,
         isPressed: P,
-        isHovered: k,
+        isHovered: M,
         isFocused: D,
         isFocusVisible: x,
         isDisabled: N,
@@ -73,13 +73,13 @@ let g = (0, Chunk647438.createContext)(null),
       global: true
     });
     return delete G.id, delete G.onClick, m.createElement("label", {
-      ...(0, u.d)(G, S, M, U),
+      ...(0, u.d)(G, S, k, U),
       ref: t,
       slot: e.slot || true,
       "data-selected": C || true,
       "data-indeterminate": e.isIndeterminate || true,
       "data-pressed": P || true,
-      "data-hovered": k || true,
+      "data-hovered": M || true,
       "data-focused": D || true,
       "data-focus-visible": x || true,
       "data-disabled": N || true,

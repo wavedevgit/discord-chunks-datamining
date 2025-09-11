@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk113434 = require("./113434.js"),
   Chunk569984 = require("./569984.js"),
   Chunk497505 = require("./497505.js"),
-  Chunk381176 = require("./381176.js"),
+  Chunk685138 = require("./685138.js"),
   Chunk804127 = require("./804127.js"),
   Chunk566078 = require("./566078.js"),
   Chunk602667 = require("./602667.jsx"),
@@ -49,10 +49,10 @@ function Q(e) {
     rewardCode: a,
     hasTieredRewardCodes: o,
     sourceQuestContent: s
-  } = e, i = (0, d.wj)((0, h.ZP)()), u = (0, R.h)({
+  } = e, i = (0, d.wj)((0, h.ZP)()), u = (0, R.n)({
     location: L.dr.REWARD_CODE_MODAL,
     questConfig: n.config
-  }), m = (0, p.dQu)(c.Z.colors.INTERACTIVE_NORMAL).hex(), f = u ? m : n.config.colors.primary, b = {
+  }).enabled, m = (0, p.dQu)(c.Z.colors.INTERACTIVE_NORMAL).hex(), f = u ? m : n.config.colors.primary, b = {
     border: "1px solid ".concat(f),
     background: "\n    linear-gradient(\n      150deg,\n      transparent 68%,\n      ".concat((0, O.aD)(f, .2), " 85%,\n      transparent 100%\n    ),\n    linear-gradient(\n      150deg,\n      transparent 13%,\n      ").concat((0, O.aD)(f, .6), " 44%,\n      transparent 76%\n    ),\n    ").concat(i ? "var(--black)" : "var(--white)", "\n    ")
   }, g = (null == (t = n.userStatus) ? true : t.claimedAt) != null || null != a, {

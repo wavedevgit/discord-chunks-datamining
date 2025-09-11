@@ -67,7 +67,7 @@ function x(e) {
     children: [(0, r.jsx)(n.icon, {
       size: "xs",
       color: "currentColor"
-    }), (0, r.jsx)(d.xv, {
+    }), (0, r.jsx)(d.xvT, {
       variant: "text-sm/medium",
       tag: "span",
       children: n.text

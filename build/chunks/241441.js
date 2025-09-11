@@ -6,7 +6,7 @@ require.r(exports), require.d(exports, {
 }), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./66299.js"), require("./189980.js"), require("./491343.js"), require("./82823.js"), require("./259475.js"), require("./17294.js"), require("./733314.js"), require("./539854.js"), require("./290780.js"), require("./415506.js"), require("./704826.js"), require("./35282.js"), require("./413496.js"), require("./433524.js");
 let a = (e = "undefined" != typeof document && document.currentScript ? document.currentScript.src : true, function(t) {
   var n, a, u, i, o, f, c, s, l, m, h, g, y, p = true !== (t = t || {}) ? t : {};
-  p.ready = new Promise(function(t, n) {
+  p.ready = new Promise((t, n) => {
     a = t, u = n
   }), p.locateFile = function() {
     return r(872184)
@@ -278,7 +278,7 @@ let a = (e = "undefined" != typeof document && document.currentScript ? document
     },
     s: function(t, n) {
       var r = 0;
-      return V().forEach(function(e, a) {
+      return V().forEach((e, a) => {
         var u = n + r;
         h[t + 4 * a >> 2] = u;
         for (var i = u, o = 0; o < e.length; ++o) l[0 | i++] = e.charCodeAt(o);
@@ -289,7 +289,7 @@ let a = (e = "undefined" != typeof document && document.currentScript ? document
       var r = V();
       h[t >> 2] = r.length;
       var e = 0;
-      return r.forEach(function(t) {
+      return r.forEach(t => {
         e += t.length + 1
       }), h[n >> 2] = e, 0
     },
@@ -586,16 +586,10 @@ let a = (e = "undefined" != typeof document && document.currentScript ? document
     function e(n) {
       return (!f && "function" == typeof fetch ? fetch(B, {
         credentials: "same-origin"
-      }).then(function(t) {
+      }).then(t => {
         if (!t.ok) throw "failed to load wasm binary file at '" + B + "'";
         return t.arrayBuffer()
-      }).catch(function() {
-        return z(B)
-      }) : Promise.resolve().then(function() {
-        return z(B)
-      })).then(function(n) {
-        return WebAssembly.instantiate(n, t)
-      }).then(n, function(t) {
+      }).catch(() => z(B)) : Promise.resolve().then(() => z(B))).then(n => WebAssembly.instantiate(n, t)).then(n, t => {
         A("failed to asynchronously prepare wasm: " + t), W(t)
       })
     }
@@ -605,11 +599,7 @@ let a = (e = "undefined" != typeof document && document.currentScript ? document
       return A("Module.instantiateWasm callback failed with error: " + t), false
     }(!f && "function" == typeof WebAssembly.instantiateStreaming && !j(B) && "function" == typeof fetch ? fetch(B, {
       credentials: "same-origin"
-    }).then(function(n) {
-      return WebAssembly.instantiateStreaming(n, t).then(r, function(t) {
-        return A("wasm streaming compile failed: " + t), A("falling back to ArrayBuffer instantiation"), e(r)
-      })
-    }) : e(r)).catch(u)
+    }).then(n => WebAssembly.instantiateStreaming(n, t).then(r, t => (A("wasm streaming compile failed: " + t), A("falling back to ArrayBuffer instantiation"), e(r)))) : e(r)).catch(u)
   }();
   var tn = p.___wasm_call_ctors = function() {
       return (tn = p.___wasm_call_ctors = p.asm.y).apply(null, arguments)
@@ -653,8 +643,8 @@ let a = (e = "undefined" != typeof document && document.currentScript ? document
           var n;
           n = p.preRun.shift(), k.unshift(n)
         }
-      L(k), P > 0 || (p.setStatus ? (p.setStatus("Running..."), setTimeout(function() {
-        setTimeout(function() {
+      L(k), P > 0 || (p.setStatus ? (p.setStatus("Running..."), setTimeout(() => {
+        setTimeout(() => {
           p.setStatus("")
         }, 1), r()
       }, 1)) : r())
@@ -672,9 +662,7 @@ let a = (e = "undefined" != typeof document && document.currentScript ? document
     }
   }
   if (p.cwrap = function(t, n, r, e) {
-      var a = (r = r || []).every(function(t) {
-        return "number" === t
-      });
+      var a = (r = r || []).every(t => "number" === t);
       return "string" !== n && a && !e ? S(t) : function() {
         return function(t, n, r, e, a) {
           var u, i = {

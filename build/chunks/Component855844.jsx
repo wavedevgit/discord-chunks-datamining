@@ -43,8 +43,8 @@ function C(e) {
     renderOutputVolume: x = false,
     renderInputDevices: L = false,
     renderInputVolume: j = false,
-    maybeRenderInputMeter: M = false,
-    renderSettingsButton: k = false
+    maybeRenderInputMeter: k = false,
+    renderSettingsButton: M = false
   } = e, {
     analyticsLocations: U
   } = (0, d.ZP)();
@@ -95,7 +95,7 @@ function C(e) {
       children: [(0, r.jsxs)(s.kSQ, {
         children: [L && B, w && V, D && Z]
       }), (0, r.jsxs)(s.kSQ, {
-        children: [j && H, M && Q && (0, r.jsx)(s.II_, {
+        children: [j && H, k && Q && (0, r.jsx)(s.II_, {
           id: "input-device-meter",
           control: () => (0, r.jsx)(c.Z, {
             notchBackground: c._.BLACK,
@@ -124,7 +124,7 @@ function C(e) {
             location: "AudioDeviceMenu"
           }),
           checked: K
-        }, "self-deafen"), k && G]
+        }, "self-deafen"), M && G]
       })]
     })
   })

@@ -101,7 +101,7 @@ function j(e) {
   E.set(p.X8, t), O = 2
 }
 
-function M(e) {
+function k(e) {
   var t, n, r;
   let {
     soundId: i,
@@ -110,7 +110,7 @@ function M(e) {
   b.set(i, o), T.set(a, s), a !== (null == (t = u.default.getCurrentUser()) ? true : t.id) && (S = true)
 }
 
-function k(e) {
+function M(e) {
   var t, n;
   let {
     soundId: r,
@@ -237,8 +237,8 @@ let Y = new H(Chunk570140.Z, {
   GUILD_SOUNDBOARD_SOUND_CREATE: w,
   GUILD_SOUNDBOARD_SOUND_UPDATE: w,
   GUILD_SOUNDBOARD_SOUND_DELETE: x,
-  GUILD_SOUNDBOARD_SOUND_PLAY_START: M,
-  GUILD_SOUNDBOARD_SOUND_PLAY_END: k,
+  GUILD_SOUNDBOARD_SOUND_PLAY_START: k,
+  GUILD_SOUNDBOARD_SOUND_PLAY_END: M,
   GUILD_SOUNDBOARD_SOUNDS_UPDATE: D,
   USER_SOUNDBOARD_SET_VOLUME: G,
   VOICE_CHANNEL_SELECT: C,

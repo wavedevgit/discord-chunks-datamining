@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk922770 = require("./922770.jsx"),
+var Chunk793030 = require("./793030.js"),
   Chunk466377 = require("./466377.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk818033 = require("./818033.js");
@@ -57,7 +57,7 @@ function f(e) {
     parentComponent: "renderModalSpinner",
     children: (0, r.jsx)("div", {
       className: s.spinnerContainer,
-      children: (0, r.jsx)(i.$, {})
+      children: (0, r.jsx)(i.$jN, {})
     })
   }))
 }

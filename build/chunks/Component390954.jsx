@@ -97,7 +97,7 @@ class I extends(r = Chunk647438.PureComponent) {
           showSubtext: true,
           showLabels: true,
           showPaymentSourceIcon: true
-        }), require ? null : (0, Chunk951288.jsx)(Chunk159691.zx, {
+        }), require ? null : (0, Chunk951288.jsx)(Chunk159691.zxk, {
           variant: "secondary",
           onClick: this.handleEditClick,
           size: "sm",
@@ -133,7 +133,7 @@ class T extends Chunk647438.PureComponent {
           className: Chunk579378.subText,
           children: Chunk388032.intl.string(Chunk388032.t.o9bOIi)
         })]
-      }) : null, (0, Chunk951288.jsx)(Chunk159691.zx, {
+      }) : null, (0, Chunk951288.jsx)(Chunk159691.zxk, {
         onClick: this.handleAddPaymentMethod,
         text: Chunk388032.intl.string(Chunk388032.t.CpOiEB)
       })]

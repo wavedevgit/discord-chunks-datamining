@@ -19,7 +19,7 @@ function d(e) {
   } = e;
   return (0, r.jsxs)(l.hjN, {
     title: o.intl.string(o.t.Cv6ANz),
-    children: [(0, r.jsx)(i.xv, {
+    children: [(0, r.jsx)(i.xvT, {
       variant: "text-sm/medium",
       color: "text-secondary",
       className: c.description,
@@ -34,7 +34,7 @@ function d(e) {
         className: c.halfWidth,
         children: [(0, r.jsx)(l.vwX, {
           children: o.intl.string(o.t.NASFnp)
-        }), (0, r.jsx)(i.xv, {
+        }), (0, r.jsx)(i.xvT, {
           variant: "text-sm/medium",
           color: "text-secondary",
           children: o.intl.string(o.t.ZhOdpa)

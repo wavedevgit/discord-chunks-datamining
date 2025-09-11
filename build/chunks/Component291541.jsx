@@ -8,9 +8,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk907862 = require("./907862.js"),
-  Chunk453707 = require("./453707.js"),
-  Chunk315416 = require("./315416.js"),
-  Chunk715720 = require("./715720.js");
+  Chunk618583 = require("./618583.js"),
+  Chunk811616 = require("./811616.js"),
+  Chunk184214 = require("./184214.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -79,28 +79,26 @@ let m = {
         showAsset: t,
         showActions: n,
         showTextLink: c,
-        caretPosition: u,
-        caretAlign: f,
-        size: h
-      } = e, m = p(e, ["showAsset", "showActions", "showTextLink", "caretPosition", "caretAlign", "size"]);
-      let [g, E] = i.useState(false), b = i.useRef(null);
+        caretAlign: u,
+        size: f
+      } = e, h = p(e, ["showAsset", "showActions", "showTextLink", "caretAlign", "size"]);
+      let [m, g] = i.useState(false), E = i.useRef(null);
       return (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(o.J2, _(d({}, m), {
-          size: h,
-          targetElementRef: b,
-          shouldShow: g,
-          onRequestClose: () => E(false),
+        children: [(0, r.jsx)(o.J2, _(d({}, h), {
+          size: f,
+          targetElementRef: E,
+          shouldShow: m,
+          onRequestClose: () => g(false),
           graphic: t ? {
             type: "image",
-            src: "sm" === h ? l.Z : s.Z
+            src: "sm" === f ? l.Z : s.Z
           } : true,
           caretConfig: {
-            position: u,
-            align: f
+            align: u
           },
           actions: n ? [{
             text: "Close",
-            onClick: () => E(false)
+            onClick: () => g(false)
           }] : true,
           textLink: c ? {
             text: "Learn More",
@@ -110,8 +108,8 @@ let m = {
         })), (0, r.jsx)(a.zxk, {
           variant: "primary",
           text: "Toggle Popover",
-          buttonRef: b,
-          onClick: () => E(!g)
+          buttonRef: E,
+          onClick: () => g(!m)
         })]
       })
     },
@@ -172,24 +170,6 @@ let m = {
         }, {
           label: "Nitro Pink",
           value: "nitro-pink"
-        }]
-      },
-      caretPosition: {
-        label: "Caret Position",
-        type: "select",
-        defaultValue: "top",
-        options: [{
-          label: "Bottom",
-          value: "bottom"
-        }, {
-          label: "Top",
-          value: "top"
-        }, {
-          label: "Left",
-          value: "left"
-        }, {
-          label: "Right",
-          value: "right"
         }]
       },
       caretAlign: {

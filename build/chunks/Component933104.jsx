@@ -28,9 +28,9 @@ var Chunk120356 = require("./120356.js"),
   Chunk989308 = require("./989308.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk428197 = require("./428197.js"),
-  Chunk928381 = require("./928381.js"),
-  Chunk283902 = require("./283902.js"),
-  Chunk225375 = require("./225375.js");
+  Chunk53374 = require("./53374.js"),
+  Chunk822344 = require("./822344.js"),
+  Chunk813206 = require("./813206.js");
 
 function P(e) {
   let {
@@ -200,11 +200,11 @@ function w(e) {
         onClick: () => null == s ? true : s(_.L.USER_DISMISS)
       })]
     }),
-    header: (0, r.jsx)(a.xv, {
+    header: (0, r.jsx)(a.xvT, {
       variant: "text-md/semibold",
       children: n
     }),
-    content: (0, r.jsx)(a.xv, {
+    content: (0, r.jsx)(a.xvT, {
       variant: "text-sm/medium",
       color: "text-muted",
       children: i

@@ -11,7 +11,7 @@ var r, Chunk951288 = require("./951288.js"),
   s = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   c = require.n(Chunk512722),
-  Chunk84735 = require("./84735.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk710260 = require("./710260.jsx"),
   Chunk472558 = require("./472558.js"),
   Chunk585483 = require("./585483.js"),
@@ -340,10 +340,10 @@ class D extends(r = Chunk647438.Component) {
       let t = N(module),
         i = this.calculatePositionStyle(exports, require, r);
       u = Chunk951288.style, d = Chunk951288.nudge;
-      let a = A(exports, Chunk84735, require, r);
+      let a = A(exports, Chunk793030, require, r);
       if (Chunk647438 > s && (o = {
           position: exports,
-          style: Chunk84735,
+          style: Chunk793030,
           nudge: Chunk710260
         }, l = Chunk647438), s < 0 && Chunk647438 < 0) {
         let i, a = Chunk120356.position;
@@ -418,7 +418,7 @@ class D extends(r = Chunk647438.Component) {
               position: r ? "fixed" : "absolute"
             }, this.state.style),
             ref: this.elementRef,
-            children: (0, i.jsx)(u.J, {
+            children: (0, i.jsx)(u.JcV, {
               containerRef: this.elementRef,
               children: n({
                 position: l,

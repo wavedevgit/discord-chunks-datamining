@@ -24,7 +24,7 @@ function l(e) {
       onClick: l,
       className: s.closeButton,
       noticeType: o.kVF.BACK_TO_PREVIOUS_SCREEN
-    }), (0, r.jsx)(i.zx, {
+    }), (0, r.jsx)(i.zxk, {
       text: t,
       variant: "overlay-secondary",
       size: "sm",

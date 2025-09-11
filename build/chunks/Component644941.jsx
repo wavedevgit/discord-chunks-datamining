@@ -302,12 +302,12 @@ let $ = e => {
     trackExternalAction: g
   } = e, {
     clientThemesClassName: j
-  } = (0, v.ZP)(), x = (0, d.e7)([E.default], () => E.default.locale), O = i.useMemo(() => (0, k.fP)(), []), w = (0, d.Wu)([A.Z], () => {
+  } = (0, v.ZP)(), x = (0, d.e7)([E.default], () => E.default.locale), O = i.useMemo(() => (0, T.fP)(), []), w = (0, d.Wu)([A.Z], () => {
     var e;
     return (null != (e = A.Z.getSimilarGames(r)) ? e : []).slice(0, 25)
   }), [I, N] = i.useState(null), S = (0, G.N)(r), [C, D] = i.useState(null), L = (0, h.q)(r), M = (0, d.e7)([P.Z], () => P.Z.getGame(r)), _ = null != (t = null == M ? true : M.name) ? t : null == L ? true : L.name, R = (e, t) => {
     var n;
-    (0, k.UE)({
+    (0, T.UE)({
       gameName: null != _ ? _ : "",
       applicationId: r,
       action: e,
@@ -317,13 +317,13 @@ let $ = e => {
     })
   };
   return ((0, f.ZP)(() => {
-    (0, k.IS)({
+    (0, T.IS)({
       source: l,
       viewId: O,
       applicationId: r,
       gameName: null != _ ? _ : "",
       authorId: s,
-      profileType: k.j7.FullProfile
+      profileType: T.j7.FullProfile
     }), (0, b.Jn)()
   }), (0, h.Z)(w), i.useEffect(() => {
     x.startsWith("en") || (null == M ? true : M.summaryLocalized) != null || p.Z.getDetectableGamesSupplemental([r], {
@@ -334,7 +334,7 @@ let $ = e => {
       if (0 === w.length) {
         N(null);
         try {
-          await (0, T.i)(r)
+          await (0, k.i)(r)
         } catch (e) {
           N(e)
         }
@@ -351,7 +351,7 @@ let $ = e => {
           time_played: r
         })
       });
-    (0, k.wz)({
+    (0, T.wz)({
       viewId: O,
       applicationId: r,
       gameName: null != _ ? _ : "",

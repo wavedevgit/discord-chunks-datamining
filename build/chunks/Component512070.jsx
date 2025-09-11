@@ -24,14 +24,14 @@ function m(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: o,
-    children: [(0, r.jsxs)(a.X6, {
+    children: [(0, r.jsxs)(a.X6q, {
       variant: "heading-md/semibold",
       className: p.selectorHeading,
       children: [u.intl.string(d.default.nP0ngY), (0, r.jsx)(i.SrA, {
         size: "xs",
         color: i.TVs.colors.TEXT_DEFAULT
       })]
-    }), (0, r.jsx)(a.Kq, {
+    }), (0, r.jsx)(a.Kqy, {
       direction: "horizontal",
       align: "center",
       wrap: true,
@@ -53,7 +53,7 @@ function m(e) {
               "aria-label": u.intl.string(o.name),
               onMouseEnter: s,
               onMouseLeave: d,
-              children: (0, r.jsx)(a.xv, {
+              children: (0, r.jsx)(a.xvT, {
                 variant: "text-lg/semibold",
                 color: c ? "text-primary" : "text-default",
                 className: l()(f.fontText, o.className),

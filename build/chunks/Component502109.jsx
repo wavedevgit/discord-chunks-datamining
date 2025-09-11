@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk680018 = require("./680018.jsx"),
+  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk710845 = require("./710845.js"),
   Chunk219929 = require("./219929.jsx"),
@@ -132,7 +132,7 @@ class T extends Chunk647438.Component {
       iconType: t,
       buttonText: n
     } = e, i = y(e, ["iconType", "buttonText"]);
-    return (0, r.jsx)(s.z, b({
+    return (0, r.jsx)(s.zxk, b({
       fullWidth: true,
       onClick: this.attemptPaymentRequest,
       text: n,

@@ -132,8 +132,8 @@ let U = function() {
       categoryId: W
     } = (null == Chunk548514 ? true : Chunk548514.type) === Chunk258971.m_.SEARCH ? Chunk548514 : {},
     X = (0, Chunk442837.e7)([Chunk678694.Z], () => Chunk678694.Z.getCategories()),
-    K = Chunk647438.useMemo(() => [(0, Chunk216780.KQ)(), ...X], [X]),
-    q = Chunk647438.useMemo(() => K.find(e => e.id === Number(W)), [K, W]),
+    q = Chunk647438.useMemo(() => [(0, Chunk216780.KQ)(), ...X], [X]),
+    K = Chunk647438.useMemo(() => q.find(e => e.id === Number(W)), [q, W]),
     {
       tabs: Q,
       selectedTab: J,
@@ -242,7 +242,7 @@ let U = function() {
             children: null != Y && "" !== Y ? Chunk388032.intl.formatToPlainString(Chunk388032.t.zHdzqa, {
               query: Y
             }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.Qhj5Bg, {
-              categoryName: null != (e = null == q ? true : q.name) ? module : Chunk388032.intl.string(Chunk388032.t.E407b2)
+              categoryName: null != (e = null == K ? true : K.name) ? module : Chunk388032.intl.string(Chunk388032.t.E407b2)
             })
           }) : (0, Chunk951288.jsx)(h.Z, {
             tabs: Q,

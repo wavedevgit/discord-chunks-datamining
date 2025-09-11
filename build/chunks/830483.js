@@ -28,7 +28,7 @@ function a() {
   }
   let i = {},
     a = [];
-  for (let e in exports) require.hasOwnProperty(module) ? a.length && (i[module] = a, a = []) : a.push(module);
+  for (let e in exports) require.hasOwnProperty(module) ? a.length > 0 && (i[module] = a, a = []) : a.push(module);
   let o = {};
   for (let t in require) {
     if (i.hasOwnProperty(exports))

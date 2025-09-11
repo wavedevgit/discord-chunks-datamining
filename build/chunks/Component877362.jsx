@@ -35,7 +35,7 @@ function S(e) {
   var t, n;
   let {
     guildId: i
-  } = e, d = (0, l.e7)([b.Z], () => b.Z.getGuild(i)), E = (0, l.e7)([h.Z], () => h.Z.getSortedRoles(i).find(e => {
+  } = e, d = (0, l.e7)([b.Z], () => b.Z.getGuild(i)), T = (0, l.e7)([h.Z], () => h.Z.getSortedRoles(i).find(e => {
     var t;
     return (null == (t = e.tags) ? true : t.premium_subscriber) === null
   })), S = (0, l.e7)([C.default], () => C.default.getCurrentUser()), N = null == S ? true : S.id, k = (0, l.e7)([x.ZP], () => null != N ? x.ZP.getMember(i, N) : true, [N, i]), O = (null == k ? true : k.premiumSince) != null, A = (0, l.e7)([p.Z], () => p.Z.useReducedMotion), {
@@ -56,24 +56,24 @@ function S(e) {
       src: w
     }), (0, r.jsxs)("div", {
       className: y.textContainer,
-      children: [(0, r.jsx)(s.xv, {
+      children: [(0, r.jsx)(s.xvT, {
         variant: "text-md/semibold",
-        children: T.intl.string(O ? I.default.KSWK1d : I.default.XXXX5u)
-      }), (0, r.jsx)(s.xv, {
+        children: I.intl.string(O ? P.default.KSWK1d : P.default.XXXX5u)
+      }), (0, r.jsx)(s.xvT, {
         variant: "text-sm/medium",
-        children: T.intl.format(O ? I.default["7fWTg4"] : I.default["7PXeeX"], {
+        children: I.intl.format(O ? P.default["7fWTg4"] : P.default["7PXeeX"], {
           onClick: () => {
             (0, m.f)({
               guildId: i,
               location: {
-                section: P.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR,
-                object: P.qAy.LEARN_MORE
+                section: E.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR,
+                object: E.qAy.LEARN_MORE
               }
             })
           }
         })
       })]
-    }), null != E && !O && (0, r.jsx)(v.l, {
+    }), null != T && !O && (0, r.jsx)(v.l, {
       avatar: (0, r.jsx)(Z, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -111,11 +111,11 @@ function S(e) {
       username: (0, r.jsx)(u.PUh, {
         variant: "text-md/semibold",
         name: j.ZP.getName(i, null, S),
-        colorString: E.colorString,
-        colorStrings: E.colorStrings
+        colorString: T.colorString,
+        colorStrings: T.colorStrings
       }),
       className: o()(y.content, y.exampleMessage),
-      message: T.intl.string(T.t["6OSasb"]),
+      message: I.intl.string(I.t["6OSasb"]),
       decorations: (0, r.jsx)(u.$Eu, {
         color: u.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
         className: y.boostIcon
@@ -124,8 +124,8 @@ function S(e) {
       guild: d,
       className: y.content,
       analyticsLocation: {
-        page: P.ZY5.GUILD_POWERUPS_OVERVIEW,
-        section: P.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR
+        page: E.ZY5.GUILD_POWERUPS_OVERVIEW,
+        section: E.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR
       },
       color: c.Tt.BRAND,
       size: c.Ph.MEDIUM,

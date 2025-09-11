@@ -107,7 +107,6 @@ function O(e) {
       position: "bottom",
       align: "center",
       caretConfig: {
-        position: "top",
         align: "center"
       }
     }) : null,

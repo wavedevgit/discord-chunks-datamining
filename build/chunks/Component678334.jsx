@@ -34,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk62868 = require("./62868.js"),
-  Chunk133529 = require("./133529.js");
+  Chunk952003 = require("./952003.js");
 
 function L(e) {
   let {
@@ -44,8 +44,8 @@ function L(e) {
     onNext: s,
     legalTermsNodeRef: L,
     flashLegalTerms: j,
-    invoiceError: M,
-    planError: k,
+    invoiceError: k,
+    planError: M,
     onPurchaseError: U,
     baseAnalyticsData: G,
     flowStartTime: B,
@@ -101,13 +101,13 @@ function L(e) {
     ex = (0, m.U)(),
     eL = (0, c.e7)([C.Z], () => C.Z.currentOrderId),
     ej = null,
-    eM = null;
+    ek = null;
   if (et === P.GZQ.ONE_TIME) {
-    var ek;
-    l()(null != ei, "SKU must be selected for one-time purchases"), ej = null != (ek = ea[ei]) ? ek : null, l()(null != ej, "SKU must exist and be fetched.");
+    var eM;
+    l()(null != ei, "SKU must be selected for one-time purchases"), ej = null != (eM = ea[ei]) ? eM : null, l()(null != ej, "SKU must exist and be fetched.");
     let e = eo[ei],
       t = null != en ? en : y.c;
-    eM = null != e ? e[t] : null
+    ek = null != e ? e[t] : null
   }
   let eU = (0, _.Iw)(et === P.GZQ.ONE_TIME ? f.Z.getProduct(ei) : true),
     eG = null !== eU,
@@ -135,7 +135,7 @@ function L(e) {
         onNext: s,
         metadata: W,
         sku: ej,
-        skuPricePreview: eM,
+        skuPricePreview: ek,
         purchaseType: et,
         referralCode: es,
         loadId: el.loadId,
@@ -176,8 +176,8 @@ function L(e) {
       className: D.discountFooterBackground
     }), (0, r.jsx)(b.Z, {
       legalTermsNodeRef: L,
-      invoiceError: M,
-      planError: k,
+      invoiceError: k,
+      planError: M,
       disablePurchase: z,
       flashLegalTerms: j,
       isSubmitting: eA,

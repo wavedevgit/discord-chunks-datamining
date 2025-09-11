@@ -24,12 +24,12 @@ var i, Chunk951288 = require("./951288.js"),
   Chunk438820 = require("./438820.js"),
   Chunk981631 = require("./981631.js"),
   Chunk577562 = require("./577562.js"),
-  Chunk426401 = require("./426401.js"),
-  Chunk926734 = require("./926734.js"),
-  Chunk601046 = require("./601046.js"),
-  Chunk421391 = require("./421391.js"),
-  Chunk153911 = require("./153911.js"),
-  Chunk588369 = require("./588369.js"),
+  Chunk172625 = require("./172625.js"),
+  Chunk45254 = require("./45254.js"),
+  Chunk554560 = require("./554560.js"),
+  Chunk177808 = require("./177808.js"),
+  Chunk739014 = require("./739014.js"),
+  Chunk496059 = require("./496059.js"),
   U = ((i = {}).WUMPUS_FLIGHT = "wumpus_flight", i.GRADIENT_HIGHLIGHT = "gradient_highlight", i);
 async function C(e, t) {
   try {
@@ -68,15 +68,15 @@ function H() {
     [u, l] = Chunk647438.useState(false),
     f = (0, Chunk526167.vu)(),
     g = (0, Chunk526167.rO)(),
-    b = Chunk960048 > 52 || false === Chunk960048 || Chunk426401,
-    P = Chunk426401 ? "video/mp4" : "video/webm",
-    y = Chunk926734 && !module && Chunk120356 && null === exports && false === i;
+    b = Chunk960048 > 52 || false === Chunk960048 || Chunk172625,
+    P = Chunk172625 ? "video/mp4" : "video/webm",
+    y = Chunk45254 && !module && Chunk120356 && null === exports && false === i;
   Chunk647438.useEffect(() => {
-    Chunk421391 && C(Chunk426401, require)
-  }, [Chunk421391, Chunk426401, require]), Chunk647438.useEffect(() => {
+    Chunk177808 && C(Chunk172625, require)
+  }, [Chunk177808, Chunk172625, require]), Chunk647438.useEffect(() => {
     function t() {
       !module && Chunk438820.Z.canPlayWowMoment && (Chunk570140(true), n = setTimeout(() => {
-        Chunk570140(false), Chunk588369(true), Chunk626135.default.track(Chunk981631.rMx.PREMIUM_WOW_MOMENT_VIEWED, {
+        Chunk570140(false), Chunk496059(true), Chunk626135.default.track(Chunk981631.rMx.PREMIUM_WOW_MOMENT_VIEWED, {
           wow_moment_type: "gradient_highlight"
         }), (0, Chunk138464.H)(false)
       }, 2e3))
@@ -84,9 +84,9 @@ function H() {
     return Chunk585483.S.subscribe(Chunk981631.CkL.PREMIUM_SUBSCRIPTION_CREATED, exports), () => {
       Chunk585483.S.unsubscribe(Chunk981631.CkL.PREMIUM_SUBSCRIPTION_CREATED, exports)
     }
-  }, [module, Chunk926734]);
+  }, [module, Chunk45254]);
   let [Z, F] = Chunk647438.useState(false), [U, H] = Chunk647438.useState(false), O = (0, Chunk481060.q_F)({
-    opacity: .2 * !!Chunk153911,
+    opacity: .2 * !!Chunk739014,
     config: {
       duration: 100
     }
@@ -98,21 +98,21 @@ function H() {
   }, U ? "respect-motion-settings" : "animate-never");
   Chunk647438.useEffect(() => {
     let e = false;
-    return Chunk153911 && (e = window.setTimeout(() => {
+    return Chunk739014 && (e = window.setTimeout(() => {
       H(true)
     }, 1e3)), () => {
       window.clearTimeout(module)
     }
-  }, [Chunk153911]), Chunk647438.useEffect(() => {
+  }, [Chunk739014]), Chunk647438.useEffect(() => {
     let e = false;
     return U && (e = window.setTimeout(() => {
-      H(false), Chunk588369(false)
+      H(false), Chunk496059(false)
     }, 1e3)), () => {
       window.clearTimeout(module)
     }
   }, [U]);
   let x = Chunk544891 && null !== exports,
-    R = x || Chunk153911;
+    R = x || Chunk739014;
   return (0, Chunk951288.jsxs)("div", {
     className: d()({
       [Chunk577562.wrapper]: !R,
@@ -131,7 +131,7 @@ function H() {
       },
       children: (0, Chunk951288.jsx)("source", {
         src: exports,
-        type: Chunk601046
+        type: Chunk554560
       })
     }), (0, Chunk951288.jsx)(Chunk938288.animated.div, {
       className: Chunk577562.gadientHighlight,

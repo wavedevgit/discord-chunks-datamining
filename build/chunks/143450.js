@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk938288 = require("./938288.js"),
-  Chunk186325 = require("./186325.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk717495 = require("./717495.js");
 
 function s(e, t, n) {
@@ -34,7 +34,7 @@ function l(e) {
 function c(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "respect-motion-settings",
     n = arguments.length > 2 ? arguments[2] : true,
-    s = r.useContext(a.S).reducedMotion.enabled,
+    s = r.useContext(a.Sfi).reducedMotion.enabled,
     c = e;
   "animate-always" !== t && ("respect-motion-settings" !== t || s) && (c = "function" == typeof e ? () => l({}, e(), o.F) : l({}, e, o.F));
   let u = "function" == typeof c,

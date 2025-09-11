@@ -9,8 +9,8 @@ var r, i, Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk215569 = require("./215569.js"),
-  Chunk186325 = require("./186325.js"),
   Chunk466842 = require("./466842.js");
 
 function _(e, t, n) {
@@ -168,12 +168,12 @@ class g extends(r = Chunk647438.PureComponent) {
       targetHeight: o
     } = this.state, s = null != (e = this.props.sideMargin) ? module : 0, l = null != (t = this.props.verticalMargin) ? exports : 0, u = 1 === i, d = 0 === i;
     return m(p({}, {
-      overflow: Chunk186325 || Chunk215569 ? "hidden" : "visible",
-      position: Chunk215569 ? "absolute" : true,
-      top: Chunk215569 ? l : true,
-      left: Chunk215569 ? Chunk120356 : true,
-      right: Chunk215569 ? Chunk120356 : true,
-      bottom: Chunk215569 ? l : true
+      overflow: Chunk215569 || Chunk793030 ? "hidden" : "visible",
+      position: Chunk793030 ? "absolute" : true,
+      top: Chunk793030 ? l : true,
+      left: Chunk793030 ? Chunk120356 : true,
+      right: Chunk793030 ? Chunk120356 : true,
+      bottom: Chunk793030 ? l : true
     }, this.getMotionAnimation()), {
       opacity: r.interpolate({
         inputRange: [0, 2],
@@ -181,7 +181,7 @@ class g extends(r = Chunk647438.PureComponent) {
         extrapolate: "clamp",
         easing: Chunk748780.Z.Easing.inOut(Chunk748780.Z.Easing.ease)
       }),
-      height: Chunk186325 ? r.interpolate({
+      height: Chunk215569 ? r.interpolate({
         inputRange: [0, 1],
         outputRange: [Chunk951288, Chunk647438],
         extrapolate: "clamp",
@@ -227,7 +227,7 @@ class g extends(r = Chunk647438.PureComponent) {
     }), _(this, "direction", this.props.getDirection()), _(this, "_measureRef", o.createRef())
   }
 }
-_(g, "contextType", Chunk186325.S), _(g, "defaultProps", {
+_(g, "contextType", Chunk793030.Sfi), _(g, "defaultProps", {
   duration: 300
 });
 class E extends(i = Chunk647438.Component) {
@@ -254,7 +254,7 @@ class E extends(i = Chunk647438.Component) {
       staticClassName: o,
       sideMargin: s,
       verticalMargin: c,
-      children: d,
+      children: u,
       fillParent: _,
       animationMotionType: p
     } = this.props;
@@ -272,7 +272,7 @@ class E extends(i = Chunk647438.Component) {
         animatedNodeClassName: i,
         staticClassName: Chunk647438,
         setHeight: this.setHeight,
-        children: Chunk186325
+        children: Chunk793030
       }, null != module ? module : "".concat(exports))
     })
   }

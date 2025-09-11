@@ -101,7 +101,7 @@ function P(e) {
           attachment: e
         }, e.id))
       }), (0, r.jsx)("div", {
-        children: (0, r.jsx)(m.zx, function(e) {
+        children: (0, r.jsx)(m.zxk, function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);

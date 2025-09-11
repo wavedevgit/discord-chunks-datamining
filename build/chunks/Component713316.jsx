@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
-  Chunk680018 = require("./680018.jsx"),
+  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk987209 = require("./987209.jsx"),
   Chunk563132 = require("./563132.jsx"),
@@ -52,7 +52,7 @@ function h(e) {
         children: y
       }), (0, r.jsx)("div", {
         className: p.divider
-      }), (0, r.jsx)(o.z, {
+      }), (0, r.jsx)(o.zxk, {
         onClick: n,
         text: _.intl.string(_.t.cpT0Cg),
         fullWidth: true

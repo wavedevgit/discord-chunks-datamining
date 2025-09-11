@@ -107,9 +107,9 @@ function j(e) {
       e()
     }
   }, [O.id, X]);
-  let G = r.useRef(null),
-    K = r.useMemo(() => ({
-      videoPlayerRef: G,
+  let Y = r.useRef(null),
+    G = r.useMemo(() => ({
+      videoPlayerRef: Y,
       applicationAudioEnabled: B,
       setApplicationAudioEnabled: M,
       voiceAudioEnabled: I,
@@ -130,7 +130,7 @@ function j(e) {
       children: (0, a.jsx)(i.hzk, {
         className: b.modalContent,
         children: (0, a.jsx)(g.Q.Provider, {
-          value: K,
+          value: G,
           children: null == L || null == D ? (0, a.jsx)("div", {
             className: b.spinnerContainer,
             children: (0, a.jsx)(i.$jN, {})

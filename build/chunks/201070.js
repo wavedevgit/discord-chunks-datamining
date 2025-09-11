@@ -152,17 +152,17 @@ function j(e) {
   P(T(e))
 }
 
-function M(e) {
+function k(e) {
   return null != e && e.length > 1
 }
 
-function k(e) {
+function M(e) {
   let t = {},
     n = {},
     {
       query: r
     } = e;
-  if (M(r)) {
+  if (k(r)) {
     let [e, n] = (0, p.C)(r);
     e.length > 0 && (t.usernames = {
       or_query: e
@@ -323,7 +323,7 @@ async function H(e) {
     s = T(e),
     l = R(s),
     [c, u] = F(e, l, o),
-    d = U(k(i), u),
+    d = U(M(i), u),
     f = null != (t = i.selectedSort) ? t : h.d$.ORDER_BY_GUILD_JOINED_AT_DESC;
   if (V(s, d) && (0, a.isEqual)(c, l.cursor)) return;
   let _ = w(s, d, c, o, f);

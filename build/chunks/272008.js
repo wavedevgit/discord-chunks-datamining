@@ -6,6 +6,7 @@ require.d(exports, {
   Ag: () => z,
   CS: () => w,
   EW: () => W,
+  MG: () => et,
   OR: () => K,
   QB: () => G,
   T0: () => Y,
@@ -23,7 +24,7 @@ require.d(exports, {
   pf: () => B,
   qm: () => q,
   w: () => Q,
-  wF: () => k,
+  wF: () => M,
   xw: () => L
 }), require("./415506.js");
 var Chunk990547 = require("./990547.js"),
@@ -221,11 +222,11 @@ async function j(e) {
   }
 }
 
-function M(e) {
+function k(e) {
   var t, n;
   return e instanceof c.CaptchaCancelError || null != e && "object" == typeof e && (400 === e.status && (null == (t = e.body) ? true : t.captcha_key) != null || null != e.captchaFields && !!(Object.keys(e.captchaFields).length > 0) || (null == (n = e.fields) ? true : n.captcha_key) != null || false)
 }
-var k = function(e) {
+var M = function(e) {
   return e.SUCCESS = "success", e.CAPTCHA_FAILED = "captcha_failed", e.UNKNOWN_ERROR = "unknown_error", e.PREVIOUS_IN_FLIGHT_REQUEST = "previous_in_flight_request", e
 }({});
 async function U(e, t) {
@@ -261,7 +262,7 @@ async function U(e, t) {
     return a.Z.dispatch({
       type: "QUESTS_ENROLL_FAILURE",
       questId: e
-    }), M(t) ? {
+    }), k(t) ? {
       type: "captcha_failed"
     } : {
       type: "unknown_error"
@@ -582,4 +583,29 @@ async function ee(e) {
     rejectWithError: false
   });
   return (0, g.q6)(t.body)
+}
+async function et(e) {
+  if (!E.Z.isFetchingQuestPreview(e)) {
+    a.Z.dispatch({
+      type: "QUESTS_FETCH_PREVIEW_BEGIN",
+      questId: e
+    });
+    try {
+      let t = await i.tn.get({
+        url: T.ANM.QUEST_PREVIEW(e),
+        rejectWithError: false
+      });
+      a.Z.dispatch({
+        type: "QUESTS_FETCH_PREVIEW_SUCCESS",
+        questId: e,
+        quest: (0, g.WP)(t.body)
+      })
+    } catch (t) {
+      throw a.Z.dispatch({
+        type: "QUESTS_FETCH_PREVIEW_FAILURE",
+        error: new o.Z(t),
+        questId: e
+      }), t
+    }
+  }
 }

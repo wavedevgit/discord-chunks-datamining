@@ -26,12 +26,12 @@ function p(e) {
       children: [(0, i.jsx)(o.$Eu, {
         size: "sm",
         color: 0 !== n ? l.Z.colors.HEADER_MUTED : l.Z.unsafe_rawColors.GUILD_BOOSTING_PINK
-      }), (0, i.jsx)(s.X6, {
+      }), (0, i.jsx)(s.X6q, {
         color: 0 !== n ? "header-muted" : "header-primary",
         variant: "heading-lg/semibold",
         children: t
       })]
-    }), (0, i.jsx)(s.xv, {
+    }), (0, i.jsx)(s.xvT, {
       color: "header-muted",
       variant: "text-sm/medium",
       children: (() => {

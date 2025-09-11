@@ -66,7 +66,7 @@ function P(e) {
     })
   }) : (0, s.jsxs)("div", {
     className: y.container,
-    children: [(0, s.jsx)(o.X6, {
+    children: [(0, s.jsx)(o.X6q, {
       variant: "heading-md/semibold",
       children: v.intl.string(f.default.jeYp1t)
     }), (0, s.jsx)("div", {

@@ -14,8 +14,8 @@ var Chunk907862 = require("./907862.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk20456 = require("./20456.js"),
-  Chunk712793 = require("./712793.js"),
-  Chunk295234 = require("./295234.js");
+  Chunk553668 = require("./553668.js"),
+  Chunk746838 = require("./746838.js");
 
 function h(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -55,7 +55,6 @@ let g = e => {
       position: "right",
       gradientColor: "nitro-pink",
       caretConfig: {
-        position: "left",
         align: "start"
       },
       actions: [{

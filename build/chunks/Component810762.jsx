@@ -22,7 +22,7 @@ let _ = e => {
     loading: _
   } = (0, l.sp)(n);
   return ((0, s.Z)(i.tq ? "role-subscriptions-user-setting" : true), _) ? (0, r.jsx)(o.$jN, {}) : 0 === n.length ? null : (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(a.zx, {
+    children: [(0, r.jsx)(a.zxk, {
       text: d.intl.string(d.t.hqyhKS),
       icon: o.wj7,
       variant: "secondary",

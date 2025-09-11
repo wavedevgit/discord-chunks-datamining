@@ -29,11 +29,11 @@ function d() {
           alt: module.name
         }), (0, Chunk951288.jsxs)("div", {
           className: Chunk20426.header,
-          children: [(0, Chunk951288.jsx)(Chunk793030.X6, {
+          children: [(0, Chunk951288.jsx)(Chunk793030.X6q, {
             variant: "heading-lg/semibold",
             color: "text-primary",
             children: module.name
-          }), (0, Chunk951288.jsx)(Chunk793030.xv, {
+          }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
             variant: "text-md/medium",
             color: "text-secondary",
             children: null == require ? true : require.name
@@ -46,11 +46,11 @@ function d() {
           return (0, i.jsxs)(r.Fragment, {
             children: [(0, i.jsxs)("div", {
               className: c.statItem,
-              children: [(0, i.jsx)(a.X6, {
+              children: [(0, i.jsx)(a.X6q, {
                 variant: "heading-sm/semibold",
                 color: "text-primary",
                 children: e.title
-              }), (0, i.jsx)(a.xv, {
+              }), (0, i.jsx)(a.xvT, {
                 variant: "text-sm/medium",
                 color: "text-tertiary",
                 children: e.description
@@ -62,7 +62,7 @@ function d() {
         })
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk20426.poweredBy,
-        children: (0, Chunk951288.jsx)(Chunk793030.xv, {
+        children: (0, Chunk951288.jsx)(Chunk793030.xvT, {
           variant: "text-sm/medium",
           color: "text-secondary",
           children: Chunk388032.intl.format(Chunk401561.default.JWpue3, {

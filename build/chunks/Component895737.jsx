@@ -72,7 +72,7 @@ function C() {
     align: "left",
     children: e => {
       var i, s;
-      return (0, n.jsx)(o.zx, (i = function(e) {
+      return (0, n.jsx)(o.zxk, (i = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
             n = Object.keys(r);

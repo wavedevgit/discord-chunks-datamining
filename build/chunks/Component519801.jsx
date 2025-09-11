@@ -32,13 +32,13 @@ function v(e) {
       readySlideId: P,
       selectedSku: N,
       selectedStoreListing: T,
-      application: E
+      application: k
     } = (0, d.JL)(),
-    _ = (0, l.Z)(g.i),
+    E = (0, l.Z)(g.i),
     {
-      createMultipleConfettiAt: w
+      createMultipleConfettiAt: _
     } = i.useContext(o.h),
-    k = null != (t = null == N ? true : N.name) ? t : "",
+    w = null != (t = null == N ? true : N.name) ? t : "",
     Z = () => {
       O(), null == C || C()
     },
@@ -47,43 +47,43 @@ function v(e) {
     I = null != T && T.benefits.length > 0 ? x.intl.formatToPlainString(x.t["+IQQVF"], {
       benefitCount: T.benefits.length
     }) : null;
-  return y ? _ ? v = (0, r.jsx)(u.h, {
+  return y ? E ? v = (0, r.jsx)(u.h, {
     title: x.intl.format(x.t.ea6tZm, {
-      tierName: k
+      tierName: w
     }),
     subtitle: null != T && T.benefits.length > 0 ? x.intl.formatToPlainString(x.t.HNepfn, {
       benefits: I
     }) : null,
     onConfirm: Z,
     confirmCta: x.intl.string(x.t.nlkyw8)
-  }) : (v = null != T && null != E ? (0, r.jsx)(c.Oc, {
+  }) : (v = null != T && null != k ? (0, r.jsx)(c.Oc, {
     icon: T.thumbnail,
     storeListingBenefits: T.benefits,
-    application: E,
+    application: k,
     title: x.intl.format(x.t["Q+qktb"], {
-      tier: k
+      tier: w
     }),
     subtitle: x.intl.string(x.t.ECKxXV),
     description: A ? x.intl.format(x.t.MAtQk5, {
-      applicationName: null == E ? true : E.name
+      applicationName: null == k ? true : k.name
     }) : x.intl.format(x.t.vHkMFx, {
-      tier: k
+      tier: w
     })
   }) : (0, r.jsx)(f.Z, {}), j = (0, r.jsx)(p.Z, {
     onPrimary: Z,
     primaryCTA: p.g.CONTINUE,
     primaryText: x.intl.string(x.t["JtWl+f"])
-  })) : v = _ ? (0, r.jsx)(u.m, {
-    tierName: k,
+  })) : v = E ? (0, r.jsx)(u.m, {
+    tierName: w,
     onConfirm: Z,
     subscription: S
   }) : (0, r.jsx)(c.xe, {
-    tierName: k,
+    tierName: w,
     onConfirm: Z,
     subscription: S
   }), i.useEffect(() => {
-    a.Z.useReducedMotion && D && w(window.innerWidth / 2, window.innerHeight / 2)
-  }, [w, D]), (0, r.jsxs)(r.Fragment, {
+    a.Z.useReducedMotion && D && _(window.innerWidth / 2, window.innerHeight / 2)
+  }, [_, D]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(b.C3, {
       children: [(0, r.jsx)(h.Z, {}), v]
     }), null != j && (0, r.jsx)(b.O3, {

@@ -82,7 +82,7 @@ function j(e, t) {
   return (e.isDM() || e.isGroupDM() ? N.intl.string(N.t["9FaEzs"]) : e.isGuildStageVoice() ? N.intl.string(N.t.QygGCA) : N.intl.string(N.t.msxteH)) + (null != t ? " (".concat(t, ")") : "")
 }
 
-function M(e) {
+function k(e) {
   let {
     streamActivity: t,
     otherActivities: n,
@@ -104,14 +104,14 @@ function M(e) {
   }), null == t && null != r && i.push(j(r, s)), i.length > 0 ? i.join(", ") : ""
 }
 
-function k(e) {
+function M(e) {
   let {
     textVariant: t,
     className: n,
     hasCustomStatusText: i,
     totalActivityCount: a
   } = e, s = a - 1;
-  return (0, r.jsxs)(l.xv, {
+  return (0, r.jsxs)(l.xvT, {
     variant: t,
     className: o()(n, R.activityCounter),
     color: i ? "status-positive" : "none",
@@ -124,7 +124,7 @@ function U(e) {
     textVariant: t,
     className: n
   } = e;
-  return (0, r.jsx)(l.xv, {
+  return (0, r.jsx)(l.xvT, {
     variant: t,
     className: o()(R.dot, n),
     children: A.l
@@ -181,7 +181,7 @@ function G(e) {
     q = F.length + (K || z ? 1 : 0),
     X = q > 1,
     Q = (null == G ? true : G.state) != null && "xs" === b,
-    J = M({
+    J = k({
       streamActivity: V,
       otherActivities: F,
       voiceActivityChannel: z ? l : null
@@ -242,7 +242,7 @@ function G(e) {
         showChannelName: true
       }), "voice")), e
     },
-    et = () => (0, r.jsx)(k, {
+    et = () => (0, r.jsx)(M, {
       textVariant: "text-".concat(b, "/medium"),
       className: _,
       hasCustomStatusText: W,

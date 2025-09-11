@@ -29,7 +29,6 @@ function h(e) {
       title: f.intl.string(f.t.gxcsSk),
       body: f.intl.string(f.t["8L7E5u"]),
       caretConfig: {
-        position: "bottom",
         align: "start"
       },
       graphic: {

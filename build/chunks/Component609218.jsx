@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => U,
-  p: () => k
+  p: () => M
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -35,11 +35,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk124527 = require("./124527.js"),
   Chunk591867 = require("./591867.js"),
   Chunk525751 = require("./525751.js"),
-  Chunk428946 = require("./428946.js"),
-  Chunk42948 = require("./42948.js"),
-  Chunk109194 = require("./109194.js"),
-  Chunk352812 = require("./352812.js"),
-  k = function(e) {
+  Chunk526438 = require("./526438.js"),
+  Chunk572637 = require("./572637.js"),
+  Chunk371587 = require("./371587.js"),
+  Chunk699653 = require("./699653.js"),
+  M = function(e) {
     return e[e.NONE = 0] = "NONE", e[e.PARENT_CONTAINER = 1] = "PARENT_CONTAINER", e[e.TAB_PARENT_CONTAINER = 2] = "TAB_PARENT_CONTAINER", e
   }({});
 
@@ -48,7 +48,7 @@ function U(e) {
     containerContext: t,
     image: n,
     title: a,
-    description: k,
+    description: M,
     enableSocialProof: U,
     analyticsLocationSection: G,
     upsellViewedTrackingData: B,
@@ -85,7 +85,7 @@ function U(e) {
     et = (0, S.Z)(C.Si.TIER_2);
   if (ee) {
     let e;
-    e = H ? (0, g.rO)() ? x.Z : L.Z : (0, g.rO)() ? j.Z : M.Z;
+    e = H ? (0, g.rO)() ? x.Z : L.Z : (0, g.rO)() ? j.Z : k.Z;
     let t = H ? "nitro-pink" : "green";
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(d.ZMr, {
@@ -125,7 +125,7 @@ function U(e) {
               variant: "text-md/medium",
               color: "text-secondary",
               className: P.body,
-              children: k
+              children: M
             })]
           })]
         }), (0, r.jsx)("div", {
@@ -183,7 +183,7 @@ function U(e) {
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/medium",
           className: w.body,
-          children: k
+          children: M
         })]
       }), (0, r.jsxs)("div", {
         className: w.ctaContainer,

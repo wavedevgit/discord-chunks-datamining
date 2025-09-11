@@ -2,7 +2,7 @@
 /** chunk id: 439826, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => M
+  Z: () => k
 }), require("./784620.js"), require("./973216.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -132,7 +132,7 @@ function j(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   var t, n, a, s, u;
   let {
     quest: f,
@@ -140,8 +140,8 @@ function M(e) {
     errorHints: C,
     warningHints: w,
     isVisibleInViewport: x,
-    onCtxMenuClose: M,
-    onCtxMenuOpen: k,
+    onCtxMenuClose: k,
+    onCtxMenuOpen: M,
     onCtxMenuSelect: U,
     sourceQuestContent: G
   } = e, B = (0, p.PB)(f), Z = (0, d.ZP)(), F = ((0, l.wj)(Z) ? N.BRd.DARK : N.BRd.LIGHT) === N.BRd.DARK, V = (0, m.tP)(f), H = (null == (t = f.userStatus) ? true : t.claimedAt) != null, Y = (0, m.B6)(f.config.expiresAt, {
@@ -216,8 +216,8 @@ function M(e) {
               })
             }))
           }), (0, r.jsx)(I.r, {
-            onOpen: k,
-            onClose: M,
+            onOpen: M,
+            onClose: k,
             onSelect: U,
             questContent: g.jn.QUEST_HOME_DESKTOP,
             quest: f,

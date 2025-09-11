@@ -402,7 +402,7 @@ function $(A) {
             formattedPrice: AO,
             role: AL,
             productType: Ak,
-            ctaComponent: (0, n.jsx)(u.zx, {
+            ctaComponent: (0, n.jsx)(u.zxk, {
               text: L.intl.string(L.t.xUi3BA)
             }),
             cardWidth: 340,
@@ -448,7 +448,7 @@ function $(A) {
           })]
         }), (0, n.jsx)("div", {
           className: k.footerActionRightButtons,
-          children: Al ? (0, n.jsx)(u.zx, {
+          children: Al ? (0, n.jsx)(u.zxk, {
             variant: "secondary",
             text: L.intl.string(L.t.XYBEaW),
             disabled: !AJ,
@@ -456,7 +456,7 @@ function $(A) {
             onClick: () => {
               o()(AJ, "cannot save changes for published product without adding all fields"), AY("update_publish"), A1(AD)
             }
-          }) : (0, n.jsx)(u.zx, {
+          }) : (0, n.jsx)(u.zxk, {
             variant: "secondary",
             text: L.intl.string(L.t.ZCjwoa),
             disabled: !AM,

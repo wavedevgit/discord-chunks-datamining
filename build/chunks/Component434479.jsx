@@ -75,7 +75,7 @@ function h(e) {
       return i
     }(e, ["id", "className", "innerClassName", "renderIcon", "text", "selected", "trailing", "background", "showUnread", "ref"]);
   let x = (0, o.JA)(n),
-    C = null != (t = (0, a.qg)(m)) ? t : "";
+    C = null != (t = (0, a.q)(m)) ? t : "";
   return (0, r.jsx)("li", {
     ref: v,
     children: (0, r.jsxs)(s.kL8, f(p({}, j), {

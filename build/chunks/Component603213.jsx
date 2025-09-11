@@ -16,7 +16,7 @@ function u(e) {
   let {
     powerup: t
   } = e;
-  return t.skuId === o.A$ ? (0, r.jsx)(a.xv, {
+  return t.skuId === o.A$ ? (0, r.jsx)(a.xvT, {
     className: d.learnMore,
     variant: "text-sm/medium",
     children: c.intl.format(i.default.fXE30d, {

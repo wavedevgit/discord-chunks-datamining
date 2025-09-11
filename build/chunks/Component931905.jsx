@@ -33,17 +33,17 @@ let c = e => {
       children: u
     }) : null, (0, r.jsxs)("div", {
       className: s.buttonContainer,
-      children: [m && (0, r.jsx)(i.zx, {
+      children: [m && (0, r.jsx)(i.zxk, {
         variant: "primary",
         text: o.intl.string(o.t["8L5bZG"]),
         fullWidth: true,
         onClick: () => (0, a.Z)("application_sub_mweb_success_modal")
-      }), (0, r.jsx)(i.zx, {
+      }), (0, r.jsx)(i.zxk, {
         variant: "secondary",
         text: d,
         fullWidth: true,
         onClick: t
-      }), null != n && (0, r.jsx)(i.zx, {
+      }), null != n && (0, r.jsx)(i.zxk, {
         variant: "secondary",
         text: o.intl.string(o.t.iAfxo6),
         fullWidth: true,
@@ -79,12 +79,12 @@ function u(e) {
       children: [(0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: s.__invalid_openDiscordButton,
-        children: (0, r.jsx)(i.zx, {
+        children: (0, r.jsx)(i.zxk, {
           variant: "primary",
           text: o.intl.string(o.t["8L5bZG"]),
           onClick: () => (0, a.Z)("application_sub_mweb_success_modal")
         })
-      }), (0, r.jsx)(i.zx, {
+      }), (0, r.jsx)(i.zxk, {
         variant: "secondary",
         text: o.intl.string(o.t.nlkyw8),
         onClick: t

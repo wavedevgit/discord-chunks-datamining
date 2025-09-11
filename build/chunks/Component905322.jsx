@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk777207 = require("./777207.jsx"),
+  Chunk793030 = require("./793030.js"),
   Chunk895129 = require("./895129.js");
 
 function s(e) {
@@ -42,11 +42,11 @@ function s(e) {
           alt: ""
         })
       }), (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(l.x, {
+        children: [(0, r.jsx)(l.xvT, {
           variant: "heading-xl/bold",
           tag: "div",
           children: t
-        }), null != n && (0, r.jsxs)(l.x, {
+        }), null != n && (0, r.jsxs)(l.xvT, {
           variant: "text-sm/normal",
           children: ["“", n, "”"]
         })]

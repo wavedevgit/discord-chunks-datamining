@@ -107,13 +107,13 @@ let {
   if (null === e) returnfalse;
   let t = e.guild_id;
   return true !== a.Z.getGuild(t)
-}, M = [];
+}, k = [];
 
-function k() {
+function M() {
   var e, t;
-  return null != (t = null == (e = Chunk581883.Z.frecencyWithoutFetchingLatest.favoriteStickers) ? true : module.stickerIds) ? exports : M
+  return null != (t = null == (e = Chunk581883.Z.frecencyWithoutFetchingLatest.favoriteStickers) ? true : module.stickerIds) ? exports : k
 }
 
 function U(e) {
-  return k().includes(e)
+  return M().includes(e)
 }

@@ -113,7 +113,7 @@ let I = e => {
       j = c.L.useExperiment({
         location: "PremiumPerks"
       }).enabled,
-      M = (0, m.ZM)({
+      k = (0, m.ZM)({
         perksCards: R,
         variant: n,
         hideCardsOnNarrowScreen: false,
@@ -124,7 +124,7 @@ let I = e => {
         showCustomThemesCard: j,
         isSeptember2025MarketingMomentEligible: L
       }),
-      k = M.some(e => null != e.pillText);
+      M = k.some(e => null != e.pillText);
     return (0, r.jsxs)("div", {
       ref: S,
       className: o()(E.section, {
@@ -143,7 +143,7 @@ let I = e => {
           [E.subtitle]: null == O || b,
           [E.subtitleWithButton]: null != O && !b,
           [E.fullWidth]: A || b,
-          [E.moreSubtitleMargin]: k,
+          [E.moreSubtitleMargin]: M,
           [E.leftAlignSubtitle]: b,
           [E.centerAlignSubtitle]: !b
         }),
@@ -153,7 +153,7 @@ let I = e => {
         children: O
       }), (0, r.jsx)("div", {
         className: E.cardContainer,
-        children: M.map((e, t) => (0, r.jsx)(g.Z, v(y({}, e), {
+        children: k.map((e, t) => (0, r.jsx)(g.Z, v(y({}, e), {
           forceShadow: a
         }), "".concat(e.name, "_").concat(t)))
       })]

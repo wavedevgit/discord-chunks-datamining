@@ -1,12 +1,11 @@
 /** Chunk was on 46746 **/
 /** chunk id: 485299, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk268146 = require("./268146.js"),
-  Chunk922770 = require("./922770.jsx"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk855403 = require("./855403.js"),
@@ -14,19 +13,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk615161 = require("./615161.jsx"),
   Chunk157707 = require("./157707.js");
 
-function m(e) {
+function f(e) {
   let {
     hideBackButton: t = false
   } = e, [{
     selectedSource: n
-  }, m] = (0, u.E_)(), [h, p] = i.useState(null);
+  }, f] = (0, d.E_)(), [m, h] = i.useState(null);
   return i.useEffect(() => {
     var e;
     if (null != n) {
       if (null == (e = n.id) ? true : e.startsWith(l.vA.CAMERA)) {
-        "url" in n && p(n.url);
+        "url" in n && h(n.url);
         return
-      }(0, d.t)({
+      }(0, c.t)({
         width: 800,
         height: 451,
         types: [l.vA.SCREEN, l.vA.WINDOW]
@@ -35,32 +34,32 @@ function m(e) {
         let {
           screenSources: r,
           windowSources: i
-        } = e, l = null != (t = i.find(e => "windowHandle" in n ? (0, c.Z)(e.id, n.windowHandle) : e.id === n.id)) ? t : r.find(e => n.id === e.id);
-        null != l && p(l.url)
+        } = e, l = null != (t = i.find(e => "windowHandle" in n ? (0, a.Z)(e.id, n.windowHandle) : e.id === n.id)) ? t : r.find(e => n.id === e.id);
+        null != l && h(l.url)
       })
     }
   }, [n]), (0, r.jsxs)("div", {
-    className: f.root,
-    children: [null == h ? (0, r.jsx)(s.$, {}) : (0, r.jsx)("img", {
-      src: h,
+    className: u.root,
+    children: [null == m ? (0, r.jsx)(o.$jN, {}) : (0, r.jsx)("img", {
+      src: m,
       alt: "",
-      className: f.largePreview
-    }), !t && (0, r.jsx)(o.zx, {
-      look: o.zx.Looks.FILLED,
-      color: o.zx.Colors.CUSTOM,
-      size: o.zx.Sizes.ICON,
+      className: u.largePreview
+    }), !t && (0, r.jsx)(s.zx, {
+      look: s.zx.Looks.FILLED,
+      color: s.zx.Colors.CUSTOM,
+      size: s.zx.Sizes.ICON,
       onClick: () => {
-        m({
+        f({
           type: "set_selected_source",
           source: null
-        }), m({
+        }), f({
           type: "set_step",
           step: "source_select"
         })
       },
-      className: f.backButton,
-      children: (0, r.jsx)(a.j9r, {
-        color: a.TVs.colors.WHITE,
+      className: u.backButton,
+      children: (0, r.jsx)(o.j9r, {
+        color: o.TVs.colors.WHITE,
         size: "xs"
       })
     })]

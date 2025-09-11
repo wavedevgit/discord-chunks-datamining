@@ -26,7 +26,7 @@ function g(e) {
       src: h,
       "aria-hidden": true,
       alt: ""
-    }), (0, r.jsx)(i.X6, {
+    }), (0, r.jsx)(i.X6q, {
       variant: "heading-xl/semibold",
       children: p.intl.string(p.t.UvDfMz)
     })]

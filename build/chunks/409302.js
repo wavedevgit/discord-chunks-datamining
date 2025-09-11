@@ -39,7 +39,7 @@ let o = (e, t) => {
           location: "GiftAnimationData"
         })) switch (t) {
         case r.SR.IDLE:
-          o = () => n.e("33313").then(n.bind(n, 424882)).then(e => {
+          o = () => n.e("93756").then(n.bind(n, 35865)).then(e => {
             let {
               default: t
             } = e;
@@ -47,7 +47,7 @@ let o = (e, t) => {
           });
           break;
         case r.SR.LOOP:
-          o = () => n.e("76367").then(n.bind(n, 558323)).then(e => {
+          o = () => n.e("62097").then(n.bind(n, 550645)).then(e => {
             let {
               default: t
             } = e;
@@ -55,7 +55,7 @@ let o = (e, t) => {
           });
           break;
         default:
-          o = () => n.e("25806").then(n.bind(n, 873122)).then(e => {
+          o = () => n.e("64429").then(n.bind(n, 117757)).then(e => {
             let {
               default: t
             } = e;

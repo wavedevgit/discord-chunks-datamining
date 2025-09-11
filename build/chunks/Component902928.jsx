@@ -10,8 +10,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk713938 = require("./713938.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk359059 = require("./359059.js"),
-  Chunk942605 = require("./942605.js"),
-  Chunk534345 = require("./534345.js");
+  Chunk140606 = require("./140606.js"),
+  Chunk833600 = require("./833600.js");
 let f = e => {
   let {
     onComplete: t,

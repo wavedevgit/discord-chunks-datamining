@@ -38,7 +38,7 @@ function f(e) {
           size: b,
           src: null == m ? true : m.getAvatarURL(true, (0, a.pxk)(b), !j),
           avatarDecoration: g
-        }), (0, r.jsx)(l.zx, {
+        }), (0, r.jsx)(l.zxk, {
           variant: "primary",
           text: y.collectRewardButtonText(),
           onClick: () => {

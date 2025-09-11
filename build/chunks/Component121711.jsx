@@ -53,12 +53,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk215023 = require("./215023.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk728963 = require("./728963.js"),
-  Chunk13299 = require("./13299.js"),
-  Chunk606199 = require("./606199.js"),
-  Chunk164792 = require("./164792.js"),
-  Chunk524777 = require("./524777.js"),
-  Chunk913713 = require("./913713.js"),
-  Chunk431115 = require("./431115.js");
+  Chunk770354 = require("./770354.js"),
+  Chunk982050 = require("./982050.js"),
+  Chunk179306 = require("./179306.js"),
+  Chunk588 = require("./588.js"),
+  Chunk445620 = require("./445620.js"),
+  Chunk120550 = require("./120550.js");
 
 function el(e) {
   let {
@@ -279,14 +279,14 @@ let es = function() {
         onSelectTab: Chunk607070,
         onScroll: Chunk451478,
         onLoadComplete: Chunk497505,
-        scrollerRef: Chunk524777,
+        scrollerRef: Chunk588,
         selectedTabId: Chunk442837,
         tabs: Chunk70097
       }) : Chunk672188 ? (0, Chunk951288.jsx)(Chunk466962.t.Provider, {
-        value: Chunk524777,
+        value: Chunk588,
         children: (0, Chunk951288.jsxs)(Chunk283293.Z, {
           onScroll: Chunk451478,
-          ref: Chunk524777,
+          ref: Chunk588,
           children: [(0, Chunk951288.jsx)(Chunk763433.a, {
             selectedTabId: Chunk442837,
             handleTransition: Chunk607070,
@@ -296,11 +296,11 @@ let es = function() {
               analyticsPage: Chunk981631.ZY5.GLOBAL_DISCOVERY_QUESTS,
               cardAlignment: Chunk775451.ek.END,
               ctaText: Chunk388032.intl.string(Chunk388032.t["J+vlIS"]),
-              ctaOnClick: Chunk913713
+              ctaOnClick: Chunk445620
             })
           }), (0, Chunk951288.jsxs)(Chunk17845.Z, {
-            title: Chunk606199,
-            description: Chunk164792,
+            title: Chunk982050,
+            description: Chunk179306,
             button: Chunk672188 ? (0, Chunk951288.jsxs)(Chunk481060.hE2, {
               children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
                 variant: "overlay-primary",
@@ -314,12 +314,12 @@ let es = function() {
               }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
                 variant: "overlay-secondary",
                 text: Chunk388032.intl.string(Chunk388032.t["7kTAgI"]),
-                onClick: Chunk13299
+                onClick: Chunk770354
               })]
             }) : (0, Chunk951288.jsx)(Chunk481060.zxk, {
               variant: "overlay-primary",
               text: Chunk388032.intl.string(Chunk388032.t.hvVgAQ),
-              onClick: Chunk13299,
+              onClick: Chunk770354,
               icon: Chunk481060.Gr1,
               iconPosition: "end"
             }),
@@ -350,17 +350,17 @@ let es = function() {
             icon: Chunk481060.qDn
           })]
         }), (0, Chunk951288.jsx)(Chunk466962.t.Provider, {
-          value: Chunk524777,
+          value: Chunk588,
           children: (0, Chunk951288.jsxs)(Chunk283293.Z, {
             onScroll: Chunk451478,
-            ref: Chunk524777,
+            ref: Chunk588,
             children: [(0, Chunk951288.jsxs)(Chunk17845.Z, {
-              title: Chunk606199,
-              description: Chunk164792,
+              title: Chunk982050,
+              description: Chunk179306,
               button: (0, Chunk951288.jsx)(Chunk481060.zxk, {
                 variant: "overlay-primary",
                 text: Chunk388032.intl.string(Chunk388032.t.hvVgAQ),
-                onClick: Chunk13299,
+                onClick: Chunk770354,
                 icon: Chunk481060.Gr1,
                 iconPosition: "end"
               }),

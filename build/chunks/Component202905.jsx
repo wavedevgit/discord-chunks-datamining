@@ -69,11 +69,11 @@ function _(e) {
   if (null == n) return null;
   let P = null != t ? t : null == y ? true : y.formFields;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.X6, {
+    children: [(0, r.jsx)(a.X6q, {
       variant: "heading-md/semibold",
       color: "header-primary",
       children: x.intl.string(x.t.AHJddH)
-    }), (0, r.jsx)(a.xv, {
+    }), (0, r.jsx)(a.xvT, {
       tag: "p",
       variant: "text-sm/medium",
       color: "text-secondary",
@@ -99,11 +99,11 @@ function _(e) {
           hideBorder: true,
           disabled: N,
           children: x.intl.string(x.t["N/0239"])
-        }), (0, r.jsx)(a.xv, {
+        }), (0, r.jsx)(a.xvT, {
           variant: "text-sm/normal",
           color: "text-secondary",
           children: x.intl.string(x.t["3TSZYG"])
-        }), N && (0, r.jsx)(a.xv, {
+        }), N && (0, r.jsx)(a.xvT, {
           variant: "text-xs/normal",
           color: "text-muted",
           children: x.intl.format(x.t.Bk0VOj, {

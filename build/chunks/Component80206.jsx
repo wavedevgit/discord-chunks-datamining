@@ -22,35 +22,35 @@ function c(e) {
   } = e;
   return (0, r.jsx)(a.ZP, {
     className: o.container,
-    children: (0, r.jsxs)(i.Kq, {
+    children: (0, r.jsxs)(i.Kqy, {
       align: "center",
       justify: "center",
       gap: 24,
-      children: [(0, r.jsxs)(i.Kq, {
+      children: [(0, r.jsxs)(i.Kqy, {
         gap: 8,
         align: "center",
-        children: [(0, r.jsxs)(i.Kq, {
+        children: [(0, r.jsxs)(i.Kqy, {
           gap: 24,
           align: "center",
-          children: [null != u && (0, r.jsx)(i.Kq, {
+          children: [null != u && (0, r.jsx)(i.Kqy, {
             align: "center",
             justify: "center",
             className: o.image,
             children: u
           }), h && (0, r.jsx)(s.$jN, {
             type: s.$jN.Type.SPINNING_CIRCLE
-          }), (0, r.jsx)(i.X6, {
+          }), (0, r.jsx)(i.X6q, {
             variant: "heading-xl/semibold",
             color: "header-primary",
             children: t
           })]
-        }), null != n && "" !== n && (0, r.jsx)(i.xv, {
+        }), null != n && "" !== n && (0, r.jsx)(i.xvT, {
           variant: "text-md/normal",
           color: "header-secondary",
           className: o.subtitle,
           children: n
         })]
-      }), !h && (0, r.jsx)(l.zx, {
+      }), !h && (0, r.jsx)(l.zxk, {
         onClick: d,
         text: c,
         variant: "overlay-primary"

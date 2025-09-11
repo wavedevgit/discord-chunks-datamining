@@ -252,7 +252,7 @@ class W extends Chunk647438.PureComponent {
         focused: r
       } = this.state;
       if (e.preventDefault(), e.stopPropagation(), "" === O.Sq(t)) return void this.focusEditor();
-      t = O.Hl(t, 0), this.setEditorState(t), (0, k.cy)({
+      t = O.Hl(t, 0), this.setEditorState(t), (0, M.cy)({
         searchContext: n
       }), r || Promise.resolve().then(() => this.blurEditor())
     }), F(this, "handleFocusSearch", e => {
@@ -274,7 +274,7 @@ class W extends Chunk647438.PureComponent {
       if (r.isPrivate() && !s) return void this.focusEditor();
       let l = (0, S.X3)(r);
       if (null == l) return void this.focusEditor();
-      (0, k.PJ)({
+      (0, M.PJ)({
         searchContext: a
       }), Promise.resolve().then(() => {
         let {
@@ -304,7 +304,7 @@ class W extends Chunk647438.PureComponent {
       } = this.props;
       this.setState({
         focused: true
-      }), t || (0, k.I1)({
+      }), t || (0, M.I1)({
         searchContext: e
       })
     }), F(this, "handleBlur", e => {
@@ -315,7 +315,7 @@ class W extends Chunk647438.PureComponent {
       this.setState({
         focused: false
       }, () => {
-        n || e || (0, k.IZ)({
+        n || e || (0, M.IZ)({
           searchContext: t
         }), O.xb(this.props.editorState) && this.clearSearch()
       })
@@ -442,7 +442,7 @@ function K(e) {
     searchBarClassName: o,
     searchPopoutClassName: s,
     popoutAlignment: l
-  } = e, c = (0, S.Tm)(t), f = (0, u.e7)([h.Z], () => h.Z.keyboardModeEnabled), p = (0, u.e7)([M.Z], () => null != c ? M.Z.getEditorState(c) : null), m = (0, u.e7)([M.Z], () => M.Z.getIsSearchTokensInitialized()), b = i.useRef(m);
+  } = e, c = (0, S.Tm)(t), f = (0, u.e7)([h.Z], () => h.Z.keyboardModeEnabled), p = (0, u.e7)([k.Z], () => null != c ? k.Z.getEditorState(c) : null), m = (0, u.e7)([k.Z], () => k.Z.getIsSearchTokensInitialized()), b = i.useRef(m);
   i.useEffect(() => {
     m && b.current !== m && (b.current = m, x.Z.ensureSearchInputDecorators(t))
   }, [m, t]);
@@ -461,7 +461,7 @@ function K(e) {
     }),
     D = i.useRef(A);
   i.useEffect(() => {
-    D.current && !A && (D.current = false, (0, k.IZ)({
+    D.current && !A && (D.current = false, (0, M.IZ)({
       searchContext: t
     })), !D.current && A && (D.current = true)
   }, [A, t]);
@@ -471,7 +471,7 @@ function K(e) {
         query: r,
         searchEverywhere: i
       } = e;
-      P.ZP.refreshSearchQueryAnalyticsId(t), (0, k.tI)({
+      P.ZP.refreshSearchQueryAnalyticsId(t), (0, M.tI)({
         searchContext: t,
         query: r,
         queryString: n
@@ -531,7 +531,7 @@ function K(e) {
   return i.useEffect(() => {
     q.current = z
   }, [z]), i.useEffect(() => {
-    (0, k.O2)({
+    (0, M.O2)({
       searchContext: t,
       appContext: q.current
     })

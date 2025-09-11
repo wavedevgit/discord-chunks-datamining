@@ -8,9 +8,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk392711 = require("./392711.js"),
   o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
-  Chunk146187 = require("./146187.jsx"),
   Chunk257465 = require("./257465.jsx"),
   Chunk369585 = require("./369585.jsx"),
+  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk654626 = require("./654626.jsx"),
   Chunk563115 = require("./563115.jsx"),
@@ -35,7 +35,7 @@ function I(e) {
     guild: I,
     prompt: P,
     index: S
-  } = e, w = (0, v.Dt)(), E = (0, s.e7)([g.ZP], () => g.ZP.getDefaultChannel(I.id)), [k, Z] = i.useState(() => {
+  } = e, w = (0, v.Dt)(), E = (0, s.e7)([g.ZP], () => g.ZP.getDefaultChannel(I.id)), [Z, k] = i.useState(() => {
     var e;
     return null != (e = null == x ? true : x.emoji) ? e : null
   }), [R, M] = i.useState(() => {
@@ -63,7 +63,7 @@ function I(e) {
           description: T,
           channelIds: Array.from(B).sort(),
           roleIds: Array.from(q).sort(),
-          emoji: null == k ? true : k
+          emoji: null == Z ? true : Z
         },
         l = function(e, t, n, l) {
           let i = {};
@@ -72,7 +72,7 @@ function I(e) {
           return null != r && (i.roles = r), i
         }(I, f.Z.editedOnboardingPrompts, P, t);
       F(l), o().isEmpty(l) && (r(t), n())
-    }, [B, T, k, I, n, r, null == x ? true : x.id, P, q, R]),
+    }, [B, T, Z, I, n, r, null == x ? true : x.id, P, q, R]),
     K = i.useMemo(() => [{
       text: O.intl.string(O.t["ETE/oK"]),
       onClick: n,
@@ -82,12 +82,12 @@ function I(e) {
       onClick: J,
       variant: "primary"
     }], [J, n]);
-  return (0, l.jsxs)(c.I, {
+  return (0, l.jsxs)(a.I, {
     transitionState: t,
     onClose: n,
     children: [(0, l.jsx)("div", {
       className: C.closeButton,
-      children: (0, l.jsx)(a.P, {
+      children: (0, l.jsx)(u.PZ7, {
         onClick: n
       })
     }), (0, l.jsxs)("div", {
@@ -157,12 +157,12 @@ function I(e) {
             children: O.intl.string(O.t.Iv9RGh)
           })]
         }), (0, l.jsx)(b.Z, {
-          emoji: k,
-          setEmoji: Z,
+          emoji: Z,
+          setEmoji: k,
           channel: E
         })]
       })]
-    }), (0, l.jsx)(u.G, {
+    }), (0, l.jsx)(c.G, {
       actions: K,
       leading: (0, l.jsx)(d.Avr, {
         text: O.intl.string(O.t.N86XcH),

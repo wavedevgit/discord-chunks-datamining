@@ -78,7 +78,7 @@ function m(e) {
     hideTooltip: u = false,
     canTruncate: f = true
   } = e, h = p(e, ["children", "className", "variant", "hideTooltip", "canTruncate"]);
-  return (0, r.jsx)(o.xv, _(d({
+  return (0, r.jsx)(o.xvT, _(d({
     variant: i,
     color: "none",
     className: a()(f && c.truncated, n)

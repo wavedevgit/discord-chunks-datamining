@@ -145,7 +145,7 @@ let v = 440,
       }), h(), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: O.confirmationButton,
-        children: (0, r.jsx)(s.zx, {
+        children: (0, r.jsx)(s.zxk, {
           variant: "primary",
           text: y.intl.string(y.t["Ph+ecH"]),
           onClick: () => t(true)

@@ -110,15 +110,15 @@ let C = e => {
     }, l);
     return null === n ? (0, r.jsx)(a.ua7, {
       text: b.intl.string(b.t["c/rcUl"]),
-      children: e => (0, r.jsx)(i.zx, T(v({}, e, c), {
+      children: e => (0, r.jsx)(i.zxk, T(v({}, e, c), {
         disabled: true
       }))
     }) : null === t || n > t ? (0, r.jsx)(a.ua7, {
       text: b.intl.string(b.t.keFvXF),
-      children: e => (0, r.jsx)(i.zx, T(v({}, e, c), {
+      children: e => (0, r.jsx)(i.zxk, T(v({}, e, c), {
         disabled: true
       }))
-    }) : (0, r.jsx)(i.zx, T(v({}, c), {
+    }) : (0, r.jsx)(i.zxk, T(v({}, c), {
       loading: o,
       onClick: s
     }))

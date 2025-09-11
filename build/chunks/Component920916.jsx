@@ -58,12 +58,12 @@ function F(e) {
     decoration: _,
     onUseNow: x,
     preview: f
-  } = e, g = o.useRef(null), [C, v] = o.useState(null), j = o.useRef(new l.qA), w = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), b = (0, d.e7)([N.default], () => N.default.getCurrentUser()), I = (null == (n = s.userStatus) ? true : n.claimedAt) != null, [R, P] = o.useState(true === f || I ? "claimed" : "loading");
+  } = e, g = o.useRef(null), [C, v] = o.useState(null), j = o.useRef(new l.qA), w = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), b = (0, d.e7)([N.default], () => N.default.getCurrentUser()), I = (null == (n = s.userStatus) ? true : n.claimedAt) != null, [T, P] = o.useState(true === f || I ? "claimed" : "loading");
   o.useEffect(() => {
-    I || true === f || (0, T.QB)(s.id, S.y$.CROSS_PLATFORM, u).then(() => P("claimed")).catch(() => P("error"))
+    I || true === f || (0, R.QB)(s.id, S.y$.CROSS_PLATFORM, u).then(() => P("claimed")).catch(() => P("error"))
   }, [s, u, I, f]);
   let y = true === f && null === _ && (null == m ? true : m.skuId) !== "",
-    A = null == b || null == _ && true !== f || y || "loading" === R;
+    A = null == b || null == _ && true !== f || y || "loading" === T;
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)(l.O_, {
       ref: v,
@@ -80,7 +80,7 @@ function F(e) {
         }),
         hideShadow: true,
         parentComponent: "QuestsRewardCollectibleModal",
-        children: "error" === R ? (0, a.jsx)(E.Z, {
+        children: "error" === T ? (0, a.jsx)(E.Z, {
           onClose: r
         }) : A ? (0, a.jsx)("div", {
           className: D.loadingIndicatorWrapper,
@@ -91,14 +91,14 @@ function F(e) {
           quest: s,
           user: b,
           decoration: _,
-          isSaving: "applying" === R,
+          isSaving: "applying" === T,
           onClose: r,
           onConfirm: () => {
             P("applying"), x().finally(r)
           }
         })
       })
-    }), !w && !I && "claimed" === R && (0, a.jsx)(h.Z, {
+    }), !w && !I && "claimed" === T && (0, a.jsx)(h.Z, {
       confettiTarget: g.current,
       confettiCanvas: C,
       sprites: M.CA,
@@ -135,7 +135,7 @@ function q(e) {
     isSaving: r,
     onClose: i,
     onConfirm: l
-  } = e, s = (0, y.fh)(n, y.eC.REWARD).url, d = (0, R.f$)(n.config), {
+  } = e, s = (0, y.fh)(n, y.eC.REWARD).url, d = (0, T.f$)(n.config), {
     fractionalState: u
   } = (0, f.Z)(), p = u === O.a$.FP_ONLY, _ = (0, P.Qy)(n.config);
   return (0, a.jsxs)("div", {
@@ -187,7 +187,7 @@ function q(e) {
           text: Z.intl.string(Z.t.MAS7uL),
           loading: r,
           onClick: l
-        }), (0, R.zK)(n, k.S7.ADDITIONAL_REDEMPTION_INSTRUCTIONS) && (0, a.jsx)(U, {
+        }), (0, T.zK)(n, k.S7.ADDITIONAL_REDEMPTION_INSTRUCTIONS) && (0, a.jsx)(U, {
           quest: n
         }), d && !p && (0, a.jsx)(v.p, {
           className: D.upsell,
@@ -213,7 +213,7 @@ function W(e) {
     onClose: l,
     transitionState: d,
     preview: c
-  } = e, m = o.useMemo(() => (0, R.xn)(r.config), [r]), [p, x] = function(e) {
+  } = e, m = o.useMemo(() => (0, T.xn)(r.config), [r]), [p, x] = function(e) {
     let {
       product: n,
       isFetching: t

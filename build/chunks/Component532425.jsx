@@ -8,8 +8,8 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
+  Chunk793030 = require("./793030.js"),
   Chunk1561 = require("./1561.jsx"),
-  Chunk922770 = require("./922770.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk546237 = require("./546237.js");
@@ -21,7 +21,7 @@ let d = e => {
     isLoading: d,
     size: f = "sm"
   } = e;
-  return (0, r.jsx)(o.P, {
+  return (0, r.jsx)(s.P, {
     className: a()(i, u.iconLayout, {
       [u.pointer]: t
     }),
@@ -36,8 +36,8 @@ let d = e => {
     },
     children: (0, r.jsx)("div", {
       className: u.iconContainer,
-      children: d ? (0, r.jsx)(s.$, {
-        type: s.$.Type.SPINNING_CIRCLE,
+      children: d ? (0, r.jsx)(o.$jN, {
+        type: o.$jN.Type.SPINNING_CIRCLE,
         className: a()(u.icon, u.visible)
       }) : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(l._Ve, {

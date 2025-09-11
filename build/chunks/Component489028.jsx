@@ -38,7 +38,7 @@ function P(e) {
   } = e;
   return (0, r.jsx)("div", {
     className: T.selectTeamContainer,
-    children: (0, r.jsx)(a.zx, {
+    children: (0, r.jsx)(a.zxk, {
       text: S.intl.string(S.t["5k6FfX"]),
       disabled: !n,
       onClick: t,
@@ -79,7 +79,7 @@ function w(e) {
         isDisabled: 0 === h.length || f || !l,
         onChange: e => c(e),
         "aria-label": S.intl.string(S.t.QXf93N)
-      }), (0, r.jsx)(a.zx, {
+      }), (0, r.jsx)(a.zxk, {
         text: S.intl.string(S.t["9HU3ZW"]),
         onClick: b,
         loading: m,

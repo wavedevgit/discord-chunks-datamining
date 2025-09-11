@@ -146,7 +146,7 @@ function T(e) {
       search_term: w,
       position: t
     }), n(e)
-  }, [null == H ? true : H.loadId, n, w]), K = (0, g.K)();
+  }, [null == H ? true : H.loadId, n, w]), q = (0, g.K)();
   return (0, r.jsxs)("div", {
     className: N.container,
     children: [(0, r.jsx)(p.Z, {
@@ -169,8 +169,8 @@ function T(e) {
             }), (0, r.jsx)(C.Z, {
               loading: z === f.M.FETCHING,
               children: z === f.M.FETCHED && (null == H || (null == H ? true : H.results.length) === 0) ? (0, r.jsx)(S.Z, {
-                selectedCategoryId: null != k ? k : K.id,
-                searchAllCategories: () => W(K)
+                selectedCategoryId: null != k ? k : q.id,
+                searchAllCategories: () => W(q)
               }) : (0, r.jsx)("div", {
                 className: N.content,
                 children: null == H ? true : H.results.map((e, t) => {

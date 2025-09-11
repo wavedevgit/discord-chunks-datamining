@@ -7,7 +7,7 @@ require.d(exports, {
 }), require("./415506.js"), require("./388685.js"), require("./49124.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk922770 = require("./922770.jsx"),
+  Chunk793030 = require("./793030.js"),
   Chunk493773 = require("./493773.js"),
   Chunk930295 = require("./930295.jsx"),
   Chunk126306 = require("./126306.jsx"),
@@ -125,7 +125,7 @@ class y extends(r = Chunk647438.Component) {
       position: y,
       align: null != Chunk647438 ? Chunk647438 : b(y),
       autoInvert: O,
-      fixed: Chunk922770,
+      fixed: Chunk793030,
       nudgeAlignIntoViewport: v,
       useRawTargetDimensions: Chunk493773,
       renderPopout: this.renderPopout,
@@ -209,7 +209,7 @@ function O(e) {
       style: {
         width: l
       },
-      children: (0, i.jsx)(o.$, {})
+      children: (0, i.jsx)(o.$jN, {})
     })
   }
   let [E, b] = a.useState(() => d), O = a.useRef(d);

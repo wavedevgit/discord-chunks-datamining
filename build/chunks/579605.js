@@ -14,5 +14,5 @@ module.exports = {
   clickable: "clickable_a86e4f",
   promotedBadge: "promotedBadge_a86e4f",
   promotedBadgeIcon: "promotedBadgeIcon_a86e4f",
-  rewardHighlightLogotype: "rewardHighlightLogotype_a86e4f"
+  partnerBranding: "partnerBranding_a86e4f"
 }

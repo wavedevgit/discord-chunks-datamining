@@ -9,7 +9,7 @@ var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk990547 = require("./990547.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk680018 = require("./680018.jsx"),
+  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk26151 = require("./26151.js"),
   Chunk213609 = require("./213609.js"),
@@ -96,7 +96,7 @@ function O(e) {
   } = e, l = i ? C.intl.string(C.t.ygslb2) : C.intl.string(C.t["3Hv9qa"]), a = i ? () => u.Z.stopRinging(t, [n]) : () => {
     u.Z.ring(t, [n], "dm_banner"), (0, m.Kh)(t)
   };
-  return (0, r.jsx)(s.z, {
+  return (0, r.jsx)(s.zxk, {
     variant: i ? "critical-secondary" : "secondary",
     size: "sm",
     text: l,

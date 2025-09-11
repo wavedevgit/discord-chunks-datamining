@@ -103,7 +103,7 @@ function w(e) {
     j = () => {
       w(.9 * Math.random() + .03)
     },
-    M = i.useCallback(() => {
+    k = i.useCallback(() => {
       if (e.quest.id === O.V6) return void window.open(f.Z.getArticleURL(v.BhN.VIRTUAL_CURRENCY_LEARN_MORE));
       (0, h.nc)(e.quest, {
         content: e.questContent,
@@ -112,7 +112,7 @@ function w(e) {
         sourceQuestContent: e.sourceQuestContent
       })
     }, [C, e.quest, e.questContent, e.sourceQuestContent]),
-    k = i.useCallback(() => {
+    M = i.useCallback(() => {
       R && ((0, h.f2)(e.quest.id, {
         content: e.questContent,
         position: e.questContentPosition,
@@ -182,12 +182,12 @@ function w(e) {
       children: [(0, r.jsx)(o.sNh, {
         id: "play-game",
         label: N,
-        action: M,
+        action: k,
         icon: o.zFc
       }), R && (0, r.jsx)(o.sNh, {
         id: "share-link",
         label: T.intl.string(T.t.RDE0SU),
-        action: k,
+        action: M,
         icon: o.TIy
       }), (W || K) && z]
     }, "major-actions"), (0, r.jsxs)(o.kSQ, {

@@ -94,7 +94,7 @@ function Z(e) {
           className: b.spacer
         }), y ? (0, r.jsx)("div", {
           className: b.createButton,
-          children: (0, r.jsx)(i.zx, {
+          children: (0, r.jsx)(i.zxk, {
             size: "sm",
             onClick: () => {
               a(), (0, j.R6)(t, true, "Thread Browser Toolbar")

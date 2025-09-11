@@ -59,9 +59,9 @@ var C = Function.prototype,
   R = (a = /[^.]+$/.exec(j && j.keys && j.keys.IE_PROTO || "")) ? "Symbol(src)_1." + a : "",
   A = C.toString,
   _ = x.hasOwnProperty,
-  B = x.toString,
-  N = RegExp("^" + A.call(_).replace(/[\\^$.*+?()[\]{}|]/g, "\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, "$1.*?") + "$"),
-  S = Object.create,
+  S = x.toString,
+  B = RegExp("^" + A.call(_).replace(/[\\^$.*+?()[\]{}|]/g, "\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, "$1.*?") + "$"),
+  N = Object.create,
   I = Math.max,
   P = Math.min,
   D = (n = z(Object, "defineProperty"), (s = z.name) && s.length > 2 ? n : true);
@@ -87,7 +87,7 @@ function T(e) {
       case 7:
         return new e(r[0], r[1], r[2], r[3], r[4], r[5], r[6])
     }
-    var a = W(t = e.prototype) ? S(t) : {},
+    var a = W(t = e.prototype) ? N(t) : {},
       n = e.apply(a, r);
     return W(n) ? n : a
   }
@@ -153,13 +153,13 @@ function q(e) {
 
 function z(e, t) {
   var r, a, n, s = null == e ? true : e[t];
-  return !(!W(s) || (r = s, R && R in r)) && ("[object Function]" == (n = W(a = s) ? B.call(a) : "") || "[object GeneratorFunction]" == n || function(e) {
+  return !(!W(s) || (r = s, R && R in r)) && ("[object Function]" == (n = W(a = s) ? S.call(a) : "") || "[object GeneratorFunction]" == n || function(e) {
     var t = false;
     if (null != e && "function" != typeof e.toString) try {
       t = !!(e + "")
     } catch (e) {}
     return t
-  }(s) ? N : m).test(function(e) {
+  }(s) ? B : m).test(function(e) {
     if (null != e) {
       try {
         return A.call(e)
@@ -239,7 +239,7 @@ function W(e) {
 function G(e) {
   var t, r = (t = e) ? (t = function(e) {
       if ("number" == typeof e) return e;
-      if ("symbol" == typeof(t = e) || t && "object" == typeof t && "[object Symbol]" == B.call(t)) return c;
+      if ("symbol" == typeof(t = e) || t && "object" == typeof t && "[object Symbol]" == S.call(t)) return c;
       if (W(e)) {
         var t, r = "function" == typeof e.valueOf ? e.valueOf() : e;
         e = W(r) ? r + "" : r

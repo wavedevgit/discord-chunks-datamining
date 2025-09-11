@@ -60,7 +60,7 @@ function _(e) {
       hideBorder: true,
       onChange: R,
       children: j.intl.string(j.t.NR6hub)
-    }), w ? (0, r.jsx)(a.xv, {
+    }), w ? (0, r.jsx)(a.xvT, {
       variant: "text-sm/normal",
       color: "text-secondary",
       className: v.subtext,
@@ -75,7 +75,7 @@ function _(e) {
         widgetEnabled: C,
         widgetChannelId: N,
         enableLocalUpdate: true
-      }), (0, r.jsx)(a.xv, {
+      }), (0, r.jsx)(a.xvT, {
         variant: "text-sm/medium",
         color: "text-secondary",
         className: v.subtext,
@@ -107,7 +107,7 @@ function _(e) {
             children: j.intl.string(j.t.XVGbn5)
           }), (0, r.jsx)(d.Z, {
             value: I
-          }), (0, r.jsx)(a.xv, {
+          }), (0, r.jsx)(a.xvT, {
             variant: "text-sm/medium",
             color: "text-secondary",
             className: v.subtext,
@@ -130,7 +130,7 @@ function O(e) {
   } = e, n = (0, s.e7)([g.Z], () => g.Z.enabled);
   return (0, r.jsxs)(o.hjN, {
     title: j.intl.string(j.t.qlhNb2),
-    children: [(0, r.jsx)(a.xv, {
+    children: [(0, r.jsx)(a.xvT, {
       variant: "text-sm/medium",
       color: "text-secondary",
       className: v.description,

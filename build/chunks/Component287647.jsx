@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk921944 = require("./921944.js"),
   Chunk693450 = require("./693450.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk374104 = require("./374104.js");
+  Chunk16596 = require("./16596.js");
 let g = new Chunk710845.Z("DisplayNameStylesCoachmark");
 
 function E(e) {
@@ -47,7 +47,6 @@ function E(e) {
       align: "right",
       position: "top",
       caretConfig: {
-        position: "bottom",
         align: "center"
       },
       gradientColor: "nitro-pink",

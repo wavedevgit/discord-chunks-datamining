@@ -68,13 +68,13 @@ function j(e, t) {
   return n
 }
 
-function M(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function k(e) {
+function M(e) {
   let {
     selectedGuildForGuildSub: t
   } = e, n = (0, b.GG)(null == t ? true : t.id)[0];
@@ -267,7 +267,7 @@ let U = function() {
               value: Chunk474936.Xh.PREMIUM_MONTH_TIER_0,
               label: "Nitro Basic"
             }],
-            onChange: e => V(t => M(L({}, t), {
+            onChange: e => V(t => k(L({}, t), {
               plan_id: e
             }))
           }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
@@ -279,7 +279,7 @@ let U = function() {
               value: "false",
               label: "Not Gift"
             }],
-            onChange: e => V(t => M(L({}, t), {
+            onChange: e => V(t => k(L({}, t), {
               gift: e
             }))
           }), (0, Chunk951288.jsx)(Chunk481060.ua7, {
@@ -370,7 +370,7 @@ let U = function() {
           })]
         }), (0, Chunk951288.jsx)(Chunk730647.l, {
           guildId: null == Y ? true : Y.id,
-          children: (0, Chunk951288.jsx)(k, {
+          children: (0, Chunk951288.jsx)(M, {
             selectedGuildForGuildSub: Y
           })
         })]

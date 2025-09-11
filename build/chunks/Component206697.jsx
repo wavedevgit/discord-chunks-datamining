@@ -58,7 +58,7 @@ function v() {
         variant: "heading-xl/semibold",
         color: "text-default",
         children: Chunk388032.intl.string(Chunk388032.t.erEf2t)
-      }), (0, Chunk951288.jsx)(Chunk793030.xv, {
+      }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
         variant: "text-md/medium",
         color: "text-muted",
         children: Chunk388032.intl.string(Chunk388032.t.NaRCXV)
@@ -77,7 +77,7 @@ function v() {
         variant: "heading-xl/semibold",
         color: "text-default",
         children: Chunk388032.intl.string(Chunk388032.t.w4DRbW)
-      }), (0, Chunk951288.jsx)(Chunk793030.xv, {
+      }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
         variant: "text-md/medium",
         color: "text-muted",
         children: Chunk388032.intl.string(Chunk388032.t.F6u3Ex)
@@ -105,7 +105,7 @@ function I() {
     children: [(0, Chunk951288.jsx)(Chunk657707.SrA, {
       size: "md",
       color: Chunk436774.JX.PREMIUM_TIER_2
-    }), (0, Chunk951288.jsx)(Chunk793030.xv, {
+    }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
       variant: "text-xs/medium",
       color: "header-primary",
       className: Chunk807284.upsellText,

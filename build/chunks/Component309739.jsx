@@ -73,7 +73,7 @@ function j(e, t) {
   }), e
 }
 
-function M(e) {
+function k(e) {
   let t = () => {
     A.SE.updateSetting(e ? O.Z.getGuildIds() : [])
   };
@@ -91,16 +91,16 @@ function M(e) {
   })))
 }
 
-function k() {
+function M() {
   let e = Chunk695346.G6.useSetting(),
     t = Chunk695346.no.useSetting(),
     n = (0, Chunk362352.Yd)("activity privacy tab"),
     i = Chunk358085.isPlatformEmbedded ? Chunk388032.intl.string(Chunk388032.t.MznbeH) : Chunk388032.intl.string(Chunk388032.t.oKqC4u),
     a = e => {
-      A.no.updateSetting(e ? u.GI.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS : u.GI.ACTIVITY_STATUS_OFF), M(e)
+      A.no.updateSetting(e ? u.GI.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS : u.GI.ACTIVITY_STATUS_OFF), k(e)
     },
     s = e => {
-      A.no.updateSetting(e), M(e !== u.GI.ACTIVITY_STATUS_OFF)
+      A.no.updateSetting(e), k(e !== u.GI.ACTIVITY_STATUS_OFF)
     },
     l = [{
       value: Chunk524437.GI.ACTIVITY_STATUS_ON,
@@ -296,6 +296,6 @@ function V(e) {
     className: t,
     tag: _.RB0.H1,
     title: n ? R.intl.string(R.t.Cq98yM) : null,
-    children: [(0, r.jsx)(k, {}), (0, r.jsx)(U, {}), (0, r.jsx)(G, {}), i && (0, r.jsx)(F, {})]
+    children: [(0, r.jsx)(M, {}), (0, r.jsx)(U, {}), (0, r.jsx)(G, {}), i && (0, r.jsx)(F, {})]
   })
 }

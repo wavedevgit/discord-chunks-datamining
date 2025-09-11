@@ -42,7 +42,7 @@ function j(e) {
       className: v.nativeSourceTypeButtonInner,
       children: [(0, r.jsx)(i, {
         size: "lg"
-      }), (0, r.jsx)(a.xv, {
+      }), (0, r.jsx)(a.xvT, {
         variant: "text-sm/medium",
         color: "none",
         children: n
@@ -61,13 +61,13 @@ function b(e) {
   }, i] = (0, p.E_)(), l = (0, u.isMac)() && o().satisfies(null === d.Z || true === d.Z ? true : d.Z.os.release, x.jR);
   return (0, r.jsxs)("div", {
     className: v.root,
-    children: [(0, r.jsx)(a.X6, {
+    children: [(0, r.jsx)(a.X6q, {
       className: v.header,
       variant: "heading-lg/semibold",
       color: "text-default",
       children: _.intl.string(_.t.XyYoFR)
     }), l ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(a.xv, {
+      children: [(0, r.jsx)(a.xvT, {
         className: v.body,
         variant: "text-sm/medium",
         color: "text-secondary",

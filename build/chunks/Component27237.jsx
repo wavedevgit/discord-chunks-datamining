@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 27237, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => P
+  ZP: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -46,7 +46,7 @@ function j(e) {
   })
 }
 
-function E(e) {
+function T(e) {
   let {
     isActive: t,
     index: n
@@ -59,7 +59,7 @@ function E(e) {
       children: [(0, r.jsx)(e.icon, {
         color: s,
         size: "sm"
-      }), (0, r.jsx)(l.xv, {
+      }), (0, r.jsx)(l.xvT, {
         className: C.perkText,
         color: o,
         variant: "text-sm/medium",
@@ -71,7 +71,7 @@ function E(e) {
     className: C.perkRowContainer,
     children: [a, (0, r.jsx)("div", {
       className: C.perkRow,
-      children: (0, r.jsx)(l.xv, {
+      children: (0, r.jsx)(l.xvT, {
         color: o,
         variant: "text-sm/medium",
         children: h.intl.string(x.default.nIj3LS)
@@ -80,7 +80,7 @@ function E(e) {
   })
 }
 
-function P(e) {
+function E(e) {
   let {
     guildId: t,
     index: n,
@@ -88,7 +88,7 @@ function P(e) {
     nextPowerup: s
   } = e, l = (0, u.ZP)(t, o), a = (0, u.ZP)(t, s), c = l.type !== v.A3.INACTIVE, _ = a.type !== v.A3.INACTIVE, x = l.type === v.A3.TIER_OVERRIDE_ACTIVATED, [h, b] = i.useState(true);
   (0, g.KT)(h);
-  let P = (0, f.d)(c);
+  let E = (0, f.d)(c);
   return (0, r.jsxs)(m.Z, {
     guildId: t,
     powerup: o,
@@ -99,13 +99,13 @@ function P(e) {
       nextActive: null != s ? _ : true
     }), (0, r.jsx)(d.Q9, {
       title: o.title,
-      textColor: P,
+      textColor: E,
       footer: !x && (0, r.jsx)(m.g, {
         className: C.footer,
         guildId: t,
         powerup: o
       }),
-      children: (0, r.jsx)(E, {
+      children: (0, r.jsx)(T, {
         isActive: c,
         index: n
       })

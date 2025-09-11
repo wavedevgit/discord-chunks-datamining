@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk289008 = require("./289008.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
-  Chunk680018 = require("./680018.jsx"),
+  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk801937 = require("./801937.jsx"),
   Chunk502109 = require("./502109.jsx"),
@@ -97,7 +97,7 @@ function C() {
         onChange: e => t(e),
         placeholder: "Enter DeepLink Url",
         fullWidth: true
-      }), (0, Chunk951288.jsx)(Chunk680018.z, {
+      }), (0, Chunk951288.jsx)(Chunk159691.zxk, {
         variant: "primary",
         size: "sm",
         text: "Test Deeplink",
@@ -305,7 +305,7 @@ let L = {
       }
     }
   },
-  M = {
+  k = {
     appearance: {
       theme: "flat",
       variables: {
@@ -314,7 +314,7 @@ let L = {
       }
     }
   },
-  k = {
+  M = {
     buttonType: {
       googlePay: "pay",
       applePay: "book"
@@ -329,14 +329,14 @@ let L = {
   G = "``";
 
 function B() {
-  let [e, t] = Chunk647438.useState(U(M)), [n, o] = Chunk647438.useState(M), [s, u] = Chunk647438.useState(U(k)), [d, _] = Chunk647438.useState(k), [p, h] = Chunk647438.useState(null), [m, E] = Chunk647438.useState((0, Chunk951288.jsx)(Chunk450272.DS, {
+  let [e, t] = Chunk647438.useState(U(k)), [n, o] = Chunk647438.useState(k), [s, u] = Chunk647438.useState(U(M)), [d, _] = Chunk647438.useState(M), [p, h] = Chunk647438.useState(null), [m, E] = Chunk647438.useState((0, Chunk951288.jsx)(Chunk450272.DS, {
     errorLabel: L.CONFIGURABLE,
-    elementOptions: M,
+    elementOptions: k,
     children: (0, Chunk951288.jsx)(Chunk289008.ExpressCheckoutElement, {
       onConfirm: e => {
         console.log("ExpressCheckoutElement onConfirm event: ", e)
       },
-      options: k
+      options: M
     })
   })), b = () => {
     try {
@@ -410,7 +410,7 @@ function B() {
     }), (0, Chunk951288.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: Chunk403645.applyChangesButton,
-      children: (0, Chunk951288.jsx)(Chunk680018.z, {
+      children: (0, Chunk951288.jsx)(Chunk159691.zxk, {
         variant: "primary",
         size: "sm",
         text: "Apply Changes",

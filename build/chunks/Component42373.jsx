@@ -9,8 +9,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
-  Chunk680018 = require("./680018.jsx"),
   Chunk304789 = require("./304789.jsx"),
+  Chunk159691 = require("./159691.js"),
   Chunk780384 = require("./780384.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -101,12 +101,12 @@ let C = e => {
       onClick: n,
       debouncedOnClickAnalytics: i,
       enablePremiumBrandRefreshDesign: a
-    } = e, s = (0, _.ZP)(), c = (0, u.wj)(s), f = c ? d.Tt.WHITE : d.Tt.BRAND, p = () => {
+    } = e, s = (0, _.ZP)(), l = (0, u.wj)(s), f = l ? d.Tt.WHITE : d.Tt.BRAND, p = () => {
       i(), n()
     };
     return a ? (0, r.jsx)("div", {
       className: O.bentoBoxButton,
-      children: (0, r.jsx)(l.z, {
+      children: (0, r.jsx)(c.zxk, {
         variant: "secondary",
         onClick: p,
         text: t
@@ -115,7 +115,7 @@ let C = e => {
       "data-migration-pending": true,
       look: d.iL.OUTLINED,
       color: f,
-      className: o()(y.bentoBoxButton, c ? y.bentoBoxButtonWhite : y.bentoBoxButtonBrand),
+      className: o()(y.bentoBoxButton, l ? y.bentoBoxButtonWhite : y.bentoBoxButtonBrand),
       onClick: p,
       children: t
     })
@@ -124,7 +124,7 @@ let C = e => {
     let t, {
         name: n,
         title: a,
-        description: l,
+        description: c,
         descriptionCta: u,
         previewImage: d,
         videoUrl: _,
@@ -139,18 +139,18 @@ let C = e => {
       } = e,
       L = (0, m.rO)(),
       j = i.useRef(null),
-      M = i.useRef(0),
-      k = A(n),
+      k = i.useRef(0),
+      M = A(n),
       U = (0, s.debounce)(() => {
         h.default.track(E.rMx.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED, {
           box_type: (0, s.snakeCase)(n)
         })
       }, 800),
       G = () => {
-        null == j.current || R || (j.current.currentTime = M.current, j.current.play())
+        null == j.current || R || (j.current.currentTime = k.current, j.current.play())
       },
       B = () => {
-        null == j.current || R || (M.current = j.current.currentTime, j.current.pause())
+        null == j.current || R || (k.current = j.current.currentTime, j.current.pause())
       },
       Z = x ? O : y;
     t = x ? D === g.y$.LARGE ? "heading-xxl/bold" : "heading-xl/bold" : D === g.y$.SMALL ? "heading-xl/extrabold" : "heading-xxl/extrabold";
@@ -174,7 +174,7 @@ let C = e => {
           variant: "text-md/medium",
           color: x ? "text-primary" : "text-muted",
           className: Z.description,
-          children: l
+          children: c
         }), null != u && null != P && (0, r.jsx)(C, {
           descriptionCta: u,
           onClick: P,
@@ -207,13 +207,13 @@ let C = e => {
         children: [(0, r.jsx)(V, {}), (0, r.jsx)(F, {})]
       }),
       W = {
-        className: o()(x ? O.backgroundColor : k, Z.boxContainer, Z["".concat(D)], x && O.gradientBackground),
+        className: o()(x ? O.backgroundColor : M, Z.boxContainer, Z["".concat(D)], x && O.gradientBackground),
         onMouseEnter: G,
         onFocus: G,
         onBlur: B,
         onMouseLeave: B
       };
-    return x ? (0, r.jsx)(c.$, S(I({}, W), {
+    return x ? (0, r.jsx)(l.$, S(I({}, W), {
       color: "purple",
       children: (0, r.jsx)(Y, {})
     })) : (0, r.jsx)("div", S(I({}, W), {

@@ -300,7 +300,7 @@ function eA(e) {
     isPartiallyOwnedBundle: g,
     isDisabled: b,
     discount: v
-  } = e, I = (0, w.sp)(), T = (0, L.rN)(t), [R, x] = (0, _.Wu)([D.Z], () => [D.Z.isClaiming === t.skuId, null != D.Z.isClaiming && D.Z.isClaiming !== t.skuId]), M = (0, L.XM)(i, d, false), k = (0, L.ne)({
+  } = e, I = (0, w.sp)(), T = (0, L.rN)(t), [R, x] = (0, _.Wu)([D.Z], () => [D.Z.isClaiming === t.skuId, null != D.Z.isClaiming && D.Z.isClaiming !== t.skuId]), k = (0, L.XM)(i, d, false), M = (0, L.ne)({
     product: i,
     isPartiallyOwnedBundle: g,
     isPurchased: m
@@ -368,7 +368,7 @@ function eA(e) {
       nitroIconSize: "md",
       discountOfferAmount: W
     }),
-    er = () => p || l.tq || X || !k || n === el.AW.ORBS ? null : T ? (0, r.jsx)(h.hU, {
+    er = () => p || l.tq || X || !M || n === el.AW.ORBS ? null : T ? (0, r.jsx)(h.hU, {
       variant: "primary",
       "aria-label": ed.intl.string(ed.t.SKNnqq),
       icon: h.tEF,
@@ -421,7 +421,7 @@ function eA(e) {
         i = K ? ed.intl.formatToPlainString(ed.t["5U5RBw"], {
           discountOfferAmount: W
         }) : ed.intl.formatToPlainString(ed.t["cNSL/v"], {
-          price: M
+          price: k
         });
       return (0, r.jsx)(h.zxk, {
         variant: "primary",
@@ -535,7 +535,7 @@ function eA(e) {
     }),
     eg = () => {
       if (p && !d && !T) return et();
-      if (!k || b) return ei();
+      if (!M || b) return ei();
       if (m) return eh();
       if (p) return ep();
       if (Q)
@@ -580,9 +580,9 @@ let eC = Chunk647438.memo(function(e) {
     }), Z = (0, m.Z)(f), F = (0, et.m)(f), Y = Z || F, q = (0, ei.To)(t), Q = (0, _.e7)([g.Z], () => g.Z.useReducedMotion), J = R.ZP.canUseCollectibles(n), $ = i.useMemo(() => (0, L.BH)(t, J), [t, J]), ee = (0, L.G1)(t), en = (0, _.e7)([T.Z], () => (0, h.wjy)(T.Z.theme)), er = (0, L.Yq)(t.skuId), eo = a.skuId === c.T.ANIME_V3 && (0, L.WW)(t.skuId), {
       isPurchased: eu,
       isPartiallyOwnedBundle: e_
-    } = (0, k.L)(p), {
+    } = (0, M.L)(p), {
       isDisabled: eh
-    } = (0, M.G)(p.skuId), eg = null !== A ? A : O, [eE, eb] = i.useState(false), ev = Y, eT = i.useCallback(function(e, t, i) {
+    } = (0, k.G)(p.skuId), eg = null !== A ? A : O, [eE, eb] = i.useState(false), ev = Y, eT = i.useCallback(function(e, t, i) {
       let a = arguments.length > 3 && true !== arguments[3] && arguments[3];
       return (0, s.EQ)(e.type).with(u.Z.PROFILE_EFFECT, () => (0, r.jsx)(ey, {
         isHighlighted: t,

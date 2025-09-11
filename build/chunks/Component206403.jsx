@@ -33,17 +33,17 @@ function u(e) {
       className: s.baseControlItemContent,
       children: [(0, r.jsxs)("div", {
         className: s.baseControlItemTitle,
-        children: [(0, r.jsx)(o.X6, {
+        children: [(0, r.jsx)(o.X6q, {
           variant: "heading-md/semibold",
           color: "text-primary",
           children: u
-        }), null != c && (0, r.jsx)(o.X6, {
+        }), null != c && (0, r.jsx)(o.X6q, {
           variant: "heading-md/semibold",
           color: "text-secondary",
           className: s.secondaryTitle,
           children: c
         })]
-      }), null != d && (0, r.jsx)(o.xv, {
+      }), null != d && (0, r.jsx)(o.xvT, {
         variant: "text-md/normal",
         color: "text-secondary",
         children: d

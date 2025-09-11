@@ -20,7 +20,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk933554 = require("./933554.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk87587 = require("./87587.js"),
-  Chunk354810 = require("./354810.js");
+  Chunk273701 = require("./273701.js");
 
 function v(e) {
   let {
@@ -104,7 +104,7 @@ function x(e) {
           alt: "",
           src: _.Z,
           className: y.controllerImage
-        }), (0, i.jsx)(o.X6, {
+        }), (0, i.jsx)(o.X6q, {
           variant: "heading-md/bold",
           color: "header-primary",
           className: y.nuxTitle,
@@ -220,7 +220,7 @@ function I(e) {
     closePopout: t
   } = e;
   return (0, i.jsxs)(x, {
-    children: [(0, i.jsx)(o.X6, {
+    children: [(0, i.jsx)(o.X6q, {
       variant: "heading-sm/semibold",
       color: "header-primary",
       className: y.controlTitle,

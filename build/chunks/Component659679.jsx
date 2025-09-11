@@ -54,7 +54,7 @@ function f(e) {
         name: f,
         colorString: null != v ? v : null,
         colorStrings: x
-      }), (0, r.jsx)(i.xv, {
+      }), (0, r.jsx)(i.xvT, {
         variant: "text-md/medium",
         lineClamp: 1,
         children: (0, r.jsx)(l.Z, {

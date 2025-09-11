@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk793030 = require("./793030.js"),
-  Chunk861066 = require("./861066.jsx"),
+  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk921944 = require("./921944.js"),
   Chunk989308 = require("./989308.js"),
@@ -23,17 +23,17 @@ function p(e) {
       alt: "",
       className: u.image,
       src: d
-    }), (0, r.jsx)(i.xv, {
+    }), (0, r.jsx)(i.xvT, {
       color: "always-white",
       variant: "text-md/semibold",
       children: c.intl.string(a.default.diMhWV)
-    }), (0, r.jsx)(i.xv, {
+    }), (0, r.jsx)(i.xvT, {
       color: "always-white",
       variant: "text-sm/medium",
       children: c.intl.string(a.default.pycxTk)
     }), (0, r.jsx)("div", {
       className: u.close,
-      children: (0, r.jsx)(o.h, {
+      children: (0, r.jsx)(o.hU, {
         variant: "icon-only",
         size: "md",
         "aria-label": c.intl.string(c.t.cpT0Cg),

@@ -75,7 +75,7 @@ function m(e) {
         actionButtons: P,
         widget: r,
         disableInteraction: s
-      }), (0, n.jsxs)(a.y5, {
+      }), (0, n.jsxs)(a.y5t, {
         children: [l, x]
       })]
     })

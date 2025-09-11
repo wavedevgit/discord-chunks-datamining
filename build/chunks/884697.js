@@ -12,7 +12,7 @@ require.d(exports, {
   Vw: () => b,
   WW: () => z,
   XM: () => y,
-  XS: () => M,
+  XS: () => k,
   Y: () => Z,
   Yq: () => K,
   bl: () => U,
@@ -31,7 +31,7 @@ require.d(exports, {
   uV: () => w,
   x0: () => Q,
   x6: () => q,
-  yn: () => k
+  yn: () => M
 }), require("./539854.js"), require("./388685.js"), require("./642613.js");
 var Chunk392711 = require("./392711.js"),
   Chunk979554 = require("./979554.js"),
@@ -179,11 +179,11 @@ let g = e => (null == e ? true : e.premiumType) != null,
   x = e => P(e, i.Z.AVATAR_DECORATION),
   L = (e, t) => (0, r.uniqBy)([...D(e), ...x(t)], "id"),
   j = e => R(e, i.Z.PROFILE_EFFECT),
-  M = e => P(e, i.Z.PROFILE_EFFECT),
-  k = (e, t) => (0, r.uniqBy)([...j(e), ...M(t)], "id"),
+  k = e => P(e, i.Z.PROFILE_EFFECT),
+  M = (e, t) => (0, r.uniqBy)([...j(e), ...k(t)], "id"),
   U = (e, t) => {
     let n = j(t),
-      r = M(e).filter(e => {
+      r = k(e).filter(e => {
         let {
           id: t
         } = e;

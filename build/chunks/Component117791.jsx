@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk680018 = require("./680018.jsx"),
+var Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk736519 = require("./736519.jsx"),
   Chunk648613 = require("./648613.jsx");
@@ -88,7 +88,7 @@ let p = e => {
       let {
         onClick: n
       } = e, s = null != _ ? _ : (0, o.L)(t);
-      return (0, r.jsx)(i.z, d(c({
+      return (0, r.jsx)(i.zxk, d(c({
         onClick: n,
         icon: a.OgN
       }, p), {

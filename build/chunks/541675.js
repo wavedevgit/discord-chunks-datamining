@@ -1,2 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 541675, original params:  (module,exports,re quire) **/
+/** Chunk was on 62987 **/
+/** chunk id: 541675, original params: e,t,n (module,exports,require) **/
+module.exports = {
+  list: "list_c3cd7d",
+  withGuildIcon: "withGuildIcon_c3cd7d",
+  collapsed: "collapsed_c3cd7d"
+}

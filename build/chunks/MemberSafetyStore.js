@@ -170,7 +170,7 @@ function j(e) {
   return i.updateMembersByMemberIds(a)
 }
 
-function M(e) {
+function k(e) {
   let {
     guildId: t,
     guildMember: n
@@ -178,7 +178,7 @@ function M(e) {
   return y(t).updateMembersByMemberIds([n.user.id])
 }
 
-function k(e) {
+function M(e) {
   let t = false;
   return e.guilds.forEach(e => {
     let {
@@ -206,7 +206,7 @@ function U(e) {
 }
 
 function G(e) {
-  return E ? E = false : v(true), k(e)
+  return E ? E = false : v(true), M(e)
 }
 
 function B(e) {
@@ -413,7 +413,7 @@ let J = new Q(Chunk570140.Z, {
   GUILD_MEMBER_REMOVE: R,
   GUILD_ROLE_UPDATE: P,
   GUILD_ROLE_DELETE: P,
-  GUILD_MEMBER_PROFILE_UPDATE: M,
+  GUILD_MEMBER_PROFILE_UPDATE: k,
   GUILD_ROLE_MEMBER_REMOVE: w,
   GUILD_ROLE_MEMBER_ADD: w,
   THREAD_MEMBER_LIST_UPDATE: D,

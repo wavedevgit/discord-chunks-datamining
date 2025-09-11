@@ -39,14 +39,15 @@ function m(e) {
   })), o = (0, s.cj)([d.Z], () => ({
     enabled: d.Z.useForcedColors,
     rawValue: d.Z.systemForcedColors
-  })), c = (0, s.e7)([d.Z], () => d.Z.alwaysShowLinkDecorations), u = i.useMemo(() => ({
+  })), c = (0, s.e7)([d.Z], () => d.Z.isHighContrastModeEnabled), u = (0, s.e7)([d.Z], () => d.Z.alwaysShowLinkDecorations), _ = i.useMemo(() => ({
     reducedMotion: n,
     prefersCrossfades: false,
     forcedColors: o,
-    alwaysShowLinkDecorations: c
-  }), [n, o, c]);
+    alwaysShowLinkDecorations: u,
+    highContrastModeEnabled: c
+  }), [n, o, u, c]);
   return i.useEffect(() => ((0, a.waitForAllDefaultIntlMessagesLoaded)().then(() => (0, f.d1)()), p.intl.onLocaleChange(() => (0, f.d1)()), window.addEventListener("keydown", h), () => window.removeEventListener("keydown", h)), []), (0, r.jsx)(l.Sfi.Provider, {
-    value: u,
+    value: _,
     children: t
   })
 }

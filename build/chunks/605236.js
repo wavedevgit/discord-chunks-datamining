@@ -9,7 +9,7 @@ require.d(exports, {
   H4: () => R,
   J0: () => N,
   JO: () => F,
-  ME: () => k,
+  ME: () => M,
   OA: () => x,
   Ow: () => V,
   UJ: () => w,
@@ -22,7 +22,7 @@ require.d(exports, {
   oK: () => L,
   po: () => T,
   qN: () => G,
-  u9: () => M,
+  u9: () => k,
   wH: () => Z,
   wx: () => y,
   z2: () => I
@@ -220,11 +220,11 @@ function j(e, t, n) {
   })))
 }
 
-function M(e, t) {
+function k(e, t) {
   ((0, p.cI)(e) || t.forceTrack) && H(e, t), (0, f.Vr)(e)
 }
 
-function k(e, t) {
+function M(e, t) {
   let n = !_.Z.hasUserHitDCCap();
   (0, p.gE)({
     content: e,
@@ -250,15 +250,15 @@ function B(e, t) {
 }
 async function Z(e, t, n) {
   let r = B(e, n);
-  M(e, n), await v(e, t, r), k(e, n)
+  k(e, n), await v(e, t, r), M(e, n)
 }
 async function F(e, t, n) {
   let r = B(e, n);
-  M(e, n), await T(e, t, r), k(e, n)
+  k(e, n), await T(e, t, r), M(e, n)
 }
 async function V(e, t) {
   let n = B(e, t);
-  M(e, t), await I(e, n), k(e, t)
+  k(e, t), await I(e, n), M(e, t)
 }
 
 function H(e, t) {

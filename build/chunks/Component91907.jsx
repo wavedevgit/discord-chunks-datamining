@@ -70,7 +70,7 @@ function h(e) {
     onPopoutClosed: _,
     children: e => (0, r.jsx)(c.Z, p(f({}, e), {
       tag: "span",
-      children: (0, r.jsx)(s.xv, {
+      children: (0, r.jsx)(s.xvT, {
         ref: g,
         className: h ? o()(d, E) : d,
         variant: "text-sm/semibold",

@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   i: () => L,
-  y: () => M
+  y: () => k
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk680018 = require("./680018.jsx"),
+  Chunk159691 = require("./159691.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
@@ -98,7 +98,7 @@ function R(e) {
       sourceQuestContentCTA: r
     })
   };
-  return (0, r.jsx)(a.z, {
+  return (0, r.jsx)(a.zxk, {
     variant: "primary",
     fullWidth: true,
     onClick: o,
@@ -111,7 +111,7 @@ let P = e => {
       quest: t,
       sourceQuestContent: n
     } = e, i = (0, d.aM)(), o = (0, f.pO)(t) ? O.intl.string(O.t.hvVgAQ) : O.intl.string(O.t.lwQdjI);
-    return (0, r.jsx)(a.z, {
+    return (0, r.jsx)(a.zxk, {
       size: "sm",
       fullWidth: true,
       onClick: () => (0, f.nc)(t, {
@@ -129,7 +129,7 @@ let P = e => {
       quest: n,
       sourceQuestContent: i
     } = e, o = null == (t = (0, d.WD)()) ? true : t.getId();
-    return (0, r.jsx)(a.z, {
+    return (0, r.jsx)(a.zxk, {
       fullWidth: true,
       onClick: () => (0, f.gI)({
         quest: n
@@ -151,7 +151,7 @@ let P = e => {
     }), {
       launchInGameActivity: s
     } = (0, _.zB)(t);
-    return n && i ? (0, r.jsx)(a.z, {
+    return n && i ? (0, r.jsx)(a.zxk, {
       fullWidth: true,
       variant: "primary",
       onClick: s,
@@ -177,7 +177,7 @@ let P = e => {
       targetElementRef: o,
       onGameSheetOpened: s,
       onGameSheetClosed: l,
-      children: e => (0, r.jsx)(a.z, T({
+      children: e => (0, r.jsx)(a.zxk, T({
         variant: "secondary",
         fullWidth: true,
         size: "sm",
@@ -269,7 +269,7 @@ let P = e => {
     })
   };
 
-function M(e) {
+function k(e) {
   let t = i.useRef(null);
   return (0, r.jsxs)("div", {
     className: v.ctaButtons,

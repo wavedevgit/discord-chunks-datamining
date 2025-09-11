@@ -2,7 +2,7 @@
 /** chunk id: 710094, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  l: () => k
+  l: () => M
 }), require("./388685.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -37,12 +37,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk108626 = require("./108626.js");
-let M = 500;
+let k = 500;
 
-function k(e) {
+function M(e) {
   var t, n;
   let a, {
-      handleStepChange: k,
+      handleStepChange: M,
       trialId: U,
       trialFooterMessageOverride: G,
       reviewWarningMessage: B,
@@ -96,7 +96,7 @@ function k(e) {
     } = (0, O.zb)();
   o()(null != ed, "Step should be set");
   let eN = i.useRef(null),
-    [eR, eP] = (0, l.Z)(false, M);
+    [eR, eP] = (0, l.Z)(false, k);
   i.useEffect(() => {
     (0, m.t)()
   }, []);
@@ -112,16 +112,16 @@ function k(e) {
       behavior: "smooth"
     })
   }, [en]);
-  let eM = i.useCallback((e, t, n) => {
-      X(e), null != t && em(t), null != n && eg(n), k(y.h8.CONFIRM, {
+  let ek = i.useCallback((e, t, n) => {
+      X(e), null != t && em(t), null != n && eg(n), M(y.h8.CONFIRM, {
         fulfillment: {
           subscription: e,
           entitlements: t
         }
       })
-    }, [k, X, em, eg]),
-    ek = (0, N.m)(ee, $),
-    eU = null != ea && D.o4.has(ea.id) && null != ek && !(0, c.aQ)(ek) ? Error(L.intl.string(L.t["2ik8io"])) : null,
+    }, [M, X, em, eg]),
+    eM = (0, N.m)(ee, $),
+    eU = null != ea && D.o4.has(ea.id) && null != eM && !(0, c.aQ)(eM) ? Error(L.intl.string(L.t["2ik8io"])) : null,
     eG = i.useRef(null),
     [eB, eZ] = i.useState(null),
     eF = !eI && null != ex && null != eo && D.nG[ex.trial_id].skus.includes(eo),
@@ -138,17 +138,17 @@ function k(e) {
     ez = eI && eh === x.GZ.ONE_TIME,
     eq = ez || (eK ? eW && e_ : e_),
     eX = (0, u.id)(ea, eI, eA),
-    eQ = i.useCallback(() => eK ? void k(y.h8.SKU_SELECT) : eX ? void k(y.h8.SELECT_FREE_SKU) : ez ? k(y.h8.GIFT_CUSTOMIZATION) : k(y.h8.PLAN_SELECT), [k, eK, ez, eX]),
+    eQ = i.useCallback(() => eK ? void M(y.h8.SKU_SELECT) : eX ? void M(y.h8.SELECT_FREE_SKU) : ez ? M(y.h8.GIFT_CUSTOMIZATION) : M(y.h8.PLAN_SELECT), [M, eK, ez, eX]),
     eJ = false,
     e$ = () => {
-      k(y.h8.ADD_PAYMENT_STEPS)
+      M(y.h8.ADD_PAYMENT_STEPS)
     };
   return eh === x.GZ.ONE_TIME ? (eJ = null != er, a = (0, r.jsx)(C.Z, {
     hasLegalTermsFlash: eR,
     legalTermsNodeRef: eG,
     onPaymentSourceChange: e => el(null != e ? e.id : null),
-    handlePaymentSourceAdd: () => k(y.h8.ADD_PAYMENT_STEPS)
-  })) : (eJ = null == eb || !eI && null != ek && eh === x.GZ.SUBSCRIPTION && eF && !ek.canRedeemTrial(), null == q || ey || eI ? (o()(null != ea, "Expected plan to be selected"), a = (0, r.jsx)(_.Z, {
+    handlePaymentSourceAdd: () => M(y.h8.ADD_PAYMENT_STEPS)
+  })) : (eJ = null == eb || !eI && null != eM && eh === x.GZ.SUBSCRIPTION && eF && !eM.canRedeemTrial(), null == q || ey || eI ? (o()(null != ea, "Expected plan to be selected"), a = (0, r.jsx)(_.Z, {
     selectedPlanId: ea.id,
     planGroup: Z,
     paymentSources: ee,
@@ -156,7 +156,7 @@ function k(e) {
     priceOptions: et,
     currencies: J,
     onCurrencyChange: e => es(e),
-    handlePaymentSourceAdd: () => k(y.h8.ADD_PAYMENT_STEPS),
+    handlePaymentSourceAdd: () => M(y.h8.ADD_PAYMENT_STEPS),
     setHasAcceptedTerms: ep,
     legalTermsNodeRef: eG,
     hasLegalTermsFlash: eR,
@@ -205,7 +205,7 @@ function k(e) {
         premiumSubscription: null != q ? q : null,
         setPurchaseState: ec,
         onBack: eQ,
-        onNext: eM,
+        onNext: ek,
         onPurchaseError: e => eu(e),
         legalTermsNodeRef: eG,
         flashLegalTerms: () => eP(true),

@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => _
 });
 var Chunk951288 = require("./951288.js"),
-  Chunk680018 = require("./680018.jsx"),
+  Chunk159691 = require("./159691.js"),
   Chunk648613 = require("./648613.jsx"),
   Chunk864218 = require("./864218.js");
 
@@ -104,7 +104,7 @@ let _ = function(e) {
       let {
         onClick: t
       } = e;
-      return (0, r.jsx)(i.z, l({
+      return (0, r.jsx)(i.zxk, l({
         onClick: t
       }, v, y))
     }

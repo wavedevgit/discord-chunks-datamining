@@ -118,18 +118,18 @@ function j(e) {
         className: v.textContainer,
         children: [(0, r.jsxs)("div", {
           className: v.textContentContainer,
-          children: [(0, r.jsx)(s.xv, {
+          children: [(0, r.jsx)(s.xvT, {
             className: v.text,
             variant: "text-xs/semibold",
             children: _.intl.string(y.default.NI6IhY)
-          }), t.premiumSubscriberCount >= j && (0, r.jsx)(s.xv, {
+          }), t.premiumSubscriberCount >= j && (0, r.jsx)(s.xvT, {
             className: v.text,
             variant: "text-xs/semibold",
             children: "\uD83C\uDF89"
           })]
         }), (0, r.jsxs)("div", {
           className: v.textContentContainer,
-          children: [(0, r.jsx)(s.xv, {
+          children: [(0, r.jsx)(s.xvT, {
             className: o()(v.text, v.boostCountText),
             variant: "text-xs/semibold",
             children: N ? _.intl.formatToPlainString(y.default["Ehpq+/"], {

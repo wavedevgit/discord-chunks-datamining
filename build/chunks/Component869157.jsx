@@ -204,7 +204,6 @@ function A(e) {
       }),
       position: "bottom",
       caretConfig: {
-        position: "top",
         align: "center"
       },
       onRequestClose: () => {

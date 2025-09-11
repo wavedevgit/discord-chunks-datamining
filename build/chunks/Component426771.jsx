@@ -25,14 +25,14 @@ function _(e) {
       group: b,
       powerups: C
     } = e,
-    [j, E] = i.useState(false),
-    P = (0, c.Gv)(h, C),
-    I = (0, o.e7)([a.Z], () => a.Z.useReducedMotion),
-    T = (0, d.Z)(b, h);
-  if (true === T || C.length <= 0) return null;
-  let y = P.some(e => e.type !== m.A3.INACTIVE),
+    [j, T] = i.useState(false),
+    E = (0, c.Gv)(h, C),
+    P = (0, o.e7)([a.Z], () => a.Z.useReducedMotion),
+    I = (0, d.Z)(b, h);
+  if (true === I || C.length <= 0) return null;
+  let y = E.some(e => e.type !== m.A3.INACTIVE),
     w = (0, p.d)(y),
-    Z = P.reduce((e, t) => {
+    Z = E.reduce((e, t) => {
       let {
         sourceEntitlement: n
       } = t, r = null == n ? true : n.ends_at;
@@ -45,21 +45,21 @@ function _(e) {
     type: "active",
     statusText: f.intl.string(g.default.FFLkm5)
   });
-  let S = P.reduce((e, t) => {
+  let S = E.reduce((e, t) => {
       let {
         type: n,
         powerup: r
       } = t;
       return n === m.A3.POWERUP_ACTIVATED ? e + r.cost : e
     }, 0),
-    N = P.reduce((e, t) => {
+    N = E.reduce((e, t) => {
       var n, r;
       let {
         powerup: i
       } = t;
       return e < (null != (n = null == i ? true : i.cost) ? n : 0) ? e : null != (r = null == i ? true : i.cost) ? r : 0
-    }, null != (_ = null == (n = P[0]) || null == (t = n.powerup) ? true : t.cost) ? _ : 0),
-    k = P.reduce((e, t) => {
+    }, null != (_ = null == (n = E[0]) || null == (t = n.powerup) ? true : t.cost) ? _ : 0),
+    k = E.reduce((e, t) => {
       var n;
       let {
         powerup: r
@@ -68,22 +68,22 @@ function _(e) {
     }, 0),
     O = y ? S : N,
     A = !y && k > O ? "+" : true,
-    U = !I && j ? T.image.animatedUrl : T.image.staticUrl,
-    R = null != T.viewCta && "" !== T.viewCta ? T.viewCta : f.intl.string(g.default["27GkOj"]),
-    L = null != T.viewCtaTooltip && "" !== T.viewCtaTooltip ? T.viewCtaTooltip : true;
+    U = !P && j ? I.image.animatedUrl : I.image.staticUrl,
+    R = null != I.viewCta && "" !== I.viewCta ? I.viewCta : f.intl.string(g.default["27GkOj"]),
+    L = null != I.viewCtaTooltip && "" !== I.viewCtaTooltip ? I.viewCtaTooltip : true;
   return (0, r.jsxs)(u.aB, {
-    label: T.title,
+    label: I.title,
     isActive: y,
-    badge: T.badge,
-    onClick: () => T.openModal(C),
-    onMouseOver: () => E(true),
-    onMouseLeave: () => E(false),
+    badge: I.badge,
+    onClick: () => I.openModal(C),
+    onMouseOver: () => T(true),
+    onMouseLeave: () => T(false),
     children: [(0, r.jsx)("img", {
       alt: "",
       src: U,
       className: v.image
     }), (0, r.jsx)(u.Q9, {
-      title: T.title,
+      title: I.title,
       textColor: w,
       footer: (0, r.jsx)(u.uf, {
         status: x,
@@ -94,7 +94,7 @@ function _(e) {
         className: v.description,
         color: w,
         variant: "text-sm/medium",
-        children: T.description
+        children: I.description
       })
     }), (0, r.jsx)(u.N4, {
       children: null != L ? (0, r.jsx)(s.u, {

@@ -17,8 +17,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk989308 = require("./989308.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk46310 = require("./46310.js"),
-  Chunk175435 = require("./175435.js");
+  Chunk592281 = require("./592281.js"),
+  Chunk337003 = require("./337003.js");
 
 function x(e, t) {
   var x;
@@ -39,7 +39,7 @@ function x(e, t) {
           allPowerups: s,
           unlockedPowerups: c,
           skuIds: u
-        } = e, d = f.intl.string(g.default.KC9HRU), x = f.intl.string(g.default.GJiSmJ), h = null == s ? true : s[o.IN], b = (null == c ? true : c[o.IN]) != null, C = f.intl.string(g.default["/egwJC"]), j = b ? true : f.intl.string(g.default.W6Vwn5), E = b ? true : f.intl.string(g.default.lvk1GR), P = b ? f.intl.string(g.default["9CfkLC"]) : f.intl.string(f.t["+7XY39"]), I = b ? "secondary" : "expressive", T = i ? () => {
+        } = e, d = f.intl.string(g.default.KC9HRU), x = f.intl.string(g.default.GJiSmJ), h = null == s ? true : s[o.IN], b = (null == c ? true : c[o.IN]) != null, C = f.intl.string(g.default["/egwJC"]), j = b ? true : f.intl.string(g.default.W6Vwn5), T = b ? true : f.intl.string(g.default.lvk1GR), E = b ? f.intl.string(g.default["9CfkLC"]) : f.intl.string(f.t["+7XY39"]), P = b ? "secondary" : "expressive", I = i ? () => {
           b ? a.Z.open(t, m.pNK.TAG, m.jXE.GUILD_POWERUPS_OVERVIEW_CARD) : null != h && (0, p.KE)(t, h), (0, l.pTH)()
         } : true;
         return {
@@ -73,12 +73,12 @@ function x(e, t) {
                 title: d,
                 description: f.intl.string(g.default.BBRFRU),
                 powerups: e,
-                footerInfoText: E,
-                footerAction: i && null != T && null != P ? {
-                  variant: I,
-                  text: P,
-                  icon: "expressive" === I ? l.$Eu : true,
-                  onClick: T
+                footerInfoText: T,
+                footerAction: i && null != I && null != E ? {
+                  variant: P,
+                  text: E,
+                  icon: "expressive" === P ? l.$Eu : true,
+                  onClick: I
                 } : true
               }, n))
             }, {

@@ -33,11 +33,11 @@ function h(e) {
     className: x.container,
     children: [(0, r.jsxs)("div", {
       className: x.headerContainer,
-      children: [(0, r.jsx)(i.xv, {
+      children: [(0, r.jsx)(i.xvT, {
         variant: "eyebrow",
         color: "text-secondary",
         children: _.intl.string(v.default.hjvcLC)
-      }), (0, r.jsx)(i.xv, {
+      }), (0, r.jsx)(i.xvT, {
         className: x.learnMore,
         variant: "text-xs/semibold",
         children: _.intl.format(v.default.fXE30d, {

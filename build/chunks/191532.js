@@ -4,13 +4,17 @@
 require.d(exports, {
   Z: () => s
 });
-var Chunk374470 = require("./374470.js");
+var Chunk513431 = require("./513431.js");
 
 function i(e, t, n) {
   let i = "horizontal" === t ? e.offsetWidth : e.offsetHeight,
     a = "horizontal" === t ? e.offsetLeft : e.offsetTop,
     o = e.offsetParent;
-  for (; null != o && o !== n;)(0, r.k)(o, HTMLElement) ? (a += "horizontal" === t ? o.offsetLeft : o.offsetTop, o = o.offsetParent) : o = o.parentNode;
+  for (; null != o && o !== n;)
+    if ((0, r.k)(o, HTMLElement)) {
+      let e = o;
+      a += "horizontal" === t ? e.offsetLeft : e.offsetTop, o = e.offsetParent
+    } else o = o.parentNode;
   return {
     offset: a,
     offsetSize: i

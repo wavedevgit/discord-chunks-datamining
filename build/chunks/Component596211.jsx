@@ -33,7 +33,7 @@ function c(t) {
     isLoading: u,
     downloadAttachment: f
   } = (0, a.Z)(c, i);
-  return (0, r.jsx)(o.zx, (e = function(t) {
+  return (0, r.jsx)(o.zxk, (e = function(t) {
     for (var e = 1; e < arguments.length; e++) {
       var n = null != arguments[e] ? arguments[e] : {},
         r = Object.keys(n);

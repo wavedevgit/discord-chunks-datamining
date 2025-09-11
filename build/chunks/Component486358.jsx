@@ -31,11 +31,11 @@ let _ = function() {
     children: (0, Chunk951288.jsxs)("main", {
       className: Chunk566945.container,
       children: [(0, Chunk951288.jsxs)("div", {
-        children: [(0, Chunk951288.jsx)(Chunk793030.X6, {
+        children: [(0, Chunk951288.jsx)(Chunk793030.X6q, {
           variant: "heading-lg/semibold",
           color: "header-primary",
           children: Chunk388032.intl.string(Chunk388032.t["6TAHb2"])
-        }), (0, Chunk951288.jsx)(Chunk793030.xv, {
+        }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
           variant: "text-sm/medium",
           color: "header-secondary",
           tag: "p",

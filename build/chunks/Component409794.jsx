@@ -58,7 +58,7 @@ let p = Chunk647438.forwardRef(function(e, t) {
   } = e, a = f(e, ["variant", "className"]);
   let u = (0, l.x)(),
     _ = "h".concat(Math.min(u, 6));
-  return (0, r.jsx)(s.xv, d({
+  return (0, r.jsx)(s.xvT, d({
     ref: t,
     variant: n,
     tag: _,

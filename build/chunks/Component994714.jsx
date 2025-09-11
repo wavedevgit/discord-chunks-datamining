@@ -25,7 +25,7 @@ let _ = e => {
         },
         children: (0, r.jsx)("div", {
           className: o()(f.banner, f.pfxBanner),
-          children: (0, r.jsx)(s.xv, {
+          children: (0, r.jsx)(s.xvT, {
             variant: "text-md/bold",
             color: "always-white",
             children: "Profile Effects"
@@ -37,7 +37,7 @@ let _ = e => {
         },
         children: (0, r.jsx)("div", {
           className: o()(f.banner, f.nameplateBanner),
-          children: (0, r.jsx)(s.xv, {
+          children: (0, r.jsx)(s.xvT, {
             variant: "text-md/bold",
             color: "always-white",
             children: "Nameplates"
@@ -49,7 +49,7 @@ let _ = e => {
         },
         children: (0, r.jsx)("div", {
           className: o()(f.banner, f.bundlesBanner),
-          children: (0, r.jsx)(s.xv, {
+          children: (0, r.jsx)(s.xvT, {
             variant: "text-md/bold",
             color: "always-white",
             children: "Product Preview Tool"
@@ -77,7 +77,7 @@ let _ = e => {
       className: Chunk646420.wrapper,
       children: [(0, Chunk951288.jsxs)("div", {
         className: Chunk646420.nav,
-        children: [(0, Chunk951288.jsx)(Chunk793030.X6, {
+        children: [(0, Chunk951288.jsx)(Chunk793030.X6q, {
           variant: "heading-xxl/medium",
           children: "ShopKeeper"
         }), 0 !== module && (0, Chunk951288.jsx)(Chunk481060.zxk, {

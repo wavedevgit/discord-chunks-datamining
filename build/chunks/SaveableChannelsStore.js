@@ -2,7 +2,7 @@
 /** chunk id: 40455, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => M
+  ZP: () => k
 }), require("./388685.js");
 var Chunk592125 = require("./592125.js"),
   Chunk650774 = require("./650774.js"),
@@ -163,4 +163,4 @@ function j(e) {
   T = true
 }
 p(S, "displayName", "SaveableChannelsStore"), p(S, "LATEST_SNAPSHOT_VERSION", 1);
-let M = new S
+let k = new S

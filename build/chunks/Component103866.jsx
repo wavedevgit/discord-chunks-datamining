@@ -100,7 +100,7 @@ function y(e) {
       }),
       r = null != (t = null == O || null == (e = O.current) ? true : e.getScrollerNode()) ? t : null;
     return null != r && n.observe(r), (null == I ? true : I.current) != null && n.observe(I.current), () => n.disconnect()
-  }, [S]), (0, r.jsxs)(l.y5, {
+  }, [S]), (0, r.jsxs)(l.y5t, {
     children: [(0, r.jsx)("div", {
       className: o()(_.bodySpacerTop, {
         [_.bodySpacerTopBorder]: b && null == a

@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk793030 = require("./793030.js"),
   Chunk178940 = require("./178940.jsx"),
-  Chunk680018 = require("./680018.jsx");
+  Chunk159691 = require("./159691.js");
 let l = {
   title: "Checkbox",
   stories: [{
@@ -27,7 +27,7 @@ let l = {
       }, []), p = i.useCallback(() => {
         d(e => !e)
       }, []);
-      return (0, r.jsxs)(a.Kq, {
+      return (0, r.jsxs)(a.Kqy, {
         direction: "vertical",
         gap: "md",
         children: [(0, r.jsx)(o.X, {
@@ -36,25 +36,25 @@ let l = {
           disabled: n,
           displayOnly: l,
           label: t
-        }), (0, r.jsxs)(a.xv, {
+        }), (0, r.jsxs)(a.xvT, {
           variant: "text-sm/normal",
           children: ["Current state: ", u ? "Checked" : "Unchecked"]
-        }), (0, r.jsxs)(a.Kq, {
+        }), (0, r.jsxs)(a.Kqy, {
           direction: "horizontal",
           gap: "sm",
-          children: [(0, r.jsx)(s.z, {
+          children: [(0, r.jsx)(s.zxk, {
             variant: "secondary",
             size: "sm",
             text: "Check",
             onClick: f,
             disabled: n
-          }), (0, r.jsx)(s.z, {
+          }), (0, r.jsx)(s.zxk, {
             variant: "secondary",
             size: "sm",
             text: "Uncheck",
             onClick: _,
             disabled: n
-          }), (0, r.jsx)(s.z, {
+          }), (0, r.jsx)(s.zxk, {
             variant: "primary",
             size: "sm",
             text: "Toggle",

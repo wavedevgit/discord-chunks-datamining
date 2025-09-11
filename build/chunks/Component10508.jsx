@@ -33,7 +33,7 @@ let f = e => {
         className: c.nitroIcon
       }), (0, r.jsxs)("div", {
         className: c.discountOfferContent,
-        children: [(0, r.jsx)(i.xv, {
+        children: [(0, r.jsx)(i.xvT, {
           variant: "text-md/semibold",
           children: d.status === s.O0b.CANCELED ? l.intl.format(l.t["DC+nPD"], {
             numMonths: t.discount.user_usage_limit,
@@ -59,7 +59,7 @@ let f = e => {
     } = (0, o.a)();
     switch (n) {
       case "applied":
-        if (d.status === s.O0b.CANCELED) return (0, r.jsx)(i.xv, {
+        if (d.status === s.O0b.CANCELED) return (0, r.jsx)(i.xvT, {
           variant: "text-md/normal",
           color: "text-secondary",
           children: l.intl.formatToPlainString(l.t.h2g1IS, {
@@ -68,7 +68,7 @@ let f = e => {
             fullPrice: u
           })
         });
-        return (0, r.jsx)(i.xv, {
+        return (0, r.jsx)(i.xvT, {
           variant: "text-md/normal",
           color: "text-secondary",
           children: l.intl.formatToPlainString(l.t.gPzMHR, {
@@ -78,7 +78,7 @@ let f = e => {
           })
         });
       case "confirming":
-        if (d.status === s.O0b.CANCELED) return (0, r.jsx)(i.xv, {
+        if (d.status === s.O0b.CANCELED) return (0, r.jsx)(i.xvT, {
           variant: "text-md/normal",
           color: "text-secondary",
           children: l.intl.formatToPlainString(l.t.iDFk3t, {
@@ -87,7 +87,7 @@ let f = e => {
             fullPrice: u
           })
         });
-        return (0, r.jsx)(i.xv, {
+        return (0, r.jsx)(i.xvT, {
           variant: "text-md/normal",
           color: "text-secondary",
           children: l.intl.formatToPlainString(l.t.Eq1RHB, {
@@ -97,7 +97,7 @@ let f = e => {
           })
         });
       default:
-        return (0, r.jsx)(i.xv, {
+        return (0, r.jsx)(i.xvT, {
           variant: "text-md/normal",
           color: "text-secondary",
           children: l.intl.formatToPlainString(l.t["2gem09"], {

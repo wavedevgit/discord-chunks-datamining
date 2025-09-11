@@ -9,7 +9,7 @@ require.d(exports, {
   JQ: () => A,
   NE: () => b,
   RG: () => x,
-  Xb: () => M,
+  Xb: () => k,
   Xu: () => O,
   Y: () => G,
   cD: () => v,
@@ -120,13 +120,13 @@ function R(e, t, n) {
 
 function P(e) {
   let t = (0, o.e7)([p.Z], () => N(e, p.Z)),
-    n = M(e);
+    n = k(e);
   return R(e, t, n)
 }
 
 function w(e) {
   let t = N(e, p.Z),
-    n = k(e);
+    n = M(e);
   return R(e, t, n)
 }
 
@@ -150,11 +150,11 @@ function j(e, t) {
   return null != e && t.can(g.Plq.MANAGE_THREADS, e)
 }
 
-function M(e) {
-  return (0, o.e7)([p.Z], () => k(e, [p.Z]))
+function k(e) {
+  return (0, o.e7)([p.Z], () => M(e, [p.Z]))
 }
 
-function k(e) {
+function M(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [p.Z],
     [n] = t;
   return j(e, n)
@@ -165,7 +165,7 @@ function U(e) {
     let t = _.Z.getChannel(e);
     if (null == t) returnfalse;
     let n = f.default.getId();
-    return t.type === g.d4z.PRIVATE_THREAD && t.ownerId === n || k(t, [p.Z])
+    return t.type === g.d4z.PRIVATE_THREAD && t.ownerId === n || M(t, [p.Z])
   })
 }
 
@@ -184,6 +184,6 @@ function G(e) {
 }
 
 function B(e) {
-  let t = M(e);
+  let t = k(e);
   return e.isLockedThread() && !t
 }

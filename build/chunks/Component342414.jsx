@@ -155,7 +155,7 @@ let ee = (e, t, i) => {
             containerVisibilityPercentage: ei
           }), q && j && null != y.expires_at && (0, r.jsx)(L.Z, {
             expiresAt: y.expires_at
-          }), (0, r.jsx)(k.Z, {
+          }), (0, r.jsx)(M.Z, {
             children: q ? Y.intl.format(Y.t["3yZP0N"], {
               percent: y.discount.amount
             }) : m
@@ -180,7 +180,7 @@ let ee = (e, t, i) => {
             icon: l.SrA,
             size: "md",
             text: Y.intl.string(Y.t.zrCzVF),
-            onClick: () => ee(R, z, M.R.CONFIRM_DISCOUNT)
+            onClick: () => ee(R, z, k.R.CONFIRM_DISCOUNT)
           }), (0, r.jsx)(w.Z, {
             variant: et || q ? "secondary" : "expressive",
             size: "md",
@@ -249,7 +249,7 @@ let ee = (e, t, i) => {
               icon: l.SrA,
               size: "md",
               text: Y.intl.string(Y.t.zrCzVF),
-              onClick: () => ee(b, I, M.R.CONFIRM_DISCOUNT),
+              onClick: () => ee(b, I, k.R.CONFIRM_DISCOUNT),
               fullWidth: true
             }), (0, r.jsx)(w.Z, {
               variant: "overlay-secondary",

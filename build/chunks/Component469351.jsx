@@ -93,7 +93,7 @@ function w(e) {
         children: T.intl.string(T.t.YBrFe3)
       }) : null, n ? (0, r.jsx)("div", {
         className: P.previewButton,
-        children: (0, r.jsx)(s.zx, {
+        children: (0, r.jsx)(s.zxk, {
           text: T.intl.string(T.t.vM81yc),
           variant: "secondary",
           onClick: M,

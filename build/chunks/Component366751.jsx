@@ -28,11 +28,11 @@ function u(e) {
     }), (0, r.jsx)(i.Mgn, {
       color: s.Z.colors.TEXT_FEEDBACK_WARNING,
       className: c.icon
-    }), (0, r.jsx)(o.xv, {
+    }), (0, r.jsx)(o.xvT, {
       variant: "text-md/semibold",
       color: "text-feedback-warning",
       children: t.title
-    }), (0, r.jsx)(o.xv, {
+    }), (0, r.jsx)(o.xvT, {
       variant: "text-sm/medium",
       children: t.description
     })]

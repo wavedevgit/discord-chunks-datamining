@@ -15,7 +15,7 @@ var Chunk264418 = require("./264418.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk288541 = require("./288541.js");
+  Chunk746986 = require("./746986.js");
 let g = e => {
   let {
     targetElementRef: t,
@@ -31,7 +31,6 @@ let g = e => {
     align: "top",
     size: "md",
     caretConfig: {
-      position: "left",
       align: "start"
     },
     title: f.intl.format(f.t["3yZP0N"], {

@@ -494,7 +494,7 @@ function j(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     widgetId: t
   } = e;
@@ -503,7 +503,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   let {
     widgetId: t
   } = e;
@@ -816,9 +816,9 @@ let K = new W(Chunk570140.Z, {
   LAYOUT_SET_PINNED: x,
   LAYOUT_UPDATE_WIDGET: N,
   LAYOUT_SET_TOP_WIDGET: R,
-  LAYOUT_DELETE_WIDGET: k,
+  LAYOUT_DELETE_WIDGET: M,
   LAYOUT_DELETE_ALL_WIDGETS: U,
   LAYOUT_CREATE_WIDGETS: G,
   LAYOUT_SET_WIDGET_META: w,
-  LAYOUT_SHOW_OVERLAY_EXTRAS_HINT: M
+  LAYOUT_SHOW_OVERLAY_EXTRAS_HINT: k
 })

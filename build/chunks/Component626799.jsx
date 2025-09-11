@@ -2,7 +2,7 @@
 /** chunk id: 626799, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $: () => M,
+  $: () => k,
   Z: () => j
 }), require("./388685.js"), require("./415506.js");
 var r, Chunk951288 = require("./951288.js"),
@@ -229,4 +229,4 @@ function x(e) {
 }
 let L = (0, Chunk112724.Z)((0, Chunk730749.Z)(w)),
   j = Chunk442837.ZP.connectStores(D, x)(L),
-  M = (0, Chunk730749.Z)(Chunk442837.ZP.connectStores(D, x)(w))
+  k = (0, Chunk730749.Z)(Chunk442837.ZP.connectStores(D, x)(w))

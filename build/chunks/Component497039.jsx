@@ -2,21 +2,20 @@
 /** chunk id: 497039, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  T: () => A
+  T: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk938288 = require("./938288.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk692547 = require("./692547.js"),
   Chunk143450 = require("./143450.js"),
-  Chunk186325 = require("./186325.js"),
-  Chunk84735 = require("./84735.js"),
   Chunk180035 = require("./180035.js"),
   Chunk580229 = require("./580229.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,20 +24,20 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,28 +48,28 @@ function m(e, t) {
   return n
 }
 
-function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let E = {
+let g = {
     mass: 1,
     tension: 250
   },
-  b = "M5.13231 6.72963L6.7233 5.13864L14.855 13.2704L13.264 14.8614L5.13231 6.72963Z",
-  y = "M13.2704 5.13864L14.8614 6.72963L6.72963 14.8614L5.13864 13.2704L13.2704 5.13864Z",
-  O = "M6.56666 11.0013L6.56666 8.96683L13.5667 8.96683L13.5667 11.0013L6.56666 11.0013Z",
-  v = "M13.5582 8.96683L13.5582 11.0013L6.56192 11.0013L6.56192 8.96683L13.5582 8.96683Z",
-  I = "M7.89561 14.8538L6.30462 13.2629L14.3099 5.25755L15.9009 6.84854L7.89561 14.8538Z",
-  T = "M4.08643 11.0903L5.67742 9.49929L9.4485 13.2704L7.85751 14.8614L4.08643 11.0903Z";
+  E = "M5.13231 6.72963L6.7233 5.13864L14.855 13.2704L13.264 14.8614L5.13231 6.72963Z",
+  b = "M13.2704 5.13864L14.8614 6.72963L6.72963 14.8614L5.13864 13.2704L13.2704 5.13864Z",
+  y = "M6.56666 11.0013L6.56666 8.96683L13.5667 8.96683L13.5667 11.0013L6.56666 11.0013Z",
+  O = "M13.5582 8.96683L13.5582 11.0013L6.56192 11.0013L6.56192 8.96683L13.5582 8.96683Z",
+  v = "M7.89561 14.8538L6.30462 13.2629L14.3099 5.25755L15.9009 6.84854L7.89561 14.8538Z",
+  I = "M4.08643 11.0903L5.67742 9.49929L9.4485 13.2704L7.85751 14.8614L4.08643 11.0903Z";
 
-function S(e, t, n, i) {
+function T(e, t, n, i) {
   let a = e.to({
       output: [t, n]
     }),
-    o = i ? [b, b, I, I] : [b, O, O, I],
-    l = i ? [y, y, T, T] : [y, v, v, T];
+    o = i ? [E, E, v, v] : [E, y, y, v],
+    l = i ? [b, b, I, I] : [b, O, O, I];
   return (0, r.jsxs)("svg", {
     viewBox: "0 0 20 20",
     fill: "none",
@@ -90,61 +89,61 @@ function S(e, t, n, i) {
   })
 }
 
-function A(e) {
+function S(e) {
   let {
     id: t,
     onChange: n,
     checked: a,
-    disabled: p,
-    focusProps: m,
-    innerRef: b
+    disabled: _,
+    focusProps: h,
+    innerRef: E
   } = e, {
-    reducedMotion: y
-  } = i.useContext(u.S), O = i.useRef(null), [v, I] = i.useState(false), T = (0, f.d)(l.Z.colors.INTERACTIVE_MUTED).spring(), A = (0, f.d)(l.Z.colors.BG_BRAND).spring(), {
-    state: C,
-    opacity: N
-  } = (0, c.q)({
-    config: E,
-    opacity: p ? .5 : 1,
-    state: v ? a ? .7 : .3 : +!!a
+    reducedMotion: b
+  } = i.useContext(l.Sfi), y = i.useRef(null), [O, v] = i.useState(false), I = (0, d.d)(c.Z.colors.INTERACTIVE_MUTED).spring(), S = (0, d.d)(c.Z.colors.BG_BRAND).spring(), {
+    state: A,
+    opacity: C
+  } = (0, u.q)({
+    config: g,
+    opacity: _ ? .5 : 1,
+    state: O ? a ? .7 : .3 : +!!a
   }, "animate-always");
 
+  function N(e) {
+    v(false), null == n || n(e.currentTarget.checked, e)
+  }
+
   function R(e) {
-    I(false), null == n || n(e.currentTarget.checked, e)
+    _ || e.repeat || (" " === e.key || "Enter" === e.key) && v(true)
   }
 
   function P(e) {
-    p || e.repeat || (" " === e.key || "Enter" === e.key) && I(true)
-  }
-
-  function w(e) {
     var t;
-    p || !v || e.repeat || (I(false), "Enter" === e.key && (null == (t = O.current) || t.click()))
+    _ || !O || e.repeat || (v(false), "Enter" === e.key && (null == (t = y.current) || t.click()))
   }
-  return (0, r.jsx)(d.t, g(h({}, m), {
+  return (0, r.jsx)(l.tEY, m(p({}, h), {
     within: true,
     offset: false,
     children: (0, r.jsxs)(s.animated.div, {
       "data-toggleable-component": "switch",
-      className: o()(_.container, {
-        [_.checked]: a,
-        [_.disabled]: p
+      className: o()(f.container, {
+        [f.checked]: a,
+        [f.disabled]: _
       }),
-      onMouseDown: () => !p && I(true),
-      onMouseUp: () => I(false),
-      onMouseLeave: () => I(false),
+      onMouseDown: () => !_ && v(true),
+      onMouseUp: () => v(false),
+      onMouseLeave: () => v(false),
       style: {
-        opacity: N,
-        backgroundColor: C.to({
-          output: [T, A]
+        opacity: C,
+        backgroundColor: A.to({
+          output: [I, S]
         })
       },
       children: [(0, r.jsxs)(s.animated.svg, {
-        className: _.slider,
+        className: f.slider,
         viewBox: "0 0 28 20",
         preserveAspectRatio: "xMinYMid meet",
         style: {
-          left: C.to({
+          left: A.to({
             range: [0, .3, .7, 1],
             output: [false, 1, 8, 12]
           })
@@ -152,37 +151,37 @@ function A(e) {
         "aria-hidden": true,
         children: [(0, r.jsx)(s.animated.rect, {
           fill: "white",
-          x: C.to({
+          x: A.to({
             range: [0, .3, .7, 1],
             output: [4, 0, 0, 4]
           }),
-          y: C.to({
+          y: A.to({
             range: [0, .3, .7, 1],
             output: [0, 1, 1, 0]
           }),
-          height: C.to({
+          height: A.to({
             range: [0, .3, .7, 1],
             output: [20, 18, 18, 20]
           }),
-          width: C.to({
+          width: A.to({
             range: [0, .3, .7, 1],
             output: [20, 28, 28, 20]
           }),
           rx: "10"
-        }), S(C, T, A, y.enabled)]
+        }), T(A, I, S, b.enabled)]
       }), (0, r.jsx)("input", {
         id: t,
         type: "checkbox",
         ref: e => {
-          O.current = e, null != b && (b.current = e)
+          y.current = e, null != E && (E.current = e)
         },
-        className: _.input,
-        tabIndex: p ? false : 0,
-        onKeyDown: P,
-        onKeyUp: w,
-        onChange: R,
+        className: f.input,
+        tabIndex: _ ? false : 0,
+        onKeyDown: R,
+        onKeyUp: P,
+        onChange: N,
         checked: a,
-        disabled: p
+        disabled: _
       })]
     })
   }))

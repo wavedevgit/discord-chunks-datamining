@@ -33,21 +33,21 @@ function h(e) {
   }));
   return h || m && !i ? (0, r.jsxs)(d.Z.Overlay, {
     className: a()(p.container, n),
-    children: [h && (0, r.jsx)(o.xv, {
+    children: [h && (0, r.jsx)(o.xvT, {
       variant: "text-sm/semibold",
       color: "header-secondary",
       children: _.intl.string(_.t["oC/fU1"])
     }), m && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(o.xv, {
+      children: [(0, r.jsx)(o.xvT, {
         variant: "text-sm/semibold",
         color: "header-secondary",
         children: _.intl.string(_.t.HXz5Ag)
       }), (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(o.xv, {
+        children: [(0, r.jsx)(o.xvT, {
           variant: "text-sm/semibold",
           color: "header-secondary",
           children: "•"
-        }), (0, r.jsx)(o.xv, {
+        }), (0, r.jsx)(o.xvT, {
           variant: "text-sm/semibold",
           color: "header-secondary",
           children: _.intl.format(_.t.PrtAq6, {

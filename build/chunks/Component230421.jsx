@@ -45,7 +45,6 @@ function m(e) {
     body: _,
     onRequestClose: () => m(d.L.DISMISS),
     caretConfig: {
-      position: "top",
       align: "center"
     },
     actions: [{

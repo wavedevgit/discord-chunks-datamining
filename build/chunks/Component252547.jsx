@@ -22,12 +22,12 @@ function p(e) {
     onClose: p
   } = e, f = t.length > 7, [g, j] = i.useState(false), x = i.useMemo(() => t.slice(0, f && !g ? 6 : true), [t, f, g]);
   return (0, n.jsxs)("div", {
-    children: [(0, n.jsx)(s.X6, {
+    children: [(0, n.jsx)(s.X6q, {
       className: d.sectionHeader,
       variant: "text-md/semibold",
       color: "header-primary",
       children: u.intl.string(u.t.ak8OHh)
-    }), 0 === t.length ? (0, n.jsx)(s.xv, {
+    }), 0 === t.length ? (0, n.jsx)(s.xvT, {
       variant: "text-xs/semibold",
       color: "text-primary",
       className: m.emptyState,
@@ -49,7 +49,7 @@ function p(e) {
       }), f && !g && (0, n.jsxs)(o.P3F, {
         className: m.expandEntriesButton,
         onClick: () => j(true),
-        children: [(0, n.jsx)(s.xv, {
+        children: [(0, n.jsx)(s.xvT, {
           variant: "text-xs/semibold",
           color: "interactive-normal",
           children: u.intl.string(u.t.yohc6O)

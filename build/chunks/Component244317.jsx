@@ -7,7 +7,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk772848 = require("./772848.js"),
   Chunk873546 = require("./873546.js"),
-  Chunk680018 = require("./680018.jsx"),
+  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk626135 = require("./626135.js"),
   Chunk358085 = require("./358085.js"),
@@ -58,7 +58,7 @@ function m(e) {
     }), (0, r.jsx)(s.Text, {
       variant: "text-xs/semibold",
       children: h.intl.string(h.t["m1+IBg"])
-    }), (0, r.jsx)(o.z, {
+    }), (0, r.jsx)(o.zxk, {
       variant: "primary",
       text: h.intl.string(h.t.fIv16O),
       onClick: () => b(true)

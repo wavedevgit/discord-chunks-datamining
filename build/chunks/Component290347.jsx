@@ -8,8 +8,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
-  Chunk146187 = require("./146187.jsx"),
   Chunk304789 = require("./304789.jsx"),
+  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
   Chunk446411 = require("./446411.jsx"),
@@ -191,11 +191,11 @@ function x(e) {
     transitionState: B,
     "aria-labelledby": V,
     parentComponent: "PremiumAnnouncementModalVariant1",
-    children: (0, r.jsxs)(c.$, {
+    children: (0, r.jsxs)(s.$, {
       color: "nitro-pink",
       children: [(0, r.jsx)("div", {
         className: C.closeButtonContainer,
-        children: (0, r.jsx)(s.P, {
+        children: (0, r.jsx)(c.PZ7, {
           "data-migration-pending": true,
           onClick: async () => await G()
         })

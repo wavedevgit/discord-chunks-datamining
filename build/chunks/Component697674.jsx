@@ -16,10 +16,10 @@ let a = e => {
     className: l.footer,
     children: [null != n && (0, r.jsx)("div", {
       children: n
-    }), (0, r.jsx)(i.hE, {
+    }), (0, r.jsx)(i.hE2, {
       className: l.buttonGroup,
       justify: "end",
-      children: t.map((e, t) => (0, r.jsx)(i.zx, function(e) {
+      children: t.map((e, t) => (0, r.jsx)(i.zxk, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);

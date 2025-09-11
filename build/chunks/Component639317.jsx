@@ -10,7 +10,7 @@ var i, Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk58654 = require("./58654.js"),
-  Chunk84735 = require("./84735.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk154257 = require("./154257.js");
 
 function f(e, t, n) {
@@ -106,7 +106,7 @@ class y extends(i = Chunk647438.PureComponent) {
     r.setAttribute("style", Chunk58654 + ";" + E), r.value = Chunk951288, null != i ? r.setAttribute("rows", "".concat(i)) : r.removeAttribute("rows");
     let u = r.scrollHeight;
     "border-box" === l ? u += Chunk120356 : "content-box" === l && (u -= Chunk647438), this.setState({
-      height: Chunk84735
+      height: Chunk793030
     })
   }
   calculateNodeStyling(e) {
@@ -161,7 +161,7 @@ class y extends(i = Chunk647438.PureComponent) {
       i = m(module, ["style", "className", "onResize"]);
     delete i.fontWidthEstimate;
     let o = _({}, this.state, exports);
-    return (0, Chunk951288.jsx)(Chunk84735.t, {
+    return (0, Chunk951288.jsx)(Chunk793030.tEY, {
       children: (0, Chunk951288.jsx)("textarea", h(_({}, i), {
         className: l()(require, Chunk154257.scrollbarGhostHairline),
         ref: this.handleSetRef,

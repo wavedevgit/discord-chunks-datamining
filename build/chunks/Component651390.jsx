@@ -20,7 +20,7 @@ function d(e) {
   return (0, r.jsxs)(a.P3F, {
     onClick: n,
     className: c.previewButton,
-    children: [(0, r.jsx)(l.xv, {
+    children: [(0, r.jsx)(l.xvT, {
       tag: "span",
       variant: "text-sm/semibold",
       color: "text-brand",

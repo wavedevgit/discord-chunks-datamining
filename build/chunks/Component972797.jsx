@@ -42,7 +42,7 @@ function u(A) {
           color: "text-default",
           children: a ? d.intl.string(d.t["0r6pbG"]) : d.intl.string(d.t["8MMHYG"])
         })]
-      }), (0, n.jsx)(i.zx, {
+      }), (0, n.jsx)(i.zxk, {
         text: a ? d.intl.string(d.t.DlJOvr) : d.intl.string(d.t.X7YGXF),
         icon: a ? o.kZF : o.T$Z,
         iconPosition: "end",

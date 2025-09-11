@@ -30,7 +30,7 @@ function m(e) {
       }) : u.intl.string(u.t.FGzLkJ)
     }), (0, r.jsx)(a.LZC, {
       size: 16
-    }), (0, r.jsx)(l.zx, {
+    }), (0, r.jsx)(l.zxk, {
       text: null != h ? u.intl.string(u.t["/Fjq5O"]) : u.intl.string(u.t["6ih+b2"]),
       variant: null != h ? "secondary" : "primary",
       onClick: () => {

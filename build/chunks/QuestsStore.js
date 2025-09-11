@@ -16,7 +16,7 @@ var S, Chunk392711 = require("./392711.js"),
   Chunk5881 = require("./5881.js"),
   Chunk46140 = require("./46140.js");
 
-function M(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,14 +25,14 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      M(e, t, n[t])
+      k(e, t, n[t])
     })
   }
   return e
@@ -59,7 +59,7 @@ let B = new Map,
   F = 1e3;
 
 function V() {
-  r = false, i = false, a = false, o = new Map, s = new Map, l = new Map, c = 0, u = 0, d = new Set, f = new Set, _ = new Set, p = new Set, h = new Set, B = new Map, g = new Map, E = new Map, b = new Map, y = null, O = new Map, m = new Set, v = new Map, I = new Map, eM(), T = null
+  r = false, i = false, a = false, o = new Map, s = new Map, l = new Map, c = 0, u = 0, d = new Set, f = new Set, _ = new Set, p = new Set, h = new Set, B = new Map, g = new Map, E = new Map, b = new Map, y = null, O = new Map, m = new Set, v = new Map, I = new Map, ek(), T = null
 }
 
 function H(e, t) {
@@ -71,7 +71,7 @@ function H(e, t) {
 function Y(e, t) {
   let n = (o = new Map(o)).get(e);
   if (null != n) {
-    let r = k({}, n, t);
+    let r = M({}, n, t);
     H(e, t), o.set(e, r)
   }
 }
@@ -86,7 +86,7 @@ function K(e, t) {
   let n = o.get(e),
     r = null == n ? true : n.userStatus;
   null != r && null == r.claimedAt && Y(e, {
-    userStatus: G(k({}, r), {
+    userStatus: G(M({}, r), {
       claimedAt: t.claimedAt
     })
   })
@@ -111,7 +111,7 @@ function q(e, t) {
       entitlements: t
     });
     null != n && W(e, n), Y(e, {
-      userStatus: G(k({}, i), {
+      userStatus: G(M({}, i), {
         claimedAt: t.claimedAt,
         claimedTier: null != (a = null == n ? true : n.tier) ? a : null
       })
@@ -124,7 +124,7 @@ function X(e) {
 }
 
 function Q() {
-  eM(), V()
+  ek(), V()
 }
 
 function J() {
@@ -430,11 +430,11 @@ function ej() {
   }, F))
 }
 
-function eM() {
+function ek() {
   null !== Z && (clearInterval(Z), Z = null)
 }
 
-function ek(e) {
+function eM(e) {
   let {
     quest_enrollment_blocked_until: t
   } = e;
@@ -521,7 +521,7 @@ class eU extends(S = Chunk442837.ZP.Store) {
     return null != (t = I.get(e)) && t
   }
 }
-M(eU, "displayName", "QuestsStore");
+k(eU, "displayName", "QuestsStore");
 let eG = new eU(Chunk570140.Z, {
     LOGOUT: Q,
     QUESTS_FETCH_CURRENT_QUESTS_BEGIN: J,
@@ -558,6 +558,6 @@ let eG = new eU(Chunk570140.Z, {
     QUESTS_SELECT_TASK_PLATFORM: eR,
     QUESTS_UPDATE_OPTIMISTIC_PROGRESS: eP,
     QUESTS_RESET_OPTIMISTIC_PROGRESS: ew,
-    QUESTS_USER_COMPLETION_UPDATE: ek
+    QUESTS_USER_COMPLETION_UPDATE: eM
   }),
   eB = eG

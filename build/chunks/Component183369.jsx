@@ -56,8 +56,8 @@ function b(e) {
       var e;
       if (null != L) return Object.values(null != (e = null == E ? true : E.catalog) ? e : {}).find(e => e.id === L)
     }, [null == E ? true : E.catalog, L]),
-    [H, X] = r.useState(),
-    [q, Q] = r.useState(null != (h = null == N ? true : N.name) ? h : ""),
+    [q, H] = r.useState(),
+    [X, Q] = r.useState(null != (h = null == N ? true : N.name) ? h : ""),
     [Y, $] = r.useState(null != (_ = null == N ? true : N.location) ? _ : ""),
     [J, ee] = r.useState(false),
     en = r.useCallback(() => {
@@ -72,14 +72,14 @@ function b(e) {
           ee(e)
         },
         onSubscribeComplete: () => {
-          (0, m.NE)(I.id, A, q, Y).then(() => {
+          (0, m.NE)(I.id, A, X, Y).then(() => {
             k(), (0, f.Z)(I.id, U)
           })
         }
-      }) : (0, m.NE)(I.id, A, q, Y).then(() => {
+      }) : (0, m.NE)(I.id, A, X, Y).then(() => {
         k(), (0, f.Z)(I.id, U)
       }))
-    }, [Z, I, B, A, T, U, V, q, Y, k]),
+    }, [Z, I, B, A, T, U, V, X, Y, k]),
     et = r.useCallback(e => {
       switch (e.type) {
         case "close":
@@ -112,14 +112,14 @@ function b(e) {
       setCurrentGame: W,
       portkeyInstance: V,
       setPortkeyInstance: K,
-      name: q,
+      name: X,
       setName: Q,
       location: Y,
       setLocation: $,
       planId: A,
       setPlanId: F,
-      footerNode: H,
-      setFooterNode: X,
+      footerNode: q,
+      setFooterNode: H,
       availableBoostCount: B
     },
     children: w

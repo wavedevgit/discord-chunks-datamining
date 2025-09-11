@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk21340 = require("./21340.js"),
   Chunk417153 = require("./417153.js"),
   Chunk981729 = require("./981729.jsx"),
-  Chunk861066 = require("./861066.jsx"),
+  Chunk159691 = require("./159691.js"),
   Chunk972959 = require("./972959.js"),
   Chunk665149 = require("./665149.jsx"),
   Chunk606669 = require("./606669.jsx"),
@@ -108,7 +108,7 @@ function L() {
     align: "center",
     animation: Chunk235874.y.Animation.SCALE,
     onRequestClose: () => {},
-    children: t => (0, r.jsx)(h.h, w(R({
+    children: t => (0, r.jsx)(h.hU, w(R({
       size: "sm",
       icon: a.ewm,
       "aria-label": "Settings",
@@ -198,7 +198,7 @@ function j(e) {
               children: "Docs"
             })
           })]
-        }) : null, null != E ? (0, r.jsx)(h.h, {
+        }) : null, null != E ? (0, r.jsx)(h.hU, {
           size: "sm",
           "aria-label": "Copy Link",
           variant: "icon-only",

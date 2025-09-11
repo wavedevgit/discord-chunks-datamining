@@ -34,7 +34,7 @@ function x() {
     value: module,
     children: (0, Chunk951288.jsxs)("main", {
       className: Chunk884329.container,
-      children: [(0, Chunk951288.jsx)(Chunk793030.X6, {
+      children: [(0, Chunk951288.jsx)(Chunk793030.X6q, {
         variant: "heading-lg/semibold",
         color: "header-primary",
         children: Chunk388032.intl.string(Chunk388032.t.UKgg5O)

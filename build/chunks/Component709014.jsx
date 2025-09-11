@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   o = require.n(Chunk120356),
   Chunk906280 = require("./906280.js"),
   l = require.n(Chunk906280),
-  Chunk186325 = require("./186325.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk390507 = require("./390507.js"),
   Chunk679400 = require("./679400.js"),
   Chunk493773 = require("./493773.js"),
@@ -55,7 +55,7 @@ function g(e, t) {
   } = e, [S, A] = i.useState(null), C = i.useRef(null), N = i.useRef(null), R = i.useRef(null), P = "custom" === g ? {
     width: E,
     height: b
-  } : (0, u.m)(g), w = !(0, _.Z)("lottie_hover_multiple_loop"), D = i.useContext(c.S).reducedMotion.enabled, {
+  } : (0, u.m)(g), w = !(0, _.Z)("lottie_hover_multiple_loop"), D = i.useContext(c.Sfi).reducedMotion.enabled, {
     enabled: x
   } = d.Z.useExperiment({
     location: "LottieIcon web entry point"

@@ -26,14 +26,14 @@ function h(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: o,
-    children: [(0, r.jsxs)(a.X6, {
+    children: [(0, r.jsxs)(a.X6q, {
       variant: "heading-md/semibold",
       className: m.selectorHeading,
       children: [f.intl.string(p.default["1wilMz"]), (0, r.jsx)(i.SrA, {
         size: "xs",
         color: i.TVs.colors.TEXT_DEFAULT
       })]
-    }), (0, r.jsx)(a.Kq, {
+    }), (0, r.jsx)(a.Kqy, {
       direction: "horizontal",
       align: "center",
       wrap: true,

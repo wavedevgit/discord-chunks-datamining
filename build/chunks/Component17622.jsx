@@ -28,7 +28,7 @@ function u(e) {
         children: [(0, n.jsx)(t, {
           color: "currentColor",
           className: a()(l.perkIcon, o)
-        }), (0, n.jsx)(c.xv, {
+        }), (0, n.jsx)(c.xvT, {
           className: l.perkText,
           color: "text-default",
           variant: "text-sm/medium",

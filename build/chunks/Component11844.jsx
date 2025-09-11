@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk179538 = require("./179538.jsx"),
+  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk975298 = require("./975298.js"),
@@ -108,7 +108,7 @@ let b = function() {
             i = (0, o.qgQ)(e),
             s = (0, r.jsx)("div", {
               className: p.cta,
-              children: (0, r.jsx)(a.A, {
+              children: (0, r.jsx)(a.Avr, {
                 variant: "primary",
                 onClick: n ? true : b,
                 text: i,

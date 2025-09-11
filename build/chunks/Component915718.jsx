@@ -110,7 +110,6 @@ class R extends Chunk647438.PureComponent {
             position: "bottom",
             align: "center",
             caretConfig: {
-              position: "top",
               align: "center"
             },
             onRequestClose: () => n(T.L.USER_DISMISS)

@@ -2,7 +2,7 @@
 /** chunk id: 746106, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  w: () => S
+  w: () => A
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,36 +25,37 @@ var Chunk951288 = require("./951288.js"),
   Chunk451478 = require("./451478.js"),
   Chunk998502 = require("./998502.js"),
   Chunk264783 = require("./264783.js"),
-  Chunk892071 = require("./892071.jsx");
+  Chunk892071 = require("./892071.jsx"),
+  Chunk388032 = require("./388032.jsx");
 
-function S(e) {
+function A(e) {
   let {
     windowKey: t,
     themeOverride: n,
     children: a
-  } = e, S = null != t, [A] = i.useState(() => v.ZP.getEnableHardwareAcceleration()), {
-    locale: C,
-    theme: N,
-    focused: R,
-    currentWindow: P,
-    fontScale: w,
-    fontScaleClass: D,
-    keyboardModeEnabled: x,
-    saturation: L,
-    desaturateUserColors: j,
+  } = e, A = null != t, [C] = i.useState(() => v.ZP.getEnableHardwareAcceleration()), {
+    locale: N,
+    theme: R,
+    focused: P,
+    currentWindow: w,
+    fontScale: D,
+    fontScaleClass: x,
+    keyboardModeEnabled: L,
+    saturation: j,
+    desaturateUserColors: k,
     useForcedColors: M,
-    systemForcedColors: k,
-    useReducedMotion: U,
-    alwaysShowLinkDecorations: G,
-    confettiMode: B,
-    highContrastMode: Z
+    systemForcedColors: U,
+    useReducedMotion: G,
+    alwaysShowLinkDecorations: B,
+    confettiMode: Z,
+    highContrastMode: F
   } = (0, s.cj)([b.default, c.Z, y.Z, O.Z, m.Z, g.Z], () => {
     var e;
     return {
       locale: b.default.locale,
       theme: null != n ? n : y.Z.theme,
-      focused: S ? m.Z.getWindowFocused(t) : O.Z.isFocused(),
-      currentWindow: S && null != (e = m.Z.getWindow(t)) ? e : window,
+      focused: A ? m.Z.getWindowFocused(t) : O.Z.isFocused(),
+      currentWindow: A && null != (e = m.Z.getWindow(t)) ? e : window,
       fontScale: c.Z.fontScale,
       fontScaleClass: c.Z.fontScaleClass,
       keyboardModeEnabled: c.Z.keyboardModeEnabled,
@@ -67,59 +68,74 @@ function S(e) {
       highContrastMode: c.Z.isHighContrastModeEnabled,
       confettiMode: g.Z.confettiMode
     }
-  }), F = u.U.useExperiment({
+  }), V = u.U.useExperiment({
     location: "RootThemeContextProvider"
   }, {
     autoTrackExposure: true
-  }).enabled, V = (0, p.Z)(P, __OVERLAY__ || R), H = 0;
-  1 !== L && (H = (0, l.OdO)(H, l.bgu.REDUCE_SATURATION_ENABLED));
-  let Y = (0, I.A)(),
-    W = (0, h.Ml)("RootThemeContextProvider"),
-    K = (0, h.CL)("RootThemeContextProvider"),
-    z = (0, h.VM)("RootThemeContextProvider"),
-    q = f.Mc.useExperiment({
+  }).enabled, H = (0, p.Z)(w, __OVERLAY__ || P), Y = 0;
+  1 !== j && (Y = (0, l.OdO)(Y, l.bgu.REDUCE_SATURATION_ENABLED));
+  let W = (0, I.A)(),
+    K = (0, h.Ml)("RootThemeContextProvider"),
+    z = (0, h.CL)("RootThemeContextProvider"),
+    q = (0, h.VM)("RootThemeContextProvider"),
+    X = f.Mc.useExperiment({
       location: "RootThemeContextProvider"
     }).enabled,
-    X = (0, d.Z)("RootThemeContextProvider"),
-    Q = (0, E.$)({
+    Q = (0, d.Z)("RootThemeContextProvider"),
+    J = (0, E.$)({
       location: "RootThemeContextProvider"
     }),
-    J = (0, _.On)({
-      isPopoutWindow: S,
-      isSearchDesktopTopLevelEnabled: Q
-    });
-  return (0, r.jsx)(l.wMY, {
-    theme: N,
-    flags: H,
-    saturation: L,
-    density: Y,
-    children: (0, r.jsx)(T.cE, {
-      lang: C,
-      theme: N,
-      density: Y,
-      focused: R,
-      fontScale: w,
-      fontScaleClass: D,
-      keyboardModeEnabled: x,
-      mouseMode: V,
-      saturation: L,
-      desaturateUserColors: j,
-      useForcedColors: M,
-      systemForcedColors: k,
-      useReducedMotion: U,
-      alwaysShowLinkDecorations: G,
-      hardwareAccelerationEnabled: A,
-      highContrastMode: F && Z,
-      isPopoutWindow: S,
-      rootClassName: o()(J, {
-        "confetti-mode": B,
-        "refresh-fast-follow-avatars": W && !X,
-        "refresh-fast-follow-guild-bg": K,
-        "refresh-fast-follow-distinct-borders": z,
-        "client-theme-color-picker": q,
-        "align-chat-input": X
-      }),
-      children: a
+    $ = (0, _.On)({
+      isPopoutWindow: A,
+      isSearchDesktopTopLevelEnabled: J
+    }),
+    ee = i.useMemo(() => ({
+      i18n: {
+        SPINNER_LOADING_LABEL: S.intl.string(S.t.ZTNur6),
+        BUTTON_LOADING_STARTED_LABEL: S.intl.string(S.t.pfChQk),
+        BUTTON_LOADING_FINISHED_LABEL: S.intl.string(S.t.SVPara),
+        CLOSE_BUTTON_LABEL: S.intl.string(S.t.cpT0Cg),
+        PLAY_BUTTON_LABEL: S.intl.string(S.t.RscU7O),
+        PAUSE_BUTTON_LABEL: S.intl.string(S.t.ZcgDJS)
+      },
+      theme: R,
+      saturation: j
+    }), [R, j]);
+  return (0, r.jsx)(l.kb5, {
+    value: ee,
+    children: (0, r.jsx)(l.wMY, {
+      theme: R,
+      flags: Y,
+      saturation: j,
+      density: W,
+      children: (0, r.jsx)(T.cE, {
+        lang: N,
+        theme: R,
+        density: W,
+        focused: P,
+        fontScale: D,
+        fontScaleClass: x,
+        keyboardModeEnabled: L,
+        mouseMode: H,
+        saturation: j,
+        desaturateUserColors: k,
+        useForcedColors: M,
+        systemForcedColors: U,
+        useReducedMotion: G,
+        alwaysShowLinkDecorations: B,
+        hardwareAccelerationEnabled: C,
+        highContrastMode: V && F,
+        isPopoutWindow: A,
+        rootClassName: o()($, {
+          "confetti-mode": Z,
+          "refresh-fast-follow-avatars": K && !Q,
+          "refresh-fast-follow-guild-bg": z,
+          "refresh-fast-follow-distinct-borders": q,
+          "client-theme-color-picker": X,
+          "align-chat-input": Q
+        }),
+        children: a
+      })
     })
   })
 }

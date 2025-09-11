@@ -79,7 +79,7 @@ function B(e) {
     $ = null == J ? true : J.details,
     ee = i.useMemo(() => {
       let e = new T.ZP(I);
-      return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = M.wT), e
+      return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = k.wT), e
     }, [I]),
     et = (0, h.s5)({
       userId: W,
@@ -192,7 +192,7 @@ function B(e) {
     onClickContent: el,
     trackingConfig: {
       id: I.id,
-      linkType: k.U.ACTIVITY_INSTANCE,
+      linkType: M.U.ACTIVITY_INSTANCE,
       guildId: x,
       channelId: w,
       messageId: B.id

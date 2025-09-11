@@ -2,11 +2,6 @@
 /** chunk id: 846488, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  e: () => a
+  Z: () => r
 });
-var Chunk442837 = require("./442837.js"),
-  Chunk236289 = require("./236289.js");
-
-function a() {
-  return (0, Chunk442837.e7)([Chunk236289.Z], () => Chunk236289.Z.isInitialized())
-}
+let r = "https://cdn.discordapp.com/assets/content/76b6239d8631db63ae8ddfae2959791fe02bcc550c376cb35d77ef9df1a62ee5.webm"

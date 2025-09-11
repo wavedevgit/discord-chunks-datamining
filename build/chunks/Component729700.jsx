@@ -32,7 +32,6 @@ let h = e => {
     align: "top",
     size: "md",
     caretConfig: {
-      position: "left",
       align: "start"
     },
     title: t.title(),

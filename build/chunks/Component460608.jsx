@@ -45,7 +45,7 @@ function x(e) {
   return (i.useEffect(() => {
     C !== n.length && (0, a.C0)(t)
   }, [t, C, n.length]), 0 === x.length) ? null : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(s.X6, {
+    children: [(0, r.jsx)(s.X6q, {
       className: _.header,
       variant: "eyebrow",
       color: "text-secondary",

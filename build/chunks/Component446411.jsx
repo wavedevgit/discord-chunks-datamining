@@ -9,7 +9,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
-  Chunk228458 = require("./228458.js"),
+  Chunk892814 = require("./892814.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
   Chunk399654 = require("./399654.js"),
@@ -128,7 +128,7 @@ function er(e) {
     href: D,
     placeholder: x,
     placeholderVersion: j,
-    sourceMetadata: k
+    sourceMetadata: M
   } = e, [U, B] = a.useState(b), Z = null != d && null == d.proxyURL, V = a.useCallback(() => B(false), [B]), H = e => {
     e.preventDefault(), e.stopPropagation(), null == I || I(false), B(true), Z && (w.S.dispatch(G.CkL.VIDEO_EMBED_PLAYBACK_STARTED), w.S.subscribeOnce(G.CkL.VIDEO_EMBED_PLAYBACK_STARTED, V))
   };
@@ -171,7 +171,7 @@ function er(e) {
       onMute: P,
       onControlsHide: A,
       onControlsShow: C,
-      sourceMetadata: k
+      sourceMetadata: M
     })
   });
   if (U && null != d) {
@@ -208,7 +208,7 @@ function er(e) {
       children: (0, i.jsx)("div", {
         className: s()(F.embedVideo, o),
         style: a,
-        children: (0, i.jsx)(M.ZP, {
+        children: (0, i.jsx)(k.ZP, {
           provider: f,
           src: d.url,
           style: e,
@@ -240,7 +240,7 @@ function er(e) {
       placeholder: x,
       placeholderVersion: j,
       onClick: E && null != d ? H : null,
-      sourceMetadata: k,
+      sourceMetadata: M,
       analyticsSource: "EmbedVideo"
     }), (0, i.jsx)("div", {
       className: F.embedVideoActions,
@@ -250,8 +250,8 @@ function er(e) {
           onPlay: null != d ? H : null,
           externalURL: D,
           renderLinkComponent: g,
-          messageId: null == k || null == (t = k.message) ? true : t.id,
-          channelId: null == k || null == (n = k.message) ? true : n.channel_id
+          messageId: null == M || null == (t = M.message) ? true : t.id,
+          channelId: null == M || null == (n = M.message) ? true : n.channel_id
         }) : null
       })
     })]
@@ -400,9 +400,9 @@ class ea extends(r = Chunk647438.PureComponent) {
       })
     }) : (0, Chunk951288.jsx)("div", {
       className: s()(Chunk781452.embedTitle, Chunk781452.embedMargin),
-      children: null != Chunk228458 ? require({
+      children: null != Chunk892814 ? require({
         className: Chunk781452.embedTitleLink,
-        href: Chunk228458,
+        href: Chunk892814,
         tabIndex: module ? 0 : false,
         children: r(exports, Chunk120356),
         target: "_blank",
@@ -527,7 +527,7 @@ class ea extends(r = Chunk647438.PureComponent) {
     return null == Chunk481060 && null == Chunk607070 && null == Chunk399654 && null == Chunk370298 ? null : (0, Chunk951288.jsxs)("div", {
       className: Chunk781452.embedGalleryImagesWrapper,
       style: {
-        height: Chunk228458
+        height: Chunk892814
       },
       children: [(0, Chunk951288.jsxs)("div", {
         className: Chunk781452.embedGallerySide,
@@ -620,8 +620,8 @@ class ea extends(r = Chunk647438.PureComponent) {
       maxMediaHeight: m,
       sourceMetadata: b
     } = this.state;
-    if (null == Chunk228458) return null;
-    let y = (0, Chunk52824.q)(Chunk228458),
+    if (null == Chunk892814) return null;
+    let y = (0, Chunk52824.q)(Chunk892814),
       {
         srcToOnClickOverride: v,
         srcToHandlePreloadImage: I
@@ -633,10 +633,10 @@ class ea extends(r = Chunk647438.PureComponent) {
         srcIsAnimated: e.srcIsAnimated
       })), {}, "Embed"),
       T = Chunk124347.ZP.isAnimated({
-        src: (0, Chunk52824.q)(Chunk228458),
-        original: Chunk228458.url,
+        src: (0, Chunk52824.q)(Chunk892814),
+        original: Chunk892814.url,
         animated: false,
-        srcIsAnimated: Chunk228458.srcIsAnimated
+        srcIsAnimated: Chunk892814.srcIsAnimated
       }),
       A = {
         containerClassName: s()(Chunk635477, {
@@ -646,27 +646,27 @@ class ea extends(r = Chunk647438.PureComponent) {
         }),
         imageContainerClassName: Chunk481060 ? Chunk781452.galleryImageContainer : true,
         imageClassName: Chunk481060 ? Chunk781452.embedGalleryImageElement : true,
-        src: (0, Chunk52824.q)(Chunk228458),
-        alt: null == Chunk228458.description || "" === Chunk228458.description ? Chunk607070 : Chunk228458.description,
+        src: (0, Chunk52824.q)(Chunk892814),
+        alt: null == Chunk892814.description || "" === Chunk892814.description ? Chunk607070 : Chunk892814.description,
         responsive: true,
         limitResponsiveWidth: !Chunk481060,
-        width: Chunk228458.width,
-        height: Chunk228458.height,
+        width: Chunk892814.width,
+        height: Chunk892814.height,
         maxWidth: Chunk95398,
         maxHeight: Chunk936141,
-        original: Chunk228458.url,
+        original: Chunk892814.url,
         shouldLink: Chunk120356,
-        disableAltTextDisplay: null == Chunk228458.description || "" === Chunk228458.description,
+        disableAltTextDisplay: null == Chunk892814.description || "" === Chunk892814.description,
         hiddenSpoilers: Chunk647438,
-        placeholder: Chunk228458.placeholder,
-        placeholderVersion: Chunk228458.placeholderVersion,
-        srcIsAnimated: Chunk228458.srcIsAnimated,
+        placeholder: Chunk892814.placeholder,
+        placeholderVersion: Chunk892814.placeholderVersion,
+        srcIsAnimated: Chunk892814.srcIsAnimated,
         mosaicStyleAlt: true
       },
-      C = null != (r = null == (e = Chunk228458.url.split(".").pop()) ? true : module.split("?")[0]) ? r : "";
+      C = null != (r = null == (e = Chunk892814.url.split(".").pop()) ? true : module.split("?")[0]) ? r : "";
     "jpg" === Chunk400266 && (C = "jpeg");
-    let N = null != Chunk228458 && !Chunk124347.uo.test(null == Chunk228458 ? true : Chunk228458.url) && !(Chunk228458.srcIsAnimated && Chunk124347.YG.test(null == Chunk228458 ? true : Chunk228458.url)) && !(Chunk228458.srcIsAnimated && Chunk124347.FH.test(null == Chunk228458 ? true : Chunk228458.url)),
-      P = true !== this.props.isSearchResult && Chunk120356 && (null == (t = this.props.message) ? true : exports.channel_id) != null && (null == (n = this.props.message) ? true : require.channel_id) !== true && Chunk592125 && !eo(Chunk228458) && null != Chunk400266;
+    let N = null != Chunk892814 && !Chunk124347.uo.test(null == Chunk892814 ? true : Chunk892814.url) && !(Chunk892814.srcIsAnimated && Chunk124347.YG.test(null == Chunk892814 ? true : Chunk892814.url)) && !(Chunk892814.srcIsAnimated && Chunk124347.FH.test(null == Chunk892814 ? true : Chunk892814.url)),
+      P = true !== this.props.isSearchResult && Chunk120356 && (null == (t = this.props.message) ? true : exports.channel_id) != null && (null == (n = this.props.message) ? true : require.channel_id) !== true && Chunk592125 && !eo(Chunk892814) && null != Chunk400266;
     return (0, Chunk951288.jsx)(Chunk947849.h.Consumer, {
       children: e => (0, i.jsx)(U.G.Consumer, {
         children: t => {
@@ -765,7 +765,7 @@ class ea extends(r = Chunk647438.PureComponent) {
       maxHeight: Chunk95398,
       responsive: true,
       renderImageComponent: Chunk481060,
-      renderVideoComponent: Chunk228458,
+      renderVideoComponent: Chunk892814,
       renderLinkComponent: Chunk607070,
       onControlsShow: Chunk947849,
       onControlsHide: Chunk768494,
@@ -829,7 +829,7 @@ class ea extends(r = Chunk647438.PureComponent) {
       readyState: Chunk981631.zo9.READY,
       src: "",
       width: s,
-      height: Chunk228458,
+      height: Chunk892814,
       maxWidth: r,
       maxHeight: Chunk647438,
       mediaLayoutType: Chunk217702.hV.STATIC,
@@ -901,7 +901,7 @@ class ea extends(r = Chunk647438.PureComponent) {
       title: s,
       description: module,
       thumbnail: !r && Chunk607070 ? this.renderThumbnail(Chunk951288) : null,
-      fields: Chunk228458,
+      fields: Chunk892814,
       media: exports,
       footer: Chunk481060
     }

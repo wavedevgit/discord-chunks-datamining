@@ -5,45 +5,45 @@ require.d(exports, {
   i: () => z,
   x: () => W
 });
-var Chunk771356 = require("./771356.js"),
-  Chunk640490 = require("./640490.js"),
-  Chunk578895 = require("./578895.js"),
-  Chunk243125 = require("./243125.js"),
-  Chunk89222 = require("./89222.js"),
-  Chunk51016 = require("./51016.js"),
-  Chunk629928 = require("./629928.js"),
-  Chunk163033 = require("./163033.js"),
-  Chunk466790 = require("./466790.js"),
-  Chunk166660 = require("./166660.js"),
-  Chunk415345 = require("./415345.js"),
-  Chunk962770 = require("./962770.js"),
-  Chunk909139 = require("./909139.js"),
-  Chunk815291 = require("./815291.js"),
-  Chunk760427 = require("./760427.js"),
-  Chunk761491 = require("./761491.js"),
-  Chunk480586 = require("./480586.js"),
-  Chunk957450 = require("./957450.js"),
-  Chunk251315 = require("./251315.js"),
-  Chunk830443 = require("./830443.js"),
-  Chunk936643 = require("./936643.js"),
-  Chunk357826 = require("./357826.js"),
-  Chunk486527 = require("./486527.js"),
+var Chunk484357 = require("./484357.js"),
+  Chunk323537 = require("./323537.js"),
+  Chunk780847 = require("./780847.js"),
+  Chunk740069 = require("./740069.js"),
+  Chunk407152 = require("./407152.js"),
+  Chunk106158 = require("./106158.js"),
+  Chunk400211 = require("./400211.js"),
+  Chunk137237 = require("./137237.js"),
+  Chunk598347 = require("./598347.js"),
+  Chunk67112 = require("./67112.js"),
+  Chunk417896 = require("./417896.js"),
+  Chunk645586 = require("./645586.js"),
+  Chunk779870 = require("./779870.js"),
+  Chunk982225 = require("./982225.js"),
+  Chunk206395 = require("./206395.js"),
+  Chunk681066 = require("./681066.js"),
+  Chunk489644 = require("./489644.js"),
+  Chunk335106 = require("./335106.js"),
+  Chunk773031 = require("./773031.js"),
+  Chunk418892 = require("./418892.js"),
+  Chunk122023 = require("./122023.js"),
+  Chunk854852 = require("./854852.js"),
+  Chunk274678 = require("./274678.js"),
   Chunk696162 = require("./696162.js"),
-  Chunk711814 = require("./711814.js"),
-  Chunk149334 = require("./149334.js"),
-  Chunk409863 = require("./409863.js"),
-  Chunk357196 = require("./357196.js"),
-  Chunk183145 = require("./183145.js"),
-  Chunk691545 = require("./691545.js"),
-  Chunk58587 = require("./58587.js"),
-  Chunk912609 = require("./912609.js"),
-  Chunk565792 = require("./565792.js"),
-  Chunk583498 = require("./583498.js"),
-  Chunk442866 = require("./442866.js"),
-  Chunk263984 = require("./263984.js"),
-  Chunk591501 = require("./591501.js"),
-  Chunk595867 = require("./595867.js"),
-  Chunk345272 = require("./345272.js");
+  Chunk199411 = require("./199411.js"),
+  Chunk444410 = require("./444410.js"),
+  Chunk50273 = require("./50273.js"),
+  Chunk627203 = require("./627203.js"),
+  Chunk672906 = require("./672906.js"),
+  Chunk721407 = require("./721407.js"),
+  Chunk218191 = require("./218191.js"),
+  Chunk892756 = require("./892756.js"),
+  Chunk201622 = require("./201622.js"),
+  Chunk733967 = require("./733967.js"),
+  Chunk402747 = require("./402747.js"),
+  Chunk290687 = require("./290687.js"),
+  Chunk396752 = require("./396752.js"),
+  Chunk216932 = require("./216932.js"),
+  Chunk915579 = require("./915579.js");
 
 function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -86,123 +86,123 @@ function Y(e, t) {
 let W = {
     skye: {
       name: Chunk696162.default.tzvUKy,
-      iconURL: Chunk442866.Z,
+      iconURL: Chunk402747.Z,
       splashGradient: "radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(84.38% 468.75% at 15.63% 100%, rgba(242, 96, 195, 0.50) 0%, rgba(242, 96, 195, 0.00) 100%)",
       baseColor: "#380527",
       styleKey: "skye",
-      previewSoundURLs: [Chunk815291.Z]
+      previewSoundURLs: [Chunk982225.Z]
     },
     quinn: {
       name: Chunk696162.default.biQVNz,
-      iconURL: Chunk912609.Z,
+      iconURL: Chunk892756.Z,
       splashGradient: "radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(84.38% 468.75% at 15.63% 100%, #5F549D 0%, rgba(95, 84, 157, 0.00) 100%)",
       baseColor: "#1E1B32",
       styleKey: "quinn",
-      previewSoundURLs: [Chunk962770.Z]
+      previewSoundURLs: [Chunk645586.Z]
     },
     axel: {
       name: Chunk696162.default.VCZdnp,
-      iconURL: Chunk711814.Z,
+      iconURL: Chunk199411.Z,
       splashGradient: "radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(84.38% 468.75% at 15.63% 100%, rgba(40, 84, 54, 0.50) 0%, rgba(40, 84, 54, 0.00) 100%)",
       baseColor: "#14291B",
       styleKey: "axel",
-      previewSoundURLs: [Chunk771356.Z]
+      previewSoundURLs: [Chunk484357.Z]
     },
     sebastien: {
       name: Chunk696162.default.NmbfHx,
-      iconURL: Chunk583498.Z,
+      iconURL: Chunk733967.Z,
       splashGradient: "radial-gradient(9% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(100% 555.56% at 0% 100%, rgba(92, 119, 31, 0.50) 0%, rgba(92, 119, 31, 0.00) 100%)",
       baseColor: "#25300D",
       styleKey: "sebastien",
-      previewSoundURLs: [Chunk909139.Z]
+      previewSoundURLs: [Chunk779870.Z]
     },
     megaphone: {
       name: Chunk696162.default.fPU01d,
-      iconURL: Chunk58587.Z,
+      iconURL: Chunk218191.Z,
       splashGradient: "radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(84.38% 468.75% at 15.63% 100%, rgba(230, 90, 205, 0.50) 0%, rgba(230, 90, 205, 0.00) 100%)",
       baseColor: "#35082D",
       styleKey: "megaphone",
-      previewSoundURLs: [Chunk415345.Z]
+      previewSoundURLs: [Chunk417896.Z]
     },
     robot: {
       name: Chunk696162.default.anBE8f,
-      iconURL: Chunk565792.Z,
+      iconURL: Chunk201622.Z,
       splashGradient: "radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(84.38% 468.75% at 15.63% 100%, rgba(61, 72, 79, 0.50) 0%, rgba(61, 72, 79, 0.00) 100%)",
       baseColor: "#1B1F23",
       styleKey: "robot",
-      previewSoundURLs: [Chunk243125.Z]
+      previewSoundURLs: [Chunk740069.Z]
     },
     tunes: {
       name: Chunk696162.default.sem63N,
-      iconURL: Chunk595867.Z,
+      iconURL: Chunk216932.Z,
       splashGradient: "radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(100% 555.56% at 0% 100%, rgba(111, 134, 253, 0.50) 0%, rgba(111, 134, 253, 0.00) 100%)",
       baseColor: "#010A3C",
       styleKey: "tunes",
-      previewSoundURLs: [Chunk251315.Z]
+      previewSoundURLs: [Chunk773031.Z]
     },
     ghost: {
       name: Chunk696162.default.lFIyMz,
-      iconURL: Chunk357196.Z,
+      iconURL: Chunk627203.Z,
       splashGradient: "radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(84.38% 468.75% at 15.63% 100%, rgba(110, 73, 156, 0.50) 0%, rgba(110, 73, 156, 0.00) 100%)",
       baseColor: "#1D142A",
       styleKey: "ghost",
-      previewSoundURLs: [Chunk163033.Z]
+      previewSoundURLs: [Chunk137237.Z]
     },
     space_bunny: {
       name: Chunk696162.default["KN+v7+"],
-      iconURL: Chunk591501.Z,
+      iconURL: Chunk396752.Z,
       splashGradient: "radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(100% 555.56% at 0% 100%, rgba(110, 60, 223, 0.40) 0%, rgba(110, 60, 223, 0.00) 100%)",
       baseColor: "#160935",
       styleKey: "spacebunny",
-      previewSoundURLs: [Chunk761491.Z, Chunk480586.Z, Chunk957450.Z]
+      previewSoundURLs: [Chunk681066.Z, Chunk489644.Z, Chunk335106.Z]
     },
     justus: {
       name: Chunk696162.default.ZVrsKC,
-      iconURL: Chunk691545.Z,
+      iconURL: Chunk721407.Z,
       splashGradient: "radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(100% 555.56% at 0% 100%, rgba(5, 86, 248, 0.50) 0%, rgba(5, 86, 248, 0.00) 100%)",
       baseColor: "#01153C",
       styleKey: "justus",
-      previewSoundURLs: [Chunk166660.Z]
+      previewSoundURLs: [Chunk67112.Z]
     },
     harper: {
       name: Chunk696162.default.vIrxZW,
-      iconURL: Chunk183145.Z,
+      iconURL: Chunk672906.Z,
       splashGradient: "radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(84.38% 468.75% at 15.63% 100%, rgba(125, 87, 179, 0.50) 0%, rgba(125, 87, 179, 0.00) 100%)",
       baseColor: "#1D132A",
       styleKey: "harper",
-      previewSoundURLs: [Chunk466790.Z]
+      previewSoundURLs: [Chunk598347.Z]
     },
     villain: {
       name: Chunk696162.default.kHmvdn,
-      iconURL: Chunk345272.Z,
+      iconURL: Chunk915579.Z,
       splashGradient: "radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(100% 555.56% at 0% 100%, rgba(219, 2, 34, 0.50) 0%, rgba(219, 2, 34, 0.00) 100%)",
       baseColor: "#3D0109",
       styleKey: "villain",
-      previewSoundURLs: [Chunk830443.Z, Chunk936643.Z, Chunk357826.Z, Chunk486527.Z]
+      previewSoundURLs: [Chunk418892.Z, Chunk122023.Z, Chunk854852.Z, Chunk274678.Z]
     },
     solara: {
       name: Chunk696162.default.ndNi1t,
-      iconURL: Chunk263984.Z,
+      iconURL: Chunk290687.Z,
       splashGradient: "radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(84.38% 468.75% at 15.63% 100%, rgba(214, 155, 56, 0.50) 0%, rgba(214, 155, 56, 0.00) 100%)",
       baseColor: "#33240A",
       styleKey: "solara",
-      previewSoundURLs: [Chunk760427.Z]
+      previewSoundURLs: [Chunk206395.Z]
     },
     cave: {
       name: Chunk696162.default.Xypb39,
-      iconURL: Chunk149334.Z,
+      iconURL: Chunk444410.Z,
       splashGradient: "radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(84.38% 468.75% at 15.63% 100%, rgba(207, 122, 124, 0.50) 0%, rgba(207, 122, 124, 0.00) 100%)",
       baseColor: "#2D1011",
       styleKey: "cave",
-      previewSoundURLs: [Chunk640490.Z, Chunk578895.Z]
+      previewSoundURLs: [Chunk323537.Z, Chunk780847.Z]
     },
     deepfried: {
       name: Chunk696162.default.qRFFLC,
-      iconURL: Chunk409863.Z,
+      iconURL: Chunk50273.Z,
       splashGradient: "radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(84.38% 468.75% at 15.63% 100%, rgba(253, 177, 45, 0.50) 0%, rgba(253, 177, 45, 0.00) 100%)",
       baseColor: "#3D2701",
       styleKey: "deepfried",
-      previewSoundURLs: [Chunk89222.Z, Chunk51016.Z, Chunk629928.Z]
+      previewSoundURLs: [Chunk407152.Z, Chunk106158.Z, Chunk400211.Z]
     }
   },
   K = function(e) {

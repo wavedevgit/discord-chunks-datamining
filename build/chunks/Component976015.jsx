@@ -18,16 +18,16 @@ let c = e => {
     assetComponent: (0, r.jsx)(o.Z, {
       className: l.orbBadgeAsset
     }),
-    tooltipWordmarkComponent: (0, r.jsx)(i.X6, {
+    tooltipWordmarkComponent: (0, r.jsx)(i.X6q, {
       variant: "heading-md/extrabold",
       className: l.tooltipWordmark,
       children: s.intl.string(s.t.ElYQFR)
     }),
-    children: [(0, r.jsx)(i.X6, {
+    children: [(0, r.jsx)(i.X6q, {
       variant: "heading-xl/extrabold",
       className: t ? true : l.orbHeaderWithSpacing,
       children: s.intl.string(s.t.lTHkqa)
-    }), t ? (0, r.jsx)(i.xv, {
+    }), t ? (0, r.jsx)(i.xvT, {
       variant: "text-xs/normal",
       className: l.orbSubtext,
       children: s.intl.string(s.t.MEV0GB)

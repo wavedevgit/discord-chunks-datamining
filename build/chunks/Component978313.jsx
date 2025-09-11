@@ -36,7 +36,7 @@ function x(e) {
       children: [(0, n.jsx)(s.SxY, {
         color: c.Z.colors.HEADER_SECONDARY,
         size: "xs"
-      }), (0, n.jsx)(o.xv, {
+      }), (0, n.jsx)(o.xvT, {
         variant: "text-xs/medium",
         color: "header-secondary",
         children: l ? f.intl.format(f.t.aZ2iIi, {
@@ -45,7 +45,7 @@ function x(e) {
           onShowTranslated: () => x(true)
         })
       })]
-    }), (0, n.jsx)(o.xv, {
+    }), (0, n.jsx)(o.xvT, {
       ref: y,
       lineClamp: O ? 8 : true,
       variant: "text-sm/normal",
@@ -55,7 +55,7 @@ function x(e) {
       onClick: () => {
         r(O ? m.as.ShowMore : m.as.ShowLess), h(!O)
       },
-      children: (0, n.jsx)(o.xv, {
+      children: (0, n.jsx)(o.xvT, {
         variant: "text-sm/semibold",
         children: O ? f.intl.string(f.t.lBeKY2) : f.intl.string(f.t["6MwJo6"])
       })

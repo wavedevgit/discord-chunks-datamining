@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk950728 = require("./950728.js"),
   Chunk997892 = require("./997892.js"),
   Chunk234286 = require("./234286.js"),
-  Chunk288541 = require("./288541.js");
+  Chunk746986 = require("./746986.js");
 let O = () => {
   let {
     transitionState: e,
@@ -67,7 +67,7 @@ let O = () => {
   return (0, Chunk951288.jsxs)(Chunk667202.I, {
     graphic: {
       type: "image",
-      src: x ? w ? Chunk288541.Z : Chunk234286 : Chunk997892
+      src: x ? w ? Chunk746986.Z : Chunk234286 : Chunk997892
     },
     gradientColor: x ? "nitro-pink" : "nitro-green",
     transitionState: module,

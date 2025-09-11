@@ -2,17 +2,14 @@
 /** chunk id: 886031, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  B: () => p
+  B: () => d
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk481060 = require("./481060.js"),
-  Chunk680018 = require("./680018.jsx"),
-  Chunk374415 = require("./374415.jsx"),
-  Chunk861066 = require("./861066.jsx"),
-  Chunk179538 = require("./179538.jsx");
+var Chunk793030 = require("./793030.js"),
+  Chunk481060 = require("./481060.js");
 
-function c(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,20 +18,20 @@ function c(e, t, n) {
   }) : e[t] = n, e
 }
 
-function u(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      c(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
 }
 
-function d(e, t) {
+function l(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,15 +42,15 @@ function d(e, t) {
   return n
 }
 
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
+function c(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : l(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = {
+let u = {
     name: "Button",
     id: "button",
-    component: Chunk680018.z,
+    component: Chunk793030.zxk,
     docs: "https://design.discord.tools/components/web/buttons/button",
     controls: {
       text: {
@@ -120,15 +117,15 @@ let _ = {
       }
     }
   },
-  p = {
+  d = {
     title: "Buttons",
-    stories: [_, {
+    stories: [u, {
       name: "IconButton",
       id: "icon-button",
       docs: "https://design.discord.tools/components/web/buttons/icon-button",
       component: function(e) {
-        return (0, r.jsx)(s.h, f(u({}, e), {
-          icon: i.gw7,
+        return (0, r.jsx)(i.hU, c(s({}, e), {
+          icon: a.gw7,
           "aria-label": "Clyde"
         }))
       },
@@ -190,7 +187,7 @@ let _ = {
       name: "TextButton",
       id: "text-button",
       docs: "https://design.discord.tools/components/web/buttons/text-button",
-      component: Chunk179538.A,
+      component: Chunk793030.Avr,
       controls: {
         text: {
           label: "Text",
@@ -226,11 +223,11 @@ let _ = {
       id: "button-group",
       docs: "https://design.discord.tools/components/web/buttons/button-group",
       component: function(e) {
-        return (0, r.jsxs)(o.h, f(u({}, e), {
-          children: [(0, r.jsx)(a.z, {
+        return (0, r.jsxs)(i.hE2, c(s({}, e), {
+          children: [(0, r.jsx)(i.zxk, {
             variant: "secondary",
             text: "Cancel"
-          }), (0, r.jsx)(a.z, {
+          }), (0, r.jsx)(i.zxk, {
             variant: "primary",
             text: "Submit"
           })]

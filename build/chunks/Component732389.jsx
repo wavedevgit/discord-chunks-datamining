@@ -33,7 +33,7 @@ let g = e => {
       children: [(0, a.jsx)(i.SrA, {
         size: "md",
         color: d.JX.PREMIUM_TIER_2
-      }), (0, a.jsx)(l.xv, {
+      }), (0, a.jsx)(l.xvT, {
         variant: "text-sm/medium",
         color: "header-primary",
         className: f.upsellText,

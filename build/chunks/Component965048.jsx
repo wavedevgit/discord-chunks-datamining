@@ -16,8 +16,8 @@ var Chunk951288 = require("./951288.js"),
   l = require.n(Chunk512722),
   Chunk866442 = require("./866442.js"),
   Chunk657707 = require("./657707.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk692547 = require("./692547.js"),
-  Chunk84735 = require("./84735.js"),
   Chunk981631 = require("./981631.js"),
   Chunk728122 = require("./728122.js");
 
@@ -66,7 +66,7 @@ let b = {
       size: l = 24,
       type: c = "default",
       align: u = "center",
-      onChange: d = _.dG4,
+      onChange: f = _.dG4,
       onClick: h,
       className: m,
       innerClassName: g,
@@ -75,8 +75,8 @@ let b = {
       shape: v = b.BOX,
       checkboxColor: T
     } = e, S = i.useCallback(e => {
-      null == d || d(e, e.currentTarget.checked)
-    }, [d]), A = null != E ? (0, r.jsx)("div", {
+      null == f || f(e, e.currentTarget.checked)
+    }, [f]), A = null != E ? (0, r.jsx)("div", {
       className: o()(p.label, t ? p.labelDisabled : p.labelClickable, O ? p.labelReversed : p.labelForward),
       style: {
         lineHeight: "".concat(l, "px")
@@ -89,7 +89,7 @@ let b = {
         [p.row]: "row" === c,
         [p.checked]: s
       }),
-      children: [O ? A : null, !a && (0, r.jsx)(f.t, {
+      children: [O ? A : null, !a && (0, r.jsx)(d.tEY, {
         children: (0, r.jsx)("input", {
           className: o()(g, N),
           type: "checkbox",
@@ -144,7 +144,7 @@ function I(e) {
     shape: s,
     checkboxColor: l,
     disabled: c
-  } = e, f = v(e), _ = i.useMemo(() => n ? d.Z.colors.WHITE.css : d.Z.unsafe_rawColors.TRANSPARENT.css, [n]);
+  } = e, d = v(e), _ = i.useMemo(() => n ? f.Z.colors.WHITE.css : f.Z.unsafe_rawColors.TRANSPARENT.css, [n]);
   return (0, r.jsx)("div", {
     className: o()(p.checkbox, s, t, {
       [p.checked]: n,
@@ -154,7 +154,7 @@ function I(e) {
       width: a,
       height: a,
       borderColor: l
-    }, f),
+    }, d),
     children: (0, r.jsx)(u.kSu, {
       size: "sm",
       color: _,

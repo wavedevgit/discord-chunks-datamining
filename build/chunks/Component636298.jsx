@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk873546 = require("./873546.js"),
-  Chunk861066 = require("./861066.jsx"),
+  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk59662 = require("./59662.js"),
   Chunk36361 = require("./36361.jsx"),
@@ -21,7 +21,7 @@ function y(e) {
     label: n,
     onClick: i
   } = e;
-  return (0, r.jsx)(s.h, {
+  return (0, r.jsx)(s.hU, {
     onClick: i,
     icon: t,
     size: "sm",

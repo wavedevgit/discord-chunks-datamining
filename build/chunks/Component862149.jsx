@@ -17,7 +17,7 @@ function u(e) {
     withHeader: t = true,
     size: n = 15
   } = e, i = (0, a.e7)([s.Z], () => s.Z.useReducedMotion);
-  return (0, r.jsxs)(o.Kq, {
+  return (0, r.jsxs)(o.Kqy, {
     gap: 4,
     children: [t && (0, r.jsx)("div", {
       className: l()(c.wrapper, {

@@ -34,16 +34,16 @@ function f(e) {
     children: [(0, r.jsx)(s.Mgn, {
       color: c.Z.colors.TEXT_FEEDBACK_WARNING,
       className: g.icon
-    }), (0, r.jsx)(l.xv, {
+    }), (0, r.jsx)(l.xvT, {
       variant: "text-md/semibold",
       color: "text-feedback-warning",
       children: m.intl.string(p.default.n5hQhY)
-    }), (0, r.jsxs)(l.xv, {
+    }), (0, r.jsxs)(l.xvT, {
       variant: "text-sm/medium",
       children: [m.intl.formatToPlainString(p.default.iAaAiI, {
         boostCount: _,
         perksString: n.map(e => e.title).join(", ")
-      }), x && (0, r.jsx)(l.xv, {
+      }), x && (0, r.jsx)(l.xvT, {
         variant: "text-sm/medium",
         color: "text-feedback-warning",
         children: m.intl.string(p.default.Sfr0Jy)

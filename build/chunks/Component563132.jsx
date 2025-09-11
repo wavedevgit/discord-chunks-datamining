@@ -139,14 +139,14 @@ function et(e) {
   } = (0, Z.Z)({
     stepConfigs: X,
     breadcrumbs: $
-  }), [ej, eM] = (0, U.Z)(eP), {
-    paymentError: ek,
+  }), [ej, ek] = (0, U.Z)(eP), {
+    paymentError: eM,
     paymentAuthenticationState: eU
-  } = (0, M.Z)(), {
+  } = (0, k.Z)(), {
     purchaseError: eG,
     purchaseErrorBlockRef: eB,
     setPurchaseError: eZ
-  } = (0, k.Z)(), eF = (0, u.Z)(() => {
+  } = (0, M.Z)(), eF = (0, u.Z)(() => {
     let e = null != A ? A : (0, l.Z)();
     return R.Z.addBreadcrumb({
       message: "Checkout session ID: ".concat(e)
@@ -224,12 +224,12 @@ function et(e) {
       isEligible: tL
     } = (0, E.Q1)(),
     tj = tL && eV === W.Si.TIER_2,
-    tM = (0, w.uH)({
+    tk = (0, w.uH)({
       location: "PaymentModal"
     }),
-    tk = i.useMemo(() => {
-      if (tM) return H.cL.APPLE_PAYMENT_LINK
-    }, [tM]);
+    tM = i.useMemo(() => {
+      if (tk) return H.cL.APPLE_PAYMENT_LINK
+    }, [tk]);
   return (0, r.jsx)(J.Provider, {
     value: Q(q({
       stripe: eu,
@@ -262,9 +262,9 @@ function et(e) {
       breadcrumbs: ex,
       previousStepRef: eL,
       purchaseState: ej,
-      setPurchaseState: eM,
+      setPurchaseState: ek,
       paymentAuthenticationState: eU,
-      paymentError: ek,
+      paymentError: eM,
       purchaseError: eG,
       setPurchaseError: eZ,
       purchasePreviewError: tg,
@@ -319,7 +319,7 @@ function et(e) {
       isDisplayingWowMomentConfirmation: tw,
       premiumBrandRefreshBackgroundClassName: tD,
       wasTier2PremiumBeforePurchase: ec,
-      customCheckoutFlow: tk,
+      customCheckoutFlow: tM,
       shouldShowSeptemberMarketingMomentBanner: tj
     }),
     children: (0, r.jsx)(a.Elements, {

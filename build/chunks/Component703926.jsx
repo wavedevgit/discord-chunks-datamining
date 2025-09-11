@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk588921 = require("./588921.js"),
   Chunk718720 = require("./718720.js"),
   Chunk721513 = require("./721513.js"),
-  Chunk959191 = require("./959191.js");
+  Chunk385544 = require("./385544.js");
 let g = {
     [Chunk474936.Cj.STANDARD_BOX]: Chunk385925,
     [Chunk474936.Cj.CAKE]: Chunk588921,
@@ -30,7 +30,7 @@ let g = {
     [Chunk474936.Cj.SEASONAL_CHEST]: Chunk74838,
     [Chunk474936.Cj.SEASONAL_COFFEE]: Chunk720834,
     [Chunk474936.Cj.SEASONAL_STANDARD_BOX]: Chunk426831,
-    [Chunk474936.Cj.NITROWEEN_STANDARD]: Chunk959191.Z
+    [Chunk474936.Cj.NITROWEEN_STANDARD]: Chunk385544.Z
   },
   E = Chunk647438.forwardRef(function(e, t) {
     let {

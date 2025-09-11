@@ -9,7 +9,7 @@ require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk381176 = require("./381176.js"),
+  Chunk685138 = require("./685138.js"),
   Chunk373370 = require("./373370.js"),
   Chunk644646 = require("./644646.jsx"),
   Chunk73231 = require("./73231.js");
@@ -28,10 +28,10 @@ let d = function(e) {
     location: _,
     questContent: d,
     sourceQuestContent: p
-  }), m = (0, s.h)({
+  }), m = (0, s.n)({
     location: _,
     questConfig: i.config
-  });
+  }).enabled;
   return (0, r.jsxs)("div", {
     className: a()(u.wrapper, t),
     style: m ? true : {

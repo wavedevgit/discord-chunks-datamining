@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk186325 = require("./186325.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk226690 = require("./226690.jsx"),
   Chunk198168 = require("./198168.jsx"),
   Chunk587272 = require("./587272.js"),
@@ -72,7 +72,7 @@ function g(e) {
     props: n
   } = e, {
     reducedMotion: a
-  } = i.useContext(s.S);
+  } = i.useContext(s.Sfi);
   return (0, r.jsx)(l.F, _({
     className: d.lottie,
     importData: t,
@@ -105,7 +105,7 @@ function b(e) {
     playbackRate: c
   } = e, {
     reducedMotion: u
-  } = i.useContext(s.S), f = i.useRef(null);
+  } = i.useContext(s.Sfi), f = i.useRef(null);
   return (i.useImperativeHandle(t, () => f.current), i.useEffect(() => {
     let e = f.current;
     if (null != e) return null != c && (e.playbackRate = c), null != o && (e.loop = 0 === l && o), e.addEventListener("ended", t), () => {

@@ -71,7 +71,7 @@ function R(e) {
       for (let e of K)
         for (let n of e.listings) {
           if (("singleLevel" === n.type || "singlePerk" === n.type) && n.powerup.skuId === o) {
-            (0, T.KE)(t, n.powerup), D.current = true;
+            (0, I.KE)(t, n.powerup), D.current = true;
             return
           }
           if ("multiPerk" === n.type && (n.group === o || n.powerups.some(e => e.skuId === o))) {
@@ -207,11 +207,11 @@ function R(e) {
         })
       }), (0, r.jsxs)("div", {
         className: A.sidebarContainer,
-        children: [M ? (0, r.jsx)(E.Z, {
+        children: [M ? (0, r.jsx)(T.Z, {
           guildId: t
-        }) : (0, r.jsx)(P.Z, {
+        }) : (0, r.jsx)(E.Z, {
           guildId: t
-        }), (0, r.jsx)(I.Z, {
+        }), (0, r.jsx)(P.Z, {
           guildId: t
         })]
       })]

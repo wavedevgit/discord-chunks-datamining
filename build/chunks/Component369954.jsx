@@ -27,12 +27,12 @@ let y = e => {
       buttonText: n,
       onButtonPress: i
     } = e;
-    return (0, r.jsxs)(a.Kq, {
+    return (0, r.jsxs)(a.Kqy, {
       justify: "space-between",
       direction: "horizontal",
       align: "center",
       gap: 32,
-      children: [(0, r.jsx)(a.xv, {
+      children: [(0, r.jsx)(a.xvT, {
         variant: "text-sm/semibold",
         color: "interactive-active",
         children: t
@@ -79,17 +79,17 @@ let y = e => {
         recipientIds: exports.map(e => e.id)
       })
     };
-    return (0, Chunk951288.jsxs)(Chunk793030.Kq, {
+    return (0, Chunk951288.jsxs)(Chunk793030.Kqy, {
       padding: {
         top: 24
       },
       gap: 4,
       className: Chunk271650.container,
-      children: [(0, Chunk951288.jsx)(Chunk793030.xv, {
+      children: [(0, Chunk951288.jsx)(Chunk793030.xvT, {
         variant: "eyebrow",
         color: "text-secondary",
         children: Chunk388032.intl.string(Chunk345909.default.ahKIJC)
-      }), (0, Chunk951288.jsx)(Chunk793030.Kq, {
+      }), (0, Chunk951288.jsx)(Chunk793030.Kqy, {
         gap: 8,
         children: module ? (0, Chunk951288.jsx)(y, {
           title: Chunk388032.intl.string(Chunk345909.default.X9rW0t),

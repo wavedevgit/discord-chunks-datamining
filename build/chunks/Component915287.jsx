@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   o = require.n(Chunk120356),
   Chunk952639 = require("./952639.js"),
   l = require.n(Chunk952639),
-  Chunk84735 = require("./84735.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk562701 = require("./562701.js"),
   Chunk121958 = require("./121958.js");
 
@@ -174,8 +174,8 @@ function v(e, t, n, a) {
       renderRow: x,
       renderFooter: L,
       renderSidebar: j,
-      renderListHeader: M,
-      stickyListHeader: k,
+      renderListHeader: k,
+      stickyListHeader: M,
       wrapSection: U,
       getAnchorId: G,
       paddingTop: B,
@@ -300,12 +300,12 @@ function v(e, t, n, a) {
         },
         className: o()(d.content, Q),
         ref: et,
-        children: (0, r.jsx)(c.J, {
+        children: (0, r.jsx)(c.JcV, {
           containerRef: et,
           children: y({
             items: ec,
-            renderListHeader: M,
-            stickyListHeader: k,
+            renderListHeader: k,
+            stickyListHeader: M,
             renderSection: D,
             renderRow: x,
             renderFooter: L,
@@ -313,7 +313,7 @@ function v(e, t, n, a) {
             spacerTop: es
           })
         })
-      }), [J, W, K, z, q, X, el, Q, ec, M, k, D, x, L, U, es]), i.useMemo(() => O({
+      }), [J, W, K, z, q, X, el, Q, ec, k, M, D, x, L, U, es]), i.useMemo(() => O({
         isSidebarVisible: eu,
         renderSidebar: j,
         sidebarHeight: P,

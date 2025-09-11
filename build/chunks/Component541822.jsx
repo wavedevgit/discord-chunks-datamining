@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk349361 = require("./349361.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk891727 = require("./891727.js");
 
 function c(e, t, n) {
@@ -80,7 +80,7 @@ function h(e) {
       (null == (e = c.current) ? true : e.isScrolledToBottom()) === true ? p(false) : p(true)
     };
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(s.h2, f(u({
+    children: [(0, r.jsx)(s.h21, f(u({
       fade: true
     }, a), {
       ref: e => {

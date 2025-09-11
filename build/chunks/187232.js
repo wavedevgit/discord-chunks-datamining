@@ -9,15 +9,15 @@ var Chunk100527 = require("./100527.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk154658 = require("./154658.js"),
-  Chunk362290 = require("./362290.js"),
-  Chunk873048 = require("./873048.js"),
-  Chunk905287 = require("./905287.js"),
-  Chunk306225 = require("./306225.js"),
-  Chunk28986 = require("./28986.js"),
-  Chunk194950 = require("./194950.js"),
-  Chunk103865 = require("./103865.js"),
-  Chunk29653 = require("./29653.js");
+  Chunk796909 = require("./796909.js"),
+  Chunk893410 = require("./893410.js"),
+  Chunk878339 = require("./878339.js"),
+  Chunk733366 = require("./733366.js"),
+  Chunk492336 = require("./492336.js"),
+  Chunk457686 = require("./457686.js"),
+  Chunk516773 = require("./516773.js"),
+  Chunk198026 = require("./198026.js"),
+  Chunk543980 = require("./543980.js");
 let g = {
     skuId: "1287835633485877369",
     assetId: "a_33656b7ed12cde00c1826b654cf65590"
@@ -72,13 +72,13 @@ let g = {
     rewardAssetIdMap: (0, Chunk717401.YV)([g, E, b, y, O, v, I, T]),
     chatGiftIcon: {
       trinketsAnimation: {
-        getAnimationData: () => require.e("21723").then(require.bind(require, 421344)).then(e => {
+        getAnimationData: () => require.e("19511").then(require.bind(require, 322980)).then(e => {
           let {
             default: t
           } = e;
           return fetch(t).then(e => e.json())
         }),
-        getGlowAnimationData: () => require.e("51924").then(require.bind(require, 90801)).then(e => {
+        getGlowAnimationData: () => require.e("37079").then(require.bind(require, 474)).then(e => {
           let {
             default: t
           } = e;
@@ -88,7 +88,7 @@ let g = {
     },
     segmentedControlAnimations: {
       trick: {
-        getAnimationData: () => require.e("44538").then(require.bind(require, 285517)).then(e => {
+        getAnimationData: () => require.e("87983").then(require.bind(require, 913493)).then(e => {
           let {
             default: t
           } = e;
@@ -96,7 +96,7 @@ let g = {
         })
       },
       treat: {
-        getAnimationData: () => require.e("35244").then(require.bind(require, 220628)).then(e => {
+        getAnimationData: () => require.e("33472").then(require.bind(require, 795420)).then(e => {
           let {
             default: t
           } = e;
@@ -106,7 +106,7 @@ let g = {
     },
     dismissibleContentVersion: 4,
     firstTimeNotice: {
-      getImageUrl: () => Chunk905287.Z,
+      getImageUrl: () => Chunk733366.Z,
       title: () => Chunk388032.intl.string(Chunk388032.t.UPFiIi),
       description: () => Chunk388032.intl.string(Chunk388032.t["F/5kFB"]),
       cta: () => Chunk388032.intl.string(Chunk388032.t.RzWDqa),
@@ -121,22 +121,22 @@ let g = {
         rewardCount: e
       }),
       gradientConfig: S,
-      getImageUrl: () => Chunk28986.Z,
-      getBannerImageUrl: () => Chunk29653.Z,
-      getBackgroundImageUrl: () => Chunk154658.Z
+      getImageUrl: () => Chunk457686.Z,
+      getBannerImageUrl: () => Chunk543980.Z,
+      getBackgroundImageUrl: () => Chunk796909.Z
     },
     planSelectionBanner: {
       desktopBannerText: () => Chunk388032.intl.string(Chunk388032.t.mMgymZ),
       mobileBannerText: () => Chunk388032.intl.string(Chunk388032.t.dAqTcH),
-      getImageUrl: () => Chunk194950.Z,
+      getImageUrl: () => Chunk516773.Z,
       gradientConfig: () => S,
-      getBackgroundImageUrl: () => Chunk306225.Z
+      getBackgroundImageUrl: () => Chunk492336.Z
     },
     billingSettingsMarketingBanner: {
-      getAnimatedImageUrl: () => Chunk362290.Z,
-      getStaticImageUrl: () => Chunk873048.Z,
+      getAnimatedImageUrl: () => Chunk893410.Z,
+      getStaticImageUrl: () => Chunk878339.Z,
       title: () => Chunk388032.intl.string(Chunk388032.t.CGgAyM),
       body: () => Chunk388032.intl.string(Chunk388032.t["9rInzc"]),
-      getBackgroundImageUrl: () => Chunk103865.Z
+      getBackgroundImageUrl: () => Chunk198026.Z
     }
   }

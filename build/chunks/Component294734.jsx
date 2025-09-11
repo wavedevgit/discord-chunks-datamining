@@ -37,7 +37,7 @@ function N() {
       size: "xs",
       className: Chunk823914.headerIcon,
       color: Chunk692547.Z.colors.TEXT_LOW_CONTRAST
-    }), (0, Chunk951288.jsx)(Chunk793030.xv, {
+    }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
       className: Chunk823914.headerText,
       variant: "text-sm/semibold",
       color: "text-low-contrast",
@@ -61,7 +61,7 @@ function R(e) {
       className: C.originIcon,
       src: _.originIconUrl,
       alt: ""
-    }) : null, (0, r.jsx)(a.xv, {
+    }) : null, (0, r.jsx)(a.xvT, {
       className: C.footerText,
       variant: "text-sm/medium",
       color: "none",

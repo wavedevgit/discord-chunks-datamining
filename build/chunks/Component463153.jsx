@@ -18,7 +18,7 @@ function l() {
       className: Chunk570133.emptySearchIcon,
       src: Chunk258720,
       alt: ""
-    }), (0, Chunk951288.jsx)(Chunk793030.xv, {
+    }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
       variant: "text-md/normal",
       color: "text-muted",
       children: Chunk388032.intl.string(Chunk388032.t.H217fX)

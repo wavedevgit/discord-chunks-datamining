@@ -83,7 +83,7 @@ function y(e) {
       })]
     }), a.length > 0 && (0, r.jsxs)("div", {
       className: v.productSection,
-      children: [(0, r.jsx)(i.X6, {
+      children: [(0, r.jsx)(i.X6q, {
         variant: "heading-lg/semibold",
         color: "header-primary",
         children: x.intl.string(x.t.yUGTs7)
@@ -167,7 +167,7 @@ function O(e) {
   });
   return (0, r.jsx)("div", {
     className: v.legalContainer,
-    children: (0, r.jsx)(i.xv, {
+    children: (0, r.jsx)(i.xvT, {
       color: "header-primary",
       variant: "text-sm/normal",
       children: null != a && null != l ? x.intl.format(x.t.nylPOT, {

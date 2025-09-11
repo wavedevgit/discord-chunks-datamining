@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk866442 = require("./866442.js"),
   Chunk19602 = require("./19602.jsx"),
   Chunk490236 = require("./490236.jsx"),
-  Chunk861066 = require("./861066.jsx"),
+  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk408886 = require("./408886.js"),
   Chunk233398 = require("./233398.js"),
@@ -162,14 +162,14 @@ function D(e) {
         t[v] = e.hex, s(t)
       }
     },
-    M = async () => {
+    k = async () => {
       if (null != c) try {
         let {
           sRGBHex: e
         } = await c.open();
         (0, E.J4)(), x(e)
       } catch (e) {}
-    }, k = () => {
+    }, M = () => {
       if (o.length === N) return;
       0 === o.length && (0, g.ft)(), (0, E.gG)();
       let e = o.length > 0 ? o[o.length - 1] : A,
@@ -196,7 +196,7 @@ function D(e) {
         text: y.intl.string(b.default["61KGaW"]),
         shouldShow: o.length === N,
         children: e => (0, r.jsx)(p.P3F, S(I({}, e), {
-          onClick: o.length === N ? true : k,
+          onClick: o.length === N ? true : M,
           className: l()(O.addColorButton, {
             [O.disabled]: o.length === N
           }),
@@ -229,17 +229,17 @@ function D(e) {
         children: [null != c && (0, r.jsx)(p.ua7, {
           text: y.intl.string(b.default["8QXO8v"]),
           tooltipClassName: O.eyeDropperTooltip,
-          children: e => (0, r.jsx)(_.h, S(I({
+          children: e => (0, r.jsx)(_.hU, S(I({
             variant: "icon-only",
             size: "sm"
           }, e), {
-            onClick: M,
+            onClick: k,
             icon: d.i,
             "aria-label": y.intl.string(b.default["8QXO8v"])
           }))
         }), B && (0, r.jsx)(p.ua7, {
           text: y.intl.string(b.default["rTik5+"]),
-          children: e => (0, r.jsx)(_.h, S(I({}, e), {
+          children: e => (0, r.jsx)(_.hU, S(I({}, e), {
             variant: "icon-only",
             size: "sm",
             onClick: () => U(v),

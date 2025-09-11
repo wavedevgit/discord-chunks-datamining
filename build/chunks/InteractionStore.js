@@ -102,7 +102,7 @@ function C(e) {
   let {
     nonce: t
   } = e;
-  M(t)
+  k(t)
 }
 
 function N(e) {
@@ -114,7 +114,7 @@ function N(e) {
     var n;
     let e = y[t.nonce];
     if (null == e) returnfalse;
-    null == (n = e.onSuccess) || n.call(e), k(t.nonce)
+    null == (n = e.onSuccess) || n.call(e), M(t.nonce)
   }
 }
 
@@ -130,7 +130,7 @@ function R(e) {
   if (null == n) returnfalse;
   let s = y[n];
   if (null == s) returnfalse;
-  null == (t = s.onFailure) || t.call(s, r, i, a, o), s.data.interactionType === c.B8.APPLICATION_COMMAND ? k(n) : y[n] = g(h({}, s), {
+  null == (t = s.onFailure) || t.call(s, r, i, a, o), s.data.interactionType === c.B8.APPLICATION_COMMAND ? M(n) : y[n] = g(h({}, s), {
     state: _.F.FAILED,
     errorCode: r,
     errorMessage: i
@@ -142,14 +142,14 @@ function P(e) {
     channelId: t
   } = e;
   if (null == d.Z.getChannel(t)) returnfalse;
-  for (let [e, t] of Object.entries(y)) t.state === _.F.FAILED && k(e)
+  for (let [e, t] of Object.entries(y)) t.state === _.F.FAILED && M(e)
 }
 
 function w(e) {
   let {
     nonce: t
   } = e;
-  M(t)
+  k(t)
 }
 
 function D(e) {
@@ -157,7 +157,7 @@ function D(e) {
     application: t,
     nonce: n
   } = e;
-  i = t.id, M(n)
+  i = t.id, k(n)
 }
 
 function x() {
@@ -180,18 +180,18 @@ function j(e) {
     o = r.find(e => e.user_id === a && e.session_id === i);
   if (null == o || null == o.nonce) return;
   let s = I[o.nonce];
-  null == s ? (t = v[o.nonce], n = y[o.nonce]) : (t = s.messageId, n = s.interaction), null != n && null != t && (k(o.nonce), null != t && "channelId" in n.data && l.Z.deleteMessage(n.data.channelId, t, true))
+  null == s ? (t = v[o.nonce], n = y[o.nonce]) : (t = s.messageId, n = s.interaction), null != n && null != t && (M(o.nonce), null != t && "channelId" in n.data && l.Z.deleteMessage(n.data.channelId, t, true))
 }
 
-function M(e) {
+function k(e) {
   var t;
   if (null == e) returnfalse;
   let n = y[e];
   if (null == n) returnfalse;
-  null == (t = n.onSuccess) || t.call(n), k(e)
+  null == (t = n.onSuccess) || t.call(n), M(e)
 }
 
-function k(e) {
+function M(e) {
   if (null != I[e]) return void delete I[e];
   let t = y[e];
   delete y[e];

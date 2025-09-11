@@ -36,7 +36,6 @@ function u(e) {
     onRequestClose: () => n(o.L.USER_DISMISS),
     position: "bottom",
     caretConfig: {
-      position: "top",
       align: "center"
     }
   })

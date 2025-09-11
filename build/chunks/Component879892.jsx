@@ -111,8 +111,8 @@ async function v(e) {
   });
   let j = [];
   u.Z.isLoadedForPremiumSKUs() || j.push((0, s.Y2)()), c.Z.hasFetched || (j.push(a.jg()), j.push((0, o.X8)())), j.length > 0 && (null == I || I(true), await Promise.allSettled(j), null == I || I(false));
-  let M = (0, f.vx)(c.Z.boostSlots),
-    k = M.length,
+  let k = (0, f.vx)(c.Z.boostSlots),
+    M = k.length,
     U = e => {
       null == v || v(), null == N || N(e)
     },
@@ -122,9 +122,9 @@ async function v(e) {
         location_section: h.section
       })
     };
-  if (k > 0 && (null == y || k >= y)) {
+  if (M > 0 && (null == y || M >= y)) {
     let e;
-    1 === k ? e = M.slice(0, 1) : null != y && (e = M.slice(0, y)), await (0, i.ZDy)(async () => {
+    1 === M ? e = k.slice(0, 1) : null != y && (e = k.slice(0, y)), await (0, i.ZDy)(async () => {
       let {
         default: t
       } = await Promise.resolve().then(n.bind(n, 760558));

@@ -39,8 +39,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk764295 = require("./764295.js"),
   Chunk319720 = require("./319720.js"),
-  Chunk214785 = require("./214785.js"),
-  Chunk127947 = require("./127947.js");
+  Chunk127947 = require("./127947.js"),
+  Chunk577650 = require("./577650.js");
 
 function G(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -187,7 +187,7 @@ function V(e) {
           [k.loading]: eo
         }),
         children: [!ec && !J && null != ei && (0, r.jsx)("div", {
-          className: B.reactions,
+          className: U.reactions,
           children: (0, r.jsx)(v.le, {
             message: K,
             readOnly: false,
@@ -222,7 +222,7 @@ function V(e) {
           message: K,
           channel: Y,
           useChatFontScaling: false,
-          className: a()(U.secondary, k.addReactButton, {
+          className: a()(B.secondary, k.addReactButton, {
             [k.hasNoReactions]: !ec
           }),
           isForumToolbar: true,

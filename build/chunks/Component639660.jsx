@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
 function x() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk547885.staffContainer,
-    children: (0, Chunk951288.jsx)(Chunk793030.xv, {
+    children: (0, Chunk951288.jsx)(Chunk793030.xvT, {
       variant: "text-sm/medium",
       children: Chunk388032.intl.string(Chunk989308.default.l9n4QU)
     })
@@ -38,19 +38,19 @@ function h(e) {
   }), h = (0, c.Z)(t), b = h.length > 0, {
     shouldShow: C,
     notificationConfig: j
-  } = (0, m._)(t, "GuildPowerupNotificationContainer"), E = [];
-  C && E.push(s.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION);
-  let [P, I] = (0, l.ZT)(E, t), T = null != P && null != j, y = [];
-  T || b || y.push(s.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK);
+  } = (0, m._)(t, "GuildPowerupNotificationContainer"), T = [];
+  C && T.push(s.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION);
+  let [E, P] = (0, l.ZT)(T, t), I = null != E && null != j, y = [];
+  I || b || y.push(s.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK);
   let [w, Z] = (0, l.US)(y), S = (e => {
     let n = [];
     return b && n.push((0, r.jsx)(p.Z, {
       guildId: t,
       powerups: h
-    }, "expiring-powerups")), T && n.push((0, r.jsx)(d.Z, {
+    }, "expiring-powerups")), I && n.push((0, r.jsx)(d.Z, {
       notificationConfig: j,
       markAsDismissed: e => {
-        I(e)
+        P(e)
       }
     }, "rollback-notification")), null != e && e === s.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK && n.push((0, r.jsx)(u.Z, {
       markAsDismissed: Z
@@ -58,7 +58,7 @@ function h(e) {
   })(w);
   return 0 !== S.length || n ? (0, r.jsxs)("div", {
     className: _.container,
-    children: [(0, r.jsx)(i.xv, {
+    children: [(0, r.jsx)(i.xvT, {
       variant: "eyebrow",
       color: "text-secondary",
       children: v.intl.string(f.default["3FRira"])

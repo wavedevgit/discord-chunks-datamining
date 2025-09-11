@@ -49,7 +49,7 @@ function f(e) {
       null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), b(i)), n ? (y(i), null !== j && v(null)) : j !== t && v(t)
     }, [j, f, y]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(l.X6, {
+    children: [(0, r.jsx)(l.X6q, {
       variant: "text-xs/bold",
       color: "text-muted",
       className: p.title,
@@ -115,7 +115,7 @@ function h(e) {
     }
   }], [t]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(l.X6, {
+    children: [(0, r.jsx)(l.X6q, {
       variant: "text-xs/bold",
       color: "text-muted",
       className: p.examplesHeader,

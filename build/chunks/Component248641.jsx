@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk237522 = require("./237522.js"),
   Chunk922434 = require("./922434.js"),
   Chunk530045 = require("./530045.js"),
-  Chunk44825 = require("./44825.js");
+  Chunk517862 = require("./517862.js");
 
 function j(e) {
   let {
@@ -31,7 +31,7 @@ function j(e) {
       type: "active",
       statusText: _.intl.string(f.default.FFLkm5)
     }
-  }, [null == n ? true : n.instances]), j = (0, p.d)((null == o ? true : o.type) === "active"), E = i.useMemo(() => {
+  }, [null == n ? true : n.instances]), j = (0, p.d)((null == o ? true : o.type) === "active"), T = i.useMemo(() => {
     if ((null == n ? true : n.catalog) == null) return 0;
     let e = Object.values(n.catalog);
     return 0 === e.length ? 0 : Math.min(...e.map(e => e.baseCost))
@@ -57,11 +57,11 @@ function j(e) {
       title: _.intl.string(v.default["fjt/vr"]),
       textColor: j,
       footer: (0, r.jsx)(d.uf, {
-        cost: E,
+        cost: T,
         costDecorator: "+",
         status: o
       }),
-      children: (0, r.jsx)(l.xv, {
+      children: (0, r.jsx)(l.xvT, {
         className: x.description,
         color: j,
         variant: "text-sm/medium",

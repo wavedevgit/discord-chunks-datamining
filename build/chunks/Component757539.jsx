@@ -29,7 +29,7 @@ function p(e) {
   return (0, i.jsxs)("div", {
     ref: j,
     className: u.actions,
-    children: [(0, i.jsx)(a.X6, {
+    children: [(0, i.jsx)(a.X6q, {
       variant: "text-xs/bold",
       color: "text-muted",
       className: u.eyebrow,
