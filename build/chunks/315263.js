@@ -239,7 +239,7 @@ function B(e) {
   if (V && (null == B ? true : B.startsWith("/settings/"))) {
     let {
       default: e
-    } = n(722589), t = e(B);
+    } = n(722589), t = e(B, Z);
     if (null != t) return e => (null == e || e.preventDefault(), l.Z.open(t.section, t.subsection, {
       openWithoutBackstack: false,
       searchParams: t.params,
