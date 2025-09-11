@@ -2,10 +2,10 @@
 /** chunk id: 833858, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Fe: () => g,
-  O8: () => T,
-  V: () => v,
-  tV: () => I
+  Fe: () => E,
+  O8: () => S,
+  V: () => I,
+  tV: () => T
 }), require("./35282.js");
 var Chunk970683 = require("./970683.js"),
   Chunk481060 = require("./481060.js"),
@@ -21,11 +21,12 @@ var Chunk970683 = require("./970683.js"),
   Chunk105196 = require("./105196.js"),
   Chunk346554 = require("./346554.js"),
   Chunk444305 = require("./444305.js");
+let g = [null, null];
 
-function g(e) {
-  return null == e ? [null, null] : e.split(":")
+function E(e) {
+  return null == e ? g : e.split(":")
 }
-let E = () => ({
+let b = () => ({
     [Chunk505905.tN.CHILLING]: {
       title: Chunk388032.intl.string(Chunk388032.t["vkpn7+"]),
       icon: Chunk857042
@@ -51,7 +52,7 @@ let E = () => ({
       icon: Chunk444305
     }
   }),
-  b = () => ({
+  y = () => ({
     [Chunk505905.tN.BRB]: {
       title: Chunk388032.intl.string(Chunk388032.t.fFTJTE),
       icon: Chunk136779
@@ -73,7 +74,7 @@ let E = () => ({
       icon: Chunk970683.FG
     }
   }),
-  y = () => ({
+  O = () => ({
     [Chunk505905.tN.BRB]: {
       title: Chunk388032.intl.string(Chunk388032.t.fFTJTE),
       icon: Chunk481060.GsA
@@ -95,7 +96,7 @@ let E = () => ({
       icon: Chunk481060.Xbz
     }
   }),
-  O = () => ({
+  v = () => ({
     [Chunk505905.tN.BRB]: {
       title: Chunk388032.intl.string(Chunk388032.t.fFTJTE),
       emoji: {
@@ -132,30 +133,30 @@ let E = () => ({
       }
     }
   }),
-  v = e => {
+  I = e => {
     switch (e) {
       case "original":
       default:
-        return E();
-      case "illocons":
         return b();
-      case "icons":
+      case "illocons":
         return y();
+      case "icons":
+        return O();
       case "twemoji":
-        return O()
+        return v()
     }
   },
-  I = function(e) {
+  T = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "original";
     if ((null == e ? true : e.type) !== o.IIU.HANG_STATUS || (null == e ? true : e.state) == null) return null;
-    let n = g(e.state),
+    let n = E(e.state),
       r = n[0];
     if (r === a.tN.CUSTOM) return null;
-    let i = v(n.length > 1 ? n[1] : t);
+    let i = I(n.length > 1 ? n[1] : t);
     return r in i ? i[r] : null
   },
-  T = function(e) {
+  S = function(e) {
     var t;
     let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "original";
-    return (null == e ? true : e.type) !== o.IIU.HANG_STATUS || (null == e ? true : e.state) == null ? null : g(e.state)[0] === a.tN.CUSTOM ? null == e ? true : e.details : null == (t = I(e, n)) ? true : t.title
+    return (null == e ? true : e.type) !== o.IIU.HANG_STATUS || (null == e ? true : e.state) == null ? null : E(e.state)[0] === a.tN.CUSTOM ? null == e ? true : e.details : null == (t = T(e, n)) ? true : t.title
   }
