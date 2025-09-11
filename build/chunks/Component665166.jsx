@@ -8,8 +8,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk631562 = require("./631562.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk48480 = require("./48480.js"),
-  Chunk931115 = require("./931115.js"),
+  Chunk191707 = require("./191707.js"),
+  Chunk18038 = require("./18038.js"),
   Chunk388032 = require("./388032.jsx");
 
 function u() {
@@ -38,35 +38,35 @@ function u() {
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         tag: "div",
         variant: "heading-lg/bold",
-        children: Chunk388032.intl.format(Chunk931115.Z.JJ0wpK, {})
+        children: Chunk388032.intl.format(Chunk18038.Z.JJ0wpK, {})
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         tag: "div",
         variant: "text-md/normal",
-        children: Chunk388032.intl.format(Chunk48480.Z.swfLzc, {})
+        children: Chunk388032.intl.format(Chunk191707.Z.swfLzc, {})
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         tag: "div",
         variant: "text-md/normal",
-        children: Chunk388032.intl.format(Chunk931115.Z["rmps8/"], {})
+        children: Chunk388032.intl.format(Chunk18038.Z["rmps8/"], {})
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         tag: "div",
         variant: "text-md/normal",
-        children: Chunk388032.intl.format(Chunk931115.Z.uczI4u, {
+        children: Chunk388032.intl.format(Chunk18038.Z.uczI4u, {
           linkTarget: console.log
         })
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         tag: "div",
         variant: "text-md/normal",
-        children: Chunk388032.intl.format(Chunk931115.Z.rdfRys, {})
+        children: Chunk388032.intl.format(Chunk18038.Z.rdfRys, {})
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         tag: "div",
         variant: "text-md/normal",
-        children: Chunk388032.intl.format(Chunk931115.Z["Q+eyqq"], {
+        children: Chunk388032.intl.format(Chunk18038.Z["Q+eyqq"], {
           count: 1
         })
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         tag: "div",
         variant: "text-md/normal",
-        children: Chunk388032.intl.format(Chunk931115.Z.XOdbAw, {
+        children: Chunk388032.intl.format(Chunk18038.Z.XOdbAw, {
           username: "some user",
           usernameHook: e => (0, r.jsx)("span", {
             style: {

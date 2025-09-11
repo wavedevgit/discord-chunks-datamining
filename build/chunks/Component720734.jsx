@@ -123,7 +123,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk46140 = require("./46140.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk25874 = require("./25874.js");
+  Chunk490579 = require("./490579.js");
 
 function ti(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -244,7 +244,7 @@ function tv(e) {
     setHighlightBadge: T
   } = tO(), S = (0, ea.A)(f);
   return null == s ? null : (0, r.jsx)(b.Z, {
-    object: e6.qAy.AVATAR,
+    object: e5.qAy.AVATAR,
     children: (0, r.jsx)(em.Z, {
       user: s,
       targetElementRef: h,
@@ -296,7 +296,7 @@ function tv(e) {
           src: s.getAvatarURL(true, O - 4, false),
           avatarDecoration: E,
           "aria-label": s.username,
-          status: a ? e6.Skl.STREAMING : l,
+          status: a ? e5.Skl.STREAMING : l,
           isSpeaking: n,
           className: tr.avatar
         }), (0, r.jsx)("div", {
@@ -369,7 +369,7 @@ class tT extends Chunk647438.PureComponent {
         activities: exports,
         applicationStream: require,
         voiceChannel: Chunk392711 ? l : true,
-        textClassName: Chunk25874.activityStatusText,
+        textClassName: Chunk490579.activityStatusText,
         hideTooltip: true
       })
     });
@@ -377,15 +377,15 @@ class tT extends Chunk647438.PureComponent {
       let {
         type: t
       } = e;
-      return t === e6.IIU.CUSTOM_STATUS
+      return t === e5.IIU.CUSTOM_STATUS
     });
     return null != Chunk374470 ? (0, Chunk951288.jsx)(Chunk570928.Z, {
       hoverText: o,
       forceHover: module,
       children: (0, Chunk951288.jsx)(Chunk427217.Z, {
         activity: Chunk374470,
-        emojiClassName: Chunk25874.emoji,
-        className: Chunk25874.customStatus
+        emojiClassName: Chunk490579.emoji,
+        className: Chunk490579.customStatus
       })
     }) : null != Chunk120356 && Chunk120356 !== Chunk981631.Skl.UNKNOWN && Chunk647438.hasUniqueUsername() ? (0, Chunk951288.jsx)(Chunk570928.Z, {
       hoverText: o,
@@ -531,13 +531,13 @@ class tT extends Chunk647438.PureComponent {
         suppress: t,
         selfMute: n
       } = this.props;
-      (0, B.Z)(e, t, e6.jXE.ACCOUNT_PANEL), (0, Z.v)(N.Z.ACCOUNT, Z.d.MIC, n)
+      (0, B.Z)(e, t, e5.jXE.ACCOUNT_PANEL), (0, Z.v)(N.Z.ACCOUNT, Z.d.MIC, n)
     }), ti(this, "handleToggleSelfDeaf", () => {
       let {
         serverDeaf: e,
         selfDeaf: t
       } = this.props;
-      (0, G.Z)(e, e6.jXE.ACCOUNT_PANEL), (0, Z.v)(N.Z.ACCOUNT, Z.d.DEAFEN, !t)
+      (0, G.Z)(e, e5.jXE.ACCOUNT_PANEL), (0, Z.v)(N.Z.ACCOUNT, Z.d.DEAFEN, !t)
     }), ti(this, "handleOpenAccountSettings", () => {
       this.dismissTooltips(), this.handleOpenSettings()
     }), ti(this, "handleOpenSettings", function() {
@@ -635,7 +635,7 @@ class tT extends Chunk647438.PureComponent {
       (0, eK.JG)(e0.ZP.getUserTag(e, {
         decoration: "never",
         identifiable: "always"
-      })), eY.default.track(e6.rMx.TEXT_COPIED, {
+      })), eY.default.track(e5.rMx.TEXT_COPIED, {
         type: "User Tag"
       });
       let r = {
@@ -688,7 +688,7 @@ class tT extends Chunk647438.PureComponent {
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           className: tr.panelTitleContainer,
-          children: (0, r.jsx)(e5.Z, {
+          children: (0, r.jsx)(e6.Z, {
             className: o()({
               [tr.withDisplayNameStyles]: i
             }),
@@ -821,7 +821,7 @@ function tC() {
           let {
             type: t
           } = e;
-          return t === e6.IIU.STREAMING
+          return t === e5.IIU.STREAMING
         }),
         status: Chunk885110.Z.getStatus()
       }
@@ -858,8 +858,8 @@ function tC() {
     P = (0, Chunk481060.s9z)(Chunk481060.JQI) || Chunk570928 || Chunk374023.s.isDisallowPopupsSet() || Chunk963056,
     w = (0, Chunk332473.b)(),
     j = (0, Chunk442837.e7)([Chunk258609.Z], () => null != Chunk258609.Z.getAwaitingRemoteSessionInfo()),
-    k = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
-    M = Chunk74538.ZP.canUsePremiumGuildMemberProfile(exports),
+    M = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
+    k = Chunk74538.ZP.canUsePremiumGuildMemberProfile(exports),
     U = (null == exports || null == (e = exports.avatarDecoration) ? true : module.skuId) === Chunk215023.rL,
     {
       voiceActivityStatusEnabled: G
@@ -1062,7 +1062,7 @@ function tR(e) {
       play: V
     } = C,
     H = a || s ? m.v0G : B,
-    Y = (0, k.Z)(n, a, s, l),
+    Y = (0, M.Z)(n, a, s, l),
     K = x ? tn.intl.string(tn.t.ARRV6u) : null;
   t = O ? tn.intl.string(tn.t["29gnR0"]) : null != K ? (0, r.jsxs)("div", {
     className: tr.tooltipWithSubtext,
@@ -1096,7 +1096,7 @@ function tR(e) {
       $(false)
     }, []);
   (0, ez.yp)({
-    event: e6.CkL.OPEN_VOICE_FILTER_POPOUT,
+    event: e5.CkL.OPEN_VOICE_FILTER_POPOUT,
     handler: () => {
       $(true)
     }
@@ -1150,7 +1150,7 @@ function tR(e) {
             maybeRenderInputMeter: true,
             renderInputVolume: true,
             renderSettingsButton: true
-          }) : (0, r.jsx)(M.default, {
+          }) : (0, r.jsx)(k.default, {
             onInteraction: (0, F.u)("AudioDeviceMenu", N.Z.ACCOUNT),
             onClose: t,
             renderInputDevices: true,

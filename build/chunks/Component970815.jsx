@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk317257 = require("./317257.js"),
   Chunk583478 = require("./583478.jsx"),
   Chunk976845 = require("./976845.jsx"),
-  Chunk647917 = require("./647917.js");
+  Chunk646855 = require("./646855.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -37,7 +37,7 @@ function _(e) {
   return e
 }
 let p = () => (0, Chunk951288.jsx)("img", {
-    className: Chunk647917.notificationBadge,
+    className: Chunk646855.notificationBadge,
     src: require("./808824.js"),
     alt: ""
   }),
@@ -64,18 +64,18 @@ let p = () => (0, Chunk951288.jsx)("img", {
     }, [D, N]);
     let x = D || A,
       L = A ? null : a,
-      [j, k] = (0, i.useState)(null),
-      M = (0, i.useRef)(null),
+      [j, M] = (0, i.useState)(null),
+      k = (0, i.useRef)(null),
       U = (0, i.useCallback)(() => {
-        M.current = null, k(null)
+        k.current = null, M(null)
       }, []),
       G = (0, i.useCallback)(e => {
-        let t = j === M.current;
-        e > 0 && ("earn" !== j || !t) && k("earn")
-      }, [k, j]),
+        let t = j === k.current;
+        e > 0 && ("earn" !== j || !t) && M("earn")
+      }, [M, j]),
       B = {
         currentAnimationType: j,
-        animationTypeRef: M,
+        animationTypeRef: k,
         onSetAnimationDurationMS: w
       };
     return (0, r.jsx)(s.P3F, {

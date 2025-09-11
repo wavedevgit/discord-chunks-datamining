@@ -185,7 +185,7 @@ function j(e) {
   U(n, r)
 }
 
-function k(e) {
+function M(e) {
   let {
     folderId: t,
     expanded: n
@@ -194,7 +194,7 @@ function k(e) {
   U(r, n)
 }
 
-function M() {
+function k() {
   for (let e of T.allNodes()) module.type === Chunk727258.eD.FOLDER && module.expanded && U(module, false)
 }
 
@@ -265,8 +265,8 @@ class V extends Chunk750041.Z {
       GUILD_FOLDER_EDIT_LOCAL: D,
       GUILD_FOLDER_DELETE_LOCAL: x,
       TOGGLE_GUILD_FOLDER_EXPAND: j,
-      SET_GUILD_FOLDER_EXPANDED: k,
-      GUILD_FOLDER_COLLAPSE: M
+      SET_GUILD_FOLDER_EXPANDED: M,
+      GUILD_FOLDER_COLLAPSE: k
     }), O(this, "loadCache", () => {
       let e = this.readSnapshot(V.LATEST_SNAPSHOT_VERSION),
         t = null == module ? true : module.tree;

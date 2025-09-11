@@ -1,17 +1,17 @@
-/** Chunk was on 44156 **/
-/** chunk id: 548473, original params: a,i,x (module,exports,require) **/
+/** Chunk was on 58227 **/
+/** chunk id: 548473, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  B0: () => w,
+  B0: () => P,
   ZP: () => L,
-  _I: () => j,
-  xm: () => T
+  _I: () => A,
+  xm: () => C
 }), require("./49124.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk500923 = require("./500923.js"),
-  n = require.n(Chunk500923),
+  o = require.n(Chunk500923),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk493773 = require("./493773.js"),
@@ -30,179 +30,179 @@ var Chunk951288 = require("./951288.js"),
   Chunk535170 = require("./535170.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk577436 = require("./577436.js");
+  Chunk104158 = require("./104158.js");
 
-function S(a) {
-  for (var i = 1; i < arguments.length; i++) {
-    var x = null != arguments[i] ? arguments[i] : {},
-      k = Object.keys(x);
-    "function" == typeof Object.getOwnPropertySymbols && (k = k.concat(Object.getOwnPropertySymbols(x).filter(function(a) {
-      return Object.getOwnPropertyDescriptor(x, a).enumerable
-    }))), k.forEach(function(i) {
-      var k;
-      k = x[i], i in a ? Object.defineProperty(a, i, {
-        value: k,
+function D(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      l = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), l.forEach(function(t) {
+      var l;
+      l = n[t], t in e ? Object.defineProperty(e, t, {
+        value: l,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : a[i] = k
+      }) : e[t] = l
     })
   }
-  return a
+  return e
 }
 
-function v(a, i) {
-  return i = null != i ? i : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(i)) : (function(a, i) {
-    var x = Object.keys(a);
+function y(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var k = Object.getOwnPropertySymbols(a);
-      x.push.apply(x, k)
+      var l = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, l)
     }
-    return x
-  })(Object(i)).forEach(function(x) {
-    Object.defineProperty(a, x, Object.getOwnPropertyDescriptor(i, x))
-  }), a
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
 }
 
-function P(a) {
-  let i = (0, m.e7)([l.Z], () => l.Z.useReducedMotion),
-    x = r.useRef(null);
+function G(e) {
+  let t = (0, c.e7)([m.Z], () => m.Z.useReducedMotion),
+    n = r.useRef(null);
   return r.useEffect(() => {
-    let k;
-    return null != x.current && (k = n().loadAnimation({
-      container: x.current,
+    let l;
+    return null != n.current && (l = o().loadAnimation({
+      container: n.current,
       renderer: "svg",
       loop: true,
-      autoplay: !i,
-      animationData: JSON.parse(JSON.stringify(a))
+      autoplay: !t,
+      animationData: JSON.parse(JSON.stringify(e))
     })), () => {
-      null == k || k.destroy()
+      null == l || l.destroy()
     }
-  }, [x, i, a]), x
+  }, [n, t, e]), n
 }
 
-function T() {
-  let a = P(Chunk180504);
+function C() {
+  let e = G(Chunk180504);
   return (0, Chunk951288.jsx)("div", {
-    className: s()(Chunk577436.leftArt, Chunk577436.altFloat),
+    className: a()(Chunk104158.leftArt, Chunk104158.altFloat),
     children: (0, Chunk951288.jsx)("div", {
       ref: module,
-      className: Chunk577436.grillingIsland
+      className: Chunk104158.grillingIsland
     })
   })
 }
 
-function w() {
-  let a = P(Chunk535170);
+function P() {
+  let e = G(Chunk535170);
   return (0, Chunk951288.jsx)("div", {
-    className: s()(Chunk577436.rightArt, Chunk577436.altFloat),
+    className: a()(Chunk104158.rightArt, Chunk104158.altFloat),
     children: (0, Chunk951288.jsx)("div", {
       ref: module,
-      className: Chunk577436.waffleIsland
+      className: Chunk104158.waffleIsland
     })
   })
 }
 
-function j(a) {
+function A(e) {
   let {
-    guild: i,
-    mainIslandClassName: x,
-    balloonDogClassName: t
-  } = a, o = (0, m.e7)([l.Z], () => l.Z.useReducedMotion), e = r.useRef(null), p = P(D), h = y.ZP.getGuildIconURL({
-    id: i.id,
-    icon: i.icon,
+    guild: t,
+    mainIslandClassName: n,
+    balloonDogClassName: i
+  } = e, s = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), d = r.useRef(null), u = G(E), g = I.ZP.getGuildIconURL({
+    id: t.id,
+    icon: t.icon,
     size: 96
   });
   return r.useEffect(() => {
-    let a;
-    return null != e.current && null != h ? (0, f.OF)(h).then(i => {
-      let x = (0, A.Z)(JSON.parse(JSON.stringify(B)), h, i[0]);
-      a = n().loadAnimation({
-        container: e.current,
+    let e;
+    return null != d.current && null != g ? (0, p.OF)(g).then(t => {
+      let n = (0, S.Z)(JSON.parse(JSON.stringify(T)), g, t[0]);
+      e = o().loadAnimation({
+        container: d.current,
         renderer: "svg",
         loop: true,
-        autoplay: !o,
-        animationData: x
+        autoplay: !s,
+        animationData: n
       })
-    }) : null != e.current && (a = n().loadAnimation({
-      container: e.current,
+    }) : null != d.current && (e = o().loadAnimation({
+      container: d.current,
       renderer: "svg",
       loop: true,
-      autoplay: !o,
-      animationData: JSON.parse(JSON.stringify(B))
+      autoplay: !s,
+      animationData: JSON.parse(JSON.stringify(T))
     })), () => {
-      null == a || a.destroy()
+      null == e || e.destroy()
     }
-  }, [h, e, o]), (0, k.jsxs)("div", {
-    className: s()(g.centerArt, g.float),
-    children: [(0, k.jsx)("div", {
-      className: s()(g.balloonDog, t),
-      ref: p
-    }), (0, k.jsx)("div", {
-      className: s()(g.mainIsland, x),
-      ref: e
+  }, [g, d, s]), (0, l.jsxs)("div", {
+    className: a()(b.centerArt, b.float),
+    children: [(0, l.jsx)("div", {
+      className: a()(b.balloonDog, i),
+      ref: u
+    }), (0, l.jsx)("div", {
+      className: a()(b.mainIsland, n),
+      ref: d
     })]
   })
 }
 
-function L(a) {
+function L(e) {
   let {
-    guild: i,
-    onStart: x,
-    onboardingStatus: t,
-    headerId: s,
-    disableTracking: o
-  } = a, n = (0, m.e7)([u.Z], () => u.Z.isLoading()), l = r.useRef(false);
+    guild: t,
+    onStart: n,
+    onboardingStatus: i,
+    headerId: a,
+    disableTracking: s
+  } = e, o = (0, c.e7)([N.Z], () => N.Z.isLoading()), m = r.useRef(false);
   r.useEffect(() => {
-    if (!o) return c.default.track(b.rMx.GUILD_ONBOARDING_STEP_VIEWED, v(S({}, (0, h.hH)(i.id)), {
+    if (!s) return f.default.track(j.rMx.GUILD_ONBOARDING_STEP_VIEWED, y(D({}, (0, g.hH)(t.id)), {
       step: false,
       required: true
     })), () => {
-      c.default.track(b.rMx.GUILD_ONBOARDING_STEP_COMPLETED, v(S({}, (0, h.hH)(i.id)), {
+      f.default.track(j.rMx.GUILD_ONBOARDING_STEP_COMPLETED, y(D({}, (0, g.hH)(t.id)), {
         step: false,
-        skipped: !l.current,
+        skipped: !m.current,
         is_final_step: false,
         in_onboarding: true
       }))
     }
-  }, [i.id, l, o]);
-  let y = r.useMemo(() => (0, d.EB)(i, 135, false, true), [i]);
-  return (0, p.ZP)(() => {
+  }, [t.id, m, s]);
+  let I = r.useMemo(() => (0, h.EB)(t, 135, false, true), [t]);
+  return (0, u.ZP)(() => {
     setTimeout(() => {
-      l.current = true, x()
+      m.current = true, n()
     }, 3e3)
-  }), (0, k.jsx)("div", {
-    className: g.coverContainer,
-    children: (0, k.jsxs)("div", {
-      className: g.centerContent,
-      children: [(0, k.jsx)("div", {
-        children: (0, k.jsx)("img", {
-          className: g.guildImage,
-          src: y,
+  }), (0, l.jsx)("div", {
+    className: b.coverContainer,
+    children: (0, l.jsxs)("div", {
+      className: b.centerContent,
+      children: [(0, l.jsx)("div", {
+        children: (0, l.jsx)("img", {
+          className: b.guildImage,
+          src: I,
           alt: ""
         })
-      }), (0, k.jsxs)("div", {
-        className: g.coverContent,
-        children: [(0, k.jsx)(e.Text, {
-          className: g.coverTitle,
+      }), (0, l.jsxs)("div", {
+        className: b.coverContent,
+        children: [(0, l.jsx)(d.Text, {
+          className: b.coverTitle,
           variant: "text-lg/normal",
           color: "always-white",
-          id: s,
-          children: F.intl.format(F.t["j59F/f"], {
-            guildName: null == i ? true : i.name
+          id: a,
+          children: v.intl.format(v.t["j59F/f"], {
+            guildName: null == t ? true : t.name
           })
-        }), n ? (0, k.jsx)(e.$jN, {
-          className: g.__invalid_subtitle
-        }) : t === G.uX.NOT_APPLICABLE ? (0, k.jsx)(e.X6q, {
-          className: g.__invalid_subtitle,
+        }), o ? (0, l.jsx)(d.$jN, {
+          className: b.__invalid_subtitle
+        }) : i === O.uX.NOT_APPLICABLE ? (0, l.jsx)(d.X6q, {
+          className: b.__invalid_subtitle,
           variant: "heading-xxl/normal",
           color: "always-white",
-          children: F.intl.string(F.t.Q5ibtb)
-        }) : (0, k.jsx)(e.X6q, {
-          className: g.__invalid_subtitle,
+          children: v.intl.string(v.t.Q5ibtb)
+        }) : (0, l.jsx)(d.X6q, {
+          className: b.__invalid_subtitle,
           variant: "heading-xxl/normal",
           color: "always-white",
-          children: F.intl.string(F.t["Alcl/f"])
+          children: v.intl.string(v.t["Alcl/f"])
         })]
       })]
     })

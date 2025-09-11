@@ -2,7 +2,7 @@
 /** chunk id: 433355, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  D5: () => k,
+  D5: () => M,
   ZP: () => en,
   uZ: () => A
 });
@@ -82,11 +82,11 @@ function j(e) {
   return e
 }
 
-function k(e) {
+function M(e) {
   return [u.tI.VIEW_CHANNEL, u.tI.VIEW_THREAD, u.tI.VIEW_MESSAGE_REQUEST, u.tI.VIEW_MOD_REPORT].includes(e.type)
 }
 
-function M(e) {
+function k(e) {
   let t = false;
   x && (x = false, t = true);
   let n = j(m.Z.getChannelId());
@@ -94,15 +94,15 @@ function M(e) {
 }
 
 function U() {
-  x && Chunk585483.S.dispatch(Chunk981631.CkL.SEARCH_RESULTS_CLOSE), N && (N = M(N)), C = M(C)
+  x && Chunk585483.S.dispatch(Chunk981631.CkL.SEARCH_RESULTS_CLOSE), N && (N = k(N)), C = k(C)
 }
 
 function G() {
-  C && (C = M(C)), N = M(N)
+  C && (C = k(C)), N = k(N)
 }
 
 function B() {
-  R || Chunk585483.S.dispatch(Chunk981631.CkL.SEARCH_RESULTS_CLOSE), R = M(R)
+  R || Chunk585483.S.dispatch(Chunk981631.CkL.SEARCH_RESULTS_CLOSE), R = k(R)
 }
 
 function Z(e) {

@@ -28,10 +28,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk210887 = require("./210887.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk740508 = require("./740508.js"),
-  Chunk315091 = require("./315091.js"),
-  Chunk149715 = require("./149715.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk313911 = require("./313911.js"),
+  Chunk285236 = require("./285236.js"),
+  Chunk465106 = require("./465106.js"),
+  Chunk10198 = require("./10198.js");
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -74,8 +74,8 @@ function L(e, t) {
 let j = Chunk442837.ZP.connectStores([Chunk210887.Z], () => ({
     theme: Chunk210887.Z.theme
   }))(Chunk481060.ubH),
-  k = (0, Chunk358085.isWindows)(),
-  M = 18,
+  M = (0, Chunk358085.isWindows)(),
+  k = 18,
   U = "https://www.igdb.com/about";
 
 function G(e) {
@@ -219,13 +219,13 @@ function B(e) {
         text: A.intl.string(A.t["4PJP5u"]),
         children: e => (0, r.jsx)(m.Z, L(D({
           className: C.gameVerifiedIcon,
-          size: M,
+          size: k,
           color: l.Z.unsafe_rawColors.BRAND_500.css
         }, e), {
           children: (0, r.jsx)(u.kmB, {
             size: "custom",
-            width: M,
-            height: M,
+            width: k,
+            height: k,
             color: l.Z.unsafe_rawColors.WHITE_500.css
           })
         }))
@@ -258,7 +258,7 @@ function B(e) {
   }
 
   function X() {
-    if (!k || null != v) return null;
+    if (!M || null != v) return null;
     let {
       overlay: e,
       overlayWarn: t
@@ -397,14 +397,14 @@ function B(e) {
 
 function Z() {
   return (0, Chunk951288.jsx)("div", {
-    className: o()(Chunk149715.flexCenter, Chunk740508.notDetected, Chunk740508.activeGame),
+    className: o()(Chunk465106.flexCenter, Chunk313911.notDetected, Chunk313911.activeGame),
     children: (0, Chunk951288.jsxs)("div", {
-      className: o()(Chunk740508.gameNameLastPlayed, Chunk149715.vertical),
+      className: o()(Chunk313911.gameNameLastPlayed, Chunk465106.vertical),
       children: [(0, Chunk951288.jsx)("div", {
-        className: Chunk740508.gameName,
+        className: Chunk313911.gameName,
         children: Chunk388032.intl.string(Chunk388032.t["H68X9/"])
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk740508.lastPlayed,
+        className: Chunk313911.lastPlayed,
         children: Chunk388032.intl.string(Chunk388032.t.T5Ilm5)
       })]
     })

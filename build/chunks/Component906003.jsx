@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk551488 = require("./551488.jsx"),
   Chunk131573 = require("./131573.jsx"),
   Chunk777207 = require("./777207.jsx"),
-  Chunk577650 = require("./577650.js");
+  Chunk332103 = require("./332103.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -110,8 +110,8 @@ function C(e) {
       rounded: x = false,
       type: L = "button",
       rel: j,
-      onClick: k,
-      onDoubleClick: M,
+      onClick: M,
+      onDoubleClick: k,
       onMouseEnter: U,
       onMouseLeave: G,
       onMouseUp: B,
@@ -174,8 +174,8 @@ function C(e) {
         ref: $,
         rel: j,
         type: L,
-        onClick: el ? e => e.preventDefault() : k,
-        onDoubleClick: el ? e => e.preventDefault() : M,
+        onClick: el ? e => e.preventDefault() : M,
+        onDoubleClick: el ? e => e.preventDefault() : k,
         onMouseUp: el ? true : B,
         onMouseDown: el ? true : Z,
         onKeyDown: el ? true : F,

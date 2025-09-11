@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk144867 = require("./144867.js"),
+  Chunk418548 = require("./418548.js"),
   Chunk769860 = require("./769860.js");
 
 function N(e, t) {
@@ -71,8 +71,8 @@ function w(e) {
       analyticsSource: x,
       analyticsLocation: L,
       body: j,
-      context: k,
-      glowUp: M,
+      context: M,
+      glowUp: k,
       modalClassName: U,
       modalContentClassName: G,
       artContainerClassName: B,
@@ -212,11 +212,11 @@ function w(e) {
         type: w,
         subscriptionTier: null != (a = null == em || null == (n = em.subscription_trial) ? true : n.sku_id) ? a : I.Si.TIER_2,
         headingText: R,
-        context: k,
+        context: M,
         analyticsLocationObject: L,
         discountOffer: eg,
         trialOffer: em,
-        children: M
+        children: k
       }) : (0, r.jsxs)("div", {
         className: A.contentContainer,
         children: [eu, (0, r.jsxs)("div", {

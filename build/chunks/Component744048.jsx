@@ -24,7 +24,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk550385 = require("./550385.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
-  Chunk223399 = require("./223399.js");
+  Chunk537272 = require("./537272.js");
 let I = function(e) {
   let {
     mobile: t
@@ -41,9 +41,9 @@ let I = function(e) {
   if ((0, d.HA)(S, P), n) return null;
   let L = A ? _.Z : f.Z,
     j = C === b.wh.CLIENT_THEMES || D,
-    k = C === b.wh.APP_ICON,
-    M = C === b.wh.CUSTOM_THEME || x;
-  if (!(j || k || M)) return null;
+    M = C === b.wh.APP_ICON,
+    k = C === b.wh.CUSTOM_THEME || x;
+  if (!(j || M || k)) return null;
   let U = () => (0, r.jsxs)(r.Fragment, {
     children: [j && (0, r.jsx)(u.Z, {
       markAsDismissed: D ? w : () => {
@@ -53,10 +53,10 @@ let I = function(e) {
         })
       },
       showClientThemesCoachmark: D
-    }), k && (0, r.jsx)(o.Z, {
+    }), M && (0, r.jsx)(o.Z, {
       isCoachmark: false,
       markAsDismissed: w
-    }), M && (0, r.jsx)(L, {
+    }), k && (0, r.jsx)(L, {
       metadata: null != N ? N : {},
       markAsDismissed: w,
       isCoachmark: x,

@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk715495 = require("./715495.jsx"),
   Chunk538645 = require("./538645.jsx"),
   Chunk383036 = require("./383036.jsx"),
-  Chunk646420 = require("./646420.js");
+  Chunk818917 = require("./818917.js");
 let _ = e => {
     let {
       setTab: t
@@ -74,9 +74,9 @@ let _ = e => {
       }
     };
     return (0, Chunk951288.jsxs)("div", {
-      className: Chunk646420.wrapper,
+      className: Chunk818917.wrapper,
       children: [(0, Chunk951288.jsxs)("div", {
-        className: Chunk646420.nav,
+        className: Chunk818917.nav,
         children: [(0, Chunk951288.jsx)(Chunk793030.X6q, {
           variant: "heading-xxl/medium",
           children: "ShopKeeper"

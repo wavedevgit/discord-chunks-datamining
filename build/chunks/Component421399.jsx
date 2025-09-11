@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk935910 = require("./935910.js"),
   Chunk392819 = require("./392819.js"),
   Chunk131085 = require("./131085.js"),
-  Chunk724913 = require("./724913.js");
+  Chunk136907 = require("./136907.js");
 
 function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -74,9 +74,9 @@ function j(e, t) {
   }), e
 }
 
-function k(e, t) {
+function M(e, t) {
   if (null == e) return {};
-  var n, r, i = M(e, t);
+  var n, r, i = k(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -84,7 +84,7 @@ function k(e, t) {
   return i
 }
 
-function M(e, t) {
+function k(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -114,7 +114,7 @@ function B(e) {
     channel: h,
     userOverride: D,
     compact: L = false,
-    withMentionPrefix: M = false,
+    withMentionPrefix: k = false,
     showPopout: U = false,
     hideGuildTag: B = false,
     hideSystemTag: Z = false,
@@ -129,7 +129,7 @@ function B(e) {
     subscribeToGroupId: X
   } = e, Q = i.useRef(null), J = i.useContext(b.Z), $ = null != (t = null == h ? true : h.guild_id) ? t : J, {
     analyticsLocations: ee
-  } = (0, p.ZP)(_.Z.USERNAME), et = M ? "@" : "", {
+  } = (0, p.ZP)(_.Z.USERNAME), et = k ? "@" : "", {
     nick: en,
     colorString: er,
     colorStrings: ei,
@@ -203,7 +203,7 @@ function B(e) {
     children: e => {
       var {
         onClick: t
-      } = e, n = k(e, ["onClick"]);
+      } = e, n = M(e, ["onClick"]);
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(d.P3F, j(x({
           tag: "span",

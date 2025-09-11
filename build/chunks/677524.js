@@ -1,8 +1,8 @@
-/** Chunk was on 31422 **/
+/** Chunk was on 54628 **/
 /** chunk id: 677524, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => s,
+  Z: () => o,
   p: () => n
 });
 var Chunk760919 = require("./760919.js");
@@ -11,7 +11,7 @@ let n = [
     [false, 1.8759675015077202, .04155505740717559],
     [.05563007969699366, false, 1.0569715142428786]
   ],
-  s = new Chunk760919.Z({
+  o = new Chunk760919.Z({
     id: "srgb-linear",
     name: "Linear sRGB",
     white: "D65",

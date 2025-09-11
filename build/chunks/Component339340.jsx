@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk459931 = require("./459931.js"),
+  Chunk418128 = require("./418128.js"),
   Chunk740353 = require("./740353.js");
 let I = "VoiceChannelStatusModal",
   T = 500;
@@ -34,7 +34,7 @@ function S(e) {
     transitionState: n,
     sourceAnalyticsLocations: S,
     onClose: A
-  } = e, C = (0, a.e7)([d.Z], () => d.Z.getChannelStatus(t)), N = (0, a.e7)([m.Z], () => m.Z.getMediaSessionId()), [R, P] = i.useState(null != C ? C : ""), [w, D] = i.useState(false), [x, L] = i.useState(null), j = (0, a.e7)([g.default], () => g.default.getCurrentUser()), k = R.length > T;
+  } = e, C = (0, a.e7)([d.Z], () => d.Z.getChannelStatus(t)), N = (0, a.e7)([m.Z], () => m.Z.getMediaSessionId()), [R, P] = i.useState(null != C ? C : ""), [w, D] = i.useState(false), [x, L] = i.useState(null), j = (0, a.e7)([g.default], () => g.default.getCurrentUser()), M = R.length > T;
   i.useEffect(() => {
     E.default.track(b.rMx.OPEN_MODAL, {
       type: "Voice Channel Topic Modal",
@@ -42,7 +42,7 @@ function S(e) {
       location_stack: S
     })
   }, [t.guild_id, S]);
-  let M = e => {
+  let k = e => {
       L(new o.Hx(e, e.status).getAnyErrorMessage())
     },
     U = e => {
@@ -79,15 +79,15 @@ function S(e) {
             raw_length: n,
             text_length: r,
             location_stack: S
-          }), A()) : M(e)
+          }), A()) : k(e)
         } catch (e) {
-          M(e)
+          k(e)
         }
         D(false)
       }
     }, [B, Z] = i.useState((0, _.JM)(R)), F = (e, t, n) => {
       P(t), Z(n)
-    }, V = async () => (k || w || await G(), Promise.resolve({
+    }, V = async () => (M || w || await G(), Promise.resolve({
       shouldClear: false,
       shouldRefocus: true
     })), H = (0, r.jsxs)(l.hjN, {
@@ -132,7 +132,7 @@ function S(e) {
     }, {
       variant: "primary",
       loading: w,
-      disabled: k,
+      disabled: M,
       text: y.intl.string(y.t.XqK2Iy),
       onClick: G
     }],

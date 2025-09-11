@@ -26,15 +26,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk681619 = require("./681619.jsx"),
   Chunk621060 = require("./621060.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk687278 = require("./687278.js"),
-  Chunk451429 = require("./451429.js");
+  Chunk578970 = require("./578970.js"),
+  Chunk866403 = require("./866403.js");
 
-function S(e) {
+function O(e) {
   return parseFloat(e.toFixed(3))
 }
 let P = [{
   key: "store",
-  cellClassName: Chunk687278.actionColumn,
+  cellClassName: Chunk578970.actionColumn,
   render(e) {
     let {
       trace: t
@@ -43,12 +43,12 @@ let P = [{
   }
 }, {
   key: "time",
-  cellClassName: Chunk687278.totalTimeColumn,
+  cellClassName: Chunk578970.totalTimeColumn,
   render(e) {
     let {
       trace: t
     } = e;
-    return "".concat(S(t.time), " ms")
+    return "".concat(O(t.time), " ms")
   }
 }];
 
@@ -66,7 +66,7 @@ function k(e) {
     })
   })
 }
-let I = [{
+let R = [{
   id: "action",
   name: "Action",
   group: Chunk621060.v0.NONE,
@@ -82,12 +82,12 @@ let I = [{
           name: "Created at",
           children: (0, a.jsx)("time", {
             dateTime: null == (t = n.createdAt) ? true : t.toISOString(),
-            title: (0, g.vc)(r, "LLLL"),
-            children: (0, g.Y4)(r)
+            title: (0, v.vc)(r, "LLLL"),
+            children: (0, v.Y4)(r)
           })
         }), (0, a.jsxs)(_.Z9, {
           name: "Total Time",
-          children: [S(n.totalTime), " ms"]
+          children: [O(n.totalTime), " ms"]
         })]
       }), (0, a.jsx)(m.zJl, {
         className: T.inspectorContainer,
@@ -111,14 +111,14 @@ let I = [{
   }
 }];
 
-function R(e) {
+function w(e) {
   let {
     actionLog: t,
     initialHeight: n
-  } = e, l = r.useMemo(() => t.error ? [...I, {
+  } = e, l = r.useMemo(() => t.error ? [...R, {
     id: "error",
     name: (0, a.jsxs)(a.Fragment, {
-      children: [(0, a.jsx)(v.Z, {
+      children: [(0, a.jsx)(f.Z, {
         className: T.errorIcon
       }), "Error"]
     }),
@@ -129,11 +129,11 @@ function R(e) {
       } = e;
       return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)("div", {
-          className: i()(T.errorToolbar, O.toolbar),
+          className: i()(T.errorToolbar, S.toolbar),
           children: (0, a.jsx)("div", {
-            className: O.toolbarGroup,
+            className: S.toolbarGroup,
             children: (0, a.jsx)(u.zx, {
-              className: O.toolbarButton,
+              className: S.toolbarButton,
               size: u.zx.Sizes.MIN,
               onClick: () => console.error(t.error),
               children: "Log to Console"
@@ -147,7 +147,7 @@ function R(e) {
         })]
       })
     }
-  }] : I, [t]), {
+  }] : R, [t]), {
     TabBar: s,
     renderSelectedTab: o
   } = (0, N.ZP)({
@@ -157,16 +157,16 @@ function R(e) {
     className: T.subPanel,
     minHeight: 100,
     initialHeight: n,
-    children: [(0, a.jsx)(s, {}), (0, a.jsxs)(h.ZP, {
-      className: i()(O.headerBar, T.subPanelHeaderBar),
-      children: [(0, a.jsx)(h.ZP.Icon, {
+    children: [(0, a.jsx)(s, {}), (0, a.jsxs)(p.ZP, {
+      className: i()(S.headerBar, T.subPanelHeaderBar),
+      children: [(0, a.jsx)(p.ZP.Icon, {
         icon: m.xVZ,
         tooltip: t.name
-      }), (0, a.jsx)(h.ZP.Title, {
-        wrapperClassName: i()(O.headerTitle, O.dispatcherHeader),
-        className: O.headerTitleText,
+      }), (0, a.jsx)(p.ZP.Title, {
+        wrapperClassName: i()(S.headerTitle, S.dispatcherHeader),
+        className: S.headerTitleText,
         children: t.name
-      }), (0, a.jsx)(h.ZP.Icon, {
+      }), (0, a.jsx)(p.ZP.Icon, {
         icon: m.TIy,
         tooltip: "Copy event data",
         onClick: () => {
@@ -175,7 +175,7 @@ function R(e) {
             var a;
             return t[n] = (a = e[n], E.Jn9.test(a) ? "REDACTED" : a), t
           }, {}), null, 2);
-          (0, b.JG)(n, () => (0, m.showToast)({
+          (0, g.JG)(n, () => (0, m.showToast)({
             id: "copy-action-log-name",
             type: m.ToastType.SUCCESS,
             message: "Copied action log data to clipboard"
@@ -187,31 +187,31 @@ function R(e) {
     })]
   })
 }
-let w = [{
+let I = [{
     key: "action",
-    cellClassName: Chunk687278.actionColumn,
+    cellClassName: Chunk578970.actionColumn,
     render(e) {
       let {
         actionLog: t
       } = e;
       return (0, a.jsxs)(a.Fragment, {
-        children: [t.error && (0, a.jsx)(v.Z, {
+        children: [t.error && (0, a.jsx)(f.Z, {
           className: T.errorIcon
         }), t.name]
       })
     }
   }, {
     key: "total time",
-    cellClassName: Chunk687278.totalTimeColumn,
+    cellClassName: Chunk578970.totalTimeColumn,
     render(e) {
       let {
         actionLog: t
       } = e;
-      return "".concat(S(t.totalTime), " ms")
+      return "".concat(O(t.totalTime), " ms")
     }
   }, {
     key: "timestamp",
-    cellClassName: Chunk687278.totalTimeColumn,
+    cellClassName: Chunk578970.totalTimeColumn,
     render(e) {
       let {
         actionLog: t
@@ -248,31 +248,31 @@ function A() {
       actionLog: e
     })).toReversed(), [Chunk120356]),
     [c, u] = Chunk647438.useState(Chunk913527),
-    [h, p] = Chunk647438.useState(Chunk913527),
-    [v, b] = Chunk647438.useState(false),
-    [g, j] = Chunk647438.useState(),
+    [p, x] = Chunk647438.useState(Chunk913527),
+    [f, g] = Chunk647438.useState(false),
+    [v, j] = Chunk647438.useState(),
     _ = Chunk647438.useCallback(e => {
-      p(e)
+      x(e)
     }, []);
   (0, Chunk301801.BO)(exports, Chunk4912 ? c : Chunk913527, Chunk257785, Z);
   let y = Chunk647438.useCallback(e => {
-      u(o), b(e)
+      u(o), g(e)
     }, [Chunk913527]),
     N = exports.trim().length > 0,
     E = Chunk647438.useMemo(() => Chunk621060 ? Chunk665149 : Chunk4912 ? c : Chunk913527, [Chunk913527, Chunk665149, Chunk621060, Chunk4912, c]),
-    S = Chunk4912 ? "Enable Event Tracking" : "Pause Event Tracking";
+    O = Chunk4912 ? "Enable Event Tracking" : "Pause Event Tracking";
   return (0, Chunk951288.jsxs)("div", {
     ref: module,
-    className: i()(Chunk451429.panel, Chunk687278.panel),
+    className: i()(Chunk866403.panel, Chunk578970.panel),
     children: [(0, Chunk951288.jsxs)("div", {
-      className: Chunk687278.toolbar,
+      className: Chunk578970.toolbar,
       children: [(0, Chunk951288.jsx)(Chunk28664.u, {
-        text: S,
+        text: O,
         children: (0, Chunk951288.jsx)(Chunk481060.hU, {
           size: "sm",
           variant: Chunk4912 ? "primary" : "active",
           icon: Chunk4912 ? Chunk481060.o1U : Chunk481060.fpf,
-          "aria-label": S,
+          "aria-label": O,
           onClick: () => Chunk484036(!Chunk4912)
         })
       }), (0, Chunk951288.jsx)(Chunk481060.E1j, {
@@ -283,11 +283,11 @@ function A() {
         placeholder: "Search by action name"
       })]
     }), (0, Chunk951288.jsx)(Chunk681619.Z, {
-      columns: w,
+      columns: I,
       data: Chunk981631,
       selectedRowKey: null == Chunk55935 ? true : Chunk55935.id.toString(),
       onClickRow: e => j(e.actionLog)
-    }), null != Chunk55935 && (0, Chunk951288.jsx)(R, {
+    }), null != Chunk55935 && (0, Chunk951288.jsx)(w, {
       actionLog: Chunk55935,
       initialHeight: null != module.current ? module.current.clientHeight / 2 : 300
     })]

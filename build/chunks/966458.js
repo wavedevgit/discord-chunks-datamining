@@ -1,3 +1,0 @@
-/** Chunk was on 74353 **/
-/** chunk id: 966458, original params: a (module,exports,require) **/
-module.exports = JSON.parse('{"+utqa2":["Opcija pozadine dara: ",[1,"giftStyle"]],"B9XqQk":"Kutija","AJ4iio":"Kolač","P5keo6":"Škrinja","w84vER":"Kava","6dCq/v":"Šalica","+HMF8v":"Nitroween","vd1fu7":"Blagdanska kutija","aubYGR":"Blagdanski kolač","vjxYqa":"Blagdanska škrinja","bHuJLS":"Blagdanska kava","M6cPwM":"Snježna kugla","GzPel5":"Kutija"}')

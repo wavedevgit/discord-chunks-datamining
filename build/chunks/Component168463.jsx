@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk502762 = require("./502762.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk982629 = require("./982629.js");
+  Chunk306349 = require("./306349.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -68,40 +68,40 @@ function h() {
   return (Chunk647438.useEffect(() => () => {
     module && (p = true)
   }, [module]), module) ? (0, Chunk951288.jsx)(Chunk502762.Z.Overlay, {
-    className: Chunk982629.container,
+    className: Chunk306349.container,
     children: (0, Chunk951288.jsx)("div", {
-      className: Chunk982629.content,
+      className: Chunk306349.content,
       children: (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
-        className: Chunk982629.description,
+        className: Chunk306349.description,
         children: Chunk388032.intl.string(Chunk388032.t.X0TrNT)
       })
     })
   }) : (0, Chunk951288.jsx)(Chunk502762.Z.Overlay, {
-    className: Chunk982629.container,
+    className: Chunk306349.container,
     children: (0, Chunk951288.jsxs)("div", {
-      className: Chunk982629.content,
+      className: Chunk306349.content,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
-        className: Chunk982629.description,
+        className: Chunk306349.description,
         children: Chunk388032.intl.string(Chunk388032.t.Qian09)
       }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk982629.buttons,
+        className: Chunk306349.buttons,
         children: [(0, Chunk951288.jsx)(Chunk755721.zx, {
           size: Chunk755721.zx.Sizes.SMALL,
           look: Chunk755721.zx.Looks.FILLED,
           color: Chunk755721.zx.Colors.PRIMARY,
           onClick: u,
-          className: Chunk982629.button,
+          className: Chunk306349.button,
           children: Chunk388032.intl.string(Chunk388032.t.p89ACg)
         }), (0, Chunk951288.jsx)(Chunk755721.zx, {
           size: Chunk755721.zx.Sizes.SMALL,
           look: Chunk755721.zx.Looks.FILLED,
           color: Chunk755721.zx.Colors.PRIMARY,
           onClick: f,
-          className: Chunk982629.button,
+          className: Chunk306349.button,
           children: Chunk388032.intl.string(Chunk388032.t.gm1Ven)
         })]
       })]

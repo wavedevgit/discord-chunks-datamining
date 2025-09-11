@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk638631 = require("./638631.jsx"),
   Chunk869783 = require("./869783.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk876544 = require("./876544.js"),
+  Chunk452761 = require("./452761.js"),
   Chunk678393 = require("./678393.js"),
   Chunk77874 = require("./77874.js"),
   Chunk36426 = require("./36426.js");
@@ -41,7 +41,7 @@ let P = (e, t) => {
       videoRef: D
     } = e, {
       analyticsLocations: x
-    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), L = (0, g._O)(), j = (0, m.Nx)(), k = (0, s.e7)([h.Z], () => h.Z.affinities), M = (0, E.Z)(), U = null != M, G = P ? l.Tt.WHITE : l.Tt.BRAND, B = k.length > 0, Z = S.intl.string(S.t.YCZldH), F = (0, p.rO)(), V = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
+    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), L = (0, g._O)(), j = (0, m.Nx)(), M = (0, s.e7)([h.Z], () => h.Z.affinities), k = (0, E.Z)(), U = null != k, G = P ? l.Tt.WHITE : l.Tt.BRAND, B = M.length > 0, Z = S.intl.string(S.t.YCZldH), F = (0, p.rO)(), V = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
     return (0, r.jsx)(f.Gt, {
       value: x,
       children: (0, r.jsxs)("div", {
@@ -58,7 +58,7 @@ let P = (e, t) => {
               color: "header-primary",
               children: Z
             }), U ? (0, r.jsx)(O.Z, {
-              referrer: M
+              referrer: k
             }) : B && (0, r.jsx)("div", {
               className: A.affinityDescriptionContainer,
               children: (0, r.jsx)(y.Z, {

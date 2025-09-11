@@ -17,8 +17,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk440562 = require("./440562.js"),
   Chunk377089 = require("./377089.js"),
   Chunk680874 = require("./680874.jsx"),
-  Chunk231282 = require("./231282.js"),
-  Chunk154257 = require("./154257.js");
+  Chunk546424 = require("./546424.js"),
+  Chunk525685 = require("./525685.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -96,8 +96,8 @@ function A(e) {
       label: x,
       hideLabel: L,
       description: j,
-      helperText: k,
-      successMessage: M,
+      helperText: M,
+      successMessage: k,
       inputRef: U
     } = e,
     G = v(e, ["value", "placeholder", "autoFocus", "autosize", "minLength", "maxLength", "error", "defaultDirty", "showCharacterCount", "showRemainingCharacterCount", "rows", "disabled", "label", "hideLabel", "description", "helperText", "successMessage", "inputRef"]);
@@ -130,8 +130,8 @@ function A(e) {
     label: x,
     hideLabel: L,
     description: j,
-    helperText: k,
-    successMessage: M,
+    helperText: M,
+    successMessage: k,
     trailingContent: H,
     errorMessage: Z.hasError && null != (t = Z.errorMessage) ? t : true,
     children: (0, r.jsxs)(u.U, {

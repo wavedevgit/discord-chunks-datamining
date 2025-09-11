@@ -137,7 +137,7 @@ function ej(e) {
   } = e, {
     id: s,
     author: l
-  } = t, u = k.default.getId(), d = t.getChannelId(), f = (0, a.e7)([M.Z], () => M.Z.isCallActive(d, s), [d, s]), _ = (0, a.e7)([H.Z], () => H.Z.getVoiceState(eC.ME, u)), p = !f && null != t.call && !t.call.participants.includes(u), h = f && (null == _ || _.channelId !== d), m = i.useCallback(() => c.default.selectVoiceChannel(d), [d]), g = (0, ee.l)({
+  } = t, u = M.default.getId(), d = t.getChannelId(), f = (0, a.e7)([k.Z], () => k.Z.isCallActive(d, s), [d, s]), _ = (0, a.e7)([H.Z], () => H.Z.getVoiceState(eC.ME, u)), p = !f && null != t.call && !t.call.participants.includes(u), h = f && (null == _ || _.channelId !== d), m = i.useCallback(() => c.default.selectVoiceChannel(d), [d]), g = (0, ee.l)({
     user: l,
     channelId: d,
     guildId: o.guild_id,
@@ -154,7 +154,7 @@ function ej(e) {
   })
 }
 
-function ek(e) {
+function eM(e) {
   let {
     message: t,
     compact: n,
@@ -175,7 +175,7 @@ function ek(e) {
   })
 }
 
-function eM(e) {
+function ek(e) {
   let {
     message: t,
     compact: n,
@@ -278,7 +278,7 @@ function eB(e) {
     (0, o.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("91315"), n.e("219")]).then(n.bind(n, 223901));
+      } = await Promise.all([n.e("91315"), n.e("91792")]).then(n.bind(n, 223901));
       return t => (0, r.jsx)(e, ew({
         channel: a
       }, t))
@@ -289,7 +289,7 @@ function eB(e) {
     null != a && (0, s.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("90508"), n.e("99534"), n.e("71350")]).then(n.bind(n, 422200));
+      } = await Promise.all([n.e("90508"), n.e("99534"), n.e("15628")]).then(n.bind(n, 422200));
       return t => (0, r.jsx)(e, ex(ew({}, t), {
         channel: a
       }))
@@ -696,7 +696,7 @@ function e8(e) {
   })
 }
 
-function e5(e) {
+function e6(e) {
   let {
     message: t,
     channel: n
@@ -707,7 +707,7 @@ function e5(e) {
   })
 }
 
-function e6(e) {
+function e5(e) {
   let {
     message: t,
     channel: n
@@ -785,8 +785,8 @@ let tn = Object.freeze({
   [Chunk981631.uaV.RECIPIENT_ADD]: eG,
   [Chunk981631.uaV.RECIPIENT_REMOVE]: eZ,
   [Chunk981631.uaV.CALL]: ej,
-  [Chunk981631.uaV.CHANNEL_NAME_CHANGE]: ek,
-  [Chunk981631.uaV.CHANNEL_ICON_CHANGE]: eM,
+  [Chunk981631.uaV.CHANNEL_NAME_CHANGE]: eM,
+  [Chunk981631.uaV.CHANNEL_ICON_CHANGE]: ek,
   [Chunk981631.uaV.CHANNEL_PINNED_MESSAGE]: eU,
   [Chunk981631.uaV.USER_JOIN]: eF,
   [Chunk981631.uaV.GUILD_BOOST]: eV,
@@ -825,9 +825,9 @@ let tn = Object.freeze({
   [Chunk981631.uaV.VOICE_HANGOUT_INVITE]: true,
   [Chunk981631.uaV.POLL_RESULT]: Chunk507435.Z,
   [Chunk981631.uaV.CHANGELOG]: true,
-  [Chunk981631.uaV.NITRO_NOTIFICATION]: e5,
+  [Chunk981631.uaV.NITRO_NOTIFICATION]: e6,
   [Chunk981631.uaV.CHANNEL_LINKED_TO_LOBBY]: e7,
-  [Chunk981631.uaV.GIFTING_PROMPT]: e6,
+  [Chunk981631.uaV.GIFTING_PROMPT]: e5,
   [Chunk981631.uaV.IN_GAME_MESSAGE_NUX]: e9,
   [Chunk981631.uaV.GUILD_JOIN_REQUEST_ACCEPT_NOTIFICATION]: Chunk29887.Cn,
   [Chunk981631.uaV.GUILD_JOIN_REQUEST_REJECT_NOTIFICATION]: Chunk29887.Ue,

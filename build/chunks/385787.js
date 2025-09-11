@@ -1,4 +1,4 @@
-/** Chunk was on 31422 **/
+/** Chunk was on 54628 **/
 /** chunk id: 385787, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -7,12 +7,12 @@ require.d(exports, {
 });
 var Chunk665352 = require("./665352.js"),
   Chunk147591 = require("./147591.js"),
-  Chunk216397 = require("./216397.js"),
+  Chunk973805 = require("./973805.js"),
   Chunk677524 = require("./677524.js"),
   Chunk37484 = require("./37484.js");
 let c = 216 / 24389,
-  l = 24389 / 27,
-  u = Chunk677524.p["0"]["0"],
+  u = 24389 / 27,
+  l = Chunk677524.p["0"]["0"],
   f = Chunk677524.p["0"]["1"],
   b = Chunk677524.p["0"]["2"],
   d = Chunk677524.p["1"]["0"],
@@ -29,24 +29,24 @@ function v(e, t, r) {
 
 function Z(e) {
   let t = Math.pow(e + 16, 3) / 1560896,
-    r = t > c ? t : e / l,
-    a = r * (284517 * u - 94839 * b),
-    n = r * (838422 * b + 769860 * f + 731718 * u),
-    s = r * (632260 * b - 126452 * f),
-    o = r * (284517 * d - 94839 * p),
+    r = t > c ? t : e / u,
+    a = r * (284517 * l - 94839 * b),
+    n = r * (838422 * b + 769860 * f + 731718 * l),
+    o = r * (632260 * b - 126452 * f),
+    s = r * (284517 * d - 94839 * p),
     i = r * (838422 * p + 769860 * h + 731718 * d),
     v = r * (632260 * p - 126452 * h),
     Z = r * (284517 * m - 94839 * y),
     w = r * (838422 * y + 769860 * g + 731718 * m),
     M = r * (632260 * y - 126452 * g);
   return {
-    r0s: a / s,
-    r0i: n * e / s,
-    r1s: a / (s + 126452),
-    r1i: (n - 769860) * e / (s + 126452),
-    g0s: o / v,
+    r0s: a / o,
+    r0i: n * e / o,
+    r1s: a / (o + 126452),
+    r1i: (n - 769860) * e / (o + 126452),
+    g0s: s / v,
     g0i: i * e / v,
-    g1s: o / (v + 126452),
+    g1s: s / (v + 126452),
     g1i: (i - 769860) * e / (v + 126452),
     b0s: Z / M,
     b0i: w * e / M,
@@ -59,9 +59,9 @@ function w(e, t) {
   let r = t / 360 * Math.PI * 2,
     a = v(e.r0s, e.r0i, r),
     n = v(e.r1s, e.r1i, r),
-    s = v(e.g0s, e.g0i, r),
-    o = v(e.g1s, e.g1i, r);
-  return Math.min(a, n, s, o, v(e.b0s, e.b0i, r), v(e.b1s, e.b1i, r))
+    o = v(e.g0s, e.g0i, r),
+    s = v(e.g1s, e.g1i, r);
+  return Math.min(a, n, o, s, v(e.b0s, e.b0i, r), v(e.b1s, e.b1i, r))
 }
 let M = new Chunk665352.Z({
   id: "hsluv",
@@ -82,7 +82,7 @@ let M = new Chunk665352.Z({
     }
   },
   base: Chunk147591.Z,
-  gamutSpace: Chunk216397.Z,
+  gamutSpace: Chunk973805.Z,
   fromBase(e) {
     let t, [r, a, n] = [(0, i.sI)(e[0]), (0, i.sI)(e[1]), (0, i.sI)(e[2])];
     return r > 99.9999999 ? (t = 0, r = 100) : r < 1e-8 ? (t = 0, r = 0) : t = a / w(Z(r), n) * 100, [n, t, r]

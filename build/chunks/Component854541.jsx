@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk44315 = require("./44315.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk701224 = require("./701224.js");
+  Chunk68701 = require("./68701.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -252,9 +252,9 @@ function D(e) {
         pending: e,
         input: e.hex
       })), n && a((0, c._i)(e.hex))
-    }, [n, a]), k = e => {
+    }, [n, a]), M = e => {
       a((0, c._i)(e))
-    }, M = (0, r.jsxs)(r.Fragment, {
+    }, k = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(i.Suspense, {
         fallback: null,
         children: (0, r.jsx)(S, {
@@ -263,7 +263,7 @@ function D(e) {
             let {
               hex: t
             } = e;
-            return k(t)
+            return M(t)
           },
           color: w.pending.hsl
         })
@@ -292,7 +292,7 @@ function D(e) {
   return (0, r.jsx)(U, {
     "aria-label": g.intl.string(g.t.WTqQ5e),
     className: o()(E.customColorPicker, O),
-    children: M
+    children: k
   })
 }
 let x = Chunk647438.memo(D);

@@ -34,8 +34,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk564651 = require("./564651.js"),
-  Chunk975900 = require("./975900.js");
+  Chunk24506 = require("./24506.js"),
+  Chunk702417 = require("./702417.js");
 
 function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -46,7 +46,7 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -59,7 +59,7 @@ function k(e) {
   return e
 }
 
-function M(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -71,7 +71,7 @@ function M(e, t) {
 }
 
 function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -174,7 +174,7 @@ let Q = e => {
         let {
           channel: e
         } = m.current;
-        I.default.track(P.rMx.OPEN_POPOUT, k({
+        I.default.track(P.rMx.OPEN_POPOUT, M({
           type: P.jXE.STICKER_POPOUT,
           guild_id: e.getGuildId(),
           sticker_pack_id: n.pack_id
@@ -225,7 +225,7 @@ let Q = e => {
       [S, A] = i.useState(null),
       [C, R] = i.useState(false),
       j = v.default.getCurrentUser(),
-      M = T.ZP.canUseCustomStickersEverywhere(j),
+      k = T.ZP.canUseCustomStickersEverywhere(j),
       B = (0, s.e7)([O.Z], () => O.Z.getGuild(n.guild_id)),
       Z = null != B,
       [F, Y] = i.useState(false),
@@ -236,7 +236,7 @@ let Q = e => {
       }), [a.guild_id]),
       {
         current: J
-      } = i.useRef(k({
+      } = i.useRef(M({
         guild_id: a.getGuildId()
       }, (0, f.v_)(a))),
       $ = {
@@ -258,19 +258,19 @@ let Q = e => {
       en = null != S,
       er = false,
       ei = "Custom Sticker Popout";
-    M ? t = Z ? et ? D.intl.string(D.t.fZ0DiI) : D.intl.string(D.t["1f6D9v"]) : en ? D.intl.string(D.t.yHmoR0) : D.intl.string(D.t.vZaScH) : Z ? (t = et ? D.intl.string(D.t.jNphpq) : D.intl.string(D.t.lyD5ZW), er = true, ei = "Custom Sticker Popout (Upsell)") : en ? (t = D.intl.string(D.t.IuXYcn), er = true, ei = "Custom Sticker Popout (Upsell)") : (t = D.intl.format(D.t.hGWuxc, {
+    k ? t = Z ? et ? D.intl.string(D.t.fZ0DiI) : D.intl.string(D.t["1f6D9v"]) : en ? D.intl.string(D.t.yHmoR0) : D.intl.string(D.t.vZaScH) : Z ? (t = et ? D.intl.string(D.t.jNphpq) : D.intl.string(D.t.lyD5ZW), er = true, ei = "Custom Sticker Popout (Upsell)") : en ? (t = D.intl.string(D.t.IuXYcn), er = true, ei = "Custom Sticker Popout (Upsell)") : (t = D.intl.format(D.t.hGWuxc, {
       openPremiumSettings: () => {
         q(a), p()
       }
     }), ei = "Custom Sticker Popout (Soft Upsell)");
-    let ea = !er && !Z && en && M;
+    let ea = !er && !Z && en && k;
     if (i.useEffect(() => {
         let {
           refreshPositionKey: e
         } = ee.current;
         e()
       }, [C, S]), (0, d.ZP)(() => {
-        I.default.track(P.rMx.OPEN_POPOUT, k({
+        I.default.track(P.rMx.OPEN_POPOUT, M({
           type: ei
         }, J))
       }), !C) return (0, r.jsx)(E.SE, {
@@ -355,7 +355,7 @@ let Q = e => {
                 align: _.Z.Align.START,
                 justify: _.Z.Justify.START,
                 className: L.otherEmojisContainer,
-                children: t.map(e => (0, r.jsx)(c.ua7, U(k({
+                children: t.map(e => (0, r.jsx)(c.ua7, U(M({
                   text: e.name
                 }, E.b_), {
                   children: t => {
@@ -363,7 +363,7 @@ let Q = e => {
                       onMouseEnter: n,
                       onMouseLeave: i
                     } = t, a = G(t, ["onMouseEnter", "onMouseLeave"]);
-                    return (0, r.jsx)("div", U(k({
+                    return (0, r.jsx)("div", U(M({
                       className: o()(L.otherEmoji, {
                         [x.nonInteractingSticker]: null != K && K !== e.id
                       }),

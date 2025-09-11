@@ -2,7 +2,7 @@
 /** chunk id: 713081, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Fm: () => p,
+  BN: () => p,
   H6: () => h,
   Qh: () => f,
   Sn: () => _,
@@ -86,12 +86,17 @@ function p(e) {
     oldFormErrors: true,
     rejectWithError: false
   }).then(t => {
-    let n = t.body.reduce((e, t) => (e[t.sku_id] = t, e), {});
-    return i.Z.dispatch({
-      type: "GUILD_UNLOCKED_POWERUPS_FETCH_SUCCESS",
+    let n = {},
+      r = {};
+    t.body.forEach(e => {
+      var t, i, a, o, s, l;
+      (null == (a = e.sku) || null == (i = a.tenant_metadata) || null == (t = i.guild_monetization) ? true : t.powerup) != null ? n[e.sku_id] = e : (null == (l = e.sku) || null == (s = l.tenant_metadata) || null == (o = s.guild_monetization) ? true : o.game_server) != null && (r[e.id] = e)
+    }), i.Z.dispatch({
+      type: "GUILD_BOOST_ENTITLEMENTS_FETCH_SUCCESS",
       guildId: e,
-      unlockedPowerups: n
-    }), t.body
+      unlockedPowerups: n,
+      unlockedGameServers: r
+    })
   })
 }
 

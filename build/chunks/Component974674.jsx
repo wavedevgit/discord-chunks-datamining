@@ -5,7 +5,7 @@ require.d(exports, {
   Vq: () => D,
   Xo: () => V,
   qE: () => U,
-  qe: () => M
+  qe: () => k
 }), require("./415506.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk419061 = require("./419061.js"),
   Chunk268685 = require("./268685.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk536537 = require("./536537.js");
+  Chunk257702 = require("./257702.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -350,7 +350,7 @@ function j(e) {
   }))
 }
 
-function k(e) {
+function M(e) {
   let {
     children: t,
     size: n,
@@ -421,7 +421,7 @@ function k(e) {
     children: [t, w]
   })
 }
-let M = Chunk647438.forwardRef((e, t) => {
+let k = Chunk647438.forwardRef((e, t) => {
   let {
     src: n,
     isSpeaking: i,
@@ -460,7 +460,7 @@ function U(e) {
     imageClassName: A,
     ref: C
   } = e, N = n !== h.Skl.UNKNOWN ? n : null, R = (0, g.UC)(i), P = null != N ? Math.ceil((R.status * g.D6 - R.status) / 2) : 0, x = R.size + P, j = (0, d.vj)(N, a);
-  return (0, r.jsx)(k, I(O({}, e), {
+  return (0, r.jsx)(M, I(O({}, e), {
     ariaLabel: S,
     ariaHidden: T,
     status: N,
@@ -479,7 +479,7 @@ function U(e) {
         width: R.size,
         height: R.size,
         mask: "url(#".concat(w(N, i, s, l), ")"),
-        children: (0, r.jsx)(M, {
+        children: (0, r.jsx)(k, {
           ref: _,
           src: t,
           isSpeaking: m,
@@ -586,7 +586,7 @@ function Z(e) {
       scale: 1
     }] : []
   }, C() ? "animate-always" : "animate-never", [Z, v]);
-  return (0, r.jsx)(k, I(O({}, e), {
+  return (0, r.jsx)(M, I(O({}, e), {
     ariaLabel: x,
     ariaHidden: D,
     typingOffset: ea,
@@ -622,7 +622,7 @@ function Z(e) {
         width: et,
         height: et,
         mask: "url(#".concat(V, ")"),
-        children: (0, r.jsx)(M, {
+        children: (0, r.jsx)(k, {
           src: y,
           isSpeaking: m,
           className: U
@@ -667,7 +667,7 @@ function Z(e) {
 function F(e, t, n, r, i) {
   return null != n && null != t && (!!e || t !== n || t === h.Skl.ONLINE && r !== i)
 }
-M.displayName = "AvatarImg";
+k.displayName = "AvatarImg";
 let V = Chunk647438.memo(function(e) {
   var {
     statusColor: t,

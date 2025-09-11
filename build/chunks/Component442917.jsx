@@ -61,8 +61,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk560688 = require("./560688.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
-  Chunk306762 = require("./306762.js"),
-  Chunk315091 = require("./315091.js");
+  Chunk431740 = require("./431740.js"),
+  Chunk285236 = require("./285236.js");
 
 function el(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -214,7 +214,7 @@ class ef extends Chunk647438.PureComponent {
       return (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "always-white",
-        className: Chunk306762.participantName,
+        className: Chunk431740.participantName,
         lineClamp: 1,
         children: Chunk647438
       })
@@ -312,7 +312,7 @@ class ef extends Chunk647438.PureComponent {
       return (0, r.jsxs)(r.Fragment, {
         children: [a ? this.renderViewersIcon() : null, e ? this.renderSettingsIcon() : null, t ? this.renderPopoutIcon() : null, i ? this.renderStopStreamButton() : null, n ? this.renderDisconnectButton() : null]
       })
-    }), el(this, "renderDisconnectButton", () => (0, r.jsx)(k.Z, {
+    }), el(this, "renderDisconnectButton", () => (0, r.jsx)(M.Z, {
       className: eo.rightTrayIcon,
       onClick: () => (0, v.v)(g.Z.VIDEO_PIP, v.d.DISCONNECT)
     })), el(this, "renderStopStreamButton", () => {
@@ -338,7 +338,7 @@ class ef extends Chunk647438.PureComponent {
           compact: true
         })
       })
-    }), el(this, "renderPopoutIcon", () => (0, r.jsx)(M.Z, {
+    }), el(this, "renderPopoutIcon", () => (0, r.jsx)(k.Z, {
       className: eo.rightTrayIcon,
       popoutOpen: false,
       onOpenPopout: this.handleOpenPopout,

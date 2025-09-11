@@ -36,9 +36,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk674563 = require("./674563.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk682392 = require("./682392.js");
+  Chunk78642 = require("./78642.js");
 
-function k(e, t, n) {
+function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -47,14 +47,14 @@ function k(e, t, n) {
   }) : e[t] = n, e
 }
 
-function M(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      k(e, t, n[t])
+      M(e, t, n[t])
     })
   }
   return e
@@ -79,7 +79,7 @@ function G(e, t) {
 
 function B() {
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk682392.dot
+    className: Chunk78642.dot
   })
 }
 
@@ -207,11 +207,11 @@ function H(e) {
             guildId: s,
             channelId: n.channel_id,
             messageId: n.id,
-            children: e => (0, r.jsxs)(p.P3F, G(M({
+            children: e => (0, r.jsxs)(p.P3F, G(k({
               innerRef: h,
               className: j.alertsEnabledSubHeaderAvatarUsername
             }, e), {
-              children: [(0, r.jsx)("div", G(M({}, f), {
+              children: [(0, r.jsx)("div", G(k({}, f), {
                 children: (0, r.jsx)(p.qEK, {
                   src: u,
                   avatarDecoration: d,

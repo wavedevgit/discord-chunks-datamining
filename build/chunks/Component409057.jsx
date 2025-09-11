@@ -42,7 +42,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk701488 = require("./701488.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk704543 = require("./704543.js");
+  Chunk663907 = require("./663907.js");
 
 function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -113,7 +113,7 @@ function W(e) {
   }), er = (0, T.Z)(i), ei = null != er.text && "" !== er.text, {
     largeImage: ea,
     smallImage: eo
-  } = (0, _.FO)(i, F), es = (0, k.Z)({
+  } = (0, _.FO)(i, F), es = (0, M.Z)({
     location: "UserProfileActivityCard",
     user: t,
     currentUser: n,
@@ -124,7 +124,7 @@ function W(e) {
   }), el = () => {
     let e = (0, s.Z)(i) ? "crunchyroll" : "default",
       t = $ === G.l.MODAL_V2 ? h.J.SIZE_100 : h.J.SIZE_60;
-    return i.type === M.IIU.HANG_STATUS ? (0, r.jsx)(b.Z, {
+    return i.type === k.IIU.HANG_STATUS ? (0, r.jsx)(b.Z, {
       size: $ !== G.l.MODAL_V2 ? 60 : 100,
       hangStatusActivity: i,
       className: a()(Z.hangStatusIcon, Z.image, {
@@ -148,7 +148,7 @@ function W(e) {
         }), es(e)
       }
     })
-  }, ec = () => i.type === M.IIU.HANG_STATUS ? (0, r.jsx)(D.f, {
+  }, ec = () => i.type === k.IIU.HANG_STATUS ? (0, r.jsx)(D.f, {
     variant: "heading-sm/semibold",
     text: (0, E.O8)(i),
     id: X
@@ -179,7 +179,7 @@ function W(e) {
     text: i.name,
     id: X
   }), eu = () => {
-    if (i.type === M.IIU.HANG_STATUS) return null;
+    if (i.type === k.IIU.HANG_STATUS) return null;
     if ((0, u.Z)(i) && null != H) return (0, r.jsx)(D.Z, {
       variant: "text-xs/normal",
       text: B.intl.formatToPlainString(B.t["hq/Qzc"], {
@@ -214,7 +214,7 @@ function W(e) {
     })
   }, ed = () => {
     var e, t, n, a, o, s, l, u;
-    if (i.type === M.IIU.WATCHING) return null;
+    if (i.type === k.IIU.WATCHING) return null;
     if ((0, c.Z)(i)) return ef();
     if ((0, O.dS)(i) && (null == (e = i.party) ? true : e.size) != null && (null == (t = i.party) ? true : t.size.length) >= 2) {
       let e = B.intl.formatToPlainString(B.t["JC/3x8"], {

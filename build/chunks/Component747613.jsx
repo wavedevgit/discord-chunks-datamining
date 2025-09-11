@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk624138 = require("./624138.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk330580 = require("./330580.js");
+  Chunk661021 = require("./661021.js");
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -89,7 +89,7 @@ let P = 20,
   L = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_EMOJI_CONTAINER_PADDING_VERTICAL),
   j = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_DIVERSITY_EMOJI_SIZE);
 
-function k(e) {
+function M(e) {
   switch (d.Z.convert.toCodePoint(e)) {
     case "1f3fb":
       return v.intl.string(v.t.BVK5b2);
@@ -105,7 +105,7 @@ function k(e) {
       return v.intl.string(v.t.bGN1o6)
   }
 }
-let M = e => {
+let k = e => {
     let {
       fade: t,
       surrogate: n,
@@ -125,7 +125,7 @@ let M = e => {
       onClick: () => i(n),
       className: I.diversityEmojiItem,
       children: (0, r.jsx)(c.animated.div, {
-        "aria-label": k(n),
+        "aria-label": M(n),
         className: I.diversityEmojiItemImage,
         style: S({
           backgroundImage: 'url("'.concat(l, '")')
@@ -164,7 +164,7 @@ let M = e => {
             className: I.diversitySelectorOptions,
             style: s,
             role: "listbox",
-            children: d.map((e, t) => (0, r.jsx)(M, {
+            children: d.map((e, t) => (0, r.jsx)(k, {
               index: t,
               fade: 0 !== t,
               delay: t * P,

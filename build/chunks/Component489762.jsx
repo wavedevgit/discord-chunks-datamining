@@ -40,7 +40,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk957825 = require("./957825.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk473049 = require("./473049.js"),
+  Chunk921923 = require("./921923.js"),
   Chunk239840 = require("./239840.js");
 
 function Z(e, t, n) {
@@ -141,7 +141,7 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         } = e;
         if (null == s) return;
         let l = H(F({}, a.location), {
-          object: "" === o ? k.qAy.STICKER_PICKER_VIEW_ALL : k.qAy.STICKER_SEARCH_VIEW_ALL
+          object: "" === o ? M.qAy.STICKER_PICKER_VIEW_ALL : M.qAy.STICKER_SEARCH_VIEW_ALL
         });
         if (null != s && !(0, A.kl)(s, r, n)) {
           let e = (0, w.J8)(s);
@@ -151,7 +151,7 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         if (i) return void((0, w.gM)(s.id) ? (0, C.hW)(s.id) : ((0, N.cQ)({
           sticker: s,
           location: H(F({}, l), {
-            object: k.qAy.STICKER
+            object: M.qAy.STICKER
           })
         }), (0, C.SA)(s.id)));
         t(e)
@@ -210,9 +210,9 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       let {
         isStickerPack: n = true
       } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, r = new Set(t), i = t.has(e);
-      i ? r.delete(e) : r.add(e), I.default.track(k.rMx.EXPRESSION_PICKER_CATEGORY_COLLAPSE_TOGGLED, {
+      i ? r.delete(e) : r.add(e), I.default.track(M.rMx.EXPRESSION_PICKER_CATEGORY_COLLAPSE_TOGGLED, {
         location: null == A ? true : A.location,
-        tab: M.X1.STICKER,
+        tab: k.X1.STICKER,
         collapsed: !i,
         sticker_pack_id: n ? e : null
       }), F(r)
@@ -359,8 +359,8 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       analyticsLocations: w
     } = (0, f.ZP)(d.Z.STICKER_PICKER), D = (0, m.Iu)(e => e.searchQuery), x = (0, o.e7)([R.Z], () => R.Z.getPremiumPacks()), {
       renderRow: j,
-      renderSection: k,
-      renderSectionFooter: M,
+      renderSection: M,
+      renderSectionFooter: k,
       sectionFooterHeight: Z,
       renderSectionHeader: F,
       sectionHeaderHeight: V
@@ -443,9 +443,9 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
           listPadding: null != l ? el : es,
           onScroll: H,
           renderRow: j,
-          renderSection: null == l ? k : true,
+          renderSection: null == l ? M : true,
           renderSectionHeader: F,
-          renderSectionFooter: M,
+          renderSectionFooter: k,
           rowCount: O,
           rowCountBySection: v,
           rowHeight: s > Y ? ei : ea,

@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk358595 = require("./358595.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk105341 = require("./105341.js");
+  Chunk739236 = require("./739236.js");
 
 function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -59,8 +59,8 @@ function T(e) {
     L = x === D.author.id,
     {
       channel: j,
-      approximate_member_count: k,
-      approximate_presence_count: M
+      approximate_member_count: M,
+      approximate_presence_count: k
     } = w,
     U = w.state === b.r2o.ACCEPTING,
     G = null != j ? (0, p.jD)(j) : null,
@@ -142,9 +142,9 @@ function T(e) {
         isBannerVisible: false
       })
     })]
-  })) : null != k && k >= 5 || null != M && M > 0 ? S = (0, r.jsx)(_.Z.Data, {
-    members: k,
-    membersOnline: M
+  })) : null != M && M >= 5 || null != k && k > 0 ? S = (0, r.jsx)(_.Z.Data, {
+    members: M,
+    membersOnline: k
   }) : Z && (S = (0, r.jsx)(_.Z.Channel, {
     channel: G,
     guild: P
@@ -180,7 +180,7 @@ function T(e) {
           onClick: () => (0, s.ZDy)(async () => {
             let {
               default: e
-            } = await Promise.all([n.e("95468"), n.e("70799")]).then(n.bind(n, 650233));
+            } = await Promise.all([n.e("95468"), n.e("18995")]).then(n.bind(n, 650233));
             return t => (0, r.jsx)(e, I({}, t))
           })
         })

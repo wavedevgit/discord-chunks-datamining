@@ -1,11 +1,11 @@
 /** Chunk was on 44799 **/
 /** chunk id: 877362, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => N
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk304789 = require("./304789.jsx"),
@@ -25,56 +25,56 @@ var Chunk951288 = require("./951288.js"),
   Chunk5192 = require("./5192.js"),
   Chunk998502 = require("./998502.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk989308 = require("./989308.js"),
+  Chunk258640 = require("./258640.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk127181 = require("./127181.js"),
+  Chunk540206 = require("./540206.js"),
   Chunk350618 = require("./350618.js");
-let Z = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk99690.Z;
+let w = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk99690.Z;
 
-function S(e) {
+function N(e) {
   var t, n;
   let {
-    guildId: i
-  } = e, d = (0, l.e7)([b.Z], () => b.Z.getGuild(i)), T = (0, l.e7)([h.Z], () => h.Z.getSortedRoles(i).find(e => {
+    guildId: o
+  } = e, d = (0, a.e7)([b.Z], () => b.Z.getGuild(o)), E = (0, a.e7)([x.Z], () => x.Z.getSortedRoles(o).find(e => {
     var t;
     return (null == (t = e.tags) ? true : t.premium_subscriber) === null
-  })), S = (0, l.e7)([C.default], () => C.default.getCurrentUser()), N = null == S ? true : S.id, k = (0, l.e7)([x.ZP], () => null != N ? x.ZP.getMember(i, N) : true, [N, i]), O = (null == k ? true : k.premiumSince) != null, A = (0, l.e7)([p.Z], () => p.Z.useReducedMotion), {
+  })), N = (0, a.e7)([C.default], () => C.default.getCurrentUser()), O = null == N ? true : N.id, Z = (0, a.e7)([h.ZP], () => null != O ? h.ZP.getMember(o, O) : true, [O, o]), k = (null == Z ? true : Z.premiumSince) != null, A = (0, a.e7)([p.Z], () => p.Z.useReducedMotion), {
     avatarDecorationSrc: U,
     avatarSrc: R,
     eventHandlers: L
   } = (0, _.Z)({
-    userId: null == S ? true : S.id,
-    guildId: i,
+    userId: null == N ? true : N.id,
+    guildId: o,
     size: u.EFr.SIZE_40,
     animateOnHover: !A
   });
-  return null == d || null == k || null == S ? null : (0, r.jsxs)(a.$, {
+  return null == d || null == Z || null == N ? null : (0, r.jsxs)(s.$, {
     className: y.container,
     children: [(0, r.jsx)("img", {
       alt: "",
       className: y.image,
-      src: w
+      src: S
     }), (0, r.jsxs)("div", {
       className: y.textContainer,
-      children: [(0, r.jsx)(s.xvT, {
+      children: [(0, r.jsx)(l.xvT, {
         variant: "text-md/semibold",
-        children: I.intl.string(O ? P.default.KSWK1d : P.default.XXXX5u)
-      }), (0, r.jsx)(s.xvT, {
+        children: I.intl.string(k ? P.default.KSWK1d : P.default.XXXX5u)
+      }), (0, r.jsx)(l.xvT, {
         variant: "text-sm/medium",
-        children: I.intl.format(O ? P.default["7fWTg4"] : P.default["7PXeeX"], {
+        children: I.intl.format(k ? P.default["7fWTg4"] : P.default["7PXeeX"], {
           onClick: () => {
             (0, m.f)({
-              guildId: i,
+              guildId: o,
               location: {
-                section: E.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR,
-                object: E.qAy.LEARN_MORE
+                section: T.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR,
+                object: T.qAy.LEARN_MORE
               }
             })
           }
         })
       })]
-    }), null != T && !O && (0, r.jsx)(v.l, {
-      avatar: (0, r.jsx)(Z, (t = function(e) {
+    }), null != E && !k && (0, r.jsx)(v.l, {
+      avatar: (0, r.jsx)(w, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -92,7 +92,7 @@ function S(e) {
         }
         return e
       }({}, L), n = n = {
-        user: S,
+        user: N,
         src: R,
         avatarDecoration: U,
         size: u.EFr.SIZE_40,
@@ -110,11 +110,11 @@ function S(e) {
       }), t)),
       username: (0, r.jsx)(u.PUh, {
         variant: "text-md/semibold",
-        name: j.ZP.getName(i, null, S),
-        colorString: T.colorString,
-        colorStrings: T.colorStrings
+        name: j.ZP.getName(o, null, N),
+        colorString: E.colorString,
+        colorStrings: E.colorStrings
       }),
-      className: o()(y.content, y.exampleMessage),
+      className: i()(y.content, y.exampleMessage),
       message: I.intl.string(I.t["6OSasb"]),
       decorations: (0, r.jsx)(u.$Eu, {
         color: u.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
@@ -124,8 +124,8 @@ function S(e) {
       guild: d,
       className: y.content,
       analyticsLocation: {
-        page: E.ZY5.GUILD_POWERUPS_OVERVIEW,
-        section: E.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR
+        page: T.ZY5.GUILD_POWERUPS_OVERVIEW,
+        section: T.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR
       },
       color: c.Tt.BRAND,
       size: c.Ph.MEDIUM,

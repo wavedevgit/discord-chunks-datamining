@@ -36,7 +36,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk965406 = require("./965406.js");
+  Chunk587277 = require("./587277.js");
 
 function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -60,7 +60,7 @@ function j(e) {
   return e
 }
 
-function k(e, t) {
+function M(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -71,8 +71,8 @@ function k(e, t) {
   return n
 }
 
-function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+function k(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -165,12 +165,12 @@ function F(e) {
 
 function V() {
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk965406.wordMark,
+    className: Chunk587277.wordMark,
     children: [(0, Chunk951288.jsx)(Chunk754347.Z, {
-      className: Chunk965406.discordWordmark,
+      className: Chunk587277.discordWordmark,
       "aria-label": Chunk388032.intl.string(Chunk388032.t["FSOz7+"])
     }), (0, Chunk951288.jsx)("div", {
-      className: Chunk965406.classicWordmark
+      className: Chunk587277.classicWordmark
     })]
   })
 }
@@ -182,11 +182,11 @@ function H() {
   return (0, Chunk951288.jsx)(Z, {
     wordMark: (0, Chunk951288.jsx)(V, {}),
     subscriptionInfo: (0, Chunk951288.jsx)("div", {
-      className: Chunk965406.planInfo,
+      className: Chunk587277.planInfo,
       children: Chunk388032.intl.string(Chunk388032.t.R0GJLy)
     }),
     buttons: (0, Chunk951288.jsx)(Chunk987997.Z, {
-      className: Chunk965406.toolsButton,
+      className: Chunk587277.toolsButton,
       onClick: () => (0, Chunk963249.Z)({
         subscriptionTier: Chunk474936.Si.TIER_1,
         analyticsLocations: module,
@@ -195,7 +195,7 @@ function H() {
       children: Chunk388032.intl.string(Chunk388032.t["/ygMUV"])
     }),
     statusClasses: {
-      [Chunk965406.tier1]: true
+      [Chunk587277.tier1]: true
     }
   })
 }
@@ -208,7 +208,7 @@ let Y = function(e) {
     busy: _,
     analyticsLocation: C
   } = e, L = "subscription_header", {
-    analyticsLocations: k
+    analyticsLocations: M
   } = (0, d.ZP)(u.Z.SUBSCRIPTION_HEADER), {
     fractionalState: H
   } = (0, f.Z)({
@@ -238,10 +238,10 @@ let Y = function(e) {
         let {
           PremiumBrandRefreshSubscriptionCancellationModal: t
         } = await n.e("26526").then(n.bind(n, 48813));
-        return n => (0, r.jsx)(t, M(j({}, n), {
+        return n => (0, r.jsx)(t, k(j({}, n), {
           premiumSubscription: i,
           analyticsLocation: C,
-          analyticsLocations: k,
+          analyticsLocations: M,
           initialStep: e
         }))
       })
@@ -253,9 +253,9 @@ let Y = function(e) {
         let t = (0, O.DE)(e, null == o ? true : o.id, false),
           n = t.length > 0 ? t[0] : i.currency,
           r = false;
-        1 === t.length && (null == o ? true : o.id) === i.paymentSourceId && (0, O.tD)(e.id, n, null == o ? true : o.id) && (r = true), r ? c.O5(i, k) : (0, p.Z)({
+        1 === t.length && (null == o ? true : o.id) === i.paymentSourceId && (0, O.tD)(e.id, n, null == o ? true : o.id) && (r = true), r ? c.O5(i, M) : (0, p.Z)({
           initialPlanId: i.premiumPlanIdFromItems,
-          analyticsLocations: k,
+          analyticsLocations: M,
           analyticsLocation: C,
           analyticsObject: G,
           subscription: i
@@ -272,12 +272,12 @@ let Y = function(e) {
       });
       i.status === w.O0b.PAUSED ? (0, p.Z)({
         initialPlanId: i.premiumPlanIdFromItems,
-        analyticsLocations: k,
+        analyticsLocations: M,
         analyticsLocation: C,
         analyticsObject: G,
         subscription: i,
         skipConfirm: true
-      }) : c.v4(i, k)
+      }) : c.v4(i, M)
     },
     ei = () => {
       i.status === w.O0b.PAUSED && et(R.R.PAUSE_SELECT)
@@ -338,12 +338,12 @@ let Y = function(e) {
             })
           }), (0, r.jsx)(l.ua7, {
             text: t,
-            children: t => (0, r.jsx)(N.Z, M(j({}, t), {
+            children: t => (0, r.jsx)(N.Z, k(j({}, t), {
               disabled: e,
               className: x.toolsButton,
               onClick: () => {
                 (0, p.Z)({
-                  analyticsLocations: k,
+                  analyticsLocations: M,
                   analyticsLocation: C,
                   analyticsObject: G,
                   subscription: i

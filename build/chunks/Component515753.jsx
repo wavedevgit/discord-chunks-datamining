@@ -60,7 +60,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk998502 = require("./998502.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk800525 = require("./800525.js");
+  Chunk551139 = require("./551139.js");
 
 function er(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -170,17 +170,17 @@ let ec = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chun
   e_ = () => (0, Chunk951288.jsx)(Chunk481060.r7p, {
     size: "xs",
     color: "currentColor",
-    className: Chunk800525.favoriteIcon
+    className: Chunk551139.favoriteIcon
   }),
   ep = () => (0, Chunk951288.jsx)(Chunk481060.kZF, {
     size: "xs",
     color: "currentColor",
-    className: Chunk800525.favoriteIcon
+    className: Chunk551139.favoriteIcon
   }),
   eh = () => (0, Chunk951288.jsx)(Chunk481060.t6m, {
     size: "xs",
     color: "currentColor",
-    className: Chunk800525.favoriteIcon
+    className: Chunk551139.favoriteIcon
   }),
   em = e => {
     var {
@@ -269,10 +269,10 @@ function eg(e) {
   } = (0, p.cj)([z.Z], () => ({
     ignored: z.Z.isIgnored(t.getRecipientId()),
     blocked: z.Z.isBlocked(t.getRecipientId())
-  })), eD = eC && eP, ex = eC && ew, eL = (eR || eD || ex) && !(s || $), ej = (0, p.e7)([K.ZP], () => K.ZP.getMentionCount(t.id) > 0), ek = (0, N.ZP)(t), eM = (0, p.e7)([L.Z], () => L.Z.isFavorite(t.id)), {
+  })), eD = eC && eP, ex = eC && ew, eL = (eR || eD || ex) && !(s || $), ej = (0, p.e7)([K.ZP], () => K.ZP.getMentionCount(t.id) > 0), eM = (0, N.ZP)(t), ek = (0, p.e7)([L.Z], () => L.Z.isFavorite(t.id)), {
     dotsInsteadOfCloseButton: eU,
     rearrangeContextMenu: eG
-  } = k.Z.useExperiment({
+  } = M.Z.useExperiment({
     location: "private_channel"
   }, {
     autoTrackExposure: true
@@ -315,7 +315,7 @@ function eg(e) {
     }) : (0, g.jW)(e, async () => {
       let {
         default: e
-      } = a ? await Promise.all([n.e("90508"), n.e("56167")]).then(n.bind(n, 416951)) : await Promise.all([n.e("79695"), n.e("90508"), n.e("98783"), n.e("56826"), n.e("8074")]).then(n.bind(n, 131404));
+      } = a ? await Promise.all([n.e("90508"), n.e("56167")]).then(n.bind(n, 416951)) : await Promise.all([n.e("79695"), n.e("90508"), n.e("98783"), n.e("56826"), n.e("43812")]).then(n.bind(n, 131404));
       return n => (0, r.jsx)(e, eo(ei({}, n), {
         user: f,
         channel: t,
@@ -328,15 +328,15 @@ function eg(e) {
   }, eQ = e => {
     e.preventDefault(), e.stopPropagation();
     let i = et.intl.formatToPlainString(et.t.hJ5Ap6, {
-        name: ek
+        name: eM
       }),
       a = et.intl.format(et.t.SSIVOj, {
-        name: ek
+        name: eM
       });
     t.isManaged() && (i = et.intl.formatToPlainString(et.t.hVGjER, {
-      name: ek
+      name: eM
     }), a = et.intl.format(et.t.IK1Qvr, {
-      name: ek
+      name: eM
     })), (0, h.ZDy)(async () => {
       let {
         default: e
@@ -372,7 +372,7 @@ function eg(e) {
   }) : null, e$ = () => {
     let e = h.EFr.SIZE_32;
     if (t.isMultiUserDM())
-      if (t.recipients.length >= 2 && a && null == t.icon) return (0, r.jsx)(M.Z, {
+      if (t.recipients.length >= 2 && a && null == t.icon) return (0, r.jsx)(k.Z, {
         "aria-hidden": true,
         recipients: t.recipients,
         size: e,
@@ -399,7 +399,7 @@ function eg(e) {
       statusTooltip: true
     }))
   }, e0 = (0, r.jsx)(x.Z, {
-    userName: ek,
+    userName: eM,
     displayNameStyles: null == f ? true : f.displayNameStyles,
     effectDisplayType: $ || s || em ? D.F.ANIMATED : D.F.PLAIN,
     loop: $,
@@ -490,7 +490,7 @@ function eg(e) {
             className: o()(en.iconsContainer, {
               [en.nameplated]: eZ
             }),
-            children: [eM && !em ? (0, r.jsx)(e_, {}) : null, eD ? (0, r.jsx)(ep, {}) : null, ex ? (0, r.jsx)(eh, {}) : null, eU && !e4 ? (0, r.jsx)(h.ua7, {
+            children: [ek && !em ? (0, r.jsx)(e_, {}) : null, eD ? (0, r.jsx)(ep, {}) : null, ex ? (0, r.jsx)(eh, {}) : null, eU && !e4 ? (0, r.jsx)(h.ua7, {
               text: et.intl.string(eT ? et.t.Et8qws : et.t["d+e27u"]),
               delay: ed,
               targetElementRef: eB,

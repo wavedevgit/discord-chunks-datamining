@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk96848 = require("./96848.jsx"),
   Chunk703926 = require("./703926.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk611344 = require("./611344.js");
+  Chunk469059 = require("./469059.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -95,7 +95,7 @@ let A = e => {
     orientation: "horizontal"
   }), {
     ref: L
-  } = x, j = T(x, ["ref"]), k = (0, d.MY)(y, t), M = k === d.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = k !== d.xr.DEFAULT, G = (0, p.m)(), B = (0, _.ZP)({
+  } = x, j = T(x, ["ref"]), M = (0, d.MY)(y, t), k = M === d.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = M !== d.xr.DEFAULT, G = (0, p.m)(), B = (0, _.ZP)({
     location: "GiftAnimationOptions"
   }), Z = e => {
     null != R && R(null == e ? true : e)
@@ -111,7 +111,7 @@ let A = e => {
         className: b.animation
       }) : (0, r.jsx)(l.$jN, {
         className: b.spinner
-      }), M && (0, r.jsxs)("div", {
+      }), k && (0, r.jsxs)("div", {
         className: o()(b.soundEmojiContainer, B && b.refresh),
         children: [(0, r.jsx)(u.Z, {
           sound: C,

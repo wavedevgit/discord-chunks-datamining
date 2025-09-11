@@ -1,13 +1,13 @@
 /** Chunk was on 58227 **/
 /** chunk id: 869764, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b,
+  Z: () => D,
   k: () => v
 }), require("./997841.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk933557 = require("./933557.js"),
@@ -26,54 +26,54 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk372897 = require("./372897.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk371882 = require("./371882.js");
+  Chunk195286 = require("./195286.js");
 
 function v(e) {
   var {
     title: t,
     emojiId: n,
-    emojiName: i,
-    icon: r,
-    completed: a,
+    emojiName: r,
+    icon: i,
+    completed: s,
     Icon: c,
     onClick: d
   } = e, u = function(e, t) {
     if (null == e) return {};
-    var n, l, i = function(e, t) {
+    var n, l, r = function(e, t) {
       if (null == e) return {};
-      var n, l, i = {},
-        r = Object.keys(e);
-      for (l = 0; l < r.length; l++) n = r[l], t.indexOf(n) >= 0 || (i[n] = e[n]);
-      return i
+      var n, l, r = {},
+        i = Object.keys(e);
+      for (l = 0; l < i.length; l++) n = i[l], t.indexOf(n) >= 0 || (r[n] = e[n]);
+      return r
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      for (l = 0; l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var i = Object.getOwnPropertySymbols(e);
+      for (l = 0; l < i.length; l++) n = i[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
-    return i
+    return r
   }(e, ["title", "emojiId", "emojiName", "icon", "completed", "Icon", "onClick"]);
   let m = "channel" === u.variant ? u.channelId : null,
-    h = "static" === u.variant ? u.subtitle : u.channelName,
-    g = null != m ? N.ZP.getNewMemberActionIconURL({
+    g = "static" === u.variant ? u.subtitle : u.channelName,
+    h = null != m ? I.ZP.getNewMemberActionIconURL({
       channelId: m,
-      icon: r
+      icon: i
     }) : null;
   return (0, l.jsxs)(o.Zbd, {
-    className: s()(j.action, {
+    className: a()(j.action, {
       [j.clickableAction]: null != d
     }),
     onClick: d,
-    children: [null != g ? (0, l.jsx)("img", {
-      src: g,
+    children: [null != h ? (0, l.jsx)("img", {
+      src: h,
       className: j.icon,
       width: 32,
       height: 32,
       alt: "",
       "aria-hidden": true
-    }) : (0, l.jsx)(T.Z, {
+    }) : (0, l.jsx)(E.Z, {
       emojiId: n,
-      emojiName: i,
-      size: T.R.LARGE,
+      emojiName: r,
+      size: E.R.LARGE,
       defaultComponent: (0, l.jsx)("div", {
         className: j.channelIconContainer,
         children: (0, l.jsx)(c, {
@@ -87,17 +87,17 @@ function v(e) {
         variant: "text-md/semibold",
         color: "header-primary",
         children: t
-      }), null != h ? (0, l.jsx)(o.Text, {
+      }), null != g ? (0, l.jsx)(o.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: h
+        children: g
       }) : null]
-    }), a ? (0, l.jsx)(o.owK, {
+    }), s ? (0, l.jsx)(o.owK, {
       size: "md",
       color: "currentColor",
       secondaryColor: "#fff",
       className: j.checkCircleCompleted
-    }) : (0, l.jsx)(I.Z, {
+    }) : (0, l.jsx)(f.Z, {
       className: j.checkCircle,
       width: 24,
       height: 24
@@ -105,48 +105,48 @@ function v(e) {
   })
 }
 
-function D(e) {
+function b(e) {
   var t;
   let {
     action: n,
-    completed: r
+    completed: i
   } = e, {
-    channelId: s,
+    channelId: a,
     title: m,
-    emoji: h,
-    icon: I
+    emoji: g,
+    icon: f
   } = n, {
-    id: N,
-    name: f
-  } = null != h ? h : {}, p = (0, a.e7)([u.Z], () => u.Z.getChannel(s)), E = (0, c.ZP)(p, true), T = (0, a.e7)([g.Z], () => g.Z.can(O.Plq.VIEW_CHANNEL, p)), x = i.useMemo(() => {
-    if (null != p) return () => (0, S.gp)(p.guild_id, p.id)
-  }, [p]);
-  if (null == p || !T) return null;
-  let _ = null != (t = (0, d.KS)(p)) ? t : o.VL1;
+    id: I,
+    name: p
+  } = null != g ? g : {}, O = (0, s.e7)([u.Z], () => u.Z.getChannel(a)), S = (0, c.ZP)(O, true), E = (0, s.e7)([h.Z], () => h.Z.can(x.Plq.VIEW_CHANNEL, O)), T = r.useMemo(() => {
+    if (null != O) return () => (0, N.gp)(O.guild_id, O.id)
+  }, [O]);
+  if (null == O || !E) return null;
+  let _ = null != (t = (0, d.KS)(O)) ? t : o.VL1;
   return (0, l.jsx)(v, {
     variant: "channel",
-    channelId: s,
+    channelId: a,
     title: m,
-    channelName: E,
-    emojiId: N,
-    emojiName: f,
-    icon: I,
-    completed: r,
+    channelName: S,
+    emojiId: I,
+    emojiName: p,
+    icon: f,
+    completed: i,
     Icon: _,
-    onClick: x
+    onClick: T
   })
 }
 
-function b(e) {
+function D(e) {
   let {
     guildId: t
-  } = e, n = (0, a.e7)([p.Z], () => p.Z.getNewMemberActions(t), [t]), r = (0, a.e7)([E.Z], () => E.Z.getCompletedActions(t)), c = (0, a.e7)([m.ZP], () => m.ZP.getSelfMember(t)), d = (0, a.e7)([h.Z], () => h.Z.getGuild(t));
-  i.useEffect(() => {
+  } = e, n = (0, s.e7)([O.Z], () => O.Z.getNewMemberActions(t), [t]), i = (0, s.e7)([S.Z], () => S.Z.getCompletedActions(t)), c = (0, s.e7)([m.ZP], () => m.ZP.getSelfMember(t)), d = (0, s.e7)([g.Z], () => g.Z.getGuild(t));
+  r.useEffect(() => {
     var e;
-    null == r && (null == c ? true : c.flags) != null && (0, f.yE)(null != (e = c.flags) ? e : 0, x.q.STARTED_HOME_ACTIONS) && (0, S.Fg)(t)
-  }, [r, t, null == c ? true : c.flags]);
-  let u = i.useCallback(() => {
-    null != d && null != d.rulesChannelId && (0, S.gp)(d.id, d.rulesChannelId)
+    null == i && (null == c ? true : c.flags) != null && (0, p.yE)(null != (e = c.flags) ? e : 0, T.q.STARTED_HOME_ACTIONS) && (0, N.Fg)(t)
+  }, [i, t, null == c ? true : c.flags]);
+  let u = r.useCallback(() => {
+    null != d && null != d.rulesChannelId && (0, N.gp)(d.id, d.rulesChannelId)
   }, [d]);
   return null == c || null == n || 0 === n.length ? null : (0, l.jsxs)("div", {
     className: j.container,
@@ -154,12 +154,12 @@ function b(e) {
       variant: "heading-lg/bold",
       color: "header-primary",
       children: _.intl.string(_.t.LhlgY2)
-    }), n.map(e => (0, l.jsx)(D, {
+    }), n.map(e => (0, l.jsx)(b, {
       action: e,
-      completed: (null == r ? true : r[e.channelId]) === true,
+      completed: (null == i ? true : i[e.channelId]) === true,
       guildId: t
     }, e.channelId)), (null == d ? true : d.rulesChannelId) != null && (0, l.jsxs)(o.Zbd, {
-      className: s()(j.action, j.clickableAction),
+      className: a()(j.action, j.clickableAction),
       onClick: u,
       children: [(0, l.jsx)("div", {
         className: j.rulesIconContainer,

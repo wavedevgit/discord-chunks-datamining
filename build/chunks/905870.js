@@ -2,7 +2,7 @@
 /** chunk id: 905870, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 }), require("./642613.js"), require("./388685.js"), require("./539854.js"), require("./361932.js"), require("./187205.js");
 var Chunk147913 = require("./147913.js"),
   Chunk579806 = require("./579806.js"),
@@ -22,19 +22,20 @@ function u(e, t, n) {
 }
 let d = 15 * Chunk70956.Z.Millis.MINUTE,
   f = 1835008,
-  _ = true;
+  _ = true,
+  p = 12;
 
-function p() {
+function h() {
   return Chunk358085.isPlatformEmbedded && (0, Chunk358085.isWindows)()
 }
-class h extends Chunk147913.Z {
+class m extends Chunk147913.Z {
   _initialize() {}
   _terminate() {
-    p() && (clearInterval(this._checkInterval), this._checkInterval = null, Chunk848479.Z.disablePerfMemoryHooks())
+    h() && (clearInterval(this._checkInterval), this._checkInterval = null, Chunk848479.Z.disablePerfMemoryHooks())
   }
   handlePostConnectionOpen() {
     var e, t;
-    if (!p()) return;
+    if (!h()) return;
     let n = null == (e = (t = Chunk579806.Z.remoteApp).getReleaseChannel) ? true : module.call(exports);
     ("development" === require || "canary" === require) && (this._checkInterval = setInterval(() => {
       this.trackPerformanceStats()
@@ -46,7 +47,7 @@ class h extends Chunk147913.Z {
       let n = Chunk848479.Z.getMemoryUsageElectronProcessTypeDetails();
       if (null == require) return;
       (null != (t = null == (e = require.renderer) ? true : module.wss_priv_kb) ? exports : 0) > f && Chunk848479.Z.enablePerfMemoryHooks({
-        allocationThresholdKB: 128,
+        allocationThresholdKB: p,
         enableCallStackTracking: _
       }) && (this._heapHooksInstalled = true)
     }
@@ -98,4 +99,4 @@ class h extends Chunk147913.Z {
     })
   }
 }
-let m = new h
+let g = new m

@@ -30,7 +30,7 @@ var Chunk620662 = require("./620662.js"),
   Chunk994102 = require("./994102.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
-  Chunk723701 = require("./723701.js");
+  Chunk87747 = require("./87747.js");
 
 function R(e) {
   let {
@@ -58,16 +58,16 @@ function R(e) {
     activity: n,
     onAction: R
   });
-  let k = D === C.l.MODAL || D === C.l.MODAL_V2;
-  if (!L && x && null != w && !k) return (0, r.jsx)(S.Z, {
+  let M = D === C.l.MODAL || D === C.l.MODAL_V2;
+  if (!L && x && null != w && !M) return (0, r.jsx)(S.Z, {
     application: w,
     onAction: R,
     onClose: P,
     analyticsLocations: j
   });
-  let M = (0, i.Z)(n, A.xjy.JOIN) || (0, a.Z)(n),
+  let k = (0, i.Z)(n, A.xjy.JOIN) || (0, a.Z)(n),
     U = (null == n ? true : n.application_id) != null;
-  return M && U ? (0, r.jsxs)("div", {
+  return k && U ? (0, r.jsxs)("div", {
     className: N.buttonContainer,
     children: [(0, r.jsx)(b.Z, {
       user: t,
@@ -78,7 +78,7 @@ function R(e) {
       activity: n,
       onAction: R
     })]
-  }) : M ? (0, r.jsx)(b.Z, {
+  }) : k ? (0, r.jsx)(b.Z, {
     user: t,
     activity: n,
     onAction: R,

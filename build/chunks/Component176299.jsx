@@ -85,7 +85,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk215023 = require("./215023.js"),
   Chunk290511 = require("./290511.js"),
   Chunk186901 = require("./186901.js"),
-  Chunk981028 = require("./981028.js");
+  Chunk861218 = require("./861218.js");
 
 function eZ(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -110,7 +110,7 @@ let ew = (0, Chunk608787.Un)({
     webpackId: 267161
   }),
   eL = () => (0, Chunk951288.jsx)("div", {
-    className: Chunk981028.loader,
+    className: Chunk861218.loader,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   }),
   eR = (0, Chunk608787.Un)({
@@ -138,13 +138,13 @@ let ew = (0, Chunk608787.Un)({
     renderLoader: eL
   }),
   eU = (0, Chunk608787.Un)({
-    createPromise: () => Promise.all([require.e("44156"), require.e("58227"), require.e("58121")]).then(require.bind(require, 603072)),
+    createPromise: () => Promise.all([require.e("8271"), require.e("15851"), require.e("51453"), require.e("845"), require.e("58227"), require.e("58121")]).then(require.bind(require, 603072)),
     webpackId: 603072,
     name: "ChannelsAndRolesPage",
     renderLoader: eL
   }),
   eG = (0, Chunk608787.Un)({
-    createPromise: () => Promise.all([require.e("44156"), require.e("37709")]).then(require.bind(require, 599263)),
+    createPromise: () => Promise.all([require.e("8271"), require.e("15851"), require.e("51453"), require.e("845"), require.e("37709")]).then(require.bind(require, 599263)),
     webpackId: 599263,
     name: "GuildOnboardingPage",
     renderLoader: eL
@@ -588,14 +588,14 @@ function e7() {
     v = (0, Chunk442837.e7)([Chunk358221.Z], () => Chunk358221.Z.isFullscreenInContext()),
     S = (0, Chunk442837.e7)([Chunk591472.Z], () => Chunk591472.Z.isFrameActive());
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk981028.container,
+    className: Chunk861218.container,
     children: (0, Chunk951288.jsx)(Chunk372900.Z.Provider, {
       value: (null == Chunk904245 ? true : Chunk904245.params.guildId) === Chunk981631.ME || null == Chunk904245 ? true : Chunk904245.params.guildId,
       children: (0, Chunk951288.jsxs)("div", {
-        className: Chunk981028.base,
+        className: Chunk861218.base,
         "data-fullscreen": Chunk244317,
         children: [!Chunk244317 && (0, Chunk951288.jsx)(ew, {}), Chunk873546.tq ? null : (0, Chunk951288.jsx)(Chunk256638.Z, {}), (0, Chunk951288.jsxs)("div", {
-          className: Chunk981028.content,
+          className: Chunk861218.content,
           children: [(0, Chunk951288.jsx)(Chunk626421.Z, {}), (0, Chunk951288.jsx)(e6, {
             isOnFullScreenCollectiblesShopRoute: Chunk608787,
             isSidebarOpen: Chunk433517,
@@ -604,7 +604,7 @@ function e7() {
             hideChannelList: Chunk711237,
             hideSidebar: !Chunk433517 || Chunk608787
           }), (0, Chunk951288.jsx)("div", {
-            className: Chunk981028.page,
+            className: Chunk861218.page,
             "data-collapsed": !!Chunk347469 && Chunk169382,
             children: (0, Chunk951288.jsxs)(Chunk290297.Z.Provider, {
               value: Chunk532835,

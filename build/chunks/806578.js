@@ -1,12 +1,12 @@
-/** Chunk was on 31422 **/
+/** Chunk was on 54628 **/
 /** chunk id: 806578, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 });
 var Chunk760919 = require("./760919.js"),
   Chunk341901 = require("./341901.js");
-let s = new Chunk760919.Z({
+let o = new Chunk760919.Z({
   id: "prophoto-linear",
   cssId: "--prophoto-rgb-linear",
   name: "Linear ProPhoto",

@@ -1,4 +1,4 @@
-/** Chunk was on 69467 **/
+/** Chunk was on 40655 **/
 /** chunk id: 951539, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   ZP: () => f,
@@ -17,26 +17,26 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js");
 
 function p(e) {
-  let [n, t, i, p] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [o.ZP, l.Z, c.Z, a.Z];
-  if ((0, u.Z2)(e)) returnfalse;
+  let [n, t, a, p] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [l.ZP, o.Z, c.Z, i.Z];
+  if ((0, s.Z2)(e)) returnfalse;
   let {
     guild_id: f,
     channel_id: h
-  } = e, g = e.entity_type === _.WX.EXTERNAL ? n.getDefaultChannel(e.guild_id) : t.getChannel(h), m = i.getGuild(f), v = p.getStageInstanceByChannel(h);
-  return !!(0, r.b)(s.Z, m, g, v) && null != g && function(e) {
-    let [n] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [l.Z], {
+  } = e, m = e.entity_type === u.WX.EXTERNAL ? n.getDefaultChannel(e.guild_id) : t.getChannel(h), g = a.getGuild(f), x = p.getStageInstanceByChannel(h);
+  return !!(0, r.b)(d.Z, g, m, x) && null != m && function(e) {
+    let [n] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [o.Z], {
       entityType: t,
-      channelId: i
+      channelId: a
     } = "entity_type" in e ? {
       entityType: e.entity_type,
       channelId: e.channel_id
     } : e;
-    if (t === _.WX.EXTERNAL) returntrue;
-    let r = n.getChannel(i);
-    return null != r && d.Uu(b.Plq.VIEW_CHANNEL, r)
+    if (t === u.WX.EXTERNAL) returntrue;
+    let r = n.getChannel(a);
+    return null != r && _.Uu(b.Plq.VIEW_CHANNEL, r)
   }(e, [t])
 }
 
 function f(e) {
-  return (0, i.e7)([o.ZP, l.Z, c.Z, a.Z], () => p(e, [o.ZP, l.Z, c.Z, a.Z]), [e])
+  return (0, a.e7)([l.ZP, o.Z, c.Z, i.Z], () => p(e, [l.ZP, o.Z, c.Z, i.Z]), [e])
 }

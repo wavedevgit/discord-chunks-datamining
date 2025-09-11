@@ -1,8 +1,8 @@
 /** Chunk was on 44799 **/
 /** chunk id: 857666, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h,
-  f: () => x
+  Z: () => x,
+  f: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,43 +15,43 @@ var Chunk951288 = require("./951288.js"),
   Chunk169010 = require("./169010.js"),
   Chunk279604 = require("./279604.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk989308 = require("./989308.js"),
+  Chunk258640 = require("./258640.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk592281 = require("./592281.js"),
   Chunk337003 = require("./337003.js");
 
-function x(e, t) {
-  var x;
-  let h = null != (x = (0, u.Z)(t)) && x,
-    b = (0, s.e7)([c.Z], () => {
+function h(e, t) {
+  var h;
+  let x = null != (h = (0, u.Z)(t)) && h,
+    b = (0, l.e7)([c.Z], () => {
       var e;
       return null == (e = c.Z.getStateForGuild(t)) ? true : e.allPowerups
     }),
-    C = (0, s.e7)([c.Z], () => {
+    C = (0, l.e7)([c.Z], () => {
       var e;
       return null == (e = c.Z.getStateForGuild(t)) ? true : e.unlockedPowerups
     });
-  return i.useMemo(() => {
-    let i = e => "guildTagsBadgePacks" === e ? function(e) {
+  return o.useMemo(() => {
+    let o = e => "guildTagsBadgePacks" === e ? function(e) {
         let {
           guildId: t,
-          canUseBoosts: i,
-          allPowerups: s,
+          canUseBoosts: o,
+          allPowerups: l,
           unlockedPowerups: c,
           skuIds: u
-        } = e, d = f.intl.string(g.default.KC9HRU), x = f.intl.string(g.default.GJiSmJ), h = null == s ? true : s[o.IN], b = (null == c ? true : c[o.IN]) != null, C = f.intl.string(g.default["/egwJC"]), j = b ? true : f.intl.string(g.default.W6Vwn5), T = b ? true : f.intl.string(g.default.lvk1GR), E = b ? f.intl.string(g.default["9CfkLC"]) : f.intl.string(f.t["+7XY39"]), P = b ? "secondary" : "expressive", I = i ? () => {
-          b ? a.Z.open(t, m.pNK.TAG, m.jXE.GUILD_POWERUPS_OVERVIEW_CARD) : null != h && (0, p.KE)(t, h), (0, l.pTH)()
+        } = e, d = f.intl.string(g.default.KC9HRU), h = f.intl.string(g.default.GJiSmJ), x = null == l ? true : l[i.IN], b = (null == c ? true : c[i.IN]) != null, C = f.intl.string(g.default["/egwJC"]), j = b ? true : f.intl.string(g.default.W6Vwn5), E = b ? true : f.intl.string(g.default.lvk1GR), T = b ? f.intl.string(g.default["9CfkLC"]) : f.intl.string(f.t["+7XY39"]), P = b ? "secondary" : "expressive", I = o ? () => {
+          b ? s.Z.open(t, m.pNK.TAG, m.jXE.GUILD_POWERUPS_OVERVIEW_CARD) : null != x && (0, p.KE)(t, x), (0, a.pTH)()
         } : true;
         return {
           title: d,
-          description: x,
+          description: h,
           openModal: function(e) {
-            let o = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-            (0, l.ZDy)(async () => {
+            let i = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
+            (0, a.ZDy)(async () => {
               let {
-                default: o
+                default: i
               } = await n.e("64767").then(n.bind(n, 754887));
-              return n => (0, r.jsx)(o, function(e) {
+              return n => (0, r.jsx)(i, function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var n = null != arguments[t] ? arguments[t] : {},
                     r = Object.keys(n);
@@ -73,16 +73,16 @@ function x(e, t) {
                 title: d,
                 description: f.intl.string(g.default.BBRFRU),
                 powerups: e,
-                footerInfoText: T,
-                footerAction: i && null != I && null != E ? {
+                footerInfoText: E,
+                footerAction: o && null != I && null != T ? {
                   variant: P,
-                  text: E,
-                  icon: "expressive" === P ? l.$Eu : true,
+                  text: T,
+                  icon: "expressive" === P ? a.$Eu : true,
                   onClick: I
                 } : true
               }, n))
             }, {
-              onCloseCallback: null == o ? true : o.onModalClose
+              onCloseCallback: null == i ? true : i.onModalClose
             })
           },
           viewCta: C,
@@ -96,20 +96,20 @@ function x(e, t) {
         }
       }({
         guildId: t,
-        canUseBoosts: h,
+        canUseBoosts: x,
         allPowerups: b,
         unlockedPowerups: C,
         skuIds: d.z[e]
       }) : true,
-      s = {};
+      l = {};
     for (let t of e) {
-      let e = i(t);
-      null != e && (s[t] = e)
+      let e = o(t);
+      null != e && (l[t] = e)
     }
-    return s
-  }, [e, t, h, b, C])
+    return l
+  }, [e, t, x, b, C])
 }
 
-function h(e, t) {
-  return x([e], t)[e]
+function x(e, t) {
+  return h([e], t)[e]
 }

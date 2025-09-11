@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => U,
-  v: () => M
+  v: () => k
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -39,7 +39,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk797342 = require("./797342.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let M = {
+let k = {
     [Chunk758713.z.DESKTOP]: null,
     [Chunk758713.z.LINUX]: null,
     [Chunk758713.z.MACOS]: null,
@@ -79,7 +79,7 @@ let M = {
       participant1: $,
       participant2: ee,
       numOtherParticipants: et
-    } = (0, I.Z)(n, 3), en = n.extra.platform, er = null != en ? M[en] : null, ei = en === a.z.XBOX ? j.ABu.XBOX : en === a.z.PLAYSTATION ? j.ABu.PLAYSTATION : true, ea = (0, N.Z)(ei), {
+    } = (0, I.Z)(n, 3), en = n.extra.platform, er = null != en ? k[en] : null, ei = en === a.z.XBOX ? j.ABu.XBOX : en === a.z.PLAYSTATION ? j.ABu.PLAYSTATION : true, ea = (0, N.Z)(ei), {
       data: eo
     } = (0, m.IX)(n.extra.application_id), es = (0, d.q)(eo, "MemberListGamingContentPopout"), el = (0, g.L)(Y, W), ec = i.useCallback(e => {
       if ((null == Z ? true : Z.src) == null || null == t || null == F) return;
@@ -111,9 +111,9 @@ let M = {
         headerIcons: null == er ? null : (0, r.jsx)(x.Z, {
           onClick: ea,
           Icon: er,
-          "aria-label": k.intl.string(k.t.YR4cHB)
+          "aria-label": M.intl.string(M.t.YR4cHB)
         }),
-        userDescription: (0, S.kr)(n) ? k.t.vPg1JS : k.t.rPqqtr,
+        userDescription: (0, S.kr)(n) ? M.t.vPg1JS : M.t.rPqqtr,
         title: H,
         subtitle: V,
         badges: eu,
@@ -126,7 +126,7 @@ let M = {
         title: n.extra.game_name,
         subtitle: V,
         badges: eu,
-        userDescription: k.t["6oWFUF"],
+        userDescription: M.t["6oWFUF"],
         entry: n,
         stream: Q,
         onUserPopoutClosed: G,

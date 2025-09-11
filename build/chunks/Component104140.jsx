@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk722770 = require("./722770.js"),
   Chunk481060 = require("./481060.js"),
   Chunk591146 = require("./591146.js"),
-  Chunk546557 = require("./546557.js");
+  Chunk381245 = require("./381245.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -150,7 +150,7 @@ function v(e) {
     S(true)
   }, C = () => {
     S(false)
-  }, N = null != m, R = null != O, P = i.useId(), w = "".concat(P, "-upper_badge_masks"), D = "".concat(P, "-lower_badge_masks"), x = "".concat(P, "-blob_mask"), L = "".concat(P, "-stroke_mask"), j = "".concat(P, "-highlight_mask"), k = (null == f ? true : f.width) != null ? f.width : g, M = (null == f ? true : f.height) != null ? f.height : g, U = {
+  }, N = null != m, R = null != O, P = i.useId(), w = "".concat(P, "-upper_badge_masks"), D = "".concat(P, "-lower_badge_masks"), x = "".concat(P, "-blob_mask"), L = "".concat(P, "-stroke_mask"), j = "".concat(P, "-highlight_mask"), M = (null == f ? true : f.width) != null ? f.width : g, k = (null == f ? true : f.height) != null ? f.height : g, U = {
     width: d ? n : n + 8,
     height: d ? n : n + 8,
     x: d ? 0 : false,
@@ -189,10 +189,10 @@ function v(e) {
           ry: G / 2
         }) : null, null != O ? (0, r.jsx)("rect", {
           id: D,
-          x: n - (k + 2 * p) + p,
-          y: n - (M + 2 * p) + p,
-          width: k + 2 * p,
-          height: M + 2 * p,
+          x: n - (M + 2 * p) + p,
+          y: n - (k + 2 * p) + p,
+          width: M + 2 * p,
+          height: k + 2 * p,
           rx: h / 2,
           ry: h / 2
         }) : null]

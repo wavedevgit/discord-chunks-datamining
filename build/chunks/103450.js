@@ -79,7 +79,7 @@ function G(e) {
       } = e;
       return (t === (null == B ? true : B.application_id) || t === (null == Z ? true : Z.applicationId)) && (0, f.p)(n) === ee
     })),
-    er = (0, i.e7)([D.Z], () => null != B && null != B.application_id && D.Z.getState(B.application_id, k.mFx.JOIN) === k.OcF.LOADING),
+    er = (0, i.e7)([D.Z], () => null != B && null != B.application_id && D.Z.getState(B.application_id, M.mFx.JOIN) === M.OcF.LOADING),
     ei = (0, b.q)(X),
     ea = (0, y.A)(ei),
     eo = (0, p.s5)({
@@ -109,9 +109,9 @@ function G(e) {
       return null != e && e.applicationId === (null == B ? true : B.application_id)
     }),
     ec = (0, l.O)();
-  if (Q && null == Z && (null == B || !(0, h.Z)(B, k.xjy.CONTEXTLESS))) return null;
+  if (Q && null == Z && (null == B || !(0, h.Z)(B, M.xjy.CONTEXTLESS))) return null;
   let eu = !L.isPlatformEmbedded;
-  if (!((0, h.Z)(B, k.xjy.JOIN) || Q) || null == X) return null;
+  if (!((0, h.Z)(B, M.xjy.JOIN) || Q) || null == X) return null;
   let ed = !$ || Q && !el,
     ef = ed && (eu || et) && !z && !en;
   ed ? eu || et || null == B || (G = U.intl.formatToPlainString(U.t.SqJBnJ, {
@@ -120,7 +120,7 @@ function G(e) {
   let e_ = null != (n = null == Z ? true : Z.launchId) ? n : null == B ? true : B.session_id,
     ep = async (e, t) => {
       if (null == e_ || null == X) return;
-      let n = (0, h.Z)(t, k.xjy.EMBEDDED),
+      let n = (0, h.Z)(t, M.xjy.EMBEDDED),
         r = R.Z.getVoiceChannelId(),
         i = v.Z.getChannel(r);
       if (await o.Z.join({
@@ -129,14 +129,14 @@ function G(e) {
           applicationId: X,
           channelId: r,
           messageId: null,
-          intent: M.Ws.PLAY,
+          intent: k.Ws.PLAY,
           embedded: n,
           locationObject: ec.location,
           analyticsLocations: K
         }), !n) {
         var a;
         (0, g.Z)({
-          type: k.q5t.JOIN,
+          type: M.q5t.JOIN,
           userId: e.id,
           guildId: null == i ? true : i.guild_id,
           channelId: r,
@@ -152,10 +152,10 @@ function G(e) {
       async function t() {
         let e;
         q(true), null != B && (e = await a.Z.sendActivityInviteUser({
-          type: k.mFx.JOIN_REQUEST,
+          type: M.mFx.JOIN_REQUEST,
           userId: F.id,
           activity: B,
-          location: k.Sbl.USER_ACTIVITY_ACTIONS
+          location: M.Sbl.USER_ACTIVITY_ACTIONS
         })), null != e && s.default.selectPrivateChannel(e.id)
       }
       if (Q && !ea) {

@@ -12,10 +12,10 @@ var Chunk120356 = require("./120356.js"),
   Chunk838968 = require("./838968.jsx"),
   Chunk880419 = require("./880419.jsx"),
   Chunk967647 = require("./967647.jsx"),
-  Chunk989308 = require("./989308.js"),
+  Chunk258640 = require("./258640.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk362320 = require("./362320.js"),
-  Chunk961820 = require("./961820.js");
+  Chunk123879 = require("./123879.js"),
+  Chunk958751 = require("./958751.js");
 
 function f(e) {
   let {
@@ -24,7 +24,7 @@ function f(e) {
   return (0, i.jsx)(o.ua7, {
     "aria-label": m.intl.string(u.default.TZsu1d),
     text: (0, i.jsx)(c.Po, {
-      cost: n.plan.cost
+      cost: 0
     }),
     children: e => {
       var t, r;
@@ -55,7 +55,7 @@ function f(e) {
           e.stopPropagation(), (0, d.Q)(n)
         },
         children: (0, i.jsx)(c.RD, {
-          cost: n.plan.cost,
+          cost: 0,
           isActive: true,
           compact: true
         })

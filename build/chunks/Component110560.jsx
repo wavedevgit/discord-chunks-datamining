@@ -60,7 +60,7 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -73,7 +73,7 @@ function k(e) {
   return e
 }
 
-function M(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -85,7 +85,7 @@ function M(e, t) {
 }
 
 function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -106,14 +106,14 @@ function Z(e) {
       let {
         default: e
       } = await n.e("96861").then(n.bind(n, 188209));
-      return n => (0, r.jsx)(e, U(k({}, n), {
+      return n => (0, r.jsx)(e, U(M({}, n), {
         quest: t
       }))
     }
     let {
       default: e
     } = await n.e("61624").then(n.bind(n, 985866));
-    return n => (0, r.jsx)(e, U(k({}, n), {
+    return n => (0, r.jsx)(e, U(M({}, n), {
       questId: t.id,
       questContentPosition: a,
       questContent: i,
@@ -130,7 +130,7 @@ function F(e, t) {
     let {
       default: i
     } = await n.e("838").then(n.bind(n, 824393));
-    return n => (0, r.jsx)(i, U(k({}, n), {
+    return n => (0, r.jsx)(i, U(M({}, n), {
       quest: e,
       location: t
     }))
@@ -143,14 +143,14 @@ function V(e, t, i) {
       let {
         default: t
       } = await n.e("76418").then(n.bind(n, 34251));
-      return n => (0, r.jsx)(t, U(k({}, n), {
+      return n => (0, r.jsx)(t, U(M({}, n), {
         quest: e
       }))
     }
     let {
       default: a
     } = await n.e("88938").then(n.bind(n, 390238));
-    return n => (0, r.jsx)(a, U(k({}, n), {
+    return n => (0, r.jsx)(a, U(M({}, n), {
       quest: e,
       location: t,
       sourceQuestContent: i
@@ -164,14 +164,14 @@ function H(e, t) {
       let {
         default: t
       } = await n.e("74560").then(n.bind(n, 246855));
-      return n => (0, r.jsx)(t, U(k({}, n), {
+      return n => (0, r.jsx)(t, U(M({}, n), {
         quest: e
       }))
     }
     let {
       default: i
     } = await n.e("20565").then(n.bind(n, 383294));
-    return n => (0, r.jsx)(i, U(k({}, n), {
+    return n => (0, r.jsx)(i, U(M({}, n), {
       quest: e,
       location: t
     }))
@@ -184,14 +184,14 @@ function Y(e, t, i) {
       let {
         default: t
       } = await n.e("41023").then(n.bind(n, 305815));
-      return n => (0, r.jsx)(t, U(k({}, n), {
+      return n => (0, r.jsx)(t, U(M({}, n), {
         quest: e
       }))
     }
     let {
       default: a
-    } = await Promise.all([n.e("79589"), n.e("83175")]).then(n.bind(n, 920916));
-    return n => (0, r.jsx)(a, U(k({}, n), {
+    } = await Promise.all([n.e("79589"), n.e("70154")]).then(n.bind(n, 920916));
+    return n => (0, r.jsx)(a, U(M({}, n), {
       quest: e,
       location: t,
       preview: i
@@ -204,7 +204,7 @@ function W(e, t, i) {
     let {
       default: a
     } = await n.e("58641").then(n.bind(n, 828664));
-    return n => (0, r.jsx)(a, U(k({}, n), {
+    return n => (0, r.jsx)(a, U(M({}, n), {
       quest: e,
       location: t,
       sourceQuestContent: i
@@ -224,7 +224,7 @@ function K(e, t) {
     let {
       default: i
     } = await n.e("4266").then(n.bind(n, 316210));
-    return n => (0, r.jsx)(i, U(k({}, n), {
+    return n => (0, r.jsx)(i, U(M({}, n), {
       questContent: t.content,
       quest: e
     }))
@@ -314,7 +314,7 @@ function J(e) {
     let {
       default: e
     } = await Q();
-    return t => (0, r.jsx)(e, U(k({}, t), {
+    return t => (0, r.jsx)(e, U(M({}, t), {
       openStartClockTime: performance.now(),
       questId: n.id,
       autoplay: c,
@@ -376,7 +376,7 @@ function et(e) {
     let {
       default: t
     } = await Promise.all([n.e("59757"), n.e("33628")]).then(n.bind(n, 570387));
-    return n => (0, r.jsx)(t, U(k({}, n), {
+    return n => (0, r.jsx)(t, U(M({}, n), {
       questId: e.id,
       questName: e.config.messages.questName
     }))

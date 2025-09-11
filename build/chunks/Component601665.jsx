@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk161572 = require("./161572.jsx"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk116649 = require("./116649.js");
+  Chunk593540 = require("./593540.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -63,12 +63,12 @@ function P(e) {
     openedAt: x,
     closePopout: L,
     setPopoutRef: j,
-    disableUserProfileLink: k = __OVERLAY__,
-    newAnalyticsLocations: M = [],
+    disableUserProfileLink: M = __OVERLAY__,
+    newAnalyticsLocations: k = [],
     disableAutoFocus: U = false
   } = e, {
     analyticsLocations: G
-  } = (0, c.ZP)([...M, l.Z.USER_PROFILE_POPOUT]), B = (0, _.ZB)({
+  } = (0, c.ZP)([...k, l.Z.USER_PROFILE_POPOUT]), B = (0, _.ZB)({
     layout: "POPOUT",
     userId: t.id,
     guildId: N,
@@ -85,7 +85,7 @@ function P(e) {
         hideRestrictedProfile: true
       }, B, e))
     },
-    W = () => k ? null : (0, r.jsx)(o.sNh, {
+    W = () => M ? null : (0, r.jsx)(o.sNh, {
       id: "view-profile",
       label: A.intl.string(A.t["+Xp3ho"]),
       action: () => {
@@ -140,7 +140,7 @@ function P(e) {
               guildId: N,
               channelId: P,
               themeType: S.l.POPOUT,
-              onOpenProfile: k ? true : Y
+              onOpenProfile: M ? true : Y
             }), (0, r.jsx)(v.Z, {
               user: t,
               themeType: S.l.POPOUT,
@@ -153,7 +153,7 @@ function P(e) {
             displayProfile: Z,
             guild: F,
             isHovering: H,
-            onOpenProfile: k ? true : Y,
+            onOpenProfile: M ? true : Y,
             channelId: P,
             onClose: L
           }), (0, r.jsx)(T.Z, {

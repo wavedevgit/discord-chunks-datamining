@@ -72,7 +72,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk959517 = require("./959517.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk951948 = require("./951948.js");
+  Chunk826565 = require("./826565.js");
 
 function e_(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -190,10 +190,10 @@ function ev(e) {
     onVoiceChannelPreview: h
   }), {
     embeddedActivity: R
-  } = (0, et.Z)(o), P = eN(R), w = null != N && 0 === s.length ? [N] : s, D = w.length > 0, x = w.length >= 2, [L, j] = i.useState(!D), k = q.ZP.getName(null == t ? true : t.guild_id, null == t ? true : t.id, n), M = null != t && m ? ed.intl.formatToPlainString(ed.t["8lzR/f"], {
+  } = (0, et.Z)(o), P = eN(R), w = null != N && 0 === s.length ? [N] : s, D = w.length > 0, x = w.length >= 2, [L, j] = i.useState(!D), M = q.ZP.getName(null == t ? true : t.guild_id, null == t ? true : t.id, n), k = null != t && m ? ed.intl.formatToPlainString(ed.t["8lzR/f"], {
     channel: "#".concat(t.name)
   }) : ed.intl.formatToPlainString(ed.t["4c+CAw"], {
-    channel: "@".concat(k)
+    channel: "@".concat(M)
   }), U = m ? ed.intl.string(ed.t.Z2CUgo) : ed.intl.string(ed.t.XLGiTE), B = async e => {
     let r, {
       emoji: i
@@ -281,7 +281,7 @@ function ev(e) {
     }), (0, r.jsxs)("div", {
       className: L ? ef.inputContainerShareToChannel : ef.hiddenButRenderedInputField,
       children: [(0, r.jsx)(O.A7, {
-        placeholder: M,
+        placeholder: k,
         onEnter: F,
         setEditorRef: e => b(e),
         channel: m ? t : true,
@@ -363,7 +363,7 @@ let eI = e => {
             emojiName: t.name
           }),
           shouldShow: !s && true,
-          children: (0, r.jsx)(k.u, {
+          children: (0, r.jsx)(M.u, {
             emoji: t,
             isDisabled: !a,
             onClick: () => n({
@@ -586,8 +586,8 @@ function eC(e) {
       fallbackApplication: j
     } = (0, et.Z)(O),
     {
-      largeImage: k,
-      smallImage: M
+      largeImage: M,
+      smallImage: k
     } = (0, X.YC)(x, null != L ? L : j),
     {
       largeImage: U
@@ -621,11 +621,11 @@ function eC(e) {
         })
       }), (0, r.jsxs)("div", {
         className: ef.streamingPopoutHeader,
-        children: [null != k && (0, r.jsx)("div", {
+        children: [null != M && (0, r.jsx)("div", {
           className: ef.popoutThumbnailContainer,
           children: (0, r.jsx)($.E, {
-            image: k,
-            smallImage: M,
+            image: M,
+            smallImage: k,
             onClick: null != l ? l : A,
             size: $.J.SIZE_72
           })
@@ -692,7 +692,7 @@ function eN(e) {
           className: ef.voiceChannelName,
           children: null == n ? true : n.name
         })]
-      }), (0, r.jsx)(M.Z, {
+      }), (0, r.jsx)(k.Z, {
         guildId: t.id,
         users: i,
         max: 3,
@@ -801,7 +801,7 @@ function eR(e) {
               children: s.name
             })]
           }))
-        }), (0, r.jsx)(M.Z, {
+        }), (0, r.jsx)(k.Z, {
           guildId: u.id,
           users: f,
           max: 3,

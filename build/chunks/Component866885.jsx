@@ -37,9 +37,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk918559 = require("./918559.js"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
-  Chunk505386 = require("./505386.js"),
-  Chunk186880 = require("./186880.js"),
-  Chunk315091 = require("./315091.js");
+  Chunk51434 = require("./51434.js"),
+  Chunk533362 = require("./533362.js"),
+  Chunk285236 = require("./285236.js");
 
 function G(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -165,7 +165,7 @@ function V(e) {
         onMouseMove: n,
         onMouseDown: n,
         onMouseLeave: i,
-        className: k.clickShield,
+        className: M.clickShield,
         onDoubleClick: eo
       }), (0, r.jsx)(w.YB, {
         idle: a,
@@ -208,14 +208,14 @@ function V(e) {
         onForceIdle: s
       } = e;
       return (0, r.jsxs)(b.Z, {
-        className: o()(k.root, {
-          [k.pipMode]: ei,
+        className: o()(M.root, {
+          [M.pipMode]: ei,
           [U.elevationHigh]: ei,
-          [M.idle]: i && !(null == (t = B.config) ? true : t.useInteractivePIP),
-          [k.pipModeShort]: ei && !C,
-          [k.pipModeTall]: ei && C,
-          [k.hidden]: z,
-          [k.multiPIPMode]: ea
+          [k.idle]: i && !(null == (t = B.config) ? true : t.useInteractivePIP),
+          [M.pipModeShort]: ei && !C,
+          [M.pipModeTall]: ei && C,
+          [M.hidden]: z,
+          [M.multiPIPMode]: ea
         }),
         noBorder: !ei,
         children: [(0, r.jsx)("div", {
@@ -228,19 +228,19 @@ function V(e) {
             users: ec
           })
         }), p || F ? (0, r.jsx)(l.$jN, {
-          className: o()(k.iframe, {
-            [k.pipModeShort]: ei && !C,
-            [k.pipModeTall]: ei && C
+          className: o()(M.iframe, {
+            [M.pipModeShort]: ei && !C,
+            [M.pipModeTall]: ei && C
           })
         }) : (0, r.jsx)(P.J, {
           allowPopups: (0, N.h)(H),
           referrerPolicy: D.um.has(B.applicationId) ? "no-referrer" : "origin",
           url: B.url,
           queryParams: eu,
-          className: o()(k.iframe, {
-            [k.pipModeShort]: ei && !C,
-            [k.pipModeTall]: ei && C,
-            [k.pipNonInteractive]: ei && !(null == (n = B.config) ? true : n.useInteractivePIP)
+          className: o()(M.iframe, {
+            [M.pipModeShort]: ei && !C,
+            [M.pipModeTall]: ei && C,
+            [M.pipNonInteractive]: ei && !(null == (n = B.config) ? true : n.useInteractivePIP)
           }),
           shouldRefocus: !ei && W
         }), !ei && null != _ && (0, r.jsx)(w.Ds, {

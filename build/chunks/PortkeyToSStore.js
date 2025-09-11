@@ -6,7 +6,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -14,21 +14,21 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = false;
+let s = false;
 class l extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (o = e)
+    null != e && (s = e)
   }
   getState() {
-    return o
+    return s
   }
 }
-a(l, "displayName", "PortkeyToSStore"), a(l, "persistKey", "PortkeyToSStore");
+o(l, "displayName", "PortkeyToSStore"), o(l, "persistKey", "PortkeyToSStore");
 let c = new l(Chunk570140.Z, {
   PORTKEY_ACCEPT_TOS: function(e) {
     let {
       acceptedToS: t
     } = e;
-    o = t
+    s = t
   }
 })

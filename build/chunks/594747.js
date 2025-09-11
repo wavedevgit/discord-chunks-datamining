@@ -1,4 +1,4 @@
-/** Chunk was on 31422 **/
+/** Chunk was on 54628 **/
 /** chunk id: 594747, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -7,23 +7,23 @@ require.d(exports, {
 var Chunk44837 = require("./44837.js"),
   Chunk647438 = require("./647438.js"),
   Chunk639519 = require("./639519.js"),
-  o = require.n(Chunk639519),
+  s = require.n(Chunk639519),
   i = function(e) {
     var t = e.styling,
       r = e.arrowStyle,
-      s = e.expanded,
-      o = e.nodeType,
+      o = e.expanded,
+      s = e.nodeType,
       i = e.onClick;
     return n.createElement("div", (0, a.Z)({}, t("arrowContainer", r), {
       onClick: i
-    }), n.createElement("div", t(["arrow", "arrowSign"], o, s, r), "▶", "double" === r && n.createElement("div", t(["arrowSign", "arrowSignInner"]), "▶")))
+    }), n.createElement("div", t(["arrow", "arrowSign"], s, o, r), "▶", "double" === r && n.createElement("div", t(["arrowSign", "arrowSignInner"]), "▶")))
   };
 i.propTypes = {
-  styling: o().func.isRequired,
-  arrowStyle: o().oneOf(["single", "double"]),
-  expanded: o().bool.isRequired,
-  nodeType: o().string.isRequired,
-  onClick: o().func.isRequired
+  styling: s().func.isRequired,
+  arrowStyle: s().oneOf(["single", "double"]),
+  expanded: s().bool.isRequired,
+  nodeType: s().string.isRequired,
+  onClick: s().func.isRequired
 }, i.defaultProps = {
   arrowStyle: "single"
 };

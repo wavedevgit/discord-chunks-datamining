@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk802179 = require("./802179.js");
+  Chunk982653 = require("./982653.js");
 
 function h(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -57,26 +57,26 @@ function g(e) {
     setCurrentStep: j,
     disableTracking: _,
     previousPromptIndex: b
-  } = e, O = l.useRef(null), C = (0, i.e7)([c.Z], () => c.Z.getRulesPrompt(n.id)), [y, N] = l.useState(null != (t = null == C ? true : C.response) && t), E = (0, i.e7)([c.Z], () => c.Z.get(n.id)), P = l.useRef(null), Z = l.useRef(null), I = l.useCallback(async () => {
-    if (null != E && null != C) {
+  } = e, O = l.useRef(null), y = (0, i.e7)([c.Z], () => c.Z.getRulesPrompt(n.id)), [N, C] = l.useState(null != (t = null == y ? true : y.response) && t), P = (0, i.e7)([c.Z], () => c.Z.get(n.id)), E = l.useRef(null), Z = l.useRef(null), I = l.useCallback(async () => {
+    if (null != P && null != y) {
       try {
-        await s.ZP.submitVerificationForm(n.id, x(h({}, E), {
-          formFields: [x(h({}, C), {
-            response: y
+        await s.ZP.submitVerificationForm(n.id, x(h({}, P), {
+          formFields: [x(h({}, y), {
+            response: N
           })]
         }))
       } catch (e) {}
       v()
     }
-  }, [n.id, E, C, y, v]);
+  }, [n.id, P, y, N, v]);
 
-  function T(e) {
+  function w(e) {
     let [t] = e;
-    t.isIntersecting && N(true)
+    t.isIntersecting && C(true)
   }
   return (l.useEffect(() => {
-    let e = new IntersectionObserver(T, {
-        root: P.current,
+    let e = new IntersectionObserver(w, {
+        root: E.current,
         rootMargin: "0px",
         threshold: 0
       }),
@@ -84,31 +84,31 @@ function g(e) {
     return null != t && null != t.lastElementChild && e.observe(t.lastElementChild), () => {
       null != t && null != t.lastElementChild && e.unobserve(t.lastElementChild)
     }
-  }, [Z, P]), null == C) ? null : (0, r.jsx)("div", {
+  }, [Z, E]), null == y) ? null : (0, r.jsx)("div", {
     className: p.prompt,
     children: (0, r.jsxs)("div", {
       className: p.promptContent,
-      ref: P,
-      children: [(0, r.jsxs)(o.h21, {
+      ref: E,
+      children: [(0, r.jsxs)(a.h21, {
         className: p.scrollerContent,
         ref: O,
-        children: [(0, r.jsx)(o.Text, {
+        children: [(0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
           color: "text-muted",
           children: f.intl.string(f.t["b1JC+v"])
-        }), (0, r.jsx)(o.X6q, {
+        }), (0, r.jsx)(a.X6q, {
           variant: "heading-xl/semibold",
           children: f.intl.string(f.t.prJqwc)
         }), (0, r.jsx)("div", {
           className: p.termsFieldBody,
           ref: Z,
-          children: C.values.map((e, t) => (0, r.jsxs)("div", {
+          children: y.values.map((e, t) => (0, r.jsxs)("div", {
             className: p.termsRow,
-            children: [(0, r.jsx)(o.Text, {
+            children: [(0, r.jsx)(a.Text, {
               variant: "text-sm/normal",
               color: "text-muted",
               children: "".concat(t + 1, ".")
-            }), (0, r.jsx)(o.Text, {
+            }), (0, r.jsx)(a.Text, {
               variant: "text-sm/normal",
               className: p.termsRowContent,
               children: u.Z.parseGuildVerificationFormRule(e, true, {
@@ -123,39 +123,39 @@ function g(e) {
         className: p.navButtons,
         children: [(0, r.jsx)("div", {
           className: p.leftButtons,
-          children: false !== b && (0, r.jsx)(o.zxk, {
+          children: false !== b && (0, r.jsx)(a.zxk, {
             variant: "secondary",
             size: "md",
             text: f.intl.string(f.t["13/7kZ"]),
             onClick: () => {
-              !_ && (d.default.track(m.rMx.GUILD_ONBOARDING_STEP_COMPLETED, x(h({}, (0, a.hH)(n.id)), {
+              !_ && (d.default.track(m.rMx.GUILD_ONBOARDING_STEP_COMPLETED, x(h({}, (0, o.hH)(n.id)), {
                 step: false,
                 skipped: false,
                 back: true,
                 options_selected: 0,
                 in_onboarding: true,
                 is_final_step: false
-              })), b >= 0 && d.default.track(m.rMx.GUILD_ONBOARDING_STEP_VIEWED, x(h({}, (0, a.hH)(n.id)), {
+              })), b >= 0 && d.default.track(m.rMx.GUILD_ONBOARDING_STEP_VIEWED, x(h({}, (0, o.hH)(n.id)), {
                 step: b,
                 required: g[b].required
               }))), j(b)
             },
-            icon: o.j9r,
+            icon: a.j9r,
             iconPosition: "start"
           })
         }), (0, r.jsxs)("div", {
           className: p.rightButtons,
-          children: [(0, r.jsx)(o.Text, {
+          children: [(0, r.jsx)(a.Text, {
             className: p.helpText,
             variant: "text-xs/normal",
             color: "text-muted",
-            children: y ? f.intl.string(f.t.arAe3N) : f.intl.string(f.t.D0CVAQ)
-          }), (0, r.jsx)(o.zxk, {
+            children: N ? f.intl.string(f.t.arAe3N) : f.intl.string(f.t.D0CVAQ)
+          }), (0, r.jsx)(a.zxk, {
             variant: "primary",
             size: "md",
             text: "".concat(f.intl.string(f.t["8SuVoK"]), " \uD83C\uDF89"),
             onClick: I,
-            disabled: !y
+            disabled: !N
           })]
         })]
       })]

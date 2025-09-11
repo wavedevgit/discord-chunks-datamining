@@ -20,7 +20,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk104494 = require("./104494.js"),
   Chunk573702 = require("./573702.jsx"),
   Chunk474936 = require("./474936.js"),
-  Chunk108626 = require("./108626.js"),
+  Chunk491881 = require("./491881.js"),
   Chunk236078 = require("./236078.js"),
   Chunk278345 = require("./278345.js"),
   Chunk895601 = require("./895601.js"),
@@ -86,13 +86,13 @@ let C = function(e) {
     showTrialBadge: C = false,
     showDiscountBadge: N = false
   } = e, R = (0, s.apv)((0, l.ZP)()), P = O === g.p9.TIER_2, w = (0, d.Fv)(v), D = (0, h.Ng)(), x = null == D || null == (t = D.discount) ? true : t.amount, L = P ? T : I, j = P ? p.Z : _.Z, {
-    step: k,
-    breadcrumbs: M,
+    step: M,
+    breadcrumbs: k,
     startedPaymentFlowWithPaymentSourcesRef: U,
     isDisplayingWowMomentConfirmation: G
   } = (0, c.JL)();
-  if (null == M || 0 === M.length) return null;
-  let B = M.flatMap(e => {
+  if (null == k || 0 === k.length) return null;
+  let B = k.flatMap(e => {
     let t = e.useBreadcrumbLabel(v),
       n = e.sectionHeaderText;
     return null != t ? {
@@ -106,10 +106,10 @@ let C = function(e) {
       let t = e.id !== u.h8.ADD_PAYMENT_STEPS,
         n = e.id === u.h8.ADD_PAYMENT_STEPS && !U.current;
       return !v || v && (t || n)
-    })).find(e => e.id === k),
+    })).find(e => e.id === M),
     F = null != (i = null == Z || null == (n = Z.sectionHeaderText) ? true : n.call(Z)) ? i : null == Z ? true : Z.label,
-    V = null != F && null != k,
-    H = w && V && k === u.h8.REVIEW,
+    V = null != F && null != M,
+    H = w && V && M === u.h8.REVIEW,
     Y = P ? "nitro-pink" : "nitro-green";
   return G ? (0, r.jsx)("div", {
     className: E.container,
@@ -147,7 +147,7 @@ let C = function(e) {
     }), V && (0, r.jsx)(S, {
       isOneStepCheckout: w,
       headerText: F,
-      step: k,
+      step: M,
       filteredBreadcrumbs: B
     }), H && (0, r.jsx)("div", {
       className: E.bodyGradientContainer,

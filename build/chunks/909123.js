@@ -40,7 +40,7 @@ class g extends Chunk147913.Z {
     }), Chunk901005.G.trackExposure({
       guildId: exports.id,
       location: "GuildPowerupsManager"
-    }), (0, Chunk639777.D)(Chunk496675.Z, exports) && (Chunk905128.Z.shouldFetchCatalogForGuild(module) && (0, Chunk713081.Sn)(module), Chunk905128.Z.shouldFetchPowerupsForGuild(module) && (0, Chunk713081.Fm)(module)))
+    }), (0, Chunk639777.D)(Chunk496675.Z, exports) && (Chunk905128.Z.shouldFetchCatalogForGuild(module) && (0, Chunk713081.Sn)(module), Chunk905128.Z.shouldFetchPowerupsForGuild(module) && (0, Chunk713081.BN)(module)))
   }
   handleEntitlementUpdate(e) {
     let {
@@ -55,7 +55,7 @@ class g extends Chunk147913.Z {
     this.refreshGuildPowerups(t)
   }
   refreshGuildPowerups(e) {
-    true === (0, _.D)(o.Z, a.Z.getGuild(e)) && ((0, c.Fm)(e), (0, r.C0)(e))
+    true === (0, _.D)(o.Z, a.Z.getGuild(e)) && ((0, c.BN)(e), (0, r.C0)(e))
   }
   constructor(...e) {
     super(...e), m(this, "stores", new Map().set(s.Z, this.handleSelectedGuildChange)), m(this, "actions", {

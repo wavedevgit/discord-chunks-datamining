@@ -22,13 +22,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk430824 = require("./430824.js"),
   Chunk914010 = require("./914010.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk617659 = require("./617659.js");
+  Chunk736525 = require("./736525.js");
 let C = [Chunk704215.z.GUILD_POWERUP_PERKS_COACHMARK, Chunk704215.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK, Chunk704215.z.GUILD_POWERUP_NOTIFICATION, Chunk704215.z.GUILD_TAG_AVAILABLE_COACHMARK, Chunk704215.z.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK],
   N = [Chunk704215.C.GUILD_POWERUP_LEVEL_1_COACHMARK, Chunk704215.C.GUILD_POWERUP_LEVEL_2_COACHMARK, Chunk704215.C.GUILD_POWERUP_LEVEL_3_COACHMARK, Chunk704215.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, Chunk704215.C.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK],
   E = [Chunk704215.C.ADOPT_CLAN_IDENTITY_NOTICE],
   T = [Chunk704215.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION, Chunk704215.z.VANITY_URL_POWERUP_ROLLBACK_MODAL, Chunk704215.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER];
 
-function O(e) {
+function S(e) {
   switch (e) {
     case o.C.GUILD_POWERUP_LEVEL_1_COACHMARK:
       return "GUILD_POWERUP_LEVEL_1_COACHMARK";
@@ -44,14 +44,14 @@ function O(e) {
       return "ADOPT_CLAN_IDENTITY_NOTICE"
   }
 }
-async function S(e, t, n) {
+async function O(e, t, n) {
   await Promise.all(t.map(e => s.tn.patch({
     url: _.ANM.APPLIED_BOOST_MODIFY_END_DATE(e.id),
     body: n ? {} : {
       ends_at: l()().add(1, "day")
     },
     rejectWithError: true
-  }))), (0, d.C0)(e), (0, p.Fm)(e, true)
+  }))), (0, d.C0)(e), (0, x.BN)(e, true)
 }
 async function P(e) {
   await s.tn.post({
@@ -66,24 +66,24 @@ function k() {
       var t;
       return null == (t = Chunk430824.Z.getGuild(module)) ? true : exports.name
     }),
-    n = (0, Chunk442837.Wu)([Chunk581883.Z], () => [...N, ...E].filter(t => null != e && (0, x.OY)(t, e))),
+    n = (0, Chunk442837.Wu)([Chunk581883.Z], () => [...N, ...E].filter(t => null != e && (0, h.OY)(t, e))),
     r = (0, Chunk442837.Wu)([Chunk899667.Z], () => {
       var t;
       return null != module && null != (t = Chunk899667.Z.getAppliedGuildBoostsForGuild(module)) ? exports : []
     });
   if (null != module) return (0, Chunk951288.jsxs)(Chunk481060.zJl, {
-    className: Chunk617659.container,
+    className: Chunk736525.container,
     children: [(0, Chunk951288.jsx)("div", {
-      className: Chunk617659.section,
+      className: Chunk736525.section,
       children: (0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-md/normal",
         children: "Current guild: ".concat(exports)
       })
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk617659.section,
+      className: Chunk736525.section,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "eyebrow",
-        className: Chunk617659.header,
+        className: Chunk736525.header,
         children: "Reset Notification Indicators"
       }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
@@ -93,10 +93,10 @@ function k() {
         }
       })]
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk617659.section,
+      className: Chunk736525.section,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "eyebrow",
-        className: Chunk617659.header,
+        className: Chunk736525.header,
         children: "Reset Progress Bar State"
       }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
@@ -104,7 +104,7 @@ function k() {
         onClick: Chunk667815.q
       })]
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk617659.section,
+      className: Chunk736525.section,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "eyebrow",
         children: "Set Warning State"
@@ -113,74 +113,74 @@ function k() {
           variant: "primary",
           text: "Set Half Boosts expiring in 1 day",
           onClick: () => {
-            S(module, Chunk913527.slice(Math.floor(Chunk913527.length / 2)), false)
+            O(module, Chunk913527.slice(Math.floor(Chunk913527.length / 2)), false)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Reset End Date",
           onClick: () => {
-            S(module, Chunk913527, true)
+            O(module, Chunk913527, true)
           }
         })]
       })]
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk617659.section,
+      className: Chunk736525.section,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "eyebrow",
-        className: Chunk617659.header,
+        className: Chunk736525.header,
         children: "Reset User Level DCs"
       }), C.map(e => (0, a.jsx)(u.Z, {
         className: y.formSwitch,
         content: o.z[e]
       }, o.z[e]))]
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk617659.section,
+      className: Chunk736525.section,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "eyebrow",
-        className: Chunk617659.header,
+        className: Chunk736525.header,
         children: "Reset Guild Level DCs"
       }), N.map(t => (0, a.jsx)(c.j7V, {
         className: y.formSwitch,
         onChange: n => {
-          n ? (0, x.Qd)(t, e, false) : ((0, f.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, x.c7)(t, e))
+          n ? (0, h.Qd)(t, e, false) : ((0, b.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, h.c7)(t, e))
         },
         value: n.includes(t),
         children: (0, a.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: O(t)
+          children: S(t)
         })
       }, t))]
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk617659.section,
+      className: Chunk736525.section,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "eyebrow",
         children: "Reset Server Tag Guild Level DCs"
       }), E.map(t => (0, a.jsx)(c.j7V, {
         className: y.formSwitch,
         onChange: n => {
-          n ? (0, x.Qd)(t, e, false) : ((0, f.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, x.c7)(t, e))
+          n ? (0, h.Qd)(t, e, false) : ((0, b.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, h.c7)(t, e))
         },
         value: n.includes(t),
         children: (0, a.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: O(t)
+          children: S(t)
         })
       }, t))]
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk617659.section,
+      className: Chunk736525.section,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "eyebrow",
-        className: Chunk617659.header,
+        className: Chunk736525.header,
         children: "Reset Powerup Rollback DCs"
       }), T.map(e => (0, a.jsx)(u.Z, {
         className: y.formSwitch,
         content: o.z[e]
       }, o.z[e]))]
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk617659.section,
+      className: Chunk736525.section,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "eyebrow",
-        className: Chunk617659.header,
+        className: Chunk736525.header,
         children: "Send Powerups System Message"
       }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",

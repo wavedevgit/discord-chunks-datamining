@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk544989 = require("./544989.jsx"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk116649 = require("./116649.js");
+  Chunk593540 = require("./593540.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -63,12 +63,12 @@ function P(e) {
     openedAt: x,
     setPopoutRef: L,
     closePopout: j,
-    disableUserProfileLink: k = __OVERLAY__,
-    newAnalyticsLocations: M = [],
+    disableUserProfileLink: M = __OVERLAY__,
+    newAnalyticsLocations: k = [],
     disableAutoFocus: U = false
   } = e, G = (0, h.ZP)(n.id, N), {
     analyticsLocations: B
-  } = (0, l.ZP)([...M, s.Z.USER_PROFILE_POPOUT]), Z = (0, _.ZB)({
+  } = (0, l.ZP)([...k, s.Z.USER_PROFILE_POPOUT]), Z = (0, _.ZB)({
     layout: "POPOUT",
     userId: n.id,
     guildId: N,
@@ -85,7 +85,7 @@ function P(e) {
         hideRestrictedProfile: true
       }, Z))
     },
-    Y = !k && (0, c.Z)(n.id),
+    Y = !M && (0, c.Z)(n.id),
     W = () => Y ? (0, r.jsx)(a.sNh, {
       id: "view-profile",
       label: A.intl.string(A.t["+Xp3ho"]),

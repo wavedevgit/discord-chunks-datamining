@@ -28,7 +28,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk670451 = require("./670451.jsx"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk704543 = require("./704543.js");
+  Chunk663907 = require("./663907.js");
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -91,7 +91,7 @@ function w(e) {
   }), L = (0, h.Z)({
     userId: t.id,
     onAction: x
-  }), j = (0, o.e7)([d.Z], () => d.Z.getGuild(i.guild_id)), k = (0, _.Z)(i), M = (0, u.ZP)(i), {
+  }), j = (0, o.e7)([d.Z], () => d.Z.getGuild(i.guild_id)), M = (0, _.Z)(i), k = (0, u.ZP)(i), {
     channelStatusEnabled: U
   } = (0, f.D)({
     location: "UserProfileVoiceActivityCard"
@@ -119,7 +119,7 @@ function w(e) {
       className: a()(A.card, C),
       onAction: x,
       onClose: R,
-      "aria-label": "".concat(Z, ", ").concat(M),
+      "aria-label": "".concat(Z, ", ").concat(k),
       children: [(0, r.jsx)(E.Z, {
         text: Z,
         tags: G(),
@@ -133,7 +133,7 @@ function w(e) {
         children: (0, r.jsxs)("div", {
           className: A.content,
           children: [(0, r.jsx)(y.Z, {
-            users: k,
+            users: M,
             channel: i
           }), (0, r.jsxs)("div", {
             className: A.details,

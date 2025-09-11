@@ -1,12 +1,12 @@
 /** Chunk was on 58227 **/
 /** chunk id: 150512, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => N
 }), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk749210 = require("./749210.js"),
@@ -17,48 +17,48 @@ var Chunk951288 = require("./951288.js"),
   Chunk594174 = require("./594174.js"),
   Chunk5192 = require("./5192.js"),
   Chunk51144 = require("./51144.js"),
-  Chunk180391 = require("./180391.js");
+  Chunk460430 = require("./460430.js");
 
-function S(e) {
+function N(e) {
   let {
     guildId: t,
     welcomeMessage: n,
-    className: r
-  } = e, S = (0, a.e7)([h.Z], () => h.Z.getGuild(t)), p = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), E = (0, a.e7)([g.default], () => g.default.getUser(null == n ? true : n.authorIds[0])), T = i.useMemo(() => null != S && null != E && (0, u.Y)(S, E) ? E : null, [S, E]), O = (0, a.e7)([g.default], () => g.default.getCurrentUser()), x = i.useMemo(() => {
+    className: i
+  } = e, N = (0, s.e7)([g.Z], () => g.Z.getGuild(t)), O = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), S = (0, s.e7)([h.default], () => h.default.getUser(null == n ? true : n.authorIds[0])), E = r.useMemo(() => null != N && null != S && (0, u.Y)(N, S) ? S : null, [N, S]), x = (0, s.e7)([h.default], () => h.default.getCurrentUser()), T = r.useMemo(() => {
     var e;
     return null != (e = null == n ? true : n.authorIds) ? e : []
   }, [n]);
-  i.useEffect(() => {
-    c.Z.requestMembersById(t, x)
-  }, [t, x]), i.useEffect(() => {
-    null != T && (0, m.Z)(T.id, T.getAvatarURL(t, 48), {
+  r.useEffect(() => {
+    c.Z.requestMembersById(t, T)
+  }, [t, T]), r.useEffect(() => {
+    null != E && (0, m.Z)(E.id, E.getAvatarURL(t, 48), {
       guildId: t
     })
-  }, [T, t]);
-  let _ = I.ZP.useName(t, null, T),
-    j = (0, N._T)(O);
-  if (null == T || null == O || null == n) return null;
-  let v = null != S && S.ownerId === T.id;
+  }, [E, t]);
+  let _ = f.ZP.useName(t, null, E),
+    j = (0, I._T)(x);
+  if (null == E || null == x || null == n) return null;
+  let v = null != N && N.ownerId === E.id;
   return (0, l.jsxs)(o.Zbd, {
-    className: s()(f.welcomeMessageContainer, r),
+    className: a()(p.welcomeMessageContainer, i),
     children: [(0, l.jsx)("div", {
-      className: f.avatarBackground
-    }), p ? (0, l.jsx)(o.qEK, {
-      src: T.getAvatarURL(t, 48),
+      className: p.avatarBackground
+    }), O ? (0, l.jsx)(o.qEK, {
+      src: E.getAvatarURL(t, 48),
       size: o.EFr.SIZE_48,
-      className: f.avatar,
-      "aria-label": T.username
+      className: p.avatar,
+      "aria-label": E.username
     }) : (0, l.jsx)(o.Xo$, {
-      src: T.getAvatarURL(t, 48),
+      src: E.getAvatarURL(t, 48),
       size: o.EFr.SIZE_48,
-      className: f.avatar,
-      "aria-label": T.username
+      className: p.avatar,
+      "aria-label": E.username
     }), (0, l.jsx)("div", {
-      className: f.avatarBorder
+      className: p.avatarBorder
     }), (0, l.jsxs)("div", {
-      className: f.welcomeMessageContent,
+      className: p.welcomeMessageContent,
       children: [(0, l.jsxs)("div", {
-        className: f.adminUsernameContainer,
+        className: p.adminUsernameContainer,
         children: [(0, l.jsx)(o.Text, {
           variant: "text-sm/semibold",
           color: "header-primary",
@@ -66,22 +66,22 @@ function S(e) {
         }), v ? (0, l.jsx)(o.CEn, {
           size: "xxs",
           color: "currentColor",
-          className: f.ownerIcon
+          className: p.ownerIcon
         }) : null]
       }), (0, l.jsx)(o.Text, {
         variant: "text-md/medium",
         children: function(e, t) {
           let n = e.split(/\[@username\]/g);
           return (0, l.jsx)("span", {
-            children: n.map((e, r) => (0, l.jsxs)(i.Fragment, {
-              children: [e, r < n.length - 1 ? (0, l.jsx)(o.Text, {
+            children: n.map((e, i) => (0, l.jsxs)(r.Fragment, {
+              children: [e, i < n.length - 1 ? (0, l.jsx)(o.Text, {
                 tag: "span",
                 variant: "text-md/semibold",
                 children: "@".concat(t)
               }) : null]
-            }, "username-".concat(r)))
+            }, "username-".concat(i)))
           })
-        }(null == n ? true : n.message, null != j ? j : O.username)
+        }(null == n ? true : n.message, null != j ? j : x.username)
       })]
     })]
   })

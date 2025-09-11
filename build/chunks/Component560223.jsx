@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk391110 = require("./391110.js"),
   Chunk75077 = require("./75077.js"),
   Chunk51636 = require("./51636.jsx"),
-  Chunk484327 = require("./484327.js");
+  Chunk118461 = require("./118461.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -113,7 +113,7 @@ let I = e => {
       j = c.L.useExperiment({
         location: "PremiumPerks"
       }).enabled,
-      k = (0, m.ZM)({
+      M = (0, m.ZM)({
         perksCards: R,
         variant: n,
         hideCardsOnNarrowScreen: false,
@@ -124,7 +124,7 @@ let I = e => {
         showCustomThemesCard: j,
         isSeptember2025MarketingMomentEligible: L
       }),
-      M = k.some(e => null != e.pillText);
+      k = M.some(e => null != e.pillText);
     return (0, r.jsxs)("div", {
       ref: S,
       className: o()(E.section, {
@@ -143,7 +143,7 @@ let I = e => {
           [E.subtitle]: null == O || b,
           [E.subtitleWithButton]: null != O && !b,
           [E.fullWidth]: A || b,
-          [E.moreSubtitleMargin]: M,
+          [E.moreSubtitleMargin]: k,
           [E.leftAlignSubtitle]: b,
           [E.centerAlignSubtitle]: !b
         }),
@@ -153,7 +153,7 @@ let I = e => {
         children: O
       }), (0, r.jsx)("div", {
         className: E.cardContainer,
-        children: k.map((e, t) => (0, r.jsx)(g.Z, v(y({}, e), {
+        children: M.map((e, t) => (0, r.jsx)(g.Z, v(y({}, e), {
           forceShadow: a
         }), "".concat(e.name, "_").concat(t)))
       })]

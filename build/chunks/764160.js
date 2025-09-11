@@ -1,12 +1,12 @@
-/** Chunk was on 31422 **/
+/** Chunk was on 54628 **/
 /** chunk id: 764160, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 });
 var Chunk760919 = require("./760919.js"),
   Chunk227150 = require("./227150.js");
-let s = new Chunk760919.Z({
+let o = new Chunk760919.Z({
   id: "a98rgb",
   cssId: "a98-rgb",
   name: "Adobe\xae 98 RGB compatible",

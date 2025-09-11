@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk606318 = require("./606318.js"),
   Chunk402235 = require("./402235.js"),
   Chunk485386 = require("./485386.js"),
-  Chunk724913 = require("./724913.js");
+  Chunk136907 = require("./136907.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -101,9 +101,9 @@ let O = function(e) {
     author: x,
     onMouseEnter: L,
     onMouseLeave: j
-  } = e, k = b(e, ["className", "compact", "contentOnly", "zalgo", "preview", "disableInteraction", "childrenRepliedMessage", "childrenExecutedCommand", "childrenHeader", "childrenSystemMessage", "childrenButtons", "childrenMessageContent", "childrenAccessories", "messageRef", "focusProps", "hasThread", "isSystemMessage", "hasReply", "author", "onMouseEnter", "onMouseLeave"]);
-  let M = (0, s.e7)([_.Z], () => (null == x ? true : x.guildId) == null || (null == x ? true : x.colorRoleId) == null ? null : _.Z.getRole(x.guildId, x.colorRoleId)),
-    U = (0, f.yH)(null == x ? true : x.guildId, M) && (0, d.S2)(x),
+  } = e, M = b(e, ["className", "compact", "contentOnly", "zalgo", "preview", "disableInteraction", "childrenRepliedMessage", "childrenExecutedCommand", "childrenHeader", "childrenSystemMessage", "childrenButtons", "childrenMessageContent", "childrenAccessories", "messageRef", "focusProps", "hasThread", "isSystemMessage", "hasReply", "author", "onMouseEnter", "onMouseLeave"]);
+  let k = (0, s.e7)([_.Z], () => (null == x ? true : x.guildId) == null || (null == x ? true : x.colorRoleId) == null ? null : _.Z.getRole(x.guildId, x.colorRoleId)),
+    U = (0, f.yH)(null == x ? true : x.guildId, k) && (0, d.S2)(x),
     [G, B] = i.useState(false),
     Z = i.useCallback(e => {
       B(true), null == L || L(e)
@@ -135,7 +135,7 @@ let O = function(e) {
             [p.hasReply]: D
           }),
           ref: N
-        }, k), {
+        }, M), {
           role: "article",
           onMouseEnter: Z,
           onMouseLeave: F,

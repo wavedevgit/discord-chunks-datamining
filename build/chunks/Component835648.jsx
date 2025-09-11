@@ -2,7 +2,7 @@
 /** chunk id: 835648, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => M
+  Z: () => k
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk957825 = require("./957825.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk422840 = require("./422840.js");
+  Chunk875825 = require("./875825.js");
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -182,7 +182,7 @@ function j(e) {
   }
 }
 
-function k(e) {
+function M(e) {
   let {
     category: t,
     categoryIndex: n,
@@ -198,7 +198,7 @@ function k(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     soundboardListRef: t,
     categories: n,
@@ -220,7 +220,7 @@ function M(e) {
           pack_id: null
         }), n()
       };
-    return (0, r.jsx)(k, {
+    return (0, r.jsx)(M, {
       category: e,
       categoryIndex: t,
       onClick: l,

@@ -1,4 +1,4 @@
-/** Chunk was on 31422 **/
+/** Chunk was on 54628 **/
 /** chunk id: 525169, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -17,7 +17,7 @@ var Chunk665352 = require("./665352.js"),
   Chunk656653 = require("./656653.js");
 
 function d(e, t, r = .5, a = {}) {
-  return [e, t] = [(0, s.Z)(e), (0, s.Z)(t)], "object" === (0, n.dt)(r) && ([r, a] = [.5, r]), h(e, t, a)(r)
+  return [e, t] = [(0, o.Z)(e), (0, o.Z)(t)], "object" === (0, n.dt)(r) && ([r, a] = [.5, r]), h(e, t, a)(r)
 }
 
 function h(e, t, r = {}) {
@@ -35,7 +35,7 @@ function h(e, t, r = {}) {
     progression: g,
     premultiplied: y
   } = r;
-  e = (0, s.Z)(e), t = (0, s.Z)(t), e = (0, o.Z)(e), t = (0, o.Z)(t);
+  e = (0, o.Z)(e), t = (0, o.Z)(t), e = (0, s.Z)(e), t = (0, s.Z)(t);
   let v = {
     colors: [e, t],
     options: r
@@ -43,22 +43,22 @@ function h(e, t, r = {}) {
   if (p = p ? a.Z.get(p) : a.Z.registry[f.Z.interpolationSpace] || e.space, m = m ? a.Z.get(m) : p, e = (0, i.Z)(e, p), t = (0, i.Z)(t, p), e = (0, c.Z)(e), t = (0, c.Z)(t), p.coords.h && "angle" === p.coords.h.type) {
     let a = r.hue = r.hue || "shorter",
       n = [p, "h"],
-      [s, o] = [(0, l.Z)(e, n), (0, l.Z)(t, n)];
-    isNaN(s) && !isNaN(o) ? s = o : isNaN(o) && !isNaN(s) && (o = s), [s, o] = b.z(a, [s, o]), (0, u.Z)(e, n, s), (0, u.Z)(t, n, o)
+      [o, s] = [(0, u.Z)(e, n), (0, u.Z)(t, n)];
+    isNaN(o) && !isNaN(s) ? o = s : isNaN(s) && !isNaN(o) && (s = o), [o, s] = b.z(a, [o, s]), (0, l.Z)(e, n, o), (0, l.Z)(t, n, s)
   }
   return y && (e.coords = e.coords.map(t => t * e.alpha), t.coords = t.coords.map(e => e * t.alpha)), Object.assign(r => {
     r = g ? g(r) : r;
     let a = e.coords.map((e, a) => {
-        let s = t.coords[a];
-        return (0, n.sX)(e, s, r)
+        let o = t.coords[a];
+        return (0, n.sX)(e, o, r)
       }),
-      s = (0, n.sX)(e.alpha, t.alpha, r),
-      o = {
+      o = (0, n.sX)(e.alpha, t.alpha, r),
+      s = {
         space: p,
         coords: a,
-        alpha: s
+        alpha: o
       };
-    return y && (o.coords = o.coords.map(e => e / s)), m !== p && (o = (0, i.Z)(o, m)), o
+    return y && (s.coords = s.coords.map(e => e / o)), m !== p && (s = (0, i.Z)(s, m)), s
   }, {
     rangeArgs: v
   })

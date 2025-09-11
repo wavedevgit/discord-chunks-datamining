@@ -2,7 +2,7 @@
 /** chunk id: 301935, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  G: () => M,
+  G: () => k,
   Z: () => U
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk547283 = require("./547283.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk608848 = require("./608848.js");
+  Chunk96096 = require("./96096.js");
 
 function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -73,8 +73,8 @@ function j(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = "https://support.discord.com/hc/en-us";
-var M = function(e) {
+let M = "https://support.discord.com/hc/en-us";
+var k = function(e) {
   return e[e.LOADING = 0] = "LOADING", e[e.DONE = 1] = "DONE", e[e.ERROR = 2] = "ERROR", e
 }({});
 
@@ -91,8 +91,8 @@ function U(e) {
     appId: x,
     plan: L,
     storeListing: j,
-    price: k,
-    isGuildSubscription: M,
+    price: M,
+    isGuildSubscription: k,
     subscriptionForGuild: U,
     sku: Y,
     isCancelled: W,
@@ -186,7 +186,7 @@ function U(e) {
       className: w.details,
       children: [(0, r.jsx)(B, {
         title: P.intl.string(P.t["5D/KEB"]),
-        content: M ? (0, r.jsxs)(r.Fragment, {
+        content: k ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsxs)("span", {
             className: w.subscriptionTypeRow,
             children: [(0, r.jsx)(l.QTo, {
@@ -211,9 +211,9 @@ function U(e) {
             size: "xs"
           }), P.intl.string(P.t["6anEVl"])]
         })
-      }), null != k && (0, r.jsx)(B, {
+      }), null != M && (0, r.jsx)(B, {
         title: P.intl.string(P.t.KI7ER0),
-        content: k
+        content: M
       }), (0, r.jsx)(B, {
         title: P.intl.string(P.t.dnUzb2),
         content: (0, C.p)(null != (_ = p.createdAt) ? _ : p.currentPeriodStart)
@@ -432,7 +432,7 @@ function H(e) {
       children: [P.intl.format(P.t.IIHUUF, {
         subscriptionId: t.id
       }), (0, r.jsx)("br", {}), P.intl.format(P.t.fh65ER, {
-        helpLink: k
+        helpLink: M
       })]
     })
   }) : (0, r.jsxs)("div", {

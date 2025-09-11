@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk711325 = require("./711325.jsx"),
   Chunk852630 = require("./852630.jsx"),
   Chunk731994 = require("./731994.js"),
-  Chunk30827 = require("./30827.js");
+  Chunk761804 = require("./761804.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -81,12 +81,12 @@ function I() {
       src: e,
       preview: true
     }))
-  }, [w]), k = (0, Chunk647438.useCallback)(e => {
+  }, [w]), M = (0, Chunk647438.useCallback)(e => {
     p(t => null == t ? null : v(y({}, t), {
       palette: e,
       preview: true
     }))
-  }, []), M = (0, Chunk647438.useCallback)(e => {
+  }, []), k = (0, Chunk647438.useCallback)(e => {
     x(e)
   }, [x]), U = (0, Chunk647438.useCallback)(e => {
     if (null != O.current) {
@@ -107,9 +107,9 @@ function I() {
     null != I.current && (document.removeEventListener("mousemove", I.current), I.current = null), null != P.current && (document.removeEventListener("mouseup", P.current), P.current = null)
   }, []), (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsxs)("div", {
-      className: Chunk30827.controls,
+      className: Chunk761804.controls,
       children: [(0, Chunk951288.jsxs)("div", {
-        className: Chunk30827.toggles,
+        className: Chunk761804.toggles,
         children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
           size: "sm",
           onClick: () => {
@@ -126,19 +126,19 @@ function I() {
           text: "Toggle Gradients"
         })]
       }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk30827.themePicker,
+        className: Chunk761804.themePicker,
         children: [exports && (0, Chunk951288.jsx)(Chunk329013.i, {}), Chunk442837 && (0, Chunk951288.jsx)(Chunk711325.Z, {
           selected: null == Chunk594174 || null == (e = Chunk594174.palette) ? true : module.name,
           onSelect: e => {
-            (null == u ? true : u.src) != null && D(u.src, u.src, e), k(e)
+            (null == u ? true : u.src) != null && D(u.src, u.src, e), M(e)
           }
         })]
       })]
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk30827.main,
+      className: Chunk761804.main,
       children: [(0, Chunk951288.jsxs)("div", {
         ref: O,
-        className: Chunk30827.previews,
+        className: Chunk761804.previews,
         style: {
           width: "".concat(Chunk852630, "px")
         },
@@ -158,11 +158,11 @@ function I() {
         }), (0, Chunk951288.jsx)(R, {
           nameplate: Chunk594174
         }), (0, Chunk951288.jsx)("div", {
-          className: Chunk30827.resizeHandle,
+          className: Chunk761804.resizeHandle,
           onMouseDown: G
         })]
       }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk30827.buttons,
+        className: Chunk761804.buttons,
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/semibold",
           children: "Drag background image to screen"
@@ -177,7 +177,7 @@ function I() {
             L(t, t, (0, _.xh)(r)), D(t, t, f.jD)
           }
         }), (0, Chunk951288.jsx)("div", {
-          className: Chunk30827.uploadedArea,
+          className: Chunk761804.uploadedArea,
           children: Object.values(w).map(e => {
             let {
               url: t
@@ -185,12 +185,12 @@ function I() {
             return (0, r.jsx)(T, {
               src: t,
               onSetStatic: j,
-              removeAsset: M
+              removeAsset: k
             }, t)
           })
         }), (0, Chunk951288.jsx)(A, {
           label: "gradient override",
-          onChange: e => k({
+          onChange: e => M({
             name: f._j,
             darkBackground: e,
             lightBackground: e

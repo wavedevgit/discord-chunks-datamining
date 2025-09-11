@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk667105 = require("./667105.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk301889 = require("./301889.js");
+  Chunk638640 = require("./638640.js");
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -77,7 +77,7 @@ function N(e) {
   } = e, [N, P] = (0, i.useState)(a), w = (0, m.KX)(), D = (0, _.O5)(), x = null == (t = (0, p.WD)()) ? true : t.getId(), L = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), j = (0, y.g2)({
     useReducedMotion: L,
     className: I.colorTransition
-  }), k = N.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), M = (0, h.Bz)(n), U = (0, s.e7)([f.Z], () => f.Z.getState().theme), G = (0, c.wj)(U) ? O.BRd.DARK : O.BRd.LIGHT, {
+  }), M = N.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), k = (0, h.Bz)(n), U = (0, s.e7)([f.Z], () => f.Z.getState().theme), G = (0, c.wj)(U) ? O.BRd.DARK : O.BRd.LIGHT, {
     startConsoleQuest: B,
     startingConsoleQuest: Z
   } = (0, m.GI)({
@@ -102,7 +102,7 @@ function N(e) {
       impressionId: x,
       sourceQuestContent: A
     })
-  }, V = () => M ? (0, r.jsx)(u.ua7, {
+  }, V = () => k ? (0, r.jsx)(u.ua7, {
     "aria-label": n.config.messages.gameTitle,
     text: () => (0, r.jsxs)("div", {
       className: I.tooltip,
@@ -166,7 +166,7 @@ function N(e) {
             size: "sm"
           }),
           text: v.intl.string(v.t.XF4wuL),
-          errors: M ? true : k.map(e => e.message),
+          errors: k ? true : M.map(e => e.message),
           gameTile: V()
         })]
       })]

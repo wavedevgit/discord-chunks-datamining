@@ -72,8 +72,8 @@ let S = Symbol("NO GUILD ID"),
   x = new Map,
   L = new Map,
   j = new Map,
-  k = new Map,
   M = new Map,
+  k = new Map,
   U = [],
   G = [];
 
@@ -139,7 +139,7 @@ function H(e, t) {
 }
 
 function Y() {
-  A.clear(), C.clear(), w.clear(), D.clear(), j.clear(), k.clear(), M.clear(), Z = false
+  A.clear(), C.clear(), w.clear(), D.clear(), j.clear(), M.clear(), k.clear(), Z = false
 }
 
 function W(e) {
@@ -170,7 +170,7 @@ function z(e) {
 }
 
 function q(e) {
-  C.delete(e.userId), j.set(e.userId, z(e.mutualFriends)), k.set(e.userId, e.mutualFriends.length)
+  C.delete(e.userId), j.set(e.userId, z(e.mutualFriends)), M.set(e.userId, e.mutualFriends.length)
 }
 
 function X(e) {
@@ -190,16 +190,16 @@ function X(e) {
         guild: i,
         nick: r
       })
-    }), M.set(q.user.id, p.ZP.getFlattenedGuildIds().filter(t => null != e[t]).map(t => ({
+    }), k.set(q.user.id, p.ZP.getFlattenedGuildIds().filter(t => null != e[t]).map(t => ({
       guild: e[t].guild,
       nick: e[t].nick
     })))
   }
   if (null != q.mutual_friends_count) {
     let e = q.mutual_friends_count;
-    k.set(q.user.id, e), 0 === e && j.set(q.user.id, U)
+    M.set(q.user.id, e), 0 === e && j.set(q.user.id, U)
   }
-  null != q.mutual_friends && (j.set(q.user.id, z(q.mutual_friends)), k.set(q.user.id, q.mutual_friends.length));
+  null != q.mutual_friends && (j.set(q.user.id, z(q.mutual_friends)), M.set(q.user.id, q.mutual_friends.length));
   let $ = null != q.premium_since ? new Date(q.premium_since) : null,
     ee = null != q.premium_guild_since ? new Date(q.premium_guild_since) : null,
     et = q.application,
@@ -344,7 +344,7 @@ function $(e) {
     fetchEndedAt: 0,
     fetchError: true
   };
-  s.fetchStartedAt = o, s.fetchEndedAt = Date.now(), s.fetchError = a, w.set(r, s), (null == a ? true : a.status) === 404 && (k.set(r, 0), j.set(r, U), M.set(r, G))
+  s.fetchStartedAt = o, s.fetchEndedAt = Date.now(), s.fetchError = a, w.set(r, s), (null == a ? true : a.status) === 404 && (M.set(r, 0), j.set(r, U), k.set(r, G))
 }
 
 function ee(e) {
@@ -513,10 +513,10 @@ class e_ extends Chunk750041.Z {
     return j.get(e)
   }
   getMutualFriendsCount(e) {
-    return k.get(e)
+    return M.get(e)
   }
   getMutualGuilds(e) {
-    return M.get(e)
+    return k.get(e)
   }
   getWidgets(e) {
     var t;

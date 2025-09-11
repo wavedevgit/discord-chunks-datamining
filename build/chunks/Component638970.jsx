@@ -31,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk31948 = require("./31948.js");
+  Chunk923805 = require("./923805.js");
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -72,9 +72,9 @@ function L(e, t) {
   }), e
 }
 let j = 250,
-  k = 24;
+  M = 24;
 
-function M(e, t) {
+function k(e, t) {
   switch (t.type) {
     case "MEASUREMENT_COMPLETE":
       return L(D({}, e), {
@@ -127,7 +127,7 @@ function G(e) {
     voiceActivityStatusEnabled: W
   } = (0, d.U)({
     location: "UserProfileStackedActivity"
-  }), K = W && null == Z && null == V && null != F, z = (0, O.yi)(), q = (null == z ? true : z.interactionSource) === A.n_.ACTIVITY, X = i.useRef(null), Q = i.useRef(null), J = i.useRef(null), $ = i.useRef(null), [ee, et] = i.useReducer(M, U), {
+  }), K = W && null == Z && null == V && null != F, z = (0, O.yi)(), q = (null == z ? true : z.interactionSource) === A.n_.ACTIVITY, X = i.useRef(null), Q = i.useRef(null), J = i.useRef(null), $ = i.useRef(null), [ee, et] = i.useReducer(k, U), {
     height: en,
     animationPhase: er
   } = ee, ei = "awaitingInput" !== er, ea = "animating" === er || "done" === er, eo = (0, p.P6)("UserProfileStackedActivity"), es = [], el = {
@@ -177,7 +177,7 @@ function G(e) {
     }), requestAnimationFrame(() => {
       et({
         type: "START_EXPAND_ANIMATION",
-        height: e + t - k
+        height: e + t - M
       }), $.current = setTimeout(() => {
         var e;
         et({

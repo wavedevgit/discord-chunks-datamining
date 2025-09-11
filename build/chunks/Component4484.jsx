@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk321127 = require("./321127.jsx"),
   Chunk645174 = require("./645174.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk867641 = require("./867641.js");
+  Chunk520093 = require("./520093.js");
 let x = Chunk647438.forwardRef(function(e, t) {
   let {
     value: n,
@@ -41,8 +41,8 @@ let x = Chunk647438.forwardRef(function(e, t) {
     channel: x,
     className: L,
     id: j,
-    disabled: k,
-    submitting: M,
+    disabled: M,
+    submitting: k,
     placeholder: U,
     required: G,
     textAreaPaddingClassName: B,
@@ -74,7 +74,7 @@ let x = Chunk647438.forwardRef(function(e, t) {
     "aria-describedby": ef,
     "aria-labelledby": e_,
     "aria-autocomplete": ep
-  } = e, eh = i.useRef(null), em = i.useRef(null), eg = i.useRef(true), eE = i.useRef(true), eb = k || M, ey = i.useCallback((e, t, n) => {
+  } = e, eh = i.useRef(null), em = i.useRef(null), eg = i.useRef(true), eE = i.useRef(true), eb = M || k, ey = i.useCallback((e, t, n) => {
     var r;
     let {
       value: i,
@@ -231,7 +231,7 @@ let x = Chunk647438.forwardRef(function(e, t) {
         readOnly: eb,
         spellCheck: ee,
         autoFocus: !er,
-        canFocus: !k,
+        canFocus: !M,
         onChange: ew,
         onFocus: H,
         onBlur: Y,

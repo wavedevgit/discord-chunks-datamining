@@ -24,7 +24,7 @@ var Chunk304789 = require("./304789.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk355758 = require("./355758.js"),
+  Chunk254972 = require("./254972.js"),
   Chunk22767 = require("./22767.js");
 
 function T(e, t, n) {
@@ -206,8 +206,8 @@ let w = function(e) {
         onClick: x
       })]
     })
-  }, k = f.ZP.getPlanIdFromInvoice(t, u), M = (0, m.eQ)(null == A ? true : A.expires_at);
-  return (0, c.Q0)(k) ? null : (0, r.jsx)("div", {
+  }, M = f.ZP.getPlanIdFromInvoice(t, u), k = (0, m.eQ)(null == A ? true : A.expires_at);
+  return (0, c.Q0)(M) ? null : (0, r.jsx)("div", {
     className: v.churnDiscountBannerBackground,
     children: (0, r.jsx)(i.$, {
       color: "nitro-pink",
@@ -230,7 +230,7 @@ let w = function(e) {
             className: v.churnDiscountBannerExpiryDate,
             variant: "text-sm/medium",
             color: "text-primary",
-            children: null != A && M
+            children: null != A && k
           })]
         }), (0, r.jsx)("div", {
           className: v.selectPlanDivider

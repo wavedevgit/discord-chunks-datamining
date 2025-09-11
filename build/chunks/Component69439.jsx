@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk667105 = require("./667105.jsx"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk924304 = require("./924304.js");
+  Chunk179844 = require("./179844.js");
 let v = [{
   value: Chunk46140.cd.DESKTOP,
   get label() {
@@ -84,9 +84,9 @@ function S(e) {
     sourceQuestContent: D
   } = e, x = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), L = (0, E.g2)({
     useReducedMotion: x
-  }), j = (0, d.O5)(), k = (0, _._s)({
+  }), j = (0, d.O5)(), M = (0, _._s)({
     quest: C
-  }), M = (0, _.z)(C), U = (0, _.B6)(C.config.expiresAt, {
+  }), k = (0, _.z)(C), U = (0, _.B6)(C.config.expiresAt, {
     month: "numeric",
     day: "numeric"
   }), {
@@ -217,7 +217,7 @@ function S(e) {
           return (0, u.vE)(e)
       }
     }
-  }) : (0, f.$J)(C) && !M && $ !== h.LI.DESKTOP ? k ? (0, r.jsx)("div", {
+  }) : (0, f.$J)(C) && !k && $ !== h.LI.DESKTOP ? M ? (0, r.jsx)("div", {
     className: O.button,
     children: (0, r.jsx)(o.zxk, {
       variant: "secondary",

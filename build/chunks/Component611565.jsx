@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 /** chunk id: 611565, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
@@ -14,11 +14,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk592125 = require("./592125.js"),
   Chunk787879 = require("./787879.js"),
   Chunk370774 = require("./370774.js"),
-  Chunk326588 = require("./326588.js"),
-  Chunk451429 = require("./451429.js");
-let f = [{
+  Chunk186397 = require("./186397.js"),
+  Chunk866403 = require("./866403.js");
+let b = [{
     key: "channelName",
-    cellClassName: l()(Chunk326588.cell, Chunk326588.channelName),
+    cellClassName: l()(Chunk186397.cell, Chunk186397.channelName),
     render(e) {
       let {
         channelName: t
@@ -30,7 +30,7 @@ let f = [{
     }
   }, {
     key: "channelId",
-    cellClassName: l()(Chunk326588.cell, Chunk326588.channelId),
+    cellClassName: l()(Chunk186397.cell, Chunk186397.channelId),
     render(e) {
       let {
         channelId: t
@@ -41,9 +41,9 @@ let f = [{
       })
     }
   }],
-  v = [{
+  f = [{
     key: "channelName",
-    cellClassName: l()(Chunk326588.cell, Chunk326588.channelName),
+    cellClassName: l()(Chunk186397.cell, Chunk186397.channelName),
     render(e) {
       let {
         channelName: t
@@ -55,7 +55,7 @@ let f = [{
     }
   }, {
     key: "loadState",
-    cellClassName: l()(Chunk326588.cell, Chunk326588.loadState),
+    cellClassName: l()(Chunk186397.cell, Chunk186397.loadState),
     render(e) {
       let {
         loadState: t
@@ -67,7 +67,7 @@ let f = [{
     }
   }, {
     key: "channelId",
-    cellClassName: l()(Chunk326588.cell, Chunk326588.channelId),
+    cellClassName: l()(Chunk186397.cell, Chunk186397.channelId),
     render(e) {
       let {
         channelId: t
@@ -79,7 +79,7 @@ let f = [{
     }
   }];
 
-function b() {
+function g() {
   let {
     unreadRecentMentionsCount: e,
     unreadChannelIds: t
@@ -87,8 +87,8 @@ function b() {
     isLoading: n,
     hasLoadedEver: r,
     hasPreloaded: l,
-    hasMoreToLoad: b,
-    isLoadingComplete: g
+    hasMoreToLoad: g,
+    isLoadingComplete: v
   } = (0, Chunk399606.cj)([Chunk787879.Z], () => ({
     isLoading: Chunk787879.Z.isLoading,
     hasLoadedEver: Chunk787879.Z.hasLoadedEver,
@@ -106,9 +106,9 @@ function b() {
     return e[t] = null != n ? n : null, e
   }, {})), N = (0, Chunk399606.e7)([Chunk787879.Z], () => Chunk787879.Z.getInboxMessages()), E = (0, Chunk399606.e7)([Chunk787879.Z], () => Chunk787879.Z.getDevOverrides().navOnClick);
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk451429.panel,
+    className: Chunk866403.panel,
     children: (0, Chunk951288.jsxs)(Chunk481060.zJl, {
-      className: Chunk326588.content,
+      className: Chunk186397.content,
       children: [(0, Chunk951288.jsxs)("div", {
         children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "heading-lg/semibold",
@@ -150,7 +150,7 @@ function b() {
         }), (0, Chunk951288.jsxs)("div", {
           children: ["Unread Channel Count: ", exports.length]
         }), (0, Chunk951288.jsx)(Chunk681619.Z, {
-          columns: f,
+          columns: b,
           data: Object.entries(C).map(e => {
             var t;
             let [n, a] = e;
@@ -172,9 +172,9 @@ function b() {
         }), (0, Chunk951288.jsxs)("div", {
           children: ["Has Loaded Ever: ", Chunk120356 ? "✅" : "❌"]
         }), (0, Chunk951288.jsxs)("div", {
-          children: ["Has More To Load: ", b ? "✅" : "❌"]
+          children: ["Has More To Load: ", g ? "✅" : "❌"]
         }), (0, Chunk951288.jsxs)("div", {
-          children: ["Is Loading Complete: ", g ? "✅" : "❌"]
+          children: ["Is Loading Complete: ", v ? "✅" : "❌"]
         }), (0, Chunk951288.jsxs)("div", {
           children: ["Last Loading Trigger: ", null == j ? true : j.loadingTrigger]
         })]
@@ -185,7 +185,7 @@ function b() {
         }), (0, Chunk951288.jsxs)("div", {
           children: ["Total Channels: ", Object.keys(_).length]
         }), (0, Chunk951288.jsx)(Chunk681619.Z, {
-          columns: v,
+          columns: f,
           data: Object.entries(_).map(e => {
             var t, n;
             let [a, r] = e;

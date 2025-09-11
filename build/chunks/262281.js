@@ -1,4 +1,4 @@
-/** Chunk was on 31422 **/
+/** Chunk was on 54628 **/
 /** chunk id: 262281, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -38,7 +38,7 @@ let g = {
 };
 
 function y(e, {
-  method: t = s.Z.gamut_mapping,
+  method: t = o.Z.gamut_mapping,
   space: r,
   deltaEMethod: f = "",
   jnd: Z = 2,
@@ -53,37 +53,37 @@ function y(e, {
   } = {}) {
     e = (0, h.Z)(e), t || (t = e.space), t = n.Z.get(t);
     let r = n.Z.get("oklch");
-    if (t.isUnbounded) return (0, l.Z)(e, t);
-    let s = (0, l.Z)(e, r),
-      o = s.coords[0];
-    if (o >= 1) {
-      let r = (0, l.Z)(v.WHITE, t);
-      return r.alpha = e.alpha, (0, l.Z)(r, t)
+    if (t.isUnbounded) return (0, u.Z)(e, t);
+    let o = (0, u.Z)(e, r),
+      s = o.coords[0];
+    if (s >= 1) {
+      let r = (0, u.Z)(v.WHITE, t);
+      return r.alpha = e.alpha, (0, u.Z)(r, t)
     }
-    if (o <= 0) {
-      let r = (0, l.Z)(v.BLACK, t);
-      return r.alpha = e.alpha, (0, l.Z)(r, t)
+    if (s <= 0) {
+      let r = (0, u.Z)(v.BLACK, t);
+      return r.alpha = e.alpha, (0, u.Z)(r, t)
     }
-    if ((0, c.Z)(s, t, {
+    if ((0, c.Z)(o, t, {
         epsilon: 0
-      })) return (0, l.Z)(s, t);
+      })) return (0, u.Z)(o, t);
 
-    function u(e) {
-      let r = (0, l.Z)(e, t),
+    function l(e) {
+      let r = (0, u.Z)(e, t),
         n = Object.values(t.coords);
       return r.coords = r.coords.map((e, t) => {
         if ("range" in n[t]) {
-          let [r, s] = n[t].range;
-          return a.uZ(r, e, s)
+          let [r, o] = n[t].range;
+          return a.uZ(r, e, o)
         }
         return e
       }), r
     }
     let f = 0,
-      b = s.coords[1],
+      b = o.coords[1],
       p = true,
-      m = (0, d.Z)(s),
-      g = u(m),
+      m = (0, d.Z)(o),
+      g = l(m),
       y = (0, i.Z)(g, m);
     if (y < .02) return g;
     for (; b - f > 1e-4;) {
@@ -91,7 +91,7 @@ function y(e, {
       if (m.coords[1] = e, p && (0, c.Z)(m, t, {
           epsilon: 0
         })) f = e;
-      else if (g = u(m), (y = (0, i.Z)(g, m)) < .02)
+      else if (g = l(m), (y = (0, i.Z)(g, m)) < .02)
         if (.02 - y < 1e-4) break;
         else p = false, f = e;
       else b = e
@@ -101,7 +101,7 @@ function y(e, {
     space: r
   });
   else {
-    if ("clip" === t || (0, c.Z)(e, r)) M = (0, l.Z)(e, r);
+    if ("clip" === t || (0, c.Z)(e, r)) M = (0, u.Z)(e, r);
     else {
       Object.prototype.hasOwnProperty.call(g, t) && ({
         method: t,
@@ -109,53 +109,53 @@ function y(e, {
         deltaEMethod: f,
         blackWhiteClamp: w
       } = g[t]);
-      let s = o.Z;
+      let o = s.Z;
       if ("" !== f) {
         for (let e in p.ZP)
           if ("deltae" + f.toLowerCase() === e.toLowerCase()) {
-            s = p.ZP[e];
+            o = p.ZP[e];
             break
           }
       }
-      let i = y((0, l.Z)(e, r), {
+      let i = y((0, u.Z)(e, r), {
         method: "clip",
         space: r
       });
-      if (s(e, i) > Z) {
+      if (o(e, i) > Z) {
         if (3 === Object.keys(w).length) {
           let t = n.Z.resolveCoord(w.channel),
-            r = (0, u.Z)((0, l.Z)(e, t.space), t.id);
-          if (a.Wi(r) && (r = 0), r >= w.max) return (0, l.Z)({
+            r = (0, l.Z)((0, u.Z)(e, t.space), t.id);
+          if (a.Wi(r) && (r = 0), r >= w.max) return (0, u.Z)({
             space: "xyz-d65",
             coords: m.mh.D65
           }, e.space);
-          if (r <= w.min) return (0, l.Z)({
+          if (r <= w.min) return (0, u.Z)({
             space: "xyz-d65",
             coords: [0, 0, 0]
           }, e.space)
         }
-        let o = n.Z.resolveCoord(t),
-          i = o.space,
-          c = o.id,
-          f = (0, l.Z)(e, i);
+        let s = n.Z.resolveCoord(t),
+          i = s.space,
+          c = s.id,
+          f = (0, u.Z)(e, i);
         f.coords.forEach((e, t) => {
           a.Wi(e) && (f.coords[t] = 0)
         });
-        let h = (o.range || o.refRange)[0],
+        let h = (s.range || s.refRange)[0],
           p = function(e) {
             let t = e ? Math.floor(Math.log10(Math.abs(e))) : 0;
             return Math.max(parseFloat(`1e${t-2}`), 1e-6)
           }(Z),
           g = h,
-          v = (0, u.Z)(f, c);
+          v = (0, l.Z)(f, c);
         for (; v - g > p;) {
           let e = (0, d.Z)(f);
-          s(f, e = y(e, {
+          o(f, e = y(e, {
             space: r,
             method: "clip"
-          })) - Z < p ? g = (0, u.Z)(f, c) : v = (0, u.Z)(f, c), (0, b.Z)(f, c, (g + v) / 2)
+          })) - Z < p ? g = (0, l.Z)(f, c) : v = (0, l.Z)(f, c), (0, b.Z)(f, c, (g + v) / 2)
         }
-        M = (0, l.Z)(f, r)
+        M = (0, u.Z)(f, r)
       } else M = i
     }
     if ("clip" === t || !(0, c.Z)(M, r, {
@@ -168,7 +168,7 @@ function y(e, {
       })
     }
   }
-  return r !== e.space && (M = (0, l.Z)(M, e.space)), e.coords = M.coords, e
+  return r !== e.space && (M = (0, u.Z)(M, e.space)), e.coords = M.coords, e
 }
 y.returns = "color";
 let v = {

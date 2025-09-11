@@ -1,12 +1,12 @@
-/** Chunk was on 31422 **/
+/** Chunk was on 54628 **/
 /** chunk id: 257381, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 });
 var Chunk665352 = require("./665352.js"),
   Chunk856308 = require("./856308.js");
-let s = new Chunk665352.Z({
+let o = new Chunk665352.Z({
   id: "xyz-abs-d65",
   cssId: "--xyz-abs-d65",
   name: "Absolute XYZ D65",

@@ -35,7 +35,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk594174 = require("./594174.js"),
   Chunk74538 = require("./74538.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk436360 = require("./436360.js");
+  Chunk341217 = require("./341217.js");
 
 function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -59,7 +59,7 @@ function j(e) {
   return e
 }
 
-function k(e, t) {
+function M(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -70,14 +70,14 @@ function k(e, t) {
   return n
 }
 
-function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+function k(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function U() {
-  var e, t, n, i, L, k, U, G;
+  var e, t, n, i, L, M, U, G;
   let B = (0, Chunk442837.e7)([Chunk594174.default], () => {
       let e = Chunk594174.default.getCurrentUser();
       return a()(null != module, "DefaultCustomizationSections: user cannot be undefined"), module
@@ -97,7 +97,7 @@ function U() {
     } = (0, Chunk442837.cj)([Chunk25990.Z], () => {
       let e = Chunk25990.Z.getAllPending(),
         t = Chunk25990.Z.getErrors();
-      return M(j({}, module), {
+      return k(j({}, module), {
         errors: exports
       })
     }),
@@ -112,7 +112,7 @@ function U() {
     er = (0, Chunk687158.ZP)(B.id),
     ei = null == er ? true : er.getLegacyUsername(),
     ea = (null != (n = null == (e = Q.global_name) ? true : module.length) ? require : 0) > 0 ? Q.global_name : null != (i = null == $ ? true : $.nick) ? Chunk512722 : [],
-    eo = (null != (L = null == (t = Q.bio) ? true : exports.length) ? L : 0) > 0 ? Q.bio : null != (k = null == $ ? true : $.bio) ? k : [],
+    eo = (null != (L = null == (t = Q.bio) ? true : exports.length) ? L : 0) > 0 ? Q.bio : null != (M = null == $ ? true : $.bio) ? M : [],
     es = (0, Chunk396402.w)(),
     el = (0, Chunk447448.k)({
       location: "DefaultCustomizationSections"
@@ -137,7 +137,7 @@ function U() {
       setPendingAccentColor: Chunk350327.CM
     }, "color");
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk436360.sectionsContainer,
+    className: Chunk341217.sectionsContainer,
     children: [(0, Chunk951288.jsx)(Chunk349177.Z, {
       placeholder: B.username,
       errors: ea,

@@ -16,7 +16,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk122289 = require("./122289.js"),
   Chunk624138 = require("./624138.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk916648 = require("./916648.js");
+  Chunk942957 = require("./942957.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -66,7 +66,7 @@ class E extends(r = Chunk647438.PureComponent) {
       descriptionClassName: t
     } = this.props;
     return (0, Chunk951288.jsx)(Chunk481060.Text, {
-      className: s()(Chunk916648.description, exports),
+      className: s()(Chunk942957.description, exports),
       variant: "text-md/semibold",
       children: this.getLabel(module)
     })
@@ -95,21 +95,21 @@ class E extends(r = Chunk647438.PureComponent) {
         type: this.typeString
       }), (0, Chunk951288.jsxs)(Chunk600164.Z, {
         direction: Chunk600164.Z.Direction.VERTICAL,
-        className: Chunk916648.descriptionWrapper,
+        className: Chunk942957.descriptionWrapper,
         children: [(0, Chunk951288.jsxs)(Chunk600164.Z, {
           align: Chunk600164.Z.Align.CENTER,
           children: [this.renderDescription(), Chunk120356 && module ? (0, Chunk951288.jsx)("div", {
-            className: Chunk916648.defaultIndicator,
+            className: Chunk942957.defaultIndicator,
             children: Chunk388032.intl.string(Chunk388032.t.bBvAEB)
           }) : null, r ? (0, Chunk951288.jsx)("div", {
-            className: Chunk916648.premiumIndicator,
+            className: Chunk942957.premiumIndicator,
             children: Chunk388032.intl.string(Chunk388032.t.YCrcPD)
           }) : null, Chunk120356 && exports.invalid ? (0, Chunk951288.jsx)("div", {
-            className: Chunk916648.invalidIndicator,
+            className: Chunk942957.invalidIndicator,
             children: Chunk388032.intl.string(Chunk388032.t["851k9/"])
           }) : null]
         }), require && null != s ? (0, Chunk951288.jsx)("div", {
-          className: Chunk916648.subText,
+          className: Chunk942957.subText,
           children: s
         }) : null]
       })]

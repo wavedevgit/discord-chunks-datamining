@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 /** chunk id: 120816, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => f
 }), require("./539854.js"), require("./388685.js");
 var a, r, Chunk772848 = require("./772848.js"),
   Chunk756647 = require("./756647.js"),
@@ -11,10 +11,10 @@ var a, r, Chunk772848 = require("./772848.js"),
   Chunk906467 = require("./906467.js");
 let u = 0,
   m = [],
-  x = 0,
-  h = [],
-  p = false;
-class f extends(a = Chunk442837.ZP.Store) {
+  h = 0,
+  p = [],
+  x = false;
+class b extends(a = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk906467.Z)
   }
@@ -22,21 +22,21 @@ class f extends(a = Chunk442837.ZP.Store) {
     return m
   }
   get loggedEventsVersion() {
-    return x
-  }
-  get loggedTriggers() {
     return h
   }
-  get trackTriggers() {
+  get loggedTriggers() {
     return p
   }
-}(r = "displayName") in f ? Object.defineProperty(f, r, {
+  get trackTriggers() {
+    return x
+  }
+}(r = "displayName") in b ? Object.defineProperty(b, r, {
   value: "AnalyticsLogStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : f[r] = "AnalyticsLogStore";
-let v = new f(Chunk570140.Z, {
+}) : b[r] = "AnalyticsLogStore";
+let f = new b(Chunk570140.Z, {
   TRACK: function(e) {
     let {
       event: t,
@@ -49,7 +49,7 @@ let v = new f(Chunk570140.Z, {
       properties: n,
       fingerprint: null != a ? (0, i.s)(a) : c.default.getId(),
       timestamp: new Date
-    }), x++, m.length > 500 && (m = m.slice(-Math.floor(250))))
+    }), h++, m.length > 500 && (m = m.slice(-Math.floor(250))))
   },
   TRACK_TRIGGER: function(e) {
     let {
@@ -60,7 +60,7 @@ let v = new f(Chunk570140.Z, {
       location: i,
       previouslyTracked: s
     } = e;
-    d.Z.isDeveloper && p && (h = [...h, {
+    d.Z.isDeveloper && x && (p = [...p, {
       key: (0, l.Z)(),
       experimentId: t,
       descriptor: n,
@@ -69,15 +69,15 @@ let v = new f(Chunk570140.Z, {
       location: i,
       previouslyTracked: s,
       timestamp: new Date
-    }]).length > 500 && h.shift()
+    }]).length > 500 && p.shift()
   },
   SET_TRACK_TRIGGERS: function(e) {
     let {
       enabled: t
     } = e;
-    p = t
+    x = t
   },
   ANALYTICS_LOG_CLEAR: function() {
-    m = [], x++, h = []
+    m = [], h++, p = []
   }
 })

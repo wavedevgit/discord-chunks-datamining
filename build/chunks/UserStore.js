@@ -3,7 +3,7 @@
 "use strict";
 require.r(exports), require.d(exports, {
   ASSISTANT_WUMPUS_VOICE_USER: () => I,
-  default: () => ek,
+  default: () => eM,
   mergeUser: () => R,
   transformUser: () => C,
   users: () => O
@@ -202,13 +202,13 @@ function j(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   return !("incomplete" in e)
 }
 
-function M(e) {
+function k(e) {
   if (null != e.users)
-    for (let t of e.users) t.id in O && k(t) || (O[t.id] = new _.Z(t))
+    for (let t of e.users) t.id in O && M(t) || (O[t.id] = new _.Z(t))
 }
 
 function U(e) {
@@ -680,7 +680,7 @@ class ej extends Chunk750041.Z {
     if (null != t)
       for (let e of t.users) O[e.id] = new _.Z(e);
     if (null != e.users)
-      for (let t of e.users) t.id in O && k(t) || (O[t.id] = new _.Z(t));
+      for (let t of e.users) t.id in O && M(t) || (O[t.id] = new _.Z(t));
     for (let t of [e.privateChannels, e.initialGuildChannels])
       for (let e of t) {
         var n;
@@ -723,7 +723,7 @@ class ej extends Chunk750041.Z {
       CONNECTION_OPEN: L,
       CONNECTION_OPEN_SUPPLEMENTAL: j,
       UPDATE_CLIENT_PREMIUM_TYPE: Z,
-      OVERLAY_INITIALIZE: M,
+      OVERLAY_INITIALIZE: k,
       CACHE_LOADED: e => this.handleLoadCache(e),
       USER_UPDATE: U,
       USER_PROFILE_FETCH_SUCCESS: G,
@@ -788,4 +788,4 @@ class ej extends Chunk750041.Z {
   }
 }
 y(ej, "displayName", "UserStore"), y(ej, "LATEST_SNAPSHOT_VERSION", 1);
-let ek = new ej
+let eM = new ej

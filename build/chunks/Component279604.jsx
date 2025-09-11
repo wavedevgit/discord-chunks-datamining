@@ -1,4 +1,4 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 71832 **/
 /** chunk id: 279604, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   KE: () => y,
@@ -61,7 +61,7 @@ function y(e, t) {
       case g.Us.PERK: {
         let {
           default: i
-        } = await Promise.all([n.e("55616"), n.e("90746"), n.e("67455")]).then(n.bind(n, 326055));
+        } = await Promise.all([n.e("55616"), n.e("90746"), n.e("20572")]).then(n.bind(n, 326055));
         return n => (0, r.jsx)(i, b({
           guildId: e,
           powerup: t
@@ -167,7 +167,7 @@ function x(e, t) {
       i.stopPropagation(), (0, o.ZDy)(async () => {
         let {
           default: i
-        } = await Promise.all([n.e("31924"), n.e("80648")]).then(n.bind(n, 625651));
+        } = await Promise.all([n.e("31924"), n.e("46989")]).then(n.bind(n, 625651));
         return n => (0, r.jsx)(i, b({
           guildId: e,
           powerup: t

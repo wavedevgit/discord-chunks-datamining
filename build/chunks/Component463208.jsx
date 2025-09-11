@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk74655 = require("./74655.jsx"),
   Chunk897037 = require("./897037.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk430490 = require("./430490.js");
+  Chunk693697 = require("./693697.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -184,8 +184,8 @@ function R(e) {
     validateOn: x = "change",
     size: L = "md",
     fullWidth: j = false,
-    clearable: k = false,
-    helperText: M,
+    clearable: M = false,
+    helperText: k,
     showCharacterCount: U = false,
     successMessage: G,
     label: B,
@@ -221,7 +221,7 @@ function R(e) {
   }, ee = i.useRef(null), et = Y.readOnly;
   null == et && false === a && (et = true);
   let en = null;
-  ("boolean" == typeof k ? k && null != E && "" !== E && !et : k.show) ? en = (0, r.jsx)(N, {
+  ("boolean" == typeof M ? M && null != E && "" !== E && !et : M.show) ? en = (0, r.jsx)(N, {
     inputSize: L,
     onClick: $
   }): null != D && (en = (0, r.jsx)(C, {
@@ -243,7 +243,7 @@ function R(e) {
     required: V,
     description: Z,
     hideLabel: F,
-    helperText: M,
+    helperText: k,
     errorMessage: W.hasError && null != (t = W.errorMessage) ? t : true,
     successMessage: G,
     trailingContent: ei,

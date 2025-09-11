@@ -1,4 +1,4 @@
-/** Chunk was on 8106 **/
+/** Chunk was on 70830 **/
 /** chunk id: 247031, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => k
@@ -28,8 +28,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk1080 = require("./1080.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk121884 = require("./121884.js"),
-  Chunk620842 = require("./620842.js");
+  Chunk57652 = require("./57652.js"),
+  Chunk504401 = require("./504401.js");
 
 function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -145,21 +145,21 @@ class D extends Chunk647438.PureComponent {
       guild: n
     } = this.props;
     return (0, Chunk951288.jsxs)(Chunk481060.P3F, {
-      className: a()(Chunk121884.bannedUser, Chunk620842.card),
+      className: a()(Chunk57652.bannedUser, Chunk504401.card),
       onClick: this.handleShowModal,
       onContextMenu: this.handleContextMenu,
       children: [(0, Chunk951288.jsx)(Chunk481060.qEK, {
         src: module.getAvatarURL(null == require ? true : require.id, 40),
         "aria-label": module.username,
         size: Chunk481060.EFr.SIZE_40,
-        className: Chunk121884.bannedUserAvatar
+        className: Chunk57652.bannedUserAvatar
       }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk121884.username,
+        className: Chunk57652.username,
         children: [Chunk51144.ZP.getUserTag(module, {
           mode: "username",
           identifiable: exports ? "never" : "always"
         }), !exports && !module.hasUniqueUsername() && (0, Chunk951288.jsxs)("span", {
-          className: Chunk121884.discrim,
+          className: Chunk57652.discrim,
           children: ["#", module.discriminator]
         })]
       })]

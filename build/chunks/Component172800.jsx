@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk149203 = require("./149203.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk999642 = require("./999642.js");
+  Chunk39162 = require("./39162.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -95,8 +95,8 @@ let L = e => {
     onInspect: x,
     surrogateCodePoint: L,
     getEmojiItemProps: j,
-    getEmojiRowProps: k,
-    isScrolling: M,
+    getEmojiRowProps: M,
+    isScrolling: k,
     isUsingKeyboardNavigation: U,
     rowIndex: G,
     allowAnimatedEmoji: B,
@@ -145,7 +145,7 @@ let L = e => {
             tabIndex: g,
             onFocus: E
           } = h, b = D(h, ["ref", "tabIndex", "onFocus"]), y = el.rowIndex === _ && el.columnIndex === p, O = () => {
-            M.current || U.current || x(e)
+            k.current || U.current || x(e)
           };
           return (0, i.createElement)("li", w(R({}, b), {
             key: t
@@ -176,7 +176,7 @@ let L = e => {
             visibleRowIndex: t,
             columnIndex: i
           } = e, a = el.rowIndex === t && el.columnIndex === i, o = t => {
-            t.stopPropagation(), M.current || U.current || (N(e, {
+            t.stopPropagation(), k.current || U.current || (N(e, {
               isFinalSelection: true,
               toggleFavorite: false
             }), (0, f.D)(e.guildId), e.sectionCollapsedToThreeRows || q(), y.default.track(S.rMx.EMOJI_PICKER_THREE_ROW_COLLAPSE_TOGGLED, {
@@ -198,7 +198,7 @@ let L = e => {
         case v.ld.CREATE_EMOJI: {
           if (Q) return null;
           let t = t => {
-            t.stopPropagation(), M.current || U.current || (N(e, {
+            t.stopPropagation(), k.current || U.current || (N(e, {
               isFinalSelection: true,
               toggleFavorite: false
             }), m.Z.open(e.guildId, S.pNK.EMOJI, S.jXE.EMOJI_PICKER_POPOUT))
@@ -226,7 +226,7 @@ let L = e => {
             descriptor: e,
             emojiItemKey: t,
             isInspected: o,
-            isScrolling: M,
+            isScrolling: k,
             isUsingKeyboardNavigation: U,
             surrogateCodePoint: L,
             allowAnimatedEmoji: B,
@@ -250,7 +250,7 @@ let L = e => {
           return
       }
     },
-    em = e => (0, r.jsx)("ul", w(R({}, k(G)), {
+    em = e => (0, r.jsx)("ul", w(R({}, M(G)), {
       className: o()(C.emojiListRow, {
         [C.emojiListRowLargeSize]: e_,
         [C.emojiListRowMediumSize]: ep

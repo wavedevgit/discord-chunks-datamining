@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 693587, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 85683 **/
+/** chunk id: 693587, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => p
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
@@ -30,79 +29,90 @@ function s(e) {
 }
 
 function l(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function c(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : l(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let u = 864e5,
-  d = 36e5,
-  f = {};
+let c = {};
 
-function _() {
-  f = {}
+function d(e) {
+  return null == c[e] && (c[e] = {
+    catalog: {},
+    instances: {},
+    entitlements: {}
+  }), c[e]
 }
-
-function p(e) {
-  let {
-    guildId: t,
-    catalog: n
-  } = e;
-  f[t] = c(s({}, f[t]), {
-    catalog: n,
-    hasFetchedCatalog: true
-  })
-}
-
-function h(e) {
-  let {
-    guildId: t,
-    instances: n
-  } = e;
-  f[t] = c(s({}, f[t]), {
-    instances: n,
-    hasFetchedInstances: true
-  })
-}
-class m extends(r = Chunk442837.ZP.Store) {
+class u extends(r = Chunk442837.ZP.Store) {
   getState() {
-    return f
+    return c
   }
   getStateForGuild(e) {
-    return null != e ? f[e] : true
+    return null != e ? c[e] : true
   }
   shouldFetchCatalogForGuild(e) {
     var t;
-    let n = null == (t = f[e]) ? true : t.catalogFetchCooldown;
-    return null == n || n + u < Date.now()
+    let n = null == (t = c[e]) ? true : t.catalogFetchCooldown;
+    return null == n || n + 864e5 < Date.now()
   }
   shouldFetchInstancesForGuild(e) {
     var t;
-    let n = null == (t = f[e]) ? true : t.instancesFetchCooldown;
-    return null == n || n + d < Date.now()
+    let n = null == (t = c[e]) ? true : t.instancesFetchCooldown;
+    return null == n || n + 36e5 < Date.now()
   }
   hasFetchedCatalog(e) {
     var t;
-    return null != e && (null == (t = f[e]) ? true : t.hasFetchedCatalog) === true
+    return null != e && (null == (t = c[e]) ? true : t.hasFetchedCatalog) === true
   }
   hasFetchedInstances(e) {
     var t;
-    return null != e && (null == (t = f[e]) ? true : t.hasFetchedInstances) === true
+    return null != e && (null == (t = c[e]) ? true : t.hasFetchedInstances) === true
   }
 }
-o(m, "displayName", "PortkeyStore");
-let g = new m(Chunk570140.Z, {
-  LOGOUT: _,
-  PORTKEY_FETCH_CATALOG_SUCCESS: p,
-  PORTKEY_FETCH_INSTANCES_SUCCESS: h
+o(u, "displayName", "PortkeyStore");
+let p = new u(Chunk570140.Z, {
+  LOGOUT: function() {
+    c = {}
+  },
+  PORTKEY_FETCH_CATALOG_SUCCESS: function(e) {
+    let {
+      guildId: t,
+      catalog: n
+    } = e;
+    c = l(s({}, c), {
+      [t]: l(s({}, d(t)), {
+        catalog: n,
+        hasFetchedCatalog: true
+      })
+    })
+  },
+  PORTKEY_FETCH_INSTANCES_SUCCESS: function(e) {
+    let {
+      guildId: t,
+      instances: n
+    } = e;
+    c = l(s({}, c), {
+      [t]: l(s({}, d(t)), {
+        instances: n,
+        hasFetchedInstances: true
+      })
+    })
+  },
+  GUILD_BOOST_ENTITLEMENTS_FETCH_SUCCESS: function(e) {
+    let {
+      guildId: t,
+      unlockedGameServers: n
+    } = e;
+    c = l(s({}, c), {
+      [t]: l(s({}, d(t)), {
+        entitlements: n
+      })
+    })
+  }
 })

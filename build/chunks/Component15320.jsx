@@ -22,9 +22,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk290511 = require("./290511.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk802179 = require("./802179.js");
+  Chunk982653 = require("./982653.js");
 
-function C(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function C(e) {
   return e
 }
 
-function y(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -56,18 +56,18 @@ function y(e, t) {
   }), e
 }
 
-function N(e, t) {
+function C(e, t) {
   return (0, r.jsx)("span", {
     className: O.helpTextItem,
     children: e
   }, t)
 }
 
-function E(e, t) {
+function P(e, t) {
   return !(e.features.has(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && e.features.has(_.oNc.MEMBER_VERIFICATION_GATE_ENABLED)) && null != t
 }
 
-function P(e) {
+function E(e) {
   let {
     headerId: t,
     guild: n,
@@ -79,27 +79,27 @@ function P(e) {
     gotoPrevPrompt: f,
     gotoNextPrompt: g,
     completeOnboarding: j
-  } = e, _ = (0, i.Wu)([p.Z], () => p.Z.getOnboardingResponsesForPrompt(n.id, u.id)), y = 0 === _.length && (null == u ? true : u.required), E = null == u ? true : u.options.filter(e => _.includes(e.id)), P = (0, h.L6)(E), Z = (0, h.dX)(E), I = 0 === _.length, {
-    helpText: T,
-    helpTextAdditional: w
+  } = e, _ = (0, i.Wu)([p.Z], () => p.Z.getOnboardingResponsesForPrompt(n.id, u.id)), N = 0 === _.length && (null == u ? true : u.required), P = null == u ? true : u.options.filter(e => _.includes(e.id)), E = (0, h.L6)(P), Z = (0, h.dX)(P), I = 0 === _.length, {
+    helpText: w,
+    helpTextAdditional: T
   } = (0, x.Z)({
     guild: n,
     prompt: u,
-    selectedRoleIds: P,
+    selectedRoleIds: E,
     selectedChannelIds: Z,
-    itemHook: N
-  }), k = (0, d.Z)(n.id, 1e3), D = u.options.map(e => C({
+    itemHook: C
+  }), D = (0, d.Z)(n.id, 1e3), k = u.options.map(e => y({
     value: e.id
-  }, e)), R = u.options.filter(e => _.includes(e.id)).map(e => e.id);
+  }, e)), S = u.options.filter(e => _.includes(e.id)).map(e => e.id);
   return (0, r.jsx)("div", {
     className: O.prompt,
     children: (0, r.jsxs)("div", {
       className: O.promptContent,
-      children: [(0, r.jsxs)(a.zJl, {
+      children: [(0, r.jsxs)(o.zJl, {
         className: O.scrollerContent,
         children: [(0, r.jsxs)("div", {
           className: O.questionHeader,
-          children: [(0, r.jsx)(a.Text, {
+          children: [(0, r.jsx)(o.Text, {
             variant: "text-sm/medium",
             color: "text-muted",
             children: b.intl.format(b.t.isV0NT, {
@@ -107,25 +107,25 @@ function P(e) {
               questionCount: c
             })
           }), u.required ? (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(a.Text, {
+            children: [(0, r.jsx)(o.Text, {
               variant: "text-xs/normal",
               className: O.headerSeparator,
               children: "\xb7"
-            }), (0, r.jsx)(a.Text, {
+            }), (0, r.jsx)(o.Text, {
               variant: "text-sm/medium",
               color: "text-brand",
               children: b.intl.string(b.t.Ur8Vrq)
             })]
           }) : null]
-        }), (0, r.jsx)(a.X6q, {
+        }), (0, r.jsx)(o.X6q, {
           className: O.title,
           variant: "heading-xl/semibold",
           color: "header-primary",
           id: t,
           children: u.title
         }), (0, r.jsx)(v.Z, {
-          options: D,
-          value: R,
+          options: k,
+          value: S,
           onChange: e => {
             let t = e.find(e => !_.includes(e.id)),
               n = e.map(e => e.id);
@@ -137,37 +137,37 @@ function P(e) {
               })
             }
           },
-          memberCounts: k
+          memberCounts: D
         })]
       }), (0, r.jsxs)("div", {
         className: O.navButtons,
         children: [(0, r.jsx)("div", {
           className: O.leftButtons,
-          children: l > 0 && (0, r.jsx)(a.zxk, {
+          children: l > 0 && (0, r.jsx)(o.zxk, {
             variant: "secondary",
             size: "md",
             text: b.intl.string(b.t["13/7kZ"]),
             onClick: () => f(_.length),
-            icon: a.j9r,
+            icon: o.j9r,
             iconPosition: "start"
           })
         }), (0, r.jsxs)("div", {
           className: O.rightButtons,
-          children: [(0, r.jsxs)(a.Text, {
+          children: [(0, r.jsxs)(o.Text, {
             className: O.helpText,
             variant: "text-xs/normal",
             color: "text-muted",
-            children: [T, " ", w]
-          }), (0, r.jsx)(o.u, {
+            children: [w, " ", T]
+          }), (0, r.jsx)(a.u, {
             asContainer: true,
-            text: y ? b.intl.string(b.t.dA1dSU) : null,
-            children: (0, r.jsx)(a.zxk, {
+            text: N ? b.intl.string(b.t.dA1dSU) : null,
+            children: (0, r.jsx)(o.zxk, {
               variant: I ? "secondary" : "primary",
               size: "md",
               text: s ? "".concat(b.intl.string(b.t["8SuVoK"]), " \uD83C\uDF89") : I ? b.intl.string(b.t["5WxrcX"]) : b.intl.string(b.t.PDTjLC),
               onClick: () => s ? j() : g(_.length),
-              disabled: y,
-              icon: s ? true : a.d4D,
+              disabled: N,
+              icon: s ? true : o.d4D,
               iconPosition: "end"
             })
           })]
@@ -189,25 +189,25 @@ function Z(e) {
     gotoPrevPrompt: m,
     gotoNextPrompt: f,
     completeOnboarding: v
-  } = e, j = (0, i.Wu)([p.Z], () => p.Z.getOnboardingResponsesForPrompt(n.id, u.id)), _ = 0 === j.length && (null == u ? true : u.required), C = null == u ? true : u.options.filter(e => j.includes(e.id)), y = (0, h.L6)(C), E = (0, h.dX)(C), P = 0 === j.length, {
+  } = e, j = (0, i.Wu)([p.Z], () => p.Z.getOnboardingResponsesForPrompt(n.id, u.id)), _ = 0 === j.length && (null == u ? true : u.required), y = null == u ? true : u.options.filter(e => j.includes(e.id)), N = (0, h.L6)(y), P = (0, h.dX)(y), E = 0 === j.length, {
     helpText: Z,
     helpTextAdditional: I
   } = (0, x.Z)({
     guild: n,
     prompt: u,
-    selectedRoleIds: y,
-    selectedChannelIds: E,
-    itemHook: N
+    selectedRoleIds: N,
+    selectedChannelIds: P,
+    itemHook: C
   });
   return (0, r.jsx)("div", {
     className: O.prompt,
     children: (0, r.jsxs)("div", {
       className: O.promptContent,
-      children: [(0, r.jsxs)(a.zJl, {
+      children: [(0, r.jsxs)(o.zJl, {
         className: O.scrollerContent,
         children: [(0, r.jsxs)("div", {
           className: O.questionHeader,
-          children: [(0, r.jsx)(a.Text, {
+          children: [(0, r.jsx)(o.Text, {
             variant: "text-sm/medium",
             color: "text-muted",
             children: b.intl.format(b.t.isV0NT, {
@@ -215,17 +215,17 @@ function Z(e) {
               questionCount: c
             })
           }), u.required ? (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(a.Text, {
+            children: [(0, r.jsx)(o.Text, {
               variant: "text-xs/normal",
               className: O.headerSeparator,
               children: "\xb7"
-            }), (0, r.jsx)(a.Text, {
+            }), (0, r.jsx)(o.Text, {
               variant: "text-sm/medium",
               color: "text-brand",
               children: b.intl.string(b.t.Ur8Vrq)
             })]
           }) : null]
-        }), (0, r.jsx)(a.X6q, {
+        }), (0, r.jsx)(o.X6q, {
           className: O.title,
           variant: "heading-xl/semibold",
           color: "header-primary",
@@ -244,31 +244,31 @@ function Z(e) {
         className: O.navButtons,
         children: [(0, r.jsx)("div", {
           className: O.leftButtons,
-          children: l > 0 && (0, r.jsx)(a.zxk, {
+          children: l > 0 && (0, r.jsx)(o.zxk, {
             variant: "secondary",
             size: "md",
             text: b.intl.string(b.t["13/7kZ"]),
             onClick: () => m(j.length),
-            icon: a.j9r,
+            icon: o.j9r,
             iconPosition: "start"
           })
         }), (0, r.jsxs)("div", {
           className: O.rightButtons,
-          children: [(0, r.jsxs)(a.Text, {
+          children: [(0, r.jsxs)(o.Text, {
             className: O.helpText,
             variant: "text-xs/normal",
             color: "text-muted",
             children: [Z, " ", I]
-          }), (0, r.jsx)(o.u, {
+          }), (0, r.jsx)(a.u, {
             asContainer: true,
             text: _ ? b.intl.string(b.t.dA1dSU) : null,
-            children: (0, r.jsx)(a.zxk, {
-              variant: P ? "secondary" : "primary",
+            children: (0, r.jsx)(o.zxk, {
+              variant: E ? "secondary" : "primary",
               size: "md",
-              text: s ? "".concat(b.intl.string(b.t["8SuVoK"]), " \uD83C\uDF89") : P ? b.intl.string(b.t["5WxrcX"]) : b.intl.string(b.t.PDTjLC),
+              text: s ? "".concat(b.intl.string(b.t["8SuVoK"]), " \uD83C\uDF89") : E ? b.intl.string(b.t["5WxrcX"]) : b.intl.string(b.t.PDTjLC),
               onClick: () => s ? v() : f(j.length),
               disabled: _,
-              icon: s ? true : a.d4D,
+              icon: s ? true : o.d4D,
               iconPosition: "end"
             })
           })]
@@ -282,8 +282,8 @@ function I(e) {
   let {
     guild: t,
     prompts: n,
-    step: o,
-    selectOption: a,
+    step: a,
+    selectOption: o,
     completeOnboarding: d,
     setCurrentStep: p,
     headerId: h,
@@ -292,40 +292,40 @@ function I(e) {
   l.useEffect(() => {
     t.features.has(_.oNc.MEMBER_VERIFICATION_GATE_ENABLED) && !t.features.has(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.ZP.fetchVerificationForm(t.id)
   }, [t]);
-  let v = n[o],
-    b = o + 1 >= n.length && !E(t, g),
+  let v = n[a],
+    b = a + 1 >= n.length && !P(t, g),
     O = n[0].required;
   l.useEffect(() => {
-    x || m.default.track(_.rMx.GUILD_ONBOARDING_STEP_VIEWED, y(C({}, (0, s.hH)(t.id)), {
+    x || m.default.track(_.rMx.GUILD_ONBOARDING_STEP_VIEWED, N(y({}, (0, s.hH)(t.id)), {
       step: 0,
       required: O
     }))
   }, [t.id, O, x]);
-  let N = e => {
-      !x && (m.default.track(_.rMx.GUILD_ONBOARDING_STEP_COMPLETED, y(C({}, (0, s.hH)(t.id)), {
-        step: o,
+  let C = e => {
+      !x && (m.default.track(_.rMx.GUILD_ONBOARDING_STEP_COMPLETED, N(y({}, (0, s.hH)(t.id)), {
+        step: a,
         options_selected: e,
         skipped: 0 === e,
         back: false,
         in_onboarding: true,
         is_final_step: false
-      })), o < n.length - 1 && m.default.track(_.rMx.GUILD_ONBOARDING_STEP_VIEWED, y(C({}, (0, s.hH)(t.id)), {
-        step: o,
-        required: n[o + 1].required
-      }))), o + 1 < n.length ? p(o + 1) : E(t, g) && p("rules")
+      })), a < n.length - 1 && m.default.track(_.rMx.GUILD_ONBOARDING_STEP_VIEWED, N(y({}, (0, s.hH)(t.id)), {
+        step: a,
+        required: n[a + 1].required
+      }))), a + 1 < n.length ? p(a + 1) : P(t, g) && p("rules")
     },
     I = e => {
-      !x && (m.default.track(_.rMx.GUILD_ONBOARDING_STEP_COMPLETED, y(C({}, (0, s.hH)(t.id)), {
-        step: o,
+      !x && (m.default.track(_.rMx.GUILD_ONBOARDING_STEP_COMPLETED, N(y({}, (0, s.hH)(t.id)), {
+        step: a,
         skipped: false,
         back: true,
         options_selected: e,
         in_onboarding: true,
         is_final_step: false
-      })), o > 0 && m.default.track(_.rMx.GUILD_ONBOARDING_STEP_VIEWED, y(C({}, (0, s.hH)(t.id)), {
-        step: o - 1,
-        required: n[o - 1].required
-      }))), p(Math.max(0, o - 1))
+      })), a > 0 && m.default.track(_.rMx.GUILD_ONBOARDING_STEP_VIEWED, N(y({}, (0, s.hH)(t.id)), {
+        step: a - 1,
+        required: n[a - 1].required
+      }))), p(Math.max(0, a - 1))
     };
   if (null == v) return null;
   switch (v.type) {
@@ -333,26 +333,26 @@ function I(e) {
       return (0, r.jsx)(Z, {
         guild: t,
         headerId: h,
-        step: o,
+        step: a,
         questionCount: n.length,
         currentPrompt: v,
         lastPrompt: b,
-        selectOption: a,
+        selectOption: o,
         gotoPrevPrompt: I,
-        gotoNextPrompt: N,
+        gotoNextPrompt: C,
         completeOnboarding: d
       });
     case j.FN.DROPDOWN:
-      return (0, r.jsx)(P, {
+      return (0, r.jsx)(E, {
         guild: t,
         headerId: h,
-        step: o,
+        step: a,
         questionCount: n.length,
         currentPrompt: v,
         lastPrompt: b,
-        selectOption: a,
+        selectOption: o,
         gotoPrevPrompt: I,
-        gotoNextPrompt: N,
+        gotoNextPrompt: C,
         completeOnboarding: d
       });
     default:

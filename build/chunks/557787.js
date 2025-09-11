@@ -1,0 +1,26 @@
+/** Chunk was on 39159 **/
+/** chunk id: 557787, original params: e,n,t (module,exports,require) **/
+module.exports = {
+  title: "title__8303d",
+  contentContainer: "contentContainer__8303d",
+  settingsContainer: "settingsContainer__8303d",
+  sectionContainer: "sectionContainer__8303d",
+  sectionHeader: "sectionHeader__8303d",
+  sectionHeaderIcon: "sectionHeaderIcon__8303d",
+  footerContainer: "footerContainer__8303d",
+  gameDetailsContainer: "gameDetailsContainer__8303d",
+  optionContainer: "optionContainer__8303d",
+  labelContainer: "labelContainer__8303d",
+  pingCircle: "pingCircle__8303d",
+  pingCircleLoading: "pingCircleLoading__8303d",
+  pingCircleError: "pingCircleError__8303d",
+  pingCircleExcellent: "pingCircleExcellent__8303d",
+  pingCircleGood: "pingCircleGood__8303d",
+  pingCircleFair: "pingCircleFair__8303d",
+  pingCirclePoor: "pingCirclePoor__8303d",
+  pulse: "pulse__8303d",
+  option: "option__8303d",
+  value: "value__8303d",
+  optionSpacer: "optionSpacer__8303d",
+  infoBox: "infoBox__8303d"
+}

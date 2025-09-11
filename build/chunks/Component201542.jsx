@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk94432 = require("./94432.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk589826 = require("./589826.js");
+  Chunk340479 = require("./340479.js");
 let I = Chunk647438.lazy(() => require.e("89792").then(require.bind(require, 711635)));
 
 function T(e) {
@@ -93,8 +93,8 @@ let N = Chunk647438.memo(function(e) {
     } = e,
     L = i.useRef(null),
     j = i.useMemo(() => null != x ? d.ZP.getPlaybackPosition(x) : 0, [x]),
-    k = (0, s.e7)([d.ZP], () => d.ZP.getPlaybackRate(d.Ir.VOICE_MESSAGE)),
-    [M, U] = i.useState(j > 0),
+    M = (0, s.e7)([d.ZP], () => d.ZP.getPlaybackRate(d.Ir.VOICE_MESSAGE)),
+    [k, U] = i.useState(j > 0),
     [G, B] = i.useState(j),
     [Z, F] = i.useState(y),
     [V, H] = i.useState(false),
@@ -153,8 +153,8 @@ let N = Chunk647438.memo(function(e) {
       null != Z && null != t && (el(e * Z), clearTimeout(et.current), et.current = true)
     }, [Z, el]);
   i.useEffect(() => {
-    !M && Y && U(true)
-  }, [Y, M]);
+    !k && Y && U(true)
+  }, [Y, k]);
   let eh = i.useRef(null),
     em = {
       played: q,
@@ -196,9 +196,9 @@ let N = Chunk647438.memo(function(e) {
   let eE = Y ? l.fpf : l.o1U,
     eb = Y ? O.intl.string(O.t.ZcgDJS) : O.intl.string(O.t.RscU7O),
     ey = O.intl.formatToPlainString(O.t.LgCPMj, {
-      playbackRate: k
+      playbackRate: M
     }),
-    eO = "".concat(k.toString().replace(/^0/, ""), "X");
+    eO = "".concat(M.toString().replace(/^0/, ""), "X");
   t = "Safari" === platform.name ? (0, r.jsx)(i.Suspense, {
     children: (0, r.jsx)(I, {
       ref: L,
@@ -211,7 +211,7 @@ let N = Chunk647438.memo(function(e) {
       onError: ec,
       muted: V,
       volume: $,
-      playbackRate: k
+      playbackRate: M
     })
   }) : (0, r.jsx)(f.Z, {
     ref: L,
@@ -223,7 +223,7 @@ let N = Chunk647438.memo(function(e) {
     onError: ec,
     muted: V,
     volume: $,
-    playbackRate: k,
+    playbackRate: M,
     playing: Y && !K,
     children: (0, r.jsx)("source", {
       src: n
@@ -257,17 +257,17 @@ let N = Chunk647438.memo(function(e) {
       currentTime: G,
       duration: null != Z ? Z : 1,
       playing: Y,
-      played: M,
+      played: k,
       onDrag: ep,
       onDragStart: ef,
       onDragEnd: e_
     }), (0, r.jsx)(S, {
-      played: M,
+      played: k,
       currentTime: G,
       duration: Z
     }), (0, r.jsx)(l.P3F, {
       className: v.playbackRateContainer,
-      onClick: () => T(k),
+      onClick: () => T(M),
       "aria-label": ey,
       children: (0, r.jsx)(l.Text, {
         variant: "text-xs/semibold",

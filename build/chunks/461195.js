@@ -1,4 +1,4 @@
-/** Chunk was on 31422 **/
+/** Chunk was on 54628 **/
 /** chunk id: 461195, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -7,11 +7,11 @@ require.d(exports, {
 var Chunk665352 = require("./665352.js"),
   Chunk99978 = require("./99978.js"),
   Chunk257381 = require("./257381.js");
-let o = 2413 / 128,
+let s = 2413 / 128,
   i = 2610 / 16384,
   c = 2523 / 32,
-  l = 16384 / 2610,
-  u = 32 / 2523,
+  u = 16384 / 2610,
+  l = 32 / 2523,
   f = [
     [.3592832590121217, .6976051147779502, false],
     [false, 1.100476797037432, .0753748658519118],
@@ -53,14 +53,14 @@ let o = 2413 / 128,
     fromBase: e => {
       let t;
       return t = (0, n.Z)(f, e).map(function(e) {
-        return ((.8359375 + o * (e / 1e4) ** i) / (1 + 18.6875 * (e / 1e4) ** i)) ** c
+        return ((.8359375 + s * (e / 1e4) ** i) / (1 + 18.6875 * (e / 1e4) ** i)) ** c
       }), (0, n.Z)(b, t)
     },
     toBase(e) {
       var t;
       let r = (t = e, (0, n.Z)(d, t).map(function(e) {
-        let t = Math.max(e ** u - .8359375, 0);
-        return 1e4 * (t / (o - 18.6875 * e ** u)) ** l
+        let t = Math.max(e ** l - .8359375, 0);
+        return 1e4 * (t / (s - 18.6875 * e ** l)) ** u
       }));
       return (0, n.Z)(h, r)
     }

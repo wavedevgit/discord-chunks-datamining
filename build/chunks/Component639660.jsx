@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 639660, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => x
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk793030 = require("./793030.js"),
@@ -15,53 +15,53 @@ var Chunk951288 = require("./951288.js"),
   Chunk309945 = require("./309945.jsx"),
   Chunk385902 = require("./385902.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk989308 = require("./989308.js"),
+  Chunk258640 = require("./258640.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk547885 = require("./547885.js");
+  Chunk973071 = require("./973071.js");
 
-function x() {
+function h() {
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk547885.staffContainer,
+    className: Chunk973071.staffContainer,
     children: (0, Chunk951288.jsx)(Chunk793030.xvT, {
       variant: "text-sm/medium",
-      children: Chunk388032.intl.string(Chunk989308.default.l9n4QU)
+      children: Chunk388032.intl.string(Chunk258640.default.l9n4QU)
     })
   })
 }
 
-function h(e) {
+function x(e) {
   let {
     guildId: t
-  } = e, n = (0, o.e7)([a.Z], () => {
+  } = e, n = (0, i.e7)([s.Z], () => {
     var e;
-    return (null == (e = a.Z.getGuild(t)) ? true : e.features.has(g.oNc.PREMIUM_TIER_3_OVERRIDE)) === true
-  }), h = (0, c.Z)(t), b = h.length > 0, {
+    return (null == (e = s.Z.getGuild(t)) ? true : e.features.has(g.oNc.PREMIUM_TIER_3_OVERRIDE)) === true
+  }), x = (0, c.Z)(t), b = x.length > 0, {
     shouldShow: C,
     notificationConfig: j
-  } = (0, m._)(t, "GuildPowerupNotificationContainer"), T = [];
-  C && T.push(s.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION);
-  let [E, P] = (0, l.ZT)(T, t), I = null != E && null != j, y = [];
-  I || b || y.push(s.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK);
-  let [w, Z] = (0, l.US)(y), S = (e => {
+  } = (0, m._)(t, "GuildPowerupNotificationContainer"), E = [];
+  C && E.push(l.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION);
+  let [T, P] = (0, a.ZT)(E, t), I = null != T && null != j, y = [];
+  I || b || y.push(l.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK);
+  let [S, w] = (0, a.US)(y), N = (e => {
     let n = [];
     return b && n.push((0, r.jsx)(p.Z, {
       guildId: t,
-      powerups: h
+      powerups: x
     }, "expiring-powerups")), I && n.push((0, r.jsx)(d.Z, {
       notificationConfig: j,
       markAsDismissed: e => {
         P(e)
       }
-    }, "rollback-notification")), null != e && e === s.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK && n.push((0, r.jsx)(u.Z, {
-      markAsDismissed: Z
+    }, "rollback-notification")), null != e && e === l.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK && n.push((0, r.jsx)(u.Z, {
+      markAsDismissed: w
     }, "info-card")), n
-  })(w);
-  return 0 !== S.length || n ? (0, r.jsxs)("div", {
+  })(S);
+  return 0 !== N.length || n ? (0, r.jsxs)("div", {
     className: _.container,
-    children: [(0, r.jsx)(i.xvT, {
+    children: [(0, r.jsx)(o.xvT, {
       variant: "eyebrow",
       color: "text-secondary",
       children: v.intl.string(f.default["3FRira"])
-    }), n && (0, r.jsx)(x, {}), S.map(e => e)]
+    }), n && (0, r.jsx)(h, {}), N.map(e => e)]
   }) : null
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 31422 **/
+/** Chunk was on 54628 **/
 /** chunk id: 53796, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -6,13 +6,13 @@ require.d(exports, {
 });
 var Chunk760919 = require("./760919.js"),
   Chunk806578 = require("./806578.js");
-let s = 1 / 512,
-  o = 16 / 512,
+let o = 1 / 512,
+  s = 16 / 512,
   i = new Chunk760919.Z({
     id: "prophoto",
     cssId: "prophoto-rgb",
     name: "ProPhoto",
     base: Chunk806578.Z,
-    toBase: e => e.map(e => e < o ? e / 16 : e ** 1.8),
-    fromBase: e => e.map(e => e >= s ? e ** (1 / 1.8) : 16 * e)
+    toBase: e => e.map(e => e < s ? e / 16 : e ** 1.8),
+    fromBase: e => e.map(e => e >= o ? e ** (1 / 1.8) : 16 * e)
   })

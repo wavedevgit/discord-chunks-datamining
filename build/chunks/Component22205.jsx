@@ -2,7 +2,7 @@
 /** chunk id: 22205, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => M
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -31,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk987650 = require("./987650.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk534887 = require("./534887.js");
+  Chunk460063 = require("./460063.js");
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -81,7 +81,7 @@ function L(e) {
       e.stopPropagation(), null == o || o(), null == c || c()
     }, [c, o]),
     j = (0, d.e7)([S.ZP], () => S.ZP.getFocusedRunningGame()),
-    k = g ? (0, r.jsxs)("div", {
+    M = g ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(f.Text, {
         variant: "text-md/semibold",
         color: "text-primary",
@@ -104,12 +104,12 @@ function L(e) {
         })]
       })]
     }) : null,
-    M = g ? null : R.intl.string(R.t.oEJEFh),
+    k = g ? null : R.intl.string(R.t.oEJEFh),
     U = null != (t = null == I ? true : I.isStaff()) && t || null != (n = null == I ? true : I.isStaffPersonal()) && n;
   return (0, r.jsx)(A.Y, {
     title: R.intl.string(R.t.U38qZm),
-    body: k,
-    hint: U ? M : true,
+    body: M,
+    hint: U ? k : true,
     confirmText: R.intl.string(R.t.a3HlgI),
     cancelText: null != j ? R.intl.string(R.t.qIYnPj) : true,
     icon: (0, r.jsx)(b.Z, {
@@ -165,7 +165,7 @@ class j extends Chunk647438.PureComponent {
       showError: i
     } = this.state;
     return null != require ? Chunk647438 ? (0, Chunk951288.jsx)(Chunk333031.Z, {
-      className: Chunk534887.errorClickNotification,
+      className: Chunk460063.errorClickNotification,
       children: (0, Chunk951288.jsx)(L, {
         error: require,
         onLock: () => {
@@ -205,4 +205,4 @@ class j extends Chunk647438.PureComponent {
     }), w(this, "pid", null)
   }
 }
-let k = j
+let M = j

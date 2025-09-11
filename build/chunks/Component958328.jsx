@@ -18,23 +18,23 @@ var Chunk120356 = require("./120356.js"),
   Chunk914010 = require("./914010.js"),
   Chunk233608 = require("./233608.js"),
   Chunk71080 = require("./71080.js"),
-  Chunk989295 = require("./989295.js"),
-  Chunk451429 = require("./451429.js");
+  Chunk215572 = require("./215572.js"),
+  Chunk866403 = require("./866403.js");
 
-function g(e) {
+function v(e) {
   let {
     title: t,
     can: n
   } = e, r = n ? o.dz2 : o.Dio, i = (0, a.jsx)("div", {
-    className: l()(v.iconOuter, n ? v.iconCheck : v.iconCross),
+    className: l()(f.iconOuter, n ? f.iconCheck : f.iconCross),
     children: (0, a.jsx)(r, {
-      className: v.icon
+      className: f.icon
     })
   });
   return (0, a.jsxs)("div", {
-    className: v.scope,
+    className: f.scope,
     children: [i, (0, a.jsx)("div", {
-      className: v.scopeInner,
+      className: f.scopeInner,
       children: (0, a.jsx)(o.Text, {
         variant: "text-md/normal",
         children: t
@@ -58,7 +58,7 @@ function j() {
         title: t,
         flag: n
       } = e, r = i.e$(j, n);
-      return (0, a.jsx)(g, {
+      return (0, a.jsx)(v, {
         title: t,
         can: r
       }, t)
@@ -68,23 +68,23 @@ function j() {
         title: t,
         flag: n
       } = e, r = i.e$(_, n);
-      return (0, a.jsx)(g, {
+      return (0, a.jsx)(v, {
         title: t,
         can: r
       }, t)
     });
   return (0, Chunk951288.jsx)("div", {
-    className: l()(Chunk451429.panel, Chunk989295.panel),
+    className: l()(Chunk866403.panel, Chunk215572.panel),
     children: (0, Chunk951288.jsxs)("div", {
-      className: Chunk989295.panelInner,
+      className: Chunk215572.panelInner,
       children: [(0, Chunk951288.jsxs)("section", {
-        className: Chunk989295.section,
+        className: Chunk215572.section,
         children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "heading-md/semibold",
           children: null != y ? "Permissions in ".concat(y) : "No channel selected"
         }), E]
       }), (0, Chunk951288.jsxs)("section", {
-        className: Chunk989295.section,
+        className: Chunk215572.section,
         children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "heading-md/semibold",
           children: null != Chunk120356 ? "Permissions in ".concat(Chunk120356.name) : "No guild selected"

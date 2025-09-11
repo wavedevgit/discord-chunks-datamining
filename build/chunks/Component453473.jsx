@@ -38,9 +38,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk74551 = require("./74551.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk125919 = require("./125919.js");
+  Chunk912960 = require("./912960.js");
 
-function M(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -56,7 +56,7 @@ function U(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      M(e, t, n[t])
+      k(e, t, n[t])
     })
   }
   return e
@@ -110,7 +110,7 @@ function H(e) {
   return (0, r.jsx)(p.VqE, {
     "aria-label": j.intl.string(j.t["2pAkDA"]),
     children: (0, r.jsxs)("div", {
-      className: k.popoutContainer,
+      className: M.popoutContainer,
       children: [(0, r.jsx)(m.h4, {
         icon: p.plf,
         title: j.intl.string(j.t["2pAkDA"])
@@ -199,7 +199,7 @@ function K(e) {
             var t;
             a.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
           },
-          className: k.messagesScroller
+          className: M.messagesScroller
         }, o), {
           children: t.map(e => (0, r.jsx)(q, {
             savedMessageKey: e,
@@ -228,9 +228,9 @@ function z(e) {
     })
   }, [n, t, s]), c = (0, _.e7)([v.Z], () => !!((null == s ? true : s.type) === L.d4z.UNKNOWN || (null == s ? true : s.isPrivate())) || v.Z.can(L.Plq.VIEW_CHANNEL, s));
   return null != s && null != t.message && c ? (0, r.jsxs)("div", {
-    className: k.messageContainer,
+    className: M.messageContainer,
     children: [(0, r.jsx)(p.P3F, {
-      className: k.clickableMessageBackground,
+      className: M.clickableMessageBackground,
       onClick: l,
       "aria-label": j.intl.string(j.t["+TSRGB"])
     }), null != t.saveData.dueAt ? (0, r.jsx)(x.Z, {
@@ -241,22 +241,22 @@ function z(e) {
     }), (0, r.jsx)(b.Z, {
       message: t.message,
       channel: s,
-      className: k.message,
+      className: M.message,
       compact: O.jU.getSetting(),
       animateAvatar: false,
       focusProps: V,
       trackAnnouncementViews: true
     }, t.message.id), (0, r.jsx)(y.ZP, {
-      className: k.hoverBar,
+      className: M.hoverBar,
       children: (0, r.jsx)(X, {
         savedMessage: t,
         jumpToMessage: l
       })
     })]
   }) : (0, r.jsxs)("div", {
-    className: o()(k.messageContainer, k.deletedMessage),
+    className: o()(M.messageContainer, M.deletedMessage),
     children: [(0, r.jsx)("div", {
-      className: k.deleteIcon,
+      className: M.deleteIcon,
       children: (0, r.jsx)(p.Mgn, {
         size: "xxs",
         color: p.TVs.colors.INTERACTIVE_ACTIVE
@@ -266,7 +266,7 @@ function z(e) {
       color: "header-secondary",
       children: null != t.saveData.dueAt ? j.intl.string(j.t["wuQm+v"]) : j.intl.string(j.t.o572FR)
     }), (0, r.jsx)(y.ZP, {
-      className: k.hoverBar,
+      className: M.hoverBar,
       children: (0, r.jsx)(y.sF, {
         label: j.intl.string(j.t.SvXS1d),
         icon: p.XHJ,

@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk792323 = require("./792323.js");
+  Chunk404792 = require("./404792.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -81,8 +81,8 @@ function v(e, t) {
 let I = "data-listbox-item-id",
   T = 40,
   S = Object.freeze({
-    STANDARD: Chunk792323.selected,
-    BRAND: Chunk792323.selectedBrand
+    STANDARD: Chunk404792.selected,
+    BRAND: Chunk404792.selectedBrand
   });
 
 function A(e) {
@@ -130,15 +130,15 @@ function P(e) {
     onQueryChange: D
   } = e, [x, L] = i.useState(""), j = i.useCallback(e => {
     L(e), null == D || D(e)
-  }, [D]), [k] = i.useState(true), [M, U] = i.useState(null), G = i.useId(), B = i.useRef(null);
+  }, [D]), [M] = i.useState(true), [k, U] = i.useState(null), G = i.useId(), B = i.useRef(null);
   i.useLayoutEffect(() => {
-    let e = document.querySelector("[".concat(I, '="').concat(M, '"]')),
+    let e = document.querySelector("[".concat(I, '="').concat(k, '"]')),
       t = B.current;
     null != t && null != e && t.scrollIntoViewNode({
       node: e,
       padding: 12
     })
-  }, [M]);
+  }, [k]);
   let Z = n(x),
     F = 0 === Z.length,
     V = null != w ? w : h.intl.string(h.t["4o4z3d"]),
@@ -185,8 +185,8 @@ function P(e) {
           ref: n,
           role: "combobox",
           "aria-label": b,
-          "aria-expanded": k,
-          "aria-controls": k ? G : true,
+          "aria-expanded": M,
+          "aria-controls": M ? G : true,
           "aria-owns": G,
           "aria-haspopup": "listbox",
           className: o()(m.combobox, _),
@@ -203,11 +203,11 @@ function P(e) {
               onClear: () => j(""),
               inputProps: {
                 "aria-multiline": false,
-                "aria-activedescendant": null != M ? M : true
+                "aria-activedescendant": null != k ? k : true
               }
             })
           }), (0, r.jsx)("div", {
-            children: k && (F ? (0, r.jsxs)("div", {
+            children: M && (F ? (0, r.jsxs)("div", {
               className: m.empty,
               children: [(0, r.jsx)(p.X6q, {
                 variant: "heading-md/semibold",
@@ -219,7 +219,7 @@ function P(e) {
               })]
             }) : (0, r.jsx)(R.Provider, {
               value: {
-                activeDescendant: M,
+                activeDescendant: k,
                 selected: a,
                 setSelected: c,
                 itemToString: C
@@ -322,7 +322,7 @@ D.Colors = S, D.Label = function(e) {
     selected: e
   } = Chunk647438.useContext(R), t = Chunk647438.useContext(w);
   return module.has(exports) ? (0, Chunk951288.jsx)("span", {
-    className: Chunk792323.itemCheckbox,
+    className: Chunk404792.itemCheckbox,
     children: (0, Chunk951288.jsx)(Chunk481060.owK, {
       size: "custom",
       color: "currentColor",

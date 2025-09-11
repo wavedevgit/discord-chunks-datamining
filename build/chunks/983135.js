@@ -1,12 +1,12 @@
 /** Chunk was on 58227 **/
 /** chunk id: 983135, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $K: () => x,
+  $K: () => T,
   IG: () => v,
   Nb: () => _,
   Ts: () => j,
-  Wy: () => D,
-  di: () => b
+  Wy: () => b,
+  di: () => D
 }), require("./388685.js");
 var Chunk570140 = require("./570140.js"),
   Chunk668781 = require("./668781.js"),
@@ -29,7 +29,7 @@ var Chunk570140 = require("./570140.js"),
   Chunk290511 = require("./290511.js"),
   Chunk388032 = require("./388032.jsx");
 
-function x(e) {
+function T(e) {
   l.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_STEP",
     step: e
@@ -43,15 +43,15 @@ function _(e) {
   })
 }
 async function j(e, t) {
-  let n = a.Z.getEnabled(e),
-    s = Array.from(f.Z.editedDefaultChannelIds).filter(e => null != h.Z.getChannel(e)),
-    [o, d] = (0, c.d9)(e, [...s]);
-  if (n && t === T.Un.ONBOARDING_DEFAULT && (d.length < T.md || o.length < T.X)) return void i.Z.show({
-    title: O.intl.string(O.t.iLdiqa),
-    body: O.intl.string(O.t.JOT74e)
+  let n = s.Z.getEnabled(e),
+    a = Array.from(p.Z.editedDefaultChannelIds).filter(e => null != g.Z.getChannel(e)),
+    [o, d] = (0, c.d9)(e, [...a]);
+  if (n && t === E.Un.ONBOARDING_DEFAULT && (d.length < E.md || o.length < E.X)) return void r.Z.show({
+    title: x.intl.string(x.t.iLdiqa),
+    body: x.intl.string(x.t.JOT74e)
   });
   try {
-    await (0, S.n_)(e, {
+    await (0, N.n_)(e, {
       mode: t
     })
   } catch (n) {
@@ -59,10 +59,10 @@ async function j(e, t) {
     let {
       fieldName: e,
       error: t
-    } = null != (u = new r.Z(n).getAnyErrorMessageAndField()) ? u : {};
-    i.Z.show({
-      title: O.intl.string(O.t.iLdiqa),
-      body: [e, t].filter(I.lm).join(": ")
+    } = null != (u = new i.Z(n).getAnyErrorMessageAndField()) ? u : {};
+    r.Z.show({
+      title: x.intl.string(x.t.iLdiqa),
+      body: [e, t].filter(f.lm).join(": ")
     })
   }
   l.Z.dispatch({
@@ -73,17 +73,17 @@ async function j(e, t) {
 }
 
 function v(e, t) {
-  let n = p.xh.findIndex(e => e === t);
-  false !== n && n !== p.xh.length - 1 && x(p.xh[n + 1])
+  let n = O.xh.findIndex(e => e === t);
+  false !== n && n !== O.xh.length - 1 && T(O.xh[n + 1])
 }
 
-function D(e, t) {
-  let n = p.xh.findIndex(e => e === t);
-  false !== n && 0 !== n && x(p.xh[n - 1])
+function b(e, t) {
+  let n = O.xh.findIndex(e => e === t);
+  false !== n && 0 !== n && T(O.xh[n - 1])
 }
-async function b(e) {
-  let t = g.Z.getGuild(e);
-  null != t && (N.Z.close(), (0, u.iD)(t.id, {
+async function D(e) {
+  let t = h.Z.getGuild(e);
+  null != t && (I.Z.close(), (0, u.iD)(t.id, {
     type: m.z.NEW_MEMBER,
     roles: {},
     optInChannels: new Set,
@@ -91,12 +91,12 @@ async function b(e) {
     onboardingResponses: new Set,
     onboardingEnabled: true,
     memberOptions: {
-      isPending: (0, s.Dc)(t),
+      isPending: (0, a.Dc)(t),
       flags: 0
     }
   }), o.ZP.resetOnboardingStatus(t.id), (0, d.EI)(t.id), await (0, d.default)({
     guildId: t.id,
     isPreview: true,
-    returnChannelId: E.oC.GUILD_HOME
+    returnChannelId: S.oC.GUILD_HOME
   }))
 }

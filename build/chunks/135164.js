@@ -1,17 +1,17 @@
-/** Chunk was on 31422 **/
+/** Chunk was on 54628 **/
 /** chunk id: 135164, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => l
 });
 var Chunk665352 = require("./665352.js"),
   Chunk629990 = require("./629990.js"),
   Chunk341901 = require("./341901.js");
-let o = 216 / 24389,
+let s = 216 / 24389,
   i = 24 / 116,
   c = 24389 / 27,
-  l = Chunk629990.mh.D50,
-  u = new Chunk665352.Z({
+  u = Chunk629990.mh.D50,
+  l = new Chunk665352.Z({
     id: "lab",
     name: "Lab",
     coords: {
@@ -26,15 +26,15 @@ let o = 216 / 24389,
         refRange: [false, 125]
       }
     },
-    white: l,
+    white: u,
     base: Chunk341901.Z,
     fromBase(e) {
-      let t = e.map((e, t) => e / l[t]).map(e => e > o ? Math.cbrt(e) : (c * e + 16) / 116);
+      let t = e.map((e, t) => e / u[t]).map(e => e > s ? Math.cbrt(e) : (c * e + 16) / 116);
       return [116 * t[1] - 16, 500 * (t[0] - t[1]), 200 * (t[1] - t[2])]
     },
     toBase(e) {
       let t = [];
-      return t[1] = (e[0] + 16) / 116, t[0] = e[1] / 500 + t[1], t[2] = t[1] - e[2] / 200, [t[0] > i ? Math.pow(t[0], 3) : (116 * t[0] - 16) / c, e[0] > 8 ? Math.pow((e[0] + 16) / 116, 3) : e[0] / c, t[2] > i ? Math.pow(t[2], 3) : (116 * t[2] - 16) / c].map((e, t) => e * l[t])
+      return t[1] = (e[0] + 16) / 116, t[0] = e[1] / 500 + t[1], t[2] = t[1] - e[2] / 200, [t[0] > i ? Math.pow(t[0], 3) : (116 * t[0] - 16) / c, e[0] > 8 ? Math.pow((e[0] + 16) / 116, 3) : e[0] / c, t[2] > i ? Math.pow(t[2], 3) : (116 * t[2] - 16) / c].map((e, t) => e * u[t])
     },
     formats: {
       lab: {

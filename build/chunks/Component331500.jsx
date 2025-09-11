@@ -1,7 +1,7 @@
 /** Chunk was on 85683 **/
 /** chunk id: 331500, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => j
 });
 var r, i, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,10 +14,10 @@ var r, i, Chunk951288 = require("./951288.js"),
   Chunk567225 = require("./567225.jsx"),
   Chunk809741 = require("./809741.jsx"),
   Chunk473682 = require("./473682.js"),
-  Chunk401561 = require("./401561.js"),
+  Chunk440589 = require("./440589.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk134977 = require("./134977.js");
-let j = (r = function(e) {
+  Chunk197530 = require("./197530.js");
+let h = (r = function(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,36 +47,36 @@ let j = (r = function(e) {
   Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
 }), r);
 
-function P(e) {
+function j(e) {
   let {
     guildId: t
   } = e;
-  a.useEffect(() => {
+  o.useEffect(() => {
     (0, u.po)(t)
   }, [t]);
-  let n = (0, l.Wu)([m.Z], () => {
-    let e = m.Z.getStateForGuild(t);
+  let n = (0, l.Wu)([p.Z], () => {
+    let e = p.Z.getStateForGuild(t);
     return (null == e ? true : e.catalog) != null ? Object.values(e.catalog) : []
   });
-  return 0 === n.length ? (0, s.jsx)("div", {
+  return 0 === n.length ? (0, a.jsx)("div", {
     className: y.container,
-    children: (0, s.jsx)(c.$jN, {
+    children: (0, a.jsx)(c.$jN, {
       type: c.RAz.SPINNING_CIRCLE,
       className: y.spinner
     })
-  }) : (0, s.jsxs)("div", {
+  }) : (0, a.jsxs)("div", {
     className: y.container,
-    children: [(0, s.jsx)(o.X6q, {
+    children: [(0, a.jsx)(s.X6q, {
       variant: "heading-md/semibold",
       children: v.intl.string(f.default.jeYp1t)
-    }), (0, s.jsx)("div", {
+    }), (0, a.jsx)("div", {
       className: y.gameContainer,
-      children: n.map((e, n) => (0, s.jsx)(p.Z, {
+      children: n.map((e, n) => (0, a.jsx)(m.Z, {
         className: y.game,
         game: e,
         onClick: () => (0, b.Z)({
           guildId: t,
-          stepConfig: j,
+          stepConfig: h,
           initialPortkeyGame: e,
           analyticsLocation: d.Z.PORTKEY_OVERVIEW
         }),

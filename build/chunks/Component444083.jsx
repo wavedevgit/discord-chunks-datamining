@@ -10,10 +10,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk100527 = require("./100527.js"),
   Chunk809741 = require("./809741.jsx"),
   Chunk473682 = require("./473682.js"),
-  Chunk401561 = require("./401561.js"),
+  Chunk440589 = require("./440589.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk587983 = require("./587983.js");
-let p = {
+  Chunk412247 = require("./412247.js");
+let m = {
   steps: {
     [Chunk473682.Vb.SERVER_SETTINGS]: {
       onBack: {
@@ -31,7 +31,7 @@ function b(e) {
     guildId: t,
     instance: n
   } = e, c = i.useRef(null);
-  return (0, r.jsx)(s.yRy, {
+  return (0, r.jsx)(a.yRy, {
     targetElementRef: c,
     align: "top",
     position: "right",
@@ -41,29 +41,29 @@ function b(e) {
       let {
         closePopout: i
       } = e;
-      return (0, r.jsx)(s.v2r, {
+      return (0, r.jsx)(a.v2r, {
         navId: "portkey-popout-context-menu",
         onClose: () => {
-          (0, a.Zy)(), i()
+          (0, o.Zy)(), i()
         },
         "aria-label": u.intl.string(d.default.xCq1DA),
         onSelect: true,
-        children: (0, r.jsxs)(s.kSQ, {
-          children: [(0, r.jsx)(s.sNh, {
+        children: (0, r.jsxs)(a.kSQ, {
+          children: [(0, r.jsx)(a.sNh, {
             id: "get-support",
-            icon: s.kBi,
+            icon: a.kBi,
             label: u.intl.string(d.default["TciV8/"]),
             action: () => {}
-          }), (0, r.jsx)(s.sNh, {
+          }), (0, r.jsx)(a.sNh, {
             id: "settings",
-            icon: s.ewm,
+            icon: a.ewm,
             label: u.intl.string(d.default.NUTl4u),
             action: () => {
               (0, l.Z)({
                 guildId: t,
-                stepConfig: p,
+                stepConfig: m,
                 initialPortkeyInstance: n,
-                analyticsLocation: o.Z.PORTKEY_OVERVIEW
+                analyticsLocation: s.Z.PORTKEY_OVERVIEW
               })
             }
           })]
@@ -72,7 +72,7 @@ function b(e) {
     },
     children: e => {
       var t, n;
-      return (0, r.jsx)(s.P3F, (t = function(e) {
+      return (0, r.jsx)(a.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -91,10 +91,10 @@ function b(e) {
         return e
       }({
         "aria-label": u.intl.string(u.t.UKOtz8),
-        className: m.clickable
+        className: p.clickable
       }, e), n = n = {
         innerRef: c,
-        children: (0, r.jsx)(s.xhG, {
+        children: (0, r.jsx)(a.xhG, {
           color: "currentColor",
           size: "sm"
         })

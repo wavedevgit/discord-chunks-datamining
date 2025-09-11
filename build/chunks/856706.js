@@ -1,8 +1,8 @@
-/** Chunk was on 31422 **/
+/** Chunk was on 54628 **/
 /** chunk id: 856706, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 });
 var Chunk947704 = require("./947704.js");
 
@@ -13,7 +13,7 @@ function n(e, t) {
   }
 }
 
-function s(e, t, r) {
+function o(e, t, r) {
   return t && n(e.prototype, t), r && n(e, r), Object.defineProperty(e, "prototype", {
     writable: false
   }), e

@@ -17,20 +17,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk713081 = require("./713081.js"),
   Chunk905128 = require("./905128.js"),
   Chunk151494 = require("./151494.js"),
-  Chunk234865 = require("./234865.js");
+  Chunk377017 = require("./377017.js");
 class g extends Chunk647438.PureComponent {
   render() {
     let {
       tier: e
     } = this.props;
     return (0, Chunk951288.jsxs)("div", {
-      className: Chunk234865.tierPill,
+      className: Chunk377017.tierPill,
       children: [(0, Chunk951288.jsx)(Chunk297700.Z, {
-        className: Chunk234865.tierPillStar,
+        className: Chunk377017.tierPillStar,
         children: (0, Chunk951288.jsx)(Chunk471885.Z, {
           tier: module,
           color: "currentColor",
-          className: Chunk234865.tierPillGem
+          className: Chunk377017.tierPillGem
         })
       }), (0, Chunk267642.nW)(module)]
     })
@@ -61,7 +61,7 @@ function b(e) {
     subscriptionChange: a
   } = e, c = (0, s.e7)([p.Z], () => null != p.Z.getStateForGuild(t.id));
   return i.useEffect(() => {
-    c || (0, _.Fm)(t.id)
+    c || (0, _.BN)(t.id)
   }, [c, t.id]), (0, r.jsxs)("div", {
     className: o()(m.subscription, n),
     children: [(0, r.jsx)(l.Z, {

@@ -42,7 +42,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk526761 = require("./526761.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk227674 = require("./227674.js");
+  Chunk90290 = require("./90290.js");
 
 function B(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -252,7 +252,7 @@ let K = Object.freeze({
           backgroundGradientPresetId: e.id,
           theme: e.theme,
           useSystemTheme: g ? j.KW.OFF : true
-        }, k.fy.SLOW_USER_ACTION), (0, m.XO)(m.wh.CLIENT_THEMES), (0, S.Z)()
+        }, M.fy.SLOW_USER_ACTION), (0, m.XO)(m.wh.CLIENT_THEMES), (0, S.Z)()
       }, L = () => {
         if (!b) return null;
         let e = D.qt[c.Us.EASTER_EGG];
@@ -343,21 +343,21 @@ let K = Object.freeze({
         isSelected: c && u,
         onSelect: () => d("system")
       }), (0, r.jsx)(w.bD, {
-        theme: M.BR.LIGHT,
-        isSelected: c && !u && s === M.BR.LIGHT,
-        onSelect: () => d(M.BR.LIGHT)
+        theme: k.BR.LIGHT,
+        isSelected: c && !u && s === k.BR.LIGHT,
+        onSelect: () => d(k.BR.LIGHT)
       }), (0, r.jsx)(w.bD, {
-        theme: M.BR.DARK,
-        isSelected: c && !u && s === M.BR.DARK,
-        onSelect: () => d(M.BR.DARK)
+        theme: k.BR.DARK,
+        isSelected: c && !u && s === k.BR.DARK,
+        onSelect: () => d(k.BR.DARK)
       }), (0, r.jsx)(w.bD, {
-        theme: M.BR.DARKER,
-        isSelected: c && !u && s === M.BR.DARKER,
-        onSelect: () => d(M.BR.DARKER)
+        theme: k.BR.DARKER,
+        isSelected: c && !u && s === k.BR.DARKER,
+        onSelect: () => d(k.BR.DARKER)
       }), (0, r.jsx)(w.bD, {
-        theme: M.BR.MIDNIGHT,
-        isSelected: c && !u && s === M.BR.MIDNIGHT,
-        onSelect: () => d(M.BR.MIDNIGHT)
+        theme: k.BR.MIDNIGHT,
+        isSelected: c && !u && s === k.BR.MIDNIGHT,
+        onSelect: () => d(k.BR.MIDNIGHT)
       }), !n && !t && (0, r.jsx)(w.bD, {
         theme: "system",
         isSelected: c && u,

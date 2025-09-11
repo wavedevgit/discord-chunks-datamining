@@ -2,7 +2,7 @@
 /** chunk id: 466711, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => M
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,8 +27,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk30989 = require("./30989.js"),
-  Chunk564355 = require("./564355.js");
+  Chunk276088 = require("./276088.js"),
+  Chunk744114 = require("./744114.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -132,7 +132,7 @@ function j(e) {
   } = (0, u.ZP)(c.Z.GIFT_BUTTON), [v, S] = i.useState(false), C = (0, a.e7)([m.Z], () => !(null === m.Z || true === m.Z ? true : m.Z.hasLayers())), N = (0, a.e7)([g.default], () => g.default.getCurrentUser()), R = null != N ? b.default.age(N.id) : 0, {
     giftBoxAnimation: P,
     trinketsAnimation: w
-  } = null != (t = null == n ? true : n.chatGiftIcon) ? t : {}, j = null != n.firstTimeNotice && !s && C && R >= L, [k, M] = (0, f.XR)(j ? o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, d.t)(o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), U = null != k, G = v || U, B = (0, y.Ft)(l), Z = (0, p.IH)();
+  } = null != (t = null == n ? true : n.chatGiftIcon) ? t : {}, j = null != n.firstTimeNotice && !s && C && R >= L, [M, k] = (0, f.XR)(j ? o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, d.t)(o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), U = null != M, G = v || U, B = (0, y.Ft)(l), Z = (0, p.IH)();
   if (s) return null;
   let F = () => {
       (0, _.Z)({
@@ -149,7 +149,7 @@ function j(e) {
       })
     },
     V = () => {
-      S(false), M(T.L.TAKE_ACTION), F()
+      S(false), k(T.L.TAKE_ACTION), F()
     },
     H = true !== P ? (0, r.jsx)(D, {
       config: P,
@@ -174,10 +174,10 @@ function j(e) {
     children: true !== n.firstTimeNotice && U ? (0, r.jsx)(h.Z, {
       onComplete: () => S(false),
       onCheckItOutClick: F,
-      markAsDismissed: M,
+      markAsDismissed: k,
       config: n.firstTimeNotice,
       children: H
     }) : H
   })
 }
-let k = Chunk647438.memo(j)
+let M = Chunk647438.memo(j)

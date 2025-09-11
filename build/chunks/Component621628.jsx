@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk68985 = require("./68985.js"),
   Chunk211644 = require("./211644.js"),
   Chunk87454 = require("./87454.jsx"),
-  Chunk197571 = require("./197571.js");
+  Chunk10198 = require("./10198.js");
 
 function E(e, t) {
   let [n, r] = i.useState(() => {
@@ -71,10 +71,10 @@ function y() {
     children: [(0, Chunk951288.jsxs)(Chunk481060.hjN, {
       title: "Dismissible Content Fatigue",
       tag: Chunk481060.RB0.H1,
-      className: Chunk197571.marginBottom60,
+      className: Chunk10198.marginBottom60,
       children: [(0, Chunk951288.jsx)(Chunk481060.xJW, {
         children: (0, Chunk951288.jsxs)(Chunk481060.R94, {
-          className: Chunk197571.marginBottom4,
+          className: Chunk10198.marginBottom4,
           children: ["Daily Cap Reached: ", exports ? "Yes" : "No"]
         })
       }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
@@ -91,7 +91,7 @@ function y() {
           text: "Reset DismissibleContentFrameworkStore",
           onClick: () => (0, Chunk883904.EG)()
         }), (0, Chunk951288.jsx)(Chunk481060.R94, {
-          className: Chunk197571.marginTop4,
+          className: Chunk10198.marginTop4,
           children: "This will reset the daily cap and content seen during session"
         })]
       })]
@@ -115,9 +115,9 @@ function y() {
             onClick: Chunk675478.bE
           })]
         }), module.length > 0 ? (0, Chunk951288.jsxs)("div", {
-          className: Chunk197571.marginBottom20,
+          className: Chunk10198.marginBottom20,
           children: [(0, Chunk951288.jsx)("div", {
-            className: Chunk197571.marginBottom20,
+            className: Chunk10198.marginBottom20,
             children: (0, Chunk951288.jsx)(Chunk481060.vwX, {
               children: "Recently Shown"
             })
@@ -127,7 +127,7 @@ function y() {
           })]
         }) : null, T.length > 0 ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
           children: [(0, Chunk951288.jsx)("div", {
-            className: Chunk197571.marginBottom20,
+            className: Chunk10198.marginBottom20,
             children: (0, Chunk951288.jsx)(Chunk481060.vwX, {
               children: "Recent Overrides"
             })
@@ -136,7 +136,7 @@ function y() {
             handleChange: v
           })]
         }) : null, (0, Chunk951288.jsx)(Chunk600164.Z, {
-          className: o()(Chunk197571.marginBottom20, Chunk197571.marginTop20),
+          className: o()(Chunk10198.marginBottom20, Chunk10198.marginTop20),
           children: (0, Chunk951288.jsx)(Chunk481060.vwX, {
             children: "Available Dismissible Contents"
           })

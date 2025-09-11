@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk556638 = require("./556638.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk80568 = require("./80568.js");
+  Chunk666998 = require("./666998.js");
 
 function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -82,7 +82,7 @@ function j(e, t) {
   return (e.isDM() || e.isGroupDM() ? N.intl.string(N.t["9FaEzs"]) : e.isGuildStageVoice() ? N.intl.string(N.t.QygGCA) : N.intl.string(N.t.msxteH)) + (null != t ? " (".concat(t, ")") : "")
 }
 
-function k(e) {
+function M(e) {
   let {
     streamActivity: t,
     otherActivities: n,
@@ -104,7 +104,7 @@ function k(e) {
   }), null == t && null != r && i.push(j(r, s)), i.length > 0 ? i.join(", ") : ""
 }
 
-function M(e) {
+function k(e) {
   let {
     textVariant: t,
     className: n,
@@ -181,7 +181,7 @@ function G(e) {
     q = F.length + (K || z ? 1 : 0),
     X = q > 1,
     Q = (null == G ? true : G.state) != null && "xs" === b,
-    J = k({
+    J = M({
       streamActivity: V,
       otherActivities: F,
       voiceActivityChannel: z ? l : null
@@ -242,7 +242,7 @@ function G(e) {
         showChannelName: true
       }), "voice")), e
     },
-    et = () => (0, r.jsx)(M, {
+    et = () => (0, r.jsx)(k, {
       textVariant: "text-".concat(b, "/medium"),
       className: _,
       hasCustomStatusText: W,

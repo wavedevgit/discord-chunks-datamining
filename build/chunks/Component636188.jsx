@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk486324 = require("./486324.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk199306 = require("./199306.js");
+  Chunk605690 = require("./605690.js");
 
 function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -88,9 +88,9 @@ function L(e, t) {
   return i
 }
 let j = 25,
-  k = 720;
+  M = 720;
 
-function M() {
+function k() {
   return [{
     name: Chunk388032.intl.string(Chunk388032.t.Sp2NFx),
     extensions: ["jpg", "jpeg", "png", "gif", "mp4"]
@@ -158,7 +158,7 @@ function G(e) {
     userId: t.user_id,
     assetId: t.id,
     assetHash: t.asset,
-    size: k,
+    size: M,
     canAnimate: false
   });
   return (0, r.jsx)("img", {
@@ -240,11 +240,11 @@ function B(e) {
 
 function Z() {
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk199306.customBackgroundTooltip,
+    className: Chunk605690.customBackgroundTooltip,
     children: [(0, Chunk951288.jsx)(Chunk481060.SrA, {
       size: "md",
       color: "currentColor",
-      className: Chunk199306.customBackgroundTooltipIcon
+      className: Chunk605690.customBackgroundTooltipIcon
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       children: Chunk388032.intl.string(Chunk388032.t["T+yRY2"])
@@ -320,13 +320,13 @@ function H(e) {
     disabled: i
   } = e, a = (0, l.vRw)(), o = i ? C.intl.formatToPlainString(C.t.ykGFeH, {
     maxCustomBackgrounds: j
-  }) : C.intl.string(C.t.Qx0tFR), s = M();
+  }) : C.intl.string(C.t.Qx0tFR), s = k();
 
   function c() {
     (0, l.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("91689"), n.e("89289"), n.e("53488")]).then(n.bind(n, 28130));
+      } = await Promise.all([n.e("91689"), n.e("89289"), n.e("50893")]).then(n.bind(n, 28130));
       return n => (0, r.jsx)(e, P({
         maxFileSizeBytes: v.SJ,
         onComplete: e => {
@@ -398,7 +398,7 @@ function Y(e) {
             userId: e.user_id,
             assetId: e.id,
             assetHash: e.asset,
-            size: k
+            size: M
           });
           return null == n ? null : (0, i.createElement)(B, D(P({}, t), {
             key: e.id,

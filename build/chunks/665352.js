@@ -1,4 +1,4 @@
-/** Chunk was on 31422 **/
+/** Chunk was on 54628 **/
 /** chunk id: 665352, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -31,7 +31,7 @@ class i {
       writable: false,
       enumerable: true,
       configurable: true
-    }), s.Z.run("colorspace-init-end", this)
+    }), o.Z.run("colorspace-init-end", this)
   }
   inGamut(e, {
     epsilon: t = 75e-6
@@ -71,24 +71,24 @@ class i {
   to(e, t) {
     let r, a;
     if (1 == arguments.length) {
-      let r = (0, o.Z)(e);
+      let r = (0, s.Z)(e);
       [e, t] = [r.space, r.coords]
     }
     if (e = i.get(e), this.equals(e)) return t;
     t = t.map(e => Number.isNaN(e) ? 0 : e);
     let n = this.path,
-      s = e.path;
+      o = e.path;
     for (let e = 0; e < n.length; e++)
-      if (n[e].equals(s[e])) r = n[e], a = e;
+      if (n[e].equals(o[e])) r = n[e], a = e;
       else break;
     if (!r) throw Error(`Cannot convert between color spaces ${this} and ${e}: no connection space was found`);
     for (let e = n.length - 1; e > a; e--) t = n[e].toBase(t);
-    for (let e = a + 1; e < s.length; e++) t = s[e].fromBase(t);
+    for (let e = a + 1; e < o.length; e++) t = o[e].fromBase(t);
     return t
   }
   from(e, t) {
     if (1 == arguments.length) {
-      let r = (0, o.Z)(e);
+      let r = (0, s.Z)(e);
       [e, t] = [r.space, r.coords]
     }
     return (e = i.get(e)).to(this, t)
@@ -126,9 +126,9 @@ class i {
     throw TypeError(`${e} is not a valid color space`)
   }
   static resolveCoord(e, t) {
-    let r, n, s = (0, a.dt)(e);
-    if ("string" === s ? e.includes(".") ? [r, n] = e.split(".") : [r, n] = [, e] : Array.isArray(e) ? [r, n] = e : (r = e.space, n = e.coordId), (r = i.get(r)) || (r = t), !r) throw TypeError(`Cannot resolve coordinate reference ${e}: No color space specified and relative references are not allowed here`);
-    if ("number" === (s = (0, a.dt)(n)) || "string" === s && n >= 0) {
+    let r, n, o = (0, a.dt)(e);
+    if ("string" === o ? e.includes(".") ? [r, n] = e.split(".") : [r, n] = [, e] : Array.isArray(e) ? [r, n] = e : (r = e.space, n = e.coordId), (r = i.get(r)) || (r = t), !r) throw TypeError(`Cannot resolve coordinate reference ${e}: No color space specified and relative references are not allowed here`);
+    if ("number" === (o = (0, a.dt)(n)) || "string" === o && n >= 0) {
       let e = Object.entries(r.coords)[n];
       if (e) return {
         space: r,
@@ -138,11 +138,11 @@ class i {
       }
     }
     r = i.get(r);
-    let o = n.toLowerCase(),
+    let s = n.toLowerCase(),
       c = 0;
     for (let e in r.coords) {
       let t = r.coords[e];
-      if (e.toLowerCase() === o || t.name?.toLowerCase() === o) return {
+      if (e.toLowerCase() === s || t.name?.toLowerCase() === s) return {
         space: r,
         id: e,
         index: c,
@@ -165,22 +165,22 @@ function c(e, {
     e.type ||= "function", e.name ||= "color", e.coordGrammar = (0, a.T7)(e.coords);
     let r = Object.entries(t).map(([t, r], a) => {
       let n = e.coordGrammar[a][0],
-        s = r.range || r.refRange,
-        o = n.range,
+        o = r.range || r.refRange,
+        s = n.range,
         i = "";
-      return "<percentage>" == n ? (o = [0, 100], i = "%") : "<angle>" == n && (i = "deg"), {
-        fromRange: s,
-        toRange: o,
+      return "<percentage>" == n ? (s = [0, 100], i = "%") : "<angle>" == n && (i = "deg"), {
+        fromRange: o,
+        toRange: s,
         suffix: i
       }
     });
     e.serializeCoords = (e, t) => e.map((e, n) => {
       let {
-        fromRange: s,
-        toRange: o,
+        fromRange: o,
+        toRange: s,
         suffix: i
       } = r[n];
-      return s && o && (e = (0, a.KK)(s, o, e)), e = (0, a.zL)(e, {
+      return o && s && (e = (0, a.KK)(o, s, e)), e = (0, a.zL)(e, {
         precision: t,
         unit: i
       })

@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk132748 = require("./132748.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk898404 = require("./898404.js");
+  Chunk397581 = require("./397581.js");
 
 function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -88,18 +88,18 @@ function j(e) {
   return e === u.EO.VIDEO
 }
 
-function k(e) {
+function M(e) {
   return ((0, E._M)(e) || (0, E.MO)(e)) && (e.pathname.toLowerCase().endsWith(".webp") || e.pathname.toLowerCase().endsWith(".avif"))
 }
 
-function M(e) {
+function k(e) {
   return ((0, E._M)(e) || (0, E.MO)(e)) && e.pathname.toLowerCase().endsWith(".gif")
 }
 
 function U(e) {
   let t = y.Z.toURLSafe(e),
-    n = null != t && M(t);
-  return null != t && (k(t) || n) ? (n && t.searchParams.set("format", "webp"), t.searchParams.set("animated", "true"), t.toString()) : e
+    n = null != t && k(t);
+  return null != t && (M(t) || n) ? (n && t.searchParams.set("format", "webp"), t.searchParams.set("animated", "true"), t.toString()) : e
 }
 class G extends Chunk647438.PureComponent {
   componentDidMount() {
@@ -151,7 +151,7 @@ class G extends Chunk647438.PureComponent {
       src: U(module),
       width: exports,
       height: require,
-      className: Chunk898404.gif,
+      className: Chunk397581.gif,
       alt: ""
     }) : null
   }
@@ -171,7 +171,7 @@ class G extends Chunk647438.PureComponent {
       innerRef: e => {
         this.ref = e
       },
-      className: Chunk898404.result,
+      className: Chunk397581.result,
       "data-focused": Chunk120356,
       onClick: this.handleClick,
       style: A({
@@ -258,10 +258,10 @@ class B extends Chunk647438.PureComponent {
   }
   renderEmptyFavorites() {
     return (0, Chunk951288.jsx)(Chunk481060.Ttm, {
-      className: Chunk898404.results,
+      className: Chunk397581.results,
       fade: true,
       children: (0, Chunk951288.jsxs)("div", {
-        className: Chunk898404.emptyHints,
+        className: Chunk397581.emptyHints,
         children: [this.renderEmptyFavorite(Chunk388032.intl.string(Chunk388032.t["3gyw4e"]), true), this.renderEmptyFavorite(Chunk388032.intl.string(Chunk388032.t.yThUi4)), this.renderEmptyFavorite(Chunk388032.intl.string(Chunk388032.t.MeP0SE)), Array.from({
           length: 15
         }).map((e, t) => (0, r.jsx)(i.Fragment, {
@@ -283,7 +283,7 @@ class B extends Chunk647438.PureComponent {
     } = this.props;
     return 0 === module.length && exports === require && Chunk647438 !== Chunk981631.wI2.TRENDING_GIFS ? Chunk647438 === Chunk981631.wI2.FAVORITES ? this.renderEmptyFavorites() : (0, Chunk951288.jsx)(Chunk788911.Z, {
       message: Chunk388032.intl.string(Chunk388032.t["5dX4UF"]),
-      className: Chunk898404.noResults
+      className: Chunk397581.noResults
     }) : (0, Chunk951288.jsx)(Chunk527429.Z, {
       getItemGrid: this.getItemGrid,
       getCoordsMap: this.getCoordsMap,
@@ -440,7 +440,7 @@ function Z() {
     e.onload = null, e.src = ""
   })), [r] = Chunk647438.useState(() => new Chunk944611.w(() => {
     let e = exports.createElement("video");
-    return module.className = Chunk898404.gif, module.autoplay = true, module.loop = true, module.muted = true, module.preload = "auto", module.controls = false, module
+    return module.className = Chunk397581.gif, module.autoplay = true, module.loop = true, module.muted = true, module.preload = "auto", module.controls = false, module
   }, e => {
     e.src = "", e.oncanplay = null;
     let {

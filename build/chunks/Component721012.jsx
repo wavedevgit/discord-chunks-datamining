@@ -9,25 +9,25 @@ require("./120356.js");
 var Chunk938288 = require("./938288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk490369 = require("./490369.js");
+  Chunk881338 = require("./881338.js");
 
 function c(e) {
   let {
     testimonial: t,
     className: n
   } = e, {
-    message: i,
-    profilePic: r,
+    message: r,
+    profilePic: i,
     adminTitle: c,
     emphasisColor: d = "interactive-normal"
   } = t;
   return (0, l.jsxs)("div", {
     className: n,
-    children: [(0, l.jsx)(s.Text, {
+    children: [(0, l.jsx)(a.Text, {
       variant: "text-sm/medium",
       color: "header-secondary",
-      children: a.intl.format(i, {
-        testimonialHook: (e, t) => (0, l.jsx)(s.Text, {
+      children: s.intl.format(r, {
+        testimonialHook: (e, t) => (0, l.jsx)(a.Text, {
           tag: "span",
           variant: "text-sm/bold",
           color: d,
@@ -36,11 +36,11 @@ function c(e) {
       })
     }), (0, l.jsxs)("div", {
       className: o.userContainer,
-      children: [(0, l.jsx)(s.qEK, {
-        src: r,
-        size: s.EFr.SIZE_16,
+      children: [(0, l.jsx)(a.qEK, {
+        src: i,
+        size: a.EFr.SIZE_16,
         "aria-hidden": true
-      }), (0, l.jsx)(s.Text, {
+      }), (0, l.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
         children: c
@@ -53,50 +53,50 @@ function d(e) {
   let {
     testimonials: t
   } = e, [
-    [n, r], c
-  ] = i.useState([0, "right"]), d = i.useCallback(() => {
+    [n, i], c
+  ] = r.useState([0, "right"]), d = r.useCallback(() => {
     c(e => {
       let [n] = e;
       return 0 === n ? [t.length - 1, "left"] : [n - 1, "left"]
     })
-  }, [c, t.length]), m = i.useCallback(() => {
+  }, [c, t.length]), m = r.useCallback(() => {
     c(e => {
       let [n] = e;
       return [(n + 1) % t.length, "right"]
     })
-  }, [c, t.length]), h = t[n], g = i.useCallback((e, t, n, i) => (0, l.jsx)(u, {
+  }, [c, t.length]), g = t[n], h = r.useCallback((e, t, n, r) => (0, l.jsx)(u, {
     item: t,
     state: n,
-    cleanup: i,
-    direction: r
-  }, e), [r]);
+    cleanup: r,
+    direction: i
+  }, e), [i]);
   return (0, l.jsxs)("div", {
     className: o.testimonialHeroContainer,
     children: [(0, l.jsx)("div", {
       className: o.animatedContainer,
-      children: (0, l.jsx)(s.W3x, {
-        items: [h],
-        renderItem: g,
+      children: (0, l.jsx)(a.W3x, {
+        items: [g],
+        renderItem: h,
         getItemKey: e => e.adminTitle
       })
-    }), (0, l.jsx)(s.Text, {
+    }), (0, l.jsx)(a.Text, {
       variant: "text-lg/bold",
       className: o.heroQuotes,
       children: "“"
     }), (0, l.jsxs)("div", {
       className: o.testimonialsControls,
-      children: [(0, l.jsx)(s.hU, {
+      children: [(0, l.jsx)(a.hU, {
         size: "sm",
         variant: "secondary",
-        icon: s.whL,
+        icon: a.whL,
         onClick: d,
-        "aria-label": a.intl.string(a.t["13/7kZ"])
-      }), (0, l.jsx)(s.hU, {
+        "aria-label": s.intl.string(s.t["13/7kZ"])
+      }), (0, l.jsx)(a.hU, {
         size: "sm",
         variant: "secondary",
-        icon: s.ZSh,
+        icon: a.ZSh,
         onClick: m,
-        "aria-label": a.intl.string(a.t.PDTjLC)
+        "aria-label": s.intl.string(s.t.PDTjLC)
       })]
     })]
   })
@@ -106,31 +106,31 @@ function u(e) {
   let {
     item: t,
     state: n,
-    cleanup: i,
-    direction: a
-  } = e, [d] = (0, s.q_F)(() => {
+    cleanup: r,
+    direction: s
+  } = e, [d] = (0, a.q_F)(() => {
     switch (n) {
-      case s.pJH.ENTERED:
+      case a.pJH.ENTERED:
         return {
           from: {
-            transform: "right" === a ? "translateX(150%)" : "translate(-150%)"
+            transform: "right" === s ? "translateX(150%)" : "translate(-150%)"
           }, to: {
             transform: "translateX(0%)"
           }
         };
-      case s.pJH.YEETED:
+      case a.pJH.YEETED:
         return {
           from: {
             transform: "translateX(0%)"
           }, to: {
-            transform: "right" === a ? "translateX(-150%)" : "translate(150%)"
-          }, onRest: i
+            transform: "right" === s ? "translateX(-150%)" : "translate(150%)"
+          }, onRest: r
         };
       default:
         return {}
     }
   }, "respect-motion-settings", [n]);
-  return (0, l.jsx)(r.animated.div, {
+  return (0, l.jsx)(i.animated.div, {
     style: d,
     children: (0, l.jsx)(c, {
       className: o.testimonial,

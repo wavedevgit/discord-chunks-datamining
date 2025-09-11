@@ -18,10 +18,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk342386 = require("./342386.js"),
   Chunk981631 = require("./981631.js"),
   Chunk930441 = require("./930441.js"),
-  Chunk345909 = require("./345909.js"),
+  Chunk412297 = require("./412297.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk286661 = require("./286661.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk262526 = require("./262526.js"),
+  Chunk10198 = require("./10198.js");
 let O = () => {
   let e = Chunk695346.Ex.useSetting(),
     {
@@ -35,20 +35,20 @@ let O = () => {
   return Chunk647438.useEffect(() => {
     null == require && (0, Chunk960412.Y7)()
   }, [require]), (0, Chunk951288.jsxs)("div", {
-    className: Chunk286661.container,
+    className: Chunk262526.container,
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "eyebrow",
       color: "text-muted",
-      children: Chunk388032.intl.string(Chunk345909.default.USIXU1)
+      children: Chunk388032.intl.string(Chunk412297.default.USIXU1)
     }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
-      className: o()(Chunk197571.marginTop8, Chunk197571.marginBottom20),
+      className: o()(Chunk10198.marginTop8, Chunk10198.marginBottom20),
       value: module,
-      note: Chunk388032.intl.string(Chunk345909.default["5MdB3t"]),
+      note: Chunk388032.intl.string(Chunk412297.default["5MdB3t"]),
       hideBorder: true,
       onChange: Chunk695346.Ex.updateSetting,
-      children: Chunk388032.intl.string(Chunk345909.default.zkEceX)
+      children: Chunk388032.intl.string(Chunk412297.default.zkEceX)
     }), module ? (0, Chunk951288.jsx)(Chunk481060.Zbd, {
-      className: Chunk286661.enableCard,
+      className: Chunk262526.enableCard,
       type: Chunk481060.Zbd.Types.CUSTOM,
       outline: true,
       children: (0, Chunk951288.jsxs)(Chunk435935.k, {
@@ -57,7 +57,7 @@ let O = () => {
           children: (0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-sm/semibold",
             color: "text-default",
-            children: Chunk388032.intl.string(Chunk345909.default.xAVm7O)
+            children: Chunk388032.intl.string(Chunk412297.default.xAVm7O)
           })
         }), (0, Chunk951288.jsx)(Chunk481060.P3F, {
           children: (0, Chunk951288.jsx)(Chunk799899.rU, {
@@ -68,21 +68,21 @@ let O = () => {
                 scrollRestoration: false
               }
             },
-            children: Chunk388032.intl.string(Chunk345909.default.cUIXFR)
+            children: Chunk388032.intl.string(Chunk412297.default.cUIXFR)
           })
         }), (0, Chunk951288.jsx)(Chunk481060.G2e, {
           icon: Chunk481060.ZSh,
-          className: Chunk286661.arrow,
+          className: Chunk262526.arrow,
           disableColor: true
         })]
       })
     }) : null, (0, Chunk951288.jsx)(Chunk481060.j7V, {
-      className: o()(Chunk197571.marginTop20, Chunk197571.marginBottom20),
+      className: o()(Chunk10198.marginTop20, Chunk10198.marginBottom20),
       value: !!exports[Chunk930441.$Z.FAMILY_CENTER_DIGEST],
-      note: Chunk388032.intl.string(Chunk345909.default["y34S4+"]),
+      note: Chunk388032.intl.string(Chunk412297.default["y34S4+"]),
       hideBorder: true,
       onChange: Chunk120356,
-      children: Chunk388032.intl.string(Chunk345909.default.irvJKS)
+      children: Chunk388032.intl.string(Chunk412297.default.irvJKS)
     })]
   })
 }

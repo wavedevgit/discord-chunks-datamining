@@ -15,8 +15,8 @@ var r, i, Chunk951288 = require("./951288.js"),
   Chunk772096 = require("./772096.js"),
   Chunk428595 = require("./428595.js"),
   Chunk532901 = require("./532901.jsx"),
-  Chunk963071 = require("./963071.js"),
-  Chunk154257 = require("./154257.js");
+  Chunk316697 = require("./316697.js"),
+  Chunk525685 = require("./525685.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -164,7 +164,7 @@ class C extends(i = Chunk647438.PureComponent) {
       inline: false
     }, require)));
     return (0, Chunk951288.jsx)("div", {
-      className: l()(Chunk963071.markdown, module),
+      className: l()(Chunk316697.markdown, module),
       children: Chunk647438
     })
   }

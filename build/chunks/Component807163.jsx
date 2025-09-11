@@ -45,7 +45,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk616885 = require("./616885.js"),
+  Chunk819019 = require("./819019.js"),
   Chunk834982 = require("./834982.js"),
   Chunk912450 = require("./912450.js"),
   Chunk703548 = require("./703548.js"),
@@ -257,7 +257,7 @@ function ep(e) {
   let {
     premiumType: t
   } = e, n = 3, i = (0, d.e7)([b.Z], () => b.Z.useReducedMotion), a = (0, y.wC)(null).filter(e => e.type === O.B.GUILD && (e.animated || null != e.guildId)).slice(0, n), o = (0, d.Wu)([I.Z], () => I.Z.stickerFrecencyWithoutFetchingLatest.frequently.slice(0, n - a.length)), s = eu().emojiStickersVisual, l = t === B.p9.TIER_1, c = () => {
-    window.open(k.Z.getArticleURL(Z.BhN.PREMIUM_DETAILS)), L.default.track(Z.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
+    window.open(M.Z.getArticleURL(Z.BhN.PREMIUM_DETAILS)), L.default.track(Z.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
       action: "emojis_stickers"
     })
   };
@@ -376,7 +376,7 @@ function eg(e) {
   let {
     premiumType: t
   } = e, n = eu().uploadsMessagesItemVisual, i = () => {
-    window.open(k.Z.getArticleURL(Z.BhN.PREMIUM_DETAILS)), L.default.track(Z.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
+    window.open(M.Z.getArticleURL(Z.BhN.PREMIUM_DETAILS)), L.default.track(Z.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
       action: "msgs_uploads"
     })
   };

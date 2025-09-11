@@ -2,7 +2,7 @@
 /** chunk id: 210724, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  P: () => M,
+  P: () => k,
   Z: () => U
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -36,10 +36,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk46140 = require("./46140.js"),
   Chunk743294 = require("./743294.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk89855 = require("./89855.js");
+  Chunk747961 = require("./747961.js");
 let j = 75;
 
-function k(e) {
+function M(e) {
   let {
     isExpanded: t,
     questId: n
@@ -52,14 +52,14 @@ function k(e) {
   }), null
 }
 
-function M(e) {
+function k(e) {
   var t, n;
   let {
     quest: a
   } = e, E = (0, I.T)({
     quest: a,
     location: w.dr.QUESTS_BAR
-  }), M = (0, v.Z)({
+  }), k = (0, v.Z)({
     location: w.dr.QUESTS_BAR
   }), U = (0, c.e7)([b.Z], () => null != b.Z.questEnrollmentBlockedUntil), {
     isQuestBarVisible: G,
@@ -70,7 +70,7 @@ function M(e) {
   }), Z = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), F = (0, c.e7)([p.Z], () => p.Z.hasLayers()), V = i.useRef(null), H = i.useMemo(() => (0, g.q8)(a), [a]), Y = (null == (t = a.userStatus) ? true : t.enrolledAt) != null, W = (0, d.Z)(Y), K = (null == (n = a.userStatus) ? true : n.completedAt) != null, {
     hasError: z,
     isLoading: q
-  } = (0, A.d7)(), X = i.useContext(R.T) || M && G && !q && !U, Q = i.useRef(X), J = i.useRef(false), $ = i.useRef(false), [ee, et] = i.useState(false), [en, er] = i.useState(false), [ei, ea] = i.useState(false), [eo, es] = i.useState(true), [el, ec] = i.useState(true), eu = i.useRef(null), ed = i.useCallback(e => {
+  } = (0, A.d7)(), X = i.useContext(R.T) || k && G && !q && !U, Q = i.useRef(X), J = i.useRef(false), $ = i.useRef(false), [ee, et] = i.useState(false), [en, er] = i.useState(false), [ei, ea] = i.useState(false), [eo, es] = i.useState(true), [el, ec] = i.useState(true), eu = i.useRef(null), ed = i.useCallback(e => {
     K || (es(false), ea(e))
   }, [K]), ef = i.useCallback(() => {
     ed(true)
@@ -193,7 +193,7 @@ function M(e) {
       })
     }
   }, [z, a.id]), i.useEffect(() => {
-    if (!M) {
+    if (!k) {
       var e;
       (0, h.dA)({
         questId: a.id,
@@ -207,7 +207,7 @@ function M(e) {
         sourceQuestContent: y.jn.QUEST_BAR_V2
       })
     }
-  }, [M, a.id]), i.useEffect(() => {
+  }, [k, a.id]), i.useEffect(() => {
     if (!X && el && !q) {
       var e;
       (0, h.dA)({
@@ -223,8 +223,8 @@ function M(e) {
       })
     }
   }, [X, el, q, a.id, B]), i.useEffect(() => {
-    (!G || U) && m.Z.clearTracking(), X && el && !q && !z && M && m.Z.stopTracking(a.id)
-  }, [G, U, X, el, q, z, M, a.id]);
+    (!G || U) && m.Z.clearTracking(), X && el && !q && !z && k && m.Z.stopTracking(a.id)
+  }, [G, U, X, el, q, z, k, a.id]);
   let {
     enabled: eC,
     status: eN
@@ -232,7 +232,7 @@ function M(e) {
     location: w.dr.QUESTS_BAR,
     questConfig: a.config
   }), eR = (null == eN ? true : eN.progressBlur) ? 88 : 70;
-  if (!M || !X && el && !q || z) return z ? E.log("Not rendered due to asset error") : M || E.log("Not rendered due to ineligibility"), null;
+  if (!k || !X && el && !q || z) return z ? E.log("Not rendered due to asset error") : k || E.log("Not rendered due to ineligibility"), null;
   let eP = eR + 78 * !!K;
   return (0, r.jsx)(T.A, {
     questOrQuests: a,
@@ -241,7 +241,7 @@ function M(e) {
     sourceQuestContent: y.jn.QUEST_BAR_V2,
     children: (e, t) => (V.current = t.current, (0, r.jsxs)("div", {
       className: L.mask,
-      children: [X && (0, r.jsx)(k, {
+      children: [X && (0, r.jsx)(M, {
         questId: a.id,
         isExpanded: ei
       }), (0, r.jsx)(s.animated.div, {
@@ -299,7 +299,7 @@ let U = function() {
   return null == module ? null : (0, Chunk951288.jsx)(Chunk78826.p, {
     source: Chunk46140.dr.QUESTS_BAR,
     questId: module.id,
-    children: (0, Chunk951288.jsx)(M, {
+    children: (0, Chunk951288.jsx)(k, {
       quest: module
     })
   }, module.id)

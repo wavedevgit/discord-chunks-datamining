@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk46140 = require("./46140.js"),
   Chunk642145 = require("./642145.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk289157 = require("./289157.js");
+  Chunk878040 = require("./878040.js");
 
 function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -77,8 +77,8 @@ function D(e) {
     isHovering: D,
     contentPosition: L,
     rowIndex: j,
-    isVisibleInViewport: k,
-    onReceiveErrorHints: M,
+    isVisibleInViewport: M,
+    onReceiveErrorHints: k,
     sourceQuestContent: U
   } = e, G = i.useRef(null), B = i.useMemo(() => h.r.build(S.config), [S.config]), Z = B.defaultRewardName, F = B.defaultRewardNameWithArticle, V = (null == (t = S.userStatus) ? true : t.enrolledAt) != null, {
     ref: H,
@@ -136,7 +136,7 @@ function D(e) {
       },
       className: T.rewardDescriptionContainer,
       children: [(0, r.jsx)(b.E, {
-        showPlaceholder: !k,
+        showPlaceholder: !M,
         width: 80,
         height: 80,
         children: (0, r.jsxs)("div", {
@@ -210,7 +210,7 @@ function D(e) {
       questContent: C,
       contentPosition: L,
       rowIndex: j,
-      onReceiveErrorHints: M,
+      onReceiveErrorHints: k,
       sourceQuestContent: U
     })]
   })

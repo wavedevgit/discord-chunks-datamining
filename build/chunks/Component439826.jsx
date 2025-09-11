@@ -2,7 +2,7 @@
 /** chunk id: 439826, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => M
 }), require("./784620.js"), require("./973216.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -31,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk642145 = require("./642145.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk518388 = require("./518388.js");
+  Chunk904846 = require("./904846.js");
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -132,7 +132,7 @@ function j(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   var t, n, a, s, u;
   let {
     quest: f,
@@ -140,8 +140,8 @@ function k(e) {
     errorHints: C,
     warningHints: w,
     isVisibleInViewport: x,
-    onCtxMenuClose: k,
-    onCtxMenuOpen: M,
+    onCtxMenuClose: M,
+    onCtxMenuOpen: k,
     onCtxMenuSelect: U,
     sourceQuestContent: G
   } = e, B = (0, p.PB)(f), Z = (0, d.ZP)(), F = ((0, l.wj)(Z) ? N.BRd.DARK : N.BRd.LIGHT) === N.BRd.DARK, V = (0, m.tP)(f), H = (null == (t = f.userStatus) ? true : t.claimedAt) != null, Y = (0, m.B6)(f.config.expiresAt, {
@@ -216,8 +216,8 @@ function k(e) {
               })
             }))
           }), (0, r.jsx)(I.r, {
-            onOpen: M,
-            onClose: k,
+            onOpen: k,
+            onClose: M,
             onSelect: U,
             questContent: g.jn.QUEST_HOME_DESKTOP,
             quest: f,

@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk393919 = require("./393919.js"),
+  Chunk183608 = require("./183608.js"),
   Chunk99713 = require("./99713.js");
 
 function D(e, t, n) {
@@ -73,8 +73,8 @@ function j(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = 190,
-  M = 178,
+let M = 190,
+  k = 178,
   U = "MESSAGE_CONFETTI_POTION_MODAL_KEY",
   G = e => {
     let {
@@ -373,10 +373,10 @@ let F = e => {
     if (null == exports || 0 === exports) return null;
     let n = (null == module ? true : module.type) === Chunk981631.qc2.DEVELOPER_GIFT ? Chunk388032.t["b+P6ra"] : Chunk388032.t.RiQ4cn;
     return (0, Chunk951288.jsxs)("div", {
-      className: Chunk393919.remaining,
+      className: Chunk183608.remaining,
       children: [(0, Chunk951288.jsx)(Chunk481060.l22, {
         color: "currentColor",
-        className: Chunk393919.shootingStar
+        className: Chunk183608.shootingStar
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         color: "none",
         variant: "text-sm/semibold",
@@ -430,13 +430,13 @@ let F = e => {
     })
   },
   z = () => (0, Chunk951288.jsx)("div", {
-    className: Chunk393919.anomaly,
+    className: Chunk183608.anomaly,
     children: (0, Chunk951288.jsxs)("div", {
-      className: Chunk393919.error,
+      className: Chunk183608.error,
       children: [(0, Chunk951288.jsx)(Chunk481060.Eep, {
         src: Chunk99713,
-        width: M,
-        height: k
+        width: k,
+        height: M
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: Chunk388032.intl.string(Chunk388032.t.oKJdSk)
@@ -444,9 +444,9 @@ let F = e => {
     })
   }),
   q = () => (0, Chunk951288.jsx)("div", {
-    className: Chunk393919.anomaly,
+    className: Chunk183608.anomaly,
     children: (0, Chunk951288.jsx)("div", {
-      className: Chunk393919.spinner,
+      className: Chunk183608.spinner,
       children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
     })
   })

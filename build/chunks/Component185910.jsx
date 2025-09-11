@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 /** chunk id: 185910, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => x
 }), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,7 +10,7 @@ var Chunk805203 = require("./805203.js"),
   Chunk410030 = require("./410030.js"),
   Chunk95398 = require("./95398.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk451429 = require("./451429.js");
+  Chunk866403 = require("./866403.js");
 let d = {
   base00: Chunk692547.Z.colors.BACKGROUND_BASE_LOWER.css,
   base03: Chunk692547.Z.colors.TEXT_FEEDBACK_WARNING.css,
@@ -27,16 +27,16 @@ function u(e) {
   return t
 }
 let m = u(d),
-  x = u(d);
+  h = u(d);
 
-function h(e) {
+function p(e) {
   return o.Jn9.test(e) ? (0, a.jsx)(s.ZP, {
     type: s.ZP.Types.TEXT,
     children: () => e
   }) : e
 }
 
-function p(e) {
+function x(e) {
   let {
     data: t
   } = e, n = (0, i.ZP)();
@@ -44,9 +44,9 @@ function p(e) {
     className: c.inspectorWrapper,
     children: (0, a.jsx)(r.L, {
       data: t,
-      theme: "light" === n ? x : m,
+      theme: "light" === n ? h : m,
       invertTheme: false,
-      valueRenderer: h,
+      valueRenderer: p,
       shouldExpandNode: () => true
     })
   })

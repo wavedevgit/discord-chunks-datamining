@@ -1,9 +1,33 @@
-/** Chunk was on 62987 **/
-/** chunk id: 787267, original params: e,t,n (module,exports,require) **/
-module.exports = {
-  container: "container__7116a",
-  group: "group__7116a",
-  separator: "separator__7116a",
-  icon: "icon__7116a",
-  input: "input__7116a"
+/** Chunk was on 80451 **/
+/** chunk id: 787267, original params: e,r,t (module,exports,require) **/
+"use strict";
+require("./864733.js")(exports, "__esModule", {
+  value: true
+}), exports.default = true, exports.default = {
+  abstract: false,
+  accessibleNameRequired: false,
+  baseConcepts: [],
+  childrenPresentational: false,
+  nameFrom: ["author"],
+  prohibitedProps: [],
+  props: {
+    "aria-disabled": null,
+    "aria-errormessage": null,
+    "aria-expanded": null,
+    "aria-haspopup": null,
+    "aria-invalid": null
+  },
+  relatedConcepts: [{
+    concept: {
+      name: "conclusion [EPUB-SSV]"
+    },
+    module: "EPUB"
+  }],
+  requireContextRole: [],
+  requiredContextRole: [],
+  requiredOwnedElements: [],
+  requiredProps: {},
+  superClass: [
+    ["roletype", "structure", "section", "landmark"]
+  ]
 }

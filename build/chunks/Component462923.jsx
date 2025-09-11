@@ -15,23 +15,23 @@ var Chunk951288 = require("./951288.js"),
   Chunk444083 = require("./444083.jsx"),
   Chunk340887 = require("./340887.jsx"),
   Chunk408629 = require("./408629.jsx"),
-  Chunk401561 = require("./401561.js"),
+  Chunk440589 = require("./440589.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk842788 = require("./842788.js");
+  Chunk799427 = require("./799427.js");
 
 function y(e) {
   let {
     guildId: t,
     instance: n
-  } = e, y = (0, s.e7)([u.Z], () => u.Z.getState()), j = i.useCallback(() => {
-    y ? (0, p.Z)(n) : (0, b.Z)({
+  } = e, y = (0, a.e7)([u.Z], () => u.Z.getState()), h = i.useCallback(() => {
+    y ? (0, m.Z)(n) : (0, b.Z)({
       onAccept: () => {
-        (0, p.Z)(n)
+        (0, m.Z)(n)
       }
     })
-  }, [n, y]), P = i.useCallback(() => {
-    (0, l.JG)(n.serverIP), (0, a.showToast)((0, a.createToast)(f.intl.string(f.t["+5kSoa"]), a.ToastType.SUCCESS))
-  }, [n.serverIP]), h = (0, d.Z)(t);
+  }, [n, y]), j = i.useCallback(() => {
+    (0, l.JG)(n.serverIP), (0, o.showToast)((0, o.createToast)(f.intl.string(f.t["+5kSoa"]), o.ToastType.SUCCESS))
+  }, [n.serverIP]), O = (0, d.Z)(t);
   return (0, r.jsxs)("div", {
     className: v.card,
     children: [(0, r.jsxs)("div", {
@@ -42,13 +42,13 @@ function y(e) {
         className: v.gameImage
       }), (0, r.jsxs)("div", {
         className: v.serverInfo,
-        children: [(0, r.jsx)(a.X6q, {
+        children: [(0, r.jsx)(o.X6q, {
           variant: "heading-sm/medium",
           children: n.name
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(o.Text, {
           variant: "text-sm/medium",
           color: "text-tertiary",
-          children: n.plan.name
+          children: n.planName
         })]
       })]
     }), (0, r.jsx)("div", {
@@ -57,33 +57,33 @@ function y(e) {
         className: v.detailsGrid,
         children: [(0, r.jsxs)("div", {
           className: v.detailItem,
-          children: [(0, r.jsx)(a.Text, {
+          children: [(0, r.jsx)(o.Text, {
             variant: "text-xs/semibold",
             children: f.intl.string(g.default.X0IaiI)
-          }), (0, r.jsx)(a.Text, {
+          }), (0, r.jsx)(o.Text, {
             variant: "text-sm/medium",
             children: "".concat(n.onlineConnectionsCount, " / ").concat(n.maxConnectionsCount)
           })]
         }), (0, r.jsxs)("div", {
           className: v.detailItem,
-          children: [(0, r.jsx)(a.Text, {
+          children: [(0, r.jsx)(o.Text, {
             variant: "text-xs/semibold",
             children: f.intl.string(g.default["9pw/yM"])
           }), (0, r.jsx)("div", {
             className: v.serverIpContainer,
             children: y ? (0, r.jsxs)(r.Fragment, {
-              children: [(0, r.jsx)(a.Text, {
+              children: [(0, r.jsx)(o.Text, {
                 variant: "text-sm/medium",
                 children: n.serverIP
-              }), (0, r.jsx)(a.P3F, {
+              }), (0, r.jsx)(o.P3F, {
                 className: v.copyButton,
                 "aria-label": f.intl.string(f.t.OpuAlJ),
-                onClick: P,
-                children: (0, r.jsx)(a.TIy, {
+                onClick: j,
+                children: (0, r.jsx)(o.TIy, {
                   size: "sm"
                 })
               })]
-            }) : (0, r.jsx)(o.Z, {
+            }) : (0, r.jsx)(s.Z, {
               onClick: () => {
                 (0, b.Z)({})
               },
@@ -92,24 +92,24 @@ function y(e) {
           })]
         }), (0, r.jsxs)("div", {
           className: v.detailItem,
-          children: [(0, r.jsx)(a.Text, {
+          children: [(0, r.jsx)(o.Text, {
             variant: "text-xs/semibold",
             children: f.intl.string(g.default.MQQIu7)
           }), (0, r.jsxs)("div", {
             className: v.statusContainer,
             children: [(0, r.jsx)("span", {
               className: v.statusIndicator
-            }), (0, r.jsx)(a.Text, {
+            }), (0, r.jsx)(o.Text, {
               variant: "text-sm/medium",
               children: n.status
             })]
           })]
         }), (0, r.jsxs)("div", {
           className: v.detailItem,
-          children: [(0, r.jsx)(a.Text, {
+          children: [(0, r.jsx)(o.Text, {
             variant: "text-xs/semibold",
             children: f.intl.string(g.default.v8iSgI)
-          }), (0, r.jsx)(a.Text, {
+          }), (0, r.jsx)(o.Text, {
             variant: "text-sm/medium",
             children: (0, c.Y4)(new Date(n.lastUpdated))
           })]
@@ -117,12 +117,12 @@ function y(e) {
       })
     }), (0, r.jsxs)("div", {
       className: v.serverActions,
-      children: [(0, r.jsx)(a.zxk, {
+      children: [(0, r.jsx)(o.zxk, {
         fullWidth: true,
         text: f.intl.string(g.default["0TMXHh"]),
-        onClick: j,
+        onClick: h,
         variant: "primary"
-      }), h && (0, r.jsx)(a.zxk, {
+      }), O && (0, r.jsx)(o.zxk, {
         fullWidth: true,
         text: f.intl.string(g.default["jO3u+/"]),
         onClick: () => {
@@ -132,7 +132,7 @@ function y(e) {
       })]
     }), (0, r.jsx)("div", {
       className: v.overflowMenu,
-      children: (0, r.jsx)(m.Z, {
+      children: (0, r.jsx)(p.Z, {
         guildId: t,
         instance: n
       })

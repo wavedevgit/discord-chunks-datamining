@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk768581 = require("./768581.js"),
   Chunk153066 = require("./153066.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk722579 = require("./722579.js");
+  Chunk257727 = require("./257727.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -279,7 +279,7 @@ let L = e => {
       })
     })
   },
-  k = e => {
+  M = e => {
     let {
       guild: t,
       ref: n
@@ -293,7 +293,7 @@ let L = e => {
       })
     })
   },
-  M = e => {
+  k = e => {
     let {
       guildTemplate: t
     } = e;
@@ -305,5 +305,5 @@ let L = e => {
       })
     })
   };
-L.Header = C, L.Body = N, L.Icon = R, L.Info = P, L.Data = w, L.Channel = D, L.Button = x, L.GuildSplash = j, L.GuildName = k, L.GuildTemplateName = M, C.displayName = "InviteButton.Header", N.displayName = "InviteButton.Body", R.displayName = "InviteButton.Icon", P.displayName = "InviteButton.Info", w.displayName = "InviteButton.Data", D.displayName = "InviteButton.Channel", x.displayName = "InviteButton.Button", j.displayName = "InviteButton.GuildSplash", k.displayName = "InviteButton.GuildName", M.displayName = "InviteButton.GuildTemplateName";
+L.Header = C, L.Body = N, L.Icon = R, L.Info = P, L.Data = w, L.Channel = D, L.Button = x, L.GuildSplash = j, L.GuildName = M, L.GuildTemplateName = k, C.displayName = "InviteButton.Header", N.displayName = "InviteButton.Body", R.displayName = "InviteButton.Icon", P.displayName = "InviteButton.Info", w.displayName = "InviteButton.Data", D.displayName = "InviteButton.Channel", x.displayName = "InviteButton.Button", j.displayName = "InviteButton.GuildSplash", M.displayName = "InviteButton.GuildName", k.displayName = "InviteButton.GuildTemplateName";
 let U = L

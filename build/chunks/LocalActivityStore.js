@@ -71,9 +71,9 @@ function L(e, t) {
   }), e
 }
 let j = [],
-  k = {};
+  M = {};
 
-function M() {
+function k() {
   var e, t;
   let n = [],
     r = Chunk695346.Ok.getSetting();
@@ -85,7 +85,7 @@ function M() {
     type: Chunk981631.IIU.STREAMING
   }, Chunk392711));
   let l = new Set;
-  s().forEach(k, e => {
+  s().forEach(M, e => {
     let [, t] = e;
     null != t.application_id && (l.add(t.name), n.push(t))
   });
@@ -130,7 +130,7 @@ function M() {
 }
 
 function U() {
-  k = {}, M()
+  M = {}, k()
 }
 
 function G(e) {
@@ -140,28 +140,28 @@ function G(e) {
     activity: r,
     partyPrivacy: i
   } = e;
-  if (a()(k[t], [n, r, i])) returnfalse;
-  null != r ? k[t] = [n, r, i] : delete k[t], M()
+  if (a()(M[t], [n, r, i])) returnfalse;
+  null != r ? M[t] = [n, r, i] : delete M[t], k()
 }
 
 function B(e) {
   let {
     socketId: t
   } = e;
-  delete k[t], M()
+  delete M[t], k()
 }
 
 function Z(e) {
   let {
     localActivities: t
   } = e;
-  k = D({}, t), M()
+  M = D({}, t), k()
 }
 
 function F() {
   let e = {},
     t = false;
-  for (let [i, [a, o, s]] of Object.entries(k)) {
+  for (let [i, [a, o, s]] of Object.entries(M)) {
     var n, r;
     let l = null != (n = Chunk392711.flags) ? require : 0,
       c = (0, Chunk212517.S)(Chunk392711, (0, Chunk630388.yE)(null != (r = null == Chunk392711 ? true : Chunk392711.flags) ? r : 0, Chunk981631.xjy.INSTANCE), Chunk392711.platform === Chunk981631.M7m.EMBEDDED, (0, Chunk212517.D)(Chunk392711), s);
@@ -169,15 +169,15 @@ function F() {
       flags: Chunk570140
     }), s], t = true) : module[Chunk348327] = [a, Chunk392711, s]
   }
-  return exports ? (k = module, "APPLICATION_ACTIVITIES_CHANGED") : "NO_CHANGES"
+  return exports ? (M = module, "APPLICATION_ACTIVITIES_CHANGED") : "NO_CHANGES"
 }
 
 function V() {
-  F(), M()
+  F(), k()
 }
 class H extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk594190.ZP, Chunk317381.ZP, Chunk272053.Z, Chunk199902.Z, Chunk768419.Z, Chunk581883.Z, Chunk77498.Z, Chunk106301.Z, Chunk797258.Z, Chunk812206.Z), this.syncWith([Chunk406066.Z, Chunk106301.Z], () => M())
+    this.waitFor(Chunk594190.ZP, Chunk317381.ZP, Chunk272053.Z, Chunk199902.Z, Chunk768419.Z, Chunk581883.Z, Chunk77498.Z, Chunk106301.Z, Chunk797258.Z, Chunk812206.Z), this.syncWith([Chunk406066.Z, Chunk106301.Z], () => k())
   }
   getActivities() {
     return j
@@ -195,32 +195,32 @@ class H extends(r = Chunk442837.ZP.Store) {
     return j.find(e)
   }
   getApplicationActivities() {
-    return k
+    return M
   }
   getActivityForPID(e) {
-    for (let [t, n] of Object.values(k))
+    for (let [t, n] of Object.values(M))
       if (t === e) return n;
     return null
   }
 }
 w(H, "displayName", "LocalActivityStore");
 let Y = new H(Chunk570140.Z, {
-  ROBLOX_SUBGAME_UPDATE: M,
-  ROBLOX_SUBGAME_APPLICATION_FETCH_SUCCESS: M,
+  ROBLOX_SUBGAME_UPDATE: k,
+  ROBLOX_SUBGAME_APPLICATION_FETCH_SUCCESS: k,
   OVERLAY_INITIALIZE: Z,
   START_SESSION: U,
   LOCAL_ACTIVITY_UPDATE: G,
   RPC_APP_DISCONNECTED: B,
-  RUNNING_GAMES_CHANGE: M,
-  LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: M,
-  SPOTIFY_PLAYER_STATE: M,
-  SPOTIFY_PLAYER_PLAY: M,
-  STREAMING_UPDATE: M,
-  USER_CONNECTIONS_UPDATE: M,
-  STREAM_START: M,
-  STREAM_STOP: M,
+  RUNNING_GAMES_CHANGE: k,
+  LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: k,
+  SPOTIFY_PLAYER_STATE: k,
+  SPOTIFY_PLAYER_PLAY: k,
+  STREAMING_UPDATE: k,
+  USER_CONNECTIONS_UPDATE: k,
+  STREAM_START: k,
+  STREAM_STOP: k,
   USER_SETTINGS_PROTO_UPDATE: V,
-  EMBEDDED_ACTIVITY_CLOSE: M,
-  UPDATE_HANG_STATUS: M,
-  RUNNING_GAME_TOGGLE_DETECTION: M
+  EMBEDDED_ACTIVITY_CLOSE: k,
+  UPDATE_HANG_STATUS: k,
+  RUNNING_GAME_TOGGLE_DETECTION: k
 })

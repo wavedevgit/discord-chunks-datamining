@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk760692 = require("./760692.js"),
   Chunk203872 = require("./203872.js"),
   Chunk7284 = require("./7284.js"),
-  Chunk492333 = require("./492333.js");
+  Chunk713162 = require("./713162.js");
 let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
   T = Chunk647438.memo(function(e) {
     var t;
@@ -52,18 +52,18 @@ let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
       location: "useDisplayNameStylesFont"
     }), j = (0, g.Y)({
       location: "UserNameWithEffects"
-    }), k = (0, _.dQu)(_.TVs.colors.BACKGROUND_BASE_LOW).hex(), M = null != (t = null == a ? true : a.effectId) ? t : c.m.SOLID, U = (0, y.R)(M), G = (0, _.qgQ)(n), B = (0, f.EJ)(G, M === c.m.TOON ? v.emoji : true), Z = i.useMemo(() => null != a && j ? a.colors.map(e => (0, h.wh)({
+    }), M = (0, _.dQu)(_.TVs.colors.BACKGROUND_BASE_LOW).hex(), k = null != (t = null == a ? true : a.effectId) ? t : c.m.SOLID, U = (0, y.R)(k), G = (0, _.qgQ)(n), B = (0, f.EJ)(G, k === c.m.TOON ? v.emoji : true), Z = i.useMemo(() => null != a && j ? a.colors.map(e => (0, h.wh)({
       foreground: o()(e),
-      background: M === c.m.TOON ? o()("#333") : o()(k),
+      background: k === c.m.TOON ? o()("#333") : o()(M),
       ratio: U.minContrastRatio,
       saturationFactor: x
-    }).hex()) : [], [a, j, M, U.minContrastRatio, x, k]);
+    }).hex()) : [], [a, j, k, U.minContrastRatio, x, M]);
     if (!j || !T && !L || null == a) return n;
-    let F = (0, b.K)(M, Z, {
+    let F = (0, b.K)(k, Z, {
         shouldWrap: N,
         fontOpacity: I.includes(a.fontId) ? R : 1
       }),
-      V = S(M);
+      V = S(k);
     return (0, r.jsxs)("div", {
       className: l()(v.container, w, A, {
         [v.showEffect]: s !== E.F.PLAIN,

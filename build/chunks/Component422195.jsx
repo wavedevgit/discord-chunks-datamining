@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk957825 = require("./957825.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk163289 = require("./163289.js");
+  Chunk616906 = require("./616906.js");
 
 function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -72,8 +72,8 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
   x = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_UNICODE_ICON_SIZE),
   L = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_CATEGORY_SEPARATOR_SIZE),
   j = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_CATEGORY_SEPARATOR_MARGIN_VERTICAL),
-  k = [P, P, P, P],
-  M = (w + D) * 2 + P,
+  M = [P, P, P, P],
+  k = (w + D) * 2 + P,
   U = L + 2 * j,
   G = 7,
   B = e => {
@@ -133,8 +133,8 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
       }, "recent");
       let L = t === a,
         j = n[a],
-        k = n[a + 1],
-        M = null != k && j.type === b.Ih.GUILD && k.type !== b.Ih.GUILD,
+        M = n[a + 1],
+        k = null != M && j.type === b.Ih.GUILD && M.type !== b.Ih.GUILD,
         U = j.type === b.Ih.PACK,
         G = "",
         B = null;
@@ -178,11 +178,11 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
               children: B
             }))
           })
-        }), M ? (0, r.jsx)("hr", {
+        }), k ? (0, r.jsx)("hr", {
           className: S.guildCategorySeparator
         }, "separator") : null]
       }, j.id)
-    }, [t, _, m, n]), A = i.useCallback((e, t) => t ? M : 0, []);
+    }, [t, _, m, n]), A = i.useCallback((e, t) => t ? k : 0, []);
     return {
       getScrollOffsetForIndex: A,
       renderCategoryListItem: g,
@@ -241,7 +241,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
       categoryListRef: a,
       expressionsListRef: t,
       store: d.ZN,
-      listPadding: k,
+      listPadding: M,
       onScroll: v,
       renderCategoryListItem: y,
       rowCount: f.length,

@@ -10,7 +10,7 @@ var Chunk657707 = require("./657707.js"),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk921944 = require("./921944.js"),
-  Chunk695610 = require("./695610.js");
+  Chunk708316 = require("./708316.js");
 
 function u(e) {
   let {
@@ -19,20 +19,20 @@ function u(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: c.container,
-    children: [(0, r.jsx)(l.olH, {
+    children: [(0, r.jsx)(a.olH, {
       className: c.close,
       innerClassName: c.innerClose,
       onClick: () => {
-        n(a.L.USER_DISMISS)
+        n(s.L.USER_DISMISS)
       }
-    }), (0, r.jsx)(i.Mgn, {
-      color: s.Z.colors.TEXT_FEEDBACK_WARNING,
+    }), (0, r.jsx)(o.Mgn, {
+      color: l.Z.colors.TEXT_FEEDBACK_WARNING,
       className: c.icon
-    }), (0, r.jsx)(o.xvT, {
+    }), (0, r.jsx)(i.xvT, {
       variant: "text-md/semibold",
       color: "text-feedback-warning",
       children: t.title
-    }), (0, r.jsx)(o.xvT, {
+    }), (0, r.jsx)(i.xvT, {
       variant: "text-sm/medium",
       children: t.description
     })]

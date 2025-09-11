@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk490095 = require("./490095.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk940992 = require("./940992.js");
+  Chunk950244 = require("./950244.js");
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -81,8 +81,8 @@ function N(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions),
-  P = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewPadding),
+let R = (0, Chunk468194.Mg)(Chunk950244.__invalid_stickerPickerPreviewDimensions),
+  P = (0, Chunk468194.Mg)(Chunk950244.__invalid_stickerPickerPreviewPadding),
   w = 250,
   D = Chunk647438.memo(function(e) {
     let {
@@ -96,8 +96,8 @@ let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
       isUsingKeyboardNavigation: x,
       onInspect: L,
       onSelect: j,
-      rowIndex: k,
-      stickerClassName: M,
+      rowIndex: M,
+      stickerClassName: k,
       stickerDescriptors: U,
       stickerPadding: G = P,
       stickerSize: B = R,
@@ -121,7 +121,7 @@ let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
     return (0, r.jsx)("div", A(T({
       className: v.row,
       style: z
-    }, null == I ? true : I(k)), {
+    }, null == I ? true : I(M)), {
       children: U.map(e => {
         var d;
         let f = e.visibleRowIndex === (null == N ? true : N.rowIndex) && e.columnIndex === (null == N ? true : N.columnIndex),
@@ -141,13 +141,13 @@ let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
             }), (0, c.ZDy)(async () => {
               let {
                 default: t
-              } = await Promise.all([n.e("93626"), n.e("24291")]).then(n.bind(n, 136735));
+              } = await Promise.all([n.e("93626"), n.e("16048")]).then(n.bind(n, 136735));
               return n => (0, r.jsx)(t, T({
                 guildId: e.guild_id
               }, n))
             }))
           },
-          U = null != (d = null == l ? true : l(e.columnIndex, k)) ? d : {},
+          U = null != (d = null == l ? true : l(e.columnIndex, M)) ? d : {},
           {
             ref: G,
             tabIndex: K,
@@ -159,7 +159,7 @@ let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
             return (0, r.jsx)("div", A(T({}, J), {
               children: (0, r.jsxs)(c.P3F, {
                 "aria-label": e.name,
-                className: o()(v.createSticker, M, {
+                className: o()(v.createSticker, k, {
                   [v.createInspected]: f
                 }),
                 innerRef: G,
@@ -197,7 +197,7 @@ let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
             return (0, i.createElement)("div", A(T({}, J), {
               key: e.sticker.id
             }), (0, r.jsxs)(c.P3F, {
-              className: o()(v.sticker, M, {
+              className: o()(v.sticker, k, {
                 [v.stickerInspected]: f,
                 [v.showPulse]: X === e.sticker.id
               }),

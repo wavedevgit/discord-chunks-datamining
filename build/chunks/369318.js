@@ -1,4 +1,4 @@
-/** Chunk was on 31422 **/
+/** Chunk was on 54628 **/
 /** chunk id: 369318, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -11,12 +11,12 @@ var Chunk665352 = require("./665352.js"),
   Chunk440255 = require("./440255.js");
 let i = require("./629990.js").mh.D65,
   c = 216 / 24389,
-  l = 24389 / 27;
+  u = 24389 / 27;
 
-function u(e) {
-  return e > 8 ? Math.pow((e + 16) / 116, 3) : e / l
+function l(e) {
+  return e > 8 ? Math.pow((e + 16) / 116, 3) : e / u
 }
-let f = (0, Chunk440255.NZ)(i, 200 / Math.PI * u(50), 100 * u(50), "average", false),
+let f = (0, Chunk440255.NZ)(i, 200 / Math.PI * l(50), 100 * l(50), "average", false),
   b = new Chunk665352.Z({
     id: "hct",
     name: "HCT",
@@ -38,31 +38,31 @@ let f = (0, Chunk440255.NZ)(i, 200 / Math.PI * u(50), 100 * u(50), "average", fa
     base: Chunk856308.Z,
     fromBase: e => (function(e, t) {
       var r;
-      let a = 116 * ((r = e[1]) > c ? Math.cbrt(r) : (l * r + 16) / 116) - 16;
+      let a = 116 * ((r = e[1]) > c ? Math.cbrt(r) : (u * r + 16) / 116) - 16;
       if (0 === a) return [0, 0, 0];
-      let s = (0, o.S5)(e, f);
-      return [(0, n.j)(s.h), s.C, a]
+      let o = (0, s.S5)(e, f);
+      return [(0, n.j)(o.h), o.C, a]
     })(e, 0),
     toBase: e => (function(e, t) {
-      let [r, a, n] = e, s = [], i = 0;
+      let [r, a, n] = e, o = [], i = 0;
       if (0 === n) return [0, 0, 0];
-      let c = u(n);
+      let c = l(n);
       i = n > 0 ? .00379058511492914 * n ** 2 + .608983189401032 * n + .9155088574762233 : 9514440756550361e-21 * n ** 2 + .08693057439788597 * n - 21.928975842194614;
-      let l = 0,
+      let u = 0,
         f = 1 / 0;
-      for (; l <= 15;) {
-        let e = Math.abs((s = (0, o.Zk)({
+      for (; u <= 15;) {
+        let e = Math.abs((o = (0, s.Zk)({
           J: i,
           C: a,
           h: r
         }, t))[1] - c);
         if (e < f) {
-          if (e <= 2e-12) return s;
+          if (e <= 2e-12) return o;
           f = e
         }
-        i -= (s[1] - c) * i / (2 * s[1]), l += 1
+        i -= (o[1] - c) * i / (2 * o[1]), u += 1
       }
-      return (0, o.Zk)({
+      return (0, s.Zk)({
         J: i,
         C: a,
         h: r

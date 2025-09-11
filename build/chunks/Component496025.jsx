@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 /** chunk id: 496025, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => S
 }), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,8 +23,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk432877 = require("./432877.js"),
   Chunk246992 = require("./246992.js"),
   Chunk894257 = require("./894257.js"),
-  Chunk165432 = require("./165432.js"),
-  Chunk451429 = require("./451429.js");
+  Chunk462689 = require("./462689.js"),
+  Chunk866403 = require("./866403.js");
 
 function E() {
   var e;
@@ -36,14 +36,14 @@ function E() {
     } = (0, Chunk442837.cj)([Chunk592125.Z, Chunk594174.default, Chunk699516.Z], () => ({
       selectedChannel: Chunk592125.Z.getChannel(require),
       options: exports.map(e => {
-        let t = h.Z.getChannel(e.channelId);
+        let t = p.Z.getChannel(e.channelId);
         return {
           value: e.channelId,
-          label: null != t ? (0, m.F6)(t, f.default, p.Z) : e.channelId
+          label: null != t ? (0, m.F6)(t, b.default, x.Z) : e.channelId
         }
       })
     })),
-    g = Chunk647438.useCallback(() => {
+    v = Chunk647438.useCallback(() => {
       var e;
       if (null == i || !i.isPrivate()) return;
       let t = (0, Chunk630388.x9)(null != (e = i.recipientFlags) ? module : 0, Chunk602715.V.DISMISSED_IN_GAME_MESSAGE_NUX);
@@ -55,16 +55,16 @@ function E() {
       variant: "text-md/semibold",
       children: "In-Game NUX Message for DMs"
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk165432.inGameNuxContainer,
+      className: Chunk462689.inGameNuxContainer,
       children: [(0, Chunk951288.jsx)(Chunk481060.VcW, {
-        wrapperClassName: Chunk165432.search,
+        wrapperClassName: Chunk462689.search,
         options: Chunk493683,
         placeholder: "Select DM",
         value: require,
         onChange: Chunk120356,
         renderOptionPrefix: e => {
           if (null == e) return null;
-          let t = h.Z.getChannel(e.value);
+          let t = p.Z.getChannel(e.value);
           return null == t ? null : (0, a.jsx)(c.qEK, {
             src: (0, u.x)(t),
             "aria-hidden": true,
@@ -97,25 +97,25 @@ function T() {
   })
 }
 
-function O() {
+function S() {
   let e = (0, Chunk442837.e7)([Chunk432877.ZP], () => Chunk432877.ZP.allByCategory(Chunk432877.zU.MESSAGING), [], Chunk442837.pF).map(e => {
     let [t, n, {
       label: r
     }] = e;
     return (0, a.jsx)(c.j7V, {
       value: n,
-      onChange: e => (0, g.Z)(t, e),
+      onChange: e => (0, v.Z)(t, e),
       hideBorder: true,
       className: C.switch,
       children: r
     }, t)
   });
   return (0, Chunk951288.jsxs)("div", {
-    className: i()(Chunk451429.panel, Chunk165432.panel),
+    className: i()(Chunk866403.panel, Chunk462689.panel),
     children: [module, (0, Chunk951288.jsx)("div", {
-      className: Chunk165432.divider
+      className: Chunk462689.divider
     }), (0, Chunk951288.jsx)(E, {}), (0, Chunk951288.jsx)("div", {
-      className: Chunk165432.divider
+      className: Chunk462689.divider
     }), (0, Chunk951288.jsx)(T, {})]
   })
 }

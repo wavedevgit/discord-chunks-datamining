@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk967249 = require("./967249.js"),
   Chunk217702 = require("./217702.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk906376 = require("./906376.js");
+  Chunk666209 = require("./666209.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -117,8 +117,8 @@ function N(e) {
   D = A(D);
   let {
     primaryColor: j,
-    secondaryColor: k
-  } = (0, f.Z)(null != N ? N : g), M = "linear-gradient(45deg, ".concat(j, ", ").concat(k, ")"), U = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), G = i.useRef(false), B = (0, u.O)(e => {
+    secondaryColor: M
+  } = (0, f.Z)(null != N ? N : g), k = "linear-gradient(45deg, ".concat(j, ", ").concat(M, ")"), U = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), G = i.useRef(false), B = (0, u.O)(e => {
     if (false === G.current && e) {
       var t;
       null == D || null == (t = D.onView) || t.call(D), (0, m.GF)({
@@ -192,7 +192,7 @@ function N(e) {
       })]
     }), (0, r.jsxs)("div", {
       style: {
-        background: M
+        background: k
       },
       children: [(0, r.jsxs)("div", {
         className: y.contentContainer,

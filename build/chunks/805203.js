@@ -1,4 +1,4 @@
-/** Chunk was on 31422 **/
+/** Chunk was on 54628 **/
 /** chunk id: 805203, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -36,7 +36,7 @@ function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {};
     t % 2 ? v(Object(r), true).forEach(function(t) {
-      (0, u.Z)(e, t, r[t])
+      (0, l.Z)(e, t, r[t])
     }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : v(Object(r)).forEach(function(t) {
       Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
     })
@@ -60,9 +60,9 @@ function M(e) {
     extend: t
   } : Z({}, t), a.forEach(function(a) {
     console.error('Styling method "'.concat(a, '" is deprecated, use "theme" property instead')), t[r[a]] = function(t) {
-      for (var r = t.style, n = arguments.length, s = Array(n > 1 ? n - 1 : 0), o = 1; o < n; o++) s[o - 1] = arguments[o];
+      for (var r = t.style, n = arguments.length, o = Array(n > 1 ? n - 1 : 0), s = 1; s < n; s++) o[s - 1] = arguments[s];
       return {
-        style: Z(Z({}, r), e[a].apply(e, s))
+        style: Z(Z({}, r), e[a].apply(e, o))
       }
     }
   })), t);
@@ -71,7 +71,7 @@ function M(e) {
   }
 }
 var k = function(e) {
-  (0, i.Z)(u, e);
+  (0, i.Z)(l, e);
   var t, r = (t = function() {
     if ("undefined" == typeof Reflect || !Reflect.construct || Reflect.construct.sham) returnfalse;
     if ("function" == typeof Proxy) returntrue;
@@ -81,15 +81,15 @@ var k = function(e) {
       returnfalse
     }
   }(), function() {
-    var e, r = (0, l.Z)(u);
-    return e = t ? Reflect.construct(r, arguments, (0, l.Z)(this).constructor) : r.apply(this, arguments), (0, c.Z)(this, e)
+    var e, r = (0, u.Z)(l);
+    return e = t ? Reflect.construct(r, arguments, (0, u.Z)(this).constructor) : r.apply(this, arguments), (0, c.Z)(this, e)
   });
 
-  function u(e) {
+  function l(e) {
     var t;
-    return (0, s.Z)(this, u), (t = r.call(this, e)).state = M(e), t
+    return (0, o.Z)(this, l), (t = r.call(this, e)).state = M(e), t
   }
-  return (0, o.Z)(u, [{
+  return (0, s.Z)(l, [{
     key: "UNSAFE_componentWillReceiveProps",
     value: function(e) {
       var t = this;
@@ -111,20 +111,20 @@ var k = function(e) {
       var e = this.props,
         t = e.data,
         r = e.keyPath,
-        s = e.postprocessValue,
-        o = e.hideRoot,
+        o = e.postprocessValue,
+        s = e.hideRoot,
         i = (e.theme, e.invertTheme, (0, n.Z)(e, y)),
         c = this.state.styling;
       return b.createElement("ul", c("tree"), b.createElement(p.Z, (0, a.Z)({}, Z({
-        postprocessValue: s,
-        hideRoot: o,
+        postprocessValue: o,
+        hideRoot: s,
         styling: c
       }, i), {
-        keyPath: o ? [] : r,
-        value: s(t)
+        keyPath: s ? [] : r,
+        value: o(t)
       })))
     }
-  }]), u
+  }]), l
 }(Chunk647438.Component);
 (0, Chunk565294.Z)(k, "propTypes", {
   data: h().any,

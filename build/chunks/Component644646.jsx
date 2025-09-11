@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk110560 = require("./110560.jsx"),
   Chunk78826 = require("./78826.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk858191 = require("./858191.js");
+  Chunk497377 = require("./497377.js");
 let I = function(e) {
   let t, {
       className: n,
@@ -54,16 +54,16 @@ let I = function(e) {
         questId: a.id
       }), null == (n = e.onClick) || n.call(e, t)
     }, [P, a.id, e, A]),
-    k = i.useRef(null),
-    M = i.useRef(I),
+    M = i.useRef(null),
+    k = i.useRef(I),
     U = (0, p.Bg)(a.config);
   return i.useEffect(() => {
-    if (null != k.current) {
+    if (null != M.current) {
       if (!x.isAnimated || D) {
-        k.current.currentTime = 0, k.current.pause();
+        M.current.currentTime = 0, M.current.pause();
         return
       }
-      I && !M.current ? k.current.play() : !I && M.current && (k.current.currentTime = 0, k.current.pause()), M.current = I
+      I && !k.current ? M.current.play() : !I && k.current && (M.current.currentTime = 0, M.current.pause()), k.current = I
     }
   }, [I, x, D]), t = U ? (0, r.jsx)(y.Fl, {
     id: "QuestRewardTile_rewardTileNitro",
@@ -91,7 +91,7 @@ let I = function(e) {
       var n;
       return (0, r.jsx)(d.Z, {
         ref: e => {
-          t.current = e, k.current = e
+          t.current = e, M.current = e
         },
         autoPlay: !D && I,
         loop: true,

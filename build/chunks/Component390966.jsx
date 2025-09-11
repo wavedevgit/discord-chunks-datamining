@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk849464 = require("./849464.js"),
   Chunk765305 = require("./765305.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk646615 = require("./646615.js");
+  Chunk606532 = require("./606532.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -155,10 +155,10 @@ function T(e) {
 
 function S() {
   return (0, Chunk951288.jsx)(Chunk481060.IGR, {
-    className: Chunk646615.newBadge,
+    className: Chunk606532.newBadge,
     color: Chunk692547.Z.unsafe_rawColors.BRAND_260.css,
     text: (0, Chunk951288.jsx)(Chunk481060.Text, {
-      className: Chunk646615.newBadgeText,
+      className: Chunk606532.newBadgeText,
       variant: "text-xs/bold",
       children: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
     })
@@ -205,8 +205,8 @@ function C(e) {
       startDateTimeString: x,
       endDateTimeString: L,
       currentOrPastEvent: j,
-      upcomingEvent: k,
-      diffMinutes: M
+      upcomingEvent: M,
+      diffMinutes: k
     }, U] = i.useState((0, f.ub)(t, _));
   i.useEffect(() => {
     U((0, f.ub)(t, _));
@@ -220,8 +220,8 @@ function C(e) {
     start: x,
     end: L
   }));
-  let B = i.useMemo(() => n === p.p1.CANCELED || (null == D ? true : D.is_canceled) ? 5 : n === p.p1.ACTIVE ? 3 : p.$I.has(n) ? 4 : j ? 2 : +!!k, [n, null == D ? true : D.is_canceled, j, k]),
-    Z = I(B, G, g, L, M),
+  let B = i.useMemo(() => n === p.p1.CANCELED || (null == D ? true : D.is_canceled) ? 5 : n === p.p1.ACTIVE ? 3 : p.$I.has(n) ? 4 : j ? 2 : +!!M, [n, null == D ? true : D.is_canceled, j, M]),
+    Z = I(B, G, g, L, k),
     {
       Icon: F,
       iconColor: V,

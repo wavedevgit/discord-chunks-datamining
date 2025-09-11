@@ -18,8 +18,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk699516 = require("./699516.js"),
   Chunk594174 = require("./594174.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk727081 = require("./727081.js");
-let g = (0, Chunk972959.H)(() => ({
+  Chunk590075 = require("./590075.js");
+let v = (0, Chunk972959.H)(() => ({
   includeFrecency: true,
   includeFriends: true,
   includeGDMs: true,
@@ -57,21 +57,21 @@ function j(e) {
     }), null != r && (0, a.jsx)(l.Text, {
       variant: "text-sm/normal",
       color: "text-feedback-critical",
-      className: b.statusText,
+      className: g.statusText,
       children: r
     }), n && (0, a.jsx)(l.Text, {
       variant: "text-sm/normal",
       color: "text-feedback-positive",
-      className: b.statusText,
+      className: g.statusText,
       children: "Logs uploaded successfully"
     })]
   })
 }
 
 function _() {
-  let e = g.useField("snapshotUploading"),
-    t = g.useField("snapshotSuccess"),
-    n = g.useField("snapshotError"),
+  let e = v.useField("snapshotUploading"),
+    t = v.useField("snapshotSuccess"),
+    n = v.useField("snapshotError"),
     l = Chunk647438.useCallback(async () => {
       let {
         includeFrecency: e,
@@ -81,23 +81,23 @@ function _() {
         includeQuickSwitcherState: r,
         includeUserSearchWorkerState: l,
         snapshotUploading: s
-      } = g.getState();
+      } = v.getState();
       if (!Chunk972959) try {
-        g.setState({
+        v.setState({
           snapshotUploading: true,
           snapshotError: null,
           snapshotSuccess: false
-        }), exports && (0, Chunk620481.lG)(), require && (0, Chunk620481.mo)(), Chunk951288 && (0, Chunk620481.FB)(), module && (0, Chunk620481.Sr)(), Chunk647438 && (0, Chunk620481.OC)(), Chunk481060 && (0, Chunk620481.Jt)(), await (0, Chunk729345.E)(Chunk981631.GU0.WEB_APP), g.setState({
+        }), exports && (0, Chunk620481.lG)(), require && (0, Chunk620481.mo)(), Chunk951288 && (0, Chunk620481.FB)(), module && (0, Chunk620481.Sr)(), Chunk647438 && (0, Chunk620481.OC)(), Chunk481060 && (0, Chunk620481.Jt)(), await (0, Chunk729345.E)(Chunk981631.GU0.WEB_APP), v.setState({
           snapshotSuccess: true,
           snapshotError: null
         })
       } catch (t) {
         let e = new Chunk881052.Hx(exports);
-        g.setState({
+        v.setState({
           snapshotError: module.getAnyErrorMessage()
         })
       } finally {
-        g.setState({
+        v.setState({
           snapshotUploading: false
         })
       }
@@ -112,30 +112,30 @@ function _() {
 }
 
 function y() {
-  let e = g.useField("sessionUploading"),
-    t = g.useField("sessionSuccess"),
-    n = g.useField("sessionError"),
+  let e = v.useField("sessionUploading"),
+    t = v.useField("sessionSuccess"),
+    n = v.useField("sessionError"),
     l = Chunk647438.useCallback(async () => {
       let {
         sessionUploading: e
-      } = g.getState();
+      } = v.getState();
       if (!module) try {
-        g.setState({
+        v.setState({
           sessionRecording: false,
           sessionUploading: true,
           sessionError: null,
           sessionSuccess: false
-        }), await (0, Chunk729345.E)(Chunk981631.GU0.WEB_APP), g.setState({
+        }), await (0, Chunk729345.E)(Chunk981631.GU0.WEB_APP), v.setState({
           sessionSuccess: true,
           sessionError: null
         })
       } catch (t) {
         let e = new Chunk881052.Hx(exports);
-        g.setState({
+        v.setState({
           sessionError: module.getAnyErrorMessage()
         })
       } finally {
-        g.setState({
+        v.setState({
           sessionUploading: false
         })
       }
@@ -156,21 +156,21 @@ function C(e) {
   } = e;
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)("div", {
-      className: b.detailsRow,
+      className: g.detailsRow,
       children: (0, a.jsx)(l.R94, {
         children: t
       })
     }), (0, a.jsxs)("div", {
-      className: b.detailsList,
+      className: g.detailsList,
       children: [0 === n.length && (0, a.jsx)("div", {
-        className: b.detailsRow,
+        className: g.detailsRow,
         children: (0, a.jsx)(l.R94, {
           children: "None"
         })
       }), n.map(e => {
-        let t = h.Z.getGuild(e);
+        let t = p.Z.getGuild(e);
         return null == t ? null : (0, a.jsxs)("div", {
-          className: b.detailsRow,
+          className: g.detailsRow,
           children: [(0, a.jsx)(d.ZP, {
             guild: t,
             iconSize: 16
@@ -205,64 +205,64 @@ function N(e) {
     })
   }, []);
   return (0, a.jsxs)("div", {
-    className: b.checklist,
+    className: g.checklist,
     children: [(0, a.jsxs)("div", {
-      className: b.checklistItem,
+      className: g.checklistItem,
       children: [m({
         ok: null != i
       }), (0, a.jsx)(l.R94, {
         children: null != i ? "User exists in UserStore" : "User does not exist in UserStore"
       })]
     }), null != i && (0, a.jsx)("div", {
-      className: b.detailsList,
+      className: g.detailsList,
       children: (0, a.jsx)("div", {
-        className: b.detailsRow,
+        className: g.detailsRow,
         children: (0, a.jsx)(l.R94, {
           children: "username: ".concat(i.username)
         })
       })
     }), (0, a.jsxs)("div", {
-      className: b.checklistItem,
+      className: g.checklistItem,
       children: [m({
         ok: null != s
       }), (0, a.jsx)(l.R94, {
         children: null != s ? "User exists in User Search Worker" : "User does not exist in User Search Worker"
       })]
     }), null != s && (0, a.jsxs)("div", {
-      className: b.detailsList,
+      className: g.detailsList,
       children: [(0, a.jsx)("div", {
-        className: b.detailsRow,
+        className: g.detailsRow,
         children: (0, a.jsx)(l.R94, {
           children: "username: ".concat(s.username)
         })
       }), (0, a.jsx)("div", {
-        className: b.detailsRow,
+        className: g.detailsRow,
         children: (0, a.jsx)(l.R94, {
           children: "global name: ".concat(null != (t = s.globalName) ? t : "—")
         })
       }), (0, a.jsx)("div", {
-        className: b.detailsRow,
+        className: g.detailsRow,
         children: (0, a.jsx)(l.R94, {
           children: "nicknames:"
         })
       }), (0, a.jsxs)("div", {
-        className: b.detailsList,
+        className: g.detailsList,
         children: [0 === Object.keys(s.nicknames).length && (0, a.jsx)("div", {
-          className: b.detailsRow,
+          className: g.detailsRow,
           children: (0, a.jsx)(l.R94, {
             children: "None"
           })
         }), Object.entries(s.nicknames).map(e => {
-          let [t, n] = e, r = h.Z.getGuild(t), i = x.Z.getChannel(t);
+          let [t, n] = e, r = p.Z.getGuild(t), i = h.Z.getChannel(t);
           return (0, a.jsxs)("div", {
-            className: b.detailsRow,
+            className: g.detailsRow,
             children: [null != r && (0, a.jsx)(d.ZP, {
               guild: r,
               iconSize: 16
             }), null != r && (0, a.jsx)(l.R94, {
               children: r.name
             }), null == r && null != i && (0, a.jsx)(l.R94, {
-              children: (0, o.F6)(i, f.default, p.Z)
+              children: (0, o.F6)(i, b.default, x.Z)
             }), (0, a.jsx)(l.R94, {
               children: " (".concat(t, ")")
             }), null != n && "" !== n && (0, a.jsx)(l.R94, {
@@ -272,21 +272,21 @@ function N(e) {
         })]
       })]
     }), (0, a.jsxs)("div", {
-      className: b.checklistItem,
+      className: g.checklistItem,
       children: [m({
         ok: c.length > 0
       }), (0, a.jsx)(l.R94, {
         children: c.length > 0 ? "Guild members exist:" : "No guild members exist"
       })]
     }), c.length > 0 && (0, a.jsx)("div", {
-      className: b.detailsList,
+      className: g.detailsList,
       children: c.map(e => {
         var t;
-        let n = h.Z.getGuild(e.guildId);
+        let n = p.Z.getGuild(e.guildId);
         if (null == n) return null;
         let r = null != (t = e.nick) ? t : "";
         return (0, a.jsxs)("div", {
-          className: b.detailsRow,
+          className: g.detailsRow,
           children: [(0, a.jsx)(d.ZP, {
             guild: n,
             iconSize: 16
@@ -296,14 +296,14 @@ function N(e) {
         }, "".concat(e.guildId))
       })
     }), (0, a.jsxs)("div", {
-      className: b.checklistItem,
+      className: g.checklistItem,
       children: [(0, a.jsx)(l.d3s, {
         size: "sm"
       }), (0, a.jsx)(l.R94, {
         children: "GuildMemberRequesterStore State"
       })]
     }), null != u && (0, a.jsxs)("div", {
-      className: b.detailsList,
+      className: g.detailsList,
       children: [(0, a.jsx)(C, {
         title: "Pending Guild Member Requests:",
         guildIds: u.pendingRequestGuildIds
@@ -320,7 +320,7 @@ function N(e) {
 
 function E() {
   let e = Chunk647438.useCallback(e => {
-      g.setState({
+      v.setState({
         targetUserId: e,
         targetUserState: null
       })
@@ -329,37 +329,37 @@ function E() {
       let {
         targetUserId: e,
         targetUserStateLoading: t
-      } = g.getState();
+      } = v.getState();
       if (!exports && null != module) {
-        g.setState({
+        v.setState({
           targetUserStateLoading: true,
           targetUserStateError: null
         });
         try {
           let t = await (0, Chunk620481.V_)(module);
-          g.setState({
+          v.setState({
             targetUserState: exports,
             targetUserStateLoading: false
           })
         } catch (t) {
           let e = new Chunk881052.Hx(exports);
-          g.setState({
+          v.setState({
             targetUserStateError: module.getAnyErrorMessage(),
             targetUserStateLoading: false
           })
         } finally {
-          g.setState({
+          v.setState({
             targetUserStateLoading: false
           })
         }
       }
     }, []),
-    n = g.useField("targetUserStateLoading"),
-    s = g.useField("targetUserState"),
-    o = g.useField("targetUserStateError");
+    n = v.useField("targetUserStateLoading"),
+    s = v.useField("targetUserState"),
+    o = v.useField("targetUserStateError");
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsxs)("div", {
-      className: Chunk727081.inputWithButtonRow,
+      className: Chunk590075.inputWithButtonRow,
       children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
         placeholder: "User ID",
         onChange: module
@@ -372,7 +372,7 @@ function E() {
     }), null != Chunk933557 && (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       color: "text-feedback-critical",
-      className: Chunk727081.statusText,
+      className: Chunk590075.statusText,
       children: Chunk933557
     }), null != Chunk972959 && (0, Chunk951288.jsx)(N, {
       userState: Chunk972959
@@ -381,16 +381,16 @@ function E() {
 }
 
 function T() {
-  let e = g.useField("sessionRecording"),
-    t = g.useField("includeFrecency"),
-    n = g.useField("includeFriends"),
-    i = g.useField("includeGDMs"),
-    s = g.useField("includeDMs"),
-    o = g.useField("includeQuickSwitcherState"),
-    c = g.useField("includeUserSearchWorkerState"),
+  let e = v.useField("sessionRecording"),
+    t = v.useField("includeFrecency"),
+    n = v.useField("includeFriends"),
+    i = v.useField("includeGDMs"),
+    s = v.useField("includeDMs"),
+    o = v.useField("includeQuickSwitcherState"),
+    c = v.useField("includeUserSearchWorkerState"),
     d = Chunk647438.useRef([]),
-    x = Chunk647438.useRef(""),
-    h = Chunk647438.useCallback(() => {
+    h = Chunk647438.useRef(""),
+    p = Chunk647438.useCallback(() => {
       let {
         results: e,
         query: t
@@ -400,23 +400,23 @@ function T() {
   return Chunk647438.useEffect(() => {
     if (module) return Chunk823385.Z.addChangeListener(Chunk430824), () => Chunk823385.Z.removeChangeListener(Chunk430824)
   }, [Chunk430824, module]), (0, Chunk951288.jsxs)(Chunk481060.zJl, {
-    className: Chunk727081.panel,
+    className: Chunk590075.panel,
     children: [(0, Chunk951288.jsxs)(Chunk481060.hjN, {
       title: "Debug Logs Session",
       tag: Chunk481060.RB0.H3,
-      className: Chunk727081.panelGroup,
+      className: Chunk590075.panelGroup,
       children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.geA.DESCRIPTION,
-        className: Chunk727081.subtitle,
+        className: Chunk590075.subtitle,
         children: "Click to emit debug logs as you search in the Quick Switcher. Includes your search term and all results. For each result, includes the record id, associated names, and frecency scores."
       }), (0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.geA.DESCRIPTION,
-        className: Chunk727081.subtitle,
+        className: Chunk590075.subtitle,
         children: "When you are done, please remember to upload the logs."
       }), (0, Chunk951288.jsxs)(Chunk481060.hE2, {
         children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: module ? "critical-primary" : "primary",
-          onClick: () => g.setState({
+          onClick: () => v.setState({
             sessionRecording: !module
           }),
           text: module ? "Stop Recording" : "Start Recording"
@@ -425,49 +425,49 @@ function T() {
     }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
       title: "Debug Logs Snapshot",
       tag: Chunk481060.RB0.H3,
-      className: Chunk727081.panelGroup,
+      className: Chunk590075.panelGroup,
       children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.geA.DESCRIPTION,
-        className: Chunk727081.subtitle,
+        className: Chunk590075.subtitle,
         children: "Uploading a snapshot of the client state can help us figure out what exactly is wrong with your search. You can opt out of uploading certain logs, but it may make it more difficult to debug your issue."
       }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
         value: exports,
-        onChange: () => g.setState({
+        onChange: () => v.setState({
           includeFrecency: !exports
         }),
         note: "Frecency is a measure of how often you visit a guild or channel. Includes frecency scores for guilds and channels along with the guild or channel IDs.",
         children: "Frecency"
       }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
         value: require,
-        onChange: () => g.setState({
+        onChange: () => v.setState({
           includeFriends: !require
         }),
         note: "Includes all Discord Friend usernames, global names, and nicknames.",
         children: "Friends"
       }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
         value: Chunk972959,
-        onChange: () => g.setState({
+        onChange: () => v.setState({
           includeDMs: !Chunk972959
         }),
         note: "Includes recipient user ids, usernames, global names, nicknames for all DMs. Does NOT include any message data.",
         children: "DMs"
       }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
         value: Chunk881052,
-        onChange: () => g.setState({
+        onChange: () => v.setState({
           includeGDMs: !Chunk881052
         }),
         note: "Includes recipient user ids, usernames, global names, nicknames, and custom channel names for all Group DMs. Does NOT include any message data.",
         children: "Group DMs"
       }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
         value: Chunk933557,
-        onChange: () => g.setState({
+        onChange: () => v.setState({
           includeQuickSwitcherState: !Chunk933557
         }),
         note: "Includes the current QuickSwitcher query and results. If you include this, please ensure the QuickSwitcher is open when you click to Upload Snapshot Logs.",
         children: "Quick Switcher Results"
       }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
         value: Chunk729345,
-        onChange: () => g.setState({
+        onChange: () => v.setState({
           includeUserSearchWorkerState: !Chunk729345
         }),
         note: "Includes all users that your client knows about. For each user, includes the user id, username, nickname, and any guild nicknames.",
@@ -477,10 +477,10 @@ function T() {
     }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
       title: "Debug User State",
       tag: Chunk481060.RB0.H3,
-      className: Chunk727081.panelGroup,
+      className: Chunk590075.panelGroup,
       children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.geA.DESCRIPTION,
-        className: Chunk727081.subtitle,
+        className: Chunk590075.subtitle,
         children: "Paste a user ID below to get a snapshot of client state for the user. This does not generate any logs."
       }), (0, Chunk951288.jsx)(E, {})]
     })]

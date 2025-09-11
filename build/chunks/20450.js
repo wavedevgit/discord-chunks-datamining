@@ -1,4 +1,4 @@
-/** Chunk was on 31422 **/
+/** Chunk was on 54628 **/
 /** chunk id: 20450, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -7,11 +7,11 @@ require.d(exports, {
 var Chunk665352 = require("./665352.js"),
   Chunk99978 = require("./99978.js"),
   Chunk257381 = require("./257381.js");
-let o = 2610 / 16384,
+let s = 2610 / 16384,
   i = 16384 / 2610,
   c = 1.7 * 2523 / 32,
-  l = 32 / (1.7 * 2523),
-  u = [
+  u = 32 / (1.7 * 2523),
+  l = [
     [.41478972, .579999, .014648],
     [false, 1.120649, .0531008],
     [false, .2648, .6684799]
@@ -48,16 +48,16 @@ let o = 2610 / 16384,
     },
     base: Chunk257381.Z,
     fromBase(e) {
-      let [t, r, a] = e, s = (0, n.Z)(u, [1.15 * t - (1.15 - 1) * a, .66 * r - (.66 - 1) * t, a]).map(function(e) {
-        return ((.8359375 + 18.8515625 * (e / 1e4) ** o) / (1 + 18.6875 * (e / 1e4) ** o)) ** c
-      }), [i, l, f] = (0, n.Z)(b, s);
-      return [.43999999999999995 * i / (1 + false * i) - 16295499532821565e-27, l, f]
+      let [t, r, a] = e, o = (0, n.Z)(l, [1.15 * t - (1.15 - 1) * a, .66 * r - (.66 - 1) * t, a]).map(function(e) {
+        return ((.8359375 + 18.8515625 * (e / 1e4) ** s) / (1 + 18.6875 * (e / 1e4) ** s)) ** c
+      }), [i, u, f] = (0, n.Z)(b, o);
+      return [.43999999999999995 * i / (1 + false * i) - 16295499532821565e-27, u, f]
     },
     toBase(e) {
-      let [t, r, a] = e, s = (0, n.Z)(d, [(t + 16295499532821565e-27) / (.43999999999999995 - false * (t + 16295499532821565e-27)), r, a]).map(function(e) {
-        return 1e4 * ((.8359375 - e ** l) / (18.6875 * e ** l - 18.8515625)) ** i
-      }), [o, c, u] = (0, n.Z)(f, s), b = (o + (1.15 - 1) * u) / 1.15;
-      return [b, (c + (.66 - 1) * b) / .66, u]
+      let [t, r, a] = e, o = (0, n.Z)(d, [(t + 16295499532821565e-27) / (.43999999999999995 - false * (t + 16295499532821565e-27)), r, a]).map(function(e) {
+        return 1e4 * ((.8359375 - e ** u) / (18.6875 * e ** u - 18.8515625)) ** i
+      }), [s, c, l] = (0, n.Z)(f, o), b = (s + (1.15 - 1) * l) / 1.15;
+      return [b, (c + (.66 - 1) * b) / .66, l]
     },
     formats: {
       color: {

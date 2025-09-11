@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 /** chunk id: 56706, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -11,10 +11,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk358820 = require("./358820.js"),
   Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk451429 = require("./451429.js"),
-  Chunk877600 = require("./877600.js");
+  Chunk866403 = require("./866403.js"),
+  Chunk994676 = require("./994676.js");
 
-function x() {
+function h() {
   let [e, t] = Chunk647438.useState(30), n = Chunk647438.useCallback(() => {
     Chunk570140.Z.dispatch({
       type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",
@@ -22,15 +22,15 @@ function x() {
     })
   }, []);
   return (0, Chunk951288.jsx)(Chunk481060.zJl, {
-    className: Chunk451429.panel,
+    className: Chunk866403.panel,
     children: (0, Chunk951288.jsxs)("div", {
-      className: Chunk877600.panelInner,
+      className: Chunk994676.panelInner,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
-        className: Chunk877600.panelHeader,
+        className: Chunk994676.panelHeader,
         variant: "text-lg/bold",
         children: "Voice Filters"
       }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk877600.panelRow,
+        className: Chunk994676.panelRow,
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           children: "Set number of seconds remaining in countdown"
@@ -49,7 +49,7 @@ function x() {
           })
         })]
       }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk877600.panelRow,
+        className: Chunk994676.panelRow,
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           children: "Reset to API values"
@@ -62,7 +62,7 @@ function x() {
           }
         })]
       }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk877600.panelRow,
+        className: Chunk994676.panelRow,
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           children: "Pretend the native module is loading so when you close your app it'll look as if it crashed on load"
@@ -73,7 +73,7 @@ function x() {
           onClick: require
         })]
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk877600.panelRow,
+        className: Chunk994676.panelRow,
         children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           size: "sm",

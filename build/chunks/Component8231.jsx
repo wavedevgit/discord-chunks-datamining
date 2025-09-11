@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk694338 = require("./694338.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk893296 = require("./893296.js"),
+  Chunk358882 = require("./358882.js"),
   Chunk102655 = require("./102655.js"),
   Chunk768236 = require("./768236.js"),
   Chunk314907 = require("./314907.js"),
@@ -68,17 +68,17 @@ function P(e, t) {
   }), e
 }
 let w = () => (0, Chunk951288.jsx)("div", {
-    className: Chunk893296.comparisonTablePill,
+    className: Chunk358882.comparisonTablePill,
     children: (0, Chunk951288.jsx)(Chunk481060.X6q, {
-      className: Chunk893296.mostPopularText,
+      className: Chunk358882.mostPopularText,
       variant: "text-xs/bold",
       children: Chunk388032.intl.string(Chunk388032.t.TR2B4e)
     })
   }),
   D = () => (0, Chunk951288.jsx)("div", {
-    className: Chunk893296.comparisonTablePill,
+    className: Chunk358882.comparisonTablePill,
     children: (0, Chunk951288.jsx)(Chunk481060.X6q, {
-      className: Chunk893296.mostPopularText,
+      className: Chunk358882.mostPopularText,
       variant: "heading-deprecated-12/extrabold",
       children: Chunk388032.intl.string(Chunk388032.t.IBYG5e)
     })
@@ -158,7 +158,7 @@ let w = () => (0, Chunk951288.jsx)("div", {
       })]
     })
   },
-  k = e => {
+  M = e => {
     let {
       title: t,
       rows: n
@@ -179,7 +179,7 @@ let w = () => (0, Chunk951288.jsx)("div", {
       }), e.id))]
     })
   },
-  M = e => {
+  k = e => {
     let t, {
         premiumType: n
       } = e,
@@ -194,25 +194,25 @@ let w = () => (0, Chunk951288.jsx)("div", {
   },
   U = () => (0, Chunk951288.jsx)("thead", {
     children: (0, Chunk951288.jsxs)("tr", {
-      className: o()(Chunk893296.headerRow, Chunk893296.topBorderRadius),
+      className: o()(Chunk358882.headerRow, Chunk358882.topBorderRadius),
       children: [(0, Chunk951288.jsx)("th", {
         scope: "col",
-        className: Chunk893296.headerLabelCell,
+        className: Chunk358882.headerLabelCell,
         children: (0, Chunk951288.jsx)(Chunk481060.X6q, {
-          className: Chunk893296.__invalid_textColor,
+          className: Chunk358882.__invalid_textColor,
           variant: "heading-xl/semibold",
           children: Chunk388032.intl.string(Chunk388032.t.XXENra)
         })
       }), (0, Chunk951288.jsx)("th", {
         scope: "col",
-        className: Chunk893296.headerCell,
-        children: (0, Chunk951288.jsx)(M, {
+        className: Chunk358882.headerCell,
+        children: (0, Chunk951288.jsx)(k, {
           premiumType: Chunk474936.p9.TIER_0
         })
       }), (0, Chunk951288.jsx)("th", {
         scope: "col",
-        className: o()(Chunk893296.headerCell, Chunk893296.topBorderRadius),
-        children: (0, Chunk951288.jsx)(M, {
+        className: o()(Chunk358882.headerCell, Chunk358882.topBorderRadius),
+        children: (0, Chunk951288.jsx)(k, {
           premiumType: Chunk474936.p9.TIER_2
         })
       })]
@@ -267,7 +267,7 @@ let w = () => (0, Chunk951288.jsx)("div", {
       x = (0, E.Aq)(y.Xh.PREMIUM_MONTH_TIER_2),
       L = "".concat(x, "/").concat((0, h.eP)(y.rV.MONTH)),
       j = (0, h.CY)(y.Xh.PREMIUM_MONTH_TIER_0),
-      M = (0, h.CY)(y.Xh.PREMIUM_MONTH_TIER_2),
+      k = (0, h.CY)(y.Xh.PREMIUM_MONTH_TIER_2),
       B = (0, b.e)();
     if (!I || !T) return null;
     n = l ? null : null != S ? (0, r.jsx)(D, {}) : (0, r.jsx)(w, {});
@@ -295,10 +295,10 @@ let w = () => (0, Chunk951288.jsx)("div", {
             children: [(0, r.jsx)(U, {}), (0, r.jsxs)("tbody", {
               children: [(0, r.jsx)(G, {
                 tier0MonthlyPrice: j,
-                tier2MonthlyPrice: M,
+                tier2MonthlyPrice: k,
                 shouldUseDiscountPrice: R,
                 tier2DiscountedPriceString: L
-              }), B.map(e => (0, i.createElement)(k, P(N({}, e), {
+              }), B.map(e => (0, i.createElement)(M, P(N({}, e), {
                 key: e.id
               })))]
             })]

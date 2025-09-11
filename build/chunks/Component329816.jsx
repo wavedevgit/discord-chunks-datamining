@@ -49,7 +49,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk686546 = require("./686546.jsx"),
   Chunk950796 = require("./950796.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk302821 = require("./302821.js");
+  Chunk654924 = require("./654924.js");
 require("./167666.jsx"), Promise.resolve().then(require.bind(require, 62883)).then(e => {
   G.isPlatformEmbedded ? window.addEventListener("contextmenu", e.contextMenuCallbackNative, false) : window.addEventListener("contextmenu", e.contextMenuCallbackWeb, false)
 }), (0, Chunk335854.E)({
@@ -84,7 +84,7 @@ let q = (0, Chunk663993.Un)({
     let {
       children: t,
       skipsSettingDefaultPageTitle: n
-    } = e, a = (0, G.getPlatform)(), u = l.tq || l.Em, m = (0, c.e7)([E.Z], () => E.Z.useForcedColors ? "yes" : "no"), k = i.useRef(document.body), M = "".concat(m);
+    } = e, a = (0, G.getPlatform)(), u = l.tq || l.Em, m = (0, c.e7)([E.Z], () => E.Z.useForcedColors ? "yes" : "no"), M = i.useRef(document.body), k = "".concat(m);
     return (0, N.G)(), (0, P.G)("AppSkeleton"), (0, r.jsx)(j.w, {
       children: (0, r.jsxs)(b.Z, {
         children: [(0, r.jsx)(Z.Z, {
@@ -92,7 +92,7 @@ let q = (0, Chunk663993.Un)({
         }), (0, r.jsx)(h.T, {
           children: (0, r.jsx)(V.Z, {
             children: (0, r.jsxs)(d.JcV, {
-              containerRef: k,
+              containerRef: M,
               children: [(0, r.jsx)(Y.Co, {}), (0, r.jsx)(H.ZP, {}), (0, r.jsx)(s.OU, {}), (0, r.jsx)(g.Wu, {
                 appContext: K.IlC.APP,
                 renderWindow: window,
@@ -129,5 +129,5 @@ let q = (0, Chunk663993.Un)({
           })
         })]
       })
-    }, M)
+    }, k)
   }

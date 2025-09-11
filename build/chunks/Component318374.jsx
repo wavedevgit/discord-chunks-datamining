@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk5192 = require("./5192.js"),
   Chunk51144 = require("./51144.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk581143 = require("./581143.js");
+  Chunk279329 = require("./279329.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -61,12 +61,12 @@ function y() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk481060.EFr.SIZE_24;
   switch (module) {
     case Chunk481060.EFr.SIZE_16:
-      return Chunk581143.size16;
+      return Chunk279329.size16;
     case Chunk481060.EFr.SIZE_20:
-      return Chunk581143.size20;
+      return Chunk279329.size20;
     case Chunk481060.EFr.SIZE_24:
     default:
-      return Chunk581143.size24
+      return Chunk279329.size24
   }
 }
 
@@ -103,7 +103,7 @@ function v(e) {
     "aria-label": x,
     "aria-labelledby": L,
     "aria-hidden": j
-  } = e, [k, M] = i.useState(false), U = y(v), G = i.useRef(null), B = t.length - a, Z = B + 1, F = B > 0 && !A && !j, V = () => (0, r.jsx)(c.VqE, {
+  } = e, [M, k] = i.useState(false), U = y(v), G = i.useRef(null), B = t.length - a, Z = B + 1, F = B > 0 && !A && !j, V = () => (0, r.jsx)(c.VqE, {
     className: h.popoutWrapper,
     "aria-label": x,
     "aria-labelledby": L,
@@ -117,7 +117,7 @@ function v(e) {
         disablePopout: "function" == typeof N ? N(e.id) : N,
         onClick: w,
         onPopoutRequestClose: () => {
-          M(false), null == D || D()
+          k(false), null == D || D()
         },
         onContextMenu: t => (0, u.jW)(t, async () => {
           let {
@@ -129,7 +129,7 @@ function v(e) {
             channelId: m
           }))
         }, {
-          onClose: () => M(false)
+          onClose: () => k(false)
         })
       }, e.id))
     })
@@ -173,15 +173,15 @@ function v(e) {
     return (0, r.jsx)(c.yRy, {
       targetElementRef: G,
       renderPopout: V,
-      shouldShow: k,
+      shouldShow: M,
       position: "bottom",
-      onRequestClose: () => M(false),
+      onRequestClose: () => k(false),
       children: t => (0, r.jsx)(c.P3F, b(g({}, t), {
         innerRef: G,
         className: o()(h.overflow, U, S),
         onFocus: P,
         onClick: e => {
-          null == R || R(e), M(true)
+          null == R || R(e), k(true)
         },
         "aria-label": p.intl.formatToPlainString(p.t.R8Z8Qk, {
           count: Z

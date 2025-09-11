@@ -65,7 +65,7 @@ let p = (n, e, l) => {
       action: () => (0, i.ZDy)(async () => {
         let {
           default: i
-        } = await Promise.all([t.e("7654"), t.e("62292")]).then(t.bind(t, 560114));
+        } = await Promise.all([t.e("7654"), t.e("87379")]).then(t.bind(t, 560114));
         return t => {
           var c, o;
           return (0, r.jsx)(i, (c = b({}, t), o = o = {

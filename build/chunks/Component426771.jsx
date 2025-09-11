@@ -14,60 +14,60 @@ var Chunk951288 = require("./951288.js"),
   Chunk857666 = require("./857666.jsx"),
   Chunk279475 = require("./279475.js"),
   Chunk535396 = require("./535396.js"),
-  Chunk989308 = require("./989308.js"),
+  Chunk258640 = require("./258640.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk639560 = require("./639560.js");
+  Chunk703754 = require("./703754.js");
 
 function _(e) {
   var t, n, _;
-  let x, {
-      guildId: h,
+  let h, {
+      guildId: x,
       group: b,
       powerups: C
     } = e,
-    [j, T] = i.useState(false),
-    E = (0, c.Gv)(h, C),
-    P = (0, o.e7)([a.Z], () => a.Z.useReducedMotion),
-    I = (0, d.Z)(b, h);
+    [j, E] = o.useState(false),
+    T = (0, c.Gv)(x, C),
+    P = (0, i.e7)([s.Z], () => s.Z.useReducedMotion),
+    I = (0, d.Z)(b, x);
   if (true === I || C.length <= 0) return null;
-  let y = E.some(e => e.type !== m.A3.INACTIVE),
-    w = (0, p.d)(y),
-    Z = E.reduce((e, t) => {
+  let y = T.some(e => e.type !== m.A3.INACTIVE),
+    S = (0, p.d)(y),
+    w = T.reduce((e, t) => {
       let {
         sourceEntitlement: n
       } = t, r = null == n ? true : n.ends_at;
       return null == r ? e : null == e || r < e ? r : e
     }, true);
-  true !== Z ? x = {
+  true !== w ? h = {
     type: "expiring",
-    expiringAt: Z
-  } : y && (x = {
+    expiringAt: w
+  } : y && (h = {
     type: "active",
     statusText: f.intl.string(g.default.FFLkm5)
   });
-  let S = E.reduce((e, t) => {
+  let N = T.reduce((e, t) => {
       let {
         type: n,
         powerup: r
       } = t;
       return n === m.A3.POWERUP_ACTIVATED ? e + r.cost : e
     }, 0),
-    N = E.reduce((e, t) => {
+    O = T.reduce((e, t) => {
       var n, r;
       let {
-        powerup: i
+        powerup: o
       } = t;
-      return e < (null != (n = null == i ? true : i.cost) ? n : 0) ? e : null != (r = null == i ? true : i.cost) ? r : 0
-    }, null != (_ = null == (n = E[0]) || null == (t = n.powerup) ? true : t.cost) ? _ : 0),
-    k = E.reduce((e, t) => {
+      return e < (null != (n = null == o ? true : o.cost) ? n : 0) ? e : null != (r = null == o ? true : o.cost) ? r : 0
+    }, null != (_ = null == (n = T[0]) || null == (t = n.powerup) ? true : t.cost) ? _ : 0),
+    Z = T.reduce((e, t) => {
       var n;
       let {
         powerup: r
       } = t;
       return e + (null != (n = null == r ? true : r.cost) ? n : 0)
     }, 0),
-    O = y ? S : N,
-    A = !y && k > O ? "+" : true,
+    k = y ? N : O,
+    A = !y && Z > k ? "+" : true,
     U = !P && j ? I.image.animatedUrl : I.image.staticUrl,
     R = null != I.viewCta && "" !== I.viewCta ? I.viewCta : f.intl.string(g.default["27GkOj"]),
     L = null != I.viewCtaTooltip && "" !== I.viewCtaTooltip ? I.viewCtaTooltip : true;
@@ -76,36 +76,36 @@ function _(e) {
     isActive: y,
     badge: I.badge,
     onClick: () => I.openModal(C),
-    onMouseOver: () => T(true),
-    onMouseLeave: () => T(false),
+    onMouseOver: () => E(true),
+    onMouseLeave: () => E(false),
     children: [(0, r.jsx)("img", {
       alt: "",
       src: U,
       className: v.image
     }), (0, r.jsx)(u.Q9, {
       title: I.title,
-      textColor: w,
+      textColor: S,
       footer: (0, r.jsx)(u.uf, {
-        status: x,
-        cost: O,
+        status: h,
+        cost: k,
         costDecorator: A
       }),
-      children: (0, r.jsx)(l.Text, {
+      children: (0, r.jsx)(a.Text, {
         className: v.description,
-        color: w,
+        color: S,
         variant: "text-sm/medium",
         children: I.description
       })
     }), (0, r.jsx)(u.N4, {
-      children: null != L ? (0, r.jsx)(s.u, {
+      children: null != L ? (0, r.jsx)(l.u, {
         asContainer: true,
         text: L,
         delay: 100,
-        children: (0, r.jsx)(l.zxk, {
+        children: (0, r.jsx)(a.zxk, {
           text: R,
           fullWidth: true
         })
-      }) : (0, r.jsx)(l.zxk, {
+      }) : (0, r.jsx)(a.zxk, {
         text: R,
         fullWidth: true
       })

@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk228168 = require("./228168.js"),
   Chunk244096 = require("./244096.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk516089 = require("./516089.js");
+  Chunk711938 = require("./711938.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -168,7 +168,7 @@ let j = Chunk647438.forwardRef(function(e, t) {
       })]
     })
   }),
-  k = Chunk647438.forwardRef(function(e, t) {
+  M = Chunk647438.forwardRef(function(e, t) {
     var n, a;
     let {
       emoji: _,
@@ -183,7 +183,7 @@ let j = Chunk647438.forwardRef(function(e, t) {
       trackUserProfileAction: R
     } = (0, b.KZ)(), P = (0, h.p)({
       location: "CustomStatusBubble"
-    }), w = null != _ ? S.Hp : 0, D = S.hT + w, x = S.YF + w, j = i.useRef(null), k = i.useRef(null), M = i.useRef(null), U = i.useRef(D), G = i.useRef(x), B = null != _ && null == p, [Z, F] = i.useState(false), [V, H] = i.useState(true), [Y, W] = i.useState(!B && I), K = I && Z, z = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [q] = i.useState(() => new c.V7);
+    }), w = null != _ ? S.Hp : 0, D = S.hT + w, x = S.YF + w, j = i.useRef(null), M = i.useRef(null), k = i.useRef(null), U = i.useRef(D), G = i.useRef(x), B = null != _ && null == p, [Z, F] = i.useState(false), [V, H] = i.useState(true), [Y, W] = i.useState(!B && I), K = I && Z, z = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [q] = i.useState(() => new c.V7);
     i.useEffect(() => () => q.stop(), [q]), i.useEffect(() => {
       null == N || N.onInteractionPopoutTargetRefChange(j)
     }, [N]);
@@ -195,9 +195,9 @@ let j = Chunk647438.forwardRef(function(e, t) {
       }
     }));
     i.useLayoutEffect(() => {
-      if (F(true), null == k.current || null == M.current || !K) return;
-      let e = k.current.getBoundingClientRect().height,
-        t = M.current.getBoundingClientRect().height;
+      if (F(true), null == M.current || null == k.current || !K) return;
+      let e = M.current.getBoundingClientRect().height,
+        t = k.current.getBoundingClientRect().height;
       W(t > e), U.current = e, G.current = t, Q({
         maxHeight: "".concat(Math.min(V ? U.current : G.current, V ? D : x), "px")
       })
@@ -236,12 +236,12 @@ let j = Chunk647438.forwardRef(function(e, t) {
       }),
       en = null == ee || "" === p ? et : ee,
       er = (0, r.jsxs)("div", {
-        ref: k,
+        ref: M,
         className: C.content,
         children: [$, en]
       }),
       ei = (0, r.jsxs)("div", {
-        ref: M,
+        ref: k,
         className: o()(C.content, C.unclamped),
         children: [$, en]
       }),
@@ -321,14 +321,14 @@ let j = Chunk647438.forwardRef(function(e, t) {
       })]
     })
   }),
-  M = Chunk647438.forwardRef(function(e, t) {
+  k = Chunk647438.forwardRef(function(e, t) {
     var {
       emoji: n,
       text: a,
       onCloseProfile: o
     } = e, s = D(e, ["emoji", "text", "onCloseProfile"]);
     let [l, c] = i.useState(false);
-    return (0, r.jsx)(k, w(R({}, s), {
+    return (0, r.jsx)(M, w(R({}, s), {
       ref: t,
       emoji: n,
       text: a,
@@ -376,7 +376,7 @@ function U(e) {
     sourceType: T.n_.STATUS,
     onAction: u,
     onClose: () => N(false),
-    children: () => (0, r.jsx)(k, w(R({}, c), {
+    children: () => (0, r.jsx)(M, w(R({}, c), {
       ref: E,
       emoji: t,
       text: n,
@@ -412,7 +412,7 @@ let G = Chunk647438.forwardRef(function(e, t) {
       n = null != s && "" !== s ? s : null;
     return (0, r.jsx)(p.Gt, {
       value: b,
-      children: (0, r.jsx)(k, R({
+      children: (0, r.jsx)(M, R({
         emoji: e,
         text: n,
         placeholderText: u,
@@ -439,7 +439,7 @@ let G = Chunk647438.forwardRef(function(e, t) {
     }, h))
   }) : O ? (0, r.jsx)(p.Gt, {
     value: b,
-    children: (0, r.jsx)(M, R({
+    children: (0, r.jsx)(k, R({
       emoji: I,
       text: S,
       onCloseProfile: o,
@@ -447,7 +447,7 @@ let G = Chunk647438.forwardRef(function(e, t) {
     }, h))
   }) : (0, r.jsx)(p.Gt, {
     value: b,
-    children: (0, r.jsx)(k, R({
+    children: (0, r.jsx)(M, R({
       emoji: I,
       text: S,
       ref: t

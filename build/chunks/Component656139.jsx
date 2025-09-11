@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk382271 = require("./382271.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk476034 = require("./476034.js");
+  Chunk400889 = require("./400889.js");
 let N = e => {
     let {
       onClose: t,
@@ -45,7 +45,7 @@ let N = e => {
       selectedUsers: h
     }), [x, L] = i.useState(false), j = (0, p.O)(e => {
       e && !w && R()
-    }), k = N.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map), M = () => (0, r.jsx)(f.Z, {
+    }), M = N.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map), k = () => (0, r.jsx)(f.Z, {
       className: C.searchbar,
       size: f.Z.Sizes.MEDIUM,
       tags: [...h.values()].map(e => b.ZP.getName(e)),
@@ -135,13 +135,13 @@ let N = e => {
       title: A.intl.string(A.t["2dVCLi"]),
       subtitle: A.intl.string(A.t.DXgoi4),
       onClose: t,
-      input: M(),
+      input: k(),
       actions: [],
       actionBarInput: U({
-        eligibleRecipients: k
+        eligibleRecipients: M
       }),
       children: G({
-        eligibleRecipients: k
+        eligibleRecipients: M
       })
     })
   },

@@ -1,13 +1,13 @@
-/** Chunk was on 31422 **/
+/** Chunk was on 54628 **/
 /** chunk id: 147591, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => s
 });
 var Chunk665352 = require("./665352.js"),
   Chunk81011 = require("./81011.js"),
   Chunk656653 = require("./656653.js");
-let o = new Chunk665352.Z({
+let s = new Chunk665352.Z({
   id: "lchuv",
   name: "LChuv",
   coords: {
@@ -28,7 +28,7 @@ let o = new Chunk665352.Z({
   base: Chunk81011.Z,
   fromBase(e) {
     let t, [r, a, n] = e;
-    return t = .02 > Math.abs(a) && .02 > Math.abs(n) ? NaN : 180 * Math.atan2(n, a) / Math.PI, [r, Math.sqrt(a ** 2 + n ** 2), (0, s.j)(t)]
+    return t = .02 > Math.abs(a) && .02 > Math.abs(n) ? NaN : 180 * Math.atan2(n, a) / Math.PI, [r, Math.sqrt(a ** 2 + n ** 2), (0, o.j)(t)]
   },
   toBase(e) {
     let [t, r, a] = e;

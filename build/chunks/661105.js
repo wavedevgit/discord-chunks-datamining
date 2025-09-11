@@ -1,14 +1,14 @@
-/** Chunk was on 31422 **/
+/** Chunk was on 54628 **/
 /** chunk id: 661105, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => s
 });
 var Chunk181568 = require("./181568.js"),
   Chunk665352 = require("./665352.js"),
   Chunk262281 = require("./262281.js");
 
-function o(e, t, {
+function s(e, t, {
   inGamut: r
 } = {}) {
   e = (0, a.Z)(e);
@@ -18,6 +18,6 @@ function o(e, t, {
       coords: i,
       alpha: e.alpha
     };
-  return r && (c = (0, s.Z)(c, true === r ? true : r)), c
+  return r && (c = (0, o.Z)(c, true === r ? true : r)), c
 }
-o.returns = "color"
+s.returns = "color"

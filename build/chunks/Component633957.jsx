@@ -40,7 +40,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk701488 = require("./701488.js"),
   Chunk967249 = require("./967249.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk853392 = require("./853392.js");
+  Chunk833788 = require("./833788.js");
 
 function B(e) {
   var t, n, a, l;
@@ -79,7 +79,7 @@ function B(e) {
     $ = null == J ? true : J.details,
     ee = i.useMemo(() => {
       let e = new T.ZP(I);
-      return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = k.wT), e
+      return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = M.wT), e
     }, [I]),
     et = (0, h.s5)({
       userId: W,
@@ -192,7 +192,7 @@ function B(e) {
     onClickContent: el,
     trackingConfig: {
       id: I.id,
-      linkType: M.U.ACTIVITY_INSTANCE,
+      linkType: k.U.ACTIVITY_INSTANCE,
       guildId: x,
       channelId: w,
       messageId: B.id

@@ -31,8 +31,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk85240 = require("./85240.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk174546 = require("./174546.js"),
+  Chunk10198 = require("./10198.js");
 
 function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -73,7 +73,7 @@ function j(e, t) {
   }), e
 }
 
-function k(e) {
+function M(e) {
   let t = () => {
     A.SE.updateSetting(e ? O.Z.getGuildIds() : [])
   };
@@ -91,16 +91,16 @@ function k(e) {
   })))
 }
 
-function M() {
+function k() {
   let e = Chunk695346.G6.useSetting(),
     t = Chunk695346.no.useSetting(),
     n = (0, Chunk362352.Yd)("activity privacy tab"),
     i = Chunk358085.isPlatformEmbedded ? Chunk388032.intl.string(Chunk388032.t.MznbeH) : Chunk388032.intl.string(Chunk388032.t.oKqC4u),
     a = e => {
-      A.no.updateSetting(e ? u.GI.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS : u.GI.ACTIVITY_STATUS_OFF), k(e)
+      A.no.updateSetting(e ? u.GI.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS : u.GI.ACTIVITY_STATUS_OFF), M(e)
     },
     s = e => {
-      A.no.updateSetting(e), k(e !== u.GI.ACTIVITY_STATUS_OFF)
+      A.no.updateSetting(e), M(e !== u.GI.ACTIVITY_STATUS_OFF)
     },
     l = [{
       value: Chunk524437.GI.ACTIVITY_STATUS_ON,
@@ -116,7 +116,7 @@ function M() {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_STATUS,
     children: (0, Chunk951288.jsxs)(Chunk481060.hjN, {
       children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-        className: Chunk197571.marginBottom8,
+        className: Chunk10198.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t["8ka8lp"])
       }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
         value: module,
@@ -130,7 +130,7 @@ function M() {
           children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-sm/normal",
             color: "header-secondary",
-            className: Chunk197571.marginBottom8,
+            className: Chunk10198.marginBottom8,
             children: Chunk388032.intl.format(Chunk388032.t.aUxRra, {
               helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.ACTIVITY_STATUS_SETTINGS)
             })
@@ -140,7 +140,7 @@ function M() {
             onChange: e => s(e)
           })]
         }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-          className: o()(Chunk197571.marginBottom20, Chunk197571.marginTop20)
+          className: o()(Chunk10198.marginBottom20, Chunk10198.marginTop20)
         })]
       }) : (0, Chunk951288.jsx)(Chunk481060.j7V, {
         value: exports === Chunk524437.GI.ACTIVITY_STATUS_OFF,
@@ -160,9 +160,9 @@ function U() {
   return (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_RICH_PRESENCE,
     children: (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-      className: Chunk197571.marginBottom40,
+      className: Chunk10198.marginBottom40,
       children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-        className: Chunk197571.marginBottom8,
+        className: Chunk10198.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.VOszPD)
       }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
         value: module,
@@ -183,7 +183,7 @@ function G() {
   return (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_TOS,
     children: (0, Chunk951288.jsx)(Chunk481060.hjN, {
-      className: Chunk197571.marginBottom40,
+      className: Chunk10198.marginBottom40,
       children: (0, Chunk951288.jsx)(Chunk481060.ToO, {
         type: Chunk481060.ToO.Types.PRIMARY,
         body: Chunk388032.intl.format(Chunk388032.t.xvCsx8, {
@@ -263,11 +263,11 @@ function F() {
   return 0 === exports.length ? null : (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_STATUS_DISPLAY,
     children: (0, Chunk951288.jsx)(Chunk481060.hjN, {
-      className: Chunk197571.marginBottom40,
+      className: Chunk10198.marginBottom40,
       children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         gap: 12,
         children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-          className: Chunk197571.marginBottom8,
+          className: Chunk10198.marginBottom8,
           children: Chunk388032.intl.string(Chunk388032.t["4F2KoK"])
         }), (0, Chunk951288.jsx)(Chunk481060.E1j, {
           query: require,
@@ -296,6 +296,6 @@ function V(e) {
     className: t,
     tag: _.RB0.H1,
     title: n ? R.intl.string(R.t.Cq98yM) : null,
-    children: [(0, r.jsx)(M, {}), (0, r.jsx)(U, {}), (0, r.jsx)(G, {}), i && (0, r.jsx)(F, {})]
+    children: [(0, r.jsx)(k, {}), (0, r.jsx)(U, {}), (0, r.jsx)(G, {}), i && (0, r.jsx)(F, {})]
   })
 }

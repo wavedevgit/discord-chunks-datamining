@@ -16,24 +16,24 @@ var Chunk951288 = require("./951288.js"),
   Chunk279604 = require("./279604.jsx"),
   Chunk279475 = require("./279475.js"),
   Chunk535396 = require("./535396.js"),
-  Chunk237522 = require("./237522.js");
+  Chunk470039 = require("./470039.js");
 
 function _(e) {
   let {
     guildId: t,
     powerup: n
-  } = e, [_, x] = i.useState(true);
+  } = e, [_, h] = o.useState(true);
   (0, m.KT)(_);
-  let [h, b] = i.useState(false), C = (0, a.ZP)(t, n).type !== f.A3.INACTIVE, j = (0, g.d)(C), T = (0, l.g1)(t, "GuildPowerupPerkCard"), E = n.skuId === o.A$;
+  let [x, b] = o.useState(false), C = (0, s.ZP)(t, n).type !== f.A3.INACTIVE, j = (0, g.d)(C), E = (0, a.g1)(t, "GuildPowerupPerkCard"), T = n.skuId === i.A$;
   return (0, r.jsxs)(p.Z, {
     onHover: e => b(e),
     guildId: t,
     powerup: n,
-    badge: E || T ? E && T ? "beta" : true : "new",
+    badge: T || E ? T && E ? "beta" : true : "new",
     children: [(0, r.jsx)(d.m, {
       className: v.image,
       powerup: n,
-      isHovering: h
+      isHovering: x
     }), (0, r.jsx)(c.Q9, {
       title: n.title,
       textColor: j,
@@ -41,7 +41,7 @@ function _(e) {
         guildId: t,
         powerup: n
       }),
-      children: (0, r.jsx)(s.Text, {
+      children: (0, r.jsx)(l.Text, {
         className: v.description,
         color: j,
         variant: "text-sm/medium",
@@ -51,7 +51,7 @@ function _(e) {
       children: (0, r.jsx)(u.ZP, {
         guildId: t,
         powerup: n,
-        onError: x
+        onError: h
       })
     })]
   })

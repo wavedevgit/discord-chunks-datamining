@@ -20,13 +20,13 @@ function g(e) {
   var t;
   let {
     guildId: n,
-    powerup: i,
-    className: o
-  } = e, l = (0, a.ZP)(n, i), u = l.type !== m.A3.LEVEL_ACTIVATED, d = (0, s.Z)(n, i, "GuildPowerupCardBodyFooter"), g = null != (t = (0, p._)(i, l, d)) ? t : true;
+    powerup: o,
+    className: i
+  } = e, a = (0, s.ZP)(n, o), u = a.type !== m.A3.LEVEL_ACTIVATED, d = (0, l.Z)(n, o, "GuildPowerupCardBodyFooter"), g = null != (t = (0, p._)(o, a, d)) ? t : true;
   return (0, r.jsx)(c.uf, {
     status: g,
-    cost: u ? i.cost : true,
-    className: o
+    cost: u ? o.cost : true,
+    className: i
   })
 }
 
@@ -39,9 +39,9 @@ function f(e) {
     className: f,
     onHover: v,
     children: _
-  } = e, x = (0, l.Z)(n), h = (0, a.ZP)(n, p), b = h.type !== m.A3.INACTIVE, C = (null == (t = h.sourceEntitlement) ? true : t.ends_at) != null, j = (0, s.Z)(n, p, "GuildPowerupCard"), T = i.useRef(null), {
-    onShowMore: E
-  } = (0, d.ZP)(n, p), [P, I] = i.useState(false), y = (0, o.O)(I, 1);
+  } = e, h = (0, a.Z)(n), x = (0, s.ZP)(n, p), b = x.type !== m.A3.INACTIVE, C = (null == (t = x.sourceEntitlement) ? true : t.ends_at) != null, j = (0, l.Z)(n, p, "GuildPowerupCard"), E = o.useRef(null), {
+    onShowMore: T
+  } = (0, d.ZP)(n, p), [P, I] = o.useState(false), y = (0, i.O)(I, 1);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.aB, {
       label: p.title,
@@ -49,17 +49,17 @@ function f(e) {
       isWarning: C,
       badge: g,
       canRollback: j,
-      onClick: E,
+      onClick: T,
       onMouseOver: () => null == v ? true : v(true),
       onMouseLeave: () => null == v ? true : v(false),
       className: f,
       ref: e => {
-        T.current = e, y.current = e
+        E.current = e, y.current = e
       },
       children: _
-    }), !j && x && (0, r.jsx)(u.Z, {
+    }), !j && h && (0, r.jsx)(u.Z, {
       powerup: p,
-      targetRef: T,
+      targetRef: E,
       isCardVisible: P
     })]
   })

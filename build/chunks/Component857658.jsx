@@ -19,9 +19,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk233398 = require("./233398.js"),
   Chunk866419 = require("./866419.js"),
   Chunk507962 = require("./507962.js"),
-  Chunk119475 = require("./119475.js"),
+  Chunk684555 = require("./684555.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk209289 = require("./209289.js");
+  Chunk970281 = require("./970281.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -64,7 +64,7 @@ function T(e, t) {
 
 function S() {
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk209289.loader,
+    className: Chunk970281.loader,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   })
 }
@@ -177,14 +177,14 @@ function x(e) {
         t[O] = e.hex, s(t)
       }
     },
-    k = async () => {
+    M = async () => {
       if (null != c) try {
         let {
           sRGBHex: e
         } = await c.open();
         (0, g.J4)(), x(e)
       } catch (e) {}
-    }, M = () => {
+    }, k = () => {
       if (o.length === C) return;
       0 === o.length && (0, m.ft)(), (0, g.gG)();
       let e = o.length > 0 ? o[o.length - 1] : S,
@@ -230,7 +230,7 @@ function x(e) {
             variant: "icon-only",
             size: "sm"
           }, e), {
-            onClick: k,
+            onClick: M,
             icon: d.i,
             "aria-label": b.intl.string(E.default["NCFz+P"])
           }))
@@ -248,7 +248,7 @@ function x(e) {
     }), o.length < C && (0, r.jsx)(f.zxk, {
       variant: "secondary",
       size: "md",
-      onClick: M,
+      onClick: k,
       icon: _.BRu,
       text: b.intl.string(E.default.JUQcdX),
       fullWidth: true

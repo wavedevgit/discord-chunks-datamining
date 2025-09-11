@@ -18,8 +18,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk695346 = require("./695346.js"),
   Chunk449224 = require("./449224.js"),
   Chunk246992 = require("./246992.js"),
-  Chunk451429 = require("./451429.js"),
-  Chunk441900 = require("./441900.js");
+  Chunk866403 = require("./866403.js"),
+  Chunk963801 = require("./963801.js");
 let j = [{
   label: "Unset",
   value: Chunk524437.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET
@@ -50,9 +50,9 @@ function _() {
     } = (0, Chunk20471.F)(_);
   return (0, Chunk951288.jsxs)("div", {
     ref: module,
-    className: i()(Chunk451429.panel, Chunk441900.panel),
+    className: i()(Chunk866403.panel, Chunk963801.panel),
     children: [(0, Chunk951288.jsxs)("div", {
-      className: Chunk441900.container,
+      className: Chunk963801.container,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: "Receive DMs In Game"
@@ -64,7 +64,7 @@ function _() {
         serialize: e => e.toString()
       })]
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk441900.container,
+      className: Chunk963801.container,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: "In-App Authorization"

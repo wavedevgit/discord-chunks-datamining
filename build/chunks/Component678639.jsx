@@ -14,14 +14,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk484036 = require("./484036.jsx"),
   Chunk681619 = require("./681619.jsx"),
   Chunk621060 = require("./621060.jsx"),
-  Chunk451429 = require("./451429.js"),
-  Chunk104444 = require("./104444.js");
+  Chunk866403 = require("./866403.js"),
+  Chunk509510 = require("./509510.js");
 
-function f(e, t) {
+function b(e, t) {
   return e.store.getName().localeCompare(t.store.getName())
 }
 
-function v(e) {
+function f(e) {
   let {
     store: t,
     dataGetter: n
@@ -32,15 +32,15 @@ function v(e) {
       t.removeChangeListener(e)
     }
   }, [t, n]), (0, a.jsx)(o.zJl, {
-    className: p.inspectorContainer,
+    className: x.inspectorContainer,
     children: (0, a.jsx)(d.Z, {
       data: l
     })
   })
 }
-let b = [{
+let g = [{
     key: "name",
-    cellClassName: Chunk104444.__invalid_eventColumn,
+    cellClassName: Chunk509510.__invalid_eventColumn,
     render(e) {
       let {
         store: t
@@ -48,7 +48,7 @@ let b = [{
       return t.getName()
     }
   }],
-  g = [{
+  v = [{
     id: "local",
     name: "Local Variables",
     group: Chunk621060.v0.NONE,
@@ -57,11 +57,11 @@ let b = [{
         store: t
       } = e;
       return null == t.__getLocalVars ? (0, a.jsxs)("div", {
-        className: p.inspectorContainer,
+        className: x.inspectorContainer,
         children: ["Store is missing ", (0, a.jsx)("code", {
           children: "__getLocalVars"
         }), " method."]
-      }) : (0, a.jsx)(v, {
+      }) : (0, a.jsx)(f, {
         store: t,
         dataGetter: e => e.__getLocalVars()
       })
@@ -74,7 +74,7 @@ let b = [{
       let {
         store: t
       } = e;
-      return (0, a.jsx)(v, {
+      return (0, a.jsx)(f, {
         store: t,
         dataGetter: e => e
       })
@@ -88,15 +88,15 @@ function j(e) {
   } = e, {
     TabBar: r,
     renderSelectedTab: l
-  } = (0, x.ZP)({
-    tabs: g
+  } = (0, h.ZP)({
+    tabs: v
   }, []);
   return (0, a.jsxs)(u.Z, {
-    className: p.subPanel,
+    className: x.subPanel,
     minHeight: 100,
     initialHeight: n,
     children: [(0, a.jsx)(r, {}), (0, a.jsxs)(c.ZP, {
-      className: i()(h.headerBar, p.subPanelHeaderBar),
+      className: i()(p.headerBar, x.subPanelHeaderBar),
       children: [(0, a.jsx)(c.ZP.Icon, {
         icon: o.lO_,
         tooltip: t.getName()
@@ -116,19 +116,19 @@ function _() {
     c = Chunk647438.useMemo(() => Chunk120356.map(e => ({
       key: e._dispatchToken,
       store: e
-    })).sort(f), [Chunk120356]).filter(e => (function(e, t) {
+    })).sort(b), [Chunk120356]).filter(e => (function(e, t) {
       let {
         store: n
       } = e;
       return n.getName().toLowerCase().includes(t.toLowerCase())
     })(e, t)),
     [d, u] = Chunk647438.useState(),
-    x = Chunk120356.find(e => e._dispatchToken === d);
+    h = Chunk120356.find(e => e._dispatchToken === d);
   return (0, Chunk951288.jsxs)("div", {
     ref: module,
-    className: i()(Chunk451429.panel, Chunk104444.panel),
+    className: i()(Chunk866403.panel, Chunk509510.panel),
     children: [(0, Chunk951288.jsx)("div", {
-      className: Chunk104444.toolbar,
+      className: Chunk509510.toolbar,
       children: (0, Chunk951288.jsx)(Chunk481060.E1j, {
         size: "sm",
         query: exports,
@@ -138,7 +138,7 @@ function _() {
         "aria-label": "Search stores"
       })
     }), (0, Chunk951288.jsx)(Chunk681619.Z, {
-      columns: b,
+      columns: g,
       data: Chunk665149,
       selectedRowKey: Chunk185910,
       onClickRow: e => u(e.key)

@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk914010 = require("./914010.js"),
   Chunk727785 = require("./727785.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk704563 = require("./704563.js");
+  Chunk264770 = require("./264770.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -93,11 +93,11 @@ function C() {
 
 function N() {
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk704563.voiceListSearchEmpty,
+    className: Chunk264770.voiceListSearchEmpty,
     children: (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/medium",
       color: "text-muted",
-      className: Chunk704563.noVoiceChannelSelected,
+      className: Chunk264770.noVoiceChannelSelected,
       children: Chunk388032.intl.string(Chunk388032.t.zHjCd3)
     })
   })
@@ -268,7 +268,7 @@ function x(e) {
         S >= x - 1 ? P(0) : P(S + 1)
     }
   }
-  let k = (() => {
+  let M = (() => {
     if (null != v) {
       var e;
       return null == (e = v[S]) ? true : e.id
@@ -294,7 +294,7 @@ function x(e) {
           role: "combobox",
           "aria-controls": s,
           "aria-expanded": x > 0,
-          "aria-activedescendant": x > 0 && null != k ? k : true,
+          "aria-activedescendant": x > 0 && null != M ? M : true,
           "aria-autocomplete": "list",
           spellCheck: false
         })

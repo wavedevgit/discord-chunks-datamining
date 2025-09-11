@@ -39,8 +39,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk704543 = require("./704543.js"),
-  Chunk936524 = require("./936524.js"),
+  Chunk663907 = require("./663907.js"),
+  Chunk875055 = require("./875055.js"),
   Chunk924482 = require("./924482.js"),
   Chunk774797 = require("./774797.js");
 
@@ -100,7 +100,7 @@ function Z(e) {
             children: (0, b.P9)(et)
           }), (0, r.jsx)(s.Text, {
             variant: "text-sm/medium",
-            children: er ? k.intl.string(k.t.uQZTBQ) : k.intl.string(k.t.pgUTZG)
+            children: er ? M.intl.string(M.t.uQZTBQ) : M.intl.string(M.t.pgUTZG)
           })]
         })]
       }) : (0, r.jsxs)(s.P3F, {
@@ -127,7 +127,7 @@ function Z(e) {
       })
     },
     es = () => V !== j.l.MODAL && V !== j.l.MODAL_V2 ? null : (0, r.jsxs)("div", {
-      className: M.details,
+      className: k.details,
       children: [(0, r.jsx)(P.Z, {
         channel: W,
         guild: Y,
@@ -147,7 +147,7 @@ function Z(e) {
         onUserClick: e => e.stopPropagation(),
         disableUserPopout: e => e === t.id,
         overflowCountColor: "text-muted",
-        "aria-label": k.intl.string(k.t.jNqDh4)
+        "aria-label": M.intl.string(M.t.jNqDh4)
       }), V === j.l.MODAL_V2 && ec()]
     }),
     el = () => V === j.l.MODAL || V === j.l.MODAL_V2 ? null : (0, r.jsx)(w.Z, {
@@ -158,16 +158,16 @@ function Z(e) {
       onClose: F
     }),
     ec = () => t.id === n.id ? null : (0, r.jsx)("div", {
-      className: M.actions,
+      className: k.actions,
       children: (0, r.jsx)(D.Z, {
         channel: W,
         onAction: X,
         onClose: F
       })
     }),
-    eu = null != z ? k.intl.formatToPlainString(k.t["4CQq9f"], {
+    eu = null != z ? M.intl.formatToPlainString(M.t["4CQq9f"], {
       name: z.name
-    }) : k.intl.string(k.t["Jpkr/v"]);
+    }) : M.intl.string(M.t["Jpkr/v"]);
   return (0, r.jsx)(h.Gt, {
     value: q,
     children: (0, r.jsxs)(N.Z, {
@@ -187,9 +187,9 @@ function Z(e) {
           onClose: F
         })
       }), (0, r.jsxs)("div", {
-        className: M.body,
+        className: k.body,
         children: [(0, r.jsxs)("div", {
-          className: M.content,
+          className: k.content,
           children: [eo(), es(), V === j.l.MODAL && ec()]
         }), el()]
       }), V !== j.l.MODAL && V !== j.l.MODAL_V2 && ec()]

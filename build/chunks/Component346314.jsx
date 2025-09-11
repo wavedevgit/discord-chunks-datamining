@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk607070 = require("./607070.js"),
   Chunk865672 = require("./865672.jsx"),
   Chunk109161 = require("./109161.jsx"),
-  Chunk836484 = require("./836484.js");
+  Chunk10515 = require("./10515.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -109,7 +109,7 @@ function O(e) {
   }, j = {
     className: o()(p.nameGlow, D, y),
     children: n
-  }, k = C ? (0, r.jsx)(_.F, {
+  }, M = C ? (0, r.jsx)(_.F, {
     color: a,
     colors: N ? c : null,
     name: l,
@@ -120,7 +120,7 @@ function O(e) {
     className: o()(h, p.container),
     onMouseEnter: T,
     onMouseLeave: S,
-    children: ["left" === d && k, (0, r.jsxs)("span", {
+    children: ["left" === d && M, (0, r.jsxs)("span", {
       className: p.nameContainer,
       style: m({
         color: A && !N && null != a ? a : true
@@ -137,7 +137,7 @@ function O(e) {
       }, j)) : (0, r.jsx)("span", m({
         "aria-hidden": true
       }, j)))]
-    }), "right" === d && k]
+    }), "right" === d && M]
   })
 }
 

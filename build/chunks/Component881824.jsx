@@ -65,7 +65,7 @@ function m(e, t) {
   (0, i.ZD)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("82758"), n.e("73736")]).then(n.bind(n, 581355));
+    } = await Promise.all([n.e("82758"), n.e("66200")]).then(n.bind(n, 581355));
     return n => (0, r.jsx)(t, h(_({}, n), {
       channel: e
     }))

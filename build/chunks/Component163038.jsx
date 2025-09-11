@@ -40,7 +40,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk22665 = require("./22665.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk959517 = require("./959517.js"),
-  Chunk953278 = require("./953278.js");
+  Chunk417801 = require("./417801.js");
 
 function B(e) {
   let {
@@ -59,7 +59,7 @@ function B(e) {
       channelId: r.id,
       baseChannelId: a,
       guildId: r.guild_id
-    }), (0, T.Kh)(a), j.default.track(M.rMx.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
+    }), (0, T.Kh)(a), j.default.track(k.rMx.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
       moderator_report_id: t.channel_id,
       destination_channel_id: a,
       destination_message_id: t.id
@@ -120,7 +120,7 @@ function F(e) {
     showAvatarPopout: f
   } = Z(t, i);
   return (0, r.jsx)(m.Z, {
-    childrenExecutedCommand: (0, r.jsx)(k.Z, {
+    childrenExecutedCommand: (0, r.jsx)(M.Z, {
       reportingUserId: a,
       guildId: i.guild_id,
       channel: i,

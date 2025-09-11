@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 /** chunk id: 18868, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  L: () => h
+  L: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk310752 = require("./310752.jsx"),
   Chunk897842 = require("./897842.jsx"),
   Chunk731994 = require("./731994.js"),
-  Chunk386325 = require("./386325.js");
+  Chunk840049 = require("./840049.js");
 let m = () => {
     (0, Chunk481060.ZDy)(async () => {
       let {
@@ -42,19 +42,19 @@ let m = () => {
       modalKey: Chunk897842.A
     })
   },
-  x = e => {
+  h = e => {
     e.stopPropagation(), e.preventDefault()
   },
-  h = e => {
+  p = e => {
     let {
       className: t,
       onDrop: n
-    } = e, [l, h] = r.useState(false), p = r.useRef(null), f = r.useCallback(e => {
-      x(e), h(true), (0, s.Mr3)(c.A)
-    }, []), v = r.useCallback(e => {
-      x(e), h(false)
-    }, []), b = r.useCallback(async e => {
-      x(e), h(false);
+    } = e, [l, p] = r.useState(false), x = r.useRef(null), b = r.useCallback(e => {
+      h(e), p(true), (0, s.Mr3)(c.A)
+    }, []), f = r.useCallback(e => {
+      h(e), p(false)
+    }, []), g = r.useCallback(async e => {
+      h(e), p(false);
       let t = e.dataTransfer;
       if (null == t) return void m();
       let a = await Promise.all(Array.from(t.items).map(e => {
@@ -64,11 +64,11 @@ let m = () => {
       a.length > 0 ? n(a) : m()
     }, [n]);
     return (0, a.jsx)("div", {
-      ref: p,
+      ref: x,
       className: i()(t, u.uploadArea),
-      onDragEnter: f,
-      onDragLeave: v,
-      onDrop: b,
+      onDragEnter: b,
+      onDragLeave: f,
+      onDrop: g,
       children: (0, a.jsx)("div", {
         className: i()(u.uploadModal, {
           [u.droppable]: l

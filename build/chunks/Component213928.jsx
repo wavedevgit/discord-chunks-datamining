@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk51144 = require("./51144.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk61952 = require("./61952.js");
+  Chunk385612 = require("./385612.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -45,7 +45,7 @@ function p() {
       location: "UserProfileAccountPopoutMenuItemStatusLabel"
     }) && f;
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk61952.container,
+    className: Chunk385612.container,
     children: [require, require.length > 0 && p && (0, Chunk951288.jsx)(Chunk481060.ua7, {
       text: Chunk388032.intl.string(Chunk388032.t.L99HQk),
       children: e => (0, r.jsx)(a.Mgn, _({
