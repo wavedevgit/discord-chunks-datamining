@@ -923,7 +923,7 @@ function e8(e) {
   })
 }
 
-function e6(e) {
+function e5(e) {
   let {
     guild: t
   } = e, n = ev();
@@ -932,7 +932,7 @@ function e6(e) {
   }), eM("full_sync" === t.channels.op ? t.channels.items : t.channels.writes), null != t.channelTimestampUpdates && e3(t.channelTimestampUpdates), eG(t)
 }
 
-function e5(e) {
+function e6(e) {
   let {
     channelId: t,
     isAfter: n,
@@ -1716,8 +1716,8 @@ let t0 = new t$(Chunk570140.Z, {
     LOGOUT: e0,
     OVERLAY_INITIALIZE: e8,
     CACHE_LOADED: tZ,
-    GUILD_CREATE: e6,
-    LOAD_MESSAGES_SUCCESS: e5,
+    GUILD_CREATE: e5,
+    LOAD_MESSAGES_SUCCESS: e6,
     MESSAGE_CREATE: e9,
     MESSAGE_DELETE: e7,
     MESSAGE_DELETE_BULK: e7,
