@@ -33,7 +33,7 @@ function d(e) {
   }, [p]), [, v, x] = (0, l.c)({
     type: "WIDGET",
     item: {
-      widgetId: f.id,
+      widgetType: f.type,
       index: g,
       widget: f,
       originalIndex: null != g ? g : 0
@@ -57,7 +57,7 @@ function d(e) {
     collect: e => {
       let t = null,
         r = e.getItem();
-      return null != r && e.isOver() && e.canDrop() && r.widgetId !== f.id && (t = r.originalIndex), {
+      return null != r && e.isOver() && e.canDrop() && r.widgetType !== f.type && (t = r.originalIndex), {
         handlerId: e.getHandlerId(),
         dragSourcePosition: t
       }
@@ -86,7 +86,7 @@ function d(e) {
     isDragging: false,
     dragSourcePosition: null
   } : (v(r), w(t), {
-    isDragging: y && (null == j ? true : j.widgetId) === f.id,
+    isDragging: y && (null == j ? true : j.widgetType) === f.type,
     dragSourcePosition: h
   })
 }

@@ -3,7 +3,7 @@
 require.d(exports, {
   $R: () => K,
   A0: () => et,
-  GU: () => q,
+  GU: () => Y,
   H8: () => J,
   HI: () => X,
   HW: () => G,
@@ -18,7 +18,7 @@ require.d(exports, {
   iw: () => en,
   jC: () => V,
   jQ: () => z,
-  lT: () => Y,
+  lT: () => q,
   rd: () => ed,
   t4: () => ec,
   uF: () => em,
@@ -146,7 +146,7 @@ function K(e) {
   }
 }
 
-function Y(e, t, n, a, r) {
+function q(e, t, n, a, r) {
   return {
     name: t,
     colors: F(M({}, e.colors), {
@@ -159,7 +159,7 @@ function Y(e, t, n, a, r) {
   }
 }
 
-function q(e) {
+function Y(e) {
   return F(M({}, e), {
     highlight: !e.highlight
   })

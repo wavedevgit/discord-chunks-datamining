@@ -119,7 +119,7 @@ function eu(e) {
       id: "quick_actions",
       name: "Quick Actions",
       group: el.v0.DEVELOPMENT,
-      render: () => (0, a.jsx)(q.Z, {})
+      render: () => (0, a.jsx)(Y.Z, {})
     }), e.push({
       id: "end_to_end_encryption",
       name: "E2EE",
@@ -174,7 +174,7 @@ function eu(e) {
       id: "appearance_randomizer",
       name: "Appearance Randomizer",
       group: el.v0.UI,
-      render: () => (0, a.jsx)(Y.Z, {})
+      render: () => (0, a.jsx)(q.Z, {})
     }), e.push({
       id: "overlays",
       name: "Dev Overlays",

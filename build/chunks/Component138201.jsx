@@ -162,7 +162,7 @@ function x(e) {
     titleVariant: r = "text-md/semibold",
     titleColor: o = "header-primary",
     description: c,
-    descriptionVariant: d = "text-xs/medium",
+    descriptionVariant: d = "text-md/medium",
     descriptionColor: u = "text-secondary",
     buttonDisabled: m,
     iconClassName: x,
@@ -194,8 +194,9 @@ function x(e) {
           color: null != h ? h : "currentColor",
           className: l()(s.icon, x)
         })
-      }), (0, a.jsxs)("div", {
-        className: s.textContainer,
+      }), (0, a.jsxs)(i.Kqy, {
+        direction: "vertical",
+        gap: 4,
         children: [(0, a.jsx)(i.Text, {
           variant: r,
           color: o,

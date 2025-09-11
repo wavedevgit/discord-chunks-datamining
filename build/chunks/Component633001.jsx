@@ -78,7 +78,7 @@ function K(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let Y = {
+let q = {
     [Chunk981631.Odu.CLICK_ZONE_DEBUG]: e => K(W({
       type: G.Odu.CLICK_ZONE_DEBUG,
       id: (0, c.Z)(),
@@ -111,7 +111,7 @@ let Y = {
       pinned: true
     })
   },
-  q = {};
+  Y = {};
 
 function X(e) {
   let {
@@ -305,7 +305,7 @@ function Q(e) {
   return [n, () => {
     if (null != n)(0, x.E9)(n.id);
     else {
-      let t = Y[e];
+      let t = q[e];
       if (null == t) return;
       let n = t(z.$S);
       (0, x.A4)(n)
@@ -339,7 +339,7 @@ let et = Chunk647438.memo(function(e) {
     var e, n;
     if (null == t) return "Unknown";
     let a = null == (e = _.default.getTrackedGameByPid(t)) ? true : e.gameName;
-    return null != a ? (q[t] = a, a) : null != (n = q[t]) ? n : "Unknown"
+    return null != a ? (Y[t] = a, a) : null != (n = Y[t]) ? n : "Unknown"
   }, [t]);
   return (0, a.jsx)(m.Text, K(W({}, n), {
     variant: "text-md/semibold",

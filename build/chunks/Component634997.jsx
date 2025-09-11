@@ -1,7 +1,7 @@
 /** Chunk was on 80144 **/
 /** chunk id: 634997, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => R
+  default: () => E
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,29 +22,29 @@ var Chunk951288 = require("./951288.js"),
   Chunk800530 = require("./800530.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk678189 = require("./678189.js");
-let R = function(e) {
+let E = function(e) {
   let {
     transitionState: n,
     entryPoint: t,
-    onClose: R
-  } = e, [y, A] = o.useState(l.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), C = o.useRef(y), [O, g] = (0, s.US)([y], true, true), {
+    onClose: E
+  } = e, [R, g] = i.useState(l.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), A = i.useRef(R), [O, C] = (0, s.US)([R], true, true), {
     loading: T,
     initiateAgeVerification: I
-  } = (0, _.WD)(R), N = o.useMemo(() => (0, i.Z)(), []), k = o.useRef(false);
-  return o.useEffect(() => {
-    C.current = O
-  }, [O]), o.useLayoutEffect(() => () => {
+  } = (0, _.WD)(E), N = i.useMemo(() => (0, o.Z)(), []), k = i.useRef(false);
+  return i.useEffect(() => {
+    A.current = O
+  }, [O]), i.useLayoutEffect(() => () => {
     if (k.current) return;
-    let e = C.current;
+    let e = A.current;
     null != e && (k.current = true, x.Z.maybeOpenAgeVerificationUserFeedback({
       location: "age_verification_get_started_modal",
       visibleContent: e
     }))
-  }, []), o.useEffect(() => {
+  }, []), i.useEffect(() => {
     (0, f.lA)(N, f.d_.PRIMARY, t)
   }, [N, t]), (0, r.jsxs)(a.Modal, {
     transitionState: n,
-    onClose: R,
+    onClose: E,
     title: v.intl.string(v.t.JHNunp),
     subtitle: v.intl.string(v.t["+BLIGh"]),
     actions: [{
@@ -53,14 +53,14 @@ let R = function(e) {
       icon: c.Gr1,
       iconPosition: "end",
       onClick: async () => {
-        (0, f.x3)(N, f.d_.PRIMARY, f.sU.GET_STARTED), A(l.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE), await I(f.cU.GET_STARTED_MODAL)
+        (0, f.x3)(N, f.d_.PRIMARY, f.sU.GET_STARTED), g(l.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE), await I(f.cU.GET_STARTED_MODAL)
       }
     }],
     actionBarInput: (0, r.jsxs)(d.Z, {
       onClick: () => {
         m.Z.openUrl(b.Z.getArticleURL(j.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, f.x3)(N, f.d_.PRIMARY, f.sU.LEARN_MORE)
       },
-      className: E.learnMoreButton,
+      className: y.learnMoreButton,
       children: [v.intl.string(v.t["aA6q//"]), (0, r.jsx)(c.Gr1, {
         size: "xs",
         color: "currentColor"
@@ -69,18 +69,18 @@ let R = function(e) {
     children: [(0, h.uH)(N).map((e, n) => {
       let {
         title: t,
-        description: o
+        description: i
       } = e;
       return (0, r.jsx)(u.JZ, {
         title: t,
-        description: o,
+        description: i,
         listType: "numbered",
         index: n
       }, n)
     }), (0, r.jsx)(c.Text, {
       variant: "text-xs/medium",
       color: "text-muted",
-      className: E.requestContainer,
+      className: y.requestContainer,
       children: v.intl.format(v.t.pJAxgY, {
         handleOnRequestHook: () => {
           m.Z.openUrl(p.sQ.APPEALS_LINK), (0, f.x3)(N, f.d_.PRIMARY, f.sU.MANUAL_REVIEW_REQUEST)
