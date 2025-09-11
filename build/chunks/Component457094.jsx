@@ -167,13 +167,15 @@ let tr = (0, Chunk951752.l)(e => {
     })), (0, r.jsx)(m.Z, {
       deepLinkType: e9.jE.USER_SETTINGS,
       path: t.pathname,
-      paramsBuilder: function(e, t) {
-        let [, , n, r] = e.split("/");
+      search: t.search,
+      paramsBuilder: function(e, t, n) {
+        let [, , r, i] = e.split("/");
         return {
           path: e,
-          section: n,
-          subsection: r,
-          fingerprint: t
+          section: r,
+          subsection: i,
+          fingerprint: t,
+          search: n
         }
       },
       children: (0, r.jsx)(a.l_, {
