@@ -54,14 +54,14 @@ function P(e) {
   a.useEffect(() => {
     (0, u.po)(t)
   }, [t]);
-  let n = (0, c.Wu)([m.Z], () => {
+  let n = (0, l.Wu)([m.Z], () => {
     let e = m.Z.getStateForGuild(t);
     return (null == e ? true : e.catalog) != null ? Object.values(e.catalog) : []
   });
   return 0 === n.length ? (0, s.jsx)("div", {
     className: y.container,
-    children: (0, s.jsx)(l.$jN, {
-      type: l.RAz.SPINNING_CIRCLE,
+    children: (0, s.jsx)(c.$jN, {
+      type: c.RAz.SPINNING_CIRCLE,
       className: y.spinner
     })
   }) : (0, s.jsxs)("div", {

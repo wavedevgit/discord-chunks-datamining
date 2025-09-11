@@ -22,26 +22,26 @@ function d(e) {
   } = e;
   return (0, r.jsxs)(a.P3F, {
     "aria-disabled": u,
-    className: s()(l.game, {
-      [l.disabled]: u
+    className: s()(c.game, {
+      [c.disabled]: u
     }, t),
     onClick: u ? true : () => i(n),
     children: [(0, r.jsx)("img", {
-      className: s()(l.image, d),
+      className: s()(c.image, d),
       alt: ""
     }), (0, r.jsxs)("div", {
-      className: l.textContainer,
+      className: c.textContainer,
       children: [(0, r.jsx)(a.X6q, {
         variant: "heading-sm/semibold",
         children: n.name
       }), (0, r.jsxs)("div", {
-        className: l.boostContainer,
+        className: c.boostContainer,
         children: [(0, r.jsx)(a.$Eu, {
           size: "sm",
           color: a.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
         }), (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
-          children: c.intl.formatToPlainString(n.plans.length > 1 ? o.default.Vf4vwM : o.default.ZzpD5u, {
+          children: l.intl.formatToPlainString(n.plans.length > 1 ? o.default.Vf4vwM : o.default.ZzpD5u, {
             boostCount: n.baseCost
           })
         })]

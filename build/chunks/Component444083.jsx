@@ -30,9 +30,9 @@ function b(e) {
   let {
     guildId: t,
     instance: n
-  } = e, l = i.useRef(null);
+  } = e, c = i.useRef(null);
   return (0, r.jsx)(s.yRy, {
-    targetElementRef: l,
+    targetElementRef: c,
     align: "top",
     position: "right",
     animationPosition: "bottom",
@@ -59,7 +59,7 @@ function b(e) {
             icon: s.ewm,
             label: u.intl.string(d.default.NUTl4u),
             action: () => {
-              (0, c.Z)({
+              (0, l.Z)({
                 guildId: t,
                 stepConfig: p,
                 initialPortkeyInstance: n,
@@ -93,7 +93,7 @@ function b(e) {
         "aria-label": u.intl.string(u.t.UKOtz8),
         className: m.clickable
       }, e), n = n = {
-        innerRef: l,
+        innerRef: c,
         children: (0, r.jsx)(s.xhG, {
           color: "currentColor",
           size: "sm"

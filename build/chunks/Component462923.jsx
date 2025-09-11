@@ -30,8 +30,8 @@ function y(e) {
       }
     })
   }, [n, y]), P = i.useCallback(() => {
-    (0, c.JG)(n.serverIP), (0, a.showToast)((0, a.createToast)(f.intl.string(f.t["+5kSoa"]), a.ToastType.SUCCESS))
-  }, [n.serverIP]), x = (0, d.Z)(t);
+    (0, l.JG)(n.serverIP), (0, a.showToast)((0, a.createToast)(f.intl.string(f.t["+5kSoa"]), a.ToastType.SUCCESS))
+  }, [n.serverIP]), h = (0, d.Z)(t);
   return (0, r.jsxs)("div", {
     className: v.card,
     children: [(0, r.jsxs)("div", {
@@ -111,7 +111,7 @@ function y(e) {
             children: f.intl.string(g.default.v8iSgI)
           }), (0, r.jsx)(a.Text, {
             variant: "text-sm/medium",
-            children: (0, l.Y4)(new Date(n.lastUpdated))
+            children: (0, c.Y4)(new Date(n.lastUpdated))
           })]
         })]
       })
@@ -122,7 +122,7 @@ function y(e) {
         text: f.intl.string(g.default["0TMXHh"]),
         onClick: j,
         variant: "primary"
-      }), x && (0, r.jsx)(a.zxk, {
+      }), h && (0, r.jsx)(a.zxk, {
         fullWidth: true,
         text: f.intl.string(g.default["jO3u+/"]),
         onClick: () => {
