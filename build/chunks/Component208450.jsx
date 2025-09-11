@@ -321,19 +321,16 @@ class W extends Chunk647438.PureComponent {
       })
     }), F(this, "onBlur", e => {
       this.handleBlur()
-    }), F(this, "handleOption", e => null != e && (false === e.state.selectedIndex && e.shouldShowSearchInSelectedChannel() ? e.handleSearchInChannel({
-      searchAutocompleteSelectAction: U.ZW.KEY_PRESS
-    }) : e.selectOption({
-      searchAutocompleteSelectAction: U.ZW.KEY_PRESS
-    }))), F(this, "handleReturn", e => {
+    }), F(this, "handleReturn", e => {
+      var t;
       let {
-        shiftKey: t
+        shiftKey: n
       } = e;
       e.preventDefault();
-      let {
-        current: n
-      } = this._searchPopoutRef;
-      return this.handleOption(n) || ((0, S.X$)() && t ? this.search({
+      let r = this.getPopoutRef();
+      return null != (t = null != r && r.selectOption({
+        searchAutocompleteSelectAction: U.ZW.KEY_PRESS
+      })) && t || ((0, S.X$)() && n ? this.search({
         searchEverywhere: true
       }) : this.search()), "handled"
     }), F(this, "handleBeforeInput", e => {
@@ -385,6 +382,13 @@ class W extends Chunk647438.PureComponent {
         searchContext: t
       } = this.props;
       I.Z.setSearchState(t, e)
+    }), F(this, "getPopoutRef", () => {
+      let {
+        current: e
+      } = this._searchFiltersRedesignPopoutRef, {
+        current: t
+      } = this._searchPopoutRef;
+      return this.props.isSearchFiltersRedesignEnabled ? e : t
     }), F(this, "handleKeyBind", e => {
       let {
         key: t,
@@ -407,16 +411,12 @@ class W extends Chunk647438.PureComponent {
       }
       if ("ArrowUp" === t) {
         e.preventDefault();
-        let {
-          current: t
-        } = this._searchPopoutRef;
+        let t = this.getPopoutRef();
         return null != t && t.focusPreviousOption(), true
       }
       if ("ArrowDown" === t) {
         e.preventDefault();
-        let {
-          current: t
-        } = this._searchPopoutRef;
+        let t = this.getPopoutRef();
         return null != t && t.focusNextOption(), true
       }
       if ("Tab" === t) {
