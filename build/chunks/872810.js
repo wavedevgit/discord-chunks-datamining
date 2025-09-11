@@ -2,19 +2,18 @@
 /** chunk id: 872810, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  L6: () => V,
-  Rc: () => Z,
+  L6: () => F,
+  Rc: () => B,
   WH: () => P,
   aP: () => k,
-  dV: () => F,
+  dV: () => Z,
   g: () => M,
   iV: () => j,
   n9: () => U,
   pR: () => L,
   rn: () => x,
   tK: () => w,
-  xc: () => G,
-  zf: () => B
+  xc: () => G
 });
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -201,30 +200,14 @@ async function G(e) {
     })
   } catch (e) {}
 }
-async function B(e, t, n) {
-  try {
-    await I.Z.post({
-      url: S.ANM.STREAM_NOTIFY_V2(e),
-      body: {
-        application_id: t,
-        game_title: n
-      },
-      oldFormErrors: true,
-      trackedActionData: {
-        event: a.NetworkActionNames.STREAM_NOTIFY
-      },
-      rejectWithError: true
-    })
-  } catch (e) {}
-}
 
-function Z(e) {
+function B(e) {
   (0, v.Ye)(e.preset, e.resolution, e.frameRate), s.Z.dispatch(N({
     type: "STREAM_UPDATE_SETTINGS"
   }, e))
 }
 
-function F(e, t) {
+function Z(e, t) {
   o.tn.patch({
     url: S.ANM.STREAM(e),
     body: {
@@ -235,7 +218,7 @@ function F(e, t) {
   })
 }
 
-function V() {
+function F() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
     t = Chunk199902.Z.getCurrentUserActiveStream();
   null != exports && M((0, Chunk569545.V9)(exports), module)
