@@ -2,9 +2,9 @@
 /** chunk id: 464891, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  CF: () => ee,
-  ZP: () => eo,
-  nD: () => en
+  CF: () => $,
+  ZP: () => ea,
+  nD: () => et
 }), require("./539854.js"), require("./388685.js"), require("./997841.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -88,10 +88,9 @@ function z(e, t) {
   }), e
 }
 let q = 32,
-  X = 80,
-  Q = 80;
+  X = 80;
 
-function J(e) {
+function Q(e) {
   let {
     avatarSrc: t,
     avatarDecorationSrc: n,
@@ -131,7 +130,7 @@ function J(e) {
     })]
   })
 }
-let $ = Chunk647438.memo(function(e) {
+let J = Chunk647438.memo(function(e) {
   let {
     message: t,
     author: n,
@@ -154,7 +153,7 @@ let $ = Chunk647438.memo(function(e) {
     user: null == t ? true : t.author,
     compact: s,
     isRepliedMessage: false
-  }), [t, a, s]), S = i.useRef(null), C = (0, l.e7)([A.Z], () => A.Z.getGuild(o)), R = i.useMemo(() => ei(s, E, u, C), [s, E, u, C]), P = i.useMemo(() => null == u ? null : 1 === R && null != C ? (0, r.jsx)(c.yRy, {
+  }), [t, a, s]), S = i.useRef(null), C = (0, l.e7)([A.Z], () => A.Z.getGuild(o)), R = i.useMemo(() => er(s, E, u, C), [s, E, u, C]), P = i.useMemo(() => null == u ? null : 1 === R && null != C ? (0, r.jsx)(c.yRy, {
     targetElementRef: S,
     animation: c.yRy.Animation.TRANSLATE,
     align: "center",
@@ -184,7 +183,7 @@ let $ = Chunk647438.memo(function(e) {
       n = D.ZP.isPremium(t.author),
       i = D.ZP.isPremium(w),
       o = null == a ? true : a.isPrivate();
-    return (0, x.R)(null != u, "Message Username") && n && !s && !o && e.push((0, r.jsx)(ea, {
+    return (0, x.R)(null != u, "Message Username") && n && !s && !o && e.push((0, r.jsx)(ei, {
       currentUserIsPremium: i,
       author: t.author
     }, "nitro-author")), null != P && e.push(P), null != C && e.push((0, r.jsx)(m.Z, {
@@ -227,7 +226,7 @@ let $ = Chunk647438.memo(function(e) {
   })
 });
 
-function ee(e, t, n) {
+function $(e, t, n) {
   let {
     message: i,
     channel: a,
@@ -263,7 +262,7 @@ function ee(e, t, n) {
   })
 }
 
-function et(e) {
+function ee(e) {
   var t, n;
   let {
     props: a,
@@ -298,18 +297,18 @@ function et(e) {
     showPending: true
   }), U = p.isInteractionPlaceholder(), G = i.useMemo(() => {
     var e, t;
-    return U && null == p.author.avatar && (null == (e = p.application) ? true : e.icon) != null ? null != (t = R.ZP.getApplicationIconURL({
+    return U && null == p.author.avatar && null == h.guildMemberAvatar && (null == (e = p.application) ? true : e.icon) != null ? null != (t = R.ZP.getApplicationIconURL({
       id: p.application.id,
       icon: p.application.icon,
       size: L,
       fallbackAvatar: false
-    })) ? t : j : null != p.webhookId ? R.ZP.getUserAvatarURL({
+    })) ? t : j : null != p.webhookId && null == h.guildMemberAvatar ? R.ZP.getUserAvatarURL({
       avatar: p.author.avatar,
       id: p.author.id,
       discriminator: p.author.discriminator,
       bot: true
     }, false, L) : j
-  }, [U, p.author.avatar, p.author.id, p.author.discriminator, null == (t = p.application) ? true : t.icon, null == (n = p.application) ? true : n.id, p.webhookId, j, L]);
+  }, [U, p.author.avatar, p.author.id, p.author.discriminator, null == (t = p.application) ? true : t.icon, null == (n = p.application) ? true : n.id, p.webhookId, j, L, h.guildMemberAvatar]);
   if (i.useEffect(() => {
       if (null != g) return P.S.subscribeKeyed(Z.LPv.ANIMATE_CHAT_AVATAR, "".concat(g, ":").concat(p.author.id), N), () => void P.S.unsubscribeKeyed(Z.LPv.ANIMATE_CHAT_AVATAR, "".concat(g, ":").concat(p.author.id), N)
     }, [p.author.id, g]), !m || D) return null != c && null != I ? (0, r.jsx)(d.Gt, {
@@ -324,15 +323,10 @@ function et(e) {
       shouldPreload: x,
       renderPopout: c,
       position: s.tq ? "window_center" : "right",
-      avatarUrl: null != h.guildMemberAvatar && null != o ? R.ZP.getGuildMemberAvatarURLSimple({
-        guildId: o,
-        userId: p.author.id,
-        avatar: h.guildMemberAvatar,
-        size: Q
-      }) : p.author.getAvatarURL(true, Q, false),
+      avatarUrl: G,
       onRequestClose: O,
       clickTrap: I,
-      children: e => J(z(W({}, M), {
+      children: e => Q(z(W({}, M), {
         avatarSrc: G,
         avatarDecorationSrc: k,
         compact: m,
@@ -347,7 +341,7 @@ function et(e) {
     })
   }) : (0, r.jsx)(d.Gt, {
     value: w,
-    children: J(z(W({}, M), {
+    children: Q(z(W({}, M), {
       avatarSrc: G,
       avatarDecorationSrc: k,
       compact: m,
@@ -361,7 +355,7 @@ function et(e) {
   })
 }
 
-function en(e) {
+function et(e) {
   let {
     message: t,
     avatar: n,
@@ -406,14 +400,14 @@ function en(e) {
     })]
   })
 }
-let er = e => {
+let en = e => {
   e || (0, E.z)()
 };
 
-function ei(e, t, n, r) {
+function er(e, t, n, r) {
   return (!e || t) && null != n && null != r ? 1 : (!e || t) && null != n ? 2 : 0
 }
-let ea = Chunk647438.memo(function(e) {
+let ei = Chunk647438.memo(function(e) {
     let {
       currentUserIsPremium: t,
       author: n
@@ -430,7 +424,7 @@ let ea = Chunk647438.memo(function(e) {
       onTooltipShow: () => (0, I.Z)(n.id),
       children: e => (0, r.jsx)(c.P3F, {
         className: V.nitroAuthorBadgeContainer,
-        onClick: () => er(t),
+        onClick: () => en(t),
         "aria-label": F.intl.formatToPlainString(F.t["8zbGNT"], {
           date: i
         }),
@@ -442,7 +436,7 @@ let ea = Chunk647438.memo(function(e) {
       })
     })
   }),
-  eo = Chunk647438.memo(function(e) {
+  ea = Chunk647438.memo(function(e) {
     let {
       message: t,
       repliedMessage: n,
@@ -459,7 +453,7 @@ let ea = Chunk647438.memo(function(e) {
     } = e, v = i.useMemo(() => null != s ? e => s(e, t) : true, [s, t]), [, I] = (0, h.ZP)(t.author.id, e.guildId), T = (0, l.e7)([C.Z, A.Z], () => {
       let n = A.Z.getGuild(e.guildId);
       return null != t.author && null != n && C.Z.canManageUser(Z.Plq.MODERATE_MEMBERS, t.author, n)
-    }, [t.author, e.guildId]), N = I && T, R = et({
+    }, [t.author, e.guildId]), N = I && T, R = ee({
       props: e,
       guildId: e.guildId,
       handleRenderPopout: v,
@@ -473,13 +467,13 @@ let ea = Chunk647438.memo(function(e) {
       user: null == t ? true : t.author,
       compact: a,
       isRepliedMessage: false
-    }), [t, E, a]), x = (0, l.e7)([A.Z], () => ei(a, P, d, A.Z.getGuild(e.guildId)), [a, P, d, e.guildId]), L = i.useMemo(() => {
+    }), [t, E, a]), x = (0, l.e7)([A.Z], () => er(a, P, d, A.Z.getGuild(e.guildId)), [a, P, d, e.guildId]), L = i.useMemo(() => {
       let e = [];
       return (0, w.yE)(t.flags, Z.iLy.SUPPRESS_NOTIFICATIONS) && e.push((0, r.jsx)(y.Z, {}, "suppress-notifications")), t.hasPotions() && e.push((0, r.jsx)(g.Z, {
         message: t
       })), e
     }, [t]), j = (0, k.XX)(t, f), M = (0, k.Dv)(t), U = _ ? "".concat(j) : "".concat(j, " ").concat(M), B = (null == n ? true : n.state) === b.Y.LOADED ? (0, k.Gq)(t) : true, H = true !== _;
-    return (0, r.jsx)(en, {
+    return (0, r.jsx)(et, {
       message: t,
       avatar: R,
       username: (0, r.jsxs)(r.Fragment, {
@@ -495,7 +489,7 @@ let ea = Chunk647438.memo(function(e) {
               children: F.intl.string(F.t.AmHag4)
             })]
           })
-        }), (0, r.jsx)($, z(W({}, e), {
+        }), (0, r.jsx)(J, z(W({}, e), {
           message: t,
           channel: E,
           compact: a,
