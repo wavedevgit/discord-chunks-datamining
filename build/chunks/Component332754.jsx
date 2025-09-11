@@ -62,9 +62,7 @@ let E = {
     }({}, e)), {
       modalKey: _.f1,
       onCloseRequest: O.Vq
-    }) : t === m.c2C.REQUIRE_SAFETY_FLOWS ? (0, s.bu)({
-      location: "verification-safety-flows"
-    }) && (0, a.q4)(e => {
+    }) : t === m.c2C.REQUIRE_SAFETY_FLOWS ? (0, a.q4)(e => {
       let {
         closeLayer: t
       } = e;
