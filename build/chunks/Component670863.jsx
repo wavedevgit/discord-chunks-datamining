@@ -120,11 +120,15 @@ function P(e) {
     location: G
   }), {
     id: F
-  } = (0, E.p6)(t), V = null != _ ? _ : F, H = (0, s.e7)([h.Z], () => D(h.Z)), Y = (0, r.jsx)(c.R94, {
+  } = (0, E.p6)(t), V = null != _ ? _ : F, H = (0, s.e7)([h.Z], () => D(h.Z)), {
+    showDeviceSelectionImprovements: Y
+  } = (0, g.V)({
+    location: "".concat(G, "/SingleSelectDevices")
+  }), W = (0, r.jsx)(c.R94, {
     type: c.R94.Types.DESCRIPTION,
     className: I.marginTop8,
     children: x()
-  }), W = i.useCallback(e => {
+  }), K = i.useCallback(e => {
     if (e === N) U(true), m.default.track(b.rMx.DEVICES_LIST_SHOW_MORE_CLICKED, {
       device_type: t,
       location: G,
@@ -141,7 +145,7 @@ function P(e) {
     }
   }, [t, G, B.length, Z.length, j, y, P]);
 
-  function K(e) {
+  function z(e) {
     let t, i, {
         label: a,
         value: s
@@ -150,7 +154,7 @@ function P(e) {
       d = a,
       f = (0, E.rX)(a);
     null != f && ((0, g.M)({
-      location: "".concat(G, "/SingleSelectDevices")
+      location: "".concat(G, "/SingleSelectDevices.defaultRenderOptionLabel")
     }), d = f.prefix, t = f.subName);
     let _ = p.Z.getCertifiedDeviceName(s, d);
     if (p.Z.isCertified(s)) {
@@ -192,7 +196,7 @@ function P(e) {
     })
   }
 
-  function z() {
+  function q() {
     let e = e => {
         let {
           id: t,
@@ -219,16 +223,16 @@ function P(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.q4e, S({
       value: V,
-      onChange: W,
-      options: z(),
+      onChange: K,
+      options: q(),
       isDisabled: !H,
       popoutPosition: "bottom",
-      renderOptionLabel: e => K(e, true),
+      renderOptionLabel: e => z(e, Y),
       renderOptionValue: e => {
         let [t] = e;
-        return K(t)
+        return z(t)
       },
       optionClassName: v.singleSelectOption
-    }, C)), !H && Y]
+    }, C)), !H && W]
   })
 }
