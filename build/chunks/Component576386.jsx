@@ -31,7 +31,7 @@ let g = e => {
       "aria-label": null != (t = r.label) ? t : x.intl.string(x.t.x5CoXV),
       className: h.nameplateItem,
       onClick: v,
-      children: [(0, l.jsx)(u.Z, {
+      children: [(0, l.jsx)(d.Z, {
         nameplate: r,
         user: n,
         showPlaceholderUser: true,
@@ -40,7 +40,7 @@ let g = e => {
         className: s()(h.nameplateItemOverlay, {
           [h.selected]: g
         })
-      }), (0, l.jsx)(d.Z, {
+      }), (0, l.jsx)(u.Z, {
         isPurchaseSection: c === m.$0.PURCHASE,
         isPremiumSection: c === m.$0.PREMIUM_PURCHASE,
         canUsePremiumCollectibles: p,
@@ -55,10 +55,10 @@ let g = e => {
       guildId: i,
       onSelect: r,
       onOpenShop: o
-    } = e, d = p.ZP.canUseCollectibles(t), u = (0, m.ZP)();
+    } = e, u = p.ZP.canUseCollectibles(t), d = (0, m.ZP)();
     return (0, l.jsx)(a.u2D, {
       className: h.inventory,
-      children: u.map(e => (0, l.jsxs)("div", {
+      children: d.map(e => (0, l.jsxs)("div", {
         children: [(0, l.jsx)(a.vwX, {
           children: e.header
         }), e.section === m.$0.PURCHASE && (0, l.jsxs)("div", {
@@ -92,7 +92,7 @@ let g = e => {
             currentUser: t,
             nameplate: i,
             section: e.section,
-            canUsePremiumCollectibles: d,
+            canUsePremiumCollectibles: u,
             isSelected: (null == n ? true : n.skuId) === i.skuId,
             onClick: () => r(i)
           }, i.skuId))

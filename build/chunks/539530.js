@@ -1,7 +1,7 @@
 /** Chunk was on 8895 **/
 /** chunk id: 539530, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $0: () => d,
+  $0: () => u,
   ZP: () => m
 }), require("./388685.js"), require("./539854.js");
 var l, Chunk647438 = require("./647438.js"),
@@ -10,8 +10,8 @@ var l, Chunk647438 = require("./647438.js"),
   Chunk1870 = require("./1870.js"),
   Chunk884697 = require("./884697.js"),
   Chunk388032 = require("./388032.jsx"),
-  d = ((l = {}).PURCHASE = "purchase", l.PREMIUM_PURCHASE = "premium_purchase", l.PREVIEW = "preview", l);
-let u = {
+  u = ((l = {}).PURCHASE = "purchase", l.PREMIUM_PURCHASE = "premium_purchase", l.PREVIEW = "preview", l);
+let d = {
     id: "None"
   },
   p = {
@@ -23,7 +23,7 @@ let u = {
     return (0, Chunk647438.useMemo)(() => {
       let l = (0, Chunk884697.Y)(module, exports).reduce((t, l) => {
         let i = e.get(l.skuId),
-          r = (0, o.G1)(n.get(l.skuId));
+          r = (0, o.G1)(null != i ? i : n.get(l.skuId));
         return r && 1 ? t.premium_purchase.push(l) : null != i ? t.purchase.push(l) : r || t.preview.push(l), t
       }, {
         purchase: [],
@@ -32,7 +32,7 @@ let u = {
       });
       return [{
         section: "purchase",
-        items: [u, p, ...l.purchase],
+        items: [d, p, ...l.purchase],
         height: 12,
         header: Chunk388032.intl.string(Chunk388032.t["WfGV5+"])
       }, {

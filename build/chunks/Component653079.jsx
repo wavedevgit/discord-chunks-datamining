@@ -34,22 +34,22 @@ let v = e => {
       className: g.previewBox,
       children: (0, l.jsxs)("div", {
         className: g.previewContents,
-        children: [(0, l.jsx)(d.d, {
+        children: [(0, l.jsx)(u.d, {
           width: 124,
           opacity: .9
-        }), (0, l.jsx)(d.d, {
+        }), (0, l.jsx)(u.d, {
           width: 124,
           opacity: .9
-        }), (0, l.jsx)(u.Z, {
+        }), (0, l.jsx)(d.Z, {
           user: t,
           guildId: n,
           nameplate: i,
           pendingGlobalName: v,
           isHighlighted: true
-        }), (0, l.jsx)(d.d, {
+        }), (0, l.jsx)(u.d, {
           width: 124,
           opacity: .9
-        }), (0, l.jsx)(d.d, {
+        }), (0, l.jsx)(u.d, {
           width: 124,
           opacity: .9
         })]

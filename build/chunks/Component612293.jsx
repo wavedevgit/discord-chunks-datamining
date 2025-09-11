@@ -43,7 +43,7 @@ function b(e) {
     pendingNameplate: T
   } = (0, v.Zx)(c, b), [O, U] = (0, i.useState)(() => {
     var e;
-    return null != A ? A : true !== T ? T : null == k ? null : null != (e = (0, u.Y)(C, m).find(e => {
+    return null != A ? A : true !== T ? T : null == k ? null : null != (e = (0, d.Y)(C, m).find(e => {
       let {
         skuId: t
       } = e;
@@ -53,7 +53,7 @@ function b(e) {
     product: S,
     purchase: L
   } = (0, p.Z)(null == O ? true : O.skuId), M = y.ZP.canUseCollectibles(c), B = true === T ? (null == O ? true : O.skuId) === (null == k ? true : k.skuId) : (null == O ? true : O.skuId) === (null == T ? true : T.skuId), R = (0, i.useCallback)(e => {
-    f(), (0, d.mK)({
+    f(), (0, u.mK)({
       analyticsLocations: j,
       analyticsSource: o.Z.EDIT_NAMEPLATE_MODAL,
       initialProductSkuId: e
@@ -90,14 +90,14 @@ function b(e) {
     }), (0, l.jsxs)(s.mzw, {
       "data-migration-pending": true,
       className: I.modalFooter,
-      children: [null != L && (!(0, u.qS)(L) || M) || null === O ? (0, l.jsx)(s.zxk, {
+      children: [null != L && (!(0, d.qS)(L) || M) || null === O ? (0, l.jsx)(s.zxk, {
         variant: "primary",
         text: Z.intl.string(Z.t.Jh8fJy),
         onClick: () => {
           null != b ? (0, x.RH)(O) : (0, a.Rx)(O), f()
         },
         disabled: B
-      }) : null == L && (M || !(0, u.G1)(S)) ? (0, l.jsx)(s.zxk, {
+      }) : null == L && (M || !(0, d.G1)(S)) ? (0, l.jsx)(s.zxk, {
         variant: "primary",
         onClick: () => R(null == S ? true : S.skuId),
         text: Z.intl.string(Z.t.fYfGgI)
@@ -107,7 +107,7 @@ function b(e) {
         textOptions: {
           textOverride: y.ZP.isPremium(c) ? Z.intl.string(Z.t.KXLX7u) : M ? Z.intl.string(Z.t.mr4K7O) : Z.intl.string(Z.t.pj0XBA)
         }
-      }), !M && (0, u.G1)(S) ? (0, l.jsx)(h.Z, {
+      }), !M && (0, d.G1)(S) ? (0, l.jsx)(h.Z, {
         product: S,
         onClose: f
       }) : (0, l.jsx)(s.zxk, {
@@ -124,8 +124,8 @@ function A(e) {
     transitionState: t,
     analyticsLocations: n,
     onClose: a,
-    guildId: d,
-    initialSelectedNameplate: u
+    guildId: u,
+    initialSelectedNameplate: d
   } = e, p = (0, r.e7)([C.default], () => C.default.getCurrentUser()), {
     analyticsLocations: x
   } = (0, c.ZP)(n, o.Z.EDIT_NAMEPLATE_MODAL), {
@@ -154,8 +154,8 @@ function A(e) {
         categories: h,
         purchases: g,
         analyticsLocations: x,
-        guildId: d,
-        initialSelectedNameplate: u,
+        guildId: u,
+        initialSelectedNameplate: d,
         onClose: a
       })
     })
