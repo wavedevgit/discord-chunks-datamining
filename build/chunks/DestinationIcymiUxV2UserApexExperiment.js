@@ -94,40 +94,34 @@ function s(e) {
   kind: "user",
   defaultConfig: {
     isNewHeaderAndInteractions: false,
-    shouldTruncateMessages: false,
     isNewCardDesign: false,
-    isBottomSheetInteractions: false
+    isBottomSheetInteractions: false,
+    uxVariation: "default"
   },
   variations: {
     1: {
       isNewHeaderAndInteractions: true,
-      shouldTruncateMessages: false,
       isNewCardDesign: false,
-      isBottomSheetInteractions: false
+      isBottomSheetInteractions: false,
+      uxVariation: "destination_icymi_ia"
     },
     2: {
       isNewHeaderAndInteractions: true,
-      shouldTruncateMessages: true,
-      isNewCardDesign: false,
-      isBottomSheetInteractions: false
+      isNewCardDesign: true,
+      isBottomSheetInteractions: false,
+      uxVariation: "destination_icymi_ia_card"
     },
     3: {
       isNewHeaderAndInteractions: true,
-      shouldTruncateMessages: true,
-      isNewCardDesign: true,
-      isBottomSheetInteractions: false
+      isNewCardDesign: false,
+      isBottomSheetInteractions: true,
+      uxVariation: "destination_icymi_ia_bottom_sheet"
     },
     4: {
       isNewHeaderAndInteractions: true,
-      shouldTruncateMessages: true,
-      isNewCardDesign: false,
-      isBottomSheetInteractions: true
-    },
-    5: {
-      isNewHeaderAndInteractions: true,
-      shouldTruncateMessages: true,
       isNewCardDesign: true,
-      isBottomSheetInteractions: true
+      isBottomSheetInteractions: true,
+      uxVariation: "destination_icymi_ia_bottom_sheet_card"
     }
   }
 })
