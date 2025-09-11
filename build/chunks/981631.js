@@ -179,9 +179,9 @@ require.d(exports, {
   X6Q: () => Chunk231338.X6,
   X7u: () => Chunk231338.X7,
   XAJ: () => eA,
-  XKF: () => n5,
+  XKF: () => n6,
   XmY: () => e3,
-  Xyh: () => e5,
+  Xyh: () => e6,
   YeM: () => ed,
   Ypu: () => es,
   Z5c: () => eP,
@@ -232,7 +232,7 @@ require.d(exports, {
   fMv: () => Chunk334431.fM,
   fo$: () => tc,
   frH: () => Chunk231338.fr,
-  fzT: () => t5,
+  fzT: () => t6,
   gLR: () => r$,
   gg$: () => Chunk231338.gg,
   gkr: () => rE,
@@ -279,14 +279,14 @@ require.d(exports, {
   oNc: () => Z,
   o_z: () => eO,
   p3w: () => tE,
-  p6O: () => t6,
+  p6O: () => t5,
   pAY: () => tg,
   pJs: () => x,
   pKx: () => Chunk231338.pK,
   pM4: () => M,
   pNK: () => N,
   pTL: () => rQ,
-  pjP: () => n6,
+  pjP: () => n5,
   pmI: () => nt,
   q5t: () => tM,
   q9n: () => nK,
@@ -346,7 +346,7 @@ require.d(exports, {
   yb: () => z,
   ylB: () => rH,
   yqN: () => ny,
-  ys_: () => e6,
+  ys_: () => e5,
   z7k: () => tS,
   zMe: () => Chunk231338.zM,
   zUn: () => nM,
@@ -1510,8 +1510,8 @@ let ex = 100,
   e3 = e => "||".concat(e, "||"),
   e4 = /^\|\|([\s\S]+?)\|\|/,
   e8 = /^<id:(home|browse|customize|guide|linked-roles)(?::(\d+))?>/,
-  e5 = /^\d{17,19}$/;
-var e6 = function(e) {
+  e6 = /^\d{17,19}$/;
+var e5 = function(e) {
     return e.MESSAGE = "MESSAGE", e.MESSAGE_GROUP_BLOCKED = "MESSAGE_GROUP_BLOCKED", e.MESSAGE_GROUP_IGNORED = "MESSAGE_GROUP_IGNORED", e.MESSAGE_GROUP_SPAMMER = "MESSAGE_GROUP_SPAMMER", e.THREAD_STARTER_MESSAGE = "THREAD_STARTER_MESSAGE", e.DIVIDER = "DIVIDER", e.JUMP_TARGET = "JUMP_TARGET", e.FORUM_POST_ACTION_BAR = "FORUM_POST_ACTION_BAR", e.MESSAGE_GROUP = "MESSAGE_GROUP", e.DIVIDER_TIME_STAMP = "DIVIDER_TIME_STAMP", e.DIVIDER_NEW_MESSAGES = "DIVIDER_NEW_MESSAGES", e
   }({}),
   e7 = function(e) {
@@ -1796,15 +1796,15 @@ Object.freeze({
 });
 let t4 = new Set(["facebook", "contacts"]),
   t8 = new Set(["spotify", "xbox", "playstation", "playstation-stg", "crunchyroll"]),
-  t5 = Object.freeze({
+  t6 = Object.freeze({
     DESKTOP: "".concat(location.protocol).concat(window.GLOBAL_ENV.API_ENDPOINT, "/download"),
     IOS: "https://itunes.apple.com/app/discord/id985746746",
     ANDROID: "https://play.google.com/store/apps/details?id=com.discord"
   }),
-  t6 = 0x99aab5,
-  t7 = (0, Chunk866442.Rf)(t6),
+  t5 = 0x99aab5,
+  t7 = (0, Chunk866442.Rf)(t5),
   t9 = {
-    primary_color: t6,
+    primary_color: t5,
     secondary_color: null,
     tertiary_color: null
   },
@@ -2086,8 +2086,8 @@ let n4 = Object.freeze({
     roblox: "Roblox"
   }),
   n8 = 6016,
-  n5 = 3384;
-var n6 = function(e) {
+  n6 = 3384;
+var n5 = function(e) {
     return e.USAGE_STATISTICS = "usage_statistics", e.PERSONALIZATION = "personalization", e
   }({}),
   n7 = function(e) {

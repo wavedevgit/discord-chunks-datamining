@@ -199,7 +199,7 @@ function z(e) {
       style: {
         opacity: a.to([0, 1], [1, 0])
       },
-      children: [(null == P ? true : P.progressBlur) && (0, r.jsxs)(r.Fragment, {
+      children: [(null == P ? true : P.progressBlur) ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           className: H.contentCollapsedBackground,
           style: x
@@ -213,6 +213,9 @@ function z(e) {
           className: o()(H.contentCollapsedBackground, H.blur100),
           style: x
         })]
+      }) : (0, r.jsx)("div", {
+        className: o()(H.contentCollapsedBackground, H.blur),
+        style: x
       }), (null == P ? true : P.shineWipe) && (0, r.jsx)(_.ZX5, {
         className: H.shine,
         shineSize: _.rHe.DEFAULT,
