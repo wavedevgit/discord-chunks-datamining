@@ -31,7 +31,7 @@ let p = 64,
     } = (0, c.n)({
       location: d.dr.QUESTS_BAR,
       questConfig: t.config
-    }), y = null == b ? true : b.progressBlur, O = null == b ? true : b.shineWipe, v = y ? 70 : 48, I = y ? 12 : 8, T = y ? false : false, S = y ? 2 : 6;
+    }), y = null == b ? true : b.progressBlur, O = null == b ? true : b.shineWipe, v = y ? 70 : 48, I = y ? 12 : 8, T = y ? false : false, S = y ? 2 : 6, A = 12;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.animated.div, {
         className: _.rewardTileContainer,
@@ -49,6 +49,7 @@ let p = 64,
         },
         children: (0, r.jsx)(u.Z, {
           learnMoreStyle: "text",
+          learnMoreFontSize: i ? v / p * A : true,
           quest: t,
           questContent: l.jn.QUEST_BAR_V2,
           location: d.dr.QUESTS_BAR,
