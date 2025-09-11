@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk574570 = require("./574570.js");
 
-function y(e) {
+function v(e) {
   for (var a = 1; a < arguments.length; a++) {
     var r = null != arguments[a] ? arguments[a] : {},
       t = Object.keys(r);
@@ -41,7 +41,7 @@ function y(e) {
   }
   return e
 }
-let h = e => {
+let y = e => {
   let {
     game: a
   } = e, r = (0, g.e7)([p.Z], () => p.Z.getApplication(a.applicationId));
@@ -49,18 +49,18 @@ let h = e => {
     text: a.name,
     children: e => {
       var i, n;
-      return (0, t.jsx)(_.P3F, (i = y({}, e), n = n = {
-        className: v.gameClickable,
+      return (0, t.jsx)(_.P3F, (i = v({}, e), n = n = {
+        className: h.gameClickable,
         onClick: () => {
-          (0, _.ZDy)(() => Promise.resolve(e => (0, t.jsx)(k.default, y({
+          (0, _.ZDy)(() => Promise.resolve(e => (0, t.jsx)(k.default, v({
             applicationId: a.applicationId,
-            source: b.m1.QuestBar
+            source: b.m1.GameSheet
           }, e))))
         },
         children: (0, t.jsx)(w.C, {
           game: a,
           application: r,
-          className: v.coverArt,
+          className: h.coverArt,
           size: w.Z.SMALL
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(n)) : (function(e, a) {
@@ -91,11 +91,11 @@ function j(e) {
     p = (0, g.Wu)([f.Z], () => a.map(e => f.Z.getGame(e)).filter(e => null != e).filter(e => (0, u.z6)(e.applicationId)).slice(0, 10));
   return c && !_ ? (0, t.jsxs)("div", {
     children: [(0, t.jsx)("div", {
-      className: o()(v.loadingHeading, v.sectionHeader)
+      className: o()(h.loadingHeading, h.sectionHeader)
     }), (0, t.jsx)("div", {
-      className: o()(v.row, v.gapLg),
+      className: o()(h.row, h.gapLg),
       children: l().range(0, a.length).map(e => (0, t.jsx)("div", {
-        className: v.loadingArtwork
+        className: h.loadingArtwork
       }, e))
     })]
   }) : !c && 0 === p.length || _ ? null : (0, t.jsx)(s.Modal, {
@@ -104,8 +104,8 @@ function j(e) {
     onClose: r,
     actions: [],
     children: (0, t.jsx)("div", {
-      className: v.container,
-      children: p.map(e => (0, t.jsx)(h, {
+      className: h.container,
+      children: p.map(e => (0, t.jsx)(y, {
         game: e
       }, e.applicationId))
     })

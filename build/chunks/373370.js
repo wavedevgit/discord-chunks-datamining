@@ -199,28 +199,31 @@ function A(e) {
   let {
     quest: t,
     taskDetails: n,
-    withoutMarkdown: r,
-    popoutTargetElementRef: i,
-    onGameSheetOpened: a,
-    onGameSheetClosed: o
-  } = e, s = u.r.build(t.config).defaultRewardNameWithArticle, {
-    targetMinutes: l,
-    applications: d
+    sourceQuestContent: r,
+    withoutMarkdown: i,
+    popoutTargetElementRef: a,
+    onGameSheetOpened: o,
+    onGameSheetClosed: s
+  } = e, l = u.r.build(t.config).defaultRewardNameWithArticle, {
+    targetMinutes: d,
+    applications: f
   } = n;
-  if (r) return _.intl.formatToPlainString(_.t["1votFx"], {
-    rewardNameWithArticle: s,
-    targetMinutes: l
+  if (i) return _.intl.formatToPlainString(_.t["1votFx"], {
+    rewardNameWithArticle: l,
+    targetMinutes: d
   });
-  let f = (0, c.C)({
-    applications: null != d ? d : [],
-    popoutTargetElementRef: i,
-    onGameSheetOpened: a,
-    onGameSheetClosed: o
+  let p = (0, c.C)({
+    quest: t,
+    sourceQuestContent: r,
+    applications: null != f ? f : [],
+    popoutTargetElementRef: a,
+    onGameSheetOpened: o,
+    onGameSheetClosed: s
   });
   return _.intl.format(_.t.CDeHur, {
-    rewardNameWithArticle: s,
-    targetMinutes: l,
-    gameSheetHook: f
+    rewardNameWithArticle: l,
+    targetMinutes: d,
+    gameSheetHook: p
   })
 }
 
@@ -229,60 +232,62 @@ function C(e) {
     quest: t,
     taskDetails: n,
     thirdPartyTaskDetails: r,
-    withoutMarkdown: i,
-    currentUser: a,
-    popoutTargetElementRef: l,
-    onGameSheetOpened: c,
-    onGameSheetClosed: u
-  } = e, d = (0, o.I5)(a, f.p9.TIER_2), _ = (0, s.Kr)(t.config), p = (0, s.$J)(t) && (0, s.$H)(t);
+    sourceQuestContent: i,
+    withoutMarkdown: a,
+    currentUser: l,
+    popoutTargetElementRef: c,
+    onGameSheetOpened: u,
+    onGameSheetClosed: d
+  } = e, _ = (0, o.I5)(l, f.p9.TIER_2), p = (0, s.Kr)(t.config), h = (0, s.$J)(t) && (0, s.$H)(t);
   if ((0, s.Pb)(t)) return A({
     quest: t,
     taskDetails: n,
-    withoutMarkdown: i,
-    popoutTargetElementRef: l,
-    onGameSheetOpened: c,
-    onGameSheetClosed: u
+    sourceQuestContent: i,
+    withoutMarkdown: a,
+    popoutTargetElementRef: c,
+    onGameSheetOpened: u,
+    onGameSheetClosed: d
   });
-  if (p) return b({
+  if (h) return b({
     quest: t,
     taskDetails: n,
-    withoutMarkdown: i,
-    hasNitro: d,
-    collectibleRewardDuration: _
+    withoutMarkdown: a,
+    hasNitro: _,
+    collectibleRewardDuration: p
   });
   if ((0, s.$J)(t)) return y({
     quest: t,
     taskDetails: n,
-    withoutMarkdown: i,
-    hasNitro: d,
-    collectibleRewardDuration: _
+    withoutMarkdown: a,
+    hasNitro: _,
+    collectibleRewardDuration: p
   });
   if ((0, s.$H)(t)) return O({
     quest: t,
     taskDetails: n,
-    withoutMarkdown: i,
-    hasNitro: d,
-    collectibleRewardDuration: _
+    withoutMarkdown: a,
+    hasNitro: _,
+    collectibleRewardDuration: p
   });
   if ((0, s.oo)({
       quest: t
     })) return v({
     quest: t,
     taskDetails: n,
-    withoutMarkdown: i
+    withoutMarkdown: a
   });
-  else if ((0, s.q8)(t)) return I(t, _, d, i);
+  else if ((0, s.q8)(t)) return I(t, p, _, a);
   else if ((0, s.pO)(t)) return T({
     quest: t,
     taskDetails: n,
-    withoutMarkdown: i
+    withoutMarkdown: a
   });
   return null != r ? r.description : S({
     quest: t,
     taskDetails: n,
-    withoutMarkdown: i,
-    hasNitro: d,
-    collectibleRewardDuration: _
+    withoutMarkdown: a,
+    hasNitro: _,
+    collectibleRewardDuration: p
   })
 }
 
