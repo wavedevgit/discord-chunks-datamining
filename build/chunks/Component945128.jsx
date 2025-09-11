@@ -16,24 +16,24 @@ let u = e => {
     disabled: n
   } = e, u = i.useCallback(async () => {
     await t({
-      type: l.rY.Empty
+      type: a.rY.Empty
     }), window.location.reload()
   }, [t]);
   return (0, r.jsxs)("div", {
     className: s.container,
-    children: [(0, r.jsx)(a.X6q, {
+    children: [(0, r.jsx)(l.X6q, {
       variant: "heading-lg/bold",
       className: s.title,
       children: c.intl.string(o.default.v52itr)
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
       color: "text-muted",
       className: s.description,
       children: c.intl.string(o.default["5am8Dw"])
-    }), (0, r.jsx)(a.Kqy, {
+    }), (0, r.jsx)(l.Kqy, {
       direction: "horizontal",
       justify: "end",
-      children: (0, r.jsx)(a.zxk, {
+      children: (0, r.jsx)(l.zxk, {
         variant: "primary",
         text: c.intl.string(o.default.GDsHl5),
         onClick: u,

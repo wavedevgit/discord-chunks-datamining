@@ -17,14 +17,14 @@ function d(e) {
   let {
     sitekey: t,
     action: n,
-    onVerify: a
-  } = e, [l, d] = i.useState("uninitialized"), f = i.useCallback(e => {
+    onVerify: l
+  } = e, [a, d] = i.useState("uninitialized"), f = i.useCallback(e => {
     c.default.track(u.rMx.RECAPTCHA_MODAL_EVENT, {
       recaptcha_event_name: e
     })
   }, []), p = i.useCallback(e => {
-    f("handle-verify"), a(e)
-  }, [a, f]), m = i.useCallback(() => {
+    f("handle-verify"), l(e)
+  }, [l, f]), h = i.useCallback(() => {
     var e, r, i;
     null == (i = window) || null == (r = i.grecaptcha) || null == (e = r.enterprise) || e.ready(async () => {
       var e;
@@ -32,12 +32,12 @@ function d(e) {
         action: n
       } : true)), d("loaded")
     })
-  }, [t, n, p, f]), h = i.useCallback(() => {
-    d("running"), f("recaptcha-loading"), s.I.loadRecaptchaScript(t, m, f)
-  }, [t, m, f]);
+  }, [t, n, p, f]), m = i.useCallback(() => {
+    d("running"), f("recaptcha-loading"), s.I.loadRecaptchaScript(t, h, f)
+  }, [t, h, f]);
   return i.useEffect(() => {
-    "uninitialized" === l && h()
-  }, [h, l]), i.useEffect(() => () => {
+    "uninitialized" === a && m()
+  }, [m, a]), i.useEffect(() => () => {
     f("recaptcha-unloading"), document.querySelectorAll('script[src*="recaptcha/enterprise.js"],.grecaptcha-badge').forEach(e => {
       var t;
       return null == (t = e.parentNode) ? true : t.removeChild(e)
@@ -53,18 +53,18 @@ let f = e => {
       var n, r, i = function(e, t) {
         if (null == e) return {};
         var n, r, i = {},
-          a = Object.keys(e);
-        for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+          l = Object.keys(e);
+        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var a = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        var l = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
     }(e, ["theme"]);
-  let c = (0, l.wj)(i) ? "dark" : "light";
-  return (0, r.jsx)(a.Z, (t = function(e) {
+  let c = (0, a.wj)(i) ? "dark" : "light";
+  return (0, r.jsx)(l.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

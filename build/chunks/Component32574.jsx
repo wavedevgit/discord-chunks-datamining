@@ -23,7 +23,7 @@ let f = function(e) {
       text: "Consectetur adipiscing",
       variant: "primary",
       onClick: () => {
-        (null == n ? true : n.ageVerificationStatus) === l.F$.UNVERIFIED ? o.Z.showAgeVerificationGetStartedModal({
+        (null == n ? true : n.ageVerificationStatus) === a.F$.UNVERIFIED ? o.Z.showAgeVerificationGetStartedModal({
           entryPoint: c.cU.SAFETY_FLOWS,
           onClose: () => t({
             type: u.rY.Empty
@@ -33,15 +33,15 @@ let f = function(e) {
         })
       }
     }],
-    children: (0, r.jsxs)(a.Kqy, {
+    children: (0, r.jsxs)(l.Kqy, {
       gap: 8,
-      children: [(0, r.jsx)(a.Text, {
+      children: [(0, r.jsx)(l.Text, {
         variant: "text-md/normal",
         children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(l.Text, {
         variant: "text-md/normal",
         children: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(l.Text, {
         variant: "text-md/normal",
         children: "Ut enim ad minim veniam quis"
       })]

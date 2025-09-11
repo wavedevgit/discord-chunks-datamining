@@ -40,5 +40,6 @@ module.exports = {
   externalProductDimmed: "externalProductDimmed_c3d04b",
   orbIconAligned: "orbIconAligned_c3d04b",
   thumbnailVariant: "thumbnailVariant_c3d04b",
-  badgeLeftAligned: "badgeLeftAligned_c3d04b"
+  badgeLeftAligned: "badgeLeftAligned_c3d04b",
+  wishlistButton: "wishlistButton_c3d04b"
 }

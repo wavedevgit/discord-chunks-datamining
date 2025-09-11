@@ -2,7 +2,7 @@
 /** chunk id: 35215, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => N
+  Z: () => R
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -63,6 +63,37 @@ let I = 8,
   T = 20,
   S = e => {
     let {
+      gameCount: t,
+      onClose: n
+    } = e;
+    return (0, r.jsxs)("div", {
+      className: E.headerContainer,
+      children: [(0, r.jsxs)("div", {
+        className: E.headerContent,
+        children: [(0, r.jsx)(o.Text, {
+          variant: "text-xs/semibold",
+          color: "text-primary",
+          children: g.intl.string(g.t["D+DkEB"])
+        }), (0, r.jsx)(o.Text, {
+          variant: "text-xs/normal",
+          color: "text-tertiary",
+          children: g.intl.format(g.t.JhwFc3, {
+            count: t
+          })
+        })]
+      }), (0, r.jsx)(o.P3F, {
+        className: E.closeButton,
+        "aria-label": g.intl.string(g.t.cpT0Cg),
+        onClick: n,
+        children: (0, r.jsx)(o.Dio, {
+          size: "md",
+          color: "currentColor"
+        })
+      })]
+    })
+  },
+  A = e => {
+    let {
       quest: t,
       game: i,
       sourceQuestContent: s
@@ -105,61 +136,55 @@ let I = 8,
     })
   };
 
-function A(e) {
+function C(e) {
   let {
     quest: t,
     applications: n,
-    onClose: l,
-    sourceQuestContent: d,
-    impressionRef: _
+    onClose: o,
+    sourceQuestContent: l,
+    impressionRef: d
   } = e;
   (0, c.Z)(n), i.useEffect(() => {
     n.length > 1 && s.Z.getDetectableGamesSupplemental(n)
   }, [n]);
-  let p = (0, a.e7)([u.Z], () => n.some(e => u.Z.isFetching(e))),
-    h = (0, a.e7)([u.Z], () => n.some(e => u.Z.didFetchingFail(e))),
-    m = (0, a.Wu)([u.Z], () => n.map(e => u.Z.getGame(e)).filter(e => null != e).filter(e => (0, f.z6)(e.applicationId)).slice(0, I));
-  return !p && 0 === m.length || h ? null : (0, r.jsxs)("div", {
+  let _ = (0, a.e7)([u.Z], () => n.some(e => u.Z.isFetching(e))),
+    p = (0, a.e7)([u.Z], () => n.some(e => u.Z.didFetchingFail(e))),
+    h = (0, a.Wu)([u.Z], () => n.map(e => u.Z.getGame(e)).filter(e => null != e).filter(e => (0, f.z6)(e.applicationId)).slice(0, I));
+  if (_ && !p) {
+    let e = Math.min(n.length, I);
+    return (0, r.jsxs)("div", {
+      className: E.container,
+      children: [(0, r.jsx)(S, {
+        gameCount: e,
+        onClose: o
+      }), (0, r.jsx)("div", {
+        className: E.gameGrid,
+        children: n.slice(0, e).map(e => (0, r.jsx)("div", {
+          className: E.loadingArtwork
+        }, e))
+      })]
+    })
+  }
+  return !_ && 0 === h.length || p ? null : (0, r.jsxs)("div", {
     ref: e => {
-      _.current = e
+      d.current = e
     },
     className: E.container,
-    children: [(0, r.jsxs)("div", {
-      className: E.headerContainer,
-      children: [(0, r.jsxs)("div", {
-        className: E.headerContent,
-        children: [(0, r.jsx)(o.Text, {
-          variant: "text-xs/semibold",
-          color: "text-primary",
-          children: g.intl.string(g.t["D+DkEB"])
-        }), (0, r.jsx)(o.Text, {
-          variant: "text-xs/normal",
-          color: "text-tertiary",
-          children: g.intl.format(g.t.JhwFc3, {
-            count: m.length
-          })
-        })]
-      }), (0, r.jsx)(o.P3F, {
-        className: E.closeButton,
-        "aria-label": g.intl.string(g.t.cpT0Cg),
-        onClick: l,
-        children: (0, r.jsx)(o.Dio, {
-          size: "md",
-          color: "currentColor"
-        })
-      })]
+    children: [(0, r.jsx)(S, {
+      gameCount: h.length,
+      onClose: o
     }), (0, r.jsx)("div", {
       className: E.gameGrid,
-      children: m.map(e => (0, r.jsx)(S, {
+      children: h.map(e => (0, r.jsx)(A, {
         quest: t,
         game: e,
-        sourceQuestContent: d
+        sourceQuestContent: l
       }, e.applicationId))
     })]
   })
 }
 
-function C(e) {
+function N(e) {
   let {
     targetElementRef: t,
     applications: n,
@@ -176,7 +201,7 @@ function C(e) {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(A, {
+      return (0, r.jsx)(C, {
         quest: c,
         applications: n,
         onClose: t,
@@ -192,12 +217,12 @@ function C(e) {
     children: e => a(e, f)
   })
 }
-let N = function(e) {
+let R = function(e) {
   return null == e.quest || e.applications.length <= 1 ? null : (0, r.jsx)(m.A, {
     questOrQuests: e.quest,
     questContent: h.jn.SPONSORED_QUEST_SHEET,
     sourceQuestContent: e.sourceQuestContent,
-    children: t => (0, r.jsx)(C, v(y({}, e), {
+    children: t => (0, r.jsx)(N, v(y({}, e), {
       impressionRef: t
     }))
   })

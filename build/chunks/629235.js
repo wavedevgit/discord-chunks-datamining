@@ -15,9 +15,9 @@ let d = function(e, t) {
   let {
     methods: n,
     loading: d
-  } = (0, i.cj)([l.Z], () => ({
-    methods: l.Z.methods,
-    loading: l.Z.loading
+  } = (0, i.cj)([a.Z], () => ({
+    methods: a.Z.methods,
+    loading: a.Z.loading
   })), {
     initiateAgeVerification: f
   } = (0, c.WD)(e);
@@ -36,7 +36,7 @@ let d = function(e, t) {
         title: u.intl.string(r),
         description: u.intl.string(i),
         onClick: async n => {
-          (0, a.x3)(n, a.d_.EXPRESSIVE_PRIMARY, a.sU.METHOD_SELECT, e), null == t || t(), await f(a.cU.EXPRESSIVE_GET_STARTED, e)
+          (0, l.x3)(n, l.d_.EXPRESSIVE_PRIMARY, l.sU.METHOD_SELECT, e), null == t || t(), await f(l.cU.EXPRESSIVE_GET_STARTED, e)
         }
       }
     }).filter(e => null != e),

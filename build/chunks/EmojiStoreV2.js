@@ -203,7 +203,7 @@ class e_ {
     null != e_._lastInstance && (e_._lastInstance.frequentlyUsed = null)
   }
   static resetFrequentlyUsedReactionEmojis() {
-    null != e_._lastInstance && (e_._lastInstance.frequentlyUsedReactionEmojis = null)
+    null != e_._lastInstance && (e_._lastInstance.frequentlyUsedReactionEmojis = null, e_._lastInstance.frequentlyUsedReactionNamesAndIds = null)
   }
   static resetFavorites() {
     null != e_._lastInstance && (e_._lastInstance.favorites = null, e_._lastInstance.favoriteNamesAndIds = null)
@@ -245,11 +245,29 @@ class e_ {
       t = (0, Chunk856985.Z)(module);
     return this.frequentlyUsed = [...exports.values()], this.frequentlyUsed
   }
-  getFrequentlyUsedReactionEmojisWithoutFetchingLatest() {
-    if (this.ensureDisambiguated(), null != this.frequentlyUsedReactionEmojis) return this.frequentlyUsedReactionEmojis;
+  rebuildFrequentlyUsedReactionsEmojisWithoutFetchingLatest() {
+    if (this.ensureDisambiguated(), null != this.frequentlyUsedReactionEmojis && null != this.frequentlyUsedReactionNamesAndIds) return {
+      frequentlyUsedReactionEmojis: this.frequentlyUsedReactionEmojis,
+      frequentlyUsedReactionNamesAndIds: this.frequentlyUsedReactionNamesAndIds
+    };
     let e = eh.frequently.map(e => null != e.id ? this.getById(e.id) : j.ZP.getByName(e.name)).filter(Chunk823379.lm),
       t = (0, Chunk856985.Z)(module);
-    return this.frequentlyUsedReactionEmojis = [...exports.values()], this.frequentlyUsedReactionEmojis
+    return this.frequentlyUsedReactionEmojis = [...exports.values()], this.frequentlyUsedReactionNamesAndIds = new Set(exports.keys()), {
+      frequentlyUsedReactionEmojis: this.frequentlyUsedReactionEmojis,
+      frequentlyUsedReactionNamesAndIds: this.frequentlyUsedReactionNamesAndIds
+    }
+  }
+  getFrequentlyUsedReactionEmojisWithoutFetchingLatest() {
+    return this.rebuildFrequentlyUsedReactionsEmojisWithoutFetchingLatest().frequentlyUsedReactionEmojis
+  }
+  isFrequentlyUsedReactionEmojiWithoutFetchingLatest(e) {
+    var t;
+    let {
+      frequentlyUsedReactionNamesAndIds: n
+    } = this.rebuildFrequentlyUsedReactionsEmojisWithoutFetchingLatest();
+    if (null != e.id) return n.has(e.id);
+    let r = null != (t = j.ZP.convertSurrogateToBase(e.surrogates)) ? t : e;
+    return n.has(r.name)
   }
   rebuildFavoriteEmojisWithoutFetchingLatest() {
     var e, t;
@@ -314,7 +332,7 @@ class e_ {
   _buildDisambiguatedCustomEmoji() {
     let e = {},
       t = [];
-    this.emoticonRegex = null, this.frequentlyUsed = null, this.frequentlyUsedReactionEmojis = null, this.disambiguatedEmoji = [], this.unicodeAliases = Object.create(null), this.customEmojis = Object.create(null), this.groupedCustomEmojis = Object.create(null), this.emoticonsByName = Object.create(null), this.emojisByName = Object.create(null), this.emojisById = Object.create(null), this.newlyAddedEmoji = Object.create(null);
+    this.emoticonRegex = null, this.frequentlyUsed = null, this.frequentlyUsedReactionEmojis = null, this.frequentlyUsedReactionNamesAndIds = null, this.disambiguatedEmoji = [], this.unicodeAliases = Object.create(null), this.customEmojis = Object.create(null), this.groupedCustomEmojis = Object.create(null), this.emoticonsByName = Object.create(null), this.emojisByName = Object.create(null), this.emojisById = Object.create(null), this.newlyAddedEmoji = Object.create(null);
     let n = t => {
         var n, r;
         let i = t.name,
@@ -347,7 +365,7 @@ class e_ {
     }), this.escapedEmoticonNames = exports.join("|")
   }
   constructor(e) {
-    F(this, "guildId", true), F(this, "emoticonRegex", null), F(this, "frequentlyUsed", null), F(this, "favorites", null), F(this, "favoriteNamesAndIds", null), F(this, "topEmojis", null), F(this, "escapedEmoticonNames", null), F(this, "disambiguatedEmoji", null), F(this, "customEmojis", true), F(this, "groupedCustomEmojis", true), F(this, "emoticonsByName", true), F(this, "emojisByName", true), F(this, "emojisById", true), F(this, "unicodeAliases", true), F(this, "newlyAddedEmoji", null), F(this, "frequentlyUsedReactionEmojis", null), F(this, "isFavoriteEmojiWithoutFetchingLatest", e => {
+    F(this, "guildId", true), F(this, "emoticonRegex", null), F(this, "frequentlyUsed", null), F(this, "favorites", null), F(this, "favoriteNamesAndIds", null), F(this, "topEmojis", null), F(this, "escapedEmoticonNames", null), F(this, "disambiguatedEmoji", null), F(this, "customEmojis", true), F(this, "groupedCustomEmojis", true), F(this, "emoticonsByName", true), F(this, "emojisByName", true), F(this, "emojisById", true), F(this, "unicodeAliases", true), F(this, "newlyAddedEmoji", null), F(this, "frequentlyUsedReactionEmojis", null), F(this, "frequentlyUsedReactionNamesAndIds", null), F(this, "isFavoriteEmojiWithoutFetchingLatest", e => {
       var t;
       if (null == e) returnfalse;
       let {

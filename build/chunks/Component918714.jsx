@@ -1,11 +1,12 @@
 /** Chunk was on 72853 **/
 /** chunk id: 918714, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk893776 = require("./893776.js"),
   Chunk480916 = require("./480916.js"),
   Chunk17597 = require("./17597.jsx"),
   Chunk624138 = require("./624138.js"),
@@ -19,46 +20,41 @@ var Chunk951288 = require("./951288.js"),
   Chunk104940 = require("./104940.js");
 let Chunk575703 = require("./575703.js");
 
-function b(e) {
+function E(e) {
   let {
     task: t,
     handleSubmit: n,
     disabled: l
-  } = e, [o, c] = i.useState(t), s = i.useMemo(() => ({
-    task: o,
-    setTask: c
-  }), [o, c]);
+  } = e, [a, o] = i.useState(t), c = i.useMemo(() => ({
+    task: a,
+    setTask: o
+  }), [a, o]);
   return i.useEffect(() => {
-    c(t)
-  }, [t]), (0, r.jsx)(u.y.Provider, {
-    value: s,
-    children: (0, r.jsxs)(a.Kqy, {
-      direction: "horizontal",
-      justify: "start",
-      className: y.body,
-      children: [(0, r.jsx)(p.Z, {}), (0, r.jsx)(f.Z, {
-        onSubmit: n,
-        disabled: l
-      })]
-    })
+    o(t)
+  }, [t]), (0, r.jsxs)(d.y.Provider, {
+    value: c,
+    children: [(0, r.jsx)(h.Z, {}), (0, r.jsx)(p.Z, {
+      onSubmit: n,
+      disabled: l
+    })]
   })
 }
-let E = function(e) {
+let x = function(e) {
   let {
     onClose: t
-  } = e, [n, u] = i.useState(null), [f, p] = i.useState(true), [E, x] = i.useState(null), [v, j] = i.useState(false), _ = i.useCallback(async () => {
-    p(true), x(null);
+  } = e, [n, d] = i.useState(null), [p, h] = i.useState(true), [x, v] = i.useState(null), [j, _] = i.useState(false), O = i.useCallback(async () => {
+    h(true), v(null);
     try {
       var e;
-      let n = await (0, s.PA)();
+      let n = await (0, u.PA)();
       if (null == n) return void t();
-      !(0, c.Ew)(null == (e = n.ui_component) ? true : e.component.type) && d.VZ.has(n.ui_component.component.type) ? u(n) : u({
+      !(0, s.Ew)(null == (e = n.ui_component) ? true : e.component.type) && f.VZ.has(n.ui_component.component.type) ? d(n) : d({
         task_id: n.task_id,
-        task_type: d.UA.REFRESH_APP,
+        task_type: f.UA.REFRESH_APP,
         assignment_id: n.assignment_id,
         ui_component: {
           component: {
-            type: d.NS.REFRESH_APP,
+            type: f.NS.REFRESH_APP,
             data: {}
           }
         },
@@ -68,64 +64,98 @@ let E = function(e) {
         }
       })
     } catch (e) {
-      x(h.intl.string(m.default["/f++3t"]))
+      v(y.intl.string(m.default["/f++3t"]))
     } finally {
-      p(false)
+      h(false)
     }
-  }, [t]), O = i.useCallback(async e => {
+  }, [t]), A = i.useCallback(async e => {
     if (null !== n) {
-      j(true);
+      _(true);
       try {
         let t = {
           task_id: n.task_id,
           flow_id: n.flow_context.flow_id,
           data: e
         };
-        await (0, s.Wl)(t), _()
+        await (0, u.Wl)(t), O()
       } catch (e) {
-        x(h.intl.string(m.default["+QRSxc"]))
+        v(y.intl.string(m.default["+QRSxc"]))
       } finally {
-        j(false)
+        _(false)
       }
     }
-  }, [n, _]);
+  }, [n, O]);
   i.useEffect(() => {
-    _()
-  }, [_]);
-  let A = i.useMemo(() => (null == n ? true : n.task_type) === d.UA.AGE_VERIFICATION, [n]);
+    O()
+  }, [O]);
+  let S = i.useMemo(() => (null == n ? true : n.task_type) === f.UA.AGE_VERIFICATION, [n]);
   return (0, r.jsxs)("div", {
-    className: y.background,
+    className: g.background,
     children: [(0, r.jsx)("img", {
-      className: y.artwork,
-      src: g,
+      className: g.artwork,
+      src: b,
       alt: ""
-    }), A ? (0, r.jsx)(o.default, {
-      transitionState: a.Dvm.ENTERED,
-      entryPoint: l.cU.SAFETY_FLOWS,
+    }), S ? (0, r.jsx)(c.default, {
+      transitionState: l.Dvm.ENTERED,
+      entryPoint: o.cU.SAFETY_FLOWS,
       onClose: async () => {},
       onComplete: async () => {
-        await O({
-          type: d.rY.Empty
+        await A({
+          type: f.rY.Empty
         })
       }
     }) : (0, r.jsx)("div", {
-      className: y.safetyFlow,
-      children: (0, r.jsxs)("div", {
-        className: y.container,
-        children: [f && (0, r.jsx)(a.Text, {
-          variant: "text-md/normal",
-          color: "text-muted",
-          children: h.intl.string(m.default.v0H5Tk)
-        }), null !== E && (0, r.jsx)(a.Text, {
-          variant: "text-md/normal",
-          color: "text-danger",
-          className: y.error,
-          children: E
-        }), !f && null === E && null != n && (0, r.jsx)(b, {
-          task: n,
-          handleSubmit: O,
-          disabled: v
-        })]
+      className: g.safetyFlow,
+      children: p ? (0, r.jsx)(l.$jN, {
+        type: l.$jN.Type.SPINNING_CIRCLE
+      }) : (0, r.jsx)("div", {
+        className: g.container,
+        children: (0, r.jsxs)(l.Kqy, {
+          direction: "horizontal",
+          justify: "start",
+          className: g.body,
+          children: [null !== x && (0, r.jsxs)(l.Kqy, {
+            direction: "vertical",
+            justify: "space-between",
+            align: "center",
+            className: g.interimBody,
+            padding: 16,
+            children: [(0, r.jsxs)(l.Kqy, {
+              direction: "vertical",
+              gap: 4,
+              children: [(0, r.jsx)(l.X6q, {
+                variant: "heading-xl/semibold",
+                children: y.intl.string(y.t.c6kn6O)
+              }), (0, r.jsx)(l.Text, {
+                variant: "text-md/normal",
+                color: "text-muted",
+                children: y.intl.string(y.t.ZUEGFh)
+              })]
+            }), (0, r.jsxs)(l.Kqy, {
+              direction: "horizontal",
+              justify: "center",
+              align: "center",
+              children: [(0, r.jsx)(l.zxk, {
+                fullWidth: true,
+                variant: "secondary",
+                text: y.intl.string(y.t["2jxGen"]),
+                onClick: () => {
+                  a.Z.logout("safety_flows_modal")
+                }
+              }), (0, r.jsx)(l.zxk, {
+                fullWidth: true,
+                text: y.intl.string(y.t["7NqTJi"]),
+                onClick: () => {
+                  O()
+                }
+              })]
+            })]
+          }), null === x && null != n && (0, r.jsx)(E, {
+            task: n,
+            handleSubmit: A,
+            disabled: j
+          })]
+        })
       })
     })]
   })

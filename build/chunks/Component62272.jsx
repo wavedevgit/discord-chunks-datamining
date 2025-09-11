@@ -17,12 +17,12 @@ let s = e => {
     footerInput: s,
     title: u
   } = e;
-  return (0, r.jsxs)(a.Kqy, {
+  return (0, r.jsxs)(l.Kqy, {
     direction: "vertical",
     justify: "start",
     padding: o.h,
     className: c.container,
-    children: [(0, r.jsx)(a.X6q, {
+    children: [(0, r.jsx)(l.X6q, {
       variant: "heading-lg/semibold",
       className: c.heading,
       children: u
@@ -30,7 +30,7 @@ let s = e => {
       children: t
     }), (0, r.jsx)("div", {
       className: c.footerSpacer
-    }), (0, r.jsx)(l.A, {
+    }), (0, r.jsx)(a.A, {
       actions: n,
       footerInput: s
     })]

@@ -5,7 +5,7 @@ require.d(exports, {
 }), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./781311.js");
 var Chunk647438 = require("./647438.js"),
   Chunk348327 = require("./348327.js"),
-  a = require.n(Chunk348327),
+  l = require.n(Chunk348327),
   Chunk392711 = require("./392711.js"),
   Chunk823379 = require("./823379.js"),
   Chunk886118 = require("./886118.js");
@@ -17,31 +17,31 @@ function u(e, t, n, i) {
     f = r.useRef(null),
     p = r.useRef(n),
     {
-      searchStringGenerator: m
+      searchStringGenerator: h
     } = i,
-    h = function(e) {
+    m = function(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [],
         [n, i] = r.useState(e),
-        l = r.useRef(e);
+        a = r.useRef(e);
       return r.useEffect(() => {
-        l.current = e
+        a.current = e
       }, [e]), r.useEffect(() => {
         i(e => {
-          let t = l.current;
-          return a()(e, t) ? e : t
+          let t = a.current;
+          return l()(e, t) ? e : t
         })
       }, t), n
-    }(t.map(m), [t, m, ...u]),
+    }(t.map(h), [t, h, ...u]),
     y = function(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [],
         [n, i] = r.useState(e),
-        l = r.useRef(e);
+        a = r.useRef(e);
       return r.useEffect(() => {
-        l.current = e
+        a.current = e
       }, [e]), r.useEffect(() => {
         i(e => {
-          let t = l.current;
-          return a()(e, t) ? e : t
+          let t = a.current;
+          return l()(e, t) ? e : t
         })
       }, t), n
     }(t, [t]);
@@ -54,13 +54,13 @@ function u(e, t, n, i) {
       throttleLeading: t = true,
       throttleTrailing: n = true
     } = i;
-    return f.current = (0, l.throttle)(async (e, t, n) => {
+    return f.current = (0, a.throttle)(async (e, t, n) => {
       if ("" === e.trim()) return void p.current(t);
-      d.current = (0, l.uniqueId)();
+      d.current = (0, a.uniqueId)();
       let r = await
       function(e, t, n, r) {
         var i;
-        let a = null != (i = r.promiseUuid) ? i : (0, l.uniqueId)(),
+        let l = null != (i = r.promiseUuid) ? i : (0, a.uniqueId)(),
           {
             searchType: u = c.S.FUZZY,
             sortType: d = c.E.NONE,
@@ -71,13 +71,13 @@ function u(e, t, n, i) {
             let {
               data: {
                 id: n,
-                foundItemIndexes: l
+                foundItemIndexes: a
               }
             } = t;
-            a === n && (r(l.map(t => e[t]).filter(o.lm)), null == s || s.removeEventListener("message", i))
+            l === n && (r(a.map(t => e[t]).filter(o.lm)), null == s || s.removeEventListener("message", i))
           };
           null == s || s.addEventListener("message", i), null == s || s.postMessage({
-            id: a,
+            id: l,
             searchTerm: t,
             searchStrings: n,
             searchType: u,
@@ -112,8 +112,8 @@ function u(e, t, n, i) {
     }), f.current
   }, [i]);
   return r.useEffect(() => {
-    g(e, y, h)
-  }, [g, e, y, h, ...u]), r.useEffect(() => () => {
+    g(e, y, m)
+  }, [g, e, y, m, ...u]), r.useEffect(() => () => {
     null != f.current && f.current.cancel(), f.current = null, d.current = null
-  }, [h, n, i]), g
+  }, [m, n, i]), g
 }
