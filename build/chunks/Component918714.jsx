@@ -1,11 +1,13 @@
 /** Chunk was on 72853 **/
 /** chunk id: 918714, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk480916 = require("./480916.js"),
+  Chunk17597 = require("./17597.jsx"),
   Chunk624138 = require("./624138.js"),
   Chunk845077 = require("./845077.js"),
   Chunk132392 = require("./132392.js"),
@@ -17,46 +19,46 @@ var Chunk951288 = require("./951288.js"),
   Chunk104940 = require("./104940.js");
 let Chunk575703 = require("./575703.js");
 
-function h(e) {
+function E(e) {
   let {
     task: t,
     handleSubmit: n,
     disabled: l
-  } = e, [c, s] = i.useState(t), f = i.useMemo(() => ({
-    task: c,
-    setTask: s
-  }), [c, s]);
+  } = e, [o, c] = i.useState(t), s = i.useMemo(() => ({
+    task: o,
+    setTask: c
+  }), [o, c]);
   return i.useEffect(() => {
-    s(t)
-  }, [t]), (0, r.jsx)(o.y.Provider, {
-    value: f,
+    c(t)
+  }, [t]), (0, r.jsx)(u.y.Provider, {
+    value: s,
     children: (0, r.jsxs)(a.Kqy, {
       direction: "horizontal",
       justify: "start",
-      className: m.body,
-      children: [(0, r.jsx)(d.Z, {}), (0, r.jsx)(u.Z, {
+      className: g.body,
+      children: [(0, r.jsx)(p.Z, {}), (0, r.jsx)(f.Z, {
         onSubmit: n,
         disabled: l
       })]
     })
   })
 }
-let g = function(e) {
+let x = function(e) {
   let {
     onClose: t
-  } = e, [n, o] = i.useState(null), [u, d] = i.useState(true), [g, v] = i.useState(null), [b, j] = i.useState(false), x = i.useCallback(async () => {
-    d(true), v(null);
+  } = e, [n, u] = i.useState(null), [f, p] = i.useState(true), [x, v] = i.useState(null), [b, j] = i.useState(false), _ = i.useCallback(async () => {
+    p(true), v(null);
     try {
       var e;
-      let n = await (0, c.PA)();
+      let n = await (0, s.PA)();
       if (null == n) return void t();
-      !(0, l.Ew)(null == (e = n.ui_component) ? true : e.component.type) && s.VZ.has(n.ui_component.component.type) ? o(n) : o({
+      !(0, c.Ew)(null == (e = n.ui_component) ? true : e.component.type) && d.VZ.has(n.ui_component.component.type) ? u(n) : u({
         task_id: n.task_id,
-        task_type: s.UA.REFRESH_APP,
+        task_type: d.UA.REFRESH_APP,
         assignment_id: n.assignment_id,
         ui_component: {
           component: {
-            type: s.NS.REFRESH_APP,
+            type: d.NS.REFRESH_APP,
             data: {}
           }
         },
@@ -66,11 +68,11 @@ let g = function(e) {
         }
       })
     } catch (e) {
-      v(p.intl.string(f.default["/f++3t"]))
+      v(y.intl.string(m.default["/f++3t"]))
     } finally {
-      d(false)
+      p(false)
     }
-  }, [t]), E = i.useCallback(async e => {
+  }, [t]), O = i.useCallback(async e => {
     if (null !== n) {
       j(true);
       try {
@@ -79,38 +81,49 @@ let g = function(e) {
           flow_id: n.flow_context.flow_id,
           data: e
         };
-        await (0, c.Wl)(t), x()
+        await (0, s.Wl)(t), _()
       } catch (e) {
-        v(p.intl.string(f.default["+QRSxc"]))
+        v(y.intl.string(m.default["+QRSxc"]))
       } finally {
         j(false)
       }
     }
-  }, [n, x]);
-  return i.useEffect(() => {
-    x()
-  }, [x]), (0, r.jsxs)("div", {
-    className: m.background,
+  }, [n, _]);
+  i.useEffect(() => {
+    _()
+  }, [_]);
+  let A = i.useMemo(() => (null == n ? true : n.task_type) === d.UA.AGE_VERIFICATION, [n]);
+  return (0, r.jsxs)("div", {
+    className: g.background,
     children: [(0, r.jsx)("img", {
-      className: m.artwork,
-      src: y,
+      className: g.artwork,
+      src: h,
       alt: ""
-    }), (0, r.jsx)("div", {
-      className: m.safetyFlow,
+    }), A ? (0, r.jsx)(o.default, {
+      transitionState: a.Dvm.ENTERED,
+      entryPoint: l.cU.SAFETY_FLOWS,
+      onClose: async () => {},
+      onComplete: async () => {
+        await O({
+          type: d.rY.Empty
+        })
+      }
+    }) : (0, r.jsx)("div", {
+      className: g.safetyFlow,
       children: (0, r.jsxs)("div", {
-        className: m.container,
-        children: [u && (0, r.jsx)(a.Text, {
+        className: g.container,
+        children: [f && (0, r.jsx)(a.Text, {
           variant: "text-md/normal",
           color: "text-muted",
-          children: p.intl.string(f.default.v0H5Tk)
-        }), null !== g && (0, r.jsx)(a.Text, {
+          children: y.intl.string(m.default.v0H5Tk)
+        }), null !== x && (0, r.jsx)(a.Text, {
           variant: "text-md/normal",
           color: "text-danger",
-          className: m.error,
-          children: g
-        }), !u && null === g && null != n && (0, r.jsx)(h, {
+          className: g.error,
+          children: x
+        }), !f && null === x && null != n && (0, r.jsx)(E, {
           task: n,
-          handleSubmit: E,
+          handleSubmit: O,
           disabled: b
         })]
       })

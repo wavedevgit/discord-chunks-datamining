@@ -19,7 +19,7 @@ function d(e) {
     action: n,
     onVerify: a
   } = e, [l, d] = i.useState("uninitialized"), f = i.useCallback(e => {
-    o.default.track(u.rMx.RECAPTCHA_MODAL_EVENT, {
+    c.default.track(u.rMx.RECAPTCHA_MODAL_EVENT, {
       recaptcha_event_name: e
     })
   }, []), p = i.useCallback(e => {
@@ -42,13 +42,13 @@ function d(e) {
       var t;
       return null == (t = e.parentNode) ? true : t.removeChild(e)
     }), null != window.grecaptcha && delete window.grecaptcha
-  }, [f]), (0, r.jsx)(c.$jN, {})
+  }, [f]), (0, r.jsx)(o.$jN, {})
 }
 let f = e => {
   var t, n, {
       theme: i
     } = e,
-    c = function(e, t) {
+    o = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -63,7 +63,7 @@ let f = e => {
       }
       return i
     }(e, ["theme"]);
-  let o = (0, l.wj)(i) ? "dark" : "light";
+  let c = (0, l.wj)(i) ? "dark" : "light";
   return (0, r.jsx)(a.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -83,8 +83,8 @@ let f = e => {
     return e
   }({
     sitekey: u.OL7
-  }, c), n = n = {
-    theme: o
+  }, o), n = n = {
+    theme: c
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

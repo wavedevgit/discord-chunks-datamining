@@ -1,6 +1,5 @@
 /** Chunk was on 67749 **/
-/** chunk id: 179835, original params: e,t,n (module,exports,require) **/
+/** chunk id: 179835, original params: e,n,t (module,exports,require) **/
 module.exports = {
-  floatingFooter: "floatingFooter__49d5b",
-  footerButtons: "footerButtons__49d5b"
+  fullbleedContent: "fullbleedContent__49d5b"
 }

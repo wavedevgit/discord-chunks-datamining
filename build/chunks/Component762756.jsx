@@ -1,12 +1,12 @@
 /** Chunk was on 72853 **/
 /** chunk id: 762756, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => x
 }), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  c = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk873546 = require("./873546.js"),
   Chunk481060 = require("./481060.js"),
   Chunk599857 = require("./599857.jsx"),
@@ -16,7 +16,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk222198 = require("./222198.js");
 
-function h(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,8 +24,8 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let g = Chunk63063.Z.getArticleURL(Chunk981631.BhN.VERIFICATION_FAQ);
-class v extends(r = Chunk647438.PureComponent) {
+let h = Chunk63063.Z.getArticleURL(Chunk981631.BhN.VERIFICATION_FAQ);
+class E extends(r = Chunk647438.PureComponent) {
   renderFields() {
     let {
       types: e,
@@ -53,7 +53,7 @@ class v extends(r = Chunk647438.PureComponent) {
       children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         gap: 16,
         fullWidth: false,
-        className: c()(Chunk222198.container, {
+        className: o()(Chunk222198.container, {
           [Chunk222198.isMobile]: Chunk873546.tq
         }),
         align: "center",
@@ -78,7 +78,7 @@ class v extends(r = Chunk647438.PureComponent) {
             }), (0, Chunk951288.jsx)(Chunk481060.Text, {
               variant: "text-md/normal",
               children: Chunk388032.intl.format(Chunk388032.t["0rqMV1"], {
-                helpCenterURL: g
+                helpCenterURL: h
               })
             })]
           })]
@@ -110,7 +110,7 @@ class v extends(r = Chunk647438.PureComponent) {
               supportURL: Chunk63063.Z.getSubmitRequestURL()
             })
           }), (0, Chunk951288.jsx)("div", {
-            className: c()(Chunk222198.footer, Chunk222198.footerBullet),
+            className: o()(Chunk222198.footer, Chunk222198.footerBullet),
             children: "•"
           }), (0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-sm/semibold",
@@ -124,7 +124,7 @@ class v extends(r = Chunk647438.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), h(this, "handleClick", e => {
+    super(...e), g(this, "handleClick", e => {
       let {
         onClick: t
       } = this.props;
@@ -132,9 +132,9 @@ class v extends(r = Chunk647438.PureComponent) {
     })
   }
 }
-h(v, "defaultProps", {
+g(E, "defaultProps", {
   types: [Chunk981631.PUi.CAPTCHA],
   onCaptchaVerify: Chunk981631.dG4,
   onLogout: Chunk981631.dG4
 });
-let b = v
+let x = E

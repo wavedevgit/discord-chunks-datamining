@@ -23,8 +23,8 @@ let f = function(e) {
       text: "Consectetur adipiscing",
       variant: "primary",
       onClick: () => {
-        (null == n ? true : n.ageVerificationStatus) === l.F$.UNVERIFIED ? c.Z.showAgeVerificationGetStartedModal({
-          entryPoint: o.cU.SAFETY_FLOWS,
+        (null == n ? true : n.ageVerificationStatus) === l.F$.UNVERIFIED ? o.Z.showAgeVerificationGetStartedModal({
+          entryPoint: c.cU.SAFETY_FLOWS,
           onClose: () => t({
             type: u.rY.Empty
           })

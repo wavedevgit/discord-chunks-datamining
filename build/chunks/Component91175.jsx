@@ -1,11 +1,12 @@
 /** Chunk was on 67749 **/
-/** chunk id: 91175, original params: e,t,n (module,exports,require) **/
+/** chunk id: 91175, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => m
+  default: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk435935 = require("./435935.jsx"),
+  Chunk120356 = require("./120356.js"),
+  s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk788080 = require("./788080.js"),
   Chunk81643 = require("./81643.js"),
@@ -14,71 +15,61 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk179835 = require("./179835.js"),
   Chunk248319 = require("./248319.js");
-let m = function(e) {
+let h = function(e) {
   let {
-    onClose: t,
-    onComplete: n,
-    onCancel: m,
-    transitionState: p,
+    onClose: n,
+    onComplete: t,
+    transitionState: i,
     webviewUrl: h
-  } = e, g = (0, r.GE)(), [k, v] = i.useState(0), j = i.useCallback(() => {
-    n(), t()
-  }, [n, t]), C = i.useCallback(() => {
-    (0, o.nfh)(c.zJ) && j()
-  }, [j]);
-  (0, l.F5)(C);
-  let _ = i.useCallback(e => {
-      if (g && "" !== h) {
-        var t;
-        (null == e || null == (t = e.data) ? true : t.eventType) === "Verification.Result" && j()
+  } = e, b = (0, r.GE)(), [x, C] = l.useState(0), k = l.useCallback(() => {
+    t(), n()
+  }, [t, n]), _ = l.useCallback(() => {
+    (0, o.nfh)(d.zJ) && k()
+  }, [k]);
+  (0, c.F5)(_);
+  let v = l.useCallback(e => {
+      if (b && "" !== h) {
+        var n;
+        (null == e || null == (n = e.data) ? true : n.eventType) === "Verification.Result" && k()
       }
-    }, [h, j, g]),
-    b = i.useCallback(() => {
-      v(k + 1)
-    }, [k]);
-  return i.useEffect(() => (window.addEventListener("message", _), () => {
-    window.removeEventListener("message", _)
-  }), [_]), (0, a.jsxs)(o.Y0X, {
+    }, [h, k, b]),
+    g = l.useCallback(() => {
+      C(x + 1)
+    }, [x]);
+  return l.useEffect(() => (window.addEventListener("message", v), () => {
+    window.removeEventListener("message", v)
+  }), [v]), (0, a.jsxs)(o.Y0X, {
     "data-migration-pending": true,
-    transitionState: p,
-    className: x.root,
+    transitionState: i,
+    className: s()(p.root, m.fullbleedContent),
     parentComponent: "AgeVerificationExpressiveModal",
     size: o.CgR.MEDIUM,
-    children: [(0, a.jsxs)(o.xBx, {
-      justify: s.k.Justify.BETWEEN,
-      children: [(0, a.jsx)(o.X6q, {
-        variant: "heading-lg/semibold",
-        children: u.intl.string(u.t.JHNunp)
-      }), (0, a.jsx)(o.olH, {
-        onClick: m
-      })]
-    }), (0, a.jsx)(o.hzk, {
+    children: [(0, a.jsx)(o.hzk, {
       "data-migration-pending": true,
-      className: x.content,
+      className: s()(p.content, p.fullbleed),
       scrollbarType: "none",
       children: (0, a.jsx)("iframe", {
         id: "frame",
         src: h,
-        className: x.iframe,
+        className: p.iframe,
         allow: "camera; microphone"
-      }, k)
-    }), (0, a.jsx)("div", {
-      className: f.floatingFooter,
-      children: (0, a.jsx)("div", {
-        className: f.footerButtons,
-        children: (0, a.jsxs)(o.hE2, {
-          children: [(0, a.jsx)(o.zxk, {
-            variant: "secondary",
-            icon: o.j9r,
-            text: u.intl.string(d.default.b7Oqdn),
-            onClick: t
-          }), (0, a.jsx)(o.zxk, {
-            variant: "secondary",
-            icon: o.DuK,
-            text: u.intl.string(d.default["0vTx7u"]),
-            onClick: b
-          })]
-        })
+      }, x)
+    }), (0, a.jsx)(o.mzw, {
+      children: (0, a.jsxs)(o.hE2, {
+        fullWidth: true,
+        children: [(0, a.jsx)(o.zxk, {
+          fullWidth: true,
+          variant: "secondary",
+          icon: o.j9r,
+          text: f.intl.string(u.default.b7Oqdn),
+          onClick: n
+        }), (0, a.jsx)(o.zxk, {
+          fullWidth: true,
+          variant: "secondary",
+          icon: o.DuK,
+          text: f.intl.string(u.default["0vTx7u"]),
+          onClick: g
+        })]
       })
     })]
   })

@@ -32,7 +32,7 @@ function u(e, t, n, i) {
         })
       }, t), n
     }(t.map(m), [t, m, ...u]),
-    h = function(e) {
+    g = function(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [],
         [n, i] = r.useState(e),
         l = r.useRef(e);
@@ -48,7 +48,7 @@ function u(e, t, n, i) {
   r.useEffect(() => {
     p.current = n
   }, [n]);
-  let g = r.useMemo(() => {
+  let h = r.useMemo(() => {
     let {
       throttleMs: e = 200,
       throttleLeading: t = true,
@@ -62,8 +62,8 @@ function u(e, t, n, i) {
         var i;
         let a = null != (i = r.promiseUuid) ? i : (0, l.uniqueId)(),
           {
-            searchType: u = o.S.FUZZY,
-            sortType: d = o.E.NONE,
+            searchType: u = c.S.FUZZY,
+            sortType: d = c.E.NONE,
             jaroWinklerSearchThreshold: f = .85
           } = r;
         return new Promise(r => {
@@ -74,7 +74,7 @@ function u(e, t, n, i) {
                 foundItemIndexes: l
               }
             } = t;
-            a === n && (r(l.map(t => e[t]).filter(c.lm)), null == s || s.removeEventListener("message", i))
+            a === n && (r(l.map(t => e[t]).filter(o.lm)), null == s || s.removeEventListener("message", i))
           };
           null == s || s.addEventListener("message", i), null == s || s.postMessage({
             id: a,
@@ -112,8 +112,8 @@ function u(e, t, n, i) {
     }), f.current
   }, [i]);
   return r.useEffect(() => {
-    g(e, h, y)
-  }, [g, e, h, y, ...u]), r.useEffect(() => () => {
+    h(e, g, y)
+  }, [h, e, g, y, ...u]), r.useEffect(() => () => {
     null != f.current && f.current.cancel(), f.current = null, d.current = null
-  }, [y, n, i]), g
+  }, [y, n, i]), h
 }
