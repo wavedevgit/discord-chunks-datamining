@@ -1,5 +1,5 @@
 /** Chunk was on 25120 **/
-/** chunk id: 926281, original params: e,t,r (module,exports,require) **/
+/** chunk id: 926281, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => p
 }), require("./388685.js");
@@ -12,42 +12,42 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function d(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = n
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function b(e, t) {
+function d(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var r = Object.keys(e);
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      r.push.apply(r, n)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
-    return r
-  })(Object(t)).forEach(function(r) {
-    Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function p(e) {
   let {
     modalProps: t,
-    onConfirm: r
+    onConfirm: n
   } = e, [p, g] = i.useState({
     Account: {
       value: "Account",
@@ -74,11 +74,6 @@ function p(e) {
       label: u.intl.string(u.t["0dO1t7"]),
       checked: false
     },
-    Programs: {
-      value: "Programs",
-      label: u.intl.string(u.t.M4ddeX),
-      checked: false
-    },
     Servers: {
       value: "Servers",
       label: u.intl.string(u.t.JN9c39),
@@ -90,7 +85,7 @@ function p(e) {
       checked: false
     }
   }), [v, y] = i.useState(false), O = Object.values(p).some(e => e.checked);
-  return (0, n.jsx)(l.Modal, {
+  return (0, r.jsx)(l.Modal, {
     title: u.intl.string(u.t.jxXMEx),
     subtitle: u.intl.format(u.t.fSv59f, {
       helpdeskArticle: a.Z.getArticleURL(o.BhN.GDPR_PACKAGE_CONTENTS)
@@ -108,34 +103,34 @@ function p(e) {
       onClick: () => {
         if (!O) return void y(true);
         let e = Object.keys(p).filter(e => p[e].checked).map(e => p[e].value);
-        null == r || r(e), t.onClose()
+        null == n || n(e), t.onClose()
       },
       variant: "primary"
     }],
-    children: (0, n.jsxs)(s.Kqy, {
+    children: (0, r.jsxs)(s.Kqy, {
       direction: "vertical",
       gap: 8,
       children: [Object.keys(p).map(e => {
         let {
           label: t,
-          checked: r
+          checked: n
         } = p[e];
-        return (0, n.jsx)(c.$q, {
+        return (0, r.jsx)(c.$q, {
           type: c.M0.INVERTED,
-          value: r,
-          onChange: (t, r) => {
-            g(t => b(d({}, t), {
-              [e]: b(d({}, t[e]), {
-                checked: r
+          value: n,
+          onChange: (t, n) => {
+            g(t => d(b({}, t), {
+              [e]: d(b({}, t[e]), {
+                checked: n
               })
-            })), r && v && y(false)
+            })), n && v && y(false)
           },
-          children: (0, n.jsx)(s.Text, {
+          children: (0, r.jsx)(s.Text, {
             variant: "text-md/normal",
             children: t
           })
         }, e)
-      }), v && (0, n.jsx)(s.Text, {
+      }), v && (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "text-danger",
         children: u.intl.string(u.t.W1Rw3N)

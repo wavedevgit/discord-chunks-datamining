@@ -782,6 +782,12 @@ let q = {
       } = this.getDiscordUtils();
       return null != module ? module() : Promise.reject(Error("System service native not available"))
     },
+    InputEventServiceSetStatusCallback(e) {
+      let {
+        inputEventServiceSetStatusCallback: t
+      } = this.getDiscordUtils();
+      null != t && t(e)
+    },
     InputEventServiceSetAllowed(e) {
       let {
         inputEventServiceSetAllowed: t

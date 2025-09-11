@@ -49,7 +49,9 @@ function y(e) {
 }
 
 function O(e) {
-  c.isPlatformEmbedded && (d.ZP.InputEventServiceSetAllowed(true), a.Z.dispatch({
+  c.isPlatformEmbedded && (d.ZP.InputEventServiceSetStatusCallback(e => {
+    h.info("Keybinds helper status changed", e)
+  }), d.ZP.InputEventServiceSetAllowed(true), a.Z.dispatch({
     type: "SYSTEM_SERVICE_INITIALIZE",
     initialized: true,
     modules: ["input-service"]
