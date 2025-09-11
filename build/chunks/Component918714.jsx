@@ -95,7 +95,7 @@ let x = function(e) {
       className: g.artwork,
       src: b,
       alt: ""
-    }), S ? (0, r.jsx)(c.default, {
+    }), S ? (0, r.jsx)(c.Z, {
       transitionState: l.Dvm.ENTERED,
       entryPoint: o.cU.SAFETY_FLOWS,
       onClose: async () => {},

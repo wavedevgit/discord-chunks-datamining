@@ -82,23 +82,26 @@ function C() {
 
 function N(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-    n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : null;
-  arguments.length > 3 && arguments[3];
-  let [o, s] = r.useState(false), u = (0, i.e7)([f.default], () => f.default.getCurrentUser()), {
-    current: d
-  } = r.useRef(null == u ? true : u.ageVerificationStatus), h = r.useCallback(() => {
-    a.Z.dispatch({
-      type: "CLOSE_AGE_VERIFICATION_MODAL",
-      status: d
-    }), t || c.Z.maybeOpenAgeVerificationUserFeedback({
-      location: "age_verification_intro_screen",
-      visibleContent: n
-    })
-  }, [d, t, n]);
+    n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : null,
+    o = arguments.length > 3 && true !== arguments[3] && arguments[3],
+    [s, u] = r.useState(false),
+    d = (0, i.e7)([f.default], () => f.default.getCurrentUser()),
+    {
+      current: h
+    } = r.useRef(null == d ? true : d.ageVerificationStatus),
+    m = r.useCallback(() => {
+      a.Z.dispatch({
+        type: "CLOSE_AGE_VERIFICATION_MODAL",
+        status: h
+      }), t || c.Z.maybeOpenAgeVerificationUserFeedback({
+        location: "age_verification_intro_screen",
+        visibleContent: n
+      })
+    }, [h, t, n]);
   return {
-    loading: o,
+    loading: s,
     initiateAgeVerification: r.useCallback(async (t, n) => {
-      s(true);
+      u(true);
       try {
         a.Z.dispatch({
           type: "INITIATE_AGE_VERIFICATION"
@@ -107,16 +110,17 @@ function N(e) {
         _.Z.showAgeVerification({
           webviewUrl: r.verification_webview_url,
           onComplete: e,
-          onClose: h,
-          onCancel: h,
-          entryPoint: t
+          onClose: m,
+          onCancel: m,
+          entryPoint: t,
+          shouldShowExpressiveModal: o
         })
       } catch (e) {
-        l.Z.showFailedToast(g.wQ.TIGGER_PAWTECT_ERROR), h()
+        l.Z.showFailedToast(g.wQ.TIGGER_PAWTECT_ERROR), m()
       } finally {
-        s(false)
+        u(false)
       }
-    }, [e, h])
+    }, [e, m, o])
   }
 }
 

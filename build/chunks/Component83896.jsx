@@ -2,7 +2,7 @@
 /** chunk id: 83896, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   I: () => O
-});
+}), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
@@ -47,17 +47,19 @@ function O(e) {
       }))
     }, [j, E, n.guild_id, n.id]),
     Z = i.useCallback(() => {
-      if (!j || !S) return;
-      let e = t.state;
-      if (e === y.tN.CUSTOM) {
-        if (null == t.details || null == t.emoji) return;
-        (0, f._s)(t.details, t.emoji, true)
-      } else(0, f.Zx)(e, true);
-      h.default.track(_.rMx.SWIPE_HANG_STATUS, {
-        guild_id: n.guild_id,
-        channel_id: n.id,
-        media_session_id: I
-      })
+      if (!j || !S || null == t.state) return;
+      let [e] = (0, m.Fe)(t.state);
+      if (null != e) {
+        if (e === y.tN.CUSTOM) {
+          if (null == t.details || null == t.emoji) return;
+          (0, f._s)(t.details, t.emoji, true)
+        } else(0, f.Zx)(e, true);
+        h.default.track(_.rMx.SWIPE_HANG_STATUS, {
+          guild_id: n.guild_id,
+          channel_id: n.id,
+          media_session_id: I
+        })
+      }
     }, [j, S, t, I, n.guild_id, n.id]);
   return (0, r.jsxs)("div", {
     ref: O,

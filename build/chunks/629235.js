@@ -20,7 +20,7 @@ let d = function(e, t) {
     loading: a.Z.loading
   })), {
     initiateAgeVerification: f
-  } = (0, c.WD)(e);
+  } = (0, c.WD)(e, false, null, true);
   return r.useEffect(() => {
     null == n && (0, o.J)()
   }, [n]), {
