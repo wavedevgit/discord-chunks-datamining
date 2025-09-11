@@ -61,7 +61,9 @@ function m() {
         });
         (null == Chunk647438 ? true : Chunk647438.entitlement) ? ((0, Chunk219333.j)({
           campaignID: Chunk304426.C
-        }), null == require || require(Chunk647438.entitlement)) : (module || h(), Chunk960048.Z.captureException(Error("Failed to redeem September 2025 Marketing Moment reward")))
+        }), null == require || require(Chunk647438.entitlement)) : ((null == Chunk647438 ? true : Chunk647438.reason) === "reward_already_granted" ? ((0, Chunk219333.j)({
+          campaignID: Chunk304426.C
+        }), Chunk960048.Z.captureMessage("September 2025 Marketing Moment reward already granted")) : Chunk960048.Z.captureException(Error("Failed to redeem September 2025 Marketing Moment reward")), module || h())
       } catch (e) {
         Chunk960048.Z.captureException(module)
       } finally {

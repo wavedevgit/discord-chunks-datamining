@@ -1369,16 +1369,16 @@
             })[e]
           }
 
-          function e6() {
+          function e5() {
             this.M = [true], this.hb = []
           }
-          var e5 = new e6,
+          var e6 = new e5,
             e7 = true;
 
           function e9(e) {
             throw new e7(e)
           }
-          var te = e => (e || e9("Cannot use deleted val. handle = " + e), e5.get(e).value),
+          var te = e => (e || e9("Cannot use deleted val. handle = " + e), e6.get(e).value),
             tt = e => {
               switch (e) {
                 case true:
@@ -1388,7 +1388,7 @@
                   casetrue: return 3;
                   casefalse: return 4;
                 default:
-                  return e5.pa({
+                  return e6.pa({
                     tb: 1,
                     value: e
                   })
@@ -1687,7 +1687,7 @@
           }
 
           function t$(e) {
-            e >= e5.h && 0 == --e5.get(e).tb && e5.Zb(e)
+            e >= e6.h && 0 == --e6.get(e).tb && e6.Zb(e)
           }
 
           function t0(e, t, n) {
@@ -1765,7 +1765,7 @@
               }
               return n
             },
-            t6 = (e, t, n) => {
+            t5 = (e, t, n) => {
               if (true === n && (n = 0x7fffffff), 2 > n) return 0;
               n -= 2;
               var r = t;
@@ -1773,7 +1773,7 @@
               for (var i = 0; i < n; ++i) A[t >> 1] = e.charCodeAt(i), t += 2;
               return A[t >> 1] = 0, t - r
             },
-            t5 = e => 2 * e.length,
+            t6 = e => 2 * e.length,
             t7 = (e, t) => {
               for (var n = 0, r = ""; !(n >= t / 4);) {
                 var i = N[e + 4 * n >> 2];
@@ -2035,7 +2035,7 @@
                 }, t
               }
             }, "/proc/self/fd")
-          })(), Object.assign(e6.prototype, {
+          })(), Object.assign(e5.prototype, {
             get(e) {
               return this.M[e]
             },
@@ -2053,7 +2053,7 @@
             constructor(e) {
               super(e), this.name = "BindingError"
             }
-          }, e5.M.push({
+          }, e6.M.push({
             value: true
           }, {
             value: null
@@ -2061,8 +2061,8 @@
             value: true
           }, {
             value: false
-          }), e5.h = e5.M.length, a.count_emval_handles = function() {
-            for (var e = 0, t = e5.h; t < e5.M.length; ++t) true !== e5.M[t] && ++e;
+          }), e6.h = e6.M.length, a.count_emval_handles = function() {
+            for (var e = 0, t = e6.h; t < e6.M.length; ++t) true !== e6.M[t] && ++e;
             return e
           }, tr = a.PureVirtualError = tn("PureVirtualError");
           for (var nm = Array(256), ng = 0; 256 > ng; ++ng) nm[ng] = String.fromCharCode(ng);
@@ -2624,8 +2624,8 @@
             },
             _embind_register_std_wstring: function(e, t, n) {
               if (n = ta(n), 2 === t) var r = t8,
-                i = t6,
-                a = t5,
+                i = t5,
+                a = t6,
                 o = () => C,
                 s = 1;
               else 4 === t && (r = t7, i = t9, a = ne, o = () => R, s = 2);
@@ -2716,7 +2716,7 @@
               return tt((e = te(e))[t = te(t)])
             },
             _emval_incref: function(e) {
-              4 < e && (e5.get(e).tb += 1)
+              4 < e && (e6.get(e).tb += 1)
             },
             _emval_new_array: function() {
               return tt([])
