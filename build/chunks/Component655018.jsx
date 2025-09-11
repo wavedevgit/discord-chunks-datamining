@@ -34,7 +34,7 @@ function Z(e) {
   var t, n;
   let {
     channel: l,
-    onEditStatus: o,
+    setIsHangStatusInputFocused: o,
     setPopoutRef: Z
   } = e, T = i.useRef(null), N = (0, u.e7)([b.Z], () => b.Z.getCustomHangStatus()), A = i.useRef(b.Z.getRecentCustomStatuses()), {
     defaultStatusVariant: w
@@ -54,7 +54,7 @@ function Z(e) {
     }
   }, [k]), i.useEffect(() => {
     var e;
-    D === (null != (e = null == N ? true : N.status) ? e : "") && s()(k, null == N ? true : N.emoji) ? o(false) : o(true)
+    D !== (null != (e = null == N ? true : N.status) ? e : "") && "" !== D.trim() ? o(true) : o(false)
   }, [D, null == N ? true : N.status, k, null == N ? true : N.emoji, o]), i.useEffect(() => {
     var e;
     (null == B || B === j.tN.CUSTOM) && (null == (e = T.current) || e.focus())
@@ -96,7 +96,14 @@ function Z(e) {
           }, 1 === V.length)) break
       } while (null == e || (null == e ? true : e.name) == null || s()(null == N ? true : N.emoji, t));
       null != t && (null == e ? true : e.name) != null && (U(t), L(e.name))
-    }, [V, null == N ? true : N.emoji]);
+    }, [V, null == N ? true : N.emoji]),
+    K = i.useCallback(() => {
+      o(false)
+    }, [o]),
+    X = i.useCallback(() => {
+      var e;
+      D !== (null != (e = null == N ? true : N.status) ? e : "") && "" !== D.trim() ? o(true) : o(false)
+    }, [o, D, null == N ? true : N.status]);
   return (0, r.jsxs)("div", {
     ref: M,
     role: "menu",
@@ -112,6 +119,8 @@ function Z(e) {
         children: [(0, r.jsx)(d.oil, {
           inputRef: T,
           value: D,
+          onBlur: K,
+          onFocus: X,
           onChange: e => L(e.substring(0, j.s0)),
           placeholder: S.intl.string(S.t.KPop4u),
           leading: {
