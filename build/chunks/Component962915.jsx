@@ -64,7 +64,9 @@ let h = e => {
             if (g) return void t();
             e()
           }, 1e3)
-        })
+        }),
+        pauseDuration: null,
+        setPauseDuration: () => {}
       },
       children: O
     })

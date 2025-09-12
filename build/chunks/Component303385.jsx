@@ -31,7 +31,7 @@ let p = 64,
     } = (0, c.n)({
       location: d.dr.QUESTS_BAR,
       questConfig: t.config
-    }), y = null == b ? true : b.progressBlur, O = (null == b ? true : b.label1) || (null == b ? true : b.label2), v = null == b ? true : b.shineWipe, I = y ? 70 : 48, T = y ? 12 : 8, S = y ? false : false, A = y ? 2 : O ? false : 6, C = 12;
+    }), y = null == b ? true : b.progressBlur, O = (null == b ? true : b.label1) || (null == b ? true : b.label2), v = null == b ? true : b.shineWipe, I = y ? 70 : 48, T = y ? 12 : 8, S = y ? false : false, A = y ? 0 : O ? false : 6, C = 12;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.animated.div, {
         className: _.rewardTileContainer,

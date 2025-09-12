@@ -23,6 +23,8 @@ let o = Chunk647438.createContext({
     renewalInvoice: null,
     renewalInvoiceDetails: null,
     handleCancellation: async () => {},
-    applyOffer: async () => {}
+    applyOffer: async () => {},
+    pauseDuration: null,
+    setPauseDuration: () => {}
   }),
   s = () => Chunk647438.useContext(o)
