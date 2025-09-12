@@ -345,6 +345,10 @@ let Z = {
   [Chunk981631.rMx.AD_IDENTIFIER_FETCHED]: {
     throttlePeriod: j,
     throttleKeys: () => []
+  },
+  [Chunk981631.rMx.ACTIVITY_PANEL_SDK_LINK_VIEWED]: {
+    throttlePeriod: j,
+    throttleKeys: e => [e.application_id]
   }
 };
 
