@@ -45,7 +45,7 @@ function Z(e) {
   i.useEffect(() => {
     f.ZP.forEach(e => H.current.push(e))
   }, []);
-  let F = null == D || null == k || "" === D.trim(),
+  let F = null == D || "" === D.trim(),
     V = i.useMemo(() => [...Object.values(G).map(e => e.emojis.filter(e => (0, _.K)(e, l))).flat(), ...H.current], [G, l]);
   i.useEffect(() => {
     if (null != k) {
@@ -77,7 +77,11 @@ function Z(e) {
       var t;
       null == (t = e.preventDefault) || t.call(e), F || W({
         status: D,
-        emoji: k
+        emoji: null != k ? k : {
+          id: null,
+          name: "\uD83D\uDCAD",
+          animated: false
+        }
       })
     }, [D, k, W, F]),
     Y = i.useCallback(() => {

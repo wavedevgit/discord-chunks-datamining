@@ -35,8 +35,8 @@ function p(e) {
       [u.isSelected]: l
     }),
     children: [n, (0, r.jsx)(s.Text, {
-      color: g ? "text-danger" : "text-secondary",
-      variant: "text-sm/normal",
+      color: g ? "text-danger" : f || l ? "text-primary" : "text-secondary",
+      variant: "text-sm/medium",
       className: u.itemText,
       children: b
     }), l && (0, r.jsx)(s.k$p, {
