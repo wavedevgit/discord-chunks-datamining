@@ -283,7 +283,7 @@ let eu = (e, t) => {
       diversitySurrogate: e3
     } = (0, u.cj)([O.ZP], () => ({
       diversitySurrogate: O.ZP.diversitySurrogate
-    })), e4 = (0, U.DV)(eB, c, l, eP), e8 = null == e4 ? 0 : e4.locked.length + e4.unlocked.length, e6 = D.d4.useSetting(), e5 = i.useMemo(() => new Set(e6), [e6]), e7 = i.useCallback(e => {
+    })), e4 = (0, U.DV)(eB, c, l, eP), e8 = null == e4 ? 0 : e4.locked.length + e4.unlocked.length, e5 = D.d4.useSetting(), e6 = i.useMemo(() => new Set(e5), [e5]), e7 = i.useCallback(e => {
       D.d4.updateSetting(Array.from(e))
     }, []), e9 = (0, C.ep)({
       gridWrapperRef: eZ,
@@ -301,7 +301,7 @@ let eu = (e, t) => {
       includeCreateEmojiButton: et,
       pickerIntention: l,
       emojiSearchResults: e4,
-      collapsedSections: e5,
+      collapsedSections: e6,
       emojiPaddingHorizontal: ea,
       emojiSpriteSize: A,
       shouldShowSoundmojiInEmojiPicker: eR,
@@ -483,7 +483,7 @@ let eu = (e, t) => {
               id: X.Vr
             }, tu), {
               children: tp ? (0, r.jsx)(K.Z, {
-                collapsedSections: e5,
+                collapsedSections: e6,
                 diversitySurrogate: e3,
                 emojiGrid: tn,
                 emojiListRef: eF,
