@@ -216,7 +216,8 @@ function S(e) {
         default:
           return (0, u.vE)(e)
       }
-    }
+    },
+    size: "sm"
   }) : (0, f.$J)(C) && !M && $ !== h.LI.DESKTOP ? k ? (0, r.jsx)("div", {
     className: O.button,
     children: (0, r.jsx)(o.zxk, {
@@ -313,7 +314,8 @@ function S(e) {
             case b.cd.CONSOLE:
               return y.intl.string(y.t["8lAfuL"])
           }
-        }
+        },
+        size: "sm"
       })
     })]
   })
