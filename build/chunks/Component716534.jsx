@@ -186,8 +186,8 @@ function Q(e) {
       entitlements: e4
     } = (0, V.H)(eU.id, eD),
     e8 = (0, P.Ap)(et.paymentSourceId),
-    e5 = (0, O.sE)(ec, e1, J),
-    e6 = (0, v.Kp)({
+    e6 = (0, O.sE)(ec, e1, J),
+    e5 = (0, v.Kp)({
       isTrial: em,
       isGift: eD,
       selectedSkuId: eO,
@@ -203,7 +203,7 @@ function Q(e) {
       excludeReverseTrial: false,
       excludeReverseTrialFromCountdown: true
     }),
-    tt = !e6 && te.isFractionalPremiumActive && Y.dJ.has(J),
+    tt = !e5 && te.isFractionalPremiumActive && Y.dJ.has(J),
     tn = i.useMemo(() => (0, P.V7)({
       skuId: eO,
       isPremium: eI,
@@ -211,7 +211,7 @@ function Q(e) {
       currentSubscription: ey,
       defaultPlanId: ev
     }), [eO, ey, ev, eI]),
-    tr = (0, v.$g)(e6, eH, eU),
+    tr = (0, v.$g)(e5, eH, eU),
     ti = i.useMemo(() => em && null != eH ? eH : eC && null != eW ? eW : true, [eC, em, eH, eW]);
   if (i.useEffect(() => {
       eD ? eS(eX) : eS(eH)
@@ -291,7 +291,7 @@ function Q(e) {
     });
   eD && !eJ ? tc = z.intl.string(z.t.J5a0eX) : eD && eJ ? tc = "" : (0, P.PV)(eU.id) && (tc = P.ZP.getBillingReviewSubheader(null, eU));
   let tu = null != eV && eV.length > 0 && (e1 === C.c || null === e2) && eR ? B.w.SELECT_PAYMENT_METHOD : true;
-  return e5 ? null : (0, r.jsxs)("div", {
+  return e6 ? null : (0, r.jsxs)("div", {
     className: q.stepBody,
     children: [(0, r.jsx)(B.Y, {
       paymentRestrictionBannerType: tu
@@ -307,7 +307,7 @@ function Q(e) {
         variant: "text-sm/normal",
         children: ed
       })]
-    }), e6 && (0, r.jsxs)("div", {
+    }), e5 && (0, r.jsxs)("div", {
       children: [(0, r.jsx)(k.UN, {
         negativeMarginTop: true,
         negativeMarginBottom: true
