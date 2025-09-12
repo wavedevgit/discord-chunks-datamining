@@ -3,7 +3,7 @@
 require.d(exports, {
   Tj: () => m,
   WG: () => c,
-  ZD: () => f,
+  ZD: () => p,
   pD: () => d
 }), require("./953529.js"), require("./539854.js");
 var Chunk990547 = require("./990547.js"),
@@ -38,18 +38,18 @@ function m() {
     emoji: "410336837563973632",
     value: 1
   }, {
-    title: Chunk388032.intl.string(Chunk388032.t.Ia0skZ),
-    description: Chunk388032.intl.format(Chunk388032.t.D4rbgY, {}),
+    title: Chunk388032.intl.string(Chunk388032.t["9LSuy8"]),
+    description: Chunk388032.intl.format(Chunk388032.t.nC7pv7, {}),
     emoji: "841420679643529296",
     value: 2
   }, {
-    title: Chunk388032.intl.string(Chunk388032.t.KGsyFx),
-    description: Chunk388032.intl.format(Chunk388032.t.Kmg64O, {}),
+    title: Chunk388032.intl.string(Chunk388032.t.Ia0skZ),
+    description: Chunk388032.intl.format(Chunk388032.t.D4rbgY, {}),
     emoji: "827645852352512021",
     value: 3
   }]
 }
-async function f(e, t, n) {
+async function p(e, t, n) {
   var i, u;
   let c = [{
     name: "name",

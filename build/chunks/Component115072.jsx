@@ -35,7 +35,7 @@ function w(e) {
   let {
     transitionState: k,
     onClose: D
-  } = e, T = i.useRef(null), N = i.useRef(null), [A, R] = i.useState(""), [L, I] = i.useState(""), [W, Z] = i.useState(), [q, z] = i.useState(""), [M, B] = i.useState([]), [V, G] = i.useState(), [H, U] = i.useState(), [X, J] = i.useState(false), [K, Y] = i.useState(""), [F, Q] = i.useState(function(e) {
+  } = e, T = i.useRef(null), N = i.useRef(null), [A, L] = i.useState(""), [R, I] = i.useState(""), [W, Z] = i.useState(), [q, z] = i.useState(""), [M, B] = i.useState([]), [V, G] = i.useState(), [H, U] = i.useState(), [X, J] = i.useState(false), [Y, K] = i.useState(""), [F, Q] = i.useState(function(e) {
     switch (e) {
       case "windows":
         return "Windows";
@@ -45,7 +45,7 @@ function w(e) {
         return "Linux"
     }
     return ""
-  }((0, j.getOS)())), [$, ee] = i.useState(""), [et, en] = i.useState(""), [er, ei] = i.useState(""), [el, ea] = i.useState(""), [eo, es] = i.useState(false), [eu, ec] = i.useState(false), [ed, em] = i.useState(false), [ef, ep] = i.useState(null);
+  }((0, j.getOS)())), [$, ee] = i.useState(""), [et, en] = i.useState(""), [er, ei] = i.useState(""), [el, ea] = i.useState(""), [eo, es] = i.useState(false), [eu, ec] = i.useState(false), [ed, em] = i.useState(false), [ep, ef] = i.useState(null);
   i.useEffect(() => {
     let e = Math.random().toString(16).slice(2);
     o.tn.get({
@@ -55,11 +55,11 @@ function w(e) {
       },
       rejectWithError: true
     }).then(e => {
-      if (null != e.body && "5136c6fa06293f8821c529eb0f7c66c3f7b90268" !== e.body.hash) {
-        let e = new Date("1757634216671"),
+      if (null != e.body && "63473347500177420526b63525efd46743161135" !== e.body.hash) {
+        let e = new Date("1757638730097"),
           t = new Date,
           n = (0, y.TD)(t, e);
-        n.hours > 6 && ep(n.hours)
+        n.hours > 6 && ef(n.hours)
       }
     })
   }, []);
@@ -76,7 +76,7 @@ function w(e) {
     };
   async function eg() {
     var e, t;
-    if (em(false), "" === A || "" === L || null == W) return void es(true);
+    if (em(false), "" === A || "" === R || null == W) return void es(true);
     let i = null == V || null == (e = V.features) ? true : e.find(e => (0, b.pD)(e) === H);
     ec(true), es(false);
     let l = (0, O.D)(M.map(e => {
@@ -87,14 +87,14 @@ function w(e) {
       })),
       a = await (0, b.ZD)({
         name: A,
-        description: L,
+        description: R,
         priority: W,
         feature: i,
         url: q,
         buildOverride: null != (t = null == ev ? true : ev.id) ? t : null
       }, true === X ? {
         overridePlatformInformation: X,
-        device: K,
+        device: Y,
         operatingSystem: F,
         operatingSystemVersion: $,
         clientVersion: et,
@@ -191,10 +191,10 @@ function w(e) {
             })
           }),
           title: _.intl.string(_.t["ZP/hEx"])
-        }), null == ev && null != ef && (0, r.jsx)(u.ToO, {
+        }), null == ev && null != ep && (0, r.jsx)(u.ToO, {
           type: u.ToO.Types.DANGER,
           title: _.intl.formatToPlainString(_.t["ql2Q/f"], {
-            hours: ef
+            hours: ep
           }),
           body: _.intl.string(_.t.x18RUl)
         }), (0, r.jsxs)(u.Kqy, {
@@ -210,13 +210,13 @@ function w(e) {
             type: "text",
             value: A,
             maxLength: 100,
-            onChange: R
+            onChange: L
           }), (0, r.jsxs)(u.xJW, {
-            error: eo && "" === L ? _.intl.string(_.t.EkokLy) : null,
+            error: eo && "" === R ? _.intl.string(_.t.EkokLy) : null,
             title: _.intl.string(_.t["1SplHx"]),
             children: [(0, r.jsx)(u.Kx8, {
               placeholder: "What did you expect to see?",
-              value: L,
+              value: R,
               onChange: I
             }), eh && (0, r.jsx)(u.R94, {
               type: u.geA.DESCRIPTION,
@@ -296,8 +296,8 @@ function w(e) {
             children: [(0, r.jsx)(u.oil, {
               label: _.intl.string(_.t.rrI4Tk),
               placeholder: "Device",
-              value: K,
-              onChange: e => Y(e)
+              value: Y,
+              onChange: e => K(e)
             }), (0, r.jsx)(u.xJW, {
               title: _.intl.string(_.t.kcHxi4),
               children: (0, r.jsx)(u.q4e, {
@@ -351,12 +351,12 @@ function w(e) {
                 className: S.attachment,
                 children: [(0, r.jsxs)("div", {
                   children: [(0, r.jsx)(h.r, {
-                    size: p.q.SMALL,
+                    size: f.q.SMALL,
                     upload: e
                   }), (0, r.jsx)("div", {
                     className: S.removeAttachment,
                     children: (0, r.jsx)(v.ZP, {
-                      children: (0, r.jsx)(f.Z, {
+                      children: (0, r.jsx)(p.Z, {
                         tooltip: _.intl.string(_.t.vN7REx),
                         onClick: () => {
                           var t;
