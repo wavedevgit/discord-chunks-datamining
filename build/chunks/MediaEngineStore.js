@@ -238,8 +238,8 @@ let ez = {},
   e3 = false,
   e4 = false,
   e8 = false,
-  e6 = false,
   e5 = false,
+  e6 = false,
   e7 = Chunk65154.Av,
   e9 = Chunk65154.Av,
   te = false,
@@ -331,12 +331,12 @@ function tk(e) {
 
 function tU() {
   var e, t, n;
-  let i = arguments.length > 0 && true !== arguments[0] ? arguments[0] : e5,
+  let i = arguments.length > 0 && true !== arguments[0] ? arguments[0] : e6,
     o = arguments.length > 1 && true !== arguments[1] ? arguments[1] : a,
     s = a;
-  if ((null == s ? true : s.desktopSource) != null && s.desktopSource.id !== (null == o || null == (e = o.desktopSource) ? true : module.id) && (null != s.desktopSource.soundshareId && (0, Chunk358085.isWindows)() && Chunk887278.pn(s.desktopSource.soundshareId), eK.setGoLiveSource(null, eJ)), (null == s ? true : s.cameraSource) != null && (s.cameraSource.videoDeviceGuid !== (null == o || null == (t = o.cameraSource) ? true : exports.videoDeviceGuid) || s.cameraSource.audioDeviceGuid !== (null == o || null == (n = o.cameraSource) ? true : require.audioDeviceGuid)) && eK.setGoLiveSource(null, eJ), e5 || i) {
+  if ((null == s ? true : s.desktopSource) != null && s.desktopSource.id !== (null == o || null == (e = o.desktopSource) ? true : module.id) && (null != s.desktopSource.soundshareId && (0, Chunk358085.isWindows)() && Chunk887278.pn(s.desktopSource.soundshareId), eK.setGoLiveSource(null, eJ)), (null == s ? true : s.cameraSource) != null && (s.cameraSource.videoDeviceGuid !== (null == o || null == (t = o.cameraSource) ? true : exports.videoDeviceGuid) || s.cameraSource.audioDeviceGuid !== (null == o || null == (n = o.cameraSource) ? true : require.audioDeviceGuid)) && eK.setGoLiveSource(null, eJ), e6 || i) {
     let e = tx().videoDeviceId;
-    e5 && module === Chunk65154.w5 && e9 === Chunk65154.w5 && e7 !== Chunk65154.Av ? e = e7 : e9 = module, e7 = (e5 = i) ? t8(e2, module) : Chunk65154.Av, eK.setVideoInputDevice(e7)
+    e6 && module === Chunk65154.w5 && e9 === Chunk65154.w5 && e7 !== Chunk65154.Av ? e = e7 : e9 = module, e7 = (e6 = i) ? t8(e2, module) : Chunk65154.Av, eK.setVideoInputDevice(e7)
   }
   if (a = o, null != o) {
     let e = {
@@ -842,7 +842,7 @@ function t8(e, t) {
   return null != i ? i.id : t
 }
 
-function t6(e) {
+function t5(e) {
   let t = e0;
   if (e0 = t4(e, eS.intl.string(eS.t["/QIjDA"])), !p().isEqual(e0, t)) {
     let e = tx(),
@@ -851,7 +851,7 @@ function t6(e) {
   }
 }
 
-function t5(e) {
+function t6(e) {
   let t = e1;
   if (e1 = t4(e, eS.intl.string(eS.t.xlUg0t)), !p().isEqual(e1, t)) {
     let e = tx(),
@@ -863,7 +863,7 @@ function t5(e) {
 function t7(e) {
   ta = e.length > 0;
   let t = e2;
-  if (e2 = t4(e, eS.intl.string(eS.t.WKWARU)), e5 && !p().isEqual(e2, t)) {
+  if (e2 = t4(e, eS.intl.string(eS.t.WKWARU)), e6 && !p().isEqual(e2, t)) {
     var n;
     let e = true !== e2[e7],
       r = e7 === eT.w5 && (null == (n = t[eT.w5]) ? true : n.disabled);
@@ -929,7 +929,7 @@ function nt(e, t) {
 }
 
 function nn(e) {
-  i = e.sessionId, e3 = false, e6 = false;
+  i = e.sessionId, e3 = false, e5 = false;
   let t = tx();
   if (tq() && (tX() ? rn(eT.iA.AUTOMATIC) : t.automaticAudioSubsystem && rr()), eK.supports(eT.AN.OFFLOAD_ADM_CONTROLS)) {
     let e = false;
@@ -995,10 +995,10 @@ function ns(e) {
   } = e;
   return t.reduce((e, t) => {
     if (i === t.sessionId) {
-      e3 = t.mute || t.suppress, e6 = t.deaf, eK.eachConnection(tM);
+      e3 = t.mute || t.suppress, e5 = t.deaf, eK.eachConnection(tM);
       let e = null != t.guildId && null != t.channelId && null != tE && tE !== t.channelId,
         n = !tc && null == t.channelId;
-      return tU(!e && !n && e5), tE = t.channelId, true
+      return tU(!e && !n && e6), tE = t.channelId, true
     }
     return __OVERLAY__ || t.userId !== ed.default.getId() || null != eh.Z.getChannelId() || tU(false, null), e
   }, false)
@@ -1249,7 +1249,7 @@ function nC(e) {
     outputDevices: n,
     videoDevices: r
   } = e;
-  t6(t), t5(n), t7(r)
+  t5(t), t6(n), t7(r)
 }
 
 function nN(e) {
@@ -1478,7 +1478,7 @@ function n1(e) {
       tv = true, eK.eachConnection(tM);
       break;
     case eO.Eu.CAMERA:
-      !r && e5 && tU(false);
+      !r && e6 && tU(false);
       break;
     default:
       returnfalse
@@ -1523,7 +1523,7 @@ function n8() {
   }) : (tu = true, n3())
 }
 
-function n6(e) {
+function n5(e) {
   let {
     enabled: t
   } = e;
@@ -1535,7 +1535,7 @@ function n6(e) {
   })
 }
 
-function n5(e) {
+function n6(e) {
   let {
     newVoiceFilterId: t
   } = e;
@@ -1714,7 +1714,7 @@ function rf(e) {
     eo.isPlatformEmbedded && true === o && ({
       soundshareId: e,
       soundshareSession: r
-    } = ne(c), null != e && nt(e, r)), tk(s), tU(s === eT.Yn.STREAM && e5, {
+    } = ne(c), null != e && nt(e, r)), tk(s), tU(s === eT.Yn.STREAM && e6, {
       desktopSource: {
         id: i,
         sourcePid: c,
@@ -1732,7 +1732,7 @@ function rf(e) {
         videoDeviceGuid: t,
         audioDeviceGuid: n
       } = a.cameraSettings,
-      o = e === eT.Yn.STREAM && e5,
+      o = e === eT.Yn.STREAM && e6,
       s = null != (i = a.qualityOptions) ? i : {
         resolution: 720,
         frameRate: 30
@@ -1747,7 +1747,7 @@ function rf(e) {
         frameRate: s.frameRate
       }
     })
-  } else tU(e5, null)
+  } else tU(e6, null)
 }
 
 function r_(e) {
@@ -1786,7 +1786,7 @@ function rg(e) {
   let {
     state: t
   } = e, n = D.Z.isEnabled();
-  if (t === eb.$7l.BACKGROUND && e5 && !n) ti = true, tU(false);
+  if (t === eb.$7l.BACKGROUND && e6 && !n) ti = true, tU(false);
   else {
     if (t !== eb.$7l.ACTIVE || !ti) returnfalse;
     ti = false, tU(true)
@@ -1799,7 +1799,7 @@ function rE(e) {
 }
 
 function rb() {
-  if (!e5 && null == a || null != Chunk19780.Z.getRTCConnectionId()) returnfalse;
+  if (!e6 && null == a || null != Chunk19780.Z.getRTCConnectionId()) returnfalse;
   tU(false, null)
 }
 
@@ -1909,7 +1909,7 @@ class rA extends(u = Chunk442837.ZP.Store) {
     return this.isSelfMute() || e3
   }
   isDeaf() {
-    return this.isSelfDeaf() || e6
+    return this.isSelfDeaf() || e5
   }
   hasContext(e) {
     return null != ez[e]
@@ -1940,7 +1940,7 @@ class rA extends(u = Chunk442837.ZP.Store) {
     return !this.isSupported() || tx(module).deaf
   }
   isVideoEnabled() {
-    return e5 && ta
+    return e6 && ta
   }
   isVideoAvailable() {
     return Object.values(e2).some(e => {
@@ -2380,8 +2380,8 @@ let rN = r = new rA(Chunk570140.Z, {
   CLIPS_INIT: ru,
   CLIPS_SETTINGS_UPDATE: rd,
   MEDIA_ENGINE_SET_ENABLE_HARDWARE_MUTE_NOTICE: rS,
-  VOICE_FILTER_REQUEST_SWITCH: n5,
-  VOICE_FILTER_LOOPBACK_TOGGLE: n6,
+  VOICE_FILTER_REQUEST_SWITCH: n6,
+  VOICE_FILTER_LOOPBACK_TOGGLE: n5,
   VOICE_FILTER_APPLIED: n9,
   VOICE_FILTER_DOWNLOAD_FAILED: n7,
   VOICE_FILTER_APPLY_FAILED: n7
