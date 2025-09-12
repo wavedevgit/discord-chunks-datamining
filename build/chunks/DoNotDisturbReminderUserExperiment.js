@@ -1,0 +1,45 @@
+/** Chunk was on web.js **/
+/** chunk id: 809930, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  a: () => s
+});
+var Chunk818083 = require("./818083.js"),
+  Chunk141537 = require("./141537.js"),
+  Chunk202613 = require("./202613.js");
+let o = (0, Chunk818083.B)({
+    kind: "user",
+    id: "2025-08_do_not_disturb_reminder",
+    label: "Do Not Disturb Reminder",
+    defaultConfig: {
+      enabled: false,
+      titleText: Chunk202613.default["3t3FR0"],
+      bodyText: Chunk202613.default.zyFyf3
+    },
+    treatments: [{
+      id: 1,
+      label: "Enabled - Copy 1",
+      config: {
+        enabled: true,
+        titleText: Chunk202613.default["3t3FR0"],
+        bodyText: Chunk202613.default.zyFyf3
+      }
+    }, {
+      id: 2,
+      label: "Enabled - Copy 2",
+      config: {
+        enabled: true,
+        titleText: Chunk202613.default.Onha6O,
+        bodyText: Chunk202613.default["7cuAe3"]
+      }
+    }, {
+      id: 3,
+      label: "Enabled - Copy 3",
+      config: {
+        enabled: true,
+        titleText: Chunk202613.default.NtY0dX,
+        bodyText: Chunk202613.default["3nnb4u"]
+      }
+    }]
+  }),
+  s = e => (0, i.sM)(o, e)

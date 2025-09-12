@@ -2,9 +2,10 @@
 /** chunk id: 215739, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => E
 }), require("./388685.js");
-var Chunk381499 = require("./381499.js"),
+var Chunk704215 = require("./704215.js"),
+  Chunk381499 = require("./381499.js"),
   Chunk846519 = require("./846519.js"),
   Chunk147913 = require("./147913.js"),
   Chunk246133 = require("./246133.js"),
@@ -14,7 +15,7 @@ var Chunk381499 = require("./381499.js"),
   Chunk885110 = require("./885110.js"),
   Chunk981631 = require("./981631.js");
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,62 +23,69 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let _ = new Chunk846519.V7,
-  p = new Chunk846519.V7,
-  h = new Chunk846519.V7;
-class m extends Chunk147913.Z {
+let p = new Chunk846519.V7,
+  h = new Chunk846519.V7,
+  m = new Chunk846519.V7;
+class g extends Chunk147913.Z {
   constructor(...e) {
-    super(...e), f(this, "actions", {
-      USER_SETTINGS_PROTO_UPDATE: () => this.handleUpdateProto(),
-      POST_CONNECTION_OPEN: () => this.handleUpdateProto()
-    }), f(this, "handleUpdateProto", () => {
-      this.manageExpiringCustomStatus(), this.manageExpiringStatus(), this.lazilyMigrateStatusCreatedAt(), this.manageExpiringFocusMode()
-    }), f(this, "manageExpiringCustomStatus", () => {
-      let e = l.Ok.getSetting();
-      if (null == e) h.stop();
+    super(...e), _(this, "previousStatus", null), _(this, "actions", {
+      POST_CONNECTION_OPEN: () => this.handleUpdate(),
+      USER_SETTINGS_PROTO_UPDATE: () => this.handleUpdate()
+    }), _(this, "handleUpdate", () => {
+      this.manageExpiringCustomStatus(), this.manageExpiringStatus(), this.lazilyMigrateStatusCreatedAt(), this.manageExpiringFocusMode(), this.manageDoNotDisturbReminderPopover()
+    }), _(this, "manageExpiringCustomStatus", () => {
+      let e = c.Ok.getSetting();
+      if (null == e) m.stop();
       else if (null != e.expiresAtMs && "0" !== e.expiresAtMs) {
         let t = new Date(Number(e.expiresAtMs)).getTime() - new Date().getTime();
-        t > 0 ? h.start(t, () => {
-          l.Ok.updateSetting(true)
-        }, true) : (l.Ok.updateSetting(true), h.stop())
-      } else null != h && h.stop()
-    }), f(this, "manageExpiringStatus", () => {
-      let e = l.Cr.getSetting();
-      if (null != e && "0" !== e && u.Z.getStatus() !== d.Skl.ONLINE) {
+        t > 0 ? m.start(t, () => {
+          c.Ok.updateSetting(true)
+        }, true) : (c.Ok.updateSetting(true), m.stop())
+      } else null != m && m.stop()
+    }), _(this, "manageExpiringStatus", () => {
+      let e = c.Cr.getSetting();
+      if (null != e && "0" !== e && d.Z.getStatus() !== f.Skl.ONLINE) {
         let t = new Date(Number(e)).getTime() - new Date().getTime();
-        t > 0 ? _.start(t, () => {
-          (0, o.Z)({
-            nextStatus: d.Skl.ONLINE,
+        t > 0 ? p.start(t, () => {
+          (0, s.Z)({
+            nextStatus: f.Skl.ONLINE,
             analyticsContext: {
               location: {
-                object: d.qAy.CUSTOM_STATUS_MANAGER
+                object: f.qAy.CUSTOM_STATUS_MANAGER
               }
             }
           })
-        }, true) : ((0, o.Z)({
-          nextStatus: d.Skl.ONLINE,
+        }, true) : ((0, s.Z)({
+          nextStatus: f.Skl.ONLINE,
           analyticsContext: {
             location: {
-              object: d.qAy.CUSTOM_STATUS_MANAGER
+              object: f.qAy.CUSTOM_STATUS_MANAGER
             }
           }
-        }), _.stop())
-      } else null != _ && _.stop()
-    }), f(this, "lazilyMigrateStatusCreatedAt", () => {
-      u.Z.getStatus() !== d.Skl.ONLINE && null == l.P4.getSetting() && c.hW.updateAsync("status", e => {
-        e.statusCreatedAtMs = r.wA.create({
+        }), p.stop())
+      } else null != p && p.stop()
+    }), _(this, "lazilyMigrateStatusCreatedAt", () => {
+      d.Z.getStatus() !== f.Skl.ONLINE && null == c.P4.getSetting() && u.hW.updateAsync("status", e => {
+        e.statusCreatedAtMs = i.wA.create({
           value: "".concat(Date.now())
         })
-      }, c.fy.INFREQUENT_USER_ACTION)
-    }), f(this, "manageExpiringFocusMode", () => {
-      let e = l.fv.getSetting();
+      }, u.fy.INFREQUENT_USER_ACTION)
+    }), _(this, "manageExpiringFocusMode", () => {
+      let e = c.fv.getSetting();
       if (null != e && "0" !== e) {
         let t = new Date(Number(e)).getTime() - new Date().getTime();
-        t > 0 ? p.start(t, () => {
-          (0, s.oW)(false)
-        }, true) : ((0, s.oW)(false), p.stop())
-      } else null != p && p.stop()
+        t > 0 ? h.start(t, () => {
+          (0, l.oW)(false)
+        }, true) : ((0, l.oW)(false), h.stop())
+      } else null != h && h.stop()
+    }), _(this, "manageDoNotDisturbReminderPopover", () => {
+      if (null == this.previousStatus) {
+        this.previousStatus = d.Z.getStatus();
+        return
+      }
+      let e = d.Z.getStatus();
+      this.previousStatus !== f.Skl.DND && e === f.Skl.DND && (0, u.m4)(r.z.DO_NOT_DISTURB_REMINDER_POPOVER), this.previousStatus = e
     })
   }
 }
-let g = new m
+let E = new g

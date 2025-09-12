@@ -2,20 +2,21 @@
 /** chunk id: 675478, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  BU: () => j,
-  Cd: () => G,
-  DZ: () => D,
-  PS: () => L,
-  T6: () => R,
-  Z1: () => F,
-  aj: () => x,
-  bE: () => H,
+  BU: () => M,
+  Cd: () => B,
+  DZ: () => x,
+  PS: () => j,
+  T6: () => P,
+  Z1: () => V,
+  aj: () => L,
+  bE: () => W,
   fy: () => Chunk526761.fy,
-  hW: () => w,
-  m9: () => B,
-  nm: () => M,
-  sr: () => V,
-  w9: () => Z
+  hW: () => D,
+  m4: () => H,
+  m9: () => Z,
+  nm: () => k,
+  sr: () => Y,
+  w9: () => F
 }), require("./415506.js"), require("./388685.js"), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -70,21 +71,27 @@ function S(e, t) {
   }
   return n
 }
-let A = 5e3,
-  C = "UserSettingsProtoLastWriteTimes",
-  N = Date.now();
 
-function R() {}
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let C = 5e3,
+  N = "UserSettingsProtoLastWriteTimes",
+  R = Date.now();
+
+function P() {}
 Chunk570140.Z.subscribe("CONNECTION_OPEN", () => {
-  N = Date.now()
+  R = Date.now()
 }), Chunk570140.Z.subscribe("CONNECTION_CLOSED", () => {
-  N = Date.now()
+  R = Date.now()
 }), "undefined" != typeof document && (document.addEventListener("mousedown", () => {
-  N = 0
+  R = 0
 }), document.addEventListener("keydown", () => {
-  N = 0
+  R = 0
 }));
-class P {
+class w {
   getEditInfo() {
     return Chunk581883.Z.getFullState()[this.type]
   }
@@ -148,8 +155,8 @@ class P {
   }
   saveLastSendTime() {
     var e;
-    let t = null != (e = Chunk433517.K.get(C)) ? module : {};
-    exports[this.type] = Date.now(), Chunk433517.K.set(C, exports)
+    let t = null != (e = Chunk433517.K.get(N)) ? module : {};
+    exports[this.type] = Date.now(), Chunk433517.K.set(N, exports)
   }
   loadIfUncached(e, t) {
     E.Z.hasLoaded(e) && true !== t || this.loadIfNecessary(t)
@@ -227,7 +234,7 @@ class P {
       editInfo: e
     } = this.getEditInfo();
     i()(null != module.protoToSave, "protoToSave cannot be null"), i()(null != module.offlineEditDataVersion, "offlineEditDataVersion cannot be null"), i()(null == module.timeout, "timeout must not be set already");
-    let t = A + Math.floor(Math.random() * A),
+    let t = C + Math.floor(Math.random() * C),
       n = setTimeout(this.persistChanges, exports);
     this.dispatchChanges({
       timeout: require,
@@ -291,59 +298,59 @@ class P {
     }, this.logger = new d.Z(this.ProtoClass.typeName)
   }
 }
-let w = new P(Chunk524437.o8, Chunk526761.yP.PRELOADED_USER_SETTINGS),
-  D = new P(Chunk377108.ji, Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS),
-  x = {
-    [Chunk526761.yP.PRELOADED_USER_SETTINGS]: w,
-    [Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS]: D
+let D = new w(Chunk524437.o8, Chunk526761.yP.PRELOADED_USER_SETTINGS),
+  x = new w(Chunk377108.ji, Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS),
+  L = {
+    [Chunk526761.yP.PRELOADED_USER_SETTINGS]: D,
+    [Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS]: x
   };
 
-function L(e, t, n) {
-  return w.updateAsync("guilds", n => (0, y.u0)(n, e, t), n)
+function j(e, t, n) {
+  return D.updateAsync("guilds", n => (0, y.u0)(n, e, t), n)
 }
 
-function j(e, t, n, r) {
-  return L(e, e => (0, y.uL)(e, t, n), r)
+function M(e, t, n, r) {
+  return j(e, e => (0, y.uL)(e, t, n), r)
 }
 
-function M(e) {
-  return k(e), w.updateAsync("userContent", t => {
+function k(e) {
+  return U(e), D.updateAsync("userContent", t => {
     if ((0, m.jl)(t.dismissedContents, e)) returnfalse;
     t.dismissedContents = (0, m.GV)(t.dismissedContents, e)
   }, O.fy.INFREQUENT_USER_ACTION)
 }
 
-function k(e) {
-  !E.Z.hasLoaded(O.yP.PRELOADED_USER_SETTINGS) && (U(e) || p.default.track(v.rMx.DISMISSIBLE_CONTENT_DISMISSED_BEFORE_CONNECTION_OPEN, {
+function U(e) {
+  !E.Z.hasLoaded(O.yP.PRELOADED_USER_SETTINGS) && (G(e) || p.default.track(v.rMx.DISMISSIBLE_CONTENT_DISMISSED_BEFORE_CONNECTION_OPEN, {
     content_type: o.z[e]
   }))
 }
 
-function U(e) {
+function G(e) {
   var t;
   let n = null == (t = E.Z.settings.userContent) ? true : t.dismissedContents;
   return null != n && (0, m.jl)(n, e)
 }
-async function G(e, t) {
-  return await w.updateAsync("userContent", n => {
+async function B(e, t) {
+  return await D.updateAsync("userContent", n => {
     n.recurringDismissibleContentStates[e] = T({}, n.recurringDismissibleContentStates[e], t)
   }, O.fy.INFREQUENT_USER_ACTION)
 }
-async function B(e, t, n) {
-  return await L(t, t => {
+async function Z(e, t, n) {
+  return await j(t, t => {
     t.guildDismissibleContentStates[e] = T({}, t.guildDismissibleContentStates[e], n)
   }, O.fy.INFREQUENT_USER_ACTION)
 }
 
-function Z(e) {
-  return w.updateAsync("userContent", t => {
+function F(e) {
+  return D.updateAsync("userContent", t => {
     if (!(0, m.jl)(t.dismissedContents, e)) returnfalse;
     t.dismissedContents = (0, m.jx)(t.dismissedContents, e)
   }, O.fy.INFREQUENT_USER_ACTION)
 }
 
-function F(e) {
-  return G(e, {
+function V(e) {
+  return B(e, {
     lastDismissedVersion: 0,
     lastDismissedAtMs: "0",
     lastDismissedObjectId: "0",
@@ -351,14 +358,22 @@ function F(e) {
   })
 }
 
-function V() {
-  return w.updateAsync("userContent", e => {
+function H(e) {
+  var t;
+  let n = null == (t = E.Z.settings.userContent) ? true : t.recurringDismissibleContentStates[e];
+  if (null != n) return B(e, A(T({}, n), {
+    numTimesDismissed: 0
+  }))
+}
+
+function Y() {
+  return D.updateAsync("userContent", e => {
     e.dismissedContents = new Uint8Array, e.recurringDismissibleContentStates = {}
   }, Chunk526761.fy.INFREQUENT_USER_ACTION)
 }
 
-function H() {
-  return w.updateAsync("userContent", e => {
+function W() {
+  return D.updateAsync("userContent", e => {
     let t = new Uint8Array;
     for (let n of f.V_)(0, f.O2)(n) ? t = (0, m.GV)(t, n) : e.recurringDismissibleContentStates[n] = (0, _.F8)(n);
     e.dismissedContents = t
