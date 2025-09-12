@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk497505 = require("./497505.js"),
   Chunk602667 = require("./602667.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk189730 = require("./189730.js");
+  Chunk879048 = require("./879048.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -113,7 +113,7 @@ let I = 8,
       }), (0, o.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("89311"), n.e("20074")]).then(n.bind(n, 644941));
+        } = await Promise.all([n.e("89311"), n.e("83123")]).then(n.bind(n, 644941));
         return t => (0, r.jsx)(e, y({
           applicationId: i.applicationId,
           source: d.m1.GameSheet,

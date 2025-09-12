@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk511693 = require("./511693.js");
+  Chunk42101 = require("./42101.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -207,14 +207,14 @@ function P() {
       children: [(0, Chunk951288.jsx)(C, {
         applications: exports
       }), (0, Chunk951288.jsx)(N, {}), (0, Chunk951288.jsx)("div", {
-        className: Chunk511693.divider
+        className: Chunk42101.divider
       }), (0, Chunk951288.jsx)(R, {})]
     }) : (0, Chunk951288.jsxs)("div", {
-      className: Chunk511693.emptyContainer,
+      className: Chunk42101.emptyContainer,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        className: Chunk511693.noGamesConnectedText,
+        className: Chunk42101.noGamesConnectedText,
         children: Chunk388032.intl.string(Chunk388032.t["+0U77e"])
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",

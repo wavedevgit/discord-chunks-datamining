@@ -1,4 +1,4 @@
-/** Chunk was on 86383 **/
+/** Chunk was on 79072 **/
 /** chunk id: 133853, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -10,7 +10,7 @@ var s, Chunk951288 = require("./951288.js"),
   Chunk748780 = require("./748780.js"),
   Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk816716 = require("./816716.js");
+  Chunk788524 = require("./788524.js");
 
 function u(t, e, i) {
   return e in t ? Object.defineProperty(t, e, {
@@ -50,7 +50,7 @@ class p extends(s = Chunk647438.Component) {
       href: Chunk981631.Z5c.INDEX,
       target: "_blank",
       rel: "noopener",
-      className: r()(Chunk816716.logo, this.props.className),
+      className: r()(Chunk788524.logo, this.props.className),
       style: this.getAnimatedStyle()
     })
   }

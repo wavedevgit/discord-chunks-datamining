@@ -1,4 +1,4 @@
-/** Chunk was on 40450 **/
+/** Chunk was on 32561 **/
 /** chunk id: 194594, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j,
@@ -16,7 +16,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk768581 = require("./768581.js"),
   Chunk624138 = require("./624138.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk390354 = require("./390354.js");
+  Chunk53062 = require("./53062.js");
 
 function _(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -51,12 +51,12 @@ function b(e, t) {
 }
 var x = ((r = {})[r.SMALL = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_COUNT_SMALL_ICON_SIZE)] = "SMALL", r[r.LARGE = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_COUNT_LARGE_ICON_SIZE)] = "LARGE", r);
 let v = {
-    [x.SMALL]: Chunk390354.moreGuildsSmall,
-    [x.LARGE]: Chunk390354.moreGuildsLarge
+    [x.SMALL]: Chunk53062.moreGuildsSmall,
+    [x.LARGE]: Chunk53062.moreGuildsLarge
   },
   C = {
-    [x.SMALL]: Chunk390354.iconSmall,
-    [x.LARGE]: Chunk390354.iconLarge
+    [x.SMALL]: Chunk53062.iconSmall,
+    [x.LARGE]: Chunk53062.iconLarge
   };
 
 function j(e) {

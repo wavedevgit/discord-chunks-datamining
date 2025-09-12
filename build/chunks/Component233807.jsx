@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk699516 = require("./699516.js"),
   Chunk594174 = require("./594174.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk590075 = require("./590075.js");
+  Chunk727081 = require("./727081.js");
 let v = (0, Chunk972959.H)(() => ({
   includeFrecency: true,
   includeFriends: true,
@@ -359,7 +359,7 @@ function E() {
     o = v.useField("targetUserStateError");
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsxs)("div", {
-      className: Chunk590075.inputWithButtonRow,
+      className: Chunk727081.inputWithButtonRow,
       children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
         placeholder: "User ID",
         onChange: module
@@ -372,7 +372,7 @@ function E() {
     }), null != Chunk933557 && (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       color: "text-feedback-critical",
-      className: Chunk590075.statusText,
+      className: Chunk727081.statusText,
       children: Chunk933557
     }), null != Chunk972959 && (0, Chunk951288.jsx)(N, {
       userState: Chunk972959
@@ -400,18 +400,18 @@ function T() {
   return Chunk647438.useEffect(() => {
     if (module) return Chunk823385.Z.addChangeListener(Chunk430824), () => Chunk823385.Z.removeChangeListener(Chunk430824)
   }, [Chunk430824, module]), (0, Chunk951288.jsxs)(Chunk481060.zJl, {
-    className: Chunk590075.panel,
+    className: Chunk727081.panel,
     children: [(0, Chunk951288.jsxs)(Chunk481060.hjN, {
       title: "Debug Logs Session",
       tag: Chunk481060.RB0.H3,
-      className: Chunk590075.panelGroup,
+      className: Chunk727081.panelGroup,
       children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.geA.DESCRIPTION,
-        className: Chunk590075.subtitle,
+        className: Chunk727081.subtitle,
         children: "Click to emit debug logs as you search in the Quick Switcher. Includes your search term and all results. For each result, includes the record id, associated names, and frecency scores."
       }), (0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.geA.DESCRIPTION,
-        className: Chunk590075.subtitle,
+        className: Chunk727081.subtitle,
         children: "When you are done, please remember to upload the logs."
       }), (0, Chunk951288.jsxs)(Chunk481060.hE2, {
         children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
@@ -425,10 +425,10 @@ function T() {
     }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
       title: "Debug Logs Snapshot",
       tag: Chunk481060.RB0.H3,
-      className: Chunk590075.panelGroup,
+      className: Chunk727081.panelGroup,
       children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.geA.DESCRIPTION,
-        className: Chunk590075.subtitle,
+        className: Chunk727081.subtitle,
         children: "Uploading a snapshot of the client state can help us figure out what exactly is wrong with your search. You can opt out of uploading certain logs, but it may make it more difficult to debug your issue."
       }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
         value: exports,
@@ -477,10 +477,10 @@ function T() {
     }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
       title: "Debug User State",
       tag: Chunk481060.RB0.H3,
-      className: Chunk590075.panelGroup,
+      className: Chunk727081.panelGroup,
       children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.geA.DESCRIPTION,
-        className: Chunk590075.subtitle,
+        className: Chunk727081.subtitle,
         children: "Paste a user ID below to get a snapshot of client state for the user. This does not generate any logs."
       }), (0, Chunk951288.jsx)(E, {})]
     })]

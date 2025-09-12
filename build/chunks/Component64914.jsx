@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk247595 = require("./247595.js");
+  Chunk692278 = require("./692278.js");
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -128,7 +128,7 @@ function w() {
     }), (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.SETTINGS_ADVANCED_HARDWARE_ACCELERATION,
       children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-        className: module ? "" : Chunk247595.formSwitchExtension,
+        className: module ? "" : Chunk692278.formSwitchExtension,
         value: module,
         onChange: N,
         note: Chunk388032.intl.string(Chunk388032.t.Afc7l5),
@@ -140,7 +140,7 @@ function w() {
         look: Chunk494620.z.WARNING,
         children: Chunk388032.intl.string(Chunk388032.t.j7S6IS)
       }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-        className: Chunk247595.infoBoxDivider
+        className: Chunk692278.infoBoxDivider
       })]
     }), (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.SETTINGS_ADVANCED_SHOW_GAME_LIBRARY,

@@ -1,26 +1,26 @@
-/** Chunk was on 70127 **/
+/** Chunk was on 63875 **/
 /** chunk id: 246016, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Y: () => c
+  Y: () => d
 });
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk699516 = require("./699516.js"),
   Chunk594174 = require("./594174.js"),
   Chunk320582 = require("./320582.js");
-let s = [];
+let c = [];
 
-function c(e) {
+function d(e) {
   let {
     userId: t
-  } = e, n = (0, i.e7)([l.Z, a.default], () => {
+  } = e, n = (0, r.e7)([o.Z, i.default], () => {
     var e;
-    return l.Z.isFriend(t) || (null == (e = a.default.getUser(t)) ? true : e.isProvisional)
-  }), c = (0, o.ML)(t);
-  return r.useMemo(() => n ? s : c.map(e => {
+    return o.Z.isFriend(t) || (null == (e = i.default.getUser(t)) ? true : e.isProvisional)
+  }), d = (0, l.ML)(t);
+  return a.useMemo(() => n ? c : d.map(e => {
     let {
       applicationId: t
     } = e;
     return t
-  }), [c, n])
+  }), [d, n])
 }

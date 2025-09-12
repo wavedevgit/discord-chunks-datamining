@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk88507 = require("./88507.js");
+  Chunk486384 = require("./486384.js");
 
 function T(t, e, n) {
   return e in t ? Object.defineProperty(t, e, {
@@ -96,7 +96,7 @@ class E extends Chunk647438.PureComponent {
       emojiInfo: t
     } = this.state;
     return null == module ? null : () => (0, Chunk951288.jsx)(Chunk596454.Z, {
-      className: Chunk88507.emoji,
+      className: Chunk486384.emoji,
       emojiId: module.id,
       emojiName: module.name,
       animated: !!module.animated
@@ -110,14 +110,14 @@ class E extends Chunk647438.PureComponent {
       emojiInfo: n
     } = this.state;
     return (0, Chunk951288.jsx)(Chunk481060.hjN, {
-      className: Chunk88507.formGroup,
+      className: Chunk486384.formGroup,
       title: Chunk388032.intl.formatToPlainString(Chunk388032.t["/w9pHx"], {
         username: module.username
       }),
       children: (0, Chunk951288.jsxs)("div", {
-        className: Chunk88507.inputContainer,
+        className: Chunk486384.inputContainer,
         children: [(0, Chunk951288.jsx)("div", {
-          className: Chunk88507.emojiButtonContainer
+          className: Chunk486384.emojiButtonContainer
         }), (0, Chunk951288.jsx)(Chunk481060.oil, {
           maxLength: Chunk875425.s0,
           value: exports,
@@ -160,7 +160,7 @@ class E extends Chunk647438.PureComponent {
       clearAfter: t
     } = this.state;
     return (0, Chunk951288.jsx)(Chunk481060.hjN, {
-      className: Chunk88507.formGroup,
+      className: Chunk486384.formGroup,
       title: Chunk388032.intl.string(Chunk388032.t.E45wvL),
       children: (0, Chunk951288.jsx)(Chunk481060.q4e, {
         placeholder: Chunk388032.intl.string(Chunk388032.t.E45wvL),
@@ -180,7 +180,7 @@ class E extends Chunk647438.PureComponent {
       status: t
     } = this.state;
     return (0, Chunk951288.jsx)(Chunk481060.hjN, {
-      className: Chunk88507.formGroup,
+      className: Chunk486384.formGroup,
       title: Chunk388032.intl.string(Chunk388032.t.zOdg0N),
       children: (0, Chunk951288.jsx)(Chunk481060.q4e, {
         maxVisibleItems: 4,
@@ -203,30 +203,30 @@ class E extends Chunk647438.PureComponent {
     return (0, Chunk951288.jsx)(Chunk410575.Z, N(w({}, this.analyticsLocation), {
       children: (0, Chunk951288.jsxs)(Chunk481060.Y0X, {
         transitionState: module,
-        className: Chunk88507.modalRoot,
+        className: Chunk486384.modalRoot,
         "aria-label": Chunk388032.intl.string(Chunk388032.t["/UonHB"]),
         parentComponent: "CustomStatusModal",
         children: [(0, Chunk951288.jsxs)(Chunk481060.xBx, {
           separator: false,
-          className: Chunk88507.headerContainer,
+          className: Chunk486384.headerContainer,
           children: [(0, Chunk951288.jsx)("div", {
-            className: Chunk88507.art
+            className: Chunk486384.art
           }), (0, Chunk951288.jsx)("div", {
-            className: Chunk88507.header,
+            className: Chunk486384.header,
             children: (0, Chunk951288.jsx)(Chunk481060.H, {
-              className: Chunk88507.headerText,
+              className: Chunk486384.headerText,
               children: Chunk388032.intl.string(Chunk388032.t["/UonHB"])
             })
           }), (0, Chunk951288.jsx)(Chunk481060.olH, {
             onClick: exports,
-            className: Chunk88507.modalCloseButton
+            className: Chunk486384.modalCloseButton
           })]
         }), (0, Chunk951288.jsxs)(Chunk481060.hzk, {
           children: [this.renderCustomStatusInput(), this.renderClearAfter(), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-            className: Chunk88507.formDivider
+            className: Chunk486384.formDivider
           }), this.renderStatusInput()]
         }), (0, Chunk951288.jsxs)(Chunk481060.mzw, {
-          className: Chunk88507.modalFooter,
+          className: Chunk486384.modalFooter,
           children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
             variant: "primary",
             text: Chunk388032.intl.string(Chunk388032.t.R3BPHx),
@@ -236,7 +236,7 @@ class E extends Chunk647438.PureComponent {
             variant: "secondary",
             size: "sm",
             textVariant: "text-md/medium",
-            color: Chunk88507.cancelButton,
+            color: Chunk486384.cancelButton,
             text: Chunk388032.intl.string(Chunk388032.t["ETE/oK"])
           })]
         })]

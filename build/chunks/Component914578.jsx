@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk604227 = require("./604227.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk530785 = require("./530785.js");
+  Chunk989281 = require("./989281.js");
 
 function O(e) {
   let {
@@ -49,7 +49,7 @@ function E() {
     children: [(0, Chunk951288.jsx)(Chunk604227.Z, {
       compact: true
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk530785.links,
+      className: Chunk989281.links,
       children: [(0, Chunk951288.jsx)(Chunk481060.eee, {
         href: Chunk981631.EYA.PRIVACY,
         children: (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -59,7 +59,7 @@ function E() {
           children: Chunk388032.intl.string(Chunk388032.t["Knf/f3"])
         })
       }), (0, Chunk951288.jsx)("span", {
-        className: Chunk530785.bullet,
+        className: Chunk989281.bullet,
         "aria-hidden": "true",
         children: "•"
       }), (0, Chunk951288.jsx)(Chunk481060.eee, {
@@ -71,7 +71,7 @@ function E() {
           children: Chunk388032.intl.string(Chunk388032.t.uFSTGh)
         })
       }), (0, Chunk951288.jsx)("span", {
-        className: Chunk530785.bullet,
+        className: Chunk989281.bullet,
         "aria-hidden": "true",
         children: "•"
       }), (0, Chunk951288.jsx)(Chunk481060.yRy, {

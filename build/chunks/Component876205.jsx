@@ -10,7 +10,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk556296 = require("./556296.js"),
   Chunk13140 = require("./13140.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk372452 = require("./372452.js");
+  Chunk482784 = require("./482784.js");
 let d = {
   [Chunk981631.kg4.TOGGLE_MUTE]: {
     slash: Chunk481060.nRN,
