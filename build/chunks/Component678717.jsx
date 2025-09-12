@@ -52,7 +52,6 @@ var Chunk392750 = require("./392750.jsx"),
   Chunk315384 = require("./315384.jsx"),
   Chunk107606 = require("./107606.jsx"),
   Chunk514866 = require("./514866.jsx"),
-  Chunk233807 = require("./233807.jsx"),
   Chunk763577 = require("./763577.jsx"),
   Chunk384207 = require("./384207.jsx"),
   Chunk264603 = require("./264603.jsx"),
@@ -61,6 +60,7 @@ var Chunk392750 = require("./392750.jsx"),
   Chunk56706 = require("./56706.jsx"),
   Chunk820400 = require("./820400.jsx"),
   Chunk260950 = require("./260950.jsx"),
+  Chunk569157 = require("./569157.jsx"),
   Chunk621060 = require("./621060.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -99,12 +99,12 @@ function em(e) {
       id: "triggers",
       name: "Triggers",
       group: ei.v0.EXPERIMENTS,
-      render: () => (0, a.jsx)(en.Z, {})
+      render: () => (0, a.jsx)(et.Z, {})
     }, {
       id: "stores",
       name: "Stores",
       group: ei.v0.EVENTS,
-      render: () => (0, a.jsx)(et.Z, {})
+      render: () => (0, a.jsx)(ee.Z, {})
     }, {
       id: "dispatcher",
       name: "Dispatcher",
@@ -115,7 +115,7 @@ function em(e) {
       id: "shop",
       name: "Shop",
       group: ei.v0.BILLING,
-      render: () => (0, a.jsx)(Q.C, {})
+      render: () => (0, a.jsx)($.C, {})
     }), e.push({
       id: "quick_actions",
       name: "Quick Actions",
@@ -145,17 +145,17 @@ function em(e) {
       id: "slayer_sdk",
       name: "Slayer SDK",
       group: ei.v0.GAMES,
-      render: () => (0, a.jsx)(ee.Z, {})
+      render: () => (0, a.jsx)(Q.Z, {})
     }), e.push({
       id: "quick_switcher",
       name: "Quick Switcher",
       group: ei.v0.USERS,
-      render: () => (0, a.jsx)(J.Z, {})
+      render: () => (0, a.jsx)(el.Z, {})
     })), e.push({
       id: "rive",
       name: "Rive",
       group: ei.v0.UI,
-      render: () => (0, a.jsx)($.Z, {})
+      render: () => (0, a.jsx)(J.Z, {})
     }), e.push({
       id: "lottie",
       name: "Lottie",
@@ -224,7 +224,7 @@ function em(e) {
       id: "widgets",
       name: "Widgets",
       group: ei.v0.USERS,
-      render: () => (0, a.jsx)(er.Z, {})
+      render: () => (0, a.jsx)(ea.Z, {})
     }), f.Z.isDeveloper && (e.push({
       id: "content_inventory",
       name: "Content Inventory",
@@ -264,7 +264,7 @@ function em(e) {
       id: "subscriptions",
       name: "Subscriptions",
       group: ei.v0.PREMIUM,
-      render: () => (0, a.jsx)(el.Z, {})
+      render: () => (0, a.jsx)(er.Z, {})
     }), e.push({
       id: "fractional_nitro",
       name: "Fractional Nitro",
@@ -279,7 +279,7 @@ function em(e) {
       id: "voice_filters",
       name: "Voice Filters",
       group: ei.v0.AUDIO_VIDEO,
-      render: () => (0, a.jsx)(ea.Z, {})
+      render: () => (0, a.jsx)(en.Z, {})
     }), e.push({
       id: "krisp_tester",
       name: "Krisp Tester",
