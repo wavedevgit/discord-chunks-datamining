@@ -28,32 +28,34 @@ let _ = function(e) {
     transitionState: t,
     entryPoint: n,
     onClose: _,
-    onComplete: O
-  } = e, [A, S] = i.useState(a.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), I = i.useRef(A), [R, w] = (0, u.US)([A], true, true), P = i.useMemo(() => (0, l.Z)(), []), C = i.useRef(false);
+    onComplete: O,
+    dismissable: A
+  } = e, [S, I] = i.useState(a.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), R = i.useRef(S), [w, P] = (0, u.US)([S], true, true), C = i.useMemo(() => (0, l.Z)(), []), N = i.useRef(false);
   i.useEffect(() => {
-    I.current = R
-  }, [R]);
+    R.current = w
+  }, [w]);
   let {
-    loading: N,
-    ageVerificationMethods: k
+    loading: k,
+    ageVerificationMethods: T
   } = (0, g.Z)(() => {
     null == O || O(), _()
   }, () => {
-    S(a.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
+    I(a.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
   });
   return i.useLayoutEffect(() => () => {
-    if (C.current) return;
-    let e = I.current;
-    null != e && (C.current = true, f.Z.maybeOpenAgeVerificationUserFeedback({
+    if (N.current) return;
+    let e = R.current;
+    null != e && (N.current = true, f.Z.maybeOpenAgeVerificationUserFeedback({
       location: "age_verification_get_started_modal",
       visibleContent: e
     }))
   }, []), i.useEffect(() => {
-    (0, m.lA)(P, m.d_.EXPRESSIVE_PRIMARY, n)
-  }, [P, n]), (0, r.jsx)(o.I, {
+    (0, m.lA)(C, m.d_.EXPRESSIVE_PRIMARY, n)
+  }, [C, n]), (0, r.jsx)(o.I, {
     transitionState: t,
     onClose: _,
     gradientColor: "blue",
+    dismissable: A,
     graphic: {
       type: "image",
       src: j.Z
@@ -61,7 +63,7 @@ let _ = function(e) {
     title: x.intl.string(x.t.JHNunp),
     subtitle: x.intl.format(E.default.RpMIT0, {
       handleOnHelpUrlHook: () => {
-        h.Z.openUrl(p.Z.getArticleURL(b.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, m.x3)(P, m.d_.EXPRESSIVE_PRIMARY, m.sU.LEARN_MORE)
+        h.Z.openUrl(p.Z.getArticleURL(b.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, m.x3)(C, m.d_.EXPRESSIVE_PRIMARY, m.sU.LEARN_MORE)
       }
     }),
     actionBarInput: (0, r.jsx)(c.Avr, {
@@ -69,7 +71,7 @@ let _ = function(e) {
       textVariant: "text-sm/medium",
       text: x.intl.string(x.t["2jxGen"]),
       onClick: () => {
-        (0, m.x3)(P, m.d_.EXPRESSIVE_PRIMARY, m.sU.LOG_OUT), s.Z.logout("age_verification_get_started_modal")
+        (0, m.x3)(C, m.d_.EXPRESSIVE_PRIMARY, m.sU.LOG_OUT), s.Z.logout("age_verification_get_started_modal")
       }
     }),
     children: (0, r.jsxs)(c.Kqy, {
@@ -95,7 +97,7 @@ let _ = function(e) {
           color: "text-feedback-info",
           children: x.intl.string(E.default.ar3a3t)
         })]
-      }), null == k || 0 === k.length ? (0, r.jsxs)(c.Kqy, {
+      }), null == T || 0 === T.length ? (0, r.jsxs)(c.Kqy, {
         direction: "vertical",
         align: "center",
         gap: 16,
@@ -114,7 +116,7 @@ let _ = function(e) {
       }) : (0, r.jsx)(c.Kqy, {
         direction: "vertical",
         gap: 8,
-        children: k.map(e => {
+        children: T.map(e => {
           let {
             title: t,
             description: n,
@@ -124,8 +126,8 @@ let _ = function(e) {
             variant: "clickable",
             title: t,
             description: n,
-            buttonDisabled: N,
-            onButtonPress: () => i(P)
+            buttonDisabled: k,
+            onButtonPress: () => i(C)
           }, t)
         })
       })]
