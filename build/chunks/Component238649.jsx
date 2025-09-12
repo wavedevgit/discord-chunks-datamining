@@ -38,8 +38,8 @@ let C = (e, t) => {
     } = (0, d.ZP)(u.Z.PREMIUM_MARKETING_HERO_CTA), N = (0, _.Nx)(), R = (0, y.$)(), P = (0, h.Z)(), w = null != P, D = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), {
       visibilityPercentageRef: x,
       visibilityPercentage: L
-    } = (0, v.E)(!D), j = (0, s.e7)([f.Z], () => f.Z.affinities), M = !w && j.length > 0, {
-      isEligible: k,
+    } = (0, v.E)(!D), j = (0, s.e7)([f.Z], () => f.Z.affinities), k = !w && j.length > 0, {
+      isEligible: M,
       cohort: U
     } = (0, p.Q1)();
     return (0, r.jsx)(d.Gt, {
@@ -75,7 +75,7 @@ let C = (e, t) => {
                   referrer: P,
                   enablePremiumBrandRefresh: true
                 })
-              }), M && (0, r.jsx)("div", {
+              }), k && (0, r.jsx)("div", {
                 className: A.affinitiesContainer,
                 children: (0, r.jsx)(b.Z, {
                   textColor: "text-primary",
@@ -83,9 +83,9 @@ let C = (e, t) => {
                   isApplicationHome: true,
                   enablePremiumBrandRefresh: true
                 })
-              }), k && (0, r.jsx)(E.A, {
+              }), M && (0, r.jsx)(E.A, {
                 cohort: U
-              }), !k && (0, r.jsxs)("div", {
+              }), !M && (0, r.jsxs)("div", {
                 className: N ? A.singleButtonContainer : A.twoButtonContainer,
                 children: [(0, r.jsx)(g.Z, {
                   size: "md",
@@ -101,7 +101,7 @@ let C = (e, t) => {
                 children: (0, r.jsx)(l.Text, {
                   color: "text-tertiary",
                   variant: "text-xs/medium",
-                  children: k ? S.intl.string(S.t["6V7qRk"]) : S.intl.format(S.t.kt9wxs, {
+                  children: M ? S.intl.string(S.t["6V7qRk"]) : S.intl.format(S.t.kt9wxs, {
                     cheapestMonthlyPrice: R
                   })
                 })

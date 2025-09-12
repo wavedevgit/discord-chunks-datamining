@@ -108,7 +108,7 @@ function v(e) {
       null == S || S()
     }, [S]);
   if (!C || null == w) return null;
-  let M = g({
+  let k = g({
     text: null != (a = null == (t = w.action) ? true : t.text) ? a : D ? p.intl.string(p.t.i4jeWV) : p.intl.string(p.t.PDTjLC),
     variant: null != (m = null == (n = w.action) ? true : n.variant) ? m : "primary",
     onClick: x
@@ -148,7 +148,7 @@ function v(e) {
             })
           }), (0, r.jsx)(c.zxk, g({
             size: "sm"
-          }, M))]
+          }, k))]
         })
       }), (0, r.jsx)(d.$, {
         caretConfig: v

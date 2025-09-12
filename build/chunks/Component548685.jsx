@@ -50,7 +50,7 @@ let j = e => {
   } = (0, S.Z)(j, R, I), U = (0, v.St)(H), V = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), z = (0, i.e7)([g.Z], () => g.Z.isFocused()), G = !V && z, {
     animationPhase: q,
     startAnimation: K
-  } = (0, E.y)(), Y = (0, m.sp)(), X = null != (t = null == Y ? true : Y.sessionId) ? t : "", Q = l.useRef(null), J = l.useCallback(e => {
+  } = (0, E.y)(), Y = (0, _.sp)(), X = null != (t = null == Y ? true : Y.sessionId) ? t : "", Q = l.useRef(null), J = l.useCallback(e => {
     K({
       isShuffling: false,
       onOutroComplete: () => F(e)
@@ -152,14 +152,14 @@ let j = e => {
       children: n ? (0, r.jsx)(r.Fragment, {
         children: [...Array(12)].map((e, t) => (0, r.jsx)(C.K, {}, t + 1))
       }) : U.slice(0, k).map((e, t) => {
-        let n, l = _.Z.getCategoryForProduct(e.skuId);
+        let n, l = m.Z.getCategoryForProduct(e.skuId);
         if (null == e || null == l) return null;
         if (G)
           if (q === E.g.SHUFFLE_OUT) return (0, r.jsx)("div", {
             className: L.shuffleOutro
           }, "".concat(e.skuId, "-").concat(t));
           else q === E.g.SORT_OUT ? n = L.sortChangedOutro : q === E.g.SHUFFLE_IN ? n = L.shuffleIntro : q === E.g.SORT_IN && (n = L.sortChangedIntro);
-        return (0, r.jsx)(m.k0, {
+        return (0, r.jsx)(_.k0, {
           newValue: {
             tilePosition: t,
             pageSection: "popular picks",

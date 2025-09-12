@@ -38,7 +38,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk969016 = require("./969016.js");
 
-function M(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -47,14 +47,14 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      M(e, t, n[t])
+      k(e, t, n[t])
     })
   }
   return e
@@ -195,9 +195,9 @@ function F(e) {
       })
     }),
     j = I.Z.getChannel(null == (n = o.channel) ? true : n.id),
-    M = (0, c.e7)([S.Z], () => null != j && S.Z.can(w.Plq.USE_EMBEDDED_ACTIVITIES, j), [j]),
+    k = (0, c.e7)([S.Z], () => null != j && S.Z.can(w.Plq.USE_EMBEDDED_ACTIVITIES, j), [j]),
     {
-      analyticsLocations: k
+      analyticsLocations: M
     } = (0, p.ZP)(_.Z.INVITE_EMBED),
     U = (0, c.Wu)([f.ZP], () => null != j ? f.ZP.getEmbeddedActivitiesForChannel(j.id).filter(e => e.applicationId === E.id).flatMap(e => Array.from(e.userIds)) : [], [j, E.id]),
     G = (0, c.Wu)([A.default], () => U.map(e => A.default.getUser(e)).filter(e => null != e), [U]),
@@ -207,21 +207,21 @@ function F(e) {
         action: "accept",
         inviter_id: s.author.id,
         invite_message_id: s.id
-      }, k), d.ZP.acceptInviteAndTransitionToInviteChannel({
+      }, M), d.ZP.acceptInviteAndTransitionToInviteChannel({
         inviteKey: o.code,
         context: u("Invite Button Embed"),
-        analyticsLocations: k
+        analyticsLocations: M
       })
-    }, [o, s, k, u]),
+    }, [o, s, M, u]),
     Z = o.state === w.r2o.ACCEPTING,
     F = null != O;
   if (null == O) {
     if (null == o.guild) return (0, r.jsx)(P.Z, {});
     O = (0, R.Qs)(o.guild)
   }
-  let H = F && !M || F && N;
-  return (F && N && (a = L.intl.string(L.t.wJNK8P)), M || (a = L.intl.string(L.t.hHGrW1)), null == o.code || "" === o.code || null == v) ? null : (0, r.jsx)(p.Gt, {
-    value: k,
+  let H = F && !k || F && N;
+  return (F && N && (a = L.intl.string(L.t.wJNK8P)), k || (a = L.intl.string(L.t.hHGrW1)), null == o.code || "" === o.code || null == v) ? null : (0, r.jsx)(p.Gt, {
+    value: M,
     children: (0, r.jsx)(V, {
       app: v,
       activityUsers: G,
@@ -271,7 +271,7 @@ function V(e) {
     disabledReason: _ && null != p ? p : true,
     onClick: y
   }], [y, d, _, a, f, p]);
-  return (0, r.jsx)(h.W, G(k({
+  return (0, r.jsx)(h.W, G(M({
     header: t.name,
     title: L.intl.string(L.t["7vb6n5"]),
     iconSrc: T

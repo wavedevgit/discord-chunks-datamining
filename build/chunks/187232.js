@@ -2,9 +2,10 @@
 /** chunk id: 187232, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  p: () => P
+  p: () => D
 });
-var Chunk100527 = require("./100527.js"),
+var Chunk242433 = require("./242433.js"),
+  Chunk100527 = require("./100527.js"),
   Chunk717401 = require("./717401.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
@@ -12,98 +13,99 @@ var Chunk100527 = require("./100527.js"),
   Chunk796909 = require("./796909.js"),
   Chunk893410 = require("./893410.js"),
   Chunk878339 = require("./878339.js"),
-  Chunk733366 = require("./733366.js"),
+  Chunk330529 = require("./330529.js"),
+  Chunk552365 = require("./552365.js"),
   Chunk492336 = require("./492336.js"),
   Chunk457686 = require("./457686.js"),
   Chunk516773 = require("./516773.js"),
   Chunk198026 = require("./198026.js"),
   Chunk543980 = require("./543980.js");
-let g = {
-    skuId: "1415079278911033421",
+let b = {
+    skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_PUMPKIN_TRICK_SKU_ID,
     assetId: "a_fe4a5080455bc20030589d3b930ebe7b",
     a11yLabel: Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
       category: Chunk388032.intl.string(Chunk388032.t["6Zuiv7"]),
       name: Chunk388032.intl.string(Chunk388032.t["9PzTtL"])
     })
   },
-  E = {
-    skuId: "1415079278911033417",
+  y = {
+    skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_PUMPKIN_TREAT_SKU_ID,
     assetId: "a_ade36581b93e50a565541e1964d7eb6a",
     a11yLabel: Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
       category: Chunk388032.intl.string(Chunk388032.t["2UeOlZ"]),
       name: Chunk388032.intl.string(Chunk388032.t["9PzTtL"])
     })
   },
-  b = {
-    skuId: "1415079278936064231",
+  O = {
+    skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_GHOST_TRICK_SKU_ID,
     assetId: "a_9fb28bf1ed0bed681898f57df3acec5b",
     a11yLabel: Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
       category: Chunk388032.intl.string(Chunk388032.t["6Zuiv7"]),
       name: Chunk388032.intl.string(Chunk388032.t.sBk8mZ)
     })
   },
-  y = {
-    skuId: "1415079278936064234",
+  v = {
+    skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_GHOST_TREAT_SKU_ID,
     assetId: "a_f43fa3efdeda7f7d50fed5f3e5c5cef5",
     a11yLabel: Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
       category: Chunk388032.intl.string(Chunk388032.t["2UeOlZ"]),
       name: Chunk388032.intl.string(Chunk388032.t.sBk8mZ)
     })
   },
-  O = {
-    skuId: "1415079278923743237",
+  I = {
+    skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_SKULL_TRICK_SKU_ID,
     assetId: "a_0103146312bbffdb9a58ce4da3d901d1",
     a11yLabel: Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
       category: Chunk388032.intl.string(Chunk388032.t["6Zuiv7"]),
       name: Chunk388032.intl.string(Chunk388032.t.RbkXxc)
     })
   },
-  v = {
-    skuId: "1415079278911033422",
+  T = {
+    skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_SKULL_TREAT_SKU_ID,
     assetId: "a_652117a3882f5ae4cc30e56d7ac013a7",
     a11yLabel: Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
       category: Chunk388032.intl.string(Chunk388032.t["2UeOlZ"]),
       name: Chunk388032.intl.string(Chunk388032.t.RbkXxc)
     })
   },
-  I = {
-    skuId: "1415079278911033420",
+  S = {
+    skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_SPIDER_TRICK_SKU_ID,
     assetId: "a_8655de5a2c086276231144432fefb8f0",
     a11yLabel: Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
       category: Chunk388032.intl.string(Chunk388032.t["6Zuiv7"]),
       name: Chunk388032.intl.string(Chunk388032.t.FW3Qp6)
     })
   },
-  T = {
-    skuId: "1415079278923743238",
+  A = {
+    skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_SPIDER_TREAT_SKU_ID,
     assetId: "a_91bdfba540bf5f305f906e6588704ac6",
     a11yLabel: Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
       category: Chunk388032.intl.string(Chunk388032.t["2UeOlZ"]),
       name: Chunk388032.intl.string(Chunk388032.t.FW3Qp6)
     })
   },
-  S = {
+  C = {
     name: Chunk388032.intl.string(Chunk388032.t["9PzTtL"]),
-    variants: [g, E]
-  },
-  A = {
-    name: Chunk388032.intl.string(Chunk388032.t.sBk8mZ),
     variants: [b, y]
   },
-  C = {
-    name: Chunk388032.intl.string(Chunk388032.t.RbkXxc),
+  N = {
+    name: Chunk388032.intl.string(Chunk388032.t.sBk8mZ),
     variants: [O, v]
   },
-  N = {
-    name: Chunk388032.intl.string(Chunk388032.t.FW3Qp6),
+  R = {
+    name: Chunk388032.intl.string(Chunk388032.t.RbkXxc),
     variants: [I, T]
   },
-  R = {
+  P = {
+    name: Chunk388032.intl.string(Chunk388032.t.FW3Qp6),
+    variants: [S, A]
+  },
+  w = {
     gradient: ["rgb(35, 86, 53)", "rgb(3, 15, 40)"]
   },
-  P = {
-    variants: [S, A, C, N],
-    rewardAssetIdMap: (0, Chunk717401.YV)([g, E, b, y, O, v, I, T]),
+  D = {
+    variants: [C, N, R, P],
+    rewardAssetIdMap: (0, Chunk717401.YV)([b, y, O, v, I, T, S, A]),
     chatGiftIcon: {
       trinketsAnimation: {
         getAnimationData: () => require.e("19511").then(require.bind(require, 322980)).then(e => {
@@ -140,7 +142,7 @@ let g = {
     },
     dismissibleContentVersion: 4,
     firstTimeNotice: {
-      getImageUrl: () => Chunk733366.Z,
+      getImageUrl: (e, t) => t ? _.Z : f.Z,
       title: () => Chunk388032.intl.string(Chunk388032.t.UPFiIi),
       description: () => Chunk388032.intl.string(Chunk388032.t["F/5kFB"]),
       cta: () => Chunk388032.intl.string(Chunk388032.t.RzWDqa),
@@ -151,11 +153,11 @@ let g = {
     planSelection: {
       heading: () => Chunk388032.intl.string(Chunk388032.t.ruVnPj),
       subheading: () => Chunk388032.intl.string(Chunk388032.t.q4BJSE),
-      mobileSubheading: e => s.intl.formatToPlainString(s.t.eDBuFx, {
+      mobileSubheading: e => l.intl.formatToPlainString(l.t.eDBuFx, {
         rewardCount: e
       }),
-      gradientConfig: R,
-      getImageUrl: () => Chunk457686.Z,
+      gradientConfig: w,
+      getImageUrl: (e, t) => t ? m.Z : h.Z,
       getBannerImageUrl: () => Chunk543980.Z,
       getBackgroundImageUrl: () => Chunk796909.Z
     },
@@ -163,12 +165,11 @@ let g = {
       desktopBannerText: () => Chunk388032.intl.string(Chunk388032.t.mMgymZ),
       mobileBannerText: () => Chunk388032.intl.string(Chunk388032.t.dAqTcH),
       getImageUrl: () => Chunk516773.Z,
-      gradientConfig: () => R,
+      gradientConfig: () => w,
       getBackgroundImageUrl: () => Chunk492336.Z
     },
     billingSettingsMarketingBanner: {
-      getAnimatedImageUrl: () => Chunk893410.Z,
-      getStaticImageUrl: () => Chunk878339.Z,
+      getImageUrl: e => e ? d.Z : u.Z,
       title: () => Chunk388032.intl.string(Chunk388032.t.CGgAyM),
       body: () => Chunk388032.intl.string(Chunk388032.t["9rInzc"]),
       getBackgroundImageUrl: () => Chunk198026.Z

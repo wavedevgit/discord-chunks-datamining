@@ -72,9 +72,9 @@ function L(e, t) {
   }), e
 }
 let j = 250,
-  M = 24;
+  k = 24;
 
-function k(e, t) {
+function M(e, t) {
   switch (t.type) {
     case "MEASUREMENT_COMPLETE":
       return L(D({}, e), {
@@ -127,7 +127,7 @@ function G(e) {
     voiceActivityStatusEnabled: W
   } = (0, f.U)({
     location: "UserProfileStackedActivity"
-  }), K = W && null == Z && null == V && null != F, z = (0, v.yi)(), q = (null == z ? true : z.interactionSource) === C.n_.ACTIVITY, X = i.useRef(null), Q = i.useRef(null), J = i.useRef(null), $ = i.useRef(null), [ee, et] = i.useReducer(k, U), {
+  }), K = W && null == Z && null == V && null != F, z = (0, v.yi)(), q = (null == z ? true : z.interactionSource) === C.n_.ACTIVITY, X = i.useRef(null), Q = i.useRef(null), J = i.useRef(null), $ = i.useRef(null), [ee, et] = i.useReducer(M, U), {
     height: en,
     animationPhase: er
   } = ee, ei = "awaitingInput" !== er, ea = "animating" === er || "done" === er, eo = (0, h.P6)("UserProfileStackedActivity"), es = [], el = {
@@ -177,7 +177,7 @@ function G(e) {
     }), requestAnimationFrame(() => {
       et({
         type: "START_EXPAND_ANIMATION",
-        height: e + t - M
+        height: e + t - k
       }), $.current = setTimeout(() => {
         var e;
         et({

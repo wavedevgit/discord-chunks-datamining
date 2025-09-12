@@ -2,7 +2,7 @@
 /** chunk id: 230171, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  O: () => M,
+  O: () => k,
   U: () => Chunk967249.U
 }), require("./539854.js"), require("./784620.js"), require("./973216.js"), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -39,7 +39,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk217648 = require("./217648.js");
 
-function M(e) {
+function k(e) {
   var t;
   let {
     app: n,
@@ -59,7 +59,7 @@ function M(e) {
   }), {
     staticBannerSrc: x,
     videoBannerSrc: j,
-    bannerAspectRatio: M
+    bannerAspectRatio: k
   } = (0, w.E)(n), G = (0, s.e7)([b.default], () => null != m ? m : b.default.getId(), [m]), {
     analyticsLocations: B
   } = (0, f.ZP)(d.Z.APP_MESSAGE_EMBED), {
@@ -105,7 +105,7 @@ function M(e) {
     })) : null != X && e.push(X), e
   }, [z, K, F, V, Z, n.id, Y, l, G, B, S, X, I]), J = S ? (0, r.jsx)(U, {
     app: n
-  }) : (0, r.jsx)(k, {
+  }) : (0, r.jsx)(M, {
     app: n
   });
   return (0, r.jsx)(C.W, {
@@ -113,7 +113,7 @@ function M(e) {
     staticBannerSrc: x,
     videoBannerSrc: j,
     onClickBanner: q,
-    bannerAspectRatio: M,
+    bannerAspectRatio: k,
     iconSrc: N,
     embedUrl: a,
     info: J,
@@ -132,7 +132,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   var t, n, o;
   let {
     app: c

@@ -46,7 +46,7 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function M(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -59,7 +59,7 @@ function M(e) {
   return e
 }
 
-function k(e, t) {
+function M(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -71,7 +71,7 @@ function k(e, t) {
 }
 
 function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -174,7 +174,7 @@ let Q = e => {
         let {
           channel: e
         } = m.current;
-        I.default.track(P.rMx.OPEN_POPOUT, M({
+        I.default.track(P.rMx.OPEN_POPOUT, k({
           type: P.jXE.STICKER_POPOUT,
           guild_id: e.getGuildId(),
           sticker_pack_id: n.pack_id
@@ -225,7 +225,7 @@ let Q = e => {
       [S, A] = i.useState(null),
       [C, R] = i.useState(false),
       j = v.default.getCurrentUser(),
-      k = T.ZP.canUseCustomStickersEverywhere(j),
+      M = T.ZP.canUseCustomStickersEverywhere(j),
       B = (0, s.e7)([O.Z], () => O.Z.getGuild(n.guild_id)),
       Z = null != B,
       [F, Y] = i.useState(false),
@@ -236,7 +236,7 @@ let Q = e => {
       }), [a.guild_id]),
       {
         current: J
-      } = i.useRef(M({
+      } = i.useRef(k({
         guild_id: a.getGuildId()
       }, (0, f.v_)(a))),
       $ = {
@@ -258,19 +258,19 @@ let Q = e => {
       en = null != S,
       er = false,
       ei = "Custom Sticker Popout";
-    k ? t = Z ? et ? D.intl.string(D.t.fZ0DiI) : D.intl.string(D.t["1f6D9v"]) : en ? D.intl.string(D.t.yHmoR0) : D.intl.string(D.t.vZaScH) : Z ? (t = et ? D.intl.string(D.t.jNphpq) : D.intl.string(D.t.lyD5ZW), er = true, ei = "Custom Sticker Popout (Upsell)") : en ? (t = D.intl.string(D.t.IuXYcn), er = true, ei = "Custom Sticker Popout (Upsell)") : (t = D.intl.format(D.t.hGWuxc, {
+    M ? t = Z ? et ? D.intl.string(D.t.fZ0DiI) : D.intl.string(D.t["1f6D9v"]) : en ? D.intl.string(D.t.yHmoR0) : D.intl.string(D.t.vZaScH) : Z ? (t = et ? D.intl.string(D.t.jNphpq) : D.intl.string(D.t.lyD5ZW), er = true, ei = "Custom Sticker Popout (Upsell)") : en ? (t = D.intl.string(D.t.IuXYcn), er = true, ei = "Custom Sticker Popout (Upsell)") : (t = D.intl.format(D.t.hGWuxc, {
       openPremiumSettings: () => {
         q(a), p()
       }
     }), ei = "Custom Sticker Popout (Soft Upsell)");
-    let ea = !er && !Z && en && k;
+    let ea = !er && !Z && en && M;
     if (i.useEffect(() => {
         let {
           refreshPositionKey: e
         } = ee.current;
         e()
       }, [C, S]), (0, d.ZP)(() => {
-        I.default.track(P.rMx.OPEN_POPOUT, M({
+        I.default.track(P.rMx.OPEN_POPOUT, k({
           type: ei
         }, J))
       }), !C) return (0, r.jsx)(E.SE, {
@@ -355,7 +355,7 @@ let Q = e => {
                 align: _.Z.Align.START,
                 justify: _.Z.Justify.START,
                 className: L.otherEmojisContainer,
-                children: t.map(e => (0, r.jsx)(c.ua7, U(M({
+                children: t.map(e => (0, r.jsx)(c.ua7, U(k({
                   text: e.name
                 }, E.b_), {
                   children: t => {
@@ -363,7 +363,7 @@ let Q = e => {
                       onMouseEnter: n,
                       onMouseLeave: i
                     } = t, a = G(t, ["onMouseEnter", "onMouseLeave"]);
-                    return (0, r.jsx)("div", U(M({
+                    return (0, r.jsx)("div", U(k({
                       className: o()(L.otherEmoji, {
                         [x.nonInteractingSticker]: null != K && K !== e.id
                       }),

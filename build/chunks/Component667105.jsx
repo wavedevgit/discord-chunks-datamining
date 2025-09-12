@@ -5,9 +5,9 @@ require.d(exports, {
   DH: () => B,
   Ks: () => G,
   Ws: () => F,
-  g2: () => M,
+  g2: () => k,
   hf: () => j,
-  k3: () => k,
+  k3: () => M,
   qN: () => Z
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -103,7 +103,7 @@ function j(e) {
     }) : (0, A.B)())
   }, [t, d, n, r, a, c, u, s])
 }
-let M = e => {
+let k = e => {
     let {
       useReducedMotion: t,
       className: n
@@ -137,7 +137,7 @@ let M = e => {
       }
     }
   },
-  k = (e, t, n) => {
+  M = (e, t, n) => {
     let {
       message: i,
       xboxURL: a
@@ -190,7 +190,7 @@ function G(e) {
     quest: n
   }), w = (0, E.Rf)(n), x = i.useCallback(() => {
     (0, u.$)()
-  }, []), M = i.useCallback(() => {
+  }, []), k = i.useCallback(() => {
     (0, d.Y)({
       pageType: N.ZY5.GLOBAL_DISCOVERY_QUESTS,
       sectionType: N.jXE.QUEST_TILE_CTA,
@@ -201,7 +201,7 @@ function G(e) {
       analyticsLocations: [],
       analyticsSource: l.Z.QUEST_HOME_PAGE
     })
-  }, []), k = null == (t = (0, h.WD)()) ? true : t.getId(), {
+  }, []), M = null == (t = (0, h.WD)()) ? true : t.getId(), {
     launchInGameActivity: G
   } = (0, E.zB)(n), B = (0, O.f)({
     location: C.dr.QUEST_HOME_DESKTOP,
@@ -283,7 +283,7 @@ function G(e) {
             ctaContent: p.jZ.CONNECT_CONSOLE,
             position: s,
             rowIndex: f,
-            impressionId: k,
+            impressionId: M,
             sourceQuestContent: v
           })
         };
@@ -342,13 +342,13 @@ function G(e) {
         else if ((0, m.xN)(n.config)) return {
           tooltipText: null,
           text: P.intl.string(P.t.WYchdX),
-          onClick: M
+          onClick: k
         };
         return L(D({}, i), {
           text: P.intl.string(P.t.bAGFz8)
         })
     }
-  }, [r, b, A, _, I, a, n, o, s, f, k, w, x, M, y, G, v, B])
+  }, [r, b, A, _, I, a, n, o, s, f, M, w, x, k, y, G, v, B])
 }
 
 function B() {

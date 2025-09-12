@@ -2,8 +2,8 @@
 /** chunk id: 51596, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $Z: () => M,
-  Cp: () => k,
+  $Z: () => k,
+  Cp: () => M,
   F_: () => D,
   Se: () => Z,
   ZN: () => U,
@@ -157,7 +157,7 @@ function j() {
   })
 }
 
-function M() {
+function k() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "KEYBIND",
     t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "";
   x(module), Chunk570140.Z.dispatch(C({
@@ -165,13 +165,13 @@ function M() {
   }, D(exports)))
 }
 
-function k() {
+function M() {
   L(Chunk981631.rMx.QUICKSWITCHER_CLOSED), j()
 }
 
 function U() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "KEYBIND";
-  Chunk823385.Z.isOpen() ? k() : M(module)
+  Chunk823385.Z.isOpen() ? M() : k(module)
 }
 
 function G(e) {

@@ -55,10 +55,10 @@ function I(e) {
     selected: n,
     displayText: a,
     handleTransition: i
-  } = e, [o, u] = l.useState(false), d = l.useRef(null), [g, m] = l.useState(0), _ = l.useRef(false), C = e => {
-    clearTimeout(g), m(setTimeout(() => {
+  } = e, [o, u] = l.useState(false), d = l.useRef(null), [g, _] = l.useState(0), m = l.useRef(false), C = e => {
+    clearTimeout(g), _(setTimeout(() => {
       u(e)
-    }, 100)), e && (_.current = p.Z.keyboardModeEnabled)
+    }, 100)), e && (m.current = p.Z.keyboardModeEnabled)
   }, b = e => {
     ("Enter" === e.key || " " === e.key) && (e.preventDefault(), C(true))
   };
@@ -74,7 +74,7 @@ function I(e) {
       onRequestOpen: () => C(true),
       onRequestClose: () => {
         var e;
-        _.current && !p.Z.keyboardModeEnabled && (0, f.Qj)(), C(false), null == (e = d.current) || e.focus()
+        m.current && !p.Z.keyboardModeEnabled && (0, f.Qj)(), C(false), null == (e = d.current) || e.focus()
       },
       renderPopout: e => {
         let {
@@ -165,11 +165,11 @@ function N(e) {
   let Z = n ? v.DR : a,
     w = f === T.AW.ORBS ? L.ZY5.SHOP_ORBS_TAB : L.ZY5.COLLECTIBLES_SHOP,
     F = l.useCallback(() => {
-      t && (Z(), (0, u.Ou)()), (0, _.Y)({
+      t && (Z(), (0, u.Ou)()), (0, m.Y)({
         pageType: w,
         sectionType: L.jXE.ORBS_BALANCE_MENU,
         ctaObject: L.qAy.CTA_TO_QUEST_HOME
-      }), (0, m.navigateToQuestHome)({
+      }), (0, _.navigateToQuestHome)({
         fromContent: i.j.ORBS_BALANCE_MENU
       })
     }, [Z, t, w]),

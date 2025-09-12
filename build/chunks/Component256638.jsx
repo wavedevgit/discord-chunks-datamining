@@ -258,12 +258,12 @@ let ex = Chunk647438.memo(function() {
       });
     case Chunk981631.kVF.WIN32_DEPRECATED_MESSAGE:
       let {
-        dismissUntil: eM
+        dismissUntil: ek
       } = Chunk100527.metadata;
       return (0, Chunk951288.jsxs)(Chunk481060.qXd, {
         color: Chunk481060.DM8.WARNING,
         children: [(0, Chunk951288.jsx)(Chunk481060.RyX, {
-          onClick: () => ew(eM),
+          onClick: () => ew(ek),
           noticeType: Chunk981631.kVF.WIN32_DEPRECATED_MESSAGE
         }), Chunk388032.intl.format(Chunk388032.t["08KQ1N"], {
           helpCenterLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.WIN32_DEPRECATE)
@@ -271,12 +271,12 @@ let ex = Chunk647438.memo(function() {
       });
     case Chunk981631.kVF.WIN7_8_DEPRECATED_MESSAGE:
       let {
-        dismissUntil: ek
+        dismissUntil: eM
       } = Chunk100527.metadata;
       return (0, Chunk951288.jsxs)(Chunk481060.qXd, {
         color: Chunk481060.DM8.WARNING,
         children: [(0, Chunk951288.jsx)(Chunk481060.RyX, {
-          onClick: () => ew(ek),
+          onClick: () => ew(eM),
           noticeType: Chunk981631.kVF.WIN7_8_DEPRECATED_MESSAGE
         }), Chunk388032.intl.format(Chunk388032.t["8Je+dX"], {
           helpCenterLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.WIN7_8_DEPRECATE)

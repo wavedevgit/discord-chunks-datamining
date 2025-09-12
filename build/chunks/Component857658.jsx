@@ -177,14 +177,14 @@ function x(e) {
         t[O] = e.hex, s(t)
       }
     },
-    M = async () => {
+    k = async () => {
       if (null != c) try {
         let {
           sRGBHex: e
         } = await c.open();
         (0, g.J4)(), x(e)
       } catch (e) {}
-    }, k = () => {
+    }, M = () => {
       if (o.length === C) return;
       0 === o.length && (0, m.ft)(), (0, g.gG)();
       let e = o.length > 0 ? o[o.length - 1] : S,
@@ -230,7 +230,7 @@ function x(e) {
             variant: "icon-only",
             size: "sm"
           }, e), {
-            onClick: M,
+            onClick: k,
             icon: d.i,
             "aria-label": b.intl.string(E.default["NCFz+P"])
           }))
@@ -248,7 +248,7 @@ function x(e) {
     }), o.length < C && (0, r.jsx)(f.zxk, {
       variant: "secondary",
       size: "md",
-      onClick: k,
+      onClick: M,
       icon: _.BRu,
       text: b.intl.string(E.default.JUQcdX),
       fullWidth: true

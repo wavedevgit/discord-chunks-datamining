@@ -60,24 +60,24 @@ function N(e) {
     return e.type === q || e.type === a.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === q)) === true
   })), [D, q, K]), X = (0, h.l)(Y);
   return (l.useEffect(() => {
-    (0, m.n)({
+    (0, _.n)({
       sessionId: Z,
-      checkpoint: m.a.SHOP_MOUNTED,
+      checkpoint: _.a.SHOP_MOUNTED,
       tab: P,
       isFullScreen: N,
       unpublishedCategoriesShown: F,
       cacheDisabled: w
     })
   }, []), l.useEffect(() => {
-    n || (0, m.n)({
+    n || (0, _.n)({
       sessionId: Z,
-      checkpoint: m.a.SHOP_RENDERED,
+      checkpoint: _.a.SHOP_RENDERED,
       tab: P,
       isFullScreen: N,
       unpublishedCategoriesShown: F,
       cacheDisabled: w
     })
-  }, [Z, N, F, w, n, P]), n || null == H) ? (0, r.jsx)(_.Z, {}) : (0, r.jsxs)(r.Fragment, {
+  }, [Z, N, F, w, n, P]), n || null == H) ? (0, r.jsx)(m.Z, {}) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       style: {
         backgroundImage: "url(".concat(G, ")")

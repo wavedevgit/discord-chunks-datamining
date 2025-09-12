@@ -84,7 +84,7 @@ function N(e) {
       id: N.id,
       icon: N.icon
     }),
-    M = (0, i.e7)([f.ZP, h.Z], () => f.ZP.getVisibleRunningGames().find(e => {
+    k = (0, i.e7)([f.ZP, h.Z], () => f.ZP.getVisibleRunningGames().find(e => {
       let {
         id: t
       } = e;
@@ -92,7 +92,7 @@ function N(e) {
       let n = h.Z.getGameByApplication(N);
       return null != n && t === n.id
     })),
-    k = (0, i.e7)([p.Z], () => p.Z.getCurrentUserActiveStream()),
+    M = (0, i.e7)([p.Z], () => p.Z.getCurrentUserActiveStream()),
     U = (0, i.e7)([m.Z], () => m.Z.getChannelId()),
     G = b.default.extractTimestamp(A.id) + y.O < Date.now(),
     B = (0, r.jsx)(r.Fragment, {
@@ -101,7 +101,7 @@ function N(e) {
     {
       newestAnalyticsLocation: Z
     } = (0, l.ZP)(P, s.Z.REQUEST_TO_STREAM_INVITE_EMBED);
-  return G ? t = I.intl.string(v.default.u4QmWl) : null != k ? t = I.intl.string(v.default.P0wwmJ) : U !== R.id ? t = I.intl.string(v.default.qRXatr) : null == M && (t = I.intl.string(v.default["43zohI"])), (0, r.jsx)(c.W, {
+  return G ? t = I.intl.string(v.default.u4QmWl) : null != M ? t = I.intl.string(v.default.P0wwmJ) : U !== R.id ? t = I.intl.string(v.default.qRXatr) : null == k && (t = I.intl.string(v.default["43zohI"])), (0, r.jsx)(c.W, {
     header: I.intl.string(v.default.nAyuPj),
     title: N.name,
     staticBannerSrc: D,
@@ -114,7 +114,7 @@ function N(e) {
       trackingArea: u.j_.STREAM,
       disabledReason: t,
       onClick: () => {
-        null != M && ((0, E.isWindows)() ? (0, _.Z)(M.pid) : (0, a.ZDy)(async () => {
+        null != k && ((0, E.isWindows)() ? (0, _.Z)(k.pid) : (0, a.ZDy)(async () => {
           let {
             default: e
           } = await Promise.all([n.e("38697"), n.e("46746"), n.e("39173")]).then(n.bind(n, 60594));

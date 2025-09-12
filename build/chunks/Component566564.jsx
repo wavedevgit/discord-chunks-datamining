@@ -41,7 +41,7 @@ let k = e => {
     } = e, {
       noCache: h,
       includeUnpublished: O
-    } = (0, m.Z)(), [T, k] = l.useState(false), B = (0, d.sp)(), I = null != (t = null == B ? true : B.sessionId) ? t : "";
+    } = (0, _.Z)(), [T, k] = l.useState(false), B = (0, d.sp)(), I = null != (t = null == B ? true : B.sessionId) ? t : "";
     l.useEffect(() => {
       (0, f.n)({
         sessionId: I,
@@ -148,7 +148,7 @@ let k = e => {
             }, l);
             break;
           case i.z.COUNTDOWN_TIMER:
-            d = (0, r.jsx)(_.J, {
+            d = (0, r.jsx)(m.J, {
               countdownTimerBlock: e,
               isVisible: T,
               isFullScreen: u
@@ -180,20 +180,20 @@ let k = e => {
       transitionState: s
     } = e, i = l.useRef(null), {
       handleScroll: g
-    } = (0, c.z)(i, a), f = (0, h.R)(), p = (0, d.sp)(), [m, _] = l.useState(y.IV), [C, b] = l.useState(false);
+    } = (0, c.z)(i, a), f = (0, h.R)(), p = (0, d.sp)(), [_, m] = l.useState(y.IV), [C, b] = l.useState(false);
     return l.useEffect(() => {
       if (null != i.current) {
         let e = () => {
             if (null == i.current) return;
             let e = i.current.getDistanceFromBottom();
-            m >= 36 ? b(e < 20) : e <= 200 && _(e => e + y.IV)
+            _ >= 36 ? b(e < 20) : e <= 200 && m(e => e + y.IV)
           },
           t = i.current.getScrollerNode();
         return null == t || t.addEventListener("scroll", e), () => {
           null == t || t.removeEventListener("scroll", e)
         }
       }
-    }, [i, m, _, b]), (0, r.jsx)(o.Den, {
+    }, [i, _, m, b]), (0, r.jsx)(o.Den, {
       className: j.shopScroll,
       ref: i,
       onScroll: g,
@@ -203,11 +203,11 @@ let k = e => {
           className: j.mainContent,
           children: [(0, r.jsx)(k, {
             handleTransition: n,
-            numVisibleItems: m,
+            numVisibleItems: _,
             isFetchingCategories: f,
             tab: a,
             isFullScreen: t
-          }), a !== y.AW.CATALOG && m >= 36 && (0, r.jsxs)("div", {
+          }), a !== y.AW.CATALOG && _ >= 36 && (0, r.jsxs)("div", {
             className: j.endOfFeed,
             children: [(0, r.jsx)(o.X6q, {
               variant: "heading-md/semibold",

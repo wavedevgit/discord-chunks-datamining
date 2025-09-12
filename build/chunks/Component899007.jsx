@@ -84,7 +84,7 @@ function P(e) {
     analyticsLocations: L
   } = (0, d.ZP)(u.Z.AVATAR), {
     trackUserProfileAction: j
-  } = (0, m.KZ)(), M = p.ZP.isPremiumAtLeast(null == n ? true : n.premiumType, v.p9.TIER_2), k = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, h), [t, h]), {
+  } = (0, m.KZ)(), k = p.ZP.isPremiumAtLeast(null == n ? true : n.premiumType, v.p9.TIER_2), M = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, h), [t, h]), {
     live: U
   } = (0, g.Z)(t.id), [G] = U, {
     status: B,
@@ -107,8 +107,8 @@ function P(e) {
     size: V,
     "aria-label": t.username,
     imageClassName: null != P ? T.overlay : true,
-    status: k ? O.Skl.UNKNOWN : F,
-    statusBackdropColor: M && !k ? (0, l.QFD)(x) : true,
+    status: M ? O.Skl.UNKNOWN : F,
+    statusBackdropColor: k && !M ? (0, l.QFD)(x) : true,
     isMobile: Z,
     statusTooltip: true,
     statusTooltipDelay: y.vB

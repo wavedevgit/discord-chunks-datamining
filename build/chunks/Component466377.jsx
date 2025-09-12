@@ -6,8 +6,8 @@ require.d(exports, {
   Y0: () => x,
   YA: () => G,
   fM: () => D,
-  hz: () => M,
-  mz: () => k,
+  hz: () => k,
+  mz: () => M,
   ol: () => U,
   xB: () => L
 });
@@ -136,10 +136,10 @@ function x(e) {
       clamp: true
     },
     onRest: b
-  }, "animate-always"), L = i.useRef(null), j = null != R["aria-label"], M = null != R["aria-labelledby"], k = i.useId(), U = null != (t = R["aria-labelledby"]) ? t : k, G = i.useMemo(() => ({
+  }, "animate-always"), L = i.useRef(null), j = null != R["aria-label"], k = null != R["aria-labelledby"], M = i.useId(), U = null != (t = R["aria-labelledby"]) ? t : M, G = i.useMemo(() => ({
     headerId: U,
-    headerIdIsManaged: M
-  }), [U, M]);
+    headerIdIsManaged: k
+  }), [U, k]);
   return (0, r.jsx)(y.zM.Provider, {
     value: G,
     children: (0, r.jsx)(p.V, C(S({
@@ -197,7 +197,7 @@ function j(e) {
   }
 }
 
-function M(e) {
+function k(e) {
   let {
     className: t,
     children: n,
@@ -214,7 +214,7 @@ function M(e) {
   }))
 }
 
-function k(e) {
+function M(e) {
   var t, n, i, a, s;
   return (0, r.jsx)(b.Z, {
     grow: 0,

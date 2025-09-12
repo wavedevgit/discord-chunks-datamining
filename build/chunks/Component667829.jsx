@@ -68,13 +68,13 @@ function j(e, t) {
   return n
 }
 
-function M(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 new Chunk710845.Z("ChannelEditor.tsx");
-let k = function() {
+let M = function() {
     for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require]
   },
   U = 1e3;
@@ -230,7 +230,7 @@ class G extends Chunk647438.Component {
       maxCharacterCount: w,
       allowNewLines: x,
       "aria-describedby": j,
-      "aria-labelledby": k,
+      "aria-labelledby": M,
       accessibilityLabel: U
     } = this.props, {
       submitting: G,
@@ -277,16 +277,16 @@ class G extends Chunk647438.Component {
       "aria-activedescendant": null != (s = B.activeDescendant) ? Chunk392711 : true,
       "aria-invalid": l.length > Chunk388032,
       "aria-describedby": j,
-      "aria-labelledby": k,
+      "aria-labelledby": M,
       "aria-autocomplete": "list"
-    }, F = Chunk998698 ? (0, Chunk951288.jsx)(Chunk4484.Z, M(L({
+    }, F = Chunk998698 ? (0, Chunk951288.jsx)(Chunk4484.Z, k(L({
       ref: this.ref
     }, Z), {
       type: Chunk476326,
       value: u ? (0, Chunk752305.JM)("") : Chunk218887,
       canUseCommands: null == (t = Chunk476326.commands) ? true : exports.enabled,
       canOnlyUseTextCommands: Chunk403182
-    })) : (0, Chunk951288.jsx)(Chunk140963.Z, M(L({
+    })) : (0, Chunk951288.jsx)(Chunk140963.Z, k(L({
       ref: this.ref
     }, Z), {
       value: u ? "" : l
@@ -413,7 +413,7 @@ class G extends Chunk647438.Component {
         files: I,
         errors: T
       } = B(e.clipboardData, u.uploadLongMessages ? v : null);
-      return (k("onPaste", [...e.clipboardData.items].map(e => {
+      return (M("onPaste", [...e.clipboardData.items].map(e => {
         if ("file" !== e.kind) return {
           kind: e.kind,
           type: e.type

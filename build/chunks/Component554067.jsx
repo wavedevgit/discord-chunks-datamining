@@ -23,14 +23,14 @@ function h(e) {
     selectedTab: n
   } = e, {
     searchQuery: h,
-    onSetSearchQuery: m
-  } = (0, u.S)(), [_, C] = l.useState(""), b = (0, c.sp)(), E = (0, a.e7)([i.default], () => i.default.locale);
+    onSetSearchQuery: _
+  } = (0, u.S)(), [m, C] = l.useState(""), b = (0, c.sp)(), E = (0, a.e7)([i.default], () => i.default.locale);
   return l.useEffect(() => {
     let e = setTimeout(() => {
-      m(_)
+      _(m)
     }, 250);
     return () => clearTimeout(e)
-  }, [_, m]), l.useEffect(() => {
+  }, [m, _]), l.useEffect(() => {
     C(h)
   }, [h]), (0, r.jsx)(s.P3F, {
     ignoreKeyPress: true,
@@ -49,9 +49,9 @@ function h(e) {
     children: (0, r.jsx)(s.E1j, {
       size: "sm",
       onKeyDown: e => {
-        "Enter" === e.key && m(_)
+        "Enter" === e.key && _(m)
       },
-      query: _,
+      query: m,
       onChange: C,
       onClear: () => {
         C(""), o.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {

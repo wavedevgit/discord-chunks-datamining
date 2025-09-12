@@ -43,13 +43,16 @@ let h = 3,
       campaignId: t
     } = e;
     try {
+      s.Z.dispatch({
+        type: "MARKETING_CAMPAIGN_ELIGIBILITY_FETCH_STARTED"
+      });
       let e = await a.tn.get({
         url: f.ANM.MARKETING_CAMPAIGN_ELIGIBILITY(t),
         rejectWithError: false,
         retries: h
       });
       return s.Z.dispatch({
-        type: "MARKETING_CAMPAIGN_ELIGIBILITY_FETCHED",
+        type: "MARKETING_CAMPAIGN_ELIGIBILITY_FETCH_SUCCESS",
         isEligible: e.body.eligibility
       }), e.body.eligibility
     } catch (e) {

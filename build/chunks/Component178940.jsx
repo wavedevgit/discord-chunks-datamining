@@ -2,10 +2,11 @@
 /** chunk id: 178940, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  X: () => u
+  X: () => f
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
+var Chunk481060 = require("./481060.js"),
   Chunk877371 = require("./877371.js"),
   Chunk330406 = require("./330406.jsx"),
   Chunk965048 = require("./965048.jsx");
@@ -32,26 +33,48 @@ function c(e) {
   return e
 }
 
-function u(e) {
+function u(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function d(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : u(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function f(e) {
   let {
     disabled: t,
     displayOnly: n,
     label: l,
-    value: u,
-    onChange: d
-  } = e, f = (0, a.A)("Checkbox"), _ = i.useCallback(e => {
-    let t = {
-      currentTarget: {
-        checked: e
-      }
-    };
-    null == d || d(t, e)
-  }, [d]);
-  return f ? (0, r.jsx)(o.C, {
+    checked: u,
+    onChange: f,
+    labelSize: _
+  } = e;
+  if ((0, a.A)("Checkbox")) return (0, r.jsx)(o.C, {
     disabled: t,
     displayOnly: n,
     checked: u,
-    onChange: _,
-    label: l
-  }) : (0, r.jsx)(s.$q, c({}, e))
+    onChange: f,
+    label: l,
+    labelSize: _
+  });
+  let p = null != l && "" !== l ? (0, r.jsx)(i.Text, {
+    variant: "small" === _ ? "text-sm/normal" : "text-md/normal",
+    color: "small" === _ ? "text-secondary" : "text-primary",
+    children: l
+  }) : null;
+  return (0, r.jsx)(s.$q, d(c({}, e), {
+    value: u,
+    onChange: (e, t) => null == f ? true : f(t),
+    children: p
+  }))
 }

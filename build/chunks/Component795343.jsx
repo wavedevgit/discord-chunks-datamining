@@ -52,9 +52,9 @@ function O(e) {
   let w = (0, f.a)(),
     F = l.useMemo(() => w(P), [w, P]);
   l.useEffect(() => {
-    n || (0, m.n)({
+    n || (0, _.n)({
       sessionId: T,
-      checkpoint: m.a.SHOP_RENDERED,
+      checkpoint: _.a.SHOP_RENDERED,
       tab: x,
       isFullScreen: a,
       unpublishedCategoriesShown: j,
@@ -101,7 +101,7 @@ function O(e) {
           [v.loadIn]: U
         }),
         ref: H,
-        children: [z && [...Array(W)].map((e, t) => (0, r.jsx)(_.K, {}, t)), !z && F.map((e, t) => {
+        children: [z && [...Array(W)].map((e, t) => (0, r.jsx)(m.K, {}, t)), !z && F.map((e, t) => {
           let n = g.Z.getCategory(e.categorySkuId);
           return null == n ? null : (0, r.jsx)(d.k0, {
             newValue: {

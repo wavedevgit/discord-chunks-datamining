@@ -59,7 +59,7 @@ let w = e => {
     } = e;
     (0, h.z)(p.f), (0, O.f)();
     let a = (0, g.Z)((0, i.Z)()),
-      c = (0, o.e7)([_.default], () => _.default.getCurrentUser()),
+      c = (0, o.e7)([m.default], () => m.default.getCurrentUser()),
       P = (0, I.G)("CollectiblesShop"),
       {
         onClose: F
@@ -104,7 +104,7 @@ let w = e => {
     }, [ee]), l.useEffect(() => {
       t || (0, d.Y)(A.Z5c.COLLECTIBLES_SHOP)
     }, [t]);
-    let et = (0, o.e7)([m.Z], () => m.Z.getLayers().includes(A.S9g.COLLECTIBLES_SHOP)),
+    let et = (0, o.e7)([_.Z], () => _.Z.getLayers().includes(A.S9g.COLLECTIBLES_SHOP)),
       en = l.useRef(null),
       er = l.useRef(null);
     (0, u.Tbt)(en);

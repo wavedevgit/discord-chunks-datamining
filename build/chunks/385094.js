@@ -41,11 +41,11 @@ function E(e, t, n) {
   } = r.Co.get(t), D = (0, i.mp)(), x = (0, f.useRef)(null), L = () => {
     var e;
     null === n.current || (null == x.current || S.key === x.current) && (null == (e = n.current) ? true : e.contains(document.activeElement)) || (0, u.e)(n.current)
-  }, j = {}, M = e.hasChildItems, k = t.selectionManager.isLink(S.key);
+  }, j = {}, k = e.hasChildItems, M = t.selectionManager.isLink(S.key);
   if (null != S && "expandedKeys" in t) {
     let e = null == (O = (v = t.collection).getChildren) ? true : O.call(v, S.key);
-    M = M || [...null != e ? e : []].length > 1, null == N && !k && "none" === t.selectionManager.selectionMode && M && (N = () => t.toggleKey(S.key));
-    let n = M ? t.expandedKeys.has(S.key) : true,
+    k = k || [...null != e ? e : []].length > 1, null == N && !M && "none" === t.selectionManager.selectionMode && k && (N = () => t.toggleKey(S.key));
+    let n = k ? t.expandedKeys.has(S.key) : true,
       r = 1;
     if (S.level > 0 && (null == S ? true : S.parentKey) != null) {
       let e = t.collection.getItem(S.parentKey);
@@ -74,10 +74,10 @@ function E(e, t, n) {
     if (!e.currentTarget.contains(e.target) || !n.current || !document.activeElement) return;
     let r = (0, d.QL)(n.current);
     if (r.currentNode = document.activeElement, "expandedKeys" in t && document.activeElement === n.current) {
-      if (e.key === m[C] && t.selectionManager.focusedKey === S.key && M && !t.expandedKeys.has(S.key)) {
+      if (e.key === m[C] && t.selectionManager.focusedKey === S.key && k && !t.expandedKeys.has(S.key)) {
         t.toggleKey(S.key), e.stopPropagation();
         return
-      } else if (e.key === g[C] && t.selectionManager.focusedKey === S.key && M && t.expandedKeys.has(S.key)) {
+      } else if (e.key === g[C] && t.selectionManager.focusedKey === S.key && k && t.expandedKeys.has(S.key)) {
         t.toggleKey(S.key), e.stopPropagation();
         return
       }

@@ -87,7 +87,7 @@ let R = {
       onVisibilityChange: D
     } = e, M = (0, g.O)(e => {
       null == D || D(e)
-    }, .1, null != D), W = (0, u.e7)([h.default], () => h.default.getCurrentUser()), U = (0, j.Z)(), V = (0, _.sp)(), z = (0, S.N)("HeroBlock") && H !== I.AW.ORBS, G = (0, S.E)("HeroBlock"), q = l.useMemo(() => {
+    }, .1, null != D), W = (0, u.e7)([h.default], () => h.default.getCurrentUser()), U = (0, j.Z)(), V = (0, m.sp)(), z = (0, S.N)("HeroBlock") && H !== I.AW.ORBS, G = (0, S.E)("HeroBlock"), q = l.useMemo(() => {
       var e, t;
       return null != F ? F : null == w ? R : {
         rankedSkuIds: null != (e = w.heroRanking) ? e : [],
@@ -124,7 +124,7 @@ let R = {
         ctaObject: N.qAy.CTA_TO_QUEST_HOME
       }), (0, f.navigateToQuestHome)({
         fromContent: o.j.ORBS_SHOP_HERO_CTA
-      })) : (a("shop latest category hero", ec && q.categorySkuId !== i.T.ORB ? true : q.categorySkuId), m.default.track(N.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+      })) : (a("shop latest category hero", ec && q.categorySkuId !== i.T.ORB ? true : q.categorySkuId), _.default.track(N.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == V ? true : V.sessionId,
         sku_id: q.categorySkuId,
         page_type: H,
@@ -212,7 +212,7 @@ let R = {
           }) : (0, r.jsx)(r.Fragment, {
             children: ei.map((e, t) => {
               let n = C.Z.getCategoryForProduct(e.skuId);
-              return null == e || null == n ? null : (0, r.jsx)(_.k0, {
+              return null == e || null == n ? null : (0, r.jsx)(m.k0, {
                 newValue: {
                   tilePosition: t,
                   pageSection: "top 4",

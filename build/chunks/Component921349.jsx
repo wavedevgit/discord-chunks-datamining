@@ -88,11 +88,11 @@ function L(e, t) {
   return i
 }
 let j = 44,
-  M = {
+  k = {
     keys: ["label"]
   };
 
-function k(e) {
+function M(e) {
   return e.label
 }
 
@@ -177,7 +177,7 @@ let B = Chunk647438.forwardRef(function(e, t) {
     popoutWidth: B,
     filter: F = true,
     debounceTime: Y,
-    renderOptionLabel: W = k,
+    renderOptionLabel: W = M,
     onSearchChange: q,
     renderOptionPrefix: X = () => null,
     renderOptionSuffix: Q = () => null,
@@ -212,7 +212,7 @@ let B = Chunk647438.forwardRef(function(e, t) {
     active: eO,
     loadableOptions: n,
     debounceTime: Y
-  }), eD = i.useMemo(() => G(eR, a), [eR, a]), ex = i.useMemo(() => eD.map(e => e.value), [eD]), eL = eD[eD.length - 1], ej = (0, A.Z)(eL), eM = i.useId(), ek = i.useId(), eU = i.useId(), eG = i.useCallback(e => {
+  }), eD = i.useMemo(() => G(eR, a), [eR, a]), ex = i.useMemo(() => eD.map(e => e.value), [eD]), eL = eD[eD.length - 1], ej = (0, A.Z)(eL), ek = i.useId(), eM = i.useId(), eU = i.useId(), eG = i.useCallback(e => {
     eO === e || P || (ev(e), e ? null == g || g() : null == b || b())
   }, [P, b, g, eO]), eB = i.useCallback(e => {
     eO && !e && eG(false)
@@ -244,7 +244,7 @@ let B = Chunk647438.forwardRef(function(e, t) {
       })
     }), []),
     eY = (0, c.ZP)({
-      id: ek,
+      id: eM,
       defaultFocused: null != eL ? String(eL.value) : true,
       scrollToStart: eV,
       scrollToEnd: eH,
@@ -324,7 +324,7 @@ let B = Chunk647438.forwardRef(function(e, t) {
       }
     }, [eG, eO]),
     eQ = eR;
-  eS && null != eI && false !== F && (eQ = "function" == typeof F ? F(eR, eI) : (0, s.Lu)(eR, eI, null != ea ? ea : M)), i.useEffect(() => {
+  eS && null != eI && false !== F && (eQ = "function" == typeof F ? F(eR, eI) : (0, s.Lu)(eR, eI, null != ea ? ea : k)), i.useEffect(() => {
     let e = eC.current;
     null == e || e.scrollToTop()
   }, [eI]), i.useEffect(() => {
@@ -355,7 +355,7 @@ let B = Chunk647438.forwardRef(function(e, t) {
           loading: eP,
           multi: !!_,
           listRef: eC,
-          listId: eM,
+          listId: ek,
           maxVisibleItems: D,
           width: null != B && "auto" !== B ? B : eg,
           selectedValues: ex,
@@ -448,8 +448,8 @@ let B = Chunk647438.forwardRef(function(e, t) {
                   activeDescendant: eb,
                   placeholder: O,
                   inputId: eU,
-                  listboxId: eM,
-                  navigatorId: ek,
+                  listboxId: ek,
+                  navigatorId: eM,
                   selectValue: function(e) {
                     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
                     ez(e, t)

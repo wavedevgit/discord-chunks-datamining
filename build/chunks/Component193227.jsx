@@ -79,7 +79,7 @@ function j(e) {
   return (0, r.jsxs)("div", {
     className: y.categoryWrapper,
     ref: i,
-    children: [o && null != t.catalogBannerAsset ? (0, r.jsx)(_.Z, {
+    children: [o && null != t.catalogBannerAsset ? (0, r.jsx)(m.Z, {
       category: t
     }) : (0, r.jsx)(C.Z, {
       category: t,
@@ -99,7 +99,7 @@ function k(e) {
     currentPage: c,
     handlePageChange: u
   } = e, f = (0, d.sp)(), p = (0, S.R)(), h = null != (t = null == f ? true : f.sessionId) ? t : "", {
-    noCache: _,
+    noCache: m,
     includeUnpublished: C
   } = (0, v.Z)(), E = l.useMemo(() => n.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
     let {
@@ -111,24 +111,24 @@ function k(e) {
     return E.slice(e, e + x.kN)
   }, [E, c]);
   l.useEffect(() => {
-    (0, m.n)({
+    (0, _.n)({
       sessionId: h,
-      checkpoint: m.a.SHOP_MOUNTED,
+      checkpoint: _.a.SHOP_MOUNTED,
       tab: x.AW.CATALOG,
       isFullScreen: i,
       unpublishedCategoriesShown: C,
-      cacheDisabled: _
+      cacheDisabled: m
     })
   }, []), l.useEffect(() => {
-    p || 0 === O.length || (0, m.n)({
+    p || 0 === O.length || (0, _.n)({
       sessionId: h,
-      checkpoint: m.a.SHOP_RENDERED,
+      checkpoint: _.a.SHOP_RENDERED,
       tab: x.AW.CATALOG,
       isFullScreen: i,
       unpublishedCategoriesShown: C,
-      cacheDisabled: _
+      cacheDisabled: m
     })
-  }, [h, i, C, _, p, O.length]);
+  }, [h, i, C, m, p, O.length]);
   let T = (0, g.FF)("CollectiblesBrowse");
   return p ? (0, r.jsx)(b.Z, {}) : (0, r.jsxs)("div", {
     className: s()(y.categories, {

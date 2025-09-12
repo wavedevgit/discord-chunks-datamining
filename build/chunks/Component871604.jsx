@@ -99,7 +99,7 @@ function R(e) {
   if (null == R || !(0, d.Eb)(R)) return null;
   let {
     customInstallUrl: j
-  } = R, M = null == j || E.Z.isDiscordUrl(j) ? o.qJs : o.Gr1, k = w ? true : M;
+  } = R, k = null == j || E.Z.isDiscordUrl(j) ? o.qJs : o.Gr1, M = w ? true : k;
   return g.wS ? (0, r.jsx)(o.yRy, {
     targetElementRef: N,
     renderPopout: e => {
@@ -128,7 +128,7 @@ function R(e) {
         ref: N,
         action: "PRESS_ADD_APP",
         text: L,
-        icon: k,
+        icon: M,
         onContextMenu: t,
         onClick: x
       }, n, S))
@@ -136,7 +136,7 @@ function R(e) {
   }) : (0, r.jsx)(v.tG, A({
     action: "PRESS_ADD_APP",
     text: L,
-    icon: k,
+    icon: M,
     onClick: x
   }, S))
 }

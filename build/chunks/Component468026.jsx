@@ -2,7 +2,7 @@
 /** chunk id: 468026, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  default: () => m
+  default: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,97 +12,92 @@ var Chunk951288 = require("./951288.js"),
   Chunk512983 = require("./512983.jsx"),
   Chunk466377 = require("./466377.jsx"),
   Chunk993365 = require("./993365.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk964144 = require("./964144.js");
-let m = e => {
+let h = e => {
   let t, n, a, {
-      body: m,
-      cancelText: g,
-      className: E,
-      confirmColor: b,
-      confirmText: y = p.intl.string(p.t.BddRzc),
-      secondaryConfirmText: O,
-      onCancel: v,
-      onClose: I,
-      onConfirm: T,
-      onConfirmSecondary: S,
-      title: A,
-      transitionState: C,
-      titleClassName: N
+      body: h,
+      cancelText: m,
+      className: g,
+      confirmColor: E,
+      confirmText: b = _.intl.string(_.t.BddRzc),
+      secondaryConfirmText: y,
+      onCancel: O,
+      onClose: v,
+      onConfirm: I,
+      onConfirmSecondary: T,
+      title: S,
+      transitionState: A,
+      titleClassName: C
     } = e,
-    R = s.zx.Sizes.MEDIUM,
-    [P, w] = i.useState(false);
+    N = s.zx.Sizes.MEDIUM,
+    [R, P] = i.useState(false);
   i.useEffect(() => () => {
-    P && (null == S || S())
-  }, [P, S]);
-  let D = () => {
-      null == I || I(), null == v || v()
+    R && (null == T || T())
+  }, [R, T]);
+  let w = () => {
+      null == v || v(), null == O || O()
     },
-    x = e => {
-      null != e && e.preventDefault(), null == I || I(), null == T || T()
+    D = e => {
+      null != e && e.preventDefault(), null == v || v(), null == I || I()
     };
-  return null != g && "" !== g && (t = (0, r.jsx)(s.zx, {
+  return null != m && "" !== m && (t = (0, r.jsx)(s.zx, {
     type: "button",
-    size: R,
+    size: N,
     color: s.zx.Colors.PRIMARY,
-    onClick: D,
-    className: h.secondaryButton,
-    children: g
-  })), null != y && "" !== y && (n = (0, r.jsx)(s.zx, {
+    onClick: w,
+    className: p.secondaryButton,
+    children: m
+  })), null != b && "" !== b && (n = (0, r.jsx)(s.zx, {
     type: "submit",
-    color: b,
-    size: R,
-    className: h.primaryButton,
+    color: E,
+    size: N,
+    className: p.primaryButton,
     autoFocus: true,
-    children: y
-  })), null != O && "" !== O && (a = (0, r.jsx)(d.$q, {
-    value: P,
-    onChange: (e, t) => w(t),
-    type: d.M0.DEFAULT,
-    children: (0, r.jsx)(u.x, {
-      variant: "text-sm/normal",
-      color: "text-secondary",
-      children: O
-    })
+    children: b
+  })), null != y && "" !== y && (a = (0, r.jsx)(d.XZJ, {
+    checked: R,
+    onChange: e => P(e),
+    label: y,
+    labelSize: "small"
   })), (0, r.jsx)(c.Y0, {
-    transitionState: C,
+    transitionState: A,
     size: c.Cg.DYNAMIC,
-    className: o()(E, h.container),
-    "aria-label": A,
+    className: o()(g, p.container),
+    "aria-label": S,
     parentComponent: "Alert",
     children: (0, r.jsxs)("form", {
-      onSubmit: x,
-      className: h.form,
+      onSubmit: D,
+      className: p.form,
       children: [(0, r.jsx)(c.xB, {
-        children: null != A ? (0, r.jsx)(f.X6q, {
+        children: null != S ? (0, r.jsx)(d.X6q, {
           variant: "heading-lg/semibold",
-          className: o()(h.title, N),
-          children: A
+          className: o()(p.title, C),
+          children: S
         }) : (0, r.jsx)(l.v, {
           tag: "h2",
-          className: o()(h.title, N),
-          children: A
+          className: o()(p.title, C),
+          children: S
         })
       }), (0, r.jsx)(c.hz, {
-        className: h.modalContent,
-        children: (0, r.jsx)(_.Z, {
-          direction: _.Z.Direction.VERTICAL,
-          justify: _.Z.Justify.START,
-          className: h.content,
-          children: null != m && (0, r.jsx)(u.x, {
+        className: p.modalContent,
+        children: (0, r.jsx)(f.Z, {
+          direction: f.Z.Direction.VERTICAL,
+          justify: f.Z.Justify.START,
+          className: p.content,
+          children: null != h && (0, r.jsx)(u.x, {
             variant: "text-md/normal",
-            className: h.body,
+            className: p.body,
             color: "header-secondary",
-            children: m
+            children: h
           })
         })
       }), (0, r.jsxs)(c.mz, {
         justify: true,
-        wrap: _.Z.Wrap.WRAP,
-        className: h.modalFooter,
+        wrap: f.Z.Wrap.WRAP,
+        className: p.modalFooter,
         children: [n, t, a]
       })]
     })

@@ -326,7 +326,7 @@ let e2 = () => {
         searchableTitles: [ez.intl.string(ez.t.URyqtL)],
         label: ez.intl.string(ez.t.URyqtL),
         ariaLabel: ez.intl.string(ez.t.URyqtL),
-        element: ek.Z,
+        element: eM.Z,
         predicate: () => e0
       },
       [eV.s6.GAMES_MY_GAMES]: {
@@ -1629,7 +1629,7 @@ let e2 = () => {
         searchableTitles: [ez.intl.string(ez.t.AVDyEh)],
         label: ez.intl.string(ez.t.AVDyEh),
         element: eE.Z,
-        predicate: () => !e0 && (0, eM.Jw)()
+        predicate: () => !e0 && (0, ek.Jw)()
       },
       [eV.s6.OVERLAY]: {
         section: eY.oAB.OVERLAY,
@@ -2013,7 +2013,7 @@ let e2 = () => {
         section: eY.oAB.QUEST_PREVIEW_TOOL,
         searchableTitles: ["Quest Preview Tool"],
         label: "Quest Preview Tool",
-        element: k.Z,
+        element: M.Z,
         predicate: () => (0, j.X)({
           location: eW.dr.QUEST_PREVIEW_TOOL
         })
@@ -2033,7 +2033,7 @@ let e2 = () => {
         section: eY.oAB.QUEST_MINOR_REWARD_CAPPING_CONFIG,
         searchableTitles: ["Minor Reward Capping Config"],
         label: "Minor Reward Capping Config",
-        element: M.Z,
+        element: k.Z,
         predicate: () => e7
       },
       [eV.s6.WEB_SETTING_TREE_TOOL]: {

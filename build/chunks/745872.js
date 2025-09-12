@@ -149,7 +149,7 @@ var j = function e(t) {
     }
     return x[t] = n, n
   },
-  M = {
+  k = {
     __proto__: null,
     "%ArrayBufferPrototype%": ["ArrayBuffer", "prototype"],
     "%ArrayPrototype%": ["Array", "prototype"],
@@ -224,7 +224,7 @@ var j = function e(t) {
   },
   K = function(e, t) {
     var n, r = e;
-    if (U(M, r) && (r = "%" + (n = M[r])[0] + "%"), U(x, r)) {
+    if (U(k, r) && (r = "%" + (n = k[r])[0] + "%"), U(x, r)) {
       var i = x[r];
       if (i === w && (i = j(r)), true === i && !t) throw new u("intrinsic " + e + " exists, but is not available. Please file an issue!");
       return {

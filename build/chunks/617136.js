@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Ic: () => L,
-  O5: () => M,
-  Zk: () => k,
+  O5: () => k,
+  Zk: () => M,
   _3: () => x,
   _F: () => j,
   _b: () => C,
@@ -188,7 +188,7 @@ function j() {
   }, [module])
 }
 
-function M() {
+function k() {
   let e = j();
   return Chunk647438.useCallback(t => {
     let {
@@ -219,7 +219,7 @@ function M() {
   }, [module])
 }
 
-function k(e, t) {
+function M(e, t) {
   r.useEffect(() => {
     U(t, e)
   }, [e, t])

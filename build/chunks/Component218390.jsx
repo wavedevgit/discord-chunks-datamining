@@ -73,7 +73,7 @@ function eu(e) {
     isDiscountApplied: n,
     activeDiscountInfo: i,
     theme: a
-  } = e, o = t.hasActiveTrial, s = t.planIdFromItems === J.Xh.PREMIUM_YEAR_TIER_2, c = n || o, u = null != t.trialEndsAt ? l()(t.trialEndsAt).diff(l()(), "d") : 0, d = J.GP[t.planIdFromItems], _ = M.ZP.formatPriceString(M.ZP.getDefaultPrice(d.id), d.interval), {
+  } = e, o = t.hasActiveTrial, s = t.planIdFromItems === J.Xh.PREMIUM_YEAR_TIER_2, c = n || o, u = null != t.trialEndsAt ? l()(t.trialEndsAt).diff(l()(), "d") : 0, d = J.GP[t.planIdFromItems], _ = k.ZP.formatPriceString(k.ZP.getDefaultPrice(d.id), d.interval), {
     enabled: h
   } = G.T.getCurrentConfig({
     location: "SubscriptionUserHeroSubheader"
@@ -230,32 +230,32 @@ function ef(e) {
   let {
     className: a,
     config: s
-  } = e, l = (0, c.e7)([O.Z], () => O.Z.useReducedMotion) ? s.getStaticImageUrl() : s.getAnimatedImageUrl(), u = (0, Z.Yr)(null == (t = s.getBackgroundImageUrl) ? true : t.call(s)), d = (0, Z.Tl)(null != (n = s.gradientConfig) ? n : true), f = {
+  } = e, l = (0, c.e7)([O.Z], () => O.Z.useReducedMotion), u = s.getImageUrl(l), d = (0, Z.Yr)(null == (t = s.getBackgroundImageUrl) ? true : t.call(s)), f = (0, Z.Tl)(null != (n = s.gradientConfig) ? n : true), _ = {
     color: null != (i = s.textColor) ? i : "var(--always-white)"
   };
   return (0, r.jsxs)("div", {
     className: o()(et.giftCardPromotion, a),
-    style: null != u ? u : d,
+    style: null != d ? d : f,
     children: [(0, r.jsx)("img", {
       alt: "",
       className: et.giftImagePromotion,
       "aria-hidden": true,
-      src: l
+      src: u
     }), (0, r.jsxs)("div", {
       className: et.giftInfoPromotion,
       children: [(0, r.jsx)(p.X6q, {
         className: et.giftInfoTitlePromotion,
-        style: f,
+        style: _,
         variant: "text-lg/bold",
         children: s.title()
       }), (0, r.jsx)(p.Text, {
         className: et.giftText,
-        style: f,
+        style: _,
         variant: "text-sm/medium",
         children: s.body()
       }), null != s.additionalTerm && (0, r.jsx)(p.Text, {
         className: et.giftAdditionalTerm,
-        style: f,
+        style: _,
         variant: "text-xxs/normal",
         children: s.additionalTerm()
       }), (0, r.jsx)(Y.Z, {
@@ -340,7 +340,7 @@ let ep = function() {
     note: null
   });
   if (!Chunk483444 && !Chunk63063 || l) return (0, Chunk951288.jsx)(Chunk481060.$jN, {});
-  let M = !!(null == Chunk120356 ? true : Chunk120356.hasActiveTrial);
+  let k = !!(null == Chunk120356 ? true : Chunk120356.hasActiveTrial);
   return (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: require,
     children: (0, Chunk951288.jsxs)(Chunk951288.Fragment, {

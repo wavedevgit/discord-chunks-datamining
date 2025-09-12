@@ -140,13 +140,13 @@ function N(e) {
     }
   });
   let {
-    ref: M,
-    width: k = 0,
+    ref: k,
+    width: M = 0,
     height: U = 0
   } = (0, f.ZP)(R), G = b({}, T, I.springConfig, D.enabled ? {
     clamp: true
   } : null), B = (0, d.q_F)({
-    width: null != (n = I.width) ? n : k,
+    width: null != (n = I.width) ? n : M,
     height: U,
     config: G
   }, null == P ? "animate-never" : "respect-motion-settings"), Z = (0, d.Yzy)(R, {
@@ -194,7 +194,7 @@ function N(e) {
         opacity: e.value.to(e => 1 - Math.abs(e))
       };
       return (0, r.jsx)(s.animated.div, {
-        ref: t === R ? M : null,
+        ref: t === R ? k : null,
         style: b({
           position: "absolute",
           display: E,

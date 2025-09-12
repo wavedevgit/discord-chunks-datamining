@@ -79,8 +79,8 @@ let w = (0, Chunk938288.animated)(Chunk481060.CJ0),
       isAnimating: x,
       isExpanded: L,
       isInteracting: j,
-      contentPosition: M,
-      toggleExpanded: k,
+      contentPosition: k,
+      toggleExpanded: M,
       sourceQuestContent: U
     } = e, {
       ref: G,
@@ -89,11 +89,11 @@ let w = (0, Chunk938288.animated)(Chunk481060.CJ0),
       let t = e.target;
       F(t.offsetWidth), H(t.scrollWidth)
     }), W = (0, d.y)(Y), K = (0, v.uq)(C), z = C === h.jn.QUESTS_EMBED, q = (0, p.t5)(a, I.dr.QUESTS_CARD, C, U), X = (null == (t = a.userStatus) ? true : t.completedAt) != null, Q = (0, _.O5)(), J = (0, p.B6)(a.config.expiresAt), $ = (0, p.B6)(m.r.build(a.config).rewardsExpireAt), ee = i.useMemo(() => null != a.config.cosponsorMetadata, [a]), et = e => {
-      e.stopPropagation(), e.currentTarget.blur(), k(), Q({
+      e.stopPropagation(), e.currentTarget.blur(), M(), Q({
         questId: a.id,
         questContent: C,
         questContentCTA: L ? _.jZ.COLLAPSE : _.jZ.EXPAND,
-        questContentPosition: M,
+        questContentPosition: k,
         sourceQuestContent: U
       })
     }, en = () => null != Z && null != V && Z < V, er = (0, r.jsx)(E.ZP, {
@@ -236,7 +236,7 @@ let w = (0, Chunk938288.animated)(Chunk481060.CJ0),
           children: [(0, r.jsx)(O.r, {
             questContent: C,
             quest: a,
-            questContentPosition: M,
+            questContentPosition: k,
             shouldShowDisclosure: true,
             hideLearnMore: K,
             showShareLink: !n && z,

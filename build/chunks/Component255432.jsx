@@ -2,19 +2,18 @@
 /** chunk id: 255432, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  a: () => h
+  a: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk793030 = require("./793030.js"),
   Chunk540863 = require("./540863.jsx"),
   Chunk619307 = require("./619307.jsx"),
-  Chunk993365 = require("./993365.js"),
   Chunk463208 = require("./463208.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk624315 = require("./624315.js");
 
-function d(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,20 +22,20 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      d(e, t, n[t])
+      u(e, t, n[t])
     })
   }
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,51 +46,47 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e) {
+function p(e) {
   let {
     controls: t,
     props: n,
-    onPropsChange: d
-  } = e, _ = (e, t) => {
-    d(p(f({}, n), {
+    onPropsChange: u
+  } = e, f = (e, t) => {
+    u(_(d({}, n), {
       [e]: t
     }))
-  }, h = Object.entries(t);
-  return 0 === h.length ? null : (0, r.jsx)("div", {
-    className: u.controlsSection,
+  }, p = Object.entries(t);
+  return 0 === p.length ? null : (0, r.jsx)("div", {
+    className: c.controlsSection,
     children: (0, r.jsx)(i.Kqy, {
       gap: 16,
-      children: h.map(e => {
+      children: p.map(e => {
         var t;
-        let [i, u] = e, d = null != (t = n[i]) ? t : u.defaultValue;
+        let [i, c] = e, u = null != (t = n[i]) ? t : c.defaultValue;
         return (0, r.jsxs)(a.x, {
-          title: "boolean" === u.type ? true : u.label,
-          children: ["select" === u.type && null != u.options && (0, r.jsx)(o.q4, {
-            value: d,
-            onChange: e => _(i, e),
-            options: u.options
-          }), "boolean" === u.type && (0, r.jsx)(c.XZJ, {
-            value: d,
-            onChange: (e, t) => _(i, t),
-            label: u.label,
-            children: (0, r.jsx)(s.x, {
-              variant: "text-md/medium",
-              children: u.label
-            })
-          }), "text" === u.type && (0, r.jsx)(l.o, {
-            value: d,
-            onChange: e => _(i, e)
-          }), "number" === u.type && (0, r.jsx)(l.o, {
+          title: "boolean" === c.type ? true : c.label,
+          children: ["select" === c.type && null != c.options && (0, r.jsx)(o.q4, {
+            value: u,
+            onChange: e => f(i, e),
+            options: c.options
+          }), "boolean" === c.type && (0, r.jsx)(l.XZJ, {
+            checked: u,
+            onChange: e => f(i, e),
+            label: c.label
+          }), "text" === c.type && (0, r.jsx)(s.o, {
+            value: u,
+            onChange: e => f(i, e)
+          }), "number" === c.type && (0, r.jsx)(s.o, {
             type: "number",
-            value: String(d),
-            min: u.minValue,
-            onChange: e => _(i, Number(e))
+            value: String(u),
+            min: c.minValue,
+            onChange: e => f(i, Number(e))
           })]
         }, i)
       })

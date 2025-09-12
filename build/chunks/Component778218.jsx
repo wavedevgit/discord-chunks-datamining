@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk793030 = require("./793030.js"),
-  Chunk178940 = require("./178940.jsx"),
-  Chunk159691 = require("./159691.js");
+  Chunk159691 = require("./159691.js"),
+  Chunk481060 = require("./481060.js");
 let l = {
   title: "Checkbox",
   stories: [{
@@ -30,9 +30,9 @@ let l = {
       return (0, r.jsxs)(a.Kqy, {
         direction: "vertical",
         gap: "md",
-        children: [(0, r.jsx)(o.X, {
-          value: u,
-          onChange: (e, t) => d(t),
+        children: [(0, r.jsx)(s.XZJ, {
+          checked: u,
+          onChange: e => d(e),
           disabled: n,
           displayOnly: l,
           label: t
@@ -42,19 +42,19 @@ let l = {
         }), (0, r.jsxs)(a.Kqy, {
           direction: "horizontal",
           gap: "sm",
-          children: [(0, r.jsx)(s.zxk, {
+          children: [(0, r.jsx)(o.zxk, {
             variant: "secondary",
             size: "sm",
             text: "Check",
             onClick: f,
             disabled: n
-          }), (0, r.jsx)(s.zxk, {
+          }), (0, r.jsx)(o.zxk, {
             variant: "secondary",
             size: "sm",
             text: "Uncheck",
             onClick: _,
             disabled: n
-          }), (0, r.jsx)(s.zxk, {
+          }), (0, r.jsx)(o.zxk, {
             variant: "primary",
             size: "sm",
             text: "Toggle",

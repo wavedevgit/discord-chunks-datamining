@@ -2,7 +2,7 @@
 /** chunk id: 654588, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => E
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -54,7 +54,8 @@ let _ = {
   mostRecentSubscription: new f,
   prevSubscription: new f,
   shouldRefetchCampaignEligibility: true,
-  isEligibleForCampaign: null
+  isEligibleForCampaign: null,
+  isFetchingCampaignEligibility: false
 };
 
 function p(e) {
@@ -63,17 +64,25 @@ function p(e) {
   } = e;
   _ = d(c({}, _), {
     shouldRefetchCampaignEligibility: false,
-    isEligibleForCampaign: t
+    isEligibleForCampaign: t,
+    isFetchingCampaignEligibility: false
   })
 }
 
 function h() {
   _ = d(c({}, _), {
     shouldRefetchCampaignEligibility: false,
-    isEligibleForCampaign: null
+    isEligibleForCampaign: null,
+    isFetchingCampaignEligibility: false
   })
 }
-class m extends(r = Chunk442837.ZP.Store) {
+
+function m() {
+  _ = d(c({}, _), {
+    isFetchingCampaignEligibility: true
+  })
+}
+class g extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk431.Z, Chunk78839.Z), this.syncWith([Chunk431.Z], this.handleUserOfferUpdate), this.syncWith([Chunk78839.Z], this.handleSubscriptionUpdate)
   }
@@ -92,8 +101,9 @@ class m extends(r = Chunk442837.ZP.Store) {
     }))
   }
 }
-l(m, "displayName", "MarketingCampaignEligibilityStore");
-let g = new m(Chunk570140.Z, {
-  MARKETING_CAMPAIGN_ELIGIBILITY_FETCHED: p,
-  MARKETING_CAMPAIGN_ELIGIBILITY_FETCH_FAILED: h
+l(g, "displayName", "MarketingCampaignEligibilityStore");
+let E = new g(Chunk570140.Z, {
+  MARKETING_CAMPAIGN_ELIGIBILITY_FETCH_SUCCESS: p,
+  MARKETING_CAMPAIGN_ELIGIBILITY_FETCH_FAILED: h,
+  MARKETING_CAMPAIGN_ELIGIBILITY_FETCH_STARTED: m
 })

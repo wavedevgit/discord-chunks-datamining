@@ -34,7 +34,7 @@ function S() {
   } = (0, Chunk825102.WX)({
     location: "Shop"
   }), c = (0, Chunk381585.sp)(), d = Chunk647438.useCallback(e => {
-    f.default.track(_.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+    f.default.track(m.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == c ? true : c.sessionId,
       page_section: null == c ? true : c.pageSection,
       page_category: null == c ? true : c.pageCategory,
@@ -56,15 +56,11 @@ function S() {
         filter: e,
         trackFilterAction: d
       }, e)), Chunk335818 && (0, Chunk951288.jsx)(Chunk481060.XZJ, {
-        value: exports,
+        checked: exports,
         onChange: () => {
           Chunk410030("filter orb eligible ".concat(false === exports ? "on" : "off")), module()
         },
-        label: Chunk388032.intl.string(Chunk388032.t.AHHHgI),
-        children: (0, Chunk951288.jsx)(Chunk481060.Text, {
-          variant: "text-md/normal",
-          children: Chunk388032.intl.string(Chunk388032.t.AHHHgI)
-        })
+        label: Chunk388032.intl.string(Chunk388032.t.AHHHgI)
       })]
     }), (0, Chunk951288.jsx)(O, {
       trackFilterAction: Chunk410030
@@ -81,31 +77,27 @@ function S() {
   })
 }
 let v = e => {
-    var t, n;
+    var t;
     let {
-      filter: l,
-      trackFilterAction: a
-    } = e, s = {
+      filter: n,
+      trackFilterAction: l
+    } = e, a = {
       [o.G.AVATAR_DECORATION]: b.intl.string(b.t.dRZYND),
       [o.G.PROFILE_EFFECT]: b.intl.string(b.t["1cNjt7"]),
       [o.G.NAMEPLATE]: b.intl.string(b.t.V68Fq6),
       [o.G.BUNDLE]: b.intl.string(b.t.FYFppq)
     }, {
-      itemTypeFilters: i,
-      onToggleItemType: c
+      itemTypeFilters: s,
+      onToggleItemType: i
     } = (0, h.S)();
     return (0, r.jsx)(u.XZJ, {
-      value: i.has(l),
+      checked: s.has(n),
       onChange: () => {
         var e;
-        let t = (null == (e = s[l]) ? true : e.toLowerCase()) != null ? s[l].toLowerCase() : l;
-        a("filter item type ".concat(t, " ").concat(false === i.has(l) ? "on" : "off")), c(l)
+        let t = (null == (e = a[n]) ? true : e.toLowerCase()) != null ? a[n].toLowerCase() : n;
+        l("filter item type ".concat(t, " ").concat(false === s.has(n) ? "on" : "off")), i(n)
       },
-      label: null != (t = s[l]) ? t : "",
-      children: (0, r.jsx)(u.Text, {
-        variant: "text-md/normal",
-        children: null != (n = s[l]) ? n : ""
-      })
+      label: null != (t = a[n]) ? t : ""
     })
   },
   O = e => {

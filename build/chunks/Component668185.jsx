@@ -2,56 +2,51 @@
 /** chunk id: 668185, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => d
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk149765 = require("./149765.js"),
   Chunk993365 = require("./993365.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk422559 = require("./422559.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk979995 = require("./979995.js");
 
-function f(e) {
+function d(e) {
   let {
     application: t,
     permissions: n,
-    deniedPermissions: f,
-    onPermissionsChange: _,
-    guild: p
-  } = e, h = i.useMemo(() => a.U_(p.permissions), [p.permissions]);
+    deniedPermissions: d,
+    onPermissionsChange: f,
+    guild: _
+  } = e, p = i.useMemo(() => a.U_(_.permissions), [_.permissions]);
   i.useEffect(() => {
-    _(false, a.hX(n, h))
-  }, [h, _, n]);
-  let m = c.VY.filter(e => a.e$(n, e)),
-    g = m.filter(e => !a.e$(h, e)).map(e => {
-      let t = (0, c.wt)(e),
-        n = !a.e$(f, e);
+    f(false, a.hX(n, p))
+  }, [p, f, n]);
+  let h = l.VY.filter(e => a.e$(n, e)),
+    m = h.filter(e => !a.e$(p, e)).map(e => {
+      let t = (0, l.wt)(e),
+        n = !a.e$(d, e);
       return (0, r.jsx)("li", {
-        className: d.permission,
-        children: (0, r.jsx)(s.$q, {
-          value: n,
-          onChange: (t, n) => _(n, e),
-          type: s.M0.INVERTED,
-          children: (0, r.jsx)(o.x, {
-            variant: "text-md/normal",
-            children: t
-          })
+        className: u.permission,
+        children: (0, r.jsx)(s.XZJ, {
+          checked: n,
+          onChange: t => f(t, e),
+          label: t
         })
       }, String(e))
     }),
-    E = m.filter(e => a.e$(h, e)).map(e => {
-      let t = (0, c.wt)(e);
+    g = h.filter(e => a.e$(p, e)).map(e => {
+      let t = (0, l.wt)(e);
       return (0, r.jsxs)("li", {
-        className: d.permission,
+        className: u.permission,
         children: [(0, r.jsx)("div", {
-          className: d.disabledPermissionIcon,
-          children: (0, r.jsx)(l.Dio, {
+          className: u.disabledPermissionIcon,
+          children: (0, r.jsx)(s.Dio, {
             size: "md",
             color: "currentColor",
-            className: d.icon
+            className: u.icon
           })
         }), (0, r.jsx)(o.x, {
           variant: "text-md/normal",
@@ -60,29 +55,29 @@ function f(e) {
       }, String(e))
     });
   return (0, r.jsxs)("div", {
-    className: d.botPermissions,
-    children: [g.length > 0 ? (0, r.jsxs)("div", {
+    className: u.botPermissions,
+    children: [m.length > 0 ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(o.x, {
         variant: "text-sm/medium",
         color: "header-secondary",
-        children: u.intl.format(u.t.sOaT2t, {
+        children: c.intl.format(c.t.sOaT2t, {
           applicationName: t.name,
-          guildName: p.name
+          guildName: _.name
         })
       }), (0, r.jsx)("ul", {
-        className: d.permissionsList,
-        children: g
+        className: u.permissionsList,
+        children: m
       })]
-    }) : null, E.length > 0 ? (0, r.jsxs)("div", {
+    }) : null, g.length > 0 ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(o.x, {
         variant: "text-sm/medium",
         color: "header-secondary",
-        children: u.intl.format(u.t.fsOkFx, {
+        children: c.intl.format(c.t.fsOkFx, {
           applicationName: t.name
         })
       }), (0, r.jsx)("ul", {
-        className: d.permissionsList,
-        children: E
+        className: u.permissionsList,
+        children: g
       })]
     }) : null]
   })

@@ -36,7 +36,7 @@ let L = (0, Chunk884697.IC)(90),
     } = e, {
       analyticsLocations: n
     } = (0, d.ZP)(), a = l.useRef(null), s = (0, o.e7)([p.default], () => p.default.getCurrentUser());
-    return _.ZP.canUseCollectibles(s) ? t.summary : y.intl.format(y.t["9hafRk"], {
+    return m.ZP.canUseCollectibles(s) ? t.summary : y.intl.format(y.t["9hafRk"], {
       getPremium: e => (0, r.jsx)(c.P3F, {
         innerRef: a,
         className: T.getPremiumHook,
@@ -83,7 +83,7 @@ function B(e) {
   } = (0, b.Z)(t.styles), d = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), g = (0, o.e7)([h.Z], () => h.Z.isFocused()), {
     bannerOverrides: f,
     shopAllBannerStatic: p,
-    shopAllBannerAnimated: _
+    shopAllBannerAnimated: m
   } = (0, O.t0)(t), x = !!(null == f ? true : f.showDarkBannerText);
   return (0, r.jsxs)(E.Z, {
     asset: p,
@@ -92,8 +92,8 @@ function B(e) {
       background: "".concat((0, v.nH)(a), " border-box border-box"),
       outlineColor: a.border.toHslString()
     } : true,
-    children: [!d && null != _ && g && (0, r.jsx)(k, {
-      src: _
+    children: [!d && null != m && g && (0, r.jsx)(k, {
+      src: m
     }), (null == f ? true : f.addAttributionLogo) ? (0, r.jsxs)("div", {
       className: T.discordLogo,
       children: [(0, r.jsx)(c.gw7, {
@@ -102,7 +102,7 @@ function B(e) {
         height: 28,
         color: "currentColor",
         className: T.discordIcon
-      }), (0, r.jsx)(m.Z, {
+      }), (0, r.jsx)(_.Z, {
         className: T.discordWordmark
       })]
     }) : (0, r.jsx)(c.LZC, {

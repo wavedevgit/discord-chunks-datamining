@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk433517 = require("./433517.js"),
   Chunk82659 = require("./82659.jsx"),
-  Chunk755721 = require("./755721.js"),
+  Chunk481060 = require("./481060.js"),
   Chunk764295 = require("./764295.js"),
   Chunk388032 = require("./388032.jsx");
 let u = "report_to_mod_dont_show_resolve_confirm";
@@ -30,10 +30,10 @@ function d(e) {
         p && l.K.set(u, true), n(), d()
       }
     }],
-    actionBarInput: (0, r.jsx)(o.$q, {
-      value: p,
-      onChange: (e, t) => h(t),
-      children: c.intl.string(s.default["3puq5e"])
+    actionBarInput: (0, r.jsx)(o.XZJ, {
+      checked: p,
+      onChange: e => h(e),
+      label: c.intl.string(s.default["3puq5e"])
     })
   })
 }

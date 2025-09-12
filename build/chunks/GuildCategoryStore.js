@@ -2,7 +2,7 @@
 /** chunk id: 324067, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => M
+  Z: () => k
 }), require("./539854.js"), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -177,7 +177,7 @@ class j extends(r = Chunk442837.ZP.Store) {
   }
 }
 _(j, "displayName", "GuildCategoryStore");
-let M = new j(Chunk570140.Z, {
+let k = new j(Chunk570140.Z, {
   CHANNEL_SELECT: D,
   CONNECTION_OPEN: O,
   OVERLAY_INITIALIZE: O,
