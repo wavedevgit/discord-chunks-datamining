@@ -107,7 +107,7 @@ let q = e => {
     let ed = (0, l.JA)("nitro"),
       ep = (0, A.N)(),
       ef = (0, x.Ng)(),
-      eh = (0, P.$)("nitro tab"),
+      eh = (0, j.$)("nitro tab"),
       eg = (0, v.W)(),
       em = (0, y.Vi)(),
       {
@@ -131,7 +131,7 @@ let q = e => {
       } = (0, d.Z)({
         forceFetch: true
       }),
-      [ej, eP] = (0, g.bf)(eS !== z.a$.NONE ? o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL : null, {
+      [eP, ej] = (0, g.bf)(eS !== z.a$.NONE ? o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL : null, {
         showAfterTimestamp: eT.valueOf(),
         cooldownDurationMs: 0
       }),
@@ -152,12 +152,12 @@ let q = e => {
         selected: J
       })) return null;
     let eU = () => {
-      ej === o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL && eP(Y.L.TAKE_ACTION), _.default.track(W.rMx.NITRO_TAB_VISITED, {
+      eP === o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL && ej(Y.L.TAKE_ACTION), _.default.track(W.rMx.NITRO_TAB_VISITED, {
         badge_decorator: E,
         has_premium: el
       }), null != eR && eD(Y.L.USER_DISMISS)
     };
-    if (eS === z.a$.NONE || eg || (E = 7, n = (0, r.jsx)(j.Z, {
+    if (eS === z.a$.NONE || eg || (E = 7, n = (0, r.jsx)(P.Z, {
         className: "",
         startsAt: eT,
         endsAt: eN,

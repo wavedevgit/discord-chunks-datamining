@@ -41,8 +41,8 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
         guild_id: t.id
       })
     }, [t.id, m]);
-    let j = null;
-    "function" == typeof C ? j = C() : null != C && (j = (0, r.jsx)(s.zx, {
+    let P = null;
+    "function" == typeof C ? P = C() : null != C && (P = (0, r.jsx)(s.zx, {
       className: h.button,
       size: s.zx.Sizes.SMALL,
       onClick: () => {
@@ -56,8 +56,8 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       color: S,
       children: C
     }));
-    let P = null;
-    "function" == typeof n ? P = n() : null != n && (P = (0, r.jsx)(c.Text, {
+    let j = null;
+    "function" == typeof n ? j = n() : null != n && (j = (0, r.jsx)(c.Text, {
       variant: "text-md/medium",
       color: "header-primary",
       className: a()(h.title, {
@@ -107,7 +107,7 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
         })
       }), (0, r.jsxs)("div", {
         className: h.message,
-        children: [P, x, j]
+        children: [j, x, P]
       })]
     })
   }

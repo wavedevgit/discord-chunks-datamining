@@ -49,9 +49,9 @@ function G(e) {
     selectedChannelId: t,
     withFastTravel: n,
     focusSectionProps: i
-  } = e, l = (0, s.e7)([x.Z, j.Z], () => {
+  } = e, l = (0, s.e7)([x.Z, P.Z], () => {
     let e = x.Z.getGuildId(),
-      n = j.Z.getChannel(t);
+      n = P.Z.getChannel(t);
     return null != e ? e : null == n ? true : n.guild_id
   }), a = (0, T.H)({
     guildId: l,
@@ -72,10 +72,10 @@ function B(e) {
     withFastTravel: t,
     quickSwitcherInsteadOfTitle: n,
     focusSectionProps: i
-  } = e, l = (0, s.e7)([P.Z], () => P.Z.getChannelId()), a = (0, C.$)({
+  } = e, l = (0, s.e7)([j.Z], () => j.Z.getChannelId()), a = (0, C.$)({
     location: "TitleText"
-  }), o = (0, s.e7)([j.Z], () => {
-    let e = j.Z.getChannel(l);
+  }), o = (0, s.e7)([P.Z], () => {
+    let e = P.Z.getChannel(l);
     return null != e && !e.isDirectory() && !e.isGuildVocal()
   });
   return a && null != l && !(0, D.AB)(l) && o ? (0, r.jsx)(G, {
@@ -119,8 +119,8 @@ let V = Chunk647438.memo(function() {
   Chunk647438.useLayoutEffect(() => {
     Chunk998502.ZP.setMinimumSize(Chunk741764.J, Chunk741764.N)
   }, []);
-  let j = (0, Chunk984802.Ll)(),
-    P = (0, Chunk442837.e7)([Chunk451478.Z, Chunk522474.Z], () => (0, Chunk228488.rB)()),
+  let P = (0, Chunk984802.Ll)(),
+    j = (0, Chunk442837.e7)([Chunk451478.Z, Chunk522474.Z], () => (0, Chunk228488.rB)()),
     x = function(e) {
       let {
         showBackForwardButtons: t,
@@ -141,7 +141,7 @@ let V = Chunk647438.memo(function() {
   });
   return (0, Chunk951288.jsx)(Chunk481060.Wdt, {
     children: e => (0, r.jsx)(c.f6W, {
-      theme: j,
+      theme: P,
       children: t => {
         var i, a;
         return (0, r.jsx)(R.TF, {

@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk983703 = require("./983703.js");
 
-function P(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -74,7 +74,7 @@ function w() {
     let {
       default: e
     } = await require.e("36312").then(require.bind(require, 153932));
-    return t => (0, r.jsx)(e, P({}, t))
+    return t => (0, r.jsx)(e, j({}, t))
   })
 }
 
@@ -84,7 +84,7 @@ function L(e) {
     showSpamCta: n
   } = e, l = i.useMemo(() => n ? w : t !== T.pJs.PENDING ? Z : true, [n, t]);
   return (0, r.jsx)("div", {
-    className: j.emptyStateContainer,
+    className: P.emptyStateContainer,
     children: (0, r.jsx)(O.Z, {
       type: t,
       onClick: l
@@ -129,26 +129,26 @@ let R = function(e) {
     }(e, ["key"]);
     switch (Z) {
       case T.pJs.PENDING:
-        return (0, r.jsx)(E.Z, x(P({}, n), {
+        return (0, r.jsx)(E.Z, x(j({}, n), {
           isFocused: R
         }), t);
       case T.pJs.SUGGESTIONS:
-        return (0, r.jsx)(C.Z, x(P({}, n), {
+        return (0, r.jsx)(C.Z, x(j({}, n), {
           isFocused: R
         }), t);
       case T.pJs.ONLINE:
       case T.pJs.ALL:
       default:
-        return (0, r.jsx)(_.Z, x(P({}, n), {
+        return (0, r.jsx)(_.Z, x(j({}, n), {
           isFocused: R
         }), t)
     }
   }, [R, Z]), B = i.useCallback(e => {
-    U(x(P({}, M), {
+    U(x(j({}, M), {
       [Z]: e
     }))
   }, [M, Z]), V = i.useCallback(() => {
-    U(x(P({}, M), {
+    U(x(j({}, M), {
       [Z]: ""
     }))
   }, [M, Z]), H = i.useMemo(() => Z === T.pJs.PENDING && (s.filter(T.pJs.SPAM).length > 0 || s.filter(T.pJs.PENDING_IGNORED).length > 0), [s, Z]), F = i.useMemo(() => s.filter(Z, M[Z]), [s, M, Z]), z = Z === T.pJs.PENDING, W = i.useMemo(() => {
@@ -203,21 +203,21 @@ let R = function(e) {
         }
       }(Z, Y[e].length, e);
       return Z === T.pJs.PENDING && 0 === e ? (0, r.jsxs)("div", {
-        className: j.sectionTitle,
+        className: P.sectionTitle,
         children: [(0, r.jsx)(I.Z, {
           id: t,
           title: n
         }), q && (0, r.jsx)(a.zx, {
           look: a.iL.LINK,
           color: a.Tt.LINK,
-          className: j.clearButton,
+          className: P.clearButton,
           size: a.zx.Sizes.TINY,
           onClick: Q,
           "aria-label": N.intl.string(N.t.O8k7Oz),
           children: N.intl.string(N.t.O8k7Oz)
         })]
       }, n) : (0, r.jsx)("div", {
-        className: j.sectionTitle,
+        className: P.sectionTitle,
         children: (0, r.jsx)(I.Z, {
           id: t,
           title: n
@@ -237,7 +237,7 @@ let R = function(e) {
     children: (0, r.jsxs)(u.Z, {
       section: T.jXE.FRIENDS_LIST,
       children: [k && (0, r.jsx)(v.R, {}), (0, r.jsx)("div", {
-        className: j.searchBar,
+        className: P.searchBar,
         children: (0, r.jsx)(o.E1j, {
           query: M[Z],
           onChange: B,
@@ -252,8 +252,8 @@ let R = function(e) {
         hasSearchQuery: J,
         footer: H && !$ ? (0, r.jsx)(a.zx, {
           look: a.zx.Looks.LINK,
-          color: j.viewSpamButtonColor,
-          className: j.viewSpamButton,
+          color: P.viewSpamButtonColor,
+          className: P.viewSpamButton,
           onClick: w,
           size: a.Ph.TINY,
           children: (0, r.jsx)(o.Text, {
@@ -262,7 +262,7 @@ let R = function(e) {
           })
         }) : null
       }), $ && (0, r.jsx)("div", {
-        className: j.emptyStateContainer,
+        className: P.emptyStateContainer,
         children: (0, r.jsx)(O.Z, {
           type: O.j.SECTION_NO_RESULTS
         }, Z)

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 262734, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => P
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -32,10 +32,10 @@ let N = {
   [Chunk918559.MI.RESIZABLE]: Chunk909357.resizable
 };
 
-function j(e) {
+function P(e) {
   let {
     frame: t
-  } = e, n = (0, f.q)(t.applicationId), l = (0, d.Z)(), j = (0, o.e7)([_.Z], () => _.Z.getVoiceChannelId()), P = (0, o.e7)([h.Z], () => null != j && h.Z.getChatOpen(j), [j]), x = (0, o.e7)([g.ZP], () => g.ZP.callChatSidebarWidth), A = (0, u.dQu)(s.Z.modules.chat.RESIZE_HANDLE_WIDTH), Z = i.useRef(null), w = i.useRef(null), [L, R] = i.useState({
+  } = e, n = (0, f.q)(t.applicationId), l = (0, d.Z)(), P = (0, o.e7)([_.Z], () => _.Z.getVoiceChannelId()), j = (0, o.e7)([h.Z], () => null != P && h.Z.getChatOpen(P), [P]), x = (0, o.e7)([g.ZP], () => g.ZP.callChatSidebarWidth), A = (0, u.dQu)(s.Z.modules.chat.RESIZE_HANDLE_WIDTH), Z = i.useRef(null), w = i.useRef(null), [L, R] = i.useState({
     width: 0,
     height: 0
   }), D = i.useCallback(() => {
@@ -88,7 +88,7 @@ function j(e) {
       className: a()(T.wrapper, N[V], e),
       ref: Z,
       style: {
-        right: P && !Number.isNaN(H) ? H : 0
+        right: j && !Number.isNaN(H) ? H : 0
       },
       children: [(0, r.jsx)("div", {
         className: T.contextlessHeader,

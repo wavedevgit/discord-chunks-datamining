@@ -83,9 +83,9 @@ let w = e => {
       color: t
     } = e;
     return (0, r.jsx)(s.IGR, {
-      className: P.newBadge,
+      className: j.newBadge,
       color: null != t ? t : m.Z.STATUS_DANGER_BACKGROUND,
-      text: j.intl.string(j.t.y2b7CA)
+      text: P.intl.string(P.t.y2b7CA)
     })
   },
   L = () => {
@@ -133,7 +133,7 @@ let w = e => {
         selected: t,
         route: C,
         icon: null != a ? a : s.EOn,
-        text: j.intl.string(j.t.pWG4zc),
+        text: P.intl.string(P.t.pWG4zc),
         locationState: n
       }, b, m), {
         onMouseEnter: d,
@@ -154,24 +154,24 @@ let w = e => {
       reducedMotion: l = false
     } = e, a = null != i ? (0, g.Z)(i, s.EFr.SIZE_80, !l) : true, o = n.title(), c = null == (t = n.body) ? true : t.call(n), u = null == c || "" === c;
     return (0, r.jsxs)("div", {
-      className: P.shopMarketingTooltipContent,
+      className: j.shopMarketingTooltipContent,
       children: [(0, r.jsx)("div", {
-        className: P.avatarContainer,
+        className: j.avatarContainer,
         children: (0, r.jsx)(s.qEK, {
-          className: P.avatar,
+          className: j.avatar,
           src: n.imageSrc,
           avatarDecoration: a,
           size: s.EFr.SIZE_80,
           "aria-hidden": true
         })
       }), (0, r.jsxs)("div", {
-        className: P.shopMarketingTooltipText,
+        className: j.shopMarketingTooltipText,
         children: [(0, r.jsx)(s.X6q, {
           variant: u ? "heading-sm/medium" : "heading-sm/bold",
           children: o
         }), !u && (0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
-          className: P.marketingBadgeTooltipContent,
+          className: j.marketingBadgeTooltipContent,
           children: c
         })]
       })]
@@ -202,27 +202,27 @@ let w = e => {
         assetId: I.assetIds[T],
         reducedMotion: S
       }),
-      tooltipClassName: P.marketingBadgeTooltip,
+      tooltipClassName: j.marketingBadgeTooltip,
       position: "right",
       delay: 100,
       allowOverflow: true,
       hideOnClick: false,
-      "aria-label": "string" == typeof V ? V : j.intl.string(j.t.rSXaxc),
+      "aria-label": "string" == typeof V ? V : P.intl.string(P.t.rSXaxc),
       children: e => (0, r.jsxs)(R, A(x(A(x({
-        className: null != I.entryPointClassName ? (0, _.l)(P, I.entryPointClassName) : true
+        className: null != I.entryPointClassName ? (0, _.l)(j, I.entryPointClassName) : true
       }, C), {
         icon: I.entryPointIcon
       }), e), {
         onMouseEnter: () => G(e.onMouseEnter),
         onMouseLeave: () => B(e.onMouseLeave),
         children: [(0, r.jsx)("div", {
-          className: P.marketingButtonBackground,
+          className: j.marketingButtonBackground,
           style: {
             background: n
           },
           children: null != t && (0, r.jsx)("img", {
             src: t,
-            className: P.marketingButtonBackgroundImage,
+            className: j.marketingButtonBackgroundImage,
             alt: "",
             "aria-hidden": true
           })
@@ -241,7 +241,7 @@ let w = e => {
       let n = null != t.emojiName ? null == (e = b.ZP.getByName(t.emojiName)) ? true : e.surrogates : null;
       return (0, r.jsxs)(s.Text, {
         variant: "text-sm/medium",
-        className: P.marketingBadgeTooltipContent,
+        className: j.marketingBadgeTooltipContent,
         children: [null != n && (0, r.jsx)(c.Z, {
           emojiName: n
         }), t.title()]
@@ -249,7 +249,7 @@ let w = e => {
     }, [t]);
     return (0, r.jsx)(s.ua7, {
       text: l,
-      tooltipClassName: P.marketingBadgeTooltip,
+      tooltipClassName: j.marketingBadgeTooltip,
       position: "right",
       delay: 100,
       hideOnClick: false,
@@ -279,13 +279,13 @@ let w = e => {
         onClick: () => a(N.L.TAKE_ACTION),
         listItemRef: c,
         children: [(0, r.jsx)("div", {
-          className: P.marketingButtonBackground,
+          className: j.marketingButtonBackground,
           style: null != m ? {
             background: m
           } : true,
           children: null != g && (0, r.jsx)("img", {
             src: g,
-            className: P.marketingButtonBackgroundImage,
+            className: j.marketingButtonBackgroundImage,
             alt: "",
             "aria-hidden": true
           })

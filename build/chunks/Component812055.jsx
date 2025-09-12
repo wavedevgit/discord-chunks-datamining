@@ -67,6 +67,7 @@ function T(e) {
       caretConfig: {
         align: "start"
       },
+      gradientColor: "purple",
       actions: [{
         text: g.intl.string(g.t.fwPura),
         onClick: () => {

@@ -29,9 +29,9 @@ function C(e) {
   let {
     channel: t,
     baseChannelId: n
-  } = e, C = (0, O.ZP)(t), S = (0, f.K)(), T = (0, f.V)(), N = (0, l.e7)([d.Z], () => d.Z.isMessageRequest(t.id)), j = (0, l.e7)([p.Z], () => p.Z.isSpam(t.id)), P = (0, g.V)(t.id, t.getRecipientId()), x = i.useCallback(() => {
-    b.Z.closeChannelSidebar(_.uZ), N && S && (0, m.Kh)(t.id), j && T && (0, m.Kh)(t.id)
-  }, [t.id, j, T, N, S]), A = i.useCallback(() => {
+  } = e, C = (0, O.ZP)(t), S = (0, f.K)(), T = (0, f.V)(), N = (0, l.e7)([d.Z], () => d.Z.isMessageRequest(t.id)), P = (0, l.e7)([p.Z], () => p.Z.isSpam(t.id)), j = (0, g.V)(t.id, t.getRecipientId()), x = i.useCallback(() => {
+    b.Z.closeChannelSidebar(_.uZ), N && S && (0, m.Kh)(t.id), P && T && (0, m.Kh)(t.id)
+  }, [t.id, P, T, N, S]), A = i.useCallback(() => {
     (0, o.showToast)((0, o.createToast)(y.intl.string(y.t.pIQ3h4), o.ToastType.FAILURE))
   }, []), {
     markAsNotSpam: Z
@@ -54,7 +54,7 @@ function C(e) {
         channelName: C,
         inSidebar: true
       })
-    }), j && (0, r.jsxs)("div", {
+    }), P && (0, r.jsxs)("div", {
       className: I.hamBanner,
       children: [(0, r.jsx)(o.Text, {
         className: I.__invalid_hamBannerText,
@@ -63,7 +63,7 @@ function C(e) {
       }), (0, r.jsx)(a.zx, {
         className: I.hamBannerButton,
         size: a.Ph.SMALL,
-        onClick: () => Z(t, P),
+        onClick: () => Z(t, j),
         children: y.intl.string(y.t.koqL3d)
       })]
     }), (0, r.jsx)("div", {

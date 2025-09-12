@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 121711, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => es
+  Z: () => ec
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,6 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk335131 = require("./335131.js"),
   Chunk252618 = require("./252618.js"),
   Chunk70097 = require("./70097.jsx"),
+  Chunk632285 = require("./632285.js"),
   Chunk979233 = require("./979233.js"),
   Chunk17845 = require("./17845.jsx"),
   Chunk374939 = require("./374939.jsx"),
@@ -60,21 +61,21 @@ var Chunk951288 = require("./951288.js"),
   Chunk445620 = require("./445620.js"),
   Chunk120550 = require("./120550.js");
 
-function el(e) {
+function ea(e) {
   let {
     onLoadComplete: t
   } = e, {
     enabled: n
-  } = (0, N.WX)({
-    location: K.dr.QUEST_HOME_DESKTOP
-  }), l = (0, u.e7)([f.Z], () => f.Z.useReducedMotion), o = (0, u.e7)([P.Z], () => P.Z.isFocused()), {
+  } = (0, P.WX)({
+    location: q.dr.QUEST_HOME_DESKTOP
+  }), l = (0, u.e7)([f.Z], () => f.Z.useReducedMotion), o = (0, u.e7)([x.Z], () => x.Z.isFocused()), {
     ref: s,
     inViewport: c
-  } = (0, B.a)(), d = i.useRef(null);
+  } = (0, V.a)(), d = i.useRef(null);
   if (i.useEffect(() => {
       (null == d ? true : d.current) != null && (d.current.paused || o && c && !l ? d.current.paused && !l && c && o && d.current.play() : d.current.pause())
     }, [l, c, o]), n) {
-    let e = (0, A.rO)();
+    let e = (0, Z.rO)();
     return (0, r.jsx)(_.Z, {
       ref: e => {
         d.current = e, s.current = e
@@ -82,47 +83,47 @@ function el(e) {
       loop: true,
       muted: true,
       playsInline: true,
-      className: a()(J.bannerAsset, J.orbsBannerAsset),
+      className: a()($.bannerAsset, $.orbsBannerAsset),
       onProgress: t,
       "data-mtctest-ignore": "true",
       controls: false,
       children: (0, r.jsx)("source", {
-        src: e ? ee.Z : et.Z,
+        src: e ? et.Z : en.Z,
         type: e ? "video/mp4" : "video/webm"
       })
     })
   }
   return (0, r.jsx)("img", {
-    src: $.ZP,
-    className: a()(J.bannerAsset, J.oversizedImg),
+    src: ee.ZP,
+    className: a()($.bannerAsset, $.oversizedImg),
     alt: "",
     onLoad: t
   })
 }
 
-function ea(e) {
+function eo(e) {
   let {
     onLoadComplete: t
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("img", {
-      src: en.ZP,
-      className: a()(J.bannerAsset, J.redirectNoticeBannerAsset),
+      src: er.ZP,
+      className: a()($.bannerAsset, $.redirectNoticeBannerAsset),
       alt: ""
     }), (0, r.jsx)("img", {
-      src: ei.ZP,
-      className: a()(J.bannerAsset, J.redirectNoticeBannerAsset),
+      src: el.ZP,
+      className: a()($.bannerAsset, $.redirectNoticeBannerAsset),
       alt: "",
       onLoad: t
     }), (0, r.jsx)("img", {
-      src: er.ZP,
-      className: a()(J.bannerAsset, J.redirectNoticeBannerAsset),
+      src: ei.ZP,
+      className: a()($.bannerAsset, $.redirectNoticeBannerAsset),
       alt: ""
     })]
   })
 }
 
-function eo(e) {
+function es(e) {
   let {
     onLoadComplete: t,
     onScroll: n,
@@ -131,9 +132,9 @@ function eo(e) {
     scrollerRef: o,
     tabs: c
   } = e, u = i.useCallback(() => {
-    (0, U.navigateToQuestHome)({
-      fromContent: D.jn.QUEST_HOME_MOVE_CALLOUT_DISCOVER
-    }), x.default.track(q.rMx.QUEST_CONTENT_CLICKED, function(e) {
+    (0, G.navigateToQuestHome)({
+      fromContent: k.jn.QUEST_HOME_MOVE_CALLOUT_DISCOVER
+    }), A.default.track(Q.rMx.QUEST_CONTENT_CLICKED, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -151,45 +152,45 @@ function eo(e) {
       }
       return e
     }({
-      cta_name: w.jZ.VIEW_QUESTS,
+      cta_name: L.jZ.VIEW_QUESTS,
       click_id: (0, s.Z)(),
       is_targeted: false
-    }, (0, w.mH)(D.jn.QUEST_HOME_MOVE_CALLOUT_DISCOVER)))
+    }, (0, L.mH)(k.jn.QUEST_HOME_MOVE_CALLOUT_DISCOVER)))
   }, []);
-  return (0, r.jsx)(W.t.Provider, {
+  return (0, r.jsx)(Y.t.Provider, {
     value: o,
-    children: (0, r.jsxs)(S.Z, {
+    children: (0, r.jsxs)(T.Z, {
       onScroll: n,
       ref: o,
-      children: [(0, r.jsx)(C.a, {
+      children: [(0, r.jsx)(S.a, {
         selectedTabId: a,
         handleTransition: l,
         tabs: c,
         icon: d.qDn
-      }), (0, r.jsx)(E.Z, {
-        title: X.intl.string(X.t.z8YP2N),
+      }), (0, r.jsx)(y.Z, {
+        title: J.intl.string(J.t.z8YP2N),
         titleColor: "always-white",
         button: (0, r.jsx)(d.zxk, {
           variant: "overlay-primary",
-          text: X.intl.string(X.t.GURBQk),
+          text: J.intl.string(J.t.GURBQk),
           onClick: u
         }),
-        className: J.redirectNoticeBannerContainer,
-        children: (0, r.jsx)(ea, {
+        className: $.redirectNoticeBannerContainer,
+        children: (0, r.jsx)(eo, {
           onLoadComplete: t
         })
-      }), (0, r.jsx)(y.Z, {
+      }), (0, r.jsx)(v.Z, {
         children: (0, r.jsxs)("div", {
-          className: J.redirectNoticeContainer,
+          className: $.redirectNoticeContainer,
           children: [(0, r.jsx)(d.X6q, {
             variant: "heading-xl/semibold",
-            children: X.intl.string(X.t.z8YP2N)
+            children: J.intl.string(J.t.z8YP2N)
           }), (0, r.jsx)(d.Text, {
             color: "text-secondary",
             variant: "text-md/normal",
-            children: X.intl.string(X.t["HdKh6+"])
+            children: J.intl.string(J.t["HdKh6+"])
           }), (0, r.jsx)(d.Avr, {
-            text: X.intl.string(X.t["1CdL8f"]),
+            text: J.intl.string(J.t["1CdL8f"]),
             onClick: u,
             textVariant: "text-md/normal",
             variant: "primary"
@@ -199,7 +200,7 @@ function eo(e) {
     })
   })
 }
-let es = function() {
+let ec = function() {
   var e;
   let {
     enabled: t
@@ -218,11 +219,11 @@ let es = function() {
     })
   }, [Chunk772848, Chunk442837]);
   let {
-    onScroll: P,
-    scrollPosition: x
-  } = (0, Chunk979233.M)(), A = Chunk150560.Z.getState().getUtmCurrentContext(), w = (0, Chunk833435._)({
+    onScroll: x,
+    scrollPosition: A
+  } = (0, Chunk979233.M)(), Z = Chunk150560.Z.getState().getUtmCurrentContext(), L = (0, Chunk833435._)({
     location: Chunk46140.dr.QUEST_HOME_DESKTOP
-  }) ? Chunk736683.Z : Chunk736683.j, D = (0, Chunk879438.z)(e => e.registerAssetLoad), U = Chunk647438.useRef(Chunk526167);
+  }) ? Chunk736683.Z : Chunk736683.j, k = (0, Chunk879438.z)(e => e.registerAssetLoad), G = Chunk647438.useRef(Chunk526167);
   Chunk647438.useEffect(() => {
     Chunk110560.current = Chunk526167
   }), Chunk647438.useEffect(() => {
@@ -242,20 +243,20 @@ let es = function() {
     })
   }, [Chunk442837]);
   let {
-    enabled: B
+    enabled: V
   } = (0, Chunk825102.WX)({
     location: Chunk46140.dr.QUEST_HOME_DESKTOP
-  }), $ = Chunk647438.useCallback(() => {
+  }), ee = Chunk647438.useCallback(() => {
     if (Chunk672188) return void window.open(Chunk981631.EYA.PAID_TERMS_ORBS);
     window.open(Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUESTS_LEARN_MORE))
   }, [Chunk672188]);
   (0, Chunk252618.Tt)({
     location: Chunk388032.intl.string(Chunk388032.t.JALI2N)
   });
-  let ee = Chunk672188 ? Chunk388032.intl.format(Chunk388032.t.BCBIlp, {}) : Chunk388032.intl.format(Chunk388032.t.lmMBf3, {}),
-    et = Chunk672188 ? Chunk388032.intl.format(Chunk388032.t.U9FY0N, {}) : Chunk388032.intl.string(Chunk388032.t.oWCrBg),
-    en = Chunk647438.useRef(null),
-    er = Chunk647438.useCallback(() => {
+  let et = Chunk672188 ? Chunk388032.intl.format(Chunk388032.t.BCBIlp, {}) : Chunk388032.intl.format(Chunk388032.t.lmMBf3, {}),
+    en = Chunk672188 ? Chunk388032.intl.format(Chunk388032.t.U9FY0N, {}) : Chunk388032.intl.string(Chunk388032.t.oWCrBg),
+    er = Chunk647438.useRef(null),
+    ei = Chunk647438.useCallback(() => {
       (0, Chunk507808.Y)({
         pageType: Chunk981631.ZY5.GLOBAL_DISCOVERY_QUESTS,
         sectionType: Chunk981631.jXE.ORBS_BALANCE_MENU,
@@ -269,13 +270,15 @@ let es = function() {
     }, []);
   return Chunk647438.useEffect(() => {
     exports && (0, Chunk150063.Y)(Chunk981631.Z5c.QUEST_HOME_V2)
-  }, [exports]), (0, Chunk951288.jsx)(Chunk251360.k.Provider, {
+  }, [exports]), Chunk647438.useEffect(() => {
+    Chunk632285.C.trigger()
+  }, []), (0, Chunk951288.jsx)(Chunk251360.k.Provider, {
     value: {
       onAssetLoadComplete: Chunk497505
     },
     children: (0, Chunk951288.jsx)("div", {
       className: Chunk728963.container,
-      children: Chunk772848 ? (0, Chunk951288.jsx)(eo, {
+      children: Chunk772848 ? (0, Chunk951288.jsx)(es, {
         onSelectTab: Chunk607070,
         onScroll: Chunk451478,
         onLoadComplete: Chunk497505,
@@ -330,7 +333,7 @@ let es = function() {
               className: a()(Chunk728963.bannerGradient, {
                 [Chunk728963.orbsGradient]: Chunk672188
               })
-            }), (0, Chunk951288.jsx)(el, {
+            }), (0, Chunk951288.jsx)(ea, {
               onLoadComplete: Chunk497505
             })]
           }), (0, Chunk951288.jsx)(Chunk374939.Z, {
@@ -371,7 +374,7 @@ let es = function() {
                 className: a()(Chunk728963.bannerGradient, {
                   [Chunk728963.orbsGradient]: Chunk672188
                 })
-              }), (0, Chunk951288.jsx)(el, {
+              }), (0, Chunk951288.jsx)(ea, {
                 onLoadComplete: Chunk497505
               })]
             }), (0, Chunk951288.jsxs)(Chunk374939.Z, {
