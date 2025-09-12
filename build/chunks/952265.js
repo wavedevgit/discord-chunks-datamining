@@ -131,15 +131,16 @@ function v(e) {
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : E(),
     {
       modalKey: r,
-      instant: a,
-      Layer: s,
-      onCloseRequest: l,
-      onCloseCallback: c,
-      backdropStyle: u,
-      stackingBehavior: f,
-      stackNextByDefault: p
+      dismissable: a,
+      instant: s,
+      Layer: l,
+      onCloseRequest: c,
+      onCloseCallback: u,
+      backdropStyle: f,
+      stackingBehavior: p,
+      stackNextByDefault: h
     } = t,
-    h = null != r ? r : i()();
+    m = null != r ? r : i()();
   return (0, o.j)(() => {
     y.setState(t => {
       let r = t[n];
@@ -147,28 +148,29 @@ function v(e) {
           let {
             key: t
           } = e;
-          return t === h
+          return t === m
         })) return t;
-      let i = f;
+      let i = p;
       if (null == i) {
         var o;
         i = (null == (o = r.at(false)) ? true : o.stackNextByDefault) === true ? "stack" : "replace"
       }
       return _(d({}, t), {
         [n]: [...r, {
-          key: h,
-          Layer: s,
+          key: m,
+          dismissable: a,
+          Layer: l,
           render: e,
-          onCloseRequest: null != l ? l : () => I(h, n),
-          onCloseCallback: c,
-          instant: a,
-          backdropStyle: u,
+          onCloseRequest: null != c ? c : () => I(m, n),
+          onCloseCallback: u,
+          instant: s,
+          backdropStyle: f,
           stackingBehavior: i,
-          stackNextByDefault: p
+          stackNextByDefault: h
         }]
       })
     })
-  }), h
+  }), m
 }
 
 function I(e) {

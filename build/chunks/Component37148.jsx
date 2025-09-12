@@ -44,10 +44,11 @@ function g(e) {
   let {
     shouldColorMix: t = false
   } = e, {
-    onClose: n
+    dismissable: n,
+    onClose: i
   } = (0, _.v)();
-  return (0, r.jsx)(f.PZ7, {
-    onClick: n,
+  returnfalse === n ? null : (0, r.jsx)(f.PZ7, {
+    onClick: i,
     variant: t ? "color-mix" : true
   })
 }

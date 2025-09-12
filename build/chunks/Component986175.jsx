@@ -89,7 +89,9 @@ let g = {
         }), (0, r.jsx)(o.zxk, {
           variant: "primary",
           text: "Open Modal",
-          onClick: () => (0, o.h7j)(e => (0, r.jsx)(l.Modal, p(f({}, i, e), {
+          onClick: () => (0, o.h7j)(e => (0, r.jsx)(l.Modal, p(f({}, e, i), {
+            title: i.title,
+            subtitle: i.subtitle,
             input: n ? (0, r.jsx)(o.E1j, {
               placeholder: "Search...",
               onChange: () => {},
@@ -125,7 +127,9 @@ let g = {
                 children: "This is the main content area of the modal. You can place any content here."
               })]
             })
-          })))
+          })), {
+            dismissable: i.dismissable
+          })
         })]
       })
     },
@@ -161,6 +165,11 @@ let g = {
         label: "Show Preview",
         type: "boolean",
         defaultValue: false
+      },
+      dismissable: {
+        label: "Dismissable",
+        type: "boolean",
+        defaultValue: true
       }
     }
   }, {
@@ -203,7 +212,9 @@ let g = {
         }), (0, r.jsx)(o.zxk, {
           variant: "primary",
           text: "Open ExpressiveModal",
-          onClick: () => (0, o.h7j)(e => (0, r.jsx)(s.I, p(f({}, l, e), {
+          onClick: () => (0, o.h7j)(e => (0, r.jsx)(s.I, p(f({}, e, l), {
+            title: l.title,
+            subtitle: l.subtitle,
             graphic: d,
             actions: [{
               variant: "secondary",
@@ -221,7 +232,9 @@ let g = {
                 children: "This is an expressive modal with a gradient background and optional badge."
               })
             })
-          })))
+          })), {
+            dismissable: l.dismissable
+          })
         })]
       })
     },
@@ -289,6 +302,11 @@ let g = {
           label: "Early Access",
           value: "early_access"
         }]
+      },
+      dismissable: {
+        label: "Dismissable",
+        type: "boolean",
+        defaultValue: true
       }
     }
   }]

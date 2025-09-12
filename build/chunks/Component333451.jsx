@@ -28,37 +28,37 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk22706 = require("./22706.js");
 
-function M(e) {
+function x(e) {
   let {
     shouldUpsellFromNoneTier: t
   } = e, n = (0, o.e7)([S.default], () => S.default.locale);
   return (0, l.jsxs)("div", {
-    className: x.perksList,
+    className: M.perksList,
     children: [(0, l.jsx)(h.Z, {
       icon: u.$Eu,
-      iconClassName: x.perkIconGuild,
+      iconClassName: M.perkIconGuild,
       description: b.intl.formatToPlainString(b.t.sQBgs7, {
         numFreeGuildSubscriptions: O.cb
       }),
       color: u.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK.css
     }), (0, l.jsx)(h.Z, {
       icon: u.$Eu,
-      iconClassName: x.perkIconGuild,
+      iconClassName: M.perkIconGuild,
       description: b.intl.formatToPlainString(b.t["1A6vXl"], {
         percent: (0, g.T3)(n, O.Rr / 100)
       }),
       color: u.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK.css
     }), t ? (0, l.jsx)(h.Z, {
       icon: u.EO4,
-      iconClassName: x.perkIconChatPerks,
+      iconClassName: M.perkIconChatPerks,
       description: b.intl.string(b.t.Z9b2x8)
     }) : null, (0, l.jsx)(h.Z, {
       icon: u.hGI,
-      iconClassName: x.perkIconStream,
+      iconClassName: M.perkIconStream,
       description: b.intl.string(b.t["8dqG5O"])
     }), (0, l.jsx)(h.Z, {
       icon: u.rG2,
-      iconClassName: x.perkIconUpload,
+      iconClassName: M.perkIconUpload,
       description: b.intl.string(b.t.cBorIy)
     })]
   })
@@ -88,29 +88,29 @@ function L(e) {
     })
   }, [C]), (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsxs)(u.hzk, {
-      className: x.content,
+      className: M.content,
       children: [(0, l.jsx)(u.olH, {
         onClick: r,
-        className: x.closeButton
+        className: M.closeButton
       }), U && (0, l.jsx)(_.dz, {
-        className: x.premiumTrialBadge
+        className: M.premiumTrialBadge
       }), (0, l.jsx)("div", {
-        className: s()(x.upsellImage, {
-          [x.upsellImageWithTrialOffer]: U
+        className: s()(M.upsellImage, {
+          [M.upsellImageWithTrialOffer]: U
         })
       }), (0, l.jsx)("div", {
-        className: x.bodyText,
+        className: M.bodyText,
         children: null != w ? b.intl.string(b.t.AoSzEh) : b.intl.format(b.t["7vePZW"], {
           monthlyPrice: D
         })
-      }), (0, l.jsx)(M, {
+      }), (0, l.jsx)(x, {
         shouldUpsellFromNoneTier: R
       })]
     }), (0, l.jsxs)(u.mzw, {
       align: m.Z.Align.CENTER,
       justify: m.Z.Justify.END,
       children: [(0, l.jsxs)("div", {
-        className: x.footerRight,
+        className: M.footerRight,
         children: [(0, l.jsx)(c.zx, {
           look: c.zx.Looks.LINK,
           color: k,
@@ -162,7 +162,7 @@ function L(e) {
           }
         })]
       }), (0, l.jsx)("div", {
-        className: x.backStep,
+        className: M.backStep,
         children: (0, l.jsx)(c.zx, {
           color: k,
           look: c.zx.Looks.LINK,

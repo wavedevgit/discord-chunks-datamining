@@ -68,15 +68,17 @@ class S extends Chunk647438.PureComponent {
       render: e,
       LayerComponent: t,
       isTopModal: n,
-      instant: i
-    } = this.props, a = Chunk647438 ? Chunk602091.Dv.ENTERED : this.state.transitionState;
+      instant: i,
+      dismissable: a
+    } = this.props, s = module({
+      transitionState: Chunk647438 ? Chunk602091.Dv.ENTERED : this.state.transitionState,
+      onClose: this.close,
+      dismissable: Chunk120356
+    });
     return (0, Chunk951288.jsx)(exports, {
       children: (0, Chunk951288.jsx)("div", {
         className: o()(Chunk233477.layer, !require && Chunk233477.inactive),
-        children: module({
-          transitionState: Chunk120356,
-          onClose: this.close
-        })
+        children: Chunk392711
       })
     })
   }
@@ -155,14 +157,15 @@ function R() {
     if (!o) return;
     let e = () => {
       let e = Chunk120356.current;
-      null != module && null != module.onCloseRequest && module.onCloseRequest()
+      null != module && null != module.onCloseRequest && false !== module.dismissable && module.onCloseRequest()
     };
     return Chunk585483.S.subscribe(Chunk981631.CkL.MODAL_CLOSE, module), () => {
       Chunk585483.S.unsubscribe(Chunk981631.CkL.MODAL_CLOSE, module)
     }
   }, [o]);
   let s = Chunk647438.useCallback(() => {
-      Chunk585483.S.dispatch(Chunk981631.CkL.MODAL_CLOSE)
+      let e = Chunk120356.current;
+      (null == module ? true : module.dismissable) !== false && Chunk585483.S.dispatch(Chunk981631.CkL.MODAL_CLOSE)
     }, []),
     f = Chunk647438.useCallback(t => {
       (0, m.Mr)(t, e)
@@ -194,7 +197,8 @@ function R() {
         Layer: a,
         render: o,
         instant: s,
-        isVisible: l
+        isVisible: l,
+        dismissable: c
       } = e;
       return (0, r.jsx)(S, {
         modalKey: i,
@@ -203,7 +207,8 @@ function R() {
         isTopModal: t === n.length - 1,
         render: o,
         closeModal: f,
-        instant: s
+        instant: s,
+        dismissable: c
       }, i)
     })]
   })

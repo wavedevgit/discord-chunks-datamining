@@ -14,6 +14,7 @@ function a() {
   return module
 }
 let o = Chunk647438.createContext({
+  dismissable: true,
   onClose: Chunk981631.dG4,
   id: "modal-id",
   headingId: "modal-heading-id"
