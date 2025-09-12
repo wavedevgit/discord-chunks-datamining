@@ -35,7 +35,8 @@ function l(e) {
     anchor: n,
     size: i,
     minSize: a,
-    opacity: o
+    defaultSize: o,
+    opacity: s
   } = e;
   r.Z.dispatch({
     type: "LAYOUT_UPDATE_WIDGET",
@@ -43,7 +44,8 @@ function l(e) {
     anchor: n,
     size: i,
     minSize: a,
-    opacity: o
+    defaultSize: o,
+    opacity: s
   })
 }
 
@@ -54,14 +56,15 @@ function c(e) {
   })
 }
 
-function u(e) {
+function u(e, t) {
   r.Z.dispatch({
     type: "LAYOUT_SET_PINNED",
-    widgetId: e
+    widgetId: e,
+    pinned: t
   });
-  let t = a.Z.getWidget(e);
-  null != t && (0, i.JS)(t.type, {
-    pinned: !t.pinned
+  let n = a.Z.getWidget(e);
+  null != n && (0, i.JS)(n.type, {
+    pinned: null != t ? t : !n.pinned
   })
 }
 

@@ -128,15 +128,15 @@ let E = {
       },
       config: E,
       trail: 100 * !A
-    }, A ? "animate-never" : "respect-motion-settings"), M = (0, p.ee)(() => new Set(I.map(e => e.user.id)), [I, C]), V = (0, p.ee)(() => new Set(I.filter(e => S.has((0, u.V9)(e.stream))).map(e => e.user.id)), [I, S, C]);
+    }, A ? "animate-never" : "respect-motion-settings"), M = (0, p.ee)(() => new Set(I.map(e => e.user.id)), [I, C]), z = (0, p.ee)(() => new Set(I.filter(e => S.has((0, u.V9)(e.stream))).map(e => e.user.id)), [I, S, C]);
     return r.useEffect(() => {
       0 !== M.size && (0, p.zi)(y.Odu.GO_LIVE, {
         locked: d.default.isInstanceLocked(),
         shownUserIds: Array.from(M),
-        liveUserIds: Array.from(V),
+        liveUserIds: Array.from(z),
         contentInventoryIds: []
       })
-    }, [M, V]), (0, i.jsx)("div", {
+    }, [M, z]), (0, i.jsx)("div", {
       className: o()({
         [O.gridContainer]: true,
         [O.vertical]: P,

@@ -183,7 +183,7 @@ let P = e => [e.userId, ... function(e) {
       })
     })
   }),
-  V = Chunk647438.memo(function(e) {
+  z = Chunk647438.memo(function(e) {
     let {
       sectionHeader: t,
       channelIds: n,
@@ -224,7 +224,7 @@ let P = e => [e.userId, ... function(e) {
     })
   });
 
-function z(e) {
+function V(e) {
   let {
     searchQuery: t,
     currentVoiceChannel: n,
@@ -263,7 +263,7 @@ function z(e) {
   }();
   return l.length > 0 || c.length > 0 ? (0, i.jsxs)(s.zJl, {
     className: o()(T.channelList, T.channelListWrapper),
-    children: [l.length > 0 && (0, i.jsx)(V, {
+    children: [l.length > 0 && (0, i.jsx)(z, {
       sectionHeader: Z.intl.string(Z.t.lnk2NT),
       channelIds: l.slice(0, 3),
       hasQuery: false,
@@ -271,7 +271,7 @@ function z(e) {
       currentVoiceChannel: n,
       onSelect: r,
       scrollable: false
-    }), c.length > 0 && (0, i.jsx)(V, {
+    }), c.length > 0 && (0, i.jsx)(z, {
       sectionHeader: Z.intl.string(Z.t["0lvb9P"]),
       channelIds: c.slice(0, 8),
       hasQuery: false,
@@ -363,7 +363,7 @@ function W(e) {
           "aria-label": Z.intl.string(Z.t.UyA6SU)
         }
       })
-    }), y ? (0, i.jsx)(V, {
+    }), y ? (0, i.jsx)(z, {
       sectionHeader: v ? Z.intl.format(Z.t.qdXiQ0, b) : Z.intl.format(Z.t["Aq+8wM"], b),
       channelIds: h.map(e => {
         let {
@@ -375,7 +375,7 @@ function W(e) {
       query: d,
       currentVoiceChannel: l,
       onSelect: g
-    }) : (0, i.jsx)(z, {
+    }) : (0, i.jsx)(V, {
       searchQuery: d,
       currentVoiceChannel: l,
       onSelect: g

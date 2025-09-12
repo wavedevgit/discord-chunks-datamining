@@ -130,7 +130,7 @@ function es(e) {
     }
     return r
   }(e, ["ref", "isActive", "disabled", "iconComponent", "iconColor", "tooltip", "defaultColor", "highlightedColor", "caretColor", "popoutOpen", "onClick", "popoutDisabled", "onPopoutClick", "onMouseEnter", "onMouseLeave", "onContextMenu", "isTrayButton"]);
-  return (0, i.jsx)(z.d, {
+  return (0, i.jsx)(V.d, {
     ref: t,
     onClick: null != p ? p : () => {},
     color: n ? c : s,
@@ -352,7 +352,7 @@ function ed(e) {
       value: $.bk.SETTINGS_OPENED
     })
   }, O = () => {
-    h ? f ? g(true) : (0, V.Z)() : g(!s), (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
+    h ? f ? g(true) : (0, z.Z)() : g(!s), (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
       type: $.Qu.CAMERA,
       value: s ? $.bk.DISABLED : $.bk.ENABLED,
       userId: H.default.getId()

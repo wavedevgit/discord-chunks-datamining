@@ -425,9 +425,17 @@ function N(e) {
     anchor: n,
     size: r,
     opacity: i,
-    minSize: a
+    minSize: a,
+    defaultSize: o
   } = e;
-  return C(t, (e, t) => L(e, n, r, i, a))
+  return C(t, (e, t) => L({
+    widget: e,
+    anchor: n,
+    size: r,
+    opacity: i,
+    minSize: a,
+    defaultSize: o
+  }))
 }
 
 function R(e) {
@@ -468,22 +476,36 @@ function D(e, t) {
 
 function x(e) {
   let {
-    widgetId: t
+    widgetId: t,
+    pinned: n
   } = e;
   return C(t, (e, t) => {
-    Z(e)
+    Z(e, n)
   })
 }
 
-function L(e, t, n, r, a) {
-  i = y(E({}, i), {
-    [e.id]: e.merge({
-      anchor: null != t ? t : e.anchor,
-      size: null != n ? n : e.size,
-      opacity: null != r ? r : e.opacity,
-      minSize: null != a ? a : e.minSize
-    })
-  })
+function L(e) {
+  let {
+    widget: t,
+    anchor: n,
+    size: r,
+    opacity: a,
+    minSize: o,
+    defaultSize: s
+  } = e;
+  if (i = y(E({}, i), {
+      [t.id]: t.merge({
+        anchor: null != n ? n : t.anchor,
+        size: null != r ? r : t.size,
+        opacity: null != a ? a : t.opacity,
+        minSize: null != o ? o : t.minSize
+      })
+    }), null != s) {
+    let e = T[t.type];
+    null != e && (e.defaultSettings.size = E({
+      fixed: e.defaultSettings.size.fixed
+    }, s))
+  }
 }
 
 function j(e) {
@@ -555,9 +577,9 @@ function B(e, t) {
   })
 }
 
-function Z(e) {
+function Z(e, t) {
   i = y(E({}, i), {
-    [e.id]: e.set("pinned", !e.pinned)
+    [e.id]: e.set("pinned", null != t ? t : !e.pinned)
   })
 }
 

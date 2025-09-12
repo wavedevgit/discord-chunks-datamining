@@ -41,8 +41,8 @@ function C(e) {
     pinned: R,
     anchorTop: L,
     anchorLeft: M,
-    showEmpty: V = true
-  } = e, z = k ? E.C5.HORIZONTAL : E.C5.VERTICAL, U = z === E.C5.VERTICAL, W = (0, l.e7)([m.Z], () => {
+    showEmpty: z = true
+  } = e, V = k ? E.C5.HORIZONTAL : E.C5.VERTICAL, U = V === E.C5.VERTICAL, W = (0, l.e7)([m.Z], () => {
     var e;
     let t = m.Z.getWidget(w);
     return !!(0, E.ZL)(t) && !T && (null == (e = t.meta.showAllStreams) || e)
@@ -73,7 +73,7 @@ function C(e) {
       activeStreams: e,
       participantsVersion: c.Z.getParticipantsVersion(G)
     }
-  }, [G, H, W, C, j])), K = F.length, X = (0, l.e7)([d.Z], () => d.Z.getWindowState(_.$J)), {
+  }, [G, H, W, C, j])), K = F.length, X = (0, l.e7)([d.Z], () => d.Z.getWindowState(_.$J), []), {
     tileWidth: q,
     tileHeight: J,
     widgetWidth: $,
@@ -84,14 +84,12 @@ function C(e) {
     tileCount: K,
     padding: P,
     borderWidth: A,
-    windowWidth: null == X ? true : X.width,
-    windowHeight: null == X ? true : X.height,
     isVertical: U,
     widgetSize: Z
   }), ei = {
     id: w,
     widget: N,
-    layout: z,
+    layout: V,
     participants: F.length,
     padding: P,
     borderWidth: A,
@@ -111,7 +109,7 @@ function C(e) {
   (0, b.Dl)({
     id: w,
     streamParticipants: F,
-    layout: z,
+    layout: V,
     widgetLayoutSpecs: ei
   });
   let er = null == B || 0 === Y.size && T || 0 === K && !T;
@@ -119,7 +117,7 @@ function C(e) {
     a.Z.setGpuBoostRequested(y.zS.OVERLAY_VIDEO_STREAM_RENDERING, !er)
   }, [er]), (0, s.ZP)(() => () => {
     a.Z.setGpuBoostRequested(y.zS.OVERLAY_VIDEO_STREAM_RENDERING, false)
-  }), (er || !R) && T) ? null : er && !T ? V ? T ? null : (0, i.jsx)(O.E, {
+  }), (er || !R) && T) ? null : er && !T ? z ? T ? null : (0, i.jsx)(O.E, {
     emptyText: x.intl.string(x.t["T6+rX1"]),
     icon: o.hGI,
     absolute: true
@@ -134,7 +132,7 @@ function C(e) {
       tileWidth: q,
       tileHeight: J,
       locked: T,
-      layout: z,
+      layout: V,
       activeStreams: Y,
       streamParticipants: F,
       participantsVersion: Q,

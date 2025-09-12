@@ -159,7 +159,7 @@ function ei() {
 }
 
 function er(e) {
-  let t = z.ZP.isInputLocked((0, N.getPID)());
+  let t = V.ZP.isInputLocked((0, N.getPID)());
   "alt" !== e.key.toLowerCase() || t || ("keyup" === e.type.toLowerCase() ? C.S.dispatch(F.CkL.OVERLAY_V3_SHOW_WIDGETS, {
     show: true
   }) : "keydown" === e.type.toLowerCase() && C.S.dispatch(F.CkL.OVERLAY_V3_SHOW_WIDGETS, {
@@ -176,13 +176,13 @@ function el(e) {
     incompatibleApp: m,
     hasZeroSizeDimension: j,
     keybind: D
-  } = (0, a.cj)([z.ZP, S.default, I.Z, _.ZP], () => {
+  } = (0, a.cj)([V.ZP, S.default, I.Z, _.ZP], () => {
     let e = I.Z.windowSize((0, Z.ZY)(n)),
       t = _.ZP.getOverlayKeybind(),
       i = (0, N.getPID)();
     return {
-      locked: z.ZP.isInputLocked(i),
-      focused: z.ZP.isFocused(i),
+      locked: V.ZP.isInputLocked(i),
+      focused: V.ZP.isFocused(i),
       incompatibleApp: S.default.incompatibleApp,
       hasZeroSizeDimension: 0 === e.height || 0 === e.width,
       keybind: null != t ? (0, w.BB)(t.shortcut, true) : "???"
@@ -224,9 +224,9 @@ function el(e) {
       } = (0, P.Rb)("overlay"),
       u = null != (e = x.default.getFocusedPID()) ? e : (0, N.getPID)();
     if (M.default.hasChangedRenderMode(u)) return;
-    let p = V.Z.isNotificationDisabled(T.OverlayNotificationDisabledSetting.WELCOME_GENERAL),
-      h = V.Z.isNotificationDisabled(T.OverlayNotificationDisabledSetting.GO_LIVE_NUDGE),
-      f = V.Z.isNotificationDisabled(T.OverlayNotificationDisabledSetting.GAME_ACTIVITY),
+    let p = z.Z.isNotificationDisabled(T.OverlayNotificationDisabledSetting.WELCOME_GENERAL),
+      h = z.Z.isNotificationDisabled(T.OverlayNotificationDisabledSetting.GO_LIVE_NUDGE),
+      f = z.Z.isNotificationDisabled(T.OverlayNotificationDisabledSetting.GAME_ACTIVITY),
       m = [];
     p || m.push({
       type: B.nc.WELCOME

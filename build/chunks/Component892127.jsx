@@ -64,7 +64,7 @@ let I = Chunk647438.memo(function(e) {
     resizeValidation: C,
     className: j,
     dragContainerClassName: w
-  } = e, N = (0, a.e7)([u.Z], () => u.Z.getWidgetConfig(t.type), [t.type]), Z = (0, v.xZ)(t.id), T = (0, a.e7)([d.default], () => d.default.isLocked((0, f.getPID)())), P = (0, b.Z)(), A = (0, a.e7)([p.Z], () => p.Z.windowSize((0, m.ZY)(P))), D = r.useCallback((e, t, n, i, r) => {
+  } = e, N = (0, a.e7)([u.Z], () => u.Z.getWidgetConfig(t.type), [t.type]), Z = (0, v.xZ)(t.id, v.bc), T = (0, a.e7)([d.default], () => d.default.isLocked((0, f.getPID)())), P = (0, b.Z)(), A = (0, a.e7)([p.Z], () => p.Z.windowSize((0, m.ZY)(P))), D = r.useCallback((e, t, n, i, r) => {
     let l = p.Z.windowSize((0, m.ZY)((0, b.i)())),
       o = (0, h.jL)(n, l),
       a = (0, h.Ox)(i, l);
@@ -92,10 +92,10 @@ let I = Chunk647438.memo(function(e) {
     id: R,
     pinned: L,
     zIndex: M,
-    size: V,
-    anchor: z,
+    size: z,
+    anchor: V,
     minSize: U
-  } = t, W = r.useMemo(() => (0, h.w_)(V, A), [V, A]), G = (0, h.KR)(z, A), {
+  } = t, W = r.useMemo(() => (0, h.w_)(z, A), [z, A]), G = (0, h.KR)(V, A), {
     resizeX: B,
     resizeY: H,
     dragAnywhere: F

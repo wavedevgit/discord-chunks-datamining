@@ -2,7 +2,7 @@
 /** chunk id: 586742, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   R: () => M,
-  Z: () => V
+  Z: () => z
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -218,7 +218,7 @@ let k = Chunk647438.memo(function(e) {
     return (0, C.hJ)(s, c)
   };
 
-function V(e) {
+function z(e) {
   var t, n, l, o;
   let s = (0, a.e7)([v.Z, y.Z], () => y.Z.getChannel(v.Z.getVoiceChannelId())),
     c = 2 * e.padding + 2 * e.borderWidth,

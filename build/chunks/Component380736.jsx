@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Y: () => C,
-  Z: () => P
+  Z: () => D
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -231,23 +231,24 @@ function N(e) {
       transform: i,
       height: a
     },
-    index: l,
-    children: c,
-    locked: u,
-    animationWrapperClassName: d
+    scaleOverride: l,
+    index: c,
+    children: u,
+    locked: d,
+    animationWrapperClassName: f
   } = e;
   return (0, r.jsx)(s.animated.div, {
-    className: o()(b.animationWrapper, d),
+    className: o()(b.animationWrapper, f),
     style: {
-      pointerEvents: u && 0 !== l ? "none" : "auto",
-      zIndex: Math.max(5 - l, 0),
+      pointerEvents: d && 0 !== c ? "none" : "auto",
+      zIndex: Math.max(5 - c, 0),
       opacity: t,
       transform: i.to(e => "translate3d(0, ".concat(e, "px, 0)")),
-      scale: n.to([0, 1], [.7, 1]),
+      scale: null != l ? l : n.to([0, 1], [.7, 1]),
       height: a,
-      maxWidth: 0 === l ? true : "100%"
+      maxWidth: 0 === c ? true : "100%"
     },
-    children: c
+    children: u
   })
 }
 
@@ -261,8 +262,31 @@ function R(e) {
     children: n
   }) : n
 }
+let P = {
+  mass: 1,
+  friction: 8,
+  tension: 300
+};
 
-function P(e) {
+function w() {
+  let [e, t] = Chunk647438.useState(false), [n, r] = Chunk647438.useState(false), a = (0, Chunk481060.q_F)({
+    scale: module ? .975 : 1,
+    config: P,
+    onRest: () => {
+      exports(false), setTimeout(() => {
+        Chunk951288(false)
+      }, 300)
+    }
+  });
+  return {
+    clickSpring: require ? Chunk120356 : true,
+    handleMouseClick: Chunk647438.useCallback(() => {
+      Chunk951288(true), exports(true)
+    }, [])
+  }
+}
+
+function D(e) {
   let {
     notification: t,
     index: n,
@@ -285,50 +309,54 @@ function P(e) {
     u(c)
   }, [u, c]), y = i.useCallback(e => {
     d.Z.updateNotificationStatus(c), null == f || f(e, c)
-  }, [c, f]), v = i.useCallback(e => {
-    null == _ || _(e, c)
-  }, [_, c]), S = i.useCallback(e => {
+  }, [c, f]), {
+    clickSpring: v,
+    handleMouseClick: S
+  } = w(), A = i.useCallback(e => {
+    null == _ || _(e, c), S()
+  }, [_, c, S]), P = i.useCallback(e => {
     null == p || p(e, c)
-  }, [p, c]), A = i.useCallback(e => {
+  }, [p, c]), D = i.useCallback(e => {
     null == h || h(e, c)
-  }, [h, c]), P = i.useCallback((e, t) => null == g ? true : g(e, c, t), [g, c]), {
+  }, [h, c]), x = i.useCallback((e, t) => null == g ? true : g(e, c, t), [g, c]), {
     props: {
-      onNotificationShow: w,
-      onDismissClick: D,
-      renderFooter: x,
-      onNotificationClick: L,
-      onConfirmClick: j,
-      onCancelClick: M,
-      disableClickableRegions: k = false
+      onNotificationShow: L,
+      onDismissClick: j,
+      renderFooter: M,
+      onNotificationClick: k,
+      onConfirmClick: U,
+      onCancelClick: G,
+      disableClickableRegions: B = false
     },
-    status: U
-  } = t, G = T(t.props, ["onNotificationShow", "onDismissClick", "renderFooter", "onNotificationClick", "onConfirmClick", "onCancelClick", "disableClickableRegions"]), B = !o && a, Z = 0 === n && !k && !B, {
-    ref: F,
-    springs: V
+    status: Z
+  } = t, F = T(t.props, ["onNotificationShow", "onDismissClick", "renderFooter", "onNotificationClick", "onConfirmClick", "onCancelClick", "disableClickableRegions"]), V = !o && a, H = 0 === n && !B && !V, {
+    ref: Y,
+    springs: W
   } = (0, m.X4)(t.id, s, l);
   return (0, r.jsx)(N, {
     transitionState: s,
-    springs: V,
+    springs: W,
+    scaleOverride: null == v ? true : v.scale,
     index: n,
     locked: a,
     animationWrapperClassName: E,
     children: (0, r.jsx)(R, {
-      observe: Z,
-      children: (0, r.jsx)(C, I(O({}, G), {
-        title: "function" == typeof G.title ? G.title(y) : G.title,
-        containerRef: F,
+      observe: H,
+      children: (0, r.jsx)(C, I(O({}, F), {
+        title: "function" == typeof F.title ? F.title(y) : F.title,
+        containerRef: Y,
         notificationId: t.id,
         onNotificationShow: 0 === n ? b : true,
         onDismissClick: y,
-        onNotificationClick: null != _ ? v : true,
-        onConfirmClick: null != p ? S : true,
-        onCancelClick: null != h ? A : true,
-        renderFooter: P,
+        onNotificationClick: A,
+        onConfirmClick: null != p ? P : true,
+        onCancelClick: null != h ? D : true,
+        renderFooter: x,
         expand: false,
         index: n,
         locked: a,
-        status: U,
-        contentOpacity: V.contentOpacity
+        status: Z,
+        contentOpacity: W.contentOpacity
       }))
     })
   })

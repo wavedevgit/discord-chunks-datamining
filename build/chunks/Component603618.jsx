@@ -261,7 +261,7 @@ function J(e) {
           className: Y.username,
           variant: "text-md/medium",
           color: "header-primary",
-          children: z.ZP.getName(true, true, l)
+          children: V.ZP.getName(true, true, l)
         }), null != o && (0, i.jsx)(_.ZP, {
           className: Y.liveIndicator
         })]
@@ -423,7 +423,7 @@ function ei(e) {
     activity: t,
     currentUser: n,
     showInviteButton: r = true
-  } = e, l = null != t && (0, b.Z)(t, B.xjy.JOIN), o = (0, E.q)(null == t ? true : t.application_id), a = null != o && (0, V.yE)(o.flags, B.udG.EMBEDDED);
+  } = e, l = null != t && (0, b.Z)(t, B.xjy.JOIN), o = (0, E.q)(null == t ? true : t.application_id), a = null != o && (0, z.yE)(o.flags, B.udG.EMBEDDED);
   return null == t || null == n ? null : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(Z.Z, {
       className: Y.activityCard,

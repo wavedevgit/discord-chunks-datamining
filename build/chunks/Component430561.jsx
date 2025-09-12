@@ -2,11 +2,12 @@
 /** chunk id: 430561, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  GY: () => D,
+  GY: () => x,
   PI: () => S,
-  RT: () => x,
-  XM: () => P,
-  ls: () => w,
+  RT: () => L,
+  XM: () => w,
+  bc: () => C,
+  ls: () => D,
   xZ: () => N
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -88,40 +89,34 @@ function A() {
     false === module && require(true)
   }, [module]), exports
 }
-let C = 6e3;
+let C = 7e3;
 
-function N(e) {
-  let t = (0, s.e7)([f.Z], () => f.Z.getWidget(e), [e]),
-    n = i.useRef(null == t ? true : t.showExtrasHintTimestamp),
+function N(e, t) {
+  return R((0, s.e7)([f.Z], () => f.Z.getWidget(e), [e]), t)
+}
+
+function R(e, t) {
+  let n = i.useRef(null == e ? true : e.showExtrasHintTimestamp),
     [r, a] = i.useState(false),
     o = (0, s.e7)([_.default], () => _.default.isLocked((0, p.getPID)())),
-    l = A();
+    l = i.useRef(true),
+    c = A();
   return i.useEffect(() => {
-    let e = null == t ? true : t.showExtrasHintTimestamp;
-    if (null != e && e !== n.current) {
-      n.current = e, a(true);
-      let t = setTimeout(() => {
-        a(false)
-      }, C);
-      return () => clearTimeout(t)
-    }
-    a(false)
-  }, [null == t ? true : t.showExtrasHintTimestamp]), r && o && !l
+    let r = null == e ? true : e.showExtrasHintTimestamp;
+    r !== n.current && (n.current = r, a(true), l.current = setTimeout(() => {
+      a(false)
+    }, t))
+  }, [t, null == e ? true : e.showExtrasHintTimestamp]), i.useEffect(() => () => {
+    null != l.current && clearTimeout(l.current)
+  }, []), r && o && !c
 }
+let P = 8e3;
 
-function R(e) {
-  let t = i.useRef(null == e ? true : e.showExtrasHintTimestamp),
-    n = (null == e ? true : e.showExtrasHintTimestamp) !== t.current,
-    r = (0, s.e7)([_.default], () => _.default.isLocked((0, p.getPID)())),
-    a = A();
-  return n && r && !a
-}
-
-function P(e) {
+function w(e) {
   let {
     children: t,
     widgetId: n
-  } = e, i = (0, s.e7)([f.Z], () => f.Z.getWidget(n), [n]), a = R(i), o = () => (0, g.Q)((0, E.P)(), b.t["1XA04e"], b.intl.string(b.t.uZZGzc), false);
+  } = e, i = (0, s.e7)([f.Z], () => f.Z.getWidget(n), [n]), a = R(i, P), o = () => (0, g.Q)((0, E.P)(), b.t["1XA04e"], b.intl.string(b.t.uZZGzc), false);
   return a ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(m.Z, {
       className: y.titleWrapper,
@@ -152,7 +147,7 @@ function P(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     onClick: t
   } = e;
@@ -172,7 +167,7 @@ function w(e) {
   })
 }
 
-function D(e) {
+function x(e) {
   let {
     widgetId: t,
     showAllStreams: n
@@ -195,7 +190,7 @@ function D(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     id: t,
     pinned: n

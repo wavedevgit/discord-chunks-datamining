@@ -11,13 +11,14 @@ require.d(exports, {
   XE: () => u,
   YB: () => g,
   Yo: () => d,
+  aq: () => I,
   dj: () => f,
   hS: () => h,
   lj: () => v,
   mB: () => m,
   o4: () => s,
   qA: () => E,
-  tU: () => T,
+  tU: () => S,
   td: () => _
 });
 var Chunk818083 = require("./818083.js"),
@@ -256,7 +257,13 @@ function v(e) {
     location: e
   })
 }
-let I = (0, Chunk427164.le)({
+
+function I(e) {
+  return O.useConfig({
+    location: e
+  })
+}
+let T = (0, Chunk427164.le)({
   name: "2025-08-overlay-v3-one-click-go-live",
   kind: "user",
   defaultConfig: {
@@ -275,8 +282,8 @@ let I = (0, Chunk427164.le)({
   }
 });
 
-function T(e) {
-  return I.getConfig({
+function S(e) {
+  return T.getConfig({
     location: e
   })
 }

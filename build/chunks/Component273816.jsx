@@ -73,11 +73,11 @@ function b(e) {
     [A, D, k] = (0, d.ZF)(b),
     [R, L] = (0, d.Y5)(A, P, _),
     M = performance.now() - S.current < d.MC,
-    V = D(C, T.current);
+    z = D(C, T.current);
   (0, u.ZP)(() => (R(), () => {
     L()
   }));
-  let z = r.useCallback(() => {
+  let V = r.useCallback(() => {
       w(), k(), R()
     }, [w, k, R]),
     [U, W] = r.useState(true),
@@ -193,8 +193,8 @@ function b(e) {
             children: ["Idle Frame Delta:", " ", (0, i.jsxs)(c.Text, {
               tag: "span",
               variant: "code",
-              color: V > 1 ? "text-danger" : "text-primary",
-              children: [V.toFixed(2), "ms"]
+              color: z > 1 ? "text-danger" : "text-primary",
+              children: [z.toFixed(2), "ms"]
             })]
           })
         }))
@@ -221,7 +221,7 @@ function b(e) {
         children: (0, i.jsx)(c.zxk, {
           variant: "primary",
           text: "Reset Frame Data",
-          onClick: z
+          onClick: V
         })
       })
     })]
