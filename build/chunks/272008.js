@@ -511,11 +511,13 @@ async function Q(e, t) {
         adContext: y.ad_context,
         placement: e
       }), m.Z.recordQuestRequestApiResponse("/quests/decision", {
-        wasSuccessful: true
+        wasSuccessful: true,
+        adRequestId: String(y.request_id)
       }), null == v) return;
     e === b.Ok.DESKTOP_ACCOUNT_PANEL_AREA && h.Z.startTracking(v.id), f.default.track(T.rMx.QUEST_DECISION_RECEIVED, R(C({}, (0, u.Z)()), {
       quest_id: v.id,
-      caller_source: t
+      caller_source: t,
+      ad_request_id: String(y.request_id)
     }))
   } catch (n) {
     m.Z.recordQuestRequestApiResponse("/quests/decision", {
