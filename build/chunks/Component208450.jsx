@@ -67,12 +67,17 @@ class W extends Chunk647438.PureComponent {
       editorState: t,
       searchContext: n
     } = this.props;
-    if (t !== e.editorState) {
-      let e = (0, S.kG)(O.Sq(t)),
-        r = v.g9(e, t);
-      I.Z.updateAutocompleteQuery(n, e, r), null != this._editorRef && O.iE(this._editorRef.editor)
+    if (n !== e.searchContext && I.Z.initializeAutocomplete(n), t !== e.editorState) {
+      let e = O.Sq(t),
+        r = (0, S.kG)(O.Sq(t)),
+        i = v.g9(r, t);
+      I.Z.updateAutocompleteQuery({
+        searchContext: n,
+        tokens: r,
+        cursorScope: i,
+        queryString: e
+      }), null != this._editorRef && O.iE(this._editorRef.editor)
     }
-    n !== e.searchContext && I.Z.initializeAutocomplete(n)
   }
   componentWillUnmount() {
     Chunk585483.S.unsubscribe(Chunk981631.CkL.PERFORM_SEARCH, this.search), Chunk585483.S.unsubscribe(Chunk981631.CkL.SET_SEARCH_QUERY, this.handleSetSearchQuery), Chunk585483.S.unsubscribe(Chunk981631.CkL.FOCUS_SEARCH, this.handleFocusSearch)

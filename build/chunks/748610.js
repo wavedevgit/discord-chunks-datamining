@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => b
-}), require("./388685.js"), require("./415506.js");
+}), require("./388685.js"), require("./781311.js"), require("./415506.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
   Chunk570140 = require("./570140.js"),
@@ -298,14 +298,20 @@ let b = {
       id: t
     }))
   },
-  updateAutocompleteQuery: function(e, t, n) {
-    (0, c.y)({
+  updateAutocompleteQuery: function(e) {
+    let {
+      searchContext: t,
+      tokens: n,
+      queryString: r,
+      cursorScope: i
+    } = e;
+    r.trim().length > 0 && (0, c.y)({
       location: "updateAutocompleteQuery"
     }) && s.DZ.loadIfNecessary(), a.Z.dispatch({
       type: "SEARCH_AUTOCOMPLETE_QUERY_UPDATE",
-      searchContext: e,
-      tokens: t,
-      cursorScope: n
+      searchContext: t,
+      tokens: n,
+      cursorScope: i
     })
   },
   markSearchTokensRefreshed: function() {
