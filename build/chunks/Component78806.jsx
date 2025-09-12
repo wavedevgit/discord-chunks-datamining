@@ -13,19 +13,19 @@ var Chunk481060 = require("./481060.js"),
 function c(e) {
   let {
     applicationIds: t
-  } = e, n = (0, o.Z)(t).filter(e => null != e);
+  } = e, n = (0, i.Z)(t).filter(e => null != e);
   if (0 === n.length) return null;
   let c = null;
   if (1 === n.length) c = l.intl.format(l.t.wQ6ur6, {
-    applicationName: () => (0, a.jsx)(i.Z, {
+    applicationName: () => (0, a.jsx)(o.Z, {
       application: n[0]
     }, n[0].id)
   });
   else if (2 === n.length) c = l.intl.format(l.t.C98CSE, {
-    applicationName: () => (0, a.jsx)(i.Z, {
+    applicationName: () => (0, a.jsx)(o.Z, {
       application: n[0]
     }, n[0].id),
-    applicationName2: () => (0, a.jsx)(i.Z, {
+    applicationName2: () => (0, a.jsx)(o.Z, {
       application: n[1]
     }, n[1].id)
   });
@@ -33,11 +33,11 @@ function c(e) {
     let e = n[n.length - 1],
       t = n.slice(0, false);
     c = l.intl.format(l.t.UxpwAg, {
-      applications: () => t.map(e => (0, a.jsx)(i.Z, {
+      applications: () => t.map(e => (0, a.jsx)(o.Z, {
         application: e,
         useComma: true
       }, e.id)),
-      applicationNameLast: () => (0, a.jsx)(i.Z, {
+      applicationNameLast: () => (0, a.jsx)(o.Z, {
         application: e
       }, e.id)
     })

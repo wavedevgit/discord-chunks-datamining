@@ -12,6 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk493773 = require("./493773.js"),
+  Chunk833664 = require("./833664.js"),
   Chunk468363 = require("./468363.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk313201 = require("./313201.js"),
@@ -28,7 +29,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk769140 = require("./769140.jsx"),
   Chunk864141 = require("./864141.jsx"),
   Chunk228168 = require("./228168.js"),
-  Chunk981631 = require("./981631.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk31948 = require("./31948.js");
@@ -92,7 +92,7 @@ function k(e, t) {
         height: "auto"
       });
     default:
-      return (0, g.vE)(t)
+      return (0, E.vE)(t)
   }
 }
 let U = {
@@ -105,47 +105,47 @@ function G(e) {
     user: t,
     currentUser: n,
     guildId: a,
-    onOpenUserProfileModal: g,
+    onOpenUserProfileModal: E,
     onClose: w
-  } = e, x = (0, _.Dt)(), {
+  } = e, x = (0, p.Dt)(), {
     analyticsLocations: L
-  } = (0, f.ZP)(), {
+  } = (0, _.ZP)(), {
     trackUserProfileAction: G
-  } = (0, E.KZ)(), {
+  } = (0, b.KZ)(), {
     live: B,
     stream: Z
-  } = (0, b.Z)(t.id), {
+  } = (0, y.Z)(t.id), {
     voiceChannel: F,
     voiceActivity: V
-  } = (0, y.Z)({
+  } = (0, O.Z)({
     userId: t.id,
     guildId: a
-  }), H = t.id === n.id, Y = (0, s.e7)([m.Z, h.Z], () => {
-    let e = H ? m.Z.getStatus() : h.Z.getStatus(t.id, a);
+  }), H = t.id === n.id, Y = (0, s.e7)([g.Z, m.Z], () => {
+    let e = H ? g.Z.getStatus() : m.Z.getStatus(t.id, a);
     return e === N.Sk.OFFLINE || e === N.Sk.INVISIBLE
   }), {
     voiceActivityStatusEnabled: W
-  } = (0, d.U)({
+  } = (0, f.U)({
     location: "UserProfileStackedActivity"
-  }), K = W && null == Z && null == V && null != F, z = (0, O.yi)(), q = (null == z ? true : z.interactionSource) === A.n_.ACTIVITY, X = i.useRef(null), Q = i.useRef(null), J = i.useRef(null), $ = i.useRef(null), [ee, et] = i.useReducer(k, U), {
+  }), K = W && null == Z && null == V && null != F, z = (0, v.yi)(), q = (null == z ? true : z.interactionSource) === C.n_.ACTIVITY, X = i.useRef(null), Q = i.useRef(null), J = i.useRef(null), $ = i.useRef(null), [ee, et] = i.useReducer(k, U), {
     height: en,
     animationPhase: er
-  } = ee, ei = "awaitingInput" !== er, ea = "animating" === er || "done" === er, eo = (0, p.P6)("UserProfileStackedActivity"), es = [], el = {
+  } = ee, ei = "awaitingInput" !== er, ea = "animating" === er || "done" === er, eo = (0, h.P6)("UserProfileStackedActivity"), es = [], el = {
     user: t,
     currentUser: n,
     className: P.card,
     onClose: w
   };
-  null != Z && es.push((0, r.jsx)(T.Z, D({
+  null != Z && es.push((0, r.jsx)(S.Z, D({
     stream: Z
   }, el), "stream")), B.forEach((e, t) => {
-    es.push((0, r.jsx)(I.Z, D({
+    es.push((0, r.jsx)(T.Z, D({
       activity: e
     }, el), "live-".concat(t)))
-  }), K && es.push((0, r.jsx)(S.Z, D({
+  }), K && es.push((0, r.jsx)(A.Z, D({
     voiceChannel: F
   }, el), "voice"));
-  let [ec, ...eu] = es, ed = eu.length > 0, ef = null != g && ed ? (0, r.jsx)(l.zx, {
+  let [ec, ...eu] = es, ed = eu.length > 0, ef = null != E && ed ? (0, r.jsx)(l.zx, {
     look: l.zx.Looks.BLANK,
     size: l.zx.Sizes.NONE,
     color: l.zx.Colors.TRANSPARENT,
@@ -154,8 +154,8 @@ function G(e) {
       G({
         action: "PRESS_VIEW_PROFILE",
         analyticsLocations: L
-      }), g({
-        section: A.oh.ACTIVITY
+      }), E({
+        section: C.oh.ACTIVITY
       })
     },
     children: (0, r.jsx)(c.Text, {
@@ -190,10 +190,10 @@ function G(e) {
   if ((0, u.zq)(() => {
       null != $.current && window.clearTimeout($.current)
     }), Y) return null;
-  let ep = B.some(e => e.type === C.IIU.PLAYING),
+  let ep = B.some(e => (0, d.Z)(e)),
     eh = H && eo && !ep;
-  return 0 === es.length ? eh ? (0, r.jsx)(v.Z, {}) : null : (0, r.jsxs)(r.Fragment, {
-    children: [eh && (0, r.jsx)(v.Z, {}), (0, r.jsxs)("section", {
+  return 0 === es.length ? eh ? (0, r.jsx)(I.Z, {}) : null : (0, r.jsxs)(r.Fragment, {
+    children: [eh && (0, r.jsx)(I.Z, {}), (0, r.jsxs)("section", {
       "aria-labelledby": x,
       children: [(0, r.jsx)(c.nn4, {
         children: (0, r.jsx)(c.H, {

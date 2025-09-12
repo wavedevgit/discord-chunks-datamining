@@ -13,9 +13,9 @@ let c = [];
 function d(e) {
   let {
     userId: t
-  } = e, n = (0, r.e7)([o.Z, i.default], () => {
+  } = e, n = (0, r.e7)([i.Z, o.default], () => {
     var e;
-    return o.Z.isFriend(t) || (null == (e = i.default.getUser(t)) ? true : e.isProvisional)
+    return i.Z.isFriend(t) || (null == (e = o.default.getUser(t)) ? true : e.isProvisional)
   }), d = (0, l.ML)(t);
   return a.useMemo(() => n ? c : d.map(e => {
     let {

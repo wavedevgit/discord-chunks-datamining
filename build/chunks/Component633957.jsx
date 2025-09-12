@@ -131,7 +131,10 @@ function B(e) {
   er.disabled && (d = null != (a = er.tooltip) ? a : er.text);
   let eu = Q.length,
     ed = null != (l = null == J || null == (n = J.timestamps) ? true : n.start) ? l : null == J ? true : J.created_at,
-    ef = (0, y.r)(J),
+    ef = (0, y.r)({
+      activity: J,
+      activityUsersCount: eu
+    }),
     e_ = [{
       label: en ? U.intl.string(U.t.RscU7O) : U.intl.string(U.t.VJlc0d),
       trackingArea: O.j_.PLAY,

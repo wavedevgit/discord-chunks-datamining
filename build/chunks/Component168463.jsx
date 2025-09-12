@@ -52,63 +52,70 @@ function _(e, t) {
 }
 let p = false;
 
-function h() {
-  let [e, t] = Chunk647438.useState(false), u = Chunk647438.useCallback(() => {
-    exports(true)
-  }, []), f = Chunk647438.useCallback(() => {
-    (0, Chunk481060.ZDy)(async () => {
+function h(e) {
+  let {
+    variant: t = "vertical"
+  } = e, [u, f] = i.useState(false), h = "vertical" === t, m = i.useCallback(() => {
+    f(true)
+  }, []), g = i.useCallback(() => {
+    (0, o.ZDy)(async () => {
       let {
         default: e
-      } = await require.e("82077").then(require.bind(require, 953848));
-      return n => (0, r.jsx)(e, _(d({}, n), {
-        onSubmitted: () => t(true)
+      } = await n.e("82077").then(n.bind(n, 953848));
+      return t => (0, r.jsx)(e, _(d({}, t), {
+        onSubmitted: () => f(true)
       }))
     })
   }, []);
-  return (Chunk647438.useEffect(() => () => {
-    module && (p = true)
-  }, [module]), module) ? (0, Chunk951288.jsx)(Chunk502762.Z.Overlay, {
-    className: Chunk982629.container,
-    children: (0, Chunk951288.jsx)("div", {
-      className: Chunk982629.content,
-      children: (0, Chunk951288.jsx)(Chunk481060.Text, {
+  return (i.useEffect(() => () => {
+    u && (p = true)
+  }, [u]), u) ? (0, r.jsx)(s.Z.Overlay, {
+    className: c.container,
+    children: (0, r.jsx)("div", {
+      className: h ? c.contentVertical : c.contentHorizontal,
+      children: (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
-        className: Chunk982629.description,
-        children: Chunk388032.intl.string(Chunk388032.t.X0TrNT)
+        className: c.description,
+        children: l.intl.string(l.t.X0TrNT)
       })
     })
-  }) : (0, Chunk951288.jsx)(Chunk502762.Z.Overlay, {
-    className: Chunk982629.container,
-    children: (0, Chunk951288.jsxs)("div", {
-      className: Chunk982629.content,
-      children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+  }) : (0, r.jsx)(s.Z.Overlay, {
+    className: c.container,
+    children: (0, r.jsxs)("div", {
+      className: h ? c.contentVertical : c.contentHorizontal,
+      children: [(0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
-        className: Chunk982629.description,
-        children: Chunk388032.intl.string(Chunk388032.t.Qian09)
-      }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk982629.buttons,
-        children: [(0, Chunk951288.jsx)(Chunk755721.zx, {
-          size: Chunk755721.zx.Sizes.SMALL,
-          look: Chunk755721.zx.Looks.FILLED,
-          color: Chunk755721.zx.Colors.PRIMARY,
-          onClick: u,
-          className: Chunk982629.button,
-          children: Chunk388032.intl.string(Chunk388032.t.p89ACg)
-        }), (0, Chunk951288.jsx)(Chunk755721.zx, {
-          size: Chunk755721.zx.Sizes.SMALL,
-          look: Chunk755721.zx.Looks.FILLED,
-          color: Chunk755721.zx.Colors.PRIMARY,
-          onClick: f,
-          className: Chunk982629.button,
-          children: Chunk388032.intl.string(Chunk388032.t.gm1Ven)
+        className: c.description,
+        children: l.intl.string(l.t.Qian09)
+      }), (0, r.jsxs)("div", {
+        className: h ? c.buttonsVertical : c.buttonsHorizontal,
+        children: [(0, r.jsx)(a.zx, {
+          size: a.zx.Sizes.SMALL,
+          look: a.zx.Looks.FILLED,
+          color: a.zx.Colors.PRIMARY,
+          onClick: m,
+          className: h ? c.buttonVertical : c.buttonHorizontal,
+          children: l.intl.string(l.t.p89ACg)
+        }), (0, r.jsx)(a.zx, {
+          size: a.zx.Sizes.SMALL,
+          look: a.zx.Looks.FILLED,
+          color: a.zx.Colors.PRIMARY,
+          onClick: g,
+          className: h ? c.buttonVertical : c.buttonHorizontal,
+          children: l.intl.string(l.t.gm1Ven)
         })]
       })]
     })
   })
 }
 
-function m() {
-  return p ? null : (0, Chunk951288.jsx)(h, {})
+function m(e) {
+  let {
+    variant: t
+  } = e;
+  return p ? null : (0, r.jsx)(h, {
+    variant: t
+  })
 }

@@ -54,8 +54,8 @@ function b(e) {
     guildId: n,
     textClassName: b,
     tooltipDelay: g
-  } = e, v = (0, r.e7)([c.default], () => c.default.locale), x = (0, r.e7)([s.Z], () => null != n ? s.Z.getGuild(n) : null), C = (0, r.e7)([d.ZP], () => null != n ? d.ZP.getMember(n, t) : null), h = (0, i.FI)(_.default.extractTimestamp(t), v), E = (0, i.FI)(null == C ? true : C.joinedAt, v);
-  return null == x || null == C ? (0, a.jsx)(o.Text, {
+  } = e, v = (0, r.e7)([c.default], () => c.default.locale), x = (0, r.e7)([s.Z], () => null != n ? s.Z.getGuild(n) : null), C = (0, r.e7)([d.ZP], () => null != n ? d.ZP.getMember(n, t) : null), h = (0, o.FI)(_.default.extractTimestamp(t), v), y = (0, o.FI)(null == C ? true : C.joinedAt, v);
+  return null == x || null == C ? (0, a.jsx)(i.Text, {
     variant: "text-sm/normal",
     className: b,
     children: h
@@ -63,10 +63,10 @@ function b(e) {
     className: m.memberSinceWrapper,
     children: [(0, a.jsxs)("div", {
       className: m.memberSince,
-      children: [(0, a.jsx)(o.ua7, {
+      children: [(0, a.jsx)(i.ua7, {
         text: u.intl.string(u.t.uvGmCw),
         delay: g,
-        children: e => (0, a.jsx)(o.gw7, p(f({
+        children: e => (0, a.jsx)(i.gw7, p(f({
           size: "custom",
           width: 28,
           height: 28,
@@ -74,7 +74,7 @@ function b(e) {
         }, e), {
           className: m.discordIcon
         }))
-      }), (0, a.jsx)(o.Text, {
+      }), (0, a.jsx)(i.Text, {
         variant: "text-sm/normal",
         className: b,
         children: h
@@ -83,7 +83,7 @@ function b(e) {
       className: m.divider
     }), (0, a.jsxs)("div", {
       className: m.memberSince,
-      children: [(0, a.jsx)(o.ua7, {
+      children: [(0, a.jsx)(i.ua7, {
         text: x.name,
         delay: g,
         children: e => (0, a.jsx)(l.Z, p(f({}, e), {
@@ -91,10 +91,10 @@ function b(e) {
           size: l.Z.Sizes.SMOL,
           className: m.guildIcon
         }))
-      }), (0, a.jsx)(o.Text, {
+      }), (0, a.jsx)(i.Text, {
         variant: "text-sm/normal",
         className: b,
-        children: E
+        children: y
       })]
     })]
   })

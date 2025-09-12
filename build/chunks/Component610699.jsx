@@ -287,7 +287,9 @@ function V(e) {
       }), a ? C > 0 && (0, r.jsx)(m.K, {
         activityUsers: n,
         guildId: s.id,
-        activityText: L.intl.string(L.t.BMTj29)
+        activityText: L.intl.formatToPlainString(L.t.yJj039, {
+          count: C
+        })
       }) : (0, r.jsx)(B, {
         members: c,
         membersOnline: u,
