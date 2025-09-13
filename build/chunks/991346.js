@@ -90,32 +90,32 @@ function V(e) {
     showRedesignedThirdPartyAccessSettings: n
   } = e, r = I.Z.isDeveloper, i = [{
     header: U.intl.string(U.t.cduTBA),
-    settings: n ? [k.s6.ACCOUNT, k.s6.GAMES, k.s6.PROFILE_CUSTOMIZATION, k.s6.CONTENT_SOCIAL, k.s6.DATA_PRIVACY, k.s6.PRIVACY_FAMILY_CENTER, k.s6.THIRD_PARTY_ACCESS, k.s6.SESSIONS, k.s6.CLIPS] : [k.s6.ACCOUNT, k.s6.GAMES, k.s6.PROFILE_CUSTOMIZATION, k.s6.CONTENT_SOCIAL, k.s6.DATA_PRIVACY, k.s6.PRIVACY_FAMILY_CENTER, k.s6.AUTHORIZED_APPS, k.s6.SESSIONS, k.s6.CONNECTIONS, k.s6.CLIPS]
+    settings: n ? [M.s6.ACCOUNT, M.s6.GAMES, M.s6.PROFILE_CUSTOMIZATION, M.s6.CONTENT_SOCIAL, M.s6.DATA_PRIVACY, M.s6.PRIVACY_FAMILY_CENTER, M.s6.THIRD_PARTY_ACCESS, M.s6.SESSIONS, M.s6.CLIPS] : [M.s6.ACCOUNT, M.s6.GAMES, M.s6.PROFILE_CUSTOMIZATION, M.s6.CONTENT_SOCIAL, M.s6.DATA_PRIVACY, M.s6.PRIVACY_FAMILY_CENTER, M.s6.AUTHORIZED_APPS, M.s6.SESSIONS, M.s6.CONNECTIONS, M.s6.CLIPS]
   }, {
     header: U.intl.string(U.t["4uOdGh"]),
     divider: true,
-    settings: [k.s6.PREMIUM, k.s6.GUILD_BOOSTING, k.s6.SUBSCRIPTIONS, k.s6.GIFT_INVENTORY, k.s6.BILLING]
+    settings: [M.s6.PREMIUM, M.s6.GUILD_BOOSTING, M.s6.SUBSCRIPTIONS, M.s6.GIFT_INVENTORY, M.s6.BILLING]
   }, {
     header: U.intl.string(U.t.f2n1TE),
     divider: true,
-    settings: [k.s6.APPEARANCE, k.s6.ACCESSIBILITY, k.s6.VOICE_AND_VIDEO, k.s6.POGGERMODE, k.s6.CHAT, k.s6.NOTIFICATIONS, k.s6.KEYBINDS, k.s6.LANGUAGE, k.s6.WINDOW_SETTINGS, k.s6.LINUX_SETTINGS, k.s6.STREAMER_MODE, k.s6.SETTINGS_ADVANCED]
+    settings: [M.s6.APPEARANCE, M.s6.ACCESSIBILITY, M.s6.VOICE_AND_VIDEO, M.s6.POGGERMODE, M.s6.CHAT, M.s6.NOTIFICATIONS, M.s6.KEYBINDS, M.s6.LANGUAGE, M.s6.WINDOW_SETTINGS, M.s6.LINUX_SETTINGS, M.s6.STREAMER_MODE, M.s6.SETTINGS_ADVANCED]
   }, {
     divider: true,
-    settings: [k.s6.CHANGELOG, k.s6.MERCHANDISE, k.s6.HYPESQUAD, k.s6.TOWNHALL]
+    settings: [M.s6.CHANGELOG, M.s6.MERCHANDISE, M.s6.HYPESQUAD, M.s6.TOWNHALL]
   }, {
     header: "Developer Only",
     divider: true,
-    settings: r ? [k.s6.EXPERIMENTS, k.s6.DEVELOPER_OPTIONS, k.s6.HOTSPOT_OPTIONS, k.s6.DISMISSIBLE_CONTENT_OPTIONS, k.s6.PAYMENT_FLOW_MODALS, k.s6.REVENUE_STORYBOOK, k.s6.VIRTUAL_CURRENCY_CONFIGURATION, k.s6.DESIGN_SYSTEMS, k.s6.INTL_TESTING, k.s6.SHOP_KEEPER, k.s6.WEB_SETTING_TREE_TOOL, k.s6.QUEST_PREVIEW_TOOL, k.s6.QUEST_PREVIEW_TOOL_2, k.s6.QUEST_MINOR_REWARD_CAPPING_CONFIG] : []
+    settings: r ? [M.s6.EXPERIMENTS, M.s6.DEVELOPER_OPTIONS, M.s6.HOTSPOT_OPTIONS, M.s6.DISMISSIBLE_CONTENT_OPTIONS, M.s6.PAYMENT_FLOW_MODALS, M.s6.REVENUE_STORYBOOK, M.s6.VIRTUAL_CURRENCY_CONFIGURATION, M.s6.DESIGN_SYSTEMS, M.s6.INTL_TESTING, M.s6.SHOP_KEEPER, M.s6.WEB_SETTING_TREE_TOOL, M.s6.QUEST_PREVIEW_TOOL, M.s6.QUEST_PREVIEW_TOOL_2, M.s6.QUEST_MINOR_REWARD_CAPPING_CONFIG] : []
   }, {
     divider: true,
-    settings: [k.s6.LOGOUT]
+    settings: [M.s6.LOGOUT]
   }, {
     divider: true,
-    settings: [k.s6.SOCIAL_LINKS, k.s6.CLIENT_DEBUG_INFO]
+    settings: [M.s6.SOCIAL_LINKS, M.s6.CLIENT_DEBUG_INFO]
   }], a = {
     header: U.intl.string(U.t.SmHCFR),
     divider: true,
-    settings: [k.s6.ACTIVITY_PRIVACY, k.s6.REGISTERED_GAMES, k.s6.OVERLAY]
+    settings: [M.s6.ACTIVITY_PRIVACY, M.s6.REGISTERED_GAMES, M.s6.OVERLAY]
   };
   return t ? i : i.toSpliced(3, 0, a)
 }
@@ -149,7 +149,7 @@ function Y() {
   let I = (0, Chunk725727.YO)().length,
     P = (0, Chunk160913.U)(),
     j = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getProps().searchParams),
-    k = (0, Chunk631885.gU)(),
+    M = (0, Chunk631885.gU)(),
     U = (0, Chunk168308.bC)(),
     G = (0, Chunk924557.Go)(),
     [B] = (0, Chunk706140.cv)(G ? [Chunk704215.z.CLIPS_SETTINGS_BETA_TAG] : []),
@@ -275,7 +275,7 @@ function W(e) {
 }
 
 function K(e, t, n) {
-  return e === k.s6.SEARCH_NO_RESULTS && 0 === t.size || n.has(e) || t.has(e)
+  return e === M.s6.SEARCH_NO_RESULTS && 0 === t.size || n.has(e) || t.has(e)
 }
 
 function z(e, t, n) {

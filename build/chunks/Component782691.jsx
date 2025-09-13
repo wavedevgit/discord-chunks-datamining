@@ -72,7 +72,7 @@ let S = {
       effect: t
     } = e, {
       upsertConfig: n
-    } = (0, h.n6)(), a = (0, l.e7)([p.default], () => p.default.getCurrentUser()), [O, I] = i.useState(true), C = i.useRef(null), [N, R] = i.useState(false), [P, w] = i.useState(false), [D, x] = i.useState([]), [L, j] = i.useState(S), k = i.useRef([]), [M, U] = i.useState(t.name), G = M.toLowerCase().replace(/\s+/g, "_"), B = i.useMemo(() => ({
+    } = (0, h.n6)(), a = (0, l.e7)([p.default], () => p.default.getCurrentUser()), [O, I] = i.useState(true), C = i.useRef(null), [N, R] = i.useState(false), [P, w] = i.useState(false), [D, x] = i.useState([]), [L, j] = i.useState(S), M = i.useRef([]), [k, U] = i.useState(t.name), G = k.toLowerCase().replace(/\s+/g, "_"), B = i.useMemo(() => ({
       id: A,
       skuId: A,
       title: A,
@@ -119,7 +119,7 @@ let S = {
         [e]: null
       }))
     }, K = () => JSON.stringify(T(v({}, t), {
-      name: M,
+      name: k,
       config: T(v({}, t.config), {
         effects: D,
         stillFrames: L
@@ -130,7 +130,7 @@ let S = {
       e.length > 0 && x([...e].map(e => {
         if (null != e.base64) {
           let t = (0, m.$j)(e.base64);
-          e.src = t, k.current.push(t)
+          e.src = t, M.current.push(t)
         }
         return e
       }))
@@ -140,7 +140,7 @@ let S = {
         let [t, n] = e;
         if (null != n) {
           let e = (0, m.$j)(n.base64);
-          n.src = e, k.current.push(e), j(e => T(v({}, e), {
+          n.src = e, M.current.push(e), j(e => T(v({}, e), {
             [t]: n
           }))
         }
@@ -160,16 +160,16 @@ let S = {
       } = q.current;
       e.readonly || t({
         id: e.id,
-        name: M,
+        name: k,
         config: {
           effects: D,
           stillFrames: L
         }
       })
-    }, [D, L, M]), i.useEffect(() => () => {
-      k.current.forEach(e => {
+    }, [D, L, k]), i.useEffect(() => () => {
+      M.current.forEach(e => {
         URL.revokeObjectURL(e)
-      }), k.current = []
+      }), M.current = []
     }, []), null == a) ? (0, r.jsx)("div", {}) : (0, r.jsx)("div", {
       className: E.root,
       children: (0, r.jsxs)("div", {
@@ -192,7 +192,7 @@ let S = {
               children: "Profile Effect Name"
             }), (0, r.jsx)("input", {
               type: "text",
-              value: M,
+              value: k,
               className: E.input,
               onChange: e => {
                 U(e.target.value)

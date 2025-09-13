@@ -72,8 +72,8 @@ let N = new Chunk710845.Z("ChannelStore"),
   x = null,
   L = {},
   j = {},
-  k = {},
-  M = 0,
+  M = {},
+  k = 0,
   U = {},
   G = {},
   B = new Set,
@@ -175,7 +175,7 @@ function $(e) {
 
 function ee(e) {
   if (null != e.recipients.find(e => (0, p.Z)(e))) returnfalse;
-  D[e.id] = e, e.type === I.d4z.DM && (k[e.getRecipientId()] = e.id), M += 1
+  D[e.id] = e, e.type === I.d4z.DM && (M[e.getRecipientId()] = e.id), k += 1
 }
 
 function et(e) {
@@ -203,7 +203,7 @@ function er(e) {
 }
 
 function ei(e) {
-  if (null == e.guild_id || g.Ec.has(e.type))(0, g.hv)(e.type) && (M += 1);
+  if (null == e.guild_id || g.Ec.has(e.type))(0, g.hv)(e.type) && (k += 1);
   else {
     var t;
     U[e.guild_id] = (null != (t = U[e.guild_id]) ? t : 0) + 1
@@ -212,7 +212,7 @@ function ei(e) {
 
 function ea(e) {
   let t = w;
-  for (let n of (k = {}, P = {}, w = {}, j = {}, L = {}, U = {}, V = {}, Z = {}, F = Date.now(), x = e.initialPrivateChannels, e.initialPrivateChannels.forEach(ee), e.guilds)) "partial" === n.dataMode && (a().forEach(t[n.id], en), N.fileOnly("Restoring guild channels for ".concat(n.id, " #:").concat(eL(n.id)))), eo(n);
+  for (let n of (M = {}, P = {}, w = {}, j = {}, L = {}, U = {}, V = {}, Z = {}, F = Date.now(), x = e.initialPrivateChannels, e.initialPrivateChannels.forEach(ee), e.guilds)) "partial" === n.dataMode && (a().forEach(t[n.id], en), N.fileOnly("Restoring guild channels for ".concat(n.id, " #:").concat(eL(n.id)))), eo(n);
   ew()
 }
 
@@ -267,7 +267,7 @@ function ec(e) {
 }
 
 function eu() {
-  N.fileOnly("initializeClear()"), k = {}, P = {}, w = {}, U = {}, j = {}, D = {}, V = {}, L = {}, B = new Set, Z = {}, F = Date.now()
+  N.fileOnly("initializeClear()"), M = {}, P = {}, w = {}, U = {}, j = {}, D = {}, V = {}, L = {}, B = new Set, Z = {}, F = Date.now()
 }
 
 function ed(e) {
@@ -361,7 +361,7 @@ function ey(e) {
 function eO(e) {
   if ("basicPermissions" in e || e.type !== I.d4z.DM) return;
   let t = e.getRecipientId();
-  k[t] === e.id && delete k[t]
+  M[t] === e.id && delete M[t]
 }
 
 function ev(e) {
@@ -482,19 +482,19 @@ class ex extends(r = Chunk442837.ZP.Store) {
     return a()(D).values().sort((e, t) => b.default.compare(e.lastMessageId, t.lastMessageId)).reverse().value()
   }
   getDMFromUserId(e) {
-    if (null != e) return k[e]
+    if (null != e) return M[e]
   }
   getDMChannelFromUserId(e) {
-    if (null != e) return this.getChannel(k[e])
+    if (null != e) return this.getChannel(M[e])
   }
   getMutableDMsByUserIds() {
-    return k
+    return M
   }
   getDMUserIds() {
-    return Chunk709054.default.keys(k)
+    return Chunk709054.default.keys(M)
   }
   getPrivateChannelsVersion() {
-    return M
+    return k
   }
   getGuildChannelsVersion(e) {
     var t;

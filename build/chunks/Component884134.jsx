@@ -96,7 +96,7 @@ function Y(e) {
     markAsDismissed: t
   } = e;
   return (0, r.jsx)("div", {
-    className: M.closeButton,
+    className: k.closeButton,
     children: (0, r.jsx)(u.PZ7, {
       size: "sm",
       onClick: () => {
@@ -118,7 +118,7 @@ function W() {
         size: "custom",
         height: 20,
         width: 20,
-        colorClass: M.nitroIcon
+        colorClass: k.nitroIcon
       }, e))
     }), (0, Chunk951288.jsx)(Y, {})]
   })
@@ -141,24 +141,24 @@ function z(e) {
     markAsDismissed: t
   } = e, n = (0, y.m)(L.p9.TIER_2);
   return (0, r.jsxs)("div", {
-    className: M.coachmarkHeaderContainer,
+    className: k.coachmarkHeaderContainer,
     children: [(0, r.jsxs)("div", {
-      className: M.badgeAndCloseRow,
+      className: k.badgeAndCloseRow,
       children: [(0, r.jsx)(d.lBU, {
-        text: k.intl.string(k.t.oW0eUV)
+        text: M.intl.string(M.t.oW0eUV)
       }), (0, r.jsx)(Y, {
         markAsDismissed: t
       })]
     }), (0, r.jsxs)("div", {
-      className: M.coachmarkHeaderTextContainer,
+      className: k.coachmarkHeaderTextContainer,
       children: [(0, r.jsx)(d.X6q, {
         variant: "heading-lg/extrabold",
-        children: k.intl.string(j.default["23QUzs"])
+        children: M.intl.string(j.default["23QUzs"])
       }), (0, r.jsx)(d.Text, {
-        className: M.subtitle,
+        className: k.subtitle,
         variant: "text-sm/medium",
         color: "text-muted",
-        children: k.intl.string(n ? j.default.TRCE4u : j.default["UV/Vtr"])
+        children: M.intl.string(n ? j.default.TRCE4u : j.default["UV/Vtr"])
       })]
     })]
   })
@@ -184,33 +184,33 @@ function q(e) {
     c("".concat(i, "\xb0")), (0, N.Ac)(), n(i)
   };
   return (0, r.jsxs)("div", {
-    className: o()(M.sliderContainer, M.gradientDirectionSliderContainer),
+    className: o()(k.sliderContainer, k.gradientDirectionSliderContainer),
     children: [(0, r.jsxs)("div", {
-      className: M.controlLabelContainer,
+      className: k.controlLabelContainer,
       children: [(0, r.jsx)(d.Text, {
         variant: "text-md/medium",
-        children: k.intl.string(j.default.dZkwg4)
+        children: M.intl.string(j.default.dZkwg4)
       }), (0, r.jsx)("input", {
         type: "text",
         value: l,
         onChange: e => u(e.target.value),
         placeholder: "".concat(F, "\xb0"),
-        className: M.controlLabelInput
+        className: k.controlLabelInput
       })]
     }), (0, r.jsxs)("div", {
-      className: M.sliderWrapper,
+      className: k.sliderWrapper,
       children: [(0, r.jsxs)("div", {
-        className: M.angleIndicatorOverlay,
+        className: k.angleIndicatorOverlay,
         children: [(0, r.jsx)("div", {
-          className: M.angleIndicatorDot
+          className: k.angleIndicatorDot
         }), (0, r.jsx)("div", {
-          className: M.angleIndicatorDot
+          className: k.angleIndicatorDot
         }), (0, r.jsx)("div", {
-          className: M.angleIndicatorLargeDot
+          className: k.angleIndicatorLargeDot
         }), (0, r.jsx)("div", {
-          className: M.angleIndicatorDot
+          className: k.angleIndicatorDot
         }), (0, r.jsx)("div", {
-          className: M.angleIndicatorDot
+          className: k.angleIndicatorDot
         })]
       }), (0, r.jsx)(d.iRW, {
         initialValue: t,
@@ -247,18 +247,18 @@ function X(e) {
     l("".concat(i, "%")), (0, N.PI)(), n(i)
   };
   return (0, r.jsxs)("div", {
-    className: M.sliderContainer,
+    className: k.sliderContainer,
     children: [(0, r.jsxs)("div", {
-      className: M.controlLabelContainer,
+      className: k.controlLabelContainer,
       children: [(0, r.jsx)(d.Text, {
         variant: "text-md/medium",
-        children: k.intl.string(j.default.xlXkaG)
+        children: M.intl.string(j.default.xlXkaG)
       }), (0, r.jsx)("input", {
         type: "text",
         value: s,
         onChange: e => c(e.target.value),
         placeholder: "".concat(T.BH, "%"),
-        className: M.controlLabelInput
+        className: k.controlLabelInput
       })]
     }), (0, r.jsx)(d.iRW, {
       initialValue: t,
@@ -321,12 +321,12 @@ function Q(e) {
           eventTargetRef: p
         }
       },
-      text: k.intl.string(j.default.c9MBEB),
+      text: M.intl.string(j.default.c9MBEB),
       fullWidth: true
     });
   return n ? b() : (0, r.jsx)(c.i_, {
-    title: k.intl.string(j.default.NJ9m8f),
-    body: k.intl.string(j.default["6pabtb"]),
+    title: M.intl.string(j.default.NJ9m8f),
+    body: M.intl.string(j.default["6pabtb"]),
     position: "left",
     asset: E ? (0, r.jsx)(d.$2U, {}) : true,
     forceOpen: a,
@@ -344,13 +344,13 @@ function J(e) {
     fullWidth: i
   } = e;
   return (0, r.jsx)(d.ua7, {
-    text: k.intl.string(j.default.SFyHIC),
+    text: M.intl.string(j.default.SFyHIC),
     shouldShow: n,
     children: e => (0, r.jsx)(u.zxk, Z(G({}, e), {
       variant: "primary",
       onClick: t,
       disabled: n,
-      text: k.intl.string(k.t["1Qm829"]),
+      text: M.intl.string(M.t["1Qm829"]),
       fullWidth: i
     }))
   })
@@ -362,14 +362,14 @@ function $(e) {
     canApply: n
   } = e, i = (0, y.m)(L.p9.TIER_2);
   return (0, N.hf)(i, h.Z.CUSTOM_THEMES_EDITOR_COACHMARK), (0, r.jsx)("div", {
-    className: M.coachmarkFooterContainer,
+    className: k.coachmarkFooterContainer,
     children: i ? (0, r.jsx)(J, {
       disabled: !n,
       onApply: t,
       fullWidth: true
     }) : (0, r.jsx)(b.Z, {
       subscriptionTier: L.Si.TIER_2,
-      buttonTextOverride: k.intl.string(k.t.JST6jo),
+      buttonTextOverride: M.intl.string(M.t.JST6jo),
       premiumModalAnalyticsLocation: {
         page: D.ZY5.PREMIUM_UPSELL_CUSTOM_THEMES,
         section: D.jXE.CUSTOM_THEMES_COACHMARK_FOOTER
@@ -390,8 +390,8 @@ function ee(e) {
   let d = () => {
       (0, N.Vb)(), (0, E.Q3)(l.z.CUSTOM_THEME_COACHMARK), (null == a ? true : a.from) === g.tE.SETTING ? (_.Z.open(), (0, g.Ll)()) : (null == a ? true : a.from) === g.tE.CLIENT_THEMES_EDITOR ? (0, g.XO)(g.wh.CLIENT_THEMES) : (0, g.Ll)()
     },
-    f = o()(M.footerContainer, {
-      [M.footerContainerNonPremium]: !s
+    f = o()(k.footerContainer, {
+      [k.footerContainerNonPremium]: !s
     });
   return (0, r.jsx)("div", {
     className: f,
@@ -399,7 +399,7 @@ function ee(e) {
       children: [(0, r.jsx)(P.q, {}), (0, r.jsx)(u.zxk, {
         variant: "secondary",
         onClick: d,
-        text: k.intl.string(k.t["13/7kZ"])
+        text: M.intl.string(M.t["13/7kZ"])
       }), (0, r.jsx)(J, {
         disabled: !i,
         onApply: () => {
@@ -409,7 +409,7 @@ function ee(e) {
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(b.Z, {
         subscriptionTier: L.Si.TIER_2,
-        defaultTextOverride: k.intl.string(k.t.pj0XBA),
+        defaultTextOverride: M.intl.string(M.t.pj0XBA),
         premiumModalAnalyticsLocation: {
           page: D.ZY5.PREMIUM_UPSELL_CUSTOM_THEMES,
           section: D.jXE.CUSTOM_THEMES_FOOTER
@@ -418,7 +418,7 @@ function ee(e) {
       }), (0, r.jsx)(u.zxk, {
         variant: "secondary",
         onClick: d,
-        text: c ? k.intl.string(k.t["13/7kZ"]) : k.intl.string(k.t.Olc2Ky),
+        text: c ? M.intl.string(M.t["13/7kZ"]) : M.intl.string(M.t.Olc2Ky),
         fullWidth: true
       })]
     })
@@ -461,27 +461,27 @@ function et(e) {
   }, [b]), (0, p.ZP)(() => {
     o || (0, A.lT)(S, B, L)
   }), _) ? (0, r.jsxs)("div", {
-    className: c ? M.mobileContainer : M.container,
+    className: c ? k.mobileContainer : k.container,
     "data-app-right-panel": !c,
     children: [(0, r.jsx)(d.Ttm, {
       children: (0, r.jsxs)("div", {
-        className: M.editorBody,
+        className: k.editorBody,
         children: [(0, r.jsx)(K, {
           markAsDismissed: a,
           isCoachmark: o
         }), (0, r.jsxs)("div", {
-          className: M.section,
+          className: k.section,
           children: [(0, r.jsx)(d.Text, {
             variant: "text-sm/semibold",
             color: "text-secondary",
-            children: k.intl.string(j.default.o2NfLC)
+            children: M.intl.string(j.default.o2NfLC)
           }), (0, r.jsx)(w.o, {})]
         }), (0, r.jsxs)("div", {
-          className: M.section,
+          className: k.section,
           children: [(0, r.jsx)(d.Text, {
             variant: "text-sm/semibold",
             color: "text-secondary",
-            children: k.intl.string(j.default.uSL2Gx)
+            children: M.intl.string(j.default.uSL2Gx)
           }), (0, r.jsx)(R.U, {
             onChange: e => {
               Z(e), 0 === S.length && (0, A.lT)(S, e, L)
@@ -491,11 +491,11 @@ function et(e) {
             setColors: L
           })]
         }), (0, r.jsxs)("div", {
-          className: M.section,
+          className: k.section,
           children: [(0, r.jsx)(d.Text, {
             variant: "text-sm/semibold",
             color: "text-secondary",
-            children: k.intl.string(j.default.F1t0c3)
+            children: M.intl.string(j.default.F1t0c3)
           }), S.length > 1 && (0, r.jsx)(q, {
             gradientAngle: D,
             setGradientAngle: G
@@ -506,7 +506,7 @@ function et(e) {
             }
           })]
         }), (0, r.jsxs)("div", {
-          className: M.resetButton,
+          className: k.resetButton,
           children: [(0, r.jsx)(Q, {
             isCoachmark: o,
             isMobile: c
@@ -514,7 +514,7 @@ function et(e) {
             variant: "secondary",
             onClick: W,
             disabled: y,
-            text: k.intl.string(k.t.yBZMsb),
+            text: M.intl.string(M.t.yBZMsb),
             fullWidth: true
           })]
         })]

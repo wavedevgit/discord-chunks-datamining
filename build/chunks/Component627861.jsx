@@ -129,6 +129,7 @@ function em(e) {
         onClick: () => {
           O.onClick()
         },
+        disabled: O.disabled,
         disabledReason: O.disabled ? O.tooltip : true
       })
     }
@@ -302,12 +303,12 @@ function eb(e) {
     onView: w,
     partyStatusElement: D,
     presenceActivity: x
-  } = e, j = (0, v.A)(S), k = (0, p.ye)(S), {
-    bot: M
+  } = e, j = (0, v.A)(S), M = (0, p.ye)(S), {
+    bot: k
   } = S, U = F.ZP.getApplicationIconURL({
     id: S.id,
     icon: S.icon,
-    bot: M
+    bot: k
   }), {
     staticBannerSrc: G,
     videoBannerSrc: Z,
@@ -323,10 +324,7 @@ function eb(e) {
     analyticsLocations: I
   }), ec = i.useMemo(() => null == eo ? null : {
     label: eu.intl.string(eu.t["jaYS/v"]),
-    icon: (0, r.jsx)(c.v3n, {
-      size: "refresh_sm",
-      color: "currentColor"
-    }),
+    icon: c.v3n,
     trackingArea: m.j_.CLOUD_PLAY,
     onClick: eo
   }, [eo]), {
@@ -338,7 +336,7 @@ function eb(e) {
     currentUserId: C,
     message: P,
     application: S,
-    isEmbeddedApplication: k,
+    isEmbeddedApplication: M,
     isFrameApplication: j,
     isGameLaunchable: $
   }), ep = eh(x, N, P, S), em = (0, Q.g)(N, x), eb = (0, z.L)(x, P, S, C), ey = (0, l.e7)([B.Z], () => null != x && null != x.application_id && B.Z.getState(x.application_id, es.mFx.JOIN) === es.OcF.LOADING), eO = i.useMemo(() => ef ? {
@@ -387,12 +385,13 @@ function eb(e) {
         location: es.Sbl.MESSAGE_EMBED
       })
     },
+    disabled: P.author.id === C,
     disabledReason: P.author.id === C ? eu.intl.string(eu.t.IBl8IC) : true
   } : em ? {
     label: eu.intl.string(eu.t.KC26NT),
     trackingArea: m.j_.PLAY,
     onClick: () => {},
-    disabledReason: eu.intl.string(eu.t.KC26NT)
+    disabled: true
   } : null != ec ? ec : true, [ef, ep, eb, em, ec, P.author.id, P.id, x, A.id, A.guild_id, I, e_, C, ey]), ev = i.useMemo(() => $ ? {
     label: eu.intl.string(eu.t.RscU7O),
     trackingArea: m.j_.PLAY,
@@ -409,7 +408,7 @@ function eb(e) {
         applicationId: q.id
       })
     }
-  } : null != ec ? ec : true, [S.id, $, ea, null == q ? true : q.id, ec]), eI = (0, b.G)(S), eT = i.useMemo(() => null != J ? J : null != er ? er : null != eI && k ? eI : true, [k, J, er, eI]), eS = i.useMemo(() => {
+  } : null != ec ? ec : true, [S.id, $, ea, null == q ? true : q.id, ec]), eI = (0, b.G)(S), eT = i.useMemo(() => null != J ? J : null != er ? er : null != eI && M ? eI : true, [M, J, er, eI]), eS = i.useMemo(() => {
     let e = [];
     return H || null == eO ? H && null != ev && e.push(ev) : e.push(eO), e
   }, [ev, H, eO]), eA = i.useMemo(() => eS.some(e => e.trackingArea === m.j_.CLOUD_PLAY), [eS]);
@@ -523,15 +522,15 @@ function ey(e) {
     message: c,
     hideParty: u,
     onView: d
-  } = e, f = (0, g.O)(o), _ = (0, l.e7)([w.default], () => w.default.getId()), p = (0, l.e7)([M.Z], () => {
-    if (null == c.application) return M.Z.findActivity(c.author.id, e => e.type === es.IIU.LISTENING);
+  } = e, f = (0, g.O)(o), _ = (0, l.e7)([w.default], () => w.default.getId()), p = (0, l.e7)([k.Z], () => {
+    if (null == c.application) return k.Z.findActivity(c.author.id, e => e.type === es.IIU.LISTENING);
     {
       let e = c.author.id;
-      return (0, X.H)(c) && (e = e === _ && s.isPrivate() ? s.getRecipientId() : _), M.Z.getApplicationActivity(e, c.application.id)
+      return (0, X.H)(c) && (e = e === _ && s.isPrivate() ? s.getRecipientId() : _), k.Z.getApplicationActivity(e, c.application.id)
     }
-  }, [c, s, _]), h = (0, l.e7)([k.Z, U.Z], () => {
+  }, [c, s, _]), h = (0, l.e7)([M.Z, U.Z], () => {
     var e;
-    return null != (e = k.Z.getApplicationActivity(f.id)) ? e : U.Z.getApplicationActivity(f.id, true)
+    return null != (e = M.Z.getApplicationActivity(f.id)) ? e : U.Z.getApplicationActivity(f.id, true)
   }, [f.id]), m = (0, l.Wu)([x.Z], () => {
     var e;
     return null == p || null == p.party ? [] : Array.from(null != (e = x.Z.getParty(p.party.id)) ? e : [])

@@ -4,9 +4,8 @@
 require.d(exports, {
   GF: () => s,
   KX: () => o,
-  Yu: () => l,
   j_: () => a,
-  z$: () => c
+  z$: () => l
 });
 var Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
@@ -45,14 +44,7 @@ function s(e) {
   })
 }
 
-function l(e, t) {
-  r.default.track(i.rMx.APP_EMBED_LINK_COPIED, {
-    application_id: e,
-    link_type: t
-  })
-}
-
-function c(e, t, n, a) {
+function l(e, t, n, a) {
   r.default.track(i.rMx.APP_EMBED_LINK_SENT, {
     application_id: e,
     link_type: t,

@@ -27,8 +27,6 @@ function o(e, t, n) {
         name: null != n ? n : r.ZP.getName(e.user)
       });
     case i.kG.EMBED_SYNC:
-      if (e.isCurrentUser) return a.intl.string(a.t["AOU/CQ"]);
-      if (e.syncingWithUser || e.syncingWithParty) return a.intl.string(a.t.m8CScn);
       if (e.notPlayable) return a.intl.formatToPlainString(a.t.SqJBnJ, {
         name: i.ai
       });

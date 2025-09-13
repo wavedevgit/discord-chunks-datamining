@@ -157,8 +157,8 @@ function P(e) {
     isLargeSize: x,
     pulseItemKey: L,
     allowAnimatedEmoji: j,
-    setPulseItemKey: k,
-    messageId: M,
+    setPulseItemKey: M,
+    messageId: k,
     isBurstReaction: U,
     rowPosition: G,
     inNitroLockedSection: B
@@ -170,7 +170,7 @@ function P(e) {
   } = t, X = e => {
     if (e.stopPropagation(), O.current || v.current) return;
     let n = e.altKey;
-    n && !d.ZP.getDisambiguatedEmojiContext().isFavoriteEmojiWithoutFetchingLatest(W) && k(a), (0, h.Kw)(h.v6.FAVORITE_EMOJI_TOOLTIP), b(t, {
+    n && !d.ZP.getDisambiguatedEmojiContext().isFavoriteEmojiWithoutFetchingLatest(W) && M(a), (0, h.Kw)(h.v6.FAVORITE_EMOJI_TOOLTIP), b(t, {
       isFinalSelection: !e.shiftKey,
       toggleFavorite: n
     })
@@ -211,10 +211,10 @@ function P(e) {
       onMouseEnter: t,
       onMouseLeave: n,
       onClick: e => {
-        if (null != Y.current && null != G && null != M && !e.shiftKey && null != W.name && U && !V && j) {
+        if (null != Y.current && null != G && null != k && !e.shiftKey && null != W.name && U && !V && j) {
           let e = null == W.id ? _.ZP.convertNameToSurrogate(W.name) : W.name,
             t = Y.current.getBoundingClientRect();
-          t.x = G.x + (q + 1) * K, F(N(q, f)), (0, m.U)(M, e, W.id, t)
+          t.x = G.x + (q + 1) * K, F(N(q, f)), (0, m.U)(k, e, W.id, t)
         }
         X(e)
       },

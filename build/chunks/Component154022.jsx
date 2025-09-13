@@ -162,7 +162,7 @@ function eo(e) {
         variant: "text-md/normal",
         children: W.intl.format(W.t.DHpTjY, {
           onAppearanceClick() {
-            a(M.n.APPEARANCE_PANEL, {
+            a(k.n.APPEARANCE_PANEL, {
               section: V.oAB.APPEARANCE
             })
           }
@@ -520,7 +520,7 @@ function eg() {
   let e = Chunk695346.Wp.useSetting(),
     t = (0, Chunk442837.e7)([Chunk263937.Z], () => Chunk263937.Z.getAppliedOverrideReasonKey("animateStickers")),
     n = Chunk647438.useCallback(e => {
-      k.Wp.updateSetting(e.value)
+      M.Wp.updateSetting(e.value)
     }, []);
   return (0, Chunk951288.jsxs)(Chunk481060.xJW, {
     className: Chunk197571.marginTop20,
@@ -577,7 +577,7 @@ function eE() {
             location: {
               section: V.jXE.SETTINGS_ACCESSIBILITY
             }
-          }), k.dN.updateSetting(e)
+          }), M.dN.updateSetting(e)
         },
         children: Chunk388032.intl.string(Chunk388032.t.TZ2hZG)
       })

@@ -7,7 +7,7 @@ require.d(exports, {
   JC: () => j,
   NU: () => G,
   Nk: () => L,
-  R9: () => M,
+  R9: () => k,
   RN: () => F,
   Wl: () => x,
   XO: () => D,
@@ -126,22 +126,22 @@ function j(e, t, n, r) {
   return w(e, t.id, i)
 }
 
-function k(e) {
+function M(e) {
   return i.useCallback(t => {
     t.preventDefault(), t.stopPropagation(), e()
   }, [e])
 }
 
-function M(e, t) {
-  return k(P("avatarProfile", e, t))
+function k(e, t) {
+  return M(P("avatarProfile", e, t))
 }
 
 function U(e, t) {
-  return k(P("referencedAvatarProfile", e, t))
+  return M(P("referencedAvatarProfile", e, t))
 }
 
 function G(e, t) {
-  return k(P("interactionAvatarProfile", e, t))
+  return M(P("interactionAvatarProfile", e, t))
 }
 
 function B(e, t, o, s) {

@@ -67,70 +67,62 @@ function C(e, t) {
 }
 
 function N(e) {
-  let t, {
-      currentUserId: T,
-      message: A,
-      application: N,
-      channel: R,
-      analyticsLocations: P,
-      onView: w
-    } = e,
-    {
-      staticBannerSrc: D,
-      videoBannerSrc: x,
-      bannerAspectRatio: L
-    } = (0, d.E)(N),
-    j = g.ZP.getApplicationIconURL({
-      id: N.id,
-      icon: N.icon
-    }),
-    k = (0, i.e7)([f.ZP, h.Z], () => f.ZP.getVisibleRunningGames().find(e => {
-      let {
-        id: t
-      } = e;
-      if (t === N.id) returntrue;
-      let n = h.Z.getGameByApplication(N);
-      return null != n && t === n.id
-    })),
-    M = (0, i.e7)([p.Z], () => p.Z.getCurrentUserActiveStream()),
-    U = (0, i.e7)([m.Z], () => m.Z.getChannelId()),
-    G = b.default.extractTimestamp(A.id) + y.O < Date.now(),
-    B = (0, r.jsx)(r.Fragment, {
-      children: (0, o._0)(A, R, T)
-    }),
-    {
-      newestAnalyticsLocation: Z
-    } = (0, l.ZP)(P, s.Z.REQUEST_TO_STREAM_INVITE_EMBED);
-  return G ? t = I.intl.string(v.default.u4QmWl) : null != M ? t = I.intl.string(v.default.P0wwmJ) : U !== R.id ? t = I.intl.string(v.default.qRXatr) : null == k && (t = I.intl.string(v.default["43zohI"])), (0, r.jsx)(c.W, {
+  let {
+    currentUserId: t,
+    message: T,
+    application: A,
+    channel: N,
+    analyticsLocations: R,
+    onView: P
+  } = e, {
+    staticBannerSrc: w,
+    videoBannerSrc: D,
+    bannerAspectRatio: x
+  } = (0, d.E)(A), L = g.ZP.getApplicationIconURL({
+    id: A.id,
+    icon: A.icon
+  }), j = (0, i.e7)([f.ZP, h.Z], () => f.ZP.getVisibleRunningGames().find(e => {
+    let {
+      id: t
+    } = e;
+    if (t === A.id) returntrue;
+    let n = h.Z.getGameByApplication(A);
+    return null != n && t === n.id
+  })), M = (0, i.e7)([p.Z], () => p.Z.getCurrentUserActiveStream()), k = (0, i.e7)([m.Z], () => m.Z.getChannelId()), U = b.default.extractTimestamp(T.id) + y.O < Date.now(), G = (0, r.jsx)(r.Fragment, {
+    children: (0, o._0)(T, N, t)
+  }), {
+    newestAnalyticsLocation: B
+  } = (0, l.ZP)(R, s.Z.REQUEST_TO_STREAM_INVITE_EMBED), Z = I.intl.string(v.default["5+172d"]), F = false;
+  return U ? (Z = I.intl.string(v.default.u4QmWl), F = true) : null != M ? (Z = I.intl.string(v.default.P0wwmJ), F = true) : k !== N.id ? (Z = I.intl.string(v.default.qRXatr), F = true) : null == j && (Z = I.intl.string(v.default["43zohI"]), F = true), (0, r.jsx)(c.W, {
     header: I.intl.string(v.default.nAyuPj),
-    title: N.name,
-    staticBannerSrc: D,
-    videoBannerSrc: x,
-    bannerAspectRatio: L,
-    iconSrc: null != j ? j : true,
-    info: B,
-    actions: A.author.id === T ? [] : [{
-      label: I.intl.string(v.default["5+172d"]),
+    title: A.name,
+    staticBannerSrc: w,
+    videoBannerSrc: D,
+    bannerAspectRatio: x,
+    iconSrc: null != L ? L : true,
+    info: G,
+    actions: T.author.id === t ? [] : [{
+      label: Z,
       trackingArea: u.j_.STREAM,
-      disabledReason: t,
+      disabled: F,
       onClick: () => {
-        null != k && ((0, E.isWindows)() ? (0, _.Z)(k.pid) : (0, a.ZDy)(async () => {
+        null != j && ((0, E.isWindows)() ? (0, _.Z)(j.pid) : (0, a.ZDy)(async () => {
           let {
             default: e
           } = await Promise.all([n.e("38697"), n.e("46746"), n.e("39173")]).then(n.bind(n, 60594));
           return t => (0, r.jsx)(e, C(S({}, t), {
-            analyticsLocation: Z
+            analyticsLocation: B
           }))
         }))
       }
     }],
     trackingConfig: {
-      id: N.id,
+      id: A.id,
       linkType: O.U.REQUEST_TO_STREAM,
-      guildId: R.guild_id,
-      channelId: R.id,
-      messageId: A.id,
-      onView: w
+      guildId: N.guild_id,
+      channelId: N.id,
+      messageId: T.id,
+      onView: P
     }
   })
 }

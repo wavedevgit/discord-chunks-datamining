@@ -304,7 +304,7 @@ async function ec(e) {
           null == l || l(), e()
         },
         onFailure: (e, n, a, o) => {
-          null == l || l(), M.default.track($.rMx.ACTIVITY_INTERACTION_CALLBACK_ERROR, {
+          null == l || l(), k.default.track($.rMx.ACTIVITY_INTERACTION_CALLBACK_ERROR, {
             channel_id: r,
             guild_id: i,
             application_id: t,
@@ -362,7 +362,7 @@ async function eu(e) {
     ChannelStore: D.Z,
     GuildStore: x.Z,
     PermissionStore: L.Z,
-    VoiceStateStore: k.Z
+    VoiceStateStore: M.Z
   });
   if (p !== K.jy.CAN_LAUNCH) {
     let e = 4;

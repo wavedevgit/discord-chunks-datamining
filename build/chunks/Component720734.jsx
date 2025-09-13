@@ -699,7 +699,7 @@ class tS extends Chunk647438.PureComponent {
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           className: ti.panelTitleContainer,
-          children: (0, r.jsx)(e6.Z, {
+          children: (0, r.jsx)(e5.Z, {
             className: o()({
               [ti.withDisplayNameStyles]: i
             }),
@@ -713,7 +713,7 @@ class tS extends Chunk647438.PureComponent {
           })
         }), (0, r.jsx)("div", {
           className: ti.panelSubtextContainer,
-          children: (0, r.jsx)(e5.Z, {
+          children: (0, r.jsx)(e6.Z, {
             children: this.renderStatus()
           })
         })]
@@ -869,8 +869,8 @@ function tN() {
     P = (0, Chunk481060.s9z)(Chunk481060.JQI) || Chunk570928 || Chunk374023.s.isDisallowPopupsSet() || Chunk963056,
     w = (0, Chunk332473.b)(),
     j = (0, Chunk442837.e7)([Chunk258609.Z], () => null != Chunk258609.Z.getAwaitingRemoteSessionInfo()),
-    k = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
-    M = Chunk74538.ZP.canUsePremiumGuildMemberProfile(exports),
+    M = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
+    k = Chunk74538.ZP.canUsePremiumGuildMemberProfile(exports),
     U = (null == exports || null == (e = exports.avatarDecoration) ? true : module.skuId) === Chunk215023.rL,
     {
       voiceActivityStatusEnabled: G
@@ -1076,7 +1076,7 @@ function tP(e) {
       play: V
     } = C,
     H = a || s ? m.v0G : B,
-    Y = (0, k.Z)(n, a, s, l),
+    Y = (0, M.Z)(n, a, s, l),
     W = x ? tr.intl.string(tr.t.ARRV6u) : null;
   t = O ? tr.intl.string(tr.t["29gnR0"]) : null != W ? (0, r.jsxs)("div", {
     className: ti.tooltipWithSubtext,
@@ -1164,7 +1164,7 @@ function tP(e) {
             maybeRenderInputMeter: true,
             renderInputVolume: true,
             renderSettingsButton: true
-          }) : (0, r.jsx)(M.default, {
+          }) : (0, r.jsx)(k.default, {
             onInteraction: (0, F.u)("AudioDeviceMenu", N.Z.ACCOUNT),
             onClose: t,
             renderInputDevices: true,

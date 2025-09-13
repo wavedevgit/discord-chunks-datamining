@@ -139,14 +139,14 @@ function et(e) {
   } = (0, Z.Z)({
     stepConfigs: X,
     breadcrumbs: $
-  }), [ej, ek] = (0, U.Z)(eP), {
-    paymentError: eM,
+  }), [ej, eM] = (0, U.Z)(eP), {
+    paymentError: ek,
     paymentAuthenticationState: eU
-  } = (0, k.Z)(), {
+  } = (0, M.Z)(), {
     purchaseError: eG,
     purchaseErrorBlockRef: eB,
     setPurchaseError: eZ
-  } = (0, M.Z)(), eF = (0, u.Z)(() => {
+  } = (0, k.Z)(), eF = (0, u.Z)(() => {
     let e = null != A ? A : (0, l.Z)();
     return R.Z.addBreadcrumb({
       message: "Checkout session ID: ".concat(e)
@@ -161,7 +161,7 @@ function et(e) {
     setSelectedSkuId: eW,
     setSelectedPlanId: eK,
     setSelectedPlanNotification: ez
-  } = (0, P.Z)(), [eq, eX] = (0, c.Wu)([v.Z], () => [v.Z.purchaseTokenAuthState, v.Z.purchaseTokenHash]), [eQ, eJ, e$, e0] = (0, c.Wu)([V.Z], () => [V.Z.browserCheckoutState, V.Z.loadId, V.Z.skuId, V.Z.planId]), [e1, e2] = i.useState(null), [e3, e4] = i.useState(null), [e8, e5] = i.useState(null), [e6, e7] = i.useState(null), [e9, te] = i.useState(null), [tt, tn] = i.useState(true), [tr, ti] = i.useState([]), [ta, to] = i.useState([]), ts = i.useMemo(() => null == eH || (0, N.PV)(eH.id), [eH]), tl = i.useRef(null != z ? z.planId : null);
+  } = (0, P.Z)(), [eq, eX] = (0, c.Wu)([v.Z], () => [v.Z.purchaseTokenAuthState, v.Z.purchaseTokenHash]), [eQ, eJ, e$, e0] = (0, c.Wu)([V.Z], () => [V.Z.browserCheckoutState, V.Z.loadId, V.Z.skuId, V.Z.planId]), [e1, e2] = i.useState(null), [e3, e4] = i.useState(null), [e8, e6] = i.useState(null), [e5, e7] = i.useState(null), [e9, te] = i.useState(null), [tt, tn] = i.useState(true), [tr, ti] = i.useState([]), [ta, to] = i.useState([]), ts = i.useMemo(() => null == eH || (0, N.PV)(eH.id), [eH]), tl = i.useRef(null != z ? z.planId : null);
   i.useEffect(() => {
     null == tl.current && null != z && (tl.current = z.planId)
   }, [z]);
@@ -224,12 +224,12 @@ function et(e) {
       isEligible: tL
     } = (0, E.Q1)(),
     tj = tL && eV === W.Si.TIER_2,
-    tk = (0, w.uH)({
+    tM = (0, w.uH)({
       location: "PaymentModal"
     }),
-    tM = i.useMemo(() => {
-      if (tk) return H.cL.APPLE_PAYMENT_LINK
-    }, [tk]);
+    tk = i.useMemo(() => {
+      if (tM) return H.cL.APPLE_PAYMENT_LINK
+    }, [tM]);
   return (0, r.jsx)(J.Provider, {
     value: Q(q({
       stripe: eu,
@@ -239,7 +239,7 @@ function et(e) {
       activeSubscription: z,
       hasFetchedSubscriptions: ef,
       hasFetchedSubscriptionPlans: ev,
-      updatedSubscription: e6,
+      updatedSubscription: e5,
       setUpdatedSubscription: e7,
       subscriptionMetadataRequest: e9,
       setSubscriptionMetadataRequest: te,
@@ -262,9 +262,9 @@ function et(e) {
       breadcrumbs: ex,
       previousStepRef: eL,
       purchaseState: ej,
-      setPurchaseState: ek,
+      setPurchaseState: eM,
       paymentAuthenticationState: eU,
-      paymentError: eM,
+      paymentError: ek,
       purchaseError: eG,
       setPurchaseError: eZ,
       purchasePreviewError: tg,
@@ -281,7 +281,7 @@ function et(e) {
       footerNode: e3,
       setFooterNode: e4,
       modalOverlayNode: e8,
-      setModalOverlayNode: e5,
+      setModalOverlayNode: e6,
       selectedSkuId: eV,
       selectedSku: th,
       selectedStoreListing: tA,
@@ -319,7 +319,7 @@ function et(e) {
       isDisplayingWowMomentConfirmation: tw,
       premiumBrandRefreshBackgroundClassName: tD,
       wasTier2PremiumBeforePurchase: ec,
-      customCheckoutFlow: tM,
+      customCheckoutFlow: tk,
       shouldShowSeptemberMarketingMomentBanner: tj
     }),
     children: (0, r.jsx)(a.Elements, {

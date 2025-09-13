@@ -102,7 +102,7 @@ function W(e) {
             fractionalPremiumInfo: a
           })
         })]
-      }), s && (0, r.jsx)(k.Z, {
+      }), s && (0, r.jsx)(M.Z, {
         color: p.zx.Colors.BRAND,
         onClick: () => m.Z.open(Z.oAB.GUILD_BOOSTING),
         children: V.intl.string(V.t["NQ5g/f"])
@@ -281,11 +281,11 @@ function J(e) {
   if (null == m || null == O) return (0, r.jsx)(h.$jN, {});
   let C = A ? (0, w.Yi)(O) : null,
     D = null != C || null != T && (T.discountId === B.dT || T.discountId === B.dB),
-    k = A && (S && null != I || !S && D);
+    M = A && (S && null != I || !S && D);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: H.subscriptionRows,
-      children: [k ? (0, r.jsx)(j.Z, {
+      children: [M ? (0, r.jsx)(j.Z, {
         subscription: t,
         invoicePreview: O,
         paymentSource: i,
@@ -294,7 +294,7 @@ function J(e) {
         discountInfo: T,
         isLoading: a,
         analyticsLocation: n
-      }) : (0, r.jsx)(M.Z, {
+      }) : (0, r.jsx)(k.Z, {
         subscription: t,
         renewalInvoicePreview: m,
         paymentSource: i,
@@ -397,7 +397,7 @@ function et(e) {
   }), y = null == o ? true : o.invalid, O = (0, f.e7)([S.default], () => {
     var e;
     return null == (e = S.default.getCurrentUser()) ? true : e.hasFreePremium()
-  }), v = u()(i.currentPeriodEnd), I = null != i.paymentSourceId, A = null != (t = null == b ? true : b.total) ? t : 0, C = !I && A > 0 && (7 >= v.diff(u()(), "days") || i.status === Z.O0b.PAST_DUE) && !O && !i.isPurchasedExternally, N = y && i.status === Z.O0b.PAST_DUE && !O && !i.isPurchasedExternally, R = (0, D.U)(), w = !O && R, L = (null == i ? true : i.status) === Z.O0b.PAST_DUE, j = L ? u()().diff(u()(i.currentPeriodStart), "days") : 0, [k] = (0, P.Ox)({
+  }), v = u()(i.currentPeriodEnd), I = null != i.paymentSourceId, A = null != (t = null == b ? true : b.total) ? t : 0, C = !I && A > 0 && (7 >= v.diff(u()(), "days") || i.status === Z.O0b.PAST_DUE) && !O && !i.isPurchasedExternally, N = y && i.status === Z.O0b.PAST_DUE && !O && !i.isPurchasedExternally, R = (0, D.U)(), w = !O && R, L = (null == i ? true : i.status) === Z.O0b.PAST_DUE, j = L ? u()().diff(u()(i.currentPeriodStart), "days") : 0, [M] = (0, P.Ox)({
     subscriptionId: i.id,
     preventFetch: !(w || L)
   });
@@ -413,10 +413,10 @@ function et(e) {
         tag: "h1",
         children: V.intl.string(V.t["/gs+Pz"])
       }),
-      children: [C ? (0, r.jsx)(K, {}) : null, N ? (0, r.jsx)(z, {}) : null, w && null != k ? (0, r.jsx)(q, {
+      children: [C ? (0, r.jsx)(K, {}) : null, N ? (0, r.jsx)(z, {}) : null, w && null != M ? (0, r.jsx)(q, {
         daysPastDue: j,
         subscription: i,
-        openInvoiceId: k.id
+        openInvoiceId: M.id
       }) : null, n, (0, r.jsx)("div", {
         children: (0, r.jsx)("p", {
           className: H.sectionDescription,
@@ -435,7 +435,7 @@ function et(e) {
             showInvalidPaymentMethod: N,
             fetchedCurrentInvoicePreview: m,
             fetchedRenewalInvoicePreview: b,
-            fetchedOpenInvoice: k
+            fetchedOpenInvoice: M
           })
         }), p.map((e, t) => (0, r.jsxs)("div", {
           className: H.dupSubscriptionRow,

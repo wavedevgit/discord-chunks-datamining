@@ -79,11 +79,11 @@ var Chunk260674 = require("./260674.js"),
     var L = f ? String(n).replace(/\./g, "%2E") : String(n),
       j = o && l(C) && 1 === C.length ? L + "[]" : L;
     if (s && l(C) && 0 === C.length) return j + "[]";
-    for (var k = 0; k < A.length; ++k) {
-      var M = A[k],
-        U = "object" == typeof M && M && true !== M.value ? M.value : C[M];
+    for (var M = 0; M < A.length; ++M) {
+      var k = A[M],
+        U = "object" == typeof k && k && true !== k.value ? k.value : C[k];
       if (!d || null !== U) {
-        var G = b && f ? String(M).replace(/\./g, "%2E") : String(M),
+        var G = b && f ? String(k).replace(/\./g, "%2E") : String(k),
           B = l(C) ? "function" == typeof a ? a(j, G) : j : j + (b ? "." + G : "[" + G + "]");
         S.set(t, R);
         var Z = r();

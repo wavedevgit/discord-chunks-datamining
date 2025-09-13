@@ -465,10 +465,10 @@ var t = function() {
               }
               var j = f[o(r, v) & y];
               v += 15 & j;
-              var k = j >>> 4,
-                M = e.h[k],
-                U = (M >>> 4) + a(r, v, 15 & M);
-              for (v += 15 & M, I && (u = s(u, O + 131072)); O < x;) u[O] = u[O++ - U], u[O] = u[O++ - U], u[O] = u[O++ - U], u[O] = u[O++ - U];
+              var M = j >>> 4,
+                k = e.h[M],
+                U = (k >>> 4) + a(r, v, 15 & k);
+              for (v += 15 & k, I && (u = s(u, O + 131072)); O < x;) u[O] = u[O++ - U], u[O] = u[O++ - U], u[O] = u[O++ - U], u[O] = u[O++ - U];
               O = x
             }
           }
@@ -781,13 +781,13 @@ var t = function() {
           w = new Uint8Array(b);
         S.push(w);
         for (var y = 0; y < b; y++) {
-          var k = L[y];
-          if (0 != y && k == L[y - 1]) w[y] = w[y - 1];
-          else if (y > j && k == L[y - j]) w[y] = w[y - j];
+          var M = L[y];
+          if (0 != y && M == L[y - 1]) w[y] = w[y - 1];
+          else if (y > j && M == L[y - j]) w[y] = w[y - j];
           else {
-            var M = I[k];
-            if (null == M && (I[k] = M = T.length, T.push(k), T.length >= 300)) break;
-            w[y] = M
+            var k = I[M];
+            if (null == k && (I[M] = k = T.length, T.push(M), T.length >= 300)) break;
+            w[y] = k
           }
         }
       }
@@ -879,15 +879,15 @@ var t = function() {
         if (1 != x.blend) {
           var L = x.rect,
             j = s[l - 1].rect,
-            k = Math.min(L.x, j.x),
-            M = Math.min(L.y, j.y),
+            M = Math.min(L.x, j.x),
+            k = Math.min(L.y, j.y),
             U = Math.max(L.x + L.width, j.x + j.width),
             G = Math.max(L.y + L.height, j.y + j.height),
             B = {
-              x: k,
-              y: M,
-              width: U - k,
-              height: G - M
+              x: M,
+              y: k,
+              width: U - M,
+              height: G - k
             };
           s[l - 1].dispose = 1, l - 1 != 0 && p(t, n, r, s, l - 1, B, a), p(t, n, r, s, l, B, a)
         }

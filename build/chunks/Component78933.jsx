@@ -182,7 +182,7 @@ function ec(e) {
       location: "UserProfileAccountPopout"
     }),
     ej = (null == eu ? true : eu.widgets) != null && eu.widgets.length > 0,
-    ek = eL && ej;
+    eM = eL && ej;
   return (0, r.jsx)(f.Gt, {
     value: ed,
     children: (0, r.jsx)(b.Mt, {
@@ -243,12 +243,12 @@ function ec(e) {
                   isHovering: ep
                 })]
               })
-            }), (0, r.jsx)(M.Z, {
+            }), (0, r.jsx)(k.Z, {
               user: t,
               bio: null == eu ? true : eu.bio,
               hidePersonalInformation: eb,
               onClose: n
-            }), ek && (0, r.jsx)(k.Z, {
+            }), eM && (0, r.jsx)(M.Z, {
               widgets: eu.gameWidgets,
               onClick: () => {
                 n(), ex({

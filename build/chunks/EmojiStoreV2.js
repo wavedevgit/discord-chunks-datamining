@@ -297,7 +297,7 @@ class e_ {
     if (this.ensureDisambiguated(), null == this.topEmojis) {
       var t;
       let n = ei.get(e),
-        r = k.Z.getTopEmojiIdsByGuildId(e);
+        r = M.Z.getTopEmojiIdsByGuildId(e);
       if (null == n && null == r) return Q;
       let i = (null != (t = null == n ? true : n.emojiIds) ? t : r).map(e => {
           var t;
@@ -527,7 +527,7 @@ function ej(e) {
   return r && (3 === $ || 1 === $) && eh.compute(), r
 }
 
-function ek(e) {
+function eM(e) {
   let {
     guildId: t,
     role: {
@@ -541,7 +541,7 @@ function ek(e) {
   }
 }
 
-function eM(e) {
+function ek(e) {
   let {
     guildId: t
   } = e, n = new Set(K.expandedSectionsByGuildIds);
@@ -569,7 +569,7 @@ function eG(e) {
 }
 class eB extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(f.Z, T.Z, I.ZP, A.Z, O.default, b.Z, k.Z, N.default, m.Z, S.Z), null != e && (null != e.pendingUsages && (K.pendingUsages = e.pendingUsages), null != e.emojiReactionPendingUsages && (K.emojiReactionPendingUsages = e.emojiReactionPendingUsages), null != e.expandedSectionsByGuildIds && (K.expandedSectionsByGuildIds = new Set(e.expandedSectionsByGuildIds))), this.syncWith([v.Z], ew)
+    this.waitFor(f.Z, T.Z, I.ZP, A.Z, O.default, b.Z, M.Z, N.default, m.Z, S.Z), null != e && (null != e.pendingUsages && (K.pendingUsages = e.pendingUsages), null != e.emojiReactionPendingUsages && (K.emojiReactionPendingUsages = e.emojiReactionPendingUsages), null != e.expandedSectionsByGuildIds && (K.expandedSectionsByGuildIds = new Set(e.expandedSectionsByGuildIds))), this.syncWith([v.Z], ew)
   }
   getState() {
     return K
@@ -722,9 +722,9 @@ let eZ = new eB(Chunk570140.Z, {
   MESSAGE_REACTION_ADD: eR,
   EMOJI_TRACK_USAGE: ex,
   USER_SETTINGS_PROTO_UPDATE: eD,
-  GUILD_ROLE_CREATE: ek,
-  GUILD_ROLE_UPDATE: ek,
+  GUILD_ROLE_CREATE: eM,
+  GUILD_ROLE_UPDATE: eM,
   TOP_EMOJIS_FETCH_SUCCESS: eU,
   EMOJI_AUTOSUGGESTION_UPDATE: eG,
-  TOGGLE_GUILD_EXPANDED_STATE: eM
+  TOGGLE_GUILD_EXPANDED_STATE: ek
 })

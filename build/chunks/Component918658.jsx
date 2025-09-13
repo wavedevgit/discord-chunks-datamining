@@ -2,8 +2,8 @@
 /** chunk id: 918658, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k,
-  d: () => M
+  Z: () => M,
+  d: () => k
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -81,7 +81,7 @@ function j(e) {
   return e === A.pNK.ROLE_SUBSCRIPTIONS ? P.intl.string(P.t.hZUCzc) : P.intl.string(P.t["/djIh4"])
 }
 
-function k() {
+function M() {
   let e = Chunk647438.useRef(null),
     t = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
     n = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getChannelId(exports)),
@@ -97,8 +97,8 @@ function k() {
       isServerShopPreview: null != exports && Chunk160404.Z.isViewingServerShop(exports)
     }));
   if (null == Chunk120356 || null == exports) return null;
-  let k = L(o),
-    M = j(o),
+  let M = L(o),
+    k = j(o),
     U = require === Chunk176505.oC.GUILD_ONBOARDING,
     G = e => {
       let {
@@ -119,7 +119,7 @@ function k() {
         height: 16,
         direction: Chunk671533.Z.Directions.LEFT,
         className: Chunk829675.backArrow
-      }), k]
+      }), M]
     }), U && Chunk755721 ? (0, Chunk951288.jsx)("div", {
       className: Chunk829675.noticeContents,
       children: (0, Chunk951288.jsx)("div", {
@@ -148,7 +148,7 @@ function k() {
           return (0, r.jsxs)(D, {
             onClick: n,
             buttonRef: e,
-            children: [M, (0, r.jsx)(O.Z, {
+            children: [k, (0, r.jsx)(O.Z, {
               width: 16,
               height: 16,
               direction: O.Z.Directions.DOWN,
@@ -182,7 +182,7 @@ function k() {
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     guildId: t
   } = e;
@@ -191,6 +191,6 @@ function M(e) {
       [w.windows]: (0, v.isWindows)(),
       [w.osx]: (0, v.isMac)()
     }),
-    children: (0, r.jsx)(k, {})
+    children: (0, r.jsx)(M, {})
   }) : null
 }

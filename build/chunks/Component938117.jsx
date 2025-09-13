@@ -77,20 +77,20 @@ function S(e) {
   let x = (0, a.cj)([d.Z], () => D ? d.Z.videoFilterAssets : {}),
     L = i.useMemo(() => Object.values(x).filter(e => e.type === m.xV.BACKGROUND), [x]),
     j = (0, s.O)(),
-    k = {
+    M = {
       isVideoBackgroundSupported: w,
       onSelectBackgroundOption: I,
       selectedBackgroundOption: O
     },
-    M = i.useRef(k);
+    k = i.useRef(M);
   i.useEffect(() => {
-    M.current = k
+    k.current = M
   }), i.useEffect(() => {
     let {
       isVideoBackgroundSupported: e,
       onSelectBackgroundOption: t,
       selectedBackgroundOption: n
-    } = M.current;
+    } = k.current;
     e ? (0, _.FU)(n, S, {
       track: false
     }).catch(() => t(null)) : null != n && t(null)

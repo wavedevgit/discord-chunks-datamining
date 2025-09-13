@@ -38,13 +38,13 @@ let v = e => {
     [P, w] = i.useState(false),
     [D, x] = i.useState(n),
     [L, j] = i.useState(null != t ? t : T.slice(0, 1)),
-    k = i.useMemo(() => null == L ? [] : L.map(e => {
+    M = i.useMemo(() => null == L ? [] : L.map(e => {
       let {
         premiumGuildSubscription: t
       } = e;
       return f.Z.getGuild(null == t ? true : t.guildId)
     }).filter(e => null != e), [L]),
-    M = i.useMemo(() => {
+    k = i.useMemo(() => {
       var e;
       return (null == L || null == (e = L[0]) ? true : e.premiumGuildSubscription) != null
     }, [L]),
@@ -94,14 +94,14 @@ let v = e => {
           x(e), R("CONFIRM")
         },
         transitionState: v,
-        isTransfer: M,
-        selectedSlotGuilds: k
+        isTransfer: k,
+        selectedSlotGuilds: M
       }),
       CONFIRM() {
         if (null == D) return null;
         let e = L.filter(e => (0, h.tl)(e)).length,
           t = L.length,
-          n = k.length,
+          n = M.length,
           i = "CONFIRM" === S[0] ? U : () => R(S[S.indexOf(N) - 1]),
           a = async () => {
             if (null != D && (null == L ? true : L.length) !== 0) {
@@ -122,7 +122,7 @@ let v = e => {
                 w(true)
               }
             }
-          }, s = M ? y.intl.string(y.t["PR0n//"]) : y.intl.string(y.t["7KP/fH"]);
+          }, s = k ? y.intl.string(y.t["PR0n//"]) : y.intl.string(y.t["7KP/fH"]);
         return (0, r.jsx)(l.Modal, {
           transitionState: v,
           onClose: U,
@@ -134,7 +134,7 @@ let v = e => {
             onClick: i
           }, {
             variant: "primary",
-            text: M ? y.intl.formatToPlainString(y.t.Oh6mxc, {
+            text: k ? y.intl.formatToPlainString(y.t.Oh6mxc, {
               slotCount: t
             }) : y.intl.formatToPlainString(y.t["ZU5x5+"], {
               slotCount: t
@@ -143,8 +143,8 @@ let v = e => {
             loading: A,
             disabled: A
           }],
-          children: M ? (0, r.jsx)(m.Z.TransferBody, {
-            fromGuilds: k,
+          children: k ? (0, r.jsx)(m.Z.TransferBody, {
+            fromGuilds: M,
             toGuild: D,
             blurb: y.intl.formatToPlainString(y.t.SSA2lp, {
               slotCount: t,
@@ -171,7 +171,7 @@ let v = e => {
         })
       },
       SUCCESS() {
-        let e = M ? y.intl.string(y.t["PR0n//"]) : y.intl.string(y.t["7KP/fH"]);
+        let e = k ? y.intl.string(y.t["PR0n//"]) : y.intl.string(y.t["7KP/fH"]);
         return (0, r.jsx)(l.Modal, {
           transitionState: v,
           onClose: U,
@@ -180,7 +180,7 @@ let v = e => {
           actions: [],
           children: (0, r.jsx)(E.R7, {
             guild: D,
-            isTransfer: M,
+            isTransfer: k,
             guildBoostQuantity: L.length,
             onClose: U,
             didPurchaseOnFractionalPremium: false

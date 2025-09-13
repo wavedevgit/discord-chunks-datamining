@@ -73,8 +73,8 @@ let R = new Chunk710845.Z("GuildMemberStore"),
   x = {},
   L = {},
   j = false,
-  k = 0,
   M = 0,
+  k = 0,
   U = {},
   G = {},
   B = {
@@ -100,7 +100,7 @@ function F(e, t) {
 }
 
 function V(e) {
-  k += 1, U[e] = k
+  M += 1, U[e] = M
 }
 
 function H(e) {
@@ -440,7 +440,7 @@ function ep(e, t) {
       unusualDMActivityUntil: null != (i = t.unusual_dm_activity_until) ? i : null == a ? true : a.unusualDMActivityUntil,
       collectibles: (0, d.Xm)(t.collectibles)
     }), Z(e, n[t.user.id])
-  }), M++, true)
+  }), k++, true)
 }
 
 function eh(e) {
@@ -479,7 +479,7 @@ function eE(e) {
 function eb(e, t) {
   let n = P[e];
   if (null == n || null == n[t]) returnfalse;
-  delete n[t], F(e, t), M++
+  delete n[t], F(e, t), k++
 }
 
 function ey(e) {
@@ -713,11 +713,11 @@ function ej(e) {
   return null != r && eO(r, n)
 }
 
-function ek(e) {
+function eM(e) {
   let t = O.Z.getChannel(e.channelId);
   return eN(e.resolved, null == t ? true : t.guild_id)
 }
-class eM extends(r = Chunk442837.ZP.Store) {
+class ek extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk430824.Z, Chunk485386.Z, Chunk314897.default, Chunk160404.Z)
   }
@@ -810,7 +810,7 @@ class eM extends(r = Chunk442837.ZP.Store) {
     return L
   }
   getCommunicationDisabledVersion() {
-    return k
+    return M
   }
   getPendingRoleUpdates(e) {
     var t;
@@ -823,11 +823,11 @@ class eM extends(r = Chunk442837.ZP.Store) {
     return null == o ? i : a().difference(a().union(i, o.added), o.removed)
   }
   getMemberVersion() {
-    return M
+    return k
   }
 }
-S(eM, "displayName", "GuildMemberStore");
-let eU = new eM(Chunk570140.Z, {
+S(ek, "displayName", "GuildMemberStore");
+let eU = new ek(Chunk570140.Z, {
   CONNECTION_OPEN: X,
   CONNECTION_OPEN_SUPPLEMENTAL: Q,
   OVERLAY_INITIALIZE: $,
@@ -865,5 +865,5 @@ let eU = new eM(Chunk570140.Z, {
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: eL,
   MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: em,
   EMBEDDED_ACTIVITY_UPDATE_V2: ej,
-  INTERACTION_MODAL_CREATE: ek
+  INTERACTION_MODAL_CREATE: eM
 })

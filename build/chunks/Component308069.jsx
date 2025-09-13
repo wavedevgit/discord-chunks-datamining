@@ -90,7 +90,7 @@ let S = (0, Chunk938288.animated)(Chunk685613.ZP),
         impressionId: N,
         sourceQuestContent: f.jn.QUEST_BAR_V2
       })
-    }, [N, t]), x = A && C, L = P ? 32 : 24, j = P ? 130 : 92, k = P ? .72 : 1, M = (0, r.jsx)(l.P3F, {
+    }, [N, t]), x = A && C, L = P ? 32 : 24, j = P ? 130 : 92, M = P ? .72 : 1, k = (0, r.jsx)(l.P3F, {
       onClick: D,
       className: o()(y.clickable, {
         [y.logo]: x
@@ -104,7 +104,7 @@ let S = (0, Chunk938288.animated)(Chunk685613.ZP),
           maxWidth: j,
           transform: (0, s.to)([n.to({
             range: [0, 1],
-            output: [1, k]
+            output: [1, M]
           })], e => "scale(".concat(e, ")"))
         }
       })
@@ -131,7 +131,7 @@ let S = (0, Chunk938288.animated)(Chunk685613.ZP),
         quest: t,
         expansionSpring: n,
         isFullyExpanded: x,
-        partnerBranding: M,
+        partnerBranding: k,
         useReducedMotion: I
       }), (0, r.jsxs)(s.animated.div, {
         className: y.promotedBadgeWrapper,

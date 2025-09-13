@@ -42,7 +42,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk381126 = require("./381126.js"),
   Chunk234286 = require("./234286.js");
 
-function M(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -58,7 +58,7 @@ function U(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      M(e, t, n[t])
+      k(e, t, n[t])
     })
   }
   return e
@@ -135,7 +135,7 @@ function F(e) {
     showSeptemberMarketingMomentBanner: E = false,
     wumpusPosition: T = "inCard",
     isApplicationHome: S = false
-  } = e, M = (0, s.e7)([g.Z], () => g.Z.getPremiumTypeSubscription()), U = (0, s.e7)([m.default], () => m.default.getCurrentUser()), G = (0, I.N)(), B = null == G || null == (t = G.subscription_trial) ? true : t.sku_id, Z = (null == M ? true : M.hasActiveTrial) ? null == U ? true : U.premiumType : null, F = (0, v.Ng)(), V = (0, y.t7)(), H = null != B || null != Z ? w.C.PREMIUM_TRIAL : null != F || V ? w.C.PREMIUM_DISCOUNT : null, Y = (0, u.ap)((0, f.ZP)()), W = (0, C.A1)(V, Z, F, G, B), K = () => (0, r.jsxs)(r.Fragment, {
+  } = e, k = (0, s.e7)([g.Z], () => g.Z.getPremiumTypeSubscription()), U = (0, s.e7)([m.default], () => m.default.getCurrentUser()), G = (0, I.N)(), B = null == G || null == (t = G.subscription_trial) ? true : t.sku_id, Z = (null == k ? true : k.hasActiveTrial) ? null == U ? true : U.premiumType : null, F = (0, v.Ng)(), V = (0, y.t7)(), H = null != B || null != Z ? w.C.PREMIUM_TRIAL : null != F || V ? w.C.PREMIUM_DISCOUNT : null, Y = (0, u.ap)((0, f.ZP)()), W = (0, C.A1)(V, Z, F, G, B), K = () => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("img", {
       src: j,
       alt: "",
@@ -145,7 +145,7 @@ function F(e) {
       alt: "",
       className: a()(x.smallCloud, x[T])
     }), (0, r.jsx)("img", {
-      src: k,
+      src: M,
       alt: "",
       className: a()(x.wumpus, x[T])
     })]

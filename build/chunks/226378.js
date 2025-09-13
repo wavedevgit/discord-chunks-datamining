@@ -72,13 +72,13 @@ function f(e) {
   } = e, c = null == t, d = {
     disabled: false,
     isJoinAction: !c,
-    text: c ? o.intl.string(o.t.I0v0Qk) : o.intl.string(o.t.sqe0ho),
+    text: c ? o.intl.string(o.t.RscU7O) : o.intl.string(o.t.sqe0ho),
     tooltip: true
   }, f = (0, i.WS)(s);
   if (null != t && null != r && t.launchId === r.launchId) return u(l({}, d), {
     disabled: true,
     text: o.intl.string(o.t.DPfdsr),
-    tooltip: o.intl.string(o.t.wJNK8P)
+    tooltip: true
   });
   if (c) return u(l({}, d), {
     disabled: !f,

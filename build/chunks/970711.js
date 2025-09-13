@@ -13,7 +13,7 @@ require.d(exports, {
   B: () => ey,
   B8: () => I,
   BQ: () => eN,
-  C2: () => eM,
+  C2: () => ek,
   Cn: () => ea,
   D7: () => ex,
   DZ: () => ev,
@@ -28,7 +28,7 @@ require.d(exports, {
   KJ: () => ta,
   Mc: () => ed,
   OU: () => eK,
-  On: () => ek,
+  On: () => eM,
   Or: () => tg,
   R7: () => e$,
   RC: () => eo,
@@ -71,7 +71,7 @@ require.d(exports, {
   jx: () => eE,
   k7: () => eI,
   kI: () => to,
-  kK: () => e5,
+  kK: () => e6,
   kn: () => el,
   kr: () => eA,
   mO: () => e4,
@@ -90,11 +90,11 @@ require.d(exports, {
   qt: () => th,
   r3: () => eD,
   rs: () => T,
-  sB: () => e6,
+  sB: () => e5,
   uX: () => ec,
   up: () => eH,
   vH: () => $,
-  vz: () => M,
+  vz: () => k,
   w7: () => eX,
   xB: () => Z,
   xH: () => eF,
@@ -311,14 +311,14 @@ class j {
     r.blockeddomainsstore_startFetchingBlockedDomains(t, n)
   }
 }
-let k = "undefined" == typeof FinalizationRegistry ? {
+let M = "undefined" == typeof FinalizationRegistry ? {
   register: () => {},
   unregister: () => {}
 } : new FinalizationRegistry(e => r.__wbg_experimentcacher_free(e >>> 0, 1));
-class M {
+class k {
   __destroy_into_raw() {
     let e = this.__wbg_ptr;
-    return this.__wbg_ptr = 0, k.unregister(this), module
+    return this.__wbg_ptr = 0, M.unregister(this), module
   }
   free() {
     let e = this.__destroy_into_raw();
@@ -684,11 +684,11 @@ function ej() {
   }, arguments)
 }
 
-function ek(e, t, n) {
+function eM(e, t, n) {
   return e.open(l(t, n))
 }
 
-function eM(e, t) {
+function ek(e, t) {
   return e.push(t)
 }
 
@@ -790,11 +790,11 @@ function e8() {
   return d(module) ? 0 : c(module)
 }
 
-function e5(e) {
+function e6(e) {
   return e.status
 }
 
-function e6() {
+function e5() {
   return u(function(e) {
     return JSON.stringify(e)
   }, arguments)

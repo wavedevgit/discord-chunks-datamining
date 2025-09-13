@@ -42,12 +42,12 @@ function j(e) {
     user: t,
     currentUser: n,
     displayProfile: j,
-    guild: k,
-    isHovering: M,
+    guild: M,
+    isHovering: k,
     onOpenProfile: U,
     channelId: G,
     onClose: B
-  } = e, Z = u.ZP.useName(null == k ? true : k.id, G, t), {
+  } = e, Z = u.ZP.useName(null == M ? true : M.id, G, t), {
     relationshipType: F,
     originApplicationId: V
   } = (0, i.cj)([l.Z], () => ({
@@ -65,7 +65,7 @@ function j(e) {
       user: t,
       onOpenProfile: U,
       onClose: B,
-      usernameIcon: t.hasAvatarForGuild(null == k ? true : k.id) && (0, r.jsx)(C.Z, {
+      usernameIcon: t.hasAvatarForGuild(null == M ? true : M.id) && (0, r.jsx)(C.Z, {
         user: t,
         nickname: Z
       }),
@@ -81,14 +81,14 @@ function j(e) {
           userId: t.id
         }), !Y && (0, r.jsx)(T.Z, {
           userId: t.id,
-          isHovering: M,
+          isHovering: k,
           onOpenProfile: U
         })]
       })
     }), F === w.OGo.PENDING_INCOMING && (0, r.jsx)(v.Z.Overlay, {
       children: (0, r.jsx)(E.Z, {
         user: t,
-        guildId: null == k ? true : k.id,
+        guildId: null == M ? true : M.id,
         channelId: G,
         applicationId: V
       })
@@ -137,18 +137,18 @@ function j(e) {
     }), W ? (0, r.jsx)(O.Z, {
       user: t,
       currentUser: n,
-      guildId: null == k ? true : k.id,
+      guildId: null == M ? true : M.id,
       onOpenUserProfileModal: U,
       onClose: B
     }) : (0, r.jsx)(m.Z, {
       user: t,
       currentUser: n,
-      guildId: null == k ? true : k.id,
+      guildId: null == M ? true : M.id,
       onClose: B
-    }), null != k && (0, r.jsx)(N.Z, {
+    }), null != M && (0, r.jsx)(N.Z, {
       user: t,
       currentUser: n,
-      guild: k
+      guild: M
     })]
   })
 }

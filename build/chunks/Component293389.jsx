@@ -74,8 +74,8 @@ function L(e, t) {
 let j = Chunk442837.ZP.connectStores([Chunk210887.Z], () => ({
     theme: Chunk210887.Z.theme
   }))(Chunk481060.ubH),
-  k = (0, Chunk358085.isWindows)(),
-  M = 18,
+  M = (0, Chunk358085.isWindows)(),
+  k = 18,
   U = "https://www.igdb.com/about";
 
 function G(e) {
@@ -219,13 +219,13 @@ function B(e) {
         text: A.intl.string(A.t["4PJP5u"]),
         children: e => (0, r.jsx)(m.Z, L(D({
           className: C.gameVerifiedIcon,
-          size: M,
+          size: k,
           color: l.Z.unsafe_rawColors.BRAND_500.css
         }, e), {
           children: (0, r.jsx)(u.kmB, {
             size: "custom",
-            width: M,
-            height: M,
+            width: k,
+            height: k,
             color: l.Z.unsafe_rawColors.WHITE_500.css
           })
         }))
@@ -258,7 +258,7 @@ function B(e) {
   }
 
   function X() {
-    if (!k || null != v) return null;
+    if (!M || null != v) return null;
     let {
       overlay: e,
       overlayWarn: t

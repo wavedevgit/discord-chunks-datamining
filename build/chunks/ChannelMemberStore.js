@@ -133,7 +133,7 @@ function j(e) {
     return l.e$(r, I.Plq.VIEW_CHANNEL) ? e.push("allow:".concat(n)) : l.e$(i, I.Plq.VIEW_CHANNEL) && e.push("deny:".concat(n)), e
   }, []).sort().join(",")).toString()
 }
-class k {
+class M {
   updateOwnerId() {
     let e = Chunk430824.Z.getGuild(this.guildId);
     if (null == module) returnfalse;
@@ -207,12 +207,12 @@ class k {
     S(this, "guildId", true), S(this, "listId", true), S(this, "ownerId", true), S(this, "rows", []), S(this, "groups", []), S(this, "members", {}), S(this, "version", 0), this.guildId = e, this.listId = t, this.updateOwnerId()
   }
 }
-class M {
+class k {
   get(e, t) {
     let n = this._guildLists[e];
     null == n && (n = this._guildLists[e] = {});
     let r = n[t];
-    return null == r && ((r = new k(e, t)).setGroups([{
+    return null == r && ((r = new M(e, t)).setGroups([{
       id: I.Skl.UNKNOWN,
       count: 0
     }]), n[t] = r), r
@@ -236,7 +236,7 @@ class M {
     S(this, "_guildLists", {})
   }
 }
-let U = new M;
+let U = new k;
 
 function G(e) {
   let t = U.get(e.guildId, e.id);

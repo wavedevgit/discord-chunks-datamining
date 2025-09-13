@@ -115,10 +115,10 @@ let C = e => {
   } = e, {
     completionSpring: T,
     startCompletionAnimation: C
-  } = (0, p.G)(), N = (null == (t = E.userStatus) ? true : t.completedAt) != null, R = i.useRef(false), P = (0, u.e7)([f.Z], () => f.Z.useReducedMotion), w = i.useRef(null), D = (0, u.e7)([_.Z], () => _.Z.hasLayers()), x = (0, d.Z)(D), [L, j] = i.useState(null), [k, M] = i.useState(null), U = i.useRef(new s.qA({
+  } = (0, p.G)(), N = (null == (t = E.userStatus) ? true : t.completedAt) != null, R = i.useRef(false), P = (0, u.e7)([f.Z], () => f.Z.useReducedMotion), w = i.useRef(null), D = (0, u.e7)([_.Z], () => _.Z.hasLayers()), x = (0, d.Z)(D), [L, j] = i.useState(null), [M, k] = i.useState(null), U = i.useRef(new s.qA({
     gravity: 0,
     wind: 0
-  })), G = (0, s.uR)(L, k), B = i.useCallback(() => {
+  })), G = (0, s.uR)(L, M), B = i.useCallback(() => {
     if (P) return;
     let e = b.current,
       t = w.current;
@@ -170,7 +170,7 @@ let C = e => {
         className: m.confetti,
         environment: U.current
       }), (0, r.jsx)(s.Ji, {
-        ref: M,
+        ref: k,
         sprites: [g],
         colors: v,
         spriteWidth: h.Ko,

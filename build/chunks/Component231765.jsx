@@ -127,7 +127,7 @@ function j(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   let {
     children: t
   } = e;
@@ -139,7 +139,7 @@ function k(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     settings: {
       enabled: t,
@@ -198,7 +198,7 @@ function U(e) {
       disabled: c,
       title: v.intl.string(v.t["vd0D8/"]),
       className: I.formItem,
-      children: [(0, r.jsx)(k, {
+      children: [(0, r.jsx)(M, {
         children: v.intl.string(v.t.a18Sur)
       }), (0, r.jsx)(l.iRW, {
         disabled: c,
@@ -216,7 +216,7 @@ function U(e) {
       disabled: c,
       title: v.intl.string(v.t.sPO3io),
       className: I.formItem,
-      children: [(0, r.jsx)(k, {
+      children: [(0, r.jsx)(M, {
         children: v.intl.string(v.t.xoldVl)
       }), (0, r.jsx)(l.iRW, {
         disabled: c,
@@ -274,7 +274,7 @@ function G(e) {
       disabled: s,
       title: v.intl.string(v.t.L0oQur),
       className: I.formItem,
-      children: [(0, r.jsx)(k, {
+      children: [(0, r.jsx)(M, {
         children: v.intl.string(v.t["/OOFpK"])
       }), (0, r.jsx)(l.iRW, {
         disabled: s,
@@ -322,7 +322,7 @@ function B(e) {
       disabled: d,
       title: v.intl.string(v.t.UxnnCw),
       className: I.formItem,
-      children: [(0, r.jsx)(k, {
+      children: [(0, r.jsx)(M, {
         children: v.intl.string(v.t.CEOEOT)
       }), (0, r.jsx)(l.iRW, {
         disabled: d,
@@ -472,7 +472,7 @@ function H(e) {
       variant: "heading-lg/semibold",
       className: I.title,
       children: v.intl.string(v.t.AtCukJ)
-    }), (0, r.jsx)(M, {
+    }), (0, r.jsx)(k, {
       settings: a,
       updateSettings: h
     }), (0, r.jsx)(F, {

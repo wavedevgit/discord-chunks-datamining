@@ -139,18 +139,18 @@ let C = e => {
       } = e,
       L = (0, m.rO)(),
       j = i.useRef(null),
-      k = i.useRef(0),
-      M = A(n),
+      M = i.useRef(0),
+      k = A(n),
       U = (0, s.debounce)(() => {
         h.default.track(E.rMx.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED, {
           box_type: (0, s.snakeCase)(n)
         })
       }, 800),
       G = () => {
-        null == j.current || R || (j.current.currentTime = k.current, j.current.play())
+        null == j.current || R || (j.current.currentTime = M.current, j.current.play())
       },
       B = () => {
-        null == j.current || R || (k.current = j.current.currentTime, j.current.pause())
+        null == j.current || R || (M.current = j.current.currentTime, j.current.pause())
       },
       Z = x ? O : y;
     t = x ? D === g.y$.LARGE ? "heading-xxl/bold" : "heading-xl/bold" : D === g.y$.SMALL ? "heading-xl/extrabold" : "heading-xxl/extrabold";
@@ -207,7 +207,7 @@ let C = e => {
         children: [(0, r.jsx)(V, {}), (0, r.jsx)(F, {})]
       }),
       W = {
-        className: o()(x ? O.backgroundColor : M, Z.boxContainer, Z["".concat(D)], x && O.gradientBackground),
+        className: o()(x ? O.backgroundColor : k, Z.boxContainer, Z["".concat(D)], x && O.gradientBackground),
         onMouseEnter: G,
         onFocus: G,
         onBlur: B,

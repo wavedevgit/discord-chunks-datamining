@@ -213,7 +213,7 @@ function Q(e) {
             children: (0, r.jsx)(E.p, {
               showUpsell: true,
               text: B.intl.format(B.t["XMDm8/"], {
-                nitroTierName: (0, T.Px)(M.p9.TIER_2),
+                nitroTierName: (0, T.Px)(k.p9.TIER_2),
                 onClick: () => (0, b.i)()
               }),
               button: B.intl.string(B.t.cRCCJy),
@@ -259,7 +259,7 @@ function Q(e) {
             renderOutputVolume: a,
             onClose: t,
             onInteraction: (0, m.u)("AudioDeviceMenu", $, {
-              entrypoint: k.A5.THREE_DOT
+              entrypoint: M.A5.THREE_DOT
             }),
             minimal: true
           }),

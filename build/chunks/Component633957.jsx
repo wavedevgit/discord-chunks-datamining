@@ -43,123 +43,124 @@ var Chunk951288 = require("./951288.js"),
   Chunk853392 = require("./853392.js");
 
 function B(e) {
-  var t, n, a, l;
-  let d, {
-      application: I,
-      channelId: w,
-      guildId: x,
-      message: B
+  var t, n, a;
+  let l, {
+      application: d,
+      channelId: I,
+      guildId: w,
+      message: x
     } = e,
     {
-      analyticsLocations: F
+      analyticsLocations: B
     } = (0, g.ZP)(m.Z.ACTIVITY_INSTANCE_EMBED),
-    V = (0, u.O)(),
-    H = (0, s.e7)([A.Z], () => A.Z.getChannel(w), [w]),
-    Y = (null == H || null == (t = H.isThread) ? true : t.call(H)) ? null == H ? true : H.parent_id : w,
-    W = (0, s.e7)([S.default], () => S.default.getId()),
+    F = (0, u.O)(),
+    V = (0, s.e7)([A.Z], () => A.Z.getChannel(I), [I]),
+    H = (null == V || null == (t = V.isThread) ? true : t.call(V)) ? null == V ? true : V.parent_id : I,
+    Y = (0, s.e7)([S.default], () => S.default.getId()),
     {
-      embeddedActivity: K,
-      currentEmbeddedActivity: z,
-      activityLaunchState: q
+      embeddedActivity: W,
+      currentEmbeddedActivity: K,
+      activityLaunchState: z
     } = (0, s.cj)([f.ZP], () => ({
-      embeddedActivity: f.ZP.getEmbeddedActivitiesForChannel(null != Y ? Y : "").find(e => e.applicationId === I.id),
+      embeddedActivity: f.ZP.getEmbeddedActivitiesForChannel(null != H ? H : "").find(e => e.applicationId === d.id),
       currentEmbeddedActivity: f.ZP.getCurrentEmbeddedActivity(),
-      activityLaunchState: f.ZP.getLaunchState(I.id, null != Y ? Y : true)
-    }), [Y, I.id]),
-    X = null == K ? true : K.userIds,
-    Q = (0, s.Wu)([N.default], () => Array.from(null != X ? X : []).map(e => N.default.getUser(e)).filter(D.lm), [X]),
-    J = (0, s.e7)([C.Z], () => {
-      if (null == X) return null;
-      for (let e of X) {
-        let t = C.Z.findActivity(e, e => e.application_id === I.id);
+      activityLaunchState: f.ZP.getLaunchState(d.id, null != H ? H : true)
+    }), [H, d.id]),
+    q = null == W ? true : W.userIds,
+    X = (0, s.Wu)([N.default], () => Array.from(null != q ? q : []).map(e => N.default.getUser(e)).filter(D.lm), [q]),
+    Q = (0, s.e7)([C.Z], () => {
+      if (null == q) return null;
+      for (let e of q) {
+        let t = C.Z.findActivity(e, e => e.application_id === d.id);
         if (null != t) return t
       }
       return null
-    }, [I.id, X]),
-    $ = null == J ? true : J.details,
-    ee = i.useMemo(() => {
-      let e = new T.ZP(I);
-      return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = k.wT), e
-    }, [I]),
-    et = (0, h.s5)({
-      userId: W,
-      channelId: w,
-      application: ee
+    }, [d.id, q]),
+    J = null == Q ? true : Q.details,
+    $ = i.useMemo(() => {
+      let e = new T.ZP(d);
+      return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = M.wT), e
+    }, [d]),
+    ee = (0, h.s5)({
+      userId: Y,
+      channelId: I,
+      application: $
     }),
-    en = null == K,
-    er = (0, L.NL)({
-      embeddedActivity: K,
-      joinability: et,
-      currentEmbeddedActivity: z,
-      channel: H
+    et = null == W,
+    en = (0, L.NL)({
+      embeddedActivity: W,
+      joinability: ee,
+      currentEmbeddedActivity: K,
+      channel: V
     }),
-    ei = i.useId(),
-    ea = null != q && q.isLaunching && q.componentId === ei,
-    eo = async () => {
+    er = i.useId(),
+    ei = null != z && z.isLaunching && z.componentId === er,
+    ea = async () => {
       R.default.track(j.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
-        application_id: I.id,
-        channel_id: w,
-        channel_type: null == H ? true : H.type,
-        is_activity_start: en,
+        application_id: d.id,
+        channel_id: I,
+        channel_type: null == V ? true : V.type,
+        is_activity_start: et,
         cta: "Play"
-      }), en ? await (0, p.Z)({
-        targetApplicationId: I.id,
-        channelId: w,
-        locationObject: V.location,
-        analyticsLocations: F,
-        componentId: ei,
+      }), et ? await (0, p.Z)({
+        targetApplicationId: d.id,
+        channelId: I,
+        locationObject: F.location,
+        analyticsLocations: B,
+        componentId: er,
         commandOrigin: E.bB.ACTIVITY_INSTANCE_EMBED
       }) : await (0, _.Z)({
-        applicationId: K.applicationId,
-        activityChannelId: w,
-        locationObject: V.location,
-        analyticsLocations: F,
-        componentId: ei
+        applicationId: W.applicationId,
+        activityChannelId: I,
+        locationObject: F.location,
+        analyticsLocations: B,
+        componentId: er
       })
-    }, es = er.disabled ? U.intl.string(U.t.JBnc7O) : U.intl.string(U.t.cX9uLS), el = (0, v.G)(ee, () => {
+    }, eo = en.disabled ? U.intl.string(U.t.JBnc7O) : U.intl.string(U.t.cX9uLS), es = (0, v.G)($, () => {
       R.default.track(j.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
-        application_id: I.id,
-        channel_id: w,
-        channel_type: null == H ? true : H.type,
+        application_id: d.id,
+        channel_id: I,
+        channel_type: null == V ? true : V.type,
         cta: "View"
       })
-    }), ec = P.ZP.getApplicationIconURL({
-      id: I.id,
-      icon: I.icon,
-      bot: I.bot
+    }), el = P.ZP.getApplicationIconURL({
+      id: d.id,
+      icon: d.icon,
+      bot: d.bot
     });
-  er.disabled && (d = null != (a = er.tooltip) ? a : er.text);
-  let eu = Q.length,
-    ed = null != (l = null == J || null == (n = J.timestamps) ? true : n.start) ? l : null == J ? true : J.created_at,
-    ef = (0, y.r)({
-      activity: J,
-      activityUsersCount: eu
+  en.disabled && (l = en.tooltip);
+  let ec = X.length,
+    eu = null != (a = null == Q || null == (n = Q.timestamps) ? true : n.start) ? a : null == Q ? true : Q.created_at,
+    ed = (0, y.r)({
+      activity: Q,
+      activityUsersCount: ec
     }),
-    e_ = [{
-      label: en ? U.intl.string(U.t.RscU7O) : U.intl.string(U.t.VJlc0d),
+    ef = [{
+      label: en.text,
       trackingArea: O.j_.PLAY,
-      onClick: eo,
-      disabledReason: d,
-      submitting: ea
+      onClick: ea,
+      disabled: en.disabled,
+      disabledReason: l,
+      submitting: ei
     }];
   return (0, r.jsx)(b.W, {
     header: U.intl.string(U.t.pkq6Vl),
-    title: I.name,
-    iconSrc: ec,
+    title: d.name,
+    iconSrc: el,
     info: (0, r.jsx)("div", {
       className: G.infoWrapper,
-      children: en ? (0, r.jsx)(c.Text, {
+      children: et ? (0, r.jsx)(c.Text, {
         variant: "text-xs/medium",
         color: "none",
-        children: es
+        children: eo
       }) : (0, r.jsxs)(r.Fragment, {
-        children: [null != $ && (0, r.jsxs)("div", {
+        children: [null != J && (0, r.jsxs)("div", {
           className: G.activityPresenceDetailsContainer,
-          children: [null != ed && (0, r.jsxs)("div", {
+          children: [null != eu && (0, r.jsxs)("div", {
             className: G.activityPresenceDetailsItemContainer,
             children: [(0, r.jsx)("div", {
               className: G.activityPresenceDetailsItemIconContainer,
-              children: (0, r.jsx)(ef.Icon, {
+              children: (0, r.jsx)(ed.Icon, {
                 size: "xxs",
                 color: "currentColor"
               })
@@ -167,7 +168,7 @@ function B(e) {
               variant: "text-xs/medium",
               color: "none",
               children: (0, r.jsx)(Z, {
-                start: ed
+                start: eu
               })
             })]
           }), (0, r.jsxs)("div", {
@@ -181,24 +182,24 @@ function B(e) {
               variant: "text-xs/medium",
               color: "none",
               lineClamp: 1,
-              children: $
+              children: J
             })]
           })]
-        }), eu > 0 && (0, r.jsx)(y.K, {
-          activityUsers: Q,
-          guildId: x,
-          activityText: ef.text
+        }), ec > 0 && (0, r.jsx)(y.K, {
+          activityUsers: X,
+          guildId: w,
+          activityText: ed.text
         })]
       })
     }),
-    actions: e_,
-    onClickContent: el,
+    actions: ef,
+    onClickContent: es,
     trackingConfig: {
-      id: I.id,
-      linkType: M.U.ACTIVITY_INSTANCE,
-      guildId: x,
-      channelId: w,
-      messageId: B.id
+      id: d.id,
+      linkType: k.U.ACTIVITY_INSTANCE,
+      guildId: w,
+      channelId: I,
+      messageId: x.id
     }
   })
 }

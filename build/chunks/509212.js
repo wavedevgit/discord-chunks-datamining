@@ -20,7 +20,7 @@ require.d(exports, {
   Fs: () => td,
   GN: () => e_,
   Gd: () => tg,
-  HJ: () => e6,
+  HJ: () => e5,
   Jg: () => eA,
   K: () => ev,
   KM: () => eL,
@@ -58,8 +58,8 @@ require.d(exports, {
   il: () => eq,
   jY: () => tC,
   lQ: () => K,
-  nc: () => eM,
-  o9: () => ek,
+  nc: () => ek,
+  o9: () => eM,
   oo: () => eC,
   pO: () => ew,
   q6: () => X,
@@ -123,7 +123,7 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -136,7 +136,7 @@ function k(e) {
   return e
 }
 
-function M(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -148,7 +148,7 @@ function M(e, t) {
 }
 
 function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -492,8 +492,8 @@ function eT(e, t) {
 }
 
 function eS(e, t) {
-  v.Z.captureException(e, U(k({}, t), {
-    tags: U(k({}, null == t ? true : t.tags), {
+  v.Z.captureException(e, U(M({}, t), {
+    tags: U(M({}, null == t ? true : t.tags), {
       app_context: "quests"
     })
   }))
@@ -560,7 +560,7 @@ function ej(e, t) {
   return R.r.build(e.config).features.has(t)
 }
 
-function ek(e) {
+function eM(e) {
   let {
     quest: t,
     idx: n
@@ -570,7 +570,7 @@ function ek(e) {
   return r.type === c.w.REWARD_CODE ? r : null
 }
 
-function eM(e, t) {
+function ek(e, t) {
   let n = R.r.build(e.config).application.link;
   (0, I._3)({
     questId: e.id,
@@ -681,7 +681,7 @@ let eB = (e, t) => e > 0 ? (0, i.floor)(Math.min(t / e, 1), 4) : 0,
       includeTaskTypes: null != t ? t : te(e) ? o.T.CONSOLE : o.T.ALL
     });
     if (e4(e))
-      if (e5(e)) return eW({
+      if (e6(e)) return eW({
         quest: e,
         taskType: o.X.WATCH_VIDEO_ON_MOBILE
       });
@@ -743,8 +743,8 @@ function e2(e, t) {
 let e3 = eQ([Chunk754700.X.PLAY_ON_XBOX, Chunk754700.X.PLAY_ON_PLAYSTATION]),
   e4 = eQ([Chunk754700.X.WATCH_VIDEO, Chunk754700.X.WATCH_VIDEO_ON_MOBILE]),
   e8 = eQ([Chunk754700.X.WATCH_VIDEO]),
-  e5 = eQ([Chunk754700.X.WATCH_VIDEO_ON_MOBILE]),
-  e6 = e => e5(e) && !e8(e);
+  e6 = eQ([Chunk754700.X.WATCH_VIDEO_ON_MOBILE]),
+  e5 = e => e6(e) && !e8(e);
 
 function e7(e) {
   return e3(e)
@@ -854,7 +854,7 @@ function tu(e) {
     sharedQuestFields: l
   } = e, c = eC({
     quest: a
-  }), u = null != s ? s : null == o ? true : o.platform, d = c ? ek({
+  }), u = null != s ? s : null == o ? true : o.platform, d = c ? eM({
     quest: a,
     idx: null != (r = null == o ? true : o.tier) ? r : null == (t = a.userStatus) ? true : t.claimedTier
   }) : null, f = null != (i = null == d || null == (n = d.messages) ? true : n.redemptionInstructionsByPlatform) ? i : l.defaultRewardRedemptionInstructionsByPlatform;

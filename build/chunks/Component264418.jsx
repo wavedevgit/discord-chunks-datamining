@@ -99,7 +99,7 @@ function O(e) {
     null == S || S(t)
   }, [S]), j = i.useCallback(() => {
     null == S || S("user:explicit")
-  }, [S]), k = i.useCallback(e => {
+  }, [S]), M = i.useCallback(e => {
     w(e), x(t => E(m({}, t), {
       position: (0, _.z)(e)
     }))
@@ -108,7 +108,7 @@ function O(e) {
     position: P,
     onRequestClose: L,
     gradientColor: T,
-    onPositionChange: k,
+    onPositionChange: M,
     children: (0, r.jsxs)("div", {
       ref: A,
       children: [(0, r.jsx)(d.u, {

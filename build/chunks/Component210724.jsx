@@ -38,9 +38,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk743294 = require("./743294.js"),
   Chunk981631 = require("./981631.js"),
   Chunk89855 = require("./89855.js");
-let k = 75;
+let M = 75;
 
-function M(e) {
+function k(e) {
   let {
     isExpanded: t,
     questId: n
@@ -97,7 +97,7 @@ function G(e) {
     let {
       withDelay: t = false
     } = e;
-    t ? $.current = window.setTimeout(e_, k) : e_()
+    t ? $.current = window.setTimeout(e_, M) : e_()
   }, [e_, ea]), ey = i.useCallback(() => {
     eb()
   }, [eb]), eO = i.useCallback(() => {
@@ -249,7 +249,7 @@ function G(e) {
     children: (e, t) => (H.current = t.current, (0, r.jsxs)("div", {
       className: j.mask,
       children: [Q && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(M, {
+        children: [(0, r.jsx)(k, {
           questId: a.id,
           isExpanded: ea
         }), (0, r.jsx)(U, {})]

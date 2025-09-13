@@ -38,7 +38,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk456254 = require("./456254.js"),
   Chunk746838 = require("./746838.js");
 
-function k(e, t, n) {
+function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -47,14 +47,14 @@ function k(e, t, n) {
   }) : e[t] = n, e
 }
 
-function M(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      k(e, t, n[t])
+      M(e, t, n[t])
     })
   }
   return e
@@ -88,7 +88,7 @@ let B = "???",
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 656139));
-      return t => (0, r.jsx)(e, G(M({}, t), {
+      return t => (0, r.jsx)(e, G(k({}, t), {
         startingScreen: i
       }))
     })
@@ -310,7 +310,7 @@ class F extends Chunk647438.Component {
     }
   }
   constructor(e) {
-    super(e), k(this, "trialOffer", true), k(this, "referralsSent", true), k(this, "currentUser", true), k(this, "recipientHasNitro", true), k(this, "trialEndsAt", true), k(this, "analyticsLocations", true), k(this, "offerExpired", true), k(this, "isSender", true), k(this, "dmRefreshXPCohort", true), k(this, "compact", true), this.trialOffer = e.trialOffer, this.referralsSent = e.referralsSent, this.currentUser = e.currentUser, this.recipientHasNitro = e.recipientHasNitro, this.trialEndsAt = e.trialEndsAt, this.analyticsLocations = e.analyticsLocations, this.dmRefreshXPCohort = e.dmRefreshXPCohort, this.compact = true === e.compact, this.offerExpired = (0, R.B)(this.trialOffer), this.isSender = this.currentUser.id === this.trialOffer.referrer_id
+    super(e), M(this, "trialOffer", true), M(this, "referralsSent", true), M(this, "currentUser", true), M(this, "recipientHasNitro", true), M(this, "trialEndsAt", true), M(this, "analyticsLocations", true), M(this, "offerExpired", true), M(this, "isSender", true), M(this, "dmRefreshXPCohort", true), M(this, "compact", true), this.trialOffer = e.trialOffer, this.referralsSent = e.referralsSent, this.currentUser = e.currentUser, this.recipientHasNitro = e.recipientHasNitro, this.trialEndsAt = e.trialEndsAt, this.analyticsLocations = e.analyticsLocations, this.dmRefreshXPCohort = e.dmRefreshXPCohort, this.compact = true === e.compact, this.offerExpired = (0, R.B)(this.trialOffer), this.isSender = this.currentUser.id === this.trialOffer.referrer_id
   }
 }
 

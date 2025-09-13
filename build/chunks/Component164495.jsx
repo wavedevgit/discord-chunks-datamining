@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   i: () => L,
-  y: () => k
+  y: () => M
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -269,7 +269,7 @@ let P = e => {
     })
   };
 
-function k(e) {
+function M(e) {
   let t = i.useRef(null);
   return (0, r.jsxs)("div", {
     className: v.ctaButtons,

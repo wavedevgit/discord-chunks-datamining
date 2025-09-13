@@ -96,8 +96,8 @@ function A(e) {
       label: x,
       hideLabel: L,
       description: j,
-      helperText: k,
-      successMessage: M,
+      helperText: M,
+      successMessage: k,
       inputRef: U
     } = e,
     G = v(e, ["value", "placeholder", "autoFocus", "autosize", "minLength", "maxLength", "error", "defaultDirty", "showCharacterCount", "showRemainingCharacterCount", "rows", "disabled", "label", "hideLabel", "description", "helperText", "successMessage", "inputRef"]);
@@ -130,8 +130,8 @@ function A(e) {
     label: x,
     hideLabel: L,
     description: j,
-    helperText: k,
-    successMessage: M,
+    helperText: M,
+    successMessage: k,
     trailingContent: H,
     errorMessage: Z.hasError && null != (t = Z.errorMessage) ? t : true,
     children: (0, r.jsxs)(u.U, {

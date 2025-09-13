@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   g: () => G,
-  i: () => M
+  i: () => k
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -38,13 +38,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk505575 = require("./505575.js");
-let k = () => {
+let M = () => {
     (0, Chunk266454.Q3)(Chunk704215.z.CLIENT_THEMES_SPARKLE_PREVIEW, {
       dismissAction: Chunk921944.L.PRIMARY,
       forceTrack: true
     }), (0, Chunk550385.XO)(Chunk550385.wh.CLIENT_THEMES), (0, Chunk342386.Z)()
   },
-  M = () => {
+  k = () => {
     var e, t;
     let {
       analyticsLocations: n
@@ -62,7 +62,7 @@ let k = () => {
         children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "secondary",
           text: Chunk388032.intl.string(Chunk388032.t["E+COuL"]),
-          onClick: () => k()
+          onClick: () => M()
         }), (0, Chunk951288.jsx)(Chunk638212.Z, {
           subscriptionTier: Chunk474936.Si.TIER_2,
           defaultTextOverride: module,
@@ -77,7 +77,7 @@ let k = () => {
         children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "secondary",
           text: Chunk388032.intl.string(Chunk388032.t["E+COuL"]),
-          onClick: () => k()
+          onClick: () => M()
         }), (0, Chunk951288.jsx)(Chunk767714.Z, {
           showGradient: false,
           subscriptionTier: Chunk474936.Si.TIER_2,
@@ -98,7 +98,7 @@ let k = () => {
         children: [(0, Chunk951288.jsx)(Chunk755721.zx, {
           className: Chunk505575.previewThemeButtonWide,
           color: Chunk755721.zx.Colors.PRIMARY,
-          onClick: () => k(),
+          onClick: () => M(),
           children: Chunk388032.intl.string(Chunk388032.t["E+COuL"])
         }), (0, Chunk951288.jsx)("div", {
           className: Chunk505575.premiumTier2Divider
@@ -163,5 +163,5 @@ function U() {
 let G = () => (0, Chunk442837.e7)([Chunk514361.Z], () => Chunk514361.Z.isPreview) ? null : (0, Chunk951288.jsx)(Chunk481060.zxk, {
   variant: "primary",
   text: Chunk388032.intl.string(Chunk388032.t.qYXrkZ),
-  onClick: k
+  onClick: M
 })

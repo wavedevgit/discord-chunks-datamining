@@ -157,7 +157,7 @@ function z(e) {
     questConfig: t.config
   }), w = i.useMemo(() => (0, N.fh)(t, N.eC.HERO_IMAGE), [t]), x = i.useMemo(() => null == w ? {} : {
     backgroundImage: "url(".concat(w.url, ")")
-  }, [w]), L = (0, p.ZP)(), j = (0, f.wj)(L), k = (0, u.e7)([g.Z], () => g.Z.isFocused()), M = (0, u.e7)([h.Z], () => h.Z.useReducedMotion);
+  }, [w]), L = (0, p.ZP)(), j = (0, f.wj)(L), M = (0, u.e7)([g.Z], () => g.Z.isFocused()), k = (0, u.e7)([h.Z], () => h.Z.useReducedMotion);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       ref: O,
@@ -219,7 +219,7 @@ function z(e) {
       }), (null == P ? true : P.shineWipe) && (0, r.jsx)(_.ZX5, {
         className: H.shine,
         shineSize: _.rHe.DEFAULT,
-        shinePaused: !k || M
+        shinePaused: !M || k
       })]
     }), (0, r.jsxs)(s.animated.div, {
       className: H.heroAssetWrapper,
@@ -355,9 +355,9 @@ function X(e) {
         children: !v && !(0, b.Gd)(n) && (0, l.EQ)(A).with(I.LI.SELECT, () => (0, r.jsx)(B.Z, {
           onConsole: () => N(Z.cd.CONSOLE),
           onDesktop: () => N(Z.cd.DESKTOP)
-        })).with(I.LI.DESKTOP, () => (0, r.jsx)(M.Z, {
+        })).with(I.LI.DESKTOP, () => (0, r.jsx)(k.Z, {
           quest: n
-        })).with(I.LI.CONSOLE, () => (0, r.jsx)(k.Z, {
+        })).with(I.LI.CONSOLE, () => (0, r.jsx)(M.Z, {
           quest: n,
           taskDetails: a
         })).exhaustive()

@@ -144,7 +144,7 @@ let Q = 32,
       id: a,
       icon: s,
       name: l
-    } = t, c = Q, u = M.ZP.getGuildIconURL({
+    } = t, c = Q, u = k.ZP.getGuildIconURL({
       id: a,
       icon: s,
       size: c,
@@ -276,10 +276,10 @@ let Q = 32,
       closePopout: R,
       onToggleShowMoreEmojis: D,
       guildEmoji: x,
-      demoMode: M = false,
+      demoMode: k = false,
       nonce: U
     } = e, K = (0, l.e7)([j.default], () => j.default.getCurrentUser()), z = (0, l.e7)([L.Z], () => L.Z.getGuildId()), q = G.ZP.isPremium(K), X = null != z && (z === (null == T ? true : T.id) || z === (null == S ? true : S.id)), Q = null != S, J = null != (t = null == T ? true : T.isDiscoverable()) && t;
-    M && (q = true, J = true, Q = false, X = false);
+    k && (q = true, J = true, Q = false, X = false);
     let ee = $(),
       {
         isRoleSubscriptionEmoji: en,
@@ -322,7 +322,7 @@ let Q = 32,
         isDiscoverable: J,
         shouldHideRoleSubscriptionCTA: eo,
         onOpenPremiumSettings: () => {
-          R(), k.default.track(F.rMx.PREMIUM_PROMOTION_OPENED, {
+          R(), M.default.track(F.rMx.PREMIUM_PROMOTION_OPENED, {
             location_page: ee.page,
             location_section: ee.section
           }), (0, P.z)()
@@ -336,13 +336,13 @@ let Q = 32,
         popoutData: ec,
         emojiSourceGuildId: null == T ? true : T.id,
         nonce: U,
-        demoMode: M
+        demoMode: k
       }),
       e_ = ec.type === B.$.JOIN_GUILD,
       ep = ec.type === B.$.GET_PREMIUM,
       eh = () => {
         let e = async () => {
-          if (M || null == T || Q) return;
+          if (k || null == T || Q) return;
           R();
           let e = T.id;
           try {
@@ -411,7 +411,7 @@ let Q = 32,
         var e, t;
         let n = null != T && !Q && J && (null != (t = null == T || null == (e = T.emojis) ? true : e.length) ? t : 0) > 1,
           i = () => {
-            n && (null == D || D(), em || M || k.default.track(F.rMx.EMOJI_UPSELL_POPOUT_MORE_EMOJIS_OPENED, ef), eg(!em))
+            n && (null == D || D(), em || k || M.default.track(F.rMx.EMOJI_UPSELL_POPOUT_MORE_EMOJIS_OPENED, ef), eg(!em))
           },
           a = () => {
             let e = Y.intl.string(Y.t.pnsAS0);
