@@ -503,7 +503,7 @@ let V = {
   nsfwReturnToSafety(e) {
     let t = y.Z.getGuild(e),
       n = (0, m.Y2)(t),
-      r = (0, c.hO)(e);
+      r = (0, c._I)(e);
     if (null == e || n || r) return void(0, h.uL)(R.Z5c.FRIENDS);
     let i = b.ZP.getDefaultChannel(e);
     null == i || (0, c.Y3)(i) ? (0, h.uL)(R.Z5c.FRIENDS) : (0, h.uL)(R.Z5c.CHANNEL(e, i.id))
