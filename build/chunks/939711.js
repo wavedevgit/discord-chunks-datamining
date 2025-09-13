@@ -59,8 +59,8 @@
     e3 = eu(ee),
     e4 = eu(et),
     e8 = eu(en),
-    e6 = eu(er),
-    e5 = eu(ei),
+    e5 = eu(er),
+    e6 = eu(ei),
     e7 = eu(ea),
     e9 = eu(eo),
     te = eu(es),
@@ -278,7 +278,7 @@
     tv = /P+p+|P+|p+|''|'(''|[^'])+('|$)|./g;
 
   function tI(e) {
-    var t = e ? "string" == typeof e || e instanceof String ? e9.default(e) : e5.default(e) : new Date;
+    var t = e ? "string" == typeof e || e instanceof String ? e9.default(e) : e6.default(e) : new Date;
     return tS(t) ? t : null
   }
 
@@ -393,7 +393,7 @@
     var r, i = eK.default(t),
       a = eJ.default(n);
     try {
-      r = e6.default(e, {
+      r = e5.default(e, {
         start: i,
         end: a
       })
@@ -544,7 +544,7 @@
       s = eU.default(eM.default(a, eC.default(n)), eN.default(n)),
       l = eU.default(eM.default(a, eC.default(r)), eN.default(r));
     try {
-      i = !e6.default(o, {
+      i = !e5.default(o, {
         start: s,
         end: l
       })
@@ -574,7 +574,7 @@
     }) || false
   }
 
-  function t6(e) {
+  function t5(e) {
     var t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
       n = t.minDate,
       r = t.includeDates,
@@ -584,7 +584,7 @@
     }) || false
   }
 
-  function t5(e) {
+  function t6(e) {
     var t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
       n = t.maxDate,
       r = t.includeDates,
@@ -1925,7 +1925,7 @@
             var e;
             switch (true) {
               case r.props.showMonthYearPicker:
-                e = t6(r.state.date, r.props);
+                e = t5(r.state.date, r.props);
                 break;
               case r.props.showYearPicker:
                 e = function(e) {
@@ -1975,7 +1975,7 @@
             var e;
             switch (true) {
               case r.props.showMonthYearPicker:
-                e = t5(r.state.date, r.props);
+                e = t6(r.state.date, r.props);
                 break;
               case r.props.showYearPicker:
                 e = function(e) {
@@ -2079,8 +2079,8 @@
           if (r.props.showTimeSelect && !r.state.monthContainer || r.props.showTimeSelectOnly) return null;
           var i = t4(r.state.date, r.props),
             a = t8(r.state.date, r.props),
-            o = t6(r.state.date, r.props),
-            s = t5(r.state.date, r.props),
+            o = t5(r.state.date, r.props),
+            s = t6(r.state.date, r.props),
             l = !r.props.showMonthYearPicker && !r.props.showQuarterYearPicker && !r.props.showYearPicker;
           return ed.default.createElement("div", {
             className: "react-datepicker__header react-datepicker__header--custom",

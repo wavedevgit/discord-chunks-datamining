@@ -429,9 +429,9 @@
     e3 = y,
     e4 = E,
     e8 = f,
-    e6 = M;
+    e5 = M;
   e4.prototype.hsl = function() {
-    return e6(this._rgb)
+    return e5(this._rgb)
   }, e3.hsl = function() {
     for (var e = [], t = arguments.length; t--;) module[t] = arguments[t];
     return new(Function.prototype.bind.apply(e4, [null].concat(module, ["hsl"])))
@@ -442,12 +442,12 @@
       if ("array" === e2(e = e1(module, "hsl")) && 3 === module.length) return "hsl"
     }
   });
-  var e5 = d.unpack,
+  var e6 = d.unpack,
     e7 = Math.min,
     e9 = Math.max,
     te = function() {
       for (var e, t, n, r = [], i = arguments.length; i--;) r[i] = arguments[i];
-      var a = (r = e5(r, "rgb"))[0],
+      var a = (r = e6(r, "rgb"))[0],
         o = r[1],
         s = r[2],
         l = e7(a, o, s),
@@ -811,8 +811,8 @@
       yellowgreen: "#9acd32"
     },
     t8 = E,
-    t6 = f,
-    t5 = d.type,
+    t5 = f,
+    t6 = d.type,
     t7 = t4,
     t9 = ew,
     ne = eN;
@@ -822,14 +822,14 @@
       if (t7[r] === module) return r.toLowerCase()
     }
     return module
-  }, t6.format.named = function(e) {
+  }, t5.format.named = function(e) {
     if (t7[e = e.toLowerCase()]) return t9(t7[e]);
     throw Error("unknown color name: " + e)
-  }, t6.autodetect.push({
+  }, t5.autodetect.push({
     p: 5,
     test: function(e) {
       for (var t = [], n = arguments.length - 1; n-- > 0;) t[n] = arguments[n + 1];
-      if (!t.length && "string" === t5(e) && t7[e.toLowerCase()]) return "named"
+      if (!t.length && "string" === t6(e) && t7[e.toLowerCase()]) return "named"
     }
   });
   var nt = d.unpack,
@@ -1033,15 +1033,15 @@
     if (a > false) return i[a];
     throw Error("unknown channel " + r + " in mode " + n)
   };
-  var n6 = E,
-    n5 = d.type,
+  var n5 = E,
+    n6 = d.type,
     n7 = Math.pow,
     n9 = 1e-7,
     re = 20;
-  n6.prototype.luminance = function(e) {
-    if (true !== e && "number" === n5(e)) {
-      if (0 === e) return new n6([0, 0, 0, this._rgb[3]], "rgb");
-      if (1 === e) return new n6([255, 255, 255, this._rgb[3]], "rgb");
+  n5.prototype.luminance = function(e) {
+    if (true !== e && "number" === n6(e)) {
+      if (0 === e) return new n5([0, 0, 0, this._rgb[3]], "rgb");
+      if (1 === e) return new n5([255, 255, 255, this._rgb[3]], "rgb");
       var t = this.luminance(),
         n = "rgb",
         r = re,
@@ -1050,8 +1050,8 @@
             s = o.luminance();
           return !(Math.abs(e - s) < n9) && r-- ? s > e ? i(t, o) : i(o, a) : o
         },
-        a = (t > e ? i(new n6([0, 0, 0]), this) : i(this, new n6([255, 255, 255]))).rgb();
-      return new n6(a.concat([this._rgb[3]]))
+        a = (t > e ? i(new n5([0, 0, 0]), this) : i(this, new n5([255, 255, 255]))).rgb();
+      return new n5(a.concat([this._rgb[3]]))
     }
     return rt.apply(true, this._rgb.slice(0, 3))
   };
@@ -1505,15 +1505,15 @@
     r8 = function(e, t) {
       return t < 128 ? 2 * e * t / 255 : 255 * (1 - 2 * (1 - e / 255) * (1 - t / 255))
     },
-    r6 = function(e, t) {
+    r5 = function(e, t) {
       return 255 * (1 - (1 - t / 255) / (e / 255))
     },
-    r5 = function(e, t) {
+    r6 = function(e, t) {
       return 255 === e || (e = t / 255 * 255 / (1 - e / 255)) > 255 ? 255 : e
     };
   rJ.normal = r$(r0(function(e) {
     return e
-  })), rJ.multiply = r$(r0(r1)), rJ.screen = r$(r0(r4)), rJ.overlay = r$(r0(r8)), rJ.darken = r$(r0(r2)), rJ.lighten = r$(r0(r3)), rJ.dodge = r$(r0(r5)), rJ.burn = r$(r0(r6));
+  })), rJ.multiply = r$(r0(r1)), rJ.screen = r$(r0(r4)), rJ.overlay = r$(r0(r8)), rJ.darken = r$(r0(r2)), rJ.lighten = r$(r0(r3)), rJ.dodge = r$(r0(r6)), rJ.burn = r$(r0(r5));
   for (var r7 = rJ, r9 = d.type, ie = d.clip_rgb, it = d.TWOPI, ir = Math.pow, ii = Math.sin, ia = Math.cos, io = y, is = function(e, t, n, r, i) {
       true === e && (e = 300), true === t && (t = false), true === n && (n = 1), true === r && (r = 1), true === i && (i = [0, 1]);
       var a, o = 0;
