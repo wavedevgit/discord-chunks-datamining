@@ -48,7 +48,7 @@ require.d(exports, {
   if: () => eq,
   jP: () => ei,
   jp: () => eC,
-  k5: () => e6,
+  k5: () => e5,
   lY: () => eT,
   m3: () => eN,
   nd: () => eR,
@@ -1536,11 +1536,11 @@ function e8(e) {
   return null == e ? null : e.items.find(e => P.Z1.has(e.planId))
 }
 
-function e5(e) {
+function e6(e) {
   return null != e && null == V(e) && null != e8(e)
 }
 
-function e6(e) {
+function e5(e) {
   let t = null != e ? V(e) : null;
   return null != t ? ep(t.planId) : null
 }
@@ -1792,8 +1792,8 @@ let tZ = Object.freeze({
   getIntervalForInvoice: eY,
   getPremiumPlanItem: V,
   getGuildBoostPlanItem: e8,
-  isBoostOnlySubscription: e5,
-  getPremiumSkuIdForSubscription: e6,
+  isBoostOnlySubscription: e6,
+  getPremiumSkuIdForSubscription: e5,
   getPremiumTypeFromSubscription: e7,
   getPremiumTypeFromSubscriptionRenewalMutations: e9,
   getPremiumGradientColor: te,

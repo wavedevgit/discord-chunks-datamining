@@ -458,8 +458,8 @@ function eD(e, t) {
     isPendingMember: e3,
     disabled: e4,
     canAttachFiles: e8,
-    canCreateThreads: e5,
-    canEveryoneSendMessages: e6
+    canCreateThreads: e6,
+    canEveryoneSendMessages: e5
   } = eN(k, M, e0, x), e7 = M.toolbarType === X.OW.STATIC, e9 = !U.dN.useSetting() && !(0, z.isAndroidWeb)() && null != window.ResizeObserver, te = !e9 || !(null == (n = M.commands) ? true : n.enabled) || !G || f !== el.GI, tt = (0, w.Z)(), {
     fontSize: tn
   } = (0, _.cj)([g.Z], () => ({
@@ -507,9 +507,9 @@ function eD(e, t) {
   } = eR(M, to, ez), tN = ew(to, ez);
   (0, q.S)(to, k.guild_id, k.id);
   let tR = null != Y,
-    tP = e4 && !((e2 || e3) && e6) || tl && (null == (s = M.submit) ? true : s.useDisabledStylesOnSubmit),
+    tP = e4 && !((e2 || e3) && e5) || tl && (null == (s = M.submit) ? true : s.useDisabledStylesOnSubmit),
     tw = null;
-  null != e0 ? tw = null == V ? true : V(e0, e1, eu.attachButton) : (!e4 || e5) && (tw = null == Z ? true : Z(tR, eu.attachButton));
+  null != e0 ? tw = null == V ? true : V(e0, e1, eu.attachButton) : (!e4 || e6) && (tw = null == Z ? true : Z(tR, eu.attachButton));
   let tD = e9 && null != h && !e4 && M.showCharacterCount && null == e0,
     tx = e9 && !__OVERLAY__ && null != h && null == e0 && M.toolbarType !== X.OW.NONE,
     tL = (0, ee.c)({
@@ -603,7 +603,7 @@ function eD(e, t) {
                 placeholder: L,
                 required: P,
                 accessibilityLabel: j,
-                isPreviewing: (e2 || e3) && e6,
+                isPreviewing: (e2 || e3) && e5,
                 channel: k,
                 type: M,
                 canPasteFiles: e8,

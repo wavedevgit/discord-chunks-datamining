@@ -714,15 +714,15 @@ let eJ = async (e, t) => {
       r = l.P[t];
     r || (r = (0, l.r)(t)), r.report(e / 1e3)
   }
-}, e0 = 5e3, e1 = 6e4, e2 = 0, e3, e4 = false, e8 = [], e5 = e => {
+}, e0 = 5e3, e1 = 6e4, e2 = 0, e3, e4 = false, e8 = [], e6 = e => {
   var t, n, r, i;
   if (null != (t = e.event) && t.includes("Sprig_Scroll")) {
     let t = null == (i = null == (r = null == (n = JSON.parse(e.event)) ? true : n.data) ? true : r.payload) ? true : i.xPath;
     if (!t) return;
     el.scrollEventUuids[t] = e.uuid
   }
-  e8.push(e), e4 || e6()
-}, e6 = () => {
+  e8.push(e), e4 || e5()
+}, e5 = () => {
   e4 = true, setTimeout(async () => {
     if (ef() || e_()) return;
     let e = e8;
@@ -1111,7 +1111,7 @@ let eJ = async (e, t) => {
             (0, l.d)("sdk_replay_snapshot_seconds", e / 1e3)
           }
           let n = c || !!t && e.type === f.Meta;
-          c = false, eQ(n, e), e5({
+          c = false, eQ(n, e), e6({
             uuid: (0, l.v)(),
             event: JSON.stringify(e),
             isValidStart: n,
