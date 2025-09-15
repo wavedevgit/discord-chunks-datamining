@@ -2,7 +2,7 @@
 /** chunk id: 279779, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => N
 }), require("./997841.js"), require("./539854.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./415506.js"), require("./361932.js"), require("./187205.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -65,7 +65,23 @@ function T(e, t) {
     null != r && (v(r, t, e.nick), n.push(r))
   }), n
 }
-class S {
+
+function S(e) {
+  var t;
+  let {
+    message: n,
+    nicknameContextId: r
+  } = e, i = c.Z.getChannel(n.channel_id), a = null != r ? r : (null == i ? true : i.isPrivate()) === true ? null == i ? true : i.id : null == i ? true : i.getGuildId(), o = [];
+  if (null != n.author) {
+    let e = O(n.author);
+    null != e && (o.push(e), null != a && v(e, a))
+  }
+  return null == (t = n.mentions) || t.forEach(e => {
+    let t = O(e);
+    null != t && (o.push(t), null != a && v(t, a))
+  }), o
+}
+class A {
   setLimit(e) {
     this._limit = e, null != this._nextQuery && (this._nextQuery.limit = e)
   }
@@ -115,7 +131,7 @@ class S {
     }), this._worker = e, this._uuid = (0, a.Z)(), this._callback = t, this._limit = n, this._currentQuery = null, this._nextQuery = null, this._subscribed = false, this.subscribe()
   }
 }
-class A extends Chunk147913.Z {
+class C extends Chunk147913.Z {
   _initialize() {
     this.rebootWebworker()
   }
@@ -160,7 +176,7 @@ class A extends Chunk147913.Z {
       _worker: n
     } = this;
     if (null == n) throw Error("SearchContextManager: No webworker initialized");
-    return new S(n, e, t)
+    return new A(n, e, t)
   }
   requestDebugState() {
     this.initialize();
@@ -200,7 +216,17 @@ class A extends Chunk147913.Z {
       CHANNEL_CREATE: e => this._handleDMCreate(e),
       CHANNEL_UPDATES: e => this._handleDMUpdates(e),
       CHANNEL_RECIPIENT_ADD: e => this._handleRecipientChanges(e),
-      PASSIVE_UPDATE_V2: e => this._handlePassiveUpdateV2(e)
+      PASSIVE_UPDATE_V2: e => this._handlePassiveUpdateV2(e),
+      THREAD_LIST_SYNC: e => this._handleThreadListSync(e),
+      LOAD_FORUM_POSTS: e => this._handleLoadForumPosts(e),
+      LOAD_MESSAGES_SUCCESS: e => this._handleLoadMessagesSuccess(e),
+      SEARCH_MESSAGES_SUCCESS: e => this._handleSearchMessagesSuccess(e),
+      LOAD_THREADS_SUCCESS: e => this._handleLoadThreadsSuccess(e),
+      LOAD_ARCHIVED_THREADS_SUCCESS: e => this._handleLoadThreadsSuccess(e),
+      LOAD_PINNED_MESSAGES_SUCCESS: e => this._handleLoadPinnedMessagesSuccess(e),
+      GUILD_SCHEDULED_EVENT_USERS_FETCH_SUCCESS: e => this._handleGuildScheduledEventUsersFetchSuccess(e),
+      MESSAGE_CREATE: e => this._handleMessageCreateOrUpdate(e),
+      MESSAGE_UPDATE: e => this._handleMessageCreateOrUpdate(e)
     }), b(this, "_handleLogout", () => {
       this.rebootWebworker()
     }), b(this, "_handleConnectionOpen", () => {
@@ -325,7 +351,109 @@ class A extends Chunk147913.Z {
       if (!r) return;
       let i = O(n);
       v(i, t), this.updateUsers([i], "recipient_changes")
+    }), b(this, "_handleThreadListSync", e => {
+      let {
+        guildId: t,
+        mostRecentMessages: n
+      } = e;
+      if (null == n) return;
+      let r = [];
+      n.forEach(e => {
+        S({
+          message: e,
+          nicknameContextId: t
+        }).forEach(e => r.push(e))
+      }), this.updateUsers(r, "thread_list_sync")
+    }), b(this, "_handleLoadForumPosts", e => {
+      let {
+        guildId: t,
+        threads: n
+      } = e, r = [];
+      Object.values(n).forEach(e => {
+        let {
+          first_message: n,
+          most_recent_message: i,
+          owner: a
+        } = e;
+        null != n && S({
+          message: n,
+          nicknameContextId: t
+        }).forEach(e => r.push(e)), null != i && S({
+          message: i,
+          nicknameContextId: t
+        }).forEach(e => r.push(e)), null != a && T([a], t).forEach(e => r.push(e))
+      }), this.updateUsers(r, "load_forum_posts")
+    }), b(this, "_handleLoadMessagesSuccess", e => {
+      let {
+        messages: t
+      } = e, n = t.flatMap(e => S({
+        message: e
+      }));
+      this.updateUsers(n, "load_messages_success")
+    }), b(this, "_handleLoadPinnedMessagesSuccess", e => {
+      let {
+        pins: t
+      } = e, n = [];
+      t.forEach(e => {
+        let {
+          message: t
+        } = e;
+        S({
+          message: t
+        }).forEach(e => n.push(e))
+      }), this.updateUsers(n, "load_pinned_messages_success")
+    }), b(this, "_handleSearchMessagesSuccess", e => {
+      let {
+        data: t
+      } = e, n = [];
+      t.forEach(e => {
+        let {
+          messages: t
+        } = e;
+        t.forEach(e => {
+          e.forEach(e => {
+            S({
+              message: e
+            }).forEach(e => n.push(e))
+          })
+        })
+      }), this.updateUsers(n, "search_messages_success")
+    }), b(this, "_handleLoadThreadsSuccess", e => {
+      let {
+        guildId: t,
+        firstMessages: n,
+        mostRecentMessages: r,
+        owners: i
+      } = e, a = [];
+      null == n || n.forEach(e => {
+        S({
+          message: e,
+          nicknameContextId: t
+        }).forEach(e => a.push(e))
+      }), null == r || r.forEach(e => {
+        S({
+          message: e,
+          nicknameContextId: t
+        }).forEach(e => a.push(e))
+      }), null != i && T(i, t).forEach(e => a.push(e)), this.updateUsers(a, "load_threads_success")
+    }), b(this, "_handleMessageCreateOrUpdate", e => {
+      let t = S({
+        message: e.message
+      });
+      this.updateUsers(t, "message_create_or_update")
+    }), b(this, "_handleGuildScheduledEventUsersFetchSuccess", e => {
+      let {
+        guildId: t,
+        guildScheduledEventUsers: n
+      } = e, r = [];
+      n.forEach(e => {
+        let {
+          user: n,
+          member: i
+        } = e, a = O(n);
+        null != a && (v(a, t, null == i ? true : i.nick), r.push(a))
+      }), this.updateUsers(r, "guild_scheduled_event_users_fetch_success")
     })
   }
 }
-let C = new A
+let N = new C
