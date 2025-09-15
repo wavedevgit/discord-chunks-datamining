@@ -9,9 +9,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk704215 = require("./704215.js"),
   Chunk667202 = require("./667202.jsx"),
   Chunk481060 = require("./481060.js"),
-  Chunk893776 = require("./893776.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk138201 = require("./138201.jsx"),
+  Chunk210825 = require("./210825.js"),
   Chunk420846 = require("./420846.js"),
   Chunk63063 = require("./63063.js"),
   Chunk168107 = require("./168107.jsx"),
@@ -30,7 +30,7 @@ let _ = function(e) {
     onClose: _,
     onComplete: O,
     dismissable: A
-  } = e, [S, I] = i.useState(a.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), R = i.useRef(S), [w, P] = (0, u.US)([S], true, true), C = i.useMemo(() => (0, l.Z)(), []), N = i.useRef(false);
+  } = e, [S, I] = i.useState(a.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), R = i.useRef(S), [w, P] = (0, s.US)([S], true, true), C = i.useMemo(() => (0, l.Z)(), []), N = i.useRef(false);
   i.useEffect(() => {
     R.current = w
   }, [w]);
@@ -71,7 +71,7 @@ let _ = function(e) {
       textVariant: "text-sm/medium",
       text: x.intl.string(x.t["2jxGen"]),
       onClick: () => {
-        (0, m.x3)(C, m.d_.EXPRESSIVE_PRIMARY, m.sU.LOG_OUT), s.Z.logout("age_verification_get_started_modal")
+        (0, m.x3)(C, m.d_.EXPRESSIVE_PRIMARY, m.sU.LOG_OUT), (0, d.R)("age_verification_get_started_modal")
       }
     }),
     children: (0, r.jsxs)(c.Kqy, {
@@ -122,7 +122,7 @@ let _ = function(e) {
             description: n,
             onClick: i
           } = e;
-          return (0, r.jsx)(d.JZ, {
+          return (0, r.jsx)(u.JZ, {
             variant: "clickable",
             title: t,
             description: n,

@@ -6,13 +6,13 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk893776 = require("./893776.js"),
   Chunk480916 = require("./480916.js"),
   Chunk17597 = require("./17597.jsx"),
   Chunk624138 = require("./624138.js"),
   Chunk845077 = require("./845077.js"),
   Chunk132392 = require("./132392.js"),
   Chunk118589 = require("./118589.js"),
+  Chunk210825 = require("./210825.js"),
   Chunk535188 = require("./535188.jsx"),
   Chunk856597 = require("./856597.jsx"),
   Chunk231338 = require("./231338.js"),
@@ -32,7 +32,7 @@ function x(e) {
   }), [a, o]);
   return i.useEffect(() => {
     o(t)
-  }, [t]), (0, r.jsxs)(d.y.Provider, {
+  }, [t]), (0, r.jsxs)(u.y.Provider, {
     value: c,
     children: [(0, r.jsx)(h.Z, {}), (0, r.jsx)(p.Z, {
       onSubmit: n,
@@ -43,19 +43,19 @@ function x(e) {
 let v = function(e) {
   let {
     onClose: t
-  } = e, [n, d] = i.useState(null), [p, h] = i.useState(true), [v, j] = i.useState(null), [_, O] = i.useState(false), A = i.useCallback(async () => {
+  } = e, [n, u] = i.useState(null), [p, h] = i.useState(true), [v, j] = i.useState(null), [_, O] = i.useState(false), A = i.useCallback(async () => {
     h(true), j(null);
     try {
       var e;
-      let n = await (0, u.PA)();
+      let n = await (0, s.PA)();
       if (null == n) return void t();
-      !(0, s.Ew)(null == (e = n.ui_component) ? true : e.component.type) && f.VZ.has(n.ui_component.component.type) ? d(n) : d({
+      !(0, c.Ew)(null == (e = n.ui_component) ? true : e.component.type) && d.VZ.has(n.ui_component.component.type) ? u(n) : u({
         task_id: n.task_id,
-        task_type: f.UA.REFRESH_APP,
+        task_type: d.UA.REFRESH_APP,
         assignment_id: n.assignment_id,
         ui_component: {
           component: {
-            type: f.NS.REFRESH_APP,
+            type: d.NS.REFRESH_APP,
             data: {}
           }
         },
@@ -78,7 +78,7 @@ let v = function(e) {
           flow_id: n.flow_context.flow_id,
           data: e
         };
-        await (0, u.Wl)(t), A()
+        await (0, s.Wl)(t), A()
       } catch (e) {
         j(g.intl.string(y.default["+QRSxc"]))
       } finally {
@@ -89,20 +89,20 @@ let v = function(e) {
   i.useEffect(() => {
     A()
   }, [A]);
-  let I = i.useMemo(() => (null == n ? true : n.task_type) === f.UA.AGE_VERIFICATION, [n]);
+  let I = i.useMemo(() => (null == n ? true : n.task_type) === d.UA.AGE_VERIFICATION, [n]);
   return (0, r.jsxs)("div", {
     className: b.background,
     children: [(0, r.jsx)("img", {
       className: b.artwork,
       src: E,
       alt: ""
-    }), I ? (0, r.jsx)(c.Z, {
+    }), I ? (0, r.jsx)(o.Z, {
       transitionState: l.Dvm.ENTERED,
-      entryPoint: o.cU.SAFETY_FLOWS,
+      entryPoint: a.cU.SAFETY_FLOWS,
       onClose: m.dG,
       onComplete: async () => {
         await S({
-          type: f.rY.Empty
+          type: d.rY.Empty
         })
       },
       dismissable: false
@@ -142,7 +142,7 @@ let v = function(e) {
                 variant: "secondary",
                 text: g.intl.string(g.t["2jxGen"]),
                 onClick: () => {
-                  a.Z.logout("safety_flows_modal")
+                  (0, f.R)("safety_flows_modal")
                 }
               }), (0, r.jsx)(l.zxk, {
                 fullWidth: true,

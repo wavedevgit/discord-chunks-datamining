@@ -6,10 +6,10 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
-  Chunk893776 = require("./893776.js"),
   Chunk819557 = require("./819557.jsx"),
   Chunk132392 = require("./132392.js"),
   Chunk118589 = require("./118589.js"),
+  Chunk210825 = require("./210825.js"),
   Chunk345262 = require("./345262.js"),
   Chunk241945 = require("./241945.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -41,7 +41,7 @@ let p = {
           gap: 0,
           children: module.flow_context.tasks.map((e, n) => {
             var i;
-            return (0, r.jsx)(a.q, {
+            return (0, r.jsx)(l.q, {
               title: null != (i = p[e.task_type]) ? i : "",
               listType: "numbered",
               index: n,
@@ -54,7 +54,7 @@ let p = {
         variant: "text-md/normal",
         color: "text-secondary",
         children: Chunk388032.intl.format(Chunk241945.default["0DHxys"], {
-          handleLogOut: () => Chunk893776.Z.logout("safety_flows_sidebar")
+          handleLogOut: () => (0, Chunk210825.R)("safety_flows_sidebar")
         })
       })]
     })
