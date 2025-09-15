@@ -87,7 +87,6 @@ function h(e, t) {
           },
           viewCta: C,
           viewCtaTooltip: j,
-          badge: "beta",
           image: {
             staticUrl: _.Z,
             animatedUrl: v.Z
