@@ -195,7 +195,7 @@ function k(e) {
     }), (0, r.jsxs)(w.C3, {
       children: [eO && eK && (0, r.jsx)("div", {
         className: j.bodyGradientPadding
-      }), null != eC && eC, null != ev && ev && (0, r.jsx)(h.Y, {}), (0, r.jsxs)(s.Kqy, {
+      }), null != eC && eC, true === ev && (0, r.jsx)(h.Y, {}), (0, r.jsxs)(s.Kqy, {
         direction: "vertical",
         gap: 8,
         children: [(0, r.jsx)(T.Z, {}), (0, r.jsx)(I.Z, {}), (0, r.jsx)(S.Z, {})]

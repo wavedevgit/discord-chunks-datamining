@@ -181,7 +181,7 @@ function F(e) {
       enablePremiumBrandRefresh: true,
       isApplicationHome: S,
       firstFeatureItemClassName: "inCard" === T ? x.firstFeatureItemContainer : true
-    }), n, h && (0, r.jsx)(O.f, {}), E && (0, r.jsx)(P.g, {})]
+    }), n, h && (0, r.jsx)(O.f, {}), !d && E && (0, r.jsx)(P.g, {})]
   })
 }
 let V = e => {
