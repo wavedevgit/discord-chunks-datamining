@@ -47,6 +47,7 @@ module.exports = {
   variantsSwitch: "variantsSwitch_c50f62",
   variantsThumbnail: "variantsThumbnail_c50f62",
   externalProductProfilePreview: "externalProductProfilePreview_c50f62",
+  wishlistButton: "wishlistButton_c50f62",
   orbIconAligned: "orbIconAligned_c50f62",
   modalFooter: "modalFooter_c50f62",
   modalFooterText: "modalFooterText_c50f62",

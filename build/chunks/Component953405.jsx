@@ -42,14 +42,14 @@ function m(e) {
     isPremiumUser: i,
     discount: c,
     product: m,
-    hasSufficientOrbs: p,
-    isProductDisabled: f,
+    hasSufficientOrbs: f,
+    isProductDisabled: p,
     discountOfferAmount: v
-  } = e, g = null != v;
+  } = e, b = null != v;
   return 0 === n.length ? null : n[0].currency === s.pK.DISCORD_ORB ? (0, r.jsx)(d, {
     orbPrice: n[0],
-    isProductDisabled: f,
-    hasSufficientOrbs: p
+    isProductDisabled: p,
+    hasSufficientOrbs: f
   }) : (0, r.jsxs)("div", {
     className: u.priceLine,
     children: [(0, r.jsxs)("div", {
@@ -58,16 +58,16 @@ function m(e) {
         product: m,
         discount: c,
         isPremiumUser: i,
-        hideStrikethroughPrice: !i || g,
+        hideStrikethroughPrice: !i || b,
         nitroIconType: "tooltip",
         nitroIconSize: "xs",
         discountOfferAmount: v
-      }), i || g ? null : (0, r.jsx)(a.Z, {
+      }), i || b ? null : (0, r.jsx)(a.Z, {
         product: m
       })]
     }), n.length > 1 && n[1].currency === s.pK.DISCORD_ORB && (0, r.jsx)(o.Z, {
       orbAmount: null != (t = n[1].amount) ? t : 1 / 0,
-      className: f || !p ? u.disabled : true
+      className: p || !f ? u.disabled : true
     })]
   })
 }

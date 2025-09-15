@@ -365,7 +365,7 @@ function ef(e) {
     }) : eH && t === eV ? (0, r.jsx)("div", {
       className: o()(q.smallPaddingFooter, q.nitroLocked)
     }) : null
-  }, [eV, eH, eF.length]), e5 = i.useCallback(e => ek((0, G.cK)(e, Array.from(eL.values()).flat(), eS, a, eb)), [a, eS, eL, eb]), e6 = i.useCallback(e => {
+  }, [eV, eH, eF.length]), e6 = i.useCallback(e => ek((0, G.cK)(e, Array.from(eL.values()).flat(), eS, a, eb)), [a, eS, eL, eb]), e5 = i.useCallback(e => {
     (0, u.jW)(e, async () => {
       let {
         default: e
@@ -387,14 +387,14 @@ function ef(e) {
   }) : (0, r.jsx)(c.P3F, {
     tabIndex: 0,
     className: q.settingsClickArea,
-    onClick: e6,
+    onClick: e5,
     "aria-label": z.intl.string(z.t.kbFsAA),
     children: (0, r.jsx)(c.gj8, {
       size: "md",
       color: "currentColor",
       className: q.settingsIcon
     })
-  }), [em, e6]), e9 = i.useCallback(e => (0, r.jsx)(Z.Z, {
+  }), [em, e5]), e9 = i.useCallback(e => (0, r.jsx)(Z.Z, {
     soundboardListRef: e,
     categories: ex,
     shouldUpsellLockedCategories: eH,
@@ -479,7 +479,7 @@ function ef(e) {
       containerWidth: d,
       store: E.Wq,
       onSelectItem: eQ,
-      onSearchExpressions: e5,
+      onSearchExpressions: e6,
       hasSearchResults: eM.length > 0,
       defaultSearchPlaceholder: z.intl.string(z.t.sKt3xc),
       renderRow: eJ,
