@@ -66,7 +66,13 @@ function W(e) {
     } = n;
     if (e(r)) return;
     let i = K(r);
-    null != i && t.push(i)
+    if (null != i) {
+      let e = {
+        record: i,
+        channelId: r
+      };
+      t.push(e)
+    }
   }), t
 }
 
@@ -130,7 +136,7 @@ function z() {
   o.length > 0 && i.push((0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t["80lOZ2"])), ...o);
   let s = W(e => e === r || V.includes(e) || a.has(e));
   if (Chunk442837.length > 0)
-    for (let e of (i.push((0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t["4B63jY"]))), Chunk442837)) Chunk392711.add(module.record.id), i.push(module);
+    for (let e of (i.push((0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t["4B63jY"]))), Chunk442837)) Chunk392711.add(module.channelId), i.push(module.record);
   let l = Chunk306680.ZP.getMentionChannelIds().filter(e => e !== r && !V.includes(e) && !a.has(e)).map(e => K(e)).filter(Chunk823379.lm).reverse();
   if (Chunk433517.length > 0)
     for (let e of (i.push((0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t["61Df19"]))), Chunk433517)) Chunk392711.add(module.record.id), i.push(module);
