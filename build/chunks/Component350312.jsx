@@ -1,7 +1,7 @@
 /** Chunk was on 32249 **/
 /** chunk id: 350312, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -55,10 +55,10 @@ function v(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: f.endScreenCtaContainer,
-    children: [(0, r.jsx)(C, {
+    children: [(0, r.jsx)(g, {
       title: n,
       subtitle: o
-    }), (0, r.jsx)(E, {
+    }), (0, r.jsx)(_, {
       label: t,
       icon: s.d4D,
       onClick: a
@@ -66,7 +66,7 @@ function v(e) {
   })
 }
 
-function C(e) {
+function g(e) {
   let {
     title: t,
     subtitle: n
@@ -85,7 +85,7 @@ function C(e) {
   })
 }
 
-function E(e) {
+function _(e) {
   let {
     label: t,
     icon: n,
@@ -114,7 +114,7 @@ function E(e) {
     })]
   })
 }
-let _ = function(e) {
+let E = function(e) {
   let {
     quest: t,
     ctaBtnLabel: n,

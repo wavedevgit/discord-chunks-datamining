@@ -60,5 +60,6 @@ module.exports = {
   embeddedActivityJoinWrapper: "embeddedActivityJoinWrapper__00943",
   embeddedActivityIcon: "embeddedActivityIcon__00943",
   cloudPlaySectionSeparator: "cloudPlaySectionSeparator__00943",
-  cloudPlaySection: "cloudPlaySection__00943"
+  cloudPlaySection: "cloudPlaySection__00943",
+  cloudPlaySectionTextContainer: "cloudPlaySectionTextContainer__00943"
 }

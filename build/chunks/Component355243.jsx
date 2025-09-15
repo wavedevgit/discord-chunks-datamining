@@ -28,44 +28,44 @@ function v(e) {
     animate: n,
     interactionEnabled: a,
     backgroundColor: v,
-    preloadedBuffers: C,
-    duration: E,
-    maxSeekableTime: _,
-    onClick: g,
+    preloadedBuffers: g,
+    duration: _,
+    maxSeekableTime: E,
+    onClick: C,
     onScrubBack: S,
-    onScrubForward: O
-  } = e, [b, h] = o.useState(null), [y, j] = o.useState(null), [T, x] = o.useState(null), [P, D] = o.useState(false), R = o.useRef(null), I = e => {
-    R.current = e, h(e)
+    onScrubForward: b
+  } = e, [O, h] = o.useState(null), [y, j] = o.useState(null), [x, T] = o.useState(null), [D, P] = o.useState(false), I = o.useRef(null), R = e => {
+    I.current = e, h(e)
   };
   o.useEffect(() => {
-    null != b && (null == _ ? x(null) : x(m(_, E, b)))
-  }, [b, _, E]);
+    null != O && (null == E ? T(null) : T(m(E, _, O)))
+  }, [O, E, _]);
   let N = (0, c.Z)(e => {
-      I(e.contentRect)
+      R(e.contentRect)
     }),
     k = (0, s.y)(N);
   o.useLayoutEffect(() => {
-    null != k.current && I(k.current.getBoundingClientRect())
+    null != k.current && R(k.current.getBoundingClientRect())
   }, [k]), o.useEffect(() => {
     let e = () => {
-      null != k.current && I(k.current.getBoundingClientRect())
+      null != k.current && R(k.current.getBoundingClientRect())
     };
     return window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
   }, [k]);
-  let A = e => {
+  let w = e => {
       j(e.clientX)
     },
-    w = o.useCallback(e => {
+    A = o.useCallback(e => {
       let {
         key: t
       } = e;
-      t === d.mR.ArrowLeft && null != S ? (e.preventDefault(), e.stopPropagation(), S()) : t === d.mR.ArrowRight && null != O && (e.preventDefault(), e.stopPropagation(), O())
-    }, [S, O]),
-    L = null != y && null != b ? p(y, b, E) : 0,
+      t === d.mR.ArrowLeft && null != S ? (e.preventDefault(), e.stopPropagation(), S()) : t === d.mR.ArrowRight && null != b && (e.preventDefault(), e.stopPropagation(), b())
+    }, [S, b]),
+    L = null != y && null != O ? p(y, O, _) : 0,
     M = (0, u.yv)(L),
-    B = null != b ? b.right - m(t / 100 * E, E, b) : null,
-    V = null != y && null != b ? b.right - y : null,
-    F = null != T && null != b ? b.right - T : null;
+    B = null != O ? O.right - m(t / 100 * _, _, O) : null,
+    V = null != y && null != O ? O.right - y : null,
+    F = null != x && null != O ? O.right - x : null;
   return (0, r.jsxs)("div", {
     className: f.cont,
     ref: k,
@@ -75,18 +75,18 @@ function v(e) {
       }),
       ignoreKeyPress: true,
       onClick: e => {
-        a && null != g && g(p(e.clientX, e.currentTarget.getBoundingClientRect(), E))
+        a && null != C && C(p(e.clientX, e.currentTarget.getBoundingClientRect(), _))
       },
       onMouseEnter: e => {
-        a && (null != k.current && I(k.current.getBoundingClientRect()), D(true), A(e))
+        a && (null != k.current && R(k.current.getBoundingClientRect()), P(true), w(e))
       },
       onMouseLeave: e => {
-        a && (D(false), j(null))
+        a && (P(false), j(null))
       },
       onMouseMove: e => {
-        a && P && A(e)
+        a && D && w(e)
       },
-      onKeyDown: w,
+      onKeyDown: A,
       tabIndex: a ? true : false,
       focusProps: {
         offset: {
@@ -94,9 +94,9 @@ function v(e) {
           bottom: 12
         }
       },
-      children: [null == C ? true : C.map(e => (0, r.jsx)("div", {
+      children: [null == g ? true : g.map(e => (0, r.jsx)("div", {
         className: l()(f.buffer, {
-          [f.bufferHovered]: P
+          [f.bufferHovered]: D
         }),
         style: {
           width: "".concat(100 * e.size, "%"),
@@ -113,9 +113,9 @@ function v(e) {
         percent: t,
         foregroundColor: "#FFFFFF",
         backgroundColor: null != v ? v : true,
-        size: P ? i.Exd.Sizes.XSMALL : i.Exd.Sizes.XXSMALL,
+        size: D ? i.Exd.Sizes.XSMALL : i.Exd.Sizes.XXSMALL,
         animate: n
-      }), P && null != M && (0, r.jsx)(i.Text, {
+      }), D && null != M && (0, r.jsx)(i.Text, {
         className: f.timeDisplay,
         variant: "text-xs/normal",
         style: {
@@ -123,7 +123,7 @@ function v(e) {
           color: "#FFFFFF"
         },
         children: M
-      }), P && a && null != B && (0, r.jsx)("div", {
+      }), D && a && null != B && (0, r.jsx)("div", {
         className: f.grabber,
         style: {
           right: "".concat(B - 6, "px")

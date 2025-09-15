@@ -102,7 +102,8 @@ function E(e) {
         unknownSize: 0,
         totalSize: Z.length
       },
-      members: Z
+      members: Z,
+      activity: x
     }, "game-".concat(null != (n = x.session_id) ? n : t, "-").concat(null != (i = x.application_id) ? i : t)));
     else if ((0, o.Z)(x)) {
       let e = new Set(Z.map(e => e.id)),

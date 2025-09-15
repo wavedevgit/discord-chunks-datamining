@@ -160,63 +160,45 @@ let ea = [14, 14, 12, 12, 10, 8, 6],
   ef = e => {
     let {
       activity: t,
-      user: n,
-      analyticsLocations: r
-    } = e, {
-      application_id: i
-    } = t, {
-      data: l
-    } = (0, P.IX)(i), a = (0, G.L)(t), o = (0, C.Z)({
-      application: l,
-      analyticsLocations: r
-    }), s = !a && null != o, c = (0, B.e)({
+      user: n
+    } = e, r = (0, B.e)({
       activity: t,
       user: n,
       supportsAskToJoin: false
-    }), u = !s && null != c;
+    }), i = null != r;
     return {
-      isCloudPlayButtonShown: s,
-      onCloudPlayClick: o,
-      isJoinActivityButtonShown: u,
-      joinActivityButtonAction: c,
-      hasButton: s || u
+      isJoinActivityButtonShown: i,
+      joinActivityButtonAction: r,
+      hasButton: i
     }
   },
   eh = e => {
     let {
       activity: t,
-      user: n,
-      analyticsLocations: r
+      user: n
     } = e, {
-      isCloudPlayButtonShown: l,
-      onCloudPlayClick: a,
-      isJoinActivityButtonShown: o,
-      joinActivityButtonAction: s
+      joinActivityButtonAction: r,
+      isJoinActivityButtonShown: l
     } = ef({
       activity: t,
-      user: n,
-      analyticsLocations: r
+      user: n
     });
-    if (l && null != a) return (0, i.jsx)(ep, {
-      onCloudPlayClick: a,
-      analyticsLocations: r
-    });
-    if (o && null != s) {
+    if (l && null != r) {
       let {
         isJoining: e,
         handleJoinRequest: t,
         buttonCTA: n,
-        tooltip: r,
-        isEnabled: l
-      } = s;
+        tooltip: l,
+        isEnabled: a
+      } = r;
       return (0, i.jsx)(p.ua7, {
-        text: r,
+        text: l,
         children: r => (0, i.jsx)(p.zxk, el(ei({}, r), {
           size: "sm",
           variant: "secondary",
           icon: p.iWm,
           text: n,
-          disabled: !l,
+          disabled: !a,
           loading: e,
           onClick: e => {
             e.stopPropagation(), t()
@@ -228,19 +210,37 @@ let ea = [14, 14, 12, 12, 10, 8, 6],
   },
   eg = e => {
     let {
-      isCloudPlayButtonShown: t
-    } = e, n = (0, R.Nj)(u.z.CLOUD_PLAY_NEW_BADGE);
-    return !t || n ? null : (0, i.jsxs)(i.Fragment, {
+      activity: t,
+      analyticsLocations: n,
+      hidden: r
+    } = e, {
+      application_id: l,
+      name: a
+    } = t, {
+      data: o
+    } = (0, P.IX)(l), s = (0, C.Z)({
+      application: o,
+      analyticsLocations: n
+    }), c = (0, R.Nj)(u.z.CLOUD_PLAY_NEW_BADGE), d = (0, G.L)(t);
+    return null == s || d || r ? null : (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(ed, {
         className: er.cloudPlaySectionSeparator
       }), (0, i.jsxs)("div", {
         className: er.cloudPlaySection,
-        children: [(0, i.jsx)(p.Text, {
-          variant: "text-xs/medium",
-          children: en.intl.string(en.t.IQjdmZ)
-        }), (0, i.jsx)(p.IGR, {
-          text: en.intl.string(en.t.y2b7CA),
-          color: Z.Z.BG_BRAND
+        children: [(0, i.jsxs)("div", {
+          className: er.cloudPlaySectionTextContainer,
+          children: [c ? null : (0, i.jsx)(p.IGR, {
+            text: en.intl.string(en.t.y2b7CA),
+            color: Z.Z.BG_BRAND
+          }), (0, i.jsx)(p.Text, {
+            variant: "text-xs/medium",
+            children: en.intl.formatToPlainString(en.t.RmiYFx, {
+              gameName: a
+            })
+          })]
+        }), (0, i.jsx)(ep, {
+          onCloudPlayClick: s,
+          analyticsLocations: n
         })]
       })]
     })
@@ -437,10 +437,13 @@ eO.Header = e_, eO.Body = e => {
     icon: t,
     name: n,
     partySize: r,
-    members: l
-  } = e;
-  return (0, i.jsx)(eu, {
-    children: (0, i.jsxs)("div", {
+    members: l,
+    activity: a
+  } = e, {
+    analyticsLocations: o
+  } = (0, T.ZP)(S.Z.NOW_PLAYING_ITEM_GAME_SECTION);
+  return (0, i.jsxs)(eu, {
+    children: [(0, i.jsxs)("div", {
       className: er.gameSection,
       children: [null != t ? (0, i.jsx)("img", {
         alt: "",
@@ -454,7 +457,10 @@ eO.Header = e_, eO.Body = e => {
         partySize: r,
         members: l
       })]
-    })
+    }), (0, i.jsx)(eg, {
+      activity: a,
+      analyticsLocations: o
+    })]
   })
 }, eO.RichPresenceSection = e => {
   var t, r;
@@ -471,11 +477,10 @@ eO.Header = e_, eO.Body = e => {
     application_id: f
   } = l, {
     hasButton: h,
-    isCloudPlayButtonShown: g
+    isJoinActivityButtonShown: g
   } = ef({
     activity: l,
-    user: s,
-    analyticsLocations: c
+    user: s
   });
   return (0, i.jsxs)(eu, {
     children: [(0, i.jsxs)("div", {
@@ -516,13 +521,14 @@ eO.Header = e_, eO.Body = e => {
             className: er.__invalid_playTime
           }))
         })()]
-      }), h ? (0, i.jsx)(eh, {
+      }), (0, i.jsx)(eh, {
         activity: l,
-        user: s,
-        analyticsLocations: c
-      }) : null]
+        user: s
+      })]
     }), (0, i.jsx)(eg, {
-      isCloudPlayButtonShown: g
+      activity: l,
+      analyticsLocations: c,
+      hidden: g
     })]
   })
 }, eO.XboxSection = e => {
