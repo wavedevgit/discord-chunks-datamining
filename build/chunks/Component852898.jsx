@@ -19,27 +19,27 @@ function p(e, t) {
   let n = (0, a.e7)([u.Z], () => u.Z.getProps().integrations);
   return i.useMemo(() => (function(e, t, n) {
     var i, a, u, p;
-    let f;
+    let h;
     if (!t.managed) return null;
-    let h = null == (i = t.tags) ? true : i.bot_id,
+    let f = null == (i = t.tags) ? true : i.bot_id,
       b = null == (a = t.tags) ? true : a.integration_id,
       x = (null == (u = t.tags) ? true : u.premium_subscriber) !== true,
       j = (null == (p = t.tags) ? true : p.guild_connections) !== true;
-    if (null != h ? f = null == n ? true : n.find(e => {
+    if (null != f ? h = null == n ? true : n.find(e => {
         var t;
         let {
           application: n
         } = e;
-        return (null == n || null == (t = n.bot) ? true : t.id) === h
-      }) : null != b && (f = null == n ? true : n.find(e => {
+        return (null == n || null == (t = n.bot) ? true : t.id) === f
+      }) : null != b && (h = null == n ? true : n.find(e => {
         let {
           id: t
         } = e;
         return t === b
-      })), null != f && null != f.application && null != f.name) {
-      let e = f.application.id,
-        t = f.name;
-      [l.b.TWITCH, l.b.YOUTUBE].includes(f.type) && (t = "".concat(o.Z.get(f.type).name, " - ").concat(t));
+      })), null != h && null != h.application && null != h.name) {
+      let e = h.application.id,
+        t = h.name;
+      [l.b.TWITCH, l.b.YOUTUBE].includes(h.type) && (t = "".concat(o.Z.get(h.type).name, " - ").concat(t));
       let n = () => {
         d.Z.setSection(m.pNK.INTEGRATIONS), s.Z.setSection(m.b4C.APPLICATION, e)
       };

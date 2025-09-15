@@ -2,62 +2,59 @@
 /** chunk id: 931547, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => c
+  Z: () => l
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk740313 = require("./740313.js");
 
-function c(e) {
+function l(e) {
   let {
     message: t,
     error: n,
     onClick: i,
-    submitting: c,
-    className: u,
-    ctaMessage: d
+    submitting: l,
+    className: c,
+    ctaMessage: u
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(l.container, u),
+    className: a()(s.container, c),
     children: [(0, r.jsxs)("div", {
-      className: l.textContainer,
-      children: [(0, r.jsx)(s.Mgn, {
+      className: s.textContainer,
+      children: [(0, r.jsx)(o.Mgn, {
         size: "custom",
         width: 20,
         height: 20,
         color: "currentColor",
-        className: l.warningIcon
-      }), (0, r.jsx)(s.LZC, {
+        className: s.warningIcon
+      }), (0, r.jsx)(o.LZC, {
         size: 10,
         horizontal: true
       }), (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(s.LZC, {
+        children: [(0, r.jsx)(o.LZC, {
           size: 1
-        }), (0, r.jsx)(s.Text, {
-          className: l.info,
+        }), (0, r.jsx)(o.Text, {
+          className: s.info,
           variant: "text-sm/normal",
           children: t
-        }), null != n && (0, r.jsx)(s.Text, {
-          className: a()(l.info, l.error),
+        }), null != n && (0, r.jsx)(o.Text, {
+          className: a()(s.info, s.error),
           variant: "text-sm/normal",
           children: n
         })]
       })]
-    }), (0, r.jsx)(s.LZC, {
+    }), (0, r.jsx)(o.LZC, {
       size: 16,
       horizontal: true
-    }), (0, r.jsx)(o.zx, {
-      className: l.undoButton,
-      color: o.zx.Colors.LINK,
-      look: o.zx.Looks.LINK,
-      size: o.zx.Sizes.ICON,
+    }), (0, r.jsx)(o.zxk, {
+      variant: "critical-secondary",
+      size: "sm",
       onClick: i,
-      submitting: c,
-      children: d
+      text: u,
+      loading: l
     })]
   })
 }

@@ -38,7 +38,7 @@ function x(e) {
     dragPreview: y,
     drop: C,
     isDragging: N
-  } = (0, f.Z)(v, d, u, x);
+  } = (0, h.Z)(v, d, u, x);
   return O(_), y(C(v)), (0, r.jsxs)("div", {
     ref: v,
     className: a()(b.card, {
@@ -78,7 +78,7 @@ function x(e) {
       children: !j && (0, r.jsx)(o.P3F, {
         className: b.cardActionButton,
         onClick: j ? true : p,
-        "aria-label": h.intl.string(h.t.Eoo8h4),
+        "aria-label": f.intl.string(f.t.Eoo8h4),
         "aria-disabled": j,
         children: (0, r.jsx)(o.vdY, {
           size: "xs",
@@ -97,13 +97,13 @@ function j(e) {
     onMove: l,
     guildId: o
   } = e, m = (0, c.Dt)(), {
-    isDragging: f
+    isDragging: h
   } = (0, s.f)(e => ({
     isDragging: e.getItemType() === m
-  })), h = (0, u.mY)();
+  })), f = (0, u.mY)();
   return 0 === t.length ? null : (0, r.jsx)("div", {
     className: a()(b.container, {
-      [b.isDragging]: f
+      [b.isDragging]: h
     }),
     children: t.map((e, t) => (0, r.jsxs)(i.Fragment, {
       children: [t > 0 ? (0, r.jsx)("div", {
@@ -119,7 +119,7 @@ function j(e) {
         dndName: (0, p.Z)(e),
         onEdit: () => n(t),
         onMove: l,
-        disabled: h
+        disabled: f
       })]
     }, (0, d.ab)(e)))
   })

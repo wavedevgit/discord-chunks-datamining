@@ -1,8 +1,8 @@
 /** Chunk was on 8106 **/
 /** chunk id: 420966, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  V: () => f,
-  Z: () => h
+  V: () => h,
+  Z: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk345987 = require("./345987.js");
 
-function f() {
+function h() {
   let [e, t] = Chunk647438.useState(true);
   return {
     scrolledToTop: module,
@@ -27,22 +27,22 @@ function f() {
   }
 }
 
-function h(e) {
+function f(e) {
   let {
     guild: t,
-    role: f,
-    selectedSection: h,
+    role: h,
+    selectedSection: f,
     setSelectedSection: b
   } = e, x = i.useCallback(e => {
     b(e)
   }, [b]), j = (0, l.e7)([d.Z], () => {
     var e;
-    return null == (e = d.Z.getRoleMemberCount(t.id)) ? true : e[f.id]
-  }, [f.id, t.id]), v = (0, c.fI)(f), _ = (0, u.Z)(t.id, f);
+    return null == (e = d.Z.getRoleMemberCount(t.id)) ? true : e[h.id]
+  }, [h.id, t.id]), v = (0, c.fI)(h), _ = (0, u.Z)(t.id, h);
   i.useEffect(() => {
     v && b(m.ZI.PERMISSIONS)
   }, [v, b]);
-  let O = (0, o.e)(t, f);
+  let O = (0, o.e)(t, h);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: p.titleContainer,
@@ -51,7 +51,7 @@ function h(e) {
         color: "header-primary",
         variant: "text-md/semibold",
         children: g.intl.format(g.t.BUdGkJ, {
-          roleName: f.name
+          roleName: h.name
         })
       }), O ? (0, r.jsx)(a.P3F, {
         className: p.menu,
@@ -81,7 +81,7 @@ function h(e) {
                 return e
               }({}, n), l = l = {
                 guild: t,
-                role: f
+                role: h
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
@@ -107,7 +107,7 @@ function h(e) {
     }) : null, (0, r.jsxs)(a.njP, {
       className: p.tabBar,
       "aria-label": g.intl.string(g.t["+1H47u"]),
-      selectedItem: h,
+      selectedItem: f,
       type: "top",
       look: "brand",
       onItemSelect: x,

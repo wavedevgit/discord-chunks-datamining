@@ -283,10 +283,9 @@ let k = 24,
               children: e => (0, r.jsx)(I.Z, M(L({}, e), {
                 fullWidth: true,
                 disabled: !v || x,
-                submitting: S,
+                loading: S,
                 onClick: O,
-                onlyShineOnHover: true,
-                children: w.intl.string(w.t.fM5Zsb)
+                text: w.intl.string(w.t.fM5Zsb)
               }))
             }), (0, r.jsx)(c.LZC, {
               size: 16

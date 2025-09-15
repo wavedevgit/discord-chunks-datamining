@@ -2,7 +2,7 @@
 /** chunk id: 974513, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   O4: () => b,
-  OA: () => h,
+  OA: () => f,
   Wu: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -36,7 +36,7 @@ function p(e) {
   return e
 }
 
-function f(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,7 +49,7 @@ function f(e, t) {
   }), e
 }
 
-function h(e, t) {
+function f(e, t) {
   let n = (0, l.Wu)([u.Z], () => (0, c.kl)(e, t, u.Z.editedOnboardingPrompts));
   return [(0, l.Wu)([u.Z], () => (0, c.kl)(e, t, u.Z.editedOnboardingPrompts, c.V7)), n]
 }
@@ -69,7 +69,7 @@ function x(e) {
     className: n
   } = e, c = (0, l.e7)([o.Z], () => o.Z.isAdvancedMode(t)), u = i.useCallback(() => {
     let e = c ? m.Un.ONBOARDING_DEFAULT : m.Un.ONBOARDING_ADVANCED;
-    c ? (0, s.h7j)(n => (0, r.jsx)(s.ConfirmModal, f(p({
+    c ? (0, s.h7j)(n => (0, r.jsx)(s.ConfirmModal, h(p({
       header: g.intl.string(g.t["49+ONj"]),
       confirmText: g.intl.string(g.t.R9GHyc),
       cancelText: g.intl.string(g.t["ETE/oK"]),
@@ -80,7 +80,7 @@ function x(e) {
         variant: "text-md/normal",
         children: g.intl.string(g.t.TLkoOj)
       })
-    }))) : (0, s.h7j)(n => (0, r.jsx)(s.ConfirmModal, f(p({
+    }))) : (0, s.h7j)(n => (0, r.jsx)(s.ConfirmModal, h(p({
       header: g.intl.string(g.t.YB9xUF),
       confirmText: g.intl.string(g.t.ts6u6u),
       cancelText: g.intl.string(g.t["ETE/oK"]),

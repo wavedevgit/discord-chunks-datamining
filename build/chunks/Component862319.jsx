@@ -1,8 +1,8 @@
 /** Chunk was on 8106 **/
 /** chunk id: 862319, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f,
-  w: () => h
+  Z: () => h,
+  w: () => f
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -48,13 +48,13 @@ function p(e, t) {
   }), e
 }
 
-function f(e) {
+function h(e) {
   let {
     channelBenefits: t,
     intangibleBenefits: i,
     subscriptionListings: s,
-    onImport: f
-  } = e, h = (0, d.mY)();
+    onImport: h
+  } = e, f = (0, d.mY)();
   return (0, r.jsx)("div", {
     className: m.container,
     children: s.map(e => (0, r.jsxs)("div", {
@@ -89,18 +89,18 @@ function f(e) {
               fromSubscriptionListing: e,
               existingChannelBenefits: t,
               existingIntangibleBenefits: i,
-              onSubmit: f
+              onSubmit: h
             }))
           })
         },
-        disabled: h,
+        disabled: f,
         text: u.intl.string(u.t["90bIv7"])
       })]
     }, e.id))
   })
 }
 
-function h(e) {
+function f(e) {
   let {
     guildId: t,
     onImport: i,

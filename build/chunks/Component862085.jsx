@@ -22,13 +22,13 @@ function c(e) {
   let {
     headerText: g,
     descriptionText: p,
-    icon: f
+    icon: h
   } = m;
   return (0, r.jsxs)("div", {
     className: o.actionContainer,
     children: [(0, r.jsx)("div", {
       className: o.actionIconContainer,
-      children: (0, r.jsx)(f, {
+      children: (0, r.jsx)(h, {
         size: "custom",
         color: "currentColor",
         className: o.actionIcon

@@ -49,9 +49,9 @@ function m(e) {
     rule: n,
     onChangeRule: m,
     collapsed: g = false
-  } = e, [p, f] = i.useState(!g), h = i.useCallback(() => {
-    f(!p)
-  }, [p, f]), b = i.useCallback(e => {
+  } = e, [p, h] = i.useState(!g), f = i.useCallback(() => {
+    h(!p)
+  }, [p, h]), b = i.useCallback(e => {
     m(u(d({}, n), {
       triggerMetadata: u(d({}, n.triggerMetadata), {
         regexPatterns: e
@@ -73,7 +73,7 @@ function m(e) {
       } = e;
       return (0, r.jsx)(l.P3F, {
         onClick: e => {
-          h(), t(e)
+          f(), t(e)
         },
         children: (0, r.jsxs)("div", {
           className: c.header,

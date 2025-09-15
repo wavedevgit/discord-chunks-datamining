@@ -1,7 +1,7 @@
 /** Chunk was on 8106 **/
 /** chunk id: 500395, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -52,14 +52,13 @@ function p(e) {
         notice: n,
         ctaLabel: i,
         ctaDisabled: !a,
-        ctaClassName: m.waitlistCtaButton,
         onClick: s
       })]
     })]
   })
 }
 
-function f(e) {
+function h(e) {
   let {
     guild: t,
     config: n

@@ -103,7 +103,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
     } = e, [a, s] = i.useState(true === d.K.get(Z)), g = (0, o.e7)([x.Z], () => {
       var e;
       return null != (e = x.Z.getMemberCount(l.id)) ? e : 0
-    }), [f, b] = i.useState(false);
+    }), [h, b] = i.useState(false);
     (0, p.ZP)(() => {
       c.tn.get({
         url: I.ANM.GUILD_ADMIN_SERVER_ELIGIBILITY(l.id),
@@ -113,7 +113,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
       }).catch(() => b(false))
     });
     let v = (0, o.e7)([j.Z], () => j.Z.getGuild("942897714956472401")),
-      _ = l.features.has(I.oNc.COMMUNITY) && g >= 1e3 && f && null == v;
+      _ = l.features.has(I.oNc.COMMUNITY) && g >= 1e3 && h && null == v;
     if (t && n && !_) return null;
     let O = async () => {
       try {
@@ -122,7 +122,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
           oldFormErrors: true,
           rejectWithError: true
         });
-        y.Z.close(), (0, h.X)(e.body.id)
+        y.Z.close(), (0, f.X)(e.body.id)
       } catch (e) {}
     };
     return a && !_ ? null : (0, r.jsxs)("div", {
@@ -224,7 +224,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
       } = e;
       t.type === I.d4z.GUILD_TEXT && g.push({
         value: t.id,
-        label: (0, f.F6)(t, O.default, _.Z, true)
+        label: (0, h.F6)(t, O.default, _.Z, true)
       })
     });
     let p = () => {
@@ -236,7 +236,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
           publicUpdatesChannelId: null
         })
       },
-      h = e => {
+      f = e => {
         y.Z.updateGuild({
           description: e
         })

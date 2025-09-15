@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk687726 = require("./687726.js");
 
-function h(e) {
+function f(e) {
   let {
     title: t,
     subtitle: n,
@@ -25,9 +25,9 @@ function h(e) {
     page: a
   } = e;
   return (0, r.jsxs)("div", {
-    className: f.safetyStepRow,
+    className: h.safetyStepRow,
     children: [(0, r.jsxs)("div", {
-      className: f.safetyStepContent,
+      className: h.safetyStepContent,
       children: [(0, r.jsx)(l.qEK, {
         src: i,
         size: l.EFr.SIZE_40,
@@ -88,13 +88,13 @@ function b(e) {
     children: [(0, r.jsx)(l.X6q, {
       variant: "heading-lg/semibold",
       color: "header-primary",
-      className: f.header,
+      className: h.header,
       children: p.intl.string(p.t["0A+VSE"])
     }), (0, r.jsx)(d.z, {
       guild: t
     }), (0, r.jsxs)("div", {
-      className: f.safetyChecklist,
-      children: [(0, r.jsx)(h, {
+      className: h.safetyChecklist,
+      children: [(0, r.jsx)(f, {
         icon: n(14215),
         title: p.intl.string(p.t["53eF5u"]),
         subtitle: p.intl.formatToPlainString(p.t.TG7NYG, {
@@ -103,8 +103,8 @@ function b(e) {
         }),
         page: m.u.CAPTCHA_AND_RAID_PROTECTION
       }), (0, r.jsx)("div", {
-        className: f.divider
-      }), (0, r.jsx)(h, {
+        className: h.divider
+      }), (0, r.jsx)(f, {
         icon: n(128724),
         title: p.intl.string(p.t.O0SfFx),
         subtitle: p.intl.formatToPlainString(p.t.TG7NYG, {
@@ -113,9 +113,9 @@ function b(e) {
         }),
         page: m.u.DM_AND_SPAM_PROTECTION
       }), (0, r.jsx)("div", {
-        className: f.divider
+        className: h.divider
       }), C && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(h, {
+        children: [(0, r.jsx)(f, {
           icon: n(145136),
           title: p.intl.string(p.t.uRelg4),
           subtitle: p.intl.formatToPlainString(p.t.TG7NYG, {
@@ -124,9 +124,9 @@ function b(e) {
           }),
           page: m.u.AUTOMOD
         }), (0, r.jsx)("div", {
-          className: f.divider
+          className: h.divider
         })]
-      }), (0, r.jsx)(h, {
+      }), (0, r.jsx)(f, {
         icon: n(913414),
         title: p.intl.string(p.t.xrmhRU),
         subtitle: p.intl.formatToPlainString(p.t.TG7NYG, {

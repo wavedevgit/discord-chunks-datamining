@@ -5,7 +5,7 @@ require.d(exports, {
   Hz: () => y,
   To: () => I,
   XG: () => O,
-  _N: () => f,
+  _N: () => h,
   ad: () => v,
   bj: () => P,
   el: () => b,
@@ -15,7 +15,7 @@ require.d(exports, {
   oo: () => E,
   q6: () => T,
   r2: () => _,
-  vR: () => h
+  vR: () => f
 }), require("./361932.js"), require("./187205.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -30,14 +30,14 @@ var Chunk392711 = require("./392711.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function f(e) {
+function h(e) {
   a.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_UPDATE_WELCOME_MESSAGE",
     welcomeMessage: e
   })
 }
 
-function h(e) {
+function f(e) {
   a.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_ADD_NEW_MEMBER_ACTION",
     action: e
@@ -203,7 +203,7 @@ function I(e, t) {
   }), n)))
 }
 async function S(e, t) {
-  var n, r, o, u, m, f, h, b, x;
+  var n, r, o, u, m, h, f, b, x;
   a.Z.dispatch({
     type: "GUILD_HOME_SETTINGS_UPDATE_START"
   });
@@ -223,8 +223,8 @@ async function S(e, t) {
       guild_id: e,
       welcome_message_author_id: (null != (u = null == s || null == (n = s.welcomeMessage) ? true : n.authorIds) ? u : [])[0],
       welcome_message_length: null != (m = null == s || null == (o = s.welcomeMessage) || null == (r = o.message) ? true : r.length) ? m : 0,
-      member_action_channel_ids: (null != (f = null == s ? true : s.newMemberActions) ? f : []).map(e => e.channelId),
-      member_action_channel_actions: (null != (h = null == s ? true : s.newMemberActions) ? h : []).map(e => e.actionType),
+      member_action_channel_ids: (null != (h = null == s ? true : s.newMemberActions) ? h : []).map(e => e.channelId),
+      member_action_channel_actions: (null != (f = null == s ? true : s.newMemberActions) ? f : []).map(e => e.actionType),
       resource_channel_ids: (null != (b = null == s ? true : s.resourceChannels) ? b : []).map(e => e.channelId),
       enabled: null == s ? true : s.enabled
     }), i.body

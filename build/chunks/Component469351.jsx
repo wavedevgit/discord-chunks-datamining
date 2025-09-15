@@ -49,8 +49,8 @@ function w(e) {
     let t = {
       [e.id]: e
     };
-    (0, f.iD)(R.id, {
-      type: h.z.SERVER_SHOP,
+    (0, h.iD)(R.id, {
+      type: f.z.SERVER_SHOP,
       roles: t,
       initialTab: "guild_products",
       returnToSection: I.pNK.GUILD_PRODUCTS

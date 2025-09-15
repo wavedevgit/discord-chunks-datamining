@@ -46,12 +46,12 @@ function D(e) {
       guildId: n
     } = e,
     l = (0, s.e7)([_.Z], () => _.Z.getCurrentPage()),
-    f = (0, s.e7)([_.Z], () => {
+    h = (0, s.e7)([_.Z], () => {
       let e = (0, O.lg)(l);
       return null != e && !_.Z.isEducationUpsellDismissed(e)
     }),
     v = (0, y.Z)(n),
-    Z = !v && f;
+    Z = !v && h;
   switch (i.useEffect(() => {
       (0, m.Q3)(o.z.COMMUNITY_ONBOARDING_NEW_BADGE)
     }, []), l) {
@@ -105,7 +105,7 @@ function D(e) {
               intensity: u.$x
             }), p.S.dispatch(P.CkL.EMPHASIZE_NOTICE);
             return
-          }(0, j.NB)(), (0, h.BG)(), (0, x.bj)(), (0, b.$K)(O.PG.LANDING)
+          }(0, j.NB)(), (0, f.BG)(), (0, x.bj)(), (0, b.$K)(O.PG.LANDING)
         },
         children: [(0, r.jsx)(g.Z, {
           className: R.arrow,

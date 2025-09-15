@@ -20,15 +20,15 @@ function m(e) {
     allPeriods: m
   } = e, g = (0, i.e7)([o.Z], () => o.Z.getGuild(t)), p = (0, c.qi)(t, {
     includeSoftDeleted: true
-  }), f = (0, s.ue)(t, {
+  }), h = (0, s.ue)(t, {
     publishedOnly: false
   }), {
-    allowSelfRemoveMonetization: h
+    allowSelfRemoveMonetization: f
   } = (0, a.gX)(t), b = m.filter(e => {
     var t;
     let n = Object.values(null != (t = e.ppgs) ? t : {})[0];
     return (null == n ? true : n.status) === d.x_.OPEN || (null == n ? true : n.status) === d.x_.PAYOUT_DEFERRED
-  }), x = p.length > 0, j = f.length > 0, v = b.length > 0;
+  }), x = p.length > 0, j = h.length > 0, v = b.length > 0;
   return null == g ? null : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(l.R94, {
       type: l.R94.Types.DESCRIPTION,
@@ -40,7 +40,7 @@ function m(e) {
     }), (0, r.jsx)(l.zxk, {
       variant: "critical-primary",
       text: u.intl.string(u.t.FrOFSk),
-      disabled: !h || x || j || v,
+      disabled: !f || x || j || v,
       onClick: () => {
         (0, l.ZDy)(async () => {
           let {

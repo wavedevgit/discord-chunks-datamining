@@ -398,11 +398,10 @@ let Q = 32,
               })]
             })]
           }), i(), eu && (0, r.jsx)(N.Z, {
-            className: W.ctaButton,
-            size: u.zx.Sizes.SMALL,
+            text: ea ? Y.intl.string(Y.t.yma8Vl) : Y.intl.string(Y.t.nN2DIi),
+            size: "sm",
             fullWidth: true,
-            onClick: t,
-            children: ea ? Y.intl.string(Y.t.yma8Vl) : Y.intl.string(Y.t.nN2DIi)
+            onClick: t
           })]
         })
       },

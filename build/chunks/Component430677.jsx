@@ -62,10 +62,10 @@ let _ = function(e) {
     onDragStart: T,
     onDragComplete: P,
     onDragReset: w
-  } = e, R = (0, s.e7)([p.Z], () => p.Z.getChannel(N.channelId)), Z = (0, s.e7)([f.Z], () => f.Z.getGuild(C)), {
+  } = e, R = (0, s.e7)([p.Z], () => p.Z.getChannel(N.channelId)), Z = (0, s.e7)([h.Z], () => h.Z.getGuild(C)), {
     customEmoji: D,
     unicodeEmoji: A
-  } = (0, u.Z)(null == (t = N.emoji) ? true : t.id, null == (l = N.emoji) ? true : l.name), L = null == N.emoji || null != D || null != A, k = h.ZP.getNewMemberActionIconURL({
+  } = (0, u.Z)(null == (t = N.emoji) ? true : t.id, null == (l = N.emoji) ? true : l.name), L = null == N.emoji || null != D || null != A, k = f.ZP.getNewMemberActionIconURL({
     channelId: N.channelId,
     icon: N.icon
   }), M = null;

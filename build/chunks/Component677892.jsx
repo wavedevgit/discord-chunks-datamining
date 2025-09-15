@@ -37,12 +37,12 @@ function b(e) {
         children: [(0, r.jsx)(s.dz2, {
           size: "xs",
           color: "currentColor",
-          className: h.checkmark
+          className: f.checkmark
         }), (0, r.jsx)(s.Text, {
           variant: "text-xs/semibold",
           color: "status-positive",
-          className: h.statusText,
-          children: f.intl.string(f.t.rPnzRU)
+          className: f.statusText,
+          children: h.intl.string(h.t.rPnzRU)
         })]
       });
       break;
@@ -51,12 +51,12 @@ function b(e) {
         children: [(0, r.jsx)(s.Mgn, {
           size: "xs",
           color: "currentColor",
-          className: h.warning
+          className: f.warning
         }), (0, r.jsx)(s.Text, {
           variant: "text-xs/semibold",
           color: "status-warning",
-          className: h.statusText,
-          children: f.intl.string(f.t["yTa+dn"])
+          className: f.statusText,
+          children: h.intl.string(h.t["yTa+dn"])
         })]
       });
       break;
@@ -65,24 +65,24 @@ function b(e) {
         children: [(0, r.jsx)(s.Mgn, {
           size: "xs",
           color: "currentColor",
-          className: h.danger
+          className: f.danger
         }), (0, r.jsx)(s.Text, {
           variant: "text-xs/semibold",
           color: "status-danger",
-          className: h.statusText,
-          children: f.intl.string(f.t.EkokLy)
+          className: f.statusText,
+          children: h.intl.string(h.t.EkokLy)
         })]
       })
   }
   return (0, r.jsxs)("div", {
-    className: h.onboardingStepContainer,
+    className: f.onboardingStepContainer,
     children: [(0, r.jsxs)("div", {
-      className: h.leftContainer,
+      className: f.leftContainer,
       children: [(0, r.jsx)("div", {
-        className: h.iconContainer,
+        className: f.iconContainer,
         children: l
       }), (0, r.jsxs)("div", {
-        className: h.onboardingStepText,
+        className: f.onboardingStepText,
         children: [(0, r.jsx)(s.X6q, {
           variant: "heading-md/semibold",
           children: n
@@ -93,21 +93,21 @@ function b(e) {
         })]
       })]
     }), (0, r.jsxs)("div", {
-      className: h.rightContainer,
+      className: f.rightContainer,
       children: [t, d, (0, r.jsx)("div", {
-        className: h.cta,
+        className: f.cta,
         children: a ? (0, r.jsx)(s.zxk, {
           size: "sm",
           variant: "secondary",
           onClick: c,
-          text: f.intl.string(f.t.bt75u7)
+          text: h.intl.string(h.t.bt75u7)
         }) : (0, r.jsx)(s.zxk, {
           icon: s.ZSh,
           iconPosition: "end",
           size: "sm",
           variant: "secondary",
           onClick: c,
-          text: f.intl.string(f.t["0GWElZ"])
+          text: h.intl.string(h.t["0GWElZ"])
         })
       })]
     })]
@@ -132,22 +132,22 @@ function v(e) {
     guildId: t,
     onEdit: n,
     disableGoodStatus: a
-  } = e, d = (0, l.Wu)([o.Z], () => o.Z.getDefaultChannelIds(t)), u = (0, l.e7)([o.Z], () => (0, c.kl)(t, o.Z.getDefaultChannelIds(t), o.Z.getOnboardingPrompts(t)).length), m = i.useMemo(() => new Set(d), [d]), [, j] = (0, c.VF)(t, m), v = j.length, _ = x(t), O = (0, g.O4)(t), y = (0, l.e7)([o.Z], () => o.Z.isAdvancedMode(t)), C = y ? f.intl.formatToPlainString(f.t.nHwnLC, {
+  } = e, d = (0, l.Wu)([o.Z], () => o.Z.getDefaultChannelIds(t)), u = (0, l.e7)([o.Z], () => (0, c.kl)(t, o.Z.getDefaultChannelIds(t), o.Z.getOnboardingPrompts(t)).length), m = i.useMemo(() => new Set(d), [d]), [, j] = (0, c.VF)(t, m), v = j.length, _ = x(t), O = (0, g.O4)(t), y = (0, l.e7)([o.Z], () => o.Z.isAdvancedMode(t)), C = y ? h.intl.formatToPlainString(h.t.nHwnLC, {
     numDefaultChannels: v,
     numFromQuestions: u - v
-  }) : _ ? f.intl.formatToPlainString(f.t.HxEwSk, {
+  }) : _ ? h.intl.formatToPlainString(h.t.HxEwSk, {
     numDefaultChannels: v
-  }) : f.intl.formatToPlainString(f.t.ey3uVV, {
+  }) : h.intl.formatToPlainString(h.t.ey3uVV, {
     numDefaultChannels: p.md,
     numChattableChannels: p.X
   });
   return (0, r.jsx)(b, {
-    title: y ? f.intl.string(f.t.YZookZ) : f.intl.string(f.t["4GSygo"]),
+    title: y ? h.intl.string(h.t.YZookZ) : h.intl.string(h.t["4GSygo"]),
     description: C,
     icon: (0, r.jsx)(s.VL1, {
       size: "md",
       color: "currentColor",
-      className: h.channelIcon
+      className: f.channelIcon
     }),
     hasStarted: v > 0 || y,
     status: _ || O ? a ? "none" : "good" : "required",
@@ -162,8 +162,8 @@ function _(e) {
     disableGoodStatus: i
   } = e, a = (0, l.Wu)([o.Z], () => o.Z.getDefaultChannelIds(t)), d = (0, l.Wu)([o.Z], () => o.Z.getOnboardingPrompts(t)), u = d.length, [m, g] = (0, c.dF)(t, d, a), p = m.length, x = m.length + g.length, j = p / x * 100, v = (0, l.e7)([o.Z], () => o.Z.isAdvancedMode(t)), _ = u > 0, O = "none";
   return _ && (j >= 85 && !i ? O = "good" : j < 85 && (O = "warning")), (0, r.jsx)(b, {
-    title: v ? f.intl.string(f.t.AGjtFh) : f.intl.string(f.t.dqCzoa),
-    description: f.intl.format(f.t.iuNisr, {
+    title: v ? h.intl.string(h.t.AGjtFh) : h.intl.string(h.t.dqCzoa),
+    description: h.intl.format(h.t.iuNisr, {
       numChannels: p,
       numTotalChannels: x,
       channelsHook: (e, t) => (0, r.jsx)("span", {
@@ -176,7 +176,7 @@ function _(e) {
     icon: (0, r.jsx)(s.iFz, {
       size: "md",
       color: "currentColor",
-      className: h.channelIcon
+      className: f.channelIcon
     }),
     hasStarted: _,
     status: O,
@@ -193,23 +193,23 @@ function O(e) {
     (0, u.To)(t, !j)
   }, [t, j]), _ = !(0, d.av)(g), O = "none";
   _ && (x && !c ? O = "good" : x || (O = "required"));
-  let y = f.intl.string(f.t.GMOwOD);
-  x ? _ || (y = f.intl.string(f.t.wHOoyM)) : y = f.intl.string(f.t.wXFbgY);
+  let y = h.intl.string(h.t.GMOwOD);
+  x ? _ || (y = h.intl.string(h.t.wHOoyM)) : y = h.intl.string(h.t.wXFbgY);
   let C = null;
   return _ && p && (C = (0, r.jsx)("div", {
-    className: h.inlineSwitch,
+    className: f.inlineSwitch,
     children: (0, r.jsx)(a.T2, {
       checked: j,
       onChange: v,
       disabled: !x
     })
   })), (0, r.jsx)(b, {
-    title: f.intl.string(f.t.mRHqsr),
+    title: h.intl.string(h.t.mRHqsr),
     description: y,
     icon: (0, r.jsx)(s.Vy8, {
       size: "md",
       color: "currentColor",
-      className: h.channelIcon
+      className: f.channelIcon
     }),
     hasStarted: _,
     status: O,

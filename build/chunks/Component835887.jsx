@@ -20,11 +20,11 @@ function p(e) {
     className: t,
     guildId: n,
     selectedBadge: p
-  } = e, f = i.useCallback(e => {
+  } = e, h = i.useCallback(e => {
     c.Z.updateGuildProfile(n, {
       badge: e
     })
-  }, [n]), h = i.useCallback(() => {
+  }, [n]), f = i.useCallback(() => {
     (0, o.Z)(n, a.Z.GUILD_POWERUPS_GUILD_SETTINGS_TAGS, "guildTagsBadgePacks"), c.Z.close()
   }, [n]), b = (0, s.Z)(), x = i.useId();
   return (0, r.jsxs)("div", {
@@ -35,8 +35,8 @@ function p(e) {
       children: m.intl.string(u.default.pb7lpK)
     }), (0, r.jsx)(d.g, {
       badgeCollection: b,
-      handleBoostUpsellClick: h,
-      onBadgeClicked: f,
+      handleBoostUpsellClick: f,
+      onBadgeClicked: h,
       selectedBadge: p,
       headingId: x
     })]

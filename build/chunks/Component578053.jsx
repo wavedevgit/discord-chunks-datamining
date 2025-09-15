@@ -63,11 +63,11 @@ function v(e) {
     });
     return e.unshift({
       value: b,
-      label: h.intl.string(h.t.wGiHkJ)
+      label: f.intl.string(f.t.wGiHkJ)
     }), e
   }, [c]), u = i.useCallback(e => {
     let t = e === b ? null : e;
-    f.Z.updateGuild({
+    h.Z.updateGuild({
       afkChannelId: t
     })
   }, []);
@@ -98,11 +98,11 @@ function _(e) {
     });
     return e.unshift({
       value: b,
-      label: h.intl.string(h.t.ibUhoa)
+      label: f.intl.string(f.t.ibUhoa)
     }), e
   }, [c]), u = i.useCallback(e => {
     let t = e === b ? null : e;
-    f.Z.updateGuild({
+    h.Z.updateGuild({
       systemChannelId: t
     })
   }, []);

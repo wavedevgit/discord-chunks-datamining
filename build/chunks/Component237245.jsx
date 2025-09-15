@@ -61,7 +61,7 @@ function E(e) {
   var t;
   let {
     pendingState: l,
-    dirtyState: h,
+    dirtyState: f,
     originalGuild: x,
     settingsGuild: E,
     settingsMetadata: I,
@@ -69,7 +69,7 @@ function E(e) {
   } = e, T = E.id, [P, w] = i.useState(false), [R, Z] = i.useState(null), D = E.features.has(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), A = null != (t = (0, g.A)({
     guildId: E.id
   })) ? t : 0, L = i.useCallback(() => {
-    Z(null), f.Z.init(T, _.pNK.ACCESS)
+    Z(null), h.Z.init(T, _.pNK.ACCESS)
   }, [T]), k = i.useCallback(async e => {
     try {
       w(true), await e(), Z(null)
@@ -78,7 +78,7 @@ function E(e) {
     }
   }, []), M = i.useCallback(async e => {
     try {
-      await f.Z.saveGuild(T, e, {
+      await h.Z.saveGuild(T, e, {
         throwErr: true
       })
     } catch (e) {
@@ -118,7 +118,7 @@ function E(e) {
             features: e
           })
         }
-        h.verificationDirty && await U(t, r, e)
+        f.verificationDirty && await U(t, r, e)
       })
     } else if (l.joinType === j.A.APPLY) {
       let {
@@ -132,7 +132,7 @@ function E(e) {
             features: e
           })
         }
-        h.verificationDirty && await G([...t], true, e), h.profileDirty && null != S && await (0, p.pV)(E.id, {
+        f.verificationDirty && await G([...t], true, e), f.profileDirty && null != S && await (0, p.pV)(E.id, {
           visibility: S.visibility
         })
       })
@@ -142,7 +142,7 @@ function E(e) {
         termRules: n = []
       } = l, r = n.map(e => e.value.trim()).filter(e => "" !== e);
       k(async () => {
-        if (h.verificationDirty && await U(t, r, e), h.guildDirty) {
+        if (f.verificationDirty && await U(t, r, e), f.guildDirty) {
           (0, b.UA)(E, x);
           let e = new Set(E.features);
           e.add(_.oNc.DISCOVERABLE), e.delete(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), await M({
@@ -161,7 +161,7 @@ function E(e) {
         }
       })
     }
-  }, [l, k, E, h, M, U, S, G, x, I]), F = i.useCallback(() => {
+  }, [l, k, E, f, M, U, S, G, x, I]), F = i.useCallback(() => {
     var e;
     if (l.joinType === j.A.INVITE || l.joinType === j.A.DISCOVERABLE) {
       let {

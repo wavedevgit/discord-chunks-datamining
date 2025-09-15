@@ -1,7 +1,7 @@
 /** Chunk was on 8106 **/
 /** chunk id: 509026, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -47,10 +47,10 @@ function p(e, t) {
   }), e
 }
 
-function f(e) {
+function h(e) {
   let {
     guild: t
-  } = e, f = (0, i.e7)([a.Z], () => a.Z.isUploadingEmoji()), h = (0, u.Z)(t.id), b = (0, d.Z)(t) - h.length, x = (0, c.mY)();
+  } = e, h = (0, i.e7)([a.Z], () => a.Z.isUploadingEmoji()), f = (0, u.Z)(t.id), b = (0, d.Z)(t) - f.length, x = (0, c.mY)();
   return (0, r.jsxs)(l.hjN, {
     title: m.intl.string(m.t.LDT0Q0),
     disabled: x,
@@ -75,20 +75,20 @@ function f(e) {
           }))
         })
       },
-      disabled: x || f || 0 === b,
+      disabled: x || h || 0 === b,
       size: "md",
       variant: "primary",
       text: m.intl.string(m.t.AuPtoq),
-      loading: f
+      loading: h
     }), (0, r.jsx)(l.LZC, {
       size: 24
     }), (0, r.jsx)(s.L3, {
       title: m.intl.string(m.t.lu1ZQ0),
       maxSlots: (0, d.Z)(t),
-      emojiCount: h.length
+      emojiCount: f.length
     }), (0, r.jsx)(s.FT, {
       guild: t,
-      emojis: h,
+      emojis: f,
       onEdit: (e, t) => {
         (0, l.ZDy)(async () => {
           let {

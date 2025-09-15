@@ -16,7 +16,7 @@ function u(e, t) {
   let n = (0, i.e7)([s.Z], () => s.Z.getGuild(e)),
     [u, m] = r.useState(),
     [g, p] = r.useState(false),
-    f = (0, d.Ob)(n);
+    h = (0, d.Ob)(n);
   return {
     canSubmitAcceptance: (0, i.e7)([o.default], () => {
       let e = o.default.getCurrentUser();
@@ -25,7 +25,7 @@ function u(e, t) {
     error: u,
     loading: g,
     submitAcceptTermsRequest: r.useCallback(async () => {
-      if (null != e && (f || null != t)) {
+      if (null != e && (h || null != t)) {
         p(true), m(true);
         try {
           null != t ? await c.wE(e, t) : await c.zo(e)
@@ -35,6 +35,6 @@ function u(e, t) {
           p(false)
         }
       }
-    }, [e, t, f])
+    }, [e, t, h])
   }
 }

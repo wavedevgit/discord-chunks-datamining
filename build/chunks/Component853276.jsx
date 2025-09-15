@@ -1,7 +1,7 @@
 /** Chunk was on 8106 **/
 /** chunk id: 853276, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 }), require("./388685.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -45,34 +45,34 @@ function p(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let f = Chunk647438.forwardRef(function(e, t) {
+let h = Chunk647438.forwardRef(function(e, t) {
   var n, l;
   let {
     value: s,
     isSelected: c,
     isEditing: d,
     forceShowErrorTooltip: u = false,
-    error: f
-  } = e, [h, b, x] = i.useMemo(() => {
-    if (null == f) return [];
+    error: h
+  } = e, [f, b, x] = i.useMemo(() => {
+    if (null == h) return [];
     let {
       erroringCharacterOffset: e = 0,
       erroringCharacterLength: t = s.length
-    } = null != f ? f : {}, n = s.slice(0, e);
+    } = null != h ? h : {}, n = s.slice(0, e);
     return [n, s.slice(e, e + t), s.slice(e + t)]
-  }, [s, f]);
-  return null == f ? (0, r.jsx)("div", {
+  }, [s, h]);
+  return null == h ? (0, r.jsx)("div", {
     className: a()(m.chipletValue, {
       [m.isEditing]: d,
       [m.isSelected]: c
     }),
     ref: t,
     children: s
-  }) : (null != (n = null == h ? true : h.length) ? n : 0) + (null != (l = null == b ? true : b.length) ? l : 0) > 70 ? (0, r.jsx)(o.ua7, {
-    "aria-label": f.message,
+  }) : (null != (n = null == f ? true : f.length) ? n : 0) + (null != (l = null == b ? true : b.length) ? l : 0) > 70 ? (0, r.jsx)(o.ua7, {
+    "aria-label": h.message,
     text: () => (0, r.jsxs)("div", {
-      "aria-label": f.message,
-      children: [f.message, " ", (0, r.jsx)("span", {
+      "aria-label": h.message,
+      children: [h.message, " ", (0, r.jsx)("span", {
         className: m.errorOverflowValue,
         children: b
       })]
@@ -85,12 +85,12 @@ let f = Chunk647438.forwardRef(function(e, t) {
       ref: t,
       className: a()(m.chipletValue, {
         [m.isEditing]: d,
-        [m.isError]: null != f && !d,
-        [m.isOverflowing]: null != f && !d
+        [m.isError]: null != h && !d,
+        [m.isOverflowing]: null != h && !d
       })
     }, e), {
       children: [(0, r.jsx)("span", {
-        children: h
+        children: f
       }), (0, r.jsx)("span", {
         className: m.errorValue,
         children: b
@@ -102,12 +102,12 @@ let f = Chunk647438.forwardRef(function(e, t) {
     ref: t,
     className: a()(m.chipletValue, {
       [m.isEditing]: d,
-      [m.isError]: null != f && !d
+      [m.isError]: null != h && !d
     }),
     children: [(0, r.jsx)("span", {
-      children: h
+      children: f
     }), (0, r.jsx)(o.ua7, {
-      text: f.message,
+      text: h.message,
       color: o.ua7.Colors.RED,
       position: "top",
       forceOpen: u || true,
@@ -121,14 +121,14 @@ let f = Chunk647438.forwardRef(function(e, t) {
   })
 });
 
-function h(e) {
+function f(e) {
   let {
     value: t,
     onChange: n,
     onBlur: l,
     onFocus: g,
     onRemove: p,
-    isSelected: h,
+    isSelected: f,
     isSelecting: b,
     error: x,
     forceShowErrorTooltip: j
@@ -175,7 +175,7 @@ function h(e) {
       className: a()(m.chipletContainer, {
         [m.isEditing]: O,
         [m.smallBlink]: !O && !S,
-        [m.isSelected]: h,
+        [m.isSelected]: f,
         [m.isSelecting]: b,
         [m.isError]: null != x && !O
       }),
@@ -203,11 +203,11 @@ function h(e) {
           style: {
             width: R > 0 ? R : "calc(".concat(t.length, "ch + 10px)")
           }
-        }), (0, r.jsx)(f, {
+        }), (0, r.jsx)(h, {
           ref: C,
           value: t,
           isEditing: O,
-          isSelected: h,
+          isSelected: f,
           error: x,
           forceShowErrorTooltip: T || O
         })]

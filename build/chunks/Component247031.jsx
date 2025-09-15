@@ -74,14 +74,14 @@ function Z(e) {
     ban: a,
     hideDiscriminator: s,
     onClose: o
-  } = e, [d, m] = i.useState(false), [p, f] = i.useState(null);
-  async function h() {
+  } = e, [d, m] = i.useState(false), [p, h] = i.useState(null);
+  async function f() {
     if (null != n) {
-      f(null), m(true);
+      h(null), m(true);
       try {
         await u.Z.unbanUser(n.id, l.id), o()
       } catch (e) {
-        f(new g.Z(e)), m(false)
+        h(new g.Z(e)), m(false)
       }
     }
   }
@@ -126,7 +126,7 @@ function Z(e) {
         children: [(0, r.jsx)(c.zxk, {
           variant: "critical-secondary",
           text: I.intl.string(I.t.UPcIa2),
-          onClick: h,
+          onClick: f,
           loading: d
         }), (0, r.jsx)(c.zxk, {
           variant: "primary",
@@ -230,7 +230,7 @@ class A extends Chunk647438.PureComponent {
       let n = this.makeFilter(t),
         r = [];
       for (let t of e.keys()) {
-        let e = h.default.getUser(t);
+        let e = f.default.getUser(t);
         null != e && n(e) && r.push(e)
       }
       return r.sort((e, t) => e.username.localeCompare(t.username))

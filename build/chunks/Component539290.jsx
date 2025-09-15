@@ -2,62 +2,54 @@
 /** chunk id: 539290, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  E: () => _,
-  Z: () => p
+  E: () => f,
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk780384 = require("./780384.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk410030 = require("./410030.js"),
   Chunk696936 = require("./696936.jsx"),
   Chunk903773 = require("./903773.jsx"),
   Chunk672628 = require("./672628.js");
-let _ = {
+let f = {
   RIGHT: Chunk672628.horizontalStatusWarningBlock,
   BOTTOM: Chunk672628.verticalStatusWarningBlock
 };
 
-function p(e) {
+function _(e) {
   let {
     className: t,
-    color: n = u.W.YELLOW,
-    buttonPosition: i = _.BOTTOM,
-    notice: p,
-    ctaLabel: h,
-    ctaLoading: m,
-    ctaDisabled: g,
-    ctaClassName: E,
-    onClick: b
-  } = e, y = (0, c.ZP)();
-  return (0, r.jsx)(d.Z, {
-    className: a()(f.statusWarningBlock, {
-      [f.statusWarningBlockWithCta]: null != h
+    color: n = c.W.YELLOW,
+    buttonPosition: i = f.BOTTOM,
+    notice: _,
+    ctaLabel: p,
+    ctaLoading: h,
+    ctaDisabled: m,
+    onClick: g
+  } = e, E = (0, l.ZP)();
+  return (0, r.jsx)(u.Z, {
+    className: a()(d.statusWarningBlock, {
+      [d.statusWarningBlockWithCta]: null != p
     }, t),
-    color: (0, o.wj)(y) ? n : u.W.BROWN,
+    color: (0, o.wj)(E) ? n : c.W.BROWN,
     children: (0, r.jsxs)("div", {
       className: i,
-      children: [(0, r.jsx)(l.Text, {
+      children: [(0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "interactive-active",
-        children: p
-      }), null != h && null != b && (0, r.jsx)("div", {
-        className: f.ctaButtonContainer,
-        children: (0, r.jsx)(s.zx, {
-          className: a()(f.ctaButton, (0, o.wj)(y) ? true : f.ctaBlackButton, E),
-          color: (0, o.wj)(y) ? s.zx.Colors.WHITE : s.zx.Colors.CUSTOM,
-          size: s.Ph.MEDIUM,
-          onClick: b,
-          disabled: g,
-          submitting: m,
-          children: (0, r.jsx)(l.Text, {
-            className: f.ctaButtonText,
-            variant: "text-sm/medium",
-            children: h
-          })
+        children: _
+      }), null != p && null != g && (0, r.jsx)("div", {
+        className: d.ctaButtonContainer,
+        children: (0, r.jsx)(s.zxk, {
+          text: p,
+          variant: "overlay-secondary",
+          onClick: g,
+          disabled: m,
+          loading: h
         })
       })]
     })

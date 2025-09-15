@@ -1,7 +1,7 @@
 /** Chunk was on 8106 **/
 /** chunk id: 307375, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  h: () => f
+  h: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,14 +16,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk140367 = require("./140367.js");
 
-function f(e) {
+function h(e) {
   let {
     activeType: t,
     onTypePicked: n,
     guild: l
-  } = e, f = l.features.has(m.oNc.COMMUNITY), h = (0, s.e7)([c.Z], () => c.Z.can(m.Plq.ADMINISTRATOR, l)), b = i.useMemo(() => {
-    let e = t === u.A.DISCOVERABLE && !h,
-      n = f && (t === u.A.DISCOVERABLE || h);
+  } = e, h = l.features.has(m.oNc.COMMUNITY), f = (0, s.e7)([c.Z], () => c.Z.can(m.Plq.ADMINISTRATOR, l)), b = i.useMemo(() => {
+    let e = t === u.A.DISCOVERABLE && !f,
+      n = h && (t === u.A.DISCOVERABLE || f);
     return [{
       id: u.A.INVITE,
       title: g.intl.string(g.t["HQVS/P"]),
@@ -44,9 +44,9 @@ function f(e) {
       body: g.intl.string(g.t.pqQylZ),
       icon: o.enf,
       enabled: n,
-      ineligibleText: f ? g.intl.string(g.t.iBpXPj) : g.intl.string(g.t["5TQ+eH"])
+      ineligibleText: h ? g.intl.string(g.t.iBpXPj) : g.intl.string(g.t["5TQ+eH"])
     }]
-  }, [t, f, h]);
+  }, [t, h, f]);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(o.X6q, {
       color: "header-primary",

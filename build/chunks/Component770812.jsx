@@ -92,8 +92,8 @@ function O(e) {
       }), (0, r.jsx)(s.LZC, {
         size: 24
       }), (0, r.jsx)(h.Z, {
-        onClick: v,
-        children: A
+        text: A,
+        onClick: v
       })]
     })]
   })

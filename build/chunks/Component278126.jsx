@@ -19,6 +19,7 @@ function c(e, t, n) {
   }) : e[t] = n, e
 }
 let u = Object.freeze({
+    XSMALL: .8,
     SMALL: 1,
     MEDIUM: 2,
     LARGE: 4
@@ -30,13 +31,14 @@ class f extends(r = Chunk647438.Component) {
       strokeSize: e,
       percent: t,
       colorOverride: n,
-      background: r
-    } = this.props, a = Math.min(Math.max(exports, 0), 100), o = (d - module) / 2, c = Chunk120356 * Math.PI * 2;
+      background: r,
+      ringColorOverrideClassName: a
+    } = this.props, o = Math.min(Math.max(exports, 0), 100), c = (d - module) / 2, u = c * Math.PI * 2;
     return (0, Chunk951288.jsxs)("svg", {
       viewBox: "0 0 ".concat(d, " ").concat(d),
       className: Chunk399020.circle,
       children: [(0, Chunk951288.jsx)("circle", {
-        className: Chunk399020.circleBackgroundAlt,
+        className: true !== Chunk647438 ? Chunk647438 : Chunk399020.circleBackgroundAlt,
         cx: d / 2,
         cy: d / 2,
         r: d / 2
@@ -49,14 +51,14 @@ class f extends(r = Chunk647438.Component) {
         className: Chunk399020.circleProgress,
         cx: d / 2,
         cy: d / 2,
-        r: Chunk120356,
+        r: c,
         strokeWidth: "".concat(module, "px"),
         strokeLinecap: "round",
         transform: "rotate(-90 ".concat(d / 2, " ").concat(d / 2, ")"),
         stroke: null != require ? require : "currentColor",
         style: {
-          strokeDasharray: c,
-          strokeDashoffset: (1 - Chunk647438 / 100) * c
+          strokeDasharray: u,
+          strokeDashoffset: (1 - Chunk120356 / 100) * u
         }
       })]
     })
@@ -69,7 +71,7 @@ class f extends(r = Chunk647438.Component) {
     return (0, Chunk951288.jsxs)("div", {
       className: s()(Chunk399020.progressCircle, module),
       children: [this.renderCircle(), null != exports ? (0, Chunk951288.jsx)("div", {
-        className: Chunk399020.circleOverlay,
+        className: s()(Chunk399020.circleOverlay, this.props.overlayClassName),
         children: exports
       }) : null]
     })

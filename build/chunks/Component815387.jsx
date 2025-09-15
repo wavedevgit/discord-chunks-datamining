@@ -696,7 +696,7 @@ function e8(e) {
   })
 }
 
-function e6(e) {
+function e5(e) {
   let {
     message: t,
     channel: n
@@ -707,7 +707,7 @@ function e6(e) {
   })
 }
 
-function e5(e) {
+function e6(e) {
   let {
     message: t,
     channel: n
@@ -825,9 +825,9 @@ let tn = Object.freeze({
   [Chunk981631.uaV.VOICE_HANGOUT_INVITE]: true,
   [Chunk981631.uaV.POLL_RESULT]: Chunk507435.Z,
   [Chunk981631.uaV.CHANGELOG]: true,
-  [Chunk981631.uaV.NITRO_NOTIFICATION]: e6,
+  [Chunk981631.uaV.NITRO_NOTIFICATION]: e5,
   [Chunk981631.uaV.CHANNEL_LINKED_TO_LOBBY]: e7,
-  [Chunk981631.uaV.GIFTING_PROMPT]: e5,
+  [Chunk981631.uaV.GIFTING_PROMPT]: e6,
   [Chunk981631.uaV.IN_GAME_MESSAGE_NUX]: e9,
   [Chunk981631.uaV.GUILD_JOIN_REQUEST_ACCEPT_NOTIFICATION]: Chunk29887.Cn,
   [Chunk981631.uaV.GUILD_JOIN_REQUEST_REJECT_NOTIFICATION]: Chunk29887.Ue,

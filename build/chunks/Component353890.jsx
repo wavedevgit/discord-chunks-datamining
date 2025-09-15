@@ -25,15 +25,15 @@ function b(e) {
     scrollToQuestions: n
   } = e, i = (0, a.e7)([g.Z], () => g.Z.editedDefaultChannelIds), l = (0, u.b)(t.id, i).filter(e => e.isCategory() || (0, c.s)(e.guild_id, e.id));
   return (0, r.jsxs)("div", {
-    className: h.container,
+    className: f.container,
     children: [(0, r.jsx)("div", {
-      className: h.header,
+      className: f.header,
       children: (0, r.jsx)(p.Z, {
         guildId: t.id,
         scrollToQuestions: n
       })
     }), (0, r.jsxs)("div", {
-      className: h.channelList,
+      className: f.channelList,
       children: [(0, r.jsx)(v, {}), 0 === l.length && (0, r.jsx)(x, {}), (0, r.jsx)(j, {
         channels: l
       })]
@@ -83,9 +83,9 @@ function _(e) {
     label: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: h.category,
+    className: f.category,
     children: [(0, r.jsx)(m.Z, {
-      className: h.caret,
+      className: f.caret,
       width: 12,
       height: 12,
       direction: m.Z.Directions.DOWN
@@ -104,20 +104,20 @@ function O(e) {
     channel: n
   } = e, i = (0, d.iF)(n), a = null != (t = (0, o.KS)(n)) ? t : s.VL1;
   return (0, r.jsxs)("div", {
-    className: h.channel,
+    className: f.channel,
     children: [(0, r.jsx)(a, {
-      className: h.channelIcon,
+      className: f.channelIcon,
       size: "xs",
       color: "currentColor"
     }), (0, r.jsx)(s.Text, {
-      className: h.channelName,
+      className: f.channelName,
       variant: "text-md/normal",
       color: "text-muted",
       lineClamp: 1,
       children: n.name
     }), (0, r.jsx)("div", {
       className: l()({
-        [h.chattableIndicator]: i
+        [f.chattableIndicator]: i
       })
     })]
   })

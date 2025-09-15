@@ -86,7 +86,7 @@ let w = Chunk647438.forwardRef((e, t) => {
   let n, {
       log: l,
       className: o,
-      expanded: f,
+      expanded: h,
       guildId: _,
       guild: w,
       onChannelContextMenu: R,
@@ -104,7 +104,7 @@ let w = Chunk647438.forwardRef((e, t) => {
       return (l.actionType !== N.vB8.DELETE || l.action === N.rsA.MEMBER_BAN_ADD || l.action === N.rsA.MEMBER_KICK || l.action === N.rsA.MEMBER_PRUNE) && null != e && e.some(e => !(0, C.xO)(l, e))
     }(),
     U = I.headerDefault;
-  f ? U = I.headerExpanded : G && (U = I.headerClickable);
+  h ? U = I.headerExpanded : G && (U = I.headerClickable);
   let B = l.timestampStart.calendar(),
     F = l.timestampEnd.calendar();
   n = B === F ? (0, r.jsx)(d.Text, {
@@ -124,7 +124,7 @@ let w = Chunk647438.forwardRef((e, t) => {
       className: a()(I.auditLog, o),
       children: [(0, r.jsxs)(d.P3F, T(S({
         className: U,
-        "aria-expanded": f,
+        "aria-expanded": h,
         onClick: H
       }, e), {
         children: [(0, r.jsx)(C.mp, {
@@ -200,7 +200,7 @@ let w = Chunk647438.forwardRef((e, t) => {
                     }
                     return E.intl.string(E.t["30mdIy"])
                   },
-                  targetHook: (e, t) => l.targetType === N.KFR.USER && l.target instanceof h.Z ? (0, r.jsx)(P, {
+                  targetHook: (e, t) => l.targetType === N.KFR.USER && l.target instanceof f.Z ? (0, r.jsx)(P, {
                     user: l.target,
                     onContextMenu: A
                   }, t) : (0, r.jsx)("span", {
@@ -221,12 +221,12 @@ let w = Chunk647438.forwardRef((e, t) => {
         }), G ? (0, r.jsx)(j.Z, {
           className: I.expand,
           foreground: I.expandForeground,
-          expanded: f,
+          expanded: h,
           "aria-hidden": true
         }) : null]
-      })), f ? (0, r.jsx)("div", {
+      })), h ? (0, r.jsx)("div", {
         className: I.divider
-      }) : null, f && null != w ? (0, r.jsx)(C.tP, {
+      }) : null, h && null != w ? (0, r.jsx)(C.tP, {
         log: l,
         guild: w,
         onContentClick: Z

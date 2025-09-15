@@ -2,10 +2,11 @@
 /** chunk id: 647277, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  _: () => N
-}), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk120356 = require("./120356.js"),
+  _: () => w
+}), require("./539854.js"), require("./388685.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
+var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -15,14 +16,16 @@ var Chunk951288 = require("./951288.js"),
   Chunk51144 = require("./51144.js"),
   Chunk281494 = require("./281494.js"),
   Chunk276444 = require("./276444.js"),
+  Chunk503249 = require("./503249.js"),
+  Chunk239547 = require("./239547.jsx"),
   Chunk796634 = require("./796634.js"),
   Chunk656139 = require("./656139.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk756555 = require("./756555.js"),
-  Chunk746838 = require("./746838.js");
+  Chunk456254 = require("./456254.js");
 
-function y(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,20 +34,20 @@ function y(e, t, n) {
   }) : e[t] = n, e
 }
 
-function O(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
 
-function v(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,28 +58,28 @@ function v(e, t) {
   return n
 }
 
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = e => {
+let A = e => {
     let {
       startingScreen: t,
       analyticsLocations: i
     } = e;
-    c.default.track(m.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+    c.default.track(E.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
       location_stack: i
     }), (0, s.ZDy)(async () => {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 656139));
-      return n => (0, r.jsx)(e, I(O({}, n), {
+      return n => (0, r.jsx)(e, S(I({}, n), {
         startingScreen: t
       }))
     })
   },
-  S = e => {
+  C = e => {
     let {
       user: t
     } = e, {
@@ -86,107 +89,110 @@ let T = e => {
       userId: t.id,
       size: s.EFr.SIZE_24
     });
-    return (0, r.jsx)(s.qEK, O({
-      className: E.reminderAvatar,
+    return (0, r.jsx)(s.qEK, I({
+      className: y.referredFriendAvatar,
       src: n,
       "aria-label": (0, d.oY)(t),
       size: s.EFr.SIZE_24
     }, i), t.id)
   },
-  A = e => {
+  N = e => {
     let {
-      recipientNames: t
-    } = e, [n, r, i] = t;
-    return 1 === t.length ? g.intl.format(g.t["B/IYFR"], {
-      recipientName: n
-    }) : 2 === t.length ? g.intl.format(g.t.uIOxcH, {
-      firstRecipientName: n,
-      secondRecipientName: r
-    }) : 3 === t.length ? g.intl.format(g.t["1k64R0"], {
-      firstRecipientName: n,
-      secondRecipientName: r,
-      thirdRecipientName: i
-    }) : ""
-  },
-  C = e => {
-    let {
-      referralSentUsers: t,
-      allRedeemed: n
+      slotIndex: t
     } = e;
-    return (0, r.jsxs)("div", {
-      className: E.reminderContainer,
-      children: [(0, r.jsxs)("div", {
-        className: E.remindersSentContainer,
-        children: [t.map(e => (0, r.jsx)(S, {
-          user: e
-        }, e.id)), (0, r.jsx)(s.Text, {
-          variant: "text-sm/medium",
-          color: "text-primary",
-          className: E.reminderAvatarText,
-          children: A({
-            recipientNames: t.map(e => (0, d.oY)(e))
-          })
-        })]
-      }), (0, r.jsx)(s.zxk, {
-        variant: "secondary",
-        size: "sm",
-        disabled: n,
-        text: g.intl.string(g.t.NPCYFR),
-        onClick: () => T({
-          startingScreen: h.K.REMINDER,
-          analyticsLocations: []
-        })
-      })]
+    return (0, r.jsx)("div", {
+      className: y.availableReferralSlot,
+      children: t
     })
   },
-  N = e => {
+  R = e => {
+    let {
+      referralSentUsers: t
+    } = e, n = () => {
+      let e = [];
+      for (let n = 0; n < m.Q; n++)
+        if ((null == t ? true : t[n]) !== true) {
+          let i = (0, r.jsx)(C, {
+            user: t[n]
+          }, t[n].id);
+          e.push(i)
+        } else {
+          let t = (0, r.jsx)(N, {
+            slotIndex: n + 1
+          }, n);
+          e.push(t)
+        } return e
+    };
+    return (0, r.jsx)("div", {
+      className: y.progressContainer,
+      children: n()
+    })
+  },
+  P = e => {
+    let {
+      nReferralsSent: t
+    } = e, n = 33.3 * t, i = p.ZP.useExperiment({
+      location: "ProgressWheel"
+    }).cohort === p.$P.NitroLogo ? (0, r.jsx)(h.I, {}) : (0, r.jsx)(s.Eep, {
+      src: O.Z,
+      height: 104,
+      width: 104
+    });
+    return (0, r.jsx)(s._3P, {
+      percent: n,
+      colorOverride: "#53ac66",
+      background: y.progressCircleBackground,
+      strokeSize: .8,
+      ringColorOverrideClassName: y.progressCircleRing,
+      overlayClassName: t === m.Q ? y.glow : true,
+      children: i
+    })
+  },
+  w = e => {
     let {
       className: t
     } = e, {
       referralSentUsers: n
-    } = (0, p.G)(), i = (0, o.e7)([_.Z], () => _.Z.getRecipientStatus()), l = (0, o.e7)([_.Z], () => _.Z.getHasEligibleFriends()), c = i.size === p.Q && i.values().every(e => e === f.Fe.REDEEMED), d = i.size === p.Q, y = () => false === l ? g.intl.format(g.t["zWhX/f"], {
-      helpdeskArticle: u.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM)
-    }) : n.length === p.Q ? true === c ? g.intl.format(g.t["1aEjsL"], {
-      helpdeskArticle: u.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM)
-    }) : g.intl.format(g.t["+u3AOD"], {
-      helpdeskArticle: u.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM)
-    }) : g.intl.format(g.t["omMr+f"], {
-      helpdeskArticle: u.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM)
+    } = (0, m.G)(), i = (0, o.e7)([_.Z], () => _.Z.getRecipientStatus()), l = (0, o.e7)([_.Z], () => _.Z.getHasEligibleFriends()), c = i.size === m.Q && i.values().every(e => e === f.Fe.REDEEMED), d = i.size === m.Q, p = () => false === l ? b.intl.format(b.t["zWhX/f"], {
+      helpdeskArticle: u.Z.getArticleURL(E.BhN.REFERRAL_PROGRAM)
+    }) : n.length === m.Q ? true === c ? b.intl.format(b.t["1aEjsL"], {
+      helpdeskArticle: u.Z.getArticleURL(E.BhN.REFERRAL_PROGRAM)
+    }) : b.intl.format(b.t["+u3AOD"], {
+      helpdeskArticle: u.Z.getArticleURL(E.BhN.REFERRAL_PROGRAM)
+    }) : b.intl.format(b.t["omMr+f"], {
+      helpdeskArticle: u.Z.getArticleURL(E.BhN.REFERRAL_PROGRAM)
     });
     return (0, r.jsxs)("div", {
-      className: a()(E.container, t),
-      children: [(0, r.jsxs)("div", {
-        className: E.bannerContainer,
-        children: [(0, r.jsx)(s.Eep, {
-          src: b.Z,
-          height: 96,
-          width: 144
+      className: a()(y.container, t),
+      children: [(0, r.jsx)("div", {
+        className: y.progressCircle,
+        children: (0, r.jsx)(P, {
+          nReferralsSent: i.size
+        })
+      }), (0, r.jsxs)("div", {
+        className: y.bannerContent,
+        children: [(0, r.jsx)(R, {
+          referralSentUsers: n
         }), (0, r.jsxs)("div", {
-          className: E.bannerContent,
-          children: [(0, r.jsxs)("div", {
-            className: E.bannerContentText,
-            children: [(0, r.jsx)(s.X6q, {
-              variant: "heading-md/semibold",
-              color: "header-primary",
-              children: g.intl.string(g.t.USo4s7)
-            }), (0, r.jsx)(s.Text, {
-              variant: "text-md/medium",
-              color: "text-secondary",
-              children: y()
-            })]
-          }), (0, r.jsx)(s.zxk, {
-            variant: "primary",
-            disabled: false === l || true === d,
-            text: g.intl.string(g.t.Lm2nFR),
-            onClick: () => T({
-              startingScreen: h.K.SELECT_FRIENDS,
-              analyticsLocations: []
-            })
+          className: y.bannerContentText,
+          children: [(0, r.jsx)(s.X6q, {
+            variant: "heading-md/semibold",
+            color: "header-primary",
+            children: b.intl.string(b.t.USo4s7)
+          }), (0, r.jsx)(s.Text, {
+            variant: "text-md/medium",
+            color: "text-secondary",
+            children: p()
           })]
+        }), (0, r.jsx)(s.zxk, {
+          variant: "primary",
+          disabled: false === l || true === d,
+          text: b.intl.string(b.t.Lm2nFR),
+          onClick: () => A({
+            startingScreen: g.K.SELECT_FRIENDS,
+            analyticsLocations: []
+          })
         })]
-      }), n.length > 0 && (0, r.jsx)(C, {
-        referralSentUsers: n,
-        allRedeemed: c
       })]
     })
   }

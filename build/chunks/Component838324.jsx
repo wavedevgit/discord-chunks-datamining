@@ -20,7 +20,7 @@ function p(e) {
   let {
     guildId: t,
     scrollToQuestions: n
-  } = e, p = (0, i.e7)([s.Z], () => s.Z.isAdvancedMode(t)), f = (0, i.e7)([c.Z], () => c.Z.editedDefaultChannelIds), [h, b] = (0, o.VF)(t, f), [x, j] = (0, d.OA)(t, [...f]), v = p ? j.length : b.length, _ = p ? x.length : h.length, O = v < u.md, y = _ >= u.X, C = j.length - b.length, N = (0, r.jsx)(a.owK, {
+  } = e, p = (0, i.e7)([s.Z], () => s.Z.isAdvancedMode(t)), h = (0, i.e7)([c.Z], () => c.Z.editedDefaultChannelIds), [f, b] = (0, o.VF)(t, h), [x, j] = (0, d.OA)(t, [...h]), v = p ? j.length : b.length, _ = p ? x.length : f.length, O = v < u.md, y = _ >= u.X, C = j.length - b.length, N = (0, r.jsx)(a.owK, {
     size: "sm",
     color: l.Z.unsafe_rawColors.BRAND_500.css,
     secondaryColor: l.Z.unsafe_rawColors.WHITE_100.css,

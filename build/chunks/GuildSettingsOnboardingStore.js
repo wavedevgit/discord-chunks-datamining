@@ -25,7 +25,7 @@ function _(e) {
     subsection: t
   } = e;
   if (c.Z.getGuildId() === v) returnfalse;
-  j = t === b.KsC.SERVER_GUIDE ? f.PG.HOME_SETTINGS : f.PG.LANDING, v = c.Z.getGuildId()
+  j = t === b.KsC.SERVER_GUIDE ? h.PG.HOME_SETTINGS : h.PG.LANDING, v = c.Z.getGuildId()
 }
 class O extends(r = Chunk442837.ZP.Store) {
   initialize() {

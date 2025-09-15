@@ -1,7 +1,7 @@
 /** Chunk was on 8106 **/
 /** chunk id: 375263, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  O: () => h
+  O: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,11 +17,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk278355 = require("./278355.js");
 
-function h(e) {
+function f(e) {
   let {
     guild: t,
     canManageGuild: n
-  } = e, h = t.features.has(d.oNc.BANNER), b = t.features.has(d.oNc.ANIMATED_BANNER), x = h && n, {
+  } = e, f = t.features.has(d.oNc.BANNER), b = t.features.has(d.oNc.ANIMATED_BANNER), x = f && n, {
     analyticsLocations: j
   } = (0, a.ZP)(), v = i.useCallback((e, n) => {
     (0, c.f4)(t, j, e, n)
@@ -60,10 +60,10 @@ function h(e) {
     }),
     enabled: x
   });
-  return h ? O : (0, r.jsx)(l.P3F, {
+  return f ? O : (0, r.jsx)(l.P3F, {
     "aria-hidden": true,
     tabIndex: false,
-    className: f.upsell,
+    className: h.upsell,
     onClick: _,
     children: O
   })

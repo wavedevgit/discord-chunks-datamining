@@ -25,7 +25,7 @@ function j(e) {
     guildId: t,
     widgetEnabled: n,
     widgetChannelId: l,
-    className: f,
+    className: h,
     enableLocalUpdate: j
   } = e, v = (0, a.e7)([c.ZP], () => c.ZP.getChannels(t)), _ = i.useMemo(() => {
     let e = [...v[c.sH], ...v[c.Zb]].filter(e => {
@@ -49,7 +49,7 @@ function j(e) {
     });
     return e.unshift({
       value: b,
-      label: h.intl.string(h.t.u197b2)
+      label: f.intl.string(f.t.u197b2)
     }), e
   }, [v, t, l]), O = i.useCallback(e => {
     j ? (0, p.c)(t, n, e !== b ? e : null) : g.Z.updateEmbed(t, n, e !== b ? e : null)
@@ -58,6 +58,6 @@ function j(e) {
     options: _,
     value: l,
     onChange: O,
-    className: f
+    className: h
   })
 }
