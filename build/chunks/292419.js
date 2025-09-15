@@ -3,11 +3,13 @@
 "use strict";
 require.d(exports, {
   SD: () => m,
+  VD: () => T,
   cd: () => v,
   kS: () => E,
   np: () => O,
-  uZ: () => T
-}), require("./388685.js"), require("./953529.js");
+  uZ: () => A,
+  yw: () => S
+}), require("./388685.js"), require("./49124.js"), require("./953529.js");
 var Chunk866442 = require("./866442.js"),
   Chunk911969 = require("./911969.js"),
   Chunk710845 = require("./710845.js"),
@@ -55,6 +57,7 @@ let _ = new Chunk710845.Z("InteractionComponentUtils"),
       case i.re.SEPARATOR:
       case i.re.CONTAINER:
       case i.re.LABEL:
+      case i.re.FILE_UPLOAD:
         returntrue;
       case i.re.CONTENT_INVENTORY_ENTRY:
         return (0, d.Io)("canShowComponent")
@@ -135,6 +138,7 @@ function I(e) {
     case i.re.FILE:
     case i.re.SEPARATOR:
     case i.re.CONTENT_INVENTORY_ENTRY:
+    case i.re.FILE_UPLOAD:
       return [];
     default:
       return _.warn("getComponentChildren: Unknown component type", e.type), []
@@ -142,32 +146,50 @@ function I(e) {
 }
 
 function T(e) {
-  return e.map((e, t) => S(e, [t])).filter(e => null != e)
+  return JSON.stringify({
+    type: "component-upload",
+    containerId: e,
+    uniqueId: crypto.randomUUID()
+  })
 }
 
-function S(e, t) {
-  var n, a, o, l, d, h, m, E, b, y, O, v, I;
+function S(e) {
+  try {
+    let t = JSON.parse(e);
+    if ((null == t ? true : t.type) !== "component-upload" || "string" != typeof t.containerId || "string" != typeof t.uniqueId) return null;
+    return t
+  } catch (e) {
+    return null
+  }
+}
+
+function A(e) {
+  return e.map((e, t) => C(e, [t])).filter(e => null != e)
+}
+
+function C(e, t) {
+  var n, a, o, l, d, h, m, E, b, y, O, v, I, T;
   if (!g(e.type)) return null;
 
-  function T(e, n) {
-    let r = S(e, [...t, n]);
+  function S(e, n) {
+    let r = C(e, [...t, n]);
     return null == r ? null : r
   }
-  let C = false;
+  let A = false;
   switch (e.type) {
     case i.re.ACTION_ROW: {
-      let n = e.components.map((e, t) => T(e, t)).filter(c.lm);
+      let n = e.components.map((e, t) => S(e, t)).filter(c.lm);
       return {
         type: i.re.ACTION_ROW,
-        id: A(t),
+        id: N(t),
         components: n
       }
     }
     case i.re.BUTTON: {
-      let n = null != e.emoji ? p(e.emoji, C) : true;
+      let n = null != e.emoji ? p(e.emoji, A) : true;
       return {
         type: i.re.BUTTON,
-        id: A(t),
+        id: N(t),
         customId: e.custom_id,
         style: e.style,
         disabled: e.disabled,
@@ -179,57 +201,61 @@ function S(e, t) {
     }
     case i.re.STRING_SELECT:
       return {
-        type: i.re.STRING_SELECT, id: A(t), customId: e.custom_id, disabled: e.disabled, required: null != (n = e.required) && n, options: e.options.map(e => ({
+        type: i.re.STRING_SELECT, id: N(t), customId: e.custom_id, disabled: e.disabled, required: null != (n = e.required) && n, options: e.options.map(e => ({
           type: u.tM.STRING,
           label: e.label,
           value: e.value,
           default: e.default,
           description: e.description,
-          emoji: null != e.emoji ? p(e.emoji, C) : true
+          emoji: null != e.emoji ? p(e.emoji, A) : true
         })), placeholder: null != (a = e.placeholder) ? a : f.intl.string(f.t.Otr6W1), minValues: e.min_values, maxValues: e.max_values
       };
     case i.re.TEXT_INPUT:
       return {
-        type: e.type, id: A(t), style: e.style, customId: e.custom_id, label: e.label, value: e.value, placeholder: e.placeholder, disabled: e.disabled, required: null != (o = e.required) && o, minLength: e.min_length, maxLength: e.max_length
+        type: e.type, id: N(t), style: e.style, customId: e.custom_id, label: e.label, value: e.value, placeholder: e.placeholder, disabled: e.disabled, required: null != (o = e.required) && o, minLength: e.min_length, maxLength: e.max_length
+      };
+    case i.re.FILE_UPLOAD:
+      return {
+        type: e.type, id: N(t), customId: e.custom_id, disabled: e.disabled, required: null != (l = e.required) && l, minValues: e.min_values, maxValues: e.max_values
       };
     case i.re.USER_SELECT:
       return {
-        type: i.re.USER_SELECT, id: A(t), customId: e.custom_id, disabled: e.disabled, required: null != (l = e.required) && l, placeholder: null != (d = e.placeholder) ? d : f.intl.string(f.t.Otr6W1), minValues: e.min_values, maxValues: e.max_values, defaultValues: e.default_values
+        type: i.re.USER_SELECT, id: N(t), customId: e.custom_id, disabled: e.disabled, required: null != (d = e.required) && d, placeholder: null != (h = e.placeholder) ? h : f.intl.string(f.t.Otr6W1), minValues: e.min_values, maxValues: e.max_values, defaultValues: e.default_values
       };
     case i.re.ROLE_SELECT:
       return {
-        type: i.re.ROLE_SELECT, id: A(t), customId: e.custom_id, disabled: e.disabled, required: null != (h = e.required) && h, placeholder: null != (m = e.placeholder) ? m : f.intl.string(f.t.Otr6W1), minValues: e.min_values, maxValues: e.max_values, defaultValues: e.default_values
+        type: i.re.ROLE_SELECT, id: N(t), customId: e.custom_id, disabled: e.disabled, required: null != (m = e.required) && m, placeholder: null != (E = e.placeholder) ? E : f.intl.string(f.t.Otr6W1), minValues: e.min_values, maxValues: e.max_values, defaultValues: e.default_values
       };
     case i.re.MENTIONABLE_SELECT:
       return {
-        type: i.re.MENTIONABLE_SELECT, id: A(t), customId: e.custom_id, disabled: e.disabled, required: null != (E = e.required) && E, placeholder: null != (b = e.placeholder) ? b : f.intl.string(f.t.Otr6W1), minValues: e.min_values, maxValues: e.max_values, defaultValues: e.default_values
+        type: i.re.MENTIONABLE_SELECT, id: N(t), customId: e.custom_id, disabled: e.disabled, required: null != (b = e.required) && b, placeholder: null != (y = e.placeholder) ? y : f.intl.string(f.t.Otr6W1), minValues: e.min_values, maxValues: e.max_values, defaultValues: e.default_values
       };
     case i.re.CHANNEL_SELECT:
       return {
-        type: i.re.CHANNEL_SELECT, id: A(t), customId: e.custom_id, disabled: e.disabled, required: null != (y = e.required) && y, placeholder: null != (O = e.placeholder) ? O : f.intl.string(f.t.Otr6W1), minValues: e.min_values, maxValues: e.max_values, channelTypes: e.channel_types, defaultValues: e.default_values
+        type: i.re.CHANNEL_SELECT, id: N(t), customId: e.custom_id, disabled: e.disabled, required: null != (O = e.required) && O, placeholder: null != (v = e.placeholder) ? v : f.intl.string(f.t.Otr6W1), minValues: e.min_values, maxValues: e.max_values, channelTypes: e.channel_types, defaultValues: e.default_values
       };
     case i.re.SECTION: {
-      let n = e.components.map((e, t) => T(e, t)).filter(c.lm),
-        r = T(e.accessory, n.length);
+      let n = e.components.map((e, t) => S(e, t)).filter(c.lm),
+        r = S(e.accessory, n.length);
       if (0 === n.length || null == r) return null;
       return {
         type: i.re.SECTION,
-        id: A(t),
+        id: N(t),
         components: n,
         accessory: r
       }
     }
     case i.re.TEXT_DISPLAY:
       return {
-        type: i.re.TEXT_DISPLAY, id: A(t), content: e.content
+        type: i.re.TEXT_DISPLAY, id: N(t), content: e.content
       };
     case i.re.THUMBNAIL:
       return {
-        type: i.re.THUMBNAIL, id: A(t), media: (0, s.ym)(e.media), description: e.description, spoiler: e.spoiler
+        type: i.re.THUMBNAIL, id: N(t), media: (0, s.ym)(e.media), description: e.description, spoiler: e.spoiler
       };
     case i.re.MEDIA_GALLERY:
       return {
-        type: i.re.MEDIA_GALLERY, id: A(t), items: e.items.map(e => ({
+        type: i.re.MEDIA_GALLERY, id: N(t), items: e.items.map(e => ({
           media: (0, s.ym)(e.media),
           description: e.description,
           spoiler: e.spoiler
@@ -237,33 +263,33 @@ function S(e, t) {
       };
     case i.re.FILE:
       return {
-        type: i.re.FILE, id: A(t), file: (0, s.ym)(e.file), name: e.name, size: e.size, spoiler: e.spoiler
+        type: i.re.FILE, id: N(t), file: (0, s.ym)(e.file), name: e.name, size: e.size, spoiler: e.spoiler
       };
     case i.re.SEPARATOR:
       return {
-        type: i.re.SEPARATOR, id: A(t), divider: null == (v = e.divider) || v, spacing: null != (I = e.spacing) ? I : i.US.SMALL
+        type: i.re.SEPARATOR, id: N(t), divider: null == (I = e.divider) || I, spacing: null != (T = e.spacing) ? T : i.US.SMALL
       };
     case i.re.CONTENT_INVENTORY_ENTRY:
       if (null == e.content_inventory_entry) return null;
       return {
-        type: i.re.CONTENT_INVENTORY_ENTRY, id: A(t), contentInventoryEntry: e.content_inventory_entry
+        type: i.re.CONTENT_INVENTORY_ENTRY, id: N(t), contentInventoryEntry: e.content_inventory_entry
       };
     case i.re.CONTAINER: {
-      let n = e.components.map((e, t) => T(e, t)).filter(c.lm);
+      let n = e.components.map((e, t) => S(e, t)).filter(c.lm);
       return {
         type: i.re.CONTAINER,
-        id: A(t),
+        id: N(t),
         accentColor: null != e.accent_color ? (0, r.ho)(e.accent_color, true) : true,
         spoiler: e.spoiler,
         components: n
       }
     }
     case i.re.LABEL: {
-      let n = T(e.component, 0);
+      let n = S(e.component, 0);
       if (null == n) return null;
       return {
         type: i.re.LABEL,
-        id: A(t),
+        id: N(t),
         label: e.label,
         description: e.description,
         component: n
@@ -274,6 +300,6 @@ function S(e, t) {
   }
 }
 
-function A(e) {
+function N(e) {
   return (0, u.FF)(e.join(","))
 }

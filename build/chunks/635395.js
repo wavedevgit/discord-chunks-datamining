@@ -1,14 +1,15 @@
 /** Chunk was on 1272 **/
 /** chunk id: 635395, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => v
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk846027 = require("./846027.js"),
-  Chunk230711 = require("./230711.js"),
   Chunk91896 = require("./91896.js"),
   Chunk849862 = require("./849862.js"),
+  Chunk313789 = require("./313789.js"),
+  Chunk518596 = require("./518596.jsx"),
   Chunk888369 = require("./888369.js"),
   Chunk131951 = require("./131951.js"),
   Chunk292959 = require("./292959.js"),
@@ -18,8 +19,8 @@ var Chunk647438 = require("./647438.js"),
   Chunk358085 = require("./358085.js"),
   Chunk998502 = require("./998502.js"),
   Chunk981631 = require("./981631.js");
-let _ = (0, Chunk358085.isMac)() ? null : "DEFAULT";
-class O extends Chunk647438.PureComponent {
+let O = (0, Chunk358085.isMac)() ? null : "DEFAULT";
+class E extends Chunk647438.PureComponent {
   componentDidMount() {
     Chunk998502.ZP.setSystemTrayIcon(this.getIcon())
   }
@@ -27,7 +28,7 @@ class O extends Chunk647438.PureComponent {
     Chunk998502.ZP.setSystemTrayIcon(this.getIcon())
   }
   componentWillUnmount() {
-    Chunk998502.ZP.setSystemTrayIcon(_)
+    Chunk998502.ZP.setSystemTrayIcon(O)
   }
   render() {
     return null
@@ -48,17 +49,19 @@ class O extends Chunk647438.PureComponent {
           speaking: n,
           connected: r,
           unread: i
-        } = this.props, l = _;
-        return (0, g.isMac)() && !r ? l : (0, g.isLinux)() || !r ? (i && (l = "UNREAD"), l) : l = e ? "DEAFENED" : t ? "MUTED" : n ? "SPEAKING" : "CONNECTED"
+        } = this.props, l = O;
+        return (0, m.isMac)() && !r ? l : (0, m.isLinux)() || !r ? (i && (l = "UNREAD"), l) : l = e ? "DEAFENED" : t ? "MUTED" : n ? "SPEAKING" : "CONNECTED"
       })
   }
 }
-let E = () => null;
+let y = () => null;
 Chunk358085.isPlatformEmbedded && (Chunk998502.ZP.on("SYSTEM_TRAY_TOGGLE_MUTE", () => Chunk846027.Z.toggleSelfMute({
   location: "System Tray"
 })), Chunk998502.ZP.on("SYSTEM_TRAY_TOGGLE_DEAFEN", () => Chunk846027.Z.toggleSelfDeaf()), Chunk998502.ZP.on("SYSTEM_TRAY_OPEN_VOICE_SETTINGS", () => {
-  Chunk230711.Z.open(Chunk981631.oAB.VOICE)
-}), E = Chunk442837.ZP.connectStores([Chunk19780.Z, Chunk131951.Z, Chunk606304.Z, Chunk888369.default, Chunk699516.Z, Chunk292959.Z, Chunk91896.Z], () => {
+  (0, Chunk518596.openUserSettings)(Chunk313789.n.VOICE_AND_VIDEO_PANEL, {
+    section: Chunk981631.oAB.VOICE
+  })
+}), y = Chunk442837.ZP.connectStores([Chunk19780.Z, Chunk131951.Z, Chunk606304.Z, Chunk888369.default, Chunk699516.Z, Chunk292959.Z, Chunk91896.Z], () => {
   let e = Chunk888369.default.getTotalMentionCount(),
     t = Chunk888369.default.hasAnyUnread(),
     n = (0, Chunk849862.m$)([Chunk699516.Z, Chunk91896.Z]),
@@ -70,5 +73,5 @@ Chunk358085.isPlatformEmbedded && (Chunk998502.ZP.on("SYSTEM_TRAY_TOGGLE_MUTE", 
     deafened: Chunk131951.Z.isSelfDeaf(),
     unread: Chunk647438
   }
-})(O));
-let y = E
+})(E));
+let v = y

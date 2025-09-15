@@ -2,12 +2,14 @@
 /** chunk id: 236069, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk100527 = require("./100527.js"),
+  Chunk906732 = require("./906732.jsx"),
   Chunk300284 = require("./300284.js"),
   Chunk314897 = require("./314897.js"),
   Chunk271383 = require("./271383.js"),
@@ -17,7 +19,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,40 +28,72 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e) {
+function E(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function y(e, t) {
+  if (null == e) return {};
+  var n, r, i = O(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function O(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+
+function v(e) {
   let {
     guildId: t,
-    analyticsLocations: n,
-    analyticsLocation: i
-  } = e, [o, s] = (0, u.ww)({
+    analyticsLocations: n
+  } = e, [i, o] = (0, f.ww)({
     guildId: t,
-    analyticsLocations: n,
-    analyticsLocation: i,
-    openWithoutBackstack: true
-  }), l = s ? _.intl.string(_.t["6ndMcn"]) : _.intl.string(_.t["0eiu6O"]), c = s ? _.intl.string(_.t.S09nw8) : _.intl.string(_.t.tEttXV);
+    analyticsLocations: n
+  }), s = o ? h.intl.string(h.t["6ndMcn"]) : h.intl.string(h.t["0eiu6O"]), l = o ? h.intl.string(h.t.S09nw8) : h.intl.string(h.t.tEttXV);
   return (0, r.jsxs)(a.qXd, {
     color: a.DM8.DANGER,
-    children: [l, (0, r.jsx)(a.EyT, {
-      onClick: o,
-      children: c
+    children: [s, (0, r.jsx)(a.EyT, {
+      onClick: i,
+      children: l
     })]
   })
 }
 
-function g() {
+function I() {
   let e = (0, Chunk300284.Z)({
     scrollPosition: Chunk526761.Y_.GUILD_TAG
   });
@@ -72,11 +106,20 @@ function g() {
   })
 }
 
-function E(e) {
-  let t = (0, i.e7)([s.default, l.ZP], () => {
-    if (null == e.guildId) return new Set;
-    let t = s.default.getId();
-    return (0, c.no)(l.ZP.getMember(e.guildId, t))
-  }, [e.guildId]);
-  return t.has(d.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || t.has(d.q.AUTOMOD_QUARANTINED_BIO) ? (0, r.jsx)(m, h({}, e)) : t.has(d.q.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, r.jsx)(g, {}) : (0, r.jsx)(m, h({}, e))
+function T(e) {
+  var {
+    analyticsLocations: t
+  } = e, n = y(e, ["analyticsLocations"]);
+  let {
+    analyticsLocations: a
+  } = (0, s.ZP)(t, o.Z.AUTOMOD_NAGBAR_NOTICE), l = (0, i.e7)([c.default, u.ZP], () => {
+    if (null == n.guildId) return new Set;
+    let e = c.default.getId();
+    return (0, d.no)(u.ZP.getMember(n.guildId, e))
+  }, [n.guildId]);
+  return l.has(_.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || l.has(_.q.AUTOMOD_QUARANTINED_BIO) ? (0, r.jsx)(v, b(g({}, n), {
+    analyticsLocations: a
+  })) : l.has(_.q.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, r.jsx)(I, {}) : (0, r.jsx)(v, b(g({}, n), {
+    analyticsLocations: a
+  }))
 }

@@ -42,7 +42,7 @@ let g = (0, Chunk509613.m7)(Chunk313789.n.LOGOUT_SIDEBAR_ITEM, {
         onCancel: e.onClose,
         onConfirm: () => {
           i.flushSync(() => {
-            (0, o.Mr3)(c.I)
+            (0, o.Mr3)(c.USER_SETTINGS_MODAL_KEY)
           }), a.Z.logout("settings")
         }
       }, e), n = n = {

@@ -30,17 +30,17 @@ function b(e) {
   } = e;
   s()(null != t, "Camera capture device cannot be null");
   let o = (0, p.Z)(),
-    [b, y] = (0, m.Ls)(x.h7.AUDIO_INPUT, {
+    [b, S] = (0, m.Ls)(x.h7.AUDIO_INPUT, {
       location: "CaptureDeviceConfig"
     }),
-    S = b.concat(y),
+    y = b.concat(S),
     [C, O] = i.useState(function(e, t, n) {
       var r;
       let i = t.find(t => t.id === e);
       if (null == i) return null;
       let l = a().reduce(n, (e, t) => (0, c.stringSimilarity)(i.name, t.name) > (0, c.stringSimilarity)(i.name, e.name) ? t : e);
       return null != (r = null == l ? true : l.id) ? r : null
-    }(t.id, o, S));
+    }(t.id, o, y));
   return null != C && l(C), (0, r.jsxs)(u.xJW, {
     title: "Capture Device",
     className: v.modalContent,

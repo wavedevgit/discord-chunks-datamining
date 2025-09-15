@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 /** chunk id: 342386, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-require.d(exports, {
-  Z: () => c
+require.r(exports), require.d(exports, {
+  default: () => c
 }), require("./784620.js"), require("./973216.js");
 var Chunk481060 = require("./481060.js"),
   Chunk37234 = require("./37234.js"),
@@ -14,5 +14,5 @@ var Chunk481060 = require("./481060.js"),
 function c() {
   let e = (0, Chunk526665.yP)("closeUserSettings"),
     t = Chunk819640.Z.getLayers().at(false) === Chunk981631.S9g.USER_SETTINGS;
-  return module ? !!(0, Chunk481060.Mr3)(Chunk518596.I) || (exports && (0, Chunk37234.xf)(), exports) : ((0, Chunk37234.xf)(), exports)
+  return module ? !!(0, Chunk481060.Mr3)(Chunk518596.USER_SETTINGS_MODAL_KEY) || (exports && (0, Chunk37234.xf)(), exports) : ((0, Chunk37234.xf)(), exports)
 }

@@ -2,17 +2,18 @@
 /** chunk id: 196068, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  c: () => O
+  c: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk230711 = require("./230711.js"),
   Chunk163684 = require("./163684.js"),
   Chunk518638 = require("./518638.js"),
   Chunk748770 = require("./748770.js"),
+  Chunk313789 = require("./313789.js"),
+  Chunk518596 = require("./518596.jsx"),
   Chunk594174 = require("./594174.js"),
   Chunk626135 = require("./626135.js"),
   Chunk74538 = require("./74538.js"),
@@ -22,53 +23,55 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk961987 = require("./961987.js");
-let O = e => {
+let v = e => {
   let {
     dismissibleContent: t
-  } = e, n = (0, u.a0)(), O = (0, a.e7)([f.default], () => p.ZP.isPremiumExactly(f.default.getCurrentUser(), E.p9.TIER_2)), {
-    enabled: v
-  } = c.g.useExperiment({
+  } = e, n = (0, c.a0)(), v = (0, a.e7)([_.default], () => h.ZP.isPremiumExactly(_.default.getCurrentUser(), b.p9.TIER_2)), {
+    enabled: I
+  } = l.g.useExperiment({
     location: "OutboundPromotionNotice"
   }, {
     autoTrackExposure: false,
-    disable: O
-  }), I = i.useCallback(() => {
-    _.default.track(g.rMx.OUTBOUND_PROMOTION_NOTICE_CLICKED), l.Z.open(g.oAB.INVENTORY), d.ZP.dismissOutboundPromotionNotice()
+    disable: v
+  }), T = i.useCallback(() => {
+    p.default.track(E.rMx.OUTBOUND_PROMOTION_NOTICE_CLICKED), (0, f.openUserSettings)(d.n.GIFT_PANEL, {
+      section: E.oAB.INVENTORY
+    }), u.ZP.dismissOutboundPromotionNotice()
   }, []);
   if (null == n) return null;
-  let T = e => (0, r.jsxs)(s.qXd, {
+  let S = e => (0, r.jsxs)(s.qXd, {
     color: s.DM8.PREMIUM_TIER_2,
     children: [(0, r.jsx)(s.RyX, {
-      noticeType: g.kVF.OUTBOUND_PROMOTION,
+      noticeType: E.kVF.OUTBOUND_PROMOTION,
       onClick: () => {
-        d.ZP.dismissOutboundPromotionNotice(), null !== e && e(m.L.USER_DISMISS)
+        u.ZP.dismissOutboundPromotionNotice(), null !== e && e(g.L.USER_DISMISS)
       }
     }), (0, r.jsx)(s.SrA, {
       size: "md",
       color: "currentColor",
-      className: y.premiumIcon
-    }), v ? b.intl.string(b.t["5JMiOj"]) : b.intl.string(b.t["Pzh+Gx"]), (0, r.jsx)(s.NoS, {
-      noticeType: g.kVF.OUTBOUND_PROMOTION,
+      className: O.premiumIcon
+    }), I ? y.intl.string(y.t["5JMiOj"]) : y.intl.string(y.t["Pzh+Gx"]), (0, r.jsx)(s.NoS, {
+      noticeType: E.kVF.OUTBOUND_PROMOTION,
       onClick: () => {
-        I(), null !== e && e(m.L.TAKE_ACTION)
+        T(), null !== e && e(g.L.TAKE_ACTION)
       },
-      children: b.intl.string(b.t.jVcuVV)
+      children: y.intl.string(y.t.jVcuVV)
     })]
   });
-  return (0, r.jsx)(h.O1, {
+  return (0, r.jsx)(m.O1, {
     contentType: t,
     newSnowflakeId: n,
     timeRecurringConfig: {
       cooldownDurationMs: 0
     },
-    groupName: m.R.NOTICE_BAR,
+    groupName: g.R.NOTICE_BAR,
     bypassAutoDismiss: true,
     children: e => {
       let {
         visibleContent: t,
         markAsDismissed: n
       } = e;
-      if (t === o.z.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR) return T(n)
+      if (t === o.z.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR) return S(n)
     }
   })
 }

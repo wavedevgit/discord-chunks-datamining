@@ -2,7 +2,7 @@
 /** chunk id: 970815, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A4: () => g,
+  A4: () => E,
   b6: () => Chunk317257.b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -10,12 +10,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
+  Chunk526767 = require("./526767.js"),
   Chunk317257 = require("./317257.js"),
   Chunk583478 = require("./583478.jsx"),
   Chunk976845 = require("./976845.jsx"),
   Chunk647917 = require("./647917.js");
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,86 +25,86 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
-let p = () => (0, Chunk951288.jsx)("img", {
+let h = () => (0, Chunk951288.jsx)("img", {
     className: Chunk647917.notificationBadge,
     src: require("./808824.js"),
     alt: ""
   }),
-  h = "balance-widget-pill",
-  m = (e, t) => e === l.b.SELECTED ? d.selected : t ? d.highlighted : d.default,
-  g = (0, Chunk647438.forwardRef)(function(e, t) {
+  m = "balance-widget-pill",
+  g = (e, t) => e === c.b.SELECTED ? f.selected : t ? f.highlighted : f.default,
+  E = (0, Chunk647438.forwardRef)(function(e, t) {
     let {
       id: n,
       balance: a,
-      balanceWidgetMode: f = l.b.DEFAULT,
-      showNotificationBadge: g,
-      onClick: E,
-      onMouseDown: b,
-      disabled: y,
-      isInModalOverlay: O,
-      className: v
-    } = e, [I, T] = (0, i.useState)(false), S = (0, i.useMemo)(() => m(f, I), [f, I]), [A, C] = (0, i.useState)(false), [N, R] = (0, i.useState)(false), [P, w] = (0, i.useState)(.9 * u.D2), D = null === a;
+      balanceWidgetMode: _ = c.b.DEFAULT,
+      showNotificationBadge: E,
+      onClick: b,
+      onMouseDown: y,
+      disabled: O,
+      isInModalOverlay: v,
+      className: I
+    } = e, [T, S] = (0, i.useState)(false), A = (0, i.useMemo)(() => g(_, T), [_, T]), [C, N] = (0, i.useState)(false), [R, P] = (0, i.useState)(false), [w, D] = (0, i.useState)(.9 * l.D2), x = null === a;
     (0, i.useEffect)(() => {
-      D && !A && (C(true), setTimeout(() => {
-        R(true)
+      x && !C && (N(true), setTimeout(() => {
+        P(true)
       }, 500))
-    }, [D, C, A]), (0, i.useEffect)(() => {
-      N && !D && C(false)
-    }, [D, N]);
-    let x = D || A,
-      L = A ? null : a,
-      [j, M] = (0, i.useState)(null),
-      k = (0, i.useRef)(null),
-      U = (0, i.useCallback)(() => {
-        k.current = null, M(null)
+    }, [x, N, C]), (0, i.useEffect)(() => {
+      R && !x && N(false)
+    }, [x, R]);
+    let L = x || C,
+      j = C ? null : a,
+      [M, k] = (0, i.useState)(null),
+      U = (0, i.useRef)(null),
+      G = (0, i.useCallback)(() => {
+        U.current = null, k(null)
       }, []),
-      G = (0, i.useCallback)(e => {
-        let t = j === k.current;
-        e > 0 && ("earn" !== j || !t) && M("earn")
-      }, [M, j]),
-      B = {
-        currentAnimationType: j,
-        animationTypeRef: k,
-        onSetAnimationDurationMS: w
+      B = (0, i.useCallback)(e => {
+        let t = M === U.current;
+        e > 0 && ("earn" !== M || !t) && k("earn")
+      }, [k, M]),
+      Z = {
+        currentAnimationType: M,
+        animationTypeRef: U,
+        onSetAnimationDurationMS: D
       };
     return (0, r.jsx)(s.P3F, {
-      onClick: x ? true : E,
-      className: o()(d.clickable, {
-        [d.disabled]: y
+      onClick: L ? true : b,
+      className: o()(f.clickable, {
+        [f.disabled]: O
       }),
-      id: null != n ? n : h,
+      id: null != n ? n : m,
       children: (0, r.jsxs)("span", {
-        onMouseDown: b,
-        onMouseEnter: y ? true : () => T(true),
-        onMouseLeave: y ? true : () => T(false),
+        onMouseDown: y,
+        onMouseEnter: O ? true : () => S(true),
+        onMouseLeave: O ? true : () => S(false),
         ref: t,
-        className: o()(d.container, S, v, {
-          [d.containerLoading]: x,
-          [d.inModalOverlay]: O,
-          [d.disabled]: y
+        className: o()(f.container, A, I, {
+          [f.containerLoading]: L,
+          [f.inModalOverlay]: v,
+          [f.disabled]: O
         }),
         children: [(0, r.jsx)("div", {
-          className: o()(d.orbsLottieContainer, x ? d.orbIconloading : true),
-          children: (0, r.jsx)(u.ZP, _({}, B))
-        }), (0, r.jsx)(c.Z, {
-          value: L,
-          onValueChange: G,
-          onValueReached: U,
-          targetTotalCounterTime: P,
-          className: x ? d.counterLoading : true
-        }), g && (0, r.jsx)(p, {})]
+          className: o()(f.orbsLottieContainer, L ? f.orbIconloading : true),
+          children: (0, r.jsx)(d.ZP, p({}, Z))
+        }), (0, r.jsx)(u.Z, {
+          value: j,
+          onValueChange: B,
+          onValueReached: G,
+          targetTotalCounterTime: w,
+          className: L ? f.counterLoading : true
+        }), E && (0, r.jsx)(h, {})]
       })
     })
   })

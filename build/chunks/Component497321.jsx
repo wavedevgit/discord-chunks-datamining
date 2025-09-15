@@ -2,49 +2,37 @@
 /** chunk id: 497321, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
-}), require("./388685.js");
-var r, Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
-  Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  Z: () => f
+});
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
+var Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk37234 = require("./37234.js"),
-  Chunk230711 = require("./230711.js"),
+  Chunk313789 = require("./313789.js"),
+  Chunk947889 = require("./947889.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk26621 = require("./26621.js");
 
-function p(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-class h extends(r = Chunk647438.Component) {
-  render() {
-    return (0, Chunk951288.jsxs)("div", {
-      className: Chunk26621.streamerModeEnabled,
-      children: [(0, Chunk951288.jsx)("div", {
-        className: Chunk26621.streamerModeEnabledImage
-      }), (0, Chunk951288.jsx)(Chunk481060.P3F, {
-        className: s()(Chunk26621.streamerModeEnabledBtn, {
-          [Chunk26621.disabled]: this.props.disableButton
-        }),
-        onClick: this.handleClick,
-        children: Chunk388032.intl.string(Chunk388032.t.Br1ls7)
-      })]
+function f(e) {
+  let {
+    disableButton: t
+  } = e, n = (0, l.Z)(), i = () => {
+    true !== t && n(s.n.STREAMER_MODE_PANEL, {
+      section: c.oAB.STREAMER_MODE
     })
-  }
-  constructor(...e) {
-    super(...e), p(this, "handleClick", () => {
-      this.props.disableButton || ((0, c.jN)(d.S9g.USER_SETTINGS), u.Z.setSection(d.oAB.STREAMER_MODE))
-    })
-  }
+  };
+  return (0, r.jsxs)("div", {
+    className: d.streamerModeEnabled,
+    children: [(0, r.jsx)("div", {
+      className: d.streamerModeEnabledImage
+    }), (0, r.jsx)(o.P3F, {
+      className: a()(d.streamerModeEnabledBtn, {
+        [d.disabled]: t
+      }),
+      onClick: i,
+      children: u.intl.string(u.t.Br1ls7)
+    })]
+  })
 }
-p(h, "defaultProps", {
-  disableButton: false
-});
-let m = h

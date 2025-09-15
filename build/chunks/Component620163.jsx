@@ -1673,7 +1673,7 @@ let e2 = () => {
         label: ez.intl.string(ez.t.dnZNER),
         predicate: () => tc,
         onClick: () => {
-          (0, p.Z)("https://discord.gg/discord-townhall"), (0, ex.Z)()
+          (0, p.Z)("https://discord.gg/discord-townhall"), (0, ex.default)()
         }
       },
       [eV.s6.EXPERIMENTS]: {

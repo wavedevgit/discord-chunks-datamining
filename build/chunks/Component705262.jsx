@@ -252,7 +252,7 @@ let K = Object.freeze({
           backgroundGradientPresetId: e.id,
           theme: e.theme,
           useSystemTheme: g ? j.KW.OFF : true
-        }, M.fy.SLOW_USER_ACTION), (0, m.XO)(m.wh.CLIENT_THEMES), (0, S.Z)()
+        }, M.fy.SLOW_USER_ACTION), (0, m.XO)(m.wh.CLIENT_THEMES), (0, S.default)()
       }, L = () => {
         if (!b) return null;
         let e = D.qt[c.Us.EASTER_EGG];
@@ -282,7 +282,7 @@ let K = Object.freeze({
         onSelect: () => {
           (0, m.XO)(m.wh.CUSTOM_THEME, {
             from: "SETTINGS" === o ? m.tE.SETTING : m.tE.CLIENT_THEMES_EDITOR
-          }), "SETTINGS" === o && (0, S.Z)()
+          }), "SETTINGS" === o && (0, S.default)()
         }
       }), D.XV.filter(e => {
         let {

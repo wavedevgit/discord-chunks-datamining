@@ -2,7 +2,7 @@
 /** chunk id: 440934, original params: n,e,t (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => f,
-  openInteractionModal: () => h
+  openInteractionModal: () => x
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -24,28 +24,28 @@ function f(n) {
     onClose: t,
     transitionState: f
   } = n, {
-    components: h,
-    applicationIconURL: j,
-    applicationName: x,
+    components: x,
+    applicationIconURL: h,
+    applicationName: j,
     submissionState: g,
     error: y,
     validators: I,
     validationErrors: v,
     setValidationErrors: E,
-    onSubmit: O
+    onSubmit: N
   } = (0, u.X9)(n, t);
   return (0, i.jsx)("form", {
     onSubmit: n => {
-      n.preventDefault(), O()
+      n.preventDefault(), N()
     },
-    children: (0, i.jsxs)(r.I, {
+    children: (0, i.jsxs)(a.I, {
       transitionState: f,
       onClose: t,
       children: [(0, i.jsx)(o.x, {
         leading: (0, i.jsx)(l.qEK, {
-          src: j,
+          src: h,
           size: l.EFr.SIZE_24,
-          "aria-label": x,
+          "aria-label": j,
           className: b.applicationIcon
         }),
         title: e,
@@ -59,7 +59,7 @@ function f(n) {
           messageType: l.QYI.WARNING,
           className: b.submissionWarning,
           children: m.intl.format(m.t["dSTy//"], {
-            applicationName: x
+            applicationName: j
           })
         }), (0, i.jsx)(l.hjN, {
           className: b.components,
@@ -68,10 +68,10 @@ function f(n) {
             validators: I,
             validationErrors: v,
             setValidationErrors: E,
-            children: (0, p.xX)(h)
+            children: (0, p.xX)(x)
           })
         })]
-      }), (0, i.jsx)(a.G, {
+      }), (0, i.jsx)(r.G, {
         actions: [{
           variant: "secondary",
           text: m.intl.string(m.t["ETE/oK"]),
@@ -80,7 +80,7 @@ function f(n) {
           variant: "primary",
           text: m.intl.string(m.t.geKm7u),
           loading: g === d.i.IN_FLIGHT,
-          onClick: O
+          onClick: N
         }],
         actionsFullWidth: true
       })]
@@ -88,7 +88,7 @@ function f(n) {
   })
 }
 
-function h(n) {
+function x(n) {
   (0, l.h7j)(e => (0, i.jsx)(f, function(n) {
     for (var e = 1; e < arguments.length; e++) {
       var t = null != arguments[e] ? arguments[e] : {},
@@ -106,5 +106,7 @@ function h(n) {
       })
     }
     return n
-  }({}, e, n)))
+  }({}, e, n)), {
+    stackNextByDefault: true
+  })
 }

@@ -70,7 +70,7 @@ let v = Chunk647438.forwardRef(function(e, t) {
     } = i.useContext(d.h),
     W = null == j ? true : j.getLegacyUsername();
   return i.useEffect(() => {
-    !U && I === y.Wq.PREVIEW && r.username.includes(y.nA) && (G(window.innerWidth / 2 + 150, 0, {
+    !U && I === O.Wq.PREVIEW && r.username.includes(O.nA) && (G(window.innerWidth / 2 + 150, 0, {
       velocity: {
         type: "static-random",
         minValue: {
@@ -97,11 +97,11 @@ let v = Chunk647438.forwardRef(function(e, t) {
     }, 15))
   }, [G, I, r, U]), (0, n.jsxs)("div", {
     className: a()(S.userCardContainer, {
-      [S.shinyCard]: I === y.Wq.PREVIEW
+      [S.shinyCard]: I === O.Wq.PREVIEW
     }),
     children: [(0, n.jsxs)("div", {
       className: S.profileCard,
-      children: [(0, n.jsx)(f.Z, {
+      children: [(0, n.jsx)(g.Z, {
         user: k,
         displayProfile: j,
         themeType: h.l.SIDEBAR
@@ -110,7 +110,7 @@ let v = Chunk647438.forwardRef(function(e, t) {
         displayProfile: j,
         themeType: h.l.SIDEBAR,
         className: S.avatar
-      }), I === y.Wq.PREVIEW && null != W && (0, n.jsx)("div", {
+      }), I === O.Wq.PREVIEW && null != W && (0, n.jsx)("div", {
         className: S.legacyUsernameBadgeContainer,
         children: (0, n.jsx)(c.ua7, {
           position: "top",
@@ -157,7 +157,7 @@ let v = Chunk647438.forwardRef(function(e, t) {
           }
         })
       })]
-    }), I !== y.Wq.PREVIEW && (0, n.jsxs)(s.animated.div, {
+    }), I !== O.Wq.PREVIEW && (0, n.jsxs)(s.animated.div, {
       style: {
         opacity: D.opacity,
         y: D.y
@@ -165,22 +165,22 @@ let v = Chunk647438.forwardRef(function(e, t) {
       className: S.inputContainer,
       children: [(0, n.jsxs)(c.Kqy, {
         gap: 16,
-        children: [I === y.Wq.EDIT_DISPLAY_NAME && (0, n.jsx)(c.oil, {
+        children: [I === O.Wq.EDIT_DISPLAY_NAME && (0, n.jsx)(c.oil, {
           label: b.intl.string(b.t["9AjdkJ"]),
           value: null != w ? w : "",
-          placeholder: g.ZP.getName(r),
-          maxLength: y.hy,
+          placeholder: f.ZP.getName(r),
+          maxLength: O.hy,
           onChange: e => N({
             globalName: e
           }),
           onFocus: x,
           inputRef: L
-        }), (I === y.Wq.EDIT_USERNAME || I === y.Wq.SUGGESTION) && (0, n.jsx)(c.oil, {
+        }), (I === O.Wq.EDIT_USERNAME || I === O.Wq.SUGGESTION) && (0, n.jsx)(c.oil, {
           label: b.intl.string(b.t.IEpCBQ),
           leading: "@",
           value: null != R ? R : "",
           placeholder: r.username,
-          maxLength: y.hy,
+          maxLength: O.hy,
           onChange: e => N({
             username: e.replace("@", "")
           }),
@@ -195,7 +195,7 @@ let v = Chunk647438.forwardRef(function(e, t) {
             children: o
           });
           if (null != P) {
-            if (I !== y.Wq.SUGGESTION) return (0, n.jsx)(c.Text, {
+            if (I !== O.Wq.SUGGESTION) return (0, n.jsx)(c.Text, {
               variant: "text-sm/normal",
               children: P
             });
@@ -204,18 +204,18 @@ let v = Chunk647438.forwardRef(function(e, t) {
               children: P
             })
           }
-          return null == P && null == o && (I === y.Wq.EDIT_USERNAME || I === y.Wq.SUGGESTION) ? (0, n.jsx)(O.Z, {
+          return null == P && null == o && (I === O.Wq.EDIT_USERNAME || I === O.Wq.SUGGESTION) ? (0, n.jsx)(y.Z, {
             username: R,
             oneClickFlow: A
           }) : null
         })()
       })]
-    }), I === y.Wq.PREVIEW && (0, n.jsxs)("div", {
+    }), I === O.Wq.PREVIEW && (0, n.jsxs)("div", {
       className: S.userCard,
       children: [(0, n.jsx)(c.X6q, {
         color: "header-primary",
         variant: "heading-xl/bold",
-        children: g.ZP.getName(r)
+        children: f.ZP.getName(r)
       }), (0, n.jsx)(c.X6q, {
         color: "text-default",
         variant: "heading-lg/medium",

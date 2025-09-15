@@ -25,7 +25,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk980676 = require("./980676.js");
 let v = () => {
-    (0, Chunk550385.XO)(Chunk550385.wh.APP_ICON), (0, Chunk342386.Z)()
+    (0, Chunk550385.XO)(Chunk550385.wh.APP_ICON), (0, Chunk342386.default)()
   },
   I = () => {
     let {

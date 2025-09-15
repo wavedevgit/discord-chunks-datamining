@@ -192,7 +192,7 @@ function e_(e) {
   } = e, r = (0, y.hO)(t, n, {
     requireCurrentGuild: false
   }), o = (0, v.C)(r), s = (0, f.e7)([L.Z], () => L.Z.getGuild(t)), l = (null == r ? true : r.role_id) != null && (null == r ? true : r.attachments_count) === 0 ? z.intl.string(z.t.H11qcX) : o, c = a.useCallback(async () => {
-    (null == s ? true : s.features.has(Y.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE)) ? await (0, A.Z)(Y.Z5c.GUILD_PRODUCT(t, n)) : await (0, A.Z)(Y.Z5c.CHANNEL(t)), (0, w.Z)()
+    (null == s ? true : s.features.has(Y.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE)) ? await (0, A.Z)(Y.Z5c.GUILD_PRODUCT(t, n)) : await (0, A.Z)(Y.Z5c.CHANNEL(t)), (0, w.default)()
   }, [s, t, n]);
   return (0, i.jsxs)(i.Fragment, {
     children: [null != l && (0, i.jsx)(ef, {

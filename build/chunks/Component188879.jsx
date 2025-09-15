@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk586449 = require("./586449.js");
 
-function w(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -47,7 +47,7 @@ function w(e) {
   return e
 }
 
-function C(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -70,9 +70,9 @@ let T = e => {
           children: e
         }, t)
       };
-      return null == n ? P.intl.format(P.t.HpvELi, e) : (null == n ? true : n.member_type) === h.wO.OWNER ? P.intl.format(P.t.X1ngSU, C(w({}, e), {
+      return null == n ? P.intl.format(P.t.HpvELi, e) : (null == n ? true : n.member_type) === h.wO.OWNER ? P.intl.format(P.t.X1ngSU, w(C({}, e), {
         guildName: null == n ? true : n.name
-      })) : P.intl.format(P.t.rmpEPD, C(w({}, e), {
+      })) : P.intl.format(P.t.rmpEPD, w(C({}, e), {
         guildName: null == n ? true : n.name
       }))
     }, [t, n]);
@@ -219,14 +219,14 @@ let T = e => {
     } = e, {
       classification: m,
       classificationRequestState: P,
-      isAppealEligible: w,
-      isDsaEligible: C,
+      isAppealEligible: C,
+      isDsaEligible: w,
       violationType: N
     } = (0, v.YG)(n), L = (0, d.e7)([g.Z], () => g.Z.getAppealEligibility()), k = (0, b.P)(), I = null != m && null != m.flagged_content && m.flagged_content.length > 0, Z = (0, x.e)(), M = !!(null == m ? true : m.is_coppa) && L.includes(h.tG.AGE_VERIFY_ELIGIBLE), R = {
       accountStanding: k,
       classificationId: n,
       hasFlaggedContent: I,
-      isDsaEligible: C,
+      isDsaEligible: w,
       source: l,
       violationType: N
     }, Y = a.useRef(R);
@@ -279,13 +279,13 @@ let T = e => {
                 classification_ids: [Number(n)],
                 source: l,
                 is_violative_content_shown: I,
-                is_dsa_eligible: C,
+                is_dsa_eligible: w,
                 violation_type: N
-              }), M ? f.Z.open(n, c) : w && (u.Z.increment({
+              }), M ? f.Z.open(n, c) : C && (u.Z.increment({
                 name: r.V.APPEAL_INGESTION_VIEW
               }), _.Z.open(n))
             },
-            isAppealEligible: w || M
+            isAppealEligible: C || M
           })
         })]
       })]

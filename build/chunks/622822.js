@@ -130,16 +130,18 @@ function M() {
   let e = (0, Chunk974814.H1)({
       location: "age-gate-utils"
     }),
-    t = (0, Chunk81643.sf)();
-  return module && exports
+    t = (0, Chunk453679.u)("age-gate-utils"),
+    n = (0, Chunk81643.sf)();
+  return (module || exports) && require
 }
 
 function k() {
   let e = (0, Chunk974814.s8)({
       location: "age-gate-utils"
     }),
-    t = (0, Chunk81643.L5)();
-  return module && exports
+    t = (0, Chunk81643.L5)(),
+    n = (0, Chunk453679.z)("age-gate-utils");
+  return (module || require) && exports
 }
 
 function U(e) {

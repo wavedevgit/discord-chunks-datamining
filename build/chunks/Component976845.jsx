@@ -2,9 +2,7 @@
 /** chunk id: 976845, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  D2: () => g,
-  ZP: () => v,
-  eg: () => E
+  ZP: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -75,11 +73,7 @@ let m = {
     height: 60
   },
   g = 3e3,
-  E = {
-    EARN: .25,
-    SPEND: .3
-  },
-  b = e => {
+  E = e => {
     let {
       currentAnimationType: t,
       animationTypeRef: n,
@@ -93,7 +87,7 @@ let m = {
       r(l)
     }, [r, l])
   },
-  y = e => {
+  b = e => {
     var {
       currentAnimationType: t
     } = e, n = p(e, ["currentAnimationType"]);
@@ -101,7 +95,7 @@ let m = {
       {
         Component: a
       } = i;
-    return b(d({
+    return E(d({
       currentAnimationType: t
     }, n, p(i, ["Component"]))), (0, r.jsx)(a, _(d({}, m), {
       size: "custom",
@@ -109,7 +103,7 @@ let m = {
       useLottieDefaultColors: true
     }))
   },
-  O = e => {
+  y = e => {
     var {
       currentAnimationType: t
     } = e, n = p(e, ["currentAnimationType"]);
@@ -117,7 +111,7 @@ let m = {
       {
         Component: o
       } = i;
-    return b(d({
+    return E(d({
       currentAnimationType: t
     }, n, p(i, ["Component"]))), (0, r.jsx)(o, _(d({}, m), {
       size: "custom",
@@ -125,7 +119,7 @@ let m = {
       useLottieDefaultColors: true
     }))
   },
-  v = e => {
+  O = e => {
     let t = (0, l.ZP)();
-    return (0, s.ap)(t) ? (0, r.jsx)(O, d({}, e)) : (0, r.jsx)(y, d({}, e))
+    return (0, s.ap)(t) ? (0, r.jsx)(y, d({}, e)) : (0, r.jsx)(b, d({}, e))
   }

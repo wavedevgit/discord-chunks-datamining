@@ -1,7 +1,7 @@
 /** Chunk was on 85342 **/
 /** chunk id: 387955, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,7 +16,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk631936 = require("./631936.js"),
   Chunk849399 = require("./849399.js");
 
-function g(e) {
+function f(e) {
   let {
     user: t
   } = e;
@@ -25,7 +25,7 @@ function g(e) {
     children: [(0, n.jsx)("img", {
       className: m.infoPicture,
       alt: "",
-      src: f
+      src: g
     }), (0, n.jsx)(a.X6q, {
       className: m.title,
       color: "header-primary",

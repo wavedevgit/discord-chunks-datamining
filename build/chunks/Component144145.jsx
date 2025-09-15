@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 144145, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => j
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -9,13 +9,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk278323 = require("./278323.js"),
   Chunk287734 = require("./287734.js"),
-  Chunk230711 = require("./230711.js"),
   Chunk726542 = require("./726542.js"),
   Chunk620662 = require("./620662.js"),
   Chunk841784 = require("./841784.js"),
   Chunk802856 = require("./802856.js"),
   Chunk594190 = require("./594190.js"),
   Chunk592745 = require("./592745.js"),
+  Chunk313789 = require("./313789.js"),
+  Chunk518596 = require("./518596.jsx"),
   Chunk553795 = require("./553795.js"),
   Chunk757266 = require("./757266.js"),
   Chunk283595 = require("./283595.js"),
@@ -26,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,7 +46,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -57,58 +58,60 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let N = Chunk726542.Z.get(Chunk981631.ABu.XBOX).name;
+let P = Chunk726542.Z.get(Chunk981631.ABu.XBOX).name;
 
-function P(e) {
+function j(e) {
   let {
     currentActivities: t
-  } = e, n = t.length > 1, P = function(e) {
+  } = e, n = t.length > 1, j = function(e) {
     let {
       currentActivities: t
-    } = e, n = (0, l.e7)([m.Z], () => m.Z.getAccounts().some(e => e.type === u.Z.get(I.ABu.XBOX).type)), i = t.some(e => {
+    } = e, n = (0, l.e7)([b.Z], () => b.Z.getAccounts().some(e => e.type === c.Z.get(C.ABu.XBOX).type)), i = t.some(e => {
       let {
         activity: t
       } = e;
-      return (0, f.Z)(t)
+      return (0, p.Z)(t)
     });
     return n || !i ? null : (0, r.jsx)(a.sNh, {
       id: "xbox-connect",
-      action: () => c.Z.open(I.oAB.CONNECTIONS),
-      label: C.intl.formatToPlainString(C.t.XWSHTU, {
-        platform: N
+      action: () => (0, m.openUserSettings)(g.n.CONNECTIONS_PANEL, {
+        section: C.oAB.CONNECTIONS
+      }),
+      label: S.intl.formatToPlainString(S.t.XWSHTU, {
+        platform: P
       })
     })
-  }(e), j = function(e) {
+  }(e), x = function(e) {
     let {
       currentActivities: t
-    } = e, n = i.useContext(E.AnalyticsContext);
-    return (0, l.Wu)([h.ZP, _.Z, g.Z, O.Z, b.Z], () => t.filter(e => !(0, p.Z)(e.activity)).map(e => {
+    } = e, n = i.useContext(y.AnalyticsContext);
+    return (0, l.Wu)([f.ZP, O.Z, h.Z, E.Z, _.Z], () => t.filter(e => !(0, d.Z)(e.activity)).map(e => {
       let {
         activity: t,
         game: r
-      } = e, i = _.Z.getActiveLibraryApplication(r.id);
-      return T(S({}, e), {
+      } = e, i = O.Z.getActiveLibraryApplication(r.id);
+      return N(T({}, e), {
         libraryApplication: i,
-        canJoin: null != t && (0, d.Z)(t, I.xjy.JOIN) && t.type === I.IIU.PLAYING,
-        canPlay: (0, y.t)({
-          LibraryApplicationStore: _.Z,
-          LaunchableGameStore: g.Z,
-          DispatchApplicationStore: O.Z,
-          ConnectedAppsStore: b.Z,
+        canJoin: null != t && (0, u.Z)(t, C.xjy.JOIN) && t.type === C.IIU.PLAYING,
+        canPlay: (0, v.t)({
+          LibraryApplicationStore: O.Z,
+          LaunchableGameStore: h.Z,
+          DispatchApplicationStore: E.Z,
+          ConnectedAppsStore: _.Z,
           applicationId: r.id,
           branchId: null != i ? i.branchId : null
         }),
-        isLaunching: g.Z.launchingGames.has(r.id),
-        isRunning: h.ZP.getRunningVerifiedApplicationIds().includes(r.id),
+        isLaunching: h.Z.launchingGames.has(r.id),
+        isRunning: f.ZP.getRunningVerifiedApplicationIds().includes(r.id),
         location: n.location
       })
     }), [n.location, t])
-  }(e), x = [];
-  for (let e of j) {
+  }(e), A = [];
+  for (let e of x) {
     let {
       activity: t
     } = e;
-    null != t && null != t.type && x.push(function(e, t) {
+    null != t && null != t.type && A.push(function(e, t) {
       let {
         canJoin: n,
         activity: i,
@@ -118,18 +121,18 @@ function P(e) {
       async function c() {
         if (null == i) return;
         let e = await o.Z.sendActivityInviteUser({
-          type: I.mFx.JOIN_REQUEST,
+          type: C.mFx.JOIN_REQUEST,
           userId: l.id,
           activity: i,
-          location: I.Sbl.USER_ACTIVITY_ACTIONS
+          location: C.Sbl.USER_ACTIVITY_ACTIONS
         });
         null != e && s.default.selectPrivateChannel(e.id)
       }
       return (0, r.jsx)(a.sNh, {
         id: "join-".concat(i.session_id),
-        label: t ? C.intl.formatToPlainString(C.t.wFAvxM, {
+        label: t ? S.intl.formatToPlainString(S.t.wFAvxM, {
           name: l.toString()
-        }) : C.intl.string(C.t.OKsSCQ),
+        }) : S.intl.string(S.t.OKsSCQ),
         action: c
       })
     }(e, n), function(e, t) {
@@ -143,28 +146,28 @@ function P(e) {
         isLaunching: u
       } = e;
       if (!s || null == n) return null;
-      let d = c ? C.intl.formatToPlainString(C.t["gBme//"], {
+      let d = c ? S.intl.formatToPlainString(S.t["gBme//"], {
         name: i.name
-      }) : u ? C.intl.formatToPlainString(C.t.WtSQwM, {
+      }) : u ? S.intl.formatToPlainString(S.t.WtSQwM, {
         name: i.name
       }) : true;
       return (0, r.jsx)(a.sNh, {
         id: "play-".concat(n.session_id),
         action: function() {
-          (0, v.playApplication)(i.id, l, {
+          (0, I.playApplication)(i.id, l, {
             analyticsParams: {
-              location: T(S({}, o), {
-                object: I.qAy.LIST_ITEM
+              location: N(T({}, o), {
+                object: C.qAy.LIST_ITEM
               })
             }
           })
         },
-        label: t ? C.intl.formatToPlainString(C.t.ZDZEJC, {
+        label: t ? S.intl.formatToPlainString(S.t.ZDZEJC, {
           name: i.name
-        }) : C.intl.string(C.t.XKUw8v),
+        }) : S.intl.string(S.t.XKUw8v),
         subtext: d
       })
     }(e, n))
   }
-  return [P, ...x]
+  return [j, ...A]
 }

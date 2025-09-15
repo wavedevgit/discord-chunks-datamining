@@ -8,8 +8,8 @@ require.d(exports, {
 }), require("./997841.js");
 var Chunk647438 = require("./647438.js"),
   Chunk399606 = require("./399606.js"),
-  Chunk230711 = require("./230711.js"),
   Chunk18438 = require("./18438.js"),
+  Chunk313789 = require("./313789.js"),
   Chunk314897 = require("./314897.js"),
   Chunk271383 = require("./271383.js"),
   Chunk430824 = require("./430824.js"),
@@ -57,20 +57,24 @@ function E(e) {
 function b(e) {
   let {
     guildId: t,
-    scrollPosition: n,
-    analyticsLocation: s,
-    analyticsLocations: l,
-    openWithoutBackstack: d
-  } = e, f = (0, i.e7)([c.Z], () => c.Z.getGuild(t), [t]), p = (0, i.e7)([u.Z], () => null != f && u.Z.can(_.Plq.CHANGE_NICKNAME, f), [f]);
+    scrollPosition: s,
+    analyticsLocations: l
+  } = e, d = (0, i.e7)([c.Z], () => c.Z.getGuild(t), [t]), f = (0, i.e7)([u.Z], () => null != d && u.Z.can(_.Plq.CHANGE_NICKNAME, d), [d]);
   return [r.useCallback(() => {
-    if (null == f) return;
+    if (null == d) return;
     let e = _.oAB.PROFILE_CUSTOMIZATION,
       t = h.NB.GUILD;
-    p ? (0, o.Fq)(f) : t = h.NB.USER_PROFILE, a.Z.open(e, t, {
-      scrollPosition: n,
-      analyticsLocation: s,
-      analyticsLocations: l,
-      openWithoutBackstack: d
-    })
-  }, [p, n, s, l, d, f]), p]
+    f ? (0, a.Fq)(d) : t = h.NB.USER_PROFILE;
+    {
+      let {
+        openUserSettings: r
+      } = n(518596);
+      r(o.n.PROFILE_PANEL, {
+        section: e,
+        subsection: t,
+        scrollPosition: s,
+        analyticsLocations: l
+      })
+    }
+  }, [f, s, l, d]), f]
 }

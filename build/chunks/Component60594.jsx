@@ -128,16 +128,16 @@ function eo(e) {
   }), ev = null != (t = null == ex ? true : ex.getGuildId()) ? t : X, ej = (0, f.e7)([P.Z], () => {
     var e;
     return null != ev ? null == (e = P.Z.getGuild(ev)) ? true : e.premiumTier : null
-  }), [eb, ey] = null != (l = (0, U.Z)(ed, e_, ej)) ? l : [q.LY.RESOLUTION_720, q.ws.FPS_30], {
-    lastPickerAction: eS
+  }), [eb, eS] = null != (l = (0, U.Z)(ed, e_, ej)) ? l : [q.LY.RESOLUTION_720, q.ws.FPS_30], {
+    lastPickerAction: ey
   } = (0, f.e7)([z.ZP], () => z.ZP.getPickerState()), eC = T.Z.getUseSystemScreensharePicker();
   (0, z.UB)();
   let eO = eC && (0, D.isMac)() && u().satisfies(null === _.Z || true === _.Z ? true : _.Z.os.release, K.jR),
     ew = [];
   ec === h.Dvm.ENTERED && eC && (0, D.isMac)() && ew.push(m.z.GO_LIVE_SYSTEM_PICKER_COACHMARK);
-  let [eZ, eI] = (0, S.US)(ew, true, true);
-  ed !== q.tI.PRESET_CUSTOM && (eu = eb, ef = ey), (0, G.Z)(ed, eu, ef, e_, ej) || (eu = eb, ef = ey);
-  let eN = (0, y.Dt)(),
+  let [eZ, eI] = (0, y.US)(ew, true, true);
+  ed !== q.tI.PRESET_CUSTOM && (eu = eb, ef = eS), (0, G.Z)(ed, eu, ef, e_, ej) || (eu = eb, ef = eS);
+  let eN = (0, S.Dt)(),
     [eP, eT] = i.useState((w = B && !eO, M ? 0 : w ? 2 : 3)),
     [eE, eR] = i.useState(eO),
     [eA, ek] = i.useState(null),
@@ -254,7 +254,7 @@ function eo(e) {
       eq(e);
       eT(B ? 2 : 3)
     }, [B]),
-    e6 = !(1 === eP && eC && eS === z.Uc.Error),
+    e6 = !(1 === eP && eC && ey === z.Uc.Error),
     e9 = function(e) {
       switch (e) {
         case 2:

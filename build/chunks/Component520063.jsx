@@ -58,9 +58,9 @@ function h(e, n, h) {
   let P = (0, r.e7)([g.Z], () => g.Z.getChannel(h)),
     v = (0, r.e7)([Z.Z], () => Z.Z.getGuild(n), [n]),
     x = (0, r.e7)([f.default], () => f.default.getCurrentUser()),
-    y = (0, u.Z)(P, "Context Menu"),
-    _ = (0, d.yw)(null == P ? true : P.id);
-  return (null == x ? true : x.id) === e.id ? [y] : null == v || null == P || null == x ? [] : [_ ? (0, l.jsx)(a.sNh, {
+    _ = (0, u.Z)(P, "Context Menu"),
+    y = (0, d.yw)(null == P ? true : P.id);
+  return (null == x ? true : x.id) === e.id ? [_] : null == v || null == P || null == x ? [] : [y ? (0, l.jsx)(a.sNh, {
     id: "remove",
     label: P.isForumPost() ? p.intl.formatToPlainString(p.t.v2KNNz, {
       user: e.username
@@ -71,7 +71,7 @@ function h(e, n, h) {
     action: () => c.Z.removeMember(P.id, e.id, "Context Menu")
   }) : null, (0, s.BK)(e, v) ? (0, l.jsx)(a.sNh, {
     id: "kick",
-    label: _ ? p.intl.formatToPlainString(p.t["1Ie87u"], {
+    label: y ? p.intl.formatToPlainString(p.t["1Ie87u"], {
       user: e.username
     }) : p.intl.formatToPlainString(p.t["9l/iTU"], {
       user: e.username
@@ -88,7 +88,7 @@ function h(e, n, h) {
     })
   }) : null, (0, s.mm)(e, v) ? (0, l.jsx)(a.sNh, {
     id: "ban",
-    label: _ ? p.intl.formatToPlainString(p.t.i62APT, {
+    label: y ? p.intl.formatToPlainString(p.t.i62APT, {
       user: e.username
     }) : p.intl.formatToPlainString(p.t.WnpUBg, {
       user: e.username

@@ -2,9 +2,9 @@
 /** chunk id: 346585, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   K9: () => h,
-  NX: () => O,
-  R_: () => y,
-  e$: () => f,
+  NX: () => y,
+  R_: () => O,
+  e$: () => g,
   ti: () => b,
   zV: () => m
 }), require("./704826.js"), require("./35282.js"), require("./388685.js"), require("./314940.js");
@@ -28,19 +28,19 @@ function m(e) {
   }, t, 80)
 }
 
-function f(e) {
+function g(e) {
   let t = (0, l._I)(e.username).replace(u.RN, "").replace(u.iF, ".").toLowerCase();
   return "".concat(t).concat(e.discriminator).substring(0, 32)
 }
-let g = ["@", "#", ":"],
+let f = ["@", "#", ":"],
   E = ["```", "discord", "hypesquad", "system message", "system mesage", "sustem message", "sustem mesage", "clyde"],
   p = ["discordtag", "everyone", "here", "discord nitro", "discord", "snowsgiving"];
 
-function O(e) {
+function y(e) {
   var t;
   let r = e.username.toLowerCase();
   if ((t = u.kt, r.split("").filter(e => !t.includes(e.charCodeAt(0))).join("")).length < 2) returntrue;
-  for (let e of g)
+  for (let e of f)
     if (r.includes(e)) returntrue;
   for (let e of p)
     if (r === e.toLowerCase()) returntrue;
@@ -49,7 +49,7 @@ function O(e) {
   returnfalse
 }
 
-function y(e) {
+function O(e) {
   return e.toLowerCase().replace(/\s/g, "").replace("@", "")
 }
 

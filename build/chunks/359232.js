@@ -2,7 +2,7 @@
 /** chunk id: 359232, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 }), require("./388685.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -34,9 +34,22 @@ let l = (e, t, n) => {
       min: n,
       max: r
     }) : null
+  },
+  u = (e, t) => {
+    var n;
+    let {
+      minValues: r,
+      maxValues: i,
+      required: a
+    } = e, s = null != (n = null == t ? true : t.uploadIds.length) ? n : 0;
+    return 0 === s ? a ? o.intl.string(o.t["9ovjIC"]) : null : s < r ? o.intl.formatToPlainString(o.t["pmAt6+"], {
+      minValues: r
+    }) : s > i ? o.intl.formatToPlainString(o.t.dy6viI, {
+      maxValues: i
+    }) : null
   };
 
-function u(e, t, n) {
+function d(e, t, n) {
   switch (null != t && i()(t.type === e.type, "component type matches state"), e.type) {
     case a.re.BUTTON:
       return null;
@@ -48,6 +61,8 @@ function u(e, t, n) {
       return l(e, t, n);
     case a.re.TEXT_INPUT:
       return c(e, t);
+    case a.re.FILE_UPLOAD:
+      return u(e, t);
     default:
       i()(false, "missing validator for this component")
   }

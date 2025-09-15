@@ -2,55 +2,58 @@
 /** chunk id: 582546, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk230711 = require("./230711.js"),
   Chunk26033 = require("./26033.js"),
   Chunk740605 = require("./740605.js"),
   Chunk180335 = require("./180335.js"),
   Chunk768419 = require("./768419.js"),
+  Chunk313789 = require("./313789.js"),
+  Chunk518596 = require("./518596.jsx"),
   Chunk594174 = require("./594174.js"),
   Chunk981631 = require("./981631.js"),
   Chunk616922 = require("./616922.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e) {
+function m(e) {
   var t;
   let {
     user: n,
-    entry: h,
-    display: m,
-    onAction: g,
-    onClose: E
-  } = e, b = (0, i.e7)([d.default], () => {
+    entry: m,
+    display: g,
+    onAction: E,
+    onClose: b
+  } = e, y = (0, i.e7)([f.default], () => {
     var e;
-    return (null == (e = d.default.getCurrentUser()) ? true : e.id) === n.id
-  }), y = (0, i.e7)([u.Z], () => u.Z.hasConnectedAccount());
-  if ("recent" !== m || !(0, c.AZ)(h)) return null;
-  if (!y) return (0, r.jsx)(a.sNh, {
+    return (null == (e = f.default.getCurrentUser()) ? true : e.id) === n.id
+  }), O = (0, i.e7)([c.Z], () => c.Z.hasConnectedAccount());
+  if ("recent" !== g || !(0, l.AZ)(m)) return null;
+  if (!O) return (0, r.jsx)(a.sNh, {
     id: "connect-spotify",
-    label: p.intl.formatToPlainString(p.t.XWSHTU, {
-      platform: _.ai
+    label: h.intl.formatToPlainString(h.t.XWSHTU, {
+      platform: p.ai
     }),
     action: () => {
-      null == g || g({
+      null == E || E({
         action: "PRESS_CONNECT_SPOTIFY_MENU_ITEM"
-      }), o.Z.open(f.oAB.CONNECTIONS), null == E || E()
+      }), (0, d.openUserSettings)(u.n.CONNECTIONS_PANEL, {
+        section: _.oAB.CONNECTIONS
+      }), null == b || b()
     }
   });
-  if (b) return null;
-  let O = (0, s.dU)(h) ? null == (t = h.extra.entries[0]) ? true : t.media : h.extra.media;
-  return null == O ? null : (0, r.jsx)(a.sNh, {
+  if (y) return null;
+  let v = (0, o.dU)(m) ? null == (t = m.extra.entries[0]) ? true : t.media : m.extra.media;
+  return null == v ? null : (0, r.jsx)(a.sNh, {
     id: "play-on-spotify",
-    label: p.intl.string(p.t.rRffNz),
+    label: h.intl.string(h.t.rRffNz),
     action: () => {
-      null == g || g({
+      null == E || E({
         action: "PRESS_PLAY_ON_SPOTIFY_MENU_ITEM"
-      }), (0, l.o)(_.Hw.TRACK, O.external_id)
+      }), (0, s.o)(p.Hw.TRACK, v.external_id)
     }
   })
 }

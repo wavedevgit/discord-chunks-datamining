@@ -2,7 +2,7 @@
 /** chunk id: 778414, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   C: () => k,
-  Z: () => E
+  Z: () => Z
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -49,7 +49,7 @@ function N(e) {
   return e
 }
 
-function Z(e, t) {
+function E(e, t) {
   if (null == e) return {};
   var n, r, l = function(e, t) {
     if (null == e) return {};
@@ -65,10 +65,10 @@ function Z(e, t) {
   return l
 }
 
-function E(e) {
+function Z(e) {
   var {
     widget: t
-  } = e, n = Z(e, ["widget"]);
+  } = e, n = E(e, ["widget"]);
   return t instanceof m.q ? (0, r.jsx)(h.Z, N({
     widget: t
   }, n)) : t instanceof g.zy ? (0, r.jsx)(O.Z, N({
@@ -102,7 +102,7 @@ function T(e) {
     }, [e, t, n]), "GB" === e && n
   })(), b = 0 === a.length && o, h = a.filter(g.Wc);
   return ((0, j.ZP)(h), (0, p.J)(o, h), b) ? (0, r.jsx)(A.Z, {}) : (0, r.jsxs)(r.Fragment, {
-    children: [o && m && (0, r.jsx)(C, {}), a.map((e, l) => (0, r.jsx)(E, {
+    children: [o && m && (0, r.jsx)(C, {}), a.map((e, l) => (0, r.jsx)(Z, {
       widget: e,
       user: t,
       guildId: n,
@@ -115,7 +115,7 @@ function T(e) {
 function k(e) {
   var {
     user: t
-  } = e, n = Z(e, ["user"]);
+  } = e, n = E(e, ["user"]);
   let i = l.useRef(null);
   (0, b.r)({
     container: i.current

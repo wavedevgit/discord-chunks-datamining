@@ -1,7 +1,7 @@
 /** Chunk was on 46746 **/
 /** chunk id: 328242, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => y
 }), require("./388685.js"), require("./642613.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -39,7 +39,7 @@ function b(e) {
   })
 }
 
-function y(e) {
+function S(e) {
   let {
     source: t,
     selected: n,
@@ -86,7 +86,7 @@ function y(e) {
   })
 }
 
-function S(e) {
+function y(e) {
   let {
     onClick: t
   } = e, [{
@@ -98,7 +98,7 @@ function S(e) {
     selectedSource: v,
     discordSourceId: b
   }] = (0, g.E_)(), {
-    smarterSourceOrdering: S
+    smarterSourceOrdering: y
   } = (0, h.E)({
     location: "GoLiveSourceGrid"
   }), O = (0, a.e7)([d.ZP], () => d.ZP.getRunningGames()), w = (0, a.cj)([d.ZP], () => {
@@ -108,7 +108,7 @@ function S(e) {
     return t
   }), Z = (0, a.e7)([f.Z], () => f.Z.quests), I = (0, x.jx)(Z, O, n);
   i.useEffect(() => ((0, u.Ky)(), u.P7), []);
-  let N = i.useMemo(() => S ? [...n].sort((e, t) => (0, x.ov)(t, null == I ? true : I.source.id, b, w) - (0, x.ov)(e, null == I ? true : I.source.id, b, w)) : n, [I, S, n, b, w]);
+  let N = i.useMemo(() => y ? [...n].sort((e, t) => (0, x.ov)(t, null == I ? true : I.source.id, b, w) - (0, x.ov)(e, null == I ? true : I.source.id, b, w)) : n, [I, y, n, b, w]);
   if (_) return (0, r.jsx)("div", {
     className: j.loading,
     children: (0, r.jsx)(c.$jN, {})
@@ -116,7 +116,7 @@ function S(e) {
   let P = [];
   return (P = m === o.vA.WINDOW ? N : m === o.vA.SCREEN ? s : l, m === o.vA.CAMERA && 0 === P.length) ? (0, r.jsx)(C, {}) : (0, r.jsx)("div", {
     className: j.root,
-    children: P.map(e => (0, r.jsx)(y, {
+    children: P.map(e => (0, r.jsx)(S, {
       onClick: t,
       source: e,
       selected: null != v && "windowHandle" in v ? (0, p.Z)(e.id, v.windowHandle) : (null == v ? true : v.id) === e.id

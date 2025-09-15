@@ -34,7 +34,7 @@ let d = function() {
         children: "Click the button below to reset your onboarding state for Virtual Currency."
       }), (0, Chunk951288.jsx)(Chunk693789.zx, {
         onClick: () => {
-          module(), exports(), (0, Chunk342386.Z)(), (0, Chunk703656.uL)(Chunk981631.Z5c.APP)
+          module(), exports(), (0, Chunk342386.default)(), (0, Chunk703656.uL)(Chunk981631.Z5c.APP)
         },
         children: "Reset Onboarding State"
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {

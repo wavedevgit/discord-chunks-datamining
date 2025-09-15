@@ -75,7 +75,7 @@ let y = e => {
       t = (0, Chunk631885.mq)(Chunk292352.ne.ACTIVE);
     if (!(0, Chunk277537.PO)("settings-controls") || 0 === exports.length) return null;
     let n = () => {
-      (0, Chunk342386.Z)(), Chunk493683.Z.openPrivateChannel({
+      (0, Chunk342386.default)(), Chunk493683.Z.openPrivateChannel({
         recipientIds: exports.map(e => e.id)
       })
     };

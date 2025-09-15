@@ -45,13 +45,10 @@ function _(e) {
     user: t,
     entry: c,
     display: u,
-    onAction: _,
-    onClose: p
-  } = e, h = (0, l.Z)({
-    onClose: p
-  }), m = (0, i.e7)([s.default], () => s.default.getCurrentUser());
-  if (t.id !== (null == m ? true : m.id) || "recent" !== u || !(0, o.Rh)(c)) return null;
-  let g = () => {
+    onAction: _
+  } = e, p = (0, l.Z)(), h = (0, i.e7)([s.default], () => s.default.getCurrentUser());
+  if (t.id !== (null == h ? true : h.id) || "recent" !== u || !(0, o.Rh)(c)) return null;
+  let m = () => {
     (0, a.ZDy)(async () => {
       let {
         default: e
@@ -60,7 +57,7 @@ function _(e) {
         entry: c,
         user: t,
         onAction: _,
-        onOpenGameSettings: h
+        onOpenGameSettings: p
       }, n))
     })
   };
@@ -70,7 +67,7 @@ function _(e) {
     action: () => {
       null == _ || _({
         action: "PRESS_DELETE_HISTORY_MENU_ITEM"
-      }), g()
+      }), m()
     },
     color: "danger"
   })

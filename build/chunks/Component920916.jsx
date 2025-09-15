@@ -1,7 +1,7 @@
 /** Chunk was on 83175 **/
 /** chunk id: 920916, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => W
+  default: () => G
 }), require("./457542.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,7 +12,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk809206 = require("./809206.js"),
-  Chunk230711 = require("./230711.js"),
   Chunk607070 = require("./607070.js"),
   Chunk235400 = require("./235400.jsx"),
   Chunk204418 = require("./204418.jsx"),
@@ -23,6 +22,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk732389 = require("./732389.jsx"),
   Chunk164946 = require("./164946.js"),
   Chunk369111 = require("./369111.js"),
+  Chunk313789 = require("./313789.js"),
+  Chunk518596 = require("./518596.jsx"),
   Chunk25990 = require("./25990.js"),
   Chunk594174 = require("./594174.js"),
   Chunk960048 = require("./960048.js"),
@@ -41,93 +42,93 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk824210 = require("./824210.js");
 
-function z() {
+function F() {
   let e = Chunk25990.Z.getAllPending(),
     n = (0, Chunk164946.ED)(module);
   return (0, Chunk809206.Mn)(exports).finally(Chunk809206.si)
 }
 
-function F(e) {
+function U(e) {
   var n;
   let {
     transitionState: t,
     onClose: r,
     quest: s,
     location: u,
-    reward: m,
-    decoration: _,
+    reward: _,
+    decoration: p,
     onUseNow: x,
     preview: f
-  } = e, g = o.useRef(null), [C, v] = o.useState(null), j = o.useRef(new l.qA), w = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), b = (0, d.e7)([N.default], () => N.default.getCurrentUser()), I = (null == (n = s.userStatus) ? true : n.claimedAt) != null, [T, P] = o.useState(true === f || I ? "claimed" : "loading");
+  } = e, h = o.useRef(null), [C, v] = o.useState(null), j = o.useRef(new l.qA), w = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), N = (0, d.e7)([I.default], () => I.default.getCurrentUser()), b = (null == (n = s.userStatus) ? true : n.claimedAt) != null, [T, R] = o.useState(true === f || b ? "claimed" : "loading");
   o.useEffect(() => {
-    I || true === f || (0, R.QB)(s.id, S.y$.CROSS_PLATFORM, u).then(() => P("claimed")).catch(() => P("error"))
-  }, [s, u, I, f]);
-  let y = true === f && null === _ && (null == m ? true : m.skuId) !== "",
-    A = null == b || null == _ && true !== f || y || "loading" === T;
+    b || true === f || (0, P.QB)(s.id, y.y$.CROSS_PLATFORM, u).then(() => R("claimed")).catch(() => R("error"))
+  }, [s, u, b, f]);
+  let S = true === f && null === p && (null == _ ? true : _.skuId) !== "",
+    A = null == N || null == p && true !== f || S || "loading" === T;
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)(l.O_, {
       ref: v,
-      className: D.confettiCanvas,
+      className: z.confettiCanvas,
       environment: j.current
     }), (0, a.jsx)("div", {
-      ref: g,
+      ref: h,
       children: (0, a.jsx)(c.Y0X, {
         "data-migration-pending": true,
         transitionState: t,
         size: c.CgR.DYNAMIC,
-        className: i()(D.rootContainer, {
-          [D.rootContainerLoading]: A
+        className: i()(z.rootContainer, {
+          [z.rootContainerLoading]: A
         }),
         hideShadow: true,
         parentComponent: "QuestsRewardCollectibleModal",
-        children: "error" === T ? (0, a.jsx)(E.Z, {
+        children: "error" === T ? (0, a.jsx)(L.Z, {
           onClose: r
         }) : A ? (0, a.jsx)("div", {
-          className: D.loadingIndicatorWrapper,
+          className: z.loadingIndicatorWrapper,
           children: (0, a.jsx)(c.$jN, {
             type: c.$jN.Type.SPINNING_CIRCLE
           })
-        }) : (0, a.jsx)(q, {
+        }) : (0, a.jsx)(W, {
           quest: s,
-          user: b,
-          decoration: _,
+          user: N,
+          decoration: p,
           isSaving: "applying" === T,
           onClose: r,
           onConfirm: () => {
-            P("applying"), x().finally(r)
+            R("applying"), x().finally(r)
           }
         })
       })
-    }), !w && !I && "claimed" === T && (0, a.jsx)(h.Z, {
-      confettiTarget: g.current,
+    }), !w && !b && "claimed" === T && (0, a.jsx)(g.Z, {
+      confettiTarget: h.current,
       confettiCanvas: C,
-      sprites: M.CA,
-      colors: M.Br
+      sprites: O.CA,
+      colors: O.Br
     })]
   })
 }
 
-function U(e) {
+function q(e) {
   let {
     quest: n
-  } = e, t = o.useMemo(() => (0, y.fh)(n, y.eC.LOGO_TYPE, "dark"), [n]), r = A.r.build(n.config).defaultRewardRedemptionInstructionsByPlatform[S.y$.CROSS_PLATFORM];
+  } = e, t = o.useMemo(() => (0, A.fh)(n, A.eC.LOGO_TYPE, "dark"), [n]), r = B.r.build(n.config).defaultRewardRedemptionInstructionsByPlatform[y.y$.CROSS_PLATFORM];
   return (0, a.jsxs)("div", {
-    className: D.additionalRedemptionInstructions,
+    className: z.additionalRedemptionInstructions,
     children: [(0, a.jsx)("img", {
       src: t.url,
       alt: "",
-      className: D.sponsorLogo
+      className: z.sponsorLogo
     }), (0, a.jsx)(c.Text, {
       variant: "text-sm/normal",
       color: "always-white",
-      children: C.Z.parse(r, false, {
+      children: h.Z.parse(r, false, {
         allowLinks: true
       })
     })]
   })
 }
 
-function q(e) {
+function W(e) {
   let {
     quest: n,
     user: t,
@@ -135,25 +136,25 @@ function q(e) {
     isSaving: r,
     onClose: i,
     onConfirm: l
-  } = e, s = (0, y.fh)(n, y.eC.REWARD).url, d = (0, T.f$)(n.config), {
+  } = e, s = (0, A.fh)(n, A.eC.REWARD).url, d = (0, R.f$)(n.config), {
     fractionalState: u
-  } = (0, f.Z)(), p = u === O.a$.FP_ONLY, _ = (0, P.Qy)(n.config);
+  } = (0, x.Z)(), m = u === Z.a$.FP_ONLY, _ = (0, S.Qy)(n.config);
   return (0, a.jsxs)("div", {
-    className: D.claimedRootContainer,
+    className: z.claimedRootContainer,
     children: [(0, a.jsxs)("div", {
-      className: D.headerContainer,
-      children: [(0, a.jsx)(B.Z, {
+      className: z.headerContainer,
+      children: [(0, a.jsx)(E.Z, {
         quest: n,
         dimensions: {
           width: 528,
           height: 148
         },
-        className: D.headerBackground
+        className: z.headerBackground
       }), (0, a.jsx)("div", {
-        className: D.headerForeground,
+        className: z.headerForeground,
         children: (0, a.jsx)(c.olH, {
           "data-migration-pending": true,
-          className: D.close,
+          className: z.close,
           withCircleBackground: true,
           onClick: i
         })
@@ -162,10 +163,10 @@ function q(e) {
       "data-migration-pending": true,
       separator: false,
       children: (0, a.jsxs)("div", {
-        className: D.footerBody,
+        className: z.footerBody,
         children: [(0, a.jsx)("div", {
-          className: D.previewContainer,
-          children: (0, a.jsx)(x.Z, {
+          className: z.previewContainer,
+          children: (0, a.jsx)(p.Z, {
             user: t,
             guildId: null,
             avatarDecorationOverride: o,
@@ -175,29 +176,31 @@ function q(e) {
         }), (0, a.jsx)(c.X6q, {
           variant: "heading-lg/bold",
           color: "header-primary",
-          className: D.heading,
-          children: Z.intl.string(Z.t["0/Yz+f"])
+          className: z.heading,
+          children: D.intl.string(D.t["0/Yz+f"])
         }), (0, a.jsx)(c.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          className: D.text,
+          className: z.text,
           children: _
         }), (0, a.jsx)(c.zxk, {
           variant: "primary",
-          text: Z.intl.string(Z.t.MAS7uL),
+          text: D.intl.string(D.t.MAS7uL),
           loading: r,
           onClick: l
-        }), (0, T.zK)(n, k.S7.ADDITIONAL_REDEMPTION_INSTRUCTIONS) && (0, a.jsx)(U, {
+        }), (0, R.zK)(n, k.S7.ADDITIONAL_REDEMPTION_INSTRUCTIONS) && (0, a.jsx)(q, {
           quest: n
-        }), d && !p && (0, a.jsx)(v.p, {
-          className: D.upsell,
-          upsellText: Z.intl.format(Z.t.VHXn7O, {
+        }), d && !m && (0, a.jsx)(C.p, {
+          className: z.upsell,
+          upsellText: D.intl.format(D.t.VHXn7O, {
             onNitroClick: () => {
-              m.Z.open(L.oAB.PREMIUM, null, {}), i()
+              (0, N.openUserSettings)(w.n.NITRO_PANEL, {
+                section: M.oAB.PREMIUM
+              }), i()
             }
           }),
           buttonAnalyticsObject: {
-            section: L.jXE.PERMADECOS_MARKETING_UPSELL
+            section: M.jXE.PERMADECOS_MARKETING_UPSELL
           }
         })]
       })
@@ -205,7 +208,7 @@ function q(e) {
   })
 }
 
-function W(e) {
+function G(e) {
   var n, t;
   let {
     quest: r,
@@ -213,26 +216,26 @@ function W(e) {
     onClose: l,
     transitionState: d,
     preview: c
-  } = e, m = o.useMemo(() => (0, T.xn)(r.config), [r]), [p, x] = function(e) {
+  } = e, m = o.useMemo(() => (0, R.xn)(r.config), [r]), [p, x] = function(e) {
     let {
       product: n,
       isFetching: t
-    } = (0, g.T)(e), {} = (0, w.Z)({}), a = o.useMemo(() => {
+    } = (0, f.T)(e), {} = (0, j.Z)({}), a = o.useMemo(() => {
       if (null == n || t) return null;
       let e = n.items.find(e => e.type === s.Z.AVATAR_DECORATION);
       return null == e ? null : e
     }, [n, t]);
-    return [a, () => null == a ? (I.Z.addBreadcrumb({
+    return [a, () => null == a ? (T.Z.addBreadcrumb({
       message: "Error saving avatar decoration; it is null"
-    }), Promise.reject()) : ((0, u.cV)(a), z())]
+    }), Promise.reject()) : ((0, u.cV)(a), F())]
   }(null != (t = null == m ? true : m.skuId) ? t : null);
   return null == m ? null : (null == (n = r.userStatus) ? true : n.claimedAt) != null ? (0, a.jsx)(_.default, {
     transitionState: d,
-    onCloseModal: z,
+    onCloseModal: F,
     onClose: l,
     analyticsLocations: [],
     initialSelectedDecoration: p
-  }) : (0, a.jsx)(F, {
+  }) : (0, a.jsx)(U, {
     onClose: l,
     transitionState: d,
     quest: r,

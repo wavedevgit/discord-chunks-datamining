@@ -89,11 +89,11 @@ var Chunk991998 = require("./991998.js"),
   Chunk887003 = require("./887003.js"),
   Chunk820827 = require("./820827.js"),
   Chunk570140 = require("./570140.js"),
-  Chunk230711 = require("./230711.js"),
   Chunk782568 = require("./782568.js");
 require("./597688.js");
 var Chunk231757 = require("./231757.jsx"),
   Chunk706454 = require("./706454.js"),
+  Chunk313789 = require("./313789.js"),
   Chunk866960 = require("./866960.js"),
   Chunk572004 = require("./572004.js"),
   Chunk585483 = require("./585483.js"),
@@ -579,7 +579,7 @@ function ek(e, t) {
     questContentPosition: t.position,
     impressionId: t.impressionId,
     sourceQuestContent: t.sourceQuestContent
-  }), E.S.dispatch(D.CkL.QUEST_GAME_LINK_OPENED), (0, _.Z)(n)
+  }), E.S.dispatch(D.CkL.QUEST_GAME_LINK_OPENED), (0, f.Z)(n)
 }
 let eU = (e, t) => {
   (0, I._3)({
@@ -766,7 +766,12 @@ function tt(e) {
 }
 
 function tn() {
-  Chunk230711.Z.open(Chunk981631.oAB.CONNECTIONS)
+  {
+    letChunk518596 = require("./518596.jsx");
+    module(Chunk313789.n.CONNECTIONS_PANEL, {
+      section: Chunk981631.oAB.CONNECTIONS
+    })
+  }
 }
 
 function tr(e, t) {
@@ -780,7 +785,7 @@ function tr(e, t) {
     sourceQuestContent: t.sourceQuestContent,
     questContentCTA: t.ctaContent,
     impressionId: t.impressionId
-  }), (0, p.Z)({
+  }), (0, _.Z)({
     platformType: n,
     location: t.ctaContent
   })
@@ -800,12 +805,12 @@ function ti(e, t) {
     sourceQuestContent: t.sourceQuestContent
   });
   let r = th(n);
-  if (1 === r.length) return (0, p.Z)({
+  if (1 === r.length) return (0, _.Z)({
     platformType: r.at(0)
   });
   d.Z.dispatch({
     type: "CONNECTIONS_GRID_MODAL_SHOW",
-    onComplete: e => (0, p.Z)({
+    onComplete: e => (0, _.Z)({
       platformType: e
     }),
     includedPlatformTypes: new Set(r)
@@ -834,7 +839,7 @@ function ts(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {
     dateStyle: "short"
   };
-  return null == e ? "" : new Date(e).toLocaleDateString(h.default.locale, t)
+  return null == e ? "" : new Date(e).toLocaleDateString(p.default.locale, t)
 }
 
 function tl(e) {

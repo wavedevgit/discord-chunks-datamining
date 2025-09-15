@@ -169,7 +169,7 @@ function k(e) {
     buttons: V.map(e => A({
       type: e,
       selected: e.value === l,
-      needsPremium: !(0, y.Z)(n, e.value, s, D, k, L),
+      needsPremium: !(0, S.Z)(n, e.value, s, D, k, L),
       needsDemo: W && e.value !== C.LY.RESOLUTION_720,
       analyticsLocation: Y,
       onClick: () => o(e.value),
@@ -180,7 +180,7 @@ function k(e) {
     buttons: C.k0.map(e => A({
       type: e,
       selected: e.value === s,
-      needsPremium: !(0, y.Z)(n, l, e.value, D, k, L),
+      needsPremium: !(0, S.Z)(n, l, e.value, D, k, L),
       needsDemo: W && e.value === C.ws.FPS_60,
       analyticsLocation: Y,
       onClick: () => x(e.value),
@@ -209,11 +209,11 @@ function k(e) {
           })
         })
       })
-    }), z ? (0, r.jsx)(S.Z, {
+    }), z ? (0, r.jsx)(y.Z, {
       message: w.intl.string(w.t.deDogI),
       onClose: t,
       openStreamUpsellModal: E
-    }) : null, W && (0, r.jsx)(S.c, {})]
+    }) : null, W && (0, r.jsx)(y.c, {})]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(p.Z, {
       children: [(0, r.jsx)(u.xJW, {
@@ -227,11 +227,11 @@ function k(e) {
         titleClassName: Z.formItemTitleSlim,
         children: X
       })]
-    }), z ? (0, r.jsx)(S.Z, {
+    }), z ? (0, r.jsx)(y.Z, {
       onClose: t,
       openStreamUpsellModal: E,
       glow: F
-    }) : null, W && (0, r.jsx)(S.c, {})]
+    }) : null, W && (0, r.jsx)(y.c, {})]
   });
   return (0, r.jsx)(f.Z, T(P({}, Y), {
     children: (0, r.jsx)(u.xJW, {

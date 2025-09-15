@@ -33,7 +33,7 @@ function f(e) {
   }(e, ["channel", "onClose"]);
   let s = a.intl.format(a.t.AVVUsb, {
     onLearnMore: function() {
-      n(), (0, o.z)(true)
+      n(), (0, o.z)()
     }
   });
   return (0, r.jsx)(c.Z, function(e) {

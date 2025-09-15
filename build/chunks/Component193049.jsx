@@ -97,7 +97,7 @@ function A(e) {
   }, [X, z, q]);
   let [Q, $] = i.useState({
     username: (0, b.e$)(K),
-    globalName: O.ZP.getName(K)
+    globalName: y.ZP.getName(K)
   }), J = e => {
     U(null), null != e.username && F(true), $(t => C({}, t, e))
   }, ee = i.useMemo(() => [{
@@ -130,13 +130,13 @@ function A(e) {
       });
       return
     }
-    if (O.ZP.getGlobalName(K) === Q.globalName) return void W(N.Wq.EDIT_USERNAME);
+    if (y.ZP.getGlobalName(K) === Q.globalName) return void W(N.Wq.EDIT_USERNAME);
     try {
       U(null), D(true), await (0, m.S2)({
         global_name: Q.globalName
       }), W(N.Wq.EDIT_USERNAME)
     } catch (t) {
-      let e = new f.Z(t).getAnyErrorMessage();
+      let e = new g.Z(t).getAnyErrorMessage();
       p.default.track(T.rMx.POMELO_ERRORS, {
         reason: e,
         display_name_error: true,
@@ -147,11 +147,11 @@ function A(e) {
     }
   }, [K, Q]), en = i.useCallback(async () => {
     try {
-      U(null), D(true), await y.Z.createPomelo({
+      U(null), D(true), await O.Z.createPomelo({
         username: (0, b.R_)(Q.username)
       }, w), await (0, d.In)(K.id), W(N.Wq.PREVIEW)
     } catch (r) {
-      let e = new f.Z(r),
+      let e = new g.Z(r),
         t = (null == e ? true : e.status) != null && e.status >= 400 && e.status < 500 ? e.getAnyErrorMessage() : I.intl.string(I.t.R0RpRU);
       U(t), p.default.track(T.rMx.POMELO_ERRORS, {
         reason: t,
@@ -178,7 +178,7 @@ function A(e) {
     }, k, Y, q)
   }, [ea, es, el, A, ee, M, k, Y, q]), eu = i.useMemo(() => (0, b.zV)(K), [K]);
   return i.useLayoutEffect(() => {
-    (0, g.Z)(K.id, eu)
+    (0, f.Z)(K.id, eu)
   }, [K, eu]), i.useEffect(() => {
     var e, t;
     switch (G) {

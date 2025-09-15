@@ -59,8 +59,7 @@ function C(e) {
     analyticsLocations: c
   } = (0, o.ZP)(a.Z.AUTOMOD_PROFILE_QUARANTINE_ALERT), [u, d] = (0, h.ww)({
     guildId: null != (t = null == i ? true : i.id) ? t : f.lds,
-    analyticsLocations: c,
-    openWithoutBackstack: true
+    analyticsLocations: c
   }), p = d ? b.intl.string(b.t["9ph2v7"]) : b.intl.string(b.t.ldh9Cg), m = d ? b.intl.string(b.t["/PGQf3"]) : b.intl.string(b.t.WikgZ2);
   return (0, r.jsx)("div", {
     children: (0, r.jsx)(s.i, {

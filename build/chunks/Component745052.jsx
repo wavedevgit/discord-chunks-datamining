@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 745052, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => eo
+  Z: () => es
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,7 +14,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk907862 = require("./907862.js"),
   Chunk481060 = require("./481060.js"),
   Chunk150063 = require("./150063.js"),
-  Chunk230711 = require("./230711.js"),
   Chunk112724 = require("./112724.jsx"),
   Chunk183126 = require("./183126.js"),
   Chunk493773 = require("./493773.js"),
@@ -32,6 +31,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk897473 = require("./897473.js"),
   Chunk108427 = require("./108427.js"),
   Chunk210887 = require("./210887.js"),
+  Chunk313789 = require("./313789.js"),
+  Chunk518596 = require("./518596.jsx"),
   Chunk433355 = require("./433355.js"),
   Chunk592125 = require("./592125.js"),
   Chunk819640 = require("./819640.js"),
@@ -56,7 +57,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk803882 = require("./803882.js"),
   Chunk97009 = require("./97009.js");
 
-function et(e) {
+function en(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -75,7 +76,7 @@ function et(e) {
   return e
 }
 
-function en(e, t) {
+function er(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -88,7 +89,7 @@ function en(e, t) {
   }), e
 }
 
-function er() {
+function ei() {
   let e = Chunk647438.useRef(null),
     t = (0, Chunk899740.q)(),
     n = (0, Chunk177033.Z)(),
@@ -106,25 +107,25 @@ function er() {
     {
       channelId: h
     } = (0, Chunk488634._)(),
-    g = Chunk647438.useCallback(() => {
+    m = Chunk647438.useCallback(() => {
       Chunk907862(require.map(e => e.channel.id))
     }, [require, Chunk907862]),
-    b = Chunk647438.useCallback(e => {
+    _ = Chunk647438.useCallback(e => {
       var t, i;
       let {
         row: o
       } = e, s = n[o], c = null == (i = n[o + 1]) || null == (t = i.channel) ? true : t.id, u = s.channel.id;
-      return (0, r.jsx)(W.Z, {
+      return (0, r.jsx)(Y.Z, {
         index: o,
         className: a()({
-          [$.selected]: null != h && h === u,
-          [$.siblingSelected]: null != h && h === c
+          [ee.selected]: null != h && h === u,
+          [ee.siblingSelected]: null != h && h === c
         }),
         channel: s.channel,
         user: s.user,
         hasSingleMessageRequest: l
       }, u)
-    }, [Chunk120356, require, Chunk230711]),
+    }, [Chunk120356, require, Chunk112724]),
     O = Chunk647438.useCallback(() => (0, Chunk951288.jsxs)(Chunk82295.Z, {
       className: Chunk803882.sectionTitle,
       children: [exports > 0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.rA4iWV, {
@@ -137,13 +138,13 @@ function er() {
           tag: "span",
           children: "•"
         }), (0, Chunk951288.jsx)(Chunk481060.Avr, {
-          onClick: Chunk112724,
+          onClick: Chunk493773,
           textVariant: "text-sm/normal",
           text: Chunk388032.intl.string(Chunk388032.t.p6t7RE),
           "aria-label": Chunk388032.intl.string(Chunk388032.t.p6t7RE)
         })]
       }) : null]
-    }, "title"), [exports, Chunk112724, Chunk442837]);
+    }, "title"), [exports, Chunk493773, Chunk442837]);
   return (require.length !== exports && Chunk797614.Z.increment({
     name: Chunk286379.V.MESSAGE_REQUEST_COUNT_DRIFT
   }), 0 === require.length) ? (0, Chunk951288.jsx)(Chunk307947.Z, {
@@ -170,20 +171,20 @@ function er() {
           }
           return i
         }(t, ["ref", "role"]);
-        return (0, r.jsx)(p.aVo, et({
-          className: $.list,
+        return (0, r.jsx)(p.aVo, en({
+          className: ee.list,
           innerRole: l,
-          innerAriaLabel: J.intl.string(J.t.e7GWjY),
+          innerAriaLabel: $.intl.string($.t.e7GWjY),
           ref: t => {
             var n;
             e.current = t, i.current = null != (n = null == t ? true : t.getScrollerNode()) ? n : null
           },
           paddingTop: 24,
           paddingBottom: 24,
-          sectionHeight: K.oi,
-          rowHeight: K.WN,
+          sectionHeight: q.oi,
+          rowHeight: q.WN,
           renderSection: O,
-          renderRow: b,
+          renderRow: _,
           sections: [n.length],
           chunkSize: 30,
           fade: true
@@ -193,28 +194,28 @@ function er() {
   })
 }
 
-function ei(e) {
+function el(e) {
   let {
     pageWidth: t,
     onSidebarResize: n
-  } = e, i = (0, c.e7)([Z.ZP], () => Z.ZP.getSidebarState(Z.uZ)), l = (0, c.e7)([w.Z], () => w.Z.getChannel(null == i ? true : i.channelId));
-  if (null == i || i.type !== j.tI.VIEW_MESSAGE_REQUEST || null == l || !l.isPrivate()) return null;
-  let a = t - q.R7I;
-  return (0, r.jsx)(O.Z, {
-    sidebarType: O.y.MessageRequestSidebar,
+  } = e, i = (0, c.e7)([w.ZP], () => w.ZP.getSidebarState(w.uZ)), l = (0, c.e7)([L.Z], () => L.Z.getChannel(null == i ? true : i.channelId));
+  if (null == i || i.type !== P.tI.VIEW_MESSAGE_REQUEST || null == l || !l.isPrivate()) return null;
+  let a = t - Q.R7I;
+  return (0, r.jsx)(_.Z, {
+    sidebarType: _.y.MessageRequestSidebar,
     maxWidth: a,
     onWidthChange: n,
-    children: (0, r.jsx)(E.Z, {
+    children: (0, r.jsx)(O.Z, {
       channel: l,
-      baseChannelId: Z.uZ
+      baseChannelId: w.uZ
     })
   })
 }
-let el = e => {
-  let t = (0, M.Z)();
+let ea = e => {
+  let t = (0, U.Z)();
   return (i.useEffect(() => {
-    (0, I.kk)(u.z.MESSAGE_REQUEST_SETTINGS_COACH_MARK)
-  }, []), null == e.targetElementRef.current || L.Z.hasLayers() || (0, p.$sL)()) ? e.children : (0, r.jsx)(C.ZP, {
+    (0, v.kk)(u.z.MESSAGE_REQUEST_SETTINGS_COACH_MARK)
+  }, []), null == e.targetElementRef.current || R.Z.hasLayers() || (0, p.$sL)()) ? e.children : (0, r.jsx)(I.ZP, {
     contentTypes: [u.z.MESSAGE_REQUEST_SETTINGS_COACH_MARK],
     children: n => {
       let {
@@ -227,30 +228,31 @@ let el = e => {
           align: "center"
         },
         shouldShow: true,
-        onRequestClose: () => l(Q.L.USER_DISMISS),
+        onRequestClose: () => l(X.L.USER_DISMISS),
         targetElementRef: e.targetElementRef
       };
       return i === u.z.MESSAGE_REQUEST_SETTINGS_COACH_MARK ? (0, r.jsxs)(r.Fragment, {
-        children: [e.children, t ? (0, r.jsx)(d.J2, en(et({}, a), {
-          title: J.intl.string(J.t.hRT8tb),
-          body: J.intl.string(J.t.apPgJC),
+        children: [e.children, t ? (0, r.jsx)(d.J2, er(en({}, a), {
+          title: $.intl.string($.t.hRT8tb),
+          body: $.intl.string($.t.apPgJC),
           actions: [{
-            text: J.intl.string(J.t.LNoAQU),
-            onClick: () => l(Q.L.TAKE_ACTION)
+            text: $.intl.string($.t.LNoAQU),
+            onClick: () => l(X.L.TAKE_ACTION)
           }]
-        })) : (0, r.jsx)(d.J2, en(et({}, a), {
-          title: J.intl.string(J.t.hRT8tb),
-          body: J.intl.string(J.t["8JWodn"]),
+        })) : (0, r.jsx)(d.J2, er(en({}, a), {
+          title: $.intl.string($.t.hRT8tb),
+          body: $.intl.string($.t["8JWodn"]),
           actions: [{
-            text: J.intl.string(J.t.JN6EOD),
+            text: $.intl.string($.t.JN6EOD),
             onClick: e => {
-              e.stopPropagation(), h.Z.open(q.oAB.CONTENT_AND_SOCIAL, null, {
-                scrollPosition: X.FY.MESSAGE_REQUESTS_V2
-              }), l(Q.L.TAKE_ACTION)
+              e.stopPropagation(), (0, Z.openUserSettings)(A.n.CONTENT_AND_SOCIAL_PANEL, {
+                section: Q.oAB.CONTENT_AND_SOCIAL,
+                scrollPosition: J.FY.MESSAGE_REQUESTS_V2
+              }), l(X.L.TAKE_ACTION)
             }
           }, {
-            text: J.intl.string(J.t.LNoAQU),
-            onClick: () => l(Q.L.USER_DISMISS),
+            text: $.intl.string($.t.LNoAQU),
+            onClick: () => l(X.L.USER_DISMISS),
             variant: "secondary"
           }]
         }))]
@@ -259,88 +261,88 @@ let el = e => {
   })
 };
 
-function ea(e) {
+function eo(e) {
   let {
     section: t
   } = e;
-  return t === K.pS.SPAM ? (0, r.jsx)(Y.Z, {}) : (0, r.jsx)(er, {})
+  return t === q.pS.SPAM ? (0, r.jsx)(K.Z, {}) : (0, r.jsx)(ei, {})
 }
-let eo = (0, Chunk112724.Z)(function(e) {
+let es = (0, Chunk112724.Z)(function(e) {
   let {
     width: t
-  } = e, n = (0, V.q)();
-  (0, b.ZP)(() => {
-    f.Y(q.Z5c.MESSAGE_REQUESTS), (0, x.e)("message-requests"), R.default.track(q.rMx.MESSAGE_REQUESTS_VIEWED, {
+  } = e, n = (0, H.q)();
+  (0, m.ZP)(() => {
+    f.Y(Q.Z5c.MESSAGE_REQUESTS), (0, j.e)("message-requests"), D.default.track(Q.rMx.MESSAGE_REQUESTS_VIEWED, {
       num_message_requests: n
-    }), T.Z.increment({
+    }), S.Z.increment({
       name: s.V.MESSAGE_REQUEST_VIEW
     })
   });
-  let l = (0, c.e7)([A.Z], () => A.Z.theme),
-    o = (0, F.w)(),
+  let l = (0, c.e7)([x.Z], () => x.Z.theme),
+    o = (0, z.w)(),
     [u, d] = i.useState(false),
-    h = (0, c.e7)([Z.ZP], () => {
-      let e = Z.ZP.getSidebarState(Z.uZ);
-      return null != e && e.type === j.tI.VIEW_MESSAGE_REQUEST ? e : null
+    h = (0, c.e7)([w.ZP], () => {
+      let e = w.ZP.getSidebarState(w.uZ);
+      return null != e && e.type === P.tI.VIEW_MESSAGE_REQUEST ? e : null
     }),
     g = null == h ? true : h.channelId,
-    m = null != h,
-    _ = (0, k.T)(g),
-    O = (0, D.J)(g),
+    b = null != h,
+    _ = (0, M.T)(g),
+    O = (0, k.J)(g),
     E = i.useRef(null);
   i.useEffect(() => {
-    null != g && !_ && O && m && ((0, N.Kh)(g), P.Z.closeChannelSidebar(Z.uZ))
-  }, [g, O, m, _]);
-  let [y, I] = i.useState(K.pS.REQUESTS), C = e => {
+    null != g && !_ && O && b && ((0, T.Kh)(g), N.Z.closeChannelSidebar(w.uZ))
+  }, [g, O, b, _]);
+  let [v, I] = i.useState(q.pS.REQUESTS), A = e => {
     I(e)
   };
-  return (0, v.Tt)({
-    location: J.intl.string(J.t.e7GWjY)
+  return (0, y.Tt)({
+    location: $.intl.string($.t.e7GWjY)
   }), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: a()(ee.chat, $.container, {
-        [ee.threadSidebarOpen]: m,
-        [ee.threadSidebarFloating]: m && u
+      className: a()(et.chat, ee.container, {
+        [et.threadSidebarOpen]: b,
+        [et.threadSidebarFloating]: b && u
       }),
       children: [(0, r.jsx)(p.f6W, {
         theme: l,
-        children: e => (0, r.jsxs)(S.Z, {
+        children: e => (0, r.jsxs)(C.Z, {
           className: e,
           toolbar: true,
-          children: [(0, r.jsx)(S.Z.Icon, {
+          children: [(0, r.jsx)(C.Z.Icon, {
             icon: p._XJ,
             "aria-hidden": true
-          }), (0, r.jsx)(el, {
+          }), (0, r.jsx)(ea, {
             targetElementRef: E,
-            children: (0, r.jsx)(S.Z.Title, {
+            children: (0, r.jsx)(C.Z.Title, {
               ref: E,
-              children: J.intl.string(J.t.e7GWjY)
+              children: $.intl.string($.t.e7GWjY)
             })
-          }), (0, r.jsx)(S.Z.Divider, {}), (0, r.jsxs)(p.njP, {
-            "aria-label": J.intl.string(J.t.e7GWjY),
-            selectedItem: y,
+          }), (0, r.jsx)(C.Z.Divider, {}), (0, r.jsxs)(p.njP, {
+            "aria-label": $.intl.string($.t.e7GWjY),
+            selectedItem: v,
             type: "top-pill",
-            onItemSelect: C,
+            onItemSelect: A,
             children: [(0, r.jsx)(p.njP.Item, {
-              id: K.pS.REQUESTS,
-              className: $.item,
-              children: J.intl.string(J.t["7RFcXV"])
+              id: q.pS.REQUESTS,
+              className: ee.item,
+              children: $.intl.string($.t["7RFcXV"])
             }), (0, r.jsx)(p.njP.Item, {
-              id: K.pS.SPAM,
-              className: $.item,
-              children: 0 === o ? J.intl.string(J.t.ulKXHh) : J.intl.formatToPlainString(J.t["5jtrlZ"], {
+              id: q.pS.SPAM,
+              className: ee.item,
+              children: 0 === o ? $.intl.string($.t.ulKXHh) : $.intl.formatToPlainString($.t["5jtrlZ"], {
                 count: o
               })
             })]
           })]
         })
       }), (0, r.jsx)("div", {
-        className: ee.content,
-        children: (0, r.jsx)(ea, {
-          section: y
+        className: et.content,
+        children: (0, r.jsx)(eo, {
+          section: v
         })
       })]
-    }), m && (0, r.jsx)(ei, {
+    }), b && (0, r.jsx)(el, {
       pageWidth: t,
       onSidebarResize: (e, t) => {
         d(t)

@@ -2,52 +2,55 @@
 /** chunk id: 912152, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
-  Chunk230711 = require("./230711.js"),
   Chunk63063 = require("./63063.js"),
   Chunk74538 = require("./74538.js"),
   Chunk937615 = require("./937615.js"),
+  Chunk313789 = require("./313789.js"),
+  Chunk947889 = require("./947889.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk137435 = require("./137435.js");
 
-function _(e) {
+function p(e) {
   let {
     hasAppliedGuildBoosts: t,
     hasBoostPerk: n,
     hasGuildAffinitiesOrInGuild: r,
     subscriptionIsPausedOrPausePending: i
-  } = e;
+  } = e, _ = (0, c.Z)();
   if (i) return {
-    flavor: d.intl.format(d.t.doslJi, {
-      onClick: () => a.Z.open(c.oAB.SUBSCRIPTIONS)
+    flavor: f.intl.format(f.t.doslJi, {
+      onClick: () => _(l.n.SUBSCRIPTIONS_PANEL, {
+        section: u.oAB.SUBSCRIPTIONS
+      })
     })
   };
   if (!r) return {
-    subtitle: d.intl.string(d.t.oiWYAQ)
+    subtitle: f.intl.string(f.t.oiWYAQ)
   };
   if (t) return {
-    subtitle: d.intl.string(d.t.W5rDjY),
-    flavor: d.intl.format(d.t.cUHcaW, {
-      helpdeskArticle: o.Z.getArticleURL(c.BhN.GUILD_SUBSCRIPTIONS)
+    subtitle: f.intl.string(f.t.W5rDjY),
+    flavor: f.intl.format(f.t.cUHcaW, {
+      helpdeskArticle: a.Z.getArticleURL(u.BhN.GUILD_SUBSCRIPTIONS)
     })
   };
-  let f = u.GP[u.Xh.PREMIUM_MONTH_GUILD],
-    _ = s.ZP.getDefaultPrice(f.id, n),
-    p = (0, l.og)((0, l.T4)(_.amount, _.currency), f.interval, f.intervalCount);
+  let p = d.GP[d.Xh.PREMIUM_MONTH_GUILD],
+    h = o.ZP.getDefaultPrice(p.id, n),
+    m = (0, s.og)((0, s.T4)(h.amount, h.currency), p.interval, p.intervalCount);
   return {
-    subtitle: n ? d.intl.string(d.t.bhPzXV) : d.intl.string(d.t.Zs9h9f),
-    flavor: d.intl.formatToPlainString(d.t.PGgTdH, {
-      monthlyGuildBoostPrice: p
+    subtitle: n ? f.intl.string(f.t.bhPzXV) : f.intl.string(f.t.Zs9h9f),
+    flavor: f.intl.formatToPlainString(f.t.PGgTdH, {
+      monthlyGuildBoostPrice: m
     })
   }
 }
-let p = function(e) {
+let h = function(e) {
   let {
     hasAppliedGuildBoosts: t,
     hasBoostPerk: n,
@@ -56,17 +59,17 @@ let p = function(e) {
   } = e, {
     subtitle: s,
     flavor: l
-  } = _({
+  } = p({
     hasAppliedGuildBoosts: t,
     hasBoostPerk: n,
     hasGuildAffinitiesOrInGuild: a,
     subscriptionIsPausedOrPausePending: o
   });
   return (0, r.jsxs)("div", {
-    className: f.wrapper,
+    className: _.wrapper,
     children: [(0, r.jsx)(i.X6q, {
       variant: "heading-lg/bold",
-      className: f.subtitle,
+      className: _.subtitle,
       children: s
     }), null != l && (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",

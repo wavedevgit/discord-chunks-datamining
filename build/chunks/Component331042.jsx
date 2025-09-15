@@ -1,7 +1,7 @@
 /** Chunk was on 87624 **/
 /** chunk id: 331042, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => Z
+  default: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -34,21 +34,21 @@ var Chunk951288 = require("./951288.js"),
   Chunk302800 = require("./302800.js"),
   Chunk215023 = require("./215023.js"),
   Chunk222311 = require("./222311.js");
-let Z = t => {
+let x = t => {
   let {
     transitionState: e,
     product: n,
-    onClose: Z,
-    analyticsLocations: x,
-    overrideTitle: M,
-    overrideDescription: D,
-    shouldShowPromotionalExperience: U,
+    onClose: x,
+    analyticsLocations: U,
+    overrideTitle: Z,
+    overrideDescription: M,
+    shouldShowPromotionalExperience: D,
     purchaseType: F = N.o8.FIAT
-  } = t, w = (0, u.e7)([A.Z], () => A.Z.purchases), j = (0, O.o)(n, w), V = (0, y.W)(n, j), {
+  } = t, w = (0, o.e7)([A.Z], () => A.Z.purchases), j = (0, O.o)(n, w), V = (0, y.W)(n, j), {
     analyticsLocations: G
-  } = (0, p.ZP)([...x, c.Z.COLLECTIBLES_COLLECTED_MODAL]), H = (t => {
+  } = (0, p.ZP)([...U, c.Z.COLLECTIBLES_COLLECTED_MODAL]), H = (t => {
     let e = (0, I.o)("CollectiblesCollectedModal"),
-      n = (0, u.e7)([E.default], () => {
+      n = (0, o.e7)([E.default], () => {
         var t, e;
         return null != (e = null == (t = E.default.getCurrentUser()) ? true : t.isStaff()) && e
       });
@@ -66,7 +66,7 @@ let Z = t => {
       firstProfileEffect: e,
       firstAvatarDecoration: n,
       firstNameplate: i
-    } = (0, m.Rj)(t), r = (0, _.x6)(t);
+    } = (0, g.Rj)(t), r = (0, _.x6)(t);
     return {
       firstAvatarDecoration: n,
       firstProfileEffect: e,
@@ -94,40 +94,40 @@ let Z = t => {
     confettiCanvas: q,
     setConfettiCanvas: z,
     customConfettiDisplayOptions: K
-  } = (0, S.$0)(V, F);
-  (0, S.f1)(V, G);
-  let J = (0, b.kd)(V),
-    tt = (0, b.kd)(H),
+  } = (0, b.$0)(V, F);
+  (0, b.f1)(V, G);
+  let J = (0, S.kd)(V),
+    tt = (0, S.kd)(H),
     {
       handleUseNow: te,
       isApplying: tn
     } = (0, T.W)({
       product: V,
-      onSuccess: Z,
-      onError: Z
+      onSuccess: x,
+      onError: x
     }),
-    ti = (0, S.Xw)({
+    ti = (0, b.Xw)({
       product: V,
       pairedProduct: H,
-      overrideTitle: M,
+      overrideTitle: Z,
       isVariantsGroupEnabled: true,
-      shouldShowPromotionalExperience: U,
+      shouldShowPromotionalExperience: D,
       productName: J,
       pairedProductName: tt
     }),
-    tr = (0, S.ys)({
+    tr = (0, b.ys)({
       product: V,
       pairedProduct: H,
-      overrideDescription: D,
+      overrideDescription: M,
       productName: J,
       pairedProductName: tt,
-      shouldShowPromotionalExperience: U,
+      shouldShowPromotionalExperience: D,
       promotionalRewardCollectedText: X
     }),
-    tl = (0, S.cf)({
+    tl = (0, b.cf)({
       product: V,
       pairedProduct: H,
-      onClose: Z,
+      onClose: x,
       analyticsLocations: G,
       hasRequiredProductItems: W,
       handleUseNow: te,
@@ -148,7 +148,7 @@ let Z = t => {
   }
   let {
     confettiColors: ts
-  } = (0, g.Z)(V.styles);
+  } = (0, m.Z)(V.styles);
   return (0, i.jsx)(p.Gt, {
     value: G,
     children: (0, i.jsxs)("div", {
@@ -157,7 +157,7 @@ let Z = t => {
         ref: z,
         className: B.confettiCanvas,
         environment: Q
-      }), (0, i.jsx)(o.I, {
+      }), (0, i.jsx)(u.I, {
         graphic: {
           type: "dynamic",
           component: d.AX$.COLLECTIBLES_PREVIEW,
@@ -170,15 +170,15 @@ let Z = t => {
         },
         title: ti,
         subtitle: null != tr ? tr : true,
-        onClose: Z,
+        onClose: x,
         transitionState: e,
         actions: tl
       }), null != K ? (0, i.jsx)(P.i, {
         options: K
-      }) : (0, i.jsx)(k.Z, {
+      }) : (0, i.jsx)(L.Z, {
         confettiTarget: Y.current,
         confettiCanvas: q,
-        sprites: (0, L.vK)(V.categorySkuId),
+        sprites: (0, k.vK)(V.categorySkuId),
         colors: null == ts ? true : ts.map(t => t.toHexString())
       })]
     })

@@ -40,7 +40,7 @@ function d(t) {
     g = i.ZP.isPremium(O) ? b.t.E0sNsb : b.t.UBcutr,
     j = b.intl.format(g, {
       onLearnMore: function() {
-        e(), (0, l.z)(true)
+        e(), (0, l.z)()
       }
     });
   return (0, r.jsx)(u.Z, function(t) {

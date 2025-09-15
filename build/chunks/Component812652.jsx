@@ -23,7 +23,7 @@ var Chunk268146 = require("./268146.js"),
   Chunk637824 = require("./637824.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk355669 = require("./355669.js");
-let y = [{
+let S = [{
     value: Chunk37113.tI.PRESET_VIDEO,
     canUse: e => true
   }, {
@@ -33,7 +33,7 @@ let y = [{
     value: Chunk37113.tI.PRESET_CUSTOM,
     canUse: e => true
   }],
-  S = [{
+  y = [{
     value: Chunk37113.LY.RESOLUTION_720,
     canUse: e => true
   }, {
@@ -102,7 +102,7 @@ function w(e) {
     onSelect: w,
     children: [(0, r.jsx)(l.kSQ, {
       label: j.intl.string(v.default.P2pjm5),
-      children: y.filter(e => {
+      children: S.filter(e => {
         let {
           canUse: t
         } = e;
@@ -144,7 +144,7 @@ function w(e) {
       children: [(0, r.jsx)(l.Clw, {}), (0, r.jsx)(l.sNh, {
         id: "resolution",
         label: j.intl.string(v.default.IG5n0d),
-        children: S.filter(e => {
+        children: y.filter(e => {
           let {
             canUse: t
           } = e;

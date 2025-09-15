@@ -24,7 +24,7 @@ let p = t => {
     warningType: x,
     otherUserId: p,
     transitionState: b
-  } = t, E = null != (0, o.M)(n), [h, A] = r.useState("ACTIONS"), m = r.useCallback(t => {
+  } = t, E = null != (0, o.M)(n), [A, h] = r.useState("ACTIONS"), O = r.useCallback(t => {
     (0, c.qc)({
       channelId: n,
       warningId: i,
@@ -33,7 +33,7 @@ let p = t => {
       cta: t,
       isNudgeWarning: E
     })
-  }, [n, i, x, p, E]), O = r.useCallback(t => {
+  }, [n, i, x, p, E]), g = r.useCallback(t => {
     let {
       text: e,
       onClick: n
@@ -44,19 +44,19 @@ let p = t => {
       variant: "secondary",
       textVariant: "text-sm/normal"
     })
-  }, []), g = r.useCallback(() => {
-    switch (h) {
+  }, []), m = r.useCallback(() => {
+    switch (A) {
       case "SAFETY_TIPS":
       case "ABOUT_SAFETY_ALERTS":
-        return (0, s.jsx)(O, {
+        return (0, s.jsx)(g, {
           text: _.intl.string(_.t["13/7kZ"]),
-          onClick: () => A("ACTIONS")
+          onClick: () => h("ACTIONS")
         });
       default:
         return null
     }
-  }, [h, O]), N = r.useCallback(() => {
-    switch (h) {
+  }, [A, g]), N = r.useCallback(() => {
+    switch (A) {
       case "SAFETY_TIPS":
         return _.intl.string(_.t.EtNxi4);
       case "ABOUT_SAFETY_ALERTS":
@@ -64,9 +64,9 @@ let p = t => {
       default:
         return _.intl.string(_.t.MAhAp6)
     }
-  }, [h]), j = r.useCallback(t => {
-    A(t)
-  }, [A]);
+  }, [A]), j = r.useCallback(t => {
+    h(t)
+  }, [h]);
   return (0, s.jsxs)(l.Y0X, {
     "data-migration-pending": true,
     transitionState: b,
@@ -84,11 +84,11 @@ let p = t => {
       })
     }), (0, s.jsx)(l.Ttm, {
       children: (0, s.jsxs)(l.MyZ, {
-        activeSlide: h,
+        activeSlide: A,
         width: 440,
         children: [(0, s.jsx)(l.Mi4, {
           id: "ACTIONS",
-          children: (0, s.jsx)(u.Z, {
+          children: (0, s.jsx)(T.Z, {
             otherUserId: p,
             channelId: n,
             warningId: i,
@@ -100,23 +100,23 @@ let p = t => {
           children: (0, s.jsx)(d.Z, {
             channelId: n,
             onClose: () => {
-              e(), m(c.NM.USER_SAFETY_TOOLS_ABOUT_SAFETY_ALERTS_DISMISS)
+              e(), O(c.NM.USER_SAFETY_TOOLS_ABOUT_SAFETY_ALERTS_DISMISS)
             }
           })
         }), (0, s.jsx)(l.Mi4, {
           id: "SAFETY_TIPS",
-          children: (0, s.jsx)(T.Z, {})
+          children: (0, s.jsx)(u.Z, {})
         })]
       })
     }), (0, s.jsxs)(l.mzw, {
       "data-migration-pending": true,
       justify: a.Z.Justify.BETWEEN,
-      children: [(0, s.jsx)(O, {
+      children: [(0, s.jsx)(g, {
         text: _.intl.string(_.t.cpT0Cg),
         onClick: () => {
-          e(), m(c.NM.USER_SAFETY_TOOLS_DISMISS)
+          e(), O(c.NM.USER_SAFETY_TOOLS_DISMISS)
         }
-      }), g()]
+      }), m()]
     })]
   })
 }

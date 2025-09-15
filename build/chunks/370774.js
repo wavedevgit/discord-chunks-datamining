@@ -13,11 +13,11 @@ require.d(exports, {
 var Chunk995638 = require("./995638.js"),
   Chunk843611 = require("./843611.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk230711 = require("./230711.js"),
   Chunk455199 = require("./455199.js"),
   Chunk2818 = require("./2818.js"),
   Chunk768943 = require("./768943.js"),
   Chunk175006 = require("./175006.js"),
+  Chunk313789 = require("./313789.js"),
   Chunk592125 = require("./592125.js"),
   Chunk430824 = require("./430824.js");
 require("./375954.js");
@@ -62,9 +62,15 @@ function y() {
 }
 
 function O(e) {
-  o.Z.open(g.oAB.NOTIFICATIONS, true, {
-    analyticsLocations: e
-  })
+  {
+    let {
+      openUserSettings: t
+    } = n(518596);
+    t(u.n.NOTIFICATIONS_PANEL, {
+      section: g.oAB.NOTIFICATIONS,
+      analyticsLocations: e
+    })
+  }
 }
 
 function v() {

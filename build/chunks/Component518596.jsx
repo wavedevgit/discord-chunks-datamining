@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 /** chunk id: 518596, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-require.d(exports, {
-  I: () => p,
-  Z: () => h
+require.r(exports), require.d(exports, {
+  USER_SETTINGS_MODAL_KEY: () => m,
+  openUserSettings: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
@@ -51,27 +51,46 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let p = "USER_SETTINGS_MODAL_MODAL_KEY";
 
-function h() {
-  var e;
-  let t = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk313789.n.ACCOUNT_PANEL,
-    u = arguments.length > 1 ? arguments[1] : true;
-  Chunk570140.Z.dispatch({
-    type: "USER_SETTINGS_MODAL_OPEN",
-    section: null != (e = null == u ? true : u.section) ? module : null,
-    subsection: null == u ? true : u.subsection,
-    openWithoutBackstack: false
-  }), (0, Chunk526665.yP)("openUserSettings") ? (0, Chunk481060.ZDy)(async () => {
-    let {
-      default: e
-    } = await require.e("47129").then(require.bind(require, 245286));
-    return n => (0, r.jsx)(e, _(d({}, n), {
-      target: t
-    }))
-  }, {
-    modalKey: p,
-    stackingBehavior: "replaceAll",
-    stackNextByDefault: true
-  }) : (0, Chunk37234.jN)(Chunk981631.S9g.USER_SETTINGS)
+function p(e, t) {
+  if (null == e) return {};
+  var n, r, i = h(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
 }
+
+function h(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+let m = "USER_SETTINGS_MODAL_MODAL_KEY",
+  g = function() {
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk313789.n.ACCOUNT_PANEL,
+      t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {
+        section: Chunk981631.oAB.ACCOUNT
+      };
+    var {
+      subsection: u
+    } = exports, f = p(exports, ["subsection"]);
+    Chunk570140.Z.dispatch(d({
+      type: "USER_SETTINGS_MODAL_OPEN",
+      subsection: null != u ? u : null
+    }, f)), (0, Chunk526665.yP)("openUserSettings") ? (0, Chunk481060.ZDy)(async () => {
+      let {
+        default: t
+      } = await require.e("47129").then(require.bind(require, 245286));
+      return n => (0, r.jsx)(t, _(d({}, n), {
+        target: e
+      }))
+    }, {
+      modalKey: m,
+      stackingBehavior: "replaceAll",
+      stackNextByDefault: true
+    }) : (0, Chunk37234.jN)(Chunk981631.S9g.USER_SETTINGS)
+  }

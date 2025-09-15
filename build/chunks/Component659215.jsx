@@ -2,13 +2,14 @@
 /** chunk id: 659215, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  default: () => E,
-  m: () => b
+  default: () => b,
+  m: () => y
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
-  Chunk230711 = require("./230711.js"),
+  Chunk313789 = require("./313789.js"),
+  Chunk518596 = require("./518596.jsx"),
   Chunk104494 = require("./104494.js"),
   Chunk639119 = require("./639119.js"),
   Chunk790527 = require("./790527.jsx"),
@@ -18,7 +19,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk819620 = require("./819620.js"),
   Chunk784370 = require("./784370.js");
 
-function p(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,22 +28,22 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
-  var n, r, i = g(e, t);
+  var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -50,7 +51,7 @@ function m(e, t) {
   return i
 }
 
-function g(e, t) {
+function E(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -58,42 +59,44 @@ function g(e, t) {
   return i
 }
 
-function E(e) {
+function b(e) {
   var t, n, {
       onClose: i,
-      analyticsSource: p
+      analyticsSource: h
     } = e,
-    g = m(e, ["onClose", "analyticsSource"]);
-  let E = d.intl.format(d.t["JmbS+f"], {
+    E = g(e, ["onClose", "analyticsSource"]);
+  let b = f.intl.format(f.t["JmbS+f"], {
       onClick: () => {
-        a.Z.open(u.oAB.PREMIUM), i()
+        (0, o.openUserSettings)(a.n.NITRO_PANEL, {
+          section: d.oAB.PREMIUM
+        }), i()
       }
     }),
-    b = (0, s.N)(),
-    y = (0, o.Ng)(),
-    O = null != b || null != y;
-  return (0, r.jsx)(l.Z, h({
-    artURL: _,
-    artContainerClassName: f.artContainer,
-    modalClassName: f.modalContainer,
-    bodyClassName: f.bodyContainer,
-    type: c.cd.BURST_REACTION_UPSELL,
-    title: d.intl.string(d.t.N4SCJy),
-    body: E,
-    glowUp: E,
-    analyticsSource: p,
+    y = (0, l.N)(),
+    O = (0, s.Ng)(),
+    v = null != y || null != O;
+  return (0, r.jsx)(c.Z, m({
+    artURL: p,
+    artContainerClassName: _.artContainer,
+    modalClassName: _.modalContainer,
+    bodyClassName: _.bodyContainer,
+    type: u.cd.BURST_REACTION_UPSELL,
+    title: f.intl.string(f.t.N4SCJy),
+    body: b,
+    glowUp: b,
+    analyticsSource: h,
     analyticsLocation: {
-      page: u.ZY5.PREMIUM_UPSELL_BURST_REACTIONS,
-      object: u.qAy.BUTTON_CTA
+      page: d.ZY5.PREMIUM_UPSELL_BURST_REACTIONS,
+      object: d.qAy.BUTTON_CTA
     },
     onClose: i,
-    subscribeButtonText: O ? true : d.intl.string(d.t["8x0jKS"]),
-    subscriptionTier: null != (n = null == b || null == (t = b.subscription_trial) ? true : t.sku_id) ? n : c.Si.TIER_2,
-    backButtonText: d.intl.string(d.t.f3Pet7)
-  }, g))
+    subscribeButtonText: v ? true : f.intl.string(f.t["8x0jKS"]),
+    subscriptionTier: null != (n = null == y || null == (t = y.subscription_trial) ? true : t.sku_id) ? n : u.Si.TIER_2,
+    backButtonText: f.intl.string(f.t.f3Pet7)
+  }, E))
 }
 
-function b(e) {
+function y(e) {
   let {
     analytics: t
   } = e;
@@ -101,7 +104,7 @@ function b(e) {
     let {
       default: e
     } = await Promise.resolve().then(n.bind(n, 659215));
-    return n => (0, r.jsx)(e, h({
+    return n => (0, r.jsx)(e, m({
       analyticsSource: t
     }, n))
   })

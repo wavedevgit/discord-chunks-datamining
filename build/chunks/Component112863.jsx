@@ -16,7 +16,7 @@ var Chunk481060 = require("./481060.js"),
 
 function d() {
   let e = () => {
-    (0, Chunk703656.uL)(Chunk981631.Z5c.GUILD_DISCOVERY), (0, Chunk342386.Z)()
+    (0, Chunk703656.uL)(Chunk981631.Z5c.GUILD_DISCOVERY), (0, Chunk342386.default)()
   };
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk776575.wrapper,

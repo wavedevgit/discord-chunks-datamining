@@ -1,7 +1,7 @@
 /** Chunk was on 91848 **/
 /** chunk id: 436046, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => N
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,12 +20,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk181576 = require("./181576.js");
 
-function x(e) {
+function N(e) {
   let {
     onComplete: t,
     onClose: n
-  } = e, [s, x] = o.useState(null), [N, T] = o.useState(null), [A, C] = o.useState(false), j = (0, l.e7)([p.default], () => p.default.getCurrentUser()), y = o.useRef(null);
-  async function O(e) {
+  } = e, [s, N] = o.useState(null), [x, T] = o.useState(null), [A, C] = o.useState(false), j = (0, l.e7)([p.default], () => p.default.getCurrentUser()), O = o.useRef(null);
+  async function y(e) {
     e.preventDefault(), r()(null != s, "Cannot submit null birthday."), C(true);
     try {
       await d.Av(s, h.L0.NEW_USER_FLOW), t()
@@ -42,15 +42,15 @@ function x(e) {
     null != j && null != j.nsfwAllowed && t()
   }, [j, t]);
   let v = o.useCallback(e => {
-      x(e)
-    }, [x]),
+      N(e)
+    }, [N]),
     I = o.useCallback(() => {
       var e;
-      null == (e = y.current) || e.focus()
-    }, [y]);
+      null == (e = O.current) || e.focus()
+    }, [O]);
   return null == j ? null : (0, a.jsxs)("form", {
     className: E.content,
-    onSubmit: O,
+    onSubmit: y,
     children: [(0, a.jsx)(u.gw7, {
       size: "custom",
       width: 56,
@@ -78,7 +78,7 @@ function x(e) {
         name: "birthday",
         onChange: v,
         onPopulated: I,
-        error: N,
+        error: x,
         value: s
       })
     }), (0, a.jsx)("div", {
@@ -86,7 +86,7 @@ function x(e) {
       children: (0, a.jsx)("div", {
         className: E.buttonWrapper,
         children: (0, a.jsx)(c.zx, {
-          buttonRef: y,
+          buttonRef: O,
           type: "submit",
           size: c.zx.Sizes.LARGE,
           submitting: A,

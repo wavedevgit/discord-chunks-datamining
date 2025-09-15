@@ -10,7 +10,7 @@ var Chunk647438 = require("./647438.js"),
 
 function o() {
   let e = Chunk647438.useContext(Chunk59662.j);
-  return null == module ? (e, t) => (0, a.Z)(e, t) : (t, n) => {
-    (0, a.Z)(t, n), e.navigateTo(t)
-  }
+  return Chunk647438.useCallback((t, n) => {
+    (0, a.openUserSettings)(t, n), null != e && e.navigateTo(t)
+  }, [module])
 }

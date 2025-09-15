@@ -38,7 +38,7 @@ function g() {
     n = () => {
       (0, Chunk507962.DI)(Chunk507962.Ln.APPEARANCE_SETTINGS), (0, Chunk550385.XO)(Chunk550385.wh.CUSTOM_THEME, {
         from: Chunk550385.tE.SETTING
-      }), (0, Chunk342386.Z)()
+      }), (0, Chunk342386.default)()
     };
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk640744.container,

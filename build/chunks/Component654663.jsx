@@ -1,7 +1,7 @@
 /** Chunk was on 70675 **/
 /** chunk id: 654663, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => D
+  default: () => G
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -13,6 +13,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk911969 = require("./911969.js"),
   Chunk947440 = require("./947440.jsx"),
   Chunk100527 = require("./100527.js"),
+  Chunk906732 = require("./906732.jsx"),
   Chunk299206 = require("./299206.jsx"),
   Chunk976192 = require("./976192.jsx"),
   Chunk819403 = require("./819403.jsx"),
@@ -39,95 +40,98 @@ var Chunk442837 = require("./442837.js"),
   Chunk332031 = require("./332031.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let D = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
+let G = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   let {
     user: n,
     guildId: t,
     channel: o,
     context: u,
-    onSelect: d,
-    onHeightUpdate: D
-  } = e, G = o.id, L = (0, A.Z)({
+    onSelect: G,
+    onHeightUpdate: L
+  } = e, V = o.id, q = (0, w.Z)({
     userId: n.id,
     guildId: t,
-    channelId: G
-  }), V = (0, E.Z)(n, t, u), q = (0, C.Z)(n.id, u), W = (0, k.Z)(n.id), H = (0, y.Z)({
+    channelId: V
+  }), H = (0, C.Z)(n, t, u), W = (0, I.Z)(n.id, u), B = (0, M.Z)(n.id), K = (0, y.Z)({
     user: n,
     context: u
-  }), B = (0, i.e7)([m.Z, p.Z], () => {
-    let e = m.Z.getVoiceChannelId();
-    return p.Z.getChannel(e)
+  }), F = (0, i.e7)([O.Z, m.Z], () => {
+    let e = O.Z.getVoiceChannelId();
+    return m.Z.getChannel(e)
   }), {
-    enabled: K
-  } = f.Z.useExperiment({
-    guildId: null == B ? true : B.guild_id,
+    enabled: Q
+  } = p.Z.useExperiment({
+    guildId: null == F ? true : F.guild_id,
     location: "ThreadUserContextMenu"
-  }), F = K ? null == B ? true : B.id : null, Q = (0, T.Z)(n, F), Y = (0, P.Z)({
+  }), Y = Q ? null == F ? true : F.id : null, X = (0, U.Z)(n, Y), J = (0, v.Z)({
     user: n,
     guildId: t,
-    channelId: G,
+    channelId: V,
     context: u
-  }), X = (0, h.Z)({
+  }), z = (0, j.Z)({
     user: n
-  }), J = (0, Z.Z)({
+  }), {
+    analyticsLocations: $
+  } = (0, g.ZP)(d.Z.THREAD_USER_MENU), ee = (0, b.Z)({
     guildId: t,
     userId: n.id,
     analyticsLocation: {
-      page: M.ZY5.GUILD_CHANNEL,
-      section: M.jXE.CHAT_USERNAME,
-      object: M.qAy.CONTEXT_MENU_ITEM
+      page: R.ZY5.GUILD_CHANNEL,
+      section: R.jXE.CHAT_USERNAME,
+      object: R.qAy.CONTEXT_MENU_ITEM
     },
+    analyticsLocations: $,
     context: u
-  }), z = (0, N.Z)({
+  }), en = (0, E.Z)({
     user: n,
     guildId: t
-  }), $ = (0, c.Z)(null, n), ee = (0, O.Z)({
+  }), et = (0, c.Z)(null, n), el = (0, h.Z)({
     user: n
-  }), en = (0, j.Z)({
+  }), ei = (0, P.Z)({
     user: n
-  }), et = (0, S.Z)({
+  }), er = (0, T.Z)({
     user: n
-  }), el = (0, x.Z)({
+  }), ea = (0, _.Z)({
     user: n,
     guildId: t,
-    channelId: G,
+    channelId: V,
     location: "ThreadUserContextMenu"
-  }), ei = (0, _.Z)({
+  }), eo = (0, N.Z)({
     user: n,
     guildId: t,
-    channelId: G,
+    channelId: V,
     location: "ThreadUserContextMenu"
-  }), er = (0, U.Z)(n, t, G), ea = (0, w.Z)(n.id, t), eo = (0, I.Z)(n, t), eu = (0, g.Z)({
+  }), eu = (0, A.Z)(n, t, V), es = (0, k.Z)(n.id, t), ec = (0, S.Z)(n, t), ed = (0, Z.Z)({
     id: n.id,
-    label: R.intl.string(R.t["/AXYnJ"])
-  }), es = (0, b.Z)(n), ec = (0, v.Z)({
+    label: D.intl.string(D.t["/AXYnJ"])
+  }), eg = (0, f.Z)(n), eZ = (0, x.Z)({
     commandType: s.yU.USER,
     commandTargetId: n.id,
     channel: o,
     guildId: t,
-    onHeightUpdate: D
-  }), ed = n.isNonUserBot();
+    onHeightUpdate: L
+  }), eb = n.isNonUserBot();
   return (0, l.jsxs)(r.v2r, {
     navId: "user-context",
     onClose: a.Zy,
-    "aria-label": R.intl.string(R.t.liqwPD),
-    onSelect: d,
-    children: [!ed && (0, l.jsxs)(l.Fragment, {
+    "aria-label": D.intl.string(D.t.liqwPD),
+    onSelect: G,
+    children: [!eb && (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsx)(r.kSQ, {
-        children: es
+        children: eg
       }), (0, l.jsxs)(r.kSQ, {
-        children: [L, V, q, H, Q, Y, X, W]
+        children: [q, H, W, K, X, J, z, B]
       }), (0, l.jsx)(r.kSQ, {
-        children: $
+        children: et
       }), (0, l.jsxs)(r.kSQ, {
-        children: [J, ec, z, ee, en, et, ei, el]
+        children: [ee, eZ, en, el, ei, er, eo, ea]
       }), (0, l.jsx)(r.kSQ, {
-        children: er
+        children: eu
       }), (0, l.jsxs)(r.kSQ, {
-        children: [ea, eo]
+        children: [es, ec]
       })]
     }), (0, l.jsx)(r.kSQ, {
-      children: eu
+      children: ed
     })]
   })
 }, {

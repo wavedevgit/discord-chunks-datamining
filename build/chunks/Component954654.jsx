@@ -2,8 +2,8 @@
 /** chunk id: 954654, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => x,
-  xX: () => w
+  ZP: () => L,
+  xX: () => D
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,6 +16,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk197653 = require("./197653.jsx"),
   Chunk987106 = require("./987106.jsx"),
   Chunk927057 = require("./927057.jsx"),
+  Chunk241085 = require("./241085.jsx"),
   Chunk574597 = require("./574597.jsx"),
   Chunk378975 = require("./378975.jsx"),
   Chunk732586 = require("./732586.jsx"),
@@ -31,7 +32,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk892519 = require("./892519.jsx"),
   Chunk429577 = require("./429577.js");
 
-function C(e, t, n) {
+function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -40,20 +41,20 @@ function C(e, t, n) {
   }) : e[t] = n, e
 }
 
-function N(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      C(e, t, n[t])
+      N(e, t, n[t])
     })
   }
   return e
 }
 
-function R(e, t) {
+function P(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -64,66 +65,68 @@ function R(e, t) {
   return n
 }
 
-function P(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+function w(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function w(e) {
+function D(e) {
   return e.map((e, t) => (0, r.jsxs)(r.Fragment, {
-    children: [D(e, t.toString()), (0, r.jsx)(o.nn4, {
+    children: [x(e, t.toString()), (0, r.jsx)(o.nn4, {
       children: ","
     })]
   }))
 }
 
-function D(e, t) {
+function x(e, t) {
   switch (e.type) {
     case s.re.ACTION_ROW:
-      return (0, r.jsx)(v.Z, P(N({}, e), {
-        renderComponents: w
+      return (0, r.jsx)(I.Z, w(R({}, e), {
+        renderComponents: D
       }), t);
     case s.re.BUTTON:
-      return (0, r.jsx)(d.Z, N({}, e), t);
+      return (0, r.jsx)(d.Z, R({}, e), t);
     case s.re.STRING_SELECT:
-      return (0, r.jsx)(p.Z, N({}, e), t);
+      return (0, r.jsx)(h.Z, R({}, e), t);
     case s.re.CHANNEL_SELECT:
-      return (0, r.jsx)(f.Z, N({}, e), t);
+      return (0, r.jsx)(f.Z, R({}, e), t);
     case s.re.USER_SELECT:
     case s.re.ROLE_SELECT:
     case s.re.MENTIONABLE_SELECT:
-      return (0, r.jsx)(_.Z, N({}, e), t);
+      return (0, r.jsx)(p.Z, R({}, e), t);
     case s.re.TEXT_INPUT:
-      return (0, r.jsx)(h.Z, N({}, e), t);
+      return (0, r.jsx)(m.Z, R({}, e), t);
     case s.re.SECTION:
-      return (0, r.jsx)(S.Z, P(N({}, e), {
-        renderComponents: w
+      return (0, r.jsx)(A.Z, w(R({}, e), {
+        renderComponents: D
       }), t);
     case s.re.TEXT_DISPLAY:
-      return (0, r.jsx)(b.Z, N({}, e), t);
+      return (0, r.jsx)(y.Z, R({}, e), t);
     case s.re.MEDIA_GALLERY:
-      return (0, r.jsx)(g.Z, N({}, e), t);
+      return (0, r.jsx)(E.Z, R({}, e), t);
     case s.re.THUMBNAIL:
-      return (0, r.jsx)(y.Z, N({}, e), t);
+      return (0, r.jsx)(O.Z, R({}, e), t);
     case s.re.FILE:
-      return (0, r.jsx)(m.Z, N({}, e), t);
+      return (0, r.jsx)(g.Z, R({}, e), t);
     case s.re.SEPARATOR:
-      return (0, r.jsx)(E.Z, N({}, e), t);
+      return (0, r.jsx)(b.Z, R({}, e), t);
     case s.re.CONTENT_INVENTORY_ENTRY:
-      return (0, r.jsx)(O.Z, N({}, e), t);
+      return (0, r.jsx)(v.Z, R({}, e), t);
     case s.re.CONTAINER:
-      return (0, r.jsx)(I.ZP, P(N({}, e), {
-        renderComponents: w
+      return (0, r.jsx)(T.ZP, w(R({}, e), {
+        renderComponents: D
       }), t);
     case s.re.LABEL:
-      return (0, r.jsx)(T.Z, P(N({}, e), {
-        renderComponent: D
-      }), t)
+      return (0, r.jsx)(S.Z, w(R({}, e), {
+        renderComponent: x
+      }), t);
+    case s.re.FILE_UPLOAD:
+      return (0, r.jsx)(_.Z, R({}, e), t)
   }
 }
 
-function x(e) {
+function L(e) {
   let {
     message: t,
     shouldDisableInteractiveComponents: n
@@ -143,10 +146,10 @@ function x(e) {
         children: (0, r.jsx)(u.am.AutoMeasuredNestedContainer, {
           children: e => (0, r.jsx)("div", {
             ref: e,
-            className: a()([A.container, {
-              [A.isComponentsV2]: (0, l.hv)(t)
+            className: a()([C.container, {
+              [C.isComponentsV2]: (0, l.hv)(t)
             }]),
-            children: w(i)
+            children: D(i)
           })
         })
       })

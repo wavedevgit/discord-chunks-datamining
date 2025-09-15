@@ -7,8 +7,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk938288 = require("./938288.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk230711 = require("./230711.js"),
   Chunk687158 = require("./687158.js"),
+  Chunk518596 = require("./518596.jsx"),
   Chunk63063 = require("./63063.js"),
   Chunk51144 = require("./51144.js"),
   Chunk544508 = require("./544508.jsx"),
@@ -20,8 +20,8 @@ var Chunk951288 = require("./951288.js"),
 function p(e) {
   var t, r, {
       userRef: p,
-      usernameSuggestionLoading: O = false,
-      oneClickFlow: y = false
+      usernameSuggestionLoading: y = false,
+      oneClickFlow: O = false
     } = e,
     h = function(e, t) {
       if (null == e) return {};
@@ -42,35 +42,35 @@ function p(e) {
     user: b,
     editState: S,
     onClose: _
-  } = h, v = (0, l.ZP)(b.id), j = function(e, t, r) {
+  } = h, v = (0, s.ZP)(b.id), j = function(e, t, r) {
     switch (e) {
       case m.Wq.EDIT_USERNAME:
         return {
-          header: g.intl.string(g.t["a/zCWl"]), subtitle: g.intl.string(g.t.gGz0sb)
+          header: f.intl.string(f.t["a/zCWl"]), subtitle: f.intl.string(f.t.gGz0sb)
         };
       case m.Wq.EDIT_DISPLAY_NAME:
         return {
-          header: g.intl.string(g.t.SRDNcH), subtitle: g.intl.string(g.t["940AS0"])
+          header: f.intl.string(f.t.SRDNcH), subtitle: f.intl.string(f.t["940AS0"])
         };
       case m.Wq.PREVIEW:
         return {
-          header: g.intl.formatToPlainString(g.t.XDHrcn, {
+          header: f.intl.formatToPlainString(f.t.XDHrcn, {
             displayName: t
-          }), subtitle: g.intl.format(g.t.bWE0ZG, {
+          }), subtitle: f.intl.format(f.t.bWE0ZG, {
             onClick: () => {
-              r(), s.Z.open(f.oAB.ACCOUNT)
+              r(), (0, l.openUserSettings)()
             }
           })
         };
       case m.Wq.SUGGESTION:
         return {
-          header: g.intl.string(g.t.F7T4dX), subtitle: g.intl.formatToPlainString(g.t.Z8F83d, {}), link: g.intl.format(g.t["i2vB8/"], {
-            helpdeskArticle: c.Z.getArticleURL(f.BhN.POMELO_FAQ)
+          header: f.intl.string(f.t.F7T4dX), subtitle: f.intl.formatToPlainString(f.t.Z8F83d, {}), link: f.intl.format(f.t["i2vB8/"], {
+            helpdeskArticle: c.Z.getArticleURL(g.BhN.POMELO_FAQ)
           })
         };
       default:
         return {
-          header: g.intl.string(g.t["a/zCWl"]), subtitle: g.intl.string(g.t.gGz0sb)
+          header: f.intl.string(f.t["a/zCWl"]), subtitle: f.intl.string(f.t.gGz0sb)
         }
     }
   }(S, u.ZP.getName(b), _), [N, x] = (0, a.q_F)(() => ({
@@ -131,8 +131,8 @@ function p(e) {
     }({}, h), r = r = {
       displayProfile: v,
       ref: p,
-      usernameSuggestionLoading: O,
-      oneClickFlow: y
+      usernameSuggestionLoading: y,
+      oneClickFlow: O
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var r = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

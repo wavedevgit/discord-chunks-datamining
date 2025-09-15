@@ -355,7 +355,7 @@ function Z(e) {
     t({
       enabled: false,
       settingsVisible: false
-    }), (0, f.Z)()
+    }), (0, f.default)()
   };
   return (0, r.jsx)(l.hjN, {
     tag: l.RB0.H1,

@@ -22,7 +22,7 @@ let g = e => {
     buttonAnalyticsObject: n,
     className: t,
     upsellText: o
-  } = e, g = c.default.getCurrentUser(), h = (0, u.yd)(null == g ? true : g.premiumType, _.p9.TIER_2), C = (0, m._)({
+  } = e, g = c.default.getCurrentUser(), h = (0, u.yd)(null == g ? true : g.premiumType, p.p9.TIER_2), C = (0, m._)({
     defaultResponse: x.intl.string(x.t["8x0jKS"]),
     onNonTier2Subscriber: x.intl.string(x.t.IJI7ys)
   });
@@ -39,12 +39,12 @@ let g = e => {
         className: f.upsellText,
         children: o
       })]
-    }), (0, a.jsx)(p.Z, {
+    }), (0, a.jsx)(_.Z, {
       className: f.button,
       size: s.zx.Sizes.SMALL,
       look: s.zx.Looks.BLANK,
       color: s.zx.Colors.CUSTOM,
-      subscriptionTier: _.Si.TIER_2,
+      subscriptionTier: p.Si.TIER_2,
       textOptions: {
         textOverride: C
       },

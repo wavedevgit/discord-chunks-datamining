@@ -2,24 +2,25 @@
 /** chunk id: 648613, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => I
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk230711 = require("./230711.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk543241 = require("./543241.js"),
   Chunk963249 = require("./963249.jsx"),
   Chunk703656 = require("./703656.js"),
+  Chunk313789 = require("./313789.js"),
+  Chunk518596 = require("./518596.jsx"),
   Chunk594174 = require("./594174.js"),
   Chunk78839 = require("./78839.js"),
   Chunk639119 = require("./639119.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js");
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,20 +29,20 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
 }
 
-function E(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,15 +53,15 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
+function y(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function y(e, t) {
+function O(e, t) {
   if (null == e) return {};
-  var n, r, i = O(e, t);
+  var n, r, i = v(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -68,7 +69,7 @@ function y(e, t) {
   return i
 }
 
-function O(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -76,76 +77,78 @@ function O(e, t) {
   return i
 }
 
-function v(e) {
+function I(e) {
   let {
     onClick: t,
-    subscriptionTier: m,
-    postSuccessGuild: E,
-    onSubscribeModalClose: O,
-    premiumModalAnalyticsLocation: v,
-    applicationId: I,
-    giftMessage: T,
-    confirmationFooter: S,
-    paymentModalBanner: A,
-    isGift: C,
-    children: N
-  } = e, R = (0, i.e7)([d.default], () => d.default.getCurrentUser()), P = (0, i.e7)([f.Z], () => f.Z.getPremiumTypeSubscription()), {
-    analyticsLocations: w
-  } = (0, s.ZP)(), D = (0, _.N)(), x = !C && null != D && null != m && p.nG[D.trial_id].skus.includes(m);
-  return N({
+    subscriptionTier: g,
+    postSuccessGuild: b,
+    onSubscribeModalClose: v,
+    premiumModalAnalyticsLocation: I,
+    applicationId: T,
+    giftMessage: S,
+    confirmationFooter: A,
+    paymentModalBanner: C,
+    isGift: N,
+    children: R
+  } = e, P = (0, i.e7)([f.default], () => f.default.getCurrentUser()), w = (0, i.e7)([_.Z], () => _.Z.getPremiumTypeSubscription()), {
+    analyticsLocations: D
+  } = (0, o.ZP)(), x = (0, p.N)(), L = !N && null != x && null != g && h.nG[x.trial_id].skus.includes(g);
+  return R({
     onClick: e => {
       var i;
-      if (e.preventDefault(), null == R) return void(0, u.uL)(h.Z5c.LOGIN, {
+      if (e.preventDefault(), null == P) return void(0, c.uL)(m.Z5c.LOGIN, {
         source: "premium_subscribe_button"
       });
-      if (null == t || t(e), (null == P ? true : P.status) === h.O0b.ACCOUNT_HOLD) {
-        (0, l.A3)(), o.Z.open(h.oAB.PREMIUM), null == O || O(false);
+      if (null == t || t(e), (null == w ? true : w.status) === m.O0b.ACCOUNT_HOLD) {
+        (0, s.A3)(), (0, d.openUserSettings)(u.n.NITRO_PANEL, {
+          section: m.oAB.PREMIUM
+        }), null == v || v(false);
         return
       }
-      if (!R.isClaimed()) return void(0, a.ZDy)(async () => {
+      if (!P.isClaimed()) return void(0, a.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("88470"), n.e("77927"), n.e("69417")]).then(n.bind(n, 918995));
         return t => {
           var {
             onClose: n
-          } = t, i = y(t, ["onClose"]);
-          return (0, r.jsx)(e, b(g({}, i), {
+          } = t, i = O(t, ["onClose"]);
+          return (0, r.jsx)(e, y(E({}, i), {
             onClose: n
           }))
         }
       });
-      if (!R.verified) return void(0, a.ZDy)(async () => {
+      if (!P.verified) return void(0, a.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("88470"), n.e("20102")]).then(n.bind(n, 444688));
         return t => {
           var {
             onClose: n
-          } = t, i = y(t, ["onClose"]);
-          return (0, r.jsx)(e, b(g({}, i), {
+          } = t, i = O(t, ["onClose"]);
+          return (0, r.jsx)(e, y(E({}, i), {
             onClose: n
           }))
         }
       });
-      let s = x ? null == (i = D.subscription_trial) ? true : i.id : null,
-        d = h.Qqv.BUY;
-      null != s ? d = h.Qqv.TRIAL : C && (d = h.Qqv.GIFT), (0, c.Z)({
-        isGift: C,
+      let o = L ? null == (i = x.subscription_trial) ? true : i.id : null,
+        f = m.Qqv.BUY;
+      null != o ? f = m.Qqv.TRIAL : N && (f = m.Qqv.GIFT), (0, l.Z)({
+        isGift: N,
         initialPlanId: null,
-        subscriptionTier: m,
-        analyticsLocations: w,
-        analyticsObject: g({
-          object: h.qAy.BUTTON_CTA,
-          objectType: d
-        }, v),
-        trialId: s,
-        postSuccessGuild: E,
-        onClose: O,
-        applicationId: I,
-        giftMessage: T,
-        confirmationFooter: S,
-        paymentModalBanner: A
+        subscriptionTier: g,
+        analyticsLocations: D,
+        analyticsObject: E({
+          object: m.qAy.BUTTON_CTA,
+          objectType: f
+        }, I),
+        trialId: o,
+        postSuccessGuild: b,
+        onClose: v,
+        applicationId: T,
+        giftMessage: S,
+        confirmationFooter: A,
+        paymentModalBanner: C
       })
     }
   })

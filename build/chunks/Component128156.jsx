@@ -1,7 +1,7 @@
 /** Chunk was on 30355 **/
 /** chunk id: 128156, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -31,12 +31,12 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk158069 = require("./158069.js");
 
-function Z(e) {
+function E(e) {
   let {
     user: t,
     currentUser: n,
-    displayProfile: Z,
-    guildId: E,
+    displayProfile: E,
+    guildId: Z,
     channelId: C,
     subsection: T,
     onClose: k
@@ -44,22 +44,22 @@ function Z(e) {
     voiceActivityStatusEnabled: _
   } = (0, s.U)({
     location: "UserProfileModalV2Activity"
-  }), D = (0, g.b)({
+  }), L = (0, g.b)({
     location: "UserProfileModalV2Activity"
-  }), L = (0, c.P6)("UserProfileModalV2Activity"), {
+  }), D = (0, c.P6)("UserProfileModalV2Activity"), {
     live: G,
-    recent: R,
-    stream: U
+    recent: U,
+    stream: R
   } = (0, p.Z)(t.id), {
     voiceChannel: M,
     voiceActivity: B
   } = (0, b.Z)({
     userId: t.id,
-    guildId: E
+    guildId: Z
   }), F = (0, l.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), W = t.id === n.id, z = (0, l.e7)([f.Z, d.Z], () => {
     let e = W ? f.Z.getStatus() : d.Z.getStatus(t.id);
     return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
-  }), q = G.length > 0 || null != U, V = _ && null == U && null == B && null != M, Y = !z && (q || V), K = R.length > 0, H = G.some(e => (0, a.Z)(e));
+  }), q = G.length > 0 || null != R, V = _ && null == R && null == B && null != M, Y = !z && (q || V), K = U.length > 0, H = G.some(e => (0, a.Z)(e));
   if (!Y && !K && F) return (0, r.jsx)("div", {
     className: N.cards,
     children: Array.from({
@@ -81,7 +81,7 @@ function Z(e) {
       onClose: k
     }) : (0, r.jsx)(O.P9, {
       user: t,
-      guildId: null != (J = null == Z ? true : Z.guildId) ? J : E,
+      guildId: null != (J = null == E ? true : E.guildId) ? J : Z,
       channelId: C,
       onClose: k
     })
@@ -90,7 +90,7 @@ function Z(e) {
     className: N.scroller,
     fade: true,
     children: [(() => {
-      let e = W && L && !H;
+      let e = W && D && !H;
       return Y ? (0, r.jsx)(P.Z, {
         heading: w.intl.string(w.t.J6STd3),
         children: (0, r.jsxs)("ul", {
@@ -99,18 +99,18 @@ function Z(e) {
             children: (0, r.jsx)(j.Z, {
               variant: "horizontal"
             })
-          }), !D && V && (0, r.jsx)("li", {
+          }), !L && V && (0, r.jsx)("li", {
             children: (0, r.jsx)(x.Z, {
               user: t,
               currentUser: n,
               voiceChannel: M,
               onClose: k
             })
-          }), null != U && (0, r.jsx)("li", {
+          }), null != R && (0, r.jsx)("li", {
             children: (0, r.jsx)(v.Z, {
               user: t,
               currentUser: n,
-              stream: U,
+              stream: R,
               onClose: k
             })
           }), G.map((e, l) => (0, r.jsx)("li", {
@@ -120,7 +120,7 @@ function Z(e) {
               activity: e,
               onClose: k
             })
-          }, "live-".concat(l))), D && V && (0, r.jsx)("li", {
+          }, "live-".concat(l))), L && V && (0, r.jsx)("li", {
             children: (0, r.jsx)(x.Z, {
               user: t,
               currentUser: n,
@@ -146,7 +146,7 @@ function Z(e) {
       scrollIntoView: T === A.Tb.RECENT_ACTIVITY,
       children: (0, r.jsx)("ul", {
         className: N.cards,
-        children: R.map(e => (0, r.jsx)("li", {
+        children: U.map(e => (0, r.jsx)("li", {
           children: (0, r.jsx)(h.Z, {
             user: t,
             entry: e,

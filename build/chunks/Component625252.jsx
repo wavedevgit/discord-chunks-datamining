@@ -51,7 +51,7 @@ function I() {
       backgroundImage: "url(".concat(v, ")")
     }), []),
     n = Chunk647438.useCallback(() => {
-      (0, Chunk342386.Z)(), (0, Chunk110560.navigateToQuestHome)({
+      (0, Chunk342386.default)(), (0, Chunk110560.navigateToQuestHome)({
         fromContent: Chunk497505.jn.QUEST_HOME_MOVE_CALLOUT
       }), Chunk626135.default.track(Chunk981631.rMx.QUEST_CONTENT_CLICKED, O({
         cta_name: Chunk617136.jZ.VIEW_QUESTS,

@@ -61,7 +61,7 @@ let O = () => {
           })
         }), (0, Chunk951288.jsx)(Chunk481060.P3F, {
           children: (0, Chunk951288.jsx)(Chunk799899.rU, {
-            onClick: Chunk342386.Z,
+            onClick: Chunk342386.default,
             to: {
               pathname: Chunk981631.Z5c.FAMILY_CENTER,
               state: {

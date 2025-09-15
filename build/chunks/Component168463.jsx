@@ -88,7 +88,7 @@ function h(e) {
         variant: "text-sm/normal",
         color: "header-secondary",
         className: c.description,
-        children: l.intl.string(l.t.Qian09)
+        children: l.intl.string(l.t.bHpUcX)
       }), (0, r.jsxs)("div", {
         className: h ? c.buttonsVertical : c.buttonsHorizontal,
         children: [(0, r.jsx)(a.zx, {

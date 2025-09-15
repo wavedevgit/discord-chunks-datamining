@@ -33,7 +33,7 @@ function v(e, n) {
   if ((0, i.e7)([g.ZP], () => g.ZP.isGuestOrLurker(n, e.id), [n, e.id]) || null == v) return null;
   let x = e.id === s.default.getId();
   if (!x && !b.Z.can(j.Plq.MOVE_MEMBERS, v)) return null;
-  let y = t.filter(n => {
+  let _ = t.filter(n => {
     let {
       channel: t
     } = n;
@@ -43,10 +43,10 @@ function v(e, n) {
       context: t
     })) && !(0, O.rY)(t, m.Z, Z.Z))
   });
-  return 0 === y.length ? null : (0, l.jsx)(r.sNh, {
+  return 0 === _.length ? null : (0, l.jsx)(r.sNh, {
     id: "voice-move",
     label: P.intl.string(P.t.FAplmp),
-    children: y.map(t => {
+    children: _.map(t => {
       let {
         channel: i
       } = t;

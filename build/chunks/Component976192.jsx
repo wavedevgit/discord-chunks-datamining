@@ -37,7 +37,7 @@ function j(e) {
   let k = N === g.IlC.POPOUT,
     E = (0, s.Z)({
       guild: C,
-      analyticsLocation: h
+      analyticsLocations: w
     }),
     x = (0, o.Aq)();
   if (null == C || k) return null;

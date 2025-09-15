@@ -1,7 +1,7 @@
 /** Chunk was on 89650 **/
 /** chunk id: 858597, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => L
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -68,7 +68,7 @@ function R(t) {
   })
 }
 
-function f(t) {
+function C(t) {
   let {
     title: e,
     subTitle: n,
@@ -94,15 +94,15 @@ function f(t) {
     })]
   })
 }
-let C = function(t) {
+let L = function(t) {
   let {
     otherUserId: e,
     channelId: r,
     warningId: l,
     warningType: o,
     transitionToSlide: N
-  } = t, C = (0, _.o)(), L = (0, _.Q)(), y = (0, p.q)(r), F = null != (0, b.M)(r), v = (0, a.e7)([x.Z], () => x.Z.isIgnored(e), [e]), M = (0, a.e7)([x.Z], () => x.Z.isBlocked(e), [e]), I = s.useCallback(t => {
-    (0, h.qc)({
+  } = t, L = (0, _.o)(), f = (0, _.Q)(), y = (0, p.q)(r), F = null != (0, b.M)(r), v = (0, a.e7)([x.Z], () => x.Z.isIgnored(e), [e]), M = (0, a.e7)([x.Z], () => x.Z.isBlocked(e), [e]), I = s.useCallback(t => {
+    (0, A.qc)({
       channelId: r,
       warningId: l,
       senderId: e,
@@ -111,30 +111,30 @@ let C = function(t) {
       isNudgeWarning: F
     })
   }, [r, l, e, o, F]), Z = s.useCallback(() => {
-    (0, c.Mr3)(O.X_), I(h.NM.USER_SAFETY_TOOLS_BLOCK_CONFIRM)
-  }, [I]), k = s.useCallback(() => {
+    (0, c.Mr3)(g.X_), I(A.NM.USER_SAFETY_TOOLS_BLOCK_CONFIRM)
+  }, [I]), U = s.useCallback(() => {
     d.Z.unblockUser(e, {
-      location: O.DL
-    }), I(h.NM.USER_SAFETY_TOOLS_UNBLOCK)
-  }, [e, I]), U = s.useCallback(() => {
-    (0, c.Mr3)(O.X_), I(h.NM.USER_SAFETY_TOOLS_BLOCK_AND_REPORT_CONFIRM)
+      location: g.DL
+    }), I(A.NM.USER_SAFETY_TOOLS_UNBLOCK)
+  }, [e, I]), k = s.useCallback(() => {
+    (0, c.Mr3)(g.X_), I(A.NM.USER_SAFETY_TOOLS_BLOCK_AND_REPORT_CONFIRM)
   }, [I]), P = s.useMemo(() => [{
     type: 0,
-    title: g.intl.string(g.t.B7ZT09),
-    subTitle: g.intl.string(g.t["fCfp4+"]),
-    buttonText: v ? g.intl.string(g.t["9e0wLi"]) : g.intl.string(g.t.B7ZT09),
+    title: m.intl.string(m.t.B7ZT09),
+    subTitle: m.intl.string(m.t["fCfp4+"]),
+    buttonText: v ? m.intl.string(m.t["9e0wLi"]) : m.intl.string(m.t.B7ZT09),
     disabled: M,
     onPress: () => {
-      v ? (d.Z.unignoreUser(e, O.cH, r), I(h.NM.USER_SAFETY_TOOLS_UNIGNORE)) : (d.Z.ignoreUser(e, O.cH, r), I(h.NM.USER_SAFETY_TOOLS_IGNORE))
+      v ? (d.Z.unignoreUser(e, g.cH, r), I(A.NM.USER_SAFETY_TOOLS_UNIGNORE)) : (d.Z.ignoreUser(e, g.cH, r), I(A.NM.USER_SAFETY_TOOLS_IGNORE))
     }
   }, {
     type: 0,
-    title: g.intl.string(g.t.oDxaKy),
-    subTitle: g.intl.string(g.t.Lj37a2),
-    buttonText: M ? g.intl.string(g.t.Hro409) : g.intl.string(g.t.oDxaKy),
+    title: m.intl.string(m.t.oDxaKy),
+    subTitle: m.intl.string(m.t.Lj37a2),
+    buttonText: M ? m.intl.string(m.t.Hro409) : m.intl.string(m.t.oDxaKy),
     variant: "primary",
     onPress: () => {
-      M ? (k(), S.Z.showUnblockSuccessToast(e, r)) : (0, c.ZDy)(async () => {
+      M ? (U(), S.Z.showUnblockSuccessToast(e, r)) : (0, c.ZDy)(async () => {
         let {
           default: t
         } = await n.e("41128").then(n.bind(n, 699783));
@@ -146,9 +146,9 @@ let C = function(t) {
           return (0, i.jsx)(t, {
             transitionState: s,
             onBlock: Z,
-            onBlockAndReport: U,
+            onBlockAndReport: k,
             onCancel: () => {
-              null == l || l(), I(h.NM.USER_SAFETY_TOOLS_BLOCK_CANCEL)
+              null == l || l(), I(A.NM.USER_SAFETY_TOOLS_BLOCK_CANCEL)
             },
             onClose: l,
             userId: e,
@@ -159,51 +159,51 @@ let C = function(t) {
     }
   }, {
     type: 0,
-    title: g.intl.string(g.t.X27yhI),
-    subTitle: g.intl.string(g.t["0tydOT"]),
-    buttonText: g.intl.string(g.t.X27yhI),
+    title: m.intl.string(m.t.X27yhI),
+    subTitle: m.intl.string(m.t["0tydOT"]),
+    buttonText: m.intl.string(m.t.X27yhI),
     onPress: () => {
-      (0, c.Mr3)(O.X_), (0, T.wk)(y), I(h.NM.USER_SAFETY_TOOLS_REPORT)
+      (0, c.Mr3)(g.X_), (0, u.wk)(y), I(A.NM.USER_SAFETY_TOOLS_REPORT)
     }
-  }], [v, M, I, k, Z, U, e, r, y]), Y = s.useMemo(() => {
+  }], [v, M, I, U, Z, k, e, r, y]), Y = s.useMemo(() => {
     let t = {
-        title: g.intl.string(g.t.ZSbbMD),
-        subTitle: g.intl.string(g.t.iNcsra),
-        buttonText: g.intl.string(g.t.rK4Gqq),
+        title: m.intl.string(m.t.ZSbbMD),
+        subTitle: m.intl.string(m.t.iNcsra),
+        buttonText: m.intl.string(m.t.rK4Gqq),
         onPress: () => {
-          (0, u.Z)(O.EI), I(h.NM.USER_SAFETY_TOOLS_CTL)
+          (0, T.Z)(g.EI), I(A.NM.USER_SAFETY_TOOLS_CTL)
         }
       },
       e = {
-        title: g.intl.string(g.t.ZSbbMD),
-        subTitle: g.intl.string(g.t.g5uwCw),
-        buttonText: g.intl.string(g.t.rK4Gqq),
+        title: m.intl.string(m.t.ZSbbMD),
+        subTitle: m.intl.string(m.t.g5uwCw),
+        buttonText: m.intl.string(m.t.rK4Gqq),
         onPress: () => {
-          (0, u.Z)(O.n4), I(h.NM.USER_SAFETY_TOOLS_NO_FILTR)
+          (0, T.Z)(g.n4), I(A.NM.USER_SAFETY_TOOLS_NO_FILTR)
         }
       },
       n = {
-        title: g.intl.string(g.t.ZSbbMD),
-        subTitle: g.intl.string(g.t.S9O1ZW),
-        buttonText: g.intl.string(g.t.rK4Gqq),
+        title: m.intl.string(m.t.ZSbbMD),
+        subTitle: m.intl.string(m.t.S9O1ZW),
+        buttonText: m.intl.string(m.t.rK4Gqq),
         onPress: () => {
-          (0, u.Z)(O.$l), I(h.NM.USER_SAFETY_TOOLS_THROUGHLINE)
+          (0, T.Z)(g.$l), I(A.NM.USER_SAFETY_TOOLS_THROUGHLINE)
         }
       };
     return [{
       type: 0,
-      title: g.intl.string(g.t.syuaPD),
-      subTitle: g.intl.string(g.t.LLBnNj),
-      buttonText: g.intl.string(g.t.rzvzyc),
+      title: m.intl.string(m.t.syuaPD),
+      subTitle: m.intl.string(m.t.LLBnNj),
+      buttonText: m.intl.string(m.t.rzvzyc),
       onPress: () => {
-        (0, E.Z)(c.pTH), I(h.NM.USER_SAFETY_TOOLS_VIBING_WUMPUS)
+        (0, E.Z)(c.pTH), I(A.NM.USER_SAFETY_TOOLS_VIBING_WUMPUS)
       }
     }, {
       type: 1,
-      title: g.intl.string(g.t["7LgVmp"]),
-      subTitle: g.intl.string(g.t.pwoRjY),
+      title: m.intl.string(m.t["7LgVmp"]),
+      subTitle: m.intl.string(m.t.pwoRjY),
       onPress: () => {
-        N(A.O.SAFETY_TIPS), I(h.NM.USER_SAFETY_TOOLS_SAFETY_TIPS)
+        N(h.O.SAFETY_TIPS), I(A.NM.USER_SAFETY_TOOLS_SAFETY_TIPS)
       }
     }, function(t) {
       for (var e = 1; e < arguments.length; e++) {
@@ -224,12 +224,12 @@ let C = function(t) {
       return t
     }({
       type: 0
-    }, C ? t : L ? n : e)]
-  }, [C, L, N, I]), w = s.useMemo(() => [{
+    }, L ? t : f ? n : e)]
+  }, [L, f, N, I]), w = s.useMemo(() => [{
     type: 1,
-    title: g.intl.string(g.t.otdt29),
+    title: m.intl.string(m.t.otdt29),
     onPress: () => {
-      N(A.O.ABOUT_SAFETY_ALERTS), I(h.NM.USER_SAFETY_TOOLS_ABOUT_SAFETY_ALERTS)
+      N(h.O.ABOUT_SAFETY_ALERTS), I(A.NM.USER_SAFETY_TOOLS_ABOUT_SAFETY_ALERTS)
     }
   }], [N, I]), B = t => {
     if (0 === t.type) {
@@ -259,7 +259,7 @@ let C = function(t) {
         subTitle: s,
         onPress: r
       } = t;
-      return (0, i.jsx)(f, {
+      return (0, i.jsx)(C, {
         type: e,
         title: n,
         subTitle: s,
@@ -268,7 +268,7 @@ let C = function(t) {
     }
     return null
   };
-  return (0, i.jsxs)(m.Z, {
+  return (0, i.jsxs)(O.Z, {
     children: [(0, i.jsx)(j, {
       children: P.map(t => B(t))
     }), (0, i.jsx)(j, {

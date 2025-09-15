@@ -33,7 +33,7 @@ function u(e) {
   }(e, ["onClose", "source"]);
   let b = l.intl.format(l.t.WMO9pq, {
     onAndMore: function() {
-      t(), (0, o.z)(true)
+      t(), (0, o.z)()
     }
   });
   return (0, r.jsx)(c.Z, function(e) {

@@ -72,19 +72,22 @@ function R(e) {
     alt: t,
     spoiler: n,
     renderContent: a,
-    size: o
-  } = e, [s, l] = i.useState(false);
+    size: s
+  } = e, [l, c] = i.useState(false);
   return (0, r.jsx)(p.aQ.Provider, {
     value: !n,
     children: (0, r.jsx)(p.ZP, {
-      containerStyles: o === O.q.CLIP ? {
+      containerStyles: s === O.q.CLIP ? {
         borderBottomLeftRadius: 0,
         borderBottomRightRadius: 0,
         boxShadow: "none"
       } : true,
       type: p.ZP.Types.ATTACHMENT,
-      onReveal: () => l(true),
-      className: I.spoilerContainer,
+      onReveal: () => c(true),
+      className: o()(I.spoilerContainer, {
+        [I.sizeXSmall]: s === O.q.XSMALL,
+        [I.sizeXXSmall]: s === O.q.XXSMALL
+      }),
       children: e => (0, r.jsxs)("div", {
         className: I.spoilerWrapper,
         children: [a(e), (0, r.jsxs)("div", {
@@ -92,7 +95,7 @@ function R(e) {
           children: [null != t && "" !== t ? (0, r.jsx)("span", {
             className: I.altTag,
             children: v.intl.string(v.t.QEW819)
-          }) : null, s && n ? (0, r.jsx)("span", {
+          }) : null, l && n ? (0, r.jsx)("span", {
             className: I.altTag,
             children: v.intl.string(v.t["F+x38P"])
           }) : null]
@@ -140,13 +143,15 @@ function P(e) {
         src: u,
         className: o()(I.media, {
           [I.spoiler]: e,
-          [I.imageSmall]: p
+          [I.imageSmall]: p,
+          [I.sizeXSmall]: s === O.q.XSMALL,
+          [I.sizeXXSmall]: s === O.q.XXSMALL
         }),
         "aria-hidden": true,
         alt: null != n ? n : "",
         style: t ? f : {}
       })
-    }, [u, p, n, f]),
+    }, [u, p, s, n, f]),
     g = i.useCallback(() => {
       null != u && (0, m.K)({
         location: "ChannelAttachmentUpload",
@@ -202,7 +207,9 @@ function w(e) {
         src: u,
         className: o()(I.media, {
           [I.spoiler]: e,
-          [I.sizeClip]: s === O.q.CLIP
+          [I.sizeClip]: s === O.q.CLIP,
+          [I.sizeXSmall]: s === O.q.XSMALL,
+          [I.sizeXXSmall]: s === O.q.XXSMALL
         }),
         onError: c,
         preload: "none",
@@ -218,7 +225,7 @@ function D(e) {
     upload: n,
     size: a = O.q.MEDIUM,
     onMouseEnter: s
-  } = e, [l, c] = i.useState(false), u = a === O.q.SMALL;
+  } = e, [l, c] = i.useState(false);
   return n.isImage && n.item.platform === d.ow.WEB ? (0, r.jsx)(P, {
     file: n.item.file,
     alt: n.description,
@@ -234,9 +241,10 @@ function D(e) {
     onVideoLoadError: () => c(true)
   }) : (0, r.jsx)("div", {
     onMouseEnter: s,
-    className: o()(I.icon, I.__invalid_imageContainer, {
-      [I[null != (t = n.classification) ? t : ""]]: true,
-      [I.imageSmall]: u
+    className: o()(I.icon, I[null != (t = n.classification) ? t : ""], {
+      [I.imageSmall]: a === O.q.SMALL,
+      [I.sizeXSmall]: a === O.q.XSMALL,
+      [I.sizeXXSmall]: a === O.q.XXSMALL
     }),
     children: (0, r.jsx)("div", {
       className: I.tags,

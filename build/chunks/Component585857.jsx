@@ -2,19 +2,20 @@
 /** chunk id: 585857, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Q: () => h
+  Q: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
-  Chunk230711 = require("./230711.js"),
+  Chunk313789 = require("./313789.js"),
+  Chunk518596 = require("./518596.jsx"),
   Chunk617136 = require("./617136.js"),
   Chunk497505 = require("./497505.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk39625 = require("./39625.js");
 
-function d(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,34 +24,36 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      d(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
 }
 
-function _(e) {
+function p(e) {
   let {
     text: t,
     quest: n,
-    sourceQuestContent: c
-  } = e, d = (0, o.O5)();
+    sourceQuestContent: u
+  } = e, f = (0, s.O5)();
   return (0, r.jsx)(i.P3F, {
-    className: u.showConnectionsButton,
+    className: d.showConnectionsButton,
     onClick: () => {
-      d({
+      f({
         questId: n.id,
-        questContent: s.jn.QUEST_BAR_V2,
-        questContentCTA: o.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
-        sourceQuestContent: c
-      }), a.Z.open(l.oAB.CONNECTIONS)
+        questContent: l.jn.QUEST_BAR_V2,
+        questContentCTA: s.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
+        sourceQuestContent: u
+      }), (0, o.openUserSettings)(a.n.CONNECTIONS_PANEL, {
+        section: c.oAB.CONNECTIONS
+      })
     },
     children: (0, r.jsx)(i.Text, {
       "aria-label": t,
@@ -61,25 +64,25 @@ function _(e) {
   })
 }
 
-function p(e) {
+function h(e) {
   let {
     xboxAndPlaystationAccounts: t,
     quest: n,
     sourceQuestContent: i
   } = e;
-  return t.length > 0 ? (0, r.jsx)(_, {
-    text: c.intl.string(c.t["qiS+xs"]),
+  return t.length > 0 ? (0, r.jsx)(p, {
+    text: u.intl.string(u.t["qiS+xs"]),
     quest: n,
     sourceQuestContent: i
   }) : null
 }
 
-function h(e) {
+function m(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.Text, {
       color: "text-muted",
       variant: "text-xs/medium",
-      children: c.intl.string(c.t.EJFSvL)
-    }), (0, r.jsx)(p, f({}, e))]
+      children: u.intl.string(u.t.EJFSvL)
+    }), (0, r.jsx)(h, _({}, e))]
   })
 }

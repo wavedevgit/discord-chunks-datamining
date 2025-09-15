@@ -7,9 +7,9 @@ require.d(exports, {
   WW: () => s,
   _u: () => R,
   aW: () => g,
-  kv: () => M,
+  kv: () => I,
   s4: () => o,
-  uu: () => I,
+  uu: () => M,
   vq: () => _,
   xU: () => T,
   zO: () => A
@@ -395,14 +395,14 @@ function a(t, i, n) {
   }
 }
 
-function M(t, i) {
+function I(t, i) {
   return {
     title: i,
     permissions: S([l.Pl.REQUEST_TO_SPEAK, l.Pl.MENTION_EVERYONE], t)
   }
 }
 
-function I(t, i) {
+function M(t, i) {
   return {
     title: i,
     permissions: S([l.Pl.CREATE_EVENTS, l.Pl.MANAGE_EVENTS], t)

@@ -38,7 +38,7 @@ function b(t) {
   }(t, ["channel", "onClose", "content"]);
 
   function g() {
-    n(), (0, l.z)(true)
+    n(), (0, l.z)()
   }
   async function L() {
     n();

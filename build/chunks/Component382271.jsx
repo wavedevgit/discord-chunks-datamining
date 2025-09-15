@@ -48,7 +48,7 @@ function S(e) {
   return e
 }
 let A = (e, t) => {
-    (0, p.Z)(), f.Z.openPrivateChannel({
+    (0, p.default)(), f.Z.openPrivateChannel({
       recipientIds: e
     }), t()
   },

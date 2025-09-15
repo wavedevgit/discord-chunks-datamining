@@ -29,7 +29,7 @@ let f = e => {
     root_node_id: y,
     success_node_id: O,
     fail_node_id: C
-  } = n, [I, Z] = i.useState(y), [S, T] = i.useState(true), [N, P] = i.useState(true), [k, E] = i.useState([]), [w, B] = i.useState(true), [D, R] = i.useState(true), A = e => {
+  } = n, [I, Z] = i.useState(y), [S, T] = i.useState(true), [N, P] = i.useState(true), [E, k] = i.useState([]), [w, B] = i.useState(true), [D, R] = i.useState(true), A = e => {
     var n, r, i;
     let {
       destination: l
@@ -66,7 +66,7 @@ let f = e => {
     })(Object(i)).forEach(function(e) {
       Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
     }), r));
-    if (E([...k, e]), null != u.key && (null == b || b(u.key)), T(true), P(true), t.name === d.b.MESSAGE || t.name === d.b.FIRST_DM) {
+    if (k([...E, e]), null != u.key && (null == b || b(u.key)), T(true), P(true), t.name === d.b.MESSAGE || t.name === d.b.FIRST_DM) {
       let e = t.record.id;
       o.ZP.trackWithMetadata(m.rMx.IAR_NAVIGATE, {
         message_id: e,
@@ -79,13 +79,13 @@ let f = e => {
     Z(s)
   }, M = async e => {
     var r;
-    let i = h ? await (0, u.ZD)(n, t, [...k, e]) : await (0, u.fw)(n, t, [...k, e], x),
+    let i = h ? await (0, u.ZD)(n, t, [...E, e]) : await (0, u.fw)(n, t, [...E, e], x),
       a = null == i || null == (r = i.body) ? true : r.report_id;
     null != a && B(a), R(j[e.nodeRef].report_type), null == g || g(a)
   }, L = () => {
     var e, n;
-    if (k.length < 1) return;
-    let r = [...k],
+    if (E.length < 1) return;
+    let r = [...E],
       i = r.pop(),
       a = null != (n = null == i ? true : i.nodeRef) ? n : y;
     if (t.name === d.b.MESSAGE || t.name === d.b.FIRST_DM) {
@@ -98,7 +98,7 @@ let f = e => {
         next_node: j[a].id
       })
     }
-    T(null == i || null == (e = i.multiSelect) ? true : e.state), P(null == i ? true : i.textInput), Z(a), E(r), null == b || b("..")
+    T(null == i || null == (e = i.multiSelect) ? true : e.state), P(null == i ? true : i.textInput), Z(a), k(r), null == b || b("..")
   }, G = i.useMemo(() => {
     let e = [],
       t = [];
@@ -136,7 +136,7 @@ let f = e => {
             node: e,
             reportType: t,
             reportSubType: D,
-            history: k,
+            history: E,
             onModalClose: f.onClose,
             onSelectChild: A,
             onNavigateBack: L,

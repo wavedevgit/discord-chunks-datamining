@@ -2,7 +2,7 @@
 /** chunk id: 583478, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk110924 = require("./110924.js"),
   Chunk710845 = require("./710845.js"),
   Chunk168232 = require("./168232.js"),
-  Chunk976845 = require("./976845.jsx"),
+  Chunk526767 = require("./526767.js"),
   Chunk48541 = require("./48541.js"),
   Chunk664597 = require("./664597.js");
 
@@ -59,17 +59,8 @@ function E(e, t) {
 let b = new Chunk710845.Z("BalanceCounter"),
   y = (0, Chunk168232.dU)(true) === Chunk48541.C.PRODUCTION,
   O = e => null === e ? 0 : "".concat(e.toFixed(0)).length,
-  v = (e, t) => {
-    let n = e > 0,
-      r = t * f.eg[n ? "EARN" : "SPEND"],
-      i = n ? t - r : 0;
-    return {
-      duration: r,
-      delay: i
-    }
-  },
-  I = (e, t, n) => null === n ? Math.max(e, t) : Math.max(t, n),
-  T = e => {
+  v = (e, t, n) => null === n ? Math.max(e, t) : Math.max(t, n),
+  I = e => {
     var t, n;
     let {
       value: a,
@@ -77,51 +68,51 @@ let b = new Chunk710845.Z("BalanceCounter"),
       onValueChange: c,
       onValueReached: u,
       targetTotalCounterTime: d = 3e3
-    } = e, [f, _] = (0, i.useState)(0), p = (0, i.useRef)(null), h = (0, i.useRef)(null);
+    } = e, [_, p] = (0, i.useState)(0), h = (0, i.useRef)(null), m = (0, i.useRef)(null);
     (0, i.useEffect)(() => {
       if (null === a) return;
-      if (null === p.current) {
-        p.current = a;
+      if (null === h.current) {
+        h.current = a;
         return
       }
-      let e = null !== p.current ? a - p.current : a;
-      0 !== e && null !== p.current && c(e), h.current = {
+      let e = null !== h.current ? a - h.current : a;
+      0 !== e && null !== h.current && c(e), m.current = {
         lastChangedAt: Date.now(),
         totalDelta: Math.abs(e)
       }
     }, [a, c]);
-    let m = null != a ? a : 0,
-      g = null != (t = p.current) ? t : m,
+    let g = null != a ? a : 0,
+      E = null != (t = h.current) ? t : g,
       {
-        duration: E,
+        duration: v,
         delay: I
-      } = v(m - g, d),
+      } = (0, f.nL)(g - E, d),
       {
         number: T
       } = (0, l.q_F)({
         from: {
-          number: null != (n = p.current) ? n : m
+          number: null != (n = h.current) ? n : g
         },
-        number: m,
+        number: g,
         config: {
           mass: 1,
           tension: 20,
           friction: 10,
-          duration: E
+          duration: v
         },
         delay: I,
         onStart: () => {
-          o(O(g))
+          o(O(E))
         },
         onRest: () => {
-          if (_(f + 1), u(), !y && null !== h.current && null !== p.current) {
+          if (p(_ + 1), u(), !y && null !== m.current && null !== h.current) {
             let e = Date.now();
             b.log("Balance Counter finished updating: ", {
-              time: e - h.current.lastChangedAt,
-              delta: m - p.current
+              time: e - m.current.lastChangedAt,
+              delta: g - h.current
             })
           }
-          o(O(m)), p.current = m
+          o(O(g)), h.current = g
         }
       }),
       S = O(Math.max(null != a ? a : 0, T.get()));
@@ -132,7 +123,7 @@ let b = new Chunk710845.Z("BalanceCounter"),
       children: T.to(e => "".concat(e.toFixed(0)))
     })
   },
-  S = e => {
+  T = e => {
     var t, {
         value: n,
         className: a
@@ -142,7 +133,7 @@ let b = new Chunk710845.Z("BalanceCounter"),
       [d, f] = (0, i.useState)(null),
       _ = (0, i.useMemo)(() => O(n), [n]),
       h = null != (t = (0, c.Z)(_)) ? t : 0,
-      E = (0, i.useMemo)(() => I(h, _, d), [h, _, d]),
+      E = (0, i.useMemo)(() => v(h, _, d), [h, _, d]),
       b = "".concat(u ? 0 : E, "ch");
     return (0, r.jsx)(l.Text, {
       variant: "text-md/semibold",
@@ -151,7 +142,7 @@ let b = new Chunk710845.Z("BalanceCounter"),
         width: b,
         opacity: u ? "0" : 1
       },
-      children: u ? null : (0, r.jsx)(T, m({
+      children: u ? null : (0, r.jsx)(I, m({
         onSetDigitCount: e => {
           e !== d && f(e)
         },
