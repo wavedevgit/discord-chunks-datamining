@@ -17,12 +17,14 @@ function c(e) {
     onClose: n
   } = e, c = (0, l.EQ)(t).with(r.h8.REVIEW, () => s.intl.string(s.t.JbRd5u)).with(r.h8.ADD_PAYMENT_STEPS, () => s.intl.string(s.t.QiGOam)).with(r.h8.GIFT_CUSTOMIZATION, () => s.intl.string(s.t["JCFN//"])).with(r.h8.AWAITING_PURCHASE_TOKEN_AUTH, () => s.intl.string(s.t.lDbi6O)).with(r.h8.CONFIRM, () => "").otherwise(() => null);
   return null == c ? null : (0, i.jsxs)(a.xBx, {
+    "data-migration-pending": true,
     className: o.headerContainerGift,
     separator: t !== r.h8.CONFIRM,
     children: [(0, i.jsx)(a.X6q, {
       variant: "heading-lg/semibold",
       children: c
     }), (0, i.jsx)(a.olH, {
+      "data-migration-pending": true,
       onClick: n,
       className: o.closeButtonGift
     })]

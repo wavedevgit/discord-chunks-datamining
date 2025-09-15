@@ -15,7 +15,7 @@ var Chunk100527 = require("./100527.js"),
   Chunk382263 = require("./382263.jsx"),
   Chunk137440 = require("./137440.jsx"),
   Chunk231338 = require("./231338.js");
-let g = (e, t, n) => (0, i.jsx)(f.Z, {
+let h = (e, t, n) => (0, i.jsx)(f.Z, {
   step: n,
   onClose: () => t(false)
 });
@@ -36,7 +36,7 @@ function p(e) {
     onComplete: n,
     applicationId: r,
     skuId: u,
-    renderHeader: g,
+    renderHeader: h,
     initialPlanId: null,
     analyticsObject: o,
     analyticsLocations: d,
@@ -50,7 +50,7 @@ function m(e) {
     applicationId: n,
     skuId: c,
     analyticsLocations: f,
-    isGift: g = false
+    isGift: h = false
   } = e, {
     analyticsLocations: m
   } = (0, a.ZP)(f, l.Z.PREMIUM_PAYMENT_MODAL);
@@ -61,15 +61,15 @@ function m(e) {
       stepConfigs: function() {
         let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
         return [u.WA, ...e ? [d.PT] : [], u.s2, ...u.yp, u.wo, u.F7]
-      }(g),
+      }(h),
       applicationId: n,
       skuIDs: [c],
       activeSubscription: null,
-      purchaseType: h.GZ.ONE_TIME,
-      isGift: g,
+      purchaseType: g.GZ.ONE_TIME,
+      isGift: h,
       children: (0, i.jsx)(o.c1, {
         children: (0, i.jsx)(r.KB, {
-          isGift: g,
+          isGift: h,
           children: (0, i.jsx)(p, function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},

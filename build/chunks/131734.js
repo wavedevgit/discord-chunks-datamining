@@ -2,10 +2,15 @@
 /** chunk id: 131734, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => i
+  Z: () => a
 });
-var Chunk981631 = require("./981631.js");
+var Chunk911969 = require("./911969.js"),
+  Chunk981631 = require("./981631.js");
 
-function i(e) {
-  return null == e ? null : e.thirdPartySkus.find(e => e.distributor === r.GQo.NVIDIA_GDN_APP)
+function a(e) {
+  if (null == e) return null;
+  let {
+    linkedGames: t = []
+  } = e, n = t.find(e => e.type === r.tE.NVIDIA);
+  return null != n ? n : e.thirdPartySkus.find(e => e.distributor === i.GQo.NVIDIA_GDN_APP)
 }

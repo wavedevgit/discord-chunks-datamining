@@ -3,11 +3,12 @@
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => L
+  Z: () => j
 }), require("./388685.js"), require("./35282.js");
 var i, a, Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
   Chunk570140 = require("./570140.js"),
+  Chunk911969 = require("./911969.js"),
   Chunk642047 = require("./642047.js"),
   Chunk189451 = require("./189451.js"),
   Chunk695346 = require("./695346.js"),
@@ -16,7 +17,7 @@ var i, a, Chunk442837 = require("./442837.js"),
   Chunk358085 = require("./358085.js"),
   Chunk709054 = require("./709054.js");
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,35 +25,35 @@ function m(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let g = "GameStoreReportedGames",
-  E = 0x80000000,
-  b = Chunk70956.Z.Millis.DAY,
-  y = new Chunk642047.Z,
-  O = {},
+let E = "GameStoreReportedGames",
+  b = 0x80000000,
+  y = Chunk70956.Z.Millis.DAY,
+  O = new Chunk642047.Z,
   v = {},
-  I = null != (i = Chunk433517.K.get(g)) ? i : {},
-  T = "",
-  S = null;
+  I = {},
+  T = null != (i = Chunk433517.K.get(E)) ? i : {},
+  S = "",
+  A = null;
 
-function A(e) {
+function C(e) {
   var t, n, r, i, a, o, s, l, c;
   return {
     id: e.id,
     name: e.name,
-    executables: (null != (t = e.executables) ? t : []).map(f.BA),
+    executables: (null != (t = e.executables) ? t : []).map(_.BA),
     overlay: null != (n = e.overlay) && n,
     overlayWarn: null != (r = e.overlay_warn) && r,
     overlayCompatibilityHook: null != (i = e.overlay_compatibility_hook) && i,
     hook: null == (a = e.hook) || a,
     aliases: null != (o = e.aliases) ? o : [],
-    supportsOutOfProcessOverlay: f.ZP.supportsOutOfProcessOverlay(e.overlay_methods),
+    supportsOutOfProcessOverlay: _.ZP.supportsOutOfProcessOverlay(e.overlay_methods),
     themes: null != (s = e.themes) ? s : [],
     icon: null != (l = e.icon_hash) ? l : true,
     thirdPartySkus: null != (c = e.third_party_skus) ? c : []
   }
 }
 
-function C(e) {
+function N(e) {
   var t, n;
   return {
     id: e.id,
@@ -70,60 +71,65 @@ function C(e) {
   }
 }
 
-function N(e) {
-  let t = e instanceof u.ZP ? C(e) : e;
-  for (let n of (y.set(e.id, t), O[e.name.toLowerCase()] = t, e.aliases)) O[n.toLowerCase()] = t;
-  if ((0, p.isDesktop)())
-    for (let n of e.executables) v[n.name] = t
+function R(e) {
+  let t = e instanceof d.ZP ? N(e) : e;
+  for (let n of (O.set(e.id, t), v[e.name.toLowerCase()] = t, e.aliases)) v[n.toLowerCase()] = t;
+  if ((0, h.isDesktop)())
+    for (let n of e.executables) I[n.name] = t
 }
 
-function R(e) {
+function P(e) {
   let {
     detectableApplications: t
   } = e;
-  for (let e of t) N(e)
-}
-
-function P() {
-  r = true
+  for (let e of t) R(e)
 }
 
 function w() {
+  r = true
+}
+
+function D() {
   r = false
 }
 
-function D(e) {
+function x(e) {
   let {
     games: t,
     etag: n
   } = e;
-  for (let e of (null != n && T !== n && (T = n), t)) N(A(e));
-  r = true, S = Date.now()
+  for (let e of (null != n && S !== n && (S = n), t)) R(C(e));
+  r = true, A = Date.now()
 }
-class x extends(a = Chunk442837.ZP.PersistedStore) {
+class L extends(a = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t;
-    null != e && (null != e.detectableGamesEtag && (T = e.detectableGamesEtag), null == (t = e.detectableGames) || t.forEach(e => N(e)))
+    null != e && (null != e.detectableGamesEtag && (S = e.detectableGamesEtag), null == (t = e.detectableGames) || t.forEach(e => R(e)))
   }
   getState() {
     return (0, Chunk358085.isDesktop)() ? {
-      detectableGamesEtag: T,
-      detectableGames: y.values()
+      detectableGamesEtag: S,
+      detectableGames: O.values()
     } : {
       detectableGamesEtag: "",
       detectableGames: []
     }
   }
   get games() {
-    return y.values()
+    return O.values()
   }
   getDetectableGame(e) {
-    return y.get(h.default.cast(e))
+    return O.get(m.default.cast(e))
   }
   getGameByName(e) {
     if (null == e) return null;
     let t = e.toLowerCase();
-    return Object.prototype.hasOwnProperty.call(O, t) ? O[t] : null
+    return Object.prototype.hasOwnProperty.call(v, t) ? v[t] : null
+  }
+  getOfficialGame(e) {
+    var t;
+    let n = null == e || null == (t = e.linkedGames) ? true : t.find(e => e.type === c.tE.OFFICIAL);
+    return null != n ? this.getDetectableGame(n.id) : null
   }
   getGameByApplication(e) {
     let t = this.getDetectableGame(e.id);
@@ -135,25 +141,25 @@ class x extends(a = Chunk442837.ZP.PersistedStore) {
     return this.getGameByName(e.name)
   }
   isGameInDatabase(e) {
-    return null != this.getGameByName(e.name) || true !== e.nativeProcessObserverId && (e.nativeProcessObserverId & E) == 0
+    return null != this.getGameByName(e.name) || true !== e.nativeProcessObserverId && (e.nativeProcessObserverId & b) == 0
   }
   get fetching() {
     returntrue === r
   }
   get detectableGamesEtag() {
-    return T
-  }
-  get lastFetched() {
     return S
   }
+  get lastFetched() {
+    return A
+  }
   get detectableGamesTtl() {
-    return b
+    return y
   }
   canFetchDetectableGames() {
-    returntrue !== r && (null == S || Date.now() >= S + b)
+    returntrue !== r && (null == A || Date.now() >= A + y)
   }
   getGameByExecutable(e) {
-    return v[e]
+    return I[e]
   }
   getGameByGameData(e) {
     var t, n;
@@ -171,32 +177,32 @@ class x extends(a = Chunk442837.ZP.PersistedStore) {
   }
   shouldReport(e) {
     let t = null != this.getGameByName(e),
-      n = null != I[e];
-    return d.G6.getSetting() && !r && !(t || n)
+      n = null != T[e];
+    return f.G6.getSetting() && !r && !(t || n)
   }
   markGameReported(e) {
-    I[e] = true, s.K.set(g, I)
+    T[e] = true, s.K.set(E, T)
   }
 }
-m(x, "displayName", "GameStore"), m(x, "persistKey", "GameStore"), m(x, "migrations", [e => {
+g(L, "displayName", "GameStore"), g(L, "persistKey", "GameStore"), g(L, "migrations", [e => {
   var t, n;
   return null == e ? {
     detectableGamesEtag: "",
     detectableGames: []
   } : {
     detectableGamesEtag: e.detectableGamesEtag,
-    detectableGames: null != (n = null == (t = e.detectableGames) ? true : t.map(e => C(new u.ZP(e)))) ? n : []
+    detectableGames: null != (n = null == (t = e.detectableGames) ? true : t.map(e => N(new d.ZP(e)))) ? n : []
   }
-}, e => (0, p.isDesktop)() ? e : {
+}, e => (0, h.isDesktop)() ? e : {
   detectableGamesEtag: "",
   detectableGames: []
 }, () => ({
   detectableGamesEtag: "",
   detectableGames: []
 })]);
-let L = new x(Chunk570140.Z, {
-  OVERLAY_INITIALIZE: R,
-  GAMES_DATABASE_FETCH: P,
-  GAMES_DATABASE_FETCH_FAIL: w,
-  GAMES_DATABASE_UPDATE: D
+let j = new L(Chunk570140.Z, {
+  OVERLAY_INITIALIZE: P,
+  GAMES_DATABASE_FETCH: w,
+  GAMES_DATABASE_FETCH_FAIL: D,
+  GAMES_DATABASE_UPDATE: x
 })

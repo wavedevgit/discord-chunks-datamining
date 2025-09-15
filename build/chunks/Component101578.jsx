@@ -2,9 +2,10 @@
 /** chunk id: 101578, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js"),
+  Chunk911969 = require("./911969.js"),
   Chunk627861 = require("./627861.jsx"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -13,24 +14,32 @@ var Chunk951288 = require("./951288.js"),
   Chunk789407 = require("./789407.js"),
   Chunk616922 = require("./616922.js");
 
-function d(e) {
-  return null != e.application ? l.ZP.createFromServer(e.application) : null != e.activity && null != e.activity.party_id && (0, u.Ps)(e.activity.party_id) ? c.r9 : true
+function f(e) {
+  return null != e.application ? c.ZP.createFromServer(e.application) : null != e.activity && null != e.activity.party_id && (0, d.Ps)(e.activity.party_id) ? u.r9 : true
 }
-let f = e => {
+
+function _(e) {
+  var t;
+  let n = null == e || null == (t = e.linkedGames) ? true : t.find(e => e.type === i.tE.OFFICIAL);
+  return (0, l.IX)(null == n ? true : n.id)
+}
+let p = e => {
   var t;
   let {
     channel: n,
-    message: l,
+    message: i,
     hideParty: c
   } = e, {
     analyticsLocations: u
-  } = (0, o.ZP)(a.Z.INVITE_EMBED), f = d(l), {
-    data: _
-  } = (0, s.IX)(null == (t = l.application) ? true : t.id), p = null != _ ? _ : f;
-  return null == p ? null : (0, r.jsx)(i.c, {
-    app: p,
+  } = (0, s.ZP)(o.Z.INVITE_EMBED), d = f(i), {
+    data: p
+  } = (0, l.IX)(null == (t = i.application) ? true : t.id), h = null != p ? p : d, {
+    data: m
+  } = _(h), g = null != m ? m : h;
+  return null == g ? null : (0, r.jsx)(a.c, {
+    app: g,
     channel: n,
-    message: l,
+    message: i,
     hideParty: c,
     analyticsLocations: u
   })
