@@ -1,4 +1,4 @@
-/** Chunk was on 32561 **/
+/** Chunk was on 73323 **/
 /** chunk id: 726941, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -20,16 +20,16 @@ let g = function(e) {
   let {
     tabId: n,
     onSelectApplication: g,
-    onScroll: f
-  } = e, _ = a.useRef(null), b = a.useCallback(() => {
+    onScroll: _
+  } = e, f = a.useRef(null), b = a.useCallback(() => {
     var e;
-    null == (e = _.current) || e.scrollTo({
+    null == (e = f.current) || e.scrollTo({
       to: 0
     })
   }, []), x = (0, i.e7)([u.Z], () => u.Z.getCategories()), v = a.useMemo(() => x.find(e => e.id === n), [x, n]), C = a.useMemo(() => null != v ? (0, d.v)(v) : "", [v]);
   return (0, r.jsxs)(c.Z, {
-    onScroll: f,
-    ref: _,
+    onScroll: _,
+    ref: f,
     children: [(0, r.jsx)(s.Z, {
       title: null != (t = null == v ? true : v.name) ? t : "",
       description: C,

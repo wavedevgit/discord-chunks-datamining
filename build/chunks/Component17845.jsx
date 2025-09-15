@@ -1,4 +1,4 @@
-/** Chunk was on 32561 **/
+/** Chunk was on 73323 **/
 /** chunk id: 17845, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -38,7 +38,7 @@ function m(e) {
     className: m,
     children: h,
     betaTag: g = false
-  } = e, f = (0, c.ZP)(), _ = (0, s.wj)(f), b = a.useMemo(() => Array.isArray(t) ? t.map((e, t) => (0, r.jsx)(p, {
+  } = e, _ = (0, c.ZP)(), f = (0, s.wj)(_), b = a.useMemo(() => Array.isArray(t) ? t.map((e, t) => (0, r.jsx)(p, {
     title: e,
     betaTag: g,
     color: n
@@ -56,7 +56,7 @@ function m(e) {
         children: [b, null != i && (0, r.jsx)(o.Text, {
           className: u.description,
           variant: "text-md/medium",
-          color: _ ? "text-muted" : "header-primary",
+          color: f ? "text-muted" : "header-primary",
           children: i
         }), null != d && (0, r.jsx)("div", {
           className: u.buttonContainer,

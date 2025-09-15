@@ -1,4 +1,4 @@
-/** Chunk was on 32561 **/
+/** Chunk was on 73323 **/
 /** chunk id: 9807, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T
@@ -107,10 +107,10 @@ let I = e => {
       isMuted: m,
       autoPlay: h
     } = e;
-    if (i.type === _.s9s.YOUTUBE_VIDEO) t = C({
-      url: (0, _.n8r)(i.youtubeVideoId)
+    if (i.type === f.s9s.YOUTUBE_VIDEO) t = C({
+      url: (0, f.n8r)(i.youtubeVideoId)
     }, S), n = C({
-      url: "".concat((0, _.ivE)(i.youtubeVideoId), "?").concat("rel=0&iv_load_policy=3&showinfo=0&modestbranding=1")
+      url: "".concat((0, f.ivE)(i.youtubeVideoId), "?").concat("rel=0&iv_load_policy=3&showinfo=0&modestbranding=1")
     }, P), r = u.pn.YOUTUBE;
     else {
       let e = null != i.width ? i.width : 0,
@@ -136,7 +136,7 @@ let I = e => {
         video: n,
         provider: r,
         maxHeight: c.r.SMALL.height,
-        maxWidth: f.b.SMALL,
+        maxWidth: _.b.SMALL,
         onPlay: l,
         playable: true,
         volume: s,
@@ -214,7 +214,7 @@ class N extends(r = Chunk647438.PureComponent) {
     }), v(this, "handleChangeItem", e => {
       this.setState({
         isVideoPlaying: false
-      }), e.type === _.s9s.IMG && this.setState({
+      }), e.type === f.s9s.IMG && this.setState({
         imageLoadingStartTime: new Map(this.state.imageLoadingStartTime).set(e.src, Date.now())
       })
     }), v(this, "handleIntentionalChange", (e, t, n, r) => {
@@ -251,8 +251,8 @@ class N extends(r = Chunk647438.PureComponent) {
           videoAutoPlay: l
         } = this.props;
       switch (e.type) {
-        case _.s9s.YOUTUBE_VIDEO:
-        case _.s9s.VIDEO:
+        case f.s9s.YOUTUBE_VIDEO:
+        case f.s9s.VIDEO:
           n = (0, a.jsx)(E, {
             item: e,
             onPlay: this.handlePlay,
@@ -263,7 +263,7 @@ class N extends(r = Chunk647438.PureComponent) {
             autoPlay: l
           });
           break;
-        case _.s9s.IMG:
+        case f.s9s.IMG:
           if ("errored" === this.state.status.get(e.src)) {
             let e = (0, a.jsx)(o.X6q, {
               variant: "heading-xl/semibold",

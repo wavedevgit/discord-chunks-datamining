@@ -1,4 +1,4 @@
-/** Chunk was on 32561 **/
+/** Chunk was on 73323 **/
 /** chunk id: 453499, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => I
@@ -168,8 +168,8 @@ class y extends(a = Chunk647438.PureComponent) {
       paginationDotSelectedClassName: p,
       themedPagination: m,
       includeHitboxPadding: g,
-      style: f,
-      aspectRatio: _,
+      style: _,
+      aspectRatio: f,
       children: b
     } = this.props, {
       visibleIndex: x

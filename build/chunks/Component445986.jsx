@@ -1,7 +1,7 @@
-/** Chunk was on 32561 **/
+/** Chunk was on 73323 **/
 /** chunk id: 445986, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Q: () => f,
+  Q: () => _,
   Z: () => x
 }), require("./35282.js"), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -65,10 +65,10 @@ function g(e, t) {
   return a
 }
 
-function f(e) {
+function _(e) {
   return "".concat(e.split("?")[0], "?size=").concat(2048)
 }
-let _ = e => {
+let f = e => {
   var {
     index: t,
     items: n
@@ -84,7 +84,7 @@ let _ = e => {
         src: r
       } = e;
       e === i && (l = o.length), o.push({
-        src: f(r),
+        src: _(r),
         width: t,
         height: n
       })
@@ -112,7 +112,7 @@ class b extends Chunk647438.Component {
         "aria-label": u.intl.string(u.t.X4IxWF)
       }, e), {
         parentComponent: "ApplicationStoreListingCarousel",
-        children: (0, r.jsx)(_, h(m({}, e), {
+        children: (0, r.jsx)(f, h(m({}, e), {
           index: t,
           items: this.props.items
         }))

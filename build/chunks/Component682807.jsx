@@ -1,4 +1,4 @@
-/** Chunk was on 32561 **/
+/** Chunk was on 73323 **/
 /** chunk id: 682807, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -34,11 +34,11 @@ function h(e) {
       children: [c.map((e, t) => (0, r.jsx)(g, {
         url: e.url,
         children: e.name
-      }, t)), null != a.terms_of_service_url ? (0, r.jsx)(f, {
+      }, t)), null != a.terms_of_service_url ? (0, r.jsx)(_, {
         icon: s.aAW,
         url: a.terms_of_service_url,
         children: p.intl.string(p.t.s7STcX)
-      }) : null, null != a.privacy_policy_url ? (0, r.jsx)(f, {
+      }) : null, null != a.privacy_policy_url ? (0, r.jsx)(_, {
         icon: s.mBM,
         url: a.privacy_policy_url,
         children: p.intl.string(p.t.kH3JR0)
@@ -53,7 +53,7 @@ function g(e) {
     url: a,
     children: i
   } = e, o = (0, c.ZP)(), u = d.Z.getByUrl(a), p = (0, l.wj)(o) ? null == u || null == (t = u.icon) ? true : t.darkSVG : null == u || null == (n = u.icon) ? true : n.lightSVG;
-  return (0, r.jsx)(f, {
+  return (0, r.jsx)(_, {
     icon: true === p ? s.xPt : true,
     imageSrc: p,
     url: a,
@@ -61,7 +61,7 @@ function g(e) {
   })
 }
 
-function f(e) {
+function _(e) {
   let {
     icon: t,
     imageSrc: n,

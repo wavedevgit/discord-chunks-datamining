@@ -1,4 +1,4 @@
-/** Chunk was on 32561 **/
+/** Chunk was on 73323 **/
 /** chunk id: 548514, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => k
@@ -135,7 +135,7 @@ function w(e) {
           })
         }
       }, [e, n, t]),
-      canInstall: a.useMemo(() => (0, _.Eb)({
+      canInstall: a.useMemo(() => (0, f.Eb)({
         customInstallUrl: e.custom_install_url,
         installParams: e.install_params,
         integrationTypesConfig: e.integration_types_config
@@ -189,7 +189,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
   }, {
     autoTrackExposure: true
   }).enabled, {
-    analyticsLocations: _
+    analyticsLocations: f
   } = (0, m.ZP)(), y = a.useCallback(() => {
     let e;
     (0, S.zZ)(N.rMx.APP_DIRECTORY_APPLICATION_LINK_COPIED, {
@@ -243,12 +243,12 @@ let k = Chunk647438.forwardRef(function(e, t) {
     var n;
     let r = e.id,
       i = null == e || null == (n = e.bot) ? true : n.id,
-      l = null != i && (0, f.BQ)(e) && (0, f.ye)(e),
+      l = null != i && (0, _.BQ)(e) && (0, _.ye)(e),
       [s, c] = a.useState(false),
       d = (0, S.nu)(),
       m = (0, o.e7)([j.default], () => j.default.getCurrentUser()),
       h = (0, o.e7)([u.ZP], () => u.ZP.getCurrentEmbeddedActivity()),
-      _ = a.useCallback(async (t, n, r) => {
+      f = a.useCallback(async (t, n, r) => {
         if (null != h && h.applicationId === e.id) {
           let e = h.location;
           (0, p.Z)("guild_id" in e ? e.guild_id : null, e);
@@ -270,9 +270,9 @@ let k = Chunk647438.forwardRef(function(e, t) {
       if (d && l && n && null != i && null != m) {
         e.searchParams.delete(R);
         let n = e.pathname + e.search;
-        (0, v.dL)(n), _(i, r, t)
+        (0, v.dL)(n), f(i, r, t)
       }
-    }, [d, l, i, r, t, m, _]);
+    }, [d, l, i, r, t, m, f]);
     let b = a.useCallback(async () => {
       if (null != i) {
         if ((0, S.zZ)(N.rMx.APP_DIRECTORY_LAUNCH_CLICKED, {
@@ -280,14 +280,14 @@ let k = Chunk647438.forwardRef(function(e, t) {
           }), !d) return void(0, S.rf)({
           [R]: "true"
         });
-        await _(i, r, t)
+        await f(i, r, t)
       }
-    }, [i, r, t, d, _]);
+    }, [i, r, t, d, f]);
     return {
       onClickLaunchActivity: l ? b : true,
       isSubmitting: s
     }
-  }(n, _), z = null != G, U = z ? "secondary" : "primary";
+  }(n, f), z = null != G, U = z ? "secondary" : "primary";
   return (0, r.jsxs)("div", {
     ref: t,
     children: [(0, r.jsxs)("div", {

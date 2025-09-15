@@ -1,4 +1,4 @@
-/** Chunk was on 32561 **/
+/** Chunk was on 73323 **/
 /** chunk id: 744695, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -35,7 +35,7 @@ function g(e) {
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,7 +48,7 @@ function f(e, t) {
   }), e
 }
 
-function _(e) {
+function f(e) {
   var {
     id: t,
     label: n,
@@ -69,7 +69,7 @@ function _(e) {
     }
     return a
   }(e, ["id", "label", "selected", "handleTransition"]);
-  return (0, r.jsx)(d.Z.Title, f(g({}, s), {
+  return (0, r.jsx)(d.Z.Title, _(g({}, s), {
     onClick: () => i(t),
     wrapperClassName: h.tabWrapper,
     className: l()(h.tab, {
@@ -105,7 +105,7 @@ function b(e) {
       let {
         isShown: n
       } = t;
-      return (0, r.jsxs)(d.Z.Title, f(g({}, e), {
+      return (0, r.jsxs)(d.Z.Title, _(g({}, e), {
         ref: c,
         wrapperClassName: h.tabWrapper,
         className: l()(h.tab, h.more, {
@@ -132,7 +132,7 @@ function x(e) {
     onAvailableWidthChange: d
   } = e, [u, p] = a.useState(0), m = a.useRef(u), {
     lastVisibleIndex: g,
-    onItemLayout: f,
+    onItemLayout: _,
     overflowItemsRef: x,
     itemWidthsRef: v
   } = (0, s.zP)({
@@ -157,8 +157,8 @@ function x(e) {
       className: h.measurements,
       children: [i.map((e, t) => (0, r.jsx)(s.AJ, {
         index: t,
-        onItemLayout: f,
-        children: (0, r.jsx)(_, {
+        onItemLayout: _,
+        children: (0, r.jsx)(f, {
           id: e.id,
           label: e.label,
           selected: n === e.id,
@@ -175,7 +175,7 @@ function x(e) {
       })]
     }), O && (0, r.jsxs)("div", {
       className: h.tabs,
-      children: [C.map(e => (0, r.jsx)(_, {
+      children: [C.map(e => (0, r.jsx)(f, {
         id: e.id,
         label: e.label,
         selected: n === e.id,

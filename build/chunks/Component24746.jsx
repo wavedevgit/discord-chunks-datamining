@@ -1,4 +1,4 @@
-/** Chunk was on 32561 **/
+/** Chunk was on 73323 **/
 /** chunk id: 24746, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
 let h = o().parserFor(Chunk547563.Z),
   g = o().reactFor(o().ruleOutput(Chunk547563.Z, "react"));
 
-function f(e) {
+function _(e) {
   let {
     description: t,
     supportsMarkdown: n
@@ -30,7 +30,7 @@ function f(e) {
     });
     return e.observe(o.current), () => e.disconnect()
   }, []);
-  let [u, p] = a.useState(false), f = a.useCallback(() => {
+  let [u, p] = a.useState(false), _ = a.useCallback(() => {
     p(e => !e)
   }, []);
   return (0, r.jsxs)(r.Fragment, {
@@ -53,14 +53,14 @@ function f(e) {
         color: "text-default",
         children: t
       })
-    }), i || u ? (0, r.jsx)(_, {
+    }), i || u ? (0, r.jsx)(f, {
       isShowingMore: u,
-      onToggle: f
+      onToggle: _
     }) : null]
   })
 }
 
-function _(e) {
+function f(e) {
   let {
     onToggle: t,
     isShowingMore: n
@@ -94,10 +94,10 @@ let b = function(e) {
   var t, n;
   let {
     application: i
-  } = e, l = null == (t = i.directory_entry) ? true : t.detailed_description, s = null == (n = i.directory_entry) ? true : n.short_description, o = a.useMemo(() => null != l && l.length > 0 ? (0, r.jsx)(f, {
+  } = e, l = null == (t = i.directory_entry) ? true : t.detailed_description, s = null == (n = i.directory_entry) ? true : n.short_description, o = a.useMemo(() => null != l && l.length > 0 ? (0, r.jsx)(_, {
     description: l,
     supportsMarkdown: true
-  }) : null != s && s.length > 0 ? (0, r.jsx)(f, {
+  }) : null != s && s.length > 0 ? (0, r.jsx)(_, {
     description: s,
     supportsMarkdown: false
   }) : null, [l, s]);

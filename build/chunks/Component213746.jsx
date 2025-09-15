@@ -1,4 +1,4 @@
-/** Chunk was on 32561 **/
+/** Chunk was on 73323 **/
 /** chunk id: 213746, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -77,7 +77,7 @@ function y(e) {
             appId: t.id,
             listing: e,
             subscriptionType: n,
-            onDetails: () => (0, f.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.id, e.skuId))
+            onDetails: () => (0, _.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.id, e.skuId))
           }, e.id)
         })
       })]
@@ -92,7 +92,7 @@ function y(e) {
         children: a.map(e => (0, r.jsx)(u.hd, {
           skuId: e.skuId,
           appId: t.id,
-          onDetails: () => (0, f.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.id, e.skuId))
+          onDetails: () => (0, _.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.id, e.skuId))
         }, e.id))
       })]
     }), (0, r.jsx)(c.Z, {
@@ -111,7 +111,7 @@ function I(e) {
         skuId: i
       }
     }
-  } = e, o = (0, l.e7)([h.Z], () => h.Z.get(i), [i]), c = (0, l.e7)([h.Z], () => null != i ? h.Z.getParentSKU(i) : true, [i]), d = a.useId(), u = a.useCallback(() => (0, f.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, _.GlobalDiscoveryAppsSections.STORE)), [t]);
+  } = e, o = (0, l.e7)([h.Z], () => h.Z.get(i), [i]), c = (0, l.e7)([h.Z], () => null != i ? h.Z.getParentSKU(i) : true, [i]), d = a.useId(), u = a.useCallback(() => (0, _.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, f.GlobalDiscoveryAppsSections.STORE)), [t]);
   return a.useLayoutEffect(() => {
     var e;
     switch (null == o ? true : o.type) {
@@ -128,7 +128,7 @@ function I(e) {
         }, {
           modalKey: d,
           onCloseCallback: () => {
-            S() || (0, f.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, _.GlobalDiscoveryAppsSections.STORE))
+            S() || (0, _.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, f.GlobalDiscoveryAppsSections.STORE))
           }
         });
       case b.epS.SUBSCRIPTION:
@@ -146,7 +146,7 @@ function I(e) {
         }, {
           modalKey: d,
           onCloseCallback: () => {
-            S() || (0, f.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, _.GlobalDiscoveryAppsSections.STORE))
+            S() || (0, _.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, f.GlobalDiscoveryAppsSections.STORE))
           }
         })
     }

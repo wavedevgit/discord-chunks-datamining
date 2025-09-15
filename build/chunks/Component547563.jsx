@@ -1,7 +1,7 @@
-/** Chunk was on 32561 **/
+/** Chunk was on 73323 **/
 /** chunk id: 547563, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => f
 }), require("./35282.js");
 var r, a, Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -33,13 +33,13 @@ function g(e) {
   }
   return e
 }
-let f = /^discord.gg\/[a-zA-Z0-9-]+/,
-  _ = (r = g({}, Chunk241209.Z.rules), a = a = {
+let _ = /^discord.gg\/[a-zA-Z0-9-]+/,
+  f = (r = g({}, Chunk241209.Z.rules), a = a = {
     heading: g({}, Chunk15470.i.heading),
     image: g({}, s().defaultRules.image),
     inviteLink: {
       order: Chunk241209.Z.rules.link.order + 1,
-      match: (e, t) => t.inline ? f.exec(e) : null,
+      match: (e, t) => t.inline ? _.exec(e) : null,
       parse: (e, t, n) => {
         let r = (0, p.zO)(e[0]);
         return null == r || r.type !== u.g.INVITE ? {

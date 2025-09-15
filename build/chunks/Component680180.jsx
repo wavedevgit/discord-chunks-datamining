@@ -1,4 +1,4 @@
-/** Chunk was on 32561 **/
+/** Chunk was on 73323 **/
 /** chunk id: 680180, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -21,9 +21,9 @@ function d(e) {
     onClear: p,
     onBlur: m,
     onSubmit: h
-  } = e, g = a.useRef(null), f = a.useCallback(e => {
+  } = e, g = a.useRef(null), _ = a.useCallback(e => {
     "Enter" === e.key && h()
-  }, [h]), _ = a.useCallback(() => {
+  }, [h]), f = a.useCallback(() => {
     u(), setTimeout(() => {
       var e;
       return null == (e = g.current) ? true : e.focus()
@@ -31,7 +31,7 @@ function d(e) {
   }, [u]);
   return t === o.GlobalDiscoverySearchBarState.COLLAPSED ? (0, r.jsx)(s.P3F, {
     className: c.searchIcon,
-    onClick: _,
+    onClick: f,
     children: (0, r.jsx)(s._Ve, {
       size: "sm",
       color: s.TVs.colors.ICON_PRIMARY
@@ -47,7 +47,7 @@ function d(e) {
       placeholder: i,
       onChange: d,
       onClear: p,
-      onKeyDown: f,
+      onKeyDown: _,
       onBlur: m
     })
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 32561 **/
+/** Chunk was on 73323 **/
 /** chunk id: 569527, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T
@@ -50,7 +50,7 @@ function T(e) {
       page: a,
       categoryId: null != (t = Number(n.get("category_id"))) ? t : P.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID
     }
-  }, [R.search]), M = (0, o.e7)([_.Z], () => _.Z.getCategories()), G = a.useMemo(() => null == M ? true : M.find(e => e.id === k), [M, k]), B = a.useCallback(e => {
+  }, [R.search]), M = (0, o.e7)([f.Z], () => f.Z.getCategories()), G = a.useMemo(() => null == M ? true : M.find(e => e.id === k), [M, k]), B = a.useCallback(e => {
     (0, v.zZ)(E.rMx.APP_DIRECTORY_SEARCHED, {
       search_term: w,
       num_results: e,
@@ -123,7 +123,7 @@ function T(e) {
     }({
       [x.MU]: e.totalCount
     }, e.countsByCategory) : {}
-  }), V = (0, d.Z)(U), H = a.useMemo(() => z === f.M.FETCHING ? V : U, [z, V, U]), Y = a.useCallback(e => {
+  }), V = (0, d.Z)(U), H = a.useMemo(() => z === _.M.FETCHING ? V : U, [z, V, U]), Y = a.useCallback(e => {
     (0, I.pR)({
       query: w,
       categoryId: k,
@@ -167,8 +167,8 @@ function T(e) {
                 onSelectCategory: W
               })
             }), (0, r.jsx)(C.Z, {
-              loading: z === f.M.FETCHING,
-              children: z === f.M.FETCHED && (null == H || (null == H ? true : H.results.length) === 0) ? (0, r.jsx)(S.Z, {
+              loading: z === _.M.FETCHING,
+              children: z === _.M.FETCHED && (null == H || (null == H ? true : H.results.length) === 0) ? (0, r.jsx)(S.Z, {
                 selectedCategoryId: null != k ? k : q.id,
                 searchAllCategories: () => W(q)
               }) : (0, r.jsx)("div", {

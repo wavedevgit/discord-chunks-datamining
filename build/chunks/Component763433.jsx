@@ -1,8 +1,8 @@
-/** Chunk was on 32561 **/
+/** Chunk was on 73323 **/
 /** chunk id: 763433, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  a: () => _,
-  r: () => f
+  a: () => f,
+  r: () => _
 });
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,16 +16,16 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk594174 = require("./594174.js"),
   Chunk744695 = require("./744695.jsx"),
   Chunk770593 = require("./770593.js"),
-  f = ((r = {}).DEFAULT = "DEFAULT", r.SEARCH = "SEARCH", r);
+  _ = ((r = {}).DEFAULT = "DEFAULT", r.SEARCH = "SEARCH", r);
 
-function _(e) {
+function f(e) {
   let {
     selectedTabId: t,
     handleTransition: n,
     tabs: r,
     state: l = "DEFAULT",
-    onAvailableWidthChange: f,
-    icon: _,
+    onAvailableWidthChange: _,
+    icon: f,
     children: b
   } = e, x = (0, d.ZP)(), v = (0, o.e7)([m.default], () => m.default.getCurrentUser()), C = (null == v ? true : v.isStaff()) || (null == v ? true : v.isStaffPersonal()), {
     enabled: j
@@ -39,14 +39,14 @@ function _(e) {
       innerClassname: j ? g.headerBarInner : true,
       toolbar: C ? (0, a.jsx)(i.Fragment, {}) : null,
       children: ["DEFAULT" === l && (0, a.jsxs)(a.Fragment, {
-        children: [(0, a.jsx)(_, {
+        children: [(0, a.jsx)(f, {
           color: "currentColor",
           size: "md"
         }), (0, a.jsx)(h.Z, {
           tabs: r,
           selectedTab: t,
           onTabSelect: n,
-          onAvailableWidthChange: f
+          onAvailableWidthChange: _
         })]
       }), (0, a.jsx)("div", {
         className: s()(g.headerBarContent, {

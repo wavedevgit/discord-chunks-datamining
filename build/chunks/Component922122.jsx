@@ -1,4 +1,4 @@
-/** Chunk was on 32561 **/
+/** Chunk was on 73323 **/
 /** chunk id: 922122, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -42,7 +42,7 @@ function m(e) {
   }({
     selected: s,
     isHovered: c
-  }), f = a.useCallback(() => m(true), []), _ = a.useCallback(() => m(false), []), b = a.useRef(null);
+  }), _ = a.useCallback(() => m(true), []), f = a.useCallback(() => m(false), []), b = a.useRef(null);
   return (0, r.jsx)(o.yRy, {
     targetElementRef: b,
     renderPopout: e => {
@@ -93,8 +93,8 @@ function m(e) {
         "aria-label": u.intl.string(u.t.UKOtz8),
         children: (0, r.jsxs)("div", {
           className: p.more,
-          onMouseEnter: f,
-          onMouseLeave: _,
+          onMouseEnter: _,
+          onMouseLeave: f,
           children: [(0, r.jsx)(o.Text, {
             variant: "text-sm/semibold",
             color: h,
@@ -128,8 +128,8 @@ function h(e) {
     tabs: i,
     onTabSelect: d,
     onAvailableWidthChange: u
-  } = e, [h, g] = a.useState(0), f = a.useRef(h), {
-    lastVisibleIndex: _,
+  } = e, [h, g] = a.useState(0), _ = a.useRef(h), {
+    lastVisibleIndex: f,
     onItemLayout: b,
     overflowItemsRef: x,
     itemWidthsRef: v
@@ -138,10 +138,10 @@ function h(e) {
     itemGapPx: 20,
     maxLines: 1,
     containerWidth: h
-  }), C = a.useMemo(() => i.slice(0, _ + 1), [_, i]), j = a.useMemo(() => i.slice(_ + 1), [_, i]), y = a.useRef(null), I = a.useCallback(e => {
+  }), C = a.useMemo(() => i.slice(0, f + 1), [f, i]), j = a.useMemo(() => i.slice(f + 1), [f, i]), y = a.useRef(null), I = a.useCallback(e => {
     let t = e.contentRect.width;
-    if (null == t || f.current === t) return;
-    g(t), f.current = t;
+    if (null == t || _.current === t) return;
+    g(t), _.current = t;
     let n = v.current.reduce((e, t, n) => e + t + 20 * (0 !== n));
     null == u || u(t - n)
   }, [v, u]);

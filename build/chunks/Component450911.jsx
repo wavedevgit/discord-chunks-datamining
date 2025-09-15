@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-/** chunk id: 269210, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 450911, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
   Gm: () => h,
@@ -11,11 +11,11 @@ require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk67136 = require("./67136.jsx"),
+  Chunk330711 = require("./330711.js"),
   Chunk793030 = require("./793030.js"),
   Chunk692547 = require("./692547.js"),
-  Chunk330711 = require("./330711.js"),
-  Chunk870756 = require("./870756.js"),
-  Chunk818632 = require("./818632.js");
+  Chunk571386 = require("./571386.js"),
+  Chunk635549 = require("./635549.js");
 let f = 48,
   _ = 5;
 
@@ -46,7 +46,7 @@ function p(e) {
         className: u.card,
         children: (0, r.jsxs)("div", {
           className: u.body,
-          children: [(0, r.jsx)(s.xvT, {
+          children: [(0, r.jsx)(l.xvT, {
             tag: "div",
             variant: "heading-lg/semibold",
             children: h
@@ -55,8 +55,8 @@ function p(e) {
             children: null != n ? (0, r.jsx)("img", {
               src: n.toString(),
               alt: ""
-            }) : (0, r.jsx)(s.Vh5, {
-              color: l.Z.colors.ICON_PRIMARY,
+            }) : (0, r.jsx)(l.Vh5, {
+              color: c.Z.colors.ICON_PRIMARY,
               size: "custom",
               height: f,
               width: f
@@ -65,7 +65,7 @@ function p(e) {
             onClick: e => {
               e.stopPropagation(), null == p || p()
             }
-          }) : null, b, null != t && "" !== t && (0, r.jsx)(s.xvT, {
+          }) : null, b, null != t && "" !== t && (0, r.jsx)(l.xvT, {
             className: u.description,
             color: "text-default",
             variant: "text-sm/medium",
@@ -74,10 +74,10 @@ function p(e) {
         })
       }), null != E && (0, r.jsx)("div", {
         className: u.benefitsSummary,
-        children: (0, r.jsx)(s.xvT, {
+        children: (0, r.jsx)(l.xvT, {
           color: "interactive-normal",
           variant: "text-sm/medium",
-          children: c.Z.Messages.STOREFRONT_BENEFITS_SUMMARY.format({
+          children: s.Z.Messages.STOREFRONT_BENEFITS_SUMMARY.format({
             count: E
           })
         })
@@ -87,15 +87,15 @@ function p(e) {
           className: u.benefitsContainer,
           children: (0, r.jsxs)("div", {
             className: u.benefitsList,
-            children: [(0, r.jsx)(s.xvT, {
+            children: [(0, r.jsx)(l.xvT, {
               color: "header-secondary",
               variant: "eyebrow",
-              children: c.Z.Messages.STOREFRONT_BENEFITS_TITLE
+              children: s.Z.Messages.STOREFRONT_BENEFITS_TITLE
             }), g.length > y ? (0, r.jsxs)(r.Fragment, {
-              children: [g.slice(0, y), (0, r.jsx)(s.xvT, {
+              children: [g.slice(0, y), (0, r.jsx)(l.xvT, {
                 variant: "text-md/semibold",
                 color: "text-secondary",
-                children: c.Z.Messages.STOREFRONT_MORE_BENEFITS.format({
+                children: s.Z.Messages.STOREFRONT_MORE_BENEFITS.format({
                   count: g.length - y
                 })
               })]
@@ -119,11 +119,11 @@ function h(e) {
       className: u.cardBenefitIcon,
       children: t
     }), (0, r.jsxs)("div", {
-      children: [null != n && (0, r.jsx)(s.xvT, {
+      children: [null != n && (0, r.jsx)(l.xvT, {
         variant: "text-md/semibold",
         color: "header-primary",
         children: n
-      }), (0, r.jsx)(s.xvT, {
+      }), (0, r.jsx)(l.xvT, {
         variant: "text-sm/normal",
         children: i
       })]

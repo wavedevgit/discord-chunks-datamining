@@ -1,4 +1,4 @@
-/** Chunk was on 32561 **/
+/** Chunk was on 73323 **/
 /** chunk id: 319443, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => U
@@ -190,9 +190,9 @@ let U = function() {
     setSearchBarState: e => j.Z.setState({
       searchBarState: e
     })
-  }), ef = Chunk647438.useCallback(e => {
+  }), e_ = Chunk647438.useCallback(e => {
     $(e), es && ed(), y()
-  }, [es, ed, $, Chunk370210]), e_ = Chunk647438.useCallback(e => (0, T.ph)({
+  }, [es, ed, $, Chunk370210]), ef = Chunk647438.useCallback(e => (0, T.ph)({
     applicationId: e
   }), []), eb = el || es, ex = Chunk647438.useCallback(() => {
     null != (0, Chunk258971.Uc)() ? (0, Chunk703656.op)() : (0, Chunk133743.Yp)()
@@ -247,7 +247,7 @@ let U = function() {
           }) : (0, Chunk951288.jsx)(h.Z, {
             tabs: Q,
             selectedTab: J,
-            onTabSelect: ef,
+            onTabSelect: e_,
             onAvailableWidthChange: em
           }), (0, Chunk951288.jsx)(Chunk680180.Z, {
             query: eo,
@@ -262,20 +262,20 @@ let U = function() {
         })]
       }), el ? (0, Chunk951288.jsx)(Chunk666697.Z, {
         onScroll: e => eC(e, N.m_.APPLICATION),
-        onSelectApplication: e_,
+        onSelectApplication: ef,
         applicationId: V,
         initialTab: H,
         onButtonsVisibilityChange: et
       }) : es ? (0, Chunk951288.jsx)(Chunk569527.Z, {
-        onSelectApplication: e_,
+        onSelectApplication: ef,
         onScroll: e => eC(e, N.m_.SEARCH)
       }) : J === Chunk979007.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID.toString() ? (0, Chunk951288.jsx)(Chunk370648.Z, {
         onScroll: e => eC(e, N.m_.HOME),
-        onSelectApplication: e_
+        onSelectApplication: ef
       }) : (0, Chunk951288.jsx)(Chunk726941.Z, {
         tabId: Number(J),
         onScroll: e => eC(e, N.m_.CATEGORY),
-        onSelectApplication: e_
+        onSelectApplication: ef
       })]
     })]
   })

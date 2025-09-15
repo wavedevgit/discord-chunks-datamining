@@ -1,4 +1,4 @@
-/** Chunk was on 32561 **/
+/** Chunk was on 73323 **/
 /** chunk id: 15470, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y,
@@ -26,7 +26,7 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,8 +52,8 @@ function _(e, t) {
   }), e
 }
 let b = /^!\[([^\]]*)\]\(asset:\/\/(\d+)\)/,
-  x = _(f({}, Chunk241209.Z.rules), {
-    heading: _(f({}, Chunk241209.Z.rules.heading), {
+  x = f(_({}, Chunk241209.Z.rules), {
+    heading: f(_({}, Chunk241209.Z.rules.heading), {
       react(e, t, n) {
         let a = "h".concat(Math.min(Math.max(2, e.level + 1), 4));
         return (0, r.jsx)(d.Z, {

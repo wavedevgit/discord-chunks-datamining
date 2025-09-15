@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-/** chunk id: 752843, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 25817, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
   V: () => c,
@@ -7,24 +7,24 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk793030 = require("./793030.js"),
+var Chunk330711 = require("./330711.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk692547 = require("./692547.js"),
-  Chunk330711 = require("./330711.js"),
-  Chunk922762 = require("./922762.js");
+  Chunk533270 = require("./533270.js");
 
 function l(e) {
   let {
     type: t
   } = e;
   return (0, r.jsx)(c, {
-    icon: "user" === t ? (0, r.jsx)(i.tBG, {
+    icon: "user" === t ? (0, r.jsx)(a.tBG, {
       size: "xxs",
-      color: a.Z.colors.INTERACTIVE_NORMAL
-    }) : (0, r.jsx)(i.QTo, {
+      color: o.Z.colors.INTERACTIVE_NORMAL
+    }) : (0, r.jsx)(a.QTo, {
       size: "xxs",
-      color: a.Z.colors.INTERACTIVE_NORMAL
+      color: o.Z.colors.INTERACTIVE_NORMAL
     }),
-    text: "user" === t ? o.Z.Messages.STOREFRONT_USER_SUBSCRIPTION : o.Z.Messages.STOREFRONT_SERVER_SUBSCRIPTION
+    text: "user" === t ? i.Z.Messages.STOREFRONT_USER_SUBSCRIPTION : i.Z.Messages.STOREFRONT_SERVER_SUBSCRIPTION
   })
 }
 
@@ -35,7 +35,7 @@ function c(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: s.container,
-    children: [t, (0, r.jsx)(i.xvT, {
+    children: [t, (0, r.jsx)(a.xvT, {
       color: "header-primary",
       variant: "text-sm/medium",
       children: n

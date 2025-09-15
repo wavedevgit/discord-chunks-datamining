@@ -62,7 +62,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk186901 = require("./186901.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk980678 = require("./980678.js");
+  Chunk561537 = require("./561537.js");
 
 function ec(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -399,13 +399,13 @@ class ep extends Chunk647438.PureComponent {
         align: Chunk600164.Z.Align.CENTER,
         justify: Chunk600164.Z.Justify.CENTER,
         children: (0, Chunk951288.jsx)(Chunk481060.$jN, {
-          className: Chunk980678.spinner
+          className: Chunk561537.spinner
         })
       })]
     });
     if (!Chunk120356 && exports.showAgeGate) {
       let n = a ? null : (0, Chunk951288.jsx)("div", {
-        className: Chunk980678.gatedListing,
+        className: Chunk561537.gatedListing,
         children: this.renderListing()
       });
       return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
@@ -417,7 +417,7 @@ class ep extends Chunk647438.PureComponent {
       })
     }
     return a ? (0, Chunk951288.jsxs)("div", {
-      className: Chunk980678.listingWrapper,
+      className: Chunk561537.listingWrapper,
       children: [(0, Chunk951288.jsx)(Chunk252618.yY, {
         location: module.name
       }), this.renderJsonLD(), (0, Chunk951288.jsx)(Chunk410575.Z, {

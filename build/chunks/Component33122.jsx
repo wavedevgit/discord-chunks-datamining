@@ -1,4 +1,4 @@
-/** Chunk was on 32561 **/
+/** Chunk was on 73323 **/
 /** chunk id: 33122, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => R,
@@ -92,7 +92,7 @@ let O = {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   },
-  N = e => (0, a.jsx)(f.ZP, y({}, e)),
+  N = e => (0, a.jsx)(_.ZP, y({}, e)),
   T = e => {
     let t, n, r, {
       item: i,
@@ -103,8 +103,8 @@ let O = {
       playable: m,
       volume: h,
       isMuted: g,
-      onVolumeChange: f,
-      onMute: _
+      onVolumeChange: _,
+      onMute: f
     } = e;
     if (i.type === v.s9s.YOUTUBE_VIDEO) t = y({
       url: (0, v.n8r)(i.youtubeVideoId)
@@ -138,9 +138,9 @@ let O = {
       playable: m,
       className: C.video,
       volume: h,
-      onVolumeChange: f,
+      onVolumeChange: _,
       autoMute: g,
-      onMute: _,
+      onMute: f,
       autoPlay: m,
       renderVideoComponent: E,
       renderImageComponent: N,

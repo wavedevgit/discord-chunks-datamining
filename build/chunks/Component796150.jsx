@@ -1,4 +1,4 @@
-/** Chunk was on 32561 **/
+/** Chunk was on 73323 **/
 /** chunk id: 796150, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -22,7 +22,7 @@ function g(e) {
     className: t,
     view: n,
     application: a
-  } = e, g = "embedded" === n, f = (0, o.Z)({
+  } = e, g = "embedded" === n, _ = (0, o.Z)({
     application: a
   });
   return (0, r.jsxs)("div", {
@@ -38,7 +38,7 @@ function g(e) {
         className: h.infoSection,
         children: (0, r.jsx)(s.Z, {
           application: a,
-          mutualGuilds: f,
+          mutualGuilds: _,
           mutualGuildShownMax: 3,
           className: h.guildCountContainer,
           guildIconSize: s.x.SMALL,

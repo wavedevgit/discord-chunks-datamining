@@ -6,8 +6,8 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk541822 = require("./541822.jsx"),
-  Chunk442837 = require("./442837.js"),
+var Chunk442837 = require("./442837.js"),
+  Chunk312568 = require("./312568.jsx"),
   Chunk257465 = require("./257465.jsx"),
   Chunk82659 = require("./82659.jsx"),
   Chunk213734 = require("./213734.jsx"),
@@ -33,7 +33,7 @@ function v(e) {
     onClose: I,
     children: T,
     footer: S
-  } = e, A = (0, a.e7)([d.Z, f.Z], () => {
+  } = e, A = (0, i.e7)([d.Z, f.Z], () => {
     var e;
     return null != (e = d.Z.getApplication(t)) ? e : f.Z.getApplicationRecord(t)
   }, [t]), {
@@ -74,7 +74,7 @@ function v(e) {
     children: [(0, r.jsx)(c.x, {
       leading: w,
       title: A.name
-    }), (0, r.jsx)(i.Z, {
+    }), (0, r.jsx)(a.Z, {
       children: (0, r.jsx)("main", {
         className: O.bodyInner,
         children: T

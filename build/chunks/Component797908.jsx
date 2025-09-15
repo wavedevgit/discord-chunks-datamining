@@ -1,4 +1,4 @@
-/** Chunk was on 32561 **/
+/** Chunk was on 73323 **/
 /** chunk id: 797908, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -18,8 +18,8 @@ let m = function(e) {
   let {
     application: h,
     onSelectApplication: g,
-    showCategory: f = false
-  } = e, _ = a.useRef(null), b = null == (t = h.categories) ? true : t[0], [x, v] = a.useState(false), C = a.useCallback(e => {
+    showCategory: _ = false
+  } = e, f = a.useRef(null), b = null == (t = h.categories) ? true : t[0], [x, v] = a.useState(false), C = a.useCallback(e => {
     e && v(true)
   }, []), j = (0, s.lf)(h), y = a.useCallback(() => {
     g(h.id)
@@ -27,13 +27,13 @@ let m = function(e) {
     id: h.id,
     icon: h.icon,
     size: 48
-  }) : true, [x, h]), O = f && null != b;
+  }) : true, [x, h]), O = _ && null != b;
   return (0, r.jsx)(i.$, {
-    innerRef: _,
+    innerRef: f,
     onChange: C,
     active: !x,
     children: (0, r.jsx)("div", {
-      ref: _,
+      ref: f,
       className: p.container,
       children: (0, r.jsxs)(o.Z, {
         className: p.card,

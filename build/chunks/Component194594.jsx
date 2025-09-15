@@ -1,4 +1,4 @@
-/** Chunk was on 32561 **/
+/** Chunk was on 73323 **/
 /** chunk id: 194594, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j,
@@ -18,7 +18,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk53062 = require("./53062.js");
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -101,9 +101,9 @@ function j(e) {
   }(T, A, L, E, I);
   return 0 === R.length && null == D ? null : (0, a.jsxs)(a.Fragment, {
     children: [P, (0, a.jsxs)("div", {
-      className: s()(j, f.wrapper),
+      className: s()(j, _.wrapper),
       children: [(0, a.jsx)("div", {
-        className: s()(f.icons, S),
+        className: s()(_.icons, S),
         children: R.length > 0 ? (0, a.jsxs)(a.Fragment, {
           children: [R.map((e, t) => {
             let n = t === R.length - 1 && 0 === w,
@@ -116,8 +116,8 @@ function j(e) {
               l = (0, a.jsx)(d.ua7, {
                 text: e.name,
                 position: "top",
-                children: e => (0, a.jsx)("img", b(_({}, e), {
-                  className: s()(f.icon, C[O]),
+                children: e => (0, a.jsx)("img", b(f({}, e), {
+                  className: s()(_.icon, C[O]),
                   src: r,
                   alt: ""
                 }))
@@ -125,7 +125,7 @@ function j(e) {
             return n ? (0, a.jsx)(i.Fragment, {
               children: l
             }, e.id) : (0, a.jsx)(u.ZP, {
-              className: f.iconMask,
+              className: _.iconMask,
               height: O,
               width: O,
               mask: u.ZP.Masks.VOICE_USER_SUMMARY_ITEM,
@@ -136,8 +136,8 @@ function j(e) {
               appNames: N.format(Z.map(e => e.name))
             }),
             position: "top",
-            children: e => (0, a.jsxs)("div", b(_({}, e), {
-              className: s()(f.moreGuilds, v[O]),
+            children: e => (0, a.jsxs)("div", b(f({}, e), {
+              className: s()(_.moreGuilds, v[O]),
               children: ["+", w]
             }))
           }) : null]
@@ -146,7 +146,7 @@ function j(e) {
           color: "currentColor",
           width: O,
           height: O,
-          className: f.defaultIcon
+          className: _.defaultIcon
         })
       }), null != D ? (0, a.jsx)(d.Text, {
         variant: y,

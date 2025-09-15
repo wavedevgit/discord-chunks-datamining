@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
-/** chunk id: 512100, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 475919, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
   u: () => l
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk793030 = require("./793030.js"),
-  Chunk330711 = require("./330711.js"),
-  Chunk163315 = require("./163315.js");
+var Chunk330711 = require("./330711.js"),
+  Chunk793030 = require("./793030.js"),
+  Chunk822796 = require("./822796.js");
 let s = 96;
 
 function l(e) {
@@ -47,11 +47,11 @@ function l(e) {
         className: o.details,
         children: [null != u && (0, r.jsx)("div", {
           children: u
-        }), (0, r.jsx)(i.X6q, {
+        }), (0, r.jsx)(a.X6q, {
           color: "header-primary",
           variant: "heading-xl/semibold",
           children: c
-        }), _ && (0, r.jsx)(i.xvT, {
+        }), _ && (0, r.jsx)(a.xvT, {
           color: "text-default",
           variant: "text-md/normal",
           className: o.description,
@@ -59,10 +59,10 @@ function l(e) {
         })]
       }), null != t && (0, r.jsxs)("div", {
         className: o.benefits,
-        children: [(0, r.jsx)(i.xvT, {
+        children: [(0, r.jsx)(a.xvT, {
           color: "header-secondary",
           variant: "eyebrow",
-          children: a.Z.Messages.STOREFRONT_BENEFITS_TITLE
+          children: i.Z.Messages.STOREFRONT_BENEFITS_TITLE
         }), t]
       })]
     })]

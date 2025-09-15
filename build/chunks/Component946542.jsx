@@ -1,4 +1,4 @@
-/** Chunk was on 32561 **/
+/** Chunk was on 73323 **/
 /** chunk id: 946542, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk431085 = require("./431085.js");
 
-function f(e) {
+function _(e) {
   let {
     applicationId: t,
     similarApplications: n,
@@ -43,7 +43,7 @@ function f(e) {
   return (0, r.jsx)("div", {
     className: g.contentContainer,
     ref: o,
-    children: n.map((e, n) => (0, r.jsx)(_, {
+    children: n.map((e, n) => (0, r.jsx)(f, {
       applicationId: t,
       similarApplication: e,
       onSelectApplication: i,
@@ -53,14 +53,14 @@ function f(e) {
   })
 }
 
-function _(e) {
+function f(e) {
   var t, n, l;
   let {
     applicationId: o,
     similarApplication: u,
     onSelectApplication: h,
-    position: f,
-    similarLoadId: _
+    position: _,
+    similarLoadId: f
   } = e, b = (0, p.Z)({
     application: u
   }), x = null == (t = u.categories) ? true : t[0], v = a.useMemo(() => s.ZP.getApplicationIconURL({
@@ -72,11 +72,11 @@ function _(e) {
       current_page: "product",
       application_id: o,
       suggested_application_id: u.id,
-      position: f,
-      load_id: _,
+      position: _,
+      load_id: f,
       shown_mutual_guilds_count: b.length
     }), h(u.id)
-  }, [h, u.id, o, b.length, _, f]);
+  }, [h, u.id, o, b.length, f, _]);
   return (0, r.jsxs)(i.P3F, {
     onClick: C,
     className: g.appContainer,
@@ -144,7 +144,7 @@ let b = function(e) {
       children: h.intl.string(h.t.E8wCnp)
     }), (0, r.jsx)(u.Z, {
       loading: n === o.M.FETCHING,
-      children: null != a ? (0, r.jsx)(f, {
+      children: null != a ? (0, r.jsx)(_, {
         applicationId: t,
         similarApplications: a,
         onSelectApplication: l,

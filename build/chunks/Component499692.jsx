@@ -1,4 +1,4 @@
-/** Chunk was on 32561 **/
+/** Chunk was on 73323 **/
 /** chunk id: 499692, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -38,7 +38,7 @@ function I(e) {
       e && i(true)
     });
     return a.useEffect(() => {
-      r && (0, _.zZ)(C.rMx.APP_DIRECTORY_COLLECTION_VIEWED, {
+      r && (0, f.zZ)(C.rMx.APP_DIRECTORY_COLLECTION_VIEWED, {
         collection_id: t,
         collection_position: n
       })
@@ -47,7 +47,7 @@ function I(e) {
     collectionId: t.id,
     index: n
   }), o = a.useCallback((e, r) => {
-    (0, _.zZ)(C.rMx.APP_DIRECTORY_COLLECTION_ITEM_CLICKED, {
+    (0, f.zZ)(C.rMx.APP_DIRECTORY_COLLECTION_ITEM_CLICKED, {
       collection_id: t.id,
       item_position: r,
       collection_position: n,
@@ -76,10 +76,10 @@ function I(e) {
 let O = function(e) {
   let {
     onSelectApplication: t
-  } = e, n = (0, u.e7)([h.default], () => h.default.onlyShowPreviewAppCollections) ? s.E.PREVIEW : s.E.ACTIVE, i = (0, u.e7)([f.Z], () => f.Z.getFetchState({
+  } = e, n = (0, u.e7)([h.default], () => h.default.onlyShowPreviewAppCollections) ? s.E.PREVIEW : s.E.ACTIVE, i = (0, u.e7)([_.Z], () => _.Z.getFetchState({
     surface: y,
     activeState: n
-  })), l = (0, u.e7)([f.Z], () => f.Z.getCollections({
+  })), l = (0, u.e7)([_.Z], () => _.Z.getCollections({
     surface: y,
     activeState: n
   }));
@@ -90,13 +90,13 @@ let O = function(e) {
     })
   }, [n]);
   let o = a.useMemo(() => null == l ? true : l.filter(e => e.type !== d.o.GALLERY), [l]);
-  return i === f.M.ERROR ? (0, r.jsx)("div", {
+  return i === _.M.ERROR ? (0, r.jsx)("div", {
     className: j.errorContainer,
     children: (0, r.jsx)(v.Z, {
       className: j.error
     })
   }) : (0, r.jsx)(b.Z, {
-    loading: i === f.M.FETCHING,
+    loading: i === _.M.FETCHING,
     children: null == o ? true : o.map((e, n) => (0, r.jsx)(I, {
       collection: e,
       index: n,

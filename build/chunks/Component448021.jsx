@@ -1,4 +1,4 @@
-/** Chunk was on 32561 **/
+/** Chunk was on 73323 **/
 /** chunk id: 448021, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -20,7 +20,7 @@ function g(e) {
   let {
     application: t,
     carouselItems: n
-  } = e, g = (0, l.e7)([d.Z], () => d.Z.isFocused()), f = (0, r.jsxs)(r.Fragment, {
+  } = e, g = (0, l.e7)([d.Z], () => d.Z.isFocused()), _ = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("img", {
       className: m.errorImage,
       src: h,
@@ -38,7 +38,7 @@ function g(e) {
       name: t.name
     })
   });
-  let _ = a.useCallback((e, t) => {
+  let f = a.useCallback((e, t) => {
     if (e.type === u.s9s.IMG) {
       let t = n.filter(e => e.type === u.s9s.IMG),
         r = t.findIndex(t => t === e);
@@ -65,7 +65,7 @@ function g(e) {
     autoplayInterval: 8e3,
     paused: !g,
     videoAutoPlay: true,
-    onCurrentItemClick: _,
-    errorComponent: f
+    onCurrentItemClick: f,
+    errorComponent: _
   })
 }

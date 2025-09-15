@@ -1,4 +1,4 @@
-/** Chunk was on 32561 **/
+/** Chunk was on 73323 **/
 /** chunk id: 666697, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -58,7 +58,7 @@ let P = function(e) {
   a.useEffect(() => {
     (null == A ? true : A.storefront_available) && null != t && (0, l.Z)(t)
   }, [null == A ? true : A.storefront_available, t]);
-  let k = (0, f.Uc)(),
+  let k = (0, _.Uc)(),
     M = (0, i.e7)([p.Z], () => p.Z.getFetchState({
       applicationId: null == A ? true : A.id
     })),
@@ -79,7 +79,7 @@ let P = function(e) {
       previousView: t
     } = U.current;
     (null == A ? true : A.id) != null && M !== p.M.FETCHING && (0, m.zZ)(I.rMx.APP_DIRECTORY_PAGE_VIEWED, {
-      current_page: f.m_.APPLICATION,
+      current_page: _.m_.APPLICATION,
       previous_page: null == t ? true : t.type,
       application_id: A.id,
       referrer: document.referrer,
@@ -110,7 +110,7 @@ let P = function(e) {
       (0, m.zZ)(I.rMx.APP_DIRECTORY_PROFILE_TAB_CLICKED, {
         application_id: t,
         tab_name: e
-      }), w(e), e === y.GlobalDiscoveryAppsSections.ABOUT ? (0, _.Gp)(I.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(t)) : (0, _.Gp)(I.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, e))
+      }), w(e), e === y.GlobalDiscoveryAppsSections.ABOUT ? (0, f.Gp)(I.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(t)) : (0, f.Gp)(I.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, e))
     }, [t]),
     Y = Z === y.GlobalDiscoveryAppsSections.ABOUT;
   return (0, r.jsx)(c.Z, {
