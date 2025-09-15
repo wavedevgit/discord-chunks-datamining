@@ -2,7 +2,7 @@
 /** chunk id: 654588, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => b
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -82,7 +82,11 @@ function m() {
     isFetchingCampaignEligibility: true
   })
 }
-class g extends(r = Chunk442837.ZP.Store) {
+
+function g(e, t) {
+  return !(e instanceof f) && (null === e && null === t || null !== e && null !== t && e.id === t.id && e.status === t.status)
+}
+class E extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk431.Z, Chunk78839.Z), this.syncWith([Chunk431.Z], this.handleUserOfferUpdate), this.syncWith([Chunk78839.Z], this.handleSubscriptionUpdate)
   }
@@ -91,18 +95,28 @@ class g extends(r = Chunk442837.ZP.Store) {
   }
   handleSubscriptionUpdate() {
     let e = c({}, _);
-    true === Chunk78839.Z.hasFetchedMostRecentPremiumTypeSubscription() && (module.mostRecentSubscription = Chunk78839.Z.getMostRecentPremiumTypeSubscription()), true === Chunk78839.Z.hasFetchedPreviousPremiumTypeSubscription() && (module.prevSubscription = Chunk78839.Z.getPreviousPremiumTypeSubscription()), module.shouldRefetchCampaignEligibility = true, _ = module
+    if (true === Chunk78839.Z.hasFetchedMostRecentPremiumTypeSubscription()) {
+      let t = module.mostRecentSubscription,
+        n = Chunk78839.Z.getMostRecentPremiumTypeSubscription();
+      g(exports, require) || (module.shouldRefetchCampaignEligibility = true), module.mostRecentSubscription = require
+    }
+    if (true === Chunk78839.Z.hasFetchedPreviousPremiumTypeSubscription()) {
+      let t = module.prevSubscription,
+        n = Chunk78839.Z.getPreviousPremiumTypeSubscription();
+      g(exports, require) || (module.shouldRefetchCampaignEligibility = true), module.prevSubscription = require
+    }
+    _ = module
   }
   handleUserOfferUpdate() {
-    false !== Chunk431.Z.lastFetchSuccessful() && (_ = d(c({}, _), {
+    false !== Chunk431.Z.lastFetchSuccessful() && (_.userHasUnexpiredDiscount !== Chunk431.Z.hasAnyUnexpiredDiscountOffer() || _.userHasUnexpiredOffers !== Chunk431.Z.hasAnyUnexpiredOffer()) && (_ = d(c({}, _), {
       userHasUnexpiredOffers: Chunk431.Z.hasAnyUnexpiredOffer(),
       userHasUnexpiredDiscount: Chunk431.Z.hasAnyUnexpiredDiscountOffer(),
       shouldRefetchCampaignEligibility: true
     }))
   }
 }
-l(g, "displayName", "MarketingCampaignEligibilityStore");
-let E = new g(Chunk570140.Z, {
+l(E, "displayName", "MarketingCampaignEligibilityStore");
+let b = new E(Chunk570140.Z, {
   MARKETING_CAMPAIGN_ELIGIBILITY_FETCH_SUCCESS: p,
   MARKETING_CAMPAIGN_ELIGIBILITY_FETCH_FAILED: h,
   MARKETING_CAMPAIGN_ELIGIBILITY_FETCH_STARTED: m
