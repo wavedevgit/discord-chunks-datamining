@@ -88,31 +88,33 @@ function O(e) {
       onRequestClose: S,
       popoverRef: A,
       position: C,
-      caretConfig: N
+      caretConfig: N,
+      scrollBehavior: R
     } = e,
-    R = b(e, ["title", "body", "badge", "graphic", "size", "actions", "textLink", "gradientColor", "onRequestClose", "popoverRef", "position", "caretConfig"]);
-  let [P, w] = i.useState(null != C ? C : "top"), [D, x] = i.useState({
-    position: (0, _.z)(P),
+    P = b(e, ["title", "body", "badge", "graphic", "size", "actions", "textLink", "gradientColor", "onRequestClose", "popoverRef", "position", "caretConfig", "scrollBehavior"]);
+  let [w, D] = i.useState(null != C ? C : "top"), [x, L] = i.useState({
+    position: (0, _.z)(w),
     align: null != (t = null == N ? true : N.align) ? t : "center",
     customOffset: null == N ? true : N.customOffset
-  }), L = i.useCallback((e, t) => {
+  }), j = i.useCallback((e, t) => {
     null == S || S(t)
-  }, [S]), j = i.useCallback(() => {
+  }, [S]), M = i.useCallback(() => {
     null == S || S("user:explicit")
-  }, [S]), M = i.useCallback(e => {
-    w(e), x(t => E(m({}, t), {
+  }, [S]), k = i.useCallback(e => {
+    D(e), L(t => E(m({}, t), {
       position: (0, _.z)(e)
     }))
   }, []);
-  return (0, r.jsx)(l.m, E(m({}, R), {
-    position: P,
-    onRequestClose: L,
+  return (0, r.jsx)(l.m, E(m({}, P), {
+    position: w,
+    onRequestClose: j,
     gradientColor: T,
-    onPositionChange: M,
+    onPositionChange: k,
+    scrollBehavior: R,
     children: (0, r.jsxs)("div", {
       ref: A,
       children: [(0, r.jsx)(d.u, {
-        onClick: j,
+        onClick: M,
         variant: null != T ? "color-mix" : true
       }), null != y && (0, r.jsx)("div", {
         className: o()(p.graphic, {
@@ -130,7 +132,7 @@ function O(e) {
       }), null != v && v.length > 0 ? (0, r.jsx)(c.k, {
         actions: v
       }) : null, (0, r.jsx)(u.$, {
-        caretConfig: D
+        caretConfig: x
       })]
     })
   }))

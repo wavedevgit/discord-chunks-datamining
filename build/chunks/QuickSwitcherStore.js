@@ -4,7 +4,7 @@
 let r;
 require.d(exports, {
   Z: () => eo
-}), require("./539854.js"), require("./388685.js"), require("./583741.js"), require("./290780.js"), require("./35282.js"), require("./781311.js");
+}), require("./539854.js"), require("./388685.js"), require("./583741.js"), require("./290780.js"), require("./781311.js"), require("./35282.js");
 var i, Chunk392711 = require("./392711.js"),
   o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -192,12 +192,12 @@ function X(e) {
   let {
     query: n,
     queryMode: i
-  } = e, a = null != (t = T.Z.getGuildId()) ? t : true, o = new Set(["user:".concat(h.default.getId())]);
-  null != a && o.add("guild:".concat(a)), H = Date.now(), r = null != r ? r : new u.ZP($, L, null != i ? x : D, {
+  } = e, a = n.trim(), o = null != (t = T.Z.getGuildId()) ? t : true, s = new Set(["user:".concat(h.default.getId())]);
+  null != o && s.add("guild:".concat(o)), H = Date.now(), r = null != r ? r : new u.ZP($, L, null != i ? x : D, {
     frecencyBoosters: true,
-    blacklist: o,
+    blacklist: s,
     allowSnowflake: true
-  }), B = null, Z = n.length, U = i, r.search(n)
+  }), B = null, Z = a.length, U = i, r.search(a)
 }
 
 function Q(e) {
@@ -231,7 +231,7 @@ function et(e) {
   let {
     query: i,
     queryMode: a
-  } = e;
+  } = e, o = i.trim();
   if (null == r) returnfalse;
   if (U !== a) {
     r.setResultTypes(null != a ? [a] : L), r.setLimit(null != a ? x : D);
@@ -250,8 +250,8 @@ function et(e) {
   }
   if ((U = a) === u.h8.USER) {
     let e = null != (n = T.Z.getGuildId()) ? n : null;
-    r.search(i, e)
-  } else r.search(i, true)
+    r.search(o, e)
+  } else r.search(o, true)
 }
 
 function en(e) {

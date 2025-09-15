@@ -9,9 +9,6 @@ module.exports = {
   tierTopIndicator: "tierTopIndicator__3efc4",
   tierInfoContainer: "tierInfoContainer__3efc4",
   tierDescriptionTruncate: "tierDescriptionTruncate__3efc4",
-  toggleTruncationButton: "toggleTruncationButton__3efc4",
-  toggleTruncationButtonInner: "toggleTruncationButtonInner__3efc4",
-  toggleTruncationButtonIcon: "toggleTruncationButtonIcon__3efc4",
   subscriptionPerks: "subscriptionPerks__3efc4",
   roleMessagePreview: "roleMessagePreview__3efc4",
   sectionHeader: "sectionHeader__3efc4",
@@ -19,5 +16,6 @@ module.exports = {
   benefitsList: "benefitsList__3efc4",
   emojiList: "emojiList__3efc4",
   emojiListEmoji: "emojiListEmoji__3efc4",
-  divider: "divider__3efc4"
+  divider: "divider__3efc4",
+  helpMessage: "helpMessage__3efc4"
 }

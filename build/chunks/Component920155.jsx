@@ -90,28 +90,29 @@ function A(e) {
     align: v = "center",
     hasVideo: A = false,
     gradientColor: C,
-    onPositionChange: N
-  } = e, [R, P] = i.useState(h), [w, D] = i.useState(b), x = i.useRef(b), L = (0, l.e7)([f.Z], () => f.Z.getLayers()), j = null != (t = L[L.length - 1]) ? t : "base", M = i.useMemo(() => {
+    onPositionChange: N,
+    scrollBehavior: R = "sticky"
+  } = e, [P, w] = i.useState(h), [D, x] = i.useState(b), L = i.useRef(b), j = (0, l.e7)([f.Z], () => f.Z.getLayers()), M = null != (t = j[j.length - 1]) ? t : "base", k = i.useMemo(() => {
     var e;
-    return null == a.current || (null == (e = a.current.closest("[data-layer]")) ? true : e.getAttribute("data-layer")) === j
-  }, [a, j]);
+    return null == a.current || (null == (e = a.current.closest("[data-layer]")) ? true : e.getAttribute("data-layer")) === M
+  }, [a, M]);
   i.useEffect(() => {
-    M && h ? P(true) : M || P(false)
-  }, [M, h]);
-  let k = () => {
-      P(false)
+    k && h ? w(true) : k || w(false)
+  }, [k, h]);
+  let U = () => {
+      w(false)
     },
-    U = (0, p.i)({
+    G = (0, p.i)({
       shouldShow: h,
-      caretPosition: (0, _.z)(w),
-      onExitComplete: k
+      caretPosition: (0, _.z)(D),
+      onExitComplete: U
     }),
-    G = e => {
+    B = e => {
       var {
         setPopoutRef: t,
         position: i
       } = e, l = O(e, ["setPopoutRef", "position"]);
-      return null != i && i !== x.current && (x.current = i, D(i), null == N || N(i)), U((e, i) => {
+      return null != i && i !== L.current && (L.current = i, x(i), null == N || N(i)), G((e, i) => {
         if (!i) return null;
         let c = (0, r.jsx)(u.V, y(E({}, l), {
           setDialogRef: t,
@@ -136,9 +137,9 @@ function A(e) {
     };
   return (0, r.jsx)(c.H, {
     targetElementRef: a,
-    shouldShow: R,
+    shouldShow: P,
     onRequestClose: g,
-    position: w,
+    position: D,
     align: v,
     spacing: I + T,
     layerContext: true,
@@ -146,10 +147,10 @@ function A(e) {
     popoutKey: true,
     fixed: false,
     autoInvert: true,
-    nudgeAlignIntoViewport: "top" === w || "bottom" === w,
+    nudgeAlignIntoViewport: "top" === D || "bottom" === D,
     closeOnClickOutside: false,
-    scrollBehavior: "sticky",
-    renderPopout: G,
+    scrollBehavior: R,
+    renderPopout: B,
     children: S
   })
 }
