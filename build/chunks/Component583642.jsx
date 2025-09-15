@@ -33,29 +33,32 @@ function A(e) {
     items: t,
     navId: n,
     selectedIndex: i
-  } = e;
+  } = e, a = 0;
   return (0, r.jsx)(r.Fragment, {
-    children: t.map((e, t) => {
+    children: t.map(e => {
       switch (e.type) {
         case g.i.ROW:
           let {
-            icon: a, label: o, onSelect: s
-          } = e.data;
-          return (0, r.jsx)(m._B, {
-            icon: a,
+            icon: t, label: o, onSelect: s
+          } = e.data, l = a;
+          return a += 1, (0, r.jsx)(m._B, {
+            icon: t,
             label: o,
             onSelect: s,
             navId: n,
-            index: t,
-            selected: i === t
-          }, "".concat(e.type, "-").concat(t));
+            index: l,
+            selected: i === l
+          }, "".concat(e.type, "-").concat(l));
         case g.i.GROUP:
-          return (0, r.jsx)(m.dI, {
+          let {
+            rows: c, title: u
+          } = e.data, d = a;
+          return a += c.length, (0, r.jsx)(m.dI, {
             navId: n,
             item: e,
-            startingIndex: t,
+            startingIndex: d,
             selectedIndex: i
-          }, "".concat(e.type, "--").concat(e.data.title, "-").concat(t));
+          }, "".concat(e.type, "--").concat(u, "-").concat(d));
         default:
           return null
       }

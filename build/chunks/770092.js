@@ -1,14 +1,14 @@
 /** Chunk was on 56266 **/
 /** chunk id: 770092, original params: e,t,l (module,exports,require) **/
 require.d(exports, {
-  I: () => s
+  I: () => c
 });
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk607802 = require("./607802.js"),
   Chunk817190 = require("./817190.js");
 
-function s(e) {
+function c(e) {
   let t = (0, r.e7)([a.Z], () => {
     let t = (0, u.Tm)(e);
     return a.Z.getSearchResultsQueryString(t)
