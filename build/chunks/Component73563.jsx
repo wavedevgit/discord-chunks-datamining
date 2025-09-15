@@ -66,7 +66,7 @@ function f(e) {
           justify: c.Z.Justify.CENTER,
           align: c.Z.Align.CENTER,
           children: null == a ? true : a()
-        }), " ", (0, i.jsx)(c.Z, {
+        }), (0, i.jsx)(c.Z, {
           grow: 1,
           justify: c.Z.Justify.END,
           align: c.Z.Align.CENTER,

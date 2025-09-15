@@ -2,10 +2,10 @@
 /** chunk id: 833858, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Fe: () => E,
-  O8: () => S,
-  V: () => I,
-  tV: () => T
+  Fe: () => g,
+  O8: () => T,
+  V: () => v,
+  tV: () => I
 }), require("./35282.js");
 var Chunk970683 = require("./970683.js"),
   Chunk481060 = require("./481060.js"),
@@ -18,15 +18,14 @@ var Chunk970683 = require("./970683.js"),
   Chunk33346 = require("./33346.js"),
   Chunk857042 = require("./857042.js"),
   Chunk558532 = require("./558532.js"),
-  Chunk105196 = require("./105196.js"),
   Chunk346554 = require("./346554.js"),
   Chunk444305 = require("./444305.js");
-let g = [null, null];
+let m = [null, null];
 
-function E(e) {
-  return null == e ? g : e.split(":")
+function g(e) {
+  return null == e ? m : e.split(":")
 }
-let b = () => ({
+let E = () => ({
     [Chunk505905.tN.CHILLING]: {
       title: Chunk388032.intl.string(Chunk388032.t["vkpn7+"]),
       icon: Chunk857042
@@ -43,16 +42,12 @@ let b = () => ({
       title: Chunk388032.intl.string(Chunk388032.t["30yqZW"]),
       icon: Chunk33346
     },
-    [Chunk505905.tN.EATING]: {
-      title: Chunk388032.intl.string(Chunk388032.t.UVSEhY),
-      icon: Chunk105196
-    },
     [Chunk505905.tN.WATCHING]: {
       title: Chunk388032.intl.string(Chunk388032.t.di6IFx),
       icon: Chunk444305
     }
   }),
-  y = () => ({
+  b = () => ({
     [Chunk505905.tN.BRB]: {
       title: Chunk388032.intl.string(Chunk388032.t.fFTJTE),
       icon: Chunk136779
@@ -74,7 +69,7 @@ let b = () => ({
       icon: Chunk970683.FG
     }
   }),
-  O = () => ({
+  y = () => ({
     [Chunk505905.tN.BRB]: {
       title: Chunk388032.intl.string(Chunk388032.t.fFTJTE),
       icon: Chunk481060.GsA
@@ -96,7 +91,7 @@ let b = () => ({
       icon: Chunk481060.Xbz
     }
   }),
-  v = () => ({
+  O = () => ({
     [Chunk505905.tN.BRB]: {
       title: Chunk388032.intl.string(Chunk388032.t.fFTJTE),
       emoji: {
@@ -133,30 +128,30 @@ let b = () => ({
       }
     }
   }),
-  I = e => {
+  v = e => {
     switch (e) {
       case "original":
       default:
-        return b();
+        return E();
       case "illocons":
-        return y();
+        return b();
       case "icons":
-        return O();
+        return y();
       case "twemoji":
-        return v()
+        return O()
     }
   },
-  T = function(e) {
+  I = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "original";
     if ((null == e ? true : e.type) !== o.IIU.HANG_STATUS || (null == e ? true : e.state) == null) return null;
-    let n = E(e.state),
+    let n = g(e.state),
       r = n[0];
     if (r === a.tN.CUSTOM) return null;
-    let i = I(n.length > 1 ? n[1] : t);
+    let i = v(n.length > 1 ? n[1] : t);
     return r in i ? i[r] : null
   },
-  S = function(e) {
+  T = function(e) {
     var t;
     let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "original";
-    return (null == e ? true : e.type) !== o.IIU.HANG_STATUS || (null == e ? true : e.state) == null ? null : E(e.state)[0] === a.tN.CUSTOM ? null == e ? true : e.details : null == (t = T(e, n)) ? true : t.title
+    return (null == e ? true : e.type) !== o.IIU.HANG_STATUS || (null == e ? true : e.state) == null ? null : g(e.state)[0] === a.tN.CUSTOM ? null == e ? true : e.details : null == (t = I(e, n)) ? true : t.title
   }

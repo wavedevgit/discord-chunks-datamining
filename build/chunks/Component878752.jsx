@@ -40,7 +40,7 @@ function g(e) {
   if (null == t || null != y) return null;
   let x = C && v,
     O = _ && n;
-  return (0, r.jsxs)(l.Gt, {
+  return x || O ? (0, r.jsxs)(l.Gt, {
     value: b,
     children: [(0, r.jsxs)("div", {
       className: m.voiceEffectsActionBar,
@@ -49,8 +49,8 @@ function g(e) {
       }), O && (0, r.jsx)(p.Z, {}), O && (0, r.jsx)(h.Z, {
         channel: t
       }), O && (0, r.jsx)(f.Z, {})]
-    }), g && (x || O) && (0, r.jsx)("div", {
+    }), g && (0, r.jsx)("div", {
       className: m.divider
     })]
-  })
+  }) : null
 }

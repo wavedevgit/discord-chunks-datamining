@@ -36,7 +36,7 @@ function Z(e) {
     channel: l,
     setIsHangStatusInputFocused: o,
     setPopoutRef: Z
-  } = e, T = i.useRef(null), N = (0, u.e7)([b.Z], () => b.Z.getCustomHangStatus()), A = i.useRef(b.Z.getRecentCustomStatuses()), {
+  } = e, T = i.useRef(null), N = (0, u.e7)([b.Z], () => b.Z.getCustomHangStatus()), A = (0, u.e7)([b.Z], () => b.Z.getRecentStatuses()), {
     defaultStatusVariant: w
   } = g.n.useExperiment({
     guildId: l.guild_id,
@@ -145,42 +145,32 @@ function Z(e) {
           icon: d.dz2,
           "aria-label": S.intl.string(S.t.UDg0qK)
         })]
-      }), Object.entries(R).map(e => {
-        let [t, n] = e, i = {
-          type: E.IIU.HANG_STATUS,
-          state: t
-        };
-        return (0, r.jsx)(O.L, {
-          isSelected: B === t,
-          label: n.title,
-          icon: (0, r.jsx)(v.Z, {
+      }), A.map((e, t) => {
+        var n;
+        let i = "string" == typeof e,
+          l = i ? R[e] : null,
+          a = i ? (0, r.jsx)(v.Z, {
             size: 20,
-            hangStatusActivity: i,
+            hangStatusActivity: {
+              type: E.IIU.HANG_STATUS,
+              state: e
+            },
             fallbackVariant: w,
             className: I.icon
-          }),
-          setStatus: () => z(t),
-          clearStatus: () => (0, m.Sc)(false)
-        }, n.title)
-      })]
-    }), A.current.length > 0 && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)("div", {
-        role: "separator",
-        className: I.separator
-      }), (0, r.jsx)("div", {
-        role: "group",
-        className: a()(P.groupLabel, I.group),
-        children: A.current.map((e, t) => (0, r.jsx)(O.L, {
-          isSelected: s()(null == N ? true : N.emoji, e.emoji) && (null == N ? true : N.status) === e.status,
-          label: e.status,
-          icon: null != e.emoji && (0, r.jsx)(p.Z, {
+          }) : null != e.emoji && (0, r.jsx)(p.Z, {
             emoji: e.emoji,
             hideTooltip: true,
             className: I.icon
-          }),
-          setStatus: () => W(e),
+          });
+        return (0, r.jsx)(O.L, {
+          isSelected: i ? B === e : s()(null == N ? true : N.emoji, e.emoji) && (null == N ? true : N.status) === e.status,
+          label: i ? null != (n = null == l ? true : l.title) ? n : "" : e.status,
+          icon: a,
+          setStatus: () => {
+            i ? z(e) : W(e)
+          },
           clearStatus: () => (0, m.Sc)(false)
-        }, t))
+        }, t)
       })]
     }), (0, r.jsx)(x.d, {
       guildId: l.guild_id

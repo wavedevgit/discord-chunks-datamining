@@ -78,9 +78,9 @@ function p(e) {
 }
 
 function h() {
-  let e = [Chunk106301.Z.getCustomHangStatus(), ...Chunk106301.Z.getRecentCustomStatuses()].filter(e => {
+  let e = [Chunk106301.Z.getCustomHangStatus(), ...Chunk106301.Z.getRecentStatuses()].filter(e => {
     var t;
-    return null != e && null != e.emoji && (null == (t = e.emoji) ? true : t.id) != null && null == i.ZP.getCustomEmojiById(e.emoji.id)
+    return null != e && "string" != typeof e && null != e.emoji && (null == (t = e.emoji) ? true : t.id) != null && null == i.ZP.getCustomEmojiById(e.emoji.id)
   });
   module.length > 0 && Chunk570140.Z.dispatch({
     type: "DELETE_INVALID_HANG_STATUSES",
