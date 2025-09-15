@@ -52,18 +52,18 @@ function g(e) {
     onClose: O,
     sidebarHeader: E,
     sidebarFooter: v
-  } = e, [b, T] = i.useState(true), [N, p] = i.useState(null == (t = f.entry(y)) ? true : t.parentPanel), [I, C] = i.useState({
+  } = e, [b, T] = i.useState(true), [N, p] = i.useState(null == (t = f.entry(y)) ? true : t.parentPanel), [C, I] = i.useState({
     target: y,
     targetAccordion: null == (n = f.entry(y)) ? true : n.parentAccordion,
     animateScroll: false,
-    complete: j
+    complete: m
   });
 
-  function j() {
-    C(true)
+  function m() {
+    I(true)
   }
   let {
-    navigateWithValidation: m
+    navigateWithValidation: j
   } = (0, a.Cu)(), _ = {
     currentPanel: f.typedGet(N),
     navigateTo: e => {
@@ -72,20 +72,20 @@ function g(e) {
       let n = {
         target: e,
         targetAccordion: t.parentAccordion,
-        complete: j
+        complete: m
       };
       if (t.parentPanel.key !== (null == N ? true : N.key)) {
         let e = t.parentPanel;
-        m(() => {
-          C(d(c({}, n), {
+        j(() => {
+          I(d(c({}, n), {
             animateScroll: false
           })), p(e)
         })
-      } else C(d(c({}, n), {
+      } else I(d(c({}, n), {
         animateScroll: true
       }))
     },
-    navTransition: I,
+    navTransition: C,
     showNavigationMobile: b,
     setShowNavigationMobile: T
   };
@@ -98,7 +98,7 @@ function g(e) {
         header: E,
         footer: v
       }), (0, r.jsx)(l.Z, {
-        onClose: () => m(O),
+        onClose: () => j(O),
         setting: _.currentPanel
       })]
     })

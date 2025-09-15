@@ -31,7 +31,7 @@ function u(e) {
     title: n,
     onClick: i,
     active: l,
-    trailing: o
+    trailing: u
   } = e;
   return (0, r.jsxs)(s, {
     onClick: i,
@@ -42,10 +42,14 @@ function u(e) {
         color: "currentColor",
         size: "refresh_sm",
         className: a.icon
-      }), n]
+      }), (0, r.jsx)(o.Text, {
+        variant: "text-md/medium",
+        color: "currentColor",
+        children: n
+      })]
     }), (0, r.jsx)("div", {
       className: a.itemContent,
-      children: o
+      children: u
     })]
   })
 }
