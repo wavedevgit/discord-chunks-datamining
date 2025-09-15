@@ -900,14 +900,14 @@ class e8 extends Chunk647438.Component {
   }
 }
 e8.contextType = eD;
-var e5 = el ? e8 : e => {
+var e6 = el ? e8 : e => {
   var {
     children: t
   } = e;
   return c.createElement(c.Fragment, null, t)
 };
 
-function e6(e, t) {
+function e5(e, t) {
   var {
     path: n,
     diff: r
@@ -1235,7 +1235,7 @@ function th(e) {
           id: t
         } = e;
         return t !== l.id
-      })), e6(t, l) || (a = false, U.delete(t), M.delete(t), i = "action", G.delete(t), n.cancel(), r.cancel(), null == e || e.unref())
+      })), e5(t, l) || (a = false, U.delete(t), M.delete(t), i = "action", G.delete(t), n.cancel(), r.cancel(), null == e || e.unref())
     }
     var g = null == e ? true : e.unref();
     if (!g || G.get(t) || t.selection && d.e6.equals(g, t.selection) || d.YR.select(t, g), b()) return void f();
@@ -1927,7 +1927,7 @@ var tN = e => c.createElement(c.Fragment, null, eW(e)),
       value: _
     }, c.createElement(eF.Provider, {
       value: s
-    }, c.createElement(e5, {
+    }, c.createElement(e6, {
       node: k,
       receivedUserInput: V
     }, c.createElement(y, Object.assign({

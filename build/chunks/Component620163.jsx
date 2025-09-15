@@ -6,7 +6,7 @@ require.d(exports, {
   OF: () => e4,
   W8: () => e8,
   c$: () => e3,
-  iE: () => e6
+  iE: () => e5
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -179,8 +179,8 @@ let e2 = () => {
       text: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
     }) : null
   },
-  e5 = Chunk200645.Z,
-  e6 = e => {
+  e6 = Chunk200645.Z,
+  e5 = e => {
     let {
       unseenGiftCount: t,
       showPrepaidPaymentPastDueWarning: E,
@@ -189,7 +189,7 @@ let e2 = () => {
       isOverlaySupported: B,
       isClipsBetaTagShowing: eJ = false,
       shouldMergeGameSettings: e0,
-      isKeywordFilteringEnabled: e6,
+      isKeywordFilteringEnabled: e5,
       isStaff: e7,
       isInappropriateConversationWarningEnabled: e9,
       isInapproprateConversationsDefaultOn: te,
@@ -569,7 +569,7 @@ let e2 = () => {
         section: eY.oAB.CONTENT_AND_SOCIAL,
         searchableTitles: [ez.intl.string(ez.t["1UaUy8"]), ez.intl.string(ez.t["xIk/iI"])],
         parent: eV.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
-        predicate: () => e6
+        predicate: () => e5
       },
       [eV.s6.PRIVACY_SAFETY_ALERTS_V2]: {
         section: eY.oAB.CONTENT_AND_SOCIAL,
@@ -1499,7 +1499,7 @@ let e2 = () => {
         section: eY.oAB.LINUX,
         searchableTitles: [ez.intl.string(ez.t["7pPjTU"])],
         label: ez.intl.string(ez.t["7pPjTU"]),
-        element: e5,
+        element: e6,
         predicate: () => q.isPlatformEmbedded && (0, q.isLinux)()
       },
       [eV.s6.STREAMER_MODE]: {
