@@ -32,22 +32,22 @@ let x = new Chunk710845.Z("AppOverlay");
 async function B(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : 1e3,
     a = arguments.length > 3 && true !== arguments[3] ? arguments[3] : 3;
-  if (m.isPlatformEmbedded) {
+  if (h.isPlatformEmbedded) {
     try {
-      await h.ZP.isAlwaysOnTop(t)
+      await m.ZP.isAlwaysOnTop(t)
     } catch (e) {
-      x.error("Window does not exist while trying to show inactive", e), (0, b.D1)(e, g.gl.OutOfProcess)
+      x.error("Window does not exist while trying to show inactive", e), (0, b.D1)(e, I.gl.OutOfProcess)
     }
     for (let r = 0; r < a; r++) try {
-      if (!await h.ZP.waitForIPCReady(n, e)) throw Error("IPC not ready");
-      h.ZP.showInactive(t);
+      if (!await m.ZP.waitForIPCReady(n, e)) throw Error("IPC not ready");
+      m.ZP.showInactive(t);
       return
     } catch (e) {
       var o;
       if ((null == (o = e.message) ? true : o.includes("IPC")) && r < a - 1) {
         let t = n / 2 * Math.pow(2, r + 1);
         x.error("Failed to show inactive, retrying in ".concat(t, "ms"), e), await new Promise(e => setTimeout(e, t))
-      } else throw (0, b.D1)(e, g.gl.OutOfProcess), e
+      } else throw (0, b.D1)(e, I.gl.OutOfProcess), e
     }
   }
 }
@@ -56,14 +56,14 @@ let P = Chunk647438.memo(function(e) {
     withTitleBar: t,
     windowKey: n
   } = e, _ = function(e, t) {
-    let n = (0, r.e7)([w.ZP], () => !m.isPlatformEmbedded || w.ZP.isWindowHandleInitialized()),
+    let n = (0, r.e7)([w.ZP], () => !h.isPlatformEmbedded || w.ZP.isWindowHandleInitialized()),
       a = (0, r.e7)([d.Z], () => d.Z.getWindow(e)),
       l = o.useRef(null),
       _ = o.useRef(null),
       u = o.useRef(null),
-      h = (0, r.e7)([p.default], () => {
+      m = (0, r.e7)([p.default], () => {
         let e = p.default.getFocusedPID();
-        return !m.isPlatformEmbedded || null != e && e !== v.UNSET_PID
+        return !h.isPlatformEmbedded || null != e && e !== v.UNSET_PID
       }),
       [b, C] = o.useState(false),
       S = o.useRef(false),
@@ -73,9 +73,9 @@ let P = Chunk647438.memo(function(e) {
         i.Z.track(E.rMx.OVERLAY_INITIALIZED, {
           voice_widget_connected: n,
           text_widget_connected: w.ZP.isPinned(E.Odu.TEXT),
-          overlay_render_method: g.gl[y.default.getOverlayMethod(e)],
+          overlay_render_method: I.gl[y.default.getOverlayMethod(e)],
           unpinned_widget_types: f.Z.getAllUnpinnedPinnedWidgets(t)
-        }), (0, I.lj)("OVERLAY_INITIALIZED"), i.Z.oopUiInitialized()
+        }), (0, g.lj)("OVERLAY_INITIALIZED"), i.Z.oopUiInitialized()
       }, [t]);
     (0, c.Ng)(() => {
       let e = e => {
@@ -106,11 +106,11 @@ let P = Chunk647438.memo(function(e) {
       }))
     }, [x]);
     return o.useEffect(() => {
-      h && null != a && n && (S.current || (S.current = true, P(a, e)))
-    }, [P, h, e, a, n]), (0, c.zq)(() => {
+      m && null != a && n && (S.current || (S.current = true, P(a, e)))
+    }, [P, m, e, a, n]), (0, c.zq)(() => {
       null != u.current && u.current()
     }), b
-  }(n, S.$S), h = (0, v.getPID)(), b = (0, r.e7)([p.default], () => p.default.isInputLocked(h), [h]);
+  }(n, S.$S), m = (0, v.getPID)(), b = (0, r.e7)([p.default], () => p.default.isInputLocked(m), [m]);
   return _ ? (0, a.jsxs)(u.Z, {
     themeOverride: E.BRd.MIDNIGHT,
     withTitleBar: t,

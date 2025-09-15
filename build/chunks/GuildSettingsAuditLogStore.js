@@ -17,8 +17,8 @@ var r, l, Chunk392711 = require("./392711.js"),
   Chunk981631 = require("./981631.js");
 let I = Chunk149765.$e(Chunk981631.Plq.KICK_MEMBERS, Chunk981631.Plq.BAN_MEMBERS, Chunk981631.Plq.ADMINISTRATOR, Chunk981631.Plq.MANAGE_CHANNELS, Chunk981631.Plq.MANAGE_GUILD, Chunk981631.Plq.MANAGE_MESSAGES, Chunk981631.Plq.MANAGE_NICKNAMES, Chunk981631.Plq.MANAGE_ROLES, Chunk981631.Plq.MANAGE_WEBHOOKS, Chunk981631.Plq.MANAGE_GUILD_EXPRESSIONS, Chunk981631.Plq.MOVE_MEMBERS, Chunk981631.Plq.MUTE_MEMBERS, Chunk981631.Plq.DEAFEN_MEMBERS),
   g = null,
-  f = [],
   h = [],
+  f = [],
   N = [],
   O = [],
   p = [],
@@ -107,10 +107,10 @@ class k extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk430824.Z, Chunk485386.Z, Chunk271383.ZP)
   }
   get logs() {
-    return f
+    return h
   }
   get integrations() {
-    return h
+    return f
   }
   get webhooks() {
     return O
@@ -172,10 +172,10 @@ let F = new k(Chunk570140.Z, {
   },
   AUDIT_LOG_FETCH_SUCCESS: function(e) {
     var t;
-    y = 0, D = false, L = false, U = true, v = false, f = w(e.logs), h = e.integrations, O = e.webhooks, p = e.guildScheduledEvents, R = null != (t = e.automodRules) ? t : [], S = e.threads, C = e.applicationCommands, e.logs.length < T.Rg9 && (U = false)
+    y = 0, D = false, L = false, U = true, v = false, h = w(e.logs), f = e.integrations, O = e.webhooks, p = e.guildScheduledEvents, R = null != (t = e.automodRules) ? t : [], S = e.threads, C = e.applicationCommands, e.logs.length < T.Rg9 && (U = false)
   },
   AUDIT_LOG_FETCH_FAIL: function() {
-    L = false, v = true, f = []
+    L = false, v = true, h = []
   },
   AUDIT_LOG_FETCH_NEXT_PAGE_START: function(e) {
     let {
@@ -193,9 +193,9 @@ let F = new k(Chunk570140.Z, {
       threads: a,
       applicationCommands: s
     } = e;
-    if (b = false, h = n, O = r, p = l, R = i, S = a, C = s, (0 === t.length || t.length < T.Rg9) && (U = false), t.length > 0) {
+    if (b = false, f = n, O = r, p = l, R = i, S = a, C = s, (0 === t.length || t.length < T.Rg9) && (U = false), t.length > 0) {
       let e = w(t);
-      f = [...f, ...e]
+      h = [...h, ...e]
     }
   },
   AUDIT_LOG_FETCH_NEXT_PAGE_FAIL: function() {
@@ -230,6 +230,6 @@ let F = new k(Chunk570140.Z, {
     })
   },
   GUILD_SETTINGS_CLOSE: function() {
-    f = [], N = [], x = Chunk981631.rsA.ALL, M = null, P = null, j = {}, y = 0, D = true, h = [], O = [], p = [], R = [], S = []
+    h = [], N = [], x = Chunk981631.rsA.ALL, M = null, P = null, j = {}, y = 0, D = true, f = [], O = [], p = [], R = [], S = []
   }
 })

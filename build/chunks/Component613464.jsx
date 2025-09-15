@@ -34,7 +34,7 @@ function S(e) {
     className: S,
     infoPanelClassName: C,
     style: D
-  } = e, L = (0, N.m)(n), b = (0, s.e7)([h.default], () => h.default.getUser(t), [t]), U = (0, s.e7)([f.ZP], () => f.ZP.getMember(n, t), [n, t]), [v, M] = l.useState(null == b || null == U), x = (0, c.Z)(U), P = l.useRef(null), {
+  } = e, L = (0, N.m)(n), b = (0, s.e7)([f.default], () => f.default.getUser(t), [t]), U = (0, s.e7)([h.ZP], () => h.ZP.getMember(n, t), [n, t]), [v, M] = l.useState(null == b || null == U), x = (0, c.Z)(U), P = l.useRef(null), {
     analyticsLocations: j
   } = (0, A.ZP)(_.Z.GUILD_MEMBER_MOD_VIEW), y = (0, T.ZP)(t, n), w = (0, d.ZP)();
   return (l.useEffect(() => {

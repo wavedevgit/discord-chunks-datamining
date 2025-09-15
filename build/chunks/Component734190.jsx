@@ -1,7 +1,7 @@
 /** Chunk was on 11160 **/
 /** chunk id: 734190, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => L
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,13 +12,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk493683 = require("./493683.js"),
   Chunk239091 = require("./239091.js"),
+  Chunk99690 = require("./99690.jsx"),
+  Chunk471445 = require("./471445.js"),
   Chunk111028 = require("./111028.jsx"),
   Chunk569471 = require("./569471.js"),
   Chunk488131 = require("./488131.js"),
   Chunk592125 = require("./592125.js"),
   Chunk306680 = require("./306680.js"),
+  Chunk594174 = require("./594174.js"),
   Chunk979651 = require("./979651.js"),
   Chunk938475 = require("./938475.js"),
+  Chunk990734 = require("./990734.js"),
   Chunk714794 = require("./714794.js"),
   Chunk876548 = require("./876548.jsx"),
   Chunk25601 = require("./25601.jsx"),
@@ -30,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk509612 = require("./509612.js"),
   Chunk113914 = require("./113914.js");
 
-function N(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,7 +53,7 @@ function N(e) {
   return e
 }
 
-function Z(e, t) {
+function R(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,16 +66,16 @@ function Z(e, t) {
   }), e
 }
 
-function w(e) {
+function D(e) {
   let {
     style: t,
     withGuildIcon: n,
     inverted: i
   } = e, l = {
-    className: o()(I.spine, {
-      [I.spineWithGuildIcon]: n
+    className: o()(T.spine, {
+      [T.spineWithGuildIcon]: n
     }, {
-      [I.invertedSpine]: i
+      [T.invertedSpine]: i
     }),
     style: t
   }, {
@@ -79,7 +83,7 @@ function w(e) {
   } = (0, c.TCT)();
   switch (a) {
     case "cozy":
-      return (0, r.jsxs)("svg", Z(N({}, l), {
+      return (0, r.jsxs)("svg", R(A({}, l), {
         width: "10",
         height: "20",
         viewBox: "0 0 10 20",
@@ -94,7 +98,7 @@ function w(e) {
         })]
       }));
     case "compact":
-      return (0, r.jsxs)("svg", Z(N({}, l), {
+      return (0, r.jsxs)("svg", R(A({}, l), {
         width: "10",
         height: "19",
         viewBox: "0 0 10 19",
@@ -109,7 +113,7 @@ function w(e) {
         })]
       }));
     default:
-      return (0, r.jsxs)("svg", Z(N({}, l), {
+      return (0, r.jsxs)("svg", R(A({}, l), {
         width: "10",
         height: "19",
         viewBox: "0 0 10 19",
@@ -125,38 +129,62 @@ function w(e) {
       }))
   }
 }
-let T = Chunk647438.memo(function(e) {
+
+function M(e) {
+  let {
+    thread: t
+  } = e, n = i.useMemo(() => {
+    var e;
+    return null != (e = (0, f.KS)(t)) ? e : c.or_
+  }, [t]), l = (0, f.bT)(t);
+  return (0, r.jsx)(c.ua7, {
+    text: l,
+    delay: 500,
+    children: e => (0, r.jsx)("div", R(A({}, e), {
+      role: "img",
+      "aria-label": "".concat(l, " icon"),
+      className: w.iconContainer,
+      children: (0, r.jsx)(n, {
+        className: w.icon,
+        color: "currentColor"
+      })
+    }))
+  })
+}
+let L = Chunk647438.memo(function(e) {
   let {
     thread: t,
     isSelectedChannel: l,
-    isSelectedVoice: I,
+    isSelectedVoice: f,
     isLast: T,
-    withGuildIcon: A
-  } = e, R = (0, s.e7)([O.ZP], () => O.ZP.getVoiceStatesForChannel(t), [t]), D = (0, s.e7)([b.Z], () => b.Z.hasVideo(t.id)), {
-    unread: M,
-    mentionCount: L,
-    isMentionLowImportance: k
-  } = (0, s.cj)([m.ZP], () => ({
-    unread: m.ZP.hasUnread(t.id),
-    mentionCount: m.ZP.getMentionCount(t.id),
-    isMentionLowImportance: m.ZP.getIsMentionLowImportance(t.id)
-  })), U = (0, s.e7)([f.Z], () => f.Z.isMuted(t.id)), G = i.useCallback(e => {
-    (0, h.ok)(t, !e.shiftKey, C.on.CHANNEL_LIST)
-  }, [t]), B = i.useCallback(() => {
+    withGuildIcon: L
+  } = e, k = (0, s.e7)([v.ZP], () => v.ZP.getVoiceStatesForChannel(t), [t]), U = (0, s.e7)([_.Z], () => _.Z.hasVideo(t.id)), {
+    unread: G,
+    mentionCount: B,
+    isMentionLowImportance: V
+  } = (0, s.cj)([O.ZP], () => ({
+    unread: O.ZP.hasUnread(t.id),
+    mentionCount: O.ZP.getMentionCount(t.id),
+    isMentionLowImportance: O.ZP.getIsMentionLowImportance(t.id)
+  })), F = (0, s.e7)([g.Z], () => g.Z.isMuted(t.id)), H = (0, j.p)({
+    location: "GuildSidebarThreadListEntry"
+  }), z = (0, s.e7)([y.default], () => y.default.getUser(t.ownerId)), W = i.useCallback(e => {
+    (0, m.ok)(t, !e.shiftKey, I.on.CHANNEL_LIST)
+  }, [t]), K = i.useCallback(() => {
     u.Z.preload(t.guild_id, t.id)
-  }, [t.guild_id, t.id]), V = i.useCallback(e => {
-    let i = g.Z.getChannel(t.id);
+  }, [t.guild_id, t.id]), Y = i.useCallback(e => {
+    let i = b.Z.getChannel(t.id);
     null != i && (0, d.jW)(e, async () => {
       let {
         default: e
       } = await n.e("40157").then(n.bind(n, 422200));
-      return t => (0, r.jsx)(e, Z(N({}, t), {
+      return t => (0, r.jsx)(e, R(A({}, t), {
         channel: i
       }))
     })
-  }, [t.id]), F = null == R ? 0 : R.length, H = (0, a.JA)(t.id), {
-    role: z
-  } = H, W = function(e, t) {
+  }, [t.id]), q = null == k ? 0 : k.length, X = (0, a.JA)(t.id), {
+    role: Q
+  } = X, J = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -170,80 +198,92 @@ let T = Chunk647438.memo(function(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(H, ["role"]), K = i.useRef(null), Y = L > 0 ? E.intl.formatToPlainString(E.t["ZL7+Iy"], {
+  }(X, ["role"]), $ = i.useRef(null), ee = B > 0 ? N.intl.formatToPlainString(N.t["ZL7+Iy"], {
     channelName: t.name,
-    mentionCount: L
-  }) : M ? E.intl.formatToPlainString(E.t.YlVvmZ, {
+    mentionCount: B
+  }) : G ? N.intl.formatToPlainString(N.t.YlVvmZ, {
     channelName: t.name
-  }) : E.intl.formatToPlainString(E.t["0nZpiI"], {
+  }) : N.intl.formatToPlainString(N.t["0nZpiI"], {
     channelName: t.name
   });
   return (0, r.jsxs)("li", {
-    role: z,
-    className: o()(S.containerDefault, {
-      [S.selected]: l
+    role: Q,
+    className: o()(Z.containerDefault, {
+      [Z.selected]: l
     }),
-    children: [(0, r.jsx)(w, {
-      withGuildIcon: A
-    }), T ? null : (0, r.jsx)(w, {
-      withGuildIcon: A,
+    children: [(0, r.jsx)(D, {
+      withGuildIcon: L
+    }), T ? null : (0, r.jsx)(D, {
+      withGuildIcon: L,
       inverted: true,
       style: {
         transform: "rotateX(180deg) translateY(-9px)"
       }
     }), (0, r.jsx)(c.tEY, {
-      focusTarget: K,
-      ringTarget: K,
+      focusTarget: $,
+      ringTarget: $,
       offset: {
         top: 2,
         bottom: 2,
         right: 4
       },
       children: (0, r.jsxs)("div", {
-        className: o()(S.iconVisibility, P.wrapper, P.typeThread, {
-          [P.modeSelected]: l,
-          [P.modeMuted]: !l && U,
-          [P.modeUnreadImportant]: !U && !l && M,
-          [P.withGuildIcon]: A
+        className: o()(Z.iconVisibility, w.wrapper, w.typeThread, {
+          [w.modeSelected]: l,
+          [w.modeMuted]: !l && F,
+          [w.modeUnreadImportant]: !F && !l && G,
+          [w.withGuildIcon]: L,
+          [w.threadsInChannelListQoLExperiment]: H.enabled,
+          [w.withThreadIconInBubble]: "icon-in-bubble" === H.variant
         }),
-        onMouseDown: B,
-        onContextMenu: V,
-        children: [!M || U || l ? null : (0, r.jsx)("div", {
-          className: o()(P.unread, P.unreadImportant)
-        }), (0, r.jsx)(c.P3F, Z(N({}, W), {
-          innerRef: K,
-          className: P.link,
-          onClick: G,
-          "aria-label": Y,
+        onMouseDown: K,
+        onContextMenu: Y,
+        children: [!G || F || l ? null : (0, r.jsx)("div", {
+          className: o()(w.unread, w.unreadImportant)
+        }), (0, r.jsx)(c.P3F, R(A({}, J), {
+          innerRef: $,
+          className: w.link,
+          onClick: W,
+          "aria-label": ee,
           focusProps: {
             enabled: false
           },
           children: (0, r.jsxs)("div", {
-            className: o()(P.linkTop, P.__invalid_threadMainContent),
-            children: [(0, r.jsx)(p.Z, {
-              className: P.name,
+            className: o()(w.linkTop, w.__invalid_threadMainContent),
+            children: ["icon-with-avatar" === H.variant ? (0, r.jsxs)("div", {
+              className: w.threadIconWithAvatar,
+              children: [(0, r.jsx)(M, {
+                thread: t
+              }), null == z ? null : (0, r.jsx)(p.Z, {
+                user: z,
+                size: c.EFr.SIZE_16
+              })]
+            }) : null, "icon-in-bubble" === H.variant ? (0, r.jsx)(M, {
+              thread: t
+            }) : null, (0, r.jsx)(h.Z, {
+              className: w.name,
               "aria-hidden": true,
               children: t.name
             }), (0, r.jsxs)("div", {
-              className: P.children,
-              children: [F > 0 && t.userLimit > 0 ? (0, r.jsx)(_.Z, {
-                userCount: F,
-                video: D,
+              className: w.children,
+              children: [q > 0 && t.userLimit > 0 ? (0, r.jsx)(C.Z, {
+                userCount: q,
+                video: U,
                 channel: t
-              }) : null, (0, y.Z)(L) ? (0, r.jsx)(v.Z, {
-                mentionsCount: L,
-                isMentionLowImportance: k
+              }) : null, (0, x.Z)(B) ? (0, r.jsx)(E.Z, {
+                mentionsCount: B,
+                isMentionLowImportance: V
               }) : null]
             })]
           })
         }))]
       })
-    }), (0, r.jsx)(j.Z, {
+    }), (0, r.jsx)(S.Z, {
       channel: t,
-      collapsed: !I,
+      collapsed: !f,
       collapsedMax: 6,
-      voiceStates: R,
-      location: x.Sbl.GUILD_CHANNEL_LIST
+      voiceStates: k,
+      location: P.Sbl.GUILD_CHANNEL_LIST
     })]
   })
 })

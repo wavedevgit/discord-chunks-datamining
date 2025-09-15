@@ -146,7 +146,7 @@ let B = Chunk647438.forwardRef(function(e, t) {
       size: 16,
       guildId: p
     }),
-    M = (0, _.e7)([f.Z], () => f.Z.roleStyle),
+    M = (0, _.e7)([h.Z], () => h.Z.roleStyle),
     x = (0, C._f)(p, g, g.colorStrings),
     P = (null == (i = g.tags) ? true : i.guild_connections) === null,
     j = l.useCallback(e => {
@@ -165,7 +165,7 @@ let B = Chunk647438.forwardRef(function(e, t) {
     B = null != (o = (0, E.wK)(z, .6)) ? o : true,
     V = A.Z.unsafe_rawColors.WHITE_500.css,
     H = (0, E._i)(z);
-  null != H && .3 > (0, E.Bd)(H) && (V = A.Z.unsafe_rawColors.PRIMARY_630.css), u = P ? (0, r.jsx)(h.Z, {
+  null != H && .3 > (0, E.Bd)(H) && (V = A.Z.unsafe_rawColors.PRIMARY_630.css), u = P ? (0, r.jsx)(f.Z, {
     className: w.roleFlowerStar,
     iconClassName: d ? w.roleVerifiedIcon : true,
     color: z,
@@ -271,7 +271,7 @@ function H(e) {
       addButtonIconClassName: d
     } = e,
     E = (0, c.JA)("overflow-add-roles-".concat(i.id)),
-    A = (0, _.e7)([f.Z], () => f.Z.roleStyle),
+    A = (0, _.e7)([h.Z], () => h.Z.roleStyle),
     T = v.Z.getHighestRole(n),
     I = b.ZP.getMember(n.id, i.id),
     g = e => !(0, L.fI)(e) && !e.managed && v.Z.isRoleHigher(n, T, e) && (null == I || false === I.roles.indexOf(e.id));
@@ -320,9 +320,9 @@ function K(e) {
       className: m,
       readOnly: T,
       roleClassName: g,
-      disableBorderColor: f
+      disableBorderColor: h
     } = e,
-    h = l.useRef({}),
+    f = l.useRef({}),
     N = l.useCallback(e => {
       var t;
       let r = s.filter(t => t !== e.id);
@@ -344,7 +344,7 @@ function K(e) {
       n = A - 30 - 4;
     for (let r = 0; r < L.length; r++) {
       let l = L[r],
-        i = h.current[l.id];
+        i = f.current[l.id];
       if (null != i) {
         if ((t += i.offsetWidth + 4) > n) break;
         e++
@@ -373,10 +373,10 @@ function K(e) {
         onRemove: () => N(e),
         ref: t => {
           var n;
-          return n = e.id, void(null != t ? h.current[n] = t : delete h.current[n])
+          return n = e.id, void(null != t ? f.current[n] = t : delete f.current[n])
         },
         guildId: i.id,
-        disableBorderColor: f
+        disableBorderColor: h
       }, e.id)
     });
   return null != p && 0 !== b ? t = (0, r.jsx)(V, k(G({}, e), {

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => f
-}), require("./539854.js");
+}), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -21,20 +21,42 @@ let f = Chunk647438.memo(function(e) {
   } = e, l = o.z[n], {
     isDismissed: f,
     handleToggleDismissState: p
-  } = (0, u.Z)(l), h = i.useCallback(() => {
+  } = (0, u.Z)(l), [h, m] = i.useState(false), g = i.useCallback(() => {
+    if (h) return void m(false);
     null == a || a(n), p()
-  }, [a, p, n]);
-  return (0, r.jsxs)(s.j7V, {
+  }, [a, p, n, h]);
+  return (0, r.jsx)(s.j7V, {
     value: f,
-    onChange: h,
+    onChange: g,
     className: t,
-    children: [(0, r.jsx)(s.Text, {
-      variant: "text-md/normal",
-      className: d.marginTop4,
-      children: "".concat(n.toLowerCase(), " (").concat(o.z[n], ")")
-    }), (0, c.qh)(l) && (0, r.jsx)(_, {
-      content: l
-    })]
+    children: (0, r.jsxs)("div", {
+      style: {
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between",
+        marginRight: "8px"
+      },
+      children: [(0, r.jsxs)("div", {
+        style: {
+          display: "flex",
+          flexDirection: "column"
+        },
+        children: [(0, r.jsx)(s.Text, {
+          variant: "text-md/normal",
+          className: d.marginTop4,
+          children: "".concat(n.toLowerCase(), " (").concat(o.z[n], ")")
+        }), (0, c.qh)(l) && (0, r.jsx)(_, {
+          content: l
+        })]
+      }), (0, r.jsx)(s.hU, {
+        size: "sm",
+        icon: h ? s.C2q : s.zTD,
+        onClick: e => {
+          e.stopPropagation(), m(true), navigator.clipboard.writeText(n.toLowerCase())
+        },
+        "aria-label": h ? "Copied" : "Copy"
+      })]
+    })
   })
 });
 

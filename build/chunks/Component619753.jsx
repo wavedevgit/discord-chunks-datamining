@@ -109,7 +109,7 @@ function G(e) {
     startIndex: c,
     resultRefs: d,
     totalResults: g,
-    scrollTo: f,
+    scrollTo: h,
     renderEmbeds: O,
     offset: b,
     jumpToMessage: U,
@@ -118,7 +118,7 @@ function G(e) {
   } = e, k = N.cC.useSetting(), F = (0, m.p)(), Z = l.useCallback(e => {
     if (e === D.Z.getChannelId()) return;
     let t = p.Z.getChannel(e);
-    null != t && (S.Z.can(M.Plq.VIEW_CHANNEL, t) || t.isPrivate()) && (0, h.Kh)(t.id)
+    null != t && (S.Z.can(M.Plq.VIEW_CHANNEL, t) || t.isPrivate()) && (0, f.Kh)(t.id)
   }, []), z = null != a ? (0, E.F6)(a, L.default, C.Z, false) : "???", B = G && null != a.guild_id ? null == (t = R.Z.getGuild(a.guild_id)) ? true : t.name : null, V = (null == a ? true : a.parent_id) != null ? p.Z.getChannel(a.parent_id) : null, H = null != (n = null == V ? true : V.name) ? n : null, K = null != (i = (0, _.KS)(a)) ? i : o.VL1, W = S.Z.can(M.Plq.MANAGE_MESSAGES, a), {
     content: q
   } = (0, I.ZP)({
@@ -167,7 +167,7 @@ function G(e) {
             d.current[n] = e
           },
           totalResults: g,
-          scrollTo: f,
+          scrollTo: h,
           renderEmbeds: O,
           searchOffset: b,
           pageResultsLength: s.length,
@@ -194,7 +194,7 @@ let k = Chunk647438.memo(function(e) {
     onPageChange: m,
     onClick: T,
     paginationTotalCount: I,
-    renderPageWrapper: h,
+    renderPageWrapper: f,
     onBlockedResultsClick: N,
     searchRequestAnalyticsId: O,
     searchResultsQuery: R,
@@ -210,7 +210,7 @@ let k = Chunk647438.memo(function(e) {
         n = null != t ? t.getGuildId() : null;
       u.Z.trackJump(e.channel_id, e.id, "Search Results", {
         search_id: O
-      }), (0, f.uL)(M.Z5c.CHANNEL(n, e.channel_id, e.id))
+      }), (0, h.uL)(M.Z5c.CHANNEL(n, e.channel_id, e.id))
     }
   }, [T, O]), F = l.useMemo(() => {
     let e, t = 0;
@@ -301,7 +301,7 @@ let k = Chunk647438.memo(function(e) {
         })
       })]
     }) : null, !v && !S && (0, r.jsx)(U.Z, {
-      renderPageWrapper: h,
+      renderPageWrapper: f,
       onPageChange: m,
       offset: D,
       totalCount: null != I ? I : L,

@@ -18,9 +18,9 @@ require.d(exports, {
   QM: () => em,
   V$: () => ed,
   _$: () => eN,
-  cT: () => ef,
+  cT: () => eh,
   em: () => eg,
-  hQ: () => eh,
+  hQ: () => ef,
   hx: () => W,
   lR: () => Y,
   lU: () => B,
@@ -884,7 +884,7 @@ function eg(e) {
   return null
 }
 
-function ef(e) {
+function eh(e) {
   switch (e) {
     case M.zZ.GUILD_FEED_REMOVED:
       return j.intl.string(j.t.S5kuWV);
@@ -896,7 +896,7 @@ function ef(e) {
   return null
 }
 
-function eh(e, t) {
+function ef(e, t) {
   switch (e) {
     case v.Plq.CREATE_INSTANT_INVITE:
       return j.intl.string(j.t.zJrgTE);
@@ -1029,11 +1029,11 @@ function eN(e, t) {
           case v.KFR.EMOJI:
             return eS(e, v.zUn.NAME, e => m.ZP.getGuildEmoji(t.id).find(t => t.id === e), e => e.name);
           case v.KFR.STICKER:
-            return eS(e, v.zUn.NAME, e => h.Z.getStickerById(e), e => e.name);
+            return eS(e, v.zUn.NAME, e => f.Z.getStickerById(e), e => e.name);
           case v.KFR.STAGE_INSTANCE:
             return eS(e, v.zUn.TOPIC, e => {
               var n;
-              return null == (n = Object.values(f.Z.getStageInstancesByGuild(t.id))) ? true : n.find(t => t.id === e)
+              return null == (n = Object.values(h.Z.getStageInstancesByGuild(t.id))) ? true : n.find(t => t.id === e)
             }, e => e.topic);
           case v.KFR.GUILD_SCHEDULED_EVENT:
           case v.KFR.GUILD_SCHEDULED_EVENT_EXCEPTION:

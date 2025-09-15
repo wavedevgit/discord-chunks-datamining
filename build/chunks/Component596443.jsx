@@ -35,10 +35,10 @@ function L(e) {
     permission: o,
     roleIds: T,
     guild: g,
-    specMap: h,
+    specMap: f,
     categoryTitle: N,
     userId: O
-  } = e, C = (0, u.Wu)([I.Z], () => I.Z.getManyRoles(g.id, T)), L = R.Plq[o], b = null != (i = null == (t = h[L.toString()]) ? true : t.title) ? i : (0, A.wt)(L), U = null != (s = null == (n = h[L.toString()]) ? true : n.description) ? s : "", v = p._o.has(L), M = p.Qn.includes(o), x = T.length, P = (0, u.e7)([f.Z], () => f.Z.can(R.Plq.MANAGE_ROLES, g), [g]), j = l.useCallback(async e => {
+  } = e, C = (0, u.Wu)([I.Z], () => I.Z.getManyRoles(g.id, T)), L = R.Plq[o], b = null != (i = null == (t = f[L.toString()]) ? true : t.title) ? i : (0, A.wt)(L), U = null != (s = null == (n = f[L.toString()]) ? true : n.description) ? s : "", v = p._o.has(L), M = p.Qn.includes(o), x = T.length, P = (0, u.e7)([h.Z], () => h.Z.can(R.Plq.MANAGE_ROLES, g), [g]), j = l.useCallback(async e => {
     P && (await _.Z.open(g.id, R.pNK.ROLES), await _.Z.selectRole(e))
   }, [P, g.id]);
   return (0, r.jsxs)("div", {
@@ -179,13 +179,13 @@ function U(e) {
     location: i,
     className: s,
     onNavigate: d
-  } = e, E = (0, u.e7)([h.default], () => h.default.getUser(t), [t]), _ = (0, u.e7)([g.Z], () => g.Z.getGuild(n), [n]), m = (0, u.e7)([T.ZP], () => T.ZP.getMember(n, t), [n, t]), I = (0, p.B2)(t, n, p.pd), f = Object.keys(I).length, U = l.useMemo(() => null != _ ? N.Z.getGuildPermissionSpecMap(_) : null, [_]), v = l.useMemo(() => null != _ ? N.Z.generateGuildPermissionSpec(_) : null, [_]), [M, x] = l.useState(""), [P, j] = l.useState(""), y = l.useMemo(() => o()(j, 300), []), w = l.useCallback(e => {
+  } = e, E = (0, u.e7)([f.default], () => f.default.getUser(t), [t]), _ = (0, u.e7)([g.Z], () => g.Z.getGuild(n), [n]), m = (0, u.e7)([T.ZP], () => T.ZP.getMember(n, t), [n, t]), I = (0, p.B2)(t, n, p.pd), h = Object.keys(I).length, U = l.useMemo(() => null != _ ? N.Z.getGuildPermissionSpecMap(_) : null, [_]), v = l.useMemo(() => null != _ ? N.Z.generateGuildPermissionSpec(_) : null, [_]), [M, x] = l.useState(""), [P, j] = l.useState(""), y = l.useMemo(() => o()(j, 300), []), w = l.useCallback(e => {
     x(e), y(e)
   }, [y]), G = l.useCallback(() => {
     x(""), j("")
   }, []), k = l.useMemo(() => {
     if (null == _ || null == U || null == m) return null;
-    if (0 === f) return (0, r.jsx)(c.Text, {
+    if (0 === h) return (0, r.jsx)(c.Text, {
       variant: "text-sm/normal",
       children: S.intl.string(S.t.DEBGqK)
     });
@@ -222,7 +222,7 @@ function U(e) {
         }
       })
     }), e
-  }, [_, U, m, f, v, I, P, t]);
+  }, [_, U, m, h, v, I, P, t]);
   return null == E || null == m ? null : (0, r.jsxs)("div", {
     className: a()(C.container, s),
     children: [(0, r.jsx)(O.Z, {

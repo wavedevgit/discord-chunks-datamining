@@ -37,7 +37,7 @@ function L(e) {
     guild: d
   } = e, {
     analyticsLocations: m
-  } = (0, E.ZP)(), h = T.nm(i), O = T.QM(i), D = null == (t = T.V$(p.zUn.REASON, i)) ? true : t.newValue, L = T.J5(i), b = (0, _.LJ)(i.id), U = (0, u.e7)([f.ZP], () => null != i.userId ? f.ZP.getMember(s.guildId, i.userId) : null, [s.guildId, i.userId]), v = (0, g.X7)(null == U ? true : U.guildId, null == U ? true : U.userId, null != (n = null == U ? true : U.colorStrings) ? n : null), M = l.useCallback(e => t => {
+  } = (0, E.ZP)(), f = T.nm(i), O = T.QM(i), D = null == (t = T.V$(p.zUn.REASON, i)) ? true : t.newValue, L = T.J5(i), b = (0, _.LJ)(i.id), U = (0, u.e7)([h.ZP], () => null != i.userId ? h.ZP.getMember(s.guildId, i.userId) : null, [s.guildId, i.userId]), v = (0, g.X7)(null == U ? true : U.guildId, null == U ? true : U.userId, null != (n = null == U ? true : U.colorStrings) ? n : null), M = l.useCallback(e => t => {
     t.preventDefault(), t.stopPropagation(), null != e && (0, A.RE)(e, m)
   }, [m]), x = l.useCallback(() => null == i.user ? null : (0, r.jsx)(c.ua7, {
     text: R.intl.string(R.t.mvsi9v),
@@ -71,10 +71,10 @@ function L(e) {
       className: S.auditLogItemTitleContainer,
       children: [(0, r.jsxs)("div", {
         className: S.auditLogItemTitle,
-        children: [null != h && (0, r.jsx)(c.Text, {
+        children: [null != f && (0, r.jsx)(c.Text, {
           variant: "text-sm/semibold",
           color: "header-primary",
-          children: h
+          children: f
         }), null != O && (0, r.jsxs)(c.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
@@ -133,7 +133,7 @@ function L(e) {
 function b(e) {
   let {
     member: t
-  } = e, n = (0, u.e7)([h.Z], () => h.Z.getGuild(t.guildId), [t.guildId]), i = (0, u.e7)([m.Z], () => {
+  } = e, n = (0, u.e7)([f.Z], () => f.Z.getGuild(t.guildId), [t.guildId]), i = (0, u.e7)([m.Z], () => {
     let e = m.Z.logs;
     return null == e || null == n ? [] : T._$(e, n)
   }, [n]);

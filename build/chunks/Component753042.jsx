@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
 function g(e) {
   let {
     member: t
-  } = e, n = (0, i.e7)([d.Z], () => d.Z.getGuild(t.guildId), [t.guildId]), g = (0, u.mh)(t.userId, t.guildId), f = (0, u.mV)(t.userId, t.guildId), h = (0, u.LD)(t.userId), N = (0, u.wi)(t.userId, t.guildId);
+  } = e, n = (0, i.e7)([d.Z], () => d.Z.getGuild(t.guildId), [t.guildId]), g = (0, u.mh)(t.userId, t.guildId), h = (0, u.mV)(t.userId, t.guildId), f = (0, u.LD)(t.userId), N = (0, u.wi)(t.userId, t.guildId);
   return (l.useEffect(() => {
     (0, o.zO)(t.guildId)
   }, [t.guildId]), null == n) ? null : (0, r.jsx)(a.xJW, {
@@ -51,7 +51,7 @@ function g(e) {
           height: A.Mn,
           color: a.TVs.colors.STATUS_DANGER
         })
-      }), f !== u.qc.NO_GATE && (0, r.jsx)(A._2, {
+      }), h !== u.qc.NO_GATE && (0, r.jsx)(A._2, {
         icon: (0, r.jsx)(a.snC, {
           size: "custom",
           width: A.Mn,
@@ -62,7 +62,7 @@ function g(e) {
           color: "text-default",
           children: T.intl.string(T.t["93hqlp"])
         }),
-        description: f === u.qc.AGREED ? (0, r.jsx)(a.sV5, {
+        description: h === u.qc.AGREED ? (0, r.jsx)(a.sV5, {
           size: "custom",
           width: A.Mn,
           height: A.Mn,
@@ -88,7 +88,7 @@ function g(e) {
         description: (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: h
+          children: f
         })
       }), (0, r.jsx)(A._2, {
         icon: (0, r.jsx)(s.Vj, {

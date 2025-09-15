@@ -20,7 +20,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk716754 = require("./716754.js");
 
-function f(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function f(e) {
   return e
 }
 
-function h(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -107,7 +107,7 @@ function O(e) {
         let {
           default: e
         } = await n.e("29646").then(n.bind(n, 955116));
-        return n => (0, l.jsx)(e, h(f({}, n), {
+        return n => (0, l.jsx)(e, f(h({}, n), {
           tag: t
         }))
       })
@@ -115,7 +115,7 @@ function O(e) {
     onMouseEnter: () => b && v(true),
     onMouseLeave: () => b && v(false)
   }, F = (0, o.JA)("forum-tag-".concat(t.id));
-  return x ? (0, l.jsx)(c.P3F, h(f(h(f({}, F), {
+  return x ? (0, l.jsx)(c.P3F, f(h(f(h({}, F), {
     innerRef: y,
     focusProps: {
       ringTarget: y
@@ -127,7 +127,7 @@ function O(e) {
     "aria-pressed": R
   }), k), {
     children: G
-  })) : (0, l.jsx)("div", h(f({}, k), {
+  })) : (0, l.jsx)("div", f(h({}, k), {
     children: G
   }))
 }
@@ -147,7 +147,7 @@ function p(e) {
         size: O.Sizes.SMALL
       }, e.id))
     }),
-    children: e => (0, l.jsx)("div", h(f({}, e), {
+    children: e => (0, l.jsx)("div", f(h({}, e), {
       className: s()(g.pill, {
         [g.small]: i
       }),

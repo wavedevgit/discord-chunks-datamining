@@ -168,14 +168,14 @@ function j(e) {
     user: t,
     member: l,
     guildId: i
-  } = e, m = (0, a.e7)([f.Z], () => f.Z.getGuild(i)), {
+  } = e, m = (0, a.e7)([h.Z], () => h.Z.getGuild(i)), {
     canKickUser: g,
     canBanUser: N,
     canModerateMembers: p
-  } = (0, a.cj)([h.Z, R.default, f.Z], () => ({
+  } = (0, a.cj)([f.Z, R.default, h.Z], () => ({
     canKickUser: (0, _.BK)(t, m),
     canBanUser: (0, _.mm)(t, m),
-    canModerateMembers: null != m && (0, E.F)(m.id, t.id, [R.default, f.Z, h.Z])
+    canModerateMembers: null != m && (0, E.F)(m.id, t.id, [R.default, h.Z, f.Z])
   }), [t, m]), C = (0, c.b)(l), {
     analyticsLocations: D,
     newestAnalyticsLocation: L

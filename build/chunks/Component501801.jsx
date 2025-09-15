@@ -116,10 +116,10 @@ function M(e) {
           if ((t.action === R.rsA.CHANNEL_UPDATE || t.action === R.rsA.CHANNEL_CREATE) && i.key === R.zUn.TYPE) {
             var e, n;
             return {
-              oldValue: null != (e = i.oldValue) ? e : (0, f.a5)({
+              oldValue: null != (e = i.oldValue) ? e : (0, h.a5)({
                 type: i.oldValue
               }),
-              newValue: null != (n = i.newValue) ? n : (0, f.a5)({
+              newValue: null != (n = i.newValue) ? n : (0, h.a5)({
                 type: i.newValue
               })
             }
@@ -192,7 +192,7 @@ function M(e) {
                   channel_ids: l,
                   title: i,
                   id: o
-                } = e, u = (null != n ? n : []).map(a).filter(h.lm), c = (null != l ? l : []).map(s).filter(h.lm);
+                } = e, u = (null != n ? n : []).map(a).filter(f.lm), c = (null != l ? l : []).map(s).filter(f.lm);
                 return (0, r.jsxs)("li", {
                   children: [(0, r.jsxs)("div", {
                     className: C.onboardingChangeLogItemTitle,
@@ -239,7 +239,7 @@ function M(e) {
                 let {
                   title: l,
                   id: i
-                } = n, u = e.role_ids.map(a).filter(h.lm), c = e.channel_ids.map(s).filter(h.lm), d = n.role_ids.map(a).filter(h.lm), _ = n.channel_ids.map(s).filter(h.lm), A = o().difference(d, u), m = o().difference(u, d), T = o().difference(_, c), I = o().difference(c, _), g = [];
+                } = n, u = e.role_ids.map(a).filter(f.lm), c = e.channel_ids.map(s).filter(f.lm), d = n.role_ids.map(a).filter(f.lm), _ = n.channel_ids.map(s).filter(f.lm), A = o().difference(d, u), m = o().difference(u, d), T = o().difference(_, c), I = o().difference(c, _), g = [];
                 return (o().isEqual(e.title, n.title) || g.push("title"), o().isEqual(e.description, n.description) || g.push("description"), 0 === A.length && 0 === m.length && 0 === T.length && 0 === I.length && 0 === g.length) ? null : (0, r.jsxs)("li", {
                   children: [(0, r.jsxs)("div", {
                     className: C.onboardingChangeLogItemTitle,
@@ -442,7 +442,7 @@ function M(e) {
                 tertiary_color: a
               } = c;
               return (0, r.jsx)("span", {
-                children: [n, i, a].filter(h.lm).map((e, n) => (0, r.jsxs)(l.Fragment, {
+                children: [n, i, a].filter(f.lm).map((e, n) => (0, r.jsxs)(l.Fragment, {
                   children: [(0, r.jsx)("span", {
                     className: C.colorsHook,
                     children: "".concat(n > 0 ? ", " : "").concat((0, d.Rf)(e).toUpperCase(), " ")
@@ -514,7 +514,7 @@ function M(e) {
           newValue: s,
           change: i
         })
-      })).filter(h.lm);
+      })).filter(f.lm);
     return (0, r.jsx)(E.P3F, {
       onClick: i,
       className: a()(C.changeDetails, s),

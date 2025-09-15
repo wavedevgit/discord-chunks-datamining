@@ -1,7 +1,7 @@
 /** Chunk was on 10576 **/
 /** chunk id: 718617, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -29,27 +29,27 @@ function g(e, t) {
   }
 }
 
-function f(e) {
+function h(e) {
   var t;
   let {
     userId: n,
-    guildId: f,
-    onClose: h,
+    guildId: h,
+    onClose: f,
     analyticsLocation: N,
     className: O
-  } = e, p = (0, a.e7)([d.ZP], () => d.ZP.getGuildSidebarState(f), [f]), R = null != (t = null == p ? true : p.details.modViewPanel) ? t : T.k.INFO, S = (0, o.Z)(n), C = null == R ? null : R === T.k.INFO ? "backwards" : "forwards", D = (0, c.Z)(C), {
+  } = e, p = (0, a.e7)([d.ZP], () => d.ZP.getGuildSidebarState(h), [h]), R = null != (t = null == p ? true : p.details.modViewPanel) ? t : T.k.INFO, S = (0, o.Z)(n), C = null == R ? null : R === T.k.INFO ? "backwards" : "forwards", D = (0, c.Z)(C), {
     reducedMotion: L
   } = l.useContext(s.Sfi), b = l.useCallback(e => {
-    null != p && (0, E.r)(f, n, p.baseChannelId, {
+    null != p && (0, E.r)(h, n, p.baseChannelId, {
       modViewPanel: e
     })
-  }, [p, f, n]), U = l.useMemo(() => ({
+  }, [p, h, n]), U = l.useMemo(() => ({
     [I.EkH.CLOSE_MODAL]: {
       binds: ["esc"],
       comboKeysBindGlobal: true,
-      action: () => R === T.k.INFO ? h() : b(T.k.INFO)
+      action: () => R === T.k.INFO ? f() : b(T.k.INFO)
     }
-  }), [h, R, b]);
+  }), [f, R, b]);
   l.useEffect(() => (u.Z.enable(), u.Z.enableTemp(U), () => u.Z.disableTemp()), [U]);
   let v = (0, s.Yzy)(R, {
     value: 0,
@@ -111,21 +111,21 @@ function f(e) {
             case T.k.INFO:
               return (0, r.jsx)(_.Z, {
                 userId: n,
-                guildId: f,
+                guildId: h,
                 onNavigate: b,
                 className: O
               });
             case T.k.MESSAGE_HISTORY:
               return (0, r.jsx)(A.Z, {
                 userId: n,
-                guildId: f,
+                guildId: h,
                 onNavigate: () => b(T.k.INFO),
                 className: O
               });
             case T.k.PERMISSIONS:
               return (0, r.jsx)(m.Z, {
                 userId: n,
-                guildId: f,
+                guildId: h,
                 onNavigate: () => b(T.k.INFO),
                 className: O
               });
