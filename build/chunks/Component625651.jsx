@@ -1,13 +1,14 @@
-/** Chunk was on 31924 **/
-/** chunk id: 625651, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 88856 **/
+/** chunk id: 625651, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => N,
-  f: () => I
+  default: () => T,
+  f: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk494497 = require("./494497.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk14263 = require("./14263.js"),
   Chunk650774 = require("./650774.js"),
@@ -23,216 +24,187 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk514186 = require("./514186.js");
 
-function k(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = n
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function O(e, t) {
+function I(e, t) {
   if (null == e) return {};
-  var r, n, a = function(e, t) {
+  var n, r, o = function(e, t) {
     if (null == e) return {};
-    var r, n, a = {},
-      o = Object.keys(e);
-    for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (a[r] = e[r]);
-    return a
+    var n, r, o = {},
+      a = Object.keys(e);
+    for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
+    return o
   }(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
   }
-  return a
+  return o
 }
 
-function I(e) {
-  var t, r, {
-      size: a,
-      title: o,
+function _(e) {
+  var t, n, {
+      size: o,
+      title: a,
       body: i,
       warningText: l,
-      error: c,
-      isLoading: u,
-      onDeactivate: d
+      error: u,
+      isLoading: d,
+      onDeactivate: f
     } = e,
-    m = O(e, ["size", "title", "body", "warningText", "error", "isLoading", "onDeactivate"]);
-  return (0, n.jsxs)(s.Y0X, (t = k({
-    className: h.modal,
-    size: a
-  }, m), r = r = {
-    parentComponent: "GuildPowerupDeactivateModal",
-    children: [(0, n.jsxs)(s.hzk, {
-      className: h.modalContentContainer,
-      scrollbarType: "none",
-      children: [(0, n.jsxs)("div", {
-        className: h.headerContainer,
-        children: [(0, n.jsxs)("div", {
-          className: h.header,
-          children: [(0, n.jsx)(s.X6q, {
-            variant: "heading-md/semibold",
-            children: j.intl.formatToPlainString(v.default.iEBw1N, {
-              perk: o
-            })
-          }), (0, n.jsx)(s.Text, {
-            variant: "text-sm/medium",
-            children: j.intl.formatToPlainString(v.default["7o0K+/"], {
-              perk: o
-            })
-          })]
-        }), (0, n.jsx)(s.olH, {
-          onClick: m.onClose
-        })]
-      }), i, (0, n.jsxs)("div", {
-        className: h.warningContainer,
-        children: [(0, n.jsx)(s.Text, {
-          color: "text-danger",
-          variant: "eyebrow",
-          children: j.intl.string(v.default.OVt5CA)
-        }), (0, n.jsx)(s.Text, {
-          className: h.warningText,
-          tag: "span",
-          variant: "text-sm/medium",
-          children: l
-        })]
-      }), null != c && (0, n.jsx)(s.Text, {
-        className: h.errorText,
+    m = I(e, ["size", "title", "body", "warningText", "error", "isLoading", "onDeactivate"]);
+  return (0, r.jsxs)(c.Modal, (t = y({}, m), n = n = {
+    size: o,
+    title: k.intl.formatToPlainString(v.default.iEBw1N, {
+      perk: a
+    }),
+    subtitle: k.intl.formatToPlainString(v.default["7o0K+/"], {
+      perk: a
+    }),
+    actions: [{
+      variant: "secondary",
+      text: k.intl.string(k.t["ETE/oK"]),
+      onClick: m.onClose
+    }, {
+      variant: "critical-primary",
+      text: k.intl.string(v.default.PYPdl5),
+      loading: d,
+      onClick: f
+    }],
+    children: [i, (0, r.jsxs)("div", {
+      className: j.warningContainer,
+      children: [(0, r.jsx)(s.Text, {
         color: "text-danger",
-        variant: "text-sm/semibold",
-        children: c
+        variant: "eyebrow",
+        children: k.intl.string(v.default.OVt5CA)
+      }), (0, r.jsx)(s.Text, {
+        className: j.warningText,
+        tag: "span",
+        variant: "text-sm/medium",
+        children: l
       })]
-    }), (0, n.jsxs)(s.mzw, {
-      className: h.footer,
-      children: [(0, n.jsx)("div", {
-        "data-button-hoisted-classname-wrapper": true,
-        className: h.button,
-        children: (0, n.jsx)(s.zxk, {
-          variant: "critical-primary",
-          text: j.intl.string(v.default.PYPdl5),
-          loading: u,
-          onClick: d
-        })
-      }), (0, n.jsx)("div", {
-        "data-button-hoisted-classname-wrapper": true,
-        className: h.button,
-        children: (0, n.jsx)(s.zxk, {
-          variant: "secondary",
-          text: j.intl.string(j.t["ETE/oK"]),
-          onClick: m.onClose
-        })
-      })]
+    }), null != u && (0, r.jsx)(s.Text, {
+      className: j.errorText,
+      color: "text-danger",
+      variant: "text-sm/semibold",
+      children: u
     })]
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-    var r = Object.keys(e);
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      r.push.apply(r, n)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
-    return r
-  })(Object(r)).forEach(function(e) {
-    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+    return n
+  })(Object(n)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
   }), t))
 }
 
-function N(e) {
+function T(e) {
   var {
     guildId: t,
-    powerup: r
-  } = e, N = O(e, ["guildId", "powerup"]);
+    powerup: n
+  } = e, c = I(e, ["guildId", "powerup"]);
   let {
     onDeactivate: T,
-    error: y,
-    isLoading: E
-  } = (0, g.ZP)(t, r), {
+    error: h,
+    isLoading: w
+  } = (0, O.ZP)(t, n), {
     onClose: S
-  } = N, w = a.useCallback(e => {
+  } = c, E = o.useCallback(e => {
     T(e).then(() => {
       null == S || S()
     })
   }, [S, T]), P = function(e, t) {
-    let r = (0, i.e7)([c.Z], () => c.Z.getMemberCount(e)),
-      m = (0, l.Z)(e),
-      p = (0, i.e7)([d.Z], () => {
+    let n = (0, i.e7)([u.Z], () => u.Z.getMemberCount(e)),
+      c = (0, l.Z)(e),
+      m = (0, i.e7)([f.Z], () => {
         var t;
-        return (null == (t = d.Z.getGuild(e)) ? true : t.vanityURLCode) != null
+        return (null == (t = f.Z.getGuild(e)) ? true : t.vanityURLCode) != null
       }),
-      x = (0, f.g1)(e, "Powerup Deactivate Modal"),
-      g = (0, i.e7)([u.Z], () => t.skuId !== o.If || null == m ? 0 : u.Z.getSortedRoles(e).reduce((e, t) => {
-        var r, n;
-        return (null == (r = t.colorStrings) ? true : r.secondaryColor) == null ? e : e + (null != (n = m[t.id]) ? n : 0)
-      }, 0), [e, t.skuId, m]);
-    return a.useMemo(() => {
+      p = (0, b.g1)(e, "Powerup Deactivate Modal"),
+      g = (0, i.e7)([d.Z], () => t.skuId !== a.If || null == c ? 0 : d.Z.getSortedRoles(e).reduce((e, t) => {
+        var n, r;
+        return (null == (n = t.colorStrings) ? true : n.secondaryColor) == null ? e : e + (null != (r = c[t.id]) ? r : 0)
+      }, 0), [e, t.skuId, c]);
+    return o.useMemo(() => {
       let e;
       switch (t.skuId) {
-        case o.If:
-          e = g > 0 ? j.intl.formatToPlainString(v.default["4jSvr6"], {
+        case a.If:
+          e = g > 0 ? k.intl.formatToPlainString(v.default["4jSvr6"], {
             perk: t.title,
             memberCount: g
-          }) : j.intl.formatToPlainString(v.default.cavtEh, {
+          }) : k.intl.formatToPlainString(v.default.cavtEh, {
             perk: t.title
           });
           break;
-        case o.A$:
-          e = p ? (0, n.jsx)(s.Text, {
+        case a.A$:
+          e = m ? (0, r.jsx)(s.Text, {
             color: "text-danger",
             variant: "text-sm/semibold",
-            children: j.intl.string(v.default.hN75yc)
-          }) : (0, n.jsx)(s.Text, {
+            children: k.intl.string(v.default.hN75yc)
+          }) : (0, r.jsx)(s.Text, {
             color: "text-danger",
             variant: "text-sm/semibold",
-            children: j.intl.string(v.default.Du91RU)
+            children: k.intl.string(v.default.Du91RU)
           });
           break;
-        case o.MB:
-        case o.Vk:
-          e = j.intl.string(v.default.Vf2ZcX);
+        case a.MB:
+        case a.Vk:
+          e = k.intl.string(v.default.Vf2ZcX);
           break;
         default:
-          e = j.intl.formatToPlainString(v.default["4jSvr6"], {
+          e = k.intl.formatToPlainString(v.default["4jSvr6"], {
             perk: t.title,
-            memberCount: r
+            memberCount: n
           })
       }
-      return p && t.skuId === o.XW && (e = (0, n.jsxs)(n.Fragment, {
-        children: [e, (0, n.jsx)(s.Text, {
+      return m && t.skuId === a.XW && (e = (0, r.jsxs)(r.Fragment, {
+        children: [e, (0, r.jsx)(s.Text, {
           color: "text-danger",
           variant: "text-sm/semibold",
-          children: x ? j.intl.string(v.default.TkNA7e) : j.intl.string(v.default.M4XL5u)
+          children: p ? k.intl.string(v.default.TkNA7e) : k.intl.string(v.default.M4XL5u)
         })]
       })), e
-    }, [t, g, r, p, x])
-  }(t, r);
-  return (0, m.$)(t, r, m.w.DEACTIVATE), (0, n.jsx)(I, k({
-    size: r.type === b.Us.LEVEL ? s.CgR.MEDIUM : s.CgR.SMALL,
-    title: r.title,
+    }, [t, g, n, m, p])
+  }(t, n);
+  return (0, m.$)(t, n, m.w.DEACTIVATE), (0, r.jsx)(_, y({
+    size: n.type === x.Us.LEVEL ? "md" : "sm",
+    title: n.title,
     body: (() => {
-      switch (r.type) {
-        case b.Us.LEVEL:
-          return (0, n.jsx)(x.Z, {
-            powerup: r
+      switch (n.type) {
+        case x.Us.LEVEL:
+          return (0, r.jsx)(g.Z, {
+            powerup: n
           });
-        case b.Us.PERK:
-          return (0, n.jsx)(p.m, {
-            className: h.image,
-            powerup: r
+        case x.Us.PERK:
+          return (0, r.jsx)(p.m, {
+            className: j.image,
+            powerup: n
           })
       }
     })(),
     warningText: P,
-    error: y,
-    isLoading: E,
-    onDeactivate: w
-  }, N))
+    error: h,
+    isLoading: w,
+    onDeactivate: E
+  }, c))
 }

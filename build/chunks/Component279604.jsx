@@ -167,7 +167,7 @@ function x(e, t) {
       i.stopPropagation(), (0, o.ZDy)(async () => {
         let {
           default: i
-        } = await Promise.all([n.e("31924"), n.e("80648")]).then(n.bind(n, 625651));
+        } = await n.e("31924").then(n.bind(n, 625651));
         return n => (0, r.jsx)(i, b({
           guildId: e,
           powerup: t

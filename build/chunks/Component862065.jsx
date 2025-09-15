@@ -1,63 +1,62 @@
-/** Chunk was on 99285 **/
-/** chunk id: 862065, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 88856 **/
+/** chunk id: 862065, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => u
+  default: () => s
 });
 var Chunk951288 = require("./951288.js"),
-  Chunk481060 = require("./481060.js"),
   Chunk625651 = require("./625651.jsx"),
   Chunk401561 = require("./401561.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk775488 = require("./775488.js");
 
-function u(e) {
+function s(e) {
   var {
-    gameInstance: n
-  } = e, t = function(e, n) {
+    gameInstance: t
+  } = e, n = function(e, t) {
     if (null == e) return {};
-    var t, r, o = function(e, n) {
+    var n, r, o = function(e, t) {
       if (null == e) return {};
-      var t, r, o = {},
+      var n, r, o = {},
         a = Object.keys(e);
-      for (r = 0; r < a.length; r++) t = a[r], n.indexOf(t) >= 0 || (o[t] = e[t]);
+      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
       return o
-    }(e, n);
+    }(e, t);
     if (Object.getOwnPropertySymbols) {
       var a = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < a.length; r++) t = a[r], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (o[t] = e[t])
+      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
     }
     return o
   }(e, ["gameInstance"]);
-  return (0, r.jsx)(a.f, function(e) {
-    for (var n = 1; n < arguments.length; n++) {
-      var t = null != arguments[n] ? arguments[n] : {},
-        r = Object.keys(t);
-      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(t, e).enumerable
-      }))), r.forEach(function(n) {
+  return (0, r.jsx)(o.f, function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var n = null != arguments[t] ? arguments[t] : {},
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), r.forEach(function(t) {
         var r;
-        r = t[n], n in e ? Object.defineProperty(e, n, {
+        r = n[t], t in e ? Object.defineProperty(e, t, {
           value: r,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[n] = r
+        }) : e[t] = r
       })
     }
     return e
   }({
-    size: o.CgR.SMALL,
-    title: n.name,
+    size: "sm",
+    title: t.name,
     body: (0, r.jsx)("div", {
-      className: b.imageContainer,
+      className: c.imageContainer,
       children: (0, r.jsx)("img", {
         alt: "",
         src: "",
-        className: b.image
+        className: c.image
       })
     }),
-    warningText: c.intl.string(i.default.oHNuWl),
+    warningText: i.intl.string(a.default.oHNuWl),
     isLoading: false,
     onDeactivate: () => {}
-  }, t))
+  }, n))
 }
