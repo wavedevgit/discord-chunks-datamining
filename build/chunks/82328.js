@@ -1,42 +1,35 @@
 /** Chunk was on 32249 **/
 /** chunk id: 82328, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  v: () => o
+  v: () => r
 });
-let r = "1.0.0";
-class o {
+class r {
   static mapDiscordToMuxMetadata(e, t) {
-    var n, o, a, l, i, s;
-    let c = null != (l = null == (n = window.GLOBAL_ENV) ? true : n.MUX_ENV_KEY) ? l : null;
-    return null == c || 0 === c.length ? {
-      env_key: null,
+    var n, r, o, a;
+    return {
+      env_key: "1qd16mdmdjasipqg3irobln4u",
       session_id: t,
       player_name: "discord",
-      player_version: r
-    } : {
-      env_key: c,
-      session_id: t,
-      player_name: "discord",
-      player_version: r,
+      player_version: "1.0.0",
       video_id: e.contentMetadata.contentId,
       video_title: e.contentMetadata.title,
-      video_duration: null != (i = e.contentMetadata.durationMs) ? i : 1e3 * e.contentMetadata.durationSec,
+      video_duration: null != (o = e.contentMetadata.durationMs) ? o : 1e3 * e.contentMetadata.durationSec,
       video_content_type: e.contentMetadata.contentType,
       video_series: e.contentMetadata.questId,
       video_producer: e.contentMetadata.gameId,
-      video_brand: null != (s = e.contentMetadata.gameName) ? s : "Discord",
+      video_brand: null != (a = e.contentMetadata.gameName) ? a : "Discord",
       video_cdn: "Cloudflare",
       video_stream_type: e.contentMetadata.videoStreamType,
       view_client_application_name: this.getBuildChannel(),
       view_client_application_version: this.getAppVersion(),
-      viewer_user_id: null == (o = e.userContext) ? true : o.userId,
-      viewer_plan: null == (a = e.userContext) ? true : a.userTier
+      viewer_user_id: null == (n = e.userContext) ? true : n.userId,
+      viewer_plan: null == (r = e.userContext) ? true : r.userTier
     }
   }
   static getAppVersion() {
     try {
       var e;
-      return (e = "444597", true !== module) ? module : "unknown"
+      return (e = "444608", true !== module) ? module : "unknown"
     } catch (e) {
       return "unknown"
     }

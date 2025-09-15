@@ -18,15 +18,12 @@ function d() {
 }
 
 function f() {
-  let e = (0, Chunk442837.e7)([Chunk594190.ZP], () => Chunk594190.ZP.getVisibleGame());
-  return null == module ? null : (0, Chunk951288.jsxs)(Chunk481060.qXd, {
+  return null == (0, Chunk442837.e7)([Chunk594190.ZP], () => Chunk594190.ZP.getVisibleGame()) ? null : (0, Chunk951288.jsxs)(Chunk481060.qXd, {
     color: Chunk481060.DM8.DANGER,
     children: [(0, Chunk951288.jsx)(Chunk481060.RyX, {
       noticeType: Chunk981631.kVF.SYSTEM_SERVICE_WARNING,
       onClick: () => (0, Chunk256638.c)()
-    }), Chunk388032.intl.format(Chunk388032.t.kxePRk, {
-      gameName: module.name
-    }), (0, Chunk951288.jsx)(Chunk481060.NoS, {
+    }), Chunk388032.intl.string(Chunk388032.t["5rPt+v"]), (0, Chunk951288.jsx)(Chunk481060.NoS, {
       onClick: d,
       noticeType: Chunk981631.kVF.SYSTEM_SERVICE_WARNING,
       children: Chunk388032.intl.string(Chunk388032.t["1iI46O"])

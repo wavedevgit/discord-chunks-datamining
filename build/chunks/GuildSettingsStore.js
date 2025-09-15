@@ -495,14 +495,14 @@ function e8(e) {
   null != s && t === s.id && (X = null != n ? n : {})
 }
 
-function e5(e) {
+function e6(e) {
   let {
     profile: t
   } = e;
   t.id === (null == s ? true : s.id) && (l = c = t)
 }
 
-function e6(e) {
+function e5(e) {
   let {
     guildId: t
   } = e;
@@ -661,11 +661,11 @@ let tn = new tt(Chunk570140.Z, __OVERLAY__ ? {} : {
   GUILD_ROLE_DELETE: eV,
   GUILD_UPDATE: eU,
   GUILD_DELETE: eG,
-  GUILD_PROFILE_FETCH_SUCCESS: e5,
-  GUILD_PROFILE_UPDATE: e6,
+  GUILD_PROFILE_FETCH_SUCCESS: e6,
+  GUILD_PROFILE_UPDATE: e5,
   GUILD_PROFILE_UPDATE_SUCCESS: e7,
   GUILD_PROFILE_UPDATE_FAILURE: e9,
-  GUILD_PROFILE_UPDATE_VISIBILITY: e6,
+  GUILD_PROFILE_UPDATE_VISIBILITY: e5,
   GUILD_PROFILE_UPDATE_VISIBILITY_SUCCESS: te,
   GUILD_PROFILE_UPDATE_VISIBILITY_FAILURE: e9,
   USER_CONNECTIONS_UPDATE: eq,

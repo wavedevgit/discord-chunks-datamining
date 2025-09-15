@@ -19,18 +19,16 @@ function i(e, t, n) {
 let s = new Chunk579092.Yd("SimpleMuxWrapper");
 class c {
   initialize() {
-    var e, t, n;
-    let o = null != (t = null == (e = window.GLOBAL_ENV) ? true : module.MUX_ENV_KEY) ? exports : null;
-    if (null == Chunk579092 || 0 === Chunk579092.length) return;
-    let l = {
-      debug: null != (n = this.config.debug) && require,
+    var e;
+    let t = {
+      debug: null != (e = this.config.debug) && module,
       disableCookies: true,
       respectDoNotTrack: true,
       data: Chunk82328.v.mapDiscordToMuxMetadata(this.config, this.sessionId)
     };
-    null != this.hlsInstance && (Chunk869950.hlsjs = this.hlsInstance, Chunk869950.Hls = this.hlsInstance.constructor);
+    null != this.hlsInstance && (exports.hlsjs = this.hlsInstance, exports.Hls = this.hlsInstance.constructor);
     try {
-      Chunk745200.Z.monitor(this.videoElement, Chunk869950), this.isMonitoring = true
+      Chunk745200.Z.monitor(this.videoElement, exports), this.isMonitoring = true
     } catch (e) {
       s.error("Error creating Mux monitor", module), this.isMonitoring = false
     }

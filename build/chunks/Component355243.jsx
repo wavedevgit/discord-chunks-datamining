@@ -30,32 +30,32 @@ function v(e) {
     backgroundColor: v,
     preloadedBuffers: g,
     duration: _,
-    maxSeekableTime: E,
-    onClick: C,
+    maxSeekableTime: C,
+    onClick: E,
     onScrubBack: S,
     onScrubForward: b
   } = e, [O, h] = o.useState(null), [y, j] = o.useState(null), [x, T] = o.useState(null), [D, P] = o.useState(false), I = o.useRef(null), R = e => {
     I.current = e, h(e)
   };
   o.useEffect(() => {
-    null != O && (null == E ? T(null) : T(m(E, _, O)))
-  }, [O, E, _]);
-  let N = (0, c.Z)(e => {
+    null != O && (null == C ? T(null) : T(m(C, _, O)))
+  }, [O, C, _]);
+  let k = (0, c.Z)(e => {
       R(e.contentRect)
     }),
-    k = (0, s.y)(N);
+    N = (0, s.y)(k);
   o.useLayoutEffect(() => {
-    null != k.current && R(k.current.getBoundingClientRect())
-  }, [k]), o.useEffect(() => {
+    null != N.current && R(N.current.getBoundingClientRect())
+  }, [N]), o.useEffect(() => {
     let e = () => {
-      null != k.current && R(k.current.getBoundingClientRect())
+      null != N.current && R(N.current.getBoundingClientRect())
     };
     return window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
-  }, [k]);
-  let w = e => {
+  }, [N]);
+  let A = e => {
       j(e.clientX)
     },
-    A = o.useCallback(e => {
+    w = o.useCallback(e => {
       let {
         key: t
       } = e;
@@ -68,25 +68,25 @@ function v(e) {
     F = null != x && null != O ? O.right - x : null;
   return (0, r.jsxs)("div", {
     className: f.cont,
-    ref: k,
+    ref: N,
     children: [(0, r.jsxs)(i.P3F, {
       className: l()(f.hitboxArea, {
         [f.interactionEnabled]: a
       }),
       ignoreKeyPress: true,
       onClick: e => {
-        a && null != C && C(p(e.clientX, e.currentTarget.getBoundingClientRect(), _))
+        a && null != E && E(p(e.clientX, e.currentTarget.getBoundingClientRect(), _))
       },
       onMouseEnter: e => {
-        a && (null != k.current && R(k.current.getBoundingClientRect()), P(true), w(e))
+        a && (null != N.current && R(N.current.getBoundingClientRect()), P(true), A(e))
       },
       onMouseLeave: e => {
         a && (P(false), j(null))
       },
       onMouseMove: e => {
-        a && D && w(e)
+        a && D && A(e)
       },
-      onKeyDown: A,
+      onKeyDown: w,
       tabIndex: a ? true : false,
       focusProps: {
         offset: {

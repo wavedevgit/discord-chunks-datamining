@@ -80,23 +80,23 @@ function B(e) {
     impressionRef: U,
     parentModalOpenStartClockTime: H,
     sourceQuestContent: G
-  } = e, Y = (0, E.il)(F), Q = (0, C.tP)(F), W = (0, u.e7)([v.Z], () => v.Z.getState().theme), z = (0, d.wj)(W) ? k.BRd.DARK : k.BRd.LIGHT, K = (0, u.e7)([m.Z], () => m.Z.useReducedMotion), X = (0, _.aM)(), [$, J] = o.useState(Y.progressSeconds), [ee, et] = o.useState(false), {
+  } = e, Q = (0, C.il)(F), Y = (0, E.tP)(F), W = (0, u.e7)([v.Z], () => v.Z.getState().theme), z = (0, d.wj)(W) ? N.BRd.DARK : N.BRd.LIGHT, K = (0, u.e7)([m.Z], () => m.Z.useReducedMotion), X = (0, _.aM)(), [$, J] = o.useState(Q.progressSeconds), [ee, et] = o.useState(false), {
     completedRatio: en,
     completedRatioDisplay: er
-  } = (0, C.I)(F), [eo, ea] = (0, D.G6)(w.intl.string(w.t.RDE0SU), w.intl.string(w.t["+5kSoa"]), 1700), el = null != (0, E.LM)(F.config), [ei, es] = o.useState(false), ec = o.useRef(null), eu = (0, E.vB)(F.config), ed = (null == (t = F.userStatus) ? true : t.claimedAt) != null ? el ? w.intl.string(w.t.WYchdX) : w.intl.string(w.t.vTgCW1) : w.intl.string(w.t.cfY4PD), ef = o.useCallback(() => {
-    eu && ((0, E.f2)(F.id, {
+  } = (0, E.I)(F), [eo, ea] = (0, D.G6)(A.intl.string(A.t.RDE0SU), A.intl.string(A.t["+5kSoa"]), 1700), el = null != (0, C.LM)(F.config), [ei, es] = o.useState(false), ec = o.useRef(null), eu = (0, C.vB)(F.config), ed = (null == (t = F.userStatus) ? true : t.claimedAt) != null ? el ? A.intl.string(A.t.WYchdX) : A.intl.string(A.t.vTgCW1) : A.intl.string(A.t.cfY4PD), ef = o.useCallback(() => {
+    eu && ((0, C.f2)(F.id, {
       content: b.jn.VIDEO_MODAL,
       ctaContent: g.jZ.COPY_QUEST_URL,
       impressionId: X,
       sourceQuestContent: G
     }), ea())
   }, [X, eu, F.id, ea, G]), ep = o.useCallback(() => {
-    eu && ((0, E.f2)(F.id, {
+    eu && ((0, C.f2)(F.id, {
       content: b.jn.VIDEO_MODAL,
       ctaContent: g.jZ.COPY_QUEST_URL,
       impressionId: X,
       sourceQuestContent: G
-    }), (0, p.showToast)((0, p.createToast)(w.intl.string(w.t["+5kSoa"]), p.ToastType.SUCCESS)), es(true), null != ec.current && clearTimeout(ec.current), ec.current = setTimeout(() => {
+    }), (0, p.showToast)((0, p.createToast)(A.intl.string(A.t["+5kSoa"]), p.ToastType.SUCCESS)), es(true), null != ec.current && clearTimeout(ec.current), ec.current = setTimeout(() => {
       es(false)
     }, 1700))
   }, [X, eu, F.id, G]);
@@ -107,53 +107,53 @@ function B(e) {
     if (null != V) {
       let e = h.r.build(F.config).application.link;
       await (0, D.qP)(e) && V()
-    }(0, E.nc)(F, {
+    }(0, C.nc)(F, {
       content: b.jn.VIDEO_MODAL,
       ctaContent: g.jZ.OPEN_GAME_LINK,
       impressionId: X,
       sourceQuestContent: G
     })
   }, ev = () => {
-    ((0, E.xN)(F.config) || (0, E.Bg)(F.config)) && V()
-  }, eg = o.useMemo(() => h.r.build(F.config).defaultRewardName, [F]), e_ = w.intl.formatToPlainString(w.t["12IWPz"], {
+    ((0, C.xN)(F.config) || (0, C.Bg)(F.config)) && V()
+  }, eg = o.useMemo(() => h.r.build(F.config).defaultRewardName, [F]), e_ = A.intl.formatToPlainString(A.t["12IWPz"], {
     rewardName: eg
-  }), eE = null == (a = F.config.taskConfigV2) || null == (n = a.tasks) ? true : n[c.X.WATCH_VIDEO];
-  s()(null != eE, "VideoQuestModal: videoTask must not be null");
-  let eC = (0, E.ZS)(eE),
-    eS = "portrait" === eC;
+  }), eC = null == (a = F.config.taskConfigV2) || null == (n = a.tasks) ? true : n[c.X.WATCH_VIDEO];
+  s()(null != eC, "VideoQuestModal: videoTask must not be null");
+  let eE = (0, C.ZS)(eC),
+    eS = "portrait" === eE;
   return (0, r.jsx)(p.Y0X, {
     "data-migration-pending": true,
     transitionState: B,
     size: p.CgR.DYNAMIC,
-    className: l()(A.modalRoot, {
-      [A.modalRootLandscape]: "landscape" === eC,
-      [A.modalRootPortrait]: "portrait" === eC
+    className: l()(w.modalRoot, {
+      [w.modalRootLandscape]: "landscape" === eE,
+      [w.modalRootPortrait]: "portrait" === eE
     }),
     parentComponent: "Modal",
     children: (0, r.jsx)("div", {
       ref: e => {
         U.current = e
       },
-      className: A.modalBg,
+      className: w.modalBg,
       children: (0, r.jsx)("div", {
-        className: A.modalBody,
+        className: w.modalBody,
         children: (0, r.jsxs)("div", {
-          className: A.modalContent,
+          className: w.modalContent,
           children: [(0, r.jsxs)("div", {
-            className: A.contentHeader,
+            className: w.contentHeader,
             children: [(0, r.jsxs)(p.P3F, {
-              className: A.contentHeaderGameInfo,
+              className: w.contentHeaderGameInfo,
               onClick: em,
               children: [(0, r.jsx)("img", {
                 alt: F.config.messages.gameTitle,
-                className: l()(A.contentHeaderLogotype, A.accentOnHover),
+                className: l()(w.contentHeaderLogotype, w.accentOnHover),
                 src: (0, O.fh)(F, O.eC.LOGO_TYPE, z).url
               }), (0, r.jsx)(P.Z, {}), (0, r.jsxs)("div", {
-                className: A.questHeading,
+                className: w.questHeading,
                 children: [(0, r.jsx)(p.X6q, {
                   variant: "heading-md/semibold",
                   color: "header-primary",
-                  children: w.intl.format(w.t.EQa7oq, {
+                  children: A.intl.format(A.t.EQa7oq, {
                     questName: F.config.messages.questName
                   })
                 }), (0, r.jsx)(p.Text, {
@@ -162,7 +162,7 @@ function B(e) {
                   children: F.config.messages.gameTitle
                 })]
               })]
-            }), !Q && (0, r.jsx)(p.ua7, {
+            }), !Y && (0, r.jsx)(p.ua7, {
               position: "left",
               text: e_,
               onTooltipShow: () => {
@@ -172,7 +172,7 @@ function B(e) {
                 et(false)
               },
               children: e => (0, r.jsx)(p.P3F, M(L({
-                className: A.progressCont
+                className: w.progressCont
               }, e), {
                 children: (0, r.jsx)(j.Z, {
                   quest: F,
@@ -181,11 +181,11 @@ function B(e) {
                   percentCompleteText: ee ? er : true,
                   percentCompleteTextVariant: "text-sm/medium",
                   children: (0, r.jsx)(T.Z, {
-                    className: A.questProgressRewardTile,
+                    className: w.questProgressRewardTile,
                     quest: F,
                     questContent: b.jn.VIDEO_MODAL,
                     autoplay: false,
-                    location: N.dr.VIDEO_MODAL,
+                    location: k.dr.VIDEO_MODAL,
                     sourceQuestContent: G
                   })
                 })
@@ -193,7 +193,7 @@ function B(e) {
             })]
           }), (0, r.jsx)(I.Z, {
             quest: F,
-            videoTask: eE,
+            videoTask: eC,
             videoSessionId: q,
             parentTransitionState: B,
             onOptimisticProgressUpdate: J,
@@ -201,21 +201,21 @@ function B(e) {
             performanceClockStartTime: H,
             onClose: V,
             sourceQuestContent: G,
-            orientation: eC
+            orientation: eE
           }), eS ? (0, r.jsxs)("div", {
-            className: l()(A.contentFooterPortrait, A.contentFooterButtonCont),
+            className: l()(w.contentFooterPortrait, w.contentFooterButtonCont),
             children: [(0, r.jsx)("div", {
-              className: A.portraitCtaBtnWrapper,
+              className: w.portraitCtaBtnWrapper,
               children: (0, r.jsx)(p.zxk, {
                 variant: "secondary",
-                text: w.intl.string(w.t.nL0WvL),
+                text: A.intl.string(A.t.nL0WvL),
                 onClick: em,
                 fullWidth: true
               })
             }), (0, r.jsx)("div", {
-              className: A.portraitCtaBtnWrapper,
+              className: w.portraitCtaBtnWrapper,
               children: (0, r.jsx)(y.i, {
-                className: A.portraitCtaBtn,
+                className: w.portraitCtaBtn,
                 size: f.zx.Sizes.MEDIUM,
                 quest: F,
                 useReducedMotion: K,
@@ -230,31 +230,31 @@ function B(e) {
               variant: "active",
               icon: p.owK,
               onClick: ep,
-              "aria-label": w.intl.string(w.t.RDE0SU)
+              "aria-label": A.intl.string(A.t.RDE0SU)
             }) : (0, r.jsx)(p.ua7, {
-              text: w.intl.string(w.t.WqhZsr),
+              text: A.intl.string(A.t.WqhZsr),
               children: e => (0, r.jsx)(p.hU, M(L({
                 variant: "secondary",
                 icon: p.TIy,
-                "aria-label": w.intl.string(w.t.RDE0SU)
+                "aria-label": A.intl.string(A.t.RDE0SU)
               }, e), {
                 onClick: ep
               }))
             }))]
           }) : (0, r.jsxs)("div", {
-            className: A.contentFooter,
+            className: w.contentFooter,
             children: [(0, r.jsx)(p.zxk, {
               variant: "secondary",
-              text: w.intl.string(w.t.cpT0Cg),
+              text: A.intl.string(A.t.cpT0Cg),
               onClick: V
             }), (0, r.jsxs)("div", {
-              className: A.contentFooterButtonCont,
+              className: w.contentFooterButtonCont,
               children: [eu && (0, r.jsx)(p.zxk, {
                 variant: "secondary",
                 text: eo,
                 onClick: ef
               }), (0, r.jsx)(y.i, {
-                className: A.claimBtn,
+                className: w.claimBtn,
                 size: f.zx.Sizes.MEDIUM,
                 quest: F,
                 useReducedMotion: K,

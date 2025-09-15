@@ -1,7 +1,7 @@
 /** Chunk was on 32249 **/
 /** chunk id: 350312, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => C
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -114,7 +114,7 @@ function _(e) {
     })]
   })
 }
-let E = function(e) {
+let C = function(e) {
   let {
     quest: t,
     ctaBtnLabel: n,
