@@ -36,7 +36,8 @@ function v(e) {
 
 function I(e, t) {
   return (n, r) => (l.default.track(u.rMx.KEYBOARD_SHORTCUT_USED, {
-    shortcut_name: e
+    shortcut_name: e,
+    shortcut_combo: r
   }), t(n, r))
 }
 
