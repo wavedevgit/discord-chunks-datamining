@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 639660, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => C
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk793030 = require("./793030.js"),
@@ -29,39 +29,39 @@ function x() {
   })
 }
 
-function h(e) {
+function C(e) {
   let {
     guildId: t
   } = e, n = (0, i.e7)([s.Z], () => {
     var e;
     return (null == (e = s.Z.getGuild(t)) ? true : e.features.has(g.oNc.PREMIUM_TIER_3_OVERRIDE)) === true
-  }), h = (0, c.Z)(t), C = h.length > 0, {
+  }), C = (0, c.Z)(t), h = C.length > 0, {
     shouldShow: b,
     notificationConfig: E
   } = (0, m._)(t, "GuildPowerupNotificationContainer"), j = [];
   b && j.push(l.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION);
-  let [T, P] = (0, a.ZT)(j, t), I = null != T && null != E, y = [];
-  I || C || y.push(l.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK);
-  let [S, w] = (0, a.US)(y), O = (e => {
+  let [I, T] = (0, a.ZT)(j, t), P = null != I && null != E, y = [];
+  P || h || y.push(l.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK);
+  let [w, Z] = (0, a.US)(y), N = (e => {
     let n = [];
-    return C && n.push((0, r.jsx)(p.Z, {
+    return h && n.push((0, r.jsx)(p.Z, {
       guildId: t,
-      powerups: h
-    }, "expiring-powerups")), I && n.push((0, r.jsx)(d.Z, {
+      powerups: C
+    }, "expiring-powerups")), P && n.push((0, r.jsx)(d.Z, {
       notificationConfig: E,
       markAsDismissed: e => {
-        P(e)
+        T(e)
       }
     }, "rollback-notification")), null != e && e === l.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK && n.push((0, r.jsx)(u.Z, {
-      markAsDismissed: w
+      markAsDismissed: Z
     }, "info-card")), n
-  })(S);
-  return 0 !== O.length || n ? (0, r.jsxs)("div", {
+  })(w);
+  return 0 !== N.length || n ? (0, r.jsxs)("div", {
     className: _.container,
     children: [(0, r.jsx)(o.xvT, {
       variant: "eyebrow",
       color: "text-secondary",
       children: v.intl.string(f.default["3FRira"])
-    }), n && (0, r.jsx)(x, {}), O.map(e => e)]
+    }), n && (0, r.jsx)(x, {}), N.map(e => e)]
   }) : null
 }

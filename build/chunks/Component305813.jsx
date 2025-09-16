@@ -68,22 +68,22 @@ function T(e) {
     selectedEffectId: l,
     selectedColors: T,
     onClose: R
-  } = e, A = (0, c.ZP)(), I = (0, s.wjy)(A), [w, L] = (0, o.useState)(I), B = (0, b.ZP)(t.id, null), {
+  } = e, A = (0, c.ZP)(), w = (0, s.wjy)(A), [I, L] = (0, o.useState)(w), B = (0, b.ZP)(t.id, null), {
     bannerSrc: M
   } = (0, x.Z)({
     displayProfile: B,
     size: 413,
     canAnimate: false
-  }), G = (0, i.cj)([_.Z], () => _.Z.getAllPending()), Z = (0, h.SD)({
+  }), G = (0, i.cj)([S.Z], () => S.Z.getAllPending()), Z = (0, h.SD)({
     userId: t.id,
     image: G.pendingAvatar
-  }), Y = w ? O.BRd.DARK : O.BRd.LIGHT;
-  (I && w || !I && !w) && (Y = A);
+  }), Y = I ? O.BRd.DARK : O.BRd.LIGHT;
+  (w && I || !w && !I) && (Y = A);
   let H = (0, o.useCallback)(() => {
-      S.default.track(O.rMx.DISPLAY_NAME_STYLES_CLOSED), R()
+      _.default.track(O.rMx.DISPLAY_NAME_STYLES_CLOSED), R()
     }, [R]),
     z = (0, o.useCallback)(e => {
-      L(e === O.BRd.DARK), S.default.track(O.rMx.DISPLAY_NAME_STYLES_THEME_TOGGLE, {
+      L(e === O.BRd.DARK), _.default.track(O.rMx.DISPLAY_NAME_STYLES_THEME_TOGGLE, {
         dark: e === O.BRd.DARK
       })
     }, []),
@@ -171,7 +171,7 @@ function T(e) {
           helpArticleLink: C.Z.getArticleURL(O.BhN.DISPLAY_NAME_STYLES)
         })
       }), (0, r.jsx)(D, {
-        darkPreview: w,
+        darkPreview: I,
         onToggleTheme: z
       })]
     })]

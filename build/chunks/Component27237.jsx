@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 27237, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => T
+  ZP: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -34,9 +34,9 @@ function E(e) {
     children: [(0, r.jsx)("div", {
       className: l()(b.progress, b[i], b[t])
     }), (0, r.jsx)("div", {
-      className: l()(b.boostContainer, C.boostProgressBackground, {
+      className: l()(b.boostContainer, h.boostProgressBackground, {
         [b.boostContainerActive]: n,
-        [C.active]: n
+        [h.active]: n
       }),
       children: (0, r.jsx)(s.$Eu, {
         size: "sm",
@@ -74,21 +74,21 @@ function j(e) {
       children: (0, r.jsx)(a.xvT, {
         color: i,
         variant: "text-sm/medium",
-        children: h.intl.string(x.default.nIj3LS)
+        children: C.intl.string(x.default.nIj3LS)
       })
     })]
   })
 }
 
-function T(e) {
+function I(e) {
   let {
     guildId: t,
     index: n,
     powerup: i,
     nextPowerup: l
-  } = e, a = (0, u.ZP)(t, i), s = (0, u.ZP)(t, l), c = a.type !== v.A3.INACTIVE, _ = s.type !== v.A3.INACTIVE, x = a.type === v.A3.TIER_OVERRIDE_ACTIVATED, [h, C] = o.useState(true);
-  (0, g.KT)(h);
-  let T = (0, f.d)(c);
+  } = e, a = (0, u.ZP)(t, i), s = (0, u.ZP)(t, l), c = a.type !== v.A3.INACTIVE, _ = s.type !== v.A3.INACTIVE, x = a.type === v.A3.TIER_OVERRIDE_ACTIVATED, [C, h] = o.useState(true);
+  (0, g.KT)(C);
+  let I = (0, f.d)(c);
   return (0, r.jsxs)(m.Z, {
     guildId: t,
     powerup: i,
@@ -99,7 +99,7 @@ function T(e) {
       nextActive: null != l ? _ : true
     }), (0, r.jsx)(d.Q9, {
       title: i.title,
-      textColor: T,
+      textColor: I,
       footer: !x && (0, r.jsx)(m.g, {
         className: b.footer,
         guildId: t,
@@ -113,7 +113,7 @@ function T(e) {
       children: (0, r.jsx)(p.ZP, {
         guildId: t,
         powerup: i,
-        onError: C
+        onError: h
       })
     })]
   })

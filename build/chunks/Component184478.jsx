@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 184478, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => C
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -21,12 +21,12 @@ var Chunk793030 = require("./793030.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk741872 = require("./741872.js");
 
-function h(e) {
+function C(e) {
   let {
     guildId: t
   } = e, n = (0, i.e7)([u.Z], () => u.Z.getGuild(t)), {
-    available: h,
-    spent: C,
+    available: C,
+    spent: h,
     total: b
   } = (0, p.Z)(t);
   if (null != n) return (0, r.jsxs)("div", {
@@ -47,10 +47,10 @@ function h(e) {
     }), (0, r.jsxs)("div", {
       className: x.contentContainer,
       children: [(0, r.jsx)(g.Z, {
-        count: h,
+        count: C,
         type: g.b.AVAILABLE
       }), (0, r.jsx)(g.Z, {
-        count: C,
+        count: h,
         type: g.b.SPENT
       }), (0, r.jsx)(g.Z, {
         count: b,

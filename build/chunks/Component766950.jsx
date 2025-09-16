@@ -37,8 +37,8 @@ function T(e) {
     transitionState: D,
     analyticsLocations: R,
     guild: A,
-    onClose: I
-  } = e, w = (0, s.e7)([h.default], () => h.default.getCurrentUser()), L = (0, s.e7)([g.Z], () => g.Z.getAllPending().pendingDisplayNameStyles), B = true !== L ? L : null == w ? true : w.displayNameStyles, [M, G] = o.useState(null != (t = null == B ? true : B.fontId) ? t : i.C.DEFAULT), [Z, Y] = o.useState(null != (n = null == B ? true : B.effectId) ? n : a.m.SOLID), H = (0, y.R)(Z), z = (0, y.R)(a.m.GRADIENT), F = null != (T = null == B ? true : B.colors) ? T : [], [U, q] = o.useState(F.length > 0 && Z !== a.m.GRADIENT ? F[0] : H.defaultColors[0]), [K, X] = o.useState(F.length > 0 && Z === a.m.GRADIENT ? F : z.defaultColors);
+    onClose: w
+  } = e, I = (0, s.e7)([h.default], () => h.default.getCurrentUser()), L = (0, s.e7)([g.Z], () => g.Z.getAllPending().pendingDisplayNameStyles), B = true !== L ? L : null == I ? true : I.displayNameStyles, [M, G] = o.useState(null != (t = null == B ? true : B.fontId) ? t : i.C.DEFAULT), [Z, Y] = o.useState(null != (n = null == B ? true : B.effectId) ? n : a.m.SOLID), H = (0, y.R)(Z), z = (0, y.R)(a.m.GRADIENT), F = null != (T = null == B ? true : B.colors) ? T : [], [U, q] = o.useState(F.length > 0 && Z !== a.m.GRADIENT ? F[0] : H.defaultColors[0]), [K, X] = o.useState(F.length > 0 && Z === a.m.GRADIENT ? F : z.defaultColors);
   (0, m.Z)({
     type: l.ImpressionTypes.POPOUT,
     name: l.ImpressionNames.DISPLAY_NAME_STYLES_MODAL
@@ -61,9 +61,9 @@ function T(e) {
         font_name: i.C[M],
         effect_name: a.m[Z],
         colors: W
-      }), I()
+      }), w()
     }
-  }, [$, M, Z, W, H, I]), Q = o.useCallback(() => {
+  }, [$, M, Z, W, H, w]), Q = o.useCallback(() => {
     let {
       fontId: e,
       effectId: t,
@@ -75,7 +75,7 @@ function T(e) {
   }, [Y]), et = o.useCallback(e => {
     Z === a.m.GRADIENT ? X(e) : q(e[0])
   }, [Z, X, q]);
-  return null == w ? null : (0, r.jsx)(f.Gt, {
+  return null == I ? null : (0, r.jsx)(f.Gt, {
     value: V,
     children: (0, r.jsx)(x.k.Provider, {
       value: {
@@ -107,11 +107,11 @@ function T(e) {
               selectedFontId: M,
               setSelectedFontId: G,
               className: E.selectionSubSection
-            }), (0, r.jsx)(S.Z, {
+            }), (0, r.jsx)(_.Z, {
               selectedEffectId: Z,
               setSelectedEffectId: ee,
               className: E.selectionSubSection
-            }), (0, r.jsx)(_.Z, {
+            }), (0, r.jsx)(S.Z, {
               selectedColors: W,
               setSelectedColors: et,
               selectedEffectId: Z,
@@ -119,16 +119,16 @@ function T(e) {
               defaultColor: H.defaultColors[0]
             })]
           }), (0, r.jsx)(v.Z, {
-            user: w,
+            user: I,
             selectedFontId: M,
             selectedEffectId: Z,
             selectedColors: Z === a.m.SOLID && (0, c.E)(W, H.defaultColors) ? [] : W,
-            onClose: I
+            onClose: w
           })]
         }), (0, r.jsx)(O.B, {
           onApply: J,
           onSurpriseMe: Q,
-          onClose: I,
+          onClose: w,
           canApply: $,
           analyticsLocations: V
         })]

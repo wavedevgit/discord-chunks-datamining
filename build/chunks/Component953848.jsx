@@ -1,55 +1,67 @@
 /** Chunk was on 82077 **/
 /** chunk id: 953848, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => p
+  default: () => b
 }), require("./388685.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk990547 = require("./990547.js"),
   Chunk442837 = require("./442837.js"),
   Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk812206 = require("./812206.js"),
+  Chunk810568 = require("./810568.js"),
   Chunk77498 = require("./77498.js"),
+  Chunk626135 = require("./626135.js"),
   Chunk768581 = require("./768581.js"),
   Chunk483517 = require("./483517.jsx"),
+  Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk90149 = require("./90149.js");
 
-function p(e) {
+function b(e) {
   var t, n;
   let {
-    onClose: p,
-    transitionState: h,
-    onSubmitted: x,
-    detectedActivity: v
-  } = e, [b, j] = l.useState("issue_selection"), [f, y] = l.useState(null), [w, O] = l.useState(""), [_, P] = l.useState(null), [k, G] = l.useState(""), I = (0, i.e7)([s.Z], () => s.Z.games), S = null != v, N = (0, i.e7)([o.Z], () => (null == v ? true : v.application_id) != null ? o.Z.getApplication(v.application_id) : null), C = l.useMemo(() => w.trim().length < 1 ? [] : I.filter(e => e.name.toLowerCase().includes(w.toLowerCase())).slice(0, 20).map(e => ({
+    onClose: b,
+    transitionState: _,
+    onSubmitted: f,
+    detectedActivity: j
+  } = e, [O, w] = i.useState("issue_selection"), [y, P] = i.useState(null), [k, I] = i.useState(""), [G, N] = i.useState(null), [T, D] = i.useState(""), S = i.useMemo(() => (0, d.fP)(), []), C = (0, a.e7)([u.Z], () => u.Z.games), E = null != j, A = (0, a.e7)([s.Z], () => (null == j ? true : j.application_id) != null ? s.Z.getApplication(j.application_id) : null), Z = i.useMemo(() => k.trim().length < 1 ? [] : C.filter(e => e.name.toLowerCase().includes(k.toLowerCase())).slice(0, 20).map(e => ({
     value: e.id,
     label: e.name,
     game: e
-  })), [I, w]), T = () => {
-    null == x || x(), p()
-  }, Z = (() => {
-    switch (b) {
+  })), [C, k]), M = () => {
+    var e, t;
+    (0, d.MH)({
+      viewId: S,
+      applicationId: null != (e = null == j ? true : j.application_id) ? e : "",
+      suggestedGameName: "" !== k.trim() ? k.trim() : true,
+      suggestedGameApplicationId: null != (t = null == G ? true : G.id) ? t : null,
+      feedback: "" !== T.trim() ? T.trim() : true,
+      submitted: true
+    }), null == f || f(), b()
+  }, L = (() => {
+    switch (O) {
       case "issue_selection":
         return {
-          title: m.intl.string(m.t["6tnjbG"]), actions: []
+          title: v.intl.string(v.t["6tnjbG"]), actions: []
         };
       case "game_search":
         return {
-          title: S ? m.intl.string(m.t.TZgkxc) : m.intl.string(m.t["+ie+wc"]), actions: [{
-            text: m.intl.string(m.t.geKm7u),
-            onClick: T,
+          title: E ? v.intl.string(v.t.TZgkxc) : v.intl.string(v.t["+ie+wc"]), actions: [{
+            text: v.intl.string(v.t.geKm7u),
+            onClick: M,
             variant: "primary",
-            disabled: "" === w.trim()
+            disabled: "" === k.trim()
           }]
         };
       case "other_feedback":
         return {
-          title: m.intl.string(m.t.tdDpJi), actions: [{
-            text: m.intl.string(m.t.geKm7u),
-            onClick: T,
+          title: v.intl.string(v.t.tdDpJi), actions: [{
+            text: v.intl.string(v.t.geKm7u),
+            onClick: M,
             variant: "primary",
-            disabled: "" === k.trim()
+            disabled: "" === T.trim()
           }]
         };
       default:
@@ -58,87 +70,96 @@ function p(e) {
         }
     }
   })();
-  return (0, r.jsx)(a.Modal, (t = function(e) {
+  return (0, l.jsx)(o.Modal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
-        r = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        l = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), r.forEach(function(t) {
-        var r;
-        r = n[t], t in e ? Object.defineProperty(e, t, {
-          value: r,
+      }))), l.forEach(function(t) {
+        var l;
+        l = n[t], t in e ? Object.defineProperty(e, t, {
+          value: l,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = r
+        }) : e[t] = l
       })
     }
     return e
-  }({}, Z), n = n = {
-    transitionState: h,
-    onClose: p,
+  }({}, L), n = n = {
+    transitionState: _,
+    onClose: b,
+    trackingProps: {
+      impression: {
+        impressionName: r.ImpressionNames.GAME_DETECTION_REPORT_MODAL
+      }
+    },
     children: (() => {
-      switch (b) {
+      switch (O) {
         case "issue_selection":
-          return (0, r.jsxs)("div", {
-            className: g.content,
-            children: [(0, r.jsx)(c.Text, {
+          return (0, l.jsxs)("div", {
+            className: x.content,
+            children: [(0, l.jsx)(c.Text, {
               variant: "text-sm/normal",
               color: "text-muted",
-              children: m.intl.string(m.t.IQHicn)
-            }), (0, r.jsx)("div", {
-              className: g.radioGroup,
-              children: (0, r.jsx)(c.FXm, {
-                value: f,
+              children: v.intl.string(v.t.IQHicn)
+            }), (0, l.jsx)("div", {
+              className: x.radioGroup,
+              children: (0, l.jsx)(c.FXm, {
+                value: y,
                 onChange: e => {
+                  var t;
                   let {
-                    value: t
+                    value: n
                   } = e;
-                  y(t), setTimeout(() => {
-                    "missed" === t || "wrong" === t ? j("game_search") : j("other_feedback")
+                  P(n), m.default.track(h.rMx.GAME_DETECTION_FEEDBACK_MODAL, {
+                    selected_option: n,
+                    application_id: null != (t = null == j ? true : j.application_id) ? t : null
+                  }), setTimeout(() => {
+                    "game_not_detected" === n || "wrong_game_shown" === n ? w("game_search") : w("other_feedback")
                   }, 100)
                 },
-                options: S ? [{
-                  name: m.intl.string(m.t.TZgkxc),
-                  value: "wrong"
+                options: E ? [{
+                  name: v.intl.string(v.t.TZgkxc),
+                  value: "wrong_game_shown"
                 }, {
-                  name: m.intl.string(m.t.tdDpJi),
-                  value: "other"
+                  name: v.intl.string(v.t.tdDpJi),
+                  value: "other_feedback"
                 }] : [{
-                  name: m.intl.string(m.t["+ie+wc"]),
-                  value: "missed"
+                  name: v.intl.string(v.t["+ie+wc"]),
+                  value: "game_not_detected"
                 }, {
-                  name: m.intl.string(m.t.tdDpJi),
-                  value: "other"
+                  name: v.intl.string(v.t.tdDpJi),
+                  value: "other_feedback"
                 }]
               })
             })]
           });
         case "game_search":
           var e;
-          return (0, r.jsxs)("div", {
-            className: g.content,
-            children: [(0, r.jsx)(c.Text, {
+          return (0, l.jsxs)("div", {
+            className: x.content,
+            children: [(0, l.jsx)(c.Text, {
               variant: "text-sm/normal",
               color: "text-muted",
-              children: S ? m.intl.string(m.t["79o/io"]) : m.intl.string(m.t["r/2pZ2"])
-            }), S && (0, r.jsxs)(r.Fragment, {
-              children: [(0, r.jsxs)("div", {
-                className: g.detectedGameFrame,
+              children: E ? v.intl.string(v.t["79o/io"]) : v.intl.string(v.t["r/2pZ2"])
+            }), E && (0, l.jsxs)(l.Fragment, {
+              children: [(0, l.jsxs)("div", {
+                className: x.detectedGameFrame,
                 children: [(() => {
                   var e, t, n;
-                  let l = d.ZP.getApplicationIconURL({
-                    id: null != (e = v.application_id) ? e : "",
-                    icon: null != (t = null == N ? true : N.icon) ? t : null
+                  let i = p.ZP.getApplicationIconURL({
+                    id: null != (e = j.application_id) ? e : "",
+                    icon: null != (t = null == A ? true : A.icon) ? t : null
                   });
-                  return null != l ? (0, r.jsx)("img", {
-                    src: l,
-                    alt: null != (n = v.name) ? n : "",
-                    className: g.detectedGameIcon
-                  }) : (0, r.jsx)("div", {
-                    className: "".concat(g.detectedGameIcon, " ").concat(g.detectedGameIconPlaceholder),
-                    children: (0, r.jsx)("div", {
+                  return null != i ? (0, l.jsx)("img", {
+                    src: i,
+                    alt: null != (n = j.name) ? n : "",
+                    className: x.detectedGameIcon
+                  }) : (0, l.jsx)("div", {
+                    className: "".concat(x.detectedGameIcon, " ").concat(x.detectedGameIconPlaceholder),
+                    children: (0, l.jsx)("div", {
                       style: {
                         fontSize: "28px",
                         fontWeight: "bold",
@@ -148,61 +169,61 @@ function p(e) {
                       children: "?"
                     })
                   })
-                })(), (0, r.jsx)(c.Text, {
+                })(), (0, l.jsx)(c.Text, {
                   variant: "text-md/semibold",
                   color: "header-primary",
-                  children: v.name
+                  children: j.name
                 })]
-              }), (0, r.jsx)(u.Z, {})]
-            }), (0, r.jsx)(c.VcW, {
-              className: g.searchNoToggle,
-              options: C,
-              value: null != (e = null == _ ? true : _.id) ? e : null,
+              }), (0, l.jsx)(g.Z, {})]
+            }), (0, l.jsx)(c.VcW, {
+              className: x.searchNoToggle,
+              options: Z,
+              value: null != (e = null == G ? true : G.id) ? e : null,
               onChange: e => {
                 var t;
-                let n = I.find(t => t.id === e);
-                P(null != n ? n : null), O(null != (t = null == n ? true : n.name) ? t : "")
+                let n = C.find(t => t.id === e);
+                N(null != n ? n : null), I(null != (t = null == n ? true : n.name) ? t : "")
               },
               onSearchChange: e => {
-                O(e), null != _ && e !== _.name && P(null)
+                I(e), null != G && e !== G.name && N(null)
               },
-              placeholder: S ? m.intl.string(m.t["/SGi7u"]) : m.intl.string(m.t.ss9Zwc),
+              placeholder: E ? v.intl.string(v.t["/SGi7u"]) : v.intl.string(v.t.ss9Zwc),
               clearable: true,
               filter: false,
               maxVisibleItems: 5,
               clearQueryOnSelect: false,
               onKeyDown: e => {
-                0 === C.length && ("ArrowDown" === e.key || "ArrowUp" === e.key) && e.preventDefault()
+                0 === Z.length && ("ArrowDown" === e.key || "ArrowUp" === e.key) && e.preventDefault()
               },
               renderOptionPrefix: e => {
                 if (null == e) return null;
-                let t = I.find(t => t.id === e.value);
-                return null != t ? (0, r.jsx)("img", {
-                  src: d.ZP.getApplicationIconURL({
+                let t = C.find(t => t.id === e.value);
+                return null != t ? (0, l.jsx)("img", {
+                  src: p.ZP.getApplicationIconURL({
                     id: t.id,
                     icon: t.icon
                   }),
                   alt: t.name,
-                  className: g.gameIcon
+                  className: x.gameIcon
                 }) : null
               },
-              renderOptionLabel: e => (0, r.jsx)(c.Text, {
+              renderOptionLabel: e => (0, l.jsx)(c.Text, {
                 variant: "text-sm/normal",
                 children: e.label
               })
             })]
           });
         case "other_feedback":
-          return (0, r.jsxs)("div", {
-            className: g.content,
-            children: [(0, r.jsx)(c.Text, {
+          return (0, l.jsxs)("div", {
+            className: x.content,
+            children: [(0, l.jsx)(c.Text, {
               variant: "text-sm/normal",
               color: "text-muted",
-              children: m.intl.string(m.t.IblYEx)
-            }), (0, r.jsx)(c.Kx8, {
-              value: k,
-              onChange: G,
-              placeholder: m.intl.string(m.t.aiPKV1),
+              children: v.intl.string(v.t.IblYEx)
+            }), (0, l.jsx)(c.Kx8, {
+              value: T,
+              onChange: D,
+              placeholder: v.intl.string(v.t.aiPKV1),
               maxLength: 300,
               rows: 4
             })]
@@ -214,8 +235,8 @@ function p(e) {
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var l = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, l)
     }
     return n
   })(Object(n)).forEach(function(e) {

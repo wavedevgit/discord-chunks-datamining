@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
   Chunk899667 = require("./899667.js"),
-  Chunk905128 = require("./905128.js"),
+  Chunk317169 = require("./317169.js"),
   Chunk989308 = require("./989308.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk874622 = require("./874622.js");
@@ -20,10 +20,9 @@ function f(e) {
   let {
     guildId: t,
     powerups: n
-  } = e, f = (0, s.e7)([d.Z], () => {
-    var e, n;
-    return null != (n = null == (e = d.Z.getStateForGuild(t)) ? true : e.appliedBoosts) ? n : 0
-  }), v = (0, s.e7)([u.Z], () => u.Z.getAppliedGuildBoostsForGuild(t), [t]), _ = f - o.useMemo(() => {
+  } = e, {
+    spent: f
+  } = (0, d.Z)(t), v = (0, s.e7)([u.Z], () => u.Z.getAppliedGuildBoostsForGuild(t), [t]), _ = f - o.useMemo(() => {
     var e, t, n;
     return null != (n = null == v || null == (t = v.filter) || null == (e = t.call(v, e => !e.ended && null == e.endsAt)) ? true : e.length) ? n : 0
   }, [v]);

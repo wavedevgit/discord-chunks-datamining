@@ -1,7 +1,7 @@
 /** Chunk was on 85683 **/
 /** chunk id: 331500, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => P
 });
 var r, i, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,7 +17,7 @@ var r, i, Chunk951288 = require("./951288.js"),
   Chunk401561 = require("./401561.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk134977 = require("./134977.js");
-let h = (r = function(e) {
+let j = (r = function(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,15 +47,15 @@ let h = (r = function(e) {
   Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
 }), r);
 
-function j(e) {
+function P(e) {
   let {
     guildId: t
   } = e;
   o.useEffect(() => {
     (0, u.po)(t)
   }, [t]);
-  let n = (0, l.Wu)([p.Z], () => {
-    let e = p.Z.getStateForGuild(t);
+  let n = (0, l.Wu)([m.Z], () => {
+    let e = m.Z.getStateForGuild(t);
     return (null == e ? true : e.catalog) != null ? Object.values(e.catalog) : []
   });
   return 0 === n.length ? (0, a.jsx)("div", {
@@ -71,12 +71,12 @@ function j(e) {
       children: v.intl.string(f.default.jeYp1t)
     }), (0, a.jsx)("div", {
       className: y.gameContainer,
-      children: n.map((e, n) => (0, a.jsx)(m.Z, {
+      children: n.map((e, n) => (0, a.jsx)(p.Z, {
         className: y.game,
         game: e,
-        onClick: () => (0, b.Z)({
+        onClick: () => (0, g.Z)({
           guildId: t,
-          stepConfig: h,
+          stepConfig: j,
           initialPortkeyGame: e,
           analyticsLocation: d.Z.PORTKEY_OVERVIEW
         }),

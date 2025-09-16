@@ -45,15 +45,7 @@ function g(e) {
     variant: "secondary",
     size: "md",
     onClick: n,
-    icon: {
-      type: "rive",
-      asset: o.xhK,
-      riveProps: {
-        dataBinding: {
-          fill: o.TVs.colors.ICON_PRIMARY
-        }
-      }
-    },
+    icon: o.$2U,
     text: p.intl.string(u.default.NOGFdn)
   }), j = (0, r.jsxs)("div", {
     className: f.subscriberButtonContainer,
@@ -81,7 +73,7 @@ function g(e) {
         }), n))
       }
     })]
-  }), _ = (0, r.jsxs)("div", {
+  }), S = (0, r.jsxs)("div", {
     className: f.upsell,
     children: [(0, r.jsxs)("div", {
       className: f.descriptionContainer,
@@ -115,6 +107,6 @@ function g(e) {
   return (0, r.jsx)(o.mzw, {
     "data-migration-pending": true,
     className: f.footer,
-    children: b ? j : _
+    children: b ? j : S
   })
 }

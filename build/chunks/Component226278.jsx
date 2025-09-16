@@ -39,17 +39,17 @@ function f(e) {
     className: f,
     onHover: v,
     children: _
-  } = e, x = (0, a.Z)(n), h = (0, s.ZP)(n, p), C = h.type !== m.A3.INACTIVE, b = (null == (t = h.sourceEntitlement) ? true : t.ends_at) != null, E = (0, l.Z)(n, p, "GuildPowerupCard"), j = o.useRef(null), {
-    onShowMore: T
-  } = (0, d.ZP)(n, p), [P, I] = o.useState(false), y = (0, i.O)(I, 1);
+  } = e, x = (0, a.Z)(n), C = (0, s.ZP)(n, p), h = C.type !== m.A3.INACTIVE, b = (null == (t = C.sourceEntitlement) ? true : t.ends_at) != null, E = (0, l.Z)(n, p, "GuildPowerupCard"), j = o.useRef(null), {
+    onShowMore: I
+  } = (0, d.ZP)(n, p), [T, P] = o.useState(false), y = (0, i.O)(P, 1);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.aB, {
       label: p.title,
-      isActive: C,
+      isActive: h,
       isWarning: b,
       badge: g,
       canRollback: E,
-      onClick: T,
+      onClick: I,
       onMouseOver: () => null == v ? true : v(true),
       onMouseLeave: () => null == v ? true : v(false),
       className: f,
@@ -60,7 +60,7 @@ function f(e) {
     }), !E && x && (0, r.jsx)(u.Z, {
       powerup: p,
       targetRef: j,
-      isCardVisible: P
+      isCardVisible: T
     })]
   })
 }

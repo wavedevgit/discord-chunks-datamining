@@ -45,13 +45,13 @@ function E(e) {
       analyticsLocation: u.Z.GUILD_POWERUPS_OVERVIEW
     }),
     children: [(0, r.jsxs)("div", {
-      className: C.imageContainer,
+      className: h.imageContainer,
       children: [(0, r.jsx)("img", {
-        className: l()(h.background, x.image, C.image),
+        className: l()(C.background, x.image, h.image),
         src: b.Z,
         alt: ""
       }), (0, r.jsx)("div", {
-        className: l()(x.image, C.gradient)
+        className: l()(x.image, h.gradient)
       })]
     }), (0, r.jsx)(d.Q9, {
       title: _.intl.string(v.default["fjt/vr"]),

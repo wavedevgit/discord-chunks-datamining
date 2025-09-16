@@ -25,19 +25,19 @@ function x(e) {
   } = e, n = (0, a.Wu)([u.Z], () => {
     var e;
     return null != (e = u.Z.getAppliedGuildBoostsForGuild(t)) ? e : []
-  }, [t]), x = o.useMemo(() => n.sort((e, t) => g.default.extractTimestamp(e.id) < g.default.extractTimestamp(t.id) ? 1 : false), [n]), h = (0, a.Wu)([p.ZP], () => {
+  }, [t]), x = o.useMemo(() => n.sort((e, t) => g.default.extractTimestamp(e.id) < g.default.extractTimestamp(t.id) ? 1 : false), [n]), C = (0, a.Wu)([p.ZP], () => {
     let e = new Set;
     return x.forEach(n => {
       null == p.ZP.getMember(t, n.userId) && e.add(n.userId)
     }), Array.from(e)
   }, [t, x]);
   o.useEffect(() => {
-    h.length > 0 && h.forEach(e => d.Z.requestMember(t, e))
-  }, [t, h]);
-  let C = o.useMemo(() => h.length > 0 ? {
-    [t]: h
-  } : {}, [t, h]);
-  (0, c.$)(C, "GuildPowerupsRecentActivity");
+    C.length > 0 && C.forEach(e => d.Z.requestMember(t, e))
+  }, [t, C]);
+  let h = o.useMemo(() => C.length > 0 ? {
+    [t]: C
+  } : {}, [t, C]);
+  (0, c.$)(h, "GuildPowerupsRecentActivity");
   let b = (0, a.e7)([m.Z], () => {
     var e;
     return null == (e = m.Z.getGuild(t)) ? true : e.premiumSubscriberCount

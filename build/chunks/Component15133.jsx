@@ -37,13 +37,13 @@ function v(e) {
         icon: a.$Eu,
         "aria-label": ""
       }), (0, r.jsx)(l.ZP.Title, {
-        children: g.intl.string(b.default.lH9Dio)
+        children: b.intl.string(g.default.lH9Dio)
       })]
     }), (0, r.jsxs)("div", {
       className: f.contentContainer,
       children: [(null == v ? true : v.instances) != null ? (0, r.jsx)("div", {
         className: f.gameContainer,
-        children: y.map((e, n) => (0, r.jsx)(p.Z, {
+        children: y.map((e, n) => (0, r.jsx)(m.Z, {
           guildId: t,
           instance: e
         }, "".concat(e.gameId, "-").concat(n)))
@@ -52,7 +52,7 @@ function v(e) {
         children: (0, r.jsx)(s.$jN, {
           type: s.RAz.SPINNING_CIRCLE
         })
-      }), n && (0, r.jsx)(m.Z, {
+      }), n && (0, r.jsx)(p.Z, {
         guildId: t
       })]
     })]

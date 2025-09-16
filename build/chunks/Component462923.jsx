@@ -23,15 +23,15 @@ function y(e) {
   let {
     guildId: t,
     instance: n
-  } = e, y = (0, a.e7)([u.Z], () => u.Z.getState()), h = i.useCallback(() => {
-    y ? (0, m.Z)(n) : (0, b.Z)({
+  } = e, y = (0, a.e7)([u.Z], () => u.Z.getState()), j = i.useCallback(() => {
+    y ? (0, p.Z)(n) : (0, g.Z)({
       onAccept: () => {
-        (0, m.Z)(n)
+        (0, p.Z)(n)
       }
     })
-  }, [n, y]), j = i.useCallback(() => {
+  }, [n, y]), P = i.useCallback(() => {
     (0, l.JG)(n.serverIP), (0, o.showToast)((0, o.createToast)(f.intl.string(f.t["+5kSoa"]), o.ToastType.SUCCESS))
-  }, [n.serverIP]), O = (0, d.Z)(t);
+  }, [n.serverIP]), h = (0, d.Z)(t);
   return (0, r.jsxs)("div", {
     className: v.card,
     children: [(0, r.jsxs)("div", {
@@ -59,7 +59,7 @@ function y(e) {
           className: v.detailItem,
           children: [(0, r.jsx)(o.Text, {
             variant: "text-xs/semibold",
-            children: f.intl.string(g.default.X0IaiI)
+            children: f.intl.string(b.default.X0IaiI)
           }), (0, r.jsx)(o.Text, {
             variant: "text-sm/medium",
             children: "".concat(n.onlineConnectionsCount, " / ").concat(n.maxConnectionsCount)
@@ -68,7 +68,7 @@ function y(e) {
           className: v.detailItem,
           children: [(0, r.jsx)(o.Text, {
             variant: "text-xs/semibold",
-            children: f.intl.string(g.default["9pw/yM"])
+            children: f.intl.string(b.default["9pw/yM"])
           }), (0, r.jsx)("div", {
             className: v.serverIpContainer,
             children: y ? (0, r.jsxs)(r.Fragment, {
@@ -78,23 +78,23 @@ function y(e) {
               }), (0, r.jsx)(o.P3F, {
                 className: v.copyButton,
                 "aria-label": f.intl.string(f.t.OpuAlJ),
-                onClick: j,
+                onClick: P,
                 children: (0, r.jsx)(o.TIy, {
                   size: "sm"
                 })
               })]
             }) : (0, r.jsx)(s.Z, {
               onClick: () => {
-                (0, b.Z)({})
+                (0, g.Z)({})
               },
-              children: f.intl.string(g.default.UwXK29)
+              children: f.intl.string(b.default.UwXK29)
             })
           })]
         }), (0, r.jsxs)("div", {
           className: v.detailItem,
           children: [(0, r.jsx)(o.Text, {
             variant: "text-xs/semibold",
-            children: f.intl.string(g.default.MQQIu7)
+            children: f.intl.string(b.default.MQQIu7)
           }), (0, r.jsxs)("div", {
             className: v.statusContainer,
             children: [(0, r.jsx)("span", {
@@ -108,7 +108,7 @@ function y(e) {
           className: v.detailItem,
           children: [(0, r.jsx)(o.Text, {
             variant: "text-xs/semibold",
-            children: f.intl.string(g.default.v8iSgI)
+            children: f.intl.string(b.default.v8iSgI)
           }), (0, r.jsx)(o.Text, {
             variant: "text-sm/medium",
             children: (0, c.Y4)(new Date(n.lastUpdated))
@@ -119,12 +119,12 @@ function y(e) {
       className: v.serverActions,
       children: [(0, r.jsx)(o.zxk, {
         fullWidth: true,
-        text: f.intl.string(g.default["0TMXHh"]),
-        onClick: h,
+        text: f.intl.string(b.default["0TMXHh"]),
+        onClick: j,
         variant: "primary"
-      }), O && (0, r.jsx)(o.zxk, {
+      }), h && (0, r.jsx)(o.zxk, {
         fullWidth: true,
-        text: f.intl.string(g.default["jO3u+/"]),
+        text: f.intl.string(b.default["jO3u+/"]),
         onClick: () => {
           window.open(n.gameServerPanelUrl, "_blank")
         },
@@ -132,7 +132,7 @@ function y(e) {
       })]
     }), (0, r.jsx)("div", {
       className: v.overflowMenu,
-      children: (0, r.jsx)(p.Z, {
+      children: (0, r.jsx)(m.Z, {
         guildId: t,
         instance: n
       })

@@ -1,7 +1,8 @@
-/** Chunk was on 85683 **/
-/** chunk id: 693587, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 693587, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => g
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
@@ -29,90 +30,96 @@ function s(e) {
 }
 
 function l(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function c(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : l(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let c = {};
+let u = {};
 
-function d(e) {
-  return null == c[e] && (c[e] = {
+function d() {
+  u = {}
+}
+
+function f(e) {
+  return null == u[e] && (u[e] = {
     catalog: {},
     instances: {},
     entitlements: {}
-  }), c[e]
+  }), u[e]
 }
-class u extends(r = Chunk442837.ZP.Store) {
+
+function _(e) {
+  let {
+    guildId: t,
+    catalog: n
+  } = e;
+  u = c(s({}, u), {
+    [t]: c(s({}, f(t)), {
+      catalog: n,
+      hasFetchedCatalog: true
+    })
+  })
+}
+
+function p(e) {
+  let {
+    guildId: t,
+    instances: n
+  } = e;
+  u = c(s({}, u), {
+    [t]: c(s({}, f(t)), {
+      instances: n,
+      hasFetchedInstances: true
+    })
+  })
+}
+
+function h(e) {
+  let {
+    guildId: t,
+    unlockedGameServers: n
+  } = e, r = Object.values(n).reduce((e, t) => {
+    var n, r, i, a, o;
+    return e + (null != (o = null == (a = t.sku) || null == (i = a.tenant_metadata) || null == (r = i.guild_monetization) || null == (n = r.game_server) ? true : n.boost_price) ? o : 0)
+  }, 0);
+  u = c(s({}, u), {
+    [t]: c(s({}, f(t)), {
+      entitlements: n,
+      appliedBoosts: r
+    })
+  })
+}
+class m extends(r = Chunk442837.ZP.Store) {
   getState() {
-    return c
+    return u
   }
   getStateForGuild(e) {
-    return null != e ? c[e] : true
-  }
-  shouldFetchCatalogForGuild(e) {
-    var t;
-    let n = null == (t = c[e]) ? true : t.catalogFetchCooldown;
-    return null == n || n + 864e5 < Date.now()
-  }
-  shouldFetchInstancesForGuild(e) {
-    var t;
-    let n = null == (t = c[e]) ? true : t.instancesFetchCooldown;
-    return null == n || n + 36e5 < Date.now()
+    return null != e ? u[e] : true
   }
   hasFetchedCatalog(e) {
     var t;
-    return null != e && (null == (t = c[e]) ? true : t.hasFetchedCatalog) === true
+    return null != e && (null == (t = u[e]) ? true : t.hasFetchedCatalog) === true
   }
   hasFetchedInstances(e) {
     var t;
-    return null != e && (null == (t = c[e]) ? true : t.hasFetchedInstances) === true
+    return null != e && (null == (t = u[e]) ? true : t.hasFetchedInstances) === true
   }
 }
-o(u, "displayName", "PortkeyStore");
-let p = new u(Chunk570140.Z, {
-  LOGOUT: function() {
-    c = {}
-  },
-  PORTKEY_FETCH_CATALOG_SUCCESS: function(e) {
-    let {
-      guildId: t,
-      catalog: n
-    } = e;
-    c = l(s({}, c), {
-      [t]: l(s({}, d(t)), {
-        catalog: n,
-        hasFetchedCatalog: true
-      })
-    })
-  },
-  PORTKEY_FETCH_INSTANCES_SUCCESS: function(e) {
-    let {
-      guildId: t,
-      instances: n
-    } = e;
-    c = l(s({}, c), {
-      [t]: l(s({}, d(t)), {
-        instances: n,
-        hasFetchedInstances: true
-      })
-    })
-  },
-  GUILD_BOOST_ENTITLEMENTS_FETCH_SUCCESS: function(e) {
-    let {
-      guildId: t,
-      unlockedGameServers: n
-    } = e;
-    c = l(s({}, c), {
-      [t]: l(s({}, d(t)), {
-        entitlements: n
-      })
-    })
-  }
+o(m, "displayName", "PortkeyStore");
+let g = new m(Chunk570140.Z, {
+  LOGOUT: d,
+  PORTKEY_FETCH_CATALOG_SUCCESS: _,
+  PORTKEY_FETCH_INSTANCES_SUCCESS: p,
+  GUILD_BOOST_ENTITLEMENTS_FETCH_SUCCESS: h
 })
