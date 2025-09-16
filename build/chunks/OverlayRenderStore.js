@@ -121,9 +121,11 @@ function K() {
 }
 
 function z(e, t) {
+  var n;
+  let r = null == (n = j[e]) ? true : n.state;
   j = A(T({}, j), {
     [e]: T({}, t)
-  })
+  }), r !== t.state && s.Z.trackOverlayStateChanged(e, r, t.state)
 }
 
 function q(e) {
