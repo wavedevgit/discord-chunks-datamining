@@ -184,23 +184,25 @@ async function j(e) {
   let {
     questId: t,
     streamKey: n,
-    terminal: i = false
+    applicationId: i,
+    terminal: s = false
   } = e;
   try {
-    var s;
+    var l;
     let e = await _.Z.post({
       url: T.ANM.QUESTS_HEARTBEAT(t),
       body: {
         stream_key: n,
-        terminal: i
+        application_id: i,
+        terminal: s
       },
       trackedActionData: {
         event: r.NetworkActionNames.QUEST_HEARTBEAT,
         properties: {
           quest_id: t,
-          terminal: i,
+          terminal: s,
           is_overlay: __OVERLAY__,
-          stack_trace: null != (s = Error().stack) ? s : "",
+          stack_trace: null != (l = Error().stack) ? l : "",
           is_playtime_eligible: true
         }
       },

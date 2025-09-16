@@ -54,25 +54,25 @@ class P extends Chunk147913.Z {
   syncHeartbeats(e, t, n) {
     for (let r of ("VOICE_STATE_UPDATES" !== t && "PASSIVE_UPDATE_V2" !== t && A.log("~ syncHeartbeats -> syncing heartbeats for taskTypes: ".concat(e.join(", "), " (triggered by: ").concat(t, ")")), e)) {
       let e = this.heartbeats[r],
-        t = this.getActivelyProgressingQuestIds(r);
+        t = this.getActivelyProgressingQuests(r);
       for (let n of new Set(e.keys())) t.has(n) || this.terminateHeartbeat(n, r);
-      for (let i of t) !e.has(i) && (null == n || n(E.Z.quests.get(i))) && this.initiateHeartbeat(i, r)
+      for (let [i, a] of t.entries()) !e.has(i) && (null == n || n(E.Z.quests.get(i))) && this.initiateHeartbeat(i, r, a.applicationId)
     }
   }
-  getActivelyProgressingQuestIds(e) {
+  getActivelyProgressingQuests(e) {
     switch (e) {
       case r.X.PLAY_ON_DESKTOP:
-        return this.getActivelyProgressingPlayOnDesktopQuestIds();
+        return this.getActivelyProgressingPlayOnDesktopQuests();
       case r.X.STREAM_ON_DESKTOP:
-        return this.getActivelyProgressingStreamOnDesktopQuestIds();
+        return this.getActivelyProgressingStreamOnDesktopQuests();
       case r.X.PLAY_ACTIVITY:
-        return this.getActivelyProgressingActivityQuestIds();
+        return this.getActivelyProgressingActivityQuests();
       default:
         (0, h.vE)(e)
     }
   }
-  getActivelyProgressingPlayOnDesktopQuestIds() {
-    let e = new Set,
+  getActivelyProgressingPlayOnDesktopQuests() {
+    let e = new Map,
       t = Chunk594190.ZP.getRunningGames(),
       n = Chunk569984.Z.quests;
     A.log("~ getActivelyProgressingPlayOnDesktopQuestIds -> Running games: ", exports);
@@ -98,13 +98,19 @@ class P extends Chunk147913.Z {
         let n = Chunk670081.config.taskConfigV2.tasks[Chunk754700.X.PLAY_ON_DESKTOP];
         if (!C(Chunk670081) || null == require) continue;
         let s = [Chunk670081.config.application];
-        Chunk147913 && null != require.applications && (s = require.applications), (Chunk594190.some(e => e.id === t) || N(Chunk670081, Chunk317381)) && module.add(Chunk670081.id)
+        Chunk147913 && null != require.applications && (s = require.applications);
+        let l = Chunk594190.find(e => e.id === t);
+        null != Chunk569545 ? module.set(Chunk670081.id, {
+          applicationId: Chunk569545.id
+        }) : N(Chunk670081, Chunk317381) && module.set(Chunk670081.id, {
+          applicationId: Chunk817788.eB
+        })
       }
     }
-    return A.log("~ getActivelyProgressingPlayOnDesktopQuestIds -> Actively progressing questIds: ", module), module
+    return A.log("~ getActivelyProgressingPlayOnDesktopQuestIds -> Actively progressing questIds: ", Array.from(module.keys())), module
   }
-  getActivelyProgressingStreamOnDesktopQuestIds() {
-    let e = new Set,
+  getActivelyProgressingStreamOnDesktopQuests() {
+    let e = new Map,
       t = Chunk199902.Z.getCurrentUserActiveStream();
     if (null == exports || Chunk938475.ZP.countVoiceStatesForChannel(exports.channelId) < T) return module;
     let n = Chunk199902.Z.getStreamerActiveStreamMetadata();
@@ -114,19 +120,25 @@ class P extends Chunk147913.Z {
     if (null == Chunk754700) return module;
     for (let t of Chunk569984.Z.quests.values()) C(exports) && (0, Chunk509212.Dr)({
       quest: exports
-    }) && exports.config.application.id === Chunk754700 && module.add(exports.id);
-    return A.log("~ getActivelyProgressingStreamOnDesktopQuestIds -> Actively progressing questIds: ", module), module
+    }) && exports.config.application.id === Chunk754700 && module.set(exports.id, {
+      applicationId: Chunk754700
+    });
+    return A.log("~ getActivelyProgressingStreamOnDesktopQuestIds -> Actively progressing questIds: ", Array.from(module.keys())), module
   }
-  getActivelyProgressingActivityQuestIds() {
-    let e = new Set,
+  getActivelyProgressingActivityQuests() {
+    let e = new Map,
       t = Chunk317381.ZP.getSelfEmbeddedActivities(),
       n = exports.size > 0;
     if (A.log("~ getActivelyProgressingActivityQuestIds -> Embedded activities: ", exports), !require) return module;
     let r = Chunk569984.Z.quests;
     for (let n of exports.keys())
-      for (let t of Chunk754700.values()) C(exports) && (0, Chunk509212.pO)(exports) && exports.config.application.id === require && module.add(exports.id);
-    for (let t of Chunk754700.values()) C(exports) && (0, Chunk509212.KM)(exports) && require && module.add(exports.id);
-    return A.log("~ getActivelyProgressingActivityQuestIds -> Actively progressing questIds: ", module), module
+      for (let t of Chunk754700.values()) C(exports) && (0, Chunk509212.pO)(exports) && exports.config.application.id === require && module.set(exports.id, {
+        applicationId: require
+      });
+    for (let t of Chunk754700.values()) C(exports) && (0, Chunk509212.KM)(exports) && require && module.set(exports.id, {
+      applicationId: Chunk46140.Ts
+    });
+    return A.log("~ getActivelyProgressingActivityQuestIds -> Actively progressing questIds: ", Array.from(module.keys())), module
   }
   constructor(...e) {
     super(...e), v(this, "heartbeats", {
@@ -141,11 +153,15 @@ class P extends Chunk147913.Z {
         targetSeconds: i
       } = (0, m.il)(t, r.T.DESKTOP), a = Math.max(0, (i - n) * p.Z.Millis.SECOND);
       return a <= I ? a + S : I
-    }), v(this, "initiateHeartbeat", (e, t) => {
-      let n = this.heartbeats[t];
-      if (n.has(e)) return void A.log("~ initiateHeartbeat -> Heartbeat already initiated for questId: ".concat(e));
-      let i = () => {
-        if (this.getActivelyProgressingQuestIds(t).has(e)) {
+    }), v(this, "initiateHeartbeat", (e, t, n) => {
+      let i = this.heartbeats[t];
+      if (i.has(e)) return void A.log("~ initiateHeartbeat -> Heartbeat already initiated for questId: ".concat(e));
+      let a = () => {
+        let o = this.getActivelyProgressingQuests(t);
+        if (o.has(e)) {
+          var s;
+          let c = o.get(e),
+            u = null != (s = null == c ? true : c.applicationId) ? s : n;
           if (t === r.X.STREAM_ON_DESKTOP) {
             let n = d.Z.getCurrentUserActiveStream();
             if (null == n) {
@@ -155,17 +171,19 @@ class P extends Chunk147913.Z {
             let r = (0, l.V9)(n);
             A.log("~ initiateHeartbeat -> Sending heartbeat for questId: ".concat(e)), (0, g.m0)({
               questId: e,
-              streamKey: r
+              streamKey: r,
+              applicationId: u
             })
           } else A.log("~ initiateHeartbeat -> Sending heartbeat for questId: ".concat(e)), (0, g.m0)({
-            questId: e
+            questId: e,
+            applicationId: u
           });
-          let a = this.calculateHeartbeatDurationMs(e),
-            o = window.setTimeout(i, a);
-          n.set(e, o)
+          let f = this.calculateHeartbeatDurationMs(e),
+            _ = window.setTimeout(a, f);
+          i.set(e, _)
         } else A.log("~ initiateHeartbeat -> Quest ".concat(e, " is no longer actively progressing, terminating heartbeat")), this.terminateHeartbeat(e, t)
       };
-      A.log("~ initiateHeartbeat -> Initiating heartbeat for Quest ".concat(e)), i()
+      A.log("~ initiateHeartbeat -> Initiating heartbeat for Quest ".concat(e)), a()
     }), v(this, "terminateHeartbeat", (e, t) => {
       let n = this.heartbeats[t],
         r = E.Z.quests,
