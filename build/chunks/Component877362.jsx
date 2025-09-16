@@ -35,10 +35,10 @@ function O(e) {
   var t, n;
   let {
     guildId: o
-  } = e, d = (0, a.e7)([b.Z], () => b.Z.getGuild(o)), j = (0, a.e7)([x.Z], () => x.Z.getSortedRoles(o).find(e => {
+  } = e, d = (0, a.e7)([C.Z], () => C.Z.getGuild(o)), j = (0, a.e7)([h.Z], () => h.Z.getSortedRoles(o).find(e => {
     var t;
     return (null == (t = e.tags) ? true : t.premium_subscriber) === null
-  })), O = (0, a.e7)([C.default], () => C.default.getCurrentUser()), N = null == O ? true : O.id, Z = (0, a.e7)([h.ZP], () => null != N ? h.ZP.getMember(o, N) : true, [N, o]), k = (null == Z ? true : Z.premiumSince) != null, A = (0, a.e7)([p.Z], () => p.Z.useReducedMotion), {
+  })), O = (0, a.e7)([b.default], () => b.default.getCurrentUser()), N = null == O ? true : O.id, Z = (0, a.e7)([x.ZP], () => null != N ? x.ZP.getMember(o, N) : true, [N, o]), k = (null == Z ? true : Z.premiumSince) != null, A = (0, a.e7)([p.Z], () => p.Z.useReducedMotion), {
     avatarDecorationSrc: U,
     avatarSrc: R,
     eventHandlers: L

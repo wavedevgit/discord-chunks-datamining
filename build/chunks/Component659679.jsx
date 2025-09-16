@@ -32,7 +32,7 @@ function f(e) {
       roleColor: null != (r = null == i ? true : i.colorString) ? r : null,
       roleColorStrings: null != (o = null == i ? true : i.colorStrings) ? o : null
     }
-  }, [t]), h = (0, d.X7)(t.guildId, t.userId, null != _ ? _ : null);
+  }, [t]), x = (0, d.X7)(t.guildId, t.userId, null != _ ? _ : null);
   return (0, r.jsx)(s.Z, {
     className: g.systemMessageContainer,
     contentClassName: g.systemMessageContent,
@@ -53,7 +53,7 @@ function f(e) {
         variant: "text-md/semibold",
         name: f,
         colorString: null != v ? v : null,
-        colorStrings: h
+        colorStrings: x
       }), (0, r.jsx)(o.xvT, {
         variant: "text-md/medium",
         lineClamp: 1,

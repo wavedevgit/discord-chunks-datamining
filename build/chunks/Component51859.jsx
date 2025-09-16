@@ -22,18 +22,18 @@ function _(e) {
   let {
     guildId: t,
     powerup: n
-  } = e, [_, h] = o.useState(true);
+  } = e, [_, x] = o.useState(true);
   (0, m.KT)(_);
-  let [x, b] = o.useState(false), C = (0, s.ZP)(t, n).type !== f.A3.INACTIVE, E = (0, g.d)(C), j = (0, a.g1)(t, "GuildPowerupPerkCard"), T = n.skuId === i.A$;
+  let [h, C] = o.useState(false), b = (0, s.ZP)(t, n).type !== f.A3.INACTIVE, E = (0, g.d)(b), j = (0, a.g1)(t, "GuildPowerupPerkCard"), T = n.skuId === i.A$;
   return (0, r.jsxs)(p.Z, {
-    onHover: e => b(e),
+    onHover: e => C(e),
     guildId: t,
     powerup: n,
     badge: T || j ? T && j ? "beta" : true : "new",
     children: [(0, r.jsx)(d.m, {
       className: v.image,
       powerup: n,
-      isHovering: x
+      isHovering: h
     }), (0, r.jsx)(c.Q9, {
       title: n.title,
       textColor: E,
@@ -51,7 +51,7 @@ function _(e) {
       children: (0, r.jsx)(u.ZP, {
         guildId: t,
         powerup: n,
-        onError: h
+        onError: x
       })
     })]
   })

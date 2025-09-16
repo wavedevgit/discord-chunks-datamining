@@ -20,16 +20,16 @@ var Chunk951288 = require("./951288.js"),
 
 function _(e) {
   var t, n, _;
-  let h, {
-      guildId: x,
-      group: b,
-      powerups: C
+  let x, {
+      guildId: h,
+      group: C,
+      powerups: b
     } = e,
     [E, j] = o.useState(false),
-    T = (0, c.Gv)(x, C),
+    T = (0, c.Gv)(h, b),
     P = (0, i.e7)([s.Z], () => s.Z.useReducedMotion),
-    I = (0, d.Z)(b, x);
-  if (true === I || C.length <= 0) return null;
+    I = (0, d.Z)(C, h);
+  if (true === I || b.length <= 0) return null;
   let y = T.some(e => e.type !== m.A3.INACTIVE),
     S = (0, p.d)(y),
     w = T.reduce((e, t) => {
@@ -38,10 +38,10 @@ function _(e) {
       } = t, r = null == n ? true : n.ends_at;
       return null == r ? e : null == e || r < e ? r : e
     }, true);
-  true !== w ? h = {
+  true !== w ? x = {
     type: "expiring",
     expiringAt: w
-  } : y && (h = {
+  } : y && (x = {
     type: "active",
     statusText: f.intl.string(g.default.FFLkm5)
   });
@@ -75,7 +75,7 @@ function _(e) {
     label: I.title,
     isActive: y,
     badge: I.badge,
-    onClick: () => I.openModal(C),
+    onClick: () => I.openModal(b),
     onMouseOver: () => j(true),
     onMouseLeave: () => j(false),
     children: [(0, r.jsx)("img", {
@@ -86,7 +86,7 @@ function _(e) {
       title: I.title,
       textColor: S,
       footer: (0, r.jsx)(u.uf, {
-        status: h,
+        status: x,
         cost: k,
         costDecorator: A
       }),

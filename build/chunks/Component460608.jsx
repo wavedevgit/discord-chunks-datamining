@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 460608, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => x
 }), require("./642613.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,32 +19,32 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk240379 = require("./240379.js");
 
-function h(e) {
+function x(e) {
   let {
     guildId: t
   } = e, n = (0, a.Wu)([u.Z], () => {
     var e;
     return null != (e = u.Z.getAppliedGuildBoostsForGuild(t)) ? e : []
-  }, [t]), h = o.useMemo(() => n.sort((e, t) => g.default.extractTimestamp(e.id) < g.default.extractTimestamp(t.id) ? 1 : false), [n]), x = (0, a.Wu)([p.ZP], () => {
+  }, [t]), x = o.useMemo(() => n.sort((e, t) => g.default.extractTimestamp(e.id) < g.default.extractTimestamp(t.id) ? 1 : false), [n]), h = (0, a.Wu)([p.ZP], () => {
     let e = new Set;
-    return h.forEach(n => {
+    return x.forEach(n => {
       null == p.ZP.getMember(t, n.userId) && e.add(n.userId)
     }), Array.from(e)
-  }, [t, h]);
-  o.useEffect(() => {
-    x.length > 0 && x.forEach(e => d.Z.requestMember(t, e))
   }, [t, x]);
-  let b = o.useMemo(() => x.length > 0 ? {
-    [t]: x
-  } : {}, [t, x]);
-  (0, c.$)(b, "GuildPowerupsRecentActivity");
-  let C = (0, a.e7)([m.Z], () => {
+  o.useEffect(() => {
+    h.length > 0 && h.forEach(e => d.Z.requestMember(t, e))
+  }, [t, h]);
+  let C = o.useMemo(() => h.length > 0 ? {
+    [t]: h
+  } : {}, [t, h]);
+  (0, c.$)(C, "GuildPowerupsRecentActivity");
+  let b = (0, a.e7)([m.Z], () => {
     var e;
     return null == (e = m.Z.getGuild(t)) ? true : e.premiumSubscriberCount
   });
   return (o.useEffect(() => {
-    C !== n.length && (0, s.C0)(t)
-  }, [t, C, n.length]), 0 === h.length) ? null : (0, r.jsxs)(r.Fragment, {
+    b !== n.length && (0, s.C0)(t)
+  }, [t, b, n.length]), 0 === x.length) ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.X6q, {
       className: _.header,
       variant: "eyebrow",
@@ -53,7 +53,7 @@ function h(e) {
     }), (0, r.jsx)(i.zJ, {
       className: _.container,
       fade: true,
-      children: h.map((e, t) => (0, r.jsx)(f.Z, {
+      children: x.map((e, t) => (0, r.jsx)(f.Z, {
         boost: e
       }, "boost-activity-".concat(t)))
     })]

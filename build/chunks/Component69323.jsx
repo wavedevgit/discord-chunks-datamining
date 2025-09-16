@@ -22,20 +22,20 @@ function v(e) {
     powerup: t,
     targetRef: n,
     isCardVisible: v
-  } = e, _ = (0, l.e7)([d.Z], () => d.Z.hasLayers()), h = (0, s.f9)(), x = t.skuId === i.A$ ? {
+  } = e, _ = (0, l.e7)([d.Z], () => d.Z.hasLayers()), x = (0, s.f9)(), h = t.skuId === i.A$ ? {
     title: f.intl.string(g.default.YWo6VF),
     body: f.intl.string(g.default.gXVvKS),
     dismissibleContentType: a.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER
-  } : null, b = [];
-  null == x || _ || !v || h || b.push(x.dismissibleContentType);
-  let [C, E] = (0, u.US)(b), j = o.useCallback(() => {
+  } : null, C = [];
+  null == h || _ || !v || x || C.push(h.dismissibleContentType);
+  let [b, E] = (0, u.US)(C), j = o.useCallback(() => {
     E(m.L.INDIRECT_ACTION)
   }, [E]);
   return ((0, p.Z)({
     targetRef: n,
     onShouldClose: j,
-    enabled: null != C
-  }), null == x || null == C) ? null : (0, r.jsx)(c.J2, {
+    enabled: null != b
+  }), null == h || null == b) ? null : (0, r.jsx)(c.J2, {
     targetElementRef: n,
     shouldShow: true,
     position: "right",
@@ -44,8 +44,8 @@ function v(e) {
     caretConfig: {
       align: "start"
     },
-    title: x.title,
-    body: x.body,
+    title: h.title,
+    body: h.body,
     onRequestClose: () => {
       E(m.L.USER_DISMISS)
     }

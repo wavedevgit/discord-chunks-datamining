@@ -1,7 +1,7 @@
 /** Chunk was on 45141 **/
 /** chunk id: 859432, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => Y
+  default: () => q
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -45,7 +45,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk899926 = require("./899926.js"),
   Chunk617575 = require("./617575.js");
 
-function Q(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -64,7 +64,7 @@ function Q(e) {
   return e
 }
 
-function W(e, t) {
+function Y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -76,86 +76,86 @@ function W(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let Y = Chunk647438.memo(function(e) {
+let q = Chunk647438.memo(function(e) {
   let {
     guild: t,
     onClose: l,
-    onSelect: Y
-  } = e, q = (0, o.e7)([U.default], () => U.default.getCurrentUser());
-  a()(null != q, "GuildHeaderPopout: user cannot be undefined"), r.useEffect(() => {
-    L.default.track(B.rMx.GUILD_DROPDOWN_MENU_VIEWED, {
+    onSelect: q
+  } = e, V = (0, o.e7)([U.default], () => U.default.getCurrentUser());
+  a()(null != V, "GuildHeaderPopout: user cannot be undefined"), r.useEffect(() => {
+    L.default.track(M.rMx.GUILD_DROPDOWN_MENU_VIEWED, {
       guild_id: t.id
     })
   });
-  let V = (0, o.e7)([T.ZP], () => T.ZP.isGuildCollapsed(t.id), [t.id]),
+  let W = (0, o.e7)([T.ZP], () => T.ZP.isGuildCollapsed(t.id), [t.id]),
     {
       canAccessSettings: J,
-      canManageChannels: z,
-      showGuildAnalytics: X
+      canManageChannels: X,
+      showGuildAnalytics: z
     } = (0, o.cj)([C.Z], () => ({
       canAccessSettings: C.Z.canAccessGuildSettings(t),
-      canManageChannels: C.Z.can(B.Plq.MANAGE_CHANNELS, t),
-      showGuildAnalytics: C.Z.can(B.Plq.VIEW_GUILD_ANALYTICS, t) && t.features.has(B.oNc.COMMUNITY)
+      canManageChannels: C.Z.can(M.Plq.MANAGE_CHANNELS, t),
+      showGuildAnalytics: C.Z.can(M.Plq.VIEW_GUILD_ANALYTICS, t) && t.features.has(M.oNc.COMMUNITY)
     }), [t]),
     K = (0, P.N8)(t),
-    $ = (0, G.eM)(t, q),
+    $ = (0, G.eM)(t, V),
     ee = (0, o.e7)([I.Z], () => I.Z.isLurking(t.id), [t.id]),
     et = (0, o.e7)([A.ZP], () => A.ZP.isCurrentUserGuest(t.id)),
     en = (0, Z.Z)(t.id, true),
-    ei = (0, g.ZP)(t),
+    ei = (0, b.ZP)(t),
     er = (0, x.Z)({
-      source: B.t4x.GUILD_HEADER,
+      source: M.t4x.GUILD_HEADER,
       guild: t
     }),
-    el = (0, y.Z)({
+    el = (0, j.Z)({
       guildId: t.id,
-      userId: q.id,
+      userId: V.id,
       analyticsLocation: {
-        page: B.ZY5.GUILD_CHANNEL,
-        section: B.jXE.GUILD_DROPDOWN_MENU
+        page: M.ZY5.GUILD_CHANNEL,
+        section: M.jXE.GUILD_DROPDOWN_MENU
       },
       icon: c.vdY
     }),
-    ea = t.features.has(B.oNc.HUB),
-    eo = t.id === M._,
-    ec = t.id === B.STv,
-    ed = (0, _.Z)(t.id),
-    es = (0, h.Z)(t),
-    eu = (0, p.Z)(t),
-    eb = (0, O.Z)(t, true),
-    eg = (0, j.Z)(t),
+    ea = t.features.has(M.oNc.HUB),
+    eo = t.id === B._,
+    ec = t.id === M.STv,
+    es = (0, _.Z)(t.id),
+    ed = (0, p.Z)(t),
+    eu = (0, y.Z)(t),
+    eg = (0, O.Z)(t, true),
+    eb = (0, h.Z)(t),
     {
       isFavoritesPerk: ef
     } = (0, f.z)("GuildHeaderPopout"),
-    eh = (0, k.o)(t),
+    ep = (0, k.o)(t),
     {
-      triggerDeadchat: ep
-    } = b.Z.useExperiment({
+      triggerDeadchat: ey
+    } = g.Z.useExperiment({
       guildId: t.id,
       location: "guild header"
     }, {
       autoTrackExposure: false
     }),
     {
-      triggerGamingStats: ey
+      triggerGamingStats: ej
     } = u.F.useExperiment({
       guildId: t.id,
       location: "guild header"
     }, {
       autoTrackExposure: false
     }),
-    ej = r.useCallback(() => {
+    eh = r.useCallback(() => {
       (0, c.ZDy)(async () => {
         let {
           default: e
         } = await n.e("53961").then(n.bind(n, 402979));
-        return n => (0, i.jsx)(e, W(Q({}, n), {
+        return n => (0, i.jsx)(e, Y(R({}, n), {
           guild: t
         }))
       })
     }, [t]);
   return ee || et ? (0, i.jsx)(c.v2r, {
-    onSelect: Y,
+    onSelect: q,
     navId: "guild-header-popout",
     variant: "fixed",
     onClose: l,
@@ -169,7 +169,7 @@ let Y = Chunk647438.memo(function(e) {
       }
     })
   }) : eo ? (0, i.jsxs)(c.v2r, {
-    onSelect: Y,
+    onSelect: q,
     navId: "favorites-header-popout",
     variant: "fixed",
     onClose: l,
@@ -184,7 +184,7 @@ let Y = Chunk647438.memo(function(e) {
           let {
             default: e
           } = await n.e("29608").then(n.bind(n, 610617));
-          return t => (0, i.jsx)(e, Q({}, t))
+          return t => (0, i.jsx)(e, R({}, t))
         })
       }), (0, i.jsx)(c.sNh, {
         id: "create-category",
@@ -194,19 +194,19 @@ let Y = Chunk647438.memo(function(e) {
           let {
             default: e
           } = await n.e("33356").then(n.bind(n, 477782));
-          return t => (0, i.jsx)(e, Q({}, t))
+          return t => (0, i.jsx)(e, R({}, t))
         })
       })]
     }), (0, i.jsx)(c.kSQ, {
       children: (0, i.jsx)(c.S89, {
         id: "hide-muted-channels",
         label: F.intl.string(F.t.UwOLJC),
-        checked: V,
-        action: () => d.Z.toggleCollapseGuild(t.id)
+        checked: W,
+        action: () => s.Z.toggleCollapseGuild(t.id)
       })
     })]
   }) : ea ? (0, i.jsxs)(c.v2r, {
-    onSelect: Y,
+    onSelect: q,
     navId: "guild-header-popout",
     variant: "fixed",
     onClose: l,
@@ -215,9 +215,9 @@ let Y = Chunk647438.memo(function(e) {
       children: [J ? (0, i.jsx)(c.sNh, {
         id: "settings",
         label: F.intl.string(F.t["154/bG"]),
-        icon: eh ? c.Ncx : c.ewm,
+        icon: ep ? c.Ncx : c.ewm,
         action: () => {
-          w.Z.open(t.id, (0, S.r)())
+          w.Z.open(t.id, (0, D.r)())
         }
       }) : null, er, (0, i.jsx)(c.sNh, {
         id: "privacy",
@@ -227,7 +227,7 @@ let Y = Chunk647438.memo(function(e) {
           let {
             default: e
           } = await n.e("59500").then(n.bind(n, 241420));
-          return n => (0, i.jsx)(e, W(Q({}, n), {
+          return n => (0, i.jsx)(e, Y(R({}, n), {
             guild: t
           }))
         })
@@ -238,11 +238,11 @@ let Y = Chunk647438.memo(function(e) {
         label: F.intl.string(F.t.Dv8gFR),
         icon: c.PBZ,
         color: "danger",
-        action: ej
+        action: eh
       })
     })]
   }) : ec ? null : (0, i.jsxs)(c.v2r, {
-    onSelect: Y,
+    onSelect: q,
     navId: "guild-header-popout",
     variant: "fixed",
     onClose: l,
@@ -256,49 +256,49 @@ let Y = Chunk647438.memo(function(e) {
           (0, m.f)({
             guildId: t.id,
             location: {
-              section: B.jXE.GUILD_HEADER_POPOUT
+              section: M.jXE.GUILD_HEADER_POPOUT
             }
           })
         }
-      }), (0, D.up)(t) && (0, D.jq)(t) && (0, i.jsx)(c.sNh, {
+      }), (0, S.up)(t) && (0, S.jq)(t) && (0, i.jsx)(c.sNh, {
         id: "guild-tag",
-        label: F.intl.string(R.default.mf2OwM),
-        icon: (0, i.jsx)(E.m0, {
+        label: F.intl.string(H.default.mf2OwM),
+        icon: (0, i.jsx)(N.m0, {
           guildId: t.id,
           guildBadge: t.profile.badge,
           guildTag: t.profile.tag,
           inline: false
         }),
-        action: () => (0, N.Z)(t.id)
+        action: () => (0, E.Z)(t.id)
       })]
     }), (0, i.jsxs)(c.kSQ, {
-      children: [$ && q.isStaff() && ep ? (0, i.jsx)(c.sNh, {
+      children: [$ && V.isStaff() && ey ? (0, i.jsx)(c.sNh, {
         id: "create-deadchat",
         label: "Deadchat Ping",
         icon: c.eQA,
         action: () => {
-          (0, s.j8)(t.id, B.uaV.GUILD_DEADCHAT_REVIVE_PROMPT)
+          (0, d.j8)(t.id, M.uaV.GUILD_DEADCHAT_REVIVE_PROMPT)
         }
-      }) : null, $ && q.isStaff() && ey ? (0, i.jsx)(c.sNh, {
+      }) : null, $ && V.isStaff() && ej ? (0, i.jsx)(c.sNh, {
         id: "create-gaming-ping",
         label: "Gaming Stats Ping",
         icon: c.eQA,
         action: () => {
-          (0, s.j8)(t.id, B.uaV.GUILD_GAMING_STATS_PROMPT)
+          (0, d.j8)(t.id, M.uaV.GUILD_GAMING_STATS_PROMPT)
         }
       }) : null, er, J ? (0, i.jsx)(c.sNh, {
         id: "settings",
         label: F.intl.string(F.t["154/bG"]),
-        icon: eh ? c.Ncx : c.ewm,
+        icon: ep ? c.Ncx : c.ewm,
         action: () => {
-          w.Z.open(t.id, (0, S.r)())
+          w.Z.open(t.id, (0, D.r)())
         }
-      }) : null, X ? (0, i.jsx)(c.sNh, {
+      }) : null, z ? (0, i.jsx)(c.sNh, {
         id: "insights",
         label: F.intl.string(F.t["0wWfUF"]),
         icon: c.IeX,
-        action: () => w.Z.open(t.id, B.pNK.ANALYTICS)
-      }) : null, z ? (0, i.jsxs)(i.Fragment, {
+        action: () => w.Z.open(t.id, M.pNK.ANALYTICS)
+      }) : null, X ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(c.sNh, {
           id: "create-channel",
           label: F.intl.string(F.t["fUYU+v"]),
@@ -307,8 +307,8 @@ let Y = Chunk647438.memo(function(e) {
             let {
               default: e
             } = await Promise.all([n.e("45094"), n.e("67133")]).then(n.bind(n, 218613));
-            return n => (0, i.jsx)(e, W(Q({}, n), {
-              channelType: B.d4z.GUILD_TEXT,
+            return n => (0, i.jsx)(e, Y(R({}, n), {
+              channelType: M.d4z.GUILD_TEXT,
               guildId: t.id
             }))
           })
@@ -320,18 +320,18 @@ let Y = Chunk647438.memo(function(e) {
             let {
               default: e
             } = await Promise.all([n.e("45094"), n.e("67133")]).then(n.bind(n, 218613));
-            return n => (0, i.jsx)(e, W(Q({}, n), {
-              channelType: B.d4z.GUILD_CATEGORY,
+            return n => (0, i.jsx)(e, Y(R({}, n), {
+              channelType: M.d4z.GUILD_CATEGORY,
               guildId: t.id
             }))
           })
         })]
-      }) : null, en, es, eu, ei, eg]
+      }) : null, en, ed, eu, ei, eb]
     }), (0, i.jsxs)(c.kSQ, {
-      children: [ed, (0, i.jsx)(c.sNh, {
+      children: [es, (0, i.jsx)(c.sNh, {
         id: "notifications",
         label: (0, i.jsx)("div", {
-          className: H.newBadgeRow,
+          className: Q.newBadgeRow,
           children: F.intl.string(F.t.h850Sk)
         }),
         icon: c.Dkj,
@@ -339,7 +339,7 @@ let Y = Chunk647438.memo(function(e) {
           let {
             default: e
           } = await Promise.all([n.e("15076"), n.e("79692")]).then(n.bind(n, 907941));
-          return n => (0, i.jsx)(e, W(Q({}, n), {
+          return n => (0, i.jsx)(e, Y(R({}, n), {
             guildId: t.id
           }))
         })
@@ -351,7 +351,7 @@ let Y = Chunk647438.memo(function(e) {
           let {
             default: e
           } = await n.e("59500").then(n.bind(n, 241420));
-          return n => (0, i.jsx)(e, W(Q({}, n), {
+          return n => (0, i.jsx)(e, Y(R({}, n), {
             guild: t
           }))
         })
@@ -360,11 +360,11 @@ let Y = Chunk647438.memo(function(e) {
       children: [el, (0, i.jsx)(c.S89, {
         id: "hide-muted-channels",
         label: F.intl.string(F.t.UwOLJC),
-        checked: V,
-        action: () => d.Z.toggleCollapseGuild(t.id)
+        checked: W,
+        action: () => s.Z.toggleCollapseGuild(t.id)
       })]
     }), (0, i.jsxs)(c.kSQ, {
-      children: [eb, K && t.features.has(B.oNc.COMMUNITY) ? (0, i.jsx)(c.sNh, {
+      children: [eg, K && t.features.has(M.oNc.COMMUNITY) ? (0, i.jsx)(c.sNh, {
         id: "report-raid",
         label: F.intl.string(F.t.cswId3),
         icon: c.b7C,
@@ -375,7 +375,7 @@ let Y = Chunk647438.memo(function(e) {
         label: F.intl.string(F.t.J2TBi4),
         icon: c.PBZ,
         color: "danger",
-        action: ej
+        action: eh
       })]
     })]
   })

@@ -30,13 +30,13 @@ function E(e) {
     position: i
   } = e;
   return t = n && false !== o ? "full" : n && false === o ? "half" : "none", (0, r.jsxs)("div", {
-    className: C.progressContainer,
+    className: b.progressContainer,
     children: [(0, r.jsx)("div", {
-      className: l()(C.progress, C[i], C[t])
+      className: l()(b.progress, b[i], b[t])
     }), (0, r.jsx)("div", {
-      className: l()(C.boostContainer, b.boostProgressBackground, {
-        [C.boostContainerActive]: n,
-        [b.active]: n
+      className: l()(b.boostContainer, C.boostProgressBackground, {
+        [b.boostContainerActive]: n,
+        [C.active]: n
       }),
       children: (0, r.jsx)(s.$Eu, {
         size: "sm",
@@ -55,12 +55,12 @@ function j(e) {
     if (null == e) return [];
     let t = e.tier === _.Eu4.TIER_3 ? e.perks.slice(0, false) : e.perks;
     return null == t ? true : t.map((e, t) => (0, r.jsxs)("div", {
-      className: C.perkRow,
+      className: b.perkRow,
       children: [(0, r.jsx)(e.icon, {
         color: l,
         size: "sm"
       }), (0, r.jsx)(a.xvT, {
-        className: C.perkText,
+        className: b.perkText,
         color: i,
         variant: "text-sm/medium",
         children: e.getCopy()
@@ -68,13 +68,13 @@ function j(e) {
     }, "perk-".concat(n, "-").concat(t)))
   }, [n, l, i]);
   return (0, r.jsxs)("div", {
-    className: C.perkRowContainer,
+    className: b.perkRowContainer,
     children: [s, (0, r.jsx)("div", {
-      className: C.perkRow,
+      className: b.perkRow,
       children: (0, r.jsx)(a.xvT, {
         color: i,
         variant: "text-sm/medium",
-        children: x.intl.string(h.default.nIj3LS)
+        children: h.intl.string(x.default.nIj3LS)
       })
     })]
   })
@@ -86,13 +86,13 @@ function T(e) {
     index: n,
     powerup: i,
     nextPowerup: l
-  } = e, a = (0, u.ZP)(t, i), s = (0, u.ZP)(t, l), c = a.type !== v.A3.INACTIVE, _ = s.type !== v.A3.INACTIVE, h = a.type === v.A3.TIER_OVERRIDE_ACTIVATED, [x, b] = o.useState(true);
-  (0, g.KT)(x);
+  } = e, a = (0, u.ZP)(t, i), s = (0, u.ZP)(t, l), c = a.type !== v.A3.INACTIVE, _ = s.type !== v.A3.INACTIVE, x = a.type === v.A3.TIER_OVERRIDE_ACTIVATED, [h, C] = o.useState(true);
+  (0, g.KT)(h);
   let T = (0, f.d)(c);
   return (0, r.jsxs)(m.Z, {
     guildId: t,
     powerup: i,
-    className: C.card,
+    className: b.card,
     children: [(0, r.jsx)(E, {
       position: 0 === n ? "start" : null == l ? "end" : "middle",
       active: c,
@@ -100,8 +100,8 @@ function T(e) {
     }), (0, r.jsx)(d.Q9, {
       title: i.title,
       textColor: T,
-      footer: !h && (0, r.jsx)(m.g, {
-        className: C.footer,
+      footer: !x && (0, r.jsx)(m.g, {
+        className: b.footer,
         guildId: t,
         powerup: i
       }),
@@ -109,11 +109,11 @@ function T(e) {
         isActive: c,
         index: n
       })
-    }), !h && (0, r.jsx)(d.N4, {
+    }), !x && (0, r.jsx)(d.N4, {
       children: (0, r.jsx)(p.ZP, {
         guildId: t,
         powerup: i,
-        onError: b
+        onError: C
       })
     })]
   })

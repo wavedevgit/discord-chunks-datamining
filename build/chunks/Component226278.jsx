@@ -39,14 +39,14 @@ function f(e) {
     className: f,
     onHover: v,
     children: _
-  } = e, h = (0, a.Z)(n), x = (0, s.ZP)(n, p), b = x.type !== m.A3.INACTIVE, C = (null == (t = x.sourceEntitlement) ? true : t.ends_at) != null, E = (0, l.Z)(n, p, "GuildPowerupCard"), j = o.useRef(null), {
+  } = e, x = (0, a.Z)(n), h = (0, s.ZP)(n, p), C = h.type !== m.A3.INACTIVE, b = (null == (t = h.sourceEntitlement) ? true : t.ends_at) != null, E = (0, l.Z)(n, p, "GuildPowerupCard"), j = o.useRef(null), {
     onShowMore: T
   } = (0, d.ZP)(n, p), [P, I] = o.useState(false), y = (0, i.O)(I, 1);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.aB, {
       label: p.title,
-      isActive: b,
-      isWarning: C,
+      isActive: C,
+      isWarning: b,
       badge: g,
       canRollback: E,
       onClick: T,
@@ -57,7 +57,7 @@ function f(e) {
         j.current = e, y.current = e
       },
       children: _
-    }), !E && h && (0, r.jsx)(u.Z, {
+    }), !E && x && (0, r.jsx)(u.Z, {
       powerup: p,
       targetRef: j,
       isCardVisible: P

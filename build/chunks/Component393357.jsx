@@ -19,12 +19,12 @@ function m(e) {
   let {
     guildId: t,
     powerupListingId: n
-  } = e, m = (0, i.e7)([u.Z], () => u.Z.getGuild(t)), g = (0, i.e7)([s.Z], () => s.Z.hasLoadedExperiments), f = (0, d.Z)(t), v = (0, c.At)(), _ = !g || null == f || null == m, h = (0, l.ZP)(null != v ? v : []);
+  } = e, m = (0, i.e7)([u.Z], () => u.Z.getGuild(t)), g = (0, i.e7)([s.Z], () => s.Z.hasLoadedExperiments), f = (0, d.Z)(t), v = (0, c.At)(), _ = !g || null == f || null == m, x = (0, l.ZP)(null != v ? v : []);
   return ((0, a.Z)({
     type: o.ImpressionTypes.VIEW,
     name: o.ImpressionNames.BOOST_SHOP_OPENED,
     properties: {
-      location_stack: h.analyticsLocations
+      location_stack: x.analyticsLocations
     }
   }, {
     disableTrack: _

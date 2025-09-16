@@ -2,9 +2,9 @@
 /** chunk id: 172751, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => y,
-  eI: () => E,
-  m0: () => b
+  ZP: () => O,
+  eI: () => b,
+  m0: () => y
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,9 +18,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk731722 = require("./731722.js"),
   Chunk131085 = require("./131085.js"),
   Chunk388032 = require("./388032.jsx"),
+  Chunk899926 = require("./899926.js"),
   Chunk655262 = require("./655262.js");
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,36 +30,33 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
 }
-let E = Chunk647438.memo(function(e) {
+let b = Chunk647438.memo(function(e) {
     let {
       src: t,
-      tag: n,
-      className: i,
-      size: a = _.Gg.SIZE_16
+      className: n,
+      size: i = _.Gg.SIZE_16
     } = e;
     return null == t ? null : (0, r.jsx)("img", {
       src: t,
-      alt: p.intl.formatToPlainString(p.t.uPLDZG, {
-        tag: n
-      }),
-      className: o()(h.badge, i),
-      width: a,
-      height: a
+      alt: "",
+      className: o()(m.badge, n),
+      width: i,
+      height: i
     })
   }),
-  b = Chunk647438.memo(function(e) {
+  y = Chunk647438.memo(function(e) {
     let {
       guildId: t,
       guildTag: n,
@@ -68,45 +66,47 @@ let E = Chunk647438.memo(function(e) {
       badgeClassName: c,
       onClick: u,
       onMouseEnter: d,
-      textVariant: p = "text-xs/semibold",
-      textColor: m = "text-default",
-      badgeSize: g = _.Gg.SIZE_14,
-      inline: b = true
+      textVariant: g = "text-xs/semibold",
+      textColor: E = "text-default",
+      badgeSize: y = _.Gg.SIZE_14,
+      inline: O = true
     } = e;
     return (0, r.jsx)(l.P3F, {
+      "aria-label": p.intl.formatToPlainString(h.default["fw2p//"], {
+        tag: n
+      }),
       tag: "span",
       tabIndex: null == u ? false : true,
       onClick: u,
       onMouseEnter: d,
-      className: o()(h.chipletContainerInner, b && h.chipletContainerInline, null != u && h.clickable, a),
+      className: o()(m.chipletContainerInner, O && m.chipletContainerInline, null != u && m.clickable, a),
       children: (0, r.jsxs)(l.Text, {
-        variant: p,
+        variant: g,
         lineClamp: 1,
-        color: m,
+        color: E,
         tag: "span",
-        className: o()(h.text, s),
-        children: [null != i && "string" == typeof i ? (0, r.jsx)(E, {
-          src: (0, f.Ic)(t, i, g),
-          tag: null == n ? true : n.toString(),
-          size: g,
+        className: o()(m.text, s),
+        children: [null != i && "string" == typeof i ? (0, r.jsx)(b, {
+          src: (0, f.Ic)(t, i, y),
+          size: y,
           className: c
         }) : i, (0, r.jsx)("span", {
-          className: h.tagText,
+          className: m.tagText,
           children: n
         })]
       })
     })
   }),
-  y = Chunk647438.memo(function(e) {
+  O = Chunk647438.memo(function(e) {
     var t;
     let {
       primaryGuild: n,
       userId: a,
       contextGuildId: _,
       className: p,
-      containerClassName: m,
-      textVariant: E,
-      textColor: y,
+      containerClassName: h,
+      textVariant: g,
+      textColor: b,
       badgeSize: O,
       disableGuildProfile: v = false,
       inline: I = true,
@@ -117,13 +117,13 @@ let E = Chunk647438.memo(function(e) {
       badge: w,
       guildId: D
     } = (0, f.Pb)(R);
-    return (0, f.yF)(a, _) && null != D ? v ? (0, r.jsx)(b, {
+    return (0, f.yF)(a, _) && null != D ? v ? (0, r.jsx)(y, {
       guildId: D,
       guildTag: P,
       guildBadge: w,
-      className: o()(h.noTooltip, p),
-      textVariant: E,
-      textColor: y,
+      className: o()(m.noTooltip, p),
+      textVariant: g,
+      textColor: b,
       badgeSize: O,
       inline: I
     }) : (0, r.jsx)(l.ze6, {
@@ -134,15 +134,15 @@ let E = Chunk647438.memo(function(e) {
         onClose: S,
         targetElementRef: A,
         children: e => (0, r.jsx)("span", {
-          className: m,
+          className: h,
           ref: A,
-          children: (0, r.jsx)(b, g({
+          children: (0, r.jsx)(y, E({
             guildId: D,
             guildTag: P,
             guildBadge: w,
             className: p,
-            textVariant: E,
-            textColor: y,
+            textVariant: g,
+            textColor: b,
             badgeSize: O,
             inline: I
           }, e))

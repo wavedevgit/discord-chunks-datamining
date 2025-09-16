@@ -45,13 +45,13 @@ function E(e) {
       analyticsLocation: u.Z.GUILD_POWERUPS_OVERVIEW
     }),
     children: [(0, r.jsxs)("div", {
-      className: b.imageContainer,
+      className: C.imageContainer,
       children: [(0, r.jsx)("img", {
-        className: l()(x.background, h.image, b.image),
-        src: C.Z,
+        className: l()(h.background, x.image, C.image),
+        src: b.Z,
         alt: ""
       }), (0, r.jsx)("div", {
-        className: l()(h.image, b.gradient)
+        className: l()(x.image, C.gradient)
       })]
     }), (0, r.jsx)(d.Q9, {
       title: _.intl.string(v.default["fjt/vr"]),
@@ -62,7 +62,7 @@ function E(e) {
         status: i
       }),
       children: (0, r.jsx)(a.xvT, {
-        className: h.description,
+        className: x.description,
         color: E,
         variant: "text-sm/medium",
         children: _.intl.string(v.default.P7VSCg)

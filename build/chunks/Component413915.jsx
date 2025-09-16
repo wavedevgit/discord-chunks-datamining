@@ -21,7 +21,6 @@ let b = Chunk647438.memo(function(a) {
       className: r.tag,
       children: [null != t.badge && (0, s.jsx)(c.eI, {
         src: (0, i.Ic)(e, t.badge, g.Gg.SIZE_32),
-        tag: t.tag,
         size: g.Gg.SIZE_32,
         className: r.badge
       }), (0, s.jsx)(d.Text, {

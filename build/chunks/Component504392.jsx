@@ -48,34 +48,34 @@ function R(e) {
     (0, v.Sn)(t), (0, v.BN)(t)
   }, [t]), (0, S.Wj)(t);
   let L = (0, a.e7)([_.Z], () => _.Z.getStateForGuild(t)),
-    M = (0, h.Z)(t),
-    G = o.useRef(false),
+    M = (0, x.Z)(t),
+    D = o.useRef(false),
     {
-      shouldShow: D,
+      shouldShow: G,
       modalConfig: V
     } = (0, y.K)(t, "GuildPowerupsOverview"),
     B = null == i && null != V,
     F = [];
-  D && B && F.push(s.z.VANITY_URL_POWERUP_ROLLBACK_MODAL);
+  G && B && F.push(s.z.VANITY_URL_POWERUP_ROLLBACK_MODAL);
   let [W, K] = (0, u.US)(F), z = o.useMemo(() => U.reduce((e, t) => {
     let n = null == L ? true : L.powerupCatalog[t];
     if (null == n) return e;
-    let r = (0, x.S)(t, n, R);
+    let r = (0, h.S)(t, n, R);
     return e.push({
       type: t,
       listings: r
     }), e
   }, []), [null == L ? true : L.powerupCatalog, R]), H = z.flatMap(e => e.listings).filter(e => "multiPerk" === e.type).map(e => e.group), X = (0, w.f)(H, t);
   return (o.useEffect(() => {
-    if (null != i && !G.current)
+    if (null != i && !D.current)
       for (let e of z)
         for (let n of e.listings) {
           if (("singleLevel" === n.type || "singlePerk" === n.type) && n.powerup.skuId === i) {
-            (0, I.KE)(t, n.powerup), G.current = true;
+            (0, I.KE)(t, n.powerup), D.current = true;
             return
           }
           if ("multiPerk" === n.type && (n.group === i || n.powerups.some(e => e.skuId === i))) {
-            G.current = true;
+            D.current = true;
             let e = X[n.group];
             if (null == e) return;
             e.openModal(n.powerups, {
@@ -83,7 +83,7 @@ function R(e) {
                 let e = new URL(window.location.href);
                 e.searchParams.delete(O.am);
                 let t = e.pathname + e.search + e.hash;
-                (0, p.dL)(t), G.current = false
+                (0, p.dL)(t), D.current = false
               }
             });
             return
@@ -179,7 +179,7 @@ function R(e) {
                 switch (e.type) {
                   case "singleLevel":
                     var i;
-                    return (0, r.jsx)(b.ZP, {
+                    return (0, r.jsx)(C.ZP, {
                       guildId: t,
                       index: n,
                       powerup: e.powerup,
@@ -191,7 +191,7 @@ function R(e) {
                       powerup: e.powerup
                     }, "powerup-".concat(e.powerup.skuId));
                   case "multiPerk":
-                    return (0, r.jsx)(C.Z, {
+                    return (0, r.jsx)(b.Z, {
                       guildId: t,
                       group: e.group,
                       powerups: e.powerups
