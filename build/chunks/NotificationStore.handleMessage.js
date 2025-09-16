@@ -423,7 +423,7 @@ J(ed, "displayName", "NotificationStore"), new ed(Chunk570140.Z, __OVERLAY__ ? {
       trackingType: a,
       tag: o
     } = e;
-    if (eu() || null == l || null == i || null == a || "reactions_push_notification" === a) returnfalse;
+    if (eu() || null == l || null == i || null == a || "reactions_push_notification" === a.toLowerCase()) returnfalse;
     Y.Z.showNotification(n, l, i, {
       notif_type: a
     }, {
