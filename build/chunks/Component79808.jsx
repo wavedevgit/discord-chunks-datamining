@@ -56,14 +56,14 @@ function g(e) {
     target: y,
     targetAccordion: null == (n = f.entry(y)) ? true : n.parentAccordion,
     animateScroll: false,
-    complete: m
+    complete: j
   });
 
-  function m() {
+  function j() {
     I(true)
   }
   let {
-    navigateWithValidation: j
+    navigateWithValidation: m
   } = (0, a.Cu)(), _ = {
     currentPanel: f.typedGet(N),
     navigateTo: e => {
@@ -72,11 +72,11 @@ function g(e) {
       let n = {
         target: e,
         targetAccordion: t.parentAccordion,
-        complete: m
+        complete: j
       };
       if (t.parentPanel.key !== (null == N ? true : N.key)) {
         let e = t.parentPanel;
-        j(() => {
+        m(() => {
           I(d(c({}, n), {
             animateScroll: false
           })), p(e)
@@ -98,7 +98,7 @@ function g(e) {
         header: E,
         footer: v
       }), (0, r.jsx)(l.Z, {
-        onClose: () => j(O),
+        onClose: () => m(O),
         setting: _.currentPanel
       })]
     })

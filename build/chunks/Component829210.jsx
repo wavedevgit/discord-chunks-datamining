@@ -27,7 +27,7 @@ function f(e) {
     useTitle: b,
     trailing: T,
     stronglyDiscouragedCustomTab: N
-  } = g, p = b(), C = null != (o = null == T || null == (t = T.useDecoration) ? true : t.call(T)) ? o : null, I = null != (a = null == T || null == (n = T.useBadgeCount) ? true : n.call(T)) ? a : null, m = i.useMemo(() => g.layout.flatMap(e => e.layout), [g]), j = null != f && (null == T || null == (l = T.newIndicatorDismissibleContentTypes) ? true : l.includes(f)), _ = (null == O ? true : O.key) === g.key, S = () => {
+  } = g, p = b(), C = null != (o = null == T || null == (t = T.useDecoration) ? true : t.call(T)) ? o : null, I = null != (a = null == T || null == (n = T.useBadgeCount) ? true : n.call(T)) ? a : null, j = i.useMemo(() => g.layout.flatMap(e => e.layout), [g]), m = null != f && (null == T || null == (l = T.newIndicatorDismissibleContentTypes) ? true : l.includes(f)), _ = (null == O ? true : O.key) === g.key, S = () => {
     E(g.key), v(false)
   };
   return null != N ? (0, r.jsx)(N, {
@@ -39,7 +39,7 @@ function f(e) {
       title: p,
       active: _,
       trailing: (0, r.jsx)(() => {
-        if (j) {
+        if (m) {
           var e;
           return null != (e = null == T ? true : T.newIndicatorBadgeOverride) ? e : (0, r.jsx)(s.IGR, {
             text: d.intl.string(d.t.y2b7CA)
@@ -50,8 +50,8 @@ function f(e) {
         }) : null != C ? C : null
       }, {}),
       onClick: S
-    }), _ && m.length > 1 && (0, r.jsx)(y, {
-      categories: m
+    }), _ && j.length > 1 && (0, r.jsx)(y, {
+      categories: j
     })]
   })
 }

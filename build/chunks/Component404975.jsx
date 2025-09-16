@@ -39,10 +39,12 @@ function y(e) {
         }),
         children: [(0, r.jsxs)("div", {
           className: f.fixedContent,
-          children: [y.map(e => (0, r.jsx)(O, {
-            section: e,
-            visibleContent: t
-          }, e.key)), null != n && (0, r.jsx)(n, {})]
+          children: [(0, r.jsx)("div", {
+            children: y.map(e => (0, r.jsx)(O, {
+              section: e,
+              visibleContent: t
+            }, e.key))
+          }), null != n && (0, r.jsx)(n, {})]
         }), (0, r.jsxs)(a.zJl, {
           className: f.navScroller,
           fade: true,
