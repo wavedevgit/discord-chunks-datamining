@@ -30,7 +30,7 @@ function b(e) {
     onClose: P,
     analyticsLocation: w
   } = e;
-  r.useEffect(() => {
+  i.useEffect(() => {
     (0, m.po)(C), (0, m.EC)(C)
   }, [C]);
   let k = (0, a.e7)([g.Z], () => g.Z.getStateForGuild(C)),
@@ -38,37 +38,37 @@ function b(e) {
     {
       analyticsLocations: I
     } = (0, l.ZP)(w),
-    [E, Z] = r.useState(null != (t = N.initialStep) ? t : Object.keys(N.steps)[0]),
+    [E, Z] = i.useState(null != (t = N.initialStep) ? t : Object.keys(N.steps)[0]),
     G = (0, u.Td)(C, true),
     D = N.steps[E],
-    [B, L] = r.useState(null != (d = null == O ? true : O.id) ? d : null == y ? true : y.gameId),
-    M = r.useMemo(() => {
+    [B, L] = i.useState(null != (d = null == O ? true : O.id) ? d : null == y ? true : y.gameId),
+    M = i.useMemo(() => {
       var e;
       if (null != B) return Object.values(null != (e = null == k ? true : k.catalog) ? e : {}).find(e => e.id === B)
     }, [null == k ? true : k.catalog, B]),
-    [z, R] = r.useState(y),
-    [V, A] = r.useState(null != (x = null == O || null == (n = O.plans[0]) ? true : n.id) ? x : null == y ? true : y.planId),
-    F = function(e, n, t, i) {
-      var r, l, o, s, c, d, u, m;
+    [z, R] = i.useState(y),
+    [V, A] = i.useState(null != (x = null == O || null == (n = O.plans[0]) ? true : n.id) ? x : null == y ? true : y.planId),
+    F = function(e, n, t, r) {
+      var i, l, o, s, c, d, u, m;
       let p = (0, a.e7)([g.Z], () => {
           var n;
           return null == (n = g.Z.getStateForGuild(e)) ? true : n.entitlements
         }),
-        f = null != (u = null == n || null == (r = n.plans.find(e => e.id === t)) ? true : r.cost) ? u : 0;
-      return null == i ? f : f - (null != (m = null == p || null == (d = p[i.entitlementId]) || null == (c = d.sku) || null == (s = c.tenant_metadata) || null == (o = s.guild_monetization) || null == (l = o.game_server) ? true : l.boost_price) ? m : 0)
+        f = null != (u = null == n || null == (i = n.plans.find(e => e.id === t)) ? true : i.cost) ? u : 0;
+      return null == r ? f : f - (null != (m = null == p || null == (d = p[r.entitlementId]) || null == (c = d.sku) || null == (s = c.tenant_metadata) || null == (o = s.guild_monetization) || null == (l = o.game_server) ? true : l.boost_price) ? m : 0)
     }(C, M, V, z),
-    W = r.useCallback((e, n) => {
+    U = i.useCallback((e, n) => {
       var t;
       L(null == e ? true : e.id), A(null != n ? n : null == e || null == (t = e.plans[0]) ? true : t.id)
     }, []),
-    U = r.useCallback(e => {
+    W = i.useCallback(e => {
       R(e), L(e.gameId), A(e.planId), X(e.name), Y(e.location)
     }, []),
-    [q, H] = r.useState(),
-    [K, X] = r.useState(null != (b = null == y ? true : y.name) ? b : ""),
-    [Q, Y] = r.useState(null != (j = null == y ? true : y.location) ? j : ""),
-    [$, J] = r.useState(false),
-    ee = r.useCallback(() => {
+    [q, H] = i.useState(),
+    [K, X] = i.useState(null != (b = null == y ? true : y.name) ? b : ""),
+    [Q, Y] = i.useState(null != (j = null == y ? true : y.location) ? j : ""),
+    [$, J] = i.useState(false),
+    ee = i.useCallback(() => {
       0 !== F && null != T && null != M && null != V && (G < F ? (0, o.u)({
         analyticsLocation: w,
         numberOfBoostsToAdd: F - G,
@@ -87,7 +87,7 @@ function b(e) {
         P(), (0, p.Z)(T.id, M)
       }))
     }, [I, T, G, V, w, M, K, Q, P, F]),
-    en = r.useCallback(e => {
+    en = i.useCallback(e => {
       switch (e.type) {
         case "close":
           P();
@@ -99,26 +99,26 @@ function b(e) {
           ee()
       }
     }, [P, ee]),
-    et = r.useCallback(() => {
+    et = i.useCallback(() => {
       null != D && en(D.onBack)
     }, [D, en]),
-    ei = r.useCallback(() => {
+    er = i.useCallback(() => {
       null != D && en(D.onNext)
     }, [D, en]);
-  return (0, i.jsx)(v.Provider, {
+  return (0, r.jsx)(v.Provider, {
     value: {
       guildId: C,
       step: E,
       stepAction: D,
       stepLoading: $,
       onBack: et,
-      onNext: ei,
+      onNext: er,
       portkeyGames: null != (h = null == k ? true : k.catalog) ? h : {},
       instances: Object.values(null != (_ = null == k ? true : k.instances) ? _ : {}),
       currentGame: M,
-      setCurrentGame: W,
+      setCurrentGame: U,
       portkeyInstance: z,
-      setPortkeyInstance: U,
+      setPortkeyInstance: W,
       name: K,
       setName: X,
       location: Q,

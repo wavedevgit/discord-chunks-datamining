@@ -1,5 +1,5 @@
 /** Chunk was on 80960 **/
-/** chunk id: 775194, original params: e,t,r (module,exports,require) **/
+/** chunk id: 775194, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
 }), require("./642613.js"), require("./539854.js"), require("./388685.js");
@@ -30,40 +30,40 @@ function p(e) {
   let {
     clips: t
   } = e;
-  if (null == t) return (0, n.jsx)(l.$jN, {
+  if (null == t) return (0, r.jsx)(l.$jN, {
     type: l.$jN.Type.SPINNING_CIRCLE
   });
-  let r = i().map(t, (e, t) => {
-    if (true !== e && "buffers" !== t) return (0, n.jsx)(s.ck, {
+  let n = i().map(t, (e, t) => {
+    if (true !== e && "buffers" !== t) return (0, r.jsx)(s.ck, {
       label: t,
       value: e
     }, t)
   });
-  return r.push((0, n.jsx)(s.ck, {
+  return n.push((0, r.jsx)(s.ck, {
     label: "Frames Per Second",
     value: t.recentEncodedFrames / (t.recentDurationMs / 1e3)
-  }, "framerate")), (0, n.jsxs)(l.hjN, {
+  }, "framerate")), (0, r.jsxs)(l.hjN, {
     tag: l.RB0.H2,
     title: c.intl.string(c.t.MKrFKC),
-    children: [(0, o.a)(r), function(e) {
+    children: [(0, o.VE)(n), function(e) {
       if (null != e.buffers) return e.buffers.map(e => {
         let t = [];
-        for (let r of Object.keys(e).sort((e, t) => {
-            let r = m[e],
-              n = m[t];
-            return r !== n ? true === r ? 1 : true === n ? false : r - n : e > t ? 1 : false
+        for (let n of Object.keys(e).sort((e, t) => {
+            let n = m[e],
+              r = m[t];
+            return n !== r ? true === n ? 1 : true === r ? false : n - r : e > t ? 1 : false
           })) {
-          let a = e[r];
-          null !== a && "key" !== r && t.push((0, n.jsx)(s.ck, {
-            label: r,
+          let a = e[n];
+          null !== a && "key" !== n && t.push((0, r.jsx)(s.ck, {
+            label: n,
             value: a
-          }, r))
+          }, n))
         }
-        return (0, n.jsx)(l.hjN, {
+        return (0, r.jsx)(l.hjN, {
           className: u.marginBottom40,
           title: "Buffer: ".concat(e.key),
           titleClassName: d.title,
-          children: (0, o.a)(t)
+          children: (0, o.VE)(t)
         }, "Buffer: ".concat(e.key))
       })
     }(t)]

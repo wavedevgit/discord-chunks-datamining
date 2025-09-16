@@ -1,7 +1,7 @@
 /** Chunk was on 80960 **/
-/** chunk id: 223455, original params: e,t,r (module,exports,require) **/
+/** chunk id: 223455, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => Z
+  default: () => R
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
@@ -25,46 +25,46 @@ var Chunk951288 = require("./951288.js"),
   Chunk703558 = require("./703558.js"),
   Chunk677601 = require("./677601.jsx"),
   Chunk702511 = require("./702511.js");
-let R = [Chunk679080.S, Chunk777019.O, Chunk400332.U, Chunk721383._];
+let x = [Chunk679080.S, Chunk777019.O, Chunk400332.U, Chunk721383._];
 
-function Z(e) {
+function R(e) {
   let {
     windowKey: t,
-    channelId: r
-  } = e, a = (0, s.e7)([C.Z], () => C.Z.getChannel(r));
+    channelId: n
+  } = e, a = (0, s.e7)([D.Z], () => D.Z.getChannel(n));
   o()(null != a, "channel cannot be null for popout");
   let l = (0, s.e7)([y.ZP], () => y.ZP.getSelfEmbeddedActivityForChannel(a.id), [a]);
-  return (0, n.jsx)(b.Z, {
+  return (0, r.jsx)(b.Z, {
     withTitleBar: true,
-    keybinds: R,
+    keybinds: x,
     windowKey: t,
     title: a.name,
     channelId: a.id,
     onBeforeUnload: e => {
       let {
         e: t,
-        unmountWindow: r
+        unmountWindow: n
       } = e;
       if (null != l) {
         let e = (0, g.g)() ? (0, f.nJ)(l.applicationId, a.id) : Promise.resolve(true);
         t.preventDefault(), (0, v.Z)({
           onConfirm: async () => {
-            await e, r()
+            await e, n()
           },
           usesPopoutContext: true
         })
-      } else r()
+      } else n()
     },
-    children: (0, n.jsx)("div", {
-      className: i()("root", j.rootPopout),
-      children: (0, n.jsxs)(D.Z.Provider, {
+    children: (0, r.jsx)("div", {
+      className: i()("root", C.rootPopout),
+      children: (0, r.jsxs)(E.Z.Provider, {
         value: a.guild_id,
-        children: [(0, n.jsx)(d.Z, {
+        children: [(0, r.jsx)(d.Z, {
           channel: a,
-          draftType: E.d.ChannelMessage
-        }), (0, n.jsx)(P.Z, {
+          draftType: P.d.ChannelMessage
+        }), (0, r.jsx)(j.Z, {
           channel: a
-        }), (0, n.jsx)(c.Z, {
+        }), (0, r.jsx)(c.Z, {
           popoutWindowKey: t,
           popoutWindowHasTitleBar: true
         })]

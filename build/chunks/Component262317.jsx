@@ -186,7 +186,8 @@ let B = (0, Chunk888651.$)(function(e) {
     setIsHangStatusInputFocused: eO
   })) : null != ef ? (0, r.jsx)(O.I, L(D({}, e), {
     hangStatusActivity: ef,
-    channel: k
+    channel: k,
+    userId: p.id
   })) : null, ew = () => (0, r.jsx)(j.Z, {
     userId: p.id,
     channel: k

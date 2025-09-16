@@ -1,7 +1,7 @@
 /** Chunk was on 39159 **/
 /** chunk id: 149671, original params: e,n,t (module,exports,require) **/
 module.exports = {
-  title: "title__8303d",
+  container: "container__8303d",
   contentContainer: "contentContainer__8303d",
   settingsContainer: "settingsContainer__8303d",
   sectionContainer: "sectionContainer__8303d",

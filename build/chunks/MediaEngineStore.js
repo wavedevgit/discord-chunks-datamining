@@ -2211,7 +2211,7 @@ class rR extends(u = Chunk442837.ZP.Store) {
   getUseSystemScreensharePicker() {
     let e = this.supportsSystemScreensharePicker(),
       t = tj().useSystemScreensharePicker,
-      n = (0, Chunk358085.isLinux)() || (0, Chunk358085.isMac)() && m().satisfies(null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.os.release, Chunk70722.jR);
+      n = (0, Chunk358085.isLinux)();
     return module && (null != exports ? exports : require)
   }
   supportsSystemScreensharePicker() {

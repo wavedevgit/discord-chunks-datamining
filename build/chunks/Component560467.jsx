@@ -26,25 +26,25 @@ function j(e) {
     planId: t,
     selected: a,
     className: o
-  } = e, c = r.useMemo(() => null == n ? true : n.plans.find(e => e.id === t), [null == n ? true : n.plans, t]);
-  return null == c ? null : (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsxs)("div", {
+  } = e, c = i.useMemo(() => null == n ? true : n.plans.find(e => e.id === t), [null == n ? true : n.plans, t]);
+  return null == c ? null : (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsxs)("div", {
       className: l()(b.optionContainer, o),
-      children: [(0, i.jsx)("span", {
+      children: [(0, r.jsx)("span", {
         children: c.name
-      }), (0, i.jsxs)("div", {
+      }), (0, r.jsxs)("div", {
         className: b.labelContainer,
-        children: [(0, i.jsx)(s.$Eu, {
+        children: [(0, r.jsx)(s.$Eu, {
           size: "xs",
           color: s.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
-        }), (0, i.jsx)(s.Text, {
+        }), (0, r.jsx)(s.Text, {
           variant: "text-xs/medium",
           children: x.intl.format(v.default.FrRqub, {
             boostCount: c.cost
           })
         })]
       })]
-    }), !a && (0, i.jsx)("div", {
+    }), !a && (0, r.jsx)("div", {
       className: b.optionSpacer
     })]
   })
@@ -56,25 +56,25 @@ function h(e) {
     locationString: t,
     selected: a,
     className: o
-  } = e, c = r.useMemo(() => null == n ? true : n.locations.find(e => e.region === t), [null == n ? true : n.locations, t]), {
+  } = e, c = i.useMemo(() => null == n ? true : n.locations.find(e => e.region === t), [null == n ? true : n.locations, t]), {
     pingText: d,
     pingCircleStyle: u
   } = (0, p.i)(null == c ? true : c.pingUrl);
-  return null == c ? null : (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsxs)("div", {
+  return null == c ? null : (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsxs)("div", {
       className: l()(b.optionContainer, o),
-      children: [(0, i.jsx)("span", {
+      children: [(0, r.jsx)("span", {
         children: c.region
-      }), (0, i.jsxs)("div", {
+      }), (0, r.jsxs)("div", {
         className: b.labelContainer,
-        children: [(0, i.jsx)("div", {
+        children: [(0, r.jsx)("div", {
           className: l()(b.pingCircle, u)
-        }), (0, i.jsx)(s.Text, {
+        }), (0, r.jsx)(s.Text, {
           variant: "text-xs/medium",
           children: d
         })]
       })]
-    }), !a && (0, i.jsx)("div", {
+    }), !a && (0, r.jsx)("div", {
       className: b.optionSpacer
     })]
   })
@@ -105,8 +105,8 @@ function _() {
     }))) ? exports : []
   }, [module]), S = (0, Chunk210682.Z)();
   return null == module ? null : (0, Chunk951288.jsxs)("div", {
+    className: Chunk149671.container,
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
-      className: Chunk149671.title,
       variant: "heading-lg/semibold",
       children: Chunk388032.intl.string(Chunk401561.default.Eonh9P)
     }), (0, Chunk951288.jsxs)("div", {
@@ -155,16 +155,16 @@ function _() {
             optionClassName: Chunk149671.option,
             select: e => a(e),
             placeholder: Chunk388032.intl.string(Chunk401561.default["op6/kZ"]),
-            renderOptionLabel: t => (0, i.jsx)(h, {
+            renderOptionLabel: t => (0, r.jsx)(h, {
               currentGame: e,
               locationString: t.value,
               selected: (null == t ? true : t.value) === n
             }),
             renderOptionValue: t => {
-              var r, a;
-              return (0, i.jsx)(h, {
+              var i, a;
+              return (0, r.jsx)(h, {
                 currentGame: e,
-                locationString: null == (r = t[0]) ? true : r.value,
+                locationString: null == (i = t[0]) ? true : i.value,
                 selected: (null == (a = t[0]) ? true : a.value) === n,
                 className: b.value
               })
@@ -186,15 +186,15 @@ function _() {
             select: e => C(e),
             placeholder: Chunk388032.intl.string(Chunk401561.default["4QOSPj"]),
             renderOptionValue: n => {
-              var t, r;
-              return (0, i.jsx)(j, {
+              var t, i;
+              return (0, r.jsx)(j, {
                 currentGame: e,
                 planId: null == (t = n[0]) ? true : t.value,
-                selected: (null == (r = n[0]) ? true : r.value) === _,
+                selected: (null == (i = n[0]) ? true : i.value) === _,
                 className: b.value
               })
             },
-            renderOptionLabel: n => (0, i.jsx)(j, {
+            renderOptionLabel: n => (0, r.jsx)(j, {
               currentGame: e,
               planId: null == n ? true : n.value,
               selected: (null == n ? true : n.value) === _
@@ -214,6 +214,13 @@ function _() {
         }) : Chunk388032.intl.format(Chunk401561.default.h4ZvmJ, {
           boostCount: y
         })
+      })
+    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+      variant: "text-sm/medium",
+      children: Chunk388032.intl.format(Chunk401561.default.qW1xR0, {
+        provider: "Portkey",
+        termsOfServiceUrl: "https://google.com/terms-of-service",
+        helpCenterUrl: "https://google.com/help-center"
       })
     }), (0, Chunk951288.jsxs)(Chunk422663.ok, {
       step: Chunk473682.Vb.SERVER_SETTINGS,

@@ -1,5 +1,5 @@
 /** Chunk was on 80960 **/
-/** chunk id: 189648, original params: e,t,r (module,exports,require) **/
+/** chunk id: 189648, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 });
@@ -16,18 +16,18 @@ function d(e) {
   let {
     camera: t
   } = e;
-  if (null == t) return (0, n.jsx)(l.$jN, {
+  if (null == t) return (0, r.jsx)(l.$jN, {
     type: l.$jN.Type.SPINNING_CIRCLE
   });
-  let r = i().map(t, (e, t) => {
-    if (!(s.al[t] || true === e)) return (0, n.jsx)(s.ck, {
+  let n = i().map(t, (e, t) => {
+    if (!(s.al[t] || true === e)) return (0, r.jsx)(s.ck, {
       label: t,
       value: e
     }, t)
   });
-  return (0, n.jsx)(l.hjN, {
+  return (0, r.jsx)(l.hjN, {
     tag: l.RB0.H2,
     title: c.intl.string(c.t["2AGBWF"]),
-    children: (0, o.a)(r)
+    children: (0, o.VE)(n)
   })
 }

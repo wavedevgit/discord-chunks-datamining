@@ -1,7 +1,7 @@
 /** Chunk was on 80960 **/
-/** chunk id: 770800, original params: e,t,r (module,exports,require) **/
+/** chunk id: 770800, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => R
 }), require("./784620.js"), require("./973216.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,11 +25,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk966117 = require("./966117.js"),
   Chunk197571 = require("./197571.js");
-class R extends Chunk647438.PureComponent {
+class x extends Chunk647438.PureComponent {
   render() {
     var e, t;
     let {
-      transport: r,
+      transport: n,
       mediaSessionId: a,
       hidePersonalInformation: i,
       hostname: o
@@ -39,70 +39,70 @@ class R extends Chunk647438.PureComponent {
     });
     let d = (e = function(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {},
-            n = Object.keys(r);
-          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(r, e).enumerable
-          }))), n.forEach(function(t) {
-            var n;
-            n = r[t], t in e ? Object.defineProperty(e, t, {
-              value: n,
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = n
+            }) : e[t] = r
           })
         }
         return e
       }({}, require), t = t = {
         hostname: Chunk442837
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(module, Object.getOwnPropertyDescriptors(exports)) : (function(e, t) {
-        var r = Object.keys(e);
+        var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e);
-          r.push.apply(r, n)
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
         }
-        return r
-      })(Object(exports)).forEach(function(r) {
-        Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
+        return n
+      })(Object(exports)).forEach(function(n) {
+        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
       }), module),
       u = l().map(Chunk19780, (e, t) => {
-        if ("receiverReports" !== t && (!i || "localAddress" !== t)) return (0, n.jsx)(b.ck, {
+        if ("receiverReports" !== t && (!i || "localAddress" !== t)) return (0, r.jsx)(b.ck, {
           label: t,
           value: e
         }, t)
       }),
       p = l().map(Chunk19780.receiverReports, e => {
-        let t = Array.isArray(e.bitrate) ? null == (n = e.bitrate.at(false)) ? true : n.value : e.bitrate,
-          r = f.default.getUser(e.id);
-        var n, a = y.ZP.getNickname(m.Z.getGuildId(), true, r);
-        return null == a && (a = null != r ? r.username : e.id), {
+        let t = Array.isArray(e.bitrate) ? null == (r = e.bitrate.at(false)) ? true : r.value : e.bitrate,
+          n = f.default.getUser(e.id);
+        var r, a = y.ZP.getNickname(m.Z.getGuildId(), true, n);
+        return null == a && (a = null != n ? n.username : e.id), {
           displayName: a,
           bitrate: t / 1e3,
           lost: 100 * e.fractionLost / 256
         }
       }),
       h = l().sortBy(Chunk959457, e => e.displayName),
-      g = l().map(Chunk246946, e => (function(e, t, r) {
-        let a = (0, n.jsxs)(c.Z, {
+      g = l().map(Chunk246946, e => (function(e, t, n) {
+        let a = (0, r.jsxs)(c.Z, {
             id: "bitrate-".concat(e),
             justify: c.Z.Justify.BETWEEN,
-            children: [(0, n.jsx)("span", {
+            children: [(0, r.jsx)("span", {
               children: "Bitrate:"
-            }), (0, n.jsxs)("span", {
+            }), (0, r.jsxs)("span", {
               children: [t.toFixed(2), " Kbps"]
             })]
           }),
-          i = (0, n.jsxs)(c.Z, {
+          i = (0, r.jsxs)(c.Z, {
             id: "lost-".concat(e),
             justify: c.Z.Justify.BETWEEN,
-            children: [(0, n.jsx)("span", {
+            children: [(0, r.jsx)("span", {
               children: "Packet Loss:"
-            }), (0, n.jsxs)("span", {
-              children: [r.toFixed(0), "%"]
+            }), (0, r.jsxs)("span", {
+              children: [n.toFixed(0), "%"]
             })]
           });
-        return (0, n.jsx)(D.Z, {
+        return (0, r.jsx)(E.Z, {
           label: e,
           valueRendered: [a, i],
           children: e
@@ -112,22 +112,22 @@ class R extends Chunk647438.PureComponent {
       tag: Chunk481060.RB0.H2,
       title: Chunk388032.intl.string(Chunk388032.t.wU9INz) + (null != Chunk647438 ? " - " + Chunk647438 : ""),
       className: Chunk966117.allowSelection,
-      children: [(0, Chunk481250.a)(Chunk226961), 0 === Chunk476221.length ? null : (0, Chunk951288.jsx)(Chunk481060.$i$, {
+      children: [(0, Chunk481250.VE)(Chunk226961), 0 === Chunk476221.length ? null : (0, Chunk951288.jsx)(Chunk481060.$i$, {
         className: Chunk197571.marginBottom20
-      }), (0, Chunk481250.a)(Chunk476221)]
+      }), (0, Chunk481250.VE)(Chunk476221)]
     })
   }
 }
-let Z = Chunk442837.ZP.connectStores([Chunk226961.ZP, Chunk19780.Z, Chunk246946.Z, Chunk959457.Z], e => {
+let R = Chunk442837.ZP.connectStores([Chunk226961.ZP, Chunk19780.Z, Chunk246946.Z, Chunk959457.Z], e => {
   var t;
   let {
-    context: r,
-    index: n
-  } = e, a = u.ZP.getAllStats(r)[n], i = r === C.Yn.STREAM ? Object.values(p.Z.getRTCConnections()).find(e => e.getMediaEngineConnectionId() === a.mediaEngineConnectionId) : null, l = null != (t = null == i ? true : i.hostname) ? t : "";
+    context: n,
+    index: r
+  } = e, a = u.ZP.getAllStats(n)[r], i = n === D.Yn.STREAM ? Object.values(p.Z.getRTCConnections()).find(e => e.getMediaEngineConnectionId() === a.mediaEngineConnectionId) : null, l = null != (t = null == i ? true : i.hostname) ? t : "";
   return {
     hidePersonalInformation: h.Z.hidePersonalInformation,
     transport: null != a ? a.transport : null,
     mediaSessionId: d.Z.getMediaSessionId(),
     hostname: g.Z.getShortHostname(l)
   }
-})(R)
+})(x)

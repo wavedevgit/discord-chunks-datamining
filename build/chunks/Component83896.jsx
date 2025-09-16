@@ -1,7 +1,7 @@
 /** Chunk was on 62987 **/
 /** chunk id: 83896, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => O
+  I: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,6 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk496675 = require("./496675.js"),
   Chunk19780 = require("./19780.js"),
   Chunk944486 = require("./944486.js"),
+  Chunk938475 = require("./938475.js"),
   Chunk626135 = require("./626135.js"),
   Chunk906605 = require("./906605.js"),
   Chunk833858 = require("./833858.js"),
@@ -24,64 +25,73 @@ var Chunk951288 = require("./951288.js"),
   Chunk10359 = require("./10359.js"),
   Chunk254477 = require("./254477.js");
 
-function O(e) {
+function j(e) {
   let {
     hangStatusActivity: t,
     channel: n,
-    setPopoutRef: l
-  } = e, O = i.useRef(null), j = (0, o.e7)([p.Z], () => p.Z.getVoiceChannelId() === n.id), E = (0, o.e7)([u.Z], () => u.Z.can(_.Plq.CONNECT, n)), S = (null == t ? true : t.emoji) == null || (0, g.K)(t.emoji, n), I = (0, o.e7)([d.Z], () => d.Z.getMediaSessionId());
+    userId: l,
+    setPopoutRef: j
+  } = e, E = i.useRef(null), S = (0, o.e7)([p.Z], () => p.Z.getVoiceChannelId() === n.id), I = (0, o.e7)([u.Z], () => u.Z.can(C.Plq.CONNECT, n)), P = (null == t ? true : t.emoji) == null || (0, b.K)(t.emoji, n), Z = (0, o.e7)([d.Z], () => d.Z.getMediaSessionId());
   i.useEffect(() => {
-    null == l || l(null == O ? true : O.current)
-  }, [O, l]), i.useEffect(() => {
-    h.default.track(_.rMx.VIEW_HANG_STATUS, {
+    null == j || j(null == E ? true : E.current)
+  }, [E, j]), i.useEffect(() => {
+    f.default.track(C.rMx.VIEW_HANG_STATUS, {
       source: "HangStatusPopout",
       guild_id: n.guild_id,
       channel_id: n.id
     })
   }, [n.guild_id, n.id]);
-  let P = i.useCallback(() => {
-      !j && E && (c.default.selectVoiceChannel(n.id), h.default.track(_.rMx.HANG_STATUS_CTA_CLICKED, {
+  let T = i.useCallback(() => {
+      !S && I && (c.default.selectVoiceChannel(n.id), f.default.track(C.rMx.HANG_STATUS_CTA_CLICKED, {
         source: "HangStatusPopout",
         guild_id: n.guild_id,
-        channel_id: n.id
+        channel_id: n.id,
+        media_session_id: Z,
+        call_num_participants: h.ZP.countVoiceStatesForChannel(n.id),
+        other_user_id: l,
+        cta_type: "join"
       }))
-    }, [j, E, n.guild_id, n.id]),
-    Z = i.useCallback(() => {
-      if (!j || !S || null == t.state) return;
-      let [e] = (0, m.Fe)(t.state);
+    }, [S, I, n.guild_id, n.id, l, Z]),
+    N = i.useCallback(() => {
+      if (!S || !P || null == t.state) return;
+      let [e] = (0, g.Fe)(t.state);
       if (null != e) {
-        if (e === y.tN.CUSTOM) {
+        if (e === _.tN.CUSTOM) {
           if (null == t.details || null == t.emoji) return;
-          (0, f._s)(t.details, t.emoji, true)
-        } else(0, f.Zx)(e, true);
-        h.default.track(_.rMx.SWIPE_HANG_STATUS, {
+          (0, m._s)(t.details, t.emoji, true)
+        } else(0, m.Zx)(e, true);
+        f.default.track(C.rMx.HANG_STATUS_CTA_CLICKED, {
+          source: "HangStatusPopout",
           guild_id: n.guild_id,
           channel_id: n.id,
-          media_session_id: I
+          media_session_id: Z,
+          call_num_participants: h.ZP.countVoiceStatesForChannel(n.id),
+          other_user_id: l,
+          cta_type: "swipe"
         })
       }
-    }, [j, S, t, I, n.guild_id, n.id]);
+    }, [S, P, t, Z, n.guild_id, n.id, l]);
   return (0, r.jsxs)("div", {
-    ref: O,
-    className: a()(x.popover, v.container),
-    children: [(0, r.jsx)(b.Z, {
+    ref: E,
+    className: a()(O.popover, x.container),
+    children: [(0, r.jsx)(y.Z, {
       size: 32,
-      className: v.icon,
+      className: x.icon,
       hangStatusActivity: t
     }), (0, r.jsx)(s.Text, {
       variant: "text-md/medium",
-      className: v.statusText,
-      children: (0, m.O8)(t)
-    }), j ? S && (0, r.jsx)(s.zxk, {
+      className: x.statusText,
+      children: (0, g.O8)(t)
+    }), S ? P && (0, r.jsx)(s.zxk, {
       size: "sm",
       variant: "secondary",
-      text: C.intl.string(C.t["0eHzpq"]),
-      onClick: Z
-    }) : E && (0, r.jsx)(s.zxk, {
+      text: v.intl.string(v.t["0eHzpq"]),
+      onClick: N
+    }) : I && (0, r.jsx)(s.zxk, {
       size: "sm",
       variant: "secondary",
-      text: C.intl.string(C.t["B/dHXF"]),
-      onClick: P
+      text: v.intl.string(v.t["B/dHXF"]),
+      onClick: T
     })]
   })
 }

@@ -1,5 +1,5 @@
 /** Chunk was on 80960 **/
-/** chunk id: 153731, original params: e,t,r (module,exports,require) **/
+/** chunk id: 153731, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => k
 }), require("./539854.js"), require("./388685.js"), require("./361932.js"), require("./187205.js"), require("./290780.js");
@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk966117 = require("./966117.js");
 
-function I(e, t, r, a, i) {
+function I(e, t, n, a, i) {
   let o = [];
   if (null == t) return o;
   let {
@@ -49,61 +49,61 @@ function I(e, t, r, a, i) {
         context: e
       })
     }), null != d && o.push({
-      section: (0, v.J$)(e, N._s_.TRANSPORT, r),
+      section: (0, v.J$)(e, Z._s_.TRANSPORT, n),
       label: F.intl.string(F.t.wU9INz),
-      element: Z.Z,
+      element: R.Z,
       elementProps: {
         context: e,
-        index: r
+        index: n
       }
     }), null == h || l().isEmpty(h) || o.push({
-      section: (0, v.J$)(e, N._s_.OUTBOUND, r),
+      section: (0, v.J$)(e, Z._s_.OUTBOUND, n),
       label: F.intl.string(F.t["3u0gIC"]),
-      element: j.Z,
-      elementProps: {
-        context: e,
-        index: r
-      }
-    }), null != f && o.push({
-      section: (0, v.J$)(e, N._s_.CAMERA, r),
-      label: F.intl.string(F.t["2AGBWF"]),
       element: C.Z,
       elementProps: {
         context: e,
-        index: r,
+        index: n
+      }
+    }), null != f && o.push({
+      section: (0, v.J$)(e, Z._s_.CAMERA, n),
+      label: F.intl.string(F.t["2AGBWF"]),
+      element: D.Z,
+      elementProps: {
+        context: e,
+        index: n,
         camera: f
       }
     }), null != p && !l().isEmpty(p)) {
     let t = [];
     Object.keys(p).forEach(l => {
-      let o, d = D.default.getUser(l),
+      let o, d = E.default.getUser(l),
         u = y.ZP.getNick(i, l),
-        h = (0, v.J$)(e, l, r);
+        h = (0, v.J$)(e, l, n);
       null != p[l] && p[l].length > 0 && t.push({
         section: h,
-        label: null != d ? (0, n.jsx)(m.Z, {
+        label: null != d ? (0, r.jsx)(m.Z, {
           align: m.Z.Align.CENTER,
-          children: (0, n.jsx)(m.Z.Child, {
-            children: (0, n.jsxs)(m.Z, {
+          children: (0, r.jsx)(m.Z.Child, {
+            children: (0, r.jsxs)(m.Z, {
               align: m.Z.Align.CENTER,
-              children: [(0, n.jsx)(s.qEK, {
+              children: [(0, r.jsx)(s.qEK, {
                 size: s.EFr.SIZE_24,
                 src: d.getAvatarURL(i, 24),
                 "aria-label": d.username,
-                className: S.avatar
-              }), (0, n.jsx)("span", {
-                className: S.username,
+                className: N.avatar
+              }), (0, r.jsx)("span", {
+                className: N.username,
                 children: null != u ? u : b.ZP.getName(d)
               })]
             })
           })
-        }) : (o = null != u ? u : l, (0, n.jsx)(m.Z, {
+        }) : (o = null != u ? u : l, (0, r.jsx)(m.Z, {
           align: m.Z.Align.CENTER,
-          children: (0, n.jsx)(m.Z.Child, {
-            children: (0, n.jsx)(m.Z, {
+          children: (0, r.jsx)(m.Z.Child, {
+            children: (0, r.jsx)(m.Z, {
               align: m.Z.Align.CENTER,
-              children: (0, n.jsx)("span", {
-                className: S.username,
+              children: (0, r.jsx)("span", {
+                className: N.username,
                 children: o
               })
             })
@@ -113,10 +113,10 @@ function I(e, t, r, a, i) {
         onClick: () => {
           c.zc(h)
         },
-        element: P.Z,
+        element: j.Z,
         elementProps: {
           context: e,
-          index: r,
+          index: n,
           videoStreams: a
         }
       })
@@ -131,52 +131,52 @@ function I(e, t, r, a, i) {
 function k() {
   var e, t;
   let {
-    defaultStats: r,
+    defaultStats: n,
     streamStats: i
   } = (0, Chunk442837.e7)([Chunk226961.ZP], () => ({
     defaultStats: Chunk226961.ZP.getAllStats(Chunk65154.Yn.DEFAULT),
     streamStats: Chunk226961.ZP.getAllStats(Chunk65154.Yn.STREAM)
-  }), [], Chunk442837.pF), l = (0, Chunk442837.e7)([Chunk19780.Z, Chunk592125.Z], () => Chunk592125.Z.getChannel(Chunk19780.Z.getChannelId())), m = null == (e = require.concat(Chunk392711).find(e => null != e.screenshare)) ? true : module.screenshare, y = null == (t = Chunk392711.find(e => null != e.clips)) ? true : exports.clips, D = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme), b = (0, Chunk984802.Ll)(), C = (0, Chunk442837.e7)([Chunk226961.ZP], () => Chunk226961.ZP.getSection()), P = function(e) {
+  }), [], Chunk442837.pF), l = (0, Chunk442837.e7)([Chunk19780.Z, Chunk592125.Z], () => Chunk592125.Z.getChannel(Chunk19780.Z.getChannelId())), m = null == (e = require.concat(Chunk392711).find(e => null != e.screenshare)) ? true : module.screenshare, y = null == (t = Chunk392711.find(e => null != e.clips)) ? true : exports.clips, E = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme), b = (0, Chunk984802.Ll)(), D = (0, Chunk442837.e7)([Chunk226961.ZP], () => Chunk226961.ZP.getSection()), j = function(e) {
     let {
       defaultStats: t,
-      streamStats: r,
+      streamStats: n,
       videoStreams: a,
       screenshare: i,
       clips: l,
       channel: o,
       connectionState: c
-    } = e, d = t.flatMap((e, t) => I(x.Yn.DEFAULT, e, t, a, null == o ? true : o.getGuildId())), m = r.flatMap((e, t) => I(x.Yn.STREAM, e, t, a, null == o ? true : o.getGuildId())), p = [], h = [], f = {
+    } = e, d = t.flatMap((e, t) => I(S.Yn.DEFAULT, e, t, a, null == o ? true : o.getGuildId())), m = n.flatMap((e, t) => I(S.Yn.STREAM, e, t, a, null == o ? true : o.getGuildId())), p = [], h = [], f = {
       section: u.ID.DIVIDER
     };
     return null != i && (p.push(f), p.push({
-      section: N._s_.SCREENSHARE,
+      section: Z._s_.SCREENSHARE,
       label: F.intl.string(F.t["gWbr/f"]),
-      element: R.Z,
+      element: x.Z,
       elementProps: {
         screenshare: i
       }
     })), null != l && (h.push(f), h.push({
-      section: N._s_.CLIPS,
+      section: Z._s_.CLIPS,
       label: F.intl.string(F.t.MKrFKC),
-      element: E.Z,
+      element: P.Z,
       elementProps: {
         clips: l
       }
     })), m.length > 0 && m.unshift(f), [...null != o ? [{
       section: u.ID.CUSTOM,
       label: "Channel Name",
-      element: () => (0, n.jsx)(s.X6q, {
-        className: S.channelName,
+      element: () => (0, r.jsx)(s.X6q, {
+        className: N.channelName,
         variant: "heading-lg/semibold",
         children: o.name
       })
     }] : [], {
       section: u.ID.CUSTOM,
       label: "Connection State",
-      element: () => (0, n.jsx)(s.X6q, {
-        className: S.channelName,
+      element: () => (0, r.jsx)(s.X6q, {
+        className: N.channelName,
         variant: "heading-md/normal",
-        children: c === N.hes.RTC_CONNECTED ? "Connected" : "Disconnected"
+        children: c === Z.hes.RTC_CONNECTED ? "Connected" : "Disconnected"
       })
     }, ...d, ...m, ...p, ...h]
   }({

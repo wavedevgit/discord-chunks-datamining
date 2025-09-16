@@ -10,19 +10,19 @@ var Chunk647438 = require("./647438.js"),
   Chunk149671 = require("./149671.js");
 
 function s(e) {
-  let n = (0, r.e7)([l.Z], () => l.Z.getLocationStateForPingUrl(e)),
-    t = i.useRef(null),
-    s = i.useCallback(async n => {
+  let n = (0, i.e7)([l.Z], () => l.Z.getLocationStateForPingUrl(e)),
+    t = r.useRef(null),
+    s = r.useCallback(async n => {
       if (null == e) return;
-      let i = [],
-        r = false;
+      let r = [],
+        i = false;
       try {
         if (await new Promise((e, t) => {
             let a = () => {
                 n.readyState === WebSocket.OPEN && n.close()
               },
               l = setTimeout(() => {
-                r || (r = true, a(), t(Error("WebSocket timeout")))
+                i || (i = true, a(), t(Error("WebSocket timeout")))
               }, 5e3);
             n.onopen = () => {
               if (n.readyState === WebSocket.OPEN)
@@ -31,20 +31,20 @@ function s(e) {
                   n.send(e.toString())
                 }
             }, n.onmessage = n => {
-              if (r) return;
+              if (i) return;
               let t = parseFloat(n.data);
               if (!isNaN(t)) {
                 let n = performance.now(),
                   o = Math.round(n - t);
-                i.push(o), !r && i.length >= 3 && (r = true, clearTimeout(l), a(), e())
+                r.push(o), !i && r.length >= 3 && (i = true, clearTimeout(l), a(), e())
               }
             }, n.onerror = () => {
-              r || (r = true, clearTimeout(l), a(), t(Error("WebSocket error")))
+              i || (i = true, clearTimeout(l), a(), t(Error("WebSocket error")))
             }, n.onclose = () => {
-              r || (r = true, clearTimeout(l), t(Error("WebSocket closed")))
+              i || (i = true, clearTimeout(l), t(Error("WebSocket closed")))
             }
-          }), i.length > 0) {
-          let n = Math.round(i.reduce((e, n) => e + n, 0) / i.length);
+          }), r.length > 0) {
+          let n = Math.round(r.reduce((e, n) => e + n, 0) / r.length);
           (0, a.LG)(e, {
             rtt: n,
             loading: false,
@@ -61,20 +61,20 @@ function s(e) {
         t.current === n && (t.current = null)
       }
     }, [e, t]);
-  return i.useEffect(() => () => {
+  return r.useEffect(() => () => {
     null != t.current && (t.current.close(), t.current = null)
-  }, []), i.useEffect(() => {
+  }, []), r.useEffect(() => {
     if ((null == n ? true : n.rtt) != null || (null == n ? true : n.loading) === true || null == e) return;
     (0, a.LG)(e, {
       rtt: null,
       loading: true,
       error: false
     });
-    let i = new WebSocket(e);
-    t.current = i, s(i)
+    let r = new WebSocket(e);
+    t.current = r, s(r)
   }, [e, s, n]), {
-    pingText: i.useMemo(() => null == n ? "—" : n.loading ? "..." : n.error ? "Error" : null !== n.rtt ? "".concat(n.rtt, "ms") : "—", [n]),
-    pingCircleStyle: i.useMemo(() => {
+    pingText: r.useMemo(() => null == n ? "—" : n.loading ? "..." : n.error ? "Error" : null !== n.rtt ? "".concat(n.rtt, "ms") : "—", [n]),
+    pingCircleStyle: r.useMemo(() => {
       if (null == n || n.loading) return o.pingCircleLoading;
       if (n.error) return o.pingCircleError;
       if (null !== n.rtt)

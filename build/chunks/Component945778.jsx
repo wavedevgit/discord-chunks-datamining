@@ -1,5 +1,5 @@
 /** Chunk was on 80960 **/
-/** chunk id: 945778, original params: e,t,r (module,exports,require) **/
+/** chunk id: 945778, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => o
 });
@@ -13,10 +13,10 @@ function o(e) {
   let {
     windowKey: t
   } = e;
-  return (0, n.jsx)(a.Z, {
+  return (0, r.jsx)(a.Z, {
     withTitleBar: true,
     windowKey: t,
     title: l.intl.string(l.t["5I/1fn"]),
-    children: (0, n.jsx)(i.Z, {})
+    children: (0, r.jsx)(i.Z, {})
   })
 }

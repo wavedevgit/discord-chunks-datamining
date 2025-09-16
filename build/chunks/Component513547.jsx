@@ -1,8 +1,8 @@
 /** Chunk was on 80960 **/
-/** chunk id: 513547, original params: e,t,r (module,exports,require) **/
+/** chunk id: 513547, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   al: () => b,
-  ck: () => R
+  ck: () => x
 }), require("./388685.js"), require("./539854.js"), require("./784620.js"), require("./973216.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -172,7 +172,7 @@ function v(e) {
   return "".concat(t, " ms")
 }
 
-function D(e) {
+function E(e) {
   return e.toFixed(2)
 }
 let b = {
@@ -204,7 +204,7 @@ let b = {
     videoJitterTarget: true,
     voiceActivityDetectorProcessTime: true
   },
-  C = {
+  D = {
     accelerateRate: f,
     audioDetected: y,
     audioLevel: function(e) {
@@ -222,9 +222,9 @@ let b = {
     codec: function(e) {
       let {
         id: t,
-        name: r
+        name: n
       } = e;
-      return r = null != (r = "" === r ? "unknown" : r) ? r : "unknown", "".concat(r[0].toUpperCase()).concat(r.slice(1), " (").concat(t, ")")
+      return n = null != (n = "" === n ? "unknown" : n) ? n : "unknown", "".concat(n[0].toUpperCase()).concat(n.slice(1), " (").concat(t, ")")
     },
     cpuLimitedResolution: y,
     currentSampleRate: function(e) {
@@ -237,7 +237,7 @@ let b = {
     encoderQualityPsnr: function(e) {
       return "".concat(Math.max(e, 0).toFixed(2), " dB")
     },
-    encoderQualityVmaf: D,
+    encoderQualityVmaf: E,
     encodeUsage: f,
     expandRate: f,
     filter: p,
@@ -259,9 +259,9 @@ let b = {
     resolution: e => {
       let {
         width: t,
-        height: r
+        height: n
       } = e;
-      return "".concat(t, "x").concat(r)
+      return "".concat(t, "x").concat(n)
     },
     sampleRateMismatchPercent: f,
     secondaryDecodedRate: f,
@@ -270,24 +270,24 @@ let b = {
     },
     speechExpandRate: f,
     targetDelay: h,
-    videoEntropy: D,
+    videoEntropy: E,
     videohookBackend: function(e) {
       let t = ["N/A", "Direct3D 9", "Direct3D 10", "Direct3D 11", "Direct3D 12", "OpenGL", "Vulkan"];
       return e < t.length ? t[e] : "Unknown"
     }
   },
-  E = {
+  P = {
     audioLevel: function(e) {
       return Math.max(g(e), false) + 100
     }
   },
-  P = e => e,
-  j = e => {
+  j = e => e,
+  C = e => {
     let [t] = a.useState([]);
     return t.push({
       value: e.value,
       time: Date.now()
-    }), t.length > 600 && t.shift(), (0, n.jsx)(s.Z, {
+    }), t.length > 600 && t.shift(), (0, r.jsx)(s.Z, {
       converter: e.converter,
       dataPoints: t,
       width: e.width,
@@ -295,24 +295,24 @@ let b = {
     })
   };
 
-function R(e) {
-  var t, r, a;
+function x(e) {
+  var t, n, a;
   let {
     label: i,
     value: l,
     section: u
-  } = e, m = null != (r = C[i]) ? r : P, p = E[i], h = o.Pz[i] && (Array.isArray(l) && l.length > 0 && "number" == typeof l[0].value ? (0, n.jsx)(s.Z, {
+  } = e, m = null != (n = D[i]) ? n : j, p = P[i], h = o.Pz[i] && (Array.isArray(l) && l.length > 0 && "number" == typeof l[0].value ? (0, r.jsx)(s.Z, {
     converter: p,
     dataPoints: l,
     width: 300,
     height: 100
-  }) : "number" == typeof l ? (0, n.jsx)(j, {
+  }) : "number" == typeof l ? (0, r.jsx)(C, {
     converter: p,
     value: l,
     width: 300,
     height: 100
   }) : true), f = Array.isArray(l) ? null == (t = l.at(false)) ? true : t.value : l;
-  return (0, n.jsx)(c.Z, {
+  return (0, r.jsx)(c.Z, {
     label: i,
     valueRendered: m(f),
     section: u,

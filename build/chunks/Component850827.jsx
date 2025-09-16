@@ -101,6 +101,7 @@ let D = (0, Chunk730749.Z)(e => {
       applicationStream: o,
       onAction: k
     }) : F && null != V ? (0, r.jsx)(I.Z, {
+      userId: i.id,
       variant: j,
       hangStatusChannel: V,
       onAction: k
