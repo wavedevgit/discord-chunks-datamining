@@ -62,7 +62,7 @@ function p(e) {
 
 function h(e) {
   var t;
-  return (0, a.k)(null == e ? true : e.target) && null != (t = p(e.target)) ? t : null
+  return (0, a.kK)(null == e ? true : e.target) && null != (t = p(e.target)) ? t : null
 }
 
 function m() {

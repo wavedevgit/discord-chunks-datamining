@@ -11,7 +11,7 @@ function i(e, t, n) {
     a = "horizontal" === t ? e.offsetLeft : e.offsetTop,
     o = e.offsetParent;
   for (; null != o && o !== n;)
-    if ((0, r.k)(o, HTMLElement)) {
+    if ((0, r.kK)(o, HTMLElement)) {
       let e = o;
       a += "horizontal" === t ? e.offsetLeft : e.offsetTop, o = e.offsetParent
     } else o = o.parentNode;

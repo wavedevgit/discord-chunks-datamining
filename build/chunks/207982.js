@@ -51,7 +51,7 @@ function u(e, t) {
 function d(e, t, n) {
   let i = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {},
     o = arguments.length > 4 ? arguments[4] : true;
-  e.preventDefault(), (0, r.k)(e.currentTarget) && e.currentTarget.blur(), (0, a.K)(u(l({}, i), {
+  e.preventDefault(), (0, r.kK)(e.currentTarget) && e.currentTarget.blur(), (0, a.K)(u(l({}, i), {
     items: t,
     startingIndex: n,
     location: null != o ? o : "zoomedMediaModalHelper"

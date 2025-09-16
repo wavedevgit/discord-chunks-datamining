@@ -107,7 +107,7 @@ class el {
         if ((null == t ? true : t.parentId) == null) break;
         r = this.nodeRefs[t.parentId]
       }
-      null != r && (0, d.k)(r) ? n.scrollIntoViewNode({
+      null != r && (0, d.kK)(r) ? n.scrollIntoViewNode({
         node: r,
         animate: t,
         padding: 8

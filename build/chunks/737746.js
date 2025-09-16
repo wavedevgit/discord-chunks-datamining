@@ -8,5 +8,5 @@ var Chunk374470 = require("./374470.js");
 
 function i(e) {
   let t = getComputedStyle(document.documentElement).getPropertyValue("--space-".concat(e));
-  return (0, r.M)(t)
+  return (0, r.Mg)(t)
 }

@@ -16,7 +16,7 @@ let l = e => {
   return {
     handleLeftClick: e => {
       var n;
-      (0, a.k)(e.target) && (null == (n = t.current) ? true : n.contains(e.target)) || l(i, e.shiftKey)
+      (0, a.kK)(e.target) && (null == (n = t.current) ? true : n.contains(e.target)) || l(i, e.shiftKey)
     },
     handleRightClick: e => (0, s.jW)(e, async () => {
       let {

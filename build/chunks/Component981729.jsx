@@ -218,7 +218,7 @@ class k extends(r = Chunk647438.Component) {
         if (null == (e = this.props.targetElementRef.current)) return
       } else {
         var t;
-        if (e = null == (t = this.siblingDomRef.current) ? true : exports.previousElementSibling, !(0, Chunk374470.k)(module)) throw Error("Tooltip cannot find DOM node")
+        if (e = null == (t = this.siblingDomRef.current) ? true : exports.previousElementSibling, !(0, Chunk374470.kK)(module)) throw Error("Tooltip cannot find DOM node")
       }
       this.domElementRef.current = module, this.hasDomElement = true, this.forceUpdate()
     }
@@ -298,7 +298,7 @@ class k extends(r = Chunk647438.Component) {
     } = this.props;
     if (exports) {
       let e = this.domElementRef.current;
-      if (null == module || (0, Chunk374470.k)(module, HTMLElement) && module.offsetWidth >= module.scrollWidth) return
+      if (null == module || (0, Chunk374470.kK)(module, HTMLElement) && module.offsetWidth >= module.scrollWidth) return
     }
     null != module ? this.showTimeout.start(module, () => this.toggleShow(true), false) : this.toggleShow(true)
   }

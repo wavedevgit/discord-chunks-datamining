@@ -37,7 +37,7 @@ function s(e) {
       if (I.current) return;
       if (d && null != p.current) {
         let e = p.current;
-        if ((0, i.k)(e, HTMLElement) && e.offsetWidth >= e.scrollWidth) return
+        if ((0, i.kK)(e, HTMLElement) && e.offsetWidth >= e.scrollWidth) return
       }
       let e = null != s ? s : o,
         t = b.current;

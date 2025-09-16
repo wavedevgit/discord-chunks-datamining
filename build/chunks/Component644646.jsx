@@ -43,7 +43,7 @@ let I = function(e) {
     L = i.useMemo(() => (0, h.fh)(a, h.eC.REWARD_IMAGE), [a]),
     j = i.useCallback(t => {
       var n;
-      (0, s.k)(t.currentTarget, HTMLElement) && t.currentTarget.blur(), P({
+      (0, s.kK)(t.currentTarget, HTMLElement) && t.currentTarget.blur(), P({
         questId: a.id,
         questContent: e.questContent,
         questContentPosition: e.questContentPosition,

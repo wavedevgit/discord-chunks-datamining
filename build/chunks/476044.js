@@ -18,7 +18,7 @@ function i(e) {
     if (!a || (null == t ? true : t.current) == null) return;
     let e = null,
       r = r => {
-        if ((null == t ? true : t.current) == null || !(0, o.k)(r.target, HTMLElement)) return;
+        if ((null == t ? true : t.current) == null || !(0, o.kK)(r.target, HTMLElement)) return;
         let a = r.target;
         if (!a.contains(t.current)) return;
         let s = a.scrollTop;

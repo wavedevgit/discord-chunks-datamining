@@ -345,7 +345,7 @@ class T extends(r = Chunk647438.PureComponent) {
         clientX: u,
         currentTarget: f
       } = e;
-      if (!(0, d.k)(f)) return;
+      if (!(0, d.kK)(f)) return;
       let {
         left: _,
         width: p
@@ -403,7 +403,7 @@ class T extends(r = Chunk647438.PureComponent) {
       let {
         current: r
       } = this.containerRef;
-      if (null == r || null == (t = r.ownerDocument) || t.addEventListener("mousemove", this.handleMouseMove, true), null == r || null == (n = r.ownerDocument) || n.addEventListener("mouseup", this.handleMouseUp, true), !(0, d.k)(r)) throw Error("[UIKit]Slider.handleMouseDown(): assert failed: domNode nodeType !== Element");
+      if (null == r || null == (t = r.ownerDocument) || t.addEventListener("mousemove", this.handleMouseMove, true), null == r || null == (n = r.ownerDocument) || n.addEventListener("mouseup", this.handleMouseUp, true), !(0, d.kK)(r)) throw Error("[UIKit]Slider.handleMouseDown(): assert failed: domNode nodeType !== Element");
       this.setState({
         x: e.clientX,
         active: true,

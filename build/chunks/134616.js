@@ -35,7 +35,7 @@ let u = function(e) {
       if ((0, i.Vbw)()) returnfalse;
       if (a.S.hasSubscribers(c.CkL.CALL_DECLINE)) return a.S.dispatch(c.CkL.CALL_DECLINE), false;
       if (o.Z.close()) returnfalse;
-      if ((0, r.k)(e.target)) {
+      if ((0, r.kK)(e.target)) {
         let t = (0, l.J5)(e.target);
         if (null == t ? true : t.hasSubscribers(c.CkL.POPOUT_CLOSE)) return t.dispatch(c.CkL.POPOUT_CLOSE), false
       }

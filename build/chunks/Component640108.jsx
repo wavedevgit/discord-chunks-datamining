@@ -886,7 +886,7 @@ class et extends(i = Chunk647438.PureComponent) {
     let {
       current: e
     } = this.mediaRef;
-    if (null == module || !(0, Chunk374470.k)(module, HTMLVideoElement)) return;
+    if (null == module || !(0, Chunk374470.kK)(module, HTMLVideoElement)) return;
     if (this.props.type !== Y.VIDEO) {
       this._analytics.metadata.hasValidFrame = true;
       return

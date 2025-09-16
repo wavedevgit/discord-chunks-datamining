@@ -287,7 +287,7 @@ class C extends(r = Chunk647438.Component) {
         showForegroundTooltip: true
       }), this.handleForegroundMouseMove(e)
     }), x(this, "handleForegroundMouseMove", e => {
-      if (!(0, d.k)(e.target)) return;
+      if (!(0, d.kK)(e.target)) return;
       let t = e.target.getBoundingClientRect(),
         n = e.clientY - t.top;
       n !== this.state.foregroundTooltipY && this.setState({

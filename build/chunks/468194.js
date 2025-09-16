@@ -4,7 +4,7 @@
 require.d(exports, {
   De: () => o,
   Fv: () => f,
-  Mg: () => Chunk374470.M,
+  Mg: () => Chunk374470.Mg,
   TZ: () => d,
   Zg: () => l,
   _I: () => c,

@@ -1,7 +1,7 @@
 /** Chunk was on 62987 **/
 /** chunk id: 663924, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,7 +13,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk314910 = require("./314910.jsx"),
   Chunk574254 = require("./574254.js"),
   Chunk585483 = require("./585483.js"),
-  Chunk5967 = require("./5967.js"),
   Chunk499254 = require("./499254.js"),
   Chunk827498 = require("./827498.js"),
   Chunk421591 = require("./421591.jsx"),
@@ -23,59 +22,59 @@ var Chunk951288 = require("./951288.js"),
   Chunk149203 = require("./149203.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk681524 = require("./681524.js");
-let O = {
+let x = {
   height: Chunk314734.lv
 };
 
-function j() {
+function O() {
   Chunk499254.yT(Chunk827498.ti.DISMISSED)
 }
 
-function E(e) {
+function j(e) {
   let {
     channel: t,
     closeOnModalOuterClick: n = false,
     parentModalKey: u
-  } = e, f = i.useRef(null), {
-    renderWindow: v,
-    windowDispatch: x
-  } = i.useContext(s.ZP), O = null != u, E = (0, a.Jw)(null != u ? u : ""), S = i.useCallback(e => {
+  } = e, h = i.useRef(null), {
+    renderWindow: C,
+    windowDispatch: v
+  } = i.useContext(s.ZP), x = null != u, j = (0, a.Jw)(null != u ? u : ""), E = i.useCallback(e => {
     var t;
-    if (!O && (0, a.$s)() || O && !(E && n) || d.Z.isOpen() || e.defaultPrevented) return;
+    if (!x && (0, a.$s)() || x && !(j && n) || d.Z.isOpen() || e.defaultPrevented) return;
     let {
       target: r
     } = e;
-    if ((0, l.k)(r) && null != r.closest("." + y.Jh)) return;
+    if ((0, l.kK)(r) && null != r.closest("." + b.Jh)) return;
     for (;
-      (0, l.k)(r);) {
-      if (r === f.current) return;
-      if (r.classList.contains(y.t4) || r.classList.contains(y.Id)) return void e.preventDefault();
-      if (r.classList.contains(y.NN)) return;
-      let t = [C.cZ, c.N];
-      if (r.classList.contains(y.I4) || t.includes(r.id)) return;
+      (0, l.kK)(r);) {
+      if (r === h.current) return;
+      if (r.classList.contains(b.t4) || r.classList.contains(b.Id)) return void e.preventDefault();
+      if (r.classList.contains(b.NN)) return;
+      let t = [_.cZ, c.N];
+      if (r.classList.contains(b.I4) || t.includes(r.id)) return;
       r = r.parentNode
     }
-    j();
-    let i = null == (t = (0, h.uB)(e)) ? true : t.activeElement;
-    (null == i || "BODY" === i.tagName) && p.S.dispatchToLastSubscribed(_.CkL.TEXTAREA_FOCUS)
-  }, [n, E, O]);
-  i.useLayoutEffect(() => (v.addEventListener("mousedown", S), v.addEventListener("contextmenu", S), x.subscribe(_.CkL.POPOUT_CLOSE, j), () => {
-    v.removeEventListener("mousedown", S), v.removeEventListener("contextmenu", S), x.unsubscribe(_.CkL.POPOUT_CLOSE, j)
-  }), [S, v, x]), (0, o.Tbt)(f), i.useEffect(() => {
-    (!O && (0, a.$s)() || O && !E) && j()
-  }, [E, O]);
-  let I = (0, b.Z)();
-  return (0, r.jsx)(g.Z, {
-    ref: f,
+    O();
+    let i = null == (t = (0, l.uB)(e)) ? true : t.activeElement;
+    (null == i || "BODY" === i.tagName) && p.S.dispatchToLastSubscribed(y.CkL.TEXTAREA_FOCUS)
+  }, [n, j, x]);
+  i.useLayoutEffect(() => (C.addEventListener("mousedown", E), C.addEventListener("contextmenu", E), v.subscribe(y.CkL.POPOUT_CLOSE, O), () => {
+    C.removeEventListener("mousedown", E), C.removeEventListener("contextmenu", E), v.unsubscribe(y.CkL.POPOUT_CLOSE, O)
+  }), [E, C, v]), (0, o.Tbt)(h), i.useEffect(() => {
+    (!x && (0, a.$s)() || x && !j) && O()
+  }, [j, x]);
+  let S = (0, g.Z)();
+  return (0, r.jsx)(m.Z, {
+    ref: h,
     context: {
       channel: t,
       type: "channel"
     },
-    entrypoint: m._b.TEXT,
-    initHistory: I
+    entrypoint: f._b.TEXT,
+    initHistory: S
   })
 }
-let S = Chunk647438.memo(function(e) {
+let E = Chunk647438.memo(function(e) {
   var {
     positionTargetRef: t
   } = e, n = function(e, t) {
@@ -94,9 +93,9 @@ let S = Chunk647438.memo(function(e) {
     return i
   }(e, ["positionTargetRef"]);
   return (0, r.jsx)("span", {
-    style: y.u$,
+    style: b.u$,
     children: (0, r.jsx)(u.W5, {
-      className: x.positionLayer,
+      className: v.positionLayer,
       targetRef: t,
       position: "top",
       align: "right",
@@ -108,11 +107,11 @@ let S = Chunk647438.memo(function(e) {
           isPositioned: t
         } = e;
         return (0, r.jsx)("section", {
-          className: x.positionContainer,
+          className: v.positionContainer,
           role: "dialog",
-          style: O,
-          "aria-label": v.intl.string(v.t["3CNGLC"]),
-          children: t && (0, r.jsx)(E, function(e) {
+          style: x,
+          "aria-label": C.intl.string(C.t["3CNGLC"]),
+          children: t && (0, r.jsx)(j, function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);

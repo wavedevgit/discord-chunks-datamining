@@ -10,10 +10,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk755712 = require("./755712.js"),
+  Chunk374470 = require("./374470.js"),
   Chunk481060 = require("./481060.js"),
   Chunk40851 = require("./40851.jsx"),
   Chunk314910 = require("./314910.jsx"),
-  Chunk5967 = require("./5967.js"),
   Chunk53529 = require("./53529.js"),
   Chunk50659 = require("./50659.js"),
   Chunk436660 = require("./436660.js"),
@@ -28,29 +28,29 @@ function E(e) {
     options: i,
     iconClassName: a,
     dividerClassName: s
-  } = e, c = null == (t = n.current) ? true : t.getSlateEditor();
-  return null == c ? null : (0, r.jsxs)("div", {
+  } = e, l = null == (t = n.current) ? true : t.getSlateEditor();
+  return null == l ? null : (0, r.jsxs)("div", {
     className: g.buttons,
     children: [(0, r.jsx)(y, {
-      slateEditor: c,
+      slateEditor: l,
       markdownSyntax: "bold",
-      children: (0, r.jsx)(l.mY4, {
+      children: (0, r.jsx)(c.mY4, {
         size: "md",
         color: "currentColor",
         className: o()(g.icon, a)
       })
     }), (0, r.jsx)(y, {
-      slateEditor: c,
+      slateEditor: l,
       markdownSyntax: "italics",
-      children: (0, r.jsx)(l.h32, {
+      children: (0, r.jsx)(c.h32, {
         size: "md",
         color: "currentColor",
         className: o()(g.icon, a)
       })
     }), (0, r.jsx)(y, {
-      slateEditor: c,
+      slateEditor: l,
       markdownSyntax: "strikethrough",
-      children: (0, r.jsx)(l.dwl, {
+      children: (0, r.jsx)(c.dwl, {
         size: "md",
         color: "currentColor",
         className: o()(g.icon, a)
@@ -58,17 +58,17 @@ function E(e) {
     }), (0, r.jsx)("div", {
       className: o()(g.divider, s)
     }), !(null == i ? true : i.disableBlockQuotes) && (0, r.jsx)(O, {
-      slateEditor: c,
+      slateEditor: l,
       blockType: "blockQuote",
-      children: (0, r.jsx)(l.PEf, {
+      children: (0, r.jsx)(c.PEf, {
         size: "md",
         color: "currentColor",
         className: o()(g.icon, a)
       })
     }), !(null == i ? true : i.disableInlineCode) && (0, r.jsx)(y, {
-      slateEditor: c,
+      slateEditor: l,
       markdownSyntax: "inlineCode",
-      children: (0, r.jsx)(l.nF$, {
+      children: (0, r.jsx)(c.nF$, {
         size: "custom",
         width: 20,
         height: 20,
@@ -76,9 +76,9 @@ function E(e) {
         className: o()(g.icon, a)
       })
     }), (0, r.jsx)(y, {
-      slateEditor: c,
+      slateEditor: l,
       markdownSyntax: "spoiler",
-      children: (0, r.jsx)(l.tEF, {
+      children: (0, r.jsx)(c.tEF, {
         size: "md",
         color: "currentColor",
         className: o()(g.icon, a)
@@ -91,8 +91,8 @@ let b = Chunk647438.forwardRef(function(e, t) {
   let {
     editorRef: a,
     containerRef: o,
-    options: l
-  } = e, f = i.useRef(null), [_, p] = i.useState(false), m = i.useRef(null), b = i.useContext(c.ZP), y = i.useCallback(() => {
+    options: c
+  } = e, f = i.useRef(null), [_, p] = i.useState(false), m = i.useRef(null), b = i.useContext(u.ZP), y = i.useCallback(() => {
     p(false), clearTimeout(m.current)
   }, []), O = i.useCallback(e => {
     var t;
@@ -107,7 +107,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
         let r = e.target instanceof t.Node && (null == (n = f.current) ? true : n.contains(e.target));
         clearTimeout(m.current), m.current = setTimeout(() => {
           var t;
-          let n = null == (t = (0, d.uB)(e)) ? true : t.activeElement,
+          let n = null == (t = (0, l.uB)(e)) ? true : t.activeElement,
             i = o.current;
           p(r || null != n && null != i && i.contains(n))
         }, 100)
@@ -162,7 +162,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
       R(e.width / 2), C(e.height + 12)
     }, [T, S]), null == T || null == S) return null;
   let P = null == (n = a.current) ? true : n.getSlateEditor();
-  return null == P ? null : (0, r.jsx)(u.ZP, {
+  return null == P ? null : (0, r.jsx)(d.ZP, {
     children: (0, r.jsxs)("div", {
       id: "slate-toolbar",
       ref: f,
@@ -181,7 +181,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
         slateEditor: P
       }), (0, r.jsx)(E, {
         editorRef: a,
-        options: l
+        options: c
       })]
     })
   })

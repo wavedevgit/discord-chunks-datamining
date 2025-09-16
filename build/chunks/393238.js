@@ -29,7 +29,7 @@ function s() {
 
 function l() {
   let [e, t] = Chunk647438.useState(true), [n, s] = Chunk647438.useState(true), l = (0, Chunk448986.Z)(e => {
-    if (!(0, i.k)(e.target, HTMLElement)) return {
+    if (!(0, i.kK)(e.target, HTMLElement)) return {
       scrollWidth: true,
       scrollHeight: true
     };

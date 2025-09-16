@@ -6,10 +6,10 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk374470 = require("./374470.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk663389 = require("./663389.js"),
-  Chunk5967 = require("./5967.js"),
   Chunk996733 = require("./996733.js"),
   Chunk388032 = require("./388032.jsx");
 
@@ -27,7 +27,7 @@ function d() {
     let e = e => {
       var t;
       let n = d.current;
-      (null == (t = (0, l.uB)(e)) ? true : t.activeElement) === document.body && (null == n || n.focus())
+      (null == (t = (0, a.uB)(e)) ? true : t.activeElement) === document.body && (null == n || n.focus())
     };
     return window.addEventListener("keydown", module), () => window.removeEventListener("keydown", module)
   }, [f]), (0, Chunk951288.jsx)("div", {

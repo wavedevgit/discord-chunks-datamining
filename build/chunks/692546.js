@@ -105,7 +105,7 @@ class E extends(i = Chunk647438.PureComponent) {
   constructor(...e) {
     super(...e), g(this, "zone", o().uniqueId("ClickArea")), g(this, "interval", new c.Xp), g(this, "updateZone", () => {
       let e = this.props.contentDomRef.current;
-      if ((0, s.k)(e)) {
+      if ((0, s.kK)(e)) {
         let {
           left: t,
           top: n,

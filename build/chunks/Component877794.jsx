@@ -72,7 +72,7 @@ function y(t) {
       })
     }, []),
     C = l.useCallback(() => {
-      if ((0, c.k)(n, HTMLInputElement) || (0, c.k)(n, HTMLTextAreaElement)) {
+      if ((0, c.kK)(n, HTMLInputElement) || (0, c.kK)(n, HTMLTextAreaElement)) {
         let {
           selectionStart: t,
           selectionEnd: e,

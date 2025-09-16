@@ -85,7 +85,7 @@ class R extends(r = Chunk647438.Component) {
   getDomElement() {
     var e;
     let t = null == (e = this.props.targetElementRef) ? true : module.current;
-    if (!(0, Chunk374470.k)(exports)) {
+    if (!(0, Chunk374470.kK)(exports)) {
       let e = Error("Popout cannot find DOM node");
       return console.error(module), Chunk960048.Z.captureException(module), null
     }

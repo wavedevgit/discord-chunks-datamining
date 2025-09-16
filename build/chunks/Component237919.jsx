@@ -7,6 +7,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
+  Chunk374470 = require("./374470.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
@@ -14,7 +15,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk819640 = require("./819640.js"),
   Chunk490983 = require("./490983.js"),
   Chunk799777 = require("./799777.js"),
-  Chunk5967 = require("./5967.js"),
   Chunk346329 = require("./346329.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -52,7 +52,7 @@ class E extends Chunk647438.Component {
     } = this.props, r = t.findIndex(e => e.key === n), i = 0;
     r >= 0 && (i = (r + e) % t.length) < 0 && (i = t.length - 1);
     let l = t[i];
-    u.wX(null != l ? l.key : null, true)
+    d.wX(null != l ? l.key : null, true)
   }
   render() {
     let {
@@ -92,13 +92,13 @@ class E extends Chunk647438.Component {
         hasModalOpen: l,
         applicationViewItems: a
       } = this.props, {
-        searchBarRef: o
+        searchBarRef: s
       } = this;
-      if (l || e.ctrlKey || e.altKey || e.metaKey || null == o) return;
-      let s = null == (t = (0, h.uB)(e)) ? true : t.activeElement;
-      if (!(s !== o.current && (0, h.VG)(s))) switch (e.which) {
+      if (l || e.ctrlKey || e.altKey || e.metaKey || null == s) return;
+      let c = null == (t = (0, o.uB)(e)) ? true : t.activeElement;
+      if (!(c !== s.current && (0, o.VG)(c))) switch (e.which) {
         case m.yXg.ESCAPE:
-          e.target !== o.current ? this.reset() : null != o.current && (null == (n = o.current) || n.blur());
+          e.target !== s.current ? this.reset() : null != s.current && (null == (n = s.current) || n.blur());
           break;
         case m.yXg.ENTER:
           if (null != i) {
@@ -123,7 +123,7 @@ class E extends Chunk647438.Component {
           e.preventDefault(), e.stopPropagation(), this.updateActiveRow(e.which === m.yXg.ARROW_DOWN ? 1 : false);
           break;
         default:
-          null != o.current && e.target !== o.current && (null == (r = o.current) || r.focus())
+          null != s.current && e.target !== s.current && (null == (r = s.current) || r.focus())
       }
     })
   }

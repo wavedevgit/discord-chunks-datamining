@@ -78,7 +78,7 @@ class p extends(r = Chunk647438.PureComponent) {
   }
   grabDimensions() {
     let e = this._ref.current.refs.node;
-    (0, Chunk374470.k)(module) && (this._height = module.clientHeight, this._width = module.clientWidth)
+    (0, Chunk374470.kK)(module) && (this._height = module.clientHeight, this._width = module.clientWidth)
   }
   translate(e, t) {
     let {

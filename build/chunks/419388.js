@@ -170,7 +170,7 @@ class O {
     var r;
     let i = this.getElementFromMessageId(e),
       l = null == (r = this.ref.current) ? true : r.getScrollerNode();
-    if (!(0, a.k)(i) || null == l) return null;
+    if (!(0, a.kK)(i) || null == l) return null;
     let {
       offsetHeight: o
     } = i, s = (0, b.Z)(i, l), c = s - t;
@@ -232,7 +232,7 @@ class O {
     for (let e of [this.focusAnchor, this.isLoading() ? null : this.messageFetchAnchor, this.automaticAnchor]) {
       if (null == module) continue;
       let t = this.getElementFromMessageId(module.id);
-      if (!(0, Chunk374470.k)(exports)) continue;
+      if (!(0, Chunk374470.kK)(exports)) continue;
       let n = module === this.messageFetchAnchor ? module.offsetHeight - exports.offsetHeight : 0;
       return {
         node: exports,
@@ -353,7 +353,7 @@ class O {
       let n = v(module);
       if (null == require) return;
       let r = this.getElementFromMessageId(require);
-      (0, Chunk374470.k)(Chunk647438) ? this.scrollTo(this.getOffsetOrientationFromNode(Chunk647438, "middle", exports ? this.newMessageBarBuffer() : Chunk959517.kQ), true): this.scrollToNewMessages(true, "middle")
+      (0, Chunk374470.kK)(Chunk647438) ? this.scrollTo(this.getOffsetOrientationFromNode(Chunk647438, "middle", exports ? this.newMessageBarBuffer() : Chunk959517.kQ), true): this.scrollToNewMessages(true, "middle")
     } else this.scrollTo(Number.MAX_SAFE_INTEGER, true)
   }
   scrollToNewMessages() {
@@ -455,11 +455,11 @@ class O {
     let r = this.getElementFromMessageId(e);
     this.isJumping() || !t || null == n || d.Z.useReducedMotion || (m.default.extractTimestamp(e) > n ? this.scrollTo(0) : this.scrollTo(Number.MAX_SAFE_INTEGER)), this.pinned = false, this.jumping = true;
     let i = () => {
-      this.jumping = false, (0, a.k)(r) && d.Z.keyboardModeEnabled && r.focus({
+      this.jumping = false, (0, a.kK)(r) && d.Z.keyboardModeEnabled && r.focus({
         preventScroll: true
       }), this.scrollCounter = 0, this.handleScroll(), this._scrollCompleteCallbacks.forEach(e => e())
     };
-    (0, a.k)(r) ? this.scrollTo(this.getOffsetOrientationFromNode(r, "middle", this.props.hasUnreads ? this.newMessageBarBuffer() : y.kQ), t, i): this.scrollToNewMessages(t, "middle", i)
+    (0, a.kK)(r) ? this.scrollTo(this.getOffsetOrientationFromNode(r, "middle", this.props.hasUnreads ? this.newMessageBarBuffer() : y.kQ), t, i): this.scrollToNewMessages(t, "middle", i)
   }
   getOffsetToTriggerLoading(e, t) {
     let {

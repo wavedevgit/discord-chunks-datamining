@@ -129,7 +129,7 @@ class T extends Chunk647438.PureComponent {
           if (null != r && !r.isCollapsed) returntrue;
           if (null == e || null == t) returnfalse;
           for (;
-            (0, i.k)(e) && e !== t;) {
+            (0, i.kK)(e) && e !== t;) {
             let {
               tagName: t
             } = e;

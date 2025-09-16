@@ -258,11 +258,11 @@ class U extends Chunk647438.PureComponent {
     };
     if (null != this._lastExpandedRef) {
       let t = this._lastExpandedRef;
-      (0, Chunk374470.k)(exports) && (module.lastExpanded = exports.getBoundingClientRect())
+      (0, Chunk374470.kK)(exports) && (module.lastExpanded = exports.getBoundingClientRect())
     }
     if (null != this._expandedRef) {
       let t = this._expandedRef;
-      (0, Chunk374470.k)(exports) && (module.expanded = exports.getBoundingClientRect())
+      (0, Chunk374470.kK)(exports) && (module.expanded = exports.getBoundingClientRect())
     }
     return module
   }

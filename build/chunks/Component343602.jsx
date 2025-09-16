@@ -42,8 +42,8 @@ function j(t) {
   let F = null != (C = null == (n = A.chatInputType) || null == (e = n.commands) ? true : e.enabled) && C,
     R = null != (O = null == (T = A.chatInputType) || null == (j = T.stickers) ? true : j.autoSuggest) && O,
     G = null != (k = null == (x = A.chatInputType) || null == (E = x.submit) ? true : E.button) && k,
-    H = F || R,
-    U = "" !== N ? [(0, l.jsx)(s.sNh, {
+    K = F || R,
+    H = "" !== N ? [(0, l.jsx)(s.sNh, {
       id: "cut",
       label: S.intl.string(S.t.pNPVhY),
       hint: (0, p.isMac)() ? "⌘X" : "Ctrl+X",
@@ -54,7 +54,7 @@ function j(t) {
       hint: (0, p.isMac)() ? "⌘C" : "Ctrl+C",
       action: () => setTimeout(() => g.ZP.copy(), 0)
     }, "copy")] : null,
-    X = (0, l.jsx)(s.S89, {
+    U = (0, l.jsx)(s.S89, {
       id: "command-suggestions",
       label: S.intl.string(S.t["9rJKFx"]),
       checked: M,
@@ -73,10 +73,10 @@ function j(t) {
     onClose: L,
     "aria-label": S.intl.string(S.t.NWlDSE),
     onSelect: I,
-    children: [H && (0, l.jsx)(s.sNh, {
+    children: [K && (0, l.jsx)(s.sNh, {
       id: "suggestions",
       label: S.intl.string(S.t.zgxg7u),
-      children: F && X
+      children: F && U
     }), G && (0, l.jsx)(s.S89, {
       id: "submit-button",
       label: S.intl.string(S.t.G8XDys),
@@ -89,7 +89,7 @@ function j(t) {
     }), (0, l.jsxs)(s.kSQ, {
       children: [w, _]
     }), (0, l.jsxs)(s.kSQ, {
-      children: [U, (0, l.jsx)(s.sNh, {
+      children: [H, (0, l.jsx)(s.sNh, {
         id: "paste",
         label: S.intl.string(S.t.lMUxVl),
         hint: (0, p.isMac)() ? "⌘V" : "Ctrl+V",

@@ -77,7 +77,7 @@ class O extends Chunk647438.PureComponent {
   updateCache() {
     var e, t;
     let n = this.contentRef.current;
-    if (null == require || !(0, Chunk374470.k)(require, HTMLElement)) return;
+    if (null == require || !(0, Chunk374470.kK)(require, HTMLElement)) return;
     let {
       offsetWidth: r,
       offsetHeight: i

@@ -1,8 +1,8 @@
 /** Chunk was on 37220 **/
 /** chunk id: 225138, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  S: () => B,
-  default: () => X
+  S: () => X,
+  default: () => K
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -47,7 +47,7 @@ var Chunk374470 = require("./374470.js"),
   Chunk975368 = require("./975368.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function X(e) {
+function K(e) {
   var t, n;
   let l, o, u, d, {
       channel: f,
@@ -68,11 +68,11 @@ function X(e) {
   if (null != p) o = l = u = p.url;
   else
     for (;
-      (0, i.k)(v);)(0, i.k)(v, HTMLImageElement) && null != v.src && (o = v.src), (0, i.k)(v, HTMLAnchorElement) && null != v.href && (l = v.href, d = v.textContent, null == o && "img" === v.getAttribute("data-role") && (o = l, v.hasAttribute("data-safe-src") && "" !== v.getAttribute("data-safe-src") && (u = v.getAttribute("data-safe-src")))), v = v.parentNode;
+      (0, i.kK)(v);)(0, i.kK)(v, HTMLImageElement) && null != v.src && (o = v.src), (0, i.kK)(v, HTMLAnchorElement) && null != v.href && (l = v.href, d = v.textContent, null == o && "img" === v.getAttribute("data-role") && (o = l, v.hasAttribute("data-safe-src") && "" !== v.getAttribute("data-safe-src") && (u = v.getAttribute("data-safe-src")))), v = v.parentNode;
   let P = null != (n = null == (t = document.getSelection()) ? true : t.toString()) ? n : "";
   return (0, r.jsx)(c.Gt, {
     value: h,
-    children: B({
+    children: X({
       message: g,
       channel: f,
       mediaItem: p,
@@ -95,7 +95,7 @@ function X(e) {
   })
 }
 
-function B(e) {
+function X(e) {
   let {
     message: t,
     channel: n,
@@ -103,9 +103,9 @@ function B(e) {
     textSelection: a,
     favoriteableType: s,
     favoriteableId: c,
-    favoriteableName: X,
-    itemHref: B,
-    itemSrc: K,
+    favoriteableName: K,
+    itemHref: X,
+    itemSrc: B,
     itemSafeSrc: W,
     itemTextContent: q,
     canReport: V,
@@ -118,8 +118,8 @@ function B(e) {
   } = e, en = (0, d.Z)(a), er = (0, b.Z)(a), ei = (0, N.Z)(t, n), el = (0, v.Z)(t, n), ea = (0, _.Z)(t, n), eo = (0, I.Z)(t, n), es = (0, Z.Z)({
     type: s,
     id: c,
-    name: X
-  }), ec = (0, R.Z)(t, n), eu = (0, w.Z)(t, n), ed = (0, A.Z)(t), ef = (0, j.Z)(t, n), eg = (0, E.Z)(t, n), eb = (0, x.Z)(t, n), ep = (0, D.Z)(t, n), em = (0, P.Z)(t, n), eO = (0, C.ZP)(t), ey = (0, C.wY)(t), eh = (0, C.eH)(t), ev = (0, L.Z)(t, n), ej = (0, g.Z)(null != B ? B : K, q, t, {
+    name: K
+  }), ec = (0, R.Z)(t, n), eu = (0, w.Z)(t, n), ed = (0, A.Z)(t), ef = (0, j.Z)(t, n), eg = (0, E.Z)(t, n), eb = (0, x.Z)(t, n), ep = (0, D.Z)(t, n), em = (0, P.Z)(t, n), eO = (0, C.ZP)(t), ey = (0, C.wY)(t), eh = (0, C.eH)(t), ev = (0, L.Z)(t, n), ej = (0, g.Z)(null != X ? X : B, q, t, {
     shouldHideMediaOptions: et
   }), eE = (0, f.Z)(W, t, {
     shouldHideMediaOptions: et,

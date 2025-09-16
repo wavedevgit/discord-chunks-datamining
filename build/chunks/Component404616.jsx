@@ -136,7 +136,7 @@ let ei = 72,
     }), {
       ref: y,
       height: P
-    } = (0, p.ZP)(), N = (0, q.xH)(e => e.setCardHeight, d.X);
+    } = (0, p.ZP)(), N = (0, K.xH)(e => e.setCardHeight, d.X);
     a.useEffect(() => {
       null != P && N(t, P)
     }, [P, N, t]), a.useEffect(() => {
@@ -345,7 +345,7 @@ let em = Chunk647438.memo(function(e) {
   }
   return (0, r.jsxs)(N.aQ.Provider, {
     value: (0, _.Z)(m, d),
-    children: [!o && (0, r.jsx)(K.Z, {
+    children: [!o && (0, r.jsx)(q.Z, {
       channel: n,
       message: t,
       renderColon: null != g,

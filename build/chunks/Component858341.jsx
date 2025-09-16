@@ -31,7 +31,7 @@ function k(e) {
   if (null != j) k = t = j.url;
   else
     for (;
-      (0, r.k)(x);)(0, r.k)(x, HTMLImageElement) && null != x.src && (k = x.src), (0, r.k)(x, HTMLAnchorElement) && null != x.href && (t = x.href, Z = x.textContent), x = x.parentNode;
+      (0, r.kK)(x);)(0, r.kK)(x, HTMLImageElement) && null != x.src && (k = x.src), (0, r.kK)(x, HTMLAnchorElement) && null != x.href && (t = x.href, Z = x.textContent), x = x.parentNode;
   let M = null == (n = document.getSelection()) ? true : n.toString(),
     O = (0, c.Z)(M),
     R = (0, d.Z)(M),

@@ -70,10 +70,10 @@ class _ extends Chunk647438.Component {
   constructor(...e) {
     super(...e), g(this, "_mouseDown", false), g(this, "_mouseUp", false), g(this, "handleOpenTopic", e => {
       let t = e.target;
-      if ((0, o.k)(t)) {
+      if ((0, o.kK)(t)) {
         if (y(t)) return;
         let e = t.parentNode;
-        if ((0, o.k)(e) && y(e)) return
+        if ((0, o.kK)(e) && y(e)) return
       }(0, s.ZDy)(async () => {
         let {
           default: e
