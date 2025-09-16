@@ -30,6 +30,13 @@ let a = (0, Chunk818083.B)({
         enabled: true,
         includeNonProfile: false
       }
+    }, {
+      id: 3,
+      label: "Same as T1, but these users will not have the setter XP enabled.",
+      config: {
+        enabled: true,
+        includeNonProfile: true
+      }
     }]
   }),
   o = (0, Chunk818083.B)({

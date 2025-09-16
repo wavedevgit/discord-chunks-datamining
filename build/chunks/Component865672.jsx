@@ -94,7 +94,7 @@ function h(e, t) {
     for (; null !== (n = i.exec(e));) n.index > s && a.push(e.slice(s, n.index)), a.push((0, r.jsx)("span", {
       className: o()(u.emoji, t),
       children: n[0]
-    })), s = i.lastIndex;
+    }, "emoji".concat(n.index))), s = i.lastIndex;
     return s < e.length && a.push(e.slice(s)), a
   }, [e, t])
 }
