@@ -30,17 +30,19 @@ function o(e) {
   return e
 }
 var s = function(e) {
-  return e[e.DEMO = 0] = "DEMO", e[e.COLLECTIBLES_PREVIEW = 1] = "COLLECTIBLES_PREVIEW", e[e.GUILD_TAG_COACHMARK_ASSET = 2] = "GUILD_TAG_COACHMARK_ASSET", e
+  return e[e.DEMO = 0] = "DEMO", e[e.COLLECTIBLES_PREVIEW = 1] = "COLLECTIBLES_PREVIEW", e[e.GUILD_TAG_COACHMARK_ASSET = 2] = "GUILD_TAG_COACHMARK_ASSET", e[e.ACCOUNT_LINK_DISPLAY = 3] = "ACCOUNT_LINK_DISPLAY", e
 }({});
 let l = {
     0: () => require.e("64861").then(require.bind(require, 564172)),
     1: () => require.e("96887").then(require.bind(require, 669636)),
-    2: () => require.e("8124").then(require.bind(require, 413915))
+    2: () => require.e("8124").then(require.bind(require, 413915)),
+    3: () => require.e("72261").then(require.bind(require, 718717))
   },
   c = {
     0: Chunk647438.lazy(l[0]),
     1: Chunk647438.lazy(l[1]),
-    2: Chunk647438.lazy(l[2])
+    2: Chunk647438.lazy(l[2]),
+    3: Chunk647438.lazy(l[3])
   };
 
 function u(e) {
