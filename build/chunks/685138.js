@@ -108,7 +108,7 @@ function f(e) {
     location: i
   } = e, a = r.useMemo(() => new Date(n.startsAt), [n.startsAt]) >= c, s = u.useConfig({
     location: a ? i : "NONE"
-  }), f = (null == (t = s.status) ? true : t.label1) ? 350 : 305, [_, p] = r.useState(() => d() < f);
+  }), f = (null == (t = s.status) ? true : t.label1) ? 300 : 270, [_, p] = r.useState(() => d() < f);
   return r.useEffect(() => {
     let e = new MutationObserver(() => {
       p(d() < f)

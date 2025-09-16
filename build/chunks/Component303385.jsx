@@ -103,7 +103,7 @@ let p = 64,
           children: (0, r.jsx)(s.Text, {
             color: "always-white",
             lineClamp: 1,
-            variant: O ? "text-sm/medium" : "text-xs/medium",
+            variant: "text-xs/medium",
             children: f.intl.string((null == b ? true : b.label2) ? f.t["3mgEQU"] : f.t["1Wvve3"])
           })
         })]
