@@ -41,7 +41,7 @@ function c(e) {
       variant: "text-sm/semibold",
       children: e.key
     })
-  }, e)), [t]), p = [n.length];
+  }, e)), [t]), p = 0 === n.length ? [1] : [n.length];
   return (0, a.jsx)("div", {
     className: o.tableContainer,
     children: (0, a.jsx)(s.Tvr, {
@@ -73,10 +73,13 @@ function c(e) {
       renderRow: e => {
         let {
           rowIndex: t
-        } = e, r = n[t], l = r.key, p = i()(o.tableRow, {
-          [o.selectedTableRow]: l === u,
-          rowClassName: c
-        });
+        } = e, r = n[t];
+        if (null == r) return null;
+        let l = r.key,
+          p = i()(o.tableRow, {
+            [o.selectedTableRow]: l === u,
+            rowClassName: c
+          });
         return (0, a.jsx)(s.P3F, {
           className: p,
           onClick: () => null == d ? true : d(r),

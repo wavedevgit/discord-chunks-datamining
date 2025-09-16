@@ -24,34 +24,34 @@ function f(e) {
     navigateTo: E,
     setShowNavigationMobile: v
   } = (0, u.t)(), {
-    useTitle: b,
-    trailing: T,
+    useTitle: T,
+    trailing: b,
     stronglyDiscouragedCustomTab: N
-  } = g, p = b(), C = null != (o = null == T || null == (t = T.useDecoration) ? true : t.call(T)) ? o : null, I = null != (a = null == T || null == (n = T.useBadgeCount) ? true : n.call(T)) ? a : null, j = i.useMemo(() => g.layout.flatMap(e => e.layout), [g]), m = null != f && (null == T || null == (l = T.newIndicatorDismissibleContentTypes) ? true : l.includes(f)), _ = (null == O ? true : O.key) === g.key, S = () => {
+  } = g, p = T(), I = null != (o = null == b || null == (t = b.useDecoration) ? true : t.call(b)) ? o : null, C = null != (a = null == b || null == (n = b.useBadgeCount) ? true : n.call(b)) ? a : null, m = i.useMemo(() => g.layout.flatMap(e => e.layout), [g]), j = null != f && (null == b || null == (l = b.newIndicatorDismissibleContentTypes) ? true : l.includes(f)), S = (null == O ? true : O.key) === g.key, _ = () => {
     E(g.key), v(false)
   };
   return null != N ? (0, r.jsx)(N, {
-    active: _,
-    onClick: S
+    active: S,
+    onClick: _
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.Z, {
       icon: g.icon,
       title: p,
-      active: _,
+      active: S,
       trailing: (0, r.jsx)(() => {
-        if (m) {
+        if (j) {
           var e;
-          return null != (e = null == T ? true : T.newIndicatorBadgeOverride) ? e : (0, r.jsx)(s.IGR, {
+          return null != (e = null == b ? true : b.newIndicatorBadgeOverride) ? e : (0, r.jsx)(s.IGR, {
             text: d.intl.string(d.t.y2b7CA)
           })
         }
-        return null != I && I > 0 ? (0, r.jsx)(s.mAB, {
-          count: I
-        }) : null != C ? C : null
+        return null != C && C > 0 ? (0, r.jsx)(s.mAB, {
+          count: C
+        }) : null != I ? I : null
       }, {}),
-      onClick: S
-    }), _ && j.length > 1 && (0, r.jsx)(y, {
-      categories: j
+      onClick: _
+    }), S && m.length > 1 && (0, r.jsx)(y, {
+      categories: m
     })]
   })
 }

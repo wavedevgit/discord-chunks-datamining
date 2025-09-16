@@ -145,12 +145,12 @@ let v = [{
       useTooltip: e.useTooltip
     })
   })),
-  b = (0, Chunk509613.qs)(Chunk313789.n.SELECTED_CHANNEL_NOTIFICATIONS, {
+  T = (0, Chunk509613.qs)(Chunk313789.n.SELECTED_CHANNEL_NOTIFICATIONS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.TzjwV1),
     useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getNotifyMessagesInSelectedChannel()),
     setValue: e => a.default.setNotifyMessagesInSelectedChannel(e)
   }),
-  T = (0, Chunk509613.qs)(Chunk313789.n.DISABLE_ALL_NOTIFICATION_SOUNDS, {
+  b = (0, Chunk509613.qs)(Chunk313789.n.DISABLE_ALL_NOTIFICATION_SOUNDS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["2ZhCOT"]),
     useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["+B0XLC"]),
     useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getDisableAllSounds()),
@@ -181,5 +181,5 @@ let v = [{
         children: t
       })
     },
-    getLayout: () => [v[0].node, b, v[1].node, T, ...v.slice(2).map(e => e.node)]
+    getLayout: () => [v[0].node, T, v[1].node, b, ...v.slice(2).map(e => e.node)]
   })

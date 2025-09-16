@@ -119,7 +119,7 @@ function p(e) {
     rowIndex: e,
     totalRowCount: z,
     sectionIndex: t.sectionIndex
-  }, t => J(e, t), t => f.setInspectedExpressionPosition(t, e)), [K, J, $, Q, en, O, f, z]), ei = i.useCallback(e => null == v ? true : v(t[e]), [t, v]), ea = i.useCallback(e => null == I ? true : I(t[e], e), [t, I]), eo = i.useCallback(e => null == T ? true : T(t[e], e), [t, T]), es = i.useCallback(() => {
+  }, t => J(e, t), t => f.setInspectedExpressionPosition(t, e)), [K, J, $, Q, en, O, f, z]), ei = i.useCallback(e => null == I ? true : I(t[e], e), [t, I]), ea = i.useCallback(e => null == T ? true : T(t[e], e), [t, T]), eo = i.useCallback(() => {
     var e;
     return null == S ? true : S(null == K || null == (e = K[Y.rowIndex]) ? true : e[Y.columnIndex])
   }, [K, Y.columnIndex, Y.rowIndex, S]);
@@ -132,7 +132,7 @@ function p(e) {
     var e;
     null == (e = F.current) || e.focus()
   }, []);
-  let el = (0, r.jsxs)(r.Fragment, {
+  let es = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.Z, {
       ref: F,
       store: f,
@@ -145,9 +145,9 @@ function p(e) {
     }), null == N ? true : N()]
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [null != U ? U(el) : (0, r.jsxs)("div", {
+    children: [null != U ? U(es) : (0, r.jsxs)("div", {
       className: c.header,
-      children: [" ", el, " "]
+      children: [" ", es, " "]
     }), V && null != y ? y(c.emptyState) : (0, r.jsxs)(r.Fragment, {
       children: [C(Z), null != k && (0, r.jsx)("div", {
         className: c.gridNoticeWrapper,
@@ -164,10 +164,10 @@ function p(e) {
           hasSearchResults: g,
           listPadding: j,
           renderRow: er,
-          renderSection: null != v ? ei : true,
-          renderSectionHeader: null != I ? ea : true,
-          renderSectionFooter: null != T ? eo : true,
-          renderInspector: null != S ? es : true,
+          renderSection: v,
+          renderSectionHeader: null != I ? ei : true,
+          renderSectionFooter: null != T ? ea : true,
+          renderInspector: null != S ? eo : true,
           renderEmptySearchState: A,
           rowCount: z,
           rowCountBySection: q,

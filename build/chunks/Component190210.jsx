@@ -623,26 +623,29 @@ function eo(e) {
   }, []), g = i.useCallback(() => {
     c(false)
   }, []);
-  return (0, r.jsx)(h.u, {
-    asContainer: true,
-    text: X.intl.string(X.t["/IBYAg"]),
-    position: "top",
-    children: (0, r.jsxs)(f.P3F, {
-      className: Q.heroImageButton,
-      onMouseOver: d,
-      onMouseOut: g,
-      onFocus: l,
-      children: [(0, r.jsx)(Z.ZP, {
-        ref: a,
-        onChange: o,
-        "aria-hidden": true,
-        tabIndex: false,
-        maxFileSizeBytes: K.B,
-        onFileSizeError: () => (0, P.Z)(K.B)
-      }), (0, r.jsx)(f.FmF, {
-        size: "md",
-        color: s ? p.Z.colors.INTERACTIVE_ACTIVE : p.Z.colors.INTERACTIVE_NORMAL
-      })]
+  return (0, r.jsx)("div", {
+    className: Q.heroImageButton,
+    children: (0, r.jsx)(h.u, {
+      asContainer: true,
+      text: X.intl.string(X.t["/IBYAg"]),
+      position: "top",
+      children: (0, r.jsxs)(f.P3F, {
+        className: Q.heroImageButton,
+        onMouseOver: d,
+        onMouseOut: g,
+        onFocus: l,
+        children: [(0, r.jsx)(Z.ZP, {
+          ref: a,
+          onChange: o,
+          "aria-hidden": true,
+          tabIndex: false,
+          maxFileSizeBytes: K.B,
+          onFileSizeError: () => (0, P.Z)(K.B)
+        }), (0, r.jsx)(f.FmF, {
+          size: "md",
+          color: s ? p.Z.colors.INTERACTIVE_ACTIVE : p.Z.colors.INTERACTIVE_NORMAL
+        })]
+      })
     })
   })
 }

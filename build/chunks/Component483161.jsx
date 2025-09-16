@@ -53,25 +53,25 @@ let N = (0, Chunk509613.x1)(Chunk313789.n.PROFILE_PANE, {
         onClick: a,
         active: n,
         children: (0, r.jsxs)("div", {
-          className: T.profileCustomizationTab,
+          className: b.profileCustomizationTab,
           children: [(0, r.jsx)(o.qEK, {
             src: u,
             avatarDecoration: d,
             size: o.EFr.SIZE_48,
-            "aria-label": b.intl.string(b.t.lqaIxM)
+            "aria-label": T.intl.string(T.t.lqaIxM)
           }), (0, r.jsxs)("div", {
-            className: T.textContainer,
+            className: b.textContainer,
             children: [(0, r.jsx)(o.Text, {
               color: "header-primary",
               variant: "text-md/medium",
               lineClamp: 1,
               children: null != (t = s.globalName) ? t : s.username
             }), (0, r.jsxs)("div", {
-              className: T.editProfilesRow,
+              className: b.editProfilesRow,
               children: [(0, r.jsx)(o.Text, {
                 variant: "text-sm/normal",
                 color: "currentColor",
-                children: b.intl.string(b.t.Ip9nBQ)
+                children: T.intl.string(T.t.Ip9nBQ)
               }), (0, r.jsx)(i.vdY, {
                 size: "xxs",
                 color: "currentColor"
