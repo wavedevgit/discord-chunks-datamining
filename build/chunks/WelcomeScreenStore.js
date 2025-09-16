@@ -1,7 +1,7 @@
 /** Chunk was on 10576 **/
 /** chunk id: 995532, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T,
+  Z: () => m,
   a: () => s
 });
 var r, l, Chunk442837 = require("./442837.js"),
@@ -10,8 +10,8 @@ let s = {},
   o = {},
   u = {},
   c = false,
-  d = false,
-  E = false;
+  E = false,
+  d = false;
 
 function _(e) {
   let {
@@ -27,15 +27,15 @@ function A(e) {
   } = e;
   o[n] = null != t ? t : s
 }
-class m extends(l = Chunk442837.ZP.Store) {
+class T extends(l = Chunk442837.ZP.Store) {
   get(e) {
     if (null != e) return o[e]
   }
   isFetching() {
-    return d
+    return E
   }
   hasError() {
-    return E
+    return d
   }
   hasSeen(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
@@ -46,13 +46,13 @@ class m extends(l = Chunk442837.ZP.Store) {
     let t = o[e];
     return null == t || 0 === t.welcome_channels.length
   }
-}(r = "displayName") in m ? Object.defineProperty(m, r, {
+}(r = "displayName") in T ? Object.defineProperty(T, r, {
   value: "WelcomeScreenStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : m[r] = "WelcomeScreenStore";
-let T = new m(Chunk570140.Z, {
+}) : T[r] = "WelcomeScreenStore";
+let m = new T(Chunk570140.Z, {
   INVITE_RESOLVE_SUCCESS: _,
   INVITE_ACCEPT_SUCCESS: _,
   WELCOME_SCREEN_SUBMIT_SUCCESS: A,
@@ -76,10 +76,10 @@ let T = new m(Chunk570140.Z, {
     u[t] = false
   },
   WELCOME_SCREEN_FETCH_START: function() {
-    d = true, E = false
+    E = true, d = false
   },
   WELCOME_SCREEN_FETCH_SUCCESS: function(e) {
-    d = false, E = false;
+    E = false, d = false;
     let {
       welcomeScreen: t,
       guildId: n
@@ -87,6 +87,6 @@ let T = new m(Chunk570140.Z, {
     o[n] = null != t ? t : s
   },
   WELCOME_SCREEN_FETCH_FAIL: function() {
-    d = false, E = true
+    E = false, d = true
   }
 })

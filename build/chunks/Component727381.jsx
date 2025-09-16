@@ -1,7 +1,7 @@
 /** Chunk was on 10576 **/
 /** chunk id: 727381, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => N
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -43,32 +43,32 @@ function h() {
   })
 }
 
-function f(e) {
+function N(e) {
   let {
     userId: t,
     guildId: n,
     location: l,
     className: c,
     onNavigate: I
-  } = e, f = (0, a.e7)([u.default], () => u.default.getUser(t), [t]), N = (0, a.e7)([o.ZP], () => o.ZP.getMember(n, t), [n, t]);
-  return null == f || null == N ? null : (0, r.jsxs)("div", {
+  } = e, N = (0, a.e7)([u.default], () => u.default.getUser(t), [t]), O = (0, a.e7)([o.ZP], () => o.ZP.getMember(n, t), [n, t]);
+  return null == N || null == O ? null : (0, r.jsxs)("div", {
     className: i()(g.container, c),
     children: [(0, r.jsx)(h, {}), (0, r.jsxs)(s.Ttm, {
       className: g.innerContainer,
-      children: [(0, r.jsx)(m.Z, {
-        member: N
-      }), (0, r.jsx)(T.Z, {
+      children: [(0, r.jsx)(T.Z, {
+        member: O
+      }), (0, r.jsx)(m.Z, {
         userId: t,
         guildId: n
       }), (0, r.jsx)(A.Z, {
-        member: N,
+        member: O,
         onNavigate: I
-      }), (0, r.jsx)(E.Z, {
-        member: N
       }), (0, r.jsx)(d.Z, {
-        member: N
+        member: O
+      }), (0, r.jsx)(E.Z, {
+        member: O
       }), (0, r.jsx)(_.Z, {
-        member: N
+        member: O
       })]
     })]
   })

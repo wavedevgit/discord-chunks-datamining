@@ -15,7 +15,7 @@ function s(e) {
     totalCount: s,
     pageSize: o,
     renderPageWrapper: u
-  } = e, c = Math.floor(n / o) + 1, d = l.useCallback(e => {
+  } = e, c = Math.floor(n / o) + 1, E = l.useCallback(e => {
     t(e - 1)
   }, [t]);
   return (0, r.jsx)("div", {
@@ -24,7 +24,7 @@ function s(e) {
       currentPage: c,
       totalCount: s,
       pageSize: o,
-      onPageChange: d,
+      onPageChange: E,
       maxVisiblePages: 5,
       renderPageWrapper: u
     })

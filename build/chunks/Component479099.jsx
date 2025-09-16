@@ -1,7 +1,7 @@
 /** Chunk was on 10576 **/
 /** chunk id: 479099, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O,
+  Z: () => f,
   f: () => p
 }), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
@@ -39,7 +39,7 @@ function h(e) {
   return e
 }
 
-function f(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -51,32 +51,32 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var N = ((r = N || {})[r.SMALL = 0] = "SMALL", r[r.MEDIUM = 1] = "MEDIUM", r);
+var O = ((r = O || {})[r.SMALL = 0] = "SMALL", r[r.MEDIUM = 1] = "MEDIUM", r);
 
-function O(e) {
+function f(e) {
   let {
     tag: t,
     size: r = 1,
     disabled: a,
-    className: N,
-    onClick: O,
+    className: O,
+    onClick: f,
     onRemove: p,
     selected: R,
     ariaLabel: S
   } = e, {
     name: C,
-    emojiId: D,
-    emojiName: L
-  } = t, b = null != p, [U, v] = i.useState(false), M = (0, u.e7)([A.ZP], () => null != D ? A.ZP.getUsableCustomEmojiById(D) : null), x = b || null != O, P = (!b || !U) && (null != D || null != L), j = 0 === r, y = i.useRef(null), w = (0, u.e7)([_.Z], () => _.Z.keyboardModeEnabled), G = (0, l.jsxs)(l.Fragment, {
-    children: [P ? (0, l.jsx)(E.Z, {
+    emojiId: L,
+    emojiName: D
+  } = t, U = null != p, [M, b] = i.useState(false), x = (0, u.e7)([A.ZP], () => null != L ? A.ZP.getUsableCustomEmojiById(L) : null), v = U || null != f, P = (!U || !M) && (null != L || null != D), j = 0 === r, y = i.useRef(null), G = (0, u.e7)([_.Z], () => _.Z.keyboardModeEnabled), w = (0, l.jsxs)(l.Fragment, {
+    children: [P ? (0, l.jsx)(d.Z, {
       className: s()(g.emoji, {
         [g.small]: j
       }),
-      emojiId: D,
-      emojiName: L,
-      animated: !!(null == M ? true : M.animated),
+      emojiId: L,
+      emojiName: D,
+      animated: !!(null == x ? true : x.animated),
       size: "reaction"
-    }) : null, U && b && (0, l.jsx)("div", {
+    }) : null, M && U && (0, l.jsx)("div", {
       className: g.closeCircle,
       children: (0, l.jsx)(c.Dio, {
         size: "md",
@@ -93,29 +93,29 @@ function O(e) {
     key: t.id,
     className: s()(g.pill, {
       [g.disabled]: a,
-      [g.clickable]: x,
+      [g.clickable]: v,
       [g.small]: j,
       [g.selected]: R,
-      [g[t.color]]: null != t.color && !x
-    }, N),
+      [g[t.color]]: null != t.color && !v
+    }, O),
     onClick: e => {
-      null == O || O(e), null == p || p(t), w || null == y.current || y.current.blur()
+      null == f || f(e), null == p || p(t), G || null == y.current || y.current.blur()
     },
     onContextMenu: e => (e => {
-      let r = m.Sb.getSetting();
-      T.wS && r && (0, d.jW)(e, async () => {
+      let r = T.Sb.getSetting();
+      m.wS && r && (0, E.jW)(e, async () => {
         let {
           default: e
         } = await n.e("29646").then(n.bind(n, 955116));
-        return n => (0, l.jsx)(e, f(h({}, n), {
+        return n => (0, l.jsx)(e, N(h({}, n), {
           tag: t
         }))
       })
     })(e),
-    onMouseEnter: () => b && v(true),
-    onMouseLeave: () => b && v(false)
+    onMouseEnter: () => U && b(true),
+    onMouseLeave: () => U && b(false)
   }, F = (0, o.JA)("forum-tag-".concat(t.id));
-  return x ? (0, l.jsx)(c.P3F, f(h(f(h({}, F), {
+  return v ? (0, l.jsx)(c.P3F, N(h(N(h({}, F), {
     innerRef: y,
     focusProps: {
       ringTarget: y
@@ -126,9 +126,9 @@ function O(e) {
     role: "button",
     "aria-pressed": R
   }), k), {
-    children: G
-  })) : (0, l.jsx)("div", f(h({}, k), {
-    children: G
+    children: w
+  })) : (0, l.jsx)("div", N(h({}, k), {
+    children: w
   }))
 }
 
@@ -141,13 +141,13 @@ function p(e) {
   return (0, l.jsx)(c.ua7, {
     "aria-label": I.intl.string(I.t["P/y+sr"]),
     text: (0, l.jsx)(l.Fragment, {
-      children: t.map(e => (0, l.jsx)(O, {
+      children: t.map(e => (0, l.jsx)(f, {
         tag: e,
         className: g.tooltipPill,
-        size: O.Sizes.SMALL
+        size: f.Sizes.SMALL
       }, e.id))
     }),
-    children: e => (0, l.jsx)("div", f(h({}, e), {
+    children: e => (0, l.jsx)("div", N(h({}, e), {
       className: s()(g.pill, {
         [g.small]: i
       }),
@@ -158,4 +158,4 @@ function p(e) {
     }))
   })
 }
-O.Sizes = N
+f.Sizes = O

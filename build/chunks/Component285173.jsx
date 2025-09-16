@@ -16,8 +16,8 @@ function o(e) {
     role: o,
     className: u,
     canRemove: c = false,
-    onRemove: d = s.dG
-  } = e, E = (0, i.dQu)(i.TVs.unsafe_rawColors.PRIMARY_300).hex(), _ = null != (t = null == o ? true : o.colorString) ? t : E, A = l.useMemo(() => ({
+    onRemove: E = s.dG
+  } = e, d = (0, i.dQu)(i.TVs.unsafe_rawColors.PRIMARY_300).hex(), _ = null != (t = null == o ? true : o.colorString) ? t : d, A = l.useMemo(() => ({
     backgroundColor: "".concat(_, "27")
   }), [_]);
   return null == o ? null : (0, r.jsx)(i.P3F, {
@@ -27,7 +27,7 @@ function o(e) {
       role: o,
       guildId: n,
       canRemove: c,
-      onRemove: d
+      onRemove: E
     })
   })
 }

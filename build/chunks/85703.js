@@ -1,5 +1,6 @@
-/** Chunk was on 10576 **/
-/** chunk id: 85703, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 85703, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   root: "root__48c1c",
   role: "role__48c1c",

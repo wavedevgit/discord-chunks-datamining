@@ -1,7 +1,7 @@
 /** Chunk was on 10576 **/
 /** chunk id: 524329, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Es: () => d,
+  Es: () => E,
   RM: () => s,
   VP: () => c,
   Xb: () => o,
@@ -52,7 +52,7 @@ let a = function(e) {
       type: "WELCOME_SCREEN_SETTINGS_UPDATE",
       settings: e
     })
-  }, d = async (e, t) => {
+  }, E = async (e, t) => {
     l.Z.dispatch({
       type: "WELCOME_SCREEN_SUBMIT"
     });

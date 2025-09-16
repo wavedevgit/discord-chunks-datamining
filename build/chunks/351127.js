@@ -3,8 +3,8 @@
 require.d(exports, {
   B2: () => g,
   Ov: () => I,
-  Qn: () => m,
-  _o: () => T,
+  Qn: () => T,
+  _o: () => m,
   pd: () => A
 }), require("./388685.js"), require("./415506.js"), require("./539854.js");
 var Chunk149765 = require("./149765.js"),
@@ -19,12 +19,12 @@ var Chunk149765 = require("./149765.js"),
   Chunk981631 = require("./981631.js"),
   Chunk135899 = require("./135899.js");
 let A = Object.keys(Chunk981631.Plq),
-  m = Array.from(new Set([...Chunk135899.$X, ...Chunk981631.yYS, Chunk981631.Plq.ADMINISTRATOR, Chunk981631.Plq.KICK_MEMBERS, Chunk981631.Plq.BAN_MEMBERS, Chunk981631.Plq.MANAGE_GUILD, Chunk981631.Plq.MANAGE_CHANNELS, Chunk981631.Plq.MANAGE_ROLES, Chunk981631.Plq.MANAGE_MESSAGES, Chunk981631.Plq.MANAGE_THREADS, Chunk981631.Plq.MANAGE_GUILD_EXPRESSIONS, Chunk981631.Plq.CREATE_GUILD_EXPRESSIONS, Chunk981631.Plq.MANAGE_EVENTS, Chunk981631.Plq.CREATE_EVENTS, Chunk981631.Plq.MODERATE_MEMBERS, Chunk981631.Plq.MENTION_EVERYONE, Chunk981631.Plq.MANAGE_WEBHOOKS])).map(e => {
-    let t = A.find(t => E.Plq[t] === e);
+  T = Array.from(new Set([...Chunk135899.$X, ...Chunk981631.yYS, Chunk981631.Plq.ADMINISTRATOR, Chunk981631.Plq.KICK_MEMBERS, Chunk981631.Plq.BAN_MEMBERS, Chunk981631.Plq.MANAGE_GUILD, Chunk981631.Plq.MANAGE_CHANNELS, Chunk981631.Plq.MANAGE_ROLES, Chunk981631.Plq.MANAGE_MESSAGES, Chunk981631.Plq.MANAGE_THREADS, Chunk981631.Plq.MANAGE_GUILD_EXPRESSIONS, Chunk981631.Plq.CREATE_GUILD_EXPRESSIONS, Chunk981631.Plq.MANAGE_EVENTS, Chunk981631.Plq.CREATE_EVENTS, Chunk981631.Plq.MODERATE_MEMBERS, Chunk981631.Plq.MENTION_EVERYONE, Chunk981631.Plq.MANAGE_WEBHOOKS])).map(e => {
+    let t = A.find(t => d.Plq[t] === e);
     if (null == t) throw Error("Permission ".concat(e, " not found in Permissions"));
     return t
   }),
-  T = new Set(Chunk981631.yYS);
+  m = new Set(Chunk981631.yYS);
 
 function I(e, t) {
   return e === t
@@ -37,18 +37,18 @@ function g(e, t, n) {
       u = s.ZP.getMember(t, e),
       A = c.default.getUser(e);
     if (null == _ || null == u || null == A) return l;
-    let m = o.Z.getEveryoneRole(_),
-      T = d.uB({
+    let T = o.Z.getEveryoneRole(_),
+      m = E.uB({
         user: A,
         context: _
       });
     for (let e of n) {
-      let t = E.Plq[e];
-      if (r.e$(T, t)) {
+      let t = d.Plq[e];
+      if (r.e$(m, t)) {
         for (let n of (l[e] = [], u.roles)) {
           let r = o.Z.getRole(_.id, n);
-          null != r && ((0, a.Fs)(r, E.Plq.ADMINISTRATOR) || (0, a._N)(r, t)) && l[e].push(r.id)
-        }((0, a.Fs)(m, E.Plq.ADMINISTRATOR) || (0, a._N)(m, t)) && l[e].push(m.id), (0, i.eM)(_, A) && l[e].push(A.id)
+          null != r && ((0, a.Fs)(r, d.Plq.ADMINISTRATOR) || (0, a._N)(r, t)) && l[e].push(r.id)
+        }((0, a.Fs)(T, d.Plq.ADMINISTRATOR) || (0, a._N)(T, t)) && l[e].push(T.id), (0, i.eM)(_, A) && l[e].push(A.id)
       }
     }
     return l

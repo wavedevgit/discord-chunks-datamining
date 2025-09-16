@@ -4,4 +4,4 @@
 require.d(exports, {
   Z: () => r
 });
-let r = "https://cdn.discordapp.com/assets/content/eb24e3de6283bf44d1f2c65f2ffdf6447cdd219dfa5d1373ff513bece8187c79.svg"
+let r = "https://cdn.discordapp.com/assets/content/7d3bb543f57192ba573ca7c515ef59c9cf5c285538f43508ccd8e10637ccd902.svg"

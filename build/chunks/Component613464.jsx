@@ -33,48 +33,48 @@ function S(e) {
     onClose: i,
     className: S,
     infoPanelClassName: C,
-    style: D
-  } = e, L = (0, N.m)(n), b = (0, s.e7)([f.default], () => f.default.getUser(t), [t]), U = (0, s.e7)([h.ZP], () => h.ZP.getMember(n, t), [n, t]), [v, M] = l.useState(null == b || null == U), x = (0, c.Z)(U), P = l.useRef(null), {
+    style: L
+  } = e, D = (0, O.m)(n), U = (0, s.e7)([N.default], () => N.default.getUser(t), [t]), M = (0, s.e7)([h.ZP], () => h.ZP.getMember(n, t), [n, t]), [b, x] = l.useState(null == U || null == M), v = (0, c.Z)(M), P = l.useRef(null), {
     analyticsLocations: j
-  } = (0, A.ZP)(_.Z.GUILD_MEMBER_MOD_VIEW), y = (0, T.ZP)(t, n), w = (0, d.ZP)();
+  } = (0, A.ZP)(_.Z.GUILD_MEMBER_MOD_VIEW), y = (0, m.ZP)(t, n), G = (0, E.ZP)();
   return (l.useEffect(() => {
-    L || i()
-  }, [L, i]), l.useEffect(() => {
-    null == x || null != U || v || i()
-  }, [v, U, i, x]), l.useEffect(() => {
-    null != b && null != U && M(false)
-  }, [b, U]), l.useEffect(() => {
-    let e = null == U;
-    return !v && e && (P.current = window.setTimeout(i, 500)), () => {
+    D || i()
+  }, [D, i]), l.useEffect(() => {
+    null == v || null != M || b || i()
+  }, [b, M, i, v]), l.useEffect(() => {
+    null != U && null != M && x(false)
+  }, [U, M]), l.useEffect(() => {
+    let e = null == M;
+    return !b && e && (P.current = window.setTimeout(i, 500)), () => {
       null != P.current && window.clearTimeout(P.current)
     }
-  }, [v, U, i]), (0, E.$)({
+  }, [b, M, i]), (0, d.$)({
     [n]: [t]
   }, "GuildMemberModViewSidebar"), l.useEffect(() => {
     !async function() {
-      let e = [u.Z.requestMembersById(n, [t]), (0, m.nb)(n, [t]), (0, I.Z)(t, true, {
+      let e = [u.Z.requestMembersById(n, [t]), (0, T.nb)(n, [t]), (0, I.Z)(t, true, {
         guildId: n,
         dispatchWait: true
       })];
-      await Promise.all(e), M(false)
+      await Promise.all(e), x(false)
     }()
-  }, [n, t]), L) ? v || null == b || null == U ? (0, r.jsx)("div", {
+  }, [n, t]), D) ? b || null == U || null == M ? (0, r.jsx)("div", {
     className: a()(R.sidebarContainer, R.loadingContainer, S),
-    style: D,
+    style: L,
     children: (0, r.jsx)(o.$jN, {
       animated: true,
-      type: v ? o.$jN.Type.SPINNING_CIRCLE : o.$jN.Type.CHASING_DOTS
+      type: b ? o.$jN.Type.SPINNING_CIRCLE : o.$jN.Type.CHASING_DOTS
     })
   }) : (0, r.jsx)(A.Gt, {
     value: j,
     children: (0, r.jsx)("div", {
       className: a()(R.sidebarContainer, S),
-      style: D,
+      style: L,
       children: (0, r.jsx)(g.Z, {
-        user: b,
+        user: U,
         displayProfile: y,
         themeType: null,
-        themeOverride: w,
+        themeOverride: G,
         forceShowPremium: true,
         className: R.profileThemedContainer,
         children: (0, r.jsxs)("div", {
@@ -83,7 +83,7 @@ function S(e) {
             userId: t,
             guildId: n,
             onClose: i
-          }), (0, r.jsx)(O.Z, {
+          }), (0, r.jsx)(f.Z, {
             userId: t,
             guildId: n,
             onClose: i,

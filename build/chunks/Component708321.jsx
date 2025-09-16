@@ -63,6 +63,10 @@ function m(e) {
         return {
           text: h.intl.string(h.t.VJlc0d), onClick: u
         };
+      case _.sE.ACCEPT_ROLES:
+        return {
+          text: h.intl.string(h.t.MMlhsr), onClick: u
+        };
       default:
         return {
           text: null, onClick: null

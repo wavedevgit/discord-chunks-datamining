@@ -20,21 +20,21 @@ function A(e) {
     userId: t,
     guildId: n
   } = e, A = (0, i.e7)([s.ZP], () => s.ZP.getGuildSidebarState(n), [n]), {
-    messagesCount: m,
-    linksCount: T,
+    messagesCount: T,
+    linksCount: m,
     mediaCount: I
-  } = (0, u.P2)(t, n), g = new Intl.NumberFormat(E.intl.currentLocale).format(m), h = new Intl.NumberFormat(E.intl.currentLocale).format(T), f = new Intl.NumberFormat(E.intl.currentLocale).format(I), N = l.useCallback(async e => {
+  } = (0, u.P2)(t, n), g = new Intl.NumberFormat(d.intl.currentLocale).format(T), h = new Intl.NumberFormat(d.intl.currentLocale).format(m), N = new Intl.NumberFormat(d.intl.currentLocale).format(I), O = l.useCallback(async e => {
     if (null == A) return;
     let r = (0, u.Ow)(t, e, {
       include_nsfw: true
     });
     await (0, o.r)(n, t, A.baseChannelId, {
-      modViewPanel: d.k.MESSAGE_HISTORY,
+      modViewPanel: E.k.MESSAGE_HISTORY,
       additionalSearchQuery: r
     })
   }, [n, A, t]);
   return (0, r.jsx)(a.xJW, {
-    title: E.intl.string(E.t.vCn2Tk),
+    title: d.intl.string(d.t.vCn2Tk),
     titleClassName: _.infoTitle,
     children: (0, r.jsxs)(c.WM, {
       children: [(0, r.jsx)(c._2, {
@@ -47,9 +47,9 @@ function A(e) {
         name: (0, r.jsx)(a.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
-          children: E.intl.string(E.t.OIgYlZ)
+          children: d.intl.string(d.t.OIgYlZ)
         }),
-        description: m === u.II ? (0, r.jsx)(a.$jN, {
+        description: T === u.II ? (0, r.jsx)(a.$jN, {
           type: a.RAz.SPINNING_CIRCLE,
           className: _.loadingSpinner
         }) : (0, r.jsx)(a.Text, {
@@ -57,7 +57,7 @@ function A(e) {
           color: "interactive-normal",
           children: g
         }),
-        onNavigate: m > 0 ? () => N(u.mw.MESSAGES) : true
+        onNavigate: T > 0 ? () => O(u.mw.MESSAGES) : true
       }), (0, r.jsx)(c._2, {
         icon: (0, r.jsx)(a.xPt, {
           size: "custom",
@@ -67,9 +67,9 @@ function A(e) {
         name: (0, r.jsx)(a.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
-          children: E.intl.string(E.t.DFSvTk)
+          children: d.intl.string(d.t.DFSvTk)
         }),
-        description: T === u.II ? (0, r.jsx)(a.$jN, {
+        description: m === u.II ? (0, r.jsx)(a.$jN, {
           type: a.RAz.SPINNING_CIRCLE,
           className: _.loadingSpinner
         }) : (0, r.jsx)(a.Text, {
@@ -77,7 +77,7 @@ function A(e) {
           color: "interactive-normal",
           children: h
         }),
-        onNavigate: T > 0 ? () => N(u.mw.LINKS) : true
+        onNavigate: m > 0 ? () => O(u.mw.LINKS) : true
       }), (0, r.jsx)(c._2, {
         icon: (0, r.jsx)(a.Ka2, {
           size: "custom",
@@ -87,7 +87,7 @@ function A(e) {
         name: (0, r.jsx)(a.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
-          children: E.intl.string(E.t["Aw9+/P"])
+          children: d.intl.string(d.t["Aw9+/P"])
         }),
         description: I === u.II ? (0, r.jsx)(a.$jN, {
           type: a.RAz.SPINNING_CIRCLE,
@@ -95,9 +95,9 @@ function A(e) {
         }) : (0, r.jsx)(a.Text, {
           variant: "text-sm/semibold",
           color: "interactive-normal",
-          children: f
+          children: N
         }),
-        onNavigate: I > 0 ? () => N(u.mw.MEDIA) : true
+        onNavigate: I > 0 ? () => O(u.mw.MEDIA) : true
       })]
     })
   })
