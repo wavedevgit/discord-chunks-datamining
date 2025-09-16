@@ -9,8 +9,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
+  Chunk313666 = require("./313666.jsx"),
   Chunk793030 = require("./793030.js"),
-  Chunk446673 = require("./446673.jsx"),
   Chunk304789 = require("./304789.jsx"),
   Chunk751334 = require("./751334.jsx"),
   Chunk587272 = require("./587272.js"),
@@ -148,7 +148,7 @@ function O(e) {
     graphic: n,
     badge: i,
     title: a,
-    titleTextVariant: l,
+    titleTextVariant: s,
     subtitle: f,
     alignCenter: h = false,
     leading: g,
@@ -163,13 +163,13 @@ function O(e) {
       className: p.headerGraphicContainer,
       children: (0, r.jsx)(u.z, m({}, n))
     })
-  }), N = (0, r.jsx)(s.X6q, {
+  }), N = (0, r.jsx)(l.X6q, {
     className: p.headerTitle,
     id: I,
-    variant: null != l ? l : "heading-lg/semibold",
+    variant: null != s ? s : "heading-lg/semibold",
     color: "text-primary",
     children: a
-  }), R = (0, r.jsx)(s.xvT, {
+  }), R = (0, r.jsx)(l.xvT, {
     className: p.headerSubtitle,
     variant: "text-md/normal",
     color: "text-secondary",
@@ -178,7 +178,7 @@ function O(e) {
     className: o()(p.section, p.header, {
       [p.headerCentered]: h
     }),
-    children: (0, r.jsxs)(s.Kqy, {
+    children: (0, r.jsxs)(l.Kqy, {
       gap: 8,
       children: [(0, r.jsx)("div", {
         className: p.headerLayout,
@@ -208,9 +208,9 @@ function v(e) {
     badge: t
   } = e;
   if (null == t) return null;
-  let n = (0, l.R)(t);
+  let n = (0, s.R)(t);
   return (0, r.jsx)("div", {
     className: p.headerBadge,
-    children: (0, r.jsx)(l.C, m({}, n))
+    children: (0, r.jsx)(s.C, m({}, n))
   })
 }

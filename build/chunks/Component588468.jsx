@@ -13,7 +13,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk392711 = require("./392711.js"),
   c = require.n(Chunk392711),
   Chunk91192 = require("./91192.jsx"),
-  Chunk446673 = require("./446673.jsx"),
+  Chunk313666 = require("./313666.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
   Chunk895924 = require("./895924.js"),
@@ -179,7 +179,7 @@ class Y extends H {
     return (0, Chunk951288.jsxs)(Chunk965386.RX, {
       children: [(0, Chunk951288.jsx)(Chunk965386.z5, {
         children: (0, Chunk951288.jsxs)(Chunk965386.BR, {
-          children: [module, " ", null != require && (0, Chunk951288.jsx)(Chunk446673.C, {
+          children: [module, " ", null != require && (0, Chunk951288.jsx)(Chunk313666.C, {
             type: require
           })]
         })
@@ -290,7 +290,7 @@ class X extends H {
       useReducedMotion: Chunk607070.Z.useReducedMotion,
       roleStyle: "username",
       includeConvenienceGlow: true
-    }), h = Chunk392711 ? M({}, Chunk91192 ? Chunk446673 : {
+    }), h = Chunk392711 ? M({}, Chunk91192 ? Chunk313666 : {
       color: null != r ? r : true
     }) : true;
     return (0, Chunk951288.jsxs)(Chunk965386.RX, {

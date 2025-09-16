@@ -182,10 +182,12 @@ function Y(e, t, i) {
   (0, s.ZDy)(async () => {
     if ((0, C.i)("openQuestCollectibleRewardModal")) {
       let {
-        default: t
+        default: a
       } = await n.e("41023").then(n.bind(n, 305815));
-      return n => (0, r.jsx)(t, U(M({}, n), {
-        quest: e
+      return n => (0, r.jsx)(a, U(M({}, n), {
+        quest: e,
+        location: t,
+        preview: i
       }))
     }
     let {

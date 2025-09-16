@@ -108,17 +108,21 @@ function M(e) {
       className: L.divider
     }), z()]
   }), X = () => (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(h.Z, {
-      user: p,
-      className: L.giftRecipient,
-      size: f.EFr.SIZE_80
-    }), (0, r.jsx)(f.X6q, {
-      className: L.giftRecipientName,
-      variant: "heading-md/semibold",
-      children: R.ZP.getName(p)
-    }), (0, r.jsxs)("div", {
-      className: L.giftRecipientTag,
-      children: [" ", R.ZP.getUserTag(p)]
+    children: [(0, r.jsxs)("div", {
+      className: L.giftRecipientContainer,
+      children: [(0, r.jsx)(h.Z, {
+        user: p,
+        size: f.EFr.SIZE_40
+      }), (0, r.jsxs)("div", {
+        className: L.giftRecipientTextContainer,
+        children: [(0, r.jsx)(f.X6q, {
+          variant: "heading-md/semibold",
+          children: R.ZP.getName(p)
+        }), (0, r.jsxs)("div", {
+          className: L.giftRecipientTag,
+          children: [" ", R.ZP.getUserTag(p)]
+        })]
+      })]
     }), (0, r.jsx)("div", {
       className: L.giftSentMessage,
       children: Y()

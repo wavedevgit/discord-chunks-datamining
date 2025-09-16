@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
+  Chunk313666 = require("./313666.jsx"),
   Chunk756715 = require("./756715.jsx"),
-  Chunk446673 = require("./446673.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk254477 = require("./254477.js");
 
@@ -39,7 +39,7 @@ function f(e) {
   let {
     title: n,
     body: i,
-    badge: s,
+    badge: o,
     className: u,
     textLink: d,
     hasBottomMargin: f = false
@@ -50,7 +50,7 @@ function f(e) {
     }),
     children: [(0, r.jsxs)("div", {
       children: [(0, r.jsx)(_, {
-        badge: s
+        badge: o
       }), (0, r.jsx)(l.X6q, {
         variant: "heading-md/semibold",
         className: c.title,
@@ -58,7 +58,7 @@ function f(e) {
       })]
     }), (0, r.jsx)(p, {
       body: i
-    }), null != d && (0, r.jsx)(o.Anchor, {
+    }), null != d && (0, r.jsx)(s.Anchor, {
       href: d.link,
       target: h ? "_blank" : true,
       rel: h ? "noopener noreferrer" : true,
@@ -76,10 +76,10 @@ function _(e) {
     badge: t
   } = e;
   if (null == t) return null;
-  let n = (0, s.R)(t);
+  let n = (0, o.R)(t);
   return (0, r.jsx)("div", {
     className: c.badgeContainer,
-    children: (0, r.jsx)(s.C, d({}, n))
+    children: (0, r.jsx)(o.C, d({}, n))
   })
 }
 

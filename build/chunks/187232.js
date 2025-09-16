@@ -2,7 +2,7 @@
 /** chunk id: 187232, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  p: () => D
+  p: () => N
 });
 var Chunk242433 = require("./242433.js"),
   Chunk100527 = require("./100527.js"),
@@ -23,7 +23,7 @@ var Chunk242433 = require("./242433.js"),
 let b = {
     skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_PUMPKIN_TRICK_SKU_ID,
     assetId: "a_fe4a5080455bc20030589d3b930ebe7b",
-    a11yLabel: Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
+    a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
       category: Chunk388032.intl.string(Chunk388032.t["6Zuiv7"]),
       name: Chunk388032.intl.string(Chunk388032.t["9PzTtL"])
     })
@@ -31,7 +31,7 @@ let b = {
   y = {
     skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_PUMPKIN_TREAT_SKU_ID,
     assetId: "a_ade36581b93e50a565541e1964d7eb6a",
-    a11yLabel: Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
+    a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
       category: Chunk388032.intl.string(Chunk388032.t["2UeOlZ"]),
       name: Chunk388032.intl.string(Chunk388032.t["9PzTtL"])
     })
@@ -39,7 +39,7 @@ let b = {
   O = {
     skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_GHOST_TRICK_SKU_ID,
     assetId: "a_9fb28bf1ed0bed681898f57df3acec5b",
-    a11yLabel: Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
+    a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
       category: Chunk388032.intl.string(Chunk388032.t["6Zuiv7"]),
       name: Chunk388032.intl.string(Chunk388032.t.sBk8mZ)
     })
@@ -47,7 +47,7 @@ let b = {
   v = {
     skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_GHOST_TREAT_SKU_ID,
     assetId: "a_f43fa3efdeda7f7d50fed5f3e5c5cef5",
-    a11yLabel: Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
+    a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
       category: Chunk388032.intl.string(Chunk388032.t["2UeOlZ"]),
       name: Chunk388032.intl.string(Chunk388032.t.sBk8mZ)
     })
@@ -55,7 +55,7 @@ let b = {
   I = {
     skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_SKULL_TRICK_SKU_ID,
     assetId: "a_0103146312bbffdb9a58ce4da3d901d1",
-    a11yLabel: Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
+    a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
       category: Chunk388032.intl.string(Chunk388032.t["6Zuiv7"]),
       name: Chunk388032.intl.string(Chunk388032.t.RbkXxc)
     })
@@ -63,7 +63,7 @@ let b = {
   T = {
     skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_SKULL_TREAT_SKU_ID,
     assetId: "a_652117a3882f5ae4cc30e56d7ac013a7",
-    a11yLabel: Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
+    a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
       category: Chunk388032.intl.string(Chunk388032.t["2UeOlZ"]),
       name: Chunk388032.intl.string(Chunk388032.t.RbkXxc)
     })
@@ -71,7 +71,7 @@ let b = {
   S = {
     skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_SPIDER_TRICK_SKU_ID,
     assetId: "a_8655de5a2c086276231144432fefb8f0",
-    a11yLabel: Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
+    a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
       category: Chunk388032.intl.string(Chunk388032.t["6Zuiv7"]),
       name: Chunk388032.intl.string(Chunk388032.t.FW3Qp6)
     })
@@ -79,32 +79,28 @@ let b = {
   A = {
     skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_SPIDER_TREAT_SKU_ID,
     assetId: "a_91bdfba540bf5f305f906e6588704ac6",
-    a11yLabel: Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
+    a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
       category: Chunk388032.intl.string(Chunk388032.t["2UeOlZ"]),
       name: Chunk388032.intl.string(Chunk388032.t.FW3Qp6)
     })
   },
   C = {
-    name: Chunk388032.intl.string(Chunk388032.t["9PzTtL"]),
-    variants: [b, y]
-  },
-  N = {
-    name: Chunk388032.intl.string(Chunk388032.t.sBk8mZ),
-    variants: [O, v]
-  },
-  R = {
-    name: Chunk388032.intl.string(Chunk388032.t.RbkXxc),
-    variants: [I, T]
-  },
-  P = {
-    name: Chunk388032.intl.string(Chunk388032.t.FW3Qp6),
-    variants: [S, A]
-  },
-  w = {
     gradient: ["rgb(35, 86, 53)", "rgb(3, 15, 40)"]
   },
-  D = {
-    variants: [C, N, R, P],
+  N = {
+    variants: [{
+      name: () => Chunk388032.intl.string(Chunk388032.t["9PzTtL"]),
+      variants: [b, y]
+    }, {
+      name: () => Chunk388032.intl.string(Chunk388032.t.sBk8mZ),
+      variants: [O, v]
+    }, {
+      name: () => Chunk388032.intl.string(Chunk388032.t.RbkXxc),
+      variants: [I, T]
+    }, {
+      name: () => Chunk388032.intl.string(Chunk388032.t.FW3Qp6),
+      variants: [S, A]
+    }],
     rewardAssetIdMap: (0, Chunk717401.YV)([b, y, O, v, I, T, S, A]),
     chatGiftIcon: {
       trinketsAnimation: {
@@ -156,7 +152,7 @@ let b = {
       mobileSubheading: e => l.intl.formatToPlainString(l.t.eDBuFx, {
         rewardCount: e
       }),
-      gradientConfig: w,
+      gradientConfig: C,
       getImageUrl: (e, t) => t ? m.Z : h.Z,
       getBannerImageUrl: () => Chunk543980.Z,
       getBackgroundImageUrl: () => Chunk796909.Z
@@ -165,7 +161,7 @@ let b = {
       desktopBannerText: () => Chunk388032.intl.string(Chunk388032.t.mMgymZ),
       mobileBannerText: () => Chunk388032.intl.string(Chunk388032.t.dAqTcH),
       getImageUrl: () => Chunk516773.Z,
-      gradientConfig: () => w,
+      gradientConfig: () => C,
       getBackgroundImageUrl: () => Chunk492336.Z
     },
     billingSettingsMarketingBanner: {
@@ -173,5 +169,11 @@ let b = {
       title: () => Chunk388032.intl.string(Chunk388032.t.CGgAyM),
       body: () => Chunk388032.intl.string(Chunk388032.t["9rInzc"]),
       getBackgroundImageUrl: () => Chunk198026.Z
+    },
+    giftPurchaseConfirmation: {
+      yearGiftText: Chunk388032.t["rSS+oq"],
+      monthGiftText: Chunk388032.t.gI6Yvr,
+      collectRewardButtonText: () => Chunk388032.intl.string(Chunk388032.t.kMYVws),
+      rewardCollectedText: () => Chunk388032.intl.string(Chunk388032.t.eZrmtr)
     }
   }

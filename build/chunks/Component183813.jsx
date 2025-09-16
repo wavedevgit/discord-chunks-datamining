@@ -91,17 +91,20 @@ function y(e) {
   let K = e => {
       O(H.find(t => t.skuId === e)), N(e), B(true)
     },
-    z = H.map(e => (0, r.jsx)(C.c, {
-      skuId: e.skuId,
-      assetId: e.assetId,
-      productName: e.name,
-      a11yLabel: e.a11yLabel,
-      claimed: null != k && k.every(t => t.skuId !== e.skuId),
-      user: M,
-      onSelect: K,
-      selectedSkuId: Z,
-      category: T
-    }, e.skuId)),
+    z = H.map(e => {
+      var t, n;
+      return (0, r.jsx)(C.c, {
+        skuId: e.skuId,
+        assetId: e.assetId,
+        productName: null == (t = e.name) ? true : t.call(e),
+        a11yLabel: null == (n = e.a11yLabel) ? true : n.call(e),
+        claimed: null != k && k.every(t => t.skuId !== e.skuId),
+        user: M,
+        onSelect: K,
+        selectedSkuId: Z,
+        category: T
+      }, e.skuId)
+    }),
     W = (0, r.jsx)(j.O3, {
       children: (0, r.jsx)(o.mzw, {
         className: L.modalFooter,

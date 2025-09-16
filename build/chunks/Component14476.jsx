@@ -67,7 +67,7 @@ let _ = e => {
       }), (0, r.jsxs)("div", {
         className: f.productName,
         children: [(0, r.jsx)(C.X6q, {
-          variant: "text-lg/bold",
+          variant: "text-md/bold",
           children: j
         }), (0, r.jsx)(C.Text, {
           variant: "text-md/normal",

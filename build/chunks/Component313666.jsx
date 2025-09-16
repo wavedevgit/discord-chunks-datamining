@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-/** chunk id: 446673, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 313666, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
   C: () => d,
@@ -8,19 +8,19 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk481060 = require("./481060.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk580309 = require("./580309.js");
-let c = e => {
+  Chunk402453 = require("./402453.jsx"),
+  Chunk777207 = require("./777207.jsx"),
+  Chunk957618 = require("./957618.js");
+let c = (e, t) => {
   switch (e) {
     case "new":
-      return s.intl.string(s.t.y2b7CA);
+      return t.NEW;
     case "beta":
-      return s.intl.string(s.t.oW0eUV);
+      return t.BETA;
     case "early_access":
-      return s.intl.string(s.t.EYxi0t);
+      return t.EARLY_ACCESS;
     case "free_trial":
-      return s.intl.string(s.t.IBYG5e);
+      return t.BILLING_TRIAL_FREE_TRIAL_TEXT;
     default:
       return e.text
   }
@@ -36,10 +36,12 @@ function d(e) {
   let {
     type: t,
     variant: n = "default"
-  } = e;
-  return (0, r.jsx)(o.Text, {
+  } = e, {
+    i18n: i
+  } = (0, o.ZF)();
+  return (0, r.jsx)(s.x, {
     variant: "eyebrow",
     className: a()(l.badge, l[n]),
-    children: c(t)
+    children: c(t, i)
   })
 }

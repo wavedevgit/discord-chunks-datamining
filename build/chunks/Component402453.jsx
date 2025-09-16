@@ -14,7 +14,11 @@ let a = {
       BUTTON_LOADING_FINISHED_LABEL: "Loading",
       CLOSE_BUTTON_LABEL: "Close",
       PLAY_BUTTON_LABEL: "Play",
-      PAUSE_BUTTON_LABEL: "Pause"
+      PAUSE_BUTTON_LABEL: "Pause",
+      NEW: "New",
+      BETA: "Beta",
+      EARLY_ACCESS: "Early Access",
+      BILLING_TRIAL_FREE_TRIAL_TEXT: "Free Trial"
     },
     theme: "light",
     saturation: .5

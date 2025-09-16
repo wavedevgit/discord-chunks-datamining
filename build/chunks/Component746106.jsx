@@ -96,7 +96,11 @@ function A(e) {
         BUTTON_LOADING_FINISHED_LABEL: S.intl.string(S.t.SVPara),
         CLOSE_BUTTON_LABEL: S.intl.string(S.t.cpT0Cg),
         PLAY_BUTTON_LABEL: S.intl.string(S.t.RscU7O),
-        PAUSE_BUTTON_LABEL: S.intl.string(S.t.ZcgDJS)
+        PAUSE_BUTTON_LABEL: S.intl.string(S.t.ZcgDJS),
+        NEW: S.intl.string(S.t.y2b7CA),
+        BETA: S.intl.string(S.t.oW0eUV),
+        EARLY_ACCESS: S.intl.string(S.t.EYxi0t),
+        BILLING_TRIAL_FREE_TRIAL_TEXT: S.intl.string(S.t.IBYG5e)
       },
       theme: R,
       saturation: j
