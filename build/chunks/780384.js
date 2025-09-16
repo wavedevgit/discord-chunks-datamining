@@ -11,8 +11,7 @@ require.d(exports, {
   uv: () => Chunk925477.uv,
   wj: () => Chunk511857.w
 });
-var Chunk925477 = require("./925477.js");
-require("./532712.js");
-var Chunk710260 = require("./710260.jsx"),
+var Chunk925477 = require("./925477.js"),
+  Chunk710260 = require("./710260.jsx"),
   Chunk511857 = require("./511857.js"),
   Chunk950104 = require("./950104.js")
