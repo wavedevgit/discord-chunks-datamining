@@ -7,7 +7,7 @@ require.r(exports), require.d(exports, {
   mergeUser: () => R,
   transformUser: () => C,
   users: () => O
-}), require("./997841.js"), require("./388685.js"), require("./825670.js"), require("./539854.js"), require("./642613.js");
+}), require("./388685.js"), require("./997841.js"), require("./825670.js"), require("./539854.js"), require("./642613.js");
 var Chunk392711 = require("./392711.js"),
   Chunk911969 = require("./911969.js"),
   Chunk2572 = require("./2572.js"),
@@ -76,30 +76,23 @@ function C(e) {
   let i = e.age_verification_status;
   null != i && (e.ageVerificationStatus = i, delete e.age_verification_status);
   let a = e.public_flags;
-  if (null != a) {
-    if (e.publicFlags = a, (a & E.xW$.STAFF) != 0) {
-      var u;
-      let t = null != (u = e.flags) ? u : 0;
-      e.flags = t | E.xW$.STAFF
-    }
-    delete e.public_flags
-  }
-  let _ = e.purchased_flags;
-  true !== _ && (e.purchasedFlags = _, delete e.purchased_flags);
-  let p = e.premium_usage_flags;
-  true !== p && (e.premiumUsageFlags = p, delete e.premium_usage_flags), null === e.banner_color && delete e.banner_color;
-  let h = e.avatar_decoration_data;
-  true !== h && (e.avatarDecorationData = (0, o.FG)(h), delete e.avatar_decoration_data);
-  let m = e.collectibles;
-  true !== m && (delete e.collectibles, e.collectibles = (0, s.Xm)(m));
-  let g = e.global_name;
-  true !== g && (e.globalName = g, delete e.global_name);
-  let b = e.primary_guild;
-  true !== b && (e.primary_guild = (0, c.l)(b));
-  let y = e.display_name_styles;
-  true !== y && (e.displayNameStyles = (0, l.bN)(y), delete e.display_name_styles);
-  let O = e.premium_state;
-  return true !== O && (e.premiumState = (0, d.C)(O), delete e.premium_state), e
+  null != a && (e.publicFlags = a, delete e.public_flags);
+  let u = e.purchased_flags;
+  true !== u && (e.purchasedFlags = u, delete e.purchased_flags);
+  let _ = e.premium_usage_flags;
+  true !== _ && (e.premiumUsageFlags = _, delete e.premium_usage_flags), null === e.banner_color && delete e.banner_color;
+  let p = e.avatar_decoration_data;
+  true !== p && (e.avatarDecorationData = (0, o.FG)(p), delete e.avatar_decoration_data);
+  let h = e.collectibles;
+  true !== h && (delete e.collectibles, e.collectibles = (0, s.Xm)(h));
+  let m = e.global_name;
+  true !== m && (e.globalName = m, delete e.global_name);
+  let g = e.primary_guild;
+  true !== g && (e.primary_guild = (0, c.l)(g));
+  let E = e.display_name_styles;
+  true !== E && (e.displayNameStyles = (0, l.bN)(E), delete e.display_name_styles);
+  let b = e.premium_state;
+  return true !== b && (e.premiumState = (0, d.C)(b), delete e.premium_state), e
 }
 
 function N(e) {
@@ -162,17 +155,12 @@ function x(e, t) {
 function L(e) {
   let {
     user: t,
-    users: r,
-    guilds: i
+    users: n,
+    guilds: r
   } = e;
-  delete t.premium, delete t.banner_color, R(t), r.forEach(e => {
+  delete t.premium, delete t.banner_color, R(t), n.forEach(e => {
     R(e)
-  }), n.e("831").then(n.bind(n, 475941)).then(e => {
-    let {
-      default: t
-    } = e;
-    t.preloadStaffMembers()
-  }), i.forEach(e => {
+  }), r.forEach(e => {
     e.members.forEach(t => {
       T(t.user.id, e.id, t.avatar), S(t.user.id, t.user)
     })

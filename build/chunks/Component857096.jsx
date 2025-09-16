@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk607187 = require("./607187.jsx"),
   Chunk937995 = require("./937995.jsx"),
   Chunk366050 = require("./366050.js"),
-  Chunk510839 = require("./510839.js"),
+  Chunk48131 = require("./48131.js"),
   Chunk591472 = require("./591472.js"),
   Chunk754376 = require("./754376.jsx"),
   Chunk408491 = require("./408491.js"),
@@ -55,7 +55,7 @@ function T(e) {
         onMouseDown: t,
         onMouseLeave: i,
         onFocus: () => {
-          (0, m.eU)({
+          m.Z.updateFrameLayoutMode({
             applicationId: n.applicationId,
             layoutMode: b.U.FOCUSED
           })

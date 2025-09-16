@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk871499 = require("./871499.jsx"),
   Chunk786915 = require("./786915.jsx"),
   Chunk944486 = require("./944486.js"),
-  Chunk510839 = require("./510839.js"),
+  Chunk48131 = require("./48131.js"),
   Chunk214143 = require("./214143.jsx"),
   Chunk610278 = require("./610278.js"),
   Chunk408491 = require("./408491.js"),
@@ -45,12 +45,12 @@ function P(e) {
     width: 0,
     height: 0
   }), k = i.useCallback(() => {
-    (0, O.eU)({
+    O.Z.updateFrameLayoutMode({
       applicationId: t.applicationId,
       layoutMode: v.U.PIP
     })
   }, [t.applicationId]), M = i.useCallback(() => {
-    (0, O.xT)({
+    O.Z.stopFrame({
       applicationId: t.applicationId
     })
   }, [t.applicationId]);
@@ -66,7 +66,7 @@ function P(e) {
     return e.observe(L.current), () => e.disconnect()
   }, []), i.useEffect(() => {
     let e = e => {
-      null == w.current || w.current.contains(e.target) || l || (0, O.eU)({
+      null == w.current || w.current.contains(e.target) || l || O.Z.updateFrameLayoutMode({
         applicationId: t.applicationId,
         layoutMode: v.U.PIP
       })

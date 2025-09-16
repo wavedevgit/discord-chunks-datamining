@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk871499 = require("./871499.jsx"),
-  Chunk510839 = require("./510839.js"),
+  Chunk48131 = require("./48131.js"),
   Chunk388032 = require("./388032.jsx");
 
 function c(e, t, n) {
@@ -74,7 +74,7 @@ function h(e) {
     centerButton: n = false
   } = e, c = _(e, ["applicationId", "centerButton"]);
   let d = i.useCallback(() => {
-      (0, s.xT)({
+      s.Z.stopFrame({
         applicationId: t
       })
     }, [t]),

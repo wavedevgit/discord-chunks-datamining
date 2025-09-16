@@ -269,6 +269,10 @@ let i = {
     inlineRequire: () => require("./402804.js").Z,
     hasStoreChangeListeners: true
   },
+  StaffMemberPreloaderManager: {
+    actions: ["POST_CONNECTION_OPEN"],
+    inlineRequire: () => require("./239088.js").Z
+  },
   SubscriptionManager: {
     actions: ["POST_CONNECTION_OPEN"],
     inlineRequire: () => require("./892264.js").Z

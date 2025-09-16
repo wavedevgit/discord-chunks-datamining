@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk481060 = require("./481060.js"),
   Chunk147913 = require("./147913.js"),
   Chunk626135 = require("./626135.js"),
-  Chunk510839 = require("./510839.js"),
+  Chunk48131 = require("./48131.js"),
   Chunk591472 = require("./591472.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
@@ -28,7 +28,7 @@ function d(e) {
   } = e, r = n.id;
   if (null == r || null == t) return;
   let i = s.Z.getConnectedFrame();
-  (null == i ? true : i.applicationId) === r && ((0, o.xT)({
+  (null == i ? true : i.applicationId) === r && (o.Z.stopFrame({
     applicationId: r
   }), t.code !== l.$VG.CLOSE_NORMAL && (a.default.track(l.rMx.ACTIVITY_CLOSED_RPC_ERROR, {
     rpc_close_code: t.code,

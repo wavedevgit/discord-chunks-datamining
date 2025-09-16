@@ -40,7 +40,7 @@ var Chunk990547 = require("./990547.js"),
   Chunk605236 = require("./605236.js"),
   Chunk233764 = require("./233764.js"),
   Chunk375824 = require("./375824.js"),
-  Chunk510839 = require("./510839.js"),
+  Chunk48131 = require("./48131.js"),
   Chunk591472 = require("./591472.js"),
   Chunk957730 = require("./957730.js"),
   Chunk48854 = require("./48854.js"),
@@ -127,7 +127,7 @@ async function es(e) {
   let C = (0, N.r)();
   try {
     let e = A.Z.getConnectedFrame();
-    if (null != e && (0, S.xT)({
+    if (null != e && S.Z.stopFrame({
         applicationId: e.applicationId
       }), s.Z.dispatch({
         type: "EMBEDDED_ACTIVITY_LAUNCH_START",

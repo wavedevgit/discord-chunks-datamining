@@ -12,7 +12,7 @@ var Chunk493683 = require("./493683.js"),
   Chunk911969 = require("./911969.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk835473 = require("./835473.js"),
-  Chunk510839 = require("./510839.js"),
+  Chunk48131 = require("./48131.js"),
   Chunk813370 = require("./813370.js"),
   Chunk630388 = require("./630388.js"),
   Chunk358085 = require("./358085.js"),
@@ -141,7 +141,7 @@ function N(e) {
       return async () => {
         if (R) {
           try {
-            await (0, s.s2)({
+            await s.Z.launchFrame({
               applicationId: T
             }), null == p || p({
               applicationId: T
