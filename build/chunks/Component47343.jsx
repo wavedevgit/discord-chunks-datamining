@@ -1,7 +1,7 @@
 /** Chunk was on 86872 **/
 /** chunk id: 47343, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  R: () => h
+  R: () => N
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,27 +13,22 @@ var Chunk951288 = require("./951288.js"),
   Chunk51331 = require("./51331.jsx"),
   Chunk259580 = require("./259580.jsx"),
   Chunk626135 = require("./626135.js"),
-  Chunk44609 = require("./44609.js"),
   Chunk731971 = require("./731971.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk152143 = require("./152143.js");
-let h = () => {
+let N = () => {
   var e;
   let [n, t] = Chunk647438.useState(false), a = Chunk695346.G6.useSetting(), {
-    nickname: h,
-    dmsAllowed: I,
+    nickname: N,
+    dmsAllowed: h,
     showActivity: E,
-    mutedServer: v,
-    setNickname: f,
-    setDmsAllowed: j,
-    setShowActivity: S,
-    setMutedServer: C,
-    guildId: A,
-    inviteCode: T
-  } = (0, Chunk731971.XW)(), L = null == (e = Chunk590965.Z.getProps().invite) ? true : module.is_nickname_changeable, P = (0, Chunk44609.m4)({
-    location: "InviteSettingsControls"
-  });
+    setNickname: I,
+    setDmsAllowed: f,
+    setShowActivity: v,
+    guildId: j,
+    inviteCode: S
+  } = (0, Chunk731971.XW)(), C = null == (e = Chunk590965.Z.getProps().invite) ? true : module.is_nickname_changeable;
   return (0, Chunk951288.jsxs)("div", {
     className: r()(Chunk152143.editProfileContainer, {
       [Chunk152143.opened]: exports
@@ -42,8 +37,8 @@ let h = () => {
       className: Chunk152143.header,
       onClick: () => {
         exports || Chunk626135.default.track(Chunk981631.rMx.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED, {
-          guild_id: A,
-          invite_code: T
+          guild_id: j,
+          invite_code: S
         }), require(!exports)
       },
       children: [(0, Chunk951288.jsx)("div", {
@@ -75,8 +70,8 @@ let h = () => {
     }), (0, Chunk951288.jsxs)("div", {
       className: r()(Chunk152143.customizationSection, {
         [Chunk152143.opened]: exports
-      }, L ? null : Chunk152143.condensed),
-      children: [L && (0, Chunk951288.jsxs)("div", {
+      }, C ? null : Chunk152143.condensed),
+      children: [C && (0, Chunk951288.jsxs)("div", {
         className: Chunk152143.serverNickname,
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "eyebrow",
@@ -85,21 +80,17 @@ let h = () => {
         }), (0, Chunk951288.jsx)(Chunk481060.oil, {
           placeholder: Chunk388032.intl.string(Chunk388032.t["09Q8ys"]),
           maxLength: Chunk981631.l$U,
-          value: h,
-          onChange: f
+          value: N,
+          onChange: I
         })]
       }), (0, Chunk951288.jsx)(Chunk51331.Z, {
         title: Chunk388032.intl.string(Chunk388032.t["/2ed39"]),
-        value: I,
-        onChange: j
+        value: h,
+        onChange: f
       }), Chunk120356 && (0, Chunk951288.jsx)(Chunk51331.Z, {
         title: Chunk388032.intl.string(Chunk388032.t.bN4m1N),
         value: E,
-        onChange: S
-      }), P && (0, Chunk951288.jsx)(Chunk51331.Z, {
-        title: Chunk388032.intl.string(Chunk388032.t["0nZCqK"]),
-        value: v,
-        onChange: C
+        onChange: v
       })]
     })]
   })

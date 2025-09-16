@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 /** chunk id: 822699, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => eS
+  default: () => ey
 }), require("./35282.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -350,7 +350,7 @@ class eO extends Chunk647438.PureComponent {
     })
   }
 }
-let eS = Chunk442837.ZP.connectStores([Chunk314897.default, Chunk701190.Z, Chunk82142.Z, Chunk353926.Z, Chunk409059.Z], e => {
+let ey = Chunk442837.ZP.connectStores([Chunk314897.default, Chunk701190.Z, Chunk82142.Z, Chunk353926.Z, Chunk409059.Z], e => {
   var t, n, r;
   let {
     match: i,
@@ -358,10 +358,10 @@ let eS = Chunk442837.ZP.connectStores([Chunk314897.default, Chunk701190.Z, Chunk
   } = e, s = null == i || null == (t = i.params) ? true : t.inviteCode, a = ee.a ? ee.Y : true, o = null != s ? (0, I.mb)(s, l.search) : a, c = null == i || null == (n = i.params) ? true : n.giftCode, u = null == i || null == (r = i.params) ? true : r.guildTemplateCode;
   return {
     inviteKey: o,
-    isAuthenticated: S.default.isAuthenticated(),
+    isAuthenticated: y.default.isAuthenticated(),
     giftCode: c,
     guildTemplateCode: u,
-    gift: null != c ? y.Z.get(c) : null,
+    gift: null != c ? S.Z.get(c) : null,
     invite: null != o ? C.Z.getInvite(o) : null,
     guildTemplate: null != u ? v.Z.getGuildTemplate(u) : null,
     hasLoadedExperiments: E.Z.hasLoadedExperiments

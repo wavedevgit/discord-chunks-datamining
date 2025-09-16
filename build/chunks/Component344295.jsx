@@ -139,7 +139,7 @@ class H extends Chunk647438.PureComponent {
     } : {
       invite_code: l
     };
-    y.default.track(e, function(e) {
+    S.default.track(e, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -358,7 +358,7 @@ let W = Chunk442837.ZP.connectStores([Chunk701190.Z, Chunk896797.Z, Chunk314897.
     inviteKey: n
   } = e;
   return {
-    invite: null != (t = S.Z.getInvite(n)) ? t : {},
+    invite: null != (t = y.Z.getInvite(n)) ? t : {},
     nativeAppState: x.Z.getState(n),
     authenticated: N.default.isAuthenticated(),
     defaultRoute: O.Z.defaultRoute,

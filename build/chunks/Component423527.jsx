@@ -483,7 +483,7 @@ class eu extends(r = Chunk647438.PureComponent) {
       } = {}
     } = this.state, {
       consentRequired: O,
-      authBoxClassName: y,
+      authBoxClassName: S,
       hasLoggedInAccounts: C
     } = this.props, A = this.renderErrorMessage(), T = (0, i.jsx)(p.ua7, {
       text: !c && O ? en.intl.string(en.t.AY4IVF) : null,
@@ -613,7 +613,7 @@ class eu extends(r = Chunk647438.PureComponent) {
         required: true,
         onFocus: this.trackInputFocus,
         onBlur: this.trackInputBlur
-      }), (0, i.jsx)(S.Z, {}), this.renderConsentComponent(), T, A, $.a ? null : (0, i.jsx)(I.zx, {
+      }), (0, i.jsx)(y.Z, {}), this.renderConsentComponent(), T, A, $.a ? null : (0, i.jsx)(I.zx, {
         look: I.zx.Looks.LINK,
         color: I.zx.Colors.LINK,
         onClick: this.handleGotoLogin,
@@ -624,7 +624,7 @@ class eu extends(r = Chunk647438.PureComponent) {
     return t ? (0, i.jsx)(J.Z, {
       onSubmit: this.handleSubmit,
       tag: "form",
-      className: a()(y, er.horizontalAuthBox),
+      className: a()(S, er.horizontalAuthBox),
       children: () => [R, (0, i.jsxs)("div", {
         className: er.flex,
         children: [(0, i.jsx)(I.Dx, {
@@ -635,7 +635,7 @@ class eu extends(r = Chunk647438.PureComponent) {
     }) : (0, i.jsxs)(I.ZP, {
       onSubmit: this.handleSubmit,
       tag: "form",
-      className: y,
+      className: S,
       children: [C ? (0, i.jsx)(I.zx, {
         onClick: this.handleGotoLogin,
         look: I.zx.Looks.LINK,

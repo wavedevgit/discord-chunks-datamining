@@ -649,7 +649,7 @@ class Q extends(r = Chunk647438.PureComponent) {
       try {
         let {
           token: n
-        } = await S.Z.verifyPhone(t, e, false);
+        } = await y.Z.verifyPhone(t, e, false);
         await p.Z.authorizeIPAddress(n), this.handleLogin()
       } catch (e) {
         null != e.body && null != e.body.message && this.setState({
@@ -666,7 +666,7 @@ class Q extends(r = Chunk647438.PureComponent) {
       try {
         let {
           token: n
-        } = await S.Z.verifyPhone(this.getFullLogin(), e, false);
+        } = await y.Z.verifyPhone(this.getFullLogin(), e, false);
         t(z.Z5c.RESET, {
           search: (0, o.stringify)({
             token: n,
@@ -719,7 +719,7 @@ class Q extends(r = Chunk647438.PureComponent) {
         })
       }
     }), q(this, "handleResendCode", () => {
-      S.Z.resendCode(this.getFullLogin())
+      y.Z.resendCode(this.getFullLogin())
     }), q(this, "handleReset", e => {
       null != e && e.preventDefault(), p.Z.loginReset(), this.setState({
         password: "",
@@ -775,7 +775,7 @@ q(Q, "defaultProps", {
 });
 let $ = function(e) {
   (0, T.M)();
-  let t = (0, u.cj)([w.Z, L.Z, R.default, N.Z, y.Z], () => ({
+  let t = (0, u.cj)([w.Z, L.Z, R.default, N.Z, S.Z], () => ({
     authenticated: R.default.isAuthenticated(),
     handoffAvailable: w.Z.isHandoffAvailable(),
     user: w.Z.user,
@@ -783,7 +783,7 @@ let $ = function(e) {
     mfaTicket: R.default.getMFATicket(),
     mfaMethods: R.default.getMFAMethods(),
     defaultRoute: L.Z.defaultRoute,
-    country: y.Z.getCountryCode(),
+    country: S.Z.getCountryCode(),
     hasLoggedInAccounts: N.Z.getHasLoggedInAccounts()
   }));
   return (0, i.jsx)(Q, Y({}, e, t))

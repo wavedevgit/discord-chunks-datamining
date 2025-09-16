@@ -2,7 +2,7 @@
 /** chunk id: 590965, original params: e,t,n (module,exports,require) **/
 let r;
 require.d(exports, {
-  Z: () => y
+  Z: () => S
 }), require("./388685.js"), require("./539854.js");
 var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -48,7 +48,7 @@ let j = Chunk981631.IlC.APP,
 function O() {
   b = true
 }
-class S extends(i = Chunk442837.ZP.Store) {
+class y extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk430824.Z, Chunk701190.Z, Chunk594174.default)
   }
@@ -64,8 +64,8 @@ class S extends(i = Chunk442837.ZP.Store) {
     }
   }
 }
-E(S, "displayName", "InviteModalStore");
-let y = new S(Chunk570140.Z, {
+E(y, "displayName", "InviteModalStore");
+let S = new y(Chunk570140.Z, {
   OVERLAY_INITIALIZE: O,
   CONNECTION_OPEN: O,
   CONNECTION_CLOSED: function() {

@@ -1,10 +1,10 @@
 /** Chunk was on 27978 **/
 /** chunk id: 230224, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  GB: () => S,
+  GB: () => y,
   JI: () => N,
   UM: () => A,
-  V6: () => y,
+  V6: () => S,
   WT: () => j,
   X7: () => b,
   jq: () => C,
@@ -52,7 +52,7 @@ let x = 100,
     let n = E(e);
     return (null != (t = null == n ? true : n.memberCount) ? t : 0) > x
   })(e)),
-  S = e => {
+  y = e => {
     let {
       guild: t,
       user: n,
@@ -74,7 +74,7 @@ let x = 100,
     }) : null
   };
 
-function y(e) {
+function S(e) {
   var t;
   let {
     invite: n,

@@ -11,8 +11,7 @@ require.d(exports, {
   oE: () => p,
   pB: () => h,
   y: () => E,
-  yS: () => j,
-  yr: () => b
+  yr: () => j
 }), require("./781311.js");
 var Chunk879690 = require("./879690.js"),
   Chunk524437 = require("./524437.js"),
@@ -52,8 +51,7 @@ function o(e, t) {
 }
 let c = {
   nickname: true,
-  dmsAllowed: !Chunk695346.iG.getSetting(),
-  mutedServer: false
+  dmsAllowed: !Chunk695346.iG.getSetting()
 };
 
 function u(e) {
@@ -64,7 +62,6 @@ let d = (0, Chunk879690.U)(e => ({
     nickname: c.nickname,
     dmsAllowed: c.dmsAllowed,
     showActivity: true,
-    mutedServer: c.mutedServer,
     inviteCode: true,
     guildId: true,
     touched: false,
@@ -78,10 +75,6 @@ let d = (0, Chunk879690.U)(e => ({
     })),
     setShowActivity: t => e(e => o(a({}, e), {
       showActivity: t,
-      touched: true
-    })),
-    setMutedServer: t => e(e => o(a({}, e), {
-      mutedServer: t,
       touched: true
     })),
     setInviteCode: t => e(e => o(a({}, e), {
@@ -104,7 +97,6 @@ let d = (0, Chunk879690.U)(e => ({
       nickname: c.nickname,
       dmsAllowed: c.dmsAllowed,
       showActivity: u(e.guildSize),
-      mutedServer: c.mutedServer,
       inviteCode: true,
       guildId: true,
       guildSize: e.guildSize,
@@ -119,7 +111,7 @@ let d = (0, Chunk879690.U)(e => ({
   },
   g = () => {
     let e = d.getState();
-    return module.nickname !== c.nickname || module.dmsAllowed !== c.dmsAllowed || module.showActivity !== u(module.guildSize) || module.mutedServer !== c.mutedServer
+    return module.nickname !== c.nickname || module.dmsAllowed !== c.dmsAllowed || module.showActivity !== u(module.guildSize)
   },
   m = () => d.getState().inviteCode,
   f = () => d.getState().guildId,
@@ -127,8 +119,7 @@ let d = (0, Chunk879690.U)(e => ({
   x = () => d.getState().dmsAllowed,
   E = () => d.getState().nickname,
   v = () => d.getState().showActivity,
-  j = () => d.getState().mutedServer,
-  b = () => {
+  j = () => {
     var e, t;
     let {
       nickname: n

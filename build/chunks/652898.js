@@ -2,11 +2,10 @@
 /** chunk id: 652898, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => y
+  Z: () => b
 }), require("./388685.js"), require("./457542.js");
 var Chunk990547 = require("./990547.js"),
   Chunk283693 = require("./283693.js"),
-  Chunk44609 = require("./44609.js"),
   Chunk131704 = require("./131704.js"),
   Chunk314897 = require("./314897.js"),
   Chunk430824 = require("./430824.js"),
@@ -16,7 +15,7 @@ var Chunk990547 = require("./990547.js"),
   Chunk245335 = require("./245335.js"),
   Chunk981631 = require("./981631.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,20 +24,20 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,61 +48,59 @@ function m(e, t) {
   return n
 }
 
-function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function E(e) {
+function g(e) {
   let t = null;
   if (null != e && null != e.channel) {
     let n = e.channel;
-    t = e.target_type === f.Iq.STREAM ? _.dAT.STREAM : e.target_type === f.Iq.EMBEDDED_APPLICATION ? _.dAT.APPLICATION : (0, o.bc)(n.type) ? _.dAT.GDM_INVITE : null == n || (0, o.hv)(n.type) ? _.dAT.FRIEND_INVITE : _.dAT.SERVER_INVITE
+    t = e.target_type === d.Iq.STREAM ? f.dAT.STREAM : e.target_type === d.Iq.EMBEDDED_APPLICATION ? f.dAT.APPLICATION : (0, a.bc)(n.type) ? f.dAT.GDM_INVITE : null == n || (0, a.hv)(n.type) ? f.dAT.FRIEND_INVITE : f.dAT.SERVER_INVITE
   }
   return t
 }
-let b = new Map;
+let E = new Map;
 
-function y(e, t, n) {
-  if (c.default.track(_.rMx.INVITE_OPENED, {
+function b(e, t, n) {
+  if (l.default.track(f.rMx.INVITE_OPENED, {
       invite_code: e
-    }), b.has(e)) return b.get(e);
-  let o = (0, d.fU)(e),
-    f = g(h({}, n), {
+    }), E.has(e)) return E.get(e);
+  let a = (0, u.fU)(e),
+    d = m(p({}, n), {
       with_counts: true,
       with_expiration: true,
-      guild_scheduled_event_id: o.guildScheduledEventId,
-      with_permissions: (0, a.gY)({
-        location: "resolveInvite"
-      })
+      guild_scheduled_event_id: a.guildScheduledEventId,
+      with_permissions: true
     }),
-    p = u.Z.get({
-      url: _.ANM.INVITE(o.baseCode),
-      query: f,
+    _ = c.Z.get({
+      url: f.ANM.INVITE(a.baseCode),
+      query: d,
       oldFormErrors: true,
       trackedActionData: {
         event: r.NetworkActionNames.INVITE_RESOLVE,
         properties: e => {
-          var r, a, c, u, d, f, p;
+          var r, l, c, u, d, _, p;
           let h = e.body,
-            m = (null == (r = e.body) ? true : r.code) === _.evJ.USER_BANNED;
+            m = (null == (r = e.body) ? true : r.code) === f.evJ.USER_BANNED;
           return (0, i.iG)({
             resolved: e.ok,
-            guild_id: null == h || null == (a = h.guild) ? true : a.id,
+            guild_id: null == h || null == (l = h.guild) ? true : l.id,
             channel_id: null == h || null == (c = h.channel) ? true : c.id,
             channel_type: null == h || null == (u = h.channel) ? true : u.type,
             inviter_id: null == h || null == (d = h.inviter) ? true : d.id,
-            code: o.baseCode,
+            code: a.baseCode,
             input_value: null == n ? true : n.inputValue,
             location: t,
-            authenticated: s.default.isAuthenticated(),
+            authenticated: o.default.isAuthenticated(),
             size_total: null == h ? true : h.approximate_member_count,
             size_online: null == h ? true : h.approximate_presence_count,
-            destination_user_id: null == h || null == (f = h.target_user) ? true : f.id,
-            invite_type: E(h),
+            destination_user_id: null == h || null == (_ = h.target_user) ? true : _.id,
+            invite_type: g(h),
             user_banned: m,
-            user_is_member: null != l.Z.getGuild(null == h || null == (p = h.guild) ? true : p.id)
+            user_is_member: null != s.Z.getGuild(null == h || null == (p = h.guild) ? true : p.id)
           })
         }
       },
@@ -111,22 +108,22 @@ function y(e, t, n) {
     }).then(r => {
       let i = r.body;
       if (null != t) {
-        var a;
-        c.default.track(_.rMx.INVITE_RESOLVED, {
+        var c;
+        l.default.track(f.rMx.INVITE_RESOLVED, {
           resolved: true,
           guild_id: null != i.guild ? i.guild.id : null,
           channel_id: null != i.channel ? i.channel.id : null,
           channel_type: null != i.channel ? i.channel.type : null,
           inviter_id: i.inviter ? i.inviter.id : null,
-          code: o.baseCode,
+          code: a.baseCode,
           input_value: null == n ? true : n.inputValue,
           location: t,
-          authenticated: s.default.isAuthenticated(),
+          authenticated: o.default.isAuthenticated(),
           size_total: i.approximate_member_count,
           size_online: i.approximate_presence_count,
           destination_user_id: null != i.target_user ? i.target_user.id : null,
-          invite_type: E(i),
-          user_is_member: null != l.Z.getGuild(null == i || null == (a = i.guild) ? true : a.id)
+          invite_type: g(i),
+          user_is_member: null != s.Z.getGuild(null == i || null == (c = i.guild) ? true : c.id)
         }, {
           flush: true
         })
@@ -136,18 +133,18 @@ function y(e, t, n) {
         code: e
       }
     }, r => {
-      let i = null != r.body && r.body.code === _.evJ.USER_BANNED;
+      let i = null != r.body && r.body.code === f.evJ.USER_BANNED;
       if (null != t) {
-        var a, l;
-        c.default.track(_.rMx.INVITE_RESOLVED, {
+        var s, c;
+        l.default.track(f.rMx.INVITE_RESOLVED, {
           resolved: false,
-          code: o.baseCode,
+          code: a.baseCode,
           input_value: null == n ? true : n.inputValue,
           location: t,
-          authenticated: s.default.isAuthenticated(),
+          authenticated: o.default.isAuthenticated(),
           user_banned: i,
-          error_code: null == (a = r.body) ? true : a.code,
-          error_message: null == (l = r.body) ? true : l.message
+          error_code: null == (s = r.body) ? true : s.code,
+          error_message: null == (c = r.body) ? true : c.message
         }, {
           flush: true
         })
@@ -158,7 +155,7 @@ function y(e, t, n) {
         banned: i
       }
     }).finally(() => {
-      b.delete(e)
+      E.delete(e)
     });
-  return b.set(e, p), p
+  return E.set(e, _), _
 }
