@@ -1,9 +1,9 @@
 /** Chunk was on 80125 **/
 /** chunk id: 238296, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  E: () => E,
-  Y: () => S,
-  default: () => P
+  E: () => S,
+  Y: () => x,
+  default: () => D
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -27,92 +27,92 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function S(e) {
+function x(e) {
   let {
     isOwnSettings: t,
     userId: n,
-    channelId: o,
-    guildId: l,
+    channelId: l,
+    guildId: o,
     context: c
-  } = e, a = (0, v.Z)({
+  } = e, s = (0, O.Z)({
     userId: n,
-    guildId: l,
-    channelId: o,
+    guildId: o,
+    channelId: l,
     showGuildProfile: true,
-    icon: (0, r.jsx)(i.tBG, {
+    icon: (0, i.jsx)(r.tBG, {
       size: "sm"
     }),
     label: h.intl.string(h.t.iXAna2)
-  }), d = (0, j.Z)(n, c, i.kBi), b = (0, m.Z)(n), g = (0, y.Z)(n), O = (0, u.Z)(n), p = (0, s.Z)(n), Z = (0, f.Z)();
-  return [(0, r.jsxs)(i.kSQ, {
-    children: [a, d]
-  }), (0, r.jsxs)(i.kSQ, {
-    children: [b, g, O, p, t && Z]
+  }), d = (0, p.Z)(n, c, r.kBi), f = (0, Z.Z)(n), g = (0, v.Z)(n), j = (0, a.Z)(n), m = (0, u.Z)(n), y = (0, b.Z)();
+  return [(0, i.jsxs)(r.kSQ, {
+    children: [s, d]
+  }), (0, i.jsxs)(r.kSQ, {
+    children: [f, g, j, m, t && y]
   })]
 }
 
-function E(e, t, n) {
-  let o = (0, d.B)({
+function S(e, t, n) {
+  let l = (0, d.B)({
       userId: e.id,
       channelId: t,
       guildId: n,
       minimal: true
     }),
-    l = (0, b.Z)({
+    o = (0, f.Z)({
       id: e.id,
       label: h.intl.string(h.t["/AXYnJ"])
     }),
-    c = (0, p.Z)({
+    c = (0, m.Z)({
       user: e,
       guildId: n,
       channelId: t,
       location: "GuildVoiceUserContextMenu"
     }),
-    a = (0, O.Z)({
+    s = (0, j.Z)({
       user: e,
       guildId: n,
       channelId: t,
       location: "GuildVoiceUserContextMenu"
     }),
-    u = (0, r.jsxs)(i.kSQ, {
-      children: [o, l]
+    a = (0, i.jsxs)(r.kSQ, {
+      children: [l, o]
     });
-  return [(0, r.jsxs)(i.kSQ, {
-    children: [c, a]
-  }), u]
+  return [(0, i.jsxs)(r.kSQ, {
+    children: [c, s]
+  }), a]
 }
-let P = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
+let D = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   let {
     user: t,
     channel: n,
-    onSelect: l,
+    onSelect: o,
     onInteraction: c,
-    context: a
-  } = e, u = n.id, s = t.isNonUserBot(), d = t.id === g.default.getId(), f = S({
+    context: s
+  } = e, a = n.id, u = t.isNonUserBot(), d = t.id === g.default.getId(), b = x({
     isOwnSettings: d,
     userId: t.id,
-    channelId: u,
-    context: a
-  }), O = E(t, u), p = (0, b.Z)({
+    channelId: a,
+    context: s
+  }), j = S(t, a), m = (0, f.Z)({
     id: t.id,
     label: h.intl.string(h.t["/AXYnJ"])
   });
-  return (0, r.jsx)(i.v2r, {
+  return (0, i.jsx)(r.v2r, {
     navId: "user-context",
-    onClose: o.Zy,
+    onClose: l.Zy,
     "aria-label": h.intl.string(h.t.liqwPD),
-    onSelect: l,
+    onSelect: o,
     onInteraction: c,
     variant: "fixed",
-    children: !s && (0, r.jsxs)(r.Fragment, {
-      children: [f, !d && (0, r.jsx)(i.kSQ, {
-        children: (0, r.jsx)(i.sNh, {
+    children: !u && (0, i.jsxs)(i.Fragment, {
+      children: [b, !d && (0, i.jsx)(r.kSQ, {
+        children: (0, i.jsx)(r.sNh, {
           id: "more-options",
           label: h.intl.string(h.t.PdRCRk),
-          children: O
+          children: j
         })
-      }), d && (0, r.jsx)(i.kSQ, {
-        children: p
+      }), d && (0, i.jsx)(r.kSQ, {
+        children: m
       })]
     })
   })
