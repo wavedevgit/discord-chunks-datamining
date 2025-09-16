@@ -494,9 +494,9 @@ function R() {
       E(e.trial.sort((e, t) => e.id.localeCompare(t.id))), w(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
     }))
   }, [I]);
-  let z = async () => {
+  let B = async () => {
     null != i && (await N(i, "trial"), Z(true))
-  }, B = async () => {
+  }, z = async () => {
     null != Chunk572004 && (await N(Chunk572004, "discount"), Z(true))
   }, V = async () => {
     await S(), Z(true)
@@ -557,7 +557,7 @@ function R() {
           }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
             variant: "primary",
             text: "Create",
-            onClick: z
+            onClick: B
           })]
         })]
       }), (0, Chunk951288.jsxs)("section", {
@@ -578,7 +578,7 @@ function R() {
           }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
             variant: "primary",
             text: "Create",
-            onClick: B
+            onClick: z
           })]
         })]
       }), Chunk474936.length > 0 && (0, Chunk951288.jsxs)("section", {

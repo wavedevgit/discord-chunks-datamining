@@ -124,7 +124,7 @@ function y(e) {
       D(e.body.message)
     }
     T()
-  }, G = (null == (t = b.GP[E.planIdFromItems]) ? true : t.premiumType) === b.p9.TIER_0, z = null == (n = E.metadata) ? true : n.ended_at, B = null != z ? new Date(z).toISOString().substring(0, 10) : "", V = E.hasActiveTrial, H = (null == (l = E.metadata) ? true : l.active_discount_id) != null;
+  }, G = (null == (t = b.GP[E.planIdFromItems]) ? true : t.premiumType) === b.p9.TIER_0, B = null == (n = E.metadata) ? true : n.ended_at, z = null != B ? new Date(B).toISOString().substring(0, 10) : "", V = E.hasActiveTrial, H = (null == (l = E.metadata) ? true : l.active_discount_id) != null;
   return (0, a.jsxs)("div", {
     className: i()(f.card, G ? f.gradientWrapperTier0 : f.gradientWrapperTier2),
     children: [V && (0, a.jsx)(o.P3F, {
@@ -330,7 +330,7 @@ function y(e) {
           className: g.formSection,
           children: (0, a.jsx)("input", {
             type: "date",
-            value: B,
+            value: z,
             onChange: e => U({
               endedAt: e.target.value
             })

@@ -132,7 +132,7 @@ function X(e) {
       (0, R.JG)(t, () => l(true))
     },
     className: V.copyId,
-    children: ["Application Id: ", t, " ", n ? B.intl.string(B.t["t5VZ8/"]) : null]
+    children: ["Application Id: ", t, " ", n ? z.intl.string(z.t["t5VZ8/"]) : null]
   })
 }
 let J = Chunk647438.memo(function(e) {
@@ -301,13 +301,13 @@ let J = Chunk647438.memo(function(e) {
   });
 
 function Q(e) {
-  let t, n = (t = Object.values((0, d.Wu)([O.Z], () => O.Z.getWidgetsForLayout(z.$S))), t.find(t => t.type === e));
+  let t, n = (t = Object.values((0, d.Wu)([O.Z], () => O.Z.getWidgetsForLayout(B.$S))), t.find(t => t.type === e));
   return [n, () => {
     if (null != n)(0, h.E9)(n.id);
     else {
       let t = q[e];
       if (null == t) return;
-      let n = t(z.$S);
+      let n = t(B.$S);
       (0, h.A4)(n)
     }
   }]

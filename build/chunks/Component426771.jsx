@@ -32,27 +32,27 @@ function _(e) {
   if (true === P || b.length <= 0) return null;
   let y = I.some(e => e.type !== m.A3.INACTIVE),
     w = (0, p.d)(y),
-    Z = I.reduce((e, t) => {
+    N = I.reduce((e, t) => {
       let {
         sourceEntitlement: n
       } = t, r = null == n ? true : n.ends_at;
       return null == r ? e : null == e || r < e ? r : e
     }, true);
-  true !== Z ? x = {
+  true !== N ? x = {
     type: "expiring",
-    expiringAt: Z
+    expiringAt: N
   } : y && (x = {
     type: "active",
     statusText: f.intl.string(g.default.FFLkm5)
   });
-  let N = I.reduce((e, t) => {
+  let S = I.reduce((e, t) => {
       let {
         type: n,
         powerup: r
       } = t;
       return n === m.A3.POWERUP_ACTIVATED ? e + r.cost : e
     }, 0),
-    S = I.reduce((e, t) => {
+    Z = I.reduce((e, t) => {
       var n, r;
       let {
         powerup: o
@@ -66,7 +66,7 @@ function _(e) {
       } = t;
       return e + (null != (n = null == r ? true : r.cost) ? n : 0)
     }, 0),
-    O = y ? N : S,
+    O = y ? S : Z,
     A = !y && k > O ? "+" : true,
     U = !T && E ? P.image.animatedUrl : P.image.staticUrl,
     R = null != P.viewCta && "" !== P.viewCta ? P.viewCta : f.intl.string(g.default["27GkOj"]),

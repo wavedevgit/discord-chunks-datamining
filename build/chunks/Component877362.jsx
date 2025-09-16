@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 877362, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
@@ -29,26 +29,26 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk127181 = require("./127181.js"),
   Chunk350618 = require("./350618.js");
-let Z = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk99690.Z;
+let N = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk99690.Z;
 
-function N(e) {
+function S(e) {
   var t, n;
   let {
     guildId: o
   } = e, d = (0, a.e7)([h.Z], () => h.Z.getGuild(o)), j = (0, a.e7)([C.Z], () => C.Z.getSortedRoles(o).find(e => {
     var t;
     return (null == (t = e.tags) ? true : t.premium_subscriber) === null
-  })), N = (0, a.e7)([b.default], () => b.default.getCurrentUser()), S = null == N ? true : N.id, k = (0, a.e7)([x.ZP], () => null != S ? x.ZP.getMember(o, S) : true, [S, o]), O = (null == k ? true : k.premiumSince) != null, A = (0, a.e7)([p.Z], () => p.Z.useReducedMotion), {
+  })), S = (0, a.e7)([b.default], () => b.default.getCurrentUser()), Z = null == S ? true : S.id, k = (0, a.e7)([x.ZP], () => null != Z ? x.ZP.getMember(o, Z) : true, [Z, o]), O = (null == k ? true : k.premiumSince) != null, A = (0, a.e7)([p.Z], () => p.Z.useReducedMotion), {
     avatarDecorationSrc: U,
     avatarSrc: R,
     eventHandlers: L
   } = (0, _.Z)({
-    userId: null == N ? true : N.id,
+    userId: null == S ? true : S.id,
     guildId: o,
     size: u.EFr.SIZE_40,
     animateOnHover: !A
   });
-  return null == d || null == k || null == N ? null : (0, r.jsxs)(s.$, {
+  return null == d || null == k || null == S ? null : (0, r.jsxs)(s.$, {
     className: y.container,
     children: [(0, r.jsx)("img", {
       alt: "",
@@ -74,7 +74,7 @@ function N(e) {
         })
       })]
     }), null != j && !O && (0, r.jsx)(v.l, {
-      avatar: (0, r.jsx)(Z, (t = function(e) {
+      avatar: (0, r.jsx)(N, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -92,7 +92,7 @@ function N(e) {
         }
         return e
       }({}, L), n = n = {
-        user: N,
+        user: S,
         src: R,
         avatarDecoration: U,
         size: u.EFr.SIZE_40,
@@ -110,7 +110,7 @@ function N(e) {
       }), t)),
       username: (0, r.jsx)(u.PUh, {
         variant: "text-md/semibold",
-        name: E.ZP.getName(o, null, N),
+        name: E.ZP.getName(o, null, S),
         colorString: j.colorString,
         colorStrings: j.colorStrings
       }),

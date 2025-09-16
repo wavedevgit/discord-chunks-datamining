@@ -132,12 +132,12 @@ function _() {
     null == (e = C.current) || module.stop(), C.current = null, y(null)
   }, []);
 
-  function z() {
+  function B() {
     Chunk131951.Z.getMediaEngine().stopRecordingRawSamples()
   }
 
-  function B(e) {
-    if (t && z(), G(), null == F) return;
+  function z(e) {
+    if (t && B(), G(), null == F) return;
     let n = F.createBufferSource();
     n.buffer = e.audioBuffer, N.current = F.createGain(), N.current.gain.value = E, n.connect(N.current), N.current.connect(F.destination), n.loop = true, n.start(), C.current = n, y(e)
   }
@@ -267,7 +267,7 @@ function _() {
         tag: Chunk481060.RB0.H3,
         children: (0, Chunk951288.jsx)(Chunk755721.zx, {
           color: exports ? Chunk755721.zx.Colors.RED : Chunk755721.zx.Colors.BRAND,
-          onClick: exports ? z : function() {
+          onClick: exports ? B : function() {
             G(), require(true), Chunk846027.Z.setLoopback("krisp_test", true), Chunk131951.Z.getMediaEngine().startRecordingRawSamples((t, a, r) => {
               n(false), d.Z.setLoopback("krisp_test", false);
               let l = new AudioBuffer({
@@ -309,7 +309,7 @@ function _() {
         children: Chunk345959.map((e, t) => (0, a.jsx)(j, {
           recording: e,
           playing: e === _,
-          onPlay: B,
+          onPlay: z,
           onStop: G
         }, t))
       })]

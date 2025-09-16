@@ -49,14 +49,14 @@ function R(e) {
   }, [t]), (0, w.Wj)(t);
   let L = (0, a.e7)([_.Z], () => _.Z.getStateForGuild(t)),
     M = (0, x.Z)(t),
-    D = o.useRef(false),
+    G = o.useRef(false),
     {
-      shouldShow: G,
+      shouldShow: D,
       modalConfig: V
     } = (0, y.K)(t, "GuildPowerupsOverview"),
     B = null == i && null != V,
     W = [];
-  G && B && W.push(s.z.VANITY_URL_POWERUP_ROLLBACK_MODAL);
+  D && B && W.push(s.z.VANITY_URL_POWERUP_ROLLBACK_MODAL);
   let [F, K] = (0, u.US)(W), z = o.useMemo(() => U.reduce((e, t) => {
     let n = null == L ? true : L.powerupCatalog[t];
     if (null == n) return e;
@@ -65,25 +65,25 @@ function R(e) {
       type: t,
       listings: r
     }), e
-  }, []), [null == L ? true : L.powerupCatalog, R]), X = z.flatMap(e => e.listings).filter(e => "multiPerk" === e.type).map(e => e.group), H = (0, Z.f)(X, t);
+  }, []), [null == L ? true : L.powerupCatalog, R]), X = z.flatMap(e => e.listings).filter(e => "multiPerk" === e.type).map(e => e.group), H = (0, N.f)(X, t);
   return (o.useEffect(() => {
-    if (null != i && !D.current)
+    if (null != i && !G.current)
       for (let e of z)
         for (let n of e.listings) {
           if (("singleLevel" === n.type || "singlePerk" === n.type) && n.powerup.skuId === i) {
-            (0, P.KE)(t, n.powerup), D.current = true;
+            (0, P.KE)(t, n.powerup), G.current = true;
             return
           }
           if ("multiPerk" === n.type && (n.group === i || n.powerups.some(e => e.skuId === i))) {
-            D.current = true;
+            G.current = true;
             let e = H[n.group];
             if (null == e) return;
             e.openModal(n.powerups, {
               onModalClose: () => {
                 let e = new URL(window.location.href);
-                e.searchParams.delete(N.am);
+                e.searchParams.delete(S.am);
                 let t = e.pathname + e.search + e.hash;
-                (0, p.dL)(t), D.current = false
+                (0, p.dL)(t), G.current = false
               }
             });
             return
@@ -117,7 +117,7 @@ function R(e) {
       }, t))
     }, {
       onCloseCallback: () => {
-        K(S.L.USER_DISMISS)
+        K(Z.L.USER_DISMISS)
       },
       modalKey: "dismissible_content_".concat(F)
     })
@@ -146,16 +146,16 @@ function R(e) {
             description: a
           } = function(e) {
             switch (e) {
-              case N.Us.LEVEL:
+              case S.Us.LEVEL:
                 return {
                   title: O.intl.string(k.default["TXY/b2"]), description: O.intl.string(k.default.aJv4PD)
                 };
-              case N.Us.PERK:
+              case S.Us.PERK:
                 return {
                   title: O.intl.string(k.default.TV3Vm5), description: O.intl.string(k.default.STx9ho)
                 }
             }
-          }(n), s = n === N.Us.LEVEL ? c.zJl : "div";
+          }(n), s = n === S.Us.LEVEL ? c.zJl : "div";
           return (0, r.jsxs)("div", {
             className: A.powerupsSection,
             children: [(0, r.jsxs)("div", {
@@ -172,7 +172,7 @@ function R(e) {
             }), (0, r.jsx)(s, {
               orientation: "horizontal",
               className: l()(A.powerupContainer, A.powerupHorizontalPadding, {
-                [A.powerupsLevelContainer]: n === N.Us.LEVEL
+                [A.powerupsLevelContainer]: n === S.Us.LEVEL
               }),
               fade: true,
               children: o.map((e, n) => {

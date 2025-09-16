@@ -42,7 +42,7 @@ function C(e) {
   b && j.push(l.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION);
   let [I, T] = (0, a.ZT)(j, t), P = null != I && null != E, y = [];
   P || h || y.push(l.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK);
-  let [w, Z] = (0, a.US)(y), N = (e => {
+  let [w, N] = (0, a.US)(y), S = (e => {
     let n = [];
     return h && n.push((0, r.jsx)(p.Z, {
       guildId: t,
@@ -53,15 +53,15 @@ function C(e) {
         T(e)
       }
     }, "rollback-notification")), null != e && e === l.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK && n.push((0, r.jsx)(u.Z, {
-      markAsDismissed: Z
+      markAsDismissed: N
     }, "info-card")), n
   })(w);
-  return 0 !== N.length || n ? (0, r.jsxs)("div", {
+  return 0 !== S.length || n ? (0, r.jsxs)("div", {
     className: _.container,
     children: [(0, r.jsx)(o.xvT, {
       variant: "eyebrow",
       color: "text-secondary",
       children: v.intl.string(f.default["3FRira"])
-    }), n && (0, r.jsx)(x, {}), N.map(e => e)]
+    }), n && (0, r.jsx)(x, {}), S.map(e => e)]
   }) : null
 }

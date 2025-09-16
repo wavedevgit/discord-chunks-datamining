@@ -141,7 +141,7 @@ function eh(e) {
       id: "overlay",
       name: "Overlay v3",
       group: es.v0.GAMES,
-      render: () => (0, a.jsx)(B.Z, {})
+      render: () => (0, a.jsx)(z.Z, {})
     }), e.push({
       id: "slayer_sdk",
       name: "Slayer SDK",
@@ -260,7 +260,7 @@ function eh(e) {
       id: "offers",
       name: "Offers",
       group: es.v0.PREMIUM,
-      render: () => (0, a.jsx)(z.Z, {})
+      render: () => (0, a.jsx)(B.Z, {})
     }), e.push({
       id: "payments",
       name: "Payments",
