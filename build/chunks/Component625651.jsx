@@ -1,7 +1,7 @@
 /** Chunk was on 88856 **/
 /** chunk id: 625651, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => T,
+  default: () => h,
   f: () => _
 });
 var Chunk951288 = require("./951288.js"),
@@ -118,22 +118,22 @@ function _(e) {
   }), t))
 }
 
-function T(e) {
+function h(e) {
   var {
     guildId: t,
     powerup: n
   } = e, c = I(e, ["guildId", "powerup"]);
   let {
-    onDeactivate: T,
-    error: h,
+    onDeactivate: h,
+    error: T,
     isLoading: w
   } = (0, O.ZP)(t, n), {
     onClose: S
   } = c, E = o.useCallback(e => {
-    T(e).then(() => {
+    h(e).then(() => {
       null == S || S()
     })
-  }, [S, T]), P = function(e, t) {
+  }, [S, h]), P = function(e, t) {
     let n = (0, i.e7)([u.Z], () => u.Z.getMemberCount(e)),
       c = (0, l.Z)(e),
       m = (0, i.e7)([f.Z], () => {
@@ -203,7 +203,7 @@ function T(e) {
       }
     })(),
     warningText: P,
-    error: h,
+    error: T,
     isLoading: w,
     onDeactivate: E
   }, c))

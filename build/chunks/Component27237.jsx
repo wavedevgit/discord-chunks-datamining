@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk237522 = require("./237522.js"),
   Chunk259913 = require("./259913.js");
 
-function j(e) {
+function E(e) {
   let t, {
     active: n,
     nextActive: o,
@@ -46,7 +46,7 @@ function j(e) {
   })
 }
 
-function E(e) {
+function j(e) {
   let {
     isActive: t,
     index: n
@@ -93,7 +93,7 @@ function T(e) {
     guildId: t,
     powerup: i,
     className: C.card,
-    children: [(0, r.jsx)(j, {
+    children: [(0, r.jsx)(E, {
       position: 0 === n ? "start" : null == l ? "end" : "middle",
       active: c,
       nextActive: null != l ? _ : true
@@ -105,7 +105,7 @@ function T(e) {
         guildId: t,
         powerup: i
       }),
-      children: (0, r.jsx)(E, {
+      children: (0, r.jsx)(j, {
         isActive: c,
         index: n
       })

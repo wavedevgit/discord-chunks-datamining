@@ -5,7 +5,8 @@ require.d(exports, {
   LG: () => x,
   NE: () => b,
   g$: () => p,
-  po: () => m
+  po: () => m,
+  s9: () => f
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -94,6 +95,17 @@ function b(e, t, n, r) {
     body: {
       game_server_name: n,
       game_server_region: r
+    },
+    rejectWithError: true,
+    oldFormErrors: true
+  })
+}
+
+function f(e, t, n) {
+  return a.tn.del({
+    url: u.ANM.GUILD_POWERUP_TOGGLE(e, t),
+    query: {
+      entitlement_id: n
     },
     rejectWithError: true,
     oldFormErrors: true

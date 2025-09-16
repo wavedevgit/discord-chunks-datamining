@@ -20,17 +20,18 @@ var Chunk951288 = require("./951288.js"),
 
 function x() {
   let {
-    portkeyGames: e,
-    instances: n,
-    setPortkeyInstance: t,
-    setCurrentGame: a,
-    onNext: x
-  } = (0, Chunk183369.aj)(), b = Chunk647438.useCallback(e => {
-    a(e), x()
-  }, [Chunk120356, x]), j = Chunk647438.useCallback(e => {
-    t(e), x()
-  }, [require, x]), h = exports.length >= Chunk473682.zI, _ = exports.length > 0;
-  return 0 === Object.values(module).length ? (0, Chunk951288.jsx)("div", {
+    guildId: e,
+    portkeyGames: n,
+    instances: t,
+    setPortkeyInstance: a,
+    setCurrentGame: x,
+    onNext: b
+  } = (0, Chunk183369.aj)(), j = Chunk647438.useCallback(e => {
+    x(e), b()
+  }, [x, b]), h = Chunk647438.useCallback(e => {
+    a(e), b()
+  }, [Chunk120356, b]), _ = require.length >= Chunk473682.zI, C = require.length > 0;
+  return 0 === Object.values(exports).length ? (0, Chunk951288.jsx)("div", {
     className: Chunk782991.loadingContainer,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {
       type: Chunk481060.RAz.SPINNING_CIRCLE
@@ -45,18 +46,19 @@ function x() {
         variant: "text-sm/medium",
         children: Chunk388032.intl.string(Chunk401561.default.hkWuWF)
       })]
-    }), _ && (0, Chunk951288.jsxs)("div", {
+    }), C && (0, Chunk951288.jsxs)("div", {
       className: Chunk782991.gameSection,
       children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-md/semibold",
         children: Chunk388032.intl.string(Chunk401561.default.wzC4ws)
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk782991.gameInstanceContainer,
-        children: exports.map((e, n) => (0, i.jsx)(c.Z, {
-          gameInstance: e,
-          onClick: j
-        }, "instance-".concat(e.id, "-").concat(n)))
-      }), h && (0, Chunk951288.jsx)(Chunk494620.Z, {
+        children: require.map((n, t) => (0, i.jsx)(c.Z, {
+          guildId: e,
+          gameInstance: n,
+          onClick: h
+        }, "instance-".concat(n.id, "-").concat(t)))
+      }), _ && (0, Chunk951288.jsx)(Chunk494620.Z, {
         className: Chunk782991.maxInstancesWarning,
         children: (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/medium",
@@ -67,17 +69,17 @@ function x() {
       })]
     }), (0, Chunk951288.jsxs)("div", {
       className: l()(Chunk782991.gameSection, {
-        [Chunk782991.disabled]: h
+        [Chunk782991.disabled]: _
       }),
-      children: [_ && (0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [C && (0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-md/semibold",
         children: Chunk388032.intl.string(Chunk401561.default.l4UdiY)
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk782991.gameContainer,
-        children: Object.values(module).map((e, n) => (0, i.jsx)(d.Z, {
+        children: Object.values(exports).map((e, n) => (0, i.jsx)(d.Z, {
           game: e,
-          disabled: h,
-          onClick: b
+          disabled: _,
+          onClick: j
         }, "game-".concat(e.id, "-").concat(n)))
       })]
     }), (0, Chunk951288.jsxs)(Chunk422663.ok, {

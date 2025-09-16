@@ -106,7 +106,7 @@ let i = [l("1", "Portkey Test #1"), l("2", "Portkey Test #2"), l("3", "Portkey T
     serverIP: "127.0.0.1",
     instructions: s,
     gameServerPanelUrl: "https://google.com",
-    entitlementId: "1"
+    entitlementId: "2"
   }, {
     id: "3",
     gameId: "3",
@@ -122,7 +122,7 @@ let i = [l("1", "Portkey Test #1"), l("2", "Portkey Test #2"), l("3", "Portkey T
     serverIP: "127.0.0.1",
     instructions: s,
     gameServerPanelUrl: "https://google.com",
-    entitlementId: "1"
+    entitlementId: "3"
   }, {
     id: "4",
     gameId: "4",
@@ -138,7 +138,7 @@ let i = [l("1", "Portkey Test #1"), l("2", "Portkey Test #2"), l("3", "Portkey T
     serverIP: "127.0.0.1",
     instructions: s,
     gameServerPanelUrl: "https://google.com",
-    entitlementId: "1"
+    entitlementId: "4"
   }, {
     id: "5",
     gameId: "5",
@@ -154,7 +154,7 @@ let i = [l("1", "Portkey Test #1"), l("2", "Portkey Test #2"), l("3", "Portkey T
     serverIP: "127.0.0.1",
     instructions: s,
     gameServerPanelUrl: "https://google.com",
-    entitlementId: "1"
+    entitlementId: "5"
   }, {
     id: "6",
     gameId: "6",
@@ -170,5 +170,5 @@ let i = [l("1", "Portkey Test #1"), l("2", "Portkey Test #2"), l("3", "Portkey T
     serverIP: "127.0.0.1",
     instructions: s,
     gameServerPanelUrl: "https://google.com",
-    entitlementId: "1"
+    entitlementId: "6"
   }]

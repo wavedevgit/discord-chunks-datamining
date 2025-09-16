@@ -36,11 +36,11 @@ function b(e) {
   let k = (0, a.e7)([g.Z], () => g.Z.getStateForGuild(C)),
     T = (0, a.e7)([c.Z], () => c.Z.getGuild(C)),
     {
-      analyticsLocations: E
+      analyticsLocations: I
     } = (0, l.ZP)(w),
-    [I, Z] = r.useState(null != (t = N.initialStep) ? t : Object.keys(N.steps)[0]),
+    [E, Z] = r.useState(null != (t = N.initialStep) ? t : Object.keys(N.steps)[0]),
     G = (0, u.Td)(C, true),
-    D = N.steps[I],
+    D = N.steps[E],
     [B, L] = r.useState(null != (d = null == O ? true : O.id) ? d : null == y ? true : y.gameId),
     M = r.useMemo(() => {
       var e;
@@ -72,7 +72,7 @@ function b(e) {
       0 !== F && null != T && null != M && null != V && (G < F ? (0, o.u)({
         analyticsLocation: w,
         numberOfBoostsToAdd: F - G,
-        analyticsLocations: E,
+        analyticsLocations: I,
         guild: T,
         intent: s.P.PERK,
         onLoading: e => {
@@ -86,7 +86,7 @@ function b(e) {
       }) : (0, m.NE)(T.id, V, K, Q).then(() => {
         P(), (0, p.Z)(T.id, M)
       }))
-    }, [E, T, G, V, w, M, K, Q, P, F]),
+    }, [I, T, G, V, w, M, K, Q, P, F]),
     en = r.useCallback(e => {
       switch (e.type) {
         case "close":
@@ -108,7 +108,7 @@ function b(e) {
   return (0, i.jsx)(v.Provider, {
     value: {
       guildId: C,
-      step: I,
+      step: E,
       stepAction: D,
       stepLoading: $,
       onBack: et,

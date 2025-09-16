@@ -37,18 +37,18 @@ function x(e) {
     return (null == (e = s.Z.getGuild(t)) ? true : e.features.has(g.oNc.PREMIUM_TIER_3_OVERRIDE)) === true
   }), x = (0, c.Z)(t), b = x.length > 0, {
     shouldShow: C,
-    notificationConfig: j
-  } = (0, m._)(t, "GuildPowerupNotificationContainer"), E = [];
-  C && E.push(l.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION);
-  let [T, P] = (0, a.ZT)(E, t), I = null != T && null != j, y = [];
+    notificationConfig: E
+  } = (0, m._)(t, "GuildPowerupNotificationContainer"), j = [];
+  C && j.push(l.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION);
+  let [T, P] = (0, a.ZT)(j, t), I = null != T && null != E, y = [];
   I || b || y.push(l.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK);
-  let [S, w] = (0, a.US)(y), N = (e => {
+  let [S, w] = (0, a.US)(y), O = (e => {
     let n = [];
     return b && n.push((0, r.jsx)(p.Z, {
       guildId: t,
       powerups: x
     }, "expiring-powerups")), I && n.push((0, r.jsx)(d.Z, {
-      notificationConfig: j,
+      notificationConfig: E,
       markAsDismissed: e => {
         P(e)
       }
@@ -56,12 +56,12 @@ function x(e) {
       markAsDismissed: w
     }, "info-card")), n
   })(S);
-  return 0 !== N.length || n ? (0, r.jsxs)("div", {
+  return 0 !== O.length || n ? (0, r.jsxs)("div", {
     className: _.container,
     children: [(0, r.jsx)(o.xvT, {
       variant: "eyebrow",
       color: "text-secondary",
       children: v.intl.string(f.default["3FRira"])
-    }), n && (0, r.jsx)(h, {}), N.map(e => e)]
+    }), n && (0, r.jsx)(h, {}), O.map(e => e)]
   }) : null
 }

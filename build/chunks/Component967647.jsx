@@ -6,12 +6,12 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js");
 
-function a(e) {
+function a(e, n) {
   (0, r.ZDy)(async () => {
     let {
-      default: n
+      default: r
     } = await t.e("88856").then(t.bind(t, 862065));
-    return t => (0, i.jsx)(n, function(e) {
+    return t => (0, i.jsx)(r, function(e) {
       for (var n = 1; n < arguments.length; n++) {
         var t = null != arguments[n] ? arguments[n] : {},
           i = Object.keys(t);
@@ -29,7 +29,8 @@ function a(e) {
       }
       return e
     }({
-      gameInstance: e
+      guildId: e,
+      gameInstance: n
     }, t))
   })
 }

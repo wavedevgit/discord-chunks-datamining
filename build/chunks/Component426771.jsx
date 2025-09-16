@@ -25,7 +25,7 @@ function _(e) {
       group: b,
       powerups: C
     } = e,
-    [j, E] = o.useState(false),
+    [E, j] = o.useState(false),
     T = (0, c.Gv)(x, C),
     P = (0, i.e7)([s.Z], () => s.Z.useReducedMotion),
     I = (0, d.Z)(b, x);
@@ -45,14 +45,14 @@ function _(e) {
     type: "active",
     statusText: f.intl.string(g.default.FFLkm5)
   });
-  let N = T.reduce((e, t) => {
+  let O = T.reduce((e, t) => {
       let {
         type: n,
         powerup: r
       } = t;
       return n === m.A3.POWERUP_ACTIVATED ? e + r.cost : e
     }, 0),
-    O = T.reduce((e, t) => {
+    N = T.reduce((e, t) => {
       var n, r;
       let {
         powerup: o
@@ -66,9 +66,9 @@ function _(e) {
       } = t;
       return e + (null != (n = null == r ? true : r.cost) ? n : 0)
     }, 0),
-    k = y ? N : O,
+    k = y ? O : N,
     A = !y && Z > k ? "+" : true,
-    U = !P && j ? I.image.animatedUrl : I.image.staticUrl,
+    U = !P && E ? I.image.animatedUrl : I.image.staticUrl,
     R = null != I.viewCta && "" !== I.viewCta ? I.viewCta : f.intl.string(g.default["27GkOj"]),
     L = null != I.viewCtaTooltip && "" !== I.viewCtaTooltip ? I.viewCtaTooltip : true;
   return (0, r.jsxs)(u.aB, {
@@ -76,8 +76,8 @@ function _(e) {
     isActive: y,
     badge: I.badge,
     onClick: () => I.openModal(C),
-    onMouseOver: () => E(true),
-    onMouseLeave: () => E(false),
+    onMouseOver: () => j(true),
+    onMouseLeave: () => j(false),
     children: [(0, r.jsx)("img", {
       alt: "",
       src: U,

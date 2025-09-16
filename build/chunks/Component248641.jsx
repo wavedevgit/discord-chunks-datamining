@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 248641, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => E
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk530045 = require("./530045.js"),
   Chunk517862 = require("./517862.js");
 
-function j(e) {
+function E(e) {
   let {
     guildId: t
   } = e, n = (0, s.e7)([m.Z], () => m.Z.getStateForGuild(t)), i = o.useMemo(() => {
@@ -31,7 +31,7 @@ function j(e) {
       type: "active",
       statusText: _.intl.string(f.default.FFLkm5)
     }
-  }, [null == n ? true : n.instances]), j = (0, p.d)((null == i ? true : i.type) === "active"), E = o.useMemo(() => {
+  }, [null == n ? true : n.instances]), E = (0, p.d)((null == i ? true : i.type) === "active"), j = o.useMemo(() => {
     if ((null == n ? true : n.catalog) == null) return 0;
     let e = Object.values(n.catalog);
     return 0 === e.length ? 0 : Math.min(...e.map(e => e.baseCost))
@@ -55,15 +55,15 @@ function j(e) {
       })]
     }), (0, r.jsx)(d.Q9, {
       title: _.intl.string(v.default["fjt/vr"]),
-      textColor: j,
+      textColor: E,
       footer: (0, r.jsx)(d.uf, {
-        cost: E,
+        cost: j,
         costDecorator: "+",
         status: i
       }),
       children: (0, r.jsx)(a.xvT, {
         className: h.description,
-        color: j,
+        color: E,
         variant: "text-sm/medium",
         children: _.intl.string(v.default.P7VSCg)
       })
