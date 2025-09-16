@@ -45,8 +45,8 @@ function y(e, t) {
   var n, d, h, O;
   let y = (0, l.e7)([o.Z], () => o.Z.getGuild(e)),
     _ = (0, l.e7)([a.Z], () => a.Z.hasLayers()),
-    v = null != (O = (0, u.Z)(e)) && O,
-    j = (0, c.q8)(e, t),
+    j = null != (O = (0, u.Z)(e)) && O,
+    v = (0, c.q8)(e, t),
     x = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
     C = (null == x || null == (n = x.unlockedPowerups) ? true : n[i.A$]) != null,
     E = null == x || null == (d = x.allPowerups) ? true : d[i.A$],
@@ -55,7 +55,7 @@ function y(e, t) {
     {
       onActivate: I
     } = (0, f._C)(e, P),
-    N = !_ && v && j && C && null != E && null != S && null != P && null != y,
+    N = !_ && j && v && C && null != E && null != S && null != P && null != y,
     Z = r.useCallback(e => {
       I(e)
     }, [I]),

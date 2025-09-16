@@ -190,7 +190,7 @@ let G = Chunk647438.memo(function(e) {
         onClick: en(K.applicationId, K.location),
         icon: u.PBZ
       }),
-      eg = null == g ? null : (0, r.jsx)(v.Z, {}),
+      eg = null == g ? null : (0, r.jsx)(j.Z, {}),
       em = ed && ea && !ec ? (0, r.jsx)(B, {
         runningGame: W,
         startAuthorization: es,
@@ -209,7 +209,7 @@ let G = Chunk647438.memo(function(e) {
       }),
       e_ = (() => {
         let e = [];
-        return ee && ec && !(!ey || !eO) && e.push(s.z.ACCOUNT_LINK_INVITE_FRIENDS), (0, r.jsx)(j.ZP, {
+        return ee && ec && !(!ey || !eO) && e.push(s.z.ACCOUNT_LINK_INVITE_FRIENDS), (0, r.jsx)(v.ZP, {
           contentTypes: e,
           groupName: A.R.ACCOUNT_NAME_ZONE,
           children: e => {

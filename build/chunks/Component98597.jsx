@@ -66,7 +66,7 @@ function I(e, t) {
 }
 
 function N(e, t, n) {
-  return null != t && !!t && !(0, j.ig)(n, e.type)
+  return null != t && !!t && !(0, v.ig)(n, e.type)
 }
 
 function Z(e, t) {
@@ -116,7 +116,7 @@ function T(e) {
     forceShowButtons: l,
     hasChannelInfo: o = false
   } = e;
-  if ((0, s.e7)([_.Z, v.Z], () => n || v.Z.getGuildId() === x.I_8 || !_.Z.can(x.Plq.MANAGE_CHANNELS, t) && !_.Z.can(x.Plq.MANAGE_ROLES, t) && !_.Z.can(x.Plq.MANAGE_WEBHOOKS, t) || (0, b.r8)(t.type) && !_.Z.can(x.Plq.VIEW_CHANNEL, t) || t.isGuildVocal() && !_.Z.can(x.Plq.CONNECT, t) || !b.dF.has(t.type) || t.isModeratorReportChannel())) return null;
+  if ((0, s.e7)([_.Z, j.Z], () => n || j.Z.getGuildId() === x.I_8 || !_.Z.can(x.Plq.MANAGE_CHANNELS, t) && !_.Z.can(x.Plq.MANAGE_ROLES, t) && !_.Z.can(x.Plq.MANAGE_WEBHOOKS, t) || (0, b.r8)(t.type) && !_.Z.can(x.Plq.VIEW_CHANNEL, t) || t.isGuildVocal() && !_.Z.can(x.Plq.CONNECT, t) || !b.dF.has(t.type) || t.isModeratorReportChannel())) return null;
 
   function d() {
     u.ZP.open(t.id)
@@ -157,20 +157,20 @@ function A(e) {
     tabIndex: u,
     forceShowButtons: h,
     hasChannelInfo: b = false
-  } = e, v = (0, p._k)({
+  } = e, j = (0, p._k)({
     location: "channel_base"
-  }), j = (0, s.e7)([y.Z], () => y.Z.getGuild(t.getGuildId())), S = (0, s.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), N = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), Z = (0, s.e7)([_.Z], () => (0, f.b)(_.Z, j, t, S)), w = (0, s.e7)([_.Z], () => (null == t ? true : t.type) === x.d4z.GUILD_VOICE && v.isVoiceChannelEntrypointEnabled ? C.intl.string(C.t["EE+P0N"]) : v.isTextChannelEntrypointEnabled ? C.intl.string(C.t["0jeAXl"]) : _.Z.can(x.Plq.CREATE_INSTANT_INVITE, t) ? C.intl.string(C.t.zJrgTE) : C.intl.string(C.t.Sd8Ix8)), T = l.useRef(null);
+  }), v = (0, s.e7)([y.Z], () => y.Z.getGuild(t.getGuildId())), S = (0, s.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), N = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), Z = (0, s.e7)([_.Z], () => (0, f.b)(_.Z, v, t, S)), w = (0, s.e7)([_.Z], () => (null == t ? true : t.type) === x.d4z.GUILD_VOICE && j.isVoiceChannelEntrypointEnabled ? C.intl.string(C.t["EE+P0N"]) : j.isTextChannelEntrypointEnabled ? C.intl.string(C.t["0jeAXl"]) : _.Z.can(x.Plq.CREATE_INSTANT_INVITE, t) ? C.intl.string(C.t.zJrgTE) : C.intl.string(C.t.Sd8Ix8)), T = l.useRef(null);
   if (o || !Z || t.isModeratorReportChannel()) return null;
 
   function A() {
-    if (null != j) {
+    if (null != v) {
       let e = O.Z.getAllActiveStreams().filter(e => e.state !== x.jm8.ENDED && e.channelId === t.id);
       (0, c.ZDy)(async () => {
         let {
           default: r
         } = await Promise.all([n.e("7654"), n.e("62292")]).then(n.bind(n, 560114));
         return n => (0, i.jsx)(r, I(P({}, n), {
-          guild: j,
+          guild: v,
           channel: t,
           streamUserId: 1 === e.length ? e[0].ownerId : null,
           source: x.t4x.GUILD_CHANNELS,
@@ -179,7 +179,7 @@ function A(e) {
       })
     }
   }
-  let R = [v.isVoiceChannelEntrypointEnabled, v.isTextChannelEntrypointEnabled].some(Boolean) ? c.oLu : c.ejJ,
+  let R = [j.isVoiceChannelEntrypointEnabled, j.isTextChannelEntrypointEnabled].some(Boolean) ? c.oLu : c.ejJ,
     D = (0, i.jsx)(R, {
       size: "xs",
       className: E.actionIcon,

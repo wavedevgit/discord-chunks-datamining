@@ -69,9 +69,9 @@ let O = Chunk647438.memo(function(e) {
   let {
     id: y,
     name: _,
-    color: v,
-    children: j
-  } = t, x = j.map(e => e.id), C = (0, s.Z)(e => e.guildId), E = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(y)), S = function(e) {
+    color: j,
+    children: v
+  } = t, x = v.map(e => e.id), C = (0, s.Z)(e => e.guildId), E = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(y)), S = function(e) {
     let t = e.children.map(e => {
         let t = e.id,
           n = d.Z.getGuild(t);
@@ -99,11 +99,11 @@ let O = Chunk647438.memo(function(e) {
       return t => (0, r.jsx)(e, b(m({}, t), {
         folderId: y,
         folderName: _,
-        folderColor: v,
+        folderColor: j,
         unread: Z || I > 0
       }))
     })
-  }, [y, _, v, Z, I]);
+  }, [y, _, j, Z, I]);
   return (0, r.jsx)(f.Z, b(m({}, O), {
     folderNode: t,
     expanded: E,
