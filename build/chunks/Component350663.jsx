@@ -63,8 +63,8 @@ let E = {
       tileWidth: n,
       tileHeight: l,
       layout: _,
-      locked: x,
-      activeStreams: S,
+      locked: S,
+      activeStreams: x,
       streamParticipants: I,
       participantsVersion: C,
       pinned: j,
@@ -74,10 +74,10 @@ let E = {
       key: e.user.id,
       width: n,
       height: l,
-      locked: x,
+      locked: S,
       widgetId: t,
       pinned: j
-    })), Z = (0, c.Z)(n), T = (0, c.Z)(x), P = _ === g.C5.VERTICAL, A = x || T !== x || Z !== n, D = r.useMemo(() => {
+    })), Z = (0, c.Z)(n), T = (0, c.Z)(S), P = _ === g.C5.VERTICAL, A = S || T !== S || Z !== n, D = r.useMemo(() => {
       let e = 0,
         t = 0;
       return P ? N.map((t, n) => b(v({}, t), {
@@ -128,7 +128,7 @@ let E = {
       },
       config: E,
       trail: 100 * !A
-    }, A ? "animate-never" : "respect-motion-settings"), M = (0, p.ee)(() => new Set(I.map(e => e.user.id)), [I, C]), z = (0, p.ee)(() => new Set(I.filter(e => S.has((0, u.V9)(e.stream))).map(e => e.user.id)), [I, S, C]);
+    }, A ? "animate-never" : "respect-motion-settings"), M = (0, p.ee)(() => new Set(I.map(e => e.user.id)), [I, C]), z = (0, p.ee)(() => new Set(I.filter(e => x.has((0, u.V9)(e.stream))).map(e => e.user.id)), [I, x, C]);
     return r.useEffect(() => {
       0 !== M.size && (0, p.zi)(y.Odu.GO_LIVE, {
         locked: d.default.isInstanceLocked(),

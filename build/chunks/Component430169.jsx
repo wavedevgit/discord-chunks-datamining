@@ -145,7 +145,7 @@ function P(e) {
       children: (0, i.jsx)(o.P3F, {
         onClick: s,
         className: N.watchIconButton,
-        children: (0, i.jsx)(S.a, {
+        children: (0, i.jsx)(x.a, {
           size: "sm",
           color: "green" === c ? "white" : o.TVs.colors.INTERACTIVE_ACTIVE.css
         })
@@ -160,7 +160,7 @@ function A(e, t, n) {
   if (null == o) return null;
   let {
     designVariant: u
-  } = (0, _.lj)("OverlayV3StreamWatchNudge"), f = null == n ? true : n.application_id, S = g.Z.getChannel(t), w = null != f ? d.Z.getApplication(f) : null, N = null != f ? y.Z.getDetectableGame(f) : null, Z = null != f ? h.ZP.getRunningGames().find(e => e.id === f) : null, A = null != (l = null != (r = null == Z ? true : Z.name) ? r : null == N ? true : N.name) ? l : null == w ? true : w.name, D = (0, b.oY)(null == S ? true : S.guild_id, null == S ? true : S.id, o), {
+  } = (0, _.lj)("OverlayV3StreamWatchNudge"), f = null == n ? true : n.application_id, x = g.Z.getChannel(t), w = null != f ? d.Z.getApplication(f) : null, N = null != f ? y.Z.getDetectableGame(f) : null, Z = null != f ? h.ZP.getRunningGames().find(e => e.id === f) : null, A = null != (l = null != (r = null == Z ? true : Z.name) ? r : null == N ? true : N.name) ? l : null == w ? true : w.name, D = (0, b.oY)(null == x ? true : x.guild_id, null == x ? true : x.id, o), {
     trackView: k,
     trackClick: R
   } = (0, I.R)(C.n0.StreamWatchNudge, {
@@ -202,7 +202,7 @@ function A(e, t, n) {
     onNotificationClick: (n, i) => {
       R("overlay-watch-stream");
       let [r] = O.Z.getWidgetsByType(j.Odu.GO_LIVE), l = p.Z.getStreamParticipants(t).find(t => t.user.id === e);
-      null != r && null != l && ((0, x.gI)(l.stream, m.L.COVER), (0, c.rn)(l.stream, {
+      null != r && null != l && ((0, S.gI)(l.stream, m.L.COVER), (0, c.rn)(l.stream, {
         forceMultiple: true,
         noFocus: true
       }), (0, a.xh)(r.id, true), (0, a.n6)(r.id), (0, E.Ws)(j.Odu.GO_LIVE, {

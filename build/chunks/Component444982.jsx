@@ -1,7 +1,7 @@
 /** Chunk was on 46290 **/
 /** chunk id: 444982, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk239091 = require("./239091.js"),
@@ -42,7 +42,7 @@ function _(e) {
   return e
 }
 
-function x(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -54,7 +54,7 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = {
+let x = {
   [Chunk981631.Odu.VIDEO]: {
     renderWidget(e) {
       let {
@@ -86,7 +86,7 @@ let S = {
             let {
               default: t
             } = await n.e("26775").then(n.bind(n, 740579));
-            return n => (0, i.jsx)(t, x(_({}, n), {
+            return n => (0, i.jsx)(t, S(_({}, n), {
               widget: e
             }))
           })
@@ -234,7 +234,7 @@ let S = {
               let {
                 default: t
               } = await n.e("34684").then(n.bind(n, 68738));
-              return n => (0, i.jsx)(t, x(_({}, n), {
+              return n => (0, i.jsx)(t, S(_({}, n), {
                 widget: e
               }))
             })

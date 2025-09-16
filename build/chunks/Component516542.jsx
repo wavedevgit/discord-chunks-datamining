@@ -28,13 +28,13 @@ function v(e) {
     onSend: b
   } = e, E = (0, f.Z)(), {
     placeholder: _,
-    accessibilityLabel: x
+    accessibilityLabel: S
   } = (0, c.Z)({
     channel: v
-  }), [S, I] = r.useState(() => (0, d.H2)()), {
+  }), [x, I] = r.useState(() => (0, d.H2)()), {
     textValue: C,
     richValue: j
-  } = S, [w, N] = r.useState(false), Z = r.useCallback(() => N(true), []), T = r.useCallback(() => N(false), []);
+  } = x, [w, N] = r.useState(false), Z = r.useCallback(() => N(true), []), T = r.useCallback(() => N(false), []);
   (0, s.ZP)(() => {
     (0, a.In)(v.id, {
       section: g.jXE.OVERLAY,
@@ -63,7 +63,7 @@ function v(e) {
       innerClassName: O.textArea,
       onChange: P,
       placeholder: _,
-      accessibilityLabel: x,
+      accessibilityLabel: S,
       channel: v,
       textValue: C,
       richValue: j,

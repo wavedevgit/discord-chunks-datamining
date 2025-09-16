@@ -155,7 +155,7 @@ let k = Chunk647438.memo(function(e) {
       containerRef: f
     } = e, m = "boolean" != typeof c.meta.horizontal || c.meta.horizontal, g = n.length > 0 && null != t && null != u && (!a || c.pinned);
     r.useEffect(() => {
-      (0, x.m3)({
+      (0, S.m3)({
         locked: a,
         pinned: c.pinned,
         widget: c.type,
@@ -229,13 +229,13 @@ function z(e) {
     b = "boolean" != typeof e.widget.meta.horizontal || e.widget.meta.horizontal,
     {
       width: _ = e.width - c,
-      height: x = e.height - c,
+      height: S = e.height - c,
       ref: I
     } = (0, d.ZP)(e.locked, e.widget.pinned),
     {
       participantTileWidth: C,
       visibleParticipants: j
-    } = (0, g.ZB)(b ? _ : x, m, {
+    } = (0, g.ZB)(b ? _ : S, m, {
       tileWidth: w.vZ,
       tileMinWidth: w.mo,
       tileMargin: w.F$,
@@ -247,7 +247,7 @@ function z(e) {
     Z = {
       id: e.widget.id,
       containerSize: {
-        containerHeight: x,
+        containerHeight: S,
         containerWidth: _
       },
       sizeOffset: c,
@@ -295,7 +295,7 @@ function z(e) {
         height: c
       } = M(D(A({}, a), {
         widget: l,
-        operation: S.B.RESIZE_NORTH,
+        operation: x.B.RESIZE_NORTH,
         computedSize: {
           width: r,
           height: i
@@ -323,7 +323,7 @@ function z(e) {
     participants: j,
     participantsVersion: O,
     width: b ? C : null != _ ? _ : e.width,
-    height: b ? null != x ? x : e.height : C,
+    height: b ? null != S ? S : e.height : C,
     containerRef: I
   }))
 }

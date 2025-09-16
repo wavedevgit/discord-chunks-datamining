@@ -64,13 +64,13 @@ let P = e => [e.userId, ... function(e) {
       query: n
     } = e, [l] = (0, a.e7)([C.Z], () => [C.Z.getVoiceStatesForChannel(t.id), C.Z.getVoiceStateVersion()], [t.id], w.Q), [o, c] = r.useState([]);
     (0, O.BO)(n, Object.values(l), c, D);
-    let u = (0, a.Wu)([C.Z, I.default, v.Z, S.Z], () => Object.values(C.Z.getVoiceStatesForChannel(t.id)).map(e => I.default.getUser(e.userId)).filter(j.lm).sort((e, t) => {
+    let u = (0, a.Wu)([C.Z, I.default, v.Z, x.Z], () => Object.values(C.Z.getVoiceStatesForChannel(t.id)).map(e => I.default.getUser(e.userId)).filter(j.lm).sort((e, t) => {
         var i, r, l, a;
         if (o.length > 0 && "" !== n.trim()) {
           if (o.some(t => t.userId === e.id)) return false;
           if (o.some(e => e.userId === t.id)) return 1
         }
-        return S.Z.isFriend(e.id) && !S.Z.isFriend(t.id) ? false : !S.Z.isFriend(e.id) && S.Z.isFriend(t.id) ? 1 : (null != (l = null == (i = v.Z.getUserAffinity(t.id)) ? true : i.vcProbability) ? l : 0) - (null != (a = null == (r = v.Z.getUserAffinity(e.id)) ? true : r.vcProbability) ? a : 0)
+        return x.Z.isFriend(e.id) && !x.Z.isFriend(t.id) ? false : !x.Z.isFriend(e.id) && x.Z.isFriend(t.id) ? 1 : (null != (l = null == (i = v.Z.getUserAffinity(t.id)) ? true : i.vcProbability) ? l : 0) - (null != (a = null == (r = v.Z.getUserAffinity(e.id)) ? true : r.vcProbability) ? a : 0)
       }), [t.id, o, n]),
       d = t.getGuildId(),
       h = Math.max(o.length, 2);
@@ -129,7 +129,7 @@ let P = e => [e.userId, ... function(e) {
       onMouseOver: p,
       onMouseLeave: h,
       query: f
-    } = e, m = (0, a.e7)([b.Z], () => b.Z.getChannel(n), [n]), g = null == m ? true : m.getGuildId(), y = (0, a.e7)([_.Z], () => _.Z.getGuild(g), [g]), O = (0, u.KS)(m, y), v = (null == l ? true : l.id) === n, E = v ? "text-feedback-positive" : r ? "interactive-active" : "text-muted", x = v ? s.TVs.colors.TEXT_FEEDBACK_POSITIVE : r ? s.TVs.colors.INTERACTIVE_ACTIVE : s.TVs.colors.ICON_MUTED;
+    } = e, m = (0, a.e7)([b.Z], () => b.Z.getChannel(n), [n]), g = null == m ? true : m.getGuildId(), y = (0, a.e7)([_.Z], () => _.Z.getGuild(g), [g]), O = (0, u.KS)(m, y), v = (null == l ? true : l.id) === n, E = v ? "text-feedback-positive" : r ? "interactive-active" : "text-muted", S = v ? s.TVs.colors.TEXT_FEEDBACK_POSITIVE : r ? s.TVs.colors.INTERACTIVE_ACTIVE : s.TVs.colors.ICON_MUTED;
     return null == m ? null : (0, i.jsxs)(s.kL8, {
       className: o()(T.channelItemContainer, r && T.channelItemHighlighted),
       "aria-label": m.name,
@@ -146,14 +146,14 @@ let P = e => [e.userId, ... function(e) {
         children: [(0, i.jsxs)("div", {
           className: T.channelItemName,
           children: [null != O ? (0, i.jsx)(O, {
-            color: x,
+            color: S,
             size: "xs",
             className: T.channelIcon
           }) : true, (0, i.jsx)(s.Text, {
             variant: v ? "text-sm/semibold" : "text-sm/medium",
             color: E,
             className: T.channelItemNameText,
-            children: (0, c.F6)(m, I.default, S.Z)
+            children: (0, c.F6)(m, I.default, x.Z)
           })]
         }), (0, i.jsx)(s.Text, {
           variant: v ? "text-xs/semibold" : "text-xs/medium",
@@ -234,26 +234,26 @@ function V(e) {
     friendVoiceChannelIds: c
   } = function() {
     let e = function() {
-        let e = (0, a.Wu)([I.default, S.Z, v.Z], () => S.Z.getFriendIDs().sort((e, t) => {
+        let e = (0, a.Wu)([I.default, x.Z, v.Z], () => x.Z.getFriendIDs().sort((e, t) => {
           var n, i, r, l;
           return null == e && null == t ? 0 : null == e ? 1 : null == t ? false : (null != (r = null == (n = v.Z.getUserAffinity(t)) ? true : n.communicationProbability) ? r : 0) - (null != (l = null == (i = v.Z.getUserAffinity(e)) ? true : i.communicationProbability) ? l : 0)
         }).reduce((e, t) => {
           let n = I.default.getUser(t);
           return null != n && e.push(n), e
         }, []), []);
-        return (0, a.Wu)([C.Z, b.Z, x.Z], () => Array.from(e.map(e => C.Z.getDiscoverableVoiceStateForUser(e.id)).reduce((e, t) => {
+        return (0, a.Wu)([C.Z, b.Z, S.Z], () => Array.from(e.map(e => C.Z.getDiscoverableVoiceStateForUser(e.id)).reduce((e, t) => {
           let n = null == t ? true : t.channelId;
           if (null == n) return e;
           let i = b.Z.getChannel(n);
-          return null != i && x.Z.can(N.Plq.CONNECT, i) && e.add(n), e
+          return null != i && S.Z.can(N.Plq.CONNECT, i) && e.add(n), e
         }, new Set)).filter(j.lm), [e])
       }(),
-      t = (0, a.Wu)([g.Z, b.Z, x.Z], () => {
+      t = (0, a.Wu)([g.Z, b.Z, S.Z], () => {
         let t = g.Z.getChannelHistory(),
           n = new Set(e);
         return Array.from(new Set(t.reduce((e, t) => {
           let i = b.Z.getChannel(t);
-          return null != i && x.Z.can(N.Plq.CONNECT, i) && !n.has(t) && e.push(t), e
+          return null != i && S.Z.can(N.Plq.CONNECT, i) && !n.has(t) && e.push(t), e
         }, [])))
       }, [e]);
     return {
@@ -295,14 +295,14 @@ function W(e) {
     currentVoiceChannel: l,
     onClose: o,
     onSelect: c
-  } = e, u = (0, a.Wu)([_.Z, E.ZP, C.Z, S.Z, x.Z], () => _.Z.getGuildsArray().reduce((e, t) => [...e, ...E.ZP.getChannels(t.id)[E.Zb].filter(e => x.Z.can(N.Plq.VIEW_CHANNEL, e.channel) && x.Z.can(N.Plq.CONNECT, e.channel)).map(e => {
+  } = e, u = (0, a.Wu)([_.Z, E.ZP, C.Z, x.Z, S.Z], () => _.Z.getGuildsArray().reduce((e, t) => [...e, ...E.ZP.getChannels(t.id)[E.Zb].filter(e => S.Z.can(N.Plq.VIEW_CHANNEL, e.channel) && S.Z.can(N.Plq.CONNECT, e.channel)).map(e => {
     let {
       channel: t
     } = e;
     return t
   })], []).map(e => ({
     channel: e,
-    voiceStates: Object.values(C.Z.getVoiceStatesForChannel(e.id)).filter(e => S.Z.isFriend(e.userId))
+    voiceStates: Object.values(C.Z.getVoiceStatesForChannel(e.id)).filter(e => x.Z.isFriend(e.userId))
   })), []), [d, p] = r.useState(""), [h, f] = r.useState([]);
   (0, O.BO)(d, u, f, A);
   let m = r.useCallback(e => {

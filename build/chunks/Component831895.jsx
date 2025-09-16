@@ -18,10 +18,10 @@ var Chunk951288 = require("./951288.js"),
 function x(e) {
   var t, n, l, x;
   let {
-    defaultCategory: _,
-    onCategoryChange: h,
-    className: f
-  } = e, [m, j] = i.useState(_), [L, b] = i.useState(null), g = (0, C.Z)(), S = i.useMemo(() => [{
+    defaultCategory: h,
+    onCategoryChange: f,
+    className: _
+  } = e, [m, j] = i.useState(h), [g, b] = i.useState(null), L = (0, C.Z)(), y = i.useMemo(() => [{
     name: u.intl.string(u.t["6Zuiv7"]),
     value: d.KN.Trick,
     key: "Trick",
@@ -41,16 +41,16 @@ function x(e) {
     }),
     onMouseEnter: () => b(d.KN.Treat),
     onMouseLeave: () => b(null)
-  }], []), y = i.useCallback(e => {
-    j(e.value), h(e.value)
-  }, [h]), v = null == g || null == (n = g.segmentedControlAnimations) || null == (t = n.trick) ? true : t.getAnimationData, E = null == g || null == (x = g.segmentedControlAnimations) || null == (l = x.treat) ? true : l.getAnimationData;
+  }], []), S = i.useCallback(e => {
+    j(e.value), f(e.value)
+  }, [f]), v = null == L || null == (n = L.segmentedControlAnimations) || null == (t = n.trick) ? true : t.getAnimationData, E = null == L || null == (x = L.segmentedControlAnimations) || null == (l = x.treat) ? true : l.getAnimationData;
   return (0, r.jsxs)("div", {
-    className: a()(p.container, f),
+    className: a()(p.container, _),
     children: [(0, r.jsx)(c.w, {
-      options: S,
+      options: y,
       value: m,
-      onChange: y
-    }), L === d.KN.Trick && null != v && (0, r.jsx)("div", {
+      onChange: S
+    }), g === d.KN.Trick && null != v && (0, r.jsx)("div", {
       className: a()(p.animationOverlay, p.trickAnimation),
       children: (0, r.jsx)(s.F, {
         shouldAnimate: true,
@@ -59,9 +59,9 @@ function x(e) {
         className: p.lottieAnimation,
         importData: v,
         renderer: s.F.Renderers.SVG,
-        versionKey: +(L === d.KN.Trick)
+        versionKey: +(g === d.KN.Trick)
       })
-    }), L === d.KN.Treat && null != E && (0, r.jsx)("div", {
+    }), g === d.KN.Treat && null != E && (0, r.jsx)("div", {
       className: a()(p.animationOverlay, p.treatAnimation),
       children: (0, r.jsx)(s.F, {
         shouldAnimate: true,
@@ -70,7 +70,7 @@ function x(e) {
         className: p.lottieAnimation,
         importData: E,
         renderer: s.F.Renderers.SVG,
-        versionKey: +(L === d.KN.Treat)
+        versionKey: +(g === d.KN.Treat)
       })
     })]
   })

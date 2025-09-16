@@ -59,7 +59,7 @@ function b(e) {
   } = e, b = (0, a.e7)([p.Z], () => p.Z.getSocket()), E = (0, a.e7)([m.ZP], () => m.ZP.isGPUBoosted());
   (0, d.nU)();
   let _ = (0, a.e7)([h.Z], () => h.Z.getWindow(g.$J)),
-    [x, S] = (0, d.m8)(b),
+    [S, x] = (0, d.m8)(b),
     {
       currentFPS: I,
       averageFrameTime: C,
@@ -69,10 +69,10 @@ function b(e) {
       renderedFrameCount: Z,
       bufferFramecountRef: T,
       frameCheckerEffect: P
-    } = (0, d.d6)(true, x, true),
+    } = (0, d.d6)(true, S, true),
     [A, D, k] = (0, d.ZF)(b),
     [R, L] = (0, d.Y5)(A, P, _),
-    M = performance.now() - S.current < d.MC,
+    M = performance.now() - x.current < d.MC,
     z = D(C, T.current);
   (0, u.ZP)(() => (R(), () => {
     L()

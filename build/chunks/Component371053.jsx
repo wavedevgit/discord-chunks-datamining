@@ -29,7 +29,7 @@ function v(e) {
     onBeforeShowModal: o,
     onOneClickGoLive: c,
     appContext: g
-  } = e, y = (0, l.e7)([f.Z], () => f.Z.getVoiceChannelId()), O = (0, l.e7)([u.Z], () => u.Z.getChannel(y), [y]), v = (0, l.e7)([m.default], () => m.default.getCurrentUser()), b = null == O ? true : O.getGuildId(), _ = (0, l.e7)([p.Z], () => (0, s.Z)(p.Z)), x = (0, l.e7)([d.Z, h.Z], () => null != O && (0, a.JL)(O, d.Z, h.Z));
+  } = e, y = (0, l.e7)([f.Z], () => f.Z.getVoiceChannelId()), O = (0, l.e7)([u.Z], () => u.Z.getChannel(y), [y]), v = (0, l.e7)([m.default], () => m.default.getCurrentUser()), b = null == O ? true : O.getGuildId(), _ = (0, l.e7)([p.Z], () => (0, s.Z)(p.Z)), S = (0, l.e7)([d.Z, h.Z], () => null != O && (0, a.JL)(O, d.Z, h.Z));
   return r.useCallback(async () => {
     await E({
       pid: t,
@@ -37,14 +37,14 @@ function v(e) {
       user: v,
       targetGuildId: b,
       canGoLive: _,
-      canStream: x,
+      canStream: S,
       analyticsLocation: n,
       allowOneClickGoLive: i,
       onBeforeShowModal: o,
       onOneClickGoLive: c,
       appContext: g
     })
-  }, [t, y, v, b, _, x, n, i, o, c, g])
+  }, [t, y, v, b, _, S, n, i, o, c, g])
 }
 async function b(e) {
   let {

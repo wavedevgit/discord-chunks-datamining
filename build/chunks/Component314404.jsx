@@ -374,30 +374,32 @@ function ee(e) {
     showBackButton: o,
     planOptions: s,
     shouldRenderUpdatedPaymentModal: l = false,
-    isTrial: c
+    isTrial: c,
+    isNextDisabled: u = false
   } = e, {
-    paymentSources: u,
-    selectedPlan: f
+    paymentSources: f,
+    selectedPlan: _
   } = (0, g.JL)(), {
-    isGift: _,
-    giftRecipient: p,
-    claimableRewards: h
-  } = (0, m.wD)(), E = (0, O.pO)(p);
-  return i = null != i ? i : u, n = null != n ? n : null == f ? true : f.id, (0, r.jsxs)(r.Fragment, {
+    isGift: p,
+    giftRecipient: h,
+    claimableRewards: E
+  } = (0, m.wD)(), b = (0, O.pO)(h);
+  return i = null != i ? i : f, n = null != n ? n : null == _ ? true : _.id, (0, r.jsxs)(r.Fragment, {
     children: [null != n && s.includes(n) ? (0, r.jsx)(et, {
       paymentSources: i,
       onStepChange: t,
       selectedPlanId: n,
-      isGift: _,
-      claimableRewards: h,
+      isGift: p,
+      claimableRewards: E,
       shouldRenderUpdatedPaymentModal: l,
-      isTrial: c
+      isTrial: c,
+      isNextDisabled: u
     }) : (0, r.jsx)(d.zxk, {
       variant: "primary",
       text: H.intl.string(H.t.XqMe3N),
       disabled: true
     }), o ? (0, r.jsx)(k.Z, {
-      className: _ && E ? Y.equalDistantBackButton : true,
+      className: p && b ? Y.equalDistantBackButton : true,
       onClick: a
     }) : null]
   })
@@ -411,18 +413,20 @@ function et(e) {
     claimableRewards: a,
     paymentSources: o,
     shouldRenderUpdatedPaymentModal: s,
-    isTrial: l
-  } = e, u = (0, c.e7)([y.Z], () => y.Z.getPremiumTypeSubscription()), {
-    step: f,
-    selectedPlan: _
+    isTrial: l,
+    isNextDisabled: u = false
+  } = e, f = (0, c.e7)([y.Z], () => y.Z.getPremiumTypeSubscription()), {
+    step: _,
+    selectedPlan: p
   } = (0, g.JL)(), {
-    hasEntitlements: p
-  } = (0, U.H)(n, i), h = null != u && null != u.paymentSourceId || Object.keys(o).length > 0 || p && !l;
-  var m = s ? H.intl.string(H.t.PDTjLC) : H.intl.string(H.t.XqMe3N),
-    b = E.h8.ADD_PAYMENT_STEPS;
-  return h && (b = E.h8.REVIEW), (0, N.id)(_, i, a) && f !== E.h8.SELECT_FREE_SKU && (b = E.h8.SELECT_FREE_SKU), (0, r.jsx)(d.zxk, {
+    hasEntitlements: h
+  } = (0, U.H)(n, i), m = null != f && null != f.paymentSourceId || Object.keys(o).length > 0 || h && !l;
+  var b = s ? H.intl.string(H.t.PDTjLC) : H.intl.string(H.t.XqMe3N),
+    O = E.h8.ADD_PAYMENT_STEPS;
+  return m && (O = E.h8.REVIEW), (0, N.id)(p, i, a) && _ !== E.h8.SELECT_FREE_SKU && (O = E.h8.SELECT_FREE_SKU), (0, r.jsx)(d.zxk, {
     variant: "primary",
-    text: m,
-    onClick: () => t(b)
+    text: b,
+    onClick: () => t(O),
+    disabled: u
   })
 }

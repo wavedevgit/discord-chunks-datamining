@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk377409 = require("./377409.js");
 
-function x(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -43,7 +43,7 @@ function x(e) {
   return e
 }
 
-function S(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -104,7 +104,7 @@ let I = Chunk647438.memo(function(e) {
     minY: 0,
     maxX: A.width,
     maxY: A.height
-  }), [A]), K = r.useCallback(e => n(S(x({}, e), {
+  }), [A]), K = r.useCallback(e => n(x(S({}, e), {
     widget: t,
     dragging: null != e.dragOperation,
     className: j
@@ -112,7 +112,7 @@ let I = Chunk647438.memo(function(e) {
     className: o()(_.extrasContainer, Z && _.fullFlex),
     children: [null == l ? true : l(t), null == I ? true : I(t, e)]
   }) : null, [t, l, Z, I]), q = (0, a.e7)([O.ZP], () => O.ZP.hasRenderDebugMode(g.GO.WidgetAreas)), J = r.useMemo(() => {
-    if (null != C) return e => C(S(x({}, e), {
+    if (null != C) return e => C(x(S({}, e), {
       widget: t
     }))
   }, [C, t]);

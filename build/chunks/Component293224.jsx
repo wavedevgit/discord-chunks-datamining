@@ -178,8 +178,8 @@ function ec(e) {
         value: $.bk.SETTINGS_OPENED
       })
     },
-    S = null == (t = (0, en.II)()) ? true : t.id,
-    I = (0, l.e7)([et.Z], () => et.Z.isLimitedInteractionOverrideEnabled(S)),
+    x = null == (t = (0, en.II)()) ? true : t.id,
+    I = (0, l.e7)([et.Z], () => et.Z.isLimitedInteractionOverrideEnabled(x)),
     C = (0, U.Hu)({
       location: m.Z.OVERLAY,
       autoTrackExposure: true
@@ -236,7 +236,7 @@ function ec(e) {
         highlightedColor: "red",
         tooltip: h,
         onClick: () => {
-          (0, x.Z)(u, s, ei.jXE.OVERLAY), (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
+          (0, S.Z)(u, s, ei.jXE.OVERLAY), (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
             type: $.Qu.MICROPHONE,
             value: p ? $.bk.ENABLED : $.bk.DISABLED,
             userId: H.default.getId()
@@ -288,7 +288,7 @@ function eu(e) {
     },
     E = ea(n),
     {
-      showRefreshedAudioContextMenu: x
+      showRefreshedAudioContextMenu: S
     } = (0, N.e)({
       location: "HeadphonesActionButton"
     });
@@ -299,7 +299,7 @@ function eu(e) {
       let {
         closePopout: t
       } = e;
-      return x ? (0, i.jsx)(b.Z, {
+      return S ? (0, i.jsx)(b.Z, {
         onClose: E(t),
         renderDeafenCheckbox: true,
         renderOutputDevices: true,
@@ -362,9 +362,9 @@ function ed(e) {
     play: b,
     events: {
       onMouseEnter: _,
-      onMouseLeave: x
+      onMouseLeave: S
     }
-  } = (0, u.o)(s ? "disable" : "enable"), S = null != n ? (0, R.X)({
+  } = (0, u.o)(s ? "disable" : "enable"), x = null != n ? (0, R.X)({
     enabled: s,
     cameraUnavailable: h,
     hasPermission: m,
@@ -397,7 +397,7 @@ function ed(e) {
       return (0, i.jsx)(es, {
         ref: a,
         iconComponent: v,
-        tooltip: S,
+        tooltip: x,
         onClick: O,
         isActive: s,
         highlightedColor: "green",
@@ -405,7 +405,7 @@ function ed(e) {
         popoutOpen: r,
         onContextMenu: y(n),
         onMouseEnter: _,
-        onMouseLeave: x,
+        onMouseLeave: S,
         disabled: C,
         isTrayButton: true
       })
@@ -466,7 +466,7 @@ function ep(e) {
       play: _
     } = (0, s.P)(g ? "disable" : "enable");
   r.useEffect(() => () => _(), [g, _]);
-  let x = ea(o);
+  let S = ea(o);
   return (0, i.jsx)(d.yRy, {
     targetElementRef: a,
     clickTrap: true,
@@ -479,7 +479,7 @@ function ep(e) {
         currentUser: c,
         activeStreams: g ? [h] : [],
         handleGoLive: m,
-        onClose: x(t),
+        onClose: S(t),
         appContext: ei.IlC.OVERLAY,
         disableChangeWindows: true
       })
@@ -545,9 +545,9 @@ function eh(e) {
     events: {
       onClick: E,
       onMouseEnter: _,
-      onMouseLeave: x
+      onMouseLeave: S
     }
-  } = (0, c.j)(), S = ea(a), I = (0, l.e7)([T.Z, H.default], () => T.Z.isUserPlayingSounds(H.default.getId()), []) ? "green" : true;
+  } = (0, c.j)(), x = ea(a), I = (0, l.e7)([T.Z, H.default], () => T.Z.isUserPlayingSounds(H.default.getId()), []) ? "green" : true;
   return (0, i.jsx)(d.yRy, {
     targetElementRef: s,
     clickTrap: true,
@@ -558,7 +558,7 @@ function eh(e) {
       return y || null == o ? (0, i.jsx)(i.Fragment, {}) : (0, i.jsx)(P.Z, {
         guildId: u,
         channel: o,
-        onClose: S(t),
+        onClose: x(t),
         analyticsSource: "action bar button"
       })
     },
@@ -586,7 +586,7 @@ function eh(e) {
         defaultColor: I,
         onContextMenu: v,
         onMouseEnter: _,
-        onMouseLeave: x,
+        onMouseLeave: S,
         isActive: r,
         popoutOpen: r,
         disabled: y,
@@ -701,7 +701,7 @@ function em(e) {
 function eg(e) {
   let {
     voiceChannel: t
-  } = e, n = (0, I.KS)(t), r = (0, S.ZP)(t);
+  } = e, n = (0, I.KS)(t), r = (0, x.ZP)(t);
   return (0, i.jsxs)("div", {
     className: el.voiceChannelNameContainer,
     children: [null != n && (0, i.jsx)(d.Text, {

@@ -1,7 +1,7 @@
 /** Chunk was on 54400 **/
 /** chunk id: 846464, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  q: () => L
+  q: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -22,7 +22,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk360026 = require("./360026.js");
 
-function L(e) {
+function g(e) {
   let {
     handleStepChange: t,
     handleClose: n,
@@ -33,11 +33,11 @@ function L(e) {
     startedPaymentFlowWithPaymentSourcesRef: d,
     setSelectedPlanId: m,
     priceOptions: j,
-    defaultPlanId: L
+    defaultPlanId: g
   } = (0, p.JL)(), {
-    isGift: g,
-    claimableRewards: S
-  } = (0, u.wD)(), y = g && null != S && S.length > 0, v = (0, C.N)(i), E = (0, s.Nx)(), O = (0, o.ZP)({
+    isGift: L,
+    claimableRewards: y
+  } = (0, u.wD)(), S = L && null != y && y.length > 0, v = (0, C.N)(i), E = (0, s.Nx)(), O = (0, o.ZP)({
     location: "PremiumPaymentSelect"
   });
   return (0, r.jsx)(b, {
@@ -56,19 +56,19 @@ function L(e) {
       r(n);
       let d = x.h8.PLAN_SELECT,
         u = (0, c.k5)(t);
-      u !== f.Si.TIER_1 && u !== f.Si.TIER_2 || n !== f.Si.TIER_0 || l || (d = x.h8.WHAT_YOU_LOSE);
-      let p = (0, h.T)({
+      u !== _.Si.TIER_1 && u !== _.Si.TIER_2 || n !== _.Si.TIER_0 || l || (d = x.h8.WHAT_YOU_LOSE);
+      let p = (0, f.T)({
           userTrialOffer: a,
           isGift: l,
           skuId: n
         }),
-        m = (0, _.Kp)({
+        m = (0, h.Kp)({
           isTrial: p,
           isGift: l,
           selectedSkuId: n,
           startedPaymentFlowWithPaymentSources: o
         });
-      d !== x.h8.WHAT_YOU_LOSE && m && (d = x.h8.REVIEW, s((0, _.nA)(n, t, C))), i(d, {
+      d !== x.h8.WHAT_YOU_LOSE && m && (d = x.h8.REVIEW, s((0, h.nA)(n, t, C))), i(d, {
         analyticsDataOverride: {
           sku_id: n
         }
@@ -78,17 +78,17 @@ function L(e) {
       newSkuId: e,
       setSelectedSkuId: l,
       handleStepChange: t,
-      isGift: g,
+      isGift: L,
       userTrialOffer: v,
       startedPaymentFlowWithPaymentSources: d.current,
       setSelectedPlanId: m,
-      defaultPlanId: L
+      defaultPlanId: g
     }),
     onClose: n,
-    isGift: g,
+    isGift: L,
     inOfferExperience: E,
     priceOptions: j,
-    showPromotionalGiftBanner: y,
+    showPromotionalGiftBanner: S,
     enablePremiumBrandRefresh: O
   })
 }

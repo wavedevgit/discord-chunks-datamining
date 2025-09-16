@@ -1,7 +1,7 @@
 /** Chunk was on 13368 **/
 /** chunk id: 989373, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => P
+  default: () => B
 }), require("./415506.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,14 +22,13 @@ var Chunk998502 = require("./998502.js"),
 require("./371467.js");
 var Chunk41534 = require("./41534.js"),
   Chunk837268 = require("./837268.js"),
-  Chunk32300 = require("./32300.js"),
   Chunk554370 = require("./554370.jsx"),
   Chunk371651 = require("./371651.js"),
   Chunk610394 = require("./610394.js"),
   Chunk757744 = require("./757744.js"),
   Chunk981631 = require("./981631.js");
 let x = new Chunk710845.Z("AppOverlay");
-async function B(e, t) {
+async function E(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : 1e3,
     a = arguments.length > 3 && true !== arguments[3] ? arguments[3] : 3;
   if (h.isPlatformEmbedded) {
@@ -51,12 +50,12 @@ async function B(e, t) {
     }
   }
 }
-let P = Chunk647438.memo(function(e) {
+let B = Chunk647438.memo(function(e) {
   let {
     withTitleBar: t,
     windowKey: n
   } = e, _ = function(e, t) {
-    let n = (0, r.e7)([w.ZP], () => !h.isPlatformEmbedded || w.ZP.isWindowHandleInitialized()),
+    let n = (0, r.e7)([y.ZP], () => !h.isPlatformEmbedded || y.ZP.isWindowHandleInitialized()),
       a = (0, r.e7)([d.Z], () => d.Z.getWindow(e)),
       l = o.useRef(null),
       _ = o.useRef(null),
@@ -65,24 +64,24 @@ let P = Chunk647438.memo(function(e) {
         let e = p.default.getFocusedPID();
         return !h.isPlatformEmbedded || null != e && e !== v.UNSET_PID
       }),
-      [b, C] = o.useState(false),
-      S = o.useRef(false),
+      [b, g] = o.useState(false),
+      w = o.useRef(false),
       x = o.useCallback(() => {
         let e = (0, v.getPID)(),
           n = null != s.Z.getVoiceChannelId();
-        i.Z.track(E.rMx.OVERLAY_INITIALIZED, {
+        i.Z.track(S.rMx.OVERLAY_INITIALIZED, {
           voice_widget_connected: n,
-          text_widget_connected: w.ZP.isPinned(E.Odu.TEXT),
-          overlay_render_method: I.gl[y.default.getOverlayMethod(e)],
+          text_widget_connected: y.ZP.isPinned(S.Odu.TEXT),
+          overlay_render_method: I.gl[C.default.getOverlayMethod(e)],
           unpinned_widget_types: f.Z.getAllUnpinnedPinnedWidgets(t)
-        }), (0, g.lj)("OVERLAY_INITIALIZED"), i.Z.oopUiInitialized()
+        }), i.Z.oopUiInitialized()
       }, [t]);
     (0, c.Ng)(() => {
       let e = e => {
         let t = null != a ? a : window;
-        e.data === w.Il && t.requestAnimationFrame(() => {
+        e.data === y.Il && t.requestAnimationFrame(() => {
           t.requestAnimationFrame(() => {
-            window.parent.postMessage(w.A8, "*")
+            window.parent.postMessage(y.A8, "*")
           })
         })
       };
@@ -90,33 +89,33 @@ let P = Chunk647438.memo(function(e) {
         window.removeEventListener("message", e)
       }
     });
-    let P = o.useCallback((e, t) => {
+    let B = o.useCallback((e, t) => {
       null == l.current && (u.current = () => {
         null != l.current && e.cancelAnimationFrame(l.current), null != _.current && e.clearTimeout(_.current)
       }, l.current = e.requestAnimationFrame(async () => {
         try {
-          await B(e, t)
+          await E(e, t)
         } catch (e) {
           i.Z.setOverlayCrashed((0, v.getPID)(), e);
           return
         }
         _.current = e.setTimeout(() => {
-          C(true), x(), u.current = null
+          g(true), x(), u.current = null
         }, 100)
       }))
     }, [x]);
     return o.useEffect(() => {
-      m && null != a && n && (S.current || (S.current = true, P(a, e)))
-    }, [P, m, e, a, n]), (0, c.zq)(() => {
+      m && null != a && n && (w.current || (w.current = true, B(a, e)))
+    }, [B, m, e, a, n]), (0, c.zq)(() => {
       null != u.current && u.current()
     }), b
-  }(n, S.$S), m = (0, v.getPID)(), b = (0, r.e7)([p.default], () => p.default.isInputLocked(m), [m]);
+  }(n, w.$S), m = (0, v.getPID)(), b = (0, r.e7)([p.default], () => p.default.isInputLocked(m), [m]);
   return _ ? (0, a.jsxs)(u.Z, {
-    themeOverride: E.BRd.MIDNIGHT,
+    themeOverride: S.BRd.MIDNIGHT,
     withTitleBar: t,
     windowKey: n,
     title: "Discord Overlay",
     hideModals: b,
-    children: [(0, a.jsx)(C.Z, {}), (0, a.jsx)(l.Co, {})]
+    children: [(0, a.jsx)(g.Z, {}), (0, a.jsx)(l.Co, {})]
   }) : null
 })

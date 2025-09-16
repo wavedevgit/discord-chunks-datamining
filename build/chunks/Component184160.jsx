@@ -1,7 +1,7 @@
 /** Chunk was on 54400 **/
 /** chunk id: 184160, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  x: () => f
+  x: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -19,41 +19,41 @@ var Chunk512722 = require("./512722.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk172463 = require("./172463.js");
 
-function f(e) {
+function _(e) {
   let {
     handleStepChange: t,
     handleClose: n
   } = e, i = (0, o.ZP)(), {
-    activeSubscription: f,
+    activeSubscription: _,
     selectedSkuId: m,
     setSelectedPlanId: j,
-    startedPaymentFlowWithPaymentSourcesRef: L
+    startedPaymentFlowWithPaymentSourcesRef: g
   } = (0, u.JL)(), {
     isGift: b
-  } = (0, c.wD)(), g = null != f ? (0, d.Af)(f) : null, S = null != g ? (0, d.gq)(g.planId) : null, y = null != g ? (0, d.Rd)(g.planId) : null, v = (0, x.Kp)({
+  } = (0, c.wD)(), L = null != _ ? (0, d.Af)(_) : null, y = null != L ? (0, d.gq)(L.planId) : null, S = null != L ? (0, d.Rd)(L.planId) : null, v = (0, x.Kp)({
     isTrial: false,
     isGift: b,
     selectedSkuId: m,
-    startedPaymentFlowWithPaymentSources: L.current
+    startedPaymentFlowWithPaymentSources: g.current
   });
-  return l()(null != y, "Expected premium type"), (0, r.jsx)(C.Z, {
-    premiumType: y,
-    titleText: _.intl.string(_.t["7VcWW1"]),
-    subtitleText: _.intl.format(_.t.Qk34Ii, {
-      subscriptionName: S
+  return l()(null != S, "Expected premium type"), (0, r.jsx)(C.Z, {
+    premiumType: S,
+    titleText: h.intl.string(h.t["7VcWW1"]),
+    subtitleText: h.intl.format(h.t.Qk34Ii, {
+      subscriptionName: y
     }),
     footer: (0, r.jsxs)("div", {
-      className: h.whatYouLoseButtonContainer,
+      className: f.whatYouLoseButtonContainer,
       children: [(0, r.jsx)(s.zx, {
         onClick: () => {
-          v ? (j((0, x.nA)(m, f)), t(p.h8.REVIEW)) : t(p.h8.PLAN_SELECT)
+          v ? (j((0, x.nA)(m, _)), t(p.h8.REVIEW)) : t(p.h8.PLAN_SELECT)
         },
-        children: _.intl.string(_.t["3PatS0"])
+        children: h.intl.string(h.t["3PatS0"])
       }), (0, r.jsx)(s.zx, {
         look: s.zx.Looks.LINK,
         color: (0, a.wj)(i) ? s.zx.Colors.WHITE : s.zx.Colors.PRIMARY,
         onClick: n,
-        children: _.intl.string(_.t.h9tkAA)
+        children: h.intl.string(h.t.h9tkAA)
       })]
     }),
     onClose: n,

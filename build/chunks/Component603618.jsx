@@ -110,7 +110,7 @@ function X(e) {
             var i;
             let e = await m.Z.getOrEnsurePrivateChannel(a.id),
               n = null != (i = P.Z.getChannel(e)) ? i : null;
-            o()(null != n, "Send channel must be defined"), (0, j.uL)(B.Z5c.CHANNEL(n.guild_id, n.id)), (0, v.i)(B.IlC.OVERLAY, true), true === t.extra.fake_inventory_item ? await (0, S.k)({
+            o()(null != n, "Send channel must be defined"), (0, j.uL)(B.Z5c.CHANNEL(n.guild_id, n.id)), (0, v.i)(B.IlC.OVERLAY, true), true === t.extra.fake_inventory_item ? await (0, x.k)({
               channel: n,
               content: F.intl.formatToPlainString(F.t.UVBA9v, {
                 gameName: t.extra.game_name
@@ -118,7 +118,7 @@ function X(e) {
               whenReady: true,
               doNotNotifyOnError: false,
               location: H.dy.OVERLAY
-            }) : await (0, S.p)({
+            }) : await (0, x.p)({
               channel: n,
               content: F.intl.string(F.t.DwAcMz),
               entry: t,
@@ -150,7 +150,7 @@ function X(e) {
         value: W.bk.CHAT,
         userId: a.id
       })
-    }, x = O ? F.intl.string(F.t["3fRyS0"]) : F.intl.string(F.t.XHxDIS), I = O ? (0, i.jsx)(p.ejJ, {
+    }, S = O ? F.intl.string(F.t["3fRyS0"]) : F.intl.string(F.t.XHxDIS), I = O ? (0, i.jsx)(p.ejJ, {
       color: "currentColor",
       size: "sm"
     }) : (0, i.jsx)(p.Uuj, {
@@ -158,8 +158,8 @@ function X(e) {
       size: "sm"
     });
   return (0, i.jsx)(p.ua7, {
-    text: x,
-    "aria-label": x,
+    text: S,
+    "aria-label": S,
     children: e => (0, i.jsx)(d.zx, K(Q({}, e), {
       submitting: "sending" === s,
       onClick: f ? _ : E,
@@ -265,10 +265,10 @@ function J(e) {
         }), null != o && (0, i.jsx)(_.ZP, {
           className: Y.liveIndicator
         })]
-      }), (0, i.jsx)(x.Gk, {
-        location: x.Gt.OVERLAY,
+      }), (0, i.jsx)(S.Gk, {
+        location: S.Gt.OVERLAY,
         className: Y.badgesContainer,
-        children: [x.OV, x.wO, x.f, x.v1, x.pQ].map((e, n) => (0, i.jsx)(e, {
+        children: [S.OV, S.wO, S.f, S.v1, S.pQ].map((e, n) => (0, i.jsx)(e, {
           entry: t
         }, "entry-".concat(n)))
       })]

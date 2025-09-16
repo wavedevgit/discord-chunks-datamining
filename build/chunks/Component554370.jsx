@@ -176,21 +176,24 @@ function el(e) {
     incompatibleApp: m,
     hasZeroSizeDimension: j,
     keybind: D
-  } = (0, a.cj)([V.ZP, S.default, I.Z, _.ZP], () => {
+  } = (0, a.cj)([V.ZP, x.default, I.Z, _.ZP], () => {
     let e = I.Z.windowSize((0, Z.ZY)(n)),
       t = _.ZP.getOverlayKeybind(),
       i = (0, N.getPID)();
     return {
       locked: V.ZP.isInputLocked(i),
       focused: V.ZP.isFocused(i),
-      incompatibleApp: S.default.incompatibleApp,
+      incompatibleApp: x.default.incompatibleApp,
       hasZeroSizeDimension: 0 === e.height || 0 === e.width,
       keybind: null != t ? (0, w.BB)(t.shortcut, true) : "???"
     }
   }, [n]), {
     analyticsLocations: L
   } = (0, f.ZP)(h.Z.OVERLAY);
-  ! function(e, t) {
+  (0, p.ZP)(() => {
+    (0, P.lj)("OVERLAY_INITIALIZED")
+  }),
+  function(e, t) {
     let n = r.useRef({
       mount: e,
       unmount: t
@@ -222,7 +225,7 @@ function el(e) {
       {
         allowActivityWidget: c
       } = (0, P.Rb)("overlay"),
-      u = null != (e = x.default.getFocusedPID()) ? e : (0, N.getPID)();
+      u = null != (e = S.default.getFocusedPID()) ? e : (0, N.getPID)();
     if (M.default.hasChangedRenderMode(u)) return;
     let p = z.Z.isNotificationDisabled(T.OverlayNotificationDisabledSetting.WELCOME_GENERAL),
       h = z.Z.isNotificationDisabled(T.OverlayNotificationDisabledSetting.GO_LIVE_NUDGE),

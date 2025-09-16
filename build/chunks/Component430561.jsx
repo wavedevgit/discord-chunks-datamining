@@ -2,12 +2,12 @@
 /** chunk id: 430561, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  GY: () => x,
-  PI: () => S,
-  RT: () => L,
-  XM: () => w,
+  GY: () => L,
+  PI: () => A,
+  RT: () => j,
+  XM: () => D,
   bc: () => C,
-  ls: () => D,
+  ls: () => x,
   xZ: () => N
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -19,6 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk765250 = require("./765250.js"),
   Chunk13245 = require("./13245.js"),
+  Chunk493773 = require("./493773.js"),
   Chunk355863 = require("./355863.js"),
   Chunk237997 = require("./237997.js"),
   Chunk145597 = require("./145597.js"),
@@ -29,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk962967 = require("./962967.js");
 
-function O(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,20 +39,20 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      O(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
 
-function I(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -62,18 +63,18 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e) {
+function A(e) {
   let {
     children: t
   } = e;
   return (0, r.jsx)("div", {
-    className: y.titleWrapper,
+    className: O.titleWrapper,
     children: (0, r.jsx)(c.Text, {
       variant: "text-xs/semibold",
       color: "header-primary",
@@ -81,51 +82,48 @@ function S(e) {
     })
   })
 }
-
-function A() {
-  let e = (0, Chunk442837.e7)([Chunk237997.default], () => Chunk237997.default.isLocked((0, Chunk145597.getPID)())),
-    [t, n] = Chunk647438.useState(false === module);
-  return Chunk647438.useEffect(() => {
-    false === module && require(true)
-  }, [module]), exports
-}
 let C = 7e3;
 
 function N(e, t) {
-  return R((0, s.e7)([f.Z], () => f.Z.getWidget(e), [e]), t)
+  return P((0, s.e7)([_.Z], () => _.Z.getWidget(e), [e]), t)
 }
+let R = (e, t) => Date.now() - e < t;
 
-function R(e, t) {
+function P(e, t) {
   let n = i.useRef(null == e ? true : e.showExtrasHintTimestamp),
     [r, a] = i.useState(false),
-    o = (0, s.e7)([_.default], () => _.default.isLocked((0, p.getPID)())),
-    l = i.useRef(true),
-    c = A();
+    o = (0, s.e7)([p.default], () => p.default.isLocked((0, h.getPID)())),
+    l = i.useRef(true);
   return i.useEffect(() => {
     let r = null == e ? true : e.showExtrasHintTimestamp;
     r !== n.current && (n.current = r, a(true), l.current = setTimeout(() => {
       a(false)
     }, t))
-  }, [t, null == e ? true : e.showExtrasHintTimestamp]), i.useEffect(() => () => {
-    null != l.current && clearTimeout(l.current)
-  }, []), r && o && !c
+  }, [t, null == e ? true : e.showExtrasHintTimestamp]), (0, f.ZP)(() => {
+    let n = null == e ? true : e.showExtrasHintTimestamp;
+    return null != n && R(n, t) && (a(true), l.current = setTimeout(() => {
+      a(false)
+    }, t)), () => {
+      null != l.current && clearTimeout(l.current)
+    }
+  }), r && o
 }
-let P = 8e3;
+let w = 8e3;
 
-function w(e) {
+function D(e) {
   let {
     children: t,
     widgetId: n
-  } = e, i = (0, s.e7)([f.Z], () => f.Z.getWidget(n), [n]), a = R(i, P), o = () => (0, g.Q)((0, E.P)(), b.t["1XA04e"], b.intl.string(b.t.uZZGzc), false);
+  } = e, i = (0, s.e7)([_.Z], () => _.Z.getWidget(n), [n]), a = P(i, w), o = () => (0, E.Q)((0, b.P)(), y.t["1XA04e"], y.intl.string(y.t.uZZGzc), false);
   return a ? (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(m.Z, {
-      className: y.titleWrapper,
+    children: [(0, r.jsx)(g.Z, {
+      className: O.titleWrapper,
       children: (0, r.jsx)(c.P3F, {
-        className: y.titleWrapperClickable,
+        className: O.titleWrapperClickable,
         onClick: () => {
-          null != i && (d.Z.setInputLocked(false, (0, p.getPID)()), (0, h.Ws)(i.type, {
-            type: h.Qu.KEYBIND_HINT,
-            value: h.bk.OVERLAY_UNLOCKED
+          null != i && (d.Z.setInputLocked(false, (0, h.getPID)()), (0, m.Ws)(i.type, {
+            type: m.Qu.KEYBIND_HINT,
+            value: m.bk.OVERLAY_UNLOCKED
           }))
         },
         children: (0, r.jsx)(c.Text, {
@@ -135,10 +133,10 @@ function w(e) {
         })
       })
     }), (0, r.jsx)("div", {
-      className: y.extrasEmptySpace
+      className: O.extrasEmptySpace
     })]
   }) : (0, r.jsx)("div", {
-    className: y.titleWrapper,
+    className: O.titleWrapper,
     children: (0, r.jsx)(c.Text, {
       variant: "text-xs/semibold",
       color: "header-primary",
@@ -147,17 +145,17 @@ function w(e) {
   })
 }
 
-function D(e) {
+function x(e) {
   let {
     onClick: t
   } = e;
-  if ((0, s.e7)([_.default], () => _.default.isLocked((0, p.getPID)()))) return null;
-  let n = b.intl.string(b.t["3D5yo6"]);
+  if ((0, s.e7)([p.default], () => p.default.isLocked((0, h.getPID)()))) return null;
+  let n = y.intl.string(y.t["3D5yo6"]);
   return (0, r.jsx)(c.ua7, {
     text: n,
     "aria-label": n,
-    children: e => (0, r.jsx)(c.P3F, T(v({}, e), {
-      className: y.button,
+    children: e => (0, r.jsx)(c.P3F, S(I({}, e), {
+      className: O.button,
       onClick: t,
       children: (0, r.jsx)(c.ewm, {
         size: "xxs",
@@ -167,20 +165,20 @@ function D(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     widgetId: t,
     showAllStreams: n
-  } = e, i = n ? b.intl.string(b.t.q2B3rq) : b.intl.string(b.t.JKGi6u), a = () => {
+  } = e, i = n ? y.intl.string(y.t.q2B3rq) : y.intl.string(y.t.JKGi6u), a = () => {
     (0, u.zG)(t, {
       showAllStreams: !n
     })
   };
-  return (0, s.e7)([_.default], () => _.default.isLocked((0, p.getPID)())) ? null : (0, r.jsx)(c.ua7, {
+  return (0, s.e7)([p.default], () => p.default.isLocked((0, h.getPID)())) ? null : (0, r.jsx)(c.ua7, {
     text: i,
     "aria-label": i,
-    children: e => (0, r.jsx)(c.P3F, T(v({}, e), {
-      className: o()(y.button, n && y.active),
+    children: e => (0, r.jsx)(c.P3F, S(I({}, e), {
+      className: o()(O.button, n && O.active),
       onClick: a,
       children: (0, r.jsx)(c.pzj, {
         size: "xxs",
@@ -190,16 +188,16 @@ function x(e) {
   })
 }
 
-function L(e) {
+function j(e) {
   let {
     id: t,
     pinned: n
-  } = e, i = n ? b.intl.string(b.t.cSu80t) : b.intl.string(b.t.cM8Vnp), a = (0, s.e7)([_.default], () => _.default.isLocked((0, p.getPID)()));
+  } = e, i = n ? y.intl.string(y.t.cSu80t) : y.intl.string(y.t.cM8Vnp), a = (0, s.e7)([p.default], () => p.default.isLocked((0, h.getPID)()));
   return (0, r.jsx)(c.ua7, {
     text: i,
     "aria-label": i,
-    children: e => (0, r.jsx)(c.P3F, T(v({}, e), {
-      className: o()(y.button, n && y.active),
+    children: e => (0, r.jsx)(c.P3F, S(I({}, e), {
+      className: o()(O.button, n && O.active),
       onClick: () => {
         a || (0, u.xh)(t)
       },

@@ -243,7 +243,7 @@ function eE() {
   let l = Chunk610394.ZP.isOverlayV3EnabledForPID((0, Chunk145597.getPID)()) || null != Chunk610394.ZP.getFocusedPID();
   for (let e of Chunk512722)
     if (! function(e) {
-        let t = x.Z.getActivities(e);
+        let t = S.Z.getActivities(e);
         if (0 === t.length) returnfalse;
         let n = (0, U.pL)();
         return null != n && null != t.find(e => e.application_id === n.id)
@@ -276,9 +276,9 @@ function e_(e) {
     channelId: r.id
   })
 }
-let ex = {};
+let eS = {};
 
-function eS(e, t) {
+function ex(e, t) {
   return "".concat(e, "-").concat(t)
 }
 class eI extends(i = Chunk442837.ZP.Store) {
@@ -289,7 +289,7 @@ class eI extends(i = Chunk442837.ZP.Store) {
           t = Chunk314897.default.getId(),
           n = Chunk19780.Z.getMediaSessionId();
         if (null != module && null != require)
-          for (let i of Chunk358221.Z.getStreamParticipants(module)) i.user.id !== exports && (ex[eS(i.user.id, require)] = Date.now())
+          for (let i of Chunk358221.Z.getStreamParticipants(module)) i.user.id !== exports && (eS[ex(i.user.id, require)] = Date.now())
       }()
   }
   getNotifications() {
@@ -352,7 +352,7 @@ let eC = new eI(Chunk570140.Z, {
         if (null == a || null == s) returnfalse;
         switch (t.activity.type) {
           case J.mFx.JOIN:
-            if (null == (r = x.Z.getApplicationActivity(n.id, s)) || null == r.party || r.party.id !== t.activity.party_id) returnfalse;
+            if (null == (r = S.Z.getApplicationActivity(n.id, s)) || null == r.party || r.party.id !== t.activity.party_id) returnfalse;
             o = (0, W.Z)(e, t, n, a, r);
             break;
           case J.mFx.JOIN_REQUEST:
@@ -462,7 +462,7 @@ let eC = new eI(Chunk570140.Z, {
     if (M.Z.isNotificationDisabled(k.OverlayNotificationDisabledSetting.FRIEND_STREAM_WATCH_NUDGE)) returnfalse;
     let n = C.Z.getVoiceChannelId(),
       i = O.default.getId(),
-      r = S.Z.getMediaSessionId();
+      r = x.Z.getMediaSessionId();
     if (null != n && null != r)
       for (let e of t) {
         let {
@@ -477,9 +477,9 @@ let eC = new eI(Chunk570140.Z, {
             enabled: e
           } = (0, R.lj)("OverlayV3StreamWatchNudge");
           if (!e) return;
-          let n = eS(t, r);
-          if (null != ex[n]) continue;
-          ex[n] = Date.now();
+          let n = ex(t, r);
+          if (null != eS[n]) continue;
+          eS[n] = Date.now();
           let i = (0, H.Z)(t, o, null != (l = eb(t)) ? l : true);
           if (null == i) continue;
           ev(i, {

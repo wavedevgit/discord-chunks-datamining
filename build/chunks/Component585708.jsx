@@ -26,8 +26,8 @@ var Chunk13245 = require("./13245.js"),
 function E(e, t, n, E) {
   var _;
   let {
-    icon: x,
-    title: S,
+    icon: S,
+    title: x,
     body: I
   } = (0, a.Xi)(e, t, n), {
     trackView: C,
@@ -42,8 +42,8 @@ function E(e, t, n, E) {
     channel_type: e.type
   });
   return {
-    icon: x,
-    title: S,
+    icon: S,
+    title: x,
     body: t.content.length > 0 ? (0, o.ZP)(t, {
       noStyleAndInteraction: true,
       formatInline: true,

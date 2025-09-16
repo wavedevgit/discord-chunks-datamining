@@ -81,7 +81,7 @@ function N(e, t) {
   for (let r of t) switch (r.type) {
     case v.nc.WELCOME: {
       let t = (null == e ? true : e.altId) != null ? p.Z.getApplicationActivity(e.altId) : (null == e ? true : e.id) != null ? p.Z.getApplicationActivity(e.id) : null;
-      null != t && (0, s.Z)(t, b.xjy.JOIN) && (_.cancelText = x.intl.string(x.t["6F9ivr"]), _.onCancelClick = (e, n) => {
+      null != t && (0, s.Z)(t, b.xjy.JOIN) && (_.cancelText = S.intl.string(S.t["6F9ivr"]), _.onCancelClick = (e, n) => {
         u("unlock"), a.Z.updateNotificationStatus(n), a.Z.setInputLocked(false, (0, h.getPID)()), (0, o.h7)(t, false, b.IlC.POPOUT)
       });
       break
@@ -92,7 +92,7 @@ function N(e, t) {
         oneClickGoLiveEnabled: e,
         useStreamCtaCopy: t
       } = (0, f.tU)("welcomeNotification");
-      _.confirmText = x.intl.string(t ? x.t.pEuzio : x.t.U76Ft7), _.onConfirmClick = e ? (e, t) => {
+      _.confirmText = S.intl.string(t ? S.t.pEuzio : S.t.U76Ft7), _.onConfirmClick = e ? (e, t) => {
         a.Z.updateNotificationStatus(t);
         let n = () => {
             u("go-live-modal"), a.Z.setInputLocked(false, (0, h.getPID)())
@@ -139,21 +139,21 @@ function N(e, t) {
       })
   }
   let N = (0, d.zu)(r.z.OVERLAY_OOP_WELCOME_NUX),
-    Z = N ? x.intl.string(x.t.KWDIrq) : x.intl.string(x.t["prl+ra"]),
-    T = N ? true : x.intl.string(x.t.R3CpPT),
+    Z = N ? S.intl.string(S.t.KWDIrq) : S.intl.string(S.t["prl+ra"]),
+    T = N ? true : S.intl.string(S.t.R3CpPT),
     P = null != e ? (0, i.jsx)(w, {
       game: e
     }) : (0, i.jsx)("img", {
       src: n(328756),
-      className: S.icon,
+      className: x.icon,
       alt: ""
     });
   return j(C({
     icon: P,
     title: Z,
     body: T,
-    hint: () => (0, y.Q)((0, O.P)(), x.t["z8/sgI"], x.intl.string(x.t.jZkzVF), true),
-    confirmText: N ? true : x.intl.string(x.t.TxyTbm),
+    hint: () => (0, y.Q)((0, O.P)(), S.t["z8/sgI"], S.intl.string(S.t.jZkzVF), true),
+    confirmText: N ? true : S.intl.string(S.t.TxyTbm),
     onConfirmClick: N ? true : () => {
       u("unlock"), a.Z.setInputLocked(false, (0, h.getPID)()), N || (0, d.Q3)(r.z.OVERLAY_OOP_WELCOME_NUX)
     }

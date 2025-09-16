@@ -1,7 +1,7 @@
 /** Chunk was on 54400 **/
 /** chunk id: 183813, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  S: () => S
+  S: () => y
 }), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -24,90 +24,106 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk950174 = require("./950174.js");
 
-function S(e) {
+function y(e) {
+  var t, n;
   let {
-    handleStepChange: t,
-    handleClose: n
+    handleStepChange: l,
+    handleClose: y
   } = e, {
-    selectedPlan: l,
-    selectedSkuId: S,
-    step: y
-  } = (0, f.JL)(), {
-    setSelectedGiftingPromotionReward: v,
-    selectedGiftingPromotionReward: E,
-    claimableRewards: O,
-    claimableVariants: P
-  } = (0, h.wD)(), M = (0, s.e7)([x.default], () => x.default.getCurrentUser()), [w, k] = i.useState(null), A = Math.floor(Math.random() * c.mo), [T, I] = i.useState(A);
+    selectedPlan: S,
+    selectedSkuId: v,
+    step: E
+  } = (0, _.JL)(), {
+    setSelectedGiftingPromotionReward: O,
+    selectedGiftingPromotionReward: P,
+    claimableRewards: k,
+    claimableVariants: w
+  } = (0, f.wD)(), M = (0, s.e7)([x.default], () => x.default.getCurrentUser()), I = (0, c.ZP)(k, w, P), [T, A] = i.useState(null != (n = null == I ? true : I.defaultCategory) ? n : c.KN.Trick), [Z, N] = i.useState(null == I || null == (t = I.defaultHighlightedReward) ? true : t.skuId), [R, B] = i.useState(false), U = i.useRef(T), H = i.useMemo(() => null == w ? null != k ? k : [] : w.flatMap(e => {
+    var t, n;
+    return e.variants.length < c.mo ? [] : (t = function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
+            enumerable: true,
+            configurable: true,
+            writable: true
+          }) : e[t] = r
+        })
+      }
+      return e
+    }({}, e.variants[T]), n = n = {
+      name: e.name
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+      var n = Object.keys(e);
+      if (Object.getOwnPropertySymbols) {
+        var r = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, r)
+      }
+      return n
+    })(Object(n)).forEach(function(e) {
+      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+    }), t)
+  }), [w, k, T]);
   i.useEffect(() => {
-    null != O && O.length > 0 && null == E && v(O[0])
-  }, [O, E, v]), a()(null != l, "Expected plan to selected"), a()(null != S, "Expected selectedSkuId"), a()(null != y, "Step should be set");
-  let Z = i.useMemo(() => null == P ? null != O ? O : [] : P.flatMap(e => {
-      var t, n;
-      return e.variants.length < c.mo ? [] : (t = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
-              enumerable: true,
-              configurable: true,
-              writable: true
-            }) : e[t] = r
-          })
-        }
-        return e
-      }({}, e.variants[T]), n = n = {
-        name: e.name
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
-        }
-        return n
-      })(Object(n)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-      }), t)
-    }), [P, O, T]),
-    N = e => {
-      v(Z.find(t => t.skuId === e)), k(e)
+    let e = null == I ? true : I.defaultHighlightedReward;
+    !R && null == P && null != e && null != e && H.some(t => t.skuId === e.skuId) && (O(e), N(e.skuId))
+  }, [I, R, P, H, O]), i.useEffect(() => {
+    (null == I ? true : I.defaultCategory) == null || R || A(I.defaultCategory)
+  }, [null == I ? true : I.defaultCategory, R]), a()(null != S, "Expected plan to selected"), a()(null != v, "Expected selectedSkuId"), a()(null != E, "Step should be set");
+  let F = i.useMemo(() => null != Z && (null != k ? k : []).some(e => e.skuId === Z), [Z, k]),
+    G = i.useMemo(() => null != P && H.some(e => e.skuId === P.skuId), [H, P]),
+    D = i.useMemo(() => 0 === H.length || null == Z || !G || !F, [H, Z, F, G]);
+  i.useEffect(() => {
+    if (0 === H.length) {
+      N(true), O(true);
+      return
+    }
+    F && H.some(e => e.skuId === Z) || null == Z || (N(true), O(true))
+  }, [H, F, Z, O]), i.useEffect(() => {
+    U.current === T || G || (O(true), N(true)), U.current = T
+  }, [T, G, O]);
+  let K = e => {
+      O(H.find(t => t.skuId === e)), N(e), B(true)
     },
-    B = Z.map(e => (0, r.jsx)(C.c, {
+    z = H.map(e => (0, r.jsx)(C.c, {
       skuId: e.skuId,
       assetId: e.assetId,
       productName: e.name,
       a11yLabel: e.a11yLabel,
-      claimed: null != O && O.every(t => t.skuId !== e.skuId),
+      claimed: null != k && k.every(t => t.skuId !== e.skuId),
       user: M,
-      onSelect: N,
-      selectedSkuId: null != w ? w : true,
+      onSelect: K,
+      selectedSkuId: Z,
       category: T
     }, e.skuId)),
-    R = (0, r.jsx)(j.O3, {
+    W = (0, r.jsx)(j.O3, {
       children: (0, r.jsx)(o.mzw, {
-        className: g.modalFooter,
+        className: L.modalFooter,
         children: (0, r.jsx)(p.y, {
           onStepChange: e => {
-            null != M && null != E && _.default.track(L.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
+            null != M && null != P && h.default.track(g.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
               user_id: M.id,
-              reward_sku_id: E.skuId
-            }), t(e)
+              reward_sku_id: P.skuId
+            }), l(e)
           },
-          onBackClick: () => t(m.h8.PLAN_SELECT),
+          onBackClick: () => l(m.h8.PLAN_SELECT),
           shouldRenderUpdatedPaymentModal: true,
           showBackButton: true,
-          planOptions: [l.id],
-          selectedPlanId: l.id
+          planOptions: [S.id],
+          selectedPlanId: S.id,
+          isNextDisabled: D
         })
       })
     });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(o.xBx, {
-      className: g.modalHeader,
+      className: L.modalHeader,
       direction: d.Z.Direction.VERTICAL,
       align: d.Z.Align.START,
       separator: false,
@@ -118,25 +134,25 @@ function S(e) {
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
         color: "text-secondary",
-        className: g.headerSubtitle,
+        className: L.headerSubtitle,
         children: b.intl.string(b.t.MhwtRU)
       }), (0, r.jsx)(o.olH, {
-        className: g.closeButton,
-        onClick: n
+        className: L.closeButton,
+        onClick: y
       })]
     }), (0, r.jsx)(o.hzk, {
       children: (0, r.jsxs)(o.Kqy, {
         direction: "vertical",
         justify: "center",
         align: "center",
-        children: [null != P && P.length > 1 && (0, r.jsx)(u.Z, {
+        children: [null != w && w.length > 1 && (0, r.jsx)(u.Z, {
           defaultCategory: T,
-          onCategoryChange: I
+          onCategoryChange: A
         }), (0, r.jsx)("div", {
-          className: g.giftRewardShopCardsGrid,
-          children: B
+          className: L.giftRewardShopCardsGrid,
+          children: z
         })]
       })
-    }), R]
+    }), W]
   })
 }

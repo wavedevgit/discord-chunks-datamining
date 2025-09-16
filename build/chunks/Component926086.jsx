@@ -27,16 +27,16 @@ function m(e) {
     pinned: n
   } = e, [l, a] = r.useState(0), [m, g] = r.useState(0), [y, O] = r.useState(0), v = r.useRef(0), [b, E] = r.useState(0), {
     timeToLiveMs: _,
-    reappearTimeMs: x
+    reappearTimeMs: S
   } = d.ZP.useState(e => ({
     timeToLiveMs: e.timeToLiveMs,
     reappearTimeMs: e.reappearTimeMs
-  }), s()), S = {
+  }), s()), x = {
     timeToLiveMs: _,
-    reappearTimeMs: x
-  }, I = r.useRef(S);
+    reappearTimeMs: S
+  }, I = r.useRef(x);
   r.useEffect(() => {
-    I.current = S
+    I.current = x
   }), r.useEffect(() => (v.current = setInterval(() => {
     let e = Date.now();
     g(e), O(t => {

@@ -84,7 +84,7 @@ function _(e) {
   return "auto" === e || null == e ? "auto" : "".concat(e, "px")
 }
 
-function x(e, t) {
+function S(e, t) {
   let n = 0;
   return {
     width: n = "auto" === t.width ? null != e ? e.clientWidth : 0 : t.width,
@@ -92,7 +92,7 @@ function x(e, t) {
   }
 }
 
-function S(e, t) {
+function x(e, t) {
   let {
     top: n,
     left: i,
@@ -181,12 +181,12 @@ class C extends(i = Chunk647438.Component) {
     let {
       width: m,
       height: g
-    } = x(n, this.size), y = t - h, O = e - d, v = (0, p.ou)((0, p.PY)({
+    } = S(n, this.size), y = t - h, O = e - d, v = (0, p.ou)((0, p.PY)({
       top: y,
       left: O,
       bottom: true,
       right: true
-    }, r, l, m, g)), b = u ? (0, p.R)(v) : S("RESIZE_SOUTH_EAST", v);
+    }, r, l, m, g)), b = u ? (0, p.R)(v) : x("RESIZE_SOUTH_EAST", v);
     this.setDOMPositions(b), this.setState({
       operationStarted: true,
       anchorTopOverride: null != b.top,
@@ -515,7 +515,7 @@ class C extends(i = Chunk647438.Component) {
       let {
         width: s,
         height: c
-      } = x(i, this.size), u = (0, p.PY)(this.anchor, o, a, s, c);
+      } = S(i, this.size), u = (0, p.PY)(this.anchor, o, a, s, c);
       if ("MOVE" === e) {
         let {
           x: e,
@@ -537,7 +537,7 @@ class C extends(i = Chunk647438.Component) {
           offsetY: n - i
         })
       } else {
-        let i = S(e, u);
+        let i = x(e, u);
         this.setDOMPositions(i), this.dragState = y(g({}, this.dragState), {
           startX: t,
           startY: n,
@@ -566,7 +566,7 @@ class C extends(i = Chunk647438.Component) {
           onUpdate: t,
           id: n
         } = this.props;
-        t(e, n, this.anchor, this.size, x(this.ref.current, this.size))
+        t(e, n, this.anchor, this.size, S(this.ref.current, this.size))
       } : true;
       if (t) {
         let {
@@ -575,7 +575,7 @@ class C extends(i = Chunk647438.Component) {
         } = this.props.container, {
           width: n,
           height: r
-        } = x(this.ref.current, this.size), l = (0, p.PY)(this.anchor, e, t, n, r), o = (0, p.R)(l);
+        } = S(this.ref.current, this.size), l = (0, p.PY)(this.anchor, e, t, n, r), o = (0, p.R)(l);
         this.setDOMPositions(o), this.setDOMSize({
           width: n,
           height: r,

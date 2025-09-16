@@ -118,11 +118,11 @@ function C(e) {
   }, [er]), (0, s.ZP)(() => () => {
     a.Z.setGpuBoostRequested(y.zS.OVERLAY_VIDEO_STREAM_RENDERING, false)
   }), (er || !R) && T) ? null : er && !T ? z ? T ? null : (0, i.jsx)(O.E, {
-    emptyText: x.intl.string(x.t["T6+rX1"]),
+    emptyText: S.intl.string(S.t["T6+rX1"]),
     icon: o.hGI,
     absolute: true
   }) : null : (0, i.jsx)("div", {
-    className: S.goLiveGridContainer,
+    className: x.goLiveGridContainer,
     style: {
       opacity: D
     },
