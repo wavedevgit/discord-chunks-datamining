@@ -84,10 +84,11 @@ let p = 64,
           }),
           children: g
         }), y && (0, r.jsx)(m, {
+          className: _.rewardHighlightLogoCTADivider,
           style: {
             opacity: n.to({
               range: [0, 1],
-              output: [.52, 0]
+              output: [.1, 0]
             })
           }
         }), (0, r.jsx)(o.animated.div, {
