@@ -66,7 +66,7 @@ let E = () => ({
     },
     [Chunk505905.tN.FOCUSING]: {
       title: Chunk388032.intl.string(Chunk388032.t.D5eCT0),
-      icon: Chunk970683.FG
+      icon: Chunk970683.Nl
     }
   }),
   y = () => ({
