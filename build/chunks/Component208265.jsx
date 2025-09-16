@@ -1,7 +1,7 @@
 /** Chunk was on 65652 **/
 /** chunk id: 208265, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,22 +17,22 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk149390 = require("./149390.js");
 
-function h(e) {
+function _(e) {
   let {
     classificationId: n,
     transitionState: t,
-    initialSlide: h = p.Cs.SPEED_BUMP,
-    onClose: g
-  } = e, [C, N] = a.useState(h), {
+    initialSlide: _ = p.Cs.SPEED_BUMP,
+    onClose: h
+  } = e, [C, N] = a.useState(_), {
     classification: j,
     isDsaEligible: I
   } = (0, r.YG)(null != n ? n : u.lds), E = (null == j ? true : j.is_spam) || false, T = (null == j ? true : j.is_coppa) || false, v = null == j ? true : j.appeal_ingestion_type;
   a.useEffect(() => {
-    N(h)
-  }, [N, h]);
+    N(_)
+  }, [N, _]);
   let f = a.useCallback(() => {
-      d.Z.close(), g()
-    }, [g]),
+      d.Z.close(), h()
+    }, [h]),
     k = a.useCallback(() => {
       var e;
       let n = null == (e = p.JQ[C]) ? true : e.next;
@@ -50,7 +50,7 @@ function h(e) {
     size: l.CgR.DYNAMIC,
     parentComponent: "AppealIngestionModal",
     children: (0, i.jsx)("div", {
-      className: _.container,
+      className: g.container,
       children: (0, i.jsxs)(l.MyZ, {
         activeSlide: C,
         width: 500,

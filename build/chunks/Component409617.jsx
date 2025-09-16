@@ -29,9 +29,9 @@ function N(e) {
     onBack: j
   } = e, I = (0, u.U0)(), E = (0, r.e7)([m.Z], () => m.Z.getFreeTextAppealReason()), [T, v] = a.useState(""), [f, k] = a.useState(false);
   a.useEffect(() => {
-    v(null != E ? E : ""), k(I === _.bK.SOMETHING_ELSE)
+    v(null != E ? E : ""), k(I === g.bK.SOMETHING_ELSE)
   }, [E, I, t]);
-  let S = _.RY.map(e => ({
+  let S = g.RY.map(e => ({
     value: e,
     name: (0, p.ox)(e)
   }));
@@ -44,19 +44,20 @@ function N(e) {
       children: [(0, i.jsx)(c.X6q, {
         className: C.title,
         variant: "heading-xl/semibold",
-        children: h.intl.string(h.t["C5q+pa"])
+        children: _.intl.string(_.t["C5q+pa"])
       }), (0, i.jsx)(c.Text, {
         className: C.subtitle,
         color: "header-secondary",
         variant: "text-md/normal",
-        children: h.intl.string(h.t.VEcRh4)
+        children: _.intl.string(_.t.VEcRh4)
       }), null != s && (0, i.jsx)(c.olH, {
+        "data-migration-pending": true,
         className: C.closeButton,
         onClick: s
       })]
     }), (0, i.jsxs)(c.hzk, {
       "data-migration-pending": true,
-      className: l()(g.modalContent, n),
+      className: l()(h.modalContent, n),
       paddingFix: false,
       children: [(0, i.jsx)(o.Gu, {
         radioPosition: "right",
@@ -68,7 +69,7 @@ function N(e) {
           let {
             value: n
           } = e;
-          k(n === _.bK.SOMETHING_ELSE), n !== _.bK.SOMETHING_ELSE && (v(""), d.Z.dispatch({
+          k(n === g.bK.SOMETHING_ELSE), n !== g.bK.SOMETHING_ELSE && (v(""), d.Z.dispatch({
             type: "SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE",
             userInput: ""
           })), d.Z.dispatch({
@@ -80,19 +81,19 @@ function N(e) {
         children: [(0, i.jsx)(c.Kx8, {
           rows: 4,
           maxLength: 1024,
-          placeholder: h.intl.string(h.t.bQrZIC),
+          placeholder: _.intl.string(_.t.bQrZIC),
           value: T,
           onChange: v,
           autoFocus: true
         }), (0, i.jsx)(c.Text, {
           variant: "text-sm/normal",
           color: "header-muted",
-          children: h.intl.string(h.t.xfNY3N)
+          children: _.intl.string(_.t.xfNY3N)
         })]
       }), (0, i.jsx)(c.Text, {
         variant: "text-sm/normal",
-        className: g.disclaimer,
-        children: h.intl.format(h.t["8k9GCQ"], {})
+        className: h.disclaimer,
+        children: _.intl.format(_.t["8k9GCQ"], {})
       })]
     }), (0, i.jsx)(c.mzw, {
       "data-migration-pending": true,
@@ -100,7 +101,7 @@ function N(e) {
         direction: "horizontal-reverse",
         children: [(0, i.jsx)(c.zxk, {
           variant: "primary",
-          text: h.intl.string(h.t.PDTjLC),
+          text: _.intl.string(_.t.PDTjLC),
           onClick: () => {
             d.Z.dispatch({
               type: "SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE",
@@ -109,7 +110,7 @@ function N(e) {
           }
         }), (0, i.jsx)(c.zxk, {
           variant: "secondary",
-          text: h.intl.string(h.t["13/7kZ"]),
+          text: _.intl.string(_.t["13/7kZ"]),
           onClick: () => {
             d.Z.dispatch({
               type: "SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE",

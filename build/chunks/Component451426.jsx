@@ -1,7 +1,7 @@
 /** Chunk was on 65652 **/
 /** chunk id: 451426, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => h
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,11 +18,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk545833 = require("./545833.js"),
   Chunk186425 = require("./186425.js");
 
-function g(e) {
+function h(e) {
   let {
     className: n,
     isDsaEligible: t,
-    onClose: g,
+    onClose: h,
     onNext: C,
     onBack: N
   } = e, j = (0, s.e7)([d.Z], () => d.Z.getAppealClassificationId()), {
@@ -44,29 +44,30 @@ function g(e) {
     children: [(0, i.jsxs)(l.xBx, {
       "data-migration-pending": true,
       direction: o.Z.Direction.VERTICAL,
-      className: h.header,
+      className: _.header,
       separator: false,
       children: [(0, i.jsx)(l.X6q, {
-        className: h.title,
+        className: _.title,
         variant: "heading-xl/semibold",
         children: u.intl.string(u.t["C5q+pa"])
       }), (0, i.jsx)(l.Text, {
-        className: h.subtitle,
+        className: _.subtitle,
         color: "header-secondary",
         variant: "text-md/normal",
         children: u.intl.string(u.t["G2g/g4"])
-      }), null != g && (0, i.jsx)(l.olH, {
-        className: h.closeButton,
-        onClick: g
+      }), null != h && (0, i.jsx)(l.olH, {
+        "data-migration-pending": true,
+        className: _.closeButton,
+        onClick: h
       })]
     }), (0, i.jsxs)(l.hzk, {
       "data-migration-pending": true,
       className: n,
       paddingFix: false,
       children: [(0, i.jsx)("ul", {
-        className: _.listContainer,
+        className: g.listContainer,
         children: [(0, x.ox)(v), f].filter(e => e.length > 0).map((e, n) => (0, i.jsx)("li", {
-          className: _.listItem,
+          className: g.listItem,
           children: (0, i.jsx)(l.Text, {
             tag: "span",
             variant: "text-md/normal",
@@ -74,7 +75,7 @@ function g(e) {
           })
         }, n))
       }), t && (0, i.jsx)("div", {
-        className: _.anchorContainer,
+        className: g.anchorContainer,
         children: (0, i.jsx)(l.eee, {
           onClick: () => S(e => !e),
           children: (0, i.jsx)(l.X6q, {
@@ -84,13 +85,13 @@ function g(e) {
           })
         })
       }), k && t && (0, i.jsx)("div", {
-        className: _.inputContainer,
+        className: g.inputContainer,
         children: (0, i.jsx)(l.Kx8, {
           value: f,
           onChange: L
         })
       }), (0, i.jsx)("div", {
-        className: h.policyContainer,
+        className: _.policyContainer,
         children: (0, i.jsx)(l.Text, {
           variant: "text-md/semibold",
           children: E
@@ -98,19 +99,19 @@ function g(e) {
       }), (0, i.jsx)(l.Text, {
         variant: "text-xs/medium",
         color: "header-secondary",
-        className: _.footerText,
+        className: g.footerText,
         children: u.intl.string(u.t.d6qgY2)
       })]
     }), (0, i.jsxs)(l.mzw, {
       "data-migration-pending": true,
       direction: o.Z.Direction.VERTICAL,
       children: ["" !== A && (0, i.jsx)(l.Text, {
-        className: _.errorText,
+        className: g.errorText,
         variant: "text-lg/normal",
         color: "text-danger",
         children: A
       }), (0, i.jsx)("div", {
-        className: _.buttonContainer,
+        className: g.buttonContainer,
         children: (0, i.jsxs)(l.hE2, {
           direction: "horizontal-reverse",
           children: [(0, i.jsx)(l.zxk, {

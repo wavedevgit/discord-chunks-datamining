@@ -1,5 +1,5 @@
 /** Chunk was on 67749 **/
-/** chunk id: 91175, original params: e,t,n (module,exports,require) **/
+/** chunk id: 91175, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   default: () => h
 }), require("./388685.js");
@@ -17,28 +17,28 @@ var Chunk951288 = require("./951288.js"),
   Chunk248319 = require("./248319.js");
 let h = function(e) {
   let {
-    onClose: t,
-    onComplete: n,
+    onClose: n,
+    onComplete: t,
     transitionState: i,
     webviewUrl: h
   } = e, b = (0, r.GE)(), [x, C] = l.useState(0), _ = l.useCallback(() => {
-    n(), t()
-  }, [n, t]), k = l.useCallback(() => {
+    t(), n()
+  }, [t, n]), k = l.useCallback(() => {
     (0, s.nfh)(d.zJ) && _()
   }, [_]);
   (0, c.F5)(k);
-  let v = l.useCallback(e => {
+  let g = l.useCallback(e => {
       if (b && "" !== h) {
-        var t;
-        (null == e || null == (t = e.data) ? true : t.eventType) === "Verification.Result" && _()
+        var n;
+        (null == e || null == (n = e.data) ? true : n.eventType) === "Verification.Result" && _()
       }
     }, [h, _, b]),
-    g = l.useCallback(() => {
+    v = l.useCallback(() => {
       C(x + 1)
     }, [x]);
-  return l.useEffect(() => (window.addEventListener("message", v), () => {
-    window.removeEventListener("message", v)
-  }), [v]), (0, a.jsxs)(s.Y0X, {
+  return l.useEffect(() => (window.addEventListener("message", g), () => {
+    window.removeEventListener("message", g)
+  }), [g]), (0, a.jsxs)(s.Y0X, {
     "data-migration-pending": true,
     transitionState: i,
     className: o()(p.root, m.fullbleedContent),
@@ -55,6 +55,7 @@ let h = function(e) {
         allow: "camera; microphone"
       }, x)
     }), (0, a.jsx)(s.mzw, {
+      "data-migration-pending": true,
       children: (0, a.jsxs)(s.hE2, {
         fullWidth: true,
         children: [(0, a.jsx)(s.zxk, {
@@ -62,13 +63,13 @@ let h = function(e) {
           variant: "secondary",
           icon: s.j9r,
           text: f.intl.string(u.default.b7Oqdn),
-          onClick: t
+          onClick: n
         }), (0, a.jsx)(s.zxk, {
           fullWidth: true,
           variant: "secondary",
           icon: s.DuK,
           text: f.intl.string(u.default["0vTx7u"]),
-          onClick: g
+          onClick: v
         })]
       })
     })]

@@ -1,7 +1,7 @@
 /** Chunk was on 65652 **/
 /** chunk id: 534044, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -17,12 +17,12 @@ var Chunk120356 = require("./120356.js"),
   Chunk186425 = require("./186425.js"),
   Chunk160557 = require("./160557.js");
 
-function _(e) {
+function g(e) {
   let {
     className: n,
     onNext: t,
     onClose: a
-  } = e, _ = (0, o.n)();
+  } = e, g = (0, o.n)();
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(l.xBx, {
       "data-migration-pending": true,
@@ -46,6 +46,7 @@ function _(e) {
         variant: "text-md/normal",
         children: x.intl.string(x.t.Qdx8AA)
       }), null != a && (0, i.jsx)(l.olH, {
+        "data-migration-pending": true,
         className: p.closeButton,
         onClick: a
       })]
@@ -61,11 +62,11 @@ function _(e) {
       }), (0, i.jsx)(c.Z, {
         text: x.intl.string(x.t.PxL38P),
         url: d.sQ.COMMUNITY_GUIDELINES,
-        onClick: () => _(d.n0.ClickCommunityGuidelinesLink)
+        onClick: () => g(d.n0.ClickCommunityGuidelinesLink)
       }), (0, i.jsx)(c.Z, {
         text: x.intl.string(x.t.qC3XKS),
         url: d.sQ.WARNING_SYSTEM_HELPCENTER_LINK,
-        onClick: () => _(d.n0.ClickWarningSystemHelpcenterLink)
+        onClick: () => g(d.n0.ClickWarningSystemHelpcenterLink)
       })]
     }), (0, i.jsx)(l.mzw, {
       "data-migration-pending": true,
