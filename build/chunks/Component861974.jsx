@@ -58,10 +58,10 @@ function f(e) {
     className: a()(l.container, p, o),
     children: [(0, r.jsx)("div", {
       className: l.iconDiv,
-      children: _ && (0, r.jsx)(_, {
+      children: null != _ ? (0, r.jsx)(_, {
         className: l.icon,
         color: "currentColor"
-      })
+      }) : null
     }), (0, r.jsx)(s.x, {
       className: l.text,
       color: c,

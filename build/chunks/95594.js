@@ -99,7 +99,7 @@ function f(e) {
     paddingHorizontal: O,
     marginLeft: N / 2,
     dir: v
-  }), S.computeVisibleSections(Math.max(0, P * _), w * _), S.getState()), [R, S, t, n, s, c, f, P, w, _, m, g, E, b, y, O, C, v]), u(l({}, T.current), {
+  }), S.computeVisibleSections(Math.max(0, P * _), w * _), S.getState()), [R, S, t, n, s, c, f, P, w, _, m, g, E, b, y, O, C, N, v]), u(l({}, T.current), {
     masonryComputer: S,
     forceUpdateOnChunkChange: D,
     forceUpdate: I
