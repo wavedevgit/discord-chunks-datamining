@@ -1,7 +1,7 @@
 /** Chunk was on 85683 **/
 /** chunk id: 462923, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,29 +19,29 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk842788 = require("./842788.js");
 
-function y(e) {
+function v(e) {
   let {
     guildId: t,
     instance: n
-  } = e, y = (0, a.e7)([u.Z], () => u.Z.getState()), j = i.useCallback(() => {
-    y ? (0, p.Z)(n) : (0, g.Z)({
+  } = e, v = (0, a.e7)([u.Z], () => u.Z.getState()), j = i.useCallback(() => {
+    v ? (0, p.Z)(n) : (0, b.Z)({
       onAccept: () => {
         (0, p.Z)(n)
       }
     })
-  }, [n, y]), P = i.useCallback(() => {
+  }, [n, v]), h = i.useCallback(() => {
     (0, l.JG)(n.serverIP), (0, o.showToast)((0, o.createToast)(f.intl.string(f.t["+5kSoa"]), o.ToastType.SUCCESS))
-  }, [n.serverIP]), h = (0, d.Z)(t);
+  }, [n.serverIP]), P = (0, d.Z)(t);
   return (0, r.jsxs)("div", {
-    className: v.card,
+    className: y.card,
     children: [(0, r.jsxs)("div", {
-      className: v.serverHeader,
+      className: y.serverHeader,
       children: [(0, r.jsx)("img", {
         src: "https://via.placeholder.com/80x80/4CAF50/FFFFFF?text=MC",
         alt: "",
-        className: v.gameImage
+        className: y.gameImage
       }), (0, r.jsxs)("div", {
-        className: v.serverInfo,
+        className: y.serverInfo,
         children: [(0, r.jsx)(o.X6q, {
           variant: "heading-sm/medium",
           children: n.name
@@ -52,63 +52,63 @@ function y(e) {
         })]
       })]
     }), (0, r.jsx)("div", {
-      className: v.serverDetails,
+      className: y.serverDetails,
       children: (0, r.jsxs)("div", {
-        className: v.detailsGrid,
+        className: y.detailsGrid,
         children: [(0, r.jsxs)("div", {
-          className: v.detailItem,
+          className: y.detailItem,
           children: [(0, r.jsx)(o.Text, {
             variant: "text-xs/semibold",
-            children: f.intl.string(b.default.X0IaiI)
+            children: f.intl.string(g.default.X0IaiI)
           }), (0, r.jsx)(o.Text, {
             variant: "text-sm/medium",
             children: "".concat(n.onlineConnectionsCount, " / ").concat(n.maxConnectionsCount)
           })]
         }), (0, r.jsxs)("div", {
-          className: v.detailItem,
+          className: y.detailItem,
           children: [(0, r.jsx)(o.Text, {
             variant: "text-xs/semibold",
-            children: f.intl.string(b.default["9pw/yM"])
+            children: f.intl.string(g.default["9pw/yM"])
           }), (0, r.jsx)("div", {
-            className: v.serverIpContainer,
-            children: y ? (0, r.jsxs)(r.Fragment, {
+            className: y.serverIpContainer,
+            children: v ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)(o.Text, {
                 variant: "text-sm/medium",
                 children: n.serverIP
               }), (0, r.jsx)(o.P3F, {
-                className: v.copyButton,
+                className: y.copyButton,
                 "aria-label": f.intl.string(f.t.OpuAlJ),
-                onClick: P,
+                onClick: h,
                 children: (0, r.jsx)(o.TIy, {
                   size: "sm"
                 })
               })]
             }) : (0, r.jsx)(s.Z, {
               onClick: () => {
-                (0, g.Z)({})
+                (0, b.Z)({})
               },
-              children: f.intl.string(b.default.UwXK29)
+              children: f.intl.string(g.default.UwXK29)
             })
           })]
         }), (0, r.jsxs)("div", {
-          className: v.detailItem,
+          className: y.detailItem,
           children: [(0, r.jsx)(o.Text, {
             variant: "text-xs/semibold",
-            children: f.intl.string(b.default.MQQIu7)
+            children: f.intl.string(g.default.MQQIu7)
           }), (0, r.jsxs)("div", {
-            className: v.statusContainer,
+            className: y.statusContainer,
             children: [(0, r.jsx)("span", {
-              className: v.statusIndicator
+              className: y.statusIndicator
             }), (0, r.jsx)(o.Text, {
               variant: "text-sm/medium",
               children: n.status
             })]
           })]
         }), (0, r.jsxs)("div", {
-          className: v.detailItem,
+          className: y.detailItem,
           children: [(0, r.jsx)(o.Text, {
             variant: "text-xs/semibold",
-            children: f.intl.string(b.default.v8iSgI)
+            children: f.intl.string(g.default.v8iSgI)
           }), (0, r.jsx)(o.Text, {
             variant: "text-sm/medium",
             children: (0, c.Y4)(new Date(n.lastUpdated))
@@ -116,22 +116,22 @@ function y(e) {
         })]
       })
     }), (0, r.jsxs)("div", {
-      className: v.serverActions,
+      className: y.serverActions,
       children: [(0, r.jsx)(o.zxk, {
         fullWidth: true,
-        text: f.intl.string(b.default["0TMXHh"]),
+        text: f.intl.string(g.default["0TMXHh"]),
         onClick: j,
         variant: "primary"
-      }), h && (0, r.jsx)(o.zxk, {
+      }), P && (0, r.jsx)(o.zxk, {
         fullWidth: true,
-        text: f.intl.string(b.default["jO3u+/"]),
+        text: f.intl.string(g.default["jO3u+/"]),
         onClick: () => {
           window.open(n.gameServerPanelUrl, "_blank")
         },
         variant: "secondary"
       })]
     }), (0, r.jsx)("div", {
-      className: v.overflowMenu,
+      className: y.overflowMenu,
       children: (0, r.jsx)(m.Z, {
         guildId: t,
         instance: n

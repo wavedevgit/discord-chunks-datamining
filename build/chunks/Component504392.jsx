@@ -45,9 +45,9 @@ function R(e) {
   o.useEffect(() => {
     R && ((0, m.EC)(t), (0, m.po)(t))
   }, [t, R]), o.useEffect(() => {
-    (0, v.Sn)(t), (0, v.BN)(t)
-  }, [t]), (0, w.Wj)(t);
-  let L = (0, a.e7)([_.Z], () => _.Z.getStateForGuild(t)),
+    (0, _.Sn)(t), (0, _.BN)(t)
+  }, [t]), (0, S.Wj)(t);
+  let L = (0, a.e7)([v.Z], () => v.Z.getStateForGuild(t)),
     M = (0, x.Z)(t),
     G = o.useRef(false),
     {
@@ -81,7 +81,7 @@ function R(e) {
             e.openModal(n.powerups, {
               onModalClose: () => {
                 let e = new URL(window.location.href);
-                e.searchParams.delete(S.am);
+                e.searchParams.delete(Z.am);
                 let t = e.pathname + e.search + e.hash;
                 (0, p.dL)(t), G.current = false
               }
@@ -117,7 +117,7 @@ function R(e) {
       }, t))
     }, {
       onCloseCallback: () => {
-        K(Z.L.USER_DISMISS)
+        K(w.L.USER_DISMISS)
       },
       modalKey: "dismissible_content_".concat(F)
     })
@@ -131,7 +131,7 @@ function R(e) {
         icon: c.$Eu,
         "aria-label": ""
       }), (0, r.jsx)(d.Z.Title, {
-        children: O.intl.string(k.default.yv3DJC)
+        children: k.intl.string(O.default.yv3DJC)
       })]
     }), (0, r.jsxs)("div", {
       className: A.contentContainer,
@@ -146,16 +146,16 @@ function R(e) {
             description: a
           } = function(e) {
             switch (e) {
-              case S.Us.LEVEL:
+              case Z.Us.LEVEL:
                 return {
-                  title: O.intl.string(k.default["TXY/b2"]), description: O.intl.string(k.default.aJv4PD)
+                  title: k.intl.string(O.default["TXY/b2"]), description: k.intl.string(O.default.aJv4PD)
                 };
-              case S.Us.PERK:
+              case Z.Us.PERK:
                 return {
-                  title: O.intl.string(k.default.TV3Vm5), description: O.intl.string(k.default.STx9ho)
+                  title: k.intl.string(O.default.TV3Vm5), description: k.intl.string(O.default.STx9ho)
                 }
             }
-          }(n), s = n === S.Us.LEVEL ? c.zJl : "div";
+          }(n), s = n === Z.Us.LEVEL ? c.zJl : "div";
           return (0, r.jsxs)("div", {
             className: A.powerupsSection,
             children: [(0, r.jsxs)("div", {
@@ -172,7 +172,7 @@ function R(e) {
             }), (0, r.jsx)(s, {
               orientation: "horizontal",
               className: l()(A.powerupContainer, A.powerupHorizontalPadding, {
-                [A.powerupsLevelContainer]: n === S.Us.LEVEL
+                [A.powerupsLevelContainer]: n === Z.Us.LEVEL
               }),
               fade: true,
               children: o.map((e, n) => {
@@ -207,11 +207,11 @@ function R(e) {
         })
       }), (0, r.jsxs)("div", {
         className: A.sidebarContainer,
-        children: [M ? (0, r.jsx)(j.Z, {
+        children: [M ? (0, r.jsx)(T.Z, {
           guildId: t
         }) : (0, r.jsx)(I.Z, {
           guildId: t
-        }), (0, r.jsx)(T.Z, {
+        }), (0, r.jsx)(j.Z, {
           guildId: t
         })]
       })]

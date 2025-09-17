@@ -22,11 +22,11 @@ function f(e) {
     powerups: n
   } = e, {
     spent: f
-  } = (0, d.Z)(t), v = (0, s.e7)([u.Z], () => u.Z.getAppliedGuildBoostsForGuild(t), [t]), _ = f - o.useMemo(() => {
+  } = (0, d.Z)(t), _ = (0, s.e7)([u.Z], () => u.Z.getAppliedGuildBoostsForGuild(t), [t]), v = f - o.useMemo(() => {
     var e, t, n;
-    return null != (n = null == v || null == (t = v.filter) || null == (e = t.call(v, e => !e.ended && null == e.endsAt)) ? true : e.length) ? n : 0
-  }, [v]);
-  if (_ <= 0) return null;
+    return null != (n = null == _ || null == (t = _.filter) || null == (e = t.call(_, e => !e.ended && null == e.endsAt)) ? true : e.length) ? n : 0
+  }, [_]);
+  if (v <= 0) return null;
   let x = n.some(e => e.skuId === i.A$);
   return (0, r.jsxs)("div", {
     className: g.container,
@@ -40,7 +40,7 @@ function f(e) {
     }), (0, r.jsxs)(a.xvT, {
       variant: "text-sm/medium",
       children: [m.intl.formatToPlainString(p.default.iAaAiI, {
-        boostCount: _,
+        boostCount: v,
         perksString: n.map(e => e.title).join(", ")
       }), x && (0, r.jsx)(a.xvT, {
         variant: "text-sm/medium",

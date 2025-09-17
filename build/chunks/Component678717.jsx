@@ -280,7 +280,7 @@ function eh(e) {
       id: "gifting_intent",
       name: "Gifting Intent",
       group: es.v0.PREMIUM,
-      render: () => (0, a.jsx)(w.Z, {})
+      render: () => (0, a.jsx)(I.Z, {})
     }), e.push({
       id: "voice_filters",
       name: "Voice Filters",
@@ -295,7 +295,7 @@ function eh(e) {
       id: "skill_trees",
       name: "Skill Trees",
       group: es.v0.GUILDS,
-      render: () => (0, a.jsx)(I.Z, {})
+      render: () => (0, a.jsx)(w.Z, {})
     }), e.push({
       id: "language",
       name: "Language",

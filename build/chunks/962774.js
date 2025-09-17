@@ -49,17 +49,25 @@ let a = [{
     }]
   }],
   r = [{
-    region: "Test #1",
-    pingUrl: "wss://bhs1.shockbyte.host/ping"
+    id: "1",
+    name: "Test #1",
+    countryCode: "US",
+    pingUrl: "bhs1.shockbyte.host/ping"
   }, {
-    region: "Test #2",
-    pingUrl: "wss://bhs1.shockbyte.host/ping"
+    id: "2",
+    name: "Test #2",
+    countryCode: "US",
+    pingUrl: "bhs1.shockbyte.host/ping"
   }, {
-    region: "Test #3",
-    pingUrl: "wss://bhs1.shockbyte.host/ping"
+    id: "3",
+    name: "Test #3",
+    countryCode: "US",
+    pingUrl: "bhs1.shockbyte.host/ping"
   }, {
-    region: "Test #4",
-    pingUrl: "wss://bhs1.shockbyte.host/ping"
+    id: "4",
+    name: "Test #4",
+    countryCode: "US",
+    pingUrl: "bhs1.shockbyte.host/ping"
   }];
 
 function l(e, t) {

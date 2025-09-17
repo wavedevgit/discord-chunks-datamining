@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 51859, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => v
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,20 +18,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk535396 = require("./535396.js"),
   Chunk237522 = require("./237522.js");
 
-function _(e) {
+function v(e) {
   let {
     guildId: t,
     powerup: n
-  } = e, [_, x] = o.useState(true);
-  (0, m.KT)(_);
-  let [C, h] = o.useState(false), b = (0, s.ZP)(t, n).type !== f.A3.INACTIVE, E = (0, g.d)(b), j = (0, a.g1)(t, "GuildPowerupPerkCard"), I = n.skuId === i.A$;
+  } = e, [v, x] = o.useState(true);
+  (0, m.KT)(v);
+  let [C, h] = o.useState(false), b = (0, s.ZP)(t, n).type !== f.A3.INACTIVE, E = (0, g.d)(b), T = (0, a.g1)(t, "GuildPowerupPerkCard"), I = n.skuId === i.A$;
   return (0, r.jsxs)(p.Z, {
     onHover: e => h(e),
     guildId: t,
     powerup: n,
-    badge: I || j ? I && j ? "beta" : true : "new",
+    badge: I || T ? I && T ? "beta" : true : "new",
     children: [(0, r.jsx)(d.m, {
-      className: v.image,
+      className: _.image,
       powerup: n,
       isHovering: C
     }), (0, r.jsx)(c.Q9, {
@@ -42,7 +42,7 @@ function _(e) {
         powerup: n
       }),
       children: (0, r.jsx)(l.Text, {
-        className: v.description,
+        className: _.description,
         color: E,
         variant: "text-sm/medium",
         children: n.description

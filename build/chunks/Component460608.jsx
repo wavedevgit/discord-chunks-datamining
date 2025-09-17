@@ -46,12 +46,12 @@ function x(e) {
     b !== n.length && (0, s.C0)(t)
   }, [t, b, n.length]), 0 === x.length) ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.X6q, {
-      className: _.header,
+      className: v.header,
       variant: "eyebrow",
       color: "text-secondary",
-      children: v.intl.string(v.t.yM9Krq)
+      children: _.intl.string(_.t.yM9Krq)
     }), (0, r.jsx)(i.zJ, {
-      className: _.container,
+      className: v.container,
       fade: true,
       children: x.map((e, t) => (0, r.jsx)(f.Z, {
         boost: e

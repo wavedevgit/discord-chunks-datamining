@@ -36,11 +36,11 @@ function C(e) {
       children: [(0, r.jsx)(o.xvT, {
         variant: "eyebrow",
         color: "text-secondary",
-        children: _.intl.string(v.default.hjvcLC)
+        children: v.intl.string(_.default.hjvcLC)
       }), (0, r.jsx)(o.xvT, {
         className: x.learnMore,
         variant: "text-xs/semibold",
-        children: _.intl.format(v.default.fXE30d, {
+        children: v.intl.format(_.default.fXE30d, {
           helpDeskArticle: d.Z.getArticleURL(f.BhN.GUILD_BOOSTING_FAQ)
         })
       })]

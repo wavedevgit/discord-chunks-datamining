@@ -37,11 +37,11 @@ function f(e) {
     powerup: p,
     badge: g,
     className: f,
-    onHover: v,
-    children: _
-  } = e, x = (0, a.Z)(n), C = (0, s.ZP)(n, p), h = C.type !== m.A3.INACTIVE, b = (null == (t = C.sourceEntitlement) ? true : t.ends_at) != null, E = (0, l.Z)(n, p, "GuildPowerupCard"), j = o.useRef(null), {
+    onHover: _,
+    children: v
+  } = e, x = (0, a.Z)(n), C = (0, s.ZP)(n, p), h = C.type !== m.A3.INACTIVE, b = (null == (t = C.sourceEntitlement) ? true : t.ends_at) != null, E = (0, l.Z)(n, p, "GuildPowerupCard"), T = o.useRef(null), {
     onShowMore: I
-  } = (0, d.ZP)(n, p), [T, P] = o.useState(false), y = (0, i.O)(P, 1);
+  } = (0, d.ZP)(n, p), [j, P] = o.useState(false), y = (0, i.O)(P, 1);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.aB, {
       label: p.title,
@@ -50,17 +50,17 @@ function f(e) {
       badge: g,
       canRollback: E,
       onClick: I,
-      onMouseOver: () => null == v ? true : v(true),
-      onMouseLeave: () => null == v ? true : v(false),
+      onMouseOver: () => null == _ ? true : _(true),
+      onMouseLeave: () => null == _ ? true : _(false),
       className: f,
       ref: e => {
-        j.current = e, y.current = e
+        T.current = e, y.current = e
       },
-      children: _
+      children: v
     }), !E && x && (0, r.jsx)(u.Z, {
       powerup: p,
-      targetRef: j,
-      isCardVisible: T
+      targetRef: T,
+      isCardVisible: j
     })]
   })
 }

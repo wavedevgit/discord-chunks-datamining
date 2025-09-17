@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk206583 = require("./206583.js"),
   Chunk680027 = require("./680027.js"),
   Chunk451429 = require("./451429.js");
-let w = [{
+let I = [{
   key: "type",
   cellClassName: i()(Chunk680027.cell, Chunk680027.cellType),
   render(e) {
@@ -65,13 +65,13 @@ let w = [{
     let {
       type: t
     } = e;
-    return (0, a.jsx)(I, {
+    return (0, a.jsx)(w, {
       type: t
     })
   }
 }];
 
-function I(e) {
+function w(e) {
   var t, n;
   let {
     type: r
@@ -112,11 +112,11 @@ function Z() {
       var e;
       return (null == (e = Chunk146282.Z.getFeedState(Chunk206583.YN.GLOBAL_FEED)) ? true : module.loading) === true
     }),
-    [I, Z] = Chunk647438.useState(""),
+    [w, Z] = Chunk647438.useState(""),
     D = (0, Chunk442837.e7)([Chunk77498.Z, Chunk812206.Z], () => {
       var e, t, n;
-      return parseInt(I) > 0 ? I : null != (n = null == (e = Chunk77498.Z.getGameByName(I)) ? true : module.id) ? require : null == (t = Chunk812206.Z.getApplicationByName(I)) ? true : exports.id
-    }, [I]),
+      return parseInt(w) > 0 ? w : null != (n = null == (e = Chunk77498.Z.getGameByName(w)) ? true : module.id) ? require : null == (t = Chunk812206.Z.getApplicationByName(w)) ? true : exports.id
+    }, [w]),
     L = (0, Chunk168524.Z)({
       applicationId: D,
       location: "DevToolsContentInventory",
@@ -139,7 +139,7 @@ function Z() {
         children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           children: "Inventory"
         }), Chunk392711.length > 0 && (0, Chunk951288.jsx)(Chunk681619.Z, {
-          columns: w,
+          columns: I,
           data: Chunk392711
         }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
           size: 8
@@ -209,9 +209,9 @@ function Z() {
           placeholder: "App ID or full name",
           onChange: e => (0 === e.length || e.length >= 18) && Z(e),
           onKeyDown: e => {
-            "Enter" === e.key && (I === e.currentTarget.value ? null == L || L(e) : Z(e.currentTarget.value))
+            "Enter" === e.key && (w === e.currentTarget.value ? null == L || L(e) : Z(e.currentTarget.value))
           },
-          error: I.length > 0 && null == L ? "No game profile for ".concat(null != D ? D : I + " - try by id", ".") : true,
+          error: w.length > 0 && null == L ? "No game profile for ".concat(null != D ? D : w + " - try by id", ".") : true,
           successMessage: null != L ? "Game profile found" : true
         }), (0, Chunk951288.jsx)("ul", {
           children: U.map(e => (0, a.jsx)("li", {

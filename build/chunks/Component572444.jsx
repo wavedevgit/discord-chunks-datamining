@@ -107,8 +107,8 @@ function _() {
     inputMode: P,
     echoCancellation: k,
     autoThreshold: R,
-    vadUseKrisp: w,
-    vadKrispActivationThreshold: I,
+    vadUseKrisp: I,
+    vadKrispActivationThreshold: w,
     noiseCancellation: Z,
     noiseSuppression: A,
     noiseSuppressionSupported: D,
@@ -235,17 +235,17 @@ function _() {
             tag: Chunk481060.RB0.H3,
             children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
               hideBorder: true,
-              value: w,
+              value: I,
               onChange: e => d.Z.setMode(b.pM.VOICE_ACTIVITY, {
                 vadUseKrisp: e
               }),
               children: "Use Krisp VAD"
             })
-          }), w && (0, Chunk951288.jsx)(Chunk481060.hjN, {
+          }), I && (0, Chunk951288.jsx)(Chunk481060.hjN, {
             title: "Krisp VAD Activation Threshold",
             tag: Chunk481060.RB0.H3,
             children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
-              initialValue: I,
+              initialValue: w,
               onValueChange: e => d.Z.setMode(b.pM.VOICE_ACTIVITY, {
                 vadKrispActivationThreshold: e
               }),

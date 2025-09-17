@@ -46,14 +46,14 @@ function E(e) {
   })
 }
 
-function j(e) {
+function T(e) {
   let {
     isActive: t,
     index: n
   } = e, i = (0, f.d)(t), l = (0, f.u)(t), s = o.useMemo(() => {
     let e = c.C[n];
     if (null == e) return [];
-    let t = e.tier === _.Eu4.TIER_3 ? e.perks.slice(0, false) : e.perks;
+    let t = e.tier === v.Eu4.TIER_3 ? e.perks.slice(0, false) : e.perks;
     return null == t ? true : t.map((e, t) => (0, r.jsxs)("div", {
       className: b.perkRow,
       children: [(0, r.jsx)(e.icon, {
@@ -86,7 +86,7 @@ function I(e) {
     index: n,
     powerup: i,
     nextPowerup: l
-  } = e, a = (0, u.ZP)(t, i), s = (0, u.ZP)(t, l), c = a.type !== v.A3.INACTIVE, _ = s.type !== v.A3.INACTIVE, x = a.type === v.A3.TIER_OVERRIDE_ACTIVATED, [C, h] = o.useState(true);
+  } = e, a = (0, u.ZP)(t, i), s = (0, u.ZP)(t, l), c = a.type !== _.A3.INACTIVE, v = s.type !== _.A3.INACTIVE, x = a.type === _.A3.TIER_OVERRIDE_ACTIVATED, [C, h] = o.useState(true);
   (0, g.KT)(C);
   let I = (0, f.d)(c);
   return (0, r.jsxs)(m.Z, {
@@ -96,7 +96,7 @@ function I(e) {
     children: [(0, r.jsx)(E, {
       position: 0 === n ? "start" : null == l ? "end" : "middle",
       active: c,
-      nextActive: null != l ? _ : true
+      nextActive: null != l ? v : true
     }), (0, r.jsx)(d.Q9, {
       title: i.title,
       textColor: I,
@@ -105,7 +105,7 @@ function I(e) {
         guildId: t,
         powerup: i
       }),
-      children: (0, r.jsx)(j, {
+      children: (0, r.jsx)(T, {
         isActive: c,
         index: n
       })

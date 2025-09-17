@@ -5,9 +5,9 @@ require.d(exports, {
   P2: () => g,
   Q9: () => C,
   aB: () => h,
-  c: () => v,
+  c: () => _,
   rL: () => f,
-  uf: () => _
+  uf: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -57,7 +57,7 @@ function f(e) {
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     removingAt: t
   } = e;
@@ -76,7 +76,7 @@ function v(e) {
   })
 }
 
-function _(e) {
+function v(e) {
   let {
     cost: t,
     costDecorator: n,
@@ -102,7 +102,7 @@ function _(e) {
       })]
     }), (null == o ? true : o.type) === "expiring" && (0, r.jsx)(f, {
       dateString: o.expiringAt
-    }), (null == o ? true : o.type) === "removing" && (0, r.jsx)(v, {
+    }), (null == o ? true : o.type) === "removing" && (0, r.jsx)(_, {
       removingAt: o.removingAt
     }), (null == o ? true : o.type) === "active" && (0, r.jsx)(g, {
       text: o.statusText
@@ -151,8 +151,8 @@ let h = Chunk647438.forwardRef(function(e, t) {
     canRollback: d,
     onClick: g,
     onMouseOver: f,
-    onMouseLeave: v,
-    children: _
+    onMouseLeave: _,
+    children: v
   } = e;
   return (0, r.jsx)("div", {
     className: l()(m.parentContainer, {
@@ -163,12 +163,12 @@ let h = Chunk647438.forwardRef(function(e, t) {
       "aria-label": o,
       onClick: g,
       onMouseOver: f,
-      onMouseLeave: v,
+      onMouseLeave: _,
       className: l()(m.container, {
         [m.active]: i,
         [m.warning]: c || d && i
       }, n),
-      children: [_, "new" === u && (0, r.jsx)(a.IGR, {
+      children: [v, "new" === u && (0, r.jsx)(a.IGR, {
         className: m.new,
         text: p.intl.string(p.t.y2b7CA)
       }), "beta" === u && (0, r.jsx)(a.IGR, {

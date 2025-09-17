@@ -29,15 +29,15 @@ function E(e) {
   } = e, n = (0, s.e7)([m.Z], () => m.Z.getStateForGuild(t)), i = o.useMemo(() => {
     if ((null == n ? true : n.instances) != null && 0 !== Object.keys(n.instances).length) return {
       type: "active",
-      statusText: _.intl.string(f.default.FFLkm5)
+      statusText: v.intl.string(f.default.FFLkm5)
     }
-  }, [null == n ? true : n.instances]), E = (0, p.d)((null == i ? true : i.type) === "active"), j = o.useMemo(() => {
+  }, [null == n ? true : n.instances]), E = (0, p.d)((null == i ? true : i.type) === "active"), T = o.useMemo(() => {
     if ((null == n ? true : n.catalog) == null) return 0;
     let e = Object.values(n.catalog);
     return 0 === e.length ? 0 : Math.min(...e.map(e => e.baseCost))
   }, [null == n ? true : n.catalog]);
   return null == n ? null : (0, r.jsxs)(d.aB, {
-    label: _.intl.string(v.default["fjt/vr"]),
+    label: v.intl.string(_.default["fjt/vr"]),
     badge: "new",
     isActive: (null == i ? true : i.type) === "active",
     onClick: () => (0, g.Z)({
@@ -54,10 +54,10 @@ function E(e) {
         className: l()(x.image, h.gradient)
       })]
     }), (0, r.jsx)(d.Q9, {
-      title: _.intl.string(v.default["fjt/vr"]),
+      title: v.intl.string(_.default["fjt/vr"]),
       textColor: E,
       footer: (0, r.jsx)(d.uf, {
-        cost: j,
+        cost: T,
         costDecorator: "+",
         status: i
       }),
@@ -65,13 +65,13 @@ function E(e) {
         className: x.description,
         color: E,
         variant: "text-sm/medium",
-        children: _.intl.string(v.default.P7VSCg)
+        children: v.intl.string(_.default.P7VSCg)
       })
     }), (0, r.jsx)(d.N4, {
       children: (0, r.jsx)(c.zxk, {
         variant: "primary",
         fullWidth: true,
-        text: _.intl.string(v.default.MbdLuL),
+        text: v.intl.string(_.default.MbdLuL),
         onClick: e => {
           e.stopPropagation(), (0, g.Z)({
             guildId: t,

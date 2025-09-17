@@ -11,5 +11,6 @@ module.exports = {
   messageButton: "messageButton__8d6f9",
   previewCard: "previewCard__8d6f9",
   heading: "heading__8d6f9",
+  questChannelCallHeaderWrapper: "questChannelCallHeaderWrapper__8d6f9",
   questTile: "questTile__8d6f9"
 }

@@ -22,8 +22,8 @@ function f(e) {
     boost: t
   } = e, n = new Date(u.default.extractTimestamp(t.id)), {
     username: f,
-    roleColor: v,
-    roleColorStrings: _
+    roleColor: _,
+    roleColorStrings: v
   } = (0, i.cj)([c.ZP], () => {
     var e, n, r, o;
     let i = c.ZP.getMember(t.guildId, t.userId);
@@ -32,7 +32,7 @@ function f(e) {
       roleColor: null != (r = null == i ? true : i.colorString) ? r : null,
       roleColorStrings: null != (o = null == i ? true : i.colorStrings) ? o : null
     }
-  }, [t]), x = (0, d.X7)(t.guildId, t.userId, null != _ ? _ : null);
+  }, [t]), x = (0, d.X7)(t.guildId, t.userId, null != v ? v : null);
   return (0, r.jsx)(s.Z, {
     className: g.systemMessageContainer,
     contentClassName: g.systemMessageContent,
@@ -52,7 +52,7 @@ function f(e) {
         className: g.boostMessageUser,
         variant: "text-md/semibold",
         name: f,
-        colorString: null != v ? v : null,
+        colorString: null != _ ? _ : null,
         colorStrings: x
       }), (0, r.jsx)(o.xvT, {
         variant: "text-md/medium",

@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 426771, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => v
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,20 +18,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk639560 = require("./639560.js");
 
-function _(e) {
-  var t, n, _;
+function v(e) {
+  var t, n, v;
   let x, {
       guildId: C,
       group: h,
       powerups: b
     } = e,
-    [E, j] = o.useState(false),
+    [E, T] = o.useState(false),
     I = (0, c.Gv)(C, b),
-    T = (0, i.e7)([s.Z], () => s.Z.useReducedMotion),
+    j = (0, i.e7)([s.Z], () => s.Z.useReducedMotion),
     P = (0, d.Z)(h, C);
   if (true === P || b.length <= 0) return null;
   let y = I.some(e => e.type !== m.A3.INACTIVE),
-    w = (0, p.d)(y),
+    S = (0, p.d)(y),
     N = I.reduce((e, t) => {
       let {
         sourceEntitlement: n
@@ -45,30 +45,30 @@ function _(e) {
     type: "active",
     statusText: f.intl.string(g.default.FFLkm5)
   });
-  let S = I.reduce((e, t) => {
+  let Z = I.reduce((e, t) => {
       let {
         type: n,
         powerup: r
       } = t;
       return n === m.A3.POWERUP_ACTIVATED ? e + r.cost : e
     }, 0),
-    Z = I.reduce((e, t) => {
+    w = I.reduce((e, t) => {
       var n, r;
       let {
         powerup: o
       } = t;
       return e < (null != (n = null == o ? true : o.cost) ? n : 0) ? e : null != (r = null == o ? true : o.cost) ? r : 0
-    }, null != (_ = null == (n = I[0]) || null == (t = n.powerup) ? true : t.cost) ? _ : 0),
-    k = I.reduce((e, t) => {
+    }, null != (v = null == (n = I[0]) || null == (t = n.powerup) ? true : t.cost) ? v : 0),
+    O = I.reduce((e, t) => {
       var n;
       let {
         powerup: r
       } = t;
       return e + (null != (n = null == r ? true : r.cost) ? n : 0)
     }, 0),
-    O = y ? S : Z,
-    A = !y && k > O ? "+" : true,
-    U = !T && E ? P.image.animatedUrl : P.image.staticUrl,
+    k = y ? Z : w,
+    A = !y && O > k ? "+" : true,
+    U = !j && E ? P.image.animatedUrl : P.image.staticUrl,
     R = null != P.viewCta && "" !== P.viewCta ? P.viewCta : f.intl.string(g.default["27GkOj"]),
     L = null != P.viewCtaTooltip && "" !== P.viewCtaTooltip ? P.viewCtaTooltip : true;
   return (0, r.jsxs)(u.aB, {
@@ -76,23 +76,23 @@ function _(e) {
     isActive: y,
     badge: P.badge,
     onClick: () => P.openModal(b),
-    onMouseOver: () => j(true),
-    onMouseLeave: () => j(false),
+    onMouseOver: () => T(true),
+    onMouseLeave: () => T(false),
     children: [(0, r.jsx)("img", {
       alt: "",
       src: U,
-      className: v.image
+      className: _.image
     }), (0, r.jsx)(u.Q9, {
       title: P.title,
-      textColor: w,
+      textColor: S,
       footer: (0, r.jsx)(u.uf, {
         status: x,
-        cost: O,
+        cost: k,
         costDecorator: A
       }),
       children: (0, r.jsx)(a.Text, {
-        className: v.description,
-        color: w,
+        className: _.description,
+        color: S,
         variant: "text-sm/medium",
         children: P.description
       })

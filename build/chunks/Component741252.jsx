@@ -14,24 +14,24 @@ var Chunk951288 = require("./951288.js"),
   Chunk438957 = require("./438957.js");
 
 function m(e, n) {
-  (0, i.ZDy)(async () => {
+  (0, r.ZDy)(async () => {
     let {
       default: m
     } = await t.e("13965").then(t.bind(t, 666083));
-    return t => (0, r.jsx)(m, function(e) {
+    return t => (0, i.jsx)(m, function(e) {
       for (var n = 1; n < arguments.length; n++) {
         var t = null != arguments[n] ? arguments[n] : {},
-          r = Object.keys(t);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+          i = Object.keys(t);
+        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
           return Object.getOwnPropertyDescriptor(t, e).enumerable
-        }))), r.forEach(function(n) {
-          var r;
-          r = t[n], n in e ? Object.defineProperty(e, n, {
-            value: r,
+        }))), i.forEach(function(n) {
+          var i;
+          i = t[n], n in e ? Object.defineProperty(e, n, {
+            value: i,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[n] = r
+          }) : e[n] = i
         })
       }
       return e
@@ -40,18 +40,18 @@ function m(e, n) {
       description: c.intl.formatToPlainString(s.default.KCgZMj, {
         provider: "Portkey"
       }),
-      image: (0, r.jsx)("div", {
+      image: (0, i.jsx)("div", {
         className: u.imageContainer,
-        children: (0, r.jsx)("img", {
+        children: (0, i.jsx)("img", {
           className: u.image,
           alt: "",
           src: n.imageUrl
         })
       }),
-      button: (0, r.jsx)("div", {
+      button: (0, i.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: d.button,
-        children: (0, r.jsx)(i.zxk, {
+        children: (0, i.jsx)(r.zxk, {
           variant: "primary",
           text: c.intl.string(s.default.AS3n8v),
           onClick: () => {

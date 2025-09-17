@@ -107,19 +107,19 @@ function P(e) {
     id: P,
     expires_at: k,
     redeemed_at: R,
-    trial_id: w,
-    subscription_trial: I,
+    trial_id: I,
+    subscription_trial: w,
     referrer: Z
   } = m, A = null != (n = null == (t = h.find(e => {
     let {
       value: t
     } = e;
-    return t === w
+    return t === I
   })) ? true : t.label) ? n : "Unknown";
   null != Z && (A = "".concat(A, " from @").concat(Z.username));
   let D = null != k,
     L = null != k && new Date(k).getTime() < Date.now(),
-    M = (null == I ? true : I.sku_id) === j.Si.TIER_0,
+    M = (null == w ? true : w.sku_id) === j.Si.TIER_0,
     U = async () => {
       T(true), D ? await F({
         expiresAt: null
@@ -206,12 +206,12 @@ function P(e) {
     }), (0, a.jsxs)(c.P3F, {
       className: i()(_.row, _.idRow),
       onClick: () => {
-        (0, p.JG)(w, () => C(true))
+        (0, p.JG)(I, () => C(true))
       },
       children: [(0, a.jsxs)(c.Text, {
         variant: "eyebrow",
         color: "always-white",
-        children: ["Trial: ", w]
+        children: ["Trial: ", I]
       }), y ? (0, a.jsx)(c.dz2, {
         size: "md",
         color: "currentColor",
@@ -227,8 +227,8 @@ function P(e) {
         variant: "eyebrow",
         color: "always-white",
         children: ["Trial Length:", " ", (0, x.if)({
-          intervalType: null != (l = null == I ? true : I.interval) ? l : j.rV.MONTH,
-          intervalCount: null != (o = null == I ? true : I.interval_count) ? o : 1,
+          intervalType: null != (l = null == w ? true : w.interval) ? l : j.rV.MONTH,
+          intervalCount: null != (o = null == w ? true : w.interval_count) ? o : 1,
           capitalize: false
         })]
       })
@@ -324,11 +324,11 @@ function k(e) {
       value: t
     } = e;
     return t === S
-  })) ? true : t.label) ? n : "Unknown", k = null != N, R = null != N && new Date(N).getTime() < Date.now(), w = async () => {
-    g(true), k ? await I({
+  })) ? true : t.label) ? n : "Unknown", k = null != N, R = null != N && new Date(N).getTime() < Date.now(), I = async () => {
+    g(true), k ? await w({
       expiresAt: null
     }) : await (0, d.ab)(true, l), u(), g(false)
-  }, I = async e => {
+  }, w = async e => {
     let {
       expiresAt: t
     } = e;
@@ -433,14 +433,14 @@ function k(e) {
       }), (0, a.jsx)("input", {
         type: "date",
         value: null != N ? N.substring(0, 10) : "",
-        onChange: e => I({
+        onChange: e => w({
           expiresAt: e.target.value
         })
       })]
     }), (0, a.jsxs)("div", {
       className: _.badgeContainer,
       children: [(0, a.jsx)(c.P3F, {
-        onClick: w,
+        onClick: I,
         className: i()(_.badge, _.clickable, {
           [_.acked]: k,
           [_.expired]: R
@@ -468,7 +468,7 @@ function k(e) {
 }
 
 function R() {
-  let [e, t] = Chunk647438.useState([]), [n, l] = Chunk647438.useState([]), [i, s] = Chunk647438.useState(), [p, x] = Chunk647438.useState(), [j, E] = Chunk647438.useState([]), [R, w] = Chunk647438.useState([]), [I, Z] = Chunk647438.useState(true), [A, D] = Chunk647438.useState(10080), [L, M] = Chunk647438.useState([]), {
+  let [e, t] = Chunk647438.useState([]), [n, l] = Chunk647438.useState([]), [i, s] = Chunk647438.useState(), [p, x] = Chunk647438.useState(), [j, E] = Chunk647438.useState([]), [R, I] = Chunk647438.useState([]), [w, Z] = Chunk647438.useState(true), [A, D] = Chunk647438.useState(10080), [L, M] = Chunk647438.useState([]), {
     entitlements: U,
     deleteFractionalPremium: F,
     refreshEntitlementList: G
@@ -478,7 +478,7 @@ function R() {
   }, [G]), Chunk647438.useEffect(() => {
     M(U.filter(e => e.sourceType === v.kNB.REVERSE_TRIAL && null != e.endsAt && e.endsAt > new Date))
   }, [U]), Chunk647438.useEffect(() => {
-    (0 === module.length || 0 === require.length || I) && C().then(e => {
+    (0 === module.length || 0 === require.length || w) && C().then(e => {
       let n = Object.keys(e.trial).map(t => ({
           label: t,
           value: e.trial[t]
@@ -489,11 +489,11 @@ function R() {
         }));
       t(n), l(a), null == i && s(n[0].value), null == p && x(a[0].value)
     })
-  }, [module, require, i, Chunk572004, I]), Chunk647438.useEffect(() => {
-    I && (Z(false), Chunk431.Z.forceReset(), (0, Chunk937579.Tf)(), T().then(e => {
-      E(e.trial.sort((e, t) => e.id.localeCompare(t.id))), w(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
+  }, [module, require, i, Chunk572004, w]), Chunk647438.useEffect(() => {
+    w && (Z(false), Chunk431.Z.forceReset(), (0, Chunk937579.Tf)(), T().then(e => {
+      E(e.trial.sort((e, t) => e.id.localeCompare(t.id))), I(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
     }))
-  }, [I]);
+  }, [w]);
   let B = async () => {
     null != i && (await N(i, "trial"), Z(true))
   }, z = async () => {
