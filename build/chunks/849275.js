@@ -21,50 +21,50 @@ var Chunk647438 = require("./647438.js"),
 
 function _(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
-    l = (0, s.e7)([i.Z], () => i.Z.hasConsented(h.pjP.PERSONALIZATION)),
+    l = (0, o.e7)([i.Z], () => i.Z.hasConsented(m.pjP.PERSONALIZATION)),
     _ = r.useMemo(() => {
       var t;
-      return null != (t = null == e ? true : e[o.m.RECOMMENDED]) ? t : []
+      return null != (t = null == e ? true : e[s.m.RECOMMENDED]) ? t : []
     }, [e]),
     C = r.useMemo(() => {
       var t;
-      return null != (t = null == e ? true : e[o.m.POPULAR]) ? t : []
+      return null != (t = null == e ? true : e[s.m.POPULAR]) ? t : []
     }, [e]),
     b = _.length > 0 && l,
-    [E, S] = r.useState(b ? o.m.RECOMMENDED : o.m.POPULAR),
-    O = (0, p.Z)(),
-    v = (0, s.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup),
-    x = (0, s.e7)([u.Z], () => u.Z.getUserDiscounts()),
+    [E, S] = r.useState(b ? s.m.RECOMMENDED : s.m.POPULAR),
+    O = (0, f.Z)(),
+    x = (0, o.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup),
+    v = (0, o.e7)([u.Z], () => u.Z.getUserDiscounts()),
     y = (0, g.a)(),
     [T, L] = r.useState([]),
     j = r.useCallback(() => {
-      S(o.m.RANDOM), L(a().shuffle(v))
-    }, [v]);
+      S(s.m.RANDOM), L(a().shuffle(x))
+    }, [x]);
   r.useEffect(() => {
-    L(a().shuffle(v))
-  }, [v]);
+    L(a().shuffle(x))
+  }, [x]);
   let k = r.useMemo(() => {
     let e = [];
-    return E === o.m.RECENT ? e = v : E === o.m.PRICE_LOW_TO_HIGH ? e = (0, d.hC)([...v], t) : E === o.m.RECOMMENDED ? e = n ? (0, d.Qf)(O(_), x) : O(_) : E === o.m.POPULAR ? e = n ? (0, d.Qf)(O(C), x) : O(C) : E === o.m.RANDOM && (e = T), y(e)
-  }, [E, y, v, T, t, O, _, C, x, n]);
+    return E === s.m.RECENT ? e = x : E === s.m.PRICE_LOW_TO_HIGH ? e = (0, d.hC)([...x], t) : E === s.m.RECOMMENDED ? e = n ? (0, d.Qf)(O(_), v) : O(_) : E === s.m.POPULAR ? e = n ? (0, d.Qf)(O(C), v) : O(C) : E === s.m.RANDOM && (e = T), y(e)
+  }, [E, y, x, T, t, O, _, C, v, n]);
   return {
     sortType: E,
     setSortType: S,
-    sortedItems: (0, f.l)(k),
+    sortedItems: (0, p.l)(k),
     sortOptions: r.useMemo(() => {
       let e = [{
-        value: o.m.POPULAR,
-        label: m.intl.string(m.t["1wQj4O"])
+        value: s.m.POPULAR,
+        label: h.intl.string(h.t["1wQj4O"])
       }, {
-        value: o.m.RECENT,
-        label: m.intl.string(m.t["6NZpt7"])
+        value: s.m.RECENT,
+        label: h.intl.string(h.t["6NZpt7"])
       }, {
-        value: o.m.PRICE_LOW_TO_HIGH,
-        label: m.intl.string(m.t.RTG4yM)
+        value: s.m.PRICE_LOW_TO_HIGH,
+        label: h.intl.string(h.t.RTG4yM)
       }];
       return b && e.unshift({
-        value: o.m.RECOMMENDED,
-        label: m.intl.string(m.t.JrlKlp)
+        value: s.m.RECOMMENDED,
+        label: h.intl.string(h.t.JrlKlp)
       }), e
     }, [b]),
     showRecommendationOption: b,

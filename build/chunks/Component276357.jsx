@@ -43,9 +43,9 @@ function b(e) {
         object: g.qAy.CHANNEL_TAG
       }
     }), _.getState().toggleTagFilter(t.id, e)
-  }, [t, v, _]), w = i.useCallback(() => {
+  }, [t, v, _]), T = i.useCallback(() => {
     _.getState().setTagFilter(t.id, new Set), C || n()
-  }, [_, t.id, C, n]), T = (0, a.ZP)({
+  }, [_, t.id, C, n]), w = (0, a.ZP)({
     id: "".concat(t.id, "-all-tags-dropdown-navigator"),
     isEnabled: true,
     wrap: true,
@@ -86,7 +86,7 @@ function b(e) {
         })]
       })
     }), (0, r.jsx)(l.bG, {
-      navigator: T,
+      navigator: w,
       children: (0, r.jsx)(l.SJ, {
         children: e => {
           var t, n, {
@@ -152,7 +152,7 @@ function b(e) {
       className: x.separator
     }), (0, r.jsx)(o.Avr, {
       "aria-label": f.intl.string(f.t["98EPQE"]),
-      onClick: w,
+      onClick: T,
       text: f.intl.string(f.t["98EPQE"])
     })]
   })

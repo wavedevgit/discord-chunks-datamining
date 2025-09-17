@@ -234,8 +234,8 @@ let eD = e => {
     } = e, {
       analyticsLocations: y
     } = (0, O.ZP)(), w = G.ZP.canUseCollectibles(n), {
-      previewingVariantIndex: S
-    } = h, T = (0, eO.N)(t, S), N = (0, e_.W)(t, x);
+      previewingVariantIndex: T
+    } = h, E = (0, eO.N)(t, T), N = (0, e_.W)(t, x);
     s()(null != N, "Selected product should not be null");
     let A = (0, J.L)(t),
       {
@@ -259,7 +259,7 @@ let eD = e => {
       en = (null == ee ? true : ee.amount) === 0,
       {
         firstAvatarDecoration: er
-      } = (0, Q.Rj)(null != T ? T : N),
+      } = (0, Q.Rj)(null != E ? E : N),
       ei = i.useMemo(() => (0, K.BH)(N, w), [N, w]),
       {
         handleUseNow: el,
@@ -268,7 +268,7 @@ let eD = e => {
         product: N,
         onSuccess: c
       }),
-      ef = (0, eS.To)(N),
+      ef = (0, eT.To)(N),
       {
         enabled: ep
       } = (0, Z.WX)({
@@ -280,13 +280,13 @@ let eD = e => {
         checkoutEligiblePrices: ex,
         isOrbExclusive: ej,
         hasSufficientOrbs: ey
-      } = (0, eT.Ip)({
+      } = (0, eE.Ip)({
         product: N,
         isPremiumUser: w,
         tab: j,
         hasDiscountOffer: eP
       }),
-      ew = i.useCallback(() => (0, E.Z)({
+      ew = i.useCallback(() => (0, S.Z)({
         skuId: N.skuId,
         analyticsLocations: y,
         variantsReturnStyle: f.v.VARIANTS_GROUP,
@@ -305,7 +305,7 @@ let eD = e => {
           display: eo.k.MODAL
         })
       }), (0, r.jsx)(eU, {
-        product: null != T ? T : N,
+        product: null != E ? E : N,
         user: n,
         activeSlide: _
       }), (0, r.jsxs)("div", {
@@ -405,7 +405,7 @@ let eD = e => {
               loadingStartedLabel: eR.intl.string(eR.t["TYw+9v"]),
               loadingFinishedLabel: eR.intl.string(eR.t.Pg1UPz),
               onClick: async () => {
-                await (0, H.fK)(N.skuId), c(), (0, eE.Z)({
+                await (0, H.fK)(N.skuId), c(), (0, eS.Z)({
                   product: N,
                   analyticsLocations: y,
                   purchaseType: eI.o8.PREMIUM_PURCHASE
@@ -427,7 +427,7 @@ let eD = e => {
                           } = e;
                           (0, H.qg)({
                             variantsReturnStyle: f.v.VARIANTS_GROUP
-                          }), c(), (0, eE.Z)({
+                          }), c(), (0, eS.Z)({
                             product: N,
                             analyticsLocations: y,
                             itemConsumed: null == (t = n[0]) ? true : t.consumed,
@@ -519,7 +519,7 @@ let eD = e => {
     let {
       user: t,
       nameplate: n
-    } = e, i = (0, T.w$)();
+    } = e, i = (0, E.w$)();
     return (0, r.jsx)("div", {
       className: eL.nameplateRightPanePreviewContainer,
       role: "img",
@@ -668,7 +668,7 @@ let eD = e => {
           className: eL.chatPreview,
           outline: true,
           "aria-hidden": true,
-          children: [(0, r.jsx)(S.Z, {
+          children: [(0, r.jsx)(T.Z, {
             className: eL.mockMessage,
             author: (0, w.ZH)(n),
             message: n
@@ -705,17 +705,17 @@ let eD = e => {
     } = P, _ = (0, p.e7)([V.Z], () => V.Z.purchases), C = (0, W.o)(l, _), y = (0, eO.N)(l, x), w = (0, e_.W)(l, C);
     s()(null != w, "Selected product should not be null");
     let {
-      analyticsLocations: S
+      analyticsLocations: T
     } = (0, O.ZP)([...u, j.Z.COLLECTIBLES_SHOP_DETAILS_MODAL]);
     (0, el.u9)(w.skuId);
-    let T = (0, ey.kc)(a),
-      E = (0, R.O)({
+    let E = (0, ey.kc)(a),
+      S = (0, R.O)({
         location: "CollectiblesShopProductDetailsModal"
       }),
       {
         isPurchased: I
       } = (0, J.L)(w),
-      N = E && !I && !(0, K.x6)(w);
+      N = S && !I && !(0, K.x6)(w);
     i.useEffect(() => {
       null != h && (0, L.Z)(h.id, h.getAvatarURL(true, 80))
     }, [h]);
@@ -724,11 +724,11 @@ let eD = e => {
       U.default.track(eN.rMx.OPEN_MODAL, {
         type: eN.jXE.COLLECTIBLES_SHOP_DETAILS_MODAL,
         source: c,
-        location_stack: S,
+        location_stack: T,
         sku_id: w.skuId,
         product_type: A
       }), w.items.forEach(H.oK)
-    }, [c, S, w.skuId, w.items, A]);
+    }, [c, T, w.skuId, w.items, A]);
     let k = (0, B.r9)(),
       Z = t === b.Dvm.EXITING,
       D = (0, eC.t0)(l),
@@ -744,7 +744,7 @@ let eD = e => {
     if (null == h) return null;
     let Y = (0, eI.ZS)(a.skuId);
     return (0, r.jsx)(O.Gt, {
-      value: S,
+      value: T,
       children: (0, r.jsxs)(b.Y0X, {
         "data-migration-pending": true,
         hideShadow: true,
@@ -770,7 +770,7 @@ let eD = e => {
           }), (0, r.jsxs)("div", {
             className: w.skuId === m.a.PREMIUM_TIER_2_3_DAY ? eL.fractionalNitroPreviewContainer : w.type === d.Z.AVATAR_DECORATION ? eL.collectiblePreviewsContainerWithChat : eL.collectiblePreviewsContainerNoChat,
             children: [(0, r.jsx)(en.Z, {
-              asset: T,
+              asset: E,
               size: (0, em.ML)(540),
               className: eL.categoryBanner,
               categoryBannerOverride: Y

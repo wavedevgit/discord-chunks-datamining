@@ -2,17 +2,18 @@
 /** chunk id: 510060, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  I8: () => s,
-  KW: () => m,
-  LT: () => u,
-  Me: () => o,
-  eU: () => c,
-  rI: () => d
+  I8: () => o,
+  KW: () => h,
+  LT: () => m,
+  Lv: () => s,
+  Me: () => c,
+  eU: () => d,
+  rI: () => u
 });
-var Chunk512722 = require("./512722.js"),
-  i = require.n(Chunk512722);
+var r, Chunk512722 = require("./512722.js"),
+  a = require.n(Chunk512722);
 
-function a(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -20,9 +21,9 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let l = 2 / 3,
-  s = 12;
-class o {
+var s = ((r = {})[r.THREE_BY_TWO = 2 / 3] = "THREE_BY_TWO", r[r.SIXTEEN_BY_NINE = 9 / 16] = "SIXTEEN_BY_NINE", r);
+let o = 12;
+class c {
   getWidth(e) {
     return this.getRenderOptions(e).columnWidth
   }
@@ -44,17 +45,21 @@ class o {
     maxWidth: t,
     gap: n
   }) {
-    a(this, "minWidth", true), a(this, "maxWidth", true), a(this, "gap", true), i()(e < t, "minWidth needs to be smaller than maxWidth"), this.minWidth = e, this.maxWidth = t, this.gap = n
+    l(this, "minWidth", true), l(this, "maxWidth", true), l(this, "gap", true), a()(e < t, "minWidth needs to be smaller than maxWidth"), this.minWidth = e, this.maxWidth = t, this.gap = n
   }
 }
-let c = {
+let d = {
     columns: 1,
     columnWidth: 450
   },
-  d = e => {
-    let t = e - 2,
-      n = Math.ceil(t * l);
-    return [t, n]
+  u = function(e) {
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : s.THREE_BY_TWO,
+      n = e - 2,
+      r = Math.ceil(n * t);
+    return [n, r]
   },
-  u = 12,
-  m = e => 60 + d(e - 2 * u)[1] + 24 + 3 * s
+  m = 12,
+  h = function(e) {
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : s.THREE_BY_TWO;
+    return 60 + u(e - 2 * m, t)[1] + 24 + 3 * o
+  }

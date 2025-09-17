@@ -2,7 +2,7 @@
 /** chunk id: 386923, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => w
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -30,7 +30,7 @@ let y = {
     friction: 18,
     clamp: true
   },
-  w = e => {
+  T = e => {
     let {
       guild: t
     } = e, n = (0, o.e7)([g.Z], () => g.Z.can(x.Plq.MANAGE_GUILD, t));
@@ -178,7 +178,7 @@ let y = {
     })
   };
 
-function T(e) {
+function w(e) {
   let t, {
       guild: n
     } = e,
@@ -262,7 +262,7 @@ function T(e) {
       style: e,
       children: [(0, r.jsx)("hr", {
         className: j.separator
-      }), (0, r.jsx)(w, {
+      }), (0, r.jsx)(T, {
         guild: n
       })]
     }) : null)]

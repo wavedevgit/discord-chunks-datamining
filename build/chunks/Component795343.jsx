@@ -2,12 +2,12 @@
 /** chunk id: 795343, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => x
 }), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk594174 = require("./594174.js"),
@@ -25,48 +25,48 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk891131 = require("./891131.js");
 
-function v(e) {
+function x(e) {
   var t;
   let {
     isFetchingCategories: n,
     isFullScreen: a,
-    scrollerRef: v,
-    tab: x
+    scrollerRef: x,
+    tab: v
   } = e, y = (0, d.sp)(), T = null != (t = null == y ? true : y.sessionId) ? t : "", {
     noCache: L,
     includeUnpublished: j
-  } = (0, b.Z)(), k = (0, s.e7)([c.default], () => c.default.getCurrentUser()), {
-    skus: B,
-    currentPage: I,
+  } = (0, b.Z)(), k = (0, o.e7)([c.default], () => c.default.getCurrentUser()), {
+    skus: I,
+    currentPage: B,
     totalCount: N,
     isFetchingResults: P
-  } = (0, h.a)(), A = (0, s.Wu)([g.Z], () => g.Z.getProductsBySkus(B)), R = l.useCallback(() => {
+  } = (0, m.a)(), A = (0, o.Wu)([g.Z], () => g.Z.getProductsBySkus(I)), R = l.useCallback(() => {
     var e;
-    null == v || null == (e = v.current) || e.scrollToTop({
+    null == x || null == (e = x.current) || e.scrollToTop({
       animate: true
     })
-  }, [v]), Z = null == B ? true : B.join("");
+  }, [x]), Z = null == I ? true : I.join("");
   l.useEffect(() => {
     R()
   }, [Z, R]);
-  let w = (0, f.a)(),
+  let w = (0, p.a)(),
     M = l.useMemo(() => w(A), [w, A]);
   l.useEffect(() => {
-    n || (0, m.n)({
+    n || (0, h.n)({
       sessionId: T,
-      checkpoint: m.a.SHOP_RENDERED,
-      tab: x,
+      checkpoint: h.a.SHOP_RENDERED,
+      tab: v,
       isFullScreen: a,
       unpublishedCategoriesShown: j,
       cacheDisabled: L
     })
-  }, [T, a, j, L, n, x]);
+  }, [T, a, j, L, n, v]);
   let F = l.useRef(null),
     {
       setQueryPageSize: H,
       setQueryPageOffset: D,
       queryPageSize: W
-    } = (0, p.S)(),
+    } = (0, f.S)(),
     [U, V] = l.useState(false),
     z = n || P || null == k;
   l.useEffect(() => {
@@ -93,11 +93,11 @@ function v(e) {
   }, [y, W, D]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: o()({
+      className: s()({
         [O.productsEmpty]: G
       }),
       children: [G && (0, r.jsx)(E.Z, {}), (0, r.jsxs)("div", {
-        className: o()(O.products, {
+        className: s()(O.products, {
           [O.loadIn]: U
         }),
         ref: F,
@@ -111,7 +111,7 @@ function v(e) {
               product: e,
               user: k,
               category: n,
-              tab: x
+              tab: v
             }, e.skuId)
           }, e.skuId)
         })]
@@ -120,7 +120,7 @@ function v(e) {
       className: O.paginationContainer,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(i.DsT, {
-          currentPage: I,
+          currentPage: B,
           totalCount: N,
           pageSize: W,
           onPageChange: q,

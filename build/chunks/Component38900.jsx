@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   K: () => g,
-  Z: () => f
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -30,12 +30,12 @@ let u = () => 4 * Math.random() + 8,
       })]
     })
   }),
-  f = () => (0, Chunk951288.jsx)("div", {
+  p = () => (0, Chunk951288.jsx)("div", {
     className: Chunk887353.skeletons,
     children: d.map(e => (0, r.jsxs)("div", {
-      className: o.cardsContainer,
+      className: s.cardsContainer,
       children: [(0, r.jsx)("div", {
-        className: a()(i.skeleton, s.shopBanner),
+        className: a()(i.skeleton, o.shopBanner),
         children: (0, r.jsx)("div", {
           className: i.bannerBody
         })

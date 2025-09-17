@@ -44,34 +44,34 @@ function N(e) {
   } = e, R = (0, g.sp)(), Z = null != (t = null == R ? true : R.sessionId) ? t : "", {
     noCache: w,
     includeUnpublished: M
-  } = (0, b.Z)(), F = (0, o.e7)([u.default], () => u.default.getCurrentUser()), H = (0, o.e7)([f.Z], () => f.Z.productsWithVariantsAsGroup), [D, W] = l.useState(1), U = (0, c.Fg)(), V = (0, s.ap)(U), [z, G, q] = l.useMemo(() => {
+  } = (0, b.Z)(), F = (0, s.e7)([u.default], () => u.default.getCurrentUser()), H = (0, s.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [D, W] = l.useState(1), U = (0, c.Fg)(), V = (0, o.ap)(U), [z, G, q] = l.useMemo(() => {
     switch (A) {
       case E.AW.AVATAR_DECORATIONS:
         return [O.intl.string(O.t.dRZYND), V ? L.Z : T.Z, a.Z.AVATAR_DECORATION];
       case E.AW.PROFILE_EFFECTS:
-        return [O.intl.string(O.t["1cNjt7"]), V ? I.Z : B.Z, a.Z.PROFILE_EFFECT];
+        return [O.intl.string(O.t["1cNjt7"]), V ? B.Z : I.Z, a.Z.PROFILE_EFFECT];
       case E.AW.NAMEPLATES:
         return [O.intl.string(O.t.V68Fq6), V ? k.Z : j.Z, a.Z.NAMEPLATE];
       case E.AW.BUNDLES:
-        return [O.intl.string(O.t.FYFppq), V ? y.Z : x.Z, a.Z.BUNDLE]
+        return [O.intl.string(O.t.FYFppq), V ? y.Z : v.Z, a.Z.BUNDLE]
     }
-  }, [A, V]), K = (0, p.a)(), Y = l.useMemo(() => K(H.filter(e => {
+  }, [A, V]), K = (0, f.a)(), Y = l.useMemo(() => K(H.filter(e => {
     var t;
     return e.type === q || e.type === a.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === q)) === true
-  })), [H, q, K]), X = (0, h.l)(Y);
+  })), [H, q, K]), X = (0, m.l)(Y);
   return (l.useEffect(() => {
-    (0, m.n)({
+    (0, h.n)({
       sessionId: Z,
-      checkpoint: m.a.SHOP_MOUNTED,
+      checkpoint: h.a.SHOP_MOUNTED,
       tab: A,
       isFullScreen: N,
       unpublishedCategoriesShown: M,
       cacheDisabled: w
     })
   }, []), l.useEffect(() => {
-    n || (0, m.n)({
+    n || (0, h.n)({
       sessionId: Z,
-      checkpoint: m.a.SHOP_RENDERED,
+      checkpoint: h.a.SHOP_RENDERED,
       tab: A,
       isFullScreen: N,
       unpublishedCategoriesShown: M,
@@ -82,15 +82,15 @@ function N(e) {
       style: {
         backgroundImage: "url(".concat(G, ")")
       },
-      className: v.bannerContainer,
+      className: x.bannerContainer,
       children: (0, r.jsx)(i.X6q, {
         variant: "heading-xxl/extrabold",
         children: z
       })
     }), (0, r.jsx)("div", {
-      className: v.products,
+      className: x.products,
       children: X.slice(40 * (D - 1), 40 * D).map((e, t) => {
-        let n = f.Z.getCategory(e.categorySkuId);
+        let n = p.Z.getCategory(e.categorySkuId);
         return null == n ? null : (0, r.jsx)(g.k0, {
           newValue: {
             tilePosition: t
@@ -104,7 +104,7 @@ function N(e) {
         }, e.skuId)
       })
     }), X.length > 40 && (0, r.jsx)("div", {
-      className: v.paginationContainer,
+      className: x.paginationContainer,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(i.DsT, {
           currentPage: D,

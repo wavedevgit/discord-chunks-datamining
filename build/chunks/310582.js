@@ -14,10 +14,6 @@ module.exports = {
   shop: "shop__08415",
   banner: "banner__08415",
   rivBanner: "rivBanner__08415",
-  bannerShadow: "bannerShadow__08415",
-  left: "left__08415",
-  right: "right__08415",
-  darker: "darker__08415",
   featuredBlock: "featuredBlock__08415",
   featuredBlockTextContainer: "featuredBlockTextContainer__08415",
   featuredBlockTitleText: "featuredBlockTitleText__08415",
@@ -69,6 +65,5 @@ module.exports = {
   wideBannerTextContainer: "wideBannerTextContainer__08415",
   wideBannerContentContainer: "wideBannerContentContainer__08415",
   shelfBlockContainer: "shelfBlockContainer__08415",
-  heroBannerSheenContainer: "heroBannerSheenContainer__08415",
   shopScroll: "shopScroll__08415"
 }

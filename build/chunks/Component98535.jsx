@@ -31,31 +31,31 @@ function S(e) {
     transitionToTab: c,
     transitionState: u,
     updateAnalyticsState: d,
-    refreshCategories: m
+    refreshCategories: h
   } = e, S = O();
-  v(S);
-  let x = (0, o.e7)([s.Z], () => s.Z.useReducedMotion),
+  x(S);
+  let v = (0, s.e7)([o.Z], () => o.Z.useReducedMotion),
     [y, T] = l.useState(true),
     L = l.useCallback(async (e, t, r) => {
       d(e, t);
-      let l = r && !n && !x,
-        o = t === a.T.ORB ? b.AW.ORBS : b.AW.CATALOG;
-      T(t), await c(o, l)
-    }, [n, x, c, d]),
+      let l = r && !n && !v,
+        s = t === a.T.ORB ? b.AW.ORBS : b.AW.CATALOG;
+      T(t), await c(s, l)
+    }, [n, v, c, d]),
     j = (0, g.FF)("CollectiblesContent"),
     {
       searchError: k
-    } = (0, f.a)();
-  return j && null != k ? (0, r.jsx)(C.Z, {}) : null != S ? (0, r.jsx)(h.Z, {
-    onRetry: m,
+    } = (0, p.a)();
+  return j && null != k ? (0, r.jsx)(C.Z, {}) : null != S ? (0, r.jsx)(m.Z, {
+    onRetry: h,
     errorMessage: S,
-    errorOrigin: h.i.SHOP_PAGE
+    errorOrigin: m.i.SHOP_PAGE
   }) : E.includes(t) ? (0, r.jsx)(_.Z, {
     isFullScreen: n,
     handleTransition: L,
     tab: t,
     transitionState: u
-  }) : (0, r.jsx)(p.Z, {
+  }) : (0, r.jsx)(f.Z, {
     isFullScreen: n,
     tab: t,
     sortedCategories: i,
@@ -64,12 +64,12 @@ function S(e) {
   })
 }
 let O = () => (0, Chunk442837.e7)([Chunk597688.Z, Chunk1870.Z], () => null != Chunk597688.Z.error ? "shop load fetch categories error: ".concat(Chunk597688.Z.error.message) : null != Chunk1870.Z.claimError ? "shop load claim error: ".concat(Chunk1870.Z.claimError.message) : null != Chunk1870.Z.fetchError ? "shop load fetch purchase error: ".concat(Chunk1870.Z.fetchError.message) : true),
-  v = e => {
-    let t = (0, o.e7)([i.default], () => i.default.getCurrentUser()),
+  x = e => {
+    let t = (0, s.e7)([i.default], () => i.default.getCurrentUser()),
       {
         noCache: n,
         includeUnpublished: r
-      } = (0, m.Z)();
+      } = (0, h.Z)();
     l.useEffect(() => {
       var l, a;
       null != e && c.Z.captureMessage(e, {

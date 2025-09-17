@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk65766 = require("./65766.js");
 
-function w(e) {
+function T(e) {
   let {
     className: t,
     sound: n,
@@ -59,7 +59,7 @@ function w(e) {
   })
 }
 
-function T(e) {
+function w(e) {
   let {
     containerRef: t,
     text: n
@@ -103,7 +103,7 @@ function T(e) {
       }
     }
   }, [x, o, c, t]);
-  return true === l ? null : (0, r.jsx)(w, {
+  return true === l ? null : (0, r.jsx)(T, {
     sound: l,
     playSound: b,
     isPlaying: f,
@@ -140,7 +140,7 @@ function O() {
         variant: "text-md/medium",
         color: "text-secondary",
         children: Chunk388032.intl.format(Chunk764295.default["8N4c5+"], {
-          airhornHook: t => (0, r.jsx)(T, {
+          airhornHook: t => (0, r.jsx)(w, {
             containerRef: e,
             text: t
           })

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk782568 = require("./782568.js"),
@@ -36,31 +36,31 @@ let j = e => {
     title: a,
     sortedSkuIds: j,
     numVisibleItems: k,
-    hasSorting: B,
-    prioritizeUserDiscounts: I,
+    hasSorting: I,
+    prioritizeUserDiscounts: B,
     tab: N,
     buttonContainerClassName: P
-  } = e, A = (0, s.e7)([d.default], () => d.default.getCurrentUser()), R = h.ZP.canUseCollectibles(A), Z = (0, v.G)("FeedBlock"), {
+  } = e, A = (0, o.e7)([d.default], () => d.default.getCurrentUser()), R = m.ZP.canUseCollectibles(A), Z = (0, x.G)("FeedBlock"), {
     sortType: w,
     setSortType: M,
     sortedItems: F,
     sortOptions: H,
     shuffleProducts: D,
     showRecommendationOption: W
-  } = (0, S.Z)(j, R, I), U = (0, O.St)(F), V = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), z = (0, s.e7)([g.Z], () => g.Z.isFocused()), G = !V && z, {
+  } = (0, S.Z)(j, R, B), U = (0, O.St)(F), V = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), z = (0, o.e7)([g.Z], () => g.Z.isFocused()), G = !V && z, {
     animationPhase: q,
     startAnimation: K
-  } = (0, E.y)(), Y = (0, m.sp)(), X = null != (t = null == Y ? true : Y.sessionId) ? t : "", Q = l.useRef(null), J = l.useCallback(e => {
+  } = (0, E.y)(), Y = (0, h.sp)(), X = null != (t = null == Y ? true : Y.sessionId) ? t : "", Q = l.useRef(null), J = l.useCallback(e => {
     K({
       isShuffling: false,
       onOutroComplete: () => M(e)
-    }), f.default.track(x.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
+    }), p.default.track(v.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
       page_session_id: X,
       sort_type: e
     })
   }, [K, M, X]);
   return null == A ? null : (0, r.jsxs)("div", {
-    className: o()(L.popularPicksSection, L.centeredSection),
+    className: s()(L.popularPicksSection, L.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: L.blockHeader,
       children: [(0, r.jsxs)("div", {
@@ -92,7 +92,7 @@ let j = e => {
               }
               return e
             }({}, e), n = n = {
-              onClick: () => (0, c.Z)(p.Z.getArticleURL(x.BhN.DATA_USED_FOR_RECOMMENDED)),
+              onClick: () => (0, c.Z)(f.Z.getArticleURL(v.BhN.DATA_USED_FOR_RECOMMENDED)),
               className: L.informationIcon,
               children: (0, r.jsx)(i.d3s, {
                 size: "sm"
@@ -109,8 +109,8 @@ let j = e => {
             }), t))
           }
         })]
-      }), B ? (0, r.jsxs)("div", {
-        className: o()(L.headerRight, {
+      }), I ? (0, r.jsxs)("div", {
+        className: s()(L.headerRight, {
           [T.shopTakeOver]: Z
         }),
         children: [(0, r.jsx)(i.Text, {
@@ -122,7 +122,7 @@ let j = e => {
             options: H,
             select: J,
             className: L.sortSelect,
-            popoutClassName: o()({
+            popoutClassName: s()({
               [T.shopTakeOver]: Z
             }),
             isSelected: e => e === w,
@@ -139,7 +139,7 @@ let j = e => {
                 isShuffling: true,
                 onOutroComplete: D,
                 returnRef: Q
-              }), f.default.track(x.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
+              }), p.default.track(v.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
                 page_session_id: X
               })
             },
@@ -159,7 +159,7 @@ let j = e => {
             className: L.shuffleOutro
           }, "".concat(e.skuId, "-").concat(t));
           else q === E.g.SORT_OUT ? n = L.sortChangedOutro : q === E.g.SHUFFLE_IN ? n = L.shuffleIntro : q === E.g.SORT_IN && (n = L.sortChangedIntro);
-        return (0, r.jsx)(m.k0, {
+        return (0, r.jsx)(h.k0, {
           newValue: {
             tilePosition: t,
             pageSection: "popular picks",

@@ -109,7 +109,7 @@ class K {
     U(this, "currentIndex", 0), U(this, "steps", []), U(this, "completedSteps", 0)
   }
 }
-let J = e => {
+let Y = e => {
     let {
       guild: t,
       roles: n
@@ -128,7 +128,7 @@ let J = e => {
       }, e.id))
     })
   },
-  Y = {
+  J = {
     mass: 1,
     tension: 250,
     friction: 18,
@@ -188,7 +188,7 @@ let J = e => {
       {
         tagFilter: ee
       } = (0, M.H)(x.id),
-      et = (0, h.e7)([T.Z], () => T.Z.getGuild(x.getGuildId())),
+      et = (0, h.e7)([w.Z], () => w.Z.getGuild(x.getGuildId())),
       en = (0, Z.r_)(x),
       {
         transitions: er,
@@ -198,7 +198,7 @@ let J = e => {
         return {
           transitions: (0, g.Yzy)(e, {
             keys: e => e ? "shown" : "hidden",
-            config: Y,
+            config: J,
             from: {
               opacity: 0
             },
@@ -245,7 +245,7 @@ let J = e => {
           handleHide: s
         } = e, [c, d] = i.useState(false), u = (0, A.c)(a.id), x = (0, h.e7)([I.Z], () => I.Z.hasHidden(a.id)), p = function(e, t, a, l) {
           let s = null == e ? true : e.id,
-            o = (0, h.e7)([w.Z], () => null != s ? w.Z.getSortedRoles(s) : true);
+            o = (0, h.e7)([T.Z], () => null != s ? T.Z.getSortedRoles(s) : true);
           return i.useMemo(() => {
             let i, s = new K,
               c = (null == t ? true : t.isMediaChannel()) === true;
@@ -259,7 +259,7 @@ let J = e => {
                 description: H.intl.string(H.t.gAIOfn),
                 isDone: o && c,
                 shouldWarn: o && !c,
-                children: o ? (0, r.jsx)(J, {
+                children: o ? (0, r.jsx)(Y, {
                   guild: e,
                   roles: s
                 }) : null,
@@ -341,18 +341,18 @@ let J = e => {
                 }
               }),
               clickHandler: () => {
-                X(D.ZI.CREATE_POST), S.S.dispatch(z.CkL.FOCUS_COMPOSER_TITLE)
+                X(D.ZI.CREATE_POST), N.S.dispatch(z.CkL.FOCUS_COMPOSER_TITLE)
               },
               isDone: a
             })), s
           }, [t, e, o, a, l])
         }(t, a, l, d), j = p.isAllDone(), v = u || x || !(e => {
-          let t = N.default.extractTimestamp(e);
+          let t = P.default.extractTimestamp(e);
           return o()().isBefore(o()(t).add(o().duration(15, "days")))
         })(a.id), _ = i.useRef(0);
         return i.useEffect(() => (c || !j || v ? clearTimeout(_.current) : _.current = setTimeout(() => {
           s()
-        }, 60 * P.Z.Millis.SECOND), () => clearTimeout(_.current)), [j, v, s, c]), {
+        }, 60 * S.Z.Millis.SECOND), () => clearTimeout(_.current)), [j, v, s, c]), {
           onboardingSteps: p,
           isHidden: x,
           isDismissed: u,
@@ -377,8 +377,8 @@ let J = e => {
         canManageChannel: r,
         guildId: a,
         channel: l
-      } = e, s = (0, h.e7)([w.Z], () => null != a ? w.Z.partitionVersion(a) : true), o = i.useCallback(() => {
-        S.S.dispatch(z.CkL.REMEASURE_TARGET)
+      } = e, s = (0, h.e7)([T.Z], () => null != a ? T.Z.partitionVersion(a) : true), o = i.useCallback(() => {
+        N.S.dispatch(z.CkL.REMEASURE_TARGET)
       }, []);
       i.useEffect(() => {
         o()

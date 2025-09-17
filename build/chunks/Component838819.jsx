@@ -7,7 +7,7 @@ require.r(exports), require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk772848 = require("./772848.js"),
   Chunk399606 = require("./399606.js"),
   Chunk952265 = require("./952265.js"),
@@ -57,10 +57,10 @@ let w = e => {
       isFullScreen: t = true,
       tab: n = N.AW.HOME
     } = e;
-    (0, h.z)(p.f), (0, v.f)();
-    let a = (0, g.Z)((0, s.Z)()),
+    (0, m.z)(f.f), (0, x.f)();
+    let a = (0, g.Z)((0, o.Z)()),
       c = (0, i.e7)([_.default], () => _.default.getCurrentUser()),
-      A = (0, I.G)("CollectiblesShop"),
+      A = (0, B.G)("CollectiblesShop"),
       {
         onClose: M
       } = (0, k.Db)(),
@@ -94,17 +94,17 @@ let w = e => {
         selectedTab: Q,
         transitionState: J,
         transitionToTab: $
-      } = (0, x.B)(D, t);
+      } = (0, v.B)(D, t);
     (0, E.q3)(a, Q, q, J, K), (0, E.EB)(Q, c);
     let {
       dismissShopButtonDC: ee
-    } = (0, B.Z)();
+    } = (0, I.Z)();
     l.useEffect(() => {
       ee()
     }, [ee]), l.useEffect(() => {
       t || (0, d.Y)(P.Z5c.COLLECTIBLES_SHOP)
     }, [t]);
-    let et = (0, i.e7)([m.Z], () => m.Z.getLayers().includes(P.S9g.COLLECTIBLES_SHOP)),
+    let et = (0, i.e7)([h.Z], () => h.Z.getLayers().includes(P.S9g.COLLECTIBLES_SHOP)),
       en = l.useRef(null),
       er = l.useRef(null);
     (0, u.Tbt)(en);
@@ -120,10 +120,10 @@ let w = e => {
       }
     }, [t, el]);
     let {
-      analyticsLocations: eo
+      analyticsLocations: es
     } = (0, E.MV)(Q);
-    return ea && !t ? null : (0, r.jsx)(f.Gt, {
-      value: eo,
+    return ea && !t ? null : (0, r.jsx)(p.Gt, {
+      value: es,
       children: (0, r.jsx)(C.k0, {
         newValue: {
           sessionId: a,
@@ -134,7 +134,7 @@ let w = e => {
           onClose: M,
           shouldAddEventListener: t && !et,
           children: (0, r.jsxs)("div", {
-            className: o()(R.shop, {
+            className: s()(R.shop, {
               [Z.shopTakeOver]: A
             }),
             ref: t ? en : er,
@@ -146,7 +146,7 @@ let w = e => {
               handleTransition: $,
               selectedTab: Q
             }), (0, r.jsx)("div", {
-              className: o()(R.shopViewWrapper, {
+              className: s()(R.shopViewWrapper, {
                 [R.visible]: J === N.f7.VISIBLE,
                 [R.in]: J === N.f7.IN,
                 [R.out]: J === N.f7.OUT

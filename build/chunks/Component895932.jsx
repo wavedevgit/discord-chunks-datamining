@@ -42,7 +42,7 @@ function g(e) {
     }), j.getState().setLayoutType(t.id, e), n()
   }, y = e => {
     j.getState().setTagSetting(t.id, e), n()
-  }, w = null != t.availableTags && t.availableTags.length > 0;
+  }, T = null != t.availableTags && t.availableTags.length > 0;
   return (0, r.jsx)("div", {
     className: h.container,
     children: (0, r.jsxs)(s.v2r, {
@@ -89,7 +89,7 @@ function g(e) {
           action: () => C(i.X.GRID),
           checked: f === i.X.GRID
         })]
-      }), w ? (0, r.jsxs)(s.kSQ, {
+      }), T ? (0, r.jsxs)(s.kSQ, {
         label: u.intl.string(u.t.Paxaur),
         children: [(0, r.jsx)(s.k5B, {
           id: "match-some",

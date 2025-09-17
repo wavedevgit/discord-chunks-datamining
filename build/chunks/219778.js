@@ -12,14 +12,12 @@ let l = {
     },
     [Chunk180650.T.ORB]: {
       responsive: true,
-      backgroundStyle: "linear-gradient(180deg, rgba(39, 30, 173, 0.3), transparent)",
-      hideSideShadow: true
+      backgroundStyle: "linear-gradient(180deg, rgba(39, 30, 173, 0.3), transparent)"
     }
   },
   a = 12633 == require.j ? {
     responsive: true,
-    backgroundStyle: true,
-    hideSideShadow: false
+    backgroundStyle: true
   } : null,
   o = e => (0, r.useMemo)(() => {
     let t = null != e ? l[e] : null;

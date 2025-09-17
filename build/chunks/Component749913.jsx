@@ -101,7 +101,7 @@ function es(e) {
     onChange: s,
     canCreatePost: o,
     inputRef: d
-  } = e, u = !(0, S.HL)(t) && o, {
+  } = e, u = !(0, N.HL)(t) && o, {
     textAreaState: m,
     formOpen: g,
     previewing: x
@@ -118,7 +118,7 @@ function es(e) {
     }
   }, c.X), [p, b] = i.useState(null), j = i.useContext(D.oo), v = i.useCallback(() => {
     j.bumpDispatchPriority()
-  }, [j]), _ = (0, h.e7)([k.Z], () => k.Z.can(ee.Plq.ATTACH_FILES, t)), T = (0, h.Wu)([L.Z], () => L.Z.getUploads(t.id, Z.d.FirstThreadMessage)), O = g && _ && u, I = (null == t ? true : t.isMediaChannel()) === true, M = function(e, t) {
+  }, [j]), _ = (0, h.e7)([k.Z], () => k.Z.can(ee.Plq.ATTACH_FILES, t)), w = (0, h.Wu)([L.Z], () => L.Z.getUploads(t.id, Z.d.FirstThreadMessage)), O = g && _ && u, I = (null == t ? true : t.isMediaChannel()) === true, M = function(e, t) {
     let n = (0, K.AF)(),
       r = (0, G.ql)(e);
     return i.useCallback(() => {
@@ -164,10 +164,10 @@ function es(e) {
       null == t && (t = l.textValue), t = t.trim();
       let {
         content: s
-      } = w.ZP.parse(e, t);
+      } = T.ZP.parse(e, t);
       if (t = s, null == r || 0 === r.length) {
         var o;
-        r = null == (o = P.Z.getStickerPreview(e.id, el.drafts.type)) ? true : o.map(e => e.id)
+        r = null == (o = S.Z.getStickerPreview(e.id, el.drafts.type)) ? true : o.map(e => e.id)
       }
       if ((null == i || 0 === i.length) && (i = L.Z.getUploads(e.id, Z.d.FirstThreadMessage)), null != i && i.length > 0 && e.isMediaChannel()) {
         let e = i.findIndex(e => true === e.isThumbnail);
@@ -232,7 +232,7 @@ function es(e) {
           shouldRefocus: true
         };
         let n = await r(p, b, j);
-        return (0, E.ok)(n), U.Z.resort(e.id), (0, N.qB)(e.id, el.drafts.type), d(), m(false), h(false), V.Z.markAsSeen(e.id), f(false), {
+        return (0, E.ok)(n), U.Z.resort(e.id), (0, P.qB)(e.id, el.drafts.type), d(), m(false), h(false), V.Z.markAsSeen(e.id), f(false), {
           shouldClear: true,
           shouldRefocus: false
         }
@@ -247,7 +247,7 @@ function es(e) {
       }
     }, [r, a, e, n])
   }(t);
-  return i.useLayoutEffect(s, [g, m, T, s]), (0, r.jsx)(r.Fragment, {
+  return i.useLayoutEffect(s, [g, m, w, s]), (0, r.jsx)(r.Fragment, {
     children: (0, r.jsx)("div", {
       "aria-label": u ? en.intl.string(en.t.dq7mAQ) : en.intl.string(en.t["5h0QOD"]),
       className: l()(er.container, {
@@ -407,18 +407,18 @@ let eo = Chunk647438.memo(function(e) {
         null == t || t.focus(), j.getState().setTitleFocused(true), j.getState().setFormOpen(true), j.getState().setHasClickedForm(true)
       }
     });
-    let w = i.useCallback(async e => {
+    let T = i.useCallback(async e => {
         let n = e.clipboardData.files[0];
         null != n && n.type.startsWith("image/") && (e.preventDefault(), await (0, H.d5)([n], t, Z.d.FirstThreadMessage, {
           origin: "clipboard"
         }), j.getState().setFormOpenFromUserAction())
       }, [t, j]),
-      T = (0, B.Op)(m, {
+      w = (0, B.Op)(m, {
         content: x
       });
     return (0, r.jsxs)("div", {
       className: er.titleContainer,
-      onPaste: w,
+      onPaste: T,
       children: [u && b ? (0, r.jsx)(f.X6q, {
         variant: "heading-md/semibold",
         className: er.title,
@@ -468,7 +468,7 @@ let eo = Chunk647438.memo(function(e) {
           }
           "Escape" !== e.key || j.getState().submitting || (null == (i = n.current) || i.blur(), j.getState().setFormOpen(false), j.getState().setTitleFocused(false), j.getState().setBodyFocused(false), j.getState().setPreviewing(false))
         },
-        error: T,
+        error: w,
         className: er.title,
         inputRef: n
       }), u ? null : (0, r.jsxs)(r.Fragment, {
@@ -520,7 +520,7 @@ let eu = Chunk647438.memo(function(e) {
       content: n
     }), {
       content: a
-    } = (0, T.Z)(i, {
+    } = (0, w.Z)(i, {
       hideSimpleEmbedContent: true,
       isInteracting: false,
       formatInline: false,
@@ -588,7 +588,7 @@ let eu = Chunk647438.memo(function(e) {
           richValue: n
         })
       }, [j]),
-      w = i.useCallback(e => {
+      T = i.useCallback(e => {
         let {
           value: t,
           uploads: r,
@@ -603,7 +603,7 @@ let eu = Chunk647438.memo(function(e) {
       event: ee.CkL.TEXTAREA_BLUR,
       handler: C
     });
-    let T = (0, B.Op)(m, {
+    let w = (0, B.Op)(m, {
       content: x.textValue
     });
     return (0, r.jsx)("div", {
@@ -625,10 +625,10 @@ let eu = Chunk647438.memo(function(e) {
             focused: p,
             className: er.channelTextArea,
             innerClassName: l()(er.channelTextAreaInner, {
-              [er.channelTextAreaInnerError]: null != T
+              [er.channelTextAreaInnerError]: null != w
             }),
             onChange: y,
-            onSubmit: w,
+            onSubmit: T,
             promptToUpload: H.d5,
             disabled: a,
             onKeyDown: e => {
@@ -637,7 +637,7 @@ let eu = Chunk647438.memo(function(e) {
             autoCompletePosition: "bottom"
           })
         }), (0, r.jsx)(f.pdY, {
-          error: T
+          error: w
         })]
       })
     })
@@ -756,7 +756,7 @@ let ep = Chunk647438.memo(function(e) {
             type: el,
             textValue: l.textValue,
             className: er.characterCount
-          }), d && (0, r.jsx)(Y.Z, {
+          }), d && (0, r.jsx)(J.Z, {
             rateLimitPerUser: o,
             slowmodeCooldownGuess: u,
             isBypassSlowmode: m,
@@ -790,7 +790,7 @@ function eb(e) {
     canCreatePost: n,
     disabled: i,
     disableIfInvalid: a = false
-  } = e, l = (0, S.HL)(t), {
+  } = e, l = (0, N.HL)(t), {
     submitting: s,
     name: o,
     formOpen: d
@@ -905,7 +905,7 @@ function ev(e) {
               className: er.tagListInner,
               ref: t
             }, i), {
-              children: _.map(e => (0, r.jsx)(J.Z, {
+              children: _.map(e => (0, r.jsx)(Y.Z, {
                 ariaLabel: en.intl.formatToPlainString(en.t.FSZVIS, {
                   tagName: e.name
                 }),
@@ -913,7 +913,7 @@ function ev(e) {
                 onClick: o && !n.has(e.id) ? true : () => a(e.id),
                 disabled: !n.has(e.id) && n.size >= $.Cn,
                 selected: n.has(e.id),
-                size: J.Z.Sizes.SMALL
+                size: Y.Z.Sizes.SMALL
               }, e.id))
             }))
           }

@@ -28,13 +28,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk809639 = require("./809639.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk272210 = require("./272210.js");
-let S = [{
+let N = [{
     name: "Media Post Thumbnail",
     extensions: ["jpg", "jpeg", "png", "gif", "webp"]
   }],
-  P = (0, Chunk313201.hQ)();
+  S = (0, Chunk313201.hQ)();
 
-function N(e) {
+function P(e) {
   let {
     mediaAttachments: t,
     containerWidth: n,
@@ -76,7 +76,7 @@ let I = e => {
     return {
       textAreaState: t
     }
-  }, c.X), b = (0, d.e7)([g.Z], () => g.Z.keyboardModeEnabled), j = (0, w.Z)(a, null == (t = s.textValue) ? true : t.trim()), C = i.useMemo(() => j.find(e => e.isThumbnail), [j]), I = null != j && j.length > 0, E = i.useMemo(() => {
+  }, c.X), b = (0, d.e7)([g.Z], () => g.Z.keyboardModeEnabled), j = (0, T.Z)(a, null == (t = s.textValue) ? true : t.trim()), C = i.useMemo(() => j.find(e => e.isThumbnail), [j]), I = null != j && j.length > 0, E = i.useMemo(() => {
     let e = (null == j ? true : j.length) > 1 ? 1.15 : 1;
     return {
       width: 153 * e,
@@ -150,11 +150,11 @@ let I = e => {
     onChange: R,
     multiple: false,
     "aria-hidden": true,
-    filters: S,
-    "aria-describedby": P,
-    "aria-label": I ? T.intl.string(T.t.MxJI3d) : T.intl.string(T.t.CbiofX),
+    filters: N,
+    "aria-describedby": S,
+    "aria-label": I ? w.intl.string(w.t.MxJI3d) : w.intl.string(w.t.CbiofX),
     children: I ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(N, {
+      children: [(0, r.jsx)(P, {
         mediaAttachments: j,
         containerWidth: E.width,
         containerHeight: E.height
@@ -165,7 +165,7 @@ let I = e => {
         children: [(0, r.jsx)(m.Text, {
           variant: "text-xs/medium",
           color: "header-secondary",
-          children: T.intl.string(T.t.MxJI3d)
+          children: w.intl.string(w.t.MxJI3d)
         }), null == C && (0, r.jsx)(m.vdY, {
           size: "xs",
           color: "currentColor",
@@ -182,7 +182,7 @@ let I = e => {
       }), (0, r.jsx)(m.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: T.intl.string(T.t.CbiofX)
+        children: w.intl.string(w.t.CbiofX)
       })]
     })
   });
@@ -193,7 +193,7 @@ let I = e => {
       actions: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(x.Z, {
           className: O.action,
-          tooltip: T.intl.string(T.t.Y8ujqq),
+          tooltip: w.intl.string(w.t.Y8ujqq),
           onClick: M,
           children: (0, r.jsx)(m.vdY, {
             size: "xs",
@@ -201,7 +201,7 @@ let I = e => {
           })
         }), (0, r.jsx)(x.Z, {
           className: O.action,
-          tooltip: T.intl.string(T.t.vN7REx),
+          tooltip: w.intl.string(w.t.vN7REx),
           onClick: () => h.Z.remove(a.id, C.id, f.Ie.CREATE_FORUM_POST.drafts.type),
           dangerous: true,
           children: (0, r.jsx)(m.XHJ, {

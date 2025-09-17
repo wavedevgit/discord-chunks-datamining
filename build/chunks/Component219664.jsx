@@ -113,16 +113,16 @@ function V(e) {
   } = e, p = n.id, b = i.useRef(null), j = (0, o.e7)([C.ZP], () => C.ZP.getCurrentSidebarChannelId(n.parent_id) === n.id), {
     firstMessage: v,
     loaded: _
-  } = (0, S.cl)(n), {
+  } = (0, N.cl)(n), {
     messageCountText: y
   } = (0, O.nP)(n), {
-    isNew: w,
-    hasUnreads: T
-  } = (0, O.J$)(n), P = i.useRef(null), {
-    handleLeftClick: N,
+    isNew: T,
+    hasUnreads: w
+  } = (0, O.J$)(n), S = i.useRef(null), {
+    handleLeftClick: P,
     handleRightClick: R
   } = (0, A.Z)({
-    facepileRef: P,
+    facepileRef: S,
     goToThread: a,
     channel: n
   });
@@ -158,7 +158,7 @@ function V(e) {
     }(B, ["onFocus"]);
   return (0, r.jsxs)("li", {
     ref: b,
-    onClick: N,
+    onClick: P,
     onFocus: U,
     onContextMenu: R,
     className: l()(z.container, m, {
@@ -166,7 +166,7 @@ function V(e) {
     }),
     style: H({}, h),
     children: [(0, r.jsx)(d.P3F, H({
-      onClick: N,
+      onClick: P,
       focusProps: {
         ringTarget: b
       },
@@ -191,7 +191,7 @@ function V(e) {
             className: z.postCreationTimestamp,
             children: Z
           })]
-        }), w ? (0, r.jsx)(d.IGR, {
+        }), T ? (0, r.jsx)(d.IGR, {
           className: z.newBadge,
           color: c.Z.unsafe_rawColors.BRAND_260.css,
           text: D.intl.string(D.t.y2b7CA)
@@ -200,7 +200,7 @@ function V(e) {
         children: (0, r.jsx)(d.X6q, {
           variant: "heading-md/extrabold",
           className: z.title,
-          color: T ? "header-primary" : "text-muted",
+          color: w ? "header-primary" : "text-muted",
           style: {
             width: "".concat(h.width - 2 * E.I8, "px")
           },
@@ -224,7 +224,7 @@ function V(e) {
         children: (0, r.jsx)(W, {
           channel: n,
           firstMessage: v,
-          facepileRef: P
+          facepileRef: S
         })
       })
     })]
@@ -241,9 +241,9 @@ function G(e) {
   } = e, {
     isBlocked: s,
     isIgnored: c
-  } = (0, o.cj)([T.Z], () => ({
-    isBlocked: null != n && T.Z.isBlockedForMessage(n),
-    isIgnored: null != n && T.Z.isIgnoredForMessage(n)
+  } = (0, o.cj)([w.Z], () => ({
+    isBlocked: null != n && w.Z.isBlockedForMessage(n),
+    isIgnored: null != n && w.Z.isIgnoredForMessage(n)
   }));
   return s ? (0, r.jsx)($, {
     message: D.intl.string(D.t.Lkp2fH),
@@ -277,21 +277,21 @@ function q(e) {
     noStyleAndInteraction: false
   }), {
     hasUnreads: d
-  } = (0, O.J$)(t), u = (0, o.e7)([w.Z], () => w.Z.can(F.Plq.MANAGE_MESSAGES, t)), m = _.QK.useSetting(), h = _.cC.useSetting(), g = (0, b.Z)(h, u), f = (0, P.aU)(n, s, false), [x, p] = (0, E.rI)(l.width - 2 * E.LT), j = (null == n ? true : n.blocked) || null == (null != a ? a : c), v = t.isMediaPost();
-  return j ? (0, r.jsx)(Q, {
+  } = (0, O.J$)(t), u = (0, o.e7)([T.Z], () => T.Z.can(F.Plq.MANAGE_MESSAGES, t)), m = _.QK.useSetting(), h = _.cC.useSetting(), g = (0, b.Z)(h, u), f = (0, S.aU)(n, s, false), x = t.isMediaPost(), [p, j] = (0, E.rI)(l.width - 2 * E.LT, x ? E.Lv.SIXTEEN_BY_NINE : E.Lv.THREE_BY_TWO);
+  return (null == n ? true : n.blocked) || null == (null != a ? a : c) ? (0, r.jsx)(Q, {
     channel: t,
     firstMessage: n,
     isFirstMessageLoaded: i,
     containerWidth: l.width,
     hasUnreads: d
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(J, {
+    children: [(0, r.jsx)(Y, {
       mediaAttachments: f,
       globalSpoilerRenderSetting: g,
-      containerWidth: x,
-      containerHeight: v ? 9 / 16 * x : p,
+      containerWidth: p,
+      containerHeight: j,
       canAutoPlay: m,
-      shouldMaintainAspectRatio: v
+      shouldMaintainAspectRatio: x
     }), (0, r.jsx)("div", {
       className: z.tagsRow,
       children: (0, r.jsx)(Z.ZP, {
@@ -362,7 +362,7 @@ let X = e => e.preventDefault(),
       }))
     })
   }),
-  J = Chunk647438.memo(function(e) {
+  Y = Chunk647438.memo(function(e) {
     let {
       mediaAttachments: t,
       globalSpoilerRenderSetting: n,
@@ -373,7 +373,7 @@ let X = e => e.preventDefault(),
     } = e, {
       containsVideo: u,
       containsGif: m
-    } = i.useMemo(() => (0, P.cp)(t), [t]), b = i.useMemo(() => t.slice(R.$x, R.GV), [t]), j = (0, R.tu)({
+    } = i.useMemo(() => (0, S.cp)(t), [t]), b = i.useMemo(() => t.slice(R.$x, R.GV), [t]), j = (0, R.tu)({
       numAttachments: b.length,
       containerWidth: a,
       containerHeight: s
@@ -417,7 +417,7 @@ let X = e => e.preventDefault(),
           responsive: true
         })), a && (0, r.jsx)("div", {
           className: z.obscuredTagContainer,
-          children: (0, r.jsx)(N.Z, {
+          children: (0, r.jsx)(P.Z, {
             obscureReason: s,
             iconClassname: z.obscuredTag
           })
@@ -445,7 +445,7 @@ let X = e => e.preventDefault(),
           color: "currentColor",
           className: z.mediaIcon
         })]
-      }), t.length > R.Vn && (0, r.jsx)(Y, {
+      }), t.length > R.Vn && (0, r.jsx)(J, {
         text: (t.length - R.Vn).toString(),
         icon: d.XBm,
         pillClassName: z.moreImagesPill,
@@ -455,7 +455,7 @@ let X = e => e.preventDefault(),
     })
   });
 
-function Y(e) {
+function J(e) {
   let {
     text: t,
     icon: n,

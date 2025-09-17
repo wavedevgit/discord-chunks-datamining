@@ -60,7 +60,7 @@ function g(e) {
         }), n))
       }
     })
-  }, [g]), _ = f.size > 0, C = b || p, y = !_ && p && !j, w = i.useCallback(() => y ? v() : b ? void o.S.dispatch(u.CkL.FOCUS_COMPOSER_TITLE) : (0, u.VqG)(), [v, y, b]);
+  }, [g]), _ = f.size > 0, C = b || p, y = !_ && p && !j, T = i.useCallback(() => y ? v() : b ? void o.S.dispatch(u.CkL.FOCUS_COMPOSER_TITLE) : (0, u.VqG)(), [v, y, b]);
   return (0, r.jsxs)("div", {
     className: h.container,
     children: [(0, r.jsx)(l.X6q, {
@@ -83,7 +83,7 @@ function g(e) {
       }), (0, r.jsx)(a.zxk, {
         text: y ? m.intl.string(m.t.DgatTU) : m.intl.string(m.t.wOKE8P),
         variant: "secondary",
-        onClick: w
+        onClick: T
       })]
     })]
   })
