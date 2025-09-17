@@ -38,6 +38,6 @@ function y(e) {
     Z = e.features.has(O.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY),
     w = (0, g.Z)(e.id),
     T = (0, h.A0)(e.id, "useGuildActionRows"),
-    A = e.features.has(O.oNc.GAME_SERVER_HOSTING);
+    A = e.features.has(O.oNc.GAME_SERVERS);
   return P && S.push(b.z.GUILD_HUB_HEADER_OPTIONS), !C && j && x && null != v && v.length > 0 ? S.push(b.z.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : e.premiumProgressBarEnabled && S.push(b.z.GUILD_PREMIUM_PROGRESS_BAR), !P && j && S.push(b.z.GUILD_HOME), t && S.push(b.z.GUILD_SCHEDULED_EVENTS), !P && I && N && S.push(b.z.CHANNELS_AND_ROLES), y && S.push(b.z.GUILD_ROLE_SUBSCRIPTIONS), _ && S.push(b.z.GUILD_SHOP), (E && (I || Z) || n && e.features.has(O.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && S.push(b.z.GUILD_MOD_DASH_MEMBER_SAFETY), w && S.push(b.z.GUILD_BOOSTS), T && A && S.push(b.z.PORTKEY), S
 }
