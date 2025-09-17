@@ -1,5 +1,5 @@
-/** Chunk was on 46653 **/
-/** chunk id: 246642, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 11424 **/
+/** chunk id: 246642, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 });
@@ -12,10 +12,10 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk617296 = require("./617296.js");
 
-function c(e) {
+function c(t) {
   let {
-    channelId: t
-  } = e, i = (0, l.Z)(t);
+    channelId: e
+  } = t, i = (0, l.Z)(e);
   if (!(null != i && (i.value > 0 || (null == i ? true : i.multiplier) > 1))) return null;
   let {
     multiplier: c
@@ -24,13 +24,13 @@ function c(e) {
   } = (0, o.yz)(c);
   return (0, n.jsxs)("div", {
     className: d.container,
-    children: [(0, n.jsx)(r.Text, {
+    children: [(0, n.jsx)(s.Text, {
       variant: "text-xs/normal",
       children: a.intl.string(a.t.Jr2519)
-    }), (0, n.jsx)(r.Exd, {
-      foregroundColor: (0, s.Lq)(u),
+    }), (0, n.jsx)(s.Exd, {
+      foregroundColor: (0, r.Lq)(u),
       className: d.progress,
-      size: r.Exd.Sizes.LARGE,
+      size: s.Exd.Sizes.LARGE,
       percent: 100 * (0, o.nc)(i),
       animate: true
     })]

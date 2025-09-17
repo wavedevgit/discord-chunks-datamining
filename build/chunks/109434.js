@@ -1,11 +1,11 @@
-/** Chunk was on 46653 **/
-/** chunk id: 109434, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 11424 **/
+/** chunk id: 109434, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   H: () => b,
-  v: () => y
+  v: () => S
 }), require("./388685.js");
 var Chunk512722 = require("./512722.js"),
-  r = require.n(Chunk512722),
+  s = require.n(Chunk512722),
   Chunk879690 = require("./879690.js"),
   Chunk313361 = require("./313361.js"),
   Chunk697988 = require("./697988.js"),
@@ -15,89 +15,89 @@ var Chunk512722 = require("./512722.js"),
   Chunk592125 = require("./592125.js"),
   Chunk559241 = require("./559241.js");
 
-function p(e, t, i) {
-  return t in e ? Object.defineProperty(e, t, {
+function g(t, e, i) {
+  return e in t ? Object.defineProperty(t, e, {
     value: i,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : e[t] = i, e
+  }) : t[e] = i, t
 }
 
-function g(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var i = null != arguments[t] ? arguments[t] : {},
+function p(t) {
+  for (var e = 1; e < arguments.length; e++) {
+    var i = null != arguments[e] ? arguments[e] : {},
       n = Object.keys(i);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(i).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(i, e).enumerable
-    }))), n.forEach(function(t) {
-      p(e, t, i[t])
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(i).filter(function(t) {
+      return Object.getOwnPropertyDescriptor(i, t).enumerable
+    }))), n.forEach(function(e) {
+      g(t, e, i[e])
     })
   }
-  return e
+  return t
 }
-let m = new Set,
-  f = {
+let f = new Set,
+  m = {
     layoutType: Chunk313361.X.LIST,
     sortOrder: Chunk683860.z.CREATION_DATE,
-    tagFilter: m,
+    tagFilter: f,
     scrollPosition: 0,
     tagSetting: Chunk697988.z.MATCH_SOME
   };
 class v {
-  constructor(e, t) {
-    p(this, "set", true), p(this, "get", true), p(this, "channelStates", true), p(this, "setChannelState", true), p(this, "getChannelState", true), p(this, "toggleTagFilter", true), p(this, "setTagFilter", true), p(this, "setSortOrder", true), p(this, "setLayoutType", true), p(this, "setTagSetting", true), p(this, "setScrollPosition", true), this.set = e, this.get = t, this.channelStates = {}, this.setChannelState = (e, t) => {
+  constructor(t, e) {
+    g(this, "set", true), g(this, "get", true), g(this, "channelStates", true), g(this, "setChannelState", true), g(this, "getChannelState", true), g(this, "toggleTagFilter", true), g(this, "setTagFilter", true), g(this, "setSortOrder", true), g(this, "setLayoutType", true), g(this, "setTagSetting", true), g(this, "setScrollPosition", true), this.set = t, this.get = e, this.channelStates = {}, this.setChannelState = (t, e) => {
       let i = this.get(),
-        n = this.getChannelState(e),
-        r = g({}, i.channelStates);
-      r[e] = g({}, n, t), (0, d.j)(() => this.set({
-        channelStates: r
+        n = this.getChannelState(t),
+        s = p({}, i.channelStates);
+      s[t] = p({}, n, e), (0, d.j)(() => this.set({
+        channelStates: s
       }))
-    }, this.getChannelState = e => {
-      if (null == e) return f;
+    }, this.getChannelState = t => {
+      if (null == t) return m;
       let {
-        channelStates: t
-      } = this.get(), i = t[e];
+        channelStates: e
+      } = this.get(), i = e[t];
       if (null == i) {
-        let t = u.Z.getChannel(e);
-        r()(null != t, "[Forum Channel Store] The channel should not be missing."), i = {
-          layoutType: t.getDefaultLayout(),
-          sortOrder: t.getDefaultSortOrder(),
-          tagFilter: m,
+        let e = u.Z.getChannel(t);
+        s()(null != e, "[Forum Channel Store] The channel should not be missing."), i = {
+          layoutType: e.getDefaultLayout(),
+          sortOrder: e.getDefaultSortOrder(),
+          tagFilter: f,
           scrollPosition: 0,
-          tagSetting: t.getDefaultTagSetting()
+          tagSetting: e.getDefaultTagSetting()
         }
       }
       return i
-    }, this.toggleTagFilter = (e, t) => {
-      let i = new Set(this.getChannelState(e).tagFilter);
-      i.has(t) ? i.delete(t) : i.add(t), this.setTagFilter(e, i)
-    }, this.setTagFilter = (e, t) => {
-      this.setChannelState(e, {
-        tagFilter: t
-      }), h.Z.setFilterTagIds(t)
-    }, this.setSortOrder = (e, t) => {
-      this.setChannelState(e, {
-        sortOrder: t
-      }), h.Z.setSortOrder(t)
-    }, this.setLayoutType = (e, t) => {
-      this.setChannelState(e, {
-        layoutType: t
-      }), h.Z.setLayout(t)
-    }, this.setTagSetting = (e, t) => {
-      this.setChannelState(e, {
-        tagSetting: t
-      }), h.Z.setTagSetting(t)
-    }, this.setScrollPosition = (e, t) => {
-      this.setChannelState(e, {
-        scrollPosition: t
+    }, this.toggleTagFilter = (t, e) => {
+      let i = new Set(this.getChannelState(t).tagFilter);
+      i.has(e) ? i.delete(e) : i.add(e), this.setTagFilter(t, i)
+    }, this.setTagFilter = (t, e) => {
+      this.setChannelState(t, {
+        tagFilter: e
+      }), h.Z.setFilterTagIds(e)
+    }, this.setSortOrder = (t, e) => {
+      this.setChannelState(t, {
+        sortOrder: e
+      }), h.Z.setSortOrder(e)
+    }, this.setLayoutType = (t, e) => {
+      this.setChannelState(t, {
+        layoutType: e
+      }), h.Z.setLayout(e)
+    }, this.setTagSetting = (t, e) => {
+      this.setChannelState(t, {
+        tagSetting: e
+      }), h.Z.setTagSetting(e)
+    }, this.setScrollPosition = (t, e) => {
+      this.setChannelState(t, {
+        scrollPosition: e
       })
     }
   }
 }
-let O = (0, Chunk879690.U)((e, t) => new v(e, t)),
-  b = e => {
-    let t = O();
-    return null == (0, c.e7)([u.Z], () => u.Z.getChannel(e)) ? f : t.getChannelState(e)
+let O = (0, Chunk879690.U)((t, e) => new v(t, e)),
+  b = t => {
+    let e = O();
+    return null == (0, c.e7)([u.Z], () => u.Z.getChannel(t)) ? m : e.getChannelState(t)
   },
-  y = () => O
+  S = () => O
