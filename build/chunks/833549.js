@@ -8,11 +8,17 @@ let r = (0, require("./427164.js").le)({
   name: "2025-08-mobile-apple-payment-links",
   kind: "user",
   defaultConfig: {
-    enabled: false
+    enabled: false,
+    discountEnabled: false
   },
   variations: {
     1: {
-      enabled: true
+      enabled: true,
+      discountEnabled: false
+    },
+    2: {
+      enabled: true,
+      discountEnabled: true
     }
   }
 })

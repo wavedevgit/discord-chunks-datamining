@@ -103,8 +103,8 @@ class k extends Chunk98597.ZP {
       isSubscriptionGated: b,
       isFavoriteSuggestion: y,
       subtitle: _,
-      forceTopLevelThread: j,
-      embeddedApps: v,
+      forceTopLevelThread: v,
+      embeddedApps: j,
       resolvedUnreadSetting: x,
       withGuildIcon: C,
       enableActivities: E
@@ -250,7 +250,7 @@ class k extends Chunk98597.ZP {
           channel: t
         }))
       });
-      let i = v.Z.getGuild(t.getGuildId());
+      let i = j.Z.getGuild(t.getGuildId());
       null != i && (0, u.jW)(e, async () => {
         let {
           default: e
@@ -280,21 +280,21 @@ function G(e) {
     unread: C.ZP.hasUnread(t.id),
     ackMessageId: C.ZP.ackMessageId(t.id),
     isLowImportanceMention: C.ZP.getIsMentionLowImportance(t.id)
-  })), g = (0, a.e7)([E.ZP], () => E.ZP.resolveUnreadSetting(t)), m = (0, a.cj)([j.Z, x.Z], () => {
-    let e = j.Z.getChannel(t.parent_id);
+  })), g = (0, a.e7)([E.ZP], () => E.ZP.resolveUnreadSetting(t)), m = (0, a.cj)([v.Z, x.Z], () => {
+    let e = v.Z.getChannel(t.parent_id);
     return {
       canManageChannel: x.Z.can(T.Plq.MANAGE_CHANNELS, t),
       canReorderChannel: true !== i && (n.id === A._ || (null != e ? x.Z.can(T.Plq.MANAGE_CHANNELS, e) : x.Z.can(T.Plq.MANAGE_CHANNELS, n)))
     }
   }), O = (0, a.e7)([y.Z], () => y.Z.shouldIndicateNewChannel(n.id, t.id)), {
-    needSubscriptionToAccess: v,
+    needSubscriptionToAccess: j,
     isSubscriptionGated: S
   } = (0, b.Z)(t.id), P = (0, a.e7)([E.ZP], () => E.ZP.isFavorite(n.id, t.id)), I = (0, h.$5)(t), Z = (0, p.NX)(t.id), w = (0, N.Z)({
     channel: t,
     isChannelCollapsed: false,
     isChannelSelected: s,
     isSubscriptionGated: S,
-    needSubscriptionToAccess: v,
+    needSubscriptionToAccess: j,
     isNewChannel: O,
     muted: o,
     enableActivities: Z,
@@ -304,7 +304,7 @@ function G(e) {
     hasActiveThreads: c,
     hasMoreActiveThreads: u,
     isSubscriptionGated: S,
-    needSubscriptionToAccess: v,
+    needSubscriptionToAccess: j,
     isNewChannel: O && e.canBeNewChannel,
     isFavoriteSuggestion: l && !P,
     channelIsContentGated: I,

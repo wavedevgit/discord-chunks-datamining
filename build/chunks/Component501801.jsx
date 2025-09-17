@@ -2,7 +2,7 @@
 /** chunk id: 501801, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   mp: () => b,
-  tP: () => x,
+  tP: () => v,
   xO: () => L
 }), require("./539854.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
@@ -98,7 +98,7 @@ class b extends Chunk647438.PureComponent {
   }
 }
 
-function x(e) {
+function v(e) {
   let {
     log: t,
     guild: n,

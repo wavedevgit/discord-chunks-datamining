@@ -129,7 +129,7 @@ let k = Chunk647438.memo(function(e) {
         nodeId: U.id
       }),
       end() {
-        null == V || V(), (0, g.V1)(v.ZP.getCompatibleGuildFolders())
+        null == V || V(), (0, g.V1)(j.ZP.getCompatibleGuildFolders())
       },
       collect: e => ({
         dragging: e.isDragging()
@@ -140,9 +140,9 @@ let k = Chunk647438.memo(function(e) {
     em = !ee && eh,
     [eb, eO] = i.useState(false),
     [ey, e_] = i.useState(false),
-    [ej] = i.useState(() => new d.sW(70, () => e_(true)));
-  i.useEffect(() => () => ej.cancel(), [ej]);
-  let ev = i.useCallback(() => {
+    [ev] = i.useState(() => new d.sW(70, () => e_(true)));
+  i.useEffect(() => () => ev.cancel(), [ev]);
+  let ej = i.useCallback(() => {
       if (null != F) return void(0, O.uL)(F, {
         state: L
       });
@@ -155,7 +155,7 @@ let k = Chunk647438.memo(function(e) {
       let e = (0, b.V)(H.id);
       null != e && f.Z.preload(H.id, e)
     }, [F, H, q, et]),
-    eC = (0, u.e7)([j.ZP], () => j.ZP.isCurrentUserGuest(eo)),
+    eC = (0, u.e7)([v.ZP], () => v.ZP.isCurrentUserGuest(eo)),
     eE = i.useCallback(e => {
       null == H || eC || J(e, H)
     }, [H, J, eC]),
@@ -166,9 +166,9 @@ let k = Chunk647438.memo(function(e) {
       }
     }, [ea]),
     eP = i.useCallback(e => {
-      if (e) return void ej.delay();
-      ej.cancel(), e_(false)
-    }, [ej]),
+      if (e) return void ev.delay();
+      ev.cancel(), e_(false)
+    }, [ev]),
     eI = i.useCallback(e => {
       null == G || G(eo, e)
     }, [eo, G]),
@@ -190,7 +190,7 @@ let k = Chunk647438.memo(function(e) {
         mentions: X
       }),
       name: H.name,
-      onClick: ev,
+      onClick: ej,
       onMouseEnter: function() {
         ee || eg(true)
       },

@@ -1,64 +1,72 @@
 /** Chunk was on 65045 **/
-/** chunk id: 143782, original params: t,e,n (module,exports,require) **/
+/** chunk id: 143782, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => a
+  default: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk153867 = require("./153867.js"),
   Chunk468026 = require("./468026.jsx"),
+  Chunk493773 = require("./493773.js"),
   Chunk933557 = require("./933557.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let a = t => {
+let s = e => {
   var {
-    onConfirm: e,
-    channel: n
-  } = t, a = function(t, e) {
-    if (null == t) return {};
-    var n, r, o = function(t, e) {
-      if (null == t) return {};
-      var n, r, o = {},
-        l = Object.keys(t);
-      for (r = 0; r < l.length; r++) n = l[r], e.indexOf(n) >= 0 || (o[n] = t[n]);
+    onConfirm: n,
+    channel: t
+  } = e, s = function(e, n) {
+    if (null == e) return {};
+    var t, r, o = function(e, n) {
+      if (null == e) return {};
+      var t, r, o = {},
+        i = Object.keys(e);
+      for (r = 0; r < i.length; r++) t = i[r], n.indexOf(t) >= 0 || (o[t] = e[t]);
       return o
-    }(t, e);
+    }(e, n);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(t);
-      for (r = 0; r < l.length; r++) n = l[r], !(e.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(t, n) && (o[n] = t[n])
+      var i = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < i.length; r++) t = i[r], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (o[t] = e[t])
     }
     return o
-  }(t, ["onConfirm", "channel"]);
-  let u = (0, i.ZP)(n);
-  return null == u ? null : (0, r.jsx)(l.default, function(t) {
-    for (var e = 1; e < arguments.length; e++) {
-      var n = null != arguments[e] ? arguments[e] : {},
-        r = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
-        return Object.getOwnPropertyDescriptor(n, t).enumerable
-      }))), r.forEach(function(e) {
+  }(e, ["onConfirm", "channel"]);
+  let b = (0, c.ZP)(t);
+  return ((0, l.ZP)(() => {
+    a.default.track(u.rMx.OPEN_MODAL, {
+      type: "Voice channel change confirmation",
+      channel_id: t.id
+    })
+  }), null == b) ? null : (0, r.jsx)(i.default, function(e) {
+    for (var n = 1; n < arguments.length; n++) {
+      var t = null != arguments[n] ? arguments[n] : {},
+        r = Object.keys(t);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(t, e).enumerable
+      }))), r.forEach(function(n) {
         var r;
-        r = n[e], e in t ? Object.defineProperty(t, e, {
+        r = t[n], n in e ? Object.defineProperty(e, n, {
           value: r,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : t[e] = r
+        }) : e[n] = r
       })
     }
-    return t
+    return e
   }({
-    confirmText: c.intl.string(c.t["cY+Ooa"]),
-    secondaryConfirmText: c.intl.string(c.t["JdIQ/f"]),
-    title: c.intl.string(c.t["0LZN5O"]),
-    cancelText: c.intl.string(c.t["ETE/oK"]),
-    onConfirm: e,
+    confirmText: f.intl.string(f.t["cY+Ooa"]),
+    secondaryConfirmText: f.intl.string(f.t["JdIQ/f"]),
+    title: f.intl.string(f.t["0LZN5O"]),
+    cancelText: f.intl.string(f.t["ETE/oK"]),
+    onConfirm: n,
     onConfirmSecondary: () => {
       o.ZP.updatedUnsyncedSettings({
         disableVoiceChannelChangeAlert: true
       })
     },
-    body: c.intl.format(c.t["vA+uEh"], {
-      channel: u
+    body: f.intl.format(f.t["vA+uEh"], {
+      channel: b
     })
-  }, a))
+  }, s))
 }

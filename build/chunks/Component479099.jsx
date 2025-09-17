@@ -67,14 +67,14 @@ function f(e) {
     name: C,
     emojiId: L,
     emojiName: D
-  } = t, U = null != p, [M, b] = i.useState(false), x = (0, u.e7)([A.ZP], () => null != L ? A.ZP.getUsableCustomEmojiById(L) : null), v = U || null != f, P = (!U || !M) && (null != L || null != D), j = 0 === r, y = i.useRef(null), G = (0, u.e7)([_.Z], () => _.Z.keyboardModeEnabled), w = (0, l.jsxs)(l.Fragment, {
+  } = t, U = null != p, [M, b] = i.useState(false), v = (0, u.e7)([A.ZP], () => null != L ? A.ZP.getUsableCustomEmojiById(L) : null), x = U || null != f, P = (!U || !M) && (null != L || null != D), j = 0 === r, y = i.useRef(null), G = (0, u.e7)([_.Z], () => _.Z.keyboardModeEnabled), w = (0, l.jsxs)(l.Fragment, {
     children: [P ? (0, l.jsx)(d.Z, {
       className: s()(g.emoji, {
         [g.small]: j
       }),
       emojiId: L,
       emojiName: D,
-      animated: !!(null == x ? true : x.animated),
+      animated: !!(null == v ? true : v.animated),
       size: "reaction"
     }) : null, M && U && (0, l.jsx)("div", {
       className: g.closeCircle,
@@ -93,10 +93,10 @@ function f(e) {
     key: t.id,
     className: s()(g.pill, {
       [g.disabled]: a,
-      [g.clickable]: v,
+      [g.clickable]: x,
       [g.small]: j,
       [g.selected]: R,
-      [g[t.color]]: null != t.color && !v
+      [g[t.color]]: null != t.color && !x
     }, O),
     onClick: e => {
       null == f || f(e), null == p || p(t), G || null == y.current || y.current.blur()
@@ -115,7 +115,7 @@ function f(e) {
     onMouseEnter: () => U && b(true),
     onMouseLeave: () => U && b(false)
   }, F = (0, o.JA)("forum-tag-".concat(t.id));
-  return v ? (0, l.jsx)(c.P3F, N(h(N(h({}, F), {
+  return x ? (0, l.jsx)(c.P3F, N(h(N(h({}, F), {
     innerRef: y,
     focusProps: {
       ringTarget: y

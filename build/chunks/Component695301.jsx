@@ -22,7 +22,7 @@ let b = Chunk647438.memo(function(e) {
   let {
     guildNode: b,
     lowerBadge: O
-  } = e, y = b.id, _ = (0, l.e7)([p.Z], () => p.Z.getGuild(y)), j = (0, a.E)(_), v = (0, l.e7)([f.Z], () => f.Z.isFocused()), x = (0, l.e7)([u.Z], () => u.Z.isUnavailable(y)), C = (0, c.Z)(e => e.guildId), E = (0, h.Z)(y), {
+  } = e, y = b.id, _ = (0, l.e7)([p.Z], () => p.Z.getGuild(y)), v = (0, a.E)(_), j = (0, l.e7)([f.Z], () => f.Z.isFocused()), x = (0, l.e7)([u.Z], () => u.Z.isUnavailable(y)), C = (0, c.Z)(e => e.guildId), E = (0, h.Z)(y), {
     badge: S,
     unread: P,
     isMentionLowImportance: I
@@ -60,14 +60,14 @@ let b = Chunk647438.memo(function(e) {
   }({}, e), n = n = {
     guild: _,
     unavailable: x,
-    animatable: v,
+    animatable: j,
     selected: C === y,
     badge: S,
     isMentionLowImportance: I,
     lowerBadge: Z,
     unread: P,
     mediaState: E,
-    guildJoinRequestStatus: j
+    guildJoinRequestStatus: v
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

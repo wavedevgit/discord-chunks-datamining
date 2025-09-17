@@ -45,8 +45,8 @@ function S(e, t) {
 function P() {
   let e = (0, Chunk442837.Wu)([Chunk853856.Z, Chunk592125.Z], () => Chunk709054.default.keys(Chunk853856.Z.getFavoriteChannels()).map(e => m.Z.getChannel(e)).filter(Chunk823379.lm)),
     t = module.map(e => e.id),
-    n = module.filter(e => e.type === v.d4z.GUILD_VOICE),
-    i = module.filter(e => e.type === v.d4z.GUILD_STAGE_VOICE).map(e => e.id),
+    n = module.filter(e => e.type === j.d4z.GUILD_VOICE),
+    i = module.filter(e => e.type === j.d4z.GUILD_STAGE_VOICE).map(e => e.id),
     l = (0, Chunk442837.Wu)([Chunk938475.ZP], () => a().flatMap(require, e => O.ZP.getVoiceStatesForChannel(e).map(e => {
       let {
         user: t

@@ -5,7 +5,7 @@ require.d(exports, {
   KY: () => D,
   Uo: () => U,
   fU: () => b,
-  qw: () => x,
+  qw: () => v,
   tn: () => M
 }), require("./290780.js");
 var Chunk647438 = require("./647438.js"),
@@ -120,7 +120,7 @@ function b(e) {
   return null == a ? 0 : 0 === a.length ? i.index + 2 - l : a[a.length - 1].index + 2 - l
 }
 
-function x(e) {
+function v(e) {
   var t;
   return S.intl.formatToPlainString(S.t["8N0BHR"], {
     timeAgo: s()(N.default.extractTimestamp(null != (t = h.ZP.lastMessageId(e)) ? t : e)).fromNow()

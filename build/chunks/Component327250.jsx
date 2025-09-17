@@ -52,7 +52,7 @@ function b(e) {
   return e
 }
 
-function x(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -65,7 +65,7 @@ function x(e, t) {
   }), e
 }
 
-function v(e) {
+function x(e) {
   let {
     user: t,
     guildId: n,
@@ -148,7 +148,7 @@ function P(e) {
   }(e, ["tag", "text", "disabled", "children", "onClick"]);
   return (0, r.jsx)(s.ua7, {
     text: n,
-    children: e => (0, r.jsx)(s.P3F, x(b({}, u, e), {
+    children: e => (0, r.jsx)(s.P3F, v(b({}, u, e), {
       tag: t,
       "aria-label": n,
       className: i()(M.bottomRowAction, {
@@ -179,7 +179,7 @@ function j(e) {
   }), [t, T]), C = (0, c.b)(l), {
     analyticsLocations: L,
     newestAnalyticsLocation: D
-  } = (0, u.ZP)(), v = (0, A.sE)(i, {
+  } = (0, u.ZP)(), x = (0, A.sE)(i, {
     targetUserId: t.id,
     location: D,
     locations: L
@@ -213,7 +213,7 @@ function j(e) {
           let {
             default: e
           } = await n.e("5454").then(n.bind(n, 854360));
-          return n => (0, r.jsx)(e, x(b({}, n), {
+          return n => (0, r.jsx)(e, v(b({}, n), {
             location: D,
             guildId: i,
             user: t,
@@ -235,7 +235,7 @@ function j(e) {
           let {
             default: e
           } = await n.e("43350").then(n.bind(n, 98746));
-          return n => (0, r.jsx)(e, x(b({}, n), {
+          return n => (0, r.jsx)(e, v(b({}, n), {
             location: D,
             guildId: i,
             user: t,
@@ -273,7 +273,7 @@ function j(e) {
     }), (0, r.jsx)(P, {
       text: U.intl.string(U.t.IHTjzM),
       onClick: () => {
-        v(A.jQ.COPY_ID), (0, S.JG)(t.id)
+        x(A.jQ.COPY_ID), (0, S.JG)(t.id)
       },
       disabled: !S.wS,
       children: (0, r.jsx)(s.VuL, {
@@ -294,7 +294,7 @@ function y(e) {
   } = e, i = (0, a.e7)([R.default], () => R.default.getUser(t), [t]), s = (0, a.e7)([g.ZP], () => g.ZP.getMember(n, t), [n, t]);
   return null == i || null == s ? null : (0, r.jsxs)("div", {
     className: M.container,
-    children: [(0, r.jsx)(v, {
+    children: [(0, r.jsx)(x, {
       user: i,
       guildId: n,
       onClose: l

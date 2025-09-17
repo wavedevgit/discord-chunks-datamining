@@ -158,7 +158,7 @@ let M = Chunk647438.memo(function(e) {
     isSelectedVoice: f,
     isLast: T,
     withGuildIcon: M
-  } = e, k = (0, s.e7)([j.ZP], () => j.ZP.getVoiceStatesForChannel(t), [t]), U = (0, s.e7)([_.Z], () => _.Z.hasVideo(t.id)), {
+  } = e, k = (0, s.e7)([v.ZP], () => v.ZP.getVoiceStatesForChannel(t), [t]), U = (0, s.e7)([_.Z], () => _.Z.hasVideo(t.id)), {
     unread: G,
     mentionCount: B,
     isMentionLowImportance: V
@@ -166,7 +166,7 @@ let M = Chunk647438.memo(function(e) {
     unread: O.ZP.hasUnread(t.id),
     mentionCount: O.ZP.getMentionCount(t.id),
     isMentionLowImportance: O.ZP.getIsMentionLowImportance(t.id)
-  })), F = (0, s.e7)([g.Z], () => g.Z.isMuted(t.id)), H = (0, v.p)({
+  })), F = (0, s.e7)([g.Z], () => g.Z.isMuted(t.id)), H = (0, j.p)({
     location: "GuildSidebarThreadListEntry"
   }), z = (0, s.e7)([y.default], () => y.default.getUser(t.ownerId)), W = i.useCallback(e => {
     (0, m.ok)(t, !e.shiftKey, I.on.CHANNEL_LIST)
@@ -234,6 +234,7 @@ let M = Chunk647438.memo(function(e) {
           [w.modeUnreadImportant]: !F && !l && G,
           [w.withGuildIcon]: M,
           [w.threadsInChannelListQoLExperiment]: H.enabled,
+          [w.withThreadAvatar]: "icon-with-avatar" === H.variant,
           [w.withThreadIconInBubble]: "icon-in-bubble" === H.variant
         }),
         onMouseDown: K,

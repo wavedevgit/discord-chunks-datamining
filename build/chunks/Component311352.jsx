@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk611372 = require("./611372.js");
 
-function v(e) {
+function j(e) {
   (0, s.jW)(e, async () => {
     let {
       default: e
@@ -67,29 +67,29 @@ let x = e => {
           dismissibleContent: o.z.CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK,
           shouldUseHorizontalButtons: true,
           inlineArt: true,
-          artClassName: j.clipsEducationArt,
+          artClassName: v.clipsEducationArt,
           position: "top",
           header: (0, r.jsx)("div", {
-            className: j.header,
+            className: v.header,
             children: _.intl.format(_.t["o+srEx"], {
               keybind: t,
               keybindHook: () => (0, r.jsx)("span", {
-                className: j.keybindHintKeys,
+                className: v.keybindHintKeys,
                 children: (0, r.jsx)(a.M2$, {
-                  className: j.keybindShortcut,
+                  className: v.keybindShortcut,
                   shortcut: t
                 })
               })
             })
           }),
-          headerClassName: j.clipsEducationHeader,
+          headerClassName: v.clipsEducationHeader,
           body: (0, r.jsx)(a.Text, {
             variant: "text-sm/normal",
             color: "always-white",
-            className: j.bodyText,
+            className: v.bodyText,
             children: _.intl.format(_.t.DWeRm5, {
               keybindHook: () => (0, r.jsx)("div", {
-                className: j.keyCombo,
+                className: v.keyCombo,
                 children: t
               }),
               keybind: t
@@ -117,7 +117,7 @@ let x = e => {
         clipsEnabled: Chunk435064.Z.getSettings().clipsEnabled,
         isAtMaxSavingClipsOperations: Chunk435064.Z.getIsAtMaxSaveClipOperations()
       })),
-      j = (0, Chunk399606.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP));
+      v = (0, Chunk399606.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP));
     if (!(Chunk704215 && Chunk239091) || null == Chunk611372 || require) return null;
     let C = Chunk13140.BB(Chunk611372.shortcut, true);
     return (0, Chunk951288.jsx)(x, {
@@ -132,7 +132,7 @@ let x = e => {
         onClick: () => {
           (0, Chunk39604.C1)(), (0, Chunk522651.v)(exports, Chunk522651.d.CLIP)
         },
-        onContextMenu: v,
+        onContextMenu: j,
         icon: Chunk481060.AlX
       })
     })

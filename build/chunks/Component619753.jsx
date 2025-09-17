@@ -113,13 +113,13 @@ function w(e) {
     renderEmbeds: f,
     offset: U,
     jumpToMessage: M,
-    listNavigator: v,
+    listNavigator: x,
     favoriteSearch: w
   } = e, k = O.cC.useSetting(), F = (0, T.p)(), z = l.useCallback(e => {
     if (e === L.Z.getChannelId()) return;
     let t = p.Z.getChannel(e);
-    null != t && (S.Z.can(x.Plq.VIEW_CHANNEL, t) || t.isPrivate()) && (0, N.Kh)(t.id)
-  }, []), Z = null != a ? (0, d.F6)(a, D.default, C.Z, false) : "???", V = w && null != a.guild_id ? null == (t = R.Z.getGuild(a.guild_id)) ? true : t.name : null, B = (null == a ? true : a.parent_id) != null ? p.Z.getChannel(a.parent_id) : null, H = null != (n = null == B ? true : B.name) ? n : null, K = null != (i = (0, _.KS)(a)) ? i : o.VL1, W = S.Z.can(x.Plq.MANAGE_MESSAGES, a), {
+    null != t && (S.Z.can(v.Plq.VIEW_CHANNEL, t) || t.isPrivate()) && (0, N.Kh)(t.id)
+  }, []), Z = null != a ? (0, d.F6)(a, D.default, C.Z, false) : "???", V = w && null != a.guild_id ? null == (t = R.Z.getGuild(a.guild_id)) ? true : t.name : null, B = (null == a ? true : a.parent_id) != null ? p.Z.getChannel(a.parent_id) : null, H = null != (n = null == B ? true : B.name) ? n : null, K = null != (i = (0, _.KS)(a)) ? i : o.VL1, W = S.Z.can(v.Plq.MANAGE_MESSAGES, a), {
     content: q
   } = (0, I.ZP)({
     content: Z,
@@ -174,7 +174,7 @@ function w(e) {
           message: e,
           index: n,
           onJump: M,
-          listItemProps: v.getItemProps({
+          listItemProps: x.getItemProps({
             index: n
           })
         }, "search-result-".concat(n))
@@ -210,7 +210,7 @@ let k = Chunk647438.memo(function(e) {
         n = null != t ? t.getGuildId() : null;
       u.Z.trackJump(e.channel_id, e.id, "Search Results", {
         search_id: f
-      }), (0, h.uL)(x.Z5c.CHANNEL(n, e.channel_id, e.id))
+      }), (0, h.uL)(v.Z5c.CHANNEL(n, e.channel_id, e.id))
     }
   }, [m, f]), F = l.useMemo(() => {
     let e, t = 0;
@@ -286,17 +286,17 @@ let k = Chunk647438.memo(function(e) {
         className: P.resultsBlockedImage
       }), (0, r.jsx)("div", {
         className: P.__invalid_resultsBlockedText,
-        children: G ? _ > 0 && A > 0 ? v.intl.formatToPlainString(v.t["OvJs9/"], {
+        children: G ? _ > 0 && A > 0 ? x.intl.formatToPlainString(x.t["OvJs9/"], {
           count: _ + A
-        }) : _ > 0 ? v.intl.formatToPlainString(v.t["n/1QFR"], {
+        }) : _ > 0 ? x.intl.formatToPlainString(x.t["n/1QFR"], {
           count: _
-        }) : v.intl.formatToPlainString(v.t.ypezTE, {
+        }) : x.intl.formatToPlainString(x.t.ypezTE, {
           count: A
-        }) : _ > 0 && A > 0 ? v.intl.formatToPlainString(v.t.EJHRcX, {
+        }) : _ > 0 && A > 0 ? x.intl.formatToPlainString(x.t.EJHRcX, {
           count: _ + A
-        }) : _ > 0 ? v.intl.formatToPlainString(v.t.HTE8JC, {
+        }) : _ > 0 ? x.intl.formatToPlainString(x.t.HTE8JC, {
           count: _
-        }) : v.intl.formatToPlainString(v.t.e7f8r6, {
+        }) : x.intl.formatToPlainString(x.t.e7f8r6, {
           count: A
         })
       })]
@@ -305,7 +305,7 @@ let k = Chunk647438.memo(function(e) {
       onPageChange: T,
       offset: L,
       totalCount: null != I ? I : D,
-      pageSize: x.vpv
+      pageSize: v.vpv
     })]
   })
 })

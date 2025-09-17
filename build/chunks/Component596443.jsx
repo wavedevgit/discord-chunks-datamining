@@ -38,7 +38,7 @@ function D(e) {
     specMap: N,
     categoryTitle: O,
     userId: f
-  } = e, C = (0, u.Wu)([I.Z], () => I.Z.getManyRoles(g.id, m)), D = R.Plq[o], U = null != (i = null == (t = N[D.toString()]) ? true : t.title) ? i : (0, A.wt)(D), M = null != (s = null == (n = N[D.toString()]) ? true : n.description) ? s : "", b = p._o.has(D), x = p.Qn.includes(o), v = m.length, P = (0, u.e7)([h.Z], () => h.Z.can(R.Plq.MANAGE_ROLES, g), [g]), j = l.useCallback(async e => {
+  } = e, C = (0, u.Wu)([I.Z], () => I.Z.getManyRoles(g.id, m)), D = R.Plq[o], U = null != (i = null == (t = N[D.toString()]) ? true : t.title) ? i : (0, A.wt)(D), M = null != (s = null == (n = N[D.toString()]) ? true : n.description) ? s : "", b = p._o.has(D), v = p.Qn.includes(o), x = m.length, P = (0, u.e7)([h.Z], () => h.Z.can(R.Plq.MANAGE_ROLES, g), [g]), j = l.useCallback(async e => {
     P && (await _.Z.open(g.id, R.pNK.ROLES), await _.Z.selectRole(e))
   }, [P, g.id]);
   return (0, r.jsxs)("div", {
@@ -111,7 +111,7 @@ function D(e) {
                 }), t))
               }
             })]
-          }), !b && x && (0, r.jsxs)(r.Fragment, {
+          }), !b && v && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(E.Z, {
               height: 4,
               width: 4,
@@ -131,7 +131,7 @@ function D(e) {
         variant: "text-sm/medium",
         color: "text-default",
         children: S.intl.format(S.t.KmJI4O, {
-          roleCount: v
+          roleCount: x
         })
       })]
     }), null != M && (0, r.jsx)("div", {
@@ -179,10 +179,10 @@ function M(e) {
     location: i,
     className: s,
     onNavigate: E
-  } = e, d = (0, u.e7)([N.default], () => N.default.getUser(t), [t]), _ = (0, u.e7)([g.Z], () => g.Z.getGuild(n), [n]), T = (0, u.e7)([m.ZP], () => m.ZP.getMember(n, t), [n, t]), I = (0, p.B2)(t, n, p.pd), h = Object.keys(I).length, M = l.useMemo(() => null != _ ? O.Z.getGuildPermissionSpecMap(_) : null, [_]), b = l.useMemo(() => null != _ ? O.Z.generateGuildPermissionSpec(_) : null, [_]), [x, v] = l.useState(""), [P, j] = l.useState(""), y = l.useMemo(() => o()(j, 300), []), G = l.useCallback(e => {
-    v(e), y(e)
+  } = e, d = (0, u.e7)([N.default], () => N.default.getUser(t), [t]), _ = (0, u.e7)([g.Z], () => g.Z.getGuild(n), [n]), T = (0, u.e7)([m.ZP], () => m.ZP.getMember(n, t), [n, t]), I = (0, p.B2)(t, n, p.pd), h = Object.keys(I).length, M = l.useMemo(() => null != _ ? O.Z.getGuildPermissionSpecMap(_) : null, [_]), b = l.useMemo(() => null != _ ? O.Z.generateGuildPermissionSpec(_) : null, [_]), [v, x] = l.useState(""), [P, j] = l.useState(""), y = l.useMemo(() => o()(j, 300), []), G = l.useCallback(e => {
+    x(e), y(e)
   }, [y]), w = l.useCallback(() => {
-    v(""), j("")
+    x(""), j("")
   }, []), k = l.useMemo(() => {
     if (null == _ || null == M || null == T) return null;
     if (0 === h) return (0, r.jsx)(c.Text, {
@@ -237,7 +237,7 @@ function M(e) {
           className: L.permissionsItemContainer,
           children: [(0, r.jsx)(c.E1j, {
             size: "sm",
-            query: x,
+            query: v,
             placeholder: S.intl.string(S.t["yD9+dH"]),
             onChange: G,
             onClear: w,

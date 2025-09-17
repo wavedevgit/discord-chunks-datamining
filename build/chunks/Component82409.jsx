@@ -116,7 +116,7 @@ function G(e) {
             r = null == (t = n.last()) ? true : t.id,
             i = _.ZP.ackMessageId(e),
             l = n.hasPresent() && n.ready && !n.cached;
-          null != r && null != i && l && j.default.compare(i, r) >= 0 && d.In(e, {
+          null != r && null != i && l && v.default.compare(i, r) >= 0 && d.In(e, {
             section: R.jXE.NOTIFICATIONS_INBOX,
             object: R.qAy.ACK_INBOX_CHANNEL_NO_MESSAGES,
             objectType: R.Qqv.ACK_AUTOMATIC
@@ -145,11 +145,11 @@ function G(e) {
     u.Z.dispatch({
       type: "NOTIFICATIONS_INBOX_OPEN"
     });
-    let t = (0, v.Ag)({
+    let t = (0, j.Ag)({
         location: "NotificationsInboxSidebar"
       }).notificationCenterVariant,
       n = null == (e = S.Z.getDevOverrides().navOnClick) || e;
-    if (t !== v.jP.SIDEBAR || false === n) return;
+    if (t !== j.jP.SIDEBAR || false === n) return;
     let {
       message: r,
       isUnread: i
@@ -174,7 +174,7 @@ function G(e) {
         isUnread: false
       } : {
         message: {
-          id: j.default.atNextMillisecond(u),
+          id: v.default.atNextMillisecond(u),
           channel_id: c
         },
         isUnread: null != (i = _.ZP.hasUnread(c)) && i
@@ -197,11 +197,11 @@ function G(e) {
   });
   let {
     filterStyle: Q
-  } = (0, v.pN)({
+  } = (0, j.pN)({
     location: "NotificationsInboxSidebar"
   }), J = (0, g._k)({
     location: "NotificationsInboxSidebar"
-  }), $ = Q === v.v8.DROPDOWN && f !== A.V5.ALL, ee = (0, A.H_)(f);
+  }), $ = Q === j.v8.DROPDOWN && f !== A.V5.ALL, ee = (0, A.H_)(f);
   return (0, r.jsx)("nav", {
     className: o()(L.container, {
       [L.panelSpacing]: l
@@ -218,7 +218,7 @@ function G(e) {
           style: {
             marginRight: false
           },
-          children: Q === v.v8.DROPDOWN && !J.isGuildEntrypointEnabled && (0, r.jsx)(w.p, {})
+          children: Q === j.v8.DROPDOWN && !J.isGuildEntrypointEnabled && (0, r.jsx)(w.p, {})
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
@@ -259,7 +259,7 @@ function V(e, t, n) {
     let {
       id: r
     } = e;
-    return !(j.default.age(r) > A.ib || null != n && 0 >= j.default.compare(r, n)) && t === A.V5.ALL
+    return !(v.default.age(r) > A.ib || null != n && 0 >= v.default.compare(r, n)) && t === A.V5.ALL
   }), [e, t, n])
 }
 

@@ -107,7 +107,7 @@ function P(e) {
   } = n.springs, c = t.features.has(_.oNc.DISCOVERABLE), d = (0, r.jsx)("div", {
     className: x.communityInfo,
     children: c && (0, r.jsx)(u.ua7, {
-      text: v.intl.string(v.t.O8lDIy),
+      text: j.intl.string(j.t.O8lDIy),
       position: "right",
       children: e => (0, r.jsxs)("div", E(C({
         className: x.communityInfoPill
@@ -121,7 +121,7 @@ function P(e) {
         }), (0, r.jsx)(u.Text, {
           variant: "text-xs/normal",
           color: "none",
-          children: v.intl.string(v.t["B/vjCg"])
+          children: j.intl.string(j.t["B/vjCg"])
         })]
       }))
     })
@@ -187,7 +187,7 @@ function w(e) {
     children: [(0, r.jsx)(y.Z, {
       guild: i,
       isBannerVisible: n
-    }), i.id === j._ && (0, r.jsx)(I, {}), (0, r.jsx)(Z, {
+    }), i.id === v._ && (0, r.jsx)(I, {}), (0, r.jsx)(Z, {
       guild: i
     }), null != l && (0, r.jsx)(u.P3F, {
       className: x.headerButton,
@@ -199,7 +199,7 @@ function w(e) {
         ringTarget: c,
         offset: 4
       },
-      "aria-label": v.intl.formatToPlainString(v.t.xMXpl5, {
+      "aria-label": j.intl.formatToPlainString(j.t.xMXpl5, {
         guildName: null != (t = null == i ? true : i.name) ? t : ""
       })
     }), (0, r.jsx)("div", {
@@ -239,7 +239,7 @@ function A(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(u.P3F, {
       className: x.guildDropdown,
-      "aria-label": v.intl.formatToPlainString(v.t.xMXpl5, {
+      "aria-label": j.intl.formatToPlainString(j.t.xMXpl5, {
         guildName: null != (t = null == o ? true : o.name) ? t : ""
       }),
       "aria-controls": d,
@@ -251,7 +251,7 @@ function A(e) {
         children: [(0, r.jsx)(y.Z, {
           guild: o,
           isBannerVisible: l
-        }), o.id === j._ && (0, r.jsx)(I, {}), (0, r.jsx)(Z, {
+        }), o.id === v._ && (0, r.jsx)(I, {}), (0, r.jsx)(Z, {
           guild: o
         })]
       }), (0, r.jsx)("div", {
@@ -259,7 +259,7 @@ function A(e) {
         children: g
       })]
     }), !T.includes(o.id) && (0, r.jsx)(u.ua7, {
-      text: v.intl.string(v.t.Sd8Ix8),
+      text: j.intl.string(j.t.Sd8Ix8),
       position: "bottom",
       children: e => (0, r.jsx)(u.P3F, E(C({
         className: x.inviteButton
@@ -287,15 +287,15 @@ let R = Chunk647438.memo(function(e) {
     onMouseDown: h,
     disableBannerAnimation: m,
     "aria-expanded": y,
-    "aria-controls": j,
-    guild: v,
+    "aria-controls": v,
+    guild: j,
     guildBanner: I,
     animationOverlayHeight: N,
     children: Z,
     headerClassName: T,
     communityInfoVisible: R,
     hasSubheader: L
-  } = e, M = v.features.has(_.oNc.ANIMATED_BANNER), k = (0, d.Z)(v), U = !k && (0, O.Z)(v), G = !k && R, B = (0, b.xR)(I) && M && !m, [V, F] = i.useState(false), H = i.useRef(false), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(true), Y = g.QK.getSetting();
+  } = e, M = j.features.has(_.oNc.ANIMATED_BANNER), k = (0, d.Z)(j), U = !k && (0, O.Z)(j), G = !k && R, B = (0, b.xR)(I) && M && !m, [V, F] = i.useState(false), H = i.useRef(false), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(true), Y = g.QK.getSetting();
   i.useEffect(() => {
     if (B && n && !H.current && Y) return F(true), K.current = setTimeout(() => {
       F(false)
@@ -317,10 +317,10 @@ let R = Chunk647438.memo(function(e) {
     }),
     Q = {
       bannerVisible: n,
-      guild: v,
+      guild: j,
       onClick: c,
       onContextMenu: f,
-      ariaControls: j,
+      ariaControls: v,
       ariaExpanded: y,
       guildHeaderRef: W
     };
@@ -356,13 +356,13 @@ let R = Chunk647438.memo(function(e) {
               children: Z
             }))
           }), U && (0, r.jsx)(P, {
-            guild: v,
+            guild: j,
             controller: l,
             hasBanner: null != I,
             hasSubheader: null != L && L
           })]
         }), null != I ? (0, r.jsx)(S, {
-          guild: v,
+          guild: j,
           controller: l,
           guildBanner: I,
           animate: V

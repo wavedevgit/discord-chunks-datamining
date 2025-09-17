@@ -179,7 +179,7 @@ let U = Chunk647438.memo(function() {
     }
   };
 
-function x(e) {
+function v(e) {
   var t, n;
   let {
     guildId: i,
@@ -213,7 +213,7 @@ function x(e) {
   })
 }
 
-function v(e) {
+function x(e) {
   let {
     channel: t,
     className: n
@@ -237,9 +237,9 @@ function P(e) {
     inviterUser: a,
     joinSourceType: u,
     joinSourceChannelId: c
-  } = e, E = (0, s.e7)([m.Z], () => m.Z.getChannel(c)), _ = (0, d.ZP)(E, true), A = !!n && (u === R.gq.SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL || null != a), T = l.useMemo(() => u === R.gq.SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL ? (0, r.jsx)(v, {
+  } = e, E = (0, s.e7)([m.Z], () => m.Z.getChannel(c)), _ = (0, d.ZP)(E, true), A = !!n && (u === R.gq.SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL || null != a), T = l.useMemo(() => u === R.gq.SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL ? (0, r.jsx)(x, {
     channel: E
-  }) : (0, r.jsx)(x, {
+  }) : (0, r.jsx)(v, {
     guildId: i,
     inviterUser: a,
     joinSourceType: u
@@ -361,7 +361,7 @@ function y(e) {
             className: C.linkedChannelApplicationName,
             children: O.name
           })]
-        })), d && (0, r.jsx)(v, {
+        })), d && (0, r.jsx)(x, {
           channel: f
         })]
       });
@@ -379,7 +379,7 @@ function y(e) {
             variant: "text-sm/medium",
             children: null == h ? true : h.getJoinTypeLabel(null != t ? t : true)
           })]
-        })), d && (0, r.jsx)(x, {
+        })), d && (0, r.jsx)(v, {
           guildId: A,
           inviterUser: T,
           joinSourceType: n,

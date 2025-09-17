@@ -307,16 +307,16 @@ function X(e) {
     onCtxMenuSelect: m,
     onGameSheetOpened: g,
     onGameSheetClosed: y
-  } = e, v = (null == (t = n.userStatus) ? true : t.completedAt) != null, T = a.percentComplete > 0, S = (0, O.z)(n), [A, C, N] = (0, O.me)(n, a), R = i.useRef(null), P = (0, O._s)({
+  } = e, v = (null == (t = n.userStatus) ? true : t.completedAt) != null, T = a.percentComplete > 0, S = (0, O.z)(n), [A, C, N] = (0, O.me)(n, a), R = i.useRef(null), P = i.useRef(null), D = (0, O._s)({
     quest: n
-  }), D = (0, b.q8)(n), V = (0, O.Jf)(n), W = i.useCallback(() => {
+  }), V = (0, b.q8)(n), W = (0, O.Jf)(n), K = i.useCallback(() => {
     (0, w.openVideoQuestModal)({
       quest: n,
       questContent: I.jn.QUEST_BAR_V2,
       sourceQuestContent: I.jn.QUEST_BAR_V2,
       sourceQuestContentCTA: E.jZ.QUEST_BAR_VIDEO_QUEST_PREVIEW
     })
-  }, [n]), K = null != V ? V.percentComplete : a.percentComplete;
+  }, [n]), z = null != W ? W.percentComplete : a.percentComplete;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.animated.div, {
       className: o()(H.postEnrollmentBackground, H.postEnrollmentBackgroundCollapsed),
@@ -329,7 +329,9 @@ function X(e) {
       }
     }), (0, r.jsxs)("div", {
       className: H.questAcceptedContent,
-      ref: _,
+      ref: e => {
+        "function" == typeof _ ? _(e) : null != _ && (_.current = e), null != e && (P.current = e)
+      },
       children: [(0, r.jsx)(G.Z, {
         quest: n,
         onCtxMenuOpen: p,
@@ -349,8 +351,11 @@ function X(e) {
         quest: n,
         progressBarRef: R,
         isExpanded: true,
-        percentComplete: K,
-        activeScreen: A
+        percentComplete: z,
+        activeScreen: A,
+        popoutTargetElementRef: P,
+        onGameSheetOpened: g,
+        onGameSheetClosed: y
       }), (0, r.jsx)(x.n, {
         children: !v && !(0, b.Gd)(n) && (0, l.EQ)(A).with(I.LI.SELECT, () => (0, r.jsx)(B.Z, {
           onConsole: () => N(Z.cd.CONSOLE),
@@ -362,16 +367,16 @@ function X(e) {
           taskDetails: a
         })).exhaustive()
       }), (0, r.jsxs)(x.n, {
-        children: [D && (0, r.jsx)(Y, {
+        children: [V && (0, r.jsx)(Y, {
           isExpanded: d,
           quest: n,
-          onClick: W,
+          onClick: K,
           reducedMotion: f
         }), (0, r.jsx)(L.y, {
           quest: n,
           useReducedMotion: f,
           isExpanded: d,
-          awaitingConsoleConnections: P,
+          awaitingConsoleConnections: D,
           hasMadeProgress: T,
           isProgressing: S,
           activeScreen: A,

@@ -38,16 +38,16 @@ function x(e) {
   return i.useEffect(() => {
     (0, p.q)()
   }, []), (0, r.jsxs)("div", {
-    className: v.popout,
+    className: j.popout,
     children: [(0, r.jsx)(s.Text, {
-      className: v.title,
+      className: j.title,
       variant: "text-xs/bold",
       color: "header-secondary",
-      children: t.isForumLikeChannel() ? j.intl.string(j.t.ioVdOz) : j.intl.string(j.t.VNYs2t)
+      children: t.isForumLikeChannel() ? v.intl.string(v.t.ioVdOz) : v.intl.string(v.t.VNYs2t)
     }), l.slice(0, t.isForumLikeChannel() ? l.length : c).map(e => (0, r.jsx)(C, {
       thread: e
     }, e.id)).filter(e => i.isValidElement(e)).slice(0, c), (0, r.jsx)(s.P3F, {
-      className: v.more,
+      className: j.more,
       onClick: () => {
         t.isForumLikeChannel() ? (0, u.Kh)(t.id) : (0, s.ZDy)(async () => {
           let {
@@ -78,7 +78,7 @@ function x(e) {
       children: (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "none",
-        children: j.intl.string(j.t["4qdZ9/"])
+        children: v.intl.string(v.t["4qdZ9/"])
       })
     })]
   })
@@ -89,29 +89,29 @@ function C(e) {
     thread: t
   } = e, n = (0, a.e7)([m.default], () => m.default.getUser(t.ownerId)), i = (0, p.Ok)(t);
   return (0, r.jsxs)(s.P3F, {
-    className: v.row,
+    className: j.row,
     onClick: e => {
       (0, f.ok)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, _.on.POPOUT)
     },
     children: [null == n ? (0, r.jsx)("img", {
-      className: v.avatar,
+      className: j.avatar,
       src: b.ZP.getDefaultAvatarURL(true, true),
       alt: ""
     }) : (0, r.jsx)(c.Z, {
-      className: v.avatar,
+      className: j.avatar,
       user: n,
       size: s.EFr.SIZE_16
     }), (0, r.jsx)(s.Text, {
-      className: v.name,
+      className: j.name,
       variant: "text-sm/normal",
       color: "none",
       children: t.name
     }), (0, r.jsxs)(s.Text, {
-      className: v.timestamp,
+      className: j.timestamp,
       variant: "text-sm/normal",
       color: "none",
       children: [(0, r.jsx)("span", {
-        className: v.bullet,
+        className: j.bullet,
         children: "•"
       }), (0, p.Ye)(i)]
     })]

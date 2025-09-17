@@ -37,9 +37,9 @@ function D(e) {
     guild: E
   } = e, {
     analyticsLocations: T
-  } = (0, d.ZP)(), N = m.nm(i), f = m.QM(i), L = null == (t = m.V$(p.zUn.REASON, i)) ? true : t.newValue, D = m.J5(i), U = (0, _.LJ)(i.id), M = (0, u.e7)([h.ZP], () => null != i.userId ? h.ZP.getMember(s.guildId, i.userId) : null, [s.guildId, i.userId]), b = (0, g.X7)(null == M ? true : M.guildId, null == M ? true : M.userId, null != (n = null == M ? true : M.colorStrings) ? n : null), x = l.useCallback(e => t => {
+  } = (0, d.ZP)(), N = m.nm(i), f = m.QM(i), L = null == (t = m.V$(p.zUn.REASON, i)) ? true : t.newValue, D = m.J5(i), U = (0, _.LJ)(i.id), M = (0, u.e7)([h.ZP], () => null != i.userId ? h.ZP.getMember(s.guildId, i.userId) : null, [s.guildId, i.userId]), b = (0, g.X7)(null == M ? true : M.guildId, null == M ? true : M.userId, null != (n = null == M ? true : M.colorStrings) ? n : null), v = l.useCallback(e => t => {
     t.preventDefault(), t.stopPropagation(), null != e && (0, A.RE)(e, T)
-  }, [T]), v = l.useCallback(() => null == i.user ? null : (0, r.jsx)(c.ua7, {
+  }, [T]), x = l.useCallback(() => null == i.user ? null : (0, r.jsx)(c.ua7, {
     text: R.intl.string(R.t.mvsi9v),
     children: e => {
       var t;
@@ -50,7 +50,7 @@ function D(e) {
       return (0, r.jsx)(c.P3F, {
         tag: "span",
         className: S.username,
-        onClick: x(M),
+        onClick: v(M),
         onMouseEnter: n,
         onMouseLeave: l,
         children: (0, r.jsxs)(c.Text, {
@@ -64,7 +64,7 @@ function D(e) {
         })
       })
     }
-  }), [x, i.user, s.guildId, M, b])();
+  }), [v, i.user, s.guildId, M, b])();
   return (0, r.jsxs)("div", {
     className: a()(C.modInfoItem, S.auditLogItem),
     children: [(0, r.jsxs)("div", {
@@ -92,7 +92,7 @@ function D(e) {
       className: S.auditLogSecondaryContainer,
       children: (0, r.jsxs)("div", {
         className: S.auditLogReason,
-        children: [v, (0, r.jsx)(c.Text, {
+        children: [x, (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
           tag: "span",
@@ -103,7 +103,7 @@ function D(e) {
       className: S.auditLogSecondaryContainer,
       children: (0, r.jsxs)("div", {
         className: S.auditLogSecondary,
-        children: [v, (0, r.jsx)(c.Text, {
+        children: [x, (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
           tag: "span",

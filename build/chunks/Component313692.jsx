@@ -36,12 +36,12 @@ function L(e) {
     location: D,
     className: U,
     onNavigate: M
-  } = e, b = l.useRef(null), x = (0, o.e7)([I.ZP], () => I.ZP.getGuildSidebarState(L), [L]), v = l.useRef(0), [P, j] = l.useState(null != (t = null == x ? true : x.details.additionalSearchQuery) ? t : {}), y = (0, O.z0)(i, L, {
+  } = e, b = l.useRef(null), v = (0, o.e7)([I.ZP], () => I.ZP.getGuildSidebarState(L), [L]), x = l.useRef(0), [P, j] = l.useState(null != (t = null == v ? true : v.details.additionalSearchQuery) ? t : {}), y = (0, O.z0)(i, L, {
     addtionalQuery: P,
     shouldDispatch: true
   }), G = (0, o.e7)([h.default], () => h.default.getUser(i), [i]), w = (0, o.e7)([g.ZP], () => g.ZP.getMember(L, i), [L, i]);
   (0, c.Ng)(() => {
-    let e = null == x ? true : x.details.scrollOffset;
+    let e = null == v ? true : v.details.scrollOffset;
     if (null != e) {
       var t;
       null == (t = b.current) || t.scrollTo({
@@ -51,16 +51,16 @@ function L(e) {
     }
   });
   let k = l.useCallback(e => {
-      null != x && (v.current = e.target.scrollTop, (0, N.r)(L, i, x.baseChannelId, {
+      null != v && (x.current = e.target.scrollTop, (0, N.r)(L, i, v.baseChannelId, {
         modViewPanel: p.k.MESSAGE_HISTORY,
         additionalSearchQuery: P,
-        scrollOffset: v.current
+        scrollOffset: x.current
       }))
-    }, [L, i, x, P]),
+    }, [L, i, v, P]),
     F = (0, s.throttle)(k, 300),
     z = l.useCallback(e => {
       var t, n;
-      if (null == x) return;
+      if (null == v) return;
       let r = (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -90,12 +90,12 @@ function L(e) {
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t);
-      j(r), (0, N.r)(L, i, x.baseChannelId, {
+      j(r), (0, N.r)(L, i, v.baseChannelId, {
         modViewPanel: p.k.MESSAGE_HISTORY,
         additionalSearchQuery: r,
-        scrollOffset: v.current
+        scrollOffset: x.current
       })
-    }, [L, i, x, P]),
+    }, [L, i, v, P]),
     Z = null != (n = null == P ? true : P.offset) ? n : 0,
     V = (0, o.e7)([d.Z], () => {
       if (null == y.result) return [];

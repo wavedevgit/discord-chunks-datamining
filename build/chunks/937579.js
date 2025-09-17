@@ -2,11 +2,11 @@
 /** chunk id: 937579, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Qe: () => _,
-  Tf: () => f,
-  ab: () => h,
-  ev: () => p
-});
+  Qe: () => m,
+  Tf: () => h,
+  ab: () => E,
+  ev: () => g
+}), require("./415506.js");
 var Chunk544891 = require("./544891.js"),
   Chunk704215 = require("./704215.js"),
   Chunk570140 = require("./570140.js"),
@@ -14,42 +14,79 @@ var Chunk544891 = require("./544891.js"),
   Chunk675478 = require("./675478.js"),
   Chunk626135 = require("./626135.js"),
   Chunk358085 = require("./358085.js"),
+  Chunk960048 = require("./960048.js"),
   Chunk981631 = require("./981631.js");
-let d = () => {
+
+function f(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function _(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      f(e, t, n[t])
+    })
+  }
+  return e
+}
+let p = () => {
   let e = null;
   return (0, Chunk358085.isAndroid)() ? e = Chunk981631.gg$.GOOGLE : (0, Chunk358085.isIOS)() && (e = Chunk981631.gg$.APPLE), module
 };
-async function f(e) {
-  let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
+async function h(e) {
+  let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
+    n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {
+      offerId: true,
+      paymentGatewayOverride: true
+    },
+    c = arguments.length > 3 ? arguments[3] : true;
   if (t) {
     a.Z.dispatch({
       type: "BILLING_USER_OFFER_FETCH_START"
     });
     try {
-      var n, c, f;
-      null != e && l.default.track(u.rMx.FETCH_USER_OFFER_STARTED, {
+      var f, h, m;
+      null != e && l.default.track(d.rMx.FETCH_USER_OFFER_STARTED, {
         call_location: e
       });
-      let t = d(),
-        _ = await r.tn.post({
-          url: u.ANM.USER_OFFER,
-          body: null != t ? {
-            payment_gateway: t
-          } : {},
-          rejectWithError: true
-        }),
-        p = null != (n = _.body.user_trial_offer) ? n : null,
-        h = null != (c = _.body.user_discount) ? c : null,
-        m = null != (f = _.body.user_discount_offer) ? f : null;
-      return null == p && (0, o.zu)(i.z.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING) && (0, s.w9)(i.z.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING), a.Z.dispatch({
+      let {
+        offerId: t,
+        paymentGatewayOverride: g
+      } = n, E = true !== g ? g : p(), b = null != E || null != t ? {
+        payment_gateway: E,
+        offer_id: t
+      } : {}, y = await r.tn.post({
+        url: d.ANM.USER_OFFER,
+        body: b,
+        rejectWithError: true
+      }), O = null != (f = y.body.user_trial_offer) ? f : null, v = null != (h = y.body.user_discount) ? h : null, I = null != (m = y.body.user_discount_offer) ? m : null;
+      if (null != t && null != I && I.discount_id !== t) {
+        let e = Error("Returned user discount offer does not match offer ID request parameter");
+        throw u.Z.captureException(e, _({
+          extra: {
+            offer_id: t,
+            user_discount_offer: I
+          }
+        }, c)), e
+      }
+      return null == O && (0, o.zu)(i.z.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING) && (0, s.w9)(i.z.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING), a.Z.dispatch({
         type: "BILLING_USER_OFFER_FETCH_SUCCESS",
-        userTrialOffer: p,
-        userDiscount: h,
-        userDiscountOffer: m
+        userTrialOffer: O,
+        userDiscount: v,
+        userDiscountOffer: I
       }), {
-        userTrialOffer: p,
-        userDiscount: h,
-        userDiscountOffer: m
+        userTrialOffer: O,
+        userDiscount: v,
+        userDiscountOffer: I
       }
     } catch (e) {
       a.Z.dispatch({
@@ -58,7 +95,7 @@ async function f(e) {
     }
   }
 }
-async function _() {
+async function m() {
   Chunk570140.Z.dispatch({
     type: "BILLING_USER_OFFER_FETCH_START"
   });
@@ -80,7 +117,7 @@ async function _() {
     })
   }
 }
-async function p() {
+async function g() {
   let e = null;
   try {
     var t;
@@ -95,11 +132,11 @@ async function p() {
   return module
 }
 
-function h(e, t) {
+function E(e, t) {
   let n = null != e && null == e.expires_at ? e.id : true,
     i = null != t && null == t.expires_at ? t.id : true;
   if (true !== n || true !== i) return r.tn.post({
-    url: u.ANM.USER_OFFER_ACKNOWLEDGED,
+    url: d.ANM.USER_OFFER_ACKNOWLEDGED,
     body: {
       user_trial_offer_id: n,
       user_discount_offer_id: i

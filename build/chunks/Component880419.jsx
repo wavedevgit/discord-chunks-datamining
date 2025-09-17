@@ -3,7 +3,7 @@
 require.d(exports, {
   Po: () => y,
   RD: () => O,
-  ZP: () => j
+  ZP: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -117,14 +117,14 @@ function _(e) {
   })
 }
 
-function j(e) {
+function v(e) {
   var {
     guildId: t,
     powerup: n,
     compact: l,
     iconSize: y,
-    onError: j
-  } = e, v = function(e, t) {
+    onError: v
+  } = e, j = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -149,8 +149,8 @@ function j(e) {
     reason: N
   } = (0, c.Z)(t, n, P);
   return i.useEffect(() => {
-    null == j || j(E)
-  }, [E, j]), (0, r.jsx)(s.ua7, {
+    null == v || v(E)
+  }, [E, v]), (0, r.jsx)(s.ua7, {
     delay: 100,
     "aria-label": null != N ? N : P ? h.intl.string(f.default.TZsu1d) : true,
     text: null != N ? N : P ? (0, r.jsx)(_, {
@@ -161,14 +161,14 @@ function j(e) {
       className: g.secondaryButton,
       innerClassName: g.buttonInner,
       wrapperClassName: o()(g.secondaryButton, {
-        [g.buttonWrapper]: true === v.grow
+        [g.buttonWrapper]: true === j.grow
       }),
       color: P ? a.Tt.PRIMARY : a.Tt.BRAND,
       "aria-label": h.intl.string(P ? f.default.TZsu1d : f.default.gSxlHR),
       disabled: I,
       onClick: P ? S : x,
       submitting: C
-    }), v), {
+    }), j), {
       children: (0, r.jsx)(O, {
         cost: n.cost,
         isActive: P,
