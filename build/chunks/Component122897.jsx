@@ -16,7 +16,7 @@ var Chunk524437 = require("./524437.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk229649 = require("./229649.js");
+  Chunk918526 = require("./918526.js");
 
 function h(e, t) {
   var n;
@@ -33,8 +33,8 @@ function m() {
         appealLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SAFE_DIRECT_MESSAGING)
       })
     }), (0, Chunk951288.jsx)(Chunk755721.Gu, {
-      className: Chunk229649.radioGroup,
-      radioItemClassName: Chunk229649.radioGroupItem,
+      className: Chunk918526.radioGroup,
+      radioItemClassName: Chunk918526.radioGroupItem,
       value: module,
       options: (0, Chunk78451.c7)(),
       onChange: e => {

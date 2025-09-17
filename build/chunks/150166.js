@@ -1,3 +1,0 @@
-/** Chunk was on 87711 **/
-/** chunk id: 150166, original params: e (module,exports,require) **/
-module.exports = JSON.parse('{"bFbsV1":"Saisis ton e-mail","RRBNpq":"Suivant","v0H5Tk":"Chargement...","Ks6opq":"Commencer","GDsHl5":"Actualiser","dSkE/P":"V\xe9rifier le groupe d\'\xe2ge","HC4IiY":"V\xe9rifie ton e-mail","o4D6fn":"Mettre \xe0 jour","wq2RDg":"V\xe9rifier","Qm6K/v":"V\xe9rifie ton e-mail"}')

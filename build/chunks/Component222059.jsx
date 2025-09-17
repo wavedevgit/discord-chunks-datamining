@@ -1,7 +1,7 @@
-/** Chunk was on 71832 **/
+/** Chunk was on 11160 **/
 /** chunk id: 222059, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  u: () => M
+  u: () => L
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk871465 = require("./871465.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk688825 = require("./688825.js");
+  Chunk815141 = require("./815141.js");
 let R = {
   origin: {
     x: false,
@@ -55,8 +55,8 @@ function D(e) {
     badge: f,
     link: h,
     showProgressBadge: b
-  } = e, [O, y] = i.useState(false), [_, v] = i.useState(false), [j, x] = i.useState(null), [C, Z] = i.useState(0), D = (0, l.Ie)("home"), M = (0, p.oq)().activePanel === p.wh.APP_ICON, L = () => {
-    x(null), Z(0), clearTimeout(j)
+  } = e, [O, y] = i.useState(false), [_, j] = i.useState(false), [v, x] = i.useState(null), [C, Z] = i.useState(0), D = (0, l.Ie)("home"), L = (0, p.oq)().activePanel === p.wh.APP_ICON, M = () => {
+    x(null), Z(0), clearTimeout(v)
   };
   if (null == d) return null;
   let k = T.intl.string(T.t.YUU0RE);
@@ -66,7 +66,7 @@ function D(e) {
     className: A.downloadProgress,
     determineOwnVisibility: false
   }));
-  let G = o || O || M,
+  let G = o || O || L,
     B = (0, r.jsx)(s.aRk, {
       selected: true,
       lowerBadge: f > 0 ? (0, I.Ne)(f) : null,
@@ -95,11 +95,11 @@ function D(e) {
         onMouseEnter: () => y(true),
         onMouseLeave: () => y(false),
         onClick: () => {
-          if (!__OVERLAY__ && (null != j && clearTimeout(j), x(setTimeout(L, 500)), Z(C + 1), 15 === C)) {
-            L();
+          if (!__OVERLAY__ && (null != v && clearTimeout(v), x(setTimeout(M, 500)), Z(C + 1), 15 === C)) {
+            M();
             let e = !a.K.get(N.wli);
-            a.K.set(N.wli, e), e && a.K.set(w.O, true), e ? (0, g.GN)("discodo") : (0, g.GN)("user_leave"), v(true), setTimeout(() => {
-              v(false)
+            a.K.set(N.wli, e), e && a.K.set(w.O, true), e ? (0, g.GN)("discodo") : (0, g.GN)("user_leave"), j(true), setTimeout(() => {
+              j(false)
             }, 1e3)
           }
         },
@@ -153,7 +153,7 @@ function D(e) {
   })
 }
 
-function M() {
+function L() {
   let e = (0, Chunk278464.n)(),
     t = (0, Chunk442837.e7)([Chunk941128.Z, Chunk417363.Z], () => {
       let e = (0, Chunk339149.E)(Chunk941128.Z.activeItems, Chunk417363.Z),

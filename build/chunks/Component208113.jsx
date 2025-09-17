@@ -15,7 +15,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk726985 = require("./726985.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk10198 = require("./10198.js");
+  Chunk197571 = require("./197571.js");
 
 function p(e, t, n) {
   let r = [{
@@ -51,7 +51,7 @@ function h() {
     children: (0, Chunk951288.jsx)(Chunk481060.xJW, {
       title: Chunk388032.intl.string(Chunk388032.t.wVBHr6),
       children: (0, Chunk951288.jsx)(Chunk481060.q4e, {
-        className: Chunk10198.marginBottom20,
+        className: Chunk197571.marginBottom20,
         value: module,
         options: p(exports, require, h),
         onChange: e => {

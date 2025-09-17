@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk980920 = require("./980920.js");
+  Chunk947719 = require("./947719.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -29,13 +29,13 @@ class g extends Chunk647438.Component {
     } = this.state;
     return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
-        className: Chunk980920.prompt,
+        className: Chunk947719.prompt,
         variant: "heading-md/semibold",
         children: this.props.prompt
       }), (0, Chunk951288.jsx)("hr", {
-        className: Chunk980920.separator
+        className: Chunk947719.separator
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-        className: Chunk980920.selectYourAnswer,
+        className: Chunk947719.selectYourAnswer,
         variant: "text-xs/normal",
         children: Chunk388032.intl.string(Chunk388032.t.YeiLeH)
       }), (0, Chunk951288.jsx)(Chunk755721.Gu, {

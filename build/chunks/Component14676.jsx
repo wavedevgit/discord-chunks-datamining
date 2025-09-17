@@ -13,7 +13,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk937797 = require("./937797.js"),
   Chunk46140 = require("./46140.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk766256 = require("./766256.js");
+  Chunk571006 = require("./571006.js");
 let f = function() {
   let {
     enabled: e
@@ -25,7 +25,7 @@ let f = function() {
       variant: "heading-xl/semibold",
       children: "Quest Minor Reward Capping Config"
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk766256.container,
+      className: Chunk571006.container,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "text-feedback-info",

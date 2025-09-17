@@ -61,7 +61,7 @@ require.d(exports, {
   HeQ: () => Chunk231338.He,
   Hqc: () => nT,
   IE4: () => F,
-  IIU: () => e5,
+  IIU: () => e6,
   IWh: () => rP,
   IXf: () => te,
   I_8: () => eg,
@@ -98,7 +98,7 @@ require.d(exports, {
   O0b: () => nf,
   O0n: () => es,
   O42: () => Chunk334431.O4,
-  O8q: () => n6,
+  O8q: () => n5,
   OBS: () => K,
   OBo: () => nd,
   OGo: () => ef,
@@ -113,7 +113,7 @@ require.d(exports, {
   POd: () => rf,
   PRK: () => e0,
   PUi: () => nk,
-  Pbq: () => t6,
+  Pbq: () => t5,
   Plq: () => Chunk231338.Pl,
   PrB: () => L,
   PrS: () => tE,
@@ -168,7 +168,7 @@ require.d(exports, {
   VqG: () => Chunk231338.Vq,
   Vzj: () => Chunk231338.Vz,
   WND: () => nc,
-  WtW: () => e6,
+  WtW: () => e5,
   Wyy: () => t9,
   X5t: () => Chunk231338.X5,
   X6Q: () => Chunk231338.X6,
@@ -212,7 +212,7 @@ require.d(exports, {
   dN1: () => eJ,
   dYL: () => tP,
   e3s: () => n9,
-  eBq: () => n5,
+  eBq: () => n6,
   eHb: () => nX,
   eRX: () => ne,
   eWB: () => ta,
@@ -280,7 +280,7 @@ require.d(exports, {
   pNK: () => A,
   pTL: () => rZ,
   pjP: () => n3,
-  pmI: () => t5,
+  pmI: () => t6,
   q5t: () => tj,
   q9n: () => nV,
   qAy: () => tG,
@@ -1486,10 +1486,10 @@ let ew = 100,
 var e8 = function(e) {
     return e.MESSAGE = "MESSAGE", e.MESSAGE_GROUP_BLOCKED = "MESSAGE_GROUP_BLOCKED", e.MESSAGE_GROUP_IGNORED = "MESSAGE_GROUP_IGNORED", e.MESSAGE_GROUP_SPAMMER = "MESSAGE_GROUP_SPAMMER", e.THREAD_STARTER_MESSAGE = "THREAD_STARTER_MESSAGE", e.DIVIDER = "DIVIDER", e.JUMP_TARGET = "JUMP_TARGET", e.FORUM_POST_ACTION_BAR = "FORUM_POST_ACTION_BAR", e.MESSAGE_GROUP = "MESSAGE_GROUP", e.DIVIDER_TIME_STAMP = "DIVIDER_TIME_STAMP", e.DIVIDER_NEW_MESSAGES = "DIVIDER_NEW_MESSAGES", e
   }({}),
-  e6 = function(e) {
+  e5 = function(e) {
     return e.VIDEO = "video", e.VOICE = "voice", e
   }({}),
-  e5 = function(e) {
+  e6 = function(e) {
     return e[e.PLAYING = 0] = "PLAYING", e[e.STREAMING = 1] = "STREAMING", e[e.LISTENING = 2] = "LISTENING", e[e.WATCHING = 3] = "WATCHING", e[e.CUSTOM_STATUS = 4] = "CUSTOM_STATUS", e[e.COMPETING = 5] = "COMPETING", e[e.HANG_STATUS = 6] = "HANG_STATUS", e
   }({}),
   e7 = function(e) {
@@ -1775,8 +1775,8 @@ let t2 = new Set(["facebook", "contacts"]),
     ANDROID: "https://play.google.com/store/apps/details?id=com.discord"
   }),
   t8 = 0x99aab5,
-  t6 = (0, Chunk866442.Rf)(t8),
-  t5 = [1752220, 3066993, 3447003, 0x9b59b6, 0xe91e63, 0xf1c40f, 0xe67e22, 0xe74c3c, 9807270, 6323595, 1146986, 2067276, 2123412, 7419530, 0xad1457, 0xc27c0e, 0xa84300, 0x992d22, 9936031, 5533306],
+  t5 = (0, Chunk866442.Rf)(t8),
+  t6 = [1752220, 3066993, 3447003, 0x9b59b6, 0xe91e63, 0xf1c40f, 0xe67e22, 0xe74c3c, 9807270, 6323595, 1146986, 2067276, 2123412, 7419530, 0xad1457, 0xc27c0e, 0xa84300, 0x992d22, 9936031, 5533306],
   t7 = (0, Chunk866442._i)(Chunk674746.Z.BRAND_500);
 i()(null != t7, "Brand color could not be parsed");
 let t9 = t7;
@@ -2057,8 +2057,8 @@ var n3 = function(e) {
     return e[e.MUTUAL_FRIENDS = 2] = "MUTUAL_FRIENDS", e[e.MUTUAL_GUILDS = 4] = "MUTUAL_GUILDS", e[e.NO_RELATION = 8] = "NO_RELATION", e
   }({});
 let n8 = 14,
-  n6 = 6,
-  n5 = 30;
+  n5 = 6,
+  n6 = 30;
 var n7 = function(e) {
   return e.OVERLAY = "OVERLAY", e.APP = "APP", e.POPOUT = "POPOUT", e
 }({});

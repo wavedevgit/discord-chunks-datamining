@@ -1,4 +1,4 @@
-/** Chunk was on 71832 **/
+/** Chunk was on 11160 **/
 /** chunk id: 695301, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -16,13 +16,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk451478 = require("./451478.js"),
   Chunk61634 = require("./61634.js"),
   Chunk325257 = require("./325257.jsx"),
-  Chunk338044 = require("./338044.js");
+  Chunk144618 = require("./144618.js");
 let b = Chunk647438.memo(function(e) {
   var t, n;
   let {
     guildNode: b,
     lowerBadge: O
-  } = e, y = b.id, _ = (0, l.e7)([p.Z], () => p.Z.getGuild(y)), v = (0, a.E)(_), j = (0, l.e7)([f.Z], () => f.Z.isFocused()), x = (0, l.e7)([u.Z], () => u.Z.isUnavailable(y)), C = (0, c.Z)(e => e.guildId), E = (0, h.Z)(y), {
+  } = e, y = b.id, _ = (0, l.e7)([p.Z], () => p.Z.getGuild(y)), j = (0, a.E)(_), v = (0, l.e7)([f.Z], () => f.Z.isFocused()), x = (0, l.e7)([u.Z], () => u.Z.isUnavailable(y)), C = (0, c.Z)(e => e.guildId), E = (0, h.Z)(y), {
     badge: S,
     unread: P,
     isMentionLowImportance: I
@@ -60,14 +60,14 @@ let b = Chunk647438.memo(function(e) {
   }({}, e), n = n = {
     guild: _,
     unavailable: x,
-    animatable: j,
+    animatable: v,
     selected: C === y,
     badge: S,
     isMentionLowImportance: I,
     lowerBadge: Z,
     unread: P,
     mediaState: E,
-    guildJoinRequestStatus: v
+    guildJoinRequestStatus: j
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

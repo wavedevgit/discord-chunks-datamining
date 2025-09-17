@@ -10,7 +10,7 @@ var Chunk296009 = require("./296009.js"),
   Chunk592183 = require("./592183.js"),
   Chunk86419 = require("./86419.js"),
   Chunk447448 = require("./447448.js"),
-  Chunk126258 = require("./126258.js");
+  Chunk667108 = require("./667108.js");
 
 function d() {
   let e = (0, Chunk447448.k)({
@@ -22,14 +22,14 @@ function d() {
       (0, s.ES)(e, t)
     };
   return module ? (0, Chunk951288.jsx)("div", {
-    className: Chunk126258.container,
+    className: Chunk667108.container,
     children: (0, Chunk951288.jsxs)(Chunk481060.hjN, {
       children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
         children: "User Profile Widgets"
       }), (0, Chunk951288.jsx)(Chunk481060.R94, {
         children: "Generate and test different widget configurations for user profiles."
       }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk126258.buttonGroup,
+        className: Chunk667108.buttonGroup,
         children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Add Favorite Game",
@@ -60,7 +60,7 @@ function d() {
           }
         })]
       }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk126258.buttonGroup,
+        className: Chunk667108.buttonGroup,
         children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
           children: "Backend integration:"
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {

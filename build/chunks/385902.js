@@ -1,4 +1,4 @@
-/** Chunk was on 71832 **/
+/** Chunk was on 11160 **/
 /** chunk id: 385902, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   K: () => y,
@@ -17,7 +17,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk279604 = require("./279604.jsx"),
   Chunk535396 = require("./535396.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk258640 = require("./258640.js"),
+  Chunk989308 = require("./989308.js"),
   Chunk388032 = require("./388032.jsx");
 
 function O(e, t) {
@@ -32,8 +32,8 @@ function O(e, t) {
     O = (0, c.q8)(e, t),
     y = null == u ? true : u.storeRemovalDate,
     _ = null != (n = null == r ? true : r.has(g.oNc.PARTNERED)) && n,
-    v = O && null != y && !_ && f.type === h.A3.POWERUP_ACTIVATED,
-    j = v ? {
+    j = O && null != y && !_ && f.type === h.A3.POWERUP_ACTIVATED,
+    v = j ? {
       title: b.intl.formatToPlainString(m.default.mgoPkZ, {
         perkName: null == u ? true : u.title
       }),
@@ -42,15 +42,15 @@ function O(e, t) {
       })
     } : null;
   return {
-    shouldShow: v,
-    notificationConfig: j
+    shouldShow: j,
+    notificationConfig: v
   }
 }
 
 function y(e, t) {
   var n, O, y, _;
-  let v = (0, l.e7)([o.Z], () => o.Z.getGuild(e)),
-    j = (0, l.e7)([a.Z], () => a.Z.hasLayers()),
+  let j = (0, l.e7)([o.Z], () => o.Z.getGuild(e)),
+    v = (0, l.e7)([a.Z], () => a.Z.hasLayers()),
     x = null != (y = (0, u.Z)(e)) && y,
     C = (0, c.q8)(e, t),
     E = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
@@ -66,21 +66,21 @@ function y(e, t) {
     {
       onActivate: T
     } = (0, f._C)(e, N),
-    A = !j && x && C && null != S && !w && P.type === h.A3.POWERUP_ACTIVATED && null != I && null != N && null != v,
+    A = !v && x && C && null != S && !w && P.type === h.A3.POWERUP_ACTIVATED && null != I && null != N && null != j,
     R = r.useCallback(e => {
       T(e)
     }, [T]),
     D = r.useMemo(() => {
       if (!A) return null;
       let e = (0, p.Z)(I),
-        t = v.premiumTier === g.Eu4.TIER_2 ? b.intl.string(m.default["0uo/LC"]) : true;
+        t = j.premiumTier === g.Eu4.TIER_2 ? b.intl.string(m.default["0uo/LC"]) : true;
       return {
         firstHeader: S.title,
         secondHeader: b.intl.formatToPlainString(m.default["8imxAg"], {
           dateString: e
         }),
         firstBody: b.intl.formatToPlainString(m.default["/bW9tb"], {
-          serverName: v.name
+          serverName: j.name
         }),
         secondBody: b.intl.formatToPlainString(m.default.D09fdn, {
           dateString: e,
@@ -90,7 +90,7 @@ function y(e, t) {
         primaryButtonText: t,
         onPrimaryClick: null != t ? R : true
       }
-    }, [A, S, I, v, R]);
+    }, [A, S, I, j, R]);
   return {
     shouldShow: A,
     modalConfig: D

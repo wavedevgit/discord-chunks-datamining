@@ -1,4 +1,4 @@
-/** Chunk was on 71832 **/
+/** Chunk was on 11160 **/
 /** chunk id: 995993, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   m: () => C
@@ -23,15 +23,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk176505 = require("./176505.js"),
   Chunk490897 = require("./490897.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk88448 = require("./88448.js");
+  Chunk885525 = require("./885525.js");
 
 function C(e) {
   let {
     guild: t,
     selected: C
-  } = e, E = (0, p.Z)(t), S = (0, u.Nj)(o.z.CHANNEL_BROWSER_NEW_BADGE_NUX), P = (0, l.Wu)([f.Z], () => Array.from(f.Z.getNewChannelIds(t.id)).filter(e => f.Z.shouldIndicateNewChannel(t.id, e))), I = (0, l.e7)([g.ZP], () => g.ZP.hasUnread(t.id, v.W.GUILD_ONBOARDING_QUESTION)), N = P.length > b.Cb, Z = (0, l.e7)([d.Z, g.ZP], () => {
+  } = e, E = (0, p.Z)(t), S = (0, u.Nj)(o.z.CHANNEL_BROWSER_NEW_BADGE_NUX), P = (0, l.Wu)([f.Z], () => Array.from(f.Z.getNewChannelIds(t.id)).filter(e => f.Z.shouldIndicateNewChannel(t.id, e))), I = (0, l.e7)([g.ZP], () => g.ZP.hasUnread(t.id, j.W.GUILD_ONBOARDING_QUESTION)), N = P.length > b.Cb, Z = (0, l.e7)([d.Z, g.ZP], () => {
     let e = d.Z.lastFetchedAt(t.id),
-      n = g.ZP.lastMessageId(t.id, v.W.GUILD_ONBOARDING_QUESTION);
+      n = g.ZP.lastMessageId(t.id, j.W.GUILD_ONBOARDING_QUESTION);
     if (null == n) returnfalse;
     let r = m.default.extractTimestamp(n);
     return null != e && e > r
@@ -78,7 +78,7 @@ function C(e) {
   }, [t]), A = null;
   return S && !I && !N || C || Z || (A = (0, r.jsx)(s.IGR, {
     color: a.Z.colors.BADGE_BRAND_BG.css,
-    text: j.intl.string(j.t.y2b7CA),
+    text: v.intl.string(v.t.y2b7CA),
     className: x.newChannel
   })), (0, r.jsx)(O.m, {
     id: "channels-".concat(t.id),
@@ -87,7 +87,7 @@ function C(e) {
       color: "currentColor",
       className: e
     }),
-    text: E ? j.intl.string(j.t.h9mGOD) : j.intl.string(j.t.et6wam),
+    text: E ? v.intl.string(v.t.h9mGOD) : v.intl.string(v.t.et6wam),
     selected: C,
     onClick: w,
     onContextMenu: T,

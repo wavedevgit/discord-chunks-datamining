@@ -1,10 +1,10 @@
-/** Chunk was on 71832 **/
+/** Chunk was on 11160 **/
 /** chunk id: 865112, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   RB: () => _,
   VH: () => O,
-  Vi: () => v,
-  Vu: () => j,
+  Vi: () => j,
+  Vu: () => v,
   q7: () => y
 });
 var Chunk692547 = require("./692547.js"),
@@ -61,7 +61,7 @@ let O = {
     }
   },
   _ = e => "icHighlight" === e ? "TOP_MESSAGES" : "NOTIFICATION_CENTER",
-  v = e => {
+  j = e => {
     switch (e) {
       case i.DY.GO_LIVE_PUSH:
         return {
@@ -95,7 +95,7 @@ let O = {
         return null
     }
   },
-  j = e => {
+  v = e => {
     switch (e.item_enum) {
       case i.AM.UPDATE_PROFILE:
         return l.Y9;

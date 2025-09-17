@@ -1,4 +1,4 @@
-/** Chunk was on 71832 **/
+/** Chunk was on 11160 **/
 /** chunk id: 961040, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk82409 = require("./82409.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk546373 = require("./546373.js");
+  Chunk888831 = require("./888831.js");
 
 function b(e) {
   let {
@@ -28,9 +28,9 @@ function b(e) {
   } = e, {
     isOpen: y,
     setIsOpen: _
-  } = (0, p.Z)(), v = i.useCallback(() => {
+  } = (0, p.Z)(), j = i.useCallback(() => {
     _(false)
-  }, [_]), j = i.useCallback(() => {
+  }, [_]), v = i.useCallback(() => {
     _(!y)
   }, [y, _]);
   (0, c.ZP)(() => {
@@ -38,7 +38,7 @@ function b(e) {
       _(false)
     };
     return s.Z.subscribe("USER_SETTINGS_MODAL_OPEN", e), () => s.Z.unsubscribe("USER_SETTINGS_MODAL_OPEN", e)
-  }), i.useEffect(() => (u.S.subscribe(h.CkL.TOGGLE_INBOX, j), () => void u.S.unsubscribe(h.CkL.TOGGLE_INBOX, j)), [j]);
+  }), i.useEffect(() => (u.S.subscribe(h.CkL.TOGGLE_INBOX, v), () => void u.S.unsubscribe(h.CkL.TOGGLE_INBOX, v)), [v]);
   let {
     entrypoint: x
   } = (0, d.pN)({
@@ -51,7 +51,7 @@ function b(e) {
     animation: x === d.u3.TITLE_BAR_LEFT ? a.yRy.Animation.TRANSLATE : a.yRy.Animation.FADE,
     animationPosition: x === d.u3.TITLE_BAR_LEFT ? "bottom" : "left",
     position: n,
-    onRequestClose: v,
+    onRequestClose: j,
     spacing: b,
     renderPopout: () => (0, r.jsx)(a.VqE, {
       "aria-label": g.intl.string(g.t.GSmTKC),
@@ -65,18 +65,18 @@ function b(e) {
       let {
         isShown: r
       } = n;
-      return t(j, r, e)
+      return t(v, r, e)
     }
   })
 }
 
 function O() {
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk546373.container,
+    className: Chunk888831.container,
     children: [(0, Chunk951288.jsx)("div", {
-      className: Chunk546373.backgroundContainer,
+      className: Chunk888831.backgroundContainer,
       children: (0, Chunk951288.jsx)("span", {
-        className: Chunk546373.background
+        className: Chunk888831.background
       })
     }), (0, Chunk951288.jsx)(Chunk82409.Z, {})]
   })

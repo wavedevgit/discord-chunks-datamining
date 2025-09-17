@@ -76,7 +76,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk761652 = require("./761652.js"),
   Chunk957825 = require("./957825.js"),
-  Chunk744114 = require("./744114.js");
+  Chunk564355 = require("./564355.js");
 
 function ed(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -139,7 +139,7 @@ function eE(e, t, a, o, s) {
       c(false), (0, p.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("57804"), n.e("90508"), n.e("46653"), n.e("22173"), n.e("77756")]).then(n.bind(n, 273602));
+        } = await Promise.all([n.e("57804"), n.e("90508"), n.e("46653"), n.e("22173"), n.e("6198")]).then(n.bind(n, 273602));
         return t => (0, r.jsx)(e, ep(ef({}, t), {
           threadId: s,
           attachments: O,
@@ -458,8 +458,8 @@ function eD(e, t) {
     isPendingMember: e3,
     disabled: e4,
     canAttachFiles: e8,
-    canCreateThreads: e6,
-    canEveryoneSendMessages: e5
+    canCreateThreads: e5,
+    canEveryoneSendMessages: e6
   } = eN(M, k, e0, x), e7 = k.toolbarType === X.OW.STATIC, e9 = !U.dN.useSetting() && !(0, z.isAndroidWeb)() && null != window.ResizeObserver, te = !e9 || !(null == (n = k.commands) ? true : n.enabled) || !G || f !== el.GI, tt = (0, w.Z)(), {
     fontSize: tn
   } = (0, _.cj)([g.Z], () => ({
@@ -507,9 +507,9 @@ function eD(e, t) {
   } = eR(k, to, ez), tN = ew(to, ez);
   (0, q.S)(to, M.guild_id, M.id);
   let tR = null != Y,
-    tP = e4 && !((e2 || e3) && e5) || tl && (null == (s = k.submit) ? true : s.useDisabledStylesOnSubmit),
+    tP = e4 && !((e2 || e3) && e6) || tl && (null == (s = k.submit) ? true : s.useDisabledStylesOnSubmit),
     tw = null;
-  null != e0 ? tw = null == V ? true : V(e0, e1, eu.attachButton) : (!e4 || e6) && (tw = null == Z ? true : Z(tR, eu.attachButton));
+  null != e0 ? tw = null == V ? true : V(e0, e1, eu.attachButton) : (!e4 || e5) && (tw = null == Z ? true : Z(tR, eu.attachButton));
   let tD = e9 && null != h && !e4 && k.showCharacterCount && null == e0,
     tx = e9 && !__OVERLAY__ && null != h && null == e0 && k.toolbarType !== X.OW.NONE,
     tL = (0, ee.c)({
@@ -603,7 +603,7 @@ function eD(e, t) {
                 placeholder: L,
                 required: P,
                 accessibilityLabel: j,
-                isPreviewing: (e2 || e3) && e5,
+                isPreviewing: (e2 || e3) && e6,
                 channel: M,
                 type: k,
                 canPasteFiles: e8,

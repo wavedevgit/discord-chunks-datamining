@@ -1,4 +1,4 @@
-/** Chunk was on 71832 **/
+/** Chunk was on 11160 **/
 /** chunk id: 289481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk520116 = require("./520116.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk559940 = require("./559940.js");
+  Chunk550116 = require("./550116.js");
 
 function C(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -94,19 +94,19 @@ let E = Chunk647438.memo(function(e) {
     if (i.useEffect(() => {
         null == a || !t.isFullyLoaded || t.hasError || t.collapsed || "messages" !== t.type || 0 !== t.messages.length || d.Z.wait(() => {
           (0, p.In)(t.channelId, {
-            section: v.jXE.INBOX,
-            object: v.qAy.ACK_INBOX_CHANNEL_NO_MESSAGES,
-            objectType: v.Qqv.ACK_AUTOMATIC
+            section: j.jXE.INBOX,
+            object: j.qAy.ACK_INBOX_CHANNEL_NO_MESSAGES,
+            objectType: j.Qqv.ACK_AUTOMATIC
           }, true), l(t.channelId)
         })
       }), null == a || !t.hasLoadedAnything) return null;
     let s = (e, r) => {
-      (0, f.yw)(v.rMx.INBOX_CHANNEL_CLICKED, {
+      (0, f.yw)(j.rMx.INBOX_CHANNEL_CLICKED, {
         channel_id: t.channelId,
         guild_id: t.guildId
       });
       let i = null != r ? r : t.oldestUnreadMessageId;
-      (0, h.uL)(v.Z5c.CHANNEL(t.guildId, t.channelId, "forum" === t.type ? null : i)), n(e)
+      (0, h.uL)(j.Z5c.CHANNEL(t.guildId, t.channelId, "forum" === t.type ? null : i)), n(e)
     };
     return (0, r.jsx)("div", {
       className: x.channel,
@@ -143,7 +143,7 @@ function P(e) {
   } = e, o = (0, s.Z)() && null != t.guildId;
   return (0, r.jsx)(u.M0o, {
     className: x.markReadButton,
-    tooltip: o ? j.intl.string(j.t["5lLMhI"]) : j.intl.string(j.t.e6RscX),
+    tooltip: o ? v.intl.string(v.t["5lLMhI"]) : v.intl.string(v.t.e6RscX),
     color: u.YX$.TERTIARY,
     icon: o ? (0, r.jsx)(u.W6s, {
       size: "xs",
@@ -153,7 +153,7 @@ function P(e) {
       color: "currentColor"
     }),
     onClick: function() {
-      o && null != t.guildId ? i(t.guildId) : n(t), (0, f.yw)(v.rMx.INBOX_CHANNEL_ACKED, {
+      o && null != t.guildId ? i(t.guildId) : n(t), (0, f.yw)(j.rMx.INBOX_CHANNEL_ACKED, {
         channel_id: t.channelId,
         guild_id: t.guildId,
         marked_all_channels_as_read: false,
@@ -171,7 +171,7 @@ function I(e) {
   } = e;
 
   function l() {
-    n(t), (0, f.yw)(v.rMx.INBOX_CHANNEL_COLLAPSED, {
+    n(t), (0, f.yw)(j.rMx.INBOX_CHANNEL_COLLAPSED, {
       channel_id: t.channelId,
       guild_id: t.guildId,
       num_unread_channels_remaining: i(),
@@ -179,7 +179,7 @@ function I(e) {
     })
   }
   return (0, r.jsx)(u.ua7, {
-    text: j.intl.string(j.t.iTcumZ),
+    text: v.intl.string(v.t.iTcumZ),
     children: e => {
       var n, i;
       return (0, r.jsx)(u.P3F, (n = C({}, e), i = i = {

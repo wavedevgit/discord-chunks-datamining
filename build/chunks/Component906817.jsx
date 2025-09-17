@@ -1,4 +1,4 @@
-/** Chunk was on 71832 **/
+/** Chunk was on 11160 **/
 /** chunk id: 906817, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   EM: () => m,
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk327530 = require("./327530.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk344110 = require("./344110.js");
+  Chunk776677 = require("./776677.js");
 
 function m(e, t, n, r) {
   let i = "compact" === r ? 8 : p.$k;
@@ -63,15 +63,15 @@ let O = Chunk647438.memo(function(e) {
     disableManageChannels: y
   } = e, {
     isFavoritesPerk: _
-  } = (0, a.z)("ChannelListSection"), v = i.useCallback(() => {
+  } = (0, a.z)("ChannelListSection"), j = i.useCallback(() => {
     let e = m.getCategoryFromSection(m.recentsSectionNumber);
     if (null == e) return;
     let t = null,
       r = e.getShownChannelAndThreadIds();
     null != O && r.includes(O) && (t = (0, s.KY)(m)), (0, s.Uo)(n.id, r, t)
   }, [n.id, O, m, b]), {
-    density: j
-  } = (0, l.TCT)(), x = "compact" === j ? 8 : p.$k;
+    density: v
+  } = (0, l.TCT)(), x = "compact" === v ? 8 : p.$k;
   switch (t) {
     case u.wZ:
       return (0, r.jsx)("div", {
@@ -93,7 +93,7 @@ let O = Chunk647438.memo(function(e) {
     case m.recentsSectionNumber:
       return (0, r.jsx)(d.P, {
         name: h.intl.string(h.t.gKcrqK),
-        onDismiss: v
+        onDismiss: j
       });
     case m.voiceChannelsSectionNumber: {
       var C;

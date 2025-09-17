@@ -1,7 +1,7 @@
-/** Chunk was on 71832 **/
+/** Chunk was on 11160 **/
 /** chunk id: 734190, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => L
+  Z: () => M
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -30,9 +30,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk124368 = require("./124368.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk33082 = require("./33082.js"),
-  Chunk516966 = require("./516966.js"),
-  Chunk95701 = require("./95701.js");
+  Chunk55940 = require("./55940.js"),
+  Chunk509612 = require("./509612.js"),
+  Chunk113914 = require("./113914.js");
 
 function A(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -130,7 +130,7 @@ function D(e) {
   }
 }
 
-function M(e) {
+function L(e) {
   let {
     thread: t
   } = e, n = i.useMemo(() => {
@@ -151,14 +151,14 @@ function M(e) {
     }))
   })
 }
-let L = Chunk647438.memo(function(e) {
+let M = Chunk647438.memo(function(e) {
   let {
     thread: t,
     isSelectedChannel: l,
     isSelectedVoice: f,
     isLast: T,
-    withGuildIcon: L
-  } = e, k = (0, s.e7)([v.ZP], () => v.ZP.getVoiceStatesForChannel(t), [t]), U = (0, s.e7)([_.Z], () => _.Z.hasVideo(t.id)), {
+    withGuildIcon: M
+  } = e, k = (0, s.e7)([j.ZP], () => j.ZP.getVoiceStatesForChannel(t), [t]), U = (0, s.e7)([_.Z], () => _.Z.hasVideo(t.id)), {
     unread: G,
     mentionCount: B,
     isMentionLowImportance: V
@@ -166,7 +166,7 @@ let L = Chunk647438.memo(function(e) {
     unread: O.ZP.hasUnread(t.id),
     mentionCount: O.ZP.getMentionCount(t.id),
     isMentionLowImportance: O.ZP.getIsMentionLowImportance(t.id)
-  })), F = (0, s.e7)([g.Z], () => g.Z.isMuted(t.id)), H = (0, j.p)({
+  })), F = (0, s.e7)([g.Z], () => g.Z.isMuted(t.id)), H = (0, v.p)({
     location: "GuildSidebarThreadListEntry"
   }), z = (0, s.e7)([y.default], () => y.default.getUser(t.ownerId)), W = i.useCallback(e => {
     (0, m.ok)(t, !e.shiftKey, I.on.CHANNEL_LIST)
@@ -212,9 +212,9 @@ let L = Chunk647438.memo(function(e) {
       [Z.selected]: l
     }),
     children: [(0, r.jsx)(D, {
-      withGuildIcon: L
+      withGuildIcon: M
     }), T ? null : (0, r.jsx)(D, {
-      withGuildIcon: L,
+      withGuildIcon: M,
       inverted: true,
       style: {
         transform: "rotateX(180deg) translateY(-9px)"
@@ -232,7 +232,7 @@ let L = Chunk647438.memo(function(e) {
           [w.modeSelected]: l,
           [w.modeMuted]: !l && F,
           [w.modeUnreadImportant]: !F && !l && G,
-          [w.withGuildIcon]: L,
+          [w.withGuildIcon]: M,
           [w.threadsInChannelListQoLExperiment]: H.enabled,
           [w.withThreadIconInBubble]: "icon-in-bubble" === H.variant
         }),
@@ -252,13 +252,13 @@ let L = Chunk647438.memo(function(e) {
             className: o()(w.linkTop, w.__invalid_threadMainContent),
             children: ["icon-with-avatar" === H.variant ? (0, r.jsxs)("div", {
               className: w.threadIconWithAvatar,
-              children: [(0, r.jsx)(M, {
+              children: [(0, r.jsx)(L, {
                 thread: t
               }), null == z ? null : (0, r.jsx)(p.Z, {
                 user: z,
                 size: c.EFr.SIZE_16
               })]
-            }) : null, "icon-in-bubble" === H.variant ? (0, r.jsx)(M, {
+            }) : null, "icon-in-bubble" === H.variant ? (0, r.jsx)(L, {
               thread: t
             }) : null, (0, r.jsx)(h.Z, {
               className: w.name,

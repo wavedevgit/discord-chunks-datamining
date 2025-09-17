@@ -1,4 +1,4 @@
-/** Chunk was on 71832 **/
+/** Chunk was on 11160 **/
 /** chunk id: 339149, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => I,
@@ -22,7 +22,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk353042 = require("./353042.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk977505 = require("./977505.js");
+  Chunk820093 = require("./820093.js");
 
 function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -47,52 +47,52 @@ function C(e) {
 }
 let E = {
   [Chunk981631.vxO.INSTALLING]: {
-    [Chunk707409.J6.NONE]: (e, t) => v.intl.formatToPlainString(v.t["p+2sEx"], {
+    [Chunk707409.J6.NONE]: (e, t) => j.intl.formatToPlainString(j.t["p+2sEx"], {
       name: e
     }),
-    [Chunk707409.J6.SECONDS]: (e, t) => v.intl.formatToPlainString(v.t["/0NgPD"], {
+    [Chunk707409.J6.SECONDS]: (e, t) => j.intl.formatToPlainString(j.t["/0NgPD"], {
       name: e,
       timeRemaining: t
     }),
-    [Chunk707409.J6.MINUTES]: (e, t) => v.intl.formatToPlainString(v.t.ZIwMzs, {
+    [Chunk707409.J6.MINUTES]: (e, t) => j.intl.formatToPlainString(j.t.ZIwMzs, {
       name: e,
       timeRemaining: t
     }),
-    [Chunk707409.J6.HOURS]: (e, t) => v.intl.formatToPlainString(v.t["3IQDUl"], {
+    [Chunk707409.J6.HOURS]: (e, t) => j.intl.formatToPlainString(j.t["3IQDUl"], {
       name: e,
       timeRemaining: t
     })
   },
   [Chunk981631.vxO.UPDATING]: {
-    [Chunk707409.J6.NONE]: (e, t) => v.intl.formatToPlainString(v.t["6F9QzM"], {
+    [Chunk707409.J6.NONE]: (e, t) => j.intl.formatToPlainString(j.t["6F9QzM"], {
       name: e
     }),
-    [Chunk707409.J6.SECONDS]: (e, t) => v.intl.formatToPlainString(v.t["2OVgVl"], {
+    [Chunk707409.J6.SECONDS]: (e, t) => j.intl.formatToPlainString(j.t["2OVgVl"], {
       name: e,
       timeRemaining: t
     }),
-    [Chunk707409.J6.MINUTES]: (e, t) => v.intl.formatToPlainString(v.t.mgQg1N, {
+    [Chunk707409.J6.MINUTES]: (e, t) => j.intl.formatToPlainString(j.t.mgQg1N, {
       name: e,
       timeRemaining: t
     }),
-    [Chunk707409.J6.HOURS]: (e, t) => v.intl.formatToPlainString(v.t["aTdq4+"], {
+    [Chunk707409.J6.HOURS]: (e, t) => j.intl.formatToPlainString(j.t["aTdq4+"], {
       name: e,
       timeRemaining: t
     })
   },
   [Chunk981631.vxO.REPAIRING]: {
-    [Chunk707409.J6.NONE]: (e, t) => v.intl.formatToPlainString(v.t["p+2sEx"], {
+    [Chunk707409.J6.NONE]: (e, t) => j.intl.formatToPlainString(j.t["p+2sEx"], {
       name: e
     }),
-    [Chunk707409.J6.SECONDS]: (e, t) => v.intl.formatToPlainString(v.t["/0NgPD"], {
+    [Chunk707409.J6.SECONDS]: (e, t) => j.intl.formatToPlainString(j.t["/0NgPD"], {
       name: e,
       timeRemaining: t
     }),
-    [Chunk707409.J6.MINUTES]: (e, t) => v.intl.formatToPlainString(v.t.ZIwMzs, {
+    [Chunk707409.J6.MINUTES]: (e, t) => j.intl.formatToPlainString(j.t.ZIwMzs, {
       name: e,
       timeRemaining: t
     }),
-    [Chunk707409.J6.HOURS]: (e, t) => v.intl.formatToPlainString(v.t["3IQDUl"], {
+    [Chunk707409.J6.HOURS]: (e, t) => j.intl.formatToPlainString(j.t["3IQDUl"], {
       name: e,
       timeRemaining: t
     })
@@ -186,7 +186,7 @@ class P extends(r = Chunk647438.PureComponent) {
           scale: this.state.animationScale
         }]
       },
-      className: a()(require, Chunk977505.progressContainer),
+      className: a()(require, Chunk820093.progressContainer),
       onClick: this.handleOnClick,
       children: (0, Chunk951288.jsx)(Chunk481060.ua7, {
         text: this.getTooltipText(),
@@ -201,7 +201,7 @@ class P extends(r = Chunk647438.PureComponent) {
               children: (0, i.jsx)(p._8t, {
                 size: "md",
                 color: "currentColor",
-                className: j.downloadIcon
+                className: v.downloadIcon
               })
             })
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {

@@ -1,4 +1,4 @@
-/** Chunk was on 71832 **/
+/** Chunk was on 11160 **/
 /** chunk id: 603592, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk276952 = require("./276952.jsx"),
   Chunk682662 = require("./682662.jsx"),
   Chunk662146 = require("./662146.jsx"),
-  Chunk225499 = require("./225499.js");
+  Chunk790952 = require("./790952.js");
 let f = Chunk647438.forwardRef(function(e, t) {
   var n, l;
   let {
@@ -24,8 +24,8 @@ let f = Chunk647438.forwardRef(function(e, t) {
     tooltip: O,
     upperBadge: y,
     lowerBadge: _,
-    lowerBadgeSize: v,
-    showPill: j = true,
+    lowerBadgeSize: j,
+    showPill: v = true,
     className: x,
     "aria-label": C,
     children: E,
@@ -34,7 +34,7 @@ let f = Chunk647438.forwardRef(function(e, t) {
     onMouseDown: I
   } = e, N = (0, a.Ie)(f), [Z, w] = i.useState(false);
   return (0, r.jsxs)(u.H, {
-    children: [j ? (0, r.jsx)("div", {
+    children: [v ? (0, r.jsx)("div", {
       className: p.pill,
       children: (0, r.jsx)(c.Z, {
         hovered: Z,
@@ -47,7 +47,7 @@ let f = Chunk647438.forwardRef(function(e, t) {
         selected: true,
         upperBadge: y,
         lowerBadge: _,
-        lowerBadgeSize: v,
+        lowerBadgeSize: j,
         children: (0, r.jsx)(s.P3F, (n = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},

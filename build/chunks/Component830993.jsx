@@ -1,4 +1,4 @@
-/** Chunk was on 71832 **/
+/** Chunk was on 11160 **/
 /** chunk id: 830993, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => I
@@ -26,8 +26,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk543432 = require("./543432.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk333972 = require("./333972.js"),
-  Chunk934882 = require("./934882.js");
+  Chunk413409 = require("./413409.js"),
+  Chunk21265 = require("./21265.js");
 
 function I(e) {
   var t, l;
@@ -38,7 +38,7 @@ function I(e) {
     voiceStates: g,
     isChannelSelected: b,
     shouldShowSettingNudge: y
-  } = e, v = i.useMemo(() => {
+  } = e, j = i.useMemo(() => {
     var e;
     return null == g || g.length > 50 ? {} : {
       [o.getGuildId()]: null != (e = g.map(e => {
@@ -49,9 +49,9 @@ function I(e) {
       })) ? e : []
     }
   }, [o, g]);
-  (0, c.$)(v, "VoiceChannelActivities");
-  let j = (0, u.ZP)(o),
-    x = Array.from((0, u.uF)(j).values()),
+  (0, c.$)(j, "VoiceChannelActivities");
+  let v = (0, u.ZP)(o),
+    x = Array.from((0, u.uF)(v).values()),
     P = null != (t = null == g ? true : g.filter(O.lm)) ? t : [],
     I = (0, a.e7)([m.Z], () => {
       let e = {};
@@ -163,9 +163,9 @@ function N(e) {
   }), u = (0, a.e7)([h.Z], () => h.Z.getGuild(t.guild_id));
   return null == (0, f.KS)(t, u) ? null : (0, r.jsxs)("div", {
     className: o()(S.popoutHeaderContainer, P.popoutHeaderContainer),
-    children: [(0, r.jsx)(v.Z, {
+    children: [(0, r.jsx)(j.Z, {
       channel: t
-    }), c ? (0, r.jsx)(j.Z, {
+    }), c ? (0, r.jsx)(v.Z, {
       userCount: i,
       video: s,
       channel: t

@@ -1,4 +1,4 @@
-/** Chunk was on 71832 **/
+/** Chunk was on 11160 **/
 /** chunk id: 653577, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -16,8 +16,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk670080 = require("./670080.js"),
-  Chunk602009 = require("./602009.js");
+  Chunk158871 = require("./158871.js"),
+  Chunk430864 = require("./430864.js");
 
 function O(e) {
   let {
@@ -27,8 +27,8 @@ function O(e) {
     subtitle: O,
     onClick: y,
     enableHangStatus: _,
-    allowChannelTopic: v
-  } = e, j = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), x = null != j && j.length > 0, C = (0, c.ZP)(t, true), E = (!_ || !!v) && C, S = null != O && O.length > 0;
+    allowChannelTopic: j
+  } = e, v = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), x = null != v && v.length > 0, C = (0, c.ZP)(t, true), E = (!_ || !!j) && C, S = null != O && O.length > 0;
   if (i.useEffect(() => {
       x && f.default.track(h.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
         channel_id: t.id,
@@ -43,7 +43,7 @@ function O(e) {
       variant: "text-xs/medium",
       className: o()(m.statusText, b.markup),
       children: (0, r.jsx)(d.Z, {
-        children: p.Z.parseVoiceChannelStatus(j, true, {
+        children: p.Z.parseVoiceChannelStatus(v, true, {
           channelId: t.id
         })
       })

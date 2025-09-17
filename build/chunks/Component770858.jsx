@@ -1,4 +1,4 @@
-/** Chunk was on 71832 **/
+/** Chunk was on 11160 **/
 /** chunk id: 770858, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk871301 = require("./871301.js"),
   Chunk981631 = require("./981631.js"),
   Chunk490897 = require("./490897.js"),
-  Chunk86517 = require("./86517.js");
+  Chunk888158 = require("./888158.js");
 
 function C() {
   let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser());
@@ -37,7 +37,7 @@ function E(e) {
     selectedOverride: p = false,
     popoutProps: h,
     ref: O
-  } = e, j = (0, l.Ie)("notifications-inbox"), [E, S] = i.useState(false), P = (0, m.D)(), I = p || P, {
+  } = e, v = (0, l.Ie)("notifications-inbox"), [E, S] = i.useState(false), P = (0, m.D)(), I = p || P, {
     notificationCenterVariant: N
   } = (0, g.pN)({
     location: "NotificationsInboxButtonInner"
@@ -78,7 +78,7 @@ function E(e) {
       badgeDimensions: o
     }
   }(I), A = N === g.jP.LEGACY ? a.xx7 : a.Dkj, R = (0, o.e7)([f.Z], () => f.Z.getChannelId()), D = i.useMemo(() => {
-    if (N === g.jP.SIDEBAR) return v.Z5c.CHANNEL(v.STv, R)
+    if (N === g.jP.SIDEBAR) return j.Z5c.CHANNEL(j.STv, R)
   }, [N, R]);
   return (0, r.jsxs)(u.H, {
     ref: O,
@@ -110,7 +110,7 @@ function E(e) {
             })
           }
           return e
-        }({}, j, h), n = n = {
+        }({}, v, h), n = n = {
           onClick: d,
           to: D,
           selected: I || E,
@@ -169,7 +169,7 @@ function S() {
     targetElementRef: module,
     popoutPosition: "right",
     popoutAlign: "top",
-    dialogClassName: Chunk86517.positionLayer,
+    dialogClassName: Chunk888158.positionLayer,
     children: (t, n, i) => (0, r.jsx)(E, {
       ref: e,
       selectedOverride: n,

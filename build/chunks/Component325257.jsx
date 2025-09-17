@@ -1,4 +1,4 @@
-/** Chunk was on 71832 **/
+/** Chunk was on 11160 **/
 /** chunk id: 325257, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => k
@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk674552 = require("./674552.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk857668 = require("./857668.js");
+  Chunk534175 = require("./534175.js");
 
 function R(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -66,7 +66,7 @@ function D(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let M = {
+let L = {
   analyticsSource: {
     page: Chunk981631.ZY5.GUILD_CHANNEL,
     section: Chunk981631.jXE.CHANNEL_LIST,
@@ -74,11 +74,11 @@ let M = {
   }
 };
 
-function L(e, t) {
+function M(e, t) {
   (0, h.jW)(e, async () => {
     let {
       default: e
-    } = await Promise.all([n.e("1806"), n.e("36599"), n.e("60962"), n.e("58175"), n.e("55616"), n.e("8271"), n.e("15851"), n.e("51453"), n.e("7654"), n.e("845"), n.e("8360"), n.e("6850"), n.e("58227"), n.e("54408"), n.e("90746"), n.e("70830"), n.e("56534"), n.e("87154"), n.e("33213"), n.e("26819")]).then(n.bind(n, 545135));
+    } = await Promise.all([n.e("1806"), n.e("36599"), n.e("60962"), n.e("58175"), n.e("55616"), n.e("8271"), n.e("15851"), n.e("51453"), n.e("7654"), n.e("845"), n.e("47463"), n.e("6850"), n.e("58227"), n.e("54408"), n.e("90746"), n.e("8106"), n.e("56534"), n.e("87154"), n.e("33213"), n.e("63933")]).then(n.bind(n, 545135));
     return n => (0, r.jsx)(e, D(R({}, n), {
       guild: t
     }))
@@ -100,7 +100,7 @@ let k = Chunk647438.memo(function(e) {
     unavailable: q = false,
     badge: X = 0,
     isMentionLowImportance: Q,
-    contextMenu: J = L,
+    contextMenu: J = M,
     draggable: $ = false,
     sorting: ee = false,
     preloadOnClick: et = true,
@@ -129,7 +129,7 @@ let k = Chunk647438.memo(function(e) {
         nodeId: U.id
       }),
       end() {
-        null == V || V(), (0, g.V1)(j.ZP.getCompatibleGuildFolders())
+        null == V || V(), (0, g.V1)(v.ZP.getCompatibleGuildFolders())
       },
       collect: e => ({
         dragging: e.isDragging()
@@ -140,14 +140,14 @@ let k = Chunk647438.memo(function(e) {
     em = !ee && eh,
     [eb, eO] = i.useState(false),
     [ey, e_] = i.useState(false),
-    [ev] = i.useState(() => new d.sW(70, () => e_(true)));
-  i.useEffect(() => () => ev.cancel(), [ev]);
-  let ej = i.useCallback(() => {
+    [ej] = i.useState(() => new d.sW(70, () => e_(true)));
+  i.useEffect(() => () => ej.cancel(), [ej]);
+  let ev = i.useCallback(() => {
       if (null != F) return void(0, O.uL)(F, {
-        state: M
+        state: L
       });
       (0, y.X)(eo, {
-        state: M
+        state: L
       })
     }, [eo, F]),
     ex = i.useCallback(() => {
@@ -155,7 +155,7 @@ let k = Chunk647438.memo(function(e) {
       let e = (0, b.V)(H.id);
       null != e && f.Z.preload(H.id, e)
     }, [F, H, q, et]),
-    eC = (0, u.e7)([v.ZP], () => v.ZP.isCurrentUserGuest(eo)),
+    eC = (0, u.e7)([j.ZP], () => j.ZP.isCurrentUserGuest(eo)),
     eE = i.useCallback(e => {
       null == H || eC || J(e, H)
     }, [H, J, eC]),
@@ -166,9 +166,9 @@ let k = Chunk647438.memo(function(e) {
       }
     }, [ea]),
     eP = i.useCallback(e => {
-      if (e) return void ev.delay();
-      ev.cancel(), e_(false)
-    }, [ev]),
+      if (e) return void ej.delay();
+      ej.cancel(), e_(false)
+    }, [ej]),
     eI = i.useCallback(e => {
       null == G || G(eo, e)
     }, [eo, G]),
@@ -190,7 +190,7 @@ let k = Chunk647438.memo(function(e) {
         mentions: X
       }),
       name: H.name,
-      onClick: ej,
+      onClick: ev,
       onMouseEnter: function() {
         ee || eg(true)
       },

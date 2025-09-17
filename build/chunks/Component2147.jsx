@@ -64,8 +64,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk710352 = require("./710352.js"),
   Chunk124368 = require("./124368.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk741905 = require("./741905.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk257294 = require("./257294.js"),
+  Chunk197571 = require("./197571.js");
 
 function ed(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -855,7 +855,7 @@ class eR extends Chunk647438.PureComponent {
       tag: Chunk481060.RB0.H1,
       title: Chunk388032.intl.string(Chunk388032.t["/dp6yc"]),
       children: [this.renderChannelInfo(module, exports), this.showVoiceSettings() ? (0, Chunk951288.jsx)(Chunk481060.$i$, {
-        className: s()(Chunk10198.marginTop40, Chunk10198.marginBottom40)
+        className: s()(Chunk197571.marginTop40, Chunk197571.marginBottom40)
       }) : null, this.renderVoiceBitrate(module, require), this.renderVideoQualityMode(module), this.renderUserLimit(module), this.renderRegionOverride(module), this.renderJuiceImage(module)]
     })
   }

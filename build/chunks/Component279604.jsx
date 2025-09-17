@@ -1,11 +1,11 @@
-/** Chunk was on 71832 **/
+/** Chunk was on 11160 **/
 /** chunk id: 279604, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   KE: () => _,
   KT: () => y,
-  Td: () => v,
+  Td: () => j,
   ZP: () => C,
-  _C: () => j
+  _C: () => v
 }), require("./388685.js"), require("./457542.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -62,7 +62,7 @@ function _(e, t) {
       case m.Us.PERK: {
         let {
           default: i
-        } = await Promise.all([n.e("55616"), n.e("90746"), n.e("20572")]).then(n.bind(n, 326055));
+        } = await Promise.all([n.e("55616"), n.e("90746"), n.e("67455")]).then(n.bind(n, 326055));
         return n => (0, r.jsx)(i, O({
           guildId: e,
           powerup: t
@@ -74,7 +74,7 @@ function _(e, t) {
   })
 }
 
-function v(e, t) {
+function j(e, t) {
   var n;
   let r = (0, l.e7)([u.Z], () => u.Z.getGuild(e)),
     o = (0, l.e7)([f.Z], () => f.Z.getStateForGuild(e)),
@@ -96,12 +96,12 @@ function v(e, t) {
   return Math.max((null != (n = null == r ? true : r.premiumSubscriberCount) ? n : 0) - a + (null != c ? c : 0), 0)
 }
 
-function j(e, t) {
+function v(e, t) {
   let {
     analyticsLocations: n
   } = (0, a.ZP)(), {
     onToggle: r
-  } = x(e, t), d = (0, l.e7)([u.Z], () => u.Z.getGuild(e)), p = v(e, t);
+  } = x(e, t), d = (0, l.e7)([u.Z], () => u.Z.getGuild(e)), p = j(e, t);
   return {
     onActivate: i.useCallback(function(e) {
       var i;
@@ -157,7 +157,7 @@ function C(e, t) {
     onToggle: s
   } = x(e, t), {
     onActivate: c
-  } = j(e, t), u = i.useCallback(e => (e.stopPropagation(), s(false)), [s]);
+  } = v(e, t), u = i.useCallback(e => (e.stopPropagation(), s(false)), [s]);
   return {
     isLoading: l,
     error: a,

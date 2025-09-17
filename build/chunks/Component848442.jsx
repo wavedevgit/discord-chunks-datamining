@@ -1,4 +1,4 @@
-/** Chunk was on 71832 **/
+/** Chunk was on 11160 **/
 /** chunk id: 848442, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -28,7 +28,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk176505 = require("./176505.js"),
   Chunk629481 = require("./629481.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk702868 = require("./702868.js");
+  Chunk296553 = require("./296553.js");
 
 function I(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -68,7 +68,7 @@ function Z(e) {
     selected: n,
     handleClick: i
   } = e, u = (0, h.RF)(t, "guild_shop_channel_row"), g = (0, o.e7)([_.Z], () => _.Z.getGuild(t)), C = (null == g ? true : g.features.has(x.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === true, Z = "false" === s.K.get(E.tM, "false"), w = (0, o.e7)([d.Z], () => d.Z.useReducedMotion);
-  return (0, r.jsx)(j.m, {
+  return (0, r.jsx)(v.m, {
     id: "shop-".concat(t),
     className: l()(P.previewChannelRow, {
       [P.selected]: n,
@@ -96,7 +96,7 @@ function Z(e) {
       }), n && (0, r.jsx)(c.P3F, {
         className: P.closeButton,
         onClick: e => {
-          if (e.stopPropagation(), (0, b.Q3)(a.z.SERVER_SHOP_PHANTOM_PREVIEW), v.default.track(x.rMx.GUILD_SHOP_PREVIEW_CLICK, N(I({}, (0, p.hH)(t)), {
+          if (e.stopPropagation(), (0, b.Q3)(a.z.SERVER_SHOP_PHANTOM_PREVIEW), j.default.track(x.rMx.GUILD_SHOP_PREVIEW_CLICK, N(I({}, (0, p.hH)(t)), {
               action_taken: E.mz.DISMISS_CHANNEL_ROW
             })), !u || !C) {
             var n;
@@ -124,7 +124,7 @@ function w(e) {
     guildId: t.id,
     selected: i,
     handleClick: o
-  }) : (0, r.jsx)(j.m, {
+  }) : (0, r.jsx)(v.m, {
     id: "shop-".concat(t.id),
     renderIcon: e => (0, r.jsx)(m.Z, {
       width: 20,

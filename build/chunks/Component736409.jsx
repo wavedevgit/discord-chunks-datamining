@@ -1,7 +1,7 @@
-/** Chunk was on 71832 **/
+/** Chunk was on 11160 **/
 /** chunk id: 736409, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  j: () => v
+  j: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,12 +21,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk46140 = require("./46140.js");
-let v = e => {
+let j = e => {
   let {
     children: t,
     isForceShowSharingPopout: n,
-    setIsForceShowSharingPopout: v
-  } = e, [j, x] = (0, i.useState)(false), C = function(e) {
+    setIsForceShowSharingPopout: j
+  } = e, [v, x] = (0, i.useState)(false), C = function(e) {
     let {
       isForceShowSharingPopout: t
     } = e, {
@@ -54,7 +54,7 @@ let v = e => {
     n && g.default.track(O.rMx.OPEN_POPOUT, {
       type: "SharingPrivacyPopout"
     })
-  }, [n]), null != C || j) ? (0, r.jsx)(c.ZP, {
+  }, [n]), null != C || v) ? (0, r.jsx)(c.ZP, {
     contentTypes: n ? [] : [o.z.SHARE_ACTIVITY_COACHMARK_V2],
     children: e => {
       let {
@@ -64,7 +64,7 @@ let v = e => {
         let e = () => {
           (0, s.Q3)(o.z.SHARE_ACTIVITY_COACHMARK_V2, {
             dismissAction: y.L.USER_DISMISS
-          }), v(false), x(false)
+          }), j(false), x(false)
         };
         return (0, r.jsx)(a.yRy, {
           targetElementRef: E,

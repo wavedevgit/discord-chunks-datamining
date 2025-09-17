@@ -64,7 +64,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk921944 = require("./921944.js"),
   Chunk647086 = require("./647086.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk500553 = require("./500553.js");
+  Chunk971606 = require("./971606.js");
 
 function ed(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -298,7 +298,7 @@ class eb extends Chunk647438.PureComponent {
     });
     {
       if (require.features.has(Chunk981631.oNc.HUB) && !Chunk120356) return (0, Chunk951288.jsx)("div", {
-        className: Chunk500553.hubContainer,
+        className: Chunk971606.hubContainer,
         children: (0, Chunk951288.jsx)(Chunk258871.Z, {
           guild: require,
           channel: null != Chunk647438 ? Chunk647438 : Chunk984933.ZP.getDefaultChannel(require.id)
@@ -320,7 +320,7 @@ class eb extends Chunk647438.PureComponent {
       guild: t
     } = this.props;
     return (0, Chunk951288.jsxs)("nav", {
-      className: Chunk500553.container,
+      className: Chunk971606.container,
       onContextMenu: this.handleContextMenu,
       "aria-label": Chunk388032.intl.formatToPlainString(Chunk388032.t.nj5gAQ, {
         guildName: null != (e = null == exports ? true : exports.name) ? module : ""
@@ -373,7 +373,7 @@ class eb extends Chunk647438.PureComponent {
       null != t && (0, g.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("1806"), n.e("36599"), n.e("60962"), n.e("58175"), n.e("55616"), n.e("8271"), n.e("15851"), n.e("51453"), n.e("7654"), n.e("845"), n.e("8360"), n.e("6850"), n.e("58227"), n.e("54408"), n.e("90746"), n.e("70830"), n.e("87154"), n.e("33213"), n.e("8417")]).then(n.bind(n, 545135));
+        } = await Promise.all([n.e("1806"), n.e("36599"), n.e("60962"), n.e("58175"), n.e("55616"), n.e("8271"), n.e("15851"), n.e("51453"), n.e("7654"), n.e("845"), n.e("47463"), n.e("6850"), n.e("58227"), n.e("54408"), n.e("90746"), n.e("8106"), n.e("87154"), n.e("33213"), n.e("1289")]).then(n.bind(n, 545135));
         return n => (0, r.jsx)(e, ef(ep({}, n), {
           guild: t
         }))
@@ -400,7 +400,7 @@ class eb extends Chunk647438.PureComponent {
     }), ed(this, "renderMenuPopout", async () => {
       let {
         default: e
-      } = await Promise.all([n.e("87154"), n.e("41794")]).then(n.bind(n, 859432));
+      } = await Promise.all([n.e("87154"), n.e("45141")]).then(n.bind(n, 859432));
       return t => {
         let {
           closePopout: n

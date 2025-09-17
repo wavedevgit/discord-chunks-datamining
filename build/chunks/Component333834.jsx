@@ -1,4 +1,4 @@
-/** Chunk was on 71832 **/
+/** Chunk was on 11160 **/
 /** chunk id: 333834, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -28,9 +28,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk862149 = require("./862149.jsx"),
   Chunk982183 = require("./982183.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk997998 = require("./997998.js"),
+  Chunk677642 = require("./677642.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk763888 = require("./763888.js");
+  Chunk809946 = require("./809946.js");
 
 function w(e) {
   e.stopPropagation()
@@ -71,7 +71,7 @@ function R() {
     analyticsLocations: e
   } = (0, Chunk906732.ZP)(Chunk100527.Z.NOTIFICATIONS_INBOX);
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk763888.emptyStateContainer,
+    className: Chunk809946.emptyStateContainer,
     children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
       gap: 24,
       align: "center",
@@ -89,7 +89,7 @@ function R() {
           style: {
             textAlign: "center"
           },
-          children: Chunk388032.intl.string(Chunk997998.default["O+racX"])
+          children: Chunk388032.intl.string(Chunk677642.default["O+racX"])
         })]
       }), (0, Chunk951288.jsx)(Chunk755721.zx, {
         onClick: () => (0, Chunk370774.j4)(module),
@@ -97,7 +97,7 @@ function R() {
         style: {
           fontWeight: 600
         },
-        children: Chunk388032.intl.string(Chunk997998.default.klSpfn)
+        children: Chunk388032.intl.string(Chunk677642.default.klSpfn)
       })]
     })
   })
@@ -114,7 +114,7 @@ function D(e) {
     className: g,
     listName: I,
     ignoreGrouping: N = false
-  } = e, D = (0, _.fJ)(), M = i.useRef(null), L = (0, f.Z)(I, M), {
+  } = e, D = (0, _.fJ)(), L = i.useRef(null), M = (0, f.Z)(I, L), {
     entrypoint: k,
     notificationCenterVariant: U
   } = (0, y.pN)({
@@ -123,20 +123,20 @@ function D(e) {
     isLoading: G,
     isLoadingComplete: B,
     hasLoadedEver: V
-  } = (0, u.cj)([j.Z], () => ({
-    isLoading: j.Z.isLoading,
-    isLoadingComplete: j.Z.isLoadingComplete,
-    hasLoadedEver: j.Z.hasLoadedEver
+  } = (0, u.cj)([v.Z], () => ({
+    isLoading: v.Z.isLoading,
+    isLoadingComplete: v.Z.isLoadingComplete,
+    hasLoadedEver: v.Z.hasLoadedEver
   })), F = !V && G, {
     messageCategoryOpenStates: H,
     toggleOpenState: z
-  } = (0, v.Z)(), W = function() {
-    let e = (0, u.Wu)([j.Z], () => {
+  } = (0, j.Z)(), W = function() {
+    let e = (0, u.Wu)([v.Z], () => {
       var e;
-      return null != (e = j.Z.getNotifyingChannelIds()) ? e : []
+      return null != (e = v.Z.getNotifyingChannelIds()) ? e : []
     });
-    return (0, u.e7)([j.Z, m.ZP], () => {
-      let t = j.Z.getChannelInfoMap();
+    return (0, u.e7)([v.Z, m.ZP], () => {
+      let t = v.Z.getChannelInfoMap();
       for (let r of e) {
         var n;
         let e = t[r];
@@ -148,14 +148,14 @@ function D(e) {
   i.useEffect(() => {
     function e() {
       var e;
-      null == (e = M.current) || e.scrollPageUp({
+      null == (e = L.current) || e.scrollPageUp({
         animate: true
       })
     }
 
     function t() {
       var e;
-      null == (e = M.current) || e.scrollPageDown({
+      null == (e = L.current) || e.scrollPageDown({
         animate: true
       })
     }
@@ -165,7 +165,7 @@ function D(e) {
   }, []);
   let K = i.useCallback(() => {
       var e;
-      let t = null == (e = M.current) ? true : e.getScrollerState();
+      let t = null == (e = L.current) ? true : e.getScrollerState();
       if (null == t) return;
       let n = .5 * t.offsetHeight;
       t.scrollHeight - (t.scrollTop + t.offsetHeight) <= n && (null == l || l(S.X.USER_SCROLL))
@@ -232,7 +232,7 @@ function D(e) {
       messagesByCategory: n
     } = e, r = i.useRef(false), l = n.UNREAD.length > 0, {
       setOpenStateFromUnreads: o
-    } = (0, v.Z)();
+    } = (0, j.Z)();
     i.useEffect(() => {
       t || r.current || (o(l), r.current = true)
     }, [o, l, t])
@@ -243,7 +243,7 @@ function D(e) {
   let en = i.useCallback(() => {
     var e;
     let t = A.filter(e => H[e]).reduce((e, t) => e + Y[t].length, 0),
-      n = null == (e = M.current) ? true : e.getScrollerState();
+      n = null == (e = L.current) ? true : e.getScrollerState();
     return null == n ? 0 : Math.max(0, Math.ceil(n.offsetHeight / 64) - t)
   }, [H, Y]);
   i.useEffect(() => {
@@ -269,7 +269,7 @@ function D(e) {
     onDoubleClick: w,
     "aria-label": e["aria-label"],
     children: (0, r.jsx)(c.bG, {
-      navigator: L,
+      navigator: M,
       children: (0, r.jsx)(c.SJ, {
         children: e => {
           var t, n, {
@@ -310,7 +310,7 @@ function D(e) {
           }({
             ref: e => {
               var t;
-              M.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
+              L.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
             },
             className: o()(Z.messagesPopout, h),
             onScroll: K,

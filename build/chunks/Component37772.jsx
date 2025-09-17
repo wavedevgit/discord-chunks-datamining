@@ -1,4 +1,4 @@
-/** Chunk was on 71832 **/
+/** Chunk was on 11160 **/
 /** chunk id: 37772, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => B
@@ -37,8 +37,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk834129 = require("./834129.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk77162 = require("./77162.js"),
-  Chunk5898 = require("./5898.js");
+  Chunk378661 = require("./378661.js"),
+  Chunk360514 = require("./360514.js");
 
 function U(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -77,7 +77,7 @@ let B = Chunk647438.memo(function e(t) {
       channel: l,
       message: s,
       compact: R = false,
-      className: L,
+      className: M,
       onContextMenu: B,
       onClick: F,
       disableInteraction: H = false,
@@ -106,7 +106,7 @@ let B = Chunk647438.memo(function e(t) {
       allowLinks: true,
       previewLinkTarget: true
     }),
-    el = (0, j.ZP)(s),
+    el = (0, v.ZP)(s),
     eo = (0, a.e7)([g.Z], () => s.hasFlag(D.iLy.HAS_THREAD) && g.Z.getChannel(b.default.castMessageIdAsChannelId(s.id))),
     ea = s.type === D.uaV.THREAD_STARTER_MESSAGE && Y.state === f.Y.LOADED && null != q,
     es = !ea && true === i,
@@ -123,14 +123,14 @@ let B = Chunk647438.memo(function e(t) {
     message: Y.message,
     channel: q,
     hasThread: false
-  })) : (m.Z.isBlockedForMessage(s) ? i = M.t["+FcYMz"] : m.Z.isIgnoredForMessage(s) ? i = M.t.VFWjc3 : (0, _.DQ)(s) && W && (i = M.t.xfkfTE), true !== i) ? (0, r.jsx)(V, {
-    className: L,
+  })) : (m.Z.isBlockedForMessage(s) ? i = L.t["+FcYMz"] : m.Z.isIgnoredForMessage(s) ? i = L.t.VFWjc3 : (0, _.DQ)(s) && W && (i = L.t.xfkfTE), true !== i) ? (0, r.jsx)(V, {
+    className: M,
     compact: R,
     count: 1,
     collapsedReason: i
   }) : (0, r.jsx)(C.Z, {
     compact: R,
-    className: o()(L, {
+    className: o()(M, {
       [k.ephemeral]: (0, y.Pv)(s),
       [k.disableInteraction]: H,
       [k.groupStart]: t.isGroupStart
@@ -170,11 +170,11 @@ let B = Chunk647438.memo(function e(t) {
     onClick: F,
     hasThread: false !== z && null != eo && s.hasFlag(D.iLy.HAS_THREAD),
     hasReply: s.type === D.uaV.REPLY,
-    isSystemMessage: (0, v.Z)(s),
+    isSystemMessage: (0, j.Z)(s),
     messageRef: ec,
     author: el,
     "aria-labelledby": ef,
-    "aria-roledescription": M.intl.string(M.t.BAB0yM)
+    "aria-roledescription": L.intl.string(L.t.BAB0yM)
   })
 });
 
@@ -191,15 +191,15 @@ function V(e) {
     role: "group",
     childrenMessageContent: (0, r.jsx)(R.Z, {
       compact: i,
-      className: L.blockedSystemMessage,
+      className: M.blockedSystemMessage,
       iconNode: (0, r.jsx)(s.Dio, {
         size: "md",
         color: "currentColor",
-        className: L.blockedIcon
+        className: M.blockedIcon
       }),
       children: (0, r.jsx)("div", {
-        className: L.blockedMessageText,
-        children: M.intl.format(l, {
+        className: M.blockedMessageText,
+        children: L.intl.format(l, {
           count: n
         })
       })

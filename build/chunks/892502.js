@@ -1,0 +1,3 @@
+/** Chunk was on 53591 **/
+/** chunk id: 892502, original params: e (module,exports,require) **/
+module.exports = JSON.parse('{"+utqa2":["Option d\'arri\xe8re-plan des cadeaux\xa0: ",[1,"giftStyle"]],"B9XqQk":"Bo\xeete","AJ4iio":"G\xe2teau","P5keo6":"Coffre","w84vER":"Caf\xe9","6dCq/v":"Coupe","+HMF8v":"Nitroween","vd1fu7":"Bo\xeete hivernale","aubYGR":"G\xe2teau hivernal","vjxYqa":"Coffre hivernal","bHuJLS":"Caf\xe9 hivernal","M6cPwM":"Boule de neige","GzPel5":"Bo\xeete"}')

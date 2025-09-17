@@ -1,4 +1,4 @@
-/** Chunk was on 71832 **/
+/** Chunk was on 11160 **/
 /** chunk id: 178088, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   k: () => Z
@@ -24,12 +24,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk153209 = require("./153209.jsx"),
   Chunk903672 = require("./903672.jsx"),
   Chunk791914 = require("./791914.jsx"),
-  Chunk416018 = require("./416018.jsx"),
+  Chunk711165 = require("./711165.jsx"),
   Chunk946443 = require("./946443.jsx"),
   Chunk264233 = require("./264233.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk427998 = require("./427998.js");
+  Chunk253107 = require("./253107.js");
 
 function Z(e) {
   let {
@@ -43,8 +43,8 @@ function Z(e) {
     spacing: R,
     dialogClassName: D
   } = e, {
-    analyticsLocations: M
-  } = (0, p.ZP)(d.Z.NOTIFICATION_CENTER), [L, k] = i.useState(false), [U, G] = [(0, s.e7)([y.Z], () => {
+    analyticsLocations: L
+  } = (0, p.ZP)(d.Z.NOTIFICATION_CENTER), [M, k] = i.useState(false), [U, G] = [(0, s.e7)([y.Z], () => {
     var e, t;
     return null != (t = null == (e = y.Z.settings.inbox) ? true : e.currentTab) ? t : c.X.UNREADS
   }), i.useCallback(e => {
@@ -70,10 +70,10 @@ function Z(e) {
       setSeenTutorial: n
     }
   }(U), F = i.useCallback(() => {
-    k(false), L && (null == n || n())
-  }, [n, L]), H = i.useCallback(() => {
-    k(!L), L ? null == n || n() : null == t || t()
-  }, [n, t, L]);
+    k(false), M && (null == n || n())
+  }, [n, M]), H = i.useCallback(() => {
+    k(!M), M ? null == n || n() : null == t || t()
+  }, [n, t, M]);
   i.useEffect(() => (_.S.subscribe(P.CkL.TOGGLE_INBOX, H), () => void _.S.unsubscribe(P.CkL.TOGGLE_INBOX, H)), [H]);
   let {
     enabled: z,
@@ -95,14 +95,14 @@ function Z(e) {
       location: "ForYou"
     });
   return (0, r.jsx)(p.Gt, {
-    value: M,
+    value: L,
     children: (0, r.jsx)(u.yRy, {
       targetElementRef: A,
       animation: u.yRy.Animation.NONE,
       position: w,
       align: T,
       autoInvert: false,
-      shouldShow: L,
+      shouldShow: M,
       onRequestClose: F,
       renderPopout: function() {
         return (0, r.jsx)(u.VqE, {
@@ -119,7 +119,7 @@ function Z(e) {
                 badgeState: Z,
                 closePopout: F
               }),
-              children: U === c.X.FOR_YOU ? (0, r.jsx)(v.ZP, {}) : U === c.X.MENTIONS ? (0, r.jsx)(j.Z, {
+              children: U === c.X.FOR_YOU ? (0, r.jsx)(j.ZP, {}) : U === c.X.MENTIONS ? (0, r.jsx)(v.Z, {
                 onJump: q
               }) : Y && U === c.X.GAME_INVITES ? (0, r.jsx)(S.Z, {}) : z && W && U === c.X.BOOKMARKS ? (0, r.jsx)(m.K, {
                 closePopout: F

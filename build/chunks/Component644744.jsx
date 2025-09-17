@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk490529 = require("./490529.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk271363 = require("./271363.js");
+  Chunk134840 = require("./134840.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -37,14 +37,14 @@ function p(e) {
   return e
 }
 let h = {
-    [Chunk981631.gkr.HOUSE_1]: Chunk271363.membershipDialogHouse1,
-    [Chunk981631.gkr.HOUSE_2]: Chunk271363.membershipDialogHouse2,
-    [Chunk981631.gkr.HOUSE_3]: Chunk271363.membershipDialogHouse3
+    [Chunk981631.gkr.HOUSE_1]: Chunk134840.membershipDialogHouse1,
+    [Chunk981631.gkr.HOUSE_2]: Chunk134840.membershipDialogHouse2,
+    [Chunk981631.gkr.HOUSE_3]: Chunk134840.membershipDialogHouse3
   },
   m = {
-    [Chunk981631.gkr.HOUSE_1]: Chunk271363.houseLogoHouse1,
-    [Chunk981631.gkr.HOUSE_2]: Chunk271363.__invalid_houseLogoHouse2,
-    [Chunk981631.gkr.HOUSE_3]: Chunk271363.__invalid_houseLogoHouse3
+    [Chunk981631.gkr.HOUSE_1]: Chunk134840.houseLogoHouse1,
+    [Chunk981631.gkr.HOUSE_2]: Chunk134840.__invalid_houseLogoHouse2,
+    [Chunk981631.gkr.HOUSE_3]: Chunk134840.__invalid_houseLogoHouse3
   },
   g = {
     [Chunk981631.gkr.HOUSE_1]: require("./246300.js"),
@@ -69,42 +69,42 @@ class b extends Chunk647438.Component {
         houseName: (0, Chunk490529.X8)(module)
       });
       return (0, Chunk951288.jsx)("div", {
-        className: o()(Chunk271363.membershipDialog, h[module]),
+        className: o()(Chunk134840.membershipDialog, h[module]),
         children: (0, Chunk951288.jsxs)("div", {
-          className: Chunk271363.membershipDialogContent,
+          className: Chunk134840.membershipDialogContent,
           children: [(0, Chunk951288.jsxs)(Chunk600164.Z, {
             children: [(0, Chunk951288.jsxs)(Chunk600164.Z.Child, {
               grow: 1,
               shrink: 1,
               children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
-                className: Chunk271363.membershipDialogHeading,
+                className: Chunk134840.membershipDialogHeading,
                 variant: "text-xs/bold",
                 children: Chunk388032.intl.string(Chunk388032.t.KZoEIy)
               }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
-                className: Chunk271363.membershipDialogHouseName,
+                className: Chunk134840.membershipDialogHouseName,
                 variant: "heading-sm/semibold",
                 children: exports
               }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-                className: Chunk271363.membershipDialogHouseDescription,
+                className: Chunk134840.membershipDialogHouseDescription,
                 variant: "text-md/normal",
                 children: E(module)
               })]
             }), (0, Chunk951288.jsx)(Chunk600164.Z.Child, {
-              className: Chunk271363.houseLogoWrapper,
+              className: Chunk134840.houseLogoWrapper,
               grow: 0,
               shrink: 0,
               wrap: true,
               children: (0, Chunk951288.jsx)("img", {
-                className: o()(Chunk271363.houseLogo, m[module]),
+                className: o()(Chunk134840.houseLogo, m[module]),
                 src: g[module],
                 alt: exports
               })
             })]
           }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
-            className: Chunk271363.membershipDialogSwitchHouses,
+            className: Chunk134840.membershipDialogSwitchHouses,
             variant: "text-md/normal",
             children: [Chunk388032.intl.string(Chunk388032.t.zD3mqK), (0, Chunk951288.jsx)(Chunk481060.P3F, {
-              className: Chunk271363.membershipDialogSwitchHousesAction,
+              className: Chunk134840.membershipDialogSwitchHousesAction,
               onClick: this.handleJoinHypeSquadClick,
               tag: "span",
               children: Chunk388032.intl.string(Chunk388032.t.LzBgrq)
@@ -114,9 +114,9 @@ class b extends Chunk647438.Component {
       })
     }
     return (0, Chunk951288.jsxs)("div", {
-      className: Chunk271363.joinCTAWrapper,
+      className: Chunk134840.joinCTAWrapper,
       children: [(0, Chunk951288.jsxs)(Chunk600164.Z, {
-        className: Chunk271363.joinCTA,
+        className: Chunk134840.joinCTA,
         align: Chunk600164.Z.Align.CENTER,
         justify: Chunk600164.Z.Justify.CENTER,
         direction: Chunk600164.Z.Direction.HORIZONTAL,
@@ -137,7 +137,7 @@ class b extends Chunk647438.Component {
           })
         })]
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-        className: Chunk271363.newsletterWarning,
+        className: Chunk134840.newsletterWarning,
         variant: "text-sm/normal",
         children: Chunk388032.intl.string(Chunk388032.t["3kUvgo"])
       })]

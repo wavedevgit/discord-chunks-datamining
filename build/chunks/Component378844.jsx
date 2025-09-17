@@ -1,4 +1,4 @@
-/** Chunk was on 71832 **/
+/** Chunk was on 11160 **/
 /** chunk id: 378844, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   R: () => y,
@@ -18,7 +18,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk815660 = require("./815660.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk434652 = require("./434652.js");
+  Chunk36973 = require("./36973.js");
 
 function O(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -45,13 +45,13 @@ let _ = e => {
     guildId: r,
     closePopout: y
   } = e, _ = (0, u.Dt)(), {
-    notClaimed: v,
-    notEmailVerified: j,
+    notClaimed: j,
+    notEmailVerified: v,
     notPhoneVerified: x,
     newAccount: C,
     newMember: E
   } = (0, l.e7)([p.Z], () => p.Z.getCheck(r), [r]), S = 0 === t ? m.intl.string(m.t["6zY8BA"]) : null, P = null, I = null;
-  return (0 === t && (v ? (P = m.intl.string(m.t.IRxUlJ), I = m.intl.string(m.t.fiNVio)) : x ? (P = m.intl.string(m.t.vW8iUF), I = m.intl.string(m.t["50gfOj"])) : j ? (P = m.intl.string(m.t.vdSOp6), I = m.intl.string(m.t.lm1UKi)) : E ? (P = m.intl.formatToPlainString(m.t.v1ktYW, {
+  return (0 === t && (j ? (P = m.intl.string(m.t.IRxUlJ), I = m.intl.string(m.t.fiNVio)) : x ? (P = m.intl.string(m.t.vW8iUF), I = m.intl.string(m.t["50gfOj"])) : v ? (P = m.intl.string(m.t.vdSOp6), I = m.intl.string(m.t.lm1UKi)) : E ? (P = m.intl.formatToPlainString(m.t.v1ktYW, {
     min: h.YeM.MEMBER_AGE
   }), I = m.intl.string(m.t.BddRzc)) : C && (P = m.intl.formatToPlainString(m.t["sncw4+"], {
     min: h.YeM.ACCOUNT_AGE
@@ -81,7 +81,7 @@ let _ = e => {
             variant: "primary",
             text: I,
             onClick: () => {
-              v ? c.j() : x ? (0, a.ZDy)(async () => {
+              j ? c.j() : x ? (0, a.ZDy)(async () => {
                 let {
                   default: e
                 } = await Promise.resolve().then(n.bind(n, 607018));
@@ -90,7 +90,7 @@ let _ = e => {
                 }, t))
               }, {
                 modalKey: g.M
-              }) : j && (s.Z.verifyResend(), (0, a.h7j)(e => {
+              }) : v && (s.Z.verifyResend(), (0, a.h7j)(e => {
                 var t, n, r;
                 return (0, i.jsx)(a.ConfirmModal, (n = O({
                   header: m.intl.string(m.t.LykQYm),
@@ -116,7 +116,7 @@ let _ = e => {
               })), y()
             }
           })
-        }) : null, v || x || j ? (0, i.jsx)(o.zx, {
+        }) : null, j || x || v ? (0, i.jsx)(o.zx, {
           onClick: y,
           look: o.zx.Looks.BLANK,
           className: b.cancel,

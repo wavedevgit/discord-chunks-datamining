@@ -1,4 +1,4 @@
-/** Chunk was on 71832 **/
+/** Chunk was on 11160 **/
 /** chunk id: 946443, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   QP: () => N,
@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk809780 = require("./809780.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk77902 = require("./77902.js");
+  Chunk915087 = require("./915087.js");
 
 function S(e) {
   var t, n, l, a, y, S, I;
@@ -36,9 +36,9 @@ function S(e) {
     showTutorial: Z,
     setSeenTutorial: w,
     closePopout: T
-  } = e, A = i.useRef(null), [R, D] = (0, j.ZP)(A), {
-    loadState: M,
-    channels: L
+  } = e, A = i.useRef(null), [R, D] = (0, v.ZP)(A), {
+    loadState: L,
+    channels: M
   } = R, {
     maybeLoadMore: k
   } = D, U = (0, u.e7)([h.Z], () => h.Z.messageGroupSpacing);
@@ -88,7 +88,7 @@ function S(e) {
     b.S.unsubscribe(x.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead)
   }));
   let G = (0, g.Z)("unreads", A);
-  if (0 === L.length) {
+  if (0 === M.length) {
     return (0, r.jsx)(_.Z, {
       Icon: d.xx7,
       header: C.intl.string(C.t["6XMM+P"]),
@@ -140,11 +140,11 @@ function S(e) {
             A.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
           }
         }, l), n = n = {
-          onScroll: M === j.jd.Done ? true : k,
+          onScroll: L === v.jd.Done ? true : k,
           className: o()(E.scroller, "group-spacing-".concat(U)),
           children: [Z ? (0, r.jsx)(P, {
             setSeenTutorial: w
-          }) : null, (0, v.Z)(L, D, N), M === j.jd.Done ? null : (0, r.jsx)(d.$jN, {
+          }) : null, (0, j.Z)(M, D, N), L === v.jd.Done ? null : (0, r.jsx)(d.$jN, {
             className: E.spinner
           })]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

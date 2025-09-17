@@ -11,41 +11,41 @@ var Chunk120356 = require("./120356.js"),
   Chunk526167 = require("./526167.js"),
   Chunk594928 = require("./594928.js"),
   Chunk181430 = require("./181430.js"),
-  Chunk62222 = require("./62222.js"),
-  Chunk677970 = require("./677970.js");
+  Chunk693450 = require("./693450.js"),
+  Chunk806539 = require("./806539.js");
 let d = {
-    name: Chunk62222.default.ZEL6m5,
+    name: Chunk693450.default.ZEL6m5,
     className: ""
   },
   f = {
     [Chunk342905.C.DEFAULT]: d,
     [Chunk342905.C.CHERRY_BOMB]: {
-      name: Chunk62222.default.rN7cub,
-      className: Chunk677970.cherryBomb
+      name: Chunk693450.default.rN7cub,
+      className: Chunk806539.cherryBomb
     },
     [Chunk342905.C.CHICLE]: {
-      name: Chunk62222.default.CbHHnJ,
-      className: Chunk677970.chicle
+      name: Chunk693450.default.CbHHnJ,
+      className: Chunk806539.chicle
     },
     [Chunk342905.C.MUSEO_MODERNO]: {
-      name: Chunk62222.default.iEcEKC,
-      className: Chunk677970.museoModerno
+      name: Chunk693450.default.iEcEKC,
+      className: Chunk806539.museoModerno
     },
     [Chunk342905.C.NEO_CASTEL]: {
-      name: Chunk62222.default.DL7jLS,
-      className: Chunk677970.neoCastel
+      name: Chunk693450.default.DL7jLS,
+      className: Chunk806539.neoCastel
     },
     [Chunk342905.C.PIXELIFY]: {
-      name: Chunk62222.default.jq4aRk,
-      className: Chunk677970.pixelify
+      name: Chunk693450.default.jq4aRk,
+      className: Chunk806539.pixelify
     },
     [Chunk342905.C.SINISTRE]: {
-      name: Chunk62222.default.jV9DNz,
-      className: Chunk677970.sinistre
+      name: Chunk693450.default.jV9DNz,
+      className: Chunk806539.sinistre
     },
     [Chunk342905.C.ZILLA_SLAB]: {
-      name: Chunk62222.default.KMR8ra,
-      className: Chunk677970.zillaSlab
+      name: Chunk693450.default.KMR8ra,
+      className: Chunk806539.zillaSlab
     }
   };
 

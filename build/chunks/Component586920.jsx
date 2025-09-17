@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk594135 = require("./594135.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk607993 = require("./607993.js"),
+  Chunk950728 = require("./950728.js"),
   Chunk997892 = require("./997892.js"),
   Chunk234286 = require("./234286.js");
 let g = () => {
@@ -54,7 +54,7 @@ let g = () => {
       actions: A,
       onClose: async () => exports(),
       children: (0, Chunk951288.jsx)("div", {
-        className: Chunk607993.offerDetailContainer,
+        className: Chunk950728.offerDetailContainer,
         children: (0, Chunk951288.jsx)(Chunk10508.o, {
           offerState: Chunk10508.w.APPLIED,
           userDiscountOffer: E

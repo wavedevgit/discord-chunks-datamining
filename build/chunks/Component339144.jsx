@@ -1,4 +1,4 @@
-/** Chunk was on 71832 **/
+/** Chunk was on 11160 **/
 /** chunk id: 339144, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   J: () => B,
@@ -38,7 +38,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk921944 = require("./921944.js"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk239249 = require("./239249.js");
+  Chunk258628 = require("./258628.js");
 
 function k(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -112,14 +112,14 @@ let B = Chunk647438.memo(function(e) {
           action_type: "invite_to_game",
           game_id: null != (e = null == Y ? true : Y.id) ? e : null,
           application_id: X.application_id
-        }), (0, v.v)(ee, v.d.INVITE), Z.default.track(A.rMx.OPEN_MODAL, {
+        }), (0, j.v)(ee, j.d.INVITE), Z.default.track(A.rMx.OPEN_MODAL, {
           type: "Send Join Invite",
           application_id: X.application_id,
           location: J.location
         }), (0, p.h7)(X, false)
       }, [X, J, ee, Y]),
       ei = i.useCallback((e, t) => () => {
-        (0, v.v)(ee, v.d.LEAVE_ACTIVITY), O.Z.leaveActivity({
+        (0, j.v)(ee, j.d.LEAVE_ACTIVITY), O.Z.leaveActivity({
           location: t,
           applicationId: e,
           showFeedback: true
@@ -175,13 +175,13 @@ let B = Chunk647438.memo(function(e) {
         }
       }),
       eg = (null != Y || null == q || (0, g.R)()) && (z || F) ? (z ? (t = false, l = () => {
-        el(), (0, v.v)(ee, v.d.STREAM, false)
-      }, a = d.g5r, m = M.intl.string(M.t.S5anIS)) : K ? (t = false, l = () => {
-        eo(), (0, v.v)(ee, v.d.STREAM, true)
-      }, a = d.hGI, m = null != Y ? M.intl.formatToPlainString(M.t.AB5gT0, {
+        el(), (0, j.v)(ee, j.d.STREAM, false)
+      }, a = d.g5r, m = L.intl.string(L.t.S5anIS)) : K ? (t = false, l = () => {
+        eo(), (0, j.v)(ee, j.d.STREAM, true)
+      }, a = d.hGI, m = null != Y ? L.intl.formatToPlainString(L.t.AB5gT0, {
         game: Y.name
-      }) : M.intl.string(M.t.FeUKeH)) : (t = true, l = null, a = d.hGI, m = null != W && (0, I.vd)(W.type) ? M.intl.string(M.t.uQn9Bw) : null != H ? M.intl.string(M.t.fBXEoK) : M.intl.string(M.t.n3feND)), (0, r.jsx)("div", {
-        className: L.panelButtonContainer,
+      }) : L.intl.string(L.t.FeUKeH)) : (t = true, l = null, a = d.hGI, m = null != W && (0, I.vd)(W.type) ? L.intl.string(L.t.uQn9Bw) : null != H ? L.intl.string(L.t.fBXEoK) : L.intl.string(L.t.n3feND)), (0, r.jsx)("div", {
+        className: M.panelButtonContainer,
         children: (0, r.jsx)(T.Z, {
           tooltipText: m,
           disabled: t,
@@ -191,16 +191,16 @@ let B = Chunk647438.memo(function(e) {
       })) : null,
       em = en && null == q ? (0, r.jsx)(T.Z, {
         ref: es,
-        tooltipText: M.intl.string(M.t["hC/Ze3"]),
+        tooltipText: L.intl.string(L.t["hC/Ze3"]),
         onClick: er,
         icon: d.ejJ
       }) : null,
       eb = null == q ? null : (0, r.jsx)(T.Z, {
-        tooltipText: M.intl.string(M.t["R/FK4O"]),
+        tooltipText: L.intl.string(L.t["R/FK4O"]),
         onClick: ei(q.applicationId, q.location),
         icon: d.PBZ
       }),
-      eO = null == B ? null : (0, r.jsx)(j.Z, {}),
+      eO = null == B ? null : (0, r.jsx)(v.Z, {}),
       ey = ef && ec && !ed ? (0, r.jsx)(V, {
         runningGame: Y,
         startAuthorization: eu,
@@ -213,14 +213,14 @@ let B = Chunk647438.memo(function(e) {
         icon: d.xhG
       }) : null,
       {
-        isQuestBarEmpty: ev,
-        hasLoadedQuestBar: ej
+        isQuestBarEmpty: ej,
+        hasLoadedQuestBar: ev
       } = (0, P.Ws)({
         location: D.dr.CONFLICT_CHECKS
       }),
       ex = (() => {
         let e = [],
-          t = !ej || !ev;
+          t = !ev || !ej;
         return en && ed && ef && !t && e.push(s.z.ACCOUNT_LINK_INVITE_FRIENDS), ef && ec && !ed && !t && null != Q && e.push(s.z.ACCOUNT_LINK_PROMPT), (0, r.jsx)(x.ZP, {
           contentTypes: e,
           groupName: R.R.ACCOUNT_NAME_ZONE,
@@ -230,8 +230,8 @@ let B = Chunk647438.memo(function(e) {
               markAsDismissed: n
             } = e;
             return t === s.z.ACCOUNT_LINK_INVITE_FRIENDS ? (0, r.jsx)(u.J2, {
-              title: M.intl.string(M.t["0l2pEh"]),
-              body: M.intl.string(M.t.DSZUKy),
+              title: L.intl.string(L.t["0l2pEh"]),
+              body: L.intl.string(L.t.DSZUKy),
               targetElementRef: es,
               align: "right",
               shouldShow: true,
@@ -240,7 +240,7 @@ let B = Chunk647438.memo(function(e) {
                 align: "end"
               },
               actions: [{
-                text: M.intl.string(M.t.YdkBCA),
+                text: L.intl.string(L.t.YdkBCA),
                 onClick: () => {
                   n(R.L.TAKE_ACTION), er()
                 }
@@ -253,10 +253,10 @@ let B = Chunk647438.memo(function(e) {
                   application: Q
                 }
               },
-              title: M.intl.formatToPlainString(M.t["lo6H6+"], {
+              title: L.intl.formatToPlainString(L.t["lo6H6+"], {
                 gameName: Q.name
               }),
-              body: M.intl.string(M.t.qYAzOj),
+              body: L.intl.string(L.t.qYAzOj),
               targetElementRef: eh,
               align: "right",
               shouldShow: true,
@@ -266,7 +266,7 @@ let B = Chunk647438.memo(function(e) {
                 align: "end"
               },
               actions: [{
-                text: M.intl.string(M.t.lw71NT),
+                text: L.intl.string(L.t.lw71NT),
                 onClick: () => {
                   n(R.L.TAKE_ACTION), eu()
                 }
@@ -276,7 +276,7 @@ let B = Chunk647438.memo(function(e) {
         })
       })();
     return null == eg && null == em && null == eb && null == ey && null == e_ ? null : (0, r.jsxs)("div", {
-      className: L.actions,
+      className: M.actions,
       children: [null != ey ? ey : em, eg, null != eb ? eb : eO, ex, e_]
     })
   }),
@@ -297,6 +297,6 @@ let B = Chunk647438.memo(function(e) {
         }), i()
       },
       icon: a.u,
-      tooltipText: M.intl.string(M.t.sbdnp6)
+      tooltipText: L.intl.string(L.t.sbdnp6)
     })
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 71832 **/
+/** Chunk was on 11160 **/
 /** chunk id: 424785, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => q
@@ -42,8 +42,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk647086 = require("./647086.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk33082 = require("./33082.js"),
-  Chunk783499 = require("./783499.js");
+  Chunk55940 = require("./55940.js"),
+  Chunk556295 = require("./556295.js");
 
 function H(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -99,11 +99,11 @@ class K extends Chunk98597.ZP {
       sortingPosition: t,
       isUserOver: n
     } = this.props;
-    if (require) return Chunk33082.containerUserOver;
+    if (require) return Chunk55940.containerUserOver;
     if (null != exports)
-      if (module > exports) return Chunk33082.containerDragAfter;
-      else return Chunk33082.containerDragBefore;
-    return Chunk33082.containerDefault
+      if (module > exports) return Chunk55940.containerDragAfter;
+      else return Chunk55940.containerDragBefore;
+    return Chunk55940.containerDefault
   }
   renderVoiceUsers() {
     let {
@@ -145,10 +145,10 @@ class K extends Chunk98597.ZP {
       mentionCount: y,
       isFavoriteSuggestion: _
     } = this.props, {
-      shouldShowGuildVerificationPopout: v
-    } = this.state, j = this.getVoiceStatesCount(), x = (0, Chunk951288.jsxs)("li", {
+      shouldShowGuildVerificationPopout: j
+    } = this.state, v = this.getVoiceStatesCount(), x = (0, Chunk951288.jsxs)("li", {
       className: o()(this.getModeClass(), {
-        [Chunk33082.disabled]: this.isDisabled()
+        [Chunk55940.disabled]: this.isDisabled()
       }),
       "data-dnd-name": module.name,
       children: [(0, Chunk951288.jsx)(Chunk481060.yRy, {
@@ -179,7 +179,7 @@ class K extends Chunk98597.ZP {
               }
               return i
             }(l, ["onClick", "onContextMenu"]);
-            return (0, r.jsxs)(L.ZP, W(z({
+            return (0, r.jsxs)(M.ZP, W(z({
               ref: this.channelItemRef,
               className: V.iconVisibility,
               iconClassName: o()({
@@ -205,7 +205,7 @@ class K extends Chunk98597.ZP {
                 channel: e,
                 unread: b,
                 mentionCount: y,
-                userCount: j,
+                userCount: v,
                 isSubscriptionGated: g,
                 needSubscriptionToAccess: m
               })
@@ -337,10 +337,10 @@ function q(e) {
       bypassLimit: Z.Z.can(U.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), p = (0, a.e7)([S.Z], () => S.Z.isCollapsed(n.parent_id)), f = (0, E.ZP)(n.id), h = (0, a.e7)([x.Z], () => x.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, v.Rk)(n.id, j.pV.AUDIENCE), {
+  }), p = (0, a.e7)([S.Z], () => S.Z.isCollapsed(n.parent_id)), f = (0, E.ZP)(n.id), h = (0, a.e7)([x.Z], () => x.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, j.Rk)(n.id, v.pV.AUDIENCE), {
     isSubscriptionGated: m,
     needSubscriptionToAccess: O
-  } = (0, b.Z)(n.id), y = (0, a.e7)([T.ZP], () => T.ZP.isFavorite(t.id, n.id)), _ = (0, C.xJ)(n.id), I = (0, M.Z)({
+  } = (0, b.Z)(n.id), y = (0, a.e7)([T.ZP], () => T.ZP.isFavorite(t.id, n.id)), _ = (0, C.xJ)(n.id), I = (0, L.Z)({
     channel: n,
     isChannelSelected: false,
     isChannelCollapsed: o,

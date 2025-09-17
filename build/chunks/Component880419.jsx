@@ -1,9 +1,9 @@
-/** Chunk was on 71832 **/
+/** Chunk was on 11160 **/
 /** chunk id: 880419, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Po: () => y,
   RD: () => O,
-  ZP: () => v
+  ZP: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,9 +15,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk973772 = require("./973772.js"),
   Chunk279604 = require("./279604.jsx"),
   Chunk535396 = require("./535396.js"),
-  Chunk258640 = require("./258640.js"),
+  Chunk989308 = require("./989308.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk123879 = require("./123879.js");
+  Chunk362320 = require("./362320.js");
 
 function m(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -117,14 +117,14 @@ function _(e) {
   })
 }
 
-function v(e) {
+function j(e) {
   var {
     guildId: t,
     powerup: n,
     compact: l,
     iconSize: y,
-    onError: v
-  } = e, j = function(e, t) {
+    onError: j
+  } = e, v = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -149,8 +149,8 @@ function v(e) {
     reason: N
   } = (0, c.Z)(t, n, P);
   return i.useEffect(() => {
-    null == v || v(E)
-  }, [E, v]), (0, r.jsx)(s.ua7, {
+    null == j || j(E)
+  }, [E, j]), (0, r.jsx)(s.ua7, {
     delay: 100,
     "aria-label": null != N ? N : P ? h.intl.string(f.default.TZsu1d) : true,
     text: null != N ? N : P ? (0, r.jsx)(_, {
@@ -161,14 +161,14 @@ function v(e) {
       className: g.secondaryButton,
       innerClassName: g.buttonInner,
       wrapperClassName: o()(g.secondaryButton, {
-        [g.buttonWrapper]: true === j.grow
+        [g.buttonWrapper]: true === v.grow
       }),
       color: P ? a.Tt.PRIMARY : a.Tt.BRAND,
       "aria-label": h.intl.string(P ? f.default.TZsu1d : f.default.gSxlHR),
       disabled: I,
       onClick: P ? S : x,
       submitting: C
-    }), j), {
+    }), v), {
       children: (0, r.jsx)(O, {
         cost: n.cost,
         isActive: P,

@@ -1,4 +1,4 @@
-/** Chunk was on 71832 **/
+/** Chunk was on 11160 **/
 /** chunk id: 55185, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   I: () => w,
@@ -17,12 +17,12 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk316496 = require("./316496.js"),
   Chunk223730 = require("./223730.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk893867 = require("./893867.js"),
+  Chunk933554 = require("./933554.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk515438 = require("./515438.js"),
+  Chunk87587 = require("./87587.js"),
   Chunk273701 = require("./273701.js");
 
-function v(e) {
+function j(e) {
   let {
     closePopout: t
   } = e;
@@ -43,7 +43,7 @@ function v(e) {
   })
 }
 
-function j(e) {
+function v(e) {
   let {
     showCurrentGame: t,
     shouldShowStatus: n = false,
@@ -139,7 +139,7 @@ function C(e) {
       })
     }), (0, i.jsx)("div", {
       className: y.toggleContainerWrapper,
-      children: (0, i.jsx)(j, {
+      children: (0, i.jsx)(v, {
         showCurrentGame: n,
         shouldShowCustomizeLink: true,
         closePopout: t
@@ -161,7 +161,7 @@ function E(e) {
       children: O.intl.format(b.default["vtp/IS"], {
         learnMoreLink: f.Z.getArticleURL(m.BhN.ACTIVITY_STATUS_SETTINGS)
       })
-    }), (0, i.jsx)(v, {
+    }), (0, i.jsx)(j, {
       closePopout: t
     })]
   })
@@ -182,7 +182,7 @@ function S(e) {
       })
     }), (0, i.jsx)("div", {
       className: y.toggleContainerWrapper,
-      children: (0, i.jsx)(j, {
+      children: (0, i.jsx)(v, {
         showCurrentGame: n,
         shouldShowStatus: true,
         closePopout: t
@@ -198,7 +198,7 @@ function P(e) {
     showLinkToSettings: r
   } = (0, h.D)("popout");
   return (0, i.jsxs)(x, {
-    children: [(0, i.jsx)(j, {
+    children: [(0, i.jsx)(v, {
       showCurrentGame: n,
       closePopout: t
     }), (0, i.jsx)(c.$i$, {
@@ -231,7 +231,7 @@ function I(e) {
       children: O.intl.format(b.default["vtp/IS"], {
         learnMoreLink: f.Z.getArticleURL(m.BhN.ACTIVITY_STATUS_SETTINGS)
       })
-    }), (0, i.jsx)(v, {
+    }), (0, i.jsx)(j, {
       closePopout: t
     })]
   })
@@ -244,7 +244,7 @@ function N(e) {
     showLinkToSettings: r
   } = (0, h.D)("popout");
   return (0, i.jsxs)(x, {
-    children: [(0, i.jsx)(j, {
+    children: [(0, i.jsx)(v, {
       showCurrentGame: n,
       shouldShowStatus: true,
       closePopout: t

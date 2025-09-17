@@ -1,4 +1,4 @@
-/** Chunk was on 71832 **/
+/** Chunk was on 11160 **/
 /** chunk id: 836697, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk179809 = require("./179809.jsx"),
   Chunk588275 = require("./588275.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk933154 = require("./933154.js");
+  Chunk264096 = require("./264096.js");
 
 function y(e) {
   let {
@@ -107,7 +107,7 @@ function y(e) {
 function _(e) {
   let {
     onActivate: t
-  } = e, [n, _] = i.useState(false), v = (0, l.e7)([d.Z], () => d.Z.getGuildId()), j = (0, l.e7)([u.Z], () => u.Z.hasFetchedRequestToJoinGuilds), x = (0, h.Z)(), C = (0, a.Z)(v), E = i.useMemo(() => {
+  } = e, [n, _] = i.useState(false), j = (0, l.e7)([d.Z], () => d.Z.getGuildId()), v = (0, l.e7)([u.Z], () => u.Z.hasFetchedRequestToJoinGuilds), x = (0, h.Z)(), C = (0, a.Z)(j), E = i.useMemo(() => {
     let e = (0, f.qQ)({
       folderId: p.S.PENDING_JOIN_REQUESTS_FOLDER,
       folderName: b.intl.string(b.t["scsU+v"]),
@@ -118,12 +118,12 @@ function _(e) {
     return e
   }, [x, n]);
   i.useEffect(() => {
-    n && !j && s.Z.fetchRequestToJoinGuilds()
-  }, [n, j]);
-  let S = null != v && x.includes(v);
+    n && !v && s.Z.fetchRequestToJoinGuilds()
+  }, [n, v]);
+  let S = null != j && x.includes(j);
   return (i.useEffect(() => {
-    !n && S && C !== v && _(true)
-  }, [n, S, C, v]), 0 === x.length) ? null : (0, r.jsx)(y, {
+    !n && S && C !== j && _(true)
+  }, [n, S, C, j]), 0 === x.length) ? null : (0, r.jsx)(y, {
     onActivate: t,
     children: (0, r.jsx)(g.Z, {
       folderNode: E,

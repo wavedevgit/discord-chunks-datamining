@@ -1,4 +1,4 @@
-/** Chunk was on 71832 **/
+/** Chunk was on 11160 **/
 /** chunk id: 315174, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => R,
@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk647086 = require("./647086.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk228451 = require("./228451.js");
+  Chunk869786 = require("./869786.js");
 
 function C(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -107,7 +107,7 @@ function P(e) {
   } = n.springs, c = t.features.has(_.oNc.DISCOVERABLE), d = (0, r.jsx)("div", {
     className: x.communityInfo,
     children: c && (0, r.jsx)(u.ua7, {
-      text: j.intl.string(j.t.O8lDIy),
+      text: v.intl.string(v.t.O8lDIy),
       position: "right",
       children: e => (0, r.jsxs)("div", E(C({
         className: x.communityInfoPill
@@ -121,7 +121,7 @@ function P(e) {
         }), (0, r.jsx)(u.Text, {
           variant: "text-xs/normal",
           color: "none",
-          children: j.intl.string(j.t["B/vjCg"])
+          children: v.intl.string(v.t["B/vjCg"])
         })]
       }))
     })
@@ -144,7 +144,7 @@ function I() {
   return (0, Chunk951288.jsx)(Chunk481060.r7p, {
     size: "custom",
     color: "currentColor",
-    className: Chunk228451.favoritesIcon,
+    className: Chunk869786.favoritesIcon,
     height: 20,
     width: 20
   })
@@ -187,7 +187,7 @@ function w(e) {
     children: [(0, r.jsx)(y.Z, {
       guild: i,
       isBannerVisible: n
-    }), i.id === v._ && (0, r.jsx)(I, {}), (0, r.jsx)(Z, {
+    }), i.id === j._ && (0, r.jsx)(I, {}), (0, r.jsx)(Z, {
       guild: i
     }), null != l && (0, r.jsx)(u.P3F, {
       className: x.headerButton,
@@ -199,7 +199,7 @@ function w(e) {
         ringTarget: c,
         offset: 4
       },
-      "aria-label": j.intl.formatToPlainString(j.t.xMXpl5, {
+      "aria-label": v.intl.formatToPlainString(v.t.xMXpl5, {
         guildName: null != (t = null == i ? true : i.name) ? t : ""
       })
     }), (0, r.jsx)("div", {
@@ -224,7 +224,7 @@ function A(e) {
     b ? (0, u.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("7654"), n.e("87379")]).then(n.bind(n, 560114));
+      } = await Promise.all([n.e("7654"), n.e("62292")]).then(n.bind(n, 560114));
       return t => (0, r.jsx)(e, E(C({}, t), {
         guild: o,
         source: _.t4x.GUILD_HEADER_INVITE_BUTTON
@@ -239,7 +239,7 @@ function A(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(u.P3F, {
       className: x.guildDropdown,
-      "aria-label": j.intl.formatToPlainString(j.t.xMXpl5, {
+      "aria-label": v.intl.formatToPlainString(v.t.xMXpl5, {
         guildName: null != (t = null == o ? true : o.name) ? t : ""
       }),
       "aria-controls": d,
@@ -251,7 +251,7 @@ function A(e) {
         children: [(0, r.jsx)(y.Z, {
           guild: o,
           isBannerVisible: l
-        }), o.id === v._ && (0, r.jsx)(I, {}), (0, r.jsx)(Z, {
+        }), o.id === j._ && (0, r.jsx)(I, {}), (0, r.jsx)(Z, {
           guild: o
         })]
       }), (0, r.jsx)("div", {
@@ -259,7 +259,7 @@ function A(e) {
         children: g
       })]
     }), !T.includes(o.id) && (0, r.jsx)(u.ua7, {
-      text: j.intl.string(j.t.Sd8Ix8),
+      text: v.intl.string(v.t.Sd8Ix8),
       position: "bottom",
       children: e => (0, r.jsx)(u.P3F, E(C({
         className: x.inviteButton
@@ -287,15 +287,15 @@ let R = Chunk647438.memo(function(e) {
     onMouseDown: h,
     disableBannerAnimation: m,
     "aria-expanded": y,
-    "aria-controls": v,
-    guild: j,
+    "aria-controls": j,
+    guild: v,
     guildBanner: I,
     animationOverlayHeight: N,
     children: Z,
     headerClassName: T,
     communityInfoVisible: R,
-    hasSubheader: M
-  } = e, L = j.features.has(_.oNc.ANIMATED_BANNER), k = (0, d.Z)(j), U = !k && (0, O.Z)(j), G = !k && R, B = (0, b.xR)(I) && L && !m, [V, F] = i.useState(false), H = i.useRef(false), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(true), Y = g.QK.getSetting();
+    hasSubheader: L
+  } = e, M = v.features.has(_.oNc.ANIMATED_BANNER), k = (0, d.Z)(v), U = !k && (0, O.Z)(v), G = !k && R, B = (0, b.xR)(I) && M && !m, [V, F] = i.useState(false), H = i.useRef(false), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(true), Y = g.QK.getSetting();
   i.useEffect(() => {
     if (B && n && !H.current && Y) return F(true), K.current = setTimeout(() => {
       F(false)
@@ -317,10 +317,10 @@ let R = Chunk647438.memo(function(e) {
     }),
     Q = {
       bannerVisible: n,
-      guild: j,
+      guild: v,
       onClick: c,
       onContextMenu: f,
-      ariaControls: v,
+      ariaControls: j,
       ariaExpanded: y,
       guildHeaderRef: W
     };
@@ -338,7 +338,7 @@ let R = Chunk647438.memo(function(e) {
           [x.hasBanner]: q(),
           [x.bannerVisible]: n,
           [e]: false,
-          [x.communityInfoVisible]: G || M && U,
+          [x.communityInfoVisible]: G || L && U,
           [x.invitesRefresh]: X.isGuildEntrypointEnabled
         }),
         onMouseDown: h,
@@ -356,13 +356,13 @@ let R = Chunk647438.memo(function(e) {
               children: Z
             }))
           }), U && (0, r.jsx)(P, {
-            guild: j,
+            guild: v,
             controller: l,
             hasBanner: null != I,
-            hasSubheader: null != M && M
+            hasSubheader: null != L && L
           })]
         }), null != I ? (0, r.jsx)(S, {
-          guild: j,
+          guild: v,
           controller: l,
           guildBanner: I,
           animate: V

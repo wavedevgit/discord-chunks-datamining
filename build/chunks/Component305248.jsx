@@ -1,4 +1,4 @@
-/** Chunk was on 71832 **/
+/** Chunk was on 11160 **/
 /** chunk id: 305248, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk709054 = require("./709054.js"),
   Chunk981631 = require("./981631.js"),
   Chunk124368 = require("./124368.js"),
-  Chunk681604 = require("./681604.js");
+  Chunk479014 = require("./479014.js");
 
 function _(e) {
   let {
@@ -36,7 +36,7 @@ function _(e) {
       id: t
     } = e;
     return h.Z.getChannel(t)
-  }).filter(g.lm).sort((e, t) => m.default.compare(e.id, t.id)).value(), [t.oldestReadMessageId, n.guild_id, n.id]), v = i.useCallback((e, t) => {
+  }).filter(g.lm).sort((e, t) => m.default.compare(e.id, t.id)).value(), [t.oldestReadMessageId, n.guild_id, n.id]), j = i.useCallback((e, t) => {
     (0, f.ok)(e, t, O.on.INBOX)
   }, []);
   return i.useEffect(() => {
@@ -54,7 +54,7 @@ function _(e) {
       children: (0, r.jsx)(u.ZP, {
         className: y.forumPost,
         threadId: e.id,
-        goToThread: v
+        goToThread: j
       })
     }, e.id))
   })

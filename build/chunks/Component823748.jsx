@@ -1,4 +1,4 @@
-/** Chunk was on 70127 **/
+/** Chunk was on 62987 **/
 /** chunk id: 823748, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => to
@@ -82,7 +82,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk657218 = require("./657218.jsx"),
   Chunk407908 = require("./407908.jsx"),
   Chunk66556 = require("./66556.jsx"),
-  Chunk739830 = require("./739830.jsx"),
+  Chunk131694 = require("./131694.jsx"),
   Chunk377929 = require("./377929.jsx"),
   Chunk900157 = require("./900157.jsx"),
   Chunk108427 = require("./108427.js"),
@@ -118,7 +118,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk440493 = require("./440493.js"),
   Chunk157925 = require("./157925.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk161655 = require("./161655.js");
+  Chunk97009 = require("./97009.js");
 
 function tt(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -155,10 +155,10 @@ function tr(e, t) {
   }), e
 }
 let ti = (0, Chunk663993.Un)({
-  createPromise: () => Promise.all([require.e("22173"), require.e("76892")]).then(require.bind(require, 346975)),
+  createPromise: () => Promise.all([require.e("22173"), require.e("9456")]).then(require.bind(require, 346975)),
   webpackId: 346975,
   renderLoader: () => (0, Chunk951288.jsx)("div", {
-    className: Chunk161655.loader,
+    className: Chunk97009.loader,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   }),
   name: "ForumChannel"
@@ -202,7 +202,7 @@ class tl extends Chunk647438.PureComponent {
     s()(null != i, "Missing user in Channel.openDMContextMenu"), (0, y.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("98783"), n.e("56826"), n.e("55599")]).then(n.bind(n, 131404));
+      } = await Promise.all([n.e("79695"), n.e("98783"), n.e("56826"), n.e("31899")]).then(n.bind(n, 131404));
       return n => (0, r.jsx)(e, tr(tn({}, n), {
         user: i,
         channelSelected: true,
@@ -425,7 +425,7 @@ class tl extends Chunk647438.PureComponent {
           style: {
             width: Chunk981631.$Y6
           },
-          className: Chunk161655.guildSidebar,
+          className: Chunk97009.guildSidebar,
           children: (0, Chunk951288.jsx)(Chunk613464.Z, {
             guildId: module,
             userId: exports,
@@ -471,20 +471,20 @@ class tl extends Chunk647438.PureComponent {
         subsection: null != require ? require : true
       }), (0, Chunk951288.jsxs)("div", {
         "data-has-border": module.type !== Chunk981631.d4z.GUILD_VOICE,
-        className: a()(Chunk161655.chat, {
-          [Chunk161655.threadSidebarOpen]: Chunk952265 || Chunk755721,
-          [Chunk161655.threadSidebarFloating]: Chunk952265 && Chunk442837
+        className: a()(Chunk97009.chat, {
+          [Chunk97009.threadSidebarOpen]: Chunk952265 || Chunk755721,
+          [Chunk97009.threadSidebarFloating]: Chunk952265 && Chunk442837
         }),
         children: [Chunk481060 ? (0, Chunk951288.jsx)(Chunk561472.Z, {
           style: {
             right: Chunk952265 ? Chunk843611 : true
           },
-          className: Chunk161655.uploadArea,
+          className: Chunk97009.uploadArea,
           channel: module,
           draftType: Chunk703558.d.ChannelMessage
         }) : null, Chunk704215 || u ? null : this.renderHeaderBar(), this.renderCall(), this.renderEmbeddedActivityPanel(), (0, Chunk951288.jsxs)("div", {
-          className: a()(Chunk161655.content, {
-            [Chunk161655.noChat]: Chunk120356 === Chunk981631.AEg.NO_CHAT
+          className: a()(Chunk97009.content, {
+            [Chunk97009.noChat]: Chunk120356 === Chunk981631.AEg.NO_CHAT
           }),
           children: [this.renderChat(), this.renderSidebar()]
         })]

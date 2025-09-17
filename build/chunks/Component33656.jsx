@@ -18,8 +18,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk930441 = require("./930441.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk214973 = require("./214973.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk882238 = require("./882238.js"),
+  Chunk197571 = require("./197571.js");
 
 function b(e) {
   let {
@@ -67,7 +67,7 @@ function y() {
     children: [(0, Chunk951288.jsx)("div", {
       ref: exports
     }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-      className: Chunk10198.marginTop40,
+      className: Chunk197571.marginTop40,
       tag: Chunk481060.RB0.H1,
       title: Chunk388032.intl.string(Chunk388032.t.TPchzM),
       children: [Chunk930441.Od.map(e => {
@@ -88,7 +88,7 @@ function y() {
       }), (0, Chunk951288.jsxs)(Chunk921801.F, {
         setting: Chunk726985.s6.NOTIFICATIONS_EMAILS_UNSUBSCRIBE_FROM_ALL_MARKETING_EMAILS,
         children: [(0, Chunk951288.jsx)(Chunk755721.zx, {
-          className: Chunk214973.marketingUnsubscribeButton,
+          className: Chunk882238.marketingUnsubscribeButton,
           disabled: !y,
           look: Chunk755721.iL.LINK,
           color: Chunk755721.Tt.LINK,
@@ -98,7 +98,7 @@ function y() {
           type: Chunk481060.geA.DESCRIPTION,
           children: Chunk388032.intl.string(Chunk388032.t.iYjQ8f)
         }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-          className: o()(Chunk10198.marginTop40, Chunk10198.marginBottom40)
+          className: o()(Chunk197571.marginTop40, Chunk197571.marginBottom40)
         })]
       })]
     })]

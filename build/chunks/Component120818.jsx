@@ -1,4 +1,4 @@
-/** Chunk was on 71832 **/
+/** Chunk was on 11160 **/
 /** chunk id: 120818, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   T: () => O
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk503769 = require("./503769.js");
+  Chunk46674 = require("./46674.js");
 
 function b(e, t) {
   return (0, r.jsx)(a.Text, {
@@ -29,13 +29,13 @@ let O = Chunk647438.memo(function(e) {
   var t, n;
   let {
     guild: O
-  } = e, y = (0, o.e7)([c.Z], () => c.Z.getNewMemberActions(O.id), [O.id]), _ = (0, o.e7)([u.Z], () => u.Z.getCompletedActions(O.id)), v = i.useMemo(() => {
+  } = e, y = (0, o.e7)([c.Z], () => c.Z.getNewMemberActions(O.id), [O.id]), _ = (0, o.e7)([u.Z], () => u.Z.getCompletedActions(O.id)), j = i.useMemo(() => {
     if (null == y || null == _) return 0;
     let e = 0;
     return y.forEach(t => {
       null != _[t.channelId] && e++
     }), e
-  }, [_, y]), j = null == y ? 0 : y.length, x = (0, l.JA)("progress-bar-".concat(O.id));
+  }, [_, y]), v = null == y ? 0 : y.length, x = (0, l.JA)("progress-bar-".concat(O.id));
   return (0, r.jsxs)("li", {
     children: [(0, r.jsxs)(a.P3F, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -78,8 +78,8 @@ let O = Chunk647438.memo(function(e) {
             className: m.rightText,
             children: g.intl.format(g.t.eqZ1lZ, {
               numberHook: b,
-              total: j.toString(),
-              completed: v.toString()
+              total: v.toString(),
+              completed: j.toString()
             })
           }), (0, r.jsx)(p.Z, {
             className: m.arrow,
@@ -91,7 +91,7 @@ let O = Chunk647438.memo(function(e) {
       }), (0, r.jsx)(a.Exd, {
         className: m.progressBar,
         foregroundGradientColor: [(0, s.Lq)(f.Ilk.GREEN_300), (0, s.Lq)(f.Ilk.GREEN_230)],
-        percent: v / j * 100 + 3,
+        percent: j / v * 100 + 3,
         animate: true
       })]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

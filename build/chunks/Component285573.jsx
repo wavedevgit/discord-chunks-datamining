@@ -1,4 +1,4 @@
-/** Chunk was on 71832 **/
+/** Chunk was on 11160 **/
 /** chunk id: 285573, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk473403 = require("./473403.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk490897 = require("./490897.js"),
-  Chunk33082 = require("./33082.js");
+  Chunk55940 = require("./55940.js");
 let O = (0, Chunk146773.B)(function(e) {
   let {
     guild: t,
@@ -26,8 +26,8 @@ let O = (0, Chunk146773.B)(function(e) {
     disableManageChannels: O,
     sorting: y,
     sortingType: _,
-    sortingPosition: v,
-    connectChannelDragSource: j,
+    sortingPosition: j,
+    connectChannelDragSource: v,
     connectChannelDropTarget: x,
     tabIndex: C
   } = e, E = (0, a.e7)([u.Z, d.ZP], () => {
@@ -73,7 +73,7 @@ let O = (0, Chunk146773.B)(function(e) {
     })
   }, [E]);
   if (null == E) return null;
-  let Z = (0, f.jo)(c, v),
+  let Z = (0, f.jo)(c, j),
     w = (0, f.CN)(E, y, _),
     T = (0, r.jsx)("div", {
       className: o()(Z, {
@@ -99,5 +99,5 @@ let O = (0, Chunk146773.B)(function(e) {
         })]
       })
     });
-  return I && (T = x(j(T))), T
+  return I && (T = x(v(T))), T
 })

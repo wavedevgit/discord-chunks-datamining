@@ -1,4 +1,4 @@
-/** Chunk was on 71832 **/
+/** Chunk was on 11160 **/
 /** chunk id: 428127, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk934415 = require("./934415.js"),
   Chunk968847 = require("./968847.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk32976 = require("./32976.js");
+  Chunk74664 = require("./74664.js");
 let b = {
   friction: 30,
   tension: 300
@@ -72,10 +72,10 @@ function y(e) {
     bottomBar: f,
     topBar: y
   } = (0, s.cj)([h.Z], () => h.Z.getUnreadStateForGuildId(n.id)), _ = (0, s.e7)([p.Z], () => p.Z.isFocused()), {
-    mode: v,
-    mentionCount: j,
+    mode: j,
+    mentionCount: v,
     targetChannelId: x
-  } = "bottom" === t ? f : y, C = v === h.x.HIDDEN, E = (0, c.q_F)({
+  } = "bottom" === t ? f : y, C = j === h.x.HIDDEN, E = (0, c.q_F)({
     to: {
       transform: C ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
     },
@@ -92,9 +92,9 @@ function y(e) {
       className: m.containerPadding,
       style: E,
       "aria-hidden": C,
-      children: v === h.x.HIDDEN ? (0, r.jsx)("div", {
+      children: j === h.x.HIDDEN ? (0, r.jsx)("div", {
         className: o()(m.bar, m.emptyBar)
-      }) : v === h.x.UNREAD ? (0, r.jsxs)(c.P3F, {
+      }) : j === h.x.UNREAD ? (0, r.jsxs)(c.P3F, {
         className: m.bar,
         onClick: S,
         children: ["bottom" === t ? (0, r.jsx)(c.CJ0, {
@@ -115,7 +115,7 @@ function y(e) {
           className: m.barText,
           children: g.intl.string(g.t.FCRiT0)
         })]
-      }) : v === h.x.MENTIONS ? (0, r.jsx)(c.P3F, {
+      }) : j === h.x.MENTIONS ? (0, r.jsx)(c.P3F, {
         className: o()(m.bar, m.mentionsBar),
         onClick: S,
         children: (0, r.jsx)(c.Text, {
@@ -123,10 +123,10 @@ function y(e) {
           color: "status-danger-text",
           className: m.barText,
           children: g.intl.format(g.t.EQcLys, {
-            count: j
+            count: v
           })
         })
-      }) : v === h.x.VOICE_CHANNELS ? (0, r.jsx)(O, {
+      }) : j === h.x.VOICE_CHANNELS ? (0, r.jsx)(O, {
         jumpToVoiceChannels: u,
         guildChannels: n,
         guildChannelsVersion: l
