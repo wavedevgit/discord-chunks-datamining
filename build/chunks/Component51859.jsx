@@ -29,7 +29,7 @@ function v(e) {
     onHover: e => h(e),
     guildId: t,
     powerup: n,
-    badge: I || T ? I && T ? "beta" : true : "new",
+    badge: I && T ? "beta" : true,
     children: [(0, r.jsx)(d.m, {
       className: _.image,
       powerup: n,

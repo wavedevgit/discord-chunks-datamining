@@ -2,7 +2,7 @@
 /** chunk id: 35215, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => M
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,9 +19,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk497505 = require("./497505.js"),
   Chunk602667 = require("./602667.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk879048 = require("./879048.js");
+  Chunk879048 = require("./879048.js"),
+  Chunk557256 = require("./557256.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,20 +31,20 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
 }
 
-function O(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,18 +55,18 @@ function O(e, t) {
   return n
 }
 
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = 10,
-  T = 20,
-  S = 4,
-  A = 5,
-  C = 8,
-  N = 10,
-  R = e => {
+let T = 10,
+  S = 20,
+  A = 4,
+  C = 5,
+  N = 8,
+  R = 10,
+  P = e => {
     let {
       gameCount: t,
       onClose: n
@@ -96,7 +97,7 @@ let I = 10,
       })]
     })
   },
-  P = e => {
+  w = e => {
     let {
       quest: t,
       game: i,
@@ -118,7 +119,7 @@ let I = 10,
         let {
           default: e
         } = await Promise.all([n.e("89311"), n.e("83123")]).then(n.bind(n, 644941));
-        return t => (0, r.jsx)(e, y({
+        return t => (0, r.jsx)(e, O({
           applicationId: i.applicationId,
           source: d.m1.GameSheet,
           trackExternalAction: f
@@ -127,7 +128,7 @@ let I = 10,
     };
     return (0, r.jsx)(o.ua7, {
       text: i.name,
-      children: e => (0, r.jsx)(o.P3F, v(y({}, e), {
+      children: e => (0, r.jsx)(o.P3F, I(O({}, e), {
         className: E.gameClickable,
         onClick: m,
         children: (0, r.jsx)(_.C, {
@@ -139,7 +140,7 @@ let I = 10,
       }))
     })
   },
-  w = () => (0, Chunk951288.jsxs)("svg", {
+  D = () => (0, Chunk951288.jsxs)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "75",
     height: "96",
@@ -165,9 +166,40 @@ let I = 10,
       stroke: "var(--border-normal)",
       strokeOpacity: "0.2"
     })]
-  });
+  }),
+  x = e => {
+    let {
+      onClose: t
+    } = e;
+    return (0, r.jsxs)("div", {
+      className: E.container,
+      children: [(0, r.jsx)("div", {
+        className: E.closeButtonContainer,
+        children: (0, r.jsx)(o.P3F, {
+          className: E.closeButton,
+          "aria-label": g.intl.string(g.t.cpT0Cg),
+          onClick: t,
+          children: (0, r.jsx)(o.Dio, {
+            size: "md",
+            color: "currentColor"
+          })
+        })
+      }), (0, r.jsxs)("div", {
+        className: E.errorContainer,
+        children: [(0, r.jsx)("img", {
+          alt: "",
+          src: b,
+          className: E.errorImage
+        }), (0, r.jsx)(o.Text, {
+          variant: "text-md/normal",
+          color: "text-muted",
+          children: g.intl.string(g.t.F8FvU1)
+        })]
+      })]
+    })
+  };
 
-function D(e) {
+function L(e) {
   let {
     quest: t,
     applications: n,
@@ -180,16 +212,16 @@ function D(e) {
   }, [n]);
   let _ = (0, a.e7)([u.Z], () => n.some(e => u.Z.isFetching(e))),
     p = (0, a.e7)([u.Z], () => n.some(e => u.Z.didFetchingFail(e))),
-    h = (0, a.Wu)([u.Z], () => n.map(e => u.Z.getGame(e)).filter(e => null != e).filter(e => (0, f.z6)(e.applicationId)).slice(0, I)),
+    h = (0, a.Wu)([u.Z], () => n.map(e => u.Z.getGame(e)).filter(e => null != e).filter(e => (0, f.z6)(e.applicationId)).slice(0, T)),
     m = i.useMemo(() => {
       let e = h.length;
-      return e <= S ? S - e : e === A ? 0 : e <= C ? C - e : N - e
+      return e <= A ? A - e : e === C ? 0 : e <= N ? N - e : R - e
     }, [h.length]);
   if (_ && !p) {
-    let e = Math.min(n.length, I);
+    let e = Math.min(n.length, T);
     return (0, r.jsxs)("div", {
       className: E.container,
-      children: [(0, r.jsx)(R, {
+      children: [(0, r.jsx)(P, {
         gameCount: e,
         onClose: o
       }), (0, r.jsx)("div", {
@@ -200,28 +232,30 @@ function D(e) {
       })]
     })
   }
-  return !_ && 0 === h.length || p ? null : (0, r.jsxs)("div", {
+  return !_ && 0 === h.length || p ? (0, r.jsx)(x, {
+    onClose: o
+  }) : (0, r.jsxs)("div", {
     ref: e => {
       d.current = e
     },
     className: E.container,
-    children: [(0, r.jsx)(R, {
+    children: [(0, r.jsx)(P, {
       gameCount: h.length,
       onClose: o
     }), (0, r.jsxs)("div", {
       className: E.gameGrid,
-      children: [h.map(e => (0, r.jsx)(P, {
+      children: [h.map(e => (0, r.jsx)(w, {
         quest: t,
         game: e,
         sourceQuestContent: l
       }, e.applicationId)), Array.from({
         length: m
-      }, (e, t) => (0, r.jsx)(w, {}, "placeholder-".concat(t)))]
+      }, (e, t) => (0, r.jsx)(D, {}, "placeholder-".concat(t)))]
     })]
   })
 }
 
-function x(e) {
+function j(e) {
   let {
     targetElementRef: t,
     applications: n,
@@ -245,7 +279,7 @@ function x(e) {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(D, {
+      return (0, r.jsx)(L, {
         quest: c,
         applications: n,
         onClose: t,
@@ -257,16 +291,16 @@ function x(e) {
     onRequestClose: l,
     position: E,
     align: b,
-    spacing: T,
+    spacing: S,
     children: e => a(e, _)
   })
 }
-let L = function(e) {
+let M = function(e) {
   return null == e.quest || e.applications.length <= 1 ? null : (0, r.jsx)(m.A, {
     questOrQuests: e.quest,
     questContent: h.jn.SPONSORED_QUEST_SHEET,
     sourceQuestContent: e.sourceQuestContent,
-    children: t => (0, r.jsx)(x, v(y({}, e), {
+    children: t => (0, r.jsx)(j, I(O({}, e), {
       impressionRef: t
     }))
   })

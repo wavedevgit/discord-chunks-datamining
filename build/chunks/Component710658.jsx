@@ -1,52 +1,62 @@
 /** Chunk was on 75157 **/
-/** chunk id: 710658, original params: t,n,a (module,exports,require) **/
+/** chunk id: 710658, original params: t,e,a (module,exports,require) **/
 require.d(exports, {
-  default: () => u
+  default: () => k
 });
 var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk667202 = require("./667202.jsx"),
   Chunk635552 = require("./635552.js"),
   Chunk300284 = require("./300284.js"),
   Chunk342386 = require("./342386.js"),
+  Chunk626135 = require("./626135.js"),
   Chunk526167 = require("./526167.js"),
+  Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk461999 = require("./461999.js"),
   Chunk793167 = require("./793167.js");
-let u = t => {
+let k = t => {
   let {
-    transitionState: n,
+    transitionState: e,
     onClose: a,
-    product: u
-  } = t, b = (0, s.Z)(), {
-    handleUseNow: f,
-    isApplying: h
-  } = (0, c.W)({
-    product: u,
-    onSuccess: a,
-    onError: a
-  });
-  return (0, i.jsx)(e.I, {
+    product: k
+  } = t;
+  i.useEffect(() => {
+    d.default.track(p.rMx.OPEN_MODAL, {
+      type: "September Marketing Moment 2025 Claim Modal"
+    })
+  }, []);
+  let g = (0, r.Z)(),
+    {
+      handleUseNow: h,
+      isApplying: m
+    } = (0, o.W)({
+      product: k,
+      onSuccess: a,
+      onError: a
+    });
+  return (0, n.jsx)(c.I, {
     gradientColor: "nitro-pink",
-    title: d.intl.string(d.t.qYWlf3),
-    subtitle: d.intl.string(d.t.x01cl5),
+    title: u.intl.string(u.t.qYWlf3),
+    subtitle: u.intl.string(u.t.x01cl5),
     actions: [{
-      text: d.intl.string(d.t["2p2aY2"]),
+      text: u.intl.string(u.t["2p2aY2"]),
       variant: "secondary",
       onClick: () => {
-        a(), (0, o.default)(), null == b || b()
+        a(), (0, s.default)(), null == g || g()
       }
     }, {
-      text: d.intl.string(d.t.MAS7uL),
+      text: u.intl.string(u.t.MAS7uL),
       variant: "primary",
-      onClick: f,
-      loading: h
+      onClick: h,
+      loading: m
     }],
     graphic: {
       type: "video",
-      src: (0, r.rO)() ? l.Z : p.Z,
+      src: (0, l.rO)() ? b.Z : f.Z,
       loop: true
     },
-    transitionState: n,
+    transitionState: e,
     onClose: a
   })
 }
