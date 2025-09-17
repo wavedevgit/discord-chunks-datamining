@@ -1,5 +1,5 @@
-/** Chunk was on 31649 **/
-/** chunk id: 926563, original params: t,e,n (module,exports,require) **/
+/** Chunk was on 76215 **/
+/** chunk id: 926563, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
 });
@@ -18,53 +18,53 @@ var Chunk481060 = require("./481060.js"),
   Chunk671955 = require("./671955.js"),
   Chunk580792 = require("./580792.js");
 
-function b(t) {
+function b(e) {
   let {
-    user: e,
+    user: t,
     previewText: n,
     previewEmoji: b,
-    previewStatus: S,
-    placeHolderText: g,
-    transitionState: O
-  } = t, j = (0, l.ZP)(e.id);
+    previewStatus: g,
+    placeHolderText: h,
+    transitionState: S
+  } = e, T = (0, a.ZP)(t.id);
   return (0, r.jsxs)(c.Z, {
-    user: e,
-    displayProfile: j,
+    user: t,
+    displayProfile: T,
     themeType: p.l.POPOUT,
-    className: h.profilePreviewContainer,
+    className: O.profilePreviewContainer,
     children: [(0, r.jsxs)("header", {
-      children: [(0, r.jsx)(u.Z, {
-        user: e,
-        displayProfile: j,
+      children: [(0, r.jsx)(s.Z, {
+        user: t,
+        displayProfile: T,
         themeType: p.l.POPOUT
       }), (0, r.jsx)("div", {
         inert: true,
         children: (0, r.jsx)(o.Z, {
-          user: e,
-          displayProfile: j,
+          user: t,
+          displayProfile: T,
           themeType: p.l.POPOUT,
-          previewStatus: S,
-          className: h.avatar
+          previewStatus: g,
+          className: O.avatar
         })
       }), (0, r.jsx)(m.Z, {
-        user: e,
+        user: t,
         themeType: p.l.POPOUT,
         previewText: n,
         previewEmoji: b,
-        placeholderText: g,
-        hasEntered: O === a.Dvm.ENTERED
+        placeholderText: h,
+        hasEntered: S === i.Dvm.ENTERED
       })]
-    }), (null == j ? true : j.profileEffect) != null && (0, r.jsx)(i.Z, {
-      profileEffectId: j.profileEffect.id
+    }), (null == T ? true : T.profileEffect) != null && (0, r.jsx)(l.Z, {
+      profileEffectId: T.profileEffect.id
     }), (0, r.jsx)("div", {
-      className: h.usernameContainer,
+      className: O.usernameContainer,
       inert: true,
       children: (0, r.jsx)(d.Z, {
-        user: e,
-        nickname: f.ZP.getName(null, null, e),
-        pronouns: null == j ? true : j.pronouns,
-        tags: (0, r.jsx)(s.Z, {
-          displayProfile: j,
+        user: t,
+        nickname: f.ZP.getName(null, null, t),
+        pronouns: null == T ? true : T.pronouns,
+        tags: (0, r.jsx)(u.Z, {
+          displayProfile: T,
           themeType: p.l.POPOUT
         })
       })

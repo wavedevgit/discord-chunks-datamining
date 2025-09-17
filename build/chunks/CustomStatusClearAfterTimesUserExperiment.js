@@ -1,7 +1,7 @@
-/** Chunk was on 31649 **/
-/** chunk id: 644540, original params: t,e,n (module,exports,require) **/
+/** Chunk was on 76215 **/
+/** chunk id: 644540, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => a
+  P: () => i
 });
 let r = (0, require("./818083.js").B)({
   kind: "user",
@@ -19,16 +19,16 @@ let r = (0, require("./818083.js").B)({
   }]
 });
 
-function a(t) {
+function i(e) {
   let {
-    location: e,
+    location: t,
     autoTrackExposure: n = true
-  } = t, {
-    enabled: a
+  } = e, {
+    enabled: i
   } = r.useExperiment({
-    location: e
+    location: t
   }, {
     autoTrackExposure: n
   });
-  return a
+  return i
 }
