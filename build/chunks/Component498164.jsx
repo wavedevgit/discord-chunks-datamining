@@ -162,7 +162,10 @@ let R = {
       } = e;
       switch (N.ZP.focus(), t) {
         case x.jE.USER_SETTINGS:
-          null != n && ((0, y.dL)(A.Z5c.SETTINGS(n.section, n.subsection)), L(n.fingerprint, (0, x.O)(t)));
+          null != n && ((0, y.dL)({
+            pathname: A.Z5c.SETTINGS(n.section, n.subsection),
+            search: n.search
+          }), L(n.fingerprint, (0, x.O)(t)));
           break;
         case x.jE.CHANGELOG:
           null != n && ((0, y.dL)(T.Z.formatPathWithQuery(A.Z5c.CHANGELOGS(n.date), n.query)), L(n.fingerprint, (0, x.O)(t)));
