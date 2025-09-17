@@ -2,6 +2,7 @@
 /** chunk id: 526665, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  KV: () => s,
   gj: () => o,
   wy: () => a,
   yP: () => i
@@ -42,6 +43,11 @@ let r = (0, require("./818083.js").B)({
   }).enabled,
   o = () => r.useExperiment({
     location: "user_settings"
+  }, {
+    autoTrackExposure: false
+  }).showRedesignedNotifications,
+  s = e => r.getCurrentConfig({
+    location: e
   }, {
     autoTrackExposure: false
   }).showRedesignedNotifications

@@ -1,7 +1,7 @@
 /** Chunk was on 99014 **/
 /** chunk id: 17622, original params: e,t,o (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -12,7 +12,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk336227 = require("./336227.js"),
   Chunk467541 = require("./467541.js");
 
-function u(e) {
+function d(e) {
   let {
     powerup: t
   } = e, o = (0, i.Z)(t);

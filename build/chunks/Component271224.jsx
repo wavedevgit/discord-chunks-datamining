@@ -1,24 +1,30 @@
 /** Chunk was on 99014 **/
 /** chunk id: 271224, original params: e,t,o (module,exports,require) **/
 require.d(exports, {
-  default: () => d
+  default: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk120356 = require("./120356.js"),
+  c = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk870246 = require("./870246.js"),
-  Chunk604857 = require("./604857.jsx"),
+  Chunk639777 = require("./639777.js"),
+  Chunk973772 = require("./973772.js"),
   Chunk17622 = require("./17622.jsx"),
+  Chunk880419 = require("./880419.jsx"),
+  Chunk535396 = require("./535396.js"),
+  Chunk388032 = require("./388032.jsx"),
   Chunk237963 = require("./237963.js"),
   Chunk942570 = require("./942570.js");
 
-function d(e) {
+function _(e) {
   var t, o, {
-      guildId: d,
-      powerup: p,
-      onClose: b
+      guildId: a,
+      powerup: _,
+      onClose: O
     } = e,
-    f = function(e, t) {
+    k = function(e, t) {
       if (null == e) return {};
       var o, n, r = function(e, t) {
         if (null == e) return {};
@@ -33,8 +39,8 @@ function d(e) {
       }
       return r
     }(e, ["guildId", "powerup", "onClose"]);
-  let [m, I] = r.useState(true);
-  return (0, c.$)(d, p, c.w.DETAIL), (0, n.jsxs)(a.Y0X, (t = function(e) {
+  let [j, g] = r.useState(true), v = (0, d.ZP)(a, _), x = v.type === b.A3.TIER_OVERRIDE_ACTIVATED, y = (0, l.Z)(a), C = null == v.sourceEntitlement || !y;
+  return (0, i.$)(a, _, i.w.DETAIL), (0, n.jsxs)(s.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var o = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(o);
@@ -52,39 +58,50 @@ function d(e) {
     }
     return e
   }({
-    className: l.modal,
-    size: a.CgR.DYNAMIC
-  }, f), o = o = {
+    "data-migration-pending": true,
+    className: f.modal,
+    size: s.CgR.DYNAMIC
+  }, k), o = o = {
     parentComponent: "GuildPowerupLevelModal",
-    children: [(0, n.jsxs)(a.hzk, {
-      className: l.modalContentContainer,
+    children: [(0, n.jsxs)(s.hzk, {
+      "data-migration-pending": true,
+      className: f.modalContentContainer,
       scrollbarType: "none",
       children: [(0, n.jsx)("img", {
         alt: "",
-        src: u,
-        className: l.boostImage
+        src: I,
+        className: f.boostImage
       }), (0, n.jsxs)("div", {
-        className: l.contentContainer,
-        children: [(0, n.jsx)(a.X6q, {
+        className: f.contentContainer,
+        children: [(0, n.jsx)(s.X6q, {
           variant: "heading-xl/extrabold",
-          children: p.title
-        }), (0, n.jsx)(i.Z, {
-          powerup: p
-        }), null != m && (0, n.jsx)(a.Text, {
+          children: _.title
+        }), (0, n.jsx)(u.Z, {
+          powerup: _
+        }), null != j && (0, n.jsx)(s.Text, {
           color: "status-danger",
           variant: "text-sm/semibold",
-          children: m
-        }), (0, n.jsx)(s.Z, {
-          className: l.footer,
-          guildId: d,
-          powerup: p,
-          onError: I,
-          onClose: b
+          children: j
+        }), (0, n.jsxs)("div", {
+          className: c()(f.footer, {
+            [f.disabled]: C
+          }),
+          children: [!x && y && (0, n.jsx)(p.ZP, {
+            guildId: a,
+            powerup: _,
+            onError: g,
+            grow: false,
+            compact: !C
+          }), (0, n.jsx)(s.zxk, {
+            variant: C ? "secondary" : "primary",
+            onClick: O,
+            text: m.intl.string(m.t.cpT0Cg)
+          })]
         })]
       })]
-    }), (0, n.jsx)(a.olH, {
-      className: l.close,
-      onClick: b
+    }), (0, n.jsx)(s.olH, {
+      className: f.close,
+      onClick: O
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
     var o = Object.keys(e);

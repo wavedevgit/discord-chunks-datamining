@@ -1243,7 +1243,7 @@ let e2 = () => {
         label: ez.intl.string(ez.t["/VQax8"]),
         ariaLabel: ez.intl.string(ez.t["/VQax8"]),
         element: eR.Z,
-        url: eY.Z5c.SETTINGS("chat")
+        url: eY.Z5c.SETTINGS("text")
       },
       [eV.s6.CHAT_INLINE_MEDIA]: {
         section: eY.oAB.TEXT,

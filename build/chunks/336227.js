@@ -22,7 +22,7 @@ function l(e) {
   };
   return n.useMemo(() => {
     let n = [],
-      u = (0, c.d5)();
+      d = (0, c.d5)();
     return t && n.push({
       perkIcon: a.Ro.EMOJI,
       description: i.intl.formatToPlainString(s.default.NXvV09, {
@@ -41,6 +41,6 @@ function l(e) {
         totalSoundboards: e.features.total_sound_slots,
         additionalSoundboards: e.features.additional_sound_slots
       })
-    }), n.concat(e.features.features.map(e => u[e]).filter(r.lm))
+    }), n.concat(e.features.features.map(e => d[e]).filter(r.lm))
   }, [e, t, o, l])
 }

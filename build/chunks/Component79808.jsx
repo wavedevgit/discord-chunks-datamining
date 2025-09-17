@@ -52,7 +52,7 @@ function g(e) {
     onClose: O,
     sidebarHeader: E,
     sidebarFooter: v
-  } = e, [T, b] = i.useState(true), [N, p] = i.useState(null == (t = f.entry(y)) ? true : t.parentPanel), [I, C] = i.useState({
+  } = e, [b, T] = i.useState(true), [p, N] = i.useState(null == (t = f.entry(y)) ? true : t.parentPanel), [C, I] = i.useState({
     target: y,
     targetAccordion: null == (n = f.entry(y)) ? true : n.parentAccordion,
     animateScroll: false,
@@ -60,12 +60,12 @@ function g(e) {
   });
 
   function m() {
-    C(true)
+    I(true)
   }
   let {
     navigateWithValidation: j
   } = (0, a.Cu)(), S = {
-    currentPanel: f.typedGet(N),
+    currentPanel: f.typedGet(p),
     navigateTo: e => {
       let t = f.entry(e);
       if ((null == t ? true : t.parentPanel) == null) return;
@@ -74,20 +74,20 @@ function g(e) {
         targetAccordion: t.parentAccordion,
         complete: m
       };
-      if (t.parentPanel.key !== (null == N ? true : N.key)) {
+      if (t.parentPanel.key !== (null == p ? true : p.key)) {
         let e = t.parentPanel;
         j(() => {
-          C(d(c({}, n), {
+          I(d(c({}, n), {
             animateScroll: false
-          })), p(e)
+          })), N(e)
         })
-      } else C(d(c({}, n), {
+      } else I(d(c({}, n), {
         animateScroll: true
       }))
     },
-    navTransition: I,
-    showNavigationMobile: T,
-    setShowNavigationMobile: b
+    navTransition: C,
+    showNavigationMobile: b,
+    setShowNavigationMobile: T
   };
   return (0, r.jsx)(s.j.Provider, {
     value: S,

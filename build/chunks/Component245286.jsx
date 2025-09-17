@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 245286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => c
+  default: () => d
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -9,15 +9,35 @@ var Chunk481060 = require("./481060.js"),
   Chunk82084 = require("./82084.jsx"),
   Chunk131051 = require("./131051.js"),
   Chunk996733 = require("./996733.js"),
+  Chunk313789 = require("./313789.js"),
   Chunk914578 = require("./914578.jsx"),
   Chunk920952 = require("./920952.js");
 
-function c(e) {
-  let t = (0, a.Z7)(),
+function d(e) {
+  var t, {
+      target: n
+    } = e,
+    i = function(e, t) {
+      if (null == e) return {};
+      var n, r, i = function(e, t) {
+        if (null == e) return {};
+        var n, r, i = {},
+          l = Object.keys(e);
+        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        return i
+      }(e, t);
+      if (Object.getOwnPropertySymbols) {
+        var l = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      }
+      return i
+    }(e, ["target"]);
+  let d = (0, a.Z7)(),
     {
-      node: n,
-      directory: i
-    } = (0, o.Z)(u.Z, t);
+      node: f,
+      directory: y
+    } = (0, o.Z)(c.Z, d),
+    O = (t = s.n.ACCOUNT_PANEL, null == y.entry(n) ? t : n);
   return (0, r.jsx)(l.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -36,14 +56,15 @@ function c(e) {
     }
     return e
   }({
-    root: n,
-    directory: i,
-    sidebarHeader: d,
-    sidebarFooter: s.Z
-  }, e))
+    root: f,
+    directory: y,
+    sidebarHeader: g,
+    sidebarFooter: u.Z,
+    target: O
+  }, i))
 }
 
-function d() {
+function g() {
   let e = (0, Chunk996733.Z7)();
   return (0, Chunk951288.jsx)("div", {
     children: (0, Chunk951288.jsx)(Chunk481060.E1j, {
