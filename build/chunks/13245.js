@@ -401,6 +401,11 @@ let O = new Chunk710845.Z("OverlayActionCreators"),
         enabled: t
       })
     },
+    oopUiShowInactiveSuccess() {
+      Chunk570140.Z.dispatch({
+        type: "OVERLAY_OOP_UI_SHOW_INACTIVE_SUCCESS"
+      })
+    },
     oopUiInitialized() {
       Chunk570140.Z.dispatch({
         type: "OVERLAY_OOP_UI_INITIALIZED"

@@ -55,7 +55,7 @@ let B = Chunk647438.memo(function(e) {
     withTitleBar: t,
     windowKey: n
   } = e, _ = function(e, t) {
-    let n = (0, r.e7)([y.ZP], () => !h.isPlatformEmbedded || y.ZP.isWindowHandleInitialized()),
+    let n = (0, r.e7)([w.ZP], () => !h.isPlatformEmbedded || w.ZP.isWindowHandleInitialized()),
       a = (0, r.e7)([d.Z], () => d.Z.getWindow(e)),
       l = o.useRef(null),
       _ = o.useRef(null),
@@ -65,23 +65,23 @@ let B = Chunk647438.memo(function(e) {
         return !h.isPlatformEmbedded || null != e && e !== v.UNSET_PID
       }),
       [b, g] = o.useState(false),
-      w = o.useRef(false),
+      y = o.useRef(false),
       x = o.useCallback(() => {
         let e = (0, v.getPID)(),
           n = null != s.Z.getVoiceChannelId();
         i.Z.track(S.rMx.OVERLAY_INITIALIZED, {
           voice_widget_connected: n,
-          text_widget_connected: y.ZP.isPinned(S.Odu.TEXT),
+          text_widget_connected: w.ZP.isPinned(S.Odu.TEXT),
           overlay_render_method: I.gl[C.default.getOverlayMethod(e)],
           unpinned_widget_types: f.Z.getAllUnpinnedPinnedWidgets(t)
         }), i.Z.oopUiInitialized()
       }, [t]);
-    (0, c.Ng)(() => {
+    (0, c.ZP)(() => {
       let e = e => {
         let t = null != a ? a : window;
-        e.data === y.Il && t.requestAnimationFrame(() => {
+        e.data === w.Il && t.requestAnimationFrame(() => {
           t.requestAnimationFrame(() => {
-            window.parent.postMessage(y.A8, "*")
+            window.parent.postMessage(w.A8, "*")
           })
         })
       };
@@ -94,7 +94,7 @@ let B = Chunk647438.memo(function(e) {
         null != l.current && e.cancelAnimationFrame(l.current), null != _.current && e.clearTimeout(_.current)
       }, l.current = e.requestAnimationFrame(async () => {
         try {
-          await E(e, t)
+          await E(e, t), i.Z.oopUiShowInactiveSuccess()
         } catch (e) {
           i.Z.setOverlayCrashed((0, v.getPID)(), e);
           return
@@ -105,11 +105,12 @@ let B = Chunk647438.memo(function(e) {
       }))
     }, [x]);
     return o.useEffect(() => {
-      m && null != a && n && (w.current || (w.current = true, B(a, e)))
+      m && null != a && n && (y.current || (y.current = true, B(a, e)))
     }, [B, m, e, a, n]), (0, c.zq)(() => {
-      null != u.current && u.current()
+      var e;
+      null == (e = u.current) || e.call(u)
     }), b
-  }(n, w.$S), m = (0, v.getPID)(), b = (0, r.e7)([p.default], () => p.default.isInputLocked(m), [m]);
+  }(n, y.$S), m = (0, v.getPID)(), b = (0, r.e7)([p.default], () => p.default.isInputLocked(m), [m]);
   return _ ? (0, a.jsxs)(u.Z, {
     themeOverride: S.BRd.MIDNIGHT,
     withTitleBar: t,
