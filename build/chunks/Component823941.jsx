@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk180650 = require("./180650.js"),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
@@ -35,8 +35,8 @@ let L = (0, Chunk884697.IC)(90),
       category: t
     } = e, {
       analyticsLocations: n
-    } = (0, d.ZP)(), a = l.useRef(null), s = (0, o.e7)([p.default], () => p.default.getCurrentUser());
-    return m.ZP.canUseCollectibles(s) ? t.summary : y.intl.format(y.t["9hafRk"], {
+    } = (0, d.ZP)(), a = l.useRef(null), o = (0, i.e7)([p.default], () => p.default.getCurrentUser());
+    return _.ZP.canUseCollectibles(o) ? t.summary : y.intl.format(y.t["9hafRk"], {
       getPremium: e => (0, r.jsx)(c.P3F, {
         innerRef: a,
         className: T.getPremiumHook,
@@ -80,20 +80,20 @@ function B(e) {
     hideLimitedTimeBadge: l = false
   } = e, {
     backgroundColors: a
-  } = (0, b.Z)(t.styles), d = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), g = (0, o.e7)([h.Z], () => h.Z.isFocused()), {
+  } = (0, b.Z)(t.styles), d = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), g = (0, i.e7)([h.Z], () => h.Z.isFocused()), {
     bannerOverrides: f,
     shopAllBannerStatic: p,
-    shopAllBannerAnimated: m
-  } = (0, O.t0)(t), x = !!(null == f ? true : f.showDarkBannerText);
+    shopAllBannerAnimated: _
+  } = (0, v.t0)(t), x = !!(null == f ? true : f.showDarkBannerText);
   return (0, r.jsxs)(E.Z, {
     asset: p,
-    className: s()(T.shopBanner, n),
+    className: o()(T.shopBanner, n),
     style: null != a ? {
-      background: "".concat((0, v.nH)(a), " border-box border-box"),
+      background: "".concat((0, O.nH)(a), " border-box border-box"),
       outlineColor: a.border.toHslString()
     } : true,
-    children: [!d && null != m && g && (0, r.jsx)(k, {
-      src: m
+    children: [!d && null != _ && g && (0, r.jsx)(k, {
+      src: _
     }), (null == f ? true : f.addAttributionLogo) ? (0, r.jsxs)("div", {
       className: T.discordLogo,
       children: [(0, r.jsx)(c.gw7, {
@@ -102,7 +102,7 @@ function B(e) {
         height: 28,
         color: "currentColor",
         className: T.discordIcon
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(m.Z, {
         className: T.discordWordmark
       })]
     }) : (0, r.jsx)(c.LZC, {
@@ -119,14 +119,14 @@ function B(e) {
     }) : (0, r.jsx)(c.LZC, {
       size: 90
     }), "" !== t.summary && (0, r.jsx)(c.Text, {
-      className: s()(T.summary, {
+      className: o()(T.summary, {
         [T.blackSummary]: x
       }),
       style: null != t.bannerTextColor ? {
         color: t.bannerTextColor
       } : true,
       variant: "text-md/normal",
-      children: t.skuId === i.T.DISXCORE ? (0, r.jsx)(j, {
+      children: t.skuId === s.T.DISXCORE ? (0, r.jsx)(j, {
         category: t
       }) : t.summary
     }), !l && (0, r.jsx)(S.Z, {

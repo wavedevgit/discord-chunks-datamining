@@ -33,11 +33,11 @@ let u = () => 4 * Math.random() + 8,
   f = () => (0, Chunk951288.jsx)("div", {
     className: Chunk654664.skeletons,
     children: d.map(e => (0, r.jsxs)("div", {
-      className: s.cardsContainer,
+      className: o.cardsContainer,
       children: [(0, r.jsx)("div", {
-        className: a()(o.skeleton, i.shopBanner),
+        className: a()(i.skeleton, s.shopBanner),
         children: (0, r.jsx)("div", {
-          className: o.bannerBody
+          className: i.bannerBody
         })
       }), Array.from({
         length: e

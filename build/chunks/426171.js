@@ -2,9 +2,9 @@
 /** chunk id: 426171, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Kp: () => v,
+  Kp: () => O,
   u9: () => S,
-  xV: () => O
+  xV: () => v
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./704826.js"), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk843611 = require("./843611.js"),
@@ -32,11 +32,11 @@ let C = "".concat("#").concat("itemSkuId", "="),
       }
     }, [e, t.pathname])
   },
-  v = () => {
+  O = () => {
     let e = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.getLayers().includes(Chunk981631.S9g.COLLECTIBLES_SHOP)),
       t = (0, Chunk258939.R)(),
       n = Chunk647438.useRef(null),
-      s = (0, Chunk843611.TH)(),
+      o = (0, Chunk843611.TH)(),
       C = Chunk607070.pathname === Chunk981631.Z5c.COLLECTIBLES_SHOP ? Chunk100527.Z.HOME_PAGE_SHOP_TAB : Chunk607070.pathname === Chunk981631.Z5c.COLLECTIBLES_SHOP_FULLSCREEN ? Chunk100527.Z.COLLECTIBLES_SHOP_FULLSCREEN : Chunk100527.Z.COLLECTIBLES_SHOP,
       {
         analyticsLocations: E
@@ -47,11 +47,11 @@ let C = "".concat("#").concat("itemSkuId", "="),
       let t = b.exec(Chunk607070.hash);
       null != exports ? require.current = exports[1] : require.current = null
     }, [S, module, Chunk607070.hash]);
-    let v = (0, Chunk442837.e7)([Chunk328347.Z], () => Chunk328347.Z.initialProductSkuId);
+    let O = (0, Chunk442837.e7)([Chunk328347.Z], () => Chunk328347.Z.initialProductSkuId);
     Chunk647438.useEffect(() => {
       if (exports) return;
       let r = null;
-      if (null != (r = module ? v : require.current)) {
+      if (null != (r = module ? O : require.current)) {
         let e = setTimeout(() => {
           (e => {
             let {
@@ -59,28 +59,28 @@ let C = "".concat("#").concat("itemSkuId", "="),
               analyticsLocations: n,
               analyticsSource: r,
               tab: l
-            } = e, a = u.Z.getProduct(t), s = u.Z.getCategoryForProduct(t);
-            if (null != a && null != s) {
+            } = e, a = u.Z.getProduct(t), o = u.Z.getCategoryForProduct(t);
+            if (null != a && null != o) {
               let e = a,
-                o = (0, _.oQ)({
+                i = (0, m.oQ)({
                   product: a
                 }),
                 c = document.getElementById("shop-item-".concat(e.skuId));
               if (c !== document.activeElement && (null == c || c.focus()), null != a.variantGroupStoreListingId) {
                 let n = u.Z.getProductByStoreListingId(a.variantGroupStoreListingId);
                 if (null != n) {
-                  var i;
+                  var s;
                   e = n;
-                  let r = null == (i = n.variants) ? true : i.findIndex(e => e.skuId === t);
+                  let r = null == (s = n.variants) ? true : s.findIndex(e => e.skuId === t);
                   null != r && r > false && (0, g.$)(n, r)
                 }
               }(0, p.T)({
                 product: e,
-                category: s,
+                category: o,
                 analyticsSource: r,
                 analyticsLocations: n,
                 tab: l,
-                shouldCheckoutWithOrbs: o
+                shouldCheckoutWithOrbs: i
               })
             }
           })({
@@ -92,18 +92,18 @@ let C = "".concat("#").concat("itemSkuId", "="),
         }, 250);
         return () => clearTimeout(module)
       }
-    }, [module, E, C, exports, v, S])
+    }, [module, E, C, exports, O, S])
   },
-  O = e => {
+  v = e => {
     let t = r.useRef({}),
-      n = (0, a.e7)([s.Z], () => s.Z.useReducedMotion),
+      n = (0, a.e7)([o.Z], () => o.Z.useReducedMotion),
       l = (0, a.e7)([u.Z], () => u.Z.isFetchingCategories),
-      [i, o] = r.useState(null),
+      [s, i] = r.useState(null),
       c = r.useCallback((e, n) => {
         t.current[e] = n
       }, []),
       d = r.useCallback(r => {
-        l ? o(r) : setTimeout(() => {
+        l ? i(r) : setTimeout(() => {
           let l = t.current[r];
           null != l && (null == e || e.scrollIntoViewNode({
             node: l,
@@ -112,10 +112,10 @@ let C = "".concat("#").concat("itemSkuId", "="),
             shouldScrollToStart: true
           }))
         }, 100)
-      }, [e, n, l, o]);
+      }, [e, n, l, i]);
     return r.useEffect(() => {
-      l || null == i || (d(i), o(null))
-    }, [l, d, i, o]), {
+      l || null == s || (d(s), i(null))
+    }, [l, d, s, i]), {
       setCategoryRef: c,
       handleScrollToCategory: d
     }

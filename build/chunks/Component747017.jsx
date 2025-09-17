@@ -56,7 +56,7 @@ function v(e) {
     }, [n]);
   if ((0, l.e7)([_.Z], () => _.Z.isBlockedOrIgnored(null == t ? true : t.id))) return null;
   let L = (null == t ? true : t.bot) === true,
-    j = (null == x ? true : x.state) != null && "xs" === S,
+    j = ((null == x ? true : x.state) != null || null != D) && "xs" === S,
     M = () => {
       if (null != P) return (0, r.jsx)(h.Z, {
         stream: P,
@@ -95,7 +95,7 @@ function v(e) {
       [O.textXs]: "xs" === S,
       [O.textSm]: "sm" === S
     }),
-    U = () => null == x ? null : (0, r.jsx)(m.Z, {
+    U = () => null == x && null == D ? null : (0, r.jsx)(m.Z, {
       customStatusActivity: x,
       textSize: S,
       animateEmoji: A,

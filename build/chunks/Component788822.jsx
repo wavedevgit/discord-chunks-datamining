@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk180650 = require("./180650.js"),
   Chunk622535 = require("./622535.js"),
   Chunk481060 = require("./481060.js"),
@@ -24,8 +24,8 @@ let C = e => {
   let b, {
     category: E,
     subblock: S,
-    badgeText: v,
-    handleTransition: O
+    badgeText: O,
+    handleTransition: v
   } = e;
   null != S && (b = null == (t = g.Z.getCategoryByStoreListingId(null == S ? true : S.categoryStoreListingId)) ? true : t.skuId);
   let x = null != (n = null != b ? b : null == E ? true : E.skuId) ? n : "",
@@ -34,22 +34,22 @@ let C = e => {
     } = (0, f.E)(x, "home", "marketing featured block"),
     T = (0, p.YG)(E, S),
     L = l.useRef(null),
-    j = x === i.T.NAMEPLATES_V3,
+    j = x === s.T.NAMEPLATES_V3,
     k = j ? "NAMEPLATES VOL.3" : null,
     B = null == S ? true : S.bodyText,
     I = (0, d.sp)();
-  return (0, r.jsx)(o.$, {
+  return (0, r.jsx)(i.$, {
     innerRef: L,
     onChange: y,
     threshold: 0,
     children: (0, r.jsxs)(c.P3F, {
-      className: m.featuredBlock,
+      className: _.featuredBlock,
       innerRef: L,
       style: {
         backgroundImage: "url(".concat(T, ")")
       },
       onClick: () => {
-        O("shop marketing tile", x), u.default.track(h.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        v("shop marketing tile", x), u.default.track(h.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == I ? true : I.sessionId,
           sku_id: x,
           page_type: "home",
@@ -60,16 +60,16 @@ let C = e => {
           cta_name: null
         })
       },
-      children: [null != v && (0, r.jsx)(c.IGR, {
+      children: [null != O && (0, r.jsx)(c.IGR, {
         disableColor: true,
-        text: v,
-        className: m.featuredBlockBadge
+        text: O,
+        className: _.featuredBlockBadge
       }), (0, r.jsxs)("div", {
-        className: m.featuredBlockTextContainer,
+        className: _.featuredBlockTextContainer,
         children: [null != k && (0, r.jsx)(c.X6q, {
           lineClamp: 2,
-          className: s()(m.featuredBlockTitleText, {
-            [m.featuredBlockTitleTextNameplate]: j
+          className: o()(_.featuredBlockTitleText, {
+            [_.featuredBlockTitleTextNameplate]: j
           }),
           style: {
             color: null != (a = null == S ? true : S.bannerTextColor) ? a : "white"
@@ -78,7 +78,7 @@ let C = e => {
           children: k
         }), null != B && (0, r.jsx)(c.X6q, {
           lineClamp: null != k ? 2 : 4,
-          className: m.featuredBlockBodyText,
+          className: _.featuredBlockBodyText,
           style: {
             color: null != (C = null == S ? true : S.bannerTextColor) ? C : "white"
           },
@@ -86,12 +86,12 @@ let C = e => {
           children: B
         })]
       }), (0, r.jsx)("div", {
-        className: m.featuredBlockButtonContainer,
+        className: _.featuredBlockButtonContainer,
         children: (0, r.jsx)(c.zxk, {
           variant: "overlay-primary",
-          text: _.intl.string(_.t.jVcuVV),
+          text: m.intl.string(m.t.jVcuVV),
           onClick: e => {
-            O("shop marketing take me there button", x), e.stopPropagation(), u.default.track(h.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            v("shop marketing take me there button", x), e.stopPropagation(), u.default.track(h.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
               collectibles_shop_session_id: null == I ? true : I.sessionId,
               sku_id: x,
               page_type: "home",

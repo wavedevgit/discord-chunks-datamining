@@ -321,15 +321,18 @@ let Y = function(e) {
           t = y.ZP.getSwitchingPlansDisabledMessage(i);
         return (0, r.jsxs)("div", {
           className: x.toolsButtons,
-          children: [(0, r.jsx)("div", {
-            className: x.secondaryBannerTextButtonContainer,
-            children: W ? (0, r.jsx)(l.Avr, {
+          children: [W ? (0, r.jsx)("div", {
+            className: x.secondaryBannerTextButtonContainerWithPause,
+            children: (0, r.jsx)(l.Avr, {
               variant: "always-white",
               disabled: _,
               onClick: J,
               size: "sm",
               text: D.intl.string(D.t.eFlYVF)
-            }) : (0, r.jsx)(l.Avr, {
+            })
+          }) : (0, r.jsx)("div", {
+            className: x.secondaryBannerTextButtonContainer,
+            children: (0, r.jsx)(l.Avr, {
               variant: "always-white",
               onClick: $,
               disabled: _,

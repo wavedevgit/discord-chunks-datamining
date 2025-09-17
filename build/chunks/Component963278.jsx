@@ -21,15 +21,15 @@ let p = e => {
     shelf: t,
     handleTransition: n,
     tab: l
-  } = e, p = (0, s.e7)([o.default], () => o.default.getCurrentUser());
+  } = e, p = (0, o.e7)([i.default], () => i.default.getCurrentUser());
   return null == p ? null : (0, r.jsxs)("div", {
     className: a()(f.shelfBlockContainer, f.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: f.blockHeader,
-      children: [(0, r.jsx)(i.X6q, {
+      children: [(0, r.jsx)(s.X6q, {
         variant: "heading-lg/semibold",
         children: t.name
-      }), (0, r.jsx)(i.zxk, {
+      }), (0, r.jsx)(s.zxk, {
         variant: "secondary",
         text: g.intl.formatToPlainString(g.t.bc9RBA, {
           category_name: t.name
@@ -41,15 +41,15 @@ let p = e => {
       children: (0, r.jsx)(r.Fragment, {
         children: t.rankedSkuIds.map((e, n) => {
           let a = u.Z.getCategoryForProduct(e),
-            s = u.Z.getProduct(e);
-          return null == a || null == s ? null : (0, r.jsx)(c.k0, {
+            o = u.Z.getProduct(e);
+          return null == a || null == o ? null : (0, r.jsx)(c.k0, {
             newValue: {
               tilePosition: n,
               pageSection: t.name,
               categoryPosition: 2
             },
             children: (0, r.jsx)(d.Z, {
-              product: s,
+              product: o,
               category: a,
               user: p,
               tab: l

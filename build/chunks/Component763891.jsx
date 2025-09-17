@@ -39,57 +39,57 @@ function N(e) {
   let {
     isFetchingCategories: n,
     isFullScreen: N,
-    scrollerRef: A,
-    tab: P
+    scrollerRef: P,
+    tab: A
   } = e, R = (0, g.sp)(), Z = null != (t = null == R ? true : R.sessionId) ? t : "", {
     noCache: w,
-    includeUnpublished: F
-  } = (0, b.Z)(), H = (0, s.e7)([u.default], () => u.default.getCurrentUser()), D = (0, s.e7)([f.Z], () => f.Z.productsWithVariantsAsGroup), [M, W] = l.useState(1), U = (0, c.Fg)(), V = (0, i.ap)(U), [z, G, q] = l.useMemo(() => {
-    switch (P) {
+    includeUnpublished: M
+  } = (0, b.Z)(), F = (0, o.e7)([u.default], () => u.default.getCurrentUser()), H = (0, o.e7)([f.Z], () => f.Z.productsWithVariantsAsGroup), [D, W] = l.useState(1), U = (0, c.Fg)(), V = (0, s.ap)(U), [z, G, q] = l.useMemo(() => {
+    switch (A) {
       case E.AW.AVATAR_DECORATIONS:
-        return [v.intl.string(v.t.dRZYND), V ? L.Z : T.Z, a.Z.AVATAR_DECORATION];
+        return [O.intl.string(O.t.dRZYND), V ? L.Z : T.Z, a.Z.AVATAR_DECORATION];
       case E.AW.PROFILE_EFFECTS:
-        return [v.intl.string(v.t["1cNjt7"]), V ? I.Z : B.Z, a.Z.PROFILE_EFFECT];
+        return [O.intl.string(O.t["1cNjt7"]), V ? I.Z : B.Z, a.Z.PROFILE_EFFECT];
       case E.AW.NAMEPLATES:
-        return [v.intl.string(v.t.V68Fq6), V ? k.Z : j.Z, a.Z.NAMEPLATE];
+        return [O.intl.string(O.t.V68Fq6), V ? k.Z : j.Z, a.Z.NAMEPLATE];
       case E.AW.BUNDLES:
-        return [v.intl.string(v.t.FYFppq), V ? y.Z : x.Z, a.Z.BUNDLE]
+        return [O.intl.string(O.t.FYFppq), V ? y.Z : x.Z, a.Z.BUNDLE]
     }
-  }, [P, V]), K = (0, p.a)(), Y = l.useMemo(() => K(D.filter(e => {
+  }, [A, V]), K = (0, p.a)(), Y = l.useMemo(() => K(H.filter(e => {
     var t;
     return e.type === q || e.type === a.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === q)) === true
-  })), [D, q, K]), X = (0, h.l)(Y);
+  })), [H, q, K]), X = (0, h.l)(Y);
   return (l.useEffect(() => {
-    (0, _.n)({
+    (0, m.n)({
       sessionId: Z,
-      checkpoint: _.a.SHOP_MOUNTED,
-      tab: P,
+      checkpoint: m.a.SHOP_MOUNTED,
+      tab: A,
       isFullScreen: N,
-      unpublishedCategoriesShown: F,
+      unpublishedCategoriesShown: M,
       cacheDisabled: w
     })
   }, []), l.useEffect(() => {
-    n || (0, _.n)({
+    n || (0, m.n)({
       sessionId: Z,
-      checkpoint: _.a.SHOP_RENDERED,
-      tab: P,
+      checkpoint: m.a.SHOP_RENDERED,
+      tab: A,
       isFullScreen: N,
-      unpublishedCategoriesShown: F,
+      unpublishedCategoriesShown: M,
       cacheDisabled: w
     })
-  }, [Z, N, F, w, n, P]), n || null == H) ? (0, r.jsx)(m.Z, {}) : (0, r.jsxs)(r.Fragment, {
+  }, [Z, N, M, w, n, A]), n || null == F) ? (0, r.jsx)(_.Z, {}) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       style: {
         backgroundImage: "url(".concat(G, ")")
       },
-      className: O.bannerContainer,
-      children: (0, r.jsx)(o.X6q, {
+      className: v.bannerContainer,
+      children: (0, r.jsx)(i.X6q, {
         variant: "heading-xxl/extrabold",
         children: z
       })
     }), (0, r.jsx)("div", {
-      className: O.products,
-      children: X.slice(40 * (M - 1), 40 * M).map((e, t) => {
+      className: v.products,
+      children: X.slice(40 * (D - 1), 40 * D).map((e, t) => {
         let n = f.Z.getCategory(e.categorySkuId);
         return null == n ? null : (0, r.jsx)(g.k0, {
           newValue: {
@@ -97,17 +97,17 @@ function N(e) {
           },
           children: (0, r.jsx)(C.Z, {
             product: e,
-            user: H,
+            user: F,
             category: n,
-            tab: P
+            tab: A
           }, e.skuId)
         }, e.skuId)
       })
     }), X.length > 40 && (0, r.jsx)("div", {
-      className: O.paginationContainer,
+      className: v.paginationContainer,
       children: (0, r.jsx)("div", {
-        children: (0, r.jsx)(o.DsT, {
-          currentPage: M,
+        children: (0, r.jsx)(i.DsT, {
+          currentPage: D,
           totalCount: X.length,
           pageSize: 40,
           onPageChange: e => {
@@ -118,9 +118,9 @@ function N(e) {
               page_category: null == R ? true : R.pageCategory,
               page_index: e,
               page_size: 40,
-              cta_name: "".concat(P, " page ").concat(e),
-              page_type: P
-            }), W(e), null == A || null == (t = A.current) || t.scrollToTop({
+              cta_name: "".concat(A, " page ").concat(e),
+              page_type: A
+            }), W(e), null == P || null == (t = P.current) || t.scrollToTop({
               animate: true
             })
           },

@@ -50,7 +50,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk950796 = require("./950796.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk654924 = require("./654924.js");
-require("./167666.jsx"), Promise.resolve().then(require.bind(require, 62883)).then(e => {
+Promise.resolve().then(require.bind(require, 62883)).then(e => {
   G.isPlatformEmbedded ? window.addEventListener("contextmenu", e.contextMenuCallbackNative, false) : window.addEventListener("contextmenu", e.contextMenuCallbackWeb, false)
 }), (0, Chunk335854.E)({
   getDefaultLinkInterceptor: Chunk315263.default

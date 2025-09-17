@@ -14,16 +14,16 @@ let c = (e, t, n, r) => {
     let {
       scrollTop: l = 0,
       scrollOffset: a = 0,
-      scrollHeight: s = 0,
-      scrollWidth: o = 0
+      scrollHeight: o = 0,
+      scrollWidth: i = 0
     } = r;
-    if (s > 0) {
-      let r = (l + a) / s;
-      r > 0 && i.default.track(e, {
+    if (o > 0) {
+      let r = (l + a) / o;
+      r > 0 && s.default.track(e, {
         scroll_visible_percent: r,
         source: n,
-        page_height: Math.round(s),
-        page_width: Math.round(o),
+        page_height: Math.round(o),
+        page_width: Math.round(i),
         page_session_id: t
       })
     }
@@ -31,20 +31,20 @@ let c = (e, t, n, r) => {
   u = (e, t) => {
     let {
       analyticsSource: n
-    } = (0, s.MV)(t), i = (0, l.h)(c, 5e3, [], {
+    } = (0, o.MV)(t), s = (0, l.h)(c, 5e3, [], {
       trailing: true
     }), u = (0, a.sp)(), d = null == u ? true : u.sessionId;
     return {
       handleScroll: r.useCallback(() => {
         if (null != e.current) {
           let t = e.current.getScrollerNode();
-          null != t && i(o.rMx.COLLECTIBLES_SHOP_SCROLLED, null != d ? d : "", n, {
+          null != t && s(i.rMx.COLLECTIBLES_SHOP_SCROLLED, null != d ? d : "", n, {
             scrollTop: t.scrollTop,
             scrollOffset: t.offsetHeight,
             scrollHeight: t.scrollHeight,
             scrollWidth: t.scrollWidth
           })
         }
-      }, [i, n, d, e])
+      }, [s, n, d, e])
     }
   }

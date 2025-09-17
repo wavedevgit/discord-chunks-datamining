@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk434650 = require("./434650.js"),
@@ -33,18 +33,18 @@ function T(e) {
     products: t,
     header: n,
     category: l
-  } = e, a = (0, i.e7)([u.default], () => u.default.getCurrentUser()), s = (0, O.St)(t);
+  } = e, a = (0, s.e7)([u.default], () => u.default.getCurrentUser()), o = (0, v.St)(t);
   return null == a || 0 === t.length ? null : (0, r.jsxs)("div", {
-    children: [null != n ? (0, r.jsx)(o.Text, {
+    children: [null != n ? (0, r.jsx)(i.Text, {
       className: y.itemTypeTitle,
       color: "header-secondary",
       variant: "text-sm/bold",
       children: n
-    }) : (0, r.jsx)(o.LZC, {
+    }) : (0, r.jsx)(i.LZC, {
       size: 24
     }), (0, r.jsx)("div", {
       className: y.cardsContainer,
-      children: s.map((e, t) => (0, r.jsx)(d.k0, {
+      children: o.map((e, t) => (0, r.jsx)(d.k0, {
         newValue: {
           tilePosition: t
         },
@@ -73,13 +73,13 @@ function j(e) {
   let {
     category: t,
     isFullScreen: n
-  } = e, [a, s] = l.useState(false), i = (0, c.O)(e => {
-    s(e)
-  }, n ? .13 : .15), o = (0, f.B)("CollectiblesCatalogContent");
+  } = e, [a, o] = l.useState(false), s = (0, c.O)(e => {
+    o(e)
+  }, n ? .13 : .15), i = (0, f.B)("CollectiblesCatalogContent");
   return (0, r.jsxs)("div", {
     className: y.categoryWrapper,
-    ref: i,
-    children: [o && null != t.catalogBannerAsset ? (0, r.jsx)(m.Z, {
+    ref: s,
+    children: [i && null != t.catalogBannerAsset ? (0, r.jsx)(_.Z, {
       category: t
     }) : (0, r.jsx)(C.Z, {
       category: t,
@@ -95,46 +95,46 @@ function k(e) {
   let {
     sortedCategories: n,
     setCategoryRef: a,
-    isFullScreen: i,
+    isFullScreen: s,
     currentPage: c,
     handlePageChange: u
   } = e, f = (0, d.sp)(), p = (0, S.R)(), h = null != (t = null == f ? true : f.sessionId) ? t : "", {
-    noCache: m,
+    noCache: _,
     includeUnpublished: C
-  } = (0, v.Z)(), E = l.useMemo(() => n.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
+  } = (0, O.Z)(), E = l.useMemo(() => n.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
     let {
       products: t
     } = e;
     return t.length > 0
-  }), [n]), O = l.useMemo(() => {
+  }), [n]), v = l.useMemo(() => {
     let e = (c - 1) * x.kN;
     return E.slice(e, e + x.kN)
   }, [E, c]);
   l.useEffect(() => {
-    (0, _.n)({
+    (0, m.n)({
       sessionId: h,
-      checkpoint: _.a.SHOP_MOUNTED,
+      checkpoint: m.a.SHOP_MOUNTED,
       tab: x.AW.CATALOG,
-      isFullScreen: i,
+      isFullScreen: s,
       unpublishedCategoriesShown: C,
-      cacheDisabled: m
+      cacheDisabled: _
     })
   }, []), l.useEffect(() => {
-    p || 0 === O.length || (0, _.n)({
+    p || 0 === v.length || (0, m.n)({
       sessionId: h,
-      checkpoint: _.a.SHOP_RENDERED,
+      checkpoint: m.a.SHOP_RENDERED,
       tab: x.AW.CATALOG,
-      isFullScreen: i,
+      isFullScreen: s,
       unpublishedCategoriesShown: C,
-      cacheDisabled: m
+      cacheDisabled: _
     })
-  }, [h, i, C, m, p, O.length]);
+  }, [h, s, C, _, p, v.length]);
   let T = (0, g.FF)("CollectiblesBrowse");
   return p ? (0, r.jsx)(b.Z, {}) : (0, r.jsxs)("div", {
-    className: s()(y.categories, {
+    className: o()(y.categories, {
       [y.categoriesNoFilter]: !T
     }),
-    children: [O.map((e, t) => (0, r.jsx)("div", {
+    children: [v.map((e, t) => (0, r.jsx)("div", {
       ref: t => a(e.skuId, t),
       children: (0, r.jsx)(d.k0, {
         newValue: {
@@ -142,12 +142,12 @@ function k(e) {
         },
         children: (0, r.jsx)(j, {
           category: e,
-          isFullScreen: i
+          isFullScreen: s
         })
       })
     }, e.skuId)), (0, r.jsx)("div", {
       className: y.paginationContainer,
-      children: (0, r.jsx)(o.DsT, {
+      children: (0, r.jsx)(i.DsT, {
         currentPage: c,
         totalCount: E.length,
         pageSize: x.kN,

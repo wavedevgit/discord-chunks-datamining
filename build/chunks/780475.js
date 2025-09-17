@@ -38,41 +38,41 @@ let f = e => {
           return a.Z.COLLECTIBLES_SHOP_FULLSCREEN
       }
     })(e), {
-      analyticsLocations: i,
-      newestAnalyticsLocation: o
-    } = (0, s.ZP)([...n, a.Z.COLLECTIBLES_SHOP, r]);
+      analyticsLocations: s,
+      newestAnalyticsLocation: i
+    } = (0, o.ZP)([...n, a.Z.COLLECTIBLES_SHOP, r]);
     return {
       analyticsSource: t,
-      analyticsLocations: i,
-      newestAnalyticsLocation: o,
+      analyticsLocations: s,
+      newestAnalyticsLocation: i,
       currentTabLocation: r
     }
   },
   p = (e, t, n, l, a) => {
     let {
-      analyticsLocations: s,
-      analyticsSource: o,
+      analyticsLocations: o,
+      analyticsSource: i,
       currentTabLocation: c,
       newestAnalyticsLocation: g
     } = f(t);
     r.useEffect(() => {
       if (l !== u.f7.VISIBLE || g !== c) return;
-      let r = t === u.AW.CATALOG ? a : o;
-      i.default.track(d.rMx.COLLECTIBLES_SHOP_VIEWED, {
-        location_stack: s,
+      let r = t === u.AW.CATALOG ? a : i;
+      s.default.track(d.rMx.COLLECTIBLES_SHOP_VIEWED, {
+        location_stack: o,
         source: r,
         page_session_id: e,
         page_type: t === u.AW.CATALOG ? "full" : t,
         category: t === u.AW.HOME ? true : n
       })
-    }, [s, e, t, n, c, l, a, o, g])
+    }, [o, e, t, n, c, l, a, i, g])
   },
   h = (e, t) => {
     let {
       analyticsLocations: n
     } = f(e);
     r.useEffect(() => {
-      null == t || o.ZP.canUseCollectibles(t) || i.default.track(d.rMx.PREMIUM_UPSELL_VIEWED, {
+      null == t || i.ZP.canUseCollectibles(t) || s.default.track(d.rMx.PREMIUM_UPSELL_VIEWED, {
         type: g.cd.COLLECTIBLES_SHOP,
         location_stack: n
       })

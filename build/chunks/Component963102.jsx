@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk636977 = require("./636977.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -42,7 +42,7 @@ function B(e) {
   return (0, r.jsx)(h.Z.Title, {
     onClick: () => a(t),
     wrapperClassName: k.tabWrapper,
-    className: s()(k.tab, {
+    className: o()(k.tab, {
       [k.selected]: l
     }),
     children: n
@@ -54,11 +54,11 @@ function I(e) {
     tab: t,
     selected: n,
     displayText: a,
-    handleTransition: i
-  } = e, [o, u] = l.useState(false), d = l.useRef(null), [g, _] = l.useState(0), m = l.useRef(false), C = e => {
-    clearTimeout(g), _(setTimeout(() => {
+    handleTransition: s
+  } = e, [i, u] = l.useState(false), d = l.useRef(null), [g, m] = l.useState(0), _ = l.useRef(false), C = e => {
+    clearTimeout(g), m(setTimeout(() => {
       u(e)
-    }, 100)), e && (m.current = p.Z.keyboardModeEnabled)
+    }, 100)), e && (_.current = p.Z.keyboardModeEnabled)
   }, b = e => {
     ("Enter" === e.key || " " === e.key) && (e.preventDefault(), C(true))
   };
@@ -68,29 +68,29 @@ function I(e) {
     onMouseLeave: () => C(false),
     children: (0, r.jsx)(c.yRy, {
       targetElementRef: d,
-      shouldShow: o,
+      shouldShow: i,
       position: "bottom",
       align: "left",
       onRequestOpen: () => C(true),
       onRequestClose: () => {
         var e;
-        m.current && !p.Z.keyboardModeEnabled && (0, f.Qj)(), C(false), null == (e = d.current) || e.focus()
+        _.current && !p.Z.keyboardModeEnabled && (0, f.Qj)(), C(false), null == (e = d.current) || e.focus()
       },
       renderPopout: e => {
         let {
           closePopout: t
         } = e;
         return (0, r.jsx)(x.Z, {
-          handleTransition: i,
+          handleTransition: s,
           onClose: t
         })
       },
       children: (e, l) => {
-        var o, u;
+        var i, u;
         let {
           isShown: g
         } = l;
-        return (0, r.jsx)(h.Z.Title, (o = function(e) {
+        return (0, r.jsx)(h.Z.Title, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -109,10 +109,10 @@ function I(e) {
           return e
         }({}, e), u = u = {
           ref: d,
-          onClick: () => i(t),
+          onClick: () => s(t),
           onKeyDown: b,
           wrapperClassName: k.tabWrapper,
-          className: s()(k.tab, {
+          className: o()(k.tab, {
             [k.selected]: n
           }),
           children: (0, r.jsxs)("span", {
@@ -125,7 +125,7 @@ function I(e) {
               color: "currentColor"
             })]
           })
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(u)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(u)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
@@ -133,8 +133,8 @@ function I(e) {
           }
           return n
         })(Object(u)).forEach(function(e) {
-          Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(u, e))
-        }), o))
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(u, e))
+        }), i))
       }
     })
   })
@@ -147,8 +147,8 @@ function N(e) {
     onClose: a,
     selectedTab: f,
     handleTransition: p
-  } = e, x = (0, g.ZP)(), N = (0, o.e7)([E.default], () => E.default.getCurrentUser()), A = (null == N ? true : N.isStaff()) || (null == N ? true : N.isStaffPersonal()) || false, {
-    enabled: P
+  } = e, x = (0, g.ZP)(), N = (0, i.e7)([E.default], () => E.default.getCurrentUser()), P = (null == N ? true : N.isStaff()) || (null == N ? true : N.isStaffPersonal()) || false, {
+    enabled: A
   } = (0, C.WX)({
     location: "collectibles_shop_header_bar"
   }), R = [{
@@ -158,31 +158,31 @@ function N(e) {
     tab: T.AW.CATALOG,
     displayText: j.intl.string(j.t.Ah5sJi)
   }];
-  P && R.push({
+  A && R.push({
     tab: T.AW.ORBS,
     displayText: j.intl.string(j.t.EBYkzs)
   });
-  let Z = n ? v.DR : a,
+  let Z = n ? O.DR : a,
     w = f === T.AW.ORBS ? L.ZY5.SHOP_ORBS_TAB : L.ZY5.COLLECTIBLES_SHOP,
-    F = l.useCallback(() => {
-      t && (Z(), (0, u.Ou)()), (0, m.Y)({
+    M = l.useCallback(() => {
+      t && (Z(), (0, u.Ou)()), (0, _.Y)({
         pageType: w,
         sectionType: L.jXE.ORBS_BALANCE_MENU,
         ctaObject: L.qAy.CTA_TO_QUEST_HOME
-      }), (0, _.navigateToQuestHome)({
-        fromContent: i.j.ORBS_BALANCE_MENU
+      }), (0, m.navigateToQuestHome)({
+        fromContent: s.j.ORBS_BALANCE_MENU
       })
     }, [Z, t, w]),
-    H = (0, O.eN)("collectibles_shop_header_bar");
+    F = (0, v.eN)("collectibles_shop_header_bar");
   return (0, r.jsx)(c.f6W, {
     theme: x,
     children: e => (0, r.jsxs)(h.Z, {
       disableDoubleClick: true,
-      className: s()(e, k.headerBar, {
+      className: o()(e, k.headerBar, {
         [k.fullscreenHeaderBar]: t
       }),
-      innerClassname: P ? k.headerBarInner : true,
-      toolbar: t || !A ? null : (0, r.jsx)(l.Fragment, {}),
+      innerClassname: A ? k.headerBarInner : true,
+      toolbar: t || !P ? null : (0, r.jsx)(l.Fragment, {}),
       children: [(0, r.jsxs)(c.P3F, {
         className: k.shopHomeLink,
         onClick: () => p(T.AW.HOME),
@@ -211,17 +211,17 @@ function N(e) {
             handleTransition: p
           }, t)
         })
-      }), (P || t || H) && (0, r.jsxs)("div", {
+      }), (A || t || F) && (0, r.jsxs)("div", {
         className: k.alignedRightContent,
-        children: [H && (0, r.jsx)(y.Z, {
+        children: [F && (0, r.jsx)(y.Z, {
           handleTransition: p,
           selectedTab: f
-        }), P && (0, r.jsx)(b.V9, {
+        }), A && (0, r.jsx)(b.V9, {
           anchorPillType: t ? "SHOP_FULLSCREEN" : "SHOP",
           analyticsPage: w,
           cardAlignment: b.V9.CardAlignment.END,
           ctaText: j.intl.string(j.t.VC4Mq6),
-          ctaOnClick: F,
+          ctaOnClick: M,
           className: k.balanceWidgetMenu
         }), t && (0, r.jsx)(d.Z, {
           closeAction: Z,

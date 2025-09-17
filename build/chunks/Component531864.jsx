@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk979554 = require("./979554.js"),
   Chunk876917 = require("./876917.jsx"),
   Chunk597688 = require("./597688.js"),
@@ -96,7 +96,7 @@ let f = {
       peaking: t,
       transitioning: n,
       style: a
-    } = e, f = window.innerHeight, [h, _] = l.useState(false), m = p.map(e => {
+    } = e, f = window.innerHeight, [h, m] = l.useState(false), _ = p.map(e => {
       let {
         skuId: t
       } = e;
@@ -104,27 +104,27 @@ let f = {
     });
     return l.useEffect(() => {
       n && setTimeout(() => {
-        _(true)
+        m(true)
       }, d.lb)
     }, [n]), (0, r.jsx)("div", {
       style: a,
-      className: s()(g.jumbleWrapper, {
+      className: o()(g.jumbleWrapper, {
         [g.peaking]: t,
         [g.transitioned]: h
       }),
       children: p.map((e, t) => {
         var l, a;
         let {
-          top: s,
+          top: o,
           left: c,
           rotation: p,
           size: h,
-          skuId: _
-        } = e, C = null == (l = m[t]) ? true : l.items[0], b = null == (a = m[t]) ? true : a.type, E = b === i.Z.AVATAR_DECORATION ? 384 : 512;
+          skuId: m
+        } = e, C = null == (l = _[t]) ? true : l.items[0], b = null == (a = _[t]) ? true : a.type, E = b === s.Z.AVATAR_DECORATION ? 384 : 512;
         return (0, r.jsxs)("div", {
           className: g.asset,
           style: {
-            top: n ? -f - E : s,
+            top: n ? -f - E : o,
             left: n ? "".concat(c - 75 - 350 * Math.random()) : c,
             transform: "rotate(".concat(p, "deg)"),
             height: h.y,
@@ -132,14 +132,14 @@ let f = {
             transitionDelay: "".concat(Math.random() / 3, "s"),
             transitionDuration: "".concat(d.lb - 200 * Math.random(), "ms")
           },
-          children: [null != C && b === i.Z.AVATAR_DECORATION && (0, r.jsx)(u.R, {
+          children: [null != C && b === s.Z.AVATAR_DECORATION && (0, r.jsx)(u.R, {
             item: C
-          }), null != C && b === i.Z.PROFILE_EFFECT && (0, r.jsx)(o.Z, {
+          }), null != C && b === s.Z.PROFILE_EFFECT && (0, r.jsx)(i.Z, {
             profileEffectId: C.id,
             isPurchased: false,
             isHovering: true
           })]
-        }, _ + t)
+        }, m + t)
       })
     })
   }

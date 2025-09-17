@@ -134,7 +134,7 @@ function C(e) {
     });
   return (i.useEffect(() => {
     (null == t ? true : t.type) === E.IIU.HANG_STATUS && C && m.default.track(E.rMx.VIEW_HANG_STATUS, {
-      source: "UserProfilePopout",
+      source: "UserActivity",
       guild_id: null == R ? true : R.guild_id,
       channel_id: null == R ? true : R.id
     })

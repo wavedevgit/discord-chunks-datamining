@@ -2,12 +2,12 @@
 /** chunk id: 838819, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => F
+  default: () => M
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk772848 = require("./772848.js"),
   Chunk399606 = require("./399606.js"),
   Chunk952265 = require("./952265.js"),
@@ -47,28 +47,28 @@ let w = e => {
     return l.useEffect(() => {
       if (!n || a) return;
       let e = e => {
-        e.key === P.mR.Escape && r()
+        e.key === A.mR.Escape && r()
       };
       return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
     }, [n, a, r]), t
   },
-  F = function(e) {
+  M = function(e) {
     let {
       isFullScreen: t = true,
       tab: n = N.AW.HOME
     } = e;
-    (0, h.z)(p.f), (0, O.f)();
-    let a = (0, g.Z)((0, i.Z)()),
-      c = (0, o.e7)([m.default], () => m.default.getCurrentUser()),
-      P = (0, I.G)("CollectiblesShop"),
+    (0, h.z)(p.f), (0, v.f)();
+    let a = (0, g.Z)((0, s.Z)()),
+      c = (0, i.e7)([_.default], () => _.default.getCurrentUser()),
+      A = (0, I.G)("CollectiblesShop"),
       {
-        onClose: F
+        onClose: M
       } = (0, k.Db)(),
       {
-        currentTab: H,
-        hasFilters: D
+        currentTab: F,
+        hasFilters: H
       } = (0, y.S)(),
-      M = l.useMemo(() => n === N.AW.HOME && H && D() ? H : n, [n, H, D]),
+      D = l.useMemo(() => n === N.AW.HOME && F && H() ? F : n, [n, F, H]),
       {
         categories: W,
         refreshCategories: U
@@ -76,12 +76,12 @@ let w = e => {
         logPerf: true
       }, {
         sessionId: a,
-        tab: M,
+        tab: D,
         isFullScreen: t
       }),
-      V = (0, v.O)(W),
+      V = (0, O.O)(W),
       [z, G] = l.useState(),
-      q = (0, o.e7)([b.Z], () => {
+      q = (0, i.e7)([b.Z], () => {
         var e;
         return null == (e = b.Z.getCategory(z)) ? true : e.name
       }),
@@ -94,7 +94,7 @@ let w = e => {
         selectedTab: Q,
         transitionState: J,
         transitionToTab: $
-      } = (0, x.B)(M, t);
+      } = (0, x.B)(D, t);
     (0, E.q3)(a, Q, q, J, K), (0, E.EB)(Q, c);
     let {
       dismissShopButtonDC: ee
@@ -102,9 +102,9 @@ let w = e => {
     l.useEffect(() => {
       ee()
     }, [ee]), l.useEffect(() => {
-      t || (0, d.Y)(A.Z5c.COLLECTIBLES_SHOP)
+      t || (0, d.Y)(P.Z5c.COLLECTIBLES_SHOP)
     }, [t]);
-    let et = (0, o.e7)([_.Z], () => _.Z.getLayers().includes(A.S9g.COLLECTIBLES_SHOP)),
+    let et = (0, i.e7)([m.Z], () => m.Z.getLayers().includes(P.S9g.COLLECTIBLES_SHOP)),
       en = l.useRef(null),
       er = l.useRef(null);
     (0, u.Tbt)(en);
@@ -120,10 +120,10 @@ let w = e => {
       }
     }, [t, el]);
     let {
-      analyticsLocations: es
+      analyticsLocations: eo
     } = (0, E.MV)(Q);
     return ea && !t ? null : (0, r.jsx)(f.Gt, {
-      value: es,
+      value: eo,
       children: (0, r.jsx)(C.k0, {
         newValue: {
           sessionId: a,
@@ -131,22 +131,22 @@ let w = e => {
           pageSize: N.kN
         },
         children: (0, r.jsx)(w, {
-          onClose: F,
+          onClose: M,
           shouldAddEventListener: t && !et,
           children: (0, r.jsxs)("div", {
-            className: s()(R.shop, {
-              [Z.shopTakeOver]: P
+            className: o()(R.shop, {
+              [Z.shopTakeOver]: A
             }),
             ref: t ? en : er,
             tabIndex: false,
             children: [(0, r.jsx)(j.I, {
               isFullScreen: t,
               isLayer: et,
-              onClose: F,
+              onClose: M,
               handleTransition: $,
               selectedTab: Q
             }), (0, r.jsx)("div", {
-              className: s()(R.shopViewWrapper, {
+              className: o()(R.shopViewWrapper, {
                 [R.visible]: J === N.f7.VISIBLE,
                 [R.in]: J === N.f7.IN,
                 [R.out]: J === N.f7.OUT
