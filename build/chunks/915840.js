@@ -638,6 +638,24 @@ let {
         opacity: 1
       }
     },
+    CHECKBOX_BORDER_ACTIVE: {
+      [r.DARK]: {
+        raw: "NEUTRAL_12",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "NEUTRAL_49",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "NEUTRAL_23",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "NEUTRAL_19",
+        opacity: 1
+      }
+    },
     CHECKBOX_BORDER_CHECKED: {
       [r.DARK]: {
         raw: "BLURPLE_18",
@@ -671,6 +689,42 @@ let {
       },
       [r.DARKER]: {
         raw: "NEUTRAL_5",
+        opacity: 1
+      }
+    },
+    CHECKBOX_BORDER_DEFAULT_SELECTED: {
+      [r.DARK]: {
+        raw: "NEUTRAL_12",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "NEUTRAL_49",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "NEUTRAL_23",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "NEUTRAL_19",
+        opacity: 1
+      }
+    },
+    CHECKBOX_BORDER_HOVER_SELECTED: {
+      [r.DARK]: {
+        raw: "NEUTRAL_12",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "NEUTRAL_49",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "NEUTRAL_23",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "NEUTRAL_19",
         opacity: 1
       }
     },
@@ -2420,6 +2474,60 @@ let {
         opacity: 1
       }
     },
+    RADIO_BORDER_ACTIVE: {
+      [r.DARK]: {
+        raw: "NEUTRAL_12",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "NEUTRAL_49",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "NEUTRAL_23",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "NEUTRAL_19",
+        opacity: 1
+      }
+    },
+    RADIO_BORDER_DEFAULT_SELECTED: {
+      [r.DARK]: {
+        raw: "NEUTRAL_12",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "NEUTRAL_49",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "NEUTRAL_23",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "NEUTRAL_19",
+        opacity: 1
+      }
+    },
+    RADIO_BORDER_HOVER_SELECTED: {
+      [r.DARK]: {
+        raw: "NEUTRAL_12",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "NEUTRAL_49",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "NEUTRAL_23",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "NEUTRAL_19",
+        opacity: 1
+      }
+    },
     REDESIGN_BUTTON_PRIMARY_ALT_BORDER: {
       [r.DARK]: {
         raw: "BRAND_300",
@@ -2543,6 +2651,60 @@ let {
       },
       [r.DARKER]: {
         raw: "RED_NEW_38",
+        opacity: 1
+      }
+    },
+    SWITCH_BORDER_ACTIVE: {
+      [r.DARK]: {
+        raw: "NEUTRAL_12",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "NEUTRAL_49",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "NEUTRAL_23",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "NEUTRAL_19",
+        opacity: 1
+      }
+    },
+    SWITCH_BORDER_DEFAULT_SELECTED: {
+      [r.DARK]: {
+        raw: "NEUTRAL_12",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "NEUTRAL_49",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "NEUTRAL_23",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "NEUTRAL_19",
+        opacity: 1
+      }
+    },
+    SWITCH_BORDER_HOVER_SELECTED: {
+      [r.DARK]: {
+        raw: "NEUTRAL_12",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "NEUTRAL_49",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "NEUTRAL_23",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "NEUTRAL_19",
         opacity: 1
       }
     },
