@@ -35,12 +35,12 @@ function Z(e) {
   var t, n;
   let {
     guildId: o
-  } = e, d = (0, a.e7)([h.Z], () => h.Z.getGuild(o)), T = (0, a.e7)([C.Z], () => C.Z.getSortedRoles(o).find(e => {
+  } = e, d = (0, s.e7)([h.Z], () => h.Z.getGuild(o)), I = (0, s.e7)([C.Z], () => C.Z.getSortedRoles(o).find(e => {
     var t;
     return (null == (t = e.tags) ? true : t.premium_subscriber) === null
-  })), Z = (0, a.e7)([b.default], () => b.default.getCurrentUser()), w = null == Z ? true : Z.id, O = (0, a.e7)([x.ZP], () => null != w ? x.ZP.getMember(o, w) : true, [w, o]), k = (null == O ? true : O.premiumSince) != null, A = (0, a.e7)([p.Z], () => p.Z.useReducedMotion), {
-    avatarDecorationSrc: R,
-    avatarSrc: U,
+  })), Z = (0, s.e7)([b.default], () => b.default.getCurrentUser()), w = null == Z ? true : Z.id, O = (0, s.e7)([x.ZP], () => null != w ? x.ZP.getMember(o, w) : true, [w, o]), k = (null == O ? true : O.premiumSince) != null, A = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), {
+    avatarDecorationSrc: U,
+    avatarSrc: R,
     eventHandlers: L
   } = (0, v.Z)({
     userId: null == Z ? true : Z.id,
@@ -48,7 +48,7 @@ function Z(e) {
     size: u.EFr.SIZE_40,
     animateOnHover: !A
   });
-  return null == d || null == O || null == Z ? null : (0, r.jsxs)(s.$, {
+  return null == d || null == O || null == Z ? null : (0, r.jsxs)(l.$, {
     className: y.container,
     children: [(0, r.jsx)("img", {
       alt: "",
@@ -56,24 +56,24 @@ function Z(e) {
       src: S
     }), (0, r.jsxs)("div", {
       className: y.textContainer,
-      children: [(0, r.jsx)(l.xvT, {
+      children: [(0, r.jsx)(a.xvT, {
         variant: "text-md/semibold",
         children: P.intl.string(k ? j.default.KSWK1d : j.default.XXXX5u)
-      }), (0, r.jsx)(l.xvT, {
+      }), (0, r.jsx)(a.xvT, {
         variant: "text-sm/medium",
         children: P.intl.format(k ? j.default["7fWTg4"] : j.default["7PXeeX"], {
           onClick: () => {
             (0, m.f)({
               guildId: o,
               location: {
-                section: I.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR,
-                object: I.qAy.LEARN_MORE
+                section: T.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR,
+                object: T.qAy.LEARN_MORE
               }
             })
           }
         })
       })]
-    }), null != T && !k && (0, r.jsx)(_.l, {
+    }), null != I && !k && (0, r.jsx)(_.l, {
       avatar: (0, r.jsx)(N, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -93,8 +93,8 @@ function Z(e) {
         return e
       }({}, L), n = n = {
         user: Z,
-        src: U,
-        avatarDecoration: R,
+        src: R,
+        avatarDecoration: U,
         size: u.EFr.SIZE_40,
         "aria-hidden": true,
         animate: true
@@ -111,8 +111,8 @@ function Z(e) {
       username: (0, r.jsx)(u.PUh, {
         variant: "text-md/semibold",
         name: E.ZP.getName(o, null, Z),
-        colorString: T.colorString,
-        colorStrings: T.colorStrings
+        colorString: I.colorString,
+        colorStrings: I.colorStrings
       }),
       className: i()(y.content, y.exampleMessage),
       message: P.intl.string(P.t["6OSasb"]),
@@ -124,8 +124,8 @@ function Z(e) {
       guild: d,
       className: y.content,
       analyticsLocation: {
-        page: I.ZY5.GUILD_POWERUPS_OVERVIEW,
-        section: I.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR
+        page: T.ZY5.GUILD_POWERUPS_OVERVIEW,
+        section: T.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR
       },
       color: c.Tt.BRAND,
       size: c.Ph.MEDIUM,

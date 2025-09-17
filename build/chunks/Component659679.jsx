@@ -33,10 +33,10 @@ function f(e) {
       roleColorStrings: null != (o = null == i ? true : i.colorStrings) ? o : null
     }
   }, [t]), x = (0, d.X7)(t.guildId, t.userId, null != v ? v : null);
-  return (0, r.jsx)(s.Z, {
+  return (0, r.jsx)(l.Z, {
     className: g.systemMessageContainer,
     contentClassName: g.systemMessageContent,
-    iconNode: (0, r.jsx)(l.$Eu, {
+    iconNode: (0, r.jsx)(a.$Eu, {
       className: g.icon,
       color: "currentColor",
       size: "sm"
@@ -48,7 +48,7 @@ function f(e) {
     compact: true,
     children: (0, r.jsxs)("span", {
       className: g.boostMessage,
-      children: [(0, r.jsx)(l.PUh, {
+      children: [(0, r.jsx)(a.PUh, {
         className: g.boostMessageUser,
         variant: "text-md/semibold",
         name: f,
@@ -57,7 +57,7 @@ function f(e) {
       }), (0, r.jsx)(o.xvT, {
         variant: "text-md/medium",
         lineClamp: 1,
-        children: (0, r.jsx)(a.Z, {
+        children: (0, r.jsx)(s.Z, {
           children: m.intl.string(p.default.plwH8f)
         })
       })]

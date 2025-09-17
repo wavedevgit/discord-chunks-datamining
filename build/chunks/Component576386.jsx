@@ -16,31 +16,31 @@ var Chunk951288 = require("./951288.js"),
   Chunk539530 = require("./539530.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk24391 = require("./24391.js");
-let g = e => {
+let h = e => {
     var t;
     let {
       currentUser: n,
       nameplate: r,
       section: c,
       canUsePremiumCollectibles: p,
-      isSelected: g,
+      isSelected: h,
       onClick: v
     } = e, _ = (0, i.useRef)(null), C = (0, o.Z)(_);
     return (0, l.jsxs)(a.P3F, {
       innerRef: _,
       "aria-label": null != (t = r.label) ? t : x.intl.string(x.t.x5CoXV),
-      className: h.nameplateItem,
+      className: g.nameplateItem,
       onClick: v,
-      children: [(0, l.jsx)(d.Z, {
+      children: [(0, l.jsx)(u.Z, {
         nameplate: r,
         user: n,
         showPlaceholderUser: true,
         isHighlighted: C
       }), (0, l.jsx)("div", {
-        className: s()(h.nameplateItemOverlay, {
-          [h.selected]: g
+        className: s()(g.nameplateItemOverlay, {
+          [g.selected]: h
         })
-      }), (0, l.jsx)(u.Z, {
+      }), (0, l.jsx)(d.Z, {
         isPurchaseSection: c === m.$0.PURCHASE,
         isPremiumSection: c === m.$0.PREMIUM_PURCHASE,
         canUsePremiumCollectibles: p,
@@ -55,17 +55,17 @@ let g = e => {
       guildId: i,
       onSelect: r,
       onOpenShop: o
-    } = e, u = p.ZP.canUseCollectibles(t), d = (0, m.ZP)();
+    } = e, d = p.ZP.canUseCollectibles(t), u = (0, m.ZP)();
     return (0, l.jsx)(a.u2D, {
-      className: h.inventory,
-      children: d.map(e => (0, l.jsxs)("div", {
+      className: g.inventory,
+      children: u.map(e => (0, l.jsxs)("div", {
         children: [(0, l.jsx)(a.vwX, {
           children: e.header
         }), e.section === m.$0.PURCHASE && (0, l.jsxs)("div", {
-          className: h.inventoryControls,
+          className: g.inventoryControls,
           children: [(0, l.jsxs)(a.P3F, {
-            className: s()(h.inventoryControlsButton, {
-              [h.selected]: null == n
+            className: s()(g.inventoryControlsButton, {
+              [g.selected]: null == n
             }),
             onClick: () => r(null),
             children: [(0, l.jsx)(a.t6m, {
@@ -76,7 +76,7 @@ let g = e => {
               children: null != i ? x.intl.string(x.t.CHf9iI) : x.intl.string(x.t.PoWNfX)
             })]
           }), (0, l.jsxs)(a.P3F, {
-            className: h.inventoryControlsButton,
+            className: g.inventoryControlsButton,
             onClick: o,
             children: [(0, l.jsx)(a.EOn, {
               size: "md",
@@ -87,12 +87,12 @@ let g = e => {
             })]
           })]
         }), (0, l.jsx)("div", {
-          className: h.list,
-          children: e.items.filter(c.k).map(i => (0, l.jsx)(g, {
+          className: g.list,
+          children: e.items.filter(c.k).map(i => (0, l.jsx)(h, {
             currentUser: t,
             nameplate: i,
             section: e.section,
-            canUsePremiumCollectibles: u,
+            canUsePremiumCollectibles: d,
             isSelected: (null == n ? true : n.skuId) === i.skuId,
             onClick: () => r(i)
           }, i.skuId))

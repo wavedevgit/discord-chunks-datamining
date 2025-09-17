@@ -24,12 +24,12 @@ function v(e) {
     powerup: n
   } = e, [v, x] = o.useState(true);
   (0, m.KT)(v);
-  let [C, h] = o.useState(false), b = (0, s.ZP)(t, n).type !== f.A3.INACTIVE, E = (0, g.d)(b), T = (0, a.g1)(t, "GuildPowerupPerkCard"), I = n.skuId === i.A$;
+  let [C, h] = o.useState(false), b = (0, l.ZP)(t, n).type !== f.A3.INACTIVE, E = (0, g.d)(b), I = (0, s.g1)(t, "GuildPowerupPerkCard"), T = n.skuId === i.A$;
   return (0, r.jsxs)(p.Z, {
     onHover: e => h(e),
     guildId: t,
     powerup: n,
-    badge: I && T ? "beta" : true,
+    badge: T && I ? "beta" : true,
     children: [(0, r.jsx)(d.m, {
       className: _.image,
       powerup: n,
@@ -41,7 +41,7 @@ function v(e) {
         guildId: t,
         powerup: n
       }),
-      children: (0, r.jsx)(l.Text, {
+      children: (0, r.jsx)(a.Text, {
         className: _.description,
         color: E,
         variant: "text-sm/medium",

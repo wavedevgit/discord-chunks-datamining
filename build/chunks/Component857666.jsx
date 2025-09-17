@@ -23,11 +23,11 @@ var Chunk951288 = require("./951288.js"),
 function x(e, t) {
   var x;
   let C = null != (x = (0, u.Z)(t)) && x,
-    h = (0, l.e7)([c.Z], () => {
+    h = (0, a.e7)([c.Z], () => {
       var e;
       return null == (e = c.Z.getStateForGuild(t)) ? true : e.allPowerups
     }),
-    b = (0, l.e7)([c.Z], () => {
+    b = (0, a.e7)([c.Z], () => {
       var e;
       return null == (e = c.Z.getStateForGuild(t)) ? true : e.unlockedPowerups
     });
@@ -36,18 +36,18 @@ function x(e, t) {
         let {
           guildId: t,
           canUseBoosts: o,
-          allPowerups: l,
+          allPowerups: a,
           unlockedPowerups: c,
           skuIds: u
-        } = e, d = f.intl.string(g.default.KC9HRU), x = f.intl.string(g.default.GJiSmJ), C = null == l ? true : l[i.IN], h = (null == c ? true : c[i.IN]) != null, b = f.intl.string(g.default["/egwJC"]), E = h ? true : f.intl.string(g.default.W6Vwn5), T = h ? true : f.intl.string(g.default.lvk1GR), I = h ? f.intl.string(g.default["9CfkLC"]) : f.intl.string(f.t["+7XY39"]), j = h ? "secondary" : "expressive", P = o ? () => {
-          h ? s.Z.open(t, m.pNK.TAG, m.jXE.GUILD_POWERUPS_OVERVIEW_CARD) : null != C && (0, p.KE)(t, C), (0, a.pTH)()
+        } = e, d = f.intl.string(g.default.KC9HRU), x = f.intl.string(g.default.GJiSmJ), C = null == a ? true : a[i.IN], h = (null == c ? true : c[i.IN]) != null, b = f.intl.string(g.default["/egwJC"]), E = h ? true : f.intl.string(g.default.W6Vwn5), I = h ? true : f.intl.string(g.default.lvk1GR), T = h ? f.intl.string(g.default["9CfkLC"]) : f.intl.string(f.t["+7XY39"]), j = h ? "secondary" : "expressive", P = o ? () => {
+          h ? l.Z.open(t, m.pNK.TAG, m.jXE.GUILD_POWERUPS_OVERVIEW_CARD) : null != C && (0, p.KE)(t, C), (0, s.pTH)()
         } : true;
         return {
           title: d,
           description: x,
           openModal: function(e) {
             let i = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-            (0, a.ZDy)(async () => {
+            (0, s.ZDy)(async () => {
               let {
                 default: i
               } = await n.e("64767").then(n.bind(n, 754887));
@@ -73,11 +73,11 @@ function x(e, t) {
                 title: d,
                 description: f.intl.string(g.default.BBRFRU),
                 powerups: e,
-                footerInfoText: T,
-                footerAction: o && null != P && null != I ? {
+                footerInfoText: I,
+                footerAction: o && null != P && null != T ? {
                   variant: j,
-                  text: I,
-                  icon: "expressive" === j ? a.$Eu : true,
+                  text: T,
+                  icon: "expressive" === j ? s.$Eu : true,
                   onClick: P
                 } : true
               }, n))
@@ -101,12 +101,12 @@ function x(e, t) {
         unlockedPowerups: b,
         skuIds: d.z[e]
       }) : true,
-      l = {};
+      a = {};
     for (let t of e) {
       let e = o(t);
-      null != e && (l[t] = e)
+      null != e && (a[t] = e)
     }
-    return l
+    return a
   }, [e, t, C, h, b])
 }
 

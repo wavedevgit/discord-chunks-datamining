@@ -23,14 +23,14 @@ function b(e) {
   var n, t, d, v, b, j, h, _;
   let {
     guildId: C,
-    initialPortkeyInstance: O,
-    initialPortkeyGame: y,
+    initialPortkeyInstance: y,
+    initialPortkeyGame: O,
     stepConfig: N = p.T9,
-    children: S,
-    onClose: P,
+    children: P,
+    onClose: S,
     analyticsLocation: w
   } = e;
-  r.useEffect(() => {
+  i.useEffect(() => {
     (0, m.po)(C), (0, m.EC)(C)
   }, [C]);
   let k = (0, a.e7)([g.Z], () => g.Z.getStateForGuild(C)),
@@ -38,40 +38,40 @@ function b(e) {
     {
       analyticsLocations: E
     } = (0, l.ZP)(w),
-    [I, Z] = r.useState(null != (t = N.initialStep) ? t : Object.keys(N.steps)[0]),
+    [I, Z] = i.useState(null != (t = N.initialStep) ? t : Object.keys(N.steps)[0]),
     G = (0, u.Td)(C, true),
-    D = N.steps[I],
-    [R, B] = r.useState(null != (d = null == y ? true : y.id) ? d : null == O ? true : O.gameId),
-    L = r.useMemo(() => {
+    R = N.steps[I],
+    [D, B] = i.useState(null != (d = null == O ? true : O.id) ? d : null == y ? true : y.gameId),
+    M = i.useMemo(() => {
       var e;
-      if (null != R) return Object.values(null != (e = null == k ? true : k.catalog) ? e : {}).find(e => e.id === R)
-    }, [null == k ? true : k.catalog, R]),
-    [M, z] = r.useState(O),
-    [F, A] = r.useState(null != (v = null == y || null == (n = y.plans[0]) ? true : n.id) ? v : null == O ? true : O.planId),
-    V = function(e, n, t, i) {
-      var r, l, o, s, c, d, u, m;
+      if (null != D) return Object.values(null != (e = null == k ? true : k.catalog) ? e : {}).find(e => e.id === D)
+    }, [null == k ? true : k.catalog, D]),
+    [z, F] = i.useState(y),
+    [V, A] = i.useState(null != (v = null == O || null == (n = O.plans[0]) ? true : n.id) ? v : null == y ? true : y.planId),
+    L = function(e, n, t, r) {
+      var i, l, o, s, c, d, u, m;
       let f = (0, a.e7)([g.Z], () => {
           var n;
           return null == (n = g.Z.getStateForGuild(e)) ? true : n.entitlements
         }),
-        p = null != (u = null == n || null == (r = n.plans.find(e => e.id === t)) ? true : r.cost) ? u : 0;
-      return null == i ? p : p - (null != (m = null == f || null == (d = f[i.entitlementId]) || null == (c = d.sku) || null == (s = c.tenant_metadata) || null == (o = s.guild_monetization) || null == (l = o.game_server) ? true : l.boost_price) ? m : 0)
-    }(C, L, F, M),
-    U = r.useCallback((e, n) => {
+        p = null != (u = null == n || null == (i = n.plans.find(e => e.id === t)) ? true : i.cost) ? u : 0;
+      return null == r ? p : p - (null != (m = null == f || null == (d = f[r.entitlementId]) || null == (c = d.sku) || null == (s = c.tenant_metadata) || null == (o = s.guild_monetization) || null == (l = o.game_server) ? true : l.boost_price) ? m : 0)
+    }(C, M, V, z),
+    U = i.useCallback((e, n) => {
       var t;
       B(null == e ? true : e.id), A(null != n ? n : null == e || null == (t = e.plans[0]) ? true : t.id)
     }, []),
-    K = r.useCallback(e => {
-      z(e), B(e.gameId), A(e.planId), X(e.name), Q(e.location)
+    K = i.useCallback(e => {
+      F(e), B(e.gameId), A(e.planId), X(e.name), Q(e.regionId)
     }, []),
-    [W, H] = r.useState(),
-    [q, X] = r.useState(null != (b = null == O ? true : O.name) ? b : ""),
-    [Y, Q] = r.useState(null != (j = null == O ? true : O.location) ? j : ""),
-    [$, J] = r.useState(false),
-    ee = r.useCallback(() => {
-      0 !== V && null != T && null != L && null != F && (G < V ? (0, o.u)({
+    [W, H] = i.useState(),
+    [q, X] = i.useState(null != (b = null == y ? true : y.name) ? b : ""),
+    [Y, Q] = i.useState(null != (j = null == y ? true : y.regionId) ? j : ""),
+    [$, J] = i.useState(false),
+    ee = i.useCallback(() => {
+      0 !== L && null != T && null != M && null != V && (G < L ? (0, o.u)({
         analyticsLocation: w,
-        numberOfBoostsToAdd: V - G,
+        numberOfBoostsToAdd: L - G,
         analyticsLocations: E,
         guild: T,
         intent: s.P.PERK,
@@ -79,18 +79,18 @@ function b(e) {
           J(e)
         },
         onSubscribeComplete: () => {
-          (0, m.NE)(T.id, F, q, Y).then(() => {
-            P(), (0, f.Z)(T.id, L)
+          (0, m.NE)(T.id, V, q, Y).then(() => {
+            S(), (0, f.Z)(T.id, M)
           })
         }
-      }) : (0, m.NE)(T.id, F, q, Y).then(() => {
-        P(), (0, f.Z)(T.id, L)
+      }) : (0, m.NE)(T.id, V, q, Y).then(() => {
+        S(), (0, f.Z)(T.id, M)
       }))
-    }, [E, T, G, F, w, L, q, Y, P, V]),
-    en = r.useCallback(e => {
+    }, [E, T, G, V, w, M, q, Y, S, L]),
+    en = i.useCallback(e => {
       switch (e.type) {
         case "close":
-          P();
+          S();
           break;
         case "go-to-step":
           Z(e.step);
@@ -98,38 +98,38 @@ function b(e) {
         case "save":
           ee()
       }
-    }, [P, ee]),
-    et = r.useCallback(() => {
-      null != D && en(D.onBack)
-    }, [D, en]),
-    ei = r.useCallback(() => {
-      null != D && en(D.onNext)
-    }, [D, en]);
-  return (0, i.jsx)(x.Provider, {
+    }, [S, ee]),
+    et = i.useCallback(() => {
+      null != R && en(R.onBack)
+    }, [R, en]),
+    er = i.useCallback(() => {
+      null != R && en(R.onNext)
+    }, [R, en]);
+  return (0, r.jsx)(x.Provider, {
     value: {
       guildId: C,
       step: I,
-      stepAction: D,
+      stepAction: R,
       stepLoading: $,
       onBack: et,
-      onNext: ei,
+      onNext: er,
       portkeyGames: null != (h = null == k ? true : k.catalog) ? h : {},
       instances: Object.values(null != (_ = null == k ? true : k.instances) ? _ : {}),
-      currentGame: L,
+      currentGame: M,
       setCurrentGame: U,
-      portkeyInstance: M,
+      portkeyInstance: z,
       setPortkeyInstance: K,
       name: q,
       setName: X,
-      locationId: Y,
-      setLocationId: Q,
-      planCost: V,
-      planId: F,
+      regionId: Y,
+      setRegionId: Q,
+      planCost: L,
+      planId: V,
       setPlanId: A,
       footerNode: W,
       setFooterNode: H,
       availableBoostCount: G
     },
-    children: S
+    children: P
   })
 }

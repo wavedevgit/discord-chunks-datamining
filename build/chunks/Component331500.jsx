@@ -17,7 +17,7 @@ var r, i, Chunk951288 = require("./951288.js"),
   Chunk401561 = require("./401561.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk134977 = require("./134977.js");
-let C = (r = function(e) {
+let P = (r = function(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -76,7 +76,7 @@ function j(e) {
         game: e,
         onClick: () => (0, g.Z)({
           guildId: t,
-          stepConfig: C,
+          stepConfig: P,
           initialPortkeyGame: e,
           analyticsLocation: d.Z.PORTKEY_OVERVIEW
         }),

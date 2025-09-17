@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -26,12 +26,12 @@ var Chunk951288 = require("./951288.js"),
 function E(e) {
   let {
     guildId: t
-  } = e, n = (0, s.e7)([m.Z], () => m.Z.getStateForGuild(t)), i = o.useMemo(() => {
+  } = e, n = (0, l.e7)([m.Z], () => m.Z.getStateForGuild(t)), i = o.useMemo(() => {
     if ((null == n ? true : n.instances) != null && 0 !== Object.keys(n.instances).length) return {
       type: "active",
       statusText: v.intl.string(f.default.FFLkm5)
     }
-  }, [null == n ? true : n.instances]), E = (0, p.d)((null == i ? true : i.type) === "active"), T = o.useMemo(() => {
+  }, [null == n ? true : n.instances]), E = (0, p.d)((null == i ? true : i.type) === "active"), I = o.useMemo(() => {
     if ((null == n ? true : n.catalog) == null) return 0;
     let e = Object.values(n.catalog);
     return 0 === e.length ? 0 : Math.min(...e.map(e => e.baseCost))
@@ -47,21 +47,21 @@ function E(e) {
     children: [(0, r.jsxs)("div", {
       className: h.imageContainer,
       children: [(0, r.jsx)("img", {
-        className: l()(C.background, x.image, h.image),
+        className: a()(C.background, x.image, h.image),
         src: b.Z,
         alt: ""
       }), (0, r.jsx)("div", {
-        className: l()(x.image, h.gradient)
+        className: a()(x.image, h.gradient)
       })]
     }), (0, r.jsx)(d.Q9, {
       title: v.intl.string(_.default["fjt/vr"]),
       textColor: E,
       footer: (0, r.jsx)(d.uf, {
-        cost: T,
+        cost: I,
         costDecorator: "+",
         status: i
       }),
-      children: (0, r.jsx)(a.xvT, {
+      children: (0, r.jsx)(s.xvT, {
         className: x.description,
         color: E,
         variant: "text-sm/medium",

@@ -2,25 +2,28 @@
 /** chunk id: 539530, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $0: () => u,
-  ZP: () => m
+  ZP: () => x
 }), require("./388685.js"), require("./539854.js");
 var l, Chunk647438 = require("./647438.js"),
   Chunk399606 = require("./399606.js"),
   Chunk597688 = require("./597688.js"),
   Chunk1870 = require("./1870.js"),
   Chunk884697 = require("./884697.js"),
+  Chunk235897 = require("./235897.js"),
   Chunk388032 = require("./388032.jsx"),
   u = ((l = {}).PURCHASE = "purchase", l.PREMIUM_PURCHASE = "premium_purchase", l.PREVIEW = "preview", l);
-let d = {
+let p = {
     id: "None"
   },
-  p = {
+  m = {
     id: "Shop"
   },
-  m = () => {
+  x = () => {
     let e = (0, Chunk399606.e7)([Chunk1870.Z], () => Chunk1870.Z.purchases),
       [t, n] = (0, Chunk399606.Wu)([Chunk597688.Z], () => [Chunk597688.Z.categories, Chunk597688.Z.products]);
-    return (0, Chunk647438.useMemo)(() => {
+    return Chunk235897.Z.useConfig({
+      location: "use nameplate sections"
+    }), (0, Chunk647438.useMemo)(() => {
       let l = (0, Chunk884697.Y)(module, exports).reduce((t, l) => {
         let i = e.get(l.skuId),
           r = (0, o.G1)(null != i ? i : n.get(l.skuId));
@@ -32,7 +35,7 @@ let d = {
       });
       return [{
         section: "purchase",
-        items: [d, p, ...l.purchase],
+        items: [p, m, ...l.purchase],
         height: 12,
         header: Chunk388032.intl.string(Chunk388032.t["WfGV5+"])
       }, {

@@ -26,11 +26,11 @@ function p(e) {
     }), (0, r.jsx)(o.xvT, {
       color: "always-white",
       variant: "text-md/semibold",
-      children: c.intl.string(s.default.diMhWV)
+      children: c.intl.string(l.default.diMhWV)
     }), (0, r.jsx)(o.xvT, {
       color: "always-white",
       variant: "text-sm/medium",
-      children: c.intl.string(s.default.pycxTk)
+      children: c.intl.string(l.default.pycxTk)
     }), (0, r.jsx)("div", {
       className: u.close,
       children: (0, r.jsx)(i.hU, {
@@ -38,9 +38,9 @@ function p(e) {
         size: "md",
         "aria-label": c.intl.string(c.t.cpT0Cg),
         onClick: () => {
-          t(a.L.USER_DISMISS)
+          t(s.L.USER_DISMISS)
         },
-        icon: l.Dio
+        icon: a.Dio
       })
     })]
   })

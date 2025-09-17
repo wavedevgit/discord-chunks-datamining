@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 /** chunk id: 962774, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ai: () => r,
+  Y9: () => r,
   kd: () => i,
   qE: () => o
 }), require("./388685.js");
@@ -77,7 +77,7 @@ function l(e, t) {
     imageUrl: "",
     developer: "Portkey Developer",
     plans: a,
-    locations: r,
+    regions: r,
     baseCost: Math.min(...a.map(e => e.cost))
   }
 }
@@ -88,7 +88,8 @@ let i = [l("1", "Portkey Test #1"), l("2", "Portkey Test #2"), l("3", "Portkey T
     gameId: "1",
     name: "Portkey Test #1",
     port: "25565",
-    location: "Test #1",
+    regionId: "us-east",
+    regionName: "US East",
     planId: a[1].id,
     planName: a[1].name,
     onlineConnectionsCount: 0,
@@ -104,7 +105,8 @@ let i = [l("1", "Portkey Test #1"), l("2", "Portkey Test #2"), l("3", "Portkey T
     gameId: "2",
     name: "Portkey Test #2",
     port: "25565",
-    location: "Test #2",
+    regionId: "us-east",
+    regionName: "US East",
     planId: a[1].id,
     planName: a[1].name,
     onlineConnectionsCount: 0,
@@ -120,7 +122,8 @@ let i = [l("1", "Portkey Test #1"), l("2", "Portkey Test #2"), l("3", "Portkey T
     gameId: "3",
     name: "Portkey Test #3",
     port: "25565",
-    location: "Test #3",
+    regionId: "us-east",
+    regionName: "US East",
     planId: a[1].id,
     planName: a[1].name,
     onlineConnectionsCount: 0,
@@ -136,7 +139,8 @@ let i = [l("1", "Portkey Test #1"), l("2", "Portkey Test #2"), l("3", "Portkey T
     gameId: "4",
     name: "Portkey Test #4",
     port: "25565",
-    location: "Test #4",
+    regionId: "us-east",
+    regionName: "US East",
     planId: a[1].id,
     planName: a[1].name,
     onlineConnectionsCount: 0,
@@ -152,7 +156,8 @@ let i = [l("1", "Portkey Test #1"), l("2", "Portkey Test #2"), l("3", "Portkey T
     gameId: "5",
     name: "Portkey Test #5",
     port: "25565",
-    location: "Test #5",
+    regionId: "us-east",
+    regionName: "US East",
     planId: a[1].id,
     planName: a[1].name,
     onlineConnectionsCount: 0,
@@ -168,7 +173,8 @@ let i = [l("1", "Portkey Test #1"), l("2", "Portkey Test #2"), l("3", "Portkey T
     gameId: "6",
     name: "Portkey Test #6",
     port: "25565",
-    location: "Test #6",
+    regionId: "us-east",
+    regionName: "US East",
     planId: a[1].id,
     planName: a[1].name,
     onlineConnectionsCount: 0,

@@ -222,6 +222,7 @@ let B = Chunk647438.memo(function(e) {
         let e = [],
           t = !ej || !ev;
         return en && ed && ef && !t && e.push(s.z.ACCOUNT_LINK_INVITE_FRIENDS), ef && ec && !ed && !t && null != Q && e.push(s.z.ACCOUNT_LINK_PROMPT), (0, r.jsx)(x.ZP, {
+          bypassAutoDismiss: true,
           contentTypes: e,
           groupName: R.R.ACCOUNT_NAME_ZONE,
           children: e => {

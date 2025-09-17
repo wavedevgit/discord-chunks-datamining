@@ -1,1 +1,0 @@
-{"id":"166098","type":"store","data":{"name":"PortkeyLocationStore","functions":[{"name":"getLocationStateForPingUrl","args":["e"]},{"name":"getRegions","args":[]}],"events":["LOGOUT","PORTKEY_LOCATION_PING_STATE_UPDATE","PORTKEY_LOCATION_PING_STATE_RESET","PORTKEY_FETCH_REGIONS_SUCCESS"]},"fromModule":{"id":"39159"}}

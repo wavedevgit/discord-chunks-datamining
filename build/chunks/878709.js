@@ -1,5 +1,5 @@
 /** Chunk was on 55944 **/
-/** chunk id: 878709, original params: e,t,s (module,exports,require) **/
+/** chunk id: 878709, original params: e,t,n (module,exports,require) **/
 module.exports = {
   list: "list__920b8",
   accountCard: "accountCard__920b8",

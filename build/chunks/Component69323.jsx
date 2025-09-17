@@ -22,18 +22,18 @@ function _(e) {
     powerup: t,
     targetRef: n,
     isCardVisible: _
-  } = e, v = (0, l.e7)([d.Z], () => d.Z.hasLayers()), x = (0, s.f9)(), C = t.skuId === i.A$ ? {
+  } = e, v = (0, a.e7)([d.Z], () => d.Z.hasLayers()), x = (0, l.f9)(), C = t.skuId === i.A$ ? {
     title: f.intl.string(g.default.YWo6VF),
     body: f.intl.string(g.default.gXVvKS),
-    dismissibleContentType: a.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER
+    dismissibleContentType: s.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER
   } : null, h = [];
   null == C || v || !_ || x || h.push(C.dismissibleContentType);
-  let [b, E] = (0, u.US)(h), T = o.useCallback(() => {
+  let [b, E] = (0, u.US)(h), I = o.useCallback(() => {
     E(m.L.INDIRECT_ACTION)
   }, [E]);
   return ((0, p.Z)({
     targetRef: n,
-    onShouldClose: T,
+    onShouldClose: I,
     enabled: null != b
   }), null == C || null == b) ? null : (0, r.jsx)(c.J2, {
     targetElementRef: n,

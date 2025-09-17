@@ -25,43 +25,43 @@ let v = e => {
   } = e, v = (0, s.e7)([m.Z], () => m.Z.getPendingGlobalName()), {
     product: _,
     purchase: C
-  } = (0, c.Z)(null == i ? true : i.skuId), j = (0, p.kd)(_), y = x.ZP.canUseCollectibles(t), P = (0, o.qS)(C), E = (0, o.G1)(_), f = !y && P, N = null == C || f;
+  } = (0, c.Z)(null == i ? true : i.skuId), j = (0, p.kd)(_), y = x.ZP.canUseCollectibles(t), E = (0, o.qS)(C), P = (0, o.G1)(_), f = !y && E, Z = null == C || f;
   return (0, l.jsxs)("div", {
-    className: r()(g.previewBorder, {
-      [g.upsell]: null != i && N
+    className: r()(h.previewBorder, {
+      [h.upsell]: null != i && Z
     }),
     children: [(0, l.jsx)("div", {
-      className: g.previewBox,
+      className: h.previewBox,
       children: (0, l.jsxs)("div", {
-        className: g.previewContents,
-        children: [(0, l.jsx)(u.d, {
+        className: h.previewContents,
+        children: [(0, l.jsx)(d.d, {
           width: 124,
           opacity: .9
-        }), (0, l.jsx)(u.d, {
+        }), (0, l.jsx)(d.d, {
           width: 124,
           opacity: .9
-        }), (0, l.jsx)(d.Z, {
+        }), (0, l.jsx)(u.Z, {
           user: t,
           guildId: n,
           nameplate: i,
           pendingGlobalName: v,
           isHighlighted: true
-        }), (0, l.jsx)(u.d, {
+        }), (0, l.jsx)(d.d, {
           width: 124,
           opacity: .9
-        }), (0, l.jsx)(u.d, {
+        }), (0, l.jsx)(d.d, {
           width: 124,
           opacity: .9
         })]
       })
     }), null != i && (0, l.jsxs)("div", {
-      className: g.previewDescription,
+      className: h.previewDescription,
       children: [(0, l.jsx)(a.Text, {
         variant: "text-sm/semibold",
         children: j
-      }), N && (0, l.jsx)(a.Text, {
+      }), Z && (0, l.jsx)(a.Text, {
         variant: "text-sm/normal",
-        children: f ? h.intl.string(h.t.nD78oa) : E && y ? h.intl.string(h.t.hmyYKy) : E ? h.intl.string(h.t.JY1i0t) : h.intl.string(h.t.fEGjVV)
+        children: f ? g.intl.string(g.t.nD78oa) : P && y ? g.intl.string(g.t.hmyYKy) : P ? g.intl.string(g.t.JY1i0t) : g.intl.string(g.t.fEGjVV)
       })]
     })]
   })

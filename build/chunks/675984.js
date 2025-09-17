@@ -25,7 +25,7 @@ function r(e) {
     imageUrl: "",
     developer: "Game Server Provider",
     plans: t,
-    locations: a.ai,
+    regions: a.Y9,
     baseCost: n
   }
 }

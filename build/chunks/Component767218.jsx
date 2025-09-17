@@ -25,27 +25,27 @@ function p(e) {
       className: u.headerContainer,
       children: [(0, o.jsx)(i.$Eu, {
         size: "sm",
-        color: 0 !== n ? a.Z.colors.HEADER_MUTED : a.Z.unsafe_rawColors.GUILD_BOOSTING_PINK
-      }), (0, o.jsx)(l.X6q, {
+        color: 0 !== n ? s.Z.colors.HEADER_MUTED : s.Z.unsafe_rawColors.GUILD_BOOSTING_PINK
+      }), (0, o.jsx)(a.X6q, {
         color: 0 !== n ? "header-muted" : "header-primary",
         variant: "heading-lg/semibold",
         children: t
       })]
-    }), (0, o.jsx)(l.xvT, {
+    }), (0, o.jsx)(a.xvT, {
       color: "header-muted",
       variant: "text-sm/medium",
       children: (() => {
         switch (n) {
           case 0:
-            return c.intl.formatToPlainString(s.default.BdRXZG, {
+            return c.intl.formatToPlainString(l.default.BdRXZG, {
               boostCount: t
             });
           case 1:
-            return c.intl.formatToPlainString(s.default.xvgIVF, {
+            return c.intl.formatToPlainString(l.default.xvgIVF, {
               boostCount: t
             });
           case 2:
-            return c.intl.string(s.default["/F7Z29"])
+            return c.intl.string(l.default["/F7Z29"])
         }
       })()
     })]

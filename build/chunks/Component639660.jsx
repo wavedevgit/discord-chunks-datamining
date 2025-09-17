@@ -32,17 +32,17 @@ function x() {
 function C(e) {
   let {
     guildId: t
-  } = e, n = (0, i.e7)([s.Z], () => {
+  } = e, n = (0, i.e7)([l.Z], () => {
     var e;
-    return (null == (e = s.Z.getGuild(t)) ? true : e.features.has(g.oNc.PREMIUM_TIER_3_OVERRIDE)) === true
+    return (null == (e = l.Z.getGuild(t)) ? true : e.features.has(g.oNc.PREMIUM_TIER_3_OVERRIDE)) === true
   }), C = (0, c.Z)(t), h = C.length > 0, {
     shouldShow: b,
     notificationConfig: E
-  } = (0, m._)(t, "GuildPowerupNotificationContainer"), T = [];
-  b && T.push(l.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION);
-  let [I, j] = (0, a.ZT)(T, t), P = null != I && null != E, y = [];
-  P || h || y.push(l.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK);
-  let [S, N] = (0, a.US)(y), Z = (e => {
+  } = (0, m._)(t, "GuildPowerupNotificationContainer"), I = [];
+  b && I.push(a.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION);
+  let [T, j] = (0, s.ZT)(I, t), P = null != T && null != E, y = [];
+  P || h || y.push(a.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK);
+  let [S, N] = (0, s.US)(y), Z = (e => {
     let n = [];
     return h && n.push((0, r.jsx)(p.Z, {
       guildId: t,
@@ -52,7 +52,7 @@ function C(e) {
       markAsDismissed: e => {
         j(e)
       }
-    }, "rollback-notification")), null != e && e === l.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK && n.push((0, r.jsx)(u.Z, {
+    }, "rollback-notification")), null != e && e === a.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK && n.push((0, r.jsx)(u.Z, {
       markAsDismissed: N
     }, "info-card")), n
   })(S);

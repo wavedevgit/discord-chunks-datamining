@@ -2,13 +2,13 @@
 /** chunk id: 744993, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   EC: () => x,
-  F4: () => f,
-  LG: () => g,
   NE: () => v,
+  TN: () => f,
   _k: () => _,
   g$: () => b,
   po: () => p,
-  s9: () => j
+  s9: () => j,
+  yP: () => g
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -94,13 +94,13 @@ function b(e, t) {
 
 function f() {
   Chunk570140.Z.dispatch({
-    type: "PORTKEY_LOCATION_PING_STATE_RESET"
+    type: "PORTKEY_REGION_PING_STATE_RESET"
   })
 }
 
 function g(e, t) {
   r.Z.dispatch({
-    type: "PORTKEY_LOCATION_PING_STATE_UPDATE",
+    type: "PORTKEY_REGION_PING_STATE_UPDATE",
     pingUrl: e,
     state: t
   })

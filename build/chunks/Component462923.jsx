@@ -23,7 +23,7 @@ function y(e) {
   let {
     guildId: t,
     instance: n
-  } = e, y = (0, a.e7)([u.Z], () => u.Z.getState()), C = i.useCallback(() => {
+  } = e, y = (0, a.e7)([u.Z], () => u.Z.getState()), P = i.useCallback(() => {
     y ? (0, p.Z)(n) : (0, g.Z)({
       onAccept: () => {
         (0, p.Z)(n)
@@ -31,7 +31,7 @@ function y(e) {
     })
   }, [n, y]), j = i.useCallback(() => {
     (0, l.JG)(n.serverIP), (0, o.showToast)((0, o.createToast)(f.intl.string(f.t["+5kSoa"]), o.ToastType.SUCCESS))
-  }, [n.serverIP]), P = (0, d.Z)(t);
+  }, [n.serverIP]), C = (0, d.Z)(t);
   return (0, r.jsxs)("div", {
     className: v.card,
     children: [(0, r.jsxs)("div", {
@@ -120,9 +120,9 @@ function y(e) {
       children: [(0, r.jsx)(o.zxk, {
         fullWidth: true,
         text: f.intl.string(b.default["0TMXHh"]),
-        onClick: C,
+        onClick: P,
         variant: "primary"
-      }), P && (0, r.jsx)(o.zxk, {
+      }), C && (0, r.jsx)(o.zxk, {
         fullWidth: true,
         text: f.intl.string(b.default["jO3u+/"]),
         onClick: () => {

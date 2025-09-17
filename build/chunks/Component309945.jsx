@@ -22,7 +22,7 @@ function f(e) {
     powerups: n
   } = e, {
     spent: f
-  } = (0, d.Z)(t), _ = (0, s.e7)([u.Z], () => u.Z.getAppliedGuildBoostsForGuild(t), [t]), v = f - o.useMemo(() => {
+  } = (0, d.Z)(t), _ = (0, l.e7)([u.Z], () => u.Z.getAppliedGuildBoostsForGuild(t), [t]), v = f - o.useMemo(() => {
     var e, t, n;
     return null != (n = null == _ || null == (t = _.filter) || null == (e = t.call(_, e => !e.ended && null == e.endsAt)) ? true : e.length) ? n : 0
   }, [_]);
@@ -30,19 +30,19 @@ function f(e) {
   let x = n.some(e => e.skuId === i.A$);
   return (0, r.jsxs)("div", {
     className: g.container,
-    children: [(0, r.jsx)(l.Mgn, {
+    children: [(0, r.jsx)(a.Mgn, {
       color: c.Z.colors.TEXT_FEEDBACK_WARNING,
       className: g.icon
-    }), (0, r.jsx)(a.xvT, {
+    }), (0, r.jsx)(s.xvT, {
       variant: "text-md/semibold",
       color: "text-feedback-warning",
       children: m.intl.string(p.default.n5hQhY)
-    }), (0, r.jsxs)(a.xvT, {
+    }), (0, r.jsxs)(s.xvT, {
       variant: "text-sm/medium",
       children: [m.intl.formatToPlainString(p.default.iAaAiI, {
         boostCount: v,
         perksString: n.map(e => e.title).join(", ")
-      }), x && (0, r.jsx)(a.xvT, {
+      }), x && (0, r.jsx)(s.xvT, {
         variant: "text-sm/medium",
         color: "text-feedback-warning",
         children: m.intl.string(p.default.Sfr0Jy)

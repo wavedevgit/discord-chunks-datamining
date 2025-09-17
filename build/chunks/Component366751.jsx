@@ -19,14 +19,14 @@ function u(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: c.container,
-    children: [(0, r.jsx)(a.olH, {
+    children: [(0, r.jsx)(s.olH, {
       className: c.close,
       innerClassName: c.innerClose,
       onClick: () => {
-        n(s.L.USER_DISMISS)
+        n(l.L.USER_DISMISS)
       }
     }), (0, r.jsx)(o.Mgn, {
-      color: l.Z.colors.TEXT_FEEDBACK_WARNING,
+      color: a.Z.colors.TEXT_FEEDBACK_WARNING,
       className: c.icon
     }), (0, r.jsx)(i.xvT, {
       variant: "text-md/semibold",
