@@ -6,8 +6,8 @@ function r() {
   return {
     logsUploaded: new Date().toISOString(),
     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-    buildNumber: "445662",
-    versionHash: "70ac3055d704e39fbbaa441fd22fe7c2e50de377"
+    buildNumber: "445670",
+    versionHash: "00960cc76d6a81b4e5f75b5d84e345d3cbc76f08"
   }
 }
 require.d(exports, {

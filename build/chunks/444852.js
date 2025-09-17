@@ -311,9 +311,13 @@ class F extends Chunk861687.Z {
             num_viewers: this.analyticsContext.numViewers,
             time_connected_to_first_frame_delivered: this.getDuration(),
             time_total_to_first_frame: (0, o.zO)() - this.getCreatedTime(),
-            time_remote_user_to_video_stream_created: true !== e.remoteVideoStreamCreatedTimestamp && true !== e.remoteUserCreatedTimestamp ? e.remoteVideoStreamCreatedTimestamp - e.remoteUserCreatedTimestamp : false,
-            time_video_stream_created_to_video_data_received: true !== e.videoDataReceivedTimestamp && true !== e.remoteVideoStreamCreatedTimestamp ? e.videoDataReceivedTimestamp - e.remoteVideoStreamCreatedTimestamp : false,
-            time_video_data_received_to_video_source_delivered_frame: true !== e.videoSourceDeliveredFrameTimestamp && true !== e.videoDataReceivedTimestamp ? e.videoSourceDeliveredFrameTimestamp - e.videoDataReceivedTimestamp : false
+            time_remote_user_to_video_stream_created: true !== e.remoteVideoStreamCreatedTimestamp && true !== e.remoteUserCreatedTimestamp ? Number(e.remoteVideoStreamCreatedTimestamp - e.remoteUserCreatedTimestamp) : null,
+            time_video_stream_created_to_video_data_received: true !== e.videoDataReceivedTimestamp && true !== e.remoteVideoStreamCreatedTimestamp ? Number(e.videoDataReceivedTimestamp - e.remoteVideoStreamCreatedTimestamp) : null,
+            time_video_data_received_to_video_source_delivered_frame: true !== e.videoSourceDeliveredFrameTimestamp && true !== e.videoDataReceivedTimestamp ? Number(e.videoSourceDeliveredFrameTimestamp - e.videoDataReceivedTimestamp) : null,
+            time_remote_user_to_mls_external_sender_updated: true !== e.updateMLSExternalSenderTimestamp && true !== e.remoteUserCreatedTimestamp ? Number(e.updateMLSExternalSenderTimestamp - e.remoteUserCreatedTimestamp) : null,
+            time_remote_user_to_secure_frame_remote_key_ratchet_set: true !== e.setRemoteSecureFrameKeyRatchetTimestamp && true !== e.remoteUserCreatedTimestamp ? Number(e.setRemoteSecureFrameKeyRatchetTimestamp - e.remoteUserCreatedTimestamp) : null,
+            time_remote_user_to_secure_frame_local_key_ratchet_set: true !== e.setLocalSecureFrameKeyRatchetTimestamp && true !== e.remoteUserCreatedTimestamp ? Number(e.setLocalSecureFrameKeyRatchetTimestamp - e.remoteUserCreatedTimestamp) : null,
+            time_remote_user_to_first_frame_decrypted: true !== e.firstFrameDecryptedTimestamp && true !== e.remoteUserCreatedTimestamp ? Number(e.firstFrameDecryptedTimestamp - e.remoteUserCreatedTimestamp) : null
           })
         }), null == (f = this._connection) || f.on(a.Sh.Destroy, () => {
           this.errorTimer.stop()
