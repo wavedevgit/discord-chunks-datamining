@@ -112,14 +112,14 @@ let B = Chunk647438.memo(function(e) {
           action_type: "invite_to_game",
           game_id: null != (e = null == Y ? true : Y.id) ? e : null,
           application_id: X.application_id
-        }), (0, j.v)(ee, j.d.INVITE), Z.default.track(A.rMx.OPEN_MODAL, {
+        }), (0, v.v)(ee, v.d.INVITE), Z.default.track(A.rMx.OPEN_MODAL, {
           type: "Send Join Invite",
           application_id: X.application_id,
           location: J.location
         }), (0, p.h7)(X, false)
       }, [X, J, ee, Y]),
       ei = i.useCallback((e, t) => () => {
-        (0, j.v)(ee, j.d.LEAVE_ACTIVITY), O.Z.leaveActivity({
+        (0, v.v)(ee, v.d.LEAVE_ACTIVITY), O.Z.leaveActivity({
           location: t,
           applicationId: e,
           showFeedback: true
@@ -175,9 +175,9 @@ let B = Chunk647438.memo(function(e) {
         }
       }),
       eg = (null != Y || null == q || (0, g.R)()) && (z || F) ? (z ? (t = false, l = () => {
-        el(), (0, j.v)(ee, j.d.STREAM, false)
+        el(), (0, v.v)(ee, v.d.STREAM, false)
       }, a = d.g5r, m = M.intl.string(M.t.S5anIS)) : K ? (t = false, l = () => {
-        eo(), (0, j.v)(ee, j.d.STREAM, true)
+        eo(), (0, v.v)(ee, v.d.STREAM, true)
       }, a = d.hGI, m = null != Y ? M.intl.formatToPlainString(M.t.AB5gT0, {
         game: Y.name
       }) : M.intl.string(M.t.FeUKeH)) : (t = true, l = null, a = d.hGI, m = null != W && (0, I.vd)(W.type) ? M.intl.string(M.t.uQn9Bw) : null != H ? M.intl.string(M.t.fBXEoK) : M.intl.string(M.t.n3feND)), (0, r.jsx)("div", {
@@ -200,7 +200,7 @@ let B = Chunk647438.memo(function(e) {
         onClick: ei(q.applicationId, q.location),
         icon: d.PBZ
       }),
-      eO = null == B ? null : (0, r.jsx)(v.Z, {}),
+      eO = null == B ? null : (0, r.jsx)(j.Z, {}),
       ey = ef && ec && !ed ? (0, r.jsx)(V, {
         runningGame: Y,
         startAuthorization: eu,
@@ -213,14 +213,14 @@ let B = Chunk647438.memo(function(e) {
         icon: d.xhG
       }) : null,
       {
-        isQuestBarEmpty: ej,
-        hasLoadedQuestBar: ev
+        isQuestBarEmpty: ev,
+        hasLoadedQuestBar: ej
       } = (0, P.Ws)({
         location: D.dr.CONFLICT_CHECKS
       }),
       ex = (() => {
         let e = [],
-          t = !ev || !ej;
+          t = !ej || !ev;
         return en && ed && ef && !t && e.push(s.z.ACCOUNT_LINK_INVITE_FRIENDS), ef && ec && !ed && !t && null != Q && e.push(s.z.ACCOUNT_LINK_PROMPT), (0, r.jsx)(x.ZP, {
           contentTypes: e,
           groupName: R.R.ACCOUNT_NAME_ZONE,

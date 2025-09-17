@@ -21,67 +21,78 @@ var Chunk647438 = require("./647438.js"),
   Chunk388032 = require("./388032.jsx");
 
 function O(e, t) {
-  let n = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
-    r = null == n ? true : n.allPowerups[i.A$],
-    o = (0, d.ZP)(e, r),
-    a = (0, c.q8)(e, t),
-    u = null == r ? true : r.storeRemovalDate,
-    f = a && null != u && o.type !== h.A3.INACTIVE,
-    g = f ? {
+  var n;
+  let r = (0, l.e7)([o.Z], () => {
+      var t;
+      return null == (t = o.Z.getGuild(e)) ? true : t.features
+    }),
+    a = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
+    u = null == a ? true : a.allPowerups[i.A$],
+    f = (0, d.ZP)(e, u),
+    O = (0, c.q8)(e, t),
+    y = null == u ? true : u.storeRemovalDate,
+    _ = null != (n = null == r ? true : r.has(g.oNc.PARTNERED)) && n,
+    v = O && null != y && !_ && f.type === h.A3.POWERUP_ACTIVATED,
+    j = v ? {
       title: b.intl.formatToPlainString(m.default.mgoPkZ, {
-        perkName: null == r ? true : r.title
+        perkName: null == u ? true : u.title
       }),
       description: b.intl.formatToPlainString(m.default.UT9pkJ, {
-        dateString: (0, p.Z)(u)
+        dateString: (0, p.Z)(y)
       })
     } : null;
   return {
-    shouldShow: f,
-    notificationConfig: g
+    shouldShow: v,
+    notificationConfig: j
   }
 }
 
 function y(e, t) {
-  var n, d, h, O;
-  let y = (0, l.e7)([o.Z], () => o.Z.getGuild(e)),
-    _ = (0, l.e7)([a.Z], () => a.Z.hasLayers()),
-    j = null != (O = (0, u.Z)(e)) && O,
-    v = (0, c.q8)(e, t),
-    x = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
-    C = (null == x || null == (n = x.unlockedPowerups) ? true : n[i.A$]) != null,
-    E = null == x || null == (d = x.allPowerups) ? true : d[i.A$],
-    S = null == E ? true : E.storeRemovalDate,
-    P = null == x || null == (h = x.allPowerups) ? true : h[i.XW],
+  var n, O, y, _;
+  let v = (0, l.e7)([o.Z], () => o.Z.getGuild(e)),
+    j = (0, l.e7)([a.Z], () => a.Z.hasLayers()),
+    x = null != (y = (0, u.Z)(e)) && y,
+    C = (0, c.q8)(e, t),
+    E = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
+    S = null == E || null == (n = E.allPowerups) ? true : n[i.A$],
+    P = (0, d.ZP)(e, S),
+    I = null == S ? true : S.storeRemovalDate,
+    N = null == E || null == (O = E.allPowerups) ? true : O[i.XW],
+    Z = (0, l.e7)([o.Z], () => {
+      var t;
+      return null == (t = o.Z.getGuild(e)) ? true : t.features
+    }),
+    w = null != (_ = null == Z ? true : Z.has(g.oNc.PARTNERED)) && _,
     {
-      onActivate: I
-    } = (0, f._C)(e, P),
-    N = !_ && j && v && C && null != E && null != S && null != P && null != y,
-    Z = r.useCallback(e => {
-      I(e)
-    }, [I]),
-    w = r.useMemo(() => {
-      if (!N) return null;
-      let e = (0, p.Z)(S),
-        t = y.premiumTier === g.Eu4.TIER_2 ? b.intl.string(m.default["0uo/LC"]) : true;
+      onActivate: T
+    } = (0, f._C)(e, N),
+    A = !j && x && C && null != S && !w && P.type === h.A3.POWERUP_ACTIVATED && null != I && null != N && null != v,
+    R = r.useCallback(e => {
+      T(e)
+    }, [T]),
+    D = r.useMemo(() => {
+      if (!A) return null;
+      let e = (0, p.Z)(I),
+        t = v.premiumTier === g.Eu4.TIER_2 ? b.intl.string(m.default["0uo/LC"]) : true;
       return {
-        firstHeader: E.title,
+        firstHeader: S.title,
         secondHeader: b.intl.formatToPlainString(m.default["8imxAg"], {
           dateString: e
         }),
         firstBody: b.intl.formatToPlainString(m.default["/bW9tb"], {
-          serverName: y.name
+          serverName: v.name
         }),
         secondBody: b.intl.formatToPlainString(m.default.D09fdn, {
           dateString: e,
-          boostCount: E.cost
+          boostCount: S.cost
         }),
         thirdBody: b.intl.string(m.default["+zvKPj"]),
         primaryButtonText: t,
-        onPrimaryClick: null != t ? Z : true
+        onPrimaryClick: null != t ? R : true
       }
-    }, [N, E, S, y, Z]);
+    }, [A, S, I, v, R]);
   return {
-    shouldShow: N,
-    modalConfig: w
+    shouldShow: A,
+    modalConfig: D
   }
 }

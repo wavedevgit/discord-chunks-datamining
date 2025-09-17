@@ -110,12 +110,12 @@ let et = [Chunk354459.fO.ACTIVITY],
       focused: eg = false,
       blocked: em = false,
       ignored: eb = false,
-      fit: eO = j.L.CONTAIN,
+      fit: eO = v.L.CONTAIN,
       paused: ey = false,
       pulseSpeakingIndicator: e_ = false,
-      forceIdle: ej = false,
-      inOverlayPopout: ev = false
-    } = e, ex = i.useContext(P.h9) || ej, [eC, eE] = i.useState(false), eS = S.Sb.useSetting(), eP = (0, a.e7)([w.default], () => w.default.isStreamInfoOverlayEnabled), [eI, eN] = i.useState(false), eZ = (0, a.e7)([Z.default], () => Z.default.getId()), ew = b.type === Y.fO.ACTIVITY ? null : b.user, eT = null != (l = null == ew ? true : ew.id) ? l : null, [eA] = (0, h.Z)(b.type === Y.fO.ACTIVITY ? [b.applicationId] : []), eR = (0, a.e7)([y.Z], () => y.Z.getEnabled()), eD = (0, a.e7)([A.Z], () => null != eT && A.Z.isLocalVideoDisabled(eT, (0, g.Z)(b.type)), [eT, b.type]), eM = (0, a.e7)([A.Z], () => null != eT ? A.Z.getVideoToggleState(eT, (0, g.Z)(b.type)) : K.ZUi.NONE, [eT, b.type]), eL = eM === K.ZUi.AUTO_PROBING, {
+      forceIdle: ev = false,
+      inOverlayPopout: ej = false
+    } = e, ex = i.useContext(P.h9) || ev, [eC, eE] = i.useState(false), eS = S.Sb.useSetting(), eP = (0, a.e7)([w.default], () => w.default.isStreamInfoOverlayEnabled), [eI, eN] = i.useState(false), eZ = (0, a.e7)([Z.default], () => Z.default.getId()), ew = b.type === Y.fO.ACTIVITY ? null : b.user, eT = null != (l = null == ew ? true : ew.id) ? l : null, [eA] = (0, h.Z)(b.type === Y.fO.ACTIVITY ? [b.applicationId] : []), eR = (0, a.e7)([y.Z], () => y.Z.getEnabled()), eD = (0, a.e7)([A.Z], () => null != eT && A.Z.isLocalVideoDisabled(eT, (0, g.Z)(b.type)), [eT, b.type]), eM = (0, a.e7)([A.Z], () => null != eT ? A.Z.getVideoToggleState(eT, (0, g.Z)(b.type)) : K.ZUi.NONE, [eT, b.type]), eL = eM === K.ZUi.AUTO_PROBING, {
       speaking: ek,
       ringing: eU,
       hasVideo: eG
@@ -193,7 +193,7 @@ let et = [Chunk354459.fO.ACTIVITY],
           paused: ey,
           inPopout: ec,
           focused: eg,
-          inOverlayPopout: ev
+          inOverlayPopout: ej
         }), e6 = (0, r.jsx)(F._, {
           participant: b,
           selected: ep,
@@ -219,7 +219,7 @@ let et = [Chunk354459.fO.ACTIVITY],
           ignored: eb,
           noVideoRender: eh || eL,
           pulseSpeakingIndicator: e_,
-          inOverlayPopout: ev
+          inOverlayPopout: ej
         }), e6 = (0, r.jsx)(H.T, {
           participant: b,
           channelId: ea.id
@@ -248,7 +248,7 @@ let et = [Chunk354459.fO.ACTIVITY],
           paused: ey,
           inPopout: ec,
           focused: eg,
-          inOverlayPopout: ev
+          inOverlayPopout: ej
         })
     }
     let e5 = i.useRef(null),
@@ -351,7 +351,7 @@ let et = [Chunk354459.fO.ACTIVITY],
           }), eS && eP && eI && (0, r.jsx)(G.Z, {
             currentUserId: eZ,
             participant: b
-          }), (0, r.jsx)(v.Z, {
+          }), (0, r.jsx)(j.Z, {
             isFiring: eC,
             callTileRef: e5.current
           })]
@@ -456,8 +456,8 @@ let el = Chunk647438.memo(e => {
     participantDisplayNameStyles: O,
     platform: y,
     secureFramesVerified: _,
-    onContextMenu: j,
-    muted: v,
+    onContextMenu: v,
+    muted: j,
     deafened: x,
     localMuted: C,
     serverMuted: E,
@@ -490,7 +490,7 @@ let el = Chunk647438.memo(e => {
       serverMuted: E,
       serverDeafened: S,
       deafened: x,
-      muted: v
+      muted: j
     });
   return (0, r.jsxs)("div", {
     className: o()(J.overlayContainer, {
@@ -571,7 +571,7 @@ let el = Chunk647438.memo(e => {
         className: J.overlayButtonContainer,
         children: [(0, r.jsx)(ei, {
           onClick: e => {
-            e.stopPropagation(), L(true), j(e, true, Y.A5.THREE_DOT)
+            e.stopPropagation(), L(true), v(e, true, Y.A5.THREE_DOT)
           },
           tooltipText: Q.intl.string(Q.t["+1H47u"]),
           icon: u.xhG,

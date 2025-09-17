@@ -46,12 +46,12 @@ function S(e) {
       guildHasVoice: Z,
       guildHasVideo: w,
       selectedVoiceChannelHasVideo: T
-    } = (0, i.cj)([y.Z, j.Z, m.Z, b.Z, g.Z], () => {
+    } = (0, i.cj)([y.Z, v.Z, m.Z, b.Z, g.Z], () => {
       var t;
       let n = y.Z.getVoiceChannelId(),
         r = null == (t = m.Z.getGuild(e)) ? true : t.afkChannelId,
-        i = j.Z.getUsersWithVideo(e),
-        l = (0, s.DX)(j.Z.getVoiceStates(e));
+        i = v.Z.getUsersWithVideo(e),
+        l = (0, s.DX)(v.Z.getVoiceStates(e));
       return {
         guildHasVoice: (() => {
           if (C) returnfalse;
@@ -67,7 +67,7 @@ function S(e) {
           }
           returnfalse
         })(),
-        selectedVoiceChannelHasVideo: null != n && j.Z.hasVideo(n)
+        selectedVoiceChannelHasVideo: null != n && v.Z.hasVideo(n)
       }
     }, [e, C]),
     A = h.default.getId();
@@ -80,17 +80,17 @@ function S(e) {
       m = false,
       O = false,
       _ = false,
-      j = false;
+      v = false;
     if (!l && C) return {
       audio: c,
       video: O,
       screenshare: _,
       liveStage: m,
       activeEvent: h,
-      activity: j,
+      activity: v,
       isCurrentUserConnected: false
     };
-    let x = v.default.keys(d.Z.getStageInstancesByGuild(e)).some(e => {
+    let x = j.default.keys(d.Z.getStageInstancesByGuild(e)).some(e => {
         let t = g.Z.getChannel(e);
         return null != t && b.Z.can(u.gl, t)
       }),
@@ -107,13 +107,13 @@ function S(e) {
         returnfalse
       })(),
       L = o.ZP.getEmbeddedActivitiesForGuild(e).length > 0;
-    return l ? (c = true, h = (null == S ? true : S.channel_id) === i, m = E, O = D, _ = I, j = L) : (c = Z, h = null != S, m = x, O = w, _ = R, j = M), {
+    return l ? (c = true, h = (null == S ? true : S.channel_id) === i, m = E, O = D, _ = I, v = L) : (c = Z, h = null != S, m = x, O = w, _ = R, v = M), {
       audio: c,
       video: O,
       screenshare: _,
       liveStage: m,
       activeEvent: h,
-      activity: j,
+      activity: v,
       isCurrentUserConnected: l || E
     }
   }, [e, C, T, A, N, P, S, Z, w])

@@ -1,7 +1,7 @@
 /** Chunk was on 71832 **/
 /** chunk id: 252417, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,11 +22,11 @@ var Chunk951288 = require("./951288.js"),
 let y = Chunk481060.EFr.SIZE_40,
   _ = (0, Chunk481060.pxk)(y);
 
-function j(e) {
+function v(e) {
   let {
     user: t,
-    status: j,
-    guildId: v,
+    status: v,
+    guildId: j,
     channelId: x,
     onSelect: C
   } = e, {
@@ -46,7 +46,7 @@ function j(e) {
     voiceChannel: T
   } = (0, u.Z)({
     userId: w ? t.id : true,
-    guildId: v
+    guildId: j
   });
   return (0, r.jsxs)(o.P3F, {
     focusProps: S === b.l.MODAL_V2 ? {
@@ -102,10 +102,10 @@ function j(e) {
       })
     },
     children: [(0, r.jsx)(o.qEK, {
-      src: t.getAvatarURL(v, _),
+      src: t.getAvatarURL(j, _),
       "aria-label": t.username,
       size: y,
-      status: P ? m.Skl.UNKNOWN : j,
+      status: P ? m.Skl.UNKNOWN : v,
       statusBackdropColor: P ? true : (0, o.QFD)(E),
       isMobile: N,
       className: O.avatar

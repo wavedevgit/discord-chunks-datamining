@@ -71,8 +71,8 @@ let N = Chunk647438.memo(function(e) {
         channel: l,
         connectChannelDragSource: c,
         connectChannelDropTarget: h,
-        disableManageChannels: j,
-        position: v,
+        disableManageChannels: v,
+        position: j,
         sortingPosition: N,
         hideIcon: Z,
         children: w
@@ -80,7 +80,7 @@ let N = Chunk647438.memo(function(e) {
       T = (0, s.e7)([_.ZP], () => _.ZP.isChannelMuted(l.getGuildId(), l.id)),
       A = (0, s.e7)([b.Z], () => b.Z.isCollapsed(l.id)),
       R = (0, s.e7)([y.Z], () => y.Z.can(x.Plq.MANAGE_CHANNELS, l));
-    t = null != N ? v > N ? E.containerDragAfter : E.containerDragBefore : E.containerDefault;
+    t = null != N ? j > N ? E.containerDragAfter : E.containerDragBefore : E.containerDefault;
     let D = i.useCallback(() => {
         A ? (0, p.mJ)(l.id) : (0, p.c4)(l.id)
       }, [l.id, A]),
@@ -178,7 +178,7 @@ let N = Chunk647438.memo(function(e) {
             })), (0, r.jsx)("div", {
               onClick: I,
               className: E.children,
-              children: R && !j ? (0, r.jsx)(d.ua7, {
+              children: R && !v ? (0, r.jsx)(d.ua7, {
                 text: C.intl.string(C.t["fUYU+v"]),
                 children: e => {
                   let {
@@ -254,8 +254,8 @@ let N = Chunk647438.memo(function(e) {
   T = Chunk647438.memo(function(e) {
     let {
       category: t
-    } = e, n = (0, s.e7)([j.Z], () => j.Z.isVoiceCategoryCollapsed(t.guild.id)), l = i.useCallback(() => {
-      n ? (0, v.s)(t.guild.id) : (0, v.M)(t.guild.id)
+    } = e, n = (0, s.e7)([v.Z], () => v.Z.isVoiceCategoryCollapsed(t.guild.id)), l = i.useCallback(() => {
+      n ? (0, j.s)(t.guild.id) : (0, j.M)(t.guild.id)
     }, [t.guild.id, n]);
     return (0, r.jsxs)(u.zx, {
       look: u.zx.Looks.FILLED,
@@ -277,7 +277,7 @@ let N = Chunk647438.memo(function(e) {
     let {
       category: t,
       channel: n
-    } = e, i = (0, s.e7)([j.Z], () => j.Z.isVoiceCategoryCollapsed(t.guild.id));
+    } = e, i = (0, s.e7)([v.Z], () => v.Z.isVoiceCategoryCollapsed(t.guild.id));
     return i || null == n || n.record.type === x.d4z.GUILD_CATEGORY ? i ? (0, r.jsx)("li", {
       className: E.containerDefault,
       children: (0, r.jsx)("div", {
