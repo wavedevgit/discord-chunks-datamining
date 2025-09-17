@@ -1,4 +1,4 @@
-/** Chunk was on 55777 **/
+/** Chunk was on 76051 **/
 /** chunk id: 238122, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -19,13 +19,13 @@ let u = e => {
         subtitle: _,
         placeholder: m,
         rows: p,
-        character_limit: f,
-        pattern: g
+        character_limit: g,
+        pattern: f
       },
       onChange: b,
       initialText: x,
       isRequired: h
-    } = e, v = i.useRef(l.Z.reactParserFor((t = function(e) {
+    } = e, v = i.useRef(a.Z.reactParserFor((t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -42,7 +42,7 @@ let u = e => {
         })
       }
       return e
-    }({}, l.Z.defaultRules), n = n = {
+    }({}, a.Z.defaultRules), n = n = {
       link: o.s
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -53,42 +53,42 @@ let u = e => {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t))), [j, y] = i.useState(""), [O, C] = i.useState(null);
+    }), t))), [j, y] = i.useState(""), [O, I] = i.useState(null);
     i.useEffect(() => {
       var e;
       y(null != (e = null == x ? true : x.value) ? e : "")
     }, [x]);
-    let I = i.useCallback(e => {
-      let t = null != g ? new RegExp(g) : null;
-      null == t || t.test(e) ? null != e && (C(null), y(e), b({
+    let C = i.useCallback(e => {
+      let t = null != f ? new RegExp(f) : null;
+      null == t || t.test(e) ? null != e && (I(null), y(e), b({
         value: e,
         isValid: true
-      })) : (C(s.intl.string(s.t["24xrGR"])), b({
+      })) : (I(s.intl.string(s.t["24xrGR"])), b({
         value: e,
         isValid: false
       }))
-    }, [b, g]);
+    }, [b, f]);
     return (0, r.jsxs)("div", {
       className: d.marginBottom8,
       children: [null != u && (0, r.jsx)("div", {
         className: d.marginBottom8,
-        children: (0, r.jsxs)(a.Text, {
+        children: (0, r.jsxs)(l.Text, {
           variant: "text-sm/bold",
           children: [u, h && (0, r.jsx)("span", {
             className: c.required,
             children: "*"
           })]
         })
-      }), (0, r.jsx)(a.Kx8, {
-        maxLength: f,
-        onChange: I,
+      }), (0, r.jsx)(l.Kx8, {
+        maxLength: g,
+        onChange: C,
         value: j,
         error: O,
         rows: p,
         placeholder: m,
         autoFocus: true
       }), null != _ && (0, r.jsx)("div", {
-        children: (0, r.jsx)(a.Text, {
+        children: (0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
           children: v.current(_)
         })
@@ -100,17 +100,17 @@ let u = e => {
       elements: t,
       onChange: n,
       state: i
-    } = e, a = t.map(e => {
+    } = e, l = t.map(e => {
       var t;
-      let a = e.name;
+      let l = e.name;
       return (0, r.jsx)(u, {
         data: e.data,
-        onChange: e => n(a, e.value, e.isValid),
-        initialText: null != (t = null == i ? true : i[a]) ? t : true,
+        onChange: e => n(l, e.value, e.isValid),
+        initialText: null != (t = null == i ? true : i[l]) ? t : true,
         isRequired: e.should_submit_data
-      }, a)
+      }, l)
     });
     return (0, r.jsx)("div", {
-      children: a
+      children: l
     })
   }

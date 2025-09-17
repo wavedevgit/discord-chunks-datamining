@@ -1,7 +1,7 @@
-/** Chunk was on 55777 **/
+/** Chunk was on 76051 **/
 /** chunk id: 816342, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,22 +15,22 @@ var Chunk951288 = require("./951288.js"),
   Chunk5192 = require("./5192.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let f = e => {
+let g = e => {
   let {
     user: t,
     channelId: n,
-    reportId: f,
-    reportType: g
-  } = e, b = (0, a.e7)([u.Z], () => u.Z.isBlocked(t.id), [t.id]), x = (0, a.e7)([d.Z], () => d.Z.getChannel(n), [n]), h = i.useMemo(() => _.ZP.getName(null == x ? true : x.guild_id, null == x ? true : x.id, t), [x, t]), v = i.useCallback(() => {
+    reportId: g,
+    reportType: f
+  } = e, b = (0, l.e7)([u.Z], () => u.Z.isBlocked(t.id), [t.id]), x = (0, l.e7)([d.Z], () => d.Z.getChannel(n), [n]), h = i.useMemo(() => _.ZP.getName(null == x ? true : x.guild_id, null == x ? true : x.id, t), [x, t]), v = i.useCallback(() => {
     o.ZP.trackWithMetadata(m.rMx.IAR_BLOCK_USER_BUTTON_CLICKED, {
       other_user_id: t.id,
-      report_id: f
-    }), l.Z.blockUser(t.id, {
+      report_id: g
+    }), a.Z.blockUser(t.id, {
       location: "ReportMenuBlockUser-iOS"
     }).then(() => {
       s.Z.showBlockSuccessToast(t.id, n)
     })
-  }, [t, f, n]);
+  }, [t, g, n]);
   return (0, r.jsx)(c.JZ, {
     title: p.intl.formatToPlainString(p.t["Q1o/f3"], {
       username: h
@@ -39,6 +39,6 @@ let f = e => {
     buttonText: b ? p.intl.string(p.t.ot2tSk) : p.intl.string(p.t["l+7PZW"]),
     buttonDisabled: b,
     onButtonPress: v,
-    buttonVariant: "application" === g.name && b ? "secondary" : "critical-primary"
+    buttonVariant: "application" === f.name && b ? "secondary" : "critical-primary"
   })
 }

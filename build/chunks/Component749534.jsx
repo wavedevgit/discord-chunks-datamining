@@ -1,4 +1,4 @@
-/** Chunk was on 55777 **/
+/** Chunk was on 76051 **/
 /** chunk id: 749534, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -15,13 +15,13 @@ function o(e) {
     title: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: l.container,
+    className: a.container,
     children: [(0, r.jsx)(i.X6q, {
-      className: l.header,
+      className: a.header,
       variant: "text-sm/semibold",
-      children: null != n ? n : a.intl.string(a.t["k+QA9P"])
+      children: null != n ? n : l.intl.string(l.t["k+QA9P"])
     }), (0, r.jsx)("div", {
-      className: l.upsellsContainer,
+      className: a.upsellsContainer,
       children: t
     })]
   })

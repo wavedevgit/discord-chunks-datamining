@@ -1,12 +1,12 @@
-/** Chunk was on 1267 **/
-/** chunk id: 977416, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 37690 **/
+/** chunk id: 977416, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
@@ -18,125 +18,125 @@ var Chunk120356 = require("./120356.js"),
   Chunk932366 = require("./932366.js"),
   Chunk845859 = require("./845859.js");
 
-function O(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = n
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function y(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var r = Object.keys(e);
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      r.push.apply(r, n)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
-    return r
-  })(Object(t)).forEach(function(r) {
-    Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function j(e) {
+function y(e) {
   var {
     gameName: t,
-    onClick: r
+    onClick: n
   } = e, i = function(e, t) {
     if (null == e) return {};
-    var r, n, i = function(e, t) {
+    var n, r, i = function(e, t) {
       if (null == e) return {};
-      var r, n, i = {},
-        l = Object.keys(e);
-      for (n = 0; n < l.length; n++) r = l[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+      var n, r, i = {},
+        o = Object.keys(e);
+      for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+      var o = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
   }(e, ["gameName", "onClick"]);
-  let l = null != t ? t : g.intl.string(g.t.GIWFlJ),
+  let o = null != t ? t : g.intl.string(g.t.GIWFlJ),
     c = g.intl.formatToPlainString(g.t["3mb1s7"], {
-      game: l
+      game: o
     }),
-    f = (0, o.e7)([s.Z], () => s.Z.suggestedFetchIsLoading);
-  return (0, u.kO)(i.applicationId) || f ? (0, n.jsx)("div", {
-    className: b.loadingCover
-  }) : (0, n.jsx)(a.ua7, {
+    f = (0, a.e7)([s.Z], () => s.Z.suggestedFetchIsLoading);
+  return (0, u.kO)(i.applicationId) || f ? (0, r.jsx)("div", {
+    className: p.loadingCover
+  }) : (0, r.jsx)(l.ua7, {
     text: c,
-    children: e => (0, n.jsxs)(a.P3F, y(O({
-      className: p.addButton
+    children: e => (0, r.jsxs)(l.P3F, O(m({
+      className: b.addButton
     }, e), {
-      onClick: r,
-      children: [(0, n.jsx)(d.Z, y(O({
-        className: p.cover,
+      onClick: n,
+      children: [(0, r.jsx)(d.Z, O(m({
+        className: b.cover,
         gameName: t
       }, i), {
         disableInteraction: true
-      })), (0, n.jsx)(a.svS, {
+      })), (0, r.jsx)(l.svS, {
         size: "md",
-        className: p.addIcon,
-        color: a.TVs.colors.WHITE
+        className: b.addIcon,
+        color: l.TVs.colors.WHITE
       })]
     }))
   })
 }
 
-function m(e) {
+function j(e) {
   let {
     userId: t,
-    games: r,
+    games: n,
     onDismiss: i,
-    onClick: o,
+    onClick: a,
     className: s
   } = e, u = (0, c.Dt)();
-  return (0, n.jsxs)("aside", {
-    className: l()(p.container, s),
+  return (0, r.jsxs)("aside", {
+    className: o()(b.container, s),
     "aria-labelledby": u,
-    children: [(0, n.jsxs)("div", {
-      className: p.header,
-      children: [(0, n.jsx)(a.P3F, {
-        className: p.dismissButton,
+    children: [(0, r.jsxs)("div", {
+      className: b.header,
+      children: [(0, r.jsx)(l.P3F, {
+        className: b.dismissButton,
         "aria-label": g.intl.string(g.t["pUR+3t"]),
         onClick: i,
-        children: (0, n.jsx)(a.Dio, {
+        children: (0, r.jsx)(l.Dio, {
           size: "sm",
           color: "currentColor"
         })
-      }), (0, n.jsx)(a.X6q, {
+      }), (0, r.jsx)(l.X6q, {
         id: u,
         variant: "text-xs/medium",
         color: "text-secondary",
         children: g.intl.string(g.t.zMUr6e)
       })]
-    }), (0, n.jsx)(f.Z, {
-      games: r,
+    }), (0, r.jsx)(f.Z, {
+      games: n,
       renderGame: e => {
         let {
-          applicationId: r,
+          applicationId: n,
           gameName: i,
-          imageSrc: l
+          imageSrc: o
         } = e;
-        return (0, n.jsx)(j, {
-          onClick: () => o(r, i, l),
+        return (0, r.jsx)(y, {
+          onClick: () => a(n, i, o),
           userId: t,
-          applicationId: r,
+          applicationId: n,
           gameName: i,
-          imageSrc: l
+          imageSrc: o
         })
       }
     })]

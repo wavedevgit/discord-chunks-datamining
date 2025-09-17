@@ -1,5 +1,5 @@
-/** Chunk was on 1267 **/
-/** chunk id: 853072, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 37690 **/
+/** chunk id: 853072, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 }), require("./388685.js");
@@ -12,14 +12,14 @@ var Chunk442837 = require("./442837.js"),
 function c(e) {
   let {
     userId: t
-  } = (0, a.z)(), r = (0, i.N)(e);
-  return (0, n.Wu)([l.default], () => {
-    let e = l.default.getCurrentUser(),
-      n = new Set;
-    return r.forEach(e => {
-      n.add(e.author_id), e.participants.forEach(e => {
-        n.add(e)
+  } = (0, l.z)(), n = (0, i.N)(e);
+  return (0, r.Wu)([o.default], () => {
+    let e = o.default.getCurrentUser(),
+      r = new Set;
+    return n.forEach(e => {
+      r.add(e.author_id), e.participants.forEach(e => {
+        r.add(e)
       })
-    }), Array.from(n).filter(r => r !== (null == e ? true : e.id) && r !== t).map(e => l.default.getUser(e)).filter(o.lm)
-  }, [r, t])
+    }), Array.from(r).filter(n => n !== (null == e ? true : e.id) && n !== t).map(e => o.default.getUser(e)).filter(a.lm)
+  }, [n, t])
 }

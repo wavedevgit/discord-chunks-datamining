@@ -1,5 +1,5 @@
-/** Chunk was on 1267 **/
-/** chunk id: 190862, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 37690 **/
+/** chunk id: 190862, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
 });
@@ -18,61 +18,61 @@ var Chunk951288 = require("./951288.js"),
   Chunk272289 = require("./272289.jsx"),
   Chunk39642 = require("./39642.js");
 
-function y(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = n
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function j(e, t) {
+function y(e, t) {
   if (null == e) return {};
-  var r, n, i = function(e, t) {
+  var n, r, i = function(e, t) {
     if (null == e) return {};
-    var r, n, i = {},
-      l = Object.keys(e);
-    for (n = 0; n < l.length; n++) r = l[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+    var n, r, i = {},
+      o = Object.keys(e);
+    for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
     return i
   }(e, t);
   if (Object.getOwnPropertySymbols) {
-    var l = Object.getOwnPropertySymbols(e);
-    for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
-let m = e => {
+let j = e => {
     var {
       widget: t
-    } = e, r = j(e, ["widget"]);
+    } = e, n = y(e, ["widget"]);
     switch (t.type) {
       case i.l.FAVORITE_GAMES:
-        return (0, n.jsx)(f.Z, y({
+        return (0, r.jsx)(f.Z, O({
           widget: t
-        }, r));
+        }, n));
       case i.l.CURRENT_GAMES:
-        return (0, n.jsx)(d.Z, y({
+        return (0, r.jsx)(d.Z, O({
           widget: t
-        }, r));
+        }, n));
       case i.l.WANT_TO_PLAY_GAMES:
-        return (0, n.jsx)(b.Z, y({
+        return (0, r.jsx)(p.Z, O({
           widget: t
-        }, r));
+        }, n));
       case i.l.PLAYED_GAMES:
-        return (0, n.jsx)(g.Z, y({
+        return (0, r.jsx)(g.Z, O({
           widget: t
-        }, r));
+        }, n));
       default:
         return null
     }
@@ -80,37 +80,37 @@ let m = e => {
   v = e => {
     var {
       widget: t,
-      user: r,
+      user: n,
       disableInteraction: i
-    } = e, d = j(e, ["widget", "user", "disableInteraction"]);
+    } = e, d = y(e, ["widget", "user", "disableInteraction"]);
     let f = (0, c.FX)(t),
       {
         shouldShowSuggestions: g,
-        handleDismissSuggestions: b
+        handleDismissSuggestions: p
       } = (0, s.h)(f),
-      v = (0, l.e7)([o.default], () => o.default.getId() === r.id),
-      x = v && !i && g,
-      h = (0, a.mR)(f),
-      w = (0, a.Hy)(f, {
+      v = (0, o.e7)([a.default], () => a.default.getId() === n.id),
+      h = v && !i && g,
+      x = (0, l.mR)(f),
+      P = (0, l.Hy)(f, {
         isCurrentUser: v
       }),
-      P = (0, a.kQ)(f);
-    return (0, n.jsx)(m, y({
+      _ = (0, l.kQ)(f);
+    return (0, r.jsx)(j, O({
       widget: f,
-      user: r,
+      user: n,
       disableInteraction: i,
-      headerTitle: h,
-      headerSubtitle: w,
-      headerActionButtons: v ? [(0, n.jsx)(u.Z, {
-        disabled: P,
+      headerTitle: x,
+      headerSubtitle: P,
+      headerActionButtons: v ? [(0, r.jsx)(u.Z, {
+        disabled: _,
         widgetType: f.type,
         widget: f
       }, "".concat(f.type, "-browse-games-popout"))] : true,
-      trailingContent: x && (0, n.jsx)(p.Z, {
-        userId: r.id,
+      trailingContent: h && (0, r.jsx)(b.Z, {
+        userId: n.id,
         widgetType: f.type,
-        onDismiss: b,
-        className: O.suggestedGames
+        onDismiss: p,
+        className: m.suggestedGames
       })
     }, d))
   }

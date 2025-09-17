@@ -1,7 +1,7 @@
-/** Chunk was on 55777 **/
+/** Chunk was on 76051 **/
 /** chunk id: 189472, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,25 +16,25 @@ var Chunk951288 = require("./951288.js"),
   Chunk621600 = require("./621600.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let g = e => {
+let f = e => {
   let {
     user: t,
     channelId: n,
-    reportId: g
-  } = e, b = d.Z.getDMFromUserId(t.id), x = (0, a.e7)([d.Z], () => d.Z.getChannel(n), [n]), h = i.useMemo(() => _.ZP.getName(null == x ? true : x.guild_id, null == x ? true : x.id, t), [x, t]), v = (0, a.e7)([u.ZP], () => null == b ? null : u.ZP.isChannelMuted(null, b)), [j, y] = i.useState(null != v && v), O = i.useCallback(() => {
+    reportId: f
+  } = e, b = d.Z.getDMFromUserId(t.id), x = (0, l.e7)([d.Z], () => d.Z.getChannel(n), [n]), h = i.useMemo(() => _.ZP.getName(null == x ? true : x.guild_id, null == x ? true : x.id, t), [x, t]), v = (0, l.e7)([u.ZP], () => null == b ? null : u.ZP.isChannelMuted(null, b)), [j, y] = i.useState(null != v && v), O = i.useCallback(() => {
     null != b && (y(true), o.ZP.trackWithMetadata(p.rMx.IAR_MUTE_USER_BUTTON_CLICKED, {
       other_user_id: t.id,
-      report_id: g
-    }), l.Z.updateChannelOverrideSettings(null, b, {
+      report_id: f
+    }), a.Z.updateChannelOverrideSettings(null, b, {
       muted: true
     }, m.ZB.Muted), s.Z.showMuteSuccessToast(t.id, n))
-  }, [b, n, t, g]);
+  }, [b, n, t, f]);
   return (0, r.jsx)(c.JZ, {
-    title: f.intl.formatToPlainString(f.t.TRp5wc, {
+    title: g.intl.formatToPlainString(g.t.TRp5wc, {
       username: h
     }),
-    description: f.intl.string(f.t["yM/+AA"]),
-    buttonText: j ? f.intl.string(f.t.E8x4Nj) : f.intl.string(f.t.HITUcX),
+    description: g.intl.string(g.t["yM/+AA"]),
+    buttonText: j ? g.intl.string(g.t.E8x4Nj) : g.intl.string(g.t.HITUcX),
     buttonDisabled: j,
     onButtonPress: O
   })

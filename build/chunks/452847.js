@@ -1,5 +1,5 @@
-/** Chunk was on 65652 **/
-/** chunk id: 452847, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 76051 **/
+/** chunk id: 452847, original params: e,t,n (module,exports,require) **/
 module.exports = {
   childButton: "childButton__3ed08",
   childText: "childText__3ed08",

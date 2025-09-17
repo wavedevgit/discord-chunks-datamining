@@ -1,12 +1,12 @@
-/** Chunk was on 72164 **/
+/** Chunk was on 31553 **/
 /** chunk id: 76076, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => v
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk938288 = require("./938288.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk361623 = require("./361623.js"),
   Chunk583140 = require("./583140.js");
-let b = {
+let j = {
     [Chunk228168.qb.WIDGET_ADDED]: {
       message: Chunk388032.intl.string(Chunk388032.t.fFP1U1),
       icon: (0, Chunk951288.jsx)(Chunk481060.dz2, {
@@ -43,36 +43,36 @@ let b = {
       type: Chunk481060.ToastType.FAILURE
     }
   },
-  h = e => {
+  x = e => {
     let {
       message: n,
       icon: t,
-      type: r
+      type: i
     } = e;
-    return (0, o.jsxs)("div", {
-      className: i()(x.toast, m.toast),
-      "data-type": r,
-      children: [(0, o.jsx)("div", {
-        className: m.toastIcon,
+    return (0, l.jsxs)("div", {
+      className: o()(h.toast, p.toast),
+      "data-type": i,
+      children: [(0, l.jsx)("div", {
+        className: p.toastIcon,
         children: t
-      }), (0, o.jsx)(s.Text, {
+      }), (0, l.jsx)(c.Text, {
         color: "header-primary",
         variant: "text-sm/semibold",
         children: n
       })]
     })
   },
-  g = e => {
+  v = e => {
     let {
       className: n,
       onAutoHide: t
-    } = e, l = (0, u.be)(), f = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), [p, x] = r.useState(false), [g, j] = r.useState(null);
-    r.useEffect(() => {
-      null !== l ? (x(true), j(b[l]), s.uvj.announce(b[l].message)) : x(false)
-    }, [l]);
-    let v = (0, s.Yzy)(p, {
+    } = e, r = (0, u.be)(), m = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), [f, h] = i.useState(false), [v, g] = i.useState(null);
+    i.useEffect(() => {
+      null !== r ? (h(true), g(j[r]), c.uvj.announce(j[r].message)) : h(false)
+    }, [r]);
+    let b = (0, c.Yzy)(f, {
       from: {
-        transform: f ? "translateY(0)" : "translateY(-12px)",
+        transform: m ? "translateY(0)" : "translateY(-12px)",
         opacity: 0
       },
       enter: {
@@ -80,7 +80,7 @@ let b = {
         opacity: 1
       },
       leave: {
-        transform: f ? "translateY(0)" : "translateY(-12px)",
+        transform: m ? "translateY(0)" : "translateY(-12px)",
         opacity: 0
       },
       config: {
@@ -90,35 +90,35 @@ let b = {
         clamp: true
       }
     }, "animate-always");
-    return r.useEffect(() => {
-      if (p) {
+    return i.useEffect(() => {
+      if (f) {
         let e = setTimeout(() => {
           null == t || t()
         }, 2e3);
         return () => clearTimeout(e)
       }
-    }, [p, t]), (0, o.jsx)(o.Fragment, {
-      children: v((e, t) => t && null !== g && (0, o.jsx)(c.animated.div, {
-        className: i()(n, m.toastContainer),
+    }, [f, t]), (0, l.jsx)(l.Fragment, {
+      children: b((e, t) => t && null !== v && (0, l.jsx)(s.animated.div, {
+        className: o()(n, p.toastContainer),
         style: e,
-        children: (0, o.jsx)(h, function(e) {
+        children: (0, l.jsx)(x, function(e) {
           for (var n = 1; n < arguments.length; n++) {
             var t = null != arguments[n] ? arguments[n] : {},
-              o = Object.keys(t);
-            "function" == typeof Object.getOwnPropertySymbols && (o = o.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+              l = Object.keys(t);
+            "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
               return Object.getOwnPropertyDescriptor(t, e).enumerable
-            }))), o.forEach(function(n) {
-              var o;
-              o = t[n], n in e ? Object.defineProperty(e, n, {
-                value: o,
+            }))), l.forEach(function(n) {
+              var l;
+              l = t[n], n in e ? Object.defineProperty(e, n, {
+                value: l,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[n] = o
+              }) : e[n] = l
             })
           }
           return e
-        }({}, g))
+        }({}, v))
       }))
     })
   }

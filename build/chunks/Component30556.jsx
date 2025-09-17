@@ -1,4 +1,4 @@
-/** Chunk was on 72164 **/
+/** Chunk was on 31553 **/
 /** chunk id: 30556, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => a
@@ -15,48 +15,48 @@ function a(e) {
     type: n,
     userId: t,
     onClose: a
-  } = e, s = function(e, n) {
+  } = e, c = function(e, n) {
     if (null == e) return {};
-    var t, o, r = function(e, n) {
+    var t, l, i = function(e, n) {
       if (null == e) return {};
-      var t, o, r = {},
-        l = Object.keys(e);
-      for (o = 0; o < l.length; o++) t = l[o], n.indexOf(t) >= 0 || (r[t] = e[t]);
-      return r
+      var t, l, i = {},
+        r = Object.keys(e);
+      for (l = 0; l < r.length; l++) t = r[l], n.indexOf(t) >= 0 || (i[t] = e[t]);
+      return i
     }(e, n);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (o = 0; o < l.length; o++) t = l[o], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (r[t] = e[t])
+      var r = Object.getOwnPropertySymbols(e);
+      for (l = 0; l < r.length; l++) t = r[l], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (i[t] = e[t])
     }
-    return r
+    return i
   }(e, ["type", "userId", "onClose"]);
-  let d = n === i.j8.TEXT ? i.tG : i.ef;
-  return (0, o.jsx)(d, function(e) {
+  let d = n === o.j8.TEXT ? o.tG : o.ef;
+  return (0, l.jsx)(d, function(e) {
     for (var n = 1; n < arguments.length; n++) {
       var t = null != arguments[n] ? arguments[n] : {},
-        o = Object.keys(t);
-      "function" == typeof Object.getOwnPropertySymbols && (o = o.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+        l = Object.keys(t);
+      "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
         return Object.getOwnPropertyDescriptor(t, e).enumerable
-      }))), o.forEach(function(n) {
-        var o;
-        o = t[n], n in e ? Object.defineProperty(e, n, {
-          value: o,
+      }))), l.forEach(function(n) {
+        var l;
+        l = t[n], n in e ? Object.defineProperty(e, n, {
+          value: l,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[n] = o
+        }) : e[n] = l
       })
     }
     return e
   }({
     action: "SEND_MESSAGE",
-    icon: r.kBi,
-    text: c.intl.string(c.t.zROXER),
-    tooltipText: c.intl.string(c.t.zROXER),
+    icon: i.kBi,
+    text: s.intl.string(s.t.zROXER),
+    tooltipText: s.intl.string(s.t.zROXER),
     onClick: () => {
-      l.Z.openPrivateChannel({
+      r.Z.openPrivateChannel({
         recipientIds: t
       }), null == a || a()
     }
-  }, s))
+  }, c))
 }

@@ -1705,4 +1705,19 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
     type: t,
     guildId: e.guild_id
   })
+}), H(["USER_APPLICATION_IDENTITY_UPDATE"], (e, t) => {
+  z({
+    type: t,
+    user_id: e.user_id,
+    application_id: e.application_id,
+    username: e.username,
+    avatar_hash: e.avatar_hash,
+    metadata: e.metadata
+  })
+}), H(["USER_APPLICATION_IDENTITY_REMOVE"], (e, t) => {
+  z({
+    type: t,
+    user_id: e.user_id,
+    application_id: e.application_id
+  })
 })

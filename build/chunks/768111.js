@@ -1,7 +1,7 @@
-/** Chunk was on 72164 **/
+/** Chunk was on 31553 **/
 /** chunk id: 768111, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => f
 }), require("./539854.js");
 var Chunk447448 = require("./447448.js"),
   Chunk461133 = require("./461133.js"),
@@ -14,38 +14,38 @@ var Chunk447448 = require("./447448.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e) {
+function f(e) {
   let {
     user: n,
     currentUser: t
   } = e, {
-    mutualFriendsCount: p,
-    mutualGuilds: m
-  } = (0, c.Z)(n), x = null == m ? true : m.length, b = (0, i.Z)(n), h = (0, o.k)({
+    mutualFriendsCount: f,
+    mutualGuilds: p
+  } = (0, s.Z)(n), h = null == p ? true : p.length, j = (0, o.Z)(n), x = (0, l.k)({
     location: "useUserProfileModalV2TabBarItems"
-  }), g = (0, r.P)({
+  }), v = (0, i.P)({
     location: "useUserProfileModalV2TabBarItems"
-  }), j = (0, a.Z)(n.id), v = (0, l.S)({
+  }), g = (0, a.Z)(n.id), b = (0, r.S)({
     location: "useUserProfileModalV2TabBarItems"
-  }), y = [], _ = n.id === (null == t ? true : t.id), I = j.length > 0;
-  return (_ && h || I && g) && y.push({
-    text: f.intl.string(f.t.laViw8),
+  }), y = [], O = n.id === (null == t ? true : t.id), I = g.length > 0;
+  return (O && x || I && v) && y.push({
+    text: m.intl.string(m.t.laViw8),
     section: u.oh.WIDGETS,
     subsection: true
   }), y.push({
-    text: f.intl.string(f.t.chq59f),
+    text: m.intl.string(m.t.chq59f),
     section: u.oh.ACTIVITY,
     subsection: true
-  }), v && y.push({
-    text: f.intl.string(f.t["7lZ31N"]),
+  }), b && y.push({
+    text: m.intl.string(m.t["7lZ31N"]),
     section: u.oh.WISHLIST,
     subsection: true
-  }), n.id !== (null == t ? true : t.id) && b && (y.push({
-    text: (0, s.Z)(p),
+  }), n.id !== (null == t ? true : t.id) && j && (y.push({
+    text: (0, c.Z)(f),
     section: u.oh.MUTUAL_FRIENDS,
     subsection: true
   }), y.push({
-    text: (0, d.Z)(x),
+    text: (0, d.Z)(h),
     section: u.oh.MUTUAL_GUILDS,
     subsection: true
   })), y

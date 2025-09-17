@@ -490,6 +490,10 @@ let i = {
     actions: ["VOICE_STATE_UPDATES"],
     inlineRequire: () => require("./192229.js").Z,
     neverLoadBeforeConnectionOpen: true
+  },
+  UserApplicationIdentityManager: {
+    actions: ["USER_APPLICATION_IDENTITY_UPDATE", "USER_APPLICATION_IDENTITY_REMOVE"],
+    inlineRequire: () => require("./473288.js").Z
   }
 };
 (0, Chunk132454.j)(i)

@@ -1,9 +1,9 @@
-/** Chunk was on 72164 **/
+/** Chunk was on 31553 **/
 /** chunk id: 184242, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Ac: () => r
+  Ac: () => i
 });
-let o = (0, require("./818083.js").B)({
+let l = (0, require("./818083.js").B)({
   kind: "user",
   id: "2024-08_user_profile_blockee_hide_mutuals",
   label: "User Profile Blockee Hide Mutuals",
@@ -19,16 +19,16 @@ let o = (0, require("./818083.js").B)({
   }]
 });
 
-function r(e) {
+function i(e) {
   let {
     location: n,
     autoTrackExposure: t = true
   } = e, {
-    enabled: r
-  } = o.useExperiment({
+    enabled: i
+  } = l.useExperiment({
     location: n
   }, {
     autoTrackExposure: t
   });
-  return r
+  return i
 }

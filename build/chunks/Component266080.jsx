@@ -1,4 +1,4 @@
-/** Chunk was on 55777 **/
+/** Chunk was on 76051 **/
 /** chunk id: 266080, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -16,12 +16,12 @@ let _ = e => {
   let {
     guildId: t,
     reportId: n
-  } = e, [_, m] = i.useState(false), p = c.Z.getGuild(t), f = null != p;
+  } = e, [_, m] = i.useState(false), p = c.Z.getGuild(t), g = null != p;
   i.useEffect(() => {
-    m(!f)
-  }, [f]);
-  let g = i.useCallback(() => {
-    m(true), l.ZP.trackWithMetadata(d.rMx.IAR_LEAVE_GUILD_BUTTON_CLICKED, {
+    m(!g)
+  }, [g]);
+  let f = i.useCallback(() => {
+    m(true), a.ZP.trackWithMetadata(d.rMx.IAR_LEAVE_GUILD_BUTTON_CLICKED, {
       guild_id: t,
       report_id: n
     }), o.Z.leaveGuild(t)
@@ -35,9 +35,9 @@ let _ = e => {
     buttonDisabled: _,
     buttonVariant: "critical-primary",
     onButtonPress: () => {
-      (0, a.h7j)(e => {
+      (0, l.h7j)(e => {
         var t, n;
-        return (0, r.jsx)(a.ConfirmModal, (t = function(e) {
+        return (0, r.jsx)(l.ConfirmModal, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -60,9 +60,9 @@ let _ = e => {
           }),
           confirmText: u.intl.string(u.t.J2TBi4),
           cancelText: u.intl.string(u.t["ETE/oK"]),
-          onConfirm: g
+          onConfirm: f
         }, e), n = n = {
-          children: (0, r.jsx)(a.Text, {
+          children: (0, r.jsx)(l.Text, {
             variant: "text-md/normal",
             children: u.intl.format(u.t.ZEXC0t, {
               name: p.name

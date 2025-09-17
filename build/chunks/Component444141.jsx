@@ -1,7 +1,7 @@
-/** Chunk was on 72164 **/
+/** Chunk was on 31553 **/
 /** chunk id: 444141, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
@@ -15,28 +15,28 @@ var Chunk951288 = require("./951288.js"),
 function u(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
-      o = Object.keys(t);
-    "function" == typeof Object.getOwnPropertySymbols && (o = o.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+      l = Object.keys(t);
+    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
       return Object.getOwnPropertyDescriptor(t, e).enumerable
-    }))), o.forEach(function(n) {
-      var o;
-      o = t[n], n in e ? Object.defineProperty(e, n, {
-        value: o,
+    }))), l.forEach(function(n) {
+      var l;
+      l = t[n], n in e ? Object.defineProperty(e, n, {
+        value: l,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[n] = o
+      }) : e[n] = l
     })
   }
   return e
 }
 
-function f(e, n) {
+function m(e, n) {
   return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var o = Object.getOwnPropertySymbols(e);
-      t.push.apply(t, o)
+      var l = Object.getOwnPropertySymbols(e);
+      t.push.apply(t, l)
     }
     return t
   })(Object(n)).forEach(function(t) {
@@ -44,49 +44,49 @@ function f(e, n) {
   }), e
 }
 
-function p(e) {
+function f(e) {
   let {
     user: n,
     guildId: t,
-    channelId: p,
-    displayProfile: m,
-    onClose: x
+    channelId: f,
+    displayProfile: p,
+    onClose: h
   } = e, {
-    analyticsLocations: b,
-    sourceAnalyticsLocations: h
-  } = (0, l.ZP)(), {
-    context: g,
-    trackUserProfileAction: j
-  } = (0, c.KZ)(), v = (0, s.ZP)(n.id, t);
-  return (null == v ? true : v.guildId) == null || null == g ? null : (null == m ? true : m.guildId) != null ? (0, o.jsx)(r.sNh, {
+    analyticsLocations: j,
+    sourceAnalyticsLocations: x
+  } = (0, r.ZP)(), {
+    context: v,
+    trackUserProfileAction: g
+  } = (0, s.KZ)(), b = (0, c.ZP)(n.id, t);
+  return (null == b ? true : b.guildId) == null || null == v ? null : (null == p ? true : p.guildId) != null ? (0, l.jsx)(i.sNh, {
     id: "view-main-profile",
     label: d.intl.string(d.t.GISTtb),
     subtext: d.intl.formatToPlainString(d.t["mn/nW1"], {
-      displayName: i.ZP.getName(true, true, n)
+      displayName: o.ZP.getName(true, true, n)
     }),
     action: () => {
-      null == x || x(), (0, a.openUserProfileModal)(f(u({}, g), {
+      null == h || h(), (0, a.openUserProfileModal)(m(u({}, v), {
         showGuildProfile: false,
-        sourceAnalyticsLocations: h
-      })), j(u({
+        sourceAnalyticsLocations: x
+      })), g(u({
         action: "PRESS_VIEW_MAIN_PROFILE",
-        analyticsLocations: b
-      }, g))
+        analyticsLocations: j
+      }, v))
     }
-  }) : (0, o.jsx)(r.sNh, {
+  }) : (0, l.jsx)(i.sNh, {
     id: "view-server-profile",
     label: d.intl.string(d.t.DisZzM),
     subtext: d.intl.formatToPlainString(d.t["mn/nW1"], {
-      displayName: i.ZP.getName(t, p, n)
+      displayName: o.ZP.getName(t, f, n)
     }),
     action: () => {
-      null == x || x(), (0, a.openUserProfileModal)(f(u({}, g), {
+      null == h || h(), (0, a.openUserProfileModal)(m(u({}, v), {
         showGuildProfile: true,
-        sourceAnalyticsLocations: h
-      })), j(u({
+        sourceAnalyticsLocations: x
+      })), g(u({
         action: "PRESS_VIEW_SERVER_PROFILE",
-        analyticsLocations: b
-      }, g))
+        analyticsLocations: j
+      }, v))
     }
   })
 }

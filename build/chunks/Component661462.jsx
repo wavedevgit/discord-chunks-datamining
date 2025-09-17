@@ -129,8 +129,8 @@ function v(e) {
     trackUserProfileAction: y
   } = (0, o.KZ)(), [{
     section: v,
-    subsection: x,
-    text: O
+    subsection: O,
+    text: x
   }, P] = l.useState(j(b({}, null != (t = d.find(e => {
     let {
       section: t
@@ -168,7 +168,7 @@ function v(e) {
       })
     }), (0, r.jsx)(s.njP.Panel, {
       id: v,
-      "aria-label": O,
+      "aria-label": x,
       className: p.tabBarPanel,
       children: (0, r.jsx)(h, {
         user: n,
@@ -177,7 +177,7 @@ function v(e) {
         guildId: c,
         channelId: u,
         section: v,
-        subsection: x,
+        subsection: O,
         onClose: g
       })
     })]

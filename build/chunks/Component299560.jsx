@@ -1,7 +1,7 @@
 /** Chunk was on 30355 **/
 /** chunk id: 299560, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,8 +10,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk296009 = require("./296009.js"),
   Chunk481060 = require("./481060.js"),
   Chunk812206 = require("./812206.js"),
-  Chunk835473 = require("./835473.js"),
   Chunk804919 = require("./804919.js"),
+  Chunk350327 = require("./350327.js"),
   Chunk931847 = require("./931847.js"),
   Chunk836197 = require("./836197.js"),
   Chunk86419 = require("./86419.js"),
@@ -62,17 +62,17 @@ let v = {
   }
 };
 
-function x(e) {
+function O(e) {
   let {
     widgetType: t,
     onAddWidget: n,
     size: i = "default",
     loading: c = false,
-    trackUserProfileEditAction: d
+    trackUserProfileEditAction: u
   } = e, {
     placeholder: y,
-    getAriaLabel: x
-  } = v[t], O = "small" === i, P = l.useMemo(() => {
+    getAriaLabel: O
+  } = v[t], x = "small" === i, P = (0, d.oz)().data, I = l.useMemo(() => {
     switch (t) {
       case s.l.CURRENT_GAMES:
       case s.l.FAVORITE_GAMES:
@@ -83,23 +83,23 @@ function x(e) {
           games: []
         });
       case s.l.APPLICATION:
+        let e = null == P ? true : P[0];
+        if (null == e) return null;
         return new f.q({
           type: t,
-          applicationId: ""
+          applicationId: e
         })
     }
-  }, [t]);
-  (0, u.q)(P.type === s.l.APPLICATION ? P.applicationId : null);
-  let S = l.useCallback(() => {
-    c || ((0, g.qH)(t, P), d({
+  }, [t, P]), S = l.useCallback(() => {
+    c || null == I || ((0, g.qH)(t, I), u({
       action: "WIDGET_ADDED",
       widgetEdited: t
     }), (0, p.L$)(j.qb.WIDGET_ADDED), null == n || n())
-  }, [c, t, P, d, n]);
-  return (0, r.jsxs)(o.P3F, {
-    className: a()(h.addButtonContainer, O && h.sizeSmall, c && h.loading),
+  }, [c, t, I, u, n]);
+  return null == I ? null : (0, r.jsxs)(o.P3F, {
+    className: a()(h.addButtonContainer, x && h.sizeSmall, c && h.loading),
     onClick: S,
-    "aria-label": x(P),
+    "aria-label": O(I),
     "aria-busy": c,
     children: ["details" === y.variant ? (0, r.jsx)(b.i, {
       applicationId: y.applicationId,
@@ -116,7 +116,7 @@ function x(e) {
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        children: (0, g.mR)(P)
+        children: (0, g.mR)(I)
       })]
     })]
   })

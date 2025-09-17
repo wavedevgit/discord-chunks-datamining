@@ -1,4 +1,4 @@
-/** Chunk was on 55777 **/
+/** Chunk was on 76051 **/
 /** chunk id: 739319, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk454585 = require("./454585.js"),
   Chunk572004 = require("./572004.js"),
@@ -19,11 +19,11 @@ function _(e) {
       data: {
         title: t,
         body: n,
-        sms: a,
+        sms: l,
         is_localized: _
       }
     }
-  } = e, [m, p] = i.useState(false), f = i.useRef(s.Z.reactParserFor(s.Z.defaultRules));
+  } = e, [m, p] = i.useState(false), g = i.useRef(s.Z.reactParserFor(s.Z.defaultRules));
   return _ ? (0, r.jsxs)("div", {
     className: u.container,
     children: [(0, r.jsx)(o.X6q, {
@@ -34,17 +34,17 @@ function _(e) {
     }), (0, r.jsx)(o.Text, {
       variant: "text-sm/normal",
       className: u.bodyText,
-      children: f.current(n)
+      children: g.current(n)
     }), (0, r.jsx)("div", {
       children: (0, r.jsxs)("div", {
-        className: l()(u.smsNumberContainer, {
+        className: a()(u.smsNumberContainer, {
           [u.copied]: m
         }),
         children: [(0, r.jsx)(o.Text, {
           variant: "text-md/normal",
           selectable: true,
           className: u.smsNumberText,
-          children: a
+          children: l
         }), (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: u.__invalid_trailingButton,
@@ -53,7 +53,7 @@ function _(e) {
             size: "sm",
             text: m ? d.intl.string(d.t["t5VZ8/"]) : d.intl.string(d.t.OpuAlJ),
             onClick: () => {
-              (0, c.JG)(a, () => p(true))
+              (0, c.JG)(l, () => p(true))
             }
           })
         })]

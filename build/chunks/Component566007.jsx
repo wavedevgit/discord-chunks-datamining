@@ -1,5 +1,5 @@
-/** Chunk was on 1267 **/
-/** chunk id: 566007, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 37690 **/
+/** chunk id: 566007, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 });
@@ -9,68 +9,68 @@ var Chunk750312 = require("./750312.jsx"),
   Chunk189988 = require("./189988.jsx"),
   Chunk623132 = require("./623132.jsx");
 
-function a(e) {
+function l(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = n
+      }) : e[t] = r
     })
   }
   return e
 }
 
 function c(e) {
-  var t, r, {
+  var t, n, {
       user: c,
       widget: s,
       containerClassName: u
     } = e,
     d = function(e, t) {
       if (null == e) return {};
-      var r, n, i = function(e, t) {
+      var n, r, i = function(e, t) {
         if (null == e) return {};
-        var r, n, i = {},
-          l = Object.keys(e);
-        for (n = 0; n < l.length; n++) r = l[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+        var n, r, i = {},
+          o = Object.keys(e);
+        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var l = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+        var o = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
     }(e, ["user", "widget", "containerClassName"]);
   let f = s.games[0];
-  return (0, n.jsx)(i.Z, (t = a({
+  return (0, r.jsx)(i.Z, (t = l({
     userId: c.id,
     widget: s,
     className: u
-  }, d), r = r = {
-    children: null != f ? (0, n.jsx)(o.Z, a({
+  }, d), n = n = {
+    children: null != f ? (0, r.jsx)(a.Z, l({
       user: c,
       game: f,
       widgetType: s.type,
       disableInteraction: d.disableInteraction
-    }, d)) : (0, n.jsx)(l.Z, {
+    }, d)) : (0, r.jsx)(o.Z, {
       widgetType: s.type
     })
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-    var r = Object.keys(e);
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      r.push.apply(r, n)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
-    return r
-  })(Object(r)).forEach(function(e) {
-    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+    return n
+  })(Object(n)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
   }), t))
 }

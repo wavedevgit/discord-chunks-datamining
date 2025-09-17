@@ -1,7 +1,7 @@
-/** Chunk was on 72164 **/
+/** Chunk was on 31553 **/
 /** chunk id: 666520, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => f
 }), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,31 +14,31 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk215258 = require("./215258.js");
 
-function p(e) {
+function f(e) {
   let {
     autoFocus: n = false,
     className: t,
-    userId: p,
-    onUpdate: m
-  } = e, x = (0, l.e7)([s.Z], () => s.Z.hidePersonalInformation), {
-    loading: b,
-    note: h
-  } = (0, a.Z)(p), g = r.useRef(null);
-  return (r.useEffect(() => {
-    if (!n || x) return;
-    let e = g.current;
+    userId: f,
+    onUpdate: p
+  } = e, h = (0, r.e7)([c.Z], () => c.Z.hidePersonalInformation), {
+    loading: j,
+    note: x
+  } = (0, a.Z)(f), v = i.useRef(null);
+  return (i.useEffect(() => {
+    if (!n || h) return;
+    let e = v.current;
     (null == e ? true : e.selectionStart) != null && (e.focus(), e.setSelection(e.value.length, e.value.length))
-  }, [n, x]), x) ? null : (0, o.jsx)("div", {
+  }, [n, h]), h) ? null : (0, l.jsx)("div", {
     className: t,
-    children: (0, o.jsx)(i.lcI, {
-      ref: g,
-      className: f.textarea,
-      disabled: b,
-      placeholder: b ? u.intl.string(u.t["WLKx//"]) : u.intl.string(u.t.VBhOe3),
+    children: (0, l.jsx)(o.lcI, {
+      ref: v,
+      className: m.textarea,
+      disabled: j,
+      placeholder: j ? u.intl.string(u.t["WLKx//"]) : u.intl.string(u.t.VBhOe3),
       "aria-label": u.intl.string(u.t.PbMNh4),
       onBlur: e => {
         let n = e.currentTarget.value;
-        (null != h ? h : "") !== n && (null == m || m(), c.Z.updateNote(p, n))
+        (null != x ? x : "") !== n && (null == p || p(), s.Z.updateNote(f, n))
       },
       onKeyPress: e => {
         if (13 === e.which)
@@ -48,7 +48,7 @@ function p(e) {
           } else e.preventDefault(), e.currentTarget.blur();
         else e.which === d.yXg.SPACE && e.stopPropagation()
       },
-      defaultValue: null != h ? h : true,
+      defaultValue: null != x ? x : true,
       maxLength: d.vuo
     })
   })

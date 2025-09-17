@@ -1,4 +1,4 @@
-/** Chunk was on 55777 **/
+/** Chunk was on 76051 **/
 /** chunk id: 273514, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -14,7 +14,7 @@ var Chunk481060 = require("./481060.js"),
 let d = e => {
   let {
     entry: t
-  } = e, n = l.Z.getChannel(t.channelId);
+  } = e, n = a.Z.getChannel(t.channelId);
   if (null == n) return null;
   let d = o.Z.getGuild(n.guild_id);
   return null == d ? null : (0, r.jsxs)("div", {
@@ -27,9 +27,9 @@ let d = e => {
       className: c.guildContainer,
       children: [(0, r.jsxs)("div", {
         className: c.hubInfo,
-        children: [(0, r.jsx)(a.Z, {
+        children: [(0, r.jsx)(l.Z, {
           guild: d,
-          size: a.Z.Sizes.MINI,
+          size: l.Z.Sizes.MINI,
           className: c.hubIcon
         }), (0, r.jsx)(i.Text, {
           color: "header-secondary",

@@ -1,7 +1,7 @@
 /** Chunk was on 30355 **/
 /** chunk id: 128156, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => w
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -31,14 +31,14 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk158069 = require("./158069.js");
 
-function E(e) {
+function w(e) {
   let {
     user: t,
     currentUser: n,
-    displayProfile: E,
-    guildId: Z,
-    channelId: C,
-    subsection: T,
+    displayProfile: w,
+    guildId: T,
+    channelId: Z,
+    subsection: C,
     onClose: k
   } = e, {
     voiceActivityStatusEnabled: _
@@ -47,20 +47,20 @@ function E(e) {
   }), L = (0, g.b)({
     location: "UserProfileModalV2Activity"
   }), D = (0, c.P6)("UserProfileModalV2Activity"), {
-    live: G,
-    recent: U,
-    stream: R
+    live: U,
+    recent: R,
+    stream: G
   } = (0, p.Z)(t.id), {
     voiceChannel: M,
     voiceActivity: B
   } = (0, b.Z)({
     userId: t.id,
-    guildId: Z
+    guildId: T
   }), F = (0, l.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), W = t.id === n.id, z = (0, l.e7)([f.Z, d.Z], () => {
     let e = W ? f.Z.getStatus() : d.Z.getStatus(t.id);
     return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
-  }), q = G.length > 0 || null != R, V = _ && null == R && null == B && null != M, Y = !z && (q || V), K = U.length > 0, H = G.some(e => (0, a.Z)(e));
-  if (!Y && !K && F) return (0, r.jsx)("div", {
+  }), q = U.length > 0 || null != G, Y = _ && null == G && null == B && null != M, V = !z && (q || Y), H = R.length > 0, K = U.some(e => (0, a.Z)(e));
+  if (!V && !H && F) return (0, r.jsx)("div", {
     className: N.cards,
     children: Array.from({
       length: 8
@@ -75,53 +75,53 @@ function E(e) {
       })]
     }, t))
   });
-  if (!Y && !K && !F) {
+  if (!V && !H && !F) {
     var J;
-    return W ? (0, r.jsx)(O.Uf, {
+    return W ? (0, r.jsx)(x.Uf, {
       onClose: k
-    }) : (0, r.jsx)(O.P9, {
+    }) : (0, r.jsx)(x.P9, {
       user: t,
-      guildId: null != (J = null == E ? true : E.guildId) ? J : Z,
-      channelId: C,
+      guildId: null != (J = null == w ? true : w.guildId) ? J : T,
+      channelId: Z,
       onClose: k
     })
   }
-  return (0, r.jsxs)(S.F, {
+  return (0, r.jsxs)(I.F, {
     className: N.scroller,
     fade: true,
     children: [(() => {
-      let e = W && D && !H;
-      return Y ? (0, r.jsx)(P.Z, {
-        heading: w.intl.string(w.t.J6STd3),
+      let e = W && D && !K;
+      return V ? (0, r.jsx)(P.Z, {
+        heading: E.intl.string(E.t.J6STd3),
         children: (0, r.jsxs)("ul", {
           className: N.cards,
           children: [e && (0, r.jsx)("li", {
             children: (0, r.jsx)(j.Z, {
               variant: "horizontal"
             })
-          }), !L && V && (0, r.jsx)("li", {
-            children: (0, r.jsx)(x.Z, {
+          }), !L && Y && (0, r.jsx)("li", {
+            children: (0, r.jsx)(O.Z, {
               user: t,
               currentUser: n,
               voiceChannel: M,
               onClose: k
             })
-          }), null != R && (0, r.jsx)("li", {
+          }), null != G && (0, r.jsx)("li", {
             children: (0, r.jsx)(v.Z, {
               user: t,
               currentUser: n,
-              stream: R,
+              stream: G,
               onClose: k
             })
-          }), G.map((e, l) => (0, r.jsx)("li", {
+          }), U.map((e, l) => (0, r.jsx)("li", {
             children: (0, r.jsx)(y.Z, {
               user: t,
               currentUser: n,
               activity: e,
               onClose: k
             })
-          }, "live-".concat(l))), L && V && (0, r.jsx)("li", {
-            children: (0, r.jsx)(x.Z, {
+          }, "live-".concat(l))), L && Y && (0, r.jsx)("li", {
+            children: (0, r.jsx)(O.Z, {
               user: t,
               currentUser: n,
               voiceChannel: M,
@@ -130,23 +130,23 @@ function E(e) {
           })]
         })
       }) : e ? (0, r.jsx)(P.Z, {
-        heading: w.intl.string(w.t.J6STd3),
+        heading: E.intl.string(E.t.J6STd3),
         children: (0, r.jsx)(j.Z, {
           variant: "horizontal"
         })
       }) : null
-    })(), K ? (0, r.jsx)(P.Z, {
-      heading: w.intl.string(w.t.jzgEoK),
-      introText: W ? w.intl.format(w.t["4bk9Ag"], {
+    })(), H ? (0, r.jsx)(P.Z, {
+      heading: E.intl.string(E.t.jzgEoK),
+      introText: W ? E.intl.format(E.t["4bk9Ag"], {
         learnMoreHook: (e, t) => (0, r.jsx)(i.eee, {
-          href: m.Z.getArticleURL(I.BhN.ACTIVITY_STATUS_SETTINGS),
+          href: m.Z.getArticleURL(A.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, t)
       }) : true,
-      scrollIntoView: T === A.Tb.RECENT_ACTIVITY,
+      scrollIntoView: C === S.Tb.RECENT_ACTIVITY,
       children: (0, r.jsx)("ul", {
         className: N.cards,
-        children: U.map(e => (0, r.jsx)("li", {
+        children: R.map(e => (0, r.jsx)("li", {
           children: (0, r.jsx)(h.Z, {
             user: t,
             entry: e,

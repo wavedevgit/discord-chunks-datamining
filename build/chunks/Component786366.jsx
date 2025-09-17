@@ -1,7 +1,7 @@
-/** Chunk was on 72164 **/
+/** Chunk was on 31553 **/
 /** chunk id: 786366, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => m
 }), require("./953529.js"), require("./997841.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -17,62 +17,62 @@ function u(e) {
   let {
     icon: n,
     title: t,
-    description: r
+    description: i
   } = e;
-  return (0, o.jsxs)("div", {
+  return (0, l.jsxs)("div", {
     className: d.row,
-    children: [(0, o.jsx)("div", {
+    children: [(0, l.jsx)("div", {
       className: d.rowIcon,
-      children: (0, o.jsx)(n, {
+      children: (0, l.jsx)(n, {
         size: "custom",
         width: 20,
         height: 20,
         color: "currentColor"
       })
-    }), (0, o.jsxs)("div", {
+    }), (0, l.jsxs)("div", {
       className: d.rowText,
-      children: [(0, o.jsx)(i.X6q, {
+      children: [(0, l.jsx)(o.X6q, {
         variant: "text-xs/semibold",
         children: t
-      }), (0, o.jsx)(i.Text, {
+      }), (0, l.jsx)(o.Text, {
         variant: "text-sm/normal",
-        children: r
+        children: i
       })]
     })]
   })
 }
 
-function f(e) {
+function m(e) {
   let {
     user: n
-  } = e, t = (0, l.e7)([a.Z], () => {
+  } = e, t = (0, r.e7)([a.Z], () => {
     var e;
     return null == (e = a.Z.getUserProfile(n.id)) ? true : e.application
   }), {
-    hasMessageContent: f,
-    hasGuildPresences: p,
-    hasGuildMembers: m
-  } = (0, c.w)({
+    hasMessageContent: m,
+    hasGuildPresences: f,
+    hasGuildMembers: p
+  } = (0, s.w)({
     flags: null == t ? true : t.flags
   });
-  return (0, o.jsxs)(r.zJ, {
+  return (0, l.jsxs)(i.zJ, {
     fade: true,
     className: d.scroller,
-    children: [f && (0, o.jsx)(u, {
-      icon: i.kBi,
-      title: s.intl.string(s.t["7Tmhfn"]),
-      description: s.intl.string(s.t["eu5x7+"])
-    }), p && (0, o.jsx)(u, {
-      icon: i.iWm,
-      title: s.intl.string(s.t.awYSsL),
-      description: s.intl.string(s.t.TpsXoK)
-    }), m && (0, o.jsx)(u, {
-      icon: i.BFJ,
-      title: s.intl.string(s.t.WuKeSE),
-      description: s.intl.string(s.t.wOBmtb)
-    }), (0, o.jsx)(i.Text, {
+    children: [m && (0, l.jsx)(u, {
+      icon: o.kBi,
+      title: c.intl.string(c.t["7Tmhfn"]),
+      description: c.intl.string(c.t["eu5x7+"])
+    }), f && (0, l.jsx)(u, {
+      icon: o.iWm,
+      title: c.intl.string(c.t.awYSsL),
+      description: c.intl.string(c.t.TpsXoK)
+    }), p && (0, l.jsx)(u, {
+      icon: o.BFJ,
+      title: c.intl.string(c.t.WuKeSE),
+      description: c.intl.string(c.t.wOBmtb)
+    }), (0, l.jsx)(o.Text, {
       variant: "text-xs/normal",
-      children: s.intl.format(s.t.b6nqk5, {
+      children: c.intl.format(c.t.b6nqk5, {
         helpCenterUrl: "https://support.discord.com/hc/articles/7933951485975"
       })
     })]

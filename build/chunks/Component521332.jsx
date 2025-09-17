@@ -1,4 +1,4 @@
-/** Chunk was on 55777 **/
+/** Chunk was on 76051 **/
 /** chunk id: 521332, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -23,18 +23,18 @@ function x(e) {
   let {
     title: t,
     description: n,
-    onButtonClick: a,
-    trackSettingsUpsellsAction: l
+    onButtonClick: l,
+    trackSettingsUpsellsAction: a
   } = e, [s, d] = i.useState(false);
   return (0, o.ZP)(() => {
-    l(p.M4.SETTINGS_UPSELLS_VIEWED)
+    a(p.M4.SETTINGS_UPSELLS_VIEWED)
   }), (0, r.jsx)(c.JZ, {
     title: t,
     description: n,
-    buttonText: s ? g.intl.string(g.t["h+WsPT"]) : g.intl.string(g.t.A8t4NT),
+    buttonText: s ? f.intl.string(f.t["h+WsPT"]) : f.intl.string(f.t.A8t4NT),
     buttonDisabled: s,
     onButtonPress: () => {
-      a(), d(true), l(p.M4.SETTINGS_UPSELLS_APPLY_CLICKED)
+      l(), d(true), a(p.M4.SETTINGS_UPSELLS_APPLY_CLICKED)
     }
   })
 }
@@ -47,34 +47,34 @@ function h(e) {
     reportId: o,
     reportType: c,
     reportSubType: h
-  } = e, v = (0, a.e7)([_.Z], () => _.Z.getChannel(n)), j = (0, m.jc)(t, null == v ? true : v.type), y = (0, p.i_)(c, h, o);
+  } = e, v = (0, l.e7)([_.Z], () => _.Z.getChannel(n)), j = (0, m.jc)(t, null == v ? true : v.type), y = (0, p.i_)(c, h, o);
   return 0 === j.length ? null : (0, r.jsxs)("div", {
     className: b.container,
-    children: [(0, r.jsx)(l.X6q, {
+    children: [(0, r.jsx)(a.X6q, {
       variant: "text-sm/semibold",
       className: b.header,
-      children: g.intl.string(g.t["1yxTIC"])
+      children: f.intl.string(f.t["1yxTIC"])
     }), (0, r.jsx)("div", {
       className: b.upsellsContainer,
       children: j.map((e, n) => {
         let {
           getTitle: i,
-          getDescription: a,
-          onApply: l
+          getDescription: l,
+          onApply: a
         } = e;
         return (0, r.jsx)(x, {
           title: i(),
-          description: a(),
-          onButtonClick: l,
+          description: l(),
+          onButtonClick: a,
           trackSettingsUpsellsAction: y(t[n])
         }, n)
       })
-    }), (0, r.jsx)(l.Avr, {
-      text: g.intl.string(g.t.olebGx),
+    }), (0, r.jsx)(a.Avr, {
+      text: f.intl.string(f.t.olebGx),
       onClick: () => {
         (0, u.openUserSettings)(d.n.CONTENT_AND_SOCIAL_PANEL, {
-          section: f.oAB.CONTENT_AND_SOCIAL
-        }), i(), s.ZP.trackWithMetadata(f.rMx.IAR_SETTINGS_UPSELLS_ACTION, {
+          section: g.oAB.CONTENT_AND_SOCIAL
+        }), i(), s.ZP.trackWithMetadata(g.rMx.IAR_SETTINGS_UPSELLS_ACTION, {
           report_id: o,
           report_type: c.name,
           report_subtype: h,

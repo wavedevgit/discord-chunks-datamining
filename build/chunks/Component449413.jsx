@@ -1,4 +1,4 @@
-/** Chunk was on 55777 **/
+/** Chunk was on 76051 **/
 /** chunk id: 449413, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -15,7 +15,7 @@ let c = e => {
     node: {
       info: c
     }
-  } = e, d = i.useRef(l.Z.reactParserFor((t = function(e) {
+  } = e, d = i.useRef(a.Z.reactParserFor((t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -32,7 +32,7 @@ let c = e => {
       })
     }
     return e
-  }({}, l.Z.defaultRules), n = n = {
+  }({}, a.Z.defaultRules), n = n = {
     link: o.s
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
@@ -44,9 +44,9 @@ let c = e => {
   })(Object(n)).forEach(function(e) {
     Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
   }), t)));
-  return null == c ? null : (0, r.jsx)(a.Wn, {
+  return null == c ? null : (0, r.jsx)(l.Wn, {
     className: s.infoBox,
-    messageType: a.QYI.INFO,
+    messageType: l.QYI.INFO,
     children: d.current(c)
   })
 }

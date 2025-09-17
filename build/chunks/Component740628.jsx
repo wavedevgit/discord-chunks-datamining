@@ -1,4 +1,4 @@
-/** Chunk was on 72164 **/
+/** Chunk was on 31553 **/
 /** chunk id: 740628, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -21,45 +21,45 @@ var Chunk951288 = require("./951288.js"),
   Chunk878449 = require("./878449.js"),
   Chunk602727 = require("./602727.js");
 
-function v(e) {
+function b(e) {
   let {
     section: n,
     subsection: t,
-    user: r,
-    currentUser: l,
-    displayProfile: i,
-    guildId: c,
+    user: i,
+    currentUser: r,
+    displayProfile: o,
+    guildId: s,
     channelId: a,
-    onClose: s
+    onClose: c
   } = e;
-  return n === b.oh.ACTIVITY ? (0, o.jsx)(f.Z, {
-    user: r,
-    currentUser: l,
-    guildId: c,
-    onClose: s
-  }) : n === b.oh.MUTUAL_FRIENDS ? (0, o.jsx)(m.Z, {
-    user: r,
-    guildId: c,
+  return n === j.oh.ACTIVITY ? (0, l.jsx)(m.Z, {
+    user: i,
+    currentUser: r,
+    guildId: s,
+    onClose: c
+  }) : n === j.oh.MUTUAL_FRIENDS ? (0, l.jsx)(p.Z, {
+    user: i,
+    guildId: s,
     channelId: a,
-    onClose: s
-  }) : n === b.oh.MUTUAL_GUILDS ? (0, o.jsx)(x.Z, {
-    user: r,
-    onClose: s
-  }) : n === b.oh.BOT_DATA_ACCESS ? (0, o.jsx)(d.Z, {
-    user: r
-  }) : n === b.oh.BOT_INFO ? (0, o.jsx)(u.Z, {
-    user: r,
-    currentUser: l,
-    displayProfile: i,
-    guildId: c,
+    onClose: c
+  }) : n === j.oh.MUTUAL_GUILDS ? (0, l.jsx)(h.Z, {
+    user: i,
+    onClose: c
+  }) : n === j.oh.BOT_DATA_ACCESS ? (0, l.jsx)(d.Z, {
+    user: i
+  }) : n === j.oh.BOT_INFO ? (0, l.jsx)(u.Z, {
+    user: i,
+    currentUser: r,
+    displayProfile: o,
+    guildId: s,
     subsection: t,
-    onClose: s
-  }) : (0, o.jsx)(p.Z, {
-    user: r,
-    currentUser: l,
-    displayProfile: i,
+    onClose: c
+  }) : (0, l.jsx)(f.Z, {
+    user: i,
+    currentUser: r,
+    displayProfile: o,
     subsection: t,
-    onClose: s
+    onClose: c
   })
 }
 
@@ -67,83 +67,83 @@ function y(e) {
   var n, t, d;
   let {
     user: u,
-    currentUser: f,
-    displayProfile: p,
-    guildId: m,
-    items: x,
-    initialSection: y = b.oh.USER_INFO,
-    initialSubsection: _,
+    currentUser: m,
+    displayProfile: f,
+    guildId: p,
+    items: h,
+    initialSection: y = j.oh.USER_INFO,
+    initialSubsection: O,
     onClose: I
   } = e, {
-    trackUserProfileAction: O
-  } = (0, s.KZ)(), Z = (0, l.e7)([a.Z], () => a.Z.hidePersonalInformation), [{
-    section: P,
+    trackUserProfileAction: Z
+  } = (0, c.KZ)(), P = (0, r.e7)([a.Z], () => a.Z.hidePersonalInformation), [{
+    section: N,
     subsection: T
-  }, N] = r.useState({
-    section: null != (d = null == (n = x.find(e => {
+  }, E] = i.useState({
+    section: null != (d = null == (n = h.find(e => {
       let {
         section: n
       } = e;
       return n === y
-    })) ? true : n.section) ? d : null == (t = x[0]) ? true : t.section,
-    subsection: _
+    })) ? true : n.section) ? d : null == (t = h[0]) ? true : t.section,
+    subsection: O
   });
-  r.useEffect(() => {
-    null == x.find(e => e.section === P) && N({
-      section: x[0].section,
+  i.useEffect(() => {
+    null == h.find(e => e.section === N) && E({
+      section: h[0].section,
       subsection: true
     })
-  }, [x, P]);
-  let A = r.useCallback(e => {
-    O({
+  }, [h, N]);
+  let A = i.useCallback(e => {
+    Z({
       action: "PRESS_SECTION",
       section: e
-    }), N({
+    }), E({
       section: e,
       subsection: true
     })
-  }, [O, N]);
-  return Z ? (0, o.jsx)("div", {
-    className: j.container,
-    children: (0, o.jsxs)("div", {
-      className: g.empty,
-      children: [(0, o.jsx)("div", {
-        className: g.emptyIconStreamerMode
-      }), (0, o.jsx)("div", {
-        className: g.emptyText,
-        children: h.intl.string(h.t.Br1ls7)
+  }, [Z, E]);
+  return P ? (0, l.jsx)("div", {
+    className: g.container,
+    children: (0, l.jsxs)("div", {
+      className: v.empty,
+      children: [(0, l.jsx)("div", {
+        className: v.emptyIconStreamerMode
+      }), (0, l.jsx)("div", {
+        className: v.emptyText,
+        children: x.intl.string(x.t.Br1ls7)
       })]
     })
-  }) : (0, o.jsxs)("div", {
-    className: j.container,
-    children: [(0, o.jsx)(i.n, {
-      className: j.tabBar,
+  }) : (0, l.jsxs)("div", {
+    className: g.container,
+    children: [(0, l.jsx)(o.n, {
+      className: g.tabBar,
       type: "top",
-      selectedItem: P,
+      selectedItem: N,
       onItemSelect: A,
-      children: x.map(e => {
+      children: h.map(e => {
         let {
           section: n,
           text: t
         } = e;
-        return (0, o.jsx)(i.n.Item, {
-          className: j.tabBarItem,
+        return (0, l.jsx)(o.n.Item, {
+          className: g.tabBarItem,
           id: n,
           "aria-label": t,
-          children: (0, o.jsx)(c.Text, {
+          children: (0, l.jsx)(s.Text, {
             variant: "text-sm/normal",
             children: t
           })
         }, n)
       })
-    }), (0, o.jsx)(v, {
-      items: x,
-      section: P,
+    }), (0, l.jsx)(b, {
+      items: h,
+      section: N,
       subsection: T,
       user: u,
-      currentUser: f,
-      displayProfile: p,
-      guildId: m,
+      currentUser: m,
+      displayProfile: f,
+      guildId: p,
       onClose: I
     })]
   })

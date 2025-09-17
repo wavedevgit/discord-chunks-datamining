@@ -114,7 +114,7 @@ function x(e, t) {
     case s.re.CONTENT_INVENTORY_ENTRY:
       return (0, r.jsx)(v.Z, R({}, e), t);
     case s.re.CONTAINER:
-      return (0, r.jsx)(T.ZP, w(R({}, e), {
+      return (0, r.jsx)(T.Z, w(R({}, e), {
         renderComponents: D
       }), t);
     case s.re.LABEL:

@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk454585 = require("./454585.js"),
   Chunk937889 = require("./937889.js"),
   Chunk970184 = require("./970184.jsx"),
-  Chunk985184 = require("./985184.jsx"),
+  Chunk979372 = require("./979372.jsx"),
   Chunk870456 = require("./870456.js"),
   Chunk709136 = require("./709136.js"),
   Chunk430864 = require("./430864.js");
@@ -31,11 +31,9 @@ function h(e) {
   let {
     content: t,
     className: n
-  } = e, i = p(t), a = (0, u.Gt)();
+  } = e, i = p(t), a = (0, u._)();
   return (0, r.jsx)("div", {
-    className: o()(n, _.markup, f.markdownContainer, {
-      [f.containerSizedText]: a
-    }),
+    className: o()(n, _.markup, f.markdownContainer, a.className),
     children: i
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 55777 **/
+/** Chunk was on 76051 **/
 /** chunk id: 356110, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -29,14 +29,14 @@ let s = e => {
       className: o.marginBottom8,
       children: [null != _ && (0, r.jsx)("div", {
         className: o.marginBottom8,
-        children: (0, r.jsxs)(a.Text, {
+        children: (0, r.jsxs)(l.Text, {
           variant: "text-sm/bold",
           children: [_, t.should_submit_data && (0, r.jsx)("span", {
-            className: l.required,
+            className: a.required,
             children: "*"
           })]
         })
-      }), (0, r.jsx)(a.q4e, {
+      }), (0, r.jsx)(l.q4e, {
         value: c,
         onChange: p,
         options: m
@@ -48,16 +48,16 @@ let s = e => {
       elements: t,
       onChange: n,
       state: i
-    } = e, a = t.map(e => {
-      var t, a;
-      let l = e.name;
+    } = e, l = t.map(e => {
+      var t, l;
+      let a = e.name;
       return (0, r.jsx)(s, {
         element: e,
-        initialOption: null != (a = null == i || null == (t = i[l]) ? true : t.value) ? a : true,
-        onChange: e => n(l, e)
-      }, l)
+        initialOption: null != (l = null == i || null == (t = i[a]) ? true : t.value) ? l : true,
+        onChange: e => n(a, e)
+      }, a)
     });
     return (0, r.jsx)("div", {
-      children: a
+      children: l
     })
   }

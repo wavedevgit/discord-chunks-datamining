@@ -1,7 +1,7 @@
-/** Chunk was on 72164 **/
+/** Chunk was on 31553 **/
 /** chunk id: 522182, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -14,56 +14,56 @@ var Chunk442837 = require("./442837.js"),
   Chunk475413 = require("./475413.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function f(e) {
+function m(e) {
   var {
     onClose: n
   } = e, t = function(e, n) {
     if (null == e) return {};
-    var t, o, r = function(e, n) {
+    var t, l, i = function(e, n) {
       if (null == e) return {};
-      var t, o, r = {},
-        l = Object.keys(e);
-      for (o = 0; o < l.length; o++) t = l[o], n.indexOf(t) >= 0 || (r[t] = e[t]);
-      return r
+      var t, l, i = {},
+        r = Object.keys(e);
+      for (l = 0; l < r.length; l++) t = r[l], n.indexOf(t) >= 0 || (i[t] = e[t]);
+      return i
     }(e, n);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (o = 0; o < l.length; o++) t = l[o], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (r[t] = e[t])
+      var r = Object.getOwnPropertySymbols(e);
+      for (l = 0; l < r.length; l++) t = r[l], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (i[t] = e[t])
     }
-    return r
+    return i
   }(e, ["onClose"]);
   let {
-    analyticsLocations: f,
-    newestAnalyticsLocation: p
-  } = (0, i.ZP)(), m = (0, r.e7)([s.Z], () => s.Z.hasSaveablePendingChanges());
-  return (0, o.jsx)(d.ef, function(e) {
+    analyticsLocations: m,
+    newestAnalyticsLocation: f
+  } = (0, o.ZP)(), p = (0, i.e7)([c.Z], () => c.Z.hasSaveablePendingChanges());
+  return (0, l.jsx)(d.ef, function(e) {
     for (var n = 1; n < arguments.length; n++) {
       var t = null != arguments[n] ? arguments[n] : {},
-        o = Object.keys(t);
-      "function" == typeof Object.getOwnPropertySymbols && (o = o.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+        l = Object.keys(t);
+      "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
         return Object.getOwnPropertyDescriptor(t, e).enumerable
-      }))), o.forEach(function(n) {
-        var o;
-        o = t[n], n in e ? Object.defineProperty(e, n, {
-          value: o,
+      }))), l.forEach(function(n) {
+        var l;
+        l = t[n], n in e ? Object.defineProperty(e, n, {
+          value: l,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[n] = o
+        }) : e[n] = l
       })
     }
     return e
   }({
     action: "VISIT_SHOP",
-    icon: l.EOn,
+    icon: r.EOn,
     tooltipText: u.intl.string(u.t.b2d0Nz),
     themeColor: "secondary",
     onClick: () => {
-      if (m) return void a.Z.notifyPendingWidgets();
-      (0, c.mK)({
-        analyticsLocations: f,
+      if (p) return void a.Z.notifyPendingWidgets();
+      (0, s.mK)({
+        analyticsLocations: m,
         openInLayer: false,
-        analyticsSource: p
+        analyticsSource: f
       }), null == n || n()
     }
   }, t))

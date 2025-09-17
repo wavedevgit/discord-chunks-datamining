@@ -1,7 +1,7 @@
 /** Chunk was on 30355 **/
 /** chunk id: 384166, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => O
 }), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,18 +22,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk461671 = require("./461671.js");
 
-function x(e) {
+function O(e) {
   let {
     className: t
   } = e, {
     trackUserProfileEditSaved: n
-  } = (0, f.KZ)(), [i, x] = l.useState(false), O = (0, o.Wu)([p.Z], () => {
+  } = (0, f.KZ)(), [i, O] = l.useState(false), x = (0, o.Wu)([p.Z], () => {
     var e;
     return null != (e = p.Z.getSaveablePendingWidgets()) ? e : []
-  }), P = (0, o.Wu)([p.Z], () => p.Z.getChangedWidgets()), S = (0, o.Wu)([p.Z], () => p.Z.getRemovedWidgets()), A = (0, o.e7)([p.Z], () => p.Z.hasSaveablePendingChanges()), I = (0, o.e7)([p.Z], () => p.Z.isSubmitting), w = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), N = (0, c.Yzy)(A, {
+  }), P = (0, o.Wu)([p.Z], () => p.Z.getChangedWidgets()), I = (0, o.Wu)([p.Z], () => p.Z.getRemovedWidgets()), S = (0, o.e7)([p.Z], () => p.Z.hasSaveablePendingChanges()), A = (0, o.e7)([p.Z], () => p.Z.isSubmitting), E = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), N = (0, c.Yzy)(S, {
     from: {
       opacity: 0,
-      y: 80 * !w
+      y: 80 * !E
     },
     enter: {
       opacity: 1,
@@ -41,24 +41,24 @@ function x(e) {
     },
     leave: {
       opacity: 0,
-      y: 80 * !w
+      y: 80 * !E
     }
   });
   l.useEffect(() => {
     let e = null;
 
     function t() {
-      x(true), e = setTimeout(() => x(false), 500)
+      O(true), e = setTimeout(() => O(false), 500)
     }
     return d.S.subscribe(y.CkL.EMPHASIZE_NOTICE, t), () => {
       d.S.unsubscribe(y.CkL.EMPHASIZE_NOTICE, t), null !== e && clearTimeout(e)
     }
   }, []), l.useEffect(() => {
-    A && c.uvj.announce(h.intl.string(h.t["0Y/qkJ"]))
-  }, [A]);
-  let E = l.useCallback(async () => {
+    S && c.uvj.announce(h.intl.string(h.t["0Y/qkJ"]))
+  }, [S]);
+  let w = l.useCallback(async () => {
       try {
-        await g.Z.savePendingWidgets(O)
+        await g.Z.savePendingWidgets(x)
       } catch (e) {
         (0, b.L$)(j.qb.WIDGET_SAVE_FAILURE);
         return
@@ -76,12 +76,12 @@ function x(e) {
           return e + (null != (r = null == (n = t.comment) ? true : n.length) ? r : 0)
         }, 0)), n(t)
       }
-      for (let e of S) n({
+      for (let e of I) n({
         widgetEdited: e.type,
         isWidgetRemoved: true
       })
-    }, [O, P, S, n]),
-    Z = l.useCallback(() => {
+    }, [x, P, I, n]),
+    T = l.useCallback(() => {
       g.Z.clearPendingWidgets()
     }, []);
   return N((e, n) => n ? (0, r.jsx)(s.animated.div, {
@@ -103,15 +103,15 @@ function x(e) {
           size: "sm",
           variant: "secondary",
           text: h.intl.string(h.t.yBZMsb),
-          onClick: Z,
-          disabled: !A || I
+          onClick: T,
+          disabled: !S || A
         }), (0, r.jsx)(c.zxk, {
           size: "sm",
           variant: "primary",
           text: h.intl.string(h.t.R3BPHx),
-          onClick: E,
-          loading: I,
-          disabled: !A || I
+          onClick: w,
+          loading: A,
+          disabled: !S || A
         })]
       })]
     })
