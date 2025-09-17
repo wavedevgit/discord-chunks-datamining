@@ -29,10 +29,14 @@ let p = new Chunk846519.V7,
 class g extends Chunk147913.Z {
   constructor(...e) {
     super(...e), _(this, "previousStatus", null), _(this, "actions", {
-      POST_CONNECTION_OPEN: () => this.handleUpdate(),
-      USER_SETTINGS_PROTO_UPDATE: () => this.handleUpdate()
-    }), _(this, "handleUpdate", () => {
-      this.manageExpiringCustomStatus(), this.manageExpiringStatus(), this.lazilyMigrateStatusCreatedAt(), this.manageExpiringFocusMode(), this.manageDoNotDisturbReminderPopover()
+      POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen(),
+      USER_SETTINGS_PROTO_UPDATE: () => this.handleUserSettingsProtoUpdate()
+    }), _(this, "handlePostConnectionOpen", () => {
+      this.previousStatus = d.Z.getStatus(), this.handleCommonUpdates()
+    }), _(this, "handleUserSettingsProtoUpdate", () => {
+      this.handleCommonUpdates(), this.manageDoNotDisturbReminderPopover()
+    }), _(this, "handleCommonUpdates", () => {
+      this.manageExpiringCustomStatus(), this.manageExpiringStatus(), this.lazilyMigrateStatusCreatedAt(), this.manageExpiringFocusMode()
     }), _(this, "manageExpiringCustomStatus", () => {
       let e = c.Ok.getSetting();
       if (null == e) m.stop();

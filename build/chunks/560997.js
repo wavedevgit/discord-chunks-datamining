@@ -2,10 +2,10 @@
 /** chunk id: 560997, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  KM: () => f,
-  R2: () => _,
-  TG: () => p,
-  Zc: () => d
+  KM: () => u,
+  R2: () => d,
+  TG: () => f,
+  Zc: () => c
 });
 var Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -14,43 +14,24 @@ var Chunk442837 = require("./442837.js"),
   Chunk581883 = require("./581883.js"),
   Chunk526761 = require("./526761.js");
 
-function c(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function u(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function d(e, t, n, i) {
-  let a = arguments.length > 4 && true !== arguments[4] ? arguments[4] : l.fy.INFREQUENT_USER_ACTION,
-    c = () => {
-      var r;
-      return n(null == (r = s.Z.settings[e]) ? true : r[t])
-    },
-    u = () => (0, r.e7)([s.Z], c);
+function c(e, t, n, i) {
+  let {
+    delay: a = l.fy.INFREQUENT_USER_ACTION,
+    comparator: c = (e, t) => e === t
+  } = arguments.length > 4 && true !== arguments[4] ? arguments[4] : {}, u = () => {
+    var r;
+    return n(null == (r = s.Z.settings[e]) ? true : r[t])
+  }, d = () => (0, r.e7)([s.Z], u, true, c);
   return {
-    getSetting: c,
-    updateSetting: h(c, n => o.hW.updateAsync(e, e => {
+    getSetting: u,
+    updateSetting: _(u, n => o.hW.updateAsync(e, e => {
       e[t] = i(n, e[t])
     }, a)),
-    useSetting: u
+    useSetting: d
   }
 }
 
-function f(e, t, n) {
+function u(e, t, n) {
   let o = () => {
     var r;
     let i = a.Z.getState()[t];
@@ -66,7 +47,7 @@ function f(e, t, n) {
         });
       return null != o ? o : i
     },
-    updateSetting: h(o, r => a.Z.shouldSync(t) ? e.updateSetting(r) : (i.Z.dispatch({
+    updateSetting: _(o, r => a.Z.shouldSync(t) ? e.updateSetting(r) : (i.Z.dispatch({
       type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE",
       changes: {
         [t]: {
@@ -79,7 +60,7 @@ function f(e, t, n) {
   }
 }
 
-function _(e, t, n, r) {
+function d(e, t, n, r) {
   let a = () => {
     var t;
     return null != (t = n()) ? t : e.getSetting()
@@ -91,14 +72,14 @@ function _(e, t, n, r) {
         n = r();
       return null != n ? n : t
     },
-    updateSetting: h(a, n => (i.Z.dispatch({
+    updateSetting: _(a, n => (i.Z.dispatch({
       type: "USER_SETTINGS_OVERRIDE_CLEAR",
       settings: [t]
     }), e.updateSetting(n)))
   }
 }
 
-function p(e) {
+function f(e) {
   let {
     baseSetting: t,
     isEligible: n,
@@ -121,7 +102,7 @@ function p(e) {
   }
 }
 
-function h(e, t) {
+function _(e, t) {
   return function(n) {
     return "function" == typeof n ? t(n(e())) : t(n)
   }
