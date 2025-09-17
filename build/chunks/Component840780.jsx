@@ -1,4 +1,4 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 71832 **/
 /** chunk id: 840780, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => e_
@@ -37,7 +37,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk102172 = require("./102172.js"),
   Chunk74299 = require("./74299.js"),
   Chunk914923 = require("./914923.js"),
-  Chunk662304 = require("./662304.jsx"),
+  Chunk165393 = require("./165393.jsx"),
   Chunk989941 = require("./989941.js"),
   Chunk690221 = require("./690221.jsx"),
   Chunk522474 = require("./522474.js"),
@@ -69,7 +69,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk921944 = require("./921944.js"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk800339 = require("./800339.js");
+  Chunk754947 = require("./754947.js");
 
 function em(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -112,11 +112,11 @@ class ey extends Chunk647438.PureComponent {
       return module
     }
     return (0, Chunk951288.jsx)("div", {
-      className: Chunk800339.sparkleContainer,
+      className: Chunk754947.sparkleContainer,
       children: (0, Chunk951288.jsx)(Chunk481060.Fmz, {
         importData: exports,
         shouldAnimate: !module,
-        className: Chunk800339.sparkles
+        className: Chunk754947.sparkles
       })
     })
   }
@@ -185,26 +185,26 @@ class ey extends Chunk647438.PureComponent {
       sanitizedTitle: l
     } = (0, Chunk914923.Z)(exports);
     return (0, Chunk951288.jsxs)("div", {
-      className: Chunk800339.gameWrapper,
+      className: Chunk754947.gameWrapper,
       ref: this.accountLinkUpsellTargetRef,
-      children: [module ? (0, Chunk951288.jsx)(Chunk662304.Z, {
+      children: [module ? (0, Chunk951288.jsx)(Chunk165393.Z, {
         title: Chunk120356,
         icon: null == exports ? true : exports.sourceIcon
       }) : (0, Chunk951288.jsx)(Chunk194082.ZP, {
         look: Chunk194082.ZP.Looks.GRAY,
         size: Chunk194082.ZP.Sizes.SMALL,
-        className: Chunk800339.liveIndicator
+        className: Chunk754947.liveIndicator
       }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk800339.info,
+        className: Chunk754947.info,
         children: [(0, Chunk951288.jsx)(Chunk115530.Z, {
           children: Chunk647438
         }), null != require && (0, Chunk951288.jsxs)("div", {
-          className: Chunk800339.perksDemoContainer,
+          className: Chunk754947.perksDemoContainer,
           children: [(0, Chunk951288.jsx)(Chunk481060.SrA, {
             size: "xxs",
             color: Chunk436774.JX.PREMIUM_TIER_2
           }), (0, Chunk951288.jsx)(Chunk759198.Z, {
-            className: Chunk800339.perksDemoText,
+            className: Chunk754947.perksDemoText,
             variant: "text-xxs/semibold",
             children: require
           })]
@@ -232,7 +232,7 @@ class ey extends Chunk647438.PureComponent {
         href: module,
         onClick: this.handleChannelLinkClick,
         children: (0, Chunk951288.jsx)(Chunk345243.Z, {
-          className: Chunk800339.channel,
+          className: Chunk754947.channel,
           children: Chunk704215
         })
       }),
@@ -240,13 +240,13 @@ class ey extends Chunk647438.PureComponent {
         href: module,
         onClick: this.handleApplicationLinkClick,
         children: (0, Chunk951288.jsx)(Chunk115530.Z, {
-          className: Chunk800339.underlineOnHover,
+          className: Chunk754947.underlineOnHover,
           children: exports.name
         })
       }),
       f = (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk925329.Z, {
-          className: Chunk800339.gameIcon,
+          className: Chunk754947.gameIcon,
           game: exports,
           size: Chunk925329.A.SMALL,
           ref: this.accountLinkUpsellTargetRef
@@ -254,7 +254,7 @@ class ey extends Chunk647438.PureComponent {
           isForceShowSharingPopout: Chunk512722,
           setIsForceShowSharingPopout: s,
           children: (0, Chunk951288.jsxs)("div", {
-            className: Chunk800339.info,
+            className: Chunk754947.info,
             children: [Chunk481060, null != Chunk647438 && (0, Chunk131704.Qm)(Chunk647438.type) ? Chunk907862 : (0, Chunk951288.jsx)(eO, {
               timestamps: Chunk442837
             })]
@@ -262,7 +262,7 @@ class ey extends Chunk647438.PureComponent {
         })]
       });
     return (0, Chunk951288.jsx)("div", {
-      className: Chunk800339.gameWrapper,
+      className: Chunk754947.gameWrapper,
       children: Chunk570140
     })
   }
@@ -280,9 +280,9 @@ class ey extends Chunk647438.PureComponent {
     if (!Chunk647438 && (!(0, Chunk339144.y)(Chunk512722, s, exports) && !module || null == require && null == exports)) return null;
     let u = () => null == require || Chunk647438 && (null == Chunk120356 ? true : Chunk120356.pid) == null ? null != exports ? this.renderEmbeddedActivity() : this.renderScreenshare() : this.renderGame();
     return (0, Chunk951288.jsx)("div", {
-      className: o()(Chunk800339.panel, Chunk442837),
+      className: o()(Chunk754947.panel, Chunk442837),
       children: (0, Chunk951288.jsxs)("div", {
-        className: Chunk800339.body,
+        className: Chunk754947.body,
         children: [Chunk704215(), this.renderActions(), this.renderPostAccountLinkPopover()]
       })
     })

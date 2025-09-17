@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk699867 = require("./699867.jsx"),
   Chunk227157 = require("./227157.jsx"),
   Chunk775195 = require("./775195.jsx"),
-  Chunk197571 = require("./197571.js");
+  Chunk10198 = require("./10198.js");
 
 function g() {
   let e = (0, Chunk211644.ZP)(e => e.recentlyShown),
@@ -38,10 +38,10 @@ function g() {
     children: [(0, Chunk951288.jsxs)(Chunk481060.hjN, {
       title: "Dismissible Content Fatigue",
       tag: Chunk481060.RB0.H1,
-      className: Chunk197571.marginBottom60,
+      className: Chunk10198.marginBottom60,
       children: [(0, Chunk951288.jsx)(Chunk481060.xJW, {
         children: (0, Chunk951288.jsxs)(Chunk481060.R94, {
-          className: Chunk197571.marginBottom4,
+          className: Chunk10198.marginBottom4,
           children: ["Daily Cap Reached: ", exports ? "Yes" : "No"]
         })
       }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
@@ -58,7 +58,7 @@ function g() {
           text: "Reset DismissibleContentFrameworkStore",
           onClick: () => (0, Chunk883904.EG)()
         }), (0, Chunk951288.jsx)(Chunk481060.R94, {
-          className: Chunk197571.marginTop4,
+          className: Chunk10198.marginTop4,
           children: "This will reset the daily cap and content seen during session"
         })]
       })]

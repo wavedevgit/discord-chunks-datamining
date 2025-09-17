@@ -102,7 +102,7 @@ function T(e, t) {
         } else if ("object" == typeof s && m(s.resourceId, s.type)) return v !== u.Z.getGuildId() && (0, p.K)(v, null == (a = c.ZP.getDefaultChannel(v)) ? true : a.id), (0, o.ZDy)(async () => {
           let {
             default: e
-          } = await Promise.all([n.e("4096"), n.e("56236"), n.e("74103")]).then(n.bind(n, 17671));
+          } = await Promise.all([n.e("4096"), n.e("56236"), n.e("63933")]).then(n.bind(n, 17671));
           return t => (0, r.jsx)(e, y(E({}, t), {
             guildId: v
           }))

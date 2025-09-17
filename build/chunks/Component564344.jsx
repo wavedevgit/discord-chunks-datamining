@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk526761 = require("./526761.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk455734 = require("./455734.js");
+  Chunk683326 = require("./683326.js");
 
 function C() {
   Chunk254901.Z.useExperiment({
@@ -72,17 +72,17 @@ function C() {
       children: Chunk388032.intl.string(Chunk388032.t["vi7f+v"])
     }),
     children: [(0, Chunk951288.jsxs)(Chunk481060.njP, {
-      className: Chunk455734.tabBar,
+      className: Chunk683326.tabBar,
       type: "top",
       look: "brand",
       selectedItem: N,
       onItemSelect: D,
       children: [L ? (0, Chunk951288.jsx)(Chunk481060.njP.Item, {
-        className: Chunk455734.tabBarItem,
+        className: Chunk683326.tabBarItem,
         id: Chunk526761.NB.USER_PROFILE,
         children: Chunk388032.intl.string(Chunk388032.t["2p07FR"])
       }, Chunk526761.NB.USER_PROFILE) : null, x ? (0, Chunk951288.jsx)(Chunk481060.njP.Item, {
-        className: o()(Chunk455734.tabBarItem, Chunk455734.guildTabBarItem),
+        className: o()(Chunk683326.tabBarItem, Chunk683326.guildTabBarItem),
         "aria-label": Chunk388032.intl.string(Chunk388032.t.kPHroa),
         id: Chunk526761.NB.GUILD,
         children: Chunk388032.intl.string(Chunk388032.t.kPHroa)

@@ -28,8 +28,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk518084 = require("./518084.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk361979 = require("./361979.js"),
-  Chunk890332 = require("./890332.js");
+  Chunk542596 = require("./542596.js"),
+  Chunk239545 = require("./239545.js");
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -99,14 +99,14 @@ class D extends Chunk647438.PureComponent {
       mute: p
     } = this.props;
     return null == Chunk120356 ? null : (0, Chunk951288.jsx)(Chunk518084.ZP.Bar, {
-      className: o()(module, Chunk361979.controls, {
-        [Chunk361979.unpinned]: !require
+      className: o()(module, Chunk542596.controls, {
+        [Chunk542596.unpinned]: !require
       }),
       children: (0, Chunk951288.jsxs)(Chunk518084.ZP.Content, {
-        className: o()(exports, Chunk361979.content),
+        className: o()(exports, Chunk542596.content),
         dynamicSize: true,
         children: [(0, Chunk951288.jsx)("div", {
-          className: Chunk890332.inner,
+          className: Chunk239545.inner,
           children: (0, Chunk951288.jsx)(Chunk481060.yRy, {
             targetElementRef: this.rtcConnectionStatusRef,
             renderPopout: () => this.renderPopout(Chunk120356.id),
@@ -128,13 +128,13 @@ class D extends Chunk647438.PureComponent {
           children: [(0, Chunk951288.jsx)(Chunk870569.Z, {
             tooltipText: Chunk933557 ? Chunk388032.intl.string(Chunk388032.t.YqAjX1) : Chunk388032.intl.string(Chunk388032.t["w4m94+"]),
             icon: Chunk933557 ? Chunk481060.nRN : Chunk481060.S6n,
-            iconForeground: Chunk933557 ? Chunk361979.strikethrough : null,
+            iconForeground: Chunk933557 ? Chunk542596.strikethrough : null,
             onClick: this.handleToggleSelfMute
           }), (0, Chunk951288.jsx)(Chunk870569.Z, {
             tooltipText: Chunk287734 ? Chunk388032.intl.string(Chunk388032.t["2US87+"]) : Chunk388032.intl.string(Chunk388032.t.wjcRFR),
             icon: Chunk287734 ? Chunk481060.wE8 : Chunk481060.VWR,
             onClick: this.handleToggleSelfDeaf,
-            iconForeground: Chunk287734 ? Chunk361979.strikethrough : null
+            iconForeground: Chunk287734 ? Chunk542596.strikethrough : null
           }), null == Chunk647438 && (0, Chunk951288.jsx)(Chunk870569.Z, {
             tooltipText: Chunk388032.intl.string(Chunk388032.t["6vrfgo"]),
             onClick: this.handleDisconnect,

@@ -1,0 +1,8 @@
+/** Chunk was on 72261 **/
+/** chunk id: 801298, original params: e,a,s (module,exports,require) **/
+module.exports = {
+  headerIcons: "headerIcons_f5cf99",
+  ellipseGroup: "ellipseGroup_f5cf99",
+  ellipse: "ellipse_f5cf99",
+  avatar: "avatar_f5cf99"
+}

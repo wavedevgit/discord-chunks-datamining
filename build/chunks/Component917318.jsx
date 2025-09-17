@@ -13,16 +13,16 @@ var Chunk275726 = require("./275726.js"),
   Chunk942951 = require("./942951.jsx"),
   Chunk834129 = require("./834129.jsx"),
   Chunk594174 = require("./594174.js"),
-  Chunk764295 = require("./764295.js"),
+  Chunk304726 = require("./304726.js"),
   Chunk388032 = require("./388032.jsx");
 let _ = {
-    [Chunk275726.u.REPORT_TO_MOD_BAN_USER]: () => Chunk764295.default.komFTk,
-    [Chunk275726.u.REPORT_TO_MOD_KICK_USER]: () => Chunk764295.default.FAJmJS,
-    [Chunk275726.u.REPORT_TO_MOD_TIMEOUT_USER]: () => Chunk764295.default["90r/sb"]
+    [Chunk275726.u.REPORT_TO_MOD_BAN_USER]: () => Chunk304726.default.komFTk,
+    [Chunk275726.u.REPORT_TO_MOD_KICK_USER]: () => Chunk304726.default.FAJmJS,
+    [Chunk275726.u.REPORT_TO_MOD_TIMEOUT_USER]: () => Chunk304726.default["90r/sb"]
   },
   p = {
-    [Chunk275726.u.REPORT_TO_MOD_DELETED_MESSAGE]: () => Chunk764295.default["4023i4"],
-    [Chunk275726.u.REPORT_TO_MOD_CLOSED_REPORT]: () => Chunk764295.default.UE81zc
+    [Chunk275726.u.REPORT_TO_MOD_DELETED_MESSAGE]: () => Chunk304726.default["4023i4"],
+    [Chunk275726.u.REPORT_TO_MOD_CLOSED_REPORT]: () => Chunk304726.default.UE81zc
   };
 
 function h(e) {

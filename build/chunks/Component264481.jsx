@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk475413 = require("./475413.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk839468 = require("./839468.js");
+  Chunk835540 = require("./835540.js");
 let y = [() => Chunk388032.intl.string(Chunk388032.t.madJdH), () => Chunk388032.intl.string(Chunk388032.t.NYmfoK), () => Chunk388032.intl.string(Chunk388032.t.R2PaCg), () => Chunk388032.intl.string(Chunk388032.t.laSR8v), () => Chunk388032.intl.string(Chunk388032.t.DnsJEx)],
   h = [() => Chunk388032.intl.string(Chunk388032.t.nFSbeH), () => Chunk388032.intl.string(Chunk388032.t.gTcxOz), () => Chunk388032.intl.string(Chunk388032.t["8T0wYm"]), () => Chunk388032.intl.string(Chunk388032.t.BIHl1t), () => Chunk388032.intl.string(Chunk388032.t.jhBm09)],
   v = [() => Chunk388032.intl.string(Chunk388032.t.AyMGXF), () => Chunk388032.intl.string(Chunk388032.t.aAFW7e), e => b.intl.formatToPlainString(b.t.h2g0cH, {
@@ -109,7 +109,7 @@ function A(e) {
 function I() {
   let e = (0, Chunk410030.ZP)();
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk839468.connectionPlatforms,
+    className: Chunk835540.connectionPlatforms,
     children: x.map((t, n) => {
       let l = c.Z.get(t);
       if (null == l) return null;

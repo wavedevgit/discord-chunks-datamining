@@ -10,11 +10,11 @@ var Chunk481060 = require("./481060.js"),
   Chunk934819 = require("./934819.jsx"),
   Chunk529625 = require("./529625.jsx"),
   Chunk681140 = require("./681140.jsx"),
-  Chunk530146 = require("./530146.js");
+  Chunk575043 = require("./575043.js");
 
 function d() {
   return (0, Chunk951288.jsxs)(Chunk481060.zJl, {
-    className: Chunk530146.panel,
+    className: Chunk575043.panel,
     children: [(0, Chunk951288.jsx)(Chunk529625.Z, {}), (0, Chunk951288.jsx)(Chunk544245.Z, {}), (0, Chunk951288.jsx)(Chunk681140.Z, {}), (0, Chunk951288.jsx)(Chunk934819.Z, {})]
   })
 }

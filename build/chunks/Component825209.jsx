@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk455279 = require("./455279.jsx"),
   Chunk358085 = require("./358085.js"),
   Chunk998502 = require("./998502.js"),
-  Chunk981631 = require("./981631.js");
+  Chunk295907 = require("./295907.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -79,14 +79,14 @@ class p extends Chunk647438.PureComponent {
       this.state.mode === l.c.DEFAULT ? this.recordStart() : this.recordEnd()
     }), f(this, "handleComboKeys", (e, t, n) => {
       if (n.preventDefault(), "keydown" === n.type) {
-        let e = t.map(e => [d.MoX.KEYBOARD_KEY, o()(e), d.CgE.BROWSER]),
+        let e = t.map(e => [d.Mo.KEYBOARD_KEY, o()(e), d.Cg.BROWSER]),
           {
             keyCode: r
           } = n;
         null == e.find(e => {
           let [, t] = e;
           return r === t
-        }) && e.push([d.MoX.KEYBOARD_KEY, r, d.CgE.BROWSER]), this.handleComboChange(e)
+        }) && e.push([d.Mo.KEYBOARD_KEY, r, d.Cg.BROWSER]), this.handleComboChange(e)
       }
     }), f(this, "handleGSChange", e => {
       if (false === this._mounted) return;

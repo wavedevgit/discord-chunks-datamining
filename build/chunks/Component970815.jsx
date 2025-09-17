@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk317257 = require("./317257.js"),
   Chunk583478 = require("./583478.jsx"),
   Chunk976845 = require("./976845.jsx"),
-  Chunk647917 = require("./647917.js");
+  Chunk646855 = require("./646855.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -38,7 +38,7 @@ function p(e) {
   return e
 }
 let h = () => (0, Chunk951288.jsx)("img", {
-    className: Chunk647917.notificationBadge,
+    className: Chunk646855.notificationBadge,
     src: require("./808824.js"),
     alt: ""
   }),

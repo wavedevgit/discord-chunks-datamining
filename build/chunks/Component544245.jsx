@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk620481 = require("./620481.js"),
   Chunk608934 = require("./608934.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk530146 = require("./530146.js");
+  Chunk575043 = require("./575043.js");
 let h = (0, Chunk972959.H)(() => ({
   includeFrecency: true,
   includeFriends: true,
@@ -68,10 +68,10 @@ function p() {
   return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
     title: "Debug Logs Snapshot",
     tag: Chunk481060.RB0.H3,
-    className: Chunk530146.panelGroup,
+    className: Chunk575043.panelGroup,
     children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
       type: Chunk481060.geA.DESCRIPTION,
-      className: Chunk530146.subtitle,
+      className: Chunk575043.subtitle,
       children: "Uploading a snapshot of the client state can help us figure out what exactly is wrong with your search. You can opt out of uploading certain logs, but it may make it more difficult to debug your issue."
     }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
       value: module,

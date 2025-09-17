@@ -16,7 +16,7 @@ var Chunk921738 = require("./921738.js"),
   Chunk710845 = require("./710845.js"),
   Chunk857192 = require("./857192.js"),
   Chunk358085 = require("./358085.js"),
-  Chunk981631 = require("./981631.js");
+  Chunk295907 = require("./295907.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -40,7 +40,7 @@ function d(e) {
   return e
 }
 let f = new Chunk710845.Z("KeyboardLayoutMapUtils"),
-  _ = (0, Chunk358085.isLinux)() ? Chunk981631.HsE : (0, Chunk358085.isMac)() ? Chunk981631.REU : (0, Chunk358085.isWindows)() || __OVERLAY__ ? Chunk981631.iC$ : i().codes,
+  _ = (0, Chunk358085.isLinux)() ? Chunk295907.Hs : (0, Chunk358085.isMac)() ? Chunk295907.RE : (0, Chunk358085.isWindows)() || __OVERLAY__ ? Chunk295907.iC : i().codes,
   p = new Set([192, 220, 222, 223, 229]),
   h = Object.freeze({
     KeyA: "a",

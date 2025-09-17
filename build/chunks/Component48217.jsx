@@ -1,5 +1,5 @@
-/** Chunk was on 72891 **/
-/** chunk id: 48217, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 96033 **/
+/** chunk id: 48217, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   c: () => g
 });
@@ -13,63 +13,63 @@ var Chunk481060 = require("./481060.js"),
   Chunk30513 = require("./30513.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk131115 = require("./131115.js");
+  Chunk124437 = require("./124437.js");
 
-function _(e) {
+function h(t) {
   let {
-    guild: t,
+    guild: e,
     banner: n
-  } = e;
+  } = t;
   return (0, i.jsx)("div", {
-    className: f.guildBanner,
+    className: _.guildBanner,
     style: {
       backgroundImage: "url(".concat(n)
     },
     children: (0, i.jsxs)("div", {
-      className: f.guildHeader,
+      className: _.guildHeader,
       children: [(0, i.jsx)(r.Z, {
-        guild: t,
+        guild: e,
         isBannerVisible: true
-      }), (0, i.jsx)(a.X6q, {
-        className: f.guildName,
+      }), (0, i.jsx)(o.X6q, {
+        className: _.guildName,
         variant: "heading-md/semibold",
-        children: t.name
-      }), (0, i.jsx)(o.Z, {
-        className: f.dropdown,
+        children: e.name
+      }), (0, i.jsx)(a.Z, {
+        className: _.dropdown,
         open: false
       })]
     })
   })
 }
 
-function g(e) {
+function g(t) {
   let {
-    analyticsLocations: t,
+    analyticsLocations: e,
     analyticsLocation: n,
-    guild: a,
-    isGIF: o,
+    guild: o,
+    isGIF: a,
     banner: r
-  } = e, f = o ? (0, l._p)(d.oNc.ANIMATED_BANNER) : (0, l._p)(d.oNc.BANNER);
-  null != f && (0, c.Z)({
-    analyticsLocations: t,
+  } = t, _ = a ? (0, l._p)(c.oNc.ANIMATED_BANNER) : (0, l._p)(c.oNc.BANNER);
+  null != _ && (0, s.Z)({
+    analyticsLocations: e,
     analyticsSourceLocation: n,
-    guild: a,
+    guild: o,
     headerProps: {
       title: u.intl.string(u.t["rv2H+/"]),
-      subtitle: function(e, t) {
-        let n = (0, l.nW)(e);
-        return t ? u.intl.formatToPlainString(u.t["TR/Uys"], {
+      subtitle: function(t, e) {
+        let n = (0, l.nW)(t);
+        return e ? u.intl.formatToPlainString(u.t["TR/Uys"], {
           targetLevelOrPlan: n
         }) : u.intl.formatToPlainString(u.t.B253V1, {
           targetLevelOrPlan: n
         })
-      }(f, o),
-      image: (0, i.jsx)(_, {
-        guild: a,
+      }(_, a),
+      image: (0, i.jsx)(h, {
+        guild: o,
         banner: r
       })
     },
     perkIntro: u.intl.string(u.t.ZuItcH),
-    perks: o ? (0, s.zC)() : (0, s.XO)()
+    perks: a ? (0, d.zC)() : (0, d.XO)()
   })
 }

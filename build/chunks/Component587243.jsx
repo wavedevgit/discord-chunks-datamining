@@ -18,7 +18,7 @@ var Chunk722770 = require("./722770.js"),
   Chunk246133 = require("./246133.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk54482 = require("./54482.js");
+  Chunk138005 = require("./138005.js");
 let m = [{
     duration: 15 * Chunk70956.Z.Millis.MINUTE,
     label: () => Chunk388032.intl.string(Chunk388032.t["8ot6go"])

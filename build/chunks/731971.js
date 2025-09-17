@@ -1,16 +1,16 @@
-/** Chunk was on 27978 **/
+/** Chunk was on 71832 **/
 /** chunk id: 731971, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  NQ: () => _,
-  U1: () => v,
+  NQ: () => b,
+  U1: () => _,
   XW: () => d,
-  _J: () => f,
-  aP: () => g,
-  e7: () => m,
-  h6: () => x,
-  oE: () => p,
-  pB: () => h,
-  y: () => E,
+  _J: () => m,
+  aP: () => h,
+  e7: () => g,
+  h6: () => O,
+  oE: () => f,
+  pB: () => p,
+  y: () => y,
   yr: () => j
 }), require("./781311.js");
 var Chunk879690 = require("./879690.js"),
@@ -37,7 +37,7 @@ function a(e) {
   return e
 }
 
-function o(e, t) {
+function s(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -65,27 +65,27 @@ let d = (0, Chunk879690.U)(e => ({
     inviteCode: true,
     guildId: true,
     touched: false,
-    setNickname: t => e(e => o(a({}, e), {
+    setNickname: t => e(e => s(a({}, e), {
       nickname: t,
       touched: true
     })),
-    setDmsAllowed: t => e(e => o(a({}, e), {
+    setDmsAllowed: t => e(e => s(a({}, e), {
       dmsAllowed: t,
       touched: true
     })),
-    setShowActivity: t => e(e => o(a({}, e), {
+    setShowActivity: t => e(e => s(a({}, e), {
       showActivity: t,
       touched: true
     })),
-    setInviteCode: t => e(e => o(a({}, e), {
+    setInviteCode: t => e(e => s(a({}, e), {
       inviteCode: t,
       touched: true
     })),
-    setGuildId: t => e(e => o(a({}, e), {
+    setGuildId: t => e(e => s(a({}, e), {
       guildId: t,
       touched: true
     })),
-    initialize: (t, n, r) => e(e => o(a({}, e), {
+    initialize: (t, n, r) => e(e => s(a({}, e), {
       guildSize: t,
       inviteCode: n,
       guildId: r,
@@ -103,22 +103,22 @@ let d = (0, Chunk879690.U)(e => ({
       touched: false
     }))
   })),
-  h = (e, t, n) => {
+  p = (e, t, n) => {
     d.getState().initialize(e, t, n)
   },
-  p = () => {
+  f = () => {
     d.getState().reset()
   },
-  g = () => {
+  h = () => {
     let e = d.getState();
     return module.nickname !== c.nickname || module.dmsAllowed !== c.dmsAllowed || module.showActivity !== u(module.guildSize)
   },
-  m = () => d.getState().inviteCode,
-  f = () => d.getState().guildId,
-  _ = () => d.getState().touched,
-  x = () => d.getState().dmsAllowed,
-  E = () => d.getState().nickname,
-  v = () => d.getState().showActivity,
+  g = () => d.getState().inviteCode,
+  m = () => d.getState().guildId,
+  b = () => d.getState().touched,
+  O = () => d.getState().dmsAllowed,
+  y = () => d.getState().nickname,
+  _ = () => d.getState().showActivity,
   j = () => {
     var e, t;
     let {

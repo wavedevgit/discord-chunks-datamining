@@ -8,7 +8,7 @@ var Chunk836560 = require("./836560.js"),
   Chunk358085 = require("./358085.js"),
   Chunk998502 = require("./998502.js"),
   Chunk13140 = require("./13140.js"),
-  Chunk981631 = require("./981631.js");
+  Chunk295907 = require("./295907.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -21,7 +21,7 @@ function l(e, t, n) {
 let c = [],
   u = (e, t, n) => {
     let r = +!(0, i.isWindows)();
-    (e !== s.MoX.MOUSE_BUTTON || n !== r) && c.forEach(r => r._handleEvent(e, t, n))
+    (e !== s.Mo.MOUSE_BUTTON || n !== r) && c.forEach(r => r._handleEvent(e, t, n))
   };
 class d extends Chunk836560.EventEmitter {
   destroy() {

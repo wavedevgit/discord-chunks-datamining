@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk401190 = require("./401190.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk919047 = require("./919047.js");
+  Chunk919005 = require("./919005.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -26,7 +26,7 @@ class d extends Chunk647438.PureComponent {
       hasError: e
     } = this.state;
     return module ? (0, Chunk951288.jsx)("div", {
-      className: Chunk919047.error,
+      className: Chunk919005.error,
       children: Chunk388032.intl.string(Chunk388032.t.UUcECA)
     }) : null
   }
@@ -37,11 +37,11 @@ class d extends Chunk647438.PureComponent {
       isHypeSquadOnlineMember: t
     } = this.props;
     return exports ? (0, Chunk951288.jsxs)("div", {
-      className: Chunk919047.leaveActionWrapper,
+      className: Chunk919005.leaveActionWrapper,
       children: [this.renderErrorMessage(), (0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-sm/normal",
         children: [Chunk388032.intl.string(Chunk388032.t.ziWmcH), (0, Chunk951288.jsx)(Chunk755721.zx, {
-          className: Chunk919047.leaveButton,
+          className: Chunk919005.leaveButton,
           color: Chunk755721.zx.Colors.LINK,
           look: Chunk755721.zx.Looks.LINK,
           onClick: this.handleLeaveHypeSquadClick,

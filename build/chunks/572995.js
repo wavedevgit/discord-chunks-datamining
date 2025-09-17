@@ -19,7 +19,7 @@ var Chunk100527 = require("./100527.js"),
   Chunk981631 = require("./981631.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk119475 = require("./119475.js"),
+  Chunk684555 = require("./684555.js"),
   Chunk509614 = require("./509614.js"),
   Chunk880511 = require("./880511.js"),
   Chunk985443 = require("./985443.js"),
@@ -202,8 +202,8 @@ let es = (e, t) => ei({
       videoUrl: Chunk742694.referralProgram.assetUrl
     }, C = {
       name: "customThemes",
-      title: Chunk388032.intl.string(Chunk119475.default.XokIHB),
-      description: Chunk388032.intl.string(Chunk119475.default["7esQMD"]),
+      title: Chunk388032.intl.string(Chunk684555.default.XokIHB),
+      description: Chunk388032.intl.string(Chunk684555.default["7esQMD"]),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
       previewImage: Chunk742694.customThemes.thumbnail,
       onClick: () => {

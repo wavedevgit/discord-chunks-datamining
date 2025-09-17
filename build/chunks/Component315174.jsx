@@ -1,4 +1,4 @@
-/** Chunk was on 11160 **/
+/** Chunk was on 71832 **/
 /** chunk id: 315174, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => R,
@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk647086 = require("./647086.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk869786 = require("./869786.js");
+  Chunk228451 = require("./228451.js");
 
 function C(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -144,7 +144,7 @@ function I() {
   return (0, Chunk951288.jsx)(Chunk481060.r7p, {
     size: "custom",
     color: "currentColor",
-    className: Chunk869786.favoritesIcon,
+    className: Chunk228451.favoritesIcon,
     height: 20,
     width: 20
   })
@@ -224,7 +224,7 @@ function A(e) {
     b ? (0, u.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("7654"), n.e("62292")]).then(n.bind(n, 560114));
+      } = await Promise.all([n.e("7654"), n.e("87379")]).then(n.bind(n, 560114));
       return t => (0, r.jsx)(e, E(C({}, t), {
         guild: o,
         source: _.t4x.GUILD_HEADER_INVITE_BUTTON

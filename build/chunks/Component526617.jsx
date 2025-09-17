@@ -51,7 +51,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk957825 = require("./957825.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk412553 = require("./412553.js");
+  Chunk25220 = require("./25220.js");
 
 function X(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -360,7 +360,7 @@ function eu(e) {
     }) : eF && t === eZ ? (0, r.jsx)("div", {
       className: o()(q.smallPaddingFooter, q.nitroLocked)
     }) : null
-  }, [eZ, eF, eB.length]), e5 = i.useCallback(e => ej((0, G.cK)(e, Array.from(eD.values()).flat(), eI, a, eg)), [a, eI, eD, eg]), e6 = i.useCallback(e => {
+  }, [eZ, eF, eB.length]), e6 = i.useCallback(e => ej((0, G.cK)(e, Array.from(eD.values()).flat(), eI, a, eg)), [a, eI, eD, eg]), e5 = i.useCallback(e => {
     (0, u.jW)(e, async () => {
       let {
         default: e
@@ -382,14 +382,14 @@ function eu(e) {
   }) : (0, r.jsx)(c.P3F, {
     tabIndex: 0,
     className: q.settingsClickArea,
-    onClick: e6,
+    onClick: e5,
     "aria-label": z.intl.string(z.t.kbFsAA),
     children: (0, r.jsx)(c.gj8, {
       size: "md",
       color: "currentColor",
       className: q.settingsIcon
     })
-  }), [ep, e6]), e9 = i.useCallback(e => (0, r.jsx)(Z.Z, {
+  }), [ep, e5]), e9 = i.useCallback(e => (0, r.jsx)(Z.Z, {
     soundboardListRef: e,
     categories: ew,
     shouldUpsellLockedCategories: eF,
@@ -474,7 +474,7 @@ function eu(e) {
       containerWidth: d,
       store: E.Wq,
       onSelectItem: eX,
-      onSearchExpressions: e5,
+      onSearchExpressions: e6,
       hasSearchResults: eL.length > 0,
       defaultSearchPlaceholder: z.intl.string(z.t.sKt3xc),
       renderRow: eQ,

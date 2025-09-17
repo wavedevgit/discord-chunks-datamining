@@ -18,10 +18,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk652853 = require("./652853.jsx"),
   Chunk228168 = require("./228168.js"),
   Chunk185923 = require("./185923.js"),
-  Chunk420212 = require("./420212.js"),
   Chunk231338 = require("./231338.js"),
+  Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk396579 = require("./396579.js");
+  Chunk938365 = require("./938365.js");
 let O = e => {
   let {
     emoji: t,
@@ -72,7 +72,7 @@ function v(e) {
     null == v || v(null == P ? true : P.current)
   }, [P, v]), i.useEffect(() => {
     let e = e => {
-      e.key === g.vn.ESCAPE && (e.stopPropagation(), S())
+      e.key === E.vn.ESCAPE && (e.stopPropagation(), S())
     };
     return document.addEventListener("keydown", e), () => {
       document.removeEventListener("keydown", e)
@@ -109,7 +109,7 @@ function v(e) {
   return (0, r.jsx)(s.Z, {
     headerClassName: R ? y.noBoxShadowMargin : true,
     guildId: null != n ? n : true,
-    closePopout: E.dG,
+    closePopout: g.dG,
     onSelectEmoji: async e => {
       let {
         emoji: t,

@@ -11,25 +11,25 @@ var Chunk951288 = require("./951288.js"),
   Chunk227157 = require("./227157.jsx"),
   Chunk775195 = require("./775195.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk393146 = require("./393146.js");
+  Chunk867089 = require("./867089.js");
 
 function m() {
   let e = Chunk647438.useCallback(() => {
     Chunk230711.Z.open(Chunk981631.oAB.DISMISSIBLE_CONTENT_OPTIONS)
   }, []);
   return (0, Chunk951288.jsxs)(Chunk481060.Ttm, {
-    className: Chunk393146.panelContainer,
+    className: Chunk867089.panelContainer,
     children: [(0, Chunk951288.jsxs)("p", {
-      className: Chunk393146.settings,
+      className: Chunk867089.settings,
       children: ["For more options, see the ", (0, Chunk951288.jsx)(Chunk481060.eee, {
         onClick: module,
         children: "settings page"
       }), "."]
     }), (0, Chunk951288.jsx)("div", {
-      className: Chunk393146.buttonContainer,
+      className: Chunk867089.buttonContainer,
       children: (0, Chunk951288.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: Chunk393146.button,
+        className: Chunk867089.button,
         children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Reset Daily Cap",
@@ -37,7 +37,7 @@ function m() {
         })
       })
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk393146.recent,
+      className: Chunk867089.recent,
       children: [(0, Chunk951288.jsx)(Chunk775195.Z, {}), (0, Chunk951288.jsx)(Chunk227157.Z, {})]
     })]
   })

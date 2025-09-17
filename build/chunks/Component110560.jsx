@@ -192,7 +192,7 @@ function Y(e, t, i) {
     }
     let {
       default: a
-    } = await Promise.all([n.e("79589"), n.e("83175")]).then(n.bind(n, 920916));
+    } = await Promise.all([n.e("79589"), n.e("70154")]).then(n.bind(n, 920916));
     return n => (0, r.jsx)(a, U(M({}, n), {
       quest: e,
       location: t,

@@ -18,7 +18,7 @@ var Chunk921738 = require("./921738.js"),
   Chunk823379 = require("./823379.js"),
   Chunk358085 = require("./358085.js"),
   Chunk378799 = require("./378799.js"),
-  Chunk981631 = require("./981631.js");
+  Chunk295907 = require("./295907.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -58,11 +58,11 @@ function h(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = __OVERLAY__ ? Chunk981631.iC$ : (0, Chunk358085.isLinux)() ? Chunk981631.HsE : (0, Chunk358085.isMac)() ? Chunk981631.REU : (0, Chunk358085.isWindows)() ? Chunk981631.iC$ : {},
-  g = o().invert(Chunk981631.HsE);
+let m = __OVERLAY__ ? Chunk295907.iC : (0, Chunk358085.isLinux)() ? Chunk295907.Hs : (0, Chunk358085.isMac)() ? Chunk295907.RE : (0, Chunk358085.isWindows)() ? Chunk295907.iC : {},
+  g = o().invert(Chunk295907.Hs);
 g["223"] = "`", Object.freeze(g);
-let E = Object.freeze(o().invert(Chunk981631.REU)),
-  b = o().invert(Chunk981631.iC$);
+let E = Object.freeze(o().invert(Chunk295907.RE)),
+  b = o().invert(Chunk295907.iC);
 b["223"] = "`", Object.freeze(b);
 let y = o().invert(null != m ? m : {});
 
@@ -72,11 +72,11 @@ function O(e) {
 
 function v(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : T();
-  return t === d.CgE.BROWSER ? i()(e) : m[e]
+  return t === d.Cg.BROWSER ? i()(e) : m[e]
 }
 
 function I(e, t, n) {
-  if (null != n && n !== d.CgE.WINDOWS || !u.Dz.has(e)) return t;
+  if (null != n && n !== d.Cg.WINDOWS || !u.Dz.has(e)) return t;
   let r = (0, u.pz)().get("Backquote");
   if (t === r) return O(t);
   let i = {
@@ -89,22 +89,22 @@ function I(e, t, n) {
 }
 
 function T() {
-  return (0, Chunk358085.isLinux)() ? Chunk981631.CgE.LINUX : (0, Chunk358085.isMac)() ? Chunk981631.CgE.MACOS : (0, Chunk358085.isWindows)() ? Chunk981631.CgE.WINDOWS : __OVERLAY__ ? Chunk981631.CgE.WINDOWS : Chunk981631.CgE.BROWSER
+  return (0, Chunk358085.isLinux)() ? Chunk295907.Cg.LINUX : (0, Chunk358085.isMac)() ? Chunk295907.Cg.MACOS : (0, Chunk358085.isWindows)() ? Chunk295907.Cg.WINDOWS : __OVERLAY__ ? Chunk295907.Cg.WINDOWS : Chunk295907.Cg.BROWSER
 }
 
 function S(e) {
   let t, [, n, r] = e;
   switch (r) {
-    case d.CgE.LINUX:
+    case d.Cg.LINUX:
       t = g["" + n];
       break;
-    case d.CgE.MACOS:
+    case d.Cg.MACOS:
       t = E["" + n];
       break;
-    case d.CgE.WINDOWS:
+    case d.Cg.WINDOWS:
       t = b["" + n];
       break;
-    case d.CgE.BROWSER: {
+    case d.Cg.BROWSER: {
       let e = i()(n);
       if (null == e) return null;
       t = N(e);
@@ -125,7 +125,7 @@ function A(e) {
 
 function C(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : T(),
-    n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : d.MoX.KEYBOARD_KEY,
+    n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : d.Mo.KEYBOARD_KEY,
     r = R(e, t, n);
   if (null != r) return r;
   let i = (0, u.T_)(e);
@@ -139,29 +139,29 @@ function N(e) {
 
 function R(e) {
   let t, n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : T(),
-    r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : d.MoX.KEYBOARD_KEY;
+    r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : d.Mo.KEYBOARD_KEY;
   if (null == e) return null;
-  let a = r === d.MoX.KEYBOARD_KEY || r === d.MoX.KEYBOARD_MODIFIER_KEY;
+  let a = r === d.Mo.KEYBOARD_KEY || r === d.Mo.KEYBOARD_MODIFIER_KEY;
   switch (true) {
-    case a && n === d.CgE.LINUX:
-      t = d.HsE[e];
+    case a && n === d.Cg.LINUX:
+      t = d.Hs[e];
       break;
-    case a && n === d.CgE.MACOS:
-      t = d.REU[e];
+    case a && n === d.Cg.MACOS:
+      t = d.RE[e];
       break;
-    case a && n === d.CgE.WINDOWS:
-      t = "+" === e ? d.iC$.plus : d.iC$[e];
+    case a && n === d.Cg.WINDOWS:
+      t = "+" === e ? d.iC.plus : d.iC[e];
       break;
-    case a && n === d.CgE.BROWSER:
+    case a && n === d.Cg.BROWSER:
       t = i()(N(e));
       break;
     case a:
       t = m[e];
       break;
-    case r === d.MoX.MOUSE_BUTTON:
+    case r === d.Mo.MOUSE_BUTTON:
       t = parseInt(e.replace("MOUSE", ""), 10);
       break;
-    case r === d.MoX.GAMEPAD_BUTTON:
+    case r === d.Mo.GAMEPAD_BUTTON:
       t = parseInt(e.replace("GAMEPAD", ""), 10);
       break;
     default:
@@ -231,7 +231,7 @@ function M(e) {
     })), e;
     if (x.test(r) && L(r)) return t[j(r)] = true, e.map(e => (e[j(r)] = true, e));
     {
-      let t = C(r, d.CgE.BROWSER);
+      let t = C(r, d.Cg.BROWSER);
       return null != t && (i.keyCode = t), e.push(i), e
     }
   }, [])
@@ -239,7 +239,7 @@ function M(e) {
 
 function k(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : T(),
-    n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : d.MoX.KEYBOARD_KEY;
+    n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : d.Mo.KEYBOARD_KEY;
   return e.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus").replace(/mod/i, s.Z.modKey).split("+").map(e => e.trim().replace("plus", "+")).reduce((e, r) => {
     let i = C(D(r), t, n);
     return null != i && e.push([n, i, t]), e
@@ -250,11 +250,11 @@ function U(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     r = e.map(e => {
       let [t, n, r] = e, i = "number" == typeof r ? r : T();
-      if (t === d.MoX.KEYBOARD_KEY || t === d.MoX.KEYBOARD_MODIFIER_KEY) {
+      if (t === d.Mo.KEYBOARD_KEY || t === d.Mo.KEYBOARD_MODIFIER_KEY) {
         var a;
         return null != (a = A(null != i ? [t, n, i] : [t, n])) ? a : "UNK".concat(n)
       }
-      return t === d.MoX.MOUSE_BUTTON ? "mouse".concat(n) : t === d.MoX.GAMEPAD_BUTTON ? "gamepad".concat(n) : "dev".concat(t, ",").concat(n)
+      return t === d.Mo.MOUSE_BUTTON ? "mouse".concat(n) : t === d.Mo.GAMEPAD_BUTTON ? "gamepad".concat(n) : "dev".concat(t, ",").concat(n)
     }).filter(l.lm);
   return t ? (false !== n.g.navigator.appVersion.indexOf("Mac OS X") ? r.map(w) : r).join(" + ").toUpperCase() : r.join("+")
 }

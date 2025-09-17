@@ -1,37 +1,37 @@
-/** Chunk was on 72891 **/
-/** chunk id: 411477, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 96033 **/
+/** chunk id: 411477, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => d
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk436774 = require("./436774.jsx"),
-  Chunk279798 = require("./279798.js");
+  Chunk619598 = require("./619598.js");
 
-function s(e) {
+function d(t) {
   let {
-    text: t,
+    text: e,
     className: n,
-    button: a,
-    reducedRightPadding: s = false
-  } = e;
+    button: o,
+    reducedRightPadding: d = false
+  } = t;
   return (0, i.jsxs)("div", {
-    className: o()(s ? c.noticeWithoutRightPadding : c.noticeWithRightPadding, n),
+    className: a()(d ? s.noticeWithoutRightPadding : s.noticeWithRightPadding, n),
     children: [(0, i.jsxs)("div", {
-      className: c.noticeLeft,
+      className: s.noticeLeft,
       children: [(0, i.jsx)(r.SrA, {
         size: "md",
-        className: c.icon,
+        className: s.icon,
         color: l.JX.PREMIUM_TIER_2
       }), (0, i.jsx)(r.Text, {
-        className: c.text,
+        className: s.text,
         variant: "text-md/normal",
         color: "header-primary",
-        children: t
+        children: e
       })]
-    }), a]
+    }), o]
   })
 }

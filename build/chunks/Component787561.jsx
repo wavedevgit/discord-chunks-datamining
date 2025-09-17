@@ -1,4 +1,4 @@
-/** Chunk was on 8106 **/
+/** Chunk was on 70830 **/
 /** chunk id: 787561, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   X: () => D,
@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk929834 = require("./929834.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk353343 = require("./353343.js"),
+  Chunk443874 = require("./443874.js"),
   Chunk922905 = require("./922905.js");
 
 function w(e) {
@@ -279,18 +279,18 @@ let Z = "dismissedCommunityFeaturesUpsell",
         onboardingEnabled: module.features.has(Chunk981631.oNc.GUILD_ONBOARDING),
         guild: module
       }) : null, (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-        className: a()(Chunk353343.twoColumnFormSection, Chunk353343.firstSection),
+        className: a()(Chunk443874.twoColumnFormSection, Chunk443874.firstSection),
         children: [(0, Chunk951288.jsxs)("div", {
-          className: Chunk353343.descriptionColumn,
+          className: Chunk443874.descriptionColumn,
           children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-            className: Chunk353343.formTitle,
+            className: Chunk443874.formTitle,
             children: Chunk388032.intl.string(Chunk388032.t.otcXPz)
           }), (0, Chunk951288.jsx)(Chunk481060.R94, {
             type: Chunk481060.geA.DESCRIPTION,
             children: Chunk388032.intl.string(Chunk388032.t.BtwmYG)
           })]
         }), (0, Chunk951288.jsx)("div", {
-          className: Chunk353343.selectColumn,
+          className: Chunk443874.selectColumn,
           children: (0, Chunk951288.jsx)(Chunk481060.VcW, {
             value: module.rulesChannelId,
             options: Chunk852860,
@@ -303,21 +303,21 @@ let Z = "dismissedCommunityFeaturesUpsell",
           })
         })]
       }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-        className: Chunk353343.divider
+        className: Chunk443874.divider
       }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-        className: a()(Chunk353343.twoColumnFormSection, Chunk353343.firstSection),
+        className: a()(Chunk443874.twoColumnFormSection, Chunk443874.firstSection),
         children: [(0, Chunk951288.jsxs)("div", {
-          className: Chunk353343.descriptionColumn,
+          className: Chunk443874.descriptionColumn,
           children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-            className: Chunk353343.formTitle,
+            className: Chunk443874.formTitle,
             children: Chunk388032.intl.string(Chunk388032.t.vAyDGR)
           }), (0, Chunk951288.jsx)(Chunk481060.R94, {
             type: Chunk481060.geA.DESCRIPTION,
-            className: Chunk353343.__invalid_formDescription,
+            className: Chunk443874.__invalid_formDescription,
             children: Chunk388032.intl.string(Chunk388032.t.ZFeonp)
           })]
         }), (0, Chunk951288.jsx)("div", {
-          className: Chunk353343.selectColumn,
+          className: Chunk443874.selectColumn,
           children: (0, Chunk951288.jsx)(Chunk481060.VcW, {
             value: module.publicUpdatesChannelId,
             options: Chunk852860,
@@ -330,21 +330,21 @@ let Z = "dismissedCommunityFeaturesUpsell",
           })
         })]
       }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-        className: Chunk353343.divider
+        className: Chunk443874.divider
       }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-        className: a()(Chunk353343.twoColumnFormSection, Chunk353343.firstSection),
+        className: a()(Chunk443874.twoColumnFormSection, Chunk443874.firstSection),
         children: [(0, Chunk951288.jsxs)("div", {
-          className: Chunk353343.descriptionColumn,
+          className: Chunk443874.descriptionColumn,
           children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-            className: Chunk353343.formTitle,
+            className: Chunk443874.formTitle,
             children: Chunk388032.intl.string(Chunk388032.t.sMkYEx)
           }), (0, Chunk951288.jsx)(Chunk481060.R94, {
             type: Chunk481060.geA.DESCRIPTION,
-            className: Chunk353343.__invalid_formDescription,
+            className: Chunk443874.__invalid_formDescription,
             children: Chunk388032.intl.string(Chunk388032.t.htioQk)
           })]
         }), (0, Chunk951288.jsx)("div", {
-          className: Chunk353343.selectColumn,
+          className: Chunk443874.selectColumn,
           children: (0, Chunk951288.jsx)(Chunk481060.VcW, {
             value: module.safetyAlertsChannelId,
             options: Chunk852860,
@@ -357,21 +357,21 @@ let Z = "dismissedCommunityFeaturesUpsell",
           })
         })]
       }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-        className: Chunk353343.divider
+        className: Chunk443874.divider
       }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-        className: Chunk353343.twoColumnFormSection,
+        className: Chunk443874.twoColumnFormSection,
         children: [(0, Chunk951288.jsxs)("div", {
-          className: Chunk353343.descriptionColumn,
+          className: Chunk443874.descriptionColumn,
           children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-            className: Chunk353343.formTitle,
+            className: Chunk443874.formTitle,
             children: Chunk388032.intl.string(Chunk388032.t.pO60f3)
           }), (0, Chunk951288.jsx)(Chunk481060.R94, {
             type: Chunk481060.geA.DESCRIPTION,
-            className: Chunk353343.__invalid_formDescription,
+            className: Chunk443874.__invalid_formDescription,
             children: Chunk388032.intl.string(Chunk388032.t.aIR73d)
           })]
         }), (0, Chunk951288.jsx)("div", {
-          className: Chunk353343.selectColumn,
+          className: Chunk443874.selectColumn,
           children: (0, Chunk951288.jsx)(Chunk481060.VcW, {
             value: module.preferredLocale,
             options: Chunk544891,
@@ -384,15 +384,15 @@ let Z = "dismissedCommunityFeaturesUpsell",
           })
         })]
       }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-        className: Chunk353343.divider
+        className: Chunk443874.divider
       }), (() => {
         var n;
         if (null != module) return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
           children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-            className: Chunk353343.formTitle,
+            className: Chunk443874.formTitle,
             children: Chunk388032.intl.string(Chunk388032.t["RSfm+v"])
           }), (0, Chunk951288.jsx)(Chunk481060.R94, {
-            className: Chunk353343.description,
+            className: Chunk443874.description,
             type: Chunk481060.geA.DESCRIPTION,
             children: Chunk388032.intl.string(Chunk388032.t["/B6PR0"])
           }), (0, Chunk951288.jsx)(Chunk481060.Kx8, {
@@ -404,17 +404,17 @@ let Z = "dismissedCommunityFeaturesUpsell",
           })]
         })
       })(), (0, Chunk951288.jsx)(Chunk481060.$i$, {
-        className: Chunk353343.divider
+        className: Chunk443874.divider
       }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-        className: Chunk353343.twoColumnFormSection,
+        className: Chunk443874.twoColumnFormSection,
         children: [(0, Chunk951288.jsxs)("div", {
-          className: Chunk353343.descriptionColumn,
+          className: Chunk443874.descriptionColumn,
           children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-            className: Chunk353343.formTitle,
+            className: Chunk443874.formTitle,
             children: Chunk388032.intl.string(Chunk388032.t.c1BmbG)
           }), (0, Chunk951288.jsx)(Chunk481060.R94, {
             type: Chunk481060.geA.DESCRIPTION,
-            className: Chunk353343.__invalid_formDescription,
+            className: Chunk443874.__invalid_formDescription,
             children: Chunk388032.intl.string(Chunk388032.t.aQzVFx)
           })]
         }), (0, Chunk951288.jsx)(Chunk481060.ua7, {
