@@ -274,17 +274,12 @@ function M(e) {
   return (0, r.jsxs)("div", {
     className: v.ctaButtons,
     ref: t,
-    children: [e.showBackButton && (0, r.jsx)(o.zx, {
-      className: v.backButton,
-      innerClassName: v.backButtonInner,
-      look: "blank",
-      grow: false,
-      fullWidth: false,
-      size: "none",
+    children: [e.showBackButton && (0, r.jsx)(a.hU, {
+      size: "sm",
+      "aria-label": O.intl.string(O.t["13/7kZ"]),
       onClick: e.onBack,
-      children: (0, r.jsx)(s.V7D, {
-        className: v.backIcon
-      })
+      icon: s.V7D,
+      variant: "secondary"
     }), (0, r.jsx)(j, A(T({}, e), {
       popoutTargetElementRef: t,
       onGameSheetOpened: e.onGameSheetOpened,
