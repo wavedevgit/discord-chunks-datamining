@@ -28,7 +28,7 @@ function E(e, t) {
     reducedMotion: n
   } = i.useContext(s.Sfi), l = (0, f.$R)(t), a = (0, o.e7)([b.Z], () => (t.isPrivate() || b.Z.can(y.Plq.ADD_REACTIONS, t)) && l, [t, l]), p = (0, c.MZ)(t.getGuildId());
   if (!g.nc.getSetting() || !a) return null;
-  let j = p.filter(e => !O.ZP.isEmojiFilteredOrLocked({
+  let j = p.filter(e => !m.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,
     intention: h.Hz.REACTION
@@ -81,7 +81,7 @@ function E(e, t) {
     id: "add-reaction",
     label: v.intl.string(v.t.lfIHs7),
     action: () => {
-      m.S.dispatchKeyed(y.LPv.TOGGLE_REACTION_POPOUT, e.id, {
+      O.S.dispatchKeyed(y.LPv.TOGGLE_REACTION_POPOUT, e.id, {
         emojiPicker: true
       })
     },
@@ -93,7 +93,7 @@ function E(e, t) {
         label: v.intl.string(v.t["OBCR+v"]),
         icon: s.EO4,
         action: () => {
-          m.S.dispatchKeyed(y.LPv.TOGGLE_REACTION_POPOUT, e.id, {
+          O.S.dispatchKeyed(y.LPv.TOGGLE_REACTION_POPOUT, e.id, {
             emojiPicker: true
           })
         }
@@ -116,7 +116,7 @@ function S(e) {
       id: n.id,
       animated: n.animated && (!i || o),
       size: 18
-    }) : O.ZP.getURL(null != (t = n.optionallyDiverseSequence) ? t : ""),
+    }) : m.ZP.getURL(null != (t = n.optionallyDiverseSequence) ? t : ""),
     alt: ""
   })
 }

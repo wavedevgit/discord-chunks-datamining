@@ -73,7 +73,7 @@ function E(e, t) {
   let C = e.split(" "),
     R = C.length;
   try {
-    (0, o.km)(C, m.RH)
+    (0, o.km)(C, O.RH)
   } catch (e) {
     return null
   }
@@ -96,15 +96,15 @@ function E(e, t) {
           keywordFilter: [...null != (r = null == (n = t.triggerMetadata) ? true : n.keywordFilter) ? r : [], e]
         })
       });
-      await S(i, x), A(i), null != P ? (0, l.showToast)((0, l.createToast)(O.intl.string(O.t.wH6L0t), l.ToastType.FAILURE)) : (0, l.showToast)((0, l.createToast)(O.intl.string(O.t["0rdYm5"]), l.ToastType.SUCCESS))
+      await S(i, x), A(i), null != P ? (0, l.showToast)((0, l.createToast)(m.intl.string(m.t.wH6L0t), l.ToastType.FAILURE)) : (0, l.showToast)((0, l.createToast)(m.intl.string(m.t["0rdYm5"]), l.ToastType.SUCCESS))
     }, G = (0, r.jsx)(l.sNh, {
       id: "automod-rules-loading",
-      label: O.intl.string(O.t.ZTNur6)
+      label: m.intl.string(m.t.ZTNur6)
     });
   return w || (G = (0, r.jsxs)(r.Fragment, {
     children: [D && (0, r.jsx)(l.sNh, {
       id: "add-first-rule",
-      label: O.intl.string(O.t.f72Zqa),
+      label: m.intl.string(m.t.f72Zqa),
       action: L,
       disabled: E
     }), x.map(e => {
@@ -136,14 +136,14 @@ function E(e, t) {
     }), M && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.Clw, {}), (0, r.jsx)(l.sNh, {
         id: "add-another-rule",
-        label: O.intl.string(O.t["0K5jDA"]),
+        label: m.intl.string(m.t["0K5jDA"]),
         action: L,
         disabled: E
       })]
     })]
   })), (0, r.jsx)(l.sNh, {
     id: "guild-automod-add-selection",
-    label: O.intl.formatToPlainString(O.t.Kkjv1t, {
+    label: m.intl.formatToPlainString(m.t.Kkjv1t, {
       keywordCount: R
     }),
     onFocus: () => {

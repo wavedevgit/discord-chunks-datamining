@@ -1,0 +1,75 @@
+/** Chunk was on web.js **/
+/** chunk id: 714424, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => c
+}), require("./388685.js");
+var Chunk732870 = require("./732870.js"),
+  Chunk429091 = require("./429091.js"),
+  Chunk906411 = require("./906411.js");
+
+function o(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function s(e, t) {
+  let n = {};
+  for (let i of t) n[i.id] = {
+    [r.O]: "RawGuildEmoji",
+    guildId: e,
+    id: i.id,
+    animated: i.animated,
+    name: i.name,
+    require_colons: i.require_colons,
+    available: i.available,
+    roles: i.roles,
+    managed: i.managed,
+    version: i.version,
+    type: a.B.GUILD
+  };
+  return n
+}
+class l extends Chunk429091.d {
+  getGuildEmojis(e) {
+    return this.getNullablePartition(e)
+  }
+}
+o(l, "displayName", "RawGuildEmojiStore");
+let c = new l({
+  LOGOUT: (e, t) => t.reset(),
+  BACKGROUND_SYNC: (e, t) => t.reset(),
+  CONNECTION_OPEN: (e, t) => {
+    t.reset(t => {
+      for (let n of e.guilds) null != n.emojis.items && (t[n.id] = s(n.id, n.emojis.items))
+    })
+  },
+  OVERLAY_INITIALIZE: (e, t) => {
+    t.reset(t => {
+      Object.entries(e.emojis).forEach(e => {
+        let [n, r] = e;
+        t[n] = s(n, r)
+      })
+    })
+  },
+  CACHED_EMOJIS_LOADED: (e, t) => {
+    for (let [n, r] of e.emojis) t.setPartition(n, s(n, r))
+  },
+  GUILD_CREATE: (e, t) => {
+    var n;
+    t.setPartition(e.guild.id, s(e.guild.id, null != (n = e.guild.emojis.items) ? n : []))
+  },
+  GUILD_UPDATE: (e, t) => {
+    t.setPartition(e.guild.id, s(e.guild.id, e.guild.emojis))
+  },
+  GUILD_EMOJIS_UPDATE: (e, t) => {
+    t.setPartition(e.guildId, s(e.guildId, e.emojis))
+  },
+  GUILD_DELETE: (e, t) => {
+    t.removePartition(e.guild.id)
+  }
+})

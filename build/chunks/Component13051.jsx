@@ -148,7 +148,7 @@ function P(e) {
     $ = r.useMemo(() => {
       let e = f.ZP.getGuildEmoji(n.id),
         t = Y.filter(e => null != e.tags && e.tags.integration_id === l.id).map(e => e.id);
-      return l.enable_emoticons ? e.sort((e, t) => e.name.localeCompare(t.name)).filter(e => null != l.role_id && (null == e ? true : e.roles.some(e => t.includes(e)))) : []
+      return l.enable_emoticons ? e.filter(e => null != l.role_id && (null == e ? true : e.roles.some(e => t.includes(e)))).sort((e, t) => e.name.localeCompare(t.name)) : []
     }, [n.id, Y, l.enable_emoticons, l.id, l.role_id]);
   if (r.useEffect(() => {
       (null == o ? true : o.id) === l.id && (null == o ? true : o.enabled) === true && D(false)

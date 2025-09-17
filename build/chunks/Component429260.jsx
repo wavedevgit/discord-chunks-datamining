@@ -27,7 +27,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk764295 = require("./764295.js");
 
 function E(e) {
-  let t = (0, i.e7)([m.Z], () => m.Z.getGuildId()),
+  let t = (0, i.e7)([O.Z], () => O.Z.getGuildId()),
     n = (0, p.Q_)(t);
   return (0, y.a4)(e) ? (0, r.jsx)(a.sNh, {
     id: "report",
@@ -78,7 +78,7 @@ function P(e) {
 
 function _(e) {
   let t = (0, i.e7)([c.ZP], () => c.ZP.get("iar_testing")),
-    n = (0, i.e7)([O.default], () => O.default.getCurrentUser());
+    n = (0, i.e7)([m.default], () => m.default.getCurrentUser());
   return (0, y.a4)(e) && null != n && n.isStaff() && t ? (0, r.jsx)(a.sNh, {
     id: "staff-test-message-report",
     label: "[STAFF] Test Message Report",

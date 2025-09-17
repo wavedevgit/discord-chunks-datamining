@@ -45,14 +45,14 @@ function S(e) {
 }
 
 function P(e, t, n) {
-  (0, m.JG)(n.shiftKey ? "".concat(t.channel_id, "-").concat(t.id) : t.id)
+  (0, O.JG)(n.shiftKey ? "".concat(t.channel_id, "-").concat(t.id) : t.id)
 }
 
 function _(e, t) {
   b.default.track(E.rMx.MESSAGE_LINK_COPIED, {
     message_id: t.id,
     channel: t.channel_id
-  }), (0, m.JG)((0, p.wR)(e.guild_id, e.id, t.id))
+  }), (0, O.JG)((0, p.wR)(e.guild_id, e.id, t.id))
 }
 
 function Z(e, t, n) {
@@ -88,7 +88,7 @@ function x(e, t, n) {
     message: t,
     shouldMention: !n.shiftKey && !i,
     showMentionToggle: !r && !i
-  }), O.S.dispatch(E.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+  }), m.S.dispatch(E.CkL.FOCUS_CHANNEL_TEXT_AREA, {
     channelId: e.id
   })
 }

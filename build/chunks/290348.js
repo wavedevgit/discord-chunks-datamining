@@ -311,21 +311,23 @@ async function ei(e) {
     let e = z(p.ZP.getGuildEmoji(t), i),
       n = (0, o.difference)([...m], [...e]),
       r = (0, o.difference)([...e], [...m]),
-      a = n.map(e => p.ZP.getCustomEmojiById(e)).map(e => {
-        if (null != e) return (0, d.dv)({
+      a = n.map(e => {
+        let n = p.ZP.getCustomEmojiById(e);
+        if (null != n) return (0, d.dv)({
           guildId: t,
-          emojiId: e.id,
-          roles: [...e.roles, i]
+          emojiId: n.id,
+          roles: [...n.roles, i]
         })
       }),
-      s = r.map(e => p.ZP.getCustomEmojiById(e)).map(e => {
-        if (null == e) return;
-        let n = e.roles.filter(e => e !== i);
-        return n.length > 0 ? (0, d.dv)({
+      s = r.map(e => {
+        let n = p.ZP.getCustomEmojiById(e);
+        if (null == n) return;
+        let r = n.roles.filter(e => e !== i);
+        return r.length > 0 ? (0, d.dv)({
           guildId: t,
-          emojiId: e.id,
-          roles: n
-        }) : (0, d.RE)(t, e.id)
+          emojiId: n.id,
+          roles: r
+        }) : (0, d.RE)(t, n.id)
       });
     await Promise.all([...a, ...s])
   }

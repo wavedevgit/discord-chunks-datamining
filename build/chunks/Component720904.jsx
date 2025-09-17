@@ -56,43 +56,42 @@ function j(e, t) {
 let E = ["slight_smile", "frowning", "smile", "stuck_out_tongue", "wink"];
 
 function S(e) {
-  var t;
   let {
-    emoji: n,
-    isFocused: i
+    emoji: t,
+    isFocused: n
   } = e, {
-    animated: a,
-    src: s,
-    surrogates: c
-  } = n;
-  return null == s && null != n.id ? s = b.ZP.getEmojiURL({
-    id: n.id,
-    animated: !!a,
+    animated: i,
+    src: a,
+    surrogates: s
+  } = t;
+  return null == a && null != t.id ? a = b.ZP.getEmojiURL({
+    id: t.id,
+    animated: !!i,
     size: 20
-  }) : null == s && (s = p.ZP.getURL(c)), (0, r.jsx)(o.ua7, {
-    text: n.allNamesString,
+  }) : null == a && (a = p.ZP.getURL(s)), (0, r.jsx)(o.ua7, {
+    text: (0, p.nY)(t),
     hideOnClick: true,
     spacing: 16,
-    forceOpen: i,
+    forceOpen: n,
     children: e => (0, r.jsx)("div", j(v({
       "aria-label": y.intl.formatToPlainString(y.t["/iYSo6"], {
-        emojiName: n.name
+        emojiName: t.name
       }),
       className: l()(h.button, {
-        [h.focused]: i
+        [h.focused]: n
       })
     }, e), {
-      children: null == s || "" === s.trim() ? (0, r.jsx)("span", j(v({
+      children: null == a || "" === a.trim() ? (0, r.jsx)("span", j(v({
         className: l()("emoji", "emoji-text", h.icon)
       }, e), {
-        children: c
+        children: s
       })) : (0, r.jsx)("img", {
         className: h.icon,
-        src: s,
+        src: a,
         alt: ""
       })
     }))
-  }, null != (t = n.id) ? t : n.name)
+  })
 }
 
 function P(e, t) {
@@ -101,13 +100,13 @@ function P(e, t) {
     return !(e.useSpriteSheet && E.indexOf(null != (n = e.uniqueName) ? n : "") >= 0) && !p.ZP.isEmojiPremiumLocked({
       emoji: e,
       channel: t,
-      intention: O.Hz.REACTION
+      intention: m.Hz.REACTION
     })
   });
   n.length > 4 && (n.length = 4);
   let i = f.nc.useSetting(),
     l = (0, d.$R)(t);
-  return (0, a.e7)([g.Z], () => i && l && (t.isPrivate() || g.Z.can(m.Plq.ADD_REACTIONS, t)), [t, l, i]) && n.length > 0 ? (0, r.jsx)(o.kSQ, {
+  return (0, a.e7)([g.Z], () => i && l && (t.isPrivate() || g.Z.can(O.Plq.ADD_REACTIONS, t)), [t, l, i]) && n.length > 0 ? (0, r.jsx)(o.kSQ, {
     className: h.wrapper,
     children: n.map((n, i) => {
       var l;
