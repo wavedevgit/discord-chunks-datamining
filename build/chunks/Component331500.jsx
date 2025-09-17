@@ -1,7 +1,7 @@
 /** Chunk was on 85683 **/
 /** chunk id: 331500, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => j
 });
 var r, i, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,7 +17,7 @@ var r, i, Chunk951288 = require("./951288.js"),
   Chunk401561 = require("./401561.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk134977 = require("./134977.js");
-let j = (r = function(e) {
+let C = (r = function(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ let j = (r = function(e) {
   Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
 }), r);
 
-function h(e) {
+function j(e) {
   let {
     guildId: t
   } = e;
@@ -59,28 +59,28 @@ function h(e) {
     return (null == e ? true : e.catalog) != null ? Object.values(e.catalog) : []
   });
   return 0 === n.length ? (0, a.jsx)("div", {
-    className: v.container,
+    className: y.container,
     children: (0, a.jsx)(c.$jN, {
       type: c.RAz.SPINNING_CIRCLE,
-      className: v.spinner
+      className: y.spinner
     })
   }) : (0, a.jsxs)("div", {
-    className: v.container,
+    className: y.container,
     children: [(0, a.jsx)(s.X6q, {
       variant: "heading-md/semibold",
-      children: y.intl.string(f.default.jeYp1t)
+      children: v.intl.string(f.default.jeYp1t)
     }), (0, a.jsx)("div", {
-      className: v.gameContainer,
+      className: y.gameContainer,
       children: n.map((e, n) => (0, a.jsx)(p.Z, {
-        className: v.game,
+        className: y.game,
         game: e,
-        onClick: () => (0, b.Z)({
+        onClick: () => (0, g.Z)({
           guildId: t,
-          stepConfig: j,
+          stepConfig: C,
           initialPortkeyGame: e,
           analyticsLocation: d.Z.PORTKEY_OVERVIEW
         }),
-        imageClassName: v.image
+        imageClassName: y.image
       }, "sidebar-game-".concat(n, "-").concat(e.id)))
     })]
   })

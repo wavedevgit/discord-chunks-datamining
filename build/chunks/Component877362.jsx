@@ -39,8 +39,8 @@ function Z(e) {
     var t;
     return (null == (t = e.tags) ? true : t.premium_subscriber) === null
   })), Z = (0, a.e7)([b.default], () => b.default.getCurrentUser()), w = null == Z ? true : Z.id, O = (0, a.e7)([x.ZP], () => null != w ? x.ZP.getMember(o, w) : true, [w, o]), k = (null == O ? true : O.premiumSince) != null, A = (0, a.e7)([p.Z], () => p.Z.useReducedMotion), {
-    avatarDecorationSrc: U,
-    avatarSrc: R,
+    avatarDecorationSrc: R,
+    avatarSrc: U,
     eventHandlers: L
   } = (0, v.Z)({
     userId: null == Z ? true : Z.id,
@@ -93,8 +93,8 @@ function Z(e) {
         return e
       }({}, L), n = n = {
         user: Z,
-        src: R,
-        avatarDecoration: U,
+        src: U,
+        avatarDecoration: R,
         size: u.EFr.SIZE_40,
         "aria-hidden": true,
         animate: true

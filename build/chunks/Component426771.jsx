@@ -68,8 +68,8 @@ function v(e) {
     }, 0),
     k = y ? Z : w,
     A = !y && O > k ? "+" : true,
-    U = !j && E ? P.image.animatedUrl : P.image.staticUrl,
-    R = null != P.viewCta && "" !== P.viewCta ? P.viewCta : f.intl.string(g.default["27GkOj"]),
+    R = !j && E ? P.image.animatedUrl : P.image.staticUrl,
+    U = null != P.viewCta && "" !== P.viewCta ? P.viewCta : f.intl.string(g.default["27GkOj"]),
     L = null != P.viewCtaTooltip && "" !== P.viewCtaTooltip ? P.viewCtaTooltip : true;
   return (0, r.jsxs)(u.aB, {
     label: P.title,
@@ -80,7 +80,7 @@ function v(e) {
     onMouseLeave: () => T(false),
     children: [(0, r.jsx)("img", {
       alt: "",
-      src: U,
+      src: R,
       className: _.image
     }), (0, r.jsx)(u.Q9, {
       title: P.title,
@@ -102,11 +102,11 @@ function v(e) {
         text: L,
         delay: 100,
         children: (0, r.jsx)(a.zxk, {
-          text: R,
+          text: U,
           fullWidth: true
         })
       }) : (0, r.jsx)(a.zxk, {
-        text: R,
+        text: U,
         fullWidth: true
       })
     })]

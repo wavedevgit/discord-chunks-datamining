@@ -75,7 +75,7 @@ function a(e) {
         text: i.intl.string(c.default.IfMFoK),
         variant: "primary",
         onClick: () => {
-          (0, l.g$)(true), null == a || a(), u.onClose()
+          (0, l.g$)(true, "Portkey"), null == a || a(), u.onClose()
         }
       })]
     }), (0, n.jsx)(o.olH, {

@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 504392, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => R
+  Z: () => U
 }), require("./539854.js"), require("./388685.js"), require("./361932.js"), require("./187205.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./35282.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -35,16 +35,16 @@ var Chunk951288 = require("./951288.js"),
   Chunk989308 = require("./989308.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk823441 = require("./823441.js");
-let U = [Chunk535396.Us.LEVEL, Chunk535396.Us.PERK];
+let R = [Chunk535396.Us.LEVEL, Chunk535396.Us.PERK];
 
-function R(e) {
+function U(e) {
   let {
     guildId: t,
     powerupListingId: i
-  } = e, R = (0, g.A0)(t, "GuildPowerupsOverview");
+  } = e, U = (0, g.A0)(t, "GuildPowerupsOverview");
   o.useEffect(() => {
-    R && ((0, m.EC)(t), (0, m.po)(t))
-  }, [t, R]), o.useEffect(() => {
+    U && ((0, m.EC)(t), (0, m.po)(t))
+  }, [t, U]), o.useEffect(() => {
     (0, _.Sn)(t), (0, _.BN)(t)
   }, [t]), (0, S.Wj)(t);
   let L = (0, a.e7)([v.Z], () => v.Z.getStateForGuild(t)),
@@ -57,15 +57,15 @@ function R(e) {
     B = null == i && null != V,
     W = [];
   D && B && W.push(s.z.VANITY_URL_POWERUP_ROLLBACK_MODAL);
-  let [F, K] = (0, u.US)(W), z = o.useMemo(() => U.reduce((e, t) => {
+  let [F, K] = (0, u.US)(W), z = o.useMemo(() => R.reduce((e, t) => {
     let n = null == L ? true : L.powerupCatalog[t];
     if (null == n) return e;
-    let r = (0, C.S)(t, n, R);
+    let r = (0, C.S)(t, n, U);
     return e.push({
       type: t,
       listings: r
     }), e
-  }, []), [null == L ? true : L.powerupCatalog, R]), X = z.flatMap(e => e.listings).filter(e => "multiPerk" === e.type).map(e => e.group), H = (0, N.f)(X, t);
+  }, []), [null == L ? true : L.powerupCatalog, U]), H = z.flatMap(e => e.listings).filter(e => "multiPerk" === e.type).map(e => e.group), X = (0, N.f)(H, t);
   return (o.useEffect(() => {
     if (null != i && !G.current)
       for (let e of z)
@@ -76,7 +76,7 @@ function R(e) {
           }
           if ("multiPerk" === n.type && (n.group === i || n.powerups.some(e => e.skuId === i))) {
             G.current = true;
-            let e = H[n.group];
+            let e = X[n.group];
             if (null == e) return;
             e.openModal(n.powerups, {
               onModalClose: () => {
@@ -89,7 +89,7 @@ function R(e) {
             return
           }
         }
-  }, [t, i, z, H]), o.useEffect(() => {
+  }, [t, i, z, X]), o.useEffect(() => {
     null != F && null != V && (0, c.ZDy)(async () => {
       let {
         default: e
