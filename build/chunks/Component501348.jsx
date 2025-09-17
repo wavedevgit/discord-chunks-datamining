@@ -378,7 +378,7 @@ class ea extends Chunk647438.Component {
         name: Chunk388032.intl.string(Chunk388032.t["+o/sOj"]),
         value: Chunk524437.hg.H23
       }],
-      onChange: e => L.hg.updateSetting(e.value),
+      onChange: e => L.hg.updateSetting(e),
       value: module
     })
   }

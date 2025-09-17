@@ -743,12 +743,7 @@ class eR extends Chunk647438.PureComponent {
       className: ec.marginBottom40,
       children: [(0, i.jsx)(m.FXm, {
         label: ea.intl.string(ea.t.jhJEJi),
-        onChange: e => {
-          let {
-            value: t
-          } = e;
-          return this.handleVideoQualityModeChange(t)
-        },
+        onChange: e => this.handleVideoQualityModeChange(e),
         options: l,
         value: null != (t = e.videoQualityMode) ? t : en.Ucd.AUTO,
         disabled: !n
