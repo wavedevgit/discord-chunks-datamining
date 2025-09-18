@@ -19,29 +19,39 @@ function p(e) {
     icon: n,
     isSelected: l = false,
     setStatus: p,
-    clearStatus: h
-  } = e, [f, m] = i.useState(false), g = f && l, b = g ? c.intl.string(c.t.S90Fub) : t, y = i.useCallback(() => {
-    g ? null == h || h() : p()
-  }, [g, h, p]);
+    clearStatus: h,
+    isFavorited: f,
+    onFavoriteClick: m
+  } = e, [g, b] = i.useState(false), y = g && l, _ = y ? c.intl.string(c.t.S90Fub) : t, C = null != m, v = i.useCallback(() => {
+    y ? null == h || h() : p()
+  }, [y, h, p]), x = i.useCallback(e => {
+    e.stopPropagation(), null == m || m()
+  }, [m]);
   return (0, r.jsxs)(s.P3F, {
-    onClick: y,
+    onClick: v,
     onMouseEnter: () => {
-      m(true)
+      b(true)
     },
     onMouseLeave: () => {
-      m(false)
+      b(false)
     },
     className: a()(d.item, d.labelContainer, u.container, {
       [u.isSelected]: l
     }),
     children: [n, (0, r.jsx)(s.Text, {
-      color: g ? "text-danger" : f || l ? "text-primary" : "text-secondary",
+      color: y ? "text-danger" : g || l ? "text-primary" : "text-secondary",
       variant: "text-md/normal",
       className: u.itemText,
-      children: b
-    }), l && (0, r.jsx)(s.k$p, {
+      children: _
+    }), l ? (0, r.jsx)(s.k$p, {
       className: u.closeIcon,
-      color: g ? o.Z.colors.TEXT_DANGER : true
+      color: y ? o.Z.colors.TEXT_DANGER : true
+    }) : g && C && (0, r.jsx)(s.P3F, {
+      onClick: x,
+      children: (0, r.jsx)(s.r7p, {
+        className: u.closeIcon,
+        color: f ? o.Z.colors.ICON_FEEDBACK_WARNING : true
+      })
     })]
   })
 }

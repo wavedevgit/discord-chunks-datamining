@@ -1,7 +1,7 @@
 /** Chunk was on 62987 **/
 /** chunk id: 302270, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => k
+  Z: () => L
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -38,7 +38,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk270479 = require("./270479.js");
 
-function L(e) {
+function k(e) {
   let {
     channel: t,
     toggleRequestToSpeakSidebar: n,
@@ -91,13 +91,13 @@ function L(e) {
   })
 }
 
-function k(e) {
+function L(e) {
   var t;
   let {
     channel: n,
     toggleRequestToSpeakSidebar: l,
     showRequestToSpeakSidebar: d
-  } = e, p = (0, g.ZP)(n), h = (0, o.e7)([T.Z], () => T.Z.getStageInstanceByChannel(n.id)), f = (0, S.Io)(n.id), m = (0, S.Rk)(n.id, I.pV.AUDIENCE), b = (0, o.e7)([O.Z], () => O.Z.getGuild(n.guild_id), [n.guild_id]), v = null != (t = null == b ? true : b.maxStageVideoChannelUsers) ? t : 0, x = null != b && b.features.has(w.oNc.COMMUNITY) ? v < w.TU7 : (null == b ? true : b.premiumTier) !== w.Eu4.TIER_3 && v <= w.eez, P = (0, A.Z)(n), N = (0, o.e7)([j.Z], () => j.Z.can(Z.yP, n)), k = () => {
+  } = e, p = (0, g.ZP)(n), h = (0, o.e7)([T.Z], () => T.Z.getStageInstanceByChannel(n.id)), f = (0, S.Io)(n.id), m = (0, S.Rk)(n.id, I.pV.AUDIENCE), b = (0, o.e7)([O.Z], () => O.Z.getGuild(n.guild_id), [n.guild_id]), v = null != (t = null == b ? true : b.maxStageVideoChannelUsers) ? t : 0, x = null != b && b.features.has(w.oNc.COMMUNITY) ? v < w.TU7 : (null == b ? true : b.premiumTier) !== w.Eu4.TIER_3 && v <= w.eez, P = (0, A.Z)(n), N = (0, o.e7)([j.Z], () => j.Z.can(Z.yP, n)), L = () => {
     u.Z.updateStageVideoLimitBoostUpsellDismissed(n.id, true), E.default.track(w.rMx.BOOSTING_UPSELL_CLICKED, {
       guild_id: n.guild_id,
       type: R.cd.VIDEO_STAGE_LIMIT,
@@ -131,7 +131,7 @@ function k(e) {
     children: e => {
       var t;
       return (0, r.jsxs)(_.ZP, {
-        toolbar: (0, r.jsx)(L, {
+        toolbar: (0, r.jsx)(k, {
           toggleRequestToSpeakSidebar: l,
           showRequestToSpeakSidebar: d,
           channel: n
@@ -196,7 +196,7 @@ function k(e) {
         className: D.buttons,
         children: x ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(c.zxk, {
-            onClick: k,
+            onClick: L,
             size: "sm",
             variant: "secondary",
             text: M.intl.string(M.t.L5eIZ2)
@@ -220,7 +220,7 @@ function k(e) {
           })]
         }) : (0, r.jsx)(c.zxk, {
           variant: "primary",
-          onClick: k,
+          onClick: L,
           size: "sm",
           text: M.intl.string(M.t.WAI6xs)
         })

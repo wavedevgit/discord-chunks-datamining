@@ -57,23 +57,23 @@ function w(e) {
   let {
     user: n,
     channel: w
-  } = e, R = __OVERLAY__ || !(0, d.Z)(n.id), M = (0, g.ZP)(n.id), D = (0, s.ZP)(), L = i.useRef(Date.now()), {
-    analyticsLocations: k
+  } = e, R = __OVERLAY__ || !(0, d.Z)(n.id), M = (0, g.ZP)(n.id), D = (0, s.ZP)(), k = i.useRef(Date.now()), {
+    analyticsLocations: L
   } = (0, u.ZP)(c.Z.USER_PROFILE_SIDEBAR), U = (0, f.ZB)({
     layout: "SIDEBAR",
     userId: n.id,
     channelId: w.id
   }), B = i.useRef(null), G = (0, o.Z)(B), H = e => {
     (0, b.openUserProfileModal)(A({
-      sourceAnalyticsLocations: k,
+      sourceAnalyticsLocations: L,
       hideRestrictedProfile: true
     }, U, e))
   };
   return (0, r.jsx)(u.Gt, {
-    value: k,
+    value: L,
     children: (0, r.jsx)(f.Mt, {
       value: U,
-      openedAt: L.current,
+      openedAt: k.current,
       fetchStartedAt: null == M ? true : M.fetchStartedAt,
       fetchEndedAt: null == M ? true : M.fetchEndedAt,
       isLoaded: null == M ? true : M.isLoaded,
@@ -139,7 +139,7 @@ function w(e) {
             onClick: () => {
               H(), (0, m.pQ)(A({
                 action: "PRESS_VIEW_PROFILE",
-                analyticsLocations: k
+                analyticsLocations: L
               }, U))
             },
             className: T.footerButton,

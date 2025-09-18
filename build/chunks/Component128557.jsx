@@ -110,11 +110,11 @@ function R(e) {
     canInvite: R,
     canManageGuild: M,
     canMessage: D
-  } = (0, f.TE)(t, l), L = (0, s.e7)([C.default], () => {
+  } = (0, f.TE)(t, l), k = (0, s.e7)([C.default], () => {
     var e, t;
     return (null == (e = C.default.getCurrentUser()) ? true : e.desktop) === true || (null == (t = C.default.getCurrentUser()) ? true : t.mobile) === true
   }), {
-    guildPopulated: k,
+    guildPopulated: L,
     guildMessaged: U,
     guildPersonalized: B
   } = (0, f.h_)(l), {
@@ -194,7 +194,7 @@ function R(e) {
         }))
       }, [e])
     }
-  }(l), W = !(L || k || U || B), {
+  }(l), W = !(k || L || U || B), {
     titleAnimatedStyle: q,
     opacities: Y
   } = function(e) {
@@ -252,7 +252,7 @@ function R(e) {
     children: (0, r.jsx)(w, {
       iconUrl: u.YvY,
       header: Z.intl.string(Z.t.q9n0TU),
-      completed: k,
+      completed: L,
       onClick: G
     })
   }, "invite")), M && J.push((0, r.jsx)(o.Z.div, {
@@ -285,7 +285,7 @@ function R(e) {
     children: (0, r.jsx)(w, {
       iconUrl: u.yIb,
       header: Z.intl.string(Z.t.pGVNIy),
-      completed: L,
+      completed: k,
       onClick: V
     })
   }, "download")), J.push((0, r.jsx)(o.Z.div, {

@@ -39,7 +39,7 @@ function S(e) {
     totalNumberOfParticipants: N
   } = e, A = (0, c.bp)() === j.IlC.POPOUT, w = (0, o.e7)([y.Z], () => y.Z.getGuild(P.guild_id), [P.guild_id]), {
     dismissedActivityEntryPointTileChannel: R
-  } = (0, x.d)(), M = (0, o.e7)([h.Z], () => h.Z.getUserParticipantCount(P.id), [P]), D = (0, b.bt)(P.id, t), L = i.useCallback(() => {
+  } = (0, x.d)(), M = (0, o.e7)([h.Z], () => h.Z.getUserParticipantCount(P.id), [P]), D = (0, b.bt)(P.id, t), k = i.useCallback(() => {
     (0, a.j)(() => {
       x.d.setState({
         dismissedActivityEntryPointTileChannel: P.id
@@ -53,7 +53,7 @@ function S(e) {
       })
     })
   }, [P.id, R]);
-  let k = (0, o.e7)([_.Z], () => P.isPrivate() || (0, m.b)(_.Z, w, P), [w, P]),
+  let L = (0, o.e7)([_.Z], () => P.isPrivate() || (0, m.b)(_.Z, w, P), [w, P]),
     U = (null == w ? true : w.afkChannelId) === P.id,
     B = P.userLimit <= 0 || P.userLimit > 1,
     G = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(P.id).length <= 0),
@@ -76,18 +76,18 @@ function S(e) {
     name: l.ImpressionNames.CHANNEL_CALL_VIDEO_GRID_VIEW,
     properties: {
       total_participants: N,
-      can_invite: k,
+      can_invite: L,
       is_afk_channel: U,
       channel_user_limit: P.userLimit
     }
   }, {
     trackOnInitialLoad: true
-  }, []), null != w && !U && (!(M >= 2) || !G || F || H || V ? B && 1 === M && k && (G && !F ? z.push(e => (0, r.jsx)(C.h, {
+  }, []), null != w && !U && (!(M >= 2) || !G || F || H || V ? B && 1 === M && L && (G && !F ? z.push(e => (0, r.jsx)(C.h, {
     channel: P,
     guild: w,
     width: e,
     inPopout: A,
-    handleClose: L,
+    handleClose: k,
     userParticipantCount: M
   })) : z.push(e => (0, r.jsx)(O.Z, {
     width: e,
@@ -99,7 +99,7 @@ function S(e) {
     guild: w,
     width: e,
     inPopout: A,
-    handleClose: L,
+    handleClose: k,
     userParticipantCount: M
   })));
   let W = i.useCallback(e => {

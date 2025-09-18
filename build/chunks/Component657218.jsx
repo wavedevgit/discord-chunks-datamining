@@ -191,7 +191,7 @@ function Q(e) {
       textAreaState: n,
       setTextAreaState: r
     }
-  }(t, f), C = (0, k.vH)(t), {
+  }(t, f), C = (0, L.vH)(t), {
     isGeneratingAI: v,
     enableAIFeatures: x,
     getThreadNameInputAccessory: j
@@ -237,7 +237,7 @@ function Q(e) {
         let g = null != (c = r.name) ? c : "",
           b = (s || null == n) && 0 === g.length,
           y = "" === e && (null == i || 0 === i.length) && 0 === l.length;
-        if (u(b ? (0, L.V_)() : null), p(y ? (0, L.T4)() : null), b || y) return f(false), {
+        if (u(b ? (0, k.V_)() : null), p(y ? (0, k.T4)() : null), b || y) return f(false), {
           shouldClear: false,
           shouldRefocus: true
         };
@@ -257,7 +257,7 @@ function Q(e) {
         try {
           await m(e, i, l)
         } catch (e) {
-          return (null == (d = e.body) ? true : d.code) === F.evJ.AUTOMOD_TITLE_BLOCKED && u((0, L.Gx)(e.body, t)), f(false), {
+          return (null == (d = e.body) ? true : d.code) === F.evJ.AUTOMOD_TITLE_BLOCKED && u((0, k.Gx)(e.body, t)), f(false), {
             shouldClear: false,
             shouldRefocus: true
           }
@@ -277,7 +277,7 @@ function Q(e) {
     textAreaState: b,
     location: l,
     enableAIFeatures: x
-  }), A = (0, k.oD)(p, C) ? c.qtY : c.or_;
+  }), A = (0, L.oD)(p, C) ? c.qtY : c.or_;
   return (0, r.jsx)("div", {
     className: z.chat,
     onMouseDown: d,
@@ -348,7 +348,7 @@ function J(e) {
     threadSettings: n,
     updateThreadSettings: i,
     privateThreadMode: l
-  } = e, a = (0, k.oD)(n, l), o = (0, r.jsx)("div", {
+  } = e, a = (0, L.oD)(n, l), o = (0, r.jsx)("div", {
     className: z.privateThreadFormTitle,
     children: (0, r.jsx)("span", {
       className: z.privateThreadFormTitleText,
@@ -357,7 +357,7 @@ function J(e) {
   }), u = (0, r.jsx)(s.$q, {
     className: z.checkbox,
     type: s.M0.INVERTED,
-    disabled: l === k.Jw.PrivateOnly,
+    disabled: l === L.Jw.PrivateOnly,
     value: a,
     onChange: (e, t) => i({
       isPrivate: t
@@ -368,7 +368,7 @@ function J(e) {
       children: V.intl.string(V.t.TRPp3t)
     })
   });
-  return t || l === k.Jw.Disabled ? null : (0, r.jsxs)(c.hjN, {
+  return t || l === L.Jw.Disabled ? null : (0, r.jsxs)(c.hjN, {
     title: o,
     className: z.formSection,
     children: [u, a ? (0, r.jsx)(c.Text, {
@@ -392,9 +392,9 @@ function $(e) {
     isGeneratingAI: u,
     enableAIFeatures: p,
     getThreadNameInputAccessory: h
-  } = e, f = null != (t = l.name) ? t : "", m = (0, L.Op)(o, {
+  } = e, f = null != (t = l.name) ? t : "", m = (0, k.Op)(o, {
     content: f
-  }), g = (0, k.Od)(n, i), b = null != i && !p, y = (0, x.Dt)(), _ = p ? V.intl.string(V.t["Nb2/RE"]) : "" !== g ? g : V.intl.string(V.t["Nb2/RE"]);
+  }), g = (0, L.Od)(n, i), b = null != i && !p, y = (0, x.Dt)(), _ = p ? V.intl.string(V.t["Nb2/RE"]) : "" !== g ? g : V.intl.string(V.t["Nb2/RE"]);
   return (0, r.jsx)(c.oil, {
     label: V.intl.string(b ? V.t.JPvIiI : V.t.j3XWjI),
     trailing: h(s),
@@ -446,7 +446,7 @@ function ee(e) {
     handler: g
   });
   let _ = (0, o.e7)([A.Z], () => A.Z.can(F.Plq.ATTACH_FILES, t)),
-    x = (0, L.Op)(p, {
+    x = (0, k.Op)(p, {
       content: n.textValue
     });
   return (0, r.jsxs)(r.Fragment, {

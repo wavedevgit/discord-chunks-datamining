@@ -41,8 +41,8 @@ let C = (0, Chunk112724.Z)(e => {
     [u.pV.SPEAKER]: A,
     [u.pV.AUDIENCE]: N,
     [u.pV.SELECTED]: 1
-  }, R = (0, d.Dx)(a.id), [M, D] = (0, d.aP)(a.id, w, R), L = [Math.max(null != (t = M[0]) ? t : 1, 1), Math.max(null != (n = M[1]) ? n : 1, 1), M[2]], {
-    speakerTileWidth: k,
+  }, R = (0, d.Dx)(a.id), [M, D] = (0, d.aP)(a.id, w, R), k = [Math.max(null != (t = M[0]) ? t : 1, 1), Math.max(null != (n = M[1]) ? n : 1, 1), M[2]], {
+    speakerTileWidth: L,
     speakerTileHeight: U
   } = ((e, t) => {
     let n = Math.floor(e / t - 8),
@@ -51,9 +51,9 @@ let C = (0, Chunk112724.Z)(e => {
       speakerTileWidth: n,
       speakerTileHeight: r
     }
-  })(C, A), B = O ? C - 32 : Math.min(C - 64, 3 * k + 8), G = e => e === M.length - 1 || 0 === S && 1 === e, [H, F] = i.useState(false), [V, z] = i.useState(false);
+  })(C, A), B = O ? C - 32 : Math.min(C - 64, 3 * L + 8), G = e => e === M.length - 1 || 0 === S && 1 === e, [H, F] = i.useState(false), [V, z] = i.useState(false);
   return (0, r.jsx)(h.Z, {
-    sections: L,
+    sections: k,
     renderSection: e => {
       let {
         section: t
@@ -98,7 +98,7 @@ let C = (0, Chunk112724.Z)(e => {
           if (H) return null;
           return (0, r.jsx)(i.Fragment, {
             children: (0, r.jsx)(f.Z, {
-              tileWidth: k,
+              tileWidth: L,
               channel: a,
               participants: l,
               selectedParticipant: I

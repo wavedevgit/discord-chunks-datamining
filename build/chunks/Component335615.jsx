@@ -136,7 +136,7 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       (0, f.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387)), t = G.Z.isInChannel(k.Z.getVoiceChannelId(), u.id);
+        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387)), t = G.Z.isInChannel(L.Z.getVoiceChannelId(), u.id);
         return n => (0, r.jsx)(e, Q(X({}, n), {
           user: u,
           guildId: C,
@@ -223,9 +223,9 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       channel: i,
       user: l,
       index: a
-    } = e, o = (0, c.JA)("".concat(a)), s = (0, p.e7)([U.Z], () => U.Z.isTyping(i.id, l.id)), u = (0, p.e7)([B.default], () => B.default.getCurrentUser()), d = (0, p.e7)([L.Z], () => {
+    } = e, o = (0, c.JA)("".concat(a)), s = (0, p.e7)([U.Z], () => U.Z.isTyping(i.id, l.id)), u = (0, p.e7)([B.default], () => B.default.getCurrentUser()), d = (0, p.e7)([k.Z], () => {
       var e;
-      return null != t ? null == (e = L.Z.getRole(i.guild_id, t)) ? true : e.name : true
+      return null != t ? null == (e = k.Z.getRole(i.guild_id, t)) ? true : e.name : true
     }, [i, t]), h = (0, A.K)({
       user: l,
       guildId: i.guild_id,

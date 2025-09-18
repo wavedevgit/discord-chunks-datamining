@@ -1,7 +1,7 @@
 /** Chunk was on 62987 **/
 /** chunk id: 262317, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  XX: () => k,
+  XX: () => L,
   ZP: () => B,
   ul: () => U
 }), require("./388685.js");
@@ -58,7 +58,7 @@ function D(e) {
   return e
 }
 
-function L(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -71,7 +71,7 @@ function L(e, t) {
   }), e
 }
 
-function k(e) {
+function L(e) {
   let {
     numUsers: t
   } = e;
@@ -115,7 +115,7 @@ let B = (0, Chunk888651.$)(function(e) {
   let {
     collapsed: l,
     user: p,
-    channel: k,
+    channel: L,
     mute: U,
     localMute: B,
     localVideoDisabled: G,
@@ -157,49 +157,49 @@ let B = (0, Chunk888651.$)(function(e) {
   }, eZ = e => {
     e && ev(false)
   }, eT = () => {
-    if (!($ && (0, _.p9)(k, N.Z, P.Z, Z.Z, g.Z)[0])) return;
+    if (!($ && (0, _.p9)(L, N.Z, P.Z, Z.Z, g.Z)[0])) return;
     let e = {
       streamType: w.lo.GUILD,
       ownerId: p.id,
-      channelId: k.id,
-      guildId: k.guild_id
+      channelId: L.id,
+      guildId: L.guild_id
     };
-    I.default.getId() !== p.id && u.default.selectVoiceChannel(k.id), ee ? ((0, C.Z)(e), s.Z.selectParticipant(e.channelId, (0, y.V9)(e))) : (0, d.iV)(e), null == ei || ei(p.id)
+    I.default.getId() !== p.id && u.default.selectVoiceChannel(L.id), ee ? ((0, C.Z)(e), s.Z.selectParticipant(e.channelId, (0, y.V9)(e))) : (0, d.iV)(e), null == ei || ei(p.id)
   }, eN = e => {
     (0, c.jW)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387));
-      return t => (0, r.jsx)(e, L(D({}, t), {
+      return t => (0, r.jsx)(e, k(D({}, t), {
         user: p,
-        guildId: k.guild_id,
-        channel: k,
+        guildId: L.guild_id,
+        channel: L,
         showMediaItems: true,
-        showStageChannelItems: k.isGuildStageVoice(),
+        showStageChannelItems: L.isGuildStageVoice(),
         onInteraction: (0, m.u)("GuildChannelUserContextMenu", f.Z.VOICE_USER, {
           targetUserId: p.id
         })
       }))
     })
-  }, eA = e => ep ? (0, r.jsx)(x.$, L(D({}, e), {
-    channel: k,
+  }, eA = e => ep ? (0, r.jsx)(x.$, k(D({}, e), {
+    channel: L,
     setIsHangStatusInputFocused: eO
-  })) : null != ef ? (0, r.jsx)(O.I, L(D({}, e), {
+  })) : null != ef ? (0, r.jsx)(O.I, k(D({}, e), {
     hangStatusActivity: ef,
-    channel: k,
+    channel: L,
     userId: p.id
   })) : null, ew = () => (0, r.jsx)(j.Z, {
     userId: p.id,
-    channel: k
-  }), eR = () => (0, h.dl)() && (0, h.zd)(k.id) ? null : (0, r.jsx)(v.Z, {
+    channel: L
+  }), eR = () => (0, h.dl)() && (0, h.zd)(L.id) ? null : (0, r.jsx)(v.Z, {
     user: p,
-    channel: k,
+    channel: L,
     onWatch: eT,
     previewIsOpen: ea,
     location: ed
   }), eM = (0, r.jsx)("div", {
     className: M.draggable,
-    "data-dnd-name": k.name,
+    "data-dnd-name": L.name,
     onMouseEnter: ec ? true : () => {
       ($ || eg || eE) && !ey && (null == er || er(p.id))
     },
@@ -208,8 +208,8 @@ let B = (0, Chunk888651.$)(function(e) {
       clickTrap: (null == p ? true : p.id) === (null == (t = T.default.getCurrentUser()) ? true : t.id) && ey,
       targetElementRef: eb,
       user: p,
-      guildId: k.guild_id,
-      channelId: k.id,
+      guildId: L.guild_id,
+      channelId: L.id,
       newAnalyticsLocations: [f.Z.VOICE_USER],
       shouldShow: ey,
       onRequestClose: () => e_(false),
@@ -245,10 +245,10 @@ let B = (0, Chunk888651.$)(function(e) {
             onClick: t ? true : eS,
             onDoubleClick: eT,
             onContextMenu: eN,
-            guildId: k.guild_id,
+            guildId: L.guild_id,
             isSelf: ep,
             application: eh,
-            channelId: k.id,
+            channelId: L.id,
             hangStatusActivity: ef,
             showHangStatus: eg
           };
@@ -290,7 +290,7 @@ let B = (0, Chunk888651.$)(function(e) {
           onRequestClose: eI,
           align: eg && ej && !ep ? "center" : true,
           spacing: eg && ej ? 8 : 0,
-          children: () => (0, r.jsx)(S.ZP, L(D({}, n), {
+          children: () => (0, r.jsx)(S.ZP, k(D({}, n), {
             ref: eb,
             onMouseDown: e.onMouseDown,
             onKeyDown: e.onKeyDown,

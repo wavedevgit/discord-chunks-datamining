@@ -40,7 +40,7 @@ function S(e) {
     onMouseLeave: M
   } = (0, C.Z)(200, 300), D = (0, d.p)({
     surface: s.eR.VOICE_LAUNCHER
-  }), L = (0, l.e7)([u.ZP], () => null != u.ZP.getSelfEmbeddedActivityForLocation(u.ZP.getConnectedActivityLocation())), k = !N, U = i.useCallback(e => {
+  }), k = (0, l.e7)([u.ZP], () => null != u.ZP.getSelfEmbeddedActivityForLocation(u.ZP.getConnectedActivityLocation())), L = !N, U = i.useCallback(e => {
     "focus" !== e.type && R()
   }, [R]), B = (0, c.bp)() === O.IlC.POPOUT, {
     parentAnalyticsLocation: G,
@@ -84,7 +84,7 @@ function S(e) {
             closePopout: n,
             setPopoutRef: i
           } = e;
-          return k ? (0, r.jsx)(f.m, {
+          return L ? (0, r.jsx)(f.m, {
             ref: e => {
               null == i || i(e)
             },
@@ -135,8 +135,8 @@ function S(e) {
                     children: (0, r.jsx)(v.Z, {
                       disabled: N,
                       "aria-label": T,
-                      label: k ? true : T,
-                      isActivityActive: L,
+                      label: L ? true : T,
+                      isActivityActive: k,
                       onClick: () => {
                         F(), (i === a.z.ACTIVITIES_MINI_SHELF_SPARKLES || i === a.z.ACTIVITY_GDM_ROCKET_SPARKLE || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || i === a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && l(j.L.TAKE_ACTION), t === a.z.ACTIVITIES_VOICE_LAUNCHER_BADGE && n(j.L.TAKE_ACTION)
                       },

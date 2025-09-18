@@ -61,7 +61,7 @@ function D(e) {
     user: n,
     currentUser: f,
     channel: w
-  } = e, D = __OVERLAY__, k = (0, g.ZP)(n.id), U = (0, c.ZP)(), B = i.useRef(Date.now()), {
+  } = e, D = __OVERLAY__, L = (0, g.ZP)(n.id), U = (0, c.ZP)(), B = i.useRef(Date.now()), {
     analyticsLocations: G
   } = (0, d.ZP)(u.Z.USER_PROFILE_SIDEBAR), H = (0, h.ZB)({
     layout: "SIDEBAR",
@@ -79,21 +79,21 @@ function D(e) {
     }, H, e))
   }, Y = (0, m.P)({
     location: "UserProfileSidebar"
-  }), K = (null == k ? true : k.widgets) != null && k.widgets.length > 0;
+  }), K = (null == L ? true : L.widgets) != null && L.widgets.length > 0;
   return (0, r.jsx)(d.Gt, {
     value: G,
     children: (0, r.jsx)(h.Mt, {
       value: H,
       openedAt: B.current,
-      fetchStartedAt: null == k ? true : k.fetchStartedAt,
-      fetchEndedAt: null == k ? true : k.fetchEndedAt,
-      isLoaded: null == k ? true : k.isLoaded,
+      fetchStartedAt: null == L ? true : L.fetchStartedAt,
+      fetchEndedAt: null == L ? true : L.fetchEndedAt,
+      isLoaded: null == L ? true : L.isLoaded,
       children: (0, r.jsx)(b.NJ, {
         value: z,
         children: (0, r.jsxs)(x.Z, {
           ref: F,
           user: n,
-          displayProfile: k,
+          displayProfile: L,
           themeType: A.l.SIDEBAR,
           themeOverride: U,
           children: [null != z.interactionType && (0, r.jsx)(l.animated.div, {
@@ -115,7 +115,7 @@ function D(e) {
               className: R.header,
               children: [(0, r.jsx)(C.Z, {
                 user: n,
-                displayProfile: k,
+                displayProfile: L,
                 themeType: A.l.SIDEBAR,
                 animateOnHover: !V,
                 className: R.banner
@@ -124,7 +124,7 @@ function D(e) {
                 className: R.toast
               }), (0, r.jsx)(_.Z, {
                 user: n,
-                displayProfile: k,
+                displayProfile: L,
                 channelId: w.id,
                 themeType: A.l.SIDEBAR,
                 onOpenProfile: D ? true : q
@@ -137,14 +137,14 @@ function D(e) {
             }), (0, r.jsx)(Z.Z, {
               user: n,
               currentUser: f,
-              displayProfile: k,
+              displayProfile: L,
               channel: w,
               isHovering: null == z.interactionType && V,
               onOpenProfile: D ? true : q
             }), Y && K && (0, r.jsx)("div", {
               className: R.widgetBreadcrumb,
               children: (0, r.jsx)(P.Z, {
-                widgets: k.gameWidgets,
+                widgets: L.gameWidgets,
                 onClick: () => {
                   null == q || q({
                     section: N.oh.WIDGETS
@@ -155,12 +155,12 @@ function D(e) {
               user: n,
               channelId: w.id
             })]
-          }), !D && (0, r.jsx)(L, {
+          }), !D && (0, r.jsx)(k, {
             handleOpenProfile: q,
             analyticsLocations: G,
             context: H
-          }), (null == k ? true : k.profileEffect) != null && (0, r.jsx)(p.Z, {
-            profileEffectId: null == k || null == (t = k.profileEffect) ? true : t.id,
+          }), (null == L ? true : L.profileEffect) != null && (0, r.jsx)(p.Z, {
+            profileEffectId: null == L || null == (t = L.profileEffect) ? true : t.id,
             isHovering: V,
             urlQueryString: "dmView"
           })]
@@ -169,7 +169,7 @@ function D(e) {
     })
   })
 }
-let L = e => {
+let k = e => {
   let {
     handleOpenProfile: t,
     analyticsLocations: n,

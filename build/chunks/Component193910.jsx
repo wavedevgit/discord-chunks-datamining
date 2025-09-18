@@ -68,8 +68,8 @@ function A(e) {
     openClips: M
   } = e, {
     analyticsLocations: D,
-    newestAnalyticsLocation: L
-  } = (0, d.ZP)(), k = (0, g.Dt)({
+    newestAnalyticsLocation: k
+  } = (0, d.ZP)(), L = (0, g.Dt)({
     channel: t
   });
 
@@ -142,7 +142,7 @@ function A(e) {
         type: "contextless"
       },
       openInPopout: false,
-      analyticsLocation: L
+      analyticsLocation: k
     }), (0, u.w1)({
       guildId: t.guild_id
     })
@@ -280,7 +280,7 @@ function A(e) {
             action: () => (0, g.$f)({
               channel: t
             }),
-            children: k
+            children: L
           }, "scheduled_message");
         default:
           return null

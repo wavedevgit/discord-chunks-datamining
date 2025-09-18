@@ -88,7 +88,7 @@ let F = Chunk647438.memo(function(e) {
     location: "ChannelAttachButton"
   }, {
     autoTrackExposure: false
-  }), ei = (0, o.e7)([_.qc], () => _.qc.hasHotspot(_.v6.CLIPS_CHANNEL_ATTACH_REMINDER)), el = (0, c.s9z)(e => (0, c.DEQ)(e, L.Qr)), ea = (0, o.e7)([E.Z], () => E.Z.hasLayers()), eo = (0, o.e7)([g.Z], () => g.Z.hasClips()), [es, ec] = i.useState(null), eu = (0, m.Go)() && ($ || eo), ed = V.isPrivate(), ep = (0, o.e7)([I.Z], () => ed || I.Z.can(D.Plq.ATTACH_FILES, V) && I.Z.can(D.Plq.SEND_MESSAGES, V)), eh = (0, d.Z)(ee);
+  }), ei = (0, o.e7)([_.qc], () => _.qc.hasHotspot(_.v6.CLIPS_CHANNEL_ATTACH_REMINDER)), el = (0, c.s9z)(e => (0, c.DEQ)(e, k.Qr)), ea = (0, o.e7)([E.Z], () => E.Z.hasLayers()), eo = (0, o.e7)([g.Z], () => g.Z.hasClips()), [es, ec] = i.useState(null), eu = (0, m.Go)() && ($ || eo), ed = V.isPrivate(), ep = (0, o.e7)([I.Z], () => ed || I.Z.can(D.Plq.ATTACH_FILES, V) && I.Z.can(D.Plq.SEND_MESSAGES, V)), eh = (0, d.Z)(ee);
   (null == eh ? true : eh.newClipIds.length) !== (null == ee ? true : ee.newClipIds.length) && (null != (t = null == ee ? true : ee.newClipIds.length) ? t : 0) > 0 && null == es && ei && en && !el && !er && !ea && ec("recentClips");
   let ef = (0, o.e7)([S.Z], () => S.Z.hasCurrentUserSentMessageSinceAppStart());
 
@@ -101,7 +101,7 @@ let F = Chunk647438.memo(function(e) {
         channelId: V.id
       }))
     }, {
-      modalKey: L.Qr
+      modalKey: k.Qr
     }), ec(null)
   }
   i.useEffect(() => {
@@ -157,12 +157,12 @@ let F = Chunk647438.memo(function(e) {
       positionKey: null != es ? es : "null",
       onRequestOpen: () => {
         ef && (0, y.Q3)(s.z.ACTIVITIES_CHAT_BUTTON_NUX_V2, {
-          dismissAction: k.L.TAKE_ACTION
+          dismissAction: L.L.TAKE_ACTION
         }), ec("attachMenu")
       },
       onRequestClose: () => {
         (0, c.$sL)() || (ef && (0, y.Q3)(s.z.ACTIVITIES_CHAT_MENU_NEW_BADGE, {
-          dismissAction: k.L.TAKE_ACTION
+          dismissAction: L.L.TAKE_ACTION
         }), ec(null))
       },
       renderPopout: e => {

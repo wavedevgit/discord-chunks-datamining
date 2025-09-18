@@ -550,7 +550,7 @@ class tl extends Chunk647438.PureComponent {
         inCall: e,
         voiceChannel: t
       } = this.props;
-      return e ? (0, r.jsx)(L.Z, {
+      return e ? (0, r.jsx)(k.Z, {
         channelId: null != t ? t.id : null
       }) : null
     }), tt(this, "renderStreamQualityLiveIndicatorToolbarItem", () => {
@@ -792,7 +792,7 @@ let ta = (0, Chunk112724.Z)(tl),
     var t;
     let {
       providedChannel: n
-    } = e, [l, a] = i.useState(null), o = (0, p.e7)([eV.Z], () => eV.Z.getChannelId()), s = (0, p.e7)([eV.Z], () => eV.Z.getVoiceChannelId()), c = (0, p.e7)([ek.Z], () => null != n ? n : ek.Z.getChannel(o), [o, n]), m = (0, p.e7)([ek.Z], () => ek.Z.getChannel(s), [s]), g = null == c ? true : c.parent_id, y = (0, p.e7)([ek.Z], () => ek.Z.getChannel(g), [g]), _ = (0, p.e7)([eG.Z], () => eG.Z.getGuild(null == c ? true : c.guild_id), [c]), {
+    } = e, [l, a] = i.useState(null), o = (0, p.e7)([eV.Z], () => eV.Z.getChannelId()), s = (0, p.e7)([eV.Z], () => eV.Z.getVoiceChannelId()), c = (0, p.e7)([eL.Z], () => null != n ? n : eL.Z.getChannel(o), [o, n]), m = (0, p.e7)([eL.Z], () => eL.Z.getChannel(s), [s]), g = null == c ? true : c.parent_id, y = (0, p.e7)([eL.Z], () => eL.Z.getChannel(g), [g]), _ = (0, p.e7)([eG.Z], () => eG.Z.getGuild(null == c ? true : c.guild_id), [c]), {
       needSubscriptionToAccess: C
     } = (0, Q.Z)(null != (t = null == c ? true : c.id) ? t : true), v = (0, p.e7)([R.Z], () => {
       let e = null != o ? R.Z.getParticipants(o) : [],
@@ -809,10 +809,10 @@ let ta = (0, Chunk112724.Z)(tl),
       }))
     }, [M, c, O, j]);
     let D = (0, p.e7)([I.ZP], () => I.ZP.getCurrentEmbeddedActivity()),
-      L = (0, p.e7)([I.ZP], () => I.ZP.getActivityPanelMode()),
-      k = null != D && !(0, Z.Z)(null == c ? true : c.id) && L === e8.Ez.PANEL,
+      k = (0, p.e7)([I.ZP], () => I.ZP.getActivityPanelMode()),
+      L = null != D && !(0, Z.Z)(null == c ? true : c.id) && k === e8.Ez.PANEL,
       U = (0, p.e7)([eq.Z], () => null != c && c.isVocalThread() && !u().isEmpty(eq.Z.getVoiceStatesForChannel(c.id)), [c]),
-      B = null != c && c.isPrivate() && !k && v,
+      B = null != c && c.isPrivate() && !L && v,
       H = (null == c ? true : c.isGuildVocal()) || B || U,
       F = (0, p.e7)([V.Z], () => V.Z.getFrameLayoutMode() === e7.U.FOCUSED),
       {
@@ -828,12 +828,12 @@ let ta = (0, Chunk112724.Z)(tl),
       {
         section: et,
         channelSidebarState: en
-      } = (0, p.cj)([eL.ZP], () => ({
-        section: eL.ZP.getSection(o, null == c ? true : c.isDM()),
-        channelSidebarState: eL.ZP.getSidebarState(o)
+      } = (0, p.cj)([ek.ZP], () => ({
+        section: ek.ZP.getSection(o, null == c ? true : c.isDM()),
+        channelSidebarState: ek.ZP.getSidebarState(o)
       }), [o, c]),
       er = null == _ ? true : _.id,
-      ei = (0, p.e7)([eL.ZP], () => eL.ZP.getGuildSidebarState(er), [er]),
+      ei = (0, p.e7)([ek.ZP], () => ek.ZP.getGuildSidebarState(er), [er]),
       el = (0, p.e7)([ez.Z], () => ez.Z.getGuildId()) === e2.I_8,
       ea = (0, em.D)(),
       eo = (0, eY.ZP)(c),
@@ -895,7 +895,7 @@ let ta = (0, Chunk112724.Z)(tl),
       guildSidebarState: ei,
       guild: _,
       showCall: !C && H,
-      showActivityPanel: k,
+      showActivityPanel: L,
       showFramePanel: F,
       channelIsContentGated: J,
       isMobile: (0, p.e7)([eH.Z], () => (null == c ? true : c.type) === e2.d4z.DM && eH.Z.isMobileOnline(c.getRecipientId()), [c]),
@@ -912,7 +912,7 @@ let ta = (0, Chunk112724.Z)(tl),
       isFavorites: el,
       showHeaderGuildBreadcrumb: el || ea,
       premiumIndicatorEnabled: false,
-      hasTextActivityInPanelMode: k,
+      hasTextActivityInPanelMode: L,
       embeddedActivity: D
     }))
   })

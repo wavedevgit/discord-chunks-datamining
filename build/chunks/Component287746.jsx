@@ -375,7 +375,7 @@ class te extends Chunk647438.PureComponent {
             let {
               channel: e
             } = this.props, t = eP.Z.getLastChatCommandMessage(e.id), n = eP.Z.getLastEditableMessage(e.id);
-            null != t && null != n ? ek.default.compare(n.id, t.id) > 0 ? this.handleEditLastMessage(n) : this.handleRecallLastCommand(t) : null != t ? this.handleRecallLastCommand(t) : null != n && this.handleEditLastMessage(n)
+            null != t && null != n ? eL.default.compare(n.id, t.id) > 0 ? this.handleEditLastMessage(n) : this.handleRecallLastCommand(t) : null != t ? this.handleRecallLastCommand(t) : null != n && this.handleEditLastMessage(n)
           }
           return;
         case eJ.yXg.ESCAPE:
@@ -445,7 +445,7 @@ class te extends Chunk647438.PureComponent {
         if (null == e || e === R.bB.CHAT) {
           let {
             isAuthorized: e
-          } = await (0, L.L)({
+          } = await (0, k.L)({
             applicationId: l.applicationId,
             channel: d,
             commandIntegrationTypes: l.integration_types
@@ -461,7 +461,7 @@ class te extends Chunk647438.PureComponent {
             sectionName: n
           } = null != (y = (0, ez._U)(l)) ? y : {}, r = e === R.bB.APPLICATION_LAUNCHER ? I.Z.lastShownEntrypoint() : P._b.TEXT, {
             isAuthorized: i
-          } = await (0, L.L)({
+          } = await (0, k.L)({
             applicationId: l.applicationId,
             channel: d,
             commandIntegrationTypes: l.integration_types,
@@ -538,7 +538,7 @@ class te extends Chunk647438.PureComponent {
         })), {
           location: e$.dy.CHAT_INPUT
         });
-        if (null != c && (O.announcementSendOptions = c), null != s && (O.flags = (0, eL.pj)(null != (y = O.flags) ? y : 0, eJ.iLy.IS_COMPONENTS_V2)), o) return f.Z.sendMessage(d.id, x, true, O), (0, eh.A6)(d.id), {
+        if (null != c && (O.announcementSendOptions = c), null != s && (O.flags = (0, ek.pj)(null != (y = O.flags) ? y : 0, eJ.iLy.IS_COMPONENTS_V2)), o) return f.Z.sendMessage(d.id, x, true, O), (0, eh.A6)(d.id), {
           shouldClear: false,
           shouldRefocus: true
         };
@@ -667,7 +667,7 @@ class tt extends Chunk647438.PureComponent {
         className: Chunk97009.channelBottomBarArea,
         children: (0, Chunk951288.jsx)(Chunk685722.Z, {})
       }),
-      L = (0, Chunk951288.jsxs)("div", {
+      k = (0, Chunk951288.jsxs)("div", {
         className: Chunk97009.channelBottomBarArea,
         children: [(0, Chunk951288.jsx)(Chunk155409.Z, {
           childRef: this.containerDomRef,
@@ -837,12 +837,12 @@ class tt extends Chunk647438.PureComponent {
       } = this.props;
       if (t) switch (e.which) {
         case eJ.yXg.ARROW_LEFT:
-          n === k.Ie.SIDEBAR && eD.S.dispatch(eJ.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+          n === L.Ie.SIDEBAR && eD.S.dispatch(eJ.CkL.FOCUS_CHANNEL_TEXT_AREA, {
             channelId: eT.Z.getChannelId()
           });
           return;
         case eJ.yXg.ARROW_RIGHT:
-          n === k.Ie.NORMAL && eD.S.dispatch(eJ.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+          n === L.Ie.NORMAL && eD.S.dispatch(eJ.CkL.FOCUS_CHANNEL_TEXT_AREA, {
             channelId: eO.ZP.getCurrentSidebarChannelId(r.id)
           })
       }
@@ -953,9 +953,9 @@ let tn = Chunk647438.memo(function(e) {
     commands: M
   });
   let D = i.useRef(null),
-    L = (0, d.e7)([I.Z], () => I.Z.appDMChannelsWithFailedLoads().has(t.id)),
-    k = (0, d.e7)([eT.Z], () => eT.Z.getVoiceChannelId()),
-    U = (0, d.e7)([ej.Z], () => ej.Z.getChannel(k)),
+    k = (0, d.e7)([I.Z], () => I.Z.appDMChannelsWithFailedLoads().has(t.id)),
+    L = (0, d.e7)([eT.Z], () => eT.Z.getVoiceChannelId()),
+    U = (0, d.e7)([ej.Z], () => ej.Z.getChannel(L)),
     B = (0, d.e7)([eA.default], () => t.type !== eJ.d4z.DM ? null : eA.default.getUser(t.getRecipientId())),
     G = (0, d.e7)([ec.ZP, ex.default], () => ec.ZP.getUserCombo(ex.default.getId(), t.id)),
     H = (0, b.iD)(t),
@@ -988,7 +988,7 @@ let tn = Chunk647438.memo(function(e) {
     isInitialLoading: P,
     showEntryPointAppCommandButton: null != T,
     entryPointCommandButtonRef: D,
-    isFailedAppDMLoad: L,
+    isFailedAppDMLoad: k,
     pendingScheduledMessage: S,
     recipientUser: B,
     voiceChannel: U,

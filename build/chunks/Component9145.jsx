@@ -55,8 +55,8 @@ function V(e) {
     connectedLocation: z,
     renderExternalHeader: W
   } = e, q = (0, N.Z)(), Y = (0, o.Wu)([I.ZP], () => I.ZP.getEmbeddedActivitiesForLocation(z), [z]), K = (0, T.p)(z), X = (0, o.e7)([C.Z], () => C.Z.getChannel(K)), Q = (0, P.gb)(Y), J = (0, P.uF)(Q), $ = i.useCallback(() => {
-    (0, S.tg)(k.Ez.PIP)
-  }, []), ee = i.useRef(null), et = (0, o.e7)([I.ZP], () => I.ZP.getFocusedLayout()), en = et !== k.MI.NO_CHAT, [er, ei] = i.useState(null != (n = null != (t = g.ZP.activityPanelHeight) ? t : V) ? n : null), el = i.useCallback(e => {
+    (0, S.tg)(L.Ez.PIP)
+  }, []), ee = i.useRef(null), et = (0, o.e7)([I.ZP], () => I.ZP.getFocusedLayout()), en = et !== L.MI.NO_CHAT, [er, ei] = i.useState(null != (n = null != (t = g.ZP.activityPanelHeight) ? t : V) ? n : null), el = i.useCallback(e => {
     d.ZP.updatedUnsyncedSettings({
       activityPanelHeight: e
     })
@@ -75,14 +75,14 @@ function V(e) {
     });
     return e.observe(ea.current), () => e.disconnect()
   }, []);
-  let ec = eo.width / Math.max(eo.height, 1) < k.I0,
+  let ec = eo.width / Math.max(eo.height, 1) < L.I0,
     eu = 0,
     ed = 0,
     ep = (0, Z.Z)(null == q ? true : q.id);
   if (!ep) {
     let e = eo.width,
       t = eo.height;
-    ec ? ((t = eo.width / k.I0) > eo.height && (e = (t = eo.height) * k.I0), ed = (eo.height - t) / 2) : ((e = Math.min(eo.height * k.I0)) > eo.width && (t = (e = eo.width) / k.I0), eu = (eo.width - e) / 2)
+    ec ? ((t = eo.width / L.I0) > eo.height && (e = (t = eo.height) * L.I0), ed = (eo.height - t) / 2) : ((e = Math.min(eo.height * L.I0)) > eo.width && (t = (e = eo.width) / L.I0), eu = (eo.width - e) / 2)
   }
   let eh = J.get(null != (l = null == q ? true : q.id) ? l : ""),
     ef = (0, o.e7)([x.Z], () => x.Z.getChannelId()),
@@ -209,7 +209,7 @@ function V(e) {
             className: G.footerButtons,
             children: [(0, r.jsxs)("div", {
               className: G.buttonSection,
-              children: [(0, r.jsx)(L.Z, {
+              children: [(0, r.jsx)(k.Z, {
                 channelId: ef
               }), (0, r.jsx)(b.d, {
                 isTrayButton: true,

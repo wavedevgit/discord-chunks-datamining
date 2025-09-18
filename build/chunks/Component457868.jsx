@@ -75,7 +75,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
     } = e, s = i.useRef(null), u = (0, p.e7)([A.Z], () => A.Z.isTyping(t.id, a)), h = (0, p.e7)([P.ZP], () => P.ZP.getMember(t.guild_id, a)), g = (0, p.e7)([Z.Z], () => {
       var e;
       return (null == h ? true : h.colorRoleId) != null ? null == (e = Z.Z.getRole(t.guild_id, h.colorRoleId)) ? true : e.name : true
-    }, [t.guild_id, h]), b = (0, p.e7)([w.default], () => w.default.getUser(a)), y = (0, p.e7)([w.default], () => w.default.getCurrentUser()), _ = (null == b ? true : b.id) === (null == y ? true : y.id), C = (0, p.e7)([T.Z, N.Z], () => _ ? N.Z.getStatus() : T.Z.getStatus(a, t.guild_id)), x = (0, p.e7)([T.Z], () => T.Z.isMobileOnline(a)), j = (0, p.e7)([T.Z, N.Z], () => _ ? N.Z.getActivities() : T.Z.getActivities(a, t.guild_id)), R = (0, p.e7)([I.Z], () => I.Z.getAnyStreamForUser(a)), M = (0, c.JA)(a), L = (0, p.e7)([E.Z], () => E.Z.canUserViewChannel(t.id, l, a)), U = (null == b ? true : b.id) != null && b.id === o, F = i.useCallback(e => {
+    }, [t.guild_id, h]), b = (0, p.e7)([w.default], () => w.default.getUser(a)), y = (0, p.e7)([w.default], () => w.default.getCurrentUser()), _ = (null == b ? true : b.id) === (null == y ? true : y.id), C = (0, p.e7)([T.Z, N.Z], () => _ ? N.Z.getStatus() : T.Z.getStatus(a, t.guild_id)), x = (0, p.e7)([T.Z], () => T.Z.isMobileOnline(a)), j = (0, p.e7)([T.Z, N.Z], () => _ ? N.Z.getActivities() : T.Z.getActivities(a, t.guild_id)), R = (0, p.e7)([I.Z], () => I.Z.getAnyStreamForUser(a)), M = (0, c.JA)(a), k = (0, p.e7)([E.Z], () => E.Z.canUserViewChannel(t.id, l, a)), U = (null == b ? true : b.id) != null && b.id === o, F = i.useCallback(e => {
       null != b && (0, f.jW)(e, async () => {
         let {
           default: e
@@ -100,7 +100,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
       })
     }, [b, t]), V = i.useCallback(() => {
       if (null == b) return;
-      let e = "@".concat(k.ZP.getUserTag(b, {
+      let e = "@".concat(L.ZP.getUserTag(b, {
           decoration: "never"
         })),
         n = "<@".concat(b.id, ">");
@@ -175,7 +175,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
           premiumSince: null == Q ? null : new Date(Q),
           onClickPremiumGuildIcon: q,
           itemProps: M,
-          lostPermissionTooltipText: L ? true : H.intl.string(H.t["/QcoT0"]),
+          lostPermissionTooltipText: k ? true : H.intl.string(H.t["/QcoT0"]),
           isOwner: U,
           nameplate: Y,
           onClick: e => {
@@ -311,7 +311,7 @@ function Q(e) {
     channel: t
   });
   let v = s().omit(m.containerProps, ["ref"]),
-    x = L.iJ(n);
+    x = k.iJ(n);
   return (0, r.jsx)(y.Gt, {
     value: o,
     children: (0, r.jsx)(c.bG, {

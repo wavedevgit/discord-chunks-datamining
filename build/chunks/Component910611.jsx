@@ -2,7 +2,7 @@
 /** chunk id: 910611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   TS: () => H,
-  ud: () => k,
+  ud: () => L,
   v0: () => B
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -70,7 +70,7 @@ function D(e, t) {
   }), e
 }
 
-function L(e) {
+function k(e) {
   var t;
   let {
     channel: n,
@@ -127,7 +127,7 @@ function L(e) {
   }, a)
 }
 
-function k(e) {
+function L(e) {
   let {
     channel: t,
     channelName: n,
@@ -203,7 +203,7 @@ function k(e) {
     case N.d4z.GUILD_TEXT:
     case N.d4z.GUILD_FORUM:
     case N.d4z.GUILD_MEDIA:
-      return null != t.linkedLobby ? (0, r.jsxs)(L, {
+      return null != t.linkedLobby ? (0, r.jsxs)(k, {
         channel: t,
         children: [G(b, t.type === N.d4z.GUILD_ANNOUNCEMENT ? w.intl.string(w.t.l1dkSE) : w.intl.string(w.t.Pnajj4)), (0, r.jsx)(Z.Z.Title, {
           level: _,

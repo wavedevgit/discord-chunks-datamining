@@ -1,7 +1,7 @@
 /** Chunk was on 62987 **/
 /** chunk id: 450369, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Q: () => k,
+  Q: () => L,
   Z: () => G
 });
 var Chunk951288 = require("./951288.js"),
@@ -57,7 +57,7 @@ function D(e) {
   return e
 }
 
-function L(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -69,7 +69,7 @@ function L(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = 16 / 9,
+let L = 16 / 9,
   U = e => {
     let {
       stageParticipant: t,
@@ -94,13 +94,13 @@ let k = 16 / 9,
       guildId: a,
       channelId: l.id,
       clickTrap: true,
-      children: e => (0, r.jsx)(c.P3F, L(D({
+      children: e => (0, r.jsx)(c.P3F, k(D({
         innerRef: h,
         onContextMenu: e => d(n, e)
       }, e), {
         children: (0, r.jsx)(N.Z, {
           participant: n,
-          aspectRatio: k,
+          aspectRatio: L,
           blocked: m,
           ignored: g,
           channel: l,
@@ -146,7 +146,7 @@ let k = 16 / 9,
     }, [O, l, j, S]);
     return (0, r.jsx)(N.Z, {
       participant: n,
-      aspectRatio: k,
+      aspectRatio: L,
       fit: n.type === R.fO.USER ? x.L.COVER : true,
       blocked: g,
       ignored: y,
@@ -194,7 +194,7 @@ let k = 16 / 9,
               let {
                 default: t
               } = await n.e("22183").then(n.bind(n, 987281));
-              return n => (0, r.jsx)(t, L(D({}, n), {
+              return n => (0, r.jsx)(t, k(D({}, n), {
                 stream: e.stream,
                 appContext: p,
                 exitFullscreen: () => {},
@@ -224,7 +224,7 @@ let k = 16 / 9,
               let {
                 default: e
               } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387));
-              return t => (0, r.jsx)(e, L(D({}, t), {
+              return t => (0, r.jsx)(e, k(D({}, t), {
                 user: v,
                 guildId: _,
                 channel: l,

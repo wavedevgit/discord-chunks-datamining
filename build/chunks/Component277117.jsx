@@ -44,8 +44,8 @@ function w(e) {
     isHovering: M,
     onOpenProfile: D
   } = e, {
-    relationshipType: L,
-    originApplicationId: k
+    relationshipType: k,
+    originApplicationId: L
   } = (0, l.cj)([u.Z], () => ({
     relationshipType: u.Z.getRelationshipType(t.id),
     originApplicationId: u.Z.getOriginApplicationId(t.id)
@@ -77,11 +77,11 @@ function w(e) {
           onOpenProfile: D
         })]
       })
-    }), L === Z.OGo.PENDING_INCOMING && (0, r.jsx)(S.Z.Overlay, {
+    }), k === Z.OGo.PENDING_INCOMING && (0, r.jsx)(S.Z.Overlay, {
       children: (0, r.jsx)(v.Z, {
         user: t,
         channelId: R.id,
-        applicationId: k
+        applicationId: L
       })
     }), U.map(e => (0, r.jsx)(S.Z.Overlay, {
       children: (0, r.jsx)(v.Z, {

@@ -165,7 +165,7 @@ class W extends Chunk647438.PureComponent {
         shouldShowLurkerModeSuccessPopout: false
       }),
       renderPopout: this.renderSuccessPopout,
-      children: e => (0, r.jsx)(L.Z, z(V({}, S), {
+      children: e => (0, r.jsx)(k.Z, z(V({}, S), {
         children: (0, r.jsxs)("div", {
           ref: this.textAreaContainerRef,
           children: [this.renderMemberVerificationSuccessModal(), g ? (0, r.jsx)(c.yRy, {
@@ -275,7 +275,7 @@ class W extends Chunk647438.PureComponent {
       let e = this.props.channel.getGuildId();
       try {
         await p.Z.joinGuild(e, {
-          source: k.vtS.CHAT_INPUT_BLOCKER
+          source: L.vtS.CHAT_INPUT_BLOCKER
         })
       } catch (e) {
         this.setState({
@@ -336,18 +336,18 @@ function q(e) {
   let {
     channel: i,
     children: l
-  } = e, a = i.getGuildId(), s = (0, o.e7)([N.Z], () => N.Z.getGuild(a)), c = (0, o.e7)([A.Z], () => A.Z.getCheck(a)), u = i.type === k.d4z.GUILD_ANNOUNCEMENT && null != s && s.features.has(k.oNc.NEWS), d = (0, o.e7)([Z.Z], () => u ? Z.Z.getFollowerStatsForChannel(i.id) : null), p = (0, o.e7)([O.Z], () => O.Z.isLurking(a)), f = (0, o.e7)([R.default], () => R.default.getCurrentUser()), m = null != (t = null == f ? true : f.isStaff()) && t, g = (0, o.e7)([T.ZP], () => {
+  } = e, a = i.getGuildId(), s = (0, o.e7)([N.Z], () => N.Z.getGuild(a)), c = (0, o.e7)([A.Z], () => A.Z.getCheck(a)), u = i.type === L.d4z.GUILD_ANNOUNCEMENT && null != s && s.features.has(L.oNc.NEWS), d = (0, o.e7)([Z.Z], () => u ? Z.Z.getFollowerStatsForChannel(i.id) : null), p = (0, o.e7)([O.Z], () => O.Z.isLurking(a)), f = (0, o.e7)([R.default], () => R.default.getCurrentUser()), m = null != (t = null == f ? true : f.isStaff()) && t, g = (0, o.e7)([T.ZP], () => {
     var e, t;
     return null != f && null != (t = null == (e = T.ZP.getMember(a, f.id)) ? true : e.isPending) && t
-  }), b = !!(0, _.Dc)(s), v = (0, o.e7)([x.Z], () => x.Z.shouldShowPopout(a)), j = (0, o.e7)([w.Z], () => w.Z.can(k.Plq.SEND_MESSAGES, i)), E = (0, o.e7)([C.Z], () => C.Z.getRequest(a)), {
+  }), b = !!(0, _.Dc)(s), v = (0, o.e7)([x.Z], () => x.Z.shouldShowPopout(a)), j = (0, o.e7)([w.Z], () => w.Z.can(L.Plq.SEND_MESSAGES, i)), E = (0, o.e7)([C.Z], () => C.Z.getRequest(a)), {
     showLinkedLobbyApplicationLoadingIndicator: S,
     requiredLinkedLobbyApplication: I
-  } = (0, D.Z)(i.linkedLobby), L = z(V({}, c), {
+  } = (0, D.Z)(i.linkedLobby), k = z(V({}, c), {
     guild: s,
     isLurking: p,
     isFollowable: u,
     shouldShowLurkerModeSuccessPopout: v,
-    showLurkerModeUpsellPopout: p && null != s && M.Uu(k.Plq.SEND_MESSAGES, i),
+    showLurkerModeUpsellPopout: p && null != s && M.Uu(L.Plq.SEND_MESSAGES, i),
     theme: P.Z.theme,
     canSendMessages: j,
     channelFollowingUsersSeen: null != d ? d.usersSeenEver : null,
@@ -360,7 +360,7 @@ function q(e) {
     useReducedMotion: h.Z.useReducedMotion,
     isStaff: m
   });
-  return (0, r.jsx)(W, z(V({}, L), {
+  return (0, r.jsx)(W, z(V({}, k), {
     channel: i,
     children: l
   }))

@@ -559,7 +559,7 @@ class eg extends(r = Chunk647438.PureComponent) {
     return {
       affinities: e.map(e => {
         var t;
-        let n = k.Z.getUserAffinity(e);
+        let n = L.Z.getUserAffinity(e);
         return null != (t = null == n ? true : n.communicationProbability) ? t : false
       })
     }
@@ -858,7 +858,7 @@ function e_(e) {
   return l.useEffect(() => (r && X.S.subscribe(er.CkL.TOGGLE_DM_CREATE, h), () => {
     X.S.unsubscribe(er.CkL.TOGGLE_DM_CREATE, h)
   }), [r, h, c]), (0, j.ZP)(() => {
-    (0, L._)()
+    (0, k._)()
   }), {
     showModal: p,
     renderPopout: e => (0, i.jsx)(ey, ec(es({}, e), {

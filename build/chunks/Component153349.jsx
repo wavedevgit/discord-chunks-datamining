@@ -115,10 +115,10 @@ let A = Chunk647438.memo(function(e) {
       (0, v.DT)(l, a.user.id, false)
     }
 
-    function L() {
+    function k() {
       (0, v.DT)(l, a.user.id, true)
     }
-    let k = e => {
+    let L = e => {
       (0, d.jW)(e, async () => {
         let {
           default: e
@@ -146,7 +146,7 @@ let A = Chunk647438.memo(function(e) {
           return (0, r.jsxs)(u.P3F, N(T({
             innerRef: m,
             className: Z.participantMemberContainer,
-            onContextMenu: k
+            onContextMenu: L
           }, e), {
             children: [(0, r.jsx)(p.Z, {
               size: u.EFr.SIZE_40,
@@ -187,7 +187,7 @@ let A = Chunk647438.memo(function(e) {
           children: e => (0, r.jsx)("div", N(T({}, e), {
             children: (0, r.jsx)(u.hU, {
               "aria-label": P.intl.string(P.t.moABMz),
-              onClick: L,
+              onClick: k,
               icon: u.Dio,
               variant: "secondary"
             })

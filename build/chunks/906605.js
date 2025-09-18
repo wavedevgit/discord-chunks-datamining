@@ -2,11 +2,12 @@
 /** chunk id: 906605, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Sc: () => E,
-  UP: () => b,
-  XE: () => g,
-  Zx: () => h,
-  _s: () => m
+  Sc: () => b,
+  UP: () => y,
+  XE: () => E,
+  Zx: () => m,
+  _s: () => g,
+  tg: () => O
 }), require("./388685.js");
 var Chunk570140 = require("./570140.js"),
   Chunk339085 = require("./339085.js"),
@@ -16,9 +17,10 @@ var Chunk570140 = require("./570140.js"),
   Chunk938475 = require("./938475.js"),
   Chunk626135 = require("./626135.js"),
   Chunk106301 = require("./106301.js"),
+  Chunk54332 = require("./54332.js"),
   Chunk981631 = require("./981631.js");
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,20 +29,20 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function p() {
+function h() {
   var e;
   let t = Chunk944486.Z.getVoiceChannelId(),
     n = Chunk19780.Z.getMediaSessionId();
@@ -57,57 +59,65 @@ function p() {
   }
 }
 
-function h(e, t) {
+function m(e, t) {
   var n;
   let i = null == (n = a.Z.getChannel(s.Z.getVoiceChannelId())) ? true : n.guild_id;
-  if (null == e || null == i) return void E(t);
+  if (null == e || null == i) return void b(t);
   r.Z.dispatch({
     type: "UPDATE_HANG_STATUS",
     status: e,
     guildId: i,
     saveAsDefault: t
-  }), c.default.track(d.rMx.SET_HANG_STATUS, _({
+  }), c.default.track(f.rMx.SET_HANG_STATUS, p({
     status_type: e
-  }, p()))
+  }, h()))
 }
 
-function m(e, t, n) {
-  if ("" === e || null == t) return void E(n);
+function g(e, t, n) {
+  if ("" === e || null == t) return void b(n);
   r.Z.dispatch({
     type: "UPDATE_HANG_STATUS_CUSTOM",
     emoji: t,
     status: e,
     saveAsDefault: n
-  }), c.default.track(d.rMx.SET_HANG_STATUS, _({
+  }), c.default.track(f.rMx.SET_HANG_STATUS, p({
     status_type: e
-  }, p()))
+  }, h()))
 }
 
-function g(e, t) {
-  if (null == e) return void E(t);
+function E(e, t) {
+  if (null == e) return void b(t);
   r.Z.dispatch({
     type: "UPDATE_HANG_STATUS_GAME_ACTIVITY",
     applicationId: e,
     saveAsDefault: t
-  }), c.default.track(d.rMx.SET_HANG_STATUS, _({
+  }), c.default.track(f.rMx.SET_HANG_STATUS, p({
     status_type: "game_activity"
-  }, p()))
+  }, h()))
 }
 
-function E(e) {
+function b(e) {
   r.Z.dispatch({
     type: "CLEAR_HANG_STATUS",
     saveAsDefault: e
-  }), c.default.track(d.rMx.CLEAR_HANG_STATUS, _({}, p()))
+  }), c.default.track(f.rMx.CLEAR_HANG_STATUS, p({}, h()))
 }
 
-function b() {
-  let e = [Chunk106301.Z.getCustomHangStatus(), ...Chunk106301.Z.getRecentStatuses()].filter(e => {
+function y() {
+  let e = [Chunk106301.Z.getCustomHangStatus(), ...Chunk106301.Z.getRecentStatuses(), ...Chunk106301.Z.getFavoritedStatuses()].filter(e => {
     var t;
-    return null != e && "string" != typeof e && null != e.emoji && (null == (t = e.emoji) ? true : t.id) != null && null == i.ZP.getCustomEmojiById(e.emoji.id)
+    return !(null == e || (0, d.Z)(e)) && null != e.emoji && (null == (t = e.emoji) ? true : t.id) != null && null == i.ZP.getCustomEmojiById(e.emoji.id)
   });
   module.length > 0 && Chunk570140.Z.dispatch({
     type: "DELETE_INVALID_HANG_STATUSES",
     statuses: module
+  })
+}
+
+function O(e, t) {
+  r.Z.dispatch({
+    type: "UPDATE_FAVORITE_HANG_STATUS",
+    status: e,
+    emoji: t
   })
 }

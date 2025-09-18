@@ -64,7 +64,7 @@ function ei(e) {
     channel: t
   } = e, {
     parentAnalyticsLocation: n
-  } = (0, u.ZP)(), i = (0, Q.Z)(t.id), [o, s] = (0, $.Z)(t), c = (0, l.e7)([L.Z], () => L.Z.can(ee.Plq.REQUEST_TO_SPEAK, t));
+  } = (0, u.ZP)(), i = (0, Q.Z)(t.id), [o, s] = (0, $.Z)(t), c = (0, l.e7)([k.Z], () => k.Z.can(ee.Plq.REQUEST_TO_SPEAK, t));
   return i ? null : (0, r.jsx)(N.d, {
     isTrayButton: true,
     isActive: o,
@@ -80,7 +80,7 @@ function ei(e) {
 let el = Chunk647438.memo(function(e) {
   let {
     channel: t
-  } = e, n = (0, l.e7)([k.Z], () => k.Z.getVoiceChannelId() === t.id, [t.id]);
+  } = e, n = (0, l.e7)([L.Z], () => L.Z.getVoiceChannelId() === t.id, [t.id]);
   return (0, r.jsxs)("div", {
     className: er.container,
     children: [(0, r.jsxs)("div", {
@@ -244,7 +244,7 @@ let eu = Chunk647438.memo(function(e) {
   } = (0, O.Z)(), x = (0, E.Z)(t), {
     limit: N,
     reachedLimit: A
-  } = (0, j.Z)(t), M = (0, l.e7)([U.default], () => U.default.getCurrentUser()), L = (0, l.e7)([D.Z], () => (0, y.Z)(D.Z)), B = (0, l.e7)([k.Z], () => k.Z.getVoiceChannelId() === t.id, [t.id]), G = (0, l.e7)([d.Z], () => d.Z.getStreamParticipants(t.id)[0], [t.id]), F = (0, W.PK)(t.id), V = N > 0, z = A && !F || null != G && G.user.id !== (null == M ? true : M.id), q = (0, g.u)("AudioDeviceMenu", n, {
+  } = (0, j.Z)(t), M = (0, l.e7)([U.default], () => U.default.getCurrentUser()), k = (0, l.e7)([D.Z], () => (0, y.Z)(D.Z)), B = (0, l.e7)([L.Z], () => L.Z.getVoiceChannelId() === t.id, [t.id]), G = (0, l.e7)([d.Z], () => d.Z.getStreamParticipants(t.id)[0], [t.id]), F = (0, W.PK)(t.id), V = N > 0, z = A && !F || null != G && G.user.id !== (null == M ? true : M.id), q = (0, g.u)("AudioDeviceMenu", n, {
     entrypoint: et.A5.CARET
   }), Y = i.useRef(null), K = i.useRef(null);
   if (null == M) return null;
@@ -342,7 +342,7 @@ let eu = Chunk647438.memo(function(e) {
         channel: t,
         currentUser: M,
         exitFullScreen: () => null,
-        canGoLive: L,
+        canGoLive: k,
         hasPermission: x,
         disabled: z
       }) : null, (0, r.jsx)(ec, {
@@ -382,7 +382,7 @@ let ep = Chunk647438.memo(function(e) {
   let {
     channel: t,
     isOnStartStageScreen: n
-  } = e, i = (0, Q.Z)(t.id), a = (0, H.B)(t.id), o = (0, l.e7)([L.Z], () => L.Z.can(F.yP, t), [t]), s = (0, J.Z)(t.id), c = (0, l.e7)([d.Z], () => null != t ? d.Z.getSelectedParticipant(t.id) : null), u = !s && null == c;
+  } = e, i = (0, Q.Z)(t.id), a = (0, H.B)(t.id), o = (0, l.e7)([k.Z], () => k.Z.can(F.yP, t), [t]), s = (0, J.Z)(t.id), c = (0, l.e7)([d.Z], () => null != t ? d.Z.getSelectedParticipant(t.id) : null), u = !s && null == c;
   return n ? (0, r.jsx)(ed, {
     channel: t
   }) : i || a ? (0, r.jsxs)("div", {

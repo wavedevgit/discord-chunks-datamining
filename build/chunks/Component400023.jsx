@@ -115,7 +115,7 @@ let q = (0, Chunk938288.animated)(Chunk481060.eTT),
       hideSummaries: A = false,
       jumpBarClassName: R,
       isChatInputBottomAligned: M,
-      typingGradient: L
+      typingGradient: k
     } = e, [Y, K] = i.useState(null != (n = E.Z.isAtBottom(m.id)) && n), X = i.useMemo(() => _ ? (0, D.aJ)({
       compact: true,
       messageGroups: 30,
@@ -141,7 +141,7 @@ let q = (0, Chunk938288.animated)(Chunk481060.eTT),
       handleScrollToBottom: i.useCallback(() => K(true), [K]),
       handleScrollFromBottom: i.useCallback(() => K(false), [K]),
       additionalMessagePadding: 48 * !!M
-    }), J = (0, k.Z)({
+    }), J = (0, L.Z)({
       scrollerRef: Q.ref,
       isEditing: null != S,
       keyboardModeEnabled: P,
@@ -219,8 +219,8 @@ let q = (0, Chunk938288.animated)(Chunk481060.eTT),
         let t = null == (e = O.Z.settings.appearance) ? true : e.clientThemeSettings;
         return (null == t ? true : t.backgroundGradientPresetId) != null || (null == t ? true : t.customUserThemeSettings) != null
       }),
-      ed = i.useMemo(() => L ? Y ? F.chatTypingGradientAtBottom : F.chatTypingGradientNotAtBottom : F.chatGradient, [L, Y]),
-      ep = i.useMemo(() => L ? Y ? F.typingGradientAtBottom : F.typingGradientNotAtBottom : F.gradientDefault, [L, Y]);
+      ed = i.useMemo(() => k ? Y ? F.chatTypingGradientAtBottom : F.chatTypingGradientNotAtBottom : F.chatGradient, [k, Y]),
+      ep = i.useMemo(() => k ? Y ? F.typingGradientAtBottom : F.typingGradientNotAtBottom : F.gradientDefault, [k, Y]);
     return (0, r.jsxs)(s.bG, {
       navigator: J,
       children: [null != ei && ei, (0, r.jsxs)("div", {
@@ -297,7 +297,7 @@ let q = (0, Chunk938288.animated)(Chunk481060.eTT),
       messageGroupSpacing: E,
       fontSize: w,
       messageDisplayCompact: D,
-      renderSpoilers: k,
+      renderSpoilers: L,
       keyboardModeEnabled: U
     } = function() {
       let e = x.jU.useSetting(),
@@ -381,8 +381,8 @@ let q = (0, Chunk938288.animated)(Chunk481060.eTT),
       }
     }(t);
     return (0, r.jsx)(b.aQ.Provider, {
-      value: (0, R.Z)(k, h),
-      children: (0, r.jsx)(L.v, {
+      value: (0, R.Z)(L, h),
+      children: (0, r.jsx)(k.v, {
         children: (0, r.jsx)(Y, z(V({}, d), {
           messageGroupSpacing: E,
           showNewMessagesBar: true,

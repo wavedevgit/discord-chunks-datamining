@@ -37,7 +37,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk524484 = require("./524484.js"),
   Chunk541675 = require("./541675.js");
-let L = Chunk647438.memo(e => {
+let k = Chunk647438.memo(e => {
   var t, n, i, l;
   let {
     mute: a,
@@ -46,20 +46,20 @@ let L = Chunk647438.memo(e => {
     channel: I,
     sessionId: P,
     nick: D
-  } = e, L = x.id, k = (0, o.e7)([j.default], () => j.default.getId() === L, [L]), [U, B, G] = (0, o.Wu)([S.Z], () => k ? [!S.Z.isSupported() || S.Z.isSelfMute() || S.Z.isSelfMutedTemporarily(), S.Z.isSelfDeaf(), false] : [!S.Z.isSupported() || S.Z.isLocalMute(L), false, S.Z.isLocalVideoDisabled(L)], [k, L]), H = (0, o.e7)([T.Z], () => T.Z.isPrioritySpeaker(L)), F = (0, c.Z)({
-    userId: L,
+  } = e, k = x.id, L = (0, o.e7)([j.default], () => j.default.getId() === k, [k]), [U, B, G] = (0, o.Wu)([S.Z], () => L ? [!S.Z.isSupported() || S.Z.isSelfMute() || S.Z.isSelfMutedTemporarily(), S.Z.isSelfDeaf(), false] : [!S.Z.isSupported() || S.Z.isLocalMute(k), false, S.Z.isLocalVideoDisabled(k)], [L, k]), H = (0, o.e7)([T.Z], () => T.Z.isPrioritySpeaker(k)), F = (0, c.Z)({
+    userId: k,
     checkSoundSharing: true
-  }), V = (0, o.e7)([E.ZP], () => E.ZP.isGuestOrLurker(I.guild_id, L)), z = (0, o.e7)([h.Z], () => h.Z.getGuildRingingUsers(I.id).has(L)), W = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(I.id).find(e => {
+  }), V = (0, o.e7)([E.ZP], () => E.ZP.isGuestOrLurker(I.guild_id, k)), z = (0, o.e7)([h.Z], () => h.Z.getGuildRingingUsers(I.id).has(k)), W = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(I.id).find(e => {
     let {
       userIds: t
     } = e;
-    return t.has(L)
-  }), [L, I.id]), q = (0, p.Z)(null != W ? [W.applicationId] : []), Y = (0, C.Z)(L, I.guild_id)[0], K = null != (n = (0, d.IX)(null == Y ? true : Y.application_id).data) ? n : true, [X, Q] = (0, o.Wu)([O.Z], () => [O.Z.getStreamForUser(L, I.getGuildId()), O.Z.getActiveStreamForUser(L, I.getGuildId())], [I, L]), J = (0, o.e7)([Z.Z], () => Z.Z.getSessionById(P)), $ = A.ZP.useName(x), ee = (0, o.e7)([N.Z], () => N.Z.getVoicePlatformForChannel(I.id, L), [I.id, L]), {
+    return t.has(k)
+  }), [k, I.id]), q = (0, p.Z)(null != W ? [W.applicationId] : []), Y = (0, C.Z)(k, I.guild_id)[0], K = null != (n = (0, d.IX)(null == Y ? true : Y.application_id).data) ? n : true, [X, Q] = (0, o.Wu)([O.Z], () => [O.Z.getStreamForUser(k, I.getGuildId()), O.Z.getActiveStreamForUser(k, I.getGuildId())], [I, k]), J = (0, o.e7)([Z.Z], () => Z.Z.getSessionById(P)), $ = A.ZP.useName(x), ee = (0, o.e7)([N.Z], () => N.Z.getVoicePlatformForChannel(I.id, k), [I.id, k]), {
     enableHangStatus: et
   } = m.n.useExperiment({
     guildId: I.guild_id,
     location: "VoiceUsers"
-  }), en = (0, f.ZP)(I, true, x), er = (0, o.e7)([g.Z], () => k ? g.Z.getHangStatusActivity() : null, [k]), ei = (0, b.j)(L), el = (0, v.Eu)(I.id, L), {
+  }), en = (0, f.ZP)(I, true, x), er = (0, o.e7)([g.Z], () => L ? g.Z.getHangStatusActivity() : null, [L]), ei = (0, b.j)(k), el = (0, v.Eu)(I.id, k), {
     enableVCStatusIcons: ea,
     enableRequestToStream: eo
   } = _.A.useExperiment({
@@ -94,7 +94,7 @@ let L = Chunk647438.memo(e => {
       disconnected: el,
       otherClientSessionType: null == J || null == (t = J.clientInfo) ? true : t.os,
       voicePlatform: ee,
-      localMute: U && !k,
+      localMute: U && !L,
       localVideoDisabled: G,
       mute: a || U,
       deaf: s || B,
@@ -105,11 +105,11 @@ let L = Chunk647438.memo(e => {
       isStreaming: null != X && X.channelId === I.id,
       isWatching: null != Q && Q.state !== R.jm8.ENDED,
       isGuest: V,
-      isSelf: k,
+      isSelf: L,
       requestToStreamActivity: eo ? Y : true,
       application: (ea || et) && (null == Y ? true : Y.session_id) != null ? K : true,
-      showHangStatus: en && et && (k || null != ei),
-      hangStatusActivity: k ? er : ei
+      showHangStatus: en && et && (L || null != ei),
+      hangStatusActivity: L ? er : ei
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -122,8 +122,8 @@ let L = Chunk647438.memo(e => {
     }), i))
   })
 });
-L.displayName = "ConnectedVoiceUser";
-let k = [],
+k.displayName = "ConnectedVoiceUser";
+let L = [],
   U = function(e) {
     let {
       allowPreviews: t = true,
@@ -138,7 +138,7 @@ let k = [],
       withGuildIcon: b = false,
       className: y,
       children: _
-    } = e, [C, O] = i.useState(null), [E, S] = i.useState(false), Z = i.useRef(null), T = (0, v.Es)(l.id, null != c ? c : k), N = i.useRef(new s.sW(50, () => {
+    } = e, [C, O] = i.useState(null), [E, S] = i.useState(false), Z = i.useRef(null), T = (0, v.Es)(l.id, null != c ? c : L), N = i.useRef(new s.sW(50, () => {
       O(Z.current), Z.current = null
     })), A = i.useRef(new s.sW(175, () => {
       O(null)
@@ -170,7 +170,7 @@ let k = [],
             nick: o,
             voiceState: s
           } = e, c = t.has(a.id);
-          return (0, r.jsx)(L, {
+          return (0, r.jsx)(k, {
             user: a,
             nick: o,
             isSelfOnOtherClient: j.default.getId() === a.id && s.sessionId !== j.default.getSessionId(),

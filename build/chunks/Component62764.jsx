@@ -85,7 +85,7 @@ function F(e) {
   return a ? (0, r.jsx)(c.zxk, {
     size: "sm",
     variant: "secondary",
-    text: l ? D.intl.string(L.default["2Y4vkp"]) : D.intl.string(L.default.YIbR4u),
+    text: l ? D.intl.string(k.default["2Y4vkp"]) : D.intl.string(k.default.YIbR4u),
     onClick: () => {
       true === s.K.get(E.F) ? d() : (0, c.ZDy)(async () => {
         let {
@@ -119,7 +119,7 @@ function V(e) {
   } = e, {
     ref: x,
     width: O
-  } = (0, p.ZP)(), [E, L] = i.useState(3), [V, z] = i.useState(!n), [W, q] = (0, h.Z)(false, 2e3), Y = (0, o.e7)([Z.Z], () => Z.Z.getChannel(t), [t]), {
+  } = (0, p.ZP)(), [E, k] = i.useState(3), [V, z] = i.useState(!n), [W, q] = (0, h.Z)(false, 2e3), Y = (0, o.e7)([Z.Z], () => Z.Z.getChannel(t), [t]), {
     firstMessage: K
   } = (0, w.cl)(Y), X = (0, o.e7)([I.Z], () => I.Z.hasJoined(t)), {
     disableReactionUpdates: Q,
@@ -147,7 +147,7 @@ function V(e) {
   });
   let [eo, es] = i.useState(true);
   if (i.useEffect(() => {
-      null != O && (L(Math.floor((O - 280) / 58)), es(false))
+      null != O && (k(Math.floor((O - 280) / 58)), es(false))
     }, [O]), null == Y || null == K) return null;
   let ec = K.reactions.length > 0,
     eu = () => {
@@ -172,19 +172,19 @@ function V(e) {
     eh = X ? c.dz2 : c.Dkj;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: a()(k.container, {
-        [k.header]: V
+      className: a()(L.container, {
+        [L.header]: V
       }),
       ref: x,
       children: [en ? (0, r.jsx)("div", {
-        className: k.reportedMessageActions,
+        className: L.reportedMessageActions,
         children: (0, r.jsx)(S.Z, {
           message: K,
           channel: Y
         })
       }) : (0, r.jsxs)("div", {
-        className: a()(k.reactButtons, {
-          [k.loading]: eo
+        className: a()(L.reactButtons, {
+          [L.loading]: eo
         }),
         children: [!ec && !J && null != ei && (0, r.jsx)("div", {
           className: U.reactions,
@@ -213,7 +213,7 @@ function V(e) {
           isGuest: ee,
           isPendingMember: et,
           maxReactions: E,
-          className: k.reactions,
+          className: L.reactions,
           useChatFontScaling: false,
           isForumToolbar: true,
           forceHideReactionCreates: true
@@ -222,14 +222,14 @@ function V(e) {
           message: K,
           channel: Y,
           useChatFontScaling: false,
-          className: a()(B.secondary, k.addReactButton, {
-            [k.hasNoReactions]: !ec
+          className: a()(B.secondary, L.addReactButton, {
+            [L.hasNoReactions]: !ec
           }),
           isForumToolbar: true,
           children: !ec && D.intl.string(D.t.xpOyTE)
         })]
       }), (0, r.jsxs)("div", {
-        className: k.buttons,
+        className: L.buttons,
         children: [en ? (0, r.jsx)(F, {
           channel: Y
         }) : (0, r.jsx)(c.ua7, {

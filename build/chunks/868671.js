@@ -37,7 +37,7 @@ function x(e) {
     requestId: S,
     entries: I,
     impressionCappedEntryIds: P
-  } = (0, m.Z)(x), Z = (0, i.e7)([p.Z], () => p.Z.hidden), T = (0, i.e7)([c.Z], () => c.Z.isFocused()), N = (0, i.e7)([o.Z], () => o.Z.getChannel(x)), A = (0, i.e7)([s.Z], () => s.Z.getGuild(O), [O]), w = (0, h.E)(A), R = null != w && w && (null == N ? true : N.isForumChannel()) === false, [M, D, L, k] = r.useMemo(() => {
+  } = (0, m.Z)(x), Z = (0, i.e7)([p.Z], () => p.Z.hidden), T = (0, i.e7)([c.Z], () => c.Z.isFocused()), N = (0, i.e7)([o.Z], () => o.Z.getChannel(x)), A = (0, i.e7)([s.Z], () => s.Z.getGuild(O), [O]), w = (0, h.E)(A), R = null != w && w && (null == N ? true : N.isForumChannel()) === false, [M, D, k, L] = r.useMemo(() => {
     let e;
     if (null == I || 0 === I.length || null == S || !R) return [t, n, v];
     let r = j ? I.length : 3,
@@ -79,9 +79,9 @@ function x(e) {
   }), F = r.useCallback(e => {
     var t;
     let n = Math.floor(e / g.YN),
-      r = Math.min(null != (t = null == k ? true : k.length) ? t : 0, n);
+      r = Math.min(null != (t = null == L ? true : L.length) ? t : 0, n);
     U.current = Math.max(U.current, r)
-  }, [k]);
+  }, [L]);
   return r.useEffect(() => {
     B.current = I
   }, [I]), r.useEffect(() => {
@@ -109,7 +109,7 @@ function x(e) {
   }), [S, x, O, Z, T, R]), {
     groups: M,
     rows: D,
-    version: L,
+    version: k,
     updateMaxRowSeen: F
   }
 }

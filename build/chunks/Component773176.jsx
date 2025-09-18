@@ -208,7 +208,7 @@ function em(e) {
       isFocused: s
     } = e, {
       author: d
-    } = n, p = (0, u.e7)([F.Z], () => F.Z.getGuild(t.guild_id), [t.guild_id]), h = (0, u.e7)([B.default], () => B.default.getId()), g = (0, k.$R)(t), b = (0, k.Gu)(t), {
+    } = n, p = (0, u.e7)([F.Z], () => F.Z.getGuild(t.guild_id), [t.guild_id]), h = (0, u.e7)([B.default], () => B.default.getId()), g = (0, L.$R)(t), b = (0, L.Gu)(t), {
       firstMessage: y
     } = (0, u.e7)([C.Z], () => C.Z.getMessage(t.id), [t.id]), _ = U.nc.useSetting(), x = U.Sb.useSetting(), O = (0, u.e7)([V.Z], () => null == t.guild_id || V.Z.canChatInGuild(t.guild_id), [t]), {
       canManageMessages: j,
@@ -216,7 +216,7 @@ function em(e) {
     } = (0, u.cj)([z.Z], () => ({
       canAddNewReactions: O && z.Z.can(el.Plq.ADD_REACTIONS, t),
       canManageMessages: z.Z.can(el.Plq.MANAGE_MESSAGES, t)
-    }), [t, O]), I = (0, M.U)(t, n), P = (0, k.NE)(t, n), Z = (0, k.Ek)(n), T = (0, u.e7)([E.Z], () => null != t.guild_id && E.Z.isLurking(t.guild_id), [t]), N = (0, u.e7)([H.ZP], () => null != t.guild_id && H.ZP.isCurrentUserGuest(t.guild_id), [t]), A = d.id === h, w = (j || n.canDeleteOwnMessage(h)) && g && !el.V$x.UNDELETABLE.has(n.type);
+    }), [t, O]), I = (0, M.U)(t, n), P = (0, L.NE)(t, n), Z = (0, L.Ek)(n), T = (0, u.e7)([E.Z], () => null != t.guild_id && E.Z.isLurking(t.guild_id), [t]), N = (0, u.e7)([H.ZP], () => null != t.guild_id && H.ZP.isCurrentUserGuest(t.guild_id), [t]), A = d.id === h, w = (j || n.canDeleteOwnMessage(h)) && g && !el.V$x.UNDELETABLE.has(n.type);
     n.type === el.uaV.AUTO_MODERATION_ACTION && (w = w && j), t.isModeratorReportChannel() && (w = w && n.id !== (null == y ? true : y.id) && !(0, $.Z)(n));
     let R = (0, X.a4)(n),
       G = (0, J.Z)(n, t),
@@ -243,7 +243,7 @@ function em(e) {
       } = D.Z.useExperiment({
         location: "message_utilities"
       }),
-      ea = (0, u.e7)([L.Z], () => null != L.Z.getSavedMessage(t.id, n.id)),
+      ea = (0, u.e7)([k.Z], () => null != k.Z.getSavedMessage(t.id, n.id)),
       eo = (0, c.Z)(a),
       es = (0, u.e7)([f.Z], () => f.Z.keyboardModeEnabled);
     return {
@@ -282,7 +282,7 @@ function em(e) {
     eo({
       emojiPicker: !Y
     })
-  }, [Y, eo]), eb = (0, k.$R)(t), e_ = n.hasFlag(el.iLy.CROSSPOSTED), [eC, ev] = (0, g.cv)(w ? [d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), ex = eC === d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [eO, ej] = i.useState(false), eE = i.useCallback(() => {
+  }, [Y, eo]), eb = (0, L.$R)(t), e_ = n.hasFlag(el.iLy.CROSSPOSTED), [eC, ev] = (0, g.cv)(w ? [d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), ex = eC === d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [eO, ej] = i.useState(false), eE = i.useCallback(() => {
     ej(true)
   }, []), eS = i.useCallback(() => {
     ej(false)

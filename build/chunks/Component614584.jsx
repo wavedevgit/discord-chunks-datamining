@@ -68,9 +68,9 @@ let S = Chunk647438.memo(function(e) {
     setPopout: N,
     isReplySpineClickable: A,
     showReplySpine: w
-  } = e, R = S.state === f.Y.LOADED ? S.message : true, M = (0, y.Uj)(R), D = (0, u.p)(), L = s.d.useExperiment({
+  } = e, R = S.state === f.Y.LOADED ? S.message : true, M = (0, y.Uj)(R), D = (0, u.p)(), k = s.d.useExperiment({
     location: "repliedMessage"
-  }).enabled, k = (0, d.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), U = i.useMemo(() => {
+  }).enabled, L = (0, d.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), U = i.useMemo(() => {
     if (null == R) return null;
     let e = (0, o.Z)(R);
     if (e.type === x.uaV.USER_JOIN) return (0, a.Rp)(O.intl.formatToParts(g.Z.getSystemMessageUserJoin(e.id), {
@@ -105,17 +105,17 @@ let S = Chunk647438.memo(function(e) {
           noStyleAndInteraction: true,
           allowHeading: true,
           allowList: true,
-          allowGameMentions: L
+          allowGameMentions: k
         }) : E(j({}, t), {
           formatInline: true,
-          allowHeading: k,
-          allowList: k,
-          allowGameMentions: L
+          allowHeading: L,
+          allowList: L,
+          allowGameMentions: k
         });
       return (0, b.ZP)(e, n).content
     }
     return null
-  }, [R, M, I, k, D, L]), {
+  }, [R, M, I, L, D, k]), {
     isReplyAuthorBlocked: B,
     isReplyAuthorIgnored: G
   } = (0, l.cj)([m.Z], () => ({

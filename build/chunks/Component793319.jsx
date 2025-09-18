@@ -362,7 +362,7 @@ let eI = Chunk647438.memo(function(e) {
                 onPopoutClick: C.length > 0 ? i : null
               }));
             case "EVENT":
-              return (0, r.jsx)(L.Z, {
+              return (0, r.jsx)(k.Z, {
                 channelId: l.id,
                 onClick: () => {
                   (0, P.v)(o, P.d.DISCONNECT), m.default.disconnect(), null == n || n()
@@ -450,7 +450,7 @@ let eT = function(e) {
     canGoLive: M
   } = (0, u.cj)([er.Z], () => ({
     canGoLive: (0, R.Z)(er.Z)
-  })), D = (0, A.Z)(), L = (0, u.e7)([N.Z], () => null != N.Z.getAwaitingRemoteSessionInfo()), B = null != D, G = (0, u.e7)([ei.Z], () => {
+  })), D = (0, A.Z)(), k = (0, u.e7)([N.Z], () => null != N.Z.getAwaitingRemoteSessionInfo()), B = null != D, G = (0, u.e7)([ei.Z], () => {
     var e;
     return (null != (e = null == D ? true : D.channelId) ? e : ei.Z.getVoiceChannelId()) === n.id
   }), F = (0, u.e7)([_.ZP], () => _.ZP.getCurrentEmbeddedActivity()), {
@@ -484,7 +484,7 @@ let eT = function(e) {
       section: eb.jXE.VOICE_CONTROL_TRAY,
       children: [(0, r.jsx)("div", {
         className: eC.eventPromptsContainer,
-        children: (0, r.jsx)(k.Z, {
+        children: (0, r.jsx)(L.Z, {
           channelId: n.id
         })
       }), (0, r.jsxs)("div", {
@@ -546,7 +546,7 @@ let eT = function(e) {
                 serverMute: w,
                 suppress: Z,
                 popoutOpen: i,
-                awaitingRemote: L,
+                awaitingRemote: k,
                 onClick: () => (0, I.Z)(w, Z, eb.jXE.VOICE_CONTROL_TRAY),
                 onContextMenu: ep
               })
