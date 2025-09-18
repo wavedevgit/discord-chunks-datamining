@@ -2,26 +2,27 @@
 /** chunk id: 444295, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  AE: () => c,
-  JS: () => p,
-  Qu: () => h,
-  Ws: () => g,
-  bk: () => m,
-  ee: () => f,
-  ou: () => d,
-  zi: () => _
+  AE: () => u,
+  JS: () => h,
+  Qu: () => m,
+  Ws: () => E,
+  bk: () => g,
+  ee: () => _,
+  ou: () => f,
+  zi: () => p
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
+  Chunk579806 = require("./579806.js"),
   Chunk77498 = require("./77498.js"),
   Chunk19780 = require("./19780.js"),
   Chunk626135 = require("./626135.js"),
   Chunk837268 = require("./837268.js"),
   Chunk981631 = require("./981631.js"),
-  c = function(e) {
+  u = function(e) {
     return e.OOP = "oop", e.OOP_GAME = "oop game", e.LEGACY = "legacy", e.LEGACY_GAME = "legacy game", e
   }({});
 
-function u(e) {
+function d(e) {
   switch (e) {
     case "oop":
     case "oop game":
@@ -32,26 +33,26 @@ function u(e) {
       return "overlay toggled - game"
   }
 }
-
-function d(e, t, r) {
-  var a, c, d;
-  let f = null != r ? i.Z.getDetectableGame(r) : null,
+async function f(e, t, r) {
+  var o, u, f, _, p, h;
+  let m = null != r ? a.Z.getDetectableGame(r) : null,
     {
-      default: _
+      default: g
     } = n(371651),
-    p = null != (a = null == _ ? true : _.getMostRecentOverlayRenderMethod()) ? a : true,
-    h = null != p ? s.gl[p] : true;
-  o.default.track(l.rMx.OVERLAY_TOGGLED, {
+    E = null != (f = null == g ? true : g.getMostRecentOverlayRenderMethod()) ? f : true,
+    b = null != E ? l.gl[E] : true;
+  s.default.track(c.rMx.OVERLAY_TOGGLED, {
     enabled: e,
-    setting_type: u(t),
+    setting_type: d(t),
     client_setting_type: t,
-    application_id: null != (c = null == f ? true : f.id) ? c : true,
-    application_name: null != (d = null == f ? true : f.name) ? d : true,
-    most_recent_overlay_render_method: h
+    application_id: null != (_ = null == m ? true : m.id) ? _ : true,
+    application_name: null != (p = null == m ? true : m.name) ? p : true,
+    most_recent_overlay_render_method: b,
+    hardware_display_count: null != (h = await (null === i.Z || true === i.Z || null == (u = i.Z.hardware) || null == (o = u.getDisplayCount) ? true : o.call(u))) ? h : null
   })
 }
 
-function f(e, t) {
+function _(e, t) {
   let [n, i] = r.useState(e()), a = r.useRef(e);
   return r.useEffect(() => {
     a.current = e
@@ -68,53 +69,53 @@ function f(e, t) {
   }, t), n
 }
 
-function _(e, t) {
+function p(e, t) {
   var n, r, i;
   let {
-    locked: s,
-    shownUserIds: c,
+    locked: a,
+    shownUserIds: l,
     liveUserIds: u,
     contentInventoryIds: d
   } = t;
-  ((null != (n = null == c ? true : c.length) ? n : 0) !== 0 || (null != (r = null == u ? true : u.length) ? r : 0) !== 0 || (null != (i = null == d ? true : d.length) ? i : 0) !== 0) && o.default.track(l.rMx.WIDGET_CONTENT_SHOWN, {
-    overlay_locked: s,
+  ((null != (n = null == l ? true : l.length) ? n : 0) !== 0 || (null != (r = null == u ? true : u.length) ? r : 0) !== 0 || (null != (i = null == d ? true : d.length) ? i : 0) !== 0) && s.default.track(c.rMx.WIDGET_CONTENT_SHOWN, {
+    overlay_locked: a,
     widget_type: e,
-    shown_user_ids: c,
+    shown_user_ids: l,
     live_user_ids: u,
     content_inventory_ids: d,
-    media_session_id: a.Z.getMediaSessionId()
+    media_session_id: o.Z.getMediaSessionId()
   })
 }
 
-function p(e, t) {
+function h(e, t) {
   let {
     pinned: n,
     opacity: r
   } = t;
-  o.default.track(l.rMx.WIDGET_SETTING_UPDATED, {
+  s.default.track(c.rMx.WIDGET_SETTING_UPDATED, {
     widget_type: e,
     pinned: n,
     opacity: r
   })
 }
-var h = function(e) {
+var m = function(e) {
     return e.SCREEN_SHARE = "screen share", e.CAMERA = "camera", e.MICROPHONE = "microphone", e.AUDIO = "audio", e.VOICE = "voice", e.CALL_BUTTON = "call button", e.SOUNDBOARD = "soundboard", e.GO_LIVE = "go live", e.INVITE = "invite", e.REDIRECT = "redirect", e.FRIEND_LIST = "friend list", e.FRIEND_REQUEST = "friend request", e.KEYBIND_HINT = "keybind hint", e
   }({}),
-  m = function(e) {
+  g = function(e) {
     return e.ENABLED = "enabled", e.DISABLED = "disabled", e.SETTINGS_OPENED = "settings opened", e.PANEL_OPENED = "panel opened", e.OVERLAY_UNLOCKED = "overlay unlocked", e.STREAM_PREVIEWED = "stream previewed", e.INVITE_SENT = "invite sent", e.JOIN_REQUEST_SENT = "join request sent", e.PROFILE_OPENED = "profile opened", e.GUILD_PROFILE_OPENED = "guild profile opened", e.CHAT = "chat", e.ACCEPT_REQUEST = "accept request", e.DECLINE_REQUEST = "decline request", e.CANCEL_REQUEST = "cancel request", e.SEND_REQUEST = "send request", e.SEARCH = "search", e.SETTING_ADJUSTED = "setting adjusted", e
   }({});
 
-function g(e, t) {
+function E(e, t) {
   let {
     type: n,
     value: r,
     userId: i
   } = t;
-  o.default.track(l.rMx.WIDGET_INTERACTED, {
+  s.default.track(c.rMx.WIDGET_INTERACTED, {
     widget_type: e,
     interaction_type: n,
     interaction_value: r,
     target_user_id: i,
-    media_session_id: a.Z.getMediaSessionId()
+    media_session_id: o.Z.getMediaSessionId()
   })
 }
