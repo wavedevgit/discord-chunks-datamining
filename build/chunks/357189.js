@@ -19,7 +19,7 @@ function s(e, t, n) {
     },
     oldFormErrors: true,
     rejectWithError: false
-  }).then(e => t(e, s), e => n(e))
+  }).then(e => t(e, s), t => n(t, e))
 }
 
 function l(e, t, n) {

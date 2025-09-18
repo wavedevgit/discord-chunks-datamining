@@ -48,45 +48,47 @@ async function h(e) {
       offerId: true,
       paymentGatewayOverride: true
     },
-    c = arguments.length > 3 ? arguments[3] : true;
+    c = arguments.length > 3 ? arguments[3] : true,
+    f = arguments.length > 4 ? arguments[4] : true;
   if (t) {
     a.Z.dispatch({
       type: "BILLING_USER_OFFER_FETCH_START"
     });
     try {
-      var f, h, m;
+      var h, m, g;
       null != e && l.default.track(d.rMx.FETCH_USER_OFFER_STARTED, {
         call_location: e
       });
       let {
         offerId: t,
-        paymentGatewayOverride: g
-      } = n, E = true !== g ? g : p(), b = null != E || null != t ? {
-        payment_gateway: E,
+        paymentGatewayOverride: E
+      } = n, b = true !== E ? E : p(), y = null != b || null != t ? {
+        payment_gateway: b,
         offer_id: t
-      } : {}, y = await r.tn.post({
+      } : {}, O = await r.tn.post({
         url: d.ANM.USER_OFFER,
-        body: b,
-        rejectWithError: true
-      }), O = null != (f = y.body.user_trial_offer) ? f : null, v = null != (h = y.body.user_discount) ? h : null, I = null != (m = y.body.user_discount_offer) ? m : null;
-      if (null != t && null != I && I.discount_id !== t) {
+        body: y,
+        rejectWithError: true,
+        retries: null != c ? c.retries : true
+      }), v = null != (h = O.body.user_trial_offer) ? h : null, I = null != (m = O.body.user_discount) ? m : null, T = null != (g = O.body.user_discount_offer) ? g : null;
+      if (null != t && null != T && T.discount_id !== t) {
         let e = Error("Returned user discount offer does not match offer ID request parameter");
         throw u.Z.captureException(e, _({
           extra: {
             offer_id: t,
-            user_discount_offer: I
+            user_discount_offer: T
           }
-        }, c)), e
+        }, f)), e
       }
-      return null == O && (0, o.zu)(i.z.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING) && (0, s.w9)(i.z.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING), a.Z.dispatch({
+      return null == v && (0, o.zu)(i.z.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING) && (0, s.w9)(i.z.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING), a.Z.dispatch({
         type: "BILLING_USER_OFFER_FETCH_SUCCESS",
-        userTrialOffer: O,
-        userDiscount: v,
-        userDiscountOffer: I
+        userTrialOffer: v,
+        userDiscount: I,
+        userDiscountOffer: T
       }), {
-        userTrialOffer: O,
-        userDiscount: v,
-        userDiscountOffer: I
+        userTrialOffer: v,
+        userDiscount: I,
+        userDiscountOffer: T
       }
     } catch (e) {
       a.Z.dispatch({
