@@ -271,14 +271,7 @@ let Q = (e, t, i) => {
     let {
       headingText: e,
       headingTop: t
-    } = er(), n = () => (0, Chunk951288.jsx)(Chunk736519.Z, {
-      look: Chunk755721.iL.FILLED,
-      color: Chunk755721.Tt.BRAND,
-      textOptions: {
-        textOverride: Chunk388032.intl.string(Chunk388032.t["3KomGR"])
-      },
-      className: Chunk644219.button
-    });
+    } = er();
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)("img", {
         src: Chunk578478,
@@ -296,7 +289,14 @@ let Q = (e, t, i) => {
             children: module
           }), (0, Chunk951288.jsx)("div", {
             className: Chunk644219.premiumSubscribeButton,
-            children: require()
+            children: (0, Chunk951288.jsx)(Chunk736519.Z, {
+              look: Chunk755721.iL.FILLED,
+              color: Chunk755721.Tt.BRAND,
+              textOptions: {
+                textOverride: Chunk388032.intl.string(Chunk388032.t["3KomGR"])
+              },
+              className: Chunk644219.button
+            })
           }), (0, Chunk951288.jsx)(Chunk647277._, {
             className: Chunk644219.referralBanner
           })]
