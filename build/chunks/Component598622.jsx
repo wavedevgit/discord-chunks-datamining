@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 598622, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Q: () => m
 });
@@ -44,7 +45,7 @@ let m = e => {
   }].filter(e => null != e);
   return {
     [i.u.CAPTCHA_AND_RAID_PROTECTION]: [{
-      renderComponent: () => (0, r.jsx)(s.Z, {
+      renderComponent: () => (0, r.jsx)(a.Z, {
         guild: e
       }, "raid-alerts"),
       enabled: !e.features.has(d.oNc.RAID_ALERTS_DISABLED)
@@ -66,10 +67,10 @@ let m = e => {
       }, "guild-mfa"),
       enabled: e.mfaLevel === d.BpS.ELEVATED
     }, {
-      renderComponent: () => (0, r.jsx)(a.Z, {
+      renderComponent: () => (0, r.jsx)(s.Z, {
         guild: e
       }, "disable-risky-perms"),
-      enabled: 0 === (0, a.R)(e).length
+      enabled: 0 === (0, s.R)(e).length
     }]
   }
 }

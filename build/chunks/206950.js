@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 206950, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   F: () => u
 });
@@ -32,7 +33,7 @@ function u(e) {
           })
         }
         return e
-      }({}, (0, a.ZP)({
+      }({}, (0, s.ZP)({
         channelId: "1337",
         content: e
       })), n = n = {
@@ -48,7 +49,7 @@ function u(e) {
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t)),
-      u = new s.Z({
+      u = new a.Z({
         id: "313337",
         username: c.intl.string(c.t.cqpybG),
         discriminator: "0000",

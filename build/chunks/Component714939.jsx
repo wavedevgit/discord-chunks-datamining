@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 714939, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => o
 }), require("./953529.js");
@@ -16,10 +17,10 @@ function o(e) {
     onClick: n
   } = e;
   return (0, r.jsxs)(i.P3F, {
-    className: s.container,
+    className: a.container,
     onClick: n,
     children: [(0, r.jsx)("div", {
-      className: s.icon,
+      className: a.icon,
       children: (0, r.jsx)(i.BFJ, {
         size: "custom",
         color: "currentColor",
@@ -27,19 +28,19 @@ function o(e) {
         height: 20
       })
     }), (0, r.jsxs)("div", {
-      className: s.description,
+      className: a.description,
       children: [(0, r.jsx)(i.Text, {
-        className: s.label,
+        className: a.label,
         color: "none",
         variant: "text-md/bold",
-        children: a.intl.string(a.t.yiaoNj)
+        children: s.intl.string(s.t.yiaoNj)
       }), (0, r.jsxs)(i.Text, {
         color: "none",
         variant: "text-xs/normal",
-        children: [t.name, " • ", a.intl.string(a.t.JwYI3N)]
+        children: [t.name, " • ", s.intl.string(s.t.JwYI3N)]
       })]
     }), (0, r.jsx)(l.Z, {
-      className: s.arrow,
+      className: a.arrow,
       direction: l.Z.Directions.RIGHT
     })]
   })

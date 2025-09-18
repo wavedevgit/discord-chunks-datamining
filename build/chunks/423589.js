@@ -1,10 +1,10 @@
-/** Chunk was on 78728 **/
+/** Chunk was on 75449 **/
 /** chunk id: 423589, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   Mn: () => h,
   OD: () => b,
-  W9: () => g
+  W9: () => f
 }), require("./388685.js"), require("./997841.js");
 var Chunk442837 = require("./442837.js"),
   Chunk798140 = require("./798140.js"),
@@ -17,7 +17,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx");
 
-function g() {
+function f() {
   return [{
     label: Chunk388032.intl.string(Chunk388032.t["8ot6go"]),
     value: Chunk969943.Oe.MINUTES_15
@@ -38,14 +38,14 @@ function g() {
     value: Chunk969943.Oe.ALWAYS
   }]
 }
-let f = {
+let g = {
   ignoreMute: false,
   ignoreUnreadSetting: true,
   ignoreNotificationSetting: false
 };
 
 function b(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : f;
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : g;
   return c.default.keys(e).filter(n => {
     var i, a;
     let c = e[n].message_notifications !== u.bL.NULL,

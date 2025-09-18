@@ -1,4 +1,4 @@
-/** Chunk was on 46290 **/
+/** Chunk was on 50751 **/
 /** chunk id: 333727, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -23,10 +23,10 @@ function p(e, t, n, p) {
     {
       trackView: g,
       trackClick: y
-    } = (0, s.R)(c.n0.ActivityInvite, {
-      notif_type: c.n0.ActivityInvite,
+    } = (0, s.R)(u.n0.ActivityInvite, {
+      notif_type: u.n0.ActivityInvite,
       notif_user_id: t.id,
-      activity_type: u.mFx.JOIN_REQUEST,
+      activity_type: c.mFx.JOIN_REQUEST,
       activity_name: p.name
     });
   return {
@@ -41,16 +41,16 @@ function p(e, t, n, p) {
     onConfirmClick: (t, n) => {
       i.Z.sendActivityInvite({
         channelId: e.id,
-        type: u.mFx.JOIN,
+        type: c.mFx.JOIN,
         activity: p,
-        location: o.default.isLocked((0, a.getPID)()) ? u.Sbl.LOCKED_OVERLAY : u.Sbl.UNLOCKED_OVERLAY
+        location: o.default.isLocked((0, a.getPID)()) ? c.Sbl.LOCKED_OVERLAY : c.Sbl.UNLOCKED_OVERLAY
       }), y("join"), r.Z.updateNotificationStatus(n)
     },
     onCancelClick: (t, n) => {
       (0, l.In)(e.id, {
-        section: u.jXE.OVERLAY,
-        object: u.qAy.ACK_DECLINE_REQUEST_TO_JOIN,
-        objectType: u.Qqv.ACK_SEMI_AUTOMATIC
+        section: c.jXE.OVERLAY,
+        object: c.qAy.ACK_DECLINE_REQUEST_TO_JOIN,
+        objectType: c.Qqv.ACK_SEMI_AUTOMATIC
       }, true, true), r.Z.updateNotificationStatus(n), y("decline")
     },
     onDismissClick: () => {

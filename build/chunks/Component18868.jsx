@@ -1,4 +1,4 @@
-/** Chunk was on 93886 **/
+/** Chunk was on 85991 **/
 /** chunk id: 18868, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   L: () => p
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk310752 = require("./310752.jsx"),
   Chunk897842 = require("./897842.jsx"),
@@ -49,7 +49,7 @@ let m = () => {
     let {
       className: t,
       onDrop: n
-    } = e, [l, p] = r.useState(false), x = r.useRef(null), b = r.useCallback(e => {
+    } = e, [i, p] = r.useState(false), x = r.useRef(null), b = r.useCallback(e => {
       h(e), p(true), (0, s.Mr3)(c.A)
     }, []), f = r.useCallback(e => {
       h(e), p(false)
@@ -65,13 +65,13 @@ let m = () => {
     }, [n]);
     return (0, a.jsx)("div", {
       ref: x,
-      className: i()(t, u.uploadArea),
+      className: l()(t, u.uploadArea),
       onDragEnter: b,
       onDragLeave: f,
       onDrop: g,
       children: (0, a.jsx)("div", {
-        className: i()(u.uploadModal, {
-          [u.droppable]: l
+        className: l()(u.uploadModal, {
+          [u.droppable]: i
         }),
         children: (0, a.jsxs)("div", {
           className: u.inner,

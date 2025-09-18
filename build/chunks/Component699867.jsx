@@ -1,4 +1,4 @@
-/** Chunk was on 93886 **/
+/** Chunk was on 85991 **/
 /** chunk id: 699867, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -12,11 +12,11 @@ function s(e) {
   let {
     items: t,
     onChange: n
-  } = e, [s, o] = (0, l.Z)(), c = (0, r.useCallback)(e => {
+  } = e, [s, o] = (0, i.Z)(), c = (0, r.useCallback)(e => {
     o(e), null == n || n(e)
   }, [o, n]);
   return (0, a.jsx)(a.Fragment, {
-    children: t.filter(e => isNaN(Number(e))).map(e => (0, a.jsx)(i.Z, {
+    children: t.filter(e => isNaN(Number(e))).map(e => (0, a.jsx)(l.Z, {
       content: e,
       onChange: c
     }, e))

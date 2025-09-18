@@ -1,12 +1,13 @@
 /** Chunk was on 8106 **/
 /** chunk id: 3896, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk456935 = require("./456935.js"),
   Chunk259580 = require("./259580.jsx"),
@@ -18,8 +19,8 @@ function g(e) {
   let {
     guild: t
   } = e, l = t.verificationLevel, g = i.useMemo(() => (0, o.I9)(l), [l]);
-  return (0, r.jsxs)(s.P3F, {
-    onClick: () => (0, s.ZDy)(async () => {
+  return (0, r.jsxs)(a.P3F, {
+    onClick: () => (0, a.ZDy)(async () => {
       let {
         default: e
       } = await n.e("72458").then(n.bind(n, 694278));
@@ -57,29 +58,29 @@ function g(e) {
         }), i))
       }
     }),
-    className: a()(m.simpleItemWrapper, m.clickable),
+    className: s()(m.simpleItemWrapper, m.clickable),
     children: [(0, r.jsxs)("div", {
       className: m.itemContent,
-      children: [(0, r.jsx)(s.X6q, {
+      children: [(0, r.jsx)(a.X6q, {
         variant: "text-md/semibold",
         color: "header-primary",
         children: u.intl.string(u.t.DpRdYG)
-      }), (0, r.jsx)(s.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
         children: u.intl.string(u.t.mA17eH)
       }), (0, r.jsx)("div", {
         className: m.__invalid_pillRow,
-        children: (0, r.jsxs)(s.Text, {
+        children: (0, r.jsxs)(a.Text, {
           variant: "text-xs/medium",
           color: "interactive-normal",
           className: m.valuePill,
-          children: [l === d.sFg.VERY_HIGH ? (0, r.jsx)(s.AtH, {
+          children: [l === d.sFg.VERY_HIGH ? (0, r.jsx)(a.AtH, {
             size: "custom",
             color: "currentColor",
             width: 16,
             height: 16
-          }) : (0, r.jsx)(s._XJ, {
+          }) : (0, r.jsx)(a._XJ, {
             size: "custom",
             color: "currentColor",
             width: 16,

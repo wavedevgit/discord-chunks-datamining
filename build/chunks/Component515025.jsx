@@ -1,7 +1,8 @@
 /** Chunk was on 8106 **/
 /** chunk id: 515025, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  h: () => b
+  h: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,13 +19,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk294806 = require("./294806.js");
 
-function b(e) {
+function x(e) {
   let {
     guild: t,
     canManageGuild: n
-  } = e, b = t.features.has(m.oNc.INVITE_SPLASH), x = n && b, {
+  } = e, x = t.features.has(m.oNc.INVITE_SPLASH), b = n && x, {
     analyticsLocations: j
-  } = (0, a.ZP)(), v = i.useCallback(e => {
+  } = (0, s.ZP)(), v = i.useCallback(e => {
     d.Z.updateGuild({
       splash: e
     })
@@ -42,17 +43,17 @@ function b(e) {
       id: t.id,
       splash: e
     }) : null,
-    disabled: !x,
+    disabled: !b,
     onChange: v,
-    hint: h.intl.string(h.t.uPvxqK),
-    enabled: x,
+    hint: f.intl.string(f.t.uPvxqK),
+    enabled: b,
     maxFileSizeBytes: p.B,
-    onFileSizeError: () => (0, s.Z)(p.B)
+    onFileSizeError: () => (0, a.Z)(p.B)
   });
-  return b ? O : (0, r.jsx)(l.P3F, {
+  return x ? O : (0, r.jsx)(l.P3F, {
     "aria-hidden": true,
     tabIndex: false,
-    className: f.upsell,
+    className: h.upsell,
     onClick: _,
     children: O
   })

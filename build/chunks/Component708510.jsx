@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 708510, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   O: () => T
 });
@@ -32,7 +33,7 @@ function E(e) {
     pendingState: t
   } = e, n = i.useRef(false), l = i.useCallback(async e => {
     if (!n.current) try {
-      await (0, p.k)(e), (0, h.V)(e), (0, s.le)(), (0, s.aC)(e)
+      await (0, p.k)(e), (0, f.V)(e), (0, a.le)(), (0, a.aC)(e)
     } finally {
       n.current = true
     }
@@ -44,11 +45,11 @@ function E(e) {
         rules: t.termRules
       });
     case O.A.APPLY:
-      return (0, r.jsx)(b.r, {
+      return (0, r.jsx)(x.r, {
         pendingFields: t.pendingVerificationFields
       });
     case O.A.DISCOVERABLE:
-      return (0, r.jsx)(x.c, {
+      return (0, r.jsx)(b.c, {
         fetchDiscoveryData: l,
         settingsView: t.settingsView,
         requireTerms: t.requireTerms,
@@ -62,7 +63,7 @@ function I(e) {
     guildId: t
   } = e, {
     nsfwLevel: n,
-    ownerConfiguredContentLevel: s
+    ownerConfiguredContentLevel: a
   } = (0, l.cj)([d.Z], () => {
     var e, n;
     return {
@@ -73,10 +74,10 @@ function I(e) {
     var e;
     return null == (e = v.Z.pendingState) ? true : e.isAgeRestricted
   }), c = i.useCallback(e => {
-    f.Z.setIsAgeRestricted(t, e)
-  }, [t]), m = n === y.V_K.AGE_RESTRICTED && s !== y.V_K.AGE_RESTRICTED;
-  return (0, r.jsx)(a.hjN, {
-    children: (0, r.jsx)(a.j7V, {
+    h.Z.setIsAgeRestricted(t, e)
+  }, [t]), m = n === y.V_K.AGE_RESTRICTED && a !== y.V_K.AGE_RESTRICTED;
+  return (0, r.jsx)(s.hjN, {
+    children: (0, r.jsx)(s.j7V, {
       onChange: c,
       value: o,
       hideBorder: true,
@@ -112,11 +113,11 @@ function T() {
     (null == module ? true : module.id) != null && Chunk863249.ZP.fetchVerificationForm(module.id)
   }, [null == module ? true : module.id]);
   let n = Chunk647438.useCallback(t => {
-    (null == e ? true : e.id) != null && f.Z.setSelectedJoinType(e.id, t)
+    (null == e ? true : e.id) != null && h.Z.setSelectedJoinType(e.id, t)
   }, [null == module ? true : module.id]);
   if (null == module || null == exports) return null;
   let {
-    joinType: s
+    joinType: a
   } = exports;
   return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
     gap: 32,

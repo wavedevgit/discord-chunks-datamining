@@ -61,11 +61,11 @@ function f() {
     isTracingRequests: h,
     isForcedCanary: j,
     isSourceMapsEnabled: P,
-    isIdleStatusIndicatorEnabled: w,
-    isAxeEnabled: A,
+    isIdleStatusIndicatorEnabled: A,
+    isAxeEnabled: w,
     preventPopoutClose: x,
     onlyShowPreviewAppCollections: D,
-    disableAppCollectionsCache: I
+    disableAppCollectionsCache: N
   } = (0, Chunk442837.cj)([Chunk857192.default, Chunk594174.default, Chunk906467.Z], () => {
     var e;
     return {
@@ -87,7 +87,7 @@ function f() {
     }
   }), {
     horizontalSpacing: _,
-    verticalSpacing: N,
+    verticalSpacing: I,
     maxHorizontalSpacing: Z,
     maxVerticalSpacing: T
   } = (0, Chunk482215.i)(), {
@@ -149,19 +149,19 @@ function f() {
     }, "source-maps"), (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "idle-status",
       label: "Idle Status Indicator",
-      checked: w,
+      checked: A,
       action: () => {
         (0, Chunk179658.y)({
-          idleStatusIndicatorEnabled: !w
+          idleStatusIndicatorEnabled: !A
         })
       }
     }, "idle-status"), (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "accessibility-auditing",
       label: "Accessibility Auditing",
-      checked: A,
+      checked: w,
       action: () => {
         (0, Chunk179658.y)({
-          axeEnabled: !A
+          axeEnabled: !w
         })
       }
     }, "accessibility-auditing"), (0, Chunk951288.jsx)(Chunk481060.S89, {
@@ -185,10 +185,10 @@ function f() {
     }, "preview-collections"), (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "disable-collections-cache",
       label: "Disable Collections Cache",
-      checked: I,
+      checked: N,
       action: () => {
         (0, Chunk179658.y)({
-          disableAppCollectionsCache: !I
+          disableAppCollectionsCache: !N
         })
       }
     }, "disable-collections-cache")]
@@ -268,7 +268,7 @@ function f() {
     label: "Vertical Spacing",
     control: (e, t) => (0, a.jsx)(r._wy, O(y({}, e), {
       ref: t,
-      value: N,
+      value: I,
       minValue: 0,
       maxValue: T,
       onChange: e => k(e),

@@ -1,10 +1,10 @@
 /** Chunk was on 93886 **/
-/** chunk id: 101805, original params: e,t,n (module,exports,require) **/
+/** chunk id: 101805, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => r
 });
 
-function a(e) {
+function r(e) {
   return {
     id: e.id,
     name: e.name,

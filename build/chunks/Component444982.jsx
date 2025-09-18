@@ -1,7 +1,7 @@
-/** Chunk was on 46290 **/
+/** Chunk was on 50751 **/
 /** chunk id: 444982, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk239091 = require("./239091.js"),
@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -42,7 +42,7 @@ function _(e) {
   return e
 }
 
-function S(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -54,7 +54,7 @@ function S(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = {
+let j = {
   [Chunk981631.Odu.VIDEO]: {
     renderWidget(e) {
       let {
@@ -86,7 +86,7 @@ let x = {
             let {
               default: t
             } = await n.e("26775").then(n.bind(n, 740579));
-            return n => (0, i.jsx)(t, S(_({}, n), {
+            return n => (0, i.jsx)(t, x(b({}, n), {
               widget: e
             }))
           })
@@ -112,8 +112,8 @@ let x = {
         id: n.id,
         locked: l,
         pinned: n.pinned,
-        widget: b.Odu.VOICE_V3,
-        maxDisplayedVoiceStates: null != (t = n.meta.voiceStatesMaxShown) ? t : v.At,
+        widget: v.Odu.VOICE_V3,
+        maxDisplayedVoiceStates: null != (t = n.meta.voiceStatesMaxShown) ? t : E.At,
         isPreviewingInGame: false,
         showEmpty: o
       }) : null
@@ -128,7 +128,7 @@ let x = {
             let {
               default: e
             } = await n.e("32382").then(n.bind(n, 955280));
-            return t => (0, i.jsx)(e, _({}, t))
+            return t => (0, i.jsx)(e, b({}, t))
           })
         }
       }), (0, i.jsx)(y.RT, {
@@ -159,7 +159,7 @@ let x = {
             let {
               default: e
             } = await n.e("38813").then(n.bind(n, 541501));
-            return t => (0, i.jsx)(e, _({}, t))
+            return t => (0, i.jsx)(e, b({}, t))
           })
         }
       }), (0, i.jsx)(y.RT, {
@@ -200,11 +200,11 @@ let x = {
         dragStart: o,
         anchorTop: a,
         anchorLeft: s,
-        showEmpty: c,
+        showEmpty: u,
         padding: d,
         borderWidth: h
       } = e;
-      return (0, p.ZL)(n) ? (0, i.jsx)(u.Z, {
+      return (0, p.ZL)(n) ? (0, i.jsx)(c.Z, {
         id: n.id,
         locked: r,
         pinned: n.pinned,
@@ -218,12 +218,12 @@ let x = {
         horizontal: null != (t = n.meta.horizontal) && t,
         padding: d,
         borderWidth: h,
-        showEmpty: c
+        showEmpty: u
       }) : null
     },
     renderTitle: e => (0, i.jsx)(y.XM, {
       widgetId: e.id,
-      children: E.intl.string(E.t["386XRk"])
+      children: S.intl.string(S.t["386XRk"])
     }),
     renderButtons(e) {
       var t;
@@ -234,7 +234,7 @@ let x = {
               let {
                 default: t
               } = await n.e("34684").then(n.bind(n, 68738));
-              return n => (0, i.jsx)(t, S(_({}, n), {
+              return n => (0, i.jsx)(t, x(b({}, n), {
                 widget: e
               }))
             })
@@ -283,7 +283,7 @@ let x = {
             let {
               default: e
             } = await n.e("94706").then(n.bind(n, 168133));
-            return t => (0, i.jsx)(e, _({}, t))
+            return t => (0, i.jsx)(e, b({}, t))
           })
         }
       }), (0, i.jsx)(y.RT, {
@@ -312,7 +312,7 @@ let x = {
       let {
         locked: t
       } = e;
-      return (0, i.jsx)(c.Z, {
+      return (0, i.jsx)(u.Z, {
         locked: t
       })
     },

@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 564488, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => m
 }), require("./388685.js");
@@ -20,27 +21,27 @@ let m = Chunk647438.memo(function(e) {
   } = e, {
     hasChanges: g,
     editingRule: p,
-    createNewEditingRule: h,
-    setEditingRule: f
-  } = (0, s.V)(), {
-    isLoading: b
-  } = (0, s.w)(), [x] = i.useState(() => !(0, l.Vb)(t)), j = (null == p ? true : p.id) === t.id || n, v = (0, a.U)(null == t ? true : t.id), _ = j && null != p ? p : t, O = i.useMemo(() => (0, o.af)(t.name), [null == t ? true : t.name]), y = i.useCallback(() => {
-    h(t.guildId, t.triggerType)
-  }, [t.guildId, t.triggerType, h]), C = i.useCallback(e => {
-    b || f(e, true)
-  }, [b, f]);
+    createNewEditingRule: f,
+    setEditingRule: h
+  } = (0, a.V)(), {
+    isLoading: x
+  } = (0, a.w)(), [b] = i.useState(() => !(0, l.Vb)(t)), j = (null == p ? true : p.id) === t.id || n, v = (0, s.U)(null == t ? true : t.id), _ = j && null != p ? p : t, O = i.useMemo(() => (0, o.af)(t.name), [null == t ? true : t.name]), y = i.useCallback(() => {
+    f(t.guildId, t.triggerType)
+  }, [t.guildId, t.triggerType, f]), C = i.useCallback(e => {
+    x || h(e, true)
+  }, [x, h]);
   i.useEffect(() => {
-    m && f(t, true)
-  }, [m, t, f]);
+    m && h(t, true)
+  }, [m, t, h]);
   let N = i.useCallback(() => {
-    j ? g || f(null) : g ? O(() => {
-      f(t)
-    }) : f(t)
-  }, [j, g, O, t, f]);
+    j ? g || h(null) : g ? O(() => {
+      h(t)
+    }) : h(t)
+  }, [j, g, O, t, h]);
   return (0, r.jsx)(d.Z, {
     renderHeader: (0, r.jsx)(u.Z, {
       rule: _,
-      forceSetup: x && !j && !v,
+      forceSetup: b && !j && !v,
       triggerType: t.triggerType,
       isEditMode: j,
       isDefaultRule: v,
@@ -52,7 +53,7 @@ let m = Chunk647438.memo(function(e) {
     onExpand: N,
     children: j && (0, r.jsx)(c.Z, {
       rule: _,
-      isLoading: b,
+      isLoading: x,
       onChangeRule: C
     })
   })

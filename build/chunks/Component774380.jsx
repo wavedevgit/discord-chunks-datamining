@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 774380, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => p
 });
@@ -26,7 +27,7 @@ let g = e => {
         fullWidth: true,
         text: u.intl.string(u.t.hvVgAQ),
         onClick: () => {
-          (0, a.z)(), null != t && t()
+          (0, s.z)(), null != t && t()
         }
       })
     });
@@ -36,10 +37,10 @@ let g = e => {
         className: m.tier0Heading,
         variant: "heading-xxl/extrabold",
         children: u.intl.string(u.t["qUl+Ky"])
-      }), (0, r.jsx)(s.wp, {
+      }), (0, r.jsx)(a.wp, {
         className: m.tier0Card,
         ctaButton: n,
-        featureSet: s.uZ.BOOSTING,
+        featureSet: a.uZ.BOOSTING,
         showWumpus: true,
         showYearlyPrice: true
       })]

@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 949640, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   E6: () => m,
   f4: () => g,
@@ -18,8 +19,8 @@ function u(e) {
   let {
     uploadType: t,
     maxFileSizeBytes: l,
-    onComplete: a,
-    showUpsellHeader: s = true,
+    onComplete: s,
+    showUpsellHeader: a = true,
     analyticsLocation: o,
     analyticsLocations: c
   } = e;
@@ -46,9 +47,9 @@ function u(e) {
       return e
     }({
       maxFileSizeBytes: l,
-      onComplete: a,
+      onComplete: s,
       uploadType: t,
-      showUpsellHeader: s,
+      showUpsellHeader: a,
       analyticsLocation: o,
       analyticsLocations: c
     }, n))
@@ -61,7 +62,7 @@ function m(e) {
     analyticsLocations: n,
     analyticsSection: r,
     analyticsObject: i,
-    perks: a,
+    perks: s,
     targetPremiumGuildTier: c
   } = e;
   (0, l.yw)(d.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
@@ -72,7 +73,7 @@ function m(e) {
     },
     guild_id: t.id,
     location_stack: n
-  }), (0, s.Z)({
+  }), (0, a.Z)({
     analyticsLocations: n,
     analyticsSourceLocation: {
       section: r,
@@ -80,7 +81,7 @@ function m(e) {
       page: d.ZY5.GUILD_SETTINGS
     },
     guild: t,
-    perks: a
+    perks: s
   })
 }
 
@@ -94,7 +95,7 @@ function g(e, t, n, r) {
   if (null != i && null != n)
     if ("image/gif" !== i || e.features.has(d.oNc.ANIMATED_BANNER)) {
       if (!e.features.has(d.oNc.BANNER)) {
-        l.object = d.qAy.IMAGE_CROPPING_MODAL, (0, a.c)({
+        l.object = d.qAy.IMAGE_CROPPING_MODAL, (0, s.c)({
           guild: e,
           analyticsLocations: t,
           analyticsLocation: l,
@@ -104,7 +105,7 @@ function g(e, t, n, r) {
         return
       }
     } else {
-      l.object = d.qAy.GIF_CROPPING_MODAL, (0, a.c)({
+      l.object = d.qAy.GIF_CROPPING_MODAL, (0, s.c)({
         guild: e,
         analyticsLocations: t,
         analyticsLocation: l,

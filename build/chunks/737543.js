@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 737543, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   enableSwitch: "enableSwitch__3c9fa",
   divider: "divider__3c9fa",

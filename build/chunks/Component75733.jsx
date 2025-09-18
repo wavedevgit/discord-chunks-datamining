@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 75733, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => v
 }), require("./388685.js");
@@ -16,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk83552 = require("./83552.js"),
   Chunk270856 = require("./270856.js");
 
-function h(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,11 +35,11 @@ function h(e) {
   }
   return e
 }
-let f = {
+let h = {
   label: ""
 };
 
-function b(e) {
+function x(e) {
   let {
     emoji: t,
     disabled: n,
@@ -46,13 +47,13 @@ function b(e) {
   } = e, m = i.useRef(null), g = i.useMemo(() => null == t || null == t.name ? null : function() {
     var e;
     let n = c.ZP.isCustomEmoji(t) ? t.name : t.surrogates;
-    return (0, r.jsx)(a.Z, {
+    return (0, r.jsx)(s.Z, {
       animated: null != (e = t.animated) && e,
       emojiId: t.id,
       emojiName: n
     })
   }, [t]);
-  return n ? (0, r.jsx)(s.Z, {
+  return n ? (0, r.jsx)(a.Z, {
     tabIndex: false,
     active: false,
     renderButtonContents: g
@@ -74,7 +75,7 @@ function b(e) {
       let {
         isShown: l
       } = t;
-      return (0, r.jsx)(s.Z, (n = h({}, e), i = i = {
+      return (0, r.jsx)(a.Z, (n = f({}, e), i = i = {
         ref: m,
         tabIndex: 0,
         active: l,
@@ -93,31 +94,31 @@ function b(e) {
   })
 }
 
-function x(e) {
+function b(e) {
   let {
     guildId: t,
     trait: n,
-    index: a,
-    onTraitUpdate: s,
+    index: s,
+    onTraitUpdate: a,
     disabled: o
   } = e, c = i.useCallback(() => {
-    s(t, a, {
+    a(t, s, {
       emoji: true,
       label: ""
     })
-  }, [t, a, s]), d = i.useCallback(e => n => {
+  }, [t, s, a]), d = i.useCallback(e => n => {
     let {
       emoji: r,
       willClose: i
     } = n;
-    s(t, a, {
+    a(t, s, {
       emoji: null != r ? r : true
     }), i && e()
-  }, [t, a, s]), u = i.useCallback(e => {
-    s(t, a, {
+  }, [t, s, a]), u = i.useCallback(e => {
+    a(t, s, {
       label: e
     })
-  }, [t, a, s]), m = i.useMemo(() => n.emoji, [n.emoji]), p = null != n.label && n.label.length > 0 || null != n.emoji;
+  }, [t, s, a]), m = i.useMemo(() => n.emoji, [n.emoji]), p = null != n.label && n.label.length > 0 || null != n.emoji;
   return (0, r.jsx)("div", {
     className: g.traitWrapper,
     children: (0, r.jsx)(l.oil, {
@@ -127,7 +128,7 @@ function x(e) {
       maxLength: 24,
       leading: {
         type: "emoji",
-        button: (0, r.jsx)(b, {
+        button: (0, r.jsx)(x, {
           emoji: m,
           disabled: o,
           handleSelectEmoji: d
@@ -146,12 +147,12 @@ function v(e) {
   let {
     profile: t,
     canManageGuild: n
-  } = e, a = i.useMemo(() => t.traits, [t]), s = i.useCallback((e, t, n) => {
-    let r = [...a];
-    r[t] = h({}, a[t], n), d.Z.updateGuildProfile(e, {
+  } = e, s = i.useMemo(() => t.traits, [t]), a = i.useCallback((e, t, n) => {
+    let r = [...s];
+    r[t] = f({}, s[t], n), d.Z.updateGuildProfile(e, {
       traits: r
     })
-  }, [a]);
+  }, [s]);
   return (0, r.jsxs)(l.hjN, {
     className: p.section,
     children: [(0, r.jsxs)("div", {
@@ -166,11 +167,11 @@ function v(e) {
       className: g.grid,
       children: j.map(e => {
         var i;
-        return (0, r.jsx)(x, {
+        return (0, r.jsx)(b, {
           guildId: t.id,
-          trait: null != (i = a[e]) ? i : f,
+          trait: null != (i = s[e]) ? i : h,
           index: e,
-          onTraitUpdate: s,
+          onTraitUpdate: a,
           disabled: !n
         }, "trait-".concat(e))
       })

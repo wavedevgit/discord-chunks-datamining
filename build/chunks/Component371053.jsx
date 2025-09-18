@@ -1,8 +1,8 @@
-/** Chunk was on 46290 **/
+/** Chunk was on 50751 **/
 /** chunk id: 371053, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  N: () => b,
-  P: () => v
+  N: () => v,
+  P: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,32 +21,32 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function v(e) {
+function E(e) {
   let {
     pid: t,
     analyticsLocation: n,
     allowOneClickGoLive: i = false,
     onBeforeShowModal: o,
-    onOneClickGoLive: c,
+    onOneClickGoLive: u,
     appContext: g
-  } = e, y = (0, l.e7)([f.Z], () => f.Z.getVoiceChannelId()), O = (0, l.e7)([u.Z], () => u.Z.getChannel(y), [y]), v = (0, l.e7)([m.default], () => m.default.getCurrentUser()), b = null == O ? true : O.getGuildId(), _ = (0, l.e7)([p.Z], () => (0, s.Z)(p.Z)), S = (0, l.e7)([d.Z, h.Z], () => null != O && (0, a.JL)(O, d.Z, h.Z));
+  } = e, y = (0, l.e7)([f.Z], () => f.Z.getVoiceChannelId()), O = (0, l.e7)([c.Z], () => c.Z.getChannel(y), [y]), E = (0, l.e7)([m.default], () => m.default.getCurrentUser()), v = null == O ? true : O.getGuildId(), b = (0, l.e7)([p.Z], () => (0, s.Z)(p.Z)), x = (0, l.e7)([d.Z, h.Z], () => null != O && (0, a.JL)(O, d.Z, h.Z));
   return r.useCallback(async () => {
-    await E({
+    await S({
       pid: t,
       voiceChannelId: y,
-      user: v,
-      targetGuildId: b,
-      canGoLive: _,
-      canStream: S,
+      user: E,
+      targetGuildId: v,
+      canGoLive: b,
+      canStream: x,
       analyticsLocation: n,
       allowOneClickGoLive: i,
       onBeforeShowModal: o,
-      onOneClickGoLive: c,
+      onOneClickGoLive: u,
       appContext: g
     })
-  }, [t, y, v, b, _, S, n, i, o, c, g])
+  }, [t, y, E, v, b, x, n, i, o, u, g])
 }
-async function b(e) {
+async function v(e) {
   let {
     pid: t,
     analyticsLocation: n,
@@ -54,14 +54,14 @@ async function b(e) {
     onBeforeShowModal: r,
     onOneClickGoLive: l,
     appContext: o
-  } = e, c = f.Z.getVoiceChannelId(), g = u.Z.getChannel(c), y = m.default.getCurrentUser(), O = null == g ? true : g.getGuildId(), v = null != g && (0, a.JL)(g, d.Z, h.Z), b = (0, s.Z)(p.Z);
-  await E({
+  } = e, u = f.Z.getVoiceChannelId(), g = c.Z.getChannel(u), y = m.default.getCurrentUser(), O = null == g ? true : g.getGuildId(), E = null != g && (0, a.JL)(g, d.Z, h.Z), v = (0, s.Z)(p.Z);
+  await S({
     pid: t,
-    voiceChannelId: c,
+    voiceChannelId: u,
     user: y,
     targetGuildId: O,
-    canGoLive: b,
-    canStream: v,
+    canGoLive: v,
+    canStream: E,
     analyticsLocation: n,
     allowOneClickGoLive: i,
     onBeforeShowModal: r,
@@ -69,23 +69,23 @@ async function b(e) {
     appContext: o
   })
 }
-async function E(e) {
+async function S(e) {
   let {
     pid: t,
     voiceChannelId: r,
     user: l,
     targetGuildId: a,
     canGoLive: s,
-    canStream: u,
+    canStream: c,
     analyticsLocation: d,
     allowOneClickGoLive: p,
     onBeforeShowModal: h,
     onOneClickGoLive: f,
     appContext: m
   } = e;
-  if (s && u) {
+  if (s && c) {
     if (p && null !== r) {
-      let [e] = await (0, c.Z)(t);
+      let [e] = await (0, u.Z)(t);
       if (e) {
         null == f || f();
         return

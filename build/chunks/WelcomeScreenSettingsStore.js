@@ -1,7 +1,8 @@
 /** Chunk was on 8106 **/
 /** chunk id: 575258, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 }), require("./953529.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -30,18 +31,18 @@ function p(e) {
   let {
     welcomeScreen: t,
     guildId: n
-  } = e, r = a.Z.getGuild(n);
+  } = e, r = s.Z.getGuild(n);
   if (null != t) {
     var i, l;
     g = d = {
       description: null != (i = t.description) ? i : "",
       channels: null != (l = t.welcome_channels) ? l : [],
-      enabled: null == r ? true : r.features.has(s.oNc.WELCOME_SCREEN_ENABLED)
+      enabled: null == r ? true : r.features.has(a.oNc.WELCOME_SCREEN_ENABLED)
     }
   } else g = d = c;
   m = false
 }
-class h extends(r = Chunk442837.ZP.Store) {
+class f extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk430824.Z)
   }
@@ -60,8 +61,8 @@ class h extends(r = Chunk442837.ZP.Store) {
     }
   }
 }
-o(h, "displayName", "WelcomeScreenSettingsStore");
-let f = new h(Chunk570140.Z, {
+o(f, "displayName", "WelcomeScreenSettingsStore");
+let h = new f(Chunk570140.Z, {
   WELCOME_SCREEN_FETCH_SUCCESS: p,
   WELCOME_SCREEN_UPDATE: p,
   WELCOME_SCREEN_SETTINGS_RESET: function() {

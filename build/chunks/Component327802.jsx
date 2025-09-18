@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 327802, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   X: () => c,
   Z: () => d
@@ -31,11 +32,11 @@ let c = e => {
         }))
       }
     };
-    return (0, r.jsx)(a.Z, {
+    return (0, r.jsx)(s.Z, {
       className: t,
       title: o.intl.string(o.t.DU0dy8),
       description: o.intl.string(o.t.bpycfH),
-      icons: s.pA,
+      icons: a.pA,
       onDrop: e => {
         let t = null == e ? true : e[0];
         null != t && (0, i.ZDy)(async () => {
@@ -72,12 +73,12 @@ let c = e => {
       style: n,
       onDrop: i
     } = e;
-    return (0, r.jsx)(a.Z, {
+    return (0, r.jsx)(s.Z, {
       className: t,
       style: n,
       title: o.intl.string(o.t.DU0dy8),
       description: o.intl.string(o.t.bpycfH),
-      icons: s.pA,
+      icons: a.pA,
       onDrop: i
     })
   }

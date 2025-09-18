@@ -1,12 +1,13 @@
 /** Chunk was on 8106 **/
 /** chunk id: 665324, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => F
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk525654 = require("./525654.js"),
   o = require.n(Chunk525654),
   Chunk442837 = require("./442837.js"),
@@ -107,11 +108,11 @@ function z(e) {
     currentTier: t,
     availableSounds: n,
     guildId: i
-  } = e, l = E.Z.getGuild(i), a = null != l ? (0, P.nL)(l) : 0;
+  } = e, l = E.Z.getGuild(i), s = null != l ? (0, P.nL)(l) : 0;
   return 0 === t ? (0, r.jsx)(r.Fragment, {
     children: k.intl.format(k.t["7E9Hd3"], {
       slots: n,
-      totalSlots: a
+      totalSlots: s
     })
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(m.ua7, {
@@ -121,7 +122,7 @@ function z(e) {
       children: e => (0, r.jsx)(m.P3F, {
         className: M.boostingIconWrapper,
         onClick: () => {
-          (0, x.f)({
+          (0, b.f)({
             guildId: i,
             location: {
               section: A.jXE.GUILD_SETTINGS_SOUNDBOARD,
@@ -134,7 +135,7 @@ function z(e) {
       })
     }), k.intl.format(k.t.HHCdvb, {
       slots: n,
-      totalSlots: a,
+      totalSlots: s,
       boostLevel: t
     })]
   })
@@ -144,7 +145,7 @@ let V = e => {
       renderPopoutBody: t,
       renderPopoutChildren: n,
       popoutTargetRef: l
-    } = e, a = function(e, t) {
+    } = e, s = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -159,20 +160,20 @@ let V = e => {
       }
       return i
     }(e, ["renderPopoutBody", "renderPopoutChildren", "popoutTargetRef"]);
-    let [s, o] = i.useState(false), c = i.useMemo(() => new d.V7, []), u = i.useCallback(() => {
+    let [a, o] = i.useState(false), c = i.useMemo(() => new d.V7, []), u = i.useCallback(() => {
       c.stop(), o(true)
     }, [c]), g = i.useCallback(() => {
       c.start(200, () => o(false))
     }, [c]);
     return (0, r.jsx)(m.yRy, U(G({
-      shouldShow: s,
+      shouldShow: a,
       renderPopout: e => (0, r.jsx)(m.VqE, {
         className: M.browserUnsupportedDialog,
         onMouseEnter: u,
         onMouseLeave: g,
         children: t(e)
       })
-    }, a), {
+    }, s), {
       targetElementRef: l,
       children: e => n(e)
     }))
@@ -197,19 +198,19 @@ let V = e => {
 function K(e) {
   let {
     guild: t
-  } = e, [l, a] = (0, c.Wu)([_.Z], () => {
+  } = e, [l, s] = (0, c.Wu)([_.Z], () => {
     var e;
     return [null != (e = _.Z.getSoundsForGuild(t.id)) ? e : L.Hy, _.Z.isFetchingSounds() || _.Z.isFetchingDefaultSounds()]
   }), {
-    canCreateExpressions: s
-  } = (0, j.XJ)(t), o = i.useRef(null), d = (0, h.ZP)(), u = t.premiumTier, g = (0, P.yw)(t, l, u);
+    canCreateExpressions: a
+  } = (0, j.XJ)(t), o = i.useRef(null), d = (0, f.ZP)(), u = t.premiumTier, g = (0, P.yw)(t, l, u);
   i.useEffect(() => {
     (0, v.w)()
   }, []);
   let p = i.useMemo(() => l.reduce((e, t) => (e[t.soundId] = new Audio((0, O.Z)(t.soundId)), e), {}), [l]),
-    f = 0 === l.length && !a;
+    h = 0 === l.length && !s;
 
-  function b(e) {
+  function x(e) {
     var t;
     null == (t = o.current) || t.pause();
     let n = p[e.soundId];
@@ -218,8 +219,8 @@ function K(e) {
   if (i.useEffect(() => () => {
       var e;
       null == (e = o.current) || e.pause()
-    }, []), a) return (0, r.jsx)(m.$jN, {});
-  let x = B ? (0, r.jsx)(m.zxk, {
+    }, []), s) return (0, r.jsx)(m.$jN, {});
+  let b = B ? (0, r.jsx)(m.zxk, {
     variant: "primary",
     text: k.intl.string(k.t["/uNYPD"]),
     onClick: function() {
@@ -232,7 +233,7 @@ function K(e) {
         }))
       })
     },
-    disabled: g <= 0 || !s
+    disabled: g <= 0 || !a
   }) : (0, r.jsx)(W, {});
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -243,9 +244,9 @@ function K(e) {
         children: k.intl.string(k.t.BohnsL)
       }), (0, r.jsx)("div", {
         className: M.buttons,
-        children: !f && x
+        children: !h && b
       })]
-    }), f ? (0, r.jsxs)(m.ubH, {
+    }), h ? (0, r.jsxs)(m.ubH, {
       theme: d,
       className: M.empty,
       children: [(0, r.jsx)(m.oxh, {
@@ -257,7 +258,7 @@ function K(e) {
         note: k.intl.string(k.t.ZhoSBA),
         noteClassName: M.emptyText,
         children: k.intl.string(k.t.I6P1p6)
-      }), x]
+      }), b]
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(m.$i$, {
         className: M.divider
@@ -289,7 +290,7 @@ function K(e) {
           sound: e,
           isPlaying: false,
           guild: t,
-          onPlaySound: b
+          onPlaySound: x
         }, e.soundId))]
       })]
     })]
@@ -300,20 +301,20 @@ function Y(e) {
   let {
     sound: t,
     isPlaying: l,
-    onPlaySound: s,
+    onPlaySound: a,
     guild: o
   } = e, {
     soundId: d,
     name: u,
-    user: h,
-    userId: f,
-    emojiId: x,
+    user: f,
+    userId: h,
+    emojiId: b,
     emojiName: _
   } = t, {
     analyticsLocations: O
-  } = (0, b.ZP)(), y = (0, c.e7)([I.default], () => null != h ? h : I.default.getUser(f), [f, h]), {
+  } = (0, x.ZP)(), y = (0, c.e7)([I.default], () => null != f ? f : I.default.getUser(h), [h, f]), {
     canManageGuildExpression: E
-  } = (0, j.XJ)(o), S = i.useMemo(() => E(t), [t, E]), P = null != x || null != _, [w, Z] = i.useState(false), D = (0, C.z)(t, o.id);
+  } = (0, j.XJ)(o), S = i.useMemo(() => E(t), [t, E]), P = null != b || null != _, [w, Z] = i.useState(false), D = (0, C.z)(t, o.id);
   async function A() {
     if (!w) {
       Z(true);
@@ -327,9 +328,9 @@ function Y(e) {
   i.useEffect(() => {
     null == y && e();
     async function e() {
-      await (0, g.PR)(f)
+      await (0, g.PR)(h)
     }
-  }, [y, f]);
+  }, [y, h]);
   let L = i.useCallback(() => {
       null != y && (0, N.openUserProfileModal)({
         userId: y.id,
@@ -339,11 +340,11 @@ function Y(e) {
     }, [y, o.id, O]),
     B = R.ZP.useUserTag(y);
   return (0, r.jsxs)("div", {
-    className: a()(M.row, {
+    className: s()(M.row, {
       [M.active]: l
     }),
     children: [P ? (0, r.jsx)(p.Z, {
-      emojiId: x,
+      emojiId: b,
       emojiName: _,
       className: M.emoji
     }) : (0, r.jsx)(m.XBm, {
@@ -352,7 +353,7 @@ function Y(e) {
       className: M.emoji
     }), (0, r.jsx)(m.P3F, {
       onClick: () => {
-        w || s(t)
+        w || a(t)
       },
       onContextMenu: D,
       className: M.soundName,

@@ -1,12 +1,13 @@
 /** Chunk was on 8106 **/
 /** chunk id: 2348, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => S
 }), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk692547 = require("./692547.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -59,9 +60,9 @@ function C(e) {
   let {
     guild: t,
     channel: i
-  } = e, l = (0, b.Mf)(i.id);
+  } = e, l = (0, x.Mf)(i.id);
   return "null" === i.id ? (0, r.jsx)("div", {
-    className: a()(_.categoryRow, _.uncategorized),
+    className: s()(_.categoryRow, _.uncategorized),
     children: (0, r.jsx)(c.Text, {
       className: _.categoryText,
       color: "text-muted",
@@ -70,7 +71,7 @@ function C(e) {
       children: i.name
     })
   }) : (0, r.jsxs)(c.P3F, {
-    className: a()(_.categoryRow, {
+    className: s()(_.categoryRow, {
       [_.uncategorized]: "null" === i.id
     }),
     onContextMenu: e => {
@@ -84,7 +85,7 @@ function C(e) {
         }))
       })
     },
-    onClick: e => (e.stopPropagation(), (0, m.s)(t.id, i.id) ? (0, f.pt)(i.id) : (0, c.ZDy)(async () => {
+    onClick: e => (e.stopPropagation(), (0, m.s)(t.id, i.id) ? (0, h.pt)(i.id) : (0, c.ZDy)(async () => {
       let {
         default: e
       } = await n.e("35641").then(n.bind(n, 89216));
@@ -128,11 +129,11 @@ let N = Chunk647438.memo(function() {
       channel: t,
       category: i,
       guild: l,
-      isFirstChannel: h,
+      isFirstChannel: f,
       isLastChannel: C,
       tooltipDirection: I = "right"
-    } = e, S = (0, b.Mf)(t.id, i.id), T = (0, b.t4)(t.id, i.id), P = (0, b.EH)(t.id, i.id), w = (0, b.lL)(l.id, i.id), R = null != (0, x.Z)(l).find(e => e.id === t.id), Z = (0, g.mn)(t.id), D = e => {
-      if (!T) return e.stopPropagation(), (0, m.s)(l.id, t.id) ? (0, f.pt)(t.id) : (0, c.ZDy)(async () => {
+    } = e, S = (0, x.Mf)(t.id, i.id), T = (0, x.t4)(t.id, i.id), P = (0, x.EH)(t.id, i.id), w = (0, x.lL)(l.id, i.id), R = null != (0, b.Z)(l).find(e => e.id === t.id), Z = (0, g.mn)(t.id), D = e => {
+      if (!T) return e.stopPropagation(), (0, m.s)(l.id, t.id) ? (0, h.pt)(t.id) : (0, c.ZDy)(async () => {
         let {
           default: e
         } = await n.e("35641").then(n.bind(n, 89216));
@@ -166,8 +167,8 @@ let N = Chunk647438.memo(function() {
         delay: 500,
         position: I,
         children: e => (0, r.jsxs)(c.P3F, y(O({
-          className: a()(_.channelRow, {
-            [_.firstChannel]: h,
+          className: s()(_.channelRow, {
+            [_.firstChannel]: f,
             [_.lastChannel]: C,
             [_.disabled]: T
           })
@@ -208,7 +209,7 @@ let N = Chunk647438.memo(function() {
               value: S,
               type: o.M0.INVERTED,
               disabled: T,
-              color: Z ? s.Z.colors.BG_BRAND.css : s.Z.colors.BUTTON_SECONDARY_BACKGROUND.css,
+              color: Z ? a.Z.colors.BG_BRAND.css : a.Z.colors.BUTTON_SECONDARY_BACKGROUND.css,
               innerClassName: _.checkboxInner,
               displayOnly: true
             }) : (0, r.jsx)(c.zxk, {
@@ -229,8 +230,8 @@ function S(e) {
     categories: t,
     guild: n,
     className: l,
-    hasSidebar: a
-  } = e, s = i.useCallback(e => {
+    hasSidebar: s
+  } = e, a = i.useCallback(e => {
     let i = t._categories[e];
     return (0, r.jsx)(C, {
       channel: i.channel,
@@ -238,20 +239,20 @@ function S(e) {
     }, i.channel.id)
   }, [t, n]), o = i.useCallback((e, i) => {
     let l = t._categories[e],
-      s = t[l.channel.id][i];
-    return null == s ? null : (0, r.jsx)(I, {
+      a = t[l.channel.id][i];
+    return null == a ? null : (0, r.jsx)(I, {
       category: l.channel,
-      channel: s.channel,
+      channel: a.channel,
       guild: n,
       isFirstChannel: 0 === i,
       isLastChannel: t[l.channel.id].length - 1 === i,
-      tooltipDirection: a ? "right" : "top"
-    }, s.channel.id)
-  }, [t, n, a]), c = (0, h.tn)(n.id, t, 64);
+      tooltipDirection: s ? "right" : "top"
+    }, a.channel.id)
+  }, [t, n, s]), c = (0, f.tn)(n.id, t, 64);
   return (0, r.jsx)("div", {
     className: l,
     children: c.map((e, t) => {
-      let n = s(t),
+      let n = a(t),
         i = [],
         l = e.rowCount;
       if (0 === l) return null;

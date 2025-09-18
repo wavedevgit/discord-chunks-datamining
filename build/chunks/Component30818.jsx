@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 30818, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   z: () => c
 });
@@ -22,15 +23,15 @@ function c(e) {
     children: [(0, r.jsxs)("div", {
       className: o.halfWidth,
       children: [(0, r.jsx)(l.vwX, {
-        children: s.intl.string(s.t["23TVho"])
+        children: a.intl.string(a.t["23TVho"])
       }), (0, r.jsxs)(i.xvT, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        children: [s.intl.string(s.t.U4LwWF), " ", s.intl.string(s.t.xdY0pK)]
+        children: [a.intl.string(a.t.U4LwWF), " ", a.intl.string(a.t.xdY0pK)]
       })]
     }), (0, r.jsx)("div", {
       className: o.halfWidth,
-      children: (0, r.jsx)(a.z, {
+      children: (0, r.jsx)(s.z, {
         guildId: t,
         defaultSettings: n,
         canManageGuild: c

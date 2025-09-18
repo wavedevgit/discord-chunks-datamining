@@ -1,7 +1,8 @@
 /** Chunk was on 8106 **/
 /** chunk id: 700833, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Md: () => h,
+  Md: () => f,
   a0: () => p
 });
 var Chunk951288 = require("./951288.js");
@@ -51,9 +52,9 @@ function p(e) {
   let {
     dropHoveredIndex: t,
     formField: p,
-    guild: h,
-    index: b,
-    isDragEnabled: x,
+    guild: f,
+    index: x,
+    isDragEnabled: b,
     submittedGuildJoinRequestsCount: j,
     removeFormField: v,
     updateFormField: _,
@@ -62,25 +63,25 @@ function p(e) {
     actionsLocation: C,
     fieldStyle: N
   } = e, E = async () => {
-    await v(b)
+    await v(x)
   }, I = async e => {
-    await _(b, e)
+    await _(x, e)
   }, S = async (e, t, n) => {
     await O(e, t, n)
-  }, T = (0, i.uniqueId)(), P = t === b, w = {
+  }, T = (0, i.uniqueId)(), P = t === x, w = {
     key: T,
-    index: b,
-    isDragEnabled: x,
+    index: x,
+    isDragEnabled: b,
     isDropHovered: P,
     onEdit: () => {
-      0 === j ? f(p, I, h) : (0, l.ZDy)(async () => {
+      0 === j ? h(p, I, f) : (0, l.ZDy)(async () => {
         let {
           default: e
         } = await n.e("74673").then(n.bind(n, 394045));
         return t => (0, r.jsx)(e, g(m({}, t), {
-          guildId: h.id,
+          guildId: f.id,
           submittedGuildJoinRequestsCount: j,
-          onConfirm: () => f(p, I, h)
+          onConfirm: () => h(p, I, f)
         }))
       })
     },
@@ -91,22 +92,22 @@ function p(e) {
     fieldStyle: N
   };
   switch (p.field_type) {
-    case a.QJ.TERMS:
+    case s.QJ.TERMS:
       return (0, r.jsx)(c.Z, m({
-        channelId: h.rulesChannelId,
-        title: N === a.it.COMPACT ? u.intl.string(u.t["55+giY"]) : u.intl.string(u.t["53vNcH"]),
+        channelId: f.rulesChannelId,
+        title: N === s.it.COMPACT ? u.intl.string(u.t["55+giY"]) : u.intl.string(u.t["53vNcH"]),
         formField: p
       }, w));
-    case a.QJ.PARAGRAPH:
+    case s.QJ.PARAGRAPH:
       return (0, r.jsx)(o.Z, m({
         formField: p
       }, w));
-    case a.QJ.TEXT_INPUT:
+    case s.QJ.TEXT_INPUT:
       return (0, r.jsx)(d.Z, m({
         formField: p
       }, w));
-    case a.QJ.MULTIPLE_CHOICE:
-      return (0, r.jsx)(s.Z, m({
+    case s.QJ.MULTIPLE_CHOICE:
+      return (0, r.jsx)(a.Z, m({
         formField: p
       }, w));
     default:
@@ -114,9 +115,9 @@ function p(e) {
   }
 }
 
-function h(e, t, i) {
+function f(e, t, i) {
   switch (e) {
-    case a.QJ.TERMS:
+    case s.QJ.TERMS:
       return (0, l.ZDy)(async () => {
         let {
           default: e
@@ -127,7 +128,7 @@ function h(e, t, i) {
           guild: i
         }))
       });
-    case a.QJ.PARAGRAPH:
+    case s.QJ.PARAGRAPH:
       return (0, l.ZDy)(async () => {
         let {
           ParagraphFormFieldModal: e
@@ -137,7 +138,7 @@ function h(e, t, i) {
           onSave: t
         }))
       });
-    case a.QJ.TEXT_INPUT:
+    case s.QJ.TEXT_INPUT:
       return (0, l.ZDy)(async () => {
         let {
           TextInputFormFieldModal: e
@@ -147,7 +148,7 @@ function h(e, t, i) {
           onSave: t
         }))
       });
-    case a.QJ.MULTIPLE_CHOICE:
+    case s.QJ.MULTIPLE_CHOICE:
       return (0, l.ZDy)(async () => {
         let {
           default: e
@@ -160,9 +161,9 @@ function h(e, t, i) {
   }
 }
 
-function f(e, t, i) {
+function h(e, t, i) {
   switch (e.field_type) {
-    case a.QJ.TERMS:
+    case s.QJ.TERMS:
       return (0, l.ZDy)(async () => {
         let {
           default: l
@@ -173,7 +174,7 @@ function f(e, t, i) {
           guild: i
         }))
       });
-    case a.QJ.PARAGRAPH:
+    case s.QJ.PARAGRAPH:
       return (0, l.ZDy)(async () => {
         let {
           ParagraphFormFieldModal: i
@@ -183,7 +184,7 @@ function f(e, t, i) {
           onSave: t
         }))
       });
-    case a.QJ.TEXT_INPUT:
+    case s.QJ.TEXT_INPUT:
       return (0, l.ZDy)(async () => {
         let {
           TextInputFormFieldModal: i
@@ -193,7 +194,7 @@ function f(e, t, i) {
           onSave: t
         }))
       });
-    case a.QJ.MULTIPLE_CHOICE:
+    case s.QJ.MULTIPLE_CHOICE:
       return (0, l.ZDy)(async () => {
         let {
           default: i

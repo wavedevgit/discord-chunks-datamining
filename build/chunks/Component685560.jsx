@@ -1,11 +1,11 @@
-/** Chunk was on 93886 **/
+/** Chunk was on 85991 **/
 /** chunk id: 685560, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => k
+  Z: () => P
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk913527 = require("./913527.js"),
-  l = require.n(Chunk913527),
+  i = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
   Chunk544891 = require("./544891.js"),
   Chunk704215 = require("./704215.js"),
@@ -28,7 +28,7 @@ let C = [Chunk704215.z.GUILD_POWERUP_PERKS_COACHMARK, Chunk704215.z.GUILD_POWERU
   E = [Chunk704215.C.ADOPT_CLAN_IDENTITY_NOTICE],
   S = [Chunk704215.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION, Chunk704215.z.VANITY_URL_POWERUP_ROLLBACK_MODAL, Chunk704215.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER];
 
-function T(e) {
+function O(e) {
   switch (e) {
     case o.C.GUILD_POWERUP_LEVEL_1_COACHMARK:
       return "GUILD_POWERUP_LEVEL_1_COACHMARK";
@@ -44,23 +44,23 @@ function T(e) {
       return "ADOPT_CLAN_IDENTITY_NOTICE"
   }
 }
-async function O(e, t, n) {
+async function T(e, t, n) {
   await Promise.all(t.map(e => s.tn.patch({
     url: _.ANM.APPLIED_BOOST_MODIFY_END_DATE(e.id),
     body: n ? {} : {
-      ends_at: l()().add(1, "day")
+      ends_at: i()().add(1, "day")
     },
     rejectWithError: true
   }))), (0, d.C0)(e), (0, x.BN)(e, true)
 }
-async function P(e) {
+async function k(e) {
   await s.tn.post({
     url: _.ANM.SEND_POWERUPS_SYSTEM_MESSAGE(e),
     rejectWithError: true
   })
 }
 
-function k() {
+function P() {
   let e = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
     t = (0, Chunk442837.e7)([Chunk430824.Z], () => {
       var t;
@@ -113,13 +113,13 @@ function k() {
           variant: "primary",
           text: "Set Half Boosts expiring in 1 day",
           onClick: () => {
-            O(module, Chunk913527.slice(Math.floor(Chunk913527.length / 2)), false)
+            T(module, Chunk913527.slice(Math.floor(Chunk913527.length / 2)), false)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Reset End Date",
           onClick: () => {
-            O(module, Chunk913527, true)
+            T(module, Chunk913527, true)
           }
         })]
       })]
@@ -147,7 +147,7 @@ function k() {
         value: n.includes(t),
         children: (0, a.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: T(t)
+          children: O(t)
         })
       }, t))]
     }), (0, Chunk951288.jsxs)("div", {
@@ -163,7 +163,7 @@ function k() {
         value: n.includes(t),
         children: (0, a.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: T(t)
+          children: O(t)
         })
       }, t))]
     }), (0, Chunk951288.jsxs)("div", {
@@ -186,7 +186,7 @@ function k() {
         variant: "primary",
         text: "Send System Message",
         onClick: () => {
-          P(module)
+          k(module)
         }
       })]
     }), (0, Chunk951288.jsx)(Chunk481060.zxk, {

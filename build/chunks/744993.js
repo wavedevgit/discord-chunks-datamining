@@ -1,4 +1,4 @@
-/** Chunk was on 93886 **/
+/** Chunk was on 85991 **/
 /** chunk id: 744993, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   EC: () => x,
@@ -32,13 +32,13 @@ function p(e) {
       catalog: o.kd.reduce((e, t) => (e[t.id] = t, e), {})
     })
   }, 5e3);
-  let i = null != (n = null == (t = l.default.getCurrentUser()) ? true : t.isStaff()) && n;
+  let l = null != (n = null == (t = i.default.getCurrentUser()) ? true : t.isStaff()) && n;
   return (0, s.Kb)({
     url: h.ANM.COLLECTION_PUBLISHED_LISTINGS_SKU(m.IU),
     query: {
       guild_id: e,
-      include_unpublished_products: i,
-      include_unpublished_collection: i
+      include_unpublished_products: l,
+      include_unpublished_collection: l
     },
     oldFormErrors: true,
     rejectWithError: false
@@ -81,8 +81,8 @@ function x(e) {
 function b(e, t) {
   if (e) {
     var n;
-    i.default.track(h.rMx.GAME_SERVER_HOSTING_THIRD_PARTY_CONSENT_ACCEPTED, {
-      user_id: null == (n = l.default.getCurrentUser()) ? true : n.id,
+    l.default.track(h.rMx.GAME_SERVER_HOSTING_THIRD_PARTY_CONSENT_ACCEPTED, {
+      user_id: null == (n = i.default.getCurrentUser()) ? true : n.id,
       provider: t
     })
   }

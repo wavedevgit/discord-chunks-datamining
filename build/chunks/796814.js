@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 796814, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => d
 });
@@ -15,10 +16,10 @@ function d(e) {
   let {
     revision: t,
     emojis: n
-  } = (0, i.cj)([s.Z], () => ({
-    revision: s.Z.getEmojiRevision(e),
-    emojis: s.Z.getEmojis(e)
-  })), d = (0, a.Z)(t);
+  } = (0, i.cj)([a.Z], () => ({
+    revision: a.Z.getEmojiRevision(e),
+    emojis: a.Z.getEmojis(e)
+  })), d = (0, s.Z)(t);
   return r.useEffect(() => {
     (0, l.OQ)(e)
   }, [e]), r.useEffect(() => {

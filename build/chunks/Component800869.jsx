@@ -23,24 +23,24 @@ function p(e) {
       alt: "",
       className: u.image,
       src: d
-    }), (0, r.jsx)(o.xvT, {
+    }), (0, r.jsx)(i.xvT, {
       color: "always-white",
       variant: "text-md/semibold",
-      children: c.intl.string(l.default.diMhWV)
-    }), (0, r.jsx)(o.xvT, {
+      children: c.intl.string(s.default.diMhWV)
+    }), (0, r.jsx)(i.xvT, {
       color: "always-white",
       variant: "text-sm/medium",
-      children: c.intl.string(l.default.pycxTk)
+      children: c.intl.string(s.default.pycxTk)
     }), (0, r.jsx)("div", {
       className: u.close,
-      children: (0, r.jsx)(i.hU, {
+      children: (0, r.jsx)(o.hU, {
         variant: "icon-only",
         size: "md",
         "aria-label": c.intl.string(c.t.cpT0Cg),
         onClick: () => {
-          t(s.L.USER_DISMISS)
+          t(a.L.USER_DISMISS)
         },
-        icon: a.Dio
+        icon: l.Dio
       })
     })]
   })

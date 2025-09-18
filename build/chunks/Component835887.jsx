@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 835887, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => p
 });
@@ -20,25 +21,25 @@ function p(e) {
     className: t,
     guildId: n,
     selectedBadge: p
-  } = e, h = i.useCallback(e => {
+  } = e, f = i.useCallback(e => {
     c.Z.updateGuildProfile(n, {
       badge: e
     })
-  }, [n]), f = i.useCallback(() => {
-    (0, o.Z)(n, a.Z.GUILD_POWERUPS_GUILD_SETTINGS_TAGS, "guildTagsBadgePacks"), c.Z.close()
-  }, [n]), b = (0, s.Z)(), x = i.useId();
+  }, [n]), h = i.useCallback(() => {
+    (0, o.Z)(n, s.Z.GUILD_POWERUPS_GUILD_SETTINGS_TAGS, "guildTagsBadgePacks"), c.Z.close()
+  }, [n]), x = (0, a.Z)(), b = i.useId();
   return (0, r.jsxs)("div", {
     className: t,
     children: [(0, r.jsx)(l.vwX, {
-      id: x,
+      id: b,
       className: g.sectionTitle,
       children: m.intl.string(u.default.pb7lpK)
     }), (0, r.jsx)(d.g, {
-      badgeCollection: b,
-      handleBoostUpsellClick: f,
-      onBadgeClicked: h,
+      badgeCollection: x,
+      handleBoostUpsellClick: h,
+      onBadgeClicked: f,
       selectedBadge: p,
-      headingId: x
+      headingId: b
     })]
   })
 }

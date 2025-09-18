@@ -1,7 +1,8 @@
 /** Chunk was on 8106 **/
 /** chunk id: 730089, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  G: () => f
+  G: () => h
 }), require("./35282.js");
 var Chunk36793 = require("./36793.js"),
   Chunk481060 = require("./481060.js"),
@@ -15,24 +16,24 @@ var Chunk36793 = require("./36793.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   p = require("./413135.js").Buffer;
-let h = (e, t, n, r) => (o.default.track(m.rMx.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCEEDED, {
+let f = (e, t, n, r) => (o.default.track(m.rMx.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCEEDED, {
     guild_id: n,
     file_size: t,
     upload_id: r
-  }), s.d.TOO_BIG),
-  f = async e => {
+  }), a.d.TOO_BIG),
+  h = async e => {
     let {
       data: t,
       file: n,
-      guildId: f,
-      uploadId: b,
-      roles: x,
+      guildId: h,
+      uploadId: x,
+      roles: b,
       image: j,
       hideErrorModal: v,
       analyticsLocation: _
     } = e, O = c.ZP.sanitizeEmojiName(n.name.split(".")[0]);
     if (c.ZP.isFileTooBig(n)) {
-      if ("image/gif" === n.type || "image/webp" === n.type || "image/avif" === n.type) return h(n.name, n.size, f, b);
+      if ("image/gif" === n.type || "image/webp" === n.type || "image/avif" === n.type) return f(n.name, n.size, h, x);
       else if (null != j) {
         var y, C;
         let e;
@@ -40,7 +41,7 @@ let h = (e, t, n, r) => (o.default.track(m.rMx.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCE
         try {
           e = c.ZP.isDataTooBig(t)
         } catch (e) {
-          return h(n.name, n.size, f, b)
+          return f(n.name, n.size, h, x)
         }
         if (y = t, C = e, o.default.track(m.rMx.EMOJI_FILE_RESIZED, {
             is_animated: false,
@@ -48,33 +49,33 @@ let h = (e, t, n, r) => (o.default.track(m.rMx.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCE
             original_file_size_bytes: n.size,
             resized_file_size_bytes: (0, d.QB)(y),
             resized_file_too_big: C
-          }), e) return h(n.name, n.size, f, b)
+          }), e) return f(n.name, n.size, h, x)
       }
     }
     try {
-      let e = await (0, a.rS)({
-        guildId: f,
+      let e = await (0, s.rS)({
+        guildId: h,
         image: t,
         name: O,
-        roles: x,
+        roles: b,
         analyticsLocation: _
       });
       return o.default.track(m.rMx.EMOJI_UPLOAD_COMPLETED, {
-        guild_id: f,
-        upload_id: b
+        guild_id: h,
+        upload_id: x
       }), (0, i.showToast)((0, i.createToast)(g.intl.string(g.t.r0w9m5), i.ToastType.SUCCESS)), e
-    } catch (a) {
+    } catch (s) {
       let e, n, {
         body: r,
         status: i
-      } = a;
-      return null != r && (r.code === m.evJ.TOO_MANY_EMOJI ? (e = g.intl.string(g.t["jP/Rqq"]), n = s.d.TOO_MANY_EMOJI) : r.code === m.evJ.TOO_MANY_ANIMATED_EMOJI ? (e = g.intl.string(g.t["6v5dPz"]), n = s.d.TOO_MANY_ANIMATED_EMOJI) : null != r.image || r.code === m.evJ.INVALID_FILE_ASSET_SIZE ? (o.default.track(m.rMx.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCEEDED, {
-        guild_id: f,
+      } = s;
+      return null != r && (r.code === m.evJ.TOO_MANY_EMOJI ? (e = g.intl.string(g.t["jP/Rqq"]), n = a.d.TOO_MANY_EMOJI) : r.code === m.evJ.TOO_MANY_ANIMATED_EMOJI ? (e = g.intl.string(g.t["6v5dPz"]), n = a.d.TOO_MANY_ANIMATED_EMOJI) : null != r.image || r.code === m.evJ.INVALID_FILE_ASSET_SIZE ? (o.default.track(m.rMx.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCEEDED, {
+        guild_id: h,
         file_size: p.byteLength(t),
-        upload_id: b
+        upload_id: x
       }), e = g.intl.formatToPlainString(g.t.kIO9j4, {
         maxSize: u.xG
-      }), n = s.d.TOO_BIG) : (null != r.image || r.code === m.evJ.INVALID_FILE_ASSET_SIZE_RESIZE_GIF) && (n = s.d.RESIZE_GIF)), 429 === i && (e = g.intl.string(g.t["Whhv4+"]), n = s.d.RATE_LIMIT), null == e || v || l.Z.show({
+      }), n = a.d.TOO_BIG) : (null != r.image || r.code === m.evJ.INVALID_FILE_ASSET_SIZE_RESIZE_GIF) && (n = a.d.RESIZE_GIF)), 429 === i && (e = g.intl.string(g.t["Whhv4+"]), n = a.d.RATE_LIMIT), null == e || v || l.Z.show({
         title: g.intl.string(g.t.iufib2),
         body: e
       }), n

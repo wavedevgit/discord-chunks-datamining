@@ -1,12 +1,13 @@
 /** Chunk was on 8106 **/
 /** chunk id: 247031, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => k
 }), require("./388685.js"), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./539854.js"), require("./642613.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -71,17 +72,17 @@ function Z(e) {
     transitionState: t,
     guild: n,
     user: l,
-    ban: a,
-    hideDiscriminator: s,
+    ban: s,
+    hideDiscriminator: a,
     onClose: o
-  } = e, [d, m] = i.useState(false), [p, h] = i.useState(null);
-  async function f() {
+  } = e, [d, m] = i.useState(false), [p, f] = i.useState(null);
+  async function h() {
     if (null != n) {
-      h(null), m(true);
+      f(null), m(true);
       try {
         await u.Z.unbanUser(n.id, l.id), o()
       } catch (e) {
-        h(new g.Z(e)), m(false)
+        f(new g.Z(e)), m(false)
       }
     }
   }
@@ -97,9 +98,9 @@ function Z(e) {
         className: S.userUsername,
         children: j.ZP.getUserTag(l, {
           mode: "username",
-          identifiable: s ? "never" : "always"
+          identifiable: a ? "never" : "always"
         })
-      }), s || l.hasUniqueUsername() ? null : (0, r.jsxs)(c.X6q, {
+      }), a || l.hasUniqueUsername() ? null : (0, r.jsxs)(c.X6q, {
         variant: "heading-xl/semibold",
         className: S.userDiscrim,
         children: ["#", l.discriminator]
@@ -112,7 +113,7 @@ function Z(e) {
         children: I.intl.string(I.t["9Ki66O"])
       }), (0, r.jsx)(c.Text, {
         variant: "text-sm/normal",
-        children: null != a.reason && "" !== a.reason ? a.reason : I.intl.string(I.t["t+2Zcn"])
+        children: null != s.reason && "" !== s.reason ? s.reason : I.intl.string(I.t["t+2Zcn"])
       }), null != p ? (0, r.jsx)(c.Text, {
         className: S.error,
         color: "text-danger",
@@ -126,7 +127,7 @@ function Z(e) {
         children: [(0, r.jsx)(c.zxk, {
           variant: "critical-secondary",
           text: I.intl.string(I.t.UPcIa2),
-          onClick: f,
+          onClick: h,
           loading: d
         }), (0, r.jsx)(c.zxk, {
           variant: "primary",
@@ -145,7 +146,7 @@ class D extends Chunk647438.PureComponent {
       guild: n
     } = this.props;
     return (0, Chunk951288.jsxs)(Chunk481060.P3F, {
-      className: a()(Chunk121884.bannedUser, Chunk620842.card),
+      className: s()(Chunk121884.bannedUser, Chunk620842.card),
       onClick: this.handleShowModal,
       onContextMenu: this.handleContextMenu,
       children: [(0, Chunk951288.jsx)(Chunk481060.qEK, {
@@ -195,7 +196,7 @@ class A extends Chunk647438.PureComponent {
   makeFilter(e) {
     if (null == e || 0 === e.length) return e => null != e;
     {
-      let t = RegExp("^".concat(x.Z.escape(e)), "i");
+      let t = RegExp("^".concat(b.Z.escape(e)), "i");
       return n => null != n && (n.id === e || t.test(n.username))
     }
   }
@@ -225,12 +226,12 @@ class A extends Chunk647438.PureComponent {
     Chunk434404.Z.setSearchQuery("")
   }
   constructor(...e) {
-    super(...e), P(this, "getSortedBans", (0, b.oH)((e, t) => {
+    super(...e), P(this, "getSortedBans", (0, x.oH)((e, t) => {
       if (null == e) return [];
       let n = this.makeFilter(t),
         r = [];
       for (let t of e.keys()) {
-        let e = f.default.getUser(t);
+        let e = h.default.getUser(t);
         null != e && n(e) && r.push(e)
       }
       return r.sort((e, t) => e.username.localeCompare(t.username))
@@ -242,9 +243,9 @@ class A extends Chunk647438.PureComponent {
         searchQuery: i
       } = this.props, l = this.getSortedBans(r, i);
       if (0 === l.length && 1 === t) return 56;
-      let a = l[t],
-        s = null == r ? true : r.get(null != (n = null == a ? true : a.id) ? n : "");
-      return 56 * (null != a && null != s)
+      let s = l[t],
+        a = null == r ? true : r.get(null != (n = null == s ? true : s.id) ? n : "");
+      return 56 * (null != s && null != a)
     }), P(this, "renderRow", e => {
       var t;
       let {
@@ -252,8 +253,8 @@ class A extends Chunk647438.PureComponent {
         row: i
       } = e, {
         bans: l,
-        streamerMode: a,
-        guild: s,
+        streamerMode: s,
+        guild: a,
         searchQuery: o
       } = this.props;
       if (n > 0) return null;
@@ -266,8 +267,8 @@ class A extends Chunk647438.PureComponent {
       if (null != d && null != u) return (0, r.jsx)(D, {
         user: d,
         ban: u,
-        hideDiscriminator: a,
-        guild: s
+        hideDiscriminator: s,
+        guild: a
       }, d.id)
     }), P(this, "getSectionHeight", e => {
       if (e > 0) return 0;
@@ -280,7 +281,7 @@ class A extends Chunk647438.PureComponent {
       let t, {
         bans: i,
         theme: l,
-        searchQuery: a
+        searchQuery: s
       } = this.props;
       null == i ? t = null : (null == i ? true : i.size) === 0 && (t = (0, r.jsxs)(c.ubH, {
         theme: l,
@@ -298,11 +299,11 @@ class A extends Chunk647438.PureComponent {
           children: I.intl.string(I.t.ZEiY1N)
         })]
       }));
-      let s = null != (e = null == i ? true : i.size) ? e : 0;
+      let a = null != (e = null == i ? true : i.size) ? e : 0;
       return (0, r.jsxs)(c.hjN, {
         tag: c.RB0.H1,
         title: I.intl.formatToPlainString(I.t["bW+JJy"], {
-          bans: s
+          bans: a
         }),
         children: [(0, r.jsxs)("div", {
           className: S.settingsHeader,
@@ -314,7 +315,7 @@ class A extends Chunk647438.PureComponent {
             })
           }), null == t && (0, r.jsx)(c.E1j, {
             size: "sm",
-            query: null != a ? a : "",
+            query: null != s ? s : "",
             placeholder: I.intl.string(I.t.rTL1RE),
             "aria-label": I.intl.string(I.t.rTL1RE),
             onChange: this.handleQueryChange,

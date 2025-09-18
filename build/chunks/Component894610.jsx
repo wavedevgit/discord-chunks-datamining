@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 894610, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => d
 });
@@ -49,9 +50,9 @@ function d(e) {
   let {
     earningsData: t,
     guildId: n
-  } = e, s = (0, a.ue)(n, {
+  } = e, a = (0, s.ue)(n, {
     publishedOnly: false
-  }), o = t.currentPeriod, d = i.useMemo(() => s.map(e => {
+  }), o = t.currentPeriod, d = i.useMemo(() => a.map(e => {
     var t, n, r;
     let i = null == o ? true : o.ppgs[e.id];
     return n = function(e) {
@@ -85,8 +86,8 @@ function d(e) {
     })(Object(r)).forEach(function(e) {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
     }), n
-  }).filter(e => e.listing.published || e.paymentsCount > 0), [s, null == o ? true : o.ppgs]);
-  return null == s || 0 === s.length ? null : (0, r.jsx)(l.ZP, {
+  }).filter(e => e.listing.published || e.paymentsCount > 0), [a, null == o ? true : o.ppgs]);
+  return null == a || 0 === a.length ? null : (0, r.jsx)(l.ZP, {
     columns: c,
     data: d,
     initialSortKey: "LISTING_NAME"

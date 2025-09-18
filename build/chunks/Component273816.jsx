@@ -1,7 +1,7 @@
-/** Chunk was on 46290 **/
+/** Chunk was on 50751 **/
 /** chunk id: 273816, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => v
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -38,7 +38,7 @@ function O(e) {
   return e
 }
 
-function v(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -51,39 +51,39 @@ function v(e, t) {
   }), e
 }
 
-function b(e) {
+function v(e) {
   let {
     locked: t,
     pinned: n,
     anchorLeft: l
-  } = e, b = (0, a.e7)([p.Z], () => p.Z.getSocket()), E = (0, a.e7)([m.ZP], () => m.ZP.isGPUBoosted());
+  } = e, v = (0, a.e7)([p.Z], () => p.Z.getSocket()), S = (0, a.e7)([m.ZP], () => m.ZP.isGPUBoosted());
   (0, d.nU)();
-  let _ = (0, a.e7)([h.Z], () => h.Z.getWindow(g.$J)),
-    [S, x] = (0, d.m8)(b),
+  let b = (0, a.e7)([h.Z], () => h.Z.getWindow(g.$J)),
+    [x, j] = (0, d.m8)(v),
     {
       currentFPS: I,
       averageFrameTime: C,
-      timeSinceLastDrop: j,
+      timeSinceLastDrop: Z,
       onResetFrameData: w,
       droppedFramesRef: N,
-      renderedFrameCount: Z,
-      bufferFramecountRef: T,
+      renderedFrameCount: T,
+      bufferFramecountRef: _,
       frameCheckerEffect: P
-    } = (0, d.d6)(true, S, true),
-    [A, D, k] = (0, d.ZF)(b),
-    [R, L] = (0, d.Y5)(A, P, _),
-    M = performance.now() - x.current < d.MC,
-    z = D(C, T.current);
-  (0, u.ZP)(() => (R(), () => {
+    } = (0, d.d6)(true, x, true),
+    [D, A, R] = (0, d.ZF)(v),
+    [k, L] = (0, d.Y5)(D, P, b),
+    M = performance.now() - j.current < d.MC,
+    V = A(C, _.current);
+  (0, c.ZP)(() => (k(), () => {
     L()
   }));
-  let V = r.useCallback(() => {
-      w(), k(), R()
-    }, [w, k, R]),
+  let z = r.useCallback(() => {
+      w(), R(), k()
+    }, [w, R, k]),
     [U, W] = r.useState(true),
-    [G, B] = r.useState(true),
-    [H, F] = r.useState(true),
-    [Y, Q] = r.useState(true),
+    [G, H] = r.useState(true),
+    [F, Y] = r.useState(true),
+    [B, Q] = r.useState(true),
     [K, X] = r.useState(true);
   return t && !n ? null : (0, i.jsxs)("div", {
     className: o()(y.panelGroup, !l && y.rightAligned),
@@ -96,11 +96,11 @@ function b(e) {
           value: U,
           onChange: (e, t) => W(t)
         })
-      }), (0, i.jsxs)(c.Text, {
+      }), (0, i.jsxs)(u.Text, {
         variant: "text-md/normal",
         color: "text-secondary",
         className: y.measurementText,
-        children: ["FPS:", " ", (0, i.jsx)(c.Text, {
+        children: ["FPS:", " ", (0, i.jsx)(u.Text, {
           tag: "span",
           variant: "code",
           color: I < 30 ? "text-danger" : I < 45 ? "text-feedback-warning" : "text-primary",
@@ -114,63 +114,63 @@ function b(e) {
         children: (0, i.jsx)(s.$q, {
           size: 16,
           value: G,
-          onChange: (e, t) => B(t)
+          onChange: (e, t) => H(t)
         })
-      }), (0, i.jsxs)(c.Text, {
+      }), (0, i.jsxs)(u.Text, {
         variant: "text-md/normal",
         color: "text-secondary",
         className: y.measurementText,
-        children: ["Frame Times:", " ", (0, i.jsxs)(c.Text, {
+        children: ["Frame Times:", " ", (0, i.jsxs)(u.Text, {
           tag: "span",
           variant: "code",
           color: C > 1.1 * d.tO ? "text-feedback-warning" : "text-primary",
           children: [C.toFixed(2), "ms"]
         })]
       })]
-    }), (H || !t) && (0, i.jsxs)("div", {
+    }), (F || !t) && (0, i.jsxs)("div", {
       className: y.measurement,
       children: [!t && (0, i.jsx)("div", {
         className: y.measurementCheckbox,
         children: (0, i.jsx)(s.$q, {
           size: 16,
-          value: H,
-          onChange: (e, t) => F(t)
+          value: F,
+          onChange: (e, t) => Y(t)
         })
-      }), (0, i.jsxs)(c.Text, {
+      }), (0, i.jsxs)(u.Text, {
         variant: "text-md/normal",
         color: "text-secondary",
         className: y.measurementText,
-        children: ["Dropped Frames:", " ", (0, i.jsx)(c.Text, {
+        children: ["Dropped Frames:", " ", (0, i.jsx)(u.Text, {
           tag: "span",
           variant: "code",
-          color: j < 2 ? "text-danger" : j < 5 ? "text-feedback-warning" : "text-primary",
+          color: Z < 2 ? "text-danger" : Z < 5 ? "text-feedback-warning" : "text-primary",
           children: N.current
-        }), (0, i.jsxs)(c.Text, {
+        }), (0, i.jsxs)(u.Text, {
           tag: "span",
           variant: "code",
           color: "text-secondary",
           className: y.secondaryInfoText,
-          children: ["(", (N.current / Z.current * 100).toFixed(3), "%)"]
+          children: ["(", (N.current / T.current * 100).toFixed(3), "%)"]
         })]
       })]
-    }), (Y || !t) && (0, i.jsxs)("div", {
+    }), (B || !t) && (0, i.jsxs)("div", {
       className: y.measurement,
       children: [!t && (0, i.jsx)("div", {
         className: y.measurementCheckbox,
         children: (0, i.jsx)(s.$q, {
           size: 16,
-          value: Y,
+          value: B,
           onChange: (e, t) => Q(t)
         })
-      }), (0, i.jsxs)(c.Text, {
+      }), (0, i.jsxs)(u.Text, {
         variant: "text-md/normal",
         color: "text-secondary",
         className: y.measurementText,
-        children: ["Rendered Frames:", " ", (0, i.jsx)(c.Text, {
+        children: ["Rendered Frames:", " ", (0, i.jsx)(u.Text, {
           tag: "span",
           variant: "code",
           color: "text-primary",
-          children: Z.current.toFixed(0)
+          children: T.current.toFixed(0)
         })]
       })]
     }), (K || !t) && (0, i.jsxs)("div", {
@@ -182,35 +182,35 @@ function b(e) {
           value: K,
           onChange: (e, t) => X(t)
         })
-      }), (0, i.jsx)(c.ua7, {
+      }), (0, i.jsx)(u.ua7, {
         position: "left",
         text: "The average amount of 'lag' between us rendering a frame and being able to process background tasks. Values constantly above 1-2ms means our main thread is being burried by work and is taking all of its time in animation frames, most likely producing user interaciton blocking jank. (This doesn't work when the app is backgrounded though)",
-        children: e => (0, i.jsx)("div", v(O({}, e), {
-          children: (0, i.jsxs)(c.Text, {
+        children: e => (0, i.jsx)("div", E(O({}, e), {
+          children: (0, i.jsxs)(u.Text, {
             variant: "text-md/normal",
             color: "text-secondary",
             className: y.measurementText,
-            children: ["Idle Frame Delta:", " ", (0, i.jsxs)(c.Text, {
+            children: ["Idle Frame Delta:", " ", (0, i.jsxs)(u.Text, {
               tag: "span",
               variant: "code",
-              color: z > 1 ? "text-danger" : "text-primary",
-              children: [z.toFixed(2), "ms"]
+              color: V > 1 ? "text-danger" : "text-primary",
+              children: [V.toFixed(2), "ms"]
             })]
           })
         }))
       })]
-    }), M && (0, i.jsx)(c.ua7, {
+    }), M && (0, i.jsx)(u.ua7, {
       position: "left",
       text: "We don't track frames while the app is in the background, because requestAnimationFrame doesn't fire in the background",
-      children: e => (0, i.jsx)("span", v(O({}, e), {
-        children: (0, i.jsx)(c.Text, {
+      children: e => (0, i.jsx)("span", E(O({}, e), {
+        children: (0, i.jsx)(u.Text, {
           tag: "span",
           variant: "code",
           color: "text-danger",
           children: "(Main App Backgrounded)"
         })
       }))
-    }), E && (0, i.jsx)(c.Text, {
+    }), S && (0, i.jsx)(u.Text, {
       tag: "span",
       variant: "code",
       color: "text-feedback-positive",
@@ -218,10 +218,10 @@ function b(e) {
     }), !t && (0, i.jsx)("div", {
       className: y.bottomPanelButton,
       children: (0, i.jsx)(f.Z, {
-        children: (0, i.jsx)(c.zxk, {
+        children: (0, i.jsx)(u.zxk, {
           variant: "primary",
           text: "Reset Frame Data",
-          onClick: V
+          onClick: z
         })
       })
     })]

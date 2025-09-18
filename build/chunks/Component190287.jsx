@@ -1,7 +1,8 @@
 /** Chunk was on 8106 **/
 /** chunk id: 190287, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,12 +22,12 @@ let p = e => {
       emoji_name: d,
       onSetReason: g,
       onSelectEmoji: p,
-      onClearPressed: h,
-      reasonMinLength: f,
-      reasonMaxLength: b,
-      placeholder: x,
+      onClearPressed: f,
+      reasonMinLength: h,
+      reasonMaxLength: x,
+      placeholder: b,
       position: j
-    } = e, v = i.useRef(null), [_, O] = i.useState(false), y = (0, l.e7)([u.Z], () => u.Z.isGuildMetadataLoaded()), C = (0, r.jsx)(a.yRy, {
+    } = e, v = i.useRef(null), [_, O] = i.useState(false), y = (0, l.e7)([u.Z], () => u.Z.isGuildMetadataLoaded()), C = (0, r.jsx)(s.yRy, {
       targetElementRef: v,
       onRequestClose: () => {
         O(false)
@@ -34,7 +35,7 @@ let p = e => {
       shouldShow: _,
       position: "right",
       align: "top",
-      animation: a.yRy.Animation.NONE,
+      animation: s.yRy.Animation.NONE,
       renderPopout: e => {
         let {
           closePopout: t
@@ -57,18 +58,18 @@ let p = e => {
           O(true)
         },
         tabIndex: 0,
-        renderButtonContents: null != d ? () => (0, r.jsx)(s.Z, {
+        renderButtonContents: null != d ? () => (0, r.jsx)(a.Z, {
           emojiName: d,
           animated: false
         }) : null,
         ref: v
       })
     });
-    return (0, r.jsx)(a.oil, {
-      placeholder: x,
+    return (0, r.jsx)(s.oil, {
+      placeholder: b,
       value: n,
-      minLength: f,
-      maxLength: b,
+      minLength: h,
+      maxLength: x,
       defaultDirty: (null == n ? true : n.length) > 0,
       leading: {
         type: "emoji",
@@ -80,16 +81,16 @@ let p = e => {
       clearable: {
         show: (null != (t = null == n ? true : n.length) ? t : 0) > 0 || null != d
       },
-      onClear: h
+      onClear: f
     }, "text-input-".concat(j, "-").concat(y))
   },
-  h = e => {
+  f = e => {
     let {
       reasonMinLength: t,
       reasonMaxLength: n,
       guildId: i,
       reasons: l
-    } = e, s = [g.intl.string(g.t["9dhBGh"]), g.intl.string(g.t["8RmhKC"]), g.intl.string(g.t["2t0V8/"]), g.intl.string(g.t.l8WqCQ)], o = [];
+    } = e, a = [g.intl.string(g.t["9dhBGh"]), g.intl.string(g.t["8RmhKC"]), g.intl.string(g.t["2t0V8/"]), g.intl.string(g.t.l8WqCQ)], o = [];
     for (let e = 0; e < 4; e++) o.push((0, r.jsx)(p, function(e, t) {
       return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
@@ -120,7 +121,7 @@ let p = e => {
       return e
     }({
       position: e,
-      placeholder: s[e]
+      placeholder: a[e]
     }, l[e]), {
       onSetReason: t => {
         let n = [...l],
@@ -147,7 +148,7 @@ let p = e => {
       reasonMinLength: t,
       reasonMaxLength: n
     }), "reasonListItem-" + e));
-    return (0, r.jsx)(a.Kqy, {
+    return (0, r.jsx)(s.Kqy, {
       gap: 16,
       children: o
     })

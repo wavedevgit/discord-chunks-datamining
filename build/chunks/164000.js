@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 164000, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => d
 });
@@ -12,9 +13,9 @@ var Chunk647438 = require("./647438.js"),
   Chunk981631 = require("./981631.js");
 
 function d(e) {
-  let t = (0, i.e7)([s.Z, a.Z], () => {
-      let t = s.Z.getGuild(e);
-      return null != t ? a.Z.getEveryoneRole(t) : true
+  let t = (0, i.e7)([a.Z, s.Z], () => {
+      let t = a.Z.getGuild(e);
+      return null != t ? s.Z.getEveryoneRole(t) : true
     }),
     n = r.useMemo(() => null == t || (0, l.Fs)(t, c.Plq.VIEW_CHANNEL) ? o.e3.SOME_CHANNELS : o.e3.ALL_CHANNELS, [t]),
     d = n === o.e3.ALL_CHANNELS;

@@ -1,19 +1,20 @@
 /** Chunk was on 8106 **/
 /** chunk id: 217597, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk49792 = require("./49792.js");
 
-function a(e) {
+function s(e) {
   let {
     label: t,
     sublabel: n,
-    value: a,
-    additionalContent: s,
+    value: s,
+    additionalContent: a,
     tooltip: o
   } = e;
   return (0, r.jsxs)("div", {
@@ -60,7 +61,7 @@ function a(e) {
       tag: "span",
       variant: "heading-xl/medium",
       color: "header-primary",
-      children: a
-    }), s]
+      children: s
+    }), a]
   })
 }

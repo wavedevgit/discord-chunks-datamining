@@ -1,4 +1,4 @@
-/** Chunk was on 93886 **/
+/** Chunk was on 85991 **/
 /** chunk id: 264603, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk524437 = require("./524437.js"),
   Chunk481060 = require("./481060.js"),
@@ -37,7 +37,7 @@ let j = [{
 function _() {
   let e = Chunk647438.useRef(null),
     t = Chunk695346.JG.useSetting(),
-    [n, l] = Chunk647438.useState(""),
+    [n, i] = Chunk647438.useState(""),
     o = (0, Chunk442837.e7)([Chunk594190.ZP, Chunk449224.Z], () => (0, Chunk989941.Z)(Chunk594190.ZP, Chunk449224.Z)),
     _ = (0, Chunk835473.q)(require),
     y = (0, Chunk442837.Wu)([Chunk812206.Z], () => {
@@ -50,7 +50,7 @@ function _() {
     } = (0, Chunk20471.F)(_);
   return (0, Chunk951288.jsxs)("div", {
     ref: module,
-    className: i()(Chunk451429.panel, Chunk441900.panel),
+    className: l()(Chunk451429.panel, Chunk441900.panel),
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk441900.container,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {

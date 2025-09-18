@@ -1,4 +1,4 @@
-/** Chunk was on 46290 **/
+/** Chunk was on 50751 **/
 /** chunk id: 955978, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -22,12 +22,12 @@ function y(e, t, n) {
   var y;
   let O = d.default.getUser(e);
   if (null == O) return null;
-  let v = u.Z.getCurrentlySelectedChannelId(),
-    b = c.Z.getChannel(v),
-    E = o.Z.getApplication(t),
-    _ = a.ZP.getRunningGames().find(e => e.id === t),
-    S = null != (y = null == _ ? true : _.name) ? y : null == E ? true : E.name,
-    x = (0, p.oY)(null == b ? true : b.guild_id, null == b ? true : b.id, O),
+  let E = c.Z.getCurrentlySelectedChannelId(),
+    v = u.Z.getChannel(E),
+    S = o.Z.getApplication(t),
+    b = a.ZP.getRunningGames().find(e => e.id === t),
+    x = null != (y = null == b ? true : b.name) ? y : null == S ? true : S.name,
+    j = (0, p.oY)(null == v ? true : v.guild_id, null == v ? true : v.id, O),
     I = (0, i.jsxs)("div", {
       className: g.nowPlayingNotification,
       children: [(0, i.jsx)("div", {
@@ -44,11 +44,11 @@ function y(e, t, n) {
           color: "interactive-normal",
           className: g.bodyText,
           children: m.intl.format(m.t["q7/rgo"], {
-            username: null != x ? x : O.username,
-            gameName: S,
-            gameIcon: () => null != E || null != _ ? (0, i.jsx)(s.Z, {
-              game: E,
-              pid: null == _ ? true : _.pid,
+            username: null != j ? j : O.username,
+            gameName: x,
+            gameIcon: () => null != S || null != b ? (0, i.jsx)(s.Z, {
+              game: S,
+              pid: null == b ? true : b.pid,
               size: s.A.XSMALL,
               className: g.gameIcon
             }) : null
@@ -58,12 +58,12 @@ function y(e, t, n) {
     }),
     {
       trackView: C,
-      trackClick: j
+      trackClick: Z
     } = (0, h.R)(f.n0.NowPlayingNotification, {
       notif_type: f.n0.NowPlayingNotification,
       notif_user_id: O.id,
       activity_type: n.type,
-      activity_name: null != S ? S : n.name
+      activity_name: null != x ? x : n.name
     });
   return {
     body: I,
@@ -76,7 +76,7 @@ function y(e, t, n) {
       C()
     },
     onDismissClick: () => {
-      j("dismiss")
+      Z("dismiss")
     }
   }
 }

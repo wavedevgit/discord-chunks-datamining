@@ -1,7 +1,8 @@
 /** Chunk was on 8106 **/
 /** chunk id: 426434, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -19,16 +20,16 @@ var Chunk392711 = require("./392711.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk824804 = require("./824804.js");
 
-function b(e) {
+function x(e) {
   let t, {
       guild: n
     } = e,
-    b = n.mfaLevel,
-    x = (0, l.e7)([d.Z], () => null != n && d.Z.can(p.Plq.MANAGE_GUILD, n), [n]),
+    x = n.mfaLevel,
+    b = (0, l.e7)([d.Z], () => null != n && d.Z.can(p.Plq.MANAGE_GUILD, n), [n]),
     j = (0, l.e7)([u.default], () => u.default.getCurrentUser()),
     v = (0, c.eM)(n, j),
     _ = null == j ? true : j.mfaEnabled,
-    O = b === p.BpS.ELEVATED,
+    O = x === p.BpS.ELEVATED,
     y = v && _,
     C = (0, i.throttle)(async e => {
       y && await m.Z.updateMFALevel({
@@ -37,39 +38,39 @@ function b(e) {
         isEnabled: !e
       })
     }, 1e3);
-  if (!x) return null;
-  y || (t = v ? h.intl.format(h.t.nFwNyc, {
-    settingsHook: () => (0, o.openUserSettings)(s.n.ACCOUNT_PANEL, {
+  if (!b) return null;
+  y || (t = v ? f.intl.format(f.t.nFwNyc, {
+    settingsHook: () => (0, o.openUserSettings)(a.n.ACCOUNT_PANEL, {
       section: p.oAB.ACCOUNT
     })
-  }) : h.intl.string(h.t["9Ghu4+"]));
+  }) : f.intl.string(f.t["9Ghu4+"]));
   let N = n.features.has(p.oNc.DISCOVERABLE);
   return (0, r.jsxs)("div", {
-    className: f.simpleItemWrapper,
+    className: h.simpleItemWrapper,
     children: [(0, r.jsxs)("div", {
-      className: f.itemContent,
-      children: [(0, r.jsx)(a.X6q, {
+      className: h.itemContent,
+      children: [(0, r.jsx)(s.X6q, {
         variant: "text-md/semibold",
         color: "header-primary",
-        children: h.intl.string(h.t.lbBfER)
-      }), (0, r.jsxs)(a.Text, {
+        children: f.intl.string(f.t.lbBfER)
+      }), (0, r.jsxs)(s.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
-        children: [h.intl.string(h.t["a/93Jy"]), " ", t]
+        children: [f.intl.string(f.t["a/93Jy"]), " ", t]
       })]
-    }), !y || O && N ? (0, r.jsx)(a.ua7, {
-      text: N ? h.intl.string(h.t["KG1V/P"]) : v ? h.intl.string(h.t.NmsheX) : h.intl.string(h.t.LieBtb),
+    }), !y || O && N ? (0, r.jsx)(s.ua7, {
+      text: N ? f.intl.string(f.t["KG1V/P"]) : v ? f.intl.string(f.t.NmsheX) : f.intl.string(f.t.LieBtb),
       children: e => (0, r.jsx)(g.Z, {
         checked: O,
         disabled: true,
         onChange: C,
-        className: f.bringToFront,
+        className: h.bringToFront,
         tooltipProps: e
       })
     }) : (0, r.jsx)(g.Z, {
       checked: O,
       onChange: C,
-      className: f.bringToFront
+      className: h.bringToFront
     })]
   })
 }

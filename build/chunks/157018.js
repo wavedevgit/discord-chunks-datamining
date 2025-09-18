@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 157018, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => u
 });
@@ -17,7 +18,7 @@ function u(e) {
     case o.Qs.CHANNEL: {
       let t = l.Z.getChannel(e.ref_id);
       return null != t ? function(e) {
-        let t = (0, i.F6)(e, s.default, a.Z);
+        let t = (0, i.F6)(e, a.default, s.Z);
         switch (e.type) {
           case c.d4z.GUILD_VOICE:
             return d.intl.formatToPlainString(d.t.bkpadH, {

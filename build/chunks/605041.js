@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 605041, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   container: "container_d7a3d0",
   autoWidth: "autoWidth_d7a3d0",

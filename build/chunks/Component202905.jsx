@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 202905, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   r: () => _
 });
@@ -46,10 +47,10 @@ function _(e) {
   } = e, {
     guild: n,
     guildProfile: _
-  } = (0, s.cj)([p.Z], () => ({
+  } = (0, a.cj)([p.Z], () => ({
     guild: p.Z.getGuild(),
     guildProfile: p.Z.getGuildProfile()
-  })), O = null == n ? true : n.id, y = (0, s.e7)([d.Z], () => d.Z.get(O)), {
+  })), O = null == n ? true : n.id, y = (0, a.e7)([d.Z], () => d.Z.get(O)), {
     fetchGuildProfile: C
   } = (0, u.u)(O), N = (null == _ ? true : _.visibility) == null || !l.Y.VISIBLE.has(null == _ ? true : _.visibility), E = (null == _ ? true : _.visibility) === l.k.PUBLIC_WITH_RECRUITMENT;
   i.useEffect(() => {
@@ -64,26 +65,26 @@ function _(e) {
       }))
     }, [null == n ? true : n.id, E]),
     T = i.useCallback(() => {
-      g.Z.setSection(b.pNK.PROFILE)
+      g.Z.setSection(x.pNK.PROFILE)
     }, []);
   if (null == n) return null;
   let P = null != t ? t : null == y ? true : y.formFields;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.X6q, {
+    children: [(0, r.jsx)(s.X6q, {
       variant: "heading-md/semibold",
       color: "header-primary",
-      children: x.intl.string(x.t.AHJddH)
-    }), (0, r.jsx)(a.xvT, {
+      children: b.intl.string(b.t.AHJddH)
+    }), (0, r.jsx)(s.xvT, {
       tag: "p",
       variant: "text-sm/medium",
       color: "text-secondary",
       className: j.applicationBody,
-      children: x.intl.string(x.t.Z7TCtb)
-    }), (0, r.jsx)(f.c, {
+      children: b.intl.string(b.t.Z7TCtb)
+    }), (0, r.jsx)(h.c, {
       guildId: n.id
     }), (0, r.jsx)("div", {
       className: j.form,
-      children: null != P ? (0, r.jsx)(h.y, {
+      children: null != P ? (0, r.jsx)(f.y, {
         guild: n,
         formFields: P
       }) : (0, r.jsx)(c.$jN, {})
@@ -98,15 +99,15 @@ function _(e) {
           value: E,
           hideBorder: true,
           disabled: N,
-          children: x.intl.string(x.t["N/0239"])
-        }), (0, r.jsx)(a.xvT, {
+          children: b.intl.string(b.t["N/0239"])
+        }), (0, r.jsx)(s.xvT, {
           variant: "text-sm/normal",
           color: "text-secondary",
-          children: x.intl.string(x.t["3TSZYG"])
-        }), N && (0, r.jsx)(a.xvT, {
+          children: b.intl.string(b.t["3TSZYG"])
+        }), N && (0, r.jsx)(s.xvT, {
           variant: "text-xs/normal",
           color: "text-muted",
-          children: x.intl.format(x.t.Bk0VOj, {
+          children: b.intl.format(b.t.Bk0VOj, {
             profileLink: (e, t) => (0, r.jsx)(c.eee, {
               onClick: T,
               children: e
@@ -126,7 +127,7 @@ function _(e) {
               className: j.previewButton,
               size: o.zx.Sizes.SMALL,
               fullWidth: true,
-              children: x.intl.string(x.t["7XdMW1"])
+              children: b.intl.string(b.t["7XdMW1"])
             }),
             disableGuildNameClick: true
           })]

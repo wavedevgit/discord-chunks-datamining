@@ -1,4 +1,4 @@
-/** Chunk was on 46290 **/
+/** Chunk was on 50751 **/
 /** chunk id: 761374, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -28,42 +28,42 @@ var Chunk951288 = require("./951288.js"),
 let I = [];
 
 function C(e) {
-  var t, n, C, j;
+  var t, n, C, Z;
   let {
     id: w,
     widget: N,
-    size: Z,
-    locked: T,
+    size: T,
+    locked: _,
     padding: P,
-    borderWidth: A,
-    opacity: D,
-    horizontal: k,
-    pinned: R,
+    borderWidth: D,
+    opacity: A,
+    horizontal: R,
+    pinned: k,
     anchorTop: L,
     anchorLeft: M,
-    showEmpty: z = true
-  } = e, V = k ? E.C5.HORIZONTAL : E.C5.VERTICAL, U = V === E.C5.VERTICAL, W = (0, l.e7)([m.Z], () => {
+    showEmpty: V = true
+  } = e, z = R ? S.C5.HORIZONTAL : S.C5.VERTICAL, U = z === S.C5.VERTICAL, W = (0, l.e7)([m.Z], () => {
     var e;
     let t = m.Z.getWidget(w);
-    return !!(0, E.ZL)(t) && !T && (null == (e = t.meta.showAllStreams) || e)
-  }, [w, T]), G = (0, l.e7)([g.Z], () => g.Z.getVoiceChannelId()), B = (0, l.e7)([f.Z], () => f.Z.getChannel(G)), H = (0, l.e7)([h.default], () => h.default.getId()), {
-    streamParticipants: F,
-    activeStreams: Y,
+    return !!(0, S.ZL)(t) && !_ && (null == (e = t.meta.showAllStreams) || e)
+  }, [w, _]), G = (0, l.e7)([g.Z], () => g.Z.getVoiceChannelId()), H = (0, l.e7)([f.Z], () => f.Z.getChannel(G)), F = (0, l.e7)([h.default], () => h.default.getId()), {
+    streamParticipants: Y,
+    activeStreams: B,
     participantsVersion: Q
-  } = (C = L && U || M && k, j = !L && U || !M && k, (0, l.cj)([p.Z, c.Z], () => {
+  } = (C = L && U || M && R, Z = !L && U || !M && R, (0, l.cj)([p.Z, u.Z], () => {
     if (null == G) return {
       streamParticipants: I,
       participantsVersion: false,
       activeStreams: new Set
     };
-    let e = new Set(p.Z.getAllActiveStreamsForChannel(G).map(e => (0, u.V9)(e))),
-      t = t => e.has((0, u.V9)(t.stream)),
-      n = c.Z.getStreamParticipants(G).filter(e => e.user.id !== H && (!!W || t(e)));
+    let e = new Set(p.Z.getAllActiveStreamsForChannel(G).map(e => (0, c.V9)(e))),
+      t = t => e.has((0, c.V9)(t.stream)),
+      n = u.Z.getStreamParticipants(G).filter(e => e.user.id !== F && (!!W || t(e)));
     return n.sort((e, n) => {
       if (C) {
         if (t(e) && !t(n)) return false;
         if (!t(e) && t(n)) return 1
-      } else if (j) {
+      } else if (Z) {
         if (t(e) && !t(n)) return 1;
         if (!t(e) && t(n)) return false
       }
@@ -71,28 +71,28 @@ function C(e) {
     }), {
       streamParticipants: n,
       activeStreams: e,
-      participantsVersion: c.Z.getParticipantsVersion(G)
+      participantsVersion: u.Z.getParticipantsVersion(G)
     }
-  }, [G, H, W, C, j])), K = F.length, X = (0, l.e7)([d.Z], () => d.Z.getWindowState(_.$J), []), {
+  }, [G, F, W, C, Z])), K = Y.length, X = (0, l.e7)([d.Z], () => d.Z.getWindowState(b.$J), []), {
     tileWidth: q,
     tileHeight: J,
     widgetWidth: $,
     widgetHeight: ee,
     containerRef: et,
     containerMinMaxSizes: en
-  } = (0, b.Bz)({
+  } = (0, v.Bz)({
     tileCount: K,
     padding: P,
-    borderWidth: A,
+    borderWidth: D,
     isVertical: U,
-    widgetSize: Z
+    widgetSize: T
   }), ei = {
     id: w,
     widget: N,
-    layout: V,
-    participants: F.length,
+    layout: z,
+    participants: Y.length,
     padding: P,
-    borderWidth: A,
+    borderWidth: D,
     widgetMinMaxSizes: en,
     containerSize: {
       width: $,
@@ -104,39 +104,39 @@ function C(e) {
       bottom: null != (t = null == X ? true : X.height) ? t : ee,
       right: null != (n = null == X ? true : X.width) ? n : $
     },
-    locked: T
+    locked: _
   };
-  (0, b.Dl)({
+  (0, v.Dl)({
     id: w,
-    streamParticipants: F,
-    layout: V,
+    streamParticipants: Y,
+    layout: z,
     widgetLayoutSpecs: ei
   });
-  let er = null == B || 0 === Y.size && T || 0 === K && !T;
+  let er = null == H || 0 === B.size && _ || 0 === K && !_;
   return (r.useEffect(() => {
     a.Z.setGpuBoostRequested(y.zS.OVERLAY_VIDEO_STREAM_RENDERING, !er)
   }, [er]), (0, s.ZP)(() => () => {
     a.Z.setGpuBoostRequested(y.zS.OVERLAY_VIDEO_STREAM_RENDERING, false)
-  }), (er || !R) && T) ? null : er && !T ? z ? T ? null : (0, i.jsx)(O.E, {
-    emptyText: S.intl.string(S.t["T6+rX1"]),
+  }), (er || !k) && _) ? null : er && !_ ? V ? _ ? null : (0, i.jsx)(O.E, {
+    emptyText: x.intl.string(x.t["T6+rX1"]),
     icon: o.hGI,
     absolute: true
   }) : null : (0, i.jsx)("div", {
-    className: x.goLiveGridContainer,
+    className: j.goLiveGridContainer,
     style: {
-      opacity: D
+      opacity: A
     },
     ref: et,
-    children: (0, i.jsx)(v.Z, {
+    children: (0, i.jsx)(E.Z, {
       widgetId: w,
       tileWidth: q,
       tileHeight: J,
-      locked: T,
-      layout: V,
-      activeStreams: Y,
-      streamParticipants: F,
+      locked: _,
+      layout: z,
+      activeStreams: B,
+      streamParticipants: Y,
       participantsVersion: Q,
-      pinned: R,
+      pinned: k,
       padding: P
     })
   })

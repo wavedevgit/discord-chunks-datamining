@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 237245, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   w: () => I
 }), require("./388685.js"), require("./781311.js"), require("./953529.js");
@@ -61,15 +62,15 @@ function E(e) {
   var t;
   let {
     pendingState: l,
-    dirtyState: f,
-    originalGuild: x,
+    dirtyState: h,
+    originalGuild: b,
     settingsGuild: E,
     settingsMetadata: I,
     settingsProfile: S
   } = e, T = E.id, [P, w] = i.useState(false), [R, Z] = i.useState(null), D = E.features.has(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), A = null != (t = (0, g.A)({
     guildId: E.id
   })) ? t : 0, L = i.useCallback(() => {
-    Z(null), h.Z.init(T, _.pNK.ACCESS)
+    Z(null), f.Z.init(T, _.pNK.ACCESS)
   }, [T]), k = i.useCallback(async e => {
     try {
       w(true), await e(), Z(null)
@@ -78,7 +79,7 @@ function E(e) {
     }
   }, []), M = i.useCallback(async e => {
     try {
-      await h.Z.saveGuild(T, e, {
+      await f.Z.saveGuild(T, e, {
         throwErr: true
       })
     } catch (e) {
@@ -118,7 +119,7 @@ function E(e) {
             features: e
           })
         }
-        f.verificationDirty && await U(t, r, e)
+        h.verificationDirty && await U(t, r, e)
       })
     } else if (l.joinType === j.A.APPLY) {
       let {
@@ -132,7 +133,7 @@ function E(e) {
             features: e
           })
         }
-        f.verificationDirty && await G([...t], true, e), f.profileDirty && null != S && await (0, p.pV)(E.id, {
+        h.verificationDirty && await G([...t], true, e), h.profileDirty && null != S && await (0, p.pV)(E.id, {
           visibility: S.visibility
         })
       })
@@ -142,8 +143,8 @@ function E(e) {
         termRules: n = []
       } = l, r = n.map(e => e.value.trim()).filter(e => "" !== e);
       k(async () => {
-        if (f.verificationDirty && await U(t, r, e), f.guildDirty) {
-          (0, b.UA)(E, x);
+        if (h.verificationDirty && await U(t, r, e), h.guildDirty) {
+          (0, x.UA)(E, b);
           let e = new Set(E.features);
           e.add(_.oNc.DISCOVERABLE), e.delete(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), await M({
             features: e,
@@ -161,7 +162,7 @@ function E(e) {
         }
       })
     }
-  }, [l, k, E, f, M, U, S, G, x, I]), F = i.useCallback(() => {
+  }, [l, k, E, h, M, U, S, G, b, I]), F = i.useCallback(() => {
     var e;
     if (l.joinType === j.A.INVITE || l.joinType === j.A.DISCOVERABLE) {
       let {
@@ -172,7 +173,7 @@ function E(e) {
     }
     if (l.joinType === j.A.APPLY && !(null == (e = l.pendingVerificationFields) ? true : e.some(e => (0, m._C)(e)))) return void Z(y.intl.string(y.t.HGVrIy));
     (e => {
-      if (D && A > 0 && l.joinType !== j.A.APPLY) return (0, a.ZDy)(async () => {
+      if (D && A > 0 && l.joinType !== j.A.APPLY) return (0, s.ZDy)(async () => {
         let {
           default: t
         } = await n.e("55009").then(n.bind(n, 826390));
@@ -184,7 +185,7 @@ function E(e) {
       });
       e()
     })(e => (e => {
-      if (l.joinType === j.A.DISCOVERABLE && l.settingsView === v.U.ELIGIBLE_DISABLED) return void(0, a.ZDy)(async () => {
+      if (l.joinType === j.A.DISCOVERABLE && l.settingsView === v.U.ELIGIBLE_DISABLED) return void(0, s.ZDy)(async () => {
         let {
           default: t
         } = await n.e("67376").then(n.bind(n, 207252));
@@ -196,7 +197,7 @@ function E(e) {
       e()
     })(() => B(e)))
   }, [D, B, l, T, A]), H = l.joinType === j.A.DISCOVERABLE && l.settingsView === v.U.ELIGIBLE_DISABLED, z = null != E.description && I.primaryCategoryId !== O.o3 && I.keywords.length > 0;
-  return (0, r.jsx)(s.Z, {
+  return (0, r.jsx)(a.Z, {
     message: H ? y.intl.string(y.t.V2G2Ym) : true,
     onSaveText: H ? y.intl.string(y.t["qjtt/v"]) : true,
     submitting: P,
@@ -217,7 +218,7 @@ function I() {
   })), {
     settingsGuild: n,
     settingsMetadata: i,
-    originalGuild: a,
+    originalGuild: s,
     guildProfile: o
   } = (0, Chunk442837.cj)([Chunk999382.Z], () => {
     let {

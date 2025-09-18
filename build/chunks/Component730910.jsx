@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 730910, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => D
 }), require("./388685.js");
@@ -75,15 +76,15 @@ function D() {
 function A(e) {
   let {
     guild: t
-  } = e, h = t.id, D = (0, a.e7)([O.Z], () => O.Z.getCurrentPage()), A = (0, C.Z)(h), {
+  } = e, f = t.id, D = (0, s.e7)([O.Z], () => O.Z.getCurrentPage()), A = (0, C.Z)(f), {
     hasChanges: L,
     hasConfiguredAnythingForCurrentStep: k,
     hasErrors: M
-  } = (0, a.cj)([O.Z], () => ({
+  } = (0, s.cj)([O.Z], () => ({
     hasChanges: O.Z.hasChanges(),
     hasConfiguredAnythingForCurrentStep: O.Z.hasConfiguredAnythingForCurrentStep(),
     hasErrors: O.Z.hasErrors()
-  })), G = (0, a.e7)([O.Z], () => {
+  })), G = (0, s.e7)([O.Z], () => {
     let e = (0, y.lg)(D);
     return null != e && !O.Z.isEducationUpsellDismissed(e)
   }), U = (0, u.ZP)(), B = i.useRef(null), [{
@@ -106,12 +107,12 @@ function A(e) {
       p.S.unsubscribe(T.CkL.EMPHASIZE_NOTICE, e)
     }
   }, [H]);
-  let z = (0, d.dQu)(s.Z.colors.BACKGROUND_SURFACE_HIGH).hex(),
-    V = (0, d.dQu)(s.Z.unsafe_rawColors.PRIMARY_160).hex(),
+  let z = (0, d.dQu)(a.Z.colors.BACKGROUND_SURFACE_HIGH).hex(),
+    V = (0, d.dQu)(a.Z.unsafe_rawColors.PRIMARY_160).hex(),
     W = (0, c.wj)(U) ? z : V,
     K = F.to({
       range: [0, 1],
-      output: [W, (0, d.dQu)(s.Z.colors.STATUS_DANGER).hex()]
+      output: [W, (0, d.dQu)(a.Z.colors.STATUS_DANGER).hex()]
     });
   if (A) {
     if (D === y.PG.DEFAULT_CHANNELS) return (0, r.jsx)(E.j, {});
@@ -123,7 +124,7 @@ function A(e) {
     q = async () => {
       let e = _.Z.advancedMode;
       if (L) try {
-        if (D === y.PG.DEFAULT_CHANNELS) await (0, f.DO)(t).then(() => e ? (0, v.rS)(t, {
+        if (D === y.PG.DEFAULT_CHANNELS) await (0, h.DO)(t).then(() => e ? (0, v.rS)(t, {
           ignoreDefaultPrompt: true
         }) : Promise.resolve());
         else if (D === y.PG.CUSTOMIZATION_QUESTIONS) await (0, v.rS)(t, {
@@ -131,24 +132,24 @@ function A(e) {
         });
         else if (D === y.PG.HOME_SETTINGS) {
           let e = j.Z.getSettings();
-          await (0, x.oo)(t.id, e)
+          await (0, b.oo)(t.id, e)
         }
       } catch (e) {
         returnfalse
       }
       returntrue
     }, X = async () => {
-      g.default.track(T.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, Z(R({}, (0, m.hH)(h)), {
+      g.default.track(T.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, Z(R({}, (0, m.hH)(f)), {
         step: y.PG[D],
         back: false,
         skip: !L
-      })), (0, b.Nb)((0, y.lg)(D)), await q() && (0, b.IG)(h, D)
+      })), (0, x.Nb)((0, y.lg)(D)), await q() && (0, x.IG)(f, D)
     }, Q = async () => {
-      g.default.track(T.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, Z(R({}, (0, m.hH)(h)), {
+      g.default.track(T.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, Z(R({}, (0, m.hH)(f)), {
         step: y.PG[D],
         back: true,
         skip: false
-      })), await q() && (0, b.Wy)(h, D)
+      })), await q() && (0, x.Wy)(f, D)
     }, J = null;
   G && (D === y.PG.SAFETY_CHECK ? J = (0, r.jsx)(N.j7, {}) : D === y.PG.DEFAULT_CHANNELS ? J = (0, r.jsx)(N.Io, {}) : D === y.PG.CUSTOMIZATION_QUESTIONS ? J = (0, r.jsx)(N.cZ, {}) : D === y.PG.HOME_SETTINGS && (J = (0, r.jsx)(N.g6, {})));
   let $ = (0, r.jsx)("div", {

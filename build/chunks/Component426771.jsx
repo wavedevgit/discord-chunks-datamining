@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 426771, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => x
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,95 +18,95 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk639560 = require("./639560.js");
 
-function v(e) {
-  var t, n, v;
-  let x, {
-      guildId: C,
+function x(e) {
+  var t, n, x;
+  let _, {
+      guildId: b,
       group: h,
-      powerups: b
+      powerups: j
     } = e,
-    [E, I] = o.useState(false),
-    T = (0, c.Gv)(C, b),
-    j = (0, i.e7)([l.Z], () => l.Z.useReducedMotion),
-    P = (0, d.Z)(h, C);
-  if (true === P || b.length <= 0) return null;
-  let y = T.some(e => e.type !== m.A3.INACTIVE),
-    S = (0, p.d)(y),
-    N = T.reduce((e, t) => {
+    [C, E] = i.useState(false),
+    I = (0, c.Gv)(b, j),
+    w = (0, o.e7)([s.Z], () => s.Z.useReducedMotion),
+    Z = (0, d.Z)(h, b);
+  if (true === Z || j.length <= 0) return null;
+  let P = I.some(e => e.type !== f.A3.INACTIVE),
+    y = (0, p.d)(P),
+    T = I.reduce((e, t) => {
       let {
         sourceEntitlement: n
       } = t, r = null == n ? true : n.ends_at;
       return null == r ? e : null == e || r < e ? r : e
     }, true);
-  true !== N ? x = {
+  true !== T ? _ = {
     type: "expiring",
-    expiringAt: N
-  } : y && (x = {
+    expiringAt: T
+  } : P && (_ = {
     type: "active",
-    statusText: f.intl.string(g.default.FFLkm5)
+    statusText: g.intl.string(m.default.FFLkm5)
   });
-  let Z = T.reduce((e, t) => {
+  let N = I.reduce((e, t) => {
       let {
         type: n,
         powerup: r
       } = t;
-      return n === m.A3.POWERUP_ACTIVATED ? e + r.cost : e
+      return n === f.A3.POWERUP_ACTIVATED ? e + r.cost : e
     }, 0),
-    w = T.reduce((e, t) => {
+    O = I.reduce((e, t) => {
       var n, r;
       let {
-        powerup: o
+        powerup: i
       } = t;
-      return e < (null != (n = null == o ? true : o.cost) ? n : 0) ? e : null != (r = null == o ? true : o.cost) ? r : 0
-    }, null != (v = null == (n = T[0]) || null == (t = n.powerup) ? true : t.cost) ? v : 0),
-    O = T.reduce((e, t) => {
+      return e < (null != (n = null == i ? true : i.cost) ? n : 0) ? e : null != (r = null == i ? true : i.cost) ? r : 0
+    }, null != (x = null == (n = I[0]) || null == (t = n.powerup) ? true : t.cost) ? x : 0),
+    S = I.reduce((e, t) => {
       var n;
       let {
         powerup: r
       } = t;
       return e + (null != (n = null == r ? true : r.cost) ? n : 0)
     }, 0),
-    k = y ? Z : w,
-    A = !y && O > k ? "+" : true,
-    U = !j && E ? P.image.animatedUrl : P.image.staticUrl,
-    R = null != P.viewCta && "" !== P.viewCta ? P.viewCta : f.intl.string(g.default["27GkOj"]),
-    L = null != P.viewCtaTooltip && "" !== P.viewCtaTooltip ? P.viewCtaTooltip : true;
+    A = P ? N : O,
+    k = !P && S > A ? "+" : true,
+    R = !w && C ? Z.image.animatedUrl : Z.image.staticUrl,
+    L = null != Z.viewCta && "" !== Z.viewCta ? Z.viewCta : g.intl.string(m.default["27GkOj"]),
+    U = null != Z.viewCtaTooltip && "" !== Z.viewCtaTooltip ? Z.viewCtaTooltip : true;
   return (0, r.jsxs)(u.aB, {
-    label: P.title,
-    isActive: y,
-    badge: P.badge,
-    onClick: () => P.openModal(b),
-    onMouseOver: () => I(true),
-    onMouseLeave: () => I(false),
+    label: Z.title,
+    isActive: P,
+    badge: Z.badge,
+    onClick: () => Z.openModal(j),
+    onMouseOver: () => E(true),
+    onMouseLeave: () => E(false),
     children: [(0, r.jsx)("img", {
       alt: "",
-      src: U,
-      className: _.image
+      src: R,
+      className: v.image
     }), (0, r.jsx)(u.Q9, {
-      title: P.title,
-      textColor: S,
+      title: Z.title,
+      textColor: y,
       footer: (0, r.jsx)(u.uf, {
-        status: x,
-        cost: k,
-        costDecorator: A
+        status: _,
+        cost: A,
+        costDecorator: k
       }),
-      children: (0, r.jsx)(s.Text, {
-        className: _.description,
-        color: S,
+      children: (0, r.jsx)(a.Text, {
+        className: v.description,
+        color: y,
         variant: "text-sm/medium",
-        children: P.description
+        children: Z.description
       })
     }), (0, r.jsx)(u.N4, {
-      children: null != L ? (0, r.jsx)(a.u, {
+      children: null != U ? (0, r.jsx)(l.u, {
         asContainer: true,
-        text: L,
+        text: U,
         delay: 100,
-        children: (0, r.jsx)(s.zxk, {
-          text: R,
+        children: (0, r.jsx)(a.zxk, {
+          text: L,
           fullWidth: true
         })
-      }) : (0, r.jsx)(s.zxk, {
-        text: R,
+      }) : (0, r.jsx)(a.zxk, {
+        text: L,
         fullWidth: true
       })
     })]

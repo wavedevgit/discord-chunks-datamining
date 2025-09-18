@@ -1,12 +1,13 @@
 /** Chunk was on 8106 **/
 /** chunk id: 430677, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk471445 = require("./471445.js"),
@@ -62,14 +63,14 @@ let _ = function(e) {
     onDragStart: T,
     onDragComplete: P,
     onDragReset: w
-  } = e, R = (0, s.e7)([p.Z], () => p.Z.getChannel(N.channelId)), Z = (0, s.e7)([h.Z], () => h.Z.getGuild(C)), {
+  } = e, R = (0, a.e7)([p.Z], () => p.Z.getChannel(N.channelId)), Z = (0, a.e7)([f.Z], () => f.Z.getGuild(C)), {
     customEmoji: D,
     unicodeEmoji: A
-  } = (0, u.Z)(null == (t = N.emoji) ? true : t.id, null == (l = N.emoji) ? true : l.name), L = null == N.emoji || null != D || null != A, k = f.ZP.getNewMemberActionIconURL({
+  } = (0, u.Z)(null == (t = N.emoji) ? true : t.id, null == (l = N.emoji) ? true : l.name), L = null == N.emoji || null != D || null != A, k = h.ZP.getNewMemberActionIconURL({
     channelId: N.channelId,
     icon: N.icon
   }), M = null;
-  null != R && (0, m.kb)(R) ? L || (M = b.intl.string(b.t.wAkIZW)) : M = b.intl.string(b.t.CbTEKC);
+  null != R && (0, m.kb)(R) ? L || (M = x.intl.string(x.t.wAkIZW)) : M = x.intl.string(x.t.CbTEKC);
   let {
     drag: G,
     dragSourcePosition: U,
@@ -98,37 +99,37 @@ let _ = function(e) {
   if (null == R || null == Z) return null;
   let z = null != (y = (0, c.KS)(R)) ? y : o.VL1;
   return (0, r.jsxs)("div", {
-    className: x.actionItemContainer,
+    className: b.actionItemContainer,
     children: [(0, r.jsxs)("div", {
-      className: a()(x.actionItem, {
-        [x.dropIndicatorBefore]: null != U && E < U,
-        [x.dropIndicatorAfter]: null != U && E > U,
-        [x.actionItemError]: null != M
+      className: s()(b.actionItem, {
+        [b.dropIndicatorBefore]: null != U && E < U,
+        [b.dropIndicatorAfter]: null != U && E > U,
+        [b.actionItemError]: null != M
       }),
       ref: e => {
         G(B(e))
       },
       children: [(0, r.jsx)("div", {
-        className: x.dragContainer,
+        className: b.dragContainer,
         onMouseEnter: () => F(true),
         onMouseLeave: () => F(false),
         children: (0, r.jsx)(o.Vni, {
           size: "xs",
           color: "currentColor",
-          className: x.dragIcon
+          className: b.dragIcon
         })
       }), null != k ? (0, r.jsx)("div", {
-        className: x.iconWrapper,
+        className: b.iconWrapper,
         children: (0, r.jsx)("img", {
           src: k,
-          className: x.icon,
+          className: b.icon,
           width: 48,
           height: 48,
           alt: "",
           "aria-hidden": true
         })
       }) : (0, r.jsx)("div", {
-        className: x.actionItemEmojiWrapper,
+        className: b.actionItemEmojiWrapper,
         children: (0, r.jsx)(g.Z, {
           emojiId: null == (_ = N.emoji) ? true : _.id,
           emojiName: null == (O = N.emoji) ? true : O.name,
@@ -136,7 +137,7 @@ let _ = function(e) {
           defaultComponent: (0, r.jsx)(z, {})
         })
       }), (0, r.jsxs)("div", {
-        className: x.actionItemText,
+        className: b.actionItemText,
         children: [(0, r.jsx)(o.Text, {
           variant: "text-md/semibold",
           color: "header-primary",
@@ -144,18 +145,18 @@ let _ = function(e) {
         }), (0, r.jsx)(o.Text, {
           variant: "text-xs/medium",
           color: "header-secondary",
-          children: b.intl.format(b.t.Ngk8Nj, {
+          children: x.intl.format(x.t.Ngk8Nj, {
             channelName: R.name
           })
         })]
       }), (0, r.jsx)(o.ua7, {
-        text: b.intl.string(b.t.bt75u7),
+        text: x.intl.string(x.t.bt75u7),
         children: e => (0, r.jsx)(o.hU, v(j({}, e), {
           icon: o.vdY,
           size: "sm",
           variant: "primary",
           onClick: H,
-          "aria-label": b.intl.string(b.t.bt75u7)
+          "aria-label": x.intl.string(x.t.bt75u7)
         }))
       })]
     }), null != M && (0, r.jsx)(o.Text, {

@@ -1,12 +1,12 @@
 /** Chunk was on 44799 **/
 /** chunk id: 248641, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => C
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -23,57 +23,57 @@ var Chunk951288 = require("./951288.js"),
   Chunk530045 = require("./530045.js"),
   Chunk517862 = require("./517862.js");
 
-function E(e) {
+function C(e) {
   let {
     guildId: t
-  } = e, n = (0, l.e7)([m.Z], () => m.Z.getStateForGuild(t)), i = o.useMemo(() => {
+  } = e, n = (0, s.e7)([f.Z], () => f.Z.getStateForGuild(t)), o = i.useMemo(() => {
     if ((null == n ? true : n.instances) != null && 0 !== Object.keys(n.instances).length) return {
       type: "active",
-      statusText: v.intl.string(f.default.FFLkm5)
+      statusText: x.intl.string(g.default.FFLkm5)
     }
-  }, [null == n ? true : n.instances]), E = (0, p.d)((null == i ? true : i.type) === "active"), I = o.useMemo(() => {
+  }, [null == n ? true : n.instances]), C = (0, p.d)((null == o ? true : o.type) === "active"), E = i.useMemo(() => {
     if ((null == n ? true : n.catalog) == null) return 0;
     let e = Object.values(n.catalog);
     return 0 === e.length ? 0 : Math.min(...e.map(e => e.baseCost))
   }, [null == n ? true : n.catalog]);
   return null == n ? null : (0, r.jsxs)(d.aB, {
-    label: v.intl.string(_.default["fjt/vr"]),
+    label: x.intl.string(v.default["fjt/vr"]),
     badge: "new",
-    isActive: (null == i ? true : i.type) === "active",
-    onClick: () => (0, g.Z)({
+    isActive: (null == o ? true : o.type) === "active",
+    onClick: () => (0, m.Z)({
       guildId: t,
       analyticsLocation: u.Z.GUILD_POWERUPS_OVERVIEW
     }),
     children: [(0, r.jsxs)("div", {
       className: h.imageContainer,
       children: [(0, r.jsx)("img", {
-        className: a()(C.background, x.image, h.image),
-        src: b.Z,
+        className: l()(b.background, _.image, h.image),
+        src: j.Z,
         alt: ""
       }), (0, r.jsx)("div", {
-        className: a()(x.image, h.gradient)
+        className: l()(_.image, h.gradient)
       })]
     }), (0, r.jsx)(d.Q9, {
-      title: v.intl.string(_.default["fjt/vr"]),
-      textColor: E,
+      title: x.intl.string(v.default["fjt/vr"]),
+      textColor: C,
       footer: (0, r.jsx)(d.uf, {
-        cost: I,
+        cost: E,
         costDecorator: "+",
-        status: i
+        status: o
       }),
-      children: (0, r.jsx)(s.xvT, {
-        className: x.description,
-        color: E,
+      children: (0, r.jsx)(a.xvT, {
+        className: _.description,
+        color: C,
         variant: "text-sm/medium",
-        children: v.intl.string(_.default.P7VSCg)
+        children: x.intl.string(v.default.P7VSCg)
       })
     }), (0, r.jsx)(d.N4, {
       children: (0, r.jsx)(c.zxk, {
         variant: "primary",
         fullWidth: true,
-        text: v.intl.string(_.default.MbdLuL),
+        text: x.intl.string(v.default.MbdLuL),
         onClick: e => {
-          e.stopPropagation(), (0, g.Z)({
+          e.stopPropagation(), (0, m.Z)({
             guildId: t,
             analyticsLocation: u.Z.GUILD_POWERUPS_OVERVIEW
           })

@@ -1,12 +1,13 @@
 /** Chunk was on 8106 **/
 /** chunk id: 623691, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => I
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
   o = require.n(Chunk913527),
   Chunk704215 = require("./704215.js"),
@@ -33,8 +34,8 @@ function I(e) {
     guild: t,
     everyoneRole: n,
     filteredRoles: l,
-    setEditRoleId: a,
-    query: s,
+    setEditRoleId: s,
+    query: a,
     setQuery: o,
     setHeaderHeight: c
   } = e, u = i.useRef(null), m = p.D.useExperiment({
@@ -46,8 +47,8 @@ function I(e) {
     c(null != (t = null == (e = u.current) ? true : e.offsetHeight) ? t : _.Cl)
   }, [c]);
   let g = i.useCallback(() => {
-    a(n.id)
-  }, [a, n.id]);
+    s(n.id)
+  }, [s, n.id]);
   return (0, r.jsxs)("div", {
     ref: u,
     children: [(0, r.jsx)(d.vwX, {
@@ -64,7 +65,7 @@ function I(e) {
       guild: t,
       everyoneRole: n,
       filteredRoles: l,
-      query: s,
+      query: a,
       setQuery: o,
       onEveryoneRoleClick: g
     })]
@@ -82,13 +83,13 @@ function S(e) {
       forceTrack: true
     })
   }, [t]);
-  let n = (0, b.vc)(o()(O.LCk), "LL"),
+  let n = (0, x.vc)(o()(O.LCk), "LL"),
     l = t.features.has(O.oNc.PIN_PERMISSION_MIGRATION_COMPLETE) ? (0, r.jsx)(d.Text, {
       variant: "text-sm/normal",
       children: N.intl.format(N.t.Vg2oTE, {
         breakingChangeDate: n
       })
-    }) : f.Z.can(C.Pl.ADMINISTRATOR, t) ? (0, r.jsx)(d.Text, {
+    }) : h.Z.can(C.Pl.ADMINISTRATOR, t) ? (0, r.jsx)(d.Text, {
       variant: "text-sm/normal",
       children: N.intl.format(N.t.HYM8OD, {
         onClickMigrate: () => {
@@ -112,8 +113,8 @@ function S(e) {
         breakingChangeDate: n
       })
     });
-  return (0, r.jsx)(h.Z, {
-    look: h.z.WARNING,
+  return (0, r.jsx)(f.Z, {
+    look: f.z.WARNING,
     className: E.migrationInfoBox,
     children: l
   })
@@ -125,7 +126,7 @@ function T(e) {
     everyoneRole: n,
     filteredRoles: i,
     query: l,
-    setQuery: s,
+    setQuery: a,
     onEveryoneRoleClick: o
   } = e;
   return (0, r.jsxs)(r.Fragment, {
@@ -135,13 +136,13 @@ function T(e) {
     }), (0, r.jsx)(P, {
       guild: t,
       query: l,
-      setQuery: s
+      setQuery: a
     }), (0, r.jsx)(d.Text, {
       className: E.helpText,
       color: "header-secondary",
       variant: "text-sm/normal",
       children: N.intl.format(N.t.xkC3YW, {
-        articleURL: x.Z.getArticleURL(O.BhN.PERMISSIONS_TUTORIAL)
+        articleURL: b.Z.getArticleURL(O.BhN.PERMISSIONS_TUTORIAL)
       })
     }), (0, r.jsx)("div", {
       className: E.rolesTable,
@@ -150,13 +151,13 @@ function T(e) {
         children: [(0, r.jsx)("div", {
           className: E.dragSpacing
         }), (0, r.jsx)(d.Text, {
-          className: a()(E.tableTitle, E.roleNameSpacing),
+          className: s()(E.tableTitle, E.roleNameSpacing),
           variant: "text-sm/normal",
           children: N.intl.format(N.t["38N3V1"], {
             numRoles: String(i.length)
           })
         }), (0, r.jsx)(d.Text, {
-          className: a()(E.tableTitle, E.memberSpacing),
+          className: s()(E.tableTitle, E.memberSpacing),
           variant: "text-sm/normal",
           children: N.intl.string(N.t["9Oq93t"])
         }), (0, r.jsx)("div", {
@@ -172,12 +173,12 @@ function P(e) {
     guild: t,
     query: n,
     setQuery: l
-  } = e, [a, s] = i.useState(false), o = i.useCallback(e => {
+  } = e, [s, a] = i.useState(false), o = i.useCallback(e => {
     l(e)
   }, [l]), c = i.useCallback(() => {
     l("")
   }, [l]), u = async () => {
-    s(true), await m.Z.createRole(t.id), s(false)
+    a(true), await m.Z.createRole(t.id), a(false)
   };
   return (0, r.jsx)("div", {
     className: E.__invalid_rolesList,
@@ -192,7 +193,7 @@ function P(e) {
       }), (0, r.jsx)(d.zxk, {
         size: "sm",
         onClick: u,
-        loading: a,
+        loading: s,
         text: N.intl.string(N.t.JZZjQE)
       })]
     })

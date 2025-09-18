@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 195189, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => c
 });
@@ -31,11 +32,11 @@ function c(e) {
       }) : n]
     }), (0, r.jsx)(i.ua7, {
       tooltipContentClassName: o.tooltip,
-      text: s.intl.string(s.t.NQ4nCg),
+      text: a.intl.string(a.t.NQ4nCg),
       children: e => (0, r.jsx)(l.Z, {
         checked: true,
         disabled: true,
-        onChange: a.dG,
+        onChange: s.dG,
         className: o.bringToFront,
         tooltipProps: e
       })

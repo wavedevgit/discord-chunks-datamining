@@ -1,9 +1,10 @@
 /** Chunk was on 8106 **/
 /** chunk id: 324330, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  $r: () => b,
-  JA: () => f,
-  ZP: () => x
+  $r: () => x,
+  JA: () => h,
+  ZP: () => b
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -19,20 +20,20 @@ var Chunk392711 = require("./392711.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk703662 = require("./703662.js");
 
-function h(e) {
+function f(e) {
   if (null == e) returnfalse;
   let t = e.features.has(m.oNc.COMMUNITY),
     n = e.features.has(m.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL);
   return t || n
 }
 
-function f() {
+function h() {
   let e = Chunk999382.Z.getProps().guild;
-  null != module && (h(module) ? (Chunk434404.Z.close(), (0, Chunk527379._X)(module.id)) : Chunk434404.Z.open(module.id, Chunk981631.pNK.MEMBERS))
+  null != module && (f(module) ? (Chunk434404.Z.close(), (0, Chunk527379._X)(module.id)) : Chunk434404.Z.open(module.id, Chunk981631.pNK.MEMBERS))
 }
 
-function b() {
-  let e = h((0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps().guild, []));
+function x() {
+  let e = f((0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps().guild, []));
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk703662.rowContainer,
     children: [(0, Chunk951288.jsx)("div", {
@@ -45,7 +46,7 @@ function b() {
   })
 }
 
-function x() {
+function b() {
   var e;
   let {
     guild: t

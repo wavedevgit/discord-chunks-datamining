@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 354031, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   P: () => u
 }), require("./388685.js"), require("./953529.js");
@@ -18,7 +19,7 @@ function u(e) {
     canManageGuild: n
   } = e, u = i.useCallback(e => {
     let n = new Set(t);
-    e ? n.add(o.oNc.SUMMARIES_ENABLED_BY_USER) : n.delete(o.oNc.SUMMARIES_ENABLED_BY_USER), s.Z.updateGuild({
+    e ? n.add(o.oNc.SUMMARIES_ENABLED_BY_USER) : n.delete(o.oNc.SUMMARIES_ENABLED_BY_USER), a.Z.updateGuild({
       features: n
     })
   }, [t]);
@@ -34,7 +35,7 @@ function u(e) {
       color: "text-secondary",
       className: d.description,
       children: c.intl.format(c.t["c6Cy/v"], {
-        helpdeskArticle: a.Z.getArticleURL(o.BhN.CONVERSATION_SUMMARIES)
+        helpdeskArticle: s.Z.getArticleURL(o.BhN.CONVERSATION_SUMMARIES)
       })
     }), (0, r.jsx)(l.j7V, {
       className: d.switch,

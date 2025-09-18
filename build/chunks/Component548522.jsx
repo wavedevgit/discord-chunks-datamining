@@ -1,7 +1,8 @@
 /** Chunk was on 8106 **/
 /** chunk id: 548522, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  y: () => h
+  y: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,60 +17,60 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk194973 = require("./194973.js");
 
-function h(e) {
+function f(e) {
   var t;
   let {
     guild: n,
     formFields: c
-  } = e, [h, b] = i.useState(c);
-  i.useEffect(() => b(c), [c]);
-  let x = null != (t = (0, s.A)({
+  } = e, [f, x] = i.useState(c);
+  i.useEffect(() => x(c), [c]);
+  let b = null != (t = (0, a.A)({
       guildId: n.id
     })) ? t : 0,
     [j, v] = i.useState(null),
-    _ = i.useMemo(() => null == h ? true : h.some(e => (0, a.J)(e)), [h]),
-    O = i.useMemo(() => h.length === m.nx, [h]),
+    _ = i.useMemo(() => null == f ? true : f.some(e => (0, s.J)(e)), [f]),
+    O = i.useMemo(() => f.length === m.nx, [f]),
     y = i.useCallback(e => {
-      u.Z.setPendingMemberVerificationRules(n.id, e), b(e), null != j && v(null)
+      u.Z.setPendingMemberVerificationRules(n.id, e), x(e), null != j && v(null)
     }, [j, n.id]),
     C = i.useCallback(e => {
-      y([...h, e])
-    }, [h, y]),
+      y([...f, e])
+    }, [f, y]),
     N = i.useCallback(e => {
-      y([...h.slice(0, e), ...h.slice(e + 1)])
-    }, [h, y]),
+      y([...f.slice(0, e), ...f.slice(e + 1)])
+    }, [f, y]),
     E = i.useCallback((e, t) => {
-      if (h[e] === t) return;
-      let n = [...h];
+      if (f[e] === t) return;
+      let n = [...f];
       n[e] = t, y(n)
-    }, [h, y]),
+    }, [f, y]),
     I = i.useCallback((e, t, n) => {
-      let r = h.indexOf(e),
-        i = [...h];
-      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), b(i)), n ? (y(i), null !== j && v(null)) : j !== t && v(t)
-    }, [j, h, y]);
+      let r = f.indexOf(e),
+        i = [...f];
+      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), x(i)), n ? (y(i), null !== j && v(null)) : j !== t && v(t)
+    }, [j, f, y]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.X6q, {
       variant: "text-xs/bold",
       color: "text-muted",
       className: p.title,
       children: g.intl.format(g.t["sm+75u"], {
-        currentCount: h.length,
+        currentCount: f.length,
         maxCount: m.nx
       })
-    }), h.map(e => (0, d.a0)({
+    }), f.map(e => (0, d.a0)({
       dropHoveredIndex: j,
       formField: e,
       guild: n,
-      index: h.indexOf(e),
-      isDragEnabled: h.length > 1,
-      submittedGuildJoinRequestsCount: x,
+      index: f.indexOf(e),
+      isDragEnabled: f.length > 1,
+      submittedGuildJoinRequestsCount: b,
       removeFormField: N,
       updateFormField: E,
       updateFormFieldOrder: I,
-      canRemove: h.length > 1,
+      canRemove: f.length > 1,
       actionsLocation: "side",
-      fieldStyle: a.it.COMPACT
+      fieldStyle: s.it.COMPACT
     })), !O && (0, r.jsx)("div", {
       className: p.addQuestionsContainer,
       children: (0, r.jsx)(o.Z, {
@@ -77,20 +78,20 @@ function h(e) {
         guild: n,
         allowTerms: !_
       })
-    }), !O && (0, r.jsx)(f, {
+    }), !O && (0, r.jsx)(h, {
       addFormField: C
     })]
   })
 }
 
-function f(e) {
+function h(e) {
   let {
     addFormField: t
   } = e, n = i.useMemo(() => [{
     text: g.intl.string(g.t.EOwiEh),
     onClick: () => {
       t({
-        field_type: a.QJ.TEXT_INPUT,
+        field_type: s.QJ.TEXT_INPUT,
         label: g.intl.string(g.t.EOwiEh),
         required: true
       })
@@ -99,7 +100,7 @@ function f(e) {
     text: g.intl.string(g.t.jqrNDg),
     onClick: () => {
       t({
-        field_type: a.QJ.TEXT_INPUT,
+        field_type: s.QJ.TEXT_INPUT,
         label: g.intl.string(g.t.jqrNDg),
         required: true
       })
@@ -108,7 +109,7 @@ function f(e) {
     text: g.intl.string(g.t.I5q8vr),
     onClick: () => {
       t({
-        field_type: a.QJ.TEXT_INPUT,
+        field_type: s.QJ.TEXT_INPUT,
         label: g.intl.string(g.t.I5q8vr),
         required: true
       })

@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 787561, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   X: () => D,
   Z: () => k
@@ -7,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk345074 = require("./345074.js"),
   Chunk442837 = require("./442837.js"),
   Chunk544891 = require("./544891.js"),
@@ -76,8 +77,8 @@ let Z = "dismissedCommunityFeaturesUpsell",
         errors: Chunk999382.Z.getErrors()
       })),
       l = Object.keys(Chunk647438),
-      a = Chunk120356.length > 0 ? Chunk120356[0] : null;
-    return e = "rules_channel_id" === a ? Chunk388032.intl.string(Chunk388032.t["7IrBYm"]) : null != a ? Chunk647438[a] : true, (0, Chunk951288.jsx)(Chunk852860.Z, {
+      s = Chunk120356.length > 0 ? Chunk120356[0] : null;
+    return e = "rules_channel_id" === s ? Chunk388032.intl.string(Chunk388032.t["7IrBYm"]) : null != s ? Chunk647438[s] : true, (0, Chunk951288.jsx)(Chunk852860.Z, {
       submitting: require,
       onReset: () => {
         null != exports && Chunk434404.Z.init(exports.id)
@@ -100,20 +101,20 @@ let Z = "dismissedCommunityFeaturesUpsell",
       discoveryEnabled: t,
       onboardingEnabled: n,
       guild: l
-    } = e, [a, s] = i.useState(true === d.K.get(Z)), g = (0, o.e7)([x.Z], () => {
+    } = e, [s, a] = i.useState(true === d.K.get(Z)), g = (0, o.e7)([b.Z], () => {
       var e;
-      return null != (e = x.Z.getMemberCount(l.id)) ? e : 0
-    }), [h, b] = i.useState(false);
+      return null != (e = b.Z.getMemberCount(l.id)) ? e : 0
+    }), [f, x] = i.useState(false);
     (0, p.ZP)(() => {
       c.tn.get({
         url: I.ANM.GUILD_ADMIN_SERVER_ELIGIBILITY(l.id),
         rejectWithError: true
       }).then(e => {
-        b(e.body.eligible_for_admin_server)
-      }).catch(() => b(false))
+        x(e.body.eligible_for_admin_server)
+      }).catch(() => x(false))
     });
     let v = (0, o.e7)([j.Z], () => j.Z.getGuild("942897714956472401")),
-      _ = l.features.has(I.oNc.COMMUNITY) && g >= 1e3 && h && null == v;
+      _ = l.features.has(I.oNc.COMMUNITY) && g >= 1e3 && f && null == v;
     if (t && n && !_) return null;
     let O = async () => {
       try {
@@ -122,10 +123,10 @@ let Z = "dismissedCommunityFeaturesUpsell",
           oldFormErrors: true,
           rejectWithError: true
         });
-        y.Z.close(), (0, f.X)(e.body.id)
+        y.Z.close(), (0, h.X)(e.body.id)
       } catch (e) {}
     };
-    return a && !_ ? null : (0, r.jsxs)("div", {
+    return s && !_ ? null : (0, r.jsxs)("div", {
       className: T.upsellContainer,
       children: [(0, r.jsxs)("div", {
         className: T.upsellContent,
@@ -150,7 +151,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         size: u.zx.Sizes.NONE,
         className: T.upsellClose,
         onClick: () => {
-          d.K.set(Z, true), s(true)
+          d.K.set(Z, true), a(true)
         },
         children: (0, r.jsx)(m.Dio, {
           size: "md",
@@ -224,7 +225,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
       } = e;
       t.type === I.d4z.GUILD_TEXT && g.push({
         value: t.id,
-        label: (0, h.F6)(t, O.default, _.Z, true)
+        label: (0, f.F6)(t, O.default, _.Z, true)
       })
     });
     let p = () => {
@@ -236,12 +237,12 @@ let Z = "dismissedCommunityFeaturesUpsell",
           publicUpdatesChannelId: null
         })
       },
-      f = e => {
+      h = e => {
         y.Z.updateGuild({
           description: e
         })
       },
-      x = () => {
+      b = () => {
         module.features.has(Chunk981631.oNc.DISCOVERABLE) && module.features.has(Chunk981631.oNc.PARTNERED) ? (0, Chunk481060.h7j)(e => (0, r.jsx)(m.ConfirmModal, R(w({}, e), {
           header: S.intl.string(S.t.iBnVHR),
           confirmText: S.intl.string(S.t["cY+Ooa"]),
@@ -279,7 +280,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         onboardingEnabled: module.features.has(Chunk981631.oNc.GUILD_ONBOARDING),
         guild: module
       }) : null, (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-        className: a()(Chunk353343.twoColumnFormSection, Chunk353343.firstSection),
+        className: s()(Chunk353343.twoColumnFormSection, Chunk353343.firstSection),
         children: [(0, Chunk951288.jsxs)("div", {
           className: Chunk353343.descriptionColumn,
           children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
@@ -305,7 +306,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
       }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
         className: Chunk353343.divider
       }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-        className: a()(Chunk353343.twoColumnFormSection, Chunk353343.firstSection),
+        className: s()(Chunk353343.twoColumnFormSection, Chunk353343.firstSection),
         children: [(0, Chunk951288.jsxs)("div", {
           className: Chunk353343.descriptionColumn,
           children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
@@ -332,7 +333,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
       }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
         className: Chunk353343.divider
       }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-        className: a()(Chunk353343.twoColumnFormSection, Chunk353343.firstSection),
+        className: s()(Chunk353343.twoColumnFormSection, Chunk353343.firstSection),
         children: [(0, Chunk951288.jsxs)("div", {
           className: Chunk353343.descriptionColumn,
           children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
@@ -424,7 +425,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
             variant: "critical-primary",
             size: "sm",
             text: S.intl.string(S.t.c1BmbG),
-            onClick: x,
+            onClick: b,
             disabled: !n
           }, e))
         })]

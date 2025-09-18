@@ -1,7 +1,7 @@
-/** Chunk was on 72853 **/
+/** Chunk was on 85991 **/
 /** chunk id: 17597, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => C
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,61 +23,61 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk70402 = require("./70402.js"),
   Chunk765896 = require("./765896.js");
-let _ = function(e) {
+let C = function(e) {
   let {
     transitionState: t,
     entryPoint: n,
-    onClose: _,
-    onComplete: O,
-    dismissable: A
-  } = e, [S, I] = i.useState(a.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), R = i.useRef(S), [w, P] = (0, s.US)([S], true, true), C = i.useMemo(() => (0, l.Z)(), []), N = i.useRef(false);
-  i.useEffect(() => {
-    R.current = w
-  }, [w]);
+    onClose: C,
+    onComplete: N,
+    dismissable: E
+  } = e, [S, O] = r.useState(l.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), T = r.useRef(S), [k, P] = (0, c.US)([S], true, true), R = r.useMemo(() => (0, i.Z)(), []), w = r.useRef(false);
+  r.useEffect(() => {
+    T.current = k
+  }, [k]);
   let {
-    loading: k,
-    ageVerificationMethods: T
-  } = (0, g.Z)(() => {
-    null == O || O(), _()
+    loading: I,
+    ageVerificationMethods: Z
+  } = (0, f.Z)(() => {
+    null == N || N(), C()
   }, () => {
-    I(a.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
+    O(l.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
   });
-  return i.useLayoutEffect(() => () => {
-    if (N.current) return;
-    let e = R.current;
-    null != e && (N.current = true, f.Z.maybeOpenAgeVerificationUserFeedback({
+  return r.useLayoutEffect(() => () => {
+    if (w.current) return;
+    let e = T.current;
+    null != e && (w.current = true, m.Z.maybeOpenAgeVerificationUserFeedback({
       location: "age_verification_get_started_modal",
       visibleContent: e
     }))
-  }, []), i.useEffect(() => {
-    (0, m.lA)(C, m.d_.EXPRESSIVE_PRIMARY, n)
-  }, [C, n]), (0, r.jsx)(o.I, {
+  }, []), r.useEffect(() => {
+    (0, x.lA)(R, x.d_.EXPRESSIVE_PRIMARY, n)
+  }, [R, n]), (0, a.jsx)(s.I, {
     transitionState: t,
-    onClose: _,
+    onClose: C,
     gradientColor: "blue",
-    dismissable: A,
+    dismissable: E,
     graphic: {
       type: "image",
-      src: j.Z
+      src: y.Z
     },
-    title: x.intl.string(x.t.JHNunp),
-    subtitle: x.intl.format(E.default.RpMIT0, {
+    title: j.intl.string(j.t.JHNunp),
+    subtitle: j.intl.format(v.default.RpMIT0, {
       handleOnHelpUrlHook: () => {
-        h.Z.openUrl(p.Z.getArticleURL(b.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, m.x3)(C, m.d_.EXPRESSIVE_PRIMARY, m.sU.LEARN_MORE)
+        p.Z.openUrl(h.Z.getArticleURL(g.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, x.x3)(R, x.d_.EXPRESSIVE_PRIMARY, x.sU.LEARN_MORE)
       }
     }),
-    actionBarInput: (0, r.jsx)(c.Avr, {
+    actionBarInput: (0, a.jsx)(o.Avr, {
       size: "sm",
       textVariant: "text-sm/medium",
-      text: x.intl.string(x.t["2jxGen"]),
+      text: j.intl.string(j.t["2jxGen"]),
       onClick: () => {
-        (0, m.x3)(C, m.d_.EXPRESSIVE_PRIMARY, m.sU.LOG_OUT), (0, d.R)("age_verification_get_started_modal")
+        (0, x.x3)(R, x.d_.EXPRESSIVE_PRIMARY, x.sU.LOG_OUT), (0, u.R)("age_verification_get_started_modal")
       }
     }),
-    children: (0, r.jsxs)(c.Kqy, {
+    children: (0, a.jsxs)(o.Kqy, {
       direction: "vertical",
       gap: 16,
-      children: [(0, r.jsxs)(c.Kqy, {
+      children: [(0, a.jsxs)(o.Kqy, {
         fullWidth: false,
         direction: "horizontal",
         gap: 8,
@@ -88,46 +88,46 @@ let _ = function(e) {
           right: 12
         },
         align: "center",
-        className: v.dataAssurance,
-        children: [(0, r.jsx)(c.d3s, {
+        className: _.dataAssurance,
+        children: [(0, a.jsx)(o.d3s, {
           size: "lg",
           color: "currentColor"
-        }), (0, r.jsx)(c.Text, {
+        }), (0, a.jsx)(o.Text, {
           variant: "text-sm/medium",
           color: "text-feedback-info",
-          children: x.intl.string(E.default.ar3a3t)
+          children: j.intl.string(v.default.ar3a3t)
         })]
-      }), null == T || 0 === T.length ? (0, r.jsxs)(c.Kqy, {
+      }), null == Z || 0 === Z.length ? (0, a.jsxs)(o.Kqy, {
         direction: "vertical",
         align: "center",
         gap: 16,
-        children: [(0, r.jsx)(c.Text, {
+        children: [(0, a.jsx)(o.Text, {
           variant: "text-xs/medium",
           color: "text-secondary",
-          children: x.intl.string(E.default.cR6339)
-        }), (0, r.jsx)(c.zxk, {
+          children: j.intl.string(v.default.cR6339)
+        }), (0, a.jsx)(o.zxk, {
           variant: "primary",
           size: "sm",
-          text: x.intl.string(E.default.hDvmYG),
+          text: j.intl.string(v.default.hDvmYG),
           onClick: () => {
-            (0, y.J)()
+            (0, b.J)()
           }
         })]
-      }) : (0, r.jsx)(c.Kqy, {
+      }) : (0, a.jsx)(o.Kqy, {
         direction: "vertical",
         gap: 8,
-        children: T.map(e => {
+        children: Z.map(e => {
           let {
             title: t,
             description: n,
-            onClick: i
+            onClick: r
           } = e;
-          return (0, r.jsx)(u.JZ, {
+          return (0, a.jsx)(d.JZ, {
             variant: "clickable",
             title: t,
             description: n,
-            buttonDisabled: k,
-            onButtonPress: () => i(C)
+            buttonDisabled: I,
+            onButtonPress: () => r(R)
           }, t)
         })
       })]

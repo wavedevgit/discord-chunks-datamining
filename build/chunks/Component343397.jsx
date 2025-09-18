@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 343397, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => d
 });
@@ -16,13 +17,13 @@ function d(e) {
     profile: t,
     canManageGuild: n
   } = e, d = t.id, u = (0, l.e7)([o.Z], () => o.Z.getError("name")), m = i.useCallback(e => {
-    s.Z.updateGuild({
+    a.Z.updateGuild({
       name: e
-    }), s.Z.updateGuildProfile(d, {
+    }), a.Z.updateGuildProfile(d, {
       name: e
     })
   }, [d]);
-  return (0, r.jsx)(a.oil, {
+  return (0, r.jsx)(s.oil, {
     label: c.intl.string(c.t.X56QcH),
     type: "text",
     disabled: !n,

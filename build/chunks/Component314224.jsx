@@ -1,7 +1,8 @@
 /** Chunk was on 8106 **/
 /** chunk id: 314224, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk145468 = require("./145468.js");
 
-function h(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +36,7 @@ function h(e) {
   return e
 }
 
-function f(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,20 +49,20 @@ function f(e, t) {
   }), e
 }
 
-function b(e) {
-  var t, n, b, x, j, v;
+function x(e) {
+  var t, n, x, b, j, v;
   let {
     rule: _,
     onChangeRule: O
   } = e, y = i.useCallback(e => {
-    O(f(h({}, _), {
-      triggerMetadata: f(h({}, _.triggerMetadata), {
+    O(h(f({}, _), {
+      triggerMetadata: h(f({}, _.triggerMetadata), {
         keywordFilter: e
       })
     }))
   }, [O, _]), C = i.useCallback(e => {
-    O(f(h({}, _), {
-      triggerMetadata: f(h({}, _.triggerMetadata), {
+    O(h(f({}, _), {
+      triggerMetadata: h(f({}, _.triggerMetadata), {
         allowList: e
       })
     }))
@@ -75,13 +76,13 @@ function b(e) {
         onChangeText: y,
         maxWordCount: m.RH,
         initialValue: null == (t = _.triggerMetadata) ? true : t.keywordFilter
-      }), (0, r.jsx)(s.Z, {
+      }), (0, r.jsx)(a.Z, {
         rule: _,
         onChangeRule: O,
-        collapsed: (null == _ || null == (n = _.triggerMetadata) ? true : n.regexPatterns) == null || (null == _ || null == (b = _.triggerMetadata) ? true : b.regexPatterns.length) === 0
+        collapsed: (null == _ || null == (n = _.triggerMetadata) ? true : n.regexPatterns) == null || (null == _ || null == (x = _.triggerMetadata) ? true : x.regexPatterns.length) === 0
       }), (0, r.jsx)(l.Z, {
         onChange: C,
-        initialValue: null == (x = _.triggerMetadata) ? true : x.allowList,
+        initialValue: null == (b = _.triggerMetadata) ? true : b.allowList,
         maxWordCount: m.n4,
         collapsed: (null == (j = _.triggerMetadata) ? true : j.allowList) == null || (null == (v = _.triggerMetadata) ? true : v.allowList.length) === 0
       })]
@@ -90,7 +91,7 @@ function b(e) {
     }), (0, r.jsx)(d.Z, {
       step: 2,
       header: g.intl.string(g.t["18TOiY"]),
-      children: (0, r.jsx)(a.Z, {
+      children: (0, r.jsx)(s.Z, {
         rule: _,
         onChangeRule: O
       })

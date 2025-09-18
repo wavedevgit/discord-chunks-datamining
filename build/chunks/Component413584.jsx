@@ -1,12 +1,13 @@
 /** Chunk was on 8106 **/
 /** chunk id: 413584, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => G
 }), require("./388685.js"), require("./953529.js"), require("./781311.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk348327 = require("./348327.js"),
   o = require.n(Chunk348327),
   Chunk574981 = require("./574981.js"),
@@ -71,10 +72,10 @@ let k = "WELCOME_CHANNEL",
   M = e => {
     var t;
     let l, {
-        guildId: s,
+        guildId: a,
         welcomeChannel: o,
-        onEdit: h,
-        onChannelReorder: f,
+        onEdit: f,
+        onChannelReorder: h,
         isDropHovered: v,
         index: _
       } = e,
@@ -82,8 +83,8 @@ let k = "WELCOME_CHANNEL",
       y = (0, u.e7)([N.Z], () => N.Z.getChannel(o.channel_id)),
       C = (0, u.e7)([j.ZP], () => null != o.emoji_id ? j.ZP.getUsableCustomEmojiById(o.emoji_id) : null),
       I = null != y && S.Uu(w.Plq.VIEW_CHANNEL, y),
-      T = null != (t = (0, x.KS)(y)) ? t : m.VL1,
-      P = (0, b.ZP)(y, false),
+      T = null != (t = (0, b.KS)(y)) ? t : m.VL1,
+      P = (0, x.ZP)(y, false),
       M = () => {
         (0, m.ZDy)(async () => {
           let {
@@ -91,7 +92,7 @@ let k = "WELCOME_CHANNEL",
           } = await n.e("73196").then(n.bind(n, 514698));
           return t => (0, r.jsx)(e, L(A({}, t), {
             onConfirm: () => {
-              h(), t.onClose()
+              f(), t.onClose()
             },
             channelId: o.channel_id
           }))
@@ -106,16 +107,16 @@ let k = "WELCOME_CHANNEL",
           index: _
         },
         end: (e, t) => {
-          null == e || t.didDrop() || f(e.channel, null, true)
+          null == e || t.didDrop() || h(e.channel, null, true)
         }
       }),
       [, U] = (0, d.L)({
         accept: k,
         hover: e => {
-          f(e.channel, _, false)
+          h(e.channel, _, false)
         },
         drop: e => {
-          f(e.channel, _, true)
+          h(e.channel, _, true)
         }
       });
     return i.useLayoutEffect(() => (G(U(O)), () => {
@@ -133,7 +134,7 @@ let k = "WELCOME_CHANNEL",
       height: 24,
       className: D.warningIcon
     }), (0, r.jsxs)("div", {
-      className: a()(D.welcomeChannel, {
+      className: s()(D.welcomeChannel, {
         [D.dragging]: v
       }),
       ref: O,
@@ -144,9 +145,9 @@ let k = "WELCOME_CHANNEL",
             default: e
           } = await n.e("68535").then(n.bind(n, 602320));
           return t => (0, r.jsx)(e, L(A({}, t), {
-            guildId: s,
+            guildId: a,
             welcomeChannel: o,
-            onChannelReorder: f,
+            onChannelReorder: h,
             onShowDeleteModal: M,
             index: _
           }))
@@ -183,19 +184,19 @@ let k = "WELCOME_CHANNEL",
       guild: t
     } = e, {
       welcomeSettings: l,
-      originalWelcomeSettings: a
-    } = (0, u.e7)([C.Z], () => C.Z.getSettingsProps()), s = (0, u.e7)([f.Z], () => f.Z.useReducedMotion), [c, d] = i.useState(null), [g, p] = i.useState(false), [b, x] = i.useState(false), {
+      originalWelcomeSettings: s
+    } = (0, u.e7)([C.Z], () => C.Z.getSettingsProps()), a = (0, u.e7)([h.Z], () => h.Z.useReducedMotion), [c, d] = i.useState(null), [g, p] = i.useState(false), [x, b] = i.useState(false), {
       description: j,
       channels: N,
       enabled: S
     } = l, R = e => {
-      null != t && (o()(e, a.channels) || ((0, y.Es)(t.id, {
+      null != t && (o()(e, s.channels) || ((0, y.Es)(t.id, {
         channels: e
       }), p(true)))
     }, k = e => {
-      null != t && e !== a.enabled && ((0, y.Es)(t.id, {
+      null != t && e !== s.enabled && ((0, y.Es)(t.id, {
         enabled: e
-      }), x(!s), p(true))
+      }), b(!a), p(true))
     }, G = (e, t, n) => {
       if (null == N) return;
       let r = N.indexOf(e),
@@ -204,7 +205,7 @@ let k = "WELCOME_CHANNEL",
         channels: i
       })), n ? (R(i), d(null)) : d(t)
     }, U = i.useRef(false);
-    (0, h.ZP)(() => () => {
+    (0, f.ZP)(() => () => {
       U.current = true
     }), i.useEffect(() => () => {
       if (U.current && g) {
@@ -261,7 +262,7 @@ let k = "WELCOME_CHANNEL",
         onToggle: S || (null == N ? true : N.length) !== 0 ? () => {
           k(!S)
         } : true,
-        animateStatus: b,
+        animateStatus: x,
         firstLine: S ? Z.intl.string(Z.t.JbB7Qk) : Z.intl.string(Z.t["/bd0Qk"]),
         secondLine: S ? Z.intl.string(Z.t["TA1g7+"]) : Z.intl.string(Z.t.nc6r1N)
       }), (0, r.jsxs)("div", {
@@ -299,7 +300,7 @@ let k = "WELCOME_CHANNEL",
                 })
               },
               onBlur: () => {
-                null != t && j !== a.description && ((0, y.Es)(t.id, {
+                null != t && j !== s.description && ((0, y.Es)(t.id, {
                   description: null == j ? true : j.trim()
                 }), p(true))
               },

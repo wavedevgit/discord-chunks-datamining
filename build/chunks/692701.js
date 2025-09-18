@@ -1,4 +1,4 @@
-/** Chunk was on 46290 **/
+/** Chunk was on 50751 **/
 /** chunk id: 692701, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -19,13 +19,13 @@ function f(e, t) {
   let n = (0, o.N)(e),
     r = (0, l.cj)([s.Z], () => s.Z.getUserAffinitiesMap()),
     {
-      treatmentType: c
+      treatmentType: u
     } = (0, a.ZB)(t);
   return i.useMemo(() => {
-    if (null == c || null == n) return [];
-    let t = n.filter(t => (0, d.dX)(t) && (0, d.m9)(t) && t.extra.application_id === e && u.default.age(t.id) < h);
-    return "recency" === c ? t.sort((e, t) => u.default.compare(t.id, e.id)) : "art" === c ? t.sort((e, t) => g(r, t) - g(r, e)) : t
-  }, [n, e, c, r])
+    if (null == u || null == n) return [];
+    let t = n.filter(t => (0, d.dX)(t) && (0, d.m9)(t) && t.extra.application_id === e && c.default.age(t.id) < h);
+    return "recency" === u ? t.sort((e, t) => c.default.compare(t.id, e.id)) : "art" === u ? t.sort((e, t) => g(r, t) - g(r, e)) : t
+  }, [n, e, u, r])
 }
 let m = 30 * Chunk70956.Z.Seconds.MINUTE;
 
@@ -37,7 +37,7 @@ function g(e, t) {
       let i = e.get(t);
       return (null != (n = null == i ? true : i.communicationProbability) ? n : 0) + 1e-4
     })),
-    l = Math.exp(-(u.default.age(t.id) / 1e3 / m * .01)),
+    l = Math.exp(-(c.default.age(t.id) / 1e3 / m * .01)),
     o = t.traits.some(e => e.type !== r.N.DURATION_SECONDS),
     a = (0, p.n2)(t);
   return i * l * (1 + .6 * (o && !a ? 1 : 0))

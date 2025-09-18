@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 70409, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => u
 });
@@ -18,9 +19,9 @@ function u(e) {
     guild: t,
     numSounds: n,
     isOutOfSlots: u
-  } = e, m = t.premiumTier, g = (0, a.FZ)(m), p = o._k[m] - 2;
-  if (null == g || m === s.Eu4.TIER_3 || n < p) return null;
-  let h = u ? {
+  } = e, m = t.premiumTier, g = (0, s.FZ)(m), p = o._k[m] - 2;
+  if (null == g || m === a.Eu4.TIER_3 || n < p) return null;
+  let f = u ? {
     color: i.Tt.GREEN,
     look: i.iL.FILLED,
     text: c.intl.string(c.t.cYzxGh)
@@ -29,17 +30,17 @@ function u(e) {
     header: c.intl.string(c.t.zT9Sxc),
     text: c.intl.formatToPlainString(c.t.OKqEAQ, {
       level: g,
-      numAdditional: (0, a.Je)(g)
+      numAdditional: (0, s.Je)(g)
     }),
     headerColor: "header-primary",
     textColor: "text-default",
-    buttonProps: h,
+    buttonProps: f,
     guild: t,
     analyticsLocation: {
-      page: s.ZY5.GUILD_SETTINGS,
-      section: s.jXE.GUILD_SETTINGS_SOUNDBOARD,
-      object: s.qAy.BOOST_UPSELL_BANNER_SLOTS_FULL,
-      objectType: (0, a.ge)(g)
+      page: a.ZY5.GUILD_SETTINGS,
+      section: a.jXE.GUILD_SETTINGS_SOUNDBOARD,
+      object: a.qAy.BOOST_UPSELL_BANNER_SLOTS_FULL,
+      objectType: (0, s.ge)(g)
     },
     className: d.container
   })

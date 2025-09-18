@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 558324, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => o
 }), require("./388685.js"), require("./781311.js");
@@ -17,11 +18,11 @@ let o = e => {
       onAddTag: m,
       onAddTagError: g,
       maxTaxLength: p,
-      maxTags: h,
-      disabled: f,
-      placeholder: b
+      maxTags: f,
+      disabled: h,
+      placeholder: x
     } = e,
-    x = function(e, t) {
+    b = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -39,20 +40,20 @@ let o = e => {
   let [j, v] = i.useState(null != d ? d : ""), _ = i.useCallback(() => {
     let e = j.trim();
     if (0 !== e.length) {
-      if (null != h && o.length >= h) {
-        null == g || g(s.intl.string(s.t.Xx7XeH));
+      if (null != f && o.length >= f) {
+        null == g || g(a.intl.string(a.t.Xx7XeH));
         return
       }
       m(e), v("")
     }
-  }, [j, h, m, g, o.length]), O = i.useCallback(e => {
+  }, [j, f, m, g, o.length]), O = i.useCallback(e => {
     switch (e.keyCode) {
-      case a.yXg.BACKSPACE:
+      case s.yXg.BACKSPACE:
         0 === j.length && o.length > 0 && (e.preventDefault(), e.stopPropagation(), null == u || u(new Set([o[o.length - 1].id])));
         break;
-      case a.yXg.ENTER:
-      case a.yXg.TAB:
-      case a.yXg.COMMA:
+      case s.yXg.ENTER:
+      case s.yXg.TAB:
+      case s.yXg.COMMA:
         e.preventDefault(), e.stopPropagation(), _()
     }
   }, [_, j.length, u, o]);
@@ -80,14 +81,14 @@ let o = e => {
       items: o,
       onRemove: u
     }
-  }, x), n = n = {
+  }, b), n = n = {
     value: j,
     onKeyDown: O,
     onChange: v,
     maxLength: p,
-    disabled: f,
+    disabled: h,
     onBlur: _,
-    placeholder: b
+    placeholder: x
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

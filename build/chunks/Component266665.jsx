@@ -1,12 +1,13 @@
 /** Chunk was on 8106 **/
 /** chunk id: 266665, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => Z
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk574981 = require("./574981.js"),
   Chunk194630 = require("./194630.js"),
   Chunk442837 = require("./442837.js"),
@@ -70,7 +71,7 @@ function R(e) {
       role: m,
       highestRole: g,
       selectedItem: p,
-      onClick: f,
+      onClick: h,
       currentPosition: j,
       onDragStart: v,
       onDragReset: _,
@@ -78,11 +79,11 @@ function R(e) {
       roleStyle: C
     } = e,
     N = (0, O.T)(c, g, m),
-    I = (0, x.fI)(m),
+    I = (0, b.fI)(m),
     R = null == N && !I,
     Z = (null == (t = m.tags) ? true : t.guild_connections) !== true,
-    D = (0, b._f)(c.id, m, m.colorStrings),
-    [, A] = (0, s.c)({
+    D = (0, x._f)(c.id, m, m.colorStrings),
+    [, A] = (0, a.c)({
       type: w,
       item: () => (v(m.id), {
         id: m.id,
@@ -113,7 +114,7 @@ function R(e) {
       })
     }),
     M = null != (i = m.colorString) ? i : E.Pbq;
-  return l = Z ? (0, r.jsx)(h.Z, {
+  return l = Z ? (0, r.jsx)(f.Z, {
     size: 12,
     color: m.colorString,
     className: S.verifiedRoleIcon
@@ -126,14 +127,14 @@ function R(e) {
     color: M,
     colors: D
   }), (0, r.jsxs)(d.njP.Item, {
-    className: a()(S.row, {
+    className: s()(S.row, {
       [S.dragBefore]: null !== L && j < L,
       [S.dragAfter]: null !== L && j > L
     }),
     id: m.id,
     selectedItem: p,
     itemType: "side",
-    onClick: f,
+    onClick: h,
     onContextMenu: function(e) {
       (0, u.jW)(e, async () => {
         let {
@@ -167,8 +168,8 @@ function Z(e) {
     guild: t,
     currentRoleId: n,
     setCurrentRoleId: l,
-    setSelectedSection: s
-  } = e, o = (0, c.e7)([_.Z], () => _.Z.roles), u = (0, c.e7)([j.Z], () => j.Z.getHighestRole(t)), h = (0, c.e7)([p.Z], () => p.Z.roleStyle), [b, x] = i.useState(o.length), {
+    setSelectedSection: a
+  } = e, o = (0, c.e7)([_.Z], () => _.Z.roles), u = (0, c.e7)([j.Z], () => j.Z.getHighestRole(t)), f = (0, c.e7)([p.Z], () => p.Z.roleStyle), [x, b] = i.useState(o.length), {
     scrolledToTop: O,
     handleScroll: E
   } = (0, C.V)(), {
@@ -185,17 +186,17 @@ function Z(e) {
   (0, g.ZP)(() => {
     L(n)
   }), i.useEffect(() => {
-    o.length > b && L(n), o.length !== b && x(o.length)
-  }, [o.length, b, x, L, n]);
+    o.length > x && L(n), o.length !== x && b(o.length)
+  }, [o.length, x, b, L, n]);
   let k = () => {
-    m.Z.createRole(t.id), s(N.ZI.DISPLAY)
+    m.Z.createRole(t.id), a(N.ZI.DISPLAY)
   };
-  return (0, r.jsx)(f.ZP.Sidebar, {
+  return (0, r.jsx)(h.ZP.Sidebar, {
     className: S.sidebar,
     children: (0, r.jsxs)("div", {
       className: S.container,
       children: [(0, r.jsxs)("div", {
-        className: a()(S.titleContainer, {
+        className: s()(S.titleContainer, {
           [S.titleElevated]: !O
         }),
         children: [(0, r.jsxs)(d.P3F, {
@@ -247,7 +248,7 @@ function Z(e) {
             onDragStart: w,
             onDragReset: Z,
             onDragComplete: D,
-            roleStyle: h
+            roleStyle: f
           }, e.id))
         })
       })]

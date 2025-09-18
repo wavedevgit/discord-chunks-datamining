@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 60986, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   K: () => m,
   O: () => u
@@ -18,12 +19,12 @@ function u(e) {
     guildId: t,
     section: n
   } = e;
-  (0, a.transitionToGlobalDiscovery)({
+  (0, s.transitionToGlobalDiscovery)({
     tab: o.GlobalDiscoveryTab.APPS,
     newSessionState: {
       guildId: t,
       entrypoint: {
-        name: s.xF.GUILD_SETTINGS,
+        name: a.xF.GUILD_SETTINGS,
         guildSettingsSection: n
       }
     }

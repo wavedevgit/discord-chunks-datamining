@@ -1,12 +1,13 @@
 /** Chunk was on 8106 **/
 /** chunk id: 500230, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => O
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk866442 = require("./866442.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -19,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk616397 = require("./616397.js");
 
-function x(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -57,13 +58,13 @@ function v(e) {
     badge: n,
     isSelected: i,
     onClick: l
-  } = e, s = (0, o.jm)({
+  } = e, a = (0, o.jm)({
     isSelected: i,
     label: (0, d.Z)(t.primary, t.secondary)
   });
-  return (0, r.jsx)(c.P3F, j(x({}, s), {
-    className: a()(b.pickerItem, {
-      [b.pickerItemSelected]: i
+  return (0, r.jsx)(c.P3F, j(b({}, a), {
+    className: s()(x.pickerItem, {
+      [x.pickerItemSelected]: i
     }),
     onClick: l,
     children: (0, r.jsx)(m.v, {
@@ -85,10 +86,10 @@ function _(e) {
     showColorPopout: d,
     setShowColorPopout: m,
     palettePopoutTargetRef: g,
-    handleChange: h
+    handleChange: f
   } = e, v = (0, o.jm)({
     isSelected: l,
-    label: f.intl.formatToPlainString(f.t.hr4D2d, {
+    label: h.intl.formatToPlainString(h.t.hr4D2d, {
       primaryColor: n,
       secondaryColor: i
     })
@@ -101,24 +102,24 @@ function _(e) {
       secondary: i
     },
     onPrimaryColorChange: e => {
-      h({
-        primary: (0, s.Rf)(e)
+      f({
+        primary: (0, a.Rf)(e)
       })
     },
     onSecondaryColorChange: e => {
-      h({
-        secondary: (0, s.Rf)(e)
+      f({
+        secondary: (0, a.Rf)(e)
       })
     },
     shouldShow: d,
     onRequestClose: () => m(false),
-    children: e => (0, r.jsx)(c.P3F, j(x({}, e, v), {
+    children: e => (0, r.jsx)(c.P3F, j(b({}, e, v), {
       innerRef: g,
       onClick: () => {
         m(e => !e)
       },
-      className: a()(b.pickerItem, {
-        [b.pickerItemSelected]: l
+      className: s()(x.pickerItem, {
+        [x.pickerItemSelected]: l
       }),
       children: (0, r.jsx)(c.ilE, {
         size: "custom",
@@ -133,9 +134,9 @@ let O = function(e) {
     className: t,
     guildId: n,
     badge: l,
-    primaryColor: a,
-    secondaryColor: s
-  } = e, [d, u] = i.useState(false), m = i.useRef(null), O = i.useId(), y = i.useId(), C = i.useMemo(() => p.Ek.every(e => e.primary !== a || e.secondary !== s), [a, s]), N = (0, o.Jb)({
+    primaryColor: s,
+    secondaryColor: a
+  } = e, [d, u] = i.useState(false), m = i.useRef(null), O = i.useId(), y = i.useId(), C = i.useMemo(() => p.Ek.every(e => e.primary !== s || e.secondary !== a), [s, a]), N = (0, o.Jb)({
     orientation: "horizontal",
     isDisabled: false,
     labelledBy: O
@@ -149,23 +150,23 @@ let O = function(e) {
     className: t,
     children: [(0, r.jsx)(c.vwX, {
       id: O,
-      className: b.sectionTitle,
-      children: f.intl.string(h.default.zSbMdX)
+      className: x.sectionTitle,
+      children: h.intl.string(f.default.zSbMdX)
     }), (0, r.jsx)(c.nn4, {
       id: y,
-      children: f.intl.string(f.t.ovbW0d)
-    }), (0, r.jsxs)("div", j(x({}, N), {
+      children: h.intl.string(h.t.ovbW0d)
+    }), (0, r.jsxs)("div", j(b({}, N), {
       "aria-describedby": y,
-      className: b.pickerGrid,
+      className: x.pickerGrid,
       children: [p.Ek.map(e => (0, r.jsx)(v, {
         palette: e,
         badge: l,
-        isSelected: e.primary === a && e.secondary === s,
+        isSelected: e.primary === s && e.secondary === a,
         onClick: () => E(e)
       }, "".concat(e.primary).concat(e.secondary))), (0, r.jsx)(_, {
         badge: l,
-        primary: a,
-        secondary: s,
+        primary: s,
+        secondary: a,
         isSelected: C,
         showColorPopout: d,
         setShowColorPopout: u,

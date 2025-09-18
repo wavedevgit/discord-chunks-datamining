@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 460461, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   J: () => P,
   Z: () => R
@@ -89,8 +90,8 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                 var t, n, r, i;
                 let l = new URL(e).hostname.split(".");
                 if (3 === l.length && "bandcamp" === l[1].toLowerCase()) return N.z.bandcamp.presentation;
-                let a = null != (n = null == (t = l.shift()) ? true : t.toLowerCase()) ? n : "";
-                if ("www" === a && (a = null != (i = null == (r = l.shift()) ? true : r.toLowerCase()) ? i : ""), a in N.z) return N.z[a].presentation;
+                let s = null != (n = null == (t = l.shift()) ? true : t.toLowerCase()) ? n : "";
+                if ("www" === s && (s = null != (i = null == (r = l.shift()) ? true : r.toLowerCase()) ? i : ""), s in N.z) return N.z[s].presentation;
                 return null
               } catch (e) {
                 return null
@@ -283,7 +284,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                           })]
                         }), (0, Chunk951288.jsx)(Chunk208567.Z, {
                           image: Chunk852860.discoverySplash,
-                          makeURL: e => x.ZP.getGuildDiscoverySplashURL({
+                          makeURL: e => b.ZP.getGuildDiscoverySplashURL({
                             id: d.id,
                             splash: e,
                             size: 512 * (0, p.x_)()

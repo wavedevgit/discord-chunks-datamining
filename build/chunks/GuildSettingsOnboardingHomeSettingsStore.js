@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 969632, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => O
 }), require("./388685.js");
@@ -36,14 +37,14 @@ let m = {
   },
   g = null,
   p = Object.assign({}, m),
-  h = false,
-  f = {};
+  f = false,
+  h = {};
 
-function b() {
-  g = null, p = Object.assign({}, m), h = false, g = Chunk999382.Z.getGuildId(), p = l().cloneDeep(Object.assign({}, Chunk563534.Z.getSettings(g)))
+function x() {
+  g = null, p = Object.assign({}, m), f = false, g = Chunk999382.Z.getGuildId(), p = l().cloneDeep(Object.assign({}, Chunk563534.Z.getSettings(g)))
 }
 
-function x(e, t) {
+function b(e, t) {
   if (null == p.newMemberActions) returnfalse;
   let n = p.newMemberActions.findIndex(t => t.channelId === e);
   if (n < 0) returnfalse;
@@ -58,15 +59,15 @@ function j(e, t) {
 }
 
 function v() {
-  h = false, p = l().cloneDeep(Object.assign({}, Chunk563534.Z.getSettings(g)))
+  f = false, p = l().cloneDeep(Object.assign({}, Chunk563534.Z.getSettings(g)))
 }
 class _ extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (f = e.dismissedSuggestedChannelIdsByGuildId), this.waitFor(c.Z, o.Z)
+    null != e && (h = e.dismissedSuggestedChannelIdsByGuildId), this.waitFor(c.Z, o.Z)
   }
   getState() {
     return {
-      dismissedSuggestedChannelIdsByGuildId: f
+      dismissedSuggestedChannelIdsByGuildId: h
     }
   }
   getSettings() {
@@ -82,11 +83,11 @@ class _ extends(r = Chunk442837.ZP.PersistedStore) {
     return this.hasChanges()
   }
   getSubmitting() {
-    return h
+    return f
   }
   getDismissedSuggestedChannelIds(e) {
     var t;
-    return null == e ? [] : null != (t = f[e]) ? t : []
+    return null == e ? [] : null != (t = h[e]) ? t : []
   }
   getResourceChannel(e) {
     var t;
@@ -103,14 +104,14 @@ class _ extends(r = Chunk442837.ZP.PersistedStore) {
 }
 d(_, "displayName", "GuildSettingsOnboardingHomeSettingsStore"), d(_, "persistKey", "GuildSettingsOnboardingHomeSettingsStore");
 let O = new _(Chunk570140.Z, {
-  GUILD_SETTINGS_INIT: b,
-  GUILD_SETTINGS_SET_SECTION: b,
-  GUILD_SETTINGS_ONBOARDING_HOME_SETTINGS_RESET: b,
+  GUILD_SETTINGS_INIT: x,
+  GUILD_SETTINGS_SET_SECTION: x,
+  GUILD_SETTINGS_ONBOARDING_HOME_SETTINGS_RESET: x,
   GUILD_HOME_SETTINGS_FETCH_SUCCESS: function() {
     p = l().cloneDeep(Object.assign({}, Chunk563534.Z.getSettings(g)))
   },
   GUILD_HOME_SETTINGS_UPDATE_START: function() {
-    h = true
+    f = true
   },
   GUILD_HOME_SETTINGS_UPDATE_SUCCESS: v,
   GUILD_HOME_SETTINGS_UPDATE_FAIL: v,
@@ -118,7 +119,7 @@ let O = new _(Chunk570140.Z, {
     let {
       action: t
     } = e;
-    return x(t.channelId, t)
+    return b(t.channelId, t)
   },
   GUILD_RESOURCE_CHANNEL_UPDATE_SUCCESS: function(e) {
     let {
@@ -132,10 +133,10 @@ let O = new _(Chunk570140.Z, {
     } = e;
     if (null == t) p.welcomeMessage = true;
     else {
-      var n, r, i, l, a, s;
+      var n, r, i, l, s, a;
       p.welcomeMessage = {
         authorIds: null != (l = null != (i = t.authorIds) ? i : null == (n = p.welcomeMessage) ? true : n.authorIds) ? l : [],
-        message: null != (s = null != (a = t.message) ? a : null == (r = p.welcomeMessage) ? true : r.message) ? s : ""
+        message: null != (a = null != (s = t.message) ? s : null == (r = p.welcomeMessage) ? true : r.message) ? a : ""
       }
     }
   },
@@ -144,7 +145,7 @@ let O = new _(Chunk570140.Z, {
       channelId: t,
       action: n
     } = e;
-    return x(t, n)
+    return b(t, n)
   },
   GUILD_SETTINGS_ONBOARDING_ADD_NEW_MEMBER_ACTION: function(e) {
     var t;
@@ -199,6 +200,6 @@ let O = new _(Chunk570140.Z, {
       guildId: n,
       channelIds: r
     } = e;
-    f[n] = [...null != (t = f[n]) ? t : [], ...r]
+    h[n] = [...null != (t = h[n]) ? t : [], ...r]
   }
 })

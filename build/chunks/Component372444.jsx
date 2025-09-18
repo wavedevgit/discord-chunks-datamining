@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 372444, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => p
 });
@@ -20,15 +21,15 @@ let g = e => {
     analyticsLocation: n,
     className: i,
     buttonProps: l = {
-      color: a.Tt.BRAND_INVERTED,
+      color: s.Tt.BRAND_INVERTED,
       text: u.intl.string(u.t.oqweNz)
     }
   } = e, {
-    color: s,
+    color: a,
     text: o
   } = l, c = t.premiumTier + 1;
   return (0, r.jsx)(d.Z, {
-    color: s,
+    color: a,
     analyticsLocation: n,
     guild: t,
     buttonText: o,
@@ -41,17 +42,17 @@ function p(e) {
   let {
     header: t,
     text: i,
-    analyticsLocation: a,
+    analyticsLocation: s,
     guild: d,
     className: u,
     textColor: p,
-    headerColor: h,
-    buttonProps: f
+    headerColor: f,
+    buttonProps: h
   } = e, {
-    analyticsLocations: b
+    analyticsLocations: x
   } = (0, c.ZP)(o.Z.GUILD_BOOSTING_UPSELL_BANNER);
   return (0, r.jsx)(c.Gt, {
-    value: b,
+    value: x,
     children: (0, r.jsxs)("div", {
       className: l()(m.banner, u),
       children: [(0, r.jsx)("img", {
@@ -60,12 +61,12 @@ function p(e) {
         src: n(322393)
       }), (0, r.jsxs)("div", {
         className: m.content,
-        children: [(0, r.jsx)(s.Text, {
+        children: [(0, r.jsx)(a.Text, {
           variant: "text-lg/semibold",
-          color: null != h ? h : "always-white",
+          color: null != f ? f : "always-white",
           className: m.header,
           children: t
-        }), (0, r.jsx)(s.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
           color: null != p ? p : "always-white",
           children: i
@@ -74,9 +75,9 @@ function p(e) {
         className: m.ctaContainer,
         children: (0, r.jsx)(g, {
           guild: d,
-          analyticsLocation: a,
+          analyticsLocation: s,
           className: m.button,
-          buttonProps: f
+          buttonProps: h
         })
       })]
     })

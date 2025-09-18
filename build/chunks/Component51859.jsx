@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 51859, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => x
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,32 +18,32 @@ var Chunk951288 = require("./951288.js"),
   Chunk535396 = require("./535396.js"),
   Chunk237522 = require("./237522.js");
 
-function v(e) {
+function x(e) {
   let {
     guildId: t,
     powerup: n
-  } = e, [v, x] = o.useState(true);
-  (0, m.KT)(v);
-  let [C, h] = o.useState(false), b = (0, l.ZP)(t, n).type !== f.A3.INACTIVE, E = (0, g.d)(b), I = (0, s.g1)(t, "GuildPowerupPerkCard"), T = n.skuId === i.A$;
+  } = e, [x, _] = i.useState(true);
+  (0, f.KT)(x);
+  let [b, h] = i.useState(false), j = (0, s.ZP)(t, n).type !== g.A3.INACTIVE, C = (0, m.d)(j), E = (0, a.g1)(t, "GuildPowerupPerkCard"), I = n.skuId === o.A$;
   return (0, r.jsxs)(p.Z, {
     onHover: e => h(e),
     guildId: t,
     powerup: n,
-    badge: T && I ? "beta" : true,
+    badge: I && E ? "beta" : true,
     children: [(0, r.jsx)(d.m, {
-      className: _.image,
+      className: v.image,
       powerup: n,
-      isHovering: C
+      isHovering: b
     }), (0, r.jsx)(c.Q9, {
       title: n.title,
-      textColor: E,
+      textColor: C,
       footer: (0, r.jsx)(p.g, {
         guildId: t,
         powerup: n
       }),
-      children: (0, r.jsx)(a.Text, {
-        className: _.description,
-        color: E,
+      children: (0, r.jsx)(l.Text, {
+        className: v.description,
+        color: C,
         variant: "text-sm/medium",
         children: n.description
       })
@@ -51,7 +51,7 @@ function v(e) {
       children: (0, r.jsx)(u.ZP, {
         guildId: t,
         powerup: n,
-        onError: x
+        onError: _
       })
     })]
   })

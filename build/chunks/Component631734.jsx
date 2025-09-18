@@ -1,4 +1,4 @@
-/** Chunk was on 46290 **/
+/** Chunk was on 50751 **/
 /** chunk id: 631734, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   a: () => a
@@ -10,8 +10,8 @@ var Chunk692547 = require("./692547.js"),
   Chunk325767 = require("./325767.js");
 let a = e => {
   var t, n, a, s, {
-      size: c = "md",
-      width: u,
+      size: u = "md",
+      width: c,
       height: d,
       color: p = r.Z.colors.INTERACTIVE_NORMAL,
       colorClass: h = ""
@@ -31,8 +31,8 @@ let a = e => {
       }
       return r
     }(e, ["size", "width", "height", "color", "colorClass"]);
-  let m = (0, l.m)(c),
-    g = null != (a = null == m ? true : m.width) ? a : u,
+  let m = (0, l.m)(u),
+    g = null != (a = null == m ? true : m.width) ? a : c,
     y = null != (s = null == m ? true : m.height) ? s : d;
   return (0, i.jsxs)("svg", (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {

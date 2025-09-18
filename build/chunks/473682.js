@@ -1,17 +1,17 @@
-/** Chunk was on 93886 **/
+/** Chunk was on 85991 **/
 /** chunk id: 473682, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   IU: () => u,
   M4: () => o,
   Ne: () => c,
-  T9: () => i,
-  Vb: () => l,
+  T9: () => l,
+  Vb: () => i,
   hK: () => s,
   zI: () => d
 });
 var a, Chunk48541 = require("./48541.js"),
-  l = 12633 == require.j ? ((a = {}).SELECT_GAME = "select-game", a.SERVER_SETTINGS = "server-settings", a) : null;
-let i = {
+  i = 12633 == require.j ? ((a = {}).SELECT_GAME = "select-game", a.SERVER_SETTINGS = "server-settings", a) : null;
+let l = {
     steps: {
       "select-game": {
         onBack: {

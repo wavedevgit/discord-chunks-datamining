@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 500047, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   R: () => o
 });
@@ -8,7 +9,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk690221 = require("./690221.jsx"),
   Chunk431516 = require("./431516.js");
 
-function s(e) {
+function a(e) {
   return e
 }
 
@@ -19,11 +20,11 @@ function o(e) {
   } = e, {
     isUserMFAEnabled: o,
     isModerationMFAEnabled: c
-  } = (0, a.N)(), d = i.useCallback(async () => {
+  } = (0, s.N)(), d = i.useCallback(async () => {
     await t(), null == n || n()
   }, [t, n]), u = i.useCallback(e => (0, r.jsx)(l.Z, {
     onClick: d,
     children: e
   }), [d]);
-  return o && c ? s : u
+  return o && c ? a : u
 }

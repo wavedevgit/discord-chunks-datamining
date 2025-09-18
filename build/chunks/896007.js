@@ -1,8 +1,9 @@
 /** Chunk was on 8106 **/
 /** chunk id: 896007, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  ZP: () => f,
-  vE: () => h
+  ZP: () => h,
+  vE: () => f
 }), require("./539854.js");
 var Chunk223892 = require("./223892.js"),
   Chunk738774 = require("./738774.js"),
@@ -17,25 +18,25 @@ let {
   getSectionDefinition: m
 } = Chunk146305.Z, g = "HEADER", p = "DIVIDER";
 
-function h(e) {
+function f(e) {
   var t, n;
   let {
     guild: c,
-    canManageGuild: h,
-    canViewAuditLog: f,
-    canManageRoles: b,
-    canManageBans: x,
+    canManageGuild: f,
+    canViewAuditLog: h,
+    canManageRoles: x,
+    canManageBans: b,
     canAccessMembersPage: j,
     canViewGuildAnalytics: v,
     isOwner: _,
     isGuildAdmin: O,
     canManageGuildExpressions: y
-  } = e, C = () => (0, s.X$)({
+  } = e, C = () => (0, a.X$)({
     guild: c,
     isOwner: _,
-    canManageGuildRoleSubscriptions: (0, s.H2)(c),
+    canManageGuildRoleSubscriptions: (0, a.H2)(c),
     isMonetizationWaitlistEnabledForGuild: (0, r.mG)(c.id),
-    isGuildEligibleForRoleSubscriptions: (0, a.kT)(c.id),
+    isGuildEligibleForRoleSubscriptions: (0, s.kT)(c.id),
     isExpeditedMonetizationOnboardingGuild: (0, r.Rw)(c),
     isUserInCreatorMonetizationEligibleCountry: (0, r.DB)(),
     shouldRestrictUpdatingRoleSubscriptionSettings: (0, i.cu)(c.id)
@@ -76,7 +77,7 @@ function h(e) {
   }), E.push({
     section: g,
     label: u.intl.string(u.t.m6lkGx)
-  }), E.push(m(d.pNK.EMOJI, N)), E.push(m(d.pNK.STICKERS, N)), E.push(m(d.pNK.SOUNDBOARD, N))), (h || b || j || O) && (E.push({
+  }), E.push(m(d.pNK.EMOJI, N)), E.push(m(d.pNK.STICKERS, N)), E.push(m(d.pNK.SOUNDBOARD, N))), (f || x || j || O) && (E.push({
     section: p
   }), E.push({
     section: g,
@@ -88,7 +89,7 @@ function h(e) {
     label: u.intl.string(u.t.wF3KJy)
   }), E.push(m(d.pNK.INTEGRATIONS, N)), E.push(m(d.pNK.APP_DIRECTORY, N));
   let I = !c.features.has(d.oNc.COMMUNITY) && ((0, l.Nb)(c.id) || (0, l.ze)(c.id));
-  (h || f || x || I) && (E.push({
+  (f || h || b || I) && (E.push({
     section: p
   }), E.push({
     section: g,
@@ -96,12 +97,12 @@ function h(e) {
   }), E.push(m(d.pNK.SAFETY, N)), E.push(m(d.pNK.MODERATION, N)), E.push(m(d.pNK.AUDIT_LOG, N)), E.push(m(d.pNK.BANS, N)), E.push(m(d.pNK.GUILD_AUTOMOD, N)));
   let S = c.features.has(d.oNc.COMMUNITY) && v,
     T = C();
-  return (h || S || T) && (E.push({
+  return (f || S || T) && (E.push({
     section: p
   }), E.push(m(d.pNK.COMMUNITY, N)), E.push(m(d.pNK.ONBOARDING, N)), E.push(m(d.pNK.ANALYTICS, N)), E.push(m(d.pNK.COMMUNITY_WELCOME, N)), E.push(m(d.pNK.DISCOVERY_LANDING_PAGE, N)), E.push(m(d.pNK.ROLE_SUBSCRIPTIONS, N)), E.push(m(d.pNK.GUILD_PRODUCTS, N)), E.push(m(d.pNK.ROLE_SUBSCRIPTIONS_STORE_PAGE, N))), E.push({
     section: p
   }), E.push(m(d.pNK.GUILD_PREMIUM, N)), E.push(m(d.pNK.GUILD_TEMPLATES, N)), E.push(m(d.pNK.DELETE, N)), E.filter(o.lm)
 }
-let f = {
-  generateSections: h
+let h = {
+  generateSections: f
 }

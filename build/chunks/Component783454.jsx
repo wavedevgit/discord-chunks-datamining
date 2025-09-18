@@ -1,12 +1,13 @@
 /** Chunk was on 8106 **/
 /** chunk id: 783454, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => g
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
   Chunk259580 = require("./259580.jsx"),
@@ -20,27 +21,27 @@ function g(e) {
     title: n,
     description: l,
     children: g
-  } = e, [p, h] = i.useState(t), f = () => h(e => !e), b = (0, o.Dt)();
+  } = e, [p, f] = i.useState(t), h = () => f(e => !e), x = (0, o.Dt)();
   return (0, r.jsxs)("div", {
     className: m.container,
     children: [(0, r.jsx)(d.Z, {
-      className: a()(m.header, {
+      className: s()(m.header, {
         [m.headerWithDescription]: p && null != l
       }),
-      onClick: f,
+      onClick: h,
       children: e => {
         let {
           areaRef: t,
           handleStopPropagation: i
         } = e;
         return (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(s.X6q, {
+          children: [(0, r.jsx)(a.X6q, {
             variant: "heading-md/semibold",
             children: n
-          }), (0, r.jsx)(s.P3F, {
-            onClick: i(f),
+          }), (0, r.jsx)(a.P3F, {
+            onClick: i(h),
             "aria-label": u.intl.string(u.t.e5eQOz),
-            "aria-controls": b,
+            "aria-controls": x,
             "aria-expanded": p,
             focusProps: {
               ringTarget: t
@@ -53,9 +54,9 @@ function g(e) {
         })
       }
     }), p && (0, r.jsxs)("div", {
-      id: b,
-      children: [null != l && (0, r.jsx)(s.R94, {
-        type: s.R94.Types.DESCRIPTION,
+      id: x,
+      children: [null != l && (0, r.jsx)(a.R94, {
+        type: a.R94.Types.DESCRIPTION,
         className: m.description,
         children: l
       }), (0, r.jsx)("div", {

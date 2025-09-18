@@ -1,4 +1,4 @@
-/** Chunk was on 46290 **/
+/** Chunk was on 50751 **/
 /** chunk id: 421824, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   f: () => m,
@@ -30,7 +30,7 @@ function f() {
   return {
     title: Chunk388032.intl.format(Chunk388032.t.S5uhCA, {
       keybind: m,
-      keybindHook: (e, t) => (0, i.jsx)(c.Z, {
+      keybindHook: (e, t) => (0, i.jsx)(u.Z, {
         keybind: m.split("+")
       }, t)
     }),
@@ -51,7 +51,7 @@ function m(e) {
   let {
     trackView: t,
     trackClick: n
-  } = (0, u.R)(d.n0.ClipsNotification, {
+  } = (0, c.R)(d.n0.ClipsNotification, {
     notif_type: d.n0.ClipsNotification
   });
   return {

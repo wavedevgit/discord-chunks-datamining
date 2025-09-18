@@ -1,14 +1,15 @@
 /** Chunk was on 8106 **/
 /** chunk id: 340189, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => a
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197530 = require("./197530.js");
-let s = function() {
+let a = function() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk197530.badExample,
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {

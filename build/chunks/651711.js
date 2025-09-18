@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 651711, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => u
 }), require("./539854.js"), require("./642613.js");
@@ -23,7 +24,7 @@ function u(e) {
   } = (0, o.N)(), p = r.useCallback(async () => {
     var e, r;
     m ? g || await (null == n || null == (r = n.onRequireModeratorMFAClick) ? true : r.call(n)) : await (null == n || null == (e = n.onEnableMFAClick) ? true : e.call(n)), null == t || t()
-  }, [m, g, t, n]), h = (0, s.R)({
+  }, [m, g, t, n]), f = (0, a.R)({
     onEnableMFAClick: p
   });
   return r.useMemo(() => {
@@ -31,16 +32,16 @@ function u(e) {
     let {
       minimumOwnerAgeInYears: t,
       minimumSize: r
-    } = e, s = !e.noRecentViolations, o = [{
+    } = e, a = !e.noRecentViolations, o = [{
       key: "no_violations_requirement",
       checkedLabel: d.intl.string(d.t["1lGNPT"]),
       uncheckedLabel: d.intl.string(d.t["D+gTJi"]),
       description: d.intl.format(d.t.HFY0m5, {
-        communityGuidelinesUrl: a.Z.getArticleURL(c.BhN.PUBLIC_GUILD_GUILDLINES)
+        communityGuidelinesUrl: s.Z.getArticleURL(c.BhN.PUBLIC_GUILD_GUILDLINES)
       }),
       checked: e.noRecentViolations,
-      actionLabel: s ? d.intl.string(d.t.xU2fl5) : true,
-      actionHandler: s ? () => (0, i.Z)(a.Z.getSubmitRequestURL()) : true
+      actionLabel: a ? d.intl.string(d.t.xU2fl5) : true,
+      actionHandler: a ? () => (0, i.Z)(s.Z.getSubmitRequestURL()) : true
     }];
     if (null != t && null != e.meetsOwnerAgeRequirement && o.push({
         key: "owner_age_requirement",
@@ -93,7 +94,7 @@ function u(e) {
         checkedLabel: d.intl.string(d.t.NqVyFh),
         uncheckedLabel: d.intl.string(d.t.VcDNIS),
         description: d.intl.format(d.t["7NzkfX"], {
-          enableMFAHook: h
+          enableMFAHook: f
         }),
         checked: e.hasEnabled2FA,
         actionLabel: i ? d.intl.string(d.t.BU4Dio) : true,
@@ -101,5 +102,5 @@ function u(e) {
       })
     }
     returntrue === u && o.sort(e => e.checked ? 0 : false), o
-  }, [e, u, m, n, g, h, p])
+  }, [e, u, m, n, g, f, p])
 }

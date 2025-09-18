@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 44867, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   c: () => g
 });
@@ -20,17 +21,17 @@ function g(e) {
     settingsView: n,
     requireTerms: g,
     rules: p
-  } = e, h = (0, l.e7)([s.Z], () => s.Z.getProps().guild);
+  } = e, f = (0, l.e7)([a.Z], () => a.Z.getProps().guild);
   if (i.useEffect(() => {
-      null != h && t(h.id)
-    }, [t, h]), null == h) return null;
+      null != f && t(f.id)
+    }, [t, f]), null == f) return null;
   switch (n) {
     case d.U.DISQUALIFIED:
       return (0, r.jsx)(o.Z, {
-        guild: h,
-        guildId: h.id,
+        guild: f,
+        guildId: f.id,
         headerContent: (0, r.jsxs)("div", {
-          children: [(0, r.jsx)(a.X6q, {
+          children: [(0, r.jsx)(s.X6q, {
             variant: "text-md/semibold",
             color: "header-primary",
             className: m.header,
@@ -40,7 +41,7 @@ function g(e) {
                 children: e
               }, t)
             })
-          }), (0, r.jsx)(a.Text, {
+          }), (0, r.jsx)(s.Text, {
             variant: "text-sm/medium",
             color: "text-secondary",
             children: u.intl.string(u.t.Qgaw3d)
@@ -56,9 +57,9 @@ function g(e) {
       });
     case d.U.INELIGIBLE:
       return (0, r.jsx)(o.Z, {
-        guild: h,
-        guildId: h.id,
-        headerContent: (0, r.jsx)(a.X6q, {
+        guild: f,
+        guildId: f.id,
+        headerContent: (0, r.jsx)(s.X6q, {
           variant: "heading-md/semibold",
           children: u.intl.format(u.t["+6Hylp"], {
             doesNotHook: (e, t) => (0, r.jsx)("strong", {
@@ -69,6 +70,6 @@ function g(e) {
         })
       });
     default:
-      return (0, r.jsx)(a.$jN, {})
+      return (0, r.jsx)(s.$jN, {})
   }
 }

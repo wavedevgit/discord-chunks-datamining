@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 356086, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   subtext: "subtext__65a39",
   description: "description__65a39",

@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 574085, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => p
 }), require("./388685.js"), require("./953529.js"), require("./539854.js");
@@ -52,23 +53,23 @@ function p() {
     guildId: t
   } = (0, Chunk727843.N)(), [n, p] = Chunk290348.R7(module);
 
-  function h(e, t) {
+  function f(e, t) {
     let {
       name: r,
       description: i,
       emojiId: l,
-      emojiName: a
-    } = e, s = [...n], o = {
+      emojiName: s
+    } = e, a = [...n], o = {
       name: r,
       description: i,
       emoji_id: l,
-      emoji_name: a,
+      emoji_name: s,
       ref_type: d.Qs.INTANGIBLE,
       ref_id: true
     };
-    null != t ? s[t] = o : s.push(o), p(s)
+    null != t ? a[t] = o : a.push(o), p(a)
   }
-  let f = (0, Chunk723047.mY)();
+  let h = (0, Chunk723047.mY)();
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)(Chunk861345.p, {
       benefits: require,
@@ -76,7 +77,7 @@ function p() {
         (0, i.h7j)(i => (0, r.jsx)(o.DI, g(m({}, i), {
           guildId: t,
           initialData: n[e],
-          onSave: t => h(t, e),
+          onSave: t => f(t, e),
           onDelete: () => (function(e) {
             let t = [...n];
             t.splice(e, 1), p(t)
@@ -95,10 +96,10 @@ function p() {
       onClick: function() {
         (0, Chunk481060.h7j)(e => (0, r.jsx)(o.DI, g(m({}, e), {
           guildId: t,
-          onSave: e => h(e)
+          onSave: e => f(e)
         })))
       },
-      disabled: f,
+      disabled: h,
       children: Chunk388032.intl.string(Chunk388032.t["6dwqo6"])
     })]
   })

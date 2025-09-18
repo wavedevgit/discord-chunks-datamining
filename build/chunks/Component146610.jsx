@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 146610, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => p
 });
@@ -23,7 +24,7 @@ let g = [{
         subscriptionListing: n
       } = e;
       if (null != n) {
-        let e = (null == n ? true : n.image_asset) == null ? true : (0, s._W)(n.application_id, n.image_asset, 128);
+        let e = (null == n ? true : n.image_asset) == null ? true : (0, a._W)(n.application_id, n.image_asset, 128);
         t = (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("img", {
             src: e,
@@ -62,12 +63,12 @@ let g = [{
       totalPayoutsForPeriod: t,
       guildId: n,
       className: i
-    } = e, s = (0, o.Z)(n, t);
+    } = e, a = (0, o.Z)(n, t);
     return (0, r.jsx)("div", {
       className: l()(m.tableContainer, i),
-      children: (0, r.jsx)(a.Z, {
+      children: (0, r.jsx)(s.Z, {
         columns: g,
-        data: s,
+        data: a,
         className: l()(m.table, u.table),
         rowClassName: u.row,
         headerClassName: l()(m.header, u.header)

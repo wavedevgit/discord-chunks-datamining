@@ -1,7 +1,8 @@
 /** Chunk was on 8106 **/
 /** chunk id: 346163, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 });
 var Chunk647438 = require("./647438.js"),
   Chunk399606 = require("./399606.js"),
@@ -17,13 +18,13 @@ var Chunk647438 = require("./647438.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function f(e) {
+function h(e) {
   let t, n = (0, c.Ob)(e),
-    f = null == e ? true : e.features.has(p.oNc.CREATOR_MONETIZABLE_PROVISIONAL),
-    b = null == e ? true : e.features.has(p.oNc.CREATOR_MONETIZABLE),
-    x = (0, i.e7)([s.default], () => {
-      let t = s.default.getCurrentUser();
-      return null != e && (0, a.eM)(e, t)
+    h = null == e ? true : e.features.has(p.oNc.CREATOR_MONETIZABLE_PROVISIONAL),
+    x = null == e ? true : e.features.has(p.oNc.CREATOR_MONETIZABLE),
+    b = (0, i.e7)([a.default], () => {
+      let t = a.default.getCurrentUser();
+      return null != e && (0, s.eM)(e, t)
     }),
     {
       error: j,
@@ -47,27 +48,27 @@ function f(e) {
     } = (0, l.eC)(null == e ? true : e.id),
     w = O || (null == E ? true : E.isApplicationPending) === true,
     R = (null == E ? true : E.canApply) === true,
-    Z = h.intl.format(h.t.aJUdOj, {
+    Z = f.intl.format(f.t.aJUdOj, {
       faqUrl: o.Z.getArticleURL(p.BhN.CREATOR_FAQ)
     });
-  I && P ? t = true === f ? h.intl.format(h.t["0o1Q+v"], {
+  I && P ? t = true === h ? f.intl.format(f.t["0o1Q+v"], {
     communityGuidelineUrl: p.EYA.GUIDELINES
-  }) : h.intl.format(h.t.b6h59v, {
+  }) : f.intl.format(f.t.b6h59v, {
     communityGuidelineUrl: p.EYA.GUIDELINES
-  }) : I && null != S && (t = h.intl.format(h.t.TvX209, {
+  }) : I && null != S && (t = f.intl.format(f.t.TvX209, {
     requestCooldownDuration: S,
     creatorRevenuePolicyUrl: o.Z.getArticleURL(p.BhN.CREATOR_POLICY)
   }));
-  let D = n && x && false === b,
-    A = n && false === f,
+  let D = n && b && false === x,
+    A = n && false === h,
     L = (0, g.f)(),
-    k = I && R && x ? h.intl.format(h.t.wbVIUF, {}) : true;
+    k = I && R && b ? f.intl.format(f.t.wbVIUF, {}) : true;
   return r.useEffect(() => {
     D && N()
   }, [N, D]), {
     resubmittingEnableRequest: v,
     resubmissionError: j,
-    isGuildOwner: x,
+    isGuildOwner: b,
     createEnableRequest: _,
     resubmittedRequest: O,
     eligibilityLoading: y,

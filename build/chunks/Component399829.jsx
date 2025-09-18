@@ -1,12 +1,13 @@
 /** Chunk was on 8106 **/
 /** chunk id: 399829, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => Z
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -87,12 +88,12 @@ class R extends Chunk647438.Component {
       currentTier: l
     } = this.props;
     if (null == t || null == n) return null;
-    let a = {
+    let s = {
         numRequired: 0,
         y: 0,
-        key: b.x
+        key: x.x
       },
-      s = e.map(e => {
+      a = e.map(e => {
         var n;
         return {
           numRequired: N.oCV[e.tier],
@@ -101,11 +102,11 @@ class R extends Chunk647438.Component {
           key: e.tier
         }
       });
-    return (0, r.jsx)(b.Z, {
+    return (0, r.jsx)(x.Z, {
       currentTier: l,
       className: i > 0 ? I.progressWithSubscriptions : I.progress,
       progress: i,
-      tiers: [a, ...s],
+      tiers: [s, ...a],
       initialAnimationDelay: 500,
       onAnimatedTierMaker: this.handleAnimatedTier
     })
@@ -190,8 +191,8 @@ class R extends Chunk647438.Component {
         if (null == i) return;
         let {
           top: l
-        } = i.getBoundingClientRect(), a = e > 0 ? w : 0;
-        r[t] = l - n + 32 - a
+        } = i.getBoundingClientRect(), s = e > 0 ? w : 0;
+        r[t] = l - n + 32 - s
       }
       this.setState({
         tierPositions: r
@@ -213,7 +214,7 @@ class R extends Chunk647438.Component {
         children: n => (0, r.jsx)(u.qEK, P(T({}, n), {
           tabIndex: false,
           src: null != e ? e.user.getAvatarURL(this.props.guildId, 32) : null,
-          className: a()(I.avatar, t, null != t ? I.subscriberMask : null),
+          className: s()(I.avatar, t, null != t ? I.subscriberMask : null),
           size: u.EFr.SIZE_32
         }))
       }, n)
@@ -254,8 +255,8 @@ let Z = Chunk442837.ZP.connectStores([Chunk430824.Z, Chunk905128.Z, Chunk999382.
     r = null != (t = null == (e = Chunk430824.Z.getGuild(require)) ? true : module.premiumTier) ? exports : Chunk981631.Eu4.NONE,
     i = (0, Chunk151494.I)(require),
     l = null != require ? Chunk899667.Z.getAppliedGuildBoostsForGuild(require) : null,
-    a = o()(null != Chunk120356 ? Chunk120356 : []).uniqBy(e => e.userId),
-    s = a.map(e => ({
+    s = o()(null != Chunk120356 ? Chunk120356 : []).uniqBy(e => e.userId),
+    a = s.map(e => ({
       user: O.default.getUser(e.userId),
       nick: v.ZP.getNick(n, e.userId)
     })).filter(e => null != e.user).value();
@@ -264,6 +265,6 @@ let Z = Chunk442837.ZP.connectStores([Chunk430824.Z, Chunk905128.Z, Chunk999382.
     currentTier: Chunk951288,
     levelSubscriptionCount: Chunk647438,
     subscribers: Chunk392711,
-    uniqueSubscriberCount: a.size()
+    uniqueSubscriberCount: s.size()
   }
 })(R)

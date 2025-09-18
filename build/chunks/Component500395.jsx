@@ -1,7 +1,8 @@
 /** Chunk was on 8106 **/
 /** chunk id: 500395, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -22,8 +23,8 @@ function p(e) {
   } = e, {
     noticeText: n,
     ctaLabel: i,
-    ctaClickable: a,
-    onCtaClicked: s
+    ctaClickable: s,
+    onCtaClicked: a
   } = t;
   return (0, r.jsxs)("div", {
     className: m.__invalid_ctaContainer,
@@ -51,14 +52,14 @@ function p(e) {
         buttonPosition: c.E.RIGHT,
         notice: n,
         ctaLabel: i,
-        ctaDisabled: !a,
-        onClick: s
+        ctaDisabled: !s,
+        onClick: a
       })]
     })]
   })
 }
 
-function h(e) {
+function f(e) {
   let {
     guild: t,
     config: n
@@ -66,8 +67,8 @@ function h(e) {
     isLoading: o,
     error: c,
     creatorMonetizationOnboardingMarketing: u
-  } = (0, s.Z)(t.id);
-  return ((0, a.Z)({
+  } = (0, a.Z)(t.id);
+  return ((0, s.Z)({
     type: i.ImpressionTypes.PANE,
     name: i.ImpressionNames.ENABLE_CREATOR_MONETIZATION_WAITLIST_LANDING,
     properties: {

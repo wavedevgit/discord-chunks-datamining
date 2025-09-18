@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 683579, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => g
 });
@@ -18,9 +19,9 @@ function m(e) {
   let {
     action: t,
     triggerType: n,
-    toggled: s,
+    toggled: a,
     onToggleAction: o
-  } = e, c = (0, a.c)(t.type, t, n);
+  } = e, c = (0, s.c)(t.type, t, n);
   if (null == c) return null;
   let {
     headerText: d,
@@ -50,7 +51,7 @@ function m(e) {
       children: (0, r.jsx)(i.$q, {
         disabled: !c.isEditable,
         type: i.M0.INVERTED,
-        value: s,
+        value: a,
         onChange: () => o(false),
         className: u.__invalid_actionCheckbox
       })
@@ -64,7 +65,7 @@ function g(e) {
     guildId: n,
     triggerType: i,
     toggled: l,
-    onToggleAction: a
+    onToggleAction: s
   } = e;
   switch (t.type) {
     case d.jj.FLAG_TO_CHANNEL:
@@ -72,7 +73,7 @@ function g(e) {
         action: t,
         triggerType: i,
         toggled: l,
-        onToggleAction: a
+        onToggleAction: s
       });
     case d.jj.USER_COMMUNICATION_DISABLED:
       return (0, r.jsx)(o.Z, {
@@ -80,14 +81,14 @@ function g(e) {
         guildId: n,
         triggerType: i,
         toggled: l,
-        onToggleAction: a
+        onToggleAction: s
       });
     case d.jj.BLOCK_MESSAGE:
-      return (0, r.jsx)(s.Z, {
+      return (0, r.jsx)(a.Z, {
         action: t,
         triggerType: i,
         toggled: l,
-        onToggleAction: a
+        onToggleAction: s
       });
     default:
       return (0, r.jsx)(m, {
@@ -95,7 +96,7 @@ function g(e) {
         guildId: n,
         toggled: l,
         triggerType: i,
-        onToggleAction: a
+        onToggleAction: s
       })
   }
 }

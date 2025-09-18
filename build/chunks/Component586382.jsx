@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 586382, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   hH: () => g,
   xl: () => p,
@@ -25,7 +26,7 @@ function u(e) {
   } = e, {
     analyticsLocations: g
   } = (0, l.ZP)(), p = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), (0, s.E6)({
+    e.preventDefault(), e.stopPropagation(), (0, a.E6)({
       guild: t,
       analyticsLocations: g,
       analyticsSection: o,
@@ -34,7 +35,7 @@ function u(e) {
       targetPremiumGuildTier: m
     })
   }, [g, c, o, t, u, m]);
-  return (0, r.jsx)(a.Z, {
+  return (0, r.jsx)(s.Z, {
     guild: t,
     guildFeature: n,
     className: d.guildFeatureAvailabilityIndicator,

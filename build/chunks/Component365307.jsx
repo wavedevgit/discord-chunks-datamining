@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 365307, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => g,
   j: () => p
@@ -21,13 +22,13 @@ function g(e) {
     refToScroller: t
   } = e, n = (0, i.e7)([d.Z], () => d.Z.getGuild()), {
     section: l,
-    sectionId: a,
+    sectionId: s,
     integrations: o,
     editedIntegration: u,
     webhooks: m,
     editedWebhook: g,
     isFetching: p,
-    errors: h
+    errors: f
   } = (0, i.cj)([c.default], () => ({
     editedIntegration: c.default.editedIntegration,
     editedWebhook: c.default.editedWebhook,
@@ -38,17 +39,17 @@ function g(e) {
     sectionId: c.default.getSectionId(),
     webhooks: c.default.webhooks
   }));
-  return null == n ? null : (0, r.jsx)(s.Z, {
+  return null == n ? null : (0, r.jsx)(a.Z, {
     guild: n,
     section: l,
-    sectionId: a,
+    sectionId: s,
     integrations: o,
     webhooks: m,
     editedIntegration: u,
     editedWebhook: g,
     isFetchingWebhooks: p,
     hasChanges: c.default.hasChanges,
-    errors: h,
+    errors: f,
     refToScroller: t
   })
 }

@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 335438, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   l: () => d
 }), require("./953529.js");
@@ -24,7 +25,7 @@ function d(e) {
       color: "text-secondary",
       className: c.description,
       children: o.intl.string(o.t.qxIcra)
-    }), (0, r.jsx)(s.W, {
+    }), (0, r.jsx)(a.W, {
       canManageGuild: t,
       guild: n,
       switchClassName: c.switch
@@ -41,7 +42,7 @@ function d(e) {
         })]
       }), (0, r.jsx)("div", {
         className: c.halfWidth,
-        children: (0, r.jsx)(a.u, {
+        children: (0, r.jsx)(s.u, {
           canManageGuild: t,
           guildId: n.id,
           systemChannelId: n.systemChannelId

@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 934638, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => m
 }), require("./953529.js");
@@ -23,18 +24,18 @@ function m(e) {
     }), o.Z.updateGuildProfile(m, {
       description: e
     })
-  }, [m]), p = (0, a.e7)([c.Z], () => c.Z.getError("description"));
-  return (0, r.jsxs)(s.hjN, {
+  }, [m]), p = (0, s.e7)([c.Z], () => c.Z.getError("description"));
+  return (0, r.jsxs)(a.hjN, {
     className: u.section,
     children: [(0, r.jsxs)("div", {
       className: u.sectionHeader,
-      children: [(0, r.jsx)(s.vwX, {
+      children: [(0, r.jsx)(a.vwX, {
         children: d.intl.string(d.t.Z27SCQ)
-      }), (0, r.jsx)(s.R94, {
-        type: s.geA.DESCRIPTION,
+      }), (0, r.jsx)(a.R94, {
+        type: a.geA.DESCRIPTION,
         children: d.intl.string(d.t.pw0MIi)
       })]
-    }), (0, r.jsx)(s.Kx8, {
+    }), (0, r.jsx)(a.Kx8, {
       value: t.description,
       placeholder: d.intl.string(d.t.Nvfows),
       onChange: g,

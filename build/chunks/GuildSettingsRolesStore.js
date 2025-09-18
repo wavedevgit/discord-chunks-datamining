@@ -1,11 +1,12 @@
 /** Chunk was on 8106 **/
 /** chunk id: 946724, original params: e,t,n (module,exports,require) **/
+"use strict";
 let r, i, l;
 require.d(exports, {
   Z: () => q,
   g: () => I
 }), require("./388685.js"), require("./953529.js");
-var a, s, Chunk392711 = require("./392711.js"),
+var s, a, Chunk392711 = require("./392711.js"),
   c = require.n(Chunk392711),
   Chunk149765 = require("./149765.js"),
   Chunk866442 = require("./866442.js"),
@@ -44,7 +45,7 @@ function E(e) {
   }
   return e
 }
-var I = ((s = {}).SOLID = "solid", s.GRADIENT = "gradient", s.HOLOGRAPHIC = "holographic", s);
+var I = ((a = {}).SOLID = "solid", a.GRADIENT = "gradient", a.HOLOGRAPHIC = "holographic", a);
 let S = new Set,
   T = Chunk981631.QZA.CLOSED,
   P = false,
@@ -85,7 +86,7 @@ function B() {
 function F(e, t) {
   t.forEach(t => {
     let n = "solid",
-      r = (0, b.zI)(e, t);
+      r = (0, x.zI)(e, t);
     null != t.colors && r && (null != t.colors.tertiary_color ? n = "holographic" : null != t.colors.secondary_color && (n = "gradient"));
     let i = {
       solid: {
@@ -105,11 +106,11 @@ function F(e, t) {
       }
     };
     if (null != t.colors) {
-      var l, a, s;
+      var l, s, a;
       i[n] = {
         primary_color: null != (l = t.colors.primary_color) ? l : y.p6O,
-        secondary_color: null != (a = t.colors.secondary_color) ? a : null,
-        tertiary_color: null != (s = t.colors.tertiary_color) ? s : null
+        secondary_color: null != (s = t.colors.secondary_color) ? s : null,
+        tertiary_color: null != (a = t.colors.tertiary_color) ? a : null
       }
     }
     M.set(t.id, {
@@ -153,7 +154,7 @@ function W(e) {
     guildId: t
   } = e;
   if (null == (r = O.Z.getProps().guild) || t !== r.id || T === y.QZA.SUBMITTING) returnfalse;
-  let n = [...x.Z.getSortedRoles(r.id)];
+  let n = [...b.Z.getSortedRoles(r.id)];
   S.forEach(e => {
     let t = V(e),
       r = false;
@@ -172,7 +173,7 @@ function W(e) {
     M.set(t, e)
   }), w = false, R = [...n]
 }
-class K extends(a = Chunk442837.ZP.Store) {
+class K extends(s = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk999382.Z, Chunk561654.Z, Chunk485386.Z)
   }
@@ -316,9 +317,9 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         currentStyle: r
       } = e, i = V(t);
       if (null == i) returnfalse;
-      let l = (0, f.DX)(n),
-        a = M.get(t);
-      return null != a && (a.styleColors[r] = n, a.currentStyle = r, M.set(t, E({}, a)), z(i, {
+      let l = (0, h.DX)(n),
+        s = M.get(t);
+      return null != s && (s.styleColors[r] = n, s.currentStyle = r, M.set(t, E({}, s)), z(i, {
         color: n.primary_color,
         colors: n,
         colorString: l.primaryColor,
@@ -370,13 +371,13 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         currentStyle: r,
         styleColors: l.styleColors
       });
-      let a = l.styleColors[r],
-        s = (0, f.DX)(a);
+      let s = l.styleColors[r],
+        a = (0, h.DX)(s);
       return z(i, {
-        color: null != (t = a.primary_color) ? t : true,
-        colors: a,
-        colorString: s.primaryColor,
-        colorStrings: s
+        color: null != (t = s.primary_color) ? t : true,
+        colors: s,
+        colorString: a.primaryColor,
+        colorStrings: a
       })
     },
     GUILD_ROLE_CONNECTIONS_CONFIGURATIONS_FETCH_SUCCESS: function(e) {

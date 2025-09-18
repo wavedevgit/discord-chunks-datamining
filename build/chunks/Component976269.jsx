@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 976269, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => m
 });
@@ -15,15 +16,15 @@ var Chunk951288 = require("./951288.js"),
 function u(e) {
   let {
     guildId: t
-  } = e, n = (0, l.e7)([c.Z], () => c.Z.getSettings()), s = (0, l.e7)([c.Z], () => c.Z.getSubmitting()), u = i.useCallback(() => {
+  } = e, n = (0, l.e7)([c.Z], () => c.Z.getSettings()), a = (0, l.e7)([c.Z], () => c.Z.getSubmitting()), u = i.useCallback(() => {
     try {
       (0, o.oo)(t, n)
     } catch (e) {}
   }, [t, n]);
-  return (0, r.jsx)(a.Z, {
+  return (0, r.jsx)(s.Z, {
     onSave: u,
     onReset: o.bj,
-    submitting: s,
+    submitting: a,
     onSaveText: d.intl.string(d.t.R3BPHx)
   })
 }

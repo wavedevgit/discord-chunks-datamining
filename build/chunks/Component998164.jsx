@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 998164, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => j
 });
@@ -34,7 +35,7 @@ function p(e) {
   return e
 }
 
-function h(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,9 +47,9 @@ function h(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let f = [];
+let h = [];
 
-function b() {
+function x() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk197530.actionItemContainer,
     children: (0, Chunk951288.jsxs)("div", {
@@ -73,28 +74,28 @@ function b() {
   })
 }
 
-function x(e) {
+function b(e) {
   let {
     guildId: t,
     onAddAction: l
-  } = e, s = i.useCallback(() => {
-    if (null != t) return (0, a.ZDy)(async () => {
+  } = e, a = i.useCallback(() => {
+    if (null != t) return (0, s.ZDy)(async () => {
       let {
         default: e
       } = await n.e("7590").then(n.bind(n, 380716));
-      return n => (0, r.jsx)(e, h(p({}, n), {
+      return n => (0, r.jsx)(e, f(p({}, n), {
         guildId: t,
         onSave: l
       }))
     })
   }, [t, l]);
-  return (0, r.jsxs)(a.P3F, {
+  return (0, r.jsxs)(s.P3F, {
     className: g.addActionItem,
-    onClick: s,
-    children: [(0, r.jsx)(a.oFk, {
+    onClick: a,
+    children: [(0, r.jsx)(s.oFk, {
       size: "xs",
       color: "currentColor"
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "none",
       children: m.intl.string(m.t.qce3EB)
@@ -106,18 +107,18 @@ let j = function(e) {
     guildId: t
   } = e, n = (0, l.Wu)([d.Z], () => {
     var e;
-    return null != (e = d.Z.getSettings().newMemberActions) ? e : f
-  }), a = i.useCallback((e, n) => {
+    return null != (e = d.Z.getSettings().newMemberActions) ? e : h
+  }), s = i.useCallback((e, n) => {
     (0, c.vR)(e), (0, c.ad)(t, e.channelId, n, true)
   }, [t]), m = i.useCallback((e, r, i, l) => {
-    var a;
-    let s = null == (a = n[e]) ? true : a.channelId;
-    null != s && null != d.Z.getSettings() && ((0, c.el)(s, r), (0, c.ad)(t, s, i, l))
+    var s;
+    let a = null == (s = n[e]) ? true : s.channelId;
+    null != a && null != d.Z.getSettings() && ((0, c.el)(a, r), (0, c.ad)(t, a, i, l))
   }, [n, t]), j = i.useCallback(e => {
     var t;
     let r = null == (t = n[e]) ? true : t.channelId;
     null != r && (0, c.Hr)(r)
-  }, [n]), v = n.map(e => h(p({}, e), {
+  }, [n]), v = n.map(e => f(p({}, e), {
     id: e.channelId
   })), _ = i.useCallback(e => {
     (0, c.hS)(e)
@@ -125,7 +126,7 @@ let j = function(e) {
     handleDragStart: O,
     handleDragReset: y,
     handleDragComplete: C
-  } = (0, s.Z)(v, _);
+  } = (0, a.Z)(v, _);
   return (0, r.jsxs)("div", {
     className: g.section,
     children: [n.map((e, n) => (0, r.jsx)(u.Z, {
@@ -137,9 +138,9 @@ let j = function(e) {
       onDragStart: O,
       onDragReset: y,
       onDragComplete: C
-    }, e.channelId)), (0, r.jsx)(b, {}), n.length < o.O9 && (0, r.jsx)(x, {
+    }, e.channelId)), (0, r.jsx)(x, {}), n.length < o.O9 && (0, r.jsx)(b, {
       guildId: t,
-      onAddAction: a
+      onAddAction: s
     })]
   })
 }

@@ -1,7 +1,7 @@
-/** Chunk was on 46290 **/
+/** Chunk was on 50751 **/
 /** chunk id: 585708, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -23,18 +23,18 @@ var Chunk13245 = require("./13245.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function E(e, t, n, E) {
-  var _;
+function S(e, t, n, S) {
+  var b;
   let {
-    icon: S,
-    title: x,
+    icon: x,
+    title: j,
     body: I
   } = (0, a.Xi)(e, t, n), {
     trackView: C,
-    trackClick: j
+    trackClick: Z
   } = (0, y.R)(O.n0.TextChat, {
     notif_type: O.n0.TextChat,
-    notif_user_id: null == (_ = t.author) ? true : _.id,
+    notif_user_id: null == (b = t.author) ? true : b.id,
     message_id: t.id,
     message_type: t.type,
     guild_id: e.guild_id,
@@ -42,34 +42,34 @@ function E(e, t, n, E) {
     channel_type: e.type
   });
   return {
-    icon: S,
-    title: x,
+    icon: x,
+    title: j,
     body: t.content.length > 0 ? (0, o.ZP)(t, {
       noStyleAndInteraction: true,
       formatInline: true,
       hideSimpleEmbedContent: false
     }).content : I,
-    hint: (e, t) => e && !t ? null : (0, g.Q)((0, y.P)(), b.t.ykjOAA, b.intl.string(b.t.jZkzVF)),
+    hint: (e, t) => e && !t ? null : (0, g.Q)((0, y.P)(), v.t.ykjOAA, v.intl.string(v.t.jZkzVF)),
     maxBodyLines: 2,
     renderFooter: (n, r, l) => n && !l ? (0, i.jsx)(m.Z, {
       id: r,
       replyToMessageId: t.id,
       channel: e,
-      onSend: () => j("send")
+      onSend: () => Z("send")
     }) : null,
     onNotificationShow: () => {
-      E && (0, c.GN)(u.Ay, u.yk), C()
+      S && (0, u.GN)(c.Ay, c.yk), C()
     },
     onNotificationClick: () => {
       let n = (0, h.getPID)();
       (0, l.In)(e.id, {
-        section: v.jXE.OVERLAY,
-        object: v.qAy.ACK_TEXT_CHAT_NOTIFICATION,
-        objectType: v.Qqv.ACK_SEMI_AUTOMATIC
-      }, true, true, t.id), f.ZP.isInputLocked(n) ? (j("unlock"), r.Z.setInputLocked(false, n)) : (j("jump"), (0, s.uL)(v.Z5c.CHANNEL(e.guild_id, e.id, t.id)), d.isPlatformEmbedded && p.ZP.focus())
+        section: E.jXE.OVERLAY,
+        object: E.qAy.ACK_TEXT_CHAT_NOTIFICATION,
+        objectType: E.Qqv.ACK_SEMI_AUTOMATIC
+      }, true, true, t.id), f.ZP.isInputLocked(n) ? (Z("unlock"), r.Z.setInputLocked(false, n)) : (Z("jump"), (0, s.uL)(E.Z5c.CHANNEL(e.guild_id, e.id, t.id)), d.isPlatformEmbedded && p.ZP.focus())
     },
     onDismissClick: () => {
-      j("dismiss")
+      Z("dismiss")
     }
   }
 }

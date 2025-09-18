@@ -1,12 +1,13 @@
 /** Chunk was on 8106 **/
 /** chunk id: 853813, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => I
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  s = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk367907 = require("./367907.js"),
@@ -35,22 +36,22 @@ function I(e) {
       selectedSection: I,
       setSelectedSection: S
     } = e,
-    T = (0, s.e7)([f.Z], () => f.Z.guild, []);
-  a()(null != T, "guildId cannot be null here");
+    T = (0, a.e7)([h.Z], () => h.Z.guild, []);
+  s()(null != T, "guildId cannot be null here");
   let {
     role: P,
     permissionSearchQuery: w
-  } = (0, s.cj)([f.Z], () => ({
-    role: f.Z.getRole(n),
-    permissionSearchQuery: f.Z.getPermissionSearchQuery()
+  } = (0, a.cj)([h.Z], () => ({
+    role: h.Z.getRole(n),
+    permissionSearchQuery: h.Z.getPermissionSearchQuery()
   }), [n]);
   i.useEffect(() => {
     null == P && l(null)
   }, [P, l]);
-  let R = (0, s.e7)([m.Z], () => m.Z.getHighestRole(T), [T]),
-    Z = (0, s.e7)([m.Z], () => !m.Z.isRoleHigher(T, R, P)),
+  let R = (0, a.e7)([m.Z], () => m.Z.getHighestRole(T), [T]),
+    Z = (0, a.e7)([m.Z], () => !m.Z.isRoleHigher(T, R, P)),
     D = i.useRef(null),
-    A = (0, s.e7)([b.Z], () => b.Z.getProps().integrations),
+    A = (0, a.e7)([x.Z], () => x.Z.getProps().integrations),
     L = {
       role: P,
       editRoleId: n
@@ -63,7 +64,7 @@ function I(e) {
       let {
         role: n,
         editRoleId: r
-      } = k.current, i = (0, x.UT)(I), l = null != (t = null == (e = h.Z.getRoleMemberCount(T.id)) ? true : e[r]) ? t : 0;
+      } = k.current, i = (0, b.UT)(I), l = null != (t = null == (e = f.Z.getRoleMemberCount(T.id)) ? true : e[r]) ? t : 0;
       g.default.track(N.rMx.ROLE_PAGE_VIEWED, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},

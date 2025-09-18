@@ -1,4 +1,4 @@
-/** Chunk was on 93886 **/
+/** Chunk was on 85991 **/
 /** chunk id: 698901, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -16,28 +16,28 @@ function c(e) {
     hotspotLocation: t
   } = e, [n, c] = (0, r.Wu)([s.qc], () => [s.qc.hasHotspot(t, true), s.qc.getHotspotOverride(t)]);
   return (0, a.jsxs)(a.Fragment, {
-    children: [(0, a.jsxs)(i.xJW, {
+    children: [(0, a.jsxs)(l.xJW, {
       title: t,
       className: o.hotspotSwitch,
-      children: [n ? (0, a.jsx)(l.u, {
+      children: [n ? (0, a.jsx)(i.u, {
         asContainer: true,
         tag: "span",
         text: "Active",
-        children: (0, a.jsx)(i.dz2, {
+        children: (0, a.jsx)(l.dz2, {
           size: "md",
           color: "currentColor",
           className: o.checkmark
         })
-      }) : (0, a.jsx)(l.u, {
+      }) : (0, a.jsx)(i.u, {
         asContainer: true,
         tag: "span",
         text: "Inactive",
-        children: (0, a.jsx)(i.Dio, {
+        children: (0, a.jsx)(l.Dio, {
           size: "md",
           color: "currentColor",
           className: o.xmark
         })
-      }), (0, a.jsx)(i.q4e, {
+      }), (0, a.jsx)(l.q4e, {
         className: o.overrideSelect,
         value: c,
         options: [{
@@ -52,7 +52,7 @@ function c(e) {
         }],
         onChange: e => null != e ? (0, s.hv)(t, e) : (0, s.Po)(t)
       })]
-    }), (0, a.jsx)(i.$i$, {})]
+    }), (0, a.jsx)(l.$i$, {})]
   })
 }
 

@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 449226, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => c
 });
@@ -22,7 +23,7 @@ function c(e) {
   } = e, g = e => {
     e.stopPropagation(), e.preventDefault()
   };
-  return (0, r.jsx)(s.P3F, (t = function(e) {
+  return (0, r.jsx)(a.P3F, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -45,7 +46,7 @@ function c(e) {
     onMouseUp: g,
     className: l()(o.switch, u)
   }, m), n = n = {
-    children: (0, r.jsx)(a.T2, {
+    children: (0, r.jsx)(s.T2, {
       checked: i,
       onChange: c,
       disabled: d

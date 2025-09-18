@@ -1,7 +1,8 @@
 /** Chunk was on 8106 **/
 /** chunk id: 112824, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  R: () => x,
+  R: () => b,
   Z: () => j
 });
 var Chunk951288 = require("./951288.js");
@@ -19,7 +20,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk824804 = require("./824804.js");
 
-function f(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +39,7 @@ function f(e) {
   return e
 }
 
-function b(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -51,20 +52,20 @@ function b(e, t) {
   }), e
 }
 
-function x(e) {
+function b(e) {
   return g.$X.filter(t => (null == e ? true : e.id) !== m._ && u.oz(t, e))
 }
 
 function j(e) {
   let {
     guild: t
-  } = e, i = (0, s.e7)([c.Z], () => c.Z.getEveryoneRole(t)), u = x(t), m = u.length > 0, j = g.$X.some(e => !d.Z.can(e, t, null, {
-    [i.id]: b(f({}, i), {
-      permissions: a.Od(i.permissions, e)
+  } = e, i = (0, a.e7)([c.Z], () => c.Z.getEveryoneRole(t)), u = b(t), m = u.length > 0, j = g.$X.some(e => !d.Z.can(e, t, null, {
+    [i.id]: x(h({}, i), {
+      permissions: s.Od(i.permissions, e)
     })
   })), v = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: h.itemContent,
+      className: f.itemContent,
       children: [(0, r.jsx)(o.X6q, {
         variant: "text-md/semibold",
         color: "header-primary",
@@ -81,21 +82,21 @@ function j(e) {
       color: "currentColor",
       height: 24,
       width: 24,
-      className: h.warning,
+      className: f.warning,
       "aria-label": p.intl.string(p.t.bG7Gu7)
     }) : (0, r.jsx)(o.owK, {
       size: "custom",
       color: "currentColor",
       height: 24,
       width: 24,
-      className: h.check,
+      className: f.check,
       "aria-label": p.intl.string(p.t["YQix8/"])
     })]
   });
   return m ? j ? (0, r.jsx)(o.ua7, {
     text: p.intl.string(p.t["E5v/a2"]),
-    children: e => (0, r.jsx)("div", b(f({
-      className: l()(h.simpleItemWrapper, h.disabled)
+    children: e => (0, r.jsx)("div", x(h({
+      className: l()(f.simpleItemWrapper, f.disabled)
     }, e), {
       children: v
     }))
@@ -105,15 +106,15 @@ function j(e) {
         let {
           default: e
         } = await n.e("39627").then(n.bind(n, 193845));
-        return n => (0, r.jsx)(e, f({
+        return n => (0, r.jsx)(e, h({
           guild: t
         }, n))
       })
     },
-    className: l()(h.simpleItemWrapper, h.clickable),
+    className: l()(f.simpleItemWrapper, f.clickable),
     children: v
   }) : (0, r.jsx)("div", {
-    className: h.simpleItemWrapper,
+    className: f.simpleItemWrapper,
     children: v
   })
 }

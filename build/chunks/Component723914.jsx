@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 723914, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   q: () => d
 }), require("./388685.js"), require("./953529.js");
@@ -18,7 +19,7 @@ function d(e) {
     features: d
   } = e, u = i.useCallback(e => {
     let t = new Set(d);
-    e ? (t.add(s.oNc.ACTIVITY_FEED_ENABLED_BY_USER), t.delete(s.oNc.ACTIVITY_FEED_DISABLED_BY_USER)) : (t.add(s.oNc.ACTIVITY_FEED_DISABLED_BY_USER), t.delete(s.oNc.ACTIVITY_FEED_ENABLED_BY_USER)), a.Z.updateGuild({
+    e ? (t.add(a.oNc.ACTIVITY_FEED_ENABLED_BY_USER), t.delete(a.oNc.ACTIVITY_FEED_DISABLED_BY_USER)) : (t.add(a.oNc.ACTIVITY_FEED_DISABLED_BY_USER), t.delete(a.oNc.ACTIVITY_FEED_ENABLED_BY_USER)), s.Z.updateGuild({
       features: t
     })
   }, [d]);

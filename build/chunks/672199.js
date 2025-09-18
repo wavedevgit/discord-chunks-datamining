@@ -1,4 +1,4 @@
-/** Chunk was on 46290 **/
+/** Chunk was on 50751 **/
 /** chunk id: 672199, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -27,7 +27,7 @@ function h(e, t, n, h) {
     } = (0, a.R)(s.n0.RequestToStream, {
       notif_type: s.n0.RequestToStream,
       notif_user_id: t.id,
-      activity_type: c.mFx.STREAM_REQUEST,
+      activity_type: u.mFx.STREAM_REQUEST,
       activity_name: h.name
     });
   return {
@@ -41,14 +41,14 @@ function h(e, t, n, h) {
     },
     onConfirmClick: (e, t) => {
       (0, l.Z)((0, o.getPID)(), {
-        preset: u.tI.PRESET_VIDEO
+        preset: c.tI.PRESET_VIDEO
       }), O("request-to-stream"), i.Z.updateNotificationStatus(t)
     },
     onCancelClick: (t, n) => {
       (0, r.In)(e.id, {
-        section: c.jXE.OVERLAY,
-        object: c.qAy.ACK_DECLINE_REQUEST_TO_STREAM,
-        objectType: c.Qqv.ACK_SEMI_AUTOMATIC
+        section: u.jXE.OVERLAY,
+        object: u.qAy.ACK_DECLINE_REQUEST_TO_STREAM,
+        objectType: u.Qqv.ACK_SEMI_AUTOMATIC
       }, true, true), i.Z.updateNotificationStatus(n), O("decline")
     },
     onDismissClick: () => {

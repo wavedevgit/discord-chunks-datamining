@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 55889, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => m
 });
@@ -47,7 +48,7 @@ let m = Chunk647438.memo(function(e) {
     rule: t,
     onlyRoles: n = false,
     onChangeRule: i
-  } = e, m = (0, r.jsx)(a.Z, {
+  } = e, m = (0, r.jsx)(s.Z, {
     guildId: t.guildId,
     selectedChannelIds: t.exemptChannels,
     selectedRoleIds: t.exemptRoles,
@@ -58,7 +59,7 @@ let m = Chunk647438.memo(function(e) {
     disableEveryoneRole: true,
     includeRoleRestrictedPrivateChannels: true
   });
-  return n && (m = (0, r.jsx)(s.Z, {
+  return n && (m = (0, r.jsx)(a.Z, {
     guildId: t.guildId,
     selectedRoleIds: t.exemptRoles,
     onChange: e => i(u(d({}, t), {

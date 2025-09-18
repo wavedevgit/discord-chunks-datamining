@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 715796, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   P: () => d
 });
@@ -15,9 +16,9 @@ function d(e) {
   let t = (null == e ? true : e.features.has(c.oNc.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING)) === true,
     d = (null == e ? true : e.features.has(c.oNc.ROLE_SUBSCRIPTIONS_ENABLED)) === true,
     u = (0, l.e7)([o.default], () => o.default.getCurrentUser()),
-    m = null != e && (0, s.eM)(e, u);
+    m = null != e && (0, a.eM)(e, u);
   i.useEffect(() => {
-    null != e && t && m && (0, a.ZDy)(async () => {
+    null != e && t && m && (0, s.ZDy)(async () => {
       let {
         default: t
       } = await n.e("710").then(n.bind(n, 32342));

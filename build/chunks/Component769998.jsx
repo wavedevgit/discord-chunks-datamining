@@ -1,7 +1,8 @@
 /** Chunk was on 8106 **/
 /** chunk id: 769998, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -17,15 +18,15 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk464992 = require("./464992.js");
 
-function h(e) {
+function f(e) {
   var t;
   let {
     action: n,
-    triggerType: h,
-    guildId: f,
-    toggled: b,
-    onToggleAction: x
-  } = e, j = e => () => x(e), v = (0, c.c)(n.type, n, h), _ = null == (t = n.metadata) ? true : t.durationSeconds, O = null != _ ? (0, m.L9)(_) : null, y = (0, i.e7)([o.Z, s.Z], () => o.Z.can(u.Plq.MODERATE_MEMBERS, s.Z.getGuild(f)), [f]);
+    triggerType: f,
+    guildId: h,
+    toggled: x,
+    onToggleAction: b
+  } = e, j = e => () => b(e), v = (0, c.c)(n.type, n, f), _ = null == (t = n.metadata) ? true : t.durationSeconds, O = null != _ ? (0, m.L9)(_) : null, y = (0, i.e7)([o.Z, a.Z], () => o.Z.can(u.Plq.MODERATE_MEMBERS, a.Z.getGuild(h)), [h]);
   if (null == v) return null;
   let {
     headerText: C,
@@ -43,21 +44,21 @@ function h(e) {
       })
     }), (0, r.jsxs)("div", {
       className: p.actionTextContainer,
-      children: [(0, r.jsx)(a.X6q, {
+      children: [(0, r.jsx)(s.X6q, {
         variant: "heading-sm/semibold",
         children: C
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(s.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
         children: N
-      }), b && (0, r.jsxs)(a.Text, {
+      }), x && (0, r.jsxs)(s.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
-        children: [null === O ? null : h === d.fX.MENTION_SPAM ? g.intl.format(g.t.i3lsKC, {
+        children: [null === O ? null : f === d.fX.MENTION_SPAM ? g.intl.format(g.t.i3lsKC, {
           friendlyDurationString: O
         }) : g.intl.format(g.t.mvHxzc, {
           friendlyDurationString: O
-        }), y && (0, r.jsx)(a.P3F, {
+        }), y && (0, r.jsx)(s.P3F, {
           onClick: j(true),
           className: p.editChannel,
           tag: "span",
@@ -65,7 +66,7 @@ function h(e) {
           children: g.intl.string(g.t["0B95RE"])
         })]
       })]
-    }), (0, r.jsx)(a.ua7, {
+    }), (0, r.jsx)(s.ua7, {
       text: g.intl.format(g.t.wx6Vb2, {}),
       "aria-label": g.intl.formatToMarkdownString(g.t.wx6Vb2, {}),
       shouldShow: !y,
@@ -91,7 +92,7 @@ function h(e) {
         }({}, e), n = n = {
           children: (0, r.jsx)(l.$q, {
             type: l.M0.INVERTED,
-            value: b,
+            value: x,
             onChange: j(false),
             disabled: !y,
             className: p.__invalid_actionCheckbox

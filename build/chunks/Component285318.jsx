@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 285318, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => g
 }), require("./388685.js");
@@ -55,17 +56,17 @@ function m(e) {
     let t = null,
       n = null;
     switch (e) {
-      case s.Ux.PROFANITY:
+      case a.Ux.PROFANITY:
         t = o.intl.string(o.t["I+BDrK"]), n = (0, r.jsx)(r.Fragment, {
           children: o.intl.string(o.t.hISCmp)
         });
         break;
-      case s.Ux.SEXUAL_CONTENT:
+      case a.Ux.SEXUAL_CONTENT:
         t = o.intl.string(o.t.URSMen), n = (0, r.jsx)(r.Fragment, {
           children: o.intl.string(o.t.oRQDBg)
         });
         break;
-      case s.Ux.SLURS:
+      case a.Ux.SLURS:
         t = o.intl.string(o.t.xjK2Mz), n = (0, r.jsx)(r.Fragment, {
           children: o.intl.string(o.t.oJYXBA)
         });
@@ -82,10 +83,10 @@ function m(e) {
     className: c.keywordListContainer,
     children: [(0, r.jsxs)("div", {
       className: c.keywordListTextContainer,
-      children: [(0, r.jsx)(a.X6q, {
+      children: [(0, r.jsx)(s.X6q, {
         variant: "heading-sm/semibold",
         children: d
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(s.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
         children: u
@@ -104,28 +105,28 @@ function g(e) {
   let {
     rule: n,
     onChangeRule: l
-  } = e, [a, o] = i.useState(new Set(null == n || null == (t = n.triggerMetadata) ? true : t.presets)), c = i.useMemo(() => e => {
+  } = e, [s, o] = i.useState(new Set(null == n || null == (t = n.triggerMetadata) ? true : t.presets)), c = i.useMemo(() => e => {
     l(u(d({}, n), {
       triggerMetadata: u(d({}, n.triggerMetadata), {
         presets: e
       })
     }))
   }, [l, n]), g = e => {
-    let t = new Set(a);
+    let t = new Set(s);
     t.has(e) ? t.delete(e) : t.add(e), o(t), c(Array.from(t))
   };
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(m, {
-      preset: s.Ux.PROFANITY,
-      toggled: a.has(s.Ux.PROFANITY),
+      preset: a.Ux.PROFANITY,
+      toggled: s.has(a.Ux.PROFANITY),
       onToggle: g
     }), (0, r.jsx)(m, {
-      preset: s.Ux.SLURS,
-      toggled: a.has(s.Ux.SLURS),
+      preset: a.Ux.SLURS,
+      toggled: s.has(a.Ux.SLURS),
       onToggle: g
     }), (0, r.jsx)(m, {
-      preset: s.Ux.SEXUAL_CONTENT,
-      toggled: a.has(s.Ux.SEXUAL_CONTENT),
+      preset: a.Ux.SEXUAL_CONTENT,
+      toggled: s.has(a.Ux.SEXUAL_CONTENT),
       onToggle: g
     })]
   })

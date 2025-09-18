@@ -1,19 +1,20 @@
 /** Chunk was on 8106 **/
 /** chunk id: 2070, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => s
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk881052 = require("./881052.js"),
   Chunk728345 = require("./728345.js");
 
-function a() {
-  let [e, t] = Chunk647438.useState(false), [n, a] = Chunk647438.useState(), s = Chunk647438.useRef(null);
+function s() {
+  let [e, t] = Chunk647438.useState(false), [n, s] = Chunk647438.useState(), a = Chunk647438.useRef(null);
   return {
     createGuildApplication: async (e, n, r, o) => {
-      a(true);
+      s(true);
       try {
-        return t(true), null == s.current && (s.current = await l.ZP.createApplication({
+        return t(true), null == a.current && (a.current = await l.ZP.createApplication({
           name: o,
           guildId: e.id,
           type: r,
@@ -23,7 +24,7 @@ function a() {
           includeTeam: true
         }), true
       } catch (e) {
-        return a(new i.Hx(e)), false
+        return s(new i.Hx(e)), false
       } finally {
         t(false)
       }

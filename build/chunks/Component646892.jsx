@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 646892, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => o
 });
@@ -16,8 +17,8 @@ function o(e) {
     size: n = 14
   } = e;
   return (0, r.jsx)("div", {
-    className: l()([s.guildProductRoleIcon, t]),
-    children: (0, r.jsx)(a.Z, {
+    className: l()([a.guildProductRoleIcon, t]),
+    children: (0, r.jsx)(s.Z, {
       height: n,
       width: n
     })

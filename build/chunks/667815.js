@@ -1,16 +1,16 @@
 /** Chunk was on 93886 **/
-/** chunk id: 667815, original params: e,t,n (module,exports,require) **/
+/** chunk id: 667815, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   q: () => l,
-  v: () => r
+  v: () => i
 });
 var Chunk570140 = require("./570140.js");
-let r = (e, t) => {
-  a.Z.wait(() => {
-    a.Z.dispatch({
+let i = (e, n) => {
+  r.Z.wait(() => {
+    r.Z.dispatch({
       type: "APPLIED_GUILD_BOOST_COUNT_UPDATE",
       guildId: e,
-      premiumCount: t
+      premiumCount: n
     })
   })
 };

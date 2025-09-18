@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 279988, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => g
 }), require("./388685.js");
@@ -21,10 +22,10 @@ let g = function(e) {
     index: i,
     isDragEnabled: g,
     isDropHovered: p,
-    onDrop: h,
-    onEdit: f,
-    onRemove: b,
-    canRemove: x,
+    onDrop: f,
+    onEdit: h,
+    onRemove: x,
+    canRemove: b,
     title: j,
     actionsLocation: v,
     fieldStyle: _
@@ -34,20 +35,20 @@ let g = function(e) {
     index: i,
     isDragEnabled: g,
     isDropHovered: p,
-    onDrop: h,
-    onEdit: f,
-    onRemove: b,
+    onDrop: f,
+    onEdit: h,
+    onRemove: x,
     title: j,
-    canRemove: x,
+    canRemove: b,
     actionsLocation: v,
     fieldStyle: _,
     children: [(0, r.jsx)(c.EK, {
       terms: y,
       channelId: t
-    }), 0 !== C && (0, r.jsxs)(s.P3F, {
+    }), 0 !== C && (0, r.jsxs)(a.P3F, {
       className: l()(m.fieldFooterContainer, m.clickable),
-      onClick: f,
-      children: [(0, r.jsx)(s.R94, {
+      onClick: h,
+      children: [(0, r.jsx)(a.R94, {
         className: m.clickable,
         children: u.intl.format(u.t.jnhD0d, {
           count: C
@@ -56,7 +57,7 @@ let g = function(e) {
         className: m.termsFieldCaretIcon,
         height: 14,
         width: 14,
-        color: a.Z.unsafe_rawColors.WHITE_500.css
+        color: s.Z.unsafe_rawColors.WHITE_500.css
       })]
     }), (0, r.jsx)(c.G0, {
       disabled: true,

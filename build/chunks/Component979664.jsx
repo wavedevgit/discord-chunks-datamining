@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 979664, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => p
 });
@@ -22,7 +23,7 @@ function g(e) {
   } = e, m = i.useCallback(() => {
     l(null)
   }, [l]), g = i.useCallback((e, t) => {
-    (0, a.ZDy)(async () => {
+    (0, s.ZDy)(async () => {
       let {
         default: i
       } = await Promise.all([n.e("91689"), n.e("59732"), n.e("7016")]).then(n.bind(n, 712451));
@@ -58,23 +59,23 @@ function g(e) {
   }, [l]);
   return (0, r.jsxs)("div", {
     className: u.buttons,
-    children: [(0, r.jsx)(a.tEY, {
+    children: [(0, r.jsx)(s.tEY, {
       within: true,
       children: (0, r.jsxs)("div", {
         className: u.iconInput,
-        children: [(0, r.jsx)(a.zxk, {
+        children: [(0, r.jsx)(s.zxk, {
           tabIndex: false,
           size: "sm",
           variant: "primary",
           disabled: !o,
           text: d.intl.string(d.t.r3Jdsb)
-        }), (0, r.jsx)(s.ZP, {
+        }), (0, r.jsx)(a.ZP, {
           tabIndex: 0,
           onChange: g,
           disabled: !o
         })]
       })
-    }), null != t.icon ? (0, r.jsx)(a.zxk, {
+    }), null != t.icon ? (0, r.jsx)(s.zxk, {
       variant: "critical-secondary",
       size: "sm",
       text: d.intl.string(d.t.x8AlTk),
@@ -89,16 +90,16 @@ function p(e) {
     profile: t,
     canManageGuild: n,
     onIconChange: i
-  } = e, s = (0, l.e7)([o.Z], () => o.Z.getError("icon"));
+  } = e, a = (0, l.e7)([o.Z], () => o.Z.getError("icon"));
   return (0, r.jsxs)("section", {
     className: u.container,
-    children: [(0, r.jsxs)(a.hjN, {
+    children: [(0, r.jsxs)(s.hjN, {
       className: m.section,
       children: [(0, r.jsxs)("div", {
         className: m.sectionHeader,
-        children: [(0, r.jsx)(a.vwX, {
+        children: [(0, r.jsx)(s.vwX, {
           children: d.intl.string(d.t.FkQnxM)
-        }), (0, r.jsx)(a.R94, {
+        }), (0, r.jsx)(s.R94, {
           type: "description",
           children: d.intl.string(d.t.KjkA0d)
         })]
@@ -107,9 +108,9 @@ function p(e) {
         canManageGuild: n,
         handleIconChange: i
       })]
-    }), null != s ? (0, r.jsx)("div", {
+    }), null != a ? (0, r.jsx)("div", {
       className: u.iconError,
-      children: s
+      children: a
     }) : null]
   })
 }

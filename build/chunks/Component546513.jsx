@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 546513, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => o
 });
@@ -20,10 +21,10 @@ function o(e) {
     perGuildMaxCount: d
   } = i.I6[o], u = 0 === n.length, m = d > n.length && !u;
   return (0, r.jsxs)(r.Fragment, {
-    children: [u && (0, r.jsx)(a.Z, {
+    children: [u && (0, r.jsx)(s.Z, {
       guildId: t,
       triggerType: o
-    }), n.map(e => (0, r.jsx)(s.Z, {
+    }), n.map(e => (0, r.jsx)(a.Z, {
       rule: e,
       initWithEdit: c
     }, e.id)), m && (0, r.jsx)(l.Z, {

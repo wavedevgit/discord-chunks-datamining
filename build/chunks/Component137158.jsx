@@ -1,12 +1,13 @@
 /** Chunk was on 8106 **/
 /** chunk id: 137158, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => O
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   Chunk574981 = require("./574981.js"),
   Chunk194630 = require("./194630.js"),
@@ -18,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk31829 = require("./31829.js");
 
-function b(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,33 +38,33 @@ function b(e) {
   return e
 }
 
-function x(e) {
+function b(e) {
   let {
     type: t
   } = e, n = i.useMemo(() => {
     switch (t) {
       case p.QJ.MULTIPLE_CHOICE:
         return {
-          icon: m.jE$, text: h.intl.string(h.t.ooKh3t)
+          icon: m.jE$, text: f.intl.string(f.t.ooKh3t)
         };
       case p.QJ.PARAGRAPH:
         return {
-          icon: m.OvV, text: h.intl.string(h.t.gG0JBA)
+          icon: m.OvV, text: f.intl.string(f.t.gG0JBA)
         };
       case p.QJ.TEXT_INPUT:
         return {
-          icon: (0, m.GSL)(g.Z), text: h.intl.string(h.t.w6Q9w8)
+          icon: (0, m.GSL)(g.Z), text: f.intl.string(f.t.w6Q9w8)
         };
       case p.QJ.TERMS:
         return {
-          icon: m.snC, text: h.intl.string(h.t["3pz9t7"])
+          icon: m.snC, text: f.intl.string(f.t["3pz9t7"])
         };
       default:
         return null
     }
   }, [t]);
   return null == n ? null : (0, r.jsxs)("div", {
-    className: f.typeTag,
+    className: h.typeTag,
     children: [(0, r.jsx)(n.icon, {
       size: "xs",
       color: "currentColor"
@@ -83,21 +84,21 @@ function j(e) {
     field: l
   } = e;
   return (0, r.jsx)("div", {
-    className: f.backgroundContainer,
+    className: h.backgroundContainer,
     children: i === p.it.REGULAR ? (0, r.jsxs)("div", {
-      className: f.containerPadding,
+      className: h.containerPadding,
       children: [(0, r.jsx)(m.vwX, {
         tag: "h3",
-        className: f.containerTitle,
+        className: h.containerTitle,
         children: t
       }), n]
     }) : (0, r.jsxs)("div", {
-      className: f.compactContainer,
+      className: h.compactContainer,
       children: [(0, r.jsx)(m.vwX, {
         tag: "h3",
-        className: f.compactTitle,
+        className: h.compactTitle,
         children: t
-      }), (0, r.jsx)(x, {
+      }), (0, r.jsx)(b, {
         type: l.field_type
       })]
     })
@@ -112,16 +113,16 @@ function _(e) {
     isDropHovered: l,
     onDrop: d,
     fieldStyle: g
-  } = e, h = (0, s.debounce)(async (e, t, n) => {
+  } = e, f = (0, a.debounce)(async (e, t, n) => {
     await d(e, t, n)
-  }), x = i.useRef(null), [, _] = (0, o.c)({
+  }), b = i.useRef(null), [, _] = (0, o.c)({
     type: v,
     item: {
       index: t,
       field: n
     },
     end: (e, t) => {
-      null == e || t.didDrop() || h(e.field, null, true)
+      null == e || t.didDrop() || f(e.field, null, true)
     }
   }), [, O] = (0, c.L)({
     accept: v,
@@ -129,61 +130,61 @@ function _(e) {
       var r;
       let {
         index: i
-      } = e, l = null == (r = x.current) ? true : r.getBoundingClientRect(), a = n.getClientOffset();
-      if (null == l || null == a) return;
-      let s = (l.bottom - l.top) / 2,
-        o = a.y - l.top;
-      i < t && o < s || i > t && o < s || i === t || h(e.field, t, false)
+      } = e, l = null == (r = b.current) ? true : r.getBoundingClientRect(), s = n.getClientOffset();
+      if (null == l || null == s) return;
+      let a = (l.bottom - l.top) / 2,
+        o = s.y - l.top;
+      i < t && o < a || i > t && o < a || i === t || f(e.field, t, false)
     },
     drop: e => {
-      h(e.field, t, true)
+      f(e.field, t, true)
     }
   });
-  return i.useLayoutEffect(() => (_(O(x)), () => {
+  return i.useLayoutEffect(() => (_(O(b)), () => {
     O(null), _(null)
   }), [_, O]), (0, r.jsxs)("div", {
-    ref: x,
+    ref: b,
     "data-dnd-name": "field-".concat(t),
-    className: a()(f.dragContainer, {
-      [f.dropHovered]: l
+    className: s()(h.dragContainer, {
+      [h.dropHovered]: l
     }),
     children: [(0, r.jsx)("div", {
-      className: a()(f.dragIconContainer, {
-        [f.compact]: g === p.it.COMPACT
+      className: s()(h.dragIconContainer, {
+        [h.compact]: g === p.it.COMPACT
       }),
       children: (0, r.jsx)(m.Vni, {
         size: "xs",
-        className: f.dragIcon,
+        className: h.dragIcon,
         color: u.Z.unsafe_rawColors.PRIMARY_400.css
       })
-    }), (0, r.jsx)(j, b({}, e))]
+    }), (0, r.jsx)(j, x({}, e))]
   })
 }
 
 function O(e) {
   return (0, r.jsxs)("div", {
-    className: a()(f.formFieldContainer, {
-      [f.compact]: e.fieldStyle === p.it.COMPACT
+    className: s()(h.formFieldContainer, {
+      [h.compact]: e.fieldStyle === p.it.COMPACT
     }),
     children: [(0, r.jsx)("div", {
-      className: f.spacingContainer,
-      children: e.isDragEnabled ? (0, r.jsx)(_, b({}, e)) : (0, r.jsx)(j, b({}, e))
+      className: h.spacingContainer,
+      children: e.isDragEnabled ? (0, r.jsx)(_, x({}, e)) : (0, r.jsx)(j, x({}, e))
     }), "side" === e.actionsLocation && (0, r.jsxs)("div", {
-      className: a()(f.actionButtonsContainer, {
-        [f.compact]: e.fieldStyle === p.it.COMPACT,
-        [f.canRemove]: e.canRemove
+      className: s()(h.actionButtonsContainer, {
+        [h.compact]: e.fieldStyle === p.it.COMPACT,
+        [h.canRemove]: e.canRemove
       }),
       children: [(0, r.jsx)(m.P3F, {
-        className: f.actionButton,
+        className: h.actionButton,
         onClick: e.onEdit,
-        "aria-label": h.intl.string(h.t.bt75u7),
+        "aria-label": f.intl.string(f.t.bt75u7),
         children: (0, r.jsx)(m.vdY, {
           size: "xs"
         })
       }), e.canRemove && (0, r.jsx)(m.P3F, {
-        className: f.actionButton,
+        className: h.actionButton,
         onClick: e.onRemove,
-        "aria-label": h.intl.string(h.t.N86XcH),
+        "aria-label": f.intl.string(f.t.N86XcH),
         children: (0, r.jsx)(m.XHJ, {
           size: "xs"
         })

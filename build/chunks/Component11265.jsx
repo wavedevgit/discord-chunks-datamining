@@ -1,12 +1,13 @@
 /** Chunk was on 8106 **/
 /** chunk id: 11265, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk938288 = require("./938288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk393238 = require("./393238.js"),
@@ -19,10 +20,10 @@ let m = Chunk647438.memo(function(e) {
     children: m,
     isExpanded: g,
     isStuck: p,
-    onExpand: h,
-    disableAnimation: f,
-    disableBackground: b
-  } = e, [x, j] = i.useState(true), [v, _] = i.useState(false), {
+    onExpand: f,
+    disableAnimation: h,
+    disableBackground: x
+  } = e, [b, j] = i.useState(true), [v, _] = i.useState(false), {
     ref: O,
     height: y = 0
   } = (0, c.ZP)(), {
@@ -47,7 +48,7 @@ let m = Chunk647438.memo(function(e) {
         })
       }
       return e
-    }({}, s.config.stiff), n = n = {
+    }({}, a.config.stiff), n = n = {
       clamp: true
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -65,7 +66,7 @@ let m = Chunk647438.memo(function(e) {
     onRest: () => {
       _(true)
     }
-  }, x || f ? "animate-never" : "respect-motion-settings");
+  }, b || h ? "animate-never" : "respect-motion-settings");
   return i.useLayoutEffect(() => {
     _(false), I(g)
   }, [g]), i.useLayoutEffect(() => {
@@ -74,19 +75,19 @@ let m = Chunk647438.memo(function(e) {
     }, 100);
     return () => clearTimeout(e)
   }, []), (0, r.jsx)(o.P3F, {
-    className: a()(u.editCard, {
+    className: s()(u.editCard, {
       [u.toggled]: g,
-      [u.noBackground]: b
+      [u.noBackground]: x
     }),
-    children: (0, r.jsxs)(s.animated.div, {
-      className: a()(u.contentExpandContainer, {
+    children: (0, r.jsxs)(a.animated.div, {
+      className: s()(u.contentExpandContainer, {
         [u.showOverflow]: g && v
       }),
       style: S,
       children: [(0, r.jsx)(o.P3F, {
         innerRef: O,
-        onClick: p ? true : h,
-        className: a()(u.innerHeader, {
+        onClick: p ? true : f,
+        className: s()(u.innerHeader, {
           [u.toggled]: g && p
         }),
         "aria-label": d.intl.string(d.t.dcl9MT),

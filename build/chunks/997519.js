@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 997519, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => c
 });
@@ -19,12 +20,12 @@ function c(e, t) {
       groupType: o.uw.SERVER_ROLE_SUBSCRIPTION,
       teamId: null == n ? true : n.id
     }),
-    u = (0, a.f)("useEarningMetrics"),
-    m = (0, s.Z)(e),
+    u = (0, s.f)("useEarningMetrics"),
+    m = (0, a.Z)(e),
     {
       currentPeriod: g,
       previousPeriods: p,
-      metrics: h
+      metrics: f
     } = r.useMemo(() => {
       var e, t;
       let {
@@ -72,6 +73,6 @@ function c(e, t) {
     currentPeriod: g,
     previousPeriods: p,
     allPeriods: c,
-    metrics: h
+    metrics: f
   }
 }

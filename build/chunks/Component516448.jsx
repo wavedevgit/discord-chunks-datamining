@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 516448, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => v
 }), require("./388685.js");
@@ -29,18 +30,18 @@ function v(e) {
     guildId: v
   } = (0, o.N)(), [_, O] = c.UE(n), [y, C] = c.R7(n), N = i.useMemo(() => t.filter(e => e.id !== n), [t, n]), {
     isFullServerGating: E
-  } = (0, d.Z)(v), I = (0, a.Dt)(), S = (0, s.mY)();
+  } = (0, d.Z)(v), I = (0, s.Dt)(), S = (0, a.mY)();
   return (0, r.jsxs)(u.Z, {
-    title: x.intl.string(x.t.YNw2Sk),
-    description: x.intl.string(x.t.zMW5r6),
+    title: b.intl.string(b.t.YNw2Sk),
+    description: b.intl.string(b.t.zMW5r6),
     children: [(0, r.jsxs)(l.hjN, {
-      title: x.intl.string(x.t.DFlDaG),
+      title: b.intl.string(b.t.DFlDaG),
       disabled: S,
       children: [(0, r.jsx)(l.R94, {
         type: l.R94.Types.DESCRIPTION,
         className: j.formDescription,
         disabled: S,
-        children: x.intl.string(x.t.kHalVF)
+        children: b.intl.string(b.t.kHalVF)
       }), (0, r.jsx)(m.Z, {
         channelBenefits: _,
         intangibleBenefits: y,
@@ -62,7 +63,7 @@ function v(e) {
             }));
             return [...t, ...e.filter(e => !n.has(e)).map(e => ({
               ref_id: e,
-              ref_type: b.Qs.CHANNEL
+              ref_type: x.Qs.CHANNEL
             }))]
           })
         },
@@ -71,14 +72,14 @@ function v(e) {
     }), (0, r.jsx)(l.LZC, {
       size: 24
     }), (0, r.jsxs)(l.hjN, {
-      title: x.intl.string(x.t.S2kKzM),
+      title: b.intl.string(b.t.S2kKzM),
       titleId: I,
       disabled: S,
       children: [(0, r.jsx)(l.R94, {
         type: l.R94.Types.DESCRIPTION,
         className: j.formDescription,
         disabled: S,
-        children: x.intl.string(x.t["5a4Axc"])
+        children: b.intl.string(b.t["5a4Axc"])
       }), E && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(g.Z, {
           "aria-labelledby": I,
@@ -90,16 +91,16 @@ function v(e) {
     }), (0, r.jsx)(l.LZC, {
       size: 24
     }), (0, r.jsxs)(l.hjN, {
-      title: x.intl.string(x.t.RdwKw8),
+      title: b.intl.string(b.t.RdwKw8),
       disabled: S,
       children: [(0, r.jsx)(l.R94, {
         type: l.R94.Types.DESCRIPTION,
         className: j.formDescription,
         disabled: S,
-        children: x.intl.string(x.t.zAww7e)
-      }), (0, r.jsx)(f.Z, {})]
+        children: b.intl.string(b.t.zAww7e)
+      }), (0, r.jsx)(h.Z, {})]
     }), (0, r.jsx)(l.LZC, {
       size: 24
-    }), (0, r.jsx)(h.Z, {})]
+    }), (0, r.jsx)(f.Z, {})]
   })
 }

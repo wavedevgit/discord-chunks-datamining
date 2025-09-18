@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 166805, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   P: () => O
 }), require("./388685.js"), require("./953529.js");
@@ -33,25 +34,25 @@ function _(e) {
     fetchedEmbed: y,
     embedEnabled: C,
     embedChannelId: N
-  } = (0, s.cj)([h.Z], () => {
+  } = (0, a.cj)([f.Z], () => {
     let {
       fetchedEmbed: e,
       embedEnabled: t,
       embedChannelId: n
-    } = h.Z.getProps();
+    } = f.Z.getProps();
     return {
       fetchedEmbed: e,
       embedEnabled: t,
       embedChannelId: n
     }
-  }), E = i.useMemo(() => (0, b.S)(t), [t]), I = i.useMemo(() => (0, b.a)(t), [t]), [S, T] = i.useState(false), P = null != c && l.Y.VISIBLE.has(c.visibility), w = !O && !P && !C;
+  }), E = i.useMemo(() => (0, x.S)(t), [t]), I = i.useMemo(() => (0, x.a)(t), [t]), [S, T] = i.useState(false), P = null != c && l.Y.VISIBLE.has(c.visibility), w = !O && !P && !C;
   i.useEffect(() => {
     y || (0, p.R)(t)
   }, [y, t]), i.useEffect(() => {
     g()
   }, [t, g]);
   let R = i.useCallback(async e => {
-    T(true), await (0, f.c)(t, e, N), T(false)
+    T(true), await (0, h.c)(t, e, N), T(false)
   }, [N, t]);
   return y ? (0, r.jsxs)("div", {
     children: [(0, r.jsx)(o.j7V, {
@@ -60,7 +61,7 @@ function _(e) {
       hideBorder: true,
       onChange: R,
       children: j.intl.string(j.t.NR6hub)
-    }), w ? (0, r.jsx)(a.xvT, {
+    }), w ? (0, r.jsx)(s.xvT, {
       variant: "text-sm/normal",
       color: "text-secondary",
       className: v.subtext,
@@ -70,12 +71,12 @@ function _(e) {
         className: v.divider
       }), (0, r.jsx)(o.vwX, {
         children: j.intl.string(j.t.LUo0Q0)
-      }), (0, r.jsx)(x.m, {
+      }), (0, r.jsx)(b.m, {
         guildId: t,
         widgetEnabled: C,
         widgetChannelId: N,
         enableLocalUpdate: true
-      }), (0, r.jsx)(a.xvT, {
+      }), (0, r.jsx)(s.xvT, {
         variant: "text-sm/medium",
         color: "text-secondary",
         className: v.subtext,
@@ -107,7 +108,7 @@ function _(e) {
             children: j.intl.string(j.t.XVGbn5)
           }), (0, r.jsx)(d.Z, {
             value: I
-          }), (0, r.jsx)(a.xvT, {
+          }), (0, r.jsx)(s.xvT, {
             variant: "text-sm/medium",
             color: "text-secondary",
             className: v.subtext,
@@ -127,10 +128,10 @@ function _(e) {
 function O(e) {
   let {
     guildId: t
-  } = e, n = (0, s.e7)([g.Z], () => g.Z.enabled);
+  } = e, n = (0, a.e7)([g.Z], () => g.Z.enabled);
   return (0, r.jsxs)(o.hjN, {
     title: j.intl.string(j.t.qlhNb2),
-    children: [(0, r.jsx)(a.xvT, {
+    children: [(0, r.jsx)(s.xvT, {
       variant: "text-sm/medium",
       color: "text-secondary",
       className: v.description,

@@ -1,12 +1,13 @@
 /** Chunk was on 8106 **/
 /** chunk id: 845377, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => I
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk498607 = require("./498607.js"),
   o = require.n(Chunk498607),
   Chunk913527 = require("./913527.js"),
@@ -61,16 +62,16 @@ let N = e => {
     failingName: n,
     description: i,
     checked: l,
-    pending: a,
-    pendingDescription: s,
+    pending: s,
+    pendingDescription: a,
     failingDescription: o
   } = e, c = t, d = null, u = null;
-  return a ? (d = (0, r.jsx)(p.Mgn, {
+  return s ? (d = (0, r.jsx)(p.Mgn, {
     size: "custom",
     color: m.Z.unsafe_rawColors.YELLOW_300.css,
     width: 20,
     height: 20
-  }), u = null != s ? s : i) : l ? (d = (0, r.jsx)(g.$q, {
+  }), u = null != a ? a : i) : l ? (d = (0, r.jsx)(g.$q, {
     readOnly: true,
     shape: g.zV.ROUND,
     size: 20,
@@ -113,15 +114,15 @@ let I = e => {
   let {
     guild: t,
     guildId: l,
-    className: s,
+    className: a,
     headerContent: o,
     failedItemsOnly: c = false
   } = e, [m, I] = (0, u.Wu)([j.ZP], () => [j.ZP.getDiscoveryChecklist(l), j.ZP.isLoading()], [l]), {
     nsfwProperties: S
-  } = null != m ? m : {}, T = null == t ? true : t.features.has(v.oNc.PARTNERED), P = null == S ? true : S.channels_banned_keywords, w = (0, u.e7)([h.ZP], () => {
+  } = null != m ? m : {}, T = null == t ? true : t.features.has(v.oNc.PARTNERED), P = null == S ? true : S.channels_banned_keywords, w = (0, u.e7)([f.ZP], () => {
     var e, n, r;
     if (null == P) return [];
-    let i = null != (n = (null != (e = h.ZP.getChannels(t.id)) ? e : {})[h.sH]) ? n : [],
+    let i = null != (n = (null != (e = f.ZP.getChannels(t.id)) ? e : {})[f.sH]) ? n : [],
       l = null != (r = null == i ? true : i.map(e => e.channel).reduce((e, t) => C(y({}, e), {
         [t.id]: t
       }), {})) ? r : {};
@@ -131,7 +132,7 @@ let I = e => {
     })
   }, [t.id, P], E);
   if (I || null == m) return (0, r.jsxs)("div", {
-    className: a()(O.container, O.loaderContainer, s),
+    className: s()(O.container, O.loaderContainer, a),
     children: [(0, r.jsx)(p.X6q, {
       className: O.loadingText,
       variant: "heading-md/semibold",
@@ -148,7 +149,7 @@ let I = e => {
       description: _.intl.string(_.t.hSLSMz),
       failingDescription: _.intl.format(_.t.odsGg4, {
         termsURL: v.EYA.TERMS,
-        guidelinesURL: f.Z.getArticleURL(v.BhN.PUBLIC_GUILD_GUILDLINES)
+        guidelinesURL: h.Z.getArticleURL(v.BhN.PUBLIC_GUILD_GUILDLINES)
       }),
       checked: null == m ? true : m.safeEnvironment
     }, {
@@ -171,7 +172,7 @@ let I = e => {
       }),
       failingDescription: _.intl.formatToPlainString(_.t.jYwM1d, {
         minimumGuildAge: Math.ceil(m.minimumGuildAge / 7),
-        passDate: d()(b.default.extractTimestamp(l)).add(m.minimumGuildAge, "days").format("LL")
+        passDate: d()(x.default.extractTimestamp(l)).add(m.minimumGuildAge, "days").format("LL")
       }),
       checked: null == m ? true : m.age
     }, {
@@ -280,12 +281,12 @@ let I = e => {
       failingName: _.intl.string(_.t.awA3PT),
       description: _.intl.string(_.t.QbBJ7e),
       failingDescription: _.intl.format(_.t.kBXInZ, {
-        onClick: () => x.Z.setSection(v.pNK.SAFETY, v.KsC.SAFETY_PERMISSIONS)
+        onClick: () => b.Z.setSection(v.pNK.SAFETY, v.KsC.SAFETY_PERMISSIONS)
       }),
       checked: null == m ? true : m.protected
     }];
   return (0, r.jsxs)("div", {
-    className: a()(O.container, s),
+    className: s()(O.container, a),
     children: [(() => {
       let e = (null == m ? true : m.sufficient) ? n(909425) : n(177266);
       return null == o ? null : (0, r.jsxs)("div", {

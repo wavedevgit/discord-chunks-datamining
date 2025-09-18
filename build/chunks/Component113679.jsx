@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 113679, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => p
 }), require("./388685.js");
@@ -18,31 +19,31 @@ var Chunk951288 = require("./951288.js"),
 function p(e) {
   let {
     guild: t
-  } = e, n = i.useId(), p = (0, l.e7)([c.Z], () => null != t && c.Z.can(u.Plq.MANAGE_GUILD, t), [t]), h = t.features.has(u.oNc.COMMUNITY), [f, b] = i.useState(t.features.has(u.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), x = i.useCallback(async e => {
-    b(e), await (0, o.fp)(t, e)
+  } = e, n = i.useId(), p = (0, l.e7)([c.Z], () => null != t && c.Z.can(u.Plq.MANAGE_GUILD, t), [t]), f = t.features.has(u.oNc.COMMUNITY), [h, x] = i.useState(t.features.has(u.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), b = i.useCallback(async e => {
+    x(e), await (0, o.fp)(t, e)
   }, [t]);
-  return h ? null : (0, r.jsxs)("div", {
+  return f ? null : (0, r.jsxs)("div", {
     className: g.bannerContainer,
     children: [(0, r.jsx)(d.Z, {
       width: 64,
       height: 64
     }), (0, r.jsxs)("div", {
       className: g.headingContainer,
-      children: [(0, r.jsx)(s.X6q, {
+      children: [(0, r.jsx)(a.X6q, {
         variant: "heading-lg/semibold",
         color: "always-white",
         children: m.intl.string(m.t.jDarm5)
-      }), (0, r.jsx)(s.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "always-white",
         children: m.intl.string(m.t["/ee7yM"])
       })]
     }), (0, r.jsx)("div", {
       className: g.buttonContainer,
-      children: (0, r.jsx)(a.T2, {
+      children: (0, r.jsx)(s.T2, {
         id: n,
-        checked: f,
-        onChange: x,
+        checked: h,
+        onChange: b,
         disabled: !p
       })
     })]

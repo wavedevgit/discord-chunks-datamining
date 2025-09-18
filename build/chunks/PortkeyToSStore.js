@@ -1,12 +1,12 @@
 /** Chunk was on 85683 **/
 /** chunk id: 29168, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => l
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -14,21 +14,21 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let s = false;
-class l extends(r = Chunk442837.ZP.PersistedStore) {
+let c = false;
+class o extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (s = e)
+    null != e && (c = e)
   }
   getState() {
-    return s
+    return c
   }
 }
-o(l, "displayName", "PortkeyToSStore"), o(l, "persistKey", "PortkeyToSStore");
-let c = new l(Chunk570140.Z, {
+s(o, "displayName", "PortkeyToSStore"), s(o, "persistKey", "PortkeyToSStore");
+let l = new o(Chunk570140.Z, {
   PORTKEY_ACCEPT_TOS: function(e) {
     let {
       acceptedToS: t
     } = e;
-    s = t
+    c = t
   }
 })

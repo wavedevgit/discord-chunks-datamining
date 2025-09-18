@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 60533, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => u
 });
@@ -18,9 +19,9 @@ function u(e) {
     guild: t
   } = e, n = (0, i.e7)([o.default], () => {
     let e = o.default.getCurrentUser();
-    return (0, s.eM)(t, e)
+    return (0, a.eM)(t, e)
   }), u = () => {
-    (0, a.q)(t.id, {
+    (0, s.q)(t.id, {
       demonetized: true
     })
   };

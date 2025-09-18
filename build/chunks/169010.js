@@ -1,51 +1,51 @@
 /** Chunk was on 44799 **/
 /** chunk id: 169010, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  S: () => s,
-  z: () => i
+  S: () => a,
+  z: () => o
 }), require("./388685.js"), require("./539854.js");
 var Chunk494497 = require("./494497.js"),
   Chunk535396 = require("./535396.js");
-let i = {
+let o = {
     guildTagsBadgePacks: [Chunk494497.MB, Chunk494497.Vk]
   },
-  a = Object.entries(i).reduce((e, t) => {
+  l = Object.entries(o).reduce((e, t) => {
     let [n, r] = t;
     for (let t of r) e[t] = n;
     return e
   }, {});
 
-function s(e, t, n) {
-  let i = [],
-    s = t.reduce((e, t) => {
-      if (t.type !== o.Us.PERK) return e;
-      let n = a[t.skuId];
+function a(e, t, n) {
+  let o = [],
+    a = t.reduce((e, t) => {
+      if (t.type !== i.Us.PERK) return e;
+      let n = l[t.skuId];
       return null == n || (null != e[n] || (e[n] = []), e[n].push(t)), e
     }, {});
   for (let e of t) {
-    if (e.type === o.Us.LEVEL) {
-      i.push({
+    if (e.type === i.Us.LEVEL) {
+      o.push({
         type: "singleLevel",
         powerup: e
       });
       continue
     }
-    let t = a[e.skuId];
+    let t = l[e.skuId];
     if (null != t) {
-      let e = s[t];
-      true !== e && (i.push({
+      let e = a[t];
+      true !== e && (o.push({
         type: "multiPerk",
         group: t,
         powerups: e
-      }), s[t] = true);
+      }), a[t] = true);
       continue
     }
-    i.push({
+    o.push({
       type: "singlePerk",
       powerup: e
     })
   }
-  return n && e === o.Us.PERK && i.push({
+  return n && e === i.Us.PERK && o.push({
       type: "portkey"
     }),
     function(e) {
@@ -53,10 +53,10 @@ function s(e, t, n) {
         n = e.findIndex(e => "multiPerk" === e.type && "guildTagsBadgePacks" === e.group);
       if (false !== t && false !== n && n !== t + 1) {
         let t = [...e],
-          [o] = t.splice(n, 1),
-          i = t.findIndex(e => "singlePerk" === e.type && e.powerup.skuId === r.IN);
-        return t.splice(i + 1, 0, o), t
+          [i] = t.splice(n, 1),
+          o = t.findIndex(e => "singlePerk" === e.type && e.powerup.skuId === r.IN);
+        return t.splice(o + 1, 0, i), t
       }
       return e
-    }(i)
+    }(o)
 }

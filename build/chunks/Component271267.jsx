@@ -1,8 +1,9 @@
 /** Chunk was on 8106 **/
 /** chunk id: 271267, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Q: () => p,
-  Z: () => x
+  Z: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -35,30 +36,30 @@ function g(e) {
 }
 let p = "role_subscriptions_eligibility_modal";
 
-function h(e) {
+function f(e) {
   let {
     guild: t,
     eligibility: i,
     eligibilityLoading: l,
-    eligibilityError: s,
+    eligibilityError: a,
     refreshEligibility: o
   } = e;
-  return (0, r.jsx)(a.zxk, {
+  return (0, r.jsx)(s.zxk, {
     variant: "expressive",
     onClick: function() {
-      (0, a.ZDy)(async () => {
+      (0, s.ZDy)(async () => {
         let {
           default: e
         } = await n.e("21863").then(n.bind(n, 466501));
         return n => {
-          var a, c;
-          return (0, r.jsx)(e, (a = g({}, n), c = c = {
+          var s, c;
+          return (0, r.jsx)(e, (s = g({}, n), c = c = {
             eligibility: i,
             eligibilityLoading: l,
-            eligibilityError: s,
+            eligibilityError: a,
             refreshEligibility: o,
             guildId: t.id
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(c)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(s, Object.getOwnPropertyDescriptors(c)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
@@ -66,8 +67,8 @@ function h(e) {
             }
             return n
           })(Object(c)).forEach(function(e) {
-            Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(c, e))
-          }), a))
+            Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(c, e))
+          }), s))
         }
       }, {
         modalKey: p
@@ -75,11 +76,11 @@ function h(e) {
     },
     size: "md",
     text: d.intl.string(d.t.NL5ZNT),
-    icon: a.Mgn
+    icon: s.Mgn
   })
 }
 
-function f(e) {
+function h(e) {
   let {
     guild: t,
     checkboxText: n
@@ -88,30 +89,30 @@ function f(e) {
     error: u,
     loading: m,
     submitAcceptTermsRequest: g
-  } = (0, s.Z)(t.id), [p, h] = i.useState(false);
+  } = (0, a.Z)(t.id), [p, f] = i.useState(false);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.$q, {
       onChange: function() {
-        h(e => !e)
+        f(e => !e)
       },
       size: 20,
       type: l.M0.INVERTED,
       value: p,
-      children: (0, r.jsx)(a.Text, {
+      children: (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
         children: n
       })
-    }), (0, r.jsx)(a.LZC, {
+    }), (0, r.jsx)(s.LZC, {
       size: 24
-    }), (0, r.jsx)(a.zxk, {
+    }), (0, r.jsx)(s.zxk, {
       disabled: !p || !c,
       onClick: g,
       loading: m,
       variant: "expressive",
       text: d.intl.string(d.t.NL5ZNT)
     }), null != u && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(a.LZC, {
+      children: [(0, r.jsx)(s.LZC, {
         size: 24
       }), (0, r.jsx)(o.Z, {
         children: u.getAnyErrorMessage()
@@ -120,32 +121,32 @@ function f(e) {
   })
 }
 
-function b(e) {
+function x(e) {
   let {
     guild: t,
     monetizationEligibility: n
   } = e, {
     eligibilityLoading: i,
     eligibilityError: l,
-    refreshEligibility: a,
-    eligibility: s,
+    refreshEligibility: s,
+    eligibility: a,
     eligibleForMonetization: o,
     acceptTermsCheckboxText: d,
     wasRejectedInV1: u
   } = n;
-  return o ? u ? (0, r.jsx)(c.Z, g({}, n)) : (0, r.jsx)(f, {
+  return o ? u ? (0, r.jsx)(c.Z, g({}, n)) : (0, r.jsx)(h, {
     guild: t,
     checkboxText: d
-  }) : (0, r.jsx)(h, {
+  }) : (0, r.jsx)(f, {
     guild: t,
-    eligibility: s,
+    eligibility: a,
     eligibilityLoading: i,
     eligibilityError: l,
-    refreshEligibility: a
+    refreshEligibility: s
   })
 }
 
-function x(e) {
+function b(e) {
   let {
     guild: t,
     monetizationEligibility: n
@@ -158,19 +159,19 @@ function x(e) {
       alt: d.intl.string(d.t.Af4klJ)
     }), (0, r.jsxs)("div", {
       className: u.ctaContent,
-      children: [(0, r.jsx)(a.X6q, {
+      children: [(0, r.jsx)(s.X6q, {
         variant: "heading-xl/semibold",
         color: "header-primary",
         children: d.intl.string(d.t.PqYfh4)
-      }), (0, r.jsx)(a.LZC, {
+      }), (0, r.jsx)(s.LZC, {
         size: 12
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
         children: d.intl.string(d.t["41wkMT"])
-      }), (0, r.jsx)(a.LZC, {
+      }), (0, r.jsx)(s.LZC, {
         size: 24
-      }), (0, r.jsx)(b, {
+      }), (0, r.jsx)(x, {
         guild: t,
         monetizationEligibility: n
       })]

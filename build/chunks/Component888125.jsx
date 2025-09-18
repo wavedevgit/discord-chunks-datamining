@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 888125, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   w: () => g
 });
@@ -18,23 +19,23 @@ function g(e) {
   let {
     canManageGuild: t,
     premiumProgressBarEnabled: n
-  } = e, g = (0, s.ZP)(), p = i.useCallback(e => {
+  } = e, g = (0, a.ZP)(), p = i.useCallback(e => {
     o.Z.updateGuild({
       premiumProgressBarEnabled: e
     })
   }, []);
-  return (0, r.jsxs)(a.hjN, {
+  return (0, r.jsxs)(s.hjN, {
     className: d.container,
     children: [(0, r.jsxs)("div", {
       className: d.column,
-      children: [(0, r.jsx)(a.j7V, {
+      children: [(0, r.jsx)(s.j7V, {
         className: d.switch,
         onChange: p,
         value: n,
         hideBorder: true,
         disabled: !t,
         children: c.intl.string(c.t.Dl4mJS)
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
         children: c.intl.string(c.t.xzHcoa)

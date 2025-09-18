@@ -1,12 +1,13 @@
 /** Chunk was on 8106 **/
 /** chunk id: 959508, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => C
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk755721 = require("./755721.js"),
@@ -40,7 +41,7 @@ function C(e) {
     onPromptDragComplete: T,
     onPromptDragStart: P,
     onPromptDragReset: w
-  } = e, R = (0, s.e7)([f.Z], () => f.Z.editedDefaultChannelIds), {
+  } = e, R = (0, a.e7)([h.Z], () => h.Z.editedDefaultChannelIds), {
     drag: Z,
     dragSourcePosition: D,
     drop: A,
@@ -52,10 +53,10 @@ function C(e) {
     onDragStart: P,
     onDragComplete: T,
     onDragReset: w
-  }), k = (0, s.cj)([x.Z], () => {
+  }), k = (0, a.cj)([b.Z], () => {
     var e;
-    return null != (e = x.Z.errors[j]) ? e : y
-  }), [M, G] = i.useState(false), [U, B] = i.useState(false), F = null != (t = k.options) ? t : k.optionErrors.filter(h.lm)[0], H = k.config, z = l.options.length >= v.fY, V = (0, g.kl)(n.id, Array.from(R), [l]).length - R.size, W = i.useRef(null), K = i.useRef(j);
+    return null != (e = b.Z.errors[j]) ? e : y
+  }), [M, G] = i.useState(false), [U, B] = i.useState(false), F = null != (t = k.options) ? t : k.optionErrors.filter(f.lm)[0], H = k.config, z = l.options.length >= v.fY, V = (0, g.kl)(n.id, Array.from(R), [l]).length - R.size, W = i.useRef(null), K = i.useRef(j);
   return (i.useEffect(() => {
     K.current = j
   }), i.useLayoutEffect(() => {
@@ -71,7 +72,7 @@ function C(e) {
       onFocus: () => B(true),
       onBlur: () => B(false),
       onMouseLeave: () => B(false),
-      className: a()(O.container, {
+      className: s()(O.container, {
         [O.dropIndicatorBefore]: null != D && j < D,
         [O.dropIndicatorAfter]: null != D && j > D,
         [O.containerFocused]: U
@@ -115,7 +116,7 @@ function C(e) {
             size: "sm",
             icon: d.XHJ,
             variant: "icon-only",
-            onClick: () => (0, b.fi)(n, l.id),
+            onClick: () => (0, x.fi)(n, l.id),
             "aria-label": _.intl.string(_.t["Ku+86e"])
           })
         })
@@ -126,7 +127,7 @@ function C(e) {
       tabIndex: 0,
       onFocus: () => B(true),
       onBlur: () => B(false),
-      className: a()(O.container, {
+      className: s()(O.container, {
         [O.dropIndicatorBefore]: null != D && j < D,
         [O.dropIndicatorAfter]: null != D && j > D,
         [O.containerFocused]: U
@@ -151,7 +152,7 @@ function C(e) {
           }),
           inputRef: W,
           value: l.title,
-          onChange: e => (0, b.Kk)(n, l.id, {
+          onChange: e => (0, x.Kk)(n, l.id, {
             title: e
           }),
           placeholder: _.intl.string(_.t.QMCuCg),
@@ -186,7 +187,7 @@ function C(e) {
             size: 20,
             type: c.M0.INVERTED,
             value: !l.singleSelect,
-            onChange: (e, t) => (0, b.Kk)(n, l.id, {
+            onChange: (e, t) => (0, x.Kk)(n, l.id, {
               singleSelect: !t
             }),
             children: (0, r.jsx)(d.Text, {
@@ -198,7 +199,7 @@ function C(e) {
             size: 20,
             type: c.M0.INVERTED,
             value: l.inOnboarding && l.required,
-            onChange: (e, t) => (0, b.Kk)(n, l.id, {
+            onChange: (e, t) => (0, x.Kk)(n, l.id, {
               required: t
             }),
             disabled: !l.inOnboarding,
@@ -227,7 +228,7 @@ function C(e) {
               size: "sm",
               icon: d.XHJ,
               variant: "icon-only",
-              onClick: () => (0, b.fi)(n, l.id),
+              onClick: () => (0, x.fi)(n, l.id),
               "aria-label": _.intl.string(_.t["Ku+86e"])
             })
           })
@@ -243,15 +244,15 @@ function N(e) {
   let {
     prompt: t,
     guild: n
-  } = e, [l, a] = i.useState(false);
+  } = e, [l, s] = i.useState(false);
   if (i.useEffect(() => {
-      !l && t.title.length > 0 && a(true)
+      !l && t.title.length > 0 && s(true)
     }, [l, t]), l) return null;
 
-  function s(e) {
+  function a(e) {
     return (0, r.jsx)(d.P3F, {
       className: O.example,
-      onClick: () => (0, b.Kk)(n, t.id, {
+      onClick: () => (0, x.Kk)(n, t.id, {
         title: e
       }),
       children: (0, r.jsx)(d.Text, {
@@ -268,7 +269,7 @@ function N(e) {
       children: _.intl.string(_.t.ECnSLi)
     }), (0, r.jsxs)("div", {
       className: O.examples,
-      children: [s(_.intl.string(_.t["7GZMJS"])), s(_.intl.string(_.t.nItydn)), s(_.intl.string(_.t.evuYbm)), s(_.intl.string(_.t.XWRuOj))]
+      children: [a(_.intl.string(_.t["7GZMJS"])), a(_.intl.string(_.t.nItydn)), a(_.intl.string(_.t.evuYbm)), a(_.intl.string(_.t.XWRuOj))]
     })]
   })
 }
@@ -279,12 +280,12 @@ function E(e) {
     prompt: n,
     promptIndex: i,
     singleColumn: l,
-    errors: a
+    errors: s
   } = e, {
-    handleDragStart: s,
+    handleDragStart: a,
     handleDragReset: o,
     handleDragComplete: c
-  } = (0, m.Z)(n.options, e => (0, b.Kk)(t, n.id, {
+  } = (0, m.Z)(n.options, e => (0, x.Kk)(t, n.id, {
     options: e
   }));
   return (0, r.jsxs)("div", {
@@ -295,10 +296,10 @@ function E(e) {
       promptIndex: i,
       singleColumn: l,
       option: e,
-      onDragStart: s,
+      onDragStart: a,
       onDragComplete: c,
       onDragReset: o,
-      hasError: null != a.optionErrors[d]
+      hasError: null != s.optionErrors[d]
     }, e.id)), n.options.length < v.qm ? (0, r.jsx)(j.B, {
       guild: t,
       prompt: n,

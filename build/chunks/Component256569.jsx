@@ -1,12 +1,13 @@
 /** Chunk was on 8106 **/
 /** chunk id: 256569, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 }), require("./388685.js"), require("./358797.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk110924 = require("./110924.js"),
   Chunk347469 = require("./347469.js"),
@@ -33,24 +34,24 @@ function p(e) {
     className: g.resizeHandle
   })
 }
-let h = Chunk647438.forwardRef(function(e, t) {
+let f = Chunk647438.forwardRef(function(e, t) {
   let {
     children: n,
     onFocus: l,
-    onBlur: a,
+    onBlur: s,
     onClick: o
   } = e, c = i.useRef(null), [d, m] = i.useState(u.tq);
-  return (0, r.jsxs)(s.P3F, {
+  return (0, r.jsxs)(a.P3F, {
     className: g.textArea,
     onFocus: l,
-    onBlur: a,
+    onBlur: s,
     onClick: o,
     innerRef: c,
     ignoreKeyPress: true,
     style: {
       minHeight: d
     },
-    children: [(0, r.jsx)(s.Den, {
+    children: [(0, r.jsx)(a.Den, {
       className: g.innerScroller,
       style: {
         minHeight: d - 2
@@ -67,7 +68,7 @@ let h = Chunk647438.forwardRef(function(e, t) {
   })
 });
 
-function f(e) {
+function h(e) {
   var t;
   let {
     initialValue: n,
@@ -75,9 +76,9 @@ function f(e) {
     onChangeNewTagValue: c,
     tagErrors: u = {},
     placeholder: p,
-    className: f,
-    maxTags: b
-  } = e, x = i.useRef(null), j = i.useRef(null), v = i.useRef(null), _ = (0, m.V)(n), {
+    className: h,
+    maxTags: x
+  } = e, b = i.useRef(null), j = i.useRef(null), v = i.useRef(null), _ = (0, m.V)(n), {
     handlePasteEvent: O,
     handleInputChange: y,
     handleKeyDown: C,
@@ -90,7 +91,7 @@ function f(e) {
     handleInputBlurEvent: w
   } = (0, m.Q)(_, {
     scrollerRef: v,
-    mainInputRef: x,
+    mainInputRef: b,
     mainContainerRef: j
   }), {
     state: {
@@ -101,7 +102,7 @@ function f(e) {
     }
   } = _, L = (0, o.Z)(Z), [k, M] = i.useState(false), G = i.useCallback(() => {
     var e;
-    M(false), P(), null == (e = x.current) || e.focus({
+    M(false), P(), null == (e = b.current) || e.focus({
       preventScroll: true
     })
   }, [P]);
@@ -118,9 +119,9 @@ function f(e) {
       if (t) {
         var n;
         let t = D.includes(Z[e]);
-        null == (n = x.current) || n.focus(), t ? T(e) : (S(e), setImmediate(() => {
+        null == (n = b.current) || n.focus(), t ? T(e) : (S(e), setImmediate(() => {
           var e;
-          null == (e = x.current) || e.blur(), setTimeout(() => {
+          null == (e = b.current) || e.blur(), setTimeout(() => {
             var e;
             return null == (e = j.current) ? true : e.focus()
           }, 16)
@@ -128,11 +129,11 @@ function f(e) {
       } else T(e, true), M(true)
     }, [S, T, D, Z]);
   return (0, r.jsxs)("div", {
-    className: a()(g.mainContainer, f),
+    className: s()(g.mainContainer, h),
     ref: j,
     tabIndex: 0,
     onKeyUp: N,
-    children: [(0, r.jsxs)(h, {
+    children: [(0, r.jsxs)(f, {
       ref: v,
       onClick: G,
       children: [Z.map((e, t) => (0, r.jsx)(d.Z, {
@@ -146,10 +147,10 @@ function f(e) {
         error: u[e],
         forceShowErrorTooltip: !k && t === Z.length - 1
       }, t)), (0, r.jsx)("input", {
-        className: a()(g.mainTextInput, {
+        className: s()(g.mainTextInput, {
           [g.isEditingOtherNodes]: k
         }),
-        ref: x,
+        ref: b,
         onChange: y,
         onKeyDownCapture: C,
         onPaste: O,
@@ -157,11 +158,11 @@ function f(e) {
         placeholder: 0 === Z.length ? p : true,
         value: R
       })]
-    }), null != b && (0, r.jsxs)(s.Text, {
+    }), null != x && (0, r.jsxs)(a.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
       className: g.maxTags,
-      children: [null != (t = null == Z ? true : Z.length) ? t : 0, "/", b]
+      children: [null != (t = null == Z ? true : Z.length) ? t : 0, "/", x]
     })]
   })
 }

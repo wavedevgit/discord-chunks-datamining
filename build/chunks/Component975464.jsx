@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 975464, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   C: () => v,
   Z: () => _
@@ -31,30 +32,30 @@ function v(e) {
       children: t
     } = e;
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(a.$i$, {
+      children: [(0, r.jsx)(s.$i$, {
         className: j.sectionDivider
       }), t]
     })
   }, l = (0, r.jsx)(i, {
-    children: (0, r.jsx)(f.Z, {})
-  }, x.q.HOW_IT_WORKS), s = (0, r.jsx)(i, {
+    children: (0, r.jsx)(h.Z, {})
+  }, b.q.HOW_IT_WORKS), a = (0, r.jsx)(i, {
     children: (0, r.jsx)(p.Z, {})
-  }, x.q.BENEFITS);
+  }, b.q.BENEFITS);
   return null != n || (null == t ? true : t.sections) == null ? (0, r.jsxs)(r.Fragment, {
-    children: [l, s]
+    children: [l, a]
   }) : (0, r.jsx)(r.Fragment, {
     children: t.sections.map(e => {
       switch (e.type) {
-        case x.q.HOW_IT_WORKS:
+        case b.q.HOW_IT_WORKS:
           return l;
-        case x.q.BENEFITS:
-          return s;
-        case x.q.OTHER_CREATORS:
+        case b.q.BENEFITS:
+          return a;
+        case b.q.OTHER_CREATORS:
           return (0, r.jsx)(i, {
-            children: (0, r.jsx)(h.Z, {
+            children: (0, r.jsx)(f.Z, {
               highlightedCreators: e.creators
             })
-          }, x.q.OTHER_CREATORS)
+          }, b.q.OTHER_CREATORS)
       }
     })
   })
@@ -65,30 +66,30 @@ function _(e) {
     guild: t
   } = e, n = (0, u.Z)(t), {
     eligibilityLoading: p,
-    eligibilityError: h,
-    eligibility: f
-  } = n, x = (0, c.j)(f), {
+    eligibilityError: f,
+    eligibility: h
+  } = n, b = (0, c.j)(h), {
     isLoading: _,
     error: O,
     creatorMonetizationOnboardingMarketing: y
   } = (0, d.Z)(t.id);
   return (i.useEffect(() => {
     (0, o.k)(t.id)
-  }, [t.id]), (0, s.Z)({
+  }, [t.id]), (0, a.Z)({
     type: l.ImpressionTypes.PANE,
     name: l.ImpressionNames.ENABLE_CREATOR_MONETIZATION_ACCEPT_TERMS_LANDING,
     properties: {
       guild_id: t.id,
       is_owner: n.isGuildOwner,
       is_eligible: n.eligibleForMonetization,
-      ineligible_reasons: x
+      ineligible_reasons: b
     }
   }, {
-    disableTrack: null == t.id || null == f
-  }), p || null == f || _) ? (0, r.jsx)(a.$jN, {}) : f.actionRequired ? (0, r.jsx)(b.Z, {
+    disableTrack: null == t.id || null == h
+  }), p || null == h || _) ? (0, r.jsx)(s.$jN, {}) : h.actionRequired ? (0, r.jsx)(x.Z, {
     guild: t
-  }) : null != h ? (0, r.jsx)(m.Z, {
-    children: h.message
+  }) : null != f ? (0, r.jsx)(m.Z, {
+    children: f.message
   }) : (0, r.jsxs)("div", {
     className: j.container,
     children: [(0, r.jsx)(g.Z, {

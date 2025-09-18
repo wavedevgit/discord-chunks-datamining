@@ -1,4 +1,4 @@
-/** Chunk was on 46290 **/
+/** Chunk was on 50751 **/
 /** chunk id: 609626, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -14,8 +14,8 @@ function s(e, t) {
     s = a.intl.format(a.t["Yk+uYG"], {
       username: ""
     }),
-    c = (0, i.ov)(e),
-    u = a.intl.string(a.t.WRj1Wl),
+    u = (0, i.ov)(e),
+    c = a.intl.string(a.t.WRj1Wl),
     {
       trackView: d,
       trackClick: p
@@ -26,10 +26,10 @@ function s(e, t) {
       activity_name: t.name
     });
   return {
-    icon: c,
+    icon: u,
     title: n,
     body: s,
-    hint: u,
+    hint: c,
     onNotificationShow: () => {
       d()
     },

@@ -1,7 +1,8 @@
 /** Chunk was on 8106 **/
 /** chunk id: 489776, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -34,7 +35,7 @@ function p(e) {
   return e
 }
 
-function h(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,32 +48,32 @@ function h(e, t) {
   }), e
 }
 
-function f(e) {
+function h(e) {
   let {
     guildId: t,
     triggerType: n
-  } = e, f = i.useMemo(() => () => (0, o.ep)(t, n), [t, n]), [b] = i.useState(f), [x, j] = i.useState(false), {
+  } = e, h = i.useMemo(() => () => (0, o.ep)(t, n), [t, n]), [x] = i.useState(h), [b, j] = i.useState(false), {
     editingRule: v,
     createNewEditingRule: _
   } = (0, d.V)(), {
     getDefaultRuleName: O
-  } = c.I6[n], y = !(0, o.Vb)(v) && (null == v ? true : v.triggerType) === n, [C, N] = i.useState(y ? v : b), E = (0, s.q_F)({
+  } = c.I6[n], y = !(0, o.Vb)(v) && (null == v ? true : v.triggerType) === n, [C, N] = i.useState(y ? v : x), E = (0, a.q_F)({
     opacity: +!y,
     pointerEvents: y ? "none" : "all",
-    config: h(p({}, l.config.stiff), {
+    config: f(p({}, l.config.stiff), {
       clamp: true
     })
-  }), I = (0, s.q_F)({
+  }), I = (0, a.q_F)({
     opacity: +!!y,
     pointerEvents: y ? "all" : "none",
-    config: h(p({}, l.config.stiff), {
+    config: f(p({}, l.config.stiff), {
       clamp: true
     }),
     onStart: () => {
-      N(y ? v : b)
+      N(y ? v : x)
     },
     onRest: () => {
-      N(y ? v : b), j(y)
+      N(y ? v : x), j(y)
     }
   });
   return null == v || y ? (0, r.jsxs)("div", {
@@ -85,23 +86,23 @@ function f(e) {
       style: I,
       children: (0, r.jsx)(u.Z, {
         rule: C,
-        persistEdit: x
+        persistEdit: b
       })
     }), (0, r.jsx)(l.animated.div, {
       className: g.animatedNewRuleContainer,
       style: E,
-      children: (0, r.jsxs)(s.P3F, {
+      children: (0, r.jsxs)(a.P3F, {
         className: g.addAnotherRuleCardContainer,
         onClick: () => {
           _(t, n)
         },
-        children: [(0, r.jsx)(s.oFk, {
+        children: [(0, r.jsx)(a.oFk, {
           size: "custom",
           width: 20,
           height: 20,
-          color: a.Z.BLUE_345,
+          color: s.Z.BLUE_345,
           className: g.plusIcon
-        }), (0, r.jsx)(s.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-md/semibold",
           color: "text-link",
           children: m.intl.format(m.t.dNjRAQ, {

@@ -1,12 +1,13 @@
 /** Chunk was on 8106 **/
 /** chunk id: 296991, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   k: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk97613 = require("./97613.js"),
   o = require.n(Chunk97613),
   Chunk574981 = require("./574981.js"),
@@ -63,12 +64,12 @@ function I(e) {
     rule: t,
     rulesChannel: n,
     index: l,
-    onChange: s,
+    onChange: a,
     onKeyDown: o,
     onClear: u,
-    onRuleReorder: f,
-    isDropHovered: b,
-    focused: x,
+    onRuleReorder: h,
+    isDropHovered: x,
+    focused: b,
     onFocus: j,
     previewEnabled: _,
     isDragEnabled: C,
@@ -83,7 +84,7 @@ function I(e) {
       index: l
     },
     end: (e, t) => {
-      null == e || t.didDrop() || f(e.rule, null, true)
+      null == e || t.didDrop() || h(e.rule, null, true)
     }
   }), [, D] = (0, d.L)({
     accept: E,
@@ -91,14 +92,14 @@ function I(e) {
       var n;
       let {
         index: r
-      } = e, i = null == (n = I.current) ? true : n.getBoundingClientRect(), a = t.getClientOffset();
-      if (null == i || null == a) return;
-      let s = (i.bottom - i.top) / 2,
-        o = a.y - i.top;
-      r < l && o < s || r > l && o > s || f(e.rule, l, false)
+      } = e, i = null == (n = I.current) ? true : n.getBoundingClientRect(), s = t.getClientOffset();
+      if (null == i || null == s) return;
+      let a = (i.bottom - i.top) / 2,
+        o = s.y - i.top;
+      r < l && o < a || r > l && o > a || h(e.rule, l, false)
     },
     drop: e => {
-      f(e.rule, l, true)
+      h(e.rule, l, true)
     }
   });
   if (i.useLayoutEffect(() => (R(S), Z(D(I)), () => {
@@ -109,25 +110,25 @@ function I(e) {
   let A = "" !== t.value ? t.value : t.id;
   return (0, r.jsx)("div", {
     ref: I,
-    className: a()(y.draggableInputContainer, {
-      [y.dragging]: b
+    className: s()(y.draggableInputContainer, {
+      [y.dragging]: x
     }),
     "data-dnd-name": A,
     children: (0, r.jsxs)("div", {
       className: y.inputWrapper,
       children: [(0, r.jsx)(m.P3F, {
         onMouseDown: () => j(l),
-        children: (0, r.jsx)(h.ZP, {
+        children: (0, r.jsx)(f.ZP, {
           innerClassName: y.rulesTextAreaInput,
           type: g.Ie.RULES_INPUT,
           textValue: T,
           richValue: P,
           channel: n,
           placeholder: O.intl.string(O.t["BRkD4+"]),
-          focused: x,
+          focused: b,
           onChange: (e, n, r) => {
             let i = N ? t.value : n;
-            i.length > v.fn && (i = i.slice(0, v.fn)), n !== i && (n = i, r = (0, p.JM)(i)), s(n), w({
+            i.length > v.fn && (i = i.slice(0, v.fn)), n !== i && (n = i, r = (0, p.JM)(i)), a(n), w({
               textValue: n,
               richValue: r
             })
@@ -169,9 +170,9 @@ function S(e) {
     rules: t,
     setRules: n,
     guild: l,
-    disabled: a
-  } = e, s = l.rulesChannelId, c = l.features.has(_.oNc.PREVIEW_ENABLED), d = (0, u.e7)([f.Z], () => null != s ? f.Z.getChannel(s) : null), g = (0, u.e7)([b.ZP], () => b.ZP.getDefaultChannel(l.id)), [p, h] = i.useState(null), [E, S] = i.useState(null), T = i.useCallback(e => {
-    if (!a && t.length !== v.X2)
+    disabled: s
+  } = e, a = l.rulesChannelId, c = l.features.has(_.oNc.PREVIEW_ENABLED), d = (0, u.e7)([h.Z], () => null != a ? h.Z.getChannel(a) : null), g = (0, u.e7)([x.ZP], () => x.ZP.getDefaultChannel(l.id)), [p, f] = i.useState(null), [E, S] = i.useState(null), T = i.useCallback(e => {
+    if (!s && t.length !== v.X2)
       if (null != e && "" === t[t.length - 1].value) {
         let r = [...t];
         r[t.length - 1] = N(C({}, r[t.length - 1]), {
@@ -181,48 +182,48 @@ function S(e) {
         id: o()(),
         value: null != e ? e : ""
       }]), S(t.length)
-  }, [a, t, n]), P = i.useCallback(() => {
-    a || T(true)
-  }, [T, a]), w = i.useCallback((e, r) => {
-    if (a) return;
+  }, [s, t, n]), P = i.useCallback(() => {
+    s || T(true)
+  }, [T, s]), w = i.useCallback((e, r) => {
+    if (s) return;
     let i = [...t];
     i[r] = N(C({}, i[r]), {
       value: e
     }), n(i)
-  }, [a, t, n]), R = i.useCallback((e, r, i) => {
-    if (a || null == t) return;
+  }, [s, t, n]), R = i.useCallback((e, r, i) => {
+    if (s || null == t) return;
     let l = t.indexOf(e);
     if (null != r && r !== l) {
       let i = [...t];
       i.splice(l, 1), i.splice(r, 0, e), n(i)
     }
-    i ? null !== p && h(null) : r !== p && h(r)
-  }, [a, p, t, n]), Z = t.length === v.X2, D = i.useMemo(() => {
+    i ? null !== p && f(null) : r !== p && f(r)
+  }, [s, p, t, n]), Z = t.length === v.X2, D = i.useMemo(() => {
     let e = Z ? O.intl.formatToPlainString(O.t.tU718P, {
       number: v.X2
     }) : true;
     return [{
       text: O.intl.string(O.t.DXq2oa),
       onClick: () => T(O.intl.string(O.t.XudkSk)),
-      disabled: Z || a,
+      disabled: Z || s,
       tooltipText: e
     }, {
       text: O.intl.string(O.t.nSqTjI),
       onClick: () => T(O.intl.string(O.t.np91jI)),
-      disabled: Z || a,
+      disabled: Z || s,
       tooltipText: e
     }, {
       text: O.intl.string(O.t.AtRxsL),
       onClick: () => T(O.intl.string(O.t.PNIDDA)),
-      disabled: Z || a,
+      disabled: Z || s,
       tooltipText: e
     }, {
       text: O.intl.string(O.t["0K5NJi"]),
       onClick: () => T(O.intl.string(O.t.HolIDw)),
-      disabled: Z || a,
+      disabled: Z || s,
       tooltipText: e
     }]
-  }, [T, a, Z]);
+  }, [T, s, Z]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: y.rulesContainer,
@@ -232,7 +233,7 @@ function S(e) {
         index: i,
         onChange: e => w(e, i),
         onClear: () => (e => {
-          if (a) return;
+          if (s) return;
           let r = [...t.slice(0, e), ...t.slice(e + 1)];
           n(0 === r.length ? [{
             id: o()(),
@@ -244,13 +245,13 @@ function S(e) {
         focused: i === E,
         onFocus: S,
         previewEnabled: null == c || c,
-        isDragEnabled: !a && t.length > 1,
-        disabled: a
+        isDragEnabled: !s && t.length > 1,
+        disabled: s
       }, e.id))
-    }), !Z && (0, r.jsx)(x.A, {
+    }), !Z && (0, r.jsx)(b.A, {
       text: O.intl.string(O.t.Cq5Jub),
       onClick: P,
-      disabled: a
+      disabled: s
     }), (0, r.jsx)(m.X6q, {
       variant: "text-xs/bold",
       color: "text-muted",

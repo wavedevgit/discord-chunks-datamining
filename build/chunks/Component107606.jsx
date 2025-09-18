@@ -1,4 +1,4 @@
-/** Chunk was on 93886 **/
+/** Chunk was on 85991 **/
 /** chunk id: 107606, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -27,13 +27,13 @@ function g() {
     N = Chunk695346.L1.useSetting(),
     E = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme),
     S = N.backgroundGradientPresetId,
-    T = (0, Chunk442837.e7)([Chunk1870.Z], () => Chunk1870.Z.purchases),
-    O = (0, Chunk884697.Ad)(T),
-    P = (0, Chunk884697.jT)(T),
-    k = null == C || null == (e = C.avatarDecoration) ? true : module.skuId,
+    O = (0, Chunk442837.e7)([Chunk1870.Z], () => Chunk1870.Z.purchases),
+    T = (0, Chunk884697.Ad)(O),
+    k = (0, Chunk884697.jT)(O),
+    P = null == C || null == (e = C.avatarDecoration) ? true : module.skuId,
     R = null == C || null == (n = C.collectibles) || null == (t = require.nameplate) ? true : exports.skuId,
-    w = null != k && null != (v = O.find(e => e.skuId === k)) ? v : null,
-    I = null != R && null != (j = P.find(e => e.skuId === R)) ? j : null,
+    w = null != P && null != (v = T.find(e => e.skuId === P)) ? v : null,
+    I = null != R && null != (j = k.find(e => e.skuId === R)) ? j : null,
     Z = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == w ? true : w.skuId)),
     A = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == I ? true : I.skuId)),
     D = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.fontSize),
@@ -90,13 +90,13 @@ function g() {
         variant: "text-md/normal",
         children: ["UI Density: ", M, " (", function(e) {
           switch (e) {
-            case l.Pi.COMPACT:
+            case i.Pi.COMPACT:
               return "Compact";
-            case l.Pi.COZY:
+            case i.Pi.COZY:
               return "Cozy";
-            case l.Pi.DEFAULT:
+            case i.Pi.DEFAULT:
               return "Default";
-            case l.Pi.RESPONSIVE:
+            case i.Pi.RESPONSIVE:
               return "Responsive";
             default:
               return "Unknown"

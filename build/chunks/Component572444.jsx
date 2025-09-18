@@ -1,4 +1,4 @@
-/** Chunk was on 93886 **/
+/** Chunk was on 85991 **/
 /** chunk id: 572444, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk345959 = require("./345959.js"),
-  i = require.n(Chunk345959),
+  l = require.n(Chunk345959),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -52,7 +52,7 @@ function j(e) {
     recording: t,
     playing: n,
     onPlay: r,
-    onStop: l
+    onStop: i
   } = e;
   return (0, a.jsx)(c.zF9, {
     collapsibleContent: (0, a.jsx)(v, {
@@ -71,7 +71,7 @@ function j(e) {
         }), (0, a.jsx)(c.P3F, {
           tag: "span",
           onClick: e => {
-            e.stopPropagation(), n ? l() : r(t)
+            e.stopPropagation(), n ? i() : r(t)
           },
           children: n ? (0, a.jsx)(c.fpf, {
             size: "xxs"
@@ -82,7 +82,7 @@ function j(e) {
           tag: "span",
           onClick: e => {
             e.stopPropagation();
-            let n = new Blob([i()(t.audioBuffer)], {
+            let n = new Blob([l()(t.audioBuffer)], {
                 type: "audio/wav"
               }),
               a = URL.createObjectURL(n),
@@ -101,11 +101,11 @@ function j(e) {
 function _() {
   let {
     name: e
-  } = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT), [t, n] = Chunk647438.useState(false), [l, i] = Chunk647438.useState([]), v = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getKrispSuppressionLevel()), [_, y] = Chunk647438.useState(null), C = Chunk647438.useRef(null), N = Chunk647438.useRef(null), [E, S] = Chunk647438.useState(.5), {
-    krispModels: T,
-    krispModelOverride: O,
-    inputMode: P,
-    echoCancellation: k,
+  } = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT), [t, n] = Chunk647438.useState(false), [i, l] = Chunk647438.useState([]), v = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getKrispSuppressionLevel()), [_, y] = Chunk647438.useState(null), C = Chunk647438.useRef(null), N = Chunk647438.useRef(null), [E, S] = Chunk647438.useState(.5), {
+    krispModels: O,
+    krispModelOverride: T,
+    inputMode: k,
+    echoCancellation: P,
     autoThreshold: R,
     vadUseKrisp: w,
     vadKrispActivationThreshold: I,
@@ -197,8 +197,8 @@ function _() {
             clear: () => {
               Chunk846027.Z.setKrispModelOverride("")
             },
-            isSelected: e => e === O,
-            options: T.map(e => ({
+            isSelected: e => e === T,
+            options: O.map(e => ({
               label: e,
               value: e
             })),
@@ -217,7 +217,7 @@ function _() {
             children: "Enable Stats"
           })
         })]
-      }), P === Chunk65154.pM.VOICE_ACTIVITY && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      }), k === Chunk65154.pM.VOICE_ACTIVITY && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk481060.hjN, {
           title: "VAD Auto Threshold",
           tag: Chunk481060.RB0.H3,
@@ -258,7 +258,7 @@ function _() {
         tag: Chunk481060.RB0.H3,
         children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
           hideBorder: true,
-          value: k,
+          value: P,
           onChange: e => d.Z.setEchoCancellation(e),
           children: "Echo Cancellation"
         })
@@ -270,7 +270,7 @@ function _() {
           onClick: exports ? z : function() {
             G(), require(true), Chunk846027.Z.setLoopback("krisp_test", true), Chunk131951.Z.getMediaEngine().startRecordingRawSamples((t, a, r) => {
               n(false), d.Z.setLoopback("krisp_test", false);
-              let l = new AudioBuffer({
+              let i = new AudioBuffer({
                 length: t.length,
                 sampleRate: r,
                 numberOfChannels: a
@@ -278,14 +278,14 @@ function _() {
               for (let e = 0; e < a; e++) {
                 let n = new Float32Array(t.length / a);
                 for (let r = 0; r < t.length / a; r++) n[r] = t[r * a + e] / 32768;
-                l.copyToChannel(n, e)
+                i.copyToChannel(n, e)
               }
-              i(t => [...t, {
+              l(t => [...t, {
                 inputName: e,
-                audioBuffer: l,
+                audioBuffer: i,
                 createdAt: Date.now(),
                 suppression: U,
-                echoCancellation: k,
+                echoCancellation: P,
                 krispSuppressionLevel: v
               }])
             })

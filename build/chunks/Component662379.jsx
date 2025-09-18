@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 662379, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => m
 }), require("./953529.js");
@@ -19,16 +20,16 @@ function u(e) {
     description: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: s.howItWorksCard,
+    className: a.howItWorksCard,
     children: [(0, r.jsx)("div", {
-      className: s.howItWorksImageContainer,
+      className: a.howItWorksImageContainer,
       children: (0, r.jsx)("img", {
-        className: s.howItWorksImage,
+        className: a.howItWorksImage,
         src: t,
         alt: ""
       })
     }), (0, r.jsx)("div", {
-      className: s.howItWorksDescription,
+      className: a.howItWorksDescription,
       children: (0, r.jsx)(i.Text, {
         variant: "text-sm/normal",
         color: "header-primary",

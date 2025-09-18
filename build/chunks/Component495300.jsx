@@ -1,12 +1,13 @@
 /** Chunk was on 8106 **/
 /** chunk id: 495300, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => Z
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk755721 = require("./755721.js"),
@@ -45,13 +46,13 @@ function D(e) {
   let t, {
       guildId: n
     } = e,
-    l = (0, s.e7)([_.Z], () => _.Z.getCurrentPage()),
-    h = (0, s.e7)([_.Z], () => {
+    l = (0, a.e7)([_.Z], () => _.Z.getCurrentPage()),
+    f = (0, a.e7)([_.Z], () => {
       let e = (0, O.lg)(l);
       return null != e && !_.Z.isEducationUpsellDismissed(e)
     }),
     v = (0, y.Z)(n),
-    Z = !v && h;
+    Z = !v && f;
   switch (i.useEffect(() => {
       (0, m.Q3)(o.z.COMMUNITY_ONBOARDING_NEW_BADGE)
     }, []), l) {
@@ -86,11 +87,11 @@ function D(e) {
       })
   }
   return (0, r.jsxs)("div", {
-    className: a()(R.onboardingContainer, {
+    className: s()(R.onboardingContainer, {
       [R.upsellOnTop]: Z
     }),
     children: [!v && l !== O.PG.LANDING && (0, r.jsx)(A, {
-      setOnboardingStep: b.$K,
+      setOnboardingStep: x.$K,
       page: l,
       homeSettingsEnabled: true
     }), v && l !== O.PG.LANDING && (0, r.jsx)("div", {
@@ -105,7 +106,7 @@ function D(e) {
               intensity: u.$x
             }), p.S.dispatch(P.CkL.EMPHASIZE_NOTICE);
             return
-          }(0, j.NB)(), (0, f.BG)(), (0, x.bj)(), (0, b.$K)(O.PG.LANDING)
+          }(0, j.NB)(), (0, h.BG)(), (0, b.bj)(), (0, x.$K)(O.PG.LANDING)
         },
         children: [(0, r.jsx)(g.Z, {
           className: R.arrow,
@@ -127,16 +128,16 @@ function A(e) {
     page: t,
     setOnboardingStep: n,
     homeSettingsEnabled: i
-  } = e, l = (0, s.e7)([_.Z], () => _.Z.hasErrors()), o = e => {
+  } = e, l = (0, a.e7)([_.Z], () => _.Z.hasErrors()), o = e => {
     if (!l) return () => n(e)
-  }, c = (0, s.e7)([v.Z], () => v.Z.advancedMode);
+  }, c = (0, a.e7)([v.Z], () => v.Z.advancedMode);
   return (0, r.jsxs)("div", {
     className: R.progressContainer,
     children: [(0, r.jsxs)(d.P3F, {
-      className: a()(R.progressBarContainer, R.clickableProgressBar),
+      className: s()(R.progressBarContainer, R.clickableProgressBar),
       onClick: o(O.PG.SAFETY_CHECK),
       children: [(0, r.jsx)("div", {
-        className: a()(R.progressBar, {
+        className: s()(R.progressBar, {
           [R.progressBarCurrent]: t === O.PG.SAFETY_CHECK
         })
       }), (0, r.jsx)(d.Text, {
@@ -147,10 +148,10 @@ function A(e) {
         })
       })]
     }), (0, r.jsxs)(d.P3F, {
-      className: a()(R.progressBarContainer, R.clickableProgressBar),
+      className: s()(R.progressBarContainer, R.clickableProgressBar),
       onClick: o(O.PG.DEFAULT_CHANNELS),
       children: [(0, r.jsx)("div", {
-        className: a()(R.progressBar, {
+        className: s()(R.progressBar, {
           [R.progressBarCurrent]: t === O.PG.DEFAULT_CHANNELS
         })
       }), (0, r.jsx)(d.Text, {
@@ -163,10 +164,10 @@ function A(e) {
         })
       })]
     }), (0, r.jsxs)(d.P3F, {
-      className: a()(R.progressBarContainer, R.clickableProgressBar),
+      className: s()(R.progressBarContainer, R.clickableProgressBar),
       onClick: o(O.PG.CUSTOMIZATION_QUESTIONS),
       children: [(0, r.jsx)("div", {
-        className: a()(R.progressBar, {
+        className: s()(R.progressBar, {
           [R.progressBarCurrent]: t === O.PG.CUSTOMIZATION_QUESTIONS
         })
       }), (0, r.jsx)(d.Text, {
@@ -179,10 +180,10 @@ function A(e) {
         })
       })]
     }), i && (0, r.jsxs)(d.P3F, {
-      className: a()(R.progressBarContainer, R.clickableProgressBar),
+      className: s()(R.progressBarContainer, R.clickableProgressBar),
       onClick: o(O.PG.HOME_SETTINGS),
       children: [(0, r.jsx)("div", {
-        className: a()(R.progressBar, {
+        className: s()(R.progressBar, {
           [R.progressBarCurrent]: t === O.PG.HOME_SETTINGS
         })
       }), (0, r.jsx)(d.Text, {
@@ -195,7 +196,7 @@ function A(e) {
     }), (0, r.jsxs)("div", {
       className: R.progressBarContainer,
       children: [(0, r.jsx)("div", {
-        className: a()(R.progressBar, {
+        className: s()(R.progressBar, {
           [R.progressBarCurrent]: t === O.PG.REVIEW
         })
       }), (0, r.jsx)(d.Text, {

@@ -23,9 +23,10 @@ function o() {
   })
 }
 
-function s() {
+function s(e) {
   a({
-    displayTools: true
+    displayTools: true,
+    lastOpenTabId: e
   })
 }
 

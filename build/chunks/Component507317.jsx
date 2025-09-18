@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 507317, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => j
 });
@@ -58,11 +59,11 @@ let j = function(e) {
             homeHeader: n
           })
         },
-        uploadType: h.pC.HOME_HEADER
+        uploadType: f.pC.HOME_HEADER
       }, n))
     })
   }, [t.id]), _ = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), (0, a.yw)(g.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
+    e.preventDefault(), e.stopPropagation(), (0, s.yw)(g.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
       location: {
         section: g.jXE.GUILD_SETTINGS_ONBOARDING,
         object: g.qAy.LEARN_MORE
@@ -87,37 +88,37 @@ let j = function(e) {
     }) : null,
     disabled: !j,
     onChange: v,
-    hint: b.intl.string(b.t.NyXznp),
+    hint: x.intl.string(x.t.NyXznp),
     enabled: j,
-    maxFileSizeBytes: f.B
+    maxFileSizeBytes: h.B
   });
   return j ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: x.sectionHeader,
+      className: b.sectionHeader,
       children: [(0, r.jsx)(l.X6q, {
-        className: x.header,
+        className: b.header,
         variant: "heading-lg/extrabold",
-        children: b.intl.string(b.t.BBj1nZ)
-      }), (0, r.jsx)(s.Z, {
-        className: x.boostIndicator,
+        children: x.intl.string(x.t.BBj1nZ)
+      }), (0, r.jsx)(a.Z, {
+        className: b.boostIndicator,
         guild: t,
         guildFeature: g.oNc.BANNER,
         onClick: _
       })]
     }), (0, r.jsxs)("div", {
-      className: x.section,
+      className: b.section,
       children: [(0, r.jsxs)("div", {
-        className: x.homeBannerExplainer,
+        className: b.homeBannerExplainer,
         children: [(0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: b.intl.string(b.t.Vwintr)
+          children: x.intl.string(x.t.Vwintr)
         }), (0, r.jsx)("div", {
-          className: x.uploadButton,
+          className: b.uploadButton,
           children: (0, r.jsx)(d.Z, {
             onChange: v,
-            maxFileSizeBytes: f.B,
-            text: b.intl.string(b.t.yG2pUl),
+            maxFileSizeBytes: h.B,
+            text: x.intl.string(x.t.yG2pUl),
             size: "md",
             variant: "primary"
           })
@@ -128,30 +129,30 @@ let j = function(e) {
     })]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: x.sectionHeader,
+      className: b.sectionHeader,
       children: [(0, r.jsx)(l.X6q, {
-        className: x.header,
+        className: b.header,
         variant: "heading-lg/extrabold",
-        children: b.intl.string(b.t.BBj1nZ)
-      }), (0, r.jsx)(s.Z, {
-        className: x.boostIndicator,
+        children: x.intl.string(x.t.BBj1nZ)
+      }), (0, r.jsx)(a.Z, {
+        className: b.boostIndicator,
         guild: t,
         guildFeature: g.oNc.BANNER,
         onClick: _
       })]
     }), (0, r.jsxs)("div", {
-      className: x.section,
+      className: b.section,
       children: [(0, r.jsxs)("div", {
-        className: x.homeBannerExplainer,
+        className: b.homeBannerExplainer,
         children: [(0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          className: x.bannerDescription,
-          children: b.intl.string(b.t.Vwintr)
+          className: b.bannerDescription,
+          children: x.intl.string(x.t.Vwintr)
         }), (0, r.jsx)(l.zxk, {
           variant: "expressive",
           icon: l.$Eu,
-          text: b.intl.string(b.t["+7XY39"]),
+          text: x.intl.string(x.t["+7XY39"]),
           onClick: _
         })]
       }), (0, r.jsx)("div", {

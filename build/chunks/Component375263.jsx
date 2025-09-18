@@ -1,7 +1,8 @@
 /** Chunk was on 8106 **/
 /** chunk id: 375263, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  O: () => f
+  O: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,13 +18,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk278355 = require("./278355.js");
 
-function f(e) {
+function h(e) {
   let {
     guild: t,
     canManageGuild: n
-  } = e, f = t.features.has(d.oNc.BANNER), b = t.features.has(d.oNc.ANIMATED_BANNER), x = f && n, {
+  } = e, h = t.features.has(d.oNc.BANNER), x = t.features.has(d.oNc.ANIMATED_BANNER), b = h && n, {
     analyticsLocations: j
-  } = (0, a.ZP)(), v = i.useCallback((e, n) => {
+  } = (0, s.ZP)(), v = i.useCallback((e, n) => {
     (0, c.f4)(t, j, e, n)
   }, [j, t]), _ = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, c.E6)({
@@ -33,13 +34,13 @@ function f(e) {
       analyticsObject: d.qAy.UPLOAD_IMAGE,
       perks: (0, u.XO)()
     })
-  }, [j, t]), O = (0, r.jsx)(s.Z, {
+  }, [j, t]), O = (0, r.jsx)(a.Z, {
     image: t.banner,
     makeURL: e => null != e ? o.ZP.getGuildBannerURL({
       id: t.id,
       banner: e
-    }, b) : null,
-    disabled: !x,
+    }, x) : null,
+    disabled: !b,
     onChange: v,
     hint: p.intl.string(p.t.uPvxqK),
     onOpenImageSelectModal: () => (0, c.mw)({
@@ -58,12 +59,12 @@ function f(e) {
       },
       analyticsLocations: j
     }),
-    enabled: x
+    enabled: b
   });
-  return f ? O : (0, r.jsx)(l.P3F, {
+  return h ? O : (0, r.jsx)(l.P3F, {
     "aria-hidden": true,
     tabIndex: false,
-    className: h.upsell,
+    className: f.upsell,
     onClick: _,
     children: O
   })

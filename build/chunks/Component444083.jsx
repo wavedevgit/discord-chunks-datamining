@@ -1,7 +1,7 @@
 /** Chunk was on 85683 **/
 /** chunk id: 444083, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk401561 = require("./401561.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk587983 = require("./587983.js");
-let p = {
+let m = {
   steps: {
     [Chunk473682.Vb.SERVER_SETTINGS]: {
       onBack: {
@@ -26,44 +26,44 @@ let p = {
   }
 };
 
-function g(e) {
+function f(e) {
   let {
     guildId: t,
     instance: n
-  } = e, c = i.useRef(null);
-  return (0, r.jsx)(a.yRy, {
-    targetElementRef: c,
+  } = e, l = a.useRef(null);
+  return (0, r.jsx)(i.yRy, {
+    targetElementRef: l,
     align: "top",
     position: "right",
     animationPosition: "bottom",
     disablePointerEvents: false,
     renderPopout: e => {
       let {
-        closePopout: i
+        closePopout: a
       } = e;
-      return (0, r.jsx)(a.v2r, {
+      return (0, r.jsx)(i.v2r, {
         navId: "portkey-popout-context-menu",
         onClose: () => {
-          (0, o.Zy)(), i()
+          (0, s.Zy)(), a()
         },
-        "aria-label": u.intl.string(d.default.xCq1DA),
+        "aria-label": d.intl.string(u.default.xCq1DA),
         onSelect: true,
-        children: (0, r.jsxs)(a.kSQ, {
-          children: [(0, r.jsx)(a.sNh, {
+        children: (0, r.jsxs)(i.kSQ, {
+          children: [(0, r.jsx)(i.sNh, {
             id: "get-support",
-            icon: a.kBi,
-            label: u.intl.string(d.default["TciV8/"]),
+            icon: i.kBi,
+            label: d.intl.string(u.default["TciV8/"]),
             action: () => {}
-          }), (0, r.jsx)(a.sNh, {
+          }), (0, r.jsx)(i.sNh, {
             id: "settings",
-            icon: a.ewm,
-            label: u.intl.string(d.default.NUTl4u),
+            icon: i.ewm,
+            label: d.intl.string(u.default.NUTl4u),
             action: () => {
-              (0, l.Z)({
+              (0, o.Z)({
                 guildId: t,
-                stepConfig: p,
+                stepConfig: m,
                 initialPortkeyInstance: n,
-                analyticsLocation: s.Z.PORTKEY_OVERVIEW
+                analyticsLocation: c.Z.PORTKEY_OVERVIEW
               })
             }
           })]
@@ -72,7 +72,7 @@ function g(e) {
     },
     children: e => {
       var t, n;
-      return (0, r.jsx)(a.P3F, (t = function(e) {
+      return (0, r.jsx)(i.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -90,11 +90,11 @@ function g(e) {
         }
         return e
       }({
-        "aria-label": u.intl.string(u.t.UKOtz8),
-        className: m.clickable
+        "aria-label": d.intl.string(d.t.UKOtz8),
+        className: b.clickable
       }, e), n = n = {
-        innerRef: c,
-        children: (0, r.jsx)(a.xhG, {
+        innerRef: l,
+        children: (0, r.jsx)(i.xhG, {
           color: "currentColor",
           size: "sm"
         })

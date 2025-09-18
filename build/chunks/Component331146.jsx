@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 331146, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   E: () => g
 });
@@ -19,7 +20,7 @@ function m(e) {
     emoji: t,
     onRemoveEmoji: n,
     disabled: i = false
-  } = e, o = s.ZP.getEmojiURL({
+  } = e, o = a.ZP.getEmojiURL({
     id: t.id,
     animated: t.animated,
     size: 32
@@ -32,16 +33,16 @@ function m(e) {
       className: u.emojiImage,
       src: o,
       alt: t.name
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(s.Text, {
       color: "header-primary",
       variant: "text-md/medium",
       className: u.emojiAlias,
       children: t.name
     }), (0, r.jsx)("div", {
       className: u.deleteButton,
-      children: (0, r.jsx)(a.hU, {
+      children: (0, r.jsx)(s.hU, {
         variant: "secondary",
-        icon: a.XHJ,
+        icon: s.XHJ,
         onClick: () => n(t),
         "aria-label": d.intl.string(d.t.dVS92d),
         disabled: i
@@ -55,13 +56,13 @@ function g(e) {
     tierEmojiIds: t,
     guildId: n,
     onRemoveEmoji: i
-  } = e, l = (0, c.Z)(n), a = null != t ? l.filter(e => t.has(e.id)) : [], s = (0, o.mY)();
+  } = e, l = (0, c.Z)(n), s = null != t ? l.filter(e => t.has(e.id)) : [], a = (0, o.mY)();
   return (0, r.jsx)("div", {
     className: u.container,
-    children: a.map(e => (0, r.jsx)(m, {
+    children: s.map(e => (0, r.jsx)(m, {
       emoji: e,
       onRemoveEmoji: () => i(e),
-      disabled: s
+      disabled: a
     }, e.id))
   })
 }

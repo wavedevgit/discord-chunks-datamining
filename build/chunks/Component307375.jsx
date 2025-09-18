@@ -1,12 +1,13 @@
 /** Chunk was on 8106 **/
 /** chunk id: 307375, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  h: () => h
+  h: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk496675 = require("./496675.js"),
@@ -16,14 +17,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk140367 = require("./140367.js");
 
-function h(e) {
+function f(e) {
   let {
     activeType: t,
     onTypePicked: n,
     guild: l
-  } = e, h = l.features.has(m.oNc.COMMUNITY), f = (0, s.e7)([c.Z], () => c.Z.can(m.Plq.ADMINISTRATOR, l)), b = i.useMemo(() => {
-    let e = t === u.A.DISCOVERABLE && !f,
-      n = h && (t === u.A.DISCOVERABLE || f);
+  } = e, f = l.features.has(m.oNc.COMMUNITY), h = (0, a.e7)([c.Z], () => c.Z.can(m.Plq.ADMINISTRATOR, l)), x = i.useMemo(() => {
+    let e = t === u.A.DISCOVERABLE && !h,
+      n = f && (t === u.A.DISCOVERABLE || h);
     return [{
       id: u.A.INVITE,
       title: g.intl.string(g.t["HQVS/P"]),
@@ -44,9 +45,9 @@ function h(e) {
       body: g.intl.string(g.t.pqQylZ),
       icon: o.enf,
       enabled: n,
-      ineligibleText: h ? g.intl.string(g.t.iBpXPj) : g.intl.string(g.t["5TQ+eH"])
+      ineligibleText: f ? g.intl.string(g.t.iBpXPj) : g.intl.string(g.t["5TQ+eH"])
     }]
-  }, [t, h, f]);
+  }, [t, f, h]);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(o.X6q, {
       color: "header-primary",
@@ -64,7 +65,7 @@ function h(e) {
       onItemSelect: n,
       orientation: "horizontal",
       className: p.joinOptions,
-      children: b.map(e => {
+      children: x.map(e => {
         let n = e.id === t;
         return (0, r.jsx)(o.njP.Item, {
           id: e.id,
@@ -82,7 +83,7 @@ function h(e) {
             className: p.tooltipContainer,
             tooltipClassName: p.tooltip,
             children: (0, r.jsxs)("div", {
-              className: a()(p.joinOptionContent, {
+              className: s()(p.joinOptionContent, {
                 [p.active]: n,
                 [p.uninteractive]: !e.enabled
               }),

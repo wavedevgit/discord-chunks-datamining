@@ -30,9 +30,9 @@ function l(e) {
   }
   return e
 }
-let c = 360,
+let c = 420,
   u = {
-    sidebarWidth: 360,
+    sidebarWidth: 420,
     lastOpenTabId: null,
     displayTools: false,
     showDevWidget: false,

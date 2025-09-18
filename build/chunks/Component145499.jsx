@@ -1,12 +1,13 @@
 /** Chunk was on 8106 **/
 /** chunk id: 145499, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => D
 }), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -55,16 +56,16 @@ let w = e => {
       currentGuildTier: n,
       guildStickers: i,
       tier: l
-    } = e, a = n < l, s = (0, v.ig)(l);
+    } = e, s = n < l, a = (0, v.ig)(l);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(c.X6q, {
         color: "header-primary",
         variant: "heading-md/semibold",
         children: t
-      }), !a && (0, r.jsx)(c.Text, {
+      }), !s && (0, r.jsx)(c.Text, {
         variant: "text-xs/normal",
         children: S.intl.format(S.t.ZLoNtr, {
-          numTotal: s,
+          numTotal: a,
           numAvailable: (0, v.Qi)(i, l)
         })
       })]
@@ -85,7 +86,7 @@ let w = e => {
       location: i
     } = (0, u.O)(), {
       canCreateExpressions: l
-    } = (0, h.XJ)(t);
+    } = (0, f.XJ)(t);
     return (0, r.jsx)(c.zxk, {
       variant: "primary",
       size: "sm",
@@ -118,12 +119,12 @@ let w = e => {
       guild: t
     } = e, {
       isLoading: l
-    } = (0, O.Z)(t.id), u = (0, s.e7)([_.Z], () => {
+    } = (0, O.Z)(t.id), u = (0, a.e7)([_.Z], () => {
       var e;
       return null != (e = _.Z.getStickersByGuildId(t.id)) ? e : []
     }, [t]), {
       analyticsLocations: j
-    } = (0, m.ZP)(), D = (0, b.Z)(t.id), A = t.features.has(E.oNc.MORE_STICKERS) ? E.Eu4.TIER_3 : t.premiumTier, L = t.features.has(E.oNc.MORE_STICKERS) ? E.oCV[E.Eu4.TIER_3] : D, k = (0, x.Z)(t.id);
+    } = (0, m.ZP)(), D = (0, x.Z)(t.id), A = t.features.has(E.oNc.MORE_STICKERS) ? E.Eu4.TIER_3 : t.premiumTier, L = t.features.has(E.oNc.MORE_STICKERS) ? E.oCV[E.Eu4.TIER_3] : D, k = (0, b.Z)(t.id);
     if (i.useEffect(() => {
         window.dispatchEvent(new Event("resize"))
       }, [u]), l) return (0, r.jsx)(c.$jN, {});
@@ -164,26 +165,26 @@ let w = e => {
       tiers: M,
       renderTier: e => {
         var i;
-        let l, s, {
+        let l, a, {
             isAnimatedTo: m,
-            onSetRef: b,
-            tier: x,
+            onSetRef: x,
+            tier: b,
             tiers: _,
             tierIndex: O
           } = e,
           {
             canCreateExpressions: C,
             canManageGuildExpression: w
-          } = (0, h.Gw)(t),
+          } = (0, f.Gw)(t),
           M = _[O - 1],
           G = null != M ? (0, v.A3)(M.tier) : 0,
-          U = (0, v.A3)(x.tier, t),
-          B = (0, v.ig)(x.tier),
+          U = (0, v.A3)(b.tier, t),
+          B = (0, v.ig)(b.tier),
           F = u.slice(G, U),
           H = F.length > 0,
-          z = A < x.tier,
+          z = A < b.tier,
           V = (i = u.length, i < (0, v.A3)(E.Eu4.NONE) ? E.Eu4.NONE : i < (0, v.A3)(E.Eu4.TIER_1) ? E.Eu4.TIER_1 : i < (0, v.A3)(E.Eu4.TIER_2) ? E.Eu4.TIER_2 : i < (0, v.A3)(E.Eu4.TIER_3) || null != t && t.features.has(E.oNc.MORE_STICKERS) && i < d.D.MAX_STICKER_SLOTS ? E.Eu4.TIER_3 : E.Eu4.NONE),
-          W = C && !z && V === x.tier && U !== F.length,
+          W = C && !z && V === b.tier && U !== F.length,
           K = W || F.length > 0,
           Y = U - G,
           q = n(872732),
@@ -191,12 +192,12 @@ let w = e => {
           Q = W ? Math.min(5 - (F.length + 0) % 5, X) : 0,
           J = [];
         for (let e = 0; e < Q; e++) J.push((0, r.jsx)(R, {}, "placeholder-".concat(e)));
-        let $ = t.premiumTier < x.tier && D >= E.oCV[x.tier],
+        let $ = t.premiumTier < b.tier && D >= E.oCV[b.tier],
           ee = S.intl.string(S.t.dtFw5e),
           et = () => {
             var e, n;
             let r;
-            return e = Math.max(1, E.oCV[x.tier] - D), n = x.tier, r = null, void(n === E.Eu4.TIER_1 ? r = E.Qqv.TIER_1 : n === E.Eu4.TIER_2 ? r = E.Qqv.TIER_2 : n === E.Eu4.TIER_3 && (r = E.Qqv.TIER_3), (0, p.Z)({
+            return e = Math.max(1, E.oCV[b.tier] - D), n = b.tier, r = null, void(n === E.Eu4.TIER_1 ? r = E.Qqv.TIER_1 : n === E.Eu4.TIER_2 ? r = E.Qqv.TIER_2 : n === E.Eu4.TIER_3 && (r = E.Qqv.TIER_3), (0, p.Z)({
               analyticsLocations: j,
               analyticsLocation: {
                 page: E.ZY5.GUILD_SETTINGS,
@@ -210,12 +211,12 @@ let w = e => {
           },
           en = false;
         $ && (k ? (et = () => {
-          let e = I.Cp[x.tier];
-          null != e && (0, f.H6)(t.id, e)
-        }, ee = S.intl.string(S.t.g7lkra), t.premiumTier + 1 !== x.tier && (en = true, l = S.intl.string(S.t.mTMkY2))) : (en = true, l = S.intl.string(S.t.hwPEJS)));
+          let e = I.Cp[b.tier];
+          null != e && (0, h.H6)(t.id, e)
+        }, ee = S.intl.string(S.t.g7lkra), t.premiumTier + 1 !== b.tier && (en = true, l = S.intl.string(S.t.mTMkY2))) : (en = true, l = S.intl.string(S.t.hwPEJS)));
         let er = V === O + 1 && V > A,
           ei = W || er || O > A;
-        return er ? s = (0, r.jsx)(g.Z, {
+        return er ? a = (0, r.jsx)(g.Z, {
           guild: t,
           size: o.zx.Sizes.SMALL,
           color: o.zx.Colors.GREEN,
@@ -225,18 +226,18 @@ let w = e => {
             page: E.ZY5.GUILD_SETTINGS,
             section: E.jXE.GUILD_SETTINGS_STICKERS,
             object: E.qAy.BOOST_UPSELL_NEXT_LEVEL_HEADER,
-            objectType: (0, v.ge)(x.tier)
+            objectType: (0, v.ge)(b.tier)
           }
-        }) : W && (s = (0, r.jsx)(Z, {
+        }) : W && (a = (0, r.jsx)(Z, {
           guild: t
         })), (0, r.jsxs)(N.Z, {
           subscriptionCount: L,
-          tier: x,
-          onSetRef: b,
+          tier: b,
+          onSetRef: x,
           isAnimatedTo: m,
           hasBottomMargin: O !== _.length - 1,
           withCardBody: !K,
-          headerButton: s,
+          headerButton: a,
           showHeaderLockStatus: ei,
           guildId: t.id,
           children: [K && (0, r.jsxs)("div", {
@@ -247,7 +248,7 @@ let w = e => {
               canManageSticker: w(e)
             }, e.id)), J]
           }), !z && !W && 0 === F.length && (0, r.jsx)("div", {
-            className: a()(T.emptyTierWrapper, T.unusedTierWrapper),
+            className: s()(T.emptyTierWrapper, T.unusedTierWrapper),
             children: (0, r.jsx)(c.Text, {
               variant: "text-md/normal",
               color: "header-secondary",
@@ -263,7 +264,7 @@ let w = e => {
               className: T.unlockTierCtaHeading,
               variant: "text-md/normal",
               color: "header-secondary",
-              children: x.tier === E.Eu4.TIER_1 ? S.intl.formatToPlainString(S.t.psMYu7, {
+              children: b.tier === E.Eu4.TIER_1 ? S.intl.formatToPlainString(S.t.psMYu7, {
                 numAdditional: Y
               }) : S.intl.formatToPlainString(S.t.bLykER, {
                 numAdditional: Y,
@@ -294,7 +295,7 @@ let w = e => {
               }
             })]
           })]
-        }, x.tier)
+        }, b.tier)
       }
     })
   }

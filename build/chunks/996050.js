@@ -1,7 +1,7 @@
-/** Chunk was on 46290 **/
+/** Chunk was on 50751 **/
 /** chunk id: 996050, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => u
 });
 var Chunk224706 = require("./224706.js"),
   Chunk13245 = require("./13245.js"),
@@ -10,10 +10,10 @@ var Chunk224706 = require("./224706.js"),
   Chunk987650 = require("./987650.js"),
   Chunk388032 = require("./388032.jsx");
 
-function c(e, t, n, c, u) {
-  if (null == t.activity || null == c.id) return null;
+function u(e, t, n, u, c) {
+  if (null == t.activity || null == u.id) return null;
   let d = t.activity.type,
-    p = u.session_id;
+    p = c.session_id;
   if (null == p) return null;
   let {
     icon: h,
@@ -31,7 +31,7 @@ function c(e, t, n, c, u) {
     channel_id: e.id,
     channel_type: e.type,
     activity_type: d,
-    activity_name: u.name
+    activity_name: c.name
   });
   return {
     icon: h,
@@ -46,7 +46,7 @@ function c(e, t, n, c, u) {
       i.Z.join({
         userId: n.id,
         sessionId: p,
-        applicationId: null != (a = c.altId) ? a : c.id,
+        applicationId: null != (a = u.altId) ? a : u.id,
         channelId: e.id,
         messageId: t.id
       }), r.Z.updateNotificationStatus(o), y("join")

@@ -1,12 +1,13 @@
 /** Chunk was on 8106 **/
 /** chunk id: 981975, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => R
 }), require("./388685.js"), require("./539854.js"), require("./472816.js"), require("./794429.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -71,7 +72,7 @@ function w(e) {
       color: "header-secondary",
       className: E.headerNoConfigSubtitle,
       children: N.intl.format(N.t.q5f7tL, {
-        helpdeskArticleUrl: h.Z.getArticleURL(y.BhN.CONNECTION_DETAILS_ADMIN)
+        helpdeskArticleUrl: f.Z.getArticleURL(y.BhN.CONNECTION_DETAILS_ADMIN)
       })
     }), (0, r.jsx)(u.zxk, {
       disabled: n,
@@ -88,7 +89,7 @@ function R(e) {
     guild: t,
     role: n,
     locked: l,
-    setSelectedSection: s,
+    setSelectedSection: a,
     integrations: o
   } = e, {
     headerHeight: p,
@@ -96,12 +97,12 @@ function R(e) {
   } = (0, j.Z)(0), {
     scrolledToTop: Z,
     handleScroll: D
-  } = (0, _.V)(), A = (0, c.e7)([f.Z], () => {
+  } = (0, _.V)(), A = (0, c.e7)([h.Z], () => {
     var e;
-    return null == (e = f.Z.getRoleMemberCount(t.id)) ? true : e[n.id]
-  }, [n.id, t.id]), L = (0, c.Wu)([x.Z], () => {
+    return null == (e = h.Z.getRoleMemberCount(t.id)) ? true : e[n.id]
+  }, [n.id, t.id]), L = (0, c.Wu)([b.Z], () => {
     var e;
-    return null != (e = x.Z.getEditedRoleConnectionConfigurationsMap().get(n.id)) ? e : []
+    return null != (e = b.Z.getEditedRoleConnectionConfigurationsMap().get(n.id)) ? e : []
   }), k = L.length > 1 ? g.O1.OR : g.O1.AND, M = i.useMemo(() => k === g.O1.OR ? L.flat() : null != L && L.length > 0 ? L[0] : [], [k, L]), G = i.useMemo(() => new Set(M.map(e => e.connectionType)), [M]);
 
   function U(e) {
@@ -113,7 +114,7 @@ function R(e) {
       applicationId: t,
       operator: true,
       value: true
-    }), (0, b.d_)(n.id, P(r, k))
+    }), (0, x.d_)(n.id, P(r, k))
   }
 
   function B() {
@@ -141,7 +142,7 @@ function R(e) {
       fullWidth: true,
       variant: "secondary"
     })), F = (0, r.jsxs)(r.Fragment, {
-      children: [(H = () => (0, b.d_)(n.id, []), (0, r.jsxs)(r.Fragment, {
+      children: [(H = () => (0, x.d_)(n.id, []), (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
           className: E.headerTitleContainer,
           children: [(0, r.jsx)("div", {
@@ -160,11 +161,11 @@ function R(e) {
         }), (0, r.jsx)(u.Text, {
           variant: "text-sm/normal",
           children: N.intl.format(N.t.q5f7tL, {
-            helpdeskArticleUrl: h.Z.getArticleURL(y.BhN.CONNECTION_DETAILS_ADMIN)
+            helpdeskArticleUrl: f.Z.getArticleURL(y.BhN.CONNECTION_DETAILS_ADMIN)
           })
         })]
       })), function(e, t, n, i, l) {
-        let a = P(i, g.O1.OR);
+        let s = P(i, g.O1.OR);
         return (0, r.jsx)(u.xJW, {
           className: E.operatorContainer,
           title: N.intl.string(N.t.Xs7PHR),
@@ -178,12 +179,12 @@ function R(e) {
             }],
             onChange: e => l(i, e.value),
             value: n,
-            disabled: e || a.length < 2,
+            disabled: e || s.length < 2,
             "aria-labelledby": T
           })
         })
-      }(l, n.id, k, M, (e, t) => (0, b.d_)(n.id, P(e, t))), function(e, t, n, i, l) {
-        function a(n, r) {
+      }(l, n.id, k, M, (e, t) => (0, x.d_)(n.id, P(e, t))), function(e, t, n, i, l) {
+        function s(n, r) {
           let i = [];
           for (let t of e) i.push(S({}, t));
           if (null == n) {
@@ -192,20 +193,20 @@ function R(e) {
           } else false === r ? i.push(n) : r >= 0 && (i[r] = n);
           t(i)
         }
-        let s = new Map;
+        let a = new Map;
         for (let t of (e.forEach((e, t) => {
             let n = "".concat(e.connectionType, ":").concat(e.applicationId);
-            if (s.has(n)) {
-              let r = s.get(n);
+            if (a.has(n)) {
+              let r = a.get(n);
               null == r || r.push({
                 index: t,
                 configuration: e
               })
-            } else s.set(n, [{
+            } else a.set(n, [{
               index: t,
               configuration: e
             }])
-          }), s.values())) {
+          }), a.values())) {
           if (t.some(e => {
               let {
                 configuration: t
@@ -236,14 +237,14 @@ function R(e) {
         }
         return (0, r.jsx)("div", {
           className: E.configurationsContainer,
-          children: Array.from(s.values()).map(e => (0, r.jsx)(v.Z, {
+          children: Array.from(a.values()).map(e => (0, r.jsx)(v.Z, {
             configurationItems: e,
-            onConfigurationChange: a,
+            onConfigurationChange: s,
             locked: n,
             integrations: l
           }, e[0].configuration.connectionType + ":" + e[0].index))
         })
-      }(M, e => (0, b.d_)(n.id, P(e, k)), l, n.id, o), e]
+      }(M, e => (0, x.d_)(n.id, P(e, k)), l, n.id, o), e]
     })
   }
   return (0, r.jsx)(u.yWw, {
@@ -255,7 +256,7 @@ function R(e) {
     children: (0, r.jsxs)("div", {
       className: I.contentWidth,
       children: [(0, r.jsx)("div", {
-        className: a()(I.header, I.stickyHeader, {
+        className: s()(I.header, I.stickyHeader, {
           [I.stickyHeaderElevated]: !Z
         }),
         ref: R,
@@ -263,7 +264,7 @@ function R(e) {
           guild: t,
           role: n,
           selectedSection: O.ZI.VERIFICATIONS,
-          setSelectedSection: s
+          setSelectedSection: a
         })
       }), (null != A ? A : 0) > 0 ? (0, r.jsxs)("div", {
         className: E.warningContainer,

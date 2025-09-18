@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 849715, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => d
 });
@@ -19,21 +20,21 @@ function d(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: c.cardContentsContainer,
-    children: [(0, r.jsx)(a.Z, {
+    children: [(0, r.jsx)(s.Z, {
       step: 1,
       header: o.intl.string(o.t["1YgPj4"])
-    }), (0, r.jsx)(s.Z, {
-      type: s.Z.Type.ARROW_DOWN
     }), (0, r.jsx)(a.Z, {
+      type: a.Z.Type.ARROW_DOWN
+    }), (0, r.jsx)(s.Z, {
       step: 2,
       header: o.intl.string(o.t["18TOiY"]),
       children: (0, r.jsx)(i.Z, {
         rule: t,
         onChangeRule: n
       })
-    }), (0, r.jsx)(s.Z, {
-      type: s.Z.Type.CROSS
     }), (0, r.jsx)(a.Z, {
+      type: a.Z.Type.CROSS
+    }), (0, r.jsx)(s.Z, {
       step: 3,
       header: o.intl.string(o.t.eq3gjo),
       children: (0, r.jsx)(l.Z, {

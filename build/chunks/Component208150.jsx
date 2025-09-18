@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 208150, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => I
 });
@@ -34,14 +35,14 @@ let y = {
       guild: t
     } = e, {
       analyticsLocations: n
-    } = (0, o.ZP)(), i = (0, m.Z)(t.id).available, s = j.oCV[j.Eu4.TIER_1] - i;
+    } = (0, o.ZP)(), i = (0, m.Z)(t.id).available, a = j.oCV[j.Eu4.TIER_1] - i;
     return (0, r.jsxs)("div", {
       className: O.upsellContainer,
-      children: [(0, r.jsx)(a.X6q, {
+      children: [(0, r.jsx)(s.X6q, {
         className: O.upsellHeader,
         variant: "heading-xl/semibold",
         children: _.intl.string(_.t.hzCkys)
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(s.Text, {
         className: O.upsellDescription,
         variant: "text-md/normal",
         children: _.intl.string(_.t.jcesAA)
@@ -55,7 +56,7 @@ let y = {
             analyticsLocations: n,
             analyticsLocation: y,
             guildId: t.id,
-            totalNumberOfSlotsToAssign: s
+            totalNumberOfSlotsToAssign: a
           }),
           children: _.intl.string(_.t.Q5dbTk)
         }), (0, r.jsx)(l.zx, {
@@ -91,20 +92,20 @@ let y = {
   E = e => {
     let t, n, i, {
         guild: l,
-        guildStickers: a
+        guildStickers: s
       } = e,
-      s = l.premiumTier,
-      o = (0, f.Qi)(a, s),
-      c = (0, f.FZ)(s),
-      u = (0, f.A3)(s),
-      m = a.length;
-    return null == c || s === j.Eu4.TIER_3 || o > 0 ? null : (m > u ? (t = _.intl.formatToPlainString(_.t.ZtAY1d, {
+      a = l.premiumTier,
+      o = (0, h.Qi)(s, a),
+      c = (0, h.FZ)(a),
+      u = (0, h.A3)(a),
+      m = s.length;
+    return null == c || a === j.Eu4.TIER_3 || o > 0 ? null : (m > u ? (t = _.intl.formatToPlainString(_.t.ZtAY1d, {
       level: c
     }), n = _.intl.formatToPlainString(_.t["13hOWl"], {
       level: c
     }), i = j.qAy.BOOST_UPSELL_BANNER_LOST_LEVEL) : (t = _.intl.string(_.t.zT9Sxc), n = _.intl.formatToPlainString(_.t.YaW9wM, {
       level: c,
-      numAdditional: (0, f.ig)(c)
+      numAdditional: (0, h.ig)(c)
     }), i = j.qAy.BOOST_UPSELL_BANNER_SLOTS_FULL), (0, r.jsx)(d.Z, {
       header: t,
       text: n,
@@ -113,7 +114,7 @@ let y = {
         page: j.ZY5.GUILD_SETTINGS,
         section: j.jXE.GUILD_SETTINGS_STICKERS,
         object: i,
-        objectType: (0, f.ge)(c)
+        objectType: (0, h.ge)(c)
       }
     }))
   },

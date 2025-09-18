@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 793078, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.r(module.exports = {
   container: "container__6cd3a",
   clickableContainer: "clickableContainer__6cd3a",

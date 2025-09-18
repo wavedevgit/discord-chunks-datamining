@@ -1,18 +1,19 @@
 /** Chunk was on 8106 **/
 /** chunk id: 279881, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  I: () => s
+  I: () => a
 }), require("./388685.js");
 var Chunk879690 = require("./879690.js"),
   Chunk731965 = require("./731965.js"),
   Chunk699553 = require("./699553.js");
-let a = new Map,
-  s = (0, Chunk879690.U)((e, t) => ({
+let s = new Map,
+  a = (0, Chunk879690.U)((e, t) => ({
     topGames: new Map,
     tryFetchTopGames: async n => {
       let r = t().topGames,
-        s = a.get(n);
-      if (null != s && Date.now() - s < 36e5) {
+        a = s.get(n);
+      if (null != a && Date.now() - a < 36e5) {
         var o;
         return null != (o = r.get(n)) ? o : {}
       }
@@ -22,6 +23,6 @@ let a = new Map,
         e({
           topGames: d
         })
-      }), a.set(n, Date.now()), c
+      }), s.set(n, Date.now()), c
     }
   }))

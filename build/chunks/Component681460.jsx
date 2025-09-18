@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 681460, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   j: () => o
 });
@@ -16,13 +17,13 @@ function o(e) {
     pillClassName: n
   } = e;
   return (0, r.jsx)("div", {
-    className: s.container,
-    children: t.map(e => (0, r.jsx)(a.ua7, {
+    className: a.container,
+    children: t.map(e => (0, r.jsx)(s.ua7, {
       text: e.tooltipText,
       shouldShow: null != e.tooltipText,
       children: t => {
         var i, o;
-        return (0, r.jsx)(a.P3F, (i = function(e) {
+        return (0, r.jsx)(s.P3F, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -40,11 +41,11 @@ function o(e) {
           }
           return e
         }({}, t), o = o = {
-          className: l()(s.pill, {
-            [s.disabled]: e.disabled
+          className: l()(a.pill, {
+            [a.disabled]: e.disabled
           }, n),
           onClick: e.disabled ? true : e.onClick,
-          children: (0, r.jsx)(a.Text, {
+          children: (0, r.jsx)(s.Text, {
             tag: "span",
             variant: "text-sm/medium",
             color: "interactive-normal",

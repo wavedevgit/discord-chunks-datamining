@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 67734, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   F: () => p
 });
@@ -21,39 +22,39 @@ function p(e) {
     canManageGuild: n,
     buttonClassName: p
   } = e, {
-    analyticsLocations: h
-  } = (0, a.ZP)(), f = t.features.has(c.oNc.BANNER), b = i.useCallback(e => {
+    analyticsLocations: f
+  } = (0, s.ZP)(), h = t.features.has(c.oNc.BANNER), x = i.useCallback(e => {
     let {
       imageUri: n,
       file: r
     } = e;
-    (0, o.f4)(t, h, n, r)
-  }, [h, t]), x = i.useCallback(e => {
+    (0, o.f4)(t, f, n, r)
+  }, [f, t]), b = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, o.E6)({
       guild: t,
-      analyticsLocations: h,
+      analyticsLocations: f,
       analyticsSection: c.jXE.GUILD_BANNER,
       analyticsObject: c.qAy.BUTTON_CTA,
       perks: (0, d.XO)()
     })
-  }, [h, t]);
-  return f ? (0, r.jsx)(l.zx, {
-    disabled: !(f && n),
+  }, [f, t]);
+  return h ? (0, r.jsx)(l.zx, {
+    disabled: !(h && n),
     color: l.zx.Colors.BRAND,
     className: p,
     onClick: () => (0, o.mw)({
       uploadType: u.pC.GUILD_BANNER,
       maxFileSizeBytes: m.B,
-      onComplete: b,
+      onComplete: x,
       analyticsLocation: {
         page: c.ZY5.GUILD_SETTINGS,
         section: c.jXE.GUILD_BANNER
       },
-      analyticsLocations: h
+      analyticsLocations: f
     }),
     children: g.intl.string(g.t.yG2pUl)
-  }) : (0, r.jsx)(s.P, {
+  }) : (0, r.jsx)(a.P, {
     className: p,
-    onClick: x
+    onClick: b
   })
 }

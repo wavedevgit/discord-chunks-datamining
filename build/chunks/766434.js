@@ -1,8 +1,9 @@
 /** Chunk was on 8106 **/
 /** chunk id: 766434, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Br: () => l,
-  Uj: () => a,
+  Uj: () => s,
   j0: () => i
 }), require("./388685.js");
 var Chunk198139 = require("./198139.js");
@@ -29,7 +30,7 @@ function l(e) {
   }
 }
 
-function a(e, t) {
+function s(e, t) {
   let n, r, i, l;
   return null != e && (n = e.amount, i = e.paymentsCount, null != t && (r = e.amount / t.amount - 1, l = e.paymentsCount - t.paymentsCount)), {
     revenue: n,

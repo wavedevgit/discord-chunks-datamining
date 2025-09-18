@@ -1,8 +1,8 @@
-/** Chunk was on 78728 **/
+/** Chunk was on 75449 **/
 /** chunk id: 858822, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -17,26 +17,26 @@ var Chunk913527 = require("./913527.js"),
   Chunk621600 = require("./621600.js"),
   Chunk388032 = require("./388032.jsx");
 
-function f(e, t) {
+function g(e, t) {
   let n = null == e ? true : e.id,
     {
       muted: l,
-      muteConfig: f
+      muteConfig: g
     } = (0, r.cj)([d.ZP], () => ({
       muted: null != n ? d.ZP.isMuted(n) : true,
       muteConfig: null != n ? d.ZP.getMuteConfig(n) : true
     }), [n]),
-    b = (0, s.U)(f);
+    b = (0, s.U)(g);
   return null == n ? null : l ? (0, i.jsx)(c.sNh, {
     id: "unmute-guild",
-    label: g.intl.string(g.t.De0BTE),
+    label: f.intl.string(f.t.De0BTE),
     subtext: b,
     action: () => o.Z.updateGuildNotificationSettings(n, {
       muted: false
     }, _.ZB.Unmuted)
   }) : (0, i.jsx)(c.sNh, {
     id: "mute-guild",
-    label: g.intl.string(g.t.vRzp7O),
+    label: f.intl.string(f.t.vRzp7O),
     action: () => o.Z.updateGuildNotificationSettings(n, {
       muted: true
     }, _.ZB.Muted),

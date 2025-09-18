@@ -1,7 +1,7 @@
-/** Chunk was on 72853 **/
+/** Chunk was on 85991 **/
 /** chunk id: 856597, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -14,12 +14,12 @@ var Chunk481060 = require("./481060.js"),
   Chunk241945 = require("./241945.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk133023 = require("./133023.js");
-let p = {
+let h = {
     [Chunk118589.UA.EMAIL_VERIFICATION]: Chunk388032.intl.string(Chunk241945.default.HC4IiY),
     [Chunk118589.UA.REFRESH_APP]: Chunk388032.intl.string(Chunk241945.default.SzfxQ0),
     [Chunk118589.UA.AGE_VERIFICATION]: Chunk388032.intl.string(Chunk241945.default["dSkE/P"])
   },
-  h = function() {
+  p = function() {
     let {
       task: e
     } = (0, Chunk132392.T)(), t = module.flow_context.tasks.findIndex(t => t.task_type === e.task_type);
@@ -40,9 +40,9 @@ let p = {
           justify: "space-between",
           gap: 0,
           children: module.flow_context.tasks.map((e, n) => {
-            var i;
-            return (0, r.jsx)(l.q, {
-              title: null != (i = p[e.task_type]) ? i : "",
+            var r;
+            return (0, a.jsx)(i.q, {
+              title: null != (r = h[e.task_type]) ? r : "",
               listType: "numbered",
               index: n,
               color: n === t ? "text-primary" : n < t ? "feedback-positive" : "text-muted",

@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 289086, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   enableContainer: "enableContainer__5ea8c",
   iconCircle: "iconCircle__5ea8c",

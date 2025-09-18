@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 651780, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => w
 });
@@ -55,15 +56,15 @@ function T(e) {
     guildId: n
   } = e, i = (0, O.gZ)(t, n), l = (0, O.nW)((0, O.Jh)(n));
   if (null == i || null == l) return null;
-  let s = (0, O._k)(t, n);
-  return (0, r.jsxs)(a.Wn, {
-    messageType: a.QYI.WARNING,
+  let a = (0, O._k)(t, n);
+  return (0, r.jsxs)(s.Wn, {
+    messageType: s.QYI.WARNING,
     children: [(0, r.jsx)("div", {
       className: I.guildBoostingGracePeriodTitle,
       children: E.intl.format(E.t.LG7vvr, {})
     }), (0, r.jsx)(S, {
       endsAt: i,
-      appliedGuildBoostsToMaintain: s,
+      appliedGuildBoostsToMaintain: a,
       tierName: l
     })]
   })
@@ -74,8 +75,8 @@ let P = e => {
     onSetRef: n,
     subscriptionCount: i,
     tier: l,
-    tiers: a,
-    tierIndex: s,
+    tiers: s,
+    tierIndex: a,
     guildId: o
   } = e;
   return (0, r.jsx)(j.Z, {
@@ -83,7 +84,7 @@ let P = e => {
     tier: l,
     onSetRef: n,
     isAnimatedTo: t,
-    hasBottomMargin: s !== a.length - 1,
+    hasBottomMargin: a !== s.length - 1,
     guildId: o
   }, l.tier)
 };

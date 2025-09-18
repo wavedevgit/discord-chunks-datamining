@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 702478, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => T
 }), require("./388685.js");
@@ -48,9 +49,9 @@ let E = function(e, t, n) {
     let r = arguments.length > 3 && true !== arguments[3] && arguments[3],
       i = null;
     return null == t || Number.isNaN(t) ? (null == t || Number.isNaN(t)) && null != e && (i = y.intl.string(y.t.xO2msb)) : i = y.intl.formatToPlainString(y.t.nskeMz, {
-      percentage: (0, a.o)(Math.abs(t), n)
+      percentage: (0, s.o)(Math.abs(t), n)
     }), {
-      localizedNumber: null != e ? "".concat((0, a.o)(e, n)).concat(r ? "%" : "") : y.intl.string(y.t.jHpxws),
+      localizedNumber: null != e ? "".concat((0, s.o)(e, n)).concat(r ? "%" : "") : y.intl.string(y.t.jHpxws),
       subtext: i,
       isTrendingUp: t > 0,
       isTrendingDown: t < 0
@@ -78,7 +79,7 @@ let E = function(e, t, n) {
         text: Chunk388032.intl.string(Chunk388032.t.Uskgx8),
         onClick: () => {
           exports(true), (function(e) {
-            b.default.track(_.rMx.GUILD_INSIGHTS_SETTINGS_CTA_CLICKED, {
+            x.default.track(_.rMx.GUILD_INSIGHTS_SETTINGS_CTA_CLICKED, {
               guild_id: e
             });
             let t = null == e ? _.E07.DEVELOPER_PORTAL : _.E07.DEVELOPER_PORTAL_GUILD_ANALYTICS(e),
@@ -110,13 +111,13 @@ let E = function(e, t, n) {
       n = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(module)),
       l = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
       {
-        analytics: a,
+        analytics: s,
         errorCode: o
       } = (0, Chunk442837.cj)([Chunk559368.Z], () => ({
         analytics: null != module ? Chunk559368.Z.getOverviewAnalytics(module) : null,
         errorCode: Chunk559368.Z.getError()
       })),
-      b = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.getSettings().enabled),
+      x = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.getSettings().enabled),
       T = null == exports || null == require || null != exports && exports < 500 && null != require && !require.features.has(Chunk981631.oNc.PARTNERED) && !require.features.has(Chunk981631.oNc.VERIFIED);
     Chunk647438.useEffect(() => {
       null == module || T || ((0, Chunk146596.Vk)(module), (0, Chunk146596.SR)(module), (0, Chunk146596.xl)(module))

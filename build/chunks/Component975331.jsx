@@ -1,12 +1,13 @@
 /** Chunk was on 8106 **/
 /** chunk id: 975331, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  s = require.n(Chunk512722),
   Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
   Chunk584825 = require("./584825.js"),
@@ -19,15 +20,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk605041 = require("./605041.js");
 
-function x() {
+function b() {
   var e;
   let {
     editStateId: t
-  } = (0, Chunk727843.N)(), [n, l] = Chunk290348.TT(exports), [x, j] = Chunk290348.F2(exports), v = (0, Chunk584825.oC)(exports), {
+  } = (0, Chunk727843.N)(), [n, l] = Chunk290348.TT(exports), [b, j] = Chunk290348.F2(exports), v = (0, Chunk584825.oC)(exports), {
     options: _
   } = (0, Chunk22902.Z)(null != (e = null == v ? true : v.active_trial) ? module : null), O = (0, Chunk518470.Z)(), y = null != require, C = Chunk647438.useCallback(e => {
     let t = _.find(e => e.isDefault);
-    a()(null != t, "Missing default trial duartion option"), l(e ? t.value : null)
+    s()(null != t, "Missing default trial duartion option"), l(e ? t.value : null)
   }, [Chunk512722, _]), N = (0, Chunk723047.mY)(), E = (0, Chunk313201.Dt)(), I = (0, Chunk313201.Dt)();
   return (0, Chunk951288.jsxs)(Chunk783454.Z, {
     title: Chunk388032.intl.string(Chunk388032.t["6antoq"]),
@@ -72,7 +73,7 @@ function x() {
       }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
         "aria-labelledby": I,
         options: O,
-        value: x,
+        value: b,
         onChange: j,
         maxVisibleItems: 5,
         isDisabled: !y || N

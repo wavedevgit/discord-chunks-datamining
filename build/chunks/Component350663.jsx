@@ -1,7 +1,7 @@
-/** Chunk was on 46290 **/
+/** Chunk was on 50751 **/
 /** chunk id: 350663, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk339882 = require("./339882.js");
 
-function v(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -39,7 +39,7 @@ function v(e) {
   return e
 }
 
-function b(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -51,43 +51,43 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let E = {
+let S = {
     mass: 1,
     tension: 250,
     friction: 18,
     clamp: true
   },
-  _ = Chunk647438.memo(function(e) {
+  b = Chunk647438.memo(function(e) {
     let {
       widgetId: t,
       tileWidth: n,
       tileHeight: l,
-      layout: _,
-      locked: S,
-      activeStreams: x,
+      layout: b,
+      locked: x,
+      activeStreams: j,
       streamParticipants: I,
       participantsVersion: C,
-      pinned: j,
+      pinned: Z,
       padding: w
     } = e, N = I.map(e => ({
       participant: e,
       key: e.user.id,
       width: n,
       height: l,
-      locked: S,
+      locked: x,
       widgetId: t,
-      pinned: j
-    })), Z = (0, c.Z)(n), T = (0, c.Z)(S), P = _ === g.C5.VERTICAL, A = S || T !== S || Z !== n, D = r.useMemo(() => {
+      pinned: Z
+    })), T = (0, u.Z)(n), _ = (0, u.Z)(x), P = b === g.C5.VERTICAL, D = x || _ !== x || T !== n, A = r.useMemo(() => {
       let e = 0,
         t = 0;
-      return P ? N.map((t, n) => b(v({}, t), {
+      return P ? N.map((t, n) => v(E({}, t), {
         y: (e += t.height + (n > 0 ? w : 0)) - t.height,
         x: 0
-      })) : N.map((e, n) => b(v({}, e), {
+      })) : N.map((e, n) => v(E({}, e), {
         x: (t += e.width + (n > 0 ? w : 0)) - e.width,
         y: 0
       }))
-    }, [N, w, P]), k = r.useMemo(() => 0 === D.length ? (0, m.MH)(f.bt) : D.reduce((e, t) => e + t.height, 0) + (P ? w * (D.length - 1) : 0), [D, P, w]), R = r.useMemo(() => 0 === D.length ? f.bt : D.reduce((e, t) => e + t.width, 0) + (P ? 0 : w * (D.length - 1)), [D, P, w]), L = (0, s.Yzy)(D, {
+    }, [N, w, P]), R = r.useMemo(() => 0 === A.length ? (0, m.MH)(f.bt) : A.reduce((e, t) => e + t.height, 0) + (P ? w * (A.length - 1) : 0), [A, P, w]), k = r.useMemo(() => 0 === A.length ? f.bt : A.reduce((e, t) => e + t.width, 0) + (P ? 0 : w * (A.length - 1)), [A, P, w]), L = (0, s.Yzy)(A, {
       key: e => e.key,
       from: {
         height: 0,
@@ -126,26 +126,26 @@ let E = {
           height: r
         }
       },
-      config: E,
-      trail: 100 * !A
-    }, A ? "animate-never" : "respect-motion-settings"), M = (0, p.ee)(() => new Set(I.map(e => e.user.id)), [I, C]), z = (0, p.ee)(() => new Set(I.filter(e => x.has((0, u.V9)(e.stream))).map(e => e.user.id)), [I, x, C]);
+      config: S,
+      trail: 100 * !D
+    }, D ? "animate-never" : "respect-motion-settings"), M = (0, p.ee)(() => new Set(I.map(e => e.user.id)), [I, C]), V = (0, p.ee)(() => new Set(I.filter(e => j.has((0, c.V9)(e.stream))).map(e => e.user.id)), [I, j, C]);
     return r.useEffect(() => {
       0 !== M.size && (0, p.zi)(y.Odu.GO_LIVE, {
         locked: d.default.isInstanceLocked(),
         shownUserIds: Array.from(M),
-        liveUserIds: Array.from(z),
+        liveUserIds: Array.from(V),
         contentInventoryIds: []
       })
-    }, [M, z]), (0, i.jsx)("div", {
+    }, [M, V]), (0, i.jsx)("div", {
       className: o()({
         [O.gridContainer]: true,
         [O.vertical]: P,
         [O.horizontal]: !P
       }),
       style: P ? {
-        height: k
+        height: R
       } : {
-        width: R
+        width: k
       },
       children: L((e, t, r, o) => (0, i.jsx)(a.animated.div, {
         className: O.gridItem,

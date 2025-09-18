@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 59192, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => d
 });
@@ -18,11 +19,11 @@ function d(e) {
     isLoading: n,
     onChangeRule: d
   } = e;
-  return null == t ? null : (0, i.DO)(t) ? (0, r.jsx)(a.Z, {
+  return null == t ? null : (0, i.DO)(t) ? (0, r.jsx)(s.Z, {
     rule: t,
     isLoading: n,
     onChangeRule: d
-  }) : (0, i.vo)(t) ? (0, r.jsx)(s.Z, {
+  }) : (0, i.vo)(t) ? (0, r.jsx)(a.Z, {
     rule: t,
     isLoading: n,
     onChangeRule: d

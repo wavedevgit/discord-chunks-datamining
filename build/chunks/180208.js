@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 180208, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   row: "row__15634",
   active: "active__15634",

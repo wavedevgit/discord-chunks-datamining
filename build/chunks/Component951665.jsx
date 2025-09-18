@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 951665, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => m
 }), require("./388685.js");
@@ -49,20 +50,20 @@ function m(e) {
     rule: n,
     onChangeRule: m,
     collapsed: g = false
-  } = e, [p, h] = i.useState(!g), f = i.useCallback(() => {
-    h(!p)
-  }, [p, h]), b = i.useCallback(e => {
+  } = e, [p, f] = i.useState(!g), h = i.useCallback(() => {
+    f(!p)
+  }, [p, f]), x = i.useCallback(e => {
     m(u(d({}, n), {
       triggerMetadata: u(d({}, n.triggerMetadata), {
         regexPatterns: e
       })
     }))
   }, [m, n]);
-  return (0, a.S)(n.triggerType) ? (0, r.jsx)(l.zF9, {
+  return (0, s.S)(n.triggerType) ? (0, r.jsx)(l.zF9, {
     isExpanded: p,
-    collapsibleContent: (0, r.jsx)(s.Z, {
+    collapsibleContent: (0, r.jsx)(a.Z, {
       rule: n,
-      onChangeText: b,
+      onChangeText: x,
       className: c.textAreaContainer,
       initialValue: null == (t = n.triggerMetadata) ? true : t.regexPatterns
     }),
@@ -73,7 +74,7 @@ function m(e) {
       } = e;
       return (0, r.jsx)(l.P3F, {
         onClick: e => {
-          f(), t(e)
+          h(), t(e)
         },
         children: (0, r.jsxs)("div", {
           className: c.header,

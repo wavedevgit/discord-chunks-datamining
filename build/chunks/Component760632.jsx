@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 760632, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   M: () => g
 });
@@ -21,31 +22,31 @@ function g(e) {
     afkChannelId: g
   } = e, p = i.useMemo(() => [{
     value: o,
-    label: s.intl.formatToPlainString(s.t.iXLF9f, {
+    label: a.intl.formatToPlainString(a.t.iXLF9f, {
       minutes: 1
     })
   }, {
     value: c,
-    label: s.intl.formatToPlainString(s.t.iXLF9f, {
+    label: a.intl.formatToPlainString(a.t.iXLF9f, {
       minutes: 5
     })
   }, {
     value: d,
-    label: s.intl.formatToPlainString(s.t.iXLF9f, {
+    label: a.intl.formatToPlainString(a.t.iXLF9f, {
       minutes: 15
     })
   }, {
     value: u,
-    label: s.intl.formatToPlainString(s.t.iXLF9f, {
+    label: a.intl.formatToPlainString(a.t.iXLF9f, {
       minutes: 30
     })
   }, {
     value: m,
-    label: s.intl.formatToPlainString(s.t.xCjYxM, {
+    label: a.intl.formatToPlainString(a.t.xCjYxM, {
       hours: 1
     })
-  }], []), h = i.useCallback(e => {
-    a.Z.updateGuild({
+  }], []), f = i.useCallback(e => {
+    s.Z.updateGuild({
       afkTimeout: parseInt(e, 10)
     })
   }, []);
@@ -53,6 +54,6 @@ function g(e) {
     value: null == n ? null : "".concat(n),
     options: p,
     isDisabled: null == g || !t,
-    onChange: h
+    onChange: f
   })
 }

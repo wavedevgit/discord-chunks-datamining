@@ -1,12 +1,13 @@
 /** Chunk was on 8106 **/
 /** chunk id: 428760, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => u
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk730671 = require("./730671.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -21,30 +22,30 @@ function u(e) {
     subtitleText: m,
     initialValue: g
   } = e, p = i.useMemo(() => null != g ? g : [], [g]), {
-    value: h,
-    onChange: f,
-    errorMessage: b
+    value: f,
+    onChange: h,
+    errorMessage: x
   } = (0, o.Z)(t, g, n);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: a()(d.keywordsContainer, l),
-      children: [(0, r.jsx)(s.lcI, {
-        className: a()(d.keywordsTextArea, u),
-        value: h,
-        onChange: f,
+      className: s()(d.keywordsContainer, l),
+      children: [(0, r.jsx)(a.lcI, {
+        className: s()(d.keywordsTextArea, u),
+        value: f,
+        onChange: h,
         placeholder: c.intl.string(c.t.UyaxJy)
-      }), (0, r.jsx)(s.Text, {
+      }), (0, r.jsx)(a.Text, {
         className: d.keywordsCounter,
         variant: "text-xs/normal",
         color: "text-muted",
         children: "".concat(p.length, " / ").concat(n)
       })]
-    }), null != b ? (0, r.jsx)(s.Text, {
-      className: a()(d.paddingTop, d.errorText),
+    }), null != x ? (0, r.jsx)(a.Text, {
+      className: s()(d.paddingTop, d.errorText),
       variant: "text-xs/medium",
       color: "text-danger",
-      children: b
-    }) : (0, r.jsx)(s.Text, {
+      children: x
+    }) : (0, r.jsx)(a.Text, {
       className: d.paddingTop,
       variant: "text-xs/normal",
       color: "header-secondary",

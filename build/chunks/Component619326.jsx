@@ -1,12 +1,13 @@
 /** Chunk was on 8106 **/
 /** chunk id: 619326, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk866442 = require("./866442.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -17,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk267877 = require("./267877.js");
 
-function f(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +37,7 @@ function f(e) {
   return e
 }
 
-function b(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,13 +49,13 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = (0, Chunk663993.Un)({
+let b = (0, Chunk663993.Un)({
   createPromise: () => require.e("4848").then(require.bind(require, 797967)),
   webpackId: 797967
 });
 
 function j(e) {
-  let t = (0, s.Bd)(e) > .25;
+  let t = (0, a.Bd)(e) > .25;
   return (0, u.Lq)(t ? g.Ilk.WHITE_500 : g.Ilk.PRIMARY_530)
 }
 
@@ -65,7 +66,7 @@ function v(e) {
     disabled: l = false
   } = e, d = i.useRef(null), [u, m] = i.useState(t);
 
-  function x() {
+  function b() {
     n(u)
   }
 
@@ -111,32 +112,32 @@ function v(e) {
     S = (0, o.jm)({
       isSelected: !_,
       label: p.intl.formatToPlainString(p.t["3kiLZW"], {
-        colorHex: (0, s.Rf)(t)
+        colorHex: (0, a.Rf)(t)
       })
     });
-  return (0, r.jsxs)("div", b(f({
-    className: h.buttonsContainer,
+  return (0, r.jsxs)("div", x(h({
+    className: f.buttonsContainer,
     "aria-label": p.intl.string(p.t.FJjrIy),
     ref: N
   }, E), {
     children: [(0, r.jsx)("div", {
-      className: a()(h.colorSwatch, {
-        [h.disabled]: l
+      className: s()(f.colorSwatch, {
+        [f.disabled]: l
       }),
-      children: (0, r.jsxs)(c.P3F, b(f({
+      children: (0, r.jsxs)(c.P3F, x(h({
         onClick: l ? true : function() {
           n(g.p6O)
         },
         "aria-disabled": l
       }, I), {
         children: [(0, r.jsx)("div", {
-          className: h.swatch,
+          className: f.swatch,
           style: {
             backgroundColor: g.Pbq
           },
           children: _ ? y : null
         }), (0, r.jsx)(c.Text, {
-          className: h.swatchDescription,
+          className: f.swatchDescription,
           color: "header-secondary",
           variant: "text-xs/normal",
           "aria-hidden": true,
@@ -144,23 +145,23 @@ function v(e) {
         })]
       }))
     }), (0, r.jsxs)("div", {
-      className: a()(h.colorSwatch, {
-        [h.disabled]: l
+      className: s()(f.colorSwatch, {
+        [f.disabled]: l
       }),
-      children: [(0, r.jsxs)(c.P3F, b(f({
-        onClick: l ? true : x,
+      children: [(0, r.jsxs)(c.P3F, x(h({
+        onClick: l ? true : b,
         "aria-disabled": l
       }, S), {
         children: [(0, r.jsx)("div", {
-          className: a()(h.customSwatch, {
-            [h.defaultSwatch]: O === g.p6O
+          className: s()(f.customSwatch, {
+            [f.defaultSwatch]: O === g.p6O
           }),
           style: {
-            "--custom-color": (0, s.Rf)(O)
+            "--custom-color": (0, a.Rf)(O)
           },
           children: _ ? null : y
         }), (0, r.jsx)(c.Text, {
-          className: h.swatchDescription,
+          className: f.swatchDescription,
           color: "header-secondary",
           variant: "text-xs/normal",
           "aria-hidden": true,
@@ -168,18 +169,18 @@ function v(e) {
         })]
       })), !l && (0, r.jsx)(c.yRy, {
         targetElementRef: d,
-        onRequestOpen: x,
-        renderPopout: e => (0, r.jsx)(c.Z$W, b(f({}, e), {
+        onRequestOpen: b,
+        renderPopout: e => (0, r.jsx)(c.Z$W, x(h({}, e), {
           value: t,
           onChange: v
         })),
-        children: e => (0, r.jsx)(c.P3F, b(f({}, e), {
+        children: e => (0, r.jsx)(c.P3F, x(h({}, e), {
           innerRef: d,
-          className: h.dropperIconButton,
+          className: f.dropperIconButton,
           "aria-label": p.intl.string(p.t.Qp04hI),
           children: (0, r.jsx)(c.ilE, {
             size: "custom",
-            className: h.dropperIcon,
+            className: f.dropperIcon,
             width: 14,
             height: 14,
             color: j(O)
@@ -197,21 +198,21 @@ function _(e) {
       disabled: l = false
     } = e,
     {
-      ref: a,
-      width: s
+      ref: s,
+      width: a
     } = (0, d.ZP)();
-  return t = null == s || s < 440 ? (0, r.jsx)(v, {
+  return t = null == a || a < 440 ? (0, r.jsx)(v, {
     value: n,
     onChange: i,
     disabled: l
-  }) : (0, r.jsx)(x, {
+  }) : (0, r.jsx)(b, {
     defaultColor: g.p6O,
     colors: g.pmI,
     value: n,
     onChange: i,
     disabled: l
   }), (0, r.jsx)("div", {
-    ref: a,
+    ref: s,
     children: t
   })
 }

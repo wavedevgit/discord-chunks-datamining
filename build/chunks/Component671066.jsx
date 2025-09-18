@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 671066, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => p
 });
@@ -21,18 +22,18 @@ function p(e) {
   let {
     action: n,
     triggerType: p,
-    toggled: h,
-    onToggleAction: f
-  } = e, b = e => () => f(e), x = (0, u.c)(n.type, n, p), j = null == (t = n.metadata) ? true : t.channelId, v = (0, i.e7)([d.default, c.Z, o.Z], () => {
+    toggled: f,
+    onToggleAction: h
+  } = e, x = e => () => h(e), b = (0, u.c)(n.type, n, p), j = null == (t = n.metadata) ? true : t.channelId, v = (0, i.e7)([d.default, c.Z, o.Z], () => {
     let e = o.Z.getChannel(j);
-    return null == e ? null : (0, s.F6)(e, d.default, c.Z)
+    return null == e ? null : (0, a.F6)(e, d.default, c.Z)
   }, [j]);
-  if (null == x) return null;
+  if (null == b) return null;
   let {
     headerText: _,
     descriptionText: O,
     icon: y
-  } = x;
+  } = b;
   return (0, r.jsxs)("div", {
     className: g.actionContainer,
     children: [(0, r.jsx)("div", {
@@ -44,20 +45,20 @@ function p(e) {
       })
     }), (0, r.jsxs)("div", {
       className: g.actionTextContainer,
-      children: [(0, r.jsx)(a.X6q, {
+      children: [(0, r.jsx)(s.X6q, {
         variant: "heading-sm/semibold",
         children: _
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(s.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
         children: O
-      }), h && (0, r.jsxs)(a.Text, {
+      }), f && (0, r.jsxs)(s.Text, {
         color: "text-muted",
         variant: "text-xs/medium",
         children: [null != v && m.intl.format(m.t["8Sr/am"], {
           channelName: v
-        }), (0, r.jsx)(a.P3F, {
-          onClick: b(true),
+        }), (0, r.jsx)(s.P3F, {
+          onClick: x(true),
           className: g.editChannel,
           tag: "span",
           role: "link",
@@ -67,8 +68,8 @@ function p(e) {
     }), (0, r.jsx)("div", {
       children: (0, r.jsx)(l.$q, {
         type: l.M0.INVERTED,
-        value: h,
-        onChange: b(false),
+        value: f,
+        onChange: x(false),
         className: g.__invalid_actionCheckbox
       })
     })]

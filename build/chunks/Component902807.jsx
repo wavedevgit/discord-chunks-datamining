@@ -1,12 +1,13 @@
 /** Chunk was on 8106 **/
 /** chunk id: 902807, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => m
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk938288 = require("./938288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk152406 = require("./152406.js");
@@ -72,7 +73,7 @@ let u = (0, Chunk938288.animated)(d),
       name: n,
       icon: i,
       iconClassName: l
-    } = e, s = (0, o.Yzy)({
+    } = e, a = (0, o.Yzy)({
       name: n,
       icon: i,
       iconClassName: l
@@ -90,15 +91,15 @@ let u = (0, Chunk938288.animated)(d),
       }
     }, "animate-always");
     return (0, r.jsx)("div", {
-      className: a()(c.crossfade, t),
-      children: s((e, t) => {
+      className: s()(c.crossfade, t),
+      children: a((e, t) => {
         let {
           icon: n,
           iconClassName: i
         } = t;
         return (0, r.jsx)(u, {
           icon: n,
-          className: a()(c.icon, i),
+          className: s()(c.icon, i),
           style: e
         })
       })

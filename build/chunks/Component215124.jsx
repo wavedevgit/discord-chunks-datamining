@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 215124, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => m
 });
@@ -20,15 +21,15 @@ function m(e) {
     allPeriods: m
   } = e, g = (0, i.e7)([o.Z], () => o.Z.getGuild(t)), p = (0, c.qi)(t, {
     includeSoftDeleted: true
-  }), h = (0, s.ue)(t, {
+  }), f = (0, a.ue)(t, {
     publishedOnly: false
   }), {
-    allowSelfRemoveMonetization: f
-  } = (0, a.gX)(t), b = m.filter(e => {
+    allowSelfRemoveMonetization: h
+  } = (0, s.gX)(t), x = m.filter(e => {
     var t;
     let n = Object.values(null != (t = e.ppgs) ? t : {})[0];
     return (null == n ? true : n.status) === d.x_.OPEN || (null == n ? true : n.status) === d.x_.PAYOUT_DEFERRED
-  }), x = p.length > 0, j = h.length > 0, v = b.length > 0;
+  }), b = p.length > 0, j = f.length > 0, v = x.length > 0;
   return null == g ? null : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(l.R94, {
       type: l.R94.Types.DESCRIPTION,
@@ -40,7 +41,7 @@ function m(e) {
     }), (0, r.jsx)(l.zxk, {
       variant: "critical-primary",
       text: u.intl.string(u.t.FrOFSk),
-      disabled: !f || x || j || v,
+      disabled: !h || b || j || v,
       onClick: () => {
         (0, l.ZDy)(async () => {
           let {

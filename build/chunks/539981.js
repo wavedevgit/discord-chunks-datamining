@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 539981, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   settingsColumn: "settingsColumn_ebb372 " + require("./630016.js").customColumn,
   settingsContainer: "settingsContainer_ebb372 " + require("./630016.js").customContainer,

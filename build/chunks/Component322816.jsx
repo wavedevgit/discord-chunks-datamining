@@ -1,12 +1,13 @@
 /** Chunk was on 8106 **/
 /** chunk id: 322816, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   ZP: () => w
 }), require("./415506.js"), require("./388685.js"), require("./539338.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk149765 = require("./149765.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -65,18 +66,18 @@ function T(e) {
     guild: t,
     role: n,
     locked: l
-  } = e, a = (0, o.e7)([g.default], () => g.default.getCurrentUser()), d = i.useMemo(() => f.uB({
-    user: a,
+  } = e, s = (0, o.e7)([g.default], () => g.default.getCurrentUser()), d = i.useMemo(() => h.uB({
+    user: s,
     context: t
-  }), [a, t]), u = i.useMemo(() => ({
+  }), [s, t]), u = i.useMemo(() => ({
     [n.id]: S(I({}, n), {
-      permissions: f.Hn
+      permissions: h.Hn
     })
-  }), [n]), m = i.useMemo(() => f.uB({
-    user: a,
+  }), [n]), m = i.useMemo(() => h.uB({
+    user: s,
     context: t,
     roles: u
-  }), [a, t, u]), p = !s.fS(d, m);
+  }), [s, t, u]), p = !a.fS(d, m);
   return (0, r.jsx)(c.ua7, {
     text: p ? C.intl.string(C.t["IQ/6Sk"]) : null,
     position: "top",
@@ -93,8 +94,8 @@ function T(e) {
         children: (0, r.jsx)(c.Avr, {
           variant: "primary",
           textVariant: "text-sm/semibold",
-          onClick: () => (0, b.TY)(n.id),
-          disabled: s.fS(n.permissions, f.Hn) || p || l,
+          onClick: () => (0, x.TY)(n.id),
+          disabled: a.fS(n.permissions, h.Hn) || p || l,
           text: C.intl.string(C.t["UYq7+P"])
         })
       })
@@ -108,13 +109,13 @@ function P(e) {
     role: n,
     specs: i,
     locked: l
-  } = e, a = u.D.useExperiment({
+  } = e, s = u.D.useExperiment({
     guildId: t.id,
     location: "PermissionsList"
   }).enabled;
   if (0 === i.length) return (0, r.jsxs)("div", {
     className: N.noResultsContainer,
-    children: [(0, r.jsx)(x.Z, {
+    children: [(0, r.jsx)(b.Z, {
       className: N.noResults
     }), (0, r.jsx)(c.Text, {
       variant: "text-sm/normal",
@@ -125,7 +126,7 @@ function P(e) {
   function o(e) {
     return m.Z.can(e, t) ? !m.Z.can(e, t, null, {
       [n.id]: S(I({}, n), {
-        permissions: s.Od(n.permissions, e)
+        permissions: a.Od(n.permissions, e)
       })
     }) && C.intl.string(C.t["K+D+GB"]) : C.intl.string(C.t.nOtPMD)
   }
@@ -142,10 +143,10 @@ function P(e) {
       locked: l,
       onChange: (e, t) => {
         if ("string" == typeof t) throw Error("Unexpected string `allow`");
-        (0, b.lO)(n.id, e, t)
+        (0, x.lO)(n.id, e, t)
       },
       permissionRender: o,
-      inPinPermissionExperiment: a
+      inPinPermissionExperiment: s
     }, t))]
   })
 }
@@ -155,19 +156,19 @@ function w(e) {
     guild: t,
     role: n,
     locked: l,
-    setSelectedSection: s,
+    setSelectedSection: a,
     initialSearchQuery: o
-  } = e, [d, u] = i.useState(null != o ? o : ""), m = i.useMemo(() => h.Z.generateGuildPermissionSpec(t), [t]).map(e => S(I({}, e), {
+  } = e, [d, u] = i.useState(null != o ? o : ""), m = i.useMemo(() => f.Z.generateGuildPermissionSpec(t), [t]).map(e => S(I({}, e), {
     permissions: e.permissions.filter(e => {
       let t = d.trimStart().toLowerCase();
       return e.title.toLowerCase().includes(t) || null != e.description && e.description.toString().toLowerCase().includes(t)
     })
   })).filter(e => e.permissions.length > 0), {
     headerHeight: g,
-    headerRef: f
+    headerRef: h
   } = (0, j.Z)(0), {
-    scrolledToTop: b,
-    handleScroll: x
+    scrolledToTop: x,
+    handleScroll: b
   } = (0, v.V)(), T = i.useRef(false);
   return i.useEffect(() => {
     T.current || "" === d.trimStart() || (p.default.track(y.rMx.SEARCH_STARTED, {
@@ -178,19 +179,19 @@ function w(e) {
     style: {
       scrollPaddingTop: g
     },
-    onScroll: x,
+    onScroll: b,
     children: (0, r.jsxs)("div", {
       className: E.contentWidth,
       children: [(0, r.jsxs)("div", {
-        className: a()(E.header, E.stickyHeader, {
-          [E.stickyHeaderElevated]: !b
+        className: s()(E.header, E.stickyHeader, {
+          [E.stickyHeaderElevated]: !x
         }),
-        ref: f,
+        ref: h,
         children: [(0, r.jsx)(v.Z, {
           guild: t,
           role: n,
           selectedSection: O.ZI.PERMISSIONS,
-          setSelectedSection: s
+          setSelectedSection: a
         }), (0, r.jsx)("div", {
           className: N.noticeContainer,
           children: (0, r.jsx)(_.Z, {

@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 434215, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   developerPortalCtaWrapper: "developerPortalCtaWrapper_bf485f",
   developerPortalCta: "developerPortalCta_bf485f",

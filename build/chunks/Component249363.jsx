@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 249363, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   A: () => m
 });
@@ -25,7 +26,7 @@ function m(e) {
       className: u.column,
       children: [(0, r.jsxs)(i.vwX, {
         className: u.title,
-        children: [d.intl.string(d.t.tzGY0t), (0, r.jsx)(a.hH, {
+        children: [d.intl.string(d.t.tzGY0t), (0, r.jsx)(s.hH, {
           guild: t
         })]
       }), (0, r.jsx)(i.Text, {
@@ -40,7 +41,7 @@ function m(e) {
         children: d.intl.format(d.t.ZYA9PT, {
           articleURL: l.Z.getArticleURL(c.BhN.GUILD_INVITE_SPLASH)
         })
-      }), (0, r.jsx)(s.c, {
+      }), (0, r.jsx)(a.c, {
         guild: t,
         canManageGuild: n,
         buttonClassName: u.button

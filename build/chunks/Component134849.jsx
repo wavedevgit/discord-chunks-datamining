@@ -1,7 +1,7 @@
-/** Chunk was on 46290 **/
+/** Chunk was on 50751 **/
 /** chunk id: 134849, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => b
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,11 +20,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk63452 = require("./63452.js");
 let O = [];
 
-function v(e) {
+function E(e) {
   return e.notification.id
 }
 
-function b(e, t, n, r) {
+function v(e, t, n, r) {
   let {
     index: l,
     notification: o,
@@ -41,19 +41,19 @@ function b(e, t, n, r) {
   }, e)
 }
 
-function E(e) {
+function S(e) {
   return (0, i.jsx)("div", {
     className: y.container,
     children: e
   })
 }
-let _ = Chunk647438.memo(function(e) {
+let b = Chunk647438.memo(function(e) {
   let {
     locked: t,
     pinned: n,
     showEmpty: p = true
-  } = e, y = (0, l.e7)([f.Z, c.Z], () => {
-    if (c.Z.isNotificationDisabled(a.OverlayNotificationDisabledSetting.TEXT_CHAT)) return O;
+  } = e, y = (0, l.e7)([f.Z, u.Z], () => {
+    if (u.Z.isNotificationDisabled(a.OverlayNotificationDisabledSetting.TEXT_CHAT)) return O;
     let e = [],
       i = 0;
     for (let r of f.Z.getNotifications()) {
@@ -66,14 +66,14 @@ let _ = Chunk647438.memo(function(e) {
       }), i++)
     }
     return e
-  }, [t, n], u.E6), _ = r.useState(() => new h.AS(t))[0];
-  return (r.useLayoutEffect(() => _.updateState(y, t)), r.useLayoutEffect(() => (_.initialize((0, d.i)()), () => _.cleanUp()), [_]), 0 !== y.length || t) ? (0, i.jsx)(h.S4.Provider, {
-    value: _,
+  }, [t, n], c.E6), b = r.useState(() => new h.AS(t))[0];
+  return (r.useLayoutEffect(() => b.updateState(y, t)), r.useLayoutEffect(() => (b.initialize((0, d.i)()), () => b.cleanUp()), [b]), 0 !== y.length || t) ? (0, i.jsx)(h.S4.Provider, {
+    value: b,
     children: (0, i.jsx)(o.W3x, {
       items: y,
-      renderItem: b,
-      getItemKey: v,
-      wrapChildren: E
+      renderItem: v,
+      getItemKey: E,
+      wrapChildren: S
     })
   }) : p ? t ? null : (0, i.jsx)(s.E, {
     emptyText: g.intl.string(g.t.O1Nbjo),

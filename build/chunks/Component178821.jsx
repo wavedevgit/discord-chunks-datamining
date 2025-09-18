@@ -1,14 +1,14 @@
-/** Chunk was on 92922 **/
+/** Chunk was on 28543 **/
 /** chunk id: 178821, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   MC: () => g,
-  Y5: () => k,
-  ZF: () => v,
-  ZP: () => C,
+  Y5: () => v,
+  ZF: () => k,
+  ZP: () => F,
   d6: () => w,
-  m8: () => T,
-  nU: () => O,
-  tO: () => f
+  m8: () => y,
+  nU: () => E,
+  tO: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk499504 = require("./499504.js"),
   Chunk451429 = require("./451429.js");
 
-function m(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -40,7 +40,7 @@ function m(e) {
   return e
 }
 
-function h(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,13 +52,13 @@ function h(e, t) {
     Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
   }), e
 }
-let f = 1e3 / 60,
+let h = 1e3 / 60,
   p = 1e3 / 30,
   g = 5e3,
   b = 1e3 / 60 * 3,
   j = Math.ceil(3e3 / (1e3 / 60));
 
-function k(e, t) {
+function v(e, t) {
   let r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : window,
     n = a.useRef(null),
     c = a.useRef(null),
@@ -82,7 +82,7 @@ function k(e, t) {
   }, [u, i]), u]
 }
 
-function v(e) {
+function k(e) {
   let t = a.useRef(Array(j).fill(0)),
     r = a.useRef(performance.now()),
     n = a.useRef(0),
@@ -117,36 +117,36 @@ function w(e, t) {
     i = a.useRef(0),
     o = a.useRef(0),
     d = a.useRef(0),
-    x = a.useCallback(() => {
+    m = a.useCallback(() => {
       n.current.fill(0), l.current = 0, s.current = 0, i.current = 0, o.current = 0, c.current = performance.now(), u.current = 0
     }, []),
-    m = a.useCallback(function() {
+    f = a.useCallback(function() {
       let a = performance.now(),
-        x = a - c.current;
+        m = a - c.current;
       if (c.current = a, t.current && !r) return;
-      if (s.current -= n.current[o.current], n.current[o.current] = x, s.current += x, i.current < j && (i.current += 1), o.current = (o.current + 1) % j, x > b) {
-        let t = 0 === i.current ? f : s.current / i.current,
-          r = Math.min(2 * f, t),
-          n = Math.floor(x / (e ? r : f));
+      if (s.current -= n.current[o.current], n.current[o.current] = m, s.current += m, i.current < j && (i.current += 1), o.current = (o.current + 1) % j, m > b) {
+        let t = 0 === i.current ? h : s.current / i.current,
+          r = Math.min(2 * h, t),
+          n = Math.floor(m / (e ? r : h));
         n > 0 && (d.current = performance.now()), l.current += n
       }
-      let m = 0 === i.current ? f : s.current / i.current;
-      u.current += x / m
+      let f = 0 === i.current ? h : s.current / i.current;
+      u.current += m / f
     }, [e, t, r]),
-    h = 0 === i.current ? 0 : s.current / i.current;
+    x = 0 === i.current ? 0 : s.current / i.current;
   return {
-    currentFPS: 0 === h ? 0 : f / h * 60,
-    averageFrameTime: h,
+    currentFPS: 0 === x ? 0 : h / x * 60,
+    averageFrameTime: x,
     timeSinceLastDrop: (performance.now() - d.current) / 1e3,
     droppedFramesRef: l,
     bufferFramecountRef: i,
     renderedFrameCount: u,
-    frameCheckerEffect: m,
-    onResetFrameData: x
+    frameCheckerEffect: f,
+    onResetFrameData: m
   }
 }
 
-function T(e) {
+function y(e) {
   let t = e.dispatcher.getIsSchedulerBackgrounded(),
     r = a.useRef(t);
   r.current = t;
@@ -156,26 +156,26 @@ function T(e) {
   }), [r, n]
 }
 
-function y(e) {
+function T(e) {
   let {
     socket: t,
     isAverageFrameTime: r
-  } = e, [c, l] = T(t), {
+  } = e, [c, l] = y(t), {
     currentFPS: s,
     averageFrameTime: o,
-    timeSinceLastDrop: x,
+    timeSinceLastDrop: m,
     onResetFrameData: p,
     droppedFramesRef: b,
     renderedFrameCount: j,
-    bufferFramecountRef: y,
+    bufferFramecountRef: T,
     frameCheckerEffect: R
-  } = w(r, c), [F, S, O] = v(t), [C, I] = k(F, R), P = performance.now() - l.current < g, D = S(o, y.current);
-  (0, i.ZP)(() => (C(), () => {
-    I()
+  } = w(r, c), [O, S, E] = k(t), [F, P] = v(O, R), I = performance.now() - l.current < g, C = S(o, T.current);
+  (0, i.ZP)(() => (F(), () => {
+    P()
   }));
   let N = a.useCallback(() => {
-    p(), O(), C()
-  }, [p, O, C]);
+    p(), E(), F()
+  }, [p, E, F]);
   return (0, n.jsxs)("div", {
     className: d.panelGroup,
     children: [(0, n.jsxs)(u.Text, {
@@ -193,7 +193,7 @@ function y(e) {
       children: ["Dropped Frames:", " ", (0, n.jsx)(u.Text, {
         tag: "span",
         variant: "text-md/bold",
-        color: x < 2 ? "text-danger" : x < 5 ? "text-feedback-warning" : "text-primary",
+        color: m < 2 ? "text-danger" : m < 5 ? "text-feedback-warning" : "text-primary",
         children: b.current
       }), (0, n.jsxs)(u.Text, {
         tag: "span",
@@ -201,10 +201,10 @@ function y(e) {
         color: "text-muted",
         className: d.secondaryInfoText,
         children: ["(Dropped: ", (b.current / j.current * 100).toFixed(4), "%)"]
-      }), P && (0, n.jsx)(u.ua7, {
+      }), I && (0, n.jsx)(u.ua7, {
         position: "left",
         text: "We don't track frames while the app is in the background, because requestAnimationFrame doesn't fire in the background",
-        children: e => (0, n.jsx)("span", h(m({}, e), {
+        children: e => (0, n.jsx)("span", x(f({}, e), {
           children: (0, n.jsx)(u.Text, {
             tag: "span",
             variant: "text-xs/bold",
@@ -229,25 +229,25 @@ function y(e) {
       children: ["Frame Times (~3sec):", " ", (0, n.jsxs)(u.Text, {
         tag: "span",
         variant: "text-md/semibold",
-        color: o > 1.1 * f ? "text-feedback-warning" : "text-secondary",
+        color: o > 1.1 * h ? "text-feedback-warning" : "text-secondary",
         children: [o.toFixed(2), "ms"]
       })]
     }), (0, n.jsx)(u.ua7, {
       position: "left",
       text: "The average amount of 'lag' between us rendering a frame and being able to process background tasks. Values constantly above 1-2ms means our main thread is being burried by work and is taking all of its time in animation frames, most likely producing user interaciton blocking jank. (This doesn't work when the app is backgrounded though)",
-      children: e => (0, n.jsx)("div", h(m({}, e), {
+      children: e => (0, n.jsx)("div", x(f({}, e), {
         children: (0, n.jsxs)(u.Text, {
           variant: "text-md/normal",
           color: "text-muted",
           children: ["Idle Frame Delta (~3sec):", " ", (0, n.jsxs)(u.Text, {
             tag: "span",
             variant: "text-md/semibold",
-            color: D > 1 ? "text-danger" : "text-secondary",
-            children: [D.toFixed(2), "ms"]
-          }), P && (0, n.jsx)(u.ua7, {
+            color: C > 1 ? "text-danger" : "text-secondary",
+            children: [C.toFixed(2), "ms"]
+          }), I && (0, n.jsx)(u.ua7, {
             position: "left",
             text: "We don't track frames while the app is in the background, because requestAnimationFrame doesn't fire in the background",
-            children: e => (0, n.jsx)("span", h(m({}, e), {
+            children: e => (0, n.jsx)("span", x(f({}, e), {
               children: (0, n.jsx)(u.Text, {
                 tag: "span",
                 variant: "text-xs/bold",
@@ -286,7 +286,7 @@ function R(e) {
     children: [(0, n.jsx)(u.ua7, {
       position: "left",
       text: "Instead of using 60fps to calculate the number of dropped frames, we use the average framerate to more accurately determine the number of actual dropped frames. Turn this off when benchmarking to get better comparsion between two different runtimes, where higher FPS might result in a higher dropped frame count.",
-      children: e => (0, n.jsx)("div", h(m({}, e), {
+      children: e => (0, n.jsx)("div", x(f({}, e), {
         children: (0, n.jsx)(u.XZJ, {
           label: "Use Average Frame Time",
           checked: r,
@@ -304,7 +304,7 @@ function R(e) {
   })
 }
 
-function F(e) {
+function O(e) {
   let {
     socket: t
   } = e, r = t.dispatcher.getDispatchTimings(), [c, s] = a.useState(false);
@@ -358,7 +358,7 @@ function F(e) {
 function S(e) {
   let {
     socket: t
-  } = e, r = t.dispatcher.getSchedulerTelemetry(), [c, s] = a.useState(r.isTelemetryEnabled), [i, o] = a.useState(r.isTelemetryEnabled), x = e => {
+  } = e, r = t.dispatcher.getSchedulerTelemetry(), [c, s] = a.useState(r.isTelemetryEnabled), [i, o] = a.useState(r.isTelemetryEnabled), m = e => {
     o(e), r.toggleTelemetry(e)
   };
   return (0, n.jsxs)("div", {
@@ -366,7 +366,7 @@ function S(e) {
     children: [(0, n.jsx)(u.XZJ, {
       label: "Enable Dispatch Telemetry",
       checked: i,
-      onChange: () => x(!i)
+      onChange: () => m(!i)
     }), (0, n.jsx)("div", {
       className: l()(c && d.topPanelToggle),
       children: (0, n.jsx)(u.XZJ, {
@@ -375,7 +375,7 @@ function S(e) {
         onChange: () => {
           s(e => {
             let t = !e;
-            return t && x(true), t
+            return t && m(true), t
           })
         }
       })
@@ -420,7 +420,7 @@ function S(e) {
   })
 }
 
-function O() {
+function E() {
   let [, e] = Chunk647438.useState({});
   Chunk647438.useEffect(() => {
     let t = setInterval(() => {
@@ -432,21 +432,21 @@ function O() {
   }, [])
 }
 
-function C() {
+function F() {
   let e = (0, Chunk442837.e7)([Chunk38618.Z], () => Chunk38618.Z.getSocket()),
     [t, r] = Chunk647438.useState(false);
-  return O(), (0, Chunk951288.jsx)("div", {
+  return E(), (0, Chunk951288.jsx)("div", {
     className: l()(Chunk451429.panel, Chunk499504.panel),
     children: (0, Chunk951288.jsxs)(Chunk481060.zJl, {
       className: Chunk499504.panel,
-      children: [(0, Chunk951288.jsx)(y, {
+      children: [(0, Chunk951288.jsx)(T, {
         socket: module,
         isAverageFrameTime: exports
       }), (0, Chunk951288.jsx)(R, {
         socket: module,
         isAverageFrameTime: exports,
         onToggleAverageFrameTime: require
-      }), (0, Chunk951288.jsx)(F, {
+      }), (0, Chunk951288.jsx)(O, {
         socket: module
       }), (0, Chunk951288.jsx)(S, {
         socket: module

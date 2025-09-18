@@ -1,7 +1,8 @@
 /** Chunk was on 8106 **/
 /** chunk id: 559368, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 });
 var r, Chunk877921 = require("./877921.js"),
   l = require.n(Chunk877921),
@@ -28,12 +29,12 @@ function m(e) {
   u = null;
   let r = {},
     i = {},
-    a = n[0],
-    s = n[1];
-  null != a && c.forEach(e => {
-    if (null != a[e]) {
+    s = n[0],
+    a = n[1];
+  null != s && c.forEach(e => {
+    if (null != s[e]) {
       let t = l()(e);
-      null != s && 0 !== s[e] && (r["".concat(t, "Change")] = (a[e] - s[e]) * 100 / s[e]), i[t] = a[e]
+      null != a && 0 !== a[e] && (r["".concat(t, "Change")] = (s[e] - a[e]) * 100 / a[e]), i[t] = s[e]
     }
   }), d[t] = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -64,7 +65,7 @@ class p extends(r = Chunk442837.ZP.Store) {
   }
 }
 o(p, "displayName", "GuildSettingsAnalyticsStore");
-let h = new p(Chunk570140.Z, {
+let f = new p(Chunk570140.Z, {
   GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW_FETCH_SUCCESS: m,
   GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW_FETCH_SUCCESS: m,
   GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION_FETCH_SUCCESS: m,

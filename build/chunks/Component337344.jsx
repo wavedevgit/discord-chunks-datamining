@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 337344, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   L: () => u
 });
@@ -29,8 +30,8 @@ function u(e) {
       size: "sm",
       variant: "secondary",
       onClick: () => {
-        s.Z.close(), (0, l.iD)(t, {
-          type: a.z.ROLES,
+        a.Z.close(), (0, l.iD)(t, {
+          type: s.z.ROLES,
           roles: {
             [n.id]: n
           },

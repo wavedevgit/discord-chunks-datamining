@@ -1,9 +1,10 @@
 /** Chunk was on 8106 **/
 /** chunk id: 974513, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  O4: () => b,
-  OA: () => f,
-  Wu: () => x
+  O4: () => x,
+  OA: () => h,
+  Wu: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -36,7 +37,7 @@ function p(e) {
   return e
 }
 
-function h(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,12 +50,12 @@ function h(e, t) {
   }), e
 }
 
-function f(e, t) {
+function h(e, t) {
   let n = (0, l.Wu)([u.Z], () => (0, c.kl)(e, t, u.Z.editedOnboardingPrompts));
   return [(0, l.Wu)([u.Z], () => (0, c.kl)(e, t, u.Z.editedOnboardingPrompts, c.V7)), n]
 }
 
-function b(e) {
+function x(e) {
   let t = (0, l.e7)([o.Z], () => o.Z.isAdvancedMode(e)),
     [n, r] = function(e) {
       let t = (0, l.Wu)([o.Z], () => (0, c.kl)(e, o.Z.getDefaultChannelIds(e), o.Z.getOnboardingPrompts(e)));
@@ -63,31 +64,31 @@ function b(e) {
   return !!t && r.length >= m.md && n.length >= m.X
 }
 
-function x(e) {
+function b(e) {
   let {
     guildId: t,
     className: n
   } = e, c = (0, l.e7)([o.Z], () => o.Z.isAdvancedMode(t)), u = i.useCallback(() => {
     let e = c ? m.Un.ONBOARDING_DEFAULT : m.Un.ONBOARDING_ADVANCED;
-    c ? (0, s.h7j)(n => (0, r.jsx)(s.ConfirmModal, h(p({
+    c ? (0, a.h7j)(n => (0, r.jsx)(a.ConfirmModal, f(p({
       header: g.intl.string(g.t["49+ONj"]),
       confirmText: g.intl.string(g.t.R9GHyc),
       cancelText: g.intl.string(g.t["ETE/oK"]),
-      confirmButtonColor: a.zx.Colors.BRAND,
+      confirmButtonColor: s.zx.Colors.BRAND,
       onConfirm: () => (0, d.Ts)(t, e)
     }, n), {
-      children: (0, r.jsx)(s.Text, {
+      children: (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
         children: g.intl.string(g.t.TLkoOj)
       })
-    }))) : (0, s.h7j)(n => (0, r.jsx)(s.ConfirmModal, h(p({
+    }))) : (0, a.h7j)(n => (0, r.jsx)(a.ConfirmModal, f(p({
       header: g.intl.string(g.t.YB9xUF),
       confirmText: g.intl.string(g.t.ts6u6u),
       cancelText: g.intl.string(g.t["ETE/oK"]),
-      confirmButtonColor: a.zx.Colors.BRAND,
+      confirmButtonColor: s.zx.Colors.BRAND,
       onConfirm: () => (0, d.Ts)(t, e)
     }, n), {
-      children: (0, r.jsx)(s.Text, {
+      children: (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
         children: g.intl.string(g.t.BcGGVl)
       })
@@ -95,9 +96,9 @@ function x(e) {
   }, [t, c]);
   return (0, r.jsx)("div", {
     className: n,
-    children: (0, r.jsx)(s.eee, {
+    children: (0, r.jsx)(a.eee, {
       onClick: u,
-      children: (0, r.jsx)(s.Text, {
+      children: (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "text-link",
         children: c ? g.intl.string(g.t.OmpxW1) : g.intl.string(g.t.ozsQBA)

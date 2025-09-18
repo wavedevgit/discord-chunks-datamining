@@ -1,4 +1,4 @@
-/** Chunk was on 93886 **/
+/** Chunk was on 85991 **/
 /** chunk id: 646466, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   O: () => S
@@ -76,7 +76,7 @@ let x = [{
         previewProfileEffectId: t,
         setPreviewProfileEffectId: n
       } = (0, Chunk619899.N9)(),
-      l = Chunk647438.useMemo(() => [b, ...module.map(e => ({
+      i = Chunk647438.useMemo(() => [b, ...module.map(e => ({
         label: e.name,
         value: e.id
       }))], [module]);
@@ -110,7 +110,7 @@ let x = [{
       setPreviewAvatarDecorationId: t
     } = (0, Chunk619899.N9)(), {
       avatarDecorationAssets: n
-    } = (0, Chunk619899.xq)(), l = Chunk647438.useMemo(() => [f, ...require.map(e => ({
+    } = (0, Chunk619899.xq)(), i = Chunk647438.useMemo(() => [f, ...require.map(e => ({
       label: e.name,
       value: e.name
     }))], [require]);
@@ -134,25 +134,25 @@ let x = [{
       clearAssets: t,
       clearIgnoredFiles: n
     } = e, {
-      collectionAssets: l
+      collectionAssets: i
     } = (0, c.xq)(), {
       deleteCollectionAsset: s,
       clearAssets: o
-    } = (0, c.N9)(), d = r.useMemo(() => Object.values(l).map(e => ({
+    } = (0, c.N9)(), d = r.useMemo(() => Object.values(i).map(e => ({
       label: e.name,
       value: e.type
-    })), [l]), u = r.useCallback(e => s(e), [s]), m = r.useCallback(() => {
+    })), [i]), u = r.useCallback(e => s(e), [s]), m = r.useCallback(() => {
       o(), t(), n()
     }, [o, t, n]);
     return 0 === d.length ? null : (0, a.jsxs)(a.Fragment, {
-      children: [(0, a.jsx)(i.LZC, {
+      children: [(0, a.jsx)(l.LZC, {
         size: 16
       }), (0, a.jsxs)("div", {
         className: h.headingContainer,
-        children: [(0, a.jsx)(i.X6q, {
+        children: [(0, a.jsx)(l.X6q, {
           variant: "heading-lg/bold",
           children: "Uploaded Assets"
-        }), (0, a.jsx)(i.zxk, {
+        }), (0, a.jsx)(l.zxk, {
           variant: "critical-primary",
           size: "sm",
           onClick: m,
@@ -161,13 +161,13 @@ let x = [{
       }), (0, a.jsx)("ul", {
         children: d.map(e => (0, a.jsxs)("li", {
           className: h.uploadedFileListItem,
-          children: [(0, a.jsx)(i.hU, {
+          children: [(0, a.jsx)(l.hU, {
             variant: "icon-only",
             size: "sm",
             onClick: () => u(e.value),
-            icon: i.Dio,
+            icon: l.Dio,
             "aria-label": "Remove asset"
-          }), (0, a.jsx)(i.Text, {
+          }), (0, a.jsx)(l.Text, {
             variant: "text-md/normal",
             children: e.label
           })]
@@ -181,14 +181,14 @@ let x = [{
       handleClearIgnoredFiles: n
     } = e;
     return 0 === t.length ? null : (0, a.jsxs)(a.Fragment, {
-      children: [(0, a.jsx)(i.LZC, {
+      children: [(0, a.jsx)(l.LZC, {
         size: 16
       }), (0, a.jsxs)("div", {
         className: h.headingContainer,
-        children: [(0, a.jsx)(i.X6q, {
+        children: [(0, a.jsx)(l.X6q, {
           variant: "heading-lg/bold",
           children: "Ignored Files"
-        }), (0, a.jsx)(i.zxk, {
+        }), (0, a.jsx)(l.zxk, {
           variant: "primary",
           size: "sm",
           onClick: n,
@@ -197,7 +197,7 @@ let x = [{
       }), (0, a.jsx)("ul", {
         children: t.map((e, t) => (0, a.jsx)("li", {
           className: h.ignoredFileListItem,
-          children: (0, a.jsx)(i.Text, {
+          children: (0, a.jsx)(l.Text, {
             variant: "text-md/normal",
             children: e
           })
@@ -210,7 +210,7 @@ let x = [{
       validateShopAssetPackage: e,
       reset: t,
       validationComplete: n,
-      warnings: l,
+      warnings: i,
       errors: s
     } = (0, Chunk206878.g)(), o = Object.entries(Chunk373071), c = Object.entries(Chunk755721), u = Chunk637443.length > 0, p = Chunk619899.length > 0, x = Chunk647438.useCallback(n => {
       t(), e(n)
@@ -250,14 +250,14 @@ let x = [{
           children: Chunk637443.map((e, t) => {
             let [n, r] = e;
             return (0, a.jsxs)("li", {
-              children: [(0, a.jsx)(i.Text, {
+              children: [(0, a.jsx)(l.Text, {
                 variant: "text-md/bold",
                 color: "text-danger",
                 children: n
               }), r.length > 0 && (0, a.jsx)("ul", {
                 className: h.validationIssuesList,
                 children: r.map((e, t) => (0, a.jsx)("li", {
-                  children: (0, a.jsx)(i.Text, {
+                  children: (0, a.jsx)(l.Text, {
                     variant: "text-sm/normal",
                     color: "text-danger",
                     children: e
@@ -278,14 +278,14 @@ let x = [{
           children: Object.entries(Chunk755721).map((e, t) => {
             let [n, r] = e;
             return (0, a.jsxs)("li", {
-              children: [(0, a.jsx)(i.Text, {
+              children: [(0, a.jsx)(l.Text, {
                 variant: "text-md/bold",
                 color: "text-feedback-warning",
                 children: n
               }), r.length > 0 && (0, a.jsx)("ul", {
                 className: h.validationIssuesList,
                 children: r.map((e, t) => (0, a.jsx)("li", {
-                  children: (0, a.jsx)(i.Text, {
+                  children: (0, a.jsx)(l.Text, {
                     variant: "text-sm/normal",
                     color: "text-feedback-warning",
                     children: e

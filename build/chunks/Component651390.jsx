@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 651390, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   c: () => d
 });
@@ -15,9 +16,9 @@ function d(e) {
   let {
     guildId: t
   } = e, n = i.useCallback(() => {
-    s.Z.openMemberVerificationPreviewModal(t)
+    a.Z.openMemberVerificationPreviewModal(t)
   }, [t]);
-  return (0, r.jsxs)(a.P3F, {
+  return (0, r.jsxs)(s.P3F, {
     onClick: n,
     className: c.previewButton,
     children: [(0, r.jsx)(l.xvT, {
@@ -25,7 +26,7 @@ function d(e) {
       variant: "text-sm/semibold",
       color: "text-brand",
       children: o.intl.string(o.t.SKNnqq)
-    }), (0, r.jsx)(a.rgF, {
+    }), (0, r.jsx)(s.rgF, {
       size: "xs",
       color: "currentColor"
     })]

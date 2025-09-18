@@ -1,7 +1,8 @@
 /** Chunk was on 8106 **/
 /** chunk id: 204875, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => a
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -9,9 +10,9 @@ var Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk760564 = require("./760564.js");
 
-function s(e) {
+function a(e) {
   var t, n, {
-      children: s,
+      children: a,
       disabled: o,
       disabledTooltip: c,
       id: d
@@ -52,11 +53,11 @@ function s(e) {
       }
       return e
     }({
-      className: a.tabBarItem,
+      className: s.tabBarItem,
       id: d,
       disabled: o
     }, u), n = n = {
-      children: s
+      children: a
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

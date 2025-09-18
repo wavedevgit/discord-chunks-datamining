@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 69323, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => v
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,25 +17,25 @@ var Chunk951288 = require("./951288.js"),
   Chunk989308 = require("./989308.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e) {
+function v(e) {
   let {
     powerup: t,
     targetRef: n,
-    isCardVisible: _
-  } = e, v = (0, a.e7)([d.Z], () => d.Z.hasLayers()), x = (0, l.f9)(), C = t.skuId === i.A$ ? {
-    title: f.intl.string(g.default.YWo6VF),
-    body: f.intl.string(g.default.gXVvKS),
-    dismissibleContentType: s.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER
+    isCardVisible: v
+  } = e, x = (0, l.e7)([d.Z], () => d.Z.hasLayers()), _ = (0, s.f9)(), b = t.skuId === o.A$ ? {
+    title: g.intl.string(m.default.YWo6VF),
+    body: g.intl.string(m.default.gXVvKS),
+    dismissibleContentType: a.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER
   } : null, h = [];
-  null == C || v || !_ || x || h.push(C.dismissibleContentType);
-  let [b, E] = (0, u.US)(h), I = o.useCallback(() => {
-    E(m.L.INDIRECT_ACTION)
-  }, [E]);
+  null == b || x || !v || _ || h.push(b.dismissibleContentType);
+  let [j, C] = (0, u.US)(h), E = i.useCallback(() => {
+    C(f.L.INDIRECT_ACTION)
+  }, [C]);
   return ((0, p.Z)({
     targetRef: n,
-    onShouldClose: I,
-    enabled: null != b
-  }), null == C || null == b) ? null : (0, r.jsx)(c.J2, {
+    onShouldClose: E,
+    enabled: null != j
+  }), null == b || null == j) ? null : (0, r.jsx)(c.J2, {
     targetElementRef: n,
     shouldShow: true,
     position: "right",
@@ -44,10 +44,10 @@ function _(e) {
     caretConfig: {
       align: "start"
     },
-    title: C.title,
-    body: C.body,
+    title: b.title,
+    body: b.body,
     onRequestClose: () => {
-      E(m.L.USER_DISMISS)
+      C(f.L.USER_DISMISS)
     }
   })
 }

@@ -1,9 +1,9 @@
 /** Chunk was on 85683 **/
 /** chunk id: 331500, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => y
 });
-var r, i, Chunk951288 = require("./951288.js"),
+var r, a, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
@@ -17,7 +17,7 @@ var r, i, Chunk951288 = require("./951288.js"),
   Chunk401561 = require("./401561.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk134977 = require("./134977.js");
-let P = (r = function(e) {
+let x = (r = function(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,53 +34,53 @@ let P = (r = function(e) {
     })
   }
   return e
-}({}, Chunk473682.T9), i = i = {
+}({}, Chunk473682.T9), a = a = {
   initialStep: Chunk473682.Vb.SERVER_SETTINGS
-}, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+}, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
     n.push.apply(n, r)
   }
   return n
-})(Object(i)).forEach(function(e) {
-  Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
+})(Object(a)).forEach(function(e) {
+  Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
 }), r);
 
-function j(e) {
+function y(e) {
   let {
     guildId: t
   } = e;
-  o.useEffect(() => {
-    (0, u.po)(t)
+  s.useEffect(() => {
+    (0, d.po)(t)
   }, [t]);
-  let n = (0, l.Wu)([m.Z], () => {
-    let e = m.Z.getStateForGuild(t);
+  let n = (0, o.Wu)([b.Z], () => {
+    let e = b.Z.getStateForGuild(t);
     return (null == e ? true : e.catalog) != null ? Object.values(e.catalog) : []
   });
-  return 0 === n.length ? (0, a.jsx)("div", {
-    className: y.container,
-    children: (0, a.jsx)(c.$jN, {
-      type: c.RAz.SPINNING_CIRCLE,
-      className: y.spinner
+  return 0 === n.length ? (0, i.jsx)("div", {
+    className: g.container,
+    children: (0, i.jsx)(l.$jN, {
+      type: l.RAz.SPINNING_CIRCLE,
+      className: g.spinner
     })
-  }) : (0, a.jsxs)("div", {
-    className: y.container,
-    children: [(0, a.jsx)(s.X6q, {
+  }) : (0, i.jsxs)("div", {
+    className: g.container,
+    children: [(0, i.jsx)(c.X6q, {
       variant: "heading-md/semibold",
-      children: v.intl.string(f.default.jeYp1t)
-    }), (0, a.jsx)("div", {
-      className: y.gameContainer,
-      children: n.map((e, n) => (0, a.jsx)(p.Z, {
-        className: y.game,
+      children: v.intl.string(j.default.jeYp1t)
+    }), (0, i.jsx)("div", {
+      className: g.gameContainer,
+      children: n.map((e, n) => (0, i.jsx)(m.Z, {
+        className: g.game,
         game: e,
-        onClick: () => (0, g.Z)({
+        onClick: () => (0, f.Z)({
           guildId: t,
-          stepConfig: P,
+          stepConfig: x,
           initialPortkeyGame: e,
-          analyticsLocation: d.Z.PORTKEY_OVERVIEW
+          analyticsLocation: u.Z.PORTKEY_OVERVIEW
         }),
-        imageClassName: y.image
+        imageClassName: g.image
       }, "sidebar-game-".concat(n, "-").concat(e.id)))
     })]
   })

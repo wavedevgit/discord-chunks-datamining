@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 639660, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => b
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk793030 = require("./793030.js"),
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk547885 = require("./547885.js");
 
-function x() {
+function _() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk547885.staffContainer,
     children: (0, Chunk951288.jsx)(Chunk793030.xvT, {
@@ -29,39 +29,39 @@ function x() {
   })
 }
 
-function C(e) {
+function b(e) {
   let {
     guildId: t
-  } = e, n = (0, i.e7)([l.Z], () => {
+  } = e, n = (0, o.e7)([s.Z], () => {
     var e;
-    return (null == (e = l.Z.getGuild(t)) ? true : e.features.has(g.oNc.PREMIUM_TIER_3_OVERRIDE)) === true
-  }), C = (0, c.Z)(t), h = C.length > 0, {
-    shouldShow: b,
-    notificationConfig: E
-  } = (0, m._)(t, "GuildPowerupNotificationContainer"), I = [];
-  b && I.push(a.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION);
-  let [T, j] = (0, s.ZT)(I, t), P = null != T && null != E, y = [];
-  P || h || y.push(a.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK);
-  let [S, N] = (0, s.US)(y), Z = (e => {
+    return (null == (e = s.Z.getGuild(t)) ? true : e.features.has(m.oNc.PREMIUM_TIER_3_OVERRIDE)) === true
+  }), b = (0, c.Z)(t), h = b.length > 0, {
+    shouldShow: j,
+    notificationConfig: C
+  } = (0, f._)(t, "GuildPowerupNotificationContainer"), E = [];
+  j && E.push(l.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION);
+  let [I, w] = (0, a.ZT)(E, t), Z = null != I && null != C, P = [];
+  Z || h || P.push(l.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK);
+  let [y, T] = (0, a.US)(P), N = (e => {
     let n = [];
     return h && n.push((0, r.jsx)(p.Z, {
       guildId: t,
-      powerups: C
-    }, "expiring-powerups")), P && n.push((0, r.jsx)(d.Z, {
-      notificationConfig: E,
+      powerups: b
+    }, "expiring-powerups")), Z && n.push((0, r.jsx)(d.Z, {
+      notificationConfig: C,
       markAsDismissed: e => {
-        j(e)
+        w(e)
       }
-    }, "rollback-notification")), null != e && e === a.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK && n.push((0, r.jsx)(u.Z, {
-      markAsDismissed: N
+    }, "rollback-notification")), null != e && e === l.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK && n.push((0, r.jsx)(u.Z, {
+      markAsDismissed: T
     }, "info-card")), n
-  })(S);
-  return 0 !== Z.length || n ? (0, r.jsxs)("div", {
-    className: v.container,
-    children: [(0, r.jsx)(o.xvT, {
+  })(y);
+  return 0 !== N.length || n ? (0, r.jsxs)("div", {
+    className: x.container,
+    children: [(0, r.jsx)(i.xvT, {
       variant: "eyebrow",
       color: "text-secondary",
-      children: _.intl.string(f.default["3FRira"])
-    }), n && (0, r.jsx)(x, {}), Z.map(e => e)]
+      children: v.intl.string(g.default["3FRira"])
+    }), n && (0, r.jsx)(_, {}), N.map(e => e)]
   }) : null
 }

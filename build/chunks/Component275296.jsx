@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 275296, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => d
 }), require("./997841.js");
@@ -15,7 +16,7 @@ let d = e => {
   let {
     role: t
   } = e;
-  return (0, l.yE)(t.flags, s.aO5.IN_PROMPT) ? (0, a.F)(t) ? (0, r.jsxs)("div", {
+  return (0, l.yE)(t.flags, a.aO5.IN_PROMPT) ? (0, s.F)(t) ? (0, r.jsxs)("div", {
     className: c.notice,
     children: [(0, r.jsx)(i.Mgn, {
       size: "custom",

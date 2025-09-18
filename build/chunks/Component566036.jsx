@@ -1,12 +1,13 @@
 /** Chunk was on 8106 **/
 /** chunk id: 566036, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  s = require.n(Chunk392711),
   Chunk481060 = require("./481060.js"),
   Chunk510231 = require("./510231.js"),
   Chunk434404 = require("./434404.js"),
@@ -15,18 +16,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk448369 = require("./448369.js"),
   Chunk270856 = require("./270856.js");
-let h = () => null;
+let f = () => null;
 
-function f(e) {
+function h(e) {
   let {
     gameApplicationIds: t,
     handleChange: n,
     disabled: i
   } = e, {
     options: l,
-    matchSorterOptions: a
+    matchSorterOptions: s
   } = (0, o.h)();
-  return (0, r.jsx)(s.VcW, {
+  return (0, r.jsx)(a.VcW, {
     multi: true,
     hidePills: true,
     wrapperClassName: g.selectWrapper,
@@ -35,14 +36,14 @@ function f(e) {
     placeholder: m.intl.string(m.t.JTLolJ),
     onChange: n,
     isDisabled: 20 === t.length || i,
-    matchSorterOptions: a,
+    matchSorterOptions: s,
     clearQueryOnSelect: true,
     customPillContainerClassName: g.pills,
-    renderCustomPill: h
+    renderCustomPill: f
   })
 }
 
-function b(e) {
+function x(e) {
   let {
     gameApplicationIds: t,
     onRemoveGame: n,
@@ -58,14 +59,14 @@ function b(e) {
     }, e))
   })
 }
-let x = [];
+let b = [];
 
 function j(e) {
   var t;
   let {
     profile: n,
     canManageGuild: l
-  } = e, o = n.id, d = null != (t = null == n ? true : n.gameApplicationIds) ? t : x, h = i.useCallback(e => {
+  } = e, o = n.id, d = null != (t = null == n ? true : n.gameApplicationIds) ? t : b, f = i.useCallback(e => {
     c.Z.updateGuildProfile(o, {
       gameApplicationIds: e
     })
@@ -74,31 +75,31 @@ function j(e) {
     c.Z.updateGuildProfile(o, {
       gameApplicationIds: t
     })
-  }, [o, d]), v = i.useRef(d), _ = i.useMemo(() => (a().isEqual(new Set(d), new Set(v.current)) || (v.current = [...d]), v.current), [d]);
-  return (0, r.jsxs)(s.hjN, {
+  }, [o, d]), v = i.useRef(d), _ = i.useMemo(() => (s().isEqual(new Set(d), new Set(v.current)) || (v.current = [...d]), v.current), [d]);
+  return (0, r.jsxs)(a.hjN, {
     className: p.section,
     children: [(0, r.jsxs)("div", {
       className: p.sectionHeader,
-      children: [(0, r.jsx)(s.vwX, {
+      children: [(0, r.jsx)(a.vwX, {
         children: m.intl.string(m.t.BR68vL)
-      }), (0, r.jsx)(s.R94, {
-        type: s.geA.DESCRIPTION,
+      }), (0, r.jsx)(a.R94, {
+        type: a.geA.DESCRIPTION,
         children: m.intl.string(m.t.MobxiI)
       })]
     }), (0, r.jsxs)("div", {
       className: g.sectionBody,
-      children: [(0, r.jsx)(f, {
+      children: [(0, r.jsx)(h, {
         gameApplicationIds: d,
-        handleChange: h,
+        handleChange: f,
         disabled: !l
-      }), (0, r.jsx)(b, {
+      }), (0, r.jsx)(x, {
         gameApplicationIds: _,
         onRemoveGame: j,
         disabled: !l
       }), (0, r.jsx)(u.Z, {
         guildId: o,
         selectedGameApplicationIds: d,
-        onUpdateGames: h,
+        onUpdateGames: f,
         disabled: !l
       })]
     })]

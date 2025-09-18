@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 578053, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   g: () => v,
   u: () => _
@@ -18,9 +19,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk594174 = require("./594174.js"),
   Chunk434404 = require("./434404.js"),
   Chunk388032 = require("./388032.jsx");
-let b = "NO_CHANNEL";
+let x = "NO_CHANNEL";
 
-function x(e) {
+function b(e) {
   return {
     value: e.id,
     label: (0, c.F6)(e, p.default, g.Z),
@@ -35,12 +36,12 @@ function j(e) {
   } = e, {
     label: n,
     channel: l,
-    category: a
+    category: s
   } = t, o = i.useMemo(() => (0, d.KS)(l), [l]), u = (0, c.ZP)(l);
-  return (0, r.jsx)(s.ZZ$, {
+  return (0, r.jsx)(a.ZZ$, {
     title: n,
     icon: o,
-    subtitle: null != a ? u : null
+    subtitle: null != s ? u : null
   })
 }
 
@@ -48,8 +49,8 @@ function v(e) {
   let {
     canManageGuild: t,
     guildId: n,
-    afkChannelId: s
-  } = e, c = (0, a.e7)([m.Z], () => m.Z.getCategories(n)), d = i.useMemo(() => {
+    afkChannelId: a
+  } = e, c = (0, s.e7)([m.Z], () => m.Z.getCategories(n)), d = i.useMemo(() => {
     let e = (0, o.Z)(c._categories, c).filter(e => {
       let {
         channel: t
@@ -59,20 +60,20 @@ function v(e) {
       let {
         channel: t
       } = e;
-      return x(t)
+      return b(t)
     });
     return e.unshift({
-      value: b,
-      label: f.intl.string(f.t.wGiHkJ)
+      value: x,
+      label: h.intl.string(h.t.wGiHkJ)
     }), e
   }, [c]), u = i.useCallback(e => {
-    let t = e === b ? null : e;
-    h.Z.updateGuild({
+    let t = e === x ? null : e;
+    f.Z.updateGuild({
       afkChannelId: t
     })
   }, []);
   return (0, r.jsx)(O, {
-    value: null != s ? s : b,
+    value: null != a ? a : x,
     options: d,
     canManageGuild: t,
     onChange: u
@@ -83,8 +84,8 @@ function _(e) {
   let {
     canManageGuild: t,
     guildId: n,
-    systemChannelId: s
-  } = e, c = (0, a.e7)([m.Z], () => m.Z.getCategories(n)), d = i.useMemo(() => {
+    systemChannelId: a
+  } = e, c = (0, s.e7)([m.Z], () => m.Z.getCategories(n)), d = i.useMemo(() => {
     let e = (0, o.Z)(c._categories, c).filter(e => {
       let {
         channel: t
@@ -94,20 +95,20 @@ function _(e) {
       let {
         channel: t
       } = e;
-      return x(t)
+      return b(t)
     });
     return e.unshift({
-      value: b,
-      label: f.intl.string(f.t.ibUhoa)
+      value: x,
+      label: h.intl.string(h.t.ibUhoa)
     }), e
   }, [c]), u = i.useCallback(e => {
-    let t = e === b ? null : e;
-    h.Z.updateGuild({
+    let t = e === x ? null : e;
+    f.Z.updateGuild({
       systemChannelId: t
     })
   }, []);
   return (0, r.jsx)(O, {
-    value: null != s ? s : b,
+    value: null != a ? a : x,
     options: d,
     canManageGuild: t,
     onChange: u
@@ -119,17 +120,17 @@ function O(e) {
     value: t,
     options: n,
     canManageGuild: l,
-    onChange: a
+    onChange: s
   } = e, o = i.useCallback(e => {
     if (null != e) return (0, r.jsx)(j, {
       option: e
     })
   }, []), c = i.useCallback(e => o(e[0]), [o]);
-  return (0, r.jsx)(s.q4e, {
+  return (0, r.jsx)(a.q4e, {
     value: t,
     options: n,
     isDisabled: !l,
-    onChange: a,
+    onChange: s,
     renderOptionLabel: o,
     renderOptionValue: c
   })

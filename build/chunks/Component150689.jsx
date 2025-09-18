@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 150689, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => c
 }), require("./388685.js"), require("./781311.js");
@@ -17,22 +18,22 @@ function c(e) {
     everyoneRole: c,
     otherRoles: d,
     setSelectedSection: u
-  } = e, [m, g] = i.useState(""), [p, h] = i.useState(o.Cl), f = m.trim(), b = i.useMemo(() => d.filter(e => (0, l.uo)(e, f)), [d, f]), x = i.useCallback(() => (0, r.jsx)(s.Z, {
+  } = e, [m, g] = i.useState(""), [p, f] = i.useState(o.Cl), h = m.trim(), x = i.useMemo(() => d.filter(e => (0, l.uo)(e, h)), [d, h]), b = i.useCallback(() => (0, r.jsx)(a.Z, {
     guild: n,
     everyoneRole: c,
-    filteredRoles: b,
+    filteredRoles: x,
     setEditRoleId: t,
     query: m,
     setQuery: g,
-    setHeaderHeight: h
-  }, "header"), [n, c, b, t, m]);
-  return (0, r.jsx)(a.Z, {
+    setHeaderHeight: f
+  }, "header"), [n, c, x, t, m]);
+  return (0, r.jsx)(s.Z, {
     setEditRoleId: t,
     guild: n,
     everyoneRole: c,
     otherRoles: d,
     setSelectedSection: u,
-    renderHeader: x,
+    renderHeader: b,
     headerHeight: p,
     query: m
   })

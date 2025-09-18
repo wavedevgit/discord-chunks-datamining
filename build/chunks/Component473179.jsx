@@ -1,7 +1,7 @@
 /** Chunk was on 27278 **/
 /** chunk id: 473179, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => l
 });
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
@@ -9,18 +9,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function c(e) {
+function l(e) {
   let {
     onClose: n,
     onSelect: t,
-    application: c,
+    application: l,
     channelId: u
-  } = e, s = (0, i.Z)(c, u, l.IlC.POPOUT);
-  return (0, r.jsx)(o.v2r, {
+  } = e, _ = (0, a.Z)(l, u, i.IlC.POPOUT);
+  return (0, o.jsx)(r.v2r, {
     navId: "activity-popout-overflow-popout",
     onClose: n,
     onSelect: t,
-    "aria-label": a.intl.string(a.t.SS9Y6O),
-    children: s
+    "aria-label": c.intl.string(c.t.SS9Y6O),
+    children: _
   })
 }

@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 229190, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => c
 });
@@ -17,28 +18,28 @@ function o(e) {
     onSecondaryColorChange: c
   } = e, d = i.useRef(null);
   return (0, l.Tbt)(d), (0, r.jsxs)("div", {
-    className: s.popoutContainer,
+    className: a.popoutContainer,
     children: [(0, r.jsx)(l.Text, {
       variant: "text-xs/semibold",
       color: "header-secondary",
-      className: s.customColorsHeader,
-      children: a.intl.string(a.t.JhNpg4)
+      className: a.customColorsHeader,
+      children: s.intl.string(s.t.JhNpg4)
     }), (0, r.jsxs)("div", {
       ref: d,
-      className: s.colorPickersContainer,
+      className: a.colorPickersContainer,
       children: [(0, r.jsxs)("div", {
-        className: s.colorColumn,
+        className: a.colorColumn,
         children: [(0, r.jsx)("div", {
-          className: s.colorSwatch,
+          className: a.colorSwatch,
           style: {
             backgroundColor: n.primary
           }
         }), (0, r.jsx)(l.Text, {
           variant: "text-xs/medium",
           color: "text-default",
-          children: a.intl.string(a.t.C3KTQk)
+          children: s.intl.string(s.t.C3KTQk)
         }), (0, r.jsx)(l.Z$W, {
-          className: s.colorPicker,
+          className: a.colorPicker,
           value: n.primary,
           eagerUpdate: true,
           wrapperComponentType: "div",
@@ -46,18 +47,18 @@ function o(e) {
           onChange: o
         })]
       }), t && (0, r.jsxs)("div", {
-        className: s.colorColumn,
+        className: a.colorColumn,
         children: [(0, r.jsx)("div", {
-          className: s.colorSwatch,
+          className: a.colorSwatch,
           style: {
             backgroundColor: n.secondary
           }
         }), (0, r.jsx)(l.Text, {
           variant: "text-xs/medium",
           color: "text-default",
-          children: a.intl.string(a.t["8elvy8"])
+          children: s.intl.string(s.t["8elvy8"])
         }), (0, r.jsx)(l.Z$W, {
-          className: s.colorPicker,
+          className: a.colorPicker,
           value: n.secondary,
           eagerUpdate: true,
           wrapperComponentType: "div",
@@ -74,8 +75,8 @@ function c(e) {
     shouldShow: t,
     showSecondaryColor: n,
     onRequestClose: i,
-    children: a,
-    palette: s,
+    children: s,
+    palette: a,
     onPrimaryColorChange: c,
     onSecondaryColorChange: d,
     popoutTargetRef: u
@@ -84,7 +85,7 @@ function c(e) {
     targetElementRef: u,
     renderPopout: () => (0, r.jsx)(o, {
       showSecondaryColor: n,
-      palette: s,
+      palette: a,
       onPrimaryColorChange: c,
       onSecondaryColorChange: d
     }),
@@ -93,6 +94,6 @@ function c(e) {
     onRequestClose: i,
     animation: l.yRy.Animation.TRANSLATE,
     animationPosition: "right",
-    children: a
+    children: s
   })
 }

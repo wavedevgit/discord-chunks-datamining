@@ -1,15 +1,16 @@
 /** Chunk was on 8106 **/
 /** chunk id: 526717, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => a
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk768581 = require("./768581.js"),
   Chunk776155 = require("./776155.js"),
   Chunk981631 = require("./981631.js");
 
-function s(e, t, n) {
-  var s, o;
+function a(e, t, n) {
+  var a, o;
   let {
     isLoading: c,
     error: d,
@@ -27,22 +28,22 @@ function s(e, t, n) {
       }(null == m || null == (e = m.role_subscription) ? true : e.group_listings),
       r = null == m || null == (t = m.role_subscription) ? true : t.benefit_emojis;
     return null == r ? true : r.filter(e => e.roles.some(e => n.has(e)))
-  }, [null == m ? true : m.role_subscription]), p = null == m ? true : m.guild.icon_hash, h = i.ZP.getGuildIconURL({
+  }, [null == m ? true : m.role_subscription]), p = null == m ? true : m.guild.icon_hash, f = i.ZP.getGuildIconURL({
     id: e,
     icon: p,
     size: n
-  }), f = r.useMemo(() => null != g && g.length > t ? g.slice(0, t) : g, [g, t]), b = null != g && g.length > t ? g.length - t : null, x = null == u ? true : u.slug, j = null != x ? a.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(x) : true, v = null == m || null == (s = m.guild) ? true : s.name, _ = null == m || null == (o = m.role_subscription) ? true : o.subscriber_count, O = !c && null != v && null != p && null != h;
+  }), h = r.useMemo(() => null != g && g.length > t ? g.slice(0, t) : g, [g, t]), x = null != g && g.length > t ? g.length - t : null, b = null == u ? true : u.slug, j = null != b ? s.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(b) : true, v = null == m || null == (a = m.guild) ? true : a.name, _ = null == m || null == (o = m.role_subscription) ? true : o.subscriber_count, O = !c && null != v && null != p && null != f;
   return O ? {
     hasAllImperativeDetails: O,
     isLoading: c,
     details: {
       guildName: v,
       guildIcon: p,
-      guildAvatarUrl: h,
+      guildAvatarUrl: f,
       storePageUrl: j,
       subscriberCount: _,
-      emojisToShow: f,
-      notShownEmojiCount: b
+      emojisToShow: h,
+      notShownEmojiCount: x
     }
   } : {
     hasAllImperativeDetails: O,

@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 717251, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => c
 }), require("./953529.js");
@@ -16,7 +17,7 @@ function c(e) {
     title: t,
     description: n,
     action: i,
-    highlightColor: c = s.q.NONE,
+    highlightColor: c = a.q.NONE,
     selected: d = false,
     subsection: u = null,
     onClick: m,
@@ -25,7 +26,7 @@ function c(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: l()(o.container, g),
-    children: [(0, r.jsx)(a.P3F, {
+    children: [(0, r.jsx)(s.P3F, {
       className: l()(o.clickableContainer, {
         [o.noAction]: null == m,
         [o.disabled]: p
@@ -39,11 +40,11 @@ function c(e) {
         }),
         children: [(0, r.jsxs)("div", {
           className: o.settingsDescriptionContainer,
-          children: [(0, r.jsx)(a.Text, {
+          children: [(0, r.jsx)(s.Text, {
             variant: "text-sm/medium",
             color: "interactive-active",
             children: t
-          }), (0, r.jsx)(a.Text, {
+          }), (0, r.jsx)(s.Text, {
             variant: "text-sm/normal",
             color: "interactive-normal",
             className: o.description,

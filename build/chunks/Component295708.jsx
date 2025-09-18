@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 295708, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => c
 }), require("./388685.js");
@@ -51,10 +52,10 @@ function c(e) {
     },
     onClick: e => e.stopPropagation(),
     onKeyDown: e => {
-      e.which === s.yXg.SPACE && e.stopPropagation()
+      e.which === a.yXg.SPACE && e.stopPropagation()
     },
     placeholder: o.intl.string(o.t["5AO43N"]),
-    maxLength: a.OU,
+    maxLength: s.OU,
     value: c
   })
 }

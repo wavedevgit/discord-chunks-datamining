@@ -1,12 +1,12 @@
-/** Chunk was on 72853 **/
+/** Chunk was on 85991 **/
 /** chunk id: 762756, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => v
 }), require("./388685.js");
-var r, Chunk951288 = require("./951288.js"),
+var a, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk873546 = require("./873546.js"),
   Chunk481060 = require("./481060.js"),
   Chunk599857 = require("./599857.jsx"),
@@ -16,7 +16,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk222198 = require("./222198.js");
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,22 +24,22 @@ function y(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let g = Chunk63063.Z.getArticleURL(Chunk981631.BhN.VERIFICATION_FAQ);
-class b extends(r = Chunk647438.PureComponent) {
+let f = Chunk63063.Z.getArticleURL(Chunk981631.BhN.VERIFICATION_FAQ);
+class g extends(a = Chunk647438.PureComponent) {
   renderFields() {
     let {
       types: e,
       captchaKey: t,
       theme: n,
-      onCaptchaVerify: r
+      onCaptchaVerify: a
     } = this.props;
     return (0, Chunk951288.jsx)(Chunk951288.Fragment, {
-      children: module.map(e => e === p.PUi.CAPTCHA ? (0, i.jsx)(u.Z, {
-        onVerify: r,
+      children: module.map(e => e === h.PUi.CAPTCHA ? (0, r.jsx)(d.Z, {
+        onVerify: a,
         theme: n
-      }, t) : (0, i.jsx)(s.zxk, {
+      }, t) : (0, r.jsx)(c.zxk, {
         onClick: () => this.handleClick(e),
-        text: f.Z.getButtonTitle(e)
+        text: m.Z.getButtonTitle(e)
       }, e))
     })
   }
@@ -53,7 +53,7 @@ class b extends(r = Chunk647438.PureComponent) {
       children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         gap: 16,
         fullWidth: false,
-        className: o()(Chunk222198.container, {
+        className: s()(Chunk222198.container, {
           [Chunk222198.isMobile]: Chunk873546.tq
         }),
         align: "center",
@@ -78,7 +78,7 @@ class b extends(r = Chunk647438.PureComponent) {
             }), (0, Chunk951288.jsx)(Chunk481060.Text, {
               variant: "text-md/normal",
               children: Chunk388032.intl.format(Chunk388032.t["0rqMV1"], {
-                helpCenterURL: g
+                helpCenterURL: f
               })
             })]
           })]
@@ -110,7 +110,7 @@ class b extends(r = Chunk647438.PureComponent) {
               supportURL: Chunk63063.Z.getSubmitRequestURL()
             })
           }), (0, Chunk951288.jsx)("div", {
-            className: o()(Chunk222198.footer, Chunk222198.footerBullet),
+            className: s()(Chunk222198.footer, Chunk222198.footerBullet),
             children: "•"
           }), (0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-sm/semibold",
@@ -124,7 +124,7 @@ class b extends(r = Chunk647438.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), y(this, "handleClick", e => {
+    super(...e), b(this, "handleClick", e => {
       let {
         onClick: t
       } = this.props;
@@ -132,9 +132,9 @@ class b extends(r = Chunk647438.PureComponent) {
     })
   }
 }
-y(b, "defaultProps", {
+b(g, "defaultProps", {
   types: [Chunk981631.PUi.CAPTCHA],
   onCaptchaVerify: Chunk981631.dG4,
   onLogout: Chunk981631.dG4
 });
-let E = b
+let v = g

@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 976983, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   B: () => v,
   Z: () => j
@@ -9,7 +10,7 @@ require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
-  s = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk481060 = require("./481060.js"),
   Chunk668781 = require("./668781.js"),
   Chunk603211 = require("./603211.js"),
@@ -20,7 +21,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk900492 = require("./900492.js");
 
-function b(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +40,7 @@ function b(e) {
   return e
 }
 
-function x(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,7 +54,7 @@ function x(e, t) {
 }
 
 function j(e) {
-  var t, i, a, c;
+  var t, i, s, c;
   let {
     guild: j,
     prompt: v,
@@ -64,7 +65,7 @@ function j(e) {
     onDragStart: N,
     onDragComplete: E,
     onDragReset: I
-  } = e, S = null, T = s().findIndex(v.options, e => e.id === y.id), {
+  } = e, S = null, T = a().findIndex(v.options, e => e.id === y.id), {
     drag: P,
     dragSourcePosition: w,
     drop: R,
@@ -80,18 +81,18 @@ function j(e) {
     customEmoji: D,
     unicodeEmoji: A
   } = (0, u.Z)(null == (t = y.emoji) ? true : t.id, null == (i = y.emoji) ? true : i.name);
-  return (0, p.Oq)(y.emoji) || null != D || null != A || (S = h.intl.string(h.t["61wfmp"])), (0, r.jsxs)(o.P3F, {
-    className: l()(f.optionCard, {
-      [f.hasError]: C || null != S,
-      [f.dropIndicatorBefore]: null != w && T < w,
-      [f.dropIndicatorAfter]: null != w && T > w,
-      [f.singleColumn]: _
+  return (0, p.Oq)(y.emoji) || null != D || null != A || (S = f.intl.string(f.t["61wfmp"])), (0, r.jsxs)(o.P3F, {
+    className: l()(h.optionCard, {
+      [h.hasError]: C || null != S,
+      [h.dropIndicatorBefore]: null != w && T < w,
+      [h.dropIndicatorAfter]: null != w && T > w,
+      [h.singleColumn]: _
     }),
     onClick: () => (0, o.ZDy)(async () => {
       let {
         default: e
       } = await n.e("1862").then(n.bind(n, 801001));
-      return t => (0, r.jsx)(e, x(b({}, t), {
+      return t => (0, r.jsx)(e, b(x({}, t), {
         guild: j,
         prompt: v,
         option: y,
@@ -114,30 +115,30 @@ function j(e) {
       P(R(e))
     },
     children: [(0, r.jsx)("div", {
-      className: f.dragContainer,
+      className: h.dragContainer,
       children: (0, r.jsx)(o.Vni, {
         size: "xs",
         color: "currentColor",
-        className: f.__invalid_dragIcon
+        className: h.__invalid_dragIcon
       })
     }), (0, r.jsxs)("div", {
-      className: f.optionCardRow,
+      className: h.optionCardRow,
       children: [(0, r.jsx)("div", {
-        className: f.emoji,
+        className: h.emoji,
         children: (0, r.jsx)(m.Z, {
-          emojiId: null == (a = y.emoji) ? true : a.id,
+          emojiId: null == (s = y.emoji) ? true : s.id,
           emojiName: null == (c = y.emoji) ? true : c.name,
           defaultComponent: null
         })
       }), (0, r.jsxs)("div", {
-        className: f.text,
+        className: h.text,
         children: [(0, r.jsx)(o.Text, {
           variant: "text-md/medium",
           color: "header-primary",
           lineClamp: 1,
           children: y.title
         }), "" !== y.description && (0, r.jsx)(o.Text, {
-          className: f.description,
+          className: h.description,
           variant: "text-xs/normal",
           color: "header-secondary",
           children: y.description
@@ -155,50 +156,50 @@ function v(e) {
   let {
     guild: t,
     prompt: i,
-    promptIndex: a,
-    singleColumn: s
+    promptIndex: s,
+    singleColumn: a
   } = e, d = () => {
     (0, o.ZDy)(async () => {
       let {
         default: e
       } = await n.e("1862").then(n.bind(n, 801001));
-      return n => (0, r.jsx)(e, x(b({}, n), {
+      return n => (0, r.jsx)(e, b(x({}, n), {
         guild: t,
         prompt: i,
         onSave: e => (0, g.Kk)(t, i.id, {
           options: [...i.options, e]
         }),
         onDelete: () => {},
-        index: a
+        index: s
       }))
     })
   };
   return (0, r.jsx)(o.P3F, {
-    className: l()(f.optionCard, f.addOptionCard, {
-      [f.addFirstOptionCard]: 0 === i.options.length,
-      [f.singleColumn]: s
+    className: l()(h.optionCard, h.addOptionCard, {
+      [h.addFirstOptionCard]: 0 === i.options.length,
+      [h.singleColumn]: a
     }),
     onClick: () => {
       i.options.length + 1 === p.fY ? c.Z.show({
-        title: h.intl.string(h.t.TggC7u),
-        body: h.intl.formatToPlainString(h.t.kPQKam, {
+        title: f.intl.string(f.t.TggC7u),
+        body: f.intl.formatToPlainString(f.t.kPQKam, {
           thresholdCount: p.fY
         }),
-        confirmText: h.intl.string(h.t.BddRzc),
-        cancelText: h.intl.string(h.t["ETE/oK"]),
+        confirmText: f.intl.string(f.t.BddRzc),
+        cancelText: f.intl.string(f.t["ETE/oK"]),
         onConfirm: d
       }) : d()
     },
     children: (0, r.jsxs)("div", {
-      className: f.optionCardRow,
+      className: h.optionCardRow,
       children: [(0, r.jsx)(o.oFk, {
         size: "md",
         color: "currentColor",
-        className: f.plusIcon
+        className: h.plusIcon
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        children: h.intl.string(h.t.Ty3lgo)
+        children: f.intl.string(f.t.Ty3lgo)
       })]
     })
   })

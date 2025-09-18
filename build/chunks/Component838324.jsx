@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 838324, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => p
 }), require("./388685.js");
@@ -20,12 +21,12 @@ function p(e) {
   let {
     guildId: t,
     scrollToQuestions: n
-  } = e, p = (0, i.e7)([s.Z], () => s.Z.isAdvancedMode(t)), h = (0, i.e7)([c.Z], () => c.Z.editedDefaultChannelIds), [f, b] = (0, o.VF)(t, h), [x, j] = (0, d.OA)(t, [...h]), v = p ? j.length : b.length, _ = p ? x.length : f.length, O = v < u.md, y = _ >= u.X, C = j.length - b.length, N = (0, r.jsx)(a.owK, {
+  } = e, p = (0, i.e7)([a.Z], () => a.Z.isAdvancedMode(t)), f = (0, i.e7)([c.Z], () => c.Z.editedDefaultChannelIds), [h, x] = (0, o.VF)(t, f), [b, j] = (0, d.OA)(t, [...f]), v = p ? j.length : x.length, _ = p ? b.length : h.length, O = v < u.md, y = _ >= u.X, C = j.length - x.length, N = (0, r.jsx)(s.owK, {
     size: "sm",
     color: l.Z.unsafe_rawColors.BRAND_500.css,
     secondaryColor: l.Z.unsafe_rawColors.WHITE_100.css,
     className: g.icon
-  }), E = (0, r.jsx)(a.k$p, {
+  }), E = (0, r.jsx)(s.k$p, {
     size: "sm",
     className: g.icon,
     color: l.Z.colors.WHITE.css,
@@ -35,26 +36,26 @@ function p(e) {
     className: g.container,
     children: [(0, r.jsxs)("div", {
       className: g.header,
-      children: [(0, r.jsx)(a.Text, {
+      children: [(0, r.jsx)(s.Text, {
         variant: "text-xs/bold",
         color: "text-brand",
         children: m.intl.format(m.t.kvroKC, {
           count: _
         })
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(s.Text, {
         variant: "text-xs/bold",
         color: "text-muted",
         children: m.intl.format(m.t["0MjxJy"], {
           count: v
         })
       })]
-    }), (0, r.jsx)(a.yGy, {
+    }), (0, r.jsx)(s.yGy, {
       foregroundColors: S,
       percents: I,
-      size: a.yGy.Sizes.XSMALL
+      size: s.yGy.Sizes.XSMALL
     }), (0, r.jsxs)("div", {
       className: g.requiredItem,
-      children: [O ? E : N, (0, r.jsx)(a.Text, {
+      children: [O ? E : N, (0, r.jsx)(s.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         children: m.intl.format(m.t.k0COZW, {
@@ -63,7 +64,7 @@ function p(e) {
       })]
     }), (0, r.jsxs)("div", {
       className: g.requiredItem,
-      children: [y ? N : E, (0, r.jsx)(a.Text, {
+      children: [y ? N : E, (0, r.jsx)(s.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         children: m.intl.format(m.t.PwXgS0, {
@@ -73,31 +74,31 @@ function p(e) {
     }), p && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
         className: g.requiredItem,
-        children: [(0, r.jsx)(a.d3s, {
+        children: [(0, r.jsx)(s.d3s, {
           size: "sm",
           color: l.Z.colors.WHITE.css,
           secondaryColor: l.Z.colors.BACKGROUND_ACCENT.css,
           className: g.icon
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-muted",
           children: m.intl.string(m.t.AyvkOD)
         })]
       }), (0, r.jsxs)("div", {
         className: g.requiredItem,
-        children: [(0, r.jsx)(a.d3s, {
+        children: [(0, r.jsx)(s.d3s, {
           size: "sm",
           color: l.Z.colors.WHITE.css,
           secondaryColor: l.Z.colors.BACKGROUND_ACCENT.css,
           className: g.icon
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-muted",
           children: m.intl.format(m.t["8Geut7"], {
             count: C,
-            prejoinHook: e => (0, r.jsx)(a.eee, {
+            prejoinHook: e => (0, r.jsx)(s.eee, {
               onClick: n,
-              children: (0, r.jsx)(a.Text, {
+              children: (0, r.jsx)(s.Text, {
                 tag: "span",
                 variant: "text-xs/normal",
                 color: "text-link",

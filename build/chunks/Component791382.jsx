@@ -1,5 +1,6 @@
 /** Chunk was on 8106 **/
 /** chunk id: 791382, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   H: () => u,
   Z: () => m
@@ -22,14 +23,14 @@ let u = e => {
     let {
       formattedValue: i,
       isPositive: u
-    } = (0, s.m5)(t, n);
+    } = (0, a.m5)(t, n);
     return (0, r.jsxs)("div", {
       className: d.trendContainer,
       children: [(0, r.jsx)(o.Z, {
         className: l()(d.chartLineIcon, {
           [d.chartLineIconNegative]: !u
         })
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         className: d.trendDescription,
         children: c.intl.format(c.t.OTHOvb, {
@@ -44,20 +45,20 @@ let u = e => {
       sublabel: n,
       value: i,
       additionalContent: l,
-      tooltip: s
+      tooltip: a
     } = e;
     return (0, r.jsxs)("div", {
       className: d.container,
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsxs)("div", {
           className: d.labelContainer,
-          children: [(0, r.jsx)(a.Text, {
+          children: [(0, r.jsx)(s.Text, {
             variant: "text-xs/medium",
             className: d.label,
             children: t
-          }), null != s && (0, r.jsx)(a.ua7, {
-            text: s,
-            children: e => (0, r.jsx)(a.d3s, function(e) {
+          }), null != a && (0, r.jsx)(s.ua7, {
+            text: a,
+            children: e => (0, r.jsx)(s.d3s, function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                   r = Object.keys(n);
@@ -79,12 +80,12 @@ let u = e => {
               color: "currentColor",
               className: d.labelTooltipIcon
             }, e))
-          }), null != n ? (0, r.jsx)(a.Text, {
+          }), null != n ? (0, r.jsx)(s.Text, {
             variant: "text-xs/normal",
             className: d.sublabel,
             children: n
           }) : null]
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(s.Text, {
           className: d.value,
           variant: "text-sm/normal",
           children: i

@@ -1,12 +1,13 @@
 /** Chunk was on 8106 **/
 /** chunk id: 603784, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => R
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
   Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
@@ -86,7 +87,7 @@ let w = Chunk647438.forwardRef((e, t) => {
   let n, {
       log: l,
       className: o,
-      expanded: h,
+      expanded: f,
       guildId: _,
       guild: w,
       onChannelContextMenu: R,
@@ -104,7 +105,7 @@ let w = Chunk647438.forwardRef((e, t) => {
       return (l.actionType !== N.vB8.DELETE || l.action === N.rsA.MEMBER_BAN_ADD || l.action === N.rsA.MEMBER_KICK || l.action === N.rsA.MEMBER_PRUNE) && null != e && e.some(e => !(0, C.xO)(l, e))
     }(),
     U = I.headerDefault;
-  h ? U = I.headerExpanded : G && (U = I.headerClickable);
+  f ? U = I.headerExpanded : G && (U = I.headerClickable);
   let B = l.timestampStart.calendar(),
     F = l.timestampEnd.calendar();
   n = B === F ? (0, r.jsx)(d.Text, {
@@ -117,14 +118,14 @@ let w = Chunk647438.forwardRef((e, t) => {
     children: [B, "—", F]
   });
   let H = G ? D : N.dG4;
-  return (0, r.jsx)(s.mh, {
+  return (0, r.jsx)(a.mh, {
     id: l.id,
     children: e => (0, r.jsxs)("div", {
       ref: t,
-      className: a()(I.auditLog, o),
+      className: s()(I.auditLog, o),
       children: [(0, r.jsxs)(d.P3F, T(S({
         className: U,
-        "aria-expanded": h,
+        "aria-expanded": f,
         onClick: H
       }, e), {
         children: [(0, r.jsx)(C.mp, {
@@ -182,10 +183,10 @@ let w = Chunk647438.forwardRef((e, t) => {
                 options: i
               } = l;
               e = (0, v.lM)(n) ? n.name : n.toString();
-              let a = y.N5(l);
-              return null != a ? (0, r.jsx)("div", {
+              let s = y.N5(l);
+              return null != s ? (0, r.jsx)("div", {
                 className: I.overflowEllipsis,
-                children: E.intl.format(a, {
+                children: E.intl.format(s, {
                   user: t,
                   target: e,
                   userHook: (e, t) => {
@@ -200,7 +201,7 @@ let w = Chunk647438.forwardRef((e, t) => {
                     }
                     return E.intl.string(E.t["30mdIy"])
                   },
-                  targetHook: (e, t) => l.targetType === N.KFR.USER && l.target instanceof f.Z ? (0, r.jsx)(P, {
+                  targetHook: (e, t) => l.targetType === N.KFR.USER && l.target instanceof h.Z ? (0, r.jsx)(P, {
                     user: l.target,
                     onContextMenu: A
                   }, t) : (0, r.jsx)("span", {
@@ -208,7 +209,7 @@ let w = Chunk647438.forwardRef((e, t) => {
                     children: e
                   }, t),
                   count: i.count,
-                  channel: null == i.channel || "string" == typeof i.channel ? i.channel : (0, g.F6)(i.channel, x.default, b.Z, true),
+                  channel: null == i.channel || "string" == typeof i.channel ? i.channel : (0, g.F6)(i.channel, b.default, x.Z, true),
                   channelHook: (e, t) => (0, r.jsx)("span", {
                     onContextMenu: R,
                     children: e
@@ -221,12 +222,12 @@ let w = Chunk647438.forwardRef((e, t) => {
         }), G ? (0, r.jsx)(j.Z, {
           className: I.expand,
           foreground: I.expandForeground,
-          expanded: h,
+          expanded: f,
           "aria-hidden": true
         }) : null]
-      })), h ? (0, r.jsx)("div", {
+      })), f ? (0, r.jsx)("div", {
         className: I.divider
-      }) : null, h && null != w ? (0, r.jsx)(C.tP, {
+      }) : null, f && null != w ? (0, r.jsx)(C.tP, {
         log: l,
         guild: w,
         onContentClick: Z
