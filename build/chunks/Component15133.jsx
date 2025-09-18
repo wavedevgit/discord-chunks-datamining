@@ -23,10 +23,10 @@ function v(e) {
     guildId: t
   } = e;
   a.useEffect(() => {
-    (0, u.EC)(t)
+    (0, d.EC)(t)
   }, [t]);
   let n = (0, l.Z)(t),
-    v = (0, s.e7)([d.Z], () => d.Z.getStateForGuild(t)),
+    v = (0, s.e7)([u.Z], () => u.Z.getStateForGuild(t)),
     g = a.useMemo(() => (null == v ? true : v.instances) == null ? [] : Object.values(v.instances), [null == v ? true : v.instances]);
   return (0, r.jsxs)("div", {
     className: j.container,
@@ -37,16 +37,19 @@ function v(e) {
         icon: i.$Eu,
         "aria-label": ""
       }), (0, r.jsx)(o.ZP.Title, {
-        children: p.intl.string(f.default.lH9Dio)
+        children: f.intl.string(p.default.lH9Dio)
       })]
     }), (0, r.jsxs)("div", {
       className: j.contentContainer,
       children: [(null == v ? true : v.instances) != null ? (0, r.jsx)("div", {
-        className: j.gameContainer,
-        children: g.map((e, n) => (0, r.jsx)(b.Z, {
-          guildId: t,
-          instance: e
-        }, "".concat(e.gameId, "-").concat(n)))
+        className: j.gameContainerWrapper,
+        children: (0, r.jsx)("div", {
+          className: j.gameContainer,
+          children: g.map((e, n) => (0, r.jsx)(b.Z, {
+            guildId: t,
+            instance: e
+          }, "".concat(e.gameId, "-").concat(n)))
+        })
       }) : (0, r.jsx)("div", {
         className: j.spinnerContainer,
         children: (0, r.jsx)(c.$jN, {

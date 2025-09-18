@@ -52,7 +52,7 @@ function y(e) {
     guildId: t
   } = e;
   s.useEffect(() => {
-    (0, d.po)(t)
+    (0, u.po)(t)
   }, [t]);
   let n = (0, o.Wu)([b.Z], () => {
     let e = b.Z.getStateForGuild(t);
@@ -74,11 +74,11 @@ function y(e) {
       children: n.map((e, n) => (0, i.jsx)(m.Z, {
         className: g.game,
         game: e,
-        onClick: () => (0, f.Z)({
+        onClick: () => (0, p.Z)({
           guildId: t,
           stepConfig: x,
           initialPortkeyGame: e,
-          analyticsLocation: u.Z.PORTKEY_OVERVIEW
+          analyticsLocation: d.Z.PORTKEY_OVERVIEW
         }),
         imageClassName: g.image
       }, "sidebar-game-".concat(n, "-").concat(e.id)))

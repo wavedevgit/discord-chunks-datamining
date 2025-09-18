@@ -1,7 +1,7 @@
 /** Chunk was on 85683 **/
 /** chunk id: 444083, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,7 +26,7 @@ let m = {
   }
 };
 
-function f(e) {
+function p(e) {
   let {
     guildId: t,
     instance: n
@@ -46,18 +46,18 @@ function f(e) {
         onClose: () => {
           (0, s.Zy)(), a()
         },
-        "aria-label": d.intl.string(u.default.xCq1DA),
+        "aria-label": u.intl.string(d.default.xCq1DA),
         onSelect: true,
         children: (0, r.jsxs)(i.kSQ, {
           children: [(0, r.jsx)(i.sNh, {
             id: "get-support",
             icon: i.kBi,
-            label: d.intl.string(u.default["TciV8/"]),
+            label: u.intl.string(d.default["TciV8/"]),
             action: () => {}
           }), (0, r.jsx)(i.sNh, {
             id: "settings",
             icon: i.ewm,
-            label: d.intl.string(u.default.NUTl4u),
+            label: u.intl.string(d.default.NUTl4u),
             action: () => {
               (0, o.Z)({
                 guildId: t,
@@ -90,7 +90,7 @@ function f(e) {
         }
         return e
       }({
-        "aria-label": d.intl.string(d.t.UKOtz8),
+        "aria-label": u.intl.string(u.t.UKOtz8),
         className: b.clickable
       }, e), n = n = {
         innerRef: l,

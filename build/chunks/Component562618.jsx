@@ -59,9 +59,10 @@ function f(e) {
     }), (0, r.jsx)(p, {
       body: i
     }), null != d && (0, r.jsx)(s.Anchor, {
+      onClick: d.onClick,
       href: d.link,
-      target: h ? "_blank" : true,
-      rel: h ? "noopener noreferrer" : true,
+      target: h && null != d.link ? "_blank" : true,
+      rel: h && null != d.link ? "noopener noreferrer" : true,
       children: (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
         className: c.footerLink,

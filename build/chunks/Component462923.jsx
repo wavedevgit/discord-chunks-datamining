@@ -23,15 +23,15 @@ function g(e) {
   let {
     guildId: t,
     instance: n
-  } = e, g = (0, i.e7)([d.Z], () => d.Z.getState()), x = a.useCallback(() => {
-    g ? (0, m.Z)(n) : (0, f.Z)({
+  } = e, g = (0, i.e7)([u.Z], () => u.Z.getState()), x = a.useCallback(() => {
+    g ? (0, m.Z)(n) : (0, p.Z)({
       onAccept: () => {
         (0, m.Z)(n)
       }
     })
   }, [n, g]), y = a.useCallback(() => {
     (0, o.JG)(n.serverIP), (0, s.showToast)((0, s.createToast)(j.intl.string(j.t["+5kSoa"]), s.ToastType.SUCCESS))
-  }, [n.serverIP]), O = (0, u.Z)(t);
+  }, [n.serverIP]), O = (0, d.Z)(t);
   return (0, r.jsxs)("div", {
     className: v.card,
     children: [(0, r.jsxs)("div", {
@@ -59,7 +59,7 @@ function g(e) {
           className: v.detailItem,
           children: [(0, r.jsx)(s.Text, {
             variant: "text-xs/semibold",
-            children: j.intl.string(p.default.X0IaiI)
+            children: j.intl.string(f.default.X0IaiI)
           }), (0, r.jsx)(s.Text, {
             variant: "text-sm/medium",
             children: "".concat(n.onlineConnectionsCount, " / ").concat(n.maxConnectionsCount)
@@ -68,7 +68,7 @@ function g(e) {
           className: v.detailItem,
           children: [(0, r.jsx)(s.Text, {
             variant: "text-xs/semibold",
-            children: j.intl.string(p.default["9pw/yM"])
+            children: j.intl.string(f.default["9pw/yM"])
           }), (0, r.jsx)("div", {
             className: v.serverIpContainer,
             children: g ? (0, r.jsxs)(r.Fragment, {
@@ -85,16 +85,16 @@ function g(e) {
               })]
             }) : (0, r.jsx)(c.Z, {
               onClick: () => {
-                (0, f.Z)({})
+                (0, p.Z)({})
               },
-              children: j.intl.string(p.default.UwXK29)
+              children: j.intl.string(f.default.UwXK29)
             })
           })]
         }), (0, r.jsxs)("div", {
           className: v.detailItem,
           children: [(0, r.jsx)(s.Text, {
             variant: "text-xs/semibold",
-            children: j.intl.string(p.default.MQQIu7)
+            children: j.intl.string(f.default.MQQIu7)
           }), (0, r.jsxs)("div", {
             className: v.statusContainer,
             children: [(0, r.jsx)("span", {
@@ -108,7 +108,7 @@ function g(e) {
           className: v.detailItem,
           children: [(0, r.jsx)(s.Text, {
             variant: "text-xs/semibold",
-            children: j.intl.string(p.default.v8iSgI)
+            children: j.intl.string(f.default.v8iSgI)
           }), (0, r.jsx)(s.Text, {
             variant: "text-sm/medium",
             children: (0, l.Y4)(new Date(n.lastUpdated))
@@ -119,12 +119,12 @@ function g(e) {
       className: v.serverActions,
       children: [(0, r.jsx)(s.zxk, {
         fullWidth: true,
-        text: j.intl.string(p.default["0TMXHh"]),
+        text: j.intl.string(f.default["0TMXHh"]),
         onClick: x,
         variant: "primary"
       }), O && (0, r.jsx)(s.zxk, {
         fullWidth: true,
-        text: j.intl.string(p.default["jO3u+/"]),
+        text: j.intl.string(f.default["jO3u+/"]),
         onClick: () => {
           window.open(n.gameServerPanelUrl, "_blank")
         },
