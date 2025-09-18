@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 131051, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => a
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk991346 = require("./991346.js"),
@@ -9,9 +9,9 @@ var Chunk647438 = require("./647438.js"),
   Chunk509613 = require("./509613.js"),
   Chunk801318 = require("./801318.js");
 
-function s(e, t) {
+function a(e, t) {
   let n = r.useMemo(() => (0, o.Ql)(e), [e]),
-    s = (0, i.Pt)(),
+    a = (0, i.Pt)(),
     {
       searchResults: u
     } = (0, l.E)(),
@@ -20,7 +20,7 @@ function s(e, t) {
     let t = e;
     for (; null != t;) {
       var d;
-      let e = null == (d = s[t]) ? true : d.parent;
+      let e = null == (d = a[t]) ? true : d.parent;
       if (null == e) {
         c.add(t);
         break
@@ -28,5 +28,5 @@ function s(e, t) {
       t = e
     }
   }
-  return (0, a.Z)(n, t, c)
+  return (0, s.Z)(n, t, c)
 }

@@ -20,24 +20,24 @@ function O(e) {
   let {
     onClose: t
   } = e;
-  return (0, r.jsx)(a.v2r, {
+  return (0, r.jsx)(s.v2r, {
     navId: "settings-footer-more-menu",
     onClose: t,
     onSelect: () => {},
     "aria-label": "More options",
-    children: (0, r.jsxs)(a.kSQ, {
-      children: [(0, r.jsx)(a.sNh, {
+    children: (0, r.jsxs)(s.kSQ, {
+      children: [(0, r.jsx)(s.sNh, {
         id: "changelog",
         label: f.intl.string(f.t.LRmNAg),
         action: () => (0, u.Z)(true)
-      }), (0, r.jsx)(a.sNh, {
+      }), (0, r.jsx)(s.sNh, {
         id: "acknowledgements",
         label: f.intl.string(f.t["0nUKy8"]),
-        action: () => (0, s.Z)(g.EYA.ACKNOWLEDGEMENTS)
-      }), (0, r.jsx)(a.sNh, {
+        action: () => (0, a.Z)(g.EYA.ACKNOWLEDGEMENTS)
+      }), (0, r.jsx)(s.sNh, {
         id: "support",
         label: f.intl.string(f.t["Yl/Rio"]),
-        action: () => (0, s.Z)(c.w)
+        action: () => (0, a.Z)(c.w)
       })]
     })
   })
@@ -90,7 +90,7 @@ function E() {
         },
         children: (t, n) => {
           var i, l;
-          return (0, r.jsx)(a.eee, (i = function(e) {
+          return (0, r.jsx)(s.eee, (i = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);
@@ -113,7 +113,7 @@ function E() {
             className: o()(y.moreButton, {
               [y.active]: n.isShown
             }),
-            children: (0, r.jsx)(a.Text, {
+            children: (0, r.jsx)(s.Text, {
               tag: "span",
               variant: "text-xxs/normal",
               color: "currentColor",

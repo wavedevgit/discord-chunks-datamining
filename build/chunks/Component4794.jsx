@@ -26,8 +26,8 @@ let u = Chunk647438.memo(function(e) {
   let y = null == n ? true : n(d),
     O = null == c ? true : c();
   return (0, r.jsx)("div", {
-    className: s.accordion,
-    children: (0, r.jsx)(a.I, {
+    className: a.accordion,
+    children: (0, r.jsx)(s.I, {
       title: y,
       subtitle: O,
       isOpen: d,

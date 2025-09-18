@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 36361, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => b
 }), require("./415506.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -23,59 +23,59 @@ function E(e) {
     node: t
   } = e;
   switch (t.type) {
-    case i.J.ROOT:
-    case i.J.SECTION:
-    case i.J.SIDEBAR_ITEM:
+    case i.Jq.ROOT:
+    case i.Jq.SECTION:
+    case i.Jq.SIDEBAR_ITEM:
       throw Error("".concat(t.type, " nodes should never be rendered directly"));
-    case i.J.PANEL:
+    case i.Jq.PANEL:
       return (0, r.jsx)(O.T, {
         node: t
       });
-    case i.J.PANE:
+    case i.Jq.PANE:
       return (0, r.jsx)(y.Z, {
         node: t
       });
-    case i.J.LIST:
+    case i.Jq.LIST:
       return (0, r.jsx)(f.Z, {
         node: t
       });
-    case i.J.CATEGORY:
+    case i.Jq.CATEGORY:
       return (0, r.jsx)(g.Z, {
         node: t
       });
-    case i.J.ACCORDION:
+    case i.Jq.ACCORDION:
       return (0, r.jsx)(d.Z, {
         node: t
       });
-    case i.J.TOGGLE:
+    case i.Jq.TOGGLE:
       return (0, r.jsx)(c.I, {
         node: t
       });
-    case i.J.BUTTON:
+    case i.Jq.BUTTON:
       return (0, r.jsx)(o.I, {
         node: t
       });
-    case i.J.SELECT:
+    case i.Jq.SELECT:
       return (0, r.jsx)(u.Z, {
         node: t
       });
-    case i.J.RADIO:
-      return (0, r.jsx)(s.Z, {
+    case i.Jq.RADIO:
+      return (0, r.jsx)(a.Z, {
         node: t
       });
-    case i.J.CUSTOM:
+    case i.Jq.CUSTOM:
     default:
-      return (0, r.jsx)(a.W, {
+      return (0, r.jsx)(s.W, {
         node: t
       })
   }
 }
 
-function v(e) {
+function b(e) {
   let {
     node: t
   } = e;
-  return t.type === i.J.PANEL || t.type === i.J.PANE ? (0, r.jsx)(E, {
+  return t.type === i.Jq.PANEL || t.type === i.Jq.PANE ? (0, r.jsx)(E, {
     node: t
   }) : (0, r.jsx)(l.Z, {
     node: t,

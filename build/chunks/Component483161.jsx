@@ -20,14 +20,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk88651 = require("./88651.js");
-let p = (0, Chunk509613.x1)(Chunk313789.n.PROFILE_PANE, {
+let T = (0, Chunk509613.x1)(Chunk313789.n.PROFILE_PANE, {
     getLayout: () => [],
     render: Chunk564344.Z
   }),
   N = (0, Chunk509613.wf)(Chunk313789.n.PROFILE_PANEL, {
     icon: Chunk657707.tBG,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["vi7f+v"]),
-    getLayout: () => [p],
+    getLayout: () => [T],
     notice: {
       stores: [Chunk778825.Z, Chunk25990.Z],
       element: Chunk398140.Z
@@ -41,37 +41,37 @@ let p = (0, Chunk509613.x1)(Chunk313789.n.PROFILE_PANE, {
       var t;
       let {
         active: n,
-        onClick: a
-      } = e, s = (0, l.e7)([y.default], () => y.default.getCurrentUser()), {
+        onClick: s
+      } = e, a = (0, l.e7)([y.default], () => y.default.getCurrentUser()), {
         avatarSrc: u,
         avatarDecorationSrc: d
       } = (0, g.Z)({
-        userId: null == s ? true : s.id,
+        userId: null == a ? true : a.id,
         size: o.EFr.SIZE_48
       });
-      return null == s ? null : (0, r.jsx)(c.C, {
-        onClick: a,
+      return null == a ? null : (0, r.jsx)(c.C, {
+        onClick: s,
         active: n,
         children: (0, r.jsxs)("div", {
-          className: T.profileCustomizationTab,
+          className: p.profileCustomizationTab,
           children: [(0, r.jsx)(o.qEK, {
             src: u,
             avatarDecoration: d,
             size: o.EFr.SIZE_48,
-            "aria-label": b.intl.string(b.t.lqaIxM)
+            "aria-label": v.intl.string(v.t.lqaIxM)
           }), (0, r.jsxs)("div", {
-            className: T.textContainer,
+            className: p.textContainer,
             children: [(0, r.jsx)(o.Text, {
               color: "header-primary",
               variant: "text-md/medium",
               lineClamp: 1,
-              children: null != (t = s.globalName) ? t : s.username
+              children: null != (t = a.globalName) ? t : a.username
             }), (0, r.jsxs)("div", {
-              className: T.editProfilesRow,
+              className: p.editProfilesRow,
               children: [(0, r.jsx)(o.Text, {
                 variant: "text-sm/normal",
                 color: "currentColor",
-                children: b.intl.string(b.t.Ip9nBQ)
+                children: v.intl.string(v.t.Ip9nBQ)
               }), (0, r.jsx)(i.vdY, {
                 size: "xxs",
                 color: "currentColor"

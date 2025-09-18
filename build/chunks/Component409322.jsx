@@ -26,28 +26,28 @@ function u(e) {
       var t, n;
       return null == (n = null == (t = e.usePredicate) ? true : t.call(e)) || n
     }),
-    v = null != f ? E.slice(0, f) : E,
-    b = null != f ? E.slice(f) : [],
-    T = null != y ? y : i.Fragment,
-    p = null != (t = null == O ? true : O(c, b.length)) ? t : (n = b.length, c ? s.intl.formatToPlainString(s.t["3SHL+f"], {
+    b = null != f ? E.slice(0, f) : E,
+    v = null != f ? E.slice(f) : [],
+    p = null != y ? y : i.Fragment,
+    T = null != (t = null == O ? true : O(c, v.length)) ? t : (n = v.length, c ? a.intl.formatToPlainString(a.t["3SHL+f"], {
       count: n
-    }) : s.intl.formatToPlainString(s.t["8JRFyc"], {
+    }) : a.intl.formatToPlainString(a.t["8JRFyc"], {
       count: n
     }));
-  return (0, r.jsxs)(T, {
-    children: [v.map((e, t) => (0, r.jsxs)(i.Fragment, {
+  return (0, r.jsxs)(p, {
+    children: [b.map((e, t) => (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(o.Z, {
         node: e
-      }), (t !== v.length - 1 || b.length > 0) && (0, r.jsx)(l.$i$, {})]
-    }, e.key)), b.length > 0 && (0, r.jsx)(a.I, {
-      title: p,
+      }), (t !== b.length - 1 || v.length > 0) && (0, r.jsx)(l.$i$, {})]
+    }, e.key)), v.length > 0 && (0, r.jsx)(s.I, {
+      title: T,
       isOpen: c,
       setIsOpen: d,
       compact: true,
-      children: b.map((e, t) => (0, r.jsxs)(i.Fragment, {
+      children: v.map((e, t) => (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)(o.Z, {
           node: e
-        }), t !== b.length - 1 && (0, r.jsx)(l.$i$, {})]
+        }), t !== v.length - 1 && (0, r.jsx)(l.$i$, {})]
       }, e.key))
     })]
   })
