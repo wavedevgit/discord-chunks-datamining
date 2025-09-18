@@ -21,7 +21,8 @@ let a = {
       BILLING_TRIAL_FREE_TRIAL_TEXT: "Free Trial"
     },
     theme: "light",
-    saturation: .5
+    saturation: .5,
+    defaultLayerContext: true
   },
   o = Chunk647438.createContext(a);
 

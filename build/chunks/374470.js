@@ -20,6 +20,7 @@ require.d(exports, {
   Mg: () => i,
   VG: () => l,
   kK: () => r,
+  sK: () => u,
   uB: () => c
 }), require("./388685.js"), require("./35282.js");
 let a = /input/i,
@@ -42,4 +43,13 @@ function c(e) {
     target: t
   } = e;
   return null == t ? null : "ownerDocument" in t ? t.ownerDocument : "document" in t ? t.document : (console.warn("Unable to get owner document from event", e.type), null)
+}
+
+function u(e, t) {
+  let n = e.parentElement;
+  for (; null != n;) {
+    if (n.classList.contains(t)) return n;
+    n = n.parentElement
+  }
+  return null
 }

@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk314910 = require("./314910.jsx"),
+  Chunk793030 = require("./793030.js"),
   Chunk747127 = require("./747127.js"),
   Chunk550656 = require("./550656.jsx"),
   Chunk464281 = require("./464281.js"),
@@ -191,13 +191,15 @@ function v() {
     caretConfig: b,
     layerContext: y,
     positionKey: O
-  } = exports;
-  return (0, Chunk342134.Q)({
+  } = exports, v = (0, Chunk342134.Q)({
     shouldShow: require,
     caretPosition: null != (e = null == b ? true : b.position) ? module : (0, Chunk464281.Av)(h),
     onExitComplete: Chunk102725,
     onAnimationRest: Chunk966327
-  })((e, i) => i ? (0, r.jsx)(s.N, {
+  }), {
+    defaultLayerContext: I
+  } = (0, Chunk793030.ZFG)();
+  return v((e, i) => i ? (0, r.jsx)(s.N, {
     isVisible: n,
     isRendered: o,
     targetElementRef: _,
@@ -207,7 +209,7 @@ function v() {
     align: m,
     spacing: g,
     caretConfig: b,
-    layerContext: null != y ? y : a.nz,
+    layerContext: null != y ? y : I,
     animationStyle: e,
     positionKey: O,
     "data-mana-component": "tooltip",

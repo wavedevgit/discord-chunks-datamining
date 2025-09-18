@@ -2,7 +2,7 @@
 /** chunk id: 746106, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  w: () => A
+  w: () => C
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,6 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk950796 = require("./950796.jsx"),
   Chunk392358 = require("./392358.js"),
   Chunk591146 = require("./591146.js"),
+  Chunk314910 = require("./314910.jsx"),
   Chunk928518 = require("./928518.js"),
   Chunk823961 = require("./823961.js"),
   Chunk819439 = require("./819439.js"),
@@ -28,34 +29,34 @@ var Chunk951288 = require("./951288.js"),
   Chunk892071 = require("./892071.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function A(e) {
+function C(e) {
   let {
     windowKey: t,
     themeOverride: n,
     children: a
-  } = e, A = null != t, [C] = i.useState(() => v.ZP.getEnableHardwareAcceleration()), {
-    locale: N,
-    theme: R,
-    focused: P,
-    currentWindow: w,
-    fontScale: D,
-    fontScaleClass: x,
-    keyboardModeEnabled: L,
-    saturation: j,
-    desaturateUserColors: M,
-    useForcedColors: k,
-    systemForcedColors: U,
-    useReducedMotion: G,
-    alwaysShowLinkDecorations: B,
-    confettiMode: Z,
-    highContrastMode: F
-  } = (0, s.cj)([b.default, c.Z, y.Z, O.Z, m.Z, g.Z], () => {
+  } = e, C = null != t, [N] = i.useState(() => I.ZP.getEnableHardwareAcceleration()), {
+    locale: R,
+    theme: P,
+    focused: w,
+    currentWindow: D,
+    fontScale: x,
+    fontScaleClass: L,
+    keyboardModeEnabled: j,
+    saturation: M,
+    desaturateUserColors: k,
+    useForcedColors: U,
+    systemForcedColors: G,
+    useReducedMotion: B,
+    alwaysShowLinkDecorations: Z,
+    confettiMode: F,
+    highContrastMode: V
+  } = (0, s.cj)([y.default, c.Z, O.Z, v.Z, g.Z, E.Z], () => {
     var e;
     return {
-      locale: b.default.locale,
-      theme: null != n ? n : y.Z.theme,
-      focused: A ? m.Z.getWindowFocused(t) : O.Z.isFocused(),
-      currentWindow: A && null != (e = m.Z.getWindow(t)) ? e : window,
+      locale: y.default.locale,
+      theme: null != n ? n : O.Z.theme,
+      focused: C ? g.Z.getWindowFocused(t) : v.Z.isFocused(),
+      currentWindow: C && null != (e = g.Z.getWindow(t)) ? e : window,
       fontScale: c.Z.fontScale,
       fontScaleClass: c.Z.fontScaleClass,
       keyboardModeEnabled: c.Z.keyboardModeEnabled,
@@ -66,77 +67,78 @@ function A(e) {
       useReducedMotion: c.Z.useReducedMotion,
       alwaysShowLinkDecorations: c.Z.alwaysShowLinkDecorations,
       highContrastMode: c.Z.isHighContrastModeEnabled,
-      confettiMode: g.Z.confettiMode
+      confettiMode: E.Z.confettiMode
     }
-  }), V = u.U.useExperiment({
+  }), H = u.U.useExperiment({
     location: "RootThemeContextProvider"
   }, {
     autoTrackExposure: true
-  }).enabled, H = (0, p.Z)(w, __OVERLAY__ || P), Y = 0;
-  1 !== j && (Y = (0, l.OdO)(Y, l.bgu.REDUCE_SATURATION_ENABLED));
-  let W = (0, I.A)(),
-    K = (0, h.Ml)("RootThemeContextProvider"),
-    z = (0, h.CL)("RootThemeContextProvider"),
-    q = (0, h.VM)("RootThemeContextProvider"),
-    X = f.Mc.useExperiment({
+  }).enabled, Y = (0, p.Z)(D, __OVERLAY__ || w), W = 0;
+  1 !== M && (W = (0, l.OdO)(W, l.bgu.REDUCE_SATURATION_ENABLED));
+  let K = (0, T.A)(),
+    z = (0, h.Ml)("RootThemeContextProvider"),
+    q = (0, h.CL)("RootThemeContextProvider"),
+    X = (0, h.VM)("RootThemeContextProvider"),
+    Q = f.Mc.useExperiment({
       location: "RootThemeContextProvider"
     }).enabled,
-    Q = (0, d.Z)("RootThemeContextProvider"),
-    J = (0, E.$)({
+    J = (0, d.Z)("RootThemeContextProvider"),
+    $ = (0, b.$)({
       location: "RootThemeContextProvider"
     }),
-    $ = (0, _.On)({
-      isPopoutWindow: A,
-      isSearchDesktopTopLevelEnabled: J
+    ee = (0, _.On)({
+      isPopoutWindow: C,
+      isSearchDesktopTopLevelEnabled: $
     }),
-    ee = i.useMemo(() => ({
+    et = i.useMemo(() => ({
       i18n: {
-        SPINNER_LOADING_LABEL: S.intl.string(S.t.ZTNur6),
-        BUTTON_LOADING_STARTED_LABEL: S.intl.string(S.t.pfChQk),
-        BUTTON_LOADING_FINISHED_LABEL: S.intl.string(S.t.SVPara),
-        CLOSE_BUTTON_LABEL: S.intl.string(S.t.cpT0Cg),
-        PLAY_BUTTON_LABEL: S.intl.string(S.t.RscU7O),
-        PAUSE_BUTTON_LABEL: S.intl.string(S.t.ZcgDJS),
-        NEW: S.intl.string(S.t.y2b7CA),
-        BETA: S.intl.string(S.t.oW0eUV),
-        EARLY_ACCESS: S.intl.string(S.t.EYxi0t),
-        BILLING_TRIAL_FREE_TRIAL_TEXT: S.intl.string(S.t.IBYG5e)
+        SPINNER_LOADING_LABEL: A.intl.string(A.t.ZTNur6),
+        BUTTON_LOADING_STARTED_LABEL: A.intl.string(A.t.pfChQk),
+        BUTTON_LOADING_FINISHED_LABEL: A.intl.string(A.t.SVPara),
+        CLOSE_BUTTON_LABEL: A.intl.string(A.t.cpT0Cg),
+        PLAY_BUTTON_LABEL: A.intl.string(A.t.RscU7O),
+        PAUSE_BUTTON_LABEL: A.intl.string(A.t.ZcgDJS),
+        NEW: A.intl.string(A.t.y2b7CA),
+        BETA: A.intl.string(A.t.oW0eUV),
+        EARLY_ACCESS: A.intl.string(A.t.EYxi0t),
+        BILLING_TRIAL_FREE_TRIAL_TEXT: A.intl.string(A.t.IBYG5e)
       },
-      theme: R,
-      saturation: j
-    }), [R, j]);
+      theme: P,
+      saturation: M,
+      defaultLayerContext: m.nz
+    }), [P, M]);
   return (0, r.jsx)(l.kb5, {
-    value: ee,
+    value: et,
     children: (0, r.jsx)(l.wMY, {
-      theme: R,
-      flags: Y,
-      saturation: j,
-      density: W,
-      children: (0, r.jsx)(T.cE, {
-        lang: N,
-        theme: R,
-        density: W,
-        focused: P,
-        fontScale: D,
-        fontScaleClass: x,
-        keyboardModeEnabled: L,
-        mouseMode: H,
-        saturation: j,
-        desaturateUserColors: M,
-        useForcedColors: k,
-        systemForcedColors: U,
-        useReducedMotion: G,
-        alwaysShowLinkDecorations: B,
-        hardwareAccelerationEnabled: C,
-        highContrastMode: V && F,
-        isPopoutWindow: A,
-        rootClassName: o()($, {
-          "confetti-mode": Z,
-          "refresh-fast-follow-avatars": K && !Q,
-          "refresh-fast-follow-guild-bg": z,
-          "refresh-fast-follow-distinct-borders": q,
-          "client-theme-color-picker": X,
-          "align-chat-input": Q
+      theme: P,
+      flags: W,
+      saturation: M,
+      density: K,
+      children: (0, r.jsx)(S.cE, {
+        lang: R,
+        theme: P,
+        density: K,
+        focused: w,
+        fontScale: x,
+        fontScaleClass: L,
+        keyboardModeEnabled: j,
+        mouseMode: Y,
+        saturation: M,
+        desaturateUserColors: k,
+        useForcedColors: U,
+        systemForcedColors: G,
+        useReducedMotion: B,
+        alwaysShowLinkDecorations: Z,
+        hardwareAccelerationEnabled: N,
+        highContrastMode: H && V,
+        isPopoutWindow: C,
+        rootClassName: o()(ee, {
+          "confetti-mode": F,
+          "refresh-fast-follow-avatars": z && !J,
+          "refresh-fast-follow-guild-bg": q,
+          "refresh-fast-follow-distinct-borders": X,
+          "client-theme-color-picker": Q,
+          "align-chat-input": J
         }),
         children: a
       })
