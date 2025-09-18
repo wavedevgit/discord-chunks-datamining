@@ -9,10 +9,10 @@ var Chunk951288 = require("./951288.js"),
   a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk63063 = require("./63063.js"),
-  Chunk545970 = require("./545970.jsx"),
   Chunk607802 = require("./607802.js"),
   Chunk945577 = require("./945577.js"),
   Chunk28964 = require("./28964.js"),
+  Chunk465524 = require("./465524.jsx"),
   Chunk770092 = require("./770092.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -59,20 +59,20 @@ function _(e) {
     isIndexing: v,
     isSearching: x,
     documentsIndexed: O
-  } = e, j = (0, d.UX)({
+  } = e, j = (0, u.UX)({
     location: "SearchHeader"
-  }), E = (0, p.nP)({
+  }), E = (0, d.nP)({
     isXDMSearch: t.type === f.aib.DMS,
     location: "SearchHeader"
-  }), S = (0, p.KS)({
+  }), S = (0, d.KS)({
     isXDMSearch: t.type === f.aib.DMS,
     location: "SearchHeader"
   }), I = (0, h.I)(t), {
     totalFilters: P
-  } = (0, c.p4)(I, t), Z = i.useMemo(() => {
+  } = (0, p.p4)(I, t), Z = i.useMemo(() => {
     if (t.type === f.aib.DMS && j) {
       var e, n;
-      let t = null != (n = null == (e = (0, u.$G)(I).channel_id) ? true : e.length) ? n : 0;
+      let t = null != (n = null == (e = (0, c.$G)(I).channel_id) ? true : e.length) ? n : 0;
       return t > 0 ? m.intl.format(m.t.A2dqWF, {
         filterCount: t
       }) : m.intl.string(m.t.tc619f)

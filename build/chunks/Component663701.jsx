@@ -392,7 +392,9 @@ let ev = Chunk647438.memo(function(e) {
         }
       }, "discord-shop"), p ? (0, r.jsx)(e_, {
         selected: null != l && l.startsWith(er.Z5c.FAMILY_CENTER) || null != b && b.startsWith(er.Z5c.FAMILY_CENTER)
-      }, "family-center") : null, f ? (0, r.jsx)(B.Z, {}) : null, (0, r.jsx)(eI, {}, "section-divider-top"), "full-width" === g && (0, r.jsx)(eg, {}, "create-dm")]
+      }, "family-center") : null, f ? (0, r.jsx)(B.Z, {
+        selected: null == b ? null != l && l.startsWith(er.Z5c.QUEST_HOME_V2) : b === er.Z5c.QUEST_HOME_V2
+      }, "quests") : null, (0, r.jsx)(eI, {}, "section-divider-top"), "full-width" === g && (0, r.jsx)(eg, {}, "create-dm")]
     }))]
   })
 });

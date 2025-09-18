@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk98357 = require("./98357.js"),
   Chunk432877 = require("./432877.js"),
   Chunk246992 = require("./246992.js"),
-  Chunk894257 = require("./894257.js"),
+  Chunk37812 = require("./37812.js"),
   Chunk165432 = require("./165432.js"),
   Chunk451429 = require("./451429.js");
 
@@ -86,7 +86,7 @@ function E() {
 function S() {
   let e = Chunk647438.useCallback(() => {
     Chunk493683.Z.openPrivateChannel({
-      recipientIds: [Chunk894257.I]
+      recipientIds: [Chunk37812.I]
     })
   }, []);
   return (0, Chunk951288.jsx)(Chunk481060.zxk, {

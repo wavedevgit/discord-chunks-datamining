@@ -287,7 +287,7 @@ let i = {
   },
   UrgentSystemDMManagerBase: {
     actions: ["POST_CONNECTION_OPEN", "MESSAGE_CREATE", "CHANNEL_SELECT"],
-    inlineRequire: () => require("./559523.jsx").Z,
+    inlineRequire: () => require("./808325.jsx").Z,
     neverLoadBeforeConnectionOpen: true
   },
   UserGuildSettingsManager: {
