@@ -25,7 +25,11 @@ let o = e => ({
     questBarHero: e.assets.quest_bar_hero,
     questBarHeroVideo: e.assets.quest_bar_hero_video,
     gameTile: e.assets.game_tile,
-    logotype: e.assets.logotype
+    logotype: e.assets.logotype,
+    gameTileLight: e.assets.game_tile_light,
+    gameTileDark: e.assets.game_tile_dark,
+    logotypeLight: e.assets.logotype_light,
+    logotypeDark: e.assets.logotype_dark
   },
   colors: {
     primary: e.colors.primary,
@@ -47,6 +51,8 @@ function s(e) {
   if (null != e) return {
     name: e.name,
     logotype: e.logotype,
-    redemptionInstructions: e.redemption_instructions
+    redemptionInstructions: e.redemption_instructions,
+    logotypeLight: e.logotype_light,
+    logotypeDark: e.logotype_dark
   }
 }

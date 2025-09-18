@@ -5,7 +5,6 @@ require.d(exports, {
   Dm: () => y,
   N0: () => _,
   Q2: () => b,
-  Rt: () => h,
   eC: () => p,
   f0: () => T,
   fh: () => g,
@@ -24,7 +23,7 @@ let d = 3,
   f = /\.([a-zA-Z0-9]+)$/,
   _ = ["video/mp4", "video/webm"];
 var p = function(e) {
-  return e.HERO = "hero", e.HERO_IMAGE = "hero_image", e.HERO_VIDEO = "hero_video", e.QUEST_BAR_HERO = "quest_bar_hero", e.QUEST_BAR_HERO_VIDEO = "quest_bar_hero_video", e.REWARD = "reward", e.REWARD_IMAGE = "reward_image", e.GAME_TILE = "game_tile", e.LOGO_TYPE = "logo_type", e
+  return e.HERO = "hero", e.HERO_IMAGE = "hero_image", e.HERO_VIDEO = "hero_video", e.QUEST_BAR_HERO = "quest_bar_hero", e.QUEST_BAR_HERO_VIDEO = "quest_bar_hero_video", e.REWARD = "reward", e.REWARD_IMAGE = "reward_image", e.GAME_TILE = "game_tile", e.LOGO_TYPE = "logo_type", e.COSPONSOR_LOGO_TYPE = "cosponsor_logo_type", e
 }({});
 
 function h(e, t, n) {
@@ -44,7 +43,7 @@ function m(e, t) {
 
 function g(e, t, n, i) {
   var a, l;
-  let d;
+  let d, f = false;
   switch (t) {
     case "hero":
       d = m(e.config.assets.heroVideo, e.config.assets.hero);
@@ -92,15 +91,19 @@ function g(e, t, n, i) {
       break
     }
     case "game_tile":
-      d = e.config.assets.gameTile;
+      "dark" === n && null != e.config.assets.gameTileDark ? d = e.config.assets.gameTileDark : "light" === n && null != e.config.assets.gameTileLight ? d = e.config.assets.gameTileLight : (d = e.config.assets.gameTile, f = true);
       break;
     case "logo_type":
-      d = e.config.assets.logotype
+      "dark" === n && null != e.config.assets.logotypeDark ? d = e.config.assets.logotypeDark : "light" === n && null != e.config.assets.logotypeLight ? d = e.config.assets.logotypeLight : (d = e.config.assets.logotype, f = true);
+      break;
+    case "cosponsor_logo_type":
+      if (null == e.config.cosponsorMetadata) return null;
+      "dark" === n && null != e.config.cosponsorMetadata.logotypeDark ? d = e.config.cosponsorMetadata.logotypeDark : "light" === n && null != e.config.cosponsorMetadata.logotypeLight ? d = e.config.cosponsorMetadata.logotypeLight : (d = e.config.cosponsorMetadata.logotype, f = true)
   }
-  let f = e.config.features.includes(s.S7.QUESTS_CDN);
+  let _ = e.config.features.includes(s.S7.QUESTS_CDN);
   return h(e.id, d, {
-    theme: n,
-    newCdn: f
+    theme: f ? n : true,
+    newCdn: _
   })
 }
 
