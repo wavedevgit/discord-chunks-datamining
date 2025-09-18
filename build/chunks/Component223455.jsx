@@ -1,7 +1,7 @@
 /** Chunk was on 80960 **/
 /** chunk id: 223455, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => R
+  default: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
@@ -17,7 +17,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk721383 = require("./721383.js"),
   Chunk566620 = require("./566620.js"),
   Chunk317381 = require("./317381.js"),
-  Chunk729200 = require("./729200.js"),
   Chunk617552 = require("./617552.jsx"),
   Chunk372900 = require("./372900.js"),
   Chunk238246 = require("./238246.jsx"),
@@ -25,18 +24,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk703558 = require("./703558.js"),
   Chunk677601 = require("./677601.jsx"),
   Chunk702511 = require("./702511.js");
-let x = [Chunk679080.S, Chunk777019.O, Chunk400332.U, Chunk721383._];
+let C = [Chunk679080.S, Chunk777019.O, Chunk400332.U, Chunk721383._];
 
-function R(e) {
+function x(e) {
   let {
     windowKey: t,
     channelId: n
-  } = e, a = (0, s.e7)([D.Z], () => D.Z.getChannel(n));
+  } = e, a = (0, s.e7)([b.Z], () => b.Z.getChannel(n));
   o()(null != a, "channel cannot be null for popout");
   let l = (0, s.e7)([y.ZP], () => y.ZP.getSelfEmbeddedActivityForChannel(a.id), [a]);
-  return (0, r.jsx)(b.Z, {
+  return (0, r.jsx)(E.Z, {
     withTitleBar: true,
-    keybinds: x,
+    keybinds: C,
     windowKey: t,
     title: a.name,
     channelId: a.id,
@@ -46,8 +45,8 @@ function R(e) {
         unmountWindow: n
       } = e;
       if (null != l) {
-        let e = (0, g.g)() ? (0, f.nJ)(l.applicationId, a.id) : Promise.resolve(true);
-        t.preventDefault(), (0, v.Z)({
+        let e = (0, f.nJ)(l.applicationId, a.id);
+        t.preventDefault(), (0, g.Z)({
           onConfirm: async () => {
             await e, n()
           },
@@ -56,13 +55,13 @@ function R(e) {
       } else n()
     },
     children: (0, r.jsx)("div", {
-      className: i()("root", C.rootPopout),
-      children: (0, r.jsxs)(E.Z.Provider, {
+      className: i()("root", j.rootPopout),
+      children: (0, r.jsxs)(v.Z.Provider, {
         value: a.guild_id,
         children: [(0, r.jsx)(d.Z, {
           channel: a,
-          draftType: P.d.ChannelMessage
-        }), (0, r.jsx)(j.Z, {
+          draftType: D.d.ChannelMessage
+        }), (0, r.jsx)(P.Z, {
           channel: a
         }), (0, r.jsx)(c.Z, {
           popoutWindowKey: t,

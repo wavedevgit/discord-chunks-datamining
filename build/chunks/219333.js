@@ -22,5 +22,7 @@ let a = new Map([
       campaignID: t
     } = e, n = a.get(t);
     if (true === n) throw Error("reward redemptions for the campaign with ID ".concat(t, " is not supported through DCF"));
-    (0, i.Q3)(n)
+    (0, i.Q3)(n, {
+      forceTrack: true
+    })
   }
