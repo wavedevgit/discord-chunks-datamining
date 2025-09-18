@@ -41,7 +41,6 @@ module.exports = {
   title: "title__08415",
   informationIcon: "informationIcon__08415",
   subHeaderText: "subHeaderText__08415",
-  subHeaderTextDark: "subHeaderTextDark__08415",
   orbsSubHeaderText: "orbsSubHeaderText__08415",
   heroHeaderButtonContainer: "heroHeaderButtonContainer__08415",
   heroHeaderButtonContainerStacked: "heroHeaderButtonContainerStacked__08415",

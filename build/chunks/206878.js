@@ -37,7 +37,7 @@ function i(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let s = new Set([Chunk281598.jE.SHOP_ALL_BANNER_STATIC, Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Chunk281598.jE.PDP_BACKGROUND, Chunk281598.jE.LOGO, Chunk281598.jE.MOBILE_BANNER, Chunk281598.jE.MOBILE_BACKGROUND]),
+let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Chunk281598.jE.PDP_BACKGROUND, Chunk281598.jE.LOGO, Chunk281598.jE.MOBILE_BANNER, Chunk281598.jE.MOBILE_BACKGROUND]),
   o = ["intro", "idle", "reduced_motion", "static", "thumbnail"],
   c = {
     max: 5e6,
@@ -63,7 +63,6 @@ let s = new Set([Chunk281598.jE.SHOP_ALL_BANNER_STATIC, Chunk281598.jE.HERO_BANN
     [Chunk281598.aB.PROFILE_EFFECT]: c,
     [Chunk281598.aB.AVATAR_DECORATION]: d,
     [Chunk281598.jE.HERO_BANNER_ANIMATED]: c,
-    [Chunk281598.jE.SHOP_ALL_BANNER_ANIMATED]: c,
     [Chunk281598.jE.SHOP_BUTTON_BG_HOVER]: d,
     [Chunk281598.jE.SHOP_BUTTON_BG_HOVER_DARK]: d,
     [Chunk281598.jE.SHOP_BUTTON_BG_HOVER_LIGHT]: d,
@@ -71,7 +70,6 @@ let s = new Set([Chunk281598.jE.SHOP_ALL_BANNER_STATIC, Chunk281598.jE.HERO_BANN
     [Chunk281598.jE.SHOP_BUTTON_BG_RESTING_DARK]: d,
     [Chunk281598.jE.SHOP_BUTTON_BG_RESTING_LIGHT]: d,
     [Chunk281598.jE.HERO_BANNER_STATIC]: u,
-    [Chunk281598.jE.SHOP_ALL_BANNER_STATIC]: u,
     [Chunk281598.jE.UPSELL_BANNER]: m,
     [Chunk281598.jE.UPSELL_BANNER_POPOUT]: h,
     [Chunk281598.jE.MOBILE_BANNER]: m,

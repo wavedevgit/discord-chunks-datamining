@@ -27,30 +27,30 @@ function S(e) {
   let {
     tab: t,
     isFullScreen: n,
-    sortedCategories: i,
+    sortedCategories: o,
     transitionToTab: c,
     transitionState: u,
     updateAnalyticsState: d,
     refreshCategories: h
   } = e, S = O();
-  x(S);
-  let v = (0, s.e7)([o.Z], () => o.Z.useReducedMotion),
-    [y, T] = l.useState(true),
+  v(S);
+  let x = (0, s.e7)([i.Z], () => i.Z.useReducedMotion),
+    [T, y] = l.useState(true),
     L = l.useCallback(async (e, t, r) => {
       d(e, t);
-      let l = r && !n && !v,
+      let l = r && !n && !x,
         s = t === a.T.ORB ? b.AW.ORBS : b.AW.CATALOG;
-      T(t), await c(s, l)
-    }, [n, v, c, d]),
+      y(t), await c(s, l)
+    }, [n, x, c, d]),
     j = (0, g.FF)("CollectiblesContent"),
     {
       searchError: k
     } = (0, p.a)();
-  return j && null != k ? (0, r.jsx)(C.Z, {}) : null != S ? (0, r.jsx)(m.Z, {
+  return j && null != k ? (0, r.jsx)(m.Z, {}) : null != S ? (0, r.jsx)(_.Z, {
     onRetry: h,
     errorMessage: S,
-    errorOrigin: m.i.SHOP_PAGE
-  }) : E.includes(t) ? (0, r.jsx)(_.Z, {
+    errorOrigin: _.i.SHOP_PAGE
+  }) : E.includes(t) ? (0, r.jsx)(C.Z, {
     isFullScreen: n,
     handleTransition: L,
     tab: t,
@@ -58,14 +58,14 @@ function S(e) {
   }) : (0, r.jsx)(f.Z, {
     isFullScreen: n,
     tab: t,
-    sortedCategories: i,
-    initialCategoryId: y,
-    onUnmount: () => T(true)
+    sortedCategories: o,
+    initialCategoryId: T,
+    onUnmount: () => y(true)
   })
 }
 let O = () => (0, Chunk442837.e7)([Chunk597688.Z, Chunk1870.Z], () => null != Chunk597688.Z.error ? "shop load fetch categories error: ".concat(Chunk597688.Z.error.message) : null != Chunk1870.Z.claimError ? "shop load claim error: ".concat(Chunk1870.Z.claimError.message) : null != Chunk1870.Z.fetchError ? "shop load fetch purchase error: ".concat(Chunk1870.Z.fetchError.message) : true),
-  x = e => {
-    let t = (0, s.e7)([i.default], () => i.default.getCurrentUser()),
+  v = e => {
+    let t = (0, s.e7)([o.default], () => o.default.getCurrentUser()),
       {
         noCache: n,
         includeUnpublished: r

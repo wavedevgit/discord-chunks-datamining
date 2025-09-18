@@ -39,7 +39,7 @@ function I(e) {
     selected: l,
     handleTransition: a
   } = e;
-  return (0, r.jsx)(m.Z.Title, {
+  return (0, r.jsx)(_.Z.Title, {
     onClick: () => a(t),
     wrapperClassName: k.tabWrapper,
     className: s()(k.tab, {
@@ -54,43 +54,43 @@ function B(e) {
     tab: t,
     selected: n,
     displayText: a,
-    handleTransition: o
-  } = e, [i, u] = l.useState(false), d = l.useRef(null), [g, h] = l.useState(0), _ = l.useRef(false), C = e => {
+    handleTransition: i
+  } = e, [o, u] = l.useState(false), d = l.useRef(null), [g, h] = l.useState(0), C = l.useRef(false), m = e => {
     clearTimeout(g), h(setTimeout(() => {
       u(e)
-    }, 100)), e && (_.current = f.Z.keyboardModeEnabled)
+    }, 100)), e && (C.current = f.Z.keyboardModeEnabled)
   }, b = e => {
-    ("Enter" === e.key || " " === e.key) && (e.preventDefault(), C(true))
+    ("Enter" === e.key || " " === e.key) && (e.preventDefault(), m(true))
   };
   return (0, r.jsx)("div", {
     className: k.tabWithMenuContainer,
-    onMouseEnter: () => C(true),
-    onMouseLeave: () => C(false),
+    onMouseEnter: () => m(true),
+    onMouseLeave: () => m(false),
     children: (0, r.jsx)(c.yRy, {
       targetElementRef: d,
-      shouldShow: i,
+      shouldShow: o,
       position: "bottom",
       align: "left",
-      onRequestOpen: () => C(true),
+      onRequestOpen: () => m(true),
       onRequestClose: () => {
         var e;
-        _.current && !f.Z.keyboardModeEnabled && (0, p.Qj)(), C(false), null == (e = d.current) || e.focus()
+        C.current && !f.Z.keyboardModeEnabled && (0, p.Qj)(), m(false), null == (e = d.current) || e.focus()
       },
       renderPopout: e => {
         let {
           closePopout: t
         } = e;
-        return (0, r.jsx)(v.Z, {
-          handleTransition: o,
+        return (0, r.jsx)(x.Z, {
+          handleTransition: i,
           onClose: t
         })
       },
       children: (e, l) => {
-        var i, u;
+        var o, u;
         let {
           isShown: g
         } = l;
-        return (0, r.jsx)(m.Z.Title, (i = function(e) {
+        return (0, r.jsx)(_.Z.Title, (o = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -109,7 +109,7 @@ function B(e) {
           return e
         }({}, e), u = u = {
           ref: d,
-          onClick: () => o(t),
+          onClick: () => i(t),
           onKeyDown: b,
           wrapperClassName: k.tabWrapper,
           className: s()(k.tab, {
@@ -125,7 +125,7 @@ function B(e) {
               color: "currentColor"
             })]
           })
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(u)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(u)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
@@ -133,8 +133,8 @@ function B(e) {
           }
           return n
         })(Object(u)).forEach(function(e) {
-          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(u, e))
-        }), i))
+          Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(u, e))
+        }), o))
       }
     })
   })
@@ -147,49 +147,49 @@ function N(e) {
     onClose: a,
     selectedTab: p,
     handleTransition: f
-  } = e, v = (0, g.ZP)(), N = (0, i.e7)([E.default], () => E.default.getCurrentUser()), P = (null == N ? true : N.isStaff()) || (null == N ? true : N.isStaffPersonal()) || false, {
-    enabled: A
-  } = (0, C.WX)({
+  } = e, x = (0, g.ZP)(), N = (0, o.e7)([E.default], () => E.default.getCurrentUser()), A = (null == N ? true : N.isStaff()) || (null == N ? true : N.isStaffPersonal()) || false, {
+    enabled: P
+  } = (0, m.WX)({
     location: "collectibles_shop_header_bar"
   }), R = [{
-    tab: T.AW.HOME,
+    tab: y.AW.HOME,
     displayText: j.intl.string(j.t.ijDDw8)
   }, {
-    tab: T.AW.CATALOG,
+    tab: y.AW.CATALOG,
     displayText: j.intl.string(j.t.Ah5sJi)
   }];
-  A && R.push({
-    tab: T.AW.ORBS,
+  P && R.push({
+    tab: y.AW.ORBS,
     displayText: j.intl.string(j.t.EBYkzs)
   });
   let Z = n ? O.DR : a,
-    w = p === T.AW.ORBS ? L.ZY5.SHOP_ORBS_TAB : L.ZY5.COLLECTIBLES_SHOP,
-    M = l.useCallback(() => {
-      t && (Z(), (0, u.Ou)()), (0, _.Y)({
+    w = p === y.AW.ORBS ? L.ZY5.SHOP_ORBS_TAB : L.ZY5.COLLECTIBLES_SHOP,
+    F = l.useCallback(() => {
+      t && (Z(), (0, u.Ou)()), (0, C.Y)({
         pageType: w,
         sectionType: L.jXE.ORBS_BALANCE_MENU,
         ctaObject: L.qAy.CTA_TO_QUEST_HOME
       }), (0, h.navigateToQuestHome)({
-        fromContent: o.j.ORBS_BALANCE_MENU
+        fromContent: i.j.ORBS_BALANCE_MENU
       })
     }, [Z, t, w]),
-    F = (0, x.eN)("collectibles_shop_header_bar");
+    M = (0, v.eN)("collectibles_shop_header_bar");
   return (0, r.jsx)(c.f6W, {
-    theme: v,
-    children: e => (0, r.jsxs)(m.Z, {
+    theme: x,
+    children: e => (0, r.jsxs)(_.Z, {
       disableDoubleClick: true,
       className: s()(e, k.headerBar, {
         [k.fullscreenHeaderBar]: t
       }),
-      innerClassname: A ? k.headerBarInner : true,
-      toolbar: t || !P ? null : (0, r.jsx)(l.Fragment, {}),
+      innerClassname: P ? k.headerBarInner : true,
+      toolbar: t || !A ? null : (0, r.jsx)(l.Fragment, {}),
       children: [(0, r.jsxs)(c.P3F, {
         className: k.shopHomeLink,
-        onClick: () => f(T.AW.HOME),
+        onClick: () => f(y.AW.HOME),
         "aria-label": j.intl.string(j.t.pWG4zc) + " home",
         children: [(0, r.jsx)(S.Z, {
           className: k.discordLogo
-        }), (0, r.jsx)(m.Z.Title, {
+        }), (0, r.jsx)(_.Z.Title, {
           children: j.intl.string(j.t.pWG4zc)
         })]
       }), (0, r.jsx)("div", {
@@ -199,9 +199,9 @@ function N(e) {
             tab: t,
             displayText: n
           } = e;
-          return t === T.AW.CATALOG ? (0, r.jsx)(B, {
+          return t === y.AW.CATALOG ? (0, r.jsx)(B, {
             tab: t,
-            selected: (0, T.RE)(p) || p === t,
+            selected: (0, y.RE)(p) || p === t,
             displayText: n,
             handleTransition: f
           }, t) : (0, r.jsx)(I, {
@@ -211,17 +211,17 @@ function N(e) {
             handleTransition: f
           }, t)
         })
-      }), (A || t || F) && (0, r.jsxs)("div", {
+      }), (P || t || M) && (0, r.jsxs)("div", {
         className: k.alignedRightContent,
-        children: [F && (0, r.jsx)(y.Z, {
+        children: [M && (0, r.jsx)(T.Z, {
           handleTransition: f,
           selectedTab: p
-        }), A && (0, r.jsx)(b.V9, {
+        }), P && (0, r.jsx)(b.V9, {
           anchorPillType: t ? "SHOP_FULLSCREEN" : "SHOP",
           analyticsPage: w,
           cardAlignment: b.V9.CardAlignment.END,
           ctaText: j.intl.string(j.t.VC4Mq6),
-          ctaOnClick: M,
+          ctaOnClick: F,
           className: k.balanceWidgetMenu
         }), t && (0, r.jsx)(d.Z, {
           closeAction: Z,

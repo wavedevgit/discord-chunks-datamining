@@ -5,6 +5,7 @@ require.d(exports, {
   IZ: () => _,
   Ng: () => h,
   Re: () => l,
+  fg: () => m,
   j_: () => p
 }), require("./953529.js"), require("./539854.js"), require("./388685.js");
 var Chunk512722 = require("./512722.js"),
@@ -121,5 +122,6 @@ class f extends u {
 }
 let _ = new d("2025-09-libdiscore-migrate-notestore", "NoteStore", "Kv"),
   p = new d("2025-09-libdiscore-migrate-guildstore", "GuildStore", "Kv"),
-  h = new d("2025-09-libdiscore-guildrolestore", "GuildRoleStore", "Kkv");
+  h = new d("2025-09-libdiscore-guildrolestore", "GuildRoleStore", "Kkv"),
+  m = new d("2025-09-libdiscore-rawguildemojistore", "RawGuildEmojiStore", "Kkv");
 new f("2025-09-libdiscore-telemetry")

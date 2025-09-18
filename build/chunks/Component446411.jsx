@@ -24,9 +24,9 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk44824 = require("./44824.jsx"),
   Chunk124347 = require("./124347.jsx"),
   Chunk283756 = require("./283756.jsx"),
+  Chunk120324 = require("./120324.js"),
   Chunk566898 = require("./566898.jsx"),
   Chunk963206 = require("./963206.jsx"),
-  Chunk207982 = require("./207982.js"),
   Chunk785992 = require("./785992.js"),
   Chunk400266 = require("./400266.jsx"),
   Chunk592125 = require("./592125.js"),
@@ -373,7 +373,7 @@ class ea extends(r = Chunk647438.PureComponent) {
       width: t,
       height: n
     } = e;
-    return (0, i.jsx)(I.ZT, {
+    return (0, i.jsx)(T.ZT, {
       className: F.contentPlaceholder,
       width: t,
       height: n,
@@ -624,15 +624,15 @@ class ea extends(r = Chunk647438.PureComponent) {
     let y = (0, Chunk52824.q)(Chunk892814),
       {
         srcToOnClickOverride: v,
-        srcToHandlePreloadImage: I
+        srcToHandlePreloadImage: T
       } = null == Chunk399654 ? {
         srcToOnClickOverride: {},
         srcToHandlePreloadImage: {}
-      } : (0, Chunk207982.G)(Chunk399654.map(e => z(W({}, (0, E.Hv)(e, b, "IMAGE")), {
+      } : (0, Chunk120324.G)(Chunk399654.map(e => z(W({}, (0, E.Hv)(e, b, "IMAGE")), {
         original: e.url,
         srcIsAnimated: e.srcIsAnimated
       })), {}, "Embed"),
-      T = Chunk124347.ZP.isAnimated({
+      S = Chunk124347.ZP.isAnimated({
         src: (0, Chunk52824.q)(Chunk892814),
         original: Chunk892814.url,
         animated: false,
@@ -675,8 +675,8 @@ class ea extends(r = Chunk647438.PureComponent) {
           } = t;
           return f(z(W({}, A), {
             autoPlay: p && !n && !a,
-            renderAccessory: T ? e : null,
-            handlePreloadImage: I[y],
+            renderAccessory: S ? e : null,
+            handlePreloadImage: T[y],
             onClick: v[y],
             onMouseEnter: () => this.handleImageHover(true, l, P),
             onMouseLeave: () => this.handleImageHover(false, l, P),

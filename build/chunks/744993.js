@@ -61,14 +61,14 @@ function x(e) {
     r.Z.dispatch({
       type: "PORTKEY_FETCH_INSTANCES_SUCCESS",
       guildId: e,
-      instances: o.qE.reduce((e, t) => (e[t.gameId] = t, e), {})
+      instances: o.qE.reduce((e, t) => (e[t.id] = t, e), {})
     })
   }, 5e3) : a.tn.get({
     url: h.ANM.GAME_SERVERS(e),
     rejectWithError: true
   }).then(t => {
     if (null != t.body) {
-      let n = t.body.reduce((e, t) => (e[t.gameId] = (0, c.Z)(t), e), {});
+      let n = t.body.reduce((e, t) => (e[t.id] = (0, c.Z)(t), e), {});
       r.Z.dispatch({
         type: "PORTKEY_FETCH_INSTANCES_SUCCESS",
         guildId: e,

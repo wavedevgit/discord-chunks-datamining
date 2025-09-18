@@ -2,7 +2,7 @@
 /** chunk id: 780475, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  EB: () => m,
+  EB: () => _,
   MV: () => p,
   q3: () => f
 }), require("./388685.js");
@@ -38,41 +38,41 @@ let p = e => {
           return a.Z.COLLECTIBLES_SHOP_FULLSCREEN
       }
     })(e), {
-      analyticsLocations: o,
-      newestAnalyticsLocation: i
+      analyticsLocations: i,
+      newestAnalyticsLocation: o
     } = (0, s.ZP)([...n, a.Z.COLLECTIBLES_SHOP, r]);
     return {
       analyticsSource: t,
-      analyticsLocations: o,
-      newestAnalyticsLocation: i,
+      analyticsLocations: i,
+      newestAnalyticsLocation: o,
       currentTabLocation: r
     }
   },
   f = (e, t, n, l, a) => {
     let {
       analyticsLocations: s,
-      analyticsSource: i,
+      analyticsSource: o,
       currentTabLocation: c,
       newestAnalyticsLocation: g
     } = p(t);
     r.useEffect(() => {
       if (l !== u.f7.VISIBLE || g !== c) return;
-      let r = t === u.AW.CATALOG ? a : i;
-      o.default.track(d.rMx.COLLECTIBLES_SHOP_VIEWED, {
+      let r = t === u.AW.CATALOG ? a : o;
+      i.default.track(d.rMx.COLLECTIBLES_SHOP_VIEWED, {
         location_stack: s,
         source: r,
         page_session_id: e,
         page_type: t === u.AW.CATALOG ? "full" : t,
         category: t === u.AW.HOME ? true : n
       })
-    }, [s, e, t, n, c, l, a, i, g])
+    }, [s, e, t, n, c, l, a, o, g])
   },
-  m = (e, t) => {
+  _ = (e, t) => {
     let {
       analyticsLocations: n
     } = p(e);
     r.useEffect(() => {
-      null == t || i.ZP.canUseCollectibles(t) || o.default.track(d.rMx.PREMIUM_UPSELL_VIEWED, {
+      null == t || o.ZP.canUseCollectibles(t) || i.default.track(d.rMx.PREMIUM_UPSELL_VIEWED, {
         type: g.cd.COLLECTIBLES_SHOP,
         location_stack: n
       })

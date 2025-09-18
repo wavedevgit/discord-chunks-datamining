@@ -21,65 +21,65 @@ let h = e => {
   var t, n, a;
   let {
     wideBannerBlock: h,
-    handleTransition: _,
-    tab: C
-  } = e, b = null == (t = u.Z.getCategoryByStoreListingId(h.categoryStoreListingId)) ? true : t.skuId, E = l.useRef(null), S = l.useRef(null), [O, x] = l.useState();
+    handleTransition: C,
+    tab: m
+  } = e, b = null == (t = u.Z.getCategoryByStoreListingId(h.categoryStoreListingId)) ? true : t.skuId, E = l.useRef(null), S = l.useRef(null), [O, v] = l.useState();
   l.useEffect(() => {
     let e = S.current;
     if (null == e) return;
     let t = () => {
-      e.naturalWidth > 0 && e.naturalHeight > 0 && x(1080 * (e.naturalHeight / e.naturalWidth))
+      e.naturalWidth > 0 && e.naturalHeight > 0 && v(1080 * (e.naturalHeight / e.naturalWidth))
     };
     return e.complete ? t() : e.onload = t, () => {
       e.onload = null
     }
   }, []);
-  let v = null != b ? b : "",
+  let x = null != b ? b : "",
     {
-      handleCardVisibilityChange: y
-    } = (0, d.E)(v, "home", "marketing wide banner"),
-    T = h.bannerUrl;
-  if (null == T) return null;
-  let L = C === g.AW.ORBS;
-  return (0, r.jsx)(o.$, {
+      handleCardVisibilityChange: T
+    } = (0, d.E)(x, "home", "marketing wide banner"),
+    y = h.bannerUrl;
+  if (null == y) return null;
+  let L = m === g.AW.ORBS;
+  return (0, r.jsx)(i.$, {
     innerRef: E,
-    onChange: y,
+    onChange: T,
     threshold: 0,
     children: (0, r.jsxs)("div", {
       ref: E,
-      className: s()(m.row, m.between, m.bannerBlockContainer, m.centeredSection, {
-        [m.extraRounded]: L
+      className: s()(_.row, _.between, _.bannerBlockContainer, _.centeredSection, {
+        [_.extraRounded]: L
       }),
       children: [(0, r.jsx)("div", {
-        className: s()(m.wideBannerBackgroundImg, {
-          [m.extraRounded]: L
+        className: s()(_.wideBannerBackgroundImg, {
+          [_.extraRounded]: L
         }),
         children: (0, r.jsx)("img", {
           ref: S,
-          src: T,
+          src: y,
           alt: h.title,
-          className: s()(m.wideBannerArt, {
-            [m.wideBannerArtOrbs]: L
+          className: s()(_.wideBannerArt, {
+            [_.wideBannerArtOrbs]: L
           }),
           style: {
             height: null != O ? "".concat(O, "px") : "auto"
           }
         })
       }), (0, r.jsx)("div", {
-        className: m.wideBannerContentContainer,
+        className: _.wideBannerContentContainer,
         style: {
           maxHeight: null != O ? "".concat(O, "px") : "auto"
         },
         children: (0, r.jsxs)("div", {
-          className: m.wideBannerTextContainer,
-          children: [(0, r.jsx)(i.X6q, {
+          className: _.wideBannerTextContainer,
+          children: [(0, r.jsx)(o.X6q, {
             style: {
               color: null != (n = h.bannerTextColor) ? n : "var(--header-primary)"
             },
-            className: L ? m.wideBannerOrbsHeading : true,
+            className: L ? _.wideBannerOrbsHeading : true,
             variant: L ? "heading-xl/bold" : "heading-lg/semibold",
             children: h.title
-          }), (0, r.jsx)(i.Text, {
+          }), (0, r.jsx)(o.Text, {
             style: {
               color: null != (a = h.bannerTextColor) ? a : "var(--text-muted)"
             },
@@ -91,10 +91,10 @@ let h = e => {
           })]
         })
       }), true !== h.disableCta && (0, r.jsx)("div", {
-        className: m.wideBannerBlockButton,
-        children: (0, r.jsx)(i.zxk, {
+        className: _.wideBannerBlockButton,
+        children: (0, r.jsx)(o.zxk, {
           variant: "overlay-primary",
-          onClick: () => _("shop wide banner", v),
+          onClick: () => C("shop wide banner", x),
           text: f.intl.string(f.t.jVcuVV)
         })
       })]

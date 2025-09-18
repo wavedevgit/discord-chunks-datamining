@@ -2,13 +2,14 @@
 /** chunk id: 714424, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => c
+  Z: () => u
 }), require("./388685.js");
 var Chunk732870 = require("./732870.js"),
+  Chunk894276 = require("./894276.js"),
   Chunk429091 = require("./429091.js"),
   Chunk906411 = require("./906411.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,7 +18,7 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e, t) {
+function l(e, t) {
   let n = {};
   for (let i of t) n[i.id] = {
     [r.O]: "RawGuildEmoji",
@@ -30,46 +31,46 @@ function s(e, t) {
     roles: i.roles,
     managed: i.managed,
     version: i.version,
-    type: a.B.GUILD
+    type: o.B.GUILD
   };
   return n
 }
-class l extends Chunk429091.d {
+class c extends Chunk429091.d {
   getGuildEmojis(e) {
     return this.getNullablePartition(e)
   }
 }
-o(l, "displayName", "RawGuildEmojiStore");
-let c = new l({
+s(c, "displayName", "RawGuildEmojiStore");
+let u = new c({
   LOGOUT: (e, t) => t.reset(),
   BACKGROUND_SYNC: (e, t) => t.reset(),
   CONNECTION_OPEN: (e, t) => {
     t.reset(t => {
-      for (let n of e.guilds) null != n.emojis.items && (t[n.id] = s(n.id, n.emojis.items))
+      for (let n of e.guilds) null != n.emojis.items && (t[n.id] = l(n.id, n.emojis.items))
     })
   },
   OVERLAY_INITIALIZE: (e, t) => {
     t.reset(t => {
       Object.entries(e.emojis).forEach(e => {
         let [n, r] = e;
-        t[n] = s(n, r)
+        t[n] = l(n, r)
       })
     })
   },
   CACHED_EMOJIS_LOADED: (e, t) => {
-    for (let [n, r] of e.emojis) t.setPartition(n, s(n, r))
+    for (let [n, r] of e.emojis) t.setPartition(n, l(n, r))
   },
   GUILD_CREATE: (e, t) => {
     var n;
-    t.setPartition(e.guild.id, s(e.guild.id, null != (n = e.guild.emojis.items) ? n : []))
+    t.setPartition(e.guild.id, l(e.guild.id, null != (n = e.guild.emojis.items) ? n : []))
   },
   GUILD_UPDATE: (e, t) => {
-    t.setPartition(e.guild.id, s(e.guild.id, e.guild.emojis))
+    t.setPartition(e.guild.id, l(e.guild.id, e.guild.emojis))
   },
   GUILD_EMOJIS_UPDATE: (e, t) => {
-    t.setPartition(e.guildId, s(e.guildId, e.emojis))
+    t.setPartition(e.guildId, l(e.guildId, e.emojis))
   },
   GUILD_DELETE: (e, t) => {
     t.removePartition(e.guild.id)
   }
-})
+}, Chunk894276.fg.getCachedBridgedStoreMode())

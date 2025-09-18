@@ -1,5 +1,5 @@
 /** Chunk was on 57486 **/
-/** chunk id: 416162, original params: e,t,i (module,exports,require) **/
+/** chunk id: 513796, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
   Z: () => x
 }), require("./388685.js");
@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk869048 = require("./869048.js");
+  Chunk918587 = require("./918587.js");
 let m = e => {
     let {
       index: t,
@@ -39,29 +39,29 @@ let m = e => {
       title: i,
       stepData: l,
       transitionState: x,
-      onClose: f,
-      completeButtonText: p,
-      overviewFooter: h,
-      onNextPressed: b,
-      onPrevPressed: v,
+      onClose: p,
+      completeButtonText: h,
+      overviewFooter: f,
+      onNextPressed: v,
+      onPrevPressed: b,
       onComplete: g,
       sequencerClassName: N,
       initialStep: j = 0,
-      forceStep: C,
-      submitting: S = false,
-      autoCloseOnComplete: _ = true
+      forceStep: _,
+      submitting: C = false,
+      autoCloseOnComplete: S = true
     } = e, [I, E] = n.useState([]), [O, w] = n.useState(j), T = (0, c.Dt)();
     n.useEffect(() => {
       E([...Array(l.length).keys()])
     }, [l.length]);
-    let M = null != C ? C : O,
+    let M = null != _ ? _ : O,
       y = l[M],
       L = 0 === M,
       R = M === l.length - 1,
-      P = null != p ? p : d.intl.string(d.t.i4jeWV),
+      P = null != h ? h : d.intl.string(d.t.i4jeWV),
       A = n.useCallback(() => {
-        null == v || v(), w(M - 1)
-      }, [v, M, w]);
+        null == b || b(), w(M - 1)
+      }, [b, M, w]);
     return (0, s.jsxs)(o.Y0X, {
       size: o.CgR.MEDIUM,
       className: a()(u.container, t),
@@ -82,7 +82,7 @@ let m = e => {
             title: e.overviewTitle,
             selected: t === M
           }, t))
-        }), h]
+        }), f]
       }), (0, s.jsxs)("div", {
         className: u.modal,
         children: [(0, s.jsxs)(o.hzk, {
@@ -94,7 +94,7 @@ let m = e => {
                 left: 4
               }
             },
-            onClick: f,
+            onClick: p,
             className: u.closeButton
           }), (0, s.jsx)(o.qBt, {
             step: M,
@@ -111,9 +111,9 @@ let m = e => {
             variant: "active",
             text: R ? P : d.intl.string(d.t.PDTjLC),
             type: "submit",
-            loading: S,
+            loading: C,
             onClick: () => {
-              R ? (g(), _ && f()) : (null == b || b(), w(M + 1))
+              R ? (g(), S && p()) : (null == v || v(), w(M + 1))
             },
             disabled: y.disableNextStep
           }), L ? null : (0, s.jsx)(r.zx, {

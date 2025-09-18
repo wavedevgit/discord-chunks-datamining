@@ -127,7 +127,7 @@ let K = e => {
       ex = [];
     (0, f.Kl)() && (ef && ej.push(o.z.SEPTEMBER_2025_MARKETING_MOMENT_NITRO_TAB_BADGE), ep && ej.push(o.z.BOGO_2025_NITRO_TAB_BADGE), eT && ej.push(o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE), ed && ej.push(o.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2), eP && ej.push(o.z.CUSTOM_THEMES_PREMIUM_TAB_BADGE));
     let [eA, eZ] = (0, g.US)(ej, true, true);
-    eE && ex.push(o.z.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK), ef && ex.push(o.z.SEPTEMBER_2025_MARKETING_MOMENT_NITRO_TAB_COACHMARK);
+    eE && ex.push(o.z.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK), ef && (0, I.G2)() && ex.push(o.z.SEPTEMBER_2025_MARKETING_MOMENT_NITRO_TAB_COACHMARK);
     let [ew, eL] = (0, g.US)(ex, true, true);
     if (i.useEffect(() => {
         true === X && null != eA && eZ(W.L.AUTO_DISMISS), true === X && null != ew && eL(W.L.AUTO_DISMISS)

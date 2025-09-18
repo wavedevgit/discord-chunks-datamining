@@ -2,7 +2,7 @@
 /** chunk id: 554067, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,26 +17,26 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk535333 = require("./535333.js");
 
-function m(e) {
+function _(e) {
   let {
     handleTransition: t,
     selectedTab: n
   } = e, {
-    searchQuery: m,
+    searchQuery: _,
     onSetSearchQuery: h
-  } = (0, u.S)(), [_, C] = l.useState(""), b = (0, c.sp)(), E = (0, a.e7)([o.default], () => o.default.locale);
+  } = (0, u.S)(), [C, m] = l.useState(""), b = (0, c.sp)(), E = (0, a.e7)([i.default], () => i.default.locale);
   return l.useEffect(() => {
     let e = setTimeout(() => {
-      h(_)
+      h(C)
     }, 250);
     return () => clearTimeout(e)
-  }, [_, h]), l.useEffect(() => {
-    C(m)
-  }, [m]), (0, r.jsx)(s.P3F, {
+  }, [C, h]), l.useEffect(() => {
+    m(_)
+  }, [_]), (0, r.jsx)(s.P3F, {
     ignoreKeyPress: true,
     className: f.searchBar,
     onClick: () => {
-      n !== d.AW.CATALOG && t(d.AW.CATALOG), i.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+      n !== d.AW.CATALOG && t(d.AW.CATALOG), o.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == b ? true : b.sessionId,
         page_section: null == b ? true : b.pageSection,
         page_category: null == b ? true : b.pageCategory,
@@ -49,12 +49,12 @@ function m(e) {
     children: (0, r.jsx)(s.E1j, {
       size: "sm",
       onKeyDown: e => {
-        "Enter" === e.key && h(_)
+        "Enter" === e.key && h(C)
       },
-      query: _,
-      onChange: C,
+      query: C,
+      onChange: m,
       onClear: () => {
-        C(""), i.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        m(""), o.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == b ? true : b.sessionId,
           page_section: null == b ? true : b.pageSection,
           page_category: null == b ? true : b.pageCategory,

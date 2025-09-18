@@ -21,15 +21,15 @@ let f = e => {
     shelf: t,
     handleTransition: n,
     tab: l
-  } = e, f = (0, s.e7)([i.default], () => i.default.getCurrentUser());
+  } = e, f = (0, s.e7)([o.default], () => o.default.getCurrentUser());
   return null == f ? null : (0, r.jsxs)("div", {
     className: a()(p.shelfBlockContainer, p.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: p.blockHeader,
-      children: [(0, r.jsx)(o.X6q, {
+      children: [(0, r.jsx)(i.X6q, {
         variant: "heading-lg/semibold",
         children: t.name
-      }), (0, r.jsx)(o.zxk, {
+      }), (0, r.jsx)(i.zxk, {
         variant: "secondary",
         text: g.intl.formatToPlainString(g.t.bc9RBA, {
           category_name: t.name

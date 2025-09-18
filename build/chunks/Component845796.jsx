@@ -25,51 +25,51 @@ let b = () => {
     sort: e,
     onSetSort: t,
     hasRelevanceFilters: n
-  } = (0, Chunk501431.S)(), a = (0, Chunk381585.sp)(), b = (0, Chunk642909.G)("CollectiblesSortSelect"), E = require(), S = Chunk647438.useMemo(() => Chunk215023.aP.filter(e => e.sortType !== i.E.RELEVANCE || E), [E]), O = Chunk647438.useCallback(e => {
+  } = (0, Chunk501431.S)(), a = (0, Chunk381585.sp)(), b = (0, Chunk642909.G)("CollectiblesSortSelect"), E = require(), S = Chunk647438.useMemo(() => Chunk215023.aP.filter(e => e.sortType !== o.E.RELEVANCE || E), [E]), O = Chunk647438.useCallback(e => {
     let {
       sortType: t,
       sortDirection: n
     } = e;
-    return t === i.E.RECENCY ? {
+    return t === o.E.RECENCY ? {
       label: h.intl.string(h.t["51Bhi4"]),
       value: "recent"
-    } : t === i.E.PRICE ? n === o.F.ASC ? {
+    } : t === o.E.PRICE ? n === i.F.ASC ? {
       label: h.intl.string(h.t.m8RVU1),
       value: "price-asc"
     } : {
       label: h.intl.string(h.t.zBwQJC),
       value: "price-desc"
-    } : t === i.E.RELEVANCE ? {
+    } : t === o.E.RELEVANCE ? {
       label: h.intl.string(h.t["XoeT//"]),
       value: "relevance"
     } : {
       label: h.intl.string(h.t.Y68e5u),
       value: "popularity"
     }
-  }, []), x = Chunk647438.useCallback(e => ({
+  }, []), v = Chunk647438.useCallback(e => ({
     recent: {
-      sortType: i.E.RECENCY,
-      sortDirection: o.F.DESC
+      sortType: o.E.RECENCY,
+      sortDirection: i.F.DESC
     },
     "price-asc": {
-      sortType: i.E.PRICE,
-      sortDirection: o.F.ASC
+      sortType: o.E.PRICE,
+      sortDirection: i.F.ASC
     },
     "price-desc": {
-      sortType: i.E.PRICE,
-      sortDirection: o.F.DESC
+      sortType: o.E.PRICE,
+      sortDirection: i.F.DESC
     },
     popularity: {
-      sortType: i.E.POPULARITY,
-      sortDirection: o.F.DESC
+      sortType: o.E.POPULARITY,
+      sortDirection: i.F.DESC
     },
     relevance: {
-      sortType: i.E.RELEVANCE,
-      sortDirection: o.F.DESC
+      sortType: o.E.RELEVANCE,
+      sortDirection: i.F.DESC
     }
-  })[e], []), v = Chunk647438.useCallback(e => {
-    let n = O(x(e));
-    u.default.track(m.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+  })[e], []), x = Chunk647438.useCallback(e => {
+    let n = O(v(e));
+    u.default.track(_.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == a ? true : a.sessionId,
       page_section: null == a ? true : a.pageSection,
       page_category: null == a ? true : a.pageCategory,
@@ -77,16 +77,16 @@ let b = () => {
       page_size: null == a ? true : a.pageSize,
       cta_name: "sort by ".concat(n.label.toLowerCase()),
       page_type: "catalog"
-    }), t(x(e))
-  }, [Chunk120356, O, x, exports]), y = O(module);
+    }), t(v(e))
+  }, [Chunk120356, O, v, exports]), T = O(module);
   return (0, Chunk951288.jsx)("div", {
     className: s()(Chunk182668.container, {
       [Chunk345213.shopTakeOver]: b
     }),
     children: (0, Chunk951288.jsx)(Chunk481060.PhF, {
       options: S.map(O),
-      select: v,
-      isSelected: e => e === y.value,
+      select: x,
+      isSelected: e => e === T.value,
       serialize: e => e,
       popoutWidth: 224,
       popoutClassName: s()({

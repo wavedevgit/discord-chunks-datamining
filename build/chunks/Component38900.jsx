@@ -9,8 +9,8 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
+  Chunk638758 = require("./638758.js"),
   Chunk887353 = require("./887353.js"),
-  Chunk923732 = require("./923732.js"),
   Chunk198501 = require("./198501.js"),
   Chunk300179 = require("./300179.js");
 let u = () => 4 * Math.random() + 8,
@@ -31,13 +31,13 @@ let u = () => 4 * Math.random() + 8,
     })
   }),
   p = () => (0, Chunk951288.jsx)("div", {
-    className: Chunk887353.skeletons,
+    className: Chunk198501.skeletonsContainer,
     children: d.map(e => (0, r.jsxs)("div", {
-      className: s.cardsContainer,
+      className: i.cardsContainer,
       children: [(0, r.jsx)("div", {
-        className: a()(i.skeleton, o.shopBanner),
+        className: a()(o.skeleton, o.bannerSkeleton, s.catalogBanner),
         children: (0, r.jsx)("div", {
-          className: i.bannerBody
+          className: o.bannerBody
         })
       }), Array.from({
         length: e

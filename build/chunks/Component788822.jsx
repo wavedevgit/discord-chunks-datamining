@@ -2,7 +2,7 @@
 /** chunk id: 788822, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  q: () => C
+  q: () => m
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,39 +19,39 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk310582 = require("./310582.js");
-let C = e => {
-  var t, n, a, C;
+let m = e => {
+  var t, n, a, m;
   let b, {
     category: E,
     subblock: S,
     badgeText: O,
-    handleTransition: x
+    handleTransition: v
   } = e;
   null != S && (b = null == (t = g.Z.getCategoryByStoreListingId(null == S ? true : S.categoryStoreListingId)) ? true : t.skuId);
-  let v = null != (n = null != b ? b : null == E ? true : E.skuId) ? n : "",
+  let x = null != (n = null != b ? b : null == E ? true : E.skuId) ? n : "",
     {
-      handleCardVisibilityChange: y
-    } = (0, p.E)(v, "home", "marketing featured block"),
-    T = (0, f.YG)(E, S),
+      handleCardVisibilityChange: T
+    } = (0, p.E)(x, "home", "marketing featured block"),
+    y = (0, f.YG)(E, S),
     L = l.useRef(null),
-    j = v === o.T.NAMEPLATES_V3,
+    j = x === i.T.NAMEPLATES_V3,
     k = j ? "NAMEPLATES VOL.3" : null,
     I = null == S ? true : S.bodyText,
     B = (0, d.sp)();
-  return (0, r.jsx)(i.$, {
+  return (0, r.jsx)(o.$, {
     innerRef: L,
-    onChange: y,
+    onChange: T,
     threshold: 0,
     children: (0, r.jsxs)(c.P3F, {
-      className: _.featuredBlock,
+      className: C.featuredBlock,
       innerRef: L,
       style: {
-        backgroundImage: "url(".concat(T, ")")
+        backgroundImage: "url(".concat(y, ")")
       },
       onClick: () => {
-        x("shop marketing tile", v), u.default.track(m.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        v("shop marketing tile", x), u.default.track(_.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == B ? true : B.sessionId,
-          sku_id: v,
+          sku_id: x,
           page_type: "home",
           page_section: null == B ? true : B.pageSection,
           page_category: null == B ? true : B.pageCategory,
@@ -63,13 +63,13 @@ let C = e => {
       children: [null != O && (0, r.jsx)(c.IGR, {
         disableColor: true,
         text: O,
-        className: _.featuredBlockBadge
+        className: C.featuredBlockBadge
       }), (0, r.jsxs)("div", {
-        className: _.featuredBlockTextContainer,
+        className: C.featuredBlockTextContainer,
         children: [null != k && (0, r.jsx)(c.X6q, {
           lineClamp: 2,
-          className: s()(_.featuredBlockTitleText, {
-            [_.featuredBlockTitleTextNameplate]: j
+          className: s()(C.featuredBlockTitleText, {
+            [C.featuredBlockTitleTextNameplate]: j
           }),
           style: {
             color: null != (a = null == S ? true : S.bannerTextColor) ? a : "white"
@@ -78,22 +78,22 @@ let C = e => {
           children: k
         }), null != I && (0, r.jsx)(c.X6q, {
           lineClamp: null != k ? 2 : 4,
-          className: _.featuredBlockBodyText,
+          className: C.featuredBlockBodyText,
           style: {
-            color: null != (C = null == S ? true : S.bannerTextColor) ? C : "white"
+            color: null != (m = null == S ? true : S.bannerTextColor) ? m : "white"
           },
           variant: "heading-md/medium",
           children: I
         })]
       }), (0, r.jsx)("div", {
-        className: _.featuredBlockButtonContainer,
+        className: C.featuredBlockButtonContainer,
         children: (0, r.jsx)(c.zxk, {
           variant: "overlay-primary",
           text: h.intl.string(h.t.jVcuVV),
           onClick: e => {
-            x("shop marketing take me there button", v), e.stopPropagation(), u.default.track(m.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            v("shop marketing take me there button", x), e.stopPropagation(), u.default.track(_.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
               collectibles_shop_session_id: null == B ? true : B.sessionId,
-              sku_id: v,
+              sku_id: x,
               page_type: "home",
               page_section: null == B ? true : B.pageSection,
               page_category: null == B ? true : B.pageCategory,

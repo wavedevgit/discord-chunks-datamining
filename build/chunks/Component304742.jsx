@@ -18,7 +18,7 @@ function g(e) {
   let {
     handleTransition: t,
     onClose: n
-  } = e, a = (0, i.G)("CollectiblesIndexPageContextMenu"), g = l.useMemo(() => [{
+  } = e, a = (0, o.G)("CollectiblesIndexPageContextMenu"), g = l.useMemo(() => [{
     label: u.intl.string(u.t.dRZYND),
     value: c.AW.AVATAR_DECORATIONS
   }, {
@@ -38,7 +38,7 @@ function g(e) {
     className: s()({
       [d.shopTakeOver]: a
     }),
-    children: (0, r.jsx)(o.v2r, {
+    children: (0, r.jsx)(i.v2r, {
       navId: "collectibles-index-page-menu",
       className: s()({
         [d.shopTakeOver]: a
@@ -46,7 +46,7 @@ function g(e) {
       onClose: n,
       "aria-label": u.intl.string(u.t.xFcotb),
       onSelect: () => {},
-      children: g.map(e => (0, r.jsx)(o.sNh, {
+      children: g.map(e => (0, r.jsx)(i.sNh, {
         id: e.value,
         label: e.label,
         action: () => {

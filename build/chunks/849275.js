@@ -2,7 +2,7 @@
 /** chunk id: 849275, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => C
 }), require("./388685.js"), require("./290780.js");
 var Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
@@ -19,34 +19,34 @@ var Chunk647438 = require("./647438.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e, t) {
+function C(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
-    l = (0, o.e7)([i.Z], () => i.Z.hasConsented(m.pjP.PERSONALIZATION)),
-    _ = r.useMemo(() => {
+    l = (0, i.e7)([o.Z], () => o.Z.hasConsented(_.pjP.PERSONALIZATION)),
+    C = r.useMemo(() => {
       var t;
       return null != (t = null == e ? true : e[s.m.RECOMMENDED]) ? t : []
     }, [e]),
-    C = r.useMemo(() => {
+    m = r.useMemo(() => {
       var t;
       return null != (t = null == e ? true : e[s.m.POPULAR]) ? t : []
     }, [e]),
-    b = _.length > 0 && l,
+    b = C.length > 0 && l,
     [E, S] = r.useState(b ? s.m.RECOMMENDED : s.m.POPULAR),
     O = (0, f.Z)(),
-    x = (0, o.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup),
-    v = (0, o.e7)([u.Z], () => u.Z.getUserDiscounts()),
-    y = (0, g.a)(),
-    [T, L] = r.useState([]),
+    v = (0, i.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup),
+    x = (0, i.e7)([u.Z], () => u.Z.getUserDiscounts()),
+    T = (0, g.a)(),
+    [y, L] = r.useState([]),
     j = r.useCallback(() => {
-      S(s.m.RANDOM), L(a().shuffle(x))
-    }, [x]);
+      S(s.m.RANDOM), L(a().shuffle(v))
+    }, [v]);
   r.useEffect(() => {
-    L(a().shuffle(x))
-  }, [x]);
+    L(a().shuffle(v))
+  }, [v]);
   let k = r.useMemo(() => {
     let e = [];
-    return E === s.m.RECENT ? e = x : E === s.m.PRICE_LOW_TO_HIGH ? e = (0, d.hC)([...x], t) : E === s.m.RECOMMENDED ? e = n ? (0, d.Qf)(O(_), v) : O(_) : E === s.m.POPULAR ? e = n ? (0, d.Qf)(O(C), v) : O(C) : E === s.m.RANDOM && (e = T), y(e)
-  }, [E, y, x, T, t, O, _, C, v, n]);
+    return E === s.m.RECENT ? e = v : E === s.m.PRICE_LOW_TO_HIGH ? e = (0, d.hC)([...v], t) : E === s.m.RECOMMENDED ? e = n ? (0, d.Qf)(O(C), x) : O(C) : E === s.m.POPULAR ? e = n ? (0, d.Qf)(O(m), x) : O(m) : E === s.m.RANDOM && (e = y), T(e)
+  }, [E, T, v, y, t, O, C, m, x, n]);
   return {
     sortType: E,
     setSortType: S,

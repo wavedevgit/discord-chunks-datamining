@@ -19,8 +19,8 @@ let g = e => {
     bannerStatic: t,
     bannerAnimated: n,
     isResponsive: l = false
-  } = e, g = (0, s.e7)([i.Z], () => i.Z.useReducedMotion), p = (0, s.e7)([u.Z], () => u.Z.isFocused()), f = null != n && !g && p;
-  return null != n && n.endsWith(".riv") ? (0, r.jsx)(o.B, {
+  } = e, g = (0, s.e7)([o.Z], () => o.Z.useReducedMotion), p = (0, s.e7)([u.Z], () => u.Z.isFocused()), f = null != n && !g && p;
+  return null != n && n.endsWith(".riv") ? (0, r.jsx)(i.B, {
     src: n,
     fit: "fit-width"
   }) : f ? (0, r.jsx)(c.Z, {

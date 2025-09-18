@@ -39,74 +39,74 @@ function N(e) {
   let {
     isFetchingCategories: n,
     isFullScreen: N,
-    scrollerRef: P,
-    tab: A
+    scrollerRef: A,
+    tab: P
   } = e, R = (0, g.sp)(), Z = null != (t = null == R ? true : R.sessionId) ? t : "", {
     noCache: w,
-    includeUnpublished: M
-  } = (0, b.Z)(), F = (0, s.e7)([u.default], () => u.default.getCurrentUser()), H = (0, s.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [D, W] = l.useState(1), U = (0, c.Fg)(), V = (0, o.ap)(U), [z, G, q] = l.useMemo(() => {
-    switch (A) {
+    includeUnpublished: F
+  } = (0, b.Z)(), M = (0, s.e7)([u.default], () => u.default.getCurrentUser()), H = (0, s.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [D, W] = l.useState(1), U = (0, c.Fg)(), V = (0, i.ap)(U), [z, G, q] = l.useMemo(() => {
+    switch (P) {
       case E.AW.AVATAR_DECORATIONS:
-        return [O.intl.string(O.t.dRZYND), V ? L.Z : T.Z, a.Z.AVATAR_DECORATION];
+        return [O.intl.string(O.t.dRZYND), V ? L.Z : y.Z, a.Z.AVATAR_DECORATION];
       case E.AW.PROFILE_EFFECTS:
         return [O.intl.string(O.t["1cNjt7"]), V ? B.Z : I.Z, a.Z.PROFILE_EFFECT];
       case E.AW.NAMEPLATES:
         return [O.intl.string(O.t.V68Fq6), V ? k.Z : j.Z, a.Z.NAMEPLATE];
       case E.AW.BUNDLES:
-        return [O.intl.string(O.t.FYFppq), V ? y.Z : v.Z, a.Z.BUNDLE]
+        return [O.intl.string(O.t.FYFppq), V ? T.Z : x.Z, a.Z.BUNDLE]
     }
-  }, [A, V]), K = (0, f.a)(), Y = l.useMemo(() => K(H.filter(e => {
+  }, [P, V]), K = (0, f.a)(), Y = l.useMemo(() => K(H.filter(e => {
     var t;
     return e.type === q || e.type === a.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === q)) === true
-  })), [H, q, K]), X = (0, m.l)(Y);
+  })), [H, q, K]), X = (0, _.l)(Y);
   return (l.useEffect(() => {
     (0, h.n)({
       sessionId: Z,
       checkpoint: h.a.SHOP_MOUNTED,
-      tab: A,
+      tab: P,
       isFullScreen: N,
-      unpublishedCategoriesShown: M,
+      unpublishedCategoriesShown: F,
       cacheDisabled: w
     })
   }, []), l.useEffect(() => {
     n || (0, h.n)({
       sessionId: Z,
       checkpoint: h.a.SHOP_RENDERED,
-      tab: A,
+      tab: P,
       isFullScreen: N,
-      unpublishedCategoriesShown: M,
+      unpublishedCategoriesShown: F,
       cacheDisabled: w
     })
-  }, [Z, N, M, w, n, A]), n || null == F) ? (0, r.jsx)(_.Z, {}) : (0, r.jsxs)(r.Fragment, {
+  }, [Z, N, F, w, n, P]), n || null == M) ? (0, r.jsx)(C.Z, {}) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       style: {
         backgroundImage: "url(".concat(G, ")")
       },
-      className: x.bannerContainer,
-      children: (0, r.jsx)(i.X6q, {
+      className: v.bannerContainer,
+      children: (0, r.jsx)(o.X6q, {
         variant: "heading-xxl/extrabold",
         children: z
       })
     }), (0, r.jsx)("div", {
-      className: x.products,
+      className: v.products,
       children: X.slice(40 * (D - 1), 40 * D).map((e, t) => {
         let n = p.Z.getCategory(e.categorySkuId);
         return null == n ? null : (0, r.jsx)(g.k0, {
           newValue: {
             tilePosition: t
           },
-          children: (0, r.jsx)(C.Z, {
+          children: (0, r.jsx)(m.Z, {
             product: e,
-            user: F,
+            user: M,
             category: n,
-            tab: A
+            tab: P
           }, e.skuId)
         }, e.skuId)
       })
     }), X.length > 40 && (0, r.jsx)("div", {
-      className: x.paginationContainer,
+      className: v.paginationContainer,
       children: (0, r.jsx)("div", {
-        children: (0, r.jsx)(i.DsT, {
+        children: (0, r.jsx)(o.DsT, {
           currentPage: D,
           totalCount: X.length,
           pageSize: 40,
@@ -118,9 +118,9 @@ function N(e) {
               page_category: null == R ? true : R.pageCategory,
               page_index: e,
               page_size: 40,
-              cta_name: "".concat(A, " page ").concat(e),
-              page_type: A
-            }), W(e), null == P || null == (t = P.current) || t.scrollToTop({
+              cta_name: "".concat(P, " page ").concat(e),
+              page_type: P
+            }), W(e), null == A || null == (t = A.current) || t.scrollToTop({
               animate: true
             })
           },

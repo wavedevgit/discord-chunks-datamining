@@ -2,7 +2,7 @@
 /** chunk id: 953655, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -25,7 +25,7 @@ let g = ["1366494385738354769", "1385035256125591633"],
       children: null == n ? true : n.subblocks.map((e, n) => {
         if (e.type === s.O.CATEGORY) {
           let l = null != e.unpublishedAt ? u.intl.string(u.t["h/uBCQ"]) : g.includes(e.categoryStoreListingId) ? u.intl.string(u.t["soka7+"]) : true;
-          return (0, r.jsx)(i.k0, {
+          return (0, r.jsx)(o.k0, {
             newValue: {
               categoryPosition: 1,
               pageCategory: e.name,
@@ -48,11 +48,11 @@ let g = ["1366494385738354769", "1385035256125591633"],
       handleTransition: t,
       categories: n
     } = e;
-    if (null == n || n.length < 2) return o.Z.captureMessage("Collectible Featured Block requires at least 2 categories"), null;
+    if (null == n || n.length < 2) return i.Z.captureMessage("Collectible Featured Block requires at least 2 categories"), null;
     let [l, s] = n, g = (null == l ? true : l.unpublishedAt) != null ? u.intl.string(u.t["h/uBCQ"]) : true;
     return (0, r.jsx)("div", {
       className: a()(d.col2, d.centeredSection),
-      children: (0, r.jsxs)(i.k0, {
+      children: (0, r.jsxs)(o.k0, {
         newValue: {
           categoryPosition: 1,
           pageCategory: null != l ? l.name : null == s ? true : s.name,
@@ -71,7 +71,7 @@ let g = ["1366494385738354769", "1385035256125591633"],
       })
     })
   },
-  m = e => {
+  _ = e => {
     let {
       isLoading: t,
       handleTransition: n,

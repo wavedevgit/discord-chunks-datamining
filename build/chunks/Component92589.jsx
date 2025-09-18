@@ -45,7 +45,7 @@ let d = e => {
     className: c.immersiveBannerBlock,
     children: [(0, r.jsx)("div", {
       className: c.banner,
-      children: (0, r.jsx)(o.Z, {
+      children: (0, r.jsx)(i.Z, {
         bannerStatic: t.bannerAsset.static,
         bannerAnimated: t.bannerAsset.animated
       })
@@ -69,7 +69,7 @@ let d = e => {
             href: t.helpCenterUrl,
             className: c.learnMoreLink,
             style: u({}, g),
-            children: i.intl.string(i.t.O7ADgo)
+            children: o.intl.string(o.t.O7ADgo)
           })]
         }) : null]
       })
