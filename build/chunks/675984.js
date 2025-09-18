@@ -17,7 +17,7 @@ function r(e) {
         cost: e.tenant_metadata.boost_price,
         specifications: t
       }
-    }).sort((e, t) => e.cost - t.cost),
+    }).sort((e, t) => t.cost - e.cost),
     n = t.length > 0 ? Math.min(...t.map(e => e.cost)) : 0;
   return {
     id: e.id,

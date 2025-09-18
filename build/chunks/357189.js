@@ -28,9 +28,10 @@ function l(e, t, n) {
     isGift: i,
     loadId: a,
     paymentMethodType: l,
-    deepLinkType: c
+    deepLinkType: c,
+    usePresetOffer: u
   } = e;
-  return s(o.Z5c.BILLING_STANDALONE_CHECKOUT_PAGE(r, i, a, l, c), t, n)
+  return s(o.Z5c.BILLING_STANDALONE_CHECKOUT_PAGE(r, i, a, l, c, u), t, n)
 }
 
 function c(e, t) {
