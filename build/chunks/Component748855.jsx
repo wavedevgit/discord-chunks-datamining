@@ -36,7 +36,7 @@ function p(e) {
     }),
     children: [n, (0, r.jsx)(s.Text, {
       color: g ? "text-danger" : f || l ? "text-primary" : "text-secondary",
-      variant: "text-sm/medium",
+      variant: "text-md/normal",
       className: u.itemText,
       children: b
     }), l && (0, r.jsx)(s.k$p, {
