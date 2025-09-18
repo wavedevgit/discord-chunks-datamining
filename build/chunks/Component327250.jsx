@@ -172,10 +172,10 @@ function j(e) {
     canKickUser: g,
     canBanUser: O,
     canModerateMembers: p
-  } = (0, a.cj)([N.Z, R.default, h.Z], () => ({
+  } = (0, a.cj)([N.Z, S.default, h.Z], () => ({
     canKickUser: (0, _.BK)(t, T),
     canBanUser: (0, _.mm)(t, T),
-    canModerateMembers: null != T && (0, d.F)(T.id, t.id, [R.default, h.Z, N.Z])
+    canModerateMembers: null != T && (0, d.F)(T.id, t.id, [S.default, h.Z, N.Z])
   }), [t, T]), C = (0, c.b)(l), {
     analyticsLocations: L,
     newestAnalyticsLocation: D
@@ -273,9 +273,9 @@ function j(e) {
     }), (0, r.jsx)(P, {
       text: U.intl.string(U.t.IHTjzM),
       onClick: () => {
-        x(A.jQ.COPY_ID), (0, S.JG)(t.id)
+        x(A.jQ.COPY_ID), (0, R.JG)(t.id)
       },
-      disabled: !S.wS,
+      disabled: !R.wS,
       children: (0, r.jsx)(s.VuL, {
         size: "custom",
         width: 24,
@@ -291,7 +291,7 @@ function y(e) {
     userId: t,
     guildId: n,
     onClose: l
-  } = e, i = (0, a.e7)([R.default], () => R.default.getUser(t), [t]), s = (0, a.e7)([g.ZP], () => g.ZP.getMember(n, t), [n, t]);
+  } = e, i = (0, a.e7)([S.default], () => S.default.getUser(t), [t]), s = (0, a.e7)([g.ZP], () => g.ZP.getMember(n, t), [n, t]);
   return null == i || null == s ? null : (0, r.jsxs)("div", {
     className: M.container,
     children: [(0, r.jsx)(x, {

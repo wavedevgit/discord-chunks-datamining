@@ -61,8 +61,8 @@ function f(e) {
     className: O,
     onClick: f,
     onRemove: p,
-    selected: R,
-    ariaLabel: S
+    selected: S,
+    ariaLabel: R
   } = e, {
     name: C,
     emojiId: L,
@@ -95,7 +95,7 @@ function f(e) {
       [g.disabled]: a,
       [g.clickable]: x,
       [g.small]: j,
-      [g.selected]: R,
+      [g.selected]: S,
       [g[t.color]]: null != t.color && !x
     }, O),
     onClick: e => {
@@ -120,11 +120,11 @@ function f(e) {
     focusProps: {
       ringTarget: y
     },
-    "aria-label": null != S ? S : I.intl.formatToPlainString(I.t.iyRTLi, {
+    "aria-label": null != R ? R : I.intl.formatToPlainString(I.t.iyRTLi, {
       tagName: C
     }),
     role: "button",
-    "aria-pressed": R
+    "aria-pressed": S
   }), k), {
     children: w
   })) : (0, l.jsx)("div", N(h({}, k), {

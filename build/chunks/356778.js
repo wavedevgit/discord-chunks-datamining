@@ -3,7 +3,7 @@
 require.d(exports, {
   II: () => A,
   Ow: () => O,
-  P2: () => R,
+  P2: () => S,
   mw: () => T,
   z0: () => f
 }), require("./49124.js"), require("./388685.js");
@@ -154,7 +154,7 @@ function p(e, t, n, r) {
   }
 }
 
-function R(e, t, n) {
+function S(e, t, n) {
   var r, i, a;
   let {
     key: s,
@@ -226,13 +226,13 @@ function R(e, t, n) {
           }
         })
       }
-      R({})
+      S({})
     });
     return () => {
       e.cancel(), clearTimeout(n)
     }
   }, [e, t, m, I, N, g]);
-  let [f, R] = l.useState({});
+  let [f, S] = l.useState({});
   return {
     messagesCount: null != (r = null == o ? true : o.messageCount) ? r : A,
     linksCount: null != (i = null == E ? true : E.messageCount) ? i : A,

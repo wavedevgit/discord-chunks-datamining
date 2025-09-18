@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => P,
-  _: () => N
+  _: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -42,7 +42,7 @@ let y = {
     friction: 52
   };
 
-function N(e) {
+function S(e) {
   let {
     channelId: t,
     onClick: n,
@@ -87,7 +87,7 @@ function N(e) {
   })
 }
 
-function S(e) {
+function N(e) {
   let {
     channelId: t,
     closePopout: n
@@ -109,7 +109,7 @@ function S(e) {
       className: C.popout,
       paddingFix: false,
       fade: true,
-      children: [(0, r.jsx)(N, {
+      children: [(0, r.jsx)(S, {
         channelId: t,
         onClick: () => {
           l(true)
@@ -153,10 +153,10 @@ function P(e) {
         className: C.badge,
         children: s
       })]
-    }) : (0, r.jsx)(N, {
+    }) : (0, r.jsx)(S, {
       onMouseEnter: d,
       channelId: t
-    }), n && (0, r.jsx)(S, {
+    }), n && (0, r.jsx)(N, {
       channelId: t,
       closePopout: () => {
         a(false)

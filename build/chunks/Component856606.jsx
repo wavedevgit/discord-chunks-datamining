@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => et,
-  n: () => q
+  n: () => Y
 }), require("./539854.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -69,7 +69,7 @@ function X(e) {
   return e
 }
 
-function Y(e, t) {
+function q(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -81,7 +81,7 @@ function Y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let q = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk388610.Z], () => {
+let Y = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk388610.Z], () => {
   let e = Chunk388610.Z.getChannel();
   return {
     submitting: Chunk277053.Z.formState === Chunk981631.QZA.SUBMITTING,
@@ -133,7 +133,7 @@ function $(e) {
         r = a.IH(r, e)
     }
     if (P.Z.can(e, n, {
-        [t.id]: Y(X({}, t), {
+        [t.id]: q(X({}, t), {
           allow: l,
           deny: r
         })
@@ -191,7 +191,7 @@ function $(e) {
   })
 }
 
-function J(e) {
+function Q(e) {
   let {
     guildId: t,
     channelId: n,
@@ -227,7 +227,7 @@ function J(e) {
   })
 }
 
-function Q(e) {
+function J(e) {
   return "object" == typeof e && null != e && "colorString" in e && "name" in e
 }
 
@@ -246,7 +246,7 @@ function K(e) {
     "aria-label": F.intl.string(F.t["Uvt+p6"]),
     sections: [F.intl.string(F.t.LPJmLy), F.intl.string(F.t["9Oq93t"])],
     onRenderResult: e => {
-      if (Q(e)) {
+      if (J(e)) {
         let t;
         return null != e.colorString && (t = {
           color: e.colorString
@@ -255,7 +255,7 @@ function K(e) {
           children: e.name
         })
       }
-      if (e instanceof w.Z) return (0, i.jsx)(J, {
+      if (e instanceof w.Z) return (0, i.jsx)(Q, {
         guildId: t.id,
         channelId: n.id,
         user: e
@@ -266,7 +266,7 @@ function K(e) {
       D.Z.requestMembers(t.id, e, 20)
     },
     onSelect: e => {
-      null != e && (Q(e) ? a(e.id, j.BN.ROLE) : e instanceof w.Z && a(e.id, j.BN.MEMBER))
+      null != e && (J(e) ? a(e.id, j.BN.ROLE) : e instanceof w.Z && a(e.id, j.BN.MEMBER))
     },
     onClose: r,
     position: c
@@ -305,7 +305,7 @@ function ee() {
         } = l, a = null != x ? (0, E.lV)(x) : null, o = null != r && a === r.id, {
           default: c
         } = await n.e("83884").then(n.bind(n, 905687));
-        return n => (0, i.jsx)(c, Y(X({}, n), {
+        return n => (0, i.jsx)(c, q(X({}, n), {
           id: e,
           role: r,
           handleDeletePermission: o ? true : () => {
@@ -406,7 +406,7 @@ function ee() {
           position: "bottom",
           autoInvert: false,
           clickTrap: true,
-          children: n => (0, i.jsx)(d.njP.Header, Y(X({
+          children: n => (0, i.jsx)(d.njP.Header, q(X({
             ref: e
           }, n), {
             children: (0, i.jsxs)("div", {

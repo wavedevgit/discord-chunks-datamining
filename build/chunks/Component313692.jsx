@@ -141,7 +141,7 @@ function L(e) {
       }
     }, [y.result, Z]);
   return null == G || null == w || null == B ? null : (0, r.jsxs)("div", {
-    className: a()(S.container, U),
+    className: a()(R.container, U),
     children: [(0, r.jsx)(f.Z, {
       guildId: L,
       userId: i,
@@ -156,9 +156,9 @@ function L(e) {
         renderEmbeds: true,
         blockCount: 0,
         ignoreCount: 0,
-        scrollTo: R.dG4,
+        scrollTo: S.dG4,
         onPageChange: z,
-        onBlockedResultsClick: R.dG4
+        onBlockedResultsClick: S.dG4
       })
     })]
   })

@@ -28,11 +28,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk809639 = require("./809639.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk272210 = require("./272210.js");
-let N = [{
+let S = [{
     name: "Media Post Thumbnail",
     extensions: ["jpg", "jpeg", "png", "gif", "webp"]
   }],
-  S = (0, Chunk313201.hQ)();
+  N = (0, Chunk313201.hQ)();
 
 function P(e) {
   let {
@@ -150,8 +150,8 @@ let I = e => {
     onChange: R,
     multiple: false,
     "aria-hidden": true,
-    filters: N,
-    "aria-describedby": S,
+    filters: S,
+    "aria-describedby": N,
     "aria-label": I ? w.intl.string(w.t.MxJI3d) : w.intl.string(w.t.CbiofX),
     children: I ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(P, {

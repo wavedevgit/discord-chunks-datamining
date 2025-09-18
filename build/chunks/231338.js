@@ -234,6 +234,7 @@ let G = Object.freeze({
     SEND_VOICE_MESSAGES: Chunk149765.r0(46),
     SEND_POLLS: Chunk149765.r0(49),
     PIN_MESSAGES: Chunk149765.r0(51),
+    BYPASS_SLOWMODE: Chunk149765.r0(52),
     CONNECT: Chunk149765.r0(20),
     SPEAK: Chunk149765.r0(21),
     MUTE_MEMBERS: Chunk149765.r0(22),

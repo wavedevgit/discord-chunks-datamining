@@ -22,8 +22,8 @@ let I = Chunk149765.$e(Chunk981631.Plq.KICK_MEMBERS, Chunk981631.Plq.BAN_MEMBERS
   O = [],
   f = [],
   p = [],
-  R = [],
   S = [],
+  R = [],
   C = [],
   L = true,
   D = false,
@@ -119,10 +119,10 @@ class k extends(r = Chunk442837.ZP.Store) {
     return p
   }
   get automodRules() {
-    return R
+    return S
   }
   get threads() {
-    return S
+    return R
   }
   get applicationCommands() {
     return C
@@ -172,7 +172,7 @@ let F = new k(Chunk570140.Z, {
   },
   AUDIT_LOG_FETCH_SUCCESS: function(e) {
     var t;
-    y = 0, L = false, D = false, M = true, b = false, h = G(e.logs), N = e.integrations, f = e.webhooks, p = e.guildScheduledEvents, R = null != (t = e.automodRules) ? t : [], S = e.threads, C = e.applicationCommands, e.logs.length < m.Rg9 && (M = false)
+    y = 0, L = false, D = false, M = true, b = false, h = G(e.logs), N = e.integrations, f = e.webhooks, p = e.guildScheduledEvents, S = null != (t = e.automodRules) ? t : [], R = e.threads, C = e.applicationCommands, e.logs.length < m.Rg9 && (M = false)
   },
   AUDIT_LOG_FETCH_FAIL: function() {
     D = false, b = true, h = []
@@ -193,7 +193,7 @@ let F = new k(Chunk570140.Z, {
       threads: a,
       applicationCommands: s
     } = e;
-    if (U = false, N = n, f = r, p = l, R = i, S = a, C = s, (0 === t.length || t.length < m.Rg9) && (M = false), t.length > 0) {
+    if (U = false, N = n, f = r, p = l, S = i, R = a, C = s, (0 === t.length || t.length < m.Rg9) && (M = false), t.length > 0) {
       let e = G(t);
       h = [...h, ...e]
     }
@@ -230,6 +230,6 @@ let F = new k(Chunk570140.Z, {
     })
   },
   GUILD_SETTINGS_CLOSE: function() {
-    h = [], O = [], x = Chunk981631.rsA.ALL, v = null, P = null, j = {}, y = 0, L = true, N = [], f = [], p = [], R = [], S = []
+    h = [], O = [], x = Chunk981631.rsA.ALL, v = null, P = null, j = {}, y = 0, L = true, N = [], f = [], p = [], S = [], R = []
   }
 })

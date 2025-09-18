@@ -11,10 +11,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk11769 = require("./11769.js"),
   Chunk338390 = require("./338390.js"),
-  Chunk496675 = require("./496675.js"),
   Chunk300429 = require("./300429.js"),
   Chunk585483 = require("./585483.js"),
   Chunk70956 = require("./70956.js"),
+  Chunk923664 = require("./923664.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk799567 = require("./799567.js");
@@ -26,15 +26,15 @@ function O(t) {
       isBypassSlowmode: l,
       slowmodeCooldownGuess: u
     } = t,
-    [h, O] = s.useState(false);
+    [p, O] = s.useState(false);
   s.useEffect(() => {
     function t() {
       O(true), setTimeout(() => {
         O(false)
       }, 1e3)
     }
-    return g.S.subscribe(f.CkL.EMPHASIZE_SLOWMODE_COOLDOWN, t), () => {
-      g.S.unsubscribe(f.CkL.EMPHASIZE_SLOWMODE_COOLDOWN, t)
+    return h.S.subscribe(f.CkL.EMPHASIZE_SLOWMODE_COOLDOWN, t), () => {
+      h.S.unsubscribe(f.CkL.EMPHASIZE_SLOWMODE_COOLDOWN, t)
     }
   }, []);
   let b = (0, c.Z)("SlowmodeIndicator");
@@ -42,7 +42,7 @@ function O(t) {
   let S = (0, d.k)(r);
   if (!l && u > 0) {
     let t = o().duration(u);
-    if (u > p.Z.Millis.HOUR) {
+    if (u > g.Z.Millis.HOUR) {
       let i = "".concat(t.minutes()).padStart(2, "0"),
         n = "".concat(t.seconds()).padStart(2, "0");
       e = "".concat(t.hours(), ":").concat(i, ":").concat(n)
@@ -54,7 +54,7 @@ function O(t) {
   let y = b ? (0, n.jsxs)(a.Text, {
     className: v.cooldownText,
     variant: "text-xs/medium",
-    color: h ? "text-danger" : "text-muted",
+    color: p ? "text-danger" : "text-muted",
     tabularNumbers: true,
     children: [(0, n.jsx)(a.ANZ, {
       size: "xxs",
@@ -64,7 +64,7 @@ function O(t) {
   }) : (0, n.jsxs)(a.Text, {
     className: v.cooldownText,
     variant: "text-sm/medium",
-    color: h ? "text-danger" : "text-muted",
+    color: p ? "text-danger" : "text-muted",
     tabularNumbers: true,
     children: [e, (0, n.jsx)(a.ANZ, {
       size: "xs",
@@ -115,7 +115,7 @@ function b(t) {
   let {
     channel: e,
     isThreadCreation: i = false
-  } = t, s = (0, l.e7)([h.Z], () => h.Z.getSlowmodeCooldownGuess(e.id, i ? h.S.CreateThread : h.S.SendMessage)), r = (0, l.e7)([u.Z], () => i ? u.Z.can(f.Plq.MANAGE_THREADS, e) : u.Z.can(f.Plq.MANAGE_CHANNELS, e) || u.Z.can(f.Plq.MANAGE_MESSAGES, e)), {
+  } = t, s = (0, l.e7)([u.Z], () => u.Z.getSlowmodeCooldownGuess(e.id, i ? u.S.CreateThread : u.S.SendMessage)), r = (0, p.w)(e, i ? u.S.CreateThread : u.S.SendMessage), {
     rateLimitPerUser: o
   } = e;
   return (0, n.jsx)(O, {

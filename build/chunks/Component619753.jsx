@@ -118,8 +118,8 @@ function w(e) {
   } = e, k = O.cC.useSetting(), F = (0, T.p)(), z = l.useCallback(e => {
     if (e === L.Z.getChannelId()) return;
     let t = p.Z.getChannel(e);
-    null != t && (S.Z.can(v.Plq.VIEW_CHANNEL, t) || t.isPrivate()) && (0, N.Kh)(t.id)
-  }, []), Z = null != a ? (0, d.F6)(a, D.default, C.Z, false) : "???", V = w && null != a.guild_id ? null == (t = R.Z.getGuild(a.guild_id)) ? true : t.name : null, B = (null == a ? true : a.parent_id) != null ? p.Z.getChannel(a.parent_id) : null, H = null != (n = null == B ? true : B.name) ? n : null, K = null != (i = (0, _.KS)(a)) ? i : o.VL1, W = S.Z.can(v.Plq.MANAGE_MESSAGES, a), {
+    null != t && (R.Z.can(v.Plq.VIEW_CHANNEL, t) || t.isPrivate()) && (0, N.Kh)(t.id)
+  }, []), Z = null != a ? (0, d.F6)(a, D.default, C.Z, false) : "???", V = w && null != a.guild_id ? null == (t = S.Z.getGuild(a.guild_id)) ? true : t.name : null, B = (null == a ? true : a.parent_id) != null ? p.Z.getChannel(a.parent_id) : null, H = null != (n = null == B ? true : B.name) ? n : null, K = null != (i = (0, _.KS)(a)) ? i : o.VL1, W = R.Z.can(v.Plq.MANAGE_MESSAGES, a), {
     content: q
   } = (0, I.ZP)({
     content: Z,
@@ -197,8 +197,8 @@ let k = Chunk647438.memo(function(e) {
     renderPageWrapper: N,
     onBlockedResultsClick: O,
     searchRequestAnalyticsId: f,
-    searchResultsQuery: R,
-    isFavoritesSearch: S
+    searchResultsQuery: S,
+    isFavoritesSearch: R
   } = e, {
     offset: L,
     totalResults: D,
@@ -242,7 +242,7 @@ let k = Chunk647438.memo(function(e) {
     focusedIndex: 0,
     setFocus: V,
     onSelect: B
-  }), K = (0, c.nC)(null != (t = (0, U.UP)(R)) ? t : ""), W = F.map(e => {
+  }), K = (0, c.nC)(null != (t = (0, U.UP)(S)) ? t : ""), W = F.map(e => {
     let {
       channel: t,
       messages: n,
@@ -260,7 +260,7 @@ let k = Chunk647438.memo(function(e) {
       offset: L,
       jumpToMessage: k,
       listNavigator: H,
-      favoriteSearch: null != S && S
+      favoriteSearch: null != R && R
     }, "".concat(t.id, "-").concat(l))
   });
   W.push();
@@ -300,7 +300,7 @@ let k = Chunk647438.memo(function(e) {
           count: A
         })
       })]
-    }) : null, !b && !S && (0, r.jsx)(M.Z, {
+    }) : null, !b && !R && (0, r.jsx)(M.Z, {
       renderPageWrapper: N,
       onPageChange: T,
       offset: L,

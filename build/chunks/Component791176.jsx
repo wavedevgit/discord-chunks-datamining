@@ -75,7 +75,7 @@ let O = Chunk647438.memo(function(e) {
   let {
     member: t,
     onNavigate: n
-  } = e, i = (0, s.e7)([d.Z], () => d.Z.getGuild(t.guildId), [t.guildId]), u = (0, T.B2)(t.userId, t.guildId, T.Qn), c = (0, T.B2)(t.userId, t.guildId, T.pd), E = Object.keys(u).length, O = Object.keys(c).length, f = l.useMemo(() => null != i ? _.Z.getGuildPermissionSpecMap(i) : null, [i]), p = l.useMemo(() => null != i ? _.Z.generateGuildPermissionSpec(i) : null, [i]), R = l.useMemo(() => {
+  } = e, i = (0, s.e7)([d.Z], () => d.Z.getGuild(t.guildId), [t.guildId]), u = (0, T.B2)(t.userId, t.guildId, T.Qn), c = (0, T.B2)(t.userId, t.guildId, T.pd), E = Object.keys(u).length, O = Object.keys(c).length, f = l.useMemo(() => null != i ? _.Z.getGuildPermissionSpecMap(i) : null, [i]), p = l.useMemo(() => null != i ? _.Z.generateGuildPermissionSpec(i) : null, [i]), S = l.useMemo(() => {
     if (null == i || null == f) return null;
     if (0 === E) return (0, r.jsx)("div", {
       className: a()(h.permissionChiplet, h.noModPerms),
@@ -128,7 +128,7 @@ let O = Chunk647438.memo(function(e) {
       children: (0, r.jsx)(A._2, {
         description: (0, r.jsx)("div", {
           className: h.permissionsContainer,
-          children: R
+          children: S
         })
       })
     })

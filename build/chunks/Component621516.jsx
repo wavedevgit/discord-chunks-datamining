@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk420196 = require("./420196.js"),
   Chunk433075 = require("./433075.js");
 
-function S(e) {
+function N(e) {
   let {
     handleHide: t
   } = e;
@@ -162,7 +162,7 @@ let I = e => {
             color: "currentColor",
             className: y.icon
           }), C.intl.string(C.t.znhX2d)]
-        }), (0, r.jsx)(S, {
+        }), (0, r.jsx)(N, {
           handleHide: A
         })]
       }), (0, r.jsxs)("div", {
@@ -244,7 +244,7 @@ let I = e => {
             children: (0, r.jsxs)("div", {
               className: y.contentImageContainer,
               children: [(0, r.jsx)("img", {
-                src: I ? O : N,
+                src: I ? O : S,
                 alt: "",
                 className: y.previewEmbedImage
               }), (0, r.jsx)("img", {

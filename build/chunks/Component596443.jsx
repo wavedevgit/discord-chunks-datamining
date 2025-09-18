@@ -38,8 +38,8 @@ function D(e) {
     specMap: N,
     categoryTitle: O,
     userId: f
-  } = e, C = (0, u.Wu)([I.Z], () => I.Z.getManyRoles(g.id, m)), D = R.Plq[o], U = null != (i = null == (t = N[D.toString()]) ? true : t.title) ? i : (0, A.wt)(D), M = null != (s = null == (n = N[D.toString()]) ? true : n.description) ? s : "", b = p._o.has(D), v = p.Qn.includes(o), x = m.length, P = (0, u.e7)([h.Z], () => h.Z.can(R.Plq.MANAGE_ROLES, g), [g]), j = l.useCallback(async e => {
-    P && (await _.Z.open(g.id, R.pNK.ROLES), await _.Z.selectRole(e))
+  } = e, C = (0, u.Wu)([I.Z], () => I.Z.getManyRoles(g.id, m)), D = S.Plq[o], U = null != (i = null == (t = N[D.toString()]) ? true : t.title) ? i : (0, A.wt)(D), M = null != (s = null == (n = N[D.toString()]) ? true : n.description) ? s : "", b = p._o.has(D), v = p.Qn.includes(o), x = m.length, P = (0, u.e7)([h.Z], () => h.Z.can(S.Plq.MANAGE_ROLES, g), [g]), j = l.useCallback(async e => {
+    P && (await _.Z.open(g.id, S.pNK.ROLES), await _.Z.selectRole(e))
   }, [P, g.id]);
   return (0, r.jsxs)("div", {
     className: a()(L.permissionItemContainer, {
@@ -66,7 +66,7 @@ function D(e) {
               "aria-hidden": "true",
               color: c.TVs.colors.INTERACTIVE_MUTED.css
             }), (0, r.jsx)(c.ua7, {
-              text: S.intl.string(S.t.GZvXuL),
+              text: R.intl.string(R.t.GZvXuL),
               children: e => {
                 var t, n;
                 return (0, r.jsxs)(c.P3F, (t = function(e) {
@@ -97,7 +97,7 @@ function D(e) {
                   }), (0, r.jsx)(c.Text, {
                     variant: "text-xs/normal",
                     color: "text-brand",
-                    children: S.intl.string(S.t.k7Kqj4)
+                    children: R.intl.string(R.t.k7Kqj4)
                   })]
                 }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
                   var n = Object.keys(e);
@@ -122,7 +122,7 @@ function D(e) {
               children: (0, r.jsx)(c.Text, {
                 variant: "text-xs/normal",
                 color: "header-muted",
-                children: S.intl.string(S.t.IfqUEB)
+                children: R.intl.string(R.t.IfqUEB)
               })
             })]
           })]
@@ -130,7 +130,7 @@ function D(e) {
       }), (0, r.jsx)(c.Text, {
         variant: "text-sm/medium",
         color: "text-default",
-        children: S.intl.format(S.t.KmJI4O, {
+        children: R.intl.format(R.t.KmJI4O, {
           roleCount: x
         })
       })]
@@ -150,7 +150,7 @@ function D(e) {
           children: (0, r.jsx)(c.Text, {
             variant: "text-xs/medium",
             color: "text-default",
-            children: S.intl.string(S.t.pclUFB)
+            children: R.intl.string(R.t.pclUFB)
           })
         })
       }, e.id) : (0, r.jsx)(c.P3F, {
@@ -187,13 +187,13 @@ function M(e) {
     if (null == _ || null == M || null == T) return null;
     if (0 === h) return (0, r.jsx)(c.Text, {
       variant: "text-sm/normal",
-      children: S.intl.string(S.t.DEBGqK)
+      children: R.intl.string(R.t.DEBGqK)
     });
     let e = [];
     return null == b || b.forEach(n => {
       n.permissions.forEach(l => {
         let i = l.flag,
-          a = p.pd.find(e => R.Plq[e] === i);
+          a = p.pd.find(e => S.Plq[e] === i);
         if (null == a) return;
         let s = I[a];
         if (null != s) {
@@ -204,7 +204,7 @@ function M(e) {
               r = n.title,
               l = p._o.has(i),
               s = p.Qn.includes(a),
-              _ = l ? S.intl.string(S.t.k7Kqj4) : s ? S.intl.string(S.t.IfqUEB) : null,
+              _ = l ? R.intl.string(R.t.k7Kqj4) : s ? R.intl.string(R.t.IfqUEB) : null,
               T = U(P, e),
               m = U(P, t),
               I = U(P, r),
@@ -232,13 +232,13 @@ function M(e) {
     }), (0, r.jsx)(c.Ttm, {
       className: L.permissionsGroupContainer,
       children: (0, r.jsx)(c.xJW, {
-        title: S.intl.string(S.t.BBWnpq),
+        title: R.intl.string(R.t.BBWnpq),
         children: (0, r.jsxs)("div", {
           className: L.permissionsItemContainer,
           children: [(0, r.jsx)(c.E1j, {
             size: "sm",
             query: v,
-            placeholder: S.intl.string(S.t["yD9+dH"]),
+            placeholder: R.intl.string(R.t["yD9+dH"]),
             onChange: G,
             onClear: w,
             autoComplete: "off",

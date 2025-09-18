@@ -123,7 +123,7 @@ let ec = Chunk647438.memo(function(e) {
         }) : {
           hasSpoilerEmbeds: false,
           content: null
-        }, [n, l, r, a]), c = (0, N.eL)(t, s), d = (0, N.vg)(t, s);
+        }, [n, l, r, a]), c = (0, S.eL)(t, s), d = (0, S.vg)(t, s);
         return null == t ? null : {
           hasSpoilerEmbeds: s,
           content: o,
@@ -171,12 +171,12 @@ let ec = Chunk647438.memo(function(e) {
   }, [y, T, t]), i.useEffect(() => {
     null == a || a(C.current, t)
   }, [C, a, t]);
-  let S = i.useRef(null),
+  let N = i.useRef(null),
     {
       handleLeftClick: P,
       handleRightClick: E
     } = (0, M.Z)({
-      facepileRef: S,
+      facepileRef: N,
       goToThread: n,
       channel: d
     }),
@@ -247,7 +247,7 @@ let ec = Chunk647438.memo(function(e) {
         children: (0, r.jsx)(em, {
           channel: d,
           firstMessage: j,
-          facepileRef: S
+          facepileRef: N
         })
       })]
     })]
@@ -289,7 +289,7 @@ let eu = Chunk647438.memo(function(e) {
     hasMediaAttachment: a,
     hasUnreads: s,
     originalAuthor: o
-  } = e, c = (0, h.e7)([S.Z], () => S.Z.isLoading(n.id)), d = (0, h.e7)([K.Z], () => K.Z.can(en.Plq.MANAGE_MESSAGES, n)), u = G.cC.useSetting(), m = (0, h.e7)([Y.Z], () => Y.Z.getGuildId()), {
+  } = e, c = (0, h.e7)([N.Z], () => N.Z.isLoading(n.id)), d = (0, h.e7)([K.Z], () => K.Z.can(en.Plq.MANAGE_MESSAGES, n)), u = G.cC.useSetting(), m = (0, h.e7)([Y.Z], () => Y.Z.getGuildId()), {
     contentPlaceholder: f,
     renderedContent: x
   } = null == t ? {

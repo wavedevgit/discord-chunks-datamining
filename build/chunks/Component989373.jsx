@@ -59,7 +59,7 @@ let W = Chunk647438.memo(function(e) {
       a = (0, r.e7)([d.Z], () => d.Z.getWindow(e)),
       _ = o.useRef(null),
       l = o.useRef(null),
-      s = o.useRef(null),
+      u = o.useRef(null),
       b = (0, r.e7)([p.default], () => {
         let e = p.default.getFocusedPID();
         return !h.isPlatformEmbedded || null != e && e !== m.UNSET_PID
@@ -73,7 +73,7 @@ let W = Chunk647438.memo(function(e) {
           voice_widget_connected: n,
           text_widget_connected: y.ZP.isPinned(x.Odu.TEXT),
           overlay_render_method: g.gl[C.default.getOverlayMethod(e)],
-          unpinned_widget_types: u.Z.getAllUnpinnedPinnedWidgets(t)
+          unpinned_widget_types: s.Z.getAllUnpinnedPinnedWidgets(t)
         }), i.Z.oopUiInitialized()
       }, [t]);
     (0, c.ZP)(() => {
@@ -90,28 +90,35 @@ let W = Chunk647438.memo(function(e) {
       }
     });
     let W = o.useCallback((e, t) => {
-      null == _.current && (s.current = () => {
-        null != _.current && e.cancelAnimationFrame(_.current), null != l.current && e.clearTimeout(l.current)
-      }, _.current = e.requestAnimationFrame(async () => {
-        try {
-          await T(e, t), i.Z.oopUiShowInactiveSuccess()
-        } catch (e) {
-          i.Z.setOverlayCrashed((0, m.getPID)(), e);
+        null == _.current && (u.current = () => {
+          null != _.current && e.cancelAnimationFrame(_.current), null != l.current && e.clearTimeout(l.current)
+        }, _.current = e.requestAnimationFrame(async () => {
+          try {
+            await T(e, t), i.Z.oopUiShowInactiveSuccess()
+          } catch (e) {
+            i.Z.setOverlayCrashed((0, m.getPID)(), e);
+            return
+          }
+          l.current = e.setTimeout(() => {
+            I(true), B(), u.current = null
+          }, 100)
+        }))
+      }, [B]),
+      S = o.useRef(false);
+    return o.useEffect(() => {
+      if (!w.current && null != a && n) {
+        if (!b) {
+          S.current || (i.Z.updateOverlayState((0, m.getPID)(), g.mM.WAITING_FOR_PID_FOCUS), S.current = true);
           return
         }
-        l.current = e.setTimeout(() => {
-          I(true), B(), s.current = null
-        }, 100)
-      }))
-    }, [B]);
-    return o.useEffect(() => {
-      b && null != a && n && (w.current || (w.current = true, W(a, e)))
+        w.current = true, W(a, e)
+      }
     }, [W, b, e, a, n]), (0, c.zq)(() => {
       var e;
-      null == (e = s.current) || e.call(s)
+      null == (e = u.current) || e.call(u)
     }), v
   }(n, w.$S), b = (0, m.getPID)(), v = (0, r.e7)([p.default], () => p.default.isInputLocked(b), [b]);
-  return l ? (0, a.jsxs)(s.Z, {
+  return l ? (0, a.jsxs)(u.Z, {
     themeOverride: x.BRd.MIDNIGHT,
     withTitleBar: t,
     windowKey: n,

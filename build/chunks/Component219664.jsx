@@ -113,16 +113,16 @@ function V(e) {
   } = e, p = n.id, b = i.useRef(null), j = (0, o.e7)([C.ZP], () => C.ZP.getCurrentSidebarChannelId(n.parent_id) === n.id), {
     firstMessage: v,
     loaded: _
-  } = (0, N.cl)(n), {
+  } = (0, S.cl)(n), {
     messageCountText: y
   } = (0, O.nP)(n), {
     isNew: T,
     hasUnreads: w
-  } = (0, O.J$)(n), S = i.useRef(null), {
+  } = (0, O.J$)(n), N = i.useRef(null), {
     handleLeftClick: P,
     handleRightClick: R
   } = (0, A.Z)({
-    facepileRef: S,
+    facepileRef: N,
     goToThread: a,
     channel: n
   });
@@ -224,7 +224,7 @@ function V(e) {
         children: (0, r.jsx)(W, {
           channel: n,
           firstMessage: v,
-          facepileRef: S
+          facepileRef: N
         })
       })
     })]
@@ -277,7 +277,7 @@ function q(e) {
     noStyleAndInteraction: false
   }), {
     hasUnreads: d
-  } = (0, O.J$)(t), u = (0, o.e7)([T.Z], () => T.Z.can(F.Plq.MANAGE_MESSAGES, t)), m = _.QK.useSetting(), h = _.cC.useSetting(), g = (0, b.Z)(h, u), f = (0, S.aU)(n, s, false), x = t.isMediaPost(), [p, j] = (0, E.rI)(l.width - 2 * E.LT, x ? E.Lv.SIXTEEN_BY_NINE : E.Lv.THREE_BY_TWO);
+  } = (0, O.J$)(t), u = (0, o.e7)([T.Z], () => T.Z.can(F.Plq.MANAGE_MESSAGES, t)), m = _.QK.useSetting(), h = _.cC.useSetting(), g = (0, b.Z)(h, u), f = (0, N.aU)(n, s, false), x = t.isMediaPost(), [p, j] = (0, E.rI)(l.width - 2 * E.LT, x ? E.Lv.SIXTEEN_BY_NINE : E.Lv.THREE_BY_TWO);
   return (null == n ? true : n.blocked) || null == (null != a ? a : c) ? (0, r.jsx)(Q, {
     channel: t,
     firstMessage: n,
@@ -373,7 +373,7 @@ let X = e => e.preventDefault(),
     } = e, {
       containsVideo: u,
       containsGif: m
-    } = i.useMemo(() => (0, S.cp)(t), [t]), b = i.useMemo(() => t.slice(R.$x, R.GV), [t]), j = (0, R.tu)({
+    } = i.useMemo(() => (0, N.cp)(t), [t]), b = i.useMemo(() => t.slice(R.$x, R.GV), [t]), j = (0, R.tu)({
       numAttachments: b.length,
       containerWidth: a,
       containerHeight: s

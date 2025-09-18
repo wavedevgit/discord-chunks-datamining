@@ -341,7 +341,7 @@ let Y = e => {
                 }
               }),
               clickHandler: () => {
-                X(D.ZI.CREATE_POST), N.S.dispatch(z.CkL.FOCUS_COMPOSER_TITLE)
+                X(D.ZI.CREATE_POST), S.S.dispatch(z.CkL.FOCUS_COMPOSER_TITLE)
               },
               isDone: a
             })), s
@@ -352,7 +352,7 @@ let Y = e => {
         })(a.id), _ = i.useRef(0);
         return i.useEffect(() => (c || !j || v ? clearTimeout(_.current) : _.current = setTimeout(() => {
           s()
-        }, 60 * S.Z.Millis.SECOND), () => clearTimeout(_.current)), [j, v, s, c]), {
+        }, 60 * N.Z.Millis.SECOND), () => clearTimeout(_.current)), [j, v, s, c]), {
           onboardingSteps: p,
           isHidden: x,
           isDismissed: u,
@@ -378,7 +378,7 @@ let Y = e => {
         guildId: a,
         channel: l
       } = e, s = (0, h.e7)([T.Z], () => null != a ? T.Z.partitionVersion(a) : true), o = i.useCallback(() => {
-        N.S.dispatch(z.CkL.REMEASURE_TARGET)
+        S.S.dispatch(z.CkL.REMEASURE_TARGET)
       }, []);
       i.useEffect(() => {
         o()

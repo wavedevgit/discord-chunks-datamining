@@ -76,7 +76,7 @@ function U(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : null;
   (0, T.n)(e, t), (0, c.y5)(t.map(e => ({
     channelId: e,
-    readStateType: R.W.CHANNEL,
+    readStateType: S.W.CHANNEL,
     messageId: h.ZP.lastMessageId(e)
   }))), null != n && (0, m.uL)(O.Z5c.CHANNEL(e, n))
 }
@@ -122,7 +122,7 @@ function b(e) {
 
 function v(e) {
   var t;
-  return S.intl.formatToPlainString(S.t["8N0BHR"], {
+  return R.intl.formatToPlainString(R.t["8N0BHR"], {
     timeAgo: s()(N.default.extractTimestamp(null != (t = h.ZP.lastMessageId(e)) ? t : e)).fromNow()
   })
 }

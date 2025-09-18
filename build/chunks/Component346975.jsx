@@ -130,7 +130,7 @@ function e_(e) {
   } = e;
   return (0, r.jsx)(ei.oL, {
     channel: t,
-    children: (0, r.jsx)(eS, {
+    children: (0, r.jsx)(eN, {
       channel: t,
       guild: n,
       sidebarState: i
@@ -190,7 +190,7 @@ function eO(e, t) {
   return "card-".concat(e, "-").concat(t)
 }
 
-function eN(e) {
+function eS(e) {
   if ("string" == typeof e) {
     let t = e.match(/card-{\d+}-({\d+})$/);
     return null == t ? null : t[1]
@@ -198,7 +198,7 @@ function eN(e) {
   return null
 }
 
-function eS(e) {
+function eN(e) {
   let {
     channel: t,
     sidebarState: n
@@ -333,7 +333,7 @@ function eS(e) {
     e_ = null != x && null != ed && ed.length > 0,
     eT = i.useRef(null),
     {
-      containerRef: eS,
+      containerRef: eN,
       containerWidth: eR
     } = (0, eu.Z)();
   i.useEffect(() => () => {
@@ -348,7 +348,7 @@ function eS(e) {
     columns: eZ
   } = i.useMemo(() => eo ? eC.getRenderOptions(eR) : ec.eU, [eo, eR]), ek = i.useMemo(() => T ? Math.round((window.innerHeight - 200) / 118) : 0, [T]), {
     showResolvedFlags: eA
-  } = (0, S.N)(t.id), eL = t.isModeratorReportChannel(), eF = i.useMemo(() => {
+  } = (0, N.N)(t.id), eL = t.isModeratorReportChannel(), eF = i.useMemo(() => {
     let e = Math.ceil(window.innerHeight / (0, ec.KW)(eC.getWidth(eR))) * eZ;
     return C ? e : 0
   }, [eR, eZ, C]), eD = i.useMemo(() => {
@@ -538,9 +538,9 @@ function eS(e) {
             })
           })
         }
-      }), h.current = eN(n)
+      }), h.current = eS(n)
     }, [t, h]), b = i.useCallback(e => {
-      let t = eN(e);
+      let t = eS(e);
       if (null == t) return;
       let n = D.Z.getChannel(t);
       null != n && a(n, true)
@@ -674,7 +674,7 @@ function eS(e) {
     tc = (0, g.e7)([F.ZP], () => F.ZP.getSection(t.id)) === eg.ULH.MEMBERS;
   return (0, r.jsx)("div", {
     className: ep.container,
-    ref: eS,
+    ref: eN,
     "data-member-list-open": tc,
     children: (0, r.jsx)(p.Wdt, {
       children: e => (0, r.jsxs)(r.Fragment, {
@@ -693,7 +693,7 @@ function eS(e) {
           })
         }), V ? (0, r.jsx)("div", {
           className: ep.optInNotice,
-          children: (0, r.jsx)(N.Z, {
+          children: (0, r.jsx)(S.Z, {
             channel: t
           })
         }) : null, eo ? (0, r.jsx)(em.KT, {
@@ -813,8 +813,8 @@ function eM(e) {
     isSearchLoading: _,
     numResults: w,
     children: O,
-    coords: N,
-    onHeightChange: S
+    coords: S,
+    onHeightChange: N
   } = e, {
     name: E,
     formOpen: R,
@@ -854,8 +854,8 @@ function eM(e) {
     height: ef
   } = (0, j.ZP)();
   i.useEffect(() => {
-    null != ef && S(ef)
-  }, [S, ef]);
+    null != ef && N(ef)
+  }, [N, ef]);
   let e_ = i.useCallback(() => {
     o()(() => {
       null != eh.current && q.getState().setEditorHeight(eh.current.offsetHeight)
@@ -869,9 +869,9 @@ function eM(e) {
     ey = (0, Y.ql)(s),
     eT = i.useRef(null),
     ew = i.useRef(null),
-    [eO, eN] = i.useState(0),
+    [eO, eS] = i.useState(0),
     {
-      width: eS
+      width: eN
     } = (0, g.e7)([V.Z], () => V.Z.windowSize()),
     eP = null == (n = eT.current) || null == (t = n.getBoundingClientRect()) ? true : t.width,
     eI = i.useRef(null),
@@ -894,9 +894,9 @@ function eM(e) {
         if (a - t > l) break;
         n - e > r && (r = n - e)
       }
-      eN(r)
+      eS(r)
     }
-  }, [s.availableTags, eS, eP, D]);
+  }, [s.availableTags, eN, eP, D]);
   let eM = E.length > 0 && !R && (_ || null != w),
     ek = !__OVERLAY__ && !Z && !R && M && (0 === k.textValue.trim().length || k.textValue.trim() === ey) && 0 === eC.length && !ec;
   i.useLayoutEffect(() => {
@@ -939,7 +939,7 @@ function eM(e) {
     ref: eh,
     onFocus: eU
   }, ez), {
-    style: ej(eb({}, N), {
+    style: ej(eb({}, S), {
       position: B === h.X.GRID ? "absolute" : "static",
       height: "auto"
     }),

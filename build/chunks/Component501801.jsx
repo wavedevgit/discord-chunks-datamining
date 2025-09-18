@@ -113,7 +113,7 @@ function v(e) {
           oldValue: a,
           newValue: s
         } = (() => {
-          if ((t.action === R.rsA.CHANNEL_UPDATE || t.action === R.rsA.CHANNEL_CREATE) && i.key === R.zUn.TYPE) {
+          if ((t.action === S.rsA.CHANNEL_UPDATE || t.action === S.rsA.CHANNEL_CREATE) && i.key === S.zUn.TYPE) {
             var e, n;
             return {
               oldValue: null != (e = i.oldValue) ? e : (0, h.a5)({
@@ -124,14 +124,14 @@ function v(e) {
               })
             }
           }
-          if (t.action === R.rsA.MEMBER_UPDATE && i.key === R.zUn.COMMUNICATION_DISABLED_UNTIL) {
+          if (t.action === S.rsA.MEMBER_UPDATE && i.key === S.zUn.COMMUNICATION_DISABLED_UNTIL) {
             let e = c()(i.newValue);
             return {
               oldValue: i.oldValue,
               newValue: e.isValid() ? e.calendar() : i.newValue
             }
           }
-          return t.action === R.rsA.GUILD_UPDATE && i.key === R.zUn.OWNER_ID ? {
+          return t.action === S.rsA.GUILD_UPDATE && i.key === S.zUn.OWNER_ID ? {
             oldValue: f.ZP.getUserTag(i.oldValue, {
               mode: "username"
             }),
@@ -140,7 +140,7 @@ function v(e) {
             })
           } : i
         })(), A = (() => {
-          if (t.action === R.rsA.MEMBER_ROLE_UPDATE) return function(e) {
+          if (t.action === S.rsA.MEMBER_ROLE_UPDATE) return function(e) {
             let {
               newValue: t
             } = e;
@@ -149,7 +149,7 @@ function v(e) {
               children: e.name
             }, e.id)) : null
           }(i);
-          if (t.targetType === R.KFR.ROLE || t.action === R.rsA.CHANNEL_OVERWRITE_CREATE || t.action === R.rsA.CHANNEL_OVERWRITE_UPDATE) return function(e, t) {
+          if (t.targetType === S.KFR.ROLE || t.action === S.rsA.CHANNEL_OVERWRITE_CREATE || t.action === S.rsA.CHANNEL_OVERWRITE_UPDATE) return function(e, t) {
             let {
               newValue: n
             } = e;
@@ -158,7 +158,7 @@ function v(e) {
               children: p.hQ(e, t)
             }, n)) : null
           }(i, t);
-          if ((t.action === R.rsA.CHANNEL_UPDATE || t.action === R.rsA.THREAD_UPDATE) && i.key === R.zUn.FLAGS) return function(e) {
+          if ((t.action === S.rsA.CHANNEL_UPDATE || t.action === S.rsA.THREAD_UPDATE) && i.key === S.zUn.FLAGS) return function(e) {
             let {
               newValue: t,
               oldValue: n
@@ -171,7 +171,7 @@ function v(e) {
               children: p.em(e)
             }, e)))), l.length > 0) ? l : null
           }(i);
-          if ((t.action === R.rsA.ONBOARDING_PROMPT_UPDATE || t.action === R.rsA.ONBOARDING_PROMPT_CREATE) && i.key === R.zUn.OPTIONS) return function(e, t, n) {
+          if ((t.action === S.rsA.ONBOARDING_PROMPT_UPDATE || t.action === S.rsA.ONBOARDING_PROMPT_CREATE) && i.key === S.zUn.OPTIONS) return function(e, t, n) {
             let {
               newValue: l,
               oldValue: i
@@ -197,12 +197,12 @@ function v(e) {
                   children: [(0, r.jsxs)("div", {
                     className: C.onboardingChangeLogItemTitle,
                     children: [(0, r.jsx)(b, {
-                      actionType: R.vB8.CREATE,
+                      actionType: S.vB8.CREATE,
                       targetType: t.targetType,
                       action: t.action
                     }), (0, r.jsx)(d.Text, {
                       variant: "text-md/normal",
-                      children: S.intl.format(S.t.CZ1tys, {
+                      children: R.intl.format(R.t.CZ1tys, {
                         title: i
                       })
                     })]
@@ -210,12 +210,12 @@ function v(e) {
                     className: C.onboardingChangeLogItemChanges,
                     children: [u.length > 0 && (0, r.jsx)(d.Text, {
                       variant: "text-md/normal",
-                      children: S.intl.format(S.t["gt/5z8"], {
+                      children: R.intl.format(R.t["gt/5z8"], {
                         roles: u.join(", ")
                       })
                     }), c.length > 0 && (0, r.jsx)(d.Text, {
                       variant: "text-md/normal",
-                      children: S.intl.format(S.t["4q006e"], {
+                      children: R.intl.format(R.t["4q006e"], {
                         channels: c.join(", ")
                       })
                     })]
@@ -225,12 +225,12 @@ function v(e) {
                 children: (0, r.jsxs)("div", {
                   className: C.onboardingChangeLogItemTitle,
                   children: [(0, r.jsx)(b, {
-                    actionType: R.vB8.DELETE,
+                    actionType: S.vB8.DELETE,
                     targetType: t.targetType,
                     action: t.action
                   }), (0, r.jsx)(d.Text, {
                     variant: "text-md/normal",
-                    children: S.intl.format(S.t["m3dt+P"], {
+                    children: R.intl.format(R.t["m3dt+P"], {
                       title: e.title
                     })
                   })]
@@ -244,12 +244,12 @@ function v(e) {
                   children: [(0, r.jsxs)("div", {
                     className: C.onboardingChangeLogItemTitle,
                     children: [(0, r.jsx)(b, {
-                      actionType: R.vB8.UPDATE,
+                      actionType: S.vB8.UPDATE,
                       targetType: t.targetType,
                       action: t.action
                     }), (0, r.jsx)(d.Text, {
                       variant: "text-md/normal",
-                      children: S.intl.format(S.t["WZO+iY"], {
+                      children: R.intl.format(R.t["WZO+iY"], {
                         title: l
                       })
                     })]
@@ -257,27 +257,27 @@ function v(e) {
                     className: C.onboardingChangeLogItemChanges,
                     children: [A.length > 0 && (0, r.jsx)(d.Text, {
                       variant: "text-md/normal",
-                      children: S.intl.format(S.t["R+km+f"], {
+                      children: R.intl.format(R.t["R+km+f"], {
                         roles: A.join(", ")
                       })
                     }), T.length > 0 && (0, r.jsx)(d.Text, {
                       variant: "text-md/normal",
-                      children: S.intl.format(S.t.xIVRoa, {
+                      children: R.intl.format(R.t.xIVRoa, {
                         roles: T.join(", ")
                       })
                     }), m.length > 0 && (0, r.jsx)(d.Text, {
                       variant: "text-md/normal",
-                      children: S.intl.format(S.t.iYowX1, {
+                      children: R.intl.format(R.t.iYowX1, {
                         channels: m.join(", ")
                       })
                     }), I.length > 0 && (0, r.jsx)(d.Text, {
                       variant: "text-md/normal",
-                      children: S.intl.format(S.t.JLdJpK, {
+                      children: R.intl.format(R.t.JLdJpK, {
                         channels: I.join(", ")
                       })
                     }), g.map((t, l) => (0, r.jsx)(d.Text, {
                       variant: "text-md/normal",
-                      children: S.intl.format(S.t["0698zc"], {
+                      children: R.intl.format(R.t["0698zc"], {
                         key: t,
                         oldValue: e[t],
                         newValue: n[t]
@@ -288,7 +288,7 @@ function v(e) {
               })(u[e], c[e]))]
             }, "options")
           }(i, t, n);
-          if (t.action === R.rsA.HOME_SETTINGS_CREATE || t.action === R.rsA.HOME_SETTINGS_UPDATE) return function(e, t) {
+          if (t.action === S.rsA.HOME_SETTINGS_CREATE || t.action === S.rsA.HOME_SETTINGS_UPDATE) return function(e, t) {
             let {
               oldValue: n,
               newValue: l,
@@ -298,7 +298,7 @@ function v(e) {
               action: s
             } = t;
             switch (i) {
-              case R.zUn.WELCOME_MESSAGE:
+              case S.zUn.WELCOME_MESSAGE:
                 return ((e, t) => {
                   var n, l, i, a, s;
                   let o = g.default.getUser(null == t || null == (n = t.author_ids) ? true : n[0]),
@@ -308,9 +308,9 @@ function v(e) {
                         className: C.onboardingChangeLogItemTitle,
                         children: (0, r.jsx)(d.Text, {
                           variant: "text-md/normal",
-                          children: S.intl.format(S.t.PrOzAw, {
-                            oldUser: null != (i = null == o ? true : o.username) ? i : S.intl.string(S.t.PoWNfX),
-                            newUser: null != (a = null == u ? true : u.username) ? a : S.intl.string(S.t.PoWNfX)
+                          children: R.intl.format(R.t.PrOzAw, {
+                            oldUser: null != (i = null == o ? true : o.username) ? i : R.intl.string(R.t.PoWNfX),
+                            newUser: null != (a = null == u ? true : u.username) ? a : R.intl.string(R.t.PoWNfX)
                           })
                         })
                       })
@@ -320,8 +320,8 @@ function v(e) {
                         className: C.onboardingChangeLogItemTitle,
                         children: (0, r.jsx)(d.Text, {
                           variant: "text-md/normal",
-                          children: S.intl.format(S.t.oB7rBQ, {
-                            oldMessage: null != (s = null == t ? true : t.message) ? s : S.intl.string(S.t.PoWNfX),
+                          children: R.intl.format(R.t.oB7rBQ, {
+                            oldMessage: null != (s = null == t ? true : t.message) ? s : R.intl.string(R.t.PoWNfX),
                             newMessage: e.message
                           })
                         })
@@ -331,7 +331,7 @@ function v(e) {
                     children: [c, E]
                   })
                 })(l, n);
-              case R.zUn.NEW_MEMBER_ACTIONS:
+              case S.zUn.NEW_MEMBER_ACTIONS:
                 return ((e, t) => {
                   let n = e.map(e => e.channel_id),
                     l = t.map(e => e.channel_id),
@@ -344,12 +344,12 @@ function v(e) {
                       children: (0, r.jsxs)("div", {
                         className: C.onboardingChangeLogItemTitle,
                         children: [(0, r.jsx)(b, {
-                          actionType: R.vB8.CREATE,
+                          actionType: S.vB8.CREATE,
                           targetType: a,
                           action: s
                         }), (0, r.jsx)(d.Text, {
                           variant: "text-md/normal",
-                          children: S.intl.format(S.t["oFSu6+"], {
+                          children: R.intl.format(R.t["oFSu6+"], {
                             name: e.title
                           })
                         })]
@@ -358,12 +358,12 @@ function v(e) {
                       children: (0, r.jsxs)("div", {
                         className: C.onboardingChangeLogItemTitle,
                         children: [(0, r.jsx)(b, {
-                          actionType: R.vB8.DELETE,
+                          actionType: S.vB8.DELETE,
                           targetType: a,
                           action: s
                         }), (0, r.jsx)(d.Text, {
                           variant: "text-md/normal",
-                          children: S.intl.format(S.t.GssWam, {
+                          children: R.intl.format(R.t.GssWam, {
                             name: e.title
                           })
                         })]
@@ -371,7 +371,7 @@ function v(e) {
                     }, e.channel_id))]
                   })
                 })(null != n ? n : [], l);
-              case R.zUn.RESOURCE_CHANNELS:
+              case S.zUn.RESOURCE_CHANNELS:
                 return ((e, t) => {
                   let n = e.map(e => e.channel_id),
                     l = t.map(e => e.channel_id),
@@ -384,12 +384,12 @@ function v(e) {
                       children: (0, r.jsxs)("div", {
                         className: C.onboardingChangeLogItemTitle,
                         children: [(0, r.jsx)(b, {
-                          actionType: R.vB8.CREATE,
+                          actionType: S.vB8.CREATE,
                           targetType: a,
                           action: s
                         }), (0, r.jsx)(d.Text, {
                           variant: "text-md/normal",
-                          children: S.intl.format(S.t.HlGndH, {
+                          children: R.intl.format(R.t.HlGndH, {
                             name: e.title
                           })
                         })]
@@ -398,12 +398,12 @@ function v(e) {
                       children: (0, r.jsxs)("div", {
                         className: C.onboardingChangeLogItemTitle,
                         children: [(0, r.jsx)(b, {
-                          actionType: R.vB8.DELETE,
+                          actionType: S.vB8.DELETE,
                           targetType: a,
                           action: s
                         }), (0, r.jsx)(d.Text, {
                           variant: "text-md/normal",
-                          children: S.intl.format(S.t["7pysg4"], {
+                          children: R.intl.format(R.t["7pysg4"], {
                             name: e.title
                           })
                         })]
@@ -429,7 +429,7 @@ function v(e) {
             change: A
           } = e;
           if (null == i) return console.warn("No change string for", A), null;
-          let m = S.intl.format(i, {
+          let m = R.intl.format(i, {
             oldValue: u,
             newValue: c,
             count: Array.isArray(c) ? c.length : null,
@@ -483,9 +483,9 @@ function v(e) {
               variant: "code",
               color: function(e) {
                 switch (e) {
-                  case R.vB8.CREATE:
+                  case S.vB8.CREATE:
                     return "text-feedback-positive";
-                  case R.vB8.DELETE:
+                  case S.vB8.DELETE:
                     return "status-danger";
                   default:
                     return "text-feedback-warning"
@@ -523,50 +523,50 @@ function v(e) {
   }, [t, n, i, s]);
   return l.useMemo(() => {
     switch (t.targetType) {
-      case R.KFR.GUILD:
+      case S.KFR.GUILD:
         return u(p.pY());
-      case R.KFR.CHANNEL:
-      case R.KFR.CHANNEL_OVERWRITE:
+      case S.KFR.CHANNEL:
+      case S.KFR.CHANNEL_OVERWRITE:
         return u(p.ML());
-      case R.KFR.USER:
+      case S.KFR.USER:
         return u(p.lU());
-      case R.KFR.ROLE:
+      case S.KFR.ROLE:
         return u(p.HE());
-      case R.KFR.ONBOARDING_PROMPT:
+      case S.KFR.ONBOARDING_PROMPT:
         return u(p.oD());
-      case R.KFR.GUILD_ONBOARDING:
+      case S.KFR.GUILD_ONBOARDING:
         return u(p.EN());
-      case R.KFR.HOME_SETTINGS:
+      case S.KFR.HOME_SETTINGS:
         return u(p.hx());
-      case R.KFR.INVITE:
+      case S.KFR.INVITE:
         return u(p.HN());
-      case R.KFR.WEBHOOK:
+      case S.KFR.WEBHOOK:
         return u(p.lR());
-      case R.KFR.EMOJI:
+      case S.KFR.EMOJI:
         return u(p.N$());
-      case R.KFR.STICKER:
+      case S.KFR.STICKER:
         return u(p.Bq());
-      case R.KFR.INTEGRATION:
+      case S.KFR.INTEGRATION:
         return u(p.K());
-      case R.KFR.STAGE_INSTANCE:
+      case S.KFR.STAGE_INSTANCE:
         return u(p.C2());
-      case R.KFR.GUILD_SCHEDULED_EVENT:
+      case S.KFR.GUILD_SCHEDULED_EVENT:
         return u(p.uB());
-      case R.KFR.GUILD_SCHEDULED_EVENT_EXCEPTION:
+      case S.KFR.GUILD_SCHEDULED_EVENT_EXCEPTION:
         return u(p.pi());
-      case R.KFR.THREAD:
+      case S.KFR.THREAD:
         return u(p.pA());
-      case R.KFR.APPLICATION_COMMAND:
+      case S.KFR.APPLICATION_COMMAND:
         return u(p.vm(t.changes));
-      case R.KFR.AUTO_MODERATION_RULE:
+      case S.KFR.AUTO_MODERATION_RULE:
         return u(p.rK());
-      case R.KFR.GUILD_SOUNDBOARD:
+      case S.KFR.GUILD_SOUNDBOARD:
         return u(p.C0());
-      case R.KFR.VOICE_CHANNEL_STATUS:
+      case S.KFR.VOICE_CHANNEL_STATUS:
         return u(p.F1());
-      case R.KFR.GUILD_MEMBER_VERIFICATION:
+      case S.KFR.GUILD_MEMBER_VERIFICATION:
         return u(p.JA());
-      case R.KFR.GUILD_PROFILE:
+      case S.KFR.GUILD_PROFILE:
         return u(p.zT())
     }
   }, [t.targetType, t.changes, u])

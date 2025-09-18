@@ -43,8 +43,8 @@ function E(e) {
     itemCount: n
   }), {
     itemCount: p,
-    focusedIndex: R
-  } = O, [S] = r.useState(() => (0, a.P2)(f, 16));
+    focusedIndex: S
+  } = O, [R] = r.useState(() => (0, a.P2)(f, 16));
   return r.useEffect(() => {
       f({
         type: l.G.UPDATE_ITEM_COUNT,
@@ -68,11 +68,11 @@ function E(e) {
         getIndexFromId: O
       } = e, f = r.useRef(n), p = r.useRef(O);
       p.current = O, f.current = n;
-      let R = r.useRef(h);
+      let S = r.useRef(h);
       r.useEffect(() => {
-        R.current = h
+        S.current = h
       }, [h]);
-      let [S, C] = r.useState(false), [L] = r.useState(() => new a.$o(e => () => {
+      let [R, C] = r.useState(false), [L] = r.useState(() => new a.$o(e => () => {
         let t = null != p.current && "string" == typeof e ? p.current(e) : e;
         "number" != typeof t || t < 0 || T({
           type: l.G.SET_FOCUSED_INDEX,
@@ -81,7 +81,7 @@ function E(e) {
       }));
       r.useEffect(() => () => L.clean(), [L]);
       let D = r.useCallback((e, t) => {
-          R.current && _(e, t)
+          S.current && _(e, t)
         }, [_]),
         [U, M] = r.useState(true);
       r.useEffect(() => {
@@ -97,7 +97,7 @@ function E(e) {
           }), e && D(N(t, n), n)
         }, [N, E, A, T, t, D]),
         v = r.useCallback(e => {
-          if (!R.current) return;
+          if (!S.current) return;
           if (s.includes(e.key) && !(e.shiftKey || e.altKey || e.metaKey || e.ctrlKey) && e.currentTarget === e.target) {
             e.preventDefault(), e.stopPropagation(), b();
             return
@@ -136,11 +136,11 @@ function E(e) {
           }
         }, [N, t, T, E, b, d]),
         x = r.useCallback(() => {
-          S || C(true)
-        }, [S]),
+          R || C(true)
+        }, [R]),
         P = r.useCallback(() => {
-          S || (m ? D(N(t, E), E) : b(true))
-        }, [N, t, D, m, S, E, b]),
+          R || (m ? D(N(t, E), E) : b(true))
+        }, [N, t, D, m, R, E, b]),
         j = r.useCallback(e => {
           e.currentTarget.contains(e.relatedTarget) || requestAnimationFrame(() => {
             if (null == u(o(N, t, E))) return void D(t);
@@ -156,11 +156,11 @@ function E(e) {
       }, [P, x, j]);
       let G = r.useCallback(() => ({
           role: "list",
-          tabIndex: S && m ? false : 0,
+          tabIndex: R && m ? false : 0,
           id: t,
           onKeyDown: v,
           ref: y
-        }), [t, S, v, m]),
+        }), [t, R, v, m]),
         w = r.useCallback(e => {
           let {
             index: n
@@ -182,8 +182,8 @@ function E(e) {
     }({
       navId: t,
       itemCount: p,
-      focusedIndex: R,
-      dispatch: S,
+      focusedIndex: S,
+      dispatch: R,
       onSelect: d,
       setFocus: _,
       getNewFocusIndex: A,
