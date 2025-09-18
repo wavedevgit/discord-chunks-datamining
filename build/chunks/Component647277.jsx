@@ -2,7 +2,7 @@
 /** chunk id: 647277, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  _: () => w
+  _: () => R
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,8 +16,6 @@ var Chunk120356 = require("./120356.js"),
   Chunk51144 = require("./51144.js"),
   Chunk281494 = require("./281494.js"),
   Chunk276444 = require("./276444.js"),
-  Chunk503249 = require("./503249.js"),
-  Chunk239547 = require("./239547.jsx"),
   Chunk796634 = require("./796634.js"),
   Chunk656139 = require("./656139.jsx"),
   Chunk981631 = require("./981631.js"),
@@ -25,7 +23,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk756555 = require("./756555.js"),
   Chunk456254 = require("./456254.js");
 
-function v(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,20 +32,20 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
 }
 
-function T(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,28 +56,28 @@ function T(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let A = e => {
+let T = e => {
     let {
       startingScreen: t,
       analyticsLocations: i
     } = e;
-    c.default.track(E.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+    c.default.track(m.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
       location_stack: i
     }), (0, s.ZDy)(async () => {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 656139));
-      return n => (0, r.jsx)(e, S(I({}, n), {
+      return n => (0, r.jsx)(e, I(O({}, n), {
         startingScreen: t
       }))
     })
   },
-  C = e => {
+  S = e => {
     let {
       user: t
     } = e, {
@@ -89,107 +87,105 @@ let A = e => {
       userId: t.id,
       size: s.EFr.SIZE_24
     });
-    return (0, r.jsx)(s.qEK, I({
-      className: y.referredFriendAvatar,
+    return (0, r.jsx)(s.qEK, O({
+      className: E.referredFriendAvatar,
       src: n,
       "aria-label": (0, d.oY)(t),
       size: s.EFr.SIZE_24
     }, i), t.id)
   },
-  N = e => {
+  A = e => {
     let {
       slotIndex: t
     } = e;
     return (0, r.jsx)("div", {
-      className: y.availableReferralSlot,
+      className: E.availableReferralSlot,
       children: t
     })
   },
-  R = e => {
+  C = e => {
     let {
       referralSentUsers: t
     } = e, n = () => {
       let e = [];
-      for (let n = 0; n < m.Q; n++)
+      for (let n = 0; n < p.Q; n++)
         if ((null == t ? true : t[n]) !== true) {
-          let i = (0, r.jsx)(C, {
+          let i = (0, r.jsx)(S, {
             user: t[n]
           }, t[n].id);
           e.push(i)
         } else {
-          let t = (0, r.jsx)(N, {
+          let t = (0, r.jsx)(A, {
             slotIndex: n + 1
           }, n);
           e.push(t)
         } return e
     };
     return (0, r.jsx)("div", {
-      className: y.progressContainer,
+      className: E.progressContainer,
       children: n()
     })
   },
-  P = e => {
+  N = e => {
     let {
       nReferralsSent: t
-    } = e, n = 33.3 * t, i = p.ZP.useExperiment({
-      location: "ProgressWheel"
-    }).cohort === p.$P.NitroLogo ? (0, r.jsx)(h.I, {}) : (0, r.jsx)(s.Eep, {
-      src: O.Z,
-      height: 104,
-      width: 104
-    });
+    } = e, n = 33.3 * t;
     return (0, r.jsx)(s._3P, {
       percent: n,
       colorOverride: "#53ac66",
-      background: y.progressCircleBackground,
+      background: E.progressCircleBackground,
       strokeSize: .8,
-      ringColorOverrideClassName: y.progressCircleRing,
-      overlayClassName: t === m.Q ? y.glow : true,
-      children: i
+      ringColorOverrideClassName: E.progressCircleRing,
+      overlayClassName: t === p.Q ? E.glow : true,
+      children: (0, r.jsx)(s.Eep, {
+        src: b.Z,
+        height: 93,
+        width: 93
+      })
     })
   },
-  w = e => {
+  R = e => {
     let {
       className: t
     } = e, {
       referralSentUsers: n
-    } = (0, m.G)(), i = (0, o.e7)([_.Z], () => _.Z.getRecipientStatus()), l = (0, o.e7)([_.Z], () => _.Z.getHasEligibleFriends()), c = i.size === m.Q && i.values().every(e => e === f.Fe.REDEEMED), d = i.size === m.Q, p = () => false === l ? b.intl.format(b.t["zWhX/f"], {
-      helpdeskArticle: u.Z.getArticleURL(E.BhN.REFERRAL_PROGRAM)
-    }) : n.length === m.Q ? true === c ? b.intl.format(b.t["1aEjsL"], {
-      helpdeskArticle: u.Z.getArticleURL(E.BhN.REFERRAL_PROGRAM)
-    }) : b.intl.format(b.t["+u3AOD"], {
-      helpdeskArticle: u.Z.getArticleURL(E.BhN.REFERRAL_PROGRAM)
-    }) : b.intl.format(b.t["omMr+f"], {
-      helpdeskArticle: u.Z.getArticleURL(E.BhN.REFERRAL_PROGRAM)
+    } = (0, p.G)(), i = (0, o.e7)([_.Z], () => _.Z.getRecipientStatus()), l = (0, o.e7)([_.Z], () => _.Z.getHasEligibleFriends()), c = i.size === p.Q && i.values().every(e => e === f.Fe.REDEEMED), d = i.size === p.Q, b = () => false === l ? g.intl.format(g.t["zWhX/f"], {
+      helpdeskArticle: u.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM)
+    }) : n.length === p.Q ? true === c ? g.intl.format(g.t["1aEjsL"], {
+      helpdeskArticle: u.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM)
+    }) : g.intl.format(g.t["+u3AOD"], {
+      helpdeskArticle: u.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM)
+    }) : g.intl.format(g.t["omMr+f"], {
+      helpdeskArticle: u.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM)
     });
     return (0, r.jsxs)("div", {
-      className: a()(y.container, t),
+      className: a()(E.container, t),
       children: [(0, r.jsx)("div", {
-        className: y.progressCircle,
-        children: (0, r.jsx)(P, {
+        className: E.progressCircle,
+        children: (0, r.jsx)(N, {
           nReferralsSent: i.size
         })
       }), (0, r.jsxs)("div", {
-        className: y.bannerContent,
-        children: [(0, r.jsx)(R, {
+        className: E.bannerContent,
+        children: [(0, r.jsx)(C, {
           referralSentUsers: n
         }), (0, r.jsxs)("div", {
-          className: y.bannerContentText,
+          className: E.bannerContentText,
           children: [(0, r.jsx)(s.X6q, {
-            variant: "heading-md/semibold",
+            variant: "heading-lg/semibold",
             color: "header-primary",
-            children: b.intl.string(b.t.USo4s7)
+            children: g.intl.string(g.t.USo4s7)
           }), (0, r.jsx)(s.Text, {
             variant: "text-md/medium",
             color: "text-secondary",
-            children: p()
+            children: b()
           })]
         }), (0, r.jsx)(s.zxk, {
           variant: "primary",
           disabled: false === l || true === d,
-          text: b.intl.string(b.t.Lm2nFR),
-          onClick: () => A({
-            startingScreen: g.K.SELECT_FRIENDS,
+          text: g.intl.string(g.t.Lm2nFR),
+          onClick: () => T({
+            startingScreen: h.K.SELECT_FRIENDS,
             analyticsLocations: []
           })
         })]
