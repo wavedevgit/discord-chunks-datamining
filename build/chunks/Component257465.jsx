@@ -2,8 +2,8 @@
 /** chunk id: 257465, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  D: () => b,
-  I: () => y
+  D: () => E,
+  I: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,13 +12,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk938288 = require("./938288.js"),
   Chunk990547 = require("./990547.js"),
   Chunk793030 = require("./793030.js"),
-  Chunk143450 = require("./143450.js"),
   Chunk507274 = require("./507274.jsx"),
   Chunk667137 = require("./667137.js"),
   Chunk985316 = require("./985316.js"),
   Chunk525751 = require("./525751.js");
 
-function h(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,20 +26,20 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,65 +50,65 @@ function g(e, t) {
   return n
 }
 
-function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+function g(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var b = function(e) {
+var E = function(e) {
   return e[e.ENTERING = 0] = "ENTERING", e[e.ENTERED = 1] = "ENTERED", e[e.EXITING = 2] = "EXITING", e[e.EXITED = 3] = "EXITED", e[e.HIDDEN = 4] = "HIDDEN", e
 }({});
 
-function y(e) {
+function b(e) {
   var t;
   let {
     transitionState: n,
     animationVariant: a = "default",
-    size: h = "md",
-    paddingSize: g = "sm",
-    fullScreenOnMobile: b = true,
-    returnRef: y,
-    role: O = "dialog",
-    "aria-label": v,
-    dismissable: I = true,
-    onClose: T,
-    contentOutsideContainer: S,
-    trackingProps: A,
-    children: C
-  } = e, N = i.useId(), R = i.useMemo(() => ({
-    id: N,
-    headingId: "heading-".concat(N),
-    onClose: T,
-    dismissable: I
-  }), [I, N, T]), P = 0 === n || 1 === n, {
-    reducedMotion: w
-  } = i.useContext(c.Sfi), D = P || w.enabled || "subtle" === a ? "scale(1)" : "scale(0.9)", x = (0, u.q)({
-    opacity: +!!P,
-    transform: D,
-    config: P ? _.jF : _.W$,
-    delay: 64 * !!P
+    size: p = "md",
+    paddingSize: m = "sm",
+    fullScreenOnMobile: E = true,
+    returnRef: b,
+    role: y = "dialog",
+    "aria-label": O,
+    dismissable: v = true,
+    onClose: I,
+    contentOutsideContainer: T,
+    trackingProps: S,
+    children: A
+  } = e, C = i.useId(), N = i.useMemo(() => ({
+    id: C,
+    headingId: "heading-".concat(C),
+    onClose: I,
+    dismissable: v
+  }), [v, C, I]), R = 0 === n || 1 === n, {
+    reducedMotion: P
+  } = i.useContext(c.Sfi), w = R || P.enabled || "subtle" === a ? "scale(1)" : "scale(0.9)", D = (0, c.q_F)({
+    opacity: +!!R,
+    transform: w,
+    config: R ? f.jF : f.W$,
+    delay: 64 * !!R
   }, "animate-always");
-  return (0, r.jsx)(f.t.Provider, {
-    value: R,
-    children: (0, r.jsx)(d.V, E(m({
-      id: N,
-      role: O,
-      "aria-label": v,
-      "aria-labelledby": null != v ? true : R.headingId,
-      returnRef: y
-    }, A), {
-      impressionType: null != (t = null == A ? true : A.impressionType) ? t : l.ImpressionTypes.MODAL,
+  return (0, r.jsx)(d.t.Provider, {
+    value: N,
+    children: (0, r.jsx)(u.V, g(h({
+      id: C,
+      role: y,
+      "aria-label": O,
+      "aria-labelledby": null != O ? true : N.headingId,
+      returnRef: b
+    }, S), {
+      impressionType: null != (t = null == S ? true : S.impressionType) ? t : l.ImpressionTypes.MODAL,
       children: (0, r.jsx)(c.y5t, {
         forceLevel: 1,
         children: (0, r.jsxs)("div", {
-          className: o()(p.outerContainer, {
-            [p.fullScreenOnMobile]: b
+          className: o()(_.outerContainer, {
+            [_.fullScreenOnMobile]: E
           }),
-          children: [S, (0, r.jsx)(s.animated.div, {
+          children: [T, (0, r.jsx)(s.animated.div, {
             "data-mana-component": "modal",
-            className: o()(p.container, p["size-".concat(h)], p["padding-size-".concat(g)]),
-            style: x,
-            children: C
+            className: o()(_.container, _["size-".concat(p)], _["padding-size-".concat(m)]),
+            style: D,
+            children: A
           })]
         })
       })

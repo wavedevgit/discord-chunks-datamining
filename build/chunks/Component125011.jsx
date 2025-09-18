@@ -1,12 +1,13 @@
-/** Chunk was on 1272 **/
-/** chunk id: 125011, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 125011, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => c
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk70097 = require("./70097.jsx"),
   Chunk883079 = require("./883079.js"),
   Chunk97794 = require("./97794.js");
@@ -15,13 +16,13 @@ let c = e => {
     className: t
   } = e;
   return (0, r.jsx)("div", {
-    className: l()(o.container, t),
-    children: (0, r.jsx)(a.Z, {
-      className: o.asset,
+    className: a()(s.container, t),
+    children: (0, r.jsx)(o.Z, {
+      className: s.asset,
       playsInline: true,
       controls: false,
       children: (0, r.jsx)("source", {
-        src: s.Z,
+        src: l.Z,
         type: "video/webm"
       })
     })

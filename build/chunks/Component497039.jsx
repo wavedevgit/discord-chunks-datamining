@@ -2,7 +2,7 @@
 /** chunk id: 497039, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  T: () => S
+  T: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -11,11 +11,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk938288 = require("./938288.js"),
   Chunk793030 = require("./793030.js"),
   Chunk692547 = require("./692547.js"),
-  Chunk143450 = require("./143450.js"),
   Chunk180035 = require("./180035.js"),
   Chunk580229 = require("./580229.js");
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,20 +23,20 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
 }
 
-function h(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,28 +47,28 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = {
+let m = {
     mass: 1,
     tension: 250
   },
-  E = "M5.13231 6.72963L6.7233 5.13864L14.855 13.2704L13.264 14.8614L5.13231 6.72963Z",
-  b = "M13.2704 5.13864L14.8614 6.72963L6.72963 14.8614L5.13864 13.2704L13.2704 5.13864Z",
-  y = "M6.56666 11.0013L6.56666 8.96683L13.5667 8.96683L13.5667 11.0013L6.56666 11.0013Z",
-  O = "M13.5582 8.96683L13.5582 11.0013L6.56192 11.0013L6.56192 8.96683L13.5582 8.96683Z",
-  v = "M7.89561 14.8538L6.30462 13.2629L14.3099 5.25755L15.9009 6.84854L7.89561 14.8538Z",
-  I = "M4.08643 11.0903L5.67742 9.49929L9.4485 13.2704L7.85751 14.8614L4.08643 11.0903Z";
+  g = "M5.13231 6.72963L6.7233 5.13864L14.855 13.2704L13.264 14.8614L5.13231 6.72963Z",
+  E = "M13.2704 5.13864L14.8614 6.72963L6.72963 14.8614L5.13864 13.2704L13.2704 5.13864Z",
+  b = "M6.56666 11.0013L6.56666 8.96683L13.5667 8.96683L13.5667 11.0013L6.56666 11.0013Z",
+  y = "M13.5582 8.96683L13.5582 11.0013L6.56192 11.0013L6.56192 8.96683L13.5582 8.96683Z",
+  O = "M7.89561 14.8538L6.30462 13.2629L14.3099 5.25755L15.9009 6.84854L7.89561 14.8538Z",
+  v = "M4.08643 11.0903L5.67742 9.49929L9.4485 13.2704L7.85751 14.8614L4.08643 11.0903Z";
 
-function T(e, t, n, i) {
+function I(e, t, n, i) {
   let a = e.to({
       output: [t, n]
     }),
-    o = i ? [E, E, v, v] : [E, y, y, v],
-    l = i ? [b, b, I, I] : [b, O, O, I];
+    o = i ? [g, g, O, O] : [g, b, b, O],
+    l = i ? [E, E, v, v] : [E, y, y, v];
   return (0, r.jsxs)("svg", {
     viewBox: "0 0 20 20",
     fill: "none",
@@ -89,61 +88,61 @@ function T(e, t, n, i) {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     id: t,
     onChange: n,
     checked: a,
-    disabled: _,
-    focusProps: h,
-    innerRef: E
+    disabled: f,
+    focusProps: p,
+    innerRef: g
   } = e, {
-    reducedMotion: b
-  } = i.useContext(l.Sfi), y = i.useRef(null), [O, v] = i.useState(false), I = (0, d.d)(c.Z.colors.INTERACTIVE_MUTED).spring(), S = (0, d.d)(c.Z.colors.BG_BRAND).spring(), {
-    state: A,
-    opacity: C
-  } = (0, u.q)({
-    config: g,
-    opacity: _ ? .5 : 1,
-    state: O ? a ? .7 : .3 : +!!a
+    reducedMotion: E
+  } = i.useContext(l.Sfi), b = i.useRef(null), [y, O] = i.useState(false), v = (0, u.d)(c.Z.colors.INTERACTIVE_MUTED).spring(), T = (0, u.d)(c.Z.colors.BG_BRAND).spring(), {
+    state: S,
+    opacity: A
+  } = (0, l.q_F)({
+    config: m,
+    opacity: f ? .5 : 1,
+    state: y ? a ? .7 : .3 : +!!a
   }, "animate-always");
 
+  function C(e) {
+    O(false), null == n || n(e.currentTarget.checked, e)
+  }
+
   function N(e) {
-    v(false), null == n || n(e.currentTarget.checked, e)
+    f || e.repeat || (" " === e.key || "Enter" === e.key) && O(true)
   }
 
   function R(e) {
-    _ || e.repeat || (" " === e.key || "Enter" === e.key) && v(true)
-  }
-
-  function P(e) {
     var t;
-    _ || !O || e.repeat || (v(false), "Enter" === e.key && (null == (t = y.current) || t.click()))
+    f || !y || e.repeat || (O(false), "Enter" === e.key && (null == (t = b.current) || t.click()))
   }
-  return (0, r.jsx)(l.tEY, m(p({}, h), {
+  return (0, r.jsx)(l.tEY, h(_({}, p), {
     within: true,
     offset: false,
     children: (0, r.jsxs)(s.animated.div, {
       "data-toggleable-component": "switch",
-      className: o()(f.container, {
-        [f.checked]: a,
-        [f.disabled]: _
+      className: o()(d.container, {
+        [d.checked]: a,
+        [d.disabled]: f
       }),
-      onMouseDown: () => !_ && v(true),
-      onMouseUp: () => v(false),
-      onMouseLeave: () => v(false),
+      onMouseDown: () => !f && O(true),
+      onMouseUp: () => O(false),
+      onMouseLeave: () => O(false),
       style: {
-        opacity: C,
-        backgroundColor: A.to({
-          output: [I, S]
+        opacity: A,
+        backgroundColor: S.to({
+          output: [v, T]
         })
       },
       children: [(0, r.jsxs)(s.animated.svg, {
-        className: f.slider,
+        className: d.slider,
         viewBox: "0 0 28 20",
         preserveAspectRatio: "xMinYMid meet",
         style: {
-          left: A.to({
+          left: S.to({
             range: [0, .3, .7, 1],
             output: [false, 1, 8, 12]
           })
@@ -151,37 +150,37 @@ function S(e) {
         "aria-hidden": true,
         children: [(0, r.jsx)(s.animated.rect, {
           fill: "white",
-          x: A.to({
+          x: S.to({
             range: [0, .3, .7, 1],
             output: [4, 0, 0, 4]
           }),
-          y: A.to({
+          y: S.to({
             range: [0, .3, .7, 1],
             output: [0, 1, 1, 0]
           }),
-          height: A.to({
+          height: S.to({
             range: [0, .3, .7, 1],
             output: [20, 18, 18, 20]
           }),
-          width: A.to({
+          width: S.to({
             range: [0, .3, .7, 1],
             output: [20, 28, 28, 20]
           }),
           rx: "10"
-        }), T(A, I, S, b.enabled)]
+        }), I(S, v, T, E.enabled)]
       }), (0, r.jsx)("input", {
         id: t,
         type: "checkbox",
         ref: e => {
-          y.current = e, null != E && (E.current = e)
+          b.current = e, null != g && (g.current = e)
         },
-        className: f.input,
-        tabIndex: _ ? false : 0,
-        onKeyDown: R,
-        onKeyUp: P,
-        onChange: N,
+        className: d.input,
+        tabIndex: f ? false : 0,
+        onKeyDown: N,
+        onKeyUp: R,
+        onChange: C,
         checked: a,
-        disabled: _
+        disabled: f
       })]
     })
   }))

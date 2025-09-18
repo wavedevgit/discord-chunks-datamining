@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk938288 = require("./938288.js"),
-  Chunk143450 = require("./143450.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk1561 = require("./1561.jsx"),
   Chunk438784 = require("./438784.jsx"),
   Chunk696826 = require("./696826.jsx"),
@@ -558,7 +558,7 @@ function Z(e) {
     status: v,
     isMobile: c,
     isTyping: _
-  })), [F, E, v, c, _]), K = (0, l.q)({
+  })), [F, E, v, c, _]), K = (0, l.q_F)({
     config: A,
     from: Y,
     to: W
@@ -569,7 +569,7 @@ function Z(e) {
     avatarCutoutHeight: Q,
     avatarCutoutRadius: J,
     fill: $
-  } = K, ee = T(K, ["avatarCutoutX", "avatarCutoutY", "avatarCutoutWidth", "avatarCutoutHeight", "avatarCutoutRadius", "fill"]), et = (0, g.px)(E), en = (0, g.UC)(E), er = en.status * g.D6, ei = en.status * g.EW, ea = null != v ? (en.status * g.D6 - en.status) / 2 : 0, eo = en.size + Math.ceil(ea), [es, el, ec] = (0, l.q)({
+  } = K, ee = T(K, ["avatarCutoutX", "avatarCutoutY", "avatarCutoutWidth", "avatarCutoutHeight", "avatarCutoutRadius", "fill"]), et = (0, g.px)(E), en = (0, g.UC)(E), er = en.status * g.D6, ei = en.status * g.EW, ea = null != v ? (en.status * g.D6 - en.status) / 2 : 0, eo = en.size + Math.ceil(ea), [es, el, ec] = (0, l.q_F)({
     config: {
       tension: 450,
       friction: 20,
