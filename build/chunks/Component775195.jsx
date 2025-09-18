@@ -1,27 +1,23 @@
-/** Chunk was on web.js **/
-/** chunk id: 775195, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 93886 **/
+/** chunk id: 775195, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => o
 });
 var Chunk951288 = require("./951288.js"),
   Chunk704215 = require("./704215.js"),
   Chunk481060 = require("./481060.js"),
   Chunk211644 = require("./211644.js"),
-  Chunk699867 = require("./699867.jsx"),
-  Chunk197571 = require("./197571.js");
+  Chunk699867 = require("./699867.jsx");
 
-function c(e) {
+function o(e) {
   let {
     searchQuery: t = ""
-  } = e, n = (0, o.ZP)(e => e.recentlyShown).map(e => i.z[e]).filter(e => e.toLowerCase().includes(t.toLowerCase()));
-  return 0 === n.length ? null : (0, r.jsxs)("div", {
-    className: l.marginBottom8,
-    children: [(0, r.jsx)(a.vwX, {
-      tag: a.RB0.H2,
-      children: "Recently Shown"
-    }), (0, r.jsx)(s.Z, {
+  } = e, n = (0, i.ZP)(e => e.recentlyShown).map(e => r.z[e]).filter(e => e.toLowerCase().includes(t.toLowerCase()));
+  return 0 === n.length ? null : (0, a.jsx)(l.hjN, {
+    title: "Recently Shown",
+    tag: "h1",
+    children: (0, a.jsx)(s.Z, {
       items: n
-    })]
+    })
   })
 }

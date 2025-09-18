@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 87454, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 93886 **/
+/** chunk id: 87454, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => h
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,40 +13,40 @@ var Chunk951288 = require("./951288.js"),
   Chunk972118 = require("./972118.js"),
   Chunk764668 = require("./764668.js"),
   Chunk197571 = require("./197571.js");
-let _ = Chunk647438.memo(function(e) {
+let h = Chunk647438.memo(function(e) {
   let {
     className: t,
     content: n,
-    onChange: a
-  } = e, l = o.z[n], {
-    isDismissed: f,
-    handleToggleDismissState: _
-  } = (0, u.Z)(l), [h, m] = i.useState(false), g = i.useCallback(() => {
-    null == a || a(n), _()
-  }, [a, _, n]), E = i.useCallback(e => {
-    e.preventDefault(), m(true), navigator.clipboard.writeText(n.toLowerCase())
+    onChange: l
+  } = e, o = i.z[n], {
+    isDismissed: m,
+    handleToggleDismissState: h
+  } = (0, d.Z)(o), [x, b] = r.useState(false), f = r.useCallback(() => {
+    null == l || l(n), h()
+  }, [l, h, n]), g = r.useCallback(e => {
+    e.preventDefault(), b(true), navigator.clipboard.writeText(n.toLowerCase())
   }, [n]);
-  return (0, r.jsx)(s.j7V, {
-    value: f,
-    onChange: g,
+  return (0, a.jsx)(s.j7V, {
+    value: m,
+    onChange: f,
     className: t,
-    children: (0, r.jsxs)("div", {
-      className: d.container,
-      children: [(0, r.jsxs)("div", {
-        className: d.textContainer,
-        children: [(0, r.jsx)(s.Text, {
+    children: (0, a.jsxs)("div", {
+      className: u.container,
+      children: [(0, a.jsxs)("div", {
+        className: u.textContainer,
+        children: [(0, a.jsx)(s.Text, {
           variant: "text-md/normal",
-          className: d.text,
-          children: "".concat(n.toLowerCase(), " (").concat(o.z[n], ")")
-        }), (0, c.qh)(l) && (0, r.jsx)(p, {
-          content: l
+          className: u.text,
+          children: "".concat(n.toLowerCase(), " (").concat(i.z[n], ")")
+        }), (0, c.qh)(o) && (0, a.jsx)(p, {
+          content: o
         })]
-      }), (0, r.jsx)(s.hU, {
+      }), (0, a.jsx)(s.hU, {
         size: "sm",
         variant: "icon-only",
-        icon: h ? s.C2q : s.zTD,
-        onClick: E,
-        "aria-label": h ? "Copied" : "Copy"
+        icon: x ? s.C2q : s.zTD,
+        onClick: g,
+        "aria-label": x ? "Copied" : "Copy"
       })]
     })
   })
@@ -56,25 +55,25 @@ let _ = Chunk647438.memo(function(e) {
 function p(e) {
   let {
     content: t
-  } = e, n = (0, a.e7)([l.Z], () => {
+  } = e, n = (0, l.e7)([o.Z], () => {
     var e, n;
-    return null == (n = l.Z.settings.userContent) || null == (e = n.recurringDismissibleContentStates) ? true : e[t]
+    return null == (n = o.Z.settings.userContent) || null == (e = n.recurringDismissibleContentStates) ? true : e[t]
   });
   if (null == n) return null;
-  let i = [],
+  let r = [],
     {
-      lastDismissedVersion: o,
+      lastDismissedVersion: i,
       lastDismissedAtMs: c,
-      lastDismissedObjectId: u
+      lastDismissedObjectId: d
     } = n;
-  if (true !== o && 0 !== o && i.push("last_dismissed_version: ".concat(o)), true !== c) {
+  if (true !== i && 0 !== i && r.push("last_dismissed_version: ".concat(i)), true !== c) {
     let e = Number(c),
       t = Number.isNaN(e) ? "n/a" : new Date(e).toLocaleString();
-    i.push("last_dismissed_at: ".concat(t))
+    r.push("last_dismissed_at: ".concat(t))
   }
-  return (true !== u && "0" !== u && i.push("last_dismissed_object_id: ".concat(u)), 0 === i.length) ? null : (0, r.jsx)(s.Text, {
+  return (true !== d && "0" !== d && r.push("last_dismissed_object_id: ".concat(d)), 0 === r.length) ? null : (0, a.jsx)(s.Text, {
     variant: "text-xs/normal",
-    className: f.marginTop4,
-    children: i.join(", ")
+    className: m.marginTop4,
+    children: r.join(", ")
   })
 }

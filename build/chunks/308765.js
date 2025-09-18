@@ -61,11 +61,6 @@ let i = {
     inlineRequire: () => require("./215739.js").Z,
     loadAfterConnectionOpen: true
   },
-  DeadchatPromptManager: {
-    actions: ["POST_CONNECTION_OPEN", "IDLE"],
-    inlineRequire: () => require("./146661.js").Z,
-    loadAfterConnectionOpen: true
-  },
   DesktopNotificationsManager: {
     actions: ["POST_CONNECTION_OPEN"],
     inlineRequire: () => require("./863065.js").Z

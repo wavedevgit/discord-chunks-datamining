@@ -27,6 +27,7 @@ var Chunk392750 = require("./392750.jsx"),
   Chunk926976 = require("./926976.jsx"),
   Chunk789654 = require("./789654.jsx"),
   Chunk866730 = require("./866730.jsx"),
+  Chunk582344 = require("./582344.jsx"),
   Chunk691867 = require("./691867.jsx"),
   Chunk916790 = require("./916790.jsx"),
   Chunk645973 = require("./645973.jsx"),
@@ -52,7 +53,6 @@ var Chunk392750 = require("./392750.jsx"),
   Chunk315384 = require("./315384.jsx"),
   Chunk107606 = require("./107606.jsx"),
   Chunk514866 = require("./514866.jsx"),
-  Chunk149323 = require("./149323.jsx"),
   Chunk763577 = require("./763577.jsx"),
   Chunk384207 = require("./384207.jsx"),
   Chunk264603 = require("./264603.jsx"),
@@ -110,7 +110,7 @@ function eh(e) {
       id: "dispatcher",
       name: "Dispatcher",
       group: es.v0.EVENTS,
-      render: () => (0, a.jsx)(S.Z, {})
+      render: () => (0, a.jsx)(O.Z, {})
     }];
     return f.Z.isDeveloper && (e.push({
       id: "shop",
@@ -121,27 +121,27 @@ function eh(e) {
       id: "quick_actions",
       name: "Quick Actions",
       group: es.v0.DEVELOPMENT,
-      render: () => (0, a.jsx)(X.Z, {})
+      render: () => (0, a.jsx)(J.Z, {})
     }), e.push({
       id: "end_to_end_encryption",
       name: "E2EE",
       group: es.v0.DEVELOPMENT,
-      render: () => (0, a.jsx)(O.Z, {})
+      render: () => (0, a.jsx)(P.Z, {})
     }), e.push({
       id: "performance",
       name: "Performance",
       group: es.v0.DEVELOPMENT,
-      render: () => (0, a.jsx)(H.ZP, {})
+      render: () => (0, a.jsx)(W.ZP, {})
     }), e.push({
       id: "feedback",
       name: "Feedback",
       group: es.v0.USERS,
-      render: () => (0, a.jsx)(P.Z, {})
+      render: () => (0, a.jsx)(k.Z, {})
     }), e.push({
       id: "overlay",
       name: "Overlay v3",
       group: es.v0.GAMES,
-      render: () => (0, a.jsx)(B.Z, {})
+      render: () => (0, a.jsx)(V.Z, {})
     }), e.push({
       id: "slayer_sdk",
       name: "Slayer SDK",
@@ -161,12 +161,12 @@ function eh(e) {
       id: "lottie",
       name: "Lottie",
       group: es.v0.UI,
-      render: () => (0, a.jsx)(U.Z, {})
+      render: () => (0, a.jsx)(F.Z, {})
     }), e.push({
       id: "intl",
       name: "Intl",
       group: es.v0.UI,
-      render: () => (0, a.jsx)(Z.Z, {})
+      render: () => (0, a.jsx)(A.Z, {})
     }), e.push({
       id: "colors",
       name: "Colors",
@@ -176,46 +176,46 @@ function eh(e) {
       id: "design_toggles",
       name: "Design Toggles",
       group: es.v0.UI,
-      render: () => (0, a.jsx)(T.Z, {})
+      render: () => (0, a.jsx)(S.Z, {})
     }), e.push({
       id: "appearance_randomizer",
       name: "Appearance Randomizer",
       group: es.v0.UI,
-      render: () => (0, a.jsx)(Y.Z, {})
+      render: () => (0, a.jsx)(X.Z, {})
     }), e.push({
       id: "overlays",
       name: "Dev Overlays",
       group: es.v0.DEVELOPMENT,
-      render: () => (0, a.jsx)(R.Z, {
+      render: () => (0, a.jsx)(w.Z, {
         devSettingsCategory: _.zU.OVERLAYS
       })
     }), e.push({
       id: "messaging",
       name: "Messaging",
       group: es.v0.USERS,
-      render: () => (0, a.jsx)(F.Z, {})
+      render: () => (0, a.jsx)(G.Z, {})
     }), e.push({
       id: "reporting",
       name: "Reporting",
       group: es.v0.EXPERIMENTS,
-      render: () => (0, a.jsx)(R.Z, {
+      render: () => (0, a.jsx)(w.Z, {
         devSettingsCategory: _.zU.REPORTING
       })
     }), e.push({
       id: "permissions",
       name: "Permissions",
       group: es.v0.USERS,
-      render: () => (0, a.jsx)(K.Z, {})
+      render: () => (0, a.jsx)(q.Z, {})
     }), e.push({
       id: "modals",
       name: "Modals",
       group: es.v0.UI,
-      render: () => (0, a.jsx)(G.Z, {})
+      render: () => (0, a.jsx)(z.Z, {})
     }), e.push({
       id: "layers",
       name: "Layers",
       group: es.v0.UI,
-      render: () => (0, a.jsx)(M.Z, {})
+      render: () => (0, a.jsx)(U.Z, {})
     }), e.push({
       id: "affinity",
       name: "Affinity",
@@ -238,9 +238,9 @@ function eh(e) {
       render: () => (0, a.jsx)(p.Z, {})
     })), e.push({
       id: "dismissible_content",
-      name: "Recent DCs",
+      name: "DCF Overrides",
       group: es.v0.DISMISSIBLE_CONTENT,
-      render: () => (0, a.jsx)(J.Z, {})
+      render: () => (0, a.jsx)(T.Z, {})
     }), e.push({
       id: "dcf",
       name: "DCF Events",
@@ -250,22 +250,22 @@ function eh(e) {
       id: "perks",
       name: "Perks",
       group: es.v0.PREMIUM,
-      render: () => (0, a.jsx)(W.Z, {})
+      render: () => (0, a.jsx)(K.Z, {})
     }), e.push({
       id: "potions",
       name: "Potions",
       group: es.v0.PREMIUM,
-      render: () => (0, a.jsx)(q.Z, {})
+      render: () => (0, a.jsx)(Y.Z, {})
     }), window.GLOBAL_ENV.RELEASE_CHANNEL.startsWith("staging") && (e.push({
       id: "offers",
       name: "Offers",
       group: es.v0.PREMIUM,
-      render: () => (0, a.jsx)(z.Z, {})
+      render: () => (0, a.jsx)(B.Z, {})
     }), e.push({
       id: "payments",
       name: "Payments",
       group: es.v0.BILLING,
-      render: () => (0, a.jsx)(V.Z, {})
+      render: () => (0, a.jsx)(H.Z, {})
     }), e.push({
       id: "subscriptions",
       name: "Subscriptions",
@@ -275,7 +275,7 @@ function eh(e) {
       id: "fractional_nitro",
       name: "Fractional Nitro",
       group: es.v0.PREMIUM,
-      render: () => (0, a.jsx)(k.Z, {})
+      render: () => (0, a.jsx)(R.Z, {})
     })), e.push({
       id: "gifting_intent",
       name: "Gifting Intent",
@@ -290,17 +290,17 @@ function eh(e) {
       id: "krisp_tester",
       name: "Krisp Tester",
       group: es.v0.AUDIO_VIDEO,
-      render: () => (0, a.jsx)(A.Z, {})
+      render: () => (0, a.jsx)(D.Z, {})
     }), e.push({
       id: "skill_trees",
       name: "Skill Trees",
       group: es.v0.GUILDS,
-      render: () => (0, a.jsx)(w.Z, {})
+      render: () => (0, a.jsx)(Z.Z, {})
     }), e.push({
       id: "language",
       name: "Language",
       group: es.v0.UI,
-      render: () => (0, a.jsx)(D.Z, {})
+      render: () => (0, a.jsx)(L.Z, {})
     }), e
   }, []), {
     TabBar: i,
@@ -321,7 +321,7 @@ function eh(e) {
     properties: {
       panel: d
     }
-  }), (0, a.jsxs)(L.Gk, {
+  }), (0, a.jsxs)(M.Gk, {
     children: [(0, a.jsxs)(h.ZP, {
       className: eu.headerBar,
       toolbar: n ? null : (0, a.jsxs)(a.Fragment, {
@@ -354,7 +354,7 @@ function eh(e) {
       }), (0, a.jsx)(h.ZP.Title, {
         children: "DevTools"
       })]
-    }), (0, a.jsx)(i, {}), o(), (0, a.jsx)(L.Br, {
+    }), (0, a.jsx)(i, {}), o(), (0, a.jsx)(M.Br, {
       className: ed.layerContainer
     })]
   })

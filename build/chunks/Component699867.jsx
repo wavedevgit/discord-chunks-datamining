@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 699867, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 93886 **/
+/** chunk id: 699867, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
 }), require("./388685.js");
@@ -13,11 +12,11 @@ function s(e) {
   let {
     items: t,
     onChange: n
-  } = e, [s, l] = (0, a.Z)(), c = (0, i.useCallback)(e => {
-    l(e), null == n || n(e)
-  }, [l, n]);
-  return (0, r.jsx)(r.Fragment, {
-    children: t.filter(e => isNaN(Number(e))).map(e => (0, r.jsx)(o.Z, {
+  } = e, [s, o] = (0, l.Z)(), c = (0, r.useCallback)(e => {
+    o(e), null == n || n(e)
+  }, [o, n]);
+  return (0, a.jsx)(a.Fragment, {
+    children: t.filter(e => isNaN(Number(e))).map(e => (0, a.jsx)(i.Z, {
       content: e,
       onChange: c
     }, e))

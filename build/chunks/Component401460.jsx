@@ -2,7 +2,7 @@
 /** chunk id: 401460, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => N
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,17 +10,19 @@ var Chunk951288 = require("./951288.js"),
   o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
+  Chunk704215 = require("./704215.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk583901 = require("./583901.jsx"),
+  Chunk243778 = require("./243778.jsx"),
   Chunk997945 = require("./997945.js"),
   Chunk630117 = require("./630117.jsx"),
   Chunk441319 = require("./441319.js"),
-  Chunk981631 = require("./981631.js"),
+  Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk63224 = require("./63224.js");
 
-function E(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,20 +31,20 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      E(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
 }
 
-function y(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,46 +55,54 @@ function y(e, t) {
   return n
 }
 
-function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = () => [Chunk388032.intl.string(Chunk388032.t.EgWTY2), Chunk388032.intl.string(Chunk388032.t.umBn5e), Chunk388032.intl.string(Chunk388032.t.dG1wDw), Chunk388032.intl.string(Chunk388032.t.SesI4e), Chunk388032.intl.string(Chunk388032.t.RnMLvr)],
-  I = () => {
+let T = () => [Chunk388032.intl.string(Chunk388032.t.EgWTY2), Chunk388032.intl.string(Chunk388032.t.umBn5e), Chunk388032.intl.string(Chunk388032.t.dG1wDw), Chunk388032.intl.string(Chunk388032.t.SesI4e), Chunk388032.intl.string(Chunk388032.t.RnMLvr)],
+  S = () => {
     var e;
-    return null != (e = l().sample(v())) ? module : Chunk388032.intl.string(Chunk388032.t.EgWTY2)
+    return null != (e = l().sample(T())) ? module : Chunk388032.intl.string(Chunk388032.t.EgWTY2)
+  },
+  A = (e, t) => {
+    let [n, r] = (0, _.US)([c.z.HALLOWEEN_APP_ICONS_TRICK_ICON_WEB_BADGE]), [i, a] = (0, _.US)([c.z.HALLOWEEN_APP_ICONS_TREAT_ICON_WEB_BADGE]);
+    return e === p.Ru.TRICK ? [!t && n === c.z.HALLOWEEN_APP_ICONS_TRICK_ICON_WEB_BADGE, () => r(g.L.TAKE_ACTION)] : e === p.Ru.TREAT ? [!t && i === c.z.HALLOWEEN_APP_ICONS_TREAT_ICON_WEB_BADGE, () => a(g.L.TAKE_ACTION)] : [false, () => {}]
   };
 
-function T(e) {
+function C(e) {
   let {
     id: t,
     className: n,
     onSelect: a,
     isSelected: s = false,
     tabIndex: l,
-    children: _,
-    locked: m = false
-  } = e, [E, y] = i.useState((0, p.aW)(t).name), v = t === f.Ru.PIRATE, T = (0, c.jm)({
-    label: E,
+    children: c,
+    locked: _ = false
+  } = e, [h, g] = i.useState((0, m.aW)(t).name), E = t === p.Ru.PIRATE, [y, v] = A(t, s), T = i.useCallback(() => {
+    s || (y && v(), null == a || a(t))
+  }, [s, y, v, a, t]), C = (0, u.jm)({
+    label: h,
     isSelected: s
   });
-  return (0, r.jsx)(u.ua7, {
-    text: E,
-    onTooltipShow: () => v && y(I()),
+  return (0, r.jsx)(d.ua7, {
+    text: h,
+    onTooltipShow: () => E && g(S()),
     children: e => (0, r.jsxs)("div", {
-      className: g.appIconSelectionContainer,
-      children: [(0, r.jsx)(u.P3F, O(b({}, e, T), {
-        tabIndex: null != l ? l : T.tabIndex,
-        className: o()(g.appIconSelection, {
-          [g.selected]: s
+      className: b.appIconSelectionContainer,
+      children: [(0, r.jsx)(d.P3F, I(O({}, e, C), {
+        tabIndex: null != l ? l : C.tabIndex,
+        className: o()(b.appIconSelection, {
+          [b.selected]: s
         }, n),
-        onClick: s ? h.dG4 : () => null == a ? true : a(t),
-        children: _
-      })), s && (0, r.jsx)(d.oK, {}), m && (0, r.jsx)("div", {
-        className: g.lockedBadgeContainer,
-        children: (0, r.jsx)(u.mBM, {
-          className: g.lockedBadge,
+        onClick: T,
+        children: c
+      })), s && (0, r.jsx)(f.oK, {}), y && (0, r.jsx)("div", {
+        className: b.redCircle
+      }), _ && (0, r.jsx)("div", {
+        className: b.lockedBadgeContainer,
+        children: (0, r.jsx)(d.mBM, {
+          className: b.lockedBadge,
           color: "currentColor"
         })
       })]
@@ -100,7 +110,7 @@ function T(e) {
   })
 }
 
-function S(e) {
+function N(e) {
   let {
     icon: t,
     isSelected: n,
@@ -109,16 +119,16 @@ function S(e) {
     onSelect: o,
     locked: s
   } = e;
-  return (0, r.jsx)(T, {
+  return (0, r.jsx)(C, {
     onSelect: i ? true : o,
     isSelected: n,
     id: t.id,
-    className: i ? g.disabled : true,
+    className: i ? b.disabled : true,
     tabIndex: a,
     locked: s,
-    children: (0, r.jsx)(_.Z, {
+    children: (0, r.jsx)(h.Z, {
       id: t.id,
-      width: p.M9
+      width: m.M9
     })
   })
 }
