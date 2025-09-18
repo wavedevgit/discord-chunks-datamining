@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-/** chunk id: 925527, original params: e (module,exports,re quire) **/
+/** chunk id: 258146, original params: e (module,exports,re quire) **/
 ! function(t, n) {
   e.exports = n()
 }(0, () => (() => {
@@ -3045,37 +3045,39 @@
             d = e.isTouchScrollEnabled,
             f = true !== d && d,
             _ = e.layoutScaleFactor,
-            p = true === _ ? 1 : _;
+            p = true === _ ? 1 : _,
+            h = e.listenOnDocumentBody,
+            m = e.eventCapture;
           if (!t || !o.length || !s || !l || !n || "undefined" == typeof window) return null;
-          var h = null,
-            m = false,
-            g = (function(e) {
-              if (m && e instanceof MouseEvent) {
-                "mouseup" == e.type && (m = false);
+          var g = null,
+            E = false,
+            b = (function(e) {
+              if (E && e instanceof MouseEvent) {
+                "mouseup" == e.type && (E = false);
                 return
               }
-              m = f && "touchend" === e.type && "touchstart" === h, h = e.type;
+              E = f && "touchend" === e.type && "touchstart" === g, g = e.type;
               var r = t.getBoundingClientRect(),
                 a = i(e, f),
                 s = a.clientX,
                 d = a.clientY;
               if (s || d) {
                 var _ = s - r.left,
-                  g = d - r.top;
-                if (_ >= 0 && _ <= r.width && g >= 0 && g <= r.height || ["mouseleave", "mouseout"].includes(e.type)) {
-                  var E = l.computeAlignment(c, u, {
+                  h = d - r.top;
+                if (_ >= 0 && _ <= r.width && h >= 0 && h <= r.height || ["mouseleave", "mouseout"].includes(e.type)) {
+                  var m = l.computeAlignment(c, u, {
                       minX: 0,
                       minY: 0,
                       maxX: r.width,
                       maxY: r.height
                     }, n.bounds, p),
                     b = new l.Mat2D;
-                  E.invert(b);
-                  var y = new l.Vec2D(_, g),
+                  m.invert(b);
+                  var y = new l.Vec2D(_, h),
                     O = l.mapXY(b, y),
                     v = O.x(),
                     I = O.y();
-                  switch (O.delete(), b.delete(), y.delete(), E.delete(), e.type) {
+                  switch (O.delete(), b.delete(), y.delete(), m.delete(), e.type) {
                     case "mouseleave":
                     case "mouseout":
                       for (var T = 0, S = o; T < S.length; T++) {
@@ -3108,14 +3110,15 @@
                   }
                 }
               }
-            }).bind(r);
-          return t.ownerDocument.body.addEventListener("mouseover", g, true), t.ownerDocument.body.addEventListener("mouseenter", g, true), t.ownerDocument.body.addEventListener("mouseout", g, true), t.ownerDocument.body.addEventListener("mouseleave", g, true), t.ownerDocument.body.addEventListener("mousemove", g, true), t.ownerDocument.body.addEventListener("mousedown", g, true), t.ownerDocument.body.addEventListener("mouseup", g, true), t.addEventListener("touchmove", g, {
+            }).bind(r),
+            y = h ? t.ownerDocument.body : t;
+          return y.addEventListener("mouseover", b, m), y.addEventListener("mouseenter", b, m), y.addEventListener("mouseout", b, m), y.addEventListener("mouseleave", b, m), y.addEventListener("mousemove", b, m), y.addEventListener("mousedown", b, m), y.addEventListener("mouseup", b, m), t.addEventListener("touchmove", b, {
               passive: f
-            }), t.addEventListener("touchstart", g, {
+            }), t.addEventListener("touchstart", b, {
               passive: f
-            }), t.addEventListener("touchend", g),
+            }), t.addEventListener("touchend", b),
             function() {
-              t.ownerDocument.body.removeEventListener("mouseover", g, true), t.ownerDocument.body.removeEventListener("mouseenter", g, true), t.ownerDocument.body.removeEventListener("mouseout", g, true), t.ownerDocument.body.removeEventListener("mouseleave", g, true), t.ownerDocument.body.removeEventListener("mousemove", g, true), t.ownerDocument.body.removeEventListener("mousedown", g, true), t.ownerDocument.body.removeEventListener("mouseup", g, true), t.removeEventListener("touchmove", g), t.removeEventListener("touchstart", g), t.removeEventListener("touchend", g)
+              y.removeEventListener("mouseover", b, m), y.removeEventListener("mouseenter", b, m), y.removeEventListener("mouseout", b, m), y.removeEventListener("mouseleave", b, m), y.removeEventListener("mousemove", b, m), y.removeEventListener("mousedown", b, m), y.removeEventListener("mouseup", b, m), t.removeEventListener("touchmove", b), t.removeEventListener("touchstart", b), t.removeEventListener("touchend", b)
             }
         }
     }, (e, t, n) => {
@@ -3973,7 +3976,7 @@
       x = function() {
         function t(e) {
           var t, n = this;
-          this.loaded = false, this.destroyed = false, this._observed = null, this.readyForPlaying = false, this.artboard = null, this.eventCleanup = null, this.shouldDisableRiveListeners = false, this.automaticallyHandleEvents = false, this.enableRiveAssetCDN = true, this._volume = 1, this._artboardWidth = true, this._artboardHeight = true, this._devicePixelRatioUsed = 1, this._hasZeroSize = false, this._audioEventListener = null, this._boundDraw = null, this.eventTarget = e.eventTarget, this._viewModelInstance = null, this._dataEnums = null, this.durations = [], this.frameTimes = [], this.frameCount = 0, this.isTouchScrollEnabled = false, this.onCanvasResize = function(e) {
+          this.loaded = false, this.destroyed = false, this._observed = null, this.readyForPlaying = false, this.artboard = null, this.eventCleanup = null, this.shouldDisableRiveListeners = false, this.automaticallyHandleEvents = false, this.enableRiveAssetCDN = true, this._volume = 1, this._artboardWidth = true, this._artboardHeight = true, this._devicePixelRatioUsed = 1, this._hasZeroSize = false, this._audioEventListener = null, this._boundDraw = null, this.eventTarget = e.eventTarget, this.eventCapture = null == e.eventCapture || e.eventCapture, this.listenOnDocumentBody = null != e.listenOnDocumentBody && e.listenOnDocumentBody, null != e.eventTarget && (this.listenOnDocumentBody = false), this._viewModelInstance = null, this._dataEnums = null, this.durations = [], this.frameTimes = [], this.frameCount = 0, this.isTouchScrollEnabled = false, this.onCanvasResize = function(e) {
             var t = n._hasZeroSize !== e;
             n._hasZeroSize = e, e ? n._layout.maxX && n._layout.maxY || n.resizeToCanvas() : t && n.resizeDrawingSurfaceToCanvas()
           }, this.renderSecondTimer = 0, this._boundDraw = this.draw.bind(this), this.canvas = e.canvas, e.canvas.constructor === HTMLCanvasElement && (this._observed = w.add(this.canvas, this.onCanvasResize)), this.src = e.src, this.buffer = e.buffer, this.riveFile = e.riveFile, this.layout = null != (t = e.layout) ? t : new O, this.shouldDisableRiveListeners = !!e.shouldDisableRiveListeners, this.isTouchScrollEnabled = !!e.isTouchScrollEnabled, this.automaticallyHandleEvents = !!e.automaticallyHandleEvents, this.enableRiveAssetCDN = true === e.enableRiveAssetCDN || e.enableRiveAssetCDN, this.eventManager = new A, e.onLoad && this.on(o.Load, e.onLoad), e.onLoadError && this.on(o.LoadError, e.onLoadError), e.onPlay && this.on(o.Play, e.onPlay), e.onPause && this.on(o.Pause, e.onPause), e.onStop && this.on(o.Stop, e.onStop), e.onLoop && this.on(o.Loop, e.onLoop), e.onStateChange && this.on(o.StateChange, e.onStateChange), e.onAdvance && this.on(o.Advance, e.onAdvance), e.onload && !e.onLoad && this.on(o.Load, e.onload), e.onloaderror && !e.onLoadError && this.on(o.LoadError, e.onloaderror), e.onplay && !e.onPlay && this.on(o.Play, e.onplay), e.onpause && !e.onPause && this.on(o.Pause, e.onpause), e.onstop && !e.onStop && this.on(o.Stop, e.onstop), e.onloop && !e.onLoop && this.on(o.Loop, e.onloop), e.onstatechange && !e.onStateChange && this.on(o.StateChange, e.onstatechange), e.assetLoader && (this.assetLoader = e.assetLoader), this.taskQueue = new C(this.eventManager), this.init({
@@ -4039,6 +4042,8 @@
             var i = this.canvas;
             null != this.eventTarget && (i = this.eventTarget), this.eventCleanup = (0, _.registerTouchInteractions)({
               canvas: i,
+              listenOnDocumentBody: this.listenOnDocumentBody,
+              eventCapture: this.eventCapture,
               artboard: this.artboard,
               stateMachines: n,
               renderer: this.renderer,

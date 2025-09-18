@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk252762 = require("./252762.js"),
+  Chunk943239 = require("./943239.js"),
   Chunk995803 = require("./995803.js"),
   Chunk213305 = require("./213305.js"),
   Chunk402453 = require("./402453.jsx"),
@@ -27,76 +27,80 @@ function u(e) {
     artboardProperties: E,
     dataBinding: b,
     touchScrollEnabled: y = true,
-    dynamicDataBinding: O
-  } = e, v = i.useContext(s.S), I = d(), [T, S] = i.useState(true), A = i.useRef(null), {
-    rive: C,
-    RiveComponent: N
+    dynamicDataBinding: O,
+    listenOnDocumentBody: v,
+    eventCapture: I
+  } = e, T = i.useContext(s.S), S = d(), [A, C] = i.useState(true), N = i.useRef(null), {
+    rive: R,
+    RiveComponent: P
   } = (0, o.useRive)({
     eventTarget: null == p ? true : p.current,
     buffer: t,
     autoplay: n,
-    stateMachines: T,
+    stateMachines: A,
     artboard: h,
     useOffscreenRenderer: true,
     layout: new o.Layout({
       fit: null != l ? c.M[l] : o.Fit.Cover,
       alignment: null != u ? c.Y[u] : o.Alignment.Center
     }),
-    isTouchScrollEnabled: y
+    isTouchScrollEnabled: y,
+    listenOnDocumentBody: v,
+    eventCapture: I
   });
   i.useImperativeHandle(g, () => ({
-    play: () => null == C ? true : C.play(),
-    pause: () => null == C ? true : C.pause(),
-    stop: () => null == C ? true : C.stop()
-  }), [C]), f({
-    rive: C,
+    play: () => null == R ? true : R.play(),
+    pause: () => null == R ? true : R.pause(),
+    stop: () => null == R ? true : R.stop()
+  }), [R]), f({
+    rive: R,
     artboard: h,
     artboardProperties: E,
     dataBinding: b,
     dynamicDataBinding: O
   }), i.useEffect(() => {
-    if (null != C && "short-loop" === m && v.reducedMotion.enabled) {
+    if (null != R && "short-loop" === m && T.reducedMotion.enabled) {
       let e = () => {
-          C.isPlaying && (A.current = setTimeout(() => {
-            C.pause()
+          R.isPlaying && (N.current = setTimeout(() => {
+            R.pause()
           }, 5e3))
         },
         t = () => {
-          clearTimeout(A.current)
+          clearTimeout(N.current)
         };
-      return C.on(o.EventType.Play, e), C.on(o.EventType.Pause, t), C.on(o.EventType.Stop, t), () => {
-        C.off(o.EventType.Play, e), C.off(o.EventType.Pause, t), C.off(o.EventType.Stop, t)
+      return R.on(o.EventType.Play, e), R.on(o.EventType.Pause, t), R.on(o.EventType.Stop, t), () => {
+        R.off(o.EventType.Play, e), R.off(o.EventType.Pause, t), R.off(o.EventType.Stop, t)
       }
     }
-  }, [C, m, v.reducedMotion.enabled]), i.useLayoutEffect(() => {
-    null != C && "layout" === l && (C.resizeDrawingSurfaceToCanvas(), setTimeout(() => {
-      C.resizeDrawingSurfaceToCanvas()
+  }, [R, m, T.reducedMotion.enabled]), i.useLayoutEffect(() => {
+    null != R && "layout" === l && (R.resizeDrawingSurfaceToCanvas(), setTimeout(() => {
+      R.resizeDrawingSurfaceToCanvas()
     }, 100))
-  }, [C, l]), i.useEffect(() => {
-    null != C && null == T && (S(C.stateMachineNames), C.reset({
-      stateMachines: C.stateMachineNames,
+  }, [R, l]), i.useEffect(() => {
+    null != R && null == A && (C(R.stateMachineNames), R.reset({
+      stateMachines: R.stateMachineNames,
       autoplay: n,
       artboard: h,
       autoBind: true
-    }), C.setupRiveListeners())
-  }, [C, n, T, h]);
-  let R = i.useRef(0);
+    }), R.setupRiveListeners())
+  }, [R, n, A, h]);
+  let w = i.useRef(0);
   i.useEffect(() => {
-    if (null == C) return;
-    C.play();
+    if (null == R) return;
+    R.play();
     let e = t => {
-      null != t.data && "number" == typeof t.data && (R.current = t.data, t.data > 0 && ("halt" === m && v.reducedMotion.enabled && C.isPlaying && C.pause(), C.off(o.EventType.Advance, e)))
+      null != t.data && "number" == typeof t.data && (w.current = t.data, t.data > 0 && ("halt" === m && T.reducedMotion.enabled && R.isPlaying && R.pause(), R.off(o.EventType.Advance, e)))
     };
-    return C.on(o.EventType.Advance, e), () => {
-      C.off(o.EventType.Advance, e)
+    return R.on(o.EventType.Advance, e), () => {
+      R.off(o.EventType.Advance, e)
     }
-  }, [C, v.reducedMotion.enabled, m]);
-  let P = i.useRef(false);
+  }, [R, T.reducedMotion.enabled, m]);
+  let D = i.useRef(false);
   return i.useEffect(() => {
-    if (null != C) return !I && P.current && C.isPlaying && R.current > 0 ? C.pause() : I && !C.isPlaying && P.current && C.play(), () => {
-      null != C && I && (P.current = null != C.frameRequestId)
+    if (null != R) return !S && D.current && R.isPlaying && w.current > 0 ? R.pause() : S && !R.isPlaying && D.current && R.play(), () => {
+      null != R && S && (D.current = null != R.frameRequestId)
     }
-  }, [C, I]), (0, r.jsx)(N, {
+  }, [R, S]), (0, r.jsx)(P, {
     className: a,
     style: _
   })
@@ -165,4 +169,4 @@ function f(e) {
     }), h.current = u
   }, [u, t, n, r, f, null == t ? true : t.viewModelInstance, _, p])
 }
-Chunk995803.RuntimeLoader.setWasmUrl(Chunk252762)
+Chunk995803.RuntimeLoader.setWasmUrl(Chunk943239)

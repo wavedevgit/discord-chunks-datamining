@@ -123,7 +123,8 @@ let I = 1e3,
           dataBinding: {
             ExitTrigger: G,
             EntryTrigger: Z
-          }
+          },
+          listenOnDocumentBody: true
         })
       }), (0, r.jsx)("div", {
         className: "exit" === I ? y.exitAnimationContainer : y.entryAnimationContainer,
