@@ -384,10 +384,11 @@ function ep(e) {
     trackingArea: m.j_.PLAY,
     onClick: () => {
       d.Z.launch({
-        applicationId: et
+        applicationId: et,
+        embedded: j
       })
     }
-  } : null != el ? el : true, [ei, et, el]), ey = (0, b.G)(S), eO = i.useMemo(() => null != ee ? ee : null != ey && j ? ey : true, [j, ee, ey]), ev = i.useMemo(() => {
+  } : null != el ? el : true, [j, ei, et, el]), ey = (0, b.G)(S), eO = i.useMemo(() => null != ee ? ee : null != ey && j ? ey : true, [j, ee, ey]), ev = i.useMemo(() => {
     let e = [];
     return z || null == eE ? z && null != eb && e.push(eb) : e.push(eE), e
   }, [eb, z, eE]), eI = i.useMemo(() => ev.some(e => e.trackingArea === m.j_.CLOUD_PLAY), [ev]);

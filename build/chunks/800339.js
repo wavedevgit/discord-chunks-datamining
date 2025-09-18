@@ -12,5 +12,6 @@ module.exports = {
   underlineOnHover: "underlineOnHover__5dec7",
   channel: "channel__5dec7",
   perksDemoContainer: "perksDemoContainer__5dec7",
-  perksDemoText: "perksDemoText__5dec7"
+  perksDemoText: "perksDemoText__5dec7",
+  frameApplicationNameTitleClickable: "frameApplicationNameTitleClickable__5dec7"
 }

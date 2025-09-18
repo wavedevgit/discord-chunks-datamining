@@ -63,7 +63,9 @@ class h {
         key: t,
         timestamp: n
       } = e;
-      return this.track(t, n)
+      return this.track(t, {
+        timestamp: n
+      })
     }), this.markDirty()
   }
   markDirty() {
@@ -72,18 +74,22 @@ class h {
   isDirty() {
     return this.dirty
   }
-  track(e, t) {
+  track(e) {
+    let {
+      timestamp: t,
+      usesSinceLastTrack: n
+    } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
     if (null == e) return;
-    let n = Object.hasOwn(this.usageHistory, e) ? this.usageHistory[e] : true;
-    if (null == n) n = {
-      totalUses: 1,
+    let r = Object.hasOwn(this.usageHistory, e) ? this.usageHistory[e] : true;
+    if (null == r) r = {
+      totalUses: null != n ? n : 1,
       recentUses: [null != t ? t : Date.now()],
       frecency: false,
       score: 0
     };
     else
-      for (n.frecency = false, n.totalUses += 1, null == t ? n.recentUses.push(Date.now()) : (n.recentUses.push(t), n.recentUses.sort()); n.recentUses.length > this.maxSamples;) n.recentUses.shift();
-    this.usageHistory[e] = n, this.markDirty()
+      for (r.frecency = false, r.totalUses += null != n ? n : 1, null == t ? r.recentUses.push(Date.now()) : (r.recentUses.push(t), r.recentUses.sort()); r.recentUses.length > this.maxSamples;) r.recentUses.shift();
+    this.usageHistory[e] = r, this.markDirty()
   }
   getEntry(e) {
     return null == e ? null : (this.dirty && this.compute(), Object.prototype.hasOwnProperty.call(this.usageHistory, e) ? this.usageHistory[e] : true)
