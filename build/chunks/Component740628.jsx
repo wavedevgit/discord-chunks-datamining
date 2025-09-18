@@ -32,7 +32,7 @@ function b(e) {
     channelId: a,
     onClose: c
   } = e;
-  return n === j.oh.ACTIVITY ? (0, l.jsx)(m.Z, {
+  return n === j.oh.ACTIVITY ? (0, l.jsx)(f.Z, {
     user: i,
     currentUser: r,
     guildId: s,
@@ -54,7 +54,7 @@ function b(e) {
     guildId: s,
     subsection: t,
     onClose: c
-  }) : (0, l.jsx)(f.Z, {
+  }) : (0, l.jsx)(m.Z, {
     user: i,
     currentUser: r,
     displayProfile: o,
@@ -67,8 +67,8 @@ function y(e) {
   var n, t, d;
   let {
     user: u,
-    currentUser: m,
-    displayProfile: f,
+    currentUser: f,
+    displayProfile: m,
     guildId: p,
     items: h,
     initialSection: y = j.oh.USER_INFO,
@@ -141,8 +141,8 @@ function y(e) {
       section: N,
       subsection: T,
       user: u,
-      currentUser: m,
-      displayProfile: f,
+      currentUser: f,
+      displayProfile: m,
       guildId: p,
       onClose: I
     })]

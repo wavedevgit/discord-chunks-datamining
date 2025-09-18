@@ -29,8 +29,8 @@ var Chunk512722 = require("./512722.js"),
   Chunk643879 = require("./643879.js"),
   Chunk350327 = require("./350327.js"),
   Chunk621853 = require("./621853.js"),
-  Chunk447448 = require("./447448.js"),
   Chunk687158 = require("./687158.js"),
+  Chunk477448 = require("./477448.js"),
   Chunk25990 = require("./25990.js"),
   Chunk594174 = require("./594174.js"),
   Chunk74538 = require("./74538.js"),
@@ -114,7 +114,7 @@ function U() {
     ea = (null != (n = null == (e = Q.global_name) ? true : module.length) ? require : 0) > 0 ? Q.global_name : null != (i = null == $ ? true : $.nick) ? Chunk512722 : [],
     eo = (null != (L = null == (t = Q.bio) ? true : exports.length) ? L : 0) > 0 ? Q.bio : null != (M = null == $ ? true : $.bio) ? M : [],
     es = (0, Chunk396402.w)(),
-    el = (0, Chunk447448.k)({
+    el = (0, Chunk477448.Z)({
       location: "DefaultCustomizationSections"
     }),
     ec = () => ee ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {

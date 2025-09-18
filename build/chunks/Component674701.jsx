@@ -171,6 +171,7 @@ function L(e) {
       }), (0, r.jsxs)("div", {
         className: D.buttonContainer,
         children: [null != G && (0, r.jsx)(u.zx, {
+          "data-migration-pending": true,
           className: o()(D.button, ei),
           onClick: z,
           size: u.zx.Sizes.MEDIUM,
@@ -185,6 +186,7 @@ function L(e) {
             })
           })
         }), (0, r.jsx)(u.zx, {
+          "data-migration-pending": true,
           className: D.button,
           onClick: K,
           size: u.zx.Sizes.MEDIUM,

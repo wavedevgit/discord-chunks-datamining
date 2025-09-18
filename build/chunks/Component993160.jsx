@@ -38,7 +38,7 @@ function h(e) {
     gameFriends: O,
     hasOutgoingPendingGameFriends: I,
     hasIncomingPendingGameFriends: Z
-  } = (0, f.H)({
+  } = (0, m.H)({
     userId: n.id
   }), P = O.length > 0 || I || Z;
   return v === p.OGo.BLOCKED ? null : n.id === t.id ? (0, l.jsxs)(l.Fragment, {
@@ -88,7 +88,7 @@ function h(e) {
       color: i.zx.Colors.BRAND,
       onClose: r.Z.popAll,
       autoFocus: true
-    }), (0, l.jsx)(m.g, {
+    }), (0, l.jsx)(f.g, {
       type: "icon",
       user: n,
       relationshipType: v,
@@ -108,7 +108,7 @@ function h(e) {
       userId: n.id,
       onClose: r.Z.popAll,
       autoFocus: true
-    }), (0, l.jsx)(m.k9, {
+    }), (0, l.jsx)(f.k9, {
       type: "icon",
       user: n,
       analyticsLocation: b,
@@ -127,7 +127,7 @@ function h(e) {
       themeColor: "secondary"
     })]
   }) : (0, l.jsxs)(l.Fragment, {
-    children: [(0, l.jsx)(m.Z7, {
+    children: [(0, l.jsx)(f.Z7, {
       type: "text",
       userId: n.id,
       analyticsLocation: b,

@@ -66,13 +66,13 @@ let j = {
     let {
       className: n,
       onAutoHide: t
-    } = e, r = (0, u.be)(), m = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), [f, h] = i.useState(false), [v, g] = i.useState(null);
+    } = e, r = (0, u.be)(), f = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), [m, h] = i.useState(false), [v, g] = i.useState(null);
     i.useEffect(() => {
       null !== r ? (h(true), g(j[r]), c.uvj.announce(j[r].message)) : h(false)
     }, [r]);
-    let b = (0, c.Yzy)(f, {
+    let b = (0, c.Yzy)(m, {
       from: {
-        transform: m ? "translateY(0)" : "translateY(-12px)",
+        transform: f ? "translateY(0)" : "translateY(-12px)",
         opacity: 0
       },
       enter: {
@@ -80,7 +80,7 @@ let j = {
         opacity: 1
       },
       leave: {
-        transform: m ? "translateY(0)" : "translateY(-12px)",
+        transform: f ? "translateY(0)" : "translateY(-12px)",
         opacity: 0
       },
       config: {
@@ -91,13 +91,13 @@ let j = {
       }
     }, "animate-always");
     return i.useEffect(() => {
-      if (f) {
+      if (m) {
         let e = setTimeout(() => {
           null == t || t()
         }, 2e3);
         return () => clearTimeout(e)
       }
-    }, [f, t]), (0, l.jsx)(l.Fragment, {
+    }, [m, t]), (0, l.jsx)(l.Fragment, {
       children: b((e, t) => t && null !== v && (0, l.jsx)(s.animated.div, {
         className: o()(n, p.toastContainer),
         style: e,

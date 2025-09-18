@@ -43,10 +43,10 @@ function Z(e) {
     live: A,
     recent: S,
     stream: C
-  } = (0, m.Z)(n.id), {
+  } = (0, f.Z)(n.id), {
     voiceChannel: w,
     voiceActivity: _
-  } = (0, f.Z)({
+  } = (0, m.Z)({
     userId: n.id,
     guildId: Z
   }), D = (0, i.e7)([s.Z], () => s.Z.isFetchingUserOutbox(n.id)), R = n.id === t.id, L = (0, i.e7)([c.Z, a.Z], () => {

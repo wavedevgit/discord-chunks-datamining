@@ -56,7 +56,7 @@ function Z(e) {
     sourceAnalyticsLocations: S = []
   } = e, C = t === g.ME ? true : t, w = (0, i.e7)([d.Z], () => d.Z.isBlocked(n.id)), {
     analyticsLocations: _
-  } = (0, a.ZP)([...S, w ? s.Z.BLOCKED_PROFILE_MODAL : s.Z.IGNORED_PROFILE_MODAL]), D = (0, m.ZB)({
+  } = (0, a.ZP)([...S, w ? s.Z.BLOCKED_PROFILE_MODAL : s.Z.IGNORED_PROFILE_MODAL]), D = (0, f.ZB)({
     layout: "MODAL_V2",
     userId: n.id,
     showGuildProfile: true,
@@ -75,7 +75,7 @@ function Z(e) {
   });
   return (0, l.jsx)(a.Gt, {
     value: _,
-    children: (0, l.jsx)(m.Mt, {
+    children: (0, l.jsx)(f.Mt, {
       value: D,
       openedAt: E,
       fetchStartedAt: null == L ? true : L.fetchStartedAt,
@@ -132,7 +132,7 @@ function Z(e) {
                 size: r.Ph.MEDIUM,
                 isBlocked: w,
                 onClick: () => {
-                  A(), (0, f.pQ)(I({
+                  A(), (0, m.pQ)(I({
                     action: w ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                     analyticsLocations: _
                   }, D))
@@ -140,7 +140,7 @@ function Z(e) {
               }), (0, l.jsx)(x.Z, {
                 userId: n.id,
                 onClick: () => {
-                  A(), (0, f.pQ)(I({
+                  A(), (0, m.pQ)(I({
                     action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                     analyticsLocations: _
                   }, D))

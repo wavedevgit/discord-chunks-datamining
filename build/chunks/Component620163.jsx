@@ -46,7 +46,7 @@ var Chunk990547 = require("./990547.js"),
   Chunk652380 = require("./652380.jsx"),
   Chunk877109 = require("./877109.jsx"),
   Chunk145158 = require("./145158.js"),
-  Chunk447448 = require("./447448.js"),
+  Chunk172416 = require("./172416.js"),
   Chunk462354 = require("./462354.js"),
   Chunk906467 = require("./906467.js"),
   Chunk857192 = require("./857192.js"),
@@ -168,7 +168,7 @@ let e2 = () => {
   },
   e4 = () => {
     let e = [];
-    return (0, Chunk447448.h)("SettingsRendererConfig") && module.push(Chunk704215.z.WIDGETS_USER_SETTINGS_NEW_BADGE), Chunk594928.J.getCurrentConfig({
+    return (0, Chunk172416.h)("SettingsRendererConfig") && module.push(Chunk704215.z.WIDGETS_USER_SETTINGS_NEW_BADGE), Chunk594928.J.getCurrentConfig({
       location: "SettingsRendererConfig"
     }).enabled && module.push(Chunk704215.z.DISPLAY_NAME_STYLES_NEW_BADGE), module
   },

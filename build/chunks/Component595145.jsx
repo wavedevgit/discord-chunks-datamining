@@ -71,8 +71,8 @@ function ei(e) {
     sessionId: ec,
     initialSection: ed,
     initialSubsection: eu,
-    transitionState: em,
-    customStatusPrompt: ef,
+    transitionState: ef,
+    customStatusPrompt: em,
     openedAt: ep,
     onClose: eh,
     showGuildProfile: ej = true,
@@ -80,7 +80,7 @@ function ei(e) {
     disableActionsForPreview: ev = false
   } = e, {
     analyticsLocations: eg
-  } = (0, m.ZP)([...ex, u.Z.USER_PROFILE_MODAL_V2]), eb = (0, P.ZB)({
+  } = (0, f.ZP)([...ex, u.Z.USER_PROFILE_MODAL_V2]), eb = (0, P.ZB)({
     layout: "MODAL_V2",
     userId: t.id,
     sourceSessionId: ec,
@@ -115,7 +115,7 @@ function ei(e) {
     eD = (0, p.p)({
       location: "UserProfileModalV2"
     }),
-    eR = i.useMemo(() => null != ef ? ef : (0, h.Z)(), [ef]),
+    eR = i.useMemo(() => null != em ? em : (0, h.Z)(), [em]),
     eL = (0, Q.Z)({
       user: t,
       currentUser: ei
@@ -125,7 +125,7 @@ function ei(e) {
     }),
     eU = (0, j.vh)(t.id),
     ek = (0, E.Z)(t.id),
-    eB = (0, f.Dt)(),
+    eB = (0, m.Dt)(),
     eV = et.intl.format(et.t.KRe1Fh, {
       name: eA
     });
@@ -138,7 +138,7 @@ function ei(e) {
     return O.S.subscribe(ee.CkL.SHAKE_PROFILE_MODAL, e), () => {
       O.S.unsubscribe(ee.CkL.SHAKE_PROFILE_MODAL, e), (0, X.L$)(null)
     }
-  }, []), (0, l.jsx)(m.Gt, {
+  }, []), (0, l.jsx)(f.Gt, {
     value: eg,
     children: (0, l.jsx)(P.Mt, {
       value: eb,
@@ -152,7 +152,7 @@ function ei(e) {
           "data-migration-pending": true,
           hideShadow: true,
           className: el.root,
-          transitionState: em,
+          transitionState: ef,
           "aria-labelledby": eB,
           parentComponent: "UserProfileModalV2",
           children: [(0, l.jsxs)(s.UkV, {
@@ -223,7 +223,7 @@ function ei(e) {
                       guildId: er,
                       channelId: eo,
                       themeType: en.l.MODAL_V2,
-                      hasEntered: em === s.Dvm.ENTERED,
+                      hasEntered: ef === s.Dvm.ENTERED,
                       prompt: eD && t.id === ei.id ? eR : null,
                       disableToolbar: ev
                     })]

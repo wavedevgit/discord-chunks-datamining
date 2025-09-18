@@ -100,7 +100,7 @@ function C(e) {
                 themeType: E.l.MODAL
               }), (0, l.jsxs)("div", {
                 className: S.headerInner,
-                children: [(0, l.jsx)(m.Z, {
+                children: [(0, l.jsx)(f.Z, {
                   user: n,
                   displayProfile: G,
                   guildId: F,
@@ -144,7 +144,7 @@ function C(e) {
                   size: "sm",
                   userId: n.id
                 }),
-                tags: (0, l.jsx)(f.Z, {
+                tags: (0, l.jsx)(m.Z, {
                   displayProfile: G,
                   themeType: E.l.MODAL,
                   onClose: B

@@ -9,11 +9,11 @@ var Chunk296009 = require("./296009.js"),
   Chunk481060 = require("./481060.js"),
   Chunk592183 = require("./592183.js"),
   Chunk86419 = require("./86419.js"),
-  Chunk447448 = require("./447448.js"),
+  Chunk172416 = require("./172416.js"),
   Chunk667108 = require("./667108.js");
 
 function d() {
-  let e = (0, Chunk447448.k)({
+  let e = (0, Chunk172416.U)({
       location: "DevToolsWidgetsPanel",
       autoTrackExposure: false
     }),

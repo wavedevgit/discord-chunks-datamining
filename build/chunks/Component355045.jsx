@@ -132,6 +132,7 @@ let T = function(e) {
           })
         })
       }), E.ZP.hasFreeBoosts(S, N) || E.ZP.isPremium(S, O.p9.TIER_2) ? (0, r.jsxs)(c.zx, {
+        "data-migration-pending": true,
         className: o()(I.guildBoostCta, I.guildBoostCtaSecondary),
         innerClassName: o()(I.__invalid_guildBoostCtaContent, I.guildBoostCtaGiftContent),
         look: c.zx.Looks.OUTLINED,
@@ -144,6 +145,7 @@ let T = function(e) {
           className: I.guildBoostCtaGiftIcon
         }), v.intl.string(v.t["8MYSQ0"])]
       }) : (0, r.jsx)(c.zx, {
+        "data-migration-pending": true,
         className: o()(I.guildBoostCta, I.guildBoostCtaSecondary),
         innerClassName: o()(I.__invalid_guildBoostCtaContent, I.__invalid_guildBoostCtaSubscribeContent),
         look: c.zx.Looks.OUTLINED,

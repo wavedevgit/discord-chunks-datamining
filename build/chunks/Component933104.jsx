@@ -193,6 +193,7 @@ function w(e) {
     }
     return e
   }({
+    "data-migration-pending": true,
     asset: (0, r.jsxs)("div", {
       className: x.imageContainer,
       children: [t, (0, r.jsx)(c.olH, {
