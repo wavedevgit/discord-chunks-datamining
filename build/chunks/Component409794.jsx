@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk793030 = require("./793030.js"),
+  Chunk777207 = require("./777207.jsx"),
   Chunk200269 = require("./200269.jsx"),
   Chunk830922 = require("./830922.js");
 
@@ -58,7 +58,7 @@ let p = Chunk647438.forwardRef(function(e, t) {
   } = e, a = f(e, ["variant", "className"]);
   let u = (0, l.x)(),
     _ = "h".concat(Math.min(u, 6));
-  return (0, r.jsx)(s.xvT, d({
+  return (0, r.jsx)(s.x, d({
     ref: t,
     variant: n,
     tag: _,

@@ -2,11 +2,11 @@
 /** chunk id: 750081, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./358797.js");
-var r, i, a, o, s, l, c, Chunk951288 = require("./951288.js");
+var r, i, a, o, s, Chunk951288 = require("./951288.js");
 require("./92138.js"), require("./647438.js");
 var Chunk602954 = require("./602954.js"),
   Chunk512722 = require("./512722.js"),
-  _ = require.n(Chunk512722),
+  d = require.n(Chunk512722),
   Chunk832037 = require("./832037.jsx"),
   Chunk749349 = require("./749349.js"),
   Chunk464253 = require("./464253.js"),
@@ -37,28 +37,28 @@ var Chunk857192 = require("./857192.js"),
   Chunk70956 = require("./70956.js"),
   Chunk378799 = require("./378799.js");
 Chunk857192.default.cssDebuggingEnabled && require.e("95666").then(require.bind(require, 754261)), (0, Chunk378799.s5)();
-let F = 5 * Chunk70956.Z.Millis.MINUTE,
-  V = document.getElementById("app-mount");
-_()(null != V, "Could not find app-mount"), V.className = __OVERLAY__ ? "" : Chunk113752.appMount;
-let H = (0, Chunk602954.createRoot)(V),
-  Y = {
+let B = 5 * Chunk70956.Z.Millis.MINUTE,
+  Z = document.getElementById("app-mount");
+d()(null != Z, "Could not find app-mount"), Z.className = __OVERLAY__ ? "" : Chunk113752.appMount;
+let F = (0, Chunk602954.createRoot)(Z),
+  V = {
     "/oauth2/authorize": Chunk534713.Z
   };
 
-function W(e, t, n) {
+function H(e, t, n) {
   var r;
   let i = null != n ? new URLSearchParams(n) : null;
-  null != (r = Y[t]) && r.call(Y, i) || (0, N.uL)(t)
+  null != (r = V[t]) && r.call(V, i) || (0, A.uL)(t)
 }
-let K = e => H.render((0, u.jsx)(L.w, {
-  children: (0, u.jsx)(x.Z, {
-    children: (0, u.jsx)(e, {})
+let Y = e => F.render((0, l.jsx)(D.w, {
+  children: (0, l.jsx)(w.Z, {
+    children: (0, l.jsx)(e, {})
   })
 }));
 if (null != Chunk579806.Z) {
   null == (r = Chunk579806.Z.setUncaughtExceptionHandler) || r.call(Chunk579806.Z, (e, t) => {
     setImmediate(() => {
-      throw O.Z.captureCrash(e), e
+      throw b.Z.captureCrash(e), e
     })
   }), Chunk998502.ZP.appLoaded();
   let e = null == (i = (a = Chunk579806.Z.remoteApp).getVersion) ? true : i.call(a),
@@ -70,24 +70,22 @@ if (null != Chunk579806.Z) {
   }), Chunk960048.Z.setTags({
     nativeBuildNumber: null == exports ? true : exports.toString()
   });
-  let u = Object.keys(require).filter(e => null != n[e]).map(e => "".concat(e, ": ").concat(n[e])).join(", ");
-  new Chunk710845.Z().log("[NATIVE INFO] host ".concat(module, ", modules: ").concat(Chunk951288, ", build: ").concat(exports));
-  let d = null == (l = (c = Chunk579806.Z.remoteApp).getReleaseChannel) ? true : l.call(c);
-  ("ptb" === Chunk602954 || "canary" === Chunk602954 || "development" === Chunk602954) && Chunk998502.ZP.pauseFrameEvictor(), Chunk998502.ZP.initializeExitHook(), Chunk998502.ZP.initializeWERHandler()
+  let l = Object.keys(require).filter(e => null != n[e]).map(e => "".concat(e, ": ").concat(n[e])).join(", ");
+  new Chunk710845.Z().log("[NATIVE INFO] host ".concat(module, ", modules: ").concat(Chunk951288, ", build: ").concat(exports)), Chunk998502.ZP.pauseFrameEvictor(), Chunk998502.ZP.initializeExitHook(), Chunk998502.ZP.initializeWERHandler()
 }
-if ((0, Chunk473159.O)(window), __OVERLAY__) K(Chunk832037.Z.Overlay);
-else if (null != window.require && null == window.DiscordNative) K(Chunk832037.Z.OutdatedClient);
+if ((0, Chunk473159.O)(window), __OVERLAY__) Y(Chunk832037.Z.Overlay);
+else if (null != window.require && null == window.DiscordNative) Y(Chunk832037.Z.OutdatedClient);
 else {
   if (document.addEventListener("scroll", e => e.preventDefault()), Chunk358085.isPlatformEmbedded) {
     window.onbeforeunload = () => Chunk998502.ZP.beforeUnload(), Chunk998502.ZP.on("HELP_OPEN", () => window.open(Chunk63063.Z.getCommunityURL()));
-    let e = new Chunk846519.sW(F, () => Chunk998502.ZP.purgeMemory());
+    let e = new Chunk846519.sW(B, () => Chunk998502.ZP.purgeMemory());
     Chunk998502.ZP.on("MAIN_WINDOW_BLUR", () => {
       module.delay(), Chunk998502.ZP.setFocused(false), (0, Chunk284737.T_)(window, false)
     }), Chunk998502.ZP.on("MAIN_WINDOW_FOCUS", () => {
       module.cancel(), Chunk998502.ZP.setFocused(true), (0, Chunk284737.T_)(window, true)
-    }), Chunk998502.ZP.on("MAIN_WINDOW_PATH", W), Chunk998502.ZP.on("MAIN_WINDOW_HIDDEN", () => {
+    }), Chunk998502.ZP.on("MAIN_WINDOW_PATH", H), Chunk998502.ZP.on("MAIN_WINDOW_HIDDEN", () => {
       (0, Chunk284737.al)(window)
     })
   }
-  Chunk395727.Z.initialize(), Chunk749349.Z.initialize(), Chunk464253.Z.init(), Chunk585275.Z.init(), Chunk44163.Z.init(), Chunk485359.Z.initialize(), Chunk240849.Z.initialize(), Chunk513566.Z.initialize(), Chunk471638.j(), (0, Chunk177692.Mn)(), K(Chunk832037.Z.App)
+  Chunk395727.Z.initialize(), Chunk749349.Z.initialize(), Chunk464253.Z.init(), Chunk585275.Z.init(), Chunk44163.Z.init(), Chunk485359.Z.initialize(), Chunk240849.Z.initialize(), Chunk513566.Z.initialize(), Chunk471638.j(), (0, Chunk177692.Mn)(), Y(Chunk832037.Z.App)
 }

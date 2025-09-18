@@ -26,7 +26,7 @@ function b(e) {
     transitionState: _,
     onSubmitted: f,
     detectedActivity: j
-  } = e, [O, w] = i.useState("issue_selection"), [y, P] = i.useState(null), [k, I] = i.useState(""), [G, N] = i.useState(null), [T, D] = i.useState(""), S = i.useMemo(() => (0, d.fP)(), []), C = (0, a.e7)([u.Z], () => u.Z.games), E = null != j, A = (0, a.e7)([s.Z], () => (null == j ? true : j.application_id) != null ? s.Z.getApplication(j.application_id) : null), Z = i.useMemo(() => k.trim().length < 1 ? [] : C.filter(e => e.name.toLowerCase().includes(k.toLowerCase())).slice(0, 20).map(e => ({
+  } = e, [O, w] = i.useState("issue_selection"), [y, P] = i.useState(null), [k, I] = i.useState(""), [G, N] = i.useState(null), [T, D] = i.useState(""), S = i.useMemo(() => (0, d.fP)(), []), C = (0, r.e7)([u.Z], () => u.Z.games), E = null != j, A = (0, r.e7)([s.Z], () => (null == j ? true : j.application_id) != null ? s.Z.getApplication(j.application_id) : null), Z = i.useMemo(() => k.trim().length < 1 ? [] : C.filter(e => e.name.toLowerCase().includes(k.toLowerCase())).slice(0, 20).map(e => ({
     value: e.id,
     label: e.name,
     game: e
@@ -92,7 +92,7 @@ function b(e) {
     onClose: b,
     trackingProps: {
       impression: {
-        impressionName: r.ImpressionNames.GAME_DETECTION_REPORT_MODAL
+        impressionName: a.ImpressionNames.GAME_DETECTION_REPORT_MODAL
       }
     },
     children: (() => {
@@ -152,7 +152,7 @@ function b(e) {
                   });
                   return null != i ? (0, l.jsx)("img", {
                     src: i,
-                    alt: null != (n = j.name) ? n : "",
+                    alt: null != j.name && "" !== j.name ? j.name : null != (n = null == A ? true : A.name) ? n : "",
                     className: x.detectedGameIcon
                   }) : (0, l.jsx)("div", {
                     className: "".concat(x.detectedGameIcon, " ").concat(x.detectedGameIconPlaceholder),
@@ -169,7 +169,7 @@ function b(e) {
                 })(), (0, l.jsx)(c.Text, {
                   variant: "text-md/semibold",
                   color: "header-primary",
-                  children: j.name
+                  children: null != j.name && "" !== j.name ? j.name : null == A ? true : A.name
                 })]
               }), (0, l.jsx)(g.Z, {})]
             }), (0, l.jsx)(c.VcW, {
