@@ -6,13 +6,13 @@ require.d(exports, {
   Cf: () => T,
   ID: () => S,
   Ls: () => y,
+  SM: () => L,
   Xz: () => R,
   Z: () => b,
   c_: () => N,
   f4: () => P,
   g_: () => I,
   ho: () => v,
-  oz: () => L,
   pG: () => O,
   rf: () => w,
   x3: () => D,
@@ -194,29 +194,29 @@ function D(e) {
   }, e)), E(h.QP.PRESET)
 }
 async function x() {
-  if (null == Chunk621853.Z.applicationWidgetIds || !(Chunk621853.Z.applicationWidgetIds.length > 0)) {
+  if (null == Chunk621853.Z.applicationWidgetApplicationIds || !(Chunk621853.Z.applicationWidgetApplicationIds.length > 0)) {
     Chunk570140.Z.dispatch({
-      type: "USER_PROFILE_APPLICATION_WIDGET_IDS_FETCH_START"
+      type: "USER_PROFILE_APPLICATION_WIDGET_APPLICATION_IDS_FETCH_START"
     });
     try {
       let e = await Chunk544891.tn.get({
-        url: Chunk981631.ANM.USER_PROFILE_APPLICATION_WIDGET_IDS,
+        url: Chunk981631.ANM.USER_PROFILE_APPLICATION_WIDGET_APPLICATION_IDS,
         rejectWithError: true
       });
       Chunk570140.Z.dispatch({
-        type: "USER_PROFILE_APPLICATION_WIDGET_IDS_FETCH_SUCCESS",
-        applicationIds: module.body
+        type: "USER_PROFILE_APPLICATION_WIDGET_APPLICATION_IDS_FETCH_SUCCESS",
+        applicationIds: module.body.application_ids
       })
     } catch (e) {
       throw Chunk570140.Z.dispatch({
-        type: "USER_PROFILE_APPLICATION_WIDGET_IDS_FETCH_FAILURE"
+        type: "USER_PROFILE_APPLICATION_WIDGET_APPLICATION_IDS_FETCH_FAILURE"
       }), Chunk960048.Z.captureException(module), module
     }
   }
 }
 let L = (0, Chunk442837.Kb)(Chunk621853.Z, {
-  queryId: () => Chunk981631.McO.APPLICATION_WIDGET_IDS,
-  get: () => Chunk621853.Z.applicationWidgetIds,
+  queryId: () => Chunk981631.McO.APPLICATION_WIDGET_APPLICATION_IDS,
+  get: () => Chunk621853.Z.applicationWidgetApplicationIds,
   load: () => x(),
   useStateHook: Chunk442837.e7
 })

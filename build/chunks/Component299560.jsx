@@ -72,7 +72,7 @@ function O(e) {
   } = e, {
     placeholder: y,
     getAriaLabel: O
-  } = v[t], x = "small" === i, P = (0, d.oz)().data, I = l.useMemo(() => {
+  } = v[t], x = "small" === i, P = (0, d.SM)().data, I = l.useMemo(() => {
     switch (t) {
       case s.l.CURRENT_GAMES:
       case s.l.FAVORITE_GAMES:
