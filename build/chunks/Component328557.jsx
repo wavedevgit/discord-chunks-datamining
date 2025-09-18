@@ -11,5 +11,5 @@ let s = (0, Chunk509613.m7)(Chunk313789.n.TEMP_DEVELOPER_EDUCATION_SIDEBAR_ITEM,
   render: () => (0, Chunk951288.jsx)(Chunk924983.$, {
     legacy: false
   }),
-  useSearchTerms: () => ["Hotspot Options", "Dismissible Contents", "Design Systems"]
+  useSearchTerms: () => Chunk924983.Y
 })

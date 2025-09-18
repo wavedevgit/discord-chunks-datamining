@@ -2,7 +2,7 @@
 /** chunk id: 861687, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => eC
+  Z: () => eA
 }), require("./35282.js"), require("./539854.js"), require("./388685.js"), require("./49124.js"), require("./415506.js"), require("./457542.js");
 var Chunk654861 = require("./654861.js"),
   i = require.n(Chunk654861),
@@ -27,7 +27,6 @@ var Chunk654861 = require("./654861.js"),
   Chunk815644 = require("./815644.js"),
   Chunk926951 = require("./926951.js"),
   Chunk148807 = require("./148807.js"),
-  Chunk582751 = require("./582751.js"),
   Chunk145016 = require("./145016.js"),
   Chunk166884 = require("./166884.js"),
   Chunk450109 = require("./450109.js"),
@@ -65,7 +64,7 @@ var Chunk654861 = require("./654861.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js");
 
-function ec(e, t, n) {
+function el(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -74,20 +73,20 @@ function ec(e, t, n) {
   }) : e[t] = n, e
 }
 
-function eu(e) {
+function ec(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      ec(e, t, n[t])
+      el(e, t, n[t])
     })
   }
   return e
 }
 
-function ed(e, t) {
+function eu(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -98,46 +97,46 @@ function ed(e, t) {
   return n
 }
 
-function ef(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ed(Object(t)).forEach(function(n) {
+function ed(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : eu(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let e_ = /^https/.test("https:") ? "wss:" : "ws:",
-  ep = 200,
-  eh = 20,
-  em = 500,
-  eg = 250,
-  eE = 10,
-  eb = 5,
-  ey = "1",
-  eO = 0;
+let ef = /^https/.test("https:") ? "wss:" : "ws:",
+  e_ = 200,
+  ep = 20,
+  eh = 500,
+  em = 250,
+  eg = 10,
+  eE = 5,
+  eb = "1",
+  ey = 0;
 
-function ev(e) {
+function eO(e) {
   return e
 }
-let eI = 0,
-  eT = [],
-  eS = 50;
+let ev = 0,
+  eI = [],
+  eT = 50;
 
-function eA() {
+function eS() {
   let e = [],
     t = (0, Chunk379649.zO)();
-  for (let n of eT) module.push(ef(eu({}, require), {
+  for (let n of eI) module.push(ed(ec({}, require), {
     t: exports - require.t
   }));
   return JSON.stringify(module)
 }
-class eC extends Chunk47770.Z {
+class eA extends Chunk47770.Z {
   recordEvent(e) {
-    for (eT.push(ef(eu({}, e), {
+    for (eI.push(ed(ec({}, e), {
         t: (0, _.zO)(),
         n: this._connectionSerial
-      })); eT.length > eS;) eT.shift()
+      })); eI.length > eT;) eI.shift()
   }
   get quality() {
     let e = this.getLastPing();
-    return this.state !== Chunk981631.hes.RTC_CONNECTED || true === module ? Chunk981631.IE4.UNKNOWN : module > em || null != this._outboundLossRate && this._outboundLossRate > eE ? Chunk981631.IE4.BAD : module > eg || null != this._outboundLossRate && this._outboundLossRate > eb ? Chunk981631.IE4.AVERAGE : Chunk981631.IE4.FINE
+    return this.state !== Chunk981631.hes.RTC_CONNECTED || true === module ? Chunk981631.IE4.UNKNOWN : module > eh || null != this._outboundLossRate && this._outboundLossRate > eg ? Chunk981631.IE4.BAD : module > em || null != this._outboundLossRate && this._outboundLossRate > eE ? Chunk981631.IE4.AVERAGE : Chunk981631.IE4.FINE
   }
   get endpoint() {
     return this._endpoint
@@ -149,12 +148,12 @@ class eC extends Chunk47770.Z {
       }), null == e) this._endpoint = null, this.hostname = null;
     else {
       var t;
-      e = "".concat(e_, "//").concat(e);
+      e = "".concat(ef, "//").concat(e);
       let {
         hostname: n,
         port: r
-      } = null != (t = W.Z.toURLSafe(e)) ? t : {}, i = null != r ? parseInt(r) : NaN;
-      null != n && (80 === i || 443 === i) && (e = "".concat(e_, "//").concat(n)), this._endpoint = e + "/", this.hostname = n
+      } = null != (t = Y.Z.toURLSafe(e)) ? t : {}, i = null != r ? parseInt(r) : NaN;
+      null != n && (80 === i || 443 === i) && (e = "".concat(ef, "//").concat(n)), this._endpoint = e + "/", this.hostname = n
     }
   }
   connect(e, t) {
@@ -171,9 +170,9 @@ class eC extends Chunk47770.Z {
     if (this.endpoint = e, this.token = t, (n !== this.endpoint || r !== t) && (this._cleanupSocket(), this._mediaSessionId = null, null != n && (this._rtcConnectionId = (0, c.Z)(), p.Z.dispatch({
         type: "RTC_CONNECTION_UPDATE_ID",
         connection: this
-      }))), null == this.endpoint) return void this.setState(es.hes.AWAITING_ENDPOINT);
+      }))), null == this.endpoint) return void this.setState(eo.hes.AWAITING_ENDPOINT);
     let i = this._socket;
-    null != i && this._cleanupSocket(), null != this._nextChannelId && (this._channelId = this._nextChannelId, this._nextChannelId = true), (i = this._socket = new Q.Z(this.endpoint, this.context)).on(Q.V.Connecting, this._handleConnecting.bind(this, i)), i.on(Q.V.Connect, this._handleConnect.bind(this, i)), i.on(Q.V.Disconnect, this._handleDisconnect.bind(this, i)), i.on(Q.V.Resuming, this._handleResuming.bind(this, i)), i.on(Q.V.Ready, this._handleReady.bind(this, i)), i.on(Q.V.Speaking, this._handleSpeaking.bind(this, i)), i.on(Q.V.Video, this._handleVideo.bind(this, i)), i.on(Q.V.Ping, this._handleControlPing.bind(this)), i.on(Q.V.ClientDisconnect, this._handleClientDisconnect.bind(this)), i.on(Q.V.ClientConnect, this._handleClientConnect.bind(this)), i.on(Q.V.Codecs, this._handleCodecs.bind(this)), i.on(Q.V.MediaSessionId, this._handleMediaSessionId.bind(this)), i.on(Q.V.MediaSinkWants, this._handleMediaSinkWants.bind(this)), i.on(Q.V.VoiceBackendVersion, this._handleCodeVersion.bind(this)), i.on(Q.V.KeyframeInterval, this._handleKeyframeInterval.bind(this)), i.on(Q.V.Flags, this.handleFlags.bind(this)), i.on(Q.V.Platform, this.handlePlatform.bind(this)), i.on(Q.V.BandwidthEstimationExperiment, this._handleBandwidthEstimationExperiment.bind(this)), i.on(Q.V.SecureFramesInit, this._handleSecureFramesInit.bind(this)), i.on(Q.V.SecureFramesPrepareTransition, this._handleSecureFramesPrepareTransition.bind(this)), i.on(Q.V.SecureFramesPrepareEpoch, this._handleSecureFramesPrepareEpoch.bind(this)), i.on(Q.V.SecureFramesExecuteTransition, this._handleSecureFramesExecuteTransition.bind(this)), i.on(Q.V.MLSExternalSenderPackage, this._handleMLSExternalSenderPackage.bind(this)), i.on(Q.V.MLSProposals, this._handleMLSProposals.bind(this, i)), i.on(Q.V.MLSPrepareCommitTransition, this._handleMLSPrepareCommitTransition.bind(this)), i.on(Q.V.MLSWelcome, this._handleMLSWelcome.bind(this)), i.on(Q.V.ReceiveMessage, this._recordMessageEvent.bind(this, 4)), i.on(Q.V.SendMessage, this._recordMessageEvent.bind(this, 5)), this._connectStartTime = (0, _.zO)(), this._connectCount++, this._connecting = true, null != i && this._socket === i && (this._trackVoiceConnectionConnecting(), this._encountered_socket_failure = false, i.connect())
+    null != i && this._cleanupSocket(), null != this._nextChannelId && (this._channelId = this._nextChannelId, this._nextChannelId = true), (i = this._socket = new X.Z(this.endpoint, this.context)).on(X.V.Connecting, this._handleConnecting.bind(this, i)), i.on(X.V.Connect, this._handleConnect.bind(this, i)), i.on(X.V.Disconnect, this._handleDisconnect.bind(this, i)), i.on(X.V.Resuming, this._handleResuming.bind(this, i)), i.on(X.V.Ready, this._handleReady.bind(this, i)), i.on(X.V.Speaking, this._handleSpeaking.bind(this, i)), i.on(X.V.Video, this._handleVideo.bind(this, i)), i.on(X.V.Ping, this._handleControlPing.bind(this)), i.on(X.V.ClientDisconnect, this._handleClientDisconnect.bind(this)), i.on(X.V.ClientConnect, this._handleClientConnect.bind(this)), i.on(X.V.Codecs, this._handleCodecs.bind(this)), i.on(X.V.MediaSessionId, this._handleMediaSessionId.bind(this)), i.on(X.V.MediaSinkWants, this._handleMediaSinkWants.bind(this)), i.on(X.V.VoiceBackendVersion, this._handleCodeVersion.bind(this)), i.on(X.V.KeyframeInterval, this._handleKeyframeInterval.bind(this)), i.on(X.V.Flags, this.handleFlags.bind(this)), i.on(X.V.Platform, this.handlePlatform.bind(this)), i.on(X.V.BandwidthEstimationExperiment, this._handleBandwidthEstimationExperiment.bind(this)), i.on(X.V.SecureFramesInit, this._handleSecureFramesInit.bind(this)), i.on(X.V.SecureFramesPrepareTransition, this._handleSecureFramesPrepareTransition.bind(this)), i.on(X.V.SecureFramesPrepareEpoch, this._handleSecureFramesPrepareEpoch.bind(this)), i.on(X.V.SecureFramesExecuteTransition, this._handleSecureFramesExecuteTransition.bind(this)), i.on(X.V.MLSExternalSenderPackage, this._handleMLSExternalSenderPackage.bind(this)), i.on(X.V.MLSProposals, this._handleMLSProposals.bind(this, i)), i.on(X.V.MLSPrepareCommitTransition, this._handleMLSPrepareCommitTransition.bind(this)), i.on(X.V.MLSWelcome, this._handleMLSWelcome.bind(this)), i.on(X.V.ReceiveMessage, this._recordMessageEvent.bind(this, 4)), i.on(X.V.SendMessage, this._recordMessageEvent.bind(this, 5)), this._connectStartTime = (0, _.zO)(), this._connectCount++, this._connecting = true, null != i && this._socket === i && (this._trackVoiceConnectionConnecting(), this._encountered_socket_failure = false, i.connect())
   }
   _recordMessageEvent(e, t) {
     this.recordEvent({
@@ -192,15 +191,15 @@ class eC extends Chunk47770.Z {
     this.removeAllListeners(), this._destroyed = true
   }
   shouldSendSpeaking(e, t) {
-    if ((0, H.isWeb)()) returntrue;
-    let n = (0, F.yE)(e, el.Dg.PRIORITY),
-      r = (0, F.yE)(this._lastSentSpeakingStatus, el.Dg.PRIORITY);
-    return (this._lastSentSSRC !== t || n !== r) && (true !== this._lastSentSSRC || e !== el.Dg.NONE) && (this._lastSentSSRC === t || e !== el.Dg.NONE) && (this._lastSentSpeakingStatus = e, this._lastSentSSRC = t, true)
+    if ((0, V.isWeb)()) returntrue;
+    let n = (0, Z.yE)(e, es.Dg.PRIORITY),
+      r = (0, Z.yE)(this._lastSentSpeakingStatus, es.Dg.PRIORITY);
+    return (this._lastSentSSRC !== t || n !== r) && (true !== this._lastSentSSRC || e !== es.Dg.NONE) && (this._lastSentSSRC === t || e !== es.Dg.NONE) && (this._lastSentSpeakingStatus = e, this._lastSentSSRC = t, true)
   }
   sendSpeaking(e, t) {
     let n = this._socket;
     if (null == n || !this.shouldSendSpeaking(e, t)) return;
-    let r = j.Z.getPacketDelay();
+    let r = L.Z.getPacketDelay();
     n.speaking(e, r, t)
   }
   sendVideo(e, t, n, r) {
@@ -211,7 +210,7 @@ class eC extends Chunk47770.Z {
     return this._pings
   }
   getAveragePing() {
-    let e = this._pings.slice(0, Math.min(this._pings.length, eh));
+    let e = this._pings.slice(0, Math.min(this._pings.length, ep));
     return 0 === module.length || null == this._socket ? 0 : module.reduce((e, t) => e + t.value, 0) / module.length
   }
   getLastPing() {
@@ -293,7 +292,7 @@ class eC extends Chunk47770.Z {
     this.recordEvent({
       c: 8,
       s: e
-    }), this.logger.info("RTC connection state: ".concat(this.state, " => ").concat(e)), this.state = e, this.stateHistory.update(this.state), this.emit(q.z.State, e, {
+    }), this.logger.info("RTC connection state: ".concat(this.state, " => ").concat(e)), this.state = e, this.stateHistory.update(this.state), this.emit(z.z.State, e, {
       hostname: this.hostname,
       channelId: this.trueChannelId,
       context: this.context
@@ -328,7 +327,7 @@ class eC extends Chunk47770.Z {
   }
   setSimulcastDebugOverride(e, t, n) {
     var r, i;
-    t === this.context && (t === el.Yn.DEFAULT ? null == (r = this._localMediaSinkWantsManager) || r.setSimulcastDebugOverride(e, n) : null == (i = this._goLiveQualityManager) || i.setSimulcastDebugOverride(n))
+    t === this.context && (t === es.Yn.DEFAULT ? null == (r = this._localMediaSinkWantsManager) || r.setSimulcastDebugOverride(e, n) : null == (i = this._goLiveQualityManager) || i.setSimulcastDebugOverride(n))
   }
   setVideoSize(e, t, n) {
     var r, i;
@@ -341,7 +340,7 @@ class eC extends Chunk47770.Z {
     this.recordEvent({
       c: 9
     });
-    let t = L.Z.getChannel(this.channelId),
+    let t = x.Z.getChannel(this.channelId),
       n = null == t ? true : t.type;
     this.logger.info("Updating channel: ".concat(e, "(").concat(n, ")")), this._nextChannelId = e, this.channelIds.add(e)
   }
@@ -365,11 +364,11 @@ class eC extends Chunk47770.Z {
   }
   _chooseExperiments(e) {
     let t = [];
-    if (this._recordingEnabled && t.push("connection_log"), j.Z.supports(el.AN.FIXED_KEYFRAME_INTERVAL) && t.push("fixed_keyframe_interval"), 0 !== this._supportedBandwidthEstimationExperiments.length) {
-      let e = N.Z.workerExperimentString();
+    if (this._recordingEnabled && t.push("connection_log"), L.Z.supports(es.AN.FIXED_KEYFRAME_INTERVAL) && t.push("fixed_keyframe_interval"), 0 !== this._supportedBandwidthEstimationExperiments.length) {
+      let e = C.Z.workerExperimentString();
       null != e && t.push(e)
     }
-    this.context === el.Yn.DEFAULT && (0, I.f)("RtcConnection").enabled && t.push("audio_transport_cc"), t.push("keyframe_on_join"), P.Z.getCurrentConfig({
+    this.context === es.Yn.DEFAULT && (0, I.f)("RtcConnection").enabled && t.push("audio_transport_cc"), t.push("keyframe_on_join"), R.Z.getCurrentConfig({
       location: "_chooseExperiments"
     }, {
       autoTrackExposure: true
@@ -377,18 +376,18 @@ class eC extends Chunk47770.Z {
     let n = S.Z.getCurrentConfig({
       location: "_chooseExperiments"
     }, {
-      disable: !(0, H.isWindows)(),
+      disable: !(0, V.isWindows)(),
       autoTrackExposure: true
     });
     n.prewarm && t.push("prewarm_cuda_cache"), n.clear && t.push("clear_cuda_cache"), this._selectedExperiments = t
   }
   _handleConnecting(e) {
     if (null != this.endpoint) {
-      let e = L.Z.getChannel(this.channelId),
+      let e = x.Z.getChannel(this.channelId),
         t = null == e ? true : e.type;
       this.logger.info("Connecting to RTC server ".concat(this.endpoint, ", rtc-connection-id: ").concat(this.getRTCConnectionId(), ", channel: ").concat(this.channelId, "(").concat(t, ")"))
     }
-    this.setState(es.hes.CONNECTING)
+    this.setState(eo.hes.CONNECTING)
   }
   _handleConnect(e) {
     let t = this.token;
@@ -400,69 +399,69 @@ class eC extends Chunk47770.Z {
         userId: this.userId,
         sessionId: this.sessionId,
         token: t,
-        maxDaveProtocolVersion: j.Z.getSupportedSecureFramesProtocolVersion(),
-        video: j.Z.supports(el.AN.VIDEO),
-        streamParameters: j.Z.getVideoStreamParameters(this.context)
-      }), this.setState(es.hes.AUTHENTICATING)
+        maxDaveProtocolVersion: L.Z.getSupportedSecureFramesProtocolVersion(),
+        video: L.Z.supports(es.AN.VIDEO),
+        streamParameters: L.Z.getVideoStreamParameters(this.context)
+      }), this.setState(eo.hes.AUTHENTICATING)
     })
   }
   _handleDisconnect(e, t, n, r) {
-    var i, a, o, s, l, c, u, d, f, _, p, h, m, g, E, b, y, v, I, T, S, A;
-    this.logger.info("Disconnected from RTC server, clean: ".concat(t, ", code: ").concat(n, ", reason: ").concat(r, ", state: ").concat(this.state)), t || !this._connecting || this._encountered_socket_failure || (B.default.track(es.rMx.VOICE_CONNECTION_SOCKET_FAILURE, ef(eu({}, this._getAnalyticsProperties()), {
+    var i, a, o, s, l, c, u, d, f, _, p, h, m, g, E, b, y, v, I, T, S, C;
+    this.logger.info("Disconnected from RTC server, clean: ".concat(t, ", code: ").concat(n, ", reason: ").concat(r, ", state: ").concat(this.state)), t || !this._connecting || this._encountered_socket_failure || (G.default.track(eo.rMx.VOICE_CONNECTION_SOCKET_FAILURE, ed(ec({}, this._getAnalyticsProperties()), {
       hostname: this.hostname,
       connect_count: this._connectCount,
       code: n,
       reason: r
-    })), this._encountered_socket_failure = true), M.Z.getRemoteDisconnectVoiceChannelId() === this.channelId && (null == (l = this._connection) || l.wasRemoteDisconnected());
-    let N = "Force Close" !== r;
-    if (N) {
+    })), this._encountered_socket_failure = true), j.Z.getRemoteDisconnectVoiceChannelId() === this.channelId && (null == (l = this._connection) || l.wasRemoteDisconnected());
+    let R = "Force Close" !== r;
+    if (R) {
       let e = this._backoff.fail(this.reconnect);
       this.logger.warn("Disconnect was not clean! reason=".concat(r, ". Reconnecting in ").concat((e / 1e3).toFixed(2), " seconds."))
     }
-    if (this.state !== es.hes.DISCONNECTED) {
+    if (this.state !== eo.hes.DISCONNECTED) {
       let e = this._videoQuality;
-      if (null != e && this.context === el.Yn.DEFAULT) {
+      if (null != e && this.context === es.Yn.DEFAULT) {
         if (e.stop(), this._sentVideo) {
           e.getOutboundStats().forEach(t => {
             var n;
-            (null != (n = t.num_frames) ? n : 0) > 0 && B.default.track(es.rMx.VIDEO_STREAM_ENDED, ef(eu(ef(eu({}, this._getAnalyticsProperties()), {
-              app_hardware_acceleration_enabled: Z.Z.getAppHardwareAccelerationEnabled(),
+            (null != (n = t.num_frames) ? n : 0) > 0 && G.default.track(eo.rMx.VIDEO_STREAM_ENDED, ed(ec(ed(ec({}, this._getAnalyticsProperties()), {
+              app_hardware_acceleration_enabled: B.Z.getAppHardwareAccelerationEnabled(),
               media_session_id: this.getMediaSessionId(),
               sender_user_id: this.userId,
               reason: r,
               participant_type: "sender",
-              guild_region: U.Z.getRegion(this.hostname),
+              guild_region: k.Z.getRegion(this.hostname),
               hostname: this.hostname,
-              hardware_enabled: j.Z.getHardwareEncoding()
+              hardware_enabled: L.Z.getHardwareEncoding()
             }), t, e.getNetworkStats(), e.getCodecUsageStats("sender", this.userId), this._soundshareStats.getStats()), {
               device_performance_class: (0, O.Z)()
             }))
           });
           let t = e.getCameraDurationStats();
-          null != t && t.camera_enabled_duration > 0 && B.default.track(es.rMx.VIDEO_CALL_ENDED, ef(eu({}, t), {
+          null != t && t.camera_enabled_duration > 0 && G.default.track(eo.rMx.VIDEO_CALL_ENDED, ed(ec({}, t), {
             media_session_id: this.getMediaSessionId()
           }))
         }
         e.getInboundParticipants().forEach(t => {
           var n;
           let i = e.getInboundStats(t);
-          (null != (n = null == i ? true : i.num_frames) ? n : 0) > 0 && B.default.track(es.rMx.VIDEO_STREAM_ENDED, eu(ef(eu({}, this._getAnalyticsProperties()), {
-            app_hardware_acceleration_enabled: Z.Z.getAppHardwareAccelerationEnabled(),
+          (null != (n = null == i ? true : i.num_frames) ? n : 0) > 0 && G.default.track(eo.rMx.VIDEO_STREAM_ENDED, ec(ed(ec({}, this._getAnalyticsProperties()), {
+            app_hardware_acceleration_enabled: B.Z.getAppHardwareAccelerationEnabled(),
             media_session_id: this.getMediaSessionId(),
             sender_user_id: t,
             reason: r,
             participant_type: "receiver",
-            guild_region: U.Z.getRegion(this.hostname),
+            guild_region: k.Z.getRegion(this.hostname),
             hostname: this.hostname,
-            hardware_enabled: j.Z.getHardwareEncoding()
+            hardware_enabled: L.Z.getHardwareEncoding()
           }), i, e.getNetworkStats(), e.getCodecUsageStats("receiver", t)))
         })
       }
       let t = this.getMediaSessionId();
-      j.Z.getMediaEngine().getCodecSurvey().then(e => {
+      L.Z.getMediaEngine().getCodecSurvey().then(e => {
         let n = JSON.parse(e);
         if (null == n || null == n.available_video_encoders || null == n.available_video_decoders) throw Error("codec survey is not available");
-        B.default.track(es.rMx.VOICE_CODEC_DETECTED, ef(eu({}, n), {
+        G.default.track(eo.rMx.VOICE_CODEC_DETECTED, ed(ec({}, n), {
           rtc_connection_id: this.getRTCConnectionId(),
           media_session_id: t
         }))
@@ -471,18 +470,18 @@ class eC extends Chunk47770.Z {
       }), this._trackMLSFailures({
         recovered: false
       });
-      let n = U.Z.shouldIncludePreferredRegion() ? U.Z.getPreferredRegion() : null,
-        i = j.Z.getSettings(),
-        a = L.Z.getChannel(this.channelId),
-        o = null == (u = R.Z.getConnectionStats(this.getMediaEngineConnectionId())) || null == (c = u.stats.rtp.outbound.find(e => "audio" === e.type)) ? true : c.sampleRateMismatchPercent,
-        s = ef(eu(ef(eu({}, this._getAnalyticsProperties()), {
+      let n = k.Z.shouldIncludePreferredRegion() ? k.Z.getPreferredRegion() : null,
+        i = L.Z.getSettings(),
+        a = x.Z.getChannel(this.channelId),
+        o = null == (u = N.Z.getConnectionStats(this.getMediaEngineConnectionId())) || null == (c = u.stats.rtp.outbound.find(e => "audio" === e.type)) ? true : c.sampleRateMismatchPercent,
+        s = ed(ec(ed(ec({}, this._getAnalyticsProperties()), {
           hostname: this.hostname,
           port: this.port,
           protocol: this.protocol,
-          reconnect: N,
+          reconnect: R,
           reason: r,
           duration: this.getDuration()
-        }), null == (d = this._voiceQuality) ? true : d.getMosStats(), null == (f = this._voiceQuality) ? true : f.getPacketStats(), null == (_ = this._voiceQuality) ? true : _.getBytesStats(), null == (p = this._voiceQuality) ? true : p.getBufferStats(), null == (h = this._voiceQuality) ? true : h.getNetworkStats(), null == (m = this._voiceQuality) ? true : m.getSystemResourceStats(), null == (g = this._voiceQuality) ? true : g.getFrameOpStats(), null == (E = this._voiceQuality) ? true : E.getDurationStats(), null == (b = this._voiceQuality) ? true : b.getTransportStats(), null == (y = this._voiceQuality) ? true : y.getE2EEStats(), null == (v = this._voiceQuality) ? true : v.getAudioDeviceStats(), null == (I = this._voiceQuality) ? true : I.getAudioLevelStats(), null == (T = this._voiceDuration) ? true : T.getDurationStats(), C.Z.getUsageStats(), this.getAudioDeviceStates(), null == (S = this._systemResponsiveness) ? true : S.getPttQueueLatencyStats()), {
+        }), null == (d = this._voiceQuality) ? true : d.getMosStats(), null == (f = this._voiceQuality) ? true : f.getPacketStats(), null == (_ = this._voiceQuality) ? true : _.getBytesStats(), null == (p = this._voiceQuality) ? true : p.getBufferStats(), null == (h = this._voiceQuality) ? true : h.getNetworkStats(), null == (m = this._voiceQuality) ? true : m.getSystemResourceStats(), null == (g = this._voiceQuality) ? true : g.getFrameOpStats(), null == (E = this._voiceQuality) ? true : E.getDurationStats(), null == (b = this._voiceQuality) ? true : b.getTransportStats(), null == (y = this._voiceQuality) ? true : y.getE2EEStats(), null == (v = this._voiceQuality) ? true : v.getAudioDeviceStats(), null == (I = this._voiceQuality) ? true : I.getAudioLevelStats(), null == (T = this._voiceDuration) ? true : T.getDurationStats(), A.Z.getUsageStats(), this.getAudioDeviceStates(), null == (S = this._systemResponsiveness) ? true : S.getPttQueueLatencyStats()), {
           num_noise_cancellation_changes: this._numNoiseCancellationChanges,
           media_session_id: this.getMediaSessionId(),
           channel_bitrate: null != a ? a.bitrate : null,
@@ -492,7 +491,7 @@ class eC extends Chunk47770.Z {
           ping_bad_count: this._pingBadCount,
           ping_timeout: this._pingTimeouts.length,
           input_detected: this._inputDetected,
-          no_input_detected_notice: j.Z.getNoInputDetectedNotice(),
+          no_input_detected_notice: L.Z.getNoInputDetectedNotice(),
           audio_input_mode: i.mode,
           automatic_audio_input_sensitivity_enabled: i.modeOptions.autoThreshold,
           audio_input_sensitivity: i.modeOptions.threshold,
@@ -506,19 +505,19 @@ class eC extends Chunk47770.Z {
           encryption_mode: this._encryptionMode,
           channel_count: this.channelIds.size,
           device_performance_class: (0, O.Z)(),
-          num_fast_udp_reconnects: null != this._connection ? null == (A = this._connection) ? true : A.getNumFastUdpReconnects() : null,
+          num_fast_udp_reconnects: null != this._connection ? null == (C = this._connection) ? true : C.getNumFastUdpReconnects() : null,
           parent_media_session_id: this.parentMediaSessionId,
-          audio_subsystem: j.Z.getMediaEngine().getAudioSubsystem(),
-          audio_layer: j.Z.getMediaEngine().getAudioLayer(),
+          audio_subsystem: L.Z.getMediaEngine().getAudioSubsystem(),
+          audio_layer: L.Z.getMediaEngine().getAudioLayer(),
           automatic_audio_subsystem: i.automaticAudioSubsystem,
           participant_type: this.getVoiceParticipantType(),
           audio_capture_sample_rate_mismatch_percent: o,
-          krisp_sdk_version: j.Z.getState().krispVersion,
+          krisp_sdk_version: L.Z.getState().krispVersion,
           secure_frames_max_concurrent_transitions: this._secureFramesMaxConcurrentTransitions,
           secure_frames_transition_prepare_count: this._secureFramesTransitionPrepareCount,
           secure_frames_transition_execute_count: this._secureFramesTransitionExecuteCount,
           vad_use_advanced_voice_activity: i.modeOptions.vadUseKrisp,
-          soundshare_experimental: j.Z.getExperimentalSoundshare(),
+          soundshare_experimental: L.Z.getExperimentalSoundshare(),
           join_voice_id: this.joinVoiceId
         });
       Promise.all([(async () => {
@@ -526,11 +525,11 @@ class eC extends Chunk47770.Z {
         return null != (t = await (null == (e = this._systemResources) ? true : e.getBatteryLevelStats())) ? t : {
           batteryUsageRounded: null
         }
-      })(), w.Z.getKrispModel(), j.Z.getKrispEnableStats() ? j.Z.getMediaEngine().getNoiseCancellationStats() : Promise.resolve(null), j.Z.getMediaEngine().getSystemMicrophoneMode()]).then(e => {
+      })(), P.Z.getKrispModel(), L.Z.getKrispEnableStats() ? L.Z.getMediaEngine().getNoiseCancellationStats() : Promise.resolve(null), L.Z.getMediaEngine().getSystemMicrophoneMode()]).then(e => {
         let [{
           batteryUsageRounded: t
         }, n, r, i] = e;
-        B.default.track(es.rMx.VOICE_DISCONNECT, ef(eu({}, s), {
+        G.default.track(eo.rMx.VOICE_DISCONNECT, ed(ec({}, s), {
           battery_usage: t,
           krisp_nc_model: n,
           duration_low_noise_detected_ms: null == r ? true : r.lowNoiseMs,
@@ -541,12 +540,12 @@ class eC extends Chunk47770.Z {
         }))
       }), this._trackRemainingSecureFrameTransitions()
     }
-    if (this._pingTimeouts = [], this._pings = [], this._connectCompletedTime = 0, this._pingBadCount = 0, this._inputDetected = false, this._mediaSessionId = null, null == (i = this._voiceQuality) || i.stop(), this._voiceQuality = null, clearInterval(this._voiceQualityPeriodicStatsInterval), this._voiceQualityPeriodicStatsInterval = null, this._voiceQualityPeriodicStatsSequenceId = 0, this._noiseCancellationError = 0, this._numNoiseCancellationChanges = 0, null == (a = this._voiceDuration) || a.stop(), this._voiceDuration = null, C.Z.reset(), null == (o = this._videoQuality) || o.stop(), this._videoQuality = null, this._videoHealthManager = null, null == (s = this._localMediaSinkWantsManager) || s.reset(), this._secureFramesState = null, this._userIds = new Set([this.userId]), this._secureFramesRosterMap.clear(), this._secureFramesTransitionStates.clear(), this._secureFramesNextTransitionState = true, this._secureFramesMaxConcurrentTransitions = 0, this._secureFramesTransitionPrepareCount = 0, this._secureFramesTransitionExecuteCount = 0, null != this._connection) {
+    if (this._pingTimeouts = [], this._pings = [], this._connectCompletedTime = 0, this._pingBadCount = 0, this._inputDetected = false, this._mediaSessionId = null, null == (i = this._voiceQuality) || i.stop(), this._voiceQuality = null, clearInterval(this._voiceQualityPeriodicStatsInterval), this._voiceQualityPeriodicStatsInterval = null, this._voiceQualityPeriodicStatsSequenceId = 0, this._noiseCancellationError = 0, this._numNoiseCancellationChanges = 0, null == (a = this._voiceDuration) || a.stop(), this._voiceDuration = null, A.Z.reset(), null == (o = this._videoQuality) || o.stop(), this._videoQuality = null, this._videoHealthManager = null, null == (s = this._localMediaSinkWantsManager) || s.reset(), this._secureFramesState = null, this._userIds = new Set([this.userId]), this._secureFramesRosterMap.clear(), this._secureFramesTransitionStates.clear(), this._secureFramesNextTransitionState = true, this._secureFramesMaxConcurrentTransitions = 0, this._secureFramesTransitionPrepareCount = 0, this._secureFramesTransitionExecuteCount = 0, null != this._connection) {
       let e = this._connection;
       this._connection = null, e.destroy()
     }
-    this.setState(es.hes.DISCONNECTED, {
-      willReconnect: N
+    this.setState(eo.hes.DISCONNECTED, {
+      willReconnect: R
     })
   }
   _handleResuming(e) {
@@ -555,88 +554,84 @@ class eC extends Chunk47770.Z {
   }
   _handleReady(e, t, n, r, i, a, o) {
     var s;
-    this.setState(es.hes.RTC_CONNECTING), this.port = n, this._chooseExperiments(null != o ? o : []), 0 === a.length && a.push({
-      type: el.Tr.VIDEO,
+    this.setState(eo.hes.RTC_CONNECTING), this.port = n, this._chooseExperiments(null != o ? o : []), 0 === a.length && a.push({
+      type: es.Tr.VIDEO,
       rid: "100",
       ssrc: i + 1,
       rtxSsrc: i + 2,
       quality: 100,
       active: false
     });
-    let l = j.Z.getMediaEngine(),
-      c = D.Z.getPersistentCodesEnabled(),
-      u = null != (s = x.default.getStaticAuthSessionId()) ? s : true,
-      d = A.Z.getConfig({
-        location: "RTCConnection"
-      }).minBitrate,
-      h = (0, _.zO)(),
-      g = l.connect(this.context, this.userId, eu({
+    let l = L.Z.getMediaEngine(),
+      c = w.Z.getPersistentCodesEnabled(),
+      u = null != (s = D.default.getStaticAuthSessionId()) ? s : true,
+      d = (0, _.zO)(),
+      h = l.connect(this.context, this.userId, ec({
         ssrc: i,
         address: t,
         port: n,
         modes: r,
         experiments: this._selectedExperiments,
         streamParameters: a,
-        qosEnabled: j.Z.getQoS(),
-        signingKeyId: c ? u : true,
-        callMinBitrate: d
+        qosEnabled: L.Z.getQoS(),
+        signingKeyId: c ? u : true
       }, this.getExtraConnectionOptions())),
-      b = (0, _.zO)() - h;
-    g.setUseElectronVideo(l.supports(el.AN.ELECTRON_VIDEO)), j.Z.supports(el.AN.IMAGE_QUALITY_MEASUREMENT) && g.setVideoQualityMeasurement("imageQualityWebrtcPsnrDb:5000,imageQualityVmaf_v061:5000,hwdec");
-    let y = ["unk"];
-    this.context === el.Yn.STREAM && (y.push("nvRelaxRc=250"), y.push("nvNewPresets")), j.Z.getUseVaapiEncoder() && y.push("vaapi"), g.setVideoEncoderExperiments(y.join(",")), g.on(f.Sh.Speaking, (e, t, n) => {
-      this.userId === e && this.sendSpeaking(t, n), this.emit(q.z.Speaking, ev(e), t)
-    }), g.on(f.Sh.ToggleMuteFromNative, () => {
-      this.context === el.Yn.DEFAULT && m.Z.toggleSelfMute({
+      g = (0, _.zO)() - d;
+    h.setUseElectronVideo(l.supports(es.AN.ELECTRON_VIDEO)), L.Z.supports(es.AN.IMAGE_QUALITY_MEASUREMENT) && h.setVideoQualityMeasurement("imageQualityWebrtcPsnrDb:5000,imageQualityVmaf_v061:5000,hwdec");
+    let b = ["unk"];
+    this.context === es.Yn.STREAM && (b.push("nvRelaxRc=250"), b.push("nvNewPresets")), L.Z.getUseVaapiEncoder() && b.push("vaapi"), h.setVideoEncoderExperiments(b.join(",")), h.on(f.Sh.Speaking, (e, t, n) => {
+      this.userId === e && this.sendSpeaking(t, n), this.emit(z.z.Speaking, eO(e), t)
+    }), h.on(f.Sh.ToggleMuteFromNative, () => {
+      this.context === es.Yn.DEFAULT && m.Z.toggleSelfMute({
         playSoundEffect: false
       })
-    }), g.on(f.Sh.NativeMuteChanged, e => {
-      this.context === el.Yn.DEFAULT && E.Z.nativeMuteChanged(e)
-    }), g.on(f.Sh.Video, (e, t, n, r, i, a) => {
+    }), h.on(f.Sh.NativeMuteChanged, e => {
+      this.context === es.Yn.DEFAULT && E.Z.nativeMuteChanged(e)
+    }), h.on(f.Sh.Video, (e, t, n, r, i, a) => {
       this._handleVideoStreamId({
-        userId: ev(e),
+        userId: eO(e),
         streamId: t,
         audioSsrc: n,
         videoSsrc: null != r ? r : 0,
         rtxSsrc: i,
         videoStreamParameters: a
       }), this.userId === e && (this.sendVideo(null != n ? n : 0, null != r ? r : 0, null != i ? i : 0, a), null == a || a.forEach(t => {
-        100 === t.quality && this.emit(q.z.VideoSourceQualityChanged, this.guildId, this.channelId, ev(e), t.maxResolution, t.maxFrameRate, this.context)
+        100 === t.quality && this.emit(z.z.VideoSourceQualityChanged, this.guildId, this.channelId, eO(e), t.maxResolution, t.maxFrameRate, this.context)
       }))
-    }), g.on(f.Sh.FirstFrame, (e, t, n) => {
-      null != this._localMediaSinkWantsManager && (this._localMediaSinkWantsManager.setFirstFrameReceived(t), this.emit(q.z.Video, this.guildId, this.channelId, ev(e), n, this.streamServerId)), null != this._goLiveQualityManager && (this._goLiveQualityManager.setFirstFrameReceived(t), this.emit(q.z.Video, this.guildId, this.channelId, ev(e), n, this.streamServerId))
-    }), g.on(f.Sh.Silence, e => {
+    }), h.on(f.Sh.FirstFrame, (e, t, n) => {
+      null != this._localMediaSinkWantsManager && (this._localMediaSinkWantsManager.setFirstFrameReceived(t), this.emit(z.z.Video, this.guildId, this.channelId, eO(e), n, this.streamServerId)), null != this._goLiveQualityManager && (this._goLiveQualityManager.setFirstFrameReceived(t), this.emit(z.z.Video, this.guildId, this.channelId, eO(e), n, this.streamServerId))
+    }), h.on(f.Sh.Silence, e => {
       this._inputDetected = this._inputDetected || !e
-    }), g.on(f.Sh.Connected, (r, i) => {
+    }), h.on(f.Sh.Connected, (r, i) => {
       if (this.logger.info("RTC connected to media server: ".concat(t, ":").concat(n)), e !== this._socket) return void this.logger.warn("Socket mismatch, disconnecting");
-      switch (this._voiceQuality = new ea.Z(g), this._voiceQuality.start(), this._voiceQuality.on(ea.B.InputDeviceSampleRateChanged, e => {
+      switch (this._voiceQuality = new ei.Z(h), this._voiceQuality.start(), this._voiceQuality.on(ei.B.InputDeviceSampleRateChanged, e => {
           p.Z.dispatch({
             type: "AUDIO_INPUT_DEVICE_SAMPLE_RATE_CHANGED",
             sampleRate: e
           })
-        }), this._voiceQualityPeriodicStatsSequenceId = 0, this._voiceQualityPeriodicStatsInterval = setInterval(this._handleVoiceQualityPeriodicsStats, 3e5), this._systemResponsiveness = new et.Z(g), this._systemResponsiveness.start(), this._systemResources = new ee.Z, this._systemResources.setLastBattery(), this._noiseCancellationError = 0, this._voiceDuration = new ei.Z(this.userId, g), this._voiceDuration.start(g.getSelfMute(), g.getVoiceFilterId()), this.protocol = r, r) {
+        }), this._voiceQualityPeriodicStatsSequenceId = 0, this._voiceQualityPeriodicStatsInterval = setInterval(this._handleVoiceQualityPeriodicsStats, 3e5), this._systemResponsiveness = new ee.Z(h), this._systemResponsiveness.start(), this._systemResources = new $.Z, this._systemResources.setLastBattery(), this._noiseCancellationError = 0, this._voiceDuration = new er.Z(this.userId, h), this._voiceDuration.start(h.getSelfMute(), h.getVoiceFilterId()), this.protocol = r, r) {
         case "udp":
-          this.logger.info("Sending UDP info to RTC server.", i, this._selectedExperiments), e.once(Q.V.Encryption, (e, t) => {
-            g === this._connection && (g.setEncryption(e, t), this._encryptionMode = e)
+          this.logger.info("Sending UDP info to RTC server.", i, this._selectedExperiments), e.once(X.V.Encryption, (e, t) => {
+            h === this._connection && (h.setEncryption(e, t), this._encryptionMode = e)
           }), e.selectProtocol(r, this.getRTCConnectionId(), i, this._selectedExperiments);
           break;
         case "webrtc":
-          this.logger.info("Sending local SDP to RTC server."), e.once(Q.V.SDP, this._handleSDP.bind(this)), e.selectProtocol(r, this.getRTCConnectionId(), i);
+          this.logger.info("Sending local SDP to RTC server."), e.once(X.V.SDP, this._handleSDP.bind(this)), e.selectProtocol(r, this.getRTCConnectionId(), i);
           break;
         default:
           this.logger.error("Unable to determine protocol.");
           return
       }
       this._backoff.succeed()
-    }), g.on(f.Sh.VideoEncoderFallback, t => {
+    }), h.on(f.Sh.VideoEncoderFallback, t => {
       let n = t.filter(e => "video" === e.type).map(e => e.name).join(",");
       this.logger.info("The originally selected video encoder is not working, fallback to the other available encoders: ".concat(n)), e.updateSession({
         codecs: t
       })
-    }), g.on(f.Sh.Error, t => {
+    }), h.on(f.Sh.Error, t => {
       if (e !== this._socket) return;
-      let n = U.Z.shouldIncludePreferredRegion() ? U.Z.getPreferredRegion() : null;
-      this.logger.error("Error occurred while connecting to RTC server: ".concat(t)), B.default.track(es.rMx.VOICE_CONNECTION_FAILURE, ef(eu({}, this._getAnalyticsProperties()), {
+      let n = k.Z.shouldIncludePreferredRegion() ? k.Z.getPreferredRegion() : null;
+      this.logger.error("Error occurred while connecting to RTC server: ".concat(t)), G.default.track(eo.rMx.VOICE_CONNECTION_FAILURE, ed(ec({}, this._getAnalyticsProperties()), {
         hostname: this.hostname,
         port: this.port,
         protocol: this.protocol,
@@ -645,43 +640,43 @@ class eC extends Chunk47770.Z {
         connect_count: this._connectCount,
         join_voice_id: this.joinVoiceId
       }))
-    }), g.on(f.Sh.ConnectionStateChange, t => {
+    }), h.on(f.Sh.ConnectionStateChange, t => {
       if (this.logger.info("RTC media connection state change: ".concat(this.state, " => ").concat(t)), e !== this._socket) return;
       let n = this.state;
       switch (t) {
-        case el.$j.DISCONNECTED:
-          this.setState(es.hes.RTC_DISCONNECTED);
+        case es.$j.DISCONNECTED:
+          this.setState(eo.hes.RTC_DISCONNECTED);
           break;
-        case el.$j.CONNECTING:
-          this.setState(es.hes.RTC_CONNECTING);
+        case es.$j.CONNECTING:
+          this.setState(eo.hes.RTC_CONNECTING);
           break;
-        case el.$j.CONNECTED:
-          this.setState(es.hes.RTC_CONNECTED);
+        case es.$j.CONNECTED:
+          this.setState(eo.hes.RTC_CONNECTED);
           break;
-        case el.$j.NO_ROUTE:
-          this.setState(es.hes.NO_ROUTE);
+        case es.$j.NO_ROUTE:
+          this.setState(eo.hes.NO_ROUTE);
           break;
-        case el.$j.ICE_CHECKING:
-          this.setState(es.hes.ICE_CHECKING);
+        case es.$j.ICE_CHECKING:
+          this.setState(eo.hes.ICE_CHECKING);
           break;
-        case el.$j.DTLS_CONNECTING:
-          this.setState(es.hes.DTLS_CONNECTING)
+        case es.$j.DTLS_CONNECTING:
+          this.setState(eo.hes.DTLS_CONNECTING)
       }
-      if (n === es.hes.RTC_CONNECTING && this.state === es.hes.RTC_DISCONNECTED ? this.reconnect() : this.state === es.hes.NO_ROUTE && (0 === this._backoff.fails && this._handleNoRoute(), this._backoff.fail(this.reconnect)), this.state === es.hes.RTC_CONNECTED) {
-        var r, i, a, o, s, l, c, u, d, f, p, h, m, E;
-        let e = U.Z.shouldIncludePreferredRegion() ? U.Z.getPreferredRegion() : null;
+      if (n === eo.hes.RTC_CONNECTING && this.state === eo.hes.RTC_DISCONNECTED ? this.reconnect() : this.state === eo.hes.NO_ROUTE && (0 === this._backoff.fails && this._handleNoRoute(), this._backoff.fail(this.reconnect)), this.state === eo.hes.RTC_CONNECTED) {
+        var r, i, a, o, s, l, c, u, d, f, p, m, E, b;
+        let e = k.Z.shouldIncludePreferredRegion() ? k.Z.getPreferredRegion() : null;
         if (this._connecting) {
-          let t = j.Z.getSettings(),
+          let t = L.Z.getSettings(),
             n = this._getAnalyticsProperties();
-          B.default.track(es.rMx.VOICE_CONNECTION_SUCCESS, eu(ef(eu({}, n), {
+          G.default.track(eo.rMx.VOICE_CONNECTION_SUCCESS, ec(ed(ec({}, n), {
             hostname: this.hostname,
             port: this.port,
             protocol: this.protocol,
             cloudflare_best_region: e,
             connect_time: (0, _.zO)() - (this._connected ? this._connectStartTime : this._createdTime),
             connect_count: this._connectCount,
-            audio_subsystem: j.Z.getMediaEngine().getAudioSubsystem(),
-            audio_layer: j.Z.getMediaEngine().getAudioLayer(),
+            audio_subsystem: L.Z.getMediaEngine().getAudioSubsystem(),
+            audio_layer: L.Z.getMediaEngine().getAudioLayer(),
             automatic_audio_subsystem: t.automaticAudioSubsystem,
             media_session_id: this.getMediaSessionId(),
             participant_type: this.getVoiceParticipantType(),
@@ -689,43 +684,43 @@ class eC extends Chunk47770.Z {
           }), this.stateHistory.getVoiceConnectionSuccessStats()));
           let r = performance.now(),
             i = (e, t) => null == e || null == t ? null : e - t;
-          B.default.track(es.rMx.VOICE_CONNECTION_TTC_COLLECTED, {
+          G.default.track(eo.rMx.VOICE_CONNECTION_TTC_COLLECTED, {
             rtc_connection_id: n.rtc_connection_id,
             time_1_creation_to_connect: this._connectStartTime - this._createdTime,
-            time_2_media_engine_connect: b,
-            time_3_media_engine_create_native_connection: null == (a = g.transportInfo) ? true : a.createConnectionTime,
-            time_4_media_engine_connect_to_socket: null == (o = g.transportInfo) ? true : o.connectTime,
+            time_2_media_engine_connect: g,
+            time_3_media_engine_create_native_connection: null == (a = h.transportInfo) ? true : a.createConnectionTime,
+            time_4_media_engine_connect_to_socket: null == (o = h.transportInfo) ? true : o.connectTime,
             time_5_scheduling_connected_callback: i(null == (s = this._connection) ? true : s.onConnectCallbackAt, null == (c = this._connection) || null == (l = c.transportInfo) ? true : l.connectCallbackScheduledMs),
             time_6_state_connected_to_end_measure: i(r, null == (u = this._connection) ? true : u.onConnectCallbackAt),
             connect_count: this._connectCount,
             rtc_connecting_native_connect: i(null == (d = this._connection) ? true : d.onConnectCallbackAt, null == (f = this._connection) ? true : f.beginInitializeAt),
-            rtc_connecting_native_codecs: i(null == (p = this._connection) ? true : p.onVideoCodecsCallbackAt, null == (h = this._connection) ? true : h.onConnectCallbackAt),
-            rtc_connecting_native_crypto_modes: i(null == (m = this._connection) ? true : m.onEncryptionModesCallbackAt, null == (E = this._connection) ? true : E.onVideoCodecsCallbackAt)
+            rtc_connecting_native_codecs: i(null == (p = this._connection) ? true : p.onVideoCodecsCallbackAt, null == (m = this._connection) ? true : m.onConnectCallbackAt),
+            rtc_connecting_native_crypto_modes: i(null == (E = this._connection) ? true : E.onEncryptionModesCallbackAt, null == (b = this._connection) ? true : b.onVideoCodecsCallbackAt)
           })
         }
-        null == (r = this._localMediaSinkWantsManager) || r.setConnection(g), null == (i = this._goLiveQualityManager) || i.update(), this._connectCompletedTime = (0, _.zO)(), this._connected = true, this._connecting = false, this._encountered_socket_failure = false
-      } else n === es.hes.RTC_CONNECTED && this.stateHistory.reset(this.state)
-    }), g.on(f.Sh.SecureFramesUpdate, e => {
-      this._secureFramesState = e, this.emit(q.z.SecureFramesUpdate)
-    }), g.on(f.Sh.Ping, this._handlePing.bind(this)), g.on(f.Sh.PingTimeout, this._handlePingTimeout.bind(this)), g.on(f.Sh.OutboundLossRate, this._handleOutboundLossRate.bind(this)), g.on(f.Sh.SoundshareTrace, this._handleSoundshareTrace.bind(this)), g.on(f.Sh.LocalVideoDisabled, this._handleLocalVideoDisabled.bind(this)), g.on(f.Sh.Stats, z.Z.create()), g.on(f.Sh.RemoteStreamsReady, this._handleRemoteStreamsReady.bind(this)), g.on(f.Sh.UsersMerged, this.handleUsersMerged.bind(this)), g.on(f.Sh.NoiseCancellationError, e => {
+        null == (r = this._localMediaSinkWantsManager) || r.setConnection(h), null == (i = this._goLiveQualityManager) || i.update(), this._connectCompletedTime = (0, _.zO)(), this._connected = true, this._connecting = false, this._encountered_socket_failure = false
+      } else n === eo.hes.RTC_CONNECTED && this.stateHistory.reset(this.state)
+    }), h.on(f.Sh.SecureFramesUpdate, e => {
+      this._secureFramesState = e, this.emit(z.z.SecureFramesUpdate)
+    }), h.on(f.Sh.Ping, this._handlePing.bind(this)), h.on(f.Sh.PingTimeout, this._handlePingTimeout.bind(this)), h.on(f.Sh.OutboundLossRate, this._handleOutboundLossRate.bind(this)), h.on(f.Sh.SoundshareTrace, this._handleSoundshareTrace.bind(this)), h.on(f.Sh.LocalVideoDisabled, this._handleLocalVideoDisabled.bind(this)), h.on(f.Sh.Stats, K.Z.create()), h.on(f.Sh.RemoteStreamsReady, this._handleRemoteStreamsReady.bind(this)), h.on(f.Sh.UsersMerged, this.handleUsersMerged.bind(this)), h.on(f.Sh.NoiseCancellationError, e => {
       this._noiseCancellationError = e
-    }), g.on(f.Sh.MLSFailure, this._handleMLSFailure.bind(this)), g.setRemoteVideoSinkWants(this._remoteVideoSinkWants), this._connection = g, this._mediaEngineConnectionId = g.mediaEngineConnectionId
+    }), h.on(f.Sh.MLSFailure, this._handleMLSFailure.bind(this)), h.setRemoteVideoSinkWants(this._remoteVideoSinkWants), this._connection = h, this._mediaEngineConnectionId = h.mediaEngineConnectionId
   }
   _handleSpeaking(e, t, n, r) {
     let i = this._connection;
     if (null != i && this.userId !== t) {
       var a;
-      r !== el.Dg.NONE && i.createUser(t, n), null == (a = this._localMediaSinkWantsManager) || a.setAudioSSRC(t, n)
+      r !== es.Dg.NONE && i.createUser(t, n), null == (a = this._localMediaSinkWantsManager) || a.setAudioSSRC(t, n)
     }
   }
   handleFlags(e, t) {
-    this.emit(q.z.Flags, e, t)
+    this.emit(z.z.Flags, e, t)
   }
   handlePlatform(e, t) {
-    this.emit(q.z.Platform, e, t, this.channelId)
+    this.emit(z.z.Platform, e, t, this.channelId)
   }
   handleUsersMerged(e) {
-    this.emit(q.z.UsersMerged, e.map(e => e.id), this.context)
+    this.emit(z.z.UsersMerged, e.map(e => e.id), this.context)
   }
   getOrCreateVideoQuality() {
     if (null != this._connection && null == this._videoQuality) {
@@ -756,7 +751,7 @@ class eC extends Chunk47770.Z {
       videoSsrc: s,
       videoStreamParameters: l
     } = e;
-    if (this.emit(q.z.Video, this.guildId, this.channelId, a, o, this.streamServerId), null != o && null == this.getOrCreateVideoQuality() && this.logger.error("_handleVideoStreamId: Unable to create videoQuality."), null != this._videoQuality && this.userId === a && l.forEach(e => {
+    if (this.emit(z.z.Video, this.guildId, this.channelId, a, o, this.streamServerId), null != o && null == this.getOrCreateVideoQuality() && this.logger.error("_handleVideoStreamId: Unable to create videoQuality."), null != this._videoQuality && this.userId === a && l.forEach(e => {
         var t, n;
         let r = null != (t = e.ssrc) ? t : 0;
         r > 0 && true === e.active && (null == (n = this._videoQuality) || n.setOutboundSsrc(r))
@@ -770,12 +765,12 @@ class eC extends Chunk47770.Z {
     if (this.userId !== e) {
       let n = this.getOrCreateVideoQuality();
       if (null == n) return void this.logger.error("_handleLocalVideoDisabled: Unable to create videoQuality.");
-      n.setUserVideoDisabled(ev(e), t)
+      n.setUserVideoDisabled(eO(e), t)
     }
   }
   _handleRemoteStreamsReady(e) {
     let t = (0, _.zO)() - this._connectStartTime;
-    B.default.track(es.rMx.VOICE_CONNECTION_REMOTE_STREAMS_CREATED, ef(eu({}, this._getAnalyticsProperties()), {
+    G.default.track(eo.rMx.VOICE_CONNECTION_REMOTE_STREAMS_CREATED, ed(ec({}, this._getAnalyticsProperties()), {
       number_of_users: e,
       duration_ms: t
     }))
@@ -785,7 +780,7 @@ class eC extends Chunk47770.Z {
       if (null != this._localMediaSinkWantsManager) {
         this._localMediaSinkWantsManager.setAudioSSRC(t, n);
         let e = i.map(e => ({
-          type: el.Tr.VIDEO,
+          type: es.Tr.VIDEO,
           rid: e.rid,
           ssrc: e.ssrc,
           rtxSsrc: e.rtxSsrc,
@@ -793,7 +788,7 @@ class eC extends Chunk47770.Z {
           active: r > 0
         }));
         0 === e.length && e.push({
-          type: el.Tr.VIDEO,
+          type: es.Tr.VIDEO,
           rid: "100",
           ssrc: r,
           rtxSsrc: r + 1,
@@ -811,20 +806,20 @@ class eC extends Chunk47770.Z {
         null == (a = this._goLiveQualityManager) || a.setUserID(t), null == (o = this._goLiveQualityManager) || o.updateAudioAndVideoStreamInfo(n, e)
       }
       null == i || i.forEach(e => {
-        100 === e.quality && this.emit(q.z.VideoSourceQualityChanged, this.guildId, this.channelId, t, e.maxResolution, e.maxFrameRate, this.context)
+        100 === e.quality && this.emit(z.z.VideoSourceQualityChanged, this.guildId, this.channelId, t, e.maxResolution, e.maxFrameRate, this.context)
       })
     }
   }
   _handleControlPing(e) {
-    j.Z.supports(el.AN.NATIVE_PING) || this._handlePing(e)
+    L.Z.supports(es.AN.NATIVE_PING) || this._handlePing(e)
   }
   _handlePing(e) {
     if (true !== e) {
       for (this._pings.push({
           time: Date.now(),
           value: e
-        }); this._pings.length >= ep;) this._pings.shift();
-      e > em && this._pingBadCount++, this.emit(q.z.Ping, this._pings, this.quality)
+        }); this._pings.length >= e_;) this._pings.shift();
+      e > eh && this._pingBadCount++, this.emit(z.z.Ping, this._pings, this.quality)
     }
   }
   _handlePingTimeout(e, t) {
@@ -833,7 +828,7 @@ class eC extends Chunk47770.Z {
     n >= 3 && this._pingTimeouts[n - 1] === this._pingTimeouts[n - 2] + 1 && this._pingTimeouts[n - 2] === this._pingTimeouts[n - 3] + 1 && this._handlePing(t)
   }
   _handleOutboundLossRate(e) {
-    this._outboundLossRate = e, this.emit(q.z.OutboundLossRate, e)
+    this._outboundLossRate = e, this.emit(z.z.OutboundLossRate, e)
   }
   _handleSoundshareTrace(e) {
     this._soundshareStats.traceEvent(true, e)
@@ -856,31 +851,31 @@ class eC extends Chunk47770.Z {
     e.forEach(e => {
       var t;
       this._userIds.add(e), null == (t = this._connection) || t.createUser(e, 0)
-    }), this.emit(q.z.ClientConnect, e), null == (t = this._videoQuality) || t.updateCallUserIdsCount(this._userIds.size), null == (n = this._goLiveQualityManager) || n.updateCallUserIds(this._userIds), null == (r = this._localMediaSinkWantsManager) || r.updateCallUserIds(this._userIds)
+    }), this.emit(z.z.ClientConnect, e), null == (t = this._videoQuality) || t.updateCallUserIdsCount(this._userIds.size), null == (n = this._goLiveQualityManager) || n.updateCallUserIds(this._userIds), null == (r = this._localMediaSinkWantsManager) || r.updateCallUserIds(this._userIds)
   }
   _handleClientDisconnect(e) {
     var t, n, r, i, a, o;
     let s = this._videoQuality;
-    if (null != s && this.context === el.Yn.DEFAULT) {
+    if (null != s && this.context === es.Yn.DEFAULT) {
       let t = s.getInboundStats(e),
         n = null != (a = null == t ? true : t.num_frames) ? a : 0;
-      null != t && n > 0 && (B.default.track(es.rMx.VIDEO_STREAM_ENDED, eu(ef(eu({}, this._getAnalyticsProperties()), {
-        app_hardware_acceleration_enabled: Z.Z.getAppHardwareAccelerationEnabled(),
+      null != t && n > 0 && (G.default.track(eo.rMx.VIDEO_STREAM_ENDED, ec(ed(ec({}, this._getAnalyticsProperties()), {
+        app_hardware_acceleration_enabled: B.Z.getAppHardwareAccelerationEnabled(),
         media_session_id: this.getMediaSessionId(),
         sender_user_id: e,
         reason: "User disconnected",
         participant_type: "receiver",
-        guild_region: U.Z.getRegion(this.hostname),
+        guild_region: k.Z.getRegion(this.hostname),
         hostname: this.hostname,
-        hardware_enabled: j.Z.getHardwareEncoding()
+        hardware_enabled: L.Z.getHardwareEncoding()
       }), t, s.getNetworkStats(), s.getCodecUsageStats("receiver", e))), s.destroyUser(e), null == (o = this._videoHealthManager) || o.deleteUser(e))
     }
     let l = this._connection;
-    null != l && l.destroyUser(e), null == (t = this._localMediaSinkWantsManager) || t.destroyUser(e), this._userIds.delete(e), this.emit(q.z.ClientDisconnect, e), null == (n = this._goLiveQualityManager) || n.updateCallUserIds(this._userIds), null == (r = this._localMediaSinkWantsManager) || r.updateCallUserIds(this._userIds), null == (i = this._videoQuality) || i.updateCallUserIdsCount(this._userIds.size), 1 === this._userIds.size && (this._secureFramesLastBecameAloneTime = (0, _.zO)())
+    null != l && l.destroyUser(e), null == (t = this._localMediaSinkWantsManager) || t.destroyUser(e), this._userIds.delete(e), this.emit(z.z.ClientDisconnect, e), null == (n = this._goLiveQualityManager) || n.updateCallUserIds(this._userIds), null == (r = this._localMediaSinkWantsManager) || r.updateCallUserIds(this._userIds), null == (i = this._videoQuality) || i.updateCallUserIdsCount(this._userIds.size), 1 === this._userIds.size && (this._secureFramesLastBecameAloneTime = (0, _.zO)())
   }
   _handleCodecs(e, t) {
     let n = this._connection;
-    null != n && null != this.protocol ? n.setCodecs(null != e && "" !== e ? e : el.ad.OPUS, null != t && "" !== t ? t : el.ad.H264, this.context) : this.logger.warn("Cannot set codecs on connection with protocol:", this.protocol)
+    null != n && null != this.protocol ? n.setCodecs(null != e && "" !== e ? e : es.ad.OPUS, null != t && "" !== t ? t : es.ad.H264, this.context) : this.logger.warn("Cannot set codecs on connection with protocol:", this.protocol)
   }
   _handleSDP(e) {
     let t = this._connection;
@@ -889,7 +884,7 @@ class eC extends Chunk47770.Z {
   _handleMediaSessionId(e) {
     this._mediaSessionId = e, this.logger.info("Setting media-session-id: ".concat(e, " for rtc-connection-id: ").concat(this.getRTCConnectionId()));
     let t = y.Z.getRawThermalState();
-    B.default.track(es.rMx.MEDIA_SESSION_JOINED, ef(eu({}, this._getAnalyticsProperties()), {
+    G.default.track(eo.rMx.MEDIA_SESSION_JOINED, ed(ec({}, this._getAnalyticsProperties()), {
       media_session_id: this.getMediaSessionId(),
       parent_media_session_id: this.parentMediaSessionId,
       raw_thermal_state: t
@@ -931,7 +926,7 @@ class eC extends Chunk47770.Z {
     let n = this._secureFramesTransitionStates.size;
     this._secureFramesTransitionStates.delete(e);
     let r = (e, t) => null != e && null != t ? e - t : true;
-    B.default.track(es.rMx.SECURE_FRAMES_TRANSITION, ef(eu({}, this._getAnalyticsProperties()), {
+    G.default.track(eo.rMx.SECURE_FRAMES_TRANSITION, ed(ec({}, this._getAnalyticsProperties()), {
       media_session_id: this.getMediaSessionId(),
       parent_media_session_id: this.parentMediaSessionId,
       sender_user_id: this.userId,
@@ -964,7 +959,7 @@ class eC extends Chunk47770.Z {
       users_removed_count: t.usersRemoved,
       roster_size_after: t.rosterSizeAfter,
       init_to_finish_duration: r(t.executeFinishedTime, t.initReceivedTime)
-    })), e === eO && this._trackRemainingSecureFrameTransitions()
+    })), e === ey && this._trackRemainingSecureFrameTransitions()
   }
   _trackRemainingSecureFrameTransitions() {
     this._secureFramesTransitionStates.forEach((e, t) => {
@@ -974,11 +969,11 @@ class eC extends Chunk47770.Z {
   _storeSecureFrameNextTransitionData(e) {
     return null == this._secureFramesNextTransitionState && (this._secureFramesNextTransitionState = {
       creationTime: (0, _.zO)()
-    }), this._secureFramesNextTransitionState = eu({}, this._secureFramesNextTransitionState, e)
+    }), this._secureFramesNextTransitionState = ec({}, this._secureFramesNextTransitionState, e)
   }
   _storeSecureFrameTransitionData(e, t) {
     let n = this._secureFramesTransitionStates.get(e);
-    null == n && (n = this._storeSecureFrameNextTransitionData({}), this._secureFramesNextTransitionState = true), this._secureFramesTransitionStates.set(e, eu({}, n, t)), this._secureFramesMaxConcurrentTransitions = Math.max(this._secureFramesMaxConcurrentTransitions, this._secureFramesTransitionStates.size)
+    null == n && (n = this._storeSecureFrameNextTransitionData({}), this._secureFramesNextTransitionState = true), this._secureFramesTransitionStates.set(e, ec({}, n, t)), this._secureFramesMaxConcurrentTransitions = Math.max(this._secureFramesMaxConcurrentTransitions, this._secureFramesTransitionStates.size)
   }
   _handleSecureFramesInit(e) {
     var t, n;
@@ -986,26 +981,26 @@ class eC extends Chunk47770.Z {
     this.recordEvent({
       c: 11,
       v: e
-    }), e > 0 ? (this.logger.info("DAVE protocol init with protocol version: ".concat(e)), this._mlsInitReceivedTime = r, null == (t = this._connection) || t.prepareSecureFramesEpoch(ey, e, this.trueChannelId), this._sendMLSKeyPackage(), this._storeSecureFrameNextTransitionData({
+    }), e > 0 ? (this.logger.info("DAVE protocol init with protocol version: ".concat(e)), this._mlsInitReceivedTime = r, null == (t = this._connection) || t.prepareSecureFramesEpoch(eb, e, this.trueChannelId), this._sendMLSKeyPackage(), this._storeSecureFrameNextTransitionData({
       initReceivedTime: r,
       initFinishedTime: (0, _.zO)(),
       protocolVersion: e
     }), this.recordEvent({
       c: 10
-    })) : null == (n = this._connection) || n.prepareSecureFramesTransition(eO, e, () => {
+    })) : null == (n = this._connection) || n.prepareSecureFramesTransition(ey, e, () => {
       let t = false;
       try {
         var n;
-        null == (n = this._connection) || n.executeSecureFramesTransition(eO)
+        null == (n = this._connection) || n.executeSecureFramesTransition(ey)
       } catch (e) {
-        t = true, Y.Z.captureException(e)
+        t = true, H.Z.captureException(e)
       }
-      this._storeSecureFrameTransitionData(eO, {
+      this._storeSecureFrameTransitionData(ey, {
         initReceivedTime: r,
         initFinishedTime: (0, _.zO)(),
         protocolVersion: e,
         executeError: t
-      }), this._trackSecureFrameTransition(eO)
+      }), this._trackSecureFrameTransition(ey)
     })
   }
   _handleSecureFramesRosterChange(e, t) {
@@ -1014,12 +1009,12 @@ class eC extends Chunk47770.Z {
       i = 0;
     Object.entries(e).forEach(e => {
       let [t, a] = e;
-      n.push(ev(t)), null == a || 0 === a.byteLength ? (i++, this._secureFramesRosterMap.delete(ev(t))) : (r++, this._secureFramesRosterMap.set(ev(t), a))
+      n.push(eO(t)), null == a || 0 === a.byteLength ? (i++, this._secureFramesRosterMap.delete(eO(t))) : (r++, this._secureFramesRosterMap.set(eO(t), a))
     }), this._storeSecureFrameTransitionData(t, {
       usersAdded: r,
       usersRemoved: i,
       rosterSizeAfter: this._secureFramesRosterMap.size
-    }), this.emit(q.z.RosterMapUpdate, n)
+    }), this.emit(z.z.RosterMapUpdate, n)
   }
   _handleSecureFramesPrepareTransition(e, t) {
     var n;
@@ -1037,7 +1032,7 @@ class eC extends Chunk47770.Z {
     var n;
     this.logger.info("Preparing DAVE protocol epoch: ".concat(e, ", protocol version: ").concat(t));
     let r = e.toString();
-    null == (n = this._connection) || n.prepareSecureFramesEpoch(r, t, this.trueChannelId), r === ey && (this._mlsInitReceivedTime = (0, _.zO)(), this._sendMLSKeyPackage(), this.recordEvent({
+    null == (n = this._connection) || n.prepareSecureFramesEpoch(r, t, this.trueChannelId), r === eb && (this._mlsInitReceivedTime = (0, _.zO)(), this._sendMLSKeyPackage(), this.recordEvent({
       c: 10
     }))
   }
@@ -1049,7 +1044,7 @@ class eC extends Chunk47770.Z {
     })
   }
   _maybeSendSecureFramesTransitionReady(e) {
-    if (e !== eO) {
+    if (e !== ey) {
       var t;
       this.logger.info("Sending DAVE protocol ready for transition ID ".concat(e)), null == (t = this._socket) || t.secureFramesReadyForTransition(e), this._storeSecureFrameTransitionData(e, {
         readyTime: (0, _.zO)()
@@ -1064,7 +1059,7 @@ class eC extends Chunk47770.Z {
       var r;
       null == (r = this._connection) || r.executeSecureFramesTransition(e)
     } catch (e) {
-      n = true, Y.Z.captureException(e)
+      n = true, H.Z.captureException(e)
     }
     this._storeSecureFrameTransitionData(e, {
       executeReceivedTime: t,
@@ -1144,7 +1139,7 @@ class eC extends Chunk47770.Z {
       countDuringReset: +(null != this._mlsSessionResetStartTime),
       firstOccurrence: n,
       timeSinceInit: null != this._mlsInitReceivedTime ? n - this._mlsInitReceivedTime : true,
-      eventLog: eA()
+      eventLog: eS()
     }), this._alertMLSFailureDebouced(e, t)
   }
   _trackMLSFailures(e) {
@@ -1161,7 +1156,7 @@ class eC extends Chunk47770.Z {
         timeSinceInit: u,
         eventLog: d
       }
-      of this._mlsFailures) B.default.track(es.rMx.MLS_FAILURES, ef(eu({}, this._getAnalyticsProperties()), {
+      of this._mlsFailures) G.default.track(eo.rMx.MLS_FAILURES, ed(ec({}, this._getAnalyticsProperties()), {
       media_session_id: r,
       parent_media_session_id: this.parentMediaSessionId,
       failure_id: e,
@@ -1180,7 +1175,7 @@ class eC extends Chunk47770.Z {
     this._mlsFailures = []
   }
   _alertMLSFailure(e, t) {
-    let n = G.default.getCurrentUser();
+    let n = U.default.getCurrentUser();
     ((null == n ? true : n.isStaff()) || (null == n ? true : n.isStaffPersonal())) && h.Z.show({
       title: "MLS Error in ".concat(e),
       body: "Error: ".concat(t, "! Please upload your logs in A/V settings and ask everyone in the call to do the same, and ping us in #av-e2ee in Core Tech!")
@@ -1221,32 +1216,32 @@ class eC extends Chunk47770.Z {
     sessionId: t,
     guildId: n,
     channelId: r,
-    context: i = el.Yn.DEFAULT,
+    context: i = es.Yn.DEFAULT,
     streamServerId: a,
     streamChannelId: s,
     parentMediaSessionId: l,
     joinVoiceId: d
   }) {
-    super(), ec(this, "context", true), ec(this, "userId", true), ec(this, "sessionId", true), ec(this, "guildId", true), ec(this, "parentMediaSessionId", true), ec(this, "hostname", true), ec(this, "state", true), ec(this, "_videoQuality", true), ec(this, "_soundshareStats", true), ec(this, "logger", true), ec(this, "streamServerId", true), ec(this, "streamChannelId", true), ec(this, "_channelId", true), ec(this, "_nextChannelId", true), ec(this, "joinVoiceId", true), ec(this, "channelIds", true), ec(this, "_endpoint", true), ec(this, "port", true), ec(this, "token", true), ec(this, "protocol", true), ec(this, "voiceVersion", true), ec(this, "rtcWorkerVersion", true), ec(this, "_socket", true), ec(this, "_backoff", true), ec(this, "_destroyed", true), ec(this, "_pings", true), ec(this, "_pingBadCount", true), ec(this, "_pingTimeouts", true), ec(this, "_mediaSessionId", true), ec(this, "_voiceQuality", true), ec(this, "_voiceQualityPeriodicStatsInterval", true), ec(this, "_voiceQualityPeriodicStatsSequenceId", true), ec(this, "_systemResponsiveness", true), ec(this, "_systemResources", true), ec(this, "_noiseCancellationError", true), ec(this, "_voiceDuration", true), ec(this, "_videoHealthManager", true), ec(this, "_sentVideo", true), ec(this, "_outboundLossRate", true), ec(this, "_recordingEnabled", true), ec(this, "_selectedExperiments", true), ec(this, "_localMediaSinkWantsManager", true), ec(this, "_goLiveQualityManager", true), ec(this, "_remoteVideoSinkWants", true), ec(this, "_connection", true), ec(this, "_mediaEngineConnectionId", true), ec(this, "_createdTime", true), ec(this, "_connectStartTime", true), ec(this, "_connectCompletedTime", true), ec(this, "_rtcConnectionId", true), ec(this, "_connectCount", true), ec(this, "_connectionSerial", true), ec(this, "_connected", true), ec(this, "_connecting", true), ec(this, "_encountered_socket_failure", true), ec(this, "_inputDetected", true), ec(this, "_encryptionMode", true), ec(this, "stateHistory", true), ec(this, "_supportedBandwidthEstimationExperiments", true), ec(this, "_bandwidthEstimationExperiment", true), ec(this, "_secureFramesState", true), ec(this, "_userIds", true), ec(this, "_secureFramesRosterMap", new Map), ec(this, "_nextFailureId", 0), ec(this, "_mlsFailures", []), ec(this, "_secureFramesTransitionStates", new Map), ec(this, "_secureFramesNextTransitionState", true), ec(this, "_secureFramesMaxConcurrentTransitions", 0), ec(this, "_secureFramesTransitionPrepareCount", 0), ec(this, "_secureFramesTransitionExecuteCount", 0), ec(this, "_secureFramesLastBecameAloneTime", true), ec(this, "_mlsSessionResetStartTime", true), ec(this, "_mlsInitReceivedTime", true), ec(this, "_numNoiseCancellationChanges", 0), ec(this, "_fetchAsyncResourcesPromise", true), ec(this, "_lastSentSpeakingStatus", true), ec(this, "_lastSentSSRC", true), ec(this, "powerMonitorListener", true), ec(this, "reconnect", () => {
+    super(), el(this, "context", true), el(this, "userId", true), el(this, "sessionId", true), el(this, "guildId", true), el(this, "parentMediaSessionId", true), el(this, "hostname", true), el(this, "state", true), el(this, "_videoQuality", true), el(this, "_soundshareStats", true), el(this, "logger", true), el(this, "streamServerId", true), el(this, "streamChannelId", true), el(this, "_channelId", true), el(this, "_nextChannelId", true), el(this, "joinVoiceId", true), el(this, "channelIds", true), el(this, "_endpoint", true), el(this, "port", true), el(this, "token", true), el(this, "protocol", true), el(this, "voiceVersion", true), el(this, "rtcWorkerVersion", true), el(this, "_socket", true), el(this, "_backoff", true), el(this, "_destroyed", true), el(this, "_pings", true), el(this, "_pingBadCount", true), el(this, "_pingTimeouts", true), el(this, "_mediaSessionId", true), el(this, "_voiceQuality", true), el(this, "_voiceQualityPeriodicStatsInterval", true), el(this, "_voiceQualityPeriodicStatsSequenceId", true), el(this, "_systemResponsiveness", true), el(this, "_systemResources", true), el(this, "_noiseCancellationError", true), el(this, "_voiceDuration", true), el(this, "_videoHealthManager", true), el(this, "_sentVideo", true), el(this, "_outboundLossRate", true), el(this, "_recordingEnabled", true), el(this, "_selectedExperiments", true), el(this, "_localMediaSinkWantsManager", true), el(this, "_goLiveQualityManager", true), el(this, "_remoteVideoSinkWants", true), el(this, "_connection", true), el(this, "_mediaEngineConnectionId", true), el(this, "_createdTime", true), el(this, "_connectStartTime", true), el(this, "_connectCompletedTime", true), el(this, "_rtcConnectionId", true), el(this, "_connectCount", true), el(this, "_connectionSerial", true), el(this, "_connected", true), el(this, "_connecting", true), el(this, "_encountered_socket_failure", true), el(this, "_inputDetected", true), el(this, "_encryptionMode", true), el(this, "stateHistory", true), el(this, "_supportedBandwidthEstimationExperiments", true), el(this, "_bandwidthEstimationExperiment", true), el(this, "_secureFramesState", true), el(this, "_userIds", true), el(this, "_secureFramesRosterMap", new Map), el(this, "_nextFailureId", 0), el(this, "_mlsFailures", []), el(this, "_secureFramesTransitionStates", new Map), el(this, "_secureFramesNextTransitionState", true), el(this, "_secureFramesMaxConcurrentTransitions", 0), el(this, "_secureFramesTransitionPrepareCount", 0), el(this, "_secureFramesTransitionExecuteCount", 0), el(this, "_secureFramesLastBecameAloneTime", true), el(this, "_mlsSessionResetStartTime", true), el(this, "_mlsInitReceivedTime", true), el(this, "_numNoiseCancellationChanges", 0), el(this, "_fetchAsyncResourcesPromise", true), el(this, "_lastSentSpeakingStatus", true), el(this, "_lastSentSSRC", true), el(this, "powerMonitorListener", true), el(this, "reconnect", () => {
       this.recordEvent({
         c: 7
       });
       let e = this._socket;
       null != e && (this._connected && (this._connectStartTime = (0, _.zO)()), this._connecting || (this._trackVoiceConnectionConnecting(), this._connecting = true, this._encountered_socket_failure = false), this._connectCount++, e.close(), e.connect())
-    }), ec(this, "_alertMLSFailureDebouced", o()(this._alertMLSFailure, 100)), ec(this, "_handleNetworkOnline", () => {
+    }), el(this, "_alertMLSFailureDebouced", o()(this._alertMLSFailure, 100)), el(this, "_handleNetworkOnline", () => {
       this.expeditedHeartbeat(5e3, "network detected online.")
-    }), ec(this, "_handleNetworkOffline", () => {
+    }), el(this, "_handleNetworkOffline", () => {
       this.expeditedHeartbeat(15e3, "network detected offline.", false)
-    }), ec(this, "_handleNoRoute", () => {
+    }), el(this, "_handleNoRoute", () => {
       var e;
       null == (e = this._socket) || e.noRoute()
-    }), ec(this, "_handlePowerResume", () => {
+    }), el(this, "_handlePowerResume", () => {
       this.expeditedHeartbeat(5e3, "power monitor resumed")
-    }), ec(this, "_handleVoiceQualityPeriodicsStats", () => {
+    }), el(this, "_handleVoiceQualityPeriodicsStats", () => {
       if (null != this._voiceQuality) {
         let e = this._voiceQuality.getPeriodicStats();
         if (this.shouldReportPeriodicStats(e))
-          for (let t of e) B.default.track(es.rMx.VOICE_QUALITY_PERIODIC_STATS, ef(eu({}, this._getAnalyticsProperties()), {
+          for (let t of e) G.default.track(eo.rMx.VOICE_QUALITY_PERIODIC_STATS, ed(ec({}, this._getAnalyticsProperties()), {
             media_session_id: this.getMediaSessionId(),
             sender_user_id: t.userId,
             hostname: this.hostname,
@@ -1271,18 +1266,18 @@ class eC extends Chunk47770.Z {
           }));
         this._voiceQualityPeriodicStatsSequenceId++
       }
-    }), ec(this, "getAudioDeviceStates", () => ({
+    }), el(this, "getAudioDeviceStates", () => ({
       input_device: this.getInputDeviceName(),
-      input_device_count: Object.keys(j.Z.getInputDevices()).length,
+      input_device_count: Object.keys(L.Z.getInputDevices()).length,
       output_device: this.getOutputDeviceName(),
-      output_device_count: Object.keys(j.Z.getOutputDevices()).length
-    })), ec(this, "getVideoDeviceStates", () => ({
+      output_device_count: Object.keys(L.Z.getOutputDevices()).length
+    })), el(this, "getVideoDeviceStates", () => ({
       camera_device: this.getVideoDeviceName(),
-      camera_device_count: Object.keys(j.Z.getVideoDevices()).length
-    })), ec(this, "_trackVoiceConnectionConnecting", () => {
-      let e = L.Z.getChannel(this.channelId),
+      camera_device_count: Object.keys(L.Z.getVideoDevices()).length
+    })), el(this, "_trackVoiceConnectionConnecting", () => {
+      let e = x.Z.getChannel(this.channelId),
         t = null == e ? true : e.type;
-      B.default.track(es.rMx.VOICE_CONNECTION_CONNECTING, ef(eu({}, this.getAudioDeviceStates(), this.getVideoDeviceStates()), {
+      G.default.track(eo.rMx.VOICE_CONNECTION_CONNECTING, ed(ec({}, this.getAudioDeviceStates(), this.getVideoDeviceStates()), {
         guild_id: this.guildId,
         channel_id: this.channelId,
         rtc_connection_id: this.getRTCConnectionId(),
@@ -1291,44 +1286,44 @@ class eC extends Chunk47770.Z {
         context: this.context,
         channel_type: t,
         participant_type: this.getVoiceParticipantType(),
-        is_muted: j.Z.isMute(),
+        is_muted: L.Z.isMute(),
         join_voice_id: this.joinVoiceId,
         connection_serial: this._connectionSerial
       }))
-    }), ec(this, "incomingVideoEnabledChanged", e => {
+    }), el(this, "incomingVideoEnabledChanged", e => {
       var t, n;
       null == (t = this._goLiveQualityManager) || t.onIncomingVideoEnabled(e), null == (n = this._videoQuality) || n.setOcclusionIncomingVideoEnabled(e)
-    }), ec(this, "windowVisibilityChanged", e => {
+    }), el(this, "windowVisibilityChanged", e => {
       var t;
       null == (t = this._videoQuality) || t.setWindowOcclusionState(!e)
     }), this.context = i, this.recordEvent({
       c: 0
-    }), this._fetchAsyncResourcesPromise = j.Z.fetchAsyncResources().catch(e => {
-      Y.Z.captureException(e)
-    }), this.userId = e, this.sessionId = t, this.guildId = n, this._channelId = r, this.channelIds = new Set([r]), this.streamServerId = a, this.streamChannelId = s, this.parentMediaSessionId = l, this.joinVoiceId = d, this._connectionSerial = eI++, this.logger = new b.Z("RTCConnection(".concat(this.trueServerId, ", ").concat(this.context, ")")), this.logger.enableNativeLogger(true), this._endpoint = null, this.hostname = null, this.port = null, this.token = null, this.voiceVersion = null, this.rtcWorkerVersion = null, this.state = es.hes.AWAITING_ENDPOINT, this.stateHistory = new X.K(this.state), this._socket = null, this._backoff = new u.Z(1e3, 1e4), this._destroyed = false, this._pings = [], this._pingBadCount = 0, this._pingTimeouts = [], this._mediaSessionId = null, this._voiceQuality = null, this._voiceQualityPeriodicStatsInterval = null, this._voiceQualityPeriodicStatsSequenceId = 0, this._systemResponsiveness = null, this._noiseCancellationError = 0, this._voiceDuration = null, this._videoQuality = null, this._videoHealthManager = null, this._sentVideo = false, this._outboundLossRate = null, this._createdTime = (0, _.zO)(), this._connectStartTime = 0, this._connectCompletedTime = 0, this._rtcConnectionId = (0, c.Z)(), this._connectCount = 0, this._connected = false, this._connecting = false, this._encountered_socket_failure = false, this._inputDetected = false, this._selectedExperiments = [], this._secureFramesState = null, this._userIds = new Set([e]), this._secureFramesRosterMap.clear(), this._mlsFailures = [], this._nextFailureId = 0, this._mediaEngineConnectionId = null, this._lastSentSpeakingStatus = 0, this._lastSentSSRC = true;
-    let f = j.Z.supports(el.AN.FIRST_FRAME_CALLBACK) && j.Z.supports(el.AN.REMOTE_USER_MULTI_STREAM);
-    if (i === el.Yn.DEFAULT) {
+    }), this._fetchAsyncResourcesPromise = L.Z.fetchAsyncResources().catch(e => {
+      H.Z.captureException(e)
+    }), this.userId = e, this.sessionId = t, this.guildId = n, this._channelId = r, this.channelIds = new Set([r]), this.streamServerId = a, this.streamChannelId = s, this.parentMediaSessionId = l, this.joinVoiceId = d, this._connectionSerial = ev++, this.logger = new b.Z("RTCConnection(".concat(this.trueServerId, ", ").concat(this.context, ")")), this.logger.enableNativeLogger(true), this._endpoint = null, this.hostname = null, this.port = null, this.token = null, this.voiceVersion = null, this.rtcWorkerVersion = null, this.state = eo.hes.AWAITING_ENDPOINT, this.stateHistory = new q.K(this.state), this._socket = null, this._backoff = new u.Z(1e3, 1e4), this._destroyed = false, this._pings = [], this._pingBadCount = 0, this._pingTimeouts = [], this._mediaSessionId = null, this._voiceQuality = null, this._voiceQualityPeriodicStatsInterval = null, this._voiceQualityPeriodicStatsSequenceId = 0, this._systemResponsiveness = null, this._noiseCancellationError = 0, this._voiceDuration = null, this._videoQuality = null, this._videoHealthManager = null, this._sentVideo = false, this._outboundLossRate = null, this._createdTime = (0, _.zO)(), this._connectStartTime = 0, this._connectCompletedTime = 0, this._rtcConnectionId = (0, c.Z)(), this._connectCount = 0, this._connected = false, this._connecting = false, this._encountered_socket_failure = false, this._inputDetected = false, this._selectedExperiments = [], this._secureFramesState = null, this._userIds = new Set([e]), this._secureFramesRosterMap.clear(), this._mlsFailures = [], this._nextFailureId = 0, this._mediaEngineConnectionId = null, this._lastSentSpeakingStatus = 0, this._lastSentSSRC = true;
+    let f = L.Z.supports(es.AN.FIRST_FRAME_CALLBACK) && L.Z.supports(es.AN.REMOTE_USER_MULTI_STREAM);
+    if (i === es.Yn.DEFAULT) {
       var p;
-      let t = (null == (p = L.Z.getChannel(this.channelId)) ? true : p.type) === es.d4z.GUILD_STAGE_VOICE;
-      this._localMediaSinkWantsManager = new J.ZP(e, t, f), this._localMediaSinkWantsManager.on(J.ai.Update, e => {
-        if (this.state === es.hes.RTC_CONNECTED && null != this._socket) {
+      let t = (null == (p = x.Z.getChannel(this.channelId)) ? true : p.type) === eo.d4z.GUILD_STAGE_VOICE;
+      this._localMediaSinkWantsManager = new Q.ZP(e, t, f), this._localMediaSinkWantsManager.on(Q.ai.Update, e => {
+        if (this.state === eo.hes.RTC_CONNECTED && null != this._socket) {
           var t;
           this.logger.info("Media sink wants: ".concat(JSON.stringify(e))), this._socket.mediaSinkWants(e), null == (t = this._connection) || t.setLocalVideoSinkWants(e)
         }
-      }), this._localMediaSinkWantsManager.on(J.ai.UserSSRCUpdate, (e, t, n) => {
+      }), this._localMediaSinkWantsManager.on(Q.ai.UserSSRCUpdate, (e, t, n) => {
         var r;
         null == (r = this._connection) || r.createUser(e, t, n)
       })
-    } else i === el.Yn.STREAM && (this._goLiveQualityManager = new v.Z(true), this._goLiveQualityManager.on(v.y.RequestedSSRCsUpdate, (e, t, n) => {
+    } else i === es.Yn.STREAM && (this._goLiveQualityManager = new v.Z(true), this._goLiveQualityManager.on(v.y.RequestedSSRCsUpdate, (e, t, n) => {
       var r;
       null == (r = this._connection) || r.createUser(e, t, n)
     }), this._goLiveQualityManager.on(v.y.RequestedStreamsUpdate, e => {
-      if (this.state === es.hes.RTC_CONNECTED && null != this._socket) {
+      if (this.state === eo.hes.RTC_CONNECTED && null != this._socket) {
         var t;
         this.logger.info("Go Live Media sink wants: ".concat(JSON.stringify(e))), this._socket.mediaSinkWants(e), null == (t = this._connection) || t.setLocalVideoSinkWants(e)
       }
     }));
-    this._remoteVideoSinkWants = J.Yy, eo.w.on(eo.e.IncomingVideoEnabledChanged, this.incomingVideoEnabledChanged), eo.w.on(eo.e.WindowVisibilityChanged, this.windowVisibilityChanged), k.ZP.shouldRecordNextConnection() ? (this._recordingEnabled = true, g.TC(false)) : this._recordingEnabled = false, this._soundshareStats = new $.Z, V.Z.addOnlineCallback(this._handleNetworkOnline), V.Z.addOfflineCallback(this._handleNetworkOffline), (0, H.isDesktop)() && (this.powerMonitorListener = K.Z.remotePowerMonitor.on("resume", this._handlePowerResume)), this._supportedBandwidthEstimationExperiments = [], this._bandwidthEstimationExperiment = null, j.Z.getMediaEngine().getSupportedBandwidthEstimationExperiments(e => {
+    this._remoteVideoSinkWants = Q.Yy, ea.w.on(ea.e.IncomingVideoEnabledChanged, this.incomingVideoEnabledChanged), ea.w.on(ea.e.WindowVisibilityChanged, this.windowVisibilityChanged), M.ZP.shouldRecordNextConnection() ? (this._recordingEnabled = true, g.TC(false)) : this._recordingEnabled = false, this._soundshareStats = new J.Z, F.Z.addOnlineCallback(this._handleNetworkOnline), F.Z.addOfflineCallback(this._handleNetworkOffline), (0, V.isDesktop)() && (this.powerMonitorListener = W.Z.remotePowerMonitor.on("resume", this._handlePowerResume)), this._supportedBandwidthEstimationExperiments = [], this._bandwidthEstimationExperiment = null, L.Z.getMediaEngine().getSupportedBandwidthEstimationExperiments(e => {
       this._supportedBandwidthEstimationExperiments = e
     })
   }

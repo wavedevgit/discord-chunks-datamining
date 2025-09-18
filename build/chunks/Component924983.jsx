@@ -2,7 +2,8 @@
 /** chunk id: 924983, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $: () => d
+  $: () => f,
+  Y: () => d
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
@@ -12,8 +13,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk358085 = require("./358085.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk745770 = require("./745770.js");
+let d = ["Hotspot Options", "Dismissible Contents", "Design Systems", "Intl Testing", "i18n"];
 
-function d(e) {
+function f(e) {
   let {
     legacy: t = true
   } = e, n = (0, l.isMac)() ? "CMD + OPT + O" : "CTRL + ALT + O";
