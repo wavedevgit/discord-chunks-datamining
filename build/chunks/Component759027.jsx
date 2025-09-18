@@ -70,8 +70,8 @@ function y(e) {
   var t, n, l, x, y, C, N;
   let {
     subscription: E,
-    onUpdated: T
-  } = e, [S, O] = r.useState(false), [P, k] = r.useState(false), [R, w] = r.useState(false), [I, Z] = r.useState(false), [A, D] = r.useState(null), L = e => (null == e && (e = E.status), e in v) ? v[e] : "Unknown status ".concat(e), M = e => {
+    onUpdated: S
+  } = e, [T, O] = r.useState(false), [P, k] = r.useState(false), [R, w] = r.useState(false), [I, Z] = r.useState(false), [A, D] = r.useState(null), L = e => (null == e && (e = E.status), e in v) ? v[e] : "Unknown status ".concat(e), M = e => {
     let t = new Date(e);
     return u.default.fromTimestamp(t.getTime())
   }, U = async e => {
@@ -107,7 +107,7 @@ function y(e) {
       url: "/debug/subscriptions/".concat(E.id),
       body: r,
       rejectWithError: false
-    }), T()
+    }), S()
   }, F = async () => {
     try {
       await s.tn.post({
@@ -123,7 +123,7 @@ function y(e) {
     } catch (e) {
       D(e.body.message)
     }
-    T()
+    S()
   }, G = (null == (t = b.GP[E.planIdFromItems]) ? true : t.premiumType) === b.p9.TIER_0, z = null == (n = E.metadata) ? true : n.ended_at, B = null != z ? new Date(z).toISOString().substring(0, 10) : "", V = E.hasActiveTrial, H = (null == (l = E.metadata) ? true : l.active_discount_id) != null;
   return (0, a.jsxs)("div", {
     className: i()(f.card, G ? f.gradientWrapperTier0 : f.gradientWrapperTier2),
@@ -241,7 +241,7 @@ function y(e) {
       className: g.collapsablePane,
       children: [(0, a.jsxs)(o.P3F, {
         onClick: () => {
-          O(!S)
+          O(!T)
         },
         className: g.collapsablePaneHeader,
         children: [(0, a.jsx)("div", {
@@ -250,9 +250,9 @@ function y(e) {
             children: "Metadata"
           })
         }), (0, a.jsx)(c.Z, {
-          direction: S ? c.Z.Directions.UP : c.Z.Directions.DOWN
+          direction: T ? c.Z.Directions.UP : c.Z.Directions.DOWN
         })]
-      }), S && (0, a.jsx)("ul", {
+      }), T && (0, a.jsx)("ul", {
         className: g.collapsiblePaneList,
         children: Object.entries(E.metadata).map(e => {
           let [t, n] = e;

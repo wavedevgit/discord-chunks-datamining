@@ -53,7 +53,7 @@ function P(e) {
     children: t
   } = e;
   return (0, a.jsx)(u.zJl, {
-    className: T.customPropertiesContainer,
+    className: S.customPropertiesContainer,
     children: (0, a.jsx)("dl", {
       children: t
     })
@@ -72,15 +72,15 @@ function k(e) {
       return () => clearTimeout(e)
     }
   }, [i]), (0, a.jsxs)("div", {
-    className: T.customProperty,
+    className: S.customProperty,
     children: [(0, a.jsx)("dt", {
-      className: T.customPropertiesName,
+      className: S.customPropertiesName,
       children: t
     }), (0, a.jsx)("dd", {
       children: n
     }), (0, a.jsx)(u.P3F, {
       tag: "span",
-      className: T.copyPropertyButton,
+      className: S.copyPropertyButton,
       onClick: () => (0, f.JG)(JSON.stringify(l), () => s(true)),
       children: i ? (0, a.jsx)(u.kmB, {
         color: "currentColor",
@@ -111,15 +111,15 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
       return (0, a.jsxs)("div", {
         "data-mtctest-ignore": "true",
         children: [(0, a.jsxs)(h.ZP, {
-          className: i()(S.headerBar, T.subPanelHeaderBar),
+          className: i()(T.headerBar, S.subPanelHeaderBar),
           children: [(0, a.jsx)(h.ZP.Icon, {
             icon: u.IeX,
             tooltip: t
           }), (0, a.jsxs)(h.ZP.Title, {
-            wrapperClassName: T.headerTitle,
+            wrapperClassName: S.headerTitle,
             children: [t, (0, a.jsx)(u.P3F, {
               tag: "span",
-              className: T.copyEventButton,
+              className: S.copyEventButton,
               onClick: () => (0, f.JG)(t),
               children: (0, a.jsx)(u.TIy, {
                 color: "currentColor",
@@ -160,7 +160,7 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
             onClick: s
           })]
         }), (0, a.jsxs)(_.E, {
-          className: T.commonProperties,
+          className: S.commonProperties,
           children: [(0, a.jsx)(_.Z9, {
             name: "Timestamp (local)",
             copyValue: r.toISOString(),
@@ -210,7 +210,7 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
                 children: null != r ? (0, a.jsx)("code", {
                   children: JSON.stringify(r)
                 }) : (0, a.jsx)("code", {
-                  className: T.emptyProperty,
+                  className: S.emptyProperty,
                   children: "null"
                 })
               }, n), null !== l && null !== l.average && (0, a.jsx)(k, {
@@ -314,7 +314,7 @@ function A() {
         children: Object.entries(I).map(e => {
           let [t, n] = e;
           return (0, a.jsx)(u.P3F, {
-            className: i()(T.filter, s.includes(t) && T.activeFilter),
+            className: i()(S.filter, s.includes(t) && S.activeFilter),
             onClick: () => {
               o(e => e.includes(t) ? e.filter(e => e !== t) : [...e, t])
             },

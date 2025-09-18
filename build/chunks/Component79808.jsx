@@ -52,7 +52,7 @@ function g(e) {
     onClose: O,
     sidebarHeader: E,
     sidebarFooter: b
-  } = e, [v, p] = i.useState(true), [T, N] = i.useState(null == (t = f.entry(y)) ? true : t.parentPanel), [m, j] = i.useState({
+  } = e, [v, p] = i.useState(true), [T, m] = i.useState(null == (t = f.entry(y)) ? true : t.parentPanel), [N, j] = i.useState({
     target: y,
     targetAccordion: null == (n = f.entry(y)) ? true : n.parentAccordion,
     animateScroll: false,
@@ -79,13 +79,13 @@ function g(e) {
         I(() => {
           j(d(c({}, n), {
             animateScroll: false
-          })), N(e)
+          })), m(e)
         })
       } else j(d(c({}, n), {
         animateScroll: true
       }))
     },
-    navTransition: m,
+    navTransition: N,
     showNavigationMobile: v,
     setShowNavigationMobile: p
   };

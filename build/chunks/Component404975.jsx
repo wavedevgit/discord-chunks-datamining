@@ -81,7 +81,7 @@ function p(e) {
         children: [(0, r.jsxs)("div", {
           className: b.fixedContent,
           children: [(0, r.jsx)("div", {
-            children: y.map(e => (0, r.jsx)(m, {
+            children: y.map(e => (0, r.jsx)(N, {
               section: e,
               visibleContent: t,
               markAsDismissed: i
@@ -92,7 +92,7 @@ function p(e) {
           fade: true,
           children: [(0, r.jsx)("nav", {
             className: b.nav,
-            children: O.map(e => (0, r.jsx)(m, {
+            children: O.map(e => (0, r.jsx)(N, {
               section: e,
               visibleContent: t,
               markAsDismissed: i
@@ -126,7 +126,7 @@ function T(e) {
   }, s))
 }
 
-function N(e) {
+function m(e) {
   let {
     trailing: t,
     sectionRef: n,
@@ -152,7 +152,7 @@ function N(e) {
   }
 }
 
-function m(e) {
+function N(e) {
   var t;
   let {
     section: n,
@@ -169,21 +169,23 @@ function m(e) {
         variant: "heading-sm/medium",
         color: "text-tertiary",
         children: a
-      }), null != c && (0, r.jsx)(N, {
+      }), null != c && (0, r.jsx)(m, {
         trailing: c,
         sectionRef: s,
         visibleContent: l,
         markAsDismissed: o
       })]
-    }), n.layout.map(e => (0, r.jsx)("li", {
-      children: e.type === f.Jq.PANEL ? (0, r.jsx)(y.Z, {
+    }), n.layout.map(e => (0, r.jsxs)("li", {
+      children: [e.type === f.Jq.PANEL && (0, r.jsx)(y.Z, {
         node: e,
         visibleContent: l
+      }), e.type === f.Jq.SIDEBAR_ITEM && ("render" in e ? (0, r.jsx)(O.Z, {
+        render: e.render
       }) : (0, r.jsx)(O.Z, {
         icon: e.icon,
         title: e.useTitle(),
         onClick: e.onClick
-      })
+      }))]
     }, e.key))]
   })
 }

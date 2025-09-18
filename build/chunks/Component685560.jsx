@@ -26,9 +26,9 @@ var Chunk951288 = require("./951288.js"),
 let C = [Chunk704215.z.GUILD_POWERUP_PERKS_COACHMARK, Chunk704215.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK, Chunk704215.z.GUILD_POWERUP_NOTIFICATION, Chunk704215.z.GUILD_TAG_AVAILABLE_COACHMARK, Chunk704215.z.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK],
   N = [Chunk704215.C.GUILD_POWERUP_LEVEL_1_COACHMARK, Chunk704215.C.GUILD_POWERUP_LEVEL_2_COACHMARK, Chunk704215.C.GUILD_POWERUP_LEVEL_3_COACHMARK, Chunk704215.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, Chunk704215.C.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK],
   E = [Chunk704215.C.ADOPT_CLAN_IDENTITY_NOTICE],
-  T = [Chunk704215.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION, Chunk704215.z.VANITY_URL_POWERUP_ROLLBACK_MODAL, Chunk704215.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER];
+  S = [Chunk704215.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION, Chunk704215.z.VANITY_URL_POWERUP_ROLLBACK_MODAL, Chunk704215.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER];
 
-function S(e) {
+function T(e) {
   switch (e) {
     case o.C.GUILD_POWERUP_LEVEL_1_COACHMARK:
       return "GUILD_POWERUP_LEVEL_1_COACHMARK";
@@ -147,7 +147,7 @@ function k() {
         value: n.includes(t),
         children: (0, a.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: S(t)
+          children: T(t)
         })
       }, t))]
     }), (0, Chunk951288.jsxs)("div", {
@@ -163,7 +163,7 @@ function k() {
         value: n.includes(t),
         children: (0, a.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: S(t)
+          children: T(t)
         })
       }, t))]
     }), (0, Chunk951288.jsxs)("div", {
@@ -172,7 +172,7 @@ function k() {
         variant: "eyebrow",
         className: Chunk617659.header,
         children: "Reset Powerup Rollback DCs"
-      }), T.map(e => (0, a.jsx)(u.Z, {
+      }), S.map(e => (0, a.jsx)(u.Z, {
         className: y.formSwitch,
         content: o.z[e]
       }, o.z[e]))]

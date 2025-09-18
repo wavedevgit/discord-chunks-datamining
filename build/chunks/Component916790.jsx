@@ -77,7 +77,7 @@ let R = [{
     } = e, r = c()(n.createdAt);
     return (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsxs)(_.E, {
-        className: T.actionProperties,
+        className: S.actionProperties,
         children: [(0, a.jsx)(_.Z9, {
           name: "Created at",
           children: (0, a.jsx)("time", {
@@ -90,7 +90,7 @@ let R = [{
           children: [O(n.totalTime), " ms"]
         })]
       }), (0, a.jsx)(m.zJl, {
-        className: T.inspectorContainer,
+        className: S.inspectorContainer,
         children: (0, a.jsx)(j.Z, {
           data: n.action
         })
@@ -119,7 +119,7 @@ function w(e) {
     id: "error",
     name: (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(f.Z, {
-        className: T.errorIcon
+        className: S.errorIcon
       }), "Error"]
     }),
     group: N.v0.NONE,
@@ -129,18 +129,18 @@ function w(e) {
       } = e;
       return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)("div", {
-          className: i()(T.errorToolbar, S.toolbar),
+          className: i()(S.errorToolbar, T.toolbar),
           children: (0, a.jsx)("div", {
-            className: S.toolbarGroup,
+            className: T.toolbarGroup,
             children: (0, a.jsx)(u.zx, {
-              className: S.toolbarButton,
+              className: T.toolbarButton,
               size: u.zx.Sizes.MIN,
               onClick: () => console.error(t.error),
               children: "Log to Console"
             })
           })
         }), (0, a.jsx)(m.zJl, {
-          className: T.inspectorContainer,
+          className: S.inspectorContainer,
           children: (0, a.jsx)(j.Z, {
             data: t.error
           })
@@ -154,17 +154,17 @@ function w(e) {
     tabs: l
   }, [l]);
   return (0, a.jsxs)(y.Z, {
-    className: T.subPanel,
+    className: S.subPanel,
     minHeight: 100,
     initialHeight: n,
     children: [(0, a.jsx)(s, {}), (0, a.jsxs)(p.ZP, {
-      className: i()(S.headerBar, T.subPanelHeaderBar),
+      className: i()(T.headerBar, S.subPanelHeaderBar),
       children: [(0, a.jsx)(p.ZP.Icon, {
         icon: m.xVZ,
         tooltip: t.name
       }), (0, a.jsx)(p.ZP.Title, {
-        wrapperClassName: i()(S.headerTitle, S.dispatcherHeader),
-        className: S.headerTitleText,
+        wrapperClassName: i()(T.headerTitle, T.dispatcherHeader),
+        className: T.headerTitleText,
         children: t.name
       }), (0, a.jsx)(p.ZP.Icon, {
         icon: m.TIy,
@@ -196,7 +196,7 @@ let I = [{
       } = e;
       return (0, a.jsxs)(a.Fragment, {
         children: [t.error && (0, a.jsx)(f.Z, {
-          className: T.errorIcon
+          className: S.errorIcon
         }), t.name]
       })
     }

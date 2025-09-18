@@ -4,7 +4,8 @@
 require.d(exports, {
   Qh: () => a,
   SO: () => o,
-  Zw: () => s
+  Zw: () => l,
+  d8: () => s
 });
 var Chunk570140 = require("./570140.js"),
   Chunk19759 = require("./19759.js");
@@ -23,6 +24,12 @@ function o() {
 }
 
 function s() {
+  a({
+    displayTools: true
+  })
+}
+
+function l() {
   Chunk570140.Z.dispatch({
     type: "ANALYTICS_LOG_CLEAR"
   })

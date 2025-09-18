@@ -27,7 +27,7 @@ function f(e) {
     useTitle: v,
     trailing: p,
     stronglyDiscouragedCustomTab: T
-  } = g, N = v(), m = null != (o = null == p || null == (t = p.useDecoration) ? true : t.call(p)) ? o : null, j = null != (s = null == p || null == (n = p.useBadgeCount) ? true : n.call(p)) ? s : null, S = i.useMemo(() => g.layout.flatMap(e => e.layout), [g]), I = null != f && (null == p || null == (l = p.newIndicatorDismissibleContentTypes) ? true : l.includes(f)), C = (null == O ? true : O.key) === g.key, _ = () => {
+  } = g, m = v(), N = null != (o = null == p || null == (t = p.useDecoration) ? true : t.call(p)) ? o : null, j = null != (s = null == p || null == (n = p.useBadgeCount) ? true : n.call(p)) ? s : null, S = i.useMemo(() => g.layout.flatMap(e => e.layout), [g]), I = null != f && (null == p || null == (l = p.newIndicatorDismissibleContentTypes) ? true : l.includes(f)), C = (null == O ? true : O.key) === g.key, _ = () => {
     E(g.key), b(false)
   };
   return null != T ? (0, r.jsx)(T, {
@@ -36,7 +36,7 @@ function f(e) {
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.Z, {
       icon: g.icon,
-      title: N,
+      title: m,
       active: C,
       trailing: (0, r.jsx)(() => {
         if (I) {
@@ -47,7 +47,7 @@ function f(e) {
         }
         return null != j && j > 0 ? (0, r.jsx)(a.mAB, {
           count: j
-        }) : null != m ? m : null
+        }) : null != N ? N : null
       }, {}),
       onClick: _
     }), C && S.length > 1 && (0, r.jsx)(y, {

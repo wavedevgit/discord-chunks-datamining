@@ -55,8 +55,8 @@ function f() {
     isStaff: t,
     isDeveloper: n,
     isLoggingGatewayEvents: f,
-    isLoggingOverlayEvents: E,
-    isLoggingAnalyticsEvents: v,
+    isLoggingOverlayEvents: v,
+    isLoggingAnalyticsEvents: E,
     isAnalyticsDebuggerEnabled: S,
     isTracingRequests: h,
     isForcedCanary: j,
@@ -88,8 +88,8 @@ function f() {
   }), {
     horizontalSpacing: _,
     verticalSpacing: N,
-    maxHorizontalSpacing: T,
-    maxVerticalSpacing: Z
+    maxHorizontalSpacing: Z,
+    maxVerticalSpacing: T
   } = (0, Chunk482215.i)(), {
     setHorizontalSpacing: m,
     setVerticalSpacing: k
@@ -210,19 +210,19 @@ function f() {
     }, "gateway-events"), (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "overlay-events",
       label: "Overlay RPC Events",
-      checked: E,
+      checked: v,
       action: () => {
         (0, Chunk179658.y)({
-          logOverlayEvents: !E
+          logOverlayEvents: !v
         })
       }
     }, "overlay-events"), (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "analytics-events",
       label: "Analytics Events",
-      checked: v,
+      checked: E,
       action: () => {
         (0, Chunk179658.y)({
-          logAnalyticsEvents: !v
+          logAnalyticsEvents: !E
         })
       }
     }, "analytics-events"), (0, Chunk951288.jsx)(Chunk481060.S89, {
@@ -258,7 +258,7 @@ function f() {
       ref: t,
       value: _,
       minValue: 0,
-      maxValue: T,
+      maxValue: Z,
       onChange: e => m(e),
       renderValue: e => "".concat(Math.round(e), "px"),
       "aria-label": "Horizontal Spacing"
@@ -270,7 +270,7 @@ function f() {
       ref: t,
       value: N,
       minValue: 0,
-      maxValue: Z,
+      maxValue: T,
       onChange: e => k(e),
       "aria-label": "Horizontal Spacing",
       renderValue: e => "".concat(Math.round(e), "px")

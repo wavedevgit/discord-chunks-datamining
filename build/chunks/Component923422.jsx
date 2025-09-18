@@ -30,22 +30,22 @@ let x = (0, Chunk108843.Z)(function(e) {
   let {
     webBuildOverride: t,
     onSelect: n,
-    onInteraction: s
-  } = e, [u, x] = l.useState(false), D = (0, v.Z)(), I = (0, S.Z)(), _ = (0, O.Z)(), N = (0, y.Z)(), T = (0, j.Z)(), Z = (0, h.Z)(), m = (0, E.Z)(), k = (0, P.Z)(), C = (0, f.Z)(), {
+    onInteraction: c
+  } = e, [u, x] = l.useState(false), D = (0, E.Z)(), I = (0, S.Z)(), _ = (0, O.Z)(), N = (0, y.Z)(), Z = (0, j.Z)(), T = (0, h.Z)(), m = (0, v.Z)(), k = (0, P.Z)(), C = (0, f.Z)(), {
     analyticsLocations: R
   } = (0, d.ZP)(), L = l.useMemo(() => (0, b.j)(), []);
-  async function B() {
+  async function V() {
     try {
       x(true), await (0, g.bF)(), window.location.reload(true)
     } catch (e) {
       x(false)
     }
   }
-  let V = (0, p.VO)().filter(e => {
+  let B = (0, p.VO)().filter(e => {
     let {
       section: t
     } = e;
-    return t !== c.ID.HEADER && t !== c.ID.CUSTOM && t !== c.ID.DIVIDER && "logout" !== t
+    return t !== s.ID.HEADER && t !== s.ID.CUSTOM && t !== s.ID.DIVIDER && "logout" !== t
   }).filter(e => null == e.predicate || e.predicate());
   return (0, a.jsx)(d.Gt, {
     value: R,
@@ -54,14 +54,14 @@ let x = (0, Chunk108843.Z)(function(e) {
       onClose: i.Zy,
       "aria-label": A.intl.string(A.t.opYYHh),
       onSelect: n,
-      onInteraction: s,
-      children: [V.map(e => {
+      onInteraction: c,
+      children: [B.map(e => {
         var t, n;
         let {
           section: l,
           label: i,
-          onClick: c
-        } = e, s = l.replace(/\W/gi, "_");
+          onClick: s
+        } = e, c = l.replace(/\W/gi, "_");
         return (0, a.jsx)(r.sNh, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -80,10 +80,10 @@ let x = (0, Chunk108843.Z)(function(e) {
           }
           return e
         }({
-          id: s
+          id: c
         }, {
           label: i,
-          action: () => null != c ? c() : function(e, t) {
+          action: () => null != s ? s() : function(e, t) {
             let n = Object.values(w.oAB).filter(t => t === e)[0];
             null != n && o.Z.open(n, true, {
               analyticsLocations: t
@@ -101,15 +101,13 @@ let x = (0, Chunk108843.Z)(function(e) {
               case w.oAB.ACCESSIBILITY:
                 return N;
               case w.oAB.VOICE:
-                return T;
-              case w.oAB.TEXT:
                 return Z;
+              case w.oAB.TEXT:
+                return T;
               case w.oAB.EXPERIMENTS:
                 return m;
               case w.oAB.DEVELOPER_OPTIONS:
                 return k;
-              case w.oAB.DESIGN_SYSTEMS:
-                return C;
               default:
                 return null
             }
@@ -123,8 +121,12 @@ let x = (0, Chunk108843.Z)(function(e) {
           return n
         })(Object(n)).forEach(function(e) {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-        }), t), s)
-      }), e.user.isStaff() && L.length > 0 ? (0, a.jsx)(r.sNh, {
+        }), t), c)
+      }), e.user.isStaff() && (0, a.jsx)(r.sNh, {
+        id: "playgrounds",
+        label: "Playgrounds",
+        children: C
+      }, "playgrounds"), e.user.isStaff() && L.length > 0 ? (0, a.jsx)(r.sNh, {
         label: "Build Overrides",
         id: "build_overrides",
         children: (0, a.jsx)(r.kSQ, {
@@ -143,7 +145,7 @@ let x = (0, Chunk108843.Z)(function(e) {
           id: "clear-build-override",
           disabled: u,
           label: A.intl.string(A.t["/Nz9ra"]),
-          action: B,
+          action: V,
           color: "danger"
         })
       }) : null]

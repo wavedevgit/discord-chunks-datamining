@@ -1,7 +1,7 @@
 /** Chunk was on 2535 **/
 /** chunk id: 594791, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => c
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -11,7 +11,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function s() {
+function c() {
   let e = Chunk695346.dN.useSetting(),
     t = Chunk695346.R$.useSetting();
   return module ? null : (0, Chunk951288.jsx)(Chunk481060.S89, {
