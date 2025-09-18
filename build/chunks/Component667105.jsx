@@ -158,7 +158,10 @@ let M = e => {
   };
 
 function U(e) {
-  return e.config.features.includes(C.S7.START_QUEST_CTA) ? {
+  return e.config.features.includes(C.S7.START_QUEST_CTA) ? (0, m.pO)(e) ? {
+    text: P.intl.string(P.t.hRIVy8),
+    questContentCTA: p.jZ.START_QUEST
+  } : {
     text: P.intl.string(P.t.ToGcxM),
     questContentCTA: p.jZ.START_QUEST
   } : {
@@ -203,12 +206,12 @@ function G(e) {
     })
   }, []), k = null == (t = (0, h.WD)()) ? true : t.getId(), {
     launchInGameActivity: G
-  } = (0, E.zB)(n), B = (0, O.f)({
+  } = (0, E.zB)(n), B = (0, m.Rt)(n), Z = (0, O.f)({
     location: C.dr.QUEST_HOME_DESKTOP,
     questFeatures: n.config.features
   });
   return i.useMemo(() => {
-    if (!B && (0, m.HJ)(n) && r !== E.OH.COMPLETED && r !== E.OH.CLAIMED) {
+    if (!Z && (0, m.HJ)(n) && r !== E.OH.COMPLETED && r !== E.OH.CLAIMED) {
       let e = P.intl.string(P.t.BkZhUF);
       return {
         text: e,
@@ -220,7 +223,7 @@ function G(e) {
       case E.OH.UNACCEPTED:
         let e = P.intl.string(P.t.kUQLMD),
           t = p.jZ.ACCEPT_QUEST;
-        return b && (e = P.intl.string(P.t.umdNio), t = p.jZ.START_QUEST), y && ({
+        return b && (e = P.intl.string(P.t.umdNio), t = p.jZ.START_QUEST), (y || (0, m.pO)(n)) && ({
           text: e,
           questContentCTA: t
         } = U(n)), {
@@ -268,7 +271,7 @@ function G(e) {
               questContent: o,
               sourceQuestContent: v,
               sourceQuestContentCTA: p.jZ.ACCEPT_QUEST
-            })) : y && n.config.features.includes(C.S7.START_QUEST_CTA) && G()
+            })) : B && G()
           }
         };
       case E.OH.ACCEPTED:
@@ -287,7 +290,7 @@ function G(e) {
             sourceQuestContent: v
           })
         };
-        if (B && (0, m.HJ)(n)) return {
+        if (Z && (0, m.HJ)(n)) return {
           text: P.intl.string(P.t.IsH2Sk),
           tooltipText: null,
           onClick: () => {
@@ -304,7 +307,7 @@ function G(e) {
             sourceQuestContentCTA: p.jZ.WATCH_VIDEO
           })
         };
-        else if (y && n.config.features.includes(C.S7.START_QUEST_CTA)) {
+        else if (B) {
           let {
             text: e
           } = U(n);
@@ -348,7 +351,7 @@ function G(e) {
           text: P.intl.string(P.t.bAGFz8)
         })
     }
-  }, [r, b, A, _, I, a, n, o, s, f, k, w, x, M, y, G, v, B])
+  }, [r, b, A, _, I, a, n, o, s, f, k, w, x, M, y, G, v, Z, B])
 }
 
 function B() {

@@ -433,12 +433,11 @@ let J = Chunk647438.forwardRef(function(e, t) {
     quest: v,
     useReducedMotion: T,
     taskDetails: S
-  } = e, A = (0, b.Vl)(v), {
-    launchInGameActivity: C
-  } = (0, O.zB)(v), N = i.useCallback(async () => {
-    let e = v.config.features.includes(Z.S7.START_QUEST_CTA),
-      t = e ? E.jZ.START_QUEST : E.jZ.ACCEPT_QUEST;
-    await Q(v, I.jn.QUEST_BAR_V2, t, I.jn.QUEST_BAR_V2), A && e && C()
+  } = e, {
+    launchInGameActivity: A
+  } = (0, O.zB)(v), C = (0, b.Rt)(v), N = i.useCallback(async () => {
+    let e = C ? E.jZ.START_QUEST : E.jZ.ACCEPT_QUEST;
+    await Q(v, I.jn.QUEST_BAR_V2, e, I.jn.QUEST_BAR_V2), C && A()
   }, [v, A, C]), R = (null == (n = v.userStatus) ? true : n.enrolledAt) != null, P = u && d;
   return (0, r.jsxs)(s.animated.div, {
     "aria-hidden": !P,
