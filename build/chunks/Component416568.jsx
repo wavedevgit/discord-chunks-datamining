@@ -207,7 +207,7 @@ function ea(e) {
   } = e, [a] = (0, p.Wu)([R.ZP], () => {
     let e = R.ZP.getGuildsTree();
     return [e, e.version]
-  }), s = a.getRoots(), c = (0, p.Wu)([w.Z], () => w.Z.getGeoRestrictedGuilds()).map(e => (0, r.jsx)(V.Z, {
+  }), s = a.getRoots(), c = (0, p.Wu)([w.Z], () => w.Z.getGeoRestrictedGuilds()).map(e => (0, r.jsx)(F.Z, {
     id: e.id,
     name: e.name,
     icon: e.icon
@@ -236,7 +236,7 @@ function es(e) {
     return [e, e.version]
   }), d = (0, p.e7)([S.Z], () => S.Z.lurkingGuildIds()), f = i.useMemo(() => n ? [] : d, [d, n]), b = (0, p.e7)([j.Z], () => j.Z.isFullscreenInContext()), [y, x] = i.useState(false), C = i.useCallback(() => x(true), []), E = i.useCallback(() => x(false), []), w = i.useRef(false), [T] = i.useState(() => new h.V7), A = i.useRef(null), U = i.useRef(null), G = (0, u.OP)(), {
     ref: B
-  } = G, V = function(e, t) {
+  } = G, F = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -336,7 +336,7 @@ function es(e) {
           return null
       }
     }, [C, E, y, et.setNodeRef]),
-    ef = (0, r.jsx)(F.Z, {
+    ef = (0, r.jsx)(V.Z, {
       selected: eu,
       className: ee.discoveryIcon
     }),
@@ -365,7 +365,7 @@ function es(e) {
             barClassName: ee.unreadMentionsBar
           }), (0, r.jsx)("ul", (i = en({
             ref: B
-          }, V, H), a = a = {
+          }, F, H), a = a = {
             role: "tree",
             className: ee.tree,
             children: (0, r.jsxs)("div", {

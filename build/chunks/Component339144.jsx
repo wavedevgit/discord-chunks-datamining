@@ -83,8 +83,8 @@ let R = Chunk647438.memo(function(e) {
         isStreaming: U,
         channel: G,
         canStream: B,
-        runningGame: V,
-        embeddedActivity: F,
+        runningGame: F,
+        embeddedActivity: V,
         frame: H,
         activity: z,
         application: W,
@@ -102,19 +102,19 @@ let R = Chunk647438.memo(function(e) {
         parentAnalyticsLocation: Q
       } = (0, g.ZP)(),
       J = (0, _.P6)("ActivityPanelGameCard"),
-      $ = A(W, z, F),
+      $ = A(W, z, V),
       ee = i.useCallback(() => {
         var e;
         o()(null != z, "Received null activity"), E.default.track(I.rMx.ACTIVITY_PANEL_BUTTON_CLICKED, {
           action_type: "invite_to_game",
-          game_id: null != (e = null == V ? true : V.id) ? e : null,
+          game_id: null != (e = null == F ? true : F.id) ? e : null,
           application_id: z.application_id
         }), (0, b.v)(Q, b.d.INVITE), E.default.track(I.rMx.OPEN_MODAL, {
           type: "Send Join Invite",
           application_id: z.application_id,
           location: K.location
         }), (0, c.h7)(z, false)
-      }, [z, K, Q, V]),
+      }, [z, K, Q, F]),
       et = i.useCallback((e, t) => () => {
         (0, b.v)(Q, b.d.LEAVE_ACTIVITY), h.Z.leaveActivity({
           location: t,
@@ -138,13 +138,13 @@ let R = Chunk647438.memo(function(e) {
             default: e
           } = await Promise.all([n.e("46746"), n.e("33641")]).then(n.bind(n, 60594));
           return n => (0, r.jsx)(e, T(w({}, n), {
-            sourcePID: null == V ? true : V.pid,
+            sourcePID: null == F ? true : F.pid,
             selectSource: !!X && null != C.Z.getVoiceChannelId(),
             guildId: t,
             analyticsLocation: I.Sbl.ACTIVITY_PANEL
           }))
         })
-      }, [G, k, V, X]),
+      }, [G, k, F, X]),
       el = i.useCallback(e => {
         (0, u.jW)(e, async () => {
           let {
@@ -166,12 +166,12 @@ let R = Chunk647438.memo(function(e) {
       eu = S.Z.useConfig({
         location: "ActivityActions"
       }).enabled,
-      ed = (null != V || null == F || (0, d.R)()) && (U || M) ? (U ? (l = false, a = () => {
+      ed = (null != F || null == V || (0, d.R)()) && (U || M) ? (U ? (l = false, a = () => {
         er(), (0, b.v)(Q, b.d.STREAM, false)
       }, p = s.g5r, R = N.intl.string(N.t.S5anIS)) : B ? (l = false, a = () => {
         ei(), (0, b.v)(Q, b.d.STREAM, true)
-      }, p = s.hGI, R = null != V ? N.intl.formatToPlainString(N.t.AB5gT0, {
-        game: V.name
+      }, p = s.hGI, R = null != F ? N.intl.formatToPlainString(N.t.AB5gT0, {
+        game: F.name
       }) : N.intl.string(N.t.FeUKeH)) : (l = true, a = null, p = s.hGI, R = null != G && (0, x.vd)(G.type) ? N.intl.string(N.t.uQn9Bw) : null != k ? N.intl.string(N.t.fBXEoK) : N.intl.string(N.t.n3feND)), (0, r.jsx)("div", {
         className: Z.panelButtonContainer,
         children: (0, r.jsx)(P.Z, {
@@ -181,15 +181,15 @@ let R = Chunk647438.memo(function(e) {
           icon: p
         })
       })) : null,
-      ep = $ && null == F ? (0, r.jsx)(P.Z, {
+      ep = $ && null == V ? (0, r.jsx)(P.Z, {
         ref: Y,
         tooltipText: N.intl.string(N.t["hC/Ze3"]),
         onClick: ee,
         icon: s.ejJ
       }) : null,
-      ef = null == F ? null : (0, r.jsx)(P.Z, {
+      ef = null == V ? null : (0, r.jsx)(P.Z, {
         tooltipText: N.intl.string(N.t["R/FK4O"]),
-        onClick: et(F.applicationId, F.location),
+        onClick: et(V.applicationId, V.location),
         icon: s.PBZ
       }),
       eh = null == H ? null : (0, r.jsx)(P.Z, {
@@ -199,7 +199,7 @@ let R = Chunk647438.memo(function(e) {
       }),
       eg = null == L ? null : (0, r.jsx)(O.Z, {}),
       em = eu && eo && !es ? (0, r.jsx)(D, {
-        runningGame: V,
+        runningGame: F,
         startAuthorization: ea,
         connectionApp: ec,
         ref: q

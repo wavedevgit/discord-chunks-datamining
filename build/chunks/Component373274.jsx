@@ -444,7 +444,7 @@ class ef extends(r = Chunk647438.PureComponent) {
         optInEnabled: l,
         guildChannelsVersion: o
       } = this.props;
-      return (0, V.dt)({
+      return (0, F.dt)({
         sectionIndex: e,
         guildChannels: t,
         guildChannelsVersion: o,
@@ -601,7 +601,7 @@ class ef extends(r = Chunk647438.PureComponent) {
               selected: a === eo.oC.CHANNEL_BROWSER || a === eo.oC.CUSTOMIZE_COMMUNITY
             }, er.z.CHANNELS_AND_ROLES);
           case er.z.GUILD_DIRECTORY:
-            return (0, i.jsx)(F.Z, {
+            return (0, i.jsx)(V.Z, {
               guild: r,
               selectedChannelId: a,
               disableManageChannels: p
@@ -729,7 +729,7 @@ class ef extends(r = Chunk647438.PureComponent) {
         optInEnabled: s,
         guildId: c
       } = this.props;
-      return (0, i.jsx)(V.ZP, {
+      return (0, i.jsx)(F.ZP, {
         guildId: c,
         guildChannels: n,
         guildChannelsVersion: r,
@@ -738,7 +738,7 @@ class ef extends(r = Chunk647438.PureComponent) {
         selectedChannelId: o,
         selectedVoiceChannelId: a,
         optInEnabled: s
-      }, (0, V.eo)(t, n, s))
+      }, (0, F.eo)(t, n, s))
     }), ec(this, "getAnchorId", (e, t) => {
       var n, r, i;
       let {

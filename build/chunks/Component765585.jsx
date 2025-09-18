@@ -45,7 +45,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
     dismissIcon: k,
     onDismissIconClick: U,
     tryItButtonColor: G
-  } = e, B = P ? a.zx.Sizes.LARGE : a.zx.Sizes.MAX, [V, F] = i.useState(false), {
+  } = e, B = P ? a.zx.Sizes.LARGE : a.zx.Sizes.MAX, [F, V] = i.useState(false), {
     ref: H,
     width: z
   } = (0, c.ZP)();
@@ -61,8 +61,8 @@ let b = Chunk647438.forwardRef(function(e, t) {
   return i.useEffect(() => {
     var e, t;
     let n = (null != (t = null == (e = H.current) ? true : e.scrollWidth) ? t : 0) + 64;
-    !V && n > R && F(true)
-  }, [V, z, H, R]), i.useEffect(() => {
+    !F && n > R && V(true)
+  }, [F, z, H, R]), i.useEffect(() => {
     (0, p.kk)(N)
   }, [N]), (0, r.jsx)("div", {
     className: C,
@@ -111,7 +111,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
         }) : n]
       }), (0, r.jsx)("div", {
         ref: H,
-        className: V || !P ? m.buttonContainerVertical : m.buttonContainerHorizontal,
+        className: F || !P ? m.buttonContainerVertical : m.buttonContainerHorizontal,
         children: null != j ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(a.zx, {
             className: m.button,

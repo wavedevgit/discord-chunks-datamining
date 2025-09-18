@@ -161,12 +161,12 @@ let M = Chunk647438.memo(function(e) {
   } = e, k = (0, s.e7)([v.ZP], () => v.ZP.getVoiceStatesForChannel(t), [t]), U = (0, s.e7)([_.Z], () => _.Z.hasVideo(t.id)), {
     unread: G,
     mentionCount: B,
-    isMentionLowImportance: V
+    isMentionLowImportance: F
   } = (0, s.cj)([O.ZP], () => ({
     unread: O.ZP.hasUnread(t.id),
     mentionCount: O.ZP.getMentionCount(t.id),
     isMentionLowImportance: O.ZP.getIsMentionLowImportance(t.id)
-  })), F = (0, s.e7)([g.Z], () => g.Z.isMuted(t.id)), H = (0, j.p)({
+  })), V = (0, s.e7)([g.Z], () => g.Z.isMuted(t.id)), H = (0, j.p)({
     location: "GuildSidebarThreadListEntry"
   }), z = (0, s.e7)([y.default], () => y.default.getUser(t.ownerId)), W = i.useCallback(e => {
     (0, m.ok)(t, !e.shiftKey, I.on.CHANNEL_LIST)
@@ -230,8 +230,8 @@ let M = Chunk647438.memo(function(e) {
       children: (0, r.jsxs)("div", {
         className: o()(Z.iconVisibility, w.wrapper, w.typeThread, {
           [w.modeSelected]: l,
-          [w.modeMuted]: !l && F,
-          [w.modeUnreadImportant]: !F && !l && G,
+          [w.modeMuted]: !l && V,
+          [w.modeUnreadImportant]: !V && !l && G,
           [w.withGuildIcon]: M,
           [w.threadsInChannelListQoLExperiment]: H.enabled,
           [w.withThreadAvatar]: "icon-with-avatar" === H.variant,
@@ -239,7 +239,7 @@ let M = Chunk647438.memo(function(e) {
         }),
         onMouseDown: K,
         onContextMenu: Y,
-        children: [!G || F || l ? null : (0, r.jsx)("div", {
+        children: [!G || V || l ? null : (0, r.jsx)("div", {
           className: o()(w.unread, w.unreadImportant)
         }), (0, r.jsx)(c.P3F, R(A({}, J), {
           innerRef: $,
@@ -273,7 +273,7 @@ let M = Chunk647438.memo(function(e) {
                 channel: t
               }) : null, (0, x.Z)(B) ? (0, r.jsx)(E.Z, {
                 mentionsCount: B,
-                isMentionLowImportance: V
+                isMentionLowImportance: F
               }) : null]
             })]
           })

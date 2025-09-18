@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk1561 = require("./1561.jsx"),
+  Chunk793030 = require("./793030.js"),
   Chunk981729 = require("./981729.jsx"),
   Chunk94321 = require("./94321.js");
 
@@ -99,7 +99,7 @@ let m = {
         var {
           onClick: l
         } = e, g = p(e, ["onClick"]);
-        return (0, r.jsx)(s.P, _(d({}, g), {
+        return (0, r.jsx)(s.P3F, _(d({}, g), {
           innerRef: t,
           "aria-label": i,
           "aria-disabled": E,

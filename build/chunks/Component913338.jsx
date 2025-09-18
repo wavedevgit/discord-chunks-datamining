@@ -7,7 +7,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk1561 = require("./1561.jsx"),
+  Chunk793030 = require("./793030.js"),
   Chunk993365 = require("./993365.js"),
   Chunk530989 = require("./530989.js");
 
@@ -18,7 +18,7 @@ function d(e) {
     onClick: l,
     disabled: d = false
   } = e, c = i.useCallback(e => l(t), [l, t]);
-  return (0, r.jsx)(s.P, {
+  return (0, r.jsx)(s.P3F, {
     className: a()(C.item, {
       [C.itemSelected]: n,
       [C.disabled]: d

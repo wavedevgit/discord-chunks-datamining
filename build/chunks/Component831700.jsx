@@ -476,7 +476,7 @@ function ei(e) {
     location: "VoiceChannel"
   }, {
     autoTrackExposure: false
-  }), V = (0, H.Z)({
+  }), F = (0, H.Z)({
     channel: n,
     isChannelSelected: o,
     isChannelCollapsed: s,
@@ -485,7 +485,7 @@ function ei(e) {
     needSubscriptionToAccess: E,
     enableConnectedUserLimit: true,
     enableActivities: true
-  }), F = T && null == V;
+  }), V = T && null == F;
   return (0, r.jsx)(er, et(ee({
     channelName: O,
     embeddedApps: g,
@@ -497,13 +497,13 @@ function ei(e) {
   }, u, p, e), {
     connected: T,
     isFavoriteSuggestion: l && !Z,
-    forceShowButtons: F,
-    channelInfo: V,
+    forceShowButtons: V,
+    channelInfo: F,
     resolvedUnreadSetting: d,
     enableHangStatus: A,
     allowChannelTopic: R,
     enableOpenTIVForPing: L,
-    hasChannelInfo: null != V,
+    hasChannelInfo: null != F,
     hasStartTime: j
   }))
 }

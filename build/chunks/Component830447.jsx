@@ -275,7 +275,7 @@ function C(e) {
   } = e, C = T(h), N = S(C), P = i.useRef([]);
   l()(P.current, N) || (P.current = N);
   let w = null == (t = C.find(e => null != e.key)) ? true : t.key,
-    D = (0, c.ZP)({
+    D = (0, c.Z)({
       navId: n,
       items: P.current,
       initialFocusPath: p.Z.keyboardModeEnabled && null != w ? [w] : [],

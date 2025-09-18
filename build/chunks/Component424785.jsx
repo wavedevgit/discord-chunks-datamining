@@ -181,9 +181,9 @@ class K extends Chunk98597.ZP {
             }(l, ["onClick", "onContextMenu"]);
             return (0, r.jsxs)(M.ZP, W(z({
               ref: this.channelItemRef,
-              className: V.iconVisibility,
+              className: F.iconVisibility,
               iconClassName: o()({
-                [F.iconLive]: null != h
+                [V.iconLive]: null != h
               }),
               channel: e,
               selected: !_ && t,
@@ -282,7 +282,7 @@ class K extends Chunk98597.ZP {
             onBlur: u
           } = t;
           return (0, r.jsx)(s.P3F, {
-            className: o()(V.iconItem, n ? V.alwaysShown : null),
+            className: o()(F.iconItem, n ? F.alwaysShown : null),
             onClick: () => {
               c.Z.updateChatOpen(e.id, true), this.handleClickChat()
             },
@@ -294,7 +294,7 @@ class K extends Chunk98597.ZP {
             children: (0, r.jsx)(s.kBi, {
               size: "xs",
               color: "currentColor",
-              className: V.actionIcon
+              className: F.actionIcon
             })
           })
         }

@@ -132,20 +132,20 @@ let N = Chunk647438.memo(function(e) {
         }
         return i
       }(k, ["role", "tabIndex"]),
-      V = i.useRef(null),
       F = i.useRef(null),
+      V = i.useRef(null),
       H = (0, r.jsxs)("li", {
         className: t,
         "data-dnd-name": l.name,
         children: [(0, r.jsx)(d.tEY, {
-          focusTarget: V,
-          ringTarget: F,
+          focusTarget: F,
+          ringTarget: V,
           offset: {
             left: 4,
             right: 4
           },
           children: (0, r.jsxs)("div", {
-            ref: F,
+            ref: V,
             className: o()(E.iconVisibility, E.wrapper, {
               [E.collapsed]: A,
               [E.muted]: T,
@@ -153,7 +153,7 @@ let N = Chunk647438.memo(function(e) {
             }),
             onContextMenu: L,
             children: [(0, r.jsxs)(d.P3F, P(S({
-              innerRef: V,
+              innerRef: F,
               className: E.mainContent,
               tabIndex: G
             }, B), {

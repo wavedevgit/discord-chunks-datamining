@@ -122,12 +122,12 @@ function D(e) {
   }), {
     isLoading: G,
     isLoadingComplete: B,
-    hasLoadedEver: V
+    hasLoadedEver: F
   } = (0, u.cj)([j.Z], () => ({
     isLoading: j.Z.isLoading,
     isLoadingComplete: j.Z.isLoadingComplete,
     hasLoadedEver: j.Z.hasLoadedEver
-  })), F = !V && G, {
+  })), V = !F && G, {
     messageCategoryOpenStates: H,
     toggleOpenState: z
   } = (0, v.Z)(), W = function() {
@@ -201,7 +201,7 @@ function D(e) {
       })), e
     }, [t, n]),
     q = 0 === t.length && 0 === n.length && B,
-    X = 0 === t.length && 0 === n.length && !V && G,
+    X = 0 === t.length && 0 === n.length && !F && G,
     Q = i.useMemo(() => {
       let e = [];
       return X ? e.push(a()) : q ? e.push((0, r.jsx)(R, {}, "empty-state")) : N ? (e.push(...n.map(e => d([e], true))), e.push(...t.map(e => d([e], false)))) : s().each(A, t => {
@@ -238,7 +238,7 @@ function D(e) {
     }, [o, l, t])
   }({
     messagesByCategory: Y,
-    loadingInitial: F
+    loadingInitial: V
   });
   let en = i.useCallback(() => {
     var e;

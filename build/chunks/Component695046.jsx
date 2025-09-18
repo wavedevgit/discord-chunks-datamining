@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk372817 = require("./372817.js"),
-  Chunk1561 = require("./1561.jsx"),
+  Chunk793030 = require("./793030.js"),
   Chunk57260 = require("./57260.jsx"),
   Chunk15127 = require("./15127.jsx"),
   Chunk993365 = require("./993365.js"),
@@ -150,7 +150,7 @@ function S(e) {
     radioItemIconClassName: p,
     icon: b
   });
-  return (0, r.jsx)(l.P, {
+  return (0, r.jsx)(l.P3F, {
     "data-toggleable-component": "radiogroup",
     role: "radio",
     "aria-checked": i,

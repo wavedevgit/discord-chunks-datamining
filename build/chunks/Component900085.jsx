@@ -73,7 +73,7 @@ function B(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let V = () => (0, Chunk951288.jsxs)("div", {
+let F = () => (0, Chunk951288.jsxs)("div", {
   className: Chunk712198.emptyState,
   children: [(0, Chunk951288.jsx)("div", {
     className: Chunk712198.emptyStateNote,
@@ -86,7 +86,7 @@ let V = () => (0, Chunk951288.jsxs)("div", {
     })
   })]
 });
-class F extends(r = Chunk647438.Component) {
+class V extends(r = Chunk647438.Component) {
   render() {
     let e = Chunk430824.Z.getGuild(this.props.channel.guild_id);
     return (0, Chunk951288.jsx)(Chunk415795.$W, B(G({}, this.props), {
@@ -97,7 +97,7 @@ class F extends(r = Chunk647438.Component) {
     }))
   }
 }
-U(F, "defaultProps", {
+U(V, "defaultProps", {
   unread: false
 });
 let H = Chunk442837.ZP.connectStores([Chunk306680.ZP, Chunk592125.Z], e => {
@@ -110,7 +110,7 @@ let H = Chunk442837.ZP.connectStores([Chunk306680.ZP, Chunk592125.Z], e => {
       isMentionLowImportance: C.ZP.getIsMentionLowImportance(t.id),
       category: _.Z.getChannel(t.parent_id)
     }
-  })(F),
+  })(V),
   z = Chunk442837.ZP.connectStores([Chunk938475.ZP], e => {
     let {
       channel: t
@@ -119,7 +119,7 @@ let H = Chunk442837.ZP.connectStores([Chunk306680.ZP, Chunk592125.Z], e => {
     return {
       voiceStates: S.ZP.getVoiceStates(t.guild_id)[t.id]
     }
-  })(F),
+  })(V),
   W = Chunk442837.ZP.connectStores([Chunk888369.default], e => {
     let {
       guild: t
@@ -232,7 +232,7 @@ class X extends Chunk647438.PureComponent {
       } = this.state, {
         results: t
       } = this.props;
-      return 0 === exports.length && module.length > 0 ? (0, Chunk951288.jsx)(V, {}) : 0 === exports.length ? null : (0, Chunk951288.jsx)(Chunk481060._2F, {
+      return 0 === exports.length && module.length > 0 ? (0, Chunk951288.jsx)(F, {}) : 0 === exports.length ? null : (0, Chunk951288.jsx)(Chunk481060._2F, {
         innerId: this._listId,
         innerRole: "listbox",
         "aria-label": Chunk388032.intl.string(Chunk388032.t.Wef5Dg),

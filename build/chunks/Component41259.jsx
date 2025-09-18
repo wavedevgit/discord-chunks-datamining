@@ -2,13 +2,12 @@
 /** chunk id: 41259, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk793030 = require("./793030.js"),
   Chunk974674 = require("./974674.jsx"),
-  Chunk1561 = require("./1561.jsx"),
   Chunk993365 = require("./993365.js"),
   Chunk385499 = require("./385499.jsx"),
   Chunk768581 = require("./768581.js"),
@@ -21,91 +20,91 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk604483 = require("./604483.js");
 
-function b(e) {
+function E(e) {
   let {
     user: t,
     application: n,
-    bot: b,
-    accountScopes: y,
-    showLogout: O,
-    location: v,
-    scopes: I
-  } = e, T = (0, p.X)(), S = u.ZP.getApplicationIconURL({
+    bot: E,
+    accountScopes: b,
+    showLogout: y,
+    location: O,
+    scopes: v
+  } = e, I = (0, _.X)(), T = c.ZP.getApplicationIconURL({
     id: n.id,
     icon: n.icon
-  }), A = u.ZP.getUserAvatarURL(t), C = i.useMemo(() => I.some(e => (0, _.sg)(e)) ? (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(l.x, {
+  }), S = c.ZP.getUserAvatarURL(t), A = i.useMemo(() => v.some(e => (0, f.sg)(e)) ? (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(s.x, {
       variant: "text-lg/normal",
       color: "header-secondary",
-      children: g.intl.string(g.t.uT1CPT)
+      children: m.intl.string(m.t.uT1CPT)
     }), (0, r.jsx)(a.X6q, {
       variant: "heading-xxl/bold",
       color: "header-primary",
       children: n.name
     })]
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(l.x, {
+    children: [(0, r.jsxs)(s.x, {
       variant: "text-lg/bold",
       color: "header-primary",
-      children: [n.name, null != b ? (0, r.jsx)(c.Z, {
-        className: E.botTag,
-        verified: null != b.public_flags && (0, d.yE)(b.public_flags, h.xW$.VERIFIED_BOT)
+      children: [n.name, null != E ? (0, r.jsx)(l.Z, {
+        className: g.botTag,
+        verified: null != E.public_flags && (0, u.yE)(E.public_flags, p.xW$.VERIFIED_BOT)
       }) : null]
-    }), y.length > 0 ? (0, r.jsx)(l.x, {
+    }), b.length > 0 ? (0, r.jsx)(s.x, {
       variant: "text-md/normal",
       color: "header-secondary",
-      children: g.intl.string(g.t.jFbDnJ)
-    }) : (0, r.jsx)(l.x, {
+      children: m.intl.string(m.t.jFbDnJ)
+    }) : (0, r.jsx)(s.x, {
       variant: "text-md/normal",
       color: "header-secondary",
-      children: g.intl.string(g.t["X+Fdpq"])
+      children: m.intl.string(m.t["X+Fdpq"])
     })]
-  }), [y.length, n, b, I]);
+  }), [b.length, n, E, v]);
   return (0, r.jsxs)("header", {
-    id: T,
-    className: E.header,
+    id: I,
+    className: g.header,
     children: [(0, r.jsxs)("div", {
-      className: E.headerIcons,
+      className: g.headerIcons,
       children: [(0, r.jsx)(o.qE, {
-        className: E.avatar,
-        src: S,
-        size: m.EF.SIZE_80,
+        className: g.avatar,
+        src: T,
+        size: h.EF.SIZE_80,
         "aria-label": n.name
       }), (0, r.jsxs)("div", {
-        className: E.ellipseGroup,
+        className: g.ellipseGroup,
         children: [(0, r.jsx)("div", {
-          className: E.ellipse
+          className: g.ellipse
         }), (0, r.jsx)("div", {
-          className: E.ellipse
+          className: g.ellipse
         }), (0, r.jsx)("div", {
-          className: E.ellipse
+          className: g.ellipse
         })]
       }), (0, r.jsx)(o.qE, {
-        className: E.avatar,
-        src: A,
-        size: m.EF.SIZE_80,
+        className: g.avatar,
+        src: S,
+        size: h.EF.SIZE_80,
         "aria-label": t.username
       })]
-    }), C, O ? (0, r.jsx)("div", {
-      className: E.currentUser,
-      children: (0, r.jsxs)(l.x, {
+    }), A, y ? (0, r.jsx)("div", {
+      className: g.currentUser,
+      children: (0, r.jsxs)(s.x, {
         variant: "text-sm/normal",
         color: "text-muted",
-        children: [g.intl.format(g.t.qRvpYW, {
-          userHook: () => (0, r.jsxs)(l.x, {
-            className: E.currentUserTag,
+        children: [m.intl.format(m.t.qRvpYW, {
+          userHook: () => (0, r.jsxs)(s.x, {
+            className: g.currentUserTag,
             variant: "text-sm/normal",
-            children: [t.username, !t.hasUniqueUsername() && (0, r.jsx)(l.x, {
-              className: E.currentUserDiscriminator,
+            children: [t.username, !t.hasUniqueUsername() && (0, r.jsx)(s.x, {
+              className: g.currentUserDiscriminator,
               variant: "text-sm/normal",
               children: "#".concat(t.discriminator)
             })]
           }, t.id)
-        }), (0, r.jsx)(s.P, {
+        }), (0, r.jsx)(a.P3F, {
           tag: "a",
-          className: E.logoutLink,
-          onClick: () => (0, f.c$)(v, "oauth2_logout"),
-          children: g.intl.string(g.t["yV/hjI"])
+          className: g.logoutLink,
+          onClick: () => (0, d.c$)(O, "oauth2_logout"),
+          children: m.intl.string(m.t["yV/hjI"])
         })]
       })
     }) : null]

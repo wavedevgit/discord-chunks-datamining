@@ -2,30 +2,29 @@
 /** chunk id: 532425, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  B: () => d
+  B: () => u
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
-  Chunk1561 = require("./1561.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk546237 = require("./546237.js");
-let d = e => {
+let u = e => {
   let {
     hasContent: t,
     onClear: n,
     className: i,
-    isLoading: d,
-    size: f = "sm"
+    isLoading: u,
+    size: d = "sm"
   } = e;
-  return (0, r.jsx)(s.P, {
-    className: a()(i, u.iconLayout, {
-      [u.pointer]: t
+  return (0, r.jsx)(o.P3F, {
+    className: a()(i, c.iconLayout, {
+      [c.pointer]: t
     }),
-    "data-size": f,
+    "data-size": d,
     onClick: e => {
       e.stopPropagation(), null != n && n(e)
     },
@@ -35,23 +34,23 @@ let d = e => {
       e.preventDefault(), e.stopPropagation()
     },
     children: (0, r.jsx)("div", {
-      className: u.iconContainer,
-      children: d ? (0, r.jsx)(o.$jN, {
+      className: c.iconContainer,
+      children: u ? (0, r.jsx)(o.$jN, {
         type: o.$jN.Type.SPINNING_CIRCLE,
-        className: a()(u.icon, u.visible)
+        className: a()(c.icon, c.visible)
       }) : (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(l._Ve, {
+        children: [(0, r.jsx)(s._Ve, {
           color: "currentColor",
-          className: a()(u.icon, {
-            [u.visible]: !t
+          className: a()(c.icon, {
+            [c.visible]: !t
           }),
-          "aria-label": c.intl.string(c.t["5h0QOD"])
-        }), (0, r.jsx)(l.Dio, {
+          "aria-label": l.intl.string(l.t["5h0QOD"])
+        }), (0, r.jsx)(s.Dio, {
           color: "currentColor",
-          className: a()(u.clear, {
-            [u.visible]: t
+          className: a()(c.clear, {
+            [c.visible]: t
           }),
-          "aria-label": c.intl.string(c.t.VkKicX)
+          "aria-label": l.intl.string(l.t.VkKicX)
         })]
       })
     })
