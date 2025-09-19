@@ -31,16 +31,21 @@ function b() {
     filters: b
   }), [exports, b])), y = Chunk647438.useCallback(() => {
     _(m)
-  }, []);
+  }, []), v = Chunk647438.useRef(null), I = Chunk647438.useRef(null);
   return Chunk647438.useEffect(() => {
-    module && Chunk626135.default.track(Chunk981631.rMx.QUEST_HOME_SORT_METHOD_CHANGED, {
-      sort_method: exports
-    })
+    module && (Chunk626135.default.track(Chunk981631.rMx.QUEST_HOME_SORT_METHOD_CHANGED, {
+      sort_method: exports,
+      previous_sort_method: v.current
+    }), v.current = exports)
   }, [exports, module]), Chunk647438.useEffect(() => {
-    module && Chunk626135.default.track(Chunk981631.rMx.QUEST_HOME_FILTERS_CHANGED, {
-      filters: b.map(e => e.filter),
+    var t;
+    if (!module) return;
+    let n = b.map(e => e.filter);
+    Chunk626135.default.track(Chunk981631.rMx.QUEST_HOME_FILTERS_CHANGED, {
+      filters: require,
+      previous_filters: null != (t = I.current) ? exports : [],
       num_quests_visible: O.length
-    })
+    }), I.current = require
   }, [b, module, O.length]), (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [module && (0, Chunk951288.jsxs)("div", {
       className: Chunk872058.headingWrapper,
