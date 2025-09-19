@@ -466,7 +466,7 @@ Object.freeze({
   "profile-gradient-role-pill-border": [Chunk691324.I.WHITE, Chunk691324.I.PRIMARY_660, Chunk691324.I.WHITE, Chunk691324.I.WHITE],
   "profile-gradient-section-box": [Chunk691324.I.BLACK, Chunk691324.I.WHITE, Chunk691324.I.BLACK, Chunk691324.I.BLACK],
   "radio-background-active": [Chunk691324.I.BLURPLE_50, Chunk691324.I.BLURPLE_50, Chunk691324.I.BLURPLE_50, Chunk691324.I.BLURPLE_50],
-  "radio-background-default": [Chunk691324.I.OPACITY_BLACK_8, Chunk691324.I.OPACITY_WHITE_4, Chunk691324.I.OPACITY_BLACK_8, Chunk691324.I.OPACITY_BLACK_8],
+  "radio-background-default": [Chunk691324.I.OPACITY_BLACK_8, Chunk691324.I.OPACITY_BLACK_4, Chunk691324.I.OPACITY_BLACK_8, Chunk691324.I.OPACITY_BLACK_8],
   "radio-background-default-selected": [Chunk691324.I.BLURPLE_50, Chunk691324.I.BLURPLE_50, Chunk691324.I.BLURPLE_50, Chunk691324.I.BLURPLE_50],
   "radio-background-hover": [Chunk691324.I.OPACITY_BLACK_8, Chunk691324.I.OPACITY_4, Chunk691324.I.OPACITY_BLACK_8, Chunk691324.I.OPACITY_BLACK_8],
   "radio-background-hover-selected": [Chunk691324.I.BLURPLE_60, Chunk691324.I.BLURPLE_60, Chunk691324.I.BLURPLE_60, Chunk691324.I.BLURPLE_60],

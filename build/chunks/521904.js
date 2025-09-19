@@ -8098,7 +8098,7 @@ let {
         opacity: .0784313725490196
       },
       [r.LIGHT]: {
-        raw: "OPACITY_WHITE_4",
+        raw: "OPACITY_BLACK_4",
         opacity: .0392156862745098
       },
       [r.MIDNIGHT]: {
