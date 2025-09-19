@@ -38,7 +38,7 @@ function C(e) {
   }, [null == n ? true : n.catalog]);
   return null == n ? null : (0, r.jsxs)(d.aB, {
     label: x.intl.string(v.default["fjt/vr"]),
-    badge: "new",
+    badge: "beta",
     isActive: (null == o ? true : o.type) === "active",
     onClick: () => (0, m.Z)({
       guildId: t,

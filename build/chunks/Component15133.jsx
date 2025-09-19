@@ -1,7 +1,7 @@
 /** Chunk was on 85683 **/
 /** chunk id: 15133, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => v
+  default: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk828843 = require("./828843.js");
 
-function v(e) {
+function g(e) {
   let {
     guildId: t
   } = e;
@@ -26,8 +26,8 @@ function v(e) {
     (0, d.EC)(t)
   }, [t]);
   let n = (0, l.Z)(t),
-    v = (0, s.e7)([u.Z], () => u.Z.getStateForGuild(t)),
-    g = a.useMemo(() => (null == v ? true : v.instances) == null ? [] : Object.values(v.instances), [null == v ? true : v.instances]);
+    g = (0, s.e7)([u.Z], () => u.Z.getStateForGuild(t)),
+    v = a.useMemo(() => (null == g ? true : g.instances) == null ? [] : Object.values(g.instances), [null == g ? true : g.instances]);
   return (0, r.jsxs)("div", {
     className: j.container,
     children: [(0, r.jsxs)(o.ZP, {
@@ -41,11 +41,11 @@ function v(e) {
       })]
     }), (0, r.jsxs)("div", {
       className: j.contentContainer,
-      children: [(null == v ? true : v.instances) != null ? (0, r.jsx)("div", {
+      children: [(null == g ? true : g.instances) != null ? (0, r.jsx)(c.zJl, {
         className: j.gameContainerWrapper,
         children: (0, r.jsx)("div", {
           className: j.gameContainer,
-          children: g.map((e, n) => (0, r.jsx)(b.Z, {
+          children: v.map((e, n) => (0, r.jsx)(b.Z, {
             guildId: t,
             instance: e
           }, "".concat(e.gameId, "-").concat(n)))

@@ -59,29 +59,33 @@ function y(e) {
     return (null == e ? true : e.catalog) != null ? Object.values(e.catalog) : []
   });
   return 0 === n.length ? (0, i.jsx)("div", {
-    className: g.container,
+    className: v.container,
     children: (0, i.jsx)(l.$jN, {
       type: l.RAz.SPINNING_CIRCLE,
-      className: g.spinner
+      className: v.spinner
     })
   }) : (0, i.jsxs)("div", {
-    className: g.container,
+    className: v.container,
     children: [(0, i.jsx)(c.X6q, {
+      className: v.heading,
       variant: "heading-md/semibold",
-      children: v.intl.string(j.default.jeYp1t)
-    }), (0, i.jsx)("div", {
-      className: g.gameContainer,
-      children: n.map((e, n) => (0, i.jsx)(m.Z, {
-        className: g.game,
-        game: e,
-        onClick: () => (0, p.Z)({
-          guildId: t,
-          stepConfig: x,
-          initialPortkeyGame: e,
-          analyticsLocation: d.Z.PORTKEY_OVERVIEW
-        }),
-        imageClassName: g.image
-      }, "sidebar-game-".concat(n, "-").concat(e.id)))
+      children: g.intl.string(j.default.jeYp1t)
+    }), (0, i.jsx)(c.zJl, {
+      className: v.gameContainerWrapper,
+      children: (0, i.jsx)("div", {
+        className: v.gameContainer,
+        children: n.map((e, n) => (0, i.jsx)(m.Z, {
+          className: v.game,
+          game: e,
+          onClick: () => (0, p.Z)({
+            guildId: t,
+            stepConfig: x,
+            initialPortkeyGame: e,
+            analyticsLocation: d.Z.PORTKEY_OVERVIEW
+          }),
+          imageClassName: v.image
+        }, "sidebar-game-".concat(n, "-").concat(e.id)))
+      })
     })]
   })
 }
