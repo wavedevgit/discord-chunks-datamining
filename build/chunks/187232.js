@@ -38,7 +38,7 @@ let b = {
   },
   O = {
     skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_GHOST_TRICK_SKU_ID,
-    assetId: "a_fe80397b484fba8ffc12257f5ba9f500",
+    assetId: "a_843b6925894c8fa530432ad197eb8dcd",
     a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
       category: Chunk388032.intl.string(Chunk388032.t["6Zuiv7"]),
       name: Chunk388032.intl.string(Chunk388032.t.sBk8mZ)
@@ -46,7 +46,7 @@ let b = {
   },
   v = {
     skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_GHOST_TREAT_SKU_ID,
-    assetId: "a_9a847496ade4af368c10c1b910880695",
+    assetId: "a_3835acaf56f5b8cdfb7be072580e618d",
     a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
       category: Chunk388032.intl.string(Chunk388032.t["2UeOlZ"]),
       name: Chunk388032.intl.string(Chunk388032.t.sBk8mZ)

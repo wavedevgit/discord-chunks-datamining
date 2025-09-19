@@ -2,6 +2,7 @@
 /** chunk id: 149671, original params: e,n,t (module,exports,require) **/
 module.exports = {
   container: "container__8303d",
+  spinnerContainer: "spinnerContainer__8303d",
   contentContainer: "contentContainer__8303d",
   settingsContainer: "settingsContainer__8303d",
   sectionContainer: "sectionContainer__8303d",

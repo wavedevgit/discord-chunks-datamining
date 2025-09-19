@@ -1,12 +1,12 @@
 /** Chunk was on 39159 **/
 /** chunk id: 678328, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk494620 = require("./494620.jsx"),
   Chunk748745 = require("./748745.jsx"),
@@ -18,19 +18,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk782991 = require("./782991.js");
 
-function v() {
+function x() {
   let {
     guildId: e,
     portkeyGames: n,
     instances: t,
-    setPortkeyInstance: a,
-    setCurrentGame: v,
-    onNext: b
-  } = (0, Chunk183369.aj)(), j = Chunk647438.useCallback(e => {
-    v(e), b()
-  }, [v, b]), h = Chunk647438.useCallback(e => {
-    a(e), b()
-  }, [Chunk120356, b]), _ = require.length >= Chunk473682.zI, C = require.length > 0;
+    setPortkeyInstance: l,
+    setCurrentGame: x,
+    onNext: j
+  } = (0, Chunk183369.aj)(), b = Chunk647438.useCallback(e => {
+    x(e), j()
+  }, [x, j]), h = Chunk647438.useCallback(e => {
+    l(e), j()
+  }, [Chunk120356, j]), _ = require.length >= Chunk473682.zI, C = require.length > 0;
   return 0 === Object.values(exports).length ? (0, Chunk951288.jsx)("div", {
     className: Chunk782991.loadingContainer,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {
@@ -53,7 +53,7 @@ function v() {
         children: Chunk388032.intl.string(Chunk401561.default.wzC4ws)
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk782991.gameInstanceContainer,
-        children: require.map((n, t) => (0, r.jsx)(c.Z, {
+        children: require.map((n, t) => (0, i.jsx)(c.Z, {
           guildId: e,
           gameInstance: n,
           onClick: h
@@ -68,7 +68,7 @@ function v() {
         })
       })]
     }), (0, Chunk951288.jsxs)("div", {
-      className: l()(Chunk782991.gameSection, {
+      className: a()(Chunk782991.gameSection, {
         [Chunk782991.disabled]: _
       }),
       children: [C && (0, Chunk951288.jsx)(Chunk481060.X6q, {
@@ -76,10 +76,10 @@ function v() {
         children: Chunk388032.intl.string(Chunk401561.default.l4UdiY)
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk782991.gameContainer,
-        children: Object.values(exports).map((e, n) => (0, r.jsx)(d.Z, {
+        children: Object.values(exports).map((e, n) => (0, i.jsx)(d.Z, {
           game: e,
           disabled: _,
-          onClick: j
+          onClick: b
         }, "game-".concat(e.id, "-").concat(n)))
       })]
     }), (0, Chunk951288.jsxs)(Chunk422663.ok, {

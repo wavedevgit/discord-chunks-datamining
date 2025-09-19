@@ -42,20 +42,20 @@ function d() {
       }), null != require && (0, Chunk951288.jsx)("div", {
         className: Chunk20426.statsGrid,
         children: require.specifications.map((e, n) => {
-          var l;
-          return (0, r.jsxs)(i.Fragment, {
-            children: [(0, r.jsxs)("div", {
+          var a;
+          return (0, i.jsxs)(r.Fragment, {
+            children: [(0, i.jsxs)("div", {
               className: c.statItem,
-              children: [(0, r.jsx)(a.X6q, {
+              children: [(0, i.jsx)(l.X6q, {
                 variant: "heading-sm/semibold",
                 color: "text-primary",
                 children: e.title
-              }), (0, r.jsx)(a.xvT, {
+              }), (0, i.jsx)(l.xvT, {
                 variant: "text-sm/medium",
                 color: "text-tertiary",
                 children: e.description
               })]
-            }), n !== (null != (l = null == t ? true : t.specifications.length) ? l : 0) - 1 && (0, r.jsx)("div", {
+            }), n !== (null != (a = null == t ? true : t.specifications.length) ? a : 0) - 1 && (0, i.jsx)("div", {
               className: c.divider
             })]
           }, n)

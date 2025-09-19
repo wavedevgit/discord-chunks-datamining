@@ -3,10 +3,10 @@
 require.d(exports, {
   Z: () => u
 });
-var r, Chunk442837 = require("./442837.js"),
+var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function l(e, n, t) {
+function a(e, n, t) {
   return n in e ? Object.defineProperty(e, n, {
     value: t,
     enumerable: true,
@@ -20,7 +20,7 @@ let o = {},
 function c() {
   o = {}
 }
-class d extends(r = Chunk442837.ZP.Store) {
+class d extends(i = Chunk442837.ZP.Store) {
   getRegionStateForPingUrl(e) {
     if (null != e) return o[e]
   }
@@ -28,33 +28,33 @@ class d extends(r = Chunk442837.ZP.Store) {
     return s
   }
 }
-l(d, "displayName", "PortkeyRegionStore");
+a(d, "displayName", "PortkeyRegionStore");
 let u = new d(Chunk570140.Z, {
   LOGOUT: c,
   PORTKEY_REGION_PING_STATE_UPDATE: function(e) {
     var n, t;
     let {
-      pingUrl: r,
-      state: i
+      pingUrl: i,
+      state: r
     } = e;
     n = function(e) {
       for (var n = 1; n < arguments.length; n++) {
         var t = null != arguments[n] ? arguments[n] : {},
-          r = Object.keys(t);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+          i = Object.keys(t);
+        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
           return Object.getOwnPropertyDescriptor(t, e).enumerable
-        }))), r.forEach(function(n) {
-          l(e, n, t[n])
+        }))), i.forEach(function(n) {
+          a(e, n, t[n])
         })
       }
       return e
     }({}, o), t = t = {
-      [r]: i
+      [i]: r
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(t)) : (function(e, n) {
       var t = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t.push.apply(t, r)
+        var i = Object.getOwnPropertySymbols(e);
+        t.push.apply(t, i)
       }
       return t
     })(Object(t)).forEach(function(e) {

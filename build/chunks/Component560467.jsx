@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
@@ -27,26 +27,26 @@ function C(e) {
   let {
     plan: n,
     selected: t,
-    className: i
+    className: r
   } = e;
-  return null == n ? null : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)("div", {
-      className: l()(_.optionContainer, i),
-      children: [(0, r.jsx)("span", {
+  return null == n ? null : (0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsxs)("div", {
+      className: a()(_.optionContainer, r),
+      children: [(0, i.jsx)("span", {
         children: n.name
-      }), (0, r.jsxs)("div", {
+      }), (0, i.jsxs)("div", {
         className: _.labelContainer,
-        children: [(0, r.jsx)(c.$Eu, {
+        children: [(0, i.jsx)(c.$Eu, {
           size: "xs",
           color: c.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
-        }), (0, r.jsx)(c.Text, {
+        }), (0, i.jsx)(c.Text, {
           variant: "text-xs/medium",
-          children: h.intl.format(j.default.FrRqub, {
+          children: h.intl.format(b.default.FrRqub, {
             boostCount: n.cost
           })
         })]
       })]
-    }), !t && (0, r.jsx)("div", {
+    }), !t && (0, i.jsx)("div", {
       className: _.optionSpacer
     })]
   })
@@ -56,33 +56,33 @@ function y(e) {
   let {
     region: n,
     selected: t,
-    disabled: i,
-    className: a
+    disabled: r,
+    className: l
   } = e, {
     pingText: o,
     pingCircleStyle: s
-  } = (0, v.t)(n.pingUrl);
-  return null == n ? null : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)("div", {
-      className: l()(_.optionContainer, {
-        [_.disabled]: i
-      }, a),
-      children: [(0, r.jsx)("span", {
+  } = (0, x.t)(n.pingUrl);
+  return null == n ? null : (0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsxs)("div", {
+      className: a()(_.optionContainer, {
+        [_.disabled]: r
+      }, l),
+      children: [(0, i.jsx)("span", {
         children: n.name
-      }), (0, r.jsx)("div", {
+      }), (0, i.jsx)("div", {
         className: _.labelContainer,
-        children: i ? (0, r.jsx)("span", {
-          children: h.intl.string(j.default["1eK9GR"])
-        }) : (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)("div", {
-            className: l()(_.pingCircle, s)
-          }), (0, r.jsx)(c.Text, {
+        children: r ? (0, i.jsx)("span", {
+          children: h.intl.string(b.default["1eK9GR"])
+        }) : (0, i.jsxs)(i.Fragment, {
+          children: [(0, i.jsx)("div", {
+            className: a()(_.pingCircle, s)
+          }), (0, i.jsx)(c.Text, {
             variant: "text-xs/medium",
             children: o
           })]
         })
       })]
-    }), !t && (0, r.jsx)("div", {
+    }), !t && (0, i.jsx)("div", {
       className: _.optionSpacer
     })]
   })
@@ -93,13 +93,13 @@ function O() {
     guildId: e,
     currentGame: n,
     regionId: t,
-    portkeyInstance: a,
-    setRegionId: l,
-    name: v,
+    portkeyInstance: l,
+    setRegionId: a,
+    name: x,
     setName: O,
     planId: N,
-    setPlanId: S,
-    planCost: P
+    setPlanId: P,
+    planCost: S
   } = (0, Chunk183369.aj)();
   Chunk647438.useEffect(() => {
     (0, Chunk744993._k)(module)
@@ -112,15 +112,20 @@ function O() {
         label: e.name
       }))) ? module : []
     }, [w]),
-    T = Chunk647438.useMemo(() => {
+    E = Chunk647438.useMemo(() => {
       var e;
       return null != (e = null == exports ? true : exports.plans.map(e => ({
         value: e,
         label: e.name
       }))) ? module : []
     }, [exports]),
-    E = (0, Chunk210682.Z)();
-  return null == exports ? null : (0, Chunk951288.jsxs)("div", {
+    I = (0, Chunk210682.Z)();
+  return null == exports ? (0, Chunk951288.jsx)("div", {
+    className: Chunk149671.spinnerContainer,
+    children: (0, Chunk951288.jsx)(Chunk481060.$jN, {
+      type: Chunk481060.RAz.SPINNING_CIRCLE
+    })
+  }) : (0, Chunk951288.jsxs)("div", {
     className: Chunk149671.container,
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-lg/semibold",
@@ -183,11 +188,11 @@ function O() {
             isSelected: e => e.id === t,
             options: k,
             optionClassName: Chunk149671.option,
-            select: e => l(e.id),
+            select: e => a(e.id),
             placeholder: Chunk388032.intl.string(Chunk401561.default["op6/kZ"]),
             renderOptionLabel: e => {
               var n;
-              return (0, r.jsx)(y, {
+              return (0, i.jsx)(y, {
                 region: e.value,
                 selected: e.value.id === t,
                 disabled: null != (n = e.disabled) && n
@@ -195,7 +200,7 @@ function O() {
             },
             renderOptionValue: e => {
               var n;
-              return null == e[0] ? null : (0, r.jsx)(y, {
+              return null == e[0] ? null : (0, i.jsx)(y, {
                 region: e[0].value,
                 selected: e[0].value.id === t,
                 disabled: null != (n = e[0].disabled) && n,
@@ -214,19 +219,19 @@ function O() {
           }), (0, Chunk951288.jsx)(Chunk481060.PhF, {
             serialize: e => e.id,
             isSelected: e => e.id === N,
-            options: T,
+            options: E,
             optionClassName: Chunk149671.option,
-            select: e => S(e.id),
+            select: e => P(e.id),
             placeholder: Chunk388032.intl.string(Chunk401561.default["4QOSPj"]),
             renderOptionValue: e => {
-              var n, t, i;
-              return (0, r.jsx)(C, {
+              var n, t, r;
+              return (0, i.jsx)(C, {
                 plan: null == (n = e[0]) ? true : n.value,
-                selected: (null == (i = e[0]) || null == (t = i.value) ? true : t.id) === N,
+                selected: (null == (r = e[0]) || null == (t = r.value) ? true : t.id) === N,
                 className: _.value
               })
             },
-            renderOptionLabel: e => (0, r.jsx)(C, {
+            renderOptionLabel: e => (0, i.jsx)(C, {
               plan: e.value,
               selected: e.value.id === N
             })
@@ -236,14 +241,14 @@ function O() {
         className: Chunk149671.gameDetailsContainer,
         children: (0, Chunk951288.jsx)(Chunk642633.Z, {})
       })]
-    }), null != Chunk120356 && 0 !== P && (0, Chunk951288.jsx)(Chunk494620.Z, {
+    }), null != Chunk120356 && 0 !== S && (0, Chunk951288.jsx)(Chunk494620.Z, {
       className: Chunk149671.infoBox,
       children: (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-xs/medium",
-        children: P < 0 ? Chunk388032.intl.format(Chunk401561.default.H8rHQU, {
-          boostCount: Math.abs(P)
+        children: S < 0 ? Chunk388032.intl.format(Chunk401561.default.H8rHQU, {
+          boostCount: Math.abs(S)
         }) : Chunk388032.intl.format(Chunk401561.default.h4ZvmJ, {
-          boostCount: P
+          boostCount: S
         })
       })
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -257,7 +262,7 @@ function O() {
       step: Chunk473682.Vb.SERVER_SETTINGS,
       className: Chunk149671.footerContainer,
       children: [(0, Chunk951288.jsx)(Chunk422663.VS, {}), (0, Chunk951288.jsx)(Chunk422663.oh, {
-        disabled: !E
+        disabled: !I
       })]
     })]
   })
