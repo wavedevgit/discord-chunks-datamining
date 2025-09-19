@@ -2,16 +2,16 @@
 /** chunk id: 276149, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk287734 = require("./287734.js"),
+  Chunk699263 = require("./699263.js"),
   Chunk359110 = require("./359110.js"),
   Chunk19780 = require("./19780.js"),
-  Chunk938475 = require("./938475.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
@@ -39,8 +39,25 @@ function p(e) {
 }
 
 function h(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function g(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -48,7 +65,7 @@ function h(e, t) {
   return i
 }
 
-function m(e, t) {
+function E(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -56,31 +73,28 @@ function m(e, t) {
   return i
 }
 
-function g(e) {
+function b(e) {
   var {
     variant: t = "active",
     size: n = "sm",
     hangStatusChannel: _,
-    onAction: m,
-    userId: g
-  } = e, E = h(e, ["variant", "size", "hangStatusChannel", "onAction", "userId"]);
-  let b = (0, i.e7)([l.Z], () => l.Z.getChannelId() === _.id),
-    y = () => {
-      null == m || m(), o.default.selectVoiceChannel(_.id), (0, s.Kh)(_.id), u.default.track(d.rMx.HANG_STATUS_CTA_CLICKED, {
-        source: "UserProfilePopout",
-        guild_id: _.guild_id,
-        channel_id: _.id,
-        media_session_id: l.Z.getMediaSessionId(),
-        call_num_participants: c.ZP.countVoiceStatesForChannel(_.id),
-        other_user_id: g,
-        cta_type: b ? "open" : "join"
-      })
+    onAction: h,
+    userId: E
+  } = e, b = g(e, ["variant", "size", "hangStatusChannel", "onAction", "userId"]);
+  let y = (0, i.e7)([c.Z], () => c.Z.getChannelId() === _.id),
+    O = () => {
+      null == h || h(), o.default.selectVoiceChannel(_.id), (0, l.Kh)(_.id), u.default.track(d.rMx.HANG_STATUS_CTA_CLICKED, m(p({
+        source: "UserProfilePopout"
+      }, (0, s.Z)(_.id)), {
+        other_user_id: E,
+        cta_type: y ? "open" : "join"
+      }))
     };
   return (0, r.jsx)(a.zxk, p({
-    text: b ? f.intl.string(f.t.BXxdl5) : f.intl.string(f.t["9C444u"]),
-    onClick: y,
+    text: y ? f.intl.string(f.t.BXxdl5) : f.intl.string(f.t["9C444u"]),
+    onClick: O,
     variant: t,
     size: n,
     fullWidth: true
-  }, E))
+  }, b))
 }
