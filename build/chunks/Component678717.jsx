@@ -1,8 +1,8 @@
 /** Chunk was on 85991 **/
 /** chunk id: 678717, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => ev,
-  useDevToolsTabConfig: () => ep
+  default: () => ej,
+  useDevToolsTabConfig: () => ex
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,6 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk611565 = require("./611565.jsx"),
   Chunk238246 = require("./238246.jsx"),
   Chunk788983 = require("./788983.js"),
+  Chunk51415 = require("./51415.jsx"),
   Chunk906467 = require("./906467.js"),
   Chunk259580 = require("./259580.jsx"),
   Chunk31336 = require("./31336.js"),
@@ -71,7 +72,7 @@ var Chunk392750 = require("./392750.jsx"),
   Chunk552883 = require("./552883.js"),
   Chunk451429 = require("./451429.js");
 
-function ep() {
+function ex() {
   return Chunk647438.useMemo(() => {
     let e = [{
       id: "analytics",
@@ -293,17 +294,22 @@ function ep() {
       name: "Web Setting Tree",
       group: Chunk621060.v0.DEVELOPMENT,
       render: () => (0, Chunk951288.jsx)(Chunk512313.Z, {})
+    }), module.push({
+      id: "quest_minor_reward_capping_config",
+      name: "Minor Reward Capping",
+      group: Chunk621060.v0.QUESTS,
+      render: () => (0, Chunk951288.jsx)(Chunk51415.Z, {})
     }), module
   }, [])
 }
 
-function ex(e) {
+function ef(e) {
   let {
     resizableNode: t,
     onResize: n,
     onResizeEnd: r
   } = e, i = (0, d.Z)({
-    minDimension: j.h,
+    minDimension: _.h,
     resizableDomNodeRef: t,
     onElementResize: n,
     onElementResizeEnd: r,
@@ -311,23 +317,23 @@ function ex(e) {
   });
   return (0, a.jsx)("div", {
     onMouseDown: i,
-    className: em.resizeHandle
+    className: eh.resizeHandle
   })
 }
 
-function ef(e) {
+function eb(e) {
   var t;
   let {
     isPopout: n = false
-  } = e, r = ep(), {
+  } = e, r = ex(), {
     TabBar: i,
     renderSelectedTab: l,
     selectedTabId: o
-  } = (0, ec.ZP)({
+  } = (0, ed.ZP)({
     tabs: r,
-    initialSelectedTabId: null != (t = j.Z.lastOpenTabId) ? t : true,
+    initialSelectedTabId: null != (t = _.Z.lastOpenTabId) ? t : true,
     onChangeTab: e => {
-      (0, v.Qh)({
+      (0, j.Qh)({
         lastOpenTabId: e
       })
     }
@@ -338,19 +344,19 @@ function ef(e) {
     properties: {
       panel: o
     }
-  }), (0, a.jsxs)(U.Gk, {
+  }), (0, a.jsxs)(F.Gk, {
     children: [(0, a.jsxs)(h.ZP, {
-      className: eh.headerBar,
+      className: ep.headerBar,
       toolbar: n ? null : (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(h.ZP.Icon, {
           icon: c.rgF,
           tooltip: "Pop Out",
           onClick: () => {
-            (0, f.bA)(ed.KJ3.DEVTOOLS_POPOUT, () => (0, a.jsx)(x.Z, {
-              windowKey: ed.KJ3.DEVTOOLS_POPOUT,
+            (0, f.bA)(eu.KJ3.DEVTOOLS_POPOUT, () => (0, a.jsx)(x.Z, {
+              windowKey: eu.KJ3.DEVTOOLS_POPOUT,
               title: "DevTools",
               withTitleBar: true,
-              children: (0, a.jsx)(ev, {
+              children: (0, a.jsx)(ej, {
                 mobile: false,
                 isPopout: true
               })
@@ -361,8 +367,8 @@ function ef(e) {
           }
         }), (0, a.jsx)(h.ZP.Icon, {
           icon: c.Dio,
-          tooltip: eu.intl.string(eu.t.cpT0Cg),
-          onClick: v.SO
+          tooltip: em.intl.string(em.t.cpT0Cg),
+          onClick: j.SO
         })]
       }),
       children: [(0, a.jsx)(h.ZP.Icon, {
@@ -371,17 +377,17 @@ function ef(e) {
       }), (0, a.jsx)(h.ZP.Title, {
         children: "DevTools"
       })]
-    }), (0, a.jsx)(i, {}), l(), (0, a.jsx)(U.Br, {
-      className: em.layerContainer
+    }), (0, a.jsx)(i, {}), l(), (0, a.jsx)(F.Br, {
+      className: eh.layerContainer
     })]
   })
 }
 
-function eb() {
+function eg() {
   let e = Chunk647438.useRef(null),
     t = (0, Chunk442837.e7)([Chunk19759.Z], () => Chunk19759.Z.sidebarWidth),
     [n, i] = Chunk647438.useState(null),
-    l = Chunk647438.useCallback(e => (0, v.Qh)({
+    l = Chunk647438.useCallback(e => (0, j.Qh)({
       sidebarWidth: e
     }), []);
   return (Chunk647438.useEffect(() => {
@@ -394,23 +400,23 @@ function eb() {
       width: require
     },
     "data-app-right-panel": true,
-    children: [(0, Chunk951288.jsx)(ex, {
+    children: [(0, Chunk951288.jsx)(ef, {
       resizableNode: module,
       onResize: Chunk120356,
       onResizeEnd: l
     }), (0, Chunk951288.jsx)("div", {
       className: Chunk552883.sidebarContent,
-      children: (0, Chunk951288.jsx)(ef, {})
+      children: (0, Chunk951288.jsx)(eb, {})
     })]
   })
 }
 
-function eg() {
+function ev() {
   return (0, Chunk442837.e7)([Chunk19759.Z], () => Chunk19759.Z.displayTools) ? (0, Chunk951288.jsx)("div", {
     className: l()(Chunk552883.container, Chunk552883.mobileContainerExpanded),
     children: (0, Chunk951288.jsx)("div", {
       className: Chunk552883.sidebarContent,
-      children: (0, Chunk951288.jsx)(ef, {})
+      children: (0, Chunk951288.jsx)(eb, {})
     })
   }) : (0, Chunk951288.jsx)("div", {
     className: Chunk552883.container,
@@ -432,15 +438,15 @@ function eg() {
   })
 }
 
-function ev(e) {
+function ej(e) {
   let {
     mobile: t,
     isPopout: n = false
   } = e;
-  return t ? (0, a.jsx)(eg, {}) : n ? (0, a.jsx)("div", {
-    className: em.popoutContainer,
-    children: (0, a.jsx)(ef, {
+  return t ? (0, a.jsx)(ev, {}) : n ? (0, a.jsx)("div", {
+    className: eh.popoutContainer,
+    children: (0, a.jsx)(eb, {
       isPopout: true
     })
-  }) : (0, a.jsx)(eb, {})
+  }) : (0, a.jsx)(eg, {})
 }

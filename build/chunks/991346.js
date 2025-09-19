@@ -105,7 +105,7 @@ function V(e) {
   }, {
     header: "Developer Only",
     divider: true,
-    settings: r ? [M.s6.EXPERIMENTS, M.s6.DEVELOPER_OPTIONS, M.s6.PAYMENT_FLOW_MODALS, M.s6.REVENUE_STORYBOOK, M.s6.VIRTUAL_CURRENCY_CONFIGURATION, M.s6.SHOP_KEEPER, M.s6.QUEST_PREVIEW_TOOL, M.s6.QUEST_PREVIEW_TOOL_2, M.s6.QUEST_MINOR_REWARD_CAPPING_CONFIG, M.s6.TEMP_DEVELOPER_EDUCATION_SIDEBAR_ITEM] : []
+    settings: r ? [M.s6.EXPERIMENTS, M.s6.DEVELOPER_OPTIONS, M.s6.PAYMENT_FLOW_MODALS, M.s6.REVENUE_STORYBOOK, M.s6.VIRTUAL_CURRENCY_CONFIGURATION, M.s6.SHOP_KEEPER, M.s6.QUEST_PREVIEW_TOOL, M.s6.QUEST_PREVIEW_TOOL_2, M.s6.TEMP_DEVELOPER_EDUCATION_SIDEBAR_ITEM] : []
   }, {
     divider: true,
     settings: [M.s6.LOGOUT]
@@ -337,7 +337,7 @@ function Q(e) {
 function J(e) {
   return new Map(Object.entries(e).filter(e => {
     let [t, n] = e;
-    return n.section !== o.ID.CUSTOM && null != n.searchableTitles && (null == n.predicate || n.predicate())
+    return (n.section !== o.ID.CUSTOM || t === M.s6.TEMP_DEVELOPER_EDUCATION_SIDEBAR_ITEM) && null != n.searchableTitles && (null == n.predicate || n.predicate())
   }))
 }
 
