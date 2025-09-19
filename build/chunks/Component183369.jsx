@@ -2,7 +2,7 @@
 /** chunk id: 183369, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   KO: () => b,
-  aj: () => v
+  aj: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,17 +17,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk693587 = require("./693587.js"),
   Chunk741252 = require("./741252.jsx"),
   Chunk473682 = require("./473682.js");
-let [x, v] = (0, Chunk975104.Z)();
+let [v, x] = (0, Chunk975104.Z)();
 
 function b(e) {
-  var n, t, d, v, b, j, h, _;
+  var n, t, d, x, b, j, h, _;
   let {
     guildId: C,
     initialPortkeyInstance: y,
     initialPortkeyGame: O,
     stepConfig: N = p.T9,
-    children: P,
-    onClose: S,
+    children: S,
+    onClose: P,
     analyticsLocation: w
   } = e;
   i.useEffect(() => {
@@ -47,7 +47,7 @@ function b(e) {
       if (null != D) return Object.values(null != (e = null == k ? true : k.catalog) ? e : {}).find(e => e.id === D)
     }, [null == k ? true : k.catalog, D]),
     [z, F] = i.useState(y),
-    [V, A] = i.useState(null != (v = null == O || null == (n = O.plans[0]) ? true : n.id) ? v : null == y ? true : y.planId),
+    [V, A] = i.useState(null != (x = null == O || null == (n = O.plans[0]) ? true : n.id) ? x : null == y ? true : y.planId),
     L = function(e, n, t, r) {
       var i, l, o, s, c, d, u, m;
       let f = (0, a.e7)([g.Z], () => {
@@ -80,17 +80,17 @@ function b(e) {
         },
         onSubscribeComplete: () => {
           (0, m.NE)(T.id, V, q, Y).then(() => {
-            S(), (0, f.Z)(T.id, M)
+            P(), (0, f.Z)(T.id, M)
           })
         }
       }) : (0, m.NE)(T.id, V, q, Y).then(() => {
-        S(), (0, f.Z)(T.id, M)
+        P(), (0, f.Z)(T.id, M)
       }))
-    }, [E, T, G, V, w, M, q, Y, S, L]),
+    }, [E, T, G, V, w, M, q, Y, P, L]),
     en = i.useCallback(e => {
       switch (e.type) {
         case "close":
-          S();
+          P();
           break;
         case "go-to-step":
           Z(e.step);
@@ -98,14 +98,14 @@ function b(e) {
         case "save":
           ee()
       }
-    }, [S, ee]),
+    }, [P, ee]),
     et = i.useCallback(() => {
       null != R && en(R.onBack)
     }, [R, en]),
     er = i.useCallback(() => {
       null != R && en(R.onNext)
     }, [R, en]);
-  return (0, r.jsx)(x.Provider, {
+  return (0, r.jsx)(v.Provider, {
     value: {
       guildId: C,
       step: I,
@@ -130,6 +130,6 @@ function b(e) {
       setFooterNode: H,
       availableBoostCount: G
     },
-    children: P
+    children: S
   })
 }

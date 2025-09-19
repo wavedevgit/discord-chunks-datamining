@@ -62,7 +62,7 @@ function y(e) {
   } = e, {
     pingText: o,
     pingCircleStyle: s
-  } = (0, v.t)(n.pingUrl);
+  } = (0, x.t)(n.pingUrl);
   return null == n ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: l()(_.optionContainer, {
@@ -96,11 +96,11 @@ function O() {
     regionId: t,
     portkeyInstance: a,
     setRegionId: l,
-    name: v,
+    name: x,
     setName: O,
     planId: N,
-    setPlanId: P,
-    planCost: S
+    setPlanId: S,
+    planCost: P
   } = (0, Chunk183369.aj)();
   Chunk647438.useEffect(() => {
     (0, Chunk744993._k)(module)
@@ -217,7 +217,7 @@ function O() {
             isSelected: e => e === N,
             options: T,
             optionClassName: Chunk149671.option,
-            select: e => P(e),
+            select: e => S(e),
             placeholder: Chunk388032.intl.string(Chunk401561.default["4QOSPj"]),
             renderOptionValue: e => {
               var t, i;
@@ -239,14 +239,14 @@ function O() {
         className: Chunk149671.gameDetailsContainer,
         children: (0, Chunk951288.jsx)(Chunk642633.Z, {})
       })]
-    }), null != Chunk120356 && 0 !== S && (0, Chunk951288.jsx)(Chunk494620.Z, {
+    }), null != Chunk120356 && 0 !== P && (0, Chunk951288.jsx)(Chunk494620.Z, {
       className: Chunk149671.infoBox,
       children: (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-xs/medium",
-        children: S < 0 ? Chunk388032.intl.format(Chunk401561.default.H8rHQU, {
-          boostCount: Math.abs(S)
+        children: P < 0 ? Chunk388032.intl.format(Chunk401561.default.H8rHQU, {
+          boostCount: Math.abs(P)
         }) : Chunk388032.intl.format(Chunk401561.default.h4ZvmJ, {
-          boostCount: S
+          boostCount: P
         })
       })
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {

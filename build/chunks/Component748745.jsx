@@ -19,15 +19,15 @@ var Chunk120356 = require("./120356.js"),
   Chunk362320 = require("./362320.js"),
   Chunk961820 = require("./961820.js");
 
-function v(e) {
-  var n, t, i, c, v, b;
+function x(e) {
+  var n, t, i, c, x, b;
   let {
     guildId: j,
     gameInstance: h
   } = e, _ = (0, l.e7)([u.Z], () => {
     var e;
     return null == (e = u.Z.getStateForGuild(j)) ? true : e.entitlements
-  }), C = null != (b = null == _ || null == (v = _[h.entitlementId]) || null == (c = v.sku) || null == (i = c.tenant_metadata) || null == (t = i.guild_monetization) || null == (n = t.game_server) ? true : n.boost_price) ? b : 0;
+  }), C = null != (b = null == _ || null == (x = _[h.entitlementId]) || null == (c = x.sku) || null == (i = c.tenant_metadata) || null == (t = i.guild_monetization) || null == (n = t.game_server) ? true : n.boost_price) ? b : 0;
   return 0 === C ? null : (0, r.jsx)(s.ua7, {
     "aria-label": f.intl.string(g.default.TZsu1d),
     text: (0, r.jsx)(d.Po, {
@@ -53,7 +53,7 @@ function v(e) {
         }
         return e
       }({}, e), t = t = {
-        className: a()(p.secondaryButton, x.disableButton),
+        className: a()(p.secondaryButton, v.disableButton),
         innerClassName: p.buttonInner,
         wrapperClassName: p.secondaryButton,
         color: o.Tt.PRIMARY,
@@ -85,22 +85,27 @@ function b(e) {
     guildId: n,
     gameInstance: t,
     onClick: i
-  } = e;
+  } = e, a = (0, l.e7)([u.Z], () => {
+    var e;
+    return null == (e = u.Z.getStateForGuild(n)) ? true : e.entitlements[t.entitlementId]
+  }), o = (null == a ? true : a.ends_at) != null;
   return (0, r.jsxs)(s.P3F, {
-    className: x.game,
+    className: v.game,
     onClick: () => i(t),
     children: [(0, r.jsx)("img", {
-      className: x.image,
+      className: v.image,
       alt: ""
     }), (0, r.jsxs)("div", {
-      className: x.textContainer,
+      className: v.textContainer,
       children: [(0, r.jsx)(s.X6q, {
         variant: "heading-sm/semibold",
         children: t.name
-      }), (0, r.jsx)(c.P2, {
+      }), o ? (0, r.jsx)(c.rL, {
+        dateString: a.ends_at
+      }) : (0, r.jsx)(c.P2, {
         text: f.intl.string(g.default.FFLkm5)
       })]
-    }), (0, r.jsx)(v, {
+    }), (0, r.jsx)(x, {
       guildId: n,
       gameInstance: t
     })]

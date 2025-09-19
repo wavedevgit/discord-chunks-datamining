@@ -38,7 +38,7 @@ let p = new d(Chunk570140.Z, {
     var t, n, r, i, l, d;
     let {
       guildId: p
-    } = e, f = null != (n = null == (t = o.Z.getGuild(p)) ? true : t.premiumSubscriberCount) ? n : 0, h = a.Z.getStateForGuild(p), g = (0, s.h)(null != (r = null == h ? true : h.unlockedPowerups) ? r : {});
+    } = e, f = null != (n = null == (t = o.Z.getGuild(p)) ? true : t.premiumSubscriberCount) ? n : 0, h = a.Z.getStateForGuild(p), g = (0, s.h)(Object.values(null != (r = null == h ? true : h.unlockedPowerups) ? r : {}));
     l = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},

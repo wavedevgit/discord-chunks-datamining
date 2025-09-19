@@ -17,6 +17,6 @@ function s(e) {
       allPowerups: e,
       unlockedPowerups: n
     } = t;
-    return (0, a.h)(n).map(t => e[t.sku_id]).filter(o.lm)
+    return (0, a.h)(Object.values(n)).map(t => e[t.sku_id]).filter(o.lm)
   }, [t])
 }

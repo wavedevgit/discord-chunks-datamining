@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 248641, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => E
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -11,6 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
+  Chunk19394 = require("./19394.js"),
   Chunk838968 = require("./838968.jsx"),
   Chunk279475 = require("./279475.js"),
   Chunk693587 = require("./693587.js"),
@@ -23,57 +24,65 @@ var Chunk951288 = require("./951288.js"),
   Chunk530045 = require("./530045.js"),
   Chunk517862 = require("./517862.js");
 
-function C(e) {
+function E(e) {
   let {
     guildId: t
-  } = e, n = (0, s.e7)([f.Z], () => f.Z.getStateForGuild(t)), o = i.useMemo(() => {
-    if ((null == n ? true : n.instances) != null && 0 !== Object.keys(n.instances).length) return {
+  } = e, n = (0, s.e7)([m.Z], () => m.Z.getStateForGuild(t)), o = i.useMemo(() => {
+    var e;
+    let t = Object.values(null != (e = null == n ? true : n.entitlements) ? e : {});
+    if (0 === t.length) return;
+    let r = (0, d.h)(t);
+    return r.length > 0 ? {
+      type: "expiring",
+      expiringAt: r[0].ends_at
+    } : {
       type: "active",
-      statusText: x.intl.string(g.default.FFLkm5)
+      statusText: _.intl.string(v.default.FFLkm5)
     }
-  }, [null == n ? true : n.instances]), C = (0, p.d)((null == o ? true : o.type) === "active"), E = i.useMemo(() => {
+  }, [null == n ? true : n.entitlements]), E = (0, f.d)((null == o ? true : o.type) === "active"), I = i.useMemo(() => {
     if ((null == n ? true : n.catalog) == null) return 0;
     let e = Object.values(n.catalog);
     return 0 === e.length ? 0 : Math.min(...e.map(e => e.baseCost))
   }, [null == n ? true : n.catalog]);
-  return null == n ? null : (0, r.jsxs)(d.aB, {
-    label: x.intl.string(v.default["fjt/vr"]),
+  return null == n ? null : (0, r.jsxs)(p.aB, {
+    label: _.intl.string(x.default["fjt/vr"]),
     badge: "beta",
     isActive: (null == o ? true : o.type) === "active",
-    onClick: () => (0, m.Z)({
+    isWarning: (null == o ? true : o.type) === "expiring",
+    onClick: () => (0, g.Z)({
       guildId: t,
       analyticsLocation: u.Z.GUILD_POWERUPS_OVERVIEW
     }),
     children: [(0, r.jsxs)("div", {
-      className: h.imageContainer,
+      className: j.imageContainer,
       children: [(0, r.jsx)("img", {
-        className: l()(b.background, _.image, h.image),
-        src: j.Z,
+        className: l()(h.background, b.image, j.image),
+        src: C.Z,
         alt: ""
       }), (0, r.jsx)("div", {
-        className: l()(_.image, h.gradient)
+        className: l()(b.image, j.gradient)
       })]
-    }), (0, r.jsx)(d.Q9, {
-      title: x.intl.string(v.default["fjt/vr"]),
-      textColor: C,
-      footer: (0, r.jsx)(d.uf, {
-        cost: E,
+    }), (0, r.jsx)(p.Q9, {
+      title: _.intl.string(x.default["fjt/vr"]),
+      textColor: E,
+      footer: (0, r.jsx)(p.uf, {
+        cost: I,
         costDecorator: "+",
         status: o
       }),
       children: (0, r.jsx)(a.xvT, {
-        className: _.description,
-        color: C,
+        className: b.description,
+        color: E,
         variant: "text-sm/medium",
-        children: x.intl.string(v.default.P7VSCg)
+        children: _.intl.string(x.default.P7VSCg)
       })
-    }), (0, r.jsx)(d.N4, {
+    }), (0, r.jsx)(p.N4, {
       children: (0, r.jsx)(c.zxk, {
         variant: "primary",
         fullWidth: true,
-        text: x.intl.string(v.default.MbdLuL),
+        text: _.intl.string(x.default.MbdLuL),
         onClick: e => {
-          e.stopPropagation(), (0, m.Z)({
+          e.stopPropagation(), (0, g.Z)({
             guildId: t,
             analyticsLocation: u.Z.GUILD_POWERUPS_OVERVIEW
           })
