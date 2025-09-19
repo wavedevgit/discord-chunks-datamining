@@ -162,7 +162,7 @@ function U(e) {
     text: P.intl.string(P.t["Ie9++v"]),
     questContentCTA: p.jZ.START_QUEST
   } : {
-    text: P.intl.string(P.t.ToGcxM),
+    text: P.intl.string(P.t.hRIVy8),
     questContentCTA: p.jZ.START_QUEST
   } : {
     text: P.intl.string(P.t.l7E81t),

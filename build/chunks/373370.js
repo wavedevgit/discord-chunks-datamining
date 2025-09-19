@@ -345,6 +345,6 @@ function D(e) {
     case 2:
       return _.intl.string(_.t.umdNio);
     case 3:
-      return t.config.features.includes(d.S7.START_QUEST_CTA) ? _.intl.string(_.t.ToGcxM) : _.intl.string(_.t.l7E81t)
+      return t.config.features.includes(d.S7.START_QUEST_CTA) ? _.intl.string(_.t.hRIVy8) : _.intl.string(_.t.l7E81t)
   }
 }
