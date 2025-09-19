@@ -23,10 +23,10 @@ function g(e) {
     guildId: t
   } = e;
   a.useEffect(() => {
-    (0, u.EC)(t)
+    (0, d.EC)(t)
   }, [t]);
   let n = (0, l.Z)(t),
-    g = (0, s.e7)([d.Z], () => d.Z.getStateForGuild(t)),
+    g = (0, s.e7)([u.Z], () => u.Z.getStateForGuild(t)),
     x = a.useMemo(() => (null == g ? true : g.instances) == null ? [] : Object.values(g.instances), [null == g ? true : g.instances]);
   return (0, r.jsxs)("div", {
     className: j.container,

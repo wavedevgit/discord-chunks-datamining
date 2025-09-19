@@ -11,8 +11,9 @@ var Chunk951288 = require("./951288.js"),
 
 function s(t) {
   var {
-    onAccept: e
-  } = t, n = function(t, e) {
+    provider: e,
+    onAccept: n
+  } = t, s = function(t, e) {
     if (null == t) return {};
     var n, r, o = function(t, e) {
       if (null == t) return {};
@@ -26,26 +27,26 @@ function s(t) {
       for (r = 0; r < i.length; r++) n = i[r], !(e.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(t, n) && (o[n] = t[n])
     }
     return o
-  }(t, ["onAccept"]);
+  }(t, ["provider", "onAccept"]);
   return (0, r.jsx)(o.Modal, {
     title: a.intl.string(l.default.bnsSPj),
     subtitle: a.intl.format(l.default.MaWfLi, {
-      provider: "Portkey",
+      provider: e,
       providerUrl: "https://google.com/terms-of-service"
     }),
     size: "md",
     actions: [{
       text: a.intl.string(a.t["/g10LC"]),
-      onClick: n.onClose,
+      onClick: s.onClose,
       variant: "secondary"
     }, {
       text: a.intl.string(l.default.IfMFoK),
       onClick: () => {
-        (0, i.g$)(true, "Portkey"), null == e || e(), n.onClose()
+        (0, i.g$)(true, e), null == n || n(), s.onClose()
       },
       variant: "primary"
     }],
-    transitionState: n.transitionState,
-    onClose: n.onClose
+    transitionState: s.transitionState,
+    onClose: s.onClose
   })
 }

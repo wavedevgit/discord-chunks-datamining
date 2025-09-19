@@ -1,7 +1,7 @@
 /** Chunk was on 85683 **/
 /** chunk id: 331500, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => O
 });
 var r, a, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -47,12 +47,12 @@ let v = (r = function(e) {
   Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
 }), r);
 
-function y(e) {
+function O(e) {
   let {
     guildId: t
   } = e;
   s.useEffect(() => {
-    (0, d.po)(t)
+    (0, u.po)(t)
   }, [t]);
   let n = (0, o.Wu)([m.Z], () => {
     let e = m.Z.getStateForGuild(t);
@@ -81,7 +81,7 @@ function y(e) {
             guildId: t,
             stepConfig: v,
             initialPortkeyGame: e,
-            analyticsLocation: u.Z.PORTKEY_OVERVIEW
+            analyticsLocation: d.Z.PORTKEY_OVERVIEW
           }),
           imageClassName: x.image
         }, "sidebar-game-".concat(n, "-").concat(e.id)))

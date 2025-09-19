@@ -1,7 +1,7 @@
 /** Chunk was on 85683 **/
 /** chunk id: 567225, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -12,22 +12,22 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk720534 = require("./720534.js");
 
-function u(e) {
+function d(e) {
   let {
     className: t,
     game: n,
     onClick: a,
-    imageClassName: u,
-    disabled: d = false
+    imageClassName: d,
+    disabled: u = false
   } = e;
   return (0, r.jsxs)(s.P3F, {
-    "aria-disabled": d,
+    "aria-disabled": u,
     className: i()(l.game, {
-      [l.disabled]: d
+      [l.disabled]: u
     }, t),
-    onClick: d ? true : () => a(n),
+    onClick: u ? true : () => a(n),
     children: [(0, r.jsx)("img", {
-      className: i()(l.image, u),
+      className: i()(l.image, d),
       alt: ""
     }), (0, r.jsxs)("div", {
       className: l.textContainer,

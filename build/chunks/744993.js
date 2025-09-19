@@ -86,10 +86,6 @@ function f(e, t) {
       provider: t
     })
   }
-  r.Z.dispatch({
-    type: "PORTKEY_ACCEPT_TOS",
-    acceptedToS: e
-  })
 }
 
 function b() {
