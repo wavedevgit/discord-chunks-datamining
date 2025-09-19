@@ -73,9 +73,9 @@ function y(e) {
     items: h,
     initialSection: y = j.oh.USER_INFO,
     initialSubsection: O,
-    onClose: I
+    onClose: Z
   } = e, {
-    trackUserProfileAction: Z
+    trackUserProfileAction: I
   } = (0, c.KZ)(), P = (0, r.e7)([a.Z], () => a.Z.hidePersonalInformation), [{
     section: N,
     subsection: T
@@ -95,14 +95,14 @@ function y(e) {
     })
   }, [h, N]);
   let A = i.useCallback(e => {
-    Z({
+    I({
       action: "PRESS_SECTION",
       section: e
     }), E({
       section: e,
       subsection: true
     })
-  }, [Z, E]);
+  }, [I, E]);
   return P ? (0, l.jsx)("div", {
     className: g.container,
     children: (0, l.jsxs)("div", {
@@ -144,7 +144,7 @@ function y(e) {
       currentUser: f,
       displayProfile: m,
       guildId: p,
-      onClose: I
+      onClose: Z
     })]
   })
 }

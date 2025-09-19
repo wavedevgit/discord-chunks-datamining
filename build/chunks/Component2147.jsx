@@ -304,7 +304,10 @@ class eL extends Chunk647438.PureComponent {
           title: P ? eu.intl.string(eu.t.yR6Hwc) : eu.intl.string(eu.t.X8jMDg),
           className: eg.marginTop20,
           children: (0, i.jsx)(w.ZP, {
-            innerClassName: eh.topic,
+            className: eh.topicContainer,
+            innerClassName: s()(eh.topic, {
+              [eh.disabled]: !v
+            }),
             characterCountClassName: eh.topicCharacterCount,
             maxCharacterCount: P ? ea.Z7 : ea.$x,
             onChange: this.handleChangeRichTopic,
@@ -327,7 +330,8 @@ class eL extends Chunk647438.PureComponent {
             onSubmit: this.handleSubmit,
             disableThemedBackground: true,
             error: this.getError("topic"),
-            disabled: !v
+            disabled: !v,
+            showValueWhenDisabled: true
           })
         }), (0, i.jsx)(f.$i$, {
           className: s()(eg.marginTop40, eg.marginBottom40)
@@ -663,7 +667,9 @@ class eL extends Chunk647438.PureComponent {
           children: eu.intl.string(eu.t.u8LZOj)
         })]
       }) : null;
-    return e.type === es.d4z.GUILD_CATEGORY ? (j = eu.intl.string(eu.t.OCAkGB), x = "category-name") : e.isForumPost() ? (j = eu.intl.string(eu.t.uyVrTE), x = "post-title") : _ ? (j = eu.intl.string(eu.t.j3XWjI), x = "thread-name") : (j = eu.intl.string(eu.t.PVbHDg), x = "channel-name"), (0, i.jsxs)("div", {
+    e.type === es.d4z.GUILD_CATEGORY ? (j = eu.intl.string(eu.t.OCAkGB), x = "category-name") : e.isForumPost() ? (j = eu.intl.string(eu.t.uyVrTE), x = "post-title") : _ ? (j = eu.intl.string(eu.t.j3XWjI), x = "thread-name") : (j = eu.intl.string(eu.t.PVbHDg), x = "channel-name");
+    let eE = R ? y : v;
+    return (0, i.jsxs)("div", {
       children: [(0, i.jsx)(f.oil, {
         label: j,
         fullWidth: true,
@@ -674,16 +680,16 @@ class eL extends Chunk647438.PureComponent {
         error: this.getError("name"),
         name: x,
         autoFocus: true,
-        disabled: R ? !y : !v,
+        disabled: !eE,
         maxLength: es.HN8,
-        trailing: {
+        trailing: eE ? {
           type: "emoji",
           button: (0, i.jsx)(eA, {
             onEmojiPicked: this.insertEmojiAtPosition,
             channel: e,
             guildId: null == e ? true : e.guild_id
           })
-        }
+        } : true
       }), (0, i.jsx)(f.$i$, {
         className: s()(eg.marginTop40, eg.marginBottom40)
       }), V, H, F, z, K, ee, X, q, Y, en, em, eC, eS, eN, eO]

@@ -36,11 +36,11 @@ function h(e) {
     onClose: g
   }), {
     gameFriends: O,
-    hasOutgoingPendingGameFriends: I,
-    hasIncomingPendingGameFriends: Z
+    hasOutgoingPendingGameFriends: Z,
+    hasIncomingPendingGameFriends: I
   } = (0, m.H)({
     userId: n.id
-  }), P = O.length > 0 || I || Z;
+  }), P = O.length > 0 || Z || I;
   return v === p.OGo.BLOCKED ? null : n.id === t.id ? (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(a.Z, {
       user: n,
@@ -117,8 +117,8 @@ function h(e) {
       tooltipPosition: "top",
       tooltipAlign: "center",
       shouldShowTooltip: true,
-      hasIncomingPendingGameFriends: Z,
-      hasOutgoingPendingGameFriends: I
+      hasIncomingPendingGameFriends: I,
+      hasOutgoingPendingGameFriends: Z
     }), (0, l.jsx)(d.Z, {
       type: "icon",
       user: n,

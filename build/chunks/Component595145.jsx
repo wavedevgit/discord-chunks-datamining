@@ -89,7 +89,7 @@ function ei(e) {
     messageId: es,
     roleId: ea,
     showGuildProfile: ej
-  }), ey = i.useRef(null), eO = (0, c.Z)(ey), [eI, eZ] = i.useState(false), eP = (0, A.$m)(), eN = (0, s.q_F)({
+  }), ey = i.useRef(null), eO = (0, c.Z)(ey), [eZ, eI] = i.useState(false), eP = (0, A.$m)(), eN = (0, s.q_F)({
     opacity: +(null != eP.interactionType),
     config: {
       duration: 150
@@ -99,7 +99,7 @@ function ei(e) {
   } : {}, [er, t.id]);
   (0, d.$)(eT, "UserProfileModalV2");
   let eE = (0, T.ZP)(t.id, ej ? er : true),
-    eA = I.ZP.useName(null == eE ? true : eE.guildId, eo, t),
+    eA = Z.ZP.useName(null == eE ? true : eE.guildId, eo, t),
     {
       relationshipType: eS,
       originApplicationId: eC
@@ -131,8 +131,8 @@ function ei(e) {
     });
   return i.useEffect(() => {
     let e = () => {
-      eZ(true), setTimeout(() => {
-        eZ(false)
+      eI(true), setTimeout(() => {
+        eI(false)
       }, 1e3)
     };
     return O.S.subscribe(ee.CkL.SHAKE_PROFILE_MODAL, e), () => {
@@ -156,7 +156,7 @@ function ei(e) {
           "aria-labelledby": eB,
           parentComponent: "UserProfileModalV2",
           children: [(0, l.jsxs)(s.UkV, {
-            isShaking: eI,
+            isShaking: eZ,
             intensity: 1.4,
             children: [ev ? (0, l.jsxs)("div", {
               className: el.previewBar,
@@ -233,7 +233,7 @@ function ei(e) {
                     children: [(0, l.jsx)(F.Z, {
                       user: t,
                       onClose: eh,
-                      nickname: I.ZP.useName(null == eE ? true : eE.guildId, eo, t),
+                      nickname: Z.ZP.useName(null == eE ? true : eE.guildId, eo, t),
                       nicknameIcons: (0, l.jsx)(R.Z, {
                         size: "sm",
                         userId: t.id
@@ -286,7 +286,7 @@ function ei(e) {
                         })
                       })
                     }), t.id === ei.id && (0, l.jsx)(D.Z, {
-                      isPremiumUser: (0, Z.I5)(ei),
+                      isPremiumUser: (0, I.I5)(ei),
                       onInteraction: eh
                     }), (0, l.jsx)(B.Z, {
                       user: t,

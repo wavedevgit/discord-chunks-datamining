@@ -16,11 +16,10 @@ function r(e) {
     serverIP: e.ip,
     port: e.port,
     entitlementId: e.entitlement_id,
+    gameServerPanelUrl: e.provider_url,
     gameId: "1",
     onlineConnectionsCount: 0,
     status: "online",
-    lastUpdated: new Date().toISOString(),
-    instructions: [],
-    gameServerPanelUrl: ""
+    instructions: []
   }
 }

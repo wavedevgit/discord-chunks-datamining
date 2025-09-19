@@ -106,7 +106,7 @@ function C(e) {
                   guildId: F,
                   channelId: w,
                   themeType: E.l.MODAL
-                }), (0, l.jsx)(I.Z, {
+                }), (0, l.jsx)(Z.Z, {
                   user: n,
                   themeType: E.l.MODAL,
                   hasEntered: U === i.Dvm.ENTERED,
@@ -149,7 +149,7 @@ function C(e) {
                   themeType: E.l.MODAL,
                   onClose: B
                 })
-              }), (0, l.jsx)(Z.Z, {
+              }), (0, l.jsx)(I.Z, {
                 user: n,
                 currentUser: t,
                 displayProfile: G,

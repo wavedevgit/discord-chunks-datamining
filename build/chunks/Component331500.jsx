@@ -54,8 +54,8 @@ function y(e) {
   s.useEffect(() => {
     (0, u.po)(t)
   }, [t]);
-  let n = (0, o.Wu)([b.Z], () => {
-    let e = b.Z.getStateForGuild(t);
+  let n = (0, o.Wu)([m.Z], () => {
+    let e = m.Z.getStateForGuild(t);
     return (null == e ? true : e.catalog) != null ? Object.values(e.catalog) : []
   });
   return 0 === n.length ? (0, i.jsx)("div", {
@@ -74,7 +74,7 @@ function y(e) {
       className: v.gameContainerWrapper,
       children: (0, i.jsx)("div", {
         className: v.gameContainer,
-        children: n.map((e, n) => (0, i.jsx)(m.Z, {
+        children: n.map((e, n) => (0, i.jsx)(b.Z, {
           className: v.game,
           game: e,
           onClick: () => (0, p.Z)({

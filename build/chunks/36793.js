@@ -1,40 +1,40 @@
 /** Chunk was on 42529 **/
-/** chunk id: 36793, original params: t,e,o (module,exports,require) **/
+/** chunk id: 36793, original params: t,e,i (module,exports,require) **/
 function n(t) {
   let {
     image: e,
-    cropDimensions: o,
+    cropDimensions: i,
     cropOriginCoordinates: n,
     maxDimensions: a,
-    imageRotation: i = 0
-  } = t, r = e.naturalWidth / e.width, _ = function(t, e) {
+    imageRotation: r = 0
+  } = t, o = e.naturalWidth / e.width, h = function(t, e) {
     let {
-      x: o,
+      x: i,
       y: n
     } = t;
     switch (e) {
       case 90:
         return {
-          x: n, y: -o
+          x: n, y: -i
         };
       case 180:
         return {
-          x: -o, y: -n
+          x: -i, y: -n
         };
       case 270:
         return {
-          x: -n, y: o
+          x: -n, y: i
         };
       default:
         return {
-          x: o, y: n
+          x: i, y: n
         }
     }
-  }(n, i), l = i % 180 != 0, d = o.width * r, h = o.height * r, u = Math.min(d, a.width), s = Math.min(h, a.height), m = (l ? o.height : o.width) / 2, c = (l ? o.width : o.height) / 2, g = (e.width / 2 - m - _.x) * r, y = (e.height / 2 - c - _.y) * r, p = l ? h : d, w = l ? d : h, {
-    x: C,
-    y: v
-  } = function(t, e, o) {
-    switch (o) {
+  }(n, r), _ = r % 180 != 0, l = i.width * o, d = i.height * o, u = Math.min(l, a.width), s = Math.min(d, a.height), c = (_ ? i.height : i.width) / 2, g = (_ ? i.width : i.height) / 2, m = (e.width / 2 - c - h.x) * o, y = (e.height / 2 - g - h.y) * o, p = _ ? d : l, w = _ ? l : d, {
+    x: v,
+    y: C
+  } = function(t, e, i) {
+    switch (i) {
       case 0:
         return {
           x: 0, y: 0
@@ -52,16 +52,16 @@ function n(t) {
           x: -e, y: 0
         }
     }
-  }(d, h, i);
-  return a.width < d && (C *= a.width / d), a.height < h && (v *= a.height / h), {
-    sourceX: g,
+  }(l, d, r);
+  return a.width < l && (v *= a.width / l), a.height < d && (C *= a.height / d), {
+    sourceX: m,
     sourceY: y,
     sourceWidth: p,
     sourceHeight: w,
-    destinationX: C,
-    destinationY: v,
-    destinationWidth: l ? s : u,
-    destinationHeight: l ? u : s,
+    destinationX: v,
+    destinationY: C,
+    destinationWidth: _ ? s : u,
+    destinationHeight: _ ? u : s,
     canvasWidth: u,
     canvasHeight: s
   }
@@ -70,41 +70,41 @@ function n(t) {
 function a(t) {
   let {
     image: e,
-    cropDimensions: o,
+    cropDimensions: i,
     cropOriginCoordinates: a,
-    maxDimensions: i,
-    imageRotation: r = 0
+    maxDimensions: r,
+    imageRotation: o = 0
   } = t, {
-    sourceX: _,
-    sourceY: l,
-    sourceWidth: d,
-    sourceHeight: h,
+    sourceX: h,
+    sourceY: _,
+    sourceWidth: l,
+    sourceHeight: d,
     destinationX: u,
     destinationY: s,
-    destinationWidth: m,
-    destinationHeight: c,
-    canvasWidth: g,
+    destinationWidth: c,
+    destinationHeight: g,
+    canvasWidth: m,
     canvasHeight: y
   } = n({
     image: e,
-    cropDimensions: o,
+    cropDimensions: i,
     cropOriginCoordinates: a,
-    maxDimensions: i,
-    imageRotation: r
+    maxDimensions: r,
+    imageRotation: o
   }), p = document.createElement("canvas");
-  p.width = g, p.height = y;
+  p.width = m, p.height = y;
   let w = p.getContext("2d");
-  return null != w && (w.rotate(r * Math.PI / 180), w.drawImage(e, _, l, d, h, u, s, m, c)), p.toDataURL("image/png")
+  return null != w && (w.rotate(o * Math.PI / 180), w.drawImage(e, h, _, l, d, u, s, c, g)), p.toDataURL("image/png")
 }
 
-function i(t, e, o) {
+function r(t, e, i) {
   let n = t.naturalWidth / t.naturalHeight,
-    i = e,
-    r = o;
-  t.naturalWidth > t.naturalHeight ? i /= n : r *= n;
-  let _ = {
-    height: i,
-    width: r
+    r = e,
+    o = i;
+  t.naturalWidth > t.naturalHeight ? r /= n : o *= n;
+  let h = {
+    height: r,
+    width: o
   };
   return a({
     image: t,
@@ -116,11 +116,11 @@ function i(t, e, o) {
       x: 0,
       y: 0
     },
-    maxDimensions: _
+    maxDimensions: h
   })
 }
 require.d(exports, {
-  Ae: () => i,
+  Ae: () => r,
   GS: () => n,
   PT: () => a
 })

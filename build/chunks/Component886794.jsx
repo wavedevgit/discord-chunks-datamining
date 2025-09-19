@@ -85,7 +85,7 @@ function C(e) {
             displayProfile: V,
             themeType: N.l.MODAL,
             ref: (null == V ? true : V.profileEffect) != null ? W : true,
-            children: [(0, l.jsx)(I.Z, {
+            children: [(0, l.jsx)(Z.Z, {
               children: (0, l.jsx)(O.Z, {
                 user: t
               })
@@ -122,17 +122,17 @@ function C(e) {
                 children: [(0, l.jsx)(r.njP, {
                   className: S.tabBar,
                   type: "top",
-                  selectedItem: Z.oh.BOT_INFO,
+                  selectedItem: I.oh.BOT_INFO,
                   onItemSelect: P.dG4,
                   children: (0, l.jsx)(r.njP.Item, {
                     className: S.tabBarItem,
-                    id: Z.oh.BOT_INFO,
+                    id: I.oh.BOT_INFO,
                     "aria-label": T.intl.string(T.t.jGoPJS),
                     children: (0, l.jsx)(r.Text, {
                       variant: "text-sm/normal",
                       children: T.intl.string(T.t.jGoPJS)
                     })
-                  }, Z.oh.BOT_INFO)
+                  }, I.oh.BOT_INFO)
                 }), (0, l.jsxs)(r.zJl, {
                   fade: true,
                   className: A.scroller,
@@ -145,7 +145,7 @@ function C(e) {
                     children: (0, l.jsx)(v.Z, {
                       userId: t.id,
                       guildId: B,
-                      tooltipDelay: Z.vB
+                      tooltipDelay: I.vB
                     })
                   })]
                 })]

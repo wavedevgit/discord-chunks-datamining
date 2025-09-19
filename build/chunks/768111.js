@@ -27,8 +27,8 @@ function m(e) {
     location: "useUserProfileModalV2TabBarItems"
   }), g = (0, a.Z)(n.id), b = (0, l.S)({
     location: "useUserProfileModalV2TabBarItems"
-  }), y = [], O = n.id === (null == t ? true : t.id), I = g.length > 0;
-  return (O && x || I && v) && y.push({
+  }), y = [], O = n.id === (null == t ? true : t.id), Z = g.length > 0;
+  return (O && x || Z && v) && y.push({
     text: f.intl.string(f.t.laViw8),
     section: u.oh.WIDGETS,
     subsection: true

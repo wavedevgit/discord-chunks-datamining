@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk798925 = require("./798925.js");
 
-function Z(e) {
+function I(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       l = Object.keys(t);
@@ -109,8 +109,8 @@ function T(e) {
         var {
           ref: n
         } = e, t = N(e, ["ref"]);
-        return (0, l.jsxs)("div", P(Z({
-          className: I.root,
+        return (0, l.jsxs)("div", P(I({
+          className: Z.root,
           "aria-label": A,
           ref: n
         }, t), {
@@ -136,23 +136,23 @@ function E(e) {
   } = e, o = N(e, ["user", "currentUser", "guildId"]);
   let {
     trackUserProfileAction: s
-  } = (0, j.KZ)(), v = (0, a.e7)([m.Z], () => m.Z.getGuild(r)), b = (0, a.e7)([u.ZP], () => u.ZP.getMember(r, n.id)), I = null == b ? true : b.roles, E = (0, a.Wu)([f.Z], () => f.Z.getManyRoles(r, null != I ? I : []).sort(x.Z), [I, r]), [A] = (0, a.Wu)([p.Z], () => [p.Z.can(y.Plq.MANAGE_ROLES, v), p.Z.getGuildVersion(r)]), S = i.useCallback(e => {
+  } = (0, j.KZ)(), v = (0, a.e7)([m.Z], () => m.Z.getGuild(r)), b = (0, a.e7)([u.ZP], () => u.ZP.getMember(r, n.id)), Z = null == b ? true : b.roles, E = (0, a.Wu)([f.Z], () => f.Z.getManyRoles(r, null != Z ? Z : []).sort(x.Z), [Z, r]), [A] = (0, a.Wu)([p.Z], () => [p.Z.can(y.Plq.MANAGE_ROLES, v), p.Z.getGuildVersion(r)]), S = i.useCallback(e => {
     var t, l;
     s({
       action: "REMOVE_ROLE"
     });
-    let i = null != (l = null == I ? true : I.filter(n => n !== e.id)) ? l : [];
+    let i = null != (l = null == Z ? true : Z.filter(n => n !== e.id)) ? l : [];
     (null == (t = e.tags) ? true : t.guild_connections) === null ? c.Z.unassignGuildRoleConnection(r, e.id) : d.Z.updateMemberRoles(r, n.id, i, [], [e.id])
-  }, [I, r, n.id, s]), C = i.useCallback(e => {
+  }, [Z, r, n.id, s]), C = i.useCallback(e => {
     s({
       action: "ADD_ROLE"
     });
-    let t = null != I ? I : [];
+    let t = null != Z ? Z : [];
     t.includes(e) || (t = [...t, e]), d.Z.updateMemberRoles(r, n.id, t, [e], [])
-  }, [I, r, n.id, s]);
+  }, [Z, r, n.id, s]);
   if (null == v) return null;
   let w = A && null != b;
-  return 0 !== E.length || w ? (0, l.jsx)(g.Z, P(Z({
+  return 0 !== E.length || w ? (0, l.jsx)(g.Z, P(I({
     heading: O.intl.string(O.t.LPJmLy)
   }, o), {
     children: (0, l.jsx)(T, {

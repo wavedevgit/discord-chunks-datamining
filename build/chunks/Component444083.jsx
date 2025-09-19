@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk401561 = require("./401561.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk587983 = require("./587983.js");
-let m = {
+let b = {
   steps: {
     [Chunk473682.Vb.SERVER_SETTINGS]: {
       onBack: {
@@ -61,7 +61,7 @@ function p(e) {
             action: () => {
               (0, o.Z)({
                 guildId: t,
-                stepConfig: m,
+                stepConfig: b,
                 initialPortkeyInstance: n,
                 analyticsLocation: c.Z.PORTKEY_OVERVIEW
               })
@@ -91,7 +91,7 @@ function p(e) {
         return e
       }({
         "aria-label": u.intl.string(u.t.UKOtz8),
-        className: b.clickable
+        className: m.clickable
       }, e), n = n = {
         innerRef: l,
         children: (0, r.jsx)(i.xhG, {

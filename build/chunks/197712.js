@@ -77,7 +77,7 @@ function s(e, t, r) {
 function l(e, t, r, n) {
   let i = r,
     o = n,
-    s = a.US;
+    s = a.vJ;
   return (r > s && (i = s, o = s / r * n), r / n < e) ? {
     width: i,
     height: o
@@ -96,16 +96,16 @@ function c(e, t, r) {
         width: t, height: r
       };
     case a.pC.BANNER:
-      let n = a.SP;
+      let n = a.qj;
       return l(a.MY, n, t, r);
     case a.pC.GUILD_BANNER:
-      let i = a.t2;
+      let i = a.C5;
       return l(a.Ij, i, t, r);
     case a.pC.VIDEO_BACKGROUND:
-      let o = a.kP;
+      let o = a.PB;
       return l(a.Ff, o, t, r);
     case a.pC.SCHEDULED_EVENT_IMAGE:
-      let s = a.tv;
+      let s = a.WV;
       return l(a.ut, s, t, r);
     case a.pC.HOME_HEADER:
       return l(a.sX, a.SW, t, r)
@@ -125,39 +125,38 @@ function u(e, t, r) {
 }
 
 function d(e, t, r, n) {
-  let i = a.US;
   switch (e) {
     case a.pC.AVATAR:
     case a.pC.AVATAR_DECORATION:
     case a.pC.GUILD_ICON:
-      let o = Math.min(t, r);
+      let i = Math.min(t, r);
       return {
-        width: o, height: o
+        width: i, height: i
       };
     case a.pC.BANNER:
-      let s = Math.min(t, i);
+      let o = Math.min(t, a.vJ);
       return {
-        width: s, height: s * (1 / a.MY)
+        width: o, height: o * (1 / a.MY)
       };
     case a.pC.GUILD_BANNER:
-      let l = Math.min(t, i);
+      let s = Math.min(t, a.vJ);
       return {
-        width: l, height: Math.min(9 / 16 * l, n)
+        width: s, height: Math.min(9 / 16 * s, n)
       };
     case a.pC.VIDEO_BACKGROUND:
-      let c = Math.min(t, i);
+      let l = Math.min(t, a.vJ);
       return {
-        width: c, height: 9 / 16 * c
+        width: l, height: 9 / 16 * l
       };
     case a.pC.SCHEDULED_EVENT_IMAGE:
-      let u = Math.min(t, i);
+      let c = Math.min(t, a.vJ);
       return {
-        width: u, height: .4 * u
+        width: c, height: .4 * c
       };
     case a.pC.HOME_HEADER:
-      let d = Math.min(t, i);
+      let u = Math.min(t, a.vJ);
       return {
-        width: d, height: d * (1 / a.sX)
+        width: u, height: u * (1 / a.sX)
       }
   }
 }

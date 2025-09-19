@@ -107,8 +107,8 @@ function b(e) {
     buttonLoading: h,
     onButtonPress: N,
     listType: y = "icon",
-    index: I,
-    noInset: E = false
+    index: E,
+    noInset: I = false
   } = e, j = null != m ? (0, r.jsx)(a.zxk, {
     variant: p,
     size: x,
@@ -122,17 +122,17 @@ function b(e) {
   }) : true;
   return (0, r.jsxs)("div", {
     className: l()(o.row, {
-      [o.noInset]: E
+      [o.noInset]: I
     }),
     children: [(0, r.jsxs)(a.Kqy, {
       direction: "horizontal",
       gap: 16,
       align: "center",
-      children: ["numbered" === y && null != I ? (0, r.jsx)(a.X6q, {
+      children: ["numbered" === y && null != E ? (0, r.jsx)(a.X6q, {
         variant: "heading-md/semibold",
         color: "text-brand",
         className: o.number,
-        children: I + 1
+        children: E + 1
       }) : null != n && (0, r.jsx)("div", {
         className: o.iconContainer,
         children: (0, r.jsx)(n, {

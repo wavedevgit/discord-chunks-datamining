@@ -204,9 +204,10 @@ class G extends Chunk647438.Component {
     let {
       disabled: e,
       placeholder: t,
-      isPreviewing: n
+      isPreviewing: n,
+      showValueWhenDisabled: r
     } = this.props;
-    return module && !require ? Chunk388032.intl.string(Chunk388032.t.IYKTTU) : exports
+    return module && !require ? Chunk951288 ? "" : Chunk388032.intl.string(Chunk388032.t.IYKTTU) : exports
   }
   render() {
     var e, t, n, i, a, s;
@@ -231,22 +232,23 @@ class G extends Chunk647438.Component {
       allowNewLines: x,
       "aria-describedby": j,
       "aria-labelledby": k,
-      accessibilityLabel: U
+      accessibilityLabel: U,
+      showValueWhenDisabled: G
     } = this.props, {
-      submitting: G,
-      popup: B
-    } = this.state, Z = {
+      submitting: B,
+      popup: Z
+    } = this.state, F = {
       channel: Chunk911969,
       className: o()(Chunk30465, Chunk564355.textArea, {
         [Chunk564355.textAreaSlate]: Chunk998698,
-        [Chunk564355.textAreaDisabled]: u || G
+        [Chunk564355.textAreaDisabled]: u || B
       }),
       id: Chunk330122,
       placeholder: this.getPlaceholder(),
       required: Chunk925994,
       accessibilityLabel: U,
       disabled: u || false,
-      submitting: G,
+      submitting: B,
       isEdit: Chunk476326 === Chunk541716.Ie.EDIT,
       onFocus: this.handleFocus,
       onBlur: this.handleBlur,
@@ -271,25 +273,25 @@ class G extends Chunk647438.Component {
       useNewSlashCommands: Chunk117530,
       disableAutoFocus: Chunk873546.tq || null != (n = Chunk476326.disableAutoFocus) && require,
       disableEnterToSubmit: null != (i = null == (e = Chunk476326.submit) ? true : module.disableEnterToSubmit) && Chunk647438,
-      "aria-controls": null != (a = B.id) ? Chunk120356 : true,
+      "aria-controls": null != (a = Z.id) ? Chunk120356 : true,
       "aria-haspopup": "listbox",
-      "aria-expanded": null !== B.id || true,
-      "aria-activedescendant": null != (s = B.activeDescendant) ? Chunk392711 : true,
+      "aria-expanded": null !== Z.id || true,
+      "aria-activedescendant": null != (s = Z.activeDescendant) ? Chunk392711 : true,
       "aria-invalid": l.length > Chunk388032,
       "aria-describedby": j,
       "aria-labelledby": k,
       "aria-autocomplete": "list"
-    }, F = Chunk998698 ? (0, Chunk951288.jsx)(Chunk4484.Z, M(L({
+    }, V = Chunk998698 ? (0, Chunk951288.jsx)(Chunk4484.Z, M(L({
       ref: this.ref
-    }, Z), {
+    }, F), {
       type: Chunk476326,
-      value: u ? (0, Chunk752305.JM)("") : Chunk218887,
+      value: u && !G ? (0, Chunk752305.JM)("") : Chunk218887,
       canUseCommands: null == (t = Chunk476326.commands) ? true : exports.enabled,
       canOnlyUseTextCommands: Chunk403182
     })) : (0, Chunk951288.jsx)(Chunk140963.Z, M(L({
       ref: this.ref
-    }, Z), {
-      value: u ? "" : l
+    }, F), {
+      value: u && !G ? "" : l
     }));
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk459273.d9, {
@@ -298,7 +300,7 @@ class G extends Chunk647438.Component {
       }), (0, Chunk951288.jsx)(Chunk459273.d9, {
         event: Chunk981631.CkL.CLEAR_TEXT,
         handler: this.handleClearText
-      }), F]
+      }), V]
     })
   }
   constructor(e) {

@@ -2,23 +2,23 @@
 /** chunk id: 907179, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 });
 var Chunk951288 = require("./951288.js"),
-  Chunk755721 = require("./755721.js"),
-  Chunk475413 = require("./475413.jsx"),
+  Chunk732380 = require("./732380.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function s(e) {
+function o(e) {
   let {
     isBlocked: t,
     onClick: n,
-    size: s = i.Ph.SMALL
+    size: o = "sm"
   } = e;
-  return (0, r.jsx)(a.tG, {
-    size: s,
+  return (0, r.jsx)(i.O1, {
+    size: o,
     action: t ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
-    text: o.intl.string(o.t["UJKH/v"]),
+    text: a.intl.string(a.t["UJKH/v"]),
+    variant: "primary",
     autoFocus: true,
     fullWidth: false,
     onClick: n

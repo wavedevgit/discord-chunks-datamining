@@ -47,28 +47,28 @@ let D = e => {
     var t;
     let {
       guildId: n
-    } = e, i = "userImage" in e ? e.userImage : true, g = "emoji" in e ? e.emoji : true, D = !!g, [G, Z] = l.useState(null != i ? i : null), [L, U] = l.useState(false), H = (0, s.e7)([p.Z, v.Z, b.Z], () => {
+    } = e, i = "userImage" in e ? e.userImage : true, g = "emoji" in e ? e.emoji : true, D = !!g, [G, Z] = l.useState(null != i ? i : null), [L, H] = l.useState(false), U = (0, s.e7)([p.Z, v.Z, b.Z], () => {
       let e = v.Z.getGuildId(),
         t = p.Z.getGuild(e);
       return b.Z.can(P.Plq.CREATE_GUILD_EXPRESSIONS, t) && null != t ? t.id : null
-    }), [F, B] = l.useState(null != n ? n : H), [V, W] = l.useState(null), [Y, J] = l.useState(null), [K, X] = l.useState(R(G)), [q, Q] = l.useState(null), [$, ee] = l.useState(() => Date.now()), et = l.useRef(0), en = l.useRef(0), er = l.useRef(false);
+    }), [F, B] = l.useState(null != n ? n : U), [J, V] = l.useState(null), [W, Y] = l.useState(null), [K, X] = l.useState(R(G)), [q, Q] = l.useState(null), [$, ee] = l.useState(() => Date.now()), et = l.useRef(0), en = l.useRef(0), er = l.useRef(false);
     l.useEffect(() => {
       if (null == g) return;
       let e = f.Z.getEmojiRawAsset(g.id);
       if (null != e) {
-        Z(e), Q(e.data), X(g.name), U(false);
+        Z(e), Q(e.data), X(g.name), H(false);
         return
       }
-      U(true), (0, N.Q)(g).then(e => {
-        Z(e), Q(e.data), X(g.name), U(false)
+      H(true), (0, N.Q)(g).then(e => {
+        Z(e), Q(e.data), X(g.name), H(false)
       }).catch(e => {
-        M.error("Failed to fetch emoji image", e), W(_.ze.MISSING_IMAGE_DATA), U(false)
+        M.error("Failed to fetch emoji image", e), V(_.ze.MISSING_IMAGE_DATA), H(false)
       })
     }, [g]);
     let el = l.useCallback(e => {
       let {
         reason: t
-      } = e, n = null != V ? V : Y;
+      } = e, n = null != J ? J : W;
       j.default.track(P.rMx.EMOJI_STUDIO_ENDED, {
         reason: t,
         is_initial: 0 === et.current,
@@ -78,15 +78,15 @@ let D = e => {
         session_duration_ms: Date.now() - $,
         has_guild_selected: null != F
       })
-    }, [V, Y, $, G, F]);
+    }, [J, W, $, G, F]);
     (0, h.zq)(() => {
       er.current || el({
         reason: "closed"
       })
     });
     let ei = l.useCallback(async () => {
-        if (W(null), null == F) return void W(_.ze.MISSING_GUILD);
-        if (null == G || (null == G ? true : G.file) == null || null == q) return void W(_.ze.MISSING_IMAGE_DATA);
+        if (V(null), null == F) return void V(_.ze.MISSING_GUILD);
+        if (null == G || (null == G ? true : G.file) == null || null == q) return void V(_.ze.MISSING_IMAGE_DATA);
         let e = null;
         try {
           e = await (0, m.rS)({
@@ -118,7 +118,7 @@ let D = e => {
             }({}, G)
           })
         } catch (e) {
-          W((0, w.z)(e)), M.error("Failed to upload emoji.", e);
+          V((0, w.z)(e)), M.error("Failed to upload emoji.", e);
           return
         }
         if (null != g) try {
@@ -129,7 +129,7 @@ let D = e => {
             body: T.intl.string(T.t["Whhv4+"])
           });
           else {
-            W((0, w.z)(e)), M.error("Failed to delete emoji.", e);
+            V((0, w.z)(e)), M.error("Failed to delete emoji.", e);
             return
           }
         }
@@ -143,7 +143,7 @@ let D = e => {
       ea = l.useCallback(() => {
         el({
           reason: "back_button"
-        }), W(null), Z(null), Q(null), X(""), ee(Date.now()), en.current = 0
+        }), V(null), Z(null), Q(null), X(""), ee(Date.now()), en.current = 0
       }, [el]),
       eo = l.useCallback(e => {
         let {
@@ -151,7 +151,7 @@ let D = e => {
           imageDataTimestamp: n = 0,
           error: r
         } = e, l = null;
-        null != t && y.ZP.isDataTooBig(t) && (l = _.ze.TOO_BIG), W(null != r ? r : l), n < et.current || null != t && (Q(t), et.current = n)
+        null != t && y.ZP.isDataTooBig(t) && (l = _.ze.TOO_BIG), V(null != r ? r : l), n < et.current || null != t && (Q(t), et.current = n)
       }, []),
       es = l.useCallback(() => {
         en.current++
@@ -237,11 +237,11 @@ let D = e => {
             children: [(0, r.jsx)(I.q, {
               onChange: B,
               selected: F,
-              onError: e => J(e),
+              onError: e => Y(e),
               labelledBy: "guild-selector-label",
               isEmojiAnimated: (0, o.v)(null == G || null == (t = G.file) ? true : t.type)
-            }), null != Y && (0, r.jsx)(w.H, {
-              error: Y,
+            }), null != W && (0, r.jsx)(w.H, {
+              error: W,
               variant: "text-xs/medium",
               color: "text-feedback-warning"
             }), null == F && (0, r.jsx)(c.Text, {
@@ -252,15 +252,15 @@ let D = e => {
           })
         }), (0, r.jsxs)("div", {
           className: A.foot,
-          children: [null != V && (0, r.jsx)(w.H, {
-            error: V,
+          children: [null != J && (0, r.jsx)(w.H, {
+            error: J,
             variant: "text-sm/normal",
             color: "text-danger"
           }), (0, r.jsx)(u.zx, {
             className: A.submit,
             onClick: ei,
             fullWidth: true,
-            disabled: null == G || null == F || K.length < 2 || null != Y,
+            disabled: null == G || null == F || K.length < 2 || null != W,
             children: ed
           })]
         })]

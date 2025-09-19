@@ -5,6 +5,8 @@ module.exports = {
   formTitle: "formTitle__0511a",
   description: "description__0511a",
   topic: "topic__0511a",
+  disabled: "disabled__0511a",
+  topicContainer: "topicContainer__0511a",
   topicCharacterCount: "topicCharacterCount__0511a",
   badgedItem: "badgedItem__0511a",
   twoColumnSettings: "twoColumnSettings__0511a",

@@ -1,7 +1,7 @@
 /** Chunk was on 31553 **/
 /** chunk id: 116906, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => I
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -26,11 +26,11 @@ var Chunk442837 = require("./442837.js"),
   Chunk7994 = require("./7994.js"),
   Chunk878449 = require("./878449.js");
 
-function Z(e) {
+function I(e) {
   let {
     user: n,
     currentUser: t,
-    guildId: Z,
+    guildId: I,
     subsection: P,
     onClose: N
   } = e, {
@@ -48,7 +48,7 @@ function Z(e) {
     voiceActivity: _
   } = (0, m.Z)({
     userId: n.id,
-    guildId: Z
+    guildId: I
   }), D = (0, i.e7)([s.Z], () => s.Z.isFetchingUserOutbox(n.id)), R = n.id === t.id, L = (0, i.e7)([c.Z, a.Z], () => {
     let e = R ? c.Z.getStatus() : a.Z.getStatus(n.id);
     return e === r.Skl.OFFLINE || e === r.Skl.INVISIBLE
@@ -104,7 +104,7 @@ function Z(e) {
       })
     }) : null]
   }) : (0, l.jsx)("div", {
-    className: I.empty,
+    className: Z.empty,
     children: (0, l.jsx)(r.$jN, {})
   })
 }
