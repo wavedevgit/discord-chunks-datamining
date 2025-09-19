@@ -203,6 +203,11 @@ let i = {
     inlineRequire: () => require("./556809.js").Z,
     neverLoadBeforeConnectionOpen: true
   },
+  OverlayKeybindExperimentManager: {
+    actions: ["OVERLAY_READY", "KEYBINDS_SET_KEYBIND"],
+    inlineRequire: () => require("./991186.js").Z,
+    neverLoadBeforeConnectionOpen: true
+  },
   ParticipantFocusManager: {
     inlineRequire: () => require("./14516.js").Z,
     hasStoreChangeListeners: true

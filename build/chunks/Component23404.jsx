@@ -124,7 +124,9 @@ function A(e) {
     location: S.dr.ACTIVITY_PANEL,
     questContent: g.jn.ACTIVITY_PANEL,
     sourceQuestContent: g.jn.ACTIVITY_PANEL
-  });
+  }), K = (0, d.Rt)(_), q = (0, m.CR)({
+    quest: _
+  }), Q = K ? q : N.intl.string(N.t.l7E81t);
   return z || B || F || A ? null : (0, r.jsxs)("div", {
     ref: e => {
       b.current = e
@@ -192,6 +194,7 @@ function A(e) {
       className: P.ctas,
       children: [!V && (0, r.jsxs)(s.hE2, {
         size: "sm",
+        direction: K ? "vertical" : "horizontal",
         fullWidth: true,
         children: [(0, r.jsx)(s.zxk, {
           variant: "secondary",
@@ -199,7 +202,7 @@ function A(e) {
           onClick: U
         }), (0, r.jsx)(s.zxk, {
           variant: "primary",
-          text: N.intl.string(N.t.l7E81t),
+          text: Q,
           onClick: k,
           loading: T
         })]

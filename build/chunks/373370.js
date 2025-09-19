@@ -339,7 +339,7 @@ function D(e) {
   } = e;
   switch (w(t)) {
     case 0:
-      return t.config.features.includes(d.S7.START_QUEST_CTA) ? _.intl.string(_.t.hRIVy8) : _.intl.string(_.t.l7E81t);
+      return t.config.features.includes(d.S7.START_QUEST_CTA) ? _.intl.string(_.t["Ie9++v"]) : _.intl.string(_.t.l7E81t);
     case 1:
       return _.intl.string(_.t.l7E81t);
     case 2:

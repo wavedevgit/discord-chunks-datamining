@@ -159,7 +159,7 @@ let M = e => {
 
 function U(e) {
   return e.config.features.includes(C.S7.START_QUEST_CTA) ? (0, m.pO)(e) ? {
-    text: P.intl.string(P.t.hRIVy8),
+    text: P.intl.string(P.t["Ie9++v"]),
     questContentCTA: p.jZ.START_QUEST
   } : {
     text: P.intl.string(P.t.ToGcxM),
