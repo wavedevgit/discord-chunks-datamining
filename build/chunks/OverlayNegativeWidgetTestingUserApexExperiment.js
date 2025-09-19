@@ -11,9 +11,11 @@ require.d(exports, {
   XE: () => u,
   YB: () => g,
   Yo: () => d,
+  aZ: () => N,
   aq: () => I,
   dj: () => f,
   eV: () => C,
+  fn: () => R,
   hS: () => h,
   lj: () => v,
   mB: () => m,
@@ -303,6 +305,60 @@ let A = (0, Chunk427164.le)({
 
 function C(e) {
   return A.getConfig({
+    location: e
+  })
+}
+let N = (0, Chunk427164.le)({
+  name: "2025-09-overlay-negative-widget-testing",
+  kind: "user",
+  defaultConfig: {
+    voiceWidgetDefaultUnpinned: false,
+    videoWidgetDefaultUnpinned: false,
+    disableWelcomeNotification: false,
+    notificationsDefaultOff: false,
+    renderInvisibleOverlay: false
+  },
+  variations: {
+    1: {
+      voiceWidgetDefaultUnpinned: true,
+      videoWidgetDefaultUnpinned: false,
+      disableWelcomeNotification: false,
+      notificationsDefaultOff: false,
+      renderInvisibleOverlay: false
+    },
+    2: {
+      voiceWidgetDefaultUnpinned: false,
+      videoWidgetDefaultUnpinned: true,
+      disableWelcomeNotification: false,
+      notificationsDefaultOff: false,
+      renderInvisibleOverlay: false
+    },
+    3: {
+      voiceWidgetDefaultUnpinned: false,
+      videoWidgetDefaultUnpinned: false,
+      disableWelcomeNotification: true,
+      notificationsDefaultOff: false,
+      renderInvisibleOverlay: false
+    },
+    4: {
+      voiceWidgetDefaultUnpinned: false,
+      videoWidgetDefaultUnpinned: false,
+      disableWelcomeNotification: false,
+      notificationsDefaultOff: true,
+      renderInvisibleOverlay: false
+    },
+    5: {
+      voiceWidgetDefaultUnpinned: false,
+      videoWidgetDefaultUnpinned: false,
+      disableWelcomeNotification: false,
+      notificationsDefaultOff: false,
+      renderInvisibleOverlay: true
+    }
+  }
+});
+
+function R(e) {
+  return N.getConfig({
     location: e
   })
 }

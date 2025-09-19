@@ -13,78 +13,78 @@ var Chunk481060 = require("./481060.js"),
 function l(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      a = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), a.forEach(function(t) {
-      var a;
-      a = n[t], t in e ? Object.defineProperty(e, t, {
-        value: a,
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = a
+      }) : e[t] = r
     })
   }
   return e
 }
 let c = {
   showCaptcha: function(e, t) {
-    let s = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {},
+    let o = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {},
       {
         sitekey: c,
-        captchaService: d,
-        options: u
+        captchaService: u,
+        options: d
       } = e;
-    (0, r.ZDy)(async () => {
+    (0, a.ZDy)(async () => {
       let {
         default: e
       } = await n.e("12192").then(n.bind(n, 718742));
-      return n => (0, a.jsx)(e, l({
+      return n => (0, r.jsx)(e, l({
         onCaptchaVerify: (e, n) => t({
           captcha_key: e,
           captcha_rqtoken: n
         }),
-        captchaService: d,
+        captchaService: u,
         sitekey: c
-      }, s, u, n))
+      }, o, d, n))
     }, {
       Layer: i.ZP,
-      modalKey: o.A
+      modalKey: s.A
     })
   },
   showCaptchaAsync: function(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
       {
         sitekey: c,
-        captchaService: d,
-        captchaSessionId: u,
+        captchaService: u,
+        captchaSessionId: d,
         options: f
       } = e;
-    return new Promise((e, h) => {
-      (0, r.ZDy)(async () => {
+    return new Promise((e, m) => {
+      (0, a.ZDy)(async () => {
         let {
-          default: r
+          default: a
         } = await n.e("12192").then(n.bind(n, 718742));
-        return n => (0, a.jsx)(r, l({
+        return n => (0, r.jsx)(a, l({
           onCaptchaVerify: (t, n) => e({
             captcha_key: t,
             captcha_rqtoken: n,
-            captcha_session_id: u
+            captcha_session_id: d
           }),
-          captchaService: d,
+          captchaService: u,
           sitekey: c,
           onReject: e => {
-            e === s.CaptchaError.CANCEL ? h(new s.CaptchaCancelError) : h(Error("cancel captcha"))
+            e === o.CaptchaError.CANCEL ? m(new o.CaptchaCancelError) : m(Error("cancel captcha"))
           }
         }, t, f, n))
       }, {
         Layer: i.ZP,
-        modalKey: o.A
+        modalKey: s.A
       })
     })
   },
   useIsCaptchaModalOpen: function() {
-    return (0, Chunk481060.s9z)(e => (0, r.DEQ)(e, o.A))
+    return (0, Chunk481060.s9z)(e => (0, a.DEQ)(e, s.A))
   }
 }

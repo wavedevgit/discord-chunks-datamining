@@ -208,6 +208,11 @@ let i = {
     inlineRequire: () => require("./991186.js").Z,
     neverLoadBeforeConnectionOpen: true
   },
+  OverlayNegativeWidgetExperimentManager: {
+    actions: ["OVERLAY_READY", "OVERLAY_SET_NOTIFICATION_DISABLED_SETTING", "LAYOUT_SET_PINNED"],
+    inlineRequire: () => require("./266173.js").Z,
+    neverLoadBeforeConnectionOpen: true
+  },
   ParticipantFocusManager: {
     inlineRequire: () => require("./14516.js").Z,
     hasStoreChangeListeners: true

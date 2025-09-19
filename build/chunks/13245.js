@@ -172,7 +172,7 @@ let O = new Chunk710845.Z("OverlayActionCreators"),
       })
     },
     setNotificationDisabledSetting(e, t) {
-      e === l.OverlayNotificationDisabledSetting.GAME_ACTIVITY && this.track(m.rMx.OVERLAY_GAME_INVITE_SETTINGS_UPDATED, {
+      return e === l.OverlayNotificationDisabledSetting.GAME_ACTIVITY && this.track(m.rMx.OVERLAY_GAME_INVITE_SETTINGS_UPDATED, {
         muted: t
       }), i.Z.dispatch({
         type: "OVERLAY_SET_NOTIFICATION_DISABLED_SETTING",
