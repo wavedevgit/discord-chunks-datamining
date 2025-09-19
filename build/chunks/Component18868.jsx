@@ -49,9 +49,9 @@ let m = () => {
     let {
       className: t,
       onDrop: n
-    } = e, [i, p] = r.useState(false), x = r.useRef(null), b = r.useCallback(e => {
+    } = e, [i, p] = r.useState(false), x = r.useRef(null), f = r.useCallback(e => {
       h(e), p(true), (0, s.Mr3)(c.A)
-    }, []), f = r.useCallback(e => {
+    }, []), b = r.useCallback(e => {
       h(e), p(false)
     }, []), g = r.useCallback(async e => {
       h(e), p(false);
@@ -66,8 +66,8 @@ let m = () => {
     return (0, a.jsx)("div", {
       ref: x,
       className: l()(t, u.uploadArea),
-      onDragEnter: b,
-      onDragLeave: f,
+      onDragEnter: f,
+      onDragLeave: b,
       onDrop: g,
       children: (0, a.jsx)("div", {
         className: l()(u.uploadModal, {

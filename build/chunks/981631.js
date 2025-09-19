@@ -1723,8 +1723,7 @@ let tZ = {
     QUEST_PREVIEW_TOOL_2: "Quest Preview Tool 2",
     QUEST_MINOR_REWARD_CAPPING_CONFIG: "Quest Minor Reward Capping Config",
     SECURE_FRAMES: "Secure Frames",
-    SECURE_FRAMES_VERIFIED_DEVICES: "Secure Frames Verified Devices",
-    WEB_SETTING_TREE_TOOL: "Web Setting Tree Tool"
+    SECURE_FRAMES_VERIFIED_DEVICES: "Secure Frames Verified Devices"
   });
 var tV = function(e) {
     return e.APPLICATION_STORE = "Application Store Verified Guild Invite - Lurker", e.CHAT_INPUT_BLOCKER = "Chat Input Blocker - Lurker Mode", e.NOTICE_BAR = "Notice - Lurker Mode", e.MOBILE_GUILD_DISCOVERY = "iOS Guild Discovery - Lurker", e.DIRECTORY_ENTRY = "Directory Channel Entry", e.DIRECTORY_EVENTS = "Directory Channel Events", e.POLL_ALERT = "Poll Alert", e.ICYMI = "ICYMI", e

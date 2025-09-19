@@ -224,7 +224,7 @@ function _() {
           children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
             hideBorder: true,
             value: R,
-            onChange: e => d.Z.setMode(b.pM.VOICE_ACTIVITY, {
+            onChange: e => d.Z.setMode(f.pM.VOICE_ACTIVITY, {
               autoThreshold: e
             }),
             children: "Auto Threshold"
@@ -236,7 +236,7 @@ function _() {
             children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
               hideBorder: true,
               value: w,
-              onChange: e => d.Z.setMode(b.pM.VOICE_ACTIVITY, {
+              onChange: e => d.Z.setMode(f.pM.VOICE_ACTIVITY, {
                 vadUseKrisp: e
               }),
               children: "Use Krisp VAD"
@@ -246,7 +246,7 @@ function _() {
             tag: Chunk481060.RB0.H3,
             children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
               initialValue: I,
-              onValueChange: e => d.Z.setMode(b.pM.VOICE_ACTIVITY, {
+              onValueChange: e => d.Z.setMode(f.pM.VOICE_ACTIVITY, {
                 vadKrispActivationThreshold: e
               }),
               minValue: 0,

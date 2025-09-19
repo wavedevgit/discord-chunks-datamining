@@ -39,7 +39,7 @@ function E() {
         let t = p.Z.getChannel(e.channelId);
         return {
           value: e.channelId,
-          label: null != t ? (0, m.F6)(t, b.default, x.Z) : e.channelId
+          label: null != t ? (0, m.F6)(t, f.default, x.Z) : e.channelId
         }
       })
     })),

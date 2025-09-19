@@ -84,13 +84,13 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
       a = e.createReader();
     for (let e of (await new Promise(e => a.readEntries(e)))) e.isDirectory && t.includes(e.name) && n.add(e.name);
     return t.filter(e => !n.has(e))
-  }, b = e => {
+  }, f = e => {
     let {
       names: t,
       addError: n
     } = e, a = /^[a-z0-9]+(_[a-z0-9]+)*(\.[a-z0-9]+)?$/, r = t.filter(e => !a.test(e));
     r.length > 0 && n("File names must be in lowercase snake case", r)
-  }, f = (e, t, n, a) => {
+  }, b = (e, t, n, a) => {
     let r = t.size,
       i = r > 1e6 ? "".concat((r / 1e6).toFixed(2), "MB") : "".concat((r / 1e3).toFixed(2), "KB"),
       l = "".concat(t.name, " - ").concat(i);
@@ -101,7 +101,7 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
   }, g = (e, t, n, a) => {
     let r = p[e];
     if (null != r)
-      for (let e of t) e.name.endsWith(".txt") || f(r, e, n, a)
+      for (let e of t) e.name.endsWith(".txt") || b(r, e, n, a)
   }, v = () => {
     let [e, t] = Chunk647438.useState(false), [n, c] = Chunk647438.useState({}), [d, u] = Chunk647438.useState({}), m = Chunk647438.useCallback(function(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [];
@@ -146,9 +146,9 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
             for (let e of t.collectionFiles) {
               let t = (0, r.BU)(e),
                 i = null != t ? p[t] : null;
-              null != i && f(i, e, n, a)
+              null != i && b(i, e, n, a)
             }
-            b({
+            f({
               names: t.collectionFiles.map(e => e.name),
               addError: n
             });
@@ -167,12 +167,12 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
               addError: n,
               addWarning: a
             } = e;
-            b({
+            f({
               names: Object.keys(t.profileEffectFilesMap),
               addError: n
             }), Object.entries(t.profileEffectFilesMap).forEach(e => {
               let [t, i] = e, l = i.map(e => e.name);
-              b({
+              f({
                 names: l.map(e => {
                   let t = e.indexOf("-");
                   return e.substring(0, t > 0 ? t : e.length)
@@ -194,7 +194,7 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
               addError: n,
               addWarning: a
             } = e;
-            b({
+            f({
               names: t.avatarDecorationFiles.map(e => e.name),
               addError: n
             }), g(r.aB.AVATAR_DECORATION, t.avatarDecorationFiles, n, a)

@@ -24,7 +24,7 @@ function p() {
     dailyCapReached: Chunk68985.Z.hasUserHitDCCap(),
     dailyCapOverridden: Chunk68985.Z.dailyCapOverridden,
     newUserMinAgeRequiredOverridden: Chunk68985.Z.newUserMinAgeRequiredOverridden
-  })), [p, x] = Chunk647438.useState(""), b = Object.keys(Chunk704215.z).filter(e => e.toLowerCase().includes(p.toLowerCase())).reverse();
+  })), [p, x] = Chunk647438.useState(""), f = Object.keys(Chunk704215.z).filter(e => e.toLowerCase().includes(p.toLowerCase())).reverse();
   return (0, Chunk951288.jsx)(Chunk481060.zJl, {
     children: (0, Chunk951288.jsxs)("div", {
       className: Chunk455698.panelContainer,
@@ -60,7 +60,7 @@ function p() {
             onClear: () => x("")
           })
         }), (0, Chunk951288.jsx)(Chunk699867.Z, {
-          items: b
+          items: f
         })]
       })]
     })

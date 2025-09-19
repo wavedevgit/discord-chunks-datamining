@@ -124,9 +124,9 @@ function y(e) {
       D(e.body.message)
     }
     S()
-  }, G = (null == (t = b.GP[E.planIdFromItems]) ? true : t.premiumType) === b.p9.TIER_0, z = null == (n = E.metadata) ? true : n.ended_at, B = null != z ? new Date(z).toISOString().substring(0, 10) : "", V = E.hasActiveTrial, H = (null == (i = E.metadata) ? true : i.active_discount_id) != null;
+  }, G = (null == (t = f.GP[E.planIdFromItems]) ? true : t.premiumType) === f.p9.TIER_0, z = null == (n = E.metadata) ? true : n.ended_at, B = null != z ? new Date(z).toISOString().substring(0, 10) : "", V = E.hasActiveTrial, H = (null == (i = E.metadata) ? true : i.active_discount_id) != null;
   return (0, a.jsxs)("div", {
-    className: l()(f.card, G ? f.gradientWrapperTier0 : f.gradientWrapperTier2),
+    className: l()(b.card, G ? b.gradientWrapperTier0 : b.gradientWrapperTier2),
     children: [V && (0, a.jsx)(o.P3F, {
       className: g.badge,
       children: (0, a.jsx)(o.Text, {
@@ -147,7 +147,7 @@ function y(e) {
         variant: "text-md/normal",
         children: ["Type: ", (() => {
           let e = E.planIdFromItems;
-          return null == e ? "No plan id" : e in b.GP ? b.GP[e].name : "Unknown plan id ".concat(e)
+          return null == e ? "No plan id" : e in f.GP ? f.GP[e].name : "Unknown plan id ".concat(e)
         })(), " "]
       }), (0, a.jsxs)(o.Text, {
         variant: "text-md/normal",

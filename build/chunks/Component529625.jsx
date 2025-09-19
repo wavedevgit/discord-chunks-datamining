@@ -27,17 +27,17 @@ function x() {
     n = p.useField("isSuccess"),
     s = p.useField("errorMessage"),
     x = Chunk647438.useRef([]),
-    b = Chunk647438.useRef(""),
-    f = Chunk647438.useCallback(() => {
+    f = Chunk647438.useRef(""),
+    b = Chunk647438.useCallback(() => {
       let {
         results: e,
         query: t
       } = Chunk823385.Z.getProps();
-      (x.current !== module || b.current !== exports) && (x.current = module, b.current = exports, (0, Chunk620481.OC)())
+      (x.current !== module || f.current !== exports) && (x.current = module, f.current = exports, (0, Chunk620481.OC)())
     }, []);
   Chunk647438.useEffect(() => {
-    if (module) return Chunk823385.Z.addChangeListener(f), () => Chunk823385.Z.removeChangeListener(f)
-  }, [f, module]);
+    if (module) return Chunk823385.Z.addChangeListener(b), () => Chunk823385.Z.removeChangeListener(b)
+  }, [b, module]);
   let g = Chunk647438.useCallback(async () => {
     let {
       isUploading: e

@@ -44,7 +44,7 @@ function j() {
       let t = h.default.getUser(e);
       if (null == t) return;
       let n = t.username,
-        a = b.ZP.getGlobalName(t),
+        a = f.ZP.getGlobalName(t),
         r = m.Z.getNickname(t.id),
         i = d.ZP.getNicknames(t.id);
       g.info("username: ".concat(n)), g.info("global name: ".concat(a)), g.info("nickname: ".concat(r)), g.info("guild nicknames: ".concat(i)), v()
@@ -56,7 +56,7 @@ function j() {
       a = h.default.getUser(n);
     if (null == a) return;
     let i = a.username,
-      l = b.ZP.getGlobalName(a),
+      l = f.ZP.getGlobalName(a),
       s = m.Z.getNickname(a.id);
     g.info("username: ".concat(i)), g.info("global name: ".concat(l)), g.info("nickname: ".concat(s)), v()
   }), g.info("END Logging DM Channels\n")
@@ -75,7 +75,7 @@ function _() {
       let t = h.default.getUser(e);
       if (null == t) return;
       let n = t.username,
-        a = b.ZP.getGlobalName(t),
+        a = f.ZP.getGlobalName(t),
         r = m.Z.getNickname(t.id),
         i = d.ZP.getNicknames(t.id);
       g.info("username: ".concat(n)), g.info("global name: ".concat(a)), g.info("nickname: ".concat(r)), g.info("guild nicknames: ".concat(i)), v()
@@ -87,7 +87,7 @@ function _() {
       a = h.default.getUser(n);
     if (null == a) return;
     let i = a.username,
-      l = b.ZP.getGlobalName(a),
+      l = f.ZP.getGlobalName(a),
       s = m.Z.getNickname(a.id);
     g.info("username: ".concat(i)), g.info("global name: ".concat(l)), g.info("nickname: ".concat(s)), v()
   }), g.info("END Logging DM Channels\n")
@@ -99,7 +99,7 @@ function y() {
     let t = h.default.getUser(e);
     if (null == t) return;
     let n = t.username,
-      a = b.ZP.getGlobalName(t),
+      a = f.ZP.getGlobalName(t),
       r = m.Z.getNickname(t.id),
       i = d.ZP.getNicknames(t.id);
     g.info("username: ".concat(n)), g.info("global name: ".concat(a)), g.info("nickname: ".concat(r)), g.info("guild nicknames: ".concat(i)), v()
@@ -133,27 +133,27 @@ function N() {
   let e = Chunk823385.Z.getProps();
   g.info("START Quick Switcher State"), g.info("Query: ".concat(module.query)), module.results.forEach(e => {
     switch (g.info("Result Type: ".concat(e.type)), e.type) {
-      case f.h8.GUILD:
+      case b.h8.GUILD:
         g.info("guild id: ".concat(e.record.id));
         break;
-      case f.h8.TEXT_CHANNEL:
-      case f.h8.VOICE_CHANNEL:
+      case b.h8.TEXT_CHANNEL:
+      case b.h8.VOICE_CHANNEL:
         g.info("channel type: ".concat(e.record.type)), g.info("channel id: ".concat(e.record.id)), g.info("name: ".concat(e.record.name));
         break;
-      case f.h8.DM:
+      case b.h8.DM:
         g.info("channel type: ".concat(e.record.type)), g.info("channel id: ".concat(e.record.id)), e.record.isDM() && (g.info("recipient id: ".concat(e.record.getRecipientId())), e.record.recipients.forEach(e => {
           let t = h.default.getUser(e);
-          null != t && (g.info("recipient username: ".concat(t.username)), g.info("recipient global name: ".concat(b.ZP.getGlobalName(t))), g.info("recipient nickname: ".concat(m.Z.getNickname(t.id))))
+          null != t && (g.info("recipient username: ".concat(t.username)), g.info("recipient global name: ".concat(f.ZP.getGlobalName(t))), g.info("recipient nickname: ".concat(m.Z.getNickname(t.id))))
         }));
         break;
-      case f.h8.GROUP_DM:
+      case b.h8.GROUP_DM:
         g.info("channel type: ".concat(e.record.type)), g.info("channel id: ".concat(e.record.id)), g.info("name: ".concat((0, r.F6)(e.record, h.default, m.Z))), e.record.isGroupDM() && (g.info("default name: ".concat((0, r.on)(e.record, h.default, m.Z))), g.info("recipient id: ".concat(e.record.recipients)), e.record.recipients.forEach(e => {
           let t = h.default.getUser(e);
-          null != t && (g.info("recipient username: ".concat(t.username)), g.info("recipient global name: ".concat(b.ZP.getGlobalName(t))), g.info("recipient nickname: ".concat(m.Z.getNickname(t.id))))
+          null != t && (g.info("recipient username: ".concat(t.username)), g.info("recipient global name: ".concat(f.ZP.getGlobalName(t))), g.info("recipient nickname: ".concat(m.Z.getNickname(t.id))))
         }));
         break;
-      case f.h8.USER:
-        g.info("user id: ".concat(e.record.id)), g.info("username: ".concat(e.record.username)), g.info("global name: ".concat(b.ZP.getGlobalName(e.record))), g.info("nickname: ".concat(m.Z.getNickname(e.record.id))), g.info("guild nicknames: ".concat(d.ZP.getNicknames(e.record.id)))
+      case b.h8.USER:
+        g.info("user id: ".concat(e.record.id)), g.info("username: ".concat(e.record.username)), g.info("global name: ".concat(f.ZP.getGlobalName(e.record))), g.info("nickname: ".concat(m.Z.getNickname(e.record.id))), g.info("guild nicknames: ".concat(d.ZP.getNicknames(e.record.id)))
     }
     g.info("frecency score: ".concat(o.Z.getScoreWithoutFetchingLatest(e.record.id))), v()
   }), g.info("END Quick Switcher State\n")

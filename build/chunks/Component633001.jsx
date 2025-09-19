@@ -138,7 +138,7 @@ function X(e) {
 let J = Chunk647438.memo(function(e) {
     let {
       trackedGame: t
-    } = e, n = (0, d.e7)([f.ZP], () => f.ZP.getGameOrTransformedSubgameForPID(t.pid)), r = (0, d.e7)([k.Z], () => k.Z.getGameForPID(t.pid)), i = (0, d.e7)([f.ZP], () => null == n ? null : f.ZP.getGameOverlayStatus(n));
+    } = e, n = (0, d.e7)([b.ZP], () => b.ZP.getGameOrTransformedSubgameForPID(t.pid)), r = (0, d.e7)([k.Z], () => k.Z.getGameForPID(t.pid)), i = (0, d.e7)([b.ZP], () => null == n ? null : b.ZP.getGameOverlayStatus(n));
     return (0, a.jsxs)("div", {
       className: V.panelGroup,
       children: [(0, a.jsx)(m.Text, {
@@ -409,12 +409,12 @@ function en() {
 let ea = Chunk647438.memo(function(e) {
     let {
       pid: t
-    } = e, n = (0, d.e7)([_.default, f.ZP], () => {
+    } = e, n = (0, d.e7)([_.default, b.ZP], () => {
       var e, n;
       if (null == t) return null;
       let a = null == (e = _.default.getTrackedGameByPid(t)) ? true : e.fullscreenType;
       if (null != a) return a;
-      let r = f.ZP.getGameOrTransformedSubgameForPID(t);
+      let r = b.ZP.getGameOrTransformedSubgameForPID(t);
       return null != (n = null == r ? true : r.fullscreenType) ? n : x.Jx.UNKNOWN
     }, [t]);
     return (0, a.jsxs)(m.Text, {
@@ -526,7 +526,7 @@ let ea = Chunk647438.memo(function(e) {
   el = Chunk647438.memo(function() {
     let [e, t] = Q(Chunk981631.Odu.CLICK_ZONE_DEBUG), [n, i] = Q(Chunk981631.Odu.PERFORMANCE_DEBUG), l = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.ClickZones)), s = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.WidgetAreas)), o = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.DisabledGPUBoost)), c = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.ForceGPUBoost)), h = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.OverlayRafManagerForceEnabled)), x = e => {
       p.Z.setRenderDebugMode(!C.ZP.hasRenderDebugMode(e), e)
-    }, [b, f] = Chunk647438.useState({});
+    }, [f, b] = Chunk647438.useState({});
     return Chunk647438.useEffect(() => {
       let e = setInterval(() => {
         Chunk594190({})
@@ -855,7 +855,7 @@ function eh(e) {
 }
 let ep = ["__webpack_require__", "fn"],
   ex = ["web.js", "web.js.map"],
-  eb = [{
+  ef = [{
     id: "details",
     name: "Details",
     group: Chunk621060.v0.NONE,
@@ -872,7 +872,7 @@ let ep = ["__webpack_require__", "fn"],
         stack: h,
         data: p,
         timestamp: x
-      } = r, b = o()(x), f = em(c);
+      } = r, f = o()(x), b = em(c);
       return (0, a.jsxs)(m.w0Z, {
         className: V.subPanelScroller,
         children: [(0, a.jsxs)(g.Z, {
@@ -882,7 +882,7 @@ let ep = ["__webpack_require__", "fn"],
               color: ed(c, d)
             },
             className: V.headerIcon,
-            children: (0, a.jsx)(f, {
+            children: (0, a.jsx)(b, {
               color: "currentColor",
               size: "sm"
             })
@@ -912,11 +912,11 @@ let ep = ["__webpack_require__", "fn"],
           className: V.commonProperties,
           children: [(0, a.jsx)(L.Z9, {
             name: "Timestamp",
-            copyValue: b.toISOString(),
+            copyValue: f.toISOString(),
             children: (0, a.jsx)("time", {
-              dateTime: b.toISOString(),
-              title: (0, w.vc)(b, "LLLL"),
-              children: (0, w.vc)(b, "L h:mm:ss.SSS")
+              dateTime: f.toISOString(),
+              title: (0, w.vc)(f, "LLLL"),
+              children: (0, w.vc)(f, "L h:mm:ss.SSS")
             })
           }), (0, a.jsx)(L.Z9, {
             name: "Log Type",
@@ -967,7 +967,7 @@ let ep = ["__webpack_require__", "fn"],
       })
     }
   }],
-  ef = {
+  eb = {
     searchType: Chunk886118.S.REGEX,
     searchStringGenerator: e => {
       let {
@@ -985,7 +985,7 @@ function eg() {
   let [e, t] = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.DEV_getOverlayLoggingBreadcrumbs(), [], Chunk136015.Q), {
     ref: n,
     height: i
-  } = (0, Chunk393238.ZP)(), s = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.DEV_isOverlayModuleLoggingEnabled()), [o, c] = Chunk647438.useState(Chunk913527), [h, x] = Chunk647438.useState(Object.keys(ec)), [f, g] = Chunk647438.useState(""), v = Chunk647438.useMemo(() => 0 === exports ? [] : module.filter(e => {
+  } = (0, Chunk393238.ZP)(), s = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.DEV_isOverlayModuleLoggingEnabled()), [o, c] = Chunk647438.useState(Chunk913527), [h, x] = Chunk647438.useState(Object.keys(ec)), [b, g] = Chunk647438.useState(""), v = Chunk647438.useMemo(() => 0 === exports ? [] : module.filter(e => {
     for (let t of h) {
       let {
         filter: n
@@ -998,9 +998,9 @@ function eg() {
   }, []), {
     renderSelectedTab: T
   } = (0, Chunk621060.ZP)({
-    tabs: eb
+    tabs: ef
   }, []);
-  (0, Chunk301801.BO)(Chunk594190, Chunk427860, Chunk352527, ef, [module]);
+  (0, Chunk301801.BO)(Chunk594190, Chunk427860, Chunk352527, eb, [module]);
   let k = Chunk647438.useCallback(e => {
     c(e), p.Z.setModuleLogging(e)
   }, []);

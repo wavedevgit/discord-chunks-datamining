@@ -92,8 +92,8 @@ function k(e) {
   let {
     offer: m,
     offerOptions: h,
-    forceRefetch: b
-  } = e, [f, g] = r.useState(false), [y, C] = r.useState(false), [N, S] = r.useState(false), [O, T] = r.useState(false);
+    forceRefetch: f
+  } = e, [b, g] = r.useState(false), [y, C] = r.useState(false), [N, S] = r.useState(false), [O, T] = r.useState(false);
   r.useEffect(() => {
     N && T(true);
     let e = setTimeout(() => {
@@ -123,7 +123,7 @@ function k(e) {
     U = async () => {
       S(true), D ? await F({
         expiresAt: null
-      }) : await (0, d.ab)(m), b(), S(false)
+      }) : await (0, d.ab)(m), f(), S(false)
     }, F = async e => {
       S(true);
       try {
@@ -154,11 +154,11 @@ function k(e) {
           rejectWithError: true
         })
       } finally {
-        b(), S(false)
+        f(), S(false)
       }
     };
   r.useEffect(() => {
-    if (f) {
+    if (b) {
       let e = setTimeout(() => {
         g(false)
       }, 3e3);
@@ -174,7 +174,7 @@ function k(e) {
         clearTimeout(e)
       }
     }
-  }, [f, y]);
+  }, [b, y]);
   let G = "Active";
   return D && (G = "Acked"), L && (G = "Expired"), (0, a.jsxs)("div", {
     className: l()(_.card, M ? _.gradientWrapperTier0 : _.gradientWrapperTier2),
@@ -194,7 +194,7 @@ function k(e) {
         variant: "eyebrow",
         color: "always-white",
         children: ["Offer: ", k]
-      }), f ? (0, a.jsx)(c.dz2, {
+      }), b ? (0, a.jsx)(c.dz2, {
         size: "md",
         color: "currentColor",
         className: _.icon
@@ -281,7 +281,7 @@ function k(e) {
       })]
     }), (0, a.jsx)(c.P3F, {
       onClick: async () => {
-        S(true), await E(k, "trial"), b(), S(false)
+        S(true), await E(k, "trial"), f(), S(false)
       },
       children: (0, a.jsx)(c.XHJ, {
         size: "md",
@@ -303,16 +303,16 @@ function P(e) {
     offer: i,
     offerOptions: o,
     forceRefetch: u
-  } = e, [m, h] = r.useState(false), [x, b] = r.useState(false), [f, g] = r.useState(false), [j, y] = r.useState(false);
+  } = e, [m, h] = r.useState(false), [x, f] = r.useState(false), [b, g] = r.useState(false), [j, y] = r.useState(false);
   r.useEffect(() => {
-    f && y(true);
+    b && y(true);
     let e = setTimeout(() => {
       y(false)
     }, 500);
     return () => {
       clearTimeout(e)
     }
-  }, [f]);
+  }, [b]);
   let {
     id: C,
     expires_at: N,
@@ -356,7 +356,7 @@ function P(e) {
     }
     if (x) {
       let e = setTimeout(() => {
-        b(false)
+        f(false)
       }, 3e3);
       return () => {
         clearTimeout(e)
@@ -403,7 +403,7 @@ function P(e) {
     }), (0, a.jsxs)(c.P3F, {
       className: l()(_.row, _.idRow),
       onClick: () => {
-        (0, p.JG)(O, () => b(true))
+        (0, p.JG)(O, () => f(true))
       },
       children: [(0, a.jsxs)(c.Text, {
         variant: "eyebrow",
@@ -460,7 +460,7 @@ function P(e) {
       })]
     }), (0, a.jsx)("div", {
       className: l()(_.loadingContainer, {
-        [_.isLoading]: f || j
+        [_.isLoading]: b || j
       }),
       children: (0, a.jsx)(c.$jN, {})
     })]
@@ -642,7 +642,7 @@ function R() {
           variant: "text-md/bold",
           children: "Active reverse trial"
         }), (0, Chunk951288.jsx)("div", {
-          children: L.map(e => (0, a.jsx)(b.D, {
+          children: L.map(e => (0, a.jsx)(f.D, {
             entitlement: e,
             active: true,
             onDelete: () => F(e.id)

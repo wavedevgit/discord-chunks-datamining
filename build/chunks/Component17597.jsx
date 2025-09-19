@@ -37,7 +37,7 @@ let C = function(e) {
   let {
     loading: I,
     ageVerificationMethods: Z
-  } = (0, f.Z)(() => {
+  } = (0, b.Z)(() => {
     null == N || N(), C()
   }, () => {
     O(l.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
@@ -110,7 +110,7 @@ let C = function(e) {
           size: "sm",
           text: j.intl.string(v.default.hDvmYG),
           onClick: () => {
-            (0, b.J)()
+            (0, f.J)()
           }
         })]
       }) : (0, a.jsx)(o.Kqy, {

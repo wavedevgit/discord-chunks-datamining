@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk711322 = require("./711322.js"),
   Chunk451429 = require("./451429.js");
 
-function b(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -36,7 +36,7 @@ function b(e) {
   return e
 }
 
-function f(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,13 +53,13 @@ let g = {
     let {
       default: e
     } = await require.e("77370").then(require.bind(require, 83950));
-    return t => (0, a.jsx)(e, b({}, t))
+    return t => (0, a.jsx)(e, f({}, t))
   },
   EmailEnterModal: async () => {
     let {
       default: e
     } = await require.e("93288").then(require.bind(require, 396410));
-    return t => (0, a.jsx)(e, f(b({}, t), {
+    return t => (0, a.jsx)(e, b(f({}, t), {
       headerText: h.intl.string(h.t.ZLRYGR),
       confirmButtonText: h.intl.string(h.t.PDTjLC),
       confirmButtonVariant: "primary"
@@ -69,7 +69,7 @@ let g = {
     let {
       default: e
     } = await require.e("94566").then(require.bind(require, 965072));
-    return t => (0, a.jsx)(e, f(b({}, t), {
+    return t => (0, a.jsx)(e, b(f({}, t), {
       headerText: h.intl.string(h.t.H3Q7U1),
       onFormSubmit: () => {},
       onResend: () => {},
@@ -84,7 +84,7 @@ let g = {
     let {
       default: e
     } = await require.e("53893").then(require.bind(require, 686768));
-    return t => (0, a.jsx)(e, f(b({}, t), {
+    return t => (0, a.jsx)(e, b(f({}, t), {
       entryPoint: s.cU.DEV_TOOLS_AGE_VERIFICATION_RETRY_MODAL
     }))
   },
@@ -92,7 +92,7 @@ let g = {
     let {
       default: e
     } = await Promise.all([require.e("1716"), require.e("8430")]).then(require.bind(require, 701509));
-    return t => (0, a.jsx)(e, f(b({}, t), {
+    return t => (0, a.jsx)(e, b(f({}, t), {
       source: m.L0.NSFW_SERVER
     }))
   },
@@ -100,19 +100,19 @@ let g = {
     let {
       default: e
     } = await require.e("80478").then(require.bind(require, 920644));
-    return t => (0, a.jsx)(e, b({}, t))
+    return t => (0, a.jsx)(e, f({}, t))
   },
   NewUserAgeGate: async () => {
     let {
       default: e
     } = await require.e("76323").then(require.bind(require, 298237));
-    return t => (0, a.jsx)(e, b({}, t))
+    return t => (0, a.jsx)(e, f({}, t))
   },
   AutomatedUnderageAppealModal: async () => {
     let {
       default: e
     } = await require.e("75435").then(require.bind(require, 751744));
-    return t => (0, a.jsx)(e, f(b({}, t), {
+    return t => (0, a.jsx)(e, b(f({}, t), {
       classificationId: "123"
     }))
   },
@@ -120,7 +120,7 @@ let g = {
     let {
       default: e
     } = await require.e("28382").then(require.bind(require, 537623));
-    return t => (0, a.jsx)(e, f(b({}, t), {
+    return t => (0, a.jsx)(e, b(f({}, t), {
       guildId: "123",
       messageId: null
     }))
@@ -129,7 +129,7 @@ let g = {
     let {
       default: e
     } = await require.e("40390").then(require.bind(require, 251871));
-    return t => (0, a.jsx)(e, f(b({}, t), {
+    return t => (0, a.jsx)(e, b(f({}, t), {
       guildId: "123"
     }))
   },
@@ -137,7 +137,7 @@ let g = {
     let {
       default: e
     } = await Promise.resolve().then(require.bind(require, 145454));
-    return t => (0, a.jsx)(e, b({
+    return t => (0, a.jsx)(e, f({
       error: null,
       working: false,
       validPhone: false

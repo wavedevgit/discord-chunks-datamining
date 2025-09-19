@@ -40,11 +40,11 @@ let x = [{
     name: "Validate",
     value: "validate"
   }],
-  b = {
+  f = {
     label: "[none selected]",
     value: null
   },
-  f = {
+  b = {
     label: "[preview all]",
     value: null
   },
@@ -76,7 +76,7 @@ let x = [{
         previewProfileEffectId: t,
         setPreviewProfileEffectId: n
       } = (0, Chunk619899.N9)(),
-      i = Chunk647438.useMemo(() => [b, ...module.map(e => ({
+      i = Chunk647438.useMemo(() => [f, ...module.map(e => ({
         label: e.name,
         value: e.id
       }))], [module]);
@@ -110,7 +110,7 @@ let x = [{
       setPreviewAvatarDecorationId: t
     } = (0, Chunk619899.N9)(), {
       avatarDecorationAssets: n
-    } = (0, Chunk619899.xq)(), i = Chunk647438.useMemo(() => [f, ...require.map(e => ({
+    } = (0, Chunk619899.xq)(), i = Chunk647438.useMemo(() => [b, ...require.map(e => ({
       label: e.name,
       value: e.name
     }))], [require]);

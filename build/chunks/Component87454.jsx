@@ -21,14 +21,14 @@ let h = Chunk647438.memo(function(e) {
   } = e, o = l.z[n], {
     isDismissed: m,
     handleToggleDismissState: h
-  } = (0, d.Z)(o), [x, b] = r.useState(false), f = r.useCallback(() => {
+  } = (0, d.Z)(o), [x, f] = r.useState(false), b = r.useCallback(() => {
     null == i || i(n), h()
   }, [i, h, n]), g = r.useCallback(e => {
-    e.preventDefault(), b(true), navigator.clipboard.writeText(n.toLowerCase())
+    e.preventDefault(), f(true), navigator.clipboard.writeText(n.toLowerCase())
   }, [n]);
   return (0, a.jsx)(s.j7V, {
     value: m,
-    onChange: f,
+    onChange: b,
     className: t,
     children: (0, a.jsxs)("div", {
       className: u.container,

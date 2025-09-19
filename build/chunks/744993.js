@@ -3,9 +3,9 @@
 require.d(exports, {
   EC: () => x,
   NE: () => v,
-  TN: () => f,
+  TN: () => b,
   _k: () => _,
-  g$: () => b,
+  g$: () => f,
   po: () => p,
   s9: () => j,
   yP: () => g
@@ -78,7 +78,7 @@ function x(e) {
   })
 }
 
-function b(e, t) {
+function f(e, t) {
   if (e) {
     var n;
     l.default.track(h.rMx.GAME_SERVER_HOSTING_THIRD_PARTY_CONSENT_ACCEPTED, {
@@ -92,7 +92,7 @@ function b(e, t) {
   })
 }
 
-function f() {
+function b() {
   Chunk570140.Z.dispatch({
     type: "PORTKEY_REGION_PING_STATE_RESET"
   })

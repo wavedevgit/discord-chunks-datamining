@@ -142,7 +142,7 @@ function P() {
       }), N.map(t => (0, a.jsx)(c.j7V, {
         className: y.formSwitch,
         onChange: n => {
-          n ? (0, h.Qd)(t, e, false) : ((0, b.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, h.c7)(t, e))
+          n ? (0, h.Qd)(t, e, false) : ((0, f.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, h.c7)(t, e))
         },
         value: n.includes(t),
         children: (0, a.jsx)(c.Text, {
@@ -158,7 +158,7 @@ function P() {
       }), E.map(t => (0, a.jsx)(c.j7V, {
         className: y.formSwitch,
         onChange: n => {
-          n ? (0, h.Qd)(t, e, false) : ((0, b.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, h.c7)(t, e))
+          n ? (0, h.Qd)(t, e, false) : ((0, f.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, h.c7)(t, e))
         },
         value: n.includes(t),
         children: (0, a.jsx)(c.Text, {

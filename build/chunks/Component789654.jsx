@@ -292,10 +292,10 @@ function T(e) {
         semanticColorOverrides: r
       })
     })
-  }, [n]), b = Object.keys(C).map(e => ({
+  }, [n]), f = Object.keys(C).map(e => ({
     value: e,
     label: N(e)
-  })), f = Object.keys(u.b).map(e => ({
+  })), b = Object.keys(u.b).map(e => ({
     value: e,
     label: e
   }));
@@ -304,7 +304,7 @@ function T(e) {
       variant: "text-lg/semibold",
       children: "Semantic Tokens"
     }), (0, a.jsx)(h.VcW, {
-      options: b,
+      options: f,
       placeholder: "Search for a semantic token...",
       value: true,
       onChange: c,
@@ -411,7 +411,7 @@ function T(e) {
       variant: "text-lg/semibold",
       children: "Raw Tokens"
     }), (0, a.jsx)(h.VcW, {
-      options: f,
+      options: b,
       placeholder: "Search for a raw color...",
       value: true,
       onChange: d,

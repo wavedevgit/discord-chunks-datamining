@@ -32,8 +32,8 @@ function p() {
     s = h.useField("includeGDMs"),
     p = h.useField("includeQuickSwitcherState"),
     x = h.useField("includeUserSearchWorkerState"),
-    b = h.useField("isUploading"),
-    f = h.useField("isSuccess"),
+    f = h.useField("isUploading"),
+    b = h.useField("isSuccess"),
     g = h.useField("errorMessage"),
     v = Chunk647438.useCallback(async () => {
       let {
@@ -117,8 +117,8 @@ function p() {
       hideBorder: true,
       children: "User Search Worker"
     }), (0, Chunk951288.jsx)(Chunk608934.a, {
-      isUploading: b,
-      isSuccess: f,
+      isUploading: f,
+      isSuccess: b,
       errorMessage: g,
       onClick: v,
       title: "Upload Snapshot Logs"

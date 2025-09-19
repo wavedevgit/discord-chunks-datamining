@@ -35,7 +35,7 @@ function x(e) {
   return e
 }
 
-function b(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,7 +47,7 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let f = Object.keys(Chunk500949.jQ).map(e => ({
+let b = Object.keys(Chunk500949.jQ).map(e => ({
     value: e,
     label: e
   })),
@@ -84,7 +84,7 @@ function v(e) {
           easing: h.iw.LINEAR,
           easingStrength: 1,
           steps: 26
-        }, n(b(x({}, t), {
+        }, n(f(x({}, t), {
           scales: [...t.scales, a]
         })))
       },
@@ -99,20 +99,20 @@ function v(e) {
           },
           children: (0, a.jsx)(_, {
             scale: e,
-            onRemove: () => n(b(x({}, t), {
+            onRemove: () => n(f(x({}, t), {
               scales: t.scales.filter(t => t.name !== e.name)
             }))
           })
         })
       }, e.name))
     })]
-  }), u = i.find(e => e.name === l), f = null != u ? (0, a.jsx)(j, {
+  }), u = i.find(e => e.name === l), b = null != u ? (0, a.jsx)(j, {
     onClose: () => s(null),
     scale: u,
     setState: n
   }) : o;
   return (0, a.jsx)("div", {
-    children: f
+    children: b
   })
 }
 
@@ -124,7 +124,7 @@ function j(e) {
   } = e, {
     name: c,
     base: x,
-    darkness: b,
+    darkness: f,
     lightness: g,
     showColumnarPalettePreview: v,
     colorSpace: j,
@@ -185,7 +185,7 @@ function j(e) {
         type: d.geA.DESCRIPTION,
         children: "The color space used to generate the palette. Different color spaces will produce different results."
       }), (0, a.jsx)(d.q4e, {
-        options: f,
+        options: b,
         value: j,
         onChange: e => (0, h.t4)(c, e, n),
         popoutLayerContext: m.O$
@@ -210,7 +210,7 @@ function j(e) {
           onMarkerRender: () => null
         })]
       }), (0, a.jsxs)(d.xJW, {
-        title: "Darken (".concat((100 * b).toFixed(), "%)"),
+        title: "Darken (".concat((100 * f).toFixed(), "%)"),
         children: [(0, a.jsx)(d.R94, {
           type: d.geA.DESCRIPTION,
           children: "Increase the darkness of the lightest color in the palette. Increasing this makes the lighter colors in the palette darker."
