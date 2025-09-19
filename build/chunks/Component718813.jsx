@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 718813, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => k
+  Z: () => M
 }), require("./539854.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,9 +20,10 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk819640 = require("./819640.js"),
   Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx"),
   Chunk256076 = require("./256076.js");
 
-function v(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,20 +32,20 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
 }
 
-function C(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -56,48 +57,48 @@ function C(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = (0, Chunk663993.Un)({
+let T = (0, Chunk663993.Un)({
     createPromise: () => require.e("69470").then(require.bind(require, 989804)),
     webpackId: 989804,
     name: "UserSettings"
   }),
-  T = (0, Chunk663993.Un)({
+  N = (0, Chunk663993.Un)({
     createPromise: () => require.e("79835").then(require.bind(require, 72493)),
     webpackId: 72493
   }),
-  N = (0, Chunk663993.Un)({
+  P = (0, Chunk663993.Un)({
     createPromise: () => Promise.all([require.e("36599"), require.e("58175"), require.e("7654"), require.e("47463"), require.e("86915")]).then(require.bind(require, 869779)),
     webpackId: 869779,
     name: "ChannelSettings"
   }),
-  P = (0, Chunk663993.Un)({
+  j = (0, Chunk663993.Un)({
     createPromise: () => require.e("45620").then(require.bind(require, 838819)),
     webpackId: 838819,
     name: "CollectiblesShop"
   }),
-  j = (0, Chunk663993.Un)({
+  x = (0, Chunk663993.Un)({
     createPromise: () => Promise.all([require.e("36599"), require.e("60962"), require.e("58175"), require.e("55616"), require.e("8271"), require.e("15851"), require.e("51453"), require.e("7654"), require.e("845"), require.e("47463"), require.e("6850"), require.e("58227"), require.e("54408"), require.e("90746"), require.e("8106"), require.e("95140")]).then(require.bind(require, 994763)),
     webpackId: 994763,
     name: "GuildSettings"
   }),
-  x = {
-    [Chunk981631.S9g.USER_SETTINGS]: () => (0, Chunk951288.jsx)(S, {}),
-    [Chunk981631.S9g.CHANNEL_SETTINGS]: () => (0, Chunk951288.jsx)(N, {}),
-    [Chunk981631.S9g.GUILD_SETTINGS]: () => (0, Chunk951288.jsx)(j, {}),
-    [Chunk981631.S9g.COLLECTIBLES_SHOP]: () => (0, Chunk951288.jsx)(P, {}),
-    [Chunk981631.S9g.MANA_PLAYGROUND]: () => (0, Chunk951288.jsx)(T, {})
+  A = {
+    [Chunk981631.S9g.USER_SETTINGS]: () => (0, Chunk951288.jsx)(T, {}),
+    [Chunk981631.S9g.CHANNEL_SETTINGS]: () => (0, Chunk951288.jsx)(P, {}),
+    [Chunk981631.S9g.GUILD_SETTINGS]: () => (0, Chunk951288.jsx)(x, {}),
+    [Chunk981631.S9g.COLLECTIBLES_SHOP]: () => (0, Chunk951288.jsx)(j, {}),
+    [Chunk981631.S9g.MANA_PLAYGROUND]: () => (0, Chunk951288.jsx)(N, {})
   },
-  A = "SHOWN",
-  Z = "HIDDEN",
-  w = {
+  Z = "SHOWN",
+  w = "HIDDEN",
+  L = {
     friction: 10,
     tension: 100
   };
 
-function L() {
+function R() {
   return Chunk647438.useEffect(() => (Chunk714338.Z.enable(), Chunk714338.Z.enableTemp(Chunk134616.u), () => Chunk714338.Z.disableTemp()), []), null
 }
-class R extends(r = Chunk647438.PureComponent) {
+class D extends(r = Chunk647438.PureComponent) {
   static getDerivedStateFromProps(e, t) {
     return e.mode !== t.mode ? {
       animating: true,
@@ -111,8 +112,8 @@ class R extends(r = Chunk647438.PureComponent) {
       mode: n
     } = e;
     if (t !== n) {
-      if (t === A && n === Z) return this.animateIn();
-      if (t === Z && n === A) return this.animateUnder()
+      if (t === Z && n === w) return this.animateIn();
+      if (t === w && n === Z) return this.animateUnder()
     }
   }
   componentWillEnter(e) {
@@ -135,11 +136,11 @@ class R extends(r = Chunk647438.PureComponent) {
       opacity: t,
       scale: n
     } = this.state;
-    s.Z.parallel([s.Z.spring(t, I({
+    s.Z.parallel([s.Z.spring(t, C({
       toValue: 1
-    }, w)), s.Z.spring(n, I({
+    }, L)), s.Z.spring(n, C({
       toValue: 1
-    }, w))]).start(() => this.animateComplete(e))
+    }, L))]).start(() => this.animateComplete(e))
   }
   animateOut(e) {
     c.ZP.Emitter.pause(500);
@@ -147,11 +148,11 @@ class R extends(r = Chunk647438.PureComponent) {
       opacity: t,
       scale: n
     } = this.state;
-    O.S.dispatch(E.CkL.LAYER_POP_START), s.Z.parallel([s.Z.spring(t, I({
+    O.S.dispatch(E.CkL.LAYER_POP_START), s.Z.parallel([s.Z.spring(t, C({
       toValue: 0
-    }, w)), s.Z.spring(n, I({
+    }, L)), s.Z.spring(n, C({
       toValue: 1.1
-    }, w))]).start(() => {
+    }, L))]).start(() => {
       e(), O.S.dispatch(E.CkL.LAYER_POP_COMPLETE)
     })
   }
@@ -161,11 +162,11 @@ class R extends(r = Chunk647438.PureComponent) {
       opacity: e,
       scale: t
     } = this.state;
-    Chunk748780.Z.parallel([Chunk748780.Z.spring(module, I({
+    Chunk748780.Z.parallel([Chunk748780.Z.spring(module, C({
       toValue: 0
-    }, w)), Chunk748780.Z.spring(exports, I({
+    }, L)), Chunk748780.Z.spring(exports, C({
       toValue: .93
-    }, w))]).start(() => this.animateComplete())
+    }, L))]).start(() => this.animateComplete())
   }
   animateComplete(e) {
     this.setState({
@@ -194,22 +195,38 @@ class R extends(r = Chunk647438.PureComponent) {
         for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
-    }(exports, ["name", "mode", "children", "baseLayer"]), u = module || r === Z ? this.getAnimatedStyle() : null, p = (0, Chunk951288.jsx)(Chunk748780.Z.div, C(I({
+    }(exports, ["name", "mode", "children", "baseLayer"]), u = r === w, p = module || Chunk215569 ? this.getAnimatedStyle() : null, f = !Chunk215569 && !Chunk120356, h = (0, Chunk951288.jsx)(Chunk748780.Z.div, S(C({
       ref: e => this.containerRef.current = null != e ? e.componentRef : true,
       "data-layer": null != require ? require : "base",
-      "aria-hidden": r === Z,
+      "aria-hidden": Chunk215569,
+      "aria-modal": Chunk134616,
+      "aria-label": Chunk134616 ? function(e) {
+        switch (e) {
+          case E.S9g.USER_SETTINGS:
+            return y.intl.string(y.t.cduTBA);
+          case E.S9g.CHANNEL_SETTINGS:
+            return y.intl.string(y.t.XPDhcX);
+          case E.S9g.COLLECTIBLES_SHOP:
+            return y.intl.string(y.t.pWG4zc);
+          case E.S9g.MANA_PLAYGROUND:
+            return "Component Playground";
+          default:
+            return ""
+        }
+      }(require) : true,
+      role: Chunk134616 ? "dialog" : true,
       className: o()(Chunk256076.layer, {
         [Chunk256076.baseLayer]: Chunk120356,
         [Chunk256076.animating]: module,
-        "stop-animations": r === Z
+        "stop-animations": r === w
       }),
-      style: Chunk215569
+      style: Chunk37234
     }, Chunk442837), {
       children: Chunk647438
     }));
-    return Chunk120356 ? Chunk37234 : (0, Chunk951288.jsx)(Chunk481060.EqS, {
+    return Chunk120356 ? Chunk714338 : (0, Chunk951288.jsx)(Chunk481060.EqS, {
       containerRef: this.containerRef,
-      children: Chunk37234
+      children: Chunk714338
     })
   }
   getAnimatedStyle() {
@@ -231,10 +248,10 @@ class R extends(r = Chunk647438.PureComponent) {
     }
   }
   constructor(e) {
-    super(e), v(this, "containerRef", l.createRef());
+    super(e), I(this, "containerRef", l.createRef());
     let t = 1,
       n = 1;
-    e.mode === Z && (t = .93, n = 0), this.state = {
+    e.mode === w && (t = .93, n = 0), this.state = {
       animating: false,
       scale: new s.Z.Value(t),
       opacity: new s.Z.Value(n),
@@ -242,10 +259,10 @@ class R extends(r = Chunk647438.PureComponent) {
     }
   }
 }
-v(R, "defaultProps", {
+I(D, "defaultProps", {
   baseLayer: false
-}), v(R, "contextType", Chunk481060.Sfi);
-class D extends Chunk647438.PureComponent {
+}), I(D, "contextType", Chunk481060.Sfi);
+class k extends Chunk647438.PureComponent {
   componentDidMount() {
     Chunk585483.S.subscribe(Chunk981631.CkL.LAYER_POP_ESCAPE_KEY, Chunk37234.xf)
   }
@@ -260,25 +277,25 @@ class D extends Chunk647438.PureComponent {
     } = this.props, {
       length: r
     } = exports, l = [];
-    return Chunk647438.push((0, Chunk951288.jsx)(R, {
-      mode: 0 !== r || require ? Z : A,
+    return Chunk647438.push((0, Chunk951288.jsx)(D, {
+      mode: 0 !== r || require ? w : Z,
       baseLayer: true,
       children: module
     }, "layer-base")), exports.forEach((e, t) => l.push(this.renderComponent(e, t, r))), Chunk647438
   }
   renderComponent(e, t, n) {
     let r;
-    return r = "string" == typeof e ? x[e]() : (0, i.jsx)(e, {}), (0, i.jsxs)(R, {
+    return r = "string" == typeof e ? A[e]() : (0, i.jsx)(e, {}), (0, i.jsxs)(D, {
       name: "string" == typeof e ? e : true,
-      mode: t === n - 1 ? A : Z,
-      children: [(0, i.jsx)(L, {}), r]
+      mode: t === n - 1 ? Z : w,
+      children: [(0, i.jsx)(R, {}), r]
     }, "layer-".concat(t))
   }
   renderArtisanalHack() {
     return (0, Chunk951288.jsx)(Chunk481060.f6W, {
       theme: this.props.sidebarTheme,
       children: e => (0, i.jsx)("div", {
-        className: o()(y.bg, e)
+        className: o()(v.bg, e)
       })
     })
   }
@@ -293,11 +310,11 @@ class D extends Chunk647438.PureComponent {
   }
 }
 
-function k(e) {
+function M(e) {
   let t = (0, b.Ll)(),
     n = (0, c.e7)([_.Z], () => _.Z.getLayers()),
     r = (0, m.QP)(e => e.fullScreenLayers.length > 0);
-  return (0, i.jsx)(D, C(I({}, e), {
+  return (0, i.jsx)(k, S(C({}, e), {
     sidebarTheme: t,
     layers: n,
     hasFullScreenLayer: r

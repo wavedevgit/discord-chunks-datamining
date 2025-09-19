@@ -42,11 +42,10 @@ function T(e, t) {
 
 function S(e) {
   var t;
-  let n = null != (t = m[d.ME]) ? t : {},
-    r = {};
+  let n = null != (t = m[d.ME]) ? t : {};
   s().each(n, (t, n) => {
-    t.channelId !== e && (r[n] = t)
-  }), m[d.ME] = r
+    t.channelId === e && R(d.ME, n, () => null)
+  })
 }
 
 function A(e) {
