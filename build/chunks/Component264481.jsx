@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk313789 = require("./313789.js"),
   Chunk518596 = require("./518596.jsx"),
   Chunk5192 = require("./5192.js"),
-  Chunk475413 = require("./475413.jsx"),
+  Chunk732380 = require("./732380.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk839468 = require("./839468.js");
@@ -96,11 +96,10 @@ function S(e) {
     bodyText: f,
     children: (0, r.jsx)("div", {
       className: j.buttonRow,
-      children: (0, r.jsx)(g.tG, {
+      children: (0, r.jsx)(g.O1, {
         icon: a.kBi,
         text: b.intl.string(b.t["g33r/P"]),
-        onClick: p,
-        themeColor: "secondary"
+        onClick: p
       })
     })
   })
@@ -165,14 +164,12 @@ function E(e) {
     bodyText: b.intl.string(b.t.KpjsU1),
     children: [(0, r.jsx)(A, {}), (0, r.jsxs)("div", {
       className: j.buttonRow,
-      children: [(0, r.jsx)(g.tG, {
+      children: [(0, r.jsx)(g.O1, {
         text: b.intl.string(b.t["/Hl24e"]),
-        onClick: s,
-        themeColor: "secondary"
-      }), (0, r.jsx)(g.tG, {
+        onClick: s
+      }), (0, r.jsx)(g.O1, {
         text: b.intl.string(b.t.GTCx0t),
-        onClick: o,
-        themeColor: "secondary"
+        onClick: o
       })]
     }), i && (0, r.jsx)("div", {
       className: j.reportMissingActivity,

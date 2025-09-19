@@ -135,7 +135,7 @@ let N = function(e, t) {
           let {
             emojisDisabled: n,
             emojisUnfiltered: i
-          } = h(e === T.Hz.REACTION ? c : s);
+          } = h([T.Hz.REACTION, T.Hz.DEFAULT_REACT_EMOJI].includes(e) ? c : s);
           if (null == i || 0 === i.length) return t;
           t.push({
             type: v.En.RECENT,

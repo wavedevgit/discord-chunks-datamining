@@ -49,9 +49,9 @@ function w(e) {
   }), D = (0, c.P6)("UserProfileModalV2Activity"), {
     live: U,
     recent: R,
-    stream: G
+    stream: M
   } = (0, p.Z)(t.id), {
-    voiceChannel: M,
+    voiceChannel: G,
     voiceActivity: B
   } = (0, b.Z)({
     userId: t.id,
@@ -59,7 +59,7 @@ function w(e) {
   }), F = (0, l.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), W = t.id === n.id, z = (0, l.e7)([f.Z, d.Z], () => {
     let e = W ? f.Z.getStatus() : d.Z.getStatus(t.id);
     return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
-  }), q = U.length > 0 || null != G, Y = _ && null == G && null == B && null != M, V = !z && (q || Y), H = R.length > 0, K = U.some(e => (0, a.Z)(e));
+  }), q = U.length > 0 || null != M, Y = _ && null == M && null == B && null != G, V = !z && (q || Y), H = R.length > 0, K = U.some(e => (0, a.Z)(e));
   if (!V && !H && F) return (0, r.jsx)("div", {
     className: N.cards,
     children: Array.from({
@@ -103,14 +103,14 @@ function w(e) {
             children: (0, r.jsx)(O.Z, {
               user: t,
               currentUser: n,
-              voiceChannel: M,
+              voiceChannel: G,
               onClose: k
             })
-          }), null != G && (0, r.jsx)("li", {
+          }), null != M && (0, r.jsx)("li", {
             children: (0, r.jsx)(v.Z, {
               user: t,
               currentUser: n,
-              stream: G,
+              stream: M,
               onClose: k
             })
           }), U.map((e, l) => (0, r.jsx)("li", {
@@ -124,7 +124,7 @@ function w(e) {
             children: (0, r.jsx)(O.Z, {
               user: t,
               currentUser: n,
-              voiceChannel: M,
+              voiceChannel: G,
               onClose: k
             })
           })]
