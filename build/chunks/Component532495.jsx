@@ -151,7 +151,7 @@ function U() {
       onPronounsChange: Chunk350327.ID,
       pendingPronouns: W,
       currentPronouns: null != (U = null == Z ? true : Z.pronouns) ? U : ""
-    }, "pronouns"), (0, Chunk951288.jsx)(Chunk532432.Z, {
+    }, "pronouns"), el && (0, Chunk951288.jsx)(Chunk9617.Z, {}), (0, Chunk951288.jsx)(Chunk532432.Z, {
       onAvatarChange: Chunk809206.I5,
       showRemoveAvatarButton: et,
       errors: Q.avatar,
@@ -165,7 +165,7 @@ function U() {
     }), (0, Chunk951288.jsx)(Chunk513901.Z, {
       user: B,
       sectionTitle: Chunk388032.intl.string(Chunk388032.t.wR5wOj)
-    }, "effect"), ec(), el && (0, Chunk951288.jsx)(Chunk9617.Z, {}), (0, Chunk951288.jsx)(Chunk126631.Z, {
+    }, "effect"), ec(), (0, Chunk951288.jsx)(Chunk126631.Z, {
       sectionTitle: Chunk388032.intl.string(Chunk388032.t.NepzEx),
       errors: eo,
       onBioChange: e => (0, d.xQ)(e, null == Z ? true : Z.bio),
