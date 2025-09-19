@@ -34,7 +34,7 @@ function f() {
         variant: "text-sm/semibold",
         color: "always-white",
         children: _.heading()
-      }), null != _.subheading && require.length > 1 && (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), null != _.subheading && (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         color: "always-white",
         children: _.subheading(require.length)

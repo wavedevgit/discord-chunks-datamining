@@ -1,7 +1,7 @@
 /** Chunk was on 39159 **/
 /** chunk id: 678328, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,17 +18,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk782991 = require("./782991.js");
 
-function x() {
+function v() {
   let {
     guildId: e,
     portkeyGames: n,
     instances: t,
     setPortkeyInstance: a,
-    setCurrentGame: x,
+    setCurrentGame: v,
     onNext: b
   } = (0, Chunk183369.aj)(), j = Chunk647438.useCallback(e => {
-    x(e), b()
-  }, [x, b]), h = Chunk647438.useCallback(e => {
+    v(e), b()
+  }, [v, b]), h = Chunk647438.useCallback(e => {
     a(e), b()
   }, [Chunk120356, b]), _ = require.length >= Chunk473682.zI, C = require.length > 0;
   return 0 === Object.values(exports).length ? (0, Chunk951288.jsx)("div", {
