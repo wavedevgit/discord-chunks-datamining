@@ -22,7 +22,7 @@ var Chunk242433 = require("./242433.js"),
   Chunk543980 = require("./543980.js");
 let b = {
     skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_PUMPKIN_TRICK_SKU_ID,
-    assetId: "a_fe4a5080455bc20030589d3b930ebe7b",
+    assetId: "a_dec0db5e1395a9d7df152d6981443cd8",
     a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
       category: Chunk388032.intl.string(Chunk388032.t["6Zuiv7"]),
       name: Chunk388032.intl.string(Chunk388032.t["9PzTtL"])
@@ -30,7 +30,7 @@ let b = {
   },
   y = {
     skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_PUMPKIN_TREAT_SKU_ID,
-    assetId: "a_ade36581b93e50a565541e1964d7eb6a",
+    assetId: "a_8636994a8d0b1c5c8353ebce125c2cef",
     a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
       category: Chunk388032.intl.string(Chunk388032.t["2UeOlZ"]),
       name: Chunk388032.intl.string(Chunk388032.t["9PzTtL"])
@@ -38,7 +38,7 @@ let b = {
   },
   O = {
     skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_GHOST_TRICK_SKU_ID,
-    assetId: "a_9fb28bf1ed0bed681898f57df3acec5b",
+    assetId: "a_fe80397b484fba8ffc12257f5ba9f500",
     a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
       category: Chunk388032.intl.string(Chunk388032.t["6Zuiv7"]),
       name: Chunk388032.intl.string(Chunk388032.t.sBk8mZ)
@@ -46,7 +46,7 @@ let b = {
   },
   v = {
     skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_GHOST_TREAT_SKU_ID,
-    assetId: "a_f43fa3efdeda7f7d50fed5f3e5c5cef5",
+    assetId: "a_9a847496ade4af368c10c1b910880695",
     a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
       category: Chunk388032.intl.string(Chunk388032.t["2UeOlZ"]),
       name: Chunk388032.intl.string(Chunk388032.t.sBk8mZ)
@@ -54,7 +54,7 @@ let b = {
   },
   I = {
     skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_SKULL_TRICK_SKU_ID,
-    assetId: "a_0103146312bbffdb9a58ce4da3d901d1",
+    assetId: "a_6f0c33fb534c1a0a21c606b50683e9a9",
     a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
       category: Chunk388032.intl.string(Chunk388032.t["6Zuiv7"]),
       name: Chunk388032.intl.string(Chunk388032.t.RbkXxc)
@@ -62,7 +62,7 @@ let b = {
   },
   T = {
     skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_SKULL_TREAT_SKU_ID,
-    assetId: "a_652117a3882f5ae4cc30e56d7ac013a7",
+    assetId: "a_46d01a1f046e4f58894f5b5361ab2e61",
     a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
       category: Chunk388032.intl.string(Chunk388032.t["2UeOlZ"]),
       name: Chunk388032.intl.string(Chunk388032.t.RbkXxc)
@@ -70,7 +70,7 @@ let b = {
   },
   S = {
     skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_SPIDER_TRICK_SKU_ID,
-    assetId: "a_8655de5a2c086276231144432fefb8f0",
+    assetId: "a_f6fbc6e9dedd53a1b70e5573499ddd11",
     a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
       category: Chunk388032.intl.string(Chunk388032.t["6Zuiv7"]),
       name: Chunk388032.intl.string(Chunk388032.t.FW3Qp6)
@@ -78,7 +78,7 @@ let b = {
   },
   A = {
     skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_SPIDER_TREAT_SKU_ID,
-    assetId: "a_91bdfba540bf5f305f906e6588704ac6",
+    assetId: "a_f8fdf29cd07f09487165818605cab1dd",
     a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
       category: Chunk388032.intl.string(Chunk388032.t["2UeOlZ"]),
       name: Chunk388032.intl.string(Chunk388032.t.FW3Qp6)
