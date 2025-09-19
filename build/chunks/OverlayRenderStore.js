@@ -379,37 +379,44 @@ async function el(e) {
   if (b.l.has(n.state)) return R.verbose("Skipping overlay method swap for pid ".concat(e, " - state is ").concat(n.state)), false;
   let r = await (0, y.hj)(e, 0);
   if (null == r) return R.error("Failed to get revised fullscreen type for pid ".concat(e)), false;
-  n.fullscreenType !== r && (R.verbose("Fullscreen type different in swap for pid ".concat(e), {
+  n.fullscreenType !== r && R.verbose("Fullscreen type different in swap for pid ".concat(e), {
     oldFullscreenType: n.fullscreenType,
     newFullscreenType: r
-  }), Q(e, "previousFullscreenType", n.fullscreenType), Q(e, "fullscreenType", r), eL.emitChange(), t = true);
+  });
   let i = et(n, r);
   if (n.overlayMethod === i.overlayMethod && n.oopEnabled === i.enabledOOP && n.legacyEnabled === i.enabledLegacy && i.overlayMethod !== g.gl.Disabled || (L === p.UNSET_PID || null === L) && n.state === g.mM.OVERLAY_RENDERING) return t;
   let a = P === g.R5.OUT_OF_PROCESS_V3 || P === g.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION,
     o = P === g.R5.IN_PROCESS_V2,
     s = (0, y.PD)(n, r, H()),
     l = (0, y.DH)(n, r, H());
-  switch (R.verbose("Overlay method different for pid ".concat(e), {
-      oldOverlayMethod: n.overlayMethod,
-      revisedFullscreenType: r,
-      previousFullscreenType: n.previousFullscreenType,
-      newOverlayGameStatus: i,
-      shouldSwitchToHook: l,
-      shouldSwitchToOutOfProcess: s,
-      isForcedInProcess: o,
-      isForcedOutOfProcess: a,
-      legacyEnabled: V(),
-      overlayEnabled: H()
-    }), i.overlayMethod) {
+  R.verbose("Overlay method different for pid ".concat(e), {
+    oldOverlayMethod: n.overlayMethod,
+    revisedFullscreenType: r,
+    previousFullscreenType: n.previousFullscreenType,
+    newOverlayGameStatus: i,
+    shouldSwitchToHook: l,
+    shouldSwitchToOutOfProcess: s,
+    isForcedInProcess: o,
+    isForcedOutOfProcess: a,
+    legacyEnabled: V(),
+    overlayEnabled: H()
+  });
+  let c = () => {
+    R.verbose("Updating fullscreen type for pid ".concat(e), {
+      oldFullscreenType: n.fullscreenType,
+      newFullscreenType: r
+    }), Q(e, "previousFullscreenType", n.fullscreenType), Q(e, "fullscreenType", r), eL.emitChange(), t = true
+  };
+  switch (i.overlayMethod) {
     case g.gl.OutOfProcess:
     case g.gl.OutOfProcessLimitedInteraction:
-      (s && !o || a) && await eu(e, i);
+      (s && !o || a) && (c(), await eu(e, i));
       break;
     case g.gl.Hook:
-      (l && !a || o || V()) && await ec(e, i);
+      (l && !a || o || V()) && (c(), await ec(e, i));
       break;
     case g.gl.Disabled:
-      await er(e)
+      c(), await er(e)
   }
   return t
 }
