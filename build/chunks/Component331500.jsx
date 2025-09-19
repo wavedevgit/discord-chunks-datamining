@@ -17,7 +17,7 @@ var r, a, Chunk951288 = require("./951288.js"),
   Chunk401561 = require("./401561.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk134977 = require("./134977.js");
-let x = (r = function(e) {
+let v = (r = function(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,38 +52,38 @@ function y(e) {
     guildId: t
   } = e;
   s.useEffect(() => {
-    (0, u.po)(t)
+    (0, d.po)(t)
   }, [t]);
   let n = (0, o.Wu)([m.Z], () => {
     let e = m.Z.getStateForGuild(t);
     return (null == e ? true : e.catalog) != null ? Object.values(e.catalog) : []
   });
   return 0 === n.length ? (0, i.jsx)("div", {
-    className: v.container,
+    className: x.container,
     children: (0, i.jsx)(l.$jN, {
       type: l.RAz.SPINNING_CIRCLE,
-      className: v.spinner
+      className: x.spinner
     })
   }) : (0, i.jsxs)("div", {
-    className: v.container,
+    className: x.container,
     children: [(0, i.jsx)(c.X6q, {
-      className: v.heading,
+      className: x.heading,
       variant: "heading-md/semibold",
       children: g.intl.string(j.default.jeYp1t)
     }), (0, i.jsx)(c.zJl, {
-      className: v.gameContainerWrapper,
+      className: x.gameContainerWrapper,
       children: (0, i.jsx)("div", {
-        className: v.gameContainer,
+        className: x.gameContainer,
         children: n.map((e, n) => (0, i.jsx)(b.Z, {
-          className: v.game,
+          className: x.game,
           game: e,
           onClick: () => (0, p.Z)({
             guildId: t,
-            stepConfig: x,
+            stepConfig: v,
             initialPortkeyGame: e,
-            analyticsLocation: d.Z.PORTKEY_OVERVIEW
+            analyticsLocation: u.Z.PORTKEY_OVERVIEW
           }),
-          imageClassName: v.image
+          imageClassName: x.image
         }, "sidebar-game-".concat(n, "-").concat(e.id)))
       })
     })]

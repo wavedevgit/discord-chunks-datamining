@@ -1,5 +1,5 @@
 /** Chunk was on 28934 **/
-/** chunk id: 927607, original params: e,s,t (module,exports,require) **/
+/** chunk id: 927607, original params: e,t,s (module,exports,require) **/
 module.exports = {
   modal: "modal_f2e68c",
   closeButton: "closeButton_f2e68c",

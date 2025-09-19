@@ -23,11 +23,11 @@ function g(e) {
     guildId: t
   } = e;
   a.useEffect(() => {
-    (0, d.EC)(t)
+    (0, u.EC)(t)
   }, [t]);
   let n = (0, l.Z)(t),
-    g = (0, s.e7)([u.Z], () => u.Z.getStateForGuild(t)),
-    v = a.useMemo(() => (null == g ? true : g.instances) == null ? [] : Object.values(g.instances), [null == g ? true : g.instances]);
+    g = (0, s.e7)([d.Z], () => d.Z.getStateForGuild(t)),
+    x = a.useMemo(() => (null == g ? true : g.instances) == null ? [] : Object.values(g.instances), [null == g ? true : g.instances]);
   return (0, r.jsxs)("div", {
     className: j.container,
     children: [(0, r.jsxs)(o.ZP, {
@@ -45,7 +45,7 @@ function g(e) {
         className: j.gameContainerWrapper,
         children: (0, r.jsx)("div", {
           className: j.gameContainer,
-          children: v.map((e, n) => (0, r.jsx)(m.Z, {
+          children: x.map((e, n) => (0, r.jsx)(m.Z, {
             guildId: t,
             instance: e
           }, "".concat(e.gameId, "-").concat(n)))
