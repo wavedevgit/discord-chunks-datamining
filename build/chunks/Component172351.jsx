@@ -2,10 +2,11 @@
 /** chunk id: 172351, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk911969 = require("./911969.js"),
   Chunk367907 = require("./367907.js"),
   Chunk10718 = require("./10718.js"),
   Chunk69626 = require("./69626.jsx"),
@@ -16,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk555013 = require("./555013.js");
 
-function p(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,61 +26,67 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e) {
+function g(e) {
   let {
     applicationId: t,
     commandIds: n,
-    guildId: p,
-    channel: m,
-    onClick: g
+    guildId: h,
+    channel: g,
+    onClick: E
   } = e, {
-    trackUserProfileAction: E
-  } = (0, c.KZ)(), b = i.useMemo(() => ({
-    channel: m,
+    trackUserProfileAction: b
+  } = (0, u.KZ)(), y = i.useMemo(() => ({
+    channel: g,
     type: "channel"
-  }), [m]), {
-    commands: y
-  } = o.Qm(b, t, n), O = i.useMemo(() => null == y ? true : y.filter(e => {
+  }), [g]), {
+    commands: O
+  } = s.Qm(y, t, n), v = i.useMemo(() => null == O ? true : O.filter(e => {
     let {
-      nsfw: t
+      nsfw: t,
+      options: n
     } = e;
-    returntrue !== t
-  }), [y]);
-  if (null == O || 0 === O.length) return null;
-  let v = e => {
-    null == g || g(), E({
+    returntrue !== t && (null == n ? true : n.find(e => {
+      let {
+        type: t
+      } = e;
+      return t === a.jw.SUB_COMMAND || t === a.jw.SUB_COMMAND_GROUP
+    })) == null
+  }), [O]);
+  if (null == v || 0 === v.length) return null;
+  let I = e => {
+    null == E || E(), b({
       action: "PRESS_APP_COMMAND"
-    }), l.default.track(d.rMx.POPULAR_APPLICATION_COMMAND_CLICKED, h({
+    }), c.default.track(f.rMx.POPULAR_APPLICATION_COMMAND_CLICKED, m({
       application_id: t,
       command_id: e,
-      guild_id: p
-    }, (0, a.JS)(m.id)))
+      guild_id: h
+    }, (0, o.JS)(g.id)))
   };
-  return (0, r.jsx)(u.Z, {
-    heading: f.intl.string(f.t["0hKkS0"]),
+  return (0, r.jsx)(d.Z, {
+    heading: _.intl.string(_.t["0hKkS0"]),
     children: (0, r.jsx)("ul", {
-      className: _.list,
-      children: O.map(e => (0, r.jsx)("li", {
-        children: (0, r.jsx)(s.wz, {
+      className: p.list,
+      children: v.map(e => (0, r.jsx)("li", {
+        children: (0, r.jsx)(l.wz, {
           commandId: e.id,
           commandName: e.displayName,
           commandDescription: e.displayDescription,
-          onClick: v,
-          guildId: p,
-          channelId: m.id,
+          onClick: I,
+          guildId: h,
+          channelId: g.id,
           applicationId: e.applicationId
         })
       }, e.id))
