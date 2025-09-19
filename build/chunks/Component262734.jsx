@@ -97,34 +97,6 @@ function P(e) {
         right: x && !Number.isNaN(F) ? F : 0
       },
       children: [(0, r.jsx)("div", {
-        className: T.contextlessHeader,
-        children: (0, r.jsxs)("div", {
-          className: T.buttonSection,
-          children: [(0, r.jsx)(m.d, {
-            isTrayButton: true,
-            label: S.intl.string(S.t.brPQ5e),
-            onClick: k,
-            iconComponent: u.dOc,
-            themeable: true
-          }), (0, r.jsx)(b.Z, {
-            appContext: I.IlC.APP,
-            applicationId: n.id,
-            shouldPrioritizeGroupPlusIcon: true,
-            iconClassName: T.contextlessInviteButtonIcon,
-            isRichPresenceInvite: true,
-            size: c.zx.Sizes.SMALL,
-            look: c.zx.Looks.FILLED,
-            buttonText: S.intl.string(S.t["6F9ivr"]),
-            color: c.zx.Colors.PRIMARY
-          }), (0, r.jsx)(m.d, {
-            isTrayButton: true,
-            label: S.intl.string(S.t.cpT0Cg),
-            onClick: M,
-            iconComponent: u.Dio,
-            themeable: true
-          })]
-        })
-      }), (0, r.jsx)("div", {
         className: T.activityPanelContainer,
         children: (0, r.jsx)("div", {
           className: a()(T.activityContainer, {
@@ -142,6 +114,37 @@ function P(e) {
             embedId: z
           })
         })
+      }), (0, r.jsxs)("div", {
+        className: T.footer,
+        children: [(0, r.jsx)(b.Z, {
+          appContext: I.IlC.APP,
+          applicationId: n.id,
+          shouldPrioritizeGroupPlusIcon: true,
+          isRichPresenceInvite: true,
+          iconClassName: T.inviteButtonIcon,
+          size: c.zx.Sizes.MEDIUM,
+          look: c.zx.Looks.FILLED,
+          buttonText: S.intl.string(S.t["6F9ivr"]),
+          color: c.zx.Colors.TRANSPARENT
+        }), (0, r.jsxs)("div", {
+          className: T.footerButtons,
+          children: [(0, r.jsx)("div", {
+            className: T.buttonSection,
+            children: (0, r.jsx)(m.d, {
+              isTrayButton: true,
+              label: S.intl.string(S.t.brPQ5e),
+              onClick: k,
+              iconComponent: u.dOc,
+              themeable: true
+            })
+          }), (0, r.jsx)(m.d, {
+            isTrayButton: false,
+            label: S.intl.string(S.t["R/FK4O"]),
+            onClick: M,
+            iconComponent: u.PBZ,
+            color: "disconnect"
+          })]
+        })]
       })]
     })
   })
