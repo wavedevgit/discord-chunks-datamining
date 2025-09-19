@@ -1,7 +1,7 @@
 /** Chunk was on 62987 **/
 /** chunk id: 748855, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  L: () => p
+  L: () => d
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -9,48 +9,46 @@ var Chunk951288 = require("./951288.js"),
   a = require.n(Chunk120356),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk388032 = require("./388032.jsx"),
   Chunk948790 = require("./948790.js"),
   Chunk334405 = require("./334405.js");
 
-function p(e) {
+function d(e) {
   let {
     label: t,
     icon: n,
     isSelected: l = false,
-    setStatus: p,
-    clearStatus: h,
-    isFavorited: f,
-    onFavoriteClick: m
-  } = e, [g, b] = i.useState(false), y = g && l, _ = y ? c.intl.string(c.t.S90Fub) : t, C = null != m, v = i.useCallback(() => {
-    y ? null == h || h() : p()
-  }, [y, h, p]), x = i.useCallback(e => {
-    e.stopPropagation(), null == m || m()
-  }, [m]);
+    setStatus: d,
+    clearStatus: p,
+    isFavorited: h,
+    onFavoriteClick: f
+  } = e, [m, g] = i.useState(false), b = m && l, y = null != f, _ = i.useCallback(() => {
+    b ? null == p || p() : d()
+  }, [b, p, d]), C = i.useCallback(e => {
+    e.stopPropagation(), null == f || f()
+  }, [f]);
   return (0, r.jsxs)(s.P3F, {
-    onClick: v,
+    onClick: _,
     onMouseEnter: () => {
-      b(true)
+      g(true)
     },
     onMouseLeave: () => {
-      b(false)
+      g(false)
     },
-    className: a()(d.item, d.labelContainer, u.container, {
-      [u.isSelected]: l
+    className: a()(u.item, u.labelContainer, c.container, {
+      [c.isSelected]: l
     }),
     children: [n, (0, r.jsx)(s.Text, {
-      color: y ? "text-danger" : g || l ? "text-primary" : "text-secondary",
       variant: "text-md/normal",
-      className: u.itemText,
-      children: _
+      className: c.itemText,
+      children: t
     }), l ? (0, r.jsx)(s.k$p, {
-      className: u.closeIcon,
-      color: y ? o.Z.colors.TEXT_DANGER : true
-    }) : g && C && (0, r.jsx)(s.P3F, {
-      onClick: x,
+      className: c.closeIcon,
+      color: m ? o.Z.colors.ICON_PRIMARY : o.Z.colors.ICON_SECONDARY
+    }) : m && y && (0, r.jsx)(s.P3F, {
+      onClick: C,
       children: (0, r.jsx)(s.r7p, {
-        className: u.closeIcon,
-        color: f ? o.Z.colors.ICON_FEEDBACK_WARNING : true
+        className: c.closeIcon,
+        color: h ? o.Z.colors.ICON_FEEDBACK_WARNING : true
       })
     })]
   })

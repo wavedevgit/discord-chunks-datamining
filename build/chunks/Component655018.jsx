@@ -129,7 +129,7 @@ function P(e) {
         setStatus: () => {
           l ? Y(e) : K(e)
         },
-        clearStatus: () => (0, h.Sc)(false),
+        clearStatus: () => (0, h.Sc)(true),
         isFavorited: o,
         onFavoriteClick: () => (0, h.tg)(l ? e : e.status, l ? null : e.emoji)
       }, "".concat(n, "-").concat(t))
@@ -140,10 +140,10 @@ function P(e) {
     id: "hang-status-picker",
     tabIndex: false,
     className: a()(I.menu, S.container),
-    children: [(0, r.jsxs)("div", {
+    children: [(0, r.jsx)("div", {
       role: "group",
       className: a()(I.groupLabel, S.group),
-      children: [(0, r.jsxs)("form", {
+      children: (0, r.jsxs)("form", {
         onSubmit: X,
         className: a()(I.item, S.input),
         children: [(0, r.jsx)(d.oil, {
@@ -177,6 +177,13 @@ function P(e) {
             onSave: () => X()
           })
         })]
+      })
+    }), (0, r.jsxs)(d.Ttm, {
+      fade: true,
+      role: "group",
+      className: a()(I.groupLabel, S.group, S.scroller),
+      children: [(0, r.jsx)(v.d, {
+        guildId: o.guild_id
       }), H && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
           className: S.subtitle,
@@ -203,8 +210,6 @@ function P(e) {
           })]
         })]
       }), A.map((e, t) => ee(e, t, "recent"))]
-    }), (0, r.jsx)(v.d, {
-      guildId: o.guild_id
     })]
   })
 }
