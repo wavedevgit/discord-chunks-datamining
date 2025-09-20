@@ -197,6 +197,7 @@ function w(e) {
     asset: (0, r.jsxs)("div", {
       className: x.imageContainer,
       children: [t, (0, r.jsx)(c.olH, {
+        "data-migration-pending": true,
         className: x.close,
         onClick: () => null == s ? true : s(_.L.USER_DISMISS)
       })]

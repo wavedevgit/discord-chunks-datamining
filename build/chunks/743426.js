@@ -225,23 +225,21 @@ class v extends Chunk47770.Z {
     null == (t = (n = (0, d.zS)()).setNoiseCancellationEnableStats) || t.call(n, e)
   }
   setAudioInputDevice(e) {
-    let t = this.audioInputDeviceId;
-    this.audioInputDeviceId = e, (0, d.eJ)(h.eR.SET_AUDIO_DEVICE_BY_ID) ? (0, d.zS)().setInputDevice(e) : (0, u.Hg)().then(t => {
+    (0, d.eJ)(h.eR.SET_AUDIO_DEVICE_BY_ID) ? (0, d.zS)().setInputDevice(e): (0, u.Hg)().then(t => {
       var n;
       let r = null != (n = t.find(t => t.id === e)) ? n : t[0];
       null != r && (0, d.zS)().setInputDevice(r.index)
-    }), this.emit(s.aB.SelectedDeviceChange, h.h7.AUDIO_INPUT, t, e)
+    })
   }
   getAudioOutputDevices() {
     return (0, Chunk501950.HS)()
   }
   setAudioOutputDevice(e) {
-    let t = this.audioOutputDeviceId;
-    this.audioOutputDeviceId = e, (0, d.eJ)(h.eR.SET_AUDIO_DEVICE_BY_ID) ? (0, d.zS)().setOutputDevice(e) : (0, u.HS)().then(t => {
+    (0, d.eJ)(h.eR.SET_AUDIO_DEVICE_BY_ID) ? (0, d.zS)().setOutputDevice(e): (0, u.HS)().then(t => {
       var n;
       let r = null != (n = t.find(t => t.id === e)) ? n : t[0];
       null != r && (0, d.zS)().setOutputDevice(r.index)
-    }), this.emit(s.aB.SelectedDeviceChange, h.h7.AUDIO_OUTPUT, t, e)
+    })
   }
   getVideoInputDevices() {
     return (0, Chunk501950.l0)()
@@ -586,7 +584,7 @@ class v extends Chunk47770.Z {
   }
   constructor() {
     var e, t, n, r, i, a, c, p, g;
-    super(), e = this, m(this, "Video", Chunk650886.Z), m(this, "Camera", Chunk656795.Z), m(this, "audioInputDeviceId", Chunk149396.Av), m(this, "audioOutputDeviceId", Chunk149396.Av), m(this, "videoInputDeviceId", Chunk149396.Av), m(this, "connections", new Set), m(this, "lastVoiceActivity", false), m(this, "audioSubsystem", "standard"), m(this, "audioLayer", ""), m(this, "deviceChangeGeneration", 0), m(this, "consecutiveWatchdogFailures", 0), m(this, "codecSurvey", null), m(this, "logger", new Chunk579092.Yd("MediaEngineNative")), m(this, "handleDeviceChange", function() {
+    super(), e = this, m(this, "Video", Chunk650886.Z), m(this, "Camera", Chunk656795.Z), m(this, "videoInputDeviceId", Chunk149396.Av), m(this, "connections", new Set), m(this, "lastVoiceActivity", false), m(this, "audioSubsystem", "standard"), m(this, "audioLayer", ""), m(this, "deviceChangeGeneration", 0), m(this, "consecutiveWatchdogFailures", 0), m(this, "codecSurvey", null), m(this, "logger", new Chunk579092.Yd("MediaEngineNative")), m(this, "handleDeviceChange", function() {
       let t = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [],
         n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [],
         r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [];

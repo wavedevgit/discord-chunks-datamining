@@ -100,6 +100,7 @@ function _(e) {
         })]
       })]
     }), (0, n.jsx)(s.olH, {
+      "data-migration-pending": true,
       className: f.close,
       onClick: O
     })]

@@ -80,11 +80,13 @@ function v(e) {
     }
     return e
   }({
+    "data-migration-pending": true,
     className: j.modal,
     size: i.CgR.DYNAMIC
   }, k), n = n = {
     parentComponent: "GuildPowerupPerkModal",
     children: [(0, r.jsxs)(i.hzk, {
+      "data-migration-pending": true,
       className: j.modalContentContainer,
       scrollbarType: "none",
       children: [(0, r.jsxs)("div", {
@@ -128,6 +130,7 @@ function v(e) {
         children: w
       })]
     }), (0, r.jsx)(i.olH, {
+      "data-migration-pending": true,
       className: j.close,
       onClick: k.onClose
     })]
