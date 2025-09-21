@@ -226,6 +226,7 @@ class y extends Chunk47770.Z {
         duration_encoder_openh264: E(t.encoderBuckets[_.Su.OPENH264]),
         duration_encoder_videotoolbox: E(t.encoderBuckets[_.Su.VIDEOTOOLBOX]),
         duration_encoder_amd_direct3d: E(t.encoderBuckets[_.Su.AMD_DIRECT_3D]),
+        duration_encoder_amd_vaapi: E(t.encoderBuckets[_.Su.AMD_VAAPI]),
         duration_encoder_intel: E(t.encoderBuckets[_.Su.INTEL]),
         duration_encoder_intel_direct3d: E(t.encoderBuckets[_.Su.INTEL_DIRECT_3D]),
         duration_encoder_vp8_libvpx: E(t.encoderBuckets[_.Su.VP8_LIBVPX]),

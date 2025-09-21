@@ -212,24 +212,25 @@ function Z(e) {
 }
 
 function F(e, t) {
-  var n, r, i, a, o, l, c, u, d, f;
-  let p = new Map;
+  var n, r, i, a, o, l, c, u, d, f, p;
+  let h = new Map;
   for (let e in t.framesEncodedByEncoder) {
     let r = t.framesEncodedByEncoder[e],
       i = (0, s.lG)(e),
-      a = null != (n = p.get(i)) ? n : 0;
-    p.set(i, a + r)
+      a = null != (n = h.get(i)) ? n : 0;
+    h.set(i, a + r)
   }
   return D(P({}, e), {
-    frames_encoded_nvidia_cuda: null != (r = p.get(s.Su.NVIDIA_CUDA)) ? r : 0,
-    frames_encoded_nvidia_direct3d: null != (i = p.get(s.Su.NVIDIA_DIRECT_3D)) ? i : 0,
-    frames_encoded_openh264: null != (a = p.get(s.Su.OPENH264)) ? a : 0,
-    frames_encoded_videotoolbox: null != (o = p.get(s.Su.VIDEOTOOLBOX)) ? o : 0,
-    frames_encoded_amd_direct3d: null != (l = p.get(s.Su.AMD_DIRECT_3D)) ? l : 0,
-    frames_encoded_intel: null != (c = p.get(s.Su.INTEL)) ? c : 0,
-    frames_encoded_intel_direct3d: null != (u = p.get(s.Su.INTEL_DIRECT_3D)) ? u : 0,
-    frames_encoded_uncategorized: null != (d = p.get(s.Su.UNCATEGORIZED)) ? d : 0,
-    frames_encoded_unknown: null != (f = p.get(s.Su.UNKNOWN)) ? f : 0,
+    frames_encoded_nvidia_cuda: null != (r = h.get(s.Su.NVIDIA_CUDA)) ? r : 0,
+    frames_encoded_nvidia_direct3d: null != (i = h.get(s.Su.NVIDIA_DIRECT_3D)) ? i : 0,
+    frames_encoded_openh264: null != (a = h.get(s.Su.OPENH264)) ? a : 0,
+    frames_encoded_videotoolbox: null != (o = h.get(s.Su.VIDEOTOOLBOX)) ? o : 0,
+    frames_encoded_amd_direct3d: null != (l = h.get(s.Su.AMD_DIRECT_3D)) ? l : 0,
+    frames_encoded_amd_vaapi: null != (c = h.get(s.Su.AMD_VAAPI)) ? c : 0,
+    frames_encoded_intel: null != (u = h.get(s.Su.INTEL)) ? u : 0,
+    frames_encoded_intel_direct3d: null != (d = h.get(s.Su.INTEL_DIRECT_3D)) ? d : 0,
+    frames_encoded_uncategorized: null != (f = h.get(s.Su.UNCATEGORIZED)) ? f : 0,
+    frames_encoded_unknown: null != (p = h.get(s.Su.UNKNOWN)) ? p : 0,
     frames_submitted: t.framesSubmitted,
     frames_submitted_during_clip: t.framesSubmittedDuringClip,
     frames_encoded: t.framesEncoded,
