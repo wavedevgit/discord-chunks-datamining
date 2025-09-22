@@ -1,4 +1,4 @@
-/** Chunk was on 85991 **/
+/** Chunk was on 86478 **/
 /** chunk id: 916790, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => A
@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
 function T(e) {
   return parseFloat(e.toFixed(3))
 }
-let k = [{
+let P = [{
   key: "store",
   cellClassName: Chunk687278.actionColumn,
   render(e) {
@@ -52,7 +52,7 @@ let k = [{
   }
 }];
 
-function P(e) {
+function k(e) {
   let {
     actionLog: t
   } = e, n = r.useMemo(() => t.traces.map(e => ({
@@ -61,12 +61,12 @@ function P(e) {
   })), [t]);
   return (0, a.jsx)(m.zJl, {
     children: (0, a.jsx)(C.Z, {
-      columns: k,
+      columns: P,
       data: n
     })
   })
 }
-let R = [{
+let w = [{
   id: "action",
   name: "Action",
   group: Chunk621060.v0.NONE,
@@ -105,17 +105,17 @@ let R = [{
     let {
       actionLog: t
     } = e;
-    return (0, a.jsx)(P, {
+    return (0, a.jsx)(k, {
       actionLog: t
     })
   }
 }];
 
-function w(e) {
+function R(e) {
   let {
     actionLog: t,
     initialHeight: n
-  } = e, i = r.useMemo(() => t.error ? [...R, {
+  } = e, i = r.useMemo(() => t.error ? [...w, {
     id: "error",
     name: (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(b.Z, {
@@ -147,7 +147,7 @@ function w(e) {
         })]
       })
     }
-  }] : R, [t]), {
+  }] : w, [t]), {
     TabBar: s,
     renderSelectedTab: o
   } = (0, N.ZP)({
@@ -287,7 +287,7 @@ function A() {
       data: Chunk981631,
       selectedRowKey: null == Chunk55935 ? true : Chunk55935.id.toString(),
       onClickRow: e => j(e.actionLog)
-    }), null != Chunk55935 && (0, Chunk951288.jsx)(w, {
+    }), null != Chunk55935 && (0, Chunk951288.jsx)(R, {
       actionLog: Chunk55935,
       initialHeight: null != module.current ? module.current.clientHeight / 2 : 300
     })]

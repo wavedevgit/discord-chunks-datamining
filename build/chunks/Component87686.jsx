@@ -28,13 +28,13 @@ let h = {
       onChange: p
     } = e, {
       audio: y
-    } = (0, c.p)(), [b, v] = l.useState(false), [x, w] = l.useState(h), {
-      playheadPositionMs: j,
+    } = (0, c.p)(), [b, v] = l.useState(false), [x, j] = l.useState(h), {
+      playheadPositionMs: w,
       endPositionMs: _,
       startPositionMs: N
     } = x, C = null != y, S = _ - N, O = S > m.YW * s.Z.Millis.SECOND;
     l.useEffect(() => {
-      if (null != y) return w({
+      if (null != y) return j({
         playheadPositionMs: 0,
         endPositionMs: y.duration * s.Z.Millis.SECOND,
         startPositionMs: 0
@@ -48,16 +48,16 @@ let h = {
       P = l.useCallback(() => {
         if (null != y) {
           if (b) return void E();
-          j >= _ ? y.currentTime = (0, f.my)(N) : y.currentTime = (0, f.my)(j), y.volume = (0, u.Z)(t), y.play(), v(true)
+          w >= _ ? y.currentTime = (0, f.my)(N) : y.currentTime = (0, f.my)(w), y.volume = (0, u.Z)(t), y.play(), v(true)
         }
-      }, [y, _, E, j, b, N, t]),
+      }, [y, _, E, w, b, N, t]),
       I = l.useCallback(e => {
-        w(e), null == p || p({
+        j(e), null == p || p({
           startMs: e.startPositionMs,
           endMs: e.endPositionMs
         })
       }, [p]),
-      k = l.useCallback(e => {
+      Z = l.useCallback(e => {
         null != y && (y.currentTime = e)
       }, [y]);
     return (0, a.jsxs)("div", {
@@ -90,7 +90,7 @@ let h = {
         })]
       }), (0, a.jsx)(d.Z, {
         playing: b,
-        onPlaybackChange: k,
+        onPlaybackChange: Z,
         onPausePlayback: E,
         onChangePosition: I,
         disabled: i

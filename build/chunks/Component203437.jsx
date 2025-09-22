@@ -30,14 +30,14 @@ function _(e) {
     className: t
   } = e;
   return (0, a.jsxs)(s.Text, {
-    className: r()(j.suffixNode, t),
+    className: r()(w.suffixNode, t),
     variant: "text-sm/medium",
     color: "text-primary",
     children: [(0, a.jsx)(s.gj8, {
       size: "md",
       color: "currentColor",
-      className: j.speakerIcon
-    }), w.intl.format(w.t["8Dyg1N"], {
+      className: w.speakerIcon
+    }), j.intl.format(j.t["8Dyg1N"], {
       slots: n
     })]
   })
@@ -79,8 +79,8 @@ function N(e) {
       }
     }), [N, C]),
     O = l.useCallback(e => null == e || "" === e.value ? null : (0, a.jsx)(u.Z, {
-      className: r()(j.guildSelectOptionIcon, {
-        [j.disabledOption]: e.disabled
+      className: r()(w.guildSelectOptionIcon, {
+        [w.disabledOption]: e.disabled
       }),
       guild: N[e.value],
       size: u.Z.Sizes.SMOL,
@@ -90,33 +90,33 @@ function N(e) {
       let n = null == e ? true : e.value;
       return null == n || "" === n ? null : (0, a.jsx)(_, {
         className: r()({
-          [j.disabledOption]: null == e ? true : e.disabled
+          [w.disabledOption]: null == e ? true : e.disabled
         }),
         availableSlots: C[n]
       })
     }, [C]),
     P = l.useCallback(e => (0, a.jsx)("div", {
       className: r()({
-        [j.disabledOption]: e.disabled
+        [w.disabledOption]: e.disabled
       }),
       children: e.label
     }), []),
     I = l.useCallback(e => {
       C[e] <= 0 || i(e)
     }, [C, i]),
-    k = (() => {
+    Z = (() => {
       let e = C[null != n ? n : x.lds];
       return null == e || e > 0 ? n : true
     })();
   return (0, a.jsx)(s.VcW, {
     className: t,
     onChange: I,
-    value: k,
+    value: Z,
     multi: false,
     options: S,
     renderOptionPrefix: O,
     renderOptionSuffix: E,
     renderOptionLabel: P,
-    placeholder: 0 === S.length ? w.intl.string(w.t.O3i2gY) : w.intl.string(w.t.CunCMD)
+    placeholder: 0 === S.length ? j.intl.string(j.t.O3i2gY) : j.intl.string(j.t.CunCMD)
   })
 }

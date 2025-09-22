@@ -1,8 +1,8 @@
-/** Chunk was on 85991 **/
+/** Chunk was on 86478 **/
 /** chunk id: 678717, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => ey,
-  useDevToolsTabConfig: () => eb
+  default: () => eE,
+  useDevToolsTabConfig: () => ej
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,6 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk611565 = require("./611565.jsx"),
   Chunk238246 = require("./238246.jsx"),
   Chunk788983 = require("./788983.js"),
+  Chunk36243 = require("./36243.js"),
   Chunk51415 = require("./51415.jsx"),
   Chunk906467 = require("./906467.js"),
   Chunk259580 = require("./259580.jsx"),
@@ -67,14 +68,16 @@ var Chunk392750 = require("./392750.jsx"),
   Chunk512313 = require("./512313.jsx"),
   Chunk820400 = require("./820400.jsx"),
   Chunk260950 = require("./260950.jsx"),
+  Chunk63954 = require("./63954.jsx"),
   Chunk569157 = require("./569157.jsx"),
   Chunk621060 = require("./621060.jsx"),
   Chunk981631 = require("./981631.js"),
+  Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk552883 = require("./552883.js"),
   Chunk451429 = require("./451429.js");
 
-function eb() {
+function ej() {
   return Chunk647438.useMemo(() => {
     let e = [{
       id: "analytics",
@@ -311,17 +314,24 @@ function eb() {
       name: "Virtual Currency Config",
       group: Chunk621060.v0.QUESTS,
       render: () => (0, Chunk951288.jsx)(Chunk581302.Z, {})
+    }), (0, Chunk36243.X)({
+      location: Chunk46140.dr.QUEST_PREVIEW_TOOL
+    }) && module.push({
+      id: "quest_preview",
+      name: "Quest Preview",
+      group: Chunk621060.v0.QUESTS,
+      render: () => (0, Chunk951288.jsx)(Chunk63954.Z, {})
     }), module
   }, [])
 }
 
-function eg(e) {
+function e_(e) {
   let {
     resizableNode: t,
     onResize: n,
     onResizeEnd: r
   } = e, i = (0, d.Z)({
-    minDimension: _.h,
+    minDimension: y.h,
     resizableDomNodeRef: t,
     onElementResize: n,
     onElementResizeEnd: r,
@@ -329,23 +339,23 @@ function eg(e) {
   });
   return (0, a.jsx)("div", {
     onMouseDown: i,
-    className: ex.resizeHandle
+    className: eg.resizeHandle
   })
 }
 
-function ev(e) {
+function ey(e) {
   var t;
   let {
     isPopout: n = false
-  } = e, r = eb(), {
+  } = e, r = ej(), {
     TabBar: i,
     renderSelectedTab: l,
     selectedTabId: o
-  } = (0, em.ZP)({
+  } = (0, ep.ZP)({
     tabs: r,
-    initialSelectedTabId: null != (t = _.Z.lastOpenTabId) ? t : true,
+    initialSelectedTabId: null != (t = y.Z.lastOpenTabId) ? t : true,
     onChangeTab: e => {
-      (0, j.Qh)({
+      (0, _.Qh)({
         lastOpenTabId: e
       })
     }
@@ -356,19 +366,19 @@ function ev(e) {
     properties: {
       panel: o
     }
-  }), (0, a.jsxs)(F.Gk, {
+  }), (0, a.jsxs)(G.Gk, {
     children: [(0, a.jsxs)(h.ZP, {
-      className: ef.headerBar,
+      className: ev.headerBar,
       toolbar: n ? null : (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(h.ZP.Icon, {
           icon: c.rgF,
           tooltip: "Pop Out",
           onClick: () => {
-            (0, f.bA)(eh.KJ3.DEVTOOLS_POPOUT, () => (0, a.jsx)(x.Z, {
-              windowKey: eh.KJ3.DEVTOOLS_POPOUT,
+            (0, f.bA)(ex.KJ3.DEVTOOLS_POPOUT, () => (0, a.jsx)(x.Z, {
+              windowKey: ex.KJ3.DEVTOOLS_POPOUT,
               title: "DevTools",
               withTitleBar: true,
-              children: (0, a.jsx)(ey, {
+              children: (0, a.jsx)(eE, {
                 mobile: false,
                 isPopout: true
               })
@@ -379,8 +389,8 @@ function ev(e) {
           }
         }), (0, a.jsx)(h.ZP.Icon, {
           icon: c.Dio,
-          tooltip: ep.intl.string(ep.t.cpT0Cg),
-          onClick: j.SO
+          tooltip: eb.intl.string(eb.t.cpT0Cg),
+          onClick: _.SO
         })]
       }),
       children: [(0, a.jsx)(h.ZP.Icon, {
@@ -389,17 +399,17 @@ function ev(e) {
       }), (0, a.jsx)(h.ZP.Title, {
         children: "DevTools"
       })]
-    }), (0, a.jsx)(i, {}), l(), (0, a.jsx)(F.Br, {
-      className: ex.layerContainer
+    }), (0, a.jsx)(i, {}), l(), (0, a.jsx)(G.Br, {
+      className: eg.layerContainer
     })]
   })
 }
 
-function ej() {
+function eC() {
   let e = Chunk647438.useRef(null),
     t = (0, Chunk442837.e7)([Chunk19759.Z], () => Chunk19759.Z.sidebarWidth),
     [n, i] = Chunk647438.useState(null),
-    l = Chunk647438.useCallback(e => (0, j.Qh)({
+    l = Chunk647438.useCallback(e => (0, _.Qh)({
       sidebarWidth: e
     }), []);
   return (Chunk647438.useEffect(() => {
@@ -412,23 +422,23 @@ function ej() {
       width: require
     },
     "data-app-right-panel": true,
-    children: [(0, Chunk951288.jsx)(eg, {
+    children: [(0, Chunk951288.jsx)(e_, {
       resizableNode: module,
       onResize: Chunk120356,
       onResizeEnd: l
     }), (0, Chunk951288.jsx)("div", {
       className: Chunk552883.sidebarContent,
-      children: (0, Chunk951288.jsx)(ev, {})
+      children: (0, Chunk951288.jsx)(ey, {})
     })]
   })
 }
 
-function e_() {
+function eN() {
   return (0, Chunk442837.e7)([Chunk19759.Z], () => Chunk19759.Z.displayTools) ? (0, Chunk951288.jsx)("div", {
     className: l()(Chunk552883.container, Chunk552883.mobileContainerExpanded),
     children: (0, Chunk951288.jsx)("div", {
       className: Chunk552883.sidebarContent,
-      children: (0, Chunk951288.jsx)(ev, {})
+      children: (0, Chunk951288.jsx)(ey, {})
     })
   }) : (0, Chunk951288.jsx)("div", {
     className: Chunk552883.container,
@@ -450,15 +460,15 @@ function e_() {
   })
 }
 
-function ey(e) {
+function eE(e) {
   let {
     mobile: t,
     isPopout: n = false
   } = e;
-  return t ? (0, a.jsx)(e_, {}) : n ? (0, a.jsx)("div", {
-    className: ex.popoutContainer,
-    children: (0, a.jsx)(ev, {
+  return t ? (0, a.jsx)(eN, {}) : n ? (0, a.jsx)("div", {
+    className: eg.popoutContainer,
+    children: (0, a.jsx)(ey, {
       isPopout: true
     })
-  }) : (0, a.jsx)(ej, {})
+  }) : (0, a.jsx)(eC, {})
 }

@@ -40,7 +40,7 @@ let g = Chunk647438.memo(function(e) {
     return e
   }({}, f.nl), {
     audio: y
-  } = (0, u.p)(), b = null != y, v = l.useRef(null), x = l.useRef(null), w = l.useRef(null), [j, _] = l.useState(0), [N, C] = l.useState(0), [S, O] = l.useState(0), [E, P] = l.useState(false), [I, k] = l.useState(false), [M, Z] = l.useState(false), [T, F] = l.useState(0), [D, R] = l.useState(false), B = l.useMemo(() => T / p.fineTuningScale, [p.fineTuningScale, T]);
+  } = (0, u.p)(), b = null != y, v = l.useRef(null), x = l.useRef(null), j = l.useRef(null), [w, _] = l.useState(0), [N, C] = l.useState(0), [S, O] = l.useState(0), [E, P] = l.useState(false), [I, Z] = l.useState(false), [k, M] = l.useState(false), [T, F] = l.useState(0), [D, R] = l.useState(false), B = l.useMemo(() => T / p.fineTuningScale, [p.fineTuningScale, T]);
   l.useEffect(() => {
     if (null == y) return;
     let e = y.duration * s.Z.Millis.SECOND;
@@ -52,26 +52,26 @@ let g = Chunk647438.memo(function(e) {
           P(true);
           break;
         case 1:
-          k(true);
+          Z(true);
           break;
         case 2:
-          Z(true)
+          M(true)
       }
     }, [t]),
-    A = l.useCallback(e => {
+    U = l.useCallback(e => {
       switch (e) {
         case 0:
           P(false);
           break;
         case 1:
-          k(false);
+          Z(false);
           break;
         case 2:
-          Z(false)
+          M(false)
       }
       R(false)
     }, []),
-    U = l.useCallback(e => {
+    A = l.useCallback(e => {
       if (null == y || !E) return;
       let n = parseInt(e.target.value),
         t = n > S ? S : n;
@@ -80,36 +80,36 @@ let g = Chunk647438.memo(function(e) {
     z = l.useCallback(e => {
       if (null == y || !I) return;
       let n = parseInt(e.target.value);
-      n < j ? (i((0, c.my)(j)), C(j)) : n > S ? (i((0, c.my)(S)), C(S)) : (i((0, c.my)(n)), C(n))
-    }, [y, i, S, I, j]),
+      n < w ? (i((0, c.my)(w)), C(w)) : n > S ? (i((0, c.my)(S)), C(S)) : (i((0, c.my)(n)), C(n))
+    }, [y, i, S, I, w]),
     L = l.useCallback(e => {
-      if (null == y || !M) return;
+      if (null == y || !k) return;
       let n = parseInt(e.target.value),
-        t = n > j ? n : j;
-      i((0, c.my)(j)), C(j), O(t)
-    }, [y, i, M, j]);
+        t = n > w ? n : w;
+      i((0, c.my)(w)), C(w), O(t)
+    }, [y, i, k, w]);
   return l.useEffect(() => {
     null != g && b && g({
-      startPositionMs: j,
+      startPositionMs: w,
       endPositionMs: S,
       playheadPositionMs: N
     })
-  }, [j, S, g, b, N]), l.useEffect(() => {
+  }, [w, S, g, b, N]), l.useEffect(() => {
     let e;
     if (null != y) return n && (e = setInterval(() => {
-      y.currentTime < (0, c.my)(S) ? y.currentTime >= (0, c.my)(N) && C(y.currentTime * s.Z.Millis.SECOND) : (t((0, c.my)(j)), C(j))
+      y.currentTime < (0, c.my)(S) ? y.currentTime >= (0, c.my)(N) && C(y.currentTime * s.Z.Millis.SECOND) : (t((0, c.my)(w)), C(w))
     }, 16)), () => {
       clearInterval(e)
     }
-  }, [y, S, t, N, n, j]), l.useEffect(() => {
+  }, [y, S, t, N, n, w]), l.useEffect(() => {
     if (p.fineTuningDelay <= 0) return;
     let e = setTimeout(() => {
-      E && j == j && false === D ? R(j) : M && S == S && false === D ? R(S) : I && N == N && false === D && R(N)
+      E && w == w && false === D ? R(w) : k && S == S && false === D ? R(S) : I && N == N && false === D && R(N)
     }, p.fineTuningDelay);
     return () => {
       clearTimeout(e)
     }
-  }, [p.fineTuningDelay, M, S, D, I, N, E, j]), (0, a.jsxs)("div", {
+  }, [p.fineTuningDelay, k, S, D, I, N, E, w]), (0, a.jsxs)("div", {
     className: r()(m.timeline, {
       [m.initialized]: b
     }),
@@ -123,13 +123,13 @@ let g = Chunk647438.memo(function(e) {
           type: "range",
           min: (0, c.ao)(D, B, T),
           max: (0, c.MN)(D, B, T),
-          value: j,
-          onChange: U,
+          value: w,
+          onChange: A,
           onMouseDown: e => H(e, 0),
-          onMouseUp: () => A(0),
+          onMouseUp: () => U(0),
           disabled: !b || h
         }), (0, a.jsx)("input", {
-          ref: w,
+          ref: j,
           className: r()(m.rangeHandle, m.rangeHandleEnd),
           type: "range",
           min: (0, c.ao)(D, B, T),
@@ -137,7 +137,7 @@ let g = Chunk647438.memo(function(e) {
           value: S,
           onChange: L,
           onMouseDown: e => H(e, 2),
-          onMouseUp: () => A(2),
+          onMouseUp: () => U(2),
           disabled: !b || h
         })]
       }), (0, a.jsx)("div", {
@@ -151,7 +151,7 @@ let g = Chunk647438.memo(function(e) {
           value: N,
           onChange: z,
           onMouseDown: e => H(e, 1),
-          onMouseUp: () => A(1),
+          onMouseUp: () => U(1),
           disabled: !b || h
         })
       })]
@@ -160,10 +160,10 @@ let g = Chunk647438.memo(function(e) {
       children: [(0, a.jsxs)("div", {
         className: r()(m.handleFrame, {
           [m.startDragging]: E,
-          [m.endDragging]: M
+          [m.endDragging]: k
         }),
         style: {
-          left: "".concat((0, c.pN)(j, D, B, T), "%"),
+          left: "".concat((0, c.pN)(w, D, B, T), "%"),
           right: "".concat((0, c.kD)(S, D, B, T), "%")
         },
         children: [(0, a.jsx)("div", {
@@ -193,7 +193,7 @@ let g = Chunk647438.memo(function(e) {
         className: m.playheadTrack,
         children: (0, a.jsx)("div", {
           className: r()(m.playhead, {
-            [m.dragging]: I || E || M || n
+            [m.dragging]: I || E || k || n
           }),
           style: {
             left: "".concat((0, c.pN)(N, D, B, T), "%")

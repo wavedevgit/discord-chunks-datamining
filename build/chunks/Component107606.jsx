@@ -1,4 +1,4 @@
-/** Chunk was on 85991 **/
+/** Chunk was on 86478 **/
 /** chunk id: 107606, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -29,12 +29,12 @@ function g() {
     S = N.backgroundGradientPresetId,
     O = (0, Chunk442837.e7)([Chunk1870.Z], () => Chunk1870.Z.purchases),
     T = (0, Chunk884697.Ad)(O),
-    k = (0, Chunk884697.jT)(O),
-    P = null == C || null == (e = C.avatarDecoration) ? true : module.skuId,
-    R = null == C || null == (n = C.collectibles) || null == (t = require.nameplate) ? true : exports.skuId,
-    w = null != P && null != (v = T.find(e => e.skuId === P)) ? v : null,
-    I = null != R && null != (j = k.find(e => e.skuId === R)) ? j : null,
-    Z = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == w ? true : w.skuId)),
+    P = (0, Chunk884697.jT)(O),
+    k = null == C || null == (e = C.avatarDecoration) ? true : module.skuId,
+    w = null == C || null == (n = C.collectibles) || null == (t = require.nameplate) ? true : exports.skuId,
+    R = null != k && null != (v = T.find(e => e.skuId === k)) ? v : null,
+    I = null != w && null != (j = P.find(e => e.skuId === w)) ? j : null,
+    Z = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == R ? true : R.skuId)),
     A = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == I ? true : I.skuId)),
     D = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.fontSize),
     L = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.messageGroupSpacing),

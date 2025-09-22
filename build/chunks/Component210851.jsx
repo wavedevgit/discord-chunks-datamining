@@ -1,75 +1,67 @@
-/** Chunk was on web.js **/
-/** chunk id: 210851, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 10150 **/
+/** chunk id: 210851, original params: e,t,s (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => o
 }), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk763610 = require("./763610.jsx"),
-  Chunk301188 = require("./301188.js");
-
-function l(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function c(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      l(e, t, n[t])
-    })
-  }
-  return e
-}
-let u = function(e) {
-  var t, n;
+  Chunk188764 = require("./188764.js");
+let o = function(e) {
+  var t, s;
   let {
-    assetKey: l,
-    filters: u,
-    initialValue: d,
-    onFileChange: f,
-    title: _
-  } = e, [p, h] = i.useState(null), m = i.useRef(null);
-
-  function g(e) {
-    if (h(null != e ? e : null), null == e) return;
-    let t = URL.createObjectURL(e);
-    m.current = t;
-    let n = new URL(t);
-    n.searchParams.append("mimetype", e.type), n.searchParams.append("name", e.name), f(l, n.toString())
-  }
-  return i.useEffect(() => () => {
+    assetKey: o,
+    filters: c,
+    initialValue: u,
+    onFileChange: d,
+    title: g
+  } = e, [f, h] = r.useState(null), m = r.useRef(null);
+  return r.useEffect(() => () => {
     null != m.current && URL.revokeObjectURL(m.current)
-  }, []), (0, r.jsxs)(a.xJW, {
-    children: [(0, r.jsx)(a.vwX, {
-      children: (0, r.jsxs)("div", {
-        className: s.headingWithTooltip,
-        children: [_, (0, r.jsx)(a.ua7, {
-          text: "Supported asset formats: ".concat(u.join(", ")),
-          children: e => (0, r.jsx)(a.d3s, c({
+  }, []), (0, n.jsxs)(a.xJW, {
+    children: [(0, n.jsx)(a.vwX, {
+      children: (0, n.jsxs)("div", {
+        className: l.headingWithTooltip,
+        children: [g, (0, n.jsx)(a.ua7, {
+          text: "Supported asset formats: ".concat(c.join(", ")),
+          children: e => (0, n.jsx)(a.d3s, function(e) {
+            for (var t = 1; t < arguments.length; t++) {
+              var s = null != arguments[t] ? arguments[t] : {},
+                n = Object.keys(s);
+              "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(s).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(s, e).enumerable
+              }))), n.forEach(function(t) {
+                var n;
+                n = s[t], t in e ? Object.defineProperty(e, t, {
+                  value: n,
+                  enumerable: true,
+                  configurable: true,
+                  writable: true
+                }) : e[t] = n
+              })
+            }
+            return e
+          }({
             size: "xs"
           }, e))
         })]
       })
-    }), (0, r.jsx)(o.Z, {
-      filename: null != (n = null != (t = null == p ? true : p.name) ? t : d) ? n : "",
+    }), (0, n.jsx)(i.Z, {
+      filename: null != (s = null != (t = null == f ? true : f.name) ? t : u) ? s : "",
       filters: [{
-        name: _,
-        extensions: u
+        name: g,
+        extensions: c
       }],
       buttonText: "Browse",
       placeholder: "Select an asset",
-      onFileSelect: g
+      onFileSelect: function(e) {
+        if (h(null != e ? e : null), null == e) return;
+        let t = URL.createObjectURL(e);
+        m.current = t;
+        let s = new URL(t);
+        s.searchParams.append("mimetype", e.type), s.searchParams.append("name", e.name), d(o, s.toString())
+      }
     })]
   })
 }

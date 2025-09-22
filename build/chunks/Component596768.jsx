@@ -1,4 +1,4 @@
-/** Chunk was on 85991 **/
+/** Chunk was on 86478 **/
 /** chunk id: 596768, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T
@@ -140,25 +140,25 @@ function T() {
     renderSelectedTab: v
   } = (0, Chunk621060.ZP)({
     tabs: O
-  }, []), T = (0, Chunk442837.e7)([Chunk120816.Z], () => Chunk120816.Z.trackTriggers), k = Chunk647438.useCallback(e => {
+  }, []), T = (0, Chunk442837.e7)([Chunk120816.Z], () => Chunk120816.Z.trackTriggers), P = Chunk647438.useCallback(e => {
     p.Z.dispatch({
       type: "SET_TRACK_TRIGGERS",
       enabled: e
     })
-  }, []), P = T ? "Stop Tracking" : "Start Tracking";
+  }, []), k = T ? "Stop Tracking" : "Start Tracking";
   return (0, Chunk951288.jsxs)("div", {
     ref: require,
     className: l()(Chunk451429.panel, Chunk599832.panel),
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk599832.toolbar,
       children: [(0, Chunk951288.jsx)(Chunk681715.u, {
-        text: P,
+        text: k,
         children: (0, Chunk951288.jsx)(Chunk481060.hU, {
           size: "sm",
           variant: T ? "active" : "primary",
           icon: T ? Chunk481060.fpf : Chunk481060.o1U,
-          "aria-label": P,
-          onClick: () => k(!T)
+          "aria-label": k,
+          onClick: () => P(!T)
         })
       }), (0, Chunk951288.jsx)(Chunk481060.E1j, {
         size: "sm",

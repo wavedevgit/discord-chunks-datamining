@@ -1,4 +1,4 @@
-/** Chunk was on 85991 **/
+/** Chunk was on 86478 **/
 /** chunk id: 789654, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O,
@@ -88,7 +88,7 @@ function O() {
       tab: E,
       scales: O
     } = exports,
-    k = Chunk647438.useMemo(() => {
+    P = Chunk647438.useMemo(() => {
       let t = Object.entries(Chunk246992).map(t => {
           let [n, a] = t, {
             colors: r,
@@ -230,7 +230,7 @@ function O() {
     }), (0, Chunk951288.jsx)(Chunk352206.ql, {
       children: (0, Chunk951288.jsx)("style", {
         id: "devtools-color-overrides",
-        children: k
+        children: P
       })
     })]
   })
@@ -324,7 +324,7 @@ function T(e) {
         let s = E(l.color),
           c = l.opacity,
           d = v.jC[t][i];
-        return (0, a.jsx)(k, {
+        return (0, a.jsx)(P, {
           title: N(t),
           subtitle: 1 === d.opacity ? E(d.raw) : "".concat(E(d.raw), " @ ").concat(100 * d.opacity, "%"),
           highlight: r.highlight,
@@ -431,7 +431,7 @@ function T(e) {
       className: j.rawOverrides,
       children: Object.entries(s).map(e => {
         let [t, r] = e;
-        return (0, a.jsxs)(k, {
+        return (0, a.jsxs)(P, {
           title: t,
           subtitle: u.b[t].hex,
           highlight: r.highlight,
@@ -503,7 +503,7 @@ function T(e) {
   })
 }
 
-function k(e) {
+function P(e) {
   let {
     title: t,
     subtitle: n,

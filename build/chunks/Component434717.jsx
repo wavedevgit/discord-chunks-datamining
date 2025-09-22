@@ -1,5 +1,5 @@
-/** Chunk was on 96861 **/
-/** chunk id: 434717, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 76418 **/
+/** chunk id: 434717, original params: e,a,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
 });
@@ -10,12 +10,12 @@ var Chunk793030 = require("./793030.js"),
 
 function o(e) {
   let {
-    quest: t
+    quest: a
   } = e;
-  return (0, r.jsx)(a.X6q, {
+  return (0, t.jsx)(s.X6q, {
     variant: "heading-lg/bold",
     color: "header-primary",
     className: i.heading,
-    children: t.config.messages.questName
+    children: a.config.messages.questName
   })
 }

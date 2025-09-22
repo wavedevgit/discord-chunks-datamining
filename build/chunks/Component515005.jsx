@@ -141,7 +141,7 @@ let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
             }), (0, c.ZDy)(async () => {
               let {
                 default: t
-              } = await Promise.all([n.e("93626"), n.e("24291")]).then(n.bind(n, 136735));
+              } = await Promise.all([n.e("93626"), n.e("97162")]).then(n.bind(n, 136735));
               return n => (0, r.jsx)(t, T({
                 guildId: e.guild_id
               }, n))

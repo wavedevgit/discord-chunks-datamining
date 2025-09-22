@@ -1,5 +1,5 @@
-/** Chunk was on 96861 **/
-/** chunk id: 158040, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 41023 **/
+/** chunk id: 158040, original params: e,n,a (module,exports,require) **/
 require.d(exports, {
   T: () => s
 });
@@ -10,15 +10,15 @@ var Chunk951288 = require("./951288.js"),
 
 function s(e) {
   let {
-    rewardName: t
+    rewardName: n
   } = e;
-  return (0, r.jsx)(a.Text, {
+  return (0, t.jsx)(i.Text, {
     variant: "text-xs/medium",
-    className: o.rewardPill,
-    children: i.intl.format(i.t.loyTio, {
-      rewardName: t,
-      verticalDivider: () => (0, r.jsx)("div", {
-        className: o.divider
+    className: l.rewardPill,
+    children: r.intl.format(r.t.loyTio, {
+      rewardName: n,
+      verticalDivider: () => (0, t.jsx)("div", {
+        className: l.divider
       })
     })
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 85991 **/
+/** Chunk was on 86478 **/
 /** chunk id: 500949, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $R: () => K,
@@ -17,7 +17,7 @@ require.d(exports, {
   h9: () => es,
   iw: () => en,
   jC: () => V,
-  jQ: () => z,
+  jQ: () => B,
   lT: () => q,
   rd: () => ed,
   t4: () => ec,
@@ -118,11 +118,11 @@ let G = {
     XYZ_D50: Chunk341901.Z,
     XYZ_D65: Chunk856308.Z
   },
-  z = Object.fromEntries(Object.keys(G).map(e => [e, e]));
-Object.values(G).forEach(e => w.Z.register(e));
+  B = Object.fromEntries(Object.keys(G).map(e => [e, e]));
+Object.values(G).forEach(e => R.Z.register(e));
 let {
-  SemanticColors: B
-} = Chunk521904.V, V = B, H = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
+  SemanticColors: z
+} = Chunk521904.V, V = z, H = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
 
 function W(e, t) {
   let [n, a] = i.useState(() => {

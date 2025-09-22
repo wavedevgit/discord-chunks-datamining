@@ -1,7 +1,7 @@
-/** Chunk was on 96861 **/
-/** chunk id: 515108, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 76418 **/
+/** chunk id: 515108, original params: e,a,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => l
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -9,33 +9,33 @@ var Chunk481060 = require("./481060.js"),
   Chunk434717 = require("./434717.jsx"),
   Chunk782034 = require("./782034.js");
 
-function s(e) {
+function l(e) {
   let {
-    quest: t,
+    quest: a,
     transitionState: n,
-    onClose: s,
-    rewardContent: l
+    onClose: l,
+    rewardContent: r
   } = e;
-  return (0, r.jsxs)(a.Y0X, {
+  return (0, t.jsxs)(s.Y0X, {
     "data-migration-pending": true,
     transitionState: n,
-    size: a.CgR.DYNAMIC,
+    size: s.CgR.DYNAMIC,
     className: o.modal,
     parentComponent: "QuestRewardV2ModalBase",
-    children: [(0, r.jsx)(a.olH, {
+    children: [(0, t.jsx)(s.olH, {
       "data-migration-pending": true,
       className: o.closeButton,
-      onClick: s,
+      onClick: l,
       withCircleBackground: true
-    }), (0, r.jsxs)("div", {
+    }), (0, t.jsxs)("div", {
       className: o.modalContent,
-      children: [(0, r.jsx)("div", {
+      children: [(0, t.jsx)("div", {
         className: o.leftPanel,
-        children: l
-      }), (0, r.jsx)("div", {
+        children: r
+      }), (0, t.jsx)("div", {
         className: o.rightPanel,
-        children: (0, r.jsx)(i.Z, {
-          quest: t
+        children: (0, t.jsx)(i.Z, {
+          quest: a
         })
       })]
     })]

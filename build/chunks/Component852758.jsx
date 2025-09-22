@@ -1,4 +1,4 @@
-/** Chunk was on 85991 **/
+/** Chunk was on 86478 **/
 /** chunk id: 852758, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -65,7 +65,7 @@ function O() {
   } = (0, Chunk442837.cj)([Chunk23434.Z, Chunk210887.Z], () => ({
     action: Chunk23434.Z.getAction(),
     theme: Chunk210887.Z.theme
-  })), O = Chunk1964.Z.getVerificationTypes(module), [T, k] = Chunk647438.useState(0), P = (0, Chunk110924.Z)(O);
+  })), O = Chunk1964.Z.getVerificationTypes(module), [T, P] = Chunk647438.useState(0), k = (0, Chunk110924.Z)(O);
   (0, Chunk213609.Z)({
     type: Chunk990547.ImpressionTypes.MODAL,
     name: Chunk990547.ImpressionNames.USER_ACTION_REQUIRED,
@@ -74,7 +74,7 @@ function O() {
       verification_types: O
     }
   }, {}, [O.toString()]);
-  let R = () => {
+  let w = () => {
     (0, Chunk809206.FD)(), (0, Chunk481060.ZDy)(async () => {
       let {
         default: e
@@ -88,7 +88,7 @@ function O() {
   return Chunk647438.useEffect(() => (Chunk714338.Z.disable(), () => {
     Chunk714338.Z.enable()
   }), []), Chunk647438.useEffect(() => {
-    (null == P ? true : P[0]) === Chunk981631.PUi.PHONE && (null == O ? true : O[0]) === Chunk981631.PUi.EMAIL && (0, Chunk481060.ZDy)(async () => {
+    (null == k ? true : k[0]) === Chunk981631.PUi.PHONE && (null == O ? true : O[0]) === Chunk981631.PUi.EMAIL && (0, Chunk481060.ZDy)(async () => {
       let {
         default: e
       } = await Promise.resolve().then(require.bind(require, 468026));
@@ -100,9 +100,9 @@ function O() {
     }, {
       modalKey: Chunk308569.HR,
       Layer: Chunk429142.ZP,
-      onCloseCallback: R
+      onCloseCallback: w
     })
-  }, [O, P]), (0, Chunk951288.jsx)(Chunk762756.Z, {
+  }, [O, k]), (0, Chunk951288.jsx)(Chunk762756.Z, {
     types: O,
     captchaKey: T,
     onCaptchaVerify: e => {
@@ -114,12 +114,12 @@ function O() {
         oldFormErrors: true,
         rejectWithError: true
       }).then(d.xf, () => {
-        k(e => e + 1)
+        P(e => e + 1)
       })
     },
     theme: exports,
     onClick: e => {
-      e === y.PUi.EMAIL_OR_PHONE || e === y.PUi.EMAIL || e === y.PUi.REVERIFY_EMAIL ? R() : (0, o.ZDy)(async () => {
+      e === y.PUi.EMAIL_OR_PHONE || e === y.PUi.EMAIL || e === y.PUi.REVERIFY_EMAIL ? w() : (0, o.ZDy)(async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 607018));

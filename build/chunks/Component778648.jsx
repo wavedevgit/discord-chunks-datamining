@@ -1,4 +1,4 @@
-/** Chunk was on 85991 **/
+/** Chunk was on 86478 **/
 /** chunk id: 778648, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => L
@@ -90,12 +90,12 @@ let L = function() {
       label: e.name
     })),
     [U, F] = Chunk647438.useState(M.length > 0 ? M[0].value : null),
-    [G, z] = Chunk647438.useState(""),
-    [B, V] = Chunk647438.useState({
+    [G, B] = Chunk647438.useState(""),
+    [z, V] = Chunk647438.useState({
       plan_id: Chunk474936.Xh.PREMIUM_MONTH_TIER_2,
       gift: "true"
     }),
-    H = "true" !== B.gift && null != L,
+    H = "true" !== z.gift && null != L,
     [W, K] = Chunk647438.useState(M.length > 0 ? M[0].value : null),
     {
       analyticsLocations: q
@@ -223,7 +223,7 @@ let L = function() {
             children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
               placeholder: "Promotion Code",
               value: G,
-              onChange: e => z(e)
+              onChange: e => B(e)
             }), (0, Chunk951288.jsx)(Chunk481060.ua7, {
               text: "Need Promotion Code",
               shouldShow: G.length < 1,
@@ -239,7 +239,7 @@ let L = function() {
                   onMouseEnter: t,
                   onMouseLeave: n,
                   onClick: () => {
-                    window.open(R.Z5c.BILLING_PROMOTION_REDEMPTION(G))
+                    window.open(w.Z5c.BILLING_PROMOTION_REDEMPTION(G))
                   }
                 })
               }
@@ -254,7 +254,7 @@ let L = function() {
           }), (0, Chunk951288.jsxs)("div", {
             className: Chunk443582.formItem,
             children: [(0, Chunk951288.jsx)(Chunk481060.q4e, {
-              value: B.plan_id,
+              value: z.plan_id,
               options: [{
                 value: Chunk474936.Xh.PREMIUM_MONTH_TIER_2,
                 label: "Nitro"
@@ -270,7 +270,7 @@ let L = function() {
               })),
               popoutLayerContext: Chunk246992.O$
             }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
-              value: B.gift,
+              value: z.gift,
               options: [{
                 value: "true",
                 label: "Gift"
@@ -297,7 +297,7 @@ let L = function() {
                   onMouseEnter: t,
                   disabled: H,
                   onClick: () => {
-                    window.open(R.Z5c.BILLING_PREMIUM_SUBSCRIBE + "?" + i.stringify(Z({}, B)))
+                    window.open(w.Z5c.BILLING_PREMIUM_SUBSCRIBE + "?" + i.stringify(Z({}, z)))
                   }
                 })
               }

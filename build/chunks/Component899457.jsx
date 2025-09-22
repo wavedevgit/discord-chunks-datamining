@@ -1,26 +1,23 @@
-/** Chunk was on web.js **/
-/** chunk id: 899457, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 10150 **/
+/** chunk id: 899457, original params: e,t,s (module,exports,require) **/
 require.d(exports, {
-  Z: () => o,
-  a: () => a
+  Z: () => l,
+  a: () => i
 });
-var Chunk951288 = require("./951288.js");
+var n, Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
-  a = function(e) {
-    return e[e.UNENROLLED = 0] = "UNENROLLED", e[e.ENROLLED = 1] = "ENROLLED", e[e.COMPLETED_25 = 2] = "COMPLETED_25", e[e.COMPLETED_50 = 3] = "COMPLETED_50", e[e.COMPLETED_75 = 4] = "COMPLETED_75", e[e.COMPLETED_100 = 5] = "COMPLETED_100", e[e.CLAIMED = 6] = "CLAIMED", e
-  }({});
-let o = function(e) {
+  i = ((n = {})[n.UNENROLLED = 0] = "UNENROLLED", n[n.ENROLLED = 1] = "ENROLLED", n[n.COMPLETED_25 = 2] = "COMPLETED_25", n[n.COMPLETED_50 = 3] = "COMPLETED_50", n[n.COMPLETED_75 = 4] = "COMPLETED_75", n[n.COMPLETED_100 = 5] = "COMPLETED_100", n[n.CLAIMED = 6] = "CLAIMED", n);
+let l = function(e) {
   let {
     onChange: t,
-    value: n
+    value: s
   } = e;
-  return (0, r.jsxs)(i.xJW, {
-    children: [(0, r.jsx)(i.vwX, {
+  return (0, r.jsxs)(a.xJW, {
+    children: [(0, r.jsx)(a.vwX, {
       children: "User State"
-    }), (0, r.jsx)(i.R94, {
-      children: (0, r.jsx)(i.PhF, {
+    }), (0, r.jsx)(a.R94, {
+      children: (0, r.jsx)(a.PhF, {
         "aria-label": "User State",
         options: [{
           label: "Unenrolled",
@@ -44,7 +41,7 @@ let o = function(e) {
           label: "Claimed",
           value: 6
         }],
-        isSelected: e => e === n,
+        isSelected: e => e === s,
         select: t,
         serialize: String
       })

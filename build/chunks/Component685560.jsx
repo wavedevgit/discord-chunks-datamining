@@ -1,7 +1,7 @@
-/** Chunk was on 85991 **/
+/** Chunk was on 86478 **/
 /** chunk id: 685560, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => k
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk913527 = require("./913527.js"),
@@ -53,14 +53,14 @@ async function T(e, t, n) {
     rejectWithError: true
   }))), (0, d.C0)(e), (0, x.BN)(e, true)
 }
-async function k(e) {
+async function P(e) {
   await s.tn.post({
     url: _.ANM.SEND_POWERUPS_SYSTEM_MESSAGE(e),
     rejectWithError: true
   })
 }
 
-function P() {
+function k() {
   let e = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
     t = (0, Chunk442837.e7)([Chunk430824.Z], () => {
       var t;
@@ -186,7 +186,7 @@ function P() {
         variant: "primary",
         text: "Send System Message",
         onClick: () => {
-          k(module)
+          P(module)
         }
       })]
     }), (0, Chunk951288.jsx)(Chunk481060.zxk, {

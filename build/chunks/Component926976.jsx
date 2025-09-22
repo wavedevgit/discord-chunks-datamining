@@ -1,4 +1,4 @@
-/** Chunk was on 85991 **/
+/** Chunk was on 86478 **/
 /** chunk id: 926976, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => A
@@ -48,7 +48,7 @@ let T = [{
   }
 }];
 
-function k(e) {
+function P(e) {
   let {
     children: t
   } = e;
@@ -60,7 +60,7 @@ function k(e) {
   })
 }
 
-function P(e) {
+function k(e) {
   let {
     name: t,
     children: n,
@@ -92,8 +92,8 @@ function P(e) {
     })]
   })
 }
-let R = new Set(["client_performance_cpu", "client_performance_memory"]),
-  w = [{
+let w = new Set(["client_performance_cpu", "client_performance_memory"]),
+  R = [{
     id: "details",
     name: "Details",
     group: Chunk621060.v0.NONE,
@@ -182,9 +182,9 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
               children: i
             })
           })]
-        }), (0, a.jsx)(k, {
+        }), (0, a.jsx)(P, {
           children: Object.entries(n).map(e => {
-            let [n, r] = e, i = R.has(n) ? ((e, t, n) => {
+            let [n, r] = e, i = w.has(n) ? ((e, t, n) => {
               let a = e.filter(e => e.event === t);
               if (0 === a.length) return {
                 average: null,
@@ -202,7 +202,7 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
               }
             })(c, t, n) : null;
             return (0, a.jsxs)("div", {
-              children: [(0, a.jsx)(P, {
+              children: [(0, a.jsx)(k, {
                 name: "".concat(n, ":"),
                 copyValue: {
                   [n]: r || null
@@ -213,7 +213,7 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
                   className: S.emptyProperty,
                   children: "null"
                 })
-              }, n), null !== i && null !== i.average && (0, a.jsx)(P, {
+              }, n), null !== i && null !== i.average && (0, a.jsx)(k, {
                 name: "".concat(n, "_avg:"),
                 copyValue: {
                   [n]: r || null
@@ -284,10 +284,10 @@ function A() {
     [b, g] = Chunk647438.useState(true),
     _ = Chunk594174.find(e => e.key === b),
     {
-      TabBar: k,
-      renderSelectedTab: P
+      TabBar: P,
+      renderSelectedTab: k
     } = (0, Chunk621060.ZP)({
-      tabs: w
+      tabs: R
     }, []);
   return (0, Chunk951288.jsxs)("div", {
     ref: module,
@@ -340,7 +340,7 @@ function A() {
       className: Chunk599832.subPanel,
       minHeight: 100,
       initialHeight: null != module.current ? module.current.clientHeight / 2 : 300,
-      children: [(0, Chunk951288.jsx)(k, {}), P({
+      children: [(0, Chunk951288.jsx)(P, {}), k({
         loggedEvent: Chunk257785,
         onClose: () => Chunk55935(true),
         filteredEvents: Chunk594174

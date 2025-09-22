@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk239336 = require("./239336.js");
 
-function x(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var l = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(l);
@@ -39,7 +39,7 @@ function x(e) {
   return e
 }
 
-function h(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var l = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -63,17 +63,17 @@ function y(e) {
     shouldUpdateBothEmojiFields: S = false,
     setEmojiId: O,
     setEmojiName: N
-  } = e, P = (0, p.Z)({
+  } = e, C = (0, p.Z)({
     emojiId: E,
     emojiName: w
-  }), C = (0, r.e7)([g.ZP], () => null != l ? g.ZP.getDefaultChannel(l) : null), k = i.useRef(null), D = (0, d.Z)(k), Z = () => {
+  }), P = (0, r.e7)([g.ZP], () => null != l ? g.ZP.getDefaultChannel(l) : null), k = i.useRef(null), D = (0, d.Z)(k), Z = () => {
     N(true), O(true)
   }, R = e => {
     e.stopPropagation(), Z()
-  }, _ = i.useMemo(() => {
+  }, T = i.useMemo(() => {
     let e = null != E && "" !== E,
       t = null != w && "" !== w,
-      l = null != P && "" !== P,
+      l = null != C && "" !== C,
       n = t && !Number.isNaN(parseInt(w)) && !l && !e;
     return {
       hasEmojiId: e,
@@ -81,7 +81,7 @@ function y(e) {
       hasEmojiDisplayName: l,
       isDeletedCustomEmoji: n
     }
-  }, [E, w, P]), T = !_.isDeletedCustomEmoji && _.hasEmojiDisplayName;
+  }, [E, w, C]), _ = !T.isDeletedCustomEmoji && T.hasEmojiDisplayName;
   return (0, n.jsx)("div", {
     className: t,
     children: (0, n.jsx)(a.N, {
@@ -108,29 +108,29 @@ function y(e) {
               Z(), i ? N(null == l ? true : l.optionallyDiverseSequence) : (S && N(null == l ? true : l.name), O(null == l ? true : l.id)), n && t()
             },
             guildId: l,
-            channel: C
+            channel: P
           })
         },
         children: (e, t) => {
           let {
             isShown: l
           } = t;
-          return (0, n.jsxs)(s.U, h(x({}, e), {
-            className: b.emojiInput,
+          return (0, n.jsxs)(s.U, b(h({}, e), {
+            className: x.emojiInput,
             ref: k,
             children: [(0, n.jsx)(m.Z, {
               active: l,
               tabIndex: 0,
-              renderButtonContents: !_.isDeletedCustomEmoji && (_.hasEmojiId || _.hasEmojiName) ? () => (0, n.jsx)(u.Z, {
+              renderButtonContents: !T.isDeletedCustomEmoji && (T.hasEmojiId || T.hasEmojiName) ? () => (0, n.jsx)(u.Z, {
                 emojiName: w,
                 emojiId: E
               }) : null
             }), (0, n.jsx)(o.Text, {
               variant: "text-md/normal",
               lineClamp: 1,
-              color: T ? "text-default" : "text-muted",
-              children: T ? ":".concat(P, ":") : v.intl.string(v.t.QTK0TE)
-            }), T && D && (0, n.jsx)(c.Z, h(x({}, e), {
+              color: _ ? "text-default" : "text-muted",
+              children: _ ? ":".concat(C, ":") : v.intl.string(v.t.QTK0TE)
+            }), _ && D && (0, n.jsx)(c.Z, b(h({}, e), {
               onClick: R
             }))]
           }))

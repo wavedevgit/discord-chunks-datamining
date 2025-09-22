@@ -1,4 +1,4 @@
-/** Chunk was on 85991 **/
+/** Chunk was on 86478 **/
 /** chunk id: 633001, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ej
@@ -129,16 +129,16 @@ function X(e) {
     color: u.zx.Colors.LINK,
     size: u.zx.Sizes.MIN,
     onClick: function() {
-      (0, R.JG)(t, () => i(true))
+      (0, w.JG)(t, () => i(true))
     },
     className: V.copyId,
-    children: ["Application Id: ", t, " ", n ? B.intl.string(B.t["t5VZ8/"]) : null]
+    children: ["Application Id: ", t, " ", n ? z.intl.string(z.t["t5VZ8/"]) : null]
   })
 }
 let J = Chunk647438.memo(function(e) {
     let {
       trackedGame: t
-    } = e, n = (0, d.e7)([b.ZP], () => b.ZP.getGameOrTransformedSubgameForPID(t.pid)), r = (0, d.e7)([k.Z], () => k.Z.getGameForPID(t.pid)), i = (0, d.e7)([b.ZP], () => null == n ? null : b.ZP.getGameOverlayStatus(n));
+    } = e, n = (0, d.e7)([b.ZP], () => b.ZP.getGameOrTransformedSubgameForPID(t.pid)), r = (0, d.e7)([P.Z], () => P.Z.getGameForPID(t.pid)), i = (0, d.e7)([b.ZP], () => null == n ? null : b.ZP.getGameOverlayStatus(n));
     return (0, a.jsxs)("div", {
       className: V.panelGroup,
       children: [(0, a.jsx)(m.Text, {
@@ -239,7 +239,7 @@ let J = Chunk647438.memo(function(e) {
   $ = Chunk647438.memo(function(e) {
     let {
       pid: t
-    } = e, n = (0, d.cj)([P.default], () => P.default.getOverlayPIDStatuses()), r = (0, d.cj)([_.default], () => _.default.getTrackedGames()), i = (0, d.e7)([P.default], () => P.default.isInputLocked(t), [t]), l = (0, d.e7)([P.default], () => P.default.DEV_isInputLockedV3(t), [t]), s = (0, d.e7)([P.default], () => P.default.DEV_isInputLocked(t), [t]), o = (0, d.e7)([P.default], () => P.default.isReady(t), [t]);
+    } = e, n = (0, d.cj)([k.default], () => k.default.getOverlayPIDStatuses()), r = (0, d.cj)([_.default], () => _.default.getTrackedGames()), i = (0, d.e7)([k.default], () => k.default.isInputLocked(t), [t]), l = (0, d.e7)([k.default], () => k.default.DEV_isInputLockedV3(t), [t]), s = (0, d.e7)([k.default], () => k.default.DEV_isInputLocked(t), [t]), o = (0, d.e7)([k.default], () => k.default.isReady(t), [t]);
     return (0, a.jsxs)("div", {
       className: V.panelGroup,
       children: [(0, a.jsx)(m.Text, {
@@ -301,13 +301,13 @@ let J = Chunk647438.memo(function(e) {
   });
 
 function Q(e) {
-  let t, n = (t = Object.values((0, d.Wu)([T.Z], () => T.Z.getWidgetsForLayout(z.$S))), t.find(t => t.type === e));
+  let t, n = (t = Object.values((0, d.Wu)([T.Z], () => T.Z.getWidgetsForLayout(B.$S))), t.find(t => t.type === e));
   return [n, () => {
     if (null != n)(0, h.E9)(n.id);
     else {
       let t = q[e];
       if (null == t) return;
-      let n = t(z.$S);
+      let n = t(B.$S);
       (0, h.A4)(n)
     }
   }]
@@ -829,7 +829,7 @@ let eu = [{
     let {
       timestamp: t
     } = e;
-    return (0, w.vc)(o()(t), "h:mm:ss.SSS")
+    return (0, R.vc)(o()(t), "h:mm:ss.SSS")
   }
 }];
 
@@ -891,7 +891,7 @@ let ep = ["__webpack_require__", "fn"],
             children: [s, " (", c, ")", (0, a.jsx)(m.P3F, {
               tag: "span",
               className: V.copyEventButton,
-              onClick: () => (0, R.JG)(s),
+              onClick: () => (0, w.JG)(s),
               children: (0, a.jsx)(m.TIy, {
                 color: "currentColor",
                 size: "sm"
@@ -901,7 +901,7 @@ let ep = ["__webpack_require__", "fn"],
             icon: m.TIy,
             tooltip: "Copy all properties",
             onClick: () => {
-              (0, R.JG)(eh(r))
+              (0, w.JG)(eh(r))
             }
           }), (0, a.jsx)(g.Z.Icon, {
             icon: m.k$p,
@@ -915,8 +915,8 @@ let ep = ["__webpack_require__", "fn"],
             copyValue: f.toISOString(),
             children: (0, a.jsx)("time", {
               dateTime: f.toISOString(),
-              title: (0, w.vc)(f, "LLLL"),
-              children: (0, w.vc)(f, "L h:mm:ss.SSS")
+              title: (0, R.vc)(f, "LLLL"),
+              children: (0, R.vc)(f, "L h:mm:ss.SSS")
             })
           }), (0, a.jsx)(L.Z9, {
             name: "Log Type",
@@ -1001,7 +1001,7 @@ function eg() {
     tabs: ef
   }, []);
   (0, Chunk301801.BO)(Chunk594190, Chunk427860, Chunk352527, eb, [module]);
-  let k = Chunk647438.useCallback(e => {
+  let P = Chunk647438.useCallback(e => {
     c(e), p.Z.setModuleLogging(e)
   }, []);
   Chunk647438.useEffect(() => {
@@ -1013,7 +1013,7 @@ function eg() {
       clearTimeout(module)
     }
   }, []);
-  let [P, w] = Chunk647438.useState(false), I = Chunk647438.useRef(null), A = Chunk647438.useCallback(() => {
+  let [k, R] = Chunk647438.useState(false), I = Chunk647438.useRef(null), A = Chunk647438.useCallback(() => {
     (0, Chunk572004.JG)(JSON.stringify(module)), Chunk55935(true)
   }, [module]);
   return Chunk647438.useEffect(() => {
@@ -1034,7 +1034,7 @@ function eg() {
           className: Chunk454741.pollBreadcrumbs,
           children: [(0, Chunk951288.jsx)(Chunk755721.T2, {
             checked: o,
-            onChange: e => k(e)
+            onChange: e => P(e)
           }), (0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-md/normal",
             color: "currentColor",

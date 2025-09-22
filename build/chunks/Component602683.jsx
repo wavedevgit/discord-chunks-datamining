@@ -1,32 +1,29 @@
-/** Chunk was on web.js **/
-/** chunk id: 602683, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 10150 **/
+/** chunk id: 602683, original params: e,t,s (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => i
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js");
-let o = function(e) {
+let i = function(e) {
   let {
     assetKey: t,
-    initialValue: n,
-    onMessageChange: o,
-    title: s
-  } = e, [l, c] = i.useState("");
-
-  function u(e) {
-    c(e), o(t, e)
-  }
-  return i.useEffect(() => {
-    c(null != n ? n : "")
-  }, [n]), (0, r.jsxs)(a.xJW, {
-    children: [(0, r.jsx)(a.vwX, {
-      children: s
-    }), (0, r.jsx)(a.R94, {
-      children: (0, r.jsx)(a.oil, {
-        value: l,
-        onChange: u
+    initialValue: s,
+    onMessageChange: i,
+    title: l
+  } = e, [o, c] = r.useState("");
+  return r.useEffect(() => {
+    c(null != s ? s : "")
+  }, [s]), (0, n.jsxs)(a.xJW, {
+    children: [(0, n.jsx)(a.vwX, {
+      children: l
+    }), (0, n.jsx)(a.R94, {
+      children: (0, n.jsx)(a.oil, {
+        value: o,
+        onChange: function(e) {
+          c(e), i(t, e)
+        }
       })
     })]
   })

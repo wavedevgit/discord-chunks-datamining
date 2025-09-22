@@ -1,4 +1,4 @@
-/** Chunk was on 85991 **/
+/** Chunk was on 86478 **/
 /** chunk id: 17597, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -30,10 +30,10 @@ let C = function(e) {
     onClose: C,
     onComplete: N,
     dismissable: E
-  } = e, [S, O] = r.useState(l.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), T = r.useRef(S), [k, P] = (0, c.US)([S], true, true), R = r.useMemo(() => (0, i.Z)(), []), w = r.useRef(false);
+  } = e, [S, O] = r.useState(l.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), T = r.useRef(S), [P, k] = (0, c.US)([S], true, true), w = r.useMemo(() => (0, i.Z)(), []), R = r.useRef(false);
   r.useEffect(() => {
-    T.current = k
-  }, [k]);
+    T.current = P
+  }, [P]);
   let {
     loading: I,
     ageVerificationMethods: Z
@@ -43,15 +43,15 @@ let C = function(e) {
     O(l.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
   });
   return r.useLayoutEffect(() => () => {
-    if (w.current) return;
+    if (R.current) return;
     let e = T.current;
-    null != e && (w.current = true, m.Z.maybeOpenAgeVerificationUserFeedback({
+    null != e && (R.current = true, m.Z.maybeOpenAgeVerificationUserFeedback({
       location: "age_verification_get_started_modal",
       visibleContent: e
     }))
   }, []), r.useEffect(() => {
-    (0, x.lA)(R, x.d_.EXPRESSIVE_PRIMARY, n)
-  }, [R, n]), (0, a.jsx)(s.I, {
+    (0, x.lA)(w, x.d_.EXPRESSIVE_PRIMARY, n)
+  }, [w, n]), (0, a.jsx)(s.I, {
     transitionState: t,
     onClose: C,
     gradientColor: "blue",
@@ -63,7 +63,7 @@ let C = function(e) {
     title: j.intl.string(j.t.JHNunp),
     subtitle: j.intl.format(v.default.RpMIT0, {
       handleOnHelpUrlHook: () => {
-        p.Z.openUrl(h.Z.getArticleURL(g.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, x.x3)(R, x.d_.EXPRESSIVE_PRIMARY, x.sU.LEARN_MORE)
+        p.Z.openUrl(h.Z.getArticleURL(g.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, x.x3)(w, x.d_.EXPRESSIVE_PRIMARY, x.sU.LEARN_MORE)
       }
     }),
     actionBarInput: (0, a.jsx)(o.Avr, {
@@ -71,7 +71,7 @@ let C = function(e) {
       textVariant: "text-sm/medium",
       text: j.intl.string(j.t["2jxGen"]),
       onClick: () => {
-        (0, x.x3)(R, x.d_.EXPRESSIVE_PRIMARY, x.sU.LOG_OUT), (0, u.R)("age_verification_get_started_modal")
+        (0, x.x3)(w, x.d_.EXPRESSIVE_PRIMARY, x.sU.LOG_OUT), (0, u.R)("age_verification_get_started_modal")
       }
     }),
     children: (0, a.jsxs)(o.Kqy, {
@@ -127,7 +127,7 @@ let C = function(e) {
             title: t,
             description: n,
             buttonDisabled: I,
-            onButtonPress: () => r(R)
+            onButtonPress: () => r(w)
           }, t)
         })
       })]
