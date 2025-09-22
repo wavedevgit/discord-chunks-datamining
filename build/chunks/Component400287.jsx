@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk755721 = require("./755721.js"),
+  Chunk538534 = require("./538534.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -46,7 +46,7 @@ function b() {
         type: Chunk481060.R94.Types.DESCRIPTION,
         className: Chunk197571.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.TYnRkZ)
-      }), (0, Chunk951288.jsx)(Chunk755721.Gu, {
+      }), (0, Chunk951288.jsx)(Chunk538534.E, {
         options: [{
           name: Chunk388032.intl.string(Chunk388032.t["KFH/mZ"]),
           value: Chunk981631.A2N.ON_CLICK
@@ -57,7 +57,7 @@ function b() {
           name: Chunk388032.intl.string(Chunk388032.t.Pe1RbG),
           value: Chunk981631.A2N.ALWAYS
         }],
-        onChange: e => p.cC.updateSetting(e.value),
+        onChange: e => p.cC.updateSetting(e),
         value: b
       })]
     });

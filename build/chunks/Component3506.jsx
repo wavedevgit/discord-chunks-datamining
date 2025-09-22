@@ -11,7 +11,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk538534 = require("./538534.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk660216 = require("./660216.js"),
   Chunk13245 = require("./13245.js"),
@@ -182,7 +182,7 @@ function G(e) {
         })]
       }), (0, r.jsx)(U, {
         title: R.intl.string(R.t.dnvZSk),
-        children: (0, r.jsx)(c.Gu, {
+        children: (0, r.jsx)(c.E, {
           options: [{
             name: R.intl.string(R.t.YcOxtr),
             value: N.ipw.LARGE
@@ -190,17 +190,12 @@ function G(e) {
             name: R.intl.string(R.t.BKIKq6),
             value: N.ipw.SMALL
           }],
-          onChange: e => {
-            let {
-              value: t
-            } = e;
-            return f.Z.setAvatarSizeMode(t)
-          },
+          onChange: e => f.Z.setAvatarSizeMode(e),
           value: s
         })
       }), (0, r.jsx)(U, {
         title: R.intl.string(R.t.J0dpcH),
-        children: (0, r.jsx)(c.Gu, {
+        children: (0, r.jsx)(c.E, {
           options: [{
             name: R.intl.string(R.t.nBmDra),
             value: N.wC$.ALWAYS
@@ -211,17 +206,12 @@ function G(e) {
             name: R.intl.string(R.t.ekjlPD),
             value: N.wC$.NEVER
           }],
-          onChange: e => {
-            let {
-              value: t
-            } = e;
-            return f.Z.setDisplayNameMode(t)
-          },
+          onChange: e => f.Z.setDisplayNameMode(e),
           value: T
         })
       }), (0, r.jsx)(U, {
         title: R.intl.string(R.t.swsWWF),
-        children: (0, r.jsx)(c.Gu, {
+        children: (0, r.jsx)(c.E, {
           options: [{
             name: R.intl.string(R.t.nBmDra),
             value: N.OYC.ALWAYS
@@ -229,12 +219,7 @@ function G(e) {
             name: R.intl.string(R.t["2OvIZW"]),
             value: N.OYC.ONLY_WHILE_SPEAKING
           }],
-          onChange: e => {
-            let {
-              value: t
-            } = e;
-            return f.Z.setDisplayUserMode(t)
-          },
+          onChange: e => f.Z.setDisplayUserMode(e),
           value: A
         })
       }), k && (0, r.jsx)(U, {

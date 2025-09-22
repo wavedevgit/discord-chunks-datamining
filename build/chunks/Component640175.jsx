@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk538534 = require("./538534.jsx"),
   Chunk650774 = require("./650774.js"),
   Chunk434404 = require("./434404.js"),
   Chunk981631 = require("./981631.js"),
@@ -26,14 +26,11 @@ function u(e) {
     name: d.intl.string(d.t["6fQPho"]),
     value: c.bL.ONLY_MENTIONS
   }], [m]), p = i.useCallback(e => {
-    let {
-      value: t
-    } = e;
     o.Z.updateGuild({
-      defaultMessageNotifications: t
+      defaultMessageNotifications: e
     })
   }, []);
-  return (0, r.jsx)(s.Gu, {
+  return (0, r.jsx)(s.E, {
     options: g,
     value: n,
     disabled: !u,

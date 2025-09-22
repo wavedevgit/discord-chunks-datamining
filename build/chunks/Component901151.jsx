@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk524437 = require("./524437.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk538534 = require("./538534.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk768581 = require("./768581.js"),
   Chunk63063 = require("./63063.js"),
@@ -187,15 +187,10 @@ function P() {
     children: [(0, Chunk951288.jsx)(Chunk838436.H, {
       header: Chunk388032.intl.string(Chunk388032.t["ms+TmZ"]),
       description: Chunk388032.intl.string(Chunk388032.t["4NN4+/"])
-    }), (0, Chunk951288.jsx)(Chunk755721.Gu, {
+    }), (0, Chunk951288.jsx)(Chunk538534.E, {
       value: exports,
       options: require,
-      onChange: e => {
-        let {
-          value: t
-        } = e;
-        return d.JG.updateSetting(t)
-      }
+      onChange: e => d.JG.updateSetting(e)
     })]
   })
 }

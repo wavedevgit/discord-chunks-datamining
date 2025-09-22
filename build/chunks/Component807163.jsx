@@ -253,7 +253,7 @@ function ep(e) {
     description: l ? V.intl.format(V.t.xCaYwM, {}) : V.intl.format(V.t["gpqr+v"], {}),
     onLearnMore: c,
     renderVisual: () => t
-  }, "profile-item")
+  })
 }
 
 function eh(e) {
@@ -273,11 +273,11 @@ function eh(e) {
         id: e.id,
         animated: !i && e.animated,
         size: 58
-      })).map(e => null != e ? (0, r.jsx)("img", {
+      })).map((e, t) => null != e ? (0, r.jsx)("img", {
         className: H.personalizedEmoji,
         alt: "",
         src: e
-      }) : null), l ? null : o.map(e => (0, r.jsx)(I.Z, {
+      }, "emoji-".concat(t)) : null), l ? null : o.map(e => (0, r.jsx)(I.Z, {
         disableAnimation: i,
         sticker: e,
         size: 58,
@@ -288,7 +288,7 @@ function eh(e) {
       alt: "",
       src: s
     })
-  }, "emoji-stickers-item")
+  })
 }
 
 function em(e) {
@@ -358,7 +358,7 @@ function em(e) {
       alt: "",
       src: f
     })
-  }, "boost-item")
+  })
 }
 let eg = () => {
   let e = ed().screenShareItemVisual,
@@ -374,7 +374,7 @@ let eg = () => {
       alt: "",
       src: module
     })
-  }, "screen-share-item")
+  })
 };
 
 function eE(e) {
@@ -392,7 +392,7 @@ function eE(e) {
       alt: "",
       src: n
     })
-  }, "uploads-item")
+  })
 }
 let eb = Chunk647438.createContext({
     isPremiumRebrand: false
@@ -421,42 +421,42 @@ function eO(e) {
           currentUser: t,
           premiumType: n,
           onClose: a
-        }), (0, r.jsx)(eg, {}), (0, r.jsx)(em, {
+        }, "profile-item"), (0, r.jsx)(eg, {}, "screen-share-item"), (0, r.jsx)(em, {
           premiumType: n,
           onClose: a
-        })) : e.push((0, r.jsx)(ep, {
+        }, "boost-item")) : e.push((0, r.jsx)(ep, {
           currentUser: t,
           premiumType: n,
           onClose: a
-        }), (0, r.jsx)(eh, {
+        }, "profile-item"), (0, r.jsx)(eh, {
           premiumType: n
-        }), (0, r.jsx)(eg, {}), (0, r.jsx)(eE, {
+        }, "emoji-stickers-item"), (0, r.jsx)(eg, {}, "screen-share-item"), (0, r.jsx)(eE, {
           premiumType: n
-        }), (0, r.jsx)(em, {
+        }, "uploads-item"), (0, r.jsx)(em, {
           premiumType: n,
           onClose: a
-        }));
+        }, "boost-item"));
         break;
       case Z.p9.TIER_2:
         s ? e.push((0, r.jsx)(ep, {
           currentUser: t,
           premiumType: n,
           onClose: a
-        }), (0, r.jsx)(em, {
+        }, "profile-item"), (0, r.jsx)(em, {
           premiumType: n,
           onClose: a
-        }), (0, r.jsx)(eg, {})) : e.push((0, r.jsx)(ep, {
+        }, "boost-item"), (0, r.jsx)(eg, {}, "screen-share-item")) : e.push((0, r.jsx)(ep, {
           currentUser: t,
           premiumType: n,
           onClose: a
-        }), (0, r.jsx)(eh, {
+        }, "profile-item"), (0, r.jsx)(eh, {
           premiumType: n
-        }), (0, r.jsx)(em, {
+        }, "emoji-stickers-item"), (0, r.jsx)(em, {
           premiumType: n,
           onClose: a
-        }), (0, r.jsx)(eg, {}), (0, r.jsx)(eE, {
+        }, "boost-item"), (0, r.jsx)(eg, {}, "screen-share-item"), (0, r.jsx)(eE, {
           premiumType: n
-        }))
+        }, "uploads-item"))
     }
     return e
   }, [n, t, a, s]);

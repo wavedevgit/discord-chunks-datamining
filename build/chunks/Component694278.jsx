@@ -5,7 +5,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk538534 = require("./538534.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk881052 = require("./881052.js"),
   Chunk434404 = require("./434404.js"),
@@ -21,7 +21,7 @@ function g(t) {
     guild: g,
     onClose: y,
     hideColors: f
-  } = t, [_, m] = a.useState(g.verificationLevel), [O, j] = a.useState(null), v = g.features.has(d.oNc.COMMUNITY), h = (0, s.IF)(v, f).filter(t => !t.disabled), x = a.useCallback(async () => {
+  } = t, [_, m] = a.useState(g.verificationLevel), [O, j] = a.useState(null), h = g.features.has(u.oNc.COMMUNITY), v = (0, s.IF)(h, f).filter(t => !t.disabled), x = a.useCallback(async () => {
     null != O && j(null);
     try {
       await l.Z.saveGuild(g.id, {
@@ -33,7 +33,7 @@ function g(t) {
       j(new c.Hx(t).getAnyErrorMessage())
     }
   }, [O, g.id, _, y]);
-  return (0, n.jsx)(u.Z, (e = function(t) {
+  return (0, n.jsx)(d.Z, (e = function(t) {
     for (var e = 1; e < arguments.length; e++) {
       var r = null != arguments[e] ? arguments[e] : {},
         n = Object.keys(r);
@@ -60,10 +60,10 @@ function g(t) {
         type: o.R94.Types.DESCRIPTION,
         className: b.marginBottom20,
         children: p.intl.format(p.t.iuRk2t, {})
-      }), (0, n.jsx)(i.Gu, {
+      }), (0, n.jsx)(i.E, {
         value: _,
-        options: h,
-        onChange: t => m(t.value)
+        options: v,
+        onChange: t => m(t)
       })]
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(t, e) {

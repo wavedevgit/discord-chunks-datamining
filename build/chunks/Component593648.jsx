@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   l = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk524437 = require("./524437.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk538534 = require("./538534.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk668781 = require("./668781.js"),
   Chunk292556 = require("./292556.js"),
@@ -336,7 +336,7 @@ class et extends Chunk647438.PureComponent {
     t !== F.qrD.NEVER ? Q("UserSettingsModal") : p.default.setDesktopType(t)
   }
   handleTTSChange(e) {
-    let t = e.value;
+    let t = e;
     p.default.setTTSType(t)
   }
   render() {
@@ -374,7 +374,7 @@ class et extends Chunk647438.PureComponent {
       }), (0, Chunk951288.jsx)(er, {}), (0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.NOTIFICATIONS_UNREAD_MESSAGE_BADGE,
         children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-          className: Chunk755721 ? Chunk197571.marginBottom20 : Chunk197571.marginBottom40,
+          className: Chunk538534 ? Chunk197571.marginBottom20 : Chunk197571.marginBottom40,
           value: !require,
           note: Chunk388032.intl.string(Chunk388032.t["9K4qwc"]),
           onChange: this.handleToggleShowUnreadBadge,
@@ -439,9 +439,9 @@ class et extends Chunk647438.PureComponent {
             type: f.geA.DESCRIPTION,
             className: W.marginBottom8,
             children: H.intl.string(H.t["+4dnAw"])
-          }), (0, r.jsx)(d.Gu, {
+          }), (0, r.jsx)(d.E, {
             options: e,
-            onChange: this.handleTTSChange,
+            onChange: e => this.handleTTSChange(e),
             value: this.props.ttsType
           })]
         }), (0, r.jsx)(f.$i$, {
@@ -630,9 +630,11 @@ function el() {
         type: Chunk481060.geA.DESCRIPTION,
         className: Chunk197571.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.oWF6eX)
-      }), (0, Chunk951288.jsx)(Chunk755721.Gu, {
+      }), (0, Chunk951288.jsx)(Chunk538534.E, {
         options: exports,
-        onChange: require,
+        onChange: e => n({
+          value: e
+        }),
         value: module
       })]
     }), (0, Chunk951288.jsx)(Chunk481060.$i$, {

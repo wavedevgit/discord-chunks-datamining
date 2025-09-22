@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk392711 = require("./392711.js"),
   o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk538534 = require("./538534.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
   Chunk275759 = require("./275759.js"),
@@ -169,7 +169,7 @@ function R(e) {
         return (0, r.jsx)(u.xJW, {
           className: E.operatorContainer,
           title: N.intl.string(N.t.Xs7PHR),
-          children: (0, r.jsx)(d.Gu, {
+          children: (0, r.jsx)(d.E, {
             options: [{
               name: N.intl.string(N.t["W3iY5+"]),
               value: g.O1.OR
@@ -177,7 +177,7 @@ function R(e) {
               name: N.intl.string(N.t.gHXS9P),
               value: g.O1.AND
             }],
-            onChange: e => l(i, e.value),
+            onChange: e => l(i, e),
             value: n,
             disabled: e || s.length < 2,
             "aria-labelledby": T

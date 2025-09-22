@@ -11,8 +11,8 @@ var Chunk951288 = require("./951288.js"),
   o = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
+  Chunk538534 = require("./538534.jsx"),
   Chunk82659 = require("./82659.jsx"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk87051 = require("./87051.js"),
   Chunk798140 = require("./798140.js"),
@@ -143,10 +143,10 @@ function W(e) {
     children: [(0, i.jsx)(g.xJW, {
       title: D.intl.string(D.t.lprV7e),
       className: I.largeSpacing,
-      children: (0, i.jsx)(h.Gu, {
+      children: (0, i.jsx)(u.E, {
         disabled: t,
         value: n,
-        onChange: e => l("message_notifications", e, w.UE.notifications(e.value)),
+        onChange: e => l("message_notifications", e, w.UE.notifications(e)),
         options: [{
           name: D.intl.string(D.t["n/bTaW"]),
           value: A.bL.ALL_MESSAGES,
@@ -355,7 +355,7 @@ function q(e) {
     transitionState: l
   } = e, r = (0, d.e7)([S.Z], () => S.Z.getCategories(t)), a = (0, d.e7)([E.Z], () => E.Z.getGuild(t)), o = (0, d.e7)([O.Z], () => O.Z.getMemberCount(t)), {
     suppressEveryone: c,
-    suppressRoles: h,
+    suppressRoles: u,
     muteEvents: g,
     mobilePush: x,
     muted: v,
@@ -385,7 +385,7 @@ function q(e) {
       [e]: n
     }, i)
   };
-  return (0, i.jsxs)(u.Modal, {
+  return (0, i.jsxs)(h.Modal, {
     title: D.intl.string(D.t.h850Sk),
     actions: [{
       text: D.intl.string(D.t.i4jeWV),
@@ -404,12 +404,12 @@ function q(e) {
       memberCount: o,
       handleRadioChange: (e, n, i) => {
         m.Z.updateGuildNotificationSettings(t, {
-          [e]: n.value
+          [e]: n
         }, i)
       }
     }), (0, i.jsx)(Y, {
       suppressEveryone: c,
-      suppressRoles: h,
+      suppressRoles: u,
       handleCheckboxChange: M,
       notifyHighlights: C,
       muteEvents: g,

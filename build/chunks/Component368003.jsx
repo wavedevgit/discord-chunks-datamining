@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js"),
   o = require.n(Chunk404759),
   Chunk423650 = require("./423650.js"),
   l = require.n(Chunk423650),
-  Chunk755721 = require("./755721.js"),
+  Chunk538534 = require("./538534.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk947719 = require("./947719.js");
@@ -38,7 +38,7 @@ class g extends Chunk647438.Component {
         className: Chunk947719.selectYourAnswer,
         variant: "text-xs/normal",
         children: Chunk388032.intl.string(Chunk388032.t.YeiLeH)
-      }), (0, Chunk951288.jsx)(Chunk755721.Gu, {
+      }), (0, Chunk951288.jsx)(Chunk538534.E, {
         options: this.getQuestionOptions(),
         onChange: this.handleOptionChange,
         value: module
@@ -47,7 +47,7 @@ class g extends Chunk647438.Component {
   }
   constructor(...e) {
     super(...e), h(this, "state", {
-      selectedValue: null
+      selectedValue: true
     }), h(this, "getQuestionOptions", o()(() => l()(this.props.options.map(e => ({
       name: e.copy,
       value: e.house
@@ -56,8 +56,8 @@ class g extends Chunk647438.Component {
         onSelect: t
       } = this.props;
       this.setState({
-        selectedValue: e.value
-      }), t(e.value)
+        selectedValue: e
+      }), t(e)
     })
   }
 }

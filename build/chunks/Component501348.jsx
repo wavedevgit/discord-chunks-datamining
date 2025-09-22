@@ -2,7 +2,7 @@
 /** chunk id: 501348, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => ec
+  Z: () => el
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,7 +12,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk704215 = require("./704215.js"),
   Chunk524437 = require("./524437.js"),
   Chunk780384 = require("./780384.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk153867 = require("./153867.js"),
   Chunk493773 = require("./493773.js"),
@@ -49,7 +48,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk226518 = require("./226518.js"),
   Chunk197571 = require("./197571.js");
 
-function K(e, t, n) {
+function W(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -58,20 +57,20 @@ function K(e, t, n) {
   }) : e[t] = n, e
 }
 
-function z(e) {
+function K(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      K(e, t, n[t])
+      W(e, t, n[t])
     })
   }
   return e
 }
 
-function q(e, t) {
+function z(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -82,52 +81,52 @@ function q(e, t) {
   return n
 }
 
-function X(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : q(Object(t)).forEach(function(n) {
+function q(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : z(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let Q = "cozy",
-  J = "compact",
+let X = "cozy",
+  Q = "compact",
+  J = (0, Chunk313201.hQ)(),
   $ = (0, Chunk313201.hQ)(),
   ee = (0, Chunk313201.hQ)(),
-  et = (0, Chunk313201.hQ)(),
-  en = "1337",
-  er = e => {
+  et = "1337",
+  en = e => {
     let t = 0;
-    return [(0, S.e5)(X(z({}, (0, A.ZP)({
-      channelId: en,
-      content: H.intl.string(H.t.oZxkEh)
+    return [(0, T.e5)(q(K({}, (0, S.ZP)({
+      channelId: et,
+      content: V.intl.string(V.t.oZxkEh)
     })), {
-      state: Z.yb.SENT,
+      state: B.yb.SENT,
       id: "".concat(t++)
-    })), (0, S.e5)(X(z({}, (0, A.ZP)({
-      channelId: en,
-      content: (0, u.wj)(e) ? H.intl.string(H.t["WGb/v7"]) : H.intl.string(H.t["62m4m5"])
+    })), (0, T.e5)(q(K({}, (0, S.ZP)({
+      channelId: et,
+      content: (0, u.wj)(e) ? V.intl.string(V.t["WGb/v7"]) : V.intl.string(V.t["62m4m5"])
     })), {
-      state: Z.yb.SENT,
+      state: B.yb.SENT,
       id: "".concat(t++)
-    })), (0, S.e5)(X(z({}, (0, A.ZP)({
-      channelId: en,
-      content: H.intl.string(H.t.a0Byo6)
+    })), (0, T.e5)(q(K({}, (0, S.ZP)({
+      channelId: et,
+      content: V.intl.string(V.t.a0Byo6)
     })), {
-      state: Z.yb.SENT,
+      state: B.yb.SENT,
       id: "".concat(t++)
-    })), (0, S.e5)(X(z({}, (0, A.ZP)({
-      channelId: en,
-      content: H.intl.string(H.t.bmwEWF)
+    })), (0, T.e5)(q(K({}, (0, S.ZP)({
+      channelId: et,
+      content: V.intl.string(V.t.bmwEWF)
     })), {
-      state: Z.yb.SENT,
+      state: B.yb.SENT,
       id: "".concat(t++)
-    })), (0, S.e5)(X(z({}, (0, A.ZP)({
-      channelId: en,
-      content: H.intl.string(H.t.hK9QW1)
+    })), (0, T.e5)(q(K({}, (0, S.ZP)({
+      channelId: et,
+      content: V.intl.string(V.t.hK9QW1)
     })), {
-      state: Z.yb.SENT,
+      state: B.yb.SENT,
       id: "".concat(t)
     }))]
   },
-  ei = () => (0, Chunk951288.jsxs)("div", {
+  er = () => (0, Chunk951288.jsxs)("div", {
     className: Chunk226518.themeTitle,
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk226518.themeTitleContainer,
@@ -141,7 +140,7 @@ let Q = "cozy",
       })]
     }), (0, Chunk951288.jsx)(Chunk329013.g, {})]
   }),
-  ea = () => {
+  ei = () => {
     let e = (0, Chunk947889.Z)();
     return Chunk388032.intl.format(Chunk388032.t.Jae48P, {
       onClick: () => {
@@ -151,12 +150,12 @@ let Q = "cozy",
       }
     })
   };
-class eo extends Chunk647438.Component {
+class ea extends Chunk647438.Component {
   renderZoomSlider() {
     return Chunk358085.isPlatformEmbedded ? (0, Chunk951288.jsxs)("div", {
       className: Chunk197571.marginTop20,
       children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-        id: $,
+        id: J,
         className: o()(Chunk226518.title, Chunk197571.marginBottom8),
         children: Chunk388032.intl.string(Chunk388032.t.i19n5O)
       }), (0, Chunk951288.jsx)(Chunk481060.R94, {
@@ -171,7 +170,7 @@ class eo extends Chunk647438.Component {
         stickToMarkers: true,
         onValueChange: this.handleZoomChange,
         onValueRender: this.handleSliderRender,
-        "aria-labelledby": $
+        "aria-labelledby": J
       }), (0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.R94.Types.DESCRIPTION,
         children: Chunk388032.intl.format(Chunk388032.t.OMkSUl, {
@@ -184,7 +183,7 @@ class eo extends Chunk647438.Component {
     return (0, Chunk951288.jsxs)("div", {
       className: Chunk197571.marginTop20,
       children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-        id: ee,
+        id: $,
         className: o()(Chunk226518.title, Chunk197571.marginBottom8),
         children: Chunk388032.intl.string(Chunk388032.t.qPOqoK)
       }), (0, Chunk951288.jsx)(Chunk481060.R94, {
@@ -206,7 +205,7 @@ class eo extends Chunk647438.Component {
           onValueRender: this.handleSliderRenderPX,
           onMarkerRender: this.handleSliderRenderPX,
           getAriaValueText: this.handleSliderValueText,
-          "aria-labelledby": ee
+          "aria-labelledby": $
         })
       })]
     })
@@ -219,7 +218,7 @@ class eo extends Chunk647438.Component {
     return (0, Chunk951288.jsxs)("div", {
       className: Chunk226518.messageGroupingSpacing,
       children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-        id: et,
+        id: ee,
         className: o()(Chunk226518.title, Chunk197571.marginBottom8),
         children: Chunk388032.intl.string(Chunk388032.t.Q6lKkp)
       }), (0, Chunk951288.jsx)(Chunk481060.R94, {
@@ -235,7 +234,7 @@ class eo extends Chunk647438.Component {
         onValueRender: this.handleSliderRenderPX,
         onMarkerRender: this.handleSliderRenderPX,
         getAriaValueText: this.handleSliderValueText,
-        "aria-labelledby": et
+        "aria-labelledby": ee
       })]
     })
   }
@@ -251,12 +250,12 @@ class eo extends Chunk647438.Component {
         className: o()(Chunk226518.preview, Chunk197571.marginBottom40, module ? Chunk226518.compactPreview : true, "group-spacing-".concat(null != require ? require : module ? Chunk959517.c8 : Chunk959517.pq)),
         outline: true,
         "aria-hidden": true,
-        children: Chunk120356.map((t, n) => (0, r.jsx)(N.Z, {
-          author: (0, C.ZH)(t),
+        children: Chunk120356.map((t, n) => (0, r.jsx)(C.Z, {
+          author: (0, A.ZH)(t),
           message: t,
           compact: e,
           isGroupStart: n % 2 == 0,
-          className: 0 === n ? Y.firstMessage : true,
+          className: 0 === n ? H.firstMessage : true,
           hideSimpleEmbedContent: i
         }, t.id))
       })
@@ -278,7 +277,7 @@ class eo extends Chunk647438.Component {
       children: (0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.R94.Types.DEFAULT,
         className: Chunk226518.forcedColorsWarning,
-        children: (0, Chunk627845.b)() ? (0, Chunk951288.jsx)(ea, {}) : Chunk388032.intl.string(Chunk388032.t.AUMSZG)
+        children: (0, Chunk627845.b)() ? (0, Chunk951288.jsx)(ei, {}) : Chunk388032.intl.string(Chunk388032.t.AUMSZG)
       })
     }) : (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
       gap: 24,
@@ -287,7 +286,7 @@ class eo extends Chunk647438.Component {
         className: Chunk226518.title,
         children: Chunk388032.intl.string(Chunk388032.t.Ksh3io)
       }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
-        title: (0, Chunk951288.jsx)(ei, {}),
+        title: (0, Chunk951288.jsx)(er, {}),
         children: (0, Chunk951288.jsx)(Chunk329013.i, {})
       })]
     })
@@ -296,16 +295,18 @@ class eo extends Chunk647438.Component {
     return (0, Chunk951288.jsxs)(Chunk481060.xJW, {
       title: Chunk388032.intl.string(Chunk388032.t.ZEoGMT),
       className: Chunk197571.marginTop8,
-      children: [(0, Chunk951288.jsx)(Chunk755721.Gu, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.FXm, {
         options: [{
           name: Chunk388032.intl.string(Chunk388032.t.KZIadn),
-          value: Q
+          value: X
         }, {
           name: Chunk388032.intl.string(Chunk388032.t["6+nTjY"]),
-          value: J
+          value: Q
         }],
-        onChange: this.handleMessageDisplayModeChange,
-        value: this.props.messageDisplayCompact ? J : Q
+        onChange: e => this.handleMessageDisplayModeChange({
+          value: e
+        }),
+        value: this.props.messageDisplayCompact ? Q : X
       }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
         value: this.props.messageDisplayCompact && this.props.displayCompactAvatars,
         disabled: !this.props.messageDisplayCompact,
@@ -335,7 +336,7 @@ class eo extends Chunk647438.Component {
           type: Chunk481060.geA.DESCRIPTION,
           className: Chunk197571.marginBottom8,
           children: "Adjust the spacing and layout to balance readability and content based on your preferences."
-        }), (0, Chunk951288.jsx)(Chunk755721.Gu, {
+        }), (0, Chunk951288.jsx)(Chunk481060.FXm, {
           options: [{
             name: Chunk388032.intl.string(Chunk388032.t.T7G4Y2),
             value: Chunk524437.Pi.COZY,
@@ -345,7 +346,9 @@ class eo extends Chunk647438.Component {
             value: Chunk524437.Pi.COMPACT,
             desc: "Tighter layout to fit more content"
           }],
-          onChange: this.handleUIDensityChange,
+          onChange: e => this.handleUIDensityChange({
+            value: e
+          }),
           value: module
         })]
       }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
@@ -379,7 +382,7 @@ class eo extends Chunk647438.Component {
         name: Chunk388032.intl.string(Chunk388032.t["+o/sOj"]),
         value: Chunk524437.hg.H23
       }],
-      onChange: e => j.hg.updateSetting(e),
+      onChange: e => L.hg.updateSetting(e),
       value: module
     })
   }
@@ -404,7 +407,7 @@ class eo extends Chunk647438.Component {
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         className: Chunk197571.marginTop20,
-        children: (0, Chunk951288.jsx)(ea, {})
+        children: (0, Chunk951288.jsx)(ei, {})
       })]
     })
   }
@@ -415,12 +418,12 @@ class eo extends Chunk647438.Component {
     return "".concat(e.toFixed(0), "px")
   }
   handleSliderValueText(e) {
-    return H.intl.formatToPlainString(H.t["0hpvOT"], {
+    return V.intl.formatToPlainString(V.t["0hpvOT"], {
       value: e
     })
   }
   handleFontSizeChange(e) {
-    (0, m.oL)(e)
+    (0, h.oL)(e)
   }
   handleMessageSpacingChange(e) {
     switch (e) {
@@ -429,35 +432,35 @@ class eo extends Chunk647438.Component {
       case 8:
       case 16:
       case 24:
-        (0, m.ZZ)(e)
+        (0, h.ZZ)(e)
     }
   }
   handleZoomChange(e) {
-    (0, m.cq)(e)
+    (0, h.cq)(e)
   }
   constructor(...e) {
-    super(...e), K(this, "darkMessages", er(Z.BRd.DARK)), K(this, "lightMessages", er(Z.BRd.LIGHT)), K(this, "handleDisplayCompactAvatarsChanged", e => {
-      _.ZP.updatedUnsyncedSettings({
+    super(...e), W(this, "darkMessages", en(B.BRd.DARK)), W(this, "lightMessages", en(B.BRd.LIGHT)), W(this, "handleDisplayCompactAvatarsChanged", e => {
+      f.ZP.updatedUnsyncedSettings({
         displayCompactAvatars: e
       })
-    }), K(this, "handleDesktopRefreshEnabledChanged", e => {
-      _.ZP.updatedUnsyncedSettings({
+    }), W(this, "handleDesktopRefreshEnabledChanged", e => {
+      f.ZP.updatedUnsyncedSettings({
         disableVisualRefresh: !e
       })
-    }), K(this, "handleMessageDisplayModeChange", e => {
+    }), W(this, "handleMessageDisplayModeChange", e => {
       let {
         value: t
       } = e;
-      j.jU.updateSetting(t === J), (0, m.ZZ)()
-    }), K(this, "handleUIDensityChange", e => {
+      L.jU.updateSetting(t === Q), (0, h.ZZ)()
+    }), W(this, "handleUIDensityChange", e => {
       let {
         value: t
       } = e;
-      t !== c.Pi.UNSET_UI_DENSITY && j.YC.updateSetting(t)
+      t !== c.Pi.UNSET_UI_DENSITY && L.YC.updateSetting(t)
     })
   }
 }
-class es extends eo {
+class eo extends ea {
   render() {
     let {
       density: e
@@ -488,9 +491,11 @@ class es extends eo {
           type: Chunk481060.geA.DESCRIPTION,
           className: Chunk226518.subtext,
           children: Chunk388032.intl.string(Chunk388032.t.QLZhYm)
-        }), (0, Chunk951288.jsx)(Chunk755721.Gu, {
+        }), (0, Chunk951288.jsx)(Chunk481060.FXm, {
           options: Chunk647438,
-          onChange: this.handleUIDensityChange,
+          onChange: e => this.handleUIDensityChange({
+            value: e
+          }),
           value: module
         })]
       }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
@@ -519,16 +524,18 @@ class es extends eo {
           type: Chunk481060.geA.DESCRIPTION,
           className: Chunk226518.subtext,
           children: Chunk388032.intl.string(Chunk388032.t.QntEEB)
-        }), (0, Chunk951288.jsx)(Chunk755721.Gu, {
+        }), (0, Chunk951288.jsx)(Chunk481060.FXm, {
           options: [{
             name: Chunk388032.intl.string(Chunk388032.t.Jqj4cX),
-            value: Q
+            value: X
           }, {
             name: Chunk388032.intl.string(Chunk388032.t["1JNcPT"]),
-            value: J
+            value: Q
           }],
-          onChange: this.handleMessageDisplayModeChange,
-          value: this.props.messageDisplayCompact ? J : Q
+          onChange: e => this.handleMessageDisplayModeChange({
+            value: e
+          }),
+          value: this.props.messageDisplayCompact ? Q : X
         }), this.props.messageDisplayCompact && (0, Chunk951288.jsx)(Chunk481060.j7V, {
           className: Chunk226518.compactModeToggle,
           hideBorder: true,
@@ -557,7 +564,7 @@ class es extends eo {
     }), u = (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
       className: Chunk226518.a11yCallout,
-      children: (0, Chunk951288.jsx)(ea, {})
+      children: (0, Chunk951288.jsx)(ei, {})
     });
     return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
       tag: Chunk481060.RB0.H1,
@@ -566,14 +573,14 @@ class es extends eo {
     })
   }
 }
-let el = e => {
-  (0, T.zu)(e) || (0, T.Q3)(e, {
-    dismissAction: F.L.AUTO,
+let es = e => {
+  (0, I.zu)(e) || (0, I.Q3)(e, {
+    dismissAction: Z.L.AUTO,
     forceTrack: true
   })
 };
 
-function ec() {
+function el() {
   let e = Chunk695346.jU.useSetting(),
     t = Chunk695346.RS.useSetting(),
     n = Chunk695346.NA.useSetting(),
@@ -585,12 +592,12 @@ function ec() {
     }).enabled,
     d = (0, Chunk368763.T)("UserSettingsAppearance");
   (0, Chunk493773.ZP)(() => {
-    el(Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE), el(Chunk704215.z.DEKSTOP_CUSTOM_APP_ICON_BADGE), el(Chunk704215.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK)
+    es(Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE), es(Chunk704215.z.DEKSTOP_CUSTOM_APP_ICON_BADGE), es(Chunk704215.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK)
   }), Chunk647438.useEffect(() => {
-    Chunk780384 && el(Chunk704215.z.CLIENT_THEMES_APPEARANCE_SETTINGS_NEW_BADGE), Chunk755721 && el(Chunk704215.z.HALLOWEEN_APP_ICONS_APPEARANCE_SETTINGS_WEB_BADGE)
-  }, [Chunk780384, Chunk755721]);
+    Chunk780384 && es(Chunk704215.z.CLIENT_THEMES_APPEARANCE_SETTINGS_NEW_BADGE), Chunk481060 && es(Chunk704215.z.HALLOWEEN_APP_ICONS_APPEARANCE_SETTINGS_WEB_BADGE)
+  }, [Chunk780384, Chunk481060]);
   let f = (0, Chunk984802.A6)(),
-    _ = (0, Chunk442837.cj)([Chunk210887.Z, Chunk740492.ZP, Chunk607070.Z, Chunk594174.default, Chunk514361.Z], () => {
+    p = (0, Chunk442837.cj)([Chunk210887.Z, Chunk740492.ZP, Chunk607070.Z, Chunk594174.default, Chunk514361.Z], () => {
       var e, t;
       return {
         theme: Chunk210887.Z.theme,
@@ -604,12 +611,12 @@ function ec() {
         gradientPreset: Chunk514361.Z.gradientPreset
       }
     });
-  return (0, Chunk951288.jsx)(es, z({
+  return (0, Chunk951288.jsx)(eo, K({
     messageDisplayCompact: module,
     hideSimpleEmbedContent: exports && require,
     clientTheme: Chunk120356,
     timestampHourCycle: o,
     density: Chunk524437,
-    darkSidebar: Chunk481060
-  }, Chunk153867))
+    darkSidebar: Chunk153867
+  }, Chunk714338))
 }

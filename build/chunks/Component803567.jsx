@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk442837 = require("./442837.js"),
+  Chunk538534 = require("./538534.jsx"),
   Chunk780384 = require("./780384.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk846027 = require("./846027.js"),
   Chunk600164 = require("./600164.jsx"),
@@ -82,10 +82,10 @@ function C() {
       children: Chunk388032.intl.string(Chunk388032.t.najZCQ)
     }), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
       gap: 8,
-      children: [(0, Chunk951288.jsx)(Chunk755721.Gu, {
+      children: [(0, Chunk951288.jsx)(Chunk538534.E, {
         options: Chunk738486,
         onChange: e => {
-          l.Z.setNoiseCancellation(2 === e.value, S), l.Z.setNoiseSuppression(1 === e.value, S)
+          l.Z.setNoiseCancellation(2 === e, S), l.Z.setNoiseSuppression(1 === e, S)
         },
         value: Chunk626135
       }), Chunk921801 && (0, Chunk951288.jsx)(Chunk481060.ToO, {
@@ -131,7 +131,7 @@ function N() {
     hasEchoCancellation: Chunk463395.Z.hasEchoCancellation(exports),
     hasNoiseSuppression: Chunk463395.Z.hasNoiseSuppression(exports),
     hasAutomaticGainControl: Chunk463395.Z.hasAutomaticGainControl(exports)
-  }), [exports]), O = Chunk626135 || Chunk63063 || Chunk210887, v = module === Chunk981631.pM4.VOICE_ACTIVITY && Chunk755721;
+  }), [exports]), O = Chunk626135 || Chunk63063 || Chunk210887, v = module === Chunk981631.pM4.VOICE_ACTIVITY && Chunk780384;
   return (0, Chunk951288.jsxs)(Chunk738486.Z, {
     children: [Chunk197571 && (0, Chunk951288.jsx)(Chunk481060.R94, {
       type: Chunk481060.R94.Types.DESCRIPTION,
@@ -166,7 +166,7 @@ function N() {
     }), (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_AUTOMATIC_GAIN_CONTROL,
       children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-        value: Chunk780384,
+        value: Chunk538534,
         onChange: e => l.Z.setAutomaticGainControl(e, {
           page: b.ZY5.USER_SETTINGS,
           section: b.jXE.SETTINGS_VOICE_AND_VIDEO

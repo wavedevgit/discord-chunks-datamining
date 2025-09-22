@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk358085 = require("./358085.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk745770 = require("./745770.js");
-let d = ["Hotspot Options", "Dismissible Contents", "Design Systems", "Intl Testing", "i18n", "Web Setting Tree Tool", "Minor Reward Capping Config"];
+let d = ["Hotspot Options", "Dismissible Contents", "Design Systems", "Intl Testing", "i18n", "Web Setting Tree Tool", "Minor Reward Capping Config", "Payment Flow Modals"];
 
 function f(e) {
   let {
