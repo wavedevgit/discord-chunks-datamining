@@ -161,7 +161,7 @@ function C(e) {
       }), null != ee && "end" === y && ee]
     }),
     el = V || C,
-    ec = (0, r.jsx)(d.t, O(b({}, A), {
+    ec = (0, r.jsx)(d.tE, O(b({}, A), {
       children: (0, r.jsxs)("button", O(b({
         "data-mana-component": "button",
         role: a,

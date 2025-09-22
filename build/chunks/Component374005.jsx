@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk67136 = require("./67136.jsx"),
+  Chunk793030 = require("./793030.js"),
   Chunk393238 = require("./393238.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -75,7 +75,7 @@ let y = Chunk647438.memo(function() {
     ref: module,
     className: Chunk981028.panels,
     "aria-label": Chunk388032.intl.string(Chunk388032.t.StREWF),
-    children: (0, Chunk951288.jsxs)(Chunk67136.Jc, {
+    children: (0, Chunk951288.jsxs)(Chunk793030.JcV, {
       containerRef: module,
       children: [(0, Chunk951288.jsx)(Chunk316173.Z, {}), (0, Chunk951288.jsx)(Chunk210724.Z, {}), (0, Chunk951288.jsx)(Chunk235555.Z, {}), (0, Chunk951288.jsx)(Chunk410575.Z, {
         section: Chunk981631.jXE.ACTIVITY_PANEL,

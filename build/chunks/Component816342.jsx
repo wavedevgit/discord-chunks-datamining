@@ -21,7 +21,7 @@ let g = e => {
     channelId: n,
     reportId: g,
     reportType: f
-  } = e, b = (0, l.e7)([u.Z], () => u.Z.isBlocked(t.id), [t.id]), x = (0, l.e7)([d.Z], () => d.Z.getChannel(n), [n]), h = i.useMemo(() => _.ZP.getName(null == x ? true : x.guild_id, null == x ? true : x.id, t), [x, t]), v = i.useCallback(() => {
+  } = e, b = (0, l.e7)([u.Z], () => u.Z.isBlocked(t.id), [t.id]), h = (0, l.e7)([d.Z], () => d.Z.getChannel(n), [n]), x = i.useMemo(() => _.ZP.getName(null == h ? true : h.guild_id, null == h ? true : h.id, t), [h, t]), v = i.useCallback(() => {
     o.ZP.trackWithMetadata(m.rMx.IAR_BLOCK_USER_BUTTON_CLICKED, {
       other_user_id: t.id,
       report_id: g
@@ -33,7 +33,7 @@ let g = e => {
   }, [t, g, n]);
   return (0, r.jsx)(c.JZ, {
     title: p.intl.formatToPlainString(p.t["Q1o/f3"], {
-      username: h
+      username: x
     }),
     description: p.intl.string(p.t.G08MKi),
     buttonText: b ? p.intl.string(p.t.ot2tSk) : p.intl.string(p.t["l+7PZW"]),

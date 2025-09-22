@@ -1,7 +1,7 @@
 /** Chunk was on 76051 **/
 /** chunk id: 521332, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => x
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk769450 = require("./769450.js");
 
-function x(e) {
+function h(e) {
   let {
     title: t,
     description: n,
@@ -39,15 +39,15 @@ function x(e) {
   })
 }
 
-function h(e) {
+function x(e) {
   let {
     settingsUpsells: t,
     channelId: n,
     onModalClose: i,
     reportId: o,
     reportType: c,
-    reportSubType: h
-  } = e, v = (0, l.e7)([_.Z], () => _.Z.getChannel(n)), j = (0, m.jc)(t, null == v ? true : v.type), y = (0, p.i_)(c, h, o);
+    reportSubType: x
+  } = e, v = (0, l.e7)([_.Z], () => _.Z.getChannel(n)), j = (0, m.jc)(t, null == v ? true : v.type), y = (0, p.i_)(c, x, o);
   return 0 === j.length ? null : (0, r.jsxs)("div", {
     className: b.container,
     children: [(0, r.jsx)(a.X6q, {
@@ -62,7 +62,7 @@ function h(e) {
           getDescription: l,
           onApply: a
         } = e;
-        return (0, r.jsx)(x, {
+        return (0, r.jsx)(h, {
           title: i(),
           description: l(),
           onButtonClick: a,
@@ -77,7 +77,7 @@ function h(e) {
         }), i(), s.ZP.trackWithMetadata(g.rMx.IAR_SETTINGS_UPSELLS_ACTION, {
           report_id: o,
           report_type: c.name,
-          report_subtype: h,
+          report_subtype: x,
           action: p.M4.SETTINGS_UPSELLS_GO_TO_SETTINGS_LINK_CLICKED
         })
       }

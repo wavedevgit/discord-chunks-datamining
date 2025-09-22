@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk67136 = require("./67136.jsx"),
   Chunk657707 = require("./657707.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk933557 = require("./933557.js"),
@@ -30,14 +30,14 @@ function E(e) {
     channel: t,
     children: n
   } = e;
-  return (0, r.jsx)(o.tE, {
+  return (0, r.jsx)(s.tEY, {
     offset: g,
     children: (0, r.jsxs)("div", {
       className: m.channelHeader,
       "data-recents-channel": t.id,
       children: [(0, r.jsx)(b, {
         channel: t
-      }), t.isPrivate() ? null : (0, r.jsx)(s.Fbu, {
+      }), t.isPrivate() ? null : (0, r.jsx)(o.Fbu, {
         size: "xxs"
       }), (0, r.jsx)(y, {
         channel: t
@@ -61,7 +61,7 @@ function b(e) {
     experimentLocation: "ForLaterChannelHeader"
   }) : (0, r.jsx)("div", {
     className: a()(m.icon, m.dmIcon),
-    children: (0, r.jsx)(s.kBi, {
+    children: (0, r.jsx)(o.kBi, {
       size: "xxs"
     })
   })

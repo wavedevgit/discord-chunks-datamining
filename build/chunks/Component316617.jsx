@@ -1,7 +1,7 @@
 /** Chunk was on 76051 **/
 /** chunk id: 316617, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,10 +19,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk217702 = require("./217702.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk492402 = require("./492402.js");
-let h = e => {
+let x = e => {
   let {
     message: t
-  } = e, n = (0, s.ZP)(t), h = (0, l.e7)([g.Z], () => g.Z.getChannel(t.channel_id)), v = i.useMemo(() => (0, o.Z)(t), [t]), {
+  } = e, n = (0, s.ZP)(t), x = (0, l.e7)([g.Z], () => g.Z.getChannel(t.channel_id)), v = i.useMemo(() => (0, o.Z)(t), [t]), {
     content: j
   } = (0, m.Z)(v, {
     hideSimpleEmbedContent: false
@@ -31,12 +31,12 @@ let h = e => {
       leadingIcon: e,
       trailingIcon: n
     } = (0, _.f)(t, j, false, false, "", {
-      leadingIconClass: x.attachmentIcon,
-      trailingIconClass: x.attachmentIcon,
+      leadingIconClass: h.attachmentIcon,
+      trailingIconClass: h.attachmentIcon,
       iconSize: f.WW
     });
     return (0, r.jsxs)("div", {
-      className: x.contentContainer,
+      className: h.contentContainer,
       children: [e, (0, r.jsx)(d.ZP, {
         message: t,
         content: j,
@@ -44,21 +44,21 @@ let h = e => {
       }), n]
     })
   }, [t, j, y]);
-  return null == h ? null : (0, r.jsxs)("div", {
-    className: x.container,
+  return null == x ? null : (0, r.jsxs)("div", {
+    className: h.container,
     children: [(0, r.jsx)(a.X6q, {
-      className: x.header,
+      className: h.header,
       variant: "heading-sm/semibold",
       children: b.intl.string(b.t.iouM3d)
     }), (0, r.jsx)(a.Ttm, {
-      className: x.messagePreviewContainer,
+      className: h.messagePreviewContainer,
       children: (0, r.jsx)(c.Z, {
         childrenMessageContent: O(),
         childrenHeader: (0, r.jsx)(u.ZP, {
           message: t,
-          channel: h,
+          channel: x,
           author: n,
-          guildId: h.guild_id
+          guildId: x.guild_id
         }),
         disableInteraction: true,
         author: n

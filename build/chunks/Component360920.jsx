@@ -106,7 +106,7 @@ class h extends(r = Chunk647438.Component) {
     }, c), Chunk951288)
   }
   render() {
-    return this.context ? this.renderNonInteractive() : (0, Chunk951288.jsx)(Chunk155127.t, f(u({}, this.props.focusProps), {
+    return this.context ? this.renderNonInteractive() : (0, Chunk951288.jsx)(Chunk155127.tE, f(u({}, this.props.focusProps), {
       children: this.renderInner()
     }))
   }

@@ -2,7 +2,7 @@
 /** chunk id: 914788, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => Q
+  Z: () => J
 }), require("./388685.js"), require("./539854.js"), require("./35282.js");
 var Chunk133080 = require("./133080.js"),
   Chunk750041 = require("./750041.js"),
@@ -54,22 +54,23 @@ function p(e, t) {
 let h = null,
   m = null,
   g = {},
-  E = N(),
+  E = false,
   b = R(),
-  y = null,
-  O = C(),
-  v = false,
+  y = P(),
+  O = null,
+  v = N(),
   I = false,
-  T = null,
+  T = false,
   S = null,
-  A = {};
+  A = null,
+  C = {};
 
-function C() {
+function N() {
   var e, t, n, r;
   return (null == (t = window) || null == (e = exports.location) ? true : module.pathname) === Chunk292352.ix.FAMILY_CENTER_MY_FAMILY ? Chunk292352.dG.REQUESTS : (null == (r = window) || null == (n = Chunk133080.location) ? true : require.pathname) === Chunk292352.ix.FAMILY_CENTER_SETTINGS ? Chunk292352.dG.SETTINGS : Chunk292352.dG.ACTIVITY
 }
 
-function N() {
+function R() {
   return {
     [Chunk292352.MY.USER_ADD]: {},
     [Chunk292352.MY.GUILD_ADD]: {},
@@ -81,7 +82,7 @@ function N() {
   }
 }
 
-function R() {
+function P() {
   return {
     [Chunk292352.MY.USER_ADD]: 0,
     [Chunk292352.MY.GUILD_ADD]: 0,
@@ -93,41 +94,41 @@ function R() {
   }
 }
 
-function P() {
+function w() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [];
   return arguments.length > 1 && arguments[1], g = module.length > 0 ? module.reduce((e, t) => p(f({}, e), {
     [t.user_id]: t
-  }), {}) : {}
+  }), {}) : {}, E = true, g
 }
 
-function w(e) {
-  true !== e && (b = e)
+function D(e) {
+  true !== e && (y = e)
 }
 
-function D(e, t) {
-  let n = t ? E : N();
-  return E = e.reduce((e, t) => {
+function x(e, t) {
+  let n = t ? b : R();
+  return b = e.reduce((e, t) => {
     let r = t.display_type;
     return true !== n[r] && true === n[r][t.event_id] && (e[r][t.event_id] = t), e
   }, n)
 }
 
-function x(e) {
-  A = e.reduce((e, t) => {
+function L(e) {
+  C = e.reduce((e, t) => {
     var n;
     return p(f({}, e), {
       [t.id]: p(f({}, (0, o.Jh)(t)), {
         approximateMemberCount: null != (n = t.approximate_member_count) ? n : 0
       })
     })
-  }, A)
+  }, C)
 }
 
-function L() {
-  I = true
+function j() {
+  T = true
 }
 
-function j(e) {
+function M(e) {
   let {
     linkedUsers: t,
     familyCenterTeenActivity: n
@@ -138,24 +139,24 @@ function j(e) {
     teenId: o,
     rangeStartId: l
   } = n;
-  h = o, m = l, D(r), w(a), x(i), P(t), I = false, T = s.default.fromTimestamp(Date.now()), v = true
-}
-
-function M(e) {
-  let {
-    linkedUsers: t
-  } = e;
-  P(t)
+  h = o, m = l, x(r), D(a), L(i), w(t), T = false, S = s.default.fromTimestamp(Date.now()), I = true
 }
 
 function k(e) {
   let {
     linkedUsers: t
   } = e;
-  P(t)
+  w(t)
 }
 
 function U(e) {
+  let {
+    linkedUsers: t
+  } = e;
+  w(t)
+}
+
+function G(e) {
   let {
     familyCenterTeenActivity: t
   } = e;
@@ -167,48 +168,48 @@ function U(e) {
     teenId: a,
     rangeStartId: o
   } = t;
-  h = a, m = o, D(n), w(r), x(i), I = false, T = s.default.fromTimestamp(Date.now())
+  h = a, m = o, x(n), D(r), L(i), T = false, S = s.default.fromTimestamp(Date.now())
 }
 
-function G(e) {
+function B(e) {
   let {
     familyCenterTeenActivity: t
   } = e, {
     actions: n,
     guilds: r
   } = t;
-  D(n, true), x(r)
-}
-
-function B(e) {
-  let {
-    linkedUsers: t
-  } = e;
-  P(t)
+  x(n, true), L(r)
 }
 
 function Z(e) {
   let {
     linkedUsers: t
   } = e;
-  P(t, true)
+  w(t)
 }
 
 function F(e) {
   let {
-    linkCode: t
+    linkedUsers: t
   } = e;
-  y = t
+  w(t, true)
 }
 
 function V(e) {
   let {
-    tab: t
+    linkCode: t
   } = e;
   O = t
 }
 
 function H(e) {
+  let {
+    tab: t
+  } = e;
+  v = t
+}
+
+function Y(e) {
   let {
     user: t
   } = e;
@@ -219,60 +220,60 @@ function H(e) {
       user_id: t
     } = e;
     return true === n[t]
-  }) && t.linked_users.length > Object.keys(g).length ? l.ZP.fetchLinkedUsers() : P(t.linked_users)
+  }) && t.linked_users.length > Object.keys(g).length ? l.ZP.fetchLinkedUsers() : w(t.linked_users)
 }
 
-function Y(e) {
+function W(e) {
   var t;
   let {
     countryCode: n
   } = e;
-  null != n && (S = null != (t = (0, r.Zz)(n)) ? t : null)
+  null != n && (A = null != (t = (0, r.Zz)(n)) ? t : null)
 }
 
-function W() {
+function K() {
   let e = [];
-  return Object.entries(E).forEach(t => {
+  return Object.entries(b).forEach(t => {
     let [n, r] = t;
     e.push(...Object.values(r))
   }), module
 }
 
-function K() {
-  return Object.entries(b).map(e => {
+function z() {
+  return Object.entries(y).map(e => {
     let [t, n] = e;
     return "".concat(t, ":").concat(n)
   })
 }
 
-function z(e) {
-  b = e.reduce((e, t) => {
+function q(e) {
+  y = e.reduce((e, t) => {
     let [n, r] = t.split(":"), i = (0, c.jV)(n);
     return true === i ? e : p(f({}, e), {
       [i]: parseInt(r, 10)
     })
-  }, R())
+  }, P())
 }
 
-function q() {
-  h = null, m = null, g = {}, E = N(), b = R(), A = {}, I = false, T = null, O = C()
+function X() {
+  h = null, m = null, g = {}, b = R(), y = P(), C = {}, T = false, S = null, v = N(), E = false
 }
-class X extends Chunk750041.Z {
+class Q extends Chunk750041.Z {
   initialize() {
     this.waitFor(Chunk594174.default)
   }
   loadCache() {
-    let e = this.readSnapshot(X.LATEST_SNAPSHOT_VERSION);
-    null != module && (P(module.linkedUsers), x(module.guilds), D(module.teenActivity), z(module.teenActivityTotals))
+    let e = this.readSnapshot(Q.LATEST_SNAPSHOT_VERSION);
+    null != module && (w(module.linkedUsers), L(module.guilds), x(module.teenActivity), q(module.teenActivityTotals))
   }
   takeSnapshot() {
     return {
-      version: X.LATEST_SNAPSHOT_VERSION,
+      version: Q.LATEST_SNAPSHOT_VERSION,
       data: {
         linkedUsers: Object.values(g),
-        teenActivityTotals: K(),
-        teenActivity: W(),
-        guilds: Object.values(A)
+        teenActivityTotals: z(),
+        teenActivity: K(),
+        guilds: Object.values(C)
       }
     }
   }
@@ -291,53 +292,56 @@ class X extends Chunk750041.Z {
     return null == m ? null : Chunk709054.default.extractTimestamp(m)
   }
   getActionsForDisplayType(e) {
-    return Object.values(E[e])
+    return Object.values(b[e])
   }
   getTotalForDisplayType(e) {
-    return b[e]
+    return y[e]
   }
   getLinkCode() {
-    return y
+    return O
   }
   getGuild(e) {
-    return A[e]
+    return C[e]
   }
   getSelectedTab() {
-    return O
+    return v
   }
   getStartId() {
     return m
   }
   getIsInitialized() {
-    return v
-  }
-  getUserCountry() {
-    return S
-  }
-  isLoading() {
     return I
   }
+  getAreLinkedUsersProcessed() {
+    return E
+  }
+  getUserCountry() {
+    return A
+  }
+  isLoading() {
+    return T
+  }
   canRefetch() {
-    return null === T || Chunk709054.default.age(T) > Chunk292352.Of
+    return null === S || Chunk709054.default.age(S) > Chunk292352.Of
   }
   constructor() {
     super({
-      CURRENT_USER_UPDATE: H,
+      CURRENT_USER_UPDATE: Y,
       CACHE_LOADED_LAZY: () => this.loadCache(),
-      FAMILY_CENTER_INITIAL_LOAD: j,
-      FAMILY_CENTER_FETCH_START: L,
-      FAMILY_CENTER_LINKED_USERS_FETCH_SUCCESS: M,
-      FAMILY_CENTER_TEEN_ACTIVITY_FETCH_SUCCESS: U,
-      FAMILY_CENTER_TEEN_ACTIVITY_MORE_FETCH_SUCCESS: G,
-      FAMILY_CENTER_REQUEST_LINK_SUCCESS: k,
-      FAMILY_CENTER_REQUEST_LINK_UPDATE_SUCCESS: B,
-      FAMILY_CENTER_REQUEST_LINK_REMOVE_SUCCESS: Z,
-      FAMILY_CENTER_LINK_CODE_FETCH_SUCCESS: F,
-      FAMILY_CENTER_HANDLE_TAB_SELECT: V,
-      SET_LOCATION_METADATA: Y,
-      LOGOUT: q
+      FAMILY_CENTER_INITIAL_LOAD: M,
+      FAMILY_CENTER_FETCH_START: j,
+      FAMILY_CENTER_LINKED_USERS_FETCH_SUCCESS: k,
+      FAMILY_CENTER_TEEN_ACTIVITY_FETCH_SUCCESS: G,
+      FAMILY_CENTER_TEEN_ACTIVITY_MORE_FETCH_SUCCESS: B,
+      FAMILY_CENTER_REQUEST_LINK_SUCCESS: U,
+      FAMILY_CENTER_REQUEST_LINK_UPDATE_SUCCESS: Z,
+      FAMILY_CENTER_REQUEST_LINK_REMOVE_SUCCESS: F,
+      FAMILY_CENTER_LINK_CODE_FETCH_SUCCESS: V,
+      FAMILY_CENTER_HANDLE_TAB_SELECT: H,
+      SET_LOCATION_METADATA: W,
+      LOGOUT: X
     })
   }
 }
-d(X, "displayName", "FamilyCenterStore"), d(X, "LATEST_SNAPSHOT_VERSION", 3);
-let Q = new X
+d(Q, "displayName", "FamilyCenterStore"), d(Q, "LATEST_SNAPSHOT_VERSION", 3);
+let J = new Q

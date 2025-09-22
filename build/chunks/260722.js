@@ -3,9 +3,10 @@
 "use strict";
 require.d(exports, {
   Yw: () => p,
-  ZP: () => g,
+  ZP: () => E,
   fc: () => h,
-  qd: () => m
+  qd: () => m,
+  ty: () => g
 });
 var Chunk544891 = require("./544891.js"),
   Chunk524437 = require("./524437.js"),
@@ -88,7 +89,13 @@ async function m() {
     }), n
   })
 }
-let g = {
+async function g() {
+  await Chunk544891.tn.post({
+    url: Chunk981631.ANM.FAMILY_CENTER_SHARE_IAR_WITH_PARENTS,
+    rejectWithError: true
+  })
+}
+let E = {
   async initialPageLoad() {
     var e, t, n, i;
     Chunk570140.Z.dispatch({

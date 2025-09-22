@@ -96,7 +96,7 @@ function g(e) {
       ref: A,
       disabled: O
     });
-  return (0, r.jsx)(s.t, p(f({}, g), {
+  return (0, r.jsx)(s.tE, p(f({}, g), {
     children: (0, r.jsx)("button", p(f({
       role: t,
       type: n,

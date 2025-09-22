@@ -22,14 +22,14 @@ let b = e => {
   let {
     entry: b
   } = e, {
-    name: x
-  } = b, h = (0, l.e7)([_.Z], () => _.Z.getNewestTokenForApplication(b.id)), v = null != (n = b.getIconURL(40)) ? n : f, j = (0, d.Z)({
+    name: h
+  } = b, x = (0, l.e7)([_.Z], () => _.Z.getNewestTokenForApplication(b.id)), v = null != (n = b.getIconURL(40)) ? n : f, j = (0, d.Z)({
     application: b
   }), y = i.useRef(false);
   i.useEffect(() => {
     y.current || (o.Z.fetch(), y.current = true)
   }, []);
-  let O = null != h ? m.default.extractTimestamp(h.id) : true;
+  let O = null != x ? m.default.extractTimestamp(x.id) : true;
   return (0, r.jsxs)("div", {
     className: g.container,
     children: [(0, r.jsx)(a.X6q, {
@@ -55,7 +55,7 @@ let b = e => {
           children: [(0, r.jsx)(a.Text, {
             color: "header-primary",
             variant: "text-md/medium",
-            children: x
+            children: h
           }), j.length > 0 ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(a.Text, {
               color: "text-default",

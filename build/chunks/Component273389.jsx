@@ -22,15 +22,15 @@ let c = e => {
     g = i.useRef(null),
     f = null != n && "cancel" !== n.type,
     b = _ && (null == n ? true : n.type) !== "done",
-    x = f || b;
+    h = f || b;
   if (i.useEffect(() => {
       if ((null == n ? true : n.type) === "submit" || (null == n ? true : n.type) === "done") {
         var e;
         null == (e = g.current) || e.focus()
       }
-    }, [null == n ? true : n.type]), !x) return null;
-  let h = o.intl.string(o.t.i4jeWV);
-  return (null == n ? true : n.type) === "submit" ? (t = "critical-primary", h = p ? o.intl.string(s.default.ZUyreX) : o.intl.string(o.t["G+vU8/"])) : (null == n ? true : n.type) === "next" ? h = o.intl.string(o.t.PDTjLC) : (null == n ? true : n.type) === "cancel" && (h = o.intl.string(o.t["ETE/oK"]), t = "secondary"), (0, r.jsx)(l.mzw, {
+    }, [null == n ? true : n.type]), !h) return null;
+  let x = o.intl.string(o.t.i4jeWV);
+  return (null == n ? true : n.type) === "submit" ? (t = "critical-primary", x = p ? o.intl.string(s.default.ZUyreX) : o.intl.string(o.t["G+vU8/"])) : (null == n ? true : n.type) === "next" ? x = o.intl.string(o.t.PDTjLC) : (null == n ? true : n.type) === "cancel" && (x = o.intl.string(o.t["ETE/oK"]), t = "secondary"), (0, r.jsx)(l.mzw, {
     "data-migration-pending": true,
     direction: a.Z.Direction.HORIZONTAL,
     children: (0, r.jsxs)(l.hE2, {
@@ -47,7 +47,7 @@ let c = e => {
         variant: t,
         disabled: c || d,
         buttonRef: g,
-        text: h
+        text: x
       })]
     })
   })
