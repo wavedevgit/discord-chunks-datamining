@@ -20,43 +20,45 @@ let p = Chunk647438.forwardRef(function(e, t) {
     onAddedPhone: n,
     onClose: p,
     transitionState: h,
-    reason: m
-  } = e, g = (0, a.e7)([d.default], () => d.default.getCurrentUser()), E = (0, a.e7)([u.Z], () => u.Z.getAction()), [b, y] = i.useState(null), [O, v] = i.useState(null), [I, T] = i.useState(null), [S, A] = i.useState(false), C = i.useCallback(async e => {
-    A(true);
+    reason: m,
+    layerContext: g
+  } = e, E = (0, a.e7)([d.default], () => d.default.getCurrentUser()), b = (0, a.e7)([u.Z], () => u.Z.getAction()), [y, O] = i.useState(null), [v, I] = i.useState(null), [T, S] = i.useState(null), [A, C] = i.useState(false), N = i.useCallback(async e => {
+    C(true);
     try {
-      f.Z.isPhoneReverification(g, E) ? await l.Z.beginReverifyPhone(e, m) : await l.Z.beginAddPhone(e, m), T(null), y(e)
+      f.Z.isPhoneReverification(E, b) ? await l.Z.beginReverifyPhone(e, m) : await l.Z.beginAddPhone(e, m), S(null), O(e)
     } catch (e) {
-      T(new s.Z(e))
+      S(new s.Z(e))
     }
-    A(false)
-  }, [g, m, E]), N = i.useCallback(async e => {
-    if (null != b && null != g) {
-      A(true);
+    C(false)
+  }, [E, m, b]), R = i.useCallback(async e => {
+    if (null != y && null != E) {
+      C(true);
       try {
         let {
           token: t
-        } = await l.Z.verifyPhone(b, e);
-        T(null), v(t)
+        } = await l.Z.verifyPhone(y, e);
+        S(null), I(t)
       } catch (e) {
-        T(new s.Z(e))
+        S(new s.Z(e))
       }
-      A(false)
+      C(false)
     }
-  }, [g, b]), R = i.useCallback(async e => {
-    null != O && (f.Z.isPhoneReverification(g, E) ? await l.Z.reverifyPhone(O, e, m) : await l.Z.addPhone(O, e, m), null == n || n(), p())
-  }, [n, p, O, m, g, E]);
-  return null != O ? (0, r.jsx)(o.Z, {
+  }, [E, y]), P = i.useCallback(async e => {
+    null != v && (f.Z.isPhoneReverification(E, b) ? await l.Z.reverifyPhone(v, e, m) : await l.Z.addPhone(v, e, m), null == n || n(), p())
+  }, [n, p, v, m, E, b]);
+  return null != v ? (0, r.jsx)(o.Z, {
     onClose: p,
     transitionState: h,
     title: _.intl.string(_.t.ZtCDc3),
-    handleSubmit: R
+    handleSubmit: P
   }) : (0, r.jsx)(c.default, {
     onClose: p,
     transitionState: h,
-    error: null == I ? true : I.getAnyErrorMessage(),
-    working: S,
-    validPhone: null != b,
-    onAddPhone: C,
-    onVerifyPhone: N
+    error: null == T ? true : T.getAnyErrorMessage(),
+    working: A,
+    validPhone: null != y,
+    onAddPhone: N,
+    onVerifyPhone: R,
+    layerContext: g
   })
 })

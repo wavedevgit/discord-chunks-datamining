@@ -2,12 +2,13 @@
 /** chunk id: 746106, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  w: () => C
+  w: () => R
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk631562 = require("./631562.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
@@ -29,116 +30,126 @@ var Chunk951288 = require("./951288.js"),
   Chunk892071 = require("./892071.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function C(e) {
+function N(e, t) {
+  let n = i.useCallback(() => ({
+      i18n: {
+        SPINNER_LOADING_LABEL: C.intl.string(C.t.ZTNur6),
+        BUTTON_LOADING_STARTED_LABEL: C.intl.string(C.t.pfChQk),
+        BUTTON_LOADING_FINISHED_LABEL: C.intl.string(C.t.SVPara),
+        CLOSE_BUTTON_LABEL: C.intl.string(C.t.cpT0Cg),
+        PLAY_BUTTON_LABEL: C.intl.string(C.t.RscU7O),
+        PAUSE_BUTTON_LABEL: C.intl.string(C.t.ZcgDJS),
+        NEW: C.intl.string(C.t.y2b7CA),
+        BETA: C.intl.string(C.t.oW0eUV),
+        EARLY_ACCESS: C.intl.string(C.t.EYxi0t),
+        BILLING_TRIAL_FREE_TRIAL_TEXT: C.intl.string(C.t.IBYG5e)
+      },
+      theme: e,
+      saturation: t,
+      defaultLayerContext: g.nz
+    }), [e, t]),
+    [r, o] = i.useState(n);
+  return i.useLayoutEffect(() => {
+    function e() {
+      o(n)
+    }(0, a.waitForAllDefaultIntlMessagesLoaded)().then(e), C.intl.onLocaleChange(e)
+  }, [n]), r
+}
+
+function R(e) {
   let {
     windowKey: t,
     themeOverride: n,
     children: a
-  } = e, C = null != t, [N] = i.useState(() => I.ZP.getEnableHardwareAcceleration()), {
-    locale: R,
-    theme: P,
-    focused: w,
-    currentWindow: D,
-    fontScale: x,
-    fontScaleClass: L,
-    keyboardModeEnabled: j,
-    saturation: M,
-    desaturateUserColors: k,
-    useForcedColors: U,
-    systemForcedColors: G,
-    useReducedMotion: B,
-    alwaysShowLinkDecorations: Z,
-    confettiMode: F,
-    highContrastMode: V
-  } = (0, s.cj)([y.default, c.Z, O.Z, v.Z, g.Z, E.Z], () => {
+  } = e, o = null != t, [g] = i.useState(() => T.ZP.getEnableHardwareAcceleration()), {
+    locale: C,
+    theme: R,
+    focused: P,
+    currentWindow: w,
+    fontScale: D,
+    fontScaleClass: x,
+    keyboardModeEnabled: L,
+    saturation: j,
+    desaturateUserColors: M,
+    useForcedColors: k,
+    systemForcedColors: U,
+    useReducedMotion: G,
+    alwaysShowLinkDecorations: B,
+    confettiMode: Z,
+    highContrastMode: F
+  } = (0, l.cj)([O.default, u.Z, v.Z, I.Z, E.Z, b.Z], () => {
     var e;
     return {
-      locale: y.default.locale,
-      theme: null != n ? n : O.Z.theme,
-      focused: C ? g.Z.getWindowFocused(t) : v.Z.isFocused(),
-      currentWindow: C && null != (e = g.Z.getWindow(t)) ? e : window,
-      fontScale: c.Z.fontScale,
-      fontScaleClass: c.Z.fontScaleClass,
-      keyboardModeEnabled: c.Z.keyboardModeEnabled,
-      saturation: c.Z.saturation,
-      desaturateUserColors: c.Z.desaturateUserColors,
-      useForcedColors: c.Z.useForcedColors,
-      systemForcedColors: c.Z.systemForcedColors,
-      useReducedMotion: c.Z.useReducedMotion,
-      alwaysShowLinkDecorations: c.Z.alwaysShowLinkDecorations,
-      highContrastMode: c.Z.isHighContrastModeEnabled,
-      confettiMode: E.Z.confettiMode
+      locale: O.default.locale,
+      theme: null != n ? n : v.Z.theme,
+      focused: o ? E.Z.getWindowFocused(t) : I.Z.isFocused(),
+      currentWindow: o && null != (e = E.Z.getWindow(t)) ? e : window,
+      fontScale: u.Z.fontScale,
+      fontScaleClass: u.Z.fontScaleClass,
+      keyboardModeEnabled: u.Z.keyboardModeEnabled,
+      saturation: u.Z.saturation,
+      desaturateUserColors: u.Z.desaturateUserColors,
+      useForcedColors: u.Z.useForcedColors,
+      systemForcedColors: u.Z.systemForcedColors,
+      useReducedMotion: u.Z.useReducedMotion,
+      alwaysShowLinkDecorations: u.Z.alwaysShowLinkDecorations,
+      highContrastMode: u.Z.isHighContrastModeEnabled,
+      confettiMode: b.Z.confettiMode
     }
-  }), H = u.U.useExperiment({
+  }), V = d.U.useExperiment({
     location: "RootThemeContextProvider"
   }, {
     autoTrackExposure: true
-  }).enabled, Y = (0, p.Z)(D, __OVERLAY__ || w), W = 0;
-  1 !== M && (W = (0, l.OdO)(W, l.bgu.REDUCE_SATURATION_ENABLED));
-  let K = (0, T.A)(),
-    z = (0, h.Ml)("RootThemeContextProvider"),
-    q = (0, h.CL)("RootThemeContextProvider"),
-    X = (0, h.VM)("RootThemeContextProvider"),
-    Q = f.Mc.useExperiment({
+  }).enabled, H = (0, h.Z)(w, __OVERLAY__ || P), Y = 0;
+  1 !== j && (Y = (0, c.OdO)(Y, c.bgu.REDUCE_SATURATION_ENABLED));
+  let W = (0, S.A)(),
+    K = (0, m.Ml)("RootThemeContextProvider"),
+    z = (0, m.CL)("RootThemeContextProvider"),
+    q = (0, m.VM)("RootThemeContextProvider"),
+    X = _.Mc.useExperiment({
       location: "RootThemeContextProvider"
     }).enabled,
-    J = (0, d.Z)("RootThemeContextProvider"),
-    $ = (0, b.$)({
+    Q = (0, f.Z)("RootThemeContextProvider"),
+    J = (0, y.$)({
       location: "RootThemeContextProvider"
     }),
-    ee = (0, _.On)({
-      isPopoutWindow: C,
-      isSearchDesktopTopLevelEnabled: $
+    $ = (0, p.On)({
+      isPopoutWindow: o,
+      isSearchDesktopTopLevelEnabled: J
     }),
-    et = i.useMemo(() => ({
-      i18n: {
-        SPINNER_LOADING_LABEL: A.intl.string(A.t.ZTNur6),
-        BUTTON_LOADING_STARTED_LABEL: A.intl.string(A.t.pfChQk),
-        BUTTON_LOADING_FINISHED_LABEL: A.intl.string(A.t.SVPara),
-        CLOSE_BUTTON_LABEL: A.intl.string(A.t.cpT0Cg),
-        PLAY_BUTTON_LABEL: A.intl.string(A.t.RscU7O),
-        PAUSE_BUTTON_LABEL: A.intl.string(A.t.ZcgDJS),
-        NEW: A.intl.string(A.t.y2b7CA),
-        BETA: A.intl.string(A.t.oW0eUV),
-        EARLY_ACCESS: A.intl.string(A.t.EYxi0t),
-        BILLING_TRIAL_FREE_TRIAL_TEXT: A.intl.string(A.t.IBYG5e)
-      },
-      theme: P,
-      saturation: M,
-      defaultLayerContext: m.nz
-    }), [P, M]);
-  return (0, r.jsx)(l.kb5, {
-    value: et,
-    children: (0, r.jsx)(l.wMY, {
-      theme: P,
-      flags: W,
-      saturation: M,
-      density: K,
-      children: (0, r.jsx)(S.cE, {
-        lang: R,
-        theme: P,
-        density: K,
-        focused: w,
-        fontScale: x,
-        fontScaleClass: L,
-        keyboardModeEnabled: j,
-        mouseMode: Y,
-        saturation: M,
-        desaturateUserColors: k,
-        useForcedColors: U,
-        systemForcedColors: G,
-        useReducedMotion: B,
-        alwaysShowLinkDecorations: Z,
-        hardwareAccelerationEnabled: N,
-        highContrastMode: H && V,
-        isPopoutWindow: C,
-        rootClassName: o()(ee, {
-          "confetti-mode": F,
-          "refresh-fast-follow-avatars": z && !J,
-          "refresh-fast-follow-guild-bg": q,
-          "refresh-fast-follow-distinct-borders": X,
-          "client-theme-color-picker": Q,
-          "align-chat-input": J
+    ee = N(R, j);
+  return (0, r.jsx)(c.kb5, {
+    value: ee,
+    children: (0, r.jsx)(c.wMY, {
+      theme: R,
+      flags: Y,
+      saturation: j,
+      density: W,
+      children: (0, r.jsx)(A.cE, {
+        lang: C,
+        theme: R,
+        density: W,
+        focused: P,
+        fontScale: D,
+        fontScaleClass: x,
+        keyboardModeEnabled: L,
+        mouseMode: H,
+        saturation: j,
+        desaturateUserColors: M,
+        useForcedColors: k,
+        systemForcedColors: U,
+        useReducedMotion: G,
+        alwaysShowLinkDecorations: B,
+        hardwareAccelerationEnabled: g,
+        highContrastMode: V && F,
+        isPopoutWindow: o,
+        rootClassName: s()($, {
+          "confetti-mode": Z,
+          "refresh-fast-follow-avatars": K && !Q,
+          "refresh-fast-follow-guild-bg": z,
+          "refresh-fast-follow-distinct-borders": q,
+          "client-theme-color-picker": X,
+          "align-chat-input": Q
         }),
         children: a
       })

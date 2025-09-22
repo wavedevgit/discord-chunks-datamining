@@ -29,12 +29,13 @@ class p extends Chunk647438.PureComponent {
         error: _,
         working: p,
         transitionState: h,
-        validPhone: m
+        validPhone: m,
+        layerContext: g
       } = this.props,
       {
-        phone: g
+        phone: E
       } = this.state,
-      E = [];
+      b = [];
     return m ? e = Chunk388032.intl.string(Chunk388032.t["4qMI6O"]) : (e = Chunk388032.intl.string(Chunk388032.t.Vp9je3), t = (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       children: Chunk388032.intl.format(Chunk388032.t["3BTmqa"], {})
@@ -45,7 +46,7 @@ class p extends Chunk647438.PureComponent {
       children: (0, Chunk951288.jsx)(Chunk7557.Z, {
         onSubmit: this.handleVerifyPhone
       })
-    }), E = [{
+    }), b = [{
       variant: "secondary",
       text: Chunk388032.intl.string(Chunk388032.t["5b60go"]),
       onClick: this.handleResendCode,
@@ -55,17 +56,18 @@ class p extends Chunk647438.PureComponent {
       errorMessage: null != _ ? _ : true,
       className: Chunk520668.field,
       onChange: this.handlePhoneChange,
-      submitting: p
-    }), E = [{
+      submitting: p,
+      layerContext: g
+    }), b = [{
       text: Chunk388032.intl.string(Chunk388032.t.TXNS7e),
-      disabled: "" === g,
+      disabled: "" === E,
       loading: p,
       onClick: this.handleAddPhone
     }]), i = m ? Chunk388032.intl.string(Chunk388032.t.Xclkxs) : Chunk388032.intl.string(Chunk388032.t.uR76s7), (0, Chunk951288.jsx)(Chunk82659.Modal, {
       size: m ? "sm" : "md",
       title: Chunk647438,
       subtitle: module,
-      actions: E,
+      actions: b,
       onClose: this.props.onClose,
       trackingProps: {
         impression: {

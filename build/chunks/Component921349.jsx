@@ -853,7 +853,7 @@ function K(e) {
       focusPreviousItem: y
     }), (0, r.jsx)(z, R({
       style: {
-        minWidth: "".concat(E, "ch")
+        width: "".concat(E, "ch")
       },
       className: o()(C.multi, h),
       query: t,
