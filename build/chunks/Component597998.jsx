@@ -155,7 +155,7 @@ function M(e) {
   });
   if (h || O) return null;
   let W = [],
-    K = (0, r.jsx)(B, {
+    K = B({
       iconClassName: N,
       mute: n,
       localMute: i,
@@ -209,7 +209,7 @@ function M(e) {
   }, "stream"));
   let q = null != D && !(0, y.yE)(D.flags, v.udG.EMBEDDED),
     X = null == U && q;
-  return 0 !== W.length || null != K || Z || X ? (0, r.jsxs)("div", {
+  return 0 !== W.length || 0 !== K.length || Z || X ? (0, r.jsxs)("div", {
     className: o()(A.icons, t),
     children: [(0, r.jsxs)("div", {
       className: A.iconGroup,
@@ -445,5 +445,5 @@ function B(e) {
       children: n
     }, "deaf"))
   }
-  return 0 === d.length ? null : d
+  return d
 }

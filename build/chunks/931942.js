@@ -1,14 +1,3 @@
-/** Chunk was on 11160 **/
-/** chunk id: 931942, original params: e,t,n (module,exports,require) **/
-module.exports = {
-  container: "container__0d0f9",
-  progressContainer: "progressContainer__0d0f9",
-  progress: "progress__0d0f9",
-  boostCountText: "boostCountText__0d0f9",
-  containerWithMargin: "containerWithMargin__0d0f9",
-  contentContainer: "contentContainer__0d0f9",
-  textContainer: "textContainer__0d0f9",
-  textContentContainer: "textContentContainer__0d0f9",
-  text: "text__0d0f9",
-  progressLow: "progressLow__0d0f9"
-}
+/** Chunk was on 35189 **/
+/** chunk id: 931942, original params: t (module,exports,require) **/
+module.exports = JSON.parse('{"zyFyf3":"Du \xe4r i St\xf6r ej. G\xe5 online f\xf6r att vara med i samtalet.","7cuAe3":"St\xf6r ej har varit p\xe5 ett tag. L\xe5t v\xe4nner veta att du \xe4r tillg\xe4nglig.","3nnb4u":"V\xe4nner kanske tror att du \xe4r upptagen. G\xe5 online f\xf6r att vara med i samtalet.","3t3FR0":"Tala om f\xf6r andra att du \xe4r tillg\xe4nglig","Onha6O":"\xc4r du fortfarande upptagen?","NtY0dX":"Du har varit St\xf6r ej i mer \xe4n en dag"}')
