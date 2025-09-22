@@ -2,16 +2,15 @@
 /** chunk id: 325100, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  uH: () => p
+  uH: () => c
 }), require("./35282.js");
 var Chunk593473 = require("./593473.js"),
-  Chunk843611 = require("./843611.js"),
-  Chunk873546 = require("./873546.js");
+  Chunk843611 = require("./843611.js");
 require("./960048.js");
 var Chunk833549 = require("./833549.js"),
   Chunk981631 = require("./981631.js");
 
-function l(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -20,46 +19,19 @@ function l(e, t, n) {
   }) : e[t] = n, e
 }
 require("./474936.js");
-let c = () => Chunk873546.tq && Chunk873546.bO,
-  u = e => {
-    let {
-      location: t
-    } = e, {
-      enabled: n
-    } = MobileApplePaymentLinkExperiment.getConfig({
-      location: t
-    });
-    return n
-  },
-  d = e => {
-    let {
-      location: t
-    } = e, n = f({
-      location: t
-    });
-    return c() && n
-  },
-  f = e => {
-    let {
-      location: t
-    } = e, {
-      enabled: n
-    } = o.E.useConfig({
-      location: t
-    });
-    return n
-  },
-  _ = (e, t, n) => !t.startsWith(s.Z5c.BILLING_MANAGE_SUBSCRIPTION) && n === s.MUe.APPLE_PAYMENT_LINK && e,
-  p = e => {
+let l = (e, t, n) => !t.startsWith(o.Z5c.BILLING_MANAGE_SUBSCRIPTION) && n === o.MUe.APPLE_PAYMENT_LINK && e,
+  c = e => {
     let {
       location: t
     } = e, {
       search: n,
-      pathname: a
-    } = (0, i.TH)(), o = d({
+      pathname: o
+    } = (0, i.TH)(), {
+      enabled: s
+    } = a.E.useConfig({
       location: t
     }), {
-      deep_link_type: s
+      deep_link_type: c
     } = (0, r.parse)(n);
-    return _(o, a, s)
+    return l(s, o, c)
   }
