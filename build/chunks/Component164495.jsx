@@ -2,8 +2,8 @@
 /** chunk id: 164495, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  i: () => L,
-  y: () => M
+  i: () => j,
+  y: () => k
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,11 +22,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk110560 = require("./110560.jsx"),
   Chunk667105 = require("./667105.jsx"),
   Chunk35215 = require("./35215.jsx"),
+  Chunk46140 = require("./46140.js"),
   Chunk215023 = require("./215023.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk165016 = require("./165016.js");
 
-function I(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,20 +36,20 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      I(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
 }
 
-function S(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,15 +60,15 @@ function S(e, t) {
   return n
 }
 
-function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function C(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function C(e, t) {
+function N(e, t) {
   if (null == e) return {};
-  var n, r, i = N(e, t);
+  var n, r, i = R(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -75,7 +76,7 @@ function C(e, t) {
   return i
 }
 
-function N(e, t) {
+function R(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -83,7 +84,7 @@ function N(e, t) {
   return i
 }
 
-function R(e) {
+function P(e) {
   let {
     quest: t,
     sourceQuestContent: n,
@@ -106,11 +107,11 @@ function R(e) {
     text: (0, f.F9)(i)
   })
 }
-let P = e => {
+let w = e => {
     let {
       quest: t,
       sourceQuestContent: n
-    } = e, i = (0, d.aM)(), o = (0, f.pO)(t) ? O.intl.string(O.t.hvVgAQ) : O.intl.string(O.t.lwQdjI);
+    } = e, i = (0, d.aM)(), o = (0, f.pO)(t) || t.config.features.includes(y.S7.NON_GAMING_PLAY_QUEST) ? v.intl.string(v.t.hvVgAQ) : v.intl.string(v.t.lwQdjI);
     return (0, r.jsx)(a.zxk, {
       size: "sm",
       fullWidth: true,
@@ -123,7 +124,7 @@ let P = e => {
       text: o
     })
   },
-  w = e => {
+  D = e => {
     var t;
     let {
       quest: n,
@@ -140,10 +141,10 @@ let P = e => {
         sourceQuestContent: i
       }),
       size: "sm",
-      text: O.intl.string(O.t.csptqa)
+      text: v.intl.string(v.t.csptqa)
     })
   },
-  D = e => {
+  x = e => {
     let {
       quest: t
     } = e, n = (0, m.CR)({
@@ -159,7 +160,7 @@ let P = e => {
       text: n
     }) : null
   },
-  x = e => {
+  L = e => {
     let {
       quest: t,
       sourceQuestContent: n,
@@ -177,65 +178,65 @@ let P = e => {
       targetElementRef: o,
       onGameSheetOpened: s,
       onGameSheetClosed: l,
-      children: e => (0, r.jsx)(a.zxk, T({
+      children: e => (0, r.jsx)(a.zxk, S({
         variant: "secondary",
         fullWidth: true,
         size: "sm",
-        text: O.intl.string(O.t["93PTEh"])
+        text: v.intl.string(v.t["93PTEh"])
       }, e))
     })
   },
-  L = e => {
+  j = e => {
     var t, n, {
         quest: d,
         useReducedMotion: _,
         isExpanded: m,
         className: g,
         ctaLabel: b,
-        onClick: I,
-        questContent: S = p.jn.QUEST_BAR_V2,
-        sourceQuestContent: N
+        onClick: y,
+        questContent: T = p.jn.QUEST_BAR_V2,
+        sourceQuestContent: A
       } = e,
-      R = C(e, ["quest", "useReducedMotion", "isExpanded", "className", "ctaLabel", "onClick", "questContent", "sourceQuestContent"]);
+      R = N(e, ["quest", "useReducedMotion", "isExpanded", "className", "ctaLabel", "onClick", "questContent", "sourceQuestContent"]);
     let P = (null == (t = d.userStatus) ? true : t.completedAt) != null,
       w = (0, E.hf)({
         quest: d,
-        questContent: S,
-        sourceQuestContent: N
+        questContent: T,
+        sourceQuestContent: A
       }),
       D = i.useCallback(e => {
         var t;
-        null == I || I(e), (0, f.xN)(d.config) && (null == (t = d.userStatus) ? true : t.claimedAt) != null ? (0, c.mK)({
+        null == y || y(e), (0, f.xN)(d.config) && (null == (t = d.userStatus) ? true : t.claimedAt) != null ? (0, c.mK)({
           openInLayer: false,
-          tab: y.AW.ORBS,
+          tab: O.AW.ORBS,
           analyticsLocations: [],
           analyticsSource: l.Z.QUEST_HOME_PAGE
         }) : w()
-      }, [I, d.config, null == (n = d.userStatus) ? true : n.claimedAt, w]),
+      }, [y, d.config, null == (n = d.userStatus) ? true : n.claimedAt, w]),
       {
         shouldUseShinyButton: x
       } = h.Z.useConfig({
-        location: (0, u._b)(N) + "- CtaButton"
+        location: (0, u._b)(A) + "- CtaButton"
       });
-    return x ? (0, r.jsx)(s.gtL, A(T({
+    return x ? (0, r.jsx)(s.gtL, C(S({
       fullWidth: true,
       size: o.zx.Sizes.SMALL,
       onClick: D,
       pauseAnimation: _ || !m && !P,
       className: g,
-      buttonShineClassName: v.shine,
+      buttonShineClassName: I.shine,
       "data-migration-pending": true
     }, R), {
-      children: null != b ? b : O.intl.string(O.t.cfY4PD)
-    })) : (0, r.jsx)(a.zxk, A(T({
+      children: null != b ? b : v.intl.string(v.t.cfY4PD)
+    })) : (0, r.jsx)(a.zxk, C(S({
       fullWidth: true,
       onClick: D,
-      text: null != b ? b : O.intl.string(O.t.cfY4PD)
+      text: null != b ? b : v.intl.string(v.t.cfY4PD)
     }, R), {
       size: R.size === o.zx.Sizes.MEDIUM ? "md" : "sm"
     }))
   },
-  j = e => {
+  M = e => {
     var t;
     let {
       quest: n,
@@ -251,48 +252,48 @@ let P = e => {
       onGameSheetOpened: h,
       onGameSheetClosed: m
     } = e, g = (null == (t = n.userStatus) ? true : t.completedAt) != null, E = (0, f.q8)(n), b = u !== p.LI.SELECT && !l && !c, y = null;
-    return g ? y = (0, r.jsx)(L, {
+    return g ? y = (0, r.jsx)(j, {
       quest: n,
       sourceQuestContent: i,
       useReducedMotion: a,
       isExpanded: o
-    }) : E ? y = (0, r.jsx)(R, {
+    }) : E ? y = (0, r.jsx)(P, {
       quest: n,
       sourceQuestContent: i,
       taskDetails: d
-    }) : (0, f.Rt)(n) ? y = (0, r.jsx)(D, {
+    }) : (0, f.Rt)(n) ? y = (0, r.jsx)(x, {
       quest: n
-    }) : u === p.LI.CONSOLE && s ? y = (0, r.jsx)(w, {
+    }) : u === p.LI.CONSOLE && s ? y = (0, r.jsx)(D, {
       quest: n,
       sourceQuestContent: i
-    }) : b && (0, f.Pb)(n) ? y = (0, r.jsx)(x, {
+    }) : b && (0, f.Pb)(n) ? y = (0, r.jsx)(L, {
       quest: n,
       sourceQuestContent: i,
       taskDetails: d,
       popoutTargetElementRef: _,
       onGameSheetOpened: h,
       onGameSheetClosed: m
-    }) : b && (y = (0, r.jsx)(P, {
+    }) : b && (y = (0, r.jsx)(w, {
       quest: n,
       sourceQuestContent: i
     })), null == y ? null : (0, r.jsx)("div", {
-      className: v.cta,
+      className: I.cta,
       children: y
     })
   };
 
-function M(e) {
+function k(e) {
   let t = i.useRef(null);
   return (0, r.jsxs)("div", {
-    className: v.ctaButtons,
+    className: I.ctaButtons,
     ref: t,
     children: [e.showBackButton && (0, r.jsx)(a.hU, {
       size: "sm",
-      "aria-label": O.intl.string(O.t["13/7kZ"]),
+      "aria-label": v.intl.string(v.t["13/7kZ"]),
       onClick: e.onBack,
       icon: s.V7D,
       variant: "secondary"
-    }), (0, r.jsx)(j, A(T({}, e), {
+    }), (0, r.jsx)(M, C(S({}, e), {
       popoutTargetElementRef: t,
       onGameSheetOpened: e.onGameSheetOpened,
       onGameSheetClosed: e.onGameSheetClosed

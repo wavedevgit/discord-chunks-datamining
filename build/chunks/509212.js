@@ -188,7 +188,8 @@ function X(e, t) {
 }
 
 function Q(e, t) {
-  return null != L.r.build(t.config).application.ids.find(t => t === e)
+  let n = L.r.build(t.config).applications;
+  return null != n && n.some(t => t.id === e)
 }
 
 function J(e, t) {

@@ -72,11 +72,12 @@ function b(e) {
     {
       targetMinutes: c
     } = r,
-    d = n.config.messages.gameTitle,
-    f = (0, s.f$)(n.config),
-    p = (0, s._p)(n.config);
-  return E(t = a && f ? p ? _.t["eb/SnZ"] : _.t.ziB0HB : f || null != o ? _.t.AwuMRU : _.t.NIimTk, {
-    gameTitle: d,
+    f = n.config.messages.gameTitle,
+    p = (0, s.f$)(n.config),
+    h = (0, s._p)(n.config),
+    m = n.config.features.includes(d.S7.NON_GAMING_PLAY_QUEST);
+  return E(t = a && p ? h ? m ? _.t.ztXW8f : _.t["eb/SnZ"] : m ? _.t["1AcTqq"] : _.t.ziB0HB : p || null != o ? m ? _.t.enQ3jY : _.t.AwuMRU : m ? _.t["e+K3xM"] : _.t.NIimTk, {
+    gameTitle: f,
     streamingDurationRequirement: c,
     rewardNameWithArticle: l,
     duration: o,
@@ -120,11 +121,12 @@ function O(e) {
     {
       targetMinutes: c
     } = r,
-    d = n.config.messages.gameTitle,
-    f = (0, s.f$)(n.config),
-    p = (0, s._p)(n.config);
-  return E(t = a && f ? p ? _.t["eb/SnZ"] : _.t.ziB0HB : f || null != o ? _.t.AwuMRU : _.t.FZL5Q0, {
-    gameTitle: d,
+    f = n.config.messages.gameTitle,
+    p = (0, s.f$)(n.config),
+    h = (0, s._p)(n.config),
+    m = n.config.features.includes(d.S7.NON_GAMING_PLAY_QUEST);
+  return E(t = a && p ? h ? m ? _.t.ztXW8f : _.t["eb/SnZ"] : m ? _.t["1AcTqq"] : _.t.ziB0HB : p || null != o ? m ? _.t.enQ3jY : _.t.AwuMRU : m ? _.t["03VJqq"] : _.t.FZL5Q0, {
+    gameTitle: f,
     streamingDurationRequirement: c,
     rewardNameWithArticle: l,
     duration: o,
