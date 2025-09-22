@@ -34,10 +34,10 @@ function d(e) {
     }(e, ["target"]);
   let d = (0, s.Z7)(),
     {
-      node: f,
-      directory: y
+      node: g,
+      directory: O
     } = (0, o.Z)(c.Z, d),
-    O = (t = a.n.ACCOUNT_PANEL, null == y.entry(n) ? t : n);
+    y = (t = a.n.ACCOUNT_PANEL, null == O.entry(n) ? t : n);
   return (0, r.jsx)(l.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -56,15 +56,15 @@ function d(e) {
     }
     return e
   }({
-    root: f,
-    directory: y,
-    sidebarHeader: g,
+    root: g,
+    directory: O,
+    sidebarHeader: f,
     sidebarFooter: u.Z,
-    target: O
+    target: y
   }, i))
 }
 
-function g() {
+function f() {
   let e = (0, Chunk996733.Z7)();
   return (0, Chunk951288.jsx)("div", {
     children: (0, Chunk951288.jsx)(Chunk481060.E1j, {

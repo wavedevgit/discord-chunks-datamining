@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 79808, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -43,70 +43,70 @@ function d(e, t) {
   }), e
 }
 
-function g(e) {
+function f(e) {
   var t, n;
   let {
-    root: g,
-    directory: f,
-    target: y,
-    onClose: O,
+    root: f,
+    directory: g,
+    target: O,
+    onClose: y,
     sidebarHeader: E,
     sidebarFooter: b
-  } = e, [v, p] = i.useState(true), [T, m] = i.useState(null == (t = f.entry(y)) ? true : t.parentPanel), [N, j] = i.useState({
-    target: y,
-    targetAccordion: null == (n = f.entry(y)) ? true : n.parentAccordion,
+  } = e, [p, T] = i.useState(true), [v, N] = i.useState(null == (t = g.entry(O)) ? true : t.parentPanel), [S, j] = i.useState({
+    target: O,
+    targetAccordion: null == (n = g.entry(O)) ? true : n.parentAccordion,
     animateScroll: false,
-    complete: S
+    complete: m
   });
 
-  function S() {
+  function m() {
     j(true)
   }
   let {
-    navigateWithValidation: I
+    navigateWithValidation: _
   } = (0, s.Cu)(), C = {
-    currentPanel: f.typedGet(T),
+    currentPanel: g.typedGet(v),
     navigateTo: e => {
-      let t = f.entry(e);
+      let t = g.entry(e);
       if ((null == t ? true : t.parentPanel) == null) return;
       let n = {
         target: e,
         targetAccordion: t.parentAccordion,
-        complete: S
+        complete: m
       };
-      if (t.parentPanel.key !== (null == T ? true : T.key)) {
+      if (t.parentPanel.key !== (null == v ? true : v.key)) {
         let e = t.parentPanel;
-        I(() => {
+        _(() => {
           j(d(c({}, n), {
             animateScroll: false
-          })), m(e)
+          })), N(e)
         })
       } else j(d(c({}, n), {
         animateScroll: true
       }))
     },
-    navTransition: N,
-    showNavigationMobile: v,
-    setShowNavigationMobile: p
+    navTransition: S,
+    showNavigationMobile: p,
+    setShowNavigationMobile: T
   };
   return (0, r.jsx)(a.j.Provider, {
     value: C,
     children: (0, r.jsxs)("div", {
       className: u.container,
       children: [(0, r.jsx)(o.P, {
-        root: g,
+        root: f,
         header: E,
         footer: b
       }), (0, r.jsx)(l.Z, {
-        onClose: () => I(O),
+        onClose: () => _(y),
         setting: C.currentPanel
       })]
     })
   })
 }
 
-function f(e) {
+function g(e) {
   return (0, r.jsx)(s.Ri, {
-    children: (0, r.jsx)(g, c({}, e))
+    children: (0, r.jsx)(f, c({}, e))
   })
 }

@@ -1,11 +1,11 @@
 /** Chunk was on 47129 **/
 /** chunk id: 509613, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $l: () => y,
-  CB: () => f,
-  Em: () => v,
-  J9: () => p,
-  ON: () => T,
+  $l: () => O,
+  CB: () => g,
+  Em: () => p,
+  J9: () => T,
+  ON: () => v,
   Ql: () => function e(t, n) {
     if ("function" == typeof(null == t ? true : t.getLayout)) {
       let n = t.getLayout().map(t => e(t)),
@@ -34,7 +34,7 @@ require.d(exports, {
     return t
   },
   ax: () => E,
-  k4: () => g,
+  k4: () => f,
   m7: () => u,
   qs: () => b,
   so: () => s,
@@ -106,19 +106,19 @@ function d(e, t) {
   return o(e, r.Jq.PANE, t)
 }
 
-function g(e, t) {
+function f(e, t) {
   return o(e, r.Jq.CATEGORY, t)
 }
 
-function f(e, t) {
+function g(e, t) {
   return o(e, r.Jq.ACCORDION, t)
 }
 
-function y(e, t) {
+function O(e, t) {
   return o(e, r.Jq.LIST, t)
 }
 
-function O(e, t, n) {
+function y(e, t, n) {
   return l(i({}, n), {
     key: e,
     type: t
@@ -126,21 +126,21 @@ function O(e, t, n) {
 }
 
 function E(e, t) {
-  return O(e, r.Jq.BUTTON, t)
+  return y(e, r.Jq.BUTTON, t)
 }
 
 function b(e, t) {
-  return O(e, r.Jq.TOGGLE, t)
-}
-
-function v(e, t) {
-  return O(e, r.Jq.SELECT, t)
+  return y(e, r.Jq.TOGGLE, t)
 }
 
 function p(e, t) {
-  return O(e, r.Jq.RADIO, t)
+  return y(e, r.Jq.SELECT, t)
 }
 
 function T(e, t) {
-  return O(e, r.Jq.CUSTOM, t)
+  return y(e, r.Jq.RADIO, t)
+}
+
+function v(e, t) {
+  return y(e, r.Jq.CUSTOM, t)
 }

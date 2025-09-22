@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 829210, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => v
 }), require("./361932.js"), require("./187205.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,66 +10,139 @@ var Chunk951288 = require("./951288.js"),
   Chunk938288 = require("./938288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk59662 = require("./59662.js"),
+  Chunk28682 = require("./28682.js"),
   Chunk854014 = require("./854014.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk643153 = require("./643153.js");
 
-function f(e) {
-  var t, n, l, o, s;
+function O(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
+    })
+  }
+  return e
+}
+
+function y(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function E(e) {
   let {
-    node: g,
-    visibleContent: f
+    useCount: t
+  } = e, n = t();
+  return 0 === n ? null : (0, r.jsx)(a.mAB, {
+    count: n
+  })
+}
+
+function b(e) {
+  let {
+    dismissibleContentTypes: t,
+    badgeComponent: n,
+    visibleContent: i
+  } = e, l = null != i && t.includes(i), o = null != n ? (0, r.jsx)(n, {}) : (0, r.jsx)(a.IGR, {
+    text: f.intl.string(f.t.y2b7CA)
+  });
+  return l ? o : null
+}
+
+function p(e) {
+  let {
+    useDecoration: t,
+    visibleContent: n
+  } = e;
+  return t(n)
+}
+
+function T(e) {
+  let {
+    trailing: t,
+    visibleContent: n
+  } = e;
+  if (null == t) return null;
+  switch (t.type) {
+    case c.PU.BADGE_COUNT:
+      return (0, r.jsx)(E, O({}, t));
+    case c.PU.BADGE_NEW:
+      return (0, r.jsx)(b, y(O({}, t), {
+        visibleContent: n
+      }));
+    case c.PU.STRONGLY_DISCOURAGED_CUSTOM:
+      return (0, r.jsx)(p, y(O({}, t), {
+        visibleContent: n
+      }))
+  }
+}
+
+function v(e) {
+  let {
+    node: t,
+    visibleContent: n
   } = e, {
-    currentPanel: O,
-    navigateTo: E,
-    setShowNavigationMobile: b
+    currentPanel: l,
+    navigateTo: o,
+    setShowNavigationMobile: s
   } = (0, u.t)(), {
-    useTitle: v,
-    trailing: p,
-    stronglyDiscouragedCustomTab: T
-  } = g, m = v(), N = null != (o = null == p || null == (t = p.useDecoration) ? true : t.call(p)) ? o : null, j = null != (s = null == p || null == (n = p.useBadgeCount) ? true : n.call(p)) ? s : null, S = i.useMemo(() => g.layout.flatMap(e => e.layout), [g]), I = null != f && (null == p || null == (l = p.newIndicatorDismissibleContentTypes) ? true : l.includes(f)), C = (null == O ? true : O.key) === g.key, _ = () => {
-    E(g.key), b(false)
+    useTitle: a,
+    trailing: c,
+    stronglyDiscouragedCustomTab: f
+  } = t, g = a(), O = i.useMemo(() => t.layout.flatMap(e => e.layout), [t]), y = (null == l ? true : l.key) === t.key, E = () => {
+    o(t.key), s(false)
   };
-  return null != T ? (0, r.jsx)(T, {
-    active: C,
-    onClick: _
+  return null != f ? (0, r.jsx)(f, {
+    active: y,
+    onClick: E
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(c.Z, {
-      icon: g.icon,
-      title: m,
-      active: C,
-      trailing: (0, r.jsx)(() => {
-        if (I) {
-          var e;
-          return null != (e = null == p ? true : p.newIndicatorBadgeOverride) ? e : (0, r.jsx)(a.IGR, {
-            text: d.intl.string(d.t.y2b7CA)
-          })
-        }
-        return null != j && j > 0 ? (0, r.jsx)(a.mAB, {
-          count: j
-        }) : null != N ? N : null
-      }, {}),
-      onClick: _
-    }), C && S.length > 1 && (0, r.jsx)(y, {
-      categories: S
+    children: [(0, r.jsx)(d.Z, {
+      icon: t.icon,
+      title: g,
+      active: y,
+      trailing: (0, r.jsx)(T, {
+        trailing: c,
+        visibleContent: n
+      }),
+      onClick: E
+    }), y && O.length > 1 && (0, r.jsx)(N, {
+      categories: O
     })]
   })
 }
 
-function y(e) {
+function N(e) {
   let {
     categories: t
   } = e, [n, l] = i.useState(0), {
     setShowNavigationMobile: c,
     navigateTo: d
-  } = (0, u.t)(), [f, y] = (0, a.q_F)(() => ({
+  } = (0, u.t)(), [f, O] = (0, a.q_F)(() => ({
     y: 0,
     config: {
       mass: .1,
       friction: 20,
       tension: 300
     }
-  })), O = i.useMemo(() => t.map(e => {
+  })), y = i.useMemo(() => t.map(e => {
     var t;
     return {
       title: null == (t = e.useTitle) ? true : t.call(e),
@@ -90,14 +163,14 @@ function y(e) {
         style: f
       })
     }), (0, r.jsx)("ul", {
-      children: O.map((e, t) => {
+      children: y.map((e, t) => {
         let {
           title: i,
           key: s
         } = e;
         return (0, r.jsx)(a.P3F, {
           onClick: () => {
-            l(t), y({
+            l(t), O({
               y: 36 * t
             }), c(false), d(s)
           },

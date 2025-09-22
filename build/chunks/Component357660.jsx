@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 357660, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  T: () => g
+  T: () => f
 }), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,18 +19,18 @@ function d(e) {
   } = e, {
     showNotice: u,
     handleStoreUpdate: d
-  } = (0, a.Cu)(), g = null == t ? true : t.stores;
+  } = (0, a.Cu)(), f = null == t ? true : t.stores;
   i.useEffect(() => {
-    if (null != g) {
-      let e = new l.Fh(g, () => {
-        d(g)
+    if (null != f) {
+      let e = new l.Fh(f, () => {
+        d(f)
       });
-      return e.attach("SettingPanelNotice"), d(g), () => {
+      return e.attach("SettingPanelNotice"), d(f), () => {
         e.detach()
       }
     }
-  }, [g, d]);
-  let f = i.useMemo(() => {
+  }, [f, d]);
+  let g = i.useMemo(() => {
     if (null == t || !u) return null;
     let {
       element: e
@@ -43,12 +43,12 @@ function d(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [n, (0, r.jsx)(o.W, {
       component: "div",
-      children: f
+      children: g
     })]
   })
 }
 
-function g(e) {
+function f(e) {
   let {
     node: t
   } = e, n = t.render;

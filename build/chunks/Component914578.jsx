@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk989281 = require("./989281.js");
 
-function O(e) {
+function y(e) {
   let {
     onClose: t
   } = e;
@@ -28,15 +28,15 @@ function O(e) {
     children: (0, r.jsxs)(s.kSQ, {
       children: [(0, r.jsx)(s.sNh, {
         id: "changelog",
-        label: f.intl.string(f.t.LRmNAg),
+        label: g.intl.string(g.t.LRmNAg),
         action: () => (0, u.Z)(true)
       }), (0, r.jsx)(s.sNh, {
         id: "acknowledgements",
-        label: f.intl.string(f.t["0nUKy8"]),
-        action: () => (0, a.Z)(g.EYA.ACKNOWLEDGEMENTS)
+        label: g.intl.string(g.t["0nUKy8"]),
+        action: () => (0, a.Z)(f.EYA.ACKNOWLEDGEMENTS)
       }), (0, r.jsx)(s.sNh, {
         id: "support",
-        label: f.intl.string(f.t["Yl/Rio"]),
+        label: g.intl.string(g.t["Yl/Rio"]),
         action: () => (0, a.Z)(c.w)
       })]
     })
@@ -84,7 +84,7 @@ function E() {
           let {
             closePopout: t
           } = e;
-          return (0, r.jsx)(O, {
+          return (0, r.jsx)(y, {
             onClose: t
           })
         },
@@ -110,14 +110,14 @@ function E() {
           }({}, t), l = l = {
             ref: e,
             useDefaultUnderlineStyles: false,
-            className: o()(y.moreButton, {
-              [y.active]: n.isShown
+            className: o()(O.moreButton, {
+              [O.active]: n.isShown
             }),
             children: (0, r.jsx)(s.Text, {
               tag: "span",
               variant: "text-xxs/normal",
               color: "currentColor",
-              children: f.intl.string(f.t.UKOtz8)
+              children: g.intl.string(g.t.UKOtz8)
             })
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);

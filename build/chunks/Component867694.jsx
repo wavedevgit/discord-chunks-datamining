@@ -18,15 +18,15 @@ function o(e) {
     useSubtitle: u,
     useDisabled: c,
     useTooltip: d
-  } = n, g = a(), f = null == u ? true : u(), y = o(), O = null != (t = null == c ? true : c()) && t, E = null == d ? true : d();
+  } = n, f = a(), g = null == u ? true : u(), O = o(), y = null != (t = null == c ? true : c()) && t, E = null == d ? true : d();
   return (0, r.jsx)(i.j, {
-    value: y,
+    value: O,
     onChange: e => s(e),
     className: l.toggle,
-    note: f,
-    disabled: O,
+    note: g,
+    disabled: y,
     tooltipNote: E,
     hideBorder: true,
-    children: g
+    children: f
   })
 }

@@ -28,19 +28,19 @@ function E(e) {
     case i.Jq.SIDEBAR_ITEM:
       throw Error("".concat(t.type, " nodes should never be rendered directly"));
     case i.Jq.PANEL:
-      return (0, r.jsx)(O.T, {
+      return (0, r.jsx)(y.T, {
         node: t
       });
     case i.Jq.PANE:
-      return (0, r.jsx)(y.Z, {
+      return (0, r.jsx)(O.Z, {
         node: t
       });
     case i.Jq.LIST:
-      return (0, r.jsx)(f.Z, {
+      return (0, r.jsx)(g.Z, {
         node: t
       });
     case i.Jq.CATEGORY:
-      return (0, r.jsx)(g.Z, {
+      return (0, r.jsx)(f.Z, {
         node: t
       });
     case i.Jq.ACCORDION:

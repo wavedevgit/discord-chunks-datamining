@@ -16,22 +16,22 @@ let u = Chunk647438.memo(function(e) {
     useTitle: n,
     layout: u,
     useSubtitle: c
-  } = t, [d, g] = i.useState(false), {
-    navTransition: f
+  } = t, [d, f] = i.useState(false), {
+    navTransition: g
   } = (0, l.t)();
   i.useEffect(() => {
     var e;
-    (null == f || null == (e = f.targetAccordion) ? true : e.key) === t.key && g(true)
-  }, [null == f ? true : f.targetAccordion, t.key]);
-  let y = null == n ? true : n(d),
-    O = null == c ? true : c();
+    (null == g || null == (e = g.targetAccordion) ? true : e.key) === t.key && f(true)
+  }, [null == g ? true : g.targetAccordion, t.key]);
+  let O = null == n ? true : n(d),
+    y = null == c ? true : c();
   return (0, r.jsx)("div", {
     className: a.accordion,
     children: (0, r.jsx)(s.I, {
-      title: y,
-      subtitle: O,
+      title: O,
+      subtitle: y,
       isOpen: d,
-      setIsOpen: g,
+      setIsOpen: f,
       children: u.map(e => (0, r.jsx)(o.Z, {
         node: e
       }, e.key))
