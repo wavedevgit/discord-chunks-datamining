@@ -3,7 +3,7 @@
 require.d(exports, {
   Tj: () => m,
   WG: () => c,
-  ZD: () => f,
+  ZD: () => p,
   pD: () => d
 }), require("./953529.js"), require("./539854.js");
 var Chunk990547 = require("./990547.js"),
@@ -49,7 +49,7 @@ function m() {
     value: 3
   }]
 }
-async function f(e, t, n) {
+async function p(e, t, n) {
   var i, u;
   let c = [{
     name: "name",
@@ -73,6 +73,9 @@ async function f(e, t, n) {
   }), null != e.buildOverride && c.push({
     name: "build_override",
     value: e.buildOverride
+  }), null != e.experimentOverrides && c.push({
+    name: "experiment_overrides",
+    value: e.experimentOverrides.map(e => "".concat(e.experimentId, ":").concat(e.variantId)).join(",")
   });
   let d = null == (i = e.feature) ? true : i.asana_inbox_id;
   null != d && "" !== d && c.push({

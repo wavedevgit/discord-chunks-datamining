@@ -18,6 +18,10 @@ let r = (0, require("./427164.js").le)({
     2: {
       enabled: true,
       variant: "icon-in-bubble"
+    },
+    3: {
+      enabled: true,
+      variant: "small-text-only"
     }
   }
 });

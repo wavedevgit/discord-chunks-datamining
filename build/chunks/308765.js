@@ -317,10 +317,6 @@ let i = {
     actions: ["CHANNEL_UPDATES", "VOICE_STATE_UPDATES"],
     inlineRequire: () => require("./583523.js").Z
   },
-  VoiceChannelNotificationsManager: {
-    actions: ["VOICE_CHANNEL_SELECT"],
-    inlineRequire: () => require("./298579.js").Z
-  },
   VoiceFilterLoopbackManager: {
     actions: ["RTC_CONNECTION_STATE", "VOICE_FILTER_LOOPBACK_TOGGLE", "VOICE_FILTER_APPLIED", "AUDIO_TOGGLE_SELF_MUTE", "AUDIO_SET_TEMPORARY_SELF_MUTE", "AUDIO_SET_SELF_MUTE"],
     inlineRequire: () => require("./986057.js").Z,
