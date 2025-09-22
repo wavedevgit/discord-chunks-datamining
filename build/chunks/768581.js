@@ -225,7 +225,7 @@ function j(e) {
   } = window.GLOBAL_ENV, c = f.ANM.AVATAR_DECORATION_PRESETS(i);
   if (/^blob:https?:\/\/[^\/]+\//i.test(i)) return i;
   let u = new URL(null != a ? "https://".concat(a).concat(c) : "".concat(location.protocol).concat(o).concat(c));
-  return u.searchParams.set("size", "".concat((0, l.oO)(n * (0, l.x_)()))), u.searchParams.set("passthrough", "".concat(r && (0, s.ae)(i))), u.toString()
+  return u.searchParams.set("size", "".concat((0, l.oO)(n * (0, l.x_)()))), u.searchParams.set("passthrough", "".concat(r)), u.toString()
 }
 
 function M(e) {
