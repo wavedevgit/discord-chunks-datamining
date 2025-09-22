@@ -40,7 +40,7 @@ function P(e) {
   } = f.n.useExperiment({
     guildId: o.guild_id,
     location: "HangStatusPicker"
-  }), M = (0, g.V)(R), D = i.useRef(null), [k, L] = i.useState(null != (n = null == N ? true : N.status) ? n : ""), [U, B] = i.useState(null != (l = null == N ? true : N.emoji) ? l : null), G = (0, u.e7)([m.Z], () => m.Z.getCurrentHangStatus()), H = w.length > 0, F = null == k || "" === k.trim(), V = (0, y.Z)(o), z = k.trim().length > 0 && k.trim() !== (null == N || null == (t = N.status) ? true : t.trim()), [W, q] = i.useState(false);
+  }), M = (0, g.V)(R), D = i.useRef(null), [k, L] = i.useState(null != (n = null == N ? true : N.status) ? n : ""), [U, B] = i.useState(null != (l = null == N ? true : N.emoji) ? l : null), G = (0, u.e7)([m.Z], () => m.Z.getCurrentHangStatus()), H = w.length > 0, F = null == k || "" === k.trim(), V = (0, y.Z)(o), z = k.trim().length > 0 && k.trim() !== (null == N || null == (t = N.status) ? true : t.trim()) || null != U && !s()(U, null == N ? true : N.emoji), [W, q] = i.useState(false);
   i.useEffect(() => {
     k.trim().length > 0 && W && q(false), null == U && W && q(false)
   }, [k, U, W]), i.useEffect(() => {
@@ -56,18 +56,16 @@ function P(e) {
     (null == G || G === O.tN.CUSTOM) && (null == (e = T.current) || e.focus())
   }, [G]), i.useEffect(() => {
     null == Z || Z(null == D ? true : D.current)
-  }, [D, Z]), i.useEffect(() => {
-    (null == N ? true : N.emoji) != null && null != N.status ? (L(N.status), B(N.emoji)) : (L(""), B(null))
-  }, [N]);
+  }, [D, Z]);
   let Y = i.useCallback(e => {
-      e !== G && (0, h.Zx)(e, true)
-    }, [G]),
-    K = i.useCallback(e => {
+      e !== G && ((0, h.Zx)(e, true), null != U && B(null), "" !== k.trim() && L(""))
+    }, [G, U, k]),
+    K = i.useCallback((e, t) => {
       let {
-        emoji: t,
-        status: n
+        emoji: n,
+        status: r
       } = e;
-      s()(t, null == N ? true : N.emoji) && n === (null == N ? true : N.status) || (0, h._s)(e.status, e.emoji, true)
+      s()(n, null == N ? true : N.emoji) && r === (null == N ? true : N.status) || ((0, h._s)(e.status, e.emoji, true), B(t ? null : e.emoji), L(t ? "" : e.status))
     }, [null == N ? true : N.emoji, null == N ? true : N.status]),
     X = i.useCallback(e => {
       var t;
@@ -78,7 +76,7 @@ function P(e) {
           name: "\uD83D\uDCAD",
           animated: false
         }
-      })
+      }, true)
     }, [k, U, K, F]),
     Q = i.useCallback(() => {
       let e = null,
