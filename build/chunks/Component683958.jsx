@@ -34,8 +34,8 @@ function O(e) {
       command: y,
       onClose: O,
       requireLaunchChannel: _,
-      onShareResult: E,
-      previewMessage: P
+      onShareResult: P,
+      previewMessage: E
     } = e,
     w = function(e, t) {
       if (null == e) return {};
@@ -72,10 +72,10 @@ function O(e) {
     D = r.useRef(0),
     [A, k] = r.useState(_ && null != Z ? [Z] : []),
     I = A.length,
-    R = I >= 5,
-    [F, q] = r.useState(""),
+    F = I >= 5,
+    [R, U] = r.useState(""),
     {
-      results: U,
+      results: q,
       updateSearchText: H
     } = (0, c.s)({
       selectedDestinations: A,
@@ -83,20 +83,20 @@ function O(e) {
       includeMissingDMs: true
     }),
     z = r.useCallback(e => {
-      q(e), H(e)
+      U(e), H(e)
     }, [H]),
-    G = r.useCallback(() => (E(false), O()), [E, O]),
+    G = r.useCallback(() => (P(false), O()), [P, O]),
     [W] = (0, o.Z)([n]),
     V = r.useCallback(() => {
-      q("")
-    }, [q]),
+      U("")
+    }, [U]),
     X = r.useRef(null);
   r.useEffect(() => {
-    if ("" === F) {
+    if ("" === R) {
       var e;
       null == (e = X.current) || e.focus()
     }
-  }, [F]);
+  }, [R]);
   let J = r.useCallback(e => {
       k(t => {
         let n = t.findIndex(t => {
@@ -106,24 +106,24 @@ function O(e) {
           } = t;
           return n === e.type && l === e.id
         });
-        if (false === n) return R ? t : (q(""), H(""), D.current += 1, [e, ...t]);
+        if (false === n) return F ? t : (U(""), H(""), D.current += 1, [e, ...t]);
         let l = [...t];
         return l.splice(n, 1), D.current += 1, l
       })
-    }, [R, H]),
-    [Y, B] = r.useMemo(() => {
+    }, [F, H]),
+    [Q, Y] = r.useMemo(() => {
       if (T) return [null, false];
       let e = M.find(e => e.untranslatedName === y.name);
       return true !== e ? [e, false] : [null, true]
     }, [y, M, T]),
-    Q = r.useCallback(async function(e) {
+    B = r.useCallback(async function(e) {
       let {
         closeAfterSend: t
       } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-      if (null === Y) return;
+      if (null === Q) return;
       N(true);
       let n = (await Promise.all(e.map(u.qx))).filter(p.lm);
-      t && (E(true), C()), n.forEach(async e => {
+      t && (P(true), C()), n.forEach(async e => {
         var t, n;
         let l = d.Z.getChannel(e);
         if (null == l) return;
@@ -132,21 +132,21 @@ function O(e) {
             text: t.value
           }], e), {})) ? n : {},
           i = f.Z.getGuild(null == l ? true : l.guild_id);
-        null != await (0, h.Z)({
-          command: Y,
+        null != await (0, m.Z)({
+          command: Q,
           optionValues: r,
           context: {
             channel: l,
             guild: i
           }
         }) && (0, a.showToast)((0, a.createToast)(v.intl.string(v.t["5WjJcn"]), a.ToastType.MESSAGE))
-      }), E(true), C()
-    }, [E, Y, y.options]),
+      }), P(true), C()
+    }, [P, Q, y.options]),
     K = r.useCallback(() => {
-      Q(A, {
+      B(A, {
         closeAfterSend: true
       })
-    }, [Q, A]);
+    }, [B, A]);
   if (T) return (0, l.jsx)(i.Modal, {
     title: v.intl.string(v.t.fuFvw8),
     "aria-label": v.intl.string(v.t.fuFvw8),
@@ -157,7 +157,7 @@ function O(e) {
       className: x.spinnerContainer
     })
   });
-  if (B) return (0, l.jsx)(i.Modal, {
+  if (Y) return (0, l.jsx)(i.Modal, {
     title: v.intl.string(v.t.fuFvw8),
     "aria-label": v.intl.string(v.t.fuFvw8),
     transitionState: w.transitionState,
@@ -169,13 +169,11 @@ function O(e) {
     }],
     children: v.intl.string(v.t.yAk8ZW)
   });
-  let $ = U.length > 0 ? (0, l.jsx)(g.F, {
-      paddingBottom: 16,
-      paddingTop: 16,
-      rowData: U,
+  let $ = q.length > 0 ? (0, l.jsx)(g.F, {
+      rowData: q,
       handleToggleDestination: J,
       selectedDestinations: A,
-      disableSelection: R,
+      disableSelection: F,
       originDestination: Z
     }) : (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsx)("img", {
@@ -195,7 +193,7 @@ function O(e) {
   let et = v.intl.format(v.t["DF+q2t"], {
     appName: null == W ? true : W.name
   });
-  return R && (et = v.intl.format(v.t["/KhyPT"], {
+  return F && (et = v.intl.format(v.t["/KhyPT"], {
     count: 5
   })), (0, l.jsx)(i.Modal, {
     title: ee.toString(),
@@ -214,12 +212,12 @@ function O(e) {
       disabled: 0 === I || L,
       variant: "primary"
     }],
-    preview: true !== P ? (0, l.jsx)(m.z, {
-      previewMessage: P
+    preview: true !== E ? (0, l.jsx)(h.z, {
+      previewMessage: E
     }) : null,
     input: (0, l.jsx)(a.E1j, {
       ref: X,
-      query: F,
+      query: R,
       onChange: z,
       onClear: V,
       placeholder: v.intl.string(v.t["5h0QOD"]),

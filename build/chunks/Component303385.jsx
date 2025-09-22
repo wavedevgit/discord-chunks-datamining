@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk938288 = require("./938288.js"),
+  Chunk401393 = require("./401393.js"),
   Chunk481060 = require("./481060.js"),
   Chunk497505 = require("./497505.js"),
   Chunk685138 = require("./685138.js"),
@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk895758 = require("./895758.js");
 let p = 64,
   h = 8,
-  m = (0, Chunk938288.animated)(Chunk481060.$i$),
+  m = (0, Chunk401393.animated)(Chunk481060.$i$),
   g = e => {
     let {
       quest: t,

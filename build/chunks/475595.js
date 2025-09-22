@@ -42,32 +42,32 @@ function m(e, t) {
 }
 
 function g(e, t, n, i) {
-  var a, l;
-  let d, f = false;
+  var a, s;
+  let l, d = false;
   switch (t) {
     case "hero":
-      d = m(e.config.assets.heroVideo, e.config.assets.hero);
+      l = m(e.config.assets.heroVideo, e.config.assets.hero);
       break;
     case "hero_image":
-      d = e.config.assets.hero;
+      l = e.config.assets.hero;
       break;
     case "hero_video": {
       let t = e.config.assets.heroVideo,
         n = "videoMetadata" in e.config ? null == (a = e.config.videoMetadata) ? true : a.assets.questHomeVideo : null,
         r = null != t ? t : n;
       if (null == r) return null;
-      d = r;
+      l = r;
       break
     }
     case "quest_bar_hero":
-      d = m(e.config.assets.questBarHeroVideo, e.config.assets.questBarHero);
+      l = m(e.config.assets.questBarHeroVideo, e.config.assets.questBarHero);
       break;
     case "quest_bar_hero_video": {
       let t = e.config.assets.questBarHeroVideo,
-        n = "videoMetadata" in e.config ? null == (l = e.config.videoMetadata) ? true : l.assets.questBarPreviewVideo : null,
+        n = "videoMetadata" in e.config ? null == (s = e.config.videoMetadata) ? true : s.assets.questBarPreviewVideo : null,
         r = null != t ? t : n;
       if (null == r) return null;
-      d = r;
+      l = r;
       break
     }
     case "reward": {
@@ -81,29 +81,27 @@ function g(e, t, n, i) {
         mimetype: "video/webm",
         isAnimated: true
       };
-      d = m(t.assetVideo, t.asset);
+      l = m(t.assetVideo, t.asset);
       break
     }
     case "reward_image": {
       let t = (0, o.hF)(e);
       if (t.type === r.w.VIRTUAL_CURRENCY) return null;
-      d = t.asset;
+      l = t.asset;
       break
     }
     case "game_tile":
-      "dark" === n && null != e.config.assets.gameTileDark ? d = e.config.assets.gameTileDark : "light" === n && null != e.config.assets.gameTileLight ? d = e.config.assets.gameTileLight : (d = e.config.assets.gameTile, f = true);
+      "dark" === n && null != e.config.assets.gameTileDark ? l = e.config.assets.gameTileDark : "light" === n && null != e.config.assets.gameTileLight ? l = e.config.assets.gameTileLight : (l = e.config.assets.gameTile, d = true);
       break;
     case "logo_type":
-      "dark" === n && null != e.config.assets.logotypeDark ? d = e.config.assets.logotypeDark : "light" === n && null != e.config.assets.logotypeLight ? d = e.config.assets.logotypeLight : (d = e.config.assets.logotype, f = true);
+      "dark" === n && null != e.config.assets.logotypeDark ? l = e.config.assets.logotypeDark : "light" === n && null != e.config.assets.logotypeLight ? l = e.config.assets.logotypeLight : (l = e.config.assets.logotype, d = true);
       break;
     case "cosponsor_logo_type":
       if (null == e.config.cosponsorMetadata) return null;
-      "dark" === n && null != e.config.cosponsorMetadata.logotypeDark ? d = e.config.cosponsorMetadata.logotypeDark : "light" === n && null != e.config.cosponsorMetadata.logotypeLight ? d = e.config.cosponsorMetadata.logotypeLight : (d = e.config.cosponsorMetadata.logotype, f = true)
+      "dark" === n && null != e.config.cosponsorMetadata.logotypeDark ? l = e.config.cosponsorMetadata.logotypeDark : "light" === n && null != e.config.cosponsorMetadata.logotypeLight ? l = e.config.cosponsorMetadata.logotypeLight : (l = e.config.cosponsorMetadata.logotype, d = true)
   }
-  let _ = e.config.features.includes(s.S7.QUESTS_CDN);
-  return h(e.id, d, {
-    theme: f ? n : true,
-    newCdn: _
+  return h(e.id, l, {
+    theme: d ? n : true
   })
 }
 
@@ -114,7 +112,7 @@ function E(e) {
 
 function b(e, t, n) {
   if (t.startsWith("blob:")) return E(t);
-  let r = (null == n ? true : n.newCdn) ? s.tD : s.Uo;
+  let r = s.tD;
   return "".concat(r).concat(e).concat((null == n ? true : n.theme) != null ? "/".concat(n.theme) : "", "/").concat(t)
 }
 

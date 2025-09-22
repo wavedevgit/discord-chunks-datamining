@@ -76,10 +76,10 @@ function k(e) {
       },
       rejectWithError: true
     }).then(e => {
-      if (null != e.body && "e79971d98cc845362973ca0c127fa8781837727f" !== e.body.hash) {
-        let e = new Date("1758573615584"),
+      if (null != e.body && "2ba74f2bcedec66d8fe64b865b686bd289329d6f" !== e.body.hash) {
+        let e = new Date("1758575272461"),
           t = new Date,
-          n = (0, b.TD)(t, e);
+          n = (0, j.TD)(t, e);
         n.hours > 6 && ex(n.hours)
       }
     })
@@ -93,12 +93,12 @@ function k(e) {
       return null == (e = m.C.getCurrentBuildOverride().overrides) ? true : e.discord_web
     }),
     {
-      overridesInfo: ej
+      overridesInfo: eb
     } = (0, g.s)(),
     {
-      overridesInfo: eb
+      overridesInfo: ej
     } = (0, x.Q)(),
-    eO = Object.entries(C({}, ej, eb)).map(e => {
+    eO = Object.entries(C({}, eb, ej)).map(e => {
       let [t, {
         variantId: n
       }] = e;
@@ -261,7 +261,7 @@ function k(e) {
                     children: [(0, r.jsx)("img", {
                       alt: "",
                       className: P.formPriorityImage,
-                      src: (0, j.gT)({
+                      src: (0, b.gT)({
                         id: t.emoji,
                         animated: true,
                         size: 48
