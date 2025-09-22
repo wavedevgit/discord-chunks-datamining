@@ -40,25 +40,25 @@ let j = e => {
     prioritizeUserDiscounts: B,
     tab: N,
     buttonContainerClassName: A
-  } = e, P = (0, i.e7)([d.default], () => d.default.getCurrentUser()), R = _.ZP.canUseCollectibles(P), Z = (0, v.G)("FeedBlock"), {
+  } = e, P = (0, i.e7)([d.default], () => d.default.getCurrentUser()), R = h.ZP.canUseCollectibles(P), Z = (0, v.G)("FeedBlock"), {
     sortType: w,
-    setSortType: F,
-    sortedItems: M,
+    setSortType: M,
+    sortedItems: F,
     sortOptions: H,
     shuffleProducts: D,
     showRecommendationOption: W
-  } = (0, S.Z)(j, R, B), U = (0, O.St)(M), V = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), z = (0, i.e7)([g.Z], () => g.Z.isFocused()), G = !V && z, {
+  } = (0, S.Z)(j, R, B), U = (0, O.St)(F), V = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), z = (0, i.e7)([g.Z], () => g.Z.isFocused()), G = !V && z, {
     animationPhase: q,
     startAnimation: K
-  } = (0, E.y)(), Y = (0, h.sp)(), X = null != (t = null == Y ? true : Y.sessionId) ? t : "", Q = l.useRef(null), J = l.useCallback(e => {
+  } = (0, E.y)(), Y = (0, _.sp)(), X = null != (t = null == Y ? true : Y.sessionId) ? t : "", Q = l.useRef(null), J = l.useCallback(e => {
     K({
       isShuffling: false,
-      onOutroComplete: () => F(e)
+      onOutroComplete: () => M(e)
     }), p.default.track(x.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
       page_session_id: X,
       sort_type: e
     })
-  }, [K, F, X]);
+  }, [K, M, X]);
   return null == P ? null : (0, r.jsxs)("div", {
     className: s()(L.popularPicksSection, L.centeredSection),
     children: [(0, r.jsxs)("div", {
@@ -159,7 +159,7 @@ let j = e => {
             className: L.shuffleOutro
           }, "".concat(e.skuId, "-").concat(t));
           else q === E.g.SORT_OUT ? n = L.sortChangedOutro : q === E.g.SHUFFLE_IN ? n = L.shuffleIntro : q === E.g.SORT_IN && (n = L.sortChangedIntro);
-        return (0, r.jsx)(h.k0, {
+        return (0, r.jsx)(_.k0, {
           newValue: {
             tilePosition: t,
             pageSection: "popular picks",

@@ -18,7 +18,7 @@ var Chunk990547 = require("./990547.js"),
   Chunk119475 = require("./119475.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk640744 = require("./640744.js"),
-  Chunk215656 = require("./215656.js");
+  Chunk758335 = require("./758335.js");
 
 function g() {
   let {
@@ -45,7 +45,7 @@ function g() {
     children: [(0, Chunk951288.jsx)("div", {
       className: Chunk640744.iconContainer,
       children: (0, Chunk951288.jsx)("img", {
-        src: Chunk215656.Z,
+        src: Chunk758335.Z,
         className: Chunk640744.bannerImage,
         alt: ""
       })

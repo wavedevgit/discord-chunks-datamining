@@ -2,7 +2,7 @@
 /** chunk id: 838819, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => F
+  default: () => M
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -52,23 +52,23 @@ let w = e => {
       return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
     }, [n, a, r]), t
   },
-  F = function(e) {
+  M = function(e) {
     let {
       isFullScreen: t = true,
       tab: n = N.AW.HOME
     } = e;
-    (0, _.z)(f.f), (0, v.f)();
+    (0, h.z)(f.f), (0, v.f)();
     let a = (0, g.Z)((0, i.Z)()),
       c = (0, o.e7)([C.default], () => C.default.getCurrentUser()),
       P = (0, B.G)("CollectiblesShop"),
       {
-        onClose: F
+        onClose: M
       } = (0, k.Db)(),
       {
-        currentTab: M,
+        currentTab: F,
         hasFilters: H
       } = (0, T.S)(),
-      D = l.useMemo(() => n === N.AW.HOME && M && H() ? M : n, [n, M, H]),
+      D = l.useMemo(() => n === N.AW.HOME && F && H() ? F : n, [n, F, H]),
       {
         categories: W,
         refreshCategories: U
@@ -104,7 +104,7 @@ let w = e => {
     }, [ee]), l.useEffect(() => {
       t || (0, d.Y)(A.Z5c.COLLECTIBLES_SHOP)
     }, [t]);
-    let et = (0, o.e7)([h.Z], () => h.Z.getLayers().includes(A.S9g.COLLECTIBLES_SHOP)),
+    let et = (0, o.e7)([_.Z], () => _.Z.getLayers().includes(A.S9g.COLLECTIBLES_SHOP)),
       en = l.useRef(null),
       er = l.useRef(null);
     (0, u.Tbt)(en);
@@ -131,7 +131,7 @@ let w = e => {
           pageSize: N.kN
         },
         children: (0, r.jsx)(w, {
-          onClose: F,
+          onClose: M,
           shouldAddEventListener: t && !et,
           children: (0, r.jsxs)("div", {
             className: s()(R.shop, {
@@ -142,7 +142,7 @@ let w = e => {
             children: [(0, r.jsx)(j.I, {
               isFullScreen: t,
               isLayer: et,
-              onClose: F,
+              onClose: M,
               handleTransition: $,
               selectedTab: Q
             }), (0, r.jsx)("div", {

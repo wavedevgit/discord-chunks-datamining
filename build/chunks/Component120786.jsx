@@ -19,14 +19,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk97127 = require("./97127.js"),
   Chunk665923 = require("./665923.js"),
-  Chunk73909 = require("./73909.js"),
-  Chunk479656 = require("./479656.js");
+  Chunk477154 = require("./477154.js"),
+  Chunk387888 = require("./387888.js");
 let y = () => {
     let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion);
     return (0, Chunk951288.jsx)("div", {
       className: Chunk97127.assetContainer,
       children: module ? (0, Chunk951288.jsx)("img", {
-        src: Chunk73909.Z,
+        src: Chunk477154.Z,
         className: Chunk97127.orbAsset,
         alt: "Orb"
       }) : (0, Chunk951288.jsxs)(Chunk70097.Z, {
@@ -34,10 +34,10 @@ let y = () => {
         loop: true,
         className: Chunk97127.orbAsset,
         children: [(0, Chunk951288.jsx)("source", {
-          src: Chunk479656.Z,
+          src: Chunk387888.Z,
           type: "video/webm"
         }), (0, Chunk951288.jsx)("img", {
-          src: Chunk73909.Z,
+          src: Chunk477154.Z,
           className: Chunk97127.orbAsset,
           alt: "Orb"
         })]

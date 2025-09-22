@@ -69,8 +69,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk501787 = require("./501787.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk607547 = require("./607547.js"),
-  Chunk704437 = require("./704437.js"),
-  Chunk494139 = require("./494139.js");
+  Chunk131970 = require("./131970.js"),
+  Chunk730462 = require("./730462.js");
 
 function em(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -1060,7 +1060,7 @@ function ez() {
     className: Chunk607547.overlaySettingsNux,
     children: [(0, Chunk951288.jsx)("div", {
       children: (0, Chunk951288.jsx)("img", {
-        src: Chunk704437.Z,
+        src: Chunk131970.Z,
         alt: Chunk388032.intl.string(Chunk388032.t.mdXZh4),
         className: Chunk607547.nuxFirstImage
       })
@@ -1079,7 +1079,7 @@ function ez() {
       })
     }), (0, Chunk951288.jsx)("div", {
       children: (0, Chunk951288.jsx)("img", {
-        src: Chunk494139.Z,
+        src: Chunk730462.Z,
         alt: Chunk388032.intl.string(Chunk388032.t.mdXZh4),
         className: Chunk607547.nuxUserSettingsImage
       })

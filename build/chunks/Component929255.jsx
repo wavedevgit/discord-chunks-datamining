@@ -39,12 +39,12 @@ function T(e) {
   let p = (0, d.FF)("CollectiblesBrowse"),
     f = l.useRef(null),
     {
-      handleScroll: h
+      handleScroll: _
     } = (0, o.z)(f, n),
     {
       setCategoryRef: m,
       handleScrollToCategory: b
-    } = (0, _.xV)(f.current),
+    } = (0, h.xV)(f.current),
     [E, S] = l.useState(p),
     [O, v] = l.useState(false);
   return l.useEffect(() => {
@@ -69,7 +69,7 @@ function T(e) {
       children: [(0, r.jsx)(i.yWw, {
         className: x.shopScroll,
         ref: f,
-        onScroll: h,
+        onScroll: _,
         children: (0, r.jsx)(y, {
           isFullScreen: t,
           isSmallScreen: O,
@@ -95,7 +95,7 @@ let y = e => {
     isSmallScreen: n,
     filterBarOpen: a,
     setFilterBarOpen: o,
-    tab: _,
+    tab: h,
     scrollerRef: T,
     sortedCategories: y,
     setCategoryRef: L
@@ -152,7 +152,7 @@ let y = e => {
             children: [(0, r.jsx)(i.Text, {
               variant: "text-md/semibold",
               children: v.intl.string(v.t.uaX709)
-            }), (0, r.jsx)(h.Z, {})]
+            }), (0, r.jsx)(_.Z, {})]
           }), (0, r.jsx)("div", {
             ref: R,
             children: (0, r.jsx)(i.zxk, {
@@ -185,12 +185,12 @@ let y = e => {
       }), j && !I ? (0, r.jsx)(b.Z, {
         isFullScreen: t,
         scrollerRef: T,
-        tab: _
-      }, _) : (0, S.RE)(_) ? (0, r.jsx)(E.Z, {
+        tab: h
+      }, h) : (0, S.RE)(h) ? (0, r.jsx)(E.Z, {
         isFullScreen: t,
         scrollerRef: T,
-        tab: _
-      }, _) : (0, r.jsx)(u.k0, {
+        tab: h
+      }, h) : (0, r.jsx)(u.k0, {
         newValue: {
           pageIndex: A
         },

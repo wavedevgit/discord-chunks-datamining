@@ -21,7 +21,7 @@ var Chunk647438 = require("./647438.js"),
 
 function C(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
-    l = (0, i.e7)([o.Z], () => o.Z.hasConsented(_.pjP.PERSONALIZATION)),
+    l = (0, i.e7)([o.Z], () => o.Z.hasConsented(h.pjP.PERSONALIZATION)),
     C = r.useMemo(() => {
       var t;
       return null != (t = null == e ? true : e[s.m.RECOMMENDED]) ? t : []
@@ -54,17 +54,17 @@ function C(e, t) {
     sortOptions: r.useMemo(() => {
       let e = [{
         value: s.m.POPULAR,
-        label: h.intl.string(h.t["1wQj4O"])
+        label: _.intl.string(_.t["1wQj4O"])
       }, {
         value: s.m.RECENT,
-        label: h.intl.string(h.t["6NZpt7"])
+        label: _.intl.string(_.t["6NZpt7"])
       }, {
         value: s.m.PRICE_LOW_TO_HIGH,
-        label: h.intl.string(h.t.RTG4yM)
+        label: _.intl.string(_.t.RTG4yM)
       }];
       return b && e.unshift({
         value: s.m.RECOMMENDED,
-        label: h.intl.string(h.t.JrlKlp)
+        label: _.intl.string(_.t.JrlKlp)
       }), e
     }, [b]),
     showRecommendationOption: b,

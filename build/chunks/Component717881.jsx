@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk620662 = require("./620662.js"),
-  Chunk387903 = require("./387903.jsx"),
+  Chunk942596 = require("./942596.jsx"),
   Chunk850827 = require("./850827.jsx"),
   Chunk812206 = require("./812206.js"),
   Chunk699263 = require("./699263.js"),
@@ -156,5 +156,5 @@ function N(e) {
     onOpenSpotifyAlbum: f.Z5
   })) : null
 }
-let R = Chunk387903.Z.Types,
+let R = Chunk942596.Z.Types,
   P = N

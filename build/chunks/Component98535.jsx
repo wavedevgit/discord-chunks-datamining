@@ -31,7 +31,7 @@ function S(e) {
     transitionToTab: c,
     transitionState: u,
     updateAnalyticsState: d,
-    refreshCategories: h
+    refreshCategories: _
   } = e, S = O();
   v(S);
   let x = (0, s.e7)([i.Z], () => i.Z.useReducedMotion),
@@ -46,10 +46,10 @@ function S(e) {
     {
       searchError: k
     } = (0, p.a)();
-  return j && null != k ? (0, r.jsx)(m.Z, {}) : null != S ? (0, r.jsx)(_.Z, {
-    onRetry: h,
+  return j && null != k ? (0, r.jsx)(m.Z, {}) : null != S ? (0, r.jsx)(h.Z, {
+    onRetry: _,
     errorMessage: S,
-    errorOrigin: _.i.SHOP_PAGE
+    errorOrigin: h.i.SHOP_PAGE
   }) : E.includes(t) ? (0, r.jsx)(C.Z, {
     isFullScreen: n,
     handleTransition: L,
@@ -69,7 +69,7 @@ let O = () => (0, Chunk442837.e7)([Chunk597688.Z, Chunk1870.Z], () => null != Ch
       {
         noCache: n,
         includeUnpublished: r
-      } = (0, h.Z)();
+      } = (0, _.Z)();
     l.useEffect(() => {
       var l, a;
       null != e && c.Z.captureMessage(e, {

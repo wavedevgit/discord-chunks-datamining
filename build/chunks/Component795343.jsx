@@ -40,7 +40,7 @@ function v(e) {
     currentPage: B,
     totalCount: N,
     isFetchingResults: A
-  } = (0, _.a)(), P = (0, i.Wu)([g.Z], () => g.Z.getProductsBySkus(I)), R = l.useCallback(() => {
+  } = (0, h.a)(), P = (0, i.Wu)([g.Z], () => g.Z.getProductsBySkus(I)), R = l.useCallback(() => {
     var e;
     null == v || null == (e = v.current) || e.scrollToTop({
       animate: true
@@ -50,18 +50,18 @@ function v(e) {
     R()
   }, [Z, R]);
   let w = (0, p.a)(),
-    F = l.useMemo(() => w(P), [w, P]);
+    M = l.useMemo(() => w(P), [w, P]);
   l.useEffect(() => {
-    n || (0, h.n)({
+    n || (0, _.n)({
       sessionId: y,
-      checkpoint: h.a.SHOP_RENDERED,
+      checkpoint: _.a.SHOP_RENDERED,
       tab: x,
       isFullScreen: a,
       unpublishedCategoriesShown: j,
       cacheDisabled: L
     })
   }, [y, a, j, L, n, x]);
-  let M = l.useRef(null),
+  let F = l.useRef(null),
     {
       setQueryPageSize: H,
       setQueryPageOffset: D,
@@ -71,14 +71,14 @@ function v(e) {
     z = n || A || null == k;
   l.useEffect(() => {
     if (z) return void V(false);
-    F.length > 0 && V(true)
-  }, [z, F.length]);
-  let G = W > 0 && !z && 0 === F.length;
+    M.length > 0 && V(true)
+  }, [z, M.length]);
+  let G = W > 0 && !z && 0 === M.length;
   l.useEffect(() => {
     let e = new ResizeObserver(() => {
-      null != M.current && H(Math.floor(5 * getComputedStyle(M.current).gridTemplateColumns.split(/\s+/).length))
+      null != F.current && H(Math.floor(5 * getComputedStyle(F.current).gridTemplateColumns.split(/\s+/).length))
     });
-    if (null != M.current) return e.observe(M.current), () => e.disconnect()
+    if (null != F.current) return e.observe(F.current), () => e.disconnect()
   }, [H]);
   let q = l.useCallback(e => {
     u.default.track(S.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
@@ -100,8 +100,8 @@ function v(e) {
         className: s()(O.products, {
           [O.loadIn]: U
         }),
-        ref: M,
-        children: [z && [...Array(W)].map((e, t) => (0, r.jsx)(C.K, {}, t)), !z && F.map((e, t) => {
+        ref: F,
+        children: [z && [...Array(W)].map((e, t) => (0, r.jsx)(C.K, {}, t)), !z && M.map((e, t) => {
           let n = g.Z.getCategory(e.categorySkuId);
           return null == n ? null : (0, r.jsx)(d.k0, {
             newValue: {

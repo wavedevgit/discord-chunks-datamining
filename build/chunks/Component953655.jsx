@@ -2,7 +2,7 @@
 /** chunk id: 953655, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -71,7 +71,7 @@ let g = ["1366494385738354769", "1385035256125591633"],
       })
     })
   },
-  _ = e => {
+  h = e => {
     let {
       isLoading: t,
       handleTransition: n,

@@ -49,7 +49,7 @@ let m = e => {
         backgroundImage: "url(".concat(y, ")")
       },
       onClick: () => {
-        v("shop marketing tile", x), u.default.track(_.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        v("shop marketing tile", x), u.default.track(h.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == B ? true : B.sessionId,
           sku_id: x,
           page_type: "home",
@@ -89,9 +89,9 @@ let m = e => {
         className: C.featuredBlockButtonContainer,
         children: (0, r.jsx)(c.zxk, {
           variant: "overlay-primary",
-          text: h.intl.string(h.t.jVcuVV),
+          text: _.intl.string(_.t.jVcuVV),
           onClick: e => {
-            v("shop marketing take me there button", x), e.stopPropagation(), u.default.track(_.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            v("shop marketing take me there button", x), e.stopPropagation(), u.default.track(h.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
               collectibles_shop_session_id: null == B ? true : B.sessionId,
               sku_id: x,
               page_type: "home",

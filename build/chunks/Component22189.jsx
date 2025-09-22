@@ -68,11 +68,11 @@ var Chunk399606 = require("./399606.js"),
   Chunk698173 = require("./698173.js"),
   Chunk926262 = require("./926262.js"),
   Chunk217379 = require("./217379.js"),
-  Chunk438132 = require("./438132.js"),
-  Chunk6472 = require("./6472.js"),
-  Chunk275021 = require("./275021.js"),
-  Chunk146614 = require("./146614.js"),
-  Chunk242514 = require("./242514.js"),
+  Chunk117771 = require("./117771.js"),
+  Chunk253636 = require("./253636.js"),
+  Chunk371435 = require("./371435.js"),
+  Chunk83663 = require("./83663.js"),
+  Chunk317194 = require("./317194.js"),
   em = function(e) {
     return e.CLIENT_THEMES = "clientThemes", e.CLIPS = "clips", e.EARLY_ACCESS = "earlyAccess", e.ENTRANCE_SOUNDS = "entranceSounds", e.PROFILES = "profiles", e.REMIXING = "remixing", e.SERVER_BOOSTS = "serverBoosts", e.GREY_SERVER_BOOSTS = "greyServerBoosts", e.SPECIAL_MEMBER_PRICING = "specialMemberPricing", e.SPECIAL_MEMBER_PRICING_SEE_ALL_VARIANT = "specialMemberPricingSeeAllVariant", e.SPECIAL_SHOP_PERKS = "specialShopPerks", e.NAMEPLATES = "nameplates", e.UNLIMITED_SUPER_REACTIONS = "unlimitedSuperReactions", e.SUPER_REACTIONS = "superReactions", e.UPCOMING_DROP_UNTIMED = "upcomingDropUntimed", e.CUSTOM_APP_ICONS = "customAppIcons", e.MORE_EMOJI_POWER = "moreEmojiPower", e.CUSTOM_SOUNDS_EVERYWHERE = "customSoundsEverywhere", e.SPECIAL_STICKER_ACCESS = "specialStickerAccess", e.LARGE_UPLOADS = "largeUploads", e.HD_VIDEO = "hdVideo", e.BADGE = "badge", e.GREY_BADGE = "greyBadge", e.ENTRANCE_SOUNDS_SEE_ALL_VARIATION = "entranceSoundsSeeAllVariation", e.EARLY_ACCESS_SEE_ALL_VARIATION = "earlyAccessSeeAllVariant", e.REFERRAL_PROGRAM = "referralProgram", e.NEW_APP_STYLES_UPDATE_JUNE_2024 = "newAppStylesUpdateJune2024", e.SERVER_PROFILES = "serverProfiles", e.TENURE_BADGE = "tenureBadge", e.PERMADECOS = "permadecos", e.VOICE_FILTERS = "voiceFilters", e.CUSTOM_THEMES = "customThemes", e.SEPTEMBER_2025_MARKETING_MOMENT = "september2025MarketingMoment", e
   }({});
@@ -248,7 +248,7 @@ let eg = () => {
       title: Chunk388032.intl.string(Chunk388032.t["NyDu//"]),
       subtitle: Chunk388032.intl.string(Chunk388032.t["4pEwXF"]),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
-      perkImage: Chunk275021.Z,
+      perkImage: Chunk371435.Z,
       imageOverlayText: Chunk388032.intl.string(Chunk388032.t.lcYttb)
     },
     specialMemberPricing: {
@@ -318,7 +318,7 @@ let eg = () => {
       name: "greyBadge",
       title: Chunk388032.intl.string(Chunk388032.t.dcFfSE),
       subtitle: Chunk388032.intl.string(Chunk388032.t["37MFFh"]),
-      perkImage: Chunk146614.Z,
+      perkImage: Chunk83663.Z,
       description: Chunk388032.intl.string(Chunk388032.t.T1IS4u),
       imageOverlayText: Chunk388032.intl.string(Chunk388032.t.lcYttb)
     },
@@ -411,7 +411,7 @@ let eg = () => {
       isPremiumGetCta: !ey,
       onCtaClick: ey ? ej : true,
       pillText: eS || !ey ? true : Chunk388032.intl.string(Chunk388032.t.y2b7CA).toLocaleUpperCase(),
-      perkImage: Chunk242514.Z
+      perkImage: Chunk317194.Z
     },
     nameplates: {
       name: "nameplates",
@@ -444,7 +444,7 @@ let eg = () => {
       onCtaClick: () => {
         (0, Chunk550385.XO)(Chunk550385.wh.CUSTOM_THEME)
       },
-      perkImage: Chunk6472.Z,
+      perkImage: Chunk253636.Z,
       canReveal: eA,
       dismissibleContentType: Chunk704215.z.CUSTOM_THEMES_NITRO_HOME_TILE,
       pillText: Chunk388032.intl.string(Chunk388032.t.y2b7CA).toLocaleUpperCase()
@@ -457,7 +457,7 @@ let eg = () => {
       }),
       pillText: Chunk388032.intl.string(Chunk388032.t.OS9KPj).toLocaleUpperCase(),
       cardVariant: Chunk391110.zW.PROMOTION_REDEMPTION,
-      perkImage: Chunk438132.Z,
+      perkImage: Chunk117771.Z,
       customContent: (0, Chunk951288.jsx)(Chunk220331.R, {})
     }
   };

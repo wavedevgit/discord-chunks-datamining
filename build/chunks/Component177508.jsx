@@ -41,11 +41,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk231338 = require("./231338.js"),
   Chunk726927 = require("./726927.js"),
   Chunk177475 = require("./177475.js"),
-  Chunk726158 = require("./726158.js"),
-  Chunk935692 = require("./935692.js"),
-  Chunk618583 = require("./618583.js"),
-  Chunk811616 = require("./811616.js"),
-  Chunk184214 = require("./184214.js");
+  Chunk518797 = require("./518797.js"),
+  Chunk691739 = require("./691739.js"),
+  Chunk453707 = require("./453707.js"),
+  Chunk315416 = require("./315416.js"),
+  Chunk715720 = require("./715720.js");
 
 function Y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -1041,7 +1041,7 @@ function ep() {
         title: "With Graphic Asset",
         body: "This tooltip includes a graphic element on the left side",
         asset: (0, Chunk951288.jsx)("img", {
-          src: Chunk726158.Z,
+          src: Chunk518797.Z,
           alt: "Graphic slot 48px"
         }),
         position: "top",
@@ -1056,7 +1056,7 @@ function ep() {
 
 function eh() {
   let [e, t] = Chunk647438.useState(false), [n, a] = Chunk647438.useState(false), [o, s] = Chunk647438.useState(false), [l, c] = Chunk647438.useState(false), [u, d] = Chunk647438.useState(false), [f, _] = Chunk647438.useState(false), [p, h] = Chunk647438.useState(false), [m, g] = Chunk647438.useState(false), [y, O] = Chunk647438.useState(false), [v, T] = Chunk647438.useState(false), [S, A] = Chunk647438.useState(false), [C, N] = Chunk647438.useState(false), [R, P] = Chunk647438.useState(false), [w, D] = Chunk647438.useState(false), [x, L] = Chunk647438.useState(false), [j, M] = Chunk647438.useState(false), [k, G] = Chunk647438.useState(false), [B, Z] = Chunk647438.useState(false), [Y, W] = Chunk647438.useState(false), [K, z] = Chunk647438.useState(false), [q, X] = Chunk647438.useState(false), Q = Chunk647438.useRef(null), J = Chunk647438.useRef(null), $ = Chunk647438.useRef(null), ee = Chunk647438.useRef(null), et = Chunk647438.useRef(null), en = Chunk647438.useRef(null), er = Chunk647438.useRef(null), ei = Chunk647438.useRef(null), ea = Chunk647438.useRef(null), eo = Chunk647438.useRef(null), es = Chunk647438.useRef(null), el = Chunk647438.useRef(null), ec = Chunk647438.useRef(null), eu = Chunk647438.useRef(null), ed = Chunk647438.useRef(null), ef = Chunk647438.useRef(null), e_ = Chunk647438.useRef(null), ep = Chunk647438.useRef(null), eh = Chunk647438.useRef(null), em = Chunk647438.useRef(null), eg = Chunk647438.useRef(null), eE = Chunk647438.useCallback(() => {
-    exports(false), Chunk120356(false), Chunk392711(false), Chunk164617(false), Chunk257465(false), Chunk82659(false), Chunk103866(false), Chunk37148(false), Chunk159691(false), Chunk240872(false), Chunk705262(false), Chunk581612(false), Chunk594174(false), Chunk799071(false), Chunk706705(false), Chunk981631(false), Chunk177475(false), Chunk935692(false), W(false), z(false), X(false)
+    exports(false), Chunk120356(false), Chunk392711(false), Chunk164617(false), Chunk257465(false), Chunk82659(false), Chunk103866(false), Chunk37148(false), Chunk159691(false), Chunk240872(false), Chunk705262(false), Chunk581612(false), Chunk594174(false), Chunk799071(false), Chunk706705(false), Chunk981631(false), Chunk177475(false), Chunk691739(false), W(false), z(false), X(false)
   }, []);
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk726927.section,
@@ -1075,7 +1075,7 @@ function eh() {
       size: "sm",
       graphic: {
         type: "image",
-        src: Chunk811616.Z
+        src: Chunk315416.Z
       },
       badge: "new",
       actions: [{
@@ -1093,7 +1093,7 @@ function eh() {
       body: "Body",
       graphic: {
         type: "image",
-        src: Chunk618583.Z
+        src: Chunk453707.Z
       },
       badge: "new",
       actions: [{
@@ -1124,7 +1124,7 @@ function eh() {
       body: "Lorem ipsum dolor sit amet, consectetur elit. Sed do eiusmod.",
       graphic: {
         type: "image",
-        src: Chunk618583.Z
+        src: Chunk453707.Z
       },
       badge: "new",
       actions: [{
@@ -1147,7 +1147,7 @@ function eh() {
       body: "Body",
       graphic: {
         type: "image",
-        src: Chunk618583.Z
+        src: Chunk453707.Z
       },
       badge: "new",
       actions: [{
@@ -1170,7 +1170,7 @@ function eh() {
       body: "This popover has no action buttons, just content to display.",
       graphic: {
         type: "image",
-        src: Chunk618583.Z
+        src: Chunk453707.Z
       },
       badge: "new"
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
@@ -1184,7 +1184,7 @@ function eh() {
       body: "Using CaretConfig with END placement",
       graphic: {
         type: "image",
-        src: Chunk618583.Z
+        src: Chunk453707.Z
       },
       badge: "new",
       actions: [{
@@ -1202,7 +1202,7 @@ function eh() {
       body: "Caret positioned on the left side at start",
       graphic: {
         type: "image",
-        src: Chunk618583.Z
+        src: Chunk453707.Z
       },
       badge: "early_access",
       actions: [{
@@ -1221,7 +1221,7 @@ function eh() {
       body: "Caret positioned 50px from center with custom offset",
       graphic: {
         type: "image",
-        src: Chunk618583.Z
+        src: Chunk453707.Z
       },
       badge: "beta",
       actions: [{
@@ -1240,7 +1240,7 @@ function eh() {
       body: "Popover appears to the right with caret centered on the left side",
       graphic: {
         type: "image",
-        src: Chunk618583.Z
+        src: Chunk453707.Z
       },
       badge: "new",
       actions: [{
@@ -1259,7 +1259,7 @@ function eh() {
       body: "This popover has a beautiful purple gradient background",
       graphic: {
         type: "image",
-        src: Chunk618583.Z
+        src: Chunk453707.Z
       },
       gradientColor: "purple",
       badge: "new",
@@ -1279,7 +1279,7 @@ function eh() {
       body: "This popover showcases the blue gradient option",
       graphic: {
         type: "image",
-        src: Chunk618583.Z
+        src: Chunk453707.Z
       },
       gradientColor: "blue",
       badge: "beta",
@@ -1298,7 +1298,7 @@ function eh() {
       body: "Experience the premium nitro-pink gradient effect",
       graphic: {
         type: "image",
-        src: Chunk618583.Z
+        src: Chunk453707.Z
       },
       gradientColor: "nitro-pink",
       textLink: {
@@ -1321,7 +1321,7 @@ function eh() {
       body: "Experience enhanced voice quality with our latest filtering technology. Perfect for gaming and streaming.",
       graphic: {
         type: "image",
-        src: Chunk184214.Z
+        src: Chunk715720.Z
       },
       badge: "new",
       gradientColor: "purple",
@@ -1380,7 +1380,7 @@ function eh() {
       }
     }), (0, Chunk951288.jsx)(Chunk466590.e, {
       targetElementRef: ep,
-      shouldShow: Chunk726158,
+      shouldShow: Chunk518797,
       onRequestClose: eE,
       caretConfig: {
         position: "bottom",
@@ -1391,7 +1391,7 @@ function eh() {
         body: "Journey to Quest Home in Discover to start earning Orbs.",
         graphic: {
           type: "image",
-          src: Chunk618583.Z
+          src: Chunk453707.Z
         },
         badge: "new",
         action: {
@@ -1403,7 +1403,7 @@ function eh() {
         body: "Complete quests to earn Orbs and unlock exclusive rewards.",
         graphic: {
           type: "image",
-          src: Chunk184214.Z
+          src: Chunk715720.Z
         },
         action: {
           text: "Next"
@@ -1414,7 +1414,7 @@ function eh() {
         body: "You're all set to start your quest adventure. Good luck!",
         graphic: {
           type: "image",
-          src: Chunk618583.Z
+          src: Chunk453707.Z
         },
         action: {
           text: "Get Started"
@@ -1438,7 +1438,7 @@ function eh() {
       body: "Enhanced voice quality with our latest filtering technology. Try the expressive button!",
       graphic: {
         type: "image",
-        src: Chunk184214.Z
+        src: Chunk715720.Z
       },
       badge: "new",
       gradientColor: "nitro-pink",
@@ -1460,7 +1460,7 @@ function eh() {
         body: "Explore amazing new capabilities in Discord.",
         graphic: {
           type: "image",
-          src: Chunk618583.Z
+          src: Chunk453707.Z
         },
         badge: "new",
         action: {
@@ -1472,7 +1472,7 @@ function eh() {
         body: "Learn how to make the most of your Discord experience.",
         graphic: {
           type: "image",
-          src: Chunk184214.Z
+          src: Chunk715720.Z
         },
         action: {
           text: "Almost There"
@@ -1483,7 +1483,7 @@ function eh() {
         body: "You're all set! Notice the expressive button animation.",
         graphic: {
           type: "image",
-          src: Chunk618583.Z
+          src: Chunk453707.Z
         },
         action: {
           text: "Get Started",
@@ -1730,7 +1730,7 @@ function eh() {
           text: "Multi-Step",
           buttonRef: ep,
           onClick: () => {
-            eE(), Chunk935692(true)
+            eE(), Chunk691739(true)
           }
         })
       })]

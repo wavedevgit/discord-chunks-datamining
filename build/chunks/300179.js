@@ -8,6 +8,7 @@ module.exports = {
   shopCardDarkHighlighted: "shopCardDarkHighlighted_c3d04b",
   shopCardAnimation: "shopCardAnimation_c3d04b",
   avatarContainer: "avatarContainer_c3d04b",
+  previewThumbnailVariant: "previewThumbnailVariant_c3d04b",
   fadeIn: "fadeIn_c3d04b",
   cardText: "cardText_c3d04b",
   darkCardBackground: "darkCardBackground_c3d04b",

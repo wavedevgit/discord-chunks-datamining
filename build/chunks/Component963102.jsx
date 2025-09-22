@@ -39,7 +39,7 @@ function I(e) {
     selected: l,
     handleTransition: a
   } = e;
-  return (0, r.jsx)(_.Z.Title, {
+  return (0, r.jsx)(h.Z.Title, {
     onClick: () => a(t),
     wrapperClassName: k.tabWrapper,
     className: s()(k.tab, {
@@ -55,8 +55,8 @@ function B(e) {
     selected: n,
     displayText: a,
     handleTransition: i
-  } = e, [o, u] = l.useState(false), d = l.useRef(null), [g, h] = l.useState(0), C = l.useRef(false), m = e => {
-    clearTimeout(g), h(setTimeout(() => {
+  } = e, [o, u] = l.useState(false), d = l.useRef(null), [g, _] = l.useState(0), C = l.useRef(false), m = e => {
+    clearTimeout(g), _(setTimeout(() => {
       u(e)
     }, 100)), e && (C.current = f.Z.keyboardModeEnabled)
   }, b = e => {
@@ -90,7 +90,7 @@ function B(e) {
         let {
           isShown: g
         } = l;
-        return (0, r.jsx)(_.Z.Title, (o = function(e) {
+        return (0, r.jsx)(h.Z.Title, (o = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -164,19 +164,19 @@ function N(e) {
   });
   let Z = n ? O.DR : a,
     w = p === y.AW.ORBS ? L.ZY5.SHOP_ORBS_TAB : L.ZY5.COLLECTIBLES_SHOP,
-    F = l.useCallback(() => {
+    M = l.useCallback(() => {
       t && (Z(), (0, u.Ou)()), (0, C.Y)({
         pageType: w,
         sectionType: L.jXE.ORBS_BALANCE_MENU,
         ctaObject: L.qAy.CTA_TO_QUEST_HOME
-      }), (0, h.navigateToQuestHome)({
+      }), (0, _.navigateToQuestHome)({
         fromContent: i.j.ORBS_BALANCE_MENU
       })
     }, [Z, t, w]),
-    M = (0, v.eN)("collectibles_shop_header_bar");
+    F = (0, v.eN)("collectibles_shop_header_bar");
   return (0, r.jsx)(c.f6W, {
     theme: x,
-    children: e => (0, r.jsxs)(_.Z, {
+    children: e => (0, r.jsxs)(h.Z, {
       disableDoubleClick: true,
       className: s()(e, k.headerBar, {
         [k.fullscreenHeaderBar]: t
@@ -189,7 +189,7 @@ function N(e) {
         "aria-label": j.intl.string(j.t.pWG4zc) + " home",
         children: [(0, r.jsx)(S.Z, {
           className: k.discordLogo
-        }), (0, r.jsx)(_.Z.Title, {
+        }), (0, r.jsx)(h.Z.Title, {
           children: j.intl.string(j.t.pWG4zc)
         })]
       }), (0, r.jsx)("div", {
@@ -211,9 +211,9 @@ function N(e) {
             handleTransition: f
           }, t)
         })
-      }), (P || t || M) && (0, r.jsxs)("div", {
+      }), (P || t || F) && (0, r.jsxs)("div", {
         className: k.alignedRightContent,
-        children: [M && (0, r.jsx)(T.Z, {
+        children: [F && (0, r.jsx)(T.Z, {
           handleTransition: f,
           selectedTab: p
         }), P && (0, r.jsx)(b.V9, {
@@ -221,7 +221,7 @@ function N(e) {
           analyticsPage: w,
           cardAlignment: b.V9.CardAlignment.END,
           ctaText: j.intl.string(j.t.VC4Mq6),
-          ctaOnClick: F,
+          ctaOnClick: M,
           className: k.balanceWidgetMenu
         }), t && (0, r.jsx)(d.Z, {
           closeAction: Z,

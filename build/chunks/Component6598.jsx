@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk55373 = require("./55373.jsx"),
   Chunk761006 = require("./761006.jsx"),
   Chunk460196 = require("./460196.js"),
-  Chunk319515 = require("./319515.js");
+  Chunk798500 = require("./798500.js");
 let u = () => {
   let e = (0, Chunk399606.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion);
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
@@ -30,7 +30,7 @@ let u = () => {
         animateXAxisWiggle: true,
         isMotionReduced: module,
         children: (0, Chunk951288.jsx)("img", {
-          src: Chunk319515.Z,
+          src: Chunk798500.Z,
           alt: "",
           className: Chunk460196.jumpingWumpus
         })

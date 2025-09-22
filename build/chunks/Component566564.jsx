@@ -39,9 +39,9 @@ let k = e => {
       tab: c,
       isFullScreen: u
     } = e, {
-      noCache: _,
+      noCache: h,
       includeUnpublished: v
-    } = (0, h.Z)(), [y, k] = l.useState(false), I = (0, d.sp)(), B = null != (t = null == I ? true : I.sessionId) ? t : "";
+    } = (0, _.Z)(), [y, k] = l.useState(false), I = (0, d.sp)(), B = null != (t = null == I ? true : I.sessionId) ? t : "";
     l.useEffect(() => {
       (0, p.n)({
         sessionId: B,
@@ -49,7 +49,7 @@ let k = e => {
         tab: c,
         isFullScreen: u,
         unpublishedCategoriesShown: v,
-        cacheDisabled: _
+        cacheDisabled: h
       })
     }, [c]);
     let {
@@ -58,7 +58,7 @@ let k = e => {
       shopBlocks: P,
       refreshShopHome: R
     } = (0, g.E)(c, {
-      noCache: _,
+      noCache: h,
       includeUnpublished: v,
       includeBundles: true,
       logPerf: true
@@ -76,9 +76,9 @@ let k = e => {
         tab: c,
         isFullScreen: u,
         unpublishedCategoriesShown: v,
-        cacheDisabled: _
+        cacheDisabled: h
       })
-    }, [A, N, P.length, v, _, B, c, u]), null != A) ? (0, r.jsx)(f.Z, {
+    }, [A, N, P.length, v, h, B, c, u]), null != A) ? (0, r.jsx)(f.Z, {
       onRetry: Z,
       errorOrigin: f.i.SHOP_PAGE,
       errorMessage: A.message
@@ -180,20 +180,20 @@ let k = e => {
       transitionState: s
     } = e, i = l.useRef(null), {
       handleScroll: g
-    } = (0, c.z)(i, a), p = (0, _.R)(), f = (0, d.sp)(), [h, C] = l.useState(T.IV), [m, b] = l.useState(false);
+    } = (0, c.z)(i, a), p = (0, h.R)(), f = (0, d.sp)(), [_, C] = l.useState(T.IV), [m, b] = l.useState(false);
     return l.useEffect(() => {
       if (null != i.current) {
         let e = () => {
             if (null == i.current) return;
             let e = i.current.getDistanceFromBottom();
-            h >= 36 ? b(e < 20) : e <= 200 && C(e => e + T.IV)
+            _ >= 36 ? b(e < 20) : e <= 200 && C(e => e + T.IV)
           },
           t = i.current.getScrollerNode();
         return null == t || t.addEventListener("scroll", e), () => {
           null == t || t.removeEventListener("scroll", e)
         }
       }
-    }, [i, h, C, b]), (0, r.jsx)(o.Den, {
+    }, [i, _, C, b]), (0, r.jsx)(o.Den, {
       className: j.shopScroll,
       ref: i,
       onScroll: g,
@@ -203,11 +203,11 @@ let k = e => {
           className: j.mainContent,
           children: [(0, r.jsx)(k, {
             handleTransition: n,
-            numVisibleItems: h,
+            numVisibleItems: _,
             isFetchingCategories: p,
             tab: a,
             isFullScreen: t
-          }), a !== T.AW.CATALOG && h >= 36 && (0, r.jsxs)("div", {
+          }), a !== T.AW.CATALOG && _ >= 36 && (0, r.jsxs)("div", {
             className: j.endOfFeed,
             children: [(0, r.jsx)(o.X6q, {
               variant: "heading-md/semibold",

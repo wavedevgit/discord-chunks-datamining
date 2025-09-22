@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk215023 = require("./215023.js"),
   Chunk200192 = require("./200192.js"),
   Chunk593639 = require("./593639.js"),
-  Chunk239261 = require("./239261.js");
+  Chunk26028 = require("./26028.js");
 let f = {
     [Chunk215023.Vt.FRACTIONAL_PREMIUM]: {
       render: e => {
@@ -45,7 +45,7 @@ let f = {
   _ = () => ({
     id: Chunk317257.l.ORB_PROFILE_BADGE,
     icon: Chunk317257.l.ORB_PROFILE_BADGE,
-    iconSrc: Chunk239261.Z,
+    iconSrc: Chunk26028.Z,
     description: "",
     isPreviewMode: true
   })

@@ -744,7 +744,9 @@ let eC = Chunk647438.memo(function(e) {
           disableColor: true,
           className: ex
         }), (0, r.jsx)("div", {
-          className: ef.preview,
+          className: o()(ef.preview, {
+            [ef.previewThumbnailVariant]: U === el.Ch.THUMBNAIL
+          }),
           children: (0, s.EQ)(t.type).with(u.Z.PROFILE_EFFECT, u.Z.AVATAR_DECORATION, u.Z.NAMEPLATE, () => eT(y, ev, eu)).with(u.Z.BUNDLE, () => (0, r.jsx)(X.d, {
             product: t,
             user: n,

@@ -9,7 +9,7 @@ require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk299379 = require("./299379.js"),
   Chunk447293 = require("./447293.jsx"),
-  Chunk58839 = require("./58839.jsx"),
+  Chunk922377 = require("./922377.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk281413 = require("./281413.js");
 let u = {
@@ -71,7 +71,7 @@ function d() {
       href: Chunk981631.fK7.YOUTUBE_URL,
       className: Chunk281413.link,
       focusProps: u,
-      children: (0, Chunk951288.jsx)(Chunk58839.Z, {
+      children: (0, Chunk951288.jsx)(Chunk922377.Z, {
         width: 16,
         height: 16,
         foreground: Chunk281413.foreground,

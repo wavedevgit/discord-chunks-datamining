@@ -10,16 +10,16 @@ var Chunk242433 = require("./242433.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk796909 = require("./796909.js"),
-  Chunk893410 = require("./893410.js"),
-  Chunk878339 = require("./878339.js"),
-  Chunk330529 = require("./330529.js"),
-  Chunk552365 = require("./552365.js"),
-  Chunk492336 = require("./492336.js"),
-  Chunk457686 = require("./457686.js"),
-  Chunk516773 = require("./516773.js"),
-  Chunk198026 = require("./198026.js"),
-  Chunk543980 = require("./543980.js");
+  Chunk154658 = require("./154658.js"),
+  Chunk362290 = require("./362290.js"),
+  Chunk873048 = require("./873048.js"),
+  Chunk572472 = require("./572472.js"),
+  Chunk235583 = require("./235583.js"),
+  Chunk306225 = require("./306225.js"),
+  Chunk28986 = require("./28986.js"),
+  Chunk194950 = require("./194950.js"),
+  Chunk103865 = require("./103865.js"),
+  Chunk29653 = require("./29653.js");
 let b = {
     skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_PUMPKIN_TRICK_SKU_ID,
     assetId: "a_dec0db5e1395a9d7df152d6981443cd8",
@@ -104,13 +104,13 @@ let b = {
     rewardAssetIdMap: (0, Chunk717401.YV)([b, y, O, v, I, T, S, A]),
     chatGiftIcon: {
       trinketsAnimation: {
-        getAnimationData: () => require.e("19511").then(require.bind(require, 322980)).then(e => {
+        getAnimationData: () => require.e("21723").then(require.bind(require, 421344)).then(e => {
           let {
             default: t
           } = e;
           return fetch(t).then(e => e.json())
         }),
-        getGlowAnimationData: () => require.e("37079").then(require.bind(require, 474)).then(e => {
+        getGlowAnimationData: () => require.e("51924").then(require.bind(require, 90801)).then(e => {
           let {
             default: t
           } = e;
@@ -120,7 +120,7 @@ let b = {
     },
     segmentedControlAnimations: {
       trick: {
-        getAnimationData: () => require.e("87983").then(require.bind(require, 913493)).then(e => {
+        getAnimationData: () => require.e("44538").then(require.bind(require, 285517)).then(e => {
           let {
             default: t
           } = e;
@@ -128,7 +128,7 @@ let b = {
         })
       },
       treat: {
-        getAnimationData: () => require.e("33472").then(require.bind(require, 795420)).then(e => {
+        getAnimationData: () => require.e("35244").then(require.bind(require, 220628)).then(e => {
           let {
             default: t
           } = e;
@@ -154,21 +154,21 @@ let b = {
       }),
       gradientConfig: C,
       getImageUrl: (e, t) => t ? m.Z : h.Z,
-      getBannerImageUrl: () => Chunk543980.Z,
-      getBackgroundImageUrl: () => Chunk796909.Z
+      getBannerImageUrl: () => Chunk29653.Z,
+      getBackgroundImageUrl: () => Chunk154658.Z
     },
     planSelectionBanner: {
       desktopBannerText: () => Chunk388032.intl.string(Chunk388032.t.mMgymZ),
       mobileBannerText: () => Chunk388032.intl.string(Chunk388032.t.dAqTcH),
-      getImageUrl: () => Chunk516773.Z,
+      getImageUrl: () => Chunk194950.Z,
       gradientConfig: () => C,
-      getBackgroundImageUrl: () => Chunk492336.Z
+      getBackgroundImageUrl: () => Chunk306225.Z
     },
     billingSettingsMarketingBanner: {
       getImageUrl: e => e ? d.Z : u.Z,
       title: () => Chunk388032.intl.string(Chunk388032.t.CGgAyM),
       body: () => Chunk388032.intl.string(Chunk388032.t["9rInzc"]),
-      getBackgroundImageUrl: () => Chunk198026.Z
+      getBackgroundImageUrl: () => Chunk103865.Z
     },
     giftPurchaseConfirmation: {
       yearGiftText: Chunk388032.t["rSS+oq"],
