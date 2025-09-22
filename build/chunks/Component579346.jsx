@@ -25,7 +25,7 @@ function h(e) {
     defaultColor: b,
     selectedEffectId: x,
     className: j
-  } = e, S = x === l.m.GRADIENT, _ = (0, o.useCallback)(e => {
+  } = e, _ = x === l.m.GRADIENT, S = (0, o.useCallback)(e => {
     h([e]), c.default.track(u.rMx.DISPLAY_NAME_STYLES_COLOR_SELECTED, {
       default: e === b,
       colors: [e]
@@ -49,12 +49,12 @@ function h(e) {
       className: m.colorPicker,
       colorContainerClassName: m.colorPickerContainer,
       defaultColor: b,
-      colors: S ? d.vK : d.gD,
+      colors: _ ? d.vK : d.gD,
       value: n[0],
       secondaryValue: null != (t = n[1]) ? t : true,
-      onChange: _,
+      onChange: S,
       onChangeGradientColors: C,
-      isGradient: S,
+      isGradient: _,
       gradientButtonClassName: m.gradientPicker,
       gradientDegrees: 90,
       allowBlackCustomColor: true,

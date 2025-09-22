@@ -270,6 +270,9 @@ class eu extends(O = Chunk442837.ZP.Store) {
   getPendingProfileEffectId() {
     return o
   }
+  getPendingDisplayNameStyles() {
+    return h
+  }
   getAllPending() {
     return {
       pendingAvatar: r,

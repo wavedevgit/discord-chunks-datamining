@@ -61,7 +61,7 @@ function p(e) {
     inProfile: r
   } = e, {
     includeNonProfile: a
-  } = s.f.useExperiment({
+  } = s.fN.useExperiment({
     location: "useDisplayNameStylesFont"
   });
   if (!(0, l.Y)({

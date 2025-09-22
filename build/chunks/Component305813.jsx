@@ -68,22 +68,22 @@ function T(e) {
     selectedEffectId: l,
     selectedColors: T,
     onClose: R
-  } = e, A = (0, c.ZP)(), w = (0, s.wjy)(A), [I, L] = (0, o.useState)(w), B = (0, b.ZP)(t.id, null), {
+  } = e, w = (0, c.ZP)(), A = (0, s.wjy)(w), [I, L] = (0, o.useState)(A), B = (0, b.ZP)(t.id, null), {
     bannerSrc: M
   } = (0, x.Z)({
     displayProfile: B,
     size: 413,
     canAnimate: false
-  }), G = (0, i.cj)([S.Z], () => S.Z.getAllPending()), Z = (0, h.SD)({
+  }), G = (0, i.cj)([_.Z], () => _.Z.getAllPending()), Z = (0, h.SD)({
     userId: t.id,
     image: G.pendingAvatar
   }), Y = I ? O.BRd.DARK : O.BRd.LIGHT;
-  (w && I || !w && !I) && (Y = A);
+  (A && I || !A && !I) && (Y = w);
   let H = (0, o.useCallback)(() => {
-      _.default.track(O.rMx.DISPLAY_NAME_STYLES_CLOSED), R()
+      S.default.track(O.rMx.DISPLAY_NAME_STYLES_CLOSED), R()
     }, [R]),
     z = (0, o.useCallback)(e => {
-      L(e === O.BRd.DARK), _.default.track(O.rMx.DISPLAY_NAME_STYLES_THEME_TOGGLE, {
+      L(e === O.BRd.DARK), S.default.track(O.rMx.DISPLAY_NAME_STYLES_THEME_TOGGLE, {
         dark: e === O.BRd.DARK
       })
     }, []),
@@ -143,7 +143,7 @@ function T(e) {
           author: F,
           message: (0, u.e5)(E(N({}, (0, p.ZP)({
             channelId: "1337",
-            content: P.intl.string(y.default.h5Cuen)
+            content: y.intl.string(P.default.h5Cuen)
           })), {
             state: O.yb.SENT,
             id: "0"
@@ -167,7 +167,7 @@ function T(e) {
       children: [(0, r.jsx)(s.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: P.intl.format(y.default.prQba2, {
+        children: y.intl.format(P.default.prQba2, {
           helpArticleLink: C.Z.getArticleURL(O.BhN.DISPLAY_NAME_STYLES)
         })
       }), (0, r.jsx)(D, {
@@ -188,13 +188,13 @@ function D(e) {
     optionClassName: k.themeToggleOption,
     options: [{
       name: "",
-      tooltip: P.intl.string(P.t.b8Cei4),
+      tooltip: y.intl.string(y.t.b8Cei4),
       value: O.BRd.DARK,
       icon: s.Z6G,
       className: o === O.BRd.DARK ? k.themeToggleOptionSelected : true
     }, {
       name: "",
-      tooltip: P.intl.string(P.t.K2sFfn),
+      tooltip: y.intl.string(y.t.K2sFfn),
       value: O.BRd.LIGHT,
       icon: s.chG,
       className: o === O.BRd.LIGHT ? k.themeToggleOptionSelected : true

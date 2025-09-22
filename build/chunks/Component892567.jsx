@@ -48,7 +48,7 @@ let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
       saturation: p.Z.desaturateUserColors ? p.Z.saturation : 1
     })), {
       includeNonProfile: L
-    } = m.f.useExperiment({
+    } = m.fN.useExperiment({
       location: "useDisplayNameStylesFont"
     }), j = (0, g.Y)({
       location: "UserNameWithEffects"

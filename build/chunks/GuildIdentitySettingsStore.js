@@ -1,15 +1,15 @@
 /** Chunk was on web.js **/
 /** chunk id: 778825, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-let r, i, a, o, s, l, c, u, d, f, _;
+let r, i, a, o, s, l, c, u, d, f, _, p;
 require.d(exports, {
-  Z: () => F
+  Z: () => H
 });
-var p, Chunk442837 = require("./442837.js"),
+var h, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
 
-function E(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,126 +17,133 @@ function E(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let b = Chunk981631.QZA.CLOSED,
-  y = {};
+let y = Chunk981631.QZA.CLOSED,
+  O = {};
 
-function O(e) {
-  f = e.guild, b = g.QZA.OPEN, y = {}, _ = e.source
-}
-
-function v() {
-  b = Chunk981631.QZA.CLOSED, y = {}, _ = true
+function v(e) {
+  _ = e.guild, y = E.QZA.OPEN, O = {}, p = e.source
 }
 
 function I() {
-  b = Chunk981631.QZA.SUBMITTING, y = {}
+  y = Chunk981631.QZA.CLOSED, O = {}, p = true
 }
 
-function T(e) {
-  f = e.guild, y = {}
+function T() {
+  y = Chunk981631.QZA.SUBMITTING, O = {}
 }
 
 function S(e) {
-  var t;
-  if (b !== g.QZA.SUBMITTING) returnfalse;
-  b = g.QZA.OPEN, y = null != (t = e.errors) ? t : {}
+  _ = e.guild, O = {}
 }
 
 function A(e) {
-  b = g.QZA.OPEN, y = e.errors
+  var t;
+  if (y !== E.QZA.SUBMITTING) returnfalse;
+  y = E.QZA.OPEN, O = null != (t = e.errors) ? t : {}
 }
 
 function C(e) {
+  y = E.QZA.OPEN, O = e.errors
+}
+
+function N(e) {
   let {
     avatar: t
   } = e;
   r = t
 }
 
-function N(e) {
+function R(e) {
   let {
     avatarDecoration: t
   } = e;
   i = t
 }
 
-function R(e) {
+function P(e) {
   let {
     profileEffectId: t
   } = e;
   o = t
 }
 
-function P(e) {
+function w(e) {
   let {
     banner: t
   } = e;
   s = t
 }
 
-function w(e) {
+function D(e) {
   let {
     bio: t
   } = e;
   l = t
 }
 
-function D(e) {
+function x(e) {
   let {
     pronouns: t
   } = e;
   c = t
 }
 
-function x(e) {
+function L(e) {
   let {
     nickname: t
   } = e;
   u = t
 }
 
-function L(e) {
+function j(e) {
   let {
     themeColors: t
   } = e;
   d = t
 }
 
-function j(e) {
+function M(e) {
   let {
     nameplate: t
   } = e;
   a = t
 }
 
-function M() {
-  k(), U(), y = {}, b = Chunk981631.QZA.OPEN
-}
-
-function k() {
-  r = true, u = true, i = true, a = true
+function k(e) {
+  let {
+    displayNameStyles: t
+  } = e;
+  f = t
 }
 
 function U() {
-  s = true, l = true, c = true, d = true, o = true
+  G(), B(), O = {}, y = Chunk981631.QZA.OPEN
 }
 
 function G() {
-  y = {}
+  r = true, u = true, i = true, a = true, f = true
 }
 
 function B() {
-  M(), v()
+  s = true, l = true, c = true, d = true, o = true
 }
-class Z extends(p = Chunk442837.ZP.Store) {
+
+function Z() {
+  O = {}
+}
+
+function F() {
+  U(), I()
+}
+class V extends(h = Chunk442837.ZP.Store) {
   getFormState() {
-    return b
-  }
-  getErrors() {
     return y
   }
+  getErrors() {
+    return O
+  }
   showNotice() {
-    return true !== r || true !== i || true !== o || true !== s || true !== l || true !== c || true !== u || true !== d || true !== a
+    return true !== r || true !== i || true !== o || true !== s || true !== l || true !== c || true !== u || true !== d || true !== a || true !== f
   }
   getIsSubmitDisabled() {
     return true !== l && l.length > Chunk981631.tPV
@@ -171,6 +178,9 @@ class Z extends(p = Chunk442837.ZP.Store) {
   getPendingNameplate() {
     return a
   }
+  getPendingDisplayNameStyles() {
+    return f
+  }
   getAllPending() {
     return {
       pendingAvatar: r,
@@ -181,36 +191,38 @@ class Z extends(p = Chunk442837.ZP.Store) {
       pendingPronouns: c,
       pendingNickname: u,
       pendingThemeColors: d,
-      pendingNameplate: a
+      pendingNameplate: a,
+      pendingDisplayNameStyles: f
     }
   }
   getGuild() {
-    return f
-  }
-  getSource() {
     return _
   }
+  getSource() {
+    return p
+  }
 }
-E(Z, "displayName", "GuildIdentitySettingsStore");
-let F = new Z(Chunk570140.Z, {
-  GUILD_IDENTITY_SETTINGS_INIT: O,
-  GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM: B,
-  GUILD_IDENTITY_SETTINGS_SET_GUILD: T,
-  GUILD_IDENTITY_SETTINGS_SUBMIT: I,
-  GUILD_IDENTITY_SETTINGS_SUBMIT_FAILURE: S,
-  USER_PROFILE_UPDATE_FAILURE: A,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR: C,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR_DECORATION: N,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_NAMEPLATE: j,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_PROFILE_EFFECT_ID: R,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_BANNER: P,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_BIO: w,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_PRONOUNS: D,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_NICKNAME: x,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_THEME_COLORS: L,
-  GUILD_IDENTITY_SETTINGS_RESET_PENDING_MEMBER_CHANGES: k,
-  GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES: U,
-  GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING: M,
-  GUILD_IDENTITY_SETTINGS_SUBMIT_SUCCESS: M,
-  GUILD_IDENTITY_SETTINGS_CLEAR_ERRORS: G
+b(V, "displayName", "GuildIdentitySettingsStore");
+let H = new V(Chunk570140.Z, {
+  GUILD_IDENTITY_SETTINGS_INIT: v,
+  GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM: F,
+  GUILD_IDENTITY_SETTINGS_SET_GUILD: S,
+  GUILD_IDENTITY_SETTINGS_SUBMIT: T,
+  GUILD_IDENTITY_SETTINGS_SUBMIT_FAILURE: A,
+  USER_PROFILE_UPDATE_FAILURE: C,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR: N,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR_DECORATION: R,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_DISPLAY_NAME_STYLES: k,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_NAMEPLATE: M,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_PROFILE_EFFECT_ID: P,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_BANNER: w,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_BIO: D,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_PRONOUNS: x,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_NICKNAME: L,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_THEME_COLORS: j,
+  GUILD_IDENTITY_SETTINGS_RESET_PENDING_MEMBER_CHANGES: G,
+  GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES: B,
+  GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING: U,
+  GUILD_IDENTITY_SETTINGS_SUBMIT_SUCCESS: U,
+  GUILD_IDENTITY_SETTINGS_CLEAR_ERRORS: Z
 })

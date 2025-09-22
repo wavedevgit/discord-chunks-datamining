@@ -1,1 +1,1 @@
-{"id":"594928","type":"experiment","data":{"id":"2025-07_display_name_styles_setter","kind":"user","label":"Display Name Styles Setter","defaultConfig":{"enabled":false},"commonTriggerPoint":"Chunk987338.$P.CONNECTION_OPEN","treatments":[{"id":1,"label":"Enables the UI for setting display name styles.","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}
+{"id":"594928","type":"experiment","data":{"name":"2025-09-display-name-styles-per-server","kind":"user","defaultConfig":{"enabled":false},"variations":{"undefined":{"enabled":true}}},"fromModule":{"id":"web.js"}}

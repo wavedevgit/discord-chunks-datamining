@@ -7,7 +7,7 @@ require.d(exports, {
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk693789 = require("./693789.jsx"),
+var Chunk793030 = require("./793030.js"),
   Chunk952265 = require("./952265.js"),
   Chunk911969 = require("./911969.js"),
   Chunk555573 = require("./555573.js"),
@@ -161,14 +161,11 @@ let P = {
       },
       key: "commands",
       headerClassName: d ? T.legacyInputCommandHeader : null,
-      headerTrailingContent: d ? (0, r.jsx)(i.zx, {
-        type: "button",
-        look: i.zx.Looks.LINK,
-        color: i.zx.Colors.BRAND,
-        size: i.zx.Sizes.MIN,
+      headerTrailingContent: d && (0, r.jsx)(i.Avr, {
+        size: "xs",
         onClick: N,
-        children: I.intl.string(I.t["8a0P09"])
-      }) : null
+        text: I.intl.string(I.t["8a0P09"])
+      })
     })
   },
   onSelect(e) {

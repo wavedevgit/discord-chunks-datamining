@@ -7,15 +7,16 @@ require.d(exports, {
   HP: () => s,
   I5: () => u,
   ID: () => h,
-  IO: () => b,
+  IO: () => y,
   It: () => c,
+  N_: () => b,
   RH: () => E,
-  W3: () => O,
-  b9: () => v,
+  W3: () => v,
+  b9: () => I,
   cV: () => d,
   g_: () => _,
   iq: () => o,
-  pG: () => y,
+  pG: () => O,
   sr: () => m,
   xn: () => f,
   z5: () => g
@@ -30,13 +31,14 @@ async function o(e, t) {
     avatarDescription: s,
     avatarId: l,
     avatarDecoration: c,
-    nameplate: u
+    nameplate: u,
+    displayNameStyles: d
   } = t;
   if (null == e) throw Error("Need guildId");
   i.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_SUBMIT"
   });
-  let d = {
+  let f = {
     nick: n,
     avatar: o,
     avatar_description: s,
@@ -48,12 +50,15 @@ async function o(e, t) {
         id: u.id,
         sku_id: u.skuId
       }
-    } : true
+    } : true,
+    display_name_font_id: true !== d ? null !== d ? d.fontId : null : true,
+    display_name_effect_id: true !== d ? null !== d ? d.effectId : null : true,
+    display_name_colors: true !== d ? null !== d ? d.colors : null : true
   };
   try {
     let t = await r.tn.patch({
         url: a.ANM.SET_GUILD_MEMBER(e),
-        body: d,
+        body: f,
         oldFormErrors: true,
         rejectWithError: false
       }),
@@ -159,25 +164,32 @@ function E(e) {
   })
 }
 
-function b() {
-  Chunk570140.Z.dispatch({
-    type: "GUILD_IDENTITY_SETTINGS_RESET_PENDING_MEMBER_CHANGES"
+function b(e) {
+  i.Z.dispatch({
+    type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_DISPLAY_NAME_STYLES",
+    displayNameStyles: e
   })
 }
 
 function y() {
   Chunk570140.Z.dispatch({
-    type: "GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES"
+    type: "GUILD_IDENTITY_SETTINGS_RESET_PENDING_MEMBER_CHANGES"
   })
 }
 
 function O() {
   Chunk570140.Z.dispatch({
-    type: "GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING"
+    type: "GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES"
   })
 }
 
 function v() {
+  Chunk570140.Z.dispatch({
+    type: "GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING"
+  })
+}
+
+function I() {
   Chunk570140.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_CLEAR_ERRORS"
   })

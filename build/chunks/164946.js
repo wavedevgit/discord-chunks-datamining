@@ -37,7 +37,7 @@ function o(e) {
     var n;
     t.nick = null != (n = e.pendingNickname) ? n : ""
   }
-  return true !== e.pendingAvatarDecoration && (t.avatarDecoration = e.pendingAvatarDecoration), true !== e.pendingNameplate && (t.nameplate = e.pendingNameplate), t
+  return true !== e.pendingAvatarDecoration && (t.avatarDecoration = e.pendingAvatarDecoration), true !== e.pendingNameplate && (t.nameplate = e.pendingNameplate), true !== e.pendingDisplayNameStyles && (t.displayNameStyles = e.pendingDisplayNameStyles), t
 }
 
 function s(e) {

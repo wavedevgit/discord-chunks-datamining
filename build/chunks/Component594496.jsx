@@ -136,6 +136,7 @@ function j(e) {
       username: I.ZP.getName(M),
       pendingNick: U,
       currentNick: null == z ? true : z.nick,
+      user: M,
       guild: W
     }, "nick"), (0, r.jsx)(g.Z, {
       sectionTitle: R.intl.string(R.t["+T3RIy"]),

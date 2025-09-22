@@ -2,24 +2,26 @@
 /** chunk id: 150039, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $U: () => p,
-  Jw: () => b,
-  Kg: () => m,
-  PO: () => O,
-  Wx: () => I,
-  ZT: () => T,
-  Zx: () => h,
-  bd: () => g,
-  f$: () => A,
-  gc: () => _,
-  gd: () => S,
-  s6: () => v,
-  xQ: () => E
+  $U: () => h,
+  Jw: () => O,
+  Kg: () => E,
+  PO: () => I,
+  Wx: () => S,
+  ZT: () => A,
+  Zx: () => m,
+  bd: () => b,
+  f$: () => N,
+  gc: () => p,
+  gd: () => C,
+  mD: () => g,
+  s6: () => T,
+  xQ: () => y
 }), require("./539854.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk809206 = require("./809206.js"),
   Chunk676742 = require("./676742.js"),
+  Chunk594928 = require("./594928.js"),
   Chunk18438 = require("./18438.js"),
   Chunk778825 = require("./778825.js"),
   Chunk350327 = require("./350327.js"),
@@ -27,9 +29,9 @@ var Chunk647438 = require("./647438.js"),
   Chunk271383 = require("./271383.js"),
   Chunk25990 = require("./25990.js");
 
-function _(e) {
+function p(e) {
   return r.useMemo(() => {
-    let t = d.ZP.getMutableAllGuildsAndMembers(),
+    let t = f.ZP.getMutableAllGuildsAndMembers(),
       n = {};
     for (let i in t) {
       var r;
@@ -40,96 +42,125 @@ function _(e) {
   }, [e])
 }
 
-function p(e, t) {
-  let n = (0, i.e7)([d.ZP], () => true === t ? null : d.ZP.getMember(t.id, e.id)),
+function h(e, t) {
+  let n = (0, i.e7)([f.ZP], () => true === t ? null : f.ZP.getMember(t.id, e.id)),
     r = (0, o.Z)(e.avatarDecoration),
     {
       pendingUserAvatarDecoration: a,
       userErrors: s
-    } = (0, i.cj)([f.Z], () => ({
-      pendingUserAvatarDecoration: f.Z.getPendingAvatarDecoration(),
-      userErrors: f.Z.getErrors().avatarDecoration
+    } = (0, i.cj)([_.Z], () => ({
+      pendingUserAvatarDecoration: _.Z.getPendingAvatarDecoration(),
+      userErrors: _.Z.getErrors().avatarDecoration
     })),
     {
-      pendingGuildAvatarDecoration: c,
+      pendingGuildAvatarDecoration: l,
       guildErrors: u
-    } = (0, i.cj)([l.Z], () => ({
-      pendingGuildAvatarDecoration: l.Z.getPendingAvatarDecoration(),
-      guildErrors: l.Z.getErrors().avatarDecoration
+    } = (0, i.cj)([c.Z], () => ({
+      pendingGuildAvatarDecoration: c.Z.getPendingAvatarDecoration(),
+      guildErrors: c.Z.getErrors().avatarDecoration
     }));
   return {
     userAvatarDecoration: r,
     guildAvatarDecoration: null == n ? true : n.avatarDecoration,
-    pendingAvatarDecoration: null != t ? c : a,
-    pendingErrors: null != t ? u : s
-  }
-}
-
-function h(e, t) {
-  var n;
-  let r = (0, i.e7)([d.ZP], () => true === t ? null : d.ZP.getMember(t, e.id)),
-    a = e.nameplate,
-    {
-      pendingUserNameplate: o,
-      userErrors: s
-    } = (0, i.cj)([f.Z], () => ({
-      pendingUserNameplate: f.Z.getPendingNameplate(),
-      userErrors: f.Z.getErrors().nameplate
-    })),
-    {
-      pendingGuildNameplate: c,
-      guildErrors: u
-    } = (0, i.cj)([l.Z], () => ({
-      pendingGuildNameplate: l.Z.getPendingNameplate(),
-      guildErrors: l.Z.getErrors().nameplate
-    }));
-  return {
-    userNameplate: a,
-    guildNameplate: null == r || null == (n = r.collectibles) ? true : n.nameplate,
-    pendingNameplate: null != t ? c : o,
+    pendingAvatarDecoration: null != t ? l : a,
     pendingErrors: null != t ? u : s
   }
 }
 
 function m(e, t) {
-  return (0, i.e7)([u.Z], () => {
-    var n, r, i, a;
-    return null == t ? null == (r = u.Z.getUserProfile(e.id)) || null == (n = r.profileEffect) ? true : n.id : null == (a = u.Z.getGuildMemberProfile(e.id, t.id)) || null == (i = a.profileEffect) ? true : i.id
-  }, [e, t])
+  var n;
+  let r = (0, i.e7)([f.ZP], () => true === t ? null : f.ZP.getMember(t, e.id)),
+    a = e.nameplate,
+    {
+      pendingUserNameplate: o,
+      userErrors: s
+    } = (0, i.cj)([_.Z], () => ({
+      pendingUserNameplate: _.Z.getPendingNameplate(),
+      userErrors: _.Z.getErrors().nameplate
+    })),
+    {
+      pendingGuildNameplate: l,
+      guildErrors: u
+    } = (0, i.cj)([c.Z], () => ({
+      pendingGuildNameplate: c.Z.getPendingNameplate(),
+      guildErrors: c.Z.getErrors().nameplate
+    }));
+  return {
+    userNameplate: a,
+    guildNameplate: null == r || null == (n = r.collectibles) ? true : n.nameplate,
+    pendingNameplate: null != t ? l : o,
+    pendingErrors: null != t ? u : s
+  }
 }
 
-function g(e) {
-  return (0, i.cj)([f.Z, l.Z], () => null == e ? {
-    pendingProfileEffectId: f.Z.getPendingProfileEffectId(),
-    errors: f.Z.getErrors().profileEffect
+function g(e, t) {
+  let {
+    enabled: n
+  } = s.s9.useConfig({
+    location: "useGuildMemberOrUserPendingDisplayNameStyles"
+  }), r = (0, i.e7)([f.ZP], () => true === t || null == e ? null : f.ZP.getMember(t, e.id)), {
+    pendingUserDisplayNameStyles: a,
+    userErrors: o
+  } = (0, i.cj)([_.Z], () => ({
+    pendingUserDisplayNameStyles: _.Z.getPendingDisplayNameStyles(),
+    userErrors: _.Z.getErrors().displayNameStyles
+  })), {
+    pendingGuildDisplayNameStyles: l,
+    guildErrors: u
+  } = (0, i.cj)([c.Z], () => ({
+    pendingGuildDisplayNameStyles: c.Z.getPendingDisplayNameStyles(),
+    guildErrors: c.Z.getErrors().displayNameStyles
+  })), d = null == e ? true : e.displayNameStyles, p = null == r ? true : r.displayNameStyles;
+  return null != t && n && (null != p || null != l) ? {
+    currentDisplayNameStyles: p,
+    pendingDisplayNameStyles: l,
+    pendingErrors: u
   } : {
-    pendingProfileEffectId: l.Z.getPendingProfileEffectId(),
-    errors: l.Z.getErrors().profileEffect
-  }, [e])
+    currentDisplayNameStyles: d,
+    pendingDisplayNameStyles: a,
+    pendingErrors: o
+  }
 }
 
 function E(e, t) {
-  (0, c.Cf)(e === t ? true : e)
+  return (0, i.e7)([d.Z], () => {
+    var n, r, i, a;
+    return null == t ? null == (r = d.Z.getUserProfile(e.id)) || null == (n = r.profileEffect) ? true : n.id : null == (a = d.Z.getGuildMemberProfile(e.id, t.id)) || null == (i = a.profileEffect) ? true : i.id
+  }, [e, t])
 }
 
-function b(e, t) {
-  (0, a.I5)((null == e ? true : e.imageUri) === t ? true : e)
+function b(e) {
+  return (0, i.cj)([_.Z, c.Z], () => null == e ? {
+    pendingProfileEffectId: _.Z.getPendingProfileEffectId(),
+    errors: _.Z.getErrors().profileEffect
+  } : {
+    pendingProfileEffectId: c.Z.getPendingProfileEffectId(),
+    errors: c.Z.getErrors().profileEffect
+  }, [e])
 }
 
-function y(e) {
-  return e ? s.cV : a.cV
+function y(e, t) {
+  (0, u.Cf)(e === t ? true : e)
 }
 
 function O(e, t) {
-  y(null != e)(t)
+  (0, a.I5)((null == e ? true : e.imageUri) === t ? true : e)
 }
 
-function v(e, t, n) {
-  if (e === t) return void(null == n ? (0, a.xn)(true) : (0, s.xn)(true));
-  null == n ? (0, a.xn)(e) : (0, s.xn)(e)
+function v(e) {
+  return e ? l.cV : a.cV
 }
 
-function I(e, t, n) {
+function I(e, t) {
+  v(null != e)(t)
+}
+
+function T(e, t, n) {
+  if (e === t) return void(null == n ? (0, a.xn)(true) : (0, l.xn)(true));
+  null == n ? (0, a.xn)(e) : (0, l.xn)(e)
+}
+
+function S(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] && arguments[3];
   return null != e ? "string" == typeof e && "" === e ? {
     value: r ? n : null,
@@ -146,7 +177,7 @@ function I(e, t, n) {
   }
 }
 
-function T(e) {
+function A(e) {
   var t, n, r, i, a;
   let {
     pendingProfileEffectId: o,
@@ -155,10 +186,10 @@ function T(e) {
   return u && null != c ? l : u ? null : null != o ? o : null == s || null == (a = s.profileEffect) ? true : a.id
 }
 
-function S(e, t) {
+function C(e, t) {
   return true === e ? null != t : null != e
 }
 
-function A(e, t) {
+function N(e, t) {
   return true === e ? null != t : null != e
 }

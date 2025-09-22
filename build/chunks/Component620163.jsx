@@ -165,7 +165,7 @@ let eQ = () => {
   },
   e$ = () => {
     let e = [];
-    return (0, Chunk172416.h)("SettingsRendererConfig") && module.push(Chunk704215.z.WIDGETS_USER_SETTINGS_NEW_BADGE), Chunk594928.J.getCurrentConfig({
+    return (0, Chunk172416.h)("SettingsRendererConfig") && module.push(Chunk704215.z.WIDGETS_USER_SETTINGS_NEW_BADGE), Chunk594928.JH.getCurrentConfig({
       location: "SettingsRendererConfig"
     }).enabled && module.push(Chunk704215.z.DISPLAY_NAME_STYLES_NEW_BADGE), module
   },
