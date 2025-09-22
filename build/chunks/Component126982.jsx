@@ -81,6 +81,7 @@ function v(e) {
         className: g.headerImage
       })
     }), (0, r.jsx)(c.olH, {
+      "data-migration-pending": true,
       withCircleBackground: true,
       className: g.closeButton,
       onClick: n

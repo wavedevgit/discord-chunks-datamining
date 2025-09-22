@@ -99,6 +99,7 @@ let y = e => {
             discountAmount: A ? R : true
           })]
         }), !i && (0, r.jsx)(o.olH, {
+          "data-migration-pending": true,
           hideOnFullscreen: f,
           onClick: O,
           className: E.closeButton

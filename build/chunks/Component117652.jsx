@@ -203,6 +203,7 @@ function j(e) {
       })
     }), (0, r.jsx)(S.O3, {
       children: (0, r.jsx)(a.mzw, {
+        "data-migration-pending": true,
         justify: f.Z.Justify.BETWEEN,
         align: f.Z.Align.CENTER,
         children: (0, r.jsx)(L, {
