@@ -94,7 +94,7 @@ let j = Chunk647438.forwardRef(function() {
     let {
       hasSearchResults: N,
       searchResults: v
-    } = (0, Chunk839469.E)(), L = (0, Chunk991346.VO)(), R = (0, Chunk991346.q8)(v), U = Chunk647438.useMemo(() => N ? R : L, [N, R, L]), q = (0, Chunk332473.b)(), M = (0, Chunk113434.iO)(), B = Chunk647438.useCallback(e => {
+    } = (0, Chunk839469.F)(), L = (0, Chunk991346.VO)(), R = (0, Chunk991346.q8)(v), U = Chunk647438.useMemo(() => N ? R : L, [N, R, L]), q = (0, Chunk332473.b)(), F = (0, Chunk113434.iO)(), M = Chunk647438.useCallback(e => {
       o.Z.setSection(e)
     }, []);
     return (0, Chunk951288.jsx)(Chunk906732.Gt, {
@@ -107,11 +107,11 @@ let j = Chunk647438.forwardRef(function() {
           title: Chunk388032.intl.string(Chunk388032.t.cduTBA),
           sidebarTheme: exports,
           section: require,
-          onSetSection: B,
+          onSetSection: M,
           onClose: Chunk37234.xf,
           sections: U,
           isEligibleForPomelo: q,
-          questsForBadge: M,
+          questsForBadge: F,
           showUserSettingsSearch: true
         })
       })

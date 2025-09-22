@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 483161, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => N
 });
 var Chunk951288 = require("./951288.js"),
   Chunk657707 = require("./657707.js"),
@@ -21,14 +21,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk88651 = require("./88651.js");
-let N = (0, Chunk509613.x1)(Chunk313789.n.PROFILE_PANE, {
+let S = (0, Chunk509613.x1)(Chunk313789.n.PROFILE_PANE, {
     getLayout: () => [],
     render: Chunk564344.Z
   }),
-  S = (0, Chunk509613.wf)(Chunk313789.n.PROFILE_PANEL, {
+  N = (0, Chunk509613.wf)(Chunk313789.n.PROFILE_PANEL, {
     icon: Chunk657707.tBG,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["vi7f+v"]),
-    getLayout: () => [N],
+    getLayout: () => [S],
     notice: {
       stores: [Chunk778825.Z, Chunk25990.Z],
       element: Chunk398140.Z
@@ -55,25 +55,25 @@ let N = (0, Chunk509613.x1)(Chunk313789.n.PROFILE_PANE, {
         onClick: s,
         active: n,
         children: (0, r.jsxs)("div", {
-          className: v.profileCustomizationTab,
+          className: T.profileCustomizationTab,
           children: [(0, r.jsx)(o.qEK, {
             src: u,
             avatarDecoration: d,
             size: o.EFr.SIZE_48,
-            "aria-label": T.intl.string(T.t.lqaIxM)
+            "aria-label": v.intl.string(v.t.lqaIxM)
           }), (0, r.jsxs)("div", {
-            className: v.textContainer,
+            className: T.textContainer,
             children: [(0, r.jsx)(o.Text, {
               color: "header-primary",
               variant: "text-md/medium",
               lineClamp: 1,
               children: null != (t = a.globalName) ? t : a.username
             }), (0, r.jsxs)("div", {
-              className: v.editProfilesRow,
+              className: T.editProfilesRow,
               children: [(0, r.jsx)(o.Text, {
                 variant: "text-sm/normal",
                 color: "currentColor",
-                children: T.intl.string(T.t.Ip9nBQ)
+                children: v.intl.string(v.t.Ip9nBQ)
               }), (0, r.jsx)(i.vdY, {
                 size: "xxs",
                 color: "currentColor"

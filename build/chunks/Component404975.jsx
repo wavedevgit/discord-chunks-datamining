@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 404975, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => T
+  P: () => v
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -38,7 +38,7 @@ function p(e) {
   return e
 }
 
-function T(e) {
+function v(e) {
   let {
     root: t,
     header: n,
@@ -85,7 +85,7 @@ function T(e) {
         children: [(0, r.jsxs)("div", {
           className: b.fixedContent,
           children: [(0, r.jsx)("div", {
-            children: O.map(e => (0, r.jsx)(S, {
+            children: O.map(e => (0, r.jsx)(N, {
               section: e,
               visibleContent: t,
               markAsDismissed: i
@@ -96,7 +96,7 @@ function T(e) {
           fade: true,
           children: [(0, r.jsx)("nav", {
             className: b.nav,
-            children: y.map(e => (0, r.jsx)(S, {
+            children: y.map(e => (0, r.jsx)(N, {
               section: e,
               visibleContent: t,
               markAsDismissed: i
@@ -108,7 +108,7 @@ function T(e) {
   })
 }
 
-function v(e) {
+function T(e) {
   let {
     dismissibleContentType: t,
     targetElementRef: n,
@@ -130,7 +130,7 @@ function v(e) {
   }, s))
 }
 
-function N(e) {
+function S(e) {
   let {
     trailing: t,
     sectionRef: n,
@@ -139,7 +139,7 @@ function N(e) {
   } = e;
   if (t.type === g.PU.POPOVER) {
     var o, s;
-    return (0, r.jsx)(v, (o = p({}, t), s = s = {
+    return (0, r.jsx)(T, (o = p({}, t), s = s = {
       targetElementRef: n,
       visibleContent: i,
       markAsDismissed: l
@@ -156,7 +156,7 @@ function N(e) {
   }
 }
 
-function S(e) {
+function N(e) {
   var t;
   let {
     section: n,
@@ -173,7 +173,7 @@ function S(e) {
         variant: "heading-sm/medium",
         color: "text-tertiary",
         children: a
-      }), null != c && (0, r.jsx)(N, {
+      }), null != c && (0, r.jsx)(S, {
         trailing: c,
         sectionRef: s,
         visibleContent: l,

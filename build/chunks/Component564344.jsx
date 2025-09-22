@@ -42,10 +42,8 @@ function C() {
       subsection: N,
       setSubsection: R
     } = (0, Chunk785145.Z)(),
-    {
-      hasSearchResults: P,
-      searchResults: w
-    } = (0, Chunk839469.E)();
+    P = Chunk839469.R.useField("hasSearchResults"),
+    w = Chunk839469.R.useField("searchResults");
 
   function D(t) {
     if (N !== t) {

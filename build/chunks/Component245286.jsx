@@ -1,7 +1,7 @@
 /** Chunk was on 47129 **/
 /** chunk id: 245286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => d
+  default: () => O
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -11,9 +11,12 @@ var Chunk481060 = require("./481060.js"),
   Chunk996733 = require("./996733.js"),
   Chunk313789 = require("./313789.js"),
   Chunk914578 = require("./914578.jsx"),
-  Chunk920952 = require("./920952.js");
+  Chunk920952 = require("./920952.js"),
+  Chunk839469 = require("./839469.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk942408 = require("./942408.js");
 
-function d(e) {
+function O(e) {
   var t, {
       target: n
     } = e,
@@ -34,10 +37,10 @@ function d(e) {
     }(e, ["target"]);
   let d = (0, s.Z7)(),
     {
-      node: g,
-      directory: O
+      node: f,
+      directory: g
     } = (0, o.Z)(c.Z, d),
-    y = (t = a.n.ACCOUNT_PANEL, null == O.entry(n) ? t : n);
+    O = (t = a.n.ACCOUNT_PANEL, null == g.entry(n) ? t : n);
   return (0, r.jsx)(l.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -56,22 +59,35 @@ function d(e) {
     }
     return e
   }({
-    root: g,
-    directory: O,
-    sidebarHeader: f,
+    root: f,
+    directory: g,
+    sidebarHeader: y,
     sidebarFooter: u.Z,
-    target: y
+    target: O
   }, i))
 }
 
-function f() {
-  let e = (0, Chunk996733.Z7)();
-  return (0, Chunk951288.jsx)("div", {
-    children: (0, Chunk951288.jsx)(Chunk481060.E1j, {
+function y() {
+  let e = (0, Chunk996733.Z7)(),
+    t = Chunk839469.R.useField("hasSearchResults"),
+    n = Chunk839469.R.useField("searchResults");
+  return (0, Chunk951288.jsxs)("div", {
+    children: [(0, Chunk951288.jsx)(Chunk481060.E1j, {
       size: "md",
       query: module,
       onChange: Chunk996733.yN,
       onClear: () => (0, Chunk996733.yN)("")
-    })
+    }), exports && 0 === require.length && (0, Chunk951288.jsxs)("div", {
+      className: Chunk942408.emptySearchResultsContainer,
+      children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+        variant: "text-sm/semibold",
+        color: "text-primary",
+        children: Chunk388032.intl.string(Chunk388032.t.zihbmp)
+      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+        variant: "text-sm/normal",
+        color: "text-secondary",
+        children: Chunk388032.intl.string(Chunk388032.t.XclvsL)
+      })]
+    })]
   })
 }

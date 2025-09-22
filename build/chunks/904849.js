@@ -1,9 +1,17 @@
 /** Chunk was on 47129 **/
 /** chunk id: 904849, original params: e,t,n (module,exports,require) **/
+function r(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
 require.d(exports, {
-  Z: () => r
+  Z: () => i
 }), require("./388685.js");
-class r {
+class i {
   register(e, t, n, r) {
     this.map.set(e.key, {
       node: e,
@@ -26,14 +34,13 @@ class r {
     var t;
     return null == (t = this.typedEntry(e)) ? true : t.node
   }
+  setDefaultPanel(e) {
+    this.defaultPanel = e
+  }
+  getDefaultPanel() {
+    return this.defaultPanel
+  }
   constructor() {
-    ! function(e, t, n) {
-      "map" in e ? Object.defineProperty(e, "map", {
-        value: n,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = n
-    }(this, "map", new Map)
+    r(this, "map", new Map), r(this, "defaultPanel", true)
   }
 }

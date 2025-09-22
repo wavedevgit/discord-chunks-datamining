@@ -233,37 +233,42 @@ function Y() {
 }
 
 function W(e) {
-  let {
-    searchResults: t
-  } = (0, j.E)(), n = Y(), r = n[e], i = Object.fromEntries(Object.entries(n).filter(e => {
-    let [t, n] = e;
-    return n.section === r.section
-  })), a = Object.fromEntries(Object.entries(i).filter(e => {
-    let [t, {
-      parent: n,
-      section: i
-    }] = e;
-    return null != n && i === r.section
-  }).map(e => {
-    let [t, {
-      parent: n
-    }] = e;
-    return [t, n]
-  })), o = new Set, s = e => {
-    let t = i[e];
-    if (null == t) return;
-    o.add(e);
-    let n = t.parent;
-    null != n && s(n)
-  }, l = e => {
-    for (let t of (o.add(e), Object.entries(a).filter(t => {
-        let [n, r] = t;
-        return r === e
-      }).map(e => {
-        let [t] = e;
-        return t
-      }))) l(t)
-  };
+  let t = j.R.useField("searchResults"),
+    n = Y(),
+    r = n[e],
+    i = Object.fromEntries(Object.entries(n).filter(e => {
+      let [t, n] = e;
+      return n.section === r.section
+    })),
+    a = Object.fromEntries(Object.entries(i).filter(e => {
+      let [t, {
+        parent: n,
+        section: i
+      }] = e;
+      return null != n && i === r.section
+    }).map(e => {
+      let [t, {
+        parent: n
+      }] = e;
+      return [t, n]
+    })),
+    o = new Set,
+    s = e => {
+      let t = i[e];
+      if (null == t) return;
+      o.add(e);
+      let n = t.parent;
+      null != n && s(n)
+    },
+    l = e => {
+      for (let t of (o.add(e), Object.entries(a).filter(t => {
+          let [n, r] = t;
+          return r === e
+        }).map(e => {
+          let [t] = e;
+          return t
+        }))) l(t)
+    };
   for (let e of t.filter(e => e in i))
     if (!o.has(e)) {
       if (null != i[e].element && null == i[e].parent) {

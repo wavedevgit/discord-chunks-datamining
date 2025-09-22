@@ -28,19 +28,19 @@ function u(e) {
     }),
     b = null != g ? E.slice(0, g) : E,
     p = null != g ? E.slice(g) : [],
-    T = null != O ? O : i.Fragment,
-    v = null != (t = null == y ? true : y(c, p.length)) ? t : (n = p.length, c ? a.intl.formatToPlainString(a.t["3SHL+f"], {
+    v = null != O ? O : i.Fragment,
+    T = null != (t = null == y ? true : y(c, p.length)) ? t : (n = p.length, c ? a.intl.formatToPlainString(a.t["3SHL+f"], {
       count: n
     }) : a.intl.formatToPlainString(a.t["8JRFyc"], {
       count: n
     }));
-  return (0, r.jsxs)(T, {
+  return (0, r.jsxs)(v, {
     children: [b.map((e, t) => (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(o.Z, {
         node: e
       }), (t !== b.length - 1 || p.length > 0) && (0, r.jsx)(l.$i$, {})]
     }, e.key)), p.length > 0 && (0, r.jsx)(s.I, {
-      title: v,
+      title: T,
       isOpen: c,
       setIsOpen: d,
       compact: true,
