@@ -69,15 +69,15 @@ function W(e) {
     guild: W,
     channel: H,
     applicationIntegrations: G,
-    builtInIntegrations: z,
-    customWebhooks: F,
-    followedChannelWebhooks: K,
-    isLoadingWebhooks: q,
+    builtInIntegrations: F,
+    customWebhooks: K,
+    followedChannelWebhooks: q,
+    isLoadingWebhooks: z,
     canCreateWebhook: V,
     onManageBuiltIn: Y,
     onManageCustomWebhooks: $,
-    onManageFollowedChannels: X,
-    onManageApplication: J,
+    onManageFollowedChannels: J,
+    onManageApplication: X,
     onManageLobbiesLinked: Q
   } = e, ee = (0, m.ZP)(), [et, en] = r.useState(""), {
     isFetchingConnections: ei,
@@ -99,12 +99,12 @@ function W(e) {
   } = r.useMemo(() => {
     var e, t, n, i, r, l, a, o;
     return {
-      availableTwitchIntegrations: null != (r = null == (e = z.twitch) ? true : e.length) ? r : 0,
-      availableYoutubeIntegrations: null != (l = null == (t = z.youtube) ? true : t.length) ? l : 0,
-      guildTwitchIntegrations: null != (a = null == (n = z.twitch) ? true : n.filter(e => e.enabled).length) ? a : 0,
-      guildYoutubeIntegrations: null != (o = null == (i = z.youtube) ? true : i.filter(e => e.enabled).length) ? o : 0
+      availableTwitchIntegrations: null != (r = null == (e = F.twitch) ? true : e.length) ? r : 0,
+      availableYoutubeIntegrations: null != (l = null == (t = F.youtube) ? true : t.length) ? l : 0,
+      guildTwitchIntegrations: null != (a = null == (n = F.twitch) ? true : n.filter(e => e.enabled).length) ? a : 0,
+      guildYoutubeIntegrations: null != (o = null == (i = F.youtube) ? true : i.filter(e => e.enabled).length) ? o : 0
     }
-  }, [z.twitch, z.youtube]), {
+  }, [F.twitch, F.youtube]), {
     showTwitchCard: eb,
     showYoutubeCard: eg
   } = r.useMemo(() => {
@@ -147,13 +147,13 @@ function W(e) {
       return null != l.user ? a.push({
         icon: u.T39,
         text: A.intl.formatToPlainString(A.t.Nu9sam, {
-          timestamp: Z.default.extractTimestamp(l.id),
-          user: w.ZP.getUserTag(l.user)
+          timestamp: w.default.extractTimestamp(l.id),
+          user: Z.ZP.getUserTag(l.user)
         })
       }) : a.push({
         icon: u.T39,
         text: A.intl.formatToPlainString(A.t.gcdJ8P, {
-          timestamp: Z.default.extractTimestamp(l.id)
+          timestamp: w.default.extractTimestamp(l.id)
         })
       }), (0, i.jsx)(P.Z, {
         name: r.name,
@@ -162,7 +162,7 @@ function W(e) {
         buttonText: A.intl.string(A.t["Z/qRnJ"]),
         hasNextSection: true,
         onButtonClick: () => {
-          J(r.id), C.default.track(E.rMx.APP_MANAGE_CTA_CLICKED, {
+          X(r.id), C.default.track(E.rMx.APP_MANAGE_CTA_CLICKED, {
             application_id: r.id,
             guild_id: null == W ? true : W.id,
             is_admin: null != W ? _.Z.can(E.Plq.ADMINISTRATOR, W) : true
@@ -231,12 +231,12 @@ function W(e) {
       });
     return t > 0 ? l : a
   }(ee, ef, null == W ? true : W.id), eS = null);
-  let eZ = S.Z.getArticleURL(E.BhN.INTEGRATIONS),
-    ew = null != H ? A.t.YV0vh4 : A.t.FnZEJi,
+  let ew = S.Z.getArticleURL(E.BhN.INTEGRATIONS),
+    eZ = null != H ? A.t.YV0vh4 : A.t.FnZEJi,
     eI = [];
   if (el) {
     let e, t, r, a, o;
-    eI.push((n = F.length, n > 0 ? t = (0, i.jsx)(u.LJT, {
+    eI.push((n = K.length, n > 0 ? t = (0, i.jsx)(u.LJT, {
       size: "xs"
     }) : e = A.intl.string(A.t.lOQqJC), (0, i.jsx)(P.Z, {
       name: A.intl.string(A.t.xOg4SE),
@@ -251,9 +251,9 @@ function W(e) {
           count: n
         })
       }]
-    }, "webhooks"))), (null == H ? true : H.type) === E.d4z.GUILD_VOICE || (null == H ? true : H.type) != null && E.TPd.GUILD_THREADS_ONLY.has(H.type) || eI.push((l = K.length, l > 0 ? (o = (0, i.jsx)(u.LJT, {
+    }, "webhooks"))), (null == H ? true : H.type) === E.d4z.GUILD_VOICE || (null == H ? true : H.type) != null && E.TPd.GUILD_THREADS_ONLY.has(H.type) || eI.push((l = q.length, l > 0 ? (o = (0, i.jsx)(u.LJT, {
       size: "xs"
-    }), a = X) : (r = A.intl.string(A.t["ZwSt+f"]), a = () => open(S.Z.getArticleURL(E.BhN.CHANNEL_FOLLOWING))), (0, i.jsx)(P.Z, {
+    }), a = J) : (r = A.intl.string(A.t["ZwSt+f"]), a = () => open(S.Z.getArticleURL(E.BhN.CHANNEL_FOLLOWING))), (0, i.jsx)(P.Z, {
       name: A.intl.string(A.t.OrV60t),
       icon: u.AsW,
       buttonText: r,
@@ -330,12 +330,12 @@ function W(e) {
     className: a()(null != eS ? D.footerPlaceholder : null),
     children: [(0, i.jsx)(u.R94, {
       type: u.geA.DESCRIPTION,
-      children: A.intl.format(ew, {
-        helpdeskArticle: eZ
+      children: A.intl.format(eZ, {
+        helpdeskArticle: ew
       })
     }), (0, i.jsx)(u.$i$, {
       className: D.divider
-    }), q || ei || null == W ? (0, i.jsx)(u.$jN, {
+    }), z || ei || null == W ? (0, i.jsx)(u.$jN, {
       className: D.__invalid_spinner,
       type: u.$jN.Type.SPINNING_CIRCLE
     }) : (0, i.jsxs)(i.Fragment, {

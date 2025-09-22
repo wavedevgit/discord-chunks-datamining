@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk591086 = require("./591086.js");
 
-function w(e) {
+function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -124,7 +124,7 @@ function P(e) {
         i = null != e ? e.name : "role"
       }
     }(0, O._)(n, i)
-  }, [j, P]), z = r.useCallback((e, n) => {
+  }, [j, P]), F = r.useCallback((e, n) => {
     let i = {};
     for (let [e, t] of Object.entries(P)) i[e] = {
       id: t.id,
@@ -133,14 +133,14 @@ function P(e) {
     };
     if (i = Object.assign(i, e), n.length > 0 && (i = a().omit(i, n)), !H(i)) return void G(e, n);
     h.W4(t, B, i)
-  }, [t, P, B, H, G]), F = r.useCallback(() => {
+  }, [t, P, B, H, G]), K = r.useCallback(() => {
     let e = Object.keys(U);
     return (0, c.ZDy)(async () => {
       let {
         default: t
       } = await n.e("64908").then(n.bind(n, 557944));
-      return n => (0, i.jsx)(t, w({
-        editPermissions: z,
+      return n => (0, i.jsx)(t, Z({
+        editPermissions: F,
         guildId: j,
         headerText: S.intl.string(S.t["i1c+kZ"]),
         hasMemberSearch: false,
@@ -150,14 +150,14 @@ function P(e) {
         selectedPermissionCount: D
       }, n))
     })
-  }, [z, U, j, D]), K = r.useCallback(() => {
+  }, [F, U, j, D]), q = r.useCallback(() => {
     let e = Object.keys(W);
     return (0, c.ZDy)(async () => {
       let {
         default: t
       } = await n.e("64908").then(n.bind(n, 557944));
-      return n => (0, i.jsx)(t, w({
-        editPermissions: z,
+      return n => (0, i.jsx)(t, Z({
+        editPermissions: F,
         guildId: j,
         hasMemberSearch: true,
         headerText: S.intl.string(S.t["56jRn5"]),
@@ -167,21 +167,21 @@ function P(e) {
         selectedPermissionCount: D
       }, n))
     })
-  }, [z, j, W, D]), q = r.useCallback(() => (0, c.ZDy)(async () => {
+  }, [F, j, W, D]), z = r.useCallback(() => (0, c.ZDy)(async () => {
     let {
       default: e
     } = await n.e("21897").then(n.bind(n, 303313)), t = R.defaultMemberPermissions;
-    return o.fS(t, u.BO) && (t = C.Plq.ADMINISTRATOR), n => (0, i.jsx)(e, I(w({}, n), {
+    return o.fS(t, u.BO) && (t = C.Plq.ADMINISTRATOR), n => (0, i.jsx)(e, I(Z({}, n), {
       defaultMemberPermissions: t
     }))
   }), [R]), V = D - N._n, Y = V >= 0, $ = [{
-    buttonClick: K,
+    buttonClick: q,
     buttonText: S.intl.string(S.t["56jRn5"]),
     noneSelectedText: S.intl.string(S.t.C0rYfn),
     overwrites: W,
     title: null == l ? S.intl.string(S.t["vPWe+/"]) : S.intl.string(S.t["1jLVGB"])
   }, {
-    buttonClick: F,
+    buttonClick: K,
     buttonText: S.intl.string(S.t["i1c+kZ"]),
     noneSelectedText: S.intl.string(S.t.UBJhCw),
     overwrites: U,
@@ -194,28 +194,28 @@ function P(e) {
         removeCount: V
       })
     }) : null, L ? (0, i.jsxs)("div", {
-      className: Z.requiredPermissionsBanner,
+      className: w.requiredPermissionsBanner,
       children: [(0, i.jsx)(c.d3s, {
         size: "sm",
         color: "currentColor",
-        className: Z.icon
+        className: w.icon
       }), (0, i.jsx)("span", {
-        className: Z.message,
+        className: w.message,
         children: S.intl.format(S.t["2889Gh"], {})
       }), (0, i.jsx)(c.zxk, {
         variant: "secondary",
         size: "sm",
-        onClick: q,
+        onClick: z,
         text: S.intl.string(S.t["HO/oXl"])
       })]
     }) : null, $.map((e, t) => {
       let n = null;
       return M ? Y && (n = S.intl.string(S.t.XTwtW1)) : n = null != l ? S.intl.string(S.t.tybdam) : S.intl.string(S.t.z2hjk5), (0, i.jsx)(_.Z, {
         bar: (0, i.jsx)(c.ua7, {
-          tooltipClassName: Z.tooltip,
+          tooltipClassName: w.tooltip,
           text: n,
           shouldShow: null != n,
-          children: t => (0, i.jsx)(c.zxk, I(w({}, t), {
+          children: t => (0, i.jsx)(c.zxk, I(Z({}, t), {
             variant: "secondary",
             disabled: Y || !M,
             onClick: e.buttonClick,
@@ -226,13 +226,13 @@ function P(e) {
         inModal: v,
         title: e.title,
         children: (0, i.jsx)("div", {
-          className: v ? true : Z.listContainer,
+          className: v ? true : w.listContainer,
           children: (0, i.jsx)(y.Z, {
             guildId: j,
             commandId: l,
             noneSelectedText: e.noneSelectedText,
             overwrites: e.overwrites,
-            editPermissions: z,
+            editPermissions: F,
             hasAccessToMutatePermissions: M
           })
         })
@@ -243,8 +243,8 @@ function P(e) {
 
 function T(e) {
   let t = (0, j.w)(e);
-  return I(w({}, t), {
-    results: t.results.map(e => I(w({}, e), {
+  return I(Z({}, t), {
+    results: t.results.map(e => I(Z({}, e), {
       type: d.Kw.CHANNEL
     }))
   })
@@ -252,10 +252,10 @@ function T(e) {
 
 function E(e) {
   let t = (0, v.U)(e);
-  return I(w({}, t), {
-    results: t.results.roles.map(e => I(w({}, e), {
+  return I(Z({}, t), {
+    results: t.results.roles.map(e => I(Z({}, e), {
       type: d.Kw.ROLE
-    })).concat(t.results.members.map(e => I(w({}, e), {
+    })).concat(t.results.members.map(e => I(Z({}, e), {
       type: d.Kw.USER
     })))
   })

@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk134850 = require("./134850.js");
 
-function w(e, t) {
+function Z(e, t) {
   switch (e) {
     case N.b4C.APPLICATION:
       var n;
@@ -64,15 +64,15 @@ let I = Chunk647438.memo(function(e) {
     refToScroller: D,
     errors: R,
     hasChanges: L
-  } = e, M = (0, o.e7)([g.ZP], () => null != l ? g.ZP.getDefaultChannel(l.id) : null), B = (0, o.cj)([g.ZP], () => g.ZP.getChannels(null == l ? true : l.id)), U = (0, o.cj)([f.Z], () => a().keyBy(B.SELECTABLE.map(e => e.channel).filter(e => f.Z.can(N.Plq.MANAGE_WEBHOOKS, e)), "id")), W = (0, o.cj)([f.Z], () => a().keyBy(B.VOCAL.map(e => e.channel).filter(e => e.isGuildVocal() && f.Z.can(N.Plq.MANAGE_WEBHOOKS, e)), "id")), H = null != I ? I : M, G = t === N.b4C.APPLICATION ? n : null, [z, F] = r.useState(d.$x), K = r.useCallback(() => L() ? (h.S.dispatch(N.CkL.SHAKE_APP, {
+  } = e, M = (0, o.e7)([g.ZP], () => null != l ? g.ZP.getDefaultChannel(l.id) : null), B = (0, o.cj)([g.ZP], () => g.ZP.getChannels(null == l ? true : l.id)), U = (0, o.cj)([f.Z], () => a().keyBy(B.SELECTABLE.map(e => e.channel).filter(e => f.Z.can(N.Plq.MANAGE_WEBHOOKS, e)), "id")), W = (0, o.cj)([f.Z], () => a().keyBy(B.VOCAL.map(e => e.channel).filter(e => e.isGuildVocal() && f.Z.can(N.Plq.MANAGE_WEBHOOKS, e)), "id")), H = null != I ? I : M, G = t === N.b4C.APPLICATION ? n : null, [F, K] = r.useState(d.$x), q = r.useCallback(() => L() ? (h.S.dispatch(N.CkL.SHAKE_APP, {
     duration: 300,
-    intensity: z
-  }), F(Math.min(z + d.d7, d.w6)), h.S.dispatch(N.CkL.EMPHASIZE_NOTICE), false) : (F(d.$x), true), [L, z]), q = r.useCallback(e => !!K() && (c.Z.setSection(e), true), [K]), {
+    intensity: F
+  }), K(Math.min(F + d.d7, d.w6)), h.S.dispatch(N.CkL.EMPHASIZE_NOTICE), false) : (K(d.$x), true), [L, F]), z = r.useCallback(e => !!q() && (c.Z.setSection(e), true), [q]), {
     applicationIntegrations: V,
     applicationBotIds: Y,
     builtInIntegrations: $,
-    customWebhooks: X,
-    followedChannelWebhooks: J
+    customWebhooks: J,
+    followedChannelWebhooks: X
   } = r.useMemo(() => {
     let e = {},
       t = {},
@@ -133,7 +133,7 @@ let I = Chunk647438.memo(function(e) {
           }),
           helpdeskArticle: x.Z.getArticleURL(N.BhN.TWITCH_INTEGRATION)
         }),
-        canNavigate: K
+        canNavigate: q
       }));
       break;
     case N.b4C.YOUTUBE:
@@ -150,7 +150,7 @@ let I = Chunk647438.memo(function(e) {
           }),
           helpdeskArticle: x.Z.getArticleURL(N.BhN.YOUTUBE_INTEGRATION)
         }),
-        canNavigate: K
+        canNavigate: q
       }));
       break;
     case N.b4C.APPLICATION:
@@ -162,15 +162,15 @@ let I = Chunk647438.memo(function(e) {
         editedWebhook: k,
         selectableWebhookChannels: U,
         errors: R,
-        canNavigate: K
+        canNavigate: q
       }));
       break;
     case N.b4C.CHANNEL_FOLLOWING:
       Q = (0, i.jsx)(y.Z, {
-        followedChannelWebhooks: J,
+        followedChannelWebhooks: X,
         editedWebhook: k,
         selectableWebhookChannels: U,
-        canNavigate: K,
+        canNavigate: q,
         errors: R
       });
       break;
@@ -178,7 +178,7 @@ let I = Chunk647438.memo(function(e) {
       Q = (0, i.jsx)(C.Z, {
         guild: l,
         channel: I,
-        customWebhooks: X,
+        customWebhooks: J,
         editedWebhook: k,
         selectableWebhookChannels: function(e) {
           for (var t = 1; t < arguments.length; t++) {
@@ -198,7 +198,7 @@ let I = Chunk647438.memo(function(e) {
           }
           return e
         }({}, U, W),
-        canNavigate: K,
+        canNavigate: q,
         refToScroller: D,
         errors: R
       });
@@ -214,8 +214,8 @@ let I = Chunk647438.memo(function(e) {
         channel: I,
         applicationIntegrations: V,
         builtInIntegrations: $,
-        customWebhooks: X,
-        followedChannelWebhooks: J,
+        customWebhooks: J,
+        followedChannelWebhooks: X,
         isLoadingWebhooks: A || null == l,
         canCreateWebhook: null != H,
         onManageCustomWebhooks: () => {
@@ -244,22 +244,22 @@ let I = Chunk647438.memo(function(e) {
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(p.Z, {
       align: p.Z.Align.CENTER,
-      className: Z.breadcrumbs,
+      className: w.breadcrumbs,
       children: t === N.b4C.OVERVIEW ? (0, i.jsx)(s.vwX, {
         tag: "h1",
-        children: w(N.b4C.OVERVIEW)
+        children: Z(N.b4C.OVERVIEW)
       }) : (0, i.jsx)(s.OoM, {
         activeId: t.toString(),
         breadcrumbs: [N.b4C.OVERVIEW, t].map(e => ({
           id: e.toString(),
-          label: w(e, V[G])
+          label: Z(e, V[G])
         })),
         onBreadcrumbClick: e => {
-          t !== parseInt(e.id) && q(parseInt(e.id))
+          t !== parseInt(e.id) && z(parseInt(e.id))
         },
         renderCustomBreadcrumb: (e, t) => (0, i.jsx)(s.vwX, {
           tag: "h1",
-          className: t ? Z.breadcrumbActive : Z.breadcrumbInactive,
+          className: t ? w.breadcrumbActive : w.breadcrumbInactive,
           children: e.label
         })
       })

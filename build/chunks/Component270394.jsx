@@ -63,7 +63,7 @@ function G(e) {
   return e
 }
 
-function z(e, t) {
+function F(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -76,7 +76,7 @@ function z(e, t) {
   }), e
 }
 
-function F(e) {
+function K(e) {
   let {
     isDisabled: t,
     inviter: n,
@@ -148,7 +148,7 @@ function F(e) {
   })
 }
 
-function K(e) {
+function q(e) {
   var t;
   let {
     invite: n,
@@ -156,7 +156,7 @@ function K(e) {
     inviteDisabled: l = false,
     hide: a = false
   } = e, o = n.uses;
-  return n.maxUses > 0 && (o = "".concat(n.uses, "/").concat(n.maxUses)), (0, i.jsx)(F, {
+  return n.maxUses > 0 && (o = "".concat(n.uses, "/").concat(n.maxUses)), (0, i.jsx)(K, {
     isDisabled: l,
     inviter: n.inviter,
     showChannel: r,
@@ -175,7 +175,7 @@ function K(e) {
         children: B.intl.string(B.t["1i1bUl"])
       }), (0, i.jsx)(g.ua7, {
         text: B.intl.string(B.t["jvd/LC"]),
-        children: e => (0, i.jsx)(g.d3s, z(G({
+        children: e => (0, i.jsx)(g.d3s, F(G({
           size: "xxs",
           color: "currentColor"
         }, e), {
@@ -193,7 +193,7 @@ function K(e) {
   })
 }
 
-function q(e) {
+function z(e) {
   let {
     applicationId: t,
     channel: r,
@@ -203,16 +203,16 @@ function q(e) {
     var e;
     return A.default.getUser(null == (e = r.linkedLobby) ? true : e.linked_by)
   }), c = (0, T.Y)(r);
-  return (0, i.jsx)(F, {
+  return (0, i.jsx)(K, {
     isDisabled: a,
     inviter: s,
     showChannel: l,
     channel: r,
     inviteSource: (0, i.jsxs)("div", {
       className: U.linkedChannelJoinSource,
-      children: [(0, i.jsx)(Z.Z, {
+      children: [(0, i.jsx)(w.Z, {
         game: o,
-        size: Z.A.XXSMALL
+        size: w.A.XXSMALL
       }), (0, i.jsx)(g.Text, {
         className: U.linkedChannelJoinSourceText,
         variant: "text-sm/normal",
@@ -230,7 +230,7 @@ function q(e) {
         let {
           default: e
         } = await n.e("30019").then(n.bind(n, 719498));
-        return t => (0, i.jsx)(e, z(G({}, t), {
+        return t => (0, i.jsx)(e, F(G({}, t), {
           channel: r,
           application: o
         }))
@@ -266,8 +266,8 @@ function V(e) {
       type: "channel",
       data: e
     }))], [_, C, h]),
-    Z = () => {
-      (0, g.ZDy)(async () => e => (0, i.jsx)(P.default, z(G({}, e), {
+    w = () => {
+      (0, g.ZDy)(async () => e => (0, i.jsx)(P.default, F(G({}, e), {
         channel: u,
         guild: l,
         source: M.t4x.SETTINGS_INVITE
@@ -276,9 +276,9 @@ function V(e) {
     [T, k] = r.useState(62),
     A = () => {
       let e = {
-        source: w.Zu.GUILD_SETTINGS
+        source: Z.Zu.GUILD_SETTINGS
       };
-      (0, g.ZDy)(async () => t => (0, i.jsx)(I.default, z(G({}, t), {
+      (0, g.ZDy)(async () => t => (0, i.jsx)(I.default, F(G({}, t), {
         guildId: l.id,
         analyticsData: e
       })))
@@ -352,7 +352,7 @@ function V(e) {
           className: H.marginBottom20,
           type: g.geA.DESCRIPTION,
           children: true === o ? B.intl.format(B.t["97VdNj"], {
-            onCreateInvite: Z
+            onCreateInvite: w
           }) : B.intl.string(B.t.WDw38P)
         }), (0, i.jsxs)("div", {
           className: U.inviteDisabledContainer,
@@ -382,7 +382,7 @@ function V(e) {
         hasInvites: _.length > 0,
         setHeight: k,
         onShowDisableInvites: A,
-        onShowInviteModal: Z,
+        onShowInviteModal: w,
         hasInviteDisabledPermission: j,
         invitesDisabled: y,
         canCreateInvites: o
@@ -395,7 +395,7 @@ function V(e) {
         let e = N[n];
         switch (null == e ? true : e.type) {
           case "invite":
-            return (0, i.jsx)(K, {
+            return (0, i.jsx)(q, {
               hide: a,
               invite: e.data,
               showChannel: f,
@@ -403,7 +403,7 @@ function V(e) {
             }, e.data.code);
           case "channel":
             var r;
-            return (0, i.jsx)(q, {
+            return (0, i.jsx)(z, {
               applicationId: null == (r = e.data.linkedLobby) ? true : r.application_id,
               channel: e.data,
               showChannel: f,

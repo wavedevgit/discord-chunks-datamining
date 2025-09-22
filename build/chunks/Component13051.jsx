@@ -99,8 +99,8 @@ function P(e) {
       serviceName: W,
       channelURL: H,
       expireBehaviorLabel: G,
-      syncLabel: z,
-      subscribersText: F
+      syncLabel: F,
+      subscribersText: K
     } = r.useMemo(() => {
       var e, t, n, i, r;
       let a = null != (n = null == (t = b.Z.get(l.type)) || null == (e = t.getPlatformUserUrl) ? true : e.call(t, {
@@ -123,15 +123,15 @@ function P(e) {
           }
       }
     }, [l.account, l.subscriber_count, l.type]),
-    K = (0, d.e7)([j.Z], () => null != l.role_id ? j.Z.getRole(n.id, l.role_id) : true),
+    q = (0, d.e7)([j.Z], () => null != l.role_id ? j.Z.getRole(n.id, l.role_id) : true),
     {
-      roleLink: q,
+      roleLink: z,
       syncDescriptionText: V
     } = r.useMemo(() => {
       let e;
-      e = null != K ? (0, i.jsx)(p.eee, {
+      e = null != q ? (0, i.jsx)(p.eee, {
         onClick: U,
-        children: K.name
+        children: q.name
       }) : S.intl.string(S.t.PoWNfX);
       let t = b.Z.get(l.type);
       return {
@@ -143,7 +143,7 @@ function P(e) {
           datetime: s()(l.synced_at).calendar()
         })
       }
-    }, [K, U, l.revoked, l.synced_at, l.type, l.user]),
+    }, [q, U, l.revoked, l.synced_at, l.type, l.user]),
     Y = (0, d.e7)([j.Z], () => j.Z.getSortedRoles(n.id)),
     $ = r.useMemo(() => {
       let e = f.ZP.getGuildEmoji(n.id),
@@ -171,18 +171,18 @@ function P(e) {
       })
     }]
   }
-  let X = (0, i.jsxs)(g.Z, {
-      className: Z.header,
+  let J = (0, i.jsxs)(g.Z, {
+      className: w.header,
       align: g.Z.Align.CENTER,
       children: [(0, i.jsx)(C.Z, {
         name: "".concat(l.name),
-        detailsClassName: Z.description,
+        detailsClassName: w.description,
         details: t
       }), l.enabled ? (0, i.jsx)(g.Z.Child, {
         shrink: 0,
         grow: 0,
         children: (0, i.jsx)(y.Z, {
-          className: Z.expandIcon,
+          className: w.expandIcon,
           expanded: P && !A,
           "aria-hidden": true
         })
@@ -203,12 +203,12 @@ function P(e) {
         })
       })]
     }),
-    J = null;
-  return P && !A && null != o && (J = (0, i.jsxs)(g.Z, {
-    className: Z.body,
+    X = null;
+  return P && !A && null != o && (X = (0, i.jsxs)(g.Z, {
+    className: w.body,
     direction: g.Z.Direction.VERTICAL,
     children: [(0, i.jsx)(p.$i$, {
-      className: Z.topDivider
+      className: w.topDivider
     }), function(e) {
       let {
         integration: t,
@@ -222,10 +222,10 @@ function P(e) {
         children: [(0, i.jsxs)(g.Z.Child, {
           basis: "50%",
           children: [(0, i.jsx)(p.vwX, {
-            className: w.marginBottom8,
+            className: Z.marginBottom8,
             children: S.intl.string(S.t.eBtNBQ)
           }), (0, i.jsx)(p.Text, {
-            className: Z.syncedRole,
+            className: w.syncedRole,
             color: "header-primary",
             variant: "text-sm/normal",
             children: a
@@ -233,7 +233,7 @@ function P(e) {
         }), (0, i.jsxs)(g.Z.Child, {
           basis: "50%",
           children: [(0, i.jsx)(p.vwX, {
-            className: w.marginBottom8,
+            className: Z.marginBottom8,
             children: n
           }), (0, i.jsxs)(g.Z, {
             justify: g.Z.Justify.BETWEEN,
@@ -266,13 +266,13 @@ function P(e) {
       })
     }({
       integration: o,
-      labelText: z,
-      subscribersText: F,
+      labelText: F,
+      subscribersText: K,
       descriptionText: V,
-      roleLink: q,
+      roleLink: z,
       onSync: B
     }), (0, i.jsx)(p.$i$, {
-      className: Z.midDivider
+      className: w.midDivider
     }), function(e) {
       let {
         integration: t,
@@ -284,7 +284,7 @@ function P(e) {
         children: [(0, i.jsxs)(g.Z.Child, {
           basis: "50%",
           children: [(0, i.jsx)(p.vwX, {
-            className: w.marginBottom8,
+            className: Z.marginBottom8,
             children: n
           }), (0, i.jsx)(p.q4e, {
             placeholder: n,
@@ -302,7 +302,7 @@ function P(e) {
         }), (0, i.jsxs)(g.Z.Child, {
           basis: "50%",
           children: [(0, i.jsx)(p.vwX, {
-            className: w.marginBottom8,
+            className: Z.marginBottom8,
             children: S.intl.string(S.t.uiXMo6)
           }), (0, i.jsx)(p.q4e, {
             placeholder: S.intl.string(S.t.uiXMo6),
@@ -342,7 +342,7 @@ function P(e) {
         direction: g.Z.Direction.VERTICAL,
         children: [(0, i.jsx)(u.$q, {
           type: u.M0.INVERTED,
-          className: a()(w.marginTop20, w.marginBottom8),
+          className: a()(Z.marginTop20, Z.marginBottom8),
           value: t.enable_emoticons,
           disabled: t.syncing,
           onChange: e => {
@@ -356,7 +356,7 @@ function P(e) {
           })
         }), (0, i.jsx)(g.Z, {
           wrap: g.Z.Wrap.WRAP,
-          className: Z.__invalid_twitchEmojis,
+          className: w.__invalid_twitchEmojis,
           children: n.map((e, t) => (0, i.jsx)(p.ua7, {
             text: e.name,
             children: t => (0, i.jsx)("img", I({
@@ -364,7 +364,7 @@ function P(e) {
                 name: e.name
               }),
               draggable: false,
-              className: a()(Z.emoji, "emoji", "jumboable"),
+              className: a()(w.emoji, "emoji", "jumboable"),
               src: O.ZP.getEmojiURL({
                 id: e.id,
                 animated: e.animated,
@@ -383,7 +383,7 @@ function P(e) {
         })
       }
     }) : null, (0, i.jsx)(p.$i$, {
-      className: Z.bottomDivider
+      className: w.bottomDivider
     }), (0, i.jsx)(g.Z, {
       children: (0, i.jsx)(p.zxk, {
         size: "sm",
@@ -394,15 +394,15 @@ function P(e) {
     })]
   })), (0, i.jsx)(p.Zbd, {
     editable: true,
-    className: Z.card,
+    className: w.card,
     children: (0, i.jsxs)(g.Z, {
       direction: g.Z.Direction.VERTICAL,
       children: [l.enabled ? (0, i.jsx)(p.P3F, {
-        className: Z.expandableHeader,
+        className: w.expandableHeader,
         "aria-expanded": P && !A,
         onClick: T,
-        children: X
-      }) : X, J]
+        children: J
+      }) : J, X]
     })
   })
 }

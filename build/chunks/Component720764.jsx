@@ -32,7 +32,7 @@ function j(e) {
       canNavigate: N
     } = e,
     S = (0, d.ZP)(),
-    [Z, w] = r.useState(null),
+    [w, Z] = r.useState(null),
     [I, P] = r.useState(null);
   if (null != j) t = j;
   else {
@@ -57,7 +57,7 @@ function j(e) {
           body: g.intl.string(g.t["/4TwKS"])
         }), null
       });
-      null != e && (P(e.id), w(e))
+      null != e && (P(e.id), Z(e))
     }
   }, [N, t, n]);
   (0, c.ZP)(() => {
@@ -88,7 +88,7 @@ function j(e) {
         webhooks: v,
         editedWebhook: y,
         selectableWebhookChannels: O,
-        lastCreatedWebhookId: null == Z ? true : Z.id,
+        lastCreatedWebhookId: null == w ? true : w.id,
         errors: C,
         canNavigate: N
       })]

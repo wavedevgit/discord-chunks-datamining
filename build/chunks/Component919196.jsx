@@ -104,19 +104,19 @@ function S(e) {
     applicationIntegration: s,
     selectableWebhookChannels: d,
     editedWebhook: S,
-    errors: Z,
-    canNavigate: w
+    errors: w,
+    canNavigate: Z
   } = e, {
     application: I,
     integration: P,
     webhooks: T
   } = s, [E, k] = (0, a.Wu)([m.Z], () => [m.Z.can(y.Plq.MANAGE_ROLES, n), null == I.bot || m.Z.canManageUser(y.Plq.MANAGE_GUILD, I.bot.id, n)], [I.bot, n]), A = (0, a.e7)([m.Z], () => m.Z.can(y.Plq.MANAGE_WEBHOOKS, n), [n]), D = r.useCallback(() => {
-    w() && (0, o.h7j)(e => (0, i.jsx)(N, C({
+    Z() && (0, o.h7j)(e => (0, i.jsx)(N, C({
       guild: n,
       application: I,
       integration: P
     }, e)))
-  }, [I, w, n, P]), R = r.useMemo(() => {
+  }, [I, Z, n, P]), R = r.useMemo(() => {
     let e = [{
       icon: o.T39,
       text: O.intl.formatToPlainString(O.t.gcdJ8P, {
@@ -155,7 +155,7 @@ function S(e) {
       className: _.headerDescription
     }) : null, E ? (0, i.jsx)(u.Z, {
       application: I,
-      canNavigate: w,
+      canNavigate: Z,
       guildId: n.id
     }) : null, (0, i.jsx)(o.$i$, {
       className: _.headerDivider
@@ -180,8 +180,8 @@ function S(e) {
         webhooks: T,
         editedWebhook: S,
         selectableWebhookChannels: d,
-        errors: Z,
-        canNavigate: w
+        errors: w,
+        canNavigate: Z
       }) : (0, i.jsx)(o.Zbd, {
         className: _.emptyCard,
         editable: true,
