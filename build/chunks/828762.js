@@ -60,24 +60,24 @@ let x = new Chunk710845.Z("ProductAttachmentManager");
 class V {
   addAttachment(A, e) {
     let t = this.target.getMaxAttachmentsCount();
-    if (this.uploads.length >= t) throw l.uv.announce(C.intl.formatToPlainString(C.t["0QDZ4O"], {
+    if (this.uploads.length >= t) throw a.uv.announce(C.intl.formatToPlainString(C.t["0QDZ4O"], {
       maxAttachmentsCount: t
     })), Error("Too many attachments");
-    A.target = c.e.GUILD_PRODUCT_ATTACHMENT;
+    A.target = u.e.GUILD_PRODUCT_ATTACHMENT;
     let n = new s.nH(A, this.guildId);
     n.upload(), n.on("error", t => {
       var r;
       t === b.evJ.ENTITY_TOO_LARGE && this.onFileSizeError();
-      let a = "number" == typeof t && t > 0 ? -t : false,
-        i = (0, h.kg)(a),
+      let l = "number" == typeof t && t > 0 ? -t : false,
+        i = (0, h.kg)(l),
         o = null == (r = A.file) ? true : r.name;
-      null != o ? l.uv.announce(C.intl.formatToPlainString(C.t["+YVkfX"], {
+      null != o ? a.uv.announce(C.intl.formatToPlainString(C.t["+YVkfX"], {
         filename: o,
         reason: i
-      })) : l.uv.announce(C.intl.formatToPlainString(C.t.mBkf6e, {
+      })) : a.uv.announce(C.intl.formatToPlainString(C.t.mBkf6e, {
         reason: i
       })), e(A => j(U({}, A), {
-        [n.id]: a
+        [n.id]: l
       }))
     }), n.on("progress", (A, t) => {
       e(e => j(U({}, e), {
@@ -99,23 +99,23 @@ class V {
       priceTier: t,
       createNewRole: n,
       imageName: r
-    } = A, l = function(A, e) {
+    } = A, a = function(A, e) {
       if (null == A) return {};
       var t, n, r = function(A, e) {
         if (null == A) return {};
         var t, n, r = {},
-          a = Object.keys(A);
-        for (n = 0; n < a.length; n++) t = a[n], e.indexOf(t) >= 0 || (r[t] = A[t]);
+          l = Object.keys(A);
+        for (n = 0; n < l.length; n++) t = l[n], e.indexOf(t) >= 0 || (r[t] = A[t]);
         return r
       }(A, e);
       if (Object.getOwnPropertySymbols) {
-        var a = Object.getOwnPropertySymbols(A);
-        for (n = 0; n < a.length; n++) t = a[n], !(e.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(A, t) && (r[t] = A[t])
+        var l = Object.getOwnPropertySymbols(A);
+        for (n = 0; n < l.length; n++) t = l[n], !(e.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(A, t) && (r[t] = A[t])
       }
       return r
     }(A, ["priceTier", "createNewRole", "imageName"]);
     if (this.uploads.some(A => A.status === s.mw.ERROR)) throw Error("Cannot create product with failed attachments");
-    "unlinkRole" in l && (e = l.unlinkRole);
+    "unlinkRole" in a && (e = a.unlinkRole);
     let o = this.uploads.filter(A => !this.existingAttachmentIds.has(A.id)),
       d = this.uploads.filter(A => this.existingAttachmentIds.has(A.id)).map(A => {
         var e;
@@ -124,14 +124,14 @@ class V {
           id: A.id
         }
       }),
-      c = (0, u.F)(),
-      f = (await c.uploadFiles(o)).map((A, e) => (0, p.B)(A, e)),
-      g = null != this.editSkuId ? a.tn.patch : a.tn.post,
+      u = (0, c.F)(),
+      f = (await u.uploadFiles(o)).map((A, e) => (0, p.B)(A, e)),
+      g = null != this.editSkuId ? l.tn.patch : l.tn.post,
       m = null != this.editSkuId ? b.ANM.GUILD_PRODUCT_LISTINGS(this.guildId, this.editSkuId) : b.ANM.GUILD_PRODUCTS(this.guildId),
       q = (await g({
         url: m,
         rejectWithError: false,
-        body: j(U({}, l), {
+        body: j(U({}, a), {
           price_tier: t,
           create_new_role: n,
           image_name: r,
@@ -180,60 +180,55 @@ class V {
 function P(A, e) {
   var t;
   let {
-    editSkuId: a,
-    onFileSizeError: l
+    editSkuId: l,
+    onFileSizeError: a
   } = e, i = (0, r.e7)([g.Z], () => g.Z.getGuild(A)), [s, d] = n.useState({
-    editSkuId: a,
-    onFileSizeError: l
-  }), c = n.useMemo(() => new V(U({
+    editSkuId: l,
+    onFileSizeError: a
+  }), u = n.useMemo(() => new V(U({
     guildId: A
-  }, s)), [A, s]), [u, f] = n.useState(c.generateInitialProgresses), [, p] = n.useState(null);
+  }, s)), [A, s]), [c, f] = n.useState(u.generateInitialProgresses), [, p] = n.useState(null);
   n.useLayoutEffect(() => {
-    f(c.generateInitialProgresses())
-  }, [c]);
+    f(u.generateInitialProgresses())
+  }, [u]);
   let [m, q] = n.useState(), [h, C] = n.useState(), v = n.useCallback(A => {
-    c.deleteAttachment(A) && p({})
-  }, [c]), j = n.useCallback(A => {
-    c.addAttachment(A, f), p({})
-  }, [c]), x = n.useCallback(async A => {
+    u.deleteAttachment(A) && p({})
+  }, [u]), j = n.useCallback(A => {
+    u.addAttachment(A, f), p({})
+  }, [u]), x = n.useCallback(async A => {
     try {
       q(A), C(true);
-      let e = await c.saveProductWithAttachments(A);
+      let e = await u.saveProductWithAttachments(A);
       return null != e && d({
         editSkuId: e.id,
-        onFileSizeError: l
+        onFileSizeError: a
       }), p({}), e
     } catch (A) {
-      C(A instanceof o.Hx ? A : new o.Hx({
-        status: 400,
-        body: {
-          attachments: [A.message]
-        }
-      }))
+      C(A instanceof o.Hx ? A : new o.Hx(A))
     } finally {
       q(true)
     }
-  }, [c, l]), P = n.useCallback(() => {
-    c.cancelUnusedUploads(), p({})
-  }, [c]);
+  }, [u, a]), P = n.useCallback(() => {
+    u.cancelUnusedUploads(), p({})
+  }, [u]);
   n.useEffect(() => () => {
-    c.cancelUnusedUploads()
-  }, [c]);
+    u.cancelUnusedUploads()
+  }, [u]);
   let {
     uploads: O
-  } = c, F = !O.every(A => c.existingAttachmentIds.has(A.id)) || O.length !== c.existingAttachmentIds.size;
+  } = u, F = !O.every(A => u.existingAttachmentIds.has(A.id)) || O.length !== u.existingAttachmentIds.size;
   return {
     addAttachment: j,
     cancelUnusedUploads: P,
     deleteAttachment: v,
-    fileUploadProgresses: u,
+    fileUploadProgresses: c,
     uploads: O,
     saveProductWithAttachments: x,
     isSaving: null != m,
     changesSaving: m,
     saveError: h,
     hasUnsavedAttachmentChanges: F,
-    canAttachFiles: O.length < c.target.getMaxAttachmentsCount(),
+    canAttachFiles: O.length < u.target.getMaxAttachmentsCount(),
     canAttachArchives: null != (t = null == i ? true : i.features.has(b.oNc.GUILD_PRODUCTS_ALLOW_ARCHIVED_FILE)) && t
   }
 }

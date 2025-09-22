@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk772848 = require("./772848.js"),
   Chunk481060 = require("./481060.js"),
   Chunk752305 = require("./752305.js"),
@@ -37,14 +37,14 @@ function C(A) {
   let {
     hasError: t,
     maxLength: r,
-    text: a
+    text: l
   } = A;
   return (0, n.jsxs)("div", {
-    className: l()(m.maxLength, {
+    className: a()(m.maxLength, {
       [m.errorOverflow]: t
     }),
     "aria-hidden": "true",
-    children: [null != (e = null == a ? true : a.length) ? e : 0, " ", null != r && "/ ".concat(r)]
+    children: [null != (e = null == l ? true : l.length) ? e : 0, " ", null != r && "/ ".concat(r)]
   })
 }
 
@@ -52,9 +52,9 @@ function v(A) {
   var e;
   let {
     "aria-labelledby": t,
-    className: a,
+    className: l,
     id: i,
-    autoFocus: c,
+    autoFocus: u,
     maxLength: f,
     onChange: m,
     onSubmit: v,
@@ -64,15 +64,15 @@ function v(A) {
     value: V,
     enableThemedBackground: P = false,
     parentModalKey: O
-  } = A, F = (0, o.Gc0)(), [I, K] = r.useState(() => (0, s.JM)(V)), y = r.useRef(true === c), N = null != t ? t : null == F ? true : F.titleId, T = null != (e = null == F ? true : F.errorId) ? e : q, X = r.useMemo(() => ({
+  } = A, F = (0, o.Gc0)(), [I, K] = r.useState(() => (0, s.JM)(V)), y = r.useRef(true === u), N = null != t ? t : null == F ? true : F.titleId, T = null != (e = null == F ? true : F.errorId) ? e : q, X = r.useMemo(() => ({
     analyticsName: "simple",
     autocomplete: {
       alwaysUseLayer: true,
       small: true
     },
-    disableAutoFocus: true !== c,
+    disableAutoFocus: true !== u,
     drafts: {
-      type: u.d.ChannelMessage
+      type: c.d.ChannelMessage
     },
     emojis: {
       button: true
@@ -84,11 +84,11 @@ function v(A) {
       useDisabledStylesOnSubmit: true,
       disableEnterToSubmit: true
     }
-  }), [c]);
+  }), [u]);
   return (0, n.jsxs)(d.ZP, {
     "aria-describedby": T,
     "aria-labelledby": N,
-    innerClassName: l()(a, p.textArea),
+    innerClassName: a()(l, p.textArea),
     id: i,
     maxCharacterCount: f,
     onChange: function(A, e, t) {

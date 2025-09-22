@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk205822 = require("./205822.jsx"),
@@ -26,22 +26,22 @@ function v(A) {
   var e;
   let {
     upload: t,
-    progress: a = 0,
+    progress: l = 0,
     onDeleteAttachment: s
   } = A, d = r.useCallback(() => {
     null == s || s(t.id)
-  }, [s, t.id]), u = a >= 1, f = a < 0, g = u || f, m = null != (e = t.filename) ? e : t.id, q = (0, p.kg)(a);
+  }, [s, t.id]), c = l >= 1, f = l < 0, g = c || f, m = null != (e = t.filename) ? e : t.id, q = (0, p.kg)(l);
   return (0, n.jsx)(i.u, {
     asContainer: true,
     text: q,
     children: (0, n.jsxs)("div", {
-      className: l()(b.attachedFileCard, {
+      className: a()(b.attachedFileCard, {
         [b.attachedFileCardError]: f,
         [b.attachedFileCardUploading]: !g
       }),
       children: [(0, n.jsx)(o.ZKT, {
         size: "xs",
-        color: c.Z.INTERACTIVE_MUTED
+        color: u.Z.INTERACTIVE_MUTED
       }), (0, n.jsx)(o.LZC, {
         size: 10,
         horizontal: true
@@ -73,11 +73,11 @@ function U(A) {
     onFileAdded: e
   } = A, {
     uploads: t,
-    canAttachFiles: a,
-    canAttachArchives: l,
+    canAttachFiles: l,
+    canAttachArchives: a,
     addAttachment: i,
-    deleteAttachment: c,
-    fileUploadProgresses: u
+    deleteAttachment: u,
+    fileUploadProgresses: c
   } = (0, g.P)(), p = r.useRef(false);
 
   function U(A) {
@@ -103,7 +103,7 @@ function U(A) {
     }), (0, n.jsxs)(f.Z, {
       className: b.addFileButtonLook,
       innerClassName: b.addFileButton,
-      disabled: !a,
+      disabled: !l,
       "aria-label": h.intl.string(h.t["23LeCA"]),
       "aria-describedby": C,
       multiple: true,
@@ -126,7 +126,7 @@ function U(A) {
       id: C,
       color: "text-muted",
       variant: "text-xs/normal",
-      children: l ? h.intl.formatToPlainString(h.t.lvU6sr, {
+      children: a ? h.intl.formatToPlainString(h.t.lvU6sr, {
         fileUploadLimit: q.TR
       }) : h.intl.formatToPlainString(h.t.DOXzIS, {
         fileUploadLimit: q.TR
@@ -140,8 +140,8 @@ function U(A) {
         children: t.map(A => (0, n.jsx)("li", {
           children: (0, n.jsx)(v, {
             upload: A,
-            onDeleteAttachment: c,
-            progress: u[A.id]
+            onDeleteAttachment: u,
+            progress: c[A.id]
           })
         }, A.id))
       })]

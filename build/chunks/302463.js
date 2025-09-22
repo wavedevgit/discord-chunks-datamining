@@ -12,4 +12,4 @@ let r = "guild-product-edit-modal",
   i = 0x40000000,
   a = 0x40000000,
   o = 10,
-  s = 30
+  s = 50

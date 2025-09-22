@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  l = require.n(Chunk512722),
   Chunk866442 = require("./866442.js"),
   Chunk399606 = require("./399606.js"),
   Chunk159691 = require("./159691.js"),
@@ -34,12 +34,12 @@ function m(A) {
   return e = null != r ? (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)(s.nn4, {
       children: f.intl.format(f.t["94dBOT"], {
-        color: (0, l.Rf)(r.color)
+        color: (0, a.Rf)(r.color)
       })
     }), (0, n.jsx)("div", {
       className: g.attachedRoleColor,
       style: {
-        backgroundColor: (0, l.Rf)(r.color)
+        backgroundColor: (0, a.Rf)(r.color)
       }
     }), (0, n.jsx)(s.LZC, {
       size: 8,
@@ -134,11 +134,11 @@ function b(A) {
   let {
     newRoleParams: e,
     setNewRoleParams: r,
-    guildId: l,
-    productId: u,
+    guildId: a,
+    productId: c,
     listingRoleId: p,
     error: b
-  } = A, C = (0, i.e7)([d.Z], () => null != p ? d.Z.getRole(l, p) : true);
+  } = A, C = (0, i.e7)([d.Z], () => null != p ? d.Z.getRole(a, p) : true);
   return null === e ? (0, n.jsxs)(s.xJW, {
     title: (0, n.jsxs)("div", {
       className: g.warningTitle,
@@ -186,7 +186,7 @@ function b(A) {
     }), (0, n.jsx)(m, {
       role: C,
       onRemove: () => {
-        a()(null != u, "productId cannot be null"), a()(null != C, "no role attached"),
+        l()(null != c, "productId cannot be null"), l()(null != C, "no role attached"),
           function(A) {
             let {
               onConfirm: e,
@@ -229,7 +229,7 @@ function b(A) {
           })
       }
     })]
-  }) : (a()(null != e, "newRoleParams cannot be null at this point"), (0, n.jsxs)(s.xJW, {
+  }) : (l()(null != e, "newRoleParams cannot be null at this point"), (0, n.jsxs)(s.xJW, {
     required: true,
     title: f.intl.string(f.t.xZvFpK),
     error: b,
@@ -240,7 +240,7 @@ function b(A) {
       children: f.intl.string(f.t.CllC5u)
     }), (0, n.jsx)(s.LZC, {
       size: 8
-    }), (0, n.jsx)(c.Z, {
+    }), (0, n.jsx)(u.Z, {
       newRoleParams: e,
       setNewRoleParams: r
     })]

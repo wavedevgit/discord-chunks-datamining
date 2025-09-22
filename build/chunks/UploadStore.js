@@ -1,13 +1,14 @@
-/** Chunk was on 62987 **/
-/** chunk id: 62817, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 62817, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => y
+  Z: () => x
 }), require("./35282.js"), require("./388685.js"), require("./358797.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk375954 = require("./375954.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,44 +17,167 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function l(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
 }
-let c = Object.freeze([]),
-  u = {},
-  d = {},
+
+function c(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function u(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : c(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let d = Object.freeze([]),
+  f = {},
+  _ = {},
   p = {},
   h = {},
-  f = {};
+  m = {};
 
-function m(e, t) {
-  let n = u[e];
-  return null != n && (u[e] = n.filter(e => e.id !== t), delete d[t], delete p[t], n.length !== u[e].length)
+function g(e, t) {}
+
+function E() {
+  m = {}
 }
 
-function g(e, t) {
-  let n = u[e];
+function b(e, t) {
+  let n = f[e];
+  return null != n && (f[e] = n.filter(e => e.id !== t), delete _[t], delete p[t], n.length !== f[e].length)
+}
+
+function y() {
+  E()
+}
+
+function O() {
+  E()
+}
+
+function v(e) {
+  var t, n;
+  let {
+    channelId: r,
+    file: i,
+    uploader: a,
+    message: o
+  } = e;
+  if (a._aborted || a._errored) return;
+  let s = null != (t = f[r]) ? t : d;
+  if (_[i.id] = a, f[r] = [...s, i], null == o) return;
+  p[i.id] = o;
+  let {
+    items: c
+  } = i;
+  null != c && (h[o.id] = u(l({}, i), {
+    items: c
+  })), null != (n = o.nonce) || o.id
+}
+
+function I(e) {
+  let {
+    channelId: t,
+    file: n
+  } = e;
+  S(t, n)
+}
+
+function T(e) {
+  let {
+    channelId: t,
+    file: n
+  } = e;
+  S(t, n)
+}
+
+function S(e, t) {
+  let n = f[e];
   if (null == n) returnfalse;
-  u[e] = n.map(e => e.id === t.id ? s({}, e, t) : e);
+  f[e] = n.map(e => e.id === t.id ? l({}, e, t) : e);
   let r = p[t.id];
-  null != r && null != h[r.id] && (h[r.id] = s({}, h[r.id], t))
+  null != r && null != h[r.id] && (h[r.id] = l({}, h[r.id], t))
 }
-class b extends(r = Chunk442837.ZP.Store) {
+
+function A(e) {
+  let {
+    channelId: t,
+    file: n
+  } = e;
+  return b(t, n.id)
+}
+
+function C(e) {
+  let {
+    channelId: t,
+    file: n
+  } = e;
+  return b(t, n.id)
+}
+
+function N(e) {
+  let {
+    file: t
+  } = e, n = _[t.id];
+  if (null == n) returnfalse;
+  setImmediate(() => {
+    var e;
+    return null == (e = n.cancel) ? true : e.call(n)
+  })
+}
+
+function R(e) {
+  let {
+    file: t,
+    itemId: n
+  } = e, r = _[t.id];
+  if (null == r) returnfalse;
+  setImmediate(() => r.cancelItem(n))
+}
+
+function P(e) {
+  let {
+    channelId: t,
+    file: n
+  } = e, r = p[n.id];
+  if (null != r) {
+    var i;
+    null != (i = r.nonce) || r.id
+  }
+  S(t, n)
+}
+
+function w(e) {
+  let {
+    file: t,
+    messageId: n
+  } = e;
+  h[n] = t
+}
+class D extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk375954.Z)
   }
   getFiles(e) {
     var t;
-    return null != (t = u[e]) ? t : c
+    return null != (t = f[e]) ? t : d
   }
   getMessageForFile(e) {
     return p[e]
@@ -62,107 +186,20 @@ class b extends(r = Chunk442837.ZP.Store) {
     return h[e]
   }
   getUploadAttachments(e) {
-    if (null != e) return f[e]
+    if (null != e) return m[e]
   }
 }
-o(b, "displayName", "UploadStore");
-let y = new b(Chunk570140.Z, {
-  CONNECTION_OPEN: function() {
-    f = {}
-  },
-  LOGOUT: function() {
-    f = {}
-  },
-  UPLOAD_START: function(e) {
-    var t, n, r, i;
-    let {
-      channelId: l,
-      file: a,
-      uploader: o,
-      message: f
-    } = e;
-    if (o._aborted || o._errored) return;
-    let m = null != (t = u[l]) ? t : c;
-    if (d[a.id] = o, u[l] = [...m, a], null == f) return;
-    p[a.id] = f;
-    let {
-      items: g
-    } = a;
-    null != g && (h[f.id] = (r = s({}, a), i = i = {
-      items: g
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-      var n = Object.keys(e);
-      if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, r)
-      }
-      return n
-    })(Object(i)).forEach(function(e) {
-      Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
-    }), r)), null != (n = f.nonce) || f.id
-  },
-  UPLOAD_COMPRESSION_PROGRESS: function(e) {
-    let {
-      channelId: t,
-      file: n
-    } = e;
-    g(t, n)
-  },
-  UPLOAD_PROGRESS: function(e) {
-    let {
-      channelId: t,
-      file: n
-    } = e;
-    g(t, n)
-  },
-  UPLOAD_COMPLETE: function(e) {
-    let {
-      channelId: t,
-      file: n
-    } = e;
-    return m(t, n.id)
-  },
-  UPLOAD_FAIL: function(e) {
-    let {
-      channelId: t,
-      file: n
-    } = e;
-    return m(t, n.id)
-  },
-  UPLOAD_CANCEL_REQUEST: function(e) {
-    let {
-      file: t
-    } = e, n = d[t.id];
-    if (null == n) returnfalse;
-    setImmediate(() => {
-      var e;
-      return null == (e = n.cancel) ? true : e.call(n)
-    })
-  },
-  UPLOAD_ITEM_CANCEL_REQUEST: function(e) {
-    let {
-      file: t,
-      itemId: n
-    } = e, r = d[t.id];
-    if (null == r) returnfalse;
-    setImmediate(() => r.cancelItem(n))
-  },
-  UPLOAD_FILE_UPDATE: function(e) {
-    let {
-      channelId: t,
-      file: n
-    } = e, r = p[n.id];
-    if (null != r) {
-      var i;
-      null != (i = r.nonce) || r.id
-    }
-    g(t, n)
-  },
-  UPLOAD_RESTORE_FAILED_UPLOAD: function(e) {
-    let {
-      file: t,
-      messageId: n
-    } = e;
-    h[n] = t
-  }
+s(D, "displayName", "UploadStore");
+let x = new D(Chunk570140.Z, {
+  CONNECTION_OPEN: y,
+  LOGOUT: O,
+  UPLOAD_START: v,
+  UPLOAD_COMPRESSION_PROGRESS: T,
+  UPLOAD_PROGRESS: I,
+  UPLOAD_COMPLETE: A,
+  UPLOAD_FAIL: C,
+  UPLOAD_CANCEL_REQUEST: N,
+  UPLOAD_ITEM_CANCEL_REQUEST: R,
+  UPLOAD_FILE_UPDATE: P,
+  UPLOAD_RESTORE_FAILED_UPLOAD: w
 })

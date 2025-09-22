@@ -2,111 +2,114 @@
 /** chunk id: 40330, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p,
-  p: () => _
+  Z: () => m,
+  p: () => h
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
+  Chunk120356 = require("./120356.js"),
+  o = require.n(Chunk120356),
   Chunk112456 = require("./112456.js"),
-  s = require.n(Chunk112456),
+  l = require.n(Chunk112456),
   Chunk481060 = require("./481060.js"),
+  Chunk966390 = require("./966390.js"),
   Chunk403182 = require("./403182.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk449582 = require("./449582.js");
-let f = e => {
-    let {
-      filename: t
-    } = e, i = (0, c.uV)(t), a = n(148660)("./icon-file-".concat(i, ".svg"));
-    return (0, r.jsx)("img", {
-      className: d.icon,
-      src: a,
-      alt: u.intl.formatToPlainString(u.t.g6KdFh, {
-        fileType: i
-      }),
-      title: i
+let p = e => {
+  let {
+    filename: t
+  } = e, i = (0, d.uV)(t), a = n(148660)("./icon-file-".concat(i, ".svg"));
+  return (0, r.jsx)("img", {
+    className: _.icon,
+    src: a,
+    alt: f.intl.formatToPlainString(f.t.g6KdFh, {
+      fileType: i
+    }),
+    title: i
+  })
+};
+
+function h(e) {
+  let {
+    channelId: t,
+    file: n
+  } = e, a = i.useMemo(() => {
+    let e = n.items;
+    return null == e ? f.intl.string(f.t.jfKTen) : 1 === e.length && null != e[0].filename ? e[0].filename : f.intl.formatToPlainString(f.t.D0noUl, {
+      count: e.length
     })
-  },
-  _ = e => {
-    let {
-      filename: t,
-      size: n,
-      progress: i,
-      onCancelUpload: a,
-      onClick: o,
-      onContextMenu: c
-    } = e, _ = 100 === i, p = !_ && n > 0;
-    return (0, r.jsx)("div", {
-      className: d.fileWrapper,
-      children: (0, r.jsxs)("div", {
-        className: d.file,
-        children: [(0, r.jsx)(f, {
-          filename: t
-        }), (0, r.jsxs)("div", {
-          className: d.fileInner,
-          children: [(0, r.jsxs)("div", {
-            className: d.filenameWrapper,
-            children: [(0, r.jsx)(l.P3F, {
-              className: d.filename,
-              onClick: o,
-              onContextMenu: c,
-              children: t
-            }), p ? (0, r.jsx)("div", {
-              className: d.size,
-              children: "— ".concat(s().filesize(n))
-            }) : null]
-          }), (0, r.jsx)("div", {
-            className: d.progressContainer,
-            children: _ ? u.intl.string(u.t.jfKTen) : (0, r.jsx)(l.Exd, {
-              className: d.progress,
-              percent: i
-            })
-          })]
-        }), _ ? null : (0, r.jsx)(l.P3F, {
-          onClick: a,
-          children: (0, r.jsx)(l.Dio, {
-            size: "md",
-            color: "currentColor",
-            className: d.cancelButton
+  }, [n.items]), o = i.useCallback(() => {
+    u.Z.cancel(t, n)
+  }, [t, n]), s = 100 === n.progress, d = !s && n.currentSize > 0;
+  return (0, r.jsx)("div", {
+    className: _.fileWrapper,
+    children: (0, r.jsxs)("div", {
+      className: _.file,
+      children: [(0, r.jsx)(p, {
+        filename: a
+      }), (0, r.jsxs)("div", {
+        className: _.fileInner,
+        children: [(0, r.jsxs)("div", {
+          className: _.filenameWrapper,
+          children: [(0, r.jsx)("div", {
+            className: _.filename,
+            children: a
+          }), d ? (0, r.jsx)("div", {
+            className: _.size,
+            children: "— ".concat(l().filesize(n.currentSize))
+          }) : null]
+        }), (0, r.jsx)("div", {
+          className: _.progressContainer,
+          children: s ? f.intl.string(f.t.jfKTen) : (0, r.jsx)(c.Exd, {
+            className: _.progress,
+            percent: n.progress
           })
         })]
-      })
+      }), s ? null : (0, r.jsx)(c.P3F, {
+        onClick: o,
+        children: (0, r.jsx)(c.Dio, {
+          size: "md",
+          color: "currentColor",
+          className: _.cancelButton
+        })
+      })]
     })
-  },
-  p = e => {
-    let {
-      className: t,
-      url: n,
-      fileName: i,
-      fileSize: o,
-      onClick: c,
-      onContextMenu: u,
-      renderAdjacentContent: _
-    } = e;
-    return (0, r.jsxs)("div", {
-      className: a()(d.fileWrapper, t),
-      children: [(0, r.jsxs)("div", {
-        className: d.file,
-        children: [(0, r.jsx)(f, {
-          filename: i
-        }), (0, r.jsxs)("div", {
-          className: d.fileInner,
-          children: [(0, r.jsx)("div", {
-            className: d.filenameLinkWrapper,
-            children: (0, r.jsx)(l.eee, {
-              className: d.fileNameLink,
-              href: n,
-              onClick: c,
-              onContextMenu: u,
-              children: i
-            })
-          }), (0, r.jsx)(l.Text, {
-            variant: "text-xs/normal",
-            color: "text-muted",
-            children: s().filesize(o)
-          })]
+  })
+}
+let m = e => {
+  let {
+    className: t,
+    url: n,
+    fileName: i,
+    fileSize: a,
+    onClick: s,
+    onContextMenu: u,
+    renderAdjacentContent: d
+  } = e;
+  return (0, r.jsxs)("div", {
+    className: o()(_.fileWrapper, t),
+    children: [(0, r.jsxs)("div", {
+      className: _.file,
+      children: [(0, r.jsx)(p, {
+        filename: i
+      }), (0, r.jsxs)("div", {
+        className: _.fileInner,
+        children: [(0, r.jsx)("div", {
+          className: _.filenameLinkWrapper,
+          children: (0, r.jsx)(c.eee, {
+            className: _.fileNameLink,
+            href: n,
+            onClick: s,
+            onContextMenu: u,
+            children: i
+          })
+        }), (0, r.jsx)(c.Text, {
+          variant: "text-xs/normal",
+          color: "text-muted",
+          children: l().filesize(a)
         })]
-      }), null != _ && _()]
-    })
-  }
+      })]
+    }), null != d && d()]
+  })
+}

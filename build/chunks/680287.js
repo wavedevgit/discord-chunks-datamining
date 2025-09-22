@@ -2,15 +2,14 @@
 /** chunk id: 680287, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 });
 var Chunk865275 = require("./865275.js"),
   Chunk237992 = require("./237992.js"),
-  Chunk959517 = require("./959517.js"),
-  Chunk388032 = require("./388032.jsx");
-class s extends Chunk865275.Z {
+  Chunk959517 = require("./959517.js");
+class o extends Chunk865275.Z {
   async uploadFiles(e) {
-    super.upload(o.intl.string(o.t.jfKTen), e);
+    super.upload(e);
     let t = new Promise((e, t) => {
         this.once("error", (e, n, r, i) => {
           t({
