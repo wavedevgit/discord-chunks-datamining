@@ -2,34 +2,33 @@
 /** chunk id: 666984, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk28664 = require("./28664.jsx"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk620662 = require("./620662.js"),
   Chunk503438 = require("./503438.js"),
   Chunk829820 = require("./829820.js"),
   Chunk395361 = require("./395361.jsx"),
   Chunk652853 = require("./652853.jsx"),
-  Chunk475413 = require("./475413.jsx"),
+  Chunk732380 = require("./732380.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk704543 = require("./704543.js");
 
-function g(e) {
-  var t, n, g, E;
+function m(e) {
+  var t, n, m, g, E;
   let {
     user: b,
     activity: y,
     onAction: O
   } = e, {
     themeType: v
-  } = (0, d.z)(), I = (0, c.Ih)(y, b), T = (0, c.Fe)(y, b);
-  if (!(0, l.Z)(y) || !(0, s.Z)(y, _.xjy.PLAY) && !(0, s.Z)(y, _.xjy.SYNC)) return null;
+  } = (0, u.z)(), I = (0, l.Ih)(y, b), T = (0, l.Fe)(y, b);
+  if (!(0, s.Z)(y) || !(0, o.Z)(y, f.xjy.PLAY) && !(0, o.Z)(y, f.xjy.SYNC)) return null;
   let S = e => {
       null == e || e.stopPropagation(), null == O || O({
         action: "PRESS_PLAY_ON_SPOTIFY_BUTTON"
@@ -40,51 +39,44 @@ function g(e) {
         action: "PRESS_LISTEN_ALONG_ON_SPOTIFY_BUTTON"
       }), T.onClick()
     };
-  return v === p.l.MODAL_V2 ? (0, r.jsxs)(r.Fragment, {
+  return v === _.l.MODAL_V2 ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.u, {
-      asContainer: true,
       text: T.tooltip,
-      children: (0, r.jsx)(f.tG, {
-        text: null != (t = T.label) ? t : h.intl.string(h.t.eU3inJ),
+      children: (0, r.jsx)(d.O1, {
+        text: null != (t = T.label) ? t : p.intl.string(p.t.eU3inJ),
+        onClick: A,
         disabled: T.disabled,
-        submitting: T.loading,
-        size: a.Ph.TINY,
-        themeColor: "secondary",
-        onClick: A
+        loading: T.loading
       })
     }), (0, r.jsx)(i.u, {
-      asContainer: true,
       text: I.tooltip,
-      children: (0, r.jsx)(f.tG, {
-        text: null != (n = I.label) ? n : h.intl.string(h.t.rRffNz),
+      children: (0, r.jsx)(d.O1, {
+        text: null != (n = I.label) ? n : p.intl.string(p.t.rRffNz),
+        onClick: S,
         disabled: I.disabled,
-        submitting: I.loading,
-        size: a.Ph.TINY,
-        themeColor: "secondary",
-        onClick: S
+        loading: I.loading
       })
     })]
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(i.u, {
-      asContainer: true,
-      text: I.tooltip,
-      children: (0, r.jsx)(f.tG, {
-        icon: () => (0, r.jsx)(u.Z, {}),
-        text: null != (g = I.label) ? g : h.intl.string(h.t.rRffNz),
-        disabled: I.disabled,
-        submitting: I.loading,
-        wrapperClassName: m.primaryButton,
-        themeColor: "secondary",
-        fullWidth: true,
-        onClick: S
+    children: [(0, r.jsx)("div", {
+      className: h.primaryButton,
+      children: (0, r.jsx)(i.u, {
+        text: I.tooltip,
+        children: (0, r.jsx)(d.O1, {
+          icon: () => (0, r.jsx)(c.Z, {}),
+          text: null != (m = I.label) ? m : p.intl.string(p.t.rRffNz),
+          onClick: S,
+          disabled: I.disabled,
+          loading: I.loading,
+          fullWidth: true
+        })
       })
-    }), (0, r.jsx)(f.ef, {
-      icon: o.iOO,
-      tooltipText: null != (E = T.tooltip) ? E : h.intl.string(h.t.eU3inJ),
+    }), (0, r.jsx)(d.pt, {
+      icon: a.iOO,
+      tooltipText: null != (g = T.tooltip) ? g : p.intl.string(p.t.eU3inJ),
+      "aria-label": null != (E = T.label) ? E : p.intl.string(p.t.eU3inJ),
       disabled: T.disabled,
-      submitting: T.loading,
-      themeColor: "secondary",
-      fullWidth: true,
+      loading: T.loading,
       onClick: A
     })]
   })
