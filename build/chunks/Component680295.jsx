@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
   Chunk607070 = require("./607070.js"),
   Chunk619899 = require("./619899.js"),
-  Chunk451478 = require("./451478.js"),
+  Chunk506071 = require("./506071.js"),
   Chunk119837 = require("./119837.js"),
   Chunk802433 = require("./802433.js"),
   Chunk658312 = require("./658312.js"),
@@ -160,7 +160,7 @@ let I = e => {
     })
   },
   S = e => {
-    let t = (0, l.e7)([d.Z], () => d.Z.isFocused()),
+    let t = (0, d.n)(),
       n = (0, l.e7)([c.Z], () => c.Z.useReducedMotion),
       [a, o] = i.useState(false),
       f = (0, h.V)(e.profileEffectId),
