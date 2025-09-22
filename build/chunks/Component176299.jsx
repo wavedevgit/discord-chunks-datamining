@@ -416,11 +416,11 @@ let e1 = e => (0, r.jsx)(v.Z, eZ({}, e)),
     })
   };
 
-function e2(e) {
+function e6(e) {
   document.body.style.setProperty("--custom-guild-sidebar-width", "".concat(e, "px"))
 }
 
-function e6(e) {
+function e2(e) {
   let {
     hasNotice: t,
     sidebarTheme: n,
@@ -445,7 +445,7 @@ function e6(e) {
     if (m) {
       var e;
       let t = parseInt(null != (e = f.K.get(eI.nT)) ? e : "");
-      Number.isNaN(t) && (t = eI.qO), t = Math.min(Math.max(t, eI.li), eI.zx), !m && t <= eI.p8 && (t = eI.qO), e2(t);
+      Number.isNaN(t) && (t = eI.qO), t = Math.min(Math.max(t, eI.li), eI.zx), !m && t <= eI.p8 && (t = eI.qO), e6(t);
       let n = e => {
         e.metaKey && "b" === e.key && P.useAppSidebarState.setState(e => ({
           isOpen: !e.isOpen
@@ -456,23 +456,23 @@ function e6(e) {
       }
     }
   }, [m]), i.useLayoutEffect(() => {
-    if (E) e2(eI.p8);
+    if (E) e6(eI.p8);
     else {
       var e;
       let t = parseInt(null != (e = f.K.get(eI.nT)) ? e : "");
-      Number.isNaN(t) && (t = eI.qO), e2(t)
+      Number.isNaN(t) && (t = eI.qO), e6(t)
     }
   }, [E]);
   let y = i.useRef(null),
     v = i.useCallback((e, t) => {
       var n;
-      e2(e);
+      e6(e);
       let r = t < eI.li / 3;
       t <= eI.li ? document.body.classList.add(eA.draggingMin) : document.body.classList.remove(eA.draggingMin), t >= eI.zx ? document.body.classList.add(eA.draggingMax) : document.body.classList.remove(eA.draggingMax);
       let i = t - e;
       null == (n = y.current) || n.style.setProperty("--custom-overdrag", "".concat(1 + Math.min(Math.abs(i / eI.p8), .25))), m && (P.useAppSidebarState.setState({
         isOpen: !r
-      }), r && e2(eI.p8))
+      }), r && e6(eI.p8))
     }, [m]),
     I = i.useCallback(() => {
       document.body.classList.add(eA.dragging)
@@ -499,7 +499,7 @@ function e6(e) {
       }))
     }, []);
   if (i.useLayoutEffect(() => {
-      E && e2(eI.p8)
+      E && e6(eI.p8)
     }, [E]), l) return null;
   let j = {
     className: a()(eA.sidebarList, {
@@ -596,7 +596,7 @@ function e7() {
         "data-fullscreen": Chunk244317,
         children: [!Chunk244317 && (0, Chunk951288.jsx)(ew, {}), Chunk873546.tq ? null : (0, Chunk951288.jsx)(Chunk256638.Z, {}), (0, Chunk951288.jsxs)("div", {
           className: Chunk981028.content,
-          children: [(0, Chunk951288.jsx)(Chunk626421.Z, {}), (0, Chunk951288.jsx)(e6, {
+          children: [(0, Chunk951288.jsx)(Chunk626421.Z, {}), (0, Chunk951288.jsx)(e2, {
             isOnFullScreenCollectiblesShopRoute: Chunk608787,
             isSidebarOpen: Chunk433517,
             hasNotice: exports,

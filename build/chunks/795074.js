@@ -3,18 +3,54 @@
 "use strict";
 let r;
 require.d(exports, {
-  ur: () => o
-}), require("./647438.js");
-let i = !!("undefined" != typeof window && window.document && window.document.createElement),
-  a = new Map;
+  Me: () => u,
+  mp: () => f,
+  ur: () => d
+});
+var Chunk436283 = require("./436283.js"),
+  Chunk653927 = require("./653927.js"),
+  Chunk647438 = require("./647438.js"),
+  Chunk145937 = require("./145937.js");
+let l = !!("undefined" != typeof window && window.document && window.document.createElement),
+  c = new Map;
 
-function o(e, t) {
+function u(e) {
+  let [t, n] = (0, o.useState)(e), a = (0, o.useRef)(null), u = (0, s.gP)(t), d = (0, o.useRef)(null);
+  if (r && r.register(d, u), l) {
+    let e = c.get(u);
+    e && !e.includes(a) ? e.push(a) : c.set(u, [a])
+  }
+  return (0, i.b)(() => {
+    let e = u;
+    return () => {
+      r && r.unregister(d), c.delete(e)
+    }
+  }, [u]), (0, o.useEffect)(() => {
+    let e = a.current;
+    return e && n(e), () => {
+      e && (a.current = null)
+    }
+  }), u
+}
+
+function d(e, t) {
   if (e === t) return e;
-  let n = a.get(e);
+  let n = c.get(e);
   if (n) return n.forEach(e => e.current = t), t;
-  let r = a.get(t);
+  let r = c.get(t);
   return r ? (r.forEach(t => t.current = e), e) : t
 }
+
+function f(e = []) {
+  let t = u(),
+    [n, r] = (0, a.p)(t),
+    s = (0, o.useCallback)(() => {
+      r(function*() {
+        yield t, yield document.getElementById(t) ? t : true
+      })
+    }, [t, r]);
+  return (0, i.b)(s, [t, s, ...e]), n
+}
 "undefined" != typeof FinalizationRegistry && (r = new FinalizationRegistry(e => {
-  a.delete(e)
+  c.delete(e)
 }))

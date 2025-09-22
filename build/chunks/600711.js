@@ -2,7 +2,6 @@
 /** chunk id: 600711, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  RG: () => c,
   kc: () => d
 });
 var Chunk361637 = require("./361637.js"),

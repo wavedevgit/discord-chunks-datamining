@@ -8,7 +8,7 @@ require.d(exports, {
   jy: () => T
 });
 var Chunk570140 = require("./570140.js"),
-  Chunk523238 = require("./523238.js"),
+  Chunk519938 = require("./519938.js"),
   Chunk317770 = require("./317770.js"),
   Chunk928518 = require("./928518.js"),
   Chunk592125 = require("./592125.js"),
@@ -38,7 +38,7 @@ function O(e, t) {
 
 function v() {
   let e = r;
-  null != module && Chunk366050.Z.isOpen(module) && (Chunk570140.Z.wait(() => Chunk523238.xv(module)), r = null)
+  null != module && Chunk366050.Z.isOpen(module) && (Chunk570140.Z.wait(() => Chunk519938.xv(module)), r = null)
 }
 
 function I(e) {
