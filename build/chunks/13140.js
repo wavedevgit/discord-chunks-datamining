@@ -171,7 +171,9 @@ function R(e) {
 }(0, Chunk358085.isMac)() || (y["223"] = "`"), Object.freeze(y);
 let P = [
     ["META", "⌘"],
+    ["CMD", "⌘"],
     ["RIGHT META", "RIGHT ⌘"],
+    ["RIGHT CMD", "RIGHT ⌘"],
     ["SHIFT", "⇧"],
     ["RIGHT SHIFT", "RIGHT ⇧"],
     ["ALT", "⌥"],
