@@ -125,7 +125,7 @@ let D = e => {
     el = null != Z ? Z : (0, y.DK)(T);
   return (0, l.jsx)(_.Gt, {
     value: b,
-    children: (0, l.jsxs)(s.I, {
+    children: (0, l.jsxs)(s.IX, {
       transitionState: t,
       size: "lg",
       onClose: m,

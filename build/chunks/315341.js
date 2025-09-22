@@ -143,10 +143,10 @@ let b = [{
   version: 12,
   run(e) {
     let t = false;
-    return o.K.get("hideNag") && g(e, i.z.NAGBAR_NOTICE_DOWNLOAD) && (t = true), o.K.get("hideConnectSpotify") && g(e, i.z.NAGBAR_NOTICE_CONNECT_SPOTIFY) && (t = true), o.K.get("hideConnectPlayStation") && g(e, i.z.NAGBAR_NOTICE_CONNECT_PLAYSTATION) && (t = true), o.K.get("hideMFASMSNotice") && g(e, i.z.NAGBAR_NOTICE_MFA_SMS_BACKUP) && (t = true), t
+    return o.K.get("hideNag") && g(e, i.z.NAGBAR_NOTICE_DOWNLOAD) && (t = true), o.K.get("hideConnectSpotify") && g(e, i.z.NAGBAR_NOTICE_CONNECT_SPOTIFY) && (t = true), o.K.get("hideConnectPlayStation") && g(e, i.z.NAGBAR_NOTICE_CONNECT_PLAYSTATION) && (t = true), t
   },
   cleanup() {
-    Chunk433517.K.remove("hideNag"), Chunk433517.K.remove("hideConnectSpotify"), Chunk433517.K.remove("hideConnectPlayStation"), Chunk433517.K.remove("hideMFASMSNotice")
+    Chunk433517.K.remove("hideNag"), Chunk433517.K.remove("hideConnectSpotify"), Chunk433517.K.remove("hideConnectPlayStation")
   }
 }, {
   version: 13,

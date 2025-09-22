@@ -180,7 +180,7 @@ function eo() {
   return (0, Chunk951288.jsx)(Chunk787025.G, {
     removeChildWrapper: true,
     children: (0, Chunk951288.jsx)(es, ea(er({
-      transitionState: Chunk257465.D.ENTERED
+      transitionState: Chunk257465.Dv.ENTERED
     }, exports), {
       showLogout: true,
       isExternalStandaloneOAuthPage: true,

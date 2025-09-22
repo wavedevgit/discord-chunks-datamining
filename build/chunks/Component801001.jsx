@@ -82,7 +82,7 @@ function I(e) {
       onClick: J,
       variant: "primary"
     }], [J, n]);
-  return (0, l.jsxs)(a.I, {
+  return (0, l.jsxs)(a.IX, {
     transitionState: t,
     onClose: n,
     children: [(0, l.jsx)("div", {

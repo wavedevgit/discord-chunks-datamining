@@ -21,7 +21,7 @@ function h(t) {
   } = t, {
     redeemReward: h
   } = (0, d.h)(true);
-  return (0, n.jsxs)(a.I, {
+  return (0, n.jsxs)(a.IX, {
     transitionState: i,
     onClose: r,
     size: "sm",

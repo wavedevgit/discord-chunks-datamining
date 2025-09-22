@@ -227,7 +227,7 @@ let S = e => {
     slotCount: _,
     canceledCount: p
   }) : null;
-  return (0, r.jsxs)(c.I, {
+  return (0, r.jsxs)(c.IX, {
     transitionState: t,
     onClose: n,
     size: "sm",

@@ -103,7 +103,7 @@ function k(e) {
     C(_), O()
   }, [O, C, _]), U = l.useCallback(() => {
     C(null), O()
-  }, [C, O]), E = null != (n = _.authorIds[0]) ? n : "", H = (0, i.e7)([g.ZP], () => null != I ? g.ZP.getMember(I, E) : null), M = (0, i.e7)([h.default], () => null != H ? h.default.getUser(H.userId) : null), R = null != (a = null != (r = null == H ? true : H.nick) ? r : null == M ? true : M.username) ? a : "", X = function(e) {
+  }, [C, O]), E = null != (n = _.authorIds[0]) ? n : "", H = (0, i.e7)([g.ZP], () => null != I ? g.ZP.getMember(I, E) : null), M = (0, i.e7)([h.default], () => null != H ? h.default.getUser(H.userId) : null), X = null != (a = null != (r = null == H ? true : H.nick) ? r : null == M ? true : M.username) ? a : "", R = function(e) {
     if (null == e.message || 0 === e.message.length) return null;
     if (null == e.authorIds || 0 === e.authorIds.length)
       if (e.message.length < m.ZR) return v.intl.formatToPlainString(v.t.Lj831N, {
@@ -121,9 +121,9 @@ function k(e) {
     text: v.intl.string(v.t.R3BPHx),
     onClick: T,
     variant: "primary",
-    disabled: 0 === _.message.length || null != X
-  }], [X, T, O, _.message.length]);
-  return (0, t.jsxs)(s.I, {
+    disabled: 0 === _.message.length || null != R
+  }], [R, T, O, _.message.length]);
+  return (0, t.jsxs)(s.IX, {
     transitionState: k,
     onClose: O,
     children: [(0, t.jsx)("div", {
@@ -146,7 +146,7 @@ function k(e) {
         }), (0, t.jsx)(d.VcW, {
           value: {
             value: E,
-            label: R
+            label: X
           },
           renderOptionPrefix: G,
           options: S,
@@ -170,10 +170,10 @@ function k(e) {
           value: _.message,
           onChange: L,
           maxLength: m.W4
-        }), null != X ? (0, t.jsx)(d.Text, {
+        }), null != R ? (0, t.jsx)(d.Text, {
           variant: "text-xs/normal",
           color: "text-danger",
-          children: X
+          children: R
         }) : null]
       })]
     }), (0, t.jsx)(u.G, {

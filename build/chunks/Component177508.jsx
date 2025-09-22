@@ -2228,7 +2228,7 @@ function ev(e) {
       children: t
     })
   }
-  return (0, r.jsxs)(f.I, {
+  return (0, r.jsxs)(f.IX, {
     transitionState: t,
     onClose: n,
     children: [(0, r.jsx)("div", {
@@ -2281,7 +2281,7 @@ function eI(e) {
     transitionState: t,
     onClose: n
   } = e, [a, o] = i.useState("md"), [s, l] = i.useState("Demo Modal"), [c, u] = i.useState("Header body copy"), [d, _] = i.useState(false), [p, b] = i.useState(false), [y, O] = i.useState(false), [v, S] = i.useState(false), [A, C] = i.useState(false);
-  return (0, r.jsxs)(f.I, {
+  return (0, r.jsxs)(f.IX, {
     transitionState: t,
     onClose: n,
     size: a,

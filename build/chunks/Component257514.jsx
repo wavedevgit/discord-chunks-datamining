@@ -61,7 +61,7 @@ function h(t) {
     })
   }, [j]);
   let k = (0, S.KW)(h.skuFlags);
-  return (0, n.jsx)(a.I, {
+  return (0, n.jsx)(a.IX, {
     onClose: P,
     transitionState: i,
     "aria-labelledby": g,

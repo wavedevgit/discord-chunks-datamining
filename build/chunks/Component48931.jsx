@@ -14,7 +14,7 @@ var Chunk257465 = require("./257465.jsx"),
 
 function c(e) {
   let {
-    transitionState: t = i.D.ENTERED,
+    transitionState: t = i.Dv.ENTERED,
     onClose: n
   } = e, {
     refreshCategories: c

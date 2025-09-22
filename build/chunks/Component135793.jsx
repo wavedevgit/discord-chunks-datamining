@@ -116,7 +116,7 @@ function B(e) {
   } = e;
   (0, i.useEffect)(() => u, [u]);
   let _ = (0, i.useCallback)(() => ((0, c.Mr3)(U), Promise.resolve()), []);
-  return (0, r.jsx)(l.I, {
+  return (0, r.jsx)(l.IX, {
     transitionState: t,
     onClose: _,
     trackingProps: {

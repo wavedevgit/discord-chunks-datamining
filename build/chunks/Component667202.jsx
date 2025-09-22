@@ -80,7 +80,7 @@ function p(e) {
     actions: m,
     children: g
   } = e, E = f(e, ["size", "gradientColor", "graphic", "badge", "title", "subtitle", "actionBarInput", "actions", "children"]);
-  return (0, r.jsxs)(i.I, d(c({}, E), {
+  return (0, r.jsxs)(i.IX, d(c({}, E), {
     size: t,
     paddingSize: "lg",
     children: [(0, r.jsx)(s.x, {

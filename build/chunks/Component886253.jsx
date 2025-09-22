@@ -67,7 +67,7 @@ function v(e) {
     alt: "",
     className: y.appIcon
   }) : true;
-  return (0, r.jsxs)(o.I, {
+  return (0, r.jsxs)(o.IX, {
     onClose: I,
     size: "lg",
     transitionState: v,

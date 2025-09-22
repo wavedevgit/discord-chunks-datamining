@@ -73,7 +73,7 @@ function w(t) {
       },
       variant: "icon-only"
     }) : true;
-  return (0, n.jsxs)(o.I, {
+  return (0, n.jsxs)(o.IX, {
     transitionState: i,
     "aria-label": I,
     onClose: e,

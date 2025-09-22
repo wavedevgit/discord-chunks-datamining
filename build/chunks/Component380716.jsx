@@ -120,13 +120,13 @@ function D(e) {
       value: e.channelId,
       label: n.name
     }
-  }(R)), [W, V] = i.useState(F), X = (0, o.e7)([f.Z], () => f.Z.getChannel(null == W ? true : W.value)), Y = (null == X ? true : X.isMediaChannel()) === true, B = i.useMemo(() => [{
+  }(R)), [W, X] = i.useState(F), V = (0, o.e7)([f.Z], () => f.Z.getChannel(null == W ? true : W.value)), Y = (null == V ? true : V.isMediaChannel()) === true, B = i.useMemo(() => [{
     value: j.oi.VIEW,
     name: k.intl.string(k.t.jfieR0)
   }, {
     value: j.oi.CHAT,
-    name: (null == X ? true : X.type) === T.d4z.GUILD_FORUM ? Y ? k.intl.string(k.t["1EgDpK"]) : k.intl.string(k.t.x5Di7O) : k.intl.string(k.t["R+dC4O"])
-  }], [null == X ? true : X.type, Y]), [K, Q] = i.useState(G()), [J, $] = i.useState(null != (n = null == R ? true : R.title) ? n : ""), ee = (0, o.e7)([O.Z], () => {
+    name: (null == V ? true : V.type) === T.d4z.GUILD_FORUM ? Y ? k.intl.string(k.t["1EgDpK"]) : k.intl.string(k.t.x5Di7O) : k.intl.string(k.t["R+dC4O"])
+  }], [null == V ? true : V.type, Y]), [K, Q] = i.useState(G()), [J, $] = i.useState(null != (n = null == R ? true : R.title) ? n : ""), ee = (0, o.e7)([O.Z], () => {
     let e = O.Z.getSettings();
     if (null == e.newMemberActions) return new Set;
     let n = new Set(e.newMemberActions.map(e => e.channelId));
@@ -160,14 +160,14 @@ function D(e) {
       emoji: null != et ? et : true
     }))
   }, [$, Q, W, en, et]), ev = i.useCallback(e => {
-    V(e), Q(M({
+    X(e), Q(M({
       channelId: null == e ? true : e.value,
       title: J,
       description: "",
       actionType: null == en ? true : en.value,
       emoji: null != et ? et : true
     }))
-  }, [V, Q, J, en, et]), eg = i.useCallback(e => {
+  }, [X, Q, J, en, et]), eg = i.useCallback(e => {
     el(e), Q(M({
       channelId: null == W ? true : W.value,
       title: J,
@@ -236,7 +236,7 @@ function D(e) {
     onClick: em,
     disabled: ec || ed
   }], [em, ed, ec, U]);
-  return (0, t.jsxs)(s.I, {
+  return (0, t.jsxs)(s.IX, {
     transitionState: D,
     onClose: U,
     children: [(0, t.jsx)("div", {
@@ -339,7 +339,7 @@ function D(e) {
                         }), a && l()
                       }),
                       pickerIntention: _.Hz.COMMUNITY_CONTENT,
-                      channel: X
+                      channel: V
                     })
                   },
                   children: e => (0, t.jsx)(m.Text, Z(P({}, e), {
@@ -395,8 +395,8 @@ function D(e) {
           size: d.l7.NONE,
           value: null == en ? true : en.value,
           onChange: eg,
-          options: null == X ? B : B.map(e => Z(P({}, e), {
-            disabled: !w(e.value, X)
+          options: null == V ? B : B.map(e => Z(P({}, e), {
+            disabled: !w(e.value, V)
           }))
         }), null != en && K.actionType.length > 0 ? K.actionType.map(e => (0, t.jsx)(m.Text, {
           variant: "text-xs/normal",

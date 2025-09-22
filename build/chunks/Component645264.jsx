@@ -47,7 +47,7 @@ let b = () => (0, Chunk951288.jsx)(Chunk852860.Z, {
     return (l.useEffect(() => {
       _ && C === m.t && o()
     }, [_, o, C]), C === m.t) ? null : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsxs)(s.I, {
+      children: [(0, r.jsxs)(s.IX, {
         transitionState: t,
         "aria-labelledby": I,
         size: "xl",

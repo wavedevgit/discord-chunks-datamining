@@ -1,9 +1,8 @@
 /** Chunk was on web.js **/
-/** chunk id: 257465, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 352065, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Dv: () => Chunk663893.D,
-  IX: () => b
+  A: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk507274 = require("./507274.jsx"),
   Chunk667137 = require("./667137.js"),
   Chunk985316 = require("./985316.js"),
-  Chunk663893 = require("./663893.js"),
+  Chunk163838 = require("./163838.js"),
   Chunk525751 = require("./525751.js");
 
 function h(e, t, n) {
@@ -62,45 +61,37 @@ function b(e) {
   let {
     transitionState: n,
     animationVariant: a = "default",
-    size: _ = "md",
-    paddingSize: h = "sm",
-    fullScreenOnMobile: g = true,
-    returnRef: b,
-    role: y = "dialog",
-    "aria-label": O,
-    dismissable: v = true,
-    onClose: I,
-    contentOutsideContainer: T,
-    trackingProps: S,
-    children: A
-  } = e, C = i.useId(), N = i.useMemo(() => ({
-    id: C,
-    headingId: "heading-".concat(C),
-    onClose: I,
-    dismissable: v
-  }), [v, C, I]), R = (0, f.hv)(n, a);
+    returnRef: h,
+    "aria-label": g,
+    onClose: b,
+    trackingProps: y,
+    children: O
+  } = e, v = i.useId(), I = i.useMemo(() => ({
+    id: v,
+    headingId: "heading-".concat(v),
+    onClose: b,
+    dismissable: true
+  }), [v, b]), T = (0, f.hv)(n, a);
   return (0, r.jsx)(d.t.Provider, {
-    value: N,
+    value: I,
     children: (0, r.jsx)(u.V, E(m({
-      id: C,
-      role: y,
-      "aria-label": O,
-      "aria-labelledby": null != O ? true : N.headingId,
-      returnRef: b
-    }, S), {
-      impressionType: null != (t = null == S ? true : S.impressionType) ? t : l.ImpressionTypes.MODAL,
+      id: v,
+      role: "dialog",
+      "aria-label": g,
+      "aria-labelledby": null != g ? true : I.headingId,
+      returnRef: h
+    }, y), {
+      impressionType: null != (t = null == y ? true : y.impressionType) ? t : l.ImpressionTypes.MODAL,
       children: (0, r.jsx)(c.y5t, {
         forceLevel: 1,
-        children: (0, r.jsxs)("div", {
-          className: o()(p.outerContainer, {
-            [p.fullScreenOnMobile]: g
-          }),
-          children: [T, (0, r.jsx)(s.animated.div, {
-            "data-mana-component": "modal",
-            className: o()(p.container, p["size-".concat(_)], p["padding-size-".concat(h)]),
-            style: R,
-            children: A
-          })]
+        children: (0, r.jsx)(s.animated.div, {
+          "data-mana-component": "layer-modal",
+          className: o()(p.container, _.modal),
+          style: T,
+          children: (0, r.jsx)("div", {
+            className: _.modalContent,
+            children: O
+          })
         })
       })
     }))

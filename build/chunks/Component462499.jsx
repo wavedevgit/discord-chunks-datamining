@@ -44,7 +44,7 @@ function _(e) {
     onSave: y,
     onDelete: G,
     onIconUpload: S
-  } = e, [P, U] = r.useState(null != (n = null == N ? true : N.title) ? n : ""), [X, B] = r.useState(null != (l = null == N ? true : N.description) ? l : ""), [R, W] = r.useState(function(e) {
+  } = e, [X, P] = r.useState(null != (n = null == N ? true : N.title) ? n : ""), [U, B] = r.useState(null != (l = null == N ? true : N.description) ? l : ""), [R, W] = r.useState(function(e) {
     if (null == e) return null;
     let n = p.Z.getChannel(e.channelId);
     return null == n ? null : {
@@ -57,9 +57,9 @@ function _(e) {
   }), H = (0, s.Wu)([C.Z], () => {
     var e, n;
     return (null != (n = null == (e = C.Z.getSettings()) ? true : e.resourceChannels) ? n : []).map(e => e.channelId)
-  }), K = P.length < h.n || null == R, L = r.useCallback(() => {
-    null == R || P.length <= 0 || (y(f(R, P, X, q)), _())
-  }, [y, _, P, R, q, X]), O = r.useCallback(() => {
+  }), K = X.length < h.n || null == R, L = r.useCallback(() => {
+    null == R || X.length <= 0 || (y(f(R, X, U, q)), _())
+  }, [y, _, X, R, q, U]), O = r.useCallback(() => {
     null == G || G(), _()
   }, [G, _]), E = r.useCallback(e => {
     W(e)
@@ -78,8 +78,8 @@ function _(e) {
       className: b.channelIcon
     })
   }, [Z]), w = r.useCallback(e => {
-    null != S && null != R && S(f(R, P, X), e)
-  }, [R, P, S, X]), z = r.useCallback(() => null == q || null == R ? null : j.ZP.getResourceChannelIconURL({
+    null != S && null != R && S(f(R, X, U), e)
+  }, [R, X, S, U]), z = r.useCallback(() => null == q || null == R ? null : j.ZP.getResourceChannelIconURL({
     channelId: R.value,
     icon: q
   }), [R, q]), F = r.useMemo(() => [{
@@ -92,7 +92,7 @@ function _(e) {
     onClick: L,
     disabled: K
   }], [L, K, _]);
-  return (0, a.jsxs)(o.I, {
+  return (0, a.jsxs)(o.IX, {
     transitionState: i,
     onClose: _,
     children: [(0, a.jsx)("div", {
@@ -137,8 +137,8 @@ function _(e) {
           color: "header-primary",
           children: [I.intl.string(I.t["lFy+aW"]), (0, a.jsx)(k.Z, {})]
         }), (0, a.jsx)(u.oil, {
-          value: P,
-          onChange: U,
+          value: X,
+          onChange: P,
           placeholder: I.intl.string(I.t.XKUimJ),
           maxLength: h.am
         })]
@@ -151,7 +151,7 @@ function _(e) {
           color: "header-primary",
           children: I.intl.string(I.t.CnkilJ)
         }), (0, a.jsx)(u.Kx8, {
-          value: X,
+          value: U,
           onChange: B,
           placeholder: I.intl.string(I.t.na0V4O),
           maxLength: h.Vu

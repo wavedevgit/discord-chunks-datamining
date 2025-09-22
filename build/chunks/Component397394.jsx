@@ -282,7 +282,7 @@ function F() {
   return (0, Chunk951288.jsx)(Chunk787025.G, {
     removeChildWrapper: true,
     children: (0, Chunk951288.jsx)(Chunk787025.j, {
-      transitionState: Chunk257465.D.ENTERED,
+      transitionState: Chunk257465.Dv.ENTERED,
       hideHeader: true,
       children: (0, Chunk951288.jsx)(U, {
         guild: null == (e = require.state) ? true : module.guild,
@@ -308,7 +308,7 @@ function V(e) {
   return (0, r.jsx)(S.G, {
     removeChildWrapper: true,
     children: (0, r.jsx)(S.j, {
-      transitionState: d.D.ENTERED,
+      transitionState: d.Dv.ENTERED,
       hideHeader: true,
       title: C.intl.string(C.t.j2d6Ki),
       subtitle: l

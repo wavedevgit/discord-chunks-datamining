@@ -3,9 +3,8 @@
 require.d(exports, {
   Z: () => o
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk257465 = require("./257465.jsx"),
+var Chunk951288 = require("./951288.js"),
+  Chunk352065 = require("./352065.jsx"),
   Chunk79808 = require("./79808.jsx");
 
 function o(e) {
@@ -31,7 +30,7 @@ function o(e) {
       }
       return i
     }(e, ["root", "directory", "target", "sidebarHeader", "sidebarFooter"]);
-  return (0, r.jsx)(i.I, (t = function(e) {
+  return (0, r.jsx)(i.A, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -48,10 +47,7 @@ function o(e) {
       })
     }
     return e
-  }({
-    size: "xl",
-    fullScreenOnMobile: true
-  }, d), n = n = {
+  }({}, d), n = n = {
     children: (0, r.jsx)(l.Z, {
       onClose: d.onClose,
       root: o,

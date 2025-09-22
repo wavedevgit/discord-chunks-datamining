@@ -315,7 +315,7 @@ function ed(e) {
                         var {
                           onClose: t
                         } = e, n = ec(e, ["onClose"]);
-                        return (0, r.jsx)(l.I, el(eo({
+                        return (0, r.jsx)(l.IX, el(eo({
                           onClose: t
                         }, n), {
                           size: "sm",

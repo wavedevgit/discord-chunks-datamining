@@ -464,7 +464,7 @@ let W = function(t) {
   let l = s.useCallback(() => {
     e(), n()
   }, [e, n]);
-  return (0, o.jsx)(c.I, {
+  return (0, o.jsx)(c.IX, {
     size: "md",
     onClose: e,
     transitionState: r,

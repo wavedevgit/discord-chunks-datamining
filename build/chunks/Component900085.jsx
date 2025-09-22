@@ -286,7 +286,7 @@ class X extends Chunk647438.PureComponent {
     })
   }
   render() {
-    return (0, Chunk951288.jsx)(Chunk257465.I, {
+    return (0, Chunk951288.jsx)(Chunk257465.IX, {
       "aria-label": Chunk388032.intl.string(Chunk388032.t.ZvKwYW),
       size: "lg",
       transitionState: this.props.transitionState,

@@ -139,7 +139,7 @@ let A = (e, t) => {
       title: p(),
       subtitle: g(),
       onClose: n,
-      transitionState: l.D.ENTERED,
+      transitionState: l.Dv.ENTERED,
       children: T()
     })
   }
