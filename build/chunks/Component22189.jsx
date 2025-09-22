@@ -68,7 +68,7 @@ var Chunk399606 = require("./399606.js"),
   Chunk698173 = require("./698173.js"),
   Chunk926262 = require("./926262.js"),
   Chunk217379 = require("./217379.js"),
-  Chunk117771 = require("./117771.js"),
+  Chunk770042 = require("./770042.js"),
   Chunk253636 = require("./253636.js"),
   Chunk371435 = require("./371435.js"),
   Chunk83663 = require("./83663.js"),
@@ -457,7 +457,7 @@ let eg = () => {
       }),
       pillText: Chunk388032.intl.string(Chunk388032.t.OS9KPj).toLocaleUpperCase(),
       cardVariant: Chunk391110.zW.PROMOTION_REDEMPTION,
-      perkImage: Chunk117771.Z,
+      perkImage: Chunk770042.Z,
       customContent: (0, Chunk951288.jsx)(Chunk220331.R, {})
     }
   };
